@@ -1,6 +1,6 @@
 {
  "updated": "2026-11-23",
- "projects": 2500,
+ "projects": 2616,
  "markets": {
   "Abu Dhabi": {
    "updated": "2026-11-23",
@@ -403,10 +403,10 @@
    "updated": "2026-11-23",
    "market": "Alanya",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 3,
+   "projects": 5,
    "title": {
     "leasehold": 0,
-    "known": 0
+    "known": 2
    },
    "lease": {
     "known": 0,
@@ -429,9 +429,9 @@
    "permit_numbers_published": 0,
    "plans_published": 1,
    "price_usd": {
-    "known": 2,
-    "median": 244000.0,
-    "min": 243000.0,
+    "known": 4,
+    "median": 224000.0,
+    "min": 166000.0,
     "max": 244000.0
    },
    "yield": {
@@ -440,7 +440,7 @@
     "max": 6
    },
    "completion": {
-    "2026": 1,
+    "2026": 3,
     "2027": 2
    },
    "runs": [
@@ -10162,10 +10162,10 @@
    "updated": "2026-11-23",
    "market": "Istanbul",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 20,
+   "projects": 120,
    "title": {
     "leasehold": 0,
-    "known": 0
+    "known": 100
    },
    "lease": {
     "known": 0,
@@ -10188,10 +10188,10 @@
    "permit_numbers_published": 0,
    "plans_published": 7,
    "price_usd": {
-    "known": 6,
-    "median": 252000.0,
-    "min": 140000.0,
-    "max": 605000.0
+    "known": 99,
+    "median": 295000.0,
+    "min": 111000.0,
+    "max": 2000000.0
    },
    "yield": {
     "known": 3,
@@ -10200,9 +10200,11 @@
    },
    "completion": {
     "2025": 1,
-    "2027": 2,
-    "2028": 5,
-    "2029": 1,
+    "2026": 34,
+    "2027": 49,
+    "2028": 19,
+    "2029": 5,
+    "2030": 1,
     "unknown": 11
    },
    "runs": [
@@ -16227,10 +16229,10 @@
    "updated": "2026-11-23",
    "market": "Northern Cyprus",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 11,
+   "projects": 16,
    "title": {
     "leasehold": 0,
-    "known": 0
+    "known": 5
    },
    "lease": {
     "known": 0,
@@ -16253,8 +16255,8 @@
    "permit_numbers_published": 0,
    "plans_published": 5,
    "price_usd": {
-    "known": 10,
-    "median": 207000.0,
+    "known": 15,
+    "median": 209000.0,
     "min": 149000.0,
     "max": 1391000.0
    },
@@ -16264,9 +16266,9 @@
     "max": 8
    },
    "completion": {
-    "2026": 3,
-    "2027": 5,
-    "2028": 2,
+    "2026": 5,
+    "2027": 7,
+    "2028": 3,
     "unknown": 1
    },
    "runs": [
@@ -22551,10 +22553,10 @@
    "updated": "2026-11-23",
    "market": "Turkey",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 1,
+   "projects": 10,
    "title": {
     "leasehold": 0,
-    "known": 0
+    "known": 9
    },
    "lease": {
     "known": 0,
@@ -22577,10 +22579,10 @@
    "permit_numbers_published": 0,
    "plans_published": 0,
    "price_usd": {
-    "known": 0,
-    "median": null,
-    "min": null,
-    "max": null
+    "known": 9,
+    "median": 179000.0,
+    "min": 145000.0,
+    "max": 549000.0
    },
    "yield": {
     "known": 0,
@@ -22588,7 +22590,9 @@
     "max": null
    },
    "completion": {
-    "2026": 1
+    "2026": 1,
+    "2027": 7,
+    "2028": 2
    },
    "runs": [
     {

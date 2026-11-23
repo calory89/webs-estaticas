@@ -12583,6 +12583,128 @@
    }
   },
   {
+   "id": "ALA-004",
+   "market": "Alanya",
+   "country": "Turkey",
+   "region": "Alanya",
+   "docs": false,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": 2026,
+   "title": "Easement",
+   "lease": null,
+   "yield": 6.0,
+   "units": 311,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 90.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "ALA-005",
+   "market": "Alanya",
+   "country": "Turkey",
+   "region": "Alanya",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2026,
+   "title": "Easement",
+   "lease": null,
+   "yield": 5.0,
+   "units": 98,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 90.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
    "id": "ALB-001",
    "market": "Albania",
    "country": "Albania",
@@ -14686,12 +14808,12 @@
    "region": "Antalya",
    "docs": false,
    "plans": false,
-   "band": "Price not stated",
-   "done": null,
-   "title": null,
+   "band": "$100k to $200k",
+   "done": 2027,
+   "title": "Easement",
    "lease": null,
    "yield": null,
-   "units": null,
+   "units": 1437,
    "checks": {
     "permit": 0,
     "escrow": null,
@@ -14717,8 +14839,73 @@
    "checked": "7 Nov 2026",
    "invited": null,
    "q": [
-    "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 1,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7,
+   "fp": {
+    "sha256": "09626e5dddffad112b8d5e3190700530bf9075c9bd223f60e378baf97ae60c7e",
+    "date": "2026-11-07"
+   }
+  },
+  {
+   "id": "AYT-009",
+   "market": "Antalya",
+   "country": "Turkey",
+   "region": "Antalya",
+   "docs": false,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": 2028,
+   "title": "Easement",
+   "lease": null,
+   "yield": null,
+   "units": 210,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 40.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "7 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
    ],
    "verified": {
@@ -14735,75 +14922,10 @@
     "unverified": 1,
     "contradicted": 0
    },
-   "stage": "under construction",
-   "delay": null,
-   "overdue": null,
-   "profile": 2,
-   "fp": {
-    "sha256": "09626e5dddffad112b8d5e3190700530bf9075c9bd223f60e378baf97ae60c7e",
-    "date": "2026-11-07"
-   }
-  },
-  {
-   "id": "AYT-009",
-   "market": "Antalya",
-   "country": "Turkey",
-   "region": "Antalya",
-   "docs": false,
-   "plans": false,
-   "band": "Price not stated",
-   "done": null,
-   "title": null,
-   "lease": null,
-   "yield": null,
-   "units": null,
-   "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
-    "plans": false,
-    "record": false,
-    "returns_ok": true,
-    "researched": [
-     "permit",
-     "escrow",
-     "progress",
-     "plans",
-     "record",
-     "returns_ok"
-    ]
-   },
-   "score": 1,
-   "max": 6,
-   "flags": [],
-   "notes": [],
-   "tier": "caution",
-   "read": true,
-   "checked": "7 Nov 2026",
-   "invited": null,
-   "q": [
-    "Title type not stated: leasehold, freehold or a company structure?",
-    "No building permit mentioned: ask for the number before paying.",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ],
-   "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
-    "plans": "none",
-    "record": "none",
-    "returns_ok": "none"
-   },
-   "vscore": 0,
-   "claims": {
-    "verified": 1,
-    "unverified": 0,
-    "contradicted": 0
-   },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": null,
+   "profile": 7,
    "fp": {
     "sha256": "cc617e59f50662d218d31eeca4c83f2808e73fcc2645ad240eecd161a8efb423",
     "date": "2026-11-07"
@@ -17847,7 +17969,7 @@
    "market": "Bangkok",
    "country": "Thailand",
    "region": "Bangkok",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "$400k and up",
    "done": 2028,
@@ -17856,7 +17978,7 @@
    "yield": null,
    "units": 124,
    "checks": {
-    "permit": 1,
+    "permit": 2,
     "escrow": null,
     "progress": null,
     "plans": false,
@@ -17871,7 +17993,7 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 3,
    "max": 6,
    "flags": [],
    "notes": [],
@@ -17880,6 +18002,7 @@
    "checked": "31 Oct 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
@@ -17895,7 +18018,7 @@
    "vscore": 2,
    "claims": {
     "verified": 5,
-    "unverified": 6,
+    "unverified": 7,
     "contradicted": 0
    },
    "stage": "under construction",
@@ -37912,13 +38035,13 @@
    "vscore": 4,
    "claims": {
     "verified": 15,
-    "unverified": 3,
+    "unverified": 4,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 14,
+   "profile": 15,
    "fp": {
     "sha256": "0645dcb6df7e75809dfaafc019673555bbb6534ee3b8d0696298092a24fddc68",
     "date": "2026-11-05"
@@ -42568,10 +42691,10 @@
    "plans": true,
    "band": "$200k to $400k",
    "done": 2027,
-   "title": null,
+   "title": "Ownership",
    "lease": null,
    "yield": null,
-   "units": null,
+   "units": 282,
    "checks": {
     "permit": 2,
     "escrow": true,
@@ -42598,7 +42721,6 @@
    "invited": null,
    "q": [
     "A permit number is published: does it exist in the official register and match this plot?",
-    "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?"
    ],
@@ -42613,13 +42735,13 @@
    "vscore": 3,
    "claims": {
     "verified": 9,
-    "unverified": 1,
+    "unverified": 2,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 10,
+   "profile": 11,
    "fp": {
     "sha256": "df55434f256987eb0807de27369965192a2de15d72f719ff34ed598d309d8a9b",
     "date": "2026-11-06"
@@ -42712,10 +42834,10 @@
    "plans": false,
    "band": "$200k to $400k",
    "done": 2027,
-   "title": null,
+   "title": "Ownership",
    "lease": null,
    "yield": null,
-   "units": null,
+   "units": 1598,
    "checks": {
     "permit": 2,
     "escrow": true,
@@ -42742,7 +42864,6 @@
    "invited": null,
    "q": [
     "A permit number is published: does it exist in the official register and match this plot?",
-    "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?"
    ],
@@ -42757,13 +42878,13 @@
    "vscore": 3,
    "claims": {
     "verified": 9,
-    "unverified": 2,
+    "unverified": 3,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 10,
+   "profile": 11,
    "fp": {
     "sha256": "5c66734b9f5d587b71461701997483418fda7298a1b8bdecf410c794a58ce98c",
     "date": "2026-11-06"
@@ -44123,10 +44244,10 @@
    "plans": true,
    "band": "$200k to $400k",
    "done": null,
-   "title": null,
+   "title": "Ownership",
    "lease": null,
    "yield": null,
-   "units": null,
+   "units": 624,
    "checks": {
     "permit": 2,
     "escrow": true,
@@ -44153,7 +44274,6 @@
    "invited": null,
    "q": [
     "A permit number is published: does it exist in the official register and match this plot?",
-    "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying."
    ],
    "verified": {
@@ -44167,13 +44287,13 @@
    "vscore": 3,
    "claims": {
     "verified": 9,
-    "unverified": 0,
+    "unverified": 1,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 9,
+   "profile": 11,
    "fp": {
     "sha256": "2e67c39cbbf4ae172ec87d33c366e65f467b6b23dd81af8c2af181892f136530",
     "date": "2026-11-06"
@@ -44695,10 +44815,10 @@
    "plans": false,
    "band": "$400k and up",
    "done": null,
-   "title": null,
+   "title": "Ownership",
    "lease": null,
    "yield": null,
-   "units": null,
+   "units": 507,
    "checks": {
     "permit": 2,
     "escrow": true,
@@ -44725,7 +44845,6 @@
    "invited": null,
    "q": [
     "A permit number is published: does it exist in the official register and match this plot?",
-    "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying."
    ],
    "verified": {
@@ -44739,7 +44858,7 @@
    "vscore": 3,
    "claims": {
     "verified": 9,
-    "unverified": 0,
+    "unverified": 1,
     "contradicted": 0
    },
    "stage": "under construction",
@@ -47529,7 +47648,7 @@
    "plans": false,
    "band": "$400k and up",
    "done": 2027,
-   "title": null,
+   "title": "Ownership",
    "lease": null,
    "yield": null,
    "units": 619,
@@ -47559,7 +47678,6 @@
    "invited": null,
    "q": [
     "A permit number is published: does it exist in the official register and match this plot?",
-    "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?"
    ],
@@ -47574,7 +47692,7 @@
    "vscore": 3,
    "claims": {
     "verified": 8,
-    "unverified": 6,
+    "unverified": 7,
     "contradicted": 0
    },
    "stage": "under construction",
@@ -47597,10 +47715,10 @@
    "plans": false,
    "band": "$100k to $200k",
    "done": 2026,
-   "title": null,
+   "title": "Ownership",
    "lease": null,
    "yield": null,
-   "units": null,
+   "units": 3302,
    "checks": {
     "permit": 2,
     "escrow": true,
@@ -47627,7 +47745,6 @@
    "invited": null,
    "q": [
     "A permit number is published: does it exist in the official register and match this plot?",
-    "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2026: does progress on site match?"
    ],
@@ -47642,7 +47759,7 @@
    "vscore": 3,
    "claims": {
     "verified": 8,
-    "unverified": 6,
+    "unverified": 7,
     "contradicted": 0
    },
    "stage": "under construction",
@@ -47665,7 +47782,7 @@
    "plans": false,
    "band": "$200k to $400k",
    "done": 2026,
-   "title": null,
+   "title": "Ownership",
    "lease": null,
    "yield": null,
    "units": 1552,
@@ -47695,7 +47812,6 @@
    "invited": null,
    "q": [
     "A permit number is published: does it exist in the official register and match this plot?",
-    "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2026: does progress on site match?"
    ],
@@ -47710,7 +47826,7 @@
    "vscore": 3,
    "claims": {
     "verified": 8,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "under construction",
@@ -47929,10 +48045,10 @@
    "plans": false,
    "band": "$100k to $200k",
    "done": null,
-   "title": null,
+   "title": "Ownership",
    "lease": null,
    "yield": null,
-   "units": null,
+   "units": 789,
    "checks": {
     "permit": 2,
     "escrow": true,
@@ -47959,7 +48075,6 @@
    "invited": null,
    "q": [
     "A permit number is published: does it exist in the official register and match this plot?",
-    "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying."
    ],
    "verified": {
@@ -47973,7 +48088,7 @@
    "vscore": 3,
    "claims": {
     "verified": 8,
-    "unverified": 3,
+    "unverified": 4,
     "contradicted": 0
    },
    "stage": "under construction",
@@ -102971,13 +103086,13 @@
    "vscore": 1,
    "claims": {
     "verified": 5,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 12,
+   "profile": 14,
    "fp": {
     "sha256": "f4b1e51d4e77189af2c0cbf909c09dd386c8e2bda7e746a966dac1f146bf0076",
     "date": "2026-11-05"
@@ -103155,7 +103270,7 @@
    "checks": {
     "permit": 0,
     "escrow": null,
-    "progress": null,
+    "progress": 30.0,
     "plans": true,
     "record": true,
     "returns_ok": true,
@@ -103168,11 +103283,11 @@
      "returns_ok"
     ]
    },
-   "score": 3,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "7 Nov 2026",
    "invited": null,
@@ -103192,13 +103307,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 9,
+   "profile": 10,
    "fp": {
     "sha256": "fd2250d4fd8607eb65fd3438ca419f9516fc71d957df6b0cd889c5a42b1b24dd",
     "date": "2026-11-07"
@@ -103341,16 +103456,16 @@
    "region": "Istanbul",
    "docs": false,
    "plans": false,
-   "band": "Price not stated",
+   "band": "$400k and up",
    "done": 2028,
-   "title": null,
+   "title": "Easement",
    "lease": null,
    "yield": null,
-   "units": null,
+   "units": 227,
    "checks": {
     "permit": 0,
     "escrow": null,
-    "progress": null,
+    "progress": 20.0,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -103363,16 +103478,15 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 2,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "mixed",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
-    "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
@@ -103388,13 +103502,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 4
+   "profile": 9
   },
   {
    "id": "IST-019",
@@ -103403,16 +103517,16 @@
    "region": "Istanbul",
    "docs": false,
    "plans": false,
-   "band": "Price not stated",
+   "band": "$400k and up",
    "done": 2028,
-   "title": null,
+   "title": "No title deed",
    "lease": null,
    "yield": null,
-   "units": null,
+   "units": 119,
    "checks": {
     "permit": 0,
     "escrow": null,
-    "progress": null,
+    "progress": 5.0,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -103425,16 +103539,15 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 2,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "mixed",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
-    "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
@@ -103450,13 +103563,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 4
+   "profile": 9
   },
   {
    "id": "IST-020",
@@ -103519,6 +103632,6106 @@
    "delay": null,
    "overdue": null,
    "profile": 3
+  },
+  {
+   "id": "IST-021",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": "Contract",
+   "lease": null,
+   "yield": 5.0,
+   "units": 177,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 15.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-022",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2028,
+   "title": "Contract",
+   "lease": null,
+   "yield": 6.0,
+   "units": 215,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 20.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-023",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2026,
+   "title": "No title deed",
+   "lease": null,
+   "yield": 6.0,
+   "units": 195,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 37.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 4,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 6
+  },
+  {
+   "id": "IST-024",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2026,
+   "title": "Easement",
+   "lease": null,
+   "yield": 6.0,
+   "units": 120,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 80.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-025",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": "No title deed",
+   "lease": null,
+   "yield": 6.0,
+   "units": 67,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 40.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-026",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": 2027,
+   "title": "Easement",
+   "lease": null,
+   "yield": 6.0,
+   "units": 605,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 60.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-027",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2026,
+   "title": "Easement",
+   "lease": null,
+   "yield": 5.0,
+   "units": 20,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 90.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-028",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": "Easement",
+   "lease": null,
+   "yield": 4.0,
+   "units": 321,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 50.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-029",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2026,
+   "title": "Easement",
+   "lease": null,
+   "yield": 5.0,
+   "units": 317,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 90.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-030",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2027,
+   "title": "Easement",
+   "lease": null,
+   "yield": 8.0,
+   "units": 116,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 10.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-031",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": 2026,
+   "title": "Easement",
+   "lease": null,
+   "yield": 7.0,
+   "units": 747,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 90.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-032",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2026,
+   "title": "Easement",
+   "lease": null,
+   "yield": 6.0,
+   "units": 40,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 95.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-033",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": "Easement",
+   "lease": null,
+   "yield": 5.0,
+   "units": 70,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 60.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-034",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2027,
+   "title": "Contract",
+   "lease": null,
+   "yield": 7.0,
+   "units": 1000,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 75.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-035",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": 2028,
+   "title": "No title deed",
+   "lease": null,
+   "yield": 7.0,
+   "units": 2457,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 12.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-036",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2030,
+   "title": "Easement",
+   "lease": null,
+   "yield": 7.0,
+   "units": null,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2030: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 2
+  },
+  {
+   "id": "IST-037",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": "Easement",
+   "lease": null,
+   "yield": 7.0,
+   "units": 96,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 65.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 5
+  },
+  {
+   "id": "IST-038",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2028,
+   "title": "No title deed",
+   "lease": null,
+   "yield": 5.0,
+   "units": 462,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 10.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-039",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2027,
+   "title": "Easement",
+   "lease": null,
+   "yield": 6.0,
+   "units": 619,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 40.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-040",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2026,
+   "title": "Ownership",
+   "lease": null,
+   "yield": 7.0,
+   "units": 2800,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 70.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 5
+  },
+  {
+   "id": "IST-041",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2028,
+   "title": "Easement",
+   "lease": null,
+   "yield": 4.0,
+   "units": 473,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 50.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-042",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": 2028,
+   "title": "Easement",
+   "lease": null,
+   "yield": 6.0,
+   "units": 93,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 80.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-043",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2026,
+   "title": "Easement",
+   "lease": null,
+   "yield": 7.0,
+   "units": 256,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 95.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-044",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2027,
+   "title": "Easement",
+   "lease": null,
+   "yield": 9.0,
+   "units": 72,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 50.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "IST-045",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2027,
+   "title": "No title deed",
+   "lease": null,
+   "yield": 6.0,
+   "units": 66,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 70.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-046",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2028,
+   "title": "Contract",
+   "lease": null,
+   "yield": 6.0,
+   "units": 71,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 37.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-047",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2028,
+   "title": "Easement",
+   "lease": null,
+   "yield": 7.0,
+   "units": 88,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 7.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-048",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": 2028,
+   "title": "No title deed",
+   "lease": null,
+   "yield": 6.0,
+   "units": 105,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 3.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-049",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2027,
+   "title": "Easement",
+   "lease": null,
+   "yield": 9.0,
+   "units": 180,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 89.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-050",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2026,
+   "title": "No title deed",
+   "lease": null,
+   "yield": 7.0,
+   "units": 77,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 90.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-051",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": "Contract",
+   "lease": null,
+   "yield": 4.0,
+   "units": 107,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 20.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-052",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": 2026,
+   "title": "Easement",
+   "lease": null,
+   "yield": 8.0,
+   "units": 101,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 40.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-053",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2027,
+   "title": "Easement",
+   "lease": null,
+   "yield": 7.0,
+   "units": 500,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 70.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-054",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2026,
+   "title": "Easement",
+   "lease": null,
+   "yield": 7.0,
+   "units": 251,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 95.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-055",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2026,
+   "title": "Easement",
+   "lease": null,
+   "yield": 7.0,
+   "units": 174,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 80.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-056",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2027,
+   "title": "Easement",
+   "lease": null,
+   "yield": 6.0,
+   "units": 808,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 85.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-057",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2026,
+   "title": "Easement",
+   "lease": null,
+   "yield": 7.0,
+   "units": 76,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 95.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 5
+  },
+  {
+   "id": "IST-058",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2027,
+   "title": "Easement",
+   "lease": null,
+   "yield": 7.0,
+   "units": 360,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 70.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-059",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": 2029,
+   "title": "No title deed",
+   "lease": null,
+   "yield": 6.0,
+   "units": 1416,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2029: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 5
+  },
+  {
+   "id": "IST-060",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2027,
+   "title": "Easement",
+   "lease": null,
+   "yield": 6.0,
+   "units": 2482,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 77.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 6
+  },
+  {
+   "id": "IST-061",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2026,
+   "title": "Easement",
+   "lease": null,
+   "yield": 6.0,
+   "units": 133,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 90.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "IST-062",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2028,
+   "title": "No title deed",
+   "lease": null,
+   "yield": 8.0,
+   "units": 110,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 45.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-063",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": 2027,
+   "title": "No title deed",
+   "lease": null,
+   "yield": 7.0,
+   "units": 147,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 20.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-064",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2026,
+   "title": "Easement",
+   "lease": null,
+   "yield": 6.0,
+   "units": 330,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 98.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 5
+  },
+  {
+   "id": "IST-065",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": 2026,
+   "title": "Easement",
+   "lease": null,
+   "yield": 6.0,
+   "units": 92,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 95.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 5
+  },
+  {
+   "id": "IST-066",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": 2027,
+   "title": "Easement",
+   "lease": null,
+   "yield": 7.0,
+   "units": 131,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 65.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-067",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2027,
+   "title": "No title deed",
+   "lease": null,
+   "yield": 6.0,
+   "units": 52,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 6.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-068",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2026,
+   "title": "Contract",
+   "lease": null,
+   "yield": 5.0,
+   "units": 223,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 65.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 4,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 6
+  },
+  {
+   "id": "IST-069",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": "Easement",
+   "lease": null,
+   "yield": 5.0,
+   "units": 88,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 20.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 6
+  },
+  {
+   "id": "IST-070",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": 2027,
+   "title": "Easement",
+   "lease": null,
+   "yield": 7.0,
+   "units": 110,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 90.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-071",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": 2026,
+   "title": "Easement",
+   "lease": null,
+   "yield": 5.0,
+   "units": 570,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 89.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-072",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2027,
+   "title": "Easement",
+   "lease": null,
+   "yield": 6.0,
+   "units": 123,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 52.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 4,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 6
+  },
+  {
+   "id": "IST-073",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": "Easement",
+   "lease": null,
+   "yield": 5.0,
+   "units": 35,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 70.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-074",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2026,
+   "title": "Easement",
+   "lease": null,
+   "yield": 6.0,
+   "units": 640,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 75.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-075",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2027,
+   "title": "Easement",
+   "lease": null,
+   "yield": 7.0,
+   "units": 49,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 10.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-076",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2026,
+   "title": "No title deed",
+   "lease": null,
+   "yield": 6.0,
+   "units": 210,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 40.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-077",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2027,
+   "title": "No title deed",
+   "lease": null,
+   "yield": 4.0,
+   "units": 216,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 80.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-078",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": 2026,
+   "title": "Easement",
+   "lease": null,
+   "yield": 7.0,
+   "units": 108,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 85.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-079",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2026,
+   "title": "Easement",
+   "lease": null,
+   "yield": 6.0,
+   "units": 130,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 90.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 5
+  },
+  {
+   "id": "IST-080",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2026,
+   "title": "Easement",
+   "lease": null,
+   "yield": 6.0,
+   "units": 148,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 90.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-081",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": "Easement",
+   "lease": null,
+   "yield": 7.0,
+   "units": 240,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-082",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2026,
+   "title": "Easement",
+   "lease": null,
+   "yield": 8.0,
+   "units": 150,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 95.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-083",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2029,
+   "title": "No title deed",
+   "lease": null,
+   "yield": 5.0,
+   "units": 311,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2029: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-084",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": "Easement",
+   "lease": null,
+   "yield": 6.0,
+   "units": 133,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 75.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-085",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2026,
+   "title": "Easement",
+   "lease": null,
+   "yield": 6.0,
+   "units": 32,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 90.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-086",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2026,
+   "title": "Easement",
+   "lease": null,
+   "yield": 6.0,
+   "units": 407,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 90.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-087",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2027,
+   "title": "No title deed",
+   "lease": null,
+   "yield": 4.0,
+   "units": 165,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 15.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-088",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": "Easement",
+   "lease": null,
+   "yield": 7.0,
+   "units": 256,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 80.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-089",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2029,
+   "title": "No title deed",
+   "lease": null,
+   "yield": 5.0,
+   "units": 190,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2029: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 3,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 3
+  },
+  {
+   "id": "IST-090",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2026,
+   "title": "Easement",
+   "lease": null,
+   "yield": 5.0,
+   "units": 689,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 95.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-091",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2026,
+   "title": "Easement",
+   "lease": null,
+   "yield": 6.0,
+   "units": 193,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 80.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-092",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2027,
+   "title": "No title deed",
+   "lease": null,
+   "yield": 7.0,
+   "units": 79,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 10.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-093",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": "Easement",
+   "lease": null,
+   "yield": 6.0,
+   "units": 369,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 89.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-094",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2028,
+   "title": "No title deed",
+   "lease": null,
+   "yield": 4.0,
+   "units": 200,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 3,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 3
+  },
+  {
+   "id": "IST-095",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2027,
+   "title": "No title deed",
+   "lease": null,
+   "yield": 6.0,
+   "units": 57,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 20.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-096",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2027,
+   "title": "No title deed",
+   "lease": null,
+   "yield": 7.0,
+   "units": 270,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 10.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-097",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2028,
+   "title": "No title deed",
+   "lease": null,
+   "yield": 6.0,
+   "units": 340,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-098",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2027,
+   "title": "No title deed",
+   "lease": null,
+   "yield": 6.0,
+   "units": 512,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 33.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-099",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2027,
+   "title": "Easement",
+   "lease": null,
+   "yield": 6.0,
+   "units": 160,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 63.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-100",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2026,
+   "title": "Easement",
+   "lease": null,
+   "yield": 5.0,
+   "units": 754,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 90.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-101",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": "No title deed",
+   "lease": null,
+   "yield": 5.0,
+   "units": 47,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-102",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2028,
+   "title": "No title deed",
+   "lease": null,
+   "yield": 4.0,
+   "units": 12,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-103",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2028,
+   "title": "No title deed",
+   "lease": null,
+   "yield": 8.0,
+   "units": 575,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 66.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-104",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2027,
+   "title": "Easement",
+   "lease": null,
+   "yield": 5.0,
+   "units": 226,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 65.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-105",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2027,
+   "title": "Easement",
+   "lease": null,
+   "yield": 7.0,
+   "units": 299,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 60.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 4,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 6
+  },
+  {
+   "id": "IST-106",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": "Easement",
+   "lease": null,
+   "yield": 4.0,
+   "units": 44,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-107",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2026,
+   "title": "Contract",
+   "lease": null,
+   "yield": 6.0,
+   "units": 822,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 90.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-108",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2026,
+   "title": "Easement",
+   "lease": null,
+   "yield": 5.0,
+   "units": 32,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 95.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 5
+  },
+  {
+   "id": "IST-109",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2029,
+   "title": "No title deed",
+   "lease": null,
+   "yield": 5.0,
+   "units": 135,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2029: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 5
+  },
+  {
+   "id": "IST-110",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2027,
+   "title": "No title deed",
+   "lease": null,
+   "yield": 5.0,
+   "units": 74,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 60.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 5
+  },
+  {
+   "id": "IST-111",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2026,
+   "title": "Easement",
+   "lease": null,
+   "yield": 4.0,
+   "units": 161,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 95.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 4,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 6
+  },
+  {
+   "id": "IST-112",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2026,
+   "title": "No title deed",
+   "lease": null,
+   "yield": 6.0,
+   "units": 458,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 80.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-113",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": 2027,
+   "title": "Easement",
+   "lease": null,
+   "yield": 6.0,
+   "units": 227,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 90.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-114",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": 2027,
+   "title": "Easement",
+   "lease": null,
+   "yield": 7.0,
+   "units": 90,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 80.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-115",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": "Easement",
+   "lease": null,
+   "yield": 4.0,
+   "units": 180,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 35.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-116",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": 2027,
+   "title": "Easement",
+   "lease": null,
+   "yield": 6.0,
+   "units": 90,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 85.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-117",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2028,
+   "title": "No title deed",
+   "lease": null,
+   "yield": 5.0,
+   "units": 150,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 10.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-118",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2027,
+   "title": "Easement",
+   "lease": null,
+   "yield": 6.0,
+   "units": 105,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 90.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 5
+  },
+  {
+   "id": "IST-119",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2026,
+   "title": "Easement",
+   "lease": null,
+   "yield": 5.0,
+   "units": 21,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 89.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "IST-120",
+   "market": "Istanbul",
+   "country": "Turkey",
+   "region": "Istanbul",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": "Easement",
+   "lease": null,
+   "yield": 5.0,
+   "units": 666,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 15.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
   },
   {
    "id": "ITA-001",
@@ -131604,13 +137817,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 7,
+    "unverified": 8,
     "contradicted": 1
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 12,
+   "profile": 14,
    "fp": {
     "sha256": "e81f06cfc2aea102801f0656708ea48c7afac0910875c5a1c5afd907e425a15f",
     "date": "2026-11-05"
@@ -131625,14 +137838,14 @@
    "plans": false,
    "band": "$100k to $200k",
    "done": 2026,
-   "title": null,
+   "title": "Contract",
    "lease": null,
    "yield": null,
    "units": 738,
    "checks": {
     "permit": 0,
     "escrow": null,
-    "progress": null,
+    "progress": 68.0,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -131645,16 +137858,76 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 2,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "mixed",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
-    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 4,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "NCY-010",
+   "market": "Northern Cyprus",
+   "country": "Northern Cyprus",
+   "region": "Northern Cyprus",
+   "docs": false,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": 2026,
+   "title": "Contract",
+   "lease": null,
+   "yield": null,
+   "units": 952,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 100.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "12 Nov 2026",
+   "invited": null,
+   "q": [
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2026: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
@@ -131676,69 +137949,7 @@
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 3
-  },
-  {
-   "id": "NCY-010",
-   "market": "Northern Cyprus",
-   "country": "Northern Cyprus",
-   "region": "Northern Cyprus",
-   "docs": false,
-   "plans": false,
-   "band": "$100k to $200k",
-   "done": 2026,
-   "title": null,
-   "lease": null,
-   "yield": null,
-   "units": 952,
-   "checks": {
-    "permit": 0,
-    "escrow": null,
-    "progress": null,
-    "plans": false,
-    "record": false,
-    "returns_ok": true,
-    "researched": [
-     "permit",
-     "escrow",
-     "progress",
-     "plans",
-     "record",
-     "returns_ok"
-    ]
-   },
-   "score": 1,
-   "max": 6,
-   "flags": [],
-   "notes": [],
-   "tier": "caution",
-   "read": true,
-   "checked": "12 Nov 2026",
-   "invited": null,
-   "q": [
-    "Title type not stated: leasehold, freehold or a company structure?",
-    "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2026: does progress on site match?",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
-   ],
-   "verified": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
-    "plans": "none",
-    "record": "none",
-    "returns_ok": "none"
-   },
-   "vscore": 0,
-   "claims": {
-    "verified": 0,
-    "unverified": 2,
-    "contradicted": 0
-   },
-   "stage": "under construction",
-   "delay": null,
-   "overdue": null,
-   "profile": 3
+   "profile": 7
   },
   {
    "id": "NCY-011",
@@ -131749,14 +137960,14 @@
    "plans": false,
    "band": "$200k to $400k",
    "done": 2027,
-   "title": null,
+   "title": "Contract",
    "lease": null,
    "yield": null,
    "units": 454,
    "checks": {
     "permit": 0,
     "escrow": null,
-    "progress": null,
+    "progress": 10.0,
     "plans": false,
     "record": false,
     "returns_ok": true,
@@ -131769,16 +137980,15 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 2,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "mixed",
    "read": true,
    "checked": "12 Nov 2026",
    "invited": null,
    "q": [
-    "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
@@ -131794,13 +138004,318 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 3,
+    "unverified": 4,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 3
+   "profile": 7
+  },
+  {
+   "id": "NCY-012",
+   "market": "Northern Cyprus",
+   "country": "Northern Cyprus",
+   "region": "Northern Cyprus",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2026,
+   "title": "Contract",
+   "lease": null,
+   "yield": 7.0,
+   "units": 52,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 65.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "NCY-013",
+   "market": "Northern Cyprus",
+   "country": "Northern Cyprus",
+   "region": "Northern Cyprus",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2026,
+   "title": "Contract",
+   "lease": null,
+   "yield": 8.0,
+   "units": 122,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 75.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "NCY-014",
+   "market": "Northern Cyprus",
+   "country": "Northern Cyprus",
+   "region": "Northern Cyprus",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": "Contract",
+   "lease": null,
+   "yield": 7.0,
+   "units": 41,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 90.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "NCY-015",
+   "market": "Northern Cyprus",
+   "country": "Northern Cyprus",
+   "region": "Northern Cyprus",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2027,
+   "title": "Contract",
+   "lease": null,
+   "yield": 7.0,
+   "units": 36,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 55.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "NCY-016",
+   "market": "Northern Cyprus",
+   "country": "Northern Cyprus",
+   "region": "Northern Cyprus",
+   "docs": false,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": 2028,
+   "title": "Contract",
+   "lease": null,
+   "yield": 7.0,
+   "units": 354,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 10.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
   },
   {
    "id": "OKA-001",
@@ -139859,7 +146374,7 @@
    "market": "Phuket",
    "country": "Thailand",
    "region": "Phuket",
-   "docs": false,
+   "docs": true,
    "plans": true,
    "band": "$100k to $200k",
    "done": 2028,
@@ -139868,7 +146383,7 @@
    "yield": null,
    "units": 564,
    "checks": {
-    "permit": 0,
+    "permit": 2,
     "escrow": null,
     "progress": null,
     "plans": true,
@@ -139883,15 +146398,16 @@
      "returns_ok"
     ]
    },
-   "score": 3,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "5 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
@@ -139908,7 +146424,7 @@
    "vscore": 1,
    "claims": {
     "verified": 4,
-    "unverified": 2,
+    "unverified": 3,
     "contradicted": 4
    },
    "stage": "off-plan",
@@ -139931,7 +146447,7 @@
    "market": "Phuket",
    "country": "Thailand",
    "region": "Phuket",
-   "docs": false,
+   "docs": true,
    "plans": false,
    "band": "Under $100k",
    "done": 2029,
@@ -139940,7 +146456,7 @@
    "yield": 7,
    "units": 299,
    "checks": {
-    "permit": 0,
+    "permit": 2,
     "escrow": null,
     "progress": null,
     "plans": false,
@@ -139955,15 +146471,16 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 2,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "mixed",
    "read": true,
    "checked": "5 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2029: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
@@ -139979,7 +146496,7 @@
    "vscore": 1,
    "claims": {
     "verified": 2,
-    "unverified": 8,
+    "unverified": 9,
     "contradicted": 1
    },
    "stage": "off-plan",
@@ -161022,6 +167539,555 @@
    "profile": 3
   },
   {
+   "id": "TUR-002",
+   "market": "Turkey",
+   "country": "Turkey",
+   "region": "Turkey",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2027,
+   "title": "Easement",
+   "lease": null,
+   "yield": 7.0,
+   "units": 430,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 95.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "TUR-003",
+   "market": "Turkey",
+   "country": "Turkey",
+   "region": "Turkey",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2027,
+   "title": "Easement",
+   "lease": null,
+   "yield": 5.0,
+   "units": 338,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 90.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "TUR-004",
+   "market": "Turkey",
+   "country": "Turkey",
+   "region": "Turkey",
+   "docs": false,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": 2027,
+   "title": "No title deed",
+   "lease": null,
+   "yield": 6.0,
+   "units": 196,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 20.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "TUR-005",
+   "market": "Turkey",
+   "country": "Turkey",
+   "region": "Turkey",
+   "docs": false,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": 2028,
+   "title": "No title deed",
+   "lease": null,
+   "yield": 6.0,
+   "units": 513,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 10.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "TUR-006",
+   "market": "Turkey",
+   "country": "Turkey",
+   "region": "Turkey",
+   "docs": false,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": 2028,
+   "title": "No title deed",
+   "lease": null,
+   "yield": 6.0,
+   "units": 2250,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 5.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "TUR-007",
+   "market": "Turkey",
+   "country": "Turkey",
+   "region": "Turkey",
+   "docs": false,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": 2027,
+   "title": "No title deed",
+   "lease": null,
+   "yield": 6.0,
+   "units": 1071,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 30.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "TUR-008",
+   "market": "Turkey",
+   "country": "Turkey",
+   "region": "Turkey",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": "Easement",
+   "lease": null,
+   "yield": 6.0,
+   "units": 4,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 75.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 6
+  },
+  {
+   "id": "TUR-009",
+   "market": "Turkey",
+   "country": "Turkey",
+   "region": "Turkey",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": "Easement",
+   "lease": null,
+   "yield": 3.0,
+   "units": 6,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 78.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 6
+  },
+  {
+   "id": "TUR-010",
+   "market": "Turkey",
+   "country": "Turkey",
+   "region": "Turkey",
+   "docs": false,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": 2027,
+   "title": "No title deed",
+   "lease": null,
+   "yield": 6.0,
+   "units": 256,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": 13.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 5,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
    "id": "TCA-001",
    "market": "Turks and Caicos",
    "country": "Turks and Caicos Islands",
@@ -167187,29 +174253,29 @@
  ],
  "db": {
   "updated": "2026-11-23",
-  "projects": 2500,
+  "projects": 2616,
   "markets": 182,
   "countries": 94,
-  "sources": 8503,
-  "data_points": 63927,
+  "sources": 8634,
+  "data_points": 66953,
   "claims": {
    "verified": 8142,
-   "unverified": 9099,
+   "unverified": 9692,
    "contradicted": 1370
   },
-  "claims_total": 18611,
-  "deep_profiles": 2500,
+  "claims_total": 19204,
+  "deep_profiles": 2616,
   "checks_by_level": {
    "registry": 2625,
    "independent": 483,
    "developer": 2020,
    "contradicted": 103,
-   "none": 9769
+   "none": 10465
   },
-  "checks_rated": 15000,
+  "checks_rated": 15696,
   "stages": {
-   "off-plan": 890,
-   "under construction": 1547,
+   "off-plan": 901,
+   "under construction": 1652,
    "completed": 17
   },
   "all_six_public": 65,
