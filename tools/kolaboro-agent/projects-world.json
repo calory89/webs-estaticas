@@ -31988,6 +31988,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://www.propertyfinder.ae/en/new-projects/aldar-properties-pjsc/al-sidr"
+    },
+    {
+     "claim": "Aldar release of 24 Oct 2022 on the Saadiyat Lagoons masterplan: first phase of 207 villas released on 3 Nov 2022 from AED 6.1 million; construction of that phase due to begin in Q2 2023 with handovers from Q2 2026",
+     "status": "verified",
+     "by": "developer",
+     "source": "https://www.aldar.com/en/news-and-media/aldar-launches-saadiyat-lagoons"
     }
    ],
    "facts": {
@@ -32054,7 +32060,8 @@
     "https://www.propertyfinder.ae/en/new-projects/aldar-properties-pjsc/al-sidr",
     "https://www.propertyfinder.ae/en/new-projects/aldar-properties-pjsc/ethir",
     "https://www.thenationalnews.com/business/property/2022/10/24/saadiyat-lagoons-aldar-launches-nature-inspired-community-in-abu-dhabi/",
-    "https://www.wam.ae/en/article/hszrfq18-aldar-launches-nature-inspired-%E2%80%98saadiyat-lagoons%E2%80%99"
+    "https://www.wam.ae/en/article/hszrfq18-aldar-launches-nature-inspired-%E2%80%98saadiyat-lagoons%E2%80%99",
+    "https://www.aldar.com/en/news-and-media/aldar-launches-saadiyat-lagoons"
    ],
    "review": {
     "d": "2026-11-13",
@@ -60573,7 +60580,7 @@
    "note": "2,434 home waterfront community on Yas Island launched in Aug 2023 with Q2 2027 handover for phase one; escrow and ADREC project numbers appear only on a broker page, and no floor plans or prices were found on pages opened. (checked 31 Oct 2026)",
    "added": "2026-10-31",
    "seed": {
-    "price": null,
+    "price": 805000,
     "currency": "AED",
     "title": "freehold",
     "lease_base": null,
@@ -60623,7 +60630,8 @@
     "https://royallp.com/blog-post/yas-island-aldar-construction-update-q4-2025/",
     "https://www.aqqaar.com/market/off-plan/gardenia-bay",
     "https://apigateway.adx.ae/adx/cdn/1.0/content/download/4790961",
-    "https://www.thenationalnews.com/business/property/2026/03/26/aldars-2026-handover-schedule-unaffected-by-conflict-as-128bn-in-contracts-are-awarded/"
+    "https://www.thenationalnews.com/business/property/2026/03/26/aldars-2026-handover-schedule-unaffected-by-conflict-as-128bn-in-contracts-are-awarded/",
+    "https://www.aldar.com/en/news-and-media/ultimate-green-canal-side-living-at-gardenia-bay"
    ],
    "verification": {
     "permit": "developer",
@@ -60675,6 +60683,18 @@
      "status": "verified",
      "by": "independent",
      "source": "https://www.thenationalnews.com/business/property/2026/03/26/aldars-2026-handover-schedule-unaffected-by-conflict-as-128bn-in-contracts-are-awarded/"
+    },
+    {
+     "claim": "Aldar release of 30 Aug 2023: 210 of the community's 2,434 homes (studios to three-bedroom apartments) offered in the first phase from 8 Sep 2023; prices from AED 805,000 for studios and from AED 3.1 million for three-bedroom apartments",
+     "status": "verified",
+     "by": "developer",
+     "source": "https://www.aldar.com/en/news-and-media/ultimate-green-canal-side-living-at-gardenia-bay"
+    },
+    {
+     "claim": "Aldar release of 30 Aug 2023: construction of the first phase due to begin in Q1 2024, handovers expected in Q2 2027",
+     "status": "verified",
+     "by": "developer",
+     "source": "https://www.aldar.com/en/news-and-media/ultimate-green-canal-side-living-at-gardenia-bay"
     }
    ],
    "facts": {
@@ -60696,7 +60716,7 @@
     ],
     "size_min_m2": null,
     "size_max_m2": null,
-    "price_min": null,
+    "price_min": 805000,
     "price_max": null,
     "currency": "AED",
     "deposit_pct": null,
@@ -327949,8 +327969,8 @@
    "docs_url": "https://dubairealestateiq.com/project/haven-by-aldar-1",
    "permit_number": "DLD project registrations 2873, 2875",
    "seed": {
-    "price": null,
-    "currency": null,
+    "price": 2500000,
+    "currency": "AED",
     "title": null,
     "lease_base": null,
     "extension": null,
@@ -328084,6 +328104,24 @@
      "status": "verified",
      "by": "registry",
      "source": "https://dubairealestateiq.com/project/haven-by-aldar-3"
+    },
+    {
+     "claim": "Aldar release of 26 Oct 2023: first phase launched 31 Oct 2023 with 462 of the community's 2,428 homes (three- and four-bedroom townhouses, three- to six-bedroom villas); townhouses from AED 2.5 million, villas from AED 3.5 million",
+     "status": "verified",
+     "by": "developer",
+     "source": "https://www.aldar.com/en/news-and-media/haven-aldar-first-residential-development-in-dubai"
+    },
+    {
+     "claim": "Aldar release of 26 Oct 2023: construction of the first phase due to begin in Q2 2024, handovers expected in Q3 2027",
+     "status": "verified",
+     "by": "developer",
+     "source": "https://www.aldar.com/en/news-and-media/haven-aldar-first-residential-development-in-dubai"
+    },
+    {
+     "claim": "Aldar release of 1 Nov 2023: first two phases sold out, 468 plus 318 units; 786 villas and townhouses sold for over AED 3.1 billion",
+     "status": "verified",
+     "by": "developer",
+     "source": "https://www.aldar.com/en/news-and-media/aldar-announced-the-sell-out-of-the-first-two-phases-of-haven-by-aldar"
     }
    ],
    "facts": {
@@ -328097,9 +328135,9 @@
     "unit_types": [],
     "size_min_m2": null,
     "size_max_m2": null,
-    "price_min": null,
+    "price_min": 2500000,
     "price_max": null,
-    "currency": null,
+    "currency": "AED",
     "deposit_pct": null,
     "payment_plan": null,
     "foreign_ownership": null,
@@ -328113,7 +328151,9 @@
    "flags": [],
    "sources": [
     "https://dubairealestateiq.com/project/haven-by-aldar-1",
-    "https://dubairealestateiq.com/project/haven-by-aldar-3"
+    "https://dubairealestateiq.com/project/haven-by-aldar-3",
+    "https://www.aldar.com/en/news-and-media/haven-aldar-first-residential-development-in-dubai",
+    "https://www.aldar.com/en/news-and-media/aldar-announced-the-sell-out-of-the-first-two-phases-of-haven-by-aldar"
    ],
    "docs_listed": [
     "DLD project register, phase \"Haven by Aldar 1\": project 2873, status Active, completion date on the register 28 Nov 2027, 61.03% built at the DLD inspection of 21 Oct 2026, 8 inspections on the register, start date 30 Apr 2024, registered 16 Jan 2024 (register read 18 Nov 2026 as published on dubairealestateiq.com; page read 21 Nov 2026)",
@@ -328464,6 +328504,12 @@
      "status": "verified",
      "by": "registry",
      "source": "https://dubairealestateiq.com/project/athlon-by-al-dar-2"
+    },
+    {
+     "claim": "Aldar release of 9 May 2024: first two phases of Athlon sold out, more than 1,000 villas and townhouses; expatriate residents and overseas buyers 81% of sales",
+     "status": "verified",
+     "by": "developer",
+     "source": "https://www.aldar.com/en/news-and-media/aldar-sells-out-first-two-phases-of-athlon"
     }
    ],
    "facts": {
@@ -328493,7 +328539,8 @@
    "flags": [],
    "sources": [
     "https://dubairealestateiq.com/project/athlon-by-al-dar-1",
-    "https://dubairealestateiq.com/project/athlon-by-al-dar-2"
+    "https://dubairealestateiq.com/project/athlon-by-al-dar-2",
+    "https://www.aldar.com/en/news-and-media/aldar-sells-out-first-two-phases-of-athlon"
    ],
    "docs_listed": [
     "DLD project register, phase \"Athlon by Al Dar 1\": project 3143, status Active, completion date on the register 31 May 2028, 27.25% built at the DLD inspection of 22 Oct 2026, 7 inspections on the register, start date 16 Jul 2024, registered 17 Jul 2024 (register read 18 Nov 2026 as published on dubairealestateiq.com; page read 21 Nov 2026)",
@@ -328562,8 +328609,8 @@
    "docs_url": "https://dubairealestateiq.com/project/verdes-by-haven-1",
    "permit_number": "DLD project registrations 3188, 3189",
    "seed": {
-    "price": null,
-    "currency": null,
+    "price": 990000,
+    "currency": "AED",
     "title": null,
     "lease_base": null,
     "extension": null,
@@ -328691,6 +328738,18 @@
      "status": "verified",
      "by": "registry",
      "source": "https://dubairealestateiq.com/project/verdes-by-haven-2"
+    },
+    {
+     "claim": "Aldar release of 24 Jun 2024: Verdes by Haven public launch on 11 Jul 2024, one- to three-bedroom apartments from AED 990,000",
+     "status": "verified",
+     "by": "developer",
+     "source": "https://www.aldar.com/en/news-and-media/aldar-unveils-verdes-by-haven"
+    },
+    {
+     "claim": "Aldar release of 16 Jul 2024: more than 660 residences sold at launch, over AED 1 billion in sales; 88% first-time Aldar buyers",
+     "status": "verified",
+     "by": "developer",
+     "source": "https://www.aldar.com/en/news-and-media/aldar-sells-more-than-660-residences-at-launch-of-verdes-by-haven"
     }
    ],
    "facts": {
@@ -328704,9 +328763,9 @@
     "unit_types": [],
     "size_min_m2": null,
     "size_max_m2": null,
-    "price_min": null,
+    "price_min": 990000,
     "price_max": null,
-    "currency": null,
+    "currency": "AED",
     "deposit_pct": null,
     "payment_plan": null,
     "foreign_ownership": null,
@@ -328720,7 +328779,9 @@
    "flags": [],
    "sources": [
     "https://dubairealestateiq.com/project/verdes-by-haven-1",
-    "https://dubairealestateiq.com/project/verdes-by-haven-2"
+    "https://dubairealestateiq.com/project/verdes-by-haven-2",
+    "https://www.aldar.com/en/news-and-media/aldar-unveils-verdes-by-haven",
+    "https://www.aldar.com/en/news-and-media/aldar-sells-more-than-660-residences-at-launch-of-verdes-by-haven"
    ],
    "docs_listed": [
     "DLD project register, phase \"Verdes by Haven 1\": project 3188, status Active, completion date on the register 31 May 2028, 17.66% built at the DLD inspection of 21 Oct 2026, 7 inspections on the register, start date 16 Feb 2025, registered 10 Sep 2024 (register read 18 Nov 2026 as published on dubairealestateiq.com; page read 21 Nov 2026)",
@@ -328912,6 +328973,18 @@
      "status": "verified",
      "by": "registry",
      "source": "https://dubairealestateiq.com/project/the-wilds-3"
+    },
+    {
+     "claim": "Aldar release of 19 Feb 2025: The Wilds (with Dubai Holding) has almost 1,700 homes: five- and six-bedroom mansions by architect Nabil Gholam, three- to five-bedroom villas and one- to three-bedroom apartments",
+     "status": "verified",
+     "by": "developer",
+     "source": "https://www.aldar.com/en/news-and-media/aldar-launches-the-wilds"
+    },
+    {
+     "claim": "Aldar release of 5 Mar 2025: first phase sold out, 734 three- to five-bedroom villas, AED 5 billion in confirmed sales; mansions and apartments to follow in the next phase",
+     "status": "verified",
+     "by": "developer",
+     "source": "https://www.aldar.com/en/news-and-media/aldar-sells-out-first-phase-of-the-wilds"
     }
    ],
    "facts": {
@@ -328942,7 +329015,9 @@
    "sources": [
     "https://dubairealestateiq.com/project/the-wilds-1",
     "https://dubairealestateiq.com/project/the-wilds-2",
-    "https://dubairealestateiq.com/project/the-wilds-3"
+    "https://dubairealestateiq.com/project/the-wilds-3",
+    "https://www.aldar.com/en/news-and-media/aldar-launches-the-wilds",
+    "https://www.aldar.com/en/news-and-media/aldar-sells-out-first-phase-of-the-wilds"
    ],
    "docs_listed": [
     "DLD project register, phase \"The Wilds 1\": project 3600, status Active, completion date on the register 31 Jan 2029, 7.48% built at the DLD inspection of 14 Sep 2026, 4 inspections on the register, start date 28 Feb 2025, registered 19 May 2025 (register read 18 Nov 2026 as published on dubairealestateiq.com; page read 21 Nov 2026)",
@@ -358811,13 +358886,25 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/uae/al-shamkha/al-reeman-living-phase-1"
+    },
+    {
+     "claim": "Aldar release of 13 Mar 2023: Reeman Living has 1,050 units in five low-rise buildings, 630 offered in the first phase to buyers of all nationalities, public sales from 18 Mar 2023, prices from AED 365,000",
+     "status": "verified",
+     "by": "developer",
+     "source": "https://www.aldar.com/en/news-and-media/aldar-launches-reeman-living"
+    },
+    {
+     "claim": "Aldar release of 13 Mar 2023: construction due to begin in Q1 2023, handovers expected to start in Q3 2026",
+     "status": "verified",
+     "by": "developer",
+     "source": "https://www.aldar.com/en/news-and-media/aldar-launches-reeman-living"
     }
    ],
    "facts": {
     "developer_founded": null,
     "developer_hq": null,
     "developer_company": null,
-    "construction_start": null,
+    "construction_start": "2023-Q1",
     "handover_promised": "Q1 2026",
     "original_handover": null,
     "delay_months": null,
@@ -358844,7 +358931,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/uae/al-shamkha/al-reeman-living-phase-1"
+    "https://rumavi.com/en/new-developments/uae/al-shamkha/al-reeman-living-phase-1",
+    "https://www.aldar.com/en/news-and-media/aldar-launches-reeman-living"
    ],
    "docs_listed": [
     "Development profile lists Al Reeman Living - Phase 1 by Aldar in Al Shamkha, Abu Dhabi, UAE, status \"Under Construction\", expected completion \"Q1 2026\" (profile dated 2026-09-10, read 21 Nov 2026)",
@@ -359283,6 +359371,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/uae/saadiyat-island/manarat-living-iii"
+    },
+    {
+     "claim": "Aldar release of 31 Jan 2025: Manarat Living III sold out; 400 homes; UAE nationals 28% of sales, expatriate residents and overseas buyers 72%",
+     "status": "verified",
+     "by": "developer",
+     "source": "https://www.aldar.com/en/news-and-media/aldar-sells-out-manarat-living-iii"
     }
    ],
    "facts": {
@@ -359316,7 +359410,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/uae/saadiyat-island/manarat-living-iii"
+    "https://rumavi.com/en/new-developments/uae/saadiyat-island/manarat-living-iii",
+    "https://www.aldar.com/en/news-and-media/aldar-sells-out-manarat-living-iii"
    ],
    "docs_listed": [
     "Development profile lists Manarat Living III by Aldar in Saadiyat Island, Abu Dhabi, UAE, status \"Under Construction\", expected completion \"Q2 2028\" (profile dated 2026-09-10, read 21 Nov 2026)",
@@ -359407,13 +359502,25 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/uae/saadiyat-island/nouran-living"
+    },
+    {
+     "claim": "Aldar release of 13 Mar 2024: 372 studios and one- to three-bedroom apartments from AED 750,000, open to all nationalities from 19 Mar 2024",
+     "status": "verified",
+     "by": "developer",
+     "source": "https://www.aldar.com/en/news-and-media/aldar-nouran-living-launch"
+    },
+    {
+     "claim": "Aldar release of 13 Mar 2024: construction scheduled to start in Q4 2024, handovers expected in Q4 2027",
+     "status": "verified",
+     "by": "developer",
+     "source": "https://www.aldar.com/en/news-and-media/aldar-nouran-living-launch"
     }
    ],
    "facts": {
     "developer_founded": null,
     "developer_hq": null,
     "developer_company": null,
-    "construction_start": null,
+    "construction_start": "2024-Q4",
     "handover_promised": "Q4 2027",
     "original_handover": null,
     "delay_months": null,
@@ -359440,7 +359547,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/uae/saadiyat-island/nouran-living"
+    "https://rumavi.com/en/new-developments/uae/saadiyat-island/nouran-living",
+    "https://www.aldar.com/en/news-and-media/aldar-nouran-living-launch"
    ],
    "docs_listed": [
     "Development profile lists Nouran Living by Aldar in Saadiyat Island, Abu Dhabi, UAE, status \"Under Construction\", expected completion \"Q4 2027\" (profile dated 2026-09-10, read 21 Nov 2026)",
@@ -359526,6 +359634,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/uae/saadiyat-island/the-row-saadiyat"
+    },
+    {
+     "claim": "Aldar release of 22 Oct 2025: first phase of three buildings with 315 homes (one to three bedrooms) on sale from 1 Nov 2025",
+     "status": "verified",
+     "by": "developer",
+     "source": "https://www.aldar.com/en/news-and-media/aldar-introduces-the-row-saadiyat"
     }
    ],
    "facts": {
@@ -359558,7 +359672,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/uae/saadiyat-island/the-row-saadiyat"
+    "https://rumavi.com/en/new-developments/uae/saadiyat-island/the-row-saadiyat",
+    "https://www.aldar.com/en/news-and-media/aldar-introduces-the-row-saadiyat"
    ],
    "docs_listed": [
     "Development profile lists The Row Saadiyat by Aldar in Saadiyat Island, Abu Dhabi, UAE, status \"Off Plan\", expected completion \"Q1 2030\" (profile dated 2026-09-10, read 21 Nov 2026)",
@@ -359643,6 +359758,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/uae/yas-island/yas-living"
+    },
+    {
+     "claim": "Aldar release of 14 Oct 2025: Yas Living sold out at launch; 678 apartments (studios to three bedrooms) across three buildings; 65% of buyers under 45",
+     "status": "verified",
+     "by": "developer",
+     "source": "https://www.aldar.com/en/news-and-media/aldar-sells-out-yas-living-at-launch"
     }
    ],
    "facts": {
@@ -359676,7 +359797,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/uae/yas-island/yas-living"
+    "https://rumavi.com/en/new-developments/uae/yas-island/yas-living",
+    "https://www.aldar.com/en/news-and-media/aldar-sells-out-yas-living-at-launch"
    ],
    "docs_listed": [
     "Development profile lists Yas Living by Aldar in Yas Island, Abu Dhabi, UAE, status \"Under Construction\", expected completion \"2028\" (profile dated 2026-09-10, read 21 Nov 2026)",
@@ -359761,13 +359883,25 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/uae/yas-island/yas-park-views"
+    },
+    {
+     "claim": "Aldar release of 21 Nov 2022: Yas Park Views launched with 341 standalone villas for all nationalities; three-bedroom villas from AED 2.84 million, four-bedroom from AED 3.43 million, five-bedroom from AED 4.1 million",
+     "status": "verified",
+     "by": "developer",
+     "source": "https://www.aldar.com/en/news-and-media/aldar-sells-out-yas-park-gate-and-launches-exclusive-standalone-villas-at-yas-park-views"
+    },
+    {
+     "claim": "Aldar release of 21 Nov 2022: construction due to begin in Q2 2023, handovers expected to start in Q2 2026",
+     "status": "verified",
+     "by": "developer",
+     "source": "https://www.aldar.com/en/news-and-media/aldar-sells-out-yas-park-gate-and-launches-exclusive-standalone-villas-at-yas-park-views"
     }
    ],
    "facts": {
     "developer_founded": null,
     "developer_hq": null,
     "developer_company": null,
-    "construction_start": null,
+    "construction_start": "2023-Q2",
     "handover_promised": "Q2 2026",
     "original_handover": null,
     "delay_months": null,
@@ -359793,7 +359927,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/uae/yas-island/yas-park-views"
+    "https://rumavi.com/en/new-developments/uae/yas-island/yas-park-views",
+    "https://www.aldar.com/en/news-and-media/aldar-sells-out-yas-park-gate-and-launches-exclusive-standalone-villas-at-yas-park-views"
    ],
    "docs_listed": [
     "Development profile lists Yas Park Views by Aldar in Yas Island, Abu Dhabi, UAE, status \"Under Construction\", expected completion \"Q2 2026\" (profile dated 2026-09-15, read 21 Nov 2026)",
@@ -359878,6 +360013,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/uae/yas-island/yas-riva"
+    },
+    {
+     "claim": "Aldar release of 4 Sep 2024: Yas Riva sales open on 13 Sep 2024 to all nationalities; the villas target a 3 Pearl Estidama rating and the community a 2 Pearl rating",
+     "status": "verified",
+     "by": "developer",
+     "source": "https://www.aldar.com/en/news-and-media/aldar-launches-yas-riva"
     }
    ],
    "facts": {
@@ -359910,7 +360051,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/uae/yas-island/yas-riva"
+    "https://rumavi.com/en/new-developments/uae/yas-island/yas-riva",
+    "https://www.aldar.com/en/news-and-media/aldar-launches-yas-riva"
    ],
    "docs_listed": [
     "Development profile lists Yas Riva by Aldar in Yas Island, Abu Dhabi, UAE, status \"Under Construction\", expected completion \"2028\" (profile dated 2026-09-10, read 21 Nov 2026)",
@@ -503411,6 +503553,116 @@
      "unknown",
      "no delivery date on the developer page",
      "https://www.avenue.pt/pt/projetos/fernao-magalhaes-127/"
+    ]
+   }
+  },
+  {
+   "name": "Baccarat Residences Saadiyat",
+   "developer": "Aldar Properties",
+   "area": "Saadiyat Grove, Saadiyat Cultural District, Saadiyat Island, Abu Dhabi",
+   "country": "UAE",
+   "market": "Abu Dhabi",
+   "stage": "off-plan",
+   "url": "https://www.aldar.com/en/news-and-media/aldar-launches-baccarat-residences-saadiyat",
+   "docs_url": "https://www.aldar.com/en/news-and-media/aldar-launches-baccarat-residences-saadiyat",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 77,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Aldar release of 10 Feb 2026: Baccarat Residences Saadiyat launched as the final development in the Saadiyat Grove district, Saadiyat Cultural District, Abu Dhabi; 77 homes (two- and three-bedroom residences, four-bedroom sky villas, two penthouses); architecture by Sou Fujimoto Architects; brand partner Baccarat Hotels and Residences (Starwood Hotels)",
+     "status": "verified",
+     "by": "developer",
+     "source": "https://www.aldar.com/en/news-and-media/aldar-launches-baccarat-residences-saadiyat"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "developer_company": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "2 and 3 bedroom residences",
+     "4 bedroom sky villas",
+     "penthouses"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "currency": null,
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Baccarat Residences Saadiyat by Aldar Properties in Saadiyat Grove, Abu Dhabi (UAE). Added from the developer release of 10 Feb 2026, read on 23 Nov 2026: 77 homes. No price, construction start or handover date is published in that release.",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.aldar.com/en/news-and-media/aldar-launches-baccarat-residences-saadiyat"
+   ],
+   "docs_listed": [
+    "Aldar release of 10 Feb 2026: Baccarat Residences Saadiyat launched as the final development in the Saadiyat Grove district, Saadiyat Cultural District, Abu Dhabi; 77 homes (two- and three-bedroom residences, four-bedroom sky villas, two penthouses); architecture by Sou Fujimoto Architects; brand partner Baccarat Hotels and Residences (Starwood Hotels)"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-23",
+   "found_by": "discover-manual",
+   "slug": "baccarat-residences-saadiyat-aldar",
+   "review": {
+    "d": "2026-11-23",
+    "v": "n31-1",
+    "ok": true,
+    "primary": [
+     "developer",
+     "https://www.aldar.com/en/news-and-media/aldar-launches-baccarat-residences-saadiyat"
+    ],
+    "handover": [
+     "unknown",
+     "no handover date in the developer release",
+     "https://www.aldar.com/en/news-and-media/aldar-launches-baccarat-residences-saadiyat"
     ]
    }
   }

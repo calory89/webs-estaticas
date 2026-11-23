@@ -79024,5 +79024,27 @@
   },
   "source": "seed",
   "checked": "2026-11-23"
+ },
+ "baccarat-residences-saadiyat-aldar": {
+  "name": "Baccarat Residences Saadiyat",
+  "url": "https://www.aldar.com/en/news-and-media/aldar-launches-baccarat-residences-saadiyat",
+  "market": "Abu Dhabi",
+  "claims": {
+   "price_from": null,
+   "currency": null,
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": []
+  },
+  "source": "seed",
+  "checked": "2026-11-23"
  }
 }
