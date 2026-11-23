@@ -12,7 +12,7 @@ import * as N from './kbx_named.js';
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' };
-export const V = 'b5';   // r5u: se.js shows completeness
+export const V = 'b6';   // r10u: register filter and sort
 const COI = /eco\s*beach|\bequinox\b|\bsumba\b/i;
 let T = null;
 async function loadT(env) {
@@ -191,7 +191,9 @@ async function sePage(env, shell, l, u) {
   const X = await sIndex(env); if (!X) return null;
   const P = pre(l), sp = u.searchParams, q = String(sp.get('q') || '').slice(0, 120);
   const f = { co: sp.get('co') || '', st: ['o', 'u', 'c'].includes(sp.get('st')) ? sp.get('st') : '', pm: sp.get('pm') === '1' ? 1 : sp.get('pm') === '0' ? 0 : null, hy: /^(20\d\d|none|past)$/.test(sp.get('hy') || '') ? sp.get('hy') : '' };
-  const base = match(X.rows, q), res = facetFilter(base, f), pg = Math.max(1, Math.min(200, parseInt(sp.get('pg') || '1', 10) || 1));
+  let G = null, RT = (k, v) => k; try { const R = await import('./kbx_n37u.js'); G = await R.regMap(env); RT = (k, v) => R.rgT(l, k, v); } catch (e) { G = null; }   // r10u: key facts read in an official register
+  const rg = G && /^[13]$/.test(sp.get('rg') || '') ? sp.get('rg') : '', so = G && sp.get('so') === 'reg' ? 'reg' : '', gOf = r => (G && G.get(r.s)) || 0;
+  const base0 = match(X.rows, q), base = rg ? base0.filter(r => gOf(r) >= +rg) : base0, res0 = facetFilter(base, f), res = so ? res0.map((r, i) => [gOf(r), i, r]).sort((a, b) => b[0] - a[0] || a[1] - b[1]).map(x => x[2]) : res0, rgAll = G ? facetFilter(base0, f) : [], pg = Math.max(1, Math.min(200, parseInt(sp.get('pg') || '1', 10) || 1));
   const co = cnt(facetFilter(base, f, 'co'), r => r.co), stc = cnt(facetFilter(base, f, 'st'), r => r.st), pmc = cnt(facetFilter(base, f, 'pm'), r => r.pm), hyc = cnt(facetFilter(base, f, 'hy'), r => r.hy || 'none'), pastN = facetFilter(base, f, 'hy').filter(r => r.ov > 0).length;
   const sel = (name, lab, opts, cur) => '<label>' + esc(lab) + '<select name="' + name + '" data-f="' + name + '"><option value="">' + esc(t(l, 'all')) + '</option>' + opts.map(o => '<option value="' + esc(o[0]) + '"' + (String(cur) === String(o[0]) ? ' selected' : '') + '>' + esc(o[1]) + ' (' + nf(o[2], l) + ')</option>').join('') + '</select></label>';
   const coOpts = [...co.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).map(([k, v]) => [k, k, v]);
@@ -200,15 +202,16 @@ async function sePage(env, shell, l, u) {
   const yrs = [...hyc.keys()].filter(k => k !== 'none').sort();
   const form = '<form method="get" action="' + P + '/search/" id="n34-se" role="search"><div class="n34-row"><label style="flex:1 1 320px">' + esc(t(l, 'se_q')) + '<input type="search" name="q" value="' + esc(q) + '" placeholder="' + esc(t(l, 'se_ph')) + '" autocomplete="off" aria-controls="n34-out"></label><button type="submit" class="hi">' + esc(t(l, 'se_go')) + '</button></div>' +
     '<div class="n34-fac">' + sel('co', t(l, 'f_co'), coOpts, f.co) + sel('st', t(l, 'f_st'), ['o', 'u', 'c'].map(k => [k, stName[k], stc.get(k) || 0]), f.st) + sel('pm', t(l, 'f_pm'), [[1, t(l, 'pm_1'), pmc.get(1) || 0], [0, t(l, 'pm_0'), pmc.get(0) || 0]], f.pm == null ? '' : f.pm) +
-    sel('hy', t(l, 'f_hy'), yrs.map(y => [y, y, hyc.get(+y) || hyc.get(y) || 0]).concat([['past', t(l, 'hy_past'), pastN], ['none', t(l, 'hy_none'), hyc.get('none') || 0]]), f.hy) + '</div></form>';
+    sel('hy', t(l, 'f_hy'), yrs.map(y => [y, y, hyc.get(+y) || hyc.get(y) || 0]).concat([['past', t(l, 'hy_past'), pastN], ['none', t(l, 'hy_none'), hyc.get('none') || 0]]), f.hy) +
+    (G ? sel('rg', RT('rg_f'), [['1', RT('rg_1'), rgAll.filter(r => gOf(r) >= 1).length], ['3', RT('rg_3'), rgAll.filter(r => gOf(r) >= 3).length]], rg) + '<label>' + esc(RT('so_l')) + '<select name="so" data-f="so"><option value="">' + esc(RT('so_0')) + '</option><option value="reg"' + (so ? ' selected' : '') + '>' + esc(RT('so_reg')) + '</option></select></label>' : '') + '</div></form>';   // r10u
   const pages = Math.max(1, Math.ceil(res.length / PER)), cur = Math.min(pg, pages), slice = res.slice((cur - 1) * PER, cur * PER);
-  const qs = o => { const p = new URLSearchParams(); const v = Object.assign({ q, co: f.co, st: f.st, pm: f.pm == null ? '' : String(f.pm), hy: f.hy }, o); for (const k of ['q', 'co', 'st', 'pm', 'hy', 'pg']) if (v[k] && !(k === 'pg' && v[k] === 1)) p.set(k, v[k]); const s = p.toString(); return P + '/search/' + (s ? '?' + s : ''); };
+  const qs = o => { const p = new URLSearchParams(); const v = Object.assign({ q, co: f.co, st: f.st, pm: f.pm == null ? '' : String(f.pm), hy: f.hy, rg, so }, o); for (const k of ['q', 'co', 'st', 'pm', 'hy', 'rg', 'so', 'pg']) if (v[k] && !(k === 'pg' && v[k] === 1)) p.set(k, v[k]); const s = p.toString(); return P + '/search/' + (s ? '?' + s : ''); };
   const item = r => '<li><a href="' + P + '/projects/' + esc(r.s) + '/">' + bdi(l, esc(r.n)) + '</a> <span class="k-xs">' + bdi(l, esc([r.dv, r.ar && r.ar !== r.mk ? r.ar : '', r.mk, r.co].filter(Boolean).join(' · '))) + '</span><br><span class="k-xs">' + [stName[r.st] || '', r.hy ? tf(l, 'r_hy', { y: r.hy }) : t(l, 'hy_none'), r.ov > 0 ? tf(l, 'r_ov', { m: nf(r.ov, l) }) : '', r.pm ? t(l, 'pm_1') : t(l, 'pm_0')].filter(Boolean).map(esc).join(' · ') + '</span></li>';
   const out = '<div id="n34-out" aria-live="polite"><p class="k-xs" id="n34-n">' + esc(tf(l, 'se_n', { k: nf(res.length, l), t: nf(X.rows.length, l) })) + '</p>' + (slice.length ? '<ol class="n34-res" start="' + ((cur - 1) * PER + 1) + '">' + slice.map(item).join('') + '</ol>' : '<p class="mut">' + esc(t(l, 'se_empty')) + ' <a href="' + P + '/request-project/?q=' + encodeURIComponent(q) + '">' + esc(t(l, 'se_req')) + '</a></p>') +
     (pages > 1 ? '<nav class="n34-pg" aria-label="' + esc(t(l, 'pages')) + '">' + (cur > 1 ? '<a href="' + esc(qs({ pg: cur - 1 })) + '" rel="prev">‹</a>' : '') + '<span>' + nf(cur, l) + ' / ' + nf(pages, l) + '</span>' + (cur < pages ? '<a href="' + esc(qs({ pg: cur + 1 })) + '" rel="next">›</a>' : '') + '</nav>' : '') + '</div>';
   const b = form + out + '<p class="k-xs">' + esc(tf(l, 'src_line', { n: nf(X.rows.length, l), d: fd(X.d.built, l), h: String(X.d.source.sha256).slice(0, 16) })) + ' <a href="/data/n34b-search.json">n34b-search.json</a> · <a href="/open/n34b-build.py">n34b-build.py</a></p>' +
     '<p class="k-xs">' + esc(t(l, 'se_tip')) + '</p>' + clientT(l, 'se', ['se_n', 'se_empty', 'se_req', 'st_o', 'st_u', 'st_c', 'pm_1', 'pm_0', 'r_hy', 'r_ov', 'hy_none', 'hy_past', 'all', 'pages']);
-  const any = q || f.co || f.st || f.pm != null || f.hy || cur > 1;
+  const any = q || f.co || f.st || f.pm != null || f.hy || rg || so || cur > 1;
   return page(shell, l, { k: 'se', path: '/search/', h1: t(l, 'se_t'), lead: t(l, 'se_l'), body: b, updated: X.d.built, noindex: !!any, maxAge: 600, type: 'SearchResultsPage' });
 }
 

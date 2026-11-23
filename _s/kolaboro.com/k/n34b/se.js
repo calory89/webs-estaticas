@@ -5,7 +5,7 @@
   var F = document.getElementById('n34-se'), O = document.getElementById('n34-out'), TT = document.getElementById('n34-t');
   if (!F || !O || !TT) return;
   var T = JSON.parse(TT.textContent), L = T._l, P = T._p, PER = 25, X = null, busy = null, tm = 0;
-  var N7 = null, N7T = null; try { N7T = JSON.parse(O.getAttribute('data-n37') || 'null'); } catch (e) {}   // r5u (batch 37): completeness and latest change per result, /data/n37u-se.json
+  var N7 = null, N7G = null, N7T = null; try { N7T = JSON.parse(O.getAttribute('data-n37') || 'null'); } catch (e) {}   // r5u (batch 37): completeness and latest change per result, /data/n37u-se.json
   var n7d = function (d) { try { return new Intl.DateTimeFormat(T._loc, { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC', numberingSystem: 'latn' }).format(new Date(d + 'T12:00:00Z')); } catch (e) { return d; } };
   var nf = function (n) { try { return new Intl.NumberFormat(T._loc, { numberingSystem: 'latn' }).format(n); } catch (e) { return String(n); } };
   var fill = function (s, v) { return String(s).replace(/\{(\w+)\}/g, function (m, k) { return v[k] != null ? v[k] : m; }); };
@@ -17,7 +17,7 @@
     busy = fetch('/data/n34b-search.json').then(function (r) { return r.json(); }).then(function (d) {
       X = d.p.filter(function (r) { return !/eco\s*beach|\bequinox\b|\bsumba\b/i.test(r[1] + ' ' + r[3] + ' ' + r[5] + ' ' + r[7]); }).map(function (r) { return { s: r[0], n: r[1], id: r[2], dv: r[3], mk: r[5], co: r[6], ar: r[7], st: r[8], pm: r[9], hy: r[10], ov: r[11], h: norm([r[1], r[2], r[3], r[5], r[6], r[7]].join(' ')), hn: norm(r[1]) }; });
       if (!N7T) return X;
-      return fetch('/data/n37u-se.json').then(function (r) { return r.json(); }).then(function (j) { N7 = j.p; return X; }).catch(function () { return X; });
+      return fetch('/data/n37u-se.json').then(function (r) { return r.json(); }).then(function (j) { N7 = j.p; N7G = j.g || {}; return X; }).catch(function () { return X; });
     }).catch(function () { busy = null; return null; });
     return busy;
   }
@@ -31,8 +31,9 @@
   function ff(rows, f, skip) {
     return rows.filter(function (r) { return (skip === 'co' || !f.co || r.co === f.co) && (skip === 'st' || !f.st || r.st === f.st) && (skip === 'pm' || f.pm === '' || String(r.pm) === f.pm) && (skip === 'hy' || !f.hy || (f.hy === 'none' ? !r.hy : f.hy === 'past' ? r.ov > 0 : String(r.hy) === f.hy)); });
   }
+  var gOf = function (r) { return (N7G && N7G[r.s]) || 0; };   // r10u (batch 37): key facts read in an official register
   function count(rows, key) { var m = {}; rows.forEach(function (r) { var k = key(r); m[k] = (m[k] || 0) + 1; }); return m; }
-  function state() { var g = function (n) { var e = F.elements[n]; return e ? String(e.value || '') : ''; }; return { q: g('q'), co: g('co'), st: g('st'), pm: g('pm'), hy: g('hy') }; }
+  function state() { var g = function (n) { var e = F.elements[n]; return e ? String(e.value || '') : ''; }; return { q: g('q'), co: g('co'), st: g('st'), pm: g('pm'), hy: g('hy'), rg: N7G ? g('rg') : '', so: N7G ? g('so') : '' }; }
   function setOpts(sel, opts, cur) {
     var first = sel.options[0] ? sel.options[0].textContent : T.all;
     sel.innerHTML = '<option value="">' + esc(first) + '</option>' + opts.map(function (o) { return '<option value="' + esc(o[0]) + '"' + (String(o[0]) === cur ? ' selected' : '') + '>' + esc(o[1]) + ' (' + nf(o[2]) + ')</option>'; }).join('');
@@ -41,13 +42,15 @@
   function item(r) {
     var place = [r.dv, r.ar && r.ar !== r.mk ? r.ar : '', r.mk, r.co].filter(Boolean).join(' · ');
     var meta = [ST[r.st] || '', r.hy ? fill(T.r_hy, { y: r.hy }) : T.hy_none, r.ov > 0 ? fill(T.r_ov, { m: nf(r.ov) }) : '', r.pm ? T.pm_1 : T.pm_0].filter(Boolean).join(' · ');
-    var z = N7 && N7[r.s], n7 = z ? ' <span class="k-xs n37-se">' + esc(fill(N7T.k, { k: nf(z[0]) }) + (z[1] ? ' · ' + fill(N7T.c, { f: N7T.f[z[1]] || z[1], d: n7d(z[2]) }) : '')) + '</span>' : '';
+    var z = N7 && N7[r.s], n7 = z ? ' <span class="k-xs n37-se">' + esc(fill(N7T.k, { k: nf(z[0]) }) + (z[1] ? ' · ' + fill(N7T.c, { f: N7T.f[z[1]] || z[1], d: n7d(z[2]) }) : '') + (gOf(r) && N7T.b ? ' · ' + fill(N7T.b, { n: nf(gOf(r)) }) : '')) + '</span>' : '';
     return '<li><a href="' + P + '/projects/' + esc(r.s) + '/">' + bd(esc(r.n)) + '</a>' + n7 + ' <span class="k-xs">' + bd(esc(place)) + '</span><br><span class="k-xs">' + esc(meta) + '</span></li>';
   }
-  function url(f, pg) { var p = new URLSearchParams(); ['q', 'co', 'st', 'pm', 'hy'].forEach(function (k) { if (f[k]) p.set(k, f[k]); }); if (pg > 1) p.set('pg', pg); var s = p.toString(); return P + '/search/' + (s ? '?' + s : ''); }
+  function url(f, pg) { var p = new URLSearchParams(); ['q', 'co', 'st', 'pm', 'hy', 'rg', 'so'].forEach(function (k) { if (f[k]) p.set(k, f[k]); }); if (pg > 1) p.set('pg', pg); var s = p.toString(); return P + '/search/' + (s ? '?' + s : ''); }
   function run(pg) {
     if (!X) return;
-    var f = state(), base = match(X, f.q), res = ff(base, f), pages = Math.max(1, Math.ceil(res.length / PER)); pg = Math.min(Math.max(1, pg || 1), pages);
+    var f = state(), base0 = match(X, f.q), base = f.rg ? base0.filter(function (r) { return gOf(r) >= +f.rg; }) : base0, res = ff(base, f), pages = Math.max(1, Math.ceil(res.length / PER)); pg = Math.min(Math.max(1, pg || 1), pages);
+    if (f.so === 'reg') res = res.map(function (r, i) { return [gOf(r), i, r]; }).sort(function (a, b) { return b[0] - a[0] || a[1] - b[1]; }).map(function (x) { return x[2]; });
+    if (F.elements.rg && N7G) { var rA = ff(base0, f); setOpts(F.elements.rg, [['1', F.elements.rg.options[1] ? F.elements.rg.options[1].textContent.replace(/ \([^)]*\)$/, '') : '1', rA.filter(function (r) { return gOf(r) >= 1; }).length], ['3', F.elements.rg.options[2] ? F.elements.rg.options[2].textContent.replace(/ \([^)]*\)$/, '') : '3', rA.filter(function (r) { return gOf(r) >= 3; }).length]], f.rg); }
     var co = count(ff(base, f, 'co'), function (r) { return r.co; }), st = count(ff(base, f, 'st'), function (r) { return r.st; }), pm = count(ff(base, f, 'pm'), function (r) { return r.pm; }), hyR = ff(base, f, 'hy'), hy = count(hyR, function (r) { return r.hy || 'none'; });
     var coO = Object.keys(co).sort(function (a, b) { return co[b] - co[a] || a.localeCompare(b); }).map(function (k) { return [k, k, co[k]]; }); if (f.co && !co[f.co]) coO.unshift([f.co, f.co, 0]);
     setOpts(F.elements.co, coO, f.co);

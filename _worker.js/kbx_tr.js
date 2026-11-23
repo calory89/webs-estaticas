@@ -233,9 +233,10 @@ function ledger(lang, r) {
     (r.url && !r.sumba ? '<li>' + esc(t(lang, 'src_dev')) + ': <a class="k-src" href="' + esc(r.url) + '" rel="noopener nofollow" target="_blank"><bdi>' + esc(host(r.url)) + '</bdi></a> <a class="k-src" href="' + pre(lang) + '/projects/' + esc(r.s) + '/#sources">Kolaboro</a></li>' : '') + '</ul>';
 }
 const replyHref = id => '/developers/reply/?id=' + encodeURIComponent(id);
-function rowHtml(lang, r, rank, ranked) {
+function rowHtml(lang, r, rank, ranked, o) {
   const cols = [t(lang, 'col_rank'), t(lang, 'col_proj'), t(lang, 'col_dev'), t(lang, 'col_score')].concat(TICKS.map(k => t(lang, 'k_' + k)));
-  const name = r.sumba ? '<span class="ktr-pn">' + bdi(r.n) + '</span>' : '<a class="ktr-pn" href="' + pre(lang) + '/projects/' + esc(r.s) + '/">' + bdi(r.n) + '</a>';
+  const g = o && o.G && !r.sumba ? o.G.get(r.s) || 0 : 0;   // r10u: key facts read in an official register
+  const name = (r.sumba ? '<span class="ktr-pn">' + bdi(r.n) + '</span>' : '<a class="ktr-pn" href="' + pre(lang) + '/projects/' + esc(r.s) + '/">' + bdi(r.n) + '</a>') + (g ? ' <a class="ktr-rgn" href="' + pre(lang) + '/projects/' + esc(r.s) + '/record/#fields">' + esc(o.RT('rg_b', { n: nf(lang, g) })) + '</a>' : '');
   const cells = [
     ranked ? '<td class="k-n" data-label="' + esc(cols[0]) + '">' + nf(lang, rank) + '</td>' : null,
     '<td class="ktr-pc" data-label="' + esc(cols[1]) + '">' + name + (r.rv ? '' : '<br><span class="k-badge k-badge--plain ktr-nr">' + esc(t(lang, 'not_rev')) + '</span>') +
@@ -245,10 +246,16 @@ function rowHtml(lang, r, rank, ranked) {
   ].concat(TICKS.map((k, i) => '<td data-label="' + esc(cols[4 + i]) + '">' + tick(lang, r.comp[k].st) + '</td>')).filter(Boolean);
   return '<tr id="p-' + esc(r.id.toLowerCase()) + '">' + cells.join('') + '</tr><tr class="ktr-dr" id="d-' + esc(r.id) + '" hidden><td colspan="' + cells.length + '"><template>' + ledger(lang, r) + '</template></td></tr>';
 }
-function tableHtml(lang, pl) {
+function tableHtml(lang, pl, o) {
   const head = (pl.ranked ? [t(lang, 'col_rank')] : []).concat([t(lang, 'col_proj'), t(lang, 'col_dev'), t(lang, 'col_score')], TICKS.map(k => t(lang, 'k_' + k)));
   return '<div class="k-table-wrap ktr-tw"><table class="k-table k-table--dense k-table--stack"><thead><tr>' + head.map(h => '<th scope="col">' + esc(h) + '</th>').join('') + '</tr></thead><tbody>' +
-    pl.L.map(r => rowHtml(lang, r, r['rk_' + pl.P.s], pl.ranked)).join('') + '</tbody></table></div>';
+    pl.L.map(r => rowHtml(lang, r, r['rk_' + pl.P.s], pl.ranked, o)).join('') + '</tbody></table></div>';
+}
+function rgBar(lang, pl, path, o) {   // r10u (batch 37): keep only projects with a fact from an official register, sort by those facts
+  const P = pre(lang) + path, k = pl.L.filter(r => !r.sumba && o.G.get(r.s)).length, q = (rg, so) => P + (rg || so ? '?' + [rg ? 'rg=1' : '', so ? 's=reg' : ''].filter(Boolean).join('&amp;') : '') + '#ranking';
+  const a = (h, txt, cur) => '<a href="' + h + '"' + (cur ? ' aria-current="true"' : '') + '>' + esc(txt) + '</a>';
+  return '<nav class="ktr-rgb" aria-label="' + esc(o.RT('rk_h')) + '">' + a(q(0, o.so), o.RT('rk_all', { n: nf(lang, pl.L.length) }), !o.rg) + a(q(1, o.so), o.RT('rk_rg', { n: nf(lang, k) }), o.rg) + a(q(o.rg, !o.so), o.RT(o.so ? 'rk_s0' : 'rk_s1'), false) + '</nav><p class="k-small k-muted">' + esc(o.RT('rk_note')) + ' <a href="' + pre(lang) + '/data/how-we-verify/">/data/how-we-verify/</a></p>' +
+    '<style>.ktr-rgb{display:flex;flex-wrap:wrap;gap:0 18px;margin:4px 0 0}.ktr-rgb a{display:inline-flex;align-items:center;min-height:44px;font-weight:600}.ktr-rgb a[aria-current]{text-decoration:none;color:inherit;border-bottom:3px solid var(--k-sea,#155C75)}.ktr-rgn{display:inline-block;font-size:.8rem;font-weight:600;padding:1px 8px;margin:4px 0;border:1px solid #1F6B3A;border-radius:999px;color:#1F6B3A;text-decoration:none;white-space:nowrap}:root[data-theme=dark] .ktr-rgn{color:#7FD19B;border-color:#7FD19B}</style>';
 }
 function kvHtml(lang, pl, ix) {
   const it = [[nf(lang, pl.n), t(lang, 'kv_n')], [pl.med == null ? '-' : nf(lang, pl.med), t(lang, 'kv_med')], [nf(lang, pct(pl.permit, pl.n)) + '%', t(lang, 'kv_permit')], [nf(lang, pct(pl.date, pl.n)) + '%', t(lang, 'kv_date')], [nf(lang, pct(pl.deposit, pl.n)) + '%', t(lang, 'kv_dep')]];
@@ -322,7 +329,7 @@ function thinHtml(lang, pl) {
   }).join('') + '</ul>';
 }
 // ------------------------------------------------------------------------------------------------ pages
-function placePage(ix, slug, lang) {
+function placePage(ix, slug, lang, o) {
   const pl = ix.places.get(slug); if (!pl) return null;
   const P = pl.P, p = bdi(mkName(P.n, lang)), pN = mkName(P.n, lang), path = '/rankings/transparency/' + slug + '/';
   const title = t(lang, pl.ranked ? 't_ranked' : 't_list', { p: pN, y: year() }), h1 = th(lang, pl.ranked ? 'h1_ranked' : 'h1_list', { p });
@@ -332,7 +339,8 @@ function placePage(ix, slug, lang) {
   let body = '<div class="ktr"><section class="k-sec"><div class="k-wrap"><div class="k-phead">' + crumbHtml(lang, cr) + '<h1>' + h1 + '</h1><p class="lead">' + esc(t(lang, 'lead')) + '</p></div>';
   if (P.coi) body += '<div class="k-alert k-alert--warn ktr-coi" role="note" id="disclosure"><b>' + esc(t(lang, 'coi')) + '</b> <span><a href="/independence/">' + esc(t(lang, 'coi_link')) + '</a>. ' + esc(t(lang, 'coi_rows')) + '</span></div>';
   body += kvHtml(lang, pl, ix) + assignHtml(lang, P) + (pl.ranked ? '' : '<p class="k-small">' + esc(t(lang, 'small')) + '</p>');
-  body += '<h2 id="ranking">' + esc(t(lang, pl.ranked ? 'tbl_h' : 'list_h')) + '</h2>' + tableHtml(lang, pl);
+  let pv = pl; if (o && o.G) { let L = o.rg ? pl.L.filter(r => !r.sumba && o.G.get(r.s)) : pl.L; if (o.so) L = L.map((r, i) => [r.sumba ? 0 : o.G.get(r.s) || 0, i, r]).sort((a, b) => b[0] - a[0] || a[1] - b[1]).map(x => x[2]); pv = Object.assign({}, pl, { L }); }   // r10u
+  body += '<h2 id="ranking">' + esc(t(lang, pl.ranked ? 'tbl_h' : 'list_h')) + '</h2>' + (o && o.G ? rgBar(lang, pl, path, o) : '') + (pv.L.length ? tableHtml(lang, pv, o) : '<p>' + esc(o.RT('rk_0')) + '</p>');
   body += thinHtml(lang, pl);
   body += emailBox(lang, P) + replyBox(lang, null);
   body += '<h2 id="faq">' + esc(t(lang, 'faq_h')) + '</h2><div class="k-disc">' + faq.map(([q, a]) => '<details><summary>' + esc(q) + '</summary><p>' + esc(a) + '</p></details>').join('') + '</div>';
@@ -406,9 +414,10 @@ export async function page(req, u, env, ctx, shell) {
   if (!m[4]) return new Response(null, { status: 301, headers: { location: u.pathname + '/' + u.search, 'cache-control': 'public, max-age=86400' } });
   const lang = m[1] || 'en', slug = m[2] || null, method = !!m[3];
   let ix; try { ix = await trData(env); } catch (e) { return null; }
-  const key = lang + '|' + (method ? '#m' : slug || '#h') + '|' + ix.v;
+  let o = null; if (slug && !method) { try { const R = await import('./kbx_n37u.js'), G = await R.regMap(env); if (G) o = { G, RT: (k, v) => R.rgT(lang, k, v), rg: u.searchParams.get('rg') === '1', so: u.searchParams.get('s') === 'reg' }; } catch (e) { o = null; } }   // r10u: register filter and sort
+  const key = lang + '|' + (method ? '#m' : slug || '#h') + '|' + ix.v + (o ? '|g' + (o.rg ? 1 : 0) + (o.so ? 1 : 0) + '|' + o.G.size : '');
   let pg = BODY.get(key);
-  if (!pg) { pg = method ? methodPage(ix, lang) : slug ? placePage(ix, slug, lang) : hubPage(ix, lang); if (!pg) return null; if (BODY.size > 600) BODY.clear(); BODY.set(key, pg); }
+  if (!pg) { pg = method ? methodPage(ix, lang) : slug ? placePage(ix, slug, lang, o) : hubPage(ix, lang); if (!pg) return null; if (BODY.size > 600) BODY.clear(); BODY.set(key, pg); }
   const sh = await shell(pre(lang) + '/how-we-score/');
   const url = PUB(lang, pg.path), alts = LANGS.map(l => '<link rel="alternate" hreflang="' + l + '" href="' + PUB(l, pg.path) + '">').join('') + '<link rel="alternate" hreflang="x-default" href="' + ORIGIN + pg.path + '">';
   const tags = '<title>' + esc(pg.title) + ([...pg.title].length + 11 <= 60 ? ' | Kolaboro' : '') + '</title><meta name="description" content="' + esc(pg.desc) + '"><link rel="canonical" href="' + url + '">' + alts + '<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">' +

@@ -527,7 +527,8 @@ export const CLIENT_JS = '(' + client.toString() + ')();';
 // ------------------------------------------------------------------------------------------------ routes
 export const PATHS = /^\/k\/u27\.js$|^\/api\/v1\/(?:cost|map)$|^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:map|updates)\/?$/;
 const jr = (o, s, cc) => new Response(JSON.stringify(o), { status: s || 200, headers: { 'content-type': 'application/json; charset=utf-8', 'access-control-allow-origin': '*', 'cache-control': cc || 'public, max-age=600' } });
-const MAP3_V = 'e167fac98e';   // n35b (batch 35, item 12): /map/ client v3 is a static file, /k/n35b/map.js (sha1 of the file, 10 chars)
+const MAP3_V = '1aa63c961c';   // r10u: register filter (was e167fac98e)
+// n35b note:   // n35b (batch 35, item 12): /map/ client v3 is a static file, /k/n35b/map.js (sha1 of the file, 10 chars)
 const MAPV = { js: '/satellite/plot/vendor/leaflet-1.9.4.js?v=dc452946ac', css: '/satellite/plot/vendor/leaflet-1.9.4.css?v=b8273795a6' };
 
 async function mapData(env, lang) {
@@ -538,6 +539,7 @@ async function mapData(env, lang) {
   const lateOf = id => { const r = ot && ot.projects && ot.projects[id]; if (!r || !r.first || nowM == null || /^done|completed/.test(r.s || '')) return null; const d = nowM - ym(r.first); return d > 0 ? d : null; };
   let mp = null; try { const r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/similar.json')); if (r.ok) mp = ((await r.json()) || {}).market_points; } catch (e) {}
   const mk = {}; for (const [k, v] of Object.entries((mp && mp.markets) || {})) if (v && isFinite(v.lat) && isFinite(v.lng)) mk[k] = [Math.round(v.lat * 100) / 100, Math.round(v.lng * 100) / 100];
+  let G = null; try { const R = await import('./kbx_n37u.js'); G = await R.regMap(env); } catch (e) { G = null; }   // r10u (batch 37): key facts read in an official register
   const P = [], co = new Map(), yrs = new Set();
   for (const x of ix.P) {
     if (COI_RX.test(String(x.n || '') + ' ' + String(x.dv || ''))) continue;
@@ -546,10 +548,10 @@ async function mapData(env, lang) {
     if (y) yrs.add(y);
     co.set(x.co, (co.get(x.co) || 0) + 1);
     const lt = lateOf(x.id); if (lt) nLate++;
-    P.push([x.s, x.n, x.mk, x.co, pin ? Math.round(fx.lat * 1e4) / 1e4 : null, pin ? Math.round(fx.lng * 1e4) / 1e4 : null, y, x.pn || (c.checks || {}).permit === 2 ? 1 : 0, row ? row.score : null, lt]);
+    P.push([x.s, x.n, x.mk, x.co, pin ? Math.round(fx.lat * 1e4) / 1e4 : null, pin ? Math.round(fx.lng * 1e4) / 1e4 : null, y, x.pn || (c.checks || {}).permit === 2 ? 1 : 0, row ? row.score : null, lt, G ? G.get(x.s) || 0 : null]);
   }
   const coL = [...co.entries()].sort((a, b) => b[1] - a[1]).map(([k, n]) => [k, H.placeName(k, lang), n]);
-  return { updated: String(ix.updated || '').slice(0, 10), keys: ['slug', 'name', 'market', 'country', 'lat', 'lng', 'handover_year', 'permit_published', 'transparency_score', 'months_past_first_handover'], mk,
+  return { updated: String(ix.updated || '').slice(0, 10), keys: ['slug', 'name', 'market', 'country', 'lat', 'lng', 'handover_year', 'permit_published', 'transparency_score', 'months_past_first_handover', 'register_facts'], mk,
     delay: { n: nLate, as_of: ot ? ot.as_of_month : null, source: '/data/on-time.json', rule: 'months_past_first_handover = month now minus the first handover month on record, for projects not completed whose first date has passed (on-time.json rules); null otherwise. A historical record, not a forecast.' }, co: coL, yr: [...yrs].sort(), p: P,
     note: 'lat/lng only where the developer publishes an address precise enough for a pin; other projects are drawn at their market point (similar.json market_points). Sumba projects are not listed (conflict of interest).' };
 }
@@ -562,12 +564,14 @@ async function mapPage(req, u, env, ctx, shell, lang) {
   let pre47 = ''; try { const ix = await N.data(env), mc = new Map(); for (const x of ix.P) { if (COI_RX.test(String(x.n || '') + ' ' + String(x.dv || ''))) continue; mc.set(x.mk, (mc.get(x.mk) || 0) + 1); }
     pre47 = [...mc.entries()].sort((a, b) => b[1] - a[1] || String(a[0]).localeCompare(String(b[0]))).slice(0, 60).map(([m, n]) => '<li><a href="/m/' + encodeURIComponent(String(m).toLowerCase().replace(/\s+/g, '-')) + '/">' + esc(H.mkName(m, lang)) + '</a><small>' + n.toLocaleString(lang) + '</small></li>').join(''); } catch (e) { pre47 = ''; }
   const sel = (n, lbl, opts) => '<label for="kmp-' + n + '"><span>' + esc(t27(lang, lbl)) + '</span><select id="kmp-' + n + '" name="' + n + '"><option value="">' + esc(t27(lang, 'mp_all')) + '</option>' + opts + '</select></label>';
+  let RT = null; try { const R = await import('./kbx_n37u.js'); if (await R.regMap(env)) RT = (k, v) => R.rgT(lang, k, v); } catch (e) { RT = null; }   // r10u: register filter
+  const rgSel = RT ? '<label for="kmp-rg"><span>' + esc(RT('rg_f')) + '</span><select id="kmp-rg" name="rg"><option value="">' + esc(t27(lang, 'mp_all')) + '</option><option value="1">' + esc(RT('rg_1')) + '</option><option value="3">' + esc(RT('rg_3')) + '</option></select></label>' : '';
   const form = '<form class="kmp-f" role="search">' + sel('co', 'mp_co', '') + sel('yr', 'mp_yr', '<option value="0">' + esc(t27(lang, 'mp_yr0')) + '</option>') +
     sel('pm', 'mp_pm', '<option value="1">' + esc(t27(lang, 'mp_pm1')) + '</option><option value="0">' + esc(t27(lang, 'mp_pm0')) + '</option>') + sel('sc', 'mp_sc', [25, 50, 75].map(n => '<option value="' + n + '">' + esc(t27(lang, 'mp_scn', { n })) + '</option>').join('')) +
-    '<label for="kmp-dl"><span>' + esc(N30.t30(lang, 'mh_dl')) + '</span><select id="kmp-dl" name="dl"><option value="">' + esc(N30.t30(lang, 'mh_dl0')) + '</option><option value="1">' + esc(N30.t30(lang, 'mh_dl1')) + '</option><option value="6">' + esc(N30.t30(lang, 'mh_dl6')) + '</option><option value="12">' + esc(N30.t30(lang, 'mh_dl12')) + '</option></select></label>' +
+    '<label for="kmp-dl"><span>' + esc(N30.t30(lang, 'mh_dl')) + '</span><select id="kmp-dl" name="dl"><option value="">' + esc(N30.t30(lang, 'mh_dl0')) + '</option><option value="1">' + esc(N30.t30(lang, 'mh_dl1')) + '</option><option value="6">' + esc(N30.t30(lang, 'mh_dl6')) + '</option><option value="12">' + esc(N30.t30(lang, 'mh_dl12')) + '</option></select></label>' + rgSel +
     '<label class="kmp-hm" for="kmp-hm"><input type="checkbox" id="kmp-hm" name="hm" value="1"> <span>' + esc(N30.t30(lang, 'mh_hm')) + '</span></label></form>';   // n30c (item 15)
   const body = '<section class="phero kp"><div class="wrap"><p class="crumb"><a href="' + P + '/">Kolaboro</a> / <a href="' + P + '/projects/">' + esc(N.tr(lang, 'h1_i')) + '</a></p><h1>' + esc(t27(lang, 'mp_h1')) + '</h1><p class="lead">' + esc(t27(lang, 'mp_lead')) + '</p></div></section>' +
-    '<div class="wrap kwrap kmp" data-u27x="' + esc(JSON.stringify(Object.assign({ s: N30.mapStrings(lang) }, MAPV))) + '">' + form +   // n30c (item 15): clusters and delay heat (kbx_n30c.js), u27.js leaves this map alone
+    '<div class="wrap kwrap kmp" data-u27x="' + esc(JSON.stringify(Object.assign({ s: Object.assign({}, N30.mapStrings(lang), RT ? { rg_b: RT('rg_b') } : {}) }, MAPV))) + '">' + form +   // n30c (item 15): clusters and delay heat (kbx_n30c.js), u27.js leaves this map alone
     '<p class="kmp-leg" hidden><span class="kmp-legt"></span> <span class="kmp-k"><i style="background:#F2B544"></i>' + esc(N30.t30(lang, 'mh_k1')) + '</span> <span class="kmp-k"><i style="background:#E8772E"></i>' + esc(N30.t30(lang, 'mh_k6')) + '</span> <span class="kmp-k"><i style="background:#C2341B"></i>' + esc(N30.t30(lang, 'mh_k12')) + '</span> <a href="/data/on-time.json">on-time.json</a></p>' + '<p class="kmp-n" role="status" aria-live="polite">' + esc(t27(lang, 'mp_load')) + '</p><div class="kmp-m" role="region" aria-label="' + esc(t27(lang, 'mp_h1')) + '">' + esc(t27(lang, 'mp_load')) + '</div>' +
     '<p class="k-small k-muted">' + esc(t27(lang, 'mp_src')) + '</p><h2>' + esc(t27(lang, 'mp_list')) + '</h2><ul class="kmp-l lk">' + pre47 + '</ul><button type="button" class="kmp-more" hidden>' + esc(W_MORE[lang] || W_MORE.en) + '</button>' +
     '<p><a href="/api/v1/map' + (lang === 'en' ? '' : '?lang=' + lang) + '" rel="nofollow">/api/v1/map</a> · <a href="' + P + '/projects/">' + esc(N.tr(lang, 'h1_i')) + '</a></p></div>' +
@@ -613,7 +617,7 @@ export async function handle(req, u, env, ctx, shell) {
   }
   if (p === '/api/v1/map') {
     const lang = LANGS.includes(u.searchParams.get('lang')) ? u.searchParams.get('lang') : 'en';
-    const ck = new Request(ORIGIN + '/__u27_map/v2/' + lang);   // v2: months past the first handover date (n30c)
+    const ck = new Request(ORIGIN + '/__u27_map/v3/' + lang);   // v2: months past the first handover date (n30c); v3 (r10u): register_facts
     try { const hit = await caches.default.match(ck); if (hit) return hit; } catch (e) {}
     let d; try { d = await mapData(env, lang); } catch (e) { return jr({ error: 'map data not available' }, 503, 'no-store'); }
     const r = jr(d, 200, 'public, max-age=900');

@@ -10,7 +10,7 @@
   var el = function (t, c, x) { var e = document.createElement(t); if (c) e.className = c; if (x != null) e.textContent = x; return e; };
   var esc2 = function (s) { var x = document.createElement('i'); x.textContent = s; return x.innerHTML; };
   var mapEl = MP.querySelector('.kmp-m'), listEl = MP.querySelector('.kmp-l'), cnt = MP.querySelector('.kmp-n'), fm = MP.querySelector('form'), leg = MP.querySelector('.kmp-leg'), data = null, map = null, layer = null, heat = null, lim = 60, Lf = null, fit = true;
-  var KEYS = ['co', 'yr', 'pm', 'sc', 'dl', 'hm'];
+  var KEYS = ['co', 'yr', 'pm', 'sc', 'dl', 'rg', 'hm'];   // r10u (batch 37): rg = at least N key facts read in an official register
   var A3 = { en: ['Draw an area', 'Stop drawing', 'Use this view as the area', 'Clear the area', 'Drag on the map to draw a rectangle. Press Escape to stop.', '{k} projects inside the area', '{k} projects in this group'],
     es: ['Dibujar una zona', 'Dejar de dibujar', 'Usar esta vista como zona', 'Borrar la zona', 'Arrastre sobre el mapa para dibujar un rectángulo. Pulse Escape para parar.', '{k} proyectos dentro de la zona', '{k} proyectos en este grupo'],
     fr: ['Dessiner une zone', 'Arrêter de dessiner', 'Utiliser cette vue comme zone', 'Effacer la zone', 'Faites glisser sur la carte pour dessiner un rectangle. Échap pour arrêter.', '{k} projets dans la zone', '{k} projets dans ce groupe'],
@@ -26,8 +26,8 @@
   var q = function (n) { var e = fm.elements[n]; return !e ? '' : e.type === 'checkbox' ? (e.checked ? '1' : '') : e.value; };
   var params = new URLSearchParams(location.search); KEYS.forEach(function (k) { var e = fm.elements[k], v = params.get(k); if (!e || !v) return; if (e.type === 'checkbox') e.checked = v === '1'; else e.value = v; });
   var col = function (m) { return m >= 12 ? '#C2341B' : m >= 6 ? '#E8772E' : '#F2B544'; };
-  var pass = function (p) { var co = q('co'), yr = q('yr'), pm = q('pm'), sc = q('sc'), dl = q('dl');
-    return (!co || p[3] === co) && (!yr || (yr === '0' ? !p[6] : String(p[6]) === yr)) && (!pm || String(p[7]) === pm) && (!sc || (p[8] != null && p[8] >= +sc)) && (!dl || (p[9] != null && p[9] >= +dl)); };
+  var pass = function (p) { var co = q('co'), yr = q('yr'), pm = q('pm'), sc = q('sc'), dl = q('dl'), rg = q('rg');
+    return (!co || p[3] === co) && (!yr || (yr === '0' ? !p[6] : String(p[6]) === yr)) && (!pm || String(p[7]) === pm) && (!sc || (p[8] != null && p[8] >= +sc)) && (!dl || (p[9] != null && p[9] >= +dl)) && (!rg || (p[10] || 0) >= +rg); };
   var R = [], pins = [], byMk = {};
   var cluster = function () {   // grid clustering in screen space: pins closer than about 48 px share one marker
     if (!map || !Lf) return; if (layer) layer.remove(); layer = Lf.layerGroup().addTo(map);
@@ -62,10 +62,10 @@
     heat.addTo(map); if (heat.bringToBack) heat.eachLayer(function (l) { l.bringToBack && l.bringToBack(); });
   };
   var draw = function () {
-    if (!data) return; R = data.p.filter(pass).filter(function (p) { if (!area) return true; var ll = p[4] != null ? [p[4], p[5]] : data.mk[p[2]]; return !!ll && inA(ll[0], ll[1]); }); pins = R.filter(function (p) { return p[4] != null; }); byMk = {};
+    if (!data) return; R = data.p.filter(pass).filter(function (p) { if (!area) return true; var ll = p[4] != null ? [p[4], p[5]] : data.mk[p[2]]; return !!ll && inA(ll[0], ll[1]); }); if (q('rg')) R = R.map(function (p, i) { return [p[10] || 0, i, p]; }).sort(function (a, b) { return b[0] - a[0] || a[1] - b[1]; }).map(function (x) { return x[2]; }); pins = R.filter(function (p) { return p[4] != null; }); byMk = {};
     R.forEach(function (p) { if (p[4] == null && data.mk[p[2]]) { (byMk[p[2]] = byMk[p[2]] || []).push(p); } });
     cnt.textContent = area ? f3(5, nf(R.length)) : f('mpk', { k: nf(R.length) }); e0.hidden = R.length > 0; rs.hidden = !area && !KEYS.some(function (k) { return q(k); }); if (ab) ab.clr.hidden = !area;
-    var h = ''; R.slice(0, lim).forEach(function (p) { h += '<li><a href="' + PRE + '/projects/' + p[0] + '/">' + esc2(p[1]) + '</a> <small>' + esc2([p[2], p[3]].filter(function (v, i, a) { return v && a.indexOf(v) === i; }).join(', ')) + (p[6] ? ' · ' + p[6] : '') + (p[8] != null ? ' · ' + p[8] + '/100' : '') + (p[9] > 0 ? ' · ' + esc2(f('mh_late', { m: p[9] })) : '') + '</small></li>'; });
+    var h = ''; R.slice(0, lim).forEach(function (p) { h += '<li><a href="' + PRE + '/projects/' + p[0] + '/">' + esc2(p[1]) + '</a> <small>' + esc2([p[2], p[3]].filter(function (v, i, a) { return v && a.indexOf(v) === i; }).join(', ')) + (p[6] ? ' · ' + p[6] : '') + (p[8] != null ? ' · ' + p[8] + '/100' : '') + (p[9] > 0 ? ' · ' + esc2(f('mh_late', { m: p[9] })) : '') + (p[10] > 0 && S.rg_b ? ' · ' + esc2(f('rg_b', { n: nf(p[10]) })) : '') + '</small></li>'; });
     listEl.innerHTML = h; var more = MP.querySelector('.kmp-more'); if (more) more.hidden = R.length <= lim;
     var u = new URL(location.href); KEYS.forEach(function (k) { if (q(k)) u.searchParams.set(k, q(k)); else u.searchParams.delete(k); }); if (area) u.searchParams.set('a', area.map(function (v) { return v.toFixed(4); }).join(',')); else u.searchParams.delete('a'); try { history.replaceState(null, '', u.pathname + u.search); } catch (e) {}
     if (!map || !Lf) return; cluster(); drawHeat(); drawRect();
@@ -98,7 +98,7 @@
   var e0 = el('p', 'kmp-0'); e0.hidden = true; e0.setAttribute('role', 'status'); e0.appendChild(document.createTextNode(f('mp0') + ' ')); var e0b = el('button', 'kmp-r', f('mpr')); e0b.type = 'button'; e0.appendChild(e0b); listEl.parentNode.insertBefore(e0, listEl);
   var reset = function () { KEYS.forEach(function (k) { var e = fm.elements[k]; if (!e) return; if (e.type === 'checkbox') e.checked = false; else e.value = ''; }); area = null; lim = 60; fit = true; draw(); };
   rs.addEventListener('click', reset); e0b.addEventListener('click', function () { reset(); fm.elements.co && fm.elements.co.focus(); });
-  fetch('/api/v1/map?lang=' + LG + '&v=2').then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(function (j) { data = j; var sc2 = fm.elements.co; if (sc2 && sc2.options.length < 3) { j.co.forEach(function (c) { var o = el('option', null, c[1] + ' (' + c[2] + ')'); o.value = c[0]; sc2.appendChild(o); }); if (params.get('co')) sc2.value = params.get('co'); }
+  fetch('/api/v1/map?lang=' + LG + '&v=3').then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(function (j) { data = j; var sc2 = fm.elements.co; if (sc2 && sc2.options.length < 3) { j.co.forEach(function (c) { var o = el('option', null, c[1] + ' (' + c[2] + ')'); o.value = c[0]; sc2.appendChild(o); }); if (params.get('co')) sc2.value = params.get('co'); }
     var yy = fm.elements.yr; if (yy && yy.options.length < 3) { j.yr.forEach(function (y) { var o = el('option', null, y); o.value = y; yy.insertBefore(o, yy.lastElementChild); }); if (params.get('yr')) yy.value = params.get('yr'); }
     if (leg && j.delay) leg.querySelector('.kmp-legt').textContent = f('mh_leg', { n: nf(j.delay.n), d: j.delay.as_of }); draw(); }).catch(function () { cnt.textContent = f('mpe'); if (!map) mapEl.textContent = f('mpe'); });
   fm.addEventListener('change', function () { lim = 60; fit = true; draw(); }); fm.addEventListener('submit', function (e) { e.preventDefault(); });
