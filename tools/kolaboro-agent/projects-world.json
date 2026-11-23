@@ -6826,6 +6826,18 @@
      "status": "verified",
      "by": "independent",
      "source": "https://en.orda.kz/settlement-reached-in-phuket-over-layan-green-park-eco-condo-dispute-8665"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
+    },
+    {
+     "claim": "Map point embedded on the developer's own project page: 8.028086, 98.296051.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://layangreenpark.com/"
     }
    ],
    "facts": {
@@ -6852,7 +6864,7 @@
     "currency": "USD",
     "deposit_pct": null,
     "payment_plan": "Interest-free installment plan in three payments up to the handover notice",
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": "Rental pool run by the in-house hotel operator (La Green Hotel & Residence): owner receives 60% of net rental income, 8.5% per year advertised, 30 days personal use",
     "service_charge": null,
     "brand": "La Green Hotel & Residence (own operator), EDGE green certification",
@@ -6866,8 +6878,8 @@
      "conference hall",
      "kids club"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": 8.028086,
+    "lng": 98.296051,
     "permit_authority": "ONEP (EIA approval); Cherngtalay local administration (building permit)",
     "brochure_url": null
    },
@@ -6908,7 +6920,8 @@
     "https://layangreenpark.com/income/program",
     "https://layangreenpark.com/layout",
     "https://layangreenpark.com/phase2",
-    "https://mgronline.com/south/detail/9680000004118"
+    "https://mgronline.com/south/detail/9680000004118",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "review": {
     "d": "2026-11-13",
@@ -7072,6 +7085,12 @@
      "status": "verified",
      "by": "registry",
      "source": "https://eia.onep.go.th/eia/detail?id=6792"
+    },
+    {
+     "claim": "Map point embedded on the developer's own project page: 12.912773, 100.863176.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://therivieragroupthailand.com/the-riviera-malibu-residences/"
     }
    ],
    "facts": {
@@ -7114,8 +7133,8 @@
      "gym",
      "kids club"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": 12.912773,
+    "lng": 100.863176,
     "permit_authority": "ONEP (EIA approval); Pattaya City / Nong Prue municipality (building permit)",
     "brochure_url": null
    },
@@ -7305,6 +7324,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://citygatedephuket.com/"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -7332,7 +7357,7 @@
     "currency": null,
     "deposit_pct": null,
     "payment_plan": null,
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "service_charge": null,
     "brand": null,
@@ -7358,7 +7383,8 @@
     "https://eia.onep.go.th/eia/detail?id=15144",
     "https://eia.onep.go.th/eia/detail?id=7256",
     "https://eia.onep.go.th/eia/owner-detail?owner_id=9095",
-    "https://www.fazwaz.com/projects/thailand/phuket/kathu/kamala/citygate"
+    "https://www.fazwaz.com/projects/thailand/phuket/kathu/kamala/citygate",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ]
   },
   {
@@ -7485,6 +7511,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://theonephuket.com/theonenaiharn/eng"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -7509,7 +7541,7 @@
     "currency": null,
     "deposit_pct": null,
     "payment_plan": null,
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": "Condo-hotel with hotel license, managed by Burasari Group; no figures for this project",
     "service_charge": null,
     "brand": "Burasari Group (operator)",
@@ -7541,7 +7573,8 @@
     "https://theonenaiharn.com/",
     "https://theonephuket.com/",
     "https://theonephuket.com/theonenaiharn/eng",
-    "https://www.hipflat.com/projects/the-one-naiharn-jvspft"
+    "https://www.hipflat.com/projects/the-one-naiharn-jvspft",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ]
   },
   {
@@ -8910,6 +8943,12 @@
      "status": "verified",
      "by": "registry",
      "source": "https://eia.onep.go.th/eia/detail?id=6792"
+    },
+    {
+     "claim": "Map point embedded on the developer's own project page: 12.914557, 100.89261.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://therivieragroupthailand.com/beverly-hills-residences-in-pattaya/"
     }
    ],
    "facts": {
@@ -8950,8 +8989,8 @@
      "running track",
      "kids club"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": 12.914557,
+    "lng": 100.89261,
     "permit_authority": "ONEP (EIA approval); Pattaya City / Nong Prue municipality (building permit)",
     "brochure_url": null
    },
@@ -11071,6 +11110,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://eia.onep.go.th/eia/detail?id=16545"
+    },
+    {
+     "claim": "Map point embedded on the developer's own project page: 7.841904, 98.302722.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://vibekaron.com/"
     }
    ],
    "facts": {
@@ -11106,8 +11151,8 @@
      "beach shuttle",
      "98 parking spaces"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": 7.841904,
+    "lng": 98.302722,
     "permit_authority": "ONEP (EIA approval); Karon municipality (building permit)",
     "brochure_url": null,
     "sales_launch": "Q4 2026"
@@ -11270,6 +11315,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://sarayalombok.com/accommodation/aegean/"
+    },
+    {
+     "claim": "Map point embedded on the developer's own project page: -8.870875, 116.086852.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://sarayalombok.com/"
     }
    ],
    "facts": {
@@ -11308,8 +11359,8 @@
      "fitness centre",
      "private pools"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -8.870875,
+    "lng": 116.086852,
     "permit_authority": "Kabupaten Lombok Barat (PBG via SIMBG)",
     "brochure_url": "https://sarayalombok.com/brochures/"
    },
@@ -25391,6 +25442,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://www.sansiri.com/condominium/widen-by-sansiri/th/"
+    },
+    {
+     "claim": "Map point published by the developer in the page data (schema.org GeoCoordinates): 13.7114828, 100.5412297.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sansiri.com/condominium/widen-by-sansiri/th/"
     }
    ],
    "facts": {
@@ -25432,8 +25489,8 @@
      "EV charging",
      "24-hour security"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": 13.7114828,
+    "lng": 100.5412297,
     "permit_authority": "Bangkok Metropolitan Administration EIA committee (กท) and Sathon district office (building permit)",
     "brochure_url": null
    },
@@ -54961,6 +55018,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://thaigerproperty.com/projects/thailand/prachuap-khiri-khan/hua-hin/nong-kae/the-standard-residences-hua-hin?eq=rent"
+    },
+    {
+     "claim": "Map point published by the developer in the page data (schema.org GeoCoordinates): 7.982332, 98.280978.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sansiri.com/condominium/rhea-by-sansiri/th/"
     }
    ],
    "facts": {
@@ -54999,8 +55062,8 @@
      "pet park",
      "lobby"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": 7.982332,
+    "lng": 98.280978,
     "permit_authority": "ONEP (EIA approval) and local municipality building permit",
     "brochure_url": null
    },
@@ -55019,7 +55082,8 @@
     "https://www.infoquest.co.th/?p=565153",
     "https://www.sansiri.com/condominium/rhea-by-sansiri/en/",
     "https://www.sansiri.com/eng/corporate-info",
-    "https://www.sansiri.com/projectprogress/en/726"
+    "https://www.sansiri.com/projectprogress/en/726",
+    "https://www.sansiri.com/condominium/rhea-by-sansiri/th/"
    ],
    "review": {
     "d": "2026-11-13",
@@ -69603,6 +69667,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://linkedin.com/company/mojodevelopments"
+    },
+    {
+     "claim": "Map point embedded on the developer's own project page: -8.869734, 116.276187.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://excellencebali.com/projects/zaya-private-pool-villas-kuta-lombok/"
     }
    ],
    "facts": {
@@ -69637,8 +69707,8 @@
      "private parking",
      "reception"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -8.869734,
+    "lng": 116.276187,
     "permit_authority": "Kabupaten Lombok Tengah (PBG via SIMBG)",
     "brochure_url": null
    },
@@ -70826,6 +70896,12 @@
      "status": "contradicted",
      "by": "none",
      "source": "https://excellencebali.com/projects/minori-seminyak-villas/"
+    },
+    {
+     "claim": "Map point embedded on the developer's own project page: -8.697163, 115.174132.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://excellencebali.com/projects/minori-seminyak-villas/"
     }
    ],
    "facts": {
@@ -70864,8 +70940,8 @@
      "concierge and shuttle",
      "babysitting"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": -8.697163,
+    "lng": 115.174132,
     "permit_authority": "Kabupaten Badung (PBG via SIMBG)",
     "brochure_url": null
    },
@@ -76673,6 +76749,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://baanscope.com/assets/sansiri-xelf-by-sansiri/brochure.pdf"
+    },
+    {
+     "claim": "Map point published by the developer in the page data (schema.org GeoCoordinates): 13.716695, 100.574938.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sansiri.com/condominium/xelf-by-sansiri/th/"
     }
    ],
    "facts": {
@@ -76712,8 +76794,8 @@
      "EV charging",
      "shuttle to BTS Thonglor"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": 13.716695,
+    "lng": 100.574938,
     "permit_authority": "ONEP / Bangkok EIA committee; BMA (building permit)",
     "brochure_url": "https://baanscope.com/assets/sansiri-xelf-by-sansiri/brochure.pdf"
    },
@@ -84815,6 +84897,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://krabigaruda.com/project/kavara-condo/"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -84838,7 +84926,7 @@
     "currency": "THB",
     "deposit_pct": null,
     "payment_plan": null,
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "service_charge": null,
     "brand": null,
@@ -84852,7 +84940,8 @@
     "brochure_url": null
    },
    "sources": [
-    "https://krabigaruda.com/project/kavara-condo/"
+    "https://krabigaruda.com/project/kavara-condo/",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "verified_score": 0,
    "added": "2026-10-31",
@@ -119688,6 +119777,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://www.seascapelombok.com/villas"
+    },
+    {
+     "claim": "Map point embedded on the developer's own project page: -8.871738, 116.269926.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.seascapelombok.com/villas/vimae"
     }
    ],
    "facts": {
@@ -119708,8 +119803,8 @@
     "deposit_pct": null,
     "foreign_ownership": null,
     "rental_programme": null,
-    "lat": null,
-    "lng": null,
+    "lat": -8.871738,
+    "lng": 116.269926,
     "permit_authority": null
    },
    "note": "Seven bamboo-style villas on the edge of Kuta town centre, designed for the short-term rental market. A third page (the agent's land list) shows a higher entry price (From 159,000, currency not shown), so confirm the price. The seascapelombok.com domain blocked direct fetch. I could only read search extracts of the agent pages and found no developer's own page, so the under-construction status rests on the agent's listing only.",
@@ -119787,6 +119882,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://www.seascapelombok.com/villas/amani"
+    },
+    {
+     "claim": "Map point embedded on the developer's own project page: -8.882561, 116.271219.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.seascapelombok.com/villas/amani"
     }
    ],
    "facts": {
@@ -119807,8 +119908,8 @@
     "deposit_pct": null,
     "foreign_ownership": null,
     "rental_programme": null,
-    "lat": null,
-    "lng": null,
+    "lat": -8.882561,
+    "lng": 116.271219,
     "permit_authority": null
    },
    "note": "Ten villas planned, with lots of 125 to 135 sqm and a 72 sqm building size on the agent page. The 70% figure covers only the two villas under construction, not the whole project. The agent's list still tags the project OFF-PLAN, and the price shown is US$194,000. I found no developer's own page, and the domain blocked direct fetch, so this rests on search extracts of agent pages.",
@@ -162594,6 +162695,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://www.botanicaluxuryvilla.com/projects/botanica-hua-hin/"
+    },
+    {
+     "claim": "Map point embedded on the developer's own project page: 12.475379, 99.961342.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.botanicaluxuryvilla.com/projects/botanica-hua-hin/"
     }
    ],
    "facts": {
@@ -162626,8 +162733,8 @@
      "private pool per villa",
      "show villa"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": 12.475379,
+    "lng": 99.961342,
     "permit_authority": "Hua Hin local authority (building permit); Department of Lands (land allocation if applicable)",
     "brochure_url": null
    },
@@ -162943,6 +163050,12 @@
      "status": "verified",
      "by": "registry",
      "source": "https://eia.onep.go.th/eia/detail?id=6792"
+    },
+    {
+     "claim": "Map point embedded on the developer's own project page: 12.921463, 100.865244.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://therivieragroupthailand.com/the-riviera-california-in-pattaya/"
     }
    ],
    "facts": {
@@ -162984,8 +163097,8 @@
      "golf simulator",
      "kids club"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": 12.921463,
+    "lng": 100.865244,
     "permit_authority": "ONEP Expert Review Committee (EIA); Pattaya City (building permit)",
     "brochure_url": null
    },
@@ -163463,6 +163576,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://kellerhenson.com/project/the-monument-sathon"
+    },
+    {
+     "claim": "Map point published by the developer in the page data (schema.org GeoCoordinates): 13.72212, 100.527429.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sansiri.com/condominium/the-monument-sathon/th/"
     }
    ],
    "facts": {
@@ -163504,8 +163623,8 @@
      "study and drawing room",
      "children playground"
     ],
-    "lat": null,
-    "lng": null,
+    "lat": 13.72212,
+    "lng": 100.527429,
     "permit_authority": "ONEP Expert Review Committee (EIA); Bangkok Metropolitan Administration (building permit)",
     "brochure_url": null
    },
@@ -163516,7 +163635,8 @@
     "https://kellerhenson.com/project/the-monument-sathon",
     "https://lssmedia.setlink.set.or.th/2025/YE/SIRI-YE68-ListedCompanySnapshot-EN.html",
     "https://www.sansiri.com/condominium/the-monument-sathon/en/",
-    "https://www.sansiri.com/projectprogress/en/712"
+    "https://www.sansiri.com/projectprogress/en/712",
+    "https://www.sansiri.com/condominium/the-monument-sathon/th/"
    ],
    "permit_number": "EIA approval 1009.5/9979 (24 Apr 2025), report 256801-28; owner and name change approved ทส 1009.5/22022 (22 Sep 2026)",
    "added": "2026-10-31",
@@ -182731,18 +182851,38 @@
      "status": "verified",
      "by": "independent",
      "source": "https://papayaproperty.com/sansiri/canvaz-palette-cherngtalay"
+    },
+    {
+     "claim": "Map point published by the developer in the page data (schema.org GeoCoordinates): 7.988625, 98.3062519.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sansiri.com/condominium/canvaz-palette-cherngtalay/th/"
+    },
+    {
+     "claim": "Starting price published by the developer: THB 8,990,000 (schema.org AggregateOffer lowPrice).",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sansiri.com/condominium/canvaz-palette-cherngtalay/th/"
+    },
+    {
+     "claim": "Developer company: Sansiri Public Company Limited, registered as a public company on 22 November 1995 and listed on the SET since 19 July 1996; the group began as San Samran Holding Co., Ltd., registered 28 September 1984 (developer investor relations page).",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://investor.sansiri.com/en/company-overview/company-info"
     }
    ],
    "facts": {
-    "lat": null,
-    "lng": null,
+    "lat": 7.988625,
+    "lng": 98.3062519,
     "size_min_m2": null,
     "size_max_m2": null,
-    "price_min": null,
+    "price_min": 8990000,
     "price_max": null,
     "deposit_pct": null,
     "delay_months": null,
-    "developer_founded": null
+    "developer_founded": 1984,
+    "currency": "THB",
+    "developer_company": "Sansiri Public Company Limited (registered as a public company on 22 Nov 1995; listed on the Stock Exchange of Thailand since 19 Jul 1996)"
    },
    "note": "7-storey, 248-unit condominium in Cherngtalay by listed developer Sansiri; developer states completion 2028. (checked 5 Nov 2026)",
    "positives": [],
@@ -182750,7 +182890,9 @@
    "sources": [
     "https://asterofasia.com/property/thailand/phuket/canvaz-palette-cherngtalay",
     "https://papayaproperty.com/sansiri/canvaz-palette-cherngtalay",
-    "https://www.sansiri.com/condominium/canvaz-palette-cherngtalay/en/"
+    "https://www.sansiri.com/condominium/canvaz-palette-cherngtalay/en/",
+    "https://www.sansiri.com/condominium/canvaz-palette-cherngtalay/th/",
+    "https://investor.sansiri.com/en/company-overview/company-info"
    ],
    "docs_listed": [],
    "disclosure": {
@@ -182816,6 +182958,18 @@
      "status": "unverified",
      "by": "none",
      "source": "https://www.sansiri.com/condominium/brisa-patong-by-sansiri/th/"
+    },
+    {
+     "claim": "Starting price published by the developer: THB 3,900,000 (schema.org AggregateOffer lowPrice).",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sansiri.com/condominium/brisa-patong-by-sansiri/th/"
+    },
+    {
+     "claim": "Developer company: Sansiri Public Company Limited, registered as a public company on 22 November 1995 and listed on the SET since 19 July 1996; the group began as San Samran Holding Co., Ltd., registered 28 September 1984 (developer investor relations page).",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://investor.sansiri.com/en/company-overview/company-info"
     }
    ],
    "facts": {
@@ -182823,11 +182977,13 @@
     "lng": 98.299587,
     "size_min_m2": null,
     "size_max_m2": null,
-    "price_min": null,
+    "price_min": 3900000,
     "price_max": null,
     "deposit_pct": null,
     "delay_months": null,
-    "developer_founded": null
+    "developer_founded": 1984,
+    "currency": "THB",
+    "developer_company": "Sansiri Public Company Limited (registered as a public company on 22 Nov 1995; listed on the Stock Exchange of Thailand since 19 Jul 1996)"
    },
    "note": "Sansiri condominium in Patong; bookings opened 25 November 2025 per a portal report. (checked 5 Nov 2026)",
    "positives": [],
@@ -182835,7 +182991,8 @@
    "sources": [
     "https://www.fazwaz.com/advice/sansiri-returns-to-patong-brisa-patong-condos-from-39m-booking-opens-25-november",
     "https://www.hipflat.co.th/en/projects/brisa-patong-by-sansiri-l1t3t881199ce218981nen9t4192n4n9",
-    "https://www.sansiri.com/condominium/brisa-patong-by-sansiri/th/"
+    "https://www.sansiri.com/condominium/brisa-patong-by-sansiri/th/",
+    "https://investor.sansiri.com/en/company-overview/company-info"
    ],
    "docs_listed": [],
    "disclosure": {
@@ -193553,6 +193710,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://casauna-samui.com/en/koh-samui-villa-prices/"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -193572,7 +193735,7 @@
     "price_min": 5500000,
     "price_max": 9900000,
     "deposit_pct": 5,
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": 9.5018,
     "lng": 100.0427,
@@ -193589,7 +193752,8 @@
     "https://casauna-samui.com/en/koh-samui-investment-guide/",
     "https://casauna-samui.com/en/koh-samui-villa-prices/",
     "https://lazudi.com/th-en/new-developments/koh-samui",
-    "https://varsoviaestate.com/en/properties/thailand/samui"
+    "https://varsoviaestate.com/en/properties/thailand/samui",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [],
    "disclosure": {
@@ -194215,6 +194379,12 @@
      "status": "verified",
      "by": "independent",
      "source": "https://pearlpropertythailand.com/project/the-indeed-condo-pattaya"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -194226,7 +194396,8 @@
     "price_max": null,
     "deposit_pct": null,
     "delay_months": null,
-    "developer_founded": null
+    "developer_founded": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person"
    },
    "note": "Condominium in Jomtien, Pattaya by the developer behind The Indeed Condo brand (also in Sriracha and Amata); an agency page lists it as under construction with completion in 2026 (checked 5 Nov 2026)",
    "positives": [],
@@ -194236,7 +194407,8 @@
     "https://pearlpropertythailand.com/project/the-indeed-condo-pattaya",
     "https://propertyscout.co.th/en/chon-buri/condo/indeed-condo-pattaya/",
     "https://www.thailand-property.com/condo/49598/the-indeed-condo-pattaya",
-    "https://www.theindeedcondo.com/"
+    "https://www.theindeedcondo.com/",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [],
    "disclosure": {
@@ -198309,12 +198481,30 @@
      "status": "unverified",
      "by": "none",
      "source": "https://www.sansiri.com/condominium/xt-10ekkamai/en/"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
+    },
+    {
+     "claim": "Starting price published by the developer: THB 4,390,000 (schema.org AggregateOffer lowPrice).",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sansiri.com/condominium/xt-10ekkamai/th/"
+    },
+    {
+     "claim": "Developer company: Sansiri Public Company Limited, registered as a public company on 22 November 1995 and listed on the SET since 19 July 1996; the group began as San Samran Holding Co., Ltd., registered 28 September 1984 (developer investor relations page).",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://investor.sansiri.com/en/company-overview/company-info"
     }
    ],
    "facts": {
-    "developer_founded": null,
+    "developer_founded": 1984,
     "developer_hq": null,
-    "developer_company": null,
+    "developer_company": "Sansiri Public Company Limited (registered as a public company on 22 Nov 1995; listed on the Stock Exchange of Thailand since 19 Jul 1996)",
     "construction_start": null,
     "handover_promised": "February 2029",
     "original_handover": null,
@@ -198326,12 +198516,12 @@
     ],
     "size_min_m2": null,
     "size_max_m2": null,
-    "price_min": null,
+    "price_min": 4390000,
     "price_max": null,
-    "currency": null,
+    "currency": "THB",
     "deposit_pct": null,
     "payment_plan": null,
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": 13.733783,
     "lng": 100.584381,
@@ -198344,7 +198534,10 @@
     "https://www.sansiri.com/condominium/xt-10ekkamai/en/",
     "https://www.sansiri.com/projectprogress/en/",
     "https://eia.onep.go.th/services/web/open-api/eia-list?page=5",
-    "https://www.sansiri.com/projectprogress/en/707"
+    "https://www.sansiri.com/projectprogress/en/707",
+    "https://thailand.go.th/issue-focus-detail/010_013",
+    "https://www.sansiri.com/condominium/xt-10ekkamai/th/",
+    "https://investor.sansiri.com/en/company-overview/company-info"
    ],
    "docs_listed": [
     "29 storeys and 933 units, between Ekkamai Soi 10 and 12",
@@ -198447,12 +198640,30 @@
      "status": "unverified",
      "by": "none",
      "source": "https://www.sansiri.com/projectprogress/en/"
+    },
+    {
+     "claim": "Map point published by the developer in the page data (schema.org GeoCoordinates): 13.713126, 100.503602.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sansiri.com/condominium/love-charoen-nakhon/th/"
+    },
+    {
+     "claim": "Starting price published by the developer: THB 3,090,000 (schema.org AggregateOffer lowPrice).",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sansiri.com/condominium/love-charoen-nakhon/th/"
+    },
+    {
+     "claim": "Developer company: Sansiri Public Company Limited, registered as a public company on 22 November 1995 and listed on the SET since 19 July 1996; the group began as San Samran Holding Co., Ltd., registered 28 September 1984 (developer investor relations page).",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://investor.sansiri.com/en/company-overview/company-info"
     }
    ],
    "facts": {
-    "developer_founded": null,
+    "developer_founded": 1984,
     "developer_hq": null,
-    "developer_company": null,
+    "developer_company": "Sansiri Public Company Limited (registered as a public company on 22 Nov 1995; listed on the Stock Exchange of Thailand since 19 Jul 1996)",
     "construction_start": null,
     "handover_promised": "February 2029",
     "original_handover": null,
@@ -198460,22 +198671,24 @@
     "unit_types": [],
     "size_min_m2": null,
     "size_max_m2": null,
-    "price_min": null,
+    "price_min": 3090000,
     "price_max": null,
-    "currency": null,
+    "currency": "THB",
     "deposit_pct": null,
     "payment_plan": null,
     "foreign_ownership": null,
     "rental_programme": null,
-    "lat": null,
-    "lng": null,
+    "lat": 13.713126,
+    "lng": 100.503602,
     "permit_authority": null
    },
    "note": "LOVE Charoen Nakhon by Sansiri in Charoen Nakhon, Bangkok (Thailand). Added from the official developer page: under construction; handover on record: February 2029. Not yet reviewed. (read 11 Nov 2026)",
    "positives": [],
    "flags": [],
    "sources": [
-    "https://www.sansiri.com/projectprogress/en/"
+    "https://www.sansiri.com/projectprogress/en/",
+    "https://www.sansiri.com/condominium/love-charoen-nakhon/th/",
+    "https://investor.sansiri.com/en/company-overview/company-info"
    ],
    "docs_listed": [
     "\"Expected completion date: February 2029\"; overall construction progress 15%, updated 10 November 2026",
@@ -198546,12 +198759,30 @@
      "status": "unverified",
      "by": "none",
      "source": "https://www.sansiri.com/projectprogress/en/"
+    },
+    {
+     "claim": "Map point published by the developer in the page data (schema.org GeoCoordinates): 13.8261667, 100.5257222.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sansiri.com/condominium/thebase-wongsawang/th/"
+    },
+    {
+     "claim": "Starting price published by the developer: THB 2,390,000 (schema.org AggregateOffer lowPrice).",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sansiri.com/condominium/thebase-wongsawang/th/"
+    },
+    {
+     "claim": "Developer company: Sansiri Public Company Limited, registered as a public company on 22 November 1995 and listed on the SET since 19 July 1996; the group began as San Samran Holding Co., Ltd., registered 28 September 1984 (developer investor relations page).",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://investor.sansiri.com/en/company-overview/company-info"
     }
    ],
    "facts": {
-    "developer_founded": null,
+    "developer_founded": 1984,
     "developer_hq": null,
-    "developer_company": null,
+    "developer_company": "Sansiri Public Company Limited (registered as a public company on 22 Nov 1995; listed on the Stock Exchange of Thailand since 19 Jul 1996)",
     "construction_start": null,
     "handover_promised": "June 2027",
     "original_handover": null,
@@ -198559,22 +198790,24 @@
     "unit_types": [],
     "size_min_m2": null,
     "size_max_m2": null,
-    "price_min": null,
+    "price_min": 2390000,
     "price_max": null,
-    "currency": null,
+    "currency": "THB",
     "deposit_pct": null,
     "payment_plan": null,
     "foreign_ownership": null,
     "rental_programme": null,
-    "lat": null,
-    "lng": null,
+    "lat": 13.8261667,
+    "lng": 100.5257222,
     "permit_authority": null
    },
    "note": "THE BASE Wongsawang by Sansiri in Wongsawang, Bangkok (Thailand). Added from the official developer page: under construction; handover on record: June 2027. Not yet reviewed. (read 11 Nov 2026)",
    "positives": [],
    "flags": [],
    "sources": [
-    "https://www.sansiri.com/projectprogress/en/"
+    "https://www.sansiri.com/projectprogress/en/",
+    "https://www.sansiri.com/condominium/thebase-wongsawang/th/",
+    "https://investor.sansiri.com/en/company-overview/company-info"
    ],
    "docs_listed": [
     "\"Expected completion date: June 2027\"; overall construction progress 72%, updated 10 November 2026",
@@ -198645,12 +198878,36 @@
      "status": "unverified",
      "by": "none",
      "source": "https://www.sansiri.com/projectprogress/en/"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
+    },
+    {
+     "claim": "Map point published by the developer in the page data (schema.org GeoCoordinates): 7.9118056, 98.3474722.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sansiri.com/condominium/dcondo-cove-phuket/th/"
+    },
+    {
+     "claim": "Starting price published by the developer: THB 1,990,000 (schema.org AggregateOffer lowPrice).",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sansiri.com/condominium/dcondo-cove-phuket/th/"
+    },
+    {
+     "claim": "Developer company: Sansiri Public Company Limited, registered as a public company on 22 November 1995 and listed on the SET since 19 July 1996; the group began as San Samran Holding Co., Ltd., registered 28 September 1984 (developer investor relations page).",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://investor.sansiri.com/en/company-overview/company-info"
     }
    ],
    "facts": {
-    "developer_founded": null,
+    "developer_founded": 1984,
     "developer_hq": null,
-    "developer_company": null,
+    "developer_company": "Sansiri Public Company Limited (registered as a public company on 22 Nov 1995; listed on the Stock Exchange of Thailand since 19 Jul 1996)",
     "construction_start": null,
     "handover_promised": "September 2027",
     "original_handover": null,
@@ -198658,22 +198915,25 @@
     "unit_types": [],
     "size_min_m2": null,
     "size_max_m2": null,
-    "price_min": null,
+    "price_min": 1990000,
     "price_max": null,
-    "currency": null,
+    "currency": "THB",
     "deposit_pct": null,
     "payment_plan": null,
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
-    "lat": null,
-    "lng": null,
+    "lat": 7.9118056,
+    "lng": 98.3474722,
     "permit_authority": null
    },
    "note": "dcondo cove Phuket by Sansiri in Phuket (Thailand). Added from the official developer page: under construction; handover on record: September 2027. Not yet reviewed. (read 11 Nov 2026)",
    "positives": [],
    "flags": [],
    "sources": [
-    "https://www.sansiri.com/projectprogress/en/"
+    "https://www.sansiri.com/projectprogress/en/",
+    "https://thailand.go.th/issue-focus-detail/010_013",
+    "https://www.sansiri.com/condominium/dcondo-cove-phuket/th/",
+    "https://investor.sansiri.com/en/company-overview/company-info"
    ],
    "docs_listed": [
     "\"Expected completion date: September 2027\"; overall construction progress 41%, updated 10 November 2026",
@@ -211447,12 +211707,24 @@
      "status": "unverified",
      "by": "none",
      "source": "https://www.sansiri.com/projectprogress/en/"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
+    },
+    {
+     "claim": "Developer company: Sansiri Public Company Limited, registered as a public company on 22 November 1995 and listed on the SET since 19 July 1996; the group began as San Samran Holding Co., Ltd., registered 28 September 1984 (developer investor relations page).",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://investor.sansiri.com/en/company-overview/company-info"
     }
    ],
    "facts": {
-    "developer_founded": null,
+    "developer_founded": 1984,
     "developer_hq": null,
-    "developer_company": null,
+    "developer_company": "Sansiri Public Company Limited (registered as a public company on 22 Nov 1995; listed on the Stock Exchange of Thailand since 19 Jul 1996)",
     "construction_start": null,
     "handover_promised": "May 2027",
     "original_handover": null,
@@ -211467,7 +211739,7 @@
     "currency": null,
     "deposit_pct": null,
     "payment_plan": null,
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -211479,7 +211751,9 @@
    "sources": [
     "https://www.sansiri.com/projectprogress/en/",
     "https://www.sansiri.com/projectprogress/en/681",
-    "https://eia.onep.go.th/services/web/open-api/eia-list?page=7"
+    "https://eia.onep.go.th/services/web/open-api/eia-list?page=7",
+    "https://thailand.go.th/issue-focus-detail/010_013",
+    "https://investor.sansiri.com/en/company-overview/company-info"
    ],
    "docs_listed": [
     "\"Expected completion date: May 2027\""
@@ -211585,12 +211859,36 @@
      "status": "unverified",
      "by": "none",
      "source": "https://www.sansiri.com/projectprogress/en/"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
+    },
+    {
+     "claim": "Map point published by the developer in the page data (schema.org GeoCoordinates): 13.7159743, 100.602795.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sansiri.com/condominium/valles-haus/th/"
+    },
+    {
+     "claim": "Starting price published by the developer: THB 4,690,000 (schema.org AggregateOffer lowPrice).",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sansiri.com/condominium/valles-haus/th/"
+    },
+    {
+     "claim": "Developer company: Sansiri Public Company Limited, registered as a public company on 22 November 1995 and listed on the SET since 19 July 1996; the group began as San Samran Holding Co., Ltd., registered 28 September 1984 (developer investor relations page).",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://investor.sansiri.com/en/company-overview/company-info"
     }
    ],
    "facts": {
-    "developer_founded": null,
+    "developer_founded": 1984,
     "developer_hq": null,
-    "developer_company": null,
+    "developer_company": "Sansiri Public Company Limited (registered as a public company on 22 Nov 1995; listed on the Stock Exchange of Thailand since 19 Jul 1996)",
     "construction_start": null,
     "handover_promised": "December 2026",
     "original_handover": null,
@@ -211600,15 +211898,15 @@
     ],
     "size_min_m2": null,
     "size_max_m2": null,
-    "price_min": null,
+    "price_min": 4690000,
     "price_max": null,
-    "currency": null,
+    "currency": "THB",
     "deposit_pct": null,
     "payment_plan": null,
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
-    "lat": null,
-    "lng": null,
+    "lat": 13.7159743,
+    "lng": 100.602795,
     "permit_authority": null
    },
    "note": "valles HAUS by Sansiri in Thailand (location not stated on the progress page) (Thailand). Added from the official developer page: under construction; handover on record: December 2026. Not yet reviewed. (read 12 Nov 2026)",
@@ -211616,7 +211914,10 @@
    "flags": [],
    "sources": [
     "https://www.sansiri.com/projectprogress/en/",
-    "https://www.sansiri.com/projectprogress/en/711"
+    "https://www.sansiri.com/projectprogress/en/711",
+    "https://thailand.go.th/issue-focus-detail/010_013",
+    "https://www.sansiri.com/condominium/valles-haus/th/",
+    "https://investor.sansiri.com/en/company-overview/company-info"
    ],
    "docs_listed": [
     "\"Expected completion date: December 2026\""
@@ -251461,6 +251762,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/bang-tao/siamese-bangtao"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -251483,7 +251790,7 @@
     "currency": "USD",
     "deposit_pct": null,
     "payment_plan": "SPA Deposit On signing 30%; Foundation Foundation completion 15%; Structure Structure completion 15%; Balance On transfer 40%",
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -251493,7 +251800,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/bang-tao/siamese-bangtao"
+    "https://rumavi.com/en/new-developments/thailand/bang-tao/siamese-bangtao",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists status \"Off Plan\" and completion \"Q2 2027\"",
@@ -251607,6 +251915,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/bang-tao/the-modeva-bangtao"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -251629,7 +251943,7 @@
     "currency": "THB",
     "deposit_pct": null,
     "payment_plan": "Reservation Deposit Upon booking Upon booking% Down Payment Upon contract signing 25%; Construction Instalments Staged during construction (0% interest) 75%",
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -251642,7 +251956,8 @@
     "https://rumavi.com/en/new-developments/thailand/bang-tao/the-modeva-bangtao",
     "https://eia.onep.go.th/services/web/open-api/eia-list?page=6",
     "https://assetwise.co.th/?p=101046",
-    "https://eia.onep.go.th/eia/owner-detail?owner_id=1614"
+    "https://eia.onep.go.th/eia/owner-detail?owner_id=1614",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists status \"Under Construction\" and completion \"Q4 2026\"",
@@ -251765,6 +252080,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/bang-tao/the-standard-residences-phuket-bang-tao"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -251787,7 +252108,7 @@
     "currency": "USD",
     "deposit_pct": null,
     "payment_plan": null,
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -251797,7 +252118,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/bang-tao/the-standard-residences-phuket-bang-tao"
+    "https://rumavi.com/en/new-developments/thailand/bang-tao/the-standard-residences-phuket-bang-tao",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists status \"Under Construction\" and completion \"Q4 2026\"",
@@ -252267,6 +252589,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/karon/katabello"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -252290,7 +252618,7 @@
     "currency": "USD",
     "deposit_pct": null,
     "payment_plan": null,
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -252303,7 +252631,8 @@
     "https://rumavi.com/en/new-developments/thailand/karon/katabello",
     "https://assetwise.co.th/?p=101046",
     "https://eia.onep.go.th/services/web/open-api/eia-list",
-    "https://eia.onep.go.th/eia/owner-detail?owner_id=1614"
+    "https://eia.onep.go.th/eia/owner-detail?owner_id=1614",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists status \"Under Construction\" and completion \"Q2 2027\"",
@@ -252418,6 +252747,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/kathu/the-residences-intercontinental-phuket"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -252439,7 +252774,7 @@
     "currency": "THB",
     "deposit_pct": null,
     "payment_plan": null,
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -252449,7 +252784,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/kathu/the-residences-intercontinental-phuket"
+    "https://rumavi.com/en/new-developments/thailand/kathu/the-residences-intercontinental-phuket",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists status \"Under Construction\" and completion \"Q3 2027\"",
@@ -252533,6 +252869,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/choeng-thale/laguna-seaside"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -252555,7 +252897,7 @@
     "currency": "THB",
     "deposit_pct": null,
     "payment_plan": null,
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -252565,7 +252907,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/choeng-thale/laguna-seaside"
+    "https://rumavi.com/en/new-developments/thailand/choeng-thale/laguna-seaside",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists status \"Under Construction\" and completion \"Q4 2026\"",
@@ -252655,6 +252998,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/karon/ever-prime-residences-karon"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -252677,7 +253026,7 @@
     "currency": "THB",
     "deposit_pct": null,
     "payment_plan": "Booking On reservation $6,091.44 Down Payment Contract signing 30%; Foundation Foundation complete 40%; Structure Structure complete 10%; Interior Interior complete 15%; Transfer On handover 5%",
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -252687,7 +253036,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/karon/ever-prime-residences-karon"
+    "https://rumavi.com/en/new-developments/thailand/karon/ever-prime-residences-karon",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists status \"Under Construction\" and completion \"Q1 2028\"",
@@ -252777,6 +253127,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/layan/the-momentum-phuket"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -252801,7 +253157,7 @@
     "currency": "USD",
     "deposit_pct": null,
     "payment_plan": "Down Payment On contract signing 35%; Final On completion 65%",
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -252811,7 +253167,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/layan/the-momentum-phuket"
+    "https://rumavi.com/en/new-developments/thailand/layan/the-momentum-phuket",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists status \"Off Plan\" and completion \"Q1 2027\"",
@@ -252913,6 +253270,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/cherng-talay/the-base-cherngtalay"
+    },
+    {
+     "claim": "Map point published by the developer in the page data (schema.org GeoCoordinates): 7.996586, 98.309407.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sansiri.com/condominium/thebase-cherng-talay/th/"
     }
    ],
    "facts": {
@@ -252936,8 +253299,8 @@
     "payment_plan": null,
     "foreign_ownership": "Freehold",
     "rental_programme": null,
-    "lat": null,
-    "lng": null,
+    "lat": 7.996586,
+    "lng": 98.309407,
     "permit_authority": null
    },
    "note": "The Base Cherngtalay by Sansiri Public Company Limited in Cherng Talay, Phuket (Thailand). Added from the source page: under construction; handover on record: 2026-Q3. Not yet reviewed. (read 12 Nov 2026)",
@@ -252945,7 +253308,8 @@
    "flags": [],
    "sources": [
     "https://rumavi.com/en/new-developments/thailand/cherng-talay/the-base-cherngtalay",
-    "https://www.sansiri.com/eng/corporate-info"
+    "https://www.sansiri.com/eng/corporate-info",
+    "https://www.sansiri.com/condominium/thebase-cherng-talay/th/"
    ],
    "docs_listed": [
     "Development profile lists status \"Under Construction\" and completion \"Q3 2026\"",
@@ -255224,6 +255588,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/hua-hin/sasa-hua-hin"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -255246,7 +255616,7 @@
     "currency": "THB",
     "deposit_pct": null,
     "payment_plan": "Down Payment Upon signing SPA 20%; Balance Upon transfer 80%",
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -255256,7 +255626,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/hua-hin/sasa-hua-hin"
+    "https://rumavi.com/en/new-developments/thailand/hua-hin/sasa-hua-hin",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists status \"Under Construction\" and completion \"Q1 2027\"",
@@ -255334,6 +255705,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/thalang/laguna-bayside"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -255354,7 +255731,7 @@
     "currency": "THB",
     "deposit_pct": null,
     "payment_plan": null,
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -255364,7 +255741,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/thalang/laguna-bayside"
+    "https://rumavi.com/en/new-developments/thailand/thalang/laguna-bayside",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists status \"Under Construction\" and completion \"Q4 2028\"",
@@ -256906,6 +257284,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/phuket-town/origin-place-centre-phuket"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -256927,7 +257311,7 @@
     "currency": "USD",
     "deposit_pct": null,
     "payment_plan": "Down Payment On contract signing 30%; Final On completion 70%",
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -256937,7 +257321,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/phuket-town/origin-place-centre-phuket"
+    "https://rumavi.com/en/new-developments/thailand/phuket-town/origin-place-centre-phuket",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists status \"Off Plan\" and completion \"Q4 2027\"",
@@ -271678,6 +272063,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/bang-tao/sudara-phase-1"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -271700,7 +272091,7 @@
     "currency": "USD",
     "deposit_pct": null,
     "payment_plan": "Down Payment On contract signing 25%; Balance On completion 75%",
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -271710,7 +272101,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/bang-tao/sudara-phase-1"
+    "https://rumavi.com/en/new-developments/thailand/bang-tao/sudara-phase-1",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists status \"Off Plan\" and completion \"Q3 2027\"",
@@ -271800,6 +272192,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/bang-tao/the-title-vivi"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -271820,7 +272218,7 @@
     "currency": "USD",
     "deposit_pct": null,
     "payment_plan": "Down Payment On contract signing 25%; Balance On completion 75%",
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -271831,7 +272229,8 @@
    "flags": [],
    "sources": [
     "https://rumavi.com/en/new-developments/thailand/bang-tao/the-title-vivi",
-    "https://eia.onep.go.th/eia/owner-detail?owner_id=1614"
+    "https://eia.onep.go.th/eia/owner-detail?owner_id=1614",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists status \"Off Plan\" and completion \"Q4 2027\"",
@@ -271920,6 +272319,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/karon/phenomenon-kata-beach-condominium"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -271942,7 +272347,7 @@
     "currency": "USD",
     "deposit_pct": null,
     "payment_plan": "Reservation Upon reservation 3%; Down Payment On contract signing 27%; Final On completion 70%",
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -271952,7 +272357,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/karon/phenomenon-kata-beach-condominium"
+    "https://rumavi.com/en/new-developments/thailand/karon/phenomenon-kata-beach-condominium",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists status \"Off Plan\" and completion \"Q4 2027\"",
@@ -272042,6 +272448,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/layan/serene-condo-layan"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -272065,7 +272477,7 @@
     "currency": "USD",
     "deposit_pct": null,
     "payment_plan": "Down Payment On contract signing 35%; Final On completion 65%",
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -272075,7 +272487,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/layan/serene-condo-layan"
+    "https://rumavi.com/en/new-developments/thailand/layan/serene-condo-layan",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists status \"Off Plan\" and completion \"Q4 2027\"",
@@ -272165,6 +272578,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/layan/sun-hills-layan-phuket"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -272188,7 +272607,7 @@
     "currency": "USD",
     "deposit_pct": null,
     "payment_plan": "1st Payment 35%; Upon booking% 2nd Payment 15%; 6 months after% 3rd Payment 20%; 12 months after% 4th Payment 20%; 18 months after% Final 10%",
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -272198,7 +272617,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/layan/sun-hills-layan-phuket"
+    "https://rumavi.com/en/new-developments/thailand/layan/sun-hills-layan-phuket",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists status \"Off Plan\" and completion \"Q4 2027\"",
@@ -272411,6 +272831,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/rawai/sirius-condominium"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -272434,7 +272860,7 @@
     "currency": "THB",
     "deposit_pct": null,
     "payment_plan": "Down Payment On signing 30%; Foundation Foundation complete 30%; Roof Roof complete 20%; Interior Interior complete 15%; Transfer At handover 5%",
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -272444,7 +272870,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/rawai/sirius-condominium"
+    "https://rumavi.com/en/new-developments/thailand/rawai/sirius-condominium",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists status \"Under Construction\" and completion \"Q3 2027\"",
@@ -272540,6 +272967,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/rawai/the-title-adora-rawai"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -272561,7 +272994,7 @@
     "currency": "USD",
     "deposit_pct": null,
     "payment_plan": null,
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -272572,7 +273005,8 @@
    "flags": [],
    "sources": [
     "https://rumavi.com/en/new-developments/thailand/rawai/the-title-adora-rawai",
-    "https://eia.onep.go.th/eia/owner-detail?owner_id=1614"
+    "https://eia.onep.go.th/eia/owner-detail?owner_id=1614",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists status \"Under Construction\" and completion \"Q1 2027\"",
@@ -272663,6 +273097,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/thalang/arise-vibe"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -272685,7 +273125,7 @@
     "currency": "USD",
     "deposit_pct": null,
     "payment_plan": "Down Payment On contract signing 30%; Final On completion 70%",
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -272695,7 +273135,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/thalang/arise-vibe"
+    "https://rumavi.com/en/new-developments/thailand/thalang/arise-vibe",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists status \"Off Plan\" and completion \"Q1 2027\"",
@@ -272779,6 +273220,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/bang-na/aspire-sukhumvit-103"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -272800,7 +273247,7 @@
     "currency": "USD",
     "deposit_pct": null,
     "payment_plan": null,
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -272810,7 +273257,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/bang-na/aspire-sukhumvit-103"
+    "https://rumavi.com/en/new-developments/thailand/bang-na/aspire-sukhumvit-103",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists status \"Off Plan\" and completion \"Q3 2027\"",
@@ -272894,6 +273342,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/bang-na/life-udomsuk-station"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -272915,7 +273369,7 @@
     "currency": "THB",
     "deposit_pct": null,
     "payment_plan": null,
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -272925,7 +273379,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/bang-na/life-udomsuk-station"
+    "https://rumavi.com/en/new-developments/thailand/bang-na/life-udomsuk-station",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists status \"Off Plan\" and completion \"Q3 2028\"",
@@ -273009,6 +273464,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/bang-rak/whizdom-craftz-samyan"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -273031,7 +273492,7 @@
     "currency": "USD",
     "deposit_pct": null,
     "payment_plan": null,
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -273041,7 +273502,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/bang-rak/whizdom-craftz-samyan"
+    "https://rumavi.com/en/new-developments/thailand/bang-rak/whizdom-craftz-samyan",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists status \"Off Plan\" and completion \"2027\"",
@@ -273125,6 +273587,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/din-daeng/life-ratchada-rama-9"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -273146,7 +273614,7 @@
     "currency": "USD",
     "deposit_pct": null,
     "payment_plan": null,
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -273156,7 +273624,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/din-daeng/life-ratchada-rama-9"
+    "https://rumavi.com/en/new-developments/thailand/din-daeng/life-ratchada-rama-9",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists status \"Off Plan\" and completion \"Q3 2027\"",
@@ -273246,6 +273715,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/kata/so-origin-kata-phuket"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -273267,7 +273742,7 @@
     "currency": "USD",
     "deposit_pct": null,
     "payment_plan": "Contract On contract signing 25%; Balance On completion 75%",
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -273277,7 +273752,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/kata/so-origin-kata-phuket"
+    "https://rumavi.com/en/new-developments/thailand/kata/so-origin-kata-phuket",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists status \"Off Plan\" and completion \"Q3 2027\"",
@@ -273472,6 +273948,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/laguna/laguna-golf-residences-hibiscus"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -273492,7 +273974,7 @@
     "currency": "THB",
     "deposit_pct": null,
     "payment_plan": null,
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -273502,7 +273984,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/laguna/laguna-golf-residences-hibiscus"
+    "https://rumavi.com/en/new-developments/thailand/laguna/laguna-golf-residences-hibiscus",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists status \"Under Construction\" and completion \"Q4 2029\"",
@@ -349220,6 +349703,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/bang-tao/nebu-residences-bangtao"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -349241,7 +349730,7 @@
     "currency": "THB",
     "deposit_pct": null,
     "payment_plan": "Booking Upon reservation $1,525.43 Contract Signing At contract execution 50%; Construction Per milestones 50%",
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -349251,7 +349740,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/bang-tao/nebu-residences-bangtao"
+    "https://rumavi.com/en/new-developments/thailand/bang-tao/nebu-residences-bangtao",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists Nebu Residences Bangtao by Azure Rich Group in Bang Tao, Phuket, Thailand, status \"Under Construction\", expected completion \"Q2 2026\" (profile dated 2026-07-16, read 21 Nov 2026)",
@@ -349337,6 +349827,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/bang-tao/the-trees-residence-by-anocha"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -349358,7 +349854,7 @@
     "currency": "THB",
     "deposit_pct": null,
     "payment_plan": null,
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -349368,7 +349864,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/bang-tao/the-trees-residence-by-anocha"
+    "https://rumavi.com/en/new-developments/thailand/bang-tao/the-trees-residence-by-anocha",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists The Trees Residence by Anocha by Anocha Property Co., Ltd. in Bang Tao, Phuket, Thailand, status \"Off Plan\", expected completion \"Q1 2028\" (profile dated 2026-09-07, read 21 Nov 2026)",
@@ -349459,6 +349956,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/bang-tao/the-zero-bang-tao"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -349481,7 +349984,7 @@
     "currency": "USD",
     "deposit_pct": null,
     "payment_plan": "Booking Fee Upon reservation 2%; Contract Signing Upon signing SPA 33%; 1st Construction Installment At foundation completion 20%; 2nd Construction Installment At structure completion 20%; 3rd Construction Installment At finishing stage 15%; Handover At project completion (Q4 2026) 10%",
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -349491,7 +349994,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/bang-tao/the-zero-bang-tao"
+    "https://rumavi.com/en/new-developments/thailand/bang-tao/the-zero-bang-tao",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists The Zero Bang Tao by Zero Developments Co., Ltd. in Bang Tao, Phuket, Thailand, status \"Under Construction\", expected completion \"Q4 2026\" (profile dated 2026-07-16, read 21 Nov 2026)",
@@ -349831,6 +350335,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/choeng-thale/bellevue-beach-front"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -349853,7 +350363,7 @@
     "currency": "THB",
     "deposit_pct": null,
     "payment_plan": "Reservation Deposit Upon contract signing 35%; 1st Installment Structure completed 35%; 2nd Installment On handover 30%",
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -349863,7 +350373,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/choeng-thale/bellevue-beach-front"
+    "https://rumavi.com/en/new-developments/thailand/choeng-thale/bellevue-beach-front",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists Bellevue Beach Front by Bell Land Development Co., Ltd. in Choeng Thale, Phuket, Thailand, status \"Under Construction\", expected completion \"Q3 2026\" (profile dated 2026-07-17, read 21 Nov 2026)",
@@ -349955,6 +350466,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/choeng-thale/sole-mio-residences"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -349976,7 +350493,7 @@
     "currency": "THB",
     "deposit_pct": null,
     "payment_plan": "Reservation Deposit Immediately $6,232.51 1st Installment Upon contract signing 2%; 2nd Installment upon signing the Sales and Purchase Agreement 33%; 3rd Installment upon completion of the condominium building structure 30%; 4th Installment upon completion of the condominium building construction 30%; 5th Installment upon completion of the condominium building construction 5%",
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -349986,7 +350503,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/choeng-thale/sole-mio-residences"
+    "https://rumavi.com/en/new-developments/thailand/choeng-thale/sole-mio-residences",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists SOLE MIO Residences by Railand Property International Co., Ltd. (with Phuket Asialand) in Choeng Thale, Phuket, Thailand, status \"Under Construction\", expected completion \"2027-03-01\" (profile dated 2026-07-17, read 21 Nov 2026)",
@@ -350320,6 +350838,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/karon/hennessy-residence"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -350341,7 +350865,7 @@
     "currency": "THB",
     "deposit_pct": null,
     "payment_plan": null,
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -350351,7 +350875,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/karon/hennessy-residence"
+    "https://rumavi.com/en/new-developments/thailand/karon/hennessy-residence",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists Hennessy Residence by Art House Group in Karon, Phuket, Thailand, status \"Under Construction\", expected completion \"Q1 2027\" (profile dated 2026-09-07, read 21 Nov 2026)",
@@ -350814,6 +351339,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/mai-khao/maviston-mai-khao"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -350836,7 +351367,7 @@
     "currency": "THB",
     "deposit_pct": null,
     "payment_plan": "Contract Signing Upon signing 30%; 1st Floor Complete Per milestone 20%; Structure Complete Per milestone 20%; Facade Complete Per milestone 20%; Handover At transfer 10%",
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -350846,7 +351377,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/mai-khao/maviston-mai-khao"
+    "https://rumavi.com/en/new-developments/thailand/mai-khao/maviston-mai-khao",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists Maviston Mai Khao by Mai Khao Golden Beach in Mai Khao, Phuket, Thailand, status \"Under Construction\", expected completion \"Q4 2026\" (profile dated 2026-07-16, read 21 Nov 2026)",
@@ -350938,6 +351470,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/mai-khao/the-title-serenity-naiyang"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -350961,7 +351499,7 @@
     "currency": "USD",
     "deposit_pct": null,
     "payment_plan": "Booking Deposit Upon reservation 2%; Contract Signing Within 30 days 23%; 2nd Payment 3 months after contract 25%; 3rd Payment 6 months after contract 25%; Final Payment Upon transfer (Q4 2026) 25%",
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -350971,7 +351509,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/mai-khao/the-title-serenity-naiyang"
+    "https://rumavi.com/en/new-developments/thailand/mai-khao/the-title-serenity-naiyang",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists The Title Serenity Naiyang by Rhom Bho Property PLC in Mai Khao, Phuket, Thailand, status \"Under Construction\", expected completion \"Q4 2026\" (profile dated 2026-07-16, read 21 Nov 2026)",
@@ -351057,6 +351596,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/nai-harn/wallaya-residence-nai-harn"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -351080,7 +351625,7 @@
     "currency": "THB",
     "deposit_pct": null,
     "payment_plan": null,
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -351090,7 +351635,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/nai-harn/wallaya-residence-nai-harn"
+    "https://rumavi.com/en/new-developments/thailand/nai-harn/wallaya-residence-nai-harn",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists Wallaya Residence Nai Harn by Wallaya Villas Development Co., Ltd. in Nai Harn, Phuket, Thailand, status \"Under Construction\", expected completion \"Q1 2028\" (profile dated 2026-09-07, read 21 Nov 2026)",
@@ -351424,6 +351970,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/phuket-town/so-origin-bangtao"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -351445,7 +351997,7 @@
     "currency": "THB",
     "deposit_pct": null,
     "payment_plan": null,
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -351455,7 +352007,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/phuket-town/so-origin-bangtao"
+    "https://rumavi.com/en/new-developments/thailand/phuket-town/so-origin-bangtao",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists So Origin Bangtao by Origin Property Public Company Limited in Phuket Town, Phuket, Thailand, status \"Under Construction\", expected completion \"Q2 2026\" (profile dated 2026-07-16, read 21 Nov 2026)",
@@ -351546,6 +352099,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/phuket-town/wyndham-fantasea-condo-chalong"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -351568,7 +352127,7 @@
     "currency": "USD",
     "deposit_pct": null,
     "payment_plan": "Down Payment On contract signing 35%; Final On completion 65%",
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -351578,7 +352137,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/phuket-town/wyndham-fantasea-condo-chalong"
+    "https://rumavi.com/en/new-developments/thailand/phuket-town/wyndham-fantasea-condo-chalong",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists Wyndham Fantasea Condo Chalong by Fantasea Plus Co., Ltd. in Phuket Town, Phuket, Thailand, status \"Off Plan\", expected completion \"Q4 2026\" (profile dated 2026-07-16, read 21 Nov 2026)",
@@ -351670,6 +352230,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/rawai/enigma-residence"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -351692,7 +352258,7 @@
     "currency": "THB",
     "deposit_pct": null,
     "payment_plan": "Contract Signing Upon signing 35%; Construction Per milestones 55%; Handover On transfer 10%",
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -351702,7 +352268,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/rawai/enigma-residence"
+    "https://rumavi.com/en/new-developments/thailand/rawai/enigma-residence",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists Enigma Residence by East Wind Thai Co., Ltd in Rawai, Phuket, Thailand, status \"Under Construction\", expected completion \"Q4 2026\" (profile dated 2026-07-16, read 21 Nov 2026)",
@@ -351794,6 +352361,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/rawai/essence-residence"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -351816,7 +352389,7 @@
     "currency": "THB",
     "deposit_pct": null,
     "payment_plan": "Reservation Deposit Immediately 2%; 1st Installment Upon contract signing 33%; 2nd Installment Jun 2024 25%; 3rd Installment Dec 2024 15%; 4th Installment Sep 2025 15%; 5th Installment Jun 2026 10%",
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -351826,7 +352399,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/rawai/essence-residence"
+    "https://rumavi.com/en/new-developments/thailand/rawai/essence-residence",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists Essence Residence by Harmony Group in Rawai, Phuket, Thailand, status \"Under Construction\", expected completion \"Q2 2026\" (profile dated 2026-07-17, read 21 Nov 2026)",
@@ -351918,6 +352492,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/rawai/la-belle-de-rawai-residence"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -351940,7 +352520,7 @@
     "currency": "USD",
     "deposit_pct": null,
     "payment_plan": "Down Payment On contract signing 30%; Final On completion 70%",
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -351950,7 +352530,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/rawai/la-belle-de-rawai-residence"
+    "https://rumavi.com/en/new-developments/thailand/rawai/la-belle-de-rawai-residence",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists La Belle De Rawai Residence by C Bella Group Co., Ltd. in Rawai, Phuket, Thailand, status \"Off Plan\", expected completion \"Q4 2026\" (profile dated 2026-07-16, read 21 Nov 2026)",
@@ -352036,6 +352617,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/rawai/rawayana-south-condo"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -352059,7 +352646,7 @@
     "currency": "THB",
     "deposit_pct": null,
     "payment_plan": null,
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -352069,7 +352656,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/rawai/rawayana-south-condo"
+    "https://rumavi.com/en/new-developments/thailand/rawai/rawayana-south-condo",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists Rawayana South Condo by Phuket9 Co., Ltd. in Rawai, Phuket, Thailand, status \"Under Construction\", expected completion \"Q4 2026\" (profile dated 2026-07-16, read 21 Nov 2026)",
@@ -352518,6 +353106,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/watthana/culture-thonglor"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -352540,7 +353134,7 @@
     "currency": "USD",
     "deposit_pct": null,
     "payment_plan": null,
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -352550,7 +353144,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/watthana/culture-thonglor"
+    "https://rumavi.com/en/new-developments/thailand/watthana/culture-thonglor",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists Culture Thonglor by Ananda Development PCL (with The Ascott Limited / CapitaLand) in Watthana, Bangkok, Thailand, status \"Off Plan\", expected completion \"Q2 2026\" (profile dated 2026-07-16, read 21 Nov 2026)",
@@ -352758,6 +353353,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/watthana/life-jj"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -352779,7 +353380,7 @@
     "currency": "THB",
     "deposit_pct": null,
     "payment_plan": "Booking Fee Upon reservation 1%; Down Payment At contract signing 11%; Transfer Balance At handover (Q3 2027) 88%",
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -352789,7 +353390,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/watthana/life-jj"
+    "https://rumavi.com/en/new-developments/thailand/watthana/life-jj",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists LIFE JJ by AP (Thailand) Public Company Limited in Watthana, Bangkok, Thailand, status \"Under Construction\", expected completion \"Q3 2027\" (profile dated 2026-07-16, read 21 Nov 2026)",
@@ -352875,6 +353477,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/watthana/niche-pride-ekkamai"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -352896,7 +353504,7 @@
     "currency": "USD",
     "deposit_pct": null,
     "payment_plan": null,
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -352906,7 +353514,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/watthana/niche-pride-ekkamai"
+    "https://rumavi.com/en/new-developments/thailand/watthana/niche-pride-ekkamai",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists Niche Pride Ekkamai by Sena Development PCL (JV with Hankyu Hanshin Properties Corp.) in Watthana, Bangkok, Thailand, status \"Off Plan\", expected completion \"Q2 2026\" (profile dated 2026-07-16, read 21 Nov 2026)",
@@ -352991,6 +353600,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/watthana/nue-epic-asok-rama-9"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -353013,7 +353628,7 @@
     "currency": "THB",
     "deposit_pct": null,
     "payment_plan": null,
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -353023,7 +353638,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/watthana/nue-epic-asok-rama-9"
+    "https://rumavi.com/en/new-developments/thailand/watthana/nue-epic-asok-rama-9",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists NUE Epic Asok-Rama 9 by Noble Development Public Company Limited in Watthana, Bangkok, Thailand, status \"Under Construction\", expected completion \"Q3 2028\" (profile dated 2026-07-16, read 21 Nov 2026)",
@@ -353114,12 +353730,24 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/watthana/xelf-lofts-thonglor"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
+    },
+    {
+     "claim": "Developer company: Sansiri Public Company Limited, registered as a public company on 22 November 1995 and listed on the SET since 19 July 1996; the group began as San Samran Holding Co., Ltd., registered 28 September 1984 (developer investor relations page).",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://investor.sansiri.com/en/company-overview/company-info"
     }
    ],
    "facts": {
-    "developer_founded": null,
+    "developer_founded": 1984,
     "developer_hq": null,
-    "developer_company": null,
+    "developer_company": "Sansiri Public Company Limited (registered as a public company on 22 Nov 1995; listed on the Stock Exchange of Thailand since 19 Jul 1996)",
     "construction_start": null,
     "handover_promised": "Q3 2028",
     "original_handover": null,
@@ -353136,7 +353764,7 @@
     "currency": "THB",
     "deposit_pct": null,
     "payment_plan": "Down payment Within 14 days of booking 30%; Final payment At transfer (Q3 2028) 70%",
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -353146,7 +353774,9 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/watthana/xelf-lofts-thonglor"
+    "https://rumavi.com/en/new-developments/thailand/watthana/xelf-lofts-thonglor",
+    "https://thailand.go.th/issue-focus-detail/010_013",
+    "https://investor.sansiri.com/en/company-overview/company-info"
    ],
    "docs_listed": [
     "Development profile lists XELF Lofts Thonglor by Sansiri PCL + Mitsui Fudosan in Watthana, Bangkok, Thailand, status \"Under Construction\", expected completion \"Q3 2028\" (profile dated 2026-07-16, read 21 Nov 2026)",
@@ -366324,12 +366954,30 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/ratchathewi/shush-ratchathewi"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
+    },
+    {
+     "claim": "Map point published by the developer in the page data (schema.org GeoCoordinates): 13.754354, 100.532136.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sansiri.com/condominium/shush-ratchathewi/th/"
+    },
+    {
+     "claim": "Developer company: Sansiri Public Company Limited, registered as a public company on 22 November 1995 and listed on the SET since 19 July 1996; the group began as San Samran Holding Co., Ltd., registered 28 September 1984 (developer investor relations page).",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://investor.sansiri.com/en/company-overview/company-info"
     }
    ],
    "facts": {
-    "developer_founded": null,
+    "developer_founded": 1984,
     "developer_hq": null,
-    "developer_company": null,
+    "developer_company": "Sansiri Public Company Limited (registered as a public company on 22 Nov 1995; listed on the Stock Exchange of Thailand since 19 Jul 1996)",
     "construction_start": null,
     "handover_promised": "Q4 2026",
     "original_handover": null,
@@ -366346,17 +366994,20 @@
     "currency": "THB",
     "deposit_pct": null,
     "payment_plan": "Booking Fee Upon reservation 2%; Down Payment Within 2 weeks of booking 23%; Transfer Balance At handover (Q4 2026) 75%",
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
-    "lat": null,
-    "lng": null,
+    "lat": 13.754354,
+    "lng": 100.532136,
     "permit_authority": null
    },
    "note": "SHUSH Ratchathewi by Sansiri Public Company Limited in Ratchathewi, Bangkok (Thailand). Added from a development profile on rumavi.com: under construction; handover on record: Q4 2026. Not yet reviewed. (read 22 Nov 2026)",
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/ratchathewi/shush-ratchathewi"
+    "https://rumavi.com/en/new-developments/thailand/ratchathewi/shush-ratchathewi",
+    "https://thailand.go.th/issue-focus-detail/010_013",
+    "https://www.sansiri.com/condominium/shush-ratchathewi/th/",
+    "https://investor.sansiri.com/en/company-overview/company-info"
    ],
    "docs_listed": [
     "Development profile lists SHUSH Ratchathewi by Sansiri Public Company Limited in Ratchathewi, Bangkok, Thailand, status \"Under Construction\", expected completion \"Q4 2026\" (profile dated 2026-07-16, read 22 Nov 2026)",
@@ -366923,12 +367574,30 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/phaya-thai/via-ari"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
+    },
+    {
+     "claim": "Map point published by the developer in the page data (schema.org GeoCoordinates): 13.779198, 100.543072.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sansiri.com/condominium/via-ari/th/"
+    },
+    {
+     "claim": "Developer company: Sansiri Public Company Limited, registered as a public company on 22 November 1995 and listed on the SET since 19 July 1996; the group began as San Samran Holding Co., Ltd., registered 28 September 1984 (developer investor relations page).",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://investor.sansiri.com/en/company-overview/company-info"
     }
    ],
    "facts": {
-    "developer_founded": null,
+    "developer_founded": 1984,
     "developer_hq": null,
-    "developer_company": null,
+    "developer_company": "Sansiri Public Company Limited (registered as a public company on 22 Nov 1995; listed on the Stock Exchange of Thailand since 19 Jul 1996)",
     "construction_start": null,
     "handover_promised": "Q4 2026",
     "original_handover": null,
@@ -366945,17 +367614,20 @@
     "currency": "USD",
     "deposit_pct": null,
     "payment_plan": null,
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
-    "lat": null,
-    "lng": null,
+    "lat": 13.779198,
+    "lng": 100.543072,
     "permit_authority": null
    },
    "note": "VIA ARI by Sansiri PCL in Phaya Thai, Bangkok (Thailand). Added from a development profile on rumavi.com: off-plan; handover on record: Q4 2026. Not yet reviewed. (read 22 Nov 2026)",
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/phaya-thai/via-ari"
+    "https://rumavi.com/en/new-developments/thailand/phaya-thai/via-ari",
+    "https://thailand.go.th/issue-focus-detail/010_013",
+    "https://www.sansiri.com/condominium/via-ari/th/",
+    "https://investor.sansiri.com/en/company-overview/company-info"
    ],
    "docs_listed": [
     "Development profile lists VIA ARI by Sansiri PCL in Phaya Thai, Bangkok, Thailand, status \"Off Plan\", expected completion \"Q4 2026\" (profile dated 2026-07-16, read 22 Nov 2026)",
@@ -367158,6 +367830,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/khlong-san/rhythm-charoennakhon-iconic"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -367180,7 +367858,7 @@
     "currency": "USD",
     "deposit_pct": null,
     "payment_plan": null,
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -367190,7 +367868,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/khlong-san/rhythm-charoennakhon-iconic"
+    "https://rumavi.com/en/new-developments/thailand/khlong-san/rhythm-charoennakhon-iconic",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists Rhythm Charoennakhon Iconic by AP (Thailand) PCL (JV with Mitsubishi Estate) in Khlong San, Bangkok, Thailand, status \"Off Plan\", expected completion \"Q4 2026\" (profile dated 2026-07-16, read 22 Nov 2026)",
@@ -367275,6 +367954,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/khlong-san/life-charoennakhon-sathorn"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -367296,7 +367981,7 @@
     "currency": "USD",
     "deposit_pct": null,
     "payment_plan": null,
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -367306,7 +367991,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/khlong-san/life-charoennakhon-sathorn"
+    "https://rumavi.com/en/new-developments/thailand/khlong-san/life-charoennakhon-sathorn",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists Life Charoennakhon-Sathorn by AP (Thailand) PCL in Khlong San, Bangkok, Thailand, status \"Off Plan\", expected completion \"Q4 2026\" (profile dated 2026-07-16, read 22 Nov 2026)",
@@ -367391,6 +368077,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/yan-nawa/life-sathorn-narathiwas-22"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -367412,7 +368104,7 @@
     "currency": "USD",
     "deposit_pct": null,
     "payment_plan": null,
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -367422,7 +368114,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/yan-nawa/life-sathorn-narathiwas-22"
+    "https://rumavi.com/en/new-developments/thailand/yan-nawa/life-sathorn-narathiwas-22",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists Life Sathorn-Narathiwas 22 by AP (Thailand) PCL + Mitsubishi Estate in Yan Nawa, Bangkok, Thailand, status \"Off Plan\", expected completion \"Q4 2026\" (profile dated 2026-07-16, read 22 Nov 2026)",
@@ -367629,12 +368322,30 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/din-daeng/the-base-ratchada-19"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
+    },
+    {
+     "claim": "Map point published by the developer in the page data (schema.org GeoCoordinates): 13.796418, 100.569569.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sansiri.com/condominium/thebase-ratchada-19/th/"
+    },
+    {
+     "claim": "Developer company: Sansiri Public Company Limited, registered as a public company on 22 November 1995 and listed on the SET since 19 July 1996; the group began as San Samran Holding Co., Ltd., registered 28 September 1984 (developer investor relations page).",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://investor.sansiri.com/en/company-overview/company-info"
     }
    ],
    "facts": {
-    "developer_founded": null,
+    "developer_founded": 1984,
     "developer_hq": null,
-    "developer_company": null,
+    "developer_company": "Sansiri Public Company Limited (registered as a public company on 22 Nov 1995; listed on the Stock Exchange of Thailand since 19 Jul 1996)",
     "construction_start": null,
     "handover_promised": "Q3 2026",
     "original_handover": null,
@@ -367650,17 +368361,20 @@
     "currency": "USD",
     "deposit_pct": null,
     "payment_plan": null,
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
-    "lat": null,
-    "lng": null,
+    "lat": 13.796418,
+    "lng": 100.569569,
     "permit_authority": null
    },
    "note": "The Base Ratchada 19 by Sansiri PCL in Din Daeng, Bangkok (Thailand). Added from a development profile on rumavi.com: off-plan; handover on record: Q3 2026. Not yet reviewed. (read 22 Nov 2026)",
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/din-daeng/the-base-ratchada-19"
+    "https://rumavi.com/en/new-developments/thailand/din-daeng/the-base-ratchada-19",
+    "https://thailand.go.th/issue-focus-detail/010_013",
+    "https://www.sansiri.com/condominium/thebase-ratchada-19/th/",
+    "https://investor.sansiri.com/en/company-overview/company-info"
    ],
    "docs_listed": [
     "Development profile lists The Base Ratchada 19 by Sansiri PCL in Din Daeng, Bangkok, Thailand, status \"Off Plan\", expected completion \"Q3 2026\" (profile dated 2026-07-16, read 22 Nov 2026)",
@@ -367745,6 +368459,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/chatuchak/modiz-vault-kaset-sripatum"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -367765,7 +368485,7 @@
     "currency": "USD",
     "deposit_pct": null,
     "payment_plan": null,
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -367775,7 +368495,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/chatuchak/modiz-vault-kaset-sripatum"
+    "https://rumavi.com/en/new-developments/thailand/chatuchak/modiz-vault-kaset-sripatum",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists Modiz Vault Kaset-Sripatum by AssetWise Co., Ltd. (JV with Takara Leben, Japan) in Chatuchak, Bangkok, Thailand, status \"Off Plan\", expected completion \"Q2 2026\" (profile dated 2026-07-16, read 22 Nov 2026)",
@@ -367984,6 +368705,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/suan-luang/supalai-parc-ekkamai-pattanakarn"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -368006,7 +368733,7 @@
     "currency": "USD",
     "deposit_pct": null,
     "payment_plan": null,
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -368016,7 +368743,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/suan-luang/supalai-parc-ekkamai-pattanakarn"
+    "https://rumavi.com/en/new-developments/thailand/suan-luang/supalai-parc-ekkamai-pattanakarn",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists Supalai Parc Ekkamai-Pattanakarn by Supalai PCL in Suan Luang, Bangkok, Thailand, status \"Off Plan\", expected completion \"Q4 2026\" (profile dated 2026-07-16, read 22 Nov 2026)",
@@ -368225,6 +368953,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/bangkok-noi/the-origin-pinklao"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -368246,7 +368980,7 @@
     "currency": "USD",
     "deposit_pct": null,
     "payment_plan": null,
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -368256,7 +368990,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/bangkok-noi/the-origin-pinklao"
+    "https://rumavi.com/en/new-developments/thailand/bangkok-noi/the-origin-pinklao",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists The Origin Pinklao by Origin Property PCL in Bangkok Noi, Bangkok, Thailand, status \"Off Plan\", expected completion \"Q4 2026\" (profile dated 2026-07-16, read 22 Nov 2026)",
@@ -368341,6 +369076,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/din-daeng/aspire-huai-khwang"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -368363,7 +369104,7 @@
     "currency": "USD",
     "deposit_pct": null,
     "payment_plan": null,
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -368373,7 +369114,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/din-daeng/aspire-huai-khwang"
+    "https://rumavi.com/en/new-developments/thailand/din-daeng/aspire-huai-khwang",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists Aspire Huai Khwang by AP (Thailand) PCL in Din Daeng, Bangkok, Thailand, status \"Off Plan\", expected completion \"Q2 2027\" (profile dated 2026-07-16, read 22 Nov 2026)",
@@ -375887,6 +376629,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/bang-kapi/modiz-voyage-srinakarin"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -375907,7 +376655,7 @@
     "currency": "THB",
     "deposit_pct": null,
     "payment_plan": null,
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -375917,7 +376665,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/bang-kapi/modiz-voyage-srinakarin"
+    "https://rumavi.com/en/new-developments/thailand/bang-kapi/modiz-voyage-srinakarin",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists Modiz Voyage Srinakarin by AssetWise Public Company Limited in Bang Kapi, Bangkok, Thailand, status \"Under Construction\", expected completion \"Q4 2026\" (profile dated 2026-09-07, read 22 Nov 2026)",
@@ -376002,6 +376751,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/bang-sue/origin-place-taopoon-interchange"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -376023,7 +376778,7 @@
     "currency": "THB",
     "deposit_pct": null,
     "payment_plan": null,
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -376033,7 +376788,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/bang-sue/origin-place-taopoon-interchange"
+    "https://rumavi.com/en/new-developments/thailand/bang-sue/origin-place-taopoon-interchange",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists Origin Place Taopoon Interchange by Origin Property Public Company Limited in Bang Sue, Bangkok, Thailand, status \"Under Construction\", expected completion \"Q4 2028\" (profile dated 2026-09-07, read 22 Nov 2026)",
@@ -376118,6 +376874,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/saphan-sung/origin-place-ramkhamhaeng-153"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -376139,7 +376901,7 @@
     "currency": "THB",
     "deposit_pct": null,
     "payment_plan": null,
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -376149,7 +376911,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/saphan-sung/origin-place-ramkhamhaeng-153"
+    "https://rumavi.com/en/new-developments/thailand/saphan-sung/origin-place-ramkhamhaeng-153",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists Origin Place Ramkhamhaeng 153 by Origin Property Public Company Limited in Saphan Sung, Bangkok, Thailand, status \"Under Construction\", expected completion \"Q2 2027\" (profile dated 2026-09-07, read 22 Nov 2026)",
@@ -376234,6 +376997,12 @@
      "status": "unverified",
      "by": "none",
      "source": "https://rumavi.com/en/new-developments/thailand/prawet/cozi-srinakarin-38"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person. Official Thai government portal, read 23 Nov 2026.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
     }
    ],
    "facts": {
@@ -376254,7 +377023,7 @@
     "currency": "THB",
     "deposit_pct": null,
     "payment_plan": null,
-    "foreign_ownership": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
     "rental_programme": null,
     "lat": null,
     "lng": null,
@@ -376264,7 +377033,8 @@
    "positives": [],
    "flags": [],
    "sources": [
-    "https://rumavi.com/en/new-developments/thailand/prawet/cozi-srinakarin-38"
+    "https://rumavi.com/en/new-developments/thailand/prawet/cozi-srinakarin-38",
+    "https://thailand.go.th/issue-focus-detail/010_013"
    ],
    "docs_listed": [
     "Development profile lists COZI Srinakarin 38 by SENA Development Public Company Limited (SENA Hankyu Hanshin joint venture) in Prawet, Bangkok, Thailand, status \"Under Construction\", expected completion \"2027\" (profile dated 2026-09-07, read 22 Nov 2026)",
@@ -439207,6 +439977,136 @@
    "added": "2026-11-23",
    "found_by": "discover-manual",
    "slug": "ona-homes-moncofar"
+  },
+  {
+   "name": "dcondo vite Pattaya",
+   "developer": "Sansiri (Sansiri Public Co., Ltd.)",
+   "area": "Pattaya",
+   "country": "Thailand",
+   "market": "Pattaya",
+   "stage": "under construction",
+   "url": "https://www.sansiri.com/projectprogress/en/dcondo-vite-pattaya",
+   "docs_url": "https://www.sansiri.com/projectprogress/en/dcondo-vite-pattaya",
+   "permit_number": null,
+   "seed": {
+    "price": 1750000,
+    "currency": "THB",
+    "title": null,
+    "lease_base": null,
+    "extension": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "July 2027",
+    "permit_claim": true,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": 14,
+    "progress_updates": true,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null,
+    "price_per_m2": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "\"Expected completion date: July 2027\"; overall construction work completed 14%, update 19 November 2026 (developer construction progress page, read 23 Nov 2026)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sansiri.com/projectprogress/en/dcondo-vite-pattaya"
+    },
+    {
+     "claim": "Work breakdown on the same page: pile-driving work completed 90%; structural work 30%; system work 5%; architectural work 0%",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sansiri.com/projectprogress/en/dcondo-vite-pattaya"
+    },
+    {
+     "claim": "\"A construction permit has already been issued.\" (developer statement; the permit number is not printed)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sansiri.com/projectprogress/en/dcondo-vite-pattaya"
+    },
+    {
+     "claim": "Starting price THB 1,750,000 (schema.org AggregateOffer lowPrice); address Bang Lamung, Chon Buri 20150; map point 12.9561695, 100.8971944 (developer project page data)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.sansiri.com/condominium/dcondo-vite-pattaya/th/"
+    },
+    {
+     "claim": "Developer company: Sansiri Public Company Limited, registered as a public company on 22 November 1995, SET-listed since 19 July 1996",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://investor.sansiri.com/en/company-overview/company-info"
+    },
+    {
+     "claim": "Foreign buyers (Thailand, condominium units): foreigners may own up to 49% of the units of a registered condominium building, freehold (Condominium Act 1979)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://thailand.go.th/issue-focus-detail/010_013"
+    }
+   ],
+   "facts": {
+    "developer_founded": 1984,
+    "developer_hq": null,
+    "developer_company": "Sansiri Public Company Limited (registered as a public company on 22 Nov 1995; listed on the Stock Exchange of Thailand since 19 Jul 1996)",
+    "construction_start": null,
+    "handover_promised": "July 2027",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 1750000,
+    "price_max": null,
+    "currency": "THB",
+    "deposit_pct": null,
+    "payment_plan": null,
+    "foreign_ownership": "Condominium units: foreigners may own up to 49% of the units of a building registered as a condominium, freehold (Condominium Act 1979); the transfer needs a foreign-quota letter from the condominium juristic person",
+    "rental_programme": null,
+    "lat": 12.9561695,
+    "lng": 100.8971944,
+    "permit_authority": null
+   },
+   "note": "dcondo vite by Sansiri in Bang Lamung, Pattaya (Thailand). Added from the official developer construction progress page: under construction, 14% overall, expected completion July 2027. Not yet reviewed. (read 23 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.sansiri.com/projectprogress/en/dcondo-vite-pattaya",
+    "https://www.sansiri.com/condominium/dcondo-vite-pattaya/th/",
+    "https://investor.sansiri.com/en/company-overview/company-info",
+    "https://thailand.go.th/issue-focus-detail/010_013"
+   ],
+   "docs_listed": [
+    "\"Expected completion date: July 2027\"; overall construction work completed 14%, update 19 November 2026 (developer construction progress page, read 23 Nov 2026)",
+    "Work breakdown on the same page: pile-driving work completed 90%; structural work 30%; system work 5%; architectural work 0%",
+    "\"A construction permit has already been issued.\" (developer statement; the permit number is not printed)",
+    "Starting price THB 1,750,000 (schema.org AggregateOffer lowPrice); address Bang Lamung, Chon Buri 20150; map point 12.9561695, 100.8971944 (developer project page data)",
+    "Developer company: Sansiri Public Company Limited, registered as a public company on 22 November 1995, SET-listed since 19 July 1996",
+    "Foreign buyers (Thailand, condominium units): foreigners may own up to 49% of the units of a registered condominium building, freehold (Condominium Act 1979)"
+   ],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-23",
+   "found_by": "discover-manual",
+   "slug": "dcondo-vite-pattaya"
   }
  ]
 }

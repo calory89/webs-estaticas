@@ -71236,5 +71236,27 @@
   },
   "source": "seed",
   "checked": "2026-11-23"
+ },
+ "dcondo-vite-pattaya": {
+  "name": "dcondo vite Pattaya",
+  "url": "https://www.sansiri.com/projectprogress/en/dcondo-vite-pattaya",
+  "market": "Pattaya",
+  "claims": {
+   "price_from": 1750000,
+   "currency": "THB",
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2027,
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": []
+  },
+  "source": "seed",
+  "checked": "2026-11-23"
  }
 }
