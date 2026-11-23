@@ -162,9 +162,9 @@ export const secZ = (id, h, inner, lead) => '<section class="ks kz" id="' + id +
 // n35b (batch 35, item 11): status card v2. Same six checks, now with a state icon drawn in CSS (tick, half, cross, question mark: shape and
 // words, not colour alone), the date of the last check and the number of sources in the card head, and the one next question to ask,
 // picked by rule from the first check that is not green (the same checklist sentences as below), linked to the full question list.
-const LT2 = { en: ['Last checked {d}', '{n} sources', 'Next question to ask', 'All questions'], es: ['Última comprobación: {d}', '{n} fuentes', 'Siguiente pregunta', 'Todas las preguntas'],
-  fr: ['Dernière vérification : {d}', '{n} sources', 'Prochaine question à poser', 'Toutes les questions'], de: ['Zuletzt geprüft: {d}', '{n} Quellen', 'Nächste Frage', 'Alle Fragen'],
-  nl: ['Laatst gecontroleerd: {d}', '{n} bronnen', 'Volgende vraag om te stellen', 'Alle vragen'], ru: ['Последняя проверка: {d}', 'Источников: {n}', 'Следующий вопрос', 'Все вопросы'],
+const LT2 = { en: ['Last checked {d}', '{n} sources', 'Next question to ask', 'All questions', '{n} source'], es: ['Última comprobación: {d}', '{n} fuentes', 'Siguiente pregunta', 'Todas las preguntas', '{n} fuente'],
+  fr: ['Dernière vérification : {d}', '{n} sources', 'Prochaine question à poser', 'Toutes les questions', '{n} source'], de: ['Zuletzt geprüft: {d}', '{n} Quellen', 'Nächste Frage', 'Alle Fragen', '{n} Quelle'],
+  nl: ['Laatst gecontroleerd: {d}', '{n} bronnen', 'Volgende vraag om te stellen', 'Alle vragen', '{n} bron'], ru: ['Последняя проверка: {d}', 'Источников: {n}', 'Следующий вопрос', 'Все вопросы'],
   zh: ['最近核查：{d}', '{n} 个来源', '下一个要问的问题', '全部问题'], ar: ['آخر فحص: {d}', 'عدد المصادر: {n}', 'السؤال التالي', 'كل الأسئلة'] };
 function nextQ(lang, P, o) {
   const st = k => (P.find(p => p[0] === k) || [0, 0, ['nc']])[2][0], co = o.co || '', r0 = (o.regs || [])[0];
@@ -176,7 +176,7 @@ function nextQ(lang, P, o) {
 }
 export function lightHtml(lang, o) {
   const P = light6(o), L = LT2[lang] || LT2.en, f = (s, v) => s.replace(/\{(\w+)\}/g, (m, k) => v[k] != null ? v[k] : m);
-  const meta = o.meta ? '<p class="klt-m">' + (o.meta.d ? '<span>' + esc(f(L[0], { d: o.meta.d })) + '</span>' : '') + (o.meta.n ? '<a href="#sources">' + esc(f(L[1], { n: o.meta.n })) + '</a>' : '') + '</p>' : '';
+  const meta = o.meta ? '<p class="klt-m">' + (o.meta.d ? '<span>' + esc(f(L[0], { d: o.meta.d })) + '</span>' : '') + (o.meta.n ? '<a href="#sources">' + esc(f(String(o.meta.n).replace(/\D/g, '') === '1' && L[4] ? L[4] : L[1], { n: o.meta.n })) + '</a>' : '') + '</p>' : '';
   const nq = o.meta ? '<p class="klt-q"><b>' + esc(L[2]) + '</b> <span>' + nextQ(lang, P, o.meta) + '</span>' + (o.meta.q ? ' <a href="' + esc(o.meta.q) + '">' + esc(L[3]) + '</a>' : '') + '</p>' : '';
   return '<div class="klt' + (o.meta ? ' klt2' : '') + '" id="checks6" data-u27="' + esc(JSON.stringify(o.data || {})) + '"><div class="klt-t"><p class="klt-h">' + esc(t27(lang, 'lt_h')) + '</p>' + meta + '</div><ul class="klt-l">' +
     P.map(([k, sid, s]) => '<li class="klt-' + s[0] + '"><a href="#' + sid + '"><i aria-hidden="true"></i><b>' + esc(t27(lang, 'lt_' + k)) + '</b><span>' + esc(t27(lang, s[1], s[2])) + '</span></a></li>').join('') +

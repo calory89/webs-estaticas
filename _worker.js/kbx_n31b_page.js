@@ -64,7 +64,7 @@ export function trustBlock(x, c, lang, o) {
   // item 77: sources by kind
   const K = [0, 0, 0, 0]; for (const u of o.sources || []) { const k = o.kindOf(u); if (k >= 0) K[k]++; }
   const n = K[0] + K[1] + K[2] + K[3];
-  if (n) L.push(esc(t31(lang, 'tb_src', { n, list: '%L' })).replace('%L', K.map((v, k) => v ? kindIco(k, lang).replace('">', '">' + v + ' ') : '').filter(Boolean).join(', ')) + ' <a href="#sources">' + esc(t31(lang, 'src_h')) + '</a>');
+  if (n) L.push(esc(t31(lang, n === 1 ? 'tb_src1' : 'tb_src', { n, list: '%L' }) || t31(lang, 'tb_src', { n, list: '%L' })).replace('%L', K.map((v, k) => v ? kindIco(k, lang).replace('">', '">' + v + ' ') : '').filter(Boolean).join(', ')) + ' <a href="#sources">' + esc(t31(lang, 'src_h')) + '</a>');
   // item 79: permit number against the register entry
   const pc = permitCmp(x);
   if (pc) L.push(esc(t31(lang, pc.k === 'ok' ? 'tb_pm_ok' : pc.k === 'no' ? 'tb_pm_no' : 'tb_pm_reg', { code: pc.rw.code || pc.rw.item, reg: pc.rw.register, d: fd(pc.rw.checked, lang) })) + ' <a href="' + pre(lang) + '/registers/">' + esc(t31(lang, 'tb_off')) + '</a>');
