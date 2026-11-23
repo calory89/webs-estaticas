@@ -8459,7 +8459,11 @@
            }
           },
           "ai_spend": {
-           "type": "object",
+           "type": [
+            "object",
+            "null"
+           ],
+           "description": "Spend record of the paragraph draft. null when none was recorded for this release (the November 2026 release carries null).",
            "properties": {
             "stop_reason": {
              "type": "string"
@@ -8724,18 +8728,7 @@
            "problems": []
           }
          },
-         "ai_spend": {
-          "stop_reason": "end_turn",
-          "blocks": [
-           "thinking",
-           "text"
-          ],
-          "words": 127,
-          "model": "claude-sonnet-5-5",
-          "input_tokens": 478,
-          "output_tokens": 1062,
-          "usd_upper_bound": 0.0868
-         },
+         "ai_spend": null,
          "charts": [
           {
            "file": "chart-delays.svg",
