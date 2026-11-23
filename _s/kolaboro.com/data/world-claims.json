@@ -1,6 +1,6 @@
 {
  "updated": "2026-11-23",
- "projects": 3363,
+ "projects": 3438,
  "markets": {
   "Abu Dhabi": {
    "updated": "2026-11-23",
@@ -7257,7 +7257,7 @@
    "updated": "2026-11-23",
    "market": "Dubai",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 948,
+   "projects": 1004,
    "title": {
     "leasehold": 0,
     "known": 27
@@ -7279,11 +7279,11 @@
     "known": 0
    },
    "guaranteed_language": 1,
-   "permit_claims": 752,
-   "permit_numbers_published": 756,
+   "permit_claims": 808,
+   "permit_numbers_published": 812,
    "plans_published": 43,
    "price_usd": {
-    "known": 692,
+    "known": 733,
     "median": 300000.0,
     "min": 50000.0,
     "max": 15584000.0
@@ -7294,11 +7294,11 @@
     "max": 8
    },
    "completion": {
-    "2026": 73,
-    "2027": 363,
-    "2028": 293,
-    "2029": 142,
-    "2030": 48,
+    "2026": 77,
+    "2027": 395,
+    "2028": 310,
+    "2029": 144,
+    "2030": 49,
     "2031": 4,
     "2032": 1,
     "unknown": 24
@@ -12142,7 +12142,7 @@
    "updated": "2026-11-23",
    "market": "Kuala Lumpur",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 104,
+   "projects": 109,
    "title": {
     "leasehold": 0,
     "known": 13
@@ -12164,12 +12164,12 @@
     "known": 0
    },
    "guaranteed_language": 0,
-   "permit_claims": 70,
-   "permit_numbers_published": 70,
+   "permit_claims": 75,
+   "permit_numbers_published": 75,
    "plans_published": 2,
    "price_usd": {
-    "known": 103,
-    "median": 128000.0,
+    "known": 108,
+    "median": 130000.0,
     "min": 21000.0,
     "max": 1188000.0
    },
@@ -12179,13 +12179,13 @@
     "max": null
    },
    "completion": {
-    "2026": 4,
+    "2026": 6,
     "2027": 17,
-    "2028": 30,
-    "2029": 22,
+    "2028": 31,
+    "2029": 23,
     "2030": 13,
     "2031": 4,
-    "unknown": 14
+    "unknown": 15
    },
    "runs": [
     {
@@ -13857,7 +13857,7 @@
    "updated": "2026-11-23",
    "market": "Malaysia",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 272,
+   "projects": 286,
    "title": {
     "leasehold": 3,
     "known": 31
@@ -13879,12 +13879,12 @@
     "known": 0
    },
    "guaranteed_language": 0,
-   "permit_claims": 229,
-   "permit_numbers_published": 229,
+   "permit_claims": 243,
+   "permit_numbers_published": 243,
    "plans_published": 6,
    "price_usd": {
-    "known": 264,
-    "median": 108000.0,
+    "known": 278,
+    "median": 107000.0,
     "min": 16000.0,
     "max": 1095000.0
    },
@@ -13894,14 +13894,15 @@
     "max": null
    },
    "completion": {
-    "2026": 10,
-    "2027": 38,
-    "2028": 42,
-    "2029": 59,
+    "2024": 1,
+    "2026": 11,
+    "2027": 41,
+    "2028": 46,
+    "2029": 61,
     "2030": 45,
     "2031": 5,
     "2032": 1,
-    "unknown": 72
+    "unknown": 75
    },
    "runs": [
     {

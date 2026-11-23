@@ -46942,6 +46942,346 @@
    }
   },
   {
+   "id": "DXB-1000",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 24,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 0.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 4,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 4,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-1001",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 18,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 28.45,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 4,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 4,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-1002",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 25,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 6.38,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 4,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 4,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-1003",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 49,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 1.14,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 4,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 4,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-1004",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 64,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 0.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 4,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 4,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
    "id": "DXB-101",
    "market": "Dubai",
    "country": "UAE",
@@ -104600,6 +104940,3474 @@
    }
   },
   {
+   "id": "DXB-949",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 312,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 0.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 7,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 9,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-950",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 82,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 2.14,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 7,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 9,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-951",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 49,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 33.11,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 7,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 8,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-952",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 41,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 7.03,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 4,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 4,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-953",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 71,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 0.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 7,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 9,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-954",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 22,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 62.07,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 5,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 4,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-955",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2029,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 75,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 5.6,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2029: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 5,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-956",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 71,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 41.24,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 6,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 9,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-957",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2029,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 166,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 0.04,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2029: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 6,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 9,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-958",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 276,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 8.3,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 6,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 9,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-959",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 63,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 0.03,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 6,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 9,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-960",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 83,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 0.38,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 6,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 9,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-961",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 79,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 0.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 6,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 9,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-962",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 63,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 0.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 6,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 9,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-963",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2030,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 99,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 0.24,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2030: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 4,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 4,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-964",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2026,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 30,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 60.44,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2026: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 6,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 9,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-965",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 60,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 30.04,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 6,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 9,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-966",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 147,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 25.31,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 6,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-967",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 77,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 7.03,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 6,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 9,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-968",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 230,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 8.49,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 6,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-969",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 85,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 15.01,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 6,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 9,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-970",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 20,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 28.77,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 6,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 9,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-971",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 222,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 1.55,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 6,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-972",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 405,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 13.74,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 6,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 8,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-973",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 89,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 32.07,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 6,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 9,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-974",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 66,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 0.84,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 6,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 9,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-975",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 224,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 51.15,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 6,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 9,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-976",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 105,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 34.02,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 6,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 9,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-977",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 151,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 18.27,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 6,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-978",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 124,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 2.06,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 6,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-979",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 49,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 0.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 6,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 7,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-980",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 24,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 11.42,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 4,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 4,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-981",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 65,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 0.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 6,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 9,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-982",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2026,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 70,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 61.41,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2026: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 5,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-983",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2026,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 54,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 57.03,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2026: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 5,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-984",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 64,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 27.01,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 5,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-985",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 196,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 13.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 5,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-986",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 71,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 20.78,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 5,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-987",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 43,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 15.88,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 5,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-988",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 56,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 5.27,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 5,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-989",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 199,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 44.7,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 4,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 4,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-990",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 65,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 15.53,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 5,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-991",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 68,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 33.19,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 5,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-992",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 92,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 1.47,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 5,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-993",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 25,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 0.64,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 4,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 4,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-994",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 66,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 0.06,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 5,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-995",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 88,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 0.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 5,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 7,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-996",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2026,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 14,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 42.78,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2026: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 4,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 4,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-997",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 121,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 69.7,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 4,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 4,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-998",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 444,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 73.89,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 4,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 4,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "DXB-999",
+   "market": "Dubai",
+   "country": "UAE",
+   "region": "Dubai",
+   "docs": true,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 72,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 0.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 4,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 4,
+   "register": {
+    "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+    "item": "project registration",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
    "id": "DUB-001",
    "market": "Dublin",
    "country": "Ireland",
@@ -132748,7 +136556,7 @@
    "docs": true,
    "plans": false,
    "band": "Under $100k",
-   "done": null,
+   "done": 2030,
    "title": null,
    "lease": null,
    "yield": null,
@@ -132780,7 +136588,8 @@
    "q": [
     "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
-    "A building permit is claimed: does it exist in the official system and match this plot?"
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2030: does progress on site match?"
    ],
    "verified": {
     "permit": "registry",
@@ -132792,14 +136601,14 @@
    },
    "vscore": 3,
    "claims": {
-    "verified": 11,
+    "verified": 12,
     "unverified": 0,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7,
+   "profile": 8,
    "register": {
     "register": "Malaysia KPKT TEDUH register",
     "item": "advertising and sales permit",
@@ -134582,7 +138391,7 @@
    "docs": true,
    "plans": false,
    "band": "Under $100k",
-   "done": null,
+   "done": 2027,
    "title": null,
    "lease": null,
    "yield": null,
@@ -134614,7 +138423,8 @@
    "q": [
     "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
-    "A building permit is claimed: does it exist in the official system and match this plot?"
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
    ],
    "verified": {
     "permit": "registry",
@@ -134626,14 +138436,14 @@
    },
    "vscore": 3,
    "claims": {
-    "verified": 16,
+    "verified": 17,
     "unverified": 0,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7,
+   "profile": 8,
    "register": {
     "register": "Malaysia KPKT TEDUH register",
     "item": "advertising and sales permit",
@@ -134921,7 +138731,7 @@
    "docs": true,
    "plans": false,
    "band": "$100k to $200k",
-   "done": null,
+   "done": 2027,
    "title": null,
    "lease": null,
    "yield": null,
@@ -134953,7 +138763,8 @@
    "q": [
     "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
-    "A building permit is claimed: does it exist in the official system and match this plot?"
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
    ],
    "verified": {
     "permit": "registry",
@@ -134965,14 +138776,14 @@
    },
    "vscore": 3,
    "claims": {
-    "verified": 11,
+    "verified": 12,
     "unverified": 0,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7,
+   "profile": 8,
    "register": {
     "register": "Malaysia KPKT TEDUH register",
     "item": "advertising and sales permit",
@@ -135056,7 +138867,7 @@
    "docs": true,
    "plans": false,
    "band": "$100k to $200k",
-   "done": null,
+   "done": 2027,
    "title": null,
    "lease": null,
    "yield": null,
@@ -135088,7 +138899,8 @@
    "q": [
     "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
-    "A building permit is claimed: does it exist in the official system and match this plot?"
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
    ],
    "verified": {
     "permit": "registry",
@@ -135100,14 +138912,14 @@
    },
    "vscore": 3,
    "claims": {
-    "verified": 11,
+    "verified": 12,
     "unverified": 0,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7,
+   "profile": 8,
    "register": {
     "register": "Malaysia KPKT TEDUH register",
     "item": "advertising and sales permit",
@@ -135327,7 +139139,7 @@
    "docs": true,
    "plans": false,
    "band": "$100k to $200k",
-   "done": null,
+   "done": 2027,
    "title": null,
    "lease": null,
    "yield": null,
@@ -135359,7 +139171,8 @@
    "q": [
     "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
-    "A building permit is claimed: does it exist in the official system and match this plot?"
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
    ],
    "verified": {
     "permit": "registry",
@@ -135371,14 +139184,14 @@
    },
    "vscore": 3,
    "claims": {
-    "verified": 11,
+    "verified": 12,
     "unverified": 0,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7,
+   "profile": 8,
    "register": {
     "register": "Malaysia KPKT TEDUH register",
     "item": "advertising and sales permit",
@@ -135513,6 +139326,345 @@
    },
    "stage": "under construction",
    "delay": 24.0,
+   "overdue": null,
+   "profile": 10,
+   "register": {
+    "register": "Malaysia KPKT TEDUH register",
+    "item": "advertising and sales permit",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "KUA-106",
+   "market": "Kuala Lumpur",
+   "country": "Malaysia",
+   "region": "Kuala Lumpur",
+   "docs": true,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 830,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 0.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 6,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 7,
+   "register": {
+    "register": "Malaysia KPKT TEDUH register",
+    "item": "advertising and sales permit",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "KUA-107",
+   "market": "Kuala Lumpur",
+   "country": "Malaysia",
+   "region": "Kuala Lumpur",
+   "docs": true,
+   "plans": false,
+   "band": "Under $100k",
+   "done": 2029,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 702,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 20.17,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2029: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 6,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": 12.0,
+   "overdue": null,
+   "profile": 10,
+   "register": {
+    "register": "Malaysia KPKT TEDUH register",
+    "item": "advertising and sales permit",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "KUA-108",
+   "market": "Kuala Lumpur",
+   "country": "Malaysia",
+   "region": "Kuala Lumpur",
+   "docs": true,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2026,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 70,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 87.11,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2026: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 6,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": 29.0,
+   "overdue": null,
+   "profile": 10,
+   "register": {
+    "register": "Malaysia KPKT TEDUH register",
+    "item": "advertising and sales permit",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "KUA-109",
+   "market": "Kuala Lumpur",
+   "country": "Malaysia",
+   "region": "Kuala Lumpur",
+   "docs": true,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 752,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 68.99,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 6,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": 24.0,
+   "overdue": null,
+   "profile": 10,
+   "register": {
+    "register": "Malaysia KPKT TEDUH register",
+    "item": "advertising and sales permit",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "KUA-110",
+   "market": "Kuala Lumpur",
+   "country": "Malaysia",
+   "region": "Kuala Lumpur",
+   "docs": true,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2026,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 506,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 92.5,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2026: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 6,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": 36.0,
    "overdue": null,
    "profile": 10,
    "register": {
@@ -147852,7 +152004,7 @@
    "docs": true,
    "plans": false,
    "band": "$200k to $400k",
-   "done": null,
+   "done": 2030,
    "title": null,
    "lease": null,
    "yield": null,
@@ -147884,7 +152036,8 @@
    "q": [
     "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
-    "A building permit is claimed: does it exist in the official system and match this plot?"
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2030: does progress on site match?"
    ],
    "verified": {
     "permit": "registry",
@@ -147896,14 +152049,14 @@
    },
    "vscore": 3,
    "claims": {
-    "verified": 16,
+    "verified": 17,
     "unverified": 0,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7,
+   "profile": 8,
    "register": {
     "register": "Malaysia KPKT TEDUH register",
     "item": "advertising and sales permit",
@@ -148393,7 +152546,7 @@
    "docs": true,
    "plans": false,
    "band": "$100k to $200k",
-   "done": null,
+   "done": 2029,
    "title": null,
    "lease": null,
    "yield": null,
@@ -148425,7 +152578,8 @@
    "q": [
     "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
-    "A building permit is claimed: does it exist in the official system and match this plot?"
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2029: does progress on site match?"
    ],
    "verified": {
     "permit": "registry",
@@ -148437,14 +152591,14 @@
    },
    "vscore": 3,
    "claims": {
-    "verified": 11,
+    "verified": 12,
     "unverified": 0,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7,
+   "profile": 8,
    "register": {
     "register": "Malaysia KPKT TEDUH register",
     "item": "advertising and sales permit",
@@ -148936,7 +153090,7 @@
    "docs": true,
    "plans": false,
    "band": "$200k to $400k",
-   "done": null,
+   "done": 2028,
    "title": null,
    "lease": null,
    "yield": null,
@@ -148968,7 +153122,8 @@
    "q": [
     "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
-    "A building permit is claimed: does it exist in the official system and match this plot?"
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?"
    ],
    "verified": {
     "permit": "registry",
@@ -148980,14 +153135,14 @@
    },
    "vscore": 3,
    "claims": {
-    "verified": 11,
+    "verified": 12,
     "unverified": 0,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7,
+   "profile": 8,
    "register": {
     "register": "Malaysia KPKT TEDUH register",
     "item": "advertising and sales permit",
@@ -149682,7 +153837,7 @@
    "docs": true,
    "plans": false,
    "band": "Under $100k",
-   "done": null,
+   "done": 2030,
    "title": null,
    "lease": null,
    "yield": null,
@@ -149714,7 +153869,8 @@
    "q": [
     "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
-    "A building permit is claimed: does it exist in the official system and match this plot?"
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2030: does progress on site match?"
    ],
    "verified": {
     "permit": "registry",
@@ -149726,14 +153882,14 @@
    },
    "vscore": 3,
    "claims": {
-    "verified": 11,
+    "verified": 12,
     "unverified": 0,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7,
+   "profile": 8,
    "register": {
     "register": "Malaysia KPKT TEDUH register",
     "item": "advertising and sales permit",
@@ -150625,7 +154781,7 @@
    "docs": true,
    "plans": false,
    "band": "Under $100k",
-   "done": null,
+   "done": 2031,
    "title": null,
    "lease": null,
    "yield": null,
@@ -150657,7 +154813,8 @@
    "q": [
     "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
-    "A building permit is claimed: does it exist in the official system and match this plot?"
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2031: does progress on site match?"
    ],
    "verified": {
     "permit": "registry",
@@ -150669,14 +154826,14 @@
    },
    "vscore": 3,
    "claims": {
-    "verified": 7,
+    "verified": 8,
     "unverified": 0,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7,
+   "profile": 8,
    "register": {
     "register": "Malaysia KPKT TEDUH register",
     "item": "advertising and sales permit",
@@ -150759,7 +154916,7 @@
    "docs": true,
    "plans": false,
    "band": "$400k and up",
-   "done": null,
+   "done": 2029,
    "title": null,
    "lease": null,
    "yield": null,
@@ -150791,7 +154948,8 @@
    "q": [
     "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
-    "A building permit is claimed: does it exist in the official system and match this plot?"
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2029: does progress on site match?"
    ],
    "verified": {
     "permit": "registry",
@@ -150803,14 +154961,14 @@
    },
    "vscore": 3,
    "claims": {
-    "verified": 7,
+    "verified": 8,
     "unverified": 0,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7,
+   "profile": 8,
    "register": {
     "register": "Malaysia KPKT TEDUH register",
     "item": "advertising and sales permit",
@@ -151369,7 +155527,7 @@
    "docs": true,
    "plans": false,
    "band": "$200k to $400k",
-   "done": null,
+   "done": 2029,
    "title": null,
    "lease": null,
    "yield": null,
@@ -151401,7 +155559,8 @@
    "q": [
     "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
-    "A building permit is claimed: does it exist in the official system and match this plot?"
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2029: does progress on site match?"
    ],
    "verified": {
     "permit": "registry",
@@ -151413,14 +155572,14 @@
    },
    "vscore": 3,
    "claims": {
-    "verified": 11,
+    "verified": 12,
     "unverified": 0,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7,
+   "profile": 8,
    "register": {
     "register": "Malaysia KPKT TEDUH register",
     "item": "advertising and sales permit",
@@ -151707,7 +155866,7 @@
    "docs": true,
    "plans": false,
    "band": "Under $100k",
-   "done": null,
+   "done": 2028,
    "title": null,
    "lease": null,
    "yield": null,
@@ -151739,7 +155898,8 @@
    "q": [
     "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
-    "A building permit is claimed: does it exist in the official system and match this plot?"
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?"
    ],
    "verified": {
     "permit": "registry",
@@ -151751,14 +155911,14 @@
    },
    "vscore": 3,
    "claims": {
-    "verified": 7,
+    "verified": 8,
     "unverified": 0,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7,
+   "profile": 8,
    "register": {
     "register": "Malaysia KPKT TEDUH register",
     "item": "advertising and sales permit",
@@ -151774,7 +155934,7 @@
    "docs": true,
    "plans": false,
    "band": "$200k to $400k",
-   "done": null,
+   "done": 2028,
    "title": null,
    "lease": null,
    "yield": null,
@@ -151806,7 +155966,8 @@
    "q": [
     "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
-    "A building permit is claimed: does it exist in the official system and match this plot?"
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?"
    ],
    "verified": {
     "permit": "registry",
@@ -151818,14 +155979,14 @@
    },
    "vscore": 3,
    "claims": {
-    "verified": 7,
+    "verified": 8,
     "unverified": 0,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7,
+   "profile": 8,
    "register": {
     "register": "Malaysia KPKT TEDUH register",
     "item": "advertising and sales permit",
@@ -152588,7 +156749,7 @@
    "docs": true,
    "plans": false,
    "band": "Under $100k",
-   "done": null,
+   "done": 2029,
    "title": null,
    "lease": null,
    "yield": null,
@@ -152620,7 +156781,8 @@
    "q": [
     "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
-    "A building permit is claimed: does it exist in the official system and match this plot?"
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2029: does progress on site match?"
    ],
    "verified": {
     "permit": "registry",
@@ -152632,14 +156794,14 @@
    },
    "vscore": 3,
    "claims": {
-    "verified": 7,
+    "verified": 8,
     "unverified": 0,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7,
+   "profile": 8,
    "register": {
     "register": "Malaysia KPKT TEDUH register",
     "item": "advertising and sales permit",
@@ -152859,7 +157021,7 @@
    "docs": true,
    "plans": false,
    "band": "$100k to $200k",
-   "done": null,
+   "done": 2029,
    "title": null,
    "lease": null,
    "yield": null,
@@ -152891,7 +157053,8 @@
    "q": [
     "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
-    "A building permit is claimed: does it exist in the official system and match this plot?"
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2029: does progress on site match?"
    ],
    "verified": {
     "permit": "registry",
@@ -152903,14 +157066,14 @@
    },
    "vscore": 3,
    "claims": {
-    "verified": 10,
+    "verified": 11,
     "unverified": 0,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7,
+   "profile": 8,
    "register": {
     "register": "Malaysia KPKT TEDUH register",
     "item": "advertising and sales permit",
@@ -153198,7 +157361,7 @@
    "docs": true,
    "plans": false,
    "band": "$200k to $400k",
-   "done": null,
+   "done": 2027,
    "title": null,
    "lease": null,
    "yield": null,
@@ -153230,7 +157393,76 @@
    "q": [
     "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
-    "A building permit is claimed: does it exist in the official system and match this plot?"
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 9,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 8,
+   "register": {
+    "register": "Malaysia KPKT TEDUH register",
+    "item": "advertising and sales permit",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "MYS-171",
+   "market": "Malaysia",
+   "country": "Malaysia",
+   "region": "Malaysia",
+   "docs": true,
+   "plans": false,
+   "band": "Under $100k",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": null,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 3,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?"
    ],
    "verified": {
     "permit": "registry",
@@ -153249,74 +157481,7 @@
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7,
-   "register": {
-    "register": "Malaysia KPKT TEDUH register",
-    "item": "advertising and sales permit",
-    "status": "active",
-    "checked": "2026-11-23"
-   }
-  },
-  {
-   "id": "MYS-171",
-   "market": "Malaysia",
-   "country": "Malaysia",
-   "region": "Malaysia",
-   "docs": true,
-   "plans": false,
-   "band": "Under $100k",
-   "done": null,
-   "title": null,
-   "lease": null,
-   "yield": null,
-   "units": null,
-   "checks": {
-    "permit": 2,
-    "escrow": true,
-    "progress": null,
-    "plans": false,
-    "record": false,
-    "returns_ok": true,
-    "researched": [
-     "permit",
-     "escrow",
-     "progress",
-     "plans",
-     "record",
-     "returns_ok"
-    ]
-   },
-   "score": 3,
-   "max": 6,
-   "flags": [],
-   "notes": [],
-   "tier": "mixed",
-   "read": true,
-   "checked": "23 Nov 2026",
-   "invited": null,
-   "q": [
-    "A permit number is published: does it exist in the official register and match this plot?",
-    "Title type not stated: leasehold, freehold or a company structure?",
-    "A building permit is claimed: does it exist in the official system and match this plot?"
-   ],
-   "verified": {
-    "permit": "registry",
-    "escrow": "registry",
-    "progress": "registry",
-    "plans": "none",
-    "record": "none",
-    "returns_ok": "none"
-   },
-   "vscore": 3,
-   "claims": {
-    "verified": 7,
-    "unverified": 0,
-    "contradicted": 0
-   },
-   "stage": "under construction",
-   "delay": null,
-   "overdue": null,
-   "profile": 7,
+   "profile": 8,
    "register": {
     "register": "Malaysia KPKT TEDUH register",
     "item": "advertising and sales permit",
@@ -153332,7 +157497,7 @@
    "docs": true,
    "plans": false,
    "band": "$100k to $200k",
-   "done": null,
+   "done": 2028,
    "title": null,
    "lease": null,
    "yield": null,
@@ -153364,7 +157529,8 @@
    "q": [
     "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
-    "A building permit is claimed: does it exist in the official system and match this plot?"
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?"
    ],
    "verified": {
     "permit": "registry",
@@ -153376,14 +157542,14 @@
    },
    "vscore": 3,
    "claims": {
-    "verified": 7,
+    "verified": 8,
     "unverified": 0,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7,
+   "profile": 8,
    "register": {
     "register": "Malaysia KPKT TEDUH register",
     "item": "advertising and sales permit",
@@ -155772,7 +159938,7 @@
    "docs": true,
    "plans": false,
    "band": "$100k to $200k",
-   "done": null,
+   "done": 2030,
    "title": null,
    "lease": null,
    "yield": null,
@@ -155804,7 +159970,8 @@
    "q": [
     "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
-    "A building permit is claimed: does it exist in the official system and match this plot?"
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2030: does progress on site match?"
    ],
    "verified": {
     "permit": "registry",
@@ -155816,14 +159983,14 @@
    },
    "vscore": 3,
    "claims": {
-    "verified": 7,
+    "verified": 8,
     "unverified": 0,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7,
+   "profile": 8,
    "register": {
     "register": "Malaysia KPKT TEDUH register",
     "item": "advertising and sales permit",
@@ -155907,7 +160074,7 @@
    "docs": true,
    "plans": false,
    "band": "Under $100k",
-   "done": null,
+   "done": 2030,
    "title": null,
    "lease": null,
    "yield": null,
@@ -155939,7 +160106,8 @@
    "q": [
     "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
-    "A building permit is claimed: does it exist in the official system and match this plot?"
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2030: does progress on site match?"
    ],
    "verified": {
     "permit": "registry",
@@ -155951,14 +160119,14 @@
    },
    "vscore": 3,
    "claims": {
-    "verified": 7,
+    "verified": 8,
     "unverified": 0,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7,
+   "profile": 8,
    "register": {
     "register": "Malaysia KPKT TEDUH register",
     "item": "advertising and sales permit",
@@ -156789,7 +160957,7 @@
    "docs": true,
    "plans": false,
    "band": "Under $100k",
-   "done": null,
+   "done": 2028,
    "title": null,
    "lease": null,
    "yield": null,
@@ -156821,7 +160989,8 @@
    "q": [
     "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
-    "A building permit is claimed: does it exist in the official system and match this plot?"
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?"
    ],
    "verified": {
     "permit": "registry",
@@ -156833,14 +161002,14 @@
    },
    "vscore": 3,
    "claims": {
-    "verified": 7,
+    "verified": 8,
     "unverified": 0,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7,
+   "profile": 8,
    "register": {
     "register": "Malaysia KPKT TEDUH register",
     "item": "advertising and sales permit",
@@ -156991,7 +161160,7 @@
    "docs": true,
    "plans": false,
    "band": "$200k to $400k",
-   "done": null,
+   "done": 2028,
    "title": null,
    "lease": null,
    "yield": null,
@@ -157023,7 +161192,8 @@
    "q": [
     "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
-    "A building permit is claimed: does it exist in the official system and match this plot?"
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?"
    ],
    "verified": {
     "permit": "registry",
@@ -157035,14 +161205,14 @@
    },
    "vscore": 3,
    "claims": {
-    "verified": 7,
+    "verified": 8,
     "unverified": 0,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7,
+   "profile": 8,
    "register": {
     "register": "Malaysia KPKT TEDUH register",
     "item": "advertising and sales permit",
@@ -157602,7 +161772,7 @@
    "docs": true,
    "plans": false,
    "band": "$100k to $200k",
-   "done": null,
+   "done": 2028,
    "title": null,
    "lease": null,
    "yield": null,
@@ -157634,7 +161804,8 @@
    "q": [
     "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
-    "A building permit is claimed: does it exist in the official system and match this plot?"
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?"
    ],
    "verified": {
     "permit": "registry",
@@ -157646,14 +161817,14 @@
    },
    "vscore": 3,
    "claims": {
-    "verified": 7,
+    "verified": 8,
     "unverified": 0,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7,
+   "profile": 8,
    "register": {
     "register": "Malaysia KPKT TEDUH register",
     "item": "advertising and sales permit",
@@ -158483,7 +162654,7 @@
    "docs": true,
    "plans": false,
    "band": "Under $100k",
-   "done": null,
+   "done": 2028,
    "title": null,
    "lease": null,
    "yield": null,
@@ -158515,7 +162686,8 @@
    "q": [
     "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
-    "A building permit is claimed: does it exist in the official system and match this plot?"
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?"
    ],
    "verified": {
     "permit": "registry",
@@ -158527,14 +162699,14 @@
    },
    "vscore": 3,
    "claims": {
-    "verified": 7,
+    "verified": 8,
     "unverified": 0,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7,
+   "profile": 8,
    "register": {
     "register": "Malaysia KPKT TEDUH register",
     "item": "advertising and sales permit",
@@ -159431,7 +163603,7 @@
    "docs": true,
    "plans": false,
    "band": "Under $100k",
-   "done": null,
+   "done": 2028,
    "title": null,
    "lease": null,
    "yield": null,
@@ -159463,7 +163635,8 @@
    "q": [
     "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
-    "A building permit is claimed: does it exist in the official system and match this plot?"
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?"
    ],
    "verified": {
     "permit": "registry",
@@ -159475,14 +163648,14 @@
    },
    "vscore": 3,
    "claims": {
-    "verified": 7,
+    "verified": 8,
     "unverified": 0,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7,
+   "profile": 8,
    "register": {
     "register": "Malaysia KPKT TEDUH register",
     "item": "advertising and sales permit",
@@ -160160,6 +164333,955 @@
    },
    "stage": "under construction",
    "delay": 12.0,
+   "overdue": null,
+   "profile": 10,
+   "register": {
+    "register": "Malaysia KPKT TEDUH register",
+    "item": "advertising and sales permit",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "MYS-273",
+   "market": "Malaysia",
+   "country": "Malaysia",
+   "region": "Malaysia",
+   "docs": true,
+   "plans": false,
+   "band": "Under $100k",
+   "done": 2029,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 1200,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 20.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2029: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 6,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": 12.0,
+   "overdue": null,
+   "profile": 8,
+   "register": {
+    "register": "Malaysia KPKT TEDUH register",
+    "item": "advertising and sales permit",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "MYS-274",
+   "market": "Malaysia",
+   "country": "Malaysia",
+   "region": "Malaysia",
+   "docs": true,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 649,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 18.89,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 6,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 8,
+   "register": {
+    "register": "Malaysia KPKT TEDUH register",
+    "item": "advertising and sales permit",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "MYS-275",
+   "market": "Malaysia",
+   "country": "Malaysia",
+   "region": "Malaysia",
+   "docs": true,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 509,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 88.44,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 6,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": 12.0,
+   "overdue": null,
+   "profile": 10,
+   "register": {
+    "register": "Malaysia KPKT TEDUH register",
+    "item": "advertising and sales permit",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "MYS-276",
+   "market": "Malaysia",
+   "country": "Malaysia",
+   "region": "Malaysia",
+   "docs": true,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": null,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 3,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 7,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7,
+   "register": {
+    "register": "Malaysia KPKT TEDUH register",
+    "item": "advertising and sales permit",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "MYS-277",
+   "market": "Malaysia",
+   "country": "Malaysia",
+   "region": "Malaysia",
+   "docs": true,
+   "plans": false,
+   "band": "Under $100k",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 2432,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 85.03,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 6,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": 34.0,
+   "overdue": null,
+   "profile": 10,
+   "register": {
+    "register": "Malaysia KPKT TEDUH register",
+    "item": "advertising and sales permit",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "MYS-278",
+   "market": "Malaysia",
+   "country": "Malaysia",
+   "region": "Malaysia",
+   "docs": true,
+   "plans": false,
+   "band": "Under $100k",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 754,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 57.4,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 6,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": 12.0,
+   "overdue": null,
+   "profile": 10,
+   "register": {
+    "register": "Malaysia KPKT TEDUH register",
+    "item": "advertising and sales permit",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "MYS-279",
+   "market": "Malaysia",
+   "country": "Malaysia",
+   "region": "Malaysia",
+   "docs": true,
+   "plans": false,
+   "band": "Under $100k",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": null,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 3,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 7,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7,
+   "register": {
+    "register": "Malaysia KPKT TEDUH register",
+    "item": "advertising and sales permit",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "MYS-280",
+   "market": "Malaysia",
+   "country": "Malaysia",
+   "region": "Malaysia",
+   "docs": true,
+   "plans": false,
+   "band": "Under $100k",
+   "done": 2029,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 616,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 15.45,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2029: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 6,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 8,
+   "register": {
+    "register": "Malaysia KPKT TEDUH register",
+    "item": "advertising and sales permit",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "MYS-281",
+   "market": "Malaysia",
+   "country": "Malaysia",
+   "region": "Malaysia",
+   "docs": true,
+   "plans": false,
+   "band": "Under $100k",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 1171,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 0.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 6,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 7,
+   "register": {
+    "register": "Malaysia KPKT TEDUH register",
+    "item": "advertising and sales permit",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "MYS-282",
+   "market": "Malaysia",
+   "country": "Malaysia",
+   "region": "Malaysia",
+   "docs": true,
+   "plans": false,
+   "band": "Under $100k",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 544,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 5.0,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 6,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 8,
+   "register": {
+    "register": "Malaysia KPKT TEDUH register",
+    "item": "advertising and sales permit",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "MYS-283",
+   "market": "Malaysia",
+   "country": "Malaysia",
+   "region": "Malaysia",
+   "docs": true,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 421,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 32.08,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2028: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 6,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": 12.0,
+   "overdue": null,
+   "profile": 10,
+   "register": {
+    "register": "Malaysia KPKT TEDUH register",
+    "item": "advertising and sales permit",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "MYS-284",
+   "market": "Malaysia",
+   "country": "Malaysia",
+   "region": "Malaysia",
+   "docs": true,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 671,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 97.5,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 7,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": 12.0,
+   "overdue": null,
+   "profile": 10,
+   "register": {
+    "register": "Malaysia KPKT TEDUH register",
+    "item": "advertising and sales permit",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "MYS-285",
+   "market": "Malaysia",
+   "country": "Malaysia",
+   "region": "Malaysia",
+   "docs": true,
+   "plans": false,
+   "band": "Under $100k",
+   "done": 2024,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 4040,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 20.95,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2024: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 6,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": 31,
+   "profile": 8,
+   "register": {
+    "register": "Malaysia KPKT TEDUH register",
+    "item": "advertising and sales permit",
+    "status": "active",
+    "checked": "2026-11-23"
+   }
+  },
+  {
+   "id": "MYS-286",
+   "market": "Malaysia",
+   "country": "Malaysia",
+   "region": "Malaysia",
+   "docs": true,
+   "plans": false,
+   "band": "Under $100k",
+   "done": 2026,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 1443,
+   "checks": {
+    "permit": 2,
+    "escrow": true,
+    "progress": 26.75,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 4,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "clear",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2026: does progress on site match?"
+   ],
+   "verified": {
+    "permit": "registry",
+    "escrow": "registry",
+    "progress": "registry",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 3,
+   "claims": {
+    "verified": 6,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": 31.0,
    "overdue": null,
    "profile": 10,
    "register": {
@@ -223538,40 +228660,40 @@
  ],
  "db": {
   "updated": "2026-11-23",
-  "projects": 3363,
+  "projects": 3438,
   "markets": 191,
   "countries": 94,
-  "sources": 9581,
-  "data_points": 85906,
+  "sources": 9658,
+  "data_points": 87902,
   "claims": {
-   "verified": 11957,
+   "verified": 12398,
    "unverified": 10725,
    "contradicted": 1370
   },
-  "claims_total": 24052,
-  "deep_profiles": 3363,
+  "claims_total": 24493,
+  "deep_profiles": 3438,
   "checks_by_level": {
-   "registry": 4101,
+   "registry": 4326,
    "independent": 482,
    "developer": 2022,
    "contradicted": 103,
-   "none": 13470
+   "none": 13695
   },
-  "checks_rated": 20178,
+  "checks_rated": 20628,
   "stages": {
-   "off-plan": 1168,
-   "under construction": 2132,
+   "off-plan": 1180,
+   "under construction": 2195,
    "completed": 17
   },
   "all_six_public": 70,
   "with_flags": 46,
-  "overdue": 46,
-  "overdue_avg_months": 6.2,
-  "delayed": 285,
+  "overdue": 47,
+  "overdue_avg_months": 6.8,
+  "delayed": 296,
   "changes_detected": 564,
   "sat_watched": 93,
   "sat_no_change": 26,
-  "register_watched": 1336
+  "register_watched": 1411
  },
  "seal": {
   "date": "2026-11-23",

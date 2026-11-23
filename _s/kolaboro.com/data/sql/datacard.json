@@ -5,7 +5,7 @@
  "licence": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
  "source": {
   "file": "/data/named.json",
-  "sha256": "51973ec0d513b64630a1805493f31916b9e43162ef3b3c3380f9c8b6b60773cf",
+  "sha256": "1d424227b28a1af0cc51617a1f22e7ee28c14746d6fa54febae090c9f40e4801",
   "published": "2026-11-23",
   "snapshots": "/data/snapshots/"
  },
@@ -17,16 +17,16 @@
   {
    "table": "projects",
    "description": "One row per tracked off-plan project",
-   "rows": 3358,
+   "rows": 3433,
    "parquet": {
     "path": "/data/sql/projects.parquet",
-    "bytes": 525704,
-    "sha256": "c0cab817c36001561966973cef39e24f30057d47f512b30e4d081e659bc9fb32"
+    "bytes": 535203,
+    "sha256": "3f683ae10b27c8a920b9b2863b7580092f53570d068764e1146a66b229e88afa"
    },
    "csv": {
     "path": "/data/sql/projects.csv",
-    "bytes": 1859357,
-    "sha256": "43f846d6c3473631fd7b37fbdba667f9e782b1a25367712371a80a135baa8db0"
+    "bytes": 1902578,
+    "sha256": "8c53f3657d57c6b034e9bda8c3644ab4d81316d7faaeb78acddeead0838bf308"
    },
    "columns": [
     {
@@ -279,16 +279,16 @@
   {
    "table": "claims",
    "description": "One row per developer claim and how it was checked",
-   "rows": 23706,
+   "rows": 24147,
    "parquet": {
     "path": "/data/sql/claims.parquet",
-    "bytes": 789136,
-    "sha256": "95365da34f66794e19009a7475b51f901fbbd529b154090da721a0770f7b493c"
+    "bytes": 799589,
+    "sha256": "99e57202e2332d72703d631a106fd4ef88de04d134a3bd183eb1b6bfa43edf7b"
    },
    "csv": {
     "path": "/data/sql/claims.csv",
-    "bytes": 5888906,
-    "sha256": "cea295adc83e48131afd880e1c246ad4dc73b9c922d1c7264dae7df816679836"
+    "bytes": 6007192,
+    "sha256": "91a92bbccab065e909169bbb7c4d60bf88ccac123cc578569500a3a3c8ab8597"
    },
    "columns": [
     {
@@ -339,13 +339,13 @@
    "rows": 191,
    "parquet": {
     "path": "/data/sql/markets.parquet",
-    "bytes": 8194,
-    "sha256": "3cd62884d208e137a590a6d2214858af0a004bc22d800b46336afa640e3b7518"
+    "bytes": 8191,
+    "sha256": "be377907eec4bfacbc88a5eff0beecb17cf99251b1f371a092f601530aa5676a"
    },
    "csv": {
     "path": "/data/sql/markets.csv",
-    "bytes": 7967,
-    "sha256": "ebcf71b28a08643da0269526d33ee9e480f697a1e2acc549fb98429fe5533535"
+    "bytes": 7969,
+    "sha256": "89e8cc46639e7844211fd6f769b8ef352d51c77d91e264a8bac2cbe9e9cba41a"
    },
    "columns": [
     {

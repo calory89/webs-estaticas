@@ -157,9 +157,31 @@ def kp_build(named):
     res['n'] = len(out)
     return res
 
+# r11p (23 Nov 2026): the units field for Malaysian records comes from the KPKT TEDUH register units (sum of the register
+# entries on the record) when the record holds no DLD unit count, with the register page as source and its read date.
+KP = kp_build(named); UI = F.index('un'); kp_units = 0
+for r in rows:
+    if r[8][UI]: continue
+    L = [e for e in KP['p'].get(r[1], []) if e.get('un')]
+    if not L: continue
+    r[8][UI] = [sum(e['un'] for e in L), L[0].get('u') or KP['src'], 'reg', L[0].get('d') or '']
+    r[7] = ''.join('1' if r[8][i] else '0' for i in range(len(F))); kp_units += 1
+# and construction % from the register entries' per-component progress (latest 7(f) report) when no DLD reading is held
+CI = F.index('cp'); kp_cp = 0
+for r in rows:
+    if r[8][CI]: continue
+    L = [e for e in KP['p'].get(r[1], []) if e.get('pc')]
+    if not L: continue
+    v = sorted({x for e in L for x in e['pc']})
+    r[8][CI] = [('%g%%' % v[0]) if len(v) == 1 else ('%g%% to %g%%' % (v[0], v[-1])), L[0].get('u') or KP['src'], 'reg', L[0].get('d') or '']
+    r[7] = ''.join('1' if r[8][i] else '0' for i in range(len(F))); kp_cp += 1
+print('construction % from the KPKT register:', kp_cp, 'records')
+for m, rs in by.items():
+    if m in mk: mk[m]['cov'] = [round(100 * sum(r[7][i] == '1' for r in rs) / len(rs)) for i in range(len(F))]; mk[m]['med'] = statistics.median([r[7].count('1') for r in rs])
 out = {'v': 'n37u-2', 'built': named.get('updated') or '', 'from': ['named.json', 'construction-progress.json', 'court-cases.json', 'register-checks.json'],
        'f': F, 'p': [r[:9] for r in rows], 'mk': mk, 'rg': rg, 'co': {r[0]: r[9] for r in rows},
-       'n': len(rows), 'known': [sum(r[7][i] == '1' for r in rows) for i in range(len(F))], 'kp': kp_build(named)}
+       'n': len(rows), 'known': [sum(r[7][i] == '1' for r in rows) for i in range(len(F))], 'kp': KP}
+print('units from the KPKT register:', kp_units, 'records')
 json.dump(out, open(os.path.join(D, 'n37u.json'), 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
 print('n37u.json', len(rows), 'projects,', len(mk), 'markets,', sum(len(v) for v in rg.values()), 'registers; held per field:', dict(zip(F, out['known'])))
 print('kp (Malaysian register):', out['kp']['n'], 'projects,', sum(len(v) for v in out['kp']['p'].values()), 'entries')

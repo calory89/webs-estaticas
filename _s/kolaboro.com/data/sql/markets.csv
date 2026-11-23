@@ -1,10 +1,10 @@
 market,country,projects,with_permit_number,with_handover_date,overdue,claims,claims_contradicted,reviewed,median_price_per_m2_min,price_per_m2_sample
-Dubai,UAE,948,930,935,8,8152,90,927,19782.0,786
-Malaysia,Malaysia,272,254,208,6,2033,26,218,11358.2,45
+Dubai,UAE,1004,986,991,8,8450,90,983,19606.1,827
+Malaysia,Malaysia,286,268,240,7,2141,26,232,11358.2,45
 Bali,Indonesia,136,1,122,25,1074,168,24,3494.2,122
 Riviera Maya,Mexico,122,0,109,0,328,38,7,3793.7,116
 Istanbul,Turkey,120,6,118,0,833,22,3,3554.1,106
-Kuala Lumpur,Malaysia,104,86,91,1,789,2,65,10950.0,35
+Kuala Lumpur,Malaysia,109,91,100,1,824,2,70,10950.0,35
 Spain,Spain,83,2,11,0,335,6,2,2875.8,50
 Phuket,Thailand,76,17,71,7,528,23,6,110000.0,67
 Miami,USA,59,31,46,0,298,22,5,15831.7,21
