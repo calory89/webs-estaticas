@@ -9,6 +9,8 @@
 //   r4u (round 4): fact timeline per record (#timeline, /data/n37u-tl.json from /open/n37u-tl-build.py over the daily copies of
 //   named.json), the latest change on project pages, /<lang>/developers/, /<lang>/engineering/, /<lang>/yc/ (were 404),
 //   GET /m/<market>/slugs.json (the id-to-page map that used to ride inside every market page), row counts on /<lang>/data/
+//   r6u (round 6): handover dates moved per developer (developer pages, #n37-track), /[l/]data/changes/week/ (the last 7 days by market),
+//   GET /data/changes/feed.atom[?m=<market>], named region, list and nav landmark for the key-fact groups and link row
 // Sumba, Eco Beach City and Equinox are left out by the build.
 import * as N from './kbx_named.js';
 
@@ -47,7 +49,7 @@ const recU = (l, s) => pre(l) + '/projects/' + s + '/record/';
 const cnt = r => r[7].split('1').length - 1;
 const LP = '(?:(es|de|fr|nl|ru|zh|ar)\\/)?';
 const RX_REC = new RegExp('^\\/' + LP + 'projects\\/([a-z0-9-]{1,90})\\/record(\\/?)$'), RX_GAP = new RegExp('^\\/' + LP + 'data\\/gaps(\\/?)$'), RX_JS = /^\/projects\/([a-z0-9-]{1,90})\/record\.json$/;
-export const PATHS = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:projects\/[a-z0-9-]{1,90}\/(?:record|brief)|data\/(?:gaps|changes))\/?$|^\/data\/n37u-se\.json$|^\/(?:es|de|fr|nl|ru|zh|ar)\/(?:data|developers|engineering|yc)\/?$|^\/m\/[^/]{2,120}\/slugs\.json$|^\/projects\/[a-z0-9-]{1,90}\/record\.json$|^\/data\/gaps\.csv$/;
+export const PATHS = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:projects\/[a-z0-9-]{1,90}\/(?:record|brief)|data\/(?:gaps|changes|changes\/week))\/?$|^\/data\/n37u-se\.json$|^\/data\/changes\/feed\.atom$|^\/(?:es|de|fr|nl|ru|zh|ar)\/(?:data|developers|engineering|yc)\/?$|^\/m\/[^/]{2,120}\/slugs\.json$|^\/projects\/[a-z0-9-]{1,90}\/record\.json$|^\/data\/gaps\.csv$/;
 export const INJ = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:(?:projects\/[a-z0-9-]{1,90}|engineering|yc|data|data\/dictionary|registers|search|m\/[^/.]{2,60}|developers\/[a-z0-9-]{2,90})\/)?$/;
 
 const CSS = '<style id="n37u-css">.n37{max-width:1100px}.n37 h2{margin:28px 0 8px;font-size:1.3rem}.n37 p,.n37 li{line-height:1.6}.n37 .k-xs{font-size:.9rem;color:var(--k-muted,#56636F)}' +
@@ -70,6 +72,7 @@ async function page(shell, l, o) {
   const desc = o.lead.length > 155 ? o.lead.slice(0, 152).replace(/\s+\S*$/, '') + '…' : o.lead;
   let html = await N.assemble({ title: (o.h1.length > 56 ? o.h1.slice(0, 56).replace(/\s+\S*$/, '') : o.h1) + ' | Kolaboro', desc, canon, body, ld, alt: x => ORIGIN + pre(x) + o.path }, l, await shell(pre(l) + '/how-we-score/'));
   const h = { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=900', 'content-language': l };
+  if (o.head) html = html.replace('</head>', o.head + '</head>');   // r6u
   if (o.noindex) { html = html.replace('</head>', '<meta name="robots" content="noindex, follow"></head>'); h['x-robots-tag'] = 'noindex, follow'; }
   return new Response(html, { status: 200, headers: h });
 }
@@ -80,7 +83,7 @@ const OLD = 180;
 const median = a => { const b = a.slice().sort((x, y) => x - y), n = b.length; return n ? (n % 2 ? b[(n - 1) / 2] : (b[n / 2 - 1] + b[n / 2]) / 2) : 0; };
 const badge = (l, k) => '<span class="n37-b ' + k + '">' + esc(t(l, 'k_' + k)) + '</span>';
 const regsFor = r => (D.rg[r[3]] || D.rg[(D.co[r[0]] === 'USA' ? 'United States' : D.co[r[0]])] || []);
-const relTable = (l, rows) => '<div class="n37-tw" tabindex="0"><table><thead><tr><th scope="col">' + esc(t(l, 'th_p')) + '</th><th scope="col">' + esc(t(l, 'th_k')) + '</th></tr></thead><tbody>' +
+const relTable = (l, rows) => '<div class="n37-tw" tabindex="0" role="region" aria-label="' + esc(t(l, 'tw_l')) + '"><table><thead><tr><th scope="col">' + esc(t(l, 'th_p')) + '</th><th scope="col">' + esc(t(l, 'th_k')) + '</th></tr></thead><tbody>' +
   rows.map(r => '<tr><th scope="row"><a href="' + recU(l, r[1]) + '">' + bdi(r[2]) + '</a></th><td class="n">' + nf(cnt(r), l) + ' / 10</td></tr>').join('') + '</tbody></table></div>';
 
 // r4u: fact timeline. TL.p[slug][field] = [[day index, value or null], ...] from the daily copies; today's value comes from D
@@ -114,7 +117,7 @@ function tlSection(l, r) {
   let b = '<h2 id="timeline">' + esc(t(l, 'tl_h')) + '</h2><p>' + esc(tf(l, 'tl_p', { a, b: z })) + '</p>';
   if (!ev) b += '<p>' + esc(tf(l, 'tl_none', { b: z })) + '</p>';
   else {
-    b += '<div class="n37-tw" tabindex="0"><table><thead><tr><th scope="col">' + esc(t(l, 'th_f')) + '</th><th scope="col">' + esc(t(l, 'tl_d')) + '</th><th scope="col">' + esc(t(l, 'tl_th')) + '</th><th scope="col">' + esc(t(l, 'th_v')) + '</th></tr></thead><tbody>' +
+    b += '<div class="n37-tw" tabindex="0" role="region" aria-label="' + esc(t(l, 'tw_l')) + '"><table><thead><tr><th scope="col">' + esc(t(l, 'th_f')) + '</th><th scope="col">' + esc(t(l, 'tl_d')) + '</th><th scope="col">' + esc(t(l, 'tl_th')) + '</th><th scope="col">' + esc(t(l, 'th_v')) + '</th></tr></thead><tbody>' +
       ev.map(x => '<tr><th scope="row">' + fname(l, x.f) + '</th><td class="n">' + esc(fd(x.d, l)) + '</td><td>' + esc(t(l, x.e)) + '</td><td class="n37-v">' + (x.v == null ? '' : bdi(tv(x.v, l))) + '</td></tr>').join('') + '</tbody></table></div>';
     const ch = [...new Set(ev.filter(x => x.e === 'tl_e2' || x.e === 'tl_e3').map(x => x.f))].map(f => t(l, 'f_' + f));
     b += '<p>' + esc(ch.length ? tf(l, ch.length === 1 ? 'tl_c1' : 'tl_cn', { n: nf(ch.length, l), f: ch.join(', ') }) : t(l, 'tl_c0')) + '</p>';
@@ -131,7 +134,7 @@ function latestChange(r) {
 async function recPage(env, shell, l, r) {
   const F = D.f, P = pre(l), k = cnt(r), m = D.mk[r[3]];
   let b = '<p><a href="' + P + '/projects/' + r[1] + '/">' + esc(t(l, 'back')) + '</a> · <b>' + esc(tf(l, 'held', { k: nf(k, l) })) + '</b> · <a href="/projects/' + r[1] + '/record.json" type="application/json">' + esc(t(l, 'js_l')) + '</a> · <a href="' + P + '/projects/' + r[1] + '/brief/">' + esc(t(l, 'a_br')) + '</a></p>';
-  b += '<h2 id="fields">' + esc(t(l, 'r_tbl')) + '</h2><div class="n37-tw" tabindex="0"><table><thead><tr><th scope="col">' + esc(t(l, 'th_f')) + '</th><th scope="col">' + esc(t(l, 'th_v')) + '</th><th scope="col">' + esc(t(l, 'th_s')) + '</th><th scope="col">' + esc(t(l, 'th_d')) + '</th><th scope="col">' + esc(t(l, 'th_age')) + '</th></tr></thead><tbody>' +
+  b += '<h2 id="fields">' + esc(t(l, 'r_tbl')) + '</h2><div class="n37-tw" tabindex="0" role="region" aria-label="' + esc(t(l, 'tw_l')) + '"><table><thead><tr><th scope="col">' + esc(t(l, 'th_f')) + '</th><th scope="col">' + esc(t(l, 'th_v')) + '</th><th scope="col">' + esc(t(l, 'th_s')) + '</th><th scope="col">' + esc(t(l, 'th_d')) + '</th><th scope="col">' + esc(t(l, 'th_age')) + '</th></tr></thead><tbody>' +
     F.map((f, i) => { const c = r[8][i]; if (!c) return '<tr><th scope="row">' + fname(l, f) + '</th><td>' + esc(t(l, 'none')) + '</td><td><span class="n37-b no">' + esc(t(l, 'none')) + '</span></td><td></td><td></td></tr>';
       const ag = f === 'ct' ? null : ageOf(c[3]);
       const v = f === 'ct' ? nf(c[0], l) : String(c[0]), u = c[1], src = u ? '<a href="' + esc(u) + '"' + (/^https?:/.test(u) ? ' rel="nofollow noopener"' : '') + '>' + esc(/^https?:/.test(u) ? host(u) : u) + '</a>' : '<a href="' + P + '/projects/' + r[1] + '/#sources">' + esc(t(l, 'rec_n')) + '</a>';
@@ -146,11 +149,12 @@ async function recPage(env, shell, l, r) {
     return '<li><b>' + fname(l, f) + '.</b> ' + esc(t(l, 'ask_' + f)) + (rr.length ? '<ul>' + rr.map(g => '<li>' + esc(t(l, 'g_reg')) + ': ' + (g[1] ? '<a href="' + esc(g[1]) + '" rel="nofollow noopener">' + bdi(g[0]) + '</a>' : bdi(g[0])) + (g[4] ? ' <span class="k-xs">(' + esc(tf(l, 'g_probe', { d: fd(g[4], l) })) + ')</span>' : '') + '</li>').join('') + '</ul>' : (['pn', 'co', 'es', 'reg'].includes(f) ? ' <span class="k-xs">' + esc(tf(l, 'g_noreg', { m: r[3] })) + '</span>' : '')) + '</li>'; }).join('') + '</ol><p><a href="' + P + '/projects/' + r[1] + '/#ask">' + esc(t(l, 'q_link')) + '</a></p>';
   if (m) {
     const more = D.p.filter(x => x[3] === r[3] && cnt(x) > k).length;
-    b += '<h2 id="market">' + esc(tf(l, 'm_h', { m: r[3] })) + '</h2><p>' + esc(tf(l, 'm_p', { k: nf(k, l), m: r[3], md: nf(m.med, l), n: nf(m.n, l) }) + ' ' + tf(l, more === 0 ? 'm_r0' : more === 1 ? 'm_r1' : 'm_rn', { r: nf(more, l) })) + '</p><div class="n37-tw" tabindex="0"><table><thead><tr><th scope="col">' + esc(t(l, 'th_f')) + '</th><th scope="col">' + esc(t(l, 'm_th2')) + '</th><th scope="col">' + esc(tf(l, 'm_th3', { m: r[3] })) + '</th></tr></thead><tbody>' +
+    b += '<h2 id="market">' + esc(tf(l, 'm_h', { m: r[3] })) + '</h2><p>' + esc(tf(l, 'm_p', { k: nf(k, l), m: r[3], md: nf(m.med, l), n: nf(m.n, l) }) + ' ' + tf(l, more === 0 ? 'm_r0' : more === 1 ? 'm_r1' : 'm_rn', { r: nf(more, l) })) + '</p><div class="n37-tw" tabindex="0" role="region" aria-label="' + esc(t(l, 'tw_l')) + '"><table><thead><tr><th scope="col">' + esc(t(l, 'th_f')) + '</th><th scope="col">' + esc(t(l, 'm_th2')) + '</th><th scope="col">' + esc(tf(l, 'm_th3', { m: r[3] })) + '</th></tr></thead><tbody>' +
       F.map((f, i) => '<tr><th scope="row">' + fname(l, f) + '</th><td>' + esc(t(l, r[7][i] === '1' ? 'yes' : 'no')) + '</td><td class="n">' + bdi(nf(m.cov[i], l) + '%') + '</td></tr>').join('') + '</tbody></table></div>';
   }
   const sd = (IX.byDev.get(r[5]) || []).filter(x => x !== r).sort((a, c) => cnt(c) - cnt(a)).slice(0, 12);
   if (r[5] && sd.length) b += '<h2 id="developer">' + esc(tf(l, 'd_h', { d: r[6] })) + '</h2>' + relTable(l, sd);
+  { const k = r[5] && devTrack(r[5]); if (k) b += '<p><a href="' + pre(l) + '/developers/' + r[5] + '/#n37-track">' + esc(tf(l, 'tr_rec', { d: r[6] || r[5], p: nf(k.p, l), t: nf(k.th.length, l) })) + '</a></p>'; }   // r6u
   const sa = (IX.byAr.get(r[3] + '|' + r[4]) || []).filter(x => x !== r && !sd.includes(x)).sort((a, c) => cnt(c) - cnt(a)).slice(0, 12);
   if (r[4] && sa.length) b += '<h2 id="area">' + esc(tf(l, 'a_h', { a: r[4] })) + '</h2>' + relTable(l, sa);
   b += '<p><a href="' + P + '/data/gaps/">' + esc(t(l, 'gp_link')) + '</a> · <a href="' + P + '/data/changes/">' + esc(t(l, 'ch_h1')) + '</a></p>';
@@ -159,15 +163,15 @@ async function recPage(env, shell, l, r) {
 
 async function gapPage(env, shell, l) {
   const F = D.f, P = pre(l), M = Object.entries(D.mk).filter(([, v]) => v.n >= 10).sort((a, b) => b[1].n - a[1].n);
-  let b = '<h2>' + esc(t(l, 'gp_fields')) + '</h2><div class="n37-tw" tabindex="0"><table><thead><tr><th scope="col">' + esc(t(l, 'gp_m')) + '</th><th scope="col">' + esc(t(l, 'gp_n')) + '</th><th scope="col">' + esc(t(l, 'gp_md')) + '</th>' + F.map(f => '<th scope="col">' + fname(l, f) + '</th>').join('') + '</tr></thead><tbody>' +
+  let b = '<h2>' + esc(t(l, 'gp_fields')) + '</h2><div class="n37-tw" tabindex="0" role="region" aria-label="' + esc(t(l, 'tw_l')) + '"><table><thead><tr><th scope="col">' + esc(t(l, 'gp_m')) + '</th><th scope="col">' + esc(t(l, 'gp_n')) + '</th><th scope="col">' + esc(t(l, 'gp_md')) + '</th>' + F.map(f => '<th scope="col">' + fname(l, f) + '</th>').join('') + '</tr></thead><tbody>' +
     '<tr><th scope="row">' + esc(tf(l, 'gp_all', { n: nf(D.n, l) })) + '</th><td class="n">' + nf(D.n, l) + '</td><td></td>' + D.known.map(k => '<td class="n">' + bdi(nf(Math.round(100 * k / D.n), l) + '%') + '</td>').join('') + '</tr>' +
     M.map(([m, v]) => '<tr><th scope="row">' + bdi(m) + '</th><td class="n">' + nf(v.n, l) + '</td><td class="n">' + nf(v.med, l) + '</td>' + v.cov.map(c => '<td class="n">' + bdi(nf(c, l) + '%') + '</td>').join('') + '</tr>').join('') + '</tbody></table></div><p><a href="/data/gaps.csv" download>' + esc(t(l, 'csv_l')) + '</a></p>';
   const H = Array(11).fill(0); for (const x of D.p) H[cnt(x)]++;
   const mx = Math.max.apply(null, H) || 1, five = H.slice(5).reduce((a, c) => a + c, 0), md = median(D.p.map(cnt));
   const svg = '<svg class="n37-ds" viewBox="0 0 440 170" role="img" aria-labelledby="ds-s" focusable="false">' + H.map((c, i) => { const h = Math.round(120 * c / mx), x = 8 + i * 39; return '<rect x="' + x + '" y="' + (140 - h) + '" width="30" height="' + h + '" fill="currentColor" rx="2"></rect><text x="' + (x + 15) + '" y="' + (134 - h) + '" text-anchor="middle">' + nf(c, l) + '</text><text x="' + (x + 15) + '" y="158" text-anchor="middle">' + i + '</text>'; }).join('') + '</svg>';
   b += '<h2 id="dist">' + esc(t(l, 'ds_h')) + '</h2><p id="ds-s">' + esc(tf(l, 'ds_sum', { a: nf(five, l), n: nf(D.n, l), p: nf(Math.round(100 * five / D.n), l), md: nf(md, l), z: nf(H[0], l) })) + '</p>' + svg + '<p class="k-xs">' + esc(t(l, 'ds_p')) + '</p>' +
-    '<div class="n37-tw" tabindex="0"><table><thead><tr><th scope="col">' + esc(t(l, 'ds_th1')) + '</th>' + H.map((c, i) => '<th scope="col" class="n">' + i + '</th>').join('') + '</tr></thead><tbody><tr><th scope="row">' + esc(t(l, 'ds_th2')) + '</th>' + H.map(c => '<td class="n">' + nf(c, l) + '</td>').join('') + '</tr></tbody></table></div>';
-  b += '<h2>' + esc(t(l, 'gp_reg_h')) + '</h2><p>' + esc(t(l, 'gp_reg_p')) + '</p><div class="n37-tw" tabindex="0"><table><thead><tr><th scope="col">' + esc(t(l, 'gp_m')) + '</th><th scope="col">' + esc(t(l, 'g_reg')) + '</th><th scope="col">' + esc(t(l, 'th_f')) + '</th></tr></thead><tbody>' +
+    '<div class="n37-tw" tabindex="0" role="region" aria-label="' + esc(t(l, 'tw_l')) + '"><table><thead><tr><th scope="col">' + esc(t(l, 'ds_th1')) + '</th>' + H.map((c, i) => '<th scope="col" class="n">' + i + '</th>').join('') + '</tr></thead><tbody><tr><th scope="row">' + esc(t(l, 'ds_th2')) + '</th>' + H.map(c => '<td class="n">' + nf(c, l) + '</td>').join('') + '</tr></tbody></table></div>';
+  b += '<h2>' + esc(t(l, 'gp_reg_h')) + '</h2><p>' + esc(t(l, 'gp_reg_p')) + '</p><div class="n37-tw" tabindex="0" role="region" aria-label="' + esc(t(l, 'tw_l')) + '"><table><thead><tr><th scope="col">' + esc(t(l, 'gp_m')) + '</th><th scope="col">' + esc(t(l, 'g_reg')) + '</th><th scope="col">' + esc(t(l, 'th_f')) + '</th></tr></thead><tbody>' +
     Object.entries(D.rg).map(([m, rs]) => rs.filter(g => g[2].length).map(g => '<tr><th scope="row">' + bdi(m) + '</th><td>' + (g[1] ? '<a href="' + esc(g[1]) + '" rel="nofollow noopener">' + bdi(g[0]) + '</a>' : bdi(g[0])) + '</td><td>' + g[2].map(f => esc(t(l, 'f_' + f))).join(', ') + '</td></tr>').join('')).join('') + '</tbody></table></div>';
   b += '<h2>' + esc(t(l, 'gp_thin_h')) + '</h2><p>' + esc(t(l, 'gp_thin_p')) + '</p>' + M.slice(0, 8).map(([m]) => '<h3>' + bdi(m) + '</h3><ul class="n37-rel">' + D.p.filter(x => x[3] === m).sort((a, c) => cnt(a) - cnt(c) || a[0].localeCompare(c[0])).slice(0, 5).map(x => '<li><a href="' + recU(l, x[1]) + '">' + bdi(x[2]) + '</a>&nbsp;<span class="k-xs">' + nf(cnt(x), l) + '/10</span></li>').join('') + '</ul>').join('');
   return page(shell, l, { path: '/data/gaps/', h1: t(l, 'gp_h1'), lead: t(l, 'gp_lead'), body: b, crumb: [[t(l, 'data'), pre(l) + '/data/']] });
@@ -206,18 +210,18 @@ function mkSection(l, m) {
   const rows = IX.byMk.get(m) || []; if (rows.length < 3) return '';
   const F = D.f, c = factCounts(rows), byK = rows.slice().sort((a, b) => cnt(b) - cnt(a) || a[2].localeCompare(b[2]));
   let b = '<section class="wrap n37" id="n37-facts"' + dir(l) + '>' + (l === 'en' ? '' : CSSL) + '<h2>' + esc(tf(l, 'mk_h', { m })) + '</h2><p>' + esc(tf(l, 'mk_p', { n: nf(rows.length, l), m })) + '</p>' +
-    '<div class="n37-tw" tabindex="0"><table><thead><tr><th scope="col">' + esc(t(l, 'th_f')) + '</th><th scope="col">' + esc(t(l, 'th_hold')) + '</th><th scope="col">' + esc(t(l, 'th_here')) + '</th><th scope="col">' + esc(t(l, 'th_all')) + '</th></tr></thead><tbody>' +
+    '<div class="n37-tw" tabindex="0" role="region" aria-label="' + esc(t(l, 'tw_l')) + '"><table><thead><tr><th scope="col">' + esc(t(l, 'th_f')) + '</th><th scope="col">' + esc(t(l, 'th_hold')) + '</th><th scope="col">' + esc(t(l, 'th_here')) + '</th><th scope="col">' + esc(t(l, 'th_all')) + '</th></tr></thead><tbody>' +
     F.map((f, i) => '<tr><th scope="row">' + fname(l, f).replace(/ title="[^"]*"/, '') + '</th><td class="n">' + nf(c.h[i], l) + ' / ' + nf(rows.length, l) + '</td><td class="n">' + bdi(nf(share(c.h[i], rows.length), l) + '%') + '</td><td class="n">' + bdi(nf(share(D.known[i], D.n), l) + '%') + '</td></tr>').join('') + '</tbody></table></div>' +
     '<p>' + esc(tf(l, 'mk_src', { k: nf(c.all, l), r: nf(c.k.r, l), d: nf(c.k.d, l), w: nf(c.k.w, l), o: nf(c.k.o, l) })) + '</p>' +
     '<h3>' + esc(t(l, 'mk_best')) + '</h3>' + recList(l, byK.slice(0, 5)) + '<h3>' + esc(t(l, 'mk_thin')) + '</h3>' + recList(l, byK.slice(-5).reverse()) +
-    '<p><a href="' + pre(l) + '/data/gaps/">' + esc(t(l, 'gp_link')) + '</a> · <a href="/data/gaps.csv" download>' + esc(t(l, 'csv_l')) + '</a></p></section>';
+    '<p><a href="' + pre(l) + '/data/gaps/">' + esc(t(l, 'gp_link')) + '</a> · <a href="' + pre(l) + '/data/changes/week/#mk-' + slugM(m) + '">' + esc(t(l, 'wk_h1')) + '</a></p></section>';   // r6u: the CSV link stays on /data/gaps/
   return b;
 }
 function devSection(l, slug) {
   const rows = IX.byDev.get(slug) || []; if (!rows.length) return '';
   const F = D.f, c = factCounts(rows), name = rows[0][6] || slug, thin = rows.slice().sort((a, b) => cnt(a) - cnt(b) || a[2].localeCompare(b[2])).slice(0, 8);
-  return '<div class="n37" id="n37-dev"' + dir(l) + '>' + CSSL + '<h3>' + esc(t(l, 'dv_h')) + '</h3><p>' + esc(tf(l, 'dv_p', { n: nf(rows.length, l), d: name })) + '</p>' +
-    '<div class="n37-tw" tabindex="0"><table><thead><tr><th scope="col">' + esc(t(l, 'th_f')) + '</th><th scope="col">' + esc(t(l, 'th_hold')) + '</th><th scope="col">' + esc(t(l, 'th_regs')) + '</th></tr></thead><tbody>' +
+  return '<div class="n37" id="n37-dev"' + dir(l) + '>' + CSSL + trackSection(l, slug) + '<h3>' + esc(t(l, 'dv_h')) + '</h3><p>' + esc(tf(l, 'dv_p', { n: nf(rows.length, l), d: name })) + '</p>' +
+    '<div class="n37-tw" tabindex="0" role="region" aria-label="' + esc(t(l, 'tw_l')) + '"><table><thead><tr><th scope="col">' + esc(t(l, 'th_f')) + '</th><th scope="col">' + esc(t(l, 'th_hold')) + '</th><th scope="col">' + esc(t(l, 'th_regs')) + '</th></tr></thead><tbody>' +
     F.map((f, i) => '<tr><th scope="row">' + fname(l, f) + '</th><td class="n">' + nf(c.h[i], l) + ' / ' + nf(rows.length, l) + '</td><td class="n">' + nf(c.g[i], l) + '</td></tr>').join('') + '</tbody></table></div>' +
     '<h3>' + esc(t(l, 'dv_list')) + '</h3>' + recList(l, thin) + '</div>';
 }
@@ -238,7 +242,7 @@ const DS = [['ds1', 'bali-cases'], ['ds2', 'kolaboro-parquet'], ['ds3', 'kolabor
 const sz = (b, l) => b >= 1048576 ? nf(Math.round(b / 104857.6) / 10, l) + ' MB' : nf(Math.max(1, Math.round(b / 1024)), l) + ' KB';
 async function dataHub(env, shell, l) {
   const C = await file(env, '/data/catalog.json'), by = new Map(((C && C.datasets) || []).map(x => [x.id, x]));
-  let b = '<h2>' + esc(t(l, 'dh_main')) + '</h2><div class="n37-tw" tabindex="0"><table><thead><tr><th scope="col">' + esc(t(l, 'dh_main')) + '</th><th scope="col">' + esc(t(l, 'dh_fmt')) + '</th><th scope="col">' + esc(t(l, 'dh_rows')) + '</th><th scope="col">' + esc(t(l, 'dh_size')) + '</th><th scope="col">' + esc(t(l, 'dh_upd')) + '</th><th scope="col">SHA-256</th></tr></thead><tbody>';
+  let b = '<h2>' + esc(t(l, 'dh_main')) + '</h2><div class="n37-tw" tabindex="0" role="region" aria-label="' + esc(t(l, 'tw_l')) + '"><table><thead><tr><th scope="col">' + esc(t(l, 'dh_main')) + '</th><th scope="col">' + esc(t(l, 'dh_fmt')) + '</th><th scope="col">' + esc(t(l, 'dh_rows')) + '</th><th scope="col">' + esc(t(l, 'dh_size')) + '</th><th scope="col">' + esc(t(l, 'dh_upd')) + '</th><th scope="col">SHA-256</th></tr></thead><tbody>';
   for (const [k, id, url, fmt] of DS) {
     const x = id ? by.get(id) : null; if (id && !x) continue;
     const href = x ? x.url.replace(ORIGIN, '') : url, f = x ? String(x.format || '').toUpperCase() : fmt;
@@ -293,17 +297,17 @@ export async function errPage(u) {
 // the latest change on /search/ results (server page here, instant results via GET /data/n37u-se.json and /k/n34b/se.js)
 const VG = { reg: 'r', sat: 'r', dev: 'c', portal: 'c', web: 'c', rec: 'c' };
 function vsGroups(r) { const g = { r: [], c: [], u: [] }; D.f.forEach((f, i) => { const c = r[8][i]; g[c ? (VG[c[2]] || 'c') : 'u'].push(f); }); return g; }
-const VSC = '<style>.n37-vs{margin:14px 0 0;padding:12px 16px;border:1px solid var(--k-line,var(--line,#D5DCDB));border-radius:14px;line-height:1.5}.n37-vs ul{list-style:none;padding:0;margin:6px 0 0}.n37-vs li{margin:6px 0;padding:2px 0;padding-inline-start:12px;border-inline-start:4px solid #56636F}.n37-vs li.n37-vr{border-color:#1F6B3A}.n37-vs li.n37-vc{border-color:#B7791F}.n37-vs li.n37-vu{border-color:#9A3412}.n37-vs li>b{font-variant-numeric:tabular-nums}.n37-act{display:flex;flex-wrap:wrap;gap:2px 18px;margin:8px 0 0}.n37-act a{display:inline-flex;align-items:center;min-height:36px;font-weight:600}.n37-se{display:inline-block}' +
+const VSC = '<style>.n37-vs{margin:14px 0 0;padding:12px 16px;border:1px solid var(--k-line,var(--line,#D5DCDB));border-radius:14px;line-height:1.5}.n37-vs ul{list-style:none;padding:0;margin:6px 0 0}.n37-vs li{margin:6px 0;padding:2px 0;padding-inline-start:12px;border-inline-start:4px solid #56636F}.n37-vs li.n37-vr{border-color:#1F6B3A}.n37-vs li.n37-vc{border-color:#B7791F}.n37-vs li.n37-vu{border-color:#9A3412}.n37-vs li>b{font-variant-numeric:tabular-nums}.n37-act{margin:8px 0 0}.n37-act ul{display:flex;flex-wrap:wrap;gap:0 18px;list-style:none;padding:0;margin:0}.n37-act li{margin:0;padding:0;border:0}.n37-act a{display:inline-flex;align-items:center;min-height:44px;font-weight:600}.n37-vs a:focus-visible,.n37-act a:focus-visible,.n37 a:focus-visible,.n37-tw:focus-visible{outline:3px solid #155C75;outline-offset:2px;border-radius:4px}:root[data-theme=dark] .n37-vs a:focus-visible,:root[data-theme=dark] .n37-act a:focus-visible{outline-color:#7CC7E0}.n37-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}.n37-se{display:inline-block}' +
   '.n37-po{display:none}@media print{.n37-po{display:block!important;font-size:16pt;margin:0 0 6px}.n37 a[href]::after{content:none!important}.n37>p.k-xs:last-child{display:none!important}.n37-np,.k-cta,.crumb,#shipped-2026-11-23{display:none!important}.n37 h2{font-size:12pt;margin:10px 0 4px}.n37 table{font-size:9pt}.n37 th,.n37 td{padding:3px 6px}.n37-tw{overflow:visible;border:0;margin:4px 0 8px}.phero h1{font-size:17pt;margin:0}.phero .lead{font-size:10pt}.n37 p,.n37 li{font-size:10pt;line-height:1.35}.n37-vs{padding:6px 10px}@page{size:A4;margin:12mm}}</style>';
 function vsBlock(l, r, acts) {
   const g = vsGroups(r);
-  return '<div class="n37-vs" id="n37-vs"' + dir(l) + '><p style="margin:0"><b>' + esc(t(l, 'vs_h')) + '</b> <span class="k-xs">' + esc(t(l, 'vs_n')) + '</span></p><ul>' +
-    [['r', 'vs_r'], ['c', 'vs_c'], ['u', 'vs_u']].map(([k, s]) => '<li class="n37-v' + k + '"><b>' + nf(g[k].length, l) + '</b> ' + esc(t(l, s)) + (g[k].length ? ': ' + g[k].map(f => esc(t(l, 'f_' + f))).join(', ') : '') + '</li>').join('') + '</ul>' + (acts || '') + '</div>';
+  return '<section class="n37-vs" id="n37-vs" role="region" aria-labelledby="n37-vs-h"' + dir(l) + '><p style="margin:0"><b id="n37-vs-h">' + esc(t(l, 'vs_h')) + '</b> <span class="k-xs">' + esc(t(l, 'vs_n')) + '</span></p><ul role="list">' +   // r6u: named region, list role kept with list-style none
+    [['r', 'vs_r'], ['c', 'vs_c'], ['u', 'vs_u']].map(([k, s]) => '<li class="n37-v' + k + '"><b>' + nf(g[k].length, l) + '</b><span class="n37-sr"> / 10</span> ' + esc(t(l, s)) + (g[k].length ? ': ' + g[k].map(f => esc(t(l, 'f_' + f))).join(', ') : '') + '</li>').join('') + '</ul>' + (acts || '') + '</section>';
 }
 function actRow(l, r) {
   const P = pre(l), s = r[1];
-  return '<p class="n37-act">' + [[recU(l, s), 'a_rec'], [recU(l, s) + '#timeline', 'tl_l'], [P + '/projects/' + s + '/journey/', 'a_jr'], ['/projects/' + s + '/changes/', 'a_chg'], [P + '/projects/' + s + '/brief/', 'a_br'], [P + '/projects/' + s + '/report/', 'a_pdf'], ['/projects/' + s + '/record.json', 'js_l']]
-    .map(a => '<a href="' + a[0] + '"' + (a[1] === 'js_l' ? ' type="application/json"' : '') + '>' + esc(t(l, a[1])) + '</a>').join('') + '</p>';
+  return '<nav class="n37-act" aria-label="' + esc(tf(l, 'act_l', { n: r[2] })) + '"><ul role="list">' + [[recU(l, s), 'a_rec'], [recU(l, s) + '#timeline', 'tl_l'], [P + '/projects/' + s + '/journey/', 'a_jr'], [P + '/projects/' + s + '/changes/', 'a_chg'], [P + '/projects/' + s + '/brief/', 'a_br'], [P + '/projects/' + s + '/report/', 'a_pdf'], ['/projects/' + s + '/record.json', 'js_l']]   // r6u: nav landmark, list, change log in the page language
+    .map(a => '<li><a href="' + a[0] + '"' + (a[1] === 'js_l' ? ' type="application/json"' : '') + '>' + esc(t(l, a[1])) + '</a></li>').join('') + '</ul></nav>';
 }
 async function briefPage(env, shell, l, r) {
   const P = pre(l), F = D.f, lc = latestChange(r), RG = regsFor(r), miss = F.filter((f, i) => !r[8][i]);
@@ -331,11 +335,67 @@ async function changesPage(env, shell, l, mq) {
   let b = '<form method="get" action="' + P + '/data/changes/" class="n37-np"><label>' + esc(t(l, 'ch_mk')) + ' <select name="m">' + '<option value="">' + esc(t(l, 'ch_all')) + ' (' + nf(all.length, l) + ')</option>' +
     mks.map(m => '<option value="' + esc(m) + '"' + (m === mk ? ' selected' : '') + '>' + esc(m) + ' (' + nf(all.filter(x => x[0][3] === m).length, l) + ')</option>').join('') + '</select></label> <button type="submit">OK</button></form>';
   b += '<p><b>' + esc(tf(l, 'ch_n', { n: nf(rows.length, l), p: nf(new Set(rows.map(x => x[0])).size, l), a, b: z })) + '</b></p>';
-  b += '<div class="n37-tw" tabindex="0"><table><thead><tr><th scope="col">' + esc(t(l, 'tl_d')) + '</th><th scope="col">' + esc(t(l, 'th_p')) + '</th><th scope="col">' + esc(t(l, 'ch_mk')) + '</th><th scope="col">' + esc(t(l, 'th_f')) + '</th><th scope="col">' + esc(t(l, 'ch_from')) + '</th><th scope="col">' + esc(t(l, 'ch_to')) + '</th></tr></thead><tbody>' +
+  b += '<div class="n37-tw" tabindex="0" role="region" aria-label="' + esc(t(l, 'tw_l')) + '"><table><thead><tr><th scope="col">' + esc(t(l, 'tl_d')) + '</th><th scope="col">' + esc(t(l, 'th_p')) + '</th><th scope="col">' + esc(t(l, 'ch_mk')) + '</th><th scope="col">' + esc(t(l, 'th_f')) + '</th><th scope="col">' + esc(t(l, 'ch_from')) + '</th><th scope="col">' + esc(t(l, 'ch_to')) + '</th></tr></thead><tbody>' +
     rows.map(([r, x]) => '<tr><td class="n">' + esc(fd(x.d, l)) + '</td><th scope="row"><a href="' + recU(l, r[1]) + '#timeline">' + bdi(r[2]) + '</a></th><td>' + bdi(r[3]) + '</td><td>' + fname(l, x.f) + '</td><td class="n37-v">' + bdi(tv(x.p, l, 90)) + '</td><td class="n37-v">' + bdi(tv(x.v, l, 90)) + '</td></tr>').join('') + '</tbody></table></div>';
   b += '<p class="k-xs">' + esc(t(l, 'tl_note')) + ' <a href="/data/snapshots/index.json">' + esc(t(l, 'tl_snap')) + '</a> · <a href="/data/n37u-tl.json">' + esc(t(l, 'dl')) + '</a> · <a href="' + P + '/data/gaps/">' + esc(t(l, 'gp_link')) + '</a></p>';
-  const res = await page(shell, l, { path: '/data/changes/', h1: t(l, 'ch_h1'), lead: t(l, 'ch_lead'), body: b, noindex: !!mk, crumb: [[t(l, 'data'), P + '/data/']] });
+  b = '<p class="n37-np"><a href="' + P + '/data/changes/week/">' + esc(t(l, 'wk_h1')) + '</a> · <a href="/data/changes/feed.atom' + (mk ? '?m=' + encodeURIComponent(mk) : '') + '" type="application/atom+xml">' + esc(t(l, 'fd_l')) + '</a></p>' + b;   // r6u
+  const res = await page(shell, l, { path: '/data/changes/', h1: t(l, 'ch_h1'), lead: t(l, 'ch_lead'), body: b, noindex: !!mk, head: FEEDL, crumb: [[t(l, 'data'), P + '/data/']] });
   return res;
+}
+// r6u: handover dates moved, per developer, from the daily copies (same change rule as the timeline). Months: a quarter counts as
+// its last month, a year alone as December, so 2030-Q2 > 31 Dec 2031 is 18 months later
+const mIdx = v => { const q = qtr(v); return q ? q[0] * 12 + (q[2] || (q[1] ? q[1] * 3 : 12)) : null; };
+function hoMoves(rows) {
+  const out = [];
+  for (const r of rows) { const ev = tlEvents(r); if (ev) for (const x of ev) if (x.f === 'ho' && realChange(x)) { const a = mIdx(x.p), b = mIdx(x.v); out.push({ r, x, dm: a != null && b != null ? b - a : null }); } }
+  return out.sort((a, c) => (a.x.d < c.x.d ? 1 : a.x.d > c.x.d ? -1 : 0) || a.r[2].localeCompare(c.r[2]));
+}
+const byM = (l, dm) => dm == null ? t(l, 'tr_nm') : dm === 0 ? t(l, 'tr_m0') : tf(l, dm > 0 ? 'tr_ml' : 'tr_me', { n: nf(Math.abs(dm), l) });
+function devTrack(slug) {
+  const rows = IX.byDev.get(slug) || [], th = rows.filter(r => TL && TL.p && TL.p[r[1]] && TL.p[r[1]].ho);
+  if (!th.length) return null;
+  const mv = hoMoves(rows), late = mv.filter(m => m.dm > 0), early = mv.filter(m => m.dm < 0);
+  return { rows, th, mv, late, early, nc: mv.filter(m => m.dm == null || m.dm === 0).length, p: new Set(mv.map(m => m.r)).size, md: median(late.map(m => m.dm)) };
+}
+function trackSection(l, slug) {
+  const k = devTrack(slug); if (!k) return '';
+  const days = TL.days, name = k.rows[0][6] || slug;
+  let b = '<h3 id="n37-track">' + esc(t(l, 'tr_h')) + '</h3><p>' + esc(tf(l, 'tr_p', { a: fd(days[0][0], l), b: fd(D.built, l), d: name, t: nf(k.th.length, l), p: nf(k.p, l), m: nf(k.mv.length, l) })) + '</p>';
+  if (!k.mv.length) return b + '<p>' + esc(t(l, 'tr_0')) + '</p>';
+  b += '<ul><li>' + esc(k.late.length ? tf(l, 'tr_late', { n: nf(k.late.length, l), m: nf(k.md, l) }) : tf(l, 'tr_late0', { n: nf(0, l) })) + '</li><li>' + esc(tf(l, 'tr_early', { n: nf(k.early.length, l) })) + '</li>' + (k.nc ? '<li>' + esc(tf(l, 'tr_nc', { n: nf(k.nc, l) })) + '</li>' : '') + '</ul>';
+  b += '<div class="n37-tw" tabindex="0" role="region" aria-label="' + esc(t(l, 'tr_h')) + '"><table><thead><tr><th scope="col">' + esc(t(l, 'th_p')) + '</th><th scope="col">' + esc(t(l, 'ch_from')) + '</th><th scope="col">' + esc(t(l, 'ch_to')) + '</th><th scope="col">' + esc(t(l, 'tr_by')) + '</th><th scope="col">' + esc(t(l, 'tr_seen')) + '</th><th scope="col">' + esc(t(l, 'th_s')) + '</th></tr></thead><tbody>' +
+    k.mv.map(m => { const c = m.r[8][0], u = c && c[1];
+      return '<tr><th scope="row"><a href="' + recU(l, m.r[1]) + '#timeline">' + bdi(m.r[2]) + '</a></th><td class="n">' + bdi(tv(m.x.p, l, 40)) + '</td><td class="n">' + bdi(tv(m.x.v, l, 40)) + '</td><td class="n">' + esc(byM(l, m.dm)) + '</td><td class="n">' + esc(fd(m.x.d, l)) + '</td><td>' + (c ? esc(t(l, 'k_' + c[2])) : '') + (u && /^https?:/.test(u) ? ' · <a href="' + esc(u) + '" rel="nofollow noopener">' + esc(host(u)) + '</a>' : '') + '</td></tr>'; }).join('') + '</tbody></table></div>';
+  return b + '<p class="k-xs">' + esc(t(l, 'tr_note')) + ' <a href="' + pre(l) + '/data/changes/week/">' + esc(t(l, 'wk_h1')) + '</a></p>';
+}
+const DAY = 86400000, isoD = ms => new Date(ms).toISOString().slice(0, 10);
+async function weekPage(env, shell, l) {
+  const P = pre(l), all = allChanges(), z = Date.parse(D.built + 'T00:00:00Z'), a = isoD(z - 6 * DAY), a0 = isoD(z - 13 * DAY);
+  const wk = all.filter(x => x[1].d >= a), prev = all.filter(x => x[1].d >= a0 && x[1].d < a).length, G = new Map();
+  for (const x of wk) (G.get(x[0][3]) || G.set(x[0][3], []).get(x[0][3])).push(x);
+  const mks = [...G.keys()].sort((m, n) => G.get(n).length - G.get(m).length || m.localeCompare(n));
+  let b = '<p><b>' + esc(tf(l, 'wk_n', { n: nf(wk.length, l), p: nf(new Set(wk.map(x => x[0])).size, l), k: nf(mks.length, l), a: fd(a, l), b: fd(D.built, l), q: nf(prev, l) })) + '</b></p>';
+  if (!wk.length) b += '<p>' + esc(t(l, 'wk_0')) + '</p>';
+  else b += '<nav aria-label="' + esc(t(l, 'ch_mk')) + '"><ul class="n37-rel" role="list">' + mks.map(m => '<li><a href="#mk-' + slugM(m) + '">' + bdi(m) + '</a>&nbsp;<span class="k-xs">' + nf(G.get(m).length, l) + '</span></li>').join('') + '</ul></nav>';
+  for (const m of mks) {
+    const rows = G.get(m), ho = rows.filter(x => x[1].f === 'ho');
+    b += '<h2 id="mk-' + slugM(m) + '">' + esc(tf(l, 'wk_mh', { m })) + '</h2><p>' + esc(tf(l, 'wk_mp', { n: nf(rows.length, l), p: nf(new Set(rows.map(x => x[0])).size, l), h: nf(ho.length, l) })) + '</p>' +
+      '<div class="n37-tw" tabindex="0" role="region" aria-label="' + esc(tf(l, 'wk_mh', { m })) + '"><table><thead><tr><th scope="col">' + esc(t(l, 'tl_d')) + '</th><th scope="col">' + esc(t(l, 'th_p')) + '</th><th scope="col">' + esc(t(l, 'th_f')) + '</th><th scope="col">' + esc(t(l, 'ch_from')) + '</th><th scope="col">' + esc(t(l, 'ch_to')) + '</th></tr></thead><tbody>' +
+      rows.map(([r, x]) => '<tr><td class="n">' + esc(fd(x.d, l)) + '</td><th scope="row"><a href="' + recU(l, r[1]) + '#timeline">' + bdi(r[2]) + '</a></th><td>' + fname(l, x.f) + (x.f === 'ho' ? ' <span class="k-xs">(' + esc(byM(l, (mIdx(x.v) != null && mIdx(x.p) != null) ? mIdx(x.v) - mIdx(x.p) : null)) + ')</span>' : '') + '</td><td class="n37-v">' + bdi(tv(x.p, l, 90)) + '</td><td class="n37-v">' + bdi(tv(x.v, l, 90)) + '</td></tr>').join('') + '</tbody></table></div>' +
+      '<p><a href="' + P + '/data/changes/?m=' + encodeURIComponent(m) + '">' + esc(tf(l, 'wk_all', { m })) + '</a> · <a href="/data/changes/feed.atom?m=' + encodeURIComponent(m) + '" type="application/atom+xml">' + esc(t(l, 'fd_l')) + '</a></p>';
+  }
+  b += '<p class="k-xs">' + esc(t(l, 'tl_note')) + ' <a href="' + P + '/data/changes/">' + esc(t(l, 'ch_h1')) + '</a> · <a href="/data/changes/feed.atom" type="application/atom+xml">' + esc(t(l, 'fd_l')) + '</a> · <a href="/data/n37u-tl.json">' + esc(t(l, 'dl')) + '</a></p>';
+  return page(shell, l, { path: '/data/changes/week/', h1: t(l, 'wk_h1'), lead: t(l, 'wk_lead'), body: b, head: FEEDL, crumb: [[t(l, 'data'), P + '/data/'], [t(l, 'ch_h1'), P + '/data/changes/']] });
+}
+const FEEDL = '<link rel="alternate" type="application/atom+xml" title="Kolaboro: project fact changes" href="/data/changes/feed.atom">';
+const xe = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+function feedAtom(mq) {   // r6u: every real change of a key fact (newest 100), one market with ?m=
+  const all = allChanges(), mk = all.some(x => x[0][3] === mq) ? mq : '', rows = (mk ? all.filter(x => x[0][3] === mk) : all).slice(0, 100);
+  const self = ORIGIN + '/data/changes/feed.atom' + (mk ? '?m=' + encodeURIComponent(mk) : ''), upd = (rows.length ? rows[0][1].d : D.built) + 'T00:00:00Z';
+  const x = '<?xml version="1.0" encoding="utf-8"?>\n<feed xmlns="http://www.w3.org/2005/Atom"><title>' + xe('Kolaboro: project fact changes' + (mk ? ' in ' + mk : '')) + '</title><id>' + xe(self) + '</id><updated>' + upd + '</updated><link rel="self" href="' + xe(self) + '"/><link rel="alternate" type="text/html" href="' + ORIGIN + '/data/changes/' + (mk ? '?m=' + encodeURIComponent(mk) : '') + '"/><author><name>Kolaboro</name></author><rights>CC BY 4.0</rights>' +
+    rows.map(([r, c]) => { const f = t('en', 'f_' + c.f), cur = r[8][D.f.indexOf(c.f)], src = cur && cur[1] && /^https?:/.test(cur[1]) ? cur[1] : '';
+      return '<entry><title>' + xe(r[2] + ': ' + f + ' changed') + '</title><id>tag:kolaboro.com,2026:chg/' + r[1] + '/' + c.f + '/' + c.d + '</id><updated>' + c.d + 'T00:00:00Z</updated><link href="' + ORIGIN + '/projects/' + r[1] + '/record/#timeline"/><category term="' + xe(r[3]) + '"/><summary>' + xe(f + ': from ' + c.p + ' to ' + c.v + ' (' + r[3] + (c.f === 'ho' ? ', ' + byM('en', mIdx(c.v) != null && mIdx(c.p) != null ? mIdx(c.v) - mIdx(c.p) : null) : '') + '). Seen in our daily copy of ' + c.d + '.' + (src ? ' Source of the current value: ' + src : '')) + '</summary></entry>'; }).join('') + '</feed>\n';
+  return new Response(x, { headers: { 'content-type': 'application/atom+xml; charset=utf-8', 'cache-control': 'public, max-age=900', 'access-control-allow-origin': '*' } });
 }
 function seInfo(l, x) {
   const lc = latestChange(x);
@@ -346,8 +406,8 @@ function seJson() {
   return new Response(IX.se, { headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'public, max-age=900', 'access-control-allow-origin': '*' } });
 }
 function seTpl(l) { const f = {}; for (const k of D.f) f[k] = t(l, 'f_' + k); return JSON.stringify({ k: t(l, 'se_k'), c: t(l, 'se_c'), f }); }
-const ITEMS = [['s1', '/projects/emaar-golf-vale/record/#fields'], ['s2', '/projects/emaar-golf-vale/record/#unknown'], ['s3', '/projects/emaar-golf-vale/record/#market'], ['s4', '/projects/emaar-golf-vale/record/#developer'], ['s5', '/data/gaps/'], ['s6', '/projects/emaar-golf-vale/record/#age'], ['s7', '/data/dictionary/'], ['s8', '/data/gaps/#dist'], ['s9', '/data/gaps.csv'], ['s10', '/projects/emaar-golf-vale/record.json'], ['s11', '/data/'], ['s12', '/m/dubai/#n37-facts'], ['s13', '/developers/emaar-properties/#n37-dev'], ['s14', '/#n37-live'], ['s15', '/engineering/status/'], ['s16', '/projects/meriva-collection-ellington/record/#timeline'], ['s17', '/projects/meriva-collection-ellington/'], ['s18', '/developers/'], ['s19', '/m/dubai/'], ['s20', '/data/catalog.json'], ['s21', '/projects/emaar-golf-vale/#n37-vs'], ['s22', '/projects/emaar-golf-vale/brief/'], ['s23', '/data/changes/'], ['s24', '/search/?q=emaar'], ['s25', '/m/dubai/']];
-const shipped = l => '<section class="wrap" id="shipped-2026-11-23"' + dir(l) + '><h2>' + esc(t(l, 'sh_h')) + '</h2><p>' + esc(t(l, 'sh_p')) + '</p><ul>' + ITEMS.map(x => '<li><a href="' + (/\.(csv|json)$/.test(x[1]) ? '' : pre(l)) + x[1] + '">' + esc(t(l, x[0] + '_t')) + '</a>: ' + esc(t(l, x[0] + '_s')) + '</li>').join('') + '</ul></section>';
+const ITEMS = [['s1', '/projects/emaar-golf-vale/record/#fields'], ['s2', '/projects/emaar-golf-vale/record/#unknown'], ['s3', '/projects/emaar-golf-vale/record/#market'], ['s4', '/projects/emaar-golf-vale/record/#developer'], ['s5', '/data/gaps/'], ['s6', '/projects/emaar-golf-vale/record/#age'], ['s7', '/data/dictionary/'], ['s8', '/data/gaps/#dist'], ['s9', '/data/gaps.csv'], ['s10', '/projects/emaar-golf-vale/record.json'], ['s11', '/data/'], ['s12', '/m/dubai/#n37-facts'], ['s13', '/developers/emaar-properties/#n37-dev'], ['s14', '/#n37-live'], ['s15', '/engineering/status/'], ['s16', '/projects/meriva-collection-ellington/record/#timeline'], ['s17', '/projects/meriva-collection-ellington/'], ['s18', '/developers/'], ['s19', '/m/dubai/'], ['s20', '/data/catalog.json'], ['s21', '/projects/emaar-golf-vale/#n37-vs'], ['s22', '/projects/emaar-golf-vale/brief/'], ['s23', '/data/changes/'], ['s24', '/search/?q=emaar'], ['s25', '/m/dubai/'], ['s26', '/projects/emaar-golf-vale/changes/'], ['s27', '/data/changes/week/'], ['s28', '/developers/emaar-properties/#n37-track'], ['s29', '/data/changes/feed.atom'], ['s30', '/projects/emaar-golf-vale/#n37-vs']];
+const shipped = l => '<section class="wrap" id="shipped-2026-11-23"' + dir(l) + '><h2>' + esc(t(l, 'sh_h')) + '</h2><p>' + esc(t(l, 'sh_p')) + '</p><ul>' + ITEMS.map(x => '<li><a href="' + (/\.(csv|json|atom)$/.test(x[1]) ? '' : pre(l)) + x[1] + '">' + esc(t(l, x[0] + '_t')) + '</a>: ' + esc(t(l, x[0] + '_s')) + '</li>').join('') + '</ul></section>';
 const STY = '<style>.n37-in{margin:14px 0 0;padding:12px 16px;border:1px solid var(--k-line,var(--line,#d5d3cc));border-radius:14px;line-height:1.55}.n37-in a{font-weight:700}</style>';
 
 export async function inject(req, u, env, r) {
@@ -390,6 +450,7 @@ export async function handle(req, u, env, ctx, shell) {
   if ((m = p.match(RX_JS))) { const r = IX.bySlug.get(m[1]); return r ? recJson(r) : null; }
   if (p === '/data/gaps.csv') return gapsCsv();
   if (p === '/data/n37u-se.json') return seJson();
+  if (p === '/data/changes/feed.atom') return feedAtom(String(u.searchParams.get('m') || '').slice(0, 80));
   if ((m = p.match(/^\/m\/([^/]{2,120})\/slugs\.json$/))) return slugsJson(env, m[1]);
   try { return await route(env, shell, p, u); } catch (e) {
     let e2 = null, diag = '';   // r4u: up to two more tries, each after the string tables are (re)loaded
@@ -406,6 +467,7 @@ async function route(env, shell, p, u) {
     if (!m[3]) return new Response(null, { status: 301, headers: { location: p + '/' } });
     const r = IX.bySlug.get(m[2]); return r ? briefPage(env, shell, m[1] || 'en', r) : null;
   }
+  if ((m = p.match(/^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?data\/changes\/week(\/?)$/))) { if (!m[2]) return new Response(null, { status: 301, headers: { location: p + '/' } }); return weekPage(env, shell, m[1] || 'en'); }   // r6u
   if ((m = p.match(/^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?data\/changes(\/?)$/))) { if (!m[2]) return new Response(null, { status: 301, headers: { location: p + '/' } }); return changesPage(env, shell, m[1] || 'en', String((u && u.searchParams.get('m')) || '').slice(0, 80)); }
   if ((m = p.match(RX_REC))) {
     if (!m[3]) return new Response(null, { status: 301, headers: { location: p + '/' } });
