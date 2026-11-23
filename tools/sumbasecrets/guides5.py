@@ -466,7 +466,8 @@ GUIDES5 = [
 # ---- 21-nov-2026: day trips built from the map data (distances = straight line x 1.35 at ~35 km/h, same rule as the site's tools) ----
 import math as _m
 from places import TOWNS as _T, AIRPORTS as _A
-_ALL = _P + _M
+from coords_fix import COORD_FIX as _CF
+_ALL = list({p["s"]: dict(p, ll=_CF.get(p["s"], p["ll"])) for p in _P + _M}.values())  # build.py appends MAMBORO to PLACES: dedupe
 _CATN = {"beach": "beach", "village": "traditional village", "waterfall": "waterfall", "viewpoint": "viewpoint", "culture": "culture"}
 def _km(a, b):
     R = 6371; t = _m.radians
@@ -476,7 +477,7 @@ def _drive(k):
     road = k*1.35; mins = max(15, round((road/35*60+10)/15)*15); h, mm = divmod(mins, 60)
     return (max(1, round(road)) if road < 10 else round(road/5)*5), " ".join(x for x in ((f"{h} h" if h else ""), (f"{mm} min" if mm else "")) if x)
 def _daytrips(slug, base, ll, img, intro, extra):
-    rows = sorted(((_km(ll, p["ll"]), p) for p in _ALL), key=lambda x: x[0])
+    rows = sorted(((_km(ll, p["ll"]), p) for p in _ALL), key=lambda x: (round(x[0], 3), x[1]["s"]))
     near = [(k, p) for k, p in rows if k*1.35 <= 90][:14]
     tr = "".join(f"<tr><td>{PL(p['s'], p['en']['n'])}</td><td>{_CATN.get(p['c'], p['c'])}</td><td>~{_drive(k)[0]} km</td><td>~{_drive(k)[1]}</td></tr>" for k, p in near)
     first = near[:3]

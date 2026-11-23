@@ -1262,11 +1262,13 @@ export default {
       const hit = MEMO.get(p); if (hit && Date.now() - hit.t < 6e5) return new Response(hit.b, { status: 200, headers: Object.assign({ "x-cache": "memo" }, H) });
       const cr = await caches.default.match(ck); if (cr) { const b = await cr.text(); MEMO.set(p, { t: Date.now(), b }); return new Response(b, { status: 200, headers: Object.assign({ "x-cache": "edge" }, H) }); }
     }
+    let kvMiss = false;
+    { const gm = p.match(/^\/([a-z]{2})\/guide\/([a-z0-9-]+)\/$/); if (gm && gm[1] !== "en") { const g = D.guides.find(x => x.s === gm[2]); const gl = g && g.kv && g[gm[1]]; if (gl && !gl.b) { let v = null; try { v = env.DATA ? await env.DATA.get(`g6:${gm[1]}:${g.s}:${gl.h}`, "json") : null; } catch (e) {} if (v) g[gm[1]] = Object.assign({}, gl, v); else kvMiss = true; } } }
     const r = route(req, url);
     if (!r) return new Response("Gone", { status: 410, headers: { "content-type": "text/plain", "x-robots-tag": "noindex" } });
     if (r[0] === 301) return Response.redirect(r[1], 301);
     const h = Object.assign({}, H); if (r[0] === 404) h["x-robots-tag"] = "noindex"; if (p === "/map" || p === "/map/") { h["vary"] = "accept-language"; h["cache-control"] = "private, max-age=300"; }
-    if (cacheable && r[0] === 200) { if (MEMO.size > 400) MEMO.clear(); MEMO.set(p, { t: Date.now(), b: r[1] }); ctx.waitUntil(caches.default.put(ck, new Response(r[1], { headers: H }))); }
+    if (cacheable && r[0] === 200 && !kvMiss) { if (MEMO.size > 400) MEMO.clear(); MEMO.set(p, { t: Date.now(), b: r[1] }); ctx.waitUntil(caches.default.put(ck, new Response(r[1], { headers: H }))); }
     return new Response(r[1], { status: r[0], headers: h });
   }
 };
