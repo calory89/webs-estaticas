@@ -1,6 +1,95 @@
 {
  "deploys": [
   {
+   "at": "2026-11-23T18:44:23Z",
+   "commit": "f4f7875b1164d33d22e259edff23d5ba54fd96a4",
+   "checks_passed": 32,
+   "checks_total": 32,
+   "failed": [],
+   "run": "https://github.com/calory89/webs-estaticas/actions/runs/45241003924",
+   "result": "pass",
+   "wait_s": 1,
+   "changes": [
+    "af3108cf1f5f",
+    "0e0e71de9da1",
+    "f0e9c95ad52e",
+    "64b1366f2052",
+    "3e01d02ecbfd",
+    "8a831da68f03",
+    "9773e2011b73",
+    "032530dad610",
+    "8de50d4054f7",
+    "ad698219378b",
+    "dea3a534fffd",
+    "114de34cac35",
+    "a4f21f4a9355",
+    "d9321aa00c70",
+    "bdd31297d66f",
+    "eb9d12156d6f",
+    "63343bee000c",
+    "6729214c6a18",
+    "9c3e2ec8eb9e",
+    "4959ef1c88ac",
+    "0048e247e0de",
+    "2cee2b314936",
+    "59839d087080",
+    "d88fba26adc9",
+    "d469226f28ec",
+    "9f4d59fc6803",
+    "1599690b3fa6",
+    "be05676d73dc",
+    "22c60221a208",
+    "0487d808caa3",
+    "1f2cec707c53",
+    "4e71f38947af",
+    "898b8f83cd35",
+    "2ac01d6c6def",
+    "a0adb2d83ef2",
+    "47b39ac2e581",
+    "290f764d68a8",
+    "fe091c5dcd2a",
+    "25af28b6ac19",
+    "66d80c92b721",
+    "8a1bc892d717",
+    "085ff81ec9b0",
+    "8421b94b4097",
+    "d2c1d95f6fe1",
+    "6e93ab7acef0",
+    "af3841dedc16",
+    "4af466895857",
+    "6fa3e864ffe1",
+    "4df5836fff9e",
+    "a801d3e60546",
+    "373827342781",
+    "828fa1f8a364",
+    "9e27e8758502",
+    "7acc0ccae84d",
+    "3ebae465beb3",
+    "5b48aff31784",
+    "551de9bf2855",
+    "7d8ac3ed24e1",
+    "fb3e80a82838",
+    "46b35a5e80f5",
+    "10ad2a3d190a",
+    "090c6619af10",
+    "d742ad67e30a",
+    "fd692221fa32",
+    "905469f31473",
+    "53e4d2f9ad45",
+    "d0d7c4bc4961",
+    "13468ca58d94",
+    "d72d23a6fb79",
+    "4ec67918bb59",
+    "a4a0aede4f80",
+    "4d8502dd9fb2",
+    "b0f9ba32c0c7",
+    "6d026e15e741",
+    "fd4b7a526765"
+   ],
+   "worker_tree": "5d17df25b8f83ab314b4a7563d020fe1a0a08300",
+   "dataset_sha256": "1d424227b28a1af0cc51617a1f22e7ee28c14746d6fa54febae090c9f40e4801"
+  },
+  {
    "at": "2026-11-22T14:52:24Z",
    "commit": "2ee7222f52e8c81c5fba5f0d8b4edb07631f0a12",
    "checks_passed": 32,
@@ -2995,19 +3084,6 @@
     "623f9baa0f29",
     "a5fe408477fa"
    ]
-  },
-  {
-   "at": "2026-11-03T23:07:56Z",
-   "commit": "ac297378780d6a4e4d560f3b241d7143978d7b30",
-   "checks_passed": 32,
-   "checks_total": 32,
-   "failed": [],
-   "run": "https://github.com/calory89/webs-estaticas/actions/runs/41735916069",
-   "result": "pass",
-   "wait_s": 187,
-   "changes": [
-    "b189dee0d222"
-   ]
   }
  ],
  "drills": [],
@@ -3015,83 +3091,83 @@
  "canary": "Cloudflare Pages sends each push to all visitors at once and offers no percentage canary, so none is claimed. A bad push can be visible for a few minutes until the rollback is live.",
  "rollback_mode": "Rollback: a git commit restoring the files changed since the last passing commit; Pages deploys it in about 1 to 2 minutes. An instant Cloudflare API rollback is built in but needs a Pages-scoped token, not configured yet.",
  "latest_checks": {
-  "at": "2026-11-22T14:52:24.187Z",
-  "commit": "2ee7222f52e8c81c5fba5f0d8b4edb07631f0a12",
+  "at": "2026-11-23T18:44:23.410Z",
+  "commit": "f4f7875b1164d33d22e259edff23d5ba54fd96a4",
   "checks": [
    {
     "name": "build: live commit",
     "ok": true,
-    "detail": "live 2ee7222f52e8"
+    "detail": "live f4f7875b1164"
    },
    {
     "name": "page /",
     "ok": true,
-    "detail": "200, 80222 bytes"
+    "detail": "200, 81332 bytes"
    },
    {
     "name": "page /check/",
     "ok": true,
-    "detail": "200, 70157 bytes"
+    "detail": "200, 70171 bytes"
    },
    {
     "name": "page /database/",
     "ok": true,
-    "detail": "200, 38204 bytes"
+    "detail": "200, 38218 bytes"
    },
    {
     "name": "page /pricing/",
     "ok": true,
-    "detail": "200, 35237 bytes"
+    "detail": "200, 35251 bytes"
    },
    {
     "name": "page /p/BALI-021",
     "ok": true,
-    "detail": "200, 120797 bytes"
+    "detail": "200, 126587 bytes"
    },
    {
     "name": "page /log/",
     "ok": true,
-    "detail": "200, 27907 bytes"
+    "detail": "200, 27921 bytes"
    },
    {
     "name": "page /verify/",
     "ok": true,
-    "detail": "200, 46634 bytes"
+    "detail": "200, 46648 bytes"
    },
    {
     "name": "page /status/",
     "ok": true,
-    "detail": "200, 46293 bytes"
+    "detail": "200, 46380 bytes"
    },
    {
     "name": "page /changelog/",
     "ok": true,
-    "detail": "200, 113703 bytes"
+    "detail": "200, 139386 bytes"
    },
    {
     "name": "page /docs/api/",
     "ok": true,
-    "detail": "200, 22757 bytes"
+    "detail": "200, 24820 bytes"
    },
    {
     "name": "page /investors/",
     "ok": true,
-    "detail": "200, 48622 bytes"
+    "detail": "200, 48636 bytes"
    },
    {
     "name": "page /trust/",
     "ok": true,
-    "detail": "200, 24739 bytes"
+    "detail": "200, 24753 bytes"
    },
    {
     "name": "page /investors/dossier/",
     "ok": true,
-    "detail": "200, 22187 bytes"
+    "detail": "200, 22201 bytes"
    },
    {
     "name": "api /api/open/stats",
     "ok": true,
-    "detail": "2380 projects"
+    "detail": "3438 projects"
    },
    {
     "name": "api /api/open/projects",
@@ -3106,12 +3182,12 @@
    {
     "name": "api /api/open/checkpoint",
     "ok": true,
-    "detail": "tree size 21"
+    "detail": "tree size 22"
    },
    {
     "name": "api /api/x/l/trust",
     "ok": true,
-    "detail": "{\"controls\":13,\"pass\":10,\"warn\":1,\"fail\":0,\"stale\":2,\"unknown\":0}"
+    "detail": "{\"controls\":13,\"pass\":9,\"warn\":1,\"fail\":0,\"stale\":3,\"unknown\":0}"
    },
    {
     "name": "tls: plain http redirects to https",
@@ -3180,7 +3256,7 @@
    }
   ]
  },
- "last_checked": "2ee7222f52e8c81c5fba5f0d8b4edb07631f0a12",
- "last_good": "2ee7222f52e8c81c5fba5f0d8b4edb07631f0a12",
- "updated": "2026-11-22T14:52:24Z"
+ "last_checked": "f4f7875b1164d33d22e259edff23d5ba54fd96a4",
+ "last_good": "f4f7875b1164d33d22e259edff23d5ba54fd96a4",
+ "updated": "2026-11-23T18:44:23Z"
 }
