@@ -476,7 +476,7 @@ wj('aliases.json', {'v': 'n35a-aliases-1', 'built': BUILT, 'licence': LIC, 'colu
              '2. Matching key: lower case, Cyrillic transliterated (GOST 7.79 system B, simplified), Greek transliterated (ELOT 743, simplified), accents removed, "&" read as "and", legal and generic words removed (LLC, PJSC, PCL, Bhd, S.A., Ltd, Group, Properties, Developments and similar), punctuation removed. Two names with the same key are the same entity.',
              '3. Arabic, Chinese, Japanese and Thai are never transliterated by rule: they match only through rule 1, with an alias printed in one of our sources.',
              '4. No fuzzy matching: a key that matches more than one developer is shown as ambiguous, never merged.'],
-    'key_collisions': sorted([k, sorted(v)] for k, v in coll.items() if len(v) > 1)[:200],
+    'key_collisions': sorted([k, sorted(v, key=lambda x: x or '')] for k, v in coll.items() if len(v) > 1)[:200],
     'cyr': ''.join(CYR.keys()), 'cyr_lat': list(CYR.values()), 'grk': ''.join(GRK.keys()), 'grk_lat': list(GRK.values()), 'legal': LEGAL})
 
 def plainq(s): return re.sub(r'\s+', ' ', ''.join(c for c in unicodedata.normalize('NFKD', unicodedata.normalize('NFKC', s or '').lower()) if not unicodedata.combining(c))).strip()

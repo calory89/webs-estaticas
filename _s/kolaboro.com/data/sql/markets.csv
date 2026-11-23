@@ -1,19 +1,19 @@
 market,country,projects,with_permit_number,with_handover_date,overdue,claims,claims_contradicted,reviewed,median_price_per_m2_min,price_per_m2_sample
-Dubai,UAE,653,635,639,8,5916,90,632,20223.4,514
-Bali,Indonesia,136,1,122,25,1041,168,24,3455.6,104
-Phuket,Thailand,76,15,71,7,422,23,6,118554.6,38
-Malaysia,Malaysia,63,29,62,3,452,26,9,10898.9,42
+Dubai,UAE,766,748,752,8,6672,90,745,20129.2,616
+Bali,Indonesia,136,1,122,25,1069,168,24,3494.2,122
+Phuket,Thailand,76,15,71,7,475,23,6,110000.0,67
+Malaysia,Malaysia,63,29,62,3,457,26,9,11358.2,45
 Costa del Sol,Spain,49,2,27,7,327,11,12,4248.5,21
-Kuala Lumpur,Malaysia,46,12,46,1,228,2,7,11724.1,19
-Bangkok,Thailand,45,4,45,7,228,4,3,62815.3,33
+Kuala Lumpur,Malaysia,46,12,46,1,251,2,7,10950.0,35
+Bangkok,Thailand,45,4,45,7,233,4,3,8643.8,38
 Miami,USA,41,13,26,0,258,22,5,14310.0,7
-Vietnam,Vietnam,41,6,37,3,228,16,0,9634551.5,25
-Philippines,Philippines,32,11,17,1,221,21,0,284848.5,9
-Abu Dhabi,UAE,30,17,29,2,226,29,2,25735.3,21
+Vietnam,Vietnam,41,6,37,3,235,16,0,4819602.8,30
+Philippines,Philippines,32,11,17,1,228,21,0,265277.3,16
+Abu Dhabi,UAE,31,17,30,2,230,29,2,25735.3,21
+Ras Al Khaimah,UAE,31,0,30,2,225,38,7,31518.5,16
 France,France,28,0,23,0,168,0,0,,1
-Cambodia,Cambodia,27,0,27,1,164,21,0,1964.2,18
+Cambodia,Cambodia,27,0,27,1,175,21,0,1600.0,25
 Spain,Spain,26,2,11,0,184,6,2,4837.4,14
-Ras Al Khaimah,UAE,26,0,19,0,203,38,7,31518.5,16
 Lombok,Indonesia,24,0,17,0,206,27,6,1821.4,15
 Riviera Maya,Mexico,24,0,9,0,226,38,7,24458.8,16
 Brazil,Brazil,22,4,11,0,116,5,0,56787.5,4
@@ -26,7 +26,7 @@ Pattaya,Thailand,18,10,17,0,146,15,5,141778.1,12
 Cyprus,Cyprus,18,0,9,0,110,13,5,5702.8,8
 Oman,Oman,18,0,15,0,134,23,1,1311.8,13
 Georgia,Georgia,17,0,12,0,138,24,3,2778.8,9
-Osaka,Japan,17,0,17,4,59,0,0,1318181.8,11
+Osaka,Japan,17,0,17,4,61,0,0,1310638.3,13
 Los Cabos,Mexico,16,0,9,1,112,18,3,5383.0,8
 Warsaw,Poland,16,0,14,0,72,0,0,,1
 Koh Samui,Thailand,15,3,10,0,117,17,1,45769.2,9
@@ -36,7 +36,7 @@ Puerto Vallarta,Mexico,14,0,10,1,108,18,1,72222.0,12
 Gold Coast,Australia,14,1,12,0,112,9,0,14942.5,3
 French Riviera,France,14,3,13,0,98,8,1,8082.9,4
 French Alps,France,14,0,10,0,87,0,0,,1
-Ho Chi Minh City,Vietnam,13,2,12,0,73,4,2,78895463.5,3
+Ho Chi Minh City,Vietnam,13,2,12,0,79,4,2,93750000.0,9
 Japan,Japan,12,0,11,0,52,2,0,,1
 Mauritius,Mauritius,12,1,6,0,101,10,2,9419.9,6
 Balearics,Spain,12,0,7,0,76,8,1,7327.9,5
@@ -49,12 +49,12 @@ London,United Kingdom,11,5,9,1,94,16,2,13923.0,4
 Sharjah,UAE,11,0,8,0,85,14,3,10160.0,6
 Poland,Poland,11,0,9,0,46,0,0,,0
 Punta Cana,Dominican Republic,10,0,6,0,67,10,1,2841.1,5
+Portugal,Portugal,10,0,6,1,85,10,1,7412.7,7
 Sydney,Australia,10,5,8,0,81,8,0,,1
 Malta,Malta,10,2,6,1,66,5,1,,2
 Lisbon,Portugal,10,0,5,0,55,8,4,9861.3,6
-Tokyo,Japan,10,3,10,0,45,0,1,4316607.2,4
+Tokyo,Japan,10,3,10,0,46,0,1,4087759.8,5
 Mérida,Mexico,9,0,6,0,67,11,1,44807.7,7
-Portugal,Portugal,9,0,6,1,82,10,1,7412.7,7
 Antalya,Turkey,9,1,7,1,68,11,2,3057.7,5
 Vancouver,Canada,9,0,5,0,29,1,0,,2
 Panama City,Panama,8,0,8,0,71,12,0,4018.8,7
@@ -62,7 +62,7 @@ Croatia,Croatia,8,3,7,1,73,12,0,7870.1,5
 Marrakech,Morocco,8,0,6,0,50,4,1,14318.2,6
 Canary Islands,Spain,8,0,2,0,64,5,1,5282.2,3
 Accra,Ghana,8,0,4,0,33,4,0,3636.1,4
-Hua Hin,Thailand,7,1,6,1,56,7,1,59200.0,5
+Hua Hin,Thailand,7,1,6,1,58,7,1,63467.9,6
 Bahrain,Bahrain,7,0,7,0,61,8,1,1394.0,6
 Qatar,Qatar,7,0,6,0,58,8,0,20531.0,4
 Cape Town,South Africa,7,0,5,0,63,6,0,64107.1,3
@@ -94,7 +94,7 @@ New York,USA,5,4,5,0,32,4,0,,1
 Perth,Australia,5,0,4,0,33,3,0,,0
 Kigali,Rwanda,5,0,2,0,28,4,0,,2
 Paraguay,Paraguay,5,0,2,0,18,5,0,2482.6,3
-Da Nang,Vietnam,4,0,4,2,22,4,1,3558.8,3
+Da Nang,Vietnam,4,0,4,2,23,4,1,33335112.8,4
 Krabi,Thailand,4,0,3,0,33,2,0,56940.4,4
 Chiang Mai,Thailand,4,2,3,0,39,6,0,79037.1,4
 Labuan Bajo,Indonesia,4,0,4,0,38,5,1,,2
@@ -103,7 +103,7 @@ Niseko,Japan,4,0,4,0,39,1,1,,1
 Fiji,Fiji,4,0,3,0,32,3,0,,0
 Birmingham,United Kingdom,4,2,3,0,33,6,0,,2
 Umm Al Quwain,UAE,4,0,4,0,38,5,0,,2
-Kyoto,Japan,4,1,4,1,20,1,0,,1
+Kyoto,Japan,4,1,4,1,22,1,0,,2
 Dublin,Ireland,4,1,1,0,26,5,0,,2
 Barbados,Barbados,4,0,2,0,28,5,0,8611.0,4
 Ecuador,Ecuador,4,0,2,0,18,1,0,2718.9,4
