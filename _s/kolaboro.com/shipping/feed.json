@@ -13,17 +13,31 @@
  ],
  "items": [
   {
-   "id": "https://kolaboro.com/shipping/#d-2026-11-22",
-   "url": "https://kolaboro.com/shipping/#d-2026-11-22",
-   "title": "22 November 2026: 21 changes shipped so far",
-   "content_text": "- Kolaboro.com n35b: dark mode contrast on /trust/, the live report and /digest/; /accessibility/ block shows the 22 Nov run (0 serious or critical on 535 pages)\n- Kolaboro.com n35b: price per m2 and incident data merged into /data/n35b.json, build step folded into open/n34b-build.py (Pages file limit: 2 files fewer)\n- Kolaboro.com n35a: signal streams in one file instead of 16 shards (Pages deployment file count); ask tests generator removed (the JSON stays)\n- Kolaboro.com n35a: Sumba and operator projects left out of every batch 35 file (independence policy); DLD pace summary line on /m/dubai/\n- Kolaboro.com n35b: /accessibility/ data from the 22 Nov pass: 535 pages, serious or critical axe issues 32 on 14 pages before, 0 after\n- Plan pills move to their own line instead of widening the tile (de/nl pricing overflowed 390 px after the no-wrap pill fix) (n35v)\n\nDay in progress: summary taken from the commit subjects so far.",
-   "content_html": "<ul><li>Kolaboro.com n35b: dark mode contrast on /trust/, the live report and /digest/; /accessibility/ block shows the 22 Nov run (0 serious or critical on 535 pages)</li><li>Kolaboro.com n35b: price per m2 and incident data merged into /data/n35b.json, build step folded into open/n34b-build.py (Pages file limit: 2 files fewer)</li><li>Kolaboro.com n35a: signal streams in one file instead of 16 shards (Pages deployment file count); ask tests generator removed (the JSON stays)</li><li>Kolaboro.com n35a: Sumba and operator projects left out of every batch 35 file (independence policy); DLD pace summary line on /m/dubai/</li><li>Kolaboro.com n35b: /accessibility/ data from the 22 Nov pass: 535 pages, serious or critical axe issues 32 on 14 pages before, 0 after</li><li>Plan pills move to their own line instead of widening the tile (de/nl pricing overflowed 390 px after the no-wrap pill fix) (n35v)</li></ul><p>Day in progress: summary taken from the commit subjects so far.</p>",
-   "date_published": "2026-11-22T00:00:00Z",
-   "date_modified": "2026-11-22T05:30:46Z",
+   "id": "https://kolaboro.com/shipping/#d-2026-11-23",
+   "url": "https://kolaboro.com/shipping/#d-2026-11-23",
+   "title": "23 November 2026: 76 changes shipped so far",
+   "content_text": "- Kolaboro.com r6u: developer page changes in 8 languages, what changed this week, developer handover track record, Atom feed of fact changes, accessible key-fact groups\n- Kolaboro.com r9u: Malaysian register entries moved into /data/n37u.json (kp) and the record build, no new files (Pages build failed at 40,006 files)\n- Project records field by field (sources per field, what we still do not know, market context, same developer and area), /data/gaps/ (r1u, batch 37)\n- Kolaboro.com r1p: 120 new projects (2,500 tracked): Dubai DLD register, Ras Al Khaimah, Abu Dhabi, Portugal; 360 facts added to tracked projects\n- Kolaboro.com r8u: today's progress in numbers on the home page and /yc/try/ (8 languages), market key-fact block built once per data version\n- Kolaboro.com r5u: verified/claimed/[name] on project pages, printable brief, /data/changes/, search completeness, lighter big market pages\n\nDay in progress: summary taken from the commit subjects so far.",
+   "content_html": "<ul><li>Kolaboro.com r6u: developer page changes in 8 languages, what changed this week, developer handover track record, Atom feed of fact changes, accessible key-fact groups</li><li>Kolaboro.com r9u: Malaysian register entries moved into /data/n37u.json (kp) and the record build, no new files (Pages build failed at 40,006 files)</li><li>Project records field by field (sources per field, what we still do not know, market context, same developer and area), /data/gaps/ (r1u, batch 37)</li><li>Kolaboro.com r1p: 120 new projects (2,500 tracked): Dubai DLD register, Ras Al Khaimah, Abu Dhabi, Portugal; 360 facts added to tracked projects</li><li>Kolaboro.com r8u: today&#x27;s progress in numbers on the home page and /yc/try/ (8 languages), market key-fact block built once per data version</li><li>Kolaboro.com r5u: verified/claimed/[name] on project pages, printable brief, /data/changes/, search completeness, lighter big market pages</li></ul><p>Day in progress: summary taken from the commit subjects so far.</p>",
+   "date_published": "2026-11-23T00:00:00Z",
+   "date_modified": "2026-11-23T07:34:35Z",
    "_kolaboro": {
-    "ships": 21,
+    "ships": 76,
     "data_updates": 0,
     "method": "so-far"
+   }
+  },
+  {
+   "id": "https://kolaboro.com/shipping/#d-2026-11-22",
+   "url": "https://kolaboro.com/changelog/2026-11-22/",
+   "title": "22 November 2026: 28 changes shipped",
+   "content_text": "- Kolaboro.com n35b: dark mode contrast on /trust/, the live report and /digest/; /accessibility/ block shows the 22 Nov run (0 serious or critical on 535 pages)\n- Kolaboro.com n35b: price per m2 and incident data merged into /data/n35b.json, build step folded into open/n34b-build.py (Pages file limit: 2 files fewer)\n- Kolaboro.com n36e: free add-and-check request for projects not in the database, live email alerts copy, compare by name, clearer API key errors, /yc/try/\n- Kolaboro.com n35a: signal streams in one file instead of 16 shards (Pages deployment file count); ask tests generator removed (the JSON stays)\n- Kolaboro.com n36e: satellite watch copy says email alerts for satellite changes are not sent yet; /yc/ and /yc/try/ kept 5 minutes at the edge\n- Kolaboro.com n36e: project header says Updated when the date is a data change after the last check (no more two different Last checked dates)\n\nSummary taken from the day's commit subjects.",
+   "content_html": "<ul><li>Kolaboro.com n35b: dark mode contrast on /trust/, the live report and /digest/; /accessibility/ block shows the 22 Nov run (0 serious or critical on 535 pages)</li><li>Kolaboro.com n35b: price per m2 and incident data merged into /data/n35b.json, build step folded into open/n34b-build.py (Pages file limit: 2 files fewer)</li><li>Kolaboro.com n36e: free add-and-check request for projects not in the database, live email alerts copy, compare by name, clearer API key errors, /yc/try/</li><li>Kolaboro.com n35a: signal streams in one file instead of 16 shards (Pages deployment file count); ask tests generator removed (the JSON stays)</li><li>Kolaboro.com n36e: satellite watch copy says email alerts for satellite changes are not sent yet; /yc/ and /yc/try/ kept 5 minutes at the edge</li><li>Kolaboro.com n36e: project header says Updated when the date is a data change after the last check (no more two different Last checked dates)</li></ul><p>Summary taken from the day&#x27;s commit subjects.</p>",
+   "date_published": "2026-11-22T00:00:00Z",
+   "date_modified": "2026-11-22T15:41:19Z",
+   "_kolaboro": {
+    "ships": 28,
+    "data_updates": 8,
+    "method": "deterministic"
    }
   },
   {
