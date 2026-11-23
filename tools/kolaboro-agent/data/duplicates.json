@@ -771,6 +771,14 @@
   ]
  },
  {
+  "a": "fahid-beach-residences",
+  "b": "fahid-beach-terraces-aldar",
+  "market": "Abu Dhabi",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "cove-edition-5-by-imtiaz",
   "b": "cove-by-imtiaz",
   "market": "Dubai",
@@ -3308,6 +3316,22 @@
   ]
  },
  {
+  "a": "prestige-one-residences",
+  "b": "seaside-by-prestige-one",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "prestige-one-residences",
+  "b": "the-waterway-by-prestige-one",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "aum-99-residences",
   "b": "ag-aum-residence",
   "market": "Dubai",
@@ -3318,6 +3342,14 @@
  {
   "a": "the-autograph-s-series",
   "b": "the-autograph-i-series",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "zenith-residences",
+  "b": "zenith-tower-j1",
   "market": "Dubai",
   "why": [
    "similar name"
@@ -3828,6 +3860,14 @@
   "market": "Malaysia",
   "why": [
    "similar name"
+  ]
+ },
+ {
+  "a": "residensi-ria",
+  "b": "kondominium-linari",
+  "market": "Malaysia",
+  "why": [
+   "147 m apart"
   ]
  },
  {
