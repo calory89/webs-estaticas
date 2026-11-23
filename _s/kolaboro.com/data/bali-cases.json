@@ -1,6 +1,6 @@
 {
  "updated": "2026-11-23",
- "markets": 182,
+ "markets": 191,
  "countries": 94,
  "note": "Each project has a named page with sourced facts, except projects in Sumba (conflict of interest). Advertised claims, not verified facts.",
  "cases": [
@@ -22176,13 +22176,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 3,
+    "unverified": 7,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 1,
+   "profile": 6,
    "fp": {
     "sha256": "405a5a1617a5e3f776367d6a82809a47c74d97ef9eae8307bc3a5d4ec9945189",
     "date": "2026-11-15"
@@ -23969,13 +23969,13 @@
    "vscore": 1,
    "claims": {
     "verified": 4,
-    "unverified": 6,
+    "unverified": 7,
     "contradicted": 1
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 12,
+   "profile": 14,
    "fp": {
     "sha256": "fb23c33bb846445a5e8dcee99b944958e93a7f54de511e40e582a85f033ce388",
     "date": "2026-11-05"
@@ -24034,13 +24034,13 @@
    "vscore": 2,
    "claims": {
     "verified": 7,
-    "unverified": 3,
+    "unverified": 4,
     "contradicted": 1
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 8,
+   "profile": 10,
    "fp": {
     "sha256": "95b767a9568ffe05a60141ac51c6fadf74939e263d2da5a8cf2adc10f052a508",
     "date": "2026-11-05"
@@ -24053,12 +24053,12 @@
    "region": "Brisbane",
    "docs": false,
    "plans": false,
-   "band": "Price not stated",
+   "band": "$400k and up",
    "done": 2026,
    "title": null,
    "lease": null,
    "yield": null,
-   "units": null,
+   "units": 124,
    "checks": {
     "permit": 0,
     "escrow": null,
@@ -24100,13 +24100,13 @@
    "vscore": 0,
    "claims": {
     "verified": 1,
-    "unverified": 3,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 3,
+   "profile": 11,
    "fp": {
     "sha256": "bf495553e2fc94be9e26e70c2f86a10bcdeae2b6e6728302e85d156a1ca513c5",
     "date": "2026-11-15"
@@ -24120,7 +24120,7 @@
    "docs": false,
    "plans": false,
    "band": "Price not stated",
-   "done": null,
+   "done": 2029,
    "title": null,
    "lease": null,
    "yield": null,
@@ -24152,6 +24152,7 @@
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2029: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
    ],
    "verified": {
@@ -24165,13 +24166,13 @@
    "vscore": 0,
    "claims": {
     "verified": 1,
-    "unverified": 4,
+    "unverified": 7,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 4
+   "profile": 7
   },
   {
    "id": "BNE-005",
@@ -24227,13 +24228,385 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 7,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 3
+   "profile": 6
+  },
+  {
+   "id": "BNE-006",
+   "market": "Brisbane",
+   "country": "Australia",
+   "region": "Brisbane",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 96,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 9
+  },
+  {
+   "id": "BNE-007",
+   "market": "Brisbane",
+   "country": "Australia",
+   "region": "Brisbane",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2029,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 119,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2029: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "BNE-008",
+   "market": "Brisbane",
+   "country": "Australia",
+   "region": "Brisbane",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 125,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "BNE-009",
+   "market": "Brisbane",
+   "country": "Australia",
+   "region": "Brisbane",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2030,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 141,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2030: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "BNE-010",
+   "market": "Brisbane",
+   "country": "Australia",
+   "region": "Brisbane",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2036,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 477,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2036: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "BNE-011",
+   "market": "Brisbane",
+   "country": "Australia",
+   "region": "Brisbane",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 74,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
   },
   {
    "id": "BUC-001",
@@ -25309,6 +25682,68 @@
    "delay": null,
    "overdue": null,
    "profile": 8
+  },
+  {
+   "id": "CAI-001",
+   "market": "Cairns",
+   "country": "Australia",
+   "region": "Cairns",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2030,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 45,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2030: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
   },
   {
    "id": "KHM-001",
@@ -27519,6 +27954,68 @@
    "delay": null,
    "overdue": null,
    "profile": 2
+  },
+  {
+   "id": "CBR-001",
+   "market": "Canberra",
+   "country": "Australia",
+   "region": "Canberra",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2029,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 44,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2029: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
   },
   {
    "id": "CPT-001",
@@ -98422,13 +98919,13 @@
    "vscore": 3,
    "claims": {
     "verified": 5,
-    "unverified": 5,
+    "unverified": 7,
     "contradicted": 1
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 9,
+   "profile": 12,
    "fp": {
     "sha256": "8b77fff9715fae7019be2408d177ab6334435fa503c9544540165fa890d7e5b3",
     "date": "2026-11-05"
@@ -98488,13 +98985,13 @@
    "vscore": 0,
    "claims": {
     "verified": 3,
-    "unverified": 8,
+    "unverified": 10,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 10,
+   "profile": 13,
    "fp": {
     "sha256": "5074ed458ab5e8dd101eb0f2359a83679e1c6659b9e826b3a7e92ad2f87c437b",
     "date": "2026-11-05"
@@ -98554,13 +99051,13 @@
    "vscore": 0,
    "claims": {
     "verified": 4,
-    "unverified": 6,
+    "unverified": 8,
     "contradicted": 1
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 14,
+   "profile": 17,
    "fp": {
     "sha256": "4a916a1fd10885acb7ab551113ee5234b80e735d9ebf30830917989b6838eba3",
     "date": "2026-11-05"
@@ -98619,13 +99116,13 @@
    "vscore": 0,
    "claims": {
     "verified": 5,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 2
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 14,
+   "profile": 16,
    "fp": {
     "sha256": "33a7b32e787f65df60eb47b74a174ff565b6462d2874f4bc817d39c01538562a",
     "date": "2026-11-05"
@@ -98684,13 +99181,13 @@
    "vscore": 2,
    "claims": {
     "verified": 5,
-    "unverified": 7,
+    "unverified": 8,
     "contradicted": 1
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 12,
+   "profile": 14,
    "fp": {
     "sha256": "eda452d2c44337ac81a44986bb2f4f62609cd918e45ec9a3e3e3f5c3151caa84",
     "date": "2026-11-05"
@@ -98757,13 +99254,13 @@
    "vscore": 2,
    "claims": {
     "verified": 7,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 1
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 10,
+   "profile": 12,
    "fp": {
     "sha256": "10d461a8c564a0d4a821d3b9f6a5cad13fc9a308ab186524e30c16e3448b9985",
     "date": "2026-11-05"
@@ -98822,13 +99319,13 @@
    "vscore": 1,
    "claims": {
     "verified": 3,
-    "unverified": 6,
+    "unverified": 8,
     "contradicted": 1
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 11,
+   "profile": 16,
    "fp": {
     "sha256": "8289482ad86544726836cfe5a8c2a37c28679137bd151d9ad77b8088e32023ee",
     "date": "2026-11-05"
@@ -98888,13 +99385,13 @@
    "vscore": 3,
    "claims": {
     "verified": 5,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 2
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 11,
+   "profile": 13,
    "fp": {
     "sha256": "35b48fa5eb675285ac24cbca1d4f4fc46be62c97b14a48fac6ce0c89575090c4",
     "date": "2026-11-05"
@@ -98912,7 +99409,7 @@
    "title": null,
    "lease": null,
    "yield": null,
-   "units": null,
+   "units": 637,
    "checks": {
     "permit": 1,
     "escrow": null,
@@ -98955,13 +99452,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 9,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 5,
+   "profile": 8,
    "fp": {
     "sha256": "107fa89f1401a7d4654ebd1b9df1883cee31a837b32d9694af07af7aab585b10",
     "date": "2026-11-20"
@@ -99021,13 +99518,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 3,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 4
+   "profile": 7
   },
   {
    "id": "OOL-011",
@@ -99036,7 +99533,7 @@
    "region": "Gold Coast",
    "docs": false,
    "plans": false,
-   "band": "Price not stated",
+   "band": "$400k and up",
    "done": 2028,
    "title": null,
    "lease": null,
@@ -99083,13 +99580,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 4
+   "profile": 9
   },
   {
    "id": "OOL-012",
@@ -99098,7 +99595,7 @@
    "region": "Gold Coast",
    "docs": false,
    "plans": false,
-   "band": "Price not stated",
+   "band": "$400k and up",
    "done": 2027,
    "title": null,
    "lease": null,
@@ -99145,13 +99642,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 3,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 4
+   "profile": 9
   },
   {
    "id": "OOL-013",
@@ -99160,12 +99657,12 @@
    "region": "Gold Coast",
    "docs": false,
    "plans": false,
-   "band": "Price not stated",
+   "band": "$400k and up",
    "done": 2028,
    "title": null,
    "lease": null,
    "yield": null,
-   "units": null,
+   "units": 94,
    "checks": {
     "permit": 0,
     "escrow": null,
@@ -99207,13 +99704,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 3
+   "profile": 9
   },
   {
    "id": "OOL-014",
@@ -99223,7 +99720,7 @@
    "docs": false,
    "plans": false,
    "band": "Price not stated",
-   "done": null,
+   "done": 2031,
    "title": null,
    "lease": null,
    "yield": null,
@@ -99255,6 +99752,7 @@
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2031: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
    ],
    "verified": {
@@ -99268,13 +99766,323 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 3,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 3
+   "profile": 5
+  },
+  {
+   "id": "OOL-015",
+   "market": "Gold Coast",
+   "country": "Australia",
+   "region": "Gold Coast",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2026,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 102,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "OOL-016",
+   "market": "Gold Coast",
+   "country": "Australia",
+   "region": "Gold Coast",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 19,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "OOL-017",
+   "market": "Gold Coast",
+   "country": "Australia",
+   "region": "Gold Coast",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 125,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 9
+  },
+  {
+   "id": "OOL-018",
+   "market": "Gold Coast",
+   "country": "Australia",
+   "region": "Gold Coast",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2031,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 81,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2031: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "OOL-019",
+   "market": "Gold Coast",
+   "country": "Australia",
+   "region": "Gold Coast",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2030,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 48,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2030: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
   },
   {
    "id": "GRC-001",
@@ -101948,6 +102756,68 @@
    "profile": 6
   },
   {
+   "id": "HOR-001",
+   "market": "Horsley",
+   "country": "Australia",
+   "region": "Horsley",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2032,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 236,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2032: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
    "id": "HOU-001",
    "market": "Houston",
    "country": "USA",
@@ -102473,6 +103343,68 @@
    "delay": null,
    "overdue": null,
    "profile": 8
+  },
+  {
+   "id": "HUS-001",
+   "market": "Huskisson",
+   "country": "Australia",
+   "region": "Huskisson",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2030,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 35,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2030: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
   },
   {
    "id": "IST-001",
@@ -118903,13 +119835,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 7,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 6
   },
   {
    "id": "LOM-001",
@@ -120592,7 +121524,7 @@
    "vscore": 3,
    "claims": {
     "verified": 4,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 1
    },
    "stage": "under construction",
@@ -120658,7 +121590,7 @@
    "vscore": 2,
    "claims": {
     "verified": 3,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 2
    },
    "stage": "under construction",
@@ -120991,7 +121923,7 @@
    "vscore": 2,
    "claims": {
     "verified": 5,
-    "unverified": 3,
+    "unverified": 4,
     "contradicted": 2
    },
    "stage": "under construction",
@@ -121056,13 +121988,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 6,
+    "unverified": 9,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 4,
+   "profile": 8,
    "fp": {
     "sha256": "7b51b0d0a68f522fb9ee80b863aaa9d68073d162ae21fc08273396f736028771",
     "date": "2026-11-15"
@@ -121121,13 +122053,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 7,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 2,
+   "profile": 5,
    "fp": {
     "sha256": "7691c26986f7d66bbfc8152f82bd5d27dde941262d04e66fc54f7bc2b5f01100",
     "date": "2026-11-15"
@@ -121187,13 +122119,13 @@
    "vscore": 0,
    "claims": {
     "verified": 1,
-    "unverified": 5,
+    "unverified": 9,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": 8,
-   "profile": 4
+   "profile": 9
   },
   {
    "id": "LON-011",
@@ -121249,13 +122181,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 7,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 6
   },
   {
    "id": "CAB-001",
@@ -127884,13 +128816,13 @@
    "vscore": 1,
    "claims": {
     "verified": 2,
-    "unverified": 6,
+    "unverified": 8,
     "contradicted": 2
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 13,
+   "profile": 15,
    "fp": {
     "sha256": "da831842771d0cac10adc7bf02e48b219dea1a2ac90a98d4b1e9d6f6a5ac2588",
     "date": "2026-11-05"
@@ -128027,13 +128959,13 @@
    "vscore": 2,
    "claims": {
     "verified": 4,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 4
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 14,
+   "profile": 15,
    "fp": {
     "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "date": "2026-11-04"
@@ -128313,7 +129245,7 @@
    "vscore": 3,
    "claims": {
     "verified": 5,
-    "unverified": 3,
+    "unverified": 4,
     "contradicted": 3
    },
    "stage": "off-plan",
@@ -130076,13 +131008,13 @@
    "vscore": 3,
    "claims": {
     "verified": 7,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 1
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 11,
+   "profile": 13,
    "fp": {
     "sha256": "f97f18f89a229ef573a27c6d196050fbcfb05c13ef81bd6973658d09750835f4",
     "date": "2026-11-05"
@@ -130142,13 +131074,13 @@
    "vscore": 2,
    "claims": {
     "verified": 7,
-    "unverified": 2,
+    "unverified": 3,
     "contradicted": 2
    },
    "stage": "off-plan",
    "delay": 6.0,
    "overdue": null,
-   "profile": 12,
+   "profile": 14,
    "fp": {
     "sha256": "f83e4a4e7b6351bcdefb247ad4154f9ec9ab59f9706c669950366578325b16bb",
     "date": "2026-11-05"
@@ -130208,17 +131140,1505 @@
    "vscore": 2,
    "claims": {
     "verified": 3,
-    "unverified": 6,
+    "unverified": 7,
     "contradicted": 1
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 10,
+   "profile": 12,
    "fp": {
     "sha256": "d50229b77be304043d9ed1c2ce83979a346dd9567101889f3dd58af9d52e894d",
     "date": "2026-11-05"
    }
+  },
+  {
+   "id": "MEL-004",
+   "market": "Melbourne",
+   "country": "Australia",
+   "region": "Melbourne",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2030,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 55,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2030: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "MEL-005",
+   "market": "Melbourne",
+   "country": "Australia",
+   "region": "Melbourne",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2026,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 18,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 5
+  },
+  {
+   "id": "MEL-006",
+   "market": "Melbourne",
+   "country": "Australia",
+   "region": "Melbourne",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2030,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 30,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2030: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "MEL-007",
+   "market": "Melbourne",
+   "country": "Australia",
+   "region": "Melbourne",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 31,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 9
+  },
+  {
+   "id": "MEL-008",
+   "market": "Melbourne",
+   "country": "Australia",
+   "region": "Melbourne",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 33,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "MEL-009",
+   "market": "Melbourne",
+   "country": "Australia",
+   "region": "Melbourne",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2029,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 54,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2029: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "MEL-010",
+   "market": "Melbourne",
+   "country": "Australia",
+   "region": "Melbourne",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2029,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 566,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2029: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "MEL-011",
+   "market": "Melbourne",
+   "country": "Australia",
+   "region": "Melbourne",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2026,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 191,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "MEL-012",
+   "market": "Melbourne",
+   "country": "Australia",
+   "region": "Melbourne",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2029,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 304,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2029: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "MEL-013",
+   "market": "Melbourne",
+   "country": "Australia",
+   "region": "Melbourne",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 149,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "MEL-014",
+   "market": "Melbourne",
+   "country": "Australia",
+   "region": "Melbourne",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2031,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 200,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2031: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "MEL-015",
+   "market": "Melbourne",
+   "country": "Australia",
+   "region": "Melbourne",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2033,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 478,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2033: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "MEL-016",
+   "market": "Melbourne",
+   "country": "Australia",
+   "region": "Melbourne",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2033,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 687,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2033: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "MEL-017",
+   "market": "Melbourne",
+   "country": "Australia",
+   "region": "Melbourne",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2026,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 499,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "MEL-018",
+   "market": "Melbourne",
+   "country": "Australia",
+   "region": "Melbourne",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2029,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 349,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2029: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "MEL-019",
+   "market": "Melbourne",
+   "country": "Australia",
+   "region": "Melbourne",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 77,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "MEL-020",
+   "market": "Melbourne",
+   "country": "Australia",
+   "region": "Melbourne",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 569,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "MEL-021",
+   "market": "Melbourne",
+   "country": "Australia",
+   "region": "Melbourne",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2031,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 234,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2031: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "MEL-022",
+   "market": "Melbourne",
+   "country": "Australia",
+   "region": "Melbourne",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 246,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "MEL-023",
+   "market": "Melbourne",
+   "country": "Australia",
+   "region": "Melbourne",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 283,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "MEL-024",
+   "market": "Melbourne",
+   "country": "Australia",
+   "region": "Melbourne",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2029,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 60,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2029: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "MEL-025",
+   "market": "Melbourne",
+   "country": "Australia",
+   "region": "Melbourne",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 188,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 9
+  },
+  {
+   "id": "MEL-026",
+   "market": "Melbourne",
+   "country": "Australia",
+   "region": "Melbourne",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 47,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 9
+  },
+  {
+   "id": "MEL-027",
+   "market": "Melbourne",
+   "country": "Australia",
+   "region": "Melbourne",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 587,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 8
   },
   {
    "id": "MEX-001",
@@ -138404,6 +140824,68 @@
    "profile": 2
   },
   {
+   "id": "NEW-001",
+   "market": "Newcastle",
+   "country": "Australia",
+   "region": "Newcastle",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 31,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
    "id": "NIC-001",
    "market": "Nicaragua",
    "country": "Nicaragua",
@@ -138723,6 +141205,68 @@
     "sha256": "2a9760ca55d5e65a4668f95896d9e1c4da5afd71e2d6277c5f31cd931a746e03",
     "date": "2026-11-05"
    }
+  },
+  {
+   "id": "NOO-001",
+   "market": "Noosa",
+   "country": "Australia",
+   "region": "Noosa",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 96,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
   },
   {
    "id": "NCY-001",
@@ -144949,13 +147493,13 @@
    "vscore": 2,
    "claims": {
     "verified": 7,
-    "unverified": 3,
+    "unverified": 4,
     "contradicted": 2
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 11,
+   "profile": 13,
    "fp": {
     "sha256": "6f989df651e16ff3423d5294153f20b39150ed0cfb5787ff7452609a539c2549",
     "date": "2026-11-05"
@@ -145014,13 +147558,13 @@
    "vscore": 1,
    "claims": {
     "verified": 5,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 1
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 9,
+   "profile": 13,
    "fp": {
     "sha256": "309ec24d711946621e0fecf6af0aeacdf1d880b62a7f056a8d82e678d2daa479",
     "date": "2026-11-05"
@@ -145080,13 +147624,13 @@
    "vscore": 0,
    "claims": {
     "verified": 1,
-    "unverified": 2,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 3
+   "profile": 7
   },
   {
    "id": "PER-004",
@@ -145142,13 +147686,13 @@
    "vscore": 0,
    "claims": {
     "verified": 1,
-    "unverified": 3,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 3
+   "profile": 9
   },
   {
    "id": "PER-005",
@@ -145204,7 +147748,255 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 3,
+    "unverified": 6,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "PER-006",
+   "market": "Perth",
+   "country": "Australia",
+   "region": "Perth",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2030,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 26,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2030: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "PER-007",
+   "market": "Perth",
+   "country": "Australia",
+   "region": "Perth",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2033,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 272,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2033: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "PER-008",
+   "market": "Perth",
+   "country": "Australia",
+   "region": "Perth",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 185,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 9
+  },
+  {
+   "id": "PER-009",
+   "market": "Perth",
+   "country": "Australia",
+   "region": "Perth",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2029,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 72,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2029: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
     "contradicted": 0
    },
    "stage": "under construction",
@@ -153125,6 +155917,68 @@
    "delay": null,
    "overdue": null,
    "profile": 3
+  },
+  {
+   "id": "PQQ-001",
+   "market": "Port Macquarie",
+   "country": "Australia",
+   "region": "Port Macquarie",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2029,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 41,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2029: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
   },
   {
    "id": "POR-001",
@@ -168917,6 +171771,130 @@
    }
   },
   {
+   "id": "SHE-001",
+   "market": "Shell Cove",
+   "country": "Australia",
+   "region": "Shell Cove",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2029,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 155,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2029: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "SHE-002",
+   "market": "Shell Cove",
+   "country": "Australia",
+   "region": "Shell Cove",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 88,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 9
+  },
+  {
    "id": "SIN-001",
    "market": "Singapore",
    "country": "Singapore",
@@ -172495,6 +175473,192 @@
    }
   },
   {
+   "id": "SUN-001",
+   "market": "Sunshine Coast",
+   "country": "Australia",
+   "region": "Sunshine Coast",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 32,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "SUN-002",
+   "market": "Sunshine Coast",
+   "country": "Australia",
+   "region": "Sunshine Coast",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 24,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "SUN-003",
+   "market": "Sunshine Coast",
+   "country": "Australia",
+   "region": "Sunshine Coast",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 248,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 9
+  },
+  {
    "id": "SYD-001",
    "market": "Sydney",
    "country": "Australia",
@@ -172549,13 +175713,13 @@
    "vscore": 2,
    "claims": {
     "verified": 6,
-    "unverified": 5,
+    "unverified": 8,
     "contradicted": 1
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 9,
+   "profile": 12,
    "fp": {
     "sha256": "2554c5198844d65ebd7d4708800d53d37b4163faa51e545b3c98253fc15f9e8c",
     "date": "2026-11-05"
@@ -172614,13 +175778,13 @@
    "vscore": 2,
    "claims": {
     "verified": 3,
-    "unverified": 7,
+    "unverified": 9,
     "contradicted": 2
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 14,
+   "profile": 17,
    "fp": {
     "sha256": "bd7d7cca0eaa1f1fd94b3086dfefa1ac111cdda05b6e8ccef5d1a64aef0d3dff",
     "date": "2026-11-05"
@@ -172698,13 +175862,13 @@
    "vscore": 3,
    "claims": {
     "verified": 5,
-    "unverified": 5,
+    "unverified": 7,
     "contradicted": 2
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 10,
+   "profile": 13,
    "fp": {
     "sha256": "ac009cfc3b177dc55329eb227f24ca64ca367d45ab961e562772dddb148466b9",
     "date": "2026-11-05"
@@ -172764,13 +175928,13 @@
    "vscore": 3,
    "claims": {
     "verified": 9,
-    "unverified": 1,
+    "unverified": 2,
     "contradicted": 1
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 13,
+   "profile": 17,
    "fp": {
     "sha256": "8b85b863501d2bc4a8d7c0b3e027504a0e4d9f03b342e0f4de8da34c0dcee64f",
     "date": "2026-11-05"
@@ -172830,13 +175994,13 @@
    "vscore": 2,
    "claims": {
     "verified": 6,
-    "unverified": 2,
+    "unverified": 3,
     "contradicted": 2
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 8,
+   "profile": 11,
    "fp": {
     "sha256": "72ecde9401ee5ee3292427eccb129f7c8a2c17515f52e3c0664c0dabdda87c0d",
     "date": "2026-11-05"
@@ -172963,13 +176127,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 8,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 5,
+   "profile": 8,
    "fp": {
     "sha256": "3f20b4406a0e3fafc7c0e8641b44c2c7daa9abe99b8fec19b6ba2df385394ed6",
     "date": "2026-11-20"
@@ -172987,7 +176151,7 @@
    "title": null,
    "lease": null,
    "yield": null,
-   "units": null,
+   "units": 241,
    "checks": {
     "permit": 1,
     "escrow": null,
@@ -173030,13 +176194,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 3,
+    "unverified": 7,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 3,
+   "profile": 8,
    "fp": {
     "sha256": "64d02496b2669efe4538924504d2670ff21d0c66153e7f452c37938ca264fe96",
     "date": "2026-11-20"
@@ -173096,13 +176260,13 @@
    "vscore": 0,
    "claims": {
     "verified": 1,
-    "unverified": 2,
+    "unverified": 4,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 3
+   "profile": 5
   },
   {
    "id": "SYD-010",
@@ -173116,7 +176280,7 @@
    "title": null,
    "lease": null,
    "yield": null,
-   "units": null,
+   "units": 214,
    "checks": {
     "permit": 0,
     "escrow": null,
@@ -173159,13 +176323,2431 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 9,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 8
+  },
+  {
+   "id": "SYD-011",
+   "market": "Sydney",
+   "country": "Australia",
+   "region": "Sydney",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 111,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "SYD-012",
+   "market": "Sydney",
+   "country": "Australia",
+   "region": "Sydney",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 122,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 5
+  },
+  {
+   "id": "SYD-013",
+   "market": "Sydney",
+   "country": "Australia",
+   "region": "Sydney",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2030,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 133,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2030: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "SYD-014",
+   "market": "Sydney",
+   "country": "Australia",
+   "region": "Sydney",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 86,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "SYD-015",
+   "market": "Sydney",
+   "country": "Australia",
+   "region": "Sydney",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2029,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 31,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2029: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "SYD-016",
+   "market": "Sydney",
+   "country": "Australia",
+   "region": "Sydney",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2029,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 95,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2029: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "SYD-017",
+   "market": "Sydney",
+   "country": "Australia",
+   "region": "Sydney",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2030,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 72,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2030: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "SYD-018",
+   "market": "Sydney",
+   "country": "Australia",
+   "region": "Sydney",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 16,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 8
+  },
+  {
+   "id": "SYD-019",
+   "market": "Sydney",
+   "country": "Australia",
+   "region": "Sydney",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 26,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "SYD-020",
+   "market": "Sydney",
+   "country": "Australia",
+   "region": "Sydney",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2030,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 255,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2030: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "SYD-021",
+   "market": "Sydney",
+   "country": "Australia",
+   "region": "Sydney",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2031,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 228,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2031: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "SYD-022",
+   "market": "Sydney",
+   "country": "Australia",
+   "region": "Sydney",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2029,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 514,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2029: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "SYD-023",
+   "market": "Sydney",
+   "country": "Australia",
+   "region": "Sydney",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 368,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "SYD-024",
+   "market": "Sydney",
+   "country": "Australia",
+   "region": "Sydney",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 368,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "SYD-025",
+   "market": "Sydney",
+   "country": "Australia",
+   "region": "Sydney",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 21,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "SYD-026",
+   "market": "Sydney",
+   "country": "Australia",
+   "region": "Sydney",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 150,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
    "profile": 5
+  },
+  {
+   "id": "SYD-027",
+   "market": "Sydney",
+   "country": "Australia",
+   "region": "Sydney",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 204,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 6
+  },
+  {
+   "id": "SYD-028",
+   "market": "Sydney",
+   "country": "Australia",
+   "region": "Sydney",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 285,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "SYD-029",
+   "market": "Sydney",
+   "country": "Australia",
+   "region": "Sydney",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2031,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 332,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2031: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "SYD-030",
+   "market": "Sydney",
+   "country": "Australia",
+   "region": "Sydney",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 604,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "SYD-031",
+   "market": "Sydney",
+   "country": "Australia",
+   "region": "Sydney",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 100,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 5
+  },
+  {
+   "id": "SYD-032",
+   "market": "Sydney",
+   "country": "Australia",
+   "region": "Sydney",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 128,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 9
+  },
+  {
+   "id": "SYD-033",
+   "market": "Sydney",
+   "country": "Australia",
+   "region": "Sydney",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2029,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 18,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2029: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "SYD-034",
+   "market": "Sydney",
+   "country": "Australia",
+   "region": "Sydney",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2026,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 268,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "SYD-035",
+   "market": "Sydney",
+   "country": "Australia",
+   "region": "Sydney",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 368,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 9
+  },
+  {
+   "id": "SYD-036",
+   "market": "Sydney",
+   "country": "Australia",
+   "region": "Sydney",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 40,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 5
+  },
+  {
+   "id": "SYD-037",
+   "market": "Sydney",
+   "country": "Australia",
+   "region": "Sydney",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2026,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 158,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 5
+  },
+  {
+   "id": "SYD-038",
+   "market": "Sydney",
+   "country": "Australia",
+   "region": "Sydney",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 777,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "SYD-039",
+   "market": "Sydney",
+   "country": "Australia",
+   "region": "Sydney",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 41,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 5
+  },
+  {
+   "id": "SYD-040",
+   "market": "Sydney",
+   "country": "Australia",
+   "region": "Sydney",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2026,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 88,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "SYD-041",
+   "market": "Sydney",
+   "country": "Australia",
+   "region": "Sydney",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2030,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 23,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2030: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "SYD-042",
+   "market": "Sydney",
+   "country": "Australia",
+   "region": "Sydney",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 400,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "SYD-043",
+   "market": "Sydney",
+   "country": "Australia",
+   "region": "Sydney",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2030,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 67,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2030: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "SYD-044",
+   "market": "Sydney",
+   "country": "Australia",
+   "region": "Sydney",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 873,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "SYD-045",
+   "market": "Sydney",
+   "country": "Australia",
+   "region": "Sydney",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 488,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 9
+  },
+  {
+   "id": "SYD-046",
+   "market": "Sydney",
+   "country": "Australia",
+   "region": "Sydney",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2026,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 309,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 9
+  },
+  {
+   "id": "SYD-047",
+   "market": "Sydney",
+   "country": "Australia",
+   "region": "Sydney",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 209,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "SYD-048",
+   "market": "Sydney",
+   "country": "Australia",
+   "region": "Sydney",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2028,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 16,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "SYD-049",
+   "market": "Sydney",
+   "country": "Australia",
+   "region": "Sydney",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": 2029,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 71,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2029: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
   },
   {
    "id": "TAI-001",
@@ -181817,29 +187399,29 @@
  ],
  "db": {
   "updated": "2026-11-23",
-  "projects": 2736,
-  "markets": 182,
+  "projects": 2826,
+  "markets": 191,
   "countries": 94,
-  "sources": 8771,
-  "data_points": 69300,
+  "sources": 8896,
+  "data_points": 71182,
   "claims": {
    "verified": 8142,
-   "unverified": 9919,
+   "unverified": 10200,
    "contradicted": 1370
   },
-  "claims_total": 19431,
-  "deep_profiles": 2736,
+  "claims_total": 19712,
+  "deep_profiles": 2826,
   "checks_by_level": {
    "registry": 2635,
    "independent": 483,
    "developer": 2020,
    "contradicted": 103,
-   "none": 11175
+   "none": 11715
   },
-  "checks_rated": 16416,
+  "checks_rated": 16956,
   "stages": {
-   "off-plan": 1021,
-   "under construction": 1652,
+   "off-plan": 1060,
+   "under construction": 1703,
    "completed": 17
   },
   "all_six_public": 65,
