@@ -246,6 +246,7 @@ export async function handle(req, u, env, ctx, shell) {
   if ((m = p.match(RX_JS))) { const r = IX.bySlug.get(m[1]); return r ? recJson(r) : null; }
   if (p === '/data/gaps.csv') return gapsCsv();
   try { return await route(env, shell, p); } catch (e) {
+    try { const S = await import('./kbx_strings.js'); if (!S.isReady()) await S.ready(env); } catch (e3) {}   // r3u: the page tables of kbx_named may have failed to load for this request
     try { return await route(env, shell, p); } catch (e2) { return new Response('Temporarily unavailable, please retry.', { status: 503, headers: { 'retry-after': '5', 'cache-control': 'no-store', 'content-type': 'text/plain; charset=utf-8', 'x-kb-err': String(e2 && e2.message || e2).slice(0, 120).replace(/[^\x20-\x7e]/g, '') } }); }
   }
 }
