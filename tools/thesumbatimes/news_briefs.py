@@ -3,13 +3,187 @@
 # time (WITA, HH:MM), dateline, kind ("brief" | "guide" | "letter").
 WA = "https://www.waingapu.com/"
 BRIEFS = [
+{'section': 'culture',
+ 'slug': 'east-sumba-creative-economy-master-plan-weavers-tenun-2026',
+ 'date': '2026-11-24',
+ 'time': '06:00',
+ 'dateline': 'WAINGAPU',
+ 'kind': 'brief',
+ 'top': True,
+ 'slugs': {'es': 'plan-economia-creativa-sumba-oriental-tejedoras-tenun-2026',
+           'id': 'rindekraf-sumba-timur-2026-2045-penenun-tenun-konsultasi-publik'},
+ 'keywords': {'en': ['Sumba ikat weaving',
+                     'East Sumba tenun',
+                     'Sumba creative economy',
+                     'Sumba weavers',
+                     'Sumba textiles',
+                     'Rindekraf Sumba Timur'],
+              'es': ['tejido ikat de Sumba',
+                     'tenun de Sumba Oriental',
+                     'economía creativa Sumba',
+                     'tejedoras de Sumba',
+                     'textiles de Sumba',
+                     'Rindekraf Sumba Oriental'],
+              'id': ['tenun Sumba Timur',
+                     'Rindekraf Sumba Timur',
+                     'ekonomi kreatif Sumba',
+                     'penenun Sumba',
+                     'konsultasi publik Rindekraf',
+                     'kain tenun Sumba']},
+ 'en': {'title': 'East Sumba drafts a creative economy plan, with weavers on the agenda',
+        'dek': 'A public consultation on 19 November opened the 2026-2045 master plan; no budget, targets or adoption date have been '
+               'published.',
+        'answer': 'East Sumba regency began drafting a creative-economy master plan for 2026-2045 with a public consultation on 19 '
+                  'November 2026, Waingapu.Com reported on 20 November. One session focused on protecting and improving the welfare of '
+                  'weavers. No budget, targets or adoption date were reported.',
+        'keys': ['The regency held a public consultation on 19 November 2026 to draft its Rencana Induk Ekonomi Kreatif (Rindekraf) '
+                 '2026-2045.',
+                 'A researcher presented "From Certificate to Protection, Governance and Welfare of Weavers"; the report does not say '
+                 'which certificate is meant.',
+                 'The aim is for arts, crafts and traditions to become part of a productive local economy.',
+                 'No funding, targets or adoption date are reported, and the account comes from one outlet.'],
+        'visitors': 'Nothing changes yet. If you buy tenun, ask who made it and how; rules on protecting or certifying cloth may follow, '
+                    'but none are announced.',
+        'body': '<p>East Sumba regency has begun drafting a master plan for its creative economy through 2045, and a first public '
+                "consultation on Thursday 19 November 2026 gave particular room to the people who weave the island's cloth, Waingapu.Com "
+                'reported on 20 November. The plan is called the Rencana Induk Ekonomi Kreatif (Rindekraf) 2026-2045. The report gives no '
+                'budget, targets, timeline or adoption date.</p><h2>What was discussed</h2><p>The consultation took place in the Aula '
+                'Patola Ratu at the regency secretariat in Waingapu and was opened by regional secretary Umbu Ngadu Ndamu. According to '
+                'Waingapu.Com, one talk drew particular attention: researcher Arianti Ina Restiani Hunga, joining online from Salatiga, '
+                'presented "From Certificate to Protection, Governance and Welfare of Weavers". The paper says it covered protecting '
+                'creative work and identity, and how recognition and good management can add to the welfare of artists and craftspeople. '
+                'The report does not say which certificate or protection scheme is under discussion.</p><p>Other speakers were Maklon '
+                'Kila, a former rector of UNKRISWINA Sumba, and Adi Papa Pandarangga of the regency planning agency Bappeda. Yulius '
+                'Ngenju, Assistant II to the regional secretary, moderated, and participants put questions and suggestions.</p><h2>Why '
+                'weaving is central</h2><p>The outlet describes East Sumba tenun, the hand-woven ikat cloth, as having strong motifs, '
+                'cultural values and a demanding making process. It says this heritage needs policy support, market development, '
+                'protection of the work and stronger skills for the people who make it if it is to bring wider economic benefit. The plan '
+                'is meant to set a strategy in which arts, crafts, traditions and other local creative products become part of a '
+                'productive economy.</p><p>What is not reported matters too: no funding, sales or income figures for weavers, no targets '
+                'and no date for the final plan. Everything here rests on one outlet, so treat it as single-source until the regency '
+                'publishes its own notice.</p><h2>What it means for visitors, residents and investors</h2><p>Visitors: nothing changes '
+                'yet. If you buy tenun, ask who made it and how, and expect that rules on protecting or certifying cloth may follow, '
+                'although none are announced. Residents: weavers, workshops and cooperatives can follow further consultations through the '
+                'regency; the report does not say how to take part. Investors: this is the start of planning, not a programme with money '
+                'or incentives. Anyone considering textile, craft or cultural-tourism ventures should watch Bappeda and read the plan when '
+                'it is published before assuming any support.</p>',
+        'faq': [['What is Rindekraf?',
+                 "The Rencana Induk Ekonomi Kreatif, East Sumba's master plan for its creative economy for 2026-2045. Waingapu.Com says a "
+                 'public consultation on drafting it was held on 19 November 2026.'],
+                ['Does the plan include money for weavers?',
+                 'The report does not say. It gives no budget, income figures or targets, only that the consultation discussed protection, '
+                 'governance and welfare of weavers.']]},
+ 'es': {'title': 'Sumba Oriental prepara un plan de economía creativa hasta 2045',
+        'dek': 'Una consulta pública del 19 de noviembre abrió el plan 2026-2045, con las tejedoras en el debate; no hay presupuesto, '
+               'metas ni fecha de aprobación.',
+        'answer': 'El gobierno de Sumba Oriental empezó a redactar un plan director de economía creativa 2026-2045 con una consulta '
+                  'pública el 19 de noviembre de 2026, informó Waingapu.Com el 20 de noviembre. Una sesión se centró en proteger a las '
+                  'tejedoras y mejorar su bienestar. No se informó de presupuesto, metas ni fecha de aprobación.',
+        'keys': ['La regencia celebró una consulta pública el 19 de noviembre de 2026 para redactar su Rencana Induk Ekonomi Kreatif '
+                 '(Rindekraf) 2026-2045.',
+                 'Una investigadora presentó "Del certificado a la protección, la gobernanza y el bienestar de las tejedoras"; la '
+                 'información no aclara de qué certificado se trata.',
+                 'El objetivo es que las artes, la artesanía y las tradiciones formen parte de una economía local productiva.',
+                 'No hay financiación, metas ni fecha de aprobación, y todo procede de un solo medio.'],
+        'visitors': 'De momento no cambia nada. Si compra tenun, pregunte quién lo hizo y cómo; pueden llegar normas de protección o '
+                    'certificación del tejido, pero ninguna está anunciada.',
+        'body': '<p>El gobierno de Sumba Oriental ha empezado a redactar un plan director de economía creativa hasta 2045, y la primera '
+                'consulta pública, celebrada el jueves 19 de noviembre de 2026, dio un espacio especial a quienes tejen las telas de la '
+                'isla, informó Waingapu.Com el 20 de noviembre. El plan se llama Rencana Induk Ekonomi Kreatif (Rindekraf) 2026-2045. La '
+                'información no da presupuesto, metas, calendario ni fecha de aprobación.</p><h2>Qué se debatió</h2><p>La consulta se '
+                'celebró en el Aula Patola Ratu de la secretaría de la regencia, en Waingapu, y la inauguró el secretario regional Umbu '
+                'Ngadu Ndamu. Según Waingapu.Com, una ponencia llamó la atención: la investigadora Arianti Ina Restiani Hunga, conectada '
+                'en línea desde Salatiga, presentó "Del certificado a la protección, la gobernanza y el bienestar de las tejedoras". El '
+                'medio cuenta que trató de proteger la obra y la identidad creativas, y de cómo el reconocimiento y una buena gestión '
+                'pueden mejorar el bienestar de artistas y artesanos. La información no aclara a qué certificado o sistema de protección '
+                'se refiere.</p><p>También intervinieron Maklon Kila, antiguo rector de UNKRISWINA Sumba, y Adi Papa Pandarangga, del '
+                'organismo de planificación de la regencia (Bappeda). Yulius Ngenju, asistente II del secretario regional, moderó el '
+                'debate, en el que los asistentes hicieron preguntas y propuestas.</p><h2>Por qué el tejido ocupa el centro</h2><p>El '
+                'medio describe el tenun de Sumba Oriental, la tela ikat tejida a mano, como un textil de motivos marcados, valores '
+                'culturales y una elaboración exigente. Sostiene que este patrimonio necesita apoyo político, desarrollo de mercados, '
+                'protección de la obra y más capacidades para quienes lo hacen, si ha de dar un beneficio económico más amplio. El plan '
+                'pretende fijar una estrategia en la que las artes, la artesanía, las tradiciones y otros productos creativos locales '
+                'formen parte de una economía productiva.</p><p>Conviene fijarse también en lo que falta: ni financiación, ni cifras de '
+                'ventas o ingresos de las tejedoras, ni metas, ni fecha del plan definitivo. Todo procede de un solo medio, así que '
+                'conviene tomarlo como fuente única hasta que la regencia publique su propio aviso.</p><h2>Qué significa para visitantes, '
+                'residentes e inversores</h2><p>Visitantes: de momento no cambia nada. Si compra tenun, pregunte quién lo hizo y cómo, y '
+                'tenga en cuenta que pueden llegar normas de protección o certificación del tejido, aunque ninguna está anunciada. '
+                'Residentes: tejedoras, talleres y cooperativas pueden seguir las próximas consultas a través de la regencia; la '
+                'información no dice cómo participar. Inversores: es el comienzo de la planificación, no un programa con dinero ni '
+                'incentivos. Quien estudie negocios textiles, artesanales o de turismo cultural debería seguir a Bappeda y leer el plan '
+                'cuando se publique antes de dar por hecho ningún apoyo.</p>',
+        'faq': [['¿Qué es Rindekraf?',
+                 'El Rencana Induk Ekonomi Kreatif, el plan director de economía creativa de Sumba Oriental para 2026-2045. Waingapu.Com '
+                 'dice que el 19 de noviembre de 2026 hubo una consulta pública para redactarlo.'],
+                ['¿Incluye el plan dinero para las tejedoras?',
+                 'La información no lo dice. No da presupuesto, cifras de ingresos ni metas, solo que la consulta trató la protección, la '
+                 'gobernanza y el bienestar de las tejedoras.']]},
+ 'id': {'title': 'Sumba Timur susun Rindekraf 2026-2045, penenun jadi bahasan',
+        'dek': 'Konsultasi publik 19 November membuka penyusunan rencana induk; anggaran, target, dan jadwal pengesahan belum '
+               'dipublikasikan.',
+        'answer': 'Pemkab Sumba Timur mulai menyusun Rencana Induk Ekonomi Kreatif (Rindekraf) 2026-2045 lewat konsultasi publik pada 19 '
+                  'November 2026, lapor Waingapu.Com pada 20 November. Satu sesi membahas pelindungan dan kesejahteraan penenun. Anggaran, '
+                  'target, dan tanggal pengesahan tidak dilaporkan.',
+        'keys': ['Pemkab Sumba Timur menggelar konsultasi publik pada 19 November 2026 untuk menyusun Rindekraf 2026-2045.',
+                 'Seorang peneliti membawakan "Dari Sertifikat Menuju Pelindungan, Tata Kelola dan Kesejahteraan Penenun"; laporan tidak '
+                 'menyebut sertifikat yang dimaksud.',
+                 'Tujuannya agar seni, kerajinan, dan tradisi menjadi bagian dari ekonomi lokal yang produktif.',
+                 'Anggaran, target, dan tanggal pengesahan tidak dilaporkan, dan informasi berasal dari satu media.'],
+        'visitors': 'Belum ada yang berubah. Jika membeli tenun, tanyakan siapa pembuatnya dan prosesnya; aturan pelindungan atau '
+                    'sertifikasi kain bisa menyusul, tetapi belum ada yang diumumkan.',
+        'body': '<p>Pemerintah Kabupaten Sumba Timur mulai menyusun rencana induk ekonomi kreatif hingga 2045, dan konsultasi publik '
+                'pertama pada Kamis, 19 November 2026, memberi ruang khusus bagi para penenun kain pulau ini, lapor Waingapu.Com pada 20 '
+                'November. Rencana itu bernama Rencana Induk Ekonomi Kreatif (Rindekraf) 2026-2045. Laporan tidak menyebut anggaran, '
+                'target, jadwal, maupun tanggal pengesahan.</p><h2>Apa yang dibahas</h2><p>Konsultasi digelar di Aula Patola Ratu, Kantor '
+                'Sekretariat Daerah Sumba Timur di Waingapu, dan dibuka oleh Sekretaris Daerah Umbu Ngadu Ndamu. Menurut Waingapu.Com, '
+                'salah satu materi yang menarik perhatian dibawakan peneliti Arianti Ina Restiani Hunga secara daring dari Salatiga, '
+                'berjudul "Dari Sertifikat Menuju Pelindungan, Tata Kelola dan Kesejahteraan Penenun". Materi itu disebut membahas '
+                'pelindungan karya dan identitas kreatif, serta bagaimana pengakuan dan pengelolaan yang baik dapat menambah kesejahteraan '
+                'pelaku seni dan kerajinan. Laporan tidak menjelaskan sertifikat atau skema pelindungan mana yang '
+                'dimaksud.</p><p>Pembicara lain adalah Maklon Kila, mantan Rektor UNKRISWINA Sumba, dan Adi Papa Pandarangga dari Bappeda '
+                'Sumba Timur. Asisten II Setda, Yulius Ngenju, memandu diskusi, dan peserta menyampaikan pertanyaan, pandangan, serta '
+                'masukan.</p><h2>Mengapa tenun jadi pusat perhatian</h2><p>Waingapu.Com menggambarkan tenun Sumba Timur sebagai kain '
+                'dengan karakter motif, nilai budaya, dan proses pengerjaan yang kuat. Media itu menulis bahwa warisan ini membutuhkan '
+                'dukungan kebijakan, pengembangan pasar, perlindungan karya, dan penguatan kapasitas pelakunya agar manfaat ekonominya '
+                'lebih luas. Melalui Rindekraf, pemerintah daerah berupaya merancang strategi agar seni, kerajinan, tradisi, dan produk '
+                'kreatif lokal menjadi bagian dari ekonomi yang produktif.</p><p>Yang belum dilaporkan juga penting: tidak ada angka dana, '
+                'penjualan, atau pendapatan penenun, tidak ada target, dan tidak ada tanggal rencana final. Semua informasi ini bersumber '
+                'dari satu media, jadi anggap sebagai sumber tunggal sampai pemerintah kabupaten menerbitkan pengumumannya '
+                'sendiri.</p><h2>Apa artinya bagi pengunjung, warga, dan investor</h2><p>Pengunjung: belum ada yang berubah. Jika membeli '
+                'tenun, tanyakan siapa yang membuatnya dan bagaimana prosesnya, dan perlu diingat bahwa aturan pelindungan atau '
+                'sertifikasi kain bisa menyusul, meski belum ada yang diumumkan. Warga: penenun, sanggar, dan koperasi dapat mengikuti '
+                'konsultasi berikutnya lewat pemerintah kabupaten; laporan tidak menyebut cara ikut serta. Investor: ini baru awal '
+                'perencanaan, bukan program dengan dana atau insentif. Siapa pun yang menimbang usaha tekstil, kerajinan, atau wisata '
+                'budaya sebaiknya memantau Bappeda dan membaca rencana itu setelah terbit sebelum berasumsi ada dukungan.</p>',
+        'faq': [['Apa itu Rindekraf?',
+                 'Rencana Induk Ekonomi Kreatif, rencana induk ekonomi kreatif Sumba Timur untuk 2026-2045. Waingapu.Com melaporkan '
+                 'konsultasi publik penyusunannya digelar pada 19 November 2026.'],
+                ['Apakah rencana ini memuat dana untuk penenun?',
+                 'Laporan tidak menyebutnya. Tidak ada anggaran, angka pendapatan, atau target; hanya disebut bahwa konsultasi membahas '
+                 'pelindungan, tata kelola, dan kesejahteraan penenun.']]},
+ 'image': {'ai': False,
+           'credit': 'Chris Hazzard',
+           'license': 'CC BY-SA 3.0',
+           'license_url': 'https://creativecommons.org/licenses/by-sa/3.0',
+           'page': 'https://commons.wikimedia.org/wiki/File:Detail_from_Sumba_hinggi_2.JPG',
+           'w': 1280,
+           'h': 853,
+           'caption': {'en': 'File photo: detail of a Sumba hinggi, a hand-woven ikat cloth with a gecko motif, photographed in 2013. It '
+                             'does not show the consultation or a particular weaver.',
+                       'es': 'Foto de archivo: detalle de un hinggi de Sumba, tela ikat tejida a mano con un motivo de gecko, fotografiado '
+                             'en 2013. No muestra la consulta ni a ninguna tejedora concreta.',
+                       'id': 'Foto arsip: detail hinggi Sumba, kain ikat tenun tangan bermotif cicak, difoto pada 2013. Foto ini tidak '
+                             'menunjukkan konsultasi maupun penenun tertentu.'}},
+ 'sources': [['Waingapu.Com: Tenun, Seni dan Budaya Sumba Timur Dibidik Jadi Kekuatan Ekonomi, Rindekraf 2026-2045 Mulai Disusun (20 Nov '
+              '2026)',
+              'https://www.waingapu.com/tenun-seni-dan-budaya-sumba-timur-dibidik-jadi-kekuatan-ekonomi-rindekraf-2026-2045-mulai-disusun/']]},
 {'section': 'business',
  'slug': 'job-fair-east-sumba-3914-vacancies-most-abroad-2026',
  'date': '2026-11-23',
  'time': '06:00',
  'dateline': 'WAINGAPU',
  'kind': 'brief',
- 'top': True,
+ 
  'slugs': {'es': 'feria-empleo-sumba-oriental-3914-vacantes-mayoria-extranjero-2026',
            'id': 'job-fair-sumba-timur-3914-lowongan-sebagian-besar-luar-negeri-2026'},
  'keywords': {'en': ['Sumba job fair',
