@@ -1,5 +1,5 @@
 market,country,projects,with_permit_number,with_handover_date,overdue,claims,claims_contradicted,reviewed,median_price_per_m2_min,price_per_m2_sample
-Dubai,UAE,766,748,753,8,6682,90,745,20125.0,617
+Dubai,UAE,886,868,873,8,7728,90,865,20000.0,727
 Bali,Indonesia,136,1,122,25,1074,168,24,3494.2,122
 Riviera Maya,Mexico,122,0,109,0,328,38,7,3793.7,116
 Istanbul,Turkey,120,6,118,0,730,22,3,3554.1,106

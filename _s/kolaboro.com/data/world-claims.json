@@ -1,6 +1,6 @@
 {
  "updated": "2026-11-23",
- "projects": 2896,
+ "projects": 3016,
  "markets": {
   "Abu Dhabi": {
    "updated": "2026-11-23",
@@ -7256,7 +7256,7 @@
    "updated": "2026-11-23",
    "market": "Dubai",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 766,
+   "projects": 886,
    "title": {
     "leasehold": 0,
     "known": 27
@@ -7278,11 +7278,11 @@
     "known": 0
    },
    "guaranteed_language": 1,
-   "permit_claims": 570,
-   "permit_numbers_published": 574,
+   "permit_claims": 690,
+   "permit_numbers_published": 694,
    "plans_published": 43,
    "price_usd": {
-    "known": 523,
+    "known": 633,
     "median": 300000.0,
     "min": 50000.0,
     "max": 15584000.0
@@ -7293,10 +7293,10 @@
     "max": 8
    },
    "completion": {
-    "2026": 53,
-    "2027": 268,
-    "2028": 237,
-    "2029": 131,
+    "2026": 63,
+    "2027": 332,
+    "2028": 276,
+    "2029": 138,
     "2030": 48,
     "2031": 4,
     "2032": 1,
