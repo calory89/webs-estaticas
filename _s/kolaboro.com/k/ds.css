@@ -616,6 +616,7 @@ a.k-src:hover{color:var(--k-sea);border-bottom-color:currentColor}
 @media (max-width:899px){
   :root:has(link[href*="/k/site.css"]) :is(.hp-stats,.n38-t){grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--k-2) var(--k-5)}
   :root:has(link[href*="/k/site.css"]) .hp-more{justify-content:flex-start}
+  :root:has(link[href*="/k/site.css"]) .hp-more .launch>a{margin-inline-start:0}
 }
 /* project head: the name alone in the title, a quiet line under it says what the page is */
 :root:has(link[href*="/k/site.css"]) .phero .kh1sub{margin:var(--k-2) 0 0;font-size:var(--k-fs-lg);font-weight:560;color:var(--k-muted);letter-spacing:-.005em}
@@ -647,12 +648,13 @@ a.k-src:hover{color:var(--k-sea);border-bottom-color:currentColor}
 :root:has(link[href*="/k/site.css"]) .n37 svg rect:not([fill]){fill:var(--k-viz-reg)}
 /* rankings: the head starts where every other page head starts, the title at the shared size */
 :root:has(link[href*="/k/site.css"]) .ktr>.k-sec:first-child{padding-top:var(--k-hero-pt)}
+:root:has(link[href*="/k/site.css"]) .ktr>.k-sec:first-child .k-phead{padding-top:0}
 :root:has(link[href*="/k/site.css"]) .ktr .k-phead h1{font-size:var(--k-fs-4xl);font-weight:720;line-height:var(--k-lh-tight);letter-spacing:-.028em;max-width:24ch}
 :root:has(link[href*="/k/site.css"]) .ktr .k-phead .lead{font-size:var(--k-fs-lg);color:var(--k-ink-2);max-width:62ch}
-:root:has(link[href*="/k/site.css"]) .ktr .k-phead>p:not(.lead):not(.k-crumb){border-radius:var(--k-r-md)!important;background:var(--k-sunken)!important}
 :root:has(link[href*="/k/site.css"]) .ktr :is(.k-table-wrap){border:1px solid var(--k-line);border-radius:var(--k-r-lg);background:var(--k-surface)}
 :root:has(link[href*="/k/site.css"]) .ktr h2{font-size:var(--k-fs-3xl);letter-spacing:-.02em}
 
+:root:has(link[href*="/k/site.css"]) p[data-cite]:not(:has(.k29c))::after{content:"";display:inline-block;width:0;height:32px;vertical-align:middle}   /* room for the Cite button added after load: no layout shift */
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}

@@ -1,4 +1,4 @@
-/* GENERATED from /k/ds.css (v 87b7d5ccef) for pages that load site.css. The page test :has(link[href*=site.css]) is replaced by
+/* GENERATED from /k/ds.css (v 67f3aeb629) for pages that load site.css. The page test :has(link[href*=site.css]) is replaced by
    :not(a[data-ks]), always true with the same weight: :has() on the root made the browser restyle the whole page after every
    DOM change. Do not edit. To rebuild after ds.css changes: replace that test in a copy of ds.css, keep this comment with the
    new version, and set KB_DSS_V to the new KB_DS_V in _worker.js/index.js (while they differ the worker serves plain ds.css). */
@@ -620,6 +620,7 @@ a.k-src:hover{color:var(--k-sea);border-bottom-color:currentColor}
 @media (max-width:899px){
   :root:not(a[data-ks]) :is(.hp-stats,.n38-t){grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--k-2) var(--k-5)}
   :root:not(a[data-ks]) .hp-more{justify-content:flex-start}
+  :root:not(a[data-ks]) .hp-more .launch>a{margin-inline-start:0}
 }
 /* project head: the name alone in the title, a quiet line under it says what the page is */
 :root:not(a[data-ks]) .phero .kh1sub{margin:var(--k-2) 0 0;font-size:var(--k-fs-lg);font-weight:560;color:var(--k-muted);letter-spacing:-.005em}
@@ -651,12 +652,13 @@ a.k-src:hover{color:var(--k-sea);border-bottom-color:currentColor}
 :root:not(a[data-ks]) .n37 svg rect:not([fill]){fill:var(--k-viz-reg)}
 /* rankings: the head starts where every other page head starts, the title at the shared size */
 :root:not(a[data-ks]) .ktr>.k-sec:first-child{padding-top:var(--k-hero-pt)}
+:root:not(a[data-ks]) .ktr>.k-sec:first-child .k-phead{padding-top:0}
 :root:not(a[data-ks]) .ktr .k-phead h1{font-size:var(--k-fs-4xl);font-weight:720;line-height:var(--k-lh-tight);letter-spacing:-.028em;max-width:24ch}
 :root:not(a[data-ks]) .ktr .k-phead .lead{font-size:var(--k-fs-lg);color:var(--k-ink-2);max-width:62ch}
-:root:not(a[data-ks]) .ktr .k-phead>p:not(.lead):not(.k-crumb){border-radius:var(--k-r-md)!important;background:var(--k-sunken)!important}
 :root:not(a[data-ks]) .ktr :is(.k-table-wrap){border:1px solid var(--k-line);border-radius:var(--k-r-lg);background:var(--k-surface)}
 :root:not(a[data-ks]) .ktr h2{font-size:var(--k-fs-3xl);letter-spacing:-.02em}
 
+:root:not(a[data-ks]) p[data-cite]:not(:has(.k29c))::after{content:"";display:inline-block;width:0;height:32px;vertical-align:middle}   /* room for the Cite button added after load: no layout shift */
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
