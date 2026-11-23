@@ -98,3 +98,7 @@ out = {'v': 'n37u-2', 'built': named.get('updated') or '', 'from': ['named.json'
        'n': len(rows), 'known': [sum(r[7][i] == '1' for r in rows) for i in range(len(F))]}
 json.dump(out, open(os.path.join(D, 'n37u.json'), 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
 print('n37u.json', len(rows), 'projects,', len(mk), 'markets,', sum(len(v) for v in rg.values()), 'registers; held per field:', dict(zip(F, out['known'])))
+# r9u: the Malaysian register file (/data/n37u-kp.json) is rebuilt with every record build
+try:
+    sys.dont_write_bytecode = True; import importlib.util as _iu; _sp = _iu.spec_from_file_location('n37ukp', os.path.join(os.path.dirname(os.path.abspath(__file__)), 'n37u-kp-build.py')); _m = _iu.module_from_spec(_sp); _sp.loader.exec_module(_m); _r = _m.build(); print('n37u-kp.json', len(_r['p']), 'projects')
+except Exception as _e: print('n37u-kp.json not rebuilt:', _e)

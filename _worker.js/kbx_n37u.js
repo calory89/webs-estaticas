@@ -14,6 +14,8 @@
 //   r7u (round 7): GET /data/changes.json[?m=&field=&since=&limit=&offset=], GET /data/changes/week.json, MCP tools get_project_record and
 //   list_fact_changes (mcpTool3), /[l/]data/how-we-verify/ (method with live numbers by source kind, registers, satellite, fact age)
 //   r8u (round 8): progress line on the home page and a "where the data stands today" block on /yc/try/ (progStats), market block memo
+//   r9u (round 9): Malaysian register (KPKT TEDUH) block on project and record pages, /m/<market>/ summary, /[l/]registers/malaysia/,
+//   register share per developer across markets with KPKT permits, /[l/]data/markets/ (markets compared on key facts and register share)
 // Sumba, Eco Beach City and Equinox are left out by the build.
 import * as N from './kbx_named.js';
 
@@ -33,6 +35,7 @@ async function load(env) {
   const d = await file(env, '/data/n37u.json');
   if (d && d !== D) { D = d; MS = null; IX = { bySlug: new Map(d.p.map(r => [r[1], r])), byDev: new Map(), byAr: new Map(), byMk: new Map(), src: 0, regs: 0 }; for (const r of d.p) { (IX.byMk.get(r[3]) || IX.byMk.set(r[3], []).get(r[3])).push(r); for (const c of r[8]) if (c && c[1]) IX.src++; if (r[5]) (IX.byDev.get(r[5]) || IX.byDev.set(r[5], []).get(r[5])).push(r); const a = r[3] + '|' + r[4]; (IX.byAr.get(a) || IX.byAr.set(a, []).get(a)).push(r); } }
   if (!TL) TL = await file(env, '/data/n37u-tl.json');
+  await loadKP(env);   // r9u
   if (D && !IX.regs) { const g = new Set(); for (const k in D.rg) for (const x of D.rg[k]) g.add(x[0] + '|' + x[1]); IX.regs = g.size; }
   return !!(T && D);
 }
@@ -52,7 +55,7 @@ const recU = (l, s) => pre(l) + '/projects/' + s + '/record/';
 const cnt = r => r[7].split('1').length - 1;
 const LP = '(?:(es|de|fr|nl|ru|zh|ar)\\/)?';
 const RX_REC = new RegExp('^\\/' + LP + 'projects\\/([a-z0-9-]{1,90})\\/record(\\/?)$'), RX_GAP = new RegExp('^\\/' + LP + 'data\\/gaps(\\/?)$'), RX_JS = /^\/projects\/([a-z0-9-]{1,90})\/record\.json$/;
-export const PATHS = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:projects\/[a-z0-9-]{1,90}\/(?:record|brief)|data\/(?:gaps|changes|changes\/week|how-we-verify))\/?$|^\/data\/n37u-se\.json$|^\/data\/changes\/feed\.atom$|^\/data\/changes(?:\/week)?\.json$|^\/(?:es|de|fr|nl|ru|zh|ar)\/(?:data|developers|engineering|yc)\/?$|^\/m\/[^/]{2,120}\/slugs\.json$|^\/projects\/[a-z0-9-]{1,90}\/record\.json$|^\/data\/gaps\.csv$/;
+export const PATHS = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:projects\/[a-z0-9-]{1,90}\/(?:record|brief)|data\/(?:gaps|changes|changes\/week|how-we-verify|markets)|registers\/malaysia)\/?$|^\/data\/n37u-se\.json$|^\/data\/changes\/feed\.atom$|^\/data\/changes(?:\/week)?\.json$|^\/(?:es|de|fr|nl|ru|zh|ar)\/(?:data|developers|engineering|yc)\/?$|^\/m\/[^/]{2,120}\/slugs\.json$|^\/projects\/[a-z0-9-]{1,90}\/record\.json$|^\/data\/gaps\.csv$/;
 export const INJ = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:(?:projects\/[a-z0-9-]{1,90}|engineering|yc|yc\/try|data|data\/dictionary|registers|search|m\/[^/.]{2,60}|developers\/[a-z0-9-]{2,90})\/)?$/;
 
 const CSS = '<style id="n37u-css">.n37{max-width:1100px}.n37 h2{margin:28px 0 8px;font-size:1.3rem}.n37 p,.n37 li{line-height:1.6}.n37 .k-xs{font-size:.9rem;color:var(--k-muted,#56636F)}' +
@@ -144,6 +147,7 @@ async function recPage(env, shell, l, r) {
       return '<tr><th scope="row">' + fname(l, f) + '</th><td class="n37-v">' + bdi(v) + '</td><td>' + badge(l, c[2]) + ' ' + src + '</td><td class="n">' + esc(fd(c[3], l)) + '</td><td class="n n37-age">' + (ag == null ? '' : nf(ag, l) + (ag > OLD ? '<span class="n37-b old">' + esc(t(l, 'age_old')) + '</span>' : '')) + '</td></tr>'; }).join('') + '</tbody></table></div>';
   const aged = F.map((f, i) => [f, r[8][i]]).filter(x => x[1] && x[0] !== 'ct' && ageOf(x[1][3]) != null).sort((a, c) => ageOf(c[1][3]) - ageOf(a[1][3]));
   if (aged.length) b += '<p id="age">' + esc(ageOf(aged[0][1][3]) > OLD ? tf(l, 'age_sum', { f: t(l, 'f_' + aged[0][0]), d: fd(aged[0][1][3], l) }) : t(l, 'age_ok')) + ' <span class="k-xs">' + esc(t(l, 'age_note')) + '</span></p>';
+  b += kpBlock(l, r[1], 'kpkt', 'h2');   // r9u
   b += tlSection(l, r);
   const miss = F.map((f, i) => [f, i]).filter(x => !r[8][x[1]]), RG = regsFor(r);
   b += '<h2 id="unknown">' + esc(tf(l, 'g_h', { k: nf(miss.length, l) })) + '</h2>';
@@ -168,7 +172,7 @@ async function gapPage(env, shell, l) {
   const F = D.f, P = pre(l), M = Object.entries(D.mk).filter(([, v]) => v.n >= 10).sort((a, b) => b[1].n - a[1].n);
   let b = '<h2>' + esc(t(l, 'gp_fields')) + '</h2><div class="n37-tw" tabindex="0" role="region" aria-label="' + esc(t(l, 'tw_l')) + '"><table><thead><tr><th scope="col">' + esc(t(l, 'gp_m')) + '</th><th scope="col">' + esc(t(l, 'gp_n')) + '</th><th scope="col">' + esc(t(l, 'gp_md')) + '</th>' + F.map(f => '<th scope="col">' + fname(l, f) + '</th>').join('') + '</tr></thead><tbody>' +
     '<tr><th scope="row">' + esc(tf(l, 'gp_all', { n: nf(D.n, l) })) + '</th><td class="n">' + nf(D.n, l) + '</td><td></td>' + D.known.map(k => '<td class="n">' + bdi(nf(Math.round(100 * k / D.n), l) + '%') + '</td>').join('') + '</tr>' +
-    M.map(([m, v]) => '<tr><th scope="row">' + bdi(m) + '</th><td class="n">' + nf(v.n, l) + '</td><td class="n">' + nf(v.med, l) + '</td>' + v.cov.map(c => '<td class="n">' + bdi(nf(c, l) + '%') + '</td>').join('') + '</tr>').join('') + '</tbody></table></div><p><a href="/data/gaps.csv" download>' + esc(t(l, 'csv_l')) + '</a></p>';
+    M.map(([m, v]) => '<tr><th scope="row">' + bdi(m) + '</th><td class="n">' + nf(v.n, l) + '</td><td class="n">' + nf(v.med, l) + '</td>' + v.cov.map(c => '<td class="n">' + bdi(nf(c, l) + '%') + '</td>').join('') + '</tr>').join('') + '</tbody></table></div><p><a href="/data/gaps.csv" download>' + esc(t(l, 'csv_l')) + '</a> · <a href="' + P + '/data/markets/">' + esc(t(l, 'mc_h1')) + '</a></p>';   // r9u
   const H = Array(11).fill(0); for (const x of D.p) H[cnt(x)]++;
   const mx = Math.max.apply(null, H) || 1, five = H.slice(5).reduce((a, c) => a + c, 0), md = median(D.p.map(cnt));
   const svg = '<svg class="n37-ds" viewBox="0 0 440 170" role="img" aria-labelledby="ds-s" focusable="false">' + H.map((c, i) => { const h = Math.round(120 * c / mx), x = 8 + i * 39; return '<rect x="' + x + '" y="' + (140 - h) + '" width="30" height="' + h + '" fill="currentColor" rx="2"></rect><text x="' + (x + 15) + '" y="' + (134 - h) + '" text-anchor="middle">' + nf(c, l) + '</text><text x="' + (x + 15) + '" y="158" text-anchor="middle">' + i + '</text>'; }).join('') + '</svg>';
@@ -224,7 +228,7 @@ function devSection(l, slug) {
   return '<div class="n37" id="n37-dev"' + dir(l) + '>' + CSSL + trackSection(l, slug) + '<h3>' + esc(t(l, 'dv_h')) + '</h3><p>' + esc(tf(l, 'dv_p', { n: nf(rows.length, l), d: name })) + '</p>' +
     '<div class="n37-tw" tabindex="0" role="region" aria-label="' + esc(t(l, 'tw_l')) + '"><table><thead><tr><th scope="col">' + esc(t(l, 'th_f')) + '</th><th scope="col">' + esc(t(l, 'th_hold')) + '</th><th scope="col">' + esc(t(l, 'th_regs')) + '</th></tr></thead><tbody>' +
     F.map((f, i) => '<tr><th scope="row">' + fname(l, f) + '</th><td class="n">' + nf(c.h[i], l) + ' / ' + nf(rows.length, l) + '</td><td class="n">' + nf(c.g[i], l) + '</td></tr>').join('') + '</tbody></table></div>' +
-    '<h3>' + esc(t(l, 'dv_list')) + '</h3>' + recList(l, thin) + '</div>';
+    '<h3>' + esc(t(l, 'dv_list')) + '</h3>' + recList(l, thin) + devReg(l, slug) + '</div>';   // r9u: register share across markets, KPKT permits
 }
 let STATS = null;
 async function stats(env) {
@@ -407,7 +411,7 @@ function seJson() {
   return new Response(IX.se, { headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'public, max-age=900', 'access-control-allow-origin': '*' } });
 }
 function seTpl(l) { const f = {}; for (const k of D.f) f[k] = t(l, 'f_' + k); return JSON.stringify({ k: t(l, 'se_k'), c: t(l, 'se_c'), f }); }
-const ITEMS = [['s1', '/projects/emaar-golf-vale/record/#fields'], ['s2', '/projects/emaar-golf-vale/record/#unknown'], ['s3', '/projects/emaar-golf-vale/record/#market'], ['s4', '/projects/emaar-golf-vale/record/#developer'], ['s5', '/data/gaps/'], ['s6', '/projects/emaar-golf-vale/record/#age'], ['s7', '/data/dictionary/'], ['s8', '/data/gaps/#dist'], ['s9', '/data/gaps.csv'], ['s10', '/projects/emaar-golf-vale/record.json'], ['s11', '/data/'], ['s12', '/m/dubai/#n37-facts'], ['s13', '/developers/emaar-properties/#n37-dev'], ['s14', '/#n37-live'], ['s15', '/engineering/status/'], ['s16', '/projects/meriva-collection-ellington/record/#timeline'], ['s17', '/projects/meriva-collection-ellington/'], ['s18', '/developers/'], ['s19', '/m/dubai/'], ['s20', '/data/catalog.json'], ['s21', '/projects/emaar-golf-vale/#n37-vs'], ['s22', '/projects/emaar-golf-vale/brief/'], ['s23', '/data/changes/'], ['s24', '/search/?q=emaar'], ['s25', '/m/dubai/'], ['s26', '/projects/emaar-golf-vale/changes/'], ['s27', '/data/changes/week/'], ['s28', '/developers/emaar-properties/#n37-track'], ['s29', '/data/changes/feed.atom'], ['s30', '/projects/emaar-golf-vale/#n37-vs'], ['s31', '/projects/emaar-golf-vale/'], ['s32', '/docs/api/#key-facts'], ['s33', '/docs/mcp/#key-facts'], ['s34', '/data/how-we-verify/'], ['s35', '/engineering/status/'], ['s36', '/#n37-prog']];
+const ITEMS = [['s1', '/projects/emaar-golf-vale/record/#fields'], ['s2', '/projects/emaar-golf-vale/record/#unknown'], ['s3', '/projects/emaar-golf-vale/record/#market'], ['s4', '/projects/emaar-golf-vale/record/#developer'], ['s5', '/data/gaps/'], ['s6', '/projects/emaar-golf-vale/record/#age'], ['s7', '/data/dictionary/'], ['s8', '/data/gaps/#dist'], ['s9', '/data/gaps.csv'], ['s10', '/projects/emaar-golf-vale/record.json'], ['s11', '/data/'], ['s12', '/m/dubai/#n37-facts'], ['s13', '/developers/emaar-properties/#n37-dev'], ['s14', '/#n37-live'], ['s15', '/engineering/status/'], ['s16', '/projects/meriva-collection-ellington/record/#timeline'], ['s17', '/projects/meriva-collection-ellington/'], ['s18', '/developers/'], ['s19', '/m/dubai/'], ['s20', '/data/catalog.json'], ['s21', '/projects/emaar-golf-vale/#n37-vs'], ['s22', '/projects/emaar-golf-vale/brief/'], ['s23', '/data/changes/'], ['s24', '/search/?q=emaar'], ['s25', '/m/dubai/'], ['s26', '/projects/emaar-golf-vale/changes/'], ['s27', '/data/changes/week/'], ['s28', '/developers/emaar-properties/#n37-track'], ['s29', '/data/changes/feed.atom'], ['s30', '/projects/emaar-golf-vale/#n37-vs'], ['s31', '/projects/emaar-golf-vale/'], ['s32', '/docs/api/#key-facts'], ['s33', '/docs/mcp/#key-facts'], ['s34', '/data/how-we-verify/'], ['s35', '/engineering/status/'], ['s36', '/#n37-prog'], ['s37', '/projects/one-seputeh-residences-kl/#n37-kp'], ['s38', '/registers/malaysia/'], ['s39', '/developers/mah-sing-group/#n37-dreg'], ['s40', '/data/markets/'], ['s41', '/ar/projects/one-seputeh-residences-kl/record/']];
 const shipped = l => '<section class="wrap" id="shipped-2026-11-23"' + dir(l) + '><h2>' + esc(t(l, 'sh_h')) + '</h2><p>' + esc(t(l, 'sh_p')) + '</p><ul>' + ITEMS.map(x => '<li><a href="' + (/\.(csv|json|atom)$|^\/docs\//.test(x[1]) ? '' : pre(l)) + x[1] + '">' + esc(t(l, x[0] + '_t')) + '</a>: ' + esc(t(l, x[0] + '_s')) + '</li>').join('') + '</ul></section>';
 const STY = '<style>.n37-in{margin:14px 0 0;padding:12px 16px;border:1px solid var(--k-line,var(--line,#d5d3cc));border-radius:14px;line-height:1.55}.n37-in a{font-weight:700}</style>';
 
@@ -528,6 +532,117 @@ async function progBlock(l, env) {
     li(P + '/data/changes/week/', tf(l, g.w === 1 ? 'pg_w1' : 'pg_wn', { w: nf(g.w, l), p: nf(g.wp, l) })) +
     '</ul><p class="k-xs" style="margin:8px 0 0">' + esc(t(l, 'pg_n')) + '</p></section>';
 }
+// r9u (round 9): the Malaysian housing developer register (KPKT TEDUH) on project, record, market and developer pages and on
+// /[l/]registers/malaysia/; register share per developer across markets; /[l/]data/markets/ (markets compared on the 10 key facts and the
+// share confirmed by an official register). Data: /data/n37u-kp.json (open/n37u-kp-build.py, claims read from the register) and /data/n37u.json.
+let KP = null;
+async function loadKP(env) { const k = await file(env, '/data/n37u-kp.json'); if (k && k.p) KP = k; return KP; }
+const KST = { 'Lancar': 'ok', 'Belum Mula': 'ns', 'Lewat': 'late', 'Sakit': 'sick', 'Terbengkalai': 'ab', 'Siap Dengan CCC': 'done' };
+const kst = p => KST[p.st] || 'x';
+const dd = (a, b) => Math.round((Date.parse(a + 'T00:00:00Z') - Date.parse(b + 'T00:00:00Z')) / DAY);
+function kpInfo(p) {   // what the register entry says against our build date: nothing here is estimated
+  const z = D.built, s = kst(p), due = p.vp2 || p.vp || '';
+  return { s, due, past: !!(due && due < z && s !== 'done'), pexp: p.vt ? dd(p.vt, z) : null, late: s === 'late' || s === 'sick' || s === 'ab' };
+}
+const KPC = '<style>.n37-kp{margin:14px 0 0;padding:12px 16px;border:1px solid var(--k-line,var(--line,#D5DCDB));border-radius:14px;line-height:1.5}.n37-kp h2{font-size:1.1rem;margin:0 0 4px}.n37-kp h3{font-size:1rem;margin:12px 0 4px}' +
+  '.n37-kd{display:grid;grid-template-columns:minmax(150px,34%) 1fr;gap:6px 14px;margin:8px 0}.n37-kd dt{font-weight:600}.n37-kd dd{margin:0;overflow-wrap:anywhere}.n37-kd bdi{overflow-wrap:anywhere}' +
+  '@media (max-width:560px){.n37-kd{grid-template-columns:1fr;gap:2px 0}.n37-kd dd{margin:0 0 8px}}.n37-kp a{display:inline-flex;align-items:center;min-height:44px}.n37-kp dd a{min-height:0;display:inline}' +
+  '.n37-st{display:inline-block;padding:2px 8px;border-radius:999px;font-size:.8rem;font-weight:700;border:1px solid currentColor;white-space:nowrap}.n37-st.ok,.n37-st.done{color:#1F6B3A}.n37-st.ns{color:#56636F}.n37-st.late,.n37-st.sick,.n37-st.ab{color:#9A3412}.n37-fl{color:#9A3412;font-weight:600}' +
+  ':root[data-theme=dark] .n37-st.ok,:root[data-theme=dark] .n37-st.done{color:#7FD49A}:root[data-theme=dark] .n37-st.late,:root[data-theme=dark] .n37-st.sick,:root[data-theme=dark] .n37-st.ab,:root[data-theme=dark] .n37-fl{color:#FFA07A}' +
+  '@media (prefers-color-scheme:dark){:root:not([data-theme=light]) .n37-st.ok,:root:not([data-theme=light]) .n37-st.done{color:#7FD49A}:root:not([data-theme=light]) .n37-st.late,:root:not([data-theme=light]) .n37-st.sick,:root:not([data-theme=light]) .n37-st.ab,:root:not([data-theme=light]) .n37-fl{color:#FFA07A}}</style>';
+const stB = (l, p) => '<span class="n37-st ' + kst(p) + '">' + esc(t(l, 'kst_' + kst(p))) + '</span> <span class="k-xs" lang="ms">(' + esc(p.st || '') + ')</span>';
+const rm = (v, l) => 'RM ' + nf(v, l);
+const pcf = (a, l) => a.map(v => { try { return new Intl.NumberFormat(LOC[l] || 'en-GB', { maximumFractionDigits: 2, numberingSystem: 'latn' }).format(v); } catch (e) { return String(v); } } ).map(x => x + '%').join(' / ');
+function kpPhase(l, p) {
+  const o = kpInfo(p), row = (k, v) => v ? '<dt>' + esc(t(l, k)) + '</dt><dd>' + v + '</dd>' : '';
+  let pn = '';
+  if (p.pn) { pn = bdi(p.pn); if (p.vf && p.vt) pn += ' <span class="k-xs">' + esc(tf(l, 'kp_valid', { a: fd(p.vf, l), b: fd(p.vt, l) })) + '</span>';
+    if (o.pexp != null && o.pexp < 0) pn += ' <span class="n37-fl">' + esc(tf(l, 'kp_pexp0', { d: fd(p.vt, l) })) + '</span>'; else if (o.pexp != null && o.pexp <= 180) pn += ' <span class="n37-fl">' + esc(tf(l, o.pexp === 1 ? 'kp_pexp1' : 'kp_pexpn', { n: nf(o.pexp, l) })) + '</span>'; }
+  let vp = '';
+  if (p.vp) vp = esc(fd(p.vp, l)) + (p.spa ? ' <span class="k-xs">' + esc(tf(l, 'kp_spa', { d: fd(p.spa, l), m: nf(p.per || 0, l) })) + '</span>' : '');
+  let ex = '';
+  if (p.ext) ex = esc(tf(l, p.ext === 1 ? 'kp_ext1' : 'kp_extn', { n: nf(p.ext, l), d: fd(p.vp2, l) })); else if (p.vp) ex = esc(t(l, 'kp_ext0'));
+  if (o.past) ex += (ex ? ' ' : '') + '<span class="n37-fl">' + esc(tf(l, 'kp_past', { d: fd(o.due, l) })) + '</span>';
+  return '<dl class="n37-kd">' + row('kp_st', stB(l, p)) + row('kp_pc', p.pc && p.pc.length ? bdi(pcf(p.pc, l)) : '') + row('kp_pn', pn) + row('kp_vp', vp) + row('kp_ex', ex) +
+    row('kp_un', p.un ? esc(nf(p.un, l)) + (p.pmin ? ' · ' + bdi(rm(p.pmin, l) + ' - ' + rm(p.pmax || p.pmin, l)) : '') : '') + row('kp_lic', p.lic ? bdi(p.lic) + (p.lt ? ' <span class="k-xs">' + esc(tf(l, 'kp_to', { d: fd(p.lt, l) })) + '</span>' : '') : '') +
+    row('kp_src', p.u ? '<a href="' + esc(p.u) + '" rel="nofollow noopener">' + esc(host(p.u)) + '</a> <span class="k-xs">' + esc(tf(l, 'kp_read', { d: fd(p.d, l) })) + '</span>' : '') + '</dl>';
+}
+function kpBlock(l, slug, id, h) {
+  const L = KP && KP.p[slug]; if (!L) return '';
+  const r = IX.bySlug.get(slug), H = h || 'h2';
+  return KPC + '<section class="n37-kp" id="' + id + '" aria-labelledby="' + id + '-h"' + dir(l) + '><' + H + ' id="' + id + '-h">' + esc(t(l, 'kp_h')) + '</' + H + '><p class="k-xs" style="margin:0">' + esc(t(l, 'kp_n')) + '</p>' +
+    L.map(p => (L.length > 1 ? '<h3>' + esc(tf(l, 'kp_code', { c: p.c })) + '</h3>' : '') + kpPhase(l, p)).join('') +
+    '<p style="margin:6px 0 0"><a href="' + pre(l) + '/registers/malaysia/">' + esc(t(l, 'kp_all')) + '</a>' + (r && r[5] ? ' · <a href="' + pre(l) + '/developers/' + r[5] + '/#n37-dreg">' + esc(tf(l, 'dr_link', { d: r[6] || r[5] })) + '</a>' : '') + '</p></section>';
+}
+function kpRows(m) {   // [slug, phase, record] for one market, or all
+  const out = [];
+  for (const s in KP.p) { const r = IX.bySlug.get(s); if (!r || (m && r[3] !== m)) continue; for (const p of KP.p[s]) out.push([s, p, r]); }
+  return out;
+}
+function kpSum(rows) {
+  const c = { n: rows.length, pr: new Set(rows.map(x => x[0])).size, ok: 0, ns: 0, late: 0, sick: 0, ab: 0, done: 0, x: 0, ext: [], past: 0, pexp: 0 };
+  for (const [, p] of rows) { const o = kpInfo(p); c[o.s]++; if (p.ext) c.ext.push(p.ext); if (o.past) c.past++; if (o.pexp != null && o.pexp >= 0 && o.pexp <= 180) c.pexp++; }
+  c.late3 = c.late + c.sick + c.ab; c.med = median(c.ext); c.withSpa = rows.filter(x => x[1].vp).length; return c;
+}
+function kpMarket(l, m) {
+  if (!KP) return '';
+  const rows = kpRows(m); if (rows.length < 5) return '';
+  const c = kpSum(rows);
+  return KPC + '<section class="wrap n37-kp" id="n37-kpm" aria-labelledby="n37-kpm-h"' + dir(l) + '><h2 id="n37-kpm-h">' + esc(tf(l, 'km_h', { m })) + '</h2><p>' + esc(tf(l, 'km_p', { n: nf(c.n, l), p: nf(c.pr, l), d: fd(KP.built || D.built, l) })) + '</p><ul>' +
+    '<li>' + esc(tf(l, 'km_st', { ok: nf(c.ok, l), ns: nf(c.ns, l), late: nf(c.late3, l), done: nf(c.done, l) })) + '</li>' +
+    '<li>' + esc(tf(l, 'km_ext', { e: nf(c.ext.length, l), s: nf(c.withSpa, l), md: nf(c.med, l), mx: nf(c.ext.length ? Math.max.apply(null, c.ext) : 0, l) })) + '</li>' +
+    '<li>' + esc(tf(l, 'km_past', { n: nf(c.past, l) })) + '</li><li>' + esc(tf(l, 'km_pexp', { n: nf(c.pexp, l) })) + '</li></ul>' +
+    '<p><a href="' + pre(l) + '/registers/malaysia/#' + slugM(m) + '">' + esc(t(l, 'kp_all')) + '</a> · <a href="' + pre(l) + '/data/markets/">' + esc(t(l, 'mc_h1')) + '</a></p></section>';
+}
+const kpTh = (l, ks) => '<thead><tr>' + ks.map(k => '<th scope="col">' + esc(t(l, k)) + '</th>').join('') + '</tr></thead>';
+const kpTw = (l, inner) => '<div class="n37-tw" tabindex="0" role="region" aria-label="' + esc(t(l, 'tw_l')) + '"><table>' + inner + '</table></div>';
+const kpP = (l, x) => '<th scope="row"><a href="' + pre(l) + '/projects/' + x[0] + '/">' + bdi(x[2][2]) + '</a>' + (KP.p[x[0]].length > 1 ? ' <span class="k-xs">' + esc(x[1].c) + '</span>' : '') + '</th>';
+async function kpPage(env, shell, l) {
+  const P = pre(l), all = kpRows(null), MK = [...new Set(all.map(x => x[2][3]))].sort((a, b) => kpRows(b).length - kpRows(a).length);
+  let b = KPC + '<p>' + esc(tf(l, 'kr_p', { n: nf(all.length, l), p: nf(new Set(all.map(x => x[0])).size, l), d: fd(KP.built || D.built, l) })) + ' <a href="https://teduh.kpkt.gov.my/" rel="nofollow noopener">teduh.kpkt.gov.my</a></p>';
+  b += '<h2 id="sum">' + esc(t(l, 'kr_sum')) + '</h2>' + kpTw(l, kpTh(l, ['gp_m', 'kr_n', 'kst_ok', 'kst_ns', 'kst_late', 'kst_done', 'kr_ext', 'kr_med', 'kr_past', 'kr_pexp']) + '<tbody>' + MK.map(m => { const c = kpSum(kpRows(m));
+    return '<tr id="' + slugM(m) + '"><th scope="row"><a href="/m/' + slugM(m) + '/#n37-kpm">' + bdi(m) + '</a></th>' + [c.n, c.ok, c.ns, c.late3, c.done, c.ext.length, c.med, c.past, c.pexp].map(v => '<td class="n">' + nf(v, l) + '</td>').join('') + '</tr>'; }).join('') + '</tbody>');
+  b += '<p class="k-xs">' + esc(t(l, 'kr_def')) + '</p>';
+  const late = all.filter(x => kpInfo(x[1]).late);
+  b += '<h2 id="late">' + esc(tf(l, 'kr_late', { n: nf(late.length, l) })) + '</h2>' + (late.length ? kpTw(l, kpTh(l, ['th_p', 'kp_st', 'kp_pc', 'kp_vp', 'kp_ex']) + '<tbody>' + late.map(x => '<tr>' + kpP(l, x) + '<td>' + stB(l, x[1]) + '</td><td class="n">' + (x[1].pc ? bdi(pcf(x[1].pc, l)) : '') + '</td><td class="n">' + esc(fd(x[1].vp, l)) + '</td><td class="n">' + (x[1].ext ? esc(tf(l, 'kr_extv', { n: nf(x[1].ext, l), d: fd(x[1].vp2, l) })) : '') + '</td></tr>').join('') + '</tbody>') : '<p>' + esc(t(l, 'none')) + '</p>');
+  const ext = all.filter(x => x[1].ext).sort((a, c) => c[1].ext - a[1].ext || a[2][2].localeCompare(c[2][2])).slice(0, 25);
+  b += '<h2 id="ext">' + esc(t(l, 'kr_exth')) + '</h2><p>' + esc(t(l, 'kr_extp')) + '</p>' + kpTw(l, kpTh(l, ['th_p', 'kr_ext', 'kp_vp', 'kr_new', 'kp_st', 'kp_pc']) + '<tbody>' + ext.map(x => '<tr>' + kpP(l, x) + '<td class="n">' + nf(x[1].ext, l) + '</td><td class="n">' + esc(fd(x[1].vp, l)) + '</td><td class="n">' + esc(fd(x[1].vp2, l)) + '</td><td>' + stB(l, x[1]) + '</td><td class="n">' + (x[1].pc ? bdi(pcf(x[1].pc, l)) : '') + '</td></tr>').join('') + '</tbody>');
+  const past = all.filter(x => kpInfo(x[1]).past).sort((a, c) => (kpInfo(a[1]).due < kpInfo(c[1]).due ? -1 : 1));
+  b += '<h2 id="past">' + esc(tf(l, 'kr_pasth', { n: nf(past.length, l) })) + '</h2><p>' + esc(t(l, 'kr_pastp')) + '</p>' + (past.length ? kpTw(l, kpTh(l, ['th_p', 'kr_due', 'kp_st', 'kp_pc']) + '<tbody>' + past.map(x => '<tr>' + kpP(l, x) + '<td class="n">' + esc(fd(kpInfo(x[1]).due, l)) + '</td><td>' + stB(l, x[1]) + '</td><td class="n">' + (x[1].pc ? bdi(pcf(x[1].pc, l)) : '') + '</td></tr>').join('') + '</tbody>') : '');
+  const pe = all.filter(x => { const o = kpInfo(x[1]); return o.pexp != null && o.pexp >= 0 && o.pexp <= 180; }).sort((a, c) => (a[1].vt < c[1].vt ? -1 : 1));
+  b += '<h2 id="permits">' + esc(tf(l, 'kr_peh', { n: nf(pe.length, l) })) + '</h2><p>' + esc(t(l, 'kr_pep')) + '</p>' + (pe.length ? kpTw(l, kpTh(l, ['th_p', 'kp_pn', 'kr_vt', 'kp_st']) + '<tbody>' + pe.map(x => '<tr>' + kpP(l, x) + '<td>' + bdi(x[1].pn) + '</td><td class="n">' + esc(fd(x[1].vt, l)) + '</td><td>' + stB(l, x[1]) + '</td></tr>').join('') + '</tbody>') : '');
+  b += '<p><a href="/data/n37u-kp.json" type="application/json">' + esc(t(l, 'kr_json')) + '</a> · <a href="/open/n37u-kp-build.py">' + esc(t(l, 'code')) + '</a> · <a href="' + P + '/data/markets/">' + esc(t(l, 'mc_h1')) + '</a> · <a href="' + P + '/m/kuala-lumpur/">Kuala Lumpur</a> · <a href="' + P + '/m/malaysia/">Malaysia</a></p>';
+  return page(shell, l, { path: '/registers/malaysia/', h1: t(l, 'kr_h1'), lead: t(l, 'kr_lead'), body: b, crumb: [[t(l, 'kr_regs'), '/registers/']] });
+}
+// register share per developer and per market: a fact counts as register-confirmed when its source kind is reg (official register or its published mirror)
+function regShare(rows) { let h = 0, g = 0, any = 0; for (const r of rows) { let a = 0; for (const c of r[8]) if (c) { h++; if (c[2] === 'reg') { g++; a = 1; } } any += a; } return { h, g, any, n: rows.length }; }
+function devReg(l, slug) {
+  const rows = IX.byDev.get(slug) || []; if (!rows.length) return '';
+  const s = regShare(rows), byM = new Map(); for (const r of rows) (byM.get(r[3]) || byM.set(r[3], []).get(r[3])).push(r);
+  const kp = KP ? rows.filter(r => KP.p[r[1]]) : [];
+  let b = '<h3 id="n37-dreg">' + esc(t(l, 'dr_h')) + '</h3><p>' + esc(tf(l, 'dr_p', { g: nf(s.g, l), h: nf(s.h, l), p: nf(share(s.g, s.h), l), a: nf(s.any, l), n: nf(s.n, l) })) + '</p>';
+  if (byM.size > 1) b += '<ul class="n37-rel">' + [...byM].sort((a, c) => c[1].length - a[1].length).map(([m, rs]) => { const x = regShare(rs); return '<li><a href="/m/' + slugM(m) + '/">' + bdi(m) + '</a>&nbsp;<span class="k-xs">' + esc(tf(l, 'dr_m', { g: nf(x.g, l), h: nf(x.h, l), n: nf(rs.length, l) })) + '</span></li>'; }).join('') + '</ul>';
+  if (kp.length) b += '<h3>' + esc(t(l, 'dr_kp')) + '</h3>' + kpTw(l, kpTh(l, ['th_p', 'kp_pn', 'kr_vt', 'kp_st', 'kp_vp']) + '<tbody>' + kp.flatMap(r => KP.p[r[1]].map(p => [r[1], p, r])).map(x => '<tr>' + kpP(l, x) + '<td>' + (x[1].pn ? bdi(x[1].pn) : '') + '</td><td class="n">' + esc(fd(x[1].vt, l)) + '</td><td>' + stB(l, x[1]) + '</td><td class="n">' + esc(fd(x[1].vp2 || x[1].vp, l)) + '</td></tr>').join('') + '</tbody>') + '<p><a href="' + pre(l) + '/registers/malaysia/">' + esc(t(l, 'kp_all')) + '</a></p>';
+  return b + '<p><a href="' + pre(l) + '/data/markets/">' + esc(t(l, 'mc_h1')) + '</a></p>';
+}
+// /[l/]data/markets/: every market with 5+ records, compared on the 10 key facts and on the share confirmed by an official register
+const MCS = { n: 'mc_n', med: 'gp_md', five: 'mc_five', reg: 'mc_reg', any: 'mc_any', rg: 'mc_rg' };
+function mcRows() {
+  if (IX.mc) return IX.mc;
+  return (IX.mc = Object.entries(D.mk).map(([m, v]) => { const rows = IX.byMk.get(m) || [], s = regShare(rows), F = D.f, lo = v.cov.indexOf(Math.min.apply(null, v.cov));
+    return { m, n: rows.length, med: v.med, five: share(rows.filter(r => cnt(r) >= 5).length, rows.length), reg: share(s.g, s.h), any: share(s.any, rows.length), rg: (D.rg[m] || D.rg[v.co === 'USA' ? 'United States' : v.co] || []).length, lo: F[lo], loc: v.cov[lo], kp: KP ? kpRows(m).length : 0 }; }));
+}
+async function mcPage(env, shell, l, u) {
+  const P = pre(l), so = MCS[String(u && u.searchParams.get('s') || '')] ? u.searchParams.get('s') : 'n';
+  const R = mcRows().slice().sort((a, c) => c[so] - a[so] || c.n - a.n || a.m.localeCompare(c.m));
+  const top = mcRows().filter(x => x.n >= 20).sort((a, c) => c.reg - a.reg)[0];
+  let b = '<p>' + esc(tf(l, 'mc_p', { m: nf(R.length, l) })) + (top ? ' ' + esc(tf(l, 'mc_top', { m: top.m, r: nf(top.reg, l) })) : '') + '</p><p class="k-xs" role="navigation" aria-label="' + esc(t(l, 'mc_sort')) + '">' + esc(t(l, 'mc_sort')) + ': ' +
+    Object.keys(MCS).map(k => k === so ? '<b>' + esc(t(l, MCS[k])) + '</b>' : '<a href="' + P + '/data/markets/' + (k === 'n' ? '' : '?s=' + k) + '" rel="nofollow">' + esc(t(l, MCS[k])) + '</a>').join(' · ') + '</p>';
+  b += kpTw(l, '<thead><tr><th scope="col">' + esc(t(l, 'gp_m')) + '</th>' + Object.keys(MCS).map(k => '<th scope="col"' + (k === so ? ' aria-sort="descending"' : '') + '>' + esc(t(l, MCS[k])) + '</th>').join('') + '<th scope="col">' + esc(t(l, 'mc_lo')) + '</th></tr></thead><tbody>' +
+    R.map(x => '<tr><th scope="row"><a href="/m/' + slugM(x.m) + '/#n37-facts">' + bdi(x.m) + '</a>' + (x.kp ? ' <a class="k-xs" href="' + P + '/registers/malaysia/#' + slugM(x.m) + '">KPKT</a>' : '') + '</th><td class="n">' + nf(x.n, l) + '</td><td class="n">' + nf(x.med, l) + ' / 10</td><td class="n">' + bdi(nf(x.five, l) + '%') + '</td><td class="n">' + bdi(nf(x.reg, l) + '%') + '</td><td class="n">' + bdi(nf(x.any, l) + '%') + '</td><td class="n">' + nf(x.rg, l) + '</td><td>' + esc(t(l, 'f_' + x.lo)) + ' <span class="k-xs">' + bdi(nf(x.loc, l) + '%') + '</span></td></tr>').join('') + '</tbody>');
+  b += '<p class="k-xs">' + esc(t(l, 'mc_def')) + '</p><p><a href="' + P + '/data/gaps/">' + esc(t(l, 'gp_link')) + '</a> · <a href="' + P + '/data/how-we-verify/">' + esc(t(l, 'vf_l')) + '</a> · <a href="' + P + '/registers/malaysia/">' + esc(t(l, 'kr_h1')) + '</a> · <a href="/data/gaps.csv" download>' + esc(t(l, 'csv_l')) + '</a></p>';
+  return page(shell, l, { path: '/data/markets/', h1: t(l, 'mc_h1'), lead: t(l, 'mc_lead'), body: b, crumb: [[t(l, 'data'), pre(l) + '/data/']] });
+}
 export async function inject(req, u, env, r) {
   try {
     if (!/text\/html/.test(r.headers.get('content-type') || '')) return r;
@@ -541,16 +656,16 @@ export async function inject(req, u, env, r) {
     }
     else if (p === '') { const h = await liveLine(l, env); if (h) add.push(['p.hero-sub', 'after', h + progLine(l)]); }   // r8u: progress line
     else if (p === 'yc/try/') add.push(['section.k27 .k-prose > ol', 'before', await progBlock(l, env)]);   // r8u
-    else if ((mm = /^m\/([^/.]{2,60})\/$/.exec(p))) { const mk = mBySlug(mm[1]); const h = mk ? mkSection(l, mk) : ''; if (!h) return r; add.push(['#slippage', 'before', h]); }
+    else if ((mm = /^m\/([^/.]{2,60})\/$/.exec(p))) { const mk = mBySlug(mm[1]); const h = mk ? mkSection(l, mk) + kpMarket(l, mk) : ''; if (!h) return r; add.push(['#slippage', 'before', h]); }   // r9u: register status summary (Malaysia)
     else if ((mm = /^developers\/([a-z0-9-]{2,90})\/$/.exec(p))) { const h = devSection(l, mm[1]); if (!h) return r; add.push(['#projects', 'append', h]); }
     else if ((mm = /^projects\/([a-z0-9-]{1,90})\/$/.exec(p))) {
       const x = IX.bySlug.get(mm[1]); if (!x) return r;
       const k = cnt(x);
       const lc = latestChange(x), lch = lc ? '<p class="n37-in"' + dir(l) + '><a href="' + recU(l, x[1]) + '#timeline">' + esc(tf(l, 'tl_pj', { f: t(l, 'f_' + lc.x.f), a: tv(lc.x.p, l, 70), b: tv(lc.x.v, l, 70), d: fd(lc.x.d, l) })) + '</a>' + (lc.n > 1 ? ' <span class="k-xs">' + esc(tf(l, 'tl_more', { n: nf(lc.n - 1, l) })) + '</span>' : '') + '</p>' : '';
-      add.push(['#answer', 'append', VSC + vsBlock(l, x, actRow(l, x))]);   // r5u
+      add.push(['#answer', 'append', VSC + vsBlock(l, x, actRow(l, x)) + kpBlock(l, x[1], 'n37-kp', 'h3')]);   // r5u; r9u: Malaysian register block
       add.push(['#glance', 'append', STY + '<p class="n37-in"' + dir(l) + '><a href="' + recU(l, x[1]) + '">' + esc(tf(l, 'inj_p', { k: nf(k, l), g: nf(10 - k, l) })) + '</a> · <a href="' + pre(l) + '/projects/' + x[1] + '/brief/">' + esc(t(l, 'a_br')) + '</a></p>' + lch]);
       if (D.mk[x[3]]) add.push(['#market', 'append', '<p class="n37-in"' + dir(l) + '><a href="' + recU(l, x[1]) + '#market">' + esc(tf(l, 'inj_m', { m: x[3] })) + '</a></p>']);
-    } else if (p === 'data/' || p === 'data/dictionary/' || p === 'registers/') add.push(['main', 'append', '<section class="wrap"' + dir(l) + '>' + STY + '<p class="n37-in">' + (l === 'en' || p === 'data/' ? '' : '<a href="' + pre(l) + '/data/">' + esc(t(l, 'dh_link')) + '</a> · ') + '<a href="' + pre(l) + '/data/gaps/">' + esc(t(l, 'gp_link')) + '</a> · ' + esc(t(l, 's5_s')) + ' · <a href="' + pre(l) + '/data/gaps/#dist">' + esc(t(l, 's8_t')) + '</a> · <a href="' + pre(l) + '/data/changes/">' + esc(t(l, 'ch_h1')) + '</a> · <a href="/data/gaps.csv" download>' + esc(t(l, 'csv_l')) + '</a></p></section>']);
+    } else if (p === 'data/' || p === 'data/dictionary/' || p === 'registers/') add.push(['main', 'append', '<section class="wrap"' + dir(l) + '>' + STY + '<p class="n37-in">' + (l === 'en' || p === 'data/' ? '' : '<a href="' + pre(l) + '/data/">' + esc(t(l, 'dh_link')) + '</a> · ') + '<a href="' + pre(l) + '/data/gaps/">' + esc(t(l, 'gp_link')) + '</a> · ' + esc(t(l, 's5_s')) + ' · <a href="' + pre(l) + '/data/gaps/#dist">' + esc(t(l, 's8_t')) + '</a> · <a href="' + pre(l) + '/data/changes/">' + esc(t(l, 'ch_h1')) + '</a> · <a href="' + pre(l) + '/data/markets/">' + esc(t(l, 'mc_h1')) + '</a> · <a href="' + pre(l) + '/registers/malaysia/">' + esc(t(l, 'kr_h1')) + '</a> · <a href="/data/gaps.csv" download>' + esc(t(l, 'csv_l')) + '</a></p></section>']);   // r9u
     if (!add.length) return r;
     let out = new HTMLRewriter();
     for (const [sel, , h] of add) {
@@ -591,6 +706,7 @@ async function route(env, shell, p, u) {
   if ((m = p.match(/^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?data\/changes\/week(\/?)$/))) { if (!m[2]) return new Response(null, { status: 301, headers: { location: p + '/' } }); return weekPage(env, shell, m[1] || 'en'); }   // r6u
   if ((m = p.match(/^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?data\/changes(\/?)$/))) { if (!m[2]) return new Response(null, { status: 301, headers: { location: p + '/' } }); return changesPage(env, shell, m[1] || 'en', String((u && u.searchParams.get('m')) || '').slice(0, 80)); }
   if ((m = p.match(/^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?data\/how-we-verify(\/?)$/))) { if (!m[2]) return new Response(null, { status: 301, headers: { location: p + '/' } }); return verifyPage(env, shell, m[1] || 'en'); }   // r7u
+  if ((m = p.match(/^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?(registers\/malaysia|data\/markets)(\/?)$/))) { if (!m[3]) return new Response(null, { status: 301, headers: { location: p + '/' } }); return m[2] === 'data/markets' ? mcPage(env, shell, m[1] || 'en', u) : (KP ? kpPage(env, shell, m[1] || 'en') : null); }   // r9u
   if ((m = p.match(RX_REC))) {
     if (!m[3]) return new Response(null, { status: 301, headers: { location: p + '/' } });
     const r = IX.bySlug.get(m[2]); if (!r) return null;
@@ -602,4 +718,4 @@ async function route(env, shell, p, u) {
   return null;
 }
 
-export const _r8u = { progLine, progBlock, mkSection, load };   // r8u: local tests only
+export const _r8u = { progLine, progBlock, mkSection, load, kpBlock, kpMarket, devSection, kpPage, mcPage, recPage };   // r8u: local tests only
