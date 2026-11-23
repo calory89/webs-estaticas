@@ -1,6 +1,6 @@
 {
  "updated": "2026-11-23",
- "projects": 2616,
+ "projects": 2736,
  "markets": {
   "Abu Dhabi": {
    "updated": "2026-11-23",
@@ -1713,7 +1713,7 @@
    "updated": "2026-11-23",
    "market": "Bacalar",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 1,
+   "projects": 2,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -1739,10 +1739,10 @@
    "permit_numbers_published": 0,
    "plans_published": 1,
    "price_usd": {
-    "known": 1,
-    "median": 212000.0,
+    "known": 2,
+    "median": 261000.0,
     "min": 212000.0,
-    "max": 212000.0
+    "max": 310000.0
    },
    "yield": {
     "known": 0,
@@ -1750,6 +1750,7 @@
     "max": null
    },
    "completion": {
+    "2027": 1,
     "2028": 1
    },
    "runs": [
@@ -7918,10 +7919,10 @@
    "updated": "2026-11-23",
    "market": "Fort Lauderdale",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 3,
+   "projects": 6,
    "title": {
     "leasehold": 0,
-    "known": 0
+    "known": 3
    },
    "lease": {
     "known": 0,
@@ -7940,8 +7941,8 @@
     "known": 0
    },
    "guaranteed_language": 0,
-   "permit_claims": 0,
-   "permit_numbers_published": 0,
+   "permit_claims": 1,
+   "permit_numbers_published": 1,
    "plans_published": 1,
    "price_usd": {
     "known": 1,
@@ -7955,7 +7956,7 @@
     "max": null
    },
    "completion": {
-    "2027": 1,
+    "2027": 4,
     "unknown": 2
    },
    "runs": [
@@ -14520,10 +14521,10 @@
    "updated": "2026-11-23",
    "market": "Miami",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 41,
+   "projects": 59,
    "title": {
     "leasehold": 0,
-    "known": 1
+    "known": 19
    },
    "lease": {
     "known": 0,
@@ -14542,14 +14543,14 @@
     "known": 0
    },
    "guaranteed_language": 0,
-   "permit_claims": 2,
-   "permit_numbers_published": 1,
+   "permit_claims": 11,
+   "permit_numbers_published": 10,
    "plans_published": 4,
    "price_usd": {
-    "known": 7,
-    "median": 1800000.0,
+    "known": 13,
+    "median": 2000000.0,
     "min": 600000.0,
-    "max": 5800000.0
+    "max": 17600000.0
    },
    "yield": {
     "known": 0,
@@ -14557,9 +14558,9 @@
     "max": null
    },
    "completion": {
-    "2027": 10,
-    "2028": 13,
-    "2029": 4,
+    "2027": 24,
+    "2028": 16,
+    "2029": 5,
     "2030": 5,
     "unknown": 9
    },
@@ -19401,7 +19402,7 @@
    "updated": "2026-11-23",
    "market": "Riviera Maya",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 24,
+   "projects": 122,
    "title": {
     "leasehold": 0,
     "known": 1
@@ -19427,10 +19428,10 @@
    "permit_numbers_published": 0,
    "plans_published": 6,
    "price_usd": {
-    "known": 12,
-    "median": 195000.0,
-    "min": 78000.0,
-    "max": 778000.0
+    "known": 110,
+    "median": 161000.0,
+    "min": 57000.0,
+    "max": 1486000.0
    },
    "yield": {
     "known": 0,
@@ -19438,8 +19439,10 @@
     "max": null
    },
    "completion": {
-    "2028": 1,
-    "2029": 1,
+    "2027": 77,
+    "2028": 18,
+    "2029": 4,
+    "2030": 1,
     "unknown": 22
    },
    "runs": [

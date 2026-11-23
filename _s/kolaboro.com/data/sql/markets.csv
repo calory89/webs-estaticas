@@ -1,13 +1,14 @@
 market,country,projects,with_permit_number,with_handover_date,overdue,claims,claims_contradicted,reviewed,median_price_per_m2_min,price_per_m2_sample
-Dubai,UAE,766,748,752,8,6681,90,745,20129.2,616
+Dubai,UAE,766,748,753,8,6682,90,745,20125.0,617
 Bali,Indonesia,136,1,122,25,1069,168,24,3494.2,122
-Istanbul,Turkey,120,6,118,0,664,22,3,3561.6,105
+Riviera Maya,Mexico,122,0,109,0,328,38,7,3793.7,116
+Istanbul,Turkey,120,6,118,0,730,22,3,3554.1,106
 Phuket,Thailand,76,17,71,7,477,23,6,110000.0,67
 Malaysia,Malaysia,63,29,62,3,457,26,9,11358.2,45
+Miami,USA,59,31,46,0,298,22,5,15831.7,21
 Costa del Sol,Spain,49,2,27,7,327,11,12,4248.5,21
 Kuala Lumpur,Malaysia,46,12,46,1,251,2,7,10950.0,35
 Bangkok,Thailand,45,5,45,7,234,4,3,8643.8,38
-Miami,USA,41,13,26,0,258,22,5,14310.0,7
 Vietnam,Vietnam,41,6,37,3,235,16,0,4819602.8,30
 Philippines,Philippines,32,11,17,1,228,21,0,265277.3,16
 Abu Dhabi,UAE,31,17,30,2,230,29,2,25735.3,21
@@ -16,7 +17,6 @@ France,France,28,0,23,0,168,0,0,,1
 Cambodia,Cambodia,27,0,27,1,175,21,0,1600.0,25
 Spain,Spain,26,2,11,0,184,6,2,4837.4,14
 Lombok,Indonesia,24,0,17,0,206,27,6,1821.4,15
-Riviera Maya,Mexico,24,0,9,0,226,38,7,24458.8,16
 Brazil,Brazil,22,4,11,0,116,5,0,56787.5,4
 Egypt,Egypt,21,1,16,0,162,17,4,147157.5,16
 Sri Lanka,Sri Lanka,20,0,7,0,140,11,3,543560.6,6
@@ -54,7 +54,7 @@ Sydney,Australia,10,5,8,0,81,8,0,,1
 Malta,Malta,10,2,6,1,66,5,1,,2
 Lisbon,Portugal,10,0,5,0,55,8,4,9861.3,6
 Tokyo,Japan,10,3,10,0,46,0,1,4087759.8,5
-Turkey,Turkey,10,0,10,0,48,0,0,2208.0,9
+Turkey,Turkey,10,0,10,0,52,0,0,2208.0,9
 Mérida,Mexico,9,0,6,0,67,11,1,44807.7,7
 Antalya,Turkey,9,1,9,1,70,11,2,2571.4,7
 Vancouver,Canada,9,0,5,0,29,1,0,,2
@@ -80,6 +80,7 @@ Goa,India,6,5,5,0,34,5,0,211774.1,4
 Ajman,UAE,6,4,6,0,55,14,0,15665.1,3
 Namibia,Namibia,6,0,2,0,28,1,0,15900.3,6
 Cayman Islands,Cayman Islands,6,1,4,0,40,4,0,9713.0,4
+Fort Lauderdale,USA,6,4,5,0,32,2,0,,1
 Maldives,Maldives,6,0,4,0,39,6,0,13680.3,4
 Lagos,Nigeria,6,0,3,0,23,4,0,3371.7,4
 Berlin,Germany,6,0,6,0,28,3,0,6270.0,4
@@ -129,7 +130,6 @@ Seychelles,Seychelles,3,1,2,1,27,6,0,,2
 Antigua,Antigua and Barbuda,3,0,2,0,27,4,0,,1
 Buenos Aires,Argentina,3,0,3,0,28,6,0,6234.7,3
 Jakarta,Indonesia,3,0,3,1,25,4,0,58536585.4,3
-Fort Lauderdale,USA,3,3,1,0,27,2,0,,1
 Tampa,USA,3,2,3,0,30,3,0,,1
 Melbourne,Australia,3,2,3,0,33,4,0,,2
 Jamaica,Jamaica,3,1,1,0,15,1,0,,2
@@ -150,7 +150,8 @@ Nashville,USA,2,0,2,0,18,3,0,,0
 Las Vegas,USA,2,0,2,0,19,3,0,,0
 Leeds,United Kingdom,2,2,2,0,22,4,0,,2
 Laos,Laos,2,0,1,0,12,1,0,,1
-Naples,USA,2,0,1,0,16,1,0,,1
+Naples,USA,2,1,1,0,17,1,0,,1
+Bacalar,Mexico,2,0,2,0,10,0,0,,2
 Singapore,Singapore,2,1,2,0,6,1,0,,0
 Amman,Jordan,2,0,1,0,6,0,0,,1
 Chile,Chile,2,0,0,0,7,2,0,,1
@@ -170,7 +171,6 @@ Vanuatu,Vanuatu,1,0,0,0,10,1,0,,0
 Gili Islands,Indonesia,1,0,0,0,10,1,0,,1
 Serbia,Serbia,1,0,1,0,8,1,0,,0
 Puerto Rico,Puerto Rico (USA),1,0,1,0,10,0,0,,1
-Bacalar,Mexico,1,0,1,0,8,0,0,,0
 Koh Phangan,Thailand,1,0,1,0,8,1,0,,1
 Taiwan,Taiwan,1,1,1,0,4,0,0,,0
 Almaty,Kazakhstan,1,1,1,0,3,0,0,,1
