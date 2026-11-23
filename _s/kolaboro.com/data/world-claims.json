@@ -1,12 +1,12 @@
 {
  "updated": "2026-11-23",
- "projects": 3250,
+ "projects": 3363,
  "markets": {
   "Abu Dhabi": {
    "updated": "2026-11-23",
    "market": "Abu Dhabi",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 35,
+   "projects": 46,
    "title": {
     "leasehold": 0,
     "known": 11
@@ -32,7 +32,7 @@
    "permit_numbers_published": 3,
    "plans_published": 4,
    "price_usd": {
-    "known": 29,
+    "known": 30,
     "median": 681000.0,
     "min": 99000.0,
     "max": 2260000.0
@@ -43,12 +43,13 @@
     "max": null
    },
    "completion": {
+    "2025": 1,
     "2026": 2,
     "2027": 5,
     "2028": 9,
     "2029": 5,
     "2030": 4,
-    "unknown": 10
+    "unknown": 20
    },
    "runs": [
     {
@@ -7256,7 +7257,7 @@
    "updated": "2026-11-23",
    "market": "Dubai",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 886,
+   "projects": 948,
    "title": {
     "leasehold": 0,
     "known": 27
@@ -7278,11 +7279,11 @@
     "known": 0
    },
    "guaranteed_language": 1,
-   "permit_claims": 690,
-   "permit_numbers_published": 694,
+   "permit_claims": 752,
+   "permit_numbers_published": 756,
    "plans_published": 43,
    "price_usd": {
-    "known": 633,
+    "known": 692,
     "median": 300000.0,
     "min": 50000.0,
     "max": 15584000.0
@@ -7293,10 +7294,10 @@
     "max": 8
    },
    "completion": {
-    "2026": 63,
-    "2027": 332,
-    "2028": 276,
-    "2029": 138,
+    "2026": 73,
+    "2027": 363,
+    "2028": 293,
+    "2029": 142,
     "2030": 48,
     "2031": 4,
     "2032": 1,
@@ -12141,7 +12142,7 @@
    "updated": "2026-11-23",
    "market": "Kuala Lumpur",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 102,
+   "projects": 104,
    "title": {
     "leasehold": 0,
     "known": 13
@@ -12163,11 +12164,11 @@
     "known": 0
    },
    "guaranteed_language": 0,
-   "permit_claims": 68,
-   "permit_numbers_published": 68,
+   "permit_claims": 70,
+   "permit_numbers_published": 70,
    "plans_published": 2,
    "price_usd": {
-    "known": 101,
+    "known": 103,
     "median": 128000.0,
     "min": 21000.0,
     "max": 1188000.0
@@ -12178,9 +12179,9 @@
     "max": null
    },
    "completion": {
-    "2026": 3,
+    "2026": 4,
     "2027": 17,
-    "2028": 29,
+    "2028": 30,
     "2029": 22,
     "2030": 13,
     "2031": 4,
@@ -13856,7 +13857,7 @@
    "updated": "2026-11-23",
    "market": "Malaysia",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 235,
+   "projects": 272,
    "title": {
     "leasehold": 3,
     "known": 31
@@ -13878,12 +13879,12 @@
     "known": 0
    },
    "guaranteed_language": 0,
-   "permit_claims": 192,
-   "permit_numbers_published": 192,
+   "permit_claims": 229,
+   "permit_numbers_published": 229,
    "plans_published": 6,
    "price_usd": {
-    "known": 227,
-    "median": 112000.0,
+    "known": 264,
+    "median": 108000.0,
     "min": 16000.0,
     "max": 1095000.0
    },
@@ -13893,14 +13894,14 @@
     "max": null
    },
    "completion": {
-    "2026": 9,
-    "2027": 25,
-    "2028": 31,
-    "2029": 55,
+    "2026": 10,
+    "2027": 38,
+    "2028": 42,
+    "2029": 59,
     "2030": 45,
     "2031": 5,
     "2032": 1,
-    "unknown": 64
+    "unknown": 72
    },
    "runs": [
     {
@@ -20060,7 +20061,7 @@
    "updated": "2026-11-23",
    "market": "Ras Al Khaimah",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 31,
+   "projects": 32,
    "title": {
     "leasehold": 0,
     "known": 10
@@ -20102,7 +20103,7 @@
     "2028": 17,
     "2029": 3,
     "2030": 1,
-    "unknown": 1
+    "unknown": 2
    },
    "runs": [
     {

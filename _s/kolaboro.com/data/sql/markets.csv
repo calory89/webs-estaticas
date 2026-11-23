@@ -1,20 +1,20 @@
 market,country,projects,with_permit_number,with_handover_date,overdue,claims,claims_contradicted,reviewed,median_price_per_m2_min,price_per_m2_sample
-Dubai,UAE,886,868,873,8,7740,90,865,20000.0,727
-Malaysia,Malaysia,235,216,179,5,1783,26,181,11358.2,45
+Dubai,UAE,948,930,935,8,8152,90,927,19782.0,786
+Malaysia,Malaysia,272,254,208,6,2033,26,218,11358.2,45
 Bali,Indonesia,136,1,122,25,1074,168,24,3494.2,122
 Riviera Maya,Mexico,122,0,109,0,328,38,7,3793.7,116
-Istanbul,Turkey,120,6,118,0,731,22,3,3554.1,106
-Kuala Lumpur,Malaysia,102,84,89,1,777,2,63,10950.0,35
+Istanbul,Turkey,120,6,118,0,833,22,3,3554.1,106
+Kuala Lumpur,Malaysia,104,86,91,1,789,2,65,10950.0,35
 Spain,Spain,83,2,11,0,335,6,2,2875.8,50
 Phuket,Thailand,76,17,71,7,528,23,6,110000.0,67
 Miami,USA,59,31,46,0,298,22,5,15831.7,21
 Costa del Sol,Spain,57,2,27,7,406,11,12,4005.3,29
 Sydney,Australia,49,5,11,0,181,8,0,11588.2,7
+Abu Dhabi,UAE,46,17,31,3,264,29,17,25735.3,21
 Bangkok,Thailand,45,5,45,7,280,4,3,8643.8,38
 Vietnam,Vietnam,41,6,37,3,235,16,0,4819602.8,30
-Abu Dhabi,UAE,35,17,30,2,251,29,6,25735.3,21
 Philippines,Philippines,32,11,17,1,228,21,0,265277.3,16
-Ras Al Khaimah,UAE,31,0,30,2,225,38,7,31518.5,16
+Ras Al Khaimah,UAE,32,0,30,2,226,38,8,31518.5,16
 France,France,28,0,23,0,168,0,0,,1
 Cambodia,Cambodia,27,0,27,1,175,21,0,1600.0,25
 Melbourne,Australia,27,2,3,0,84,4,0,10233.9,7
@@ -28,10 +28,10 @@ Greece,Greece,19,1,17,0,136,21,3,7238.1,6
 Gold Coast,Australia,19,1,13,0,149,9,0,15300.9,8
 Cyprus,Cyprus,18,0,9,0,110,13,5,5702.8,8
 Oman,Oman,18,0,15,0,134,23,1,1311.8,13
-Georgia,Georgia,17,0,12,0,138,24,3,2778.8,9
+Georgia,Georgia,17,0,12,0,142,24,3,2778.8,9
 Osaka,Japan,17,0,17,4,61,0,0,1310638.3,13
 Los Cabos,Mexico,16,0,9,1,112,18,3,5383.0,8
-Northern Cyprus,Northern Cyprus,16,0,16,2,111,19,2,3735.3,15
+Northern Cyprus,Northern Cyprus,16,0,16,2,118,19,2,3735.3,15
 Warsaw,Poland,16,0,14,0,72,0,0,,1
 Koh Samui,Thailand,15,3,10,0,118,17,1,45769.2,9
 Algarve,Portugal,15,0,6,1,94,7,3,7630.8,6
@@ -57,9 +57,9 @@ Poland,Poland,11,0,9,0,46,0,0,,0
 Punta Cana,Dominican Republic,10,0,6,0,67,10,1,2841.1,5
 Malta,Malta,10,2,6,1,66,5,1,,2
 Tokyo,Japan,10,3,10,0,46,0,1,4087759.8,5
-Turkey,Turkey,10,0,10,0,52,0,0,2208.0,9
+Turkey,Turkey,10,0,10,0,61,0,0,2208.0,9
 Mérida,Mexico,9,0,6,0,67,11,1,44807.7,7
-Antalya,Turkey,9,1,9,1,70,11,2,2571.4,7
+Antalya,Turkey,9,1,9,1,71,11,2,2571.4,7
 Perth,Australia,9,0,4,0,52,3,0,,2
 Vancouver,Canada,9,0,5,0,29,1,0,,2
 Panama City,Panama,8,0,8,0,71,12,0,4018.8,7
@@ -90,7 +90,7 @@ Berlin,Germany,6,0,6,0,28,3,0,6270.0,4
 Belize,Belize,5,0,3,0,28,4,0,5408.2,3
 Dominican Republic,Dominican Republic,5,1,4,0,39,6,0,4964.5,3
 Bodrum,Turkey,5,1,4,1,34,7,1,,1
-Alanya,Turkey,5,0,5,0,38,5,0,3547.2,5
+Alanya,Turkey,5,0,5,0,40,5,0,3547.2,5
 Mexico City,Mexico,5,0,5,0,48,6,0,135771.4,5
 Madeira,Portugal,5,0,3,0,23,3,1,6610.2,3
 Hawaii,USA,5,2,1,0,34,3,0,,0
