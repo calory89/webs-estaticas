@@ -1,5 +1,5 @@
 market,country,projects,with_permit_number,with_handover_date,overdue,claims,claims_contradicted,reviewed,median_price_per_m2_min,price_per_m2_sample
-Dubai,UAE,886,868,873,8,7732,90,865,20000.0,727
+Dubai,UAE,886,868,873,8,7740,90,865,20000.0,727
 Malaysia,Malaysia,235,216,179,5,1783,26,181,11358.2,45
 Bali,Indonesia,136,1,122,25,1074,168,24,3494.2,122
 Riviera Maya,Mexico,122,0,109,0,328,38,7,3793.7,116
@@ -12,7 +12,7 @@ Costa del Sol,Spain,57,2,27,7,406,11,12,4005.3,29
 Sydney,Australia,49,5,11,0,181,8,0,11588.2,7
 Bangkok,Thailand,45,5,45,7,280,4,3,8643.8,38
 Vietnam,Vietnam,41,6,37,3,235,16,0,4819602.8,30
-Abu Dhabi,UAE,34,17,30,2,237,29,5,25735.3,21
+Abu Dhabi,UAE,35,17,30,2,251,29,6,25735.3,21
 Philippines,Philippines,32,11,17,1,228,21,0,265277.3,16
 Ras Al Khaimah,UAE,31,0,30,2,225,38,7,31518.5,16
 France,France,28,0,23,0,168,0,0,,1

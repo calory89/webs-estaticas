@@ -9371,7 +9371,7 @@
    },
    "vscore": 4,
    "claims": {
-    "verified": 6,
+    "verified": 7,
     "unverified": 2,
     "contradicted": 3
    },
@@ -9515,7 +9515,7 @@
    "region": "Abu Dhabi",
    "docs": true,
    "plans": false,
-   "band": "Price not stated",
+   "band": "$200k to $400k",
    "done": 2027,
    "title": "freehold",
    "lease": null,
@@ -9560,14 +9560,14 @@
    },
    "vscore": 1,
    "claims": {
-    "verified": 4,
+    "verified": 6,
     "unverified": 3,
     "contradicted": 0
    },
    "stage": null,
    "delay": null,
    "overdue": null,
-   "profile": 8,
+   "profile": 9,
    "fp": {
     "sha256": "6f2f1e8c646f3163330f4039bae9791e2a34fc8bf3f7d7740c57db7f01b3cb41",
     "date": "2026-11-05"
@@ -10738,14 +10738,14 @@
    },
    "vscore": 0,
    "claims": {
-    "verified": 0,
+    "verified": 2,
     "unverified": 4,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 7
   },
   {
    "id": "AUH-022",
@@ -10986,7 +10986,7 @@
    },
    "vscore": 0,
    "claims": {
-    "verified": 0,
+    "verified": 1,
     "unverified": 4,
     "contradicted": 0
    },
@@ -11047,14 +11047,14 @@
    },
    "vscore": 0,
    "claims": {
-    "verified": 0,
+    "verified": 2,
     "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 5
+   "profile": 6
   },
   {
    "id": "AUH-027",
@@ -11109,7 +11109,7 @@
    },
    "vscore": 0,
    "claims": {
-    "verified": 0,
+    "verified": 1,
     "unverified": 4,
     "contradicted": 0
    },
@@ -11171,7 +11171,7 @@
    },
    "vscore": 0,
    "claims": {
-    "verified": 0,
+    "verified": 1,
     "unverified": 4,
     "contradicted": 0
    },
@@ -11233,14 +11233,14 @@
    },
    "vscore": 0,
    "claims": {
-    "verified": 0,
+    "verified": 2,
     "unverified": 4,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 4
+   "profile": 5
   },
   {
    "id": "AUH-030",
@@ -11295,7 +11295,7 @@
    },
    "vscore": 0,
    "claims": {
-    "verified": 0,
+    "verified": 1,
     "unverified": 4,
     "contradicted": 0
    },
@@ -11548,6 +11548,67 @@
    "delay": null,
    "overdue": null,
    "profile": 3
+  },
+  {
+   "id": "AUH-035",
+   "market": "Abu Dhabi",
+   "country": "UAE",
+   "region": "Abu Dhabi",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 77,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 1,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 1
   },
   {
    "id": "ACC-001",
@@ -72525,7 +72586,7 @@
    "region": "Dubai",
    "docs": true,
    "plans": false,
-   "band": "Price not stated",
+   "band": "$400k and up",
    "done": 2028,
    "title": null,
    "lease": null,
@@ -72571,14 +72632,14 @@
    },
    "vscore": 2,
    "claims": {
-    "verified": 18,
+    "verified": 21,
     "unverified": 0,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 4,
+   "profile": 5,
    "register": {
     "register": "Dubai DLD project register (published on dubairealestateiq.com)",
     "item": "project registration",
@@ -72707,7 +72768,7 @@
    },
    "vscore": 2,
    "claims": {
-    "verified": 18,
+    "verified": 19,
     "unverified": 0,
     "contradicted": 0
    },
@@ -72729,7 +72790,7 @@
    "region": "Dubai",
    "docs": true,
    "plans": false,
-   "band": "Price not stated",
+   "band": "$200k to $400k",
    "done": 2028,
    "title": null,
    "lease": null,
@@ -72775,14 +72836,14 @@
    },
    "vscore": 2,
    "claims": {
-    "verified": 17,
+    "verified": 19,
     "unverified": 0,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 4,
+   "profile": 5,
    "register": {
     "register": "Dubai DLD project register (published on dubairealestateiq.com)",
     "item": "project registration",
@@ -72843,7 +72904,7 @@
    },
    "vscore": 2,
    "claims": {
-    "verified": 16,
+    "verified": 18,
     "unverified": 0,
     "contradicted": 0
    },
@@ -215884,28 +215945,28 @@
  ],
  "db": {
   "updated": "2026-11-23",
-  "projects": 3249,
+  "projects": 3250,
   "markets": 191,
   "countries": 94,
-  "sources": 9442,
-  "data_points": 82938,
+  "sources": 9459,
+  "data_points": 82962,
   "claims": {
-   "verified": 11247,
+   "verified": 11269,
    "unverified": 10600,
    "contradicted": 1370
   },
-  "claims_total": 23217,
-  "deep_profiles": 3249,
+  "claims_total": 23239,
+  "deep_profiles": 3250,
   "checks_by_level": {
    "registry": 3796,
    "independent": 482,
    "developer": 2022,
    "contradicted": 103,
-   "none": 13091
+   "none": 13097
   },
-  "checks_rated": 19494,
+  "checks_rated": 19500,
   "stages": {
-   "off-plan": 1145,
+   "off-plan": 1146,
    "under construction": 2041,
    "completed": 17
   },

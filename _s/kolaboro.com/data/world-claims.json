@@ -1,12 +1,12 @@
 {
  "updated": "2026-11-23",
- "projects": 3249,
+ "projects": 3250,
  "markets": {
   "Abu Dhabi": {
    "updated": "2026-11-23",
    "market": "Abu Dhabi",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 34,
+   "projects": 35,
    "title": {
     "leasehold": 0,
     "known": 11
@@ -48,7 +48,7 @@
     "2028": 9,
     "2029": 5,
     "2030": 4,
-    "unknown": 9
+    "unknown": 10
    },
    "runs": [
     {
