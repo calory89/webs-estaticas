@@ -1,6 +1,6 @@
 {
  "updated": "2026-11-23",
- "projects": 3016,
+ "projects": 3130,
  "markets": {
   "Abu Dhabi": {
    "updated": "2026-11-23",
@@ -12141,7 +12141,7 @@
    "updated": "2026-11-23",
    "market": "Kuala Lumpur",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 46,
+   "projects": 102,
    "title": {
     "leasehold": 0,
     "known": 13
@@ -12163,14 +12163,14 @@
     "known": 0
    },
    "guaranteed_language": 0,
-   "permit_claims": 12,
-   "permit_numbers_published": 12,
+   "permit_claims": 68,
+   "permit_numbers_published": 68,
    "plans_published": 2,
    "price_usd": {
-    "known": 45,
-    "median": 146000.0,
-    "min": 62000.0,
-    "max": 423000.0
+    "known": 101,
+    "median": 128000.0,
+    "min": 21000.0,
+    "max": 1188000.0
    },
    "yield": {
     "known": 0,
@@ -12179,12 +12179,12 @@
    },
    "completion": {
     "2026": 3,
-    "2027": 11,
-    "2028": 15,
-    "2029": 13,
-    "2030": 2,
-    "2031": 1,
-    "unknown": 1
+    "2027": 17,
+    "2028": 29,
+    "2029": 22,
+    "2030": 13,
+    "2031": 4,
+    "unknown": 14
    },
    "runs": [
     {
@@ -13856,7 +13856,7 @@
    "updated": "2026-11-23",
    "market": "Malaysia",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 63,
+   "projects": 121,
    "title": {
     "leasehold": 3,
     "known": 31
@@ -13878,14 +13878,14 @@
     "known": 0
    },
    "guaranteed_language": 0,
-   "permit_claims": 20,
-   "permit_numbers_published": 20,
+   "permit_claims": 78,
+   "permit_numbers_published": 78,
    "plans_published": 6,
    "price_usd": {
-    "known": 55,
-    "median": 162000.0,
-    "min": 58000.0,
-    "max": 863000.0
+    "known": 113,
+    "median": 125000.0,
+    "min": 34000.0,
+    "max": 1095000.0
    },
    "yield": {
     "known": 0,
@@ -13895,11 +13895,12 @@
    "completion": {
     "2026": 5,
     "2027": 16,
-    "2028": 13,
-    "2029": 13,
-    "2030": 6,
+    "2028": 18,
+    "2029": 28,
+    "2030": 23,
+    "2031": 2,
     "2032": 1,
-    "unknown": 9
+    "unknown": 28
    },
    "runs": [
     {
