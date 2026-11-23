@@ -329,10 +329,19 @@
  },
  {
   "a": "avea-andaman-island-eastern-oriental",
+  "b": "maris-seri-tanjung-pinang",
+  "market": "Malaysia",
+  "why": [
+   "73 m apart"
+  ]
+ },
+ {
+  "a": "avea-andaman-island-eastern-oriental",
   "b": "maris-andaman-island",
   "market": "Malaysia",
   "why": [
-   "similar name"
+   "similar name",
+   "73 m apart"
   ]
  },
  {
@@ -1106,6 +1115,14 @@
   ]
  },
  {
+  "a": "residensi-m-aurora",
+  "b": "residensi-radium",
+  "market": "Kuala Lumpur",
+  "why": [
+   "141 m apart"
+  ]
+ },
+ {
   "a": "affinity-broadbeach",
   "b": "maison-broadbeach",
   "market": "Gold Coast",
@@ -1199,6 +1216,22 @@
   "market": "Malaysia",
   "why": [
    "similar name"
+  ]
+ },
+ {
+  "a": "the-lume-seri-tanjung-pinang",
+  "b": "the-lume-andaman-island",
+  "market": "Malaysia",
+  "why": [
+   "0 m apart"
+  ]
+ },
+ {
+  "a": "maris-seri-tanjung-pinang",
+  "b": "maris-andaman-island",
+  "market": "Malaysia",
+  "why": [
+   "0 m apart"
   ]
  },
  {
@@ -3723,6 +3756,118 @@
   "market": "Dubai",
   "why": [
    "similar name"
+  ]
+ },
+ {
+  "a": "phoeniz-suites-kl-city-centre",
+  "b": "kyliez-suites-kl-city-centre",
+  "market": "Kuala Lumpur",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "phoeniz-suites-kl-city-centre",
+  "b": "hugoz-suites-kl-city-centre",
+  "market": "Kuala Lumpur",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "residensi-brightwood-sungai-besi",
+  "b": "residensi-rimbun-sungai-besi",
+  "market": "Kuala Lumpur",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "residensi-bayu-kuarza",
+  "b": "residensi-bayu-2",
+  "market": "Malaysia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "residensi-lestari-1",
+  "b": "residensi-lestari-2",
+  "market": "Malaysia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "residensi-ria",
+  "b": "d-evia-residences-kwasa-damansara",
+  "market": "Malaysia",
+  "why": [
+   "90 m apart"
+  ]
+ },
+ {
+  "a": "residensi-ria",
+  "b": "residensi-ros-ria",
+  "market": "Malaysia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "residensi-radium-evara",
+  "b": "residensi-radium",
+  "market": "Kuala Lumpur",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "residensi-warisan-salak-selatan",
+  "b": "residensi-kirana-salak-selatan",
+  "market": "Kuala Lumpur",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "residensi-sena",
+  "b": "residensi-sena-petaling",
+  "market": "Malaysia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "residensi-awani-6",
+  "b": "residensi-awani-prima",
+  "market": "Kuala Lumpur",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "residensi-platinum-melati",
+  "b": "residensi-mh-platinum-3",
+  "market": "Kuala Lumpur",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "kyliez-suites-kl-city-centre",
+  "b": "hugoz-suites-kl-city-centre",
+  "market": "Kuala Lumpur",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "residensi-andalan",
+  "b": "residensi-ayanna",
+  "market": "Kuala Lumpur",
+  "why": [
+   "113 m apart"
   ]
  }
 ]
