@@ -48,7 +48,7 @@
 <section class="phero"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / <a href="/docs/api/">Open data and API</a> / Data catalog</p>
 <h1>Open data catalog</h1>
 <p class="lead">Every file we publish under /data/, measured by a job every day: licence, how often it changes, when it last changed, size, rows, SHA-256, its data contract and a download link. Most files use project ids; each project also has its own page with its name and sourced facts.</p>
-<div class="kd-k" id="kdTotals"><div><b>385</b><span>datasets (441 files, 69.9 MB)</span></div><div><b>71/74</b><span>files pass their contract</span></div><div><b id="kdFreshN">39/41</b><span>on time (<span id="kdLateN">2</span> late, 344 without schedule)</span></div><div><b>64/65</b><span>API answers match the OpenAPI description</span></div></div>
+<div class="kd-k" id="kdTotals"><div><b>385</b><span>datasets (441 files, 69.9 MB)</span></div><div><b>71/74</b><span>files pass their contract</span></div><div><b id="kdFreshN">39/41</b><span>on time (<span id="kdLateN">2</span> late, 344 without schedule)</span></div><div><b>64/65</b><span>API answers match the OpenAPI description (<a href="#api-press">1 not measured</a>)</span></div></div>
 <p class="kd-meta">Measured 2026-11-20T23:15:25Z by the <a href="https://github.com/calory89/webs-estaticas/actions/runs/44835376711">catalog job</a>. Ages below update live from <a href="/api/x/data/freshness">/api/x/data/freshness</a>. <span id="kdLive" aria-live="polite"></span></p>
 <p class="kd-jump"><a href="#datasets">Datasets</a> <a href="#contracts">Contracts</a> <a href="#freshness">Freshness</a> <a href="#machine">Machine-readable</a> <a href="#method">Method and limits</a></p>
 </div></section>
@@ -2400,8 +2400,8 @@
 <tr id="c-undescribed-website-changes-json"><td><code>website-changes.json</code></td><td>no contract</td><td>no contract written for this file yet</td></tr>
 <tr id="c-undescribed-worker-modules-json"><td><code>worker-modules.json</code></td><td>no contract</td><td>no contract written for this file yet</td></tr>
 <tr id="c-world-claims"><td><code>world-claims.json</code></td><td><span class="kd-ok-t">pass</span></td><td>&nbsp;</td></tr>
-</tbody></table></div><h3 class="kd-h3">API answers against the OpenAPI description</h3><div class="kd-tw"><table class="kd-t"><thead><tr><th>Operation</th><th>HTTP</th><th>Result</th><th>First errors</th></tr></thead><tbody>
-<tr><td><a href="/docs/api/explorer/#/api/x/v/press"><code>/api/x/v/press</code></a></td><td>200</td><td><b class="kd-late-t">fail</b></td><td>/ai_spend: None is not of type &#x27;object&#x27;</td></tr>
+</tbody></table></div><h3 class="kd-h3" id="api-answers">API answers against the OpenAPI description</h3><div class="kd-tw"><table class="kd-t"><thead><tr><th>Operation</th><th>HTTP</th><th>Result</th><th>First errors</th></tr></thead><tbody>
+<tr id="api-press"><td><a href="/docs/api/explorer/#/api/x/v/press"><code>/api/x/v/press</code></a></td><td>200</td><td><b>not measured</b></td><td>The run of 20 Nov 2026 found <code>/ai_spend</code> empty (null) where the description asked for an object. The November release carries no spend record, so there is nothing to measure. The description now allows null (23 Nov 2026); the next weekly run checks this answer again. Not counted as a pass.</td></tr>
 <tr><td><a href="/docs/api/explorer/#/api/open"><code>/api/open</code></a></td><td>200</td><td><span class="kd-ok-t">pass</span></td><td>&nbsp;</td></tr>
 <tr><td><a href="/docs/api/explorer/#/api/open/ai-spend"><code>/api/open/ai-spend</code></a></td><td>200</td><td><span class="kd-ok-t">pass</span></td><td>&nbsp;</td></tr>
 <tr><td><a href="/docs/api/explorer/#/api/open/badge/{id}.svg"><code>/api/open/badge/{id}.svg</code></a></td><td>200</td><td><span class="kd-ok-t">pass</span></td><td>&nbsp;</td></tr>

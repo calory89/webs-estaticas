@@ -112,7 +112,7 @@ def num(s):
     except Exception: return None
 RD = re.compile(r'\(register read (\d{1,2} \w+ \d{4})\)')
 def kp_build(named):
-    out = {}
+    out = {}; os_ = {}
     for x in named['projects']:
         if COI.search(' '.join(str(x.get(k) or '') for k in ('n', 'dv', 'mk', 'ar', 's'))): continue
         cl = [c for c in (x.get('cl') or []) if 'teduh.kpkt.gov.my' in (c[3] or '')]
@@ -153,7 +153,15 @@ def kp_build(named):
         if order and x.get('pn') and 'pn' not in ph[order[0]] and str(x['pn']).startswith(order[0] + '/'): ph[order[0]]['pn'] = x['pn']
         L = [ph[k] for k in order if len(ph[k]) > 3]
         if L: out[x['s']] = L
-    res = {'v': 'n37u-kp-1', 'built': named.get('updated') or '', 'src': 'https://teduh.kpkt.gov.my/', 'p': out}
+        # r11u (round 11): the register says completed, our stage does not. Keep our stage as it is and show both, each with its date
+        # and source: our stage comes from the claim that states it (its read or profile date), else the date the record was added.
+        if L and x.get('st') != 'completed' and any(str(p.get('st') or '').startswith('Siap') for p in L):
+            sc = next((c for c in (x.get('cl') or []) if 'teduh.kpkt.gov.my' not in (c[3] or '') and re.search(r'status "[^"]+"', c[0])), None)
+            sd = ''
+            if sc:
+                m = re.search(r'read (\d{1,2} \w+ \d{4})', sc[0]) or re.search(r'dated (\d{4}-\d\d-\d\d)', sc[0]); sd = iso(m.group(1)) if m else ''
+            os_[x['s']] = [x.get('st') or '', sd or x.get('ad') or '', (sc[3] if sc else x.get('url')) or '', 1 if sd else 0]
+    res = {'v': 'n37u-kp-1', 'built': named.get('updated') or '', 'src': 'https://teduh.kpkt.gov.my/', 'p': out, 'os': os_}
     res['n'] = len(out)
     return res
 

@@ -329,6 +329,17 @@ function thinHtml(lang, pl) {
   }).join('') + '</ul>';
 }
 // ------------------------------------------------------------------------------------------------ pages
+function viewOf(pl, o) { if (!o || !o.G) return pl; let L = o.rg ? pl.L.filter(r => !r.sumba && o.G.get(r.s)) : pl.L; if (o.so) L = L.map((r, i) => [r.sumba ? 0 : o.G.get(r.s) || 0, i, r]).sort((a, b) => b[0] - a[0] || a[1] - b[1]).map(x => x[2]); return Object.assign({}, pl, { L }); }   // r10u
+// r11u (round 11): long rankings (Dubai 766 rows, 3.2 MB) send the first PG_N rows; the rest come as a row fragment (?rows=N) on request,
+// or all on one page (?all=1). A link to a row that is not on the page (#p-<id>) loads the rest first.
+const PG_N = 100;
+const PG_JS = '<script>(function(){var w=document.getElementById("ktr-more");if(!w)return;var b=w.querySelector("button"),busy=0;function go(h){if(busy)return;busy=1;b.disabled=true;var nx=0;fetch(w.getAttribute("data-src")+"&from="+w.getAttribute("data-from")+(h?"&to=all":"")).then(function(r){if(!r.ok)throw 0;nx=+(r.headers.get("x-kb-next")||0);return r.text()}).then(function(t){var tb=w.previousElementSibling.querySelector("tbody"),n=tb.querySelectorAll("tr[id^=p-]").length;tb.insertAdjacentHTML("beforeend",t);var N=+w.getAttribute("data-n");if(nx&&nx<N){busy=0;b.disabled=false;w.setAttribute("data-from",nx);w.querySelector("p").textContent=w.getAttribute("data-sh").replace("{a}",nx.toLocaleString(document.documentElement.lang));b.textContent=w.getAttribute("data-nx").replace("{k}",Math.min(100,N-nx).toLocaleString(document.documentElement.lang));}else w.remove();var e=h&&document.getElementById(h);if(e){e.scrollIntoView();}else{var r=tb.querySelectorAll("tr[id^=p-]")[n],a=r&&r.querySelector("a,button");if(a)a.focus();}}).catch(function(){busy=0;b.disabled=false;w.querySelector("p").textContent=w.getAttribute("data-err")})}b.addEventListener("click",function(){go()});var h=decodeURIComponent(location.hash.slice(1));if(/^[pd]-/.test(h)&&!document.getElementById(h))go(h)})()</script>';
+function moreHtml(lang, pv, path, o) {
+  const q = (o.rg ? '&amp;rg=1' : '') + (o.so ? '&amp;s=reg' : ''), P = pre(lang) + path, n = pv.L.length;
+  return '<div class="ktr-more" id="ktr-more" data-src="' + P + '?rows=1' + q + '" data-from="' + PG_N + '" data-n="' + n + '" data-sh="' + esc(o.RT('pg_sh', { a: '{a}', n: nf(lang, n) })) + '" data-nx="' + esc(o.RT('pg_next', { k: '{k}' })) + '" data-err="' + esc(o.RT('pg_err')) + '"><p class="k-small">' + esc(o.RT('pg_sh', { a: nf(lang, PG_N), n: nf(lang, n) })) + '</p><p class="ktr-mp"><button type="button" class="k-btn">' + esc(n - PG_N > PG_N ? o.RT('pg_next', { k: nf(lang, PG_N) }) : o.RT('pg_more', { k: nf(lang, n - PG_N) })) + '</button> <a href="' + P + '?all=1' + q + '#ranking">' + esc(o.RT('pg_all', { n: nf(lang, n) })) + '</a></p></div>' +
+    '<style>.ktr-more{margin:10px 0 18px}.ktr-mp{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px}.ktr-mp button{min-height:44px;padding:8px 18px;font-weight:600;cursor:pointer}.ktr-mp a{display:inline-flex;align-items:center;min-height:44px;font-weight:600}</style>' + PG_JS;
+}
+function rowsFrag(ix, slug, lang, o, from, all) { const pl = ix.places.get(slug); if (!pl) return null; const L = viewOf(pl, o).L, to = all ? L.length : Math.min(L.length, from + PG_N); return { h: L.slice(from, to).map(r => rowHtml(lang, r, r['rk_' + pl.P.s], pl.ranked, o)).join(''), next: to < L.length ? to : 0 }; }
 function placePage(ix, slug, lang, o) {
   const pl = ix.places.get(slug); if (!pl) return null;
   const P = pl.P, p = bdi(mkName(P.n, lang)), pN = mkName(P.n, lang), path = '/rankings/transparency/' + slug + '/';
@@ -339,14 +350,14 @@ function placePage(ix, slug, lang, o) {
   let body = '<div class="ktr"><section class="k-sec"><div class="k-wrap"><div class="k-phead">' + crumbHtml(lang, cr) + '<h1>' + h1 + '</h1><p class="lead">' + esc(t(lang, 'lead')) + '</p></div>';
   if (P.coi) body += '<div class="k-alert k-alert--warn ktr-coi" role="note" id="disclosure"><b>' + esc(t(lang, 'coi')) + '</b> <span><a href="/independence/">' + esc(t(lang, 'coi_link')) + '</a>. ' + esc(t(lang, 'coi_rows')) + '</span></div>';
   body += kvHtml(lang, pl, ix) + assignHtml(lang, P) + (pl.ranked ? '' : '<p class="k-small">' + esc(t(lang, 'small')) + '</p>');
-  let pv = pl; if (o && o.G) { let L = o.rg ? pl.L.filter(r => !r.sumba && o.G.get(r.s)) : pl.L; if (o.so) L = L.map((r, i) => [r.sumba ? 0 : o.G.get(r.s) || 0, i, r]).sort((a, b) => b[0] - a[0] || a[1] - b[1]).map(x => x[2]); pv = Object.assign({}, pl, { L }); }   // r10u
-  body += '<h2 id="ranking">' + esc(t(lang, pl.ranked ? 'tbl_h' : 'list_h')) + '</h2>' + (o && o.G ? rgBar(lang, pl, path, o) : '') + (pv.L.length ? tableHtml(lang, pv, o) : '<p>' + esc(o.RT('rk_0')) + '</p>');
+  const pv = viewOf(pl, o);
+  body += '<h2 id="ranking">' + esc(t(lang, pl.ranked ? 'tbl_h' : 'list_h')) + '</h2>' + (o && o.G ? rgBar(lang, pl, path, o) : '') + (pv.L.length ? (o && !o.all && pv.L.length > PG_N ? tableHtml(lang, Object.assign({}, pv, { L: pv.L.slice(0, PG_N) }), o) + moreHtml(lang, pv, path, o) : tableHtml(lang, pv, o)) : '<p>' + esc(o.RT('rk_0')) + '</p>');
   body += thinHtml(lang, pl);
   body += emailBox(lang, P) + replyBox(lang, null);
   body += '<h2 id="faq">' + esc(t(lang, 'faq_h')) + '</h2><div class="k-disc">' + faq.map(([q, a]) => '<details><summary>' + esc(q) + '</summary><p>' + esc(a) + '</p></details>').join('') + '</div>';
   body += linksHtml(lang, slug) + '</div></section></div>' + LED_JS + FORM_JS;
   const url = PUB(lang, path);
-  const items = pl.L.slice(0, 200).map((r, i) => Object.assign({ '@type': 'ListItem', position: pl.ranked ? r['rk_' + slug] : i + 1, name: r.n }, r.sumba ? {} : { url: PUB(lang, '/projects/' + r.s + '/') }));
+  const items = pl.L.slice(0, PG_N).map((r, i) => Object.assign({ '@type': 'ListItem', position: pl.ranked ? r['rk_' + slug] : i + 1, name: r.n }, r.sumba ? {} : { url: PUB(lang, '/projects/' + r.s + '/') }));
   const ld = [
     { '@type': 'WebPage', '@id': url + '#page', url, name: title, description: desc, inLanguage: lang, dateModified: ix.updated, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' }, publisher: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' }, about: { '@type': 'Place', name: pN, alternateName: P.n !== pN ? P.n : undefined, address: { '@type': 'PostalAddress', addressCountry: P.cc } } },
     { '@type': 'ItemList', name: title, numberOfItems: pl.n, itemListOrder: pl.ranked ? 'https://schema.org/ItemListOrderDescending' : 'https://schema.org/ItemListUnordered', itemListElement: items },
@@ -414,8 +425,13 @@ export async function page(req, u, env, ctx, shell) {
   if (!m[4]) return new Response(null, { status: 301, headers: { location: u.pathname + '/' + u.search, 'cache-control': 'public, max-age=86400' } });
   const lang = m[1] || 'en', slug = m[2] || null, method = !!m[3];
   let ix; try { ix = await trData(env); } catch (e) { return null; }
-  let o = null; if (slug && !method) { try { const R = await import('./kbx_n37u.js'), G = await R.regMap(env); if (G) o = { G, RT: (k, v) => R.rgT(lang, k, v), rg: u.searchParams.get('rg') === '1', so: u.searchParams.get('s') === 'reg' }; } catch (e) { o = null; } }   // r10u: register filter and sort
-  const key = lang + '|' + (method ? '#m' : slug || '#h') + '|' + ix.v + (o ? '|g' + (o.rg ? 1 : 0) + (o.so ? 1 : 0) + '|' + o.G.size : '');
+  let o = null; if (slug && !method) { try { const R = await import('./kbx_n37u.js'), G = await R.regMap(env); if (G) o = { G, RT: (k, v) => R.rgT(lang, k, v), rg: u.searchParams.get('rg') === '1', so: u.searchParams.get('s') === 'reg', all: u.searchParams.get('all') === '1' }; } catch (e) { o = null; } }   // r10u: register filter and sort; r11u: all=1
+  if (o && u.searchParams.has('rows')) {   // r11u: the rows after the first PG_N, as an HTML fragment for the ranking table
+    const from = Math.max(0, parseInt(u.searchParams.get('from'), 10) || PG_N), all = u.searchParams.get('to') === 'all', fk = lang + '|' + slug + '|' + ix.v + '|f' + from + (all ? 'a' : '') + (o.rg ? 1 : 0) + (o.so ? 1 : 0) + '|' + o.G.size;
+    let h = BODY.get(fk); if (h == null) { h = rowsFrag(ix, slug, lang, o, from, all); if (h == null) return null; BODY.set(fk, h); }
+    return new Response(h.h, { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=600', 'x-robots-tag': 'noindex', 'x-kb-tr': ix.v, 'x-kb-next': String(h.next) } });
+  }
+  const key = lang + '|' + (method ? '#m' : slug || '#h') + '|' + ix.v + (o ? '|g' + (o.rg ? 1 : 0) + (o.so ? 1 : 0) + (o.all ? 'a' : '') + '|' + o.G.size : '');
   let pg = BODY.get(key);
   if (!pg) { pg = method ? methodPage(ix, lang) : slug ? placePage(ix, slug, lang, o) : hubPage(ix, lang); if (!pg) return null; if (BODY.size > 600) BODY.clear(); BODY.set(key, pg); }
   const sh = await shell(pre(lang) + '/how-we-score/');
