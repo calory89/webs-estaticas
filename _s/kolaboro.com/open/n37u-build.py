@@ -67,7 +67,11 @@ for x in P:
     if dld.get('pct') is not None and dld.get('pd'): c['cp'] = [str(num(dld['pct'])) + '%', dsrc, 'reg', dld['pd']]
     s = cp.get(x['id'])
     if s and s.get('status') == 'ok' and s.get('sum'):
-        sm = s['sum']; c['sat'] = [str(sm.get('b_first')) + '% > ' + str(sm.get('b_last')) + '%', '/satellite/construction-index/', 'sat', (sm.get('last') or ['', ''])[1]]
+        sm = s['sum']; lm = (sm.get('last') or ['', ''])[1]
+        # r2u: the scene date of the last clear month (dt[i]), not just the month
+        dts = s.get('dt') or []; i = len(dts) - 1
+        while i >= 0 and (not dts[i] or not str(dts[i]).startswith(lm or '~')): i -= 1
+        c['sat'] = [str(sm.get('b_first')) + '% > ' + str(sm.get('b_last')) + '%', '/satellite/construction-index/', 'sat', str(dts[i])[:10] if i >= 0 else lm]
     if rw.get('register'):
         u = (rv.get('reg') or [None, None, ''])[2] or dsrc
         c['reg'] = [rw['register'] + (': ' + rw['item'] if rw.get('item') else '') + (' (' + rw['status'] + ')' if rw.get('status') else ''), u or '', 'reg', rwd]
@@ -89,7 +93,7 @@ rg = {}
 for r in regs:
     rg.setdefault(r['market'], []).append([r['register'], r.get('url') or '', sorted({f for k in r.get('checks', []) for f in CHK.get(k, [])}, key=F.index), r.get('result') or '', (r.get('probed_at') or '')[:10]])
 CO = {'UAE': None, 'USA': 'United States', 'Indonesia': 'Indonesia'}
-out = {'v': 'n37u-1', 'built': named.get('updated') or '', 'from': ['named.json', 'construction-progress.json', 'court-cases.json', 'register-checks.json'],
+out = {'v': 'n37u-2', 'built': named.get('updated') or '', 'from': ['named.json', 'construction-progress.json', 'court-cases.json', 'register-checks.json'],
        'f': F, 'p': [r[:9] for r in rows], 'mk': mk, 'rg': rg, 'co': {r[0]: r[9] for r in rows},
        'n': len(rows), 'known': [sum(r[7][i] == '1' for r in rows) for i in range(len(F))]}
 json.dump(out, open(os.path.join(D, 'n37u.json'), 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
