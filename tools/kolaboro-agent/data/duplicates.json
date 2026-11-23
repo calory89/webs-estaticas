@@ -442,6 +442,14 @@
   ]
  },
  {
+  "a": "residencial-ancor-iii-metrovacesa",
+  "b": "residencial-ancor-f2-arico",
+  "market": "Canary Islands",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "nezihpark-bahcekent-aydur-insaat",
   "b": "bahcekent-tim",
   "market": "Istanbul",
@@ -703,6 +711,14 @@
   "market": "Dubai",
   "why": [
    "similar name"
+  ]
+ },
+ {
+  "a": "medblue-4-1-costa-del-sol",
+  "b": "medblue-iii",
+  "market": "Costa del Sol",
+  "why": [
+   "20 m apart"
   ]
  },
  {
@@ -3288,6 +3304,297 @@
   "market": "Sydney",
   "why": [
    "131 m apart"
+  ]
+ },
+ {
+  "a": "boreal-murcia",
+  "b": "botania-murcia",
+  "market": "Spain",
+  "why": [
+   "0 m apart"
+  ]
+ },
+ {
+  "a": "residencial-fuji-sevilla",
+  "b": "residencial-tacora-sevilla",
+  "market": "Spain",
+  "why": [
+   "124 m apart"
+  ]
+ },
+ {
+  "a": "residencial-fuji-sevilla",
+  "b": "residencial-aneto-sevilla",
+  "market": "Spain",
+  "why": [
+   "118 m apart"
+  ]
+ },
+ {
+  "a": "torre-althea-sevilla",
+  "b": "torrenova-sevilla",
+  "market": "Spain",
+  "why": [
+   "72 m apart"
+  ]
+ },
+ {
+  "a": "residencial-tacora-sevilla",
+  "b": "residencial-veleta-palmas-altas-sevilla",
+  "market": "Spain",
+  "why": [
+   "133 m apart"
+  ]
+ },
+ {
+  "a": "residencial-tacora-sevilla",
+  "b": "residencial-aneto-sevilla",
+  "market": "Spain",
+  "why": [
+   "117 m apart"
+  ]
+ },
+ {
+  "a": "atria-f2-la-alcaidesa",
+  "b": "atria-f1-la-alcaidesa",
+  "market": "Costa del Sol",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "residencial-erithea-dos-hermanas",
+  "b": "residencial-erithea-fase-2-dos-hermanas",
+  "market": "Spain",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "swing-golf-pulpi",
+  "b": "swing-golf-ii-pulpi",
+  "market": "Spain",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "residencial-moncayo-palmas-altas-sevilla",
+  "b": "residencial-timanfaya-sevilla",
+  "market": "Spain",
+  "why": [
+   "39 m apart"
+  ]
+ },
+ {
+  "a": "residencial-moncayo-palmas-altas-sevilla",
+  "b": "residencial-urbion-palmas-altas-sevilla",
+  "market": "Spain",
+  "why": [
+   "similar name",
+   "40 m apart"
+  ]
+ },
+ {
+  "a": "residencial-moncayo-palmas-altas-sevilla",
+  "b": "residencial-veleta-palmas-altas-sevilla",
+  "market": "Spain",
+  "why": [
+   "similar name",
+   "75 m apart"
+  ]
+ },
+ {
+  "a": "residencial-moncayo-palmas-altas-sevilla",
+  "b": "residencial-etna-sevilla",
+  "market": "Spain",
+  "why": [
+   "66 m apart"
+  ]
+ },
+ {
+  "a": "residencial-moncayo-palmas-altas-sevilla",
+  "b": "villas-del-tamesis-sevilla",
+  "market": "Spain",
+  "why": [
+   "86 m apart"
+  ]
+ },
+ {
+  "a": "residencial-moncayo-palmas-altas-sevilla",
+  "b": "residencial-aneto-sevilla",
+  "market": "Spain",
+  "why": [
+   "115 m apart"
+  ]
+ },
+ {
+  "a": "residencial-timanfaya-sevilla",
+  "b": "residencial-urbion-palmas-altas-sevilla",
+  "market": "Spain",
+  "why": [
+   "70 m apart"
+  ]
+ },
+ {
+  "a": "residencial-timanfaya-sevilla",
+  "b": "residencial-veleta-palmas-altas-sevilla",
+  "market": "Spain",
+  "why": [
+   "111 m apart"
+  ]
+ },
+ {
+  "a": "residencial-timanfaya-sevilla",
+  "b": "residencial-etna-sevilla",
+  "market": "Spain",
+  "why": [
+   "85 m apart"
+  ]
+ },
+ {
+  "a": "residencial-timanfaya-sevilla",
+  "b": "villas-del-tamesis-sevilla",
+  "market": "Spain",
+  "why": [
+   "92 m apart"
+  ]
+ },
+ {
+  "a": "residencial-timanfaya-sevilla",
+  "b": "residencial-aneto-sevilla",
+  "market": "Spain",
+  "why": [
+   "143 m apart"
+  ]
+ },
+ {
+  "a": "zitizen-ii-malaga",
+  "b": "zitizen-malaga",
+  "market": "Costa del Sol",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "residencial-urbion-palmas-altas-sevilla",
+  "b": "residencial-veleta-palmas-altas-sevilla",
+  "market": "Spain",
+  "why": [
+   "similar name",
+   "43 m apart"
+  ]
+ },
+ {
+  "a": "residencial-urbion-palmas-altas-sevilla",
+  "b": "residencial-etna-sevilla",
+  "market": "Spain",
+  "why": [
+   "31 m apart"
+  ]
+ },
+ {
+  "a": "residencial-urbion-palmas-altas-sevilla",
+  "b": "villas-del-tamesis-sevilla",
+  "market": "Spain",
+  "why": [
+   "59 m apart"
+  ]
+ },
+ {
+  "a": "residencial-urbion-palmas-altas-sevilla",
+  "b": "residencial-aneto-sevilla",
+  "market": "Spain",
+  "why": [
+   "74 m apart"
+  ]
+ },
+ {
+  "a": "residencial-veleta-palmas-altas-sevilla",
+  "b": "residencial-etna-sevilla",
+  "market": "Spain",
+  "why": [
+   "57 m apart"
+  ]
+ },
+ {
+  "a": "residencial-veleta-palmas-altas-sevilla",
+  "b": "villas-del-tamesis-sevilla",
+  "market": "Spain",
+  "why": [
+   "88 m apart"
+  ]
+ },
+ {
+  "a": "residencial-veleta-palmas-altas-sevilla",
+  "b": "residencial-aneto-sevilla",
+  "market": "Spain",
+  "why": [
+   "55 m apart"
+  ]
+ },
+ {
+  "a": "alma-f2-granada",
+  "b": "alma-f1-granada",
+  "market": "Spain",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "residencial-etna-sevilla",
+  "b": "villas-del-tamesis-sevilla",
+  "market": "Spain",
+  "why": [
+   "31 m apart"
+  ]
+ },
+ {
+  "a": "residencial-etna-sevilla",
+  "b": "residencial-aneto-sevilla",
+  "market": "Spain",
+  "why": [
+   "60 m apart"
+  ]
+ },
+ {
+  "a": "villas-del-tamesis-sevilla",
+  "b": "residencial-aneto-sevilla",
+  "market": "Spain",
+  "why": [
+   "77 m apart"
+  ]
+ },
+ {
+  "a": "essence-alovera-homes",
+  "b": "essence-alovera-homes-ii",
+  "market": "Spain",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "mungia-homes",
+  "b": "mungia-homes-ii",
+  "market": "Spain",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "nature-alovera-homes",
+  "b": "nature-alovera-homes-ii",
+  "market": "Spain",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "unique-homes-iii-adosados-alovera",
+  "b": "unique-homes-iii-pareados-alovera",
+  "market": "Spain",
+  "why": [
+   "similar name"
   ]
  }
 ]
