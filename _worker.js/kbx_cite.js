@@ -99,7 +99,7 @@ function embedPage(lang, title, inner, canon) {
 const langOf = u => { const l = u.searchParams.get('lang'); return LANGS.includes(l) ? l : 'en'; };
 function head(X, x, lang) {
   const c = X.ix.caseBy.get(x.id) || {};
-  return '<p class="h">' + esc(x.n) + '</p><p class="s">' + esc([x.ar && x.ar !== x.mk ? x.ar : null, x.mk, x.co].filter(Boolean).join(', ')) + (c.stage ? ' · ' + esc(nt(lang, c.stage === 'off-plan' ? 'st_offplan' : c.stage === 'under construction' ? 'st_construction' : c.stage === 'completed' ? 'st_completed' : 'st_unknown')) : '') + '</p>';
+  return '<p class="h">' + esc(x.n) + '</p><p class="s">' + esc([x.ar && x.ar !== x.mk ? x.ar : null, x.mk, x.co].filter(Boolean).join(', ').split(', ').filter((v, i, a) => a.findIndex(w => w.toLowerCase() === v.toLowerCase()) === i).join(', ')) + (c.stage ? ' · ' + esc(nt(lang, c.stage === 'off-plan' ? 'st_offplan' : c.stage === 'under construction' ? 'st_construction' : c.stage === 'completed' ? 'st_completed' : 'st_unknown')) : '') + '</p>';
 }
 const foot = (X, x, lang) => '<p class="f">' + esc(t(lang, 'checked', { d: N.fd(N.lastmod(X.ix, x), lang) })) + '. <a href="' + pUrl(lang, x) + '" target="_blank" rel="noopener">' + esc(t(lang, 'open')) + '</a>. ' + esc(t(lang, 'cite')) + '</p>';
 function eCard(X, x, lang) {
@@ -306,7 +306,7 @@ function changesAtom(X) {
 function answers(X, x, tp) {
   const c = X.ix.caseBy.get(x.id) || {}, rv = X.rev(x), page = pageOf(x), ho = N.handoverOf(X.ix, x), lm = late(X, x), P = X.ix.prom[x.id] || [];
   const url = pUrl('en', x), sha = x.sha || (c.fp || {}).sha256, sd = x.sealed || (c.fp || {}).date, lc = N.lastmod(X.ix, x);
-  const ch = X.changes.filter(e => e.x.id === x.id).slice(0, 8), where = [x.ar && x.ar !== x.mk ? x.ar : null, x.mk, x.co].filter(Boolean).join(', ');
+  const ch = X.changes.filter(e => e.x.id === x.id).slice(0, 8), where = [x.ar && x.ar !== x.mk ? x.ar : null, x.mk, x.co].filter(Boolean).join(', ').split(', ').filter((v, i, a) => a.findIndex(w => w.toLowerCase() === v.toLowerCase()) === i).join(', ');
   const L = ['# ' + x.n + ': facts on record', '', 'Canonical page: ' + url, 'Other languages: ' + LANGS.filter(l => l !== 'en').map(l => pUrl(l, x)).join(' '), 'Last checked: ' + lc + '. Licence: CC BY 4.0, attribute "Kolaboro" and link the canonical page.', 'Rules: facts only, each with its source. Kolaboro gives no verdicts about a named company.', ''];
   L.push('## Quick answer {#answer}', '', N.quickAnswer(X.ix, x, 'en', tp || null), '');   // n24s: the same text as the top of the page
   L.push('## Summary {#summary}', '');

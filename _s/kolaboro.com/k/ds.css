@@ -582,6 +582,77 @@ a.k-src:hover{color:var(--k-sea);border-bottom-color:currentColor}
 /* home: the section rhythm and cards share the same surface, line and radius */
 :root:has(link[href*="/k/site.css"]) :is(.hero) .lead{color:var(--k-ink-2)}
 
+/* ---------- 5. Templates, second pass (n38 d4, 23 Nov 2026): home layout, project head, rankings, data pages, record and brief. Tokens from part 1 only. ---------- */
+/* home, first screen: one promise, the search, one short proof line (server-rendered, one line reserved so nothing moves) */
+:root:has(link[href*="/k/site.css"]) .hero .hp-proof{display:flex;align-items:baseline;gap:10px;margin:var(--k-4) 0 0;min-height:1.5em;font-size:var(--k-fs-sm);line-height:1.5;color:var(--k-ink-2);max-width:62ch;font-variant-numeric:tabular-nums}
+:root:has(link[href*="/k/site.css"]) .hero .hp-proof i{flex:none;width:8px;height:8px;border-radius:50%;background:var(--k-ok);box-shadow:0 0 0 3px color-mix(in srgb,var(--k-ok) 22%,transparent);transform:translateY(-1px)}
+/* home, below the hero: the numbers as four figures under a heavy rule, then the quieter links */
+:root:has(link[href*="/k/site.css"]) .hp-band{background:var(--k-surface);border-block:1px solid var(--k-line);padding:clamp(32px,4vw,56px) 0 clamp(24px,3vw,40px)}
+:root:has(link[href*="/k/site.css"]) .hp-band+.r28-strip{border-top:0}
+:root:has(link[href*="/k/site.css"]) .hp-h{font-size:var(--k-fs-xl);font-weight:680;letter-spacing:-.012em;line-height:1.2;margin:0 0 var(--k-5);color:var(--k-ink)}
+:root:has(link[href*="/k/site.css"]) :is(.hp-stats,.n38-t){display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0 var(--k-6);list-style:none;margin:0;padding:0}
+:root:has(link[href*="/k/site.css"]) .hp-stats>li{border-top:2px solid var(--k-ink);margin:0}
+:root:has(link[href*="/k/site.css"]) .hp-t{display:block;padding:var(--k-4) 0 var(--k-2);color:inherit;text-decoration:none;min-height:44px}
+:root:has(link[href*="/k/site.css"]) :is(.hp-t,.n38-t>div) b{display:block;font-size:var(--k-fs-3xl);font-weight:720;line-height:1.05;letter-spacing:-.025em;font-variant-numeric:tabular-nums;color:var(--k-ink)}
+:root:has(link[href*="/k/site.css"]) :is(.hp-t,.n38-t>div) span{display:block;margin-top:var(--k-2);font-size:var(--k-fs-sm);line-height:1.45;color:var(--k-muted);max-width:28ch}
+:root:has(link[href*="/k/site.css"]) .hp-t:hover b{color:var(--k-sea)}
+:root:has(link[href*="/k/site.css"]) .hp-t:hover span{color:var(--k-ink-2)}
+:root:has(link[href*="/k/site.css"]) .hp-t:focus-visible{outline:none;box-shadow:var(--k-focus);border-radius:var(--k-r-xs)}
+:root:has(link[href*="/k/site.css"]) .hp-foot{margin:var(--k-5) 0 0;font-size:var(--k-fs-sm);color:var(--k-muted);line-height:1.6}
+:root:has(link[href*="/k/site.css"]) .hp-foot a{color:var(--k-ink-2);font-weight:600}
+:root:has(link[href*="/k/site.css"]) .hp-more{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:var(--k-3) var(--k-6);margin-top:var(--k-6);padding-top:var(--k-5);border-top:1px solid var(--k-line)}
+:root:has(link[href*="/k/site.css"]) .hp-more .launch{margin:0;font-size:var(--k-fs-sm);color:var(--k-muted)}
+:root:has(link[href*="/k/site.css"]) .hp-more .launch a{color:var(--k-ink-2)}
+:root:has(link[href*="/k/site.css"]) .hp-more .launch>a{margin-inline-start:var(--k-3)}
+:root:has(link[href*="/k/site.css"]) .hp-more .h3p{margin:0;gap:6px}
+:root:has(link[href*="/k/site.css"]) .hp-more .h3p span{font-size:var(--k-fs-xs);font-weight:600;color:var(--k-muted);opacity:1}
+:root:has(link[href*="/k/site.css"]) .hp-more .h3p a{min-height:36px;padding:4px 12px;border:1px solid var(--k-line);background:var(--k-paper);font-size:var(--k-fs-sm);font-weight:600}
+:root:has(link[href*="/k/site.css"]) .hp-more .h3p a:hover{border-color:var(--k-ink-2)}
+:root:has(link[href*="/k/site.css"]) .hp-band .n33-ms{background:none;border:0;margin-top:var(--k-3);font-size:var(--k-fs-xs);color:var(--k-muted)}
+:root:has(link[href*="/k/site.css"]) .hp-band .n33-ms .wrap{padding:0;max-width:none;width:auto;margin:0}
+:root:has(link[href*="/k/site.css"]) .hp-band .n33-ms b{font-weight:600;color:var(--k-ink-2)}
+:root:has(link[href*="/k/site.css"]) .hp-band .n33-ms a{color:var(--k-ink-2)}
+:root:has(link[href*="/k/site.css"]) .k27hs-c{border-color:var(--k-line);border-radius:var(--k-r-lg);background:var(--k-surface)}
+@media (max-width:899px){
+  :root:has(link[href*="/k/site.css"]) :is(.hp-stats,.n38-t){grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--k-2) var(--k-5)}
+  :root:has(link[href*="/k/site.css"]) .hp-more{justify-content:flex-start}
+}
+/* project head: the name alone in the title, a quiet line under it says what the page is */
+:root:has(link[href*="/k/site.css"]) .phero .kh1sub{margin:var(--k-2) 0 0;font-size:var(--k-fs-lg);font-weight:560;color:var(--k-muted);letter-spacing:-.005em}
+@media (min-width:1120px){
+  :root:has(link[href*="/k/site.css"]) .phero.kp>.wrap>.kh1sub{grid-column:1}
+  :root:has(link[href*="/k/site.css"]) .phero.kp>.wrap:has(>.kans>#checks6)>.kh1sub{grid-row:3}
+  :root:has(link[href*="/k/site.css"]) .phero.kp>.wrap:has(>.kans>#checks6)>.kupd{grid-row:4}
+  :root:has(link[href*="/k/site.css"]) .phero.kp>.wrap:has(>.kans>#checks6)>.lead{grid-row:5}
+  :root:has(link[href*="/k/site.css"]) .phero.kp>.wrap:has(>.kans>#checks6)>.k31t{grid-row:6}
+  :root:has(link[href*="/k/site.css"]) .phero.kp>.wrap:has(>.kans>#checks6)>.kz-kf{grid-row:7}
+  :root:has(link[href*="/k/site.css"]) .phero.kp>.wrap:has(>.kans>#checks6)>.ktr-badge{grid-row:8}
+  :root:has(link[href*="/k/site.css"]) .phero.kp>.wrap{grid-template-rows:repeat(8,auto) 1fr}
+  :root:has(link[href*="/k/site.css"]) .kans>#checks6{grid-row:3/10}
+}
+/* data pages, record and brief: same column as the header, same heads, tables and figures as the rest of the site */
+:root:has(link[href*="/k/site.css"]) .wrap.n37{max-width:var(--k-wrap);padding-bottom:var(--k-sec)}
+:root:has(link[href*="/k/site.css"]) .phero>.wrap>.lead+.k-xs{margin-top:var(--k-3);font-size:var(--k-fs-xs);color:var(--k-muted)}
+:root:has(link[href*="/k/site.css"]) .n37 h2{font-size:var(--k-fs-2xl);font-weight:700;letter-spacing:-.018em;line-height:1.15;margin:var(--k-7) 0 var(--k-3);max-width:40ch}
+:root:has(link[href*="/k/site.css"]) .n37 h3{font-size:var(--k-fs-lg);margin:var(--k-6) 0 var(--k-2)}
+:root:has(link[href*="/k/site.css"]) .n37>:first-child:is(h2,section,div,p),:root:has(link[href*="/k/site.css"]) .n37>style+:is(h2,section,div,p){margin-top:var(--k-5)}
+:root:has(link[href*="/k/site.css"]) .n37 :is(p,ol,ul){max-width:75ch}
+:root:has(link[href*="/k/site.css"]) .n37 :is(.n37-tw,.n38-t,.n37-rel,.n38-f){max-width:none}
+:root:has(link[href*="/k/site.css"]) .n37 .k-xs{font-size:var(--k-fs-xs);color:var(--k-muted)}
+:root:has(link[href*="/k/site.css"]) .n37 :is(.n37-in,.n37-vs){border-color:var(--k-line);border-radius:var(--k-r-lg);background:var(--k-surface)}
+:root:has(link[href*="/k/site.css"]) .n37 .n37-tw{margin:var(--k-3) 0 var(--k-6)}
+:root:has(link[href*="/k/site.css"]) .n38-t{margin:var(--k-5) 0 var(--k-6)}
+:root:has(link[href*="/k/site.css"]) .n38-t>div{border:0;border-top:2px solid var(--k-ink);border-radius:0;padding:var(--k-4) 0 var(--k-2)}
+:root:has(link[href*="/k/site.css"]) .n37 :is(.n38-f select,.n38-f button,.n38-pb){border-color:var(--k-field);border-radius:var(--k-r-md);background:var(--k-surface)}
+:root:has(link[href*="/k/site.css"]) .n37 svg rect:not([fill]){fill:var(--k-viz-reg)}
+/* rankings: the head starts where every other page head starts, the title at the shared size */
+:root:has(link[href*="/k/site.css"]) .ktr>.k-sec:first-child{padding-top:var(--k-hero-pt)}
+:root:has(link[href*="/k/site.css"]) .ktr .k-phead h1{font-size:var(--k-fs-4xl);font-weight:720;line-height:var(--k-lh-tight);letter-spacing:-.028em;max-width:24ch}
+:root:has(link[href*="/k/site.css"]) .ktr .k-phead .lead{font-size:var(--k-fs-lg);color:var(--k-ink-2);max-width:62ch}
+:root:has(link[href*="/k/site.css"]) .ktr .k-phead>p:not(.lead):not(.k-crumb){border-radius:var(--k-r-md)!important;background:var(--k-sunken)!important}
+:root:has(link[href*="/k/site.css"]) .ktr :is(.k-table-wrap){border:1px solid var(--k-line);border-radius:var(--k-r-lg);background:var(--k-surface)}
+:root:has(link[href*="/k/site.css"]) .ktr h2{font-size:var(--k-fs-3xl);letter-spacing:-.02em}
+
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}

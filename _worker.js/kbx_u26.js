@@ -314,7 +314,7 @@ async function comparePage(req, u, env, ctx, shell, lang) {
     const RS = regSale(x), price = RS ? rsText(lang, RS) : fx.price_min > 0 ? (fx.currency ? fx.currency + ' ' : '') + nf(fx.price_min) + (fx.price_max > fx.price_min ? ' – ' + nf(fx.price_max) : '') : null;
     const rk = t && t.ranks && t.ranks.length ? t.ranks.map(r => r.ranked ? t26(lang, 'rk', { r: nf(r.r), m: nf(r.m), p: r.p }) : r.p + ': ' + t26(lang, 'unr')).join('; ') : null;
     const L6 = U27.light6({ tp: t, c, pn: x.pn, ho, ev: x.ev, ids: [] });   // n30a: the six checks, same rules as the project page
-    return { x, c, L6, dev: x.dv, devHref: x.dvs && ix.devs.has(x.dvs) ? P + '/developers/' + x.dvs + '/' : null, loc: H.placeName([x.ar, x.mk !== x.ar ? x.mk : null, x.co !== x.mk ? x.co : null].filter(Boolean).join(', '), lang),
+    return { x, c, L6, dev: x.dv, devHref: x.dvs && ix.devs.has(x.dvs) ? P + '/developers/' + x.dvs + '/' : null, loc: H.placeName([x.ar, x.mk !== x.ar ? x.mk : null, x.co !== x.mk ? x.co : null].filter(Boolean).join(', ').split(', ').filter((v, i, a) => a.findIndex(w => w.toLowerCase() === v.toLowerCase()) === i).join(', '), lang),
       st: t26(lang, stK(c.stage || x.st)), ho: ho ? H.hdisp(ho.d, lang) : null, pm: x.pn || ((c.checks || {}).permit === 2 ? '✓' : null), price, sc: t ? t.score : null, rk, ck: N.lastmod(ix, x) };
   });
   const cell = v => v ? bdi(lang, v) : '<span class="kc-np">' + esc(t26(lang, 'np')) + '</span>';

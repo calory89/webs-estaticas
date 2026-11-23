@@ -247,7 +247,7 @@ async function dashboard(env, ix, dv, lang) {
     const have = items.filter(z => z.st === 'yes'), lack = items.filter(z => z.st === 'no' || z.st === 'nc');
     for (const z of lack) miss.set(z.label, (miss.get(z.label) || 0) + 1);
     const rk = tp && tp.ranks ? tp.ranks.filter(r => r.ranked && r.r).map(r => dt(lang, 'rank', { r: r.r, m: r.m, p: r.p })) : [];
-    return '<tr><td data-l="' + esc(th[0]) + '"><a href="' + pre(lang) + '/projects/' + x.s + '/">' + bdi(x.n) + '</a><small>' + esc([x.ar && x.ar !== x.mk ? x.ar : null, mkName(x.mk, lang)].filter(Boolean).join(', ')) + (rv ? '' : ' · ' + esc(dt(lang, 'nr'))) + '</small></td>' +
+    return '<tr><td data-l="' + esc(th[0]) + '"><a href="' + pre(lang) + '/projects/' + x.s + '/">' + bdi(x.n) + '</a><small>' + esc([x.ar && x.ar !== x.mk ? x.ar : null, mkName(x.mk, lang)].filter(Boolean).join(', ').split(', ').filter((v, i, a) => a.findIndex(w => w.toLowerCase() === v.toLowerCase()) === i).join(', ')) + (rv ? '' : ' · ' + esc(dt(lang, 'nr'))) + '</small></td>' +
       '<td data-l="' + esc(th[1]) + '"><span class="k27-n">' + (tp && typeof tp.score === 'number' ? tp.score + '/100' : '?') + '</span>' + (rk.length ? '<small>' + esc(rk.join(' · ')) + '</small>' : '') + '</td>' +
       '<td data-l="' + esc(th[2]) + '">' + (have.length ? '<ul class="k27-m">' + have.map(z => '<li>' + esc(z.label) + '</li>').join('') + '</ul>' : '0') + '</td>' +
       '<td data-l="' + esc(th[3]) + '">' + (lack.length ? '<ul class="k27-m">' + lack.map(z => '<li>' + esc(z.label) + (z.gain ? ' <b dir="ltr">+' + z.gain + '</b>' : '') + '</li>').join('') + '</ul>' : esc(dt(lang, 'none'))) + '<a class="k27-b" href="/developers/reply/?id=' + encodeURIComponent(x.id) + '">' + esc(dt(lang, 'send')) + '</a></td></tr>';
@@ -411,7 +411,7 @@ export async function handle(req, u, env, ctx, shell, inner) {
 // ------------------------------------------------------------------------------------------------ 90: MCP tools (called from kbx_e.js)
 const cmpRow = (ix, x, tp, ot) => {
   const c = ix.caseBy.get(x.id) || {}, ho = N.handoverOf(ix, x), lm = late(ot, x), pr = (ix.prom[x.id] || []).find(q => q.k === 'handover');
-  return { id: x.id, name: x.n, url: pUrl('en', x), developer: x.dv || null, place: [x.ar && x.ar !== x.mk ? x.ar : null, x.mk, x.co].filter(Boolean).join(', '), stage: c.stage || null, reviewed: N.reviewed(c),
+  return { id: x.id, name: x.n, url: pUrl('en', x), developer: x.dv || null, place: [x.ar && x.ar !== x.mk ? x.ar : null, x.mk, x.co].filter(Boolean).join(', ').split(', ').filter((v, i, a) => a.findIndex(w => w.toLowerCase() === v.toLowerCase()) === i).join(', '), stage: c.stage || null, reviewed: N.reviewed(c),
     handover_on_record: ho ? ho.d : null, handover_times_moved: pr ? pr.mv || 0 : null, months_past_first_handover_date: lm && lm.late > 0 ? lm.late : 0, permit_number: x.pn || null, permit_published: !!(x.pn || (c.checks || {}).permit === 2),
     deposit_protection_stated: (c.checks || {}).escrow === true, transparency_score: tp && typeof tp.score === 'number' ? tp.score : null, last_checked: N.lastmod(ix, x), answers: ORIGIN + '/answers/' + x.s + '.md' };
 };

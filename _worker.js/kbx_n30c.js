@@ -144,7 +144,7 @@ function lateOf(ot, x) {
 }
 function widget(D, x, lang, theme, size) {
   const c = D.ix.caseBy.get(x.id) || {}, rev = N.reviewed(c), ho = N.handoverOf(D.ix, x), lm = lateOf(D.ot, x), row = D.tr && D.tr.rows && D.tr.rows.get(x.id);
-  const P = pre(lang), url = ORIGIN + P + '/projects/' + x.s + '/', place = [x.ar && x.ar !== x.mk ? x.ar : null, mkName(x.mk, lang), x.co !== x.mk ? coName(x.co, lang) : null].filter(Boolean).join(', ');
+  const P = pre(lang), url = ORIGIN + P + '/projects/' + x.s + '/', place = [x.ar && x.ar !== x.mk ? x.ar : null, mkName(x.mk, lang), x.co !== x.mk ? coName(x.co, lang) : null].filter(Boolean).join(', ').split(', ').filter((v, i, a) => a.findIndex(w => w.toLowerCase() === v.toLowerCase()) === i).join(', ');
   const rows = [];
   rows.push([t(lang, 'w_ho'), ho ? esc(N.fd(ho.d, lang)) + (lm > 0 ? ' <span class="k">' + esc(t(lang, 'w_late', { m: lm })) + '</span>' : '') : esc(t(lang, 'w_np'))]);
   rows.push([t(lang, 'w_pm'), x.pn ? '<code>' + esc(x.pn) + '</code>' : (c.checks || {}).permit === 2 ? esc(t(lang, 'w_st')) : esc(t(lang, 'w_np'))]);

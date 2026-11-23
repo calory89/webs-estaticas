@@ -149,7 +149,7 @@ async function reportData(env, x, lang) {
   const RS = regSale(x), price = RS ? rsText(lang, RS) : fx.price_min != null ? (fx.currency ? fx.currency + ' ' : '') + nf(fx.price_min, lang) + (fx.price_max != null && fx.price_max !== fx.price_min ? ' - ' + nf(fx.price_max, lang) : '') : null;
   const F = [
     [N.tr(lang, 'k_dev'), x.dv || N.tr(lang, 'v_notstated'), page],
-    [N.tr(lang, 'k_loc'), [x.ar, x.mk !== x.ar ? x.mk : null, x.co !== x.mk ? x.co : null].filter(Boolean).join(', '), page],
+    [N.tr(lang, 'k_loc'), [x.ar, x.mk !== x.ar ? x.mk : null, x.co !== x.mk ? x.co : null].filter(Boolean).join(', ').split(', ').filter((v, i, a) => a.findIndex(w => w.toLowerCase() === v.toLowerCase()) === i).join(', '), page],
     [N.tr(lang, 'k_stage'), N.tr(lang, STAGE[c.stage || x.st] || 'st_unknown'), page],
     [N.tr(lang, 'k_hand'), ho ? N.fd(ho.d, lang) + (c.overdue ? '. ' + N.tr(lang, 'g_over', { m: c.overdue }) : '') : NP, page],
     [N.tr(lang, 'k_permit'), x.pn || NP, x.pn ? ((N.okHttp(x.du) ? N.fixU(x.du) : null) || page) : null],

@@ -244,6 +244,21 @@ async function liveLine(l, env) {
   return '<style>.n37-live{margin:10px 0 0;font-size:.95rem;line-height:1.5;max-width:640px}.n37-live a{font-weight:700}</style><p class="n37-live" id="n37-live"' + dir(l) + '>' +
     esc(tx).replace(/\u0001(\w+)\u0002([^\u0003]*)\u0003/g, (m, k, v) => '<b data-db="' + k + '">' + v + '</b>') + ' <a href="' + pre(l) + '/data/gaps/">' + esc(t(l, 'live_l')) + '</a></p>';
 }
+// n38 d4: home page. The first screen keeps one short proof line; the numbers that used to sit in two dense paragraphs move to a
+// band of four tiles below the hero (#hp-band in the static page), each tile linking the page that explains it. Same sources as before.
+async function homeBits(l, env) {
+  const s = await stats(env); if (!s) return null;
+  const g = progStats(), P = pre(l), b = v => '<b>' + v + '</b>';
+  const proof = '<p class="hp-proof" id="n37-live"' + dir(l) + '><i aria-hidden="true"></i><span>' + esc(tf(l, 'hp_proof', { p: nf(s.projects, l), m: nf(s.markets, l), g: nf(IX.regs, l), d: fd(g.built, l) })) + '</span></p>';
+  const tile = (h, n, lab) => '<li><a class="hp-t" href="' + h + '">' + b(n) + '<span>' + esc(lab) + '</span></a></li>';
+  const band = '<h2 class="hp-h"' + dir(l) + '>' + esc(t(l, 'hp_h')) + '</h2><ul class="hp-stats"' + dir(l) + '>' +
+    tile(P + '/projects/', nf(s.projects, l), tf(l, 'hp_t1', { m: nf(s.markets, l), c: nf(s.countries, l) })) +
+    tile('/registers/', nf(IX.regs, l), t(l, 'hp_t2')) +
+    tile(P + '/data/how-we-verify/', pct1(g.conf, g.tot, l), tf(l, 'hp_t3', { n: nf(g.tot, l) })) +
+    tile(P + '/data/changes/week/', nf(g.w, l), t(l, 'hp_t4')) + '</ul>' +
+    '<p class="hp-foot"' + dir(l) + '>' + esc(tf(l, 'hp_foot', { s: nf(s.sources, l), f: nf(IX.src, l) })) + ' <a href="' + P + '/data/gaps/">' + esc(t(l, 'live_l')) + '</a>' + DOT + '<a href="' + P + '/data/how-we-verify/">' + esc(t(l, 'vf_l')) + '</a></p>';
+  return [proof, band];
+}
 const DS = [['ds1', 'bali-cases'], ['ds2', 'kolaboro-parquet'], ['ds3', 'kolaboro-markets-parquet'], ['ds4', 'world-claims'], ['ds5', 'promises'], ['ds6', 'delay-index'], ['ds7', 'price-index'], ['ds8', 'register-checks'], ['ds9', 'satellite'], ['ds10', null, '/data/n37u.json', 'JSON'], ['ds11', null, '/data/gaps.csv', 'CSV']];
 const sz = (b, l) => b >= 1048576 ? nf(Math.round(b / 104857.6) / 10, l) + ' MB' : nf(Math.max(1, Math.round(b / 1024)), l) + ' KB';
 async function dataHub(env, shell, l) {
@@ -321,7 +336,7 @@ function actRow(l, r) {
 async function briefPage(env, shell, l, r) {
   const P = pre(l), F = D.f, lc = latestChange(r), RG = regsFor(r), miss = F.filter((f, i) => !r[8][i]);
   let b = VSC + '<p class="n37-po"><b>' + esc(tf(l, 'br_h1', { n: r[2] })) + '</b></p><p class="n37-np"><button type="button" class="hi" data-kb-print>' + esc(t(l, 'br_print')) + '</button> <a href="' + P + '/projects/' + r[1] + '/">' + esc(t(l, 'br_full')) + '</a><span class="n37-dot" aria-hidden="true"> · </span><a href="' + recU(l, r[1]) + '">' + esc(t(l, 'a_rec')) + '</a></p>';
-  b += '<p>' + [['br_dev', r[6]], ['br_loc', [r[4], r[3]].filter(Boolean).join(', ')], ['br_id', r[0]]].filter(x => x[1]).map(x => '<b>' + esc(t(l, x[0])) + ':</b> ' + bdi(x[1])).join(' · ') + '</p>' + vsBlock(l, r, '');
+  b += '<p>' + [['br_dev', r[6]], ['br_loc', [r[4], r[3]].filter(Boolean).join(', ').split(', ').filter((v, i, a) => a.findIndex(w => w.toLowerCase() === v.toLowerCase()) === i).join(', ')], ['br_id', r[0]]].filter(x => x[1]).map(x => '<b>' + esc(t(l, x[0])) + ':</b> ' + bdi(x[1])).join(' · ') + '</p>' + vsBlock(l, r, '');
   b += '<h2>' + esc(t(l, 'r_tbl')) + '</h2><div class="n37-tw"><table><thead><tr><th scope="col">' + esc(t(l, 'th_f')) + '</th><th scope="col">' + esc(t(l, 'th_v')) + '</th><th scope="col">' + esc(t(l, 'th_s')) + '</th><th scope="col">' + esc(t(l, 'th_d')) + '</th></tr></thead><tbody>' +
     F.map((f, i) => { const c = r[8][i]; if (!c) return ''; const u = c[1];
       return '<tr><th scope="row">' + esc(t(l, 'f_' + f)) + '</th><td class="n37-v">' + bdi(tv(f === 'ct' ? nf(c[0], l) : String(c[0]), l, 160)) + '</td><td>' + esc(t(l, 'k_' + c[2])) + (u && /^https?:/.test(u) ? '<span class="n37-dot" aria-hidden="true"> · </span><a href="' + esc(u) + '" rel="nofollow noopener">' + esc(host(u)) + '</a>' : '') + '</td><td class="n">' + esc(fd(c[3], l)) + '</td></tr>'; }).join('') + '</tbody></table></div>';
@@ -809,7 +824,7 @@ export async function inject(req, u, env, r) {
       return new HTMLRewriter().on('#n34-out', { element(e) { e.setAttribute('data-n37', seTpl(l)); } }).on('ol.n34-res > li > a', { element(e) { const mm2 = /\/projects\/([a-z0-9-]{1,90})\/$/.exec(e.getAttribute('href') || ''), x = mm2 && IX.bySlug.get(mm2[1]); if (x) e.after(seInfo(l, x), { html: true }); } })
         .on('head', { element(e) { e.append(VSC, { html: true }); } }).on('main', { element(e) { e.onEndTag(end => { end.before(savedBox(l, ((r.headers.get('content-security-policy') || '').match(/'nonce-([^']+)'/) || [])[1]), { html: true }); }); } }).transform(r);   // n38 d3: saved searches
     }
-    else if (p === '') { const h = await liveLine(l, env); if (h) add.push(['p.hero-sub', 'after', h + progLine(l)]); }   // r8u: progress line
+    else if (p === '') { const h = await homeBits(l, env); if (h) { add.push(['p.hero-sub', 'after', h[0]]); add.push(['#hp-band > .wrap', 'prepend', h[1]]); } }   // n38 d4: one proof line in the hero, the numbers in a tile band below
     else if (p === 'yc/try/') add.push(['section.k27 .k-prose > ol', 'before', await progBlock(l, env)]);   // r8u
     else if ((mm = /^m\/([^/.]{2,60})\/$/.exec(p))) { const mk = mBySlug(mm[1]); const h = mk ? mkSection(l, mk) + kpMarket(l, mk) : ''; if (!h) return r; add.push(['#slippage', 'before', h]); }   // r9u: register status summary (Malaysia)
     else if ((mm = /^developers\/([a-z0-9-]{2,90})\/$/.exec(p))) { const h = devSection(l, mm[1]); if (!h) return r; add.push(['#projects', 'append', h]); }

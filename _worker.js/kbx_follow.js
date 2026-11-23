@@ -237,7 +237,7 @@ function listDevelopers(N, ix) { return { api: 'kolaboro-named-v1', updated: ix.
 export function events(N, ix, x) {   // n30b: exported for /api/v1/changes (kbx_n30b.js)
   const c = ix.caseBy.get(x.id) || {}, page = N.okHttp(x.url) ? N.fixU(x.url) : null, E = [], base = ORIGIN + '/projects/' + x.s + '/';
   const add = (d, key, title, text, src, anchor) => { const i = N.iso(d); if (!i || !N.cleanOk(title) || (text && !N.cleanOk(text))) return; let dt = i + 'T00:00:00Z'; if (/T\d/.test(String(d))) { const z = new Date(d); if (!isNaN(z)) dt = z.toISOString().replace(/\.\d{3}Z$/, 'Z'); } E.push({ d: dt, key: x.id + '/' + key, title, text: text || title, src: src || page, url: base + (anchor ? '#' + anchor : '') }); };
-  if (x.ad) add(x.ad, 'added', 'Added to the projects Kolaboro tracks', 'Kolaboro started tracking ' + x.n + ' (' + [x.ar, x.mk, x.co].filter(Boolean).join(', ') + ').', page, '');
+  if (x.ad) add(x.ad, 'added', 'Added to the projects Kolaboro tracks', 'Kolaboro started tracking ' + x.n + ' (' + [x.ar, x.mk, x.co].filter(Boolean).join(', ').split(', ').filter((v, i, a) => a.findIndex(w => w.toLowerCase() === v.toLowerCase()) === i).join(', ') + ').', page, '');
   for (const h of c.history || []) add(h.d, 'change/' + h.d + '/' + String(h.f).replace(/\W+/g, '-'), 'Developer page changed: ' + h.f, 'On the developer page, "' + h.f + '" changed from ' + fv(h.from) + ' to ' + fv(h.to) + '.', page, 'history');
   for (const q of ix.prom[x.id] || []) {
     const kind = N.tr('en', 'pk_' + q.k), H = (q.hist || []).slice().sort((a, b) => String(a.seen).localeCompare(String(b.seen)));

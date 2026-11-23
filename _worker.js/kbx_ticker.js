@@ -110,7 +110,9 @@ export async function kbTick(req, r, env) {
         .on('details.lsw ul', { element(e) { e.onEndTag(t => { const add = K33.lswMissing(alt, seen); if (add) t.before(add, { html: true }); }); } })
         .on('nav#menu > a.btn', { element(e) { if (lsw || done || Object.keys(alt).length < 2) return; done = true; e.before(K33.lswHtml(pl, alt), { html: true }); } });
       if (fh) rw = rw.on('footer .fgrid > div:not(:first-child)', { element(e) { e.remove(); } }).on('footer .fgrid', { element(e) { e.append(fh, { html: true }); } });
-      if (ms) rw = rw.on('main', { element(e) { if (msDone) return; msDone = true; e.prepend(ms, { html: true }); } });
+      // n38 d4: on the home page the strip sits in the band below the hero (less weight on the first screen); elsewhere at the top of main
+      if (ms && /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?$/.test(pth)) rw = rw.on('#hp-band > .wrap', { element(e) { if (msDone) return; msDone = true; e.append(ms, { html: true }); } }).on('main', { element(e) { e.onEndTag(t => { if (msDone) return; msDone = true; t.before(ms, { html: true }); }); } });
+      else if (ms) rw = rw.on('main', { element(e) { if (msDone) return; msDone = true; e.prepend(ms, { html: true }); } });
     } } catch (e) {}
     if (/^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?changelog\/$/.test(pth)) { let once = false; rw = rw.on('main h1', { element(e) { if (once) return; once = true; e.after('<p class="k-small">' + esc(PROG_C[pl]) + ' <a href="' + pp + '">' + esc(PROG_L[pl]) + '</a></p>', { html: true }); } }); }
     // n31t (batch 31, item 16): the second copy of the lines exists only for the endless scroll; it is now left empty in the HTML (no

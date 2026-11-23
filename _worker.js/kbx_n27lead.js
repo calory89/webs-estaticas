@@ -38,7 +38,7 @@ export function leadMap(ix, x, lang, tp, checked, h) {
   else if (!x.pn) out.permits = tx('perm_n', { c: ck }, ['c']);
   // developer and location, as published on the page we track
   if (x.dv && page) out.developer = tx('dev', { dv: '<bdi>' + h.esc(x.dv) + '</bdi>', s: page, c: ck }, ['dv', 's', 'c']);
-  const area = [x.ar && x.ar !== x.mk ? x.ar : null, x.mk].filter(Boolean).join(', ');
+  const area = [x.ar && x.ar !== x.mk ? x.ar : null, x.mk].filter(Boolean).join(', ').split(', ').filter((v, i, a) => a.findIndex(w => w.toLowerCase() === v.toLowerCase()) === i).join(', ');
   if (area && page) out.where = tx('where', { a: '<bdi>' + h.esc(area) + '</bdi>', s: page, c: ck }, ['a', 's', 'c']);
   // checks, reviewed projects only (not yet reviewed projects carry no check results)
   if (rv && typeof c.score === 'number') out.checks = tx('chk', { k: c.score, v: c.vscore || 0, c: ck }, ['c']) + ' <a class="k-src" href="/how-we-score/">kolaboro.com</a>';

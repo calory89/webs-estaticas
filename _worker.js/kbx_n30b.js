@@ -264,7 +264,7 @@ async function certPage(req, u, env, ctx, shell, lang, slug) {
   const row = (k, v) => v ? '<tr><th scope="row">' + esc(K[k]) + '</th><td>' + v + '</td></tr>' : '';
   const a = (href, t) => '<a href="' + esc(href) + '" rel="nofollow noopener" target="_blank"><bdi>' + esc(t) + '</bdi></a>';
   const host = s => { try { return new URL(s).hostname.replace(/^www\./, ''); } catch (e) { return s; } };
-  const facts = row('developer', F.developer ? '<bdi>' + esc(F.developer) + '</bdi>' : '') + row('place', '<bdi>' + esc([F.area, F.market, F.country].filter(Boolean).join(', ')) + '</bdi>') + row('stage', esc(stage)) +
+  const facts = row('developer', F.developer ? '<bdi>' + esc(F.developer) + '</bdi>' : '') + row('place', '<bdi>' + esc([F.area, F.market, F.country].filter(Boolean).join(', ').split(', ').filter((v, i, a) => a.findIndex(w => w.toLowerCase() === v.toLowerCase()) === i).join(', ')) + '</bdi>') + row('stage', esc(stage)) +
     row('handover', esc(F.handover_on_record || L.ce_none)) + row('permit', F.permit_number ? '<bdi>' + esc(F.permit_number) + '</bdi>' + (F.permit_source ? ' ' + a(F.permit_source, host(F.permit_source)) : '') : esc(L.ce_none)) +
     row('register', F.register ? '<bdi>' + esc([F.register.register, F.register.status, F.register.checked ? fdt(F.register.checked, lang) : ''].filter(Boolean).join(' · ')) + '</bdi>' : '') +
     row('reviewed', esc(yn(F.reviewed))) + row('checks', F.buyer_checks_public != null ? ar(lang, nf(F.buyer_checks_public, lang) + ' / ' + nf(F.buyer_checks_of || 6, lang)) : '') + row('checked', esc(fdt(F.last_checked, lang))) +
