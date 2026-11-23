@@ -1339,6 +1339,14 @@
   ]
  },
  {
+  "a": "vistara-house",
+  "b": "vistara-house-2",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "w-residences-at-dubai-harbour",
   "b": "dubai-harbour-residences",
   "market": "Dubai",
@@ -3284,6 +3292,14 @@
   ]
  },
  {
+  "a": "oasis-residences",
+  "b": "oasis-tower-2",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "prestige-one-residences",
   "b": "the-boulevard-by-prestige-one",
   "market": "Dubai",
@@ -3332,6 +3348,22 @@
   ]
  },
  {
+  "a": "prestige-one-residences",
+  "b": "the-one-by-prestige-one",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "prestige-one-residences",
+  "b": "sanctuary-by-prestige-one",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "aum-99-residences",
   "b": "ag-aum-residence",
   "market": "Dubai",
@@ -3348,6 +3380,14 @@
   ]
  },
  {
+  "a": "the-boulevard-by-prestige-one",
+  "b": "the-one-by-prestige-one",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "zenith-residences",
   "b": "zenith-tower-j1",
   "market": "Dubai",
@@ -3358,6 +3398,14 @@
  {
   "a": "arlington-park-by-majid",
   "b": "arlington-park-ii-by-majid",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "parkway-by-prestige-one",
+  "b": "the-one-by-prestige-one",
   "market": "Dubai",
   "why": [
    "similar name"
@@ -3807,6 +3855,46 @@
   ]
  },
  {
+  "a": "the-orchard-place-towers-d-e",
+  "b": "the-orchard-place-tower-c",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "crystal-tower",
+  "b": "la-crystal",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "golf-residences-by-prestige-one",
+  "b": "the-one-by-prestige-one",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "peninsula-dubai-residences-tower-2",
+  "b": "peninsula-dubai-residences-tower-1",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "prestige-gardens-by-prestige-one",
+  "b": "the-one-by-prestige-one",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "phoeniz-suites-kl-city-centre",
   "b": "kyliez-suites-kl-city-centre",
   "market": "Kuala Lumpur",
@@ -4105,6 +4193,38 @@
   "market": "Malaysia",
   "why": [
    "46 m apart"
+  ]
+ },
+ {
+  "a": "seaside-by-prestige-one",
+  "b": "the-one-by-prestige-one",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "the-waterway-by-prestige-one",
+  "b": "the-one-by-prestige-one",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "the-one-by-prestige-one",
+  "b": "sanctuary-by-prestige-one",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "residensi-komersial-botani-sayang-3",
+  "b": "residensi-komersial-botani-sayang-2",
+  "market": "Malaysia",
+  "why": [
+   "similar name"
   ]
  }
 ]

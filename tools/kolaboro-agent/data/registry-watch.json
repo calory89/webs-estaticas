@@ -10694,6 +10694,606 @@
    "detail": "permit 20198-1/12-2026/0884(A)-(S) valid to 2026-12-07; progress 95.30%",
    "code": "20198-1",
    "checked": "2026-11-23"
+  },
+  "listone-residence": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 4365, completion on the register 31 Aug 2027, 0% built at the DLD inspection of 5 Feb 2026",
+   "code": "4365",
+   "checked": "2026-11-23"
+  },
+  "vistara-house-2": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3766, completion on the register 30 Dec 2027, 2.14% built at the DLD inspection of 12 Nov 2026",
+   "code": "3766",
+   "checked": "2026-11-23"
+  },
+  "wellington-ocean-by-ank-motiwala-developments": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3452, completion on the register 19 Dec 2027, 33.11% built at the DLD inspection of 22 Oct 2026",
+   "code": "3452",
+   "checked": "2026-11-23"
+  },
+  "the-one-by-prestige-one": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3332, completion on the register 30 Jun 2027, 7.03% built at the DLD inspection of 16 Sep 2026",
+   "code": "3332",
+   "checked": "2026-11-23"
+  },
+  "symphony-by-chaimaa": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3592, completion on the register 31 Aug 2027, 0% built at the DLD inspection of 20 Aug 2026",
+   "code": "3592",
+   "checked": "2026-11-23"
+  },
+  "wellington-grand-villas": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3518, completion on the register 24 Jan 2028, 62.07% built at the DLD inspection of 14 Oct 2026",
+   "code": "3518",
+   "checked": "2026-11-23"
+  },
+  "peninsula-dubai-residences-tower-1": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3396, completion on the register 8 Jan 2029, 5.6% built at the DLD inspection of 10 Sep 2026",
+   "code": "3396",
+   "checked": "2026-11-23"
+  },
+  "celeste-heights-by-zimaya-properties": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3511, completion on the register 30 Sep 2027, 41.24% built at the DLD inspection of 20 Oct 2026",
+   "code": "3511",
+   "checked": "2026-11-23"
+  },
+  "sanctuary-by-prestige-one": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 4332, completion on the register 31 Aug 2029, 0.04% built at the DLD inspection of 16 Oct 2026",
+   "code": "4332",
+   "checked": "2026-11-23"
+  },
+  "euphoric-residences": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 2886, completion on the register 31 Dec 2027, 8.3% built at the DLD inspection of 27 Jul 2026",
+   "code": "2886",
+   "checked": "2026-11-23"
+  },
+  "maravea-residences": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 4189, completion on the register 30 Apr 2028, 0.03% built at the DLD inspection of 8 Jul 2026",
+   "code": "4189",
+   "checked": "2026-11-23"
+  },
+  "the-tides-by-amis": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 4224, completion on the register 30 Apr 2028, 0.38% built at the DLD inspection of 3 Nov 2026",
+   "code": "4224",
+   "checked": "2026-11-23"
+  },
+  "manam-pearl": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3831, completion on the register 30 Jun 2028, 0% built at the DLD inspection of 3 Jul 2025",
+   "code": "3831",
+   "checked": "2026-11-23"
+  },
+  "oceara-parkview-residences": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 4542, completion on the register 31 Oct 2028, 0% built at the DLD inspection of 7 Aug 2026",
+   "code": "4542",
+   "checked": "2026-11-23"
+  },
+  "bureau-lamar": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 4489, completion on the register 30 Apr 2030, 0.24% built at the DLD inspection of 16 Oct 2026",
+   "code": "4489",
+   "checked": "2026-11-23"
+  },
+  "wadi-villas-by-arista": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 2967, completion on the register 31 Dec 2026, 60.44% built at the DLD inspection of 2 Sep 2026",
+   "code": "2967",
+   "checked": "2026-11-23"
+  },
+  "bottega-nove-by-lalav": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 4324, completion on the register 30 Jul 2027, 30.04% built at the DLD inspection of 12 Aug 2026",
+   "code": "4324",
+   "checked": "2026-11-23"
+  },
+  "royal-yacht-club-residence": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3770, completion on the register 10 Nov 2027, 25.31% built at the DLD inspection of 20 Oct 2026",
+   "code": "3770",
+   "checked": "2026-11-23"
+  },
+  "forum-2-dubai": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3807, completion on the register 15 Dec 2027, 7.03% built at the DLD inspection of 10 Aug 2026",
+   "code": "3807",
+   "checked": "2026-11-23"
+  },
+  "opulent-residences": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 2887, completion on the register 31 Dec 2027, 8.49% built at the DLD inspection of 27 Jul 2026",
+   "code": "2887",
+   "checked": "2026-11-23"
+  },
+  "pg-maison-dubai": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3151, completion on the register 31 Dec 2027, 15.01% built at the DLD inspection of 12 Nov 2026",
+   "code": "3151",
+   "checked": "2026-11-23"
+  },
+  "serra-residence-by-wujod": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 4272, completion on the register 31 Dec 2027, 28.77% built at the DLD inspection of 30 Sep 2026",
+   "code": "4272",
+   "checked": "2026-11-23"
+  },
+  "serenova-dubai": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3208, completion on the register 31 Mar 2028, 1.55% built at the DLD inspection of 12 Jun 2026",
+   "code": "3208",
+   "checked": "2026-11-23"
+  },
+  "77s-dubai": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 274, completion on the register 31 Dec 2028, 13.74% built at the DLD inspection of 10 Sep 2026",
+   "code": "274",
+   "checked": "2026-11-23"
+  },
+  "sadaat-tower": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 4476, completion on the register 31 Jan 2027, 32.07% built at the DLD inspection of 2 Jul 2026",
+   "code": "4476",
+   "checked": "2026-11-23"
+  },
+  "vivida-residences": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 4168, completion on the register 30 Sep 2027, 0.84% built at the DLD inspection of 17 Aug 2026",
+   "code": "4168",
+   "checked": "2026-11-23"
+  },
+  "sartoria-dubai": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3853, completion on the register 9 Oct 2027, 51.15% built at the DLD inspection of 15 Oct 2026",
+   "code": "3853",
+   "checked": "2026-11-23"
+  },
+  "the-hub-residences-by-zazen": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3419, completion on the register 15 Jan 2027, 34.02% built at the DLD inspection of 19 Oct 2026",
+   "code": "3419",
+   "checked": "2026-11-23"
+  },
+  "al-waleed-w-s-1": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3712, completion on the register 28 Feb 2027, 18.27% built at the DLD inspection of 18 Jun 2026",
+   "code": "3712",
+   "checked": "2026-11-23"
+  },
+  "lumiere-heights": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3554, completion on the register 30 Jun 2027, 2.06% built at the DLD inspection of 6 Aug 2026",
+   "code": "3554",
+   "checked": "2026-11-23"
+  },
+  "arib-collection": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3815, completion on the register 1 Dec 2027, 0% built at the DLD inspection of 9 Jul 2025",
+   "code": "3815",
+   "checked": "2026-11-23"
+  },
+  "lumina-dubai": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3275, completion on the register 1 Apr 2028, 11.42% built at the DLD inspection of 22 Jul 2026",
+   "code": "3275",
+   "checked": "2026-11-23"
+  },
+  "eywa-the-way-of-water": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3890, completion on the register 15 Oct 2028, 0% built at the DLD inspection of 23 Oct 2025",
+   "code": "3890",
+   "checked": "2026-11-23"
+  },
+  "cresswell-homes": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3299, completion on the register 31 Dec 2026, 61.41% built at the DLD inspection of 5 Nov 2026",
+   "code": "3299",
+   "checked": "2026-11-23"
+  },
+  "the-cube-quarter-residences": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3279, completion on the register 31 Dec 2026, 57.03% built at the DLD inspection of 15 Sep 2026",
+   "code": "3279",
+   "checked": "2026-11-23"
+  },
+  "sikanta-residences": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3658, completion on the register 31 Mar 2027, 27.01% built at the DLD inspection of 5 Nov 2026",
+   "code": "3658",
+   "checked": "2026-11-23"
+  },
+  "the-orchard-place-tower-c": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 2953, completion on the register 31 Mar 2027, 13% built at the DLD inspection of 7 May 2026",
+   "code": "2953",
+   "checked": "2026-11-23"
+  },
+  "dar-al-aiham-one": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 4323, completion on the register 30 Jun 2027, 20.78% built at the DLD inspection of 3 Aug 2026",
+   "code": "4323",
+   "checked": "2026-11-23"
+  },
+  "noore-dubai": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 4252, completion on the register 30 Jun 2027, 15.88% built at the DLD inspection of 8 Jul 2026",
+   "code": "4252",
+   "checked": "2026-11-23"
+  },
+  "lincoln-star-residence-ii": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 4027, completion on the register 31 Aug 2027, 5.27% built at the DLD inspection of 9 Apr 2026",
+   "code": "4027",
+   "checked": "2026-11-23"
+  },
+  "barari-parkview-by-al-mawared": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 2971, completion on the register 20 Dec 2027, 44.7% built at the DLD inspection of 13 Aug 2026",
+   "code": "2971",
+   "checked": "2026-11-23"
+  },
+  "regent-residences-dubai-sankari-place": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 2876, completion on the register 31 Dec 2027, 15.53% built at the DLD inspection of 5 Nov 2026",
+   "code": "2876",
+   "checked": "2026-11-23"
+  },
+  "aryam-tower-by-abu-alnaga": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 4488, completion on the register 30 Jun 2028, 33.19% built at the DLD inspection of 29 Sep 2026",
+   "code": "4488",
+   "checked": "2026-11-23"
+  },
+  "orvessa-residences-by-michel-adam": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3434, completion on the register 30 Sep 2028, 1.47% built at the DLD inspection of 10 Sep 2026",
+   "code": "3434",
+   "checked": "2026-11-23"
+  },
+  "amis-gpd-presents-fleur-de-jardin-villas": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 4389, completion on the register 9 Oct 2028, 0.64% built at the DLD inspection of 1 Sep 2026",
+   "code": "4389",
+   "checked": "2026-11-23"
+  },
+  "aristo-dubai": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 4182, completion on the register 14 Dec 2028, 0.06% built at the DLD inspection of 14 Jul 2026",
+   "code": "4182",
+   "checked": "2026-11-23"
+  },
+  "x11-dubai": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 4414, completion on the register 25 Dec 2028, 0% built at the DLD inspection of 12 Aug 2026",
+   "code": "4414",
+   "checked": "2026-11-23"
+  },
+  "the-melgrano": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 2759, completion on the register 31 Dec 2026, 42.78% built at the DLD inspection of 12 Oct 2026",
+   "code": "2759",
+   "checked": "2026-11-23"
+  },
+  "paradise-one": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 807, completion on the register 15 Apr 2027, 69.7% built at the DLD inspection of 23 Apr 2026",
+   "code": "807",
+   "checked": "2026-11-23"
+  },
+  "oasis-tower-2": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 1560, completion on the register 30 Jun 2027, 73.89% built at the DLD inspection of 8 Sep 2026",
+   "code": "1560",
+   "checked": "2026-11-23"
+  },
+  "maak-residence": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 4187, completion on the register 30 Nov 2027, 0% built at the DLD inspection of 20 Nov 2025",
+   "code": "4187",
+   "checked": "2026-11-23"
+  },
+  "route-66-dubai": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 4180, completion on the register 12 Dec 2027, 0% built at the DLD inspection of 4 Nov 2025",
+   "code": "4180",
+   "checked": "2026-11-23"
+  },
+  "the-promise-villas": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 4188, completion on the register 31 Dec 2027, 28.45% built at the DLD inspection of 13 Oct 2026",
+   "code": "4188",
+   "checked": "2026-11-23"
+  },
+  "maison-margiela-residences": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3716, completion on the register 27 Mar 2028, 6.38% built at the DLD inspection of 5 Oct 2026",
+   "code": "3716",
+   "checked": "2026-11-23"
+  },
+  "white-opals": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 3676, completion on the register 1 Sep 2028, 1.14% built at the DLD inspection of 31 Mar 2026",
+   "code": "3676",
+   "checked": "2026-11-23"
+  },
+  "la-crystal": {
+   "register": "Dubai DLD project register (published on dubairealestateiq.com)",
+   "item": "project registration",
+   "status": "active",
+   "detail": "project 4059, completion on the register 30 Sep 2028, 0% built at the DLD inspection of 1 Oct 2025",
+   "code": "4059",
+   "checked": "2026-11-23"
+  },
+  "gaya-residency": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 19979-3/07-2029/0546(A)-(S) valid to 2029-07-22; progress 20.00%",
+   "code": "19979-3",
+   "checked": "2026-11-23"
+  },
+  "myra-idaman": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 20014-4/04-2029/0311(A)-(S) valid to 2029-04-25; progress 15.45%",
+   "code": "20014-4",
+   "checked": "2026-11-23"
+  },
+  "residensi-komersial-botani-sayang-3": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 19985-10/09-2028/0807(A)-(S) valid to 2028-09-30; progress 20.00%",
+   "code": "19985-10",
+   "checked": "2026-11-23"
+  },
+  "pangsapuri-kita-seri": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 19924-3/08-2028/0681(N)-(S) valid to 2028-08-17; progress 0.00%",
+   "code": "19924-3",
+   "checked": "2026-11-23"
+  },
+  "residensi-sepoi": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 19883-2/07-2028/0578(A)-(S) valid to 2028-07-17; progress 5.00%",
+   "code": "19883-2",
+   "checked": "2026-11-23"
+  },
+  "residensi-saujana": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 19932-2/05-2028/0354(A)-(S) valid to 2028-05-06; progress 18.89%",
+   "code": "19932-2",
+   "checked": "2026-11-23"
+  },
+  "residensi-skysanctuary-2": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 20093-2/12-2027/1160(A)-(S) valid to 2027-12-18; progress 0.00%",
+   "code": "20093-2",
+   "checked": "2026-11-23"
+  },
+  "residensi-akasia-raya": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 19873-2/08-2027/0779(N)-(S) valid to 2027-08-29; progress 20.17%",
+   "code": "19873-2",
+   "checked": "2026-11-23"
+  },
+  "myra-cove-sepang": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 20164-2/08-2027/0735(A)-(S) valid to 2027-08-13; progress 32.08%",
+   "code": "20164-2",
+   "checked": "2026-11-23"
+  },
+  "residensi-komersial-botani-sayang-2": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 19985-9/05-2027/0409(N)-(S) valid to 2027-05-12; progress 88.44%",
+   "code": "19985-9",
+   "checked": "2026-11-23"
+  },
+  "residensi-botani-3": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 19985-8/12-2026/0001(A)-(S) valid to 2026-12-31; progress 97.50%",
+   "code": "19985-8",
+   "checked": "2026-11-23"
+  },
+  "d-tessera-residences": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 20011-4/04-2027/0243(R)-(S) valid to 2027-04-16; progress 97.50%",
+   "code": "20011-4",
+   "checked": "2026-11-23"
+  },
+  "grenepark-village": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 20080-1/03-2024/0556(R)-(S) valid to 2024-03-23; progress 20.95%",
+   "code": "20080-1",
+   "checked": "2026-11-23"
+  },
+  "residensi-sinaran": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 20031-1/01-2027/0043(A)-(S) valid to 2027-01-07; progress 85.03%",
+   "code": "20031-1",
+   "checked": "2026-11-23"
+  },
+  "grace-harmony": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 20018-1/12-2027/0929(R)-(S) valid to 2027-12-11; progress 57.40%",
+   "code": "20018-1",
+   "checked": "2026-11-23"
+  },
+  "cedar-bukit-damansara": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 19997-1/10-2027/0771(R)-(S) valid to 2027-10-15; progress 87.11%",
+   "code": "19997-1",
+   "checked": "2026-11-23"
+  },
+  "riveria-sentral": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 19929-1/06-2027/0575(A)-(S) valid to 2027-06-26; progress 68.99%",
+   "code": "19929-1",
+   "checked": "2026-11-23"
+  },
+  "menara-d-immersione": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 19912-1/05-2027/0400(R)-(S) valid to 2027-05-13; progress 92.50%",
+   "code": "19912-1",
+   "checked": "2026-11-23"
+  },
+  "twin-pines": {
+   "register": "Malaysia KPKT TEDUH register",
+   "item": "advertising and sales permit",
+   "status": "active",
+   "detail": "permit 19893-1/03-2027/0119(A)-(S) valid to 2027-03-02; progress 26.75%",
+   "code": "19893-1",
+   "checked": "2026-11-23"
   }
  }
 }
