@@ -1,6 +1,6 @@
 {
  "updated": "2026-11-23",
- "projects": 2895,
+ "projects": 2896,
  "markets": {
   "Abu Dhabi": {
    "updated": "2026-11-23",
@@ -18207,7 +18207,7 @@
    "updated": "2026-11-23",
    "market": "Pattaya",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 18,
+   "projects": 19,
    "title": {
     "leasehold": 1,
     "known": 10
@@ -18229,13 +18229,13 @@
     "known": 0
    },
    "guaranteed_language": 1,
-   "permit_claims": 1,
+   "permit_claims": 2,
    "permit_numbers_published": 0,
    "plans_published": 8,
    "price_usd": {
-    "known": 8,
-    "median": 150000.0,
-    "min": 56000.0,
+    "known": 9,
+    "median": 111000.0,
+    "min": 51000.0,
     "max": 325000.0
    },
    "yield": {
@@ -18245,7 +18245,7 @@
    },
    "completion": {
     "2026": 2,
-    "2027": 3,
+    "2027": 4,
     "2028": 3,
     "2029": 6,
     "unknown": 4

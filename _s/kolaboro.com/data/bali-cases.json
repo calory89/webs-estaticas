@@ -924,13 +924,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 9,
+    "unverified": 10,
     "contradicted": 3
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 16,
+   "profile": 18,
    "fp": {
     "sha256": "1b54138df92b62fa85b10a774113e7cec9aec138cd488dcfd847395d04d9e49d",
     "date": "2026-11-05"
@@ -990,13 +990,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 8,
+    "unverified": 9,
     "contradicted": 4
    },
    "stage": "under construction",
    "delay": 17.0,
    "overdue": null,
-   "profile": 16,
+   "profile": 18,
    "fp": {
     "sha256": "b1bc1cf61f1235537908e1c200f57a00d4b28b4274d86f5bc83fa5d7ce58fb05",
     "date": "2026-11-05"
@@ -1192,13 +1192,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 4
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 16,
+   "profile": 18,
    "fp": {
     "sha256": "5a505ea550a6bc2666e8541c9f19cbff2502bd18afc794cc55736f5be77f602c",
     "date": "2026-11-05"
@@ -2524,13 +2524,13 @@
    "vscore": 0,
    "claims": {
     "verified": 1,
-    "unverified": 9,
+    "unverified": 10,
     "contradicted": 2
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 11,
+   "profile": 13,
    "fp": {
     "sha256": "432587deb1b6ae81475ca0f8f29a44b5f2683e6d52b0cb237975d20b59d5c337",
     "date": "2026-11-05"
@@ -2599,13 +2599,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 10,
+    "unverified": 11,
     "contradicted": 2
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 16,
+   "profile": 18,
    "fp": {
     "sha256": "55607b9bee6fbd89d2a3f4be268211a6edbbe02579b4f2755f90253a6ad5fdfd",
     "date": "2026-11-05"
@@ -17870,13 +17870,13 @@
    "vscore": 2,
    "claims": {
     "verified": 6,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 1
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 14,
+   "profile": 16,
    "fp": {
     "sha256": "df8a3b9ee1b4e9c9ed7eacbabf8186fd501b6fcfb7a1a66be60b919b91905ac4",
     "date": "2026-11-05"
@@ -18212,13 +18212,13 @@
    "vscore": 1,
    "claims": {
     "verified": 2,
-    "unverified": 8,
+    "unverified": 9,
     "contradicted": 1
    },
    "stage": "under construction",
    "delay": 1.0,
    "overdue": null,
-   "profile": 17,
+   "profile": 19,
    "fp": {
     "sha256": "b9787d1ebae2286ab4fa187deafe21e388d9dbc47e0e3a0b1df40d328bf60b60",
     "date": "2026-11-05"
@@ -18278,13 +18278,13 @@
    "vscore": 2,
    "claims": {
     "verified": 6,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 12,
+   "profile": 14,
    "fp": {
     "sha256": "f951ca3e6f38eab3f760d095cb13d58150ef56c282157f61d5b81e7f76198223",
     "date": "2026-11-05"
@@ -18431,13 +18431,13 @@
    "vscore": 1,
    "claims": {
     "verified": 2,
-    "unverified": 3,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 4,
+   "profile": 8,
    "fp": {
     "sha256": "c28615c95a24f372b20533e92568a9ee1fa9c360614bc6aa1d510bcec86f57b8",
     "date": "2026-11-15"
@@ -18503,13 +18503,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 2,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 1,
+   "profile": 6,
    "fp": {
     "sha256": "4ff4e8fa9bfa486ea0bcc96261f2ec857f1bccc87524ec3baca2d7eea4da9007",
     "date": "2026-11-15"
@@ -18569,13 +18569,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 2,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 1,
+   "profile": 6,
    "fp": {
     "sha256": "4ff4e8fa9bfa486ea0bcc96261f2ec857f1bccc87524ec3baca2d7eea4da9007",
     "date": "2026-11-15"
@@ -18635,13 +18635,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 3,
+    "unverified": 7,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 8
   },
   {
    "id": "BKK-013",
@@ -18759,13 +18759,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 7
   },
   {
    "id": "BKK-015",
@@ -18821,13 +18821,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 7
   },
   {
    "id": "BKK-016",
@@ -18883,13 +18883,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 7
   },
   {
    "id": "BKK-017",
@@ -18945,13 +18945,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 7
   },
   {
    "id": "BKK-018",
@@ -19192,13 +19192,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 7
   },
   {
    "id": "BKK-022",
@@ -19316,13 +19316,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7
+   "profile": 8
   },
   {
    "id": "BKK-024",
@@ -19378,13 +19378,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 7
   },
   {
    "id": "BKK-025",
@@ -19440,13 +19440,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 7
   },
   {
    "id": "BKK-026",
@@ -19502,13 +19502,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 7,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7
+   "profile": 10
   },
   {
    "id": "BKK-027",
@@ -19625,13 +19625,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 8,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7
+   "profile": 12
   },
   {
    "id": "BKK-029",
@@ -19687,13 +19687,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 7,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 11
   },
   {
    "id": "BKK-030",
@@ -19811,13 +19811,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 7
   },
   {
    "id": "BKK-032",
@@ -19873,13 +19873,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 7
   },
   {
    "id": "BKK-033",
@@ -19935,13 +19935,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 7
   },
   {
    "id": "BKK-034",
@@ -20058,13 +20058,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 7,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 11
   },
   {
    "id": "BKK-036",
@@ -20120,13 +20120,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 7
   },
   {
    "id": "BKK-037",
@@ -20243,13 +20243,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 7
   },
   {
    "id": "BKK-039",
@@ -20366,13 +20366,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 7
   },
   {
    "id": "BKK-041",
@@ -20428,13 +20428,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 7
   },
   {
    "id": "BKK-042",
@@ -20490,13 +20490,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 5
+   "profile": 6
   },
   {
    "id": "BKK-043",
@@ -20552,13 +20552,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 4
+   "profile": 5
   },
   {
    "id": "BKK-044",
@@ -20614,13 +20614,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 4
+   "profile": 5
   },
   {
    "id": "BKK-045",
@@ -20676,13 +20676,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 4
+   "profile": 5
   },
   {
    "id": "BGI-001",
@@ -103941,13 +103941,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 8,
+    "unverified": 9,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 8,
+   "profile": 10,
    "fp": {
     "sha256": "983a82643b1647e85f363f84225a9a4d803c23c8a6e044ae950e5815fdba264b",
     "date": "2026-11-05"
@@ -104007,13 +104007,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7
+   "profile": 8
   },
   {
    "id": "HHQ-007",
@@ -114881,13 +114881,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 3,
+    "unverified": 4,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 8,
+   "profile": 9,
    "fp": {
     "sha256": "337948f1e0b4e0b7823284a364516f79b1c667c16397fdfb61a3e6ec765b79be",
     "date": "2026-11-07"
@@ -115140,13 +115140,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 8,
+    "unverified": 9,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 7,
+   "profile": 8,
    "fp": {
     "sha256": "9017d81c23b05794db3243935c69426420eedadf78e2617313d4a7d99745bdfd",
     "date": "2026-11-05"
@@ -120972,13 +120972,13 @@
    "vscore": 0,
    "claims": {
     "verified": 2,
-    "unverified": 9,
+    "unverified": 10,
     "contradicted": 2
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 20
+   "profile": 22
   },
   {
    "id": "LOM-007",
@@ -121647,13 +121647,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 6,
+    "unverified": 7,
     "contradicted": 3
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 16,
+   "profile": 18,
    "fp": {
     "sha256": "369ac1a218d79da57a587d108fa000afa37f653de3d66d4beac3aa399a8bbafe",
     "date": "2026-11-05"
@@ -121860,13 +121860,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 2,
+    "unverified": 3,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 2,
+   "profile": 4,
    "fp": {
     "sha256": "f35c1fcca87ffefbfa6ef93c4da8d4a9635eab997fbc1c100ac4fcedb73aaafa",
     "date": "2026-11-05"
@@ -121925,13 +121925,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 2,
+    "unverified": 3,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 4,
+   "profile": 6,
    "fp": {
     "sha256": "8162342c0228ce8353a86f969d9a7bd1b418dfc00ca7d25f6d4047d8f692c6e9",
     "date": "2026-11-05"
@@ -146920,13 +146920,13 @@
    "vscore": 3,
    "claims": {
     "verified": 7,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 12,
+   "profile": 14,
    "fp": {
     "sha256": "a6db9dc364d894c93f4dd074ceea60dc0d5c9ad4eb2f0cdafc537891923b0972",
     "date": "2026-11-05"
@@ -147100,13 +147100,13 @@
    "vscore": 3,
    "claims": {
     "verified": 7,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 11,
+   "profile": 13,
    "fp": {
     "sha256": "5d9736935462f54679f43dfaa47023d9344a8cb3c9c244ad91be5c30d6f4ee5b",
     "date": "2026-11-05"
@@ -147762,13 +147762,13 @@
    "vscore": 2,
    "claims": {
     "verified": 5,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 14,
+   "profile": 16,
    "fp": {
     "sha256": "8b8e6ed4707ed98f6e6fe130592452cc06e7a9631f610d2346815184b4965ba3",
     "date": "2026-11-05"
@@ -148091,13 +148091,13 @@
    "vscore": 0,
    "claims": {
     "verified": 1,
-    "unverified": 0,
+    "unverified": 1,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": null,
+   "profile": 1,
    "fp": {
     "sha256": "aee8c585500ea45a56f7e3b62a3ddaa2a23edb8a4f78a511c3096573f6adbf33",
     "date": "2026-11-07"
@@ -148158,19 +148158,81 @@
    "vscore": 1,
    "claims": {
     "verified": 2,
-    "unverified": 3,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 2,
+   "profile": 5,
    "register": {
     "register": "Thailand ONEP EIA register",
     "item": "environmental approval",
     "status": "approved",
     "checked": "2026-11-20"
    }
+  },
+  {
+   "id": "PAT-019",
+   "market": "Pattaya",
+   "country": "Thailand",
+   "region": "Pattaya",
+   "docs": false,
+   "plans": false,
+   "band": "Under $100k",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": null,
+   "checks": {
+    "permit": 1,
+    "escrow": null,
+    "progress": 14,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 6,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
   },
   {
    "id": "PER-001",
@@ -151054,13 +151116,13 @@
    "vscore": 3,
    "claims": {
     "verified": 7,
-    "unverified": 6,
+    "unverified": 8,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 16,
+   "profile": 19,
    "fp": {
     "sha256": "0a2b8d6aa1097fea4a529938e2c2ee75c96372a3705895d5b03196160225781e",
     "date": "2026-11-05"
@@ -151133,13 +151195,13 @@
    "vscore": 3,
    "claims": {
     "verified": 4,
-    "unverified": 7,
+    "unverified": 8,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 13,
+   "profile": 14,
    "fp": {
     "sha256": "6e2b83d39f250e3d21bf5ea005aa68415dab4ec44a6b933166eeaeefc595c5e3",
     "date": "2026-11-05"
@@ -151205,13 +151267,13 @@
    "vscore": 2,
    "claims": {
     "verified": 3,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 2
    },
    "stage": "under construction",
    "delay": 6.0,
    "overdue": null,
-   "profile": 13,
+   "profile": 14,
    "fp": {
     "sha256": "5272b3eca51c3edb17d2a731b9dbbfb6b9a973d8ce9021b0567d5e51e42069cd",
     "date": "2026-11-05"
@@ -151506,13 +151568,13 @@
    "vscore": 1,
    "claims": {
     "verified": 2,
-    "unverified": 9,
+    "unverified": 10,
     "contradicted": 1
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 13,
+   "profile": 15,
    "fp": {
     "sha256": "1d4fe6eb93687dbfc2772474dc351406fe9b0b853126ae2c69a18d406f360a23",
     "date": "2026-11-05"
@@ -151577,13 +151639,13 @@
    "vscore": 0,
    "claims": {
     "verified": 4,
-    "unverified": 8,
+    "unverified": 9,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 14,
+   "profile": 16,
    "fp": {
     "sha256": "c4ecb5ea9780941c3ff9194dce1409e2583171ce8a378a716a658cb3cb76ea63",
     "date": "2026-11-05"
@@ -152598,13 +152660,13 @@
    "vscore": 0,
    "claims": {
     "verified": 1,
-    "unverified": 0,
+    "unverified": 3,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": null,
+   "profile": 5,
    "fp": {
     "sha256": "3241d645a6412d9dc468613f1e981bf412b6a087b817fad9a24c4c781b00991a",
     "date": "2026-11-06"
@@ -152663,13 +152725,13 @@
    "vscore": 0,
    "claims": {
     "verified": 1,
-    "unverified": 1,
+    "unverified": 3,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 2,
+   "profile": 5,
    "fp": {
     "sha256": "b10d7a434cb9ad08332a92b9c61c59d1cccaef38f1db4f538b0a219648c1bb04",
     "date": "2026-11-06"
@@ -152729,13 +152791,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 2,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 1,
+   "profile": 7,
    "fp": {
     "sha256": "4ff4e8fa9bfa486ea0bcc96261f2ec857f1bccc87524ec3baca2d7eea4da9007",
     "date": "2026-11-15"
@@ -152919,13 +152981,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 7
+   "profile": 8
   },
   {
    "id": "PHK-028",
@@ -152982,13 +153044,13 @@
    "vscore": 1,
    "claims": {
     "verified": 2,
-    "unverified": 7,
+    "unverified": 8,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 8,
+   "profile": 9,
    "register": {
     "register": "Thailand ONEP EIA register",
     "item": "environmental approval",
@@ -153050,13 +153112,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 7
   },
   {
    "id": "PHK-030",
@@ -153236,13 +153298,13 @@
    "vscore": 0,
    "claims": {
     "verified": 1,
-    "unverified": 6,
+    "unverified": 7,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7
+   "profile": 8
   },
   {
    "id": "PHK-033",
@@ -153298,13 +153360,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 7
   },
   {
    "id": "PHK-034",
@@ -153360,13 +153422,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 7
   },
   {
    "id": "PHK-035",
@@ -153422,13 +153484,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7
+   "profile": 8
   },
   {
    "id": "PHK-036",
@@ -153484,13 +153546,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 7
+   "profile": 8
   },
   {
    "id": "PHK-037",
@@ -153546,13 +153608,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 7,
+    "unverified": 8,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": 2,
-   "profile": 8
+   "profile": 10
   },
   {
    "id": "PHK-038",
@@ -153608,13 +153670,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 3,
+    "unverified": 4,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 7
   },
   {
    "id": "PHK-039",
@@ -153670,13 +153732,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 7
+   "profile": 8
   },
   {
    "id": "PHK-040",
@@ -153794,13 +153856,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 7
+   "profile": 8
   },
   {
    "id": "PHK-042",
@@ -153856,13 +153918,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 8
+   "profile": 9
   },
   {
    "id": "PHK-043",
@@ -153918,13 +153980,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 7
+   "profile": 8
   },
   {
    "id": "PHK-044",
@@ -153980,13 +154042,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 7
+   "profile": 8
   },
   {
    "id": "PHK-045",
@@ -154042,13 +154104,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 7
+   "profile": 8
   },
   {
    "id": "PHK-046",
@@ -154166,13 +154228,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7
+   "profile": 8
   },
   {
    "id": "PHK-048",
@@ -154228,13 +154290,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 6,
+    "unverified": 7,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7
+   "profile": 8
   },
   {
    "id": "PHK-049",
@@ -154290,13 +154352,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 7
+   "profile": 8
   },
   {
    "id": "PHK-050",
@@ -154352,13 +154414,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 7
+   "profile": 8
   },
   {
    "id": "PHK-051",
@@ -154476,13 +154538,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 3,
+    "unverified": 4,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 5
+   "profile": 6
   },
   {
    "id": "PHK-053",
@@ -154662,13 +154724,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7
+   "profile": 8
   },
   {
    "id": "PHK-056",
@@ -154724,13 +154786,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 7
   },
   {
    "id": "PHK-057",
@@ -154786,13 +154848,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7
+   "profile": 8
   },
   {
    "id": "PHK-058",
@@ -154909,13 +154971,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7
+   "profile": 8
   },
   {
    "id": "PHK-060",
@@ -154971,13 +155033,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7
+   "profile": 8
   },
   {
    "id": "PHK-061",
@@ -155095,13 +155157,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 7
   },
   {
    "id": "PHK-063",
@@ -155342,13 +155404,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7
+   "profile": 8
   },
   {
    "id": "PHK-067",
@@ -155404,13 +155466,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7
+   "profile": 8
   },
   {
    "id": "PHK-068",
@@ -155466,13 +155528,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 7
   },
   {
    "id": "PHK-069",
@@ -155590,13 +155652,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 7
   },
   {
    "id": "PHK-071",
@@ -155652,13 +155714,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 7
+   "profile": 8
   },
   {
    "id": "PHK-072",
@@ -155714,13 +155776,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7
+   "profile": 8
   },
   {
    "id": "PHK-073",
@@ -155776,13 +155838,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7
+   "profile": 8
   },
   {
    "id": "PHK-074",
@@ -155838,13 +155900,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 7
+   "profile": 8
   },
   {
    "id": "PHK-075",
@@ -155900,13 +155962,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 7
   },
   {
    "id": "PHK-076",
@@ -191610,29 +191672,29 @@
  ],
  "db": {
   "updated": "2026-11-23",
-  "projects": 2895,
+  "projects": 2896,
   "markets": 191,
   "countries": 94,
-  "sources": 8981,
-  "data_points": 72608,
+  "sources": 8997,
+  "data_points": 72786,
   "claims": {
    "verified": 8142,
-   "unverified": 10478,
+   "unverified": 10600,
    "contradicted": 1370
   },
-  "claims_total": 19990,
-  "deep_profiles": 2895,
+  "claims_total": 20112,
+  "deep_profiles": 2896,
   "checks_by_level": {
    "registry": 2635,
    "independent": 483,
    "developer": 2020,
    "contradicted": 103,
-   "none": 12129
+   "none": 12135
   },
-  "checks_rated": 17370,
+  "checks_rated": 17376,
   "stages": {
    "off-plan": 1094,
-   "under construction": 1738,
+   "under construction": 1739,
    "completed": 17
   },
   "all_six_public": 65,
