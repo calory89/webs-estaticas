@@ -8,7 +8,7 @@ def call(m, p, i):
 tl=call('tools/list',{},1)['result']['tools']
 A={'search_projects':{'market':'Bali','limit':2},'get_project':{'id':'BALI-001'},'project_quick_answer':{'slug':'amani-melasti'},'compare_projects':{'projects':['amani-melasti','anjuna-bay']},'list_by_handover_year':{'year':2027,'market':'Dubai','limit':3},
  'search_text':{'query':'proyectos en Dubái'},'get_certificate':{'slug':'amani-melasti'},'market_stats':{'market':'Dubai'},'database_stats':{},'public_log':{'days':2},'dataset_files':{},'verify_signature':None,
- 'project_history':{'slug':'amani-melasti'},'project_evidence':{'slug':'amani-melasti'},'compare_markets':{'markets':['Dubai','Bali','Phuket']},'transparency_proof':{'slug':'amani-melasti'},'dataset_delta':{}}
+ 'project_history':{'slug':'amani-melasti'},'project_evidence':{'slug':'amani-melasti'},'compare_markets':{'markets':['Dubai','Bali','Phuket']},'transparency_proof':{'slug':'amani-melasti'},'dataset_delta':{},'get_project_record':{'slug':'emaar-golf-vale'},'list_fact_changes':{'market':'Dubai','field':'ho','days':7,'limit':3}}
 R=[];sig=None
 for i,t in enumerate(tl):
     n=t['name'];a=A.get(n,{})

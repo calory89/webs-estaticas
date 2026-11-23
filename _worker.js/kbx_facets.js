@@ -265,13 +265,13 @@ function changesList(F, ix, x, lang, ph, paper) {
       case 'lease_years_base': if (a > 0 && b > 0) { k = 'r_l'; v = { a, b }; } break;
     }
     if (!k) continue;
-    out.push([c.first_seen || '', li(te(lang, k, v) + ' <small class="k-muted">' + te(lang, 'r_seen', { d: fd(c.first_seen, lang) }) + '</small>', '/projects/' + x.s + '/changes/', t(lang, 'r_copies'))]);
+    out.push([c.first_seen || '', li(te(lang, k, v) + ' <small class="k-muted">' + te(lang, 'r_seen', { d: fd(c.first_seen, lang) }) + '</small>', (lang === 'en' ? '' : '/' + lang) + '/projects/' + x.s + '/changes/', t(lang, 'r_copies'))]);
   }
   return out.sort((p, q) => String(q[0]).localeCompare(String(p[0])));
 }
 function changedHtml(F, ix, x, lang, ph, paper, checked, nCh) {
   const NC = nCh || 4;
-  const L = changesList(F, ix, x, lang, ph, paper), chg = '/projects/' + x.s + '/changes/';
+  const L = changesList(F, ix, x, lang, ph, paper), chg = (lang === 'en' ? '' : '/' + lang) + '/projects/' + x.s + '/changes/';   // r7u: the viewer in the page language
   const top = ph && ph.n > 1 ? te(lang, 'ch_copies', { d: fd(checked, lang), n: nf(lang, ph.n), a: fd(ph.first, lang), b: fd(ph.last, lang), c: nf(lang, ph.changed) }) : ph && ph.n ? te(lang, 'ch_one', { d: fd(checked, lang), a: fd(ph.first, lang) }) : te(lang, 'ch_last', { d: fd(checked, lang) });
   const body = L.length ? '<ul class="fl">' + L.slice(0, NC).map(r => r[1]).join('') + '</ul>' + (L.length > NC ? '<p class="k-small">' + te(lang, 'ch_more_n', { k: nf(lang, L.length - NC) }) + ' <a href="#history">' + te(lang, 'ch_hist') + '</a></p>' : '') + '<p class="k-small k-muted">' + te(lang, 'ch_note') + '</p>'
     : '<p>' + te(lang, ph && ph.n > 1 ? 'ch_none' : 'ch_none1', { a: fd((ph && ph.first) || checked, lang), b: fd((ph && ph.last) || checked, lang) }) + '</p>';

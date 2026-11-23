@@ -1,6 +1,6 @@
 {
  "type": "kolaboro-mcp-tests-v1",
- "at": "2026-11-21T08:59:01Z",
+ "at": "2026-11-23T05:39:06Z",
  "endpoint": "https://kolaboro.com/mcp",
  "server": {
   "name": "kolaboro",
@@ -8,8 +8,8 @@
   "version": "2.0.0",
   "websiteUrl": "https://kolaboro.com/docs/mcp/"
  },
- "passed": 17,
- "total": 17,
+ "passed": 19,
+ "total": 19,
  "results": [
   {
    "tool": "search_projects",
@@ -34,12 +34,12 @@
   {
    "tool": "list_by_handover_year",
    "ok": true,
-   "detail": "signed, 2170 bytes"
+   "detail": "signed, 2216 bytes"
   },
   {
    "tool": "search_text",
    "ok": true,
-   "detail": "signed, 5313 bytes"
+   "detail": "signed, 5273 bytes"
   },
   {
    "tool": "get_certificate",
@@ -54,17 +54,17 @@
   {
    "tool": "database_stats",
    "ok": true,
-   "detail": "signed, 972 bytes"
+   "detail": "signed, 975 bytes"
   },
   {
    "tool": "public_log",
    "ok": true,
-   "detail": "signed, 1961 bytes"
+   "detail": "signed, 1962 bytes"
   },
   {
    "tool": "dataset_files",
    "ok": true,
-   "detail": "signed, 1634 bytes"
+   "detail": "signed, 1636 bytes"
   },
   {
    "tool": "verify_signature",
@@ -84,7 +84,7 @@
   {
    "tool": "compare_markets",
    "ok": true,
-   "detail": "signed, 2637 bytes"
+   "detail": "signed, 2638 bytes"
   },
   {
    "tool": "transparency_proof",
@@ -95,6 +95,16 @@
    "tool": "dataset_delta",
    "ok": true,
    "detail": "signed, 3464 bytes"
+  },
+  {
+   "tool": "get_project_record",
+   "ok": true,
+   "detail": "signed, 3703 bytes"
+  },
+  {
+   "tool": "list_fact_changes",
+   "ok": true,
+   "detail": "signed, 1874 bytes"
   }
  ]
 }
