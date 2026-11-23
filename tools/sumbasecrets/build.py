@@ -96,6 +96,7 @@ KV6 = []
 for g in GUIDES6:
     e = {"t": g["t"], "d": g["d"], "b": g["b"], "faq": g["faq"]}
     ng = {"s": g["s"], "img": g["img"], "en": e, "kv": 1}
+    if g.get("rt"): ng["rt"] = g["rt"]
     for l in LANGS[1:]:
         tr = tr_tree(dict(e, b=_parts(e["b"])), l)
         if isinstance(tr.get("b"), list): tr = dict(tr, b="".join(tr["b"]))

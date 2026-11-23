@@ -78,7 +78,7 @@ def _route(slug, a_name, a_ll, b_name, b_ll, img, intro, tip, a_clim=None, b_cli
     faq = [[f"How far is {a_name} from {b_name}?", f"About {round(k)} km in a straight line and roughly {road} km by road, which takes about {tm} by car."],
            [f"Can I drive from {a_name} to {b_name} and back in a day?", ("Yes, comfortably, with time for stops." if k * 1.35 < 80 else "Yes, but it is a long day on the road; many travellers prefer to stay a night at the far end.")]]
     if al: faq.append([f"What can I see between {a_name} and {b_name}?", ", ".join(p["en"]["n"] for t, d, p in al[:4]) + " are all close to the route."])
-    return {"s": slug, "img": img, "t": f"{a_name} to {b_name}: distance, drive time and stops",
+    return {"s": slug, "img": img, "rt": [[round(a_ll[0], 5), round(a_ll[1], 5), a_name], [round(b_ll[0], 5), round(b_ll[1], 5), b_name]], "t": f"{a_name} to {b_name}: distance, drive time and stops",
             "d": f"How to get from {a_name} to {b_name} in Sumba: about {road} km by road, roughly {tm} by car, with places to stop, fuel and tips.", "b": body, "faq": faq}
 
 _TMC_N, _WGP_N = "Tambolaka Airport", "Waingapu"

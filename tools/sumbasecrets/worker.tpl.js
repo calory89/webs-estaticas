@@ -5,6 +5,49 @@ const TIMES = "https://thesumbatimes.com";
 const L = D.langs;
 const esc = s => String(s == null ? "" : s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
 const P = (p, l) => Object.assign({}, p.en, p[l], { n: (p[l] && p[l].n) || (p.n && p.n[l]) || p.en.n });
+const CSS2 = `
+/* 23-nov-2026 design pass */
+.hx{height:auto;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding:150px 0 100px}
+.hx-in{position:relative;bottom:auto;left:auto;right:auto;z-index:2;display:flex;flex-direction:column;align-items:flex-start}
+.hx-in>*{max-width:100%}.hx-in .hx-d{max-width:60ch}.hx-in .nowm{order:9;margin:2px 0 0}.hx-in>p:last-child{margin-bottom:6px}
+.hx h1{font-size:clamp(34px,5vw,66px);line-height:1.04;max-width:17ch;margin:0 0 12px}
+.hx-q{width:100%;max-width:560px}
+main h2:not(#_){line-height:1.18}
+.rv{animation:rvshow .01s 2.2s forwards}@keyframes rvshow{to{opacity:1;transform:none}}
+.fig img{aspect-ratio:16/9;object-fit:cover;width:100%;height:auto}
+.body .tbl,.tblw .tbl,.tblw>table{width:100%!important;display:table}
+section.faq{padding:8px 0 0}
+.toc summary{display:flex;align-items:center;gap:8px}.tocn{font-style:normal;font-size:12px;background:var(--line);border-radius:999px;padding:1px 8px;font-weight:600}
+.toc ol{columns:1}
+.gg{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:14px 0 8px}
+.gc{display:flex;flex-direction:column;background:var(--paper);border:1px solid var(--line);border-radius:16px;overflow:hidden;text-decoration:none;color:var(--ink);transition:transform .15s,box-shadow .2s}
+.gc:hover{transform:translateY(-3px);box-shadow:0 10px 26px rgba(0,0,0,.1)}
+.gc-i{display:block;aspect-ratio:16/9;background:#dfe9e3;overflow:hidden}.gc-i img{width:100%;height:100%;object-fit:cover;display:block}
+.gc-x{display:flex;flex-direction:column;gap:6px;padding:14px 16px 16px}
+.gc-x b{font-family:Fraunces,Georgia,serif;font-size:18px;line-height:1.25}
+.gc-x small{font-size:14px;line-height:1.5;color:var(--muted,#5b6660);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.tpf{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 8px}.tpf button i{font-style:normal;font-size:12px;opacity:.65;margin-left:2px}
+.gsec{padding:10px 0 6px}.gsec h2 small{font-family:Inter,system-ui,sans-serif;font-size:14px;font-weight:500;opacity:.6;margin-left:6px}
+.hsec{padding:64px 0 20px}.hsec .sub{margin:-4px 0 16px;color:var(--muted,#5b6660)}
+.rts{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.rt{display:flex;flex-direction:column;gap:4px;padding:14px 16px;border-radius:14px;background:var(--paper);border:1px solid var(--line);text-decoration:none;color:var(--ink);transition:border-color .2s,transform .15s}
+.rt:hover{border-color:var(--teal);transform:translateY(-2px)}.rt b{font-size:15px}.rt small{color:var(--teal);font-weight:600}
+.tpt{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.tpt a{display:flex;flex-direction:column;gap:2px;padding:16px;border-radius:14px;background:var(--paper);border:1px solid var(--line);text-decoration:none;color:var(--ink)}
+.tpt a:hover{border-color:var(--teal)}.tpt span{font-size:26px}.tpt b{font-size:15px}.tpt small{opacity:.65}
+.gmap{height:400px;border-radius:16px;margin:12px 0 4px;border:1px solid var(--line);background:#e8efe9;z-index:0}
+.gm-e{display:inline-block;transform:translate(-50%,-140%);background:#1b2722;color:#fff;font:600 12px/1.2 Inter,system-ui,sans-serif;padding:4px 9px;border-radius:999px;white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,.3)}
+.grid.sim3{grid-template-columns:repeat(3,1fr)}
+@media(max-width:980px){.gg,.grid.sim3{grid-template-columns:repeat(2,1fr)}.rts,.tpt{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){
+.hx{padding:190px 0 150px}.hx h1{font-size:clamp(30px,8.6vw,40px)}.hx-live{bottom:74px}.hx-d{font-size:16px}
+.top .ico[href$="/tools/"]{display:none}.top .lp summary b,.top .lp summary i{display:none}.top .lp summary{padding:5px 8px}
+.top .w{flex-wrap:wrap}.top .w>.lp{margin-left:0}
+.fab-map{display:none!important}.totop{bottom:84px}
+.gmap{height:300px}.hsec{padding:44px 0 10px}
+}
+@media(max-width:560px){.gg,.grid.sim3{grid-template-columns:1fr}.gc{flex-direction:row}.gc-i{width:118px;flex:none;aspect-ratio:auto;min-height:100%}.gc-x{padding:12px}.gc-x b{font-size:16px}.gc-x small{-webkit-line-clamp:2;font-size:13px}}
+`;
 const CAT_COLOR = { beach:"#0e7c86", waterfall:"#2f6fb5", village:"#a2452b", viewpoint:"#6c8a2e", culture:"#8a3f8f" };
 const WX = {
  en:["Clear","Partly cloudy","Cloudy","Fog","Drizzle","Rain","Showers","Thunderstorm"],
@@ -224,7 +267,7 @@ function page(l, path, o) {
 <meta name="theme-color" content="#0e6f66" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#14201b" media="(prefers-color-scheme: dark)"><link rel="manifest" href="/manifest.webmanifest"><link rel="apple-touch-icon" href="/icon.svg"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e6f66'/%3E%3Cpath d='M10 42c8-6 14-6 22 0s14 6 22 0' stroke='%23f7f2e8' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='44' cy='22' r='7' fill='%23e0ad55'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://i.ytimg.com">${o.preload ? `<link rel="preload" as="image" href="${o.preload}" fetchpriority="high"${o.preloadMedia ? ` media="${o.preloadMedia}"` : ""}>` : ""}<link href="/fonts.css" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="/fonts.css" rel="stylesheet"></noscript><link rel="alternate" type="application/rss+xml" title="Sumba Secrets" href="/${l}/feed.xml">
 ${o.leaflet ? '<link rel="stylesheet" href="/lib/leaflet.css"><link rel="preconnect" href="https://server.arcgisonline.com" crossorigin>' : ""}
-<style>${CSS}</style>${o.ld ? [].concat(o.ld).map(x => `<script type="application/ld+json">${JSON.stringify(x)}</script>`).join("") : ""}${analytics()}</head><body${(() => { const c = [o.home && path === "/" ? "home" : "", o.leaflet ? "hasmap" : ""].filter(Boolean).join(" "); return c ? ` class="${c}"` : ""; })()}><a class="skip" href="#main">${esc(D.ui2[l].skip)}</a>
+<style>${CSS}${CSS2}</style>${o.ld ? [].concat(o.ld).map(x => `<script type="application/ld+json">${JSON.stringify(x)}</script>`).join("") : ""}${analytics()}</head><body${(() => { const c = [o.home && path === "/" ? "home" : "", o.leaflet ? "hasmap" : ""].filter(Boolean).join(" "); return c ? ` class="${c}"` : ""; })()}><a class="skip" href="#main">${esc(D.ui2[l].skip)}</a>
 <div class="net"><div class="w"><b>${esc(u.network)}:</b><a href="${TIMES}/${D.tl[l]}/">The Sumba Times<span class="d"> · ${esc(u.times_d)}</span></a><a href="/${l}/"><b>Sumba Secrets</b><span class="d"> · ${esc(u.secrets_n)}</span></a></div></div>
 <header class="top${o.home ? " over" : ""}" id="hdr"><div class="w"><a class="logo" href="/${l}/">Sumba <span>Secrets</span></a><nav class="main" aria-label="Main">${nav}</nav>
 <a class="ico" href="/${l}/tools/" aria-label="${esc(D.ui2[l].tl_t)}" title="${esc(D.ui2[l].tl_t)}">🧰</a><a class="ico" href="/${l}/search/" aria-label="${esc(D.ui2[l].search_site)}" title="${esc(D.ui2[l].search_site)}">🔎</a><a class="ico" href="/${l}/saved/" aria-label="${esc(D.ui2[l].saved)}" title="${esc(D.ui2[l].saved)}">☆<span class="bdg" hidden></span></a>${langPicker(l, path, false)}</div></header>
@@ -362,24 +405,34 @@ function weatherPage(l) {
   return page(l, "/weather/", { title: `${u.weather} Sumba`, desc: u.weather_d, body, js: wxJS(l, D.towns, true) });
 }
 
+const TOPICS = ["itin", "routes", "areas", "culture", "nature", "weather", "practical", "compare"];
 function guideTopic(s) {
-  if (/^itinerary-/.test(s) || /airport|ferry|bali-to|getting|money|packing|driver|safe|health|practical|budget|cost|rent-|quick|phrases|responsible|weather|rainy|best-time|kids|where-to-stay|travel-guide|pasola-dates|nomads|drones|snorkel/.test(s)) return "plan";
+  if (/things-to-do|places-to-visit|where-to-stay/.test(s)) return "areas";
+  if (/^itinerary-|-itinerary$|-two-weeks$|road-trip|beach-hopping|village-route|waterfall-route/.test(s)) return "itin";
+  if (/-to-|^day-trips|airport|ferry|getting-|hire-a-driver|rent-|road-conditions|fuel-stations|cycling/.test(s)) return "routes";
   if (/-vs-|worth/.test(s)) return "compare";
-  if (/marapu|ikat|village|houses|tombs|horses|pasola|etiquette|food|glossary|history|languages|books|events|facts|numbers|regencies|music|markets/.test(s)) return "culture";
-  return "places";
+  if (/weather|rainy|dry-season|best-time/.test(s)) return "weather";
+  if (/^(beaches|villages|waterfalls|viewpoints)-|kodi|anakalang|north-coast|central-sumba|places-to|things-to|best-beaches|sumba-waterfalls|photo-spots|sunsets|free-things|where-is|travel-guide|where-to-stay|atm-locations|hospitals/.test(s)) return "areas";
+  if (/geology|savanna|hornbill|cockatoo|birds|parks|snorkel|stargazing|fishing|surf|hiking|drones/.test(s)) return "nature";
+  if (/marapu|ikat|village|houses|tombs|horses|pasola|etiquette|food|glossary|history|languages|books|events|facts|numbers|regencies|music|markets|sandalwood|betel|belis|funerals|wula|kabisu|mamuli|buffalo|clothing|kings|religion|phrases|photographing|gifts/.test(s)) return "culture";
+  return "practical";
 }
+function tpName(l, k) { const u2 = D.ui2[l]; return ({ itin: u2.tp_itin, routes: u2.tp_routes, areas: u2.tp_areas, culture: u2.tp_culture, nature: u2.tp_nature, weather: u2.tp_weather, practical: u2.tp_practical, compare: u2.tp_compare })[k]; }
+const TP_ICON = { itin: "🧭", routes: "🚗", areas: "🏝️", culture: "🛖", nature: "🦜", weather: "🌦️", practical: "🎒", compare: "⚖️" };
+function gcard(g, l) { const t = gtxt(g, l), h = ghero(g); return `<a class="gc" href="/${l}/guide/${g.s}/" data-q="${esc((t.t + " " + t.d).toLowerCase())}"><span class="gc-i"><img src="${h.s}" alt="" loading="lazy" onerror="this.remove()"></span><span class="gc-x"><b>${esc(t.t)}</b><small>${esc(t.d)}</small></span></a>`; }
+function itinDays(g) { const n = +((g.s.match(/\d+/) || [0])[0]); return n || (/two-weeks/.test(g.s) ? 14 : 99); }
 function guidesPage(l) {
   const u = D.ui[l], u2 = D.ui2[l];
-  const it = D.guides.filter(g => /^itinerary-/.test(g.s)), ot = D.guides.filter(g => !/^itinerary-/.test(g.s) && !g.info);
-  const wrap = g => guideCard(g, l).replace(/^<a /, `<a data-tp="${guideTopic(g.s)}" data-q="${esc((gtxt(g, l).t + " " + gtxt(g, l).d).toLowerCase())}" `);
-  const body = `<section><div class="w"><h1 class="h1">${esc(u.guides)}</h1>
-<input class="gq" type="search" id="gq" placeholder="🔎 ${esc(u2.filter_guides)}" aria-label="${esc(u2.filter_guides)}" enterkeyhint="search">
-<div class="tpf" role="group">${[["all", u2.tp_all], ["plan", u2.tp_plan], ["places", u2.tp_places], ["culture", u2.tp_culture], ["compare", u2.tp_compare]].map(([k, t], i) => `<button data-tp="${k}" class="${i ? "" : "on"}" aria-pressed="${i ? "false" : "true"}">${esc(t)}</button>`).join("")}</div>
-<h2 class="sec h2s">${esc(u2.itins)}</h2><div class="grid gl" style="grid-template-columns:1fr">${it.map(wrap).join("")}</div><h2 class="sec h2s">${esc(u2.guides_more)}</h2><div class="grid gl" style="grid-template-columns:1fr">${ot.map(wrap).join("")}</div><h2 class="sec h2s">🗓️ ${esc(u2.months_t)}</h2><div class="chips">${MON_SLUGS.map((m, j) => `<a class="chip" href="/${l}/month/${m}/">${esc(D.months[l][j].t.split(/[:：]/)[0])}</a>`).join("")}</div></div></section>`;
-  const js = "var cur='all',q=document.getElementById('gq');function f(){var v=(q.value||'').toLowerCase().trim();document.querySelectorAll('.gl>a').forEach(function(a){var ok=(cur==='all'||a.dataset.tp===cur)&&(!v||a.dataset.q.indexOf(v)>-1);a.style.display=ok?'':'none'})}document.querySelectorAll('.tpf button').forEach(function(b){b.onclick=function(){cur=b.dataset.tp;document.querySelectorAll('.tpf button').forEach(function(x){x.classList.toggle('on',x===b);x.setAttribute('aria-pressed',x===b)});f()}});q.oninput=f;";
+  const all = D.guides.filter(g => !g.info), by = {}; TOPICS.forEach(k => by[k] = []);
+  all.forEach(g => by[guideTopic(g.s)].push(g)); by.itin.sort((a, b) => itinDays(a) - itinDays(b));
+  const chips = `<div class="tpf" role="group"><button data-tp="all" class="on" aria-pressed="true">${esc(u2.tp_all)} <i>${all.length}</i></button>${TOPICS.filter(k => by[k].length).map(k => `<button data-tp="${k}" aria-pressed="false">${TP_ICON[k]} ${esc(tpName(l, k))} <i>${by[k].length}</i></button>`).join("")}</div>`;
+  const secs = TOPICS.filter(k => by[k].length).map(k => `<section class="gsec" data-tp="${k}" id="tp-${k}"><h2 class="sec h2s">${TP_ICON[k]} ${esc(tpName(l, k))} <small>${esc(tpl(u2.n_guides, { n: by[k].length }))}</small></h2><div class="gg">${by[k].map(g => gcard(g, l)).join("")}</div></section>`).join("");
+  const body = `<section><div class="w"><h1 class="h1">${esc(u.guides)}</h1><p class="lead">${esc(tpl(u2.n_guides, { n: all.length }))} · 12 ${esc(u2.n_langs)}</p>
+<input class="gq" type="search" id="gq" placeholder="🔎 ${esc(u2.filter_guides)}" aria-label="${esc(u2.filter_guides)}" enterkeyhint="search">${chips}${secs}
+<h2 class="sec h2s">🗓️ ${esc(u2.months_t)}</h2><div class="chips">${MON_SLUGS.map((m, j) => `<a class="chip" href="/${l}/month/${m}/">${esc(D.months[l][j].t.split(/[:：]/)[0])}</a>`).join("")}</div></div></section>`;
+  const js = "var cur='all',q=document.getElementById('gq');function f(){var v=(q.value||'').toLowerCase().trim();document.querySelectorAll('.gsec').forEach(function(s){var on=cur==='all'||s.dataset.tp===cur,n=0;s.querySelectorAll('.gc').forEach(function(a){var ok=on&&(!v||a.dataset.q.indexOf(v)>-1);a.style.display=ok?'':'none';if(ok)n++});s.style.display=n?'':'none'})}function set(k){cur=k;document.querySelectorAll('.tpf button').forEach(function(x){x.classList.toggle('on',x.dataset.tp===k);x.setAttribute('aria-pressed',x.dataset.tp===k)});f()}document.querySelectorAll('.tpf button').forEach(function(b){b.onclick=function(){set(b.dataset.tp);history.replaceState(null,'',b.dataset.tp==='all'?location.pathname:'#tp='+b.dataset.tp)}});q.oninput=f;var m=location.hash.match(/tp=([a-z]+)/);if(m)set(m[1]);";
   return page(l, "/guides/", { title: u.guides, body, js });
 }
-
 function guideExtra(l, g) {
   const u = D.ui[l], u2 = D.ui2[l], en = (g.en && g.en.b) || "";
   const seen = []; (en.match(/\/place\/([a-z0-9-]+)\//g) || []).forEach(m => { const x = m.split("/")[2]; if (!seen.includes(x)) seen.push(x); });
@@ -402,6 +455,10 @@ function guideExtra(l, g) {
     const tb = k => { const cl = D.climate[k]; return `<h3>${esc(CLIM_NAME[k])}</h3><div class="tblw"><table class="tbl clim"><thead><tr><th>${esc(u2.clim_m)}</th>${cl.map(r => `<th>${esc(mf.format(new Date(Date.UTC(2026, r[0] - 1, 15))))}</th>`).join("")}</tr></thead><tbody><tr><td>${esc(u2.clim_max)}</td>${cl.map(r => `<td>${Math.round(r[1])}</td>`).join("")}</tr><tr><td>${esc(u2.clim_min)}</td>${cl.map(r => `<td>${Math.round(r[2])}</td>`).join("")}</tr><tr><td>${esc(u2.clim_rain)}</td>${cl.map(r => `<td>${r[3]}</td>`).join("")}</tr></tbody></table></div>`; };
     h += `<h2>🌦️ ${esc(u2.gx_clim_t)}</h2>${tb("waingapu")}${tb("waikabubak")}<p class="note">${esc(tpl(u2.clim_note, { s: "Waingapu, Waikabubak" }))} <a href="/${l}/guide/sumba-weather-by-month/">→</a></p>`;
   }
+  if (pls.length >= 2 || g.rt) {
+    const pts = pls.map(p => [p.ll[0], p.ll[1], P(p, l).n, `/${l}/place/${p.s}/`, CAT_COLOR[p.c]]);
+    h += `<h2>🗺️ ${esc(u2.gx_map_t)}</h2><div class="gmap" id="gmap" data-p="${esc(JSON.stringify(pts))}" data-r="${esc(JSON.stringify(g.rt || null))}"></div><p class="note"><a href="/${l}/map/">${esc(u2.fullmap)} →</a></p><script>(function(){var el=document.getElementById('gmap');function go(){if(el.dataset.ok)return;el.dataset.ok=1;var c=document.createElement('link');c.rel='stylesheet';c.href='/lib/leaflet.css';document.head.appendChild(c);var s=document.createElement('script');s.src='/lib/leaflet.js';s.onload=draw;document.head.appendChild(s)}function draw(){var P=JSON.parse(el.dataset.p),R=JSON.parse(el.dataset.r||'null'),b=[];var m=L.map(el,{scrollWheelZoom:false});L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',{maxZoom:18,attribution:'Tiles &copy; Esri, HERE, Garmin, OpenStreetMap'}).addTo(m);if(R){L.polyline([[R[0][0],R[0][1]],[R[1][0],R[1][1]]],{color:'#e0703f',weight:3,dashArray:'6 8',opacity:.9}).addTo(m);R.forEach(function(e,i){b.push([e[0],e[1]]);L.marker([e[0],e[1]],{keyboard:false,icon:L.divIcon({className:'',html:'<span class="gm-e">'+(i?'🏁 ':'🚩 ')+e[2]+'</span>',iconSize:[0,0]})}).addTo(m)})}P.forEach(function(p){b.push([p[0],p[1]]);L.circleMarker([p[0],p[1]],{radius:8,color:'#fff',weight:2,fillColor:p[4],fillOpacity:1}).addTo(m).bindTooltip(p[2]).on('click',function(){location.href=p[3]})});if(b.length)m.fitBounds(b,{padding:[36,36],maxZoom:12})}if('IntersectionObserver' in window){new IntersectionObserver(function(e,o){if(e[0].isIntersecting){o.disconnect();go()}},{rootMargin:'400px'}).observe(el)}else go()})()</script>`;
+  }
   return h;
 }
 function guidePage(l, g) {
@@ -412,16 +469,16 @@ function guidePage(l, g) {
   const words = (t.b || "").replace(/<[^>]+>/g, " ").split(/\s+/).filter(Boolean).length + (t.faq || []).reduce((n, f) => n + (f[0] + " " + f[1]).split(/\s+/).length, 0);
   const mins = Math.max(2, Math.round(words / 220));
   const faq = (t.faq || []).filter(f => f && f[0] && f[1]);
-  const rel = D.guides.filter(x => x.s !== g.s && !x.info).map(x => [((x.s.split("-").filter(w => g.s.includes(w)).length) + (x.en && x.en.faq ? 1 : 0)), x]).sort((a, b) => b[0] - a[0]).slice(0, 6).map(x => x[1]);
+  const gtp = guideTopic(g.s), rel = D.guides.filter(x => x.s !== g.s && !x.info).map(x => [((x.s.split("-").filter(w => w.length > 3 && g.s.includes(w)).length) + (guideTopic(x.s) === gtp ? 2 : 0) + (x.en && x.en.faq ? 0.5 : 0)), x]).sort((a, b) => b[0] - a[0]).slice(0, 6).map(x => x[1]);
   const body = `<div class="w"><article class="pl"><div class="crumbs"><a href="/${l}/">Sumba Secrets</a> › <a href="/${l}/guides/">${esc(u.guides)}</a></div><h1>${esc(t.t)}</h1><p class="lead" style="font-size:19px">${esc(t.d)}</p>
 <p class="gmeta">✍️ ${esc(D.ui2[l].by_team)} (<a href="/${l}/guide/editorial-policy/">${esc(D.ui2[l].how_check)}</a>) · ⏱ ${mins} min · <time datetime="${MOD(`/guide/${g.s}/`)}">${esc(D.ui2[l].updated)}: ${MOD(`/guide/${g.s}/`)}</time> · <a href="/${l}/map/">🗺️ ${esc(u.map)}</a></p>
 ${isItin ? `<p class="noprint"><button class="btn" onclick="print()">🖨 ${esc(D.ui2[l].print)}</button> <a class="btn alt2" href="/${l}/map/#route-${g.s}">🗺️ ${esc(D.ui2[l].fullmap)}</a></p>` : ""}<figure class="fig"><img src="${h.b}" alt="${esc(t.t)}" width="1280" height="720" fetchpriority="high"><figcaption>${esc(u.photo)}: ${esc(cr[0])} · <a href="${cr[2]}" rel="nofollow">${esc(cr[1])}</a>, Wikimedia Commons</figcaption></figure>
-${toc.length > 3 ? `<nav class="toc" aria-label="Contents"><details open><summary>☰ ${toc.length}</summary><ol>${toc.map(x => `<li><a href="#s${x[0]}">${esc(x[1])}</a></li>`).join("")}</ol></details></nav>` : ""}
+${toc.length > 3 ? `<nav class="toc" aria-label="Contents"><details open><summary>☰ ${esc(D.ui2[l].toc_t)} <i class="tocn">${toc.length}</i></summary><ol>${toc.map(x => `<li><a href="#s${x[0]}">${esc(x[1])}</a></li>`).join("")}</ol></details></nav>` : ""}
 <div class="body">${b2}${guideExtra(l, g)}</div>
 ${faq.length ? `<section class="faq"><h2 class="sec h2s">FAQ</h2>${faq.map(f => `<details><summary>${esc(f[0])}</summary><p>${esc(f[1])}</p></details>`).join("")}</section>` : ""}
 <nav class="gnav noprint"><a href="/${l}/guide/${gp.s}/"><small>← ${esc(D.ui2[l].prev)}</small><b>${esc(gtxt(gp, l).t)}</b></a><a class="nx" href="/${l}/guide/${gn.s}/"><small>${esc(D.ui2[l].next)} →</small><b>${esc(gtxt(gn, l).t)}</b></a></nav>
 <p class="near-cta"><a class="btn" href="/${l}/map/">🗺️ ${esc(u.map)} →</a><a class="btn alt2" href="/${l}/secret-spots/">★ ${esc(u.secrets)}</a></p>
-<h2 class="sec" style="font-size:24px;margin-top:28px">${esc(u.guides)}</h2><div class="grid" style="grid-template-columns:1fr">${rel.map(x => guideCard(x, l)).join("")}</div><p><a class="more" href="/${l}/guides/">${esc(D.ui2[l].see_all)} →</a></p></article></div>`;
+<h2 class="sec" style="font-size:24px;margin-top:28px">${TP_ICON[gtp]} ${esc(tpName(l, gtp))}</h2><div class="gg">${rel.map(x => gcard(x, l)).join("")}</div><p><a class="more" href="/${l}/guides/#tp=${gtp}">${esc(D.ui2[l].see_all)} →</a></p></article></div>`;
   const ld = [{ "@context": "https://schema.org", "@type": isItin ? "TouristTrip" : "Article", ...(isItin ? { name: t.t } : { headline: t.t }), description: t.d, inLanguage: l, image: h.b, author: { "@type": "Organization", name: "Sumba Secrets", url: `${BASE}/${l}/about/` }, publisher: { "@type": "Organization", name: "Sumba Secrets", logo: { "@type": "ImageObject", url: `${BASE}/icon.svg` } }, datePublished: g.en && g.en.faq ? "2026-11-13" : "2026-11-11", dateModified: MOD(`/guide/${g.s}/`), wordCount: words, mainEntityOfPage: `${BASE}/${l}/guide/${g.s}/` }, crumbsLD([["Sumba Secrets", `/${l}/`], [u.guides, `/${l}/guides/`], [t.t, `/${l}/guide/${g.s}/`]])];
   { const sl = []; ((g.en && g.en.b) || "").replace(/\/place\/([a-z0-9-]+)\//g, (_, x) => { if (!sl.includes(x)) sl.push(x); return _; }); const pl = sl.map(x => D.places.find(p => p.s === x)).filter(Boolean); if (pl.length >= 3) ld.push(Object.assign(itemListLD(l, pl), { name: t.t })); }
   if (faq.length) ld.push({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faq.map(f => ({ "@type": "Question", name: f[0], acceptedAnswer: { "@type": "Answer", text: f[1] } })) });
@@ -547,7 +604,7 @@ function home(l) {
   const secrets = D.places.filter(p => p.sec);
   const dayIdx = Math.floor(Date.now() / 864e5) % secrets.length; const sod = secrets[dayIdx]; const sodT = P(sod, l); const sodP = photos(sod);
   const cats = Object.keys(D.cslug);
-  const itins = D.guides.filter(g => /^itinerary-/.test(g.s));
+  const itins = D.guides.filter(g => /^itinerary-/.test(g.s)).sort((a, b) => itinDays(a) - itinDays(b));
   const vids = D.videos._home || [];
   const body = `<section class="hx" aria-label="Sumba">
 <div class="hx-sl">${heroSl.map((c, i) => i ? `<img data-src="${gthumb(c, 960)}" data-src2="${gthumb(c, 1280)}" alt="">` : `<picture><source media="(min-width:900px)" srcset="${gthumb(c, 1280)}"><img src="${gthumb(c, 960)}" fetchpriority="high" alt="" class="on"></picture>`).join("")}</div>
@@ -574,7 +631,7 @@ ${nearSection(l)}
 
 <section class="rv"><div class="w"><h2 class="sec xl">${esc(D.ui2[l].itins)}</h2><p class="lead">${esc(u2.plan_t)}</p>
 <div class="steps">${[[1, u2.step1_t, u2.step1_d], [2, u2.step2_t, u2.step2_d], [3, u2.step3_t, u2.step3_d]].map(([n, t, d]) => `<div><span>${n}</span><b>${esc(t)}</b><p>${esc(d)}</p></div>`).join("")}</div>
-<div class="itc">${itins.map(g => { const t = gtxt(g, l), h = ghero(g), n = (g.s.match(/\d+/) || [""])[0]; return `<a class="it2" href="/${l}/guide/${g.s}/"><img src="${h.s}" alt="${esc(t.t)}" loading="lazy"><span class="dn">${n} ${esc(u2.days_n)}</span><span class="it2-t"><b>${esc(t.t)}</b><small>${esc(t.d)}</small></span></a>`; }).join("")}</div></div></section>
+<div class="itc">${itins.map(g => { const t = gtxt(g, l), h = ghero(g), n = itinDays(g); return `<a class="it2" href="/${l}/guide/${g.s}/"><img src="${h.s}" alt="${esc(t.t)}" loading="lazy"><span class="dn">${n === 1 ? esc(u2.day_1) : n + " " + esc(u2.days_n)}</span><span class="it2-t"><b>${esc(t.t)}</b><small>${esc(t.d)}</small></span></a>`; }).join("")}</div></div></section>
 
 ${vids.length ? `<section class="dark rv"><div class="w"><h2 class="sec xl">▶ ${esc(u2.watch_t)}</h2><p class="lead">${esc(u2.watch_d)}</p><div class="vids">${vids.map(v => ytFacade(v, l)).join("")}</div></div></section>` : ""}
 
@@ -587,6 +644,9 @@ ${vids.length ? `<section class="dark rv"><div class="w"><h2 class="sec xl">▶ 
 
 <section class="rv"><div class="w"><h2 class="sec xl">${esc(u2.live_t)}</h2><p class="lead">${esc(u.weather_d)} <a href="/${l}/weather/">${esc(u.forecast)} →</a></p>${wxBoxes(l, D.towns)}</div></section>
 
+<section class="hsec"><div class="w"><h2 class="sec">🚗 ${esc(u2.home_routes_t)}</h2><p class="sub">${esc(u2.home_routes_d)}</p><div class="rts">${["tambolaka-to-waingapu", "tambolaka-airport-to-weekuri-lagoon", "tambolaka-to-waikabubak", "waikabubak-to-waingapu", "waingapu-to-wairinding-hill", "tambolaka-to-mamboro", "waingapu-to-walakiri-beach", "waingapu-to-tanggedu-waterfall"].map(x => D.guides.find(g => g.s === x)).filter(Boolean).map(g => { const t = gtxt(g, l); const m = (g.en.d.match(/about (\d+) km by road, roughly ([^,]+) by car/) || []); return `<a class="rt" href="/${l}/guide/${g.s}/"><b>${esc(t.t.split(/[:：]/)[0])}</b>${m[1] ? `<small>~${m[1]} km · ${esc(m[2])}</small>` : ""}</a>`; }).join("")}</div>
+<h2 class="sec" style="margin-top:44px">${esc(u2.home_topics_t)}</h2><div class="tpt">${TOPICS.map(k => { const n = D.guides.filter(g => !g.info && guideTopic(g.s) === k).length; return n ? `<a href="/${l}/guides/#tp=${k}"><span>${TP_ICON[k]}</span><b>${esc(tpName(l, k))}</b><small>${esc(tpl(u2.n_guides, { n }))}</small></a>` : ""; }).join("")}</div>
+<h2 class="sec" style="margin-top:44px">✨ ${esc(u2.home_new_t)}</h2><p class="sub">${esc(u2.home_new_d)}</p><div class="gg">${["kodi-sumba-guide", "betel-nut-sumba", "sumba-savanna", "beach-hopping-sumba", "photo-spots-sumba", "first-time-sumba-mistakes"].map(x => D.guides.find(g => g.s === x)).filter(Boolean).map(g => gcard(g, l)).join("")}</div><p><a class="more" href="/${l}/guides/">${esc(D.ui2[l].see_all)} →</a></p></div></section>
 <section class="band rv"><div class="w two"><div><h2 class="sec">${esc(D.ui2[l].guides_more)}</h2><div class="grid" style="grid-template-columns:1fr">${D.guides.filter(g => !/^itinerary-/.test(g.s)).sort((a, b) => (b.en.faq ? 1 : 0) - (a.en.faq ? 1 : 0)).slice(0, 6).map(g => guideCard(g, l)).join("")}</div><p><a class="more" href="/${l}/guides/">${esc(u2.see_all)} →</a></p></div>
 <div><h2 class="sec" style="font-size:26px">${esc(u.latest)}</h2>${newsBox(l)}</div></div></section>`;
   const ld = [{ "@context": "https://schema.org", "@type": "WebSite", name: "Sumba Secrets", url: BASE + "/" + l + "/", inLanguage: l, publisher: { "@type": "Organization", name: "Eco Beach City" }, potentialAction: { "@type": "SearchAction", target: `${BASE}/${l}/search/?q={q}`, "query-input": "required name=q" } },
@@ -639,14 +699,14 @@ function placeTimeAndGuides(l, p) {
   let mf; try { mf = new Intl.DateTimeFormat(l, { month: "long", timeZone: "UTC" }); } catch (e) { mf = new Intl.DateTimeFormat("en", { month: "long", timeZone: "UTC" }); }
   const dry = cl.slice().sort((a, b) => a[3] - b[3]).slice(0, 4).map(r => r[0]).sort((a, b) => a - b);
   const mlink = m => `<a href="/${l}/month/${D.months.en[m - 1].m}/">${esc(mf.format(new Date(Date.UTC(2026, m - 1, 15))))}</a>`;
-  const gs = D.guides.filter(g => ((g.en && g.en.b) || "").includes(`/place/${p.s}/`)).slice(0, 6);
+  const gs = D.guides.filter(g => !g.info && (((g.en && g.en.b) || "").includes(`/place/${p.s}/`) || g.s.endsWith("-to-" + p.s))).map(g => [g.s.endsWith("-to-" + p.s) ? 0 : /^(beaches|villages|waterfalls|viewpoints)-|^day-trips/.test(g.s) ? 1 : g.kv ? 2 : 3, g]).sort((x, y) => x[0] - y[0]).slice(0, 8).map(x => x[1]);
   const u = D.ui[l];
   const sim = D.places.filter(x => x.s !== p.s && x.c === p.c).map(x => [km(p.ll, x.ll), x]).sort((a, b) => a[0] - b[0]).slice(0, 3);
   const nn = D.places.filter(x => x.s !== p.s).map(x => [km(p.ll, x.ll), x]).sort((a, b) => a[0] - b[0]).slice(0, 2);
   let day = "";
   if (nn.length === 2 && nn[1][0] < 40) { const [k1, h1] = driveH(l, nn[0][0]), [k2, h2] = driveH(l, km(nn[0][1].ll, nn[1][1].ll)); day = `<h2 class="sec h2s">🧭 ${esc(u2.day_t)}</h2><p>${tpl(esc(u2.day_b), { a: `<b>${esc(P(p, l).n)}</b>`, b: `<a href="/${l}/place/${nn[0][1].s}/">${esc(P(nn[0][1], l).n)}</a>`, c: `<a href="/${l}/place/${nn[1][1].s}/">${esc(P(nn[1][1], l).n)}</a>`, k1, h1: esc(h1), k2, h2: esc(h2) })}</p>`; }
   const combo = catRegionCombos().find(x => x[0] === p.c && x[1] === p.r);
-  const simH = sim.length ? `<h2 class="sec h2s">${CAT_ICON[p.c]} ${esc(u2.sim_t)}</h2><div class="grid">${sim.map(([d, x]) => card(x, l)).join("")}</div>${combo ? `<p><a class="btn alt2" href="${catPath(l, p.c)}${D.rslug[p.r]}/">${esc(tpl(u2.combo_link, { c: u.cat[p.c].toLowerCase(), r: u.reg[p.r], n: combo[2] }))} →</a></p>` : ""}` : "";
+  const simH = sim.length ? `<h2 class="sec h2s">${CAT_ICON[p.c]} ${esc(u2.sim_t)}</h2><div class="grid sim3">${sim.map(([d, x]) => card(x, l)).join("")}</div>${combo ? `<p><a class="btn alt2" href="${catPath(l, p.c)}${D.rslug[p.r]}/">${esc(tpl(u2.combo_link, { c: u.cat[p.c].toLowerCase(), r: u.reg[p.r], n: combo[2] }))} →</a></p>` : ""}` : "";
   return day + simH + `<h2 class="sec h2s">🗓️ ${esc(u2.best_time_t)}</h2><p>${tpl(esc(u2.best_time_b), { m: dry.map(mlink).join(", ") })}</p>` +
     (gs.length ? `<h2 class="sec h2s">📚 ${esc(u2.rel_guides)}</h2><ul class="chk">${gs.map(g => `<li><a href="/${l}/guide/${g.s}/">${esc(gtxt(g, l).t)}</a></li>`).join("")}</ul>` : "");
 }

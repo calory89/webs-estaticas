@@ -146,7 +146,7 @@ G("photo-spots-sumba", "wairinding-hill", f"The best photo spots in Sumba: {len(
   """<h2>Light and timing</h2><ul><li>Golden hour is short near the equator: be in place 45 minutes before sunset.</li><li>East Sumba's hills are gold in the dry season and green from January to April.</li><li>Clear skies are most common from May to October.</li></ul>
 <h2>Respect</h2><p>Ask before photographing people and villages; see """ + GD("photographing-people-sumba", "photographing people") + """. Drones: see """ + GD("drones-photography-sumba", "drones") + """.</p>""",
   [["Where are the best photo spots in Sumba?", "Wairinding Hill and the East Sumba savannah, Weekuri Lagoon, Mandorak, the dancing trees of Walakiri and the villages of Kodi."]]),
-G("kodi-sumba-guide", "ratenggaro", "Kodi, Southwest Sumba: villages, beaches and the Pasola",
+G("kodi-sumba-guide", "wainyapu", "Kodi, Southwest Sumba: villages, beaches and the Pasola",
   "A guide to the Kodi area at the western tip of Sumba: Ratenggaro, Wainyapu, Pero, Mandorak and Weekuri, how to get there and when to go.",
   f"""<p>Kodi is the far western corner of Sumba, in Southwest Sumba regency. It is famous for the tallest-roofed traditional villages on the island, dramatic coastline and one of the Pasola festivals.</p>
 <h2>Villages</h2><ul><li>{PL("ratenggaro", "Ratenggaro")}: towering roofs and stone tombs on the shore.</li><li>{PL("wainyapu", "Wainyapu")}: a large traditional village across the river mouth.</li><li>{PL("pero-beach", "Pero")}: a fishing village with wooden boats on the sand.</li></ul>

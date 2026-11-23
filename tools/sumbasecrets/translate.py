@@ -63,7 +63,7 @@ def _apply(o, m):
     if isinstance(o, dict): return {k: _apply(v, m) for k, v in o.items()}
     if isinstance(o, list): return [_apply(v, m) for v in o]
     return o
-FIX = {"ja": [("スマバ", "スンバ")], "zh": [("苏巴", "松巴")]}
+FIX = {"ja": [("スマバ", "スンバ")], "zh": [("苏巴", "松巴")], "ru": [("\u0421umba", "Сумба"), ("\u0441umba", "сумба")]}
 def tr_tree(obj, lang):
     if os.environ.get("TR_SKIP"):  # no translator available: keep only cached strings, leave the rest in English
         acc = []; _collect(obj, acc)
