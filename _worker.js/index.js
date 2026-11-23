@@ -277,6 +277,16 @@ const KB_LATE = "(function(w,d){var q=[],done=0,ev=['pointerdown','keydown','tou
 // kolaboro.com (seoT, batch 8): every public static page gets a BreadcrumbList (and a WebPage node when it has no JSON-LD at all).
 // Parent crumbs are only linked when that folder has a page; the check is cached per isolate.
 const KB_PARENT = new Map(), KB_LN = { es: 'Español', de: 'Deutsch', fr: 'Français', ru: 'Русский', nl: 'Nederlands', ar: 'العربية', zh: '中文' };
+// kpack (23 Nov 2026): the dated changelog pages /changelog/<YYYY-MM-DD>/ live in one file, data/changelog-days.json (date -> the page's HTML),
+// to stay under the Pages file limit. Served with the same bytes, status and headers a static page gets (rollback: restore the files, delete this and its call).
+let KB_CLDAYS = null;
+async function kbChangeDay(env, u, pre) {
+  const m = /^\/changelog\/(\d{4}-\d{2}-\d{2})(\/?)$/.exec(u.pathname); if (!m) return null;
+  if (!KB_CLDAYS) { const j = await env.ASSETS.fetch(new Request('https://kolaboro.com' + pre + '/data/changelog-days.json')); if (j.status !== 200) return null; KB_CLDAYS = await j.json(); }
+  const html = KB_CLDAYS[m[1]]; if (typeof html !== 'string') return null;
+  if (!m[2]) return new Response(null, { status: 308, headers: { location: '/changelog/' + m[1] + '/' + u.search } });
+  return new Response(new TextEncoder().encode(html), { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=0, must-revalidate', 'access-control-allow-origin': '*', 'referrer-policy': 'strict-origin-when-cross-origin', 'x-content-type-options': 'nosniff' } });
+}
 async function kbParent(env, p) { if (KB_PARENT.has(p)) return KB_PARENT.get(p); let ok = false; try { const r = await env.ASSETS.fetch(new Request('https://kolaboro.com/_s/kolaboro.com' + p + 'index.html')); ok = r.status === 200; } catch (e) {} KB_PARENT.set(p, ok); return ok; }
 async function kbLd(r, u, env) {
   if (r.status !== 200 || !/text\/html/.test(r.headers.get('content-type') || '') || u.pathname === '/' || /^\/(admin|portal|login|agents\/me|shared|saved|watchlist|reset|confirm-email|thanks)(\/|$)/.test(u.pathname)) return r;
@@ -1017,6 +1027,7 @@ export default {
       return new Response(null, { status: 301, headers: { location: '/' + u.pathname.replace(/\/+$/, '').replace(/^[\/\\]+/, '') + u.search } });
     }
     let r = await env.ASSETS.fetch(new Request(new URL(pre + u.pathname + u.search, u), req));
+    if (host === 'kolaboro.com' && r.status === 404 && u.pathname.startsWith('/changelog/2')) { try { const p = await kbChangeDay(env, u, pre); if (p) r = p; } catch (e) {} }   // kpack: dated changelog pages from one file
     // kb-sat-pack-v1: kolaboro.com satellite images missing as single files are served from their pack (see kbsat.js; rollback: delete this line)
     if (host === 'kolaboro.com' && u.pathname.startsWith('/k/sat/') && (r.status === 404 || u.searchParams.get('__pack') === '1')) { try { if (!ksat) ksat = await import('./kbsat.js'); const p = await ksat.serve(req, u, env, ctx); if (p) r = p; } catch (e) {} }
     if (host === 'realhunt.co' && r.status >= 300 && r.status < 400) {
