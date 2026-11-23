@@ -352,6 +352,38 @@
   ]
  },
  {
+  "a": "nad-al-sheba-gardens-phase-7-meraas",
+  "b": "nad-al-sheba-gardens-phase-11",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "nad-al-sheba-gardens-phase-7-meraas",
+  "b": "nad-al-sheba-gardens-phase-8-9",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "nad-al-sheba-gardens-phase-7-meraas",
+  "b": "nad-al-sheba-gardens-phase-10",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "forest-city-2-hz-development",
+  "b": "forest-city-tower",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "bay-residences-dubai-islands-nakheel",
   "b": "bay-villas-dubai-islands",
   "market": "Dubai",
@@ -3027,8 +3059,32 @@
   ]
  },
  {
+  "a": "one-b-tower",
+  "b": "one-residence",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "boulevard-park-2",
   "b": "boulevard-park-1",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "boulevard-park-2",
+  "b": "park-boulevard-by-meteora",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "boulevard-park-1",
+  "b": "park-boulevard-by-meteora",
   "market": "Dubai",
   "why": [
    "similar name"
@@ -3187,6 +3243,30 @@
   ]
  },
  {
+  "a": "prestige-one-residences",
+  "b": "golf-residences-by-prestige-one",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "prestige-one-residences",
+  "b": "prestige-gardens-by-prestige-one",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "aum-99-residences",
+  "b": "ag-aum-residence",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "the-autograph-s-series",
   "b": "the-autograph-i-series",
   "market": "Dubai",
@@ -3197,6 +3277,22 @@
  {
   "a": "arlington-park-by-majid",
   "b": "arlington-park-ii-by-majid",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "solaya-1-2-3",
+  "b": "solaya-4-6",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "solaya-1-2-3",
+  "b": "solaya-5-7",
   "market": "Dubai",
   "why": [
    "similar name"
@@ -3593,6 +3689,38 @@
   "a": "unique-homes-iii-adosados-alovera",
   "b": "unique-homes-iii-pareados-alovera",
   "market": "Spain",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "nad-al-sheba-gardens-phase-11",
+  "b": "nad-al-sheba-gardens-phase-8-9",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "nad-al-sheba-gardens-phase-11",
+  "b": "nad-al-sheba-gardens-phase-10",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "nad-al-sheba-gardens-phase-8-9",
+  "b": "nad-al-sheba-gardens-phase-10",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "solaya-4-6",
+  "b": "solaya-5-7",
+  "market": "Dubai",
   "why": [
    "similar name"
   ]
