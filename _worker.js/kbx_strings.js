@@ -48,6 +48,8 @@ async function one(env, name) {
   // r3u (batch 37): one more try per file; a failed read left the tables empty for that request, and pages then threw (seen as rare 500/503)
   let j = null, err = null;
   for (let i = 0; i < 2 && !j; i++) { try { const r = await env.ASSETS.fetch(new Request('https://kolaboro.com/_s/kolaboro.com/data/i18n/' + name + '.json')); if (!r.ok) throw new Error(name + ' ' + r.status); j = await r.json(); } catch (e) { err = e; } }
+  // r4u (batch 37): still about 1 request in 20 threw on 'live_wait' (kbx_named_i18n empty) after a deploy; last try: the public copy through the edge cache
+  if (!j) { try { const r = await fetch('https://kolaboro.com/data/i18n/' + name + '.json', { cf: { cacheTtl: 600 } }); if (r.ok) j = await r.json(); } catch (e) { err = e; } }
   if (!j) throw err || new Error(name);
   for (const [k, obj] of Object.entries(FILES[name])) { if (j[k] && typeof j[k] === 'object') Object.assign(obj, j[k]); else throw new Error(name + '.' + k + ' missing'); }
   done.add(name);

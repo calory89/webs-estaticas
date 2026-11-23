@@ -203,7 +203,7 @@ function mkSection(l, m) {
   const F = D.f, c = factCounts(rows), byK = rows.slice().sort((a, b) => cnt(b) - cnt(a) || a[2].localeCompare(b[2]));
   let b = '<section class="wrap n37" id="n37-facts"' + dir(l) + '>' + (l === 'en' ? '' : CSSL) + '<h2>' + esc(tf(l, 'mk_h', { m })) + '</h2><p>' + esc(tf(l, 'mk_p', { n: nf(rows.length, l), m })) + '</p>' +
     '<div class="n37-tw" tabindex="0"><table><thead><tr><th scope="col">' + esc(t(l, 'th_f')) + '</th><th scope="col">' + esc(t(l, 'th_hold')) + '</th><th scope="col">' + esc(t(l, 'th_here')) + '</th><th scope="col">' + esc(t(l, 'th_all')) + '</th></tr></thead><tbody>' +
-    F.map((f, i) => '<tr><th scope="row">' + fname(l, f) + '</th><td class="n">' + nf(c.h[i], l) + ' / ' + nf(rows.length, l) + '</td><td class="n">' + bdi(nf(share(c.h[i], rows.length), l) + '%') + '</td><td class="n">' + bdi(nf(share(D.known[i], D.n), l) + '%') + '</td></tr>').join('') + '</tbody></table></div>' +
+    F.map((f, i) => '<tr><th scope="row">' + fname(l, f).replace(/ title="[^"]*"/, '') + '</th><td class="n">' + nf(c.h[i], l) + ' / ' + nf(rows.length, l) + '</td><td class="n">' + bdi(nf(share(c.h[i], rows.length), l) + '%') + '</td><td class="n">' + bdi(nf(share(D.known[i], D.n), l) + '%') + '</td></tr>').join('') + '</tbody></table></div>' +
     '<p>' + esc(tf(l, 'mk_src', { k: nf(c.all, l), r: nf(c.k.r, l), d: nf(c.k.d, l), w: nf(c.k.w, l), o: nf(c.k.o, l) })) + '</p>' +
     '<h3>' + esc(t(l, 'mk_best')) + '</h3>' + recList(l, byK.slice(0, 5)) + '<h3>' + esc(t(l, 'mk_thin')) + '</h3>' + recList(l, byK.slice(-5).reverse()) +
     '<p><a href="' + pre(l) + '/data/gaps/">' + esc(t(l, 'gp_link')) + '</a> · <a href="/data/gaps.csv" download>' + esc(t(l, 'csv_l')) + '</a></p></section>';
@@ -324,8 +324,12 @@ export async function handle(req, u, env, ctx, shell) {
   if (p === '/data/gaps.csv') return gapsCsv();
   if ((m = p.match(/^\/m\/([^/]{2,120})\/slugs\.json$/))) return slugsJson(env, m[1]);
   try { return await route(env, shell, p); } catch (e) {
-    try { const S = await import('./kbx_strings.js'); if (!S.isReady()) await S.ready(env); } catch (e3) {}   // r3u: the page tables of kbx_named may have failed to load for this request
-    try { return await route(env, shell, p); } catch (e2) { return new Response('Temporarily unavailable, please retry.', { status: 503, headers: { 'retry-after': '5', 'cache-control': 'no-store', 'content-type': 'text/plain; charset=utf-8', 'x-kb-err': String(e2 && e2.message || e2).slice(0, 120).replace(/[^\x20-\x7e]/g, '') } }); }
+    let e2 = null, diag = '';   // r4u: up to two more tries, each after the string tables are (re)loaded
+    for (let k = 0; k < 2; k++) {
+      try { const S = await import('./kbx_strings.js'); if (!S.isReady()) await S.ready(env); } catch (e3) {}   // r3u: the page tables of kbx_named may have failed to load for this request
+      try { return await route(env, shell, p); } catch (e4) { e2 = e4; try { const S = await import('./kbx_strings.js'); diag = ' [ready ' + S.isReady() + ', loaded ' + S.stat.loaded + '/' + S.stat.files + ', errors ' + S.stat.errors + ']'; } catch (e5) {} await new Promise(z => setTimeout(z, 150)); }
+    }
+    { return new Response('Temporarily unavailable, please retry.', { status: 503, headers: { 'retry-after': '5', 'cache-control': 'no-store', 'content-type': 'text/plain; charset=utf-8', 'x-kb-err': (String(e2 && e2.message || e2).slice(0, 90) + diag).slice(0, 120).replace(/[^\x20-\x7e]/g, '') } }); }
   }
 }
 async function route(env, shell, p) {
