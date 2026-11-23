@@ -93,12 +93,73 @@ rg = {}
 for r in regs:
     rg.setdefault(r['market'], []).append([r['register'], r.get('url') or '', sorted({f for k in r.get('checks', []) for f in CHK.get(k, [])}, key=F.index), r.get('result') or '', (r.get('probed_at') or '')[:10]])
 CO = {'UAE': None, 'USA': 'United States', 'Indonesia': 'Indonesia'}
+# r9u (round 9): kp = the Malaysian housing developer register (KPKT TEDUH) per project, from the named.json claims whose source is
+# teduh.kpkt.gov.my (written when the register was read): {v, built, src, n, p: {slug: [entry, ...]}} with entry =
+#   {c: project code, pn: advertising and sales permit, vf/vt: permit valid from/to, st: register status as printed (Malay), pc: [construction %
+#   per component], un: units, pmin/pmax: register price range (RM), spa: first sale agreement, vp: vacant possession due per that agreement,
+#   ext: approved extension (months), vp2: new vacant possession date, per: delivery period (months), lic/lt: developer licence and its end, u: source, d: read}
+MON = {m: i + 1 for i, m in enumerate(['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'])}
+def iso(s):
+    s = (s or '').strip()
+    if re.fullmatch(r'\d{4}-\d\d-\d\d', s): return s
+    m = re.fullmatch(r'(\d{1,2}) ([A-Za-z]+) (\d{4})', s)
+    if m:
+        k = m.group(2).lower(); mo = MON.get(k) or next((v for n, v in MON.items() if n.startswith(k[:3])), None)
+        if mo: return '%s-%02d-%02d' % (m.group(3), mo, int(m.group(1)))
+    return ''
+def num(s):
+    try: return int(str(s).replace(',', ''))
+    except Exception: return None
+RD = re.compile(r'\(register read (\d{1,2} \w+ \d{4})\)')
+def kp_build(named):
+    out = {}
+    for x in named['projects']:
+        if COI.search(' '.join(str(x.get(k) or '') for k in ('n', 'dv', 'mk', 'ar', 's'))): continue
+        cl = [c for c in (x.get('cl') or []) if 'teduh.kpkt.gov.my' in (c[3] or '')]
+        if not cl: continue
+        ph = {}; order = []
+        def P(code):
+            if code not in ph: ph[code] = {'c': code}; order.append(code)
+            return ph[code]
+        rw = x.get('rw') or {}; d0 = rw.get('checked') or ''
+        for c in cl:
+            t = c[0]; m = re.match(r'Phase ([0-9]+-[0-9]+): (.*)$', t); code = m.group(1) if m else (rw.get('code') or ''); t = m.group(2) if m else t
+            m = re.search(r'advertising and sales permit (\S+) for .*?\(project code ([0-9-]+)\), valid (\S+) to (\S+)', t)
+            if m:
+                p = P(m.group(2) or code); p.update(pn=m.group(1), vf=iso(m.group(3)), vt=iso(m.group(4)), u=c[3]); r = RD.search(t); p['d'] = iso(r.group(1)) if r else d0; continue
+            m = re.search(r'also lists phase ([0-9-]+) of .* with advertising and sales permit (\S+), status "([^"]+)"', t)
+            if m: p = P(m.group(1)); p.setdefault('pn', m.group(2)); p.setdefault('st', m.group(3)); p.setdefault('u', c[3]); continue
+            p = P(code); p.setdefault('u', c[3])
+            m = re.search(r'KPKT developer licence (\S+) \(valid (\S+) to (\S+)\)', t)
+            if m: p['lic'] = m.group(1); p['lt'] = iso(m.group(3)); continue
+            m = re.search(r'overall status "([^"]+)"', t)
+            if m:
+                p['st'] = m.group(1); g = re.search(r'construction progress ([\d. /]+)% per component', t)
+                if g: p['pc'] = [float(v) for v in re.findall(r'[\d.]+', g.group(1))]
+                continue
+            m = re.match(r'([\d,]+) units on the register', t)
+            if m: p['un'] = num(m.group(1)); continue
+            m = re.search(r'Register price range for the units: RM ([\d,]+) to RM ([\d,]+)', t)
+            if m: p['pmin'] = num(m.group(1)); p['pmax'] = num(m.group(2)); continue
+            m = re.search(r'delivery period (\d+) months', t)
+            if m: p['per'] = int(m.group(1))
+            m = re.search(r'first sale agreement (\d{1,2} \w+ \d{4}), vacant possession due (\d{1,2} \w+ \d{4})', t)
+            if m: p['spa'] = iso(m.group(1)); p['vp'] = iso(m.group(2))
+            m = re.search(r'approved extension of (\d+) months, new vacant possession date (\d{1,2} \w+ \d{4})', t)
+            if m: p['ext'] = int(m.group(1)); p['vp2'] = iso(m.group(2))
+        for p in ph.values():
+            p.setdefault('d', d0)
+            for k in [k for k, v in p.items() if v in ('', None, [])]: del p[k]
+        if order and x.get('pn') and 'pn' not in ph[order[0]] and str(x['pn']).startswith(order[0] + '/'): ph[order[0]]['pn'] = x['pn']
+        L = [ph[k] for k in order if len(ph[k]) > 3]
+        if L: out[x['s']] = L
+    res = {'v': 'n37u-kp-1', 'built': named.get('updated') or '', 'src': 'https://teduh.kpkt.gov.my/', 'p': out}
+    res['n'] = len(out)
+    return res
+
 out = {'v': 'n37u-2', 'built': named.get('updated') or '', 'from': ['named.json', 'construction-progress.json', 'court-cases.json', 'register-checks.json'],
        'f': F, 'p': [r[:9] for r in rows], 'mk': mk, 'rg': rg, 'co': {r[0]: r[9] for r in rows},
-       'n': len(rows), 'known': [sum(r[7][i] == '1' for r in rows) for i in range(len(F))]}
+       'n': len(rows), 'known': [sum(r[7][i] == '1' for r in rows) for i in range(len(F))], 'kp': kp_build(named)}
 json.dump(out, open(os.path.join(D, 'n37u.json'), 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
 print('n37u.json', len(rows), 'projects,', len(mk), 'markets,', sum(len(v) for v in rg.values()), 'registers; held per field:', dict(zip(F, out['known'])))
-# r9u: the Malaysian register file (/data/n37u-kp.json) is rebuilt with every record build
-try:
-    sys.dont_write_bytecode = True; import importlib.util as _iu; _sp = _iu.spec_from_file_location('n37ukp', os.path.join(os.path.dirname(os.path.abspath(__file__)), 'n37u-kp-build.py')); _m = _iu.module_from_spec(_sp); _sp.loader.exec_module(_m); _r = _m.build(); print('n37u-kp.json', len(_r['p']), 'projects')
-except Exception as _e: print('n37u-kp.json not rebuilt:', _e)
+print('kp (Malaysian register):', out['kp']['n'], 'projects,', sum(len(v) for v in out['kp']['p'].values()), 'entries')

@@ -534,9 +534,9 @@ async function progBlock(l, env) {
 }
 // r9u (round 9): the Malaysian housing developer register (KPKT TEDUH) on project, record, market and developer pages and on
 // /[l/]registers/malaysia/; register share per developer across markets; /[l/]data/markets/ (markets compared on the 10 key facts and the
-// share confirmed by an official register). Data: /data/n37u-kp.json (open/n37u-kp-build.py, claims read from the register) and /data/n37u.json.
+// share confirmed by an official register). Data: /data/n37u.json (kp: entries read from the register, built by open/n37u-build.py).
 let KP = null;
-async function loadKP(env) { const k = await file(env, '/data/n37u-kp.json'); if (k && k.p) KP = k; return KP; }
+async function loadKP() { KP = D && D.kp && D.kp.p ? D.kp : null; return KP; }   // the kp key of /data/n37u.json
 const KST = { 'Lancar': 'ok', 'Belum Mula': 'ns', 'Lewat': 'late', 'Sakit': 'sick', 'Terbengkalai': 'ab', 'Siap Dengan CCC': 'done' };
 const kst = p => KST[p.st] || 'x';
 const dd = (a, b) => Math.round((Date.parse(a + 'T00:00:00Z') - Date.parse(b + 'T00:00:00Z')) / DAY);
@@ -611,7 +611,7 @@ async function kpPage(env, shell, l) {
   b += '<h2 id="past">' + esc(tf(l, 'kr_pasth', { n: nf(past.length, l) })) + '</h2><p>' + esc(t(l, 'kr_pastp')) + '</p>' + (past.length ? kpTw(l, kpTh(l, ['th_p', 'kr_due', 'kp_st', 'kp_pc']) + '<tbody>' + past.map(x => '<tr>' + kpP(l, x) + '<td class="n">' + esc(fd(kpInfo(x[1]).due, l)) + '</td><td>' + stB(l, x[1]) + '</td><td class="n">' + (x[1].pc ? bdi(pcf(x[1].pc, l)) : '') + '</td></tr>').join('') + '</tbody>') : '');
   const pe = all.filter(x => { const o = kpInfo(x[1]); return o.pexp != null && o.pexp >= 0 && o.pexp <= 180; }).sort((a, c) => (a[1].vt < c[1].vt ? -1 : 1));
   b += '<h2 id="permits">' + esc(tf(l, 'kr_peh', { n: nf(pe.length, l) })) + '</h2><p>' + esc(t(l, 'kr_pep')) + '</p>' + (pe.length ? kpTw(l, kpTh(l, ['th_p', 'kp_pn', 'kr_vt', 'kp_st']) + '<tbody>' + pe.map(x => '<tr>' + kpP(l, x) + '<td>' + bdi(x[1].pn) + '</td><td class="n">' + esc(fd(x[1].vt, l)) + '</td><td>' + stB(l, x[1]) + '</td></tr>').join('') + '</tbody>') : '');
-  b += '<p><a href="/data/n37u-kp.json" type="application/json">' + esc(t(l, 'kr_json')) + '</a> · <a href="/open/n37u-kp-build.py">' + esc(t(l, 'code')) + '</a> · <a href="' + P + '/data/markets/">' + esc(t(l, 'mc_h1')) + '</a> · <a href="' + P + '/m/kuala-lumpur/">Kuala Lumpur</a> · <a href="' + P + '/m/malaysia/">Malaysia</a></p>';
+  b += '<p><a href="/data/n37u.json" type="application/json">' + esc(t(l, 'kr_json')) + '</a> · <a href="/open/n37u-build.py">' + esc(t(l, 'code')) + '</a> · <a href="' + P + '/data/markets/">' + esc(t(l, 'mc_h1')) + '</a> · <a href="' + P + '/m/kuala-lumpur/">Kuala Lumpur</a> · <a href="' + P + '/m/malaysia/">Malaysia</a></p>';
   return page(shell, l, { path: '/registers/malaysia/', h1: t(l, 'kr_h1'), lead: t(l, 'kr_lead'), body: b, crumb: [[t(l, 'kr_regs'), '/registers/']] });
 }
 // register share per developer and per market: a fact counts as register-confirmed when its source kind is reg (official register or its published mirror)
