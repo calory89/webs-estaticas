@@ -5,6 +5,8 @@
   var F = document.getElementById('n34-se'), O = document.getElementById('n34-out'), TT = document.getElementById('n34-t');
   if (!F || !O || !TT) return;
   var T = JSON.parse(TT.textContent), L = T._l, P = T._p, PER = 25, X = null, busy = null, tm = 0;
+  var N7 = null, N7T = null; try { N7T = JSON.parse(O.getAttribute('data-n37') || 'null'); } catch (e) {}   // r5u (batch 37): completeness and latest change per result, /data/n37u-se.json
+  var n7d = function (d) { try { return new Intl.DateTimeFormat(T._loc, { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC', numberingSystem: 'latn' }).format(new Date(d + 'T12:00:00Z')); } catch (e) { return d; } };
   var nf = function (n) { try { return new Intl.NumberFormat(T._loc, { numberingSystem: 'latn' }).format(n); } catch (e) { return String(n); } };
   var fill = function (s, v) { return String(s).replace(/\{(\w+)\}/g, function (m, k) { return v[k] != null ? v[k] : m; }); };
   var esc = function (s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); };
@@ -14,7 +16,8 @@
     if (X) return Promise.resolve(X); if (busy) return busy;
     busy = fetch('/data/n34b-search.json').then(function (r) { return r.json(); }).then(function (d) {
       X = d.p.filter(function (r) { return !/eco\s*beach|\bequinox\b|\bsumba\b/i.test(r[1] + ' ' + r[3] + ' ' + r[5] + ' ' + r[7]); }).map(function (r) { return { s: r[0], n: r[1], id: r[2], dv: r[3], mk: r[5], co: r[6], ar: r[7], st: r[8], pm: r[9], hy: r[10], ov: r[11], h: norm([r[1], r[2], r[3], r[5], r[6], r[7]].join(' ')), hn: norm(r[1]) }; });
-      return X;
+      if (!N7T) return X;
+      return fetch('/data/n37u-se.json').then(function (r) { return r.json(); }).then(function (j) { N7 = j.p; return X; }).catch(function () { return X; });
     }).catch(function () { busy = null; return null; });
     return busy;
   }
@@ -38,7 +41,8 @@
   function item(r) {
     var place = [r.dv, r.ar && r.ar !== r.mk ? r.ar : '', r.mk, r.co].filter(Boolean).join(' · ');
     var meta = [ST[r.st] || '', r.hy ? fill(T.r_hy, { y: r.hy }) : T.hy_none, r.ov > 0 ? fill(T.r_ov, { m: nf(r.ov) }) : '', r.pm ? T.pm_1 : T.pm_0].filter(Boolean).join(' · ');
-    return '<li><a href="' + P + '/projects/' + esc(r.s) + '/">' + bd(esc(r.n)) + '</a> <span class="k-xs">' + bd(esc(place)) + '</span><br><span class="k-xs">' + esc(meta) + '</span></li>';
+    var z = N7 && N7[r.s], n7 = z ? ' <span class="k-xs n37-se">' + esc(fill(N7T.k, { k: nf(z[0]) }) + (z[1] ? ' · ' + fill(N7T.c, { f: N7T.f[z[1]] || z[1], d: n7d(z[2]) }) : '')) + '</span>' : '';
+    return '<li><a href="' + P + '/projects/' + esc(r.s) + '/">' + bd(esc(r.n)) + '</a>' + n7 + ' <span class="k-xs">' + bd(esc(place)) + '</span><br><span class="k-xs">' + esc(meta) + '</span></li>';
   }
   function url(f, pg) { var p = new URLSearchParams(); ['q', 'co', 'st', 'pm', 'hy'].forEach(function (k) { if (f[k]) p.set(k, f[k]); }); if (pg > 1) p.set('pg', pg); var s = p.toString(); return P + '/search/' + (s ? '?' + s : ''); }
   function run(pg) {

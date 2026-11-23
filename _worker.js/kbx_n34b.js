@@ -12,7 +12,7 @@ import * as N from './kbx_named.js';
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' };
-export const V = 'b4';
+export const V = 'b5';   // r5u: se.js shows completeness
 const COI = /eco\s*beach|\bequinox\b|\bsumba\b/i;
 let T = null;
 async function loadT(env) {
