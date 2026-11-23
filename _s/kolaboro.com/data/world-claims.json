@@ -1,6 +1,6 @@
 {
  "updated": "2026-11-23",
- "projects": 2826,
+ "projects": 2895,
  "markets": {
   "Abu Dhabi": {
    "updated": "2026-11-23",
@@ -4496,7 +4496,7 @@
    "updated": "2026-11-23",
    "market": "Canary Islands",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 8,
+   "projects": 11,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -4533,7 +4533,7 @@
     "max": null
    },
    "completion": {
-    "unknown": 8
+    "unknown": 11
    },
    "runs": [
     {
@@ -5938,7 +5938,7 @@
    "updated": "2026-11-23",
    "market": "Costa Blanca",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 19,
+   "projects": 20,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -5978,7 +5978,7 @@
     "2026": 2,
     "2027": 2,
     "2028": 3,
-    "unknown": 12
+    "unknown": 13
    },
    "runs": [
     {
@@ -6204,7 +6204,7 @@
    "updated": "2026-11-23",
    "market": "Costa del Sol",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 49,
+   "projects": 57,
    "title": {
     "leasehold": 0,
     "known": 1
@@ -6230,7 +6230,7 @@
    "permit_numbers_published": 0,
    "plans_published": 21,
    "price_usd": {
-    "known": 41,
+    "known": 49,
     "median": 459000.0,
     "min": 267000.0,
     "max": 1755000.0
@@ -6244,7 +6244,7 @@
     "2026": 12,
     "2027": 11,
     "2028": 2,
-    "unknown": 24
+    "unknown": 32
    },
    "runs": [
     {
@@ -21899,7 +21899,7 @@
    "updated": "2026-11-23",
    "market": "Spain",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 26,
+   "projects": 83,
    "title": {
     "leasehold": 0,
     "known": 1
@@ -21925,9 +21925,9 @@
    "permit_numbers_published": 0,
    "plans_published": 7,
    "price_usd": {
-    "known": 20,
-    "median": 412000.0,
-    "min": 218000.0,
+    "known": 68,
+    "median": 353000.0,
+    "min": 174000.0,
     "max": 972000.0
    },
    "yield": {
@@ -21936,9 +21936,9 @@
     "max": null
    },
    "completion": {
-    "2027": 5,
+    "2027": 7,
     "2028": 3,
-    "unknown": 18
+    "unknown": 73
    },
    "runs": [
     {

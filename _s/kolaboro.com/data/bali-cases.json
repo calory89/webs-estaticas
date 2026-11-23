@@ -17428,13 +17428,13 @@
    "vscore": 0,
    "claims": {
     "verified": 1,
-    "unverified": 2,
+    "unverified": 4,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 3,
+   "profile": 5,
    "fp": {
     "sha256": "f612c0f0f2e63649e18bf2676a33538ea2475368cb38907dc607cc5104aee0d3",
     "date": "2026-11-06"
@@ -17494,13 +17494,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 7,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 7,
+   "profile": 9,
    "fp": {
     "sha256": "5302b4701ba0ff20d43c5f3a4fd025738a4b448afbafb6c15d2b354ef7930bac",
     "date": "2026-11-20"
@@ -17560,13 +17560,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 3,
+   "profile": 5,
    "fp": {
     "sha256": "c95e174dfb0b9fdd85255e721d41b01d884008fdb36a4a897e72b429f1f9678c",
     "date": "2026-11-20"
@@ -17626,13 +17626,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 8
   },
   {
    "id": "PMI-010",
@@ -17687,13 +17687,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 6,
+    "unverified": 8,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 3
+   "profile": 5
   },
   {
    "id": "PMI-011",
@@ -17748,13 +17748,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 3,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 4
   },
   {
    "id": "PMI-012",
@@ -17809,13 +17809,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 2,
+    "unverified": 4,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 1
+   "profile": 3
   },
   {
    "id": "BKK-001",
@@ -27886,13 +27886,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 3,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 1
+   "profile": 3
   },
   {
    "id": "CAN-008",
@@ -27947,7 +27947,190 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 6,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "CAN-009",
+   "market": "Canary Islands",
+   "country": "Spain",
+   "region": "Canary Islands",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 66,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 3
+  },
+  {
+   "id": "CAN-010",
+   "market": "Canary Islands",
+   "country": "Spain",
+   "region": "Canary Islands",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 62,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 3
+  },
+  {
+   "id": "CAN-011",
+   "market": "Canary Islands",
+   "country": "Spain",
+   "region": "Canary Islands",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 189,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
     "contradicted": 0
    },
    "stage": "off-plan",
@@ -30242,13 +30425,13 @@
    "vscore": 1,
    "claims": {
     "verified": 4,
-    "unverified": 6,
+    "unverified": 7,
     "contradicted": 2
    },
    "stage": "under construction",
    "delay": 5.0,
    "overdue": null,
-   "profile": 16,
+   "profile": 17,
    "fp": {
     "sha256": "54d4d31a62fc9d4a2602a379d6a600c1df6e58fedd7eff034ce46bb038819be3",
     "date": "2026-11-15"
@@ -30631,13 +30814,13 @@
    "vscore": 0,
    "claims": {
     "verified": 1,
-    "unverified": 0,
+    "unverified": 1,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": null
+   "profile": 1
   },
   {
    "id": "CBL-008",
@@ -30692,13 +30875,13 @@
    "vscore": 0,
    "claims": {
     "verified": 1,
-    "unverified": 1,
+    "unverified": 2,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 3
   },
   {
    "id": "CBL-009",
@@ -30753,13 +30936,13 @@
    "vscore": 0,
    "claims": {
     "verified": 1,
-    "unverified": 0,
+    "unverified": 2,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": null,
+   "profile": 3,
    "fp": {
     "sha256": "26d31719b6b34925666ff7d48c081b589423df4aadb21a9990d2c10a1cd879c4",
     "date": "2026-11-06"
@@ -30818,13 +31001,13 @@
    "vscore": 0,
    "claims": {
     "verified": 1,
-    "unverified": 1,
+    "unverified": 2,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 3
   },
   {
    "id": "CBL-011",
@@ -30879,13 +31062,13 @@
    "vscore": 0,
    "claims": {
     "verified": 1,
-    "unverified": 1,
+    "unverified": 2,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 3
   },
   {
    "id": "CBL-012",
@@ -30940,13 +31123,13 @@
    "vscore": 0,
    "claims": {
     "verified": 1,
-    "unverified": 1,
+    "unverified": 2,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 3
   },
   {
    "id": "CBL-013",
@@ -31001,13 +31184,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 1,
+   "profile": 4,
    "fp": {
     "sha256": "113690475df00d8b9a6567235f142581b5a8a79bef95a94fa2de045ce7441651",
     "date": "2026-11-15"
@@ -31067,13 +31250,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 8
   },
   {
    "id": "CBL-015",
@@ -31129,13 +31312,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 5
+   "profile": 7
   },
   {
    "id": "CBL-016",
@@ -31190,13 +31373,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 2,
+    "unverified": 4,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 1
+   "profile": 3
   },
   {
    "id": "CBL-017",
@@ -31252,13 +31435,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 4
+   "profile": 6
   },
   {
    "id": "CBL-018",
@@ -31313,13 +31496,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 7,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 8
   },
   {
    "id": "CBL-019",
@@ -31374,13 +31557,74 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 7,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 8
+  },
+  {
+   "id": "CBL-020",
+   "market": "Costa Blanca",
+   "country": "Spain",
+   "region": "Costa Blanca",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 46,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 2
   },
   {
    "id": "CRI-001",
@@ -32683,13 +32927,13 @@
    "vscore": 1,
    "claims": {
     "verified": 4,
-    "unverified": 7,
+    "unverified": 8,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 13,
+   "profile": 15,
    "fp": {
     "sha256": "c7177e21517f185e796453231ae67e3f3141358f04110c88d980f4c564fa5d7c",
     "date": "2026-11-05"
@@ -32811,13 +33055,13 @@
    "vscore": 2,
    "claims": {
     "verified": 4,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": null,
    "delay": null,
    "overdue": null,
-   "profile": 12
+   "profile": 13
   },
   {
    "id": "CDS-012",
@@ -32871,13 +33115,13 @@
    "vscore": 2,
    "claims": {
     "verified": 4,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 1
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 11,
+   "profile": 12,
    "fp": {
     "sha256": "ec52ee16a751e318400a07390d3303f0ccaf7c2bde9e35437688c9249d0440c2",
     "date": "2026-11-05"
@@ -33447,13 +33691,13 @@
    "vscore": 0,
    "claims": {
     "verified": 1,
-    "unverified": 0,
+    "unverified": 2,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": null,
+   "profile": 3,
    "fp": {
     "sha256": "b9d25e89965f7b51ff2582abfe7421ce496aaa737362c12ac54af946fc2a6fd5",
     "date": "2026-11-06"
@@ -33466,7 +33710,7 @@
    "region": "Costa del Sol",
    "docs": false,
    "plans": false,
-   "band": "Price not stated",
+   "band": "$400k and up",
    "done": null,
    "title": null,
    "lease": null,
@@ -33512,13 +33756,13 @@
    "vscore": 0,
    "claims": {
     "verified": 1,
-    "unverified": 1,
+    "unverified": 4,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 2,
+   "profile": 6,
    "fp": {
     "sha256": "47b2fc9b7b72bb4f2f20d6610c827547eeaefe05ca6076a88cd6ff0909ec1e90",
     "date": "2026-11-07"
@@ -33536,7 +33780,7 @@
    "title": null,
    "lease": null,
    "yield": null,
-   "units": null,
+   "units": 45,
    "checks": {
     "permit": 0,
     "escrow": null,
@@ -33577,13 +33821,13 @@
    "vscore": 0,
    "claims": {
     "verified": 1,
-    "unverified": 1,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 1,
+   "profile": 6,
    "fp": {
     "sha256": "56269de43905b9ad1b3e9b2d8bf59c9782e6fb095b993aa6607fef4795e08b05",
     "date": "2026-11-06"
@@ -33601,7 +33845,7 @@
    "title": null,
    "lease": null,
    "yield": null,
-   "units": null,
+   "units": 59,
    "checks": {
     "permit": 0,
     "escrow": null,
@@ -33642,13 +33886,13 @@
    "vscore": 0,
    "claims": {
     "verified": 1,
-    "unverified": 1,
+    "unverified": 4,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 1,
+   "profile": 5,
    "fp": {
     "sha256": "f743759fe0de747f4226969c84f88bca08b9c1715fbe17cfc103dfd11b6e2dbf",
     "date": "2026-11-06"
@@ -33708,13 +33952,13 @@
    "vscore": 0,
    "claims": {
     "verified": 1,
-    "unverified": 2,
+    "unverified": 4,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 3,
+   "profile": 5,
    "fp": {
     "sha256": "7f976f5e6afe8d105a532472f5a5c064b6fd0924f55dcbd02262658e5b55c1e5",
     "date": "2026-11-07"
@@ -33774,13 +34018,13 @@
    "vscore": 0,
    "claims": {
     "verified": 1,
-    "unverified": 2,
+    "unverified": 4,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 3,
+   "profile": 5,
    "fp": {
     "sha256": "30e302d12b5a09dde5256de9c566b0f2a6fb9e2aa756c2ef7307fe16c0b3a4da",
     "date": "2026-11-07"
@@ -33839,13 +34083,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 6,
+    "unverified": 8,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 6,
+   "profile": 8,
    "fp": {
     "sha256": "57c22ed2fccfeacec15f1c7e1b8c8fcca90927bdd5566a9d021ac32b47d6e468",
     "date": "2026-11-15"
@@ -33904,13 +34148,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 2,
+    "unverified": 3,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 1,
+   "profile": 2,
    "fp": {
     "sha256": "be9a60a826f40f222074dda1ca1a39ceb20e8707e1b28c414da9fdf11d4af411",
     "date": "2026-11-20"
@@ -33970,13 +34214,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 4
+   "profile": 5
   },
   {
    "id": "CDS-030",
@@ -34032,13 +34276,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 4
+   "profile": 5
   },
   {
    "id": "CDS-031",
@@ -34093,13 +34337,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 3
   },
   {
    "id": "CDS-032",
@@ -34155,13 +34399,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 7,
+    "unverified": 10,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 10
   },
   {
    "id": "CDS-033",
@@ -34217,13 +34461,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 7,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 8
   },
   {
    "id": "CDS-034",
@@ -34279,13 +34523,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 7,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 8
   },
   {
    "id": "CDS-035",
@@ -34341,13 +34585,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 7,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 8
   },
   {
    "id": "CDS-036",
@@ -34402,13 +34646,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 6,
+    "unverified": 8,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 5
+   "profile": 7
   },
   {
    "id": "CDS-037",
@@ -34422,7 +34666,7 @@
    "title": null,
    "lease": null,
    "yield": null,
-   "units": null,
+   "units": 135,
    "checks": {
     "permit": 0,
     "escrow": null,
@@ -34464,13 +34708,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 8,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 8
   },
   {
    "id": "CDS-038",
@@ -34526,13 +34770,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 3,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 3
+   "profile": 5
   },
   {
    "id": "CDS-039",
@@ -34588,13 +34832,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 3,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": 2,
-   "profile": 3
+   "profile": 5
   },
   {
    "id": "CDS-040",
@@ -34649,13 +34893,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 3,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 4
   },
   {
    "id": "CDS-041",
@@ -34711,13 +34955,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 3,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": 2,
-   "profile": 3
+   "profile": 5
   },
   {
    "id": "CDS-042",
@@ -34773,13 +35017,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 3,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 3
+   "profile": 5
   },
   {
    "id": "CDS-043",
@@ -34835,13 +35079,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 5
+   "profile": 7
   },
   {
    "id": "CDS-044",
@@ -34897,13 +35141,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 3,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": 8,
-   "profile": 3
+   "profile": 5
   },
   {
    "id": "CDS-045",
@@ -34959,13 +35203,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 3,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": 8,
-   "profile": 3
+   "profile": 5
   },
   {
    "id": "CDS-046",
@@ -35020,13 +35264,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 3,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 4
   },
   {
    "id": "CDS-047",
@@ -35081,13 +35325,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 3,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 4
   },
   {
    "id": "CDS-048",
@@ -35143,13 +35387,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 6,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 4
+   "profile": 6
   },
   {
    "id": "CDS-049",
@@ -35204,13 +35448,501 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 7,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 4
+   "profile": 6
+  },
+  {
+   "id": "CDS-050",
+   "market": "Costa del Sol",
+   "country": "Spain",
+   "region": "Costa del Sol",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 57,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 6
+  },
+  {
+   "id": "CDS-051",
+   "market": "Costa del Sol",
+   "country": "Spain",
+   "region": "Costa del Sol",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 72,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 5
+  },
+  {
+   "id": "CDS-052",
+   "market": "Costa del Sol",
+   "country": "Spain",
+   "region": "Costa del Sol",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 72,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 5
+  },
+  {
+   "id": "CDS-053",
+   "market": "Costa del Sol",
+   "country": "Spain",
+   "region": "Costa del Sol",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 106,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 5
+  },
+  {
+   "id": "CDS-054",
+   "market": "Costa del Sol",
+   "country": "Spain",
+   "region": "Costa del Sol",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 51,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 8
+  },
+  {
+   "id": "CDS-055",
+   "market": "Costa del Sol",
+   "country": "Spain",
+   "region": "Costa del Sol",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 40,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 5
+  },
+  {
+   "id": "CDS-056",
+   "market": "Costa del Sol",
+   "country": "Spain",
+   "region": "Costa del Sol",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 106,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 5
+  },
+  {
+   "id": "CDS-057",
+   "market": "Costa del Sol",
+   "country": "Spain",
+   "region": "Costa del Sol",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": null,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 3
   },
   {
    "id": "HRV-001",
@@ -172077,13 +172809,13 @@
    "vscore": 2,
    "claims": {
     "verified": 3,
-    "unverified": 8,
+    "unverified": 9,
     "contradicted": 1
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 14,
+   "profile": 16,
    "fp": {
     "sha256": "bd74165b314985629f7e731eff9fade784af33bd519002ddcca366b66d4cc65d",
     "date": "2026-11-05"
@@ -172350,13 +173082,13 @@
    "vscore": 1,
    "claims": {
     "verified": 3,
-    "unverified": 6,
+    "unverified": 7,
     "contradicted": 0
    },
    "stage": null,
    "delay": null,
    "overdue": null,
-   "profile": 16
+   "profile": 17
   },
   {
    "id": "ESP-006",
@@ -172413,13 +173145,13 @@
    "vscore": 2,
    "claims": {
     "verified": 4,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": null,
    "delay": null,
    "overdue": null,
-   "profile": 15,
+   "profile": 16,
    "fp": {
     "sha256": "313cf489a9c7ef145384307202ef1a7e1c97cfb930269c75a09d26c393ea25fd",
     "date": "2026-11-05"
@@ -172478,13 +173210,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 8,
+    "unverified": 9,
     "contradicted": 0
    },
    "stage": null,
    "delay": null,
    "overdue": null,
-   "profile": 16,
+   "profile": 17,
    "sat": {
     "status": "visible change",
     "changed_pct": 8.6,
@@ -172548,13 +173280,13 @@
    "vscore": 2,
    "claims": {
     "verified": 3,
-    "unverified": 5,
+    "unverified": 6,
     "contradicted": 1
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 13,
+   "profile": 14,
    "fp": {
     "sha256": "08f0bceb7e03b7ea909034045dbbb316fecd7470be472c9cd9cfa7f54bd527a9",
     "date": "2026-11-05"
@@ -172802,13 +173534,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 7,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 4
+   "profile": 6
   },
   {
    "id": "ESP-013",
@@ -172863,13 +173595,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 7,
+    "unverified": 9,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7
+   "profile": 9
   },
   {
    "id": "ESP-014",
@@ -172925,13 +173657,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 7,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 4
+   "profile": 8
   },
   {
    "id": "ESP-015",
@@ -172986,13 +173718,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 6,
+    "unverified": 8,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 4
+   "profile": 6
   },
   {
    "id": "ESP-016",
@@ -173048,13 +173780,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 4
+   "profile": 5
   },
   {
    "id": "ESP-017",
@@ -173109,13 +173841,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 4,
+    "unverified": 5,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 5
+   "profile": 6
   },
   {
    "id": "ESP-018",
@@ -173170,13 +173902,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 6,
+    "unverified": 8,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 5
+   "profile": 7
   },
   {
    "id": "ESP-019",
@@ -173190,7 +173922,7 @@
    "title": null,
    "lease": null,
    "yield": null,
-   "units": null,
+   "units": 126,
    "checks": {
     "permit": 0,
     "escrow": null,
@@ -173231,13 +173963,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 6,
+    "unverified": 9,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 3
+   "profile": 5
   },
   {
    "id": "ESP-020",
@@ -173251,7 +173983,7 @@
    "title": null,
    "lease": null,
    "yield": null,
-   "units": null,
+   "units": 211,
    "checks": {
     "permit": 0,
     "escrow": null,
@@ -173292,13 +174024,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 6,
+    "unverified": 9,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 5
+   "profile": 7
   },
   {
    "id": "ESP-021",
@@ -173353,13 +174085,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 6,
+    "unverified": 8,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 3
+   "profile": 5
   },
   {
    "id": "ESP-022",
@@ -173414,13 +174146,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 6,
+    "unverified": 8,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 3
+   "profile": 5
   },
   {
    "id": "ESP-023",
@@ -173475,13 +174207,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 6,
+    "unverified": 8,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 4
+   "profile": 6
   },
   {
    "id": "ESP-024",
@@ -173495,7 +174227,7 @@
    "title": null,
    "lease": null,
    "yield": null,
-   "units": null,
+   "units": 74,
    "checks": {
     "permit": 0,
     "escrow": null,
@@ -173536,13 +174268,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 6,
+    "unverified": 9,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 5
+   "profile": 7
   },
   {
    "id": "ESP-025",
@@ -173597,13 +174329,13 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 7,
     "contradicted": 0
    },
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 8
   },
   {
    "id": "ESP-026",
@@ -173658,13 +174390,3492 @@
    "vscore": 0,
    "claims": {
     "verified": 0,
-    "unverified": 5,
+    "unverified": 7,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 6
+  },
+  {
+   "id": "ESP-027",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 70,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 8
+  },
+  {
+   "id": "ESP-028",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 70,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 5
+  },
+  {
+   "id": "ESP-029",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 62,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "ESP-030",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 64,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 6
+  },
+  {
+   "id": "ESP-031",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 98,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 5
+  },
+  {
+   "id": "ESP-032",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 94,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 5
+  },
+  {
+   "id": "ESP-033",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 64,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 6
+  },
+  {
+   "id": "ESP-034",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 96,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 6
+  },
+  {
+   "id": "ESP-035",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 71,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 8
+  },
+  {
+   "id": "ESP-036",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 89,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "ESP-037",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 54,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 8
+  },
+  {
+   "id": "ESP-038",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 132,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 6
+  },
+  {
+   "id": "ESP-039",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 104,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 8
+  },
+  {
+   "id": "ESP-040",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 97,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "ESP-041",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 54,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 5
+  },
+  {
+   "id": "ESP-042",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 142,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 5
+  },
+  {
+   "id": "ESP-043",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 40,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "ESP-044",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 74,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 8
+  },
+  {
+   "id": "ESP-045",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 83,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "ESP-046",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 46,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "ESP-047",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 46,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "ESP-048",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 134,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 5
+  },
+  {
+   "id": "ESP-049",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 97,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
     "contradicted": 0
    },
    "stage": "under construction",
    "delay": null,
    "overdue": null,
    "profile": 4
+  },
+  {
+   "id": "ESP-050",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 32,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 5
+  },
+  {
+   "id": "ESP-051",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 74,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "ESP-052",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 50,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 8
+  },
+  {
+   "id": "ESP-053",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 46,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "ESP-054",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 59,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 5
+  },
+  {
+   "id": "ESP-055",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 100,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 6
+  },
+  {
+   "id": "ESP-056",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 38,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 6
+  },
+  {
+   "id": "ESP-057",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 118,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 6
+  },
+  {
+   "id": "ESP-058",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 97,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "ESP-059",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 131,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 8
+  },
+  {
+   "id": "ESP-060",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 115,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 5
+  },
+  {
+   "id": "ESP-061",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 115,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 5
+  },
+  {
+   "id": "ESP-062",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 57,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 5
+  },
+  {
+   "id": "ESP-063",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 110,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 6
+  },
+  {
+   "id": "ESP-064",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 88,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 7
+  },
+  {
+   "id": "ESP-065",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": null,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 3
+  },
+  {
+   "id": "ESP-066",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": null,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 3
+  },
+  {
+   "id": "ESP-067",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$100k to $200k",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 131,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 3
+  },
+  {
+   "id": "ESP-068",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 195,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 3
+  },
+  {
+   "id": "ESP-069",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": null,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 3
+  },
+  {
+   "id": "ESP-070",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": null,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 2
+  },
+  {
+   "id": "ESP-071",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 61,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "ESP-072",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": 2027,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 76,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2027: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 4
+  },
+  {
+   "id": "ESP-073",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 126,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 3
+  },
+  {
+   "id": "ESP-074",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": null,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 3
+  },
+  {
+   "id": "ESP-075",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": null,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 2
+  },
+  {
+   "id": "ESP-076",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": null,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 2
+  },
+  {
+   "id": "ESP-077",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 83,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 3
+  },
+  {
+   "id": "ESP-078",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 46,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 3
+  },
+  {
+   "id": "ESP-079",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$200k to $400k",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": null,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 3
+  },
+  {
+   "id": "ESP-080",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "$400k and up",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": null,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 3
+  },
+  {
+   "id": "ESP-081",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": null,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 2
+  },
+  {
+   "id": "ESP-082",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": 129,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 2
+  },
+  {
+   "id": "ESP-083",
+   "market": "Spain",
+   "country": "Spain",
+   "region": "Spain",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": null,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 1,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "23 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 2
   },
   {
    "id": "LKA-001",
@@ -187399,29 +191610,29 @@
  ],
  "db": {
   "updated": "2026-11-23",
-  "projects": 2826,
+  "projects": 2895,
   "markets": 191,
   "countries": 94,
-  "sources": 8896,
-  "data_points": 71182,
+  "sources": 8981,
+  "data_points": 72608,
   "claims": {
    "verified": 8142,
-   "unverified": 10200,
+   "unverified": 10478,
    "contradicted": 1370
   },
-  "claims_total": 19712,
-  "deep_profiles": 2826,
+  "claims_total": 19990,
+  "deep_profiles": 2895,
   "checks_by_level": {
    "registry": 2635,
    "independent": 483,
    "developer": 2020,
    "contradicted": 103,
-   "none": 11715
+   "none": 12129
   },
-  "checks_rated": 16956,
+  "checks_rated": 17370,
   "stages": {
-   "off-plan": 1060,
-   "under construction": 1703,
+   "off-plan": 1094,
+   "under construction": 1738,
    "completed": 17
   },
   "all_six_public": 65,

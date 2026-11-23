@@ -3,10 +3,11 @@ Dubai,UAE,766,748,753,8,6682,90,745,20125.0,617
 Bali,Indonesia,136,1,122,25,1069,168,24,3494.2,122
 Riviera Maya,Mexico,122,0,109,0,328,38,7,3793.7,116
 Istanbul,Turkey,120,6,118,0,730,22,3,3554.1,106
+Spain,Spain,83,2,11,0,335,6,2,2875.8,50
 Phuket,Thailand,76,17,71,7,477,23,6,110000.0,67
 Malaysia,Malaysia,63,29,62,3,457,26,9,11358.2,45
 Miami,USA,59,31,46,0,298,22,5,15831.7,21
-Costa del Sol,Spain,49,2,27,7,327,11,12,4248.5,21
+Costa del Sol,Spain,57,2,27,7,406,11,12,4005.3,29
 Sydney,Australia,49,5,11,0,181,8,0,11588.2,7
 Kuala Lumpur,Malaysia,46,12,46,1,251,2,7,10950.0,35
 Bangkok,Thailand,45,5,45,7,234,4,3,8643.8,38
@@ -17,14 +18,13 @@ Ras Al Khaimah,UAE,31,0,30,2,225,38,7,31518.5,16
 France,France,28,0,23,0,168,0,0,,1
 Cambodia,Cambodia,27,0,27,1,175,21,0,1600.0,25
 Melbourne,Australia,27,2,3,0,84,4,0,10233.9,7
-Spain,Spain,26,2,11,0,184,6,2,4837.4,14
 Lombok,Indonesia,24,0,17,0,206,27,6,1821.4,15
 Brazil,Brazil,22,4,11,0,116,5,0,56787.5,4
 Egypt,Egypt,21,1,16,0,162,17,4,147157.5,16
 Sri Lanka,Sri Lanka,20,0,7,0,140,11,3,543560.6,6
+Costa Blanca,Spain,20,1,9,2,126,8,3,4530.1,8
 Greece,Greece,19,1,17,0,136,21,3,7238.1,6
 Gold Coast,Australia,19,1,13,0,149,9,0,15300.9,8
-Costa Blanca,Spain,19,1,9,2,102,8,3,4530.1,8
 Pattaya,Thailand,18,10,17,0,146,15,5,141778.1,12
 Cyprus,Cyprus,18,0,9,0,110,13,5,5702.8,8
 Oman,Oman,18,0,15,0,134,23,1,1311.8,13
@@ -42,13 +42,14 @@ French Alps,France,14,0,10,0,87,0,0,,1
 Ho Chi Minh City,Vietnam,13,2,12,0,79,4,2,93750000.0,9
 Japan,Japan,12,0,11,0,52,2,0,,1
 Mauritius,Mauritius,12,1,6,0,101,10,2,9419.9,6
-Balearics,Spain,12,0,7,0,76,8,1,7327.9,5
+Balearics,Spain,12,0,7,0,90,8,1,7327.9,5
 Costa Rica,Costa Rica,11,0,9,2,98,13,0,3823.3,8
 Montenegro,Montenegro,11,1,9,0,86,15,1,5888.9,9
 Saudi Arabia,Saudi Arabia,11,1,8,0,78,6,0,23793.1,4
 Nairobi,Kenya,11,0,8,0,56,4,0,145289.6,4
 London,United Kingdom,11,5,9,1,110,16,2,13923.0,4
 Sharjah,UAE,11,0,8,0,85,14,3,10160.0,6
+Canary Islands,Spain,11,0,2,0,74,5,1,5282.2,3
 Brisbane,Australia,11,0,5,0,58,2,0,,2
 Poland,Poland,11,0,9,0,46,0,0,,0
 Punta Cana,Dominican Republic,10,0,6,0,67,10,1,2841.1,5
@@ -64,7 +65,6 @@ Vancouver,Canada,9,0,5,0,29,1,0,,2
 Panama City,Panama,8,0,8,0,71,12,0,4018.8,7
 Croatia,Croatia,8,3,7,1,73,12,0,7870.1,5
 Marrakech,Morocco,8,0,6,0,50,4,1,14318.2,6
-Canary Islands,Spain,8,0,2,0,64,5,1,5282.2,3
 Accra,Ghana,8,0,4,0,33,4,0,3636.1,4
 Hua Hin,Thailand,7,1,6,1,58,7,1,63467.9,6
 Bahrain,Bahrain,7,0,7,0,61,8,1,1394.0,6
