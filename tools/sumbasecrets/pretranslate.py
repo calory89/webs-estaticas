@@ -3,6 +3,7 @@ import re, concurrent.futures as cf, translate
 from guides3 import GUIDES3
 from guides4 import GUIDES4
 from guides5 import GUIDES5
+from guides6 import GUIDES6
 from ui3 import EXTRA_UI3
 import native, guides_add
 from months import MONTHS
@@ -10,7 +11,7 @@ from build_langs import LANGS2
 def parts(h): return [x for x in re.split(r'(?=<h2>)', h) if x]
 def strings():
     acc = []
-    for g in GUIDES3 + GUIDES4 + GUIDES5:
+    for g in GUIDES3 + GUIDES4 + GUIDES5 + GUIDES6:
         acc += [g["t"], g["d"]] + parts(g["b"])
         for q, a in g.get("faq", []): acc += [q, a]
     for x in MONTHS: acc += [x['t'], x['b']]

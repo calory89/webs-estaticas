@@ -78,8 +78,8 @@ for g in GUIDES_ALL:  # extra sections for the shorter existing guides
         a = add if l == "en" else ("".join(tr_tree(_parts(add), l)) if add else "")
         g[l] = dict(g[l], b=(g[l].get("b") or "") + a)
         if fq: g[l]["faq"] = (g[l].get("faq") or []) + (fq if l == "en" else tr_tree(fq, l))
-import guides5
-for g in guides4.GUIDES4 + guides5.GUIDES5:
+import guides5, guides6
+for g in guides4.GUIDES4 + guides5.GUIDES5 + guides6.GUIDES6:
     e = {"t": g["t"], "d": g["d"], "b": g["b"]}
     if g.get("faq"): e["faq"] = g["faq"]
     ng = {"s": g["s"], "img": g["img"], "en": e}
