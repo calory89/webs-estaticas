@@ -1674,7 +1674,7 @@ export async function ssr(base, u, kind, env) {
     .on('meta[property="og:image"],meta[name="twitter:image"]', { element(e) { if (mcrumb) e.setAttribute('content', 'https://kolaboro.com/og/type/markets.png'); } })   // n29t (item 43)   // n29t: the /m/ index page's own WebPage node does not describe a market page
     .on('p.crumb', { element(e) { if (mcrumb) e.setInnerContent(mcrumb, { html: true }); } })
     .on('main', { element(e) { e.prepend('<section class="sec ssr-only" id="ssr"><div class="wrap">' + body + '</div></section>', { html: true }); } })
-    .on('body', { element(e) { if (kind !== 'p') { const mine = {}; for (const c of cs) if (SL[c.id] && (slugM(c.market) === slugM(key) || c.market.toLowerCase() === key.toLowerCase())) mine[c.id] = SL[c.id]; e.append('<script type="application/json" id="kb-slugs">' + JSON.stringify(mine).replace(/</g, '\\u003c') + '</script>', { html: true }); } } })
+    .on('body', { element(e) { if (kind !== 'p') { e.append('<script type="application/json" id="kb-slugs" data-src="/m/' + slugM(key) + '/slugs.json">{}</script>', { html: true }); /* r4u: the map loads with the data (kbx_n37u.js slugsJson), not inside the page */ } } })
     .transform(base);
   const h = new Headers(res.headers); h.set('cache-control', 'private, max-age=600');   // private: the page carries a per-response CSP nonce, no shared cache may reuse it
   return new Response(res.body, { status: 200, headers: h });

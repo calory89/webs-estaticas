@@ -70,6 +70,8 @@
   }
   // n25e: named projects link to their page directly (/p/<id>/ is a 301); the map comes from the server (#kb-slugs), Sumba ids are not in it
   var SLUGS = {}; try { SLUGS = JSON.parse((document.getElementById('kb-slugs') || {}).textContent || '{}') || {}; } catch (e) {}
+  // r4u: the map is fetched next to the project data (data-src), so it no longer weighs on every market page
+  var SLE = document.getElementById('kb-slugs'), SLP = (SLE && SLE.getAttribute('data-src') && window.fetch) ? fetch(SLE.getAttribute('data-src')).then(function(r){ return r.ok ? r.json() : {}; }).then(function(o){ for (var k in o) SLUGS[k] = o[k]; }).catch(function(){}) : null;
   function byScore(a, b){ return (b.score || 0) / (b.max || 6) - (a.score || 0) / (a.max || 6) || (b.vscore || 0) - (a.vscore || 0) || (a.id < b.id ? -1 : 1); }
   function row(c, showMarket){
     var bd = [];
@@ -188,7 +190,7 @@
   }
 
   var url = (K.dataUrl ? K.dataUrl() : '/data/bali-cases.json?t=' + Math.floor(Date.now() / 6e5));
-  fetch(url).then(function(r){ if (!r.ok) throw new Error('data ' + r.status); return r.json(); }).then(function(d){
+  fetch(url).then(function(r){ if (!r.ok) throw new Error('data ' + r.status); return r.json(); }).then(function(d){ return SLP ? SLP.then(function(){ return d; }) : d; }).then(function(d){
     var C = d.cases || [], p = params(), mk = {}, co = {};
     C.forEach(function(c){ if (c.market) mk[norm(c.market)] = c.market; if (c.country) co[norm(c.country)] = c.country; });
     var R = K.compute ? K.compute(d) : { rows: [] };

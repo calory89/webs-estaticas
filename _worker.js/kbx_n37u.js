@@ -6,6 +6,9 @@
 //   inject()                           entry links on project pages, /data/, /data/dictionary/, /registers/; "Shipped 23 Nov 2026" on /engineering/ and /yc/
 //   r2u (round 2): age of each fact with a re-check flag, field names linked to the data dictionary, facts-held distribution on
 //   /data/gaps/, GET /data/gaps.csv (coverage by market, CC BY 4.0), GET /projects/<slug>/record.json (one record, machine-readable)
+//   r4u (round 4): fact timeline per record (#timeline, /data/n37u-tl.json from /open/n37u-tl-build.py over the daily copies of
+//   named.json), the latest change on project pages, /<lang>/developers/, /<lang>/engineering/, /<lang>/yc/ (were 404),
+//   GET /m/<market>/slugs.json (the id-to-page map that used to ride inside every market page), row counts on /<lang>/data/
 // Sumba, Eco Beach City and Equinox are left out by the build.
 import * as N from './kbx_named.js';
 
@@ -19,11 +22,12 @@ async function file(env, p) {
   if (!v) { try { const r = await fetch(ORIGIN + p, { cf: { cacheTtl: 600 } }); if (r.ok) v = await r.json(); } catch (e) { v = null; } }
   MEMO[p] = { t: Date.now(), v }; return v;
 }
-let T = null, D = null, IX = null;
+let T = null, D = null, IX = null, TL = null;
 async function load(env) {
   if (!T) T = await file(env, '/data/n37u-i18n.json');
   const d = await file(env, '/data/n37u.json');
   if (d && d !== D) { D = d; MS = null; IX = { bySlug: new Map(d.p.map(r => [r[1], r])), byDev: new Map(), byAr: new Map(), byMk: new Map(), src: 0, regs: 0 }; for (const r of d.p) { (IX.byMk.get(r[3]) || IX.byMk.set(r[3], []).get(r[3])).push(r); for (const c of r[8]) if (c && c[1]) IX.src++; if (r[5]) (IX.byDev.get(r[5]) || IX.byDev.set(r[5], []).get(r[5])).push(r); const a = r[3] + '|' + r[4]; (IX.byAr.get(a) || IX.byAr.set(a, []).get(a)).push(r); } }
+  if (!TL) TL = await file(env, '/data/n37u-tl.json');
   if (D && !IX.regs) { const g = new Set(); for (const k in D.rg) for (const x of D.rg[k]) g.add(x[0] + '|' + x[1]); IX.regs = g.size; }
   return !!(T && D);
 }
@@ -43,7 +47,7 @@ const recU = (l, s) => pre(l) + '/projects/' + s + '/record/';
 const cnt = r => r[7].split('1').length - 1;
 const LP = '(?:(es|de|fr|nl|ru|zh|ar)\\/)?';
 const RX_REC = new RegExp('^\\/' + LP + 'projects\\/([a-z0-9-]{1,90})\\/record(\\/?)$'), RX_GAP = new RegExp('^\\/' + LP + 'data\\/gaps(\\/?)$'), RX_JS = /^\/projects\/([a-z0-9-]{1,90})\/record\.json$/;
-export const PATHS = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:projects\/[a-z0-9-]{1,90}\/record|data\/gaps)\/?$|^\/(?:es|de|fr|nl|ru|zh|ar)\/data\/?$|^\/projects\/[a-z0-9-]{1,90}\/record\.json$|^\/data\/gaps\.csv$/;
+export const PATHS = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:projects\/[a-z0-9-]{1,90}\/record|data\/gaps)\/?$|^\/(?:es|de|fr|nl|ru|zh|ar)\/(?:data|developers|engineering|yc)\/?$|^\/m\/[^/]{2,120}\/slugs\.json$|^\/projects\/[a-z0-9-]{1,90}\/record\.json$|^\/data\/gaps\.csv$/;
 export const INJ = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:(?:projects\/[a-z0-9-]{1,90}|engineering|yc|data|data\/dictionary|registers|m\/[^/.]{2,60}|developers\/[a-z0-9-]{2,90})\/)?$/;
 
 const CSS = '<style id="n37u-css">.n37{max-width:1100px}.n37 h2{margin:28px 0 8px;font-size:1.3rem}.n37 p,.n37 li{line-height:1.6}.n37 .k-xs{font-size:.9rem;color:var(--k-muted,#56636F)}' +
@@ -79,6 +83,47 @@ const regsFor = r => (D.rg[r[3]] || D.rg[(D.co[r[0]] === 'USA' ? 'United States'
 const relTable = (l, rows) => '<div class="n37-tw" tabindex="0"><table><thead><tr><th scope="col">' + esc(t(l, 'th_p')) + '</th><th scope="col">' + esc(t(l, 'th_k')) + '</th></tr></thead><tbody>' +
   rows.map(r => '<tr><th scope="row"><a href="' + recU(l, r[1]) + '">' + bdi(r[2]) + '</a></th><td class="n">' + nf(cnt(r), l) + ' / 10</td></tr>').join('') + '</tbody></table></div>';
 
+// r4u: fact timeline. TL.p[slug][field] = [[day index, value or null], ...] from the daily copies; today's value comes from D
+const TLF = ['ho', 'pn', 'un', 'pr', 'co', 'es', 'cp', 'reg'];
+function tlEvents(r) {
+  const h = TL && TL.p && TL.p[r[1]], days = (TL && TL.days) || [], out = [];
+  if (!h) return null;
+  for (const f of TLF) {
+    const c = r[8][D.f.indexOf(f)], cur = c ? String(c[0]).trim() : null, tt = h[f] || [];
+    tt.forEach(([di, v], j) => out.push({ f, d: days[di][0], v, p: j ? tt[j - 1][1] : null, e: v == null ? 'tl_e3' : j === 0 ? (di === 0 ? 'tl_e0' : 'tl_e1') : 'tl_e2' }));
+    const last = tt.length ? tt[tt.length - 1][1] : null;
+    if (cur !== last) out.push({ f, d: D.built, v: cur, p: last, e: cur == null ? 'tl_e3' : last == null ? 'tl_e1' : 'tl_e2', now: 1 });
+  }
+  return out;
+}
+const qtr = v => { let m = /^(\d{4})-Q([1-4])$/.exec(v || ''); if (m) return [+m[1], +m[2]]; m = /^(\d{4})-(\d{2})/.exec(v || ''); if (m) return [+m[1], Math.floor((+m[2] - 1) / 3) + 1]; m = /^(\d{4})$/.exec(v || ''); return m ? [+m[1], 0] : null; };
+function realChange(x) {   // a value that moved, not the same fact restated more precisely (2027-Q2 > 20 Apr 2027, a bank name taken out of a sentence)
+  if (x.e !== 'tl_e2' || x.p == null || x.v == null) return false;
+  const a = x.p.toLowerCase(), b = x.v.toLowerCase(); if (a.includes(b) || b.includes(a)) return false;
+  if (x.f === 'ho') { const qa = qtr(x.p), qb = qtr(x.v); if (qa && qb && qa[0] === qb[0] && (!qa[1] || !qb[1] || qa[1] === qb[1])) return false; }
+  return true;
+}
+const tv = (v, l, n) => { if (v == null) return ''; const s = /^\d{4}-\d{2}-\d{2}$/.test(v) ? fd(v, l) : v; return n && s.length > n ? s.slice(0, n - 1).replace(/\s+\S*$/, '') + '…' : s; };
+function tlSection(l, r) {
+  if (!TL || !TL.days || !TL.days.length) return '';
+  const days = TL.days, a = fd(days[0][0], l), z = fd(days[days.length - 1][0], l), ev = tlEvents(r);
+  let b = '<h2 id="timeline">' + esc(t(l, 'tl_h')) + '</h2><p>' + esc(tf(l, 'tl_p', { a, b: z })) + '</p>';
+  if (!ev) b += '<p>' + esc(tf(l, 'tl_none', { b: z })) + '</p>';
+  else {
+    b += '<div class="n37-tw" tabindex="0"><table><thead><tr><th scope="col">' + esc(t(l, 'th_f')) + '</th><th scope="col">' + esc(t(l, 'tl_d')) + '</th><th scope="col">' + esc(t(l, 'tl_th')) + '</th><th scope="col">' + esc(t(l, 'th_v')) + '</th></tr></thead><tbody>' +
+      ev.map(x => '<tr><th scope="row">' + fname(l, x.f) + '</th><td class="n">' + esc(fd(x.d, l)) + '</td><td>' + esc(t(l, x.e)) + '</td><td class="n37-v">' + (x.v == null ? '' : bdi(tv(x.v, l))) + '</td></tr>').join('') + '</tbody></table></div>';
+    const ch = [...new Set(ev.filter(x => x.e === 'tl_e2' || x.e === 'tl_e3').map(x => x.f))].map(f => t(l, 'f_' + f));
+    b += '<p>' + esc(ch.length ? tf(l, ch.length === 1 ? 'tl_c1' : 'tl_cn', { n: nf(ch.length, l), f: ch.join(', ') }) : t(l, 'tl_c0')) + '</p>';
+  }
+  return b + '<p class="k-xs">' + esc(t(l, 'tl_note')) + ' <a href="/data/snapshots/index.json">' + esc(t(l, 'tl_snap')) + '</a> · <a href="/data/n37u-tl.json">' + esc(t(l, 'dl')) + '</a> · <a href="/open/n37u-tl-build.py">' + esc(t(l, 'code')) + '</a></p>';
+}
+const TLP = ['ho', 'pr', 'cp', 'un', 'es', 'pn', 'co', 'reg'];
+function latestChange(r) {
+  const ev = tlEvents(r); if (!ev) return null;
+  const rc = ev.filter(realChange).sort((x, y) => (y.d > x.d ? 1 : y.d < x.d ? -1 : 0) || TLP.indexOf(x.f) - TLP.indexOf(y.f));
+  return rc.length ? { x: rc[0], n: rc.length } : null;
+}
+
 async function recPage(env, shell, l, r) {
   const F = D.f, P = pre(l), k = cnt(r), m = D.mk[r[3]];
   let b = '<p><a href="' + P + '/projects/' + r[1] + '/">' + esc(t(l, 'back')) + '</a> · <b>' + esc(tf(l, 'held', { k: nf(k, l) })) + '</b> · <a href="/projects/' + r[1] + '/record.json" type="application/json">' + esc(t(l, 'js_l')) + '</a></p>';
@@ -89,6 +134,7 @@ async function recPage(env, shell, l, r) {
       return '<tr><th scope="row">' + fname(l, f) + '</th><td class="n37-v">' + bdi(v) + '</td><td>' + badge(l, c[2]) + ' ' + src + '</td><td class="n">' + esc(fd(c[3], l)) + '</td><td class="n n37-age">' + (ag == null ? '' : nf(ag, l) + (ag > OLD ? '<span class="n37-b old">' + esc(t(l, 'age_old')) + '</span>' : '')) + '</td></tr>'; }).join('') + '</tbody></table></div>';
   const aged = F.map((f, i) => [f, r[8][i]]).filter(x => x[1] && x[0] !== 'ct' && ageOf(x[1][3]) != null).sort((a, c) => ageOf(c[1][3]) - ageOf(a[1][3]));
   if (aged.length) b += '<p id="age">' + esc(ageOf(aged[0][1][3]) > OLD ? tf(l, 'age_sum', { f: t(l, 'f_' + aged[0][0]), d: fd(aged[0][1][3], l) }) : t(l, 'age_ok')) + ' <span class="k-xs">' + esc(t(l, 'age_note')) + '</span></p>';
+  b += tlSection(l, r);
   const miss = F.map((f, i) => [f, i]).filter(x => !r[8][x[1]]), RG = regsFor(r);
   b += '<h2 id="unknown">' + esc(tf(l, 'g_h', { k: nf(miss.length, l) })) + '</h2>';
   if (!miss.length) b += '<p>' + esc(t(l, 'g_all')) + '</p>';
@@ -187,17 +233,46 @@ const DS = [['ds1', 'bali-cases'], ['ds2', 'kolaboro-parquet'], ['ds3', 'kolabor
 const sz = (b, l) => b >= 1048576 ? nf(Math.round(b / 104857.6) / 10, l) + ' MB' : nf(Math.max(1, Math.round(b / 1024)), l) + ' KB';
 async function dataHub(env, shell, l) {
   const C = await file(env, '/data/catalog.json'), by = new Map(((C && C.datasets) || []).map(x => [x.id, x]));
-  let b = '<h2>' + esc(t(l, 'dh_main')) + '</h2><div class="n37-tw" tabindex="0"><table><thead><tr><th scope="col">' + esc(t(l, 'dh_main')) + '</th><th scope="col">' + esc(t(l, 'dh_fmt')) + '</th><th scope="col">' + esc(t(l, 'dh_size')) + '</th><th scope="col">' + esc(t(l, 'dh_upd')) + '</th><th scope="col">SHA-256</th></tr></thead><tbody>';
+  let b = '<h2>' + esc(t(l, 'dh_main')) + '</h2><div class="n37-tw" tabindex="0"><table><thead><tr><th scope="col">' + esc(t(l, 'dh_main')) + '</th><th scope="col">' + esc(t(l, 'dh_fmt')) + '</th><th scope="col">' + esc(t(l, 'dh_rows')) + '</th><th scope="col">' + esc(t(l, 'dh_size')) + '</th><th scope="col">' + esc(t(l, 'dh_upd')) + '</th><th scope="col">SHA-256</th></tr></thead><tbody>';
   for (const [k, id, url, fmt] of DS) {
     const x = id ? by.get(id) : null; if (id && !x) continue;
     const href = x ? x.url.replace(ORIGIN, '') : url, f = x ? String(x.format || '').toUpperCase() : fmt;
-    b += '<tr><th scope="row"><a href="' + esc(href) + '" download>' + esc(t(l, k + '_t')) + '</a><br><span class="k-xs">' + esc(t(l, k + '_d')) + '</span></th><td>' + bdi(f) + '</td><td class="n">' + (x && x.bytes ? sz(x.bytes, l) : '') + '</td><td class="n">' +
+    b += '<tr><th scope="row"><a href="' + esc(href) + '" download>' + esc(t(l, k + '_t')) + '</a><br><span class="k-xs">' + esc(t(l, k + '_d')) + '</span></th><td>' + bdi(f) + '</td><td class="n">' + (x && typeof x.rows === 'number' ? nf(x.rows, l) : url === '/data/n37u.json' ? nf(D.n, l) : '') + '</td><td class="n">' + (x && x.bytes ? sz(x.bytes, l) : '') + '</td><td class="n">' +
       (x ? fd(String(x.last_updated || (x.freshness || {}).stamp || ''), l) : esc(t(l, 'dh_live'))) + '</td><td class="n">' + (x && x.sha256 ? '<code title="' + esc(x.sha256) + '">' + esc(x.sha256.slice(0, 12)) + '…</code>' : '') + '</td></tr>';
   }
   b += '</tbody></table></div>';
-  if (C) b += '<p class="k-xs">' + esc(tf(l, 'dh_asof', { d: fd(String(C.generated_at || ''), l) })) + '</p><p><a href="/data/">' + esc(tf(l, 'dh_cat', { n: nf((C.summary || {}).datasets || by.size, l), f: nf((C.summary || {}).files || by.size, l) })) + '</a></p>';
+  if (C) b += '<p class="k-xs">' + esc(tf(l, 'dh_asof', { d: fd(String((C.refreshed && C.refreshed.at) || C.generated_at || ''), l) })) + '</p><p><a href="/data/">' + esc(tf(l, 'dh_cat', { n: nf((C.summary || {}).datasets || by.size, l), f: nf((C.summary || {}).files || by.size, l) })) + '</a></p>';
   b += '<h2>' + esc(t(l, 'dh_q')) + '</h2><ul class="n37-g"><li><a href="' + pre(l) + '/data/dictionary/">' + esc(t(l, 'dh_q1')) + '</a></li><li><a href="' + pre(l) + '/data/gaps/">' + esc(t(l, 'gp_link')) + '</a></li><li><a href="' + pre(l) + '/registers/">' + esc(t(l, 'dh_q2')) + '</a></li><li><a href="/docs/api/">' + esc(t(l, 'dh_q3')) + '</a></li></ul><p>' + esc(t(l, 'dh_lic')) + '</p>';
   return page(shell, l, { path: '/data/', h1: t(l, 'dh_h1'), lead: t(l, 'dh_lead'), body: b });
+}
+// r4u: /<lang>/engineering/, /<lang>/yc/, /<lang>/developers/ (English pages are static; these were 404 in 7 languages)
+const EG = [['eg_status', '/engineering/status/'], ['eg_rel', '/engineering/reliability/'], ['eg_pw', '/engineering/page-weight/'], ['eg_speed', '/engineering/speed/'], ['eg_seo', '/engineering/seo/'], ['eg_vt', '/engineering/visual-tests/'], ['eg_tl', '/engineering/transparency-log/'], ['eg_sp', '/engineering/signed-photos/']];
+async function hubPage(env, shell, l, k) {
+  let b = '', o;
+  if (k === 'engineering') {
+    b = shipped(l).replace('<section class="wrap"', '<section') + '<h2>' + esc(t(l, 'eg_pages')) + '</h2><ul class="n37-g">' + EG.map(x => '<li><a href="' + x[1] + '" hreflang="en">' + esc(t(l, x[0])) + '</a></li>').join('') + '</ul><p><a href="/engineering/" hreflang="en">' + esc(t(l, 'eg_full')) + '</a></p>';
+    o = { h1: t(l, 'eg_h1'), lead: t(l, 'eg_lead') };
+  } else if (k === 'yc') {
+    const s = await stats(env) || {};
+    b = '<h2>' + esc(t(l, 'yc_pb_h')) + '</h2><p>' + esc(t(l, 'yc_pb')) + '</p><h2>' + esc(t(l, 'yc_do_h')) + '</h2><p>' + esc(t(l, 'yc_do')) + '</p>';
+    if (s.projects) b += '<h2>' + esc(t(l, 'yc_dt_h')) + '</h2><p>' + esc(tf(l, 'yc_dt', { p: nf(s.projects, l), m: nf(s.markets, l), c: nf(s.countries, l), s: nf(s.sources, l), cl: nf(s.claims_total || 0, l), x: nf((s.claims || {}).contradicted || 0, l), g: nf(IX.regs, l), f: nf(IX.src, l) })) + '</p>';
+    b += '<p>' + esc(t(l, 'yc_tr')) + '</p>' + shipped(l).replace('<section class="wrap"', '<section') + '<p><a href="/yc/" hreflang="en">' + esc(t(l, 'yc_full')) + '</a> · <a href="' + pre(l) + '/engineering/">' + esc(t(l, 'eg_h1')) + '</a> · <a href="' + pre(l) + '/data/">' + esc(t(l, 'dh_h1')) + '</a></p>';
+    o = { h1: t(l, 'yc_h1'), lead: t(l, 'yc_lead') };
+  } else {
+    b = '<p><a href="/developers/#devform" hreflang="en"><b>' + esc(t(l, 'dp_req')) + '</b></a></p><p>' + esc(t(l, 'dp_rep')) + ' <a href="/developers/reply/" hreflang="en">/developers/reply/</a></p>' +
+      '<h2>' + esc(t(l, 'dp_how')) + '</h2><ol class="n37-g">' + ['dp_s1', 'dp_s2', 'dp_s3', 'dp_s4', 'dp_s5'].map(x => '<li>' + esc(t(l, x)) + '</li>').join('') + '</ol>' +
+      '<h2>' + esc(t(l, 'dp_cost_h')) + '</h2><p>' + esc(t(l, 'dp_cost')) + '</p><h2>' + esc(t(l, 'dp_bd_h')) + '</h2><p>' + esc(t(l, 'dp_bd')) + '</p>' +
+      '<p>' + esc(tf(l, 'dp_n', { d: nf(IX.byDev.size, l) })) + ' <a href="' + pre(l) + '/developers/emaar-properties/#n37-dev">' + esc(t(l, 's13_t')) + '</a></p><p><a href="/developers/#devform" hreflang="en">' + esc(t(l, 'dp_req')) + '</a></p>';
+    o = { h1: t(l, 'dp_h1'), lead: t(l, 'dp_lead') };
+  }
+  return page(shell, l, Object.assign(o, { path: '/' + k + '/', body: b }));
+}
+// r4u: the id-to-page map for one market (m.js reads it instead of a 24 KB block inside every market page). Same source as
+// before: kbx_named data(), which leaves Sumba out.
+async function slugsJson(env, ms) {
+  const ix = await N.data(env), o = {};
+  for (const [id, x] of ix.byId) if (x.s && x.mk && encodeURIComponent(String(x.mk).toLowerCase().replace(/\s+/g, '-')) === ms) o[id] = x.s;   // the market key of kolaboro.js (slugM there)
+  return new Response(JSON.stringify(o), { status: 200, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'public, max-age=600', 'access-control-allow-origin': '*' } });
 }
 export async function errPage(u) {
   const m = /^\/(es|de|fr|nl|ru|zh|ar)\//.exec(u.pathname), l = m ? m[1] : 'en';
@@ -208,7 +283,7 @@ export async function errPage(u) {
   return new Response(html, { status: 503, headers: { 'content-type': 'text/html; charset=utf-8', 'retry-after': '5', 'cache-control': 'no-store', 'x-kb-fallback': '1' } });
 }
 
-const ITEMS = [['s1', '/projects/emaar-golf-vale/record/#fields'], ['s2', '/projects/emaar-golf-vale/record/#unknown'], ['s3', '/projects/emaar-golf-vale/record/#market'], ['s4', '/projects/emaar-golf-vale/record/#developer'], ['s5', '/data/gaps/'], ['s6', '/projects/emaar-golf-vale/record/#age'], ['s7', '/data/dictionary/'], ['s8', '/data/gaps/#dist'], ['s9', '/data/gaps.csv'], ['s10', '/projects/emaar-golf-vale/record.json'], ['s11', '/data/'], ['s12', '/m/dubai/#n37-facts'], ['s13', '/developers/emaar-properties/#n37-dev'], ['s14', '/#n37-live'], ['s15', '/engineering/status/']];
+const ITEMS = [['s1', '/projects/emaar-golf-vale/record/#fields'], ['s2', '/projects/emaar-golf-vale/record/#unknown'], ['s3', '/projects/emaar-golf-vale/record/#market'], ['s4', '/projects/emaar-golf-vale/record/#developer'], ['s5', '/data/gaps/'], ['s6', '/projects/emaar-golf-vale/record/#age'], ['s7', '/data/dictionary/'], ['s8', '/data/gaps/#dist'], ['s9', '/data/gaps.csv'], ['s10', '/projects/emaar-golf-vale/record.json'], ['s11', '/data/'], ['s12', '/m/dubai/#n37-facts'], ['s13', '/developers/emaar-properties/#n37-dev'], ['s14', '/#n37-live'], ['s15', '/engineering/status/'], ['s16', '/projects/meriva-collection-ellington/record/#timeline'], ['s17', '/projects/meriva-collection-ellington/'], ['s18', '/developers/'], ['s19', '/m/dubai/'], ['s20', '/data/catalog.json']];
 const shipped = l => '<section class="wrap" id="shipped-2026-11-23"' + dir(l) + '><h2>' + esc(t(l, 'sh_h')) + '</h2><p>' + esc(t(l, 'sh_p')) + '</p><ul>' + ITEMS.map(x => '<li><a href="' + (/\.(csv|json)$/.test(x[1]) ? '' : pre(l)) + x[1] + '">' + esc(t(l, x[0] + '_t')) + '</a>: ' + esc(t(l, x[0] + '_s')) + '</li>').join('') + '</ul></section>';
 const STY = '<style>.n37-in{margin:14px 0 0;padding:12px 16px;border:1px solid var(--k-line,var(--line,#d5d3cc));border-radius:14px;line-height:1.55}.n37-in a{font-weight:700}</style>';
 
@@ -218,14 +293,15 @@ export async function inject(req, u, env, r) {
     const m = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?(.*)$/.exec(u.pathname), l = m[1] || 'en', p = m[2];
     if (!(await load(env))) return r;
     const add = []; let mm;
-    if (p === 'engineering/' || p === 'yc/') add.push(['main', 'append', shipped(l)]);
+    if ((p === 'engineering/' || p === 'yc/') && l === 'en') add.push(['main', 'append', shipped(l)]);
     else if (p === '') { const h = await liveLine(l, env); if (h) add.push(['p.hero-sub', 'after', h]); }
     else if ((mm = /^m\/([^/.]{2,60})\/$/.exec(p))) { const mk = mBySlug(mm[1]); const h = mk ? mkSection(l, mk) : ''; if (!h) return r; add.push(['#slippage', 'before', h]); }
     else if ((mm = /^developers\/([a-z0-9-]{2,90})\/$/.exec(p))) { const h = devSection(l, mm[1]); if (!h) return r; add.push(['#projects', 'append', h]); }
     else if ((mm = /^projects\/([a-z0-9-]{1,90})\/$/.exec(p))) {
       const x = IX.bySlug.get(mm[1]); if (!x) return r;
       const k = cnt(x);
-      add.push(['#glance', 'append', STY + '<p class="n37-in"' + dir(l) + '><a href="' + recU(l, x[1]) + '">' + esc(tf(l, 'inj_p', { k: nf(k, l), g: nf(10 - k, l) })) + '</a> · <a href="/projects/' + x[1] + '/record.json" type="application/json">' + esc(t(l, 'js_l')) + '</a></p>']);
+      const lc = latestChange(x), lch = lc ? '<p class="n37-in"' + dir(l) + '><a href="' + recU(l, x[1]) + '#timeline">' + esc(tf(l, 'tl_pj', { f: t(l, 'f_' + lc.x.f), a: tv(lc.x.p, l, 70), b: tv(lc.x.v, l, 70), d: fd(lc.x.d, l) })) + '</a>' + (lc.n > 1 ? ' <span class="k-xs">' + esc(tf(l, 'tl_more', { n: nf(lc.n - 1, l) })) + '</span>' : '') + '</p>' : '';
+      add.push(['#glance', 'append', STY + '<p class="n37-in"' + dir(l) + '><a href="' + recU(l, x[1]) + '">' + esc(tf(l, 'inj_p', { k: nf(k, l), g: nf(10 - k, l) })) + '</a> · <a href="' + recU(l, x[1]) + '#timeline">' + esc(t(l, 'tl_l')) + '</a> · <a href="/projects/' + x[1] + '/record.json" type="application/json">' + esc(t(l, 'js_l')) + '</a></p>' + lch]);
       if (D.mk[x[3]]) add.push(['#market', 'append', '<p class="n37-in"' + dir(l) + '><a href="' + recU(l, x[1]) + '#market">' + esc(tf(l, 'inj_m', { m: x[3] })) + '</a></p>']);
     } else if (p === 'data/' || p === 'data/dictionary/' || p === 'registers/') add.push(['main', 'append', '<section class="wrap"' + dir(l) + '>' + STY + '<p class="n37-in">' + (l === 'en' || p === 'data/' ? '' : '<a href="' + pre(l) + '/data/">' + esc(t(l, 'dh_link')) + '</a> · ') + '<a href="' + pre(l) + '/data/gaps/">' + esc(t(l, 'gp_link')) + '</a> · ' + esc(t(l, 's5_s')) + ' · <a href="' + pre(l) + '/data/gaps/#dist">' + esc(t(l, 's8_t')) + '</a> · <a href="/data/gaps.csv" download>' + esc(t(l, 'csv_l')) + '</a></p></section>']);
     if (!add.length) return r;
@@ -245,6 +321,7 @@ export async function handle(req, u, env, ctx, shell) {
   if (!(await load(env))) { for (const k in MEMO) delete MEMO[k]; T = null; if (!(await load(env))) return new Response('Temporarily unavailable, please retry.', { status: 503, headers: { 'retry-after': '5', 'cache-control': 'no-store', 'content-type': 'text/plain; charset=utf-8' } }); }
   if ((m = p.match(RX_JS))) { const r = IX.bySlug.get(m[1]); return r ? recJson(r) : null; }
   if (p === '/data/gaps.csv') return gapsCsv();
+  if ((m = p.match(/^\/m\/([^/]{2,120})\/slugs\.json$/))) return slugsJson(env, m[1]);
   try { return await route(env, shell, p); } catch (e) {
     try { const S = await import('./kbx_strings.js'); if (!S.isReady()) await S.ready(env); } catch (e3) {}   // r3u: the page tables of kbx_named may have failed to load for this request
     try { return await route(env, shell, p); } catch (e2) { return new Response('Temporarily unavailable, please retry.', { status: 503, headers: { 'retry-after': '5', 'cache-control': 'no-store', 'content-type': 'text/plain; charset=utf-8', 'x-kb-err': String(e2 && e2.message || e2).slice(0, 120).replace(/[^\x20-\x7e]/g, '') } }); }
@@ -257,6 +334,7 @@ async function route(env, shell, p) {
     const r = IX.bySlug.get(m[2]); if (!r) return null;
     return recPage(env, shell, m[1] || 'en', r);
   }
+  if ((m = p.match(/^\/(es|de|fr|nl|ru|zh|ar)\/(developers|engineering|yc)(\/?)$/))) { if (!m[3]) return new Response(null, { status: 301, headers: { location: p + '/' } }); return hubPage(env, shell, m[1], m[2]); }
   if ((m = p.match(/^\/(es|de|fr|nl|ru|zh|ar)\/data(\/?)$/))) { if (!m[2]) return new Response(null, { status: 301, headers: { location: p + '/' } }); return dataHub(env, shell, m[1]); }
   if ((m = p.match(RX_GAP))) { if (!m[2]) return new Response(null, { status: 301, headers: { location: p + '/' } }); return gapPage(env, shell, m[1] || 'en'); }
   return null;
