@@ -26,7 +26,7 @@
   "@id": "http://publications.europa.eu/resource/authority/language/ENG"
  },
  "dct:modified": {
-  "@value": "2026-11-23T13:45:21Z",
+  "@value": "2026-11-23T13:49:07Z",
   "@type": "xsd:dateTime"
  },
  "dct:license": {
@@ -7236,7 +7236,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "9057",
+      "@value": "8757",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -7250,7 +7250,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "aecd4c725e09d58202d0739aec61a06eba50a3d6f2eeac3f74c024906ba4030b"
+      "spdx:checksumValue": "1649d5d14020440fbf10a17560086bdc9bf0d9b0cad08aa891ff96b8ffc9ea33"
      }
     }
    ],
@@ -8226,7 +8226,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "62727",
+      "@value": "62740",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -8240,7 +8240,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "69497ae51ac5e0c51adec7271634e0895b5eb0ba324388375da23e2198f34541"
+      "spdx:checksumValue": "eae64e88cb8d6e89a2db0f15c25c0519e7bc0ac6ee98a5ab39247828b7f43f4c"
      }
     }
    ],
@@ -8248,7 +8248,7 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
    },
    "dct:modified": {
-    "@value": "2026-11-21T00:00:00Z",
+    "@value": "2026-11-23T00:00:00Z",
     "@type": "xsd:dateTime"
    }
   },
@@ -8446,7 +8446,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "205707",
+      "@value": "206008",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -8460,7 +8460,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "a94f3b70c3ffcf5efc1e995ae4066f2f3557cbded97bcb6406f68398db28fecb"
+      "spdx:checksumValue": "574497f1e6c7d523981d1ad01b3577fc60f6e984862d3b5129d17ec8149d16de"
      }
     }
    ],
