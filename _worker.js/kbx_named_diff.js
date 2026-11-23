@@ -163,5 +163,6 @@ export async function diffRoute(req, u, env, ctx, shell, x, sha, lang) {
   try { const hit = await caches.default.match(ck); if (hit) return new Response(hit.body, { headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-cache', 'x-named-cache': 'hit' } }); } catch (e) {}
   const html = await assemble(pg, l, await shell(P + '/how-we-score/'));
   try { const put = caches.default.put(ck, new Response(html, { headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'max-age=3600' } })); if (ctx && ctx.waitUntil) ctx.waitUntil(put.catch(() => {})); } catch (e) {}
-  return new Response(html, { status: p && n ? 200 : 404, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-cache', 'x-named-cache': 'miss', 'content-language': l } });
+  return new Response(html, { status: 200, headers:   // r6u: a project without an archived copy yet answers 200 (noindex) with the explanation, not 404: every project page links here
+    { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-cache', 'x-named-cache': 'miss', 'content-language': l } });
 }
