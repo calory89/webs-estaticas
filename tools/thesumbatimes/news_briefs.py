@@ -3,13 +3,209 @@
 # time (WITA, HH:MM), dateline, kind ("brief" | "guide" | "letter").
 WA = "https://www.waingapu.com/"
 BRIEFS = [
+{'section': 'travel',
+ 'slug': 'waingapu-port-cruise-ship-services-pelindo-2026',
+ 'date': '2026-11-25',
+ 'time': '06:00',
+ 'dateline': 'WAINGAPU',
+ 'kind': 'brief',
+ 'top': True,
+ 'slugs': {'es': 'puerto-waingapu-servicios-cruceros-pelindo-2026', 'id': 'pelabuhan-waingapu-layanan-kapal-pesiar-pelindo-2026'},
+ 'keywords': {'en': ['Waingapu cruise ship',
+                     'Sumba cruise port',
+                     'Waingapu port Pelindo',
+                     'cruise ships East Sumba',
+                     'Sumba shore excursions',
+                     'Waingapu money changer'],
+              'es': ['crucero Waingapu',
+                     'puerto de cruceros Sumba',
+                     'puerto de Waingapu Pelindo',
+                     'cruceros Sumba Oriental',
+                     'excursiones Sumba crucero'],
+              'id': ['kapal pesiar Waingapu',
+                     'pelabuhan Waingapu Pelindo',
+                     'kapal pesiar Sumba Timur',
+                     'wisatawan kapal pesiar Sumba',
+                     'money changer Waingapu']},
+ 'en': {'title': 'Waingapu port readies booths and services for cruise ships',
+        'dek': 'Pelindo says the port can handle cruise calls and has set up exchange, small-business and tour booths; no ships '
+               'or dates are named.',
+        'answer': 'Waingapu port is ready to receive cruise ships calling at East Sumba, PT Pelindo Waingapu general manager '
+                  'Imam Haromain said on 24 November 2026, RRI Kupang reported. Pelindo has prepared a money changer, '
+                  'small-business stands and a tour-coordinator stand. No ship, date or passenger number was given.',
+        'keys': ['Pelindo Waingapu says the port can support cruise-ship calls with its existing facilities.',
+                 'It has prepared a money changer, stands for local small businesses (UMKM) and a stand for travel coordinators.',
+                 'The statement followed a focus group discussion on 24 November 2026 led by Deputy Regent Yonathan Hani.',
+                 'Earlier calls: MV Nautica (586 visitors, April 2025) and MS Odyssey (about 305 visitors, April 2026).',
+                 'No ship, date, passenger forecast or fee is reported, and the account comes from one outlet.'],
+        'visitors': 'Nothing is confirmed for a specific sailing. If you travel by sea, ask the cruise line whether Waingapu is '
+                    'on the itinerary, and expect a busy port area on call days.',
+        'body': '<p>Waingapu port says it is ready to receive cruise ships calling at East Sumba, and the state port operator '
+                'has set up booths for currency exchange, local small businesses and tour coordinators, RRI Kupang reported on '
+                '24 November 2026. The announcement followed a focus group discussion on Tuesday 24 November led by East Sumba '
+                'Deputy Regent Yonathan Hani. The report names no ship, arrival date, passenger number or fee.</p><h2>What was '
+                "announced</h2><p>Imam Haromain, general manager of PT Pelindo's Waingapu branch, said the existing facilities "
+                'have been working well and can handle cruise-ship calls. Pelindo has also prepared an operating pattern for the '
+                'service so that visitors and the agencies involved are looked after in an orderly way. The booths are a money '
+                'changer, stands for micro, small and medium enterprises (UMKM) and a stand for travel coordinators. RRI says '
+                'the discussion was meant to confirm that every function and stakeholder is ready, and a photo caption lists '
+                'Pelindo staff from Jakarta and the head of the East Sumba tourism and culture office among those present. The '
+                "stated hope is to raise the island's profile as a destination and bring income to local people.</p><h2>What "
+                'earlier calls looked like</h2><p>This is not the first cruise call. TIMES Indonesia reported that MV Nautica, a '
+                'Marshall Islands-flag ship, brought 586 foreign visitors to Waingapu on 10 April 2025 on a route from Darwin '
+                'via Kupang, arriving at 06:40 WITA, and that Pelindo then set up UMKM stands and a foreign-exchange service '
+                'with Bank BRI. On 16 April 2026 the same outlet reported MS Odyssey, a Bahamas-flag ship, arriving with about '
+                '305 visitors for a planned stay of 36 hours, with a Sumbanese dance welcome and souvenir stalls near the '
+                'terminal. Excursions named in those reports include Prailiu village, Walakiri beach, Purukambera savanna, '
+                'Tanggedu waterfall and Prainatang traditional village.</p><p>What the new report does not say matters too: no '
+                'cruise calendar for 2026 or 2027, no operator, no passenger forecast and no investment figure. The account '
+                'comes from one outlet, so treat it as a statement of readiness, not a schedule.</p><h2>What it means for '
+                'visitors, residents and investors</h2><p>Visitors: if you plan to travel by sea, ask the cruise line whether '
+                'Waingapu is on the itinerary; nothing is confirmed here, and independent travellers should expect the port area '
+                'to be busy on call days. Residents: weavers, souvenir sellers, guides and drivers are the people the booths and '
+                'tours are meant to reach; the report does not say how a business can get a stand. Investors: this is '
+                'operational preparation at an existing port, with no new construction or funding announced, so any tourism '
+                'venture that depends on cruise visitors should wait for published calendars from Pelindo or the regency before '
+                'counting on them.</p>',
+        'faq': [['Do cruise ships stop at Waingapu?',
+                 'Yes. TIMES Indonesia reported MV Nautica with 586 visitors on 10 April 2025 and MS Odyssey with about 305 on '
+                 '16 April 2026. On 24 November 2026 Pelindo Waingapu said the port is ready for more calls.'],
+                ['What services are ready for cruise visitors?',
+                 'According to RRI Kupang, a money changer, stands for local small businesses and a stand for travel '
+                 'coordinators.'],
+                ['When is the next cruise ship due in Waingapu?',
+                 'The 24 November report gives no ship or date. Check with the cruise line, Pelindo or the East Sumba tourism '
+                 'office.']]},
+ 'es': {'title': 'El puerto de Waingapu prepara servicios para los cruceros',
+        'dek': 'Pelindo dice que el puerto puede atender escalas y ha dispuesto puestos de cambio, pymes y viajes; no se citan '
+               'barcos ni fechas.',
+        'answer': 'El puerto de Waingapu está listo para recibir cruceros en Sumba Oriental, dijo el 24 de noviembre de 2026 el '
+                  'director general de PT Pelindo Waingapu, Imam Haromain, según RRI Kupang. Pelindo ha preparado una casa de '
+                  'cambio, puestos de pequeños negocios y un stand de coordinadores de viajes. No se dio barco, fecha ni número '
+                  'de pasajeros.',
+        'keys': ['Pelindo Waingapu dice que el puerto puede atender escalas de cruceros con sus instalaciones actuales.',
+                 'Ha preparado una casa de cambio, stands de pequeños negocios locales (UMKM) y un stand de coordinadores de '
+                 'viajes.',
+                 'El anuncio siguió a un debate de grupo el 24 de noviembre de 2026 dirigido por el vicerregente Yonathan Hani.',
+                 'Escalas anteriores: MV Nautica (586 visitantes, abril de 2025) y MS Odyssey (unos 305, abril de 2026).',
+                 'No hay barco, fecha, previsión de pasajeros ni tarifa, y el relato procede de un solo medio.'],
+        'visitors': 'No hay nada confirmado para una salida concreta. Si viaja por mar, pregunte a la naviera si Waingapu figura '
+                    'en el itinerario, y cuente con un puerto concurrido los días de escala.',
+        'body': '<p>El puerto de Waingapu asegura que está listo para recibir cruceros en Sumba Oriental, y el operador '
+                'portuario estatal ha dispuesto puestos de cambio de moneda, de pequeños negocios locales y de coordinadores de '
+                'viajes, informó RRI Kupang el 24 de noviembre de 2026. El anuncio siguió a un debate de grupo celebrado el '
+                'martes 24 de noviembre bajo la dirección del vicerregente de Sumba Oriental, Yonathan Hani. La información no '
+                'cita ningún barco, fecha de llegada, número de pasajeros ni tarifa.</p><h2>Qué se anunció</h2><p>Imam Haromain, '
+                'director general de la sucursal de PT Pelindo en Waingapu, dijo que las instalaciones actuales funcionan bien y '
+                'pueden atender escalas de cruceros. Pelindo también ha preparado un esquema operativo para que los visitantes y '
+                'los organismos implicados estén bien atendidos. Los puestos son una casa de cambio, stands para micro, pequeñas '
+                'y medianas empresas (UMKM) y un stand para coordinadores de viajes. Según RRI, el debate buscaba confirmar que '
+                'todas las funciones y partes interesadas están preparadas, y el pie de una foto cita entre los presentes a '
+                'personal de Pelindo de Yakarta y al jefe de la oficina de turismo y cultura de Sumba Oriental. La esperanza '
+                'declarada es reforzar la isla como destino y dar ingresos a la población local.</p><h2>Cómo fueron las escalas '
+                'anteriores</h2><p>No es la primera escala. TIMES Indonesia informó de que el MV Nautica, con bandera de las '
+                'Islas Marshall, llevó 586 visitantes extranjeros a Waingapu el 10 de abril de 2025 en una ruta desde Darwin vía '
+                'Kupang, con llegada a las 06:40 WITA, y de que Pelindo montó entonces stands de UMKM y un servicio de cambio '
+                'con el banco BRI. El 16 de abril de 2026 el mismo medio informó de la llegada del MS Odyssey, con bandera de '
+                'Bahamas y unos 305 visitantes, para una estancia prevista de 36 horas, con una bienvenida de danza sumbanesa y '
+                'puestos de recuerdos junto a la terminal. Las excursiones citadas incluyen la aldea de Prailiu, la playa de '
+                'Walakiri, la sabana de Purukambera, la cascada de Tanggedu y la aldea tradicional de Prainatang.</p><p>Lo que '
+                'la nueva información no dice también importa: no hay calendario de cruceros para 2026 o 2027, ni naviera, ni '
+                'previsión de pasajeros, ni cifra de inversión. El relato procede de un solo medio, así que conviene leerlo como '
+                'una declaración de preparación, no como un calendario.</p><h2>Qué significa para visitantes, residentes e '
+                'inversores</h2><p>Visitantes: si piensa viajar por mar, pregunte a la naviera si Waingapu figura en el '
+                'itinerario; aquí no hay nada confirmado, y quien viaje por libre debe esperar movimiento en la zona del puerto '
+                'los días de escala. Residentes: tejedoras, vendedores de recuerdos, guías y conductores son quienes deberían '
+                'beneficiarse de los puestos y las excursiones; la información no explica cómo puede un negocio conseguir un '
+                'stand. Inversores: se trata de preparación operativa en un puerto que ya existe, sin obras nuevas ni fondos '
+                'anunciados, así que cualquier negocio turístico que dependa de los cruceristas debería esperar a que Pelindo o '
+                'la regencia publiquen calendarios antes de contar con ellos.</p>',
+        'faq': [['¿Hacen escala cruceros en Waingapu?',
+                 'Sí. TIMES Indonesia informó del MV Nautica con 586 visitantes el 10 de abril de 2025 y del MS Odyssey con unos '
+                 '305 el 16 de abril de 2026. El 24 de noviembre de 2026 Pelindo Waingapu dijo que el puerto está listo para más '
+                 'escalas.'],
+                ['¿Qué servicios hay para los cruceristas?',
+                 'Según RRI Kupang, una casa de cambio, stands de pequeños negocios locales y un stand de coordinadores de '
+                 'viajes.'],
+                ['¿Cuándo llega el próximo crucero a Waingapu?',
+                 'La información del 24 de noviembre no da barco ni fecha. Consulte a la naviera, a Pelindo o a la oficina de '
+                 'turismo de Sumba Oriental.']]},
+ 'id': {'title': 'Pelabuhan Waingapu siapkan stan dan layanan kapal pesiar',
+        'dek': 'Pelindo menyatakan pelabuhan siap melayani kapal pesiar, dengan stan penukaran uang, UMKM, dan travel; kapal dan '
+               'tanggal belum disebut.',
+        'answer': 'Pelabuhan Waingapu siap menerima kapal pesiar yang singgah di Sumba Timur, kata General Manager PT Pelindo '
+                  'Waingapu Imam Haromain pada 24 November 2026, menurut RRI Kupang. Pelindo menyiapkan money changer, stan '
+                  'UMKM, dan stan koordinator perjalanan. Nama kapal, tanggal, dan jumlah penumpang tidak disebut.',
+        'keys': ['Pelindo Waingapu menyatakan fasilitas yang ada mampu mendukung kunjungan kapal pesiar.',
+                 'Disiapkan money changer, stan UMKM lokal, dan stan koordinator layanan perjalanan.',
+                 'Pernyataan ini menyusul FGD pada 24 November 2026 yang dipimpin Wakil Bupati Yonathan Hani.',
+                 'Kunjungan sebelumnya: MV Nautica (586 wisatawan, April 2025) dan MS Odyssey (sekitar 305, April 2026).',
+                 'Tidak ada kapal, tanggal, perkiraan penumpang, atau tarif yang dilaporkan, dan informasi berasal dari satu '
+                 'media.'],
+        'visitors': 'Belum ada yang dipastikan untuk pelayaran tertentu. Jika bepergian lewat laut, tanyakan kepada perusahaan '
+                    'pelayaran apakah Waingapu masuk rute, dan bersiaplah menghadapi pelabuhan ramai pada hari kapal singgah.',
+        'body': '<p>Pelabuhan Waingapu menyatakan siap menerima kunjungan kapal pesiar yang singgah di Sumba Timur, dan operator '
+                'pelabuhan milik negara telah menyiapkan stan penukaran uang, stan pelaku usaha kecil lokal, dan stan '
+                'koordinator perjalanan wisata, lapor RRI Kupang pada 24 November 2026. Pengumuman itu menyusul diskusi kelompok '
+                'terarah (FGD) pada Selasa 24 November yang dipimpin Wakil Bupati Sumba Timur Yonathan Hani. Laporan tidak '
+                'menyebut nama kapal, tanggal kedatangan, jumlah penumpang, maupun tarif.</p><h2>Apa yang '
+                'diumumkan</h2><p>General Manager PT Pelindo Cabang Waingapu, Imam Haromain, mengatakan fasilitas yang ada '
+                'selama ini berjalan baik dan mampu mendukung kunjungan kapal pesiar. Pelindo juga menyiapkan pola operasional '
+                'pelayanan agar wisatawan dan pihak terkait terlayani dengan tertata. Stan pendukung berupa money changer, stan '
+                'Usaha Mikro, Kecil, dan Menengah (UMKM), serta stan koordinator layanan perjalanan. Menurut RRI, FGD bertujuan '
+                'memastikan kesiapan seluruh fungsi dan pemangku kepentingan, dan keterangan foto menyebut tim Pelindo dari '
+                'Jakarta serta Kepala Dinas Pariwisata dan Kebudayaan Sumba Timur hadir. Harapannya, destinasi wisata meningkat '
+                'dan ekonomi masyarakat ikut tumbuh.</p><h2>Kunjungan sebelumnya</h2><p>Ini bukan kunjungan pertama. TIMES '
+                'Indonesia melaporkan MV Nautica berbendera Kepulauan Marshall membawa 586 wisatawan asing ke Waingapu pada 10 '
+                'April 2025 dalam rute dari Darwin lewat Kupang dan tiba pukul 06.40 WITA, dan Pelindo saat itu menyiapkan stan '
+                'UMKM serta layanan penukaran valas bersama Bank BRI. Pada 16 April 2026 media yang sama melaporkan MS Odyssey '
+                'berbendera Bahama tiba dengan sekitar 305 wisatawan untuk tinggal 36 jam, disambut tarian khas Sumba Timur dan '
+                'toko suvenir di sekitar terminal. Tujuan wisata yang disebut mencakup Kampung Prailiu, Pantai Walakiri, Savana '
+                'Purukambera, Air Terjun Tanggedu, dan Kampung Adat Prainatang.</p><p>Yang tidak disebut laporan baru ini juga '
+                'penting: tidak ada kalender kapal pesiar 2026 atau 2027, tidak ada operator, tidak ada perkiraan jumlah '
+                'penumpang, dan tidak ada angka investasi. Informasi ini bersumber dari satu media, jadi anggap sebagai '
+                'pernyataan kesiapan, bukan jadwal.</p><h2>Apa artinya bagi pengunjung, warga, dan investor</h2><p>Pengunjung: '
+                'jika berencana datang lewat laut, tanyakan kepada perusahaan pelayaran apakah Waingapu masuk rute; belum ada '
+                'yang dipastikan, dan wisatawan mandiri perlu bersiap kawasan pelabuhan ramai pada hari kapal singgah. Warga: '
+                'penenun, penjual suvenir, pemandu, dan pengemudi adalah pihak yang hendak dijangkau stan dan paket wisata; '
+                'laporan tidak menjelaskan cara pelaku usaha mendapatkan stan. Investor: ini persiapan operasional di pelabuhan '
+                'yang sudah ada, tanpa pembangunan baru atau dana yang diumumkan, sehingga usaha wisata yang bergantung pada '
+                'penumpang kapal pesiar sebaiknya menunggu kalender resmi dari Pelindo atau pemerintah kabupaten sebelum '
+                'mengandalkannya.</p>',
+        'faq': [['Apakah kapal pesiar singgah di Waingapu?',
+                 'Ya. TIMES Indonesia melaporkan MV Nautica dengan 586 wisatawan pada 10 April 2025 dan MS Odyssey dengan '
+                 'sekitar 305 wisatawan pada 16 April 2026. Pada 24 November 2026 Pelindo Waingapu menyatakan pelabuhan siap '
+                 'untuk kunjungan berikutnya.'],
+                ['Layanan apa yang disiapkan untuk wisatawan kapal pesiar?',
+                 'Menurut RRI Kupang, money changer, stan UMKM lokal, dan stan koordinator layanan perjalanan.'],
+                ['Kapan kapal pesiar berikutnya tiba di Waingapu?',
+                 'Laporan 24 November tidak menyebut kapal atau tanggal. Tanyakan kepada perusahaan pelayaran, Pelindo, atau '
+                 'dinas pariwisata Sumba Timur.']]},
+ 'image': {'ai': True,
+           'credit': '',
+           'license': '',
+           'license_url': '',
+           'page': '',
+           'w': 1280,
+           'h': 853,
+           'caption': {'en': 'AI-generated illustration of a generic cruise ship at a tropical pier; not a photo of Waingapu '
+                             'port or of any ship named in this story.',
+                       'es': 'Ilustración generada con IA de un crucero genérico en un muelle tropical; no es una foto del '
+                             'puerto de Waingapu ni de ningún barco citado en esta noticia.',
+                       'id': 'Ilustrasi buatan AI kapal pesiar generik di dermaga tropis; bukan foto Pelabuhan Waingapu maupun '
+                             'kapal yang disebut dalam berita ini.'}},
+ 'sources': [['RRI Kupang: Pelindo Waingapu Siapkan Fasilitas Pendukung Pelayanan Kapal Pesiar (24 Nov 2026)',
+              'https://rri.co.id/kupang/berita-lain/2921849/pelindo-waingapu-siapkan-fasilitas-pendukung-pelayanan-kapal-pesiar'],
+             ['TIMES Indonesia: Intip MS Odyssey, Kapal Pesiar Mewah yang Menyinggahi Pelabuhan Waingapu (16 Apr 2026)',
+              'https://timesindonesia.co.id/peristiwa-daerah/585842/intip-ms-odyssey-kapal-pesiar-mewah-yang-menyinggahi-pelabuhan-waingapu'],
+             ['TIMES Indonesia: MV Nautica Angkut 586 Wisatawan Asing Kunjungi Sumba Timur (10 Apr 2025)',
+              'https://timesindonesia.co.id/indonesia-positif/534603/mv-nautica-angkut-586-wisatawan-asing-kunjungi-sumba-timur']]},
 {'section': 'culture',
  'slug': 'east-sumba-creative-economy-master-plan-weavers-tenun-2026',
  'date': '2026-11-24',
  'time': '06:00',
  'dateline': 'WAINGAPU',
  'kind': 'brief',
- 'top': True,
  'slugs': {'es': 'plan-economia-creativa-sumba-oriental-tejedoras-tenun-2026',
            'id': 'rindekraf-sumba-timur-2026-2045-penenun-tenun-konsultasi-publik'},
  'keywords': {'en': ['Sumba ikat weaving',
