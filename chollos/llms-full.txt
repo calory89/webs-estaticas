@@ -1,15 +1,14 @@
-# Happy Low Cost: chollos de vuelos activos (23 nov 2026)
+# Happy Low Cost: chollos de vuelos activos (24 nov 2026)
 
-> 21 chollos de vuelos de ida y vuelta, cada uno al menos un 40 % por debajo del precio habitual de su ruta. Actualizado: 2026-11-23T20:11:24Z. Los precios cambian por horas: comprueba siempre el precio en la página del chollo. Mismo contenido en JSON: https://www.happylowcost.com/chollos/feed.json
+> 21 chollos de vuelos de ida y vuelta, cada uno al menos un 40 % por debajo del precio habitual de su ruta. Actualizado: 2026-11-24T04:47:16Z. Los precios cambian por horas: comprueba siempre el precio en la página del chollo. Mismo contenido en JSON: https://www.happylowcost.com/chollos/feed.json
 
 Happy Low Cost (desde 2012, más de 420.000 seguidores) publica chollos de vuelos verificados, sobre todo con salida desde España. Método: https://www.happylowcost.com/como-verificamos/
 
 ## Desde Barcelona (España)
-- [Barcelona → Lisboa (Portugal): 46 € ida y vuelta](https://www.happylowcost.com/chollos/barcelona-lisboa-46-euros-2027-01-10/), Ryanair, directo, 10 ene 2027 a 14 ene 2027. Precio habitual 80 € (−43 %). Comprobado el 23 nov 2026.
-- [Barcelona → Cracovia (Polonia): 48 € ida y vuelta](https://www.happylowcost.com/chollos/barcelona-cracovia-48-euros-2027-02-14/), Wizz Air, directo, 14 feb 2027 a 18 feb 2027. Precio habitual 80 € (−40 %). Comprobado el 23 nov 2026.
+- [Barcelona → Lisboa (Portugal): 46 € ida y vuelta](https://www.happylowcost.com/chollos/barcelona-lisboa-46-euros-2027-01-10/), Ryanair, directo, 10 ene 2027 a 14 ene 2027. Precio habitual 80 € (−43 %). Comprobado el 24 nov 2026.
 - [Barcelona → Bruselas (Bélgica): 54 € ida y vuelta](https://www.happylowcost.com/chollos/barcelona-bruselas-54-euros-2027-01-23/), Ryanair, directo, 23 ene 2027 a 30 ene 2027. Precio habitual 90 € (−40 %). Comprobado el 23 nov 2026.
 - [Barcelona → Dubrovnik (Croacia): 62 € ida y vuelta](https://www.happylowcost.com/chollos/barcelona-dubrovnik-62-euros-2026-12-12/), Vueling, directo, 12 dic 2026 a 19 dic 2026. Precio habitual 140 € (−56 %). Comprobado el 23 nov 2026.
-- [Barcelona → Estocolmo (Suecia): 63 € ida y vuelta](https://www.happylowcost.com/chollos/barcelona-estocolmo-63-euros-2027-01-24/), Ryanair, directo, 24 ene 2027 a 29 ene 2027. Precio habitual 130 € (−52 %). Comprobado el 23 nov 2026.
+- [Barcelona → Estocolmo (Suecia): 63 € ida y vuelta](https://www.happylowcost.com/chollos/barcelona-estocolmo-63-euros-2027-01-24/), Ryanair, directo, 24 ene 2027 a 29 ene 2027. Precio habitual 130 € (−52 %). Comprobado el 24 nov 2026.
 - [Barcelona → Nueva York (Estados Unidos): 347 € ida y vuelta](https://www.happylowcost.com/chollos/barcelona-nueva-york-347-euros-2027-05-11/), SAS, 11 may 2027 a 19 may 2027. Precio habitual 590 € (−41 %). Comprobado el 23 nov 2026.
 
 ## Desde Bilbao (España)
@@ -17,13 +16,14 @@ Happy Low Cost (desde 2012, más de 420.000 seguidores) publica chollos de vuelo
 
 ## Desde Gran Canaria (España)
 - [Gran Canaria → Milán (Italia): 69 € ida y vuelta](https://www.happylowcost.com/chollos/gran-canaria-milan-69-euros-2027-01-16/), Ryanair, directo, 16 ene 2027 a 28 ene 2027. Precio habitual 120 € (−43 %). Comprobado el 23 nov 2026.
-- [Gran Canaria → Bruselas (Bélgica): 74 € ida y vuelta](https://www.happylowcost.com/chollos/gran-canaria-bruselas-74-euros-2027-01-17/), Ryanair, directo, 17 ene 2027 a 27 ene 2027. Precio habitual 160 € (−54 %). Comprobado el 23 nov 2026.
+- [Gran Canaria → Bruselas (Bélgica): 74 € ida y vuelta](https://www.happylowcost.com/chollos/gran-canaria-bruselas-74-euros-2027-01-17/), Ryanair, directo, 17 ene 2027 a 27 ene 2027. Precio habitual 160 € (−54 %). Comprobado el 24 nov 2026.
 - [Gran Canaria → Hamburgo (Alemania): 140 € ida y vuelta](https://www.happylowcost.com/chollos/gran-canaria-hamburgo-140-euros-2026-12-02/), Condor, directo, 2 dic 2026 a 6 dic 2026. Precio habitual 250 € (−44 %). Comprobado el 23 nov 2026.
 
 ## Desde Madrid (España)
 - [Madrid → Dublín (Irlanda): 41 € ida y vuelta](https://www.happylowcost.com/chollos/madrid-dublin-41-euros-2026-12-29/), Ryanair, directo, 29 dic 2026 a 10 ene 2027. Precio habitual 70 € (−41 %). Comprobado el 23 nov 2026.
 - [Madrid → Bolonia (Italia): 47 € ida y vuelta](https://www.happylowcost.com/chollos/madrid-bolonia-47-euros-2027-02-13/), Ryanair, directo, 13 feb 2027 a 20 feb 2027. Precio habitual 100 € (−53 %). Comprobado el 23 nov 2026.
 - [Madrid → Budapest (Hungría): 59 € ida y vuelta](https://www.happylowcost.com/chollos/madrid-budapest-59-euros-2027-02-13/), Ryanair, directo, 13 feb 2027 a 17 feb 2027. Precio habitual 120 € (−51 %). Comprobado el 23 nov 2026.
+- [Madrid → Bruselas (Bélgica): 81 € ida y vuelta](https://www.happylowcost.com/chollos/madrid-bruselas-81-euros-2027-02-16/), Ryanair, directo, 16 feb 2027 a 18 feb 2027. Precio habitual 150 € (−46 %). Comprobado el 24 nov 2026.
 - [Madrid → Boa Vista (Cabo Verde): 216 € ida y vuelta](https://www.happylowcost.com/chollos/madrid-boa-vista-216-euros-2026-12-09/), Iberia Airlines, 9 dic 2026 a 17 dic 2026. Precio habitual 560 € (−61 %). Comprobado el 23 nov 2026.
 
 ## Desde Málaga (España)
@@ -33,7 +33,7 @@ Happy Low Cost (desde 2012, más de 420.000 seguidores) publica chollos de vuelo
 - [Palma de Mallorca → Viena (Austria): 67 € ida y vuelta](https://www.happylowcost.com/chollos/palma-de-mallorca-viena-67-euros-2027-02-12/), Ryanair, directo, 12 feb 2027 a 19 feb 2027. Precio habitual 120 € (−44 %). Comprobado el 23 nov 2026.
 
 ## Desde Santiago de Compostela (España)
-- [Santiago de Compostela → Londres (Reino Unido): 58 € ida y vuelta](https://www.happylowcost.com/chollos/santiago-de-compostela-londres-58-euros-2027-02-14/), Ryanair, directo, 14 feb 2027 a 21 feb 2027. Precio habitual 110 € (−47 %). Comprobado el 23 nov 2026.
+- [Santiago de Compostela → Londres (Reino Unido): 58 € ida y vuelta](https://www.happylowcost.com/chollos/santiago-de-compostela-londres-58-euros-2027-02-14/), Ryanair, directo, 14 feb 2027 a 21 feb 2027. Precio habitual 110 € (−47 %). Comprobado el 24 nov 2026.
 
 ## Desde Zaragoza (España)
 - [Zaragoza → Londres (Reino Unido): 47 € ida y vuelta](https://www.happylowcost.com/chollos/zaragoza-londres-47-euros-2027-01-25/), Ryanair, directo, 25 ene 2027 a 1 feb 2027. Precio habitual 90 € (−48 %). Comprobado el 23 nov 2026.
