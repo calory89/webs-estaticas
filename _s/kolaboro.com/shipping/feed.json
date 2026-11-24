@@ -14,16 +14,16 @@
  "items": [
   {
    "id": "https://kolaboro.com/shipping/#d-2026-11-23",
-   "url": "https://kolaboro.com/shipping/#d-2026-11-23",
-   "title": "23 November 2026: 76 changes shipped so far",
-   "content_text": "- Kolaboro.com r6u: developer page changes in 8 languages, what changed this week, developer handover track record, Atom feed of fact changes, accessible key-fact groups\n- Kolaboro.com r9u: Malaysian register entries moved into /data/n37u.json (kp) and the record build, no new files (Pages build failed at 40,006 files)\n- Project records field by field (sources per field, what we still do not know, market context, same developer and area), /data/gaps/ (r1u, batch 37)\n- Kolaboro.com r1p: 120 new projects (2,500 tracked): Dubai DLD register, Ras Al Khaimah, Abu Dhabi, Portugal; 360 facts added to tracked projects\n- Kolaboro.com r8u: today's progress in numbers on the home page and /yc/try/ (8 languages), market key-fact block built once per data version\n- Kolaboro.com r5u: verified/claimed/[name] on project pages, printable brief, /data/changes/, search completeness, lighter big market pages\n\nDay in progress: summary taken from the commit subjects so far.",
-   "content_html": "<ul><li>Kolaboro.com r6u: developer page changes in 8 languages, what changed this week, developer handover track record, Atom feed of fact changes, accessible key-fact groups</li><li>Kolaboro.com r9u: Malaysian register entries moved into /data/n37u.json (kp) and the record build, no new files (Pages build failed at 40,006 files)</li><li>Project records field by field (sources per field, what we still do not know, market context, same developer and area), /data/gaps/ (r1u, batch 37)</li><li>Kolaboro.com r1p: 120 new projects (2,500 tracked): Dubai DLD register, Ras Al Khaimah, Abu Dhabi, Portugal; 360 facts added to tracked projects</li><li>Kolaboro.com r8u: today&#x27;s progress in numbers on the home page and /yc/try/ (8 languages), market key-fact block built once per data version</li><li>Kolaboro.com r5u: verified/claimed/[name] on project pages, printable brief, /data/changes/, search completeness, lighter big market pages</li></ul><p>Day in progress: summary taken from the commit subjects so far.</p>",
+   "url": "https://kolaboro.com/changelog/2026-11-23/",
+   "title": "23 November 2026: 109 changes shipped",
+   "content_text": "- Kolaboro.com r6u: developer page changes in 8 languages, what changed this week, developer handover track record, Atom feed of fact changes, accessible key-fact groups\n- Kolaboro.com r11p: 75 new projects (56 Dubai DLD register, 19 Malaysia KPKT register), KPKT units and construction % in the record fields, 26 register handover dates\n- Kolaboro.com n38 d4: home layout (one proof line, stats band), project H1 without reviews, deduped place names, d1 look on rankings, data, record and brief pages\n- Kolaboro.com r9u: Malaysian register entries moved into /data/n37u.json (kp) and the record build, no new files (Pages build failed at 40,006 files)\n- Project records field by field (sources per field, what we still do not know, market context, same developer and area), /data/gaps/ (r1u, batch 37)\n- Kolaboro.com r1p: 120 new projects (2,500 tracked): Dubai DLD register, Ras Al Khaimah, Abu Dhabi, Portugal; 360 facts added to tracked projects\n\nSummary taken from the day's commit subjects.",
+   "content_html": "<ul><li>Kolaboro.com r6u: developer page changes in 8 languages, what changed this week, developer handover track record, Atom feed of fact changes, accessible key-fact groups</li><li>Kolaboro.com r11p: 75 new projects (56 Dubai DLD register, 19 Malaysia KPKT register), KPKT units and construction % in the record fields, 26 register handover dates</li><li>Kolaboro.com n38 d4: home layout (one proof line, stats band), project H1 without reviews, deduped place names, d1 look on rankings, data, record and brief pages</li><li>Kolaboro.com r9u: Malaysian register entries moved into /data/n37u.json (kp) and the record build, no new files (Pages build failed at 40,006 files)</li><li>Project records field by field (sources per field, what we still do not know, market context, same developer and area), /data/gaps/ (r1u, batch 37)</li><li>Kolaboro.com r1p: 120 new projects (2,500 tracked): Dubai DLD register, Ras Al Khaimah, Abu Dhabi, Portugal; 360 facts added to tracked projects</li></ul><p>Summary taken from the day&#x27;s commit subjects.</p>",
    "date_published": "2026-11-23T00:00:00Z",
-   "date_modified": "2026-11-23T07:34:35Z",
+   "date_modified": "2026-11-23T22:00:08Z",
    "_kolaboro": {
-    "ships": 76,
-    "data_updates": 0,
-    "method": "so-far"
+    "ships": 109,
+    "data_updates": 13,
+    "method": "deterministic"
    }
   },
   {
