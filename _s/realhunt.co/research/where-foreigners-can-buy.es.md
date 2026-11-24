@@ -4,7 +4,7 @@ De 20 países, 12 dejan comprar una casa a cualquier nacionalidad en las mismas 
 
 Normas a noviembre de 2026, para 14 nacionalidades. Información general, no asesoramiento jurídico.
 
-Actualizado el 22 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/where-foreigners-can-buy (CC BY 4.0). CSV: https://realhunt.co/research/where-foreigners-can-buy.es.csv
+Actualizado el 24 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/where-foreigners-can-buy (CC BY 4.0). CSV: https://realhunt.co/research/where-foreigners-can-buy.es.csv
 
 ## La tabla
 

@@ -5,7 +5,7 @@
   "noindex": 542,
   "noindex_by_polish": 450,
   "duplicate_homes": 2,
-  "title_over_60": 445,
+  "title_over_60": 447,
   "desc_over_155": 0,
   "desc_under_120": 69,
   "desc_out_of_range": 69,
@@ -22,8 +22,8 @@
   "mixed_content": 0,
   "no_lang": 0,
   "with_lastmod": 4094,
-  "redirects": 1849,
-  "moved_stubs": 327
+  "redirects": 1851,
+  "moved_stubs": 325
  },
  "failures": [],
  "groups": {
@@ -130,14 +130,14 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 1941,
+   "median_words": 1935,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/cheap-houses/*": {
-   "pages": 344,
-   "indexable": 344,
+   "pages": 343,
+   "indexable": 343,
    "noindex": 0,
    "median_words": 1636,
    "title_over_60": 10,
@@ -346,17 +346,17 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 2361,
+   "median_words": 2357,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/es/cheap-houses/*": {
-   "pages": 344,
-   "indexable": 344,
+   "pages": 343,
+   "indexable": 343,
    "noindex": 0,
-   "median_words": 1928,
-   "title_over_60": 85,
+   "median_words": 1930,
+   "title_over_60": 86,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
@@ -490,17 +490,17 @@
    "pages": 29,
    "indexable": 22,
    "noindex": 7,
-   "median_words": 2514,
+   "median_words": 2537,
    "title_over_60": 0,
    "desc_out_of_range": 12,
    "inlinks_under_3": 0
   },
   "/es/homes/*/*": {
-   "pages": 272,
-   "indexable": 272,
+   "pages": 273,
+   "indexable": 273,
    "noindex": 0,
-   "median_words": 1610,
-   "title_over_60": 48,
+   "median_words": 1600,
+   "title_over_60": 49,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
@@ -757,10 +757,10 @@
    "inlinks_under_3": 0
   },
   "/homes/*/*": {
-   "pages": 272,
-   "indexable": 272,
+   "pages": 273,
+   "indexable": 273,
    "noindex": 0,
-   "median_words": 1379,
+   "median_words": 1373,
    "title_over_60": 6,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -1058,7 +1058,7 @@
   "notes": {
    "pages with JSON-LD changed": 4146,
    "ItemList: items removed or renumbered": 10,
-   "RealEstateListing: availability left out (advert not confirmed)": 260,
+   "RealEstateListing: availability left out (advert not confirmed)": 264,
    "Article: author, date, headline or image missing": 52
   },
   "missing": {}
@@ -1265,7 +1265,7 @@
    "/cheap-houses/with-a-terrace-in-dominican-republic",
    "/cheap-houses/with-garden-under-100000-in-united-states",
    "/cheap-houses/with-olive-trees-or-vines-in-sweden",
-   "... 385 more"
+   "... 387 more"
   ],
   "title_under_20": [
    "/contact",
@@ -1286,7 +1286,7 @@
    "places": {
     "pages": 639,
     "twins": 639,
-    "words": 1369002,
+    "words": 1373643,
     "english": 0,
     "spanish_pct": 100
    },
@@ -1301,7 +1301,7 @@
    "content": {
     "pages": 592,
     "twins": 591,
-    "words": 458459,
+    "words": 458488,
     "english": 0,
     "by_hand": 42,
     "spanish_pct": 100
@@ -1320,13 +1320,14 @@
    "checked": 4688,
    "indexable": 4146,
    "max_depth": 3,
-   "titles_changed_since_last_build": 0,
+   "titles_changed_since_last_build": 114,
    "external_link_hosts": 316,
    "no_text_without_javascript": 9,
    "legal_page_without_disclaimer": 3,
    "keyword_stuffing": 6,
    "year_in_title": 2,
-   "near_identical_pages": 529,
+   "near_identical_pages": 528,
+   "title_changed_twice_in_28_days": 114,
    "fixed_here": 4,
    "links_pointed_past_a_redirect": 4
   },
@@ -1401,7 +1402,50 @@
     "/can-i-buy/danish-in-cyprus ~ /can-i-buy/swedish-in-cyprus (95%)",
     "/can-i-buy/danish-in-dominican-republic ~ /can-i-buy/dutch-in-dominican-republic (97%)",
     "/can-i-buy/danish-in-dominican-republic ~ /can-i-buy/french-in-dominican-republic (94%)",
-    "... 489 more"
+    "... 488 more"
+   ],
+   "title_changed_twice_in_28_days": [
+    "/cheap-houses/by-the-sea: Cheap homes by the sea (143, from €19,320) · RealHunt",
+    "/cheap-houses/by-the-sea-under-50000-in-japan: Cheap homes by the sea in Japan under €50,000 (6) · RealHunt",
+    "/cheap-houses/houses-under-100000-in-japan: Cheap houses for sale in Japan under €100,000 (25)",
+    "/cheap-houses/houses-under-50000-in-japan: Cheap houses for sale in Japan under €50,000 (16) · RealHunt",
+    "/cheap-houses/near-an-airport: Homes within 30 km of an airport (210, from €10,240)",
+    "/cheap-houses/near-an-airport-in-japan: Cheap houses within 30 km of an airport in Japan (12)",
+    "/cheap-houses/near-osaka: Cheap homes for sale within 100 km of Osaka (10) · RealHunt",
+    "/cheap-houses/new-this-month-in-greece: Homes added in the last 30 days in Greece (12, from €85,000)",
+    "/cheap-houses/new-this-month-in-japan: Cheap houses added in the last 30 days in Japan (18)",
+    "/cheap-houses/new-this-week: Homes added in the last 7 days (154, from €54,300)",
+    "/cheap-houses/on-an-island: Homes on an island (61, from €30,000) · RealHunt",
+    "/cheap-houses/on-an-island-in-greece: Houses on an island in Greece (14, from €68,000) · RealHunt",
+    "/cheap-houses/over-120-sqm: Homes over 120 m² (139, from €39,950) · RealHunt",
+    "/cheap-houses/over-120-sqm-in-greece: Houses over 120 m² in Greece (4, from €170,000) · RealHunt",
+    "/cheap-houses/over-80-sqm: Homes over 80 m² (320, from €7,400) · RealHunt",
+    "/cheap-houses/over-80-sqm-in-greece: Houses over 80 m² in Greece (14, from €85,000) · RealHunt",
+    "/cheap-houses/score-90-plus: Cheap homes scoring 90 or more (120, from €7,400) · RealHunt",
+    "/cheap-houses/score-90-plus-in-japan: Cheap houses scoring 90 or more in Japan (10, from €7,400)",
+    "/cheap-houses/single-storey: Single-storey houses (33, from €10,240) · RealHunt",
+    "/cheap-houses/single-storey-in-japan: Cheap single-storey homes in Japan (9, from €10,240)",
+    "/cheap-houses/stone-houses: Stone houses (73, from €12,000) · RealHunt",
+    "/cheap-houses/stone-houses-in-greece: Stone houses in Greece (15, from €68,000) · RealHunt",
+    "/cheap-houses/under-100000: Cheap houses for sale under €100,000 (365, from €7,400)",
+    "/cheap-houses/under-100000-dollars: Cheap homes for sale under $100,000 (299, from €7,400)",
+    "/cheap-houses/under-100000-dollars-in-spain: Cheap homes for sale in Spain under $100,000 (52) · RealHunt",
+    "/cheap-houses/under-100000-dollars-in-sweden: Cheap homes for sale in Sweden under $100,000 (33)",
+    "/cheap-houses/under-30000: Cheap houses for sale under €30,000 (28, from €7,400)",
+    "/cheap-houses/under-500-per-sqm: Cheap homes under €500 per m² (45, from €7,400) · RealHunt",
+    "/cheap-houses/under-500-per-sqm-in-japan: Cheap houses under €500 per m² in Japan (12, from €7,400)",
+    "/cheap-houses/under-50000: Cheap houses for sale under €50,000 (73, from €7,400)",
+    "/cheap-houses/under-50000-dollars: Cheap homes for sale under $50,000 (57, from €7,400)",
+    "/cheap-houses/under-50000-pounds: Cheap homes for sale under £50,000 (121, from €7,400)",
+    "/cheap-houses/under-75000: Cheap homes for sale under €75,000 (196, from €7,400)",
+    "/cheap-houses/village-houses: Cheap village houses (314, from €7,400) · RealHunt",
+    "/cheap-houses/with-a-terrace: Homes with a terrace or balcony (339, from €10,240)",
+    "/cheap-houses/with-a-terrace-in-greece: Houses with a terrace or balcony in Greece (21) · RealHunt",
+    "/cheap-houses/with-fireplace: Homes with a fireplace (106, from €7,400) · RealHunt",
+    "/cheap-houses/with-fireplace-in-greece: Houses with a fireplace in Greece (11, from €95,000)",
+    "/cheap-houses/with-garden: Houses with a garden (208, from €19,320) · RealHunt",
+    "/cheap-houses/with-garden-in-greece: Houses with a garden in Greece (12, from €76,000) · RealHunt",
+    "... 74 more"
    ]
   },
   "depth": {
@@ -1512,9 +1556,9 @@
  },
  "sitemaps": {
   "sitemap-main.xml": 22,
-  "sitemap-countries.xml": 237,
+  "sitemap-countries.xml": 238,
   "sitemap-prices.xml": 57,
-  "sitemap-cheap-houses.xml": 345,
+  "sitemap-cheap-houses.xml": 344,
   "sitemap-guides.xml": 61,
   "sitemap-costs.xml": 56,
   "sitemap-blog.xml": 39,
@@ -1553,9 +1597,9 @@
   "sitemap-new-builds.xml": 8,
   "sitemap-more.xml": 91,
   "sitemap-es-main.xml": 19,
-  "sitemap-es-countries.xml": 237,
+  "sitemap-es-countries.xml": 238,
   "sitemap-es-prices.xml": 57,
-  "sitemap-es-cheap-houses.xml": 345,
+  "sitemap-es-cheap-houses.xml": 344,
   "sitemap-es-guides.xml": 61,
   "sitemap-es-costs.xml": 56,
   "sitemap-es-blog.xml": 38,

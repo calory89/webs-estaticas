@@ -4,7 +4,7 @@ Cómo trabaja RealHunt
 
 RealHunt nunca se inventa urgencias, reseñas, rentabilidades ni cifras, nunca vende un puesto en una lista, nunca cobra a los compradores y nunca publica un teléfono. La generación de la web revisa cada página en busca de urgencias falsas, rentabilidades prometidas, teléfonos y marcado de reseñas, y avisa de lo que encuentra.
 
-Actualizado el 22 de noviembre de 2026
+Actualizado el 24 de noviembre de 2026
 
 ### Sin urgencias falsas
 
@@ -59,4 +59,4 @@ Las fotos pertenecen a los anuncios originales. No las licenciamos ni las retoca
 - [Política editorial](https://realhunt.co/es/editorial-policy)
 
 ---
-Fuente: https://realhunt.co/es/what-we-never-do (RealHunt, 2026-11-22)
+Fuente: https://realhunt.co/es/what-we-never-do (RealHunt, 2026-11-24)

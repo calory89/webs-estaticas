@@ -1,6 +1,6 @@
 ## Houses for sale in Switzerland
 
-Updated 22 November 2026. Newest home added 4 October 2026.
+Updated 24 November 2026. Newest home added 4 October 2026.
 
 RealHunt lists 10 houses for sale in Switzerland today, priced from €32,300 to €88,400. The cheapest costs €32,300: [70 m² modular house with heat pump, to move to your own plot](https://realhunt.co/deal/ch-lengnau-30k-26130), in Lengnau (70 m², 1 bedroom). The median price is €70,100 (€2,337/m²), against €93,200 (€1,220/m²) for the 615 homes on RealHunt in 29 countries.
 Can you buy here? Read this first
@@ -33,20 +33,20 @@ Foreign buyers
 Some limits
 
 Data of
-22 Nov 2026
+24 Nov 2026
 
 ### The 10 homes, best score first
 
-- [Score 82€70,100Renovated chalet with garden in a green campsite in the Neuchâtel hillsLignières, Neuchâtel30 m² · 1 bed · €2,337/m² · 49 days on RealHuntA renovated 1.5-room chalet of about 30 m² on a plot of around 150 m², with large sliding windows, a new kitchen and a shower room.](https://realhunt.co/deal/ch-lignieres-65k-24005)
-- [Score 76€85,900Mobile home with 120 m² garden, gazebo and pellet heating in ValaisRaron, Valais34 m² · 1 bed · €2,526/m² · 49 days on RealHuntThe 'Bijou' mobile home: 34 m² of living space plus a veranda, on a 213 m² plot with about 120 m² of garden, a gazebo with lounge and an outdoor…](https://realhunt.co/deal/ch-raron-80k-63919)
-- [Score 70€88,400Like-new furnished camping house in the sunny Upper ValaisRaron, Valais34 m² · 2 bed · €2,600/m² · 49 days on RealHuntOnly two years old and sold furnished: about 34 m² with a cosy living area, kitchen, bathroom and bedroom, shutters and fly screens, plus extras…](https://realhunt.co/deal/ch-raron-82k-76555)
-- [Score 92€32,30070 m² modular house with heat pump, to move to your own plotLengnau, Bern70 m² · 1 bed · €461/m² · 49 days on RealHuntFour solid living modules under a classic pitched roof, about 70 m² gross: kitchen with fridge and oven, a bright open living and dining room, and…](https://realhunt.co/deal/ch-lengnau-30k-26130)
-- [Score 85€52,800Holiday cottage with winter garden by a bathing lake in SalgeschSalgesch, Valais40 m² · 1 bed · €1,320/m² · 49 days on RealHuntAbout 40 m² on a plot of around 180 m² at Camping Swissplage, with a winter garden, an outdoor seating area for barbecues and a garden shed.](https://realhunt.co/deal/ch-salgesch-49k-76547)
-- [Score 84€42,600Fenced 2.5-room camping house with a sunny terrace in RaronRaron, Valais45 m² · 2 bed · €947/m² · 49 days on RealHuntA wooden camping house of about 45 m², fenced for privacy: furnished kitchen, a living corner and a dining area, a shower room, and two more…](https://realhunt.co/deal/ch-raron-40k-76568)
-- [Score 83€80,700Year-round wooden chalet with garden and pool access near Lake ZurichGommiswald, St. Gallen50 m² · 2 bed · €1,614/m² · 49 days on RealHuntTwo bedrooms, an open living and kitchen area and a bathroom in about 50 m², on a 189 m² pitch in the Ricken leisure park above Lake Zurich.](https://realhunt.co/deal/ch-gommiswald-75k-93656)
-- [Score 81€74,900Winter-proof wooden chalet by a stream in the Valais AlpsRaron, Valais48 m² · 1 bed · €1,560/m² · 49 days on RealHuntA 2.5-room chalet of about 48 m² in a quiet corner of the 4-star Camping Santa Monica in Raron, right on the stream, usable all year.](https://realhunt.co/deal/ch-raron-70k-61979)
-- [Score 78€59,300Wooden tiny house with two lofts and a wood stove, ready to moveBrig, Valais25 m² · 1 bed · €2,372/m² · 49 days on RealHuntA newly built tiny house: about 25 m² with an open living area, a custom kitchen with induction hob and oven, a shower room with flush toilet, two…](https://realhunt.co/deal/ch-brig-55k-63831)
-- [Score 74€59,300Bright as-new tiny house with sleeping loft and heat pumpBrig, Valais20 m² · 1 bed · €2,965/m² · 49 days on RealHuntBuilt in 2023 and as new: about 20 m² with an open living and dining area, a kitchenette with induction hob, a modern shower room and a sleeping…](https://realhunt.co/deal/ch-brig-55k-63824)
+- [Score 82€70,100Renovated chalet with garden in a green campsite in the Neuchâtel hillsLignières, Neuchâtel30 m² · 1 bed · €2,337/m² · 51 days on RealHuntA renovated 1.5-room chalet of about 30 m² on a plot of around 150 m², with large sliding windows, a new kitchen and a shower room.](https://realhunt.co/deal/ch-lignieres-65k-24005)
+- [Score 76€85,900Mobile home with 120 m² garden, gazebo and pellet heating in ValaisRaron, Valais34 m² · 1 bed · €2,526/m² · 51 days on RealHuntThe 'Bijou' mobile home: 34 m² of living space plus a veranda, on a 213 m² plot with about 120 m² of garden, a gazebo with lounge and an outdoor…](https://realhunt.co/deal/ch-raron-80k-63919)
+- [Score 70€88,400Like-new furnished camping house in the sunny Upper ValaisRaron, Valais34 m² · 2 bed · €2,600/m² · 51 days on RealHuntOnly two years old and sold furnished: about 34 m² with a cosy living area, kitchen, bathroom and bedroom, shutters and fly screens, plus extras…](https://realhunt.co/deal/ch-raron-82k-76555)
+- [Score 92€32,30070 m² modular house with heat pump, to move to your own plotLengnau, Bern70 m² · 1 bed · €461/m² · 51 days on RealHuntFour solid living modules under a classic pitched roof, about 70 m² gross: kitchen with fridge and oven, a bright open living and dining room, and…](https://realhunt.co/deal/ch-lengnau-30k-26130)
+- [Score 85€52,800Holiday cottage with winter garden by a bathing lake in SalgeschSalgesch, Valais40 m² · 1 bed · €1,320/m² · 51 days on RealHuntAbout 40 m² on a plot of around 180 m² at Camping Swissplage, with a winter garden, an outdoor seating area for barbecues and a garden shed.](https://realhunt.co/deal/ch-salgesch-49k-76547)
+- [Score 84€42,600Fenced 2.5-room camping house with a sunny terrace in RaronRaron, Valais45 m² · 2 bed · €947/m² · 51 days on RealHuntA wooden camping house of about 45 m², fenced for privacy: furnished kitchen, a living corner and a dining area, a shower room, and two more…](https://realhunt.co/deal/ch-raron-40k-76568)
+- [Score 83€80,700Year-round wooden chalet with garden and pool access near Lake ZurichGommiswald, St. Gallen50 m² · 2 bed · €1,614/m² · 51 days on RealHuntTwo bedrooms, an open living and kitchen area and a bathroom in about 50 m², on a 189 m² pitch in the Ricken leisure park above Lake Zurich.](https://realhunt.co/deal/ch-gommiswald-75k-93656)
+- [Score 81€74,900Winter-proof wooden chalet by a stream in the Valais AlpsRaron, Valais48 m² · 1 bed · €1,560/m² · 51 days on RealHuntA 2.5-room chalet of about 48 m² in a quiet corner of the 4-star Camping Santa Monica in Raron, right on the stream, usable all year.](https://realhunt.co/deal/ch-raron-70k-61979)
+- [Score 78€59,300Wooden tiny house with two lofts and a wood stove, ready to moveBrig, Valais25 m² · 1 bed · €2,372/m² · 51 days on RealHuntA newly built tiny house: about 25 m² with an open living area, a custom kitchen with induction hob and oven, a shower room with flush toilet, two…](https://realhunt.co/deal/ch-brig-55k-63831)
+- [Score 74€59,300Bright as-new tiny house with sleeping loft and heat pumpBrig, Valais20 m² · 1 bed · €2,965/m² · 51 days on RealHuntBuilt in 2023 and as new: about 20 m² with an open living and dining area, a kitchenette with induction hob, a modern shower room and a sleeping…](https://realhunt.co/deal/ch-brig-55k-63824)
 
 ### Compare the 10 homes, cheapest first
 
@@ -130,11 +130,11 @@ By feature and budget [With a pool under €100,000 4](https://realhunt.co/cheap
 
 Neighbouring countries [France 44](https://realhunt.co/homes/france) [Italy 83](https://realhunt.co/homes/italy) [Germany 21](https://realhunt.co/homes/germany)
 
-By country [Spain 134](https://realhunt.co/homes/spain) [Italy 83](https://realhunt.co/homes/italy) [United States 61](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [France 44](https://realhunt.co/homes/france) [Sweden 40](https://realhunt.co/homes/sweden) [Japan 33](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 27](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Portugal 6](https://realhunt.co/homes/portugal) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
+By country [Spain 134](https://realhunt.co/homes/spain) [Italy 83](https://realhunt.co/homes/italy) [United States 61](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [France 44](https://realhunt.co/homes/france) [Sweden 40](https://realhunt.co/homes/sweden) [Japan 34](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 26](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Portugal 6](https://realhunt.co/homes/portugal) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
 
 These listings come from immoscout24.ch (10). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 
 [Email me new homes in Switzerland](https://realhunt.co/alerts?country=Switzerland) · [Filter and sort these homes](https://realhunt.co/?country=Switzerland#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in Switzerland](https://realhunt.co/sitemap/switzerland)
 
 ---
-Source: https://realhunt.co/homes/switzerland (RealHunt, 2026-11-22). Licence CC BY 4.0: quote it with a link to the page.
+Source: https://realhunt.co/homes/switzerland (RealHunt, 2026-11-24). Licence CC BY 4.0: quote it with a link to the page.

@@ -2,9 +2,9 @@
 
 58 of 705 homes on RealHunt with a flood indicator (8%) are marked medium or high, and 13 are marked high. The share is largest in the Dominican Republic (100% of 5), the United States (31% of 62), Greece (19% of 27). No home is marked medium or high in France, Poland, Germany, Portugal, the Netherlands, Canada, Switzerland and the United Kingdom.
 
-The indicator is RealHunt's own first check, 22 November 2026: an official flood zone where one is open to query (55 homes, United States), and otherwise a rough reading of height above sea level and distance to the sea and to a large river. It is not an official flood map.
+The indicator is RealHunt's own first check, 24 November 2026: an official flood zone where one is open to query (55 homes, United States), and otherwise a rough reading of height above sea level and distance to the sea and to a large river. It is not an official flood map.
 
-Updated 22 November 2026. Source: RealHunt, https://realhunt.co/research/flood-indicator (CC BY 4.0). CSV: https://realhunt.co/research/flood-indicator.csv
+Updated 24 November 2026. Source: RealHunt, https://realhunt.co/research/flood-indicator (CC BY 4.0). CSV: https://realhunt.co/research/flood-indicator.csv
 
 ## The table
 

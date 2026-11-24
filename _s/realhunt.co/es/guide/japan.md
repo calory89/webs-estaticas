@@ -65,4 +65,4 @@ Impuesto sobre los ingresos por alquiler: El alquiler pagado a un no residente t
 Quién escribe esto. RealHunt Research es el nombre con el que RealHunt publica sus propios estudios y guías; RealHunt pertenece a Equinox Investment Group LLC, fundada por Carlos de Ory Gordillo. Las normas, los impuestos y los gastos se recopilan de las fuentes citadas en esta página; los precios salen de las casas publicadas en RealHunt. Información general, no asesoramiento jurídico ni fiscal. [Política editorial y correcciones](https://realhunt.co/es/editorial-policy) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Quiénes somos](https://realhunt.co/es/about)
 
 ---
-Fuente: https://realhunt.co/es/guide/japan (RealHunt, 2026-11-22)
+Fuente: https://realhunt.co/es/guide/japan (RealHunt, 2026-11-24)

@@ -2,9 +2,9 @@
 
 Among the 15 countries with at least 10 homes with a known size on RealHunt, the lowest median asking price per square metre is in Japan (€468/m²), Denmark (€790/m²), Sweden (€800/m²), and the highest in the Netherlands (€4,286/m²). The lowest median asking price is in Japan (€54,280) and Germany (€55,000).
 
-Medians of 726 listings in 24 countries, each checked by a person, on 22 November 2026. They describe the cheap, move-in-ready homes RealHunt lists, not each country's whole market.
+Medians of 726 listings in 24 countries, each checked by a person, on 24 November 2026. They describe the cheap, move-in-ready homes RealHunt lists, not each country's whole market.
 
-Updated 22 November 2026. Source: RealHunt, https://realhunt.co/research/prices (CC BY 4.0). CSV: https://realhunt.co/research/prices.csv
+Updated 24 November 2026. Source: RealHunt, https://realhunt.co/research/prices (CC BY 4.0). CSV: https://realhunt.co/research/prices.csv
 
 ## The table
 

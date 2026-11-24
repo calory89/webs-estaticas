@@ -4,7 +4,7 @@ Prensa
 
 RealHunt (realhunt.co) es una web donde los extranjeros encuentran, comprueban y compran vivienda: reúne casas baratas en venta en todo el mundo, cada una revisada por una persona y puntuada de 70 a 98 frente a todas las demás de la web. No es una inmobiliaria: cada casa enlaza con su anuncio original y los compradores no pagan nada. También publica, con permiso para citarlos, las normas de compra, los impuestos y los gastos de 20 países y datos sobre lo que cuestan las casas baratas.
 
-Cifras actualizadas el 22 de noviembre de 2026 · Contacto de prensa: carlos@equinoxinvestmentgroup.com
+Cifras actualizadas el 24 de noviembre de 2026 · Contacto de prensa: carlos@equinoxinvestmentgroup.com
 
 ### RealHunt en cifras
 
@@ -69,4 +69,4 @@ Prensa, peticiones de datos y entrevistas: carlos@equinoxinvestmentgroup.com. Re
 Escribir al contacto de prensa[Todos los datos](https://realhunt.co/es/research)[Insignias y widgets](https://realhunt.co/es/embed)
 
 ---
-Fuente: https://realhunt.co/es/press (RealHunt, 2026-11-22)
+Fuente: https://realhunt.co/es/press (RealHunt, 2026-11-24)

@@ -2,9 +2,9 @@
 
 The median home on RealHunt costs 1.5 years of average net pay in Germany and 8 in the Netherlands, among the 10 countries with at least 10 homes and Eurostat earnings data. In Germany that is a median asking price of €55,000 against net earnings of €36,535 a year.
 
-Prices: 549 homes on RealHunt, 22 November 2026. Pay: Eurostat, annual net earnings of a single person without children on the average wage, 2025. These are cheap homes chosen by a person, not each country's average home.
+Prices: 549 homes on RealHunt, 24 November 2026. Pay: Eurostat, annual net earnings of a single person without children on the average wage, 2025. These are cheap homes chosen by a person, not each country's average home.
 
-Updated 22 November 2026. Source: RealHunt, https://realhunt.co/research/years-of-salary (CC BY 4.0). CSV: https://realhunt.co/research/years-of-salary.csv
+Updated 24 November 2026. Source: RealHunt, https://realhunt.co/research/years-of-salary (CC BY 4.0). CSV: https://realhunt.co/research/years-of-salary.csv
 
 ## The table
 

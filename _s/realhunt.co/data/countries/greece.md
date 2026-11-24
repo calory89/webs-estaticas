@@ -1,8 +1,8 @@
 # Cheap homes in Greece: key facts and every home on RealHunt
 
-On 22 November 2026, RealHunt lists 27 homes for sale in Greece, each one checked by a person. In Greece, the median asking price of those 27 homes is €155,000 (€1,477 per m², from the 26 homes with a known size); the cheapest costs €68,000 and the most expensive €199,000. Taxes and fees add about 5.5–7% to the price of a home in Greece (figures as of 2026).
+On 24 November 2026, RealHunt lists 27 homes for sale in Greece, each one checked by a person. In Greece, the median asking price of those 27 homes is €155,000 (€1,477 per m², from the 26 homes with a known size); the cheapest costs €68,000 and the most expensive €199,000. Taxes and fees add about 5.5–7% to the price of a home in Greece (figures as of 2026).
 
-Source: RealHunt, https://realhunt.co/homes/greece · Updated 22 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
+Source: RealHunt, https://realhunt.co/homes/greece · Updated 24 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/greece.json · PDF: https://realhunt.co/data/countries/greece.pdf
 
 ## Key facts
@@ -18,7 +18,7 @@ Also as JSON: https://realhunt.co/data/countries/greece.json · PDF: https://rea
 | Taxes and fees to buy | 5.5–7% of the price (as of 2026) |
 | Can foreigners buy? | Yes. Buyers from outside the EU and EFTA need a permit to buy in designated border areas (parts of northern Greece and eastern Aegean islands such as the Dodecanese and Rhodes). The government has announced a 15% transfer tax for non-EU buyers of homes from 1 January 2027, not yet final in September 2026. |
 | Yearly property tax | Owners on 1 January pay the unified property tax (ENFIA), calculated per property from its location, size, age and official zone value, with an extra charge if total Greek property exceeds €500,000. |
-| Date of these figures | 22 November 2026 |
+| Date of these figures | 24 November 2026 |
 
 ## Costs and taxes
 

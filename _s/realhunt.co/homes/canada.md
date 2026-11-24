@@ -1,6 +1,6 @@
 ## Houses for sale in Canada
 
-Updated 22 November 2026. Newest home added 20 November 2026.
+Updated 24 November 2026. Newest home added 20 November 2026.
 
 RealHunt lists 16 houses for sale in Canada today, priced from €55,842 to €190,700. The cheapest costs €55,842: [Updated 2-bed house in Bulyea, Saskatchewan](https://realhunt.co/deal/bulyea-55842), in Bulyea (62 m², 2 bedrooms). The median price is €99,500 (€963/m²), against €93,200 (€1,220/m²) for the 615 homes on RealHunt in 29 countries.
 Can you buy here? Read this first
@@ -33,26 +33,26 @@ Foreign buyers
 Some limits
 
 Data of
-22 Nov 2026
+24 Nov 2026
 
 ### The 16 homes, best score first
 
-- [Score 90New€123,400Updated five-bedroom house with a bathroom for every bedroom in Twillingate, NewfoundlandTwillingate, Newfoundland203 m² · 5 bed · €608/m² · 2 days on RealHuntAsking C$194,000 (about €123,400), under €610 per m².](https://realhunt.co/deal/ca-twillingate-nl-five-bed-house-each-room-ensuite-194k)
-- [Score 88New€124,000Freshly painted three-bedroom house with ocean views in Hillsburn, Nova ScotiaHillsburn, Nova Scotia106 m² · 3 bed · €1,170/m² · 2 days on RealHuntAsking C$194,900 (about €124,000) for a three-bedroom house of about 106 m² on a hillside plot in Hillsburn, a shore village on the Bay of Fundy…](https://realhunt.co/deal/ca-hillsburn-ns-cottage-house-bay-of-fundy-views-195k)
-- [Score 87New€159,000Character 1888 house with harbour views and a koi pond garden in Pictou, Nova ScotiaPictou, Nova Scotia171 m² · 3 bed · €930/m² · 2 days on RealHuntAsking C$249,900 (about €159,000) for a white wooden house of about 171 m², built in 1888 in the preserved old town of Pictou, with views over the…](https://realhunt.co/deal/ca-pictou-ns-1888-house-harbour-views-koi-pond-250k)
-- [Score 86New€127,100Cottage-style house with a new kitchen near the waterfront in Pictou, Nova ScotiaPictou, Nova Scotia132 m² · 3 bed · €963/m² · 4 days on RealHuntAsking C$199,900 (about €127,100) for a white cottage-style house of about 132 m² in the heart of Pictou, a historic harbour town on the…](https://realhunt.co/deal/ca-pictou-ns-cottage-new-kitchen-200k)
-- [Score 85New€140,000Updated character house with a wood stove and workshop in Liverpool, Nova ScotiaLiverpool, Nova Scotia155 m² · 3 bed · €903/m² · 2 days on RealHuntAsking C$220,000 (about €140,000) for a 1935 house of about 155 m², a few minutes from downtown Liverpool, a harbour town on Nova Scotia's South…](https://realhunt.co/deal/ca-liverpool-ns-updated-character-house-workshop-220k)
-- [Score 82New€190,700Four-bed heritage house with tin ceilings and flower gardens in downtown SummersideSummerside, Prince Edward Island156 m² · 4 bed · €1,222/m² · 2 days on RealHuntAsking C$299,900 (about €190,700).](https://realhunt.co/deal/ca-summerside-pe-heritage-house-tin-ceilings-300k)
-- [Score 82New€190,700Four-bedroom house on about five acres in Saint Andrews, New BrunswickSaint Andrews, New Brunswick150 m² · 4 bed · €1,271/m² · 4 days on RealHuntAsking C$299,900 (about €190,700) for a white house of about 150 m² on roughly five acres at the edge of Saint Andrews, a well-known coastal…](https://realhunt.co/deal/ca-saint-andrews-nb-four-bed-house-5-acres-300k)
-- [Score 94€86,962Updated 2-bed house in Glace Bay, Nova ScotiaGlace Bay, Nova Scotia124 m² · 2 bed · €701/m² · 60 days on RealHunt124 m² (1,334 sq ft), 2 bed, 1 bath.](https://realhunt.co/deal/glace-bay-86962)
-- [Score 92€90,400Big family house with sea views over the Strait of CansoMulgrave, Nova Scotia215 m² · 3 bed · €420/m² · 48 days on RealHuntA well-kept 1949 house in Mulgrave, Nova Scotia, with three bedrooms, 1.5 baths and beautiful views over the Strait of Canso.](https://realhunt.co/deal/ca-mulgrave-90k-623450)
-- [Score 88€55,842Updated 2-bed house in Bulyea, SaskatchewanBulyea, Saskatchewan62 m² · 2 bed · €901/m² · 60 days on RealHunt62 m² (672 sq ft), 2 bed, 1 bath, built 1957.](https://realhunt.co/deal/bulyea-55842)
-- [Score 88€68,327Updated 2-bed house in Avonlea, SaskatchewanAvonlea, Saskatchewan77 m² · 2 bed · €887/m² · 60 days on RealHunt77 m² (824 sq ft), 2 bed, 1 bath, built 1926.](https://realhunt.co/deal/avonlea-68327)
-- [Score 86€99,500Acadian coast house with 4 bedrooms and a new bathroomGrande-Anse, New Brunswick107 m² · 4 bed · €930/m² · 48 days on RealHuntA 1.5-storey house of about 107 m² in Grande-Anse on New Brunswick's Acadian coast, by the Bay of Chaleur.](https://realhunt.co/deal/ca-grande-anse-99k-148091)
-- [Score 86€93,111Renovated 2-bed house in Astle, New BrunswickAstle, New Brunswick94 m² · 2 bed · €991/m² · 60 days on RealHunt94 m² (1,016 sq ft), 2 bed, 1 bath.](https://realhunt.co/deal/astle-93111)
-- [Score 85€99,323Move-in ready 2-bed house in Shearstown, NewfoundlandShearstown, Newfoundland79 m² · 2 bed · €1,257/m² · 60 days on RealHunt79 m² (855 sq ft), 2 bed, 1 bath, built 1945.](https://realhunt.co/deal/shearstown-99323)
-- [Score 85€99,323Updated 2-bed house in Minto, New BrunswickMinto, New Brunswick83 m² · 2 bed · €1,197/m² · 60 days on RealHunt83 m² (896 sq ft), 2 bed, 1 bath.](https://realhunt.co/deal/minto-99323)
-- [Score 81€92,552Updated 2-bed house in Hughes Brook, NewfoundlandHughes Brook, Newfoundland62 m² · 2 bed · €1,493/m² · 60 days on RealHunt62 m² (672 sq ft), 2 bed, 1 bath, built 1962.](https://realhunt.co/deal/hughes-brook-92552)
+- [Score 90New€123,400Updated five-bedroom house with a bathroom for every bedroom in Twillingate, NewfoundlandTwillingate, Newfoundland203 m² · 5 bed · €608/m² · 4 days on RealHuntAsking C$194,000 (about €123,400), under €610 per m².](https://realhunt.co/deal/ca-twillingate-nl-five-bed-house-each-room-ensuite-194k)
+- [Score 88New€124,000Freshly painted three-bedroom house with ocean views in Hillsburn, Nova ScotiaHillsburn, Nova Scotia106 m² · 3 bed · €1,170/m² · 4 days on RealHuntAsking C$194,900 (about €124,000) for a three-bedroom house of about 106 m² on a hillside plot in Hillsburn, a shore village on the Bay of Fundy…](https://realhunt.co/deal/ca-hillsburn-ns-cottage-house-bay-of-fundy-views-195k)
+- [Score 87New€159,000Character 1888 house with harbour views and a koi pond garden in Pictou, Nova ScotiaPictou, Nova Scotia171 m² · 3 bed · €930/m² · 4 days on RealHuntAsking C$249,900 (about €159,000) for a white wooden house of about 171 m², built in 1888 in the preserved old town of Pictou, with views over the…](https://realhunt.co/deal/ca-pictou-ns-1888-house-harbour-views-koi-pond-250k)
+- [Score 86New€127,100Cottage-style house with a new kitchen near the waterfront in Pictou, Nova ScotiaPictou, Nova Scotia132 m² · 3 bed · €963/m² · 6 days on RealHuntAsking C$199,900 (about €127,100) for a white cottage-style house of about 132 m² in the heart of Pictou, a historic harbour town on the…](https://realhunt.co/deal/ca-pictou-ns-cottage-new-kitchen-200k)
+- [Score 85New€140,000Updated character house with a wood stove and workshop in Liverpool, Nova ScotiaLiverpool, Nova Scotia155 m² · 3 bed · €903/m² · 4 days on RealHuntAsking C$220,000 (about €140,000) for a 1935 house of about 155 m², a few minutes from downtown Liverpool, a harbour town on Nova Scotia's South…](https://realhunt.co/deal/ca-liverpool-ns-updated-character-house-workshop-220k)
+- [Score 82New€190,700Four-bed heritage house with tin ceilings and flower gardens in downtown SummersideSummerside, Prince Edward Island156 m² · 4 bed · €1,222/m² · 4 days on RealHuntAsking C$299,900 (about €190,700).](https://realhunt.co/deal/ca-summerside-pe-heritage-house-tin-ceilings-300k)
+- [Score 82New€190,700Four-bedroom house on about five acres in Saint Andrews, New BrunswickSaint Andrews, New Brunswick150 m² · 4 bed · €1,271/m² · 6 days on RealHuntAsking C$299,900 (about €190,700) for a white house of about 150 m² on roughly five acres at the edge of Saint Andrews, a well-known coastal…](https://realhunt.co/deal/ca-saint-andrews-nb-four-bed-house-5-acres-300k)
+- [Score 94€86,962Updated 2-bed house in Glace Bay, Nova ScotiaGlace Bay, Nova Scotia124 m² · 2 bed · €701/m² · 62 days on RealHunt124 m² (1,334 sq ft), 2 bed, 1 bath.](https://realhunt.co/deal/glace-bay-86962)
+- [Score 92€90,400Big family house with sea views over the Strait of CansoMulgrave, Nova Scotia215 m² · 3 bed · €420/m² · 50 days on RealHuntA well-kept 1949 house in Mulgrave, Nova Scotia, with three bedrooms, 1.5 baths and beautiful views over the Strait of Canso.](https://realhunt.co/deal/ca-mulgrave-90k-623450)
+- [Score 88€55,842Updated 2-bed house in Bulyea, SaskatchewanBulyea, Saskatchewan62 m² · 2 bed · €901/m² · 62 days on RealHunt62 m² (672 sq ft), 2 bed, 1 bath, built 1957.](https://realhunt.co/deal/bulyea-55842)
+- [Score 88€68,327Updated 2-bed house in Avonlea, SaskatchewanAvonlea, Saskatchewan77 m² · 2 bed · €887/m² · 62 days on RealHunt77 m² (824 sq ft), 2 bed, 1 bath, built 1926.](https://realhunt.co/deal/avonlea-68327)
+- [Score 86€99,500Acadian coast house with 4 bedrooms and a new bathroomGrande-Anse, New Brunswick107 m² · 4 bed · €930/m² · 50 days on RealHuntA 1.5-storey house of about 107 m² in Grande-Anse on New Brunswick's Acadian coast, by the Bay of Chaleur.](https://realhunt.co/deal/ca-grande-anse-99k-148091)
+- [Score 86€93,111Renovated 2-bed house in Astle, New BrunswickAstle, New Brunswick94 m² · 2 bed · €991/m² · 62 days on RealHunt94 m² (1,016 sq ft), 2 bed, 1 bath.](https://realhunt.co/deal/astle-93111)
+- [Score 85€99,323Move-in ready 2-bed house in Shearstown, NewfoundlandShearstown, Newfoundland79 m² · 2 bed · €1,257/m² · 62 days on RealHunt79 m² (855 sq ft), 2 bed, 1 bath, built 1945.](https://realhunt.co/deal/shearstown-99323)
+- [Score 85€99,323Updated 2-bed house in Minto, New BrunswickMinto, New Brunswick83 m² · 2 bed · €1,197/m² · 62 days on RealHunt83 m² (896 sq ft), 2 bed, 1 bath.](https://realhunt.co/deal/minto-99323)
+- [Score 81€92,552Updated 2-bed house in Hughes Brook, NewfoundlandHughes Brook, Newfoundland62 m² · 2 bed · €1,493/m² · 62 days on RealHunt62 m² (672 sq ft), 2 bed, 1 bath, built 1962.](https://realhunt.co/deal/hughes-brook-92552)
 
 ### Compare the 16 homes, cheapest first
 
@@ -110,6 +110,7 @@ General information, not tax or legal advice. Figures checked in 2026.
 ### What to watch out for
 
 - 3 of 16 are close to a motorway, a railway or an airport (high on our noise check).
+- 7 of 16 were added more than 60 days ago. Ask the agent whether they are still for sale before you plan a trip.
 - As a group these homes score lowest on price (33/100 on average) and highest on buying costs (88/100).
 
 ### Questions buyers ask
@@ -154,11 +155,11 @@ By feature and budget [By the sea under €100,000 5](https://realhunt.co/cheap-
 
 Neighbouring countries [United States 61](https://realhunt.co/homes/united-states)
 
-By country [Spain 134](https://realhunt.co/homes/spain) [Italy 83](https://realhunt.co/homes/italy) [United States 61](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [France 44](https://realhunt.co/homes/france) [Sweden 40](https://realhunt.co/homes/sweden) [Japan 33](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 27](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Switzerland 10](https://realhunt.co/homes/switzerland) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Portugal 6](https://realhunt.co/homes/portugal) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
+By country [Spain 134](https://realhunt.co/homes/spain) [Italy 83](https://realhunt.co/homes/italy) [United States 61](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [France 44](https://realhunt.co/homes/france) [Sweden 40](https://realhunt.co/homes/sweden) [Japan 34](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 26](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Switzerland 10](https://realhunt.co/homes/switzerland) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Portugal 6](https://realhunt.co/homes/portugal) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
 
 These listings come from redfin.ca (9), remax.ca (7). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 
 [Email me new homes in Canada](https://realhunt.co/alerts?country=Canada) · [Filter and sort these homes](https://realhunt.co/?country=Canada#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in Canada](https://realhunt.co/sitemap/canada)
 
 ---
-Source: https://realhunt.co/homes/canada (RealHunt, 2026-11-22). Licence CC BY 4.0: quote it with a link to the page.
+Source: https://realhunt.co/homes/canada (RealHunt, 2026-11-24). Licence CC BY 4.0: quote it with a link to the page.
