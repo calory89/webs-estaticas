@@ -1,1 +1,0 @@
-import{b as e}from"./cities-DepED3lH.js";import{t}from"./legal-CGV0SMtV.js";var n=e(),r=()=>(0,n.jsx)(t,{kind:`privacy`});export{r as component};

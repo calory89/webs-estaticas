@@ -1,1 +1,0 @@
-function e(e){if(e==null)return`—`;let t=Math.floor(e/6e4),n=Math.floor(e%6e4/1e3),r=Math.floor(e%1e3/10);return`${t}:${String(n).padStart(2,`0`)}.${String(r).padStart(2,`0`)}`}export{e as t};
