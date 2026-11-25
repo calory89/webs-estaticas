@@ -91,15 +91,18 @@ for g in guides4.GUIDES4 + guides5.GUIDES5:
     GUIDES_ALL.append(ng)
 # ---- batch 6 (23-nov-2026): 100 guides; English kept in the Worker, other languages' bodies go to KV (DATA) to stay under the 3 MB limit ----
 import guides6_data, guides6a, guides6b, guides6c, hashlib as _hl
-GUIDES6 = guides6_data.GUIDES6D + guides6a.GUIDES6A + guides6b.GUIDES6B + guides6c.GUIDES6C
+import guides7
+GUIDES6 = guides6_data.GUIDES6D + guides6a.GUIDES6A + guides6b.GUIDES6B + guides6c.GUIDES6C + guides7.GUIDES7
 KV6 = []
 for g in GUIDES6:
     e = {"t": g["t"], "d": g["d"], "b": g["b"], "faq": g["faq"]}
     ng = {"s": g["s"], "img": g["img"], "en": e, "kv": 1}
     if g.get("rt"): ng["rt"] = g["rt"]
     for l in LANGS[1:]:
-        tr = tr_tree(dict(e, b=_parts(e["b"])), l)
-        if isinstance(tr.get("b"), list): tr = dict(tr, b="".join(tr["b"]))
+        if l == "id" and g.get("id_native"): tr = g["id_native"]  # Indonesian written natively, not machine translated
+        else:
+            tr = tr_tree(dict(e, b=_parts(e["b"])), l)
+            if isinstance(tr.get("b"), list): tr = dict(tr, b="".join(tr["b"]))
         body = {"b": tr["b"], "faq": tr.get("faq") or []}
         js = json.dumps(body, ensure_ascii=False, separators=(",", ":"))
         h = _hl.sha1(js.encode()).hexdigest()[:10]

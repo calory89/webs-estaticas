@@ -7,6 +7,7 @@ from guides6_data import GUIDES6D
 from guides6a import GUIDES6A
 from guides6b import GUIDES6B
 from guides6c import GUIDES6C
+from guides7 import GUIDES7
 from ui3 import EXTRA_UI3
 import native, guides_add
 from months import MONTHS
@@ -14,7 +15,7 @@ from build_langs import LANGS2
 def parts(h): return [x for x in re.split(r'(?=<h2>)', h) if x]
 def strings():
     acc = []
-    for g in GUIDES3 + GUIDES4 + GUIDES5 + GUIDES6D + GUIDES6A + GUIDES6B + GUIDES6C:
+    for g in GUIDES3 + GUIDES4 + GUIDES5 + GUIDES6D + GUIDES6A + GUIDES6B + GUIDES6C + GUIDES7:
         acc += [g["t"], g["d"]] + parts(g["b"])
         for q, a in g.get("faq", []): acc += [q, a]
     for x in MONTHS: acc += [x['t'], x['b']]
