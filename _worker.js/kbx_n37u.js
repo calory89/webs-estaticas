@@ -1186,11 +1186,13 @@ export async function inject(req, u, env, r) {
     if (p === 'data/' || p === 'data/dictionary/' || p === 'registers/' || p === 'engineering/') add.push(['main', 'append', '<section class="wrap"' + dir(l) + '>' + STY + n39Links(l) + '</section>']);   // n39 t1
     if (!add.length) return r;
     let out = new HTMLRewriter();
+    const tail = [];   // n39 t2: one end-tag handler for <main> (a second onEndTag on the same element replaces the first, which dropped the shipped list on /engineering/)
     for (const [sel, , h] of add) {
-      let done = false;
-      if (sel === 'main') out = out.on('main', { element(e) { e.onEndTag(end => { if (!done) { done = true; end.before(h, { html: true }); } }); } });
-      else { const how = add.find(a => a[0] === sel)[1]; out = out.on(sel, { element(e) { if (!done) { done = true; e[how](h, { html: true }); } } }); if (how === 'before') out = out.on('main', { element(e) { e.onEndTag(end => { if (!done) { done = true; end.before(h, { html: true }); } }); } }); }
+      const st = { done: false };
+      if (sel === 'main') tail.push([st, h]);
+      else { const how = add.find(a => a[0] === sel)[1]; out = out.on(sel, { element(e) { if (!st.done) { st.done = true; e[how](h, { html: true }); } } }); if (how === 'before') tail.push([st, h]); }
     }
+    if (tail.length) out = out.on('main', { element(e) { e.onEndTag(end => { for (const [st, h] of tail) if (!st.done) { st.done = true; end.before(h, { html: true }); } }); } });
     return out.transform(r);
   } catch (e) { return r; }
 }
