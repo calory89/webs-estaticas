@@ -618,10 +618,10 @@ const ITEMS25_T1 = [['n39t1a', '/data/record.schema.json'], ['n39t1b', '/data/va
 const ITEMS25_T2 = [['n39t2a', '/projects/emaar-golf-vale/documents/'], ['n39t2b', '/projects/emaar-golf-vale/stress/'], ['n39t2c', '/developers/emaar-properties/timeline/'], ['n39t2d', '/data/heat/'], ['n39t2e', '/registers/lookup/'], ['n39t2f', '/projects/emaar-golf-vale/#n39-dtr'], ['n39t2g', '/m/dubai/#n39-area'], ['n39t2h', '/m/dubai/#n39-next'], ['n39t2i', '/projects/emaar-golf-vale/#n39-cmp'], ['n39t2j', '/developers/emaar-properties/timeline/?c=EUR']];
 // --- keep these separator lines so each agent edits its own line ---
 // t3 rows (quality, speed and security):
-const ITEMS25_T3 = [];
+const ITEMS25_T3 = [["n39t3a", "/new/"], ["n39t3b", "/es/"], ["n39t3c", "/engineering/monitoring/#errors"], ["n39t3d", "/engineering/monitoring/#links"], ["n39t3e", "/engineering/security/#coverage"], ["n39t3f", "/engineering/security/#sri"], ["n39t3g", "/engineering/seo/#sd-live", "en"], ["n39t3h", "/new/?utm_source=newsletter"], ["n39t3i", "/countries/spain/", "en"], ["n39t3j", "/projects/emaar-golf-vale/"]];
 // --- keep these separator lines so each agent edits its own line ---
 const ITEMS25 = [...ITEMS25_T1, ...ITEMS25_T2, ...ITEMS25_T3];
-const li37 = l => x => '<li><a href="' + (/\.(csv|json|atom)$|^\/docs\/|^\/data\/#|^\/(es|fr|de|ru|zh|ar|nl)\//.test(x[1]) ? '' : pre(l)) + x[1] + '">' + esc(t(l, x[0] + '_t')) + '</a>: ' + esc(t(l, x[0] + '_s')) + '</li>';
+const li37 = l => x => '<li><a href="' + (x[2] || /\.(csv|json|atom)$|^\/docs\/|^\/data\/#|^\/(es|fr|de|ru|zh|ar|nl)\//.test(x[1]) ? '' : pre(l)) + x[1] + '">' + esc(t(l, x[0] + '_t')) + '</a>: ' + esc(t(l, x[0] + '_s')) + '</li>';
 const shipped25 = l => ITEMS25.length ? '<section class="wrap" id="shipped-2026-11-25"' + dir(l) + '><h2>' + esc(t(l, 'sh25_h')) + '</h2><ul>' + ITEMS25.map(li37(l)).join('') + '</ul></section>' : '';
 const shipped = l => shipped25(l) + '<section class="wrap" id="shipped-2026-11-23"' + dir(l) + '><h2>' + esc(t(l, 'sh_h')) + '</h2><p>' + esc(t(l, 'sh_p')) + '</p><ul>' + ITEMS.map(x => '<li><a href="' + (/\.(csv|json|atom)$|^\/docs\/|^\/data\/#|^\/(es|fr|de|ru|zh|ar|nl)\//.test(x[1]) ? '' : pre(l)) + x[1] + '">' + esc(t(l, x[0] + '_t')) + '</a>: ' + esc(t(l, x[0] + '_s')) + '</li>').join('') + '</ul></section>';
 const STY = '<style>.n37-in{margin:14px 0 0;padding:12px 16px;border:1px solid var(--k-line,var(--line,#d5d3cc));border-radius:14px;line-height:1.55}.n37-in a{font-weight:700}</style>';

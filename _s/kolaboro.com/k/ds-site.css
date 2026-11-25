@@ -341,7 +341,7 @@ a.k-src:hover{color:var(--k-sea);border-bottom-color:currentColor}
 /* home hero: the one bold moment. A faint survey grid behind a calm headline and the paste box. */
 :where(:root:not(a[data-ks])) .hero{position:relative;background:var(--k-paper);isolation:isolate}
 :where(:root:not(a[data-ks])) .hero::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(var(--k-line) 1px,transparent 1px),linear-gradient(90deg,var(--k-line) 1px,transparent 1px);background-size:56px 56px;background-position:-1px -1px;opacity:.55;-webkit-mask-image:radial-gradient(120% 90% at 20% 30%,#000 30%,transparent 75%);mask-image:radial-gradient(120% 90% at 20% 30%,#000 30%,transparent 75%)}
-:where(:root:not(a[data-ks])) .hero h1{font-size:var(--k-fs-5xl);font-weight:740;font-stretch:104%;line-height:1.02;letter-spacing:-.03em;max-width:13ch}
+:where(:root:not(a[data-ks])) .hero h1{font-size:var(--k-fs-5xl);font-weight:740;font-stretch:104%;line-height:1.02;letter-spacing:-.03em;max-width:8.24em}
 :where(:root:not(a[data-ks])) .hero .lead{font-size:clamp(1.08rem,1rem + .35vw,1.25rem);line-height:1.55;color:var(--k-ink-2);max-width:46ch;margin-top:20px}
 :where(:root:not(a[data-ks])) .hero .hero-check.k-omni{margin-top:28px;max-width:560px}
 :where(:root:not(a[data-ks])) .hero .hero-check.k-omni .btn{min-width:0;padding-inline:1.4rem}

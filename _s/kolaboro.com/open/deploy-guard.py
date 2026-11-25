@@ -177,9 +177,45 @@ def monitor_sample():
             except Exception: S.append([p, 0, None, 0])
         cut = (datetime.datetime.utcnow() - datetime.timedelta(days=30)).isoformat()
         d['samples'] = [x for x in d.get('samples', []) if x['at'] >= cut] + [{'at': now(), 'vantage': 'GitHub Actions runner (deploy guard)', 'commit': live_commit()[:12], 'pages': S}]
+        try: d['links'] = link_check(pages, len(d['samples']))
+        except Exception as e: print('link check skipped: %s' % type(e).__name__)
         MON = json.dumps(d, separators=(',', ':')) + '\n'
         print('monitor: %d/%d up' % (sum(1 for x in S if 200 <= x[1] < 400), len(S)))
     except Exception as e: print('monitor skipped: %s' % type(e).__name__)
+
+def link_check(pages, run, per=60):
+    """Broken-link check (n39 t3, 25 Nov 2026), inside this existing job: read 6 of the key pages uncompressed, collect their internal
+    links and check a rotating slice of 60 of them (HEAD, then GET when HEAD is refused) with 8 at a time, so every run takes a few
+    seconds and successive runs cover all links. Result in /data/monitoring.json "links", shown on /engineering/monitoring/#links."""
+    import re, concurrent.futures, hashlib
+    H = {'user-agent': 'kolaboro-deploy-guard/1.0 (links)'}
+    src = {}
+    for p in pages[:6]:
+        try:
+            with urllib.request.urlopen(urllib.request.Request(BASE + p, headers=H), timeout=20) as r: html = r.read().decode('utf-8', 'replace')
+        except Exception: continue
+        for h in re.findall(r'<a\s[^>]*href="(/[^"#?]*)', html):
+            if not h.startswith(('//', '/api/', '/cdn-cgi/', '/__')) and len(h) < 200: src.setdefault(h, p)
+    L = sorted(src, key=lambda h: hashlib.sha1(h.encode()).hexdigest())
+    if not L: return {'at': now(), 'pages': 0, 'links': 0, 'checked': 0, 'broken': []}
+    o = (run * per) % len(L); pick = (L[o:] + L[:o])[:per]
+    def chk(h):
+        for m in ('HEAD', 'GET'):
+            try:
+                with urllib.request.urlopen(urllib.request.Request(BASE + h, headers=H, method=m), timeout=15) as r: return h, r.status
+            except urllib.error.HTTPError as e:
+                if m == 'HEAD' and e.code in (403, 405, 501): continue
+                return h, e.code
+            except Exception: return h, 0
+        return h, 0
+    def chk2(h):   # a 5xx or timeout is tried once more 3 s later (a cold page right after a deploy), so only lasting failures are listed
+        h, st = chk(h)
+        if st >= 500 or st == 0: time.sleep(3); h, st = chk(h)
+        return h, st
+    with concurrent.futures.ThreadPoolExecutor(8) as ex: R = list(ex.map(chk2, pick))
+    bad = [[src[h], h, st] for h, st in R if not (200 <= st < 400)]
+    print('links: %d checked of %d, %d broken' % (len(R), len(L), len(bad)))
+    return {'at': now(), 'pages': min(6, len(pages)), 'links': len(L), 'checked': len(R), 'broken': bad[:50]}
 
 def publish(state):
     body = json.dumps(state, indent=1) + '\n'

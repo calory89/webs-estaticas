@@ -247,8 +247,8 @@ let KB_CSP_SCRIPTS = true;   // n21e: strict script policy enforced site-wide; f
 const KB_GA = 'G-FJKJE77K4V';
 const KB_GA_JS = '(window.kbLate||function(f){addEventListener("load",function(){setTimeout(f,1500)})})(function(){var s=document.createElement("script");s.async=1;s.src="https://www.googletagmanager.com/gtag/js?id=' + KB_GA + '";document.head.appendChild(s)});' +
   "window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','" + KB_GA + "');";
-const KB_DS_V = '67f3aeb629';   // bump with ds.css (scratchpad d12a/dsv.sh does it)
-const KB_DSS_V = '67f3aeb629';   // the ds.css version /k/ds-site.css was generated from; when it differs from KB_DS_V every page gets plain ds.css
+const KB_DS_V = 'c02d9c1a44';   // bump with ds.css (scratchpad d12a/dsv.sh does it)
+const KB_DSS_V = 'c02d9c1a44';   // the ds.css version /k/ds-site.css was generated from; when it differs from KB_DS_V every page gets plain ds.css
 // kolaboro.com mobile speed (b9c, 6 Nov 2026): third-party tags wait for the first interaction (tap, key, scroll, mouse move)
 // or 8 s after load, whichever comes first. window.kbLate(fn) queues work for that moment (the static pages load gtag through it);
 // Cloudflare Zaraz (Clarity) is held the same way by deferring its zaraz.init call. Events queued before that are kept.
@@ -944,9 +944,10 @@ export default {
       };
       // n38 d5: the rankings hubs and lists (most-delayed Dubai 5.3 s cold) and /new/ (4.7 s) use the same edge copy
       const kck = kbClean(u) && typeof caches !== 'undefined' && /^\/(?:countries\/(?:[a-z0-9-]{2,60}\/(?:[a-z-]{3,30}\/)?)?|rankings\/(?:(?:most-delayed|changed-promises)\/(?:[a-z0-9-]{2,60}\/)?)?|new\/)$/.test(u.pathname) ? new Request('https://kolaboro.com/__seoc/v1' + u.pathname) : null;
-      const keep = async (r0) => { if (!r0 || r0.status !== 200 || !/text\/html/.test(r0.headers.get('content-type') || '')) return r0; const t = await r0.text(), h = new Headers(r0.headers); h.delete('content-length'); h.set('x-built', String(Date.now())); h.set('cache-control', 'public, max-age=86400'); try { await caches.default.put(kck, new Response(t, { headers: h })); } catch (e) {} const h2 = new Headers(r0.headers); h2.delete('content-length'); return new Response(t, { status: 200, headers: h2 }); };
+      const ksha = String((env && env.CF_PAGES_COMMIT_SHA) || '');   // n39 t3: a copy built by an older deployment is rebuilt at once in the background
+      const keep = async (r0) => { if (!r0 || r0.status !== 200 || !/text\/html/.test(r0.headers.get('content-type') || '')) return r0; const t = await r0.text(), h = new Headers(r0.headers); h.delete('content-length'); h.set('x-built', String(Date.now())); h.set('x-sha', ksha); h.set('cache-control', 'public, max-age=86400'); try { await caches.default.put(kck, new Response(t, { headers: h })); } catch (e) {} const h2 = new Headers(r0.headers); h2.delete('content-length'); return new Response(t, { status: 200, headers: h2 }); };
       let r = null;
-      if (kck) { try { const hit = await caches.default.match(kck); if (hit) { const age = Date.now() - (+hit.headers.get('x-built') || 0); if (age > 900e3 && ctx && ctx.waitUntil) ctx.waitUntil(make().then(keep).catch(() => {})); const h = new Headers(hit.headers); h.delete('x-built'); h.set('x-seo-cache', age > 900e3 ? 'stale' : 'hit'); r = new Response(hit.body, { status: 200, headers: h }); } } catch (e) { r = null; } }
+      if (kck) { try { const hit = await caches.default.match(kck); if (hit) { const age = Date.now() - (+hit.headers.get('x-built') || 0), old = age > 900e3 || (!!ksha && hit.headers.get('x-sha') !== ksha); if (old && ctx && ctx.waitUntil && !KB_EDGE_BUSY.has('s' + u.pathname)) { KB_EDGE_BUSY.add('s' + u.pathname); ctx.waitUntil(make().then(keep).catch(() => {}).then(() => { KB_EDGE_BUSY.delete('s' + u.pathname); })); } const h = new Headers(hit.headers); h.delete('x-built'); h.delete('x-sha'); h.set('x-seo-cache', old ? 'stale' : 'hit'); r = new Response(hit.body, { status: 200, headers: h }); } } catch (e) { r = null; } }
       if (!r) r = kck ? await keep(await make()) : await make();
       return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r;
     }
