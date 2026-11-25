@@ -91,8 +91,8 @@ for g in guides4.GUIDES4 + guides5.GUIDES5:
     GUIDES_ALL.append(ng)
 # ---- batch 6 (23-nov-2026): 100 guides; English kept in the Worker, other languages' bodies go to KV (DATA) to stay under the 3 MB limit ----
 import guides6_data, guides6a, guides6b, guides6c, hashlib as _hl
-import guides7
-GUIDES6 = guides6_data.GUIDES6D + guides6a.GUIDES6A + guides6b.GUIDES6B + guides6c.GUIDES6C + guides7.GUIDES7
+import guides7, guides8
+GUIDES6 = guides6_data.GUIDES6D + guides6a.GUIDES6A + guides6b.GUIDES6B + guides6c.GUIDES6C + guides7.GUIDES7 + guides8.GUIDES8
 KV6 = []
 for g in GUIDES6:
     e = {"t": g["t"], "d": g["d"], "b": g["b"], "faq": g["faq"]}

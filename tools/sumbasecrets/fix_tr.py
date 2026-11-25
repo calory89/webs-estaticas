@@ -9,13 +9,14 @@ from guides6a import GUIDES6A
 from guides6b import GUIDES6B
 from guides6c import GUIDES6C
 from guides7 import GUIDES7
+from guides8 import GUIDES8
 from build_langs import LANGS2
 H = re.compile(r'href="([^"]+)"')
 def ok(p, t): return sorted(H.findall(p)) == sorted(H.findall(t)) and all(p.count(x) == t.count(x) for x in ("<h2>", "<h3>", "<li>", "<ul>", "</a>"))
 def norm(t): return re.sub(r'<(/?)(h2|h3|p|li|ul|ol)(?:[.,;:\-]|\s+)(?![a-z]+=)', r'<\1\2>', t) if t else t
 def parts(h): return [x for x in re.split(r'(?=<h2>)', h) if x]
 fixed = retr = fallback = piece = 0
-for g in GUIDES3 + GUIDES4 + GUIDES5 + GUIDES6D + GUIDES6A + GUIDES6B + GUIDES6C + GUIDES7 + [{"s": k, "b": v} for k, v in guides_add.ADD.items()]:
+for g in GUIDES3 + GUIDES4 + GUIDES5 + GUIDES6D + GUIDES6A + GUIDES6B + GUIDES6C + GUIDES7 + GUIDES8 + [{"s": k, "b": v} for k, v in guides_add.ADD.items()]:
     for p in parts(g["b"]):
         src = H.findall(p)
         for l in LANGS2:
