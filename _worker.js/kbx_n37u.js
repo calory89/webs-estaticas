@@ -58,6 +58,7 @@ const cnt = r => r[7].split('1').length - 1;
 const LP = '(?:(es|de|fr|nl|ru|zh|ar)\\/)?';
 const RX_REC = new RegExp('^\\/' + LP + 'projects\\/([a-z0-9-]{1,90})\\/record(\\/?)$'), RX_GAP = new RegExp('^\\/' + LP + 'data\\/gaps(\\/?)$'), RX_JS = /^\/projects\/([a-z0-9-]{1,90})\/record\.json$/;
 export const PATHS = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:projects\/[a-z0-9-]{1,90}\/(?:record|brief)|data\/(?:gaps|changes|changes\/week|how-we-verify|markets|pipeline|delays|developers|markets\/[a-z0-9-]{2,60})|registers\/malaysia)\/?$|^\/data\/n37u-se\.json$|^\/data\/changes\/feed\.atom$|^\/data\/changes(?:\/week)?\.json$|^\/(?:es|de|fr|nl|ru|zh|ar)\/(?:data|developers|engineering|yc)\/?$|^\/m\/[^/]{2,120}\/slugs\.json$|^\/projects\/[a-z0-9-]{1,90}\/record\.json$|^\/data\/gaps\.csv$/;
+export const P39T1 = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?data\/(?:validate|query|duplicates|sources)\/?$|^\/data\/(?:record|changes)\.schema\.json$|^\/data\/(?:validate\.svg|records\.ndjson|changes\.csv)$/;   // n39 t1
 export const INJ = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:(?:projects\/[a-z0-9-]{1,90}|engineering|yc|yc\/try|data|data\/dictionary|registers|search|m\/[^/.]{2,60}|developers\/[a-z0-9-]{2,90})\/)?$/;
 
 const TAP = '@media (max-width:640px){.n37-dot{display:inline-block;width:16px;font-size:0}.n37>p>a,.n37>p>b+a,.n37 section>p>a,.n37-kp>p a,.n37-vs>p .k-xs a,#n37-facts>p>a,#n37-kpm>p>a{display:inline-flex;align-items:center;min-height:44px}}';   // r9u: phone tap targets for link rows (44 px)
@@ -167,6 +168,7 @@ async function recPage(env, shell, l, r) {
   { const k = r[5] && devTrack(r[5]); if (k) b += '<p><a href="' + pre(l) + '/developers/' + r[5] + '/#n37-track">' + esc(tf(l, 'tr_rec', { d: r[6] || r[5], p: nf(k.p, l), t: nf(k.th.length, l) })) + '</a></p>'; }   // r6u
   const sa = (IX.byAr.get(r[3] + '|' + r[4]) || []).filter(x => x !== r && !sd.includes(x)).sort((a, c) => cnt(c) - cnt(a)).slice(0, 12);
   if (r[4] && sa.length) b += '<h2 id="area">' + esc(tf(l, 'a_h', { a: r[4] })) + '</h2>' + relTable(l, sa);
+  b += await fpBlock(l, r) + n39Links(l);   // n39 t1
   b += '<p><a href="' + P + '/data/gaps/">' + esc(t(l, 'gp_link')) + '</a><span class="n37-dot" aria-hidden="true"> · </span><a href="' + P + '/data/changes/">' + esc(t(l, 'ch_h1')) + '</a></p>';
   return page(shell, l, { path: '/projects/' + r[1] + '/record/', h1: tf(l, 'r_h1', { n: r[2] }), lead: t(l, 'r_lead'), body: b, noindex: true, crumb: [[t(l, 'projects'), pre(l) + '/projects/'], [r[2], pre(l) + '/projects/' + r[1] + '/']] });
 }
@@ -198,6 +200,180 @@ function gapsCsv() {
 function recJson(r) {   // r7u: the object is shared with the MCP tool get_project_record
   return new Response(JSON.stringify(recObj(r), null, 1), { headers: { 'content-type': 'application/json; charset=utf-8', 'access-control-allow-origin': '*', 'cache-control': 'public, max-age=900', 'x-robots-tag': 'noindex' } });
 }
+
+// n39 t1 (25 Nov 2026): data and platform. JSON Schemas for the record and change answers (/data/record.schema.json,
+// /data/changes.schema.json), every record validated live against them plus fixed rules (/[l/]data/validate/, badge
+// /data/validate.svg), a SHA-256 fingerprint per record checked in the browser (#fp on record pages), ETag/304 on every
+// answer of this module, query by URL (/[l/]data/query/ with ?format=json|csv), /data/records.ndjson, /data/changes.csv,
+// possible duplicates (/[l/]data/duplicates/) and the weekly source reads by site, official registers first (/[l/]data/sources/).
+const KINDS = ['reg', 'dev', 'portal', 'web', 'sat', 'rec'], DRX = '^\\d{4}-\\d{2}-\\d{2}$', URX = '^https?://';
+const nul = s => ({ type: ['string', 'null'], ...s });
+function schemas() {
+  if (IX.sch) return IX.sch;
+  const F = D.f, reg = { type: 'object', required: ['name', 'url', 'reached_by_our_checker'], additionalProperties: false, properties: { name: { type: 'string', minLength: 1 }, url: nul({ pattern: URX }), reached_by_our_checker: nul({}) } };
+  const rec = { $schema: 'https://json-schema.org/draft/2020-12/schema', $id: ORIGIN + '/data/record.schema.json', title: 'Kolaboro project record (GET /projects/{slug}/record.json)', description: 'The 10 key facts of one project, each with its source, source kind and date, and what is still unknown. Licence CC BY 4.0.', type: 'object',
+    required: ['id', 'slug', 'name', 'market', 'area', 'developer', 'page', 'record', 'built', 'licence', 'fields_held', 'fields_total', 'kinds', 'facts', 'unknown'], additionalProperties: false,
+    properties: { id: { type: 'string', minLength: 3 }, slug: { type: 'string', pattern: '^[a-z0-9-]{1,90}$' }, name: { type: 'string', minLength: 1 }, market: { type: 'string', minLength: 2 }, area: nul({}), developer: nul({}), page: { type: 'string', pattern: URX }, record: { type: 'string', pattern: URX }, built: nul({ pattern: DRX }), licence: { type: 'string' },
+      fields_held: { type: 'integer', minimum: 0, maximum: F.length }, fields_total: { const: F.length }, kinds: { type: 'object', required: KINDS, additionalProperties: false, properties: Object.fromEntries(KINDS.map(k => [k, { type: 'string' }])) },
+      facts: { type: 'array', maxItems: F.length, items: { type: 'object', required: ['field', 'label', 'value', 'source', 'kind', 'date', 'date_is', 'definition'], additionalProperties: false, properties: { field: { enum: F }, label: { type: 'string', minLength: 1 }, value: { type: ['string', 'number'] }, source: { type: 'string', pattern: URX }, kind: { enum: KINDS }, date: nul({ pattern: DRX }), date_is: { enum: ['read', 'latest case', 'register inspection', 'satellite scene'] }, definition: { type: 'string', pattern: URX } } } },
+      unknown: { type: 'array', maxItems: F.length, items: { type: 'object', required: ['field', 'label', 'how_to_find', 'registers'], additionalProperties: false, properties: { field: { enum: F }, label: { type: 'string' }, how_to_find: { type: 'string' }, registers: { type: 'array', items: reg } } } },
+      sha256_facts: { type: 'string', pattern: '^[0-9a-f]{64}$', description: 'SHA-256 of the canonical JSON (keys sorted, no spaces) of facts' } } };
+  const ch = { $schema: 'https://json-schema.org/draft/2020-12/schema', $id: ORIGIN + '/data/changes.schema.json', title: 'Kolaboro key-fact changes (GET /data/changes.json)', type: 'object', required: ['built', 'licence', 'rule', 'filters', 'total', 'offset', 'limit', 'changes'],
+    properties: { built: { type: 'string', pattern: DRX }, licence: { type: 'string' }, rule: { type: 'string' }, copies_from: nul({ pattern: DRX }), total: { type: 'integer', minimum: 0 }, offset: { type: 'integer', minimum: 0 }, limit: { type: 'integer', minimum: 1, maximum: 1000 }, filters: { type: 'object' },
+      changes: { type: 'array', items: { type: 'object', required: ['date', 'slug', 'project', 'market', 'field', 'from', 'to', 'record'], properties: { date: { type: 'string', pattern: DRX }, slug: { type: 'string', pattern: '^[a-z0-9-]{1,90}$' }, project: { type: 'string' }, market: { type: 'string' }, developer: nul({}), field: { enum: F }, label: { type: 'string' }, from: {}, to: {}, months_moved: { type: ['integer', 'null'] }, record: { type: 'string', pattern: URX }, source_of_current_value: nul({ pattern: URX }) } } } } };
+  return (IX.sch = { record: rec, changes: ch });
+}
+const tyOf = v => v === null ? 'null' : Array.isArray(v) ? 'array' : Number.isInteger(v) ? 'integer' : typeof v;
+function jsv(s, v, p, out) {   // the subset of JSON Schema 2020-12 the two schemas above use
+  if (out.length > 20) return out;
+  if (s.type) { const ts = [].concat(s.type), y = tyOf(v); if (!ts.some(x => x === y || (x === 'number' && y === 'integer'))) { out.push(p + ': type ' + y + ', expected ' + ts.join('|')); return out; } }
+  if ('const' in s && v !== s.const) out.push(p + ': not ' + s.const);
+  if (s.enum && !s.enum.includes(v)) out.push(p + ': ' + String(v).slice(0, 40) + ' not allowed');
+  if (typeof v === 'string') { if (s.pattern && !new RegExp(s.pattern).test(v)) out.push(p + ': ' + v.slice(0, 50) + ' does not match ' + s.pattern); if (s.minLength && v.length < s.minLength) out.push(p + ': empty'); }
+  if (typeof v === 'number') { if (s.minimum != null && v < s.minimum) out.push(p + ': below ' + s.minimum); if (s.maximum != null && v > s.maximum) out.push(p + ': above ' + s.maximum); }
+  if (Array.isArray(v)) { if (s.maxItems != null && v.length > s.maxItems) out.push(p + ': too many items'); if (s.items) v.forEach((x, i) => jsv(s.items, x, p + '/' + i, out)); }
+  else if (v && typeof v === 'object') { for (const k of s.required || []) if (!(k in v)) out.push(p + ': ' + k + ' missing'); for (const k in v) { if (s.properties && s.properties[k]) jsv(s.properties[k], v[k], p + '/' + k, out); else if (s.additionalProperties === false) out.push(p + ': ' + k + ' not in schema'); } }
+  return out;
+}
+const RULES = ['v_r1', 'v_r2', 'v_r3', 'v_r4', 'v_r5', 'v_r6'];
+function validateAll() {   // memo per data version: schema errors and fixed-rule failures for every record
+  if (IX.val) return IX.val;
+  const S = schemas().record, bad = [], seenS = new Set(), seenI = new Set(), ho = D.f.indexOf('ho'), cp = D.f.indexOf('cp'), rc = Array(RULES.length).fill(0); let ok = 0;
+  for (const r of D.p) {
+    const e = jsv(S, recObj(r), '', []), fx = [];
+    r[8].forEach((c, i) => { if (!c) return; if (c[3] && /^\d{4}-\d{2}-\d{2}$/.test(c[3]) && (isNaN(Date.parse(c[3] + 'T00:00:00Z')) || (D.f[i] !== 'ct' && c[3] > D.built))) fx.push([0, D.f[i]]); if (c[2] === 'reg' && !c[1]) fx.push([1, D.f[i]]); });
+    if (r[8][ho] && !/^\d{4}-\d{2}-\d{2}$/.test(String(r[8][ho][0])) && mIdx(String(r[8][ho][0])) == null) fx.push([2, 'ho']);
+    if (r[8][cp]) { const n = parseFloat(String(r[8][cp][0]).replace(',', '.')); if (!isNaN(n) && (n < 0 || n > 100)) fx.push([3, 'cp']); }
+    if (seenS.has(r[1]) || seenI.has(r[0])) fx.push([4, '']); seenS.add(r[1]); seenI.add(r[0]);
+    if (cnt(r) !== r[8].filter(Boolean).length) fx.push([5, '']);
+    for (const x of fx) rc[x[0]]++;
+    if (!e.length && !fx.length) ok++; else bad.push([r, e, fx]);
+  }
+  return (IX.val = { n: D.p.length, ok, bad, rc });
+}
+function canon(v) { return Array.isArray(v) ? '[' + v.map(canon).join(',') + ']' : v && typeof v === 'object' ? '{' + Object.keys(v).sort().map(k => JSON.stringify(k) + ':' + canon(v[k])).join(',') + '}' : JSON.stringify(v); }
+async function sha(s) { const b = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(s)); return [...new Uint8Array(b)].map(x => x.toString(16).padStart(2, '0')).join(''); }
+async function recJson2(r) { const o = recObj(r); o.sha256_facts = await sha(canon(o.facts)); return new Response(JSON.stringify(o, null, 1), { headers: { ...JH, 'x-robots-tag': 'noindex', link: '<' + ORIGIN + '/data/record.schema.json>; rel="describedby"' } }); }
+async function fpBlock(l, r) {
+  const h = await sha(canon(recObj(r).facts));
+  return '<h2 id="fp">' + esc(t(l, 'fp_h')) + '</h2><p>' + esc(t(l, 'fp_p')) + '</p><p><code style="overflow-wrap:anywhere">' + h + '</code></p><p><button type="button" id="n39-fp" data-h="' + h + '" data-u="/projects/' + r[1] + '/record.json" data-ok="' + esc(t(l, 'fp_ok')) + '" data-no="' + esc(t(l, 'fp_no')) + '" style="min-height:44px;padding:0 16px;border-radius:10px;border:1px solid currentColor;background:transparent;color:inherit;font:inherit;cursor:pointer">' + esc(t(l, 'fp_b')) + '</button> <span id="n39-fpo" role="status" aria-live="polite"></span></p>' +
+    '<p class="k-xs">' + esc(t(l, 'fp_n')) + ' <a href="/data/record.schema.json">record.schema.json</a></p>' +
+    '<script>(function(){var b=document.getElementById("n39-fp"),o=document.getElementById("n39-fpo");function c(v){return Array.isArray(v)?"["+v.map(c).join(",")+"]":v&&typeof v==="object"?"{"+Object.keys(v).sort().map(function(k){return JSON.stringify(k)+":"+c(v[k])}).join(",")+"}":JSON.stringify(v)}b.addEventListener("click",function(){o.textContent="…";fetch(b.dataset.u,{cache:"no-store"}).then(function(r){return r.json()}).then(function(j){return crypto.subtle.digest("SHA-256",new TextEncoder().encode(c(j.facts))).then(function(d){var h=Array.from(new Uint8Array(d)).map(function(x){return x.toString(16).padStart(2,"0")}).join("");o.textContent=(h===b.dataset.h&&h===j.sha256_facts?b.dataset.ok:b.dataset.no)+" "+h.slice(0,16)+"…"})}).catch(function(){o.textContent=b.dataset.no})})})()</script>';
+}
+async function cond(req, r) {   // ETag from the body, 304 when the client already holds it
+  const body = await r.text(), et = '"' + (await sha(body)).slice(0, 32) + '"', h = new Headers(r.headers); h.set('etag', et);
+  const inm = req.headers.get('if-none-match') || '';
+  if (inm.split(',').map(s => s.trim().replace(/^W\//, '')).includes(et)) { h.delete('content-type'); return new Response(null, { status: 304, headers: h }); }
+  return new Response(req.method === 'HEAD' ? null : body, { status: r.status, headers: h });
+}
+const N39C = '<style>.n39-f{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:end;margin:12px 0 18px}.n39-f label{display:flex;flex-direction:column;gap:4px;font-size:.88rem}.n39-f select,.n39-f input{min-height:44px;padding:0 10px;border:1px solid var(--k-line,#D5DCDB);border-radius:10px;background:var(--k-surface,#fff);color:inherit;font:inherit;max-width:100%}.n39-f button{min-height:44px;padding:0 18px;border-radius:10px;border:1px solid currentColor;background:transparent;color:inherit;font:inherit;font-weight:700;cursor:pointer}.n39-u{overflow-wrap:anywhere;font-size:.88rem}.n39-k{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:12px 0 20px}.n39-k div{border:1px solid var(--k-line,#D5DCDB);border-radius:12px;padding:12px 14px}.n39-k b{display:block;font-size:1.4rem;font-variant-numeric:tabular-nums}.n39-k span{font-size:.86rem}.n39-l a{display:inline-flex;align-items:center;min-height:44px}</style>';
+const tw39 = (l, th, rows) => '<div class="n37-tw" tabindex="0" role="region" aria-label="' + esc(t(l, 'tw_l')) + '"><table><thead><tr>' + th.map(k => '<th scope="col">' + esc(t(l, k)) + '</th>').join('') + '</tr></thead><tbody>' + rows.join('') + '</tbody></table></div>';
+const kp39 = (l, a) => '<div class="n39-k">' + a.map(([v, k]) => '<div><b>' + bdi(v) + '</b><span>' + esc(k) + '</span></div>').join('') + '</div>';
+const dLnk = (l, f) => '<a href="' + recU(l, f[1]) + '">' + bdi(f[2]) + '</a>';
+const csvQ = v => { const s = String(v == null ? '' : v); return /[",\n\r]/.test(s) || /^[=+\-@]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s; };
+const CSVH = n => ({ 'content-type': 'text/csv; charset=utf-8', 'content-disposition': 'inline; filename="' + n + '"', 'access-control-allow-origin': '*', 'cache-control': 'public, max-age=900' });
+async function validatePage(env, shell, l) {
+  const v = validateAll(), P = pre(l);
+  let b = kp39(l, [[nf(v.ok, l) + ' / ' + nf(v.n, l), t(l, 'v_k1')], [nf(v.bad.filter(x => x[1].length).length, l), t(l, 'v_k2')], [nf(v.bad.filter(x => x[2].length).length, l), t(l, 'v_k3')]]);
+  b += '<p><img src="/data/validate.svg" alt="' + esc(tf(l, 'v_badge', { ok: nf(v.ok, l), n: nf(v.n, l) })) + '" width="196" height="20"></p><p class="k-xs">' + esc(t(l, 'v_emb')) + ' <code style="overflow-wrap:anywhere">&lt;img src="' + ORIGIN + '/data/validate.svg" alt="records valid"&gt;</code></p>';
+  b += '<h2>' + esc(t(l, 'v_h2')) + '</h2><p>' + esc(t(l, 'v_p2')) + '</p><ul class="n39-l"><li><a href="/data/record.schema.json">/data/record.schema.json</a></li><li><a href="/data/changes.schema.json">/data/changes.schema.json</a></li></ul>';
+  b += '<h2>' + esc(t(l, 'v_h3')) + '</h2>' + tw39(l, ['v_th_r', 'v_th_n'], RULES.map((k, i) => '<tr><td>' + esc(t(l, k)) + '</td><td class="n">' + nf(v.rc[i], l) + '</td></tr>'));
+  b += '<h2 id="fail">' + esc(tf(l, 'v_h4', { n: nf(v.bad.length, l) })) + '</h2>' + (v.bad.length ? tw39(l, ['th_p', 'v_th_e'], v.bad.slice(0, 200).map(([r, e, fx]) => '<tr><th scope="row">' + dLnk(l, r) + '</th><td>' + e.slice(0, 5).map(x => '<code>' + esc(x) + '</code>').join('<br>') + (e.length && fx.length ? '<br>' : '') + fx.map(x => esc(t(l, RULES[x[0]])) + (x[1] ? ' (' + esc(t(l, 'f_' + x[1])) + ')' : '')).join('<br>') + '</td></tr>')) : '<p>' + esc(t(l, 'v_none')) + '</p>');
+  b += '<p class="n39-l"><a href="' + P + '/data/query/">' + esc(t(l, 'q_h1')) + '</a>' + DOT + '<a href="' + P + '/data/duplicates/">' + esc(t(l, 'du_h1')) + '</a>' + DOT + '<a href="' + P + '/data/sources/">' + esc(t(l, 'so_h1')) + '</a></p>';
+  return page(shell, l, { path: '/data/validate/', h1: t(l, 'v_h1'), lead: tf(l, 'v_lead', { n: nf(v.n, l) }), body: N39C + b, crumb: [[t(l, 'data'), P + '/data/']] });
+}
+function badgeSvg() {
+  const v = validateAll(), a = 'records valid', bt = v.ok.toLocaleString('en-GB') + ' / ' + v.n.toLocaleString('en-GB'), w1 = 92, w2 = 104, c = v.ok === v.n ? '#1F6B3A' : v.ok / v.n >= 0.99 ? '#6A4C00' : '#9A3412';
+  const s = '<svg xmlns="http://www.w3.org/2000/svg" width="' + (w1 + w2) + '" height="20" role="img" aria-label="' + a + ': ' + bt + '"><title>' + a + ': ' + bt + ' (' + D.built + ')</title><rect width="' + w1 + '" height="20" fill="#3A4652"/><rect x="' + w1 + '" width="' + w2 + '" height="20" fill="' + c + '"/><g fill="#fff" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11" text-anchor="middle"><text x="' + w1 / 2 + '" y="14">' + a + '</text><text x="' + (w1 + w2 / 2) + '" y="14">' + bt + '</text></g></svg>';
+  return new Response(s, { headers: { 'content-type': 'image/svg+xml; charset=utf-8', 'access-control-allow-origin': '*', 'cache-control': 'public, max-age=900' } });
+}
+// query by URL: m (market), dev (developer slug), has / miss (comma-separated fields), kind (at least one fact of this source kind), min (facts held), q (name), sort, limit, offset, format
+function qRun(u) {
+  const g = k => String(u.searchParams.get(k) || '').slice(0, 120).trim(), F = D.f, fl = k => g(k).split(',').map(s => s.trim()).filter(Boolean);
+  const q = { m: g('m'), dev: g('dev'), has: fl('has'), miss: fl('miss'), kind: g('kind'), min: Math.max(0, Math.min(10, parseInt(g('min'), 10) || 0)), q: g('q').toLowerCase(), sort: g('sort') || 'facts', limit: Math.min(500, Math.max(1, parseInt(g('limit'), 10) || 100)), offset: Math.min(100000, Math.max(0, parseInt(g('offset'), 10) || 0)) };
+  for (const f of q.has.concat(q.miss)) if (!F.includes(f)) return { err: 'has and miss take fields from: ' + F.join(', ') };
+  if (q.kind && !KINDS.includes(q.kind)) return { err: 'kind must be one of ' + KINDS.join(', ') };
+  if (!['facts', 'name', 'reg', 'market'].includes(q.sort)) return { err: 'sort must be facts, name, reg or market' };
+  const mk = q.m.toLowerCase(), rg = r => r[8].filter(c => c && c[2] === 'reg').length;
+  let rows = D.p.filter(r => (!mk || r[3].toLowerCase() === mk) && (!q.dev || r[5] === q.dev) && cnt(r) >= q.min && (!q.q || r[2].toLowerCase().includes(q.q)) && q.has.every(f => r[8][F.indexOf(f)]) && q.miss.every(f => !r[8][F.indexOf(f)]) && (!q.kind || r[8].some(c => c && c[2] === q.kind)));
+  rows.sort(q.sort === 'name' ? (a, b) => a[2].localeCompare(b[2]) : q.sort === 'market' ? (a, b) => a[3].localeCompare(b[3]) || a[2].localeCompare(b[2]) : q.sort === 'reg' ? (a, b) => rg(b) - rg(a) || cnt(b) - cnt(a) || a[2].localeCompare(b[2]) : (a, b) => cnt(b) - cnt(a) || a[2].localeCompare(b[2]));
+  return { q, rows, rg };
+}
+const qObj = r => { const o = { id: r[0], slug: r[1], name: r[2], market: r[3], area: r[4] || null, developer: r[6] || null, developer_slug: r[5] || null, fields_held: cnt(r), record: ORIGIN + '/projects/' + r[1] + '/record.json', facts: {} }; D.f.forEach((f, i) => { const c = r[8][i]; if (c) o.facts[f] = { value: c[0], kind: c[2], date: c[3] || null, source: c[1] ? (/^https?:/.test(c[1]) ? c[1] : ORIGIN + c[1]) : null }; }); return o; };
+async function queryRoute(env, shell, l, u) {
+  const x = qRun(u), fmt = u.searchParams.get('format');
+  if (x.err) return fmt === 'json' || fmt === 'csv' ? new Response(JSON.stringify({ error: x.err }), { status: 400, headers: JH }) : null;
+  const { q, rows } = x, part = rows.slice(q.offset, q.offset + q.limit), F = D.f;
+  if (fmt === 'json') return new Response(JSON.stringify({ built: D.built, licence: 'CC BY 4.0, cite Kolaboro', query: q, total: rows.length, offset: q.offset, limit: q.limit, records: part.map(qObj), schema_of_one_record: ORIGIN + '/data/record.schema.json' }, null, 1), { headers: JH });
+  if (fmt === 'csv') return new Response(['id,slug,name,market,area,developer,fields_held,' + F.map(f => f + ',' + f + '_kind,' + f + '_date').join(',')].concat(part.map(r => [r[0], r[1], r[2], r[3], r[4], r[6], cnt(r)].concat(...F.map((f, i) => { const c = r[8][i]; return c ? [c[0], c[2], c[3]] : ['', '', '']; })).map(csvQ).join(','))).join('\n') + '\n', { headers: CSVH('kolaboro-query.csv') });
+  const P = pre(l), sel = (n, v, opts) => '<select name="' + n + '"><option value="">' + esc(t(l, 'q_any')) + '</option>' + opts.map(([a, b]) => '<option value="' + esc(a) + '"' + (a === v ? ' selected' : '') + '>' + esc(b) + '</option>').join('') + '</select>';
+  const fo = F.map(f => [f, t(l, 'f_' + f)]), qs = u.search.replace(/[?&]format=[^&]*/g, '').replace(/^&/, '?'), api = ORIGIN + '/data/query/' + (qs ? (qs[0] === '?' ? qs : '?' + qs) : '');
+  let b = '<form class="n39-f" method="get" action="' + P + '/data/query/" role="search"><label>' + esc(t(l, 'q_m')) + sel('m', q.m, Object.keys(D.mk).sort().map(m => [m, m])) + '</label><label>' + esc(t(l, 'q_has')) + sel('has', q.has[0] || '', fo) + '</label><label>' + esc(t(l, 'q_miss')) + sel('miss', q.miss[0] || '', fo) + '</label><label>' + esc(t(l, 'q_kind')) + sel('kind', q.kind, KINDS.map(k => [k, t(l, 'k_' + k)])) + '</label><label>' + esc(t(l, 'q_min')) + '<input type="number" name="min" min="0" max="10" value="' + q.min + '" inputmode="numeric"></label><label>' + esc(t(l, 'q_q')) + '<input type="search" name="q" value="' + esc(q.q) + '"></label><label>' + esc(t(l, 'q_sort')) + sel('sort', q.sort, [['facts', t(l, 'q_s_f')], ['reg', t(l, 'q_s_r')], ['name', t(l, 'q_s_n')], ['market', t(l, 'q_m')]]) + '</label><button type="submit">' + esc(t(l, 'q_go')) + '</button></form>';
+  b += '<p>' + esc(tf(l, 'q_res', { n: nf(rows.length, l), a: nf(Math.min(rows.length, q.offset + 1), l), b: nf(Math.min(rows.length, q.offset + q.limit), l) })) + '</p><p class="n39-u">' + esc(t(l, 'q_api')) + ' <a href="' + esc(api + (api.includes('?') ? '&' : '?') + 'format=json') + '" rel="nofollow">JSON</a> · <a href="' + esc(api + (api.includes('?') ? '&' : '?') + 'format=csv') + '" rel="nofollow">CSV</a><br><code>' + esc(api + (api.includes('?') ? '&' : '?') + 'format=json') + '</code></p>';
+  b += tw39(l, ['th_p', 'q_m', 'th_k', 'q_s_r'], part.map(r => '<tr><th scope="row">' + dLnk(l, r) + '</th><td>' + bdi(r[3]) + '</td><td class="n">' + nf(cnt(r), l) + ' / 10</td><td class="n">' + nf(x.rg(r), l) + '</td></tr>'));
+  if (rows.length > q.offset + q.limit) { const nu = new URL(u); nu.searchParams.set('offset', q.offset + q.limit); b += '<p class="n39-l"><a href="' + esc(P + '/data/query/' + nu.search) + '" rel="nofollow">' + esc(t(l, 'q_next')) + '</a></p>'; }
+  b += '<h2>' + esc(t(l, 'q_doc')) + '</h2><p>' + esc(t(l, 'q_docp')) + '</p><ul class="n39-l"><li><a href="/data/query/?m=Dubai&amp;has=pn,cp&amp;sort=reg&amp;format=json" rel="nofollow"><code>?m=Dubai&amp;has=pn,cp&amp;sort=reg&amp;format=json</code></a></li><li><a href="' + P + '/data/query/?miss=pn&amp;min=5" rel="nofollow"><code>?miss=pn&amp;min=5</code></a></li><li><a href="/data/query/?kind=reg&amp;m=Kuala%20Lumpur&amp;format=csv" rel="nofollow"><code>?kind=reg&amp;m=Kuala Lumpur&amp;format=csv</code></a></li></ul>';
+  const plain = !u.search;
+  return page(shell, l, { path: '/data/query/', h1: t(l, 'q_h1'), lead: tf(l, 'q_lead', { n: nf(D.n, l) }), body: N39C + b, noindex: !plain, crumb: [[t(l, 'data'), P + '/data/']] });
+}
+function ndjson(u) {
+  const m = String(u.searchParams.get('m') || '').slice(0, 80).trim().toLowerCase(), M = IX.nd || (IX.nd = new Map());
+  if (!M.has(m)) { if (M.size > 40) M.clear(); M.set(m, (m ? D.p.filter(r => r[3].toLowerCase() === m) : D.p).map(r => JSON.stringify(qObj(r))).join('\n') + '\n'); }
+  return new Response(M.get(m), { headers: { 'content-type': 'application/x-ndjson; charset=utf-8', 'access-control-allow-origin': '*', 'cache-control': 'public, max-age=900', link: '<' + ORIGIN + '/data/query/>; rel="alternate"' } });
+}
+function changesCsv(u) {
+  const g = k => u.searchParams.get(k), q = chFilter({ m: (g('m') || '').slice(0, 80), field: g('field') || '', since: g('since') || '' });
+  if (q.err) return new Response(q.err + '\n', { status: 400, headers: { 'content-type': 'text/plain; charset=utf-8' } });
+  const K = ['date', 'slug', 'project', 'market', 'developer', 'field', 'label', 'from', 'to', 'months_moved', 'record', 'source_of_current_value'];
+  return new Response(['# Kolaboro: real changes of key facts, built ' + D.built + '. Licence CC BY 4.0, cite Kolaboro. Rule: ' + CH_RULE, K.join(',')].concat(q.rows.map(x => { const o = chRow(x); return K.map(k => csvQ(o[k])).join(','); })).join('\n') + '\n', { headers: CSVH('kolaboro-changes.csv') });
+}
+// possible duplicates: same register or permit number in one market, same name in one market, same register page cited for two projects
+const nName = s => String(s).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/\b(the|by|at|residences?|residence|project)\b/g, ' ').replace(/[^a-z0-9Ѐ-ӿ一-鿿]+/g, '');
+const nPn = s => { const v = String(s).toUpperCase().replace(/\s+/g, ' ').trim(), m = /REGISTRATION (\d{3,6})\b/.exec(v); return m ? 'DLD ' + m[1] : v; };
+function dupPairs() {
+  if (IX.dup) return IX.dup;
+  const out = [], seen = new Set(), pi = D.f.indexOf('pn'), grp = (key, rule, val, mx) => { const G = new Map(); for (const r of D.p) { const k = key(r); if (k) (G.get(k) || G.set(k, []).get(k)).push(r); } for (const [k, a] of G) if (a.length > 1 && a.length <= mx) for (let i = 0; i < a.length; i++) for (let j = i + 1; j < a.length; j++) { const id = [a[i][1], a[j][1]].sort().join('|'); if (!seen.has(id + rule)) { seen.add(id + rule); out.push({ rule, a: a[i], b: a[j], v: val(a[i], k) }); } } };
+  grp(r => r[8][pi] && String(r[8][pi][0]).length > 3 ? r[3] + '|' + nPn(r[8][pi][0]) : null, 'pn', r => String(r[8][pi][0]), 3);
+  grp(r => { const n = nName(r[2]); return n.length > 3 ? r[3] + '|' + n : null; }, 'nm', r => r[2], 3);
+  grp(r => { const c = r[8].find(c => c && c[2] === 'reg' && /^https?:\/\/[^/]+\/.{8,}/.test(c[1] || '')); return c ? r[3] + '|' + c[1].replace(/[?#].*$/, '').replace(/\/$/, '') : null; }, 'src', (r, k) => k.slice(k.indexOf('|') + 1), 2);
+  const pairs = new Map(); for (const x of out) { const id = [x.a[1], x.b[1]].sort().join('|'); (pairs.get(id) || pairs.set(id, { a: x.a, b: x.b, w: [] }).get(id)).w.push([x.rule, x.v]); }
+  return (IX.dup = [...pairs.values()].sort((p, q) => q.w.length - p.w.length || p.a[3].localeCompare(q.a[3]) || p.a[2].localeCompare(q.a[2])));
+}
+async function dupPage(env, shell, l, u) {
+  const P = pre(l), a = dupPairs();
+  if (u && u.searchParams.get('format') === 'json') return new Response(JSON.stringify({ built: D.built, licence: 'CC BY 4.0, cite Kolaboro', rules: { pn: 'same register or permit number in one market', nm: 'same name in one market, ignoring case, accents, spaces and the words the, by, at, residence(s), project', src: 'the same official register page cited for both' }, note: 'A pair is a reason to look, not a finding: phases of one development can share a name or a register number.', total: a.length, pairs: a.map(p => ({ a: p.a[1], b: p.b[1], market: p.a[3], why: p.w.map(w => ({ rule: w[0], value: w[1] })) })) }, null, 1), { headers: JH });
+  const byR = k => a.filter(p => p.w.some(w => w[0] === k)).length;
+  let b = kp39(l, [[nf(a.length, l), t(l, 'du_k1')], [nf(byR('pn'), l), t(l, 'du_pn')], [nf(byR('nm'), l), t(l, 'du_nm')], [nf(byR('src'), l), t(l, 'du_src')]]) + '<p>' + esc(t(l, 'du_note')) + '</p>';
+  b += a.length ? tw39(l, ['du_a', 'du_b', 'q_m', 'du_why'], a.map(p => '<tr><th scope="row">' + dLnk(l, p.a) + '<br><span class="k-xs">' + bdi(p.a[6] || '') + '</span></th><td>' + dLnk(l, p.b) + '<br><span class="k-xs">' + bdi(p.b[6] || '') + '</span></td><td>' + bdi(p.a[3]) + '</td><td>' + p.w.map(w => esc(t(l, 'du_' + w[0])) + ': <bdi class="k-xs" style="overflow-wrap:anywhere">' + esc(String(w[1]).slice(0, 120)) + '</bdi>').join('<br>') + '</td></tr>')) : '<p>' + esc(t(l, 'v_none')) + '</p>';
+  b += '<p class="n39-l"><a href="/data/duplicates/?format=json" rel="nofollow">JSON</a>' + DOT + '<a href="' + P + '/data/validate/">' + esc(t(l, 'v_h1')) + '</a>' + DOT + '<a href="' + P + '/data/query/">' + esc(t(l, 'q_h1')) + '</a></p>';
+  return page(shell, l, { path: '/data/duplicates/', h1: t(l, 'du_h1'), lead: tf(l, 'du_lead', { n: nf(D.n, l) }), body: N39C + b, noindex: !!(u && u.search), crumb: [[t(l, 'data'), P + '/data/']] });
+}
+// the weekly source reads (/data/source-health.json) grouped by site; official registers are the sites behind register facts or listed in our register table
+async function srcSites(env) {
+  const H = await file(env, '/data/source-health.json'); if (!H || !H.u) return null;
+  if (IX.src39 && IX.src39.v === H.generated_at) return IX.src39;
+  const RH = new Set(), hn = x => host(x);
+  for (const k in D.rg) for (const g of D.rg[k]) if (g[1]) RH.add(hn(g[1]));
+  for (const r of D.p) for (const c of r[8]) if (c && c[2] === 'reg' && /^https?:/.test(c[1] || '')) RH.add(hn(c[1]));
+  const S = new Map();
+  for (const x of H.u) { const h = hn(x[0]); if (!h) continue; const s = S.get(h) || S.set(h, { h, n: 0, ok: 0, c4: 0, c5: 0, e: 0, r: 0, nr: 0, ch: 0, last: '', cites: 0, reg: RH.has(h) }).get(h); s.n++; const st = x[1];
+    if (typeof st === 'number' && st >= 200 && st < 400) s.ok++; else if (typeof st === 'number' && st >= 400 && st < 500) s.c4++; else if (typeof st === 'number' && st >= 500) s.c5++; else if (st === 'r') s.r++; else if (st === 'n') s.nr++; else s.e++;
+    if (x[4]) s.ch++; if (x[2] && x[2] > s.last) s.last = x[2]; s.cites += (H.cites[x[0]] || []).length; }
+  const all = [...S.values()].sort((a, b) => b.n - a.n || a.h.localeCompare(b.h));
+  return (IX.src39 = { v: H.generated_at, upd: H.updated, n: H.n, all, reg: all.filter(s => s.reg) });
+}
+async function srcPage(env, shell, l, u) {
+  const P = pre(l), x = await srcSites(env); if (!x) return null;
+  if (u && u.searchParams.get('format') === 'json') return new Response(JSON.stringify({ updated: x.upd, licence: 'CC BY 4.0, cite Kolaboro', method: 'Grouped by site from ' + ORIGIN + '/data/source-health.json (every cited URL read once a week). live = HTTP 200-399; e = no answer; r = robots.txt asks us not to read; n = not read yet.', sites: x.all.map(s => ({ site: s.h, official_register: s.reg, urls: s.n, live: s.ok, http_4xx: s.c4, http_5xx: s.c5, no_answer: s.e, robots: s.r, not_read: s.nr, text_changed: s.ch, last_read: s.last || null, citations: s.cites })) }, null, 1), { headers: JH });
+  const row = s => '<tr><th scope="row" style="overflow-wrap:anywhere">' + bdi(s.h) + '</th><td class="n">' + nf(s.n, l) + '</td><td class="n">' + bdi(nf(share(s.ok, s.n - s.r - s.nr || 1), l) + '%') + '</td><td class="n">' + nf(s.c4 + s.c5, l) + '</td><td class="n">' + nf(s.e, l) + '</td><td class="n">' + nf(s.r, l) + '</td><td class="n">' + esc(fd(s.last, l)) + '</td></tr>', TH = ['so_site', 'so_urls', 'so_live', 'so_err', 'so_e', 'so_r', 'so_last'];
+  const live = x.all.reduce((a, s) => a + s.ok, 0);
+  let b = kp39(l, [[nf(x.all.length, l), t(l, 'so_k1')], [nf(x.reg.length, l), t(l, 'so_k2')], [nf(x.n, l), t(l, 'so_k3')], [nf(share(live, x.n), l) + '%', t(l, 'so_k4')]]);
+  b += '<h2 id="registers">' + esc(t(l, 'so_h2')) + '</h2><p>' + esc(t(l, 'so_p2')) + '</p>' + tw39(l, TH, x.reg.map(row));
+  b += '<h2 id="sites">' + esc(tf(l, 'so_h3', { n: nf(Math.min(80, x.all.length), l) })) + '</h2>' + tw39(l, TH, x.all.slice(0, 80).map(row));
+  b += '<p class="k-xs">' + esc(t(l, 'so_note')) + '</p><p class="n39-l"><a href="/sources/health/">/sources/health/</a>' + DOT + '<a href="/data/sources/?format=json" rel="nofollow">JSON</a>' + DOT + '<a href="' + P + '/registers/">/registers/</a></p>';
+  return page(shell, l, { path: '/data/sources/', h1: t(l, 'so_h1'), lead: tf(l, 'so_lead', { d: fd(x.upd, l) }), body: N39C + b, noindex: !!(u && u.search), crumb: [[t(l, 'data'), P + '/data/']] });
+}
+const n39Links = l => { const P = pre(l); return '<p class="n37-in n39-l"' + dir(l) + '>' + [['validate/', 'v_h1'], ['query/', 'q_h1'], ['duplicates/', 'du_h1'], ['sources/', 'so_h1']].map(([p, k]) => '<a href="' + P + '/data/' + p + '">' + esc(t(l, k)) + '</a>').join(DOT) + DOT + '<a href="/data/records.ndjson">records.ndjson</a>' + DOT + '<a href="/data/changes.csv">changes.csv</a>' + DOT + '<a href="/data/record.schema.json">JSON Schema</a></p>'; };
 
 // r3u (round 3): facts on record per market (/m/<market>/) and per developer (/developers/<slug>/), live numbers in the home hero,
 // /<lang>/data/ (open data in 7 more languages), and errPage() used by index.js when a page throws twice
@@ -435,7 +611,7 @@ function seTpl(l) { const f = {}; for (const k of D.f) f[k] = t(l, 'f_' + k); re
 const ITEMS = [['s1', '/projects/emaar-golf-vale/record/#fields'], ['s2', '/projects/emaar-golf-vale/record/#unknown'], ['s3', '/projects/emaar-golf-vale/record/#market'], ['s4', '/projects/emaar-golf-vale/record/#developer'], ['s5', '/data/gaps/'], ['s6', '/projects/emaar-golf-vale/record/#age'], ['s7', '/data/dictionary/'], ['s8', '/data/gaps/#dist'], ['s9', '/data/gaps.csv'], ['s10', '/projects/emaar-golf-vale/record.json'], ['s11', '/data/'], ['s12', '/m/dubai/#n37-facts'], ['s13', '/developers/emaar-properties/#n37-dev'], ['s14', '/#n37-live'], ['s15', '/engineering/status/'], ['s16', '/projects/meriva-collection-ellington/record/#timeline'], ['s17', '/projects/meriva-collection-ellington/'], ['s18', '/developers/'], ['s19', '/m/dubai/'], ['s20', '/data/catalog.json'], ['s21', '/projects/emaar-golf-vale/#n37-vs'], ['s22', '/projects/emaar-golf-vale/brief/'], ['s23', '/data/changes/'], ['s24', '/search/?q=emaar'], ['s25', '/m/dubai/'], ['s26', '/projects/emaar-golf-vale/changes/'], ['s27', '/data/changes/week/'], ['s28', '/developers/emaar-properties/#n37-track'], ['s29', '/data/changes/feed.atom'], ['s30', '/projects/emaar-golf-vale/#n37-vs'], ['s31', '/projects/emaar-golf-vale/'], ['s32', '/docs/api/#key-facts'], ['s33', '/docs/mcp/#key-facts'], ['s34', '/data/how-we-verify/'], ['s35', '/engineering/status/'], ['s36', '/#n37-prog'], ['s37', '/projects/one-seputeh-residences-kl/#n37-kp'], ['s38', '/registers/malaysia/'], ['s39', '/developers/mah-sing-group/#n37-dreg'], ['s40', '/data/markets/'], ['s41', '/ar/projects/one-seputeh-residences-kl/record/'], ['s42', '/search/?rg=1&so=reg'], ['s43', '/rankings/transparency/dubai/#ranking'], ['s44', '/data/#api-answers'], ['s45', '/projects/emaar-golf-vale/#n37-vs'], ['s46', '/projects/bangsar-hill-park/#n37-kp-stage'], ['s47', '/data/pipeline/'], ['s48', '/data/delays/'], ['s49', '/data/developers/'], ['s50', '/data/markets/dubai/'], ['s51', '/search/?q=emaar#saved'], ['s52', '/projects/emaar-golf-vale/#n38-sup']];
 // n39 (25 Nov 2026): one shared list for the "Shipped 25 Nov 2026" heading; each agent appends its own rows (keys n39<agent><n>, strings in n37u-i18n.json)
 // t1 rows (data and platform):
-const ITEMS25_T1 = [];
+const ITEMS25_T1 = [['n39t1a', '/data/record.schema.json'], ['n39t1b', '/data/validate/'], ['n39t1c', '/data/validate.svg'], ['n39t1d', '/projects/emaar-golf-vale/record/#fp'], ['n39t1e', '/data/query/?m=Dubai&has=pn&format=json'], ['n39t1f', '/data/query/'], ['n39t1g', '/data/records.ndjson'], ['n39t1h', '/data/changes.csv'], ['n39t1i', '/data/duplicates/'], ['n39t1j', '/data/sources/']];
 // --- keep these separator lines so each agent edits its own line ---
 // t2 rows (buyer product):
 const ITEMS25_T2 = [];
@@ -475,7 +651,7 @@ function changesJson(u) {
   if (q.err) return new Response(JSON.stringify({ error: q.err }), { status: 400, headers: JH });
   const o = { built: D.built, licence: 'CC BY 4.0, cite Kolaboro', rule: CH_RULE, copies_from: TL && TL.days && TL.days.length ? TL.days[0][0] : null, filters: { m: g('m') || null, field: g('field') || null, since: q.since }, total: q.rows.length, offset: off, limit: lim,
     changes: q.rows.slice(off, off + lim).map(chRow), page: ORIGIN + '/data/changes/', feed: ORIGIN + '/data/changes/feed.atom', week: ORIGIN + '/data/changes/week.json' };
-  return new Response(JSON.stringify(o, null, 1), { headers: JH });
+  return new Response(JSON.stringify(o, null, 1), { headers: { ...JH, link: '<' + ORIGIN + '/data/changes.schema.json>; rel="describedby"' } });
 }
 function weekObj() {
   const all = allChanges(), z = Date.parse(D.built + 'T00:00:00Z'), a = isoD(z - 6 * DAY), a0 = isoD(z - 13 * DAY), wk = all.filter(x => x[1].d >= a), G = new Map();
@@ -851,6 +1027,7 @@ export async function inject(req, u, env, r) {
       add.push(['#glance', 'append', STY + '<p class="n37-in"' + dir(l) + '><a href="' + recU(l, x[1]) + '">' + esc(tf(l, 'inj_p', { k: nf(k, l), g: nf(10 - k, l) })) + '</a><span class="n37-dot" aria-hidden="true"> · </span><a href="' + pre(l) + '/projects/' + x[1] + '/brief/">' + esc(t(l, 'a_br')) + '</a></p>' + lch]);
       if (D.mk[x[3]]) add.push(['#market', 'append', '<p class="n37-in"' + dir(l) + '><a href="' + recU(l, x[1]) + '#market">' + esc(tf(l, 'inj_m', { m: x[3] })) + '</a></p>' + supplyLine(l, x)]);   // n38 d3: same-year handover supply
     } else if (p === 'data/' || p === 'data/dictionary/' || p === 'registers/') add.push(['main', 'append', '<section class="wrap"' + dir(l) + '>' + STY + '<p class="n37-in">' + (l === 'en' || p === 'data/' ? '' : '<a href="' + pre(l) + '/data/">' + esc(t(l, 'dh_link')) + '</a> · ') + '<a href="' + pre(l) + '/data/gaps/">' + esc(t(l, 'gp_link')) + '</a> · ' + esc(t(l, 's5_s')) + '<span class="n37-dot" aria-hidden="true"> · </span><a href="' + pre(l) + '/data/gaps/#dist">' + esc(t(l, 's8_t')) + '</a><span class="n37-dot" aria-hidden="true"> · </span><a href="' + pre(l) + '/data/changes/">' + esc(t(l, 'ch_h1')) + '</a><span class="n37-dot" aria-hidden="true"> · </span><a href="' + pre(l) + '/data/markets/">' + esc(t(l, 'mc_h1')) + '</a><span class="n37-dot" aria-hidden="true"> · </span><a href="' + pre(l) + '/registers/malaysia/">' + esc(t(l, 'kr_h1')) + '</a><span class="n37-dot" aria-hidden="true"> · </span><a href="/data/gaps.csv" download>' + esc(t(l, 'csv_l')) + '</a>' + DOT + '<a href="' + n38u(l, 'pipeline/') + '">' + esc(t(l, 'pl_h1')) + '</a>' + DOT + '<a href="' + n38u(l, 'delays/') + '">' + esc(t(l, 'dl_h1')) + '</a>' + DOT + '<a href="' + n38u(l, 'developers/') + '">' + esc(t(l, 'dv_h1')) + '</a>' + DOT + '<a href="' + n38u(l, 'markets/dubai/') + '">' + esc(tf(l, 'ms_h1', { m: 'Dubai' })) + '</a>' + DOT + '<a href="' + pre(l) + '/search/#saved">' + esc(t(l, 'ss_h')) + '</a></p></section>']);   // r9u; n38 d3
+    if (p === 'data/' || p === 'data/dictionary/' || p === 'registers/' || p === 'engineering/') add.push(['main', 'append', '<section class="wrap"' + dir(l) + '>' + STY + n39Links(l) + '</section>']);   // n39 t1
     if (!add.length) return r;
     let out = new HTMLRewriter();
     for (const [sel, , h] of add) {
@@ -861,12 +1038,20 @@ export async function inject(req, u, env, r) {
     return out.transform(r);
   } catch (e) { return r; }
 }
-export async function handle(req, u, env, ctx, shell) {
+export async function handle(req, u, env, ctx, shell) {   // n39 t1: ETag and 304 on every non-HTML answer
+  const r = await handle0(req, u, env, ctx, shell);
+  return r && r.status === 200 && !/text\/html/.test(r.headers.get('content-type') || '') ? cond(req, r) : r;
+}
+async function handle0(req, u, env, ctx, shell) {
   if (req.method !== 'GET' && req.method !== 'HEAD') return null;
   const p = u.pathname; let m;
-  if (!PATHS.test(p)) return null;
+  if (!PATHS.test(p) && !P39T1.test(p)) return null;
   if (!(await load(env))) { for (const k in MEMO) delete MEMO[k]; T = null; if (!(await load(env))) return new Response('Temporarily unavailable, please retry.', { status: 503, headers: { 'retry-after': '5', 'cache-control': 'no-store', 'content-type': 'text/plain; charset=utf-8' } }); }
-  if ((m = p.match(RX_JS))) { const r = IX.bySlug.get(m[1]); return r ? recJson(r) : null; }
+  if ((m = p.match(RX_JS))) { const r = IX.bySlug.get(m[1]); return r ? recJson2(r) : null; }   // n39 t1: with sha256_facts and a describedby link
+  if ((m = p.match(/^\/data\/(record|changes)\.schema\.json$/))) return new Response(JSON.stringify(schemas()[m[1]], null, 1), { headers: { ...JH, 'content-type': 'application/schema+json; charset=utf-8' } });
+  if (p === '/data/validate.svg') return badgeSvg();
+  if (p === '/data/records.ndjson') return ndjson(u);
+  if (p === '/data/changes.csv') return changesCsv(u);
   if (p === '/data/gaps.csv') return gapsCsv();
   if (p === '/data/n37u-se.json') return seJson();
   if (p === '/data/changes/feed.atom') return feedAtom(String(u.searchParams.get('m') || '').slice(0, 80));
@@ -884,6 +1069,7 @@ export async function handle(req, u, env, ctx, shell) {
 }
 async function route(env, shell, p, u) {
   let m;
+  if ((m = p.match(/^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?data\/(validate|query|duplicates|sources)(\/?)$/))) { if (!m[3]) return new Response(null, { status: 301, headers: { location: p + '/' + (u && u.search || '') } }); const l = m[1] || 'en'; return m[2] === 'validate' ? validatePage(env, shell, l) : m[2] === 'query' ? queryRoute(env, shell, l, u) : m[2] === 'duplicates' ? dupPage(env, shell, l, u) : srcPage(env, shell, l, u); }   // n39 t1
   if ((m = p.match(/^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?projects\/([a-z0-9-]{1,90})\/brief(\/?)$/))) {   // r5u
     if (!m[3]) return new Response(null, { status: 301, headers: { location: p + '/' } });
     const r = IX.bySlug.get(m[2]); return r ? briefPage(env, shell, m[1] || 'en', r) : null;

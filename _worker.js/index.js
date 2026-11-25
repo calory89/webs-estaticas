@@ -66,6 +66,7 @@ let kn31c = null; const KN31C = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?stalled\/?$|^
 const KN31A = /^\/(?:(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:projects|developers)\/|api\/v1\/(?:projects|developers)\/|answers\/developer\/)[a-z0-9-]{1,90}(?:\/|\.md|\.csv|$)/;   // n31c: pages that can be an alias (kbx_n31c.js aliasRedirect)
 let kn31x = null; const KN31X = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:funnel|request-project|business|money|already-signed|report\/sample\/[a-z0-9-]{1,90})\/?$|^\/api\/open\/(?:fn|funnel|sv)$/;   // n31a (batch 31): keep equal to PATHS in kbx_n31a.js
 let kn31b = null; const KN31B = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:case-studies(?:\/aykon-city-3)?|conflicts-of-interest|what-we-cannot-know|data-removal|report-fraud|transparency-report(?:\/2026)?|registers\/captures|score-history)\/?$|^\/k\/n31b\.js$|^\/data\/cases\/aykon-city-3\.json$/;   // n31b (batch 31): trust pages, report-an-error script, case data (kbx_n31b.js)
+const KN39T1 = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?data\/(?:validate|query|duplicates|sources)\/?$|^\/data\/(?:record|changes)\.schema\.json$|^\/data\/(?:validate\.svg|records\.ndjson|changes\.csv)$/;   // n39 t1: equal to P39T1 in kbx_n37u.js
 let kn37u = null; const KN37U = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:projects\/[a-z0-9-]{1,90}\/(?:record|brief)|data\/(?:gaps|changes|changes\/week|how-we-verify|markets|pipeline|delays|developers|markets\/[a-z0-9-]{2,60})|registers\/malaysia)\/?$|^\/data\/n37u-se\.json$|^\/data\/changes\/feed\.atom$|^\/data\/changes(?:\/week)?\.json$|^\/(?:es|de|fr|nl|ru|zh|ar)\/(?:data|developers|engineering|yc)\/?$|^\/m\/[^/]{2,120}\/slugs\.json$|^\/projects\/[a-z0-9-]{1,90}\/record\.json$|^\/data\/gaps\.csv$/; const KN37U_INJ = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:(?:projects\/[a-z0-9-]{1,90}|engineering|yc|yc\/try|data|data\/dictionary|registers|search|m\/[^/.]{2,60}|developers\/[a-z0-9-]{2,90})\/)?$/;   // r1u (batch 37): keep equal to PATHS and INJ in kbx_n37u.js
 let kn35b = null; const KN35B = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:developers\/compare|tools\/(?:vault|price-per-m2)|projects\/[a-z0-9-]{1,90}\/journey)\/?$/;   // n35b (batch 35): keep equal to PATHS in kbx_n35b.js
 let kn34b = null; const KN34B = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:tools\/due-diligence|markets\/compare|search|projects\/[a-z0-9-]{1,90}\/questions)\/?$|^\/api\/v1\/projects\/[a-z0-9-]{1,90}\/questions$/;   // n34b (batch 34): keep equal to PATHS in kbx_n34b.js
@@ -592,7 +593,7 @@ export default {
       try { const r = await kn31b.handle(req, u, env, ctx, shell); if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r; } catch (e) {}
     }
     // kolaboro.com (r1u, batch 37): /[lang/]projects/<slug>/record/, /[lang/]data/gaps/ (see kbx_n37u.js)
-    if (host === 'kolaboro.com' && KN37U.test(u.pathname)) {
+    if (host === 'kolaboro.com' && (KN37U.test(u.pathname) || KN39T1.test(u.pathname))) {   // n39 t1: + KN39T1
       if (!kn37u) kn37u = await import('./kbx_n37u.js');
       const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
       try { const r = await kn37u.handle(req, u, env, ctx, shell); if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r; } catch (e) {}
