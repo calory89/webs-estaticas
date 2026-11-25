@@ -1,70 +1,75 @@
 market,country,projects,with_permit_number,with_handover_date,overdue,claims,claims_contradicted,reviewed,median_price_per_m2_min,price_per_m2_sample
-Dubai,UAE,1004,986,991,8,8450,90,983,19606.1,827
-Malaysia,Malaysia,286,268,240,7,2141,26,232,11358.2,45
+Dubai,UAE,1154,1136,1122,38,9194,90,1133,19540.2,875
+Malaysia,Malaysia,549,531,437,14,3752,26,495,11358.2,45
+Istanbul,Turkey,220,6,206,0,1130,22,3,3581.8,141
+Riviera Maya,Mexico,169,0,156,0,375,38,7,3621.1,162
+Kuala Lumpur,Malaysia,142,124,128,2,1026,2,103,10950.0,35
 Bali,Indonesia,136,1,122,25,1074,168,24,3494.2,122
-Riviera Maya,Mexico,122,0,109,0,328,38,7,3793.7,116
-Istanbul,Turkey,120,6,118,0,833,22,3,3554.1,106
-Kuala Lumpur,Malaysia,109,91,100,1,824,2,70,10950.0,35
-Spain,Spain,83,2,11,0,335,6,2,2875.8,50
+Miami,USA,135,50,122,0,384,22,5,15841.5,32
+Turkey,Turkey,119,0,118,0,227,0,0,2451.5,21
+Spain,Spain,109,2,11,0,477,6,2,3141.1,68
+Sydney,Australia,91,5,16,0,293,8,0,11462.8,14
 Phuket,Thailand,76,17,71,7,528,23,6,110000.0,67
-Miami,USA,59,31,46,0,298,22,5,15831.7,21
-Costa del Sol,Spain,57,2,27,7,406,11,12,4005.3,29
-Sydney,Australia,49,5,11,0,181,8,0,11588.2,7
-Abu Dhabi,UAE,46,17,31,3,264,29,17,25735.3,21
-Bangkok,Thailand,45,5,45,7,280,4,3,8643.8,38
+Melbourne,Australia,73,2,6,0,202,4,0,9641.8,28
+Costa del Sol,Spain,60,2,27,7,429,11,12,4005.3,29
+Brisbane,Australia,57,0,8,0,178,2,0,13531.4,22
+Northern Cyprus,Northern Cyprus,53,0,50,2,190,19,2,3739.4,16
+Abu Dhabi,UAE,49,17,31,3,274,29,17,25735.3,21
+Gold Coast,Australia,48,1,15,0,222,9,0,16303.9,28
+Bangkok,Thailand,46,5,45,7,286,4,3,8643.8,38
 Vietnam,Vietnam,41,6,37,3,235,16,0,4819602.8,30
+Japan,Japan,38,26,37,0,215,2,0,1084814.8,5
+Fort Lauderdale,USA,38,13,37,0,69,2,0,13780.8,12
+Tokyo,Japan,38,31,38,0,229,0,1,2695875.0,14
 Philippines,Philippines,32,11,17,1,228,21,0,265277.3,16
 Ras Al Khaimah,UAE,32,0,30,2,226,38,8,31518.5,16
 France,France,28,0,23,0,168,0,0,,1
 Cambodia,Cambodia,27,0,27,1,175,21,0,1600.0,25
-Melbourne,Australia,27,2,3,0,84,4,0,10233.9,7
 Lombok,Indonesia,24,0,17,0,210,27,6,1821.4,15
+Antalya,Turkey,22,1,22,1,84,11,2,2571.4,7
 Brazil,Brazil,22,4,11,0,116,5,0,56787.5,4
 Egypt,Egypt,21,1,16,0,162,17,4,147157.5,16
 Sri Lanka,Sri Lanka,20,0,7,0,140,11,3,543560.6,6
+Greece,Greece,20,1,18,0,141,21,3,7682.7,7
 Costa Blanca,Spain,20,1,9,2,126,8,3,4530.1,8
+Perth,Australia,20,0,6,0,83,3,0,12133.3,9
+Osaka,Japan,20,3,20,4,79,0,0,1310638.3,13
 Pattaya,Thailand,19,10,18,0,158,15,5,141778.1,12
-Greece,Greece,19,1,17,0,136,21,3,7238.1,6
-Gold Coast,Australia,19,1,13,0,149,9,0,15300.9,8
 Cyprus,Cyprus,18,0,9,0,110,13,5,5702.8,8
 Oman,Oman,18,0,15,0,134,23,1,1311.8,13
 Georgia,Georgia,17,0,12,0,142,24,3,2778.8,9
-Osaka,Japan,17,0,17,4,61,0,0,1310638.3,13
 Los Cabos,Mexico,16,0,9,1,112,18,3,5383.0,8
-Northern Cyprus,Northern Cyprus,16,0,16,2,118,19,2,3735.3,15
+Sharjah,UAE,16,0,11,0,95,14,3,10160.0,6
 Warsaw,Poland,16,0,14,0,72,0,0,,1
 Koh Samui,Thailand,15,3,10,0,118,17,1,45769.2,9
 Algarve,Portugal,15,0,6,1,94,7,3,7630.8,6
 Zanzibar,Tanzania,15,0,13,0,95,8,1,,2
+Izmir,Turkey,15,1,14,0,35,0,0,,2
 Puerto Vallarta,Mexico,14,0,10,1,108,18,1,72222.0,12
 French Riviera,France,14,3,13,0,98,8,1,8082.9,4
 French Alps,France,14,0,10,0,87,0,0,,1
 Ho Chi Minh City,Vietnam,13,2,12,0,79,4,2,93750000.0,9
-Japan,Japan,12,0,11,0,52,2,0,,1
 Mauritius,Mauritius,12,1,6,0,101,10,2,9419.9,6
 Balearics,Spain,12,0,7,0,90,8,1,7327.9,5
 Costa Rica,Costa Rica,11,0,9,2,98,13,0,3823.3,8
+Palm Beach County,USA,11,5,10,0,31,4,0,,2
 Montenegro,Montenegro,11,1,9,0,86,15,1,5888.9,9
 Portugal,Portugal,11,0,6,1,86,10,2,7412.7,7
 Saudi Arabia,Saudi Arabia,11,1,8,0,78,6,0,23793.1,4
 Nairobi,Kenya,11,0,8,0,56,4,0,145289.6,4
 London,United Kingdom,11,5,9,1,110,16,2,13923.0,4
-Sharjah,UAE,11,0,8,0,85,14,3,10160.0,6
 Lisbon,Portugal,11,0,5,0,56,8,5,9861.3,6
 Canary Islands,Spain,11,0,2,0,74,5,1,5282.2,3
-Brisbane,Australia,11,0,5,0,58,2,0,,2
 Poland,Poland,11,0,9,0,46,0,0,,0
 Punta Cana,Dominican Republic,10,0,6,0,67,10,1,2841.1,5
 Malta,Malta,10,2,6,1,66,5,1,,2
-Tokyo,Japan,10,3,10,0,46,0,1,4087759.8,5
-Turkey,Turkey,10,0,10,0,61,0,0,2208.0,9
 Mérida,Mexico,9,0,6,0,67,11,1,44807.7,7
-Antalya,Turkey,9,1,9,1,71,11,2,2571.4,7
-Perth,Australia,9,0,4,0,52,3,0,,2
 Vancouver,Canada,9,0,5,0,29,1,0,,2
 Panama City,Panama,8,0,8,0,71,12,0,4018.8,7
 Croatia,Croatia,8,3,7,1,73,12,0,7870.1,5
 Marrakech,Morocco,8,0,6,0,50,4,1,14318.2,6
+Alanya,Turkey,8,0,8,0,47,5,0,3257.8,6
+Mexico City,Mexico,8,0,8,0,54,6,0,91721.9,8
 Accra,Ghana,8,0,4,0,33,4,0,3636.1,4
 Hua Hin,Thailand,7,1,6,1,60,7,1,63467.9,6
 Bahrain,Bahrain,7,0,7,0,61,8,1,1394.0,6
@@ -76,6 +81,7 @@ Cape Verde,Cape Verde,7,0,6,1,40,6,0,1547.6,3
 Bahamas,Bahamas,7,0,5,0,37,7,0,,2
 Toronto,Canada,7,4,4,0,24,3,0,,1
 Medellín,Colombia,6,0,2,0,44,7,0,16690326.8,4
+Bodrum,Turkey,6,1,5,1,39,7,1,,2
 Albania,Albania,6,0,4,0,38,1,0,,2
 Bulgaria,Bulgaria,6,2,5,0,55,9,0,1645.1,3
 New Zealand,New Zealand,6,1,6,1,51,10,0,12272.7,3
@@ -83,21 +89,22 @@ Goa,India,6,5,5,0,34,5,0,211774.1,4
 Ajman,UAE,6,4,6,0,55,14,0,15665.1,3
 Namibia,Namibia,6,0,2,0,28,1,0,15900.3,6
 Cayman Islands,Cayman Islands,6,1,4,0,40,4,0,9713.0,4
-Fort Lauderdale,USA,6,4,5,0,32,2,0,,1
 Maldives,Maldives,6,0,4,0,39,6,0,13680.3,4
+Kyoto,Japan,6,3,6,1,34,1,0,,2
 Lagos,Nigeria,6,0,3,0,23,4,0,3371.7,4
 Berlin,Germany,6,0,6,0,28,3,0,6270.0,4
+Canberra,Australia,6,0,0,0,14,0,0,,2
+Sunshine Coast,Australia,6,0,0,0,14,0,0,11274.5,3
 Belize,Belize,5,0,3,0,28,4,0,5408.2,3
 Dominican Republic,Dominican Republic,5,1,4,0,39,6,0,4964.5,3
-Bodrum,Turkey,5,1,4,1,34,7,1,,1
-Alanya,Turkey,5,0,5,0,40,5,0,3547.2,5
-Mexico City,Mexico,5,0,5,0,48,6,0,135771.4,5
 Madeira,Portugal,5,0,3,0,23,3,1,6610.2,3
 Hawaii,USA,5,2,1,0,34,3,0,,0
 Liverpool,United Kingdom,5,4,4,0,53,10,0,5050.1,4
 New York,USA,5,4,5,0,32,4,0,,1
 Kigali,Rwanda,5,0,2,0,28,4,0,,2
 Paraguay,Paraguay,5,0,2,0,18,5,0,2482.6,3
+Newcastle,Australia,5,0,0,0,12,0,0,,2
+Adelaide,Australia,5,0,1,0,13,0,0,,1
 Da Nang,Vietnam,4,0,4,2,23,4,1,33335112.8,4
 Krabi,Thailand,4,0,3,0,34,2,0,56940.4,4
 Chiang Mai,Thailand,4,2,3,0,39,6,0,79037.1,4
@@ -107,11 +114,9 @@ Niseko,Japan,4,0,4,0,39,1,1,,1
 Fiji,Fiji,4,0,3,0,32,3,0,,0
 Birmingham,United Kingdom,4,2,3,0,37,6,0,,2
 Umm Al Quwain,UAE,4,0,4,0,38,5,0,,2
-Kyoto,Japan,4,1,4,1,22,1,0,,2
 Dublin,Ireland,4,1,1,0,26,5,0,,2
 Barbados,Barbados,4,0,2,0,28,5,0,8611.0,4
 Ecuador,Ecuador,4,0,2,0,18,1,0,2718.9,4
-Izmir,Turkey,4,1,3,0,19,0,0,,0
 Mumbai,India,4,4,3,0,15,1,0,,2
 Seoul,South Korea,4,0,1,0,14,1,0,,0
 Baku,Azerbaijan,4,0,3,0,20,0,0,,2
@@ -140,9 +145,7 @@ Prague,Czechia,3,0,1,0,8,0,0,,0
 Peru,Peru,3,0,1,0,7,0,0,9000.0,3
 Argentina,Argentina,3,0,3,0,9,4,0,,2
 Tangier,Morocco,3,0,1,0,9,0,0,,1
-Sunshine Coast,Australia,3,0,0,0,6,0,0,,1
 Cartagena,Colombia,2,0,2,0,12,2,0,,1
-Palm Beach County,USA,2,0,1,0,19,4,0,,0
 Turks and Caicos,Turks and Caicos Islands,2,1,2,0,19,0,0,,2
 Puerto Rico,Puerto Rico,2,0,2,0,15,4,0,,1
 Panama,Panama,2,0,2,0,20,4,0,,2
@@ -156,6 +159,7 @@ Bacalar,Mexico,2,0,2,0,10,0,0,,2
 Singapore,Singapore,2,1,2,0,6,1,0,,0
 Amman,Jordan,2,0,1,0,6,0,0,,1
 Chile,Chile,2,0,0,0,7,2,0,,1
+Port Macquarie,Australia,2,0,0,0,4,0,0,,0
 Shell Cove,Australia,2,0,1,0,4,0,0,,1
 Hakuba,Japan,1,0,1,0,10,2,0,,1
 Senegal,Senegal,1,0,1,0,9,0,0,,0
@@ -184,9 +188,9 @@ Jacksonville,USA,1,0,1,0,3,0,0,,0
 Washington DC,USA,1,0,1,0,3,0,0,,0
 Casablanca,Morocco,1,0,1,0,3,0,0,,0
 Noosa,Australia,1,0,1,0,2,0,0,,0
-Canberra,Australia,1,0,0,0,2,0,0,,0
-Newcastle,Australia,1,0,0,0,2,0,0,,0
-Port Macquarie,Australia,1,0,0,0,2,0,0,,0
 Huskisson,Australia,1,0,0,0,2,0,0,,0
 Horsley,Australia,1,0,0,0,2,0,0,,0
 Cairns,Australia,1,0,0,0,2,0,0,,0
+Urangan,Australia,1,0,0,0,3,0,0,,0
+Kiama,Australia,1,0,0,0,3,0,0,,0
+Forster,Australia,1,0,0,0,3,0,0,,0

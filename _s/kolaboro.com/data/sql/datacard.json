@@ -1,12 +1,12 @@
 {
  "name": "Kolaboro open dataset",
- "version": "2026-11-23.1",
- "built": "2026-11-23",
+ "version": "2026-11-25.1",
+ "built": "2026-11-25",
  "licence": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
  "source": {
   "file": "/data/named.json",
-  "sha256": "1d424227b28a1af0cc51617a1f22e7ee28c14746d6fa54febae090c9f40e4801",
-  "published": "2026-11-23",
+  "sha256": "71a0aca6897f6efea8d433b2c7d0a24746deee3b9ab96bc7863eb326c7b144b3",
+  "published": "2026-11-25",
   "snapshots": "/data/snapshots/"
  },
  "what_it_is": "What developers advertise about off-plan projects and what official registers and independent sources show, each claim with its source link. Advertised claims are not verified facts unless the claim status says so.",
@@ -17,16 +17,16 @@
   {
    "table": "projects",
    "description": "One row per tracked off-plan project",
-   "rows": 3433,
+   "rows": 4613,
    "parquet": {
     "path": "/data/sql/projects.parquet",
-    "bytes": 535203,
-    "sha256": "3f683ae10b27c8a920b9b2863b7580092f53570d068764e1146a66b229e88afa"
+    "bytes": 663470,
+    "sha256": "f3d01ca62c763d0b80b2720d8d4a5683605b291403603d5b09446f357a34173e"
    },
    "csv": {
     "path": "/data/sql/projects.csv",
-    "bytes": 1902578,
-    "sha256": "8c53f3657d57c6b034e9bda8c3644ab4d81316d7faaeb78acddeead0838bf308"
+    "bytes": 2493662,
+    "sha256": "b5466e5bba5bface5c1ed91780c6f3bacc18b94a7a10a1aeba84152e5e5679cb"
    },
    "columns": [
     {
@@ -279,16 +279,16 @@
   {
    "table": "claims",
    "description": "One row per developer claim and how it was checked",
-   "rows": 24147,
+   "rows": 28548,
    "parquet": {
     "path": "/data/sql/claims.parquet",
-    "bytes": 799589,
-    "sha256": "99e57202e2332d72703d631a106fd4ef88de04d134a3bd183eb1b6bfa43edf7b"
+    "bytes": 959928,
+    "sha256": "825e01e297b9a4b41905df1e34ef92196f9c377a19d2ce73ed17933c82d0204e"
    },
    "csv": {
     "path": "/data/sql/claims.csv",
-    "bytes": 6007192,
-    "sha256": "91a92bbccab065e909169bbb7c4d60bf88ccac123cc578569500a3a3c8ab8597"
+    "bytes": 7380671,
+    "sha256": "695d1ee244ba25d15884ac0e29c328cfb95535e042fd2c2c66c8d8663f2f3f6c"
    },
    "columns": [
     {
@@ -336,16 +336,16 @@
   {
    "table": "markets",
    "description": "One row per market, computed from the projects table",
-   "rows": 191,
+   "rows": 195,
    "parquet": {
     "path": "/data/sql/markets.parquet",
-    "bytes": 8191,
-    "sha256": "be377907eec4bfacbc88a5eff0beecb17cf99251b1f371a092f601530aa5676a"
+    "bytes": 8365,
+    "sha256": "ce6cb0ac940786ec4d130e799b6217daa10e8627ef22a70f12d41ac3105d412d"
    },
    "csv": {
     "path": "/data/sql/markets.csv",
-    "bytes": 7969,
-    "sha256": "89e8cc46639e7844211fd6f769b8ef352d51c77d91e264a8bac2cbe9e9cba41a"
+    "bytes": 8190,
+    "sha256": "e798c2f57214fe56ecab368590ddf93573f0af615b98f33aa7f5e5767f70d614"
    },
    "columns": [
     {
