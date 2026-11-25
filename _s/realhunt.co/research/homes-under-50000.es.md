@@ -2,9 +2,9 @@
 
 79 de las 726 casas de RealHunt cuestan 50.000 € o menos, y 28 cuestan 30.000 € o menos. La mayoría están en Italia (33), Japón (19) y Alemania (10). La región con más es Chemnitz, Alemania, con 8.
 
-Casas revisadas por una persona y listas para entrar a vivir, a su precio de salida a 24 de noviembre de 2026. No aparecen los países ni las regiones con menos de 3 casas así.
+Casas revisadas por una persona y listas para entrar a vivir, a su precio de salida a 25 de noviembre de 2026. No aparecen los países ni las regiones con menos de 3 casas así.
 
-Actualizado el 24 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/homes-under-50000 (CC BY 4.0). CSV: https://realhunt.co/research/homes-under-50000.es.csv
+Actualizado el 25 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/homes-under-50000 (CC BY 4.0). CSV: https://realhunt.co/research/homes-under-50000.es.csv
 
 ## La tabla
 

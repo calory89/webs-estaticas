@@ -1,8 +1,8 @@
 # Cheap homes in Uruguay: key facts and every home on RealHunt
 
-On 24 November 2026, RealHunt lists 4 homes for sale in Uruguay, each one checked by a person. In Uruguay, the median asking price of those 4 homes is €180,300 (€1,649 per m², from the 4 homes with a known size); the cheapest costs €150,300 and the most expensive €186,300. Taxes and fees add about 5–8% to the price of a home in Uruguay (figures as of 2026). With 4 homes this is a small sample, so the median for Uruguay is a rough guide.
+On 25 November 2026, RealHunt lists 4 homes for sale in Uruguay, each one checked by a person. In Uruguay, the median asking price of those 4 homes is €180,300 (€1,649 per m², from the 4 homes with a known size); the cheapest costs €150,300 and the most expensive €186,300. Taxes and fees add about 5–8% to the price of a home in Uruguay (figures as of 2026). With 4 homes this is a small sample, so the median for Uruguay is a rough guide.
 
-Source: RealHunt, https://realhunt.co/homes/uruguay · Updated 24 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
+Source: RealHunt, https://realhunt.co/homes/uruguay · Updated 25 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/uruguay.json · PDF: https://realhunt.co/data/countries/uruguay.pdf
 
 ## Key facts
@@ -17,7 +17,7 @@ Also as JSON: https://realhunt.co/data/countries/uruguay.json · PDF: https://re
 | Median RealHunt score (70 to 98) | 85 |
 | Taxes and fees to buy | 5–8% of the price (as of 2026) |
 | Can foreigners buy? | Yes. There are no limits on the types of property foreign buyers can purchase in Uruguay, and they have the same property rights as citizens. |
-| Date of these figures | 24 November 2026 |
+| Date of these figures | 25 November 2026 |
 
 ## Costs and taxes
 

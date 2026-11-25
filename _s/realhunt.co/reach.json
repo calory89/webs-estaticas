@@ -1,7 +1,7 @@
 {
- "built": "2026-11-24",
- "indexable": 6962,
- "pages_given_a_date": 6664,
+ "built": "2026-11-25",
+ "indexable": 6957,
+ "pages_given_a_date": 6659,
  "video_pages": 0,
  "listing_markdown": 44,
  "llms": {
@@ -16,10 +16,10 @@
  "indexnow": {
   "compared": true,
   "added": 0,
-  "changed": 0,
-  "removed": 0
+  "changed": 1438,
+  "removed": 2
  },
- "releases": 26,
+ "releases": 27,
  "files": [
   "openapi.json",
   "data/countries/index.json",

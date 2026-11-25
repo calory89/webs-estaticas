@@ -2,9 +2,9 @@
 
 La casa con el precio de salida por metro cuadrado más bajo de Europa en RealHunt es Casa de 1945 muy reformada en 2.800 m² de jardín y bosque, en Markaryd, Kronoberg, Småland, Sweden: 78.000 € por 800 m², 98 €/m². Por países, el precio mediano por m² más bajo está en Bulgaria (740 €/m²), Dinamarca (790 €/m²) y Suecia (800 €/m²), y el más alto en los Países Bajos (4.286 €/m²).
 
-A partir de 533 casas de 17 países europeos cuyo anuncio indica una superficie de al menos 20 m², revisadas una a una por una persona, a 24 de noviembre de 2026.
+A partir de 533 casas de 17 países europeos cuyo anuncio indica una superficie de al menos 20 m², revisadas una a una por una persona, a 25 de noviembre de 2026.
 
-Actualizado el 24 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/cheapest-per-sqm-europe (CC BY 4.0). CSV: https://realhunt.co/research/cheapest-per-sqm-europe.es.csv
+Actualizado el 25 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/cheapest-per-sqm-europe (CC BY 4.0). CSV: https://realhunt.co/research/cheapest-per-sqm-europe.es.csv
 
 ## La tabla
 

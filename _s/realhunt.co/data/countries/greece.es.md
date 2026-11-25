@@ -1,8 +1,8 @@
 # Casas baratas en Grecia: datos clave y todas las casas de RealHunt
 
-A 24 de noviembre de 2026, RealHunt publica 27 casas en venta en Grecia, revisadas una a una por una persona. En Grecia, el precio de salida mediano de esas 27 casas es de 155.000 € (1.477 € por m², calculado con las 26 casas de superficie conocida); la más barata cuesta 68.000 € y la más cara, 199.000 €. Los impuestos y gastos de compra suman alrededor del 5,5–7% del precio de una casa en Grecia (cifras de 2026).
+A 25 de noviembre de 2026, RealHunt publica 27 casas en venta en Grecia, revisadas una a una por una persona. En Grecia, el precio de salida mediano de esas 27 casas es de 155.000 € (1.477 € por m², calculado con las 26 casas de superficie conocida); la más barata cuesta 68.000 € y la más cara, 199.000 €. Los impuestos y gastos de compra suman alrededor del 5,5–7% del precio de una casa en Grecia (cifras de 2026).
 
-Fuente: RealHunt, https://realhunt.co/es/homes/greece · Actualizado el 24 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
+Fuente: RealHunt, https://realhunt.co/es/homes/greece · Actualizado el 25 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/greece.json · PDF: https://realhunt.co/data/countries/greece.es.pdf
 
 ## Datos clave
@@ -18,7 +18,7 @@ También en JSON: https://realhunt.co/data/countries/greece.json · PDF: https:/
 | Impuestos y gastos de compra | 5,5–7% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sí. Los compradores de fuera de la UE y EFTA necesitan un permiso para comprar en zonas fronterizas designadas (partes del norte de Grecia e islas del Egeo oriental como el Dodecaneso y Rodas). El gobierno ha anunciado un impuesto de transferencia del 15% para compradores no comunitarios de viviendas a partir del 1 de enero de 2027, aún no definitivo en septiembre de 2026. |
 | Impuesto anual sobre la vivienda | Quienes son propietarios a 1 de enero pagan el impuesto unificado sobre la propiedad (ENFIA), calculado por inmueble según su ubicación, superficie, antigüedad y valor oficial de la zona, con un recargo si el total de inmuebles en Grecia supera 500.000 €. |
-| Fecha de estas cifras | 24 de noviembre de 2026 |
+| Fecha de estas cifras | 25 de noviembre de 2026 |
 
 ## Gastos e impuestos
 

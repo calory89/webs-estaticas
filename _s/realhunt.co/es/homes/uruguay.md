@@ -1,8 +1,8 @@
 ## Casas en venta en Uruguay
 
-Actualizado el 24 de noviembre de 2026. Última vivienda añadida el 20 de noviembre de 2026.
+Actualizado el 25 de noviembre de 2026. Última vivienda añadida el 20 de noviembre de 2026.
 
-RealHunt tiene hoy 4 casas en venta en Uruguay, con precios de 150.300 € a 186.300 €. La más barata cuesta 150.300 €: [Chalet de ladrillo con tres dormitorios a una manzana de la playa en La Aguada, La Paloma](https://realhunt.co/es/deal/uy-la-aguada-brick-chalet-one-block-from-beach-165k), en La Aguada (100 m², 3 dormitorios). El precio mediano es de 180.300 € (1.649 €/m²), frente a 93.200 € (1.220 €/m²) de las 615 viviendas de RealHunt en 29 países.
+RealHunt tiene hoy 4 casas en venta en Uruguay, con precios de 150.300 € a 186.300 €. La más barata cuesta 150.300 €: [Chalet de ladrillo con tres dormitorios a una manzana de la playa en La Aguada, La Paloma](https://realhunt.co/es/deal/uy-la-aguada-brick-chalet-one-block-from-beach-165k), en La Aguada (100 m², 3 dormitorios). El precio mediano es de 180.300 € (1.649 €/m²), frente a 93.200 € (1.220 €/m²) de las 616 viviendas de RealHunt en 29 países.
 
 Viviendas
 4
@@ -26,14 +26,14 @@ Gastos de compra
 5–8%
 
 Datos del
-24 nov 2026
+25 nov 2026
 
 ### Las 4 viviendas, de mejor a peor nota
 
-- [Nota 85Nueva180.300 €Casa de techo de madera con chimenea y barbacoa a menos de 100 m del mar, Playa GrandePlaya Grande, Maldonado115 m² · 2 dorm. · 1.568 €/m² · 4 días en RealHuntSe pide US$198.000 (unos 180,3 €).](https://realhunt.co/es/deal/uy-piriapolis-playa-grande-house-near-sea-198k)
-- [Nota 85Nueva150.300 €Chalet de ladrillo con tres dormitorios a una manzana de la playa en La Aguada, La PalomaLa Aguada, Rocha100 m² · 3 dorm. · 1.503 €/m² · 4 días en RealHuntSe pide US$165.000 (unos 150,3 €).](https://realhunt.co/es/deal/uy-la-aguada-brick-chalet-one-block-from-beach-165k)
-- [Nota 82Nueva150.300 €Casa de tres dormitorios recién construida a tres manzanas de la playa en La Paloma, RochaLa Paloma, Rocha90 m² · 3 dorm. · 1.670 €/m² · 4 días en RealHuntSe pide US$165.000 (aproximadamente 150,3 €).](https://realhunt.co/es/deal/uy-la-paloma-new-house-three-blocks-from-beach-165k)
-- [Nota 82Nueva186.300 €Casa de tres dormitorios con patio de barbacoa cerca de la rambla en Colonia del SacramentoColonia del Sacramento, Colonia113 m² · 3 dorm. · 1.649 €/m² · 6 días en RealHuntSe pide 205.000 dólares estadounidenses (alrededor de 186.300 €) por una casa de ladrillo de una planta de 113 m² en una parcela de 475 m² en…](https://realhunt.co/es/deal/uy-colonia-del-sacramento-three-bed-house-near-rambla-205k)
+- [Nota 85Nueva180.300 €Casa de techo de madera con chimenea y barbacoa a menos de 100 m del mar, Playa GrandePlaya Grande, Maldonado115 m² · 2 dorm. · 1.568 €/m² · 5 días en RealHuntSe pide US$198.000 (unos 180,3 €).](https://realhunt.co/es/deal/uy-piriapolis-playa-grande-house-near-sea-198k)
+- [Nota 85Nueva150.300 €Chalet de ladrillo con tres dormitorios a una manzana de la playa en La Aguada, La PalomaLa Aguada, Rocha100 m² · 3 dorm. · 1.503 €/m² · 5 días en RealHuntSe pide US$165.000 (unos 150,3 €).](https://realhunt.co/es/deal/uy-la-aguada-brick-chalet-one-block-from-beach-165k)
+- [Nota 82Nueva150.300 €Casa de tres dormitorios recién construida a tres manzanas de la playa en La Paloma, RochaLa Paloma, Rocha90 m² · 3 dorm. · 1.670 €/m² · 5 días en RealHuntSe pide US$165.000 (aproximadamente 150,3 €).](https://realhunt.co/es/deal/uy-la-paloma-new-house-three-blocks-from-beach-165k)
+- [Nota 82Nueva186.300 €Casa de tres dormitorios con patio de barbacoa cerca de la rambla en Colonia del SacramentoColonia del Sacramento, Colonia113 m² · 3 dorm. · 1.649 €/m² · 7 días en RealHuntSe pide 205.000 dólares estadounidenses (alrededor de 186.300 €) por una casa de ladrillo de una planta de 113 m² en una parcela de 475 m² en…](https://realhunt.co/es/deal/uy-colonia-del-sacramento-three-bed-house-near-rambla-205k)
 
 ### Compara las 4 viviendas, de más barata a más cara
 
@@ -101,11 +101,11 @@ Por presupuesto [Menos de 200.000 € 4](https://realhunt.co/es/homes/uruguay/un
 
 Por característica [Con terraza 3](https://realhunt.co/es/cheap-houses/with-a-terrace-in-uruguay) [Zona tranquila 3](https://realhunt.co/es/cheap-houses/quiet-location-in-uruguay)
 
-Por país [España 134](https://realhunt.co/es/homes/spain) [Italia 83](https://realhunt.co/es/homes/italy) [Estados Unidos 61](https://realhunt.co/es/homes/united-states) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Francia 44](https://realhunt.co/es/homes/france) [Suecia 40](https://realhunt.co/es/homes/sweden) [Japón 34](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 26](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 16](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Portugal 6](https://realhunt.co/es/homes/portugal) [Chipre 5](https://realhunt.co/es/homes/cyprus) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Reino Unido 5](https://realhunt.co/es/homes/united-kingdom) [Irlanda 4](https://realhunt.co/es/homes/ireland) [Colombia 3](https://realhunt.co/es/homes/colombia) [República Checa 3](https://realhunt.co/es/homes/czech-republic)
+Por país [España 133](https://realhunt.co/es/homes/spain) [Italia 85](https://realhunt.co/es/homes/italy) [Estados Unidos 61](https://realhunt.co/es/homes/united-states) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Francia 44](https://realhunt.co/es/homes/france) [Suecia 40](https://realhunt.co/es/homes/sweden) [Japón 34](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 26](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 16](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Portugal 6](https://realhunt.co/es/homes/portugal) [Chipre 5](https://realhunt.co/es/homes/cyprus) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Reino Unido 5](https://realhunt.co/es/homes/united-kingdom) [Irlanda 4](https://realhunt.co/es/homes/ireland) [Colombia 3](https://realhunt.co/es/homes/colombia) [República Checa 3](https://realhunt.co/es/homes/czech-republic)
 
 Estos anuncios proceden de infocasas.com.uy (4). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 
 [Avísame por correo de viviendas nuevas en Uruguay](https://realhunt.co/es/alerts?country=Uruguay) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Uruguay#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en Uruguay](https://realhunt.co/es/sitemap/uruguay)
 
 ---
-Fuente: https://realhunt.co/es/homes/uruguay (RealHunt, 2026-11-24). Licencia CC BY 4.0: se puede citar con un enlace a la página.
+Fuente: https://realhunt.co/es/homes/uruguay (RealHunt, 2026-11-25). Licencia CC BY 4.0: se puede citar con un enlace a la página.

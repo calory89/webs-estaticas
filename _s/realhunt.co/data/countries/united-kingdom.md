@@ -1,8 +1,8 @@
 # Cheap homes in the United Kingdom: key facts and every home on RealHunt
 
-On 24 November 2026, RealHunt lists 7 homes for sale in the United Kingdom, each one checked by a person. In the United Kingdom, the median asking price of those 7 homes is €126,500 (€1,807 per m², from the 6 homes with a known size); the cheapest costs €82,600 and the most expensive €198,400. Taxes and fees add about 3–9% to the price of a home in the United Kingdom (figures as of 2026). With 7 homes this is a small sample, so the median for the United Kingdom is a rough guide.
+On 25 November 2026, RealHunt lists 7 homes for sale in the United Kingdom, each one checked by a person. In the United Kingdom, the median asking price of those 7 homes is €126,500 (€1,807 per m², from the 6 homes with a known size); the cheapest costs €82,600 and the most expensive €198,400. Taxes and fees add about 3–9% to the price of a home in the United Kingdom (figures as of 2026). With 7 homes this is a small sample, so the median for the United Kingdom is a rough guide.
 
-Source: RealHunt, https://realhunt.co/homes/united-kingdom · Updated 24 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
+Source: RealHunt, https://realhunt.co/homes/united-kingdom · Updated 25 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/united-kingdom.json · PDF: https://realhunt.co/data/countries/united-kingdom.pdf
 
 ## Key facts
@@ -18,7 +18,7 @@ Also as JSON: https://realhunt.co/data/countries/united-kingdom.json · PDF: htt
 | Taxes and fees to buy | 3–9% of the price (as of 2026) |
 | Can foreigners buy? | Yes. There are no nationality restrictions on buying homes anywhere in the UK and no visa is needed, but buying does not give a right to live there. |
 | Yearly property tax | Owners or occupiers pay council tax to the local council, and many councils in England charge second homes a premium of up to 100% from April 2025. |
-| Date of these figures | 24 November 2026 |
+| Date of these figures | 25 November 2026 |
 
 ## Costs and taxes
 

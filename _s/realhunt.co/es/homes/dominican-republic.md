@@ -1,8 +1,8 @@
 ## Pisos en venta en República Dominicana
 
-Actualizado el 24 de noviembre de 2026. Última vivienda añadida el 18 de noviembre de 2026.
+Actualizado el 25 de noviembre de 2026. Última vivienda añadida el 18 de noviembre de 2026.
 
-RealHunt tiene hoy 5 pisos en venta en República Dominicana, con precios de 150.000 € a 223.600 €. La más barata cuesta 150.000 €: [Piso de dos dormitorios con balcón y piscina compartida cerca de Playa Dorada, Puerto Plata](https://realhunt.co/es/deal/do-puerto-plata-two-bed-flat-pool-near-playa-dorada-165k), en Puerto Plata (103 m², 2 dormitorios). El precio mediano es de 201.200 € (2.282 €/m²), frente a 93.200 € (1.220 €/m²) de las 615 viviendas de RealHunt en 29 países.
+RealHunt tiene hoy 5 pisos en venta en República Dominicana, con precios de 150.000 € a 223.600 €. La más barata cuesta 150.000 €: [Piso de dos dormitorios con balcón y piscina compartida cerca de Playa Dorada, Puerto Plata](https://realhunt.co/es/deal/do-puerto-plata-two-bed-flat-pool-near-playa-dorada-165k), en Puerto Plata (103 m², 2 dormitorios). El precio mediano es de 201.200 € (2.282 €/m²), frente a 93.200 € (1.220 €/m²) de las 616 viviendas de RealHunt en 29 países.
 
 Viviendas
 5
@@ -29,15 +29,15 @@ Compradores extranjeros
 Compra libre
 
 Datos del
-24 nov 2026
+25 nov 2026
 
 ### Las 5 viviendas, de mejor a peor nota
 
-- [Nota 90223.600 €Piso de 3 dormitorios frente al mar en Juan Dolio con vistas abiertas al CaribeJuan Dolio, San Pedro de Macorís98 m² · 3 dorm. · 2.282 €/m² · 43 días en RealHuntApartamento reformado frente al mar en Juan Dolio, en la costa caribeña al este de Santo Domingo, listo para entrar a vivir.](https://realhunt.co/es/deal/dr-juan-dolio-224k-441923)
-- [Nota 89187.800 €Piso amueblado en primera línea en Juan Dolio con balcón con vistas al marJuan Dolio, San Pedro de Macorís82 m² · 2 dorm. · 2.290 €/m² · 43 días en RealHuntApartamento de 2023 en primera línea de la playa de Juan Dolio con acceso directo a la playa, amueblado y listo para entrar.](https://realhunt.co/es/deal/dr-juan-dolio-188k-425359)
-- [Nota 88223.600 €Piso en primera línea de playa en Juan Dolio con piscina y jacuzziJuan Dolio, San Pedro de Macorís105 m² · 2 dorm. · 2.130 €/m² · 43 días en RealHuntApartamento de segunda mano, listo para entrar, en primera línea de playa en Juan Dolio: 105 m², 2 dormitorios, 2 baños, salón-comedor, balcón…](https://realhunt.co/es/deal/dr-juan-dolio-224k-447078)
-- [Nota 87201.200 €Piso amueblado frente al mar en Playa Las Ballenas, Las TerrenasLas Terrenas, Samaná2 dorm. · 43 días en RealHuntApartamento de 2 dormitorios en Bonita Village con acceso directo a Playa Las Ballenas, una de las mejores playas de Las Terrenas, en la península…](https://realhunt.co/es/deal/dr-las-terrenas-201k-439030)
-- [Nota 84Nueva150.000 €Piso de dos dormitorios con balcón y piscina compartida cerca de Playa Dorada, Puerto PlataPuerto Plata103 m² · 2 dorm. · 1.456 €/m² · 6 días en RealHuntSe pide 165.000 dólares estadounidenses (alrededor de 150.000 €) por un piso de segunda mano de 103 m² en Puerto Plata, en la costa norte, que el…](https://realhunt.co/es/deal/do-puerto-plata-two-bed-flat-pool-near-playa-dorada-165k)
+- [Nota 90223.600 €Piso de 3 dormitorios frente al mar en Juan Dolio con vistas abiertas al CaribeJuan Dolio, San Pedro de Macorís98 m² · 3 dorm. · 2.282 €/m² · 44 días en RealHuntApartamento reformado frente al mar en Juan Dolio, en la costa caribeña al este de Santo Domingo, listo para entrar a vivir.](https://realhunt.co/es/deal/dr-juan-dolio-224k-441923)
+- [Nota 89187.800 €Piso amueblado en primera línea en Juan Dolio con balcón con vistas al marJuan Dolio, San Pedro de Macorís82 m² · 2 dorm. · 2.290 €/m² · 44 días en RealHuntApartamento de 2023 en primera línea de la playa de Juan Dolio con acceso directo a la playa, amueblado y listo para entrar.](https://realhunt.co/es/deal/dr-juan-dolio-188k-425359)
+- [Nota 88223.600 €Piso en primera línea de playa en Juan Dolio con piscina y jacuzziJuan Dolio, San Pedro de Macorís105 m² · 2 dorm. · 2.130 €/m² · 44 días en RealHuntApartamento de segunda mano, listo para entrar, en primera línea de playa en Juan Dolio: 105 m², 2 dormitorios, 2 baños, salón-comedor, balcón…](https://realhunt.co/es/deal/dr-juan-dolio-224k-447078)
+- [Nota 87201.200 €Piso amueblado frente al mar en Playa Las Ballenas, Las TerrenasLas Terrenas, Samaná2 dorm. · 44 días en RealHuntApartamento de 2 dormitorios en Bonita Village con acceso directo a Playa Las Ballenas, una de las mejores playas de Las Terrenas, en la península…](https://realhunt.co/es/deal/dr-las-terrenas-201k-439030)
+- [Nota 84Nueva150.000 €Piso de dos dormitorios con balcón y piscina compartida cerca de Playa Dorada, Puerto PlataPuerto Plata103 m² · 2 dorm. · 1.456 €/m² · 7 días en RealHuntSe pide 165.000 dólares estadounidenses (alrededor de 150.000 €) por un piso de segunda mano de 103 m² en Puerto Plata, en la costa norte, que el…](https://realhunt.co/es/deal/do-puerto-plata-two-bed-flat-pool-near-playa-dorada-165k)
 
 ### Compara las 5 viviendas, de más barata a más cara
 
@@ -114,11 +114,11 @@ Por región [San Pedro de Macorís 3](https://realhunt.co/es/homes/dominican-rep
 
 Por característica [Con terraza 4](https://realhunt.co/es/cheap-houses/with-a-terrace-in-dominican-republic) [Para entrar a vivir 4](https://realhunt.co/es/cheap-houses/turnkey-in-dominican-republic) [A 500 m del mar 4](https://realhunt.co/es/cheap-houses/near-the-beach-in-dominican-republic)
 
-Por país [España 134](https://realhunt.co/es/homes/spain) [Italia 83](https://realhunt.co/es/homes/italy) [Estados Unidos 61](https://realhunt.co/es/homes/united-states) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Francia 44](https://realhunt.co/es/homes/france) [Suecia 40](https://realhunt.co/es/homes/sweden) [Japón 34](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 26](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 16](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Portugal 6](https://realhunt.co/es/homes/portugal) [Chipre 5](https://realhunt.co/es/homes/cyprus) [Reino Unido 5](https://realhunt.co/es/homes/united-kingdom) [Uruguay 4](https://realhunt.co/es/homes/uruguay) [Irlanda 4](https://realhunt.co/es/homes/ireland) [Colombia 3](https://realhunt.co/es/homes/colombia) [República Checa 3](https://realhunt.co/es/homes/czech-republic)
+Por país [España 133](https://realhunt.co/es/homes/spain) [Italia 85](https://realhunt.co/es/homes/italy) [Estados Unidos 61](https://realhunt.co/es/homes/united-states) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Francia 44](https://realhunt.co/es/homes/france) [Suecia 40](https://realhunt.co/es/homes/sweden) [Japón 34](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 26](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 16](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Portugal 6](https://realhunt.co/es/homes/portugal) [Chipre 5](https://realhunt.co/es/homes/cyprus) [Reino Unido 5](https://realhunt.co/es/homes/united-kingdom) [Uruguay 4](https://realhunt.co/es/homes/uruguay) [Irlanda 4](https://realhunt.co/es/homes/ireland) [Colombia 3](https://realhunt.co/es/homes/colombia) [República Checa 3](https://realhunt.co/es/homes/czech-republic)
 
 Estos anuncios proceden de supercasas.com (5). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 
 [Avísame por correo de viviendas nuevas en República Dominicana](https://realhunt.co/es/alerts?country=Dominican%20Republic) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Dominican+Republic#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en República Dominicana](https://realhunt.co/es/sitemap/dominican-republic)
 
 ---
-Fuente: https://realhunt.co/es/homes/dominican-republic (RealHunt, 2026-11-24). Licencia CC BY 4.0: se puede citar con un enlace a la página.
+Fuente: https://realhunt.co/es/homes/dominican-republic (RealHunt, 2026-11-25). Licencia CC BY 4.0: se puede citar con un enlace a la página.

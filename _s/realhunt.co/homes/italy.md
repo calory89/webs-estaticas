@@ -1,27 +1,27 @@
 ## Houses for sale in Italy
 
-Updated 24 November 2026. Newest home added 21 November 2026.
+Updated 25 November 2026. Newest home added 21 November 2026.
 
-RealHunt lists 83 houses for sale in Italy today, priced from €12,000 to €197,000. The cheapest costs €12,000: [Stone house in a hill town 55 min from Rome](https://realhunt.co/deal/DcoUnwBDDxF), in Lazio (1 bedroom). The median price is €80,000 (€1,000/m²), against €93,200 (€1,220/m²) for the 615 homes on RealHunt in 29 countries.
+RealHunt lists 85 houses for sale in Italy today, priced from €12,000 to €197,000. The cheapest costs €12,000: [Stone house in a hill town 55 min from Rome](https://realhunt.co/deal/DcoUnwBDDxF), in Lazio (1 bedroom). The median price is €83,000 (€1,000/m²), against €93,200 (€1,220/m²) for the 616 homes on RealHunt in 29 countries.
 Can you buy here? Read this first
 Yes for EU citizens; non-EU buyers need reciprocity (US, UK, Canada, Australia qualify).
 
 [Rules by nationality](https://realhunt.co/can-i-buy) · Buying costs and rules for foreigners in Italy
 
 Homes
-83
+85
 
 From
 €12,000
 
 Median price
-€80,000
+€83,000
 
 Median per m²
 €1,000/m²
 
 Median size
-82 m²
+81 m²
 
 Top score
 91
@@ -33,44 +33,44 @@ Foreign buyers
 Some limits
 
 Data of
-24 Nov 2026
+25 Nov 2026
 
-### The 30 best of 83, by score
+### The 30 best of 85, by score
 
-- [Score 91€115,000Furnished lake-view house in the old centre of San Siro, Lake ComoSan Siro, Lombardy85 m² · 2 bed · €1,353/m² · 15 days on RealHuntAn 85 m² restored, habitable semi-detached house in the car-free historic centre of San Siro, on the west shore of Lake Como.](https://realhunt.co/deal/it-san-siro-como-lake-view-115k-805633)
-- [Score 89€12,000Stone house in a hill town 55 min from RomeLazio1 bed · 62 days on RealHunt1 bedrooms · 1 bathroom · 50 min to the beach · 55 min to Rome Airport.](https://realhunt.co/deal/DcoUnwBDDxF)
-- [Score 88€32,000Lake-view house six minutes from the lakeUmbria1 bed · 62 days on RealHunt1 bedroom · 1 bathroom · 6 min to the lake · 1 hour 15 min to Perugia Airport.](https://realhunt.co/deal/DdUZvbGkTvh)
-- [Score 86€89,0003-bedroom stone house with Lake Como viewsPlesio, Lake Como160 m² · 3 bed · €556/m² · 61 days on RealHunt€556/m² on Lake Como, where homes usually sell for several times that.](https://realhunt.co/deal/lake-como-plesio-89000)
-- [Score 86New€55,000Village house with a fruit garden and a countryside view in Giano dell'UmbriaGiano dell'Umbria, Umbria97 m² · 2 bed · €567/m² · 3 days on RealHuntA two-storey end house of about 97 m² just below the hilltop medieval village of Giano dell'Umbria, between Spoleto, Todi and Montefalco.](https://realhunt.co/deal/it-giano-dell-umbria-village-house-garden-view-55k)
-- [Score 86New€115,000Renovated hillside house with big terraces near Castellino Tanaro, PiedmontViorno, Piedmont180 m² · 2 bed · €639/m² · 4 days on RealHuntA former barn turned into a home in the small hamlet of Viorno, about 2 km from Castellino Tanaro in the hills of Cuneo province.](https://realhunt.co/deal/it-piedmont-castellino-tanaro-renovated-hill-house-115k)
-- [Score 85€158,000Stone-and-beam Tuscan home with a 70 m² terrace and high-end finishesRoccastrada, Tuscany220 m² · 2 bed · €718/m² · 39 days on RealHuntA single-family home free on three sides in Roccastrada, in the Grosseto hills, finished with high-quality materials: exposed stone walls, wooden…](https://realhunt.co/deal/it-tuscany-roccastrada-stone-loft-158k)
-- [Score 85€150,000Medieval-village house with a terrace above a sea of clouds in TuscanySvizzera Pesciatina, Tuscany148 m² · 3 bed · €1,014/m² · 39 days on RealHuntA 148 m² townhouse on four levels in a medieval hamlet of the 'Svizzera Pesciatina', a few kilometres from Pescia: a guest flat with its own…](https://realhunt.co/deal/it-tuscany-pescia-sea-of-clouds-150k)
-- [Score 85€34,0005-bed house with a terrace and courtyardComo area, Lake Como5 bed · 62 days on RealHuntA surprisingly large independent Italian home in one of Northern Italy’s most desirable regions, for just €34,000.](https://realhunt.co/deal/Dc8TyIDkexU)
-- [Score 85New€120,000Detached house with a 350 m2 garden and garage in San Lorenzo in Campo, MarcheSan Lorenzo in Campo, Le Marche130 m² · 2 bed · €923/m² · 4 days on RealHuntAn early 1900s detached house in the centre of San Lorenzo in Campo, a hill village in Pesaro and Urbino province, about 25 km from the Marotta…](https://realhunt.co/deal/it-marche-san-lorenzo-in-campo-house-garden-garage-120k)
-- [Score 84€39,000Sea-view terrace in Acquappesa, CalabriaAcquappesa, Calabria40 m² · 1 bed · €975/m² · 65 days on RealHuntA 40 m² one-bedroom home with a sea-view terrace in Acquappesa, in the province of Cosenza, Calabria.](https://realhunt.co/deal/acquappesa-sea-view-39000)
-- [Score 84€35,000Furnished historic tower houseSardinia75 m² · 2 bed · €467/m² · 62 days on RealHuntHistoric tower house for €35,000 in Sardinia 75 m² · 2 beds · 1 bath · balcony · furnished Set across four levels in the colorful historic…](https://realhunt.co/deal/Dcmar6QDXXm)
-- [Score 84New€85,000Three-bedroom seaside house with a paved courtyard in Torremezzo di Falconara, CalabriaTorremezzo, Calabria101 m² · 3 bed · €842/m² · 6 days on RealHuntA semi-detached house of 101 m² in Torremezzo, the seaside part of Falconara Albanese on the Tyrrhenian coast of Calabria.](https://realhunt.co/deal/it-calabria-torremezzo-three-bed-courtyard-85k)
-- [Score 84New€180,000Renovated country house with garden and vineyard views near Acqui TermeAcqui Terme, Piedmont200 m² · 3 bed · €900/m² · 4 days on RealHuntA large house about 2 km from the spa town of Acqui Terme, free on three sides and largely renovated according to the advert.](https://realhunt.co/deal/it-piedmont-acqui-terme-country-house-garden-180k)
-- [Score 83€85,0002-bedroom flat with a Lake Como view terracePeglio, Lake Como69 m² · 2 bed · €1,232/m² · 56 days on RealHunt€85,000 for a home above Lake Como.](https://realhunt.co/deal/lake-como-peglio-85000)
-- [Score 83New€95,000Four-bedroom village house with a guest flat and covered terrace in Secinaro, AbruzzoSecinaro, Abruzzo171 m² · 4 bed · €556/m² · 6 days on RealHuntA large house in the mountain village of Secinaro, made by joining three small flats, 171 m² in all.](https://realhunt.co/deal/it-abruzzo-secinaro-four-bed-guest-flat-95k)
-- [Score 83New€99,000Renovated stone house with a fireplace in the Monte Amiata woods at Selva, Santa FioraSelva, Tuscany120 m² · 3 bed · €825/m² · 3 days on RealHuntAn old stone house with its own entrance in Selva, a small hamlet of Santa Fiora at about 750 m in the chestnut and beech woods of Monte Amiata in…](https://realhunt.co/deal/it-santa-fiora-renovated-stone-house-monte-amiata-99k)
-- [Score 82€159,000Cosy mountain townhouse near the Abetone ski slopes, sold furnishedCutigliano, Tuscany127 m² · 3 bed · €1,252/m² · 39 days on RealHuntA 127 m² terraced house free on three sides in the centre of Cutigliano, a few kilometres from the ski slopes of Doganaccia and Abetone: a large…](https://realhunt.co/deal/it-tuscany-cutigliano-ski-house-159k)
-- [Score 82New€130,000Renovated 1790 townhouse with garden and hill views in Ruota, near LuccaRuota, Tuscany95 m² · 2 bed · €1,368/m² · 4 days on RealHuntA detached stone townhouse from 1790 in the small hill village of Ruota, completely renovated in 2015, with views over the hills and the Compitese…](https://realhunt.co/deal/it-tuscany-capannori-ruota-townhouse-garden-130k)
-- [Score 82New€140,000Renovated period flat with vaulted ceilings in central Acqui Terme, PiedmontAcqui Terme, Piedmont120 m² · 2 bed · €1,167/m² · 4 days on RealHuntA second-floor flat of about 120 m2 in a period building in the centre of Acqui Terme, the Piedmont spa town known for its hot springs and wine…](https://realhunt.co/deal/it-piedmont-acqui-terme-vaulted-period-flat-140k)
-- [Score 82New€125,000Renovated stone house inside the walls of Gaglietole Castle, UmbriaGaglietole, Umbria125 m² · 2 bed · €1,000/m² · 4 days on RealHuntA stone house within the walls of the small medieval castle of Gaglietole, near Collazzone in the hills between Perugia and Todi, recently…](https://realhunt.co/deal/it-umbria-collazzone-castle-stone-house-125k)
-- [Score 82New€68,000Village cottage with a private garden and a hill-view balcony in Loazzolo, PiedmontLoazzolo, Piedmont87 m² · 2 bed · €782/m² · 3 days on RealHuntA cottage in the centre of Loazzolo, a hill village near Asti, steps from the main square.](https://realhunt.co/deal/it-loazzolo-village-cottage-garden-hill-view-68k)
-- [Score 81€43,500'La Casa Felice': a 2-bed home in an Umbrian hill village for €48kSan Venanzo, Umbria77 m² · 2 bed · €565/m² · 50 days on RealHuntA two-level terraced home of about 77 m² in the heart of San Venanzo, a hilltop village in Umbria, with two bedrooms, a living room with a wood…](https://realhunt.co/deal/it-san-venanzo-48k-knitz9)
-- [Score 81€160,000Renovated Umbrian country home with an annexe, vines and an orchardCittà della Pieve, Umbria114 m² · 3 bed · €1,404/m² · 39 days on RealHuntA finely renovated 90 m² home over three floors in the small Valdilucciole hamlet near Città della Pieve, plus a 24 m² annexe with a…](https://realhunt.co/deal/it-umbria-citta-della-pieve-orchard-160k)
-- [Score 81New€100,000Beamed stone duplex with a lake-view garden and garage above Lake Iseo, ParzanicaParzanica, Lombardy80 m² · 1 bed · €1,250/m² · 6 days on RealHuntA two-storey flat of 80 m² in the stone village of Parzanica, 750 metres up and, according to the advert, a ten-minute drive from Lake Iseo.](https://realhunt.co/deal/it-lake-iseo-parzanica-beamed-duplex-100k)
-- [Score 81New€150,000Bright three-floor house with terraces facing Lake Omodeo in Soddì, SardiniaSoddì, Sardinia150 m² · 3 bed · €1,000/m² · 6 days on RealHuntA large, light house in Soddì, a village of about 100 people in central Sardinia, facing Lake Omodeo.](https://realhunt.co/deal/it-sardinia-soddi-lake-omodeo-view-house-150k)
-- [Score 81New€180,000Renovated country house with panoramic porch and olive grove near Arpino, LazioArpino, Lazio147 m² · 2 bed · €1,224/m² · 4 days on RealHuntA recently renovated single-storey country house on the hills around Arpino, within walking distance of the historic town.](https://realhunt.co/deal/it-lazio-arpino-renovated-country-house-olive-grove-180k)
-- [Score 81€64,000Rustic stone house with courtyard, balcony and several outbuildingsColfelice, Lazio62 days on RealHuntFull of rustic charm, this traditional stone home in Colfelice, Frosinone, features a cozy fireplace, generous rooms and a lovely balcony…](https://realhunt.co/deal/Dc26pZMj0VD)
-- [Score 80€97,000Renovated granite stazzo with flower boxes in a Sardinian villageLuras, Sardinia70 m² · 2 bed · €1,386/m² · 39 days on RealHuntA traditional Gallurese stazzo in the historic centre of Luras, northern Sardinia, restored with respect for its exposed granite, wood and iron: a…](https://realhunt.co/deal/it-sardinia-luras-stazzo-97k)
-- [Score 80€158,000Hillside house with a sea-view veranda 1 km from Porto Ottiolu beachLudduì, Sardinia64 m² · 2 bed · €2,469/m² · 39 days on RealHuntA two-level terraced house in the peaceful hillside hamlet of Ludduì, Budoni, with an exclusive view of the Sardinian sea: a bright living room…](https://realhunt.co/deal/it-sardinia-budoni-sea-view-158k)
+- [Score 91€115,000Furnished lake-view house in the old centre of San Siro, Lake ComoSan Siro, Lombardy85 m² · 2 bed · €1,353/m² · 16 days on RealHuntAn 85 m² restored, habitable semi-detached house in the car-free historic centre of San Siro, on the west shore of Lake Como.](https://realhunt.co/deal/it-san-siro-como-lake-view-115k-805633)
+- [Score 89€12,000Stone house in a hill town 55 min from RomeLazio1 bed · 63 days on RealHunt1 bedrooms · 1 bathroom · 50 min to the beach · 55 min to Rome Airport.](https://realhunt.co/deal/DcoUnwBDDxF)
+- [Score 88€32,000Lake-view house six minutes from the lakeUmbria1 bed · 63 days on RealHunt1 bedroom · 1 bathroom · 6 min to the lake · 1 hour 15 min to Perugia Airport.](https://realhunt.co/deal/DdUZvbGkTvh)
+- [Score 86€89,0003-bedroom stone house with Lake Como viewsPlesio, Lake Como160 m² · 3 bed · €556/m² · 62 days on RealHunt€556/m² on Lake Como, where homes usually sell for several times that.](https://realhunt.co/deal/lake-como-plesio-89000)
+- [Score 86New€55,000Village house with a fruit garden and a countryside view in Giano dell'UmbriaGiano dell'Umbria, Umbria97 m² · 2 bed · €567/m² · 4 days on RealHuntA two-storey end house of about 97 m² just below the hilltop medieval village of Giano dell'Umbria, between Spoleto, Todi and Montefalco.](https://realhunt.co/deal/it-giano-dell-umbria-village-house-garden-view-55k)
+- [Score 86New€115,000Renovated hillside house with big terraces near Castellino Tanaro, PiedmontViorno, Piedmont180 m² · 2 bed · €639/m² · 5 days on RealHuntA former barn turned into a home in the small hamlet of Viorno, about 2 km from Castellino Tanaro in the hills of Cuneo province.](https://realhunt.co/deal/it-piedmont-castellino-tanaro-renovated-hill-house-115k)
+- [Score 85€158,000Stone-and-beam Tuscan home with a 70 m² terrace and high-end finishesRoccastrada, Tuscany220 m² · 2 bed · €718/m² · 40 days on RealHuntA single-family home free on three sides in Roccastrada, in the Grosseto hills, finished with high-quality materials: exposed stone walls, wooden…](https://realhunt.co/deal/it-tuscany-roccastrada-stone-loft-158k)
+- [Score 85€150,000Medieval-village house with a terrace above a sea of clouds in TuscanySvizzera Pesciatina, Tuscany148 m² · 3 bed · €1,014/m² · 40 days on RealHuntA 148 m² townhouse on four levels in a medieval hamlet of the 'Svizzera Pesciatina', a few kilometres from Pescia: a guest flat with its own…](https://realhunt.co/deal/it-tuscany-pescia-sea-of-clouds-150k)
+- [Score 85€34,0005-bed house with a terrace and courtyardComo area, Lake Como5 bed · 63 days on RealHuntA surprisingly large independent Italian home in one of Northern Italy’s most desirable regions, for just €34,000.](https://realhunt.co/deal/Dc8TyIDkexU)
+- [Score 85New€120,000Detached house with a 350 m2 garden and garage in San Lorenzo in Campo, MarcheSan Lorenzo in Campo, Le Marche130 m² · 2 bed · €923/m² · 5 days on RealHuntAn early 1900s detached house in the centre of San Lorenzo in Campo, a hill village in Pesaro and Urbino province, about 25 km from the Marotta…](https://realhunt.co/deal/it-marche-san-lorenzo-in-campo-house-garden-garage-120k)
+- [Score 84€39,000Sea-view terrace in Acquappesa, CalabriaAcquappesa, Calabria40 m² · 1 bed · €975/m² · 66 days on RealHuntA 40 m² one-bedroom home with a sea-view terrace in Acquappesa, in the province of Cosenza, Calabria.](https://realhunt.co/deal/acquappesa-sea-view-39000)
+- [Score 84€35,000Furnished historic tower houseSardinia75 m² · 2 bed · €467/m² · 63 days on RealHuntHistoric tower house for €35,000 in Sardinia 75 m² · 2 beds · 1 bath · balcony · furnished Set across four levels in the colorful historic…](https://realhunt.co/deal/Dcmar6QDXXm)
+- [Score 84New€85,000Three-bedroom seaside house with a paved courtyard in Torremezzo di Falconara, CalabriaTorremezzo, Calabria101 m² · 3 bed · €842/m² · 7 days on RealHuntA semi-detached house of 101 m² in Torremezzo, the seaside part of Falconara Albanese on the Tyrrhenian coast of Calabria.](https://realhunt.co/deal/it-calabria-torremezzo-three-bed-courtyard-85k)
+- [Score 84New€180,000Renovated country house with garden and vineyard views near Acqui TermeAcqui Terme, Piedmont200 m² · 3 bed · €900/m² · 5 days on RealHuntA large house about 2 km from the spa town of Acqui Terme, free on three sides and largely renovated according to the advert.](https://realhunt.co/deal/it-piedmont-acqui-terme-country-house-garden-180k)
+- [Score 83€85,0002-bedroom flat with a Lake Como view terracePeglio, Lake Como69 m² · 2 bed · €1,232/m² · 57 days on RealHunt€85,000 for a home above Lake Como.](https://realhunt.co/deal/lake-como-peglio-85000)
+- [Score 83New€95,000Four-bedroom village house with a guest flat and covered terrace in Secinaro, AbruzzoSecinaro, Abruzzo171 m² · 4 bed · €556/m² · 7 days on RealHuntA large house in the mountain village of Secinaro, made by joining three small flats, 171 m² in all.](https://realhunt.co/deal/it-abruzzo-secinaro-four-bed-guest-flat-95k)
+- [Score 83New€99,000Renovated stone house with a fireplace in the Monte Amiata woods at Selva, Santa FioraSelva, Tuscany120 m² · 3 bed · €825/m² · 4 days on RealHuntAn old stone house with its own entrance in Selva, a small hamlet of Santa Fiora at about 750 m in the chestnut and beech woods of Monte Amiata in…](https://realhunt.co/deal/it-santa-fiora-renovated-stone-house-monte-amiata-99k)
+- [Score 82€159,000Cosy mountain townhouse near the Abetone ski slopes, sold furnishedCutigliano, Tuscany127 m² · 3 bed · €1,252/m² · 40 days on RealHuntA 127 m² terraced house free on three sides in the centre of Cutigliano, a few kilometres from the ski slopes of Doganaccia and Abetone: a large…](https://realhunt.co/deal/it-tuscany-cutigliano-ski-house-159k)
+- [Score 82New€130,000Renovated 1790 townhouse with garden and hill views in Ruota, near LuccaRuota, Tuscany95 m² · 2 bed · €1,368/m² · 5 days on RealHuntA detached stone townhouse from 1790 in the small hill village of Ruota, completely renovated in 2015, with views over the hills and the Compitese…](https://realhunt.co/deal/it-tuscany-capannori-ruota-townhouse-garden-130k)
+- [Score 82New€140,000Renovated period flat with vaulted ceilings in central Acqui Terme, PiedmontAcqui Terme, Piedmont120 m² · 2 bed · €1,167/m² · 5 days on RealHuntA second-floor flat of about 120 m2 in a period building in the centre of Acqui Terme, the Piedmont spa town known for its hot springs and wine…](https://realhunt.co/deal/it-piedmont-acqui-terme-vaulted-period-flat-140k)
+- [Score 82New€125,000Renovated stone house inside the walls of Gaglietole Castle, UmbriaGaglietole, Umbria125 m² · 2 bed · €1,000/m² · 5 days on RealHuntA stone house within the walls of the small medieval castle of Gaglietole, near Collazzone in the hills between Perugia and Todi, recently…](https://realhunt.co/deal/it-umbria-collazzone-castle-stone-house-125k)
+- [Score 82New€68,000Village cottage with a private garden and a hill-view balcony in Loazzolo, PiedmontLoazzolo, Piedmont87 m² · 2 bed · €782/m² · 4 days on RealHuntA cottage in the centre of Loazzolo, a hill village near Asti, steps from the main square.](https://realhunt.co/deal/it-loazzolo-village-cottage-garden-hill-view-68k)
+- [Score 81€43,500'La Casa Felice': a 2-bed home in an Umbrian hill village for €48kSan Venanzo, Umbria77 m² · 2 bed · €565/m² · 51 days on RealHuntA two-level terraced home of about 77 m² in the heart of San Venanzo, a hilltop village in Umbria, with two bedrooms, a living room with a wood…](https://realhunt.co/deal/it-san-venanzo-48k-knitz9)
+- [Score 81€160,000Renovated Umbrian country home with an annexe, vines and an orchardCittà della Pieve, Umbria114 m² · 3 bed · €1,404/m² · 40 days on RealHuntA finely renovated 90 m² home over three floors in the small Valdilucciole hamlet near Città della Pieve, plus a 24 m² annexe with a…](https://realhunt.co/deal/it-umbria-citta-della-pieve-orchard-160k)
+- [Score 81New€100,000Beamed stone duplex with a lake-view garden and garage above Lake Iseo, ParzanicaParzanica, Lombardy80 m² · 1 bed · €1,250/m² · 7 days on RealHuntA two-storey flat of 80 m² in the stone village of Parzanica, 750 metres up and, according to the advert, a ten-minute drive from Lake Iseo.](https://realhunt.co/deal/it-lake-iseo-parzanica-beamed-duplex-100k)
+- [Score 81New€150,000Bright three-floor house with terraces facing Lake Omodeo in Soddì, SardiniaSoddì, Sardinia150 m² · 3 bed · €1,000/m² · 7 days on RealHuntA large, light house in Soddì, a village of about 100 people in central Sardinia, facing Lake Omodeo.](https://realhunt.co/deal/it-sardinia-soddi-lake-omodeo-view-house-150k)
+- [Score 81New€180,000Renovated country house with panoramic porch and olive grove near Arpino, LazioArpino, Lazio147 m² · 2 bed · €1,224/m² · 5 days on RealHuntA recently renovated single-storey country house on the hills around Arpino, within walking distance of the historic town.](https://realhunt.co/deal/it-lazio-arpino-renovated-country-house-olive-grove-180k)
+- [Score 81€64,000Rustic stone house with courtyard, balcony and several outbuildingsColfelice, Lazio63 days on RealHuntFull of rustic charm, this traditional stone home in Colfelice, Frosinone, features a cozy fireplace, generous rooms and a lovely balcony…](https://realhunt.co/deal/Dc26pZMj0VD)
+- [Score 80€97,000Renovated granite stazzo with flower boxes in a Sardinian villageLuras, Sardinia70 m² · 2 bed · €1,386/m² · 40 days on RealHuntA traditional Gallurese stazzo in the historic centre of Luras, northern Sardinia, restored with respect for its exposed granite, wood and iron: a…](https://realhunt.co/deal/it-sardinia-luras-stazzo-97k)
+- [Score 80€158,000Hillside house with a sea-view veranda 1 km from Porto Ottiolu beachLudduì, Sardinia64 m² · 2 bed · €2,469/m² · 40 days on RealHuntA two-level terraced house in the peaceful hillside hamlet of Ludduì, Budoni, with an exclusive view of the Sardinian sea: a bright living room…](https://realhunt.co/deal/it-sardinia-budoni-sea-view-158k)
 
-Showing the 30 best-scored of 83 homes. The table and the narrower searches below cover the rest.
+Showing the 30 best-scored of 85 homes. The table and the narrower searches below cover the rest.
 
-### Compare the 60 cheapest of 83
+### Compare the 60 cheapest of 85
 
 Home | Place | Price | Size | Per m² | Beds | Score | Added
 [Stone house in a hill town 55 min from Rome](https://realhunt.co/deal/DcoUnwBDDxF) | Lazio | €12,000 | · | · | 1 | 89 | 23 Sep 2026
@@ -134,15 +134,15 @@ Home | Place | Price | Size | Per m² | Beds | Score | Added
 [Renovated stone house with terrace in medieval Arcidosso, Monte Amiata](https://realhunt.co/deal/it-tuscany-arcidosso-stone-house-terrace-115k) | Arcidosso, Tuscany | €115,000 | 100 m² | €1,150/m² | 2 | 80 | 20 Nov 2026
 [Detached house with a 350 m2 garden and garage in San Lorenzo in Campo, Marche](https://realhunt.co/deal/it-marche-san-lorenzo-in-campo-house-garden-garage-120k) | San Lorenzo in Campo, Le Marche | €120,000 | 130 m² | €923/m² | 2 | 85 | 20 Nov 2026
 
-### The 83 homes in numbers
+### The 85 homes in numbers
 
-- Size: half of them have 82 m² or more. The largest has 220 m²: [Stone-and-beam Tuscan home with a 70 m² terrace and high-end finishes](https://realhunt.co/deal/it-tuscany-roccastrada-stone-loft-158k).
-- Bedrooms: 23 with 1 bedroom, 34 with 2, 11 with 3, 4 with 4 or more; 11 listings do not say.
-- Type: 17 apartments and 53 houses.
-- Setting: 12 by the sea, 63 in villages, 2 in towns.
-- Where: Tuscany (16), Umbria (9), Calabria (8), Lazio (7), Sardinia (6), Sicily (6).
+- Size: half of them have 81 m² or more. The largest has 220 m²: [Stone-and-beam Tuscan home with a 70 m² terrace and high-end finishes](https://realhunt.co/deal/it-tuscany-roccastrada-stone-loft-158k).
+- Bedrooms: 23 with 1 bedroom, 36 with 2, 11 with 3, 4 with 4 or more; 11 listings do not say.
+- Type: 18 apartments and 54 houses.
+- Setting: 12 by the sea, 65 in villages, 2 in towns.
+- Where: Tuscany (18), Umbria (9), Calabria (8), Lazio (7), Sardinia (6), Sicily (6).
 - Lowest median price: Lazio, €20,000 across 7 homes. Highest: Liguria, €170,000 across 5.
-- Extras named in the listings: 25 with a garden, 42 with a terrace, 15 with a garage, 1 with a pool, 29 with a fireplace.
+- Extras named in the listings: 27 with a garden, 43 with a terrace, 16 with a garage, 1 with a pool, 30 with a fireplace.
 - Scores: 73 to 91 out of 98. The best rated: [Furnished lake-view house in the old centre of San Siro, Lake Como](https://realhunt.co/deal/it-san-siro-como-lake-view-115k-805633).
 - Newest, added 21 November 2026: [Village house with a fruit garden and a countryside view in Giano dell'Umbria](https://realhunt.co/deal/it-giano-dell-umbria-village-house-garden-view-55k). 37 of these homes were added in the last 30 days.
 
@@ -156,17 +156,17 @@ Marche | 1 | €55,000
 [Abruzzo](https://realhunt.co/homes/italy/abruzzo) | 3 | €59,000
 [Apulia](https://realhunt.co/homes/italy/apulia) | 5 | €65,000
 [Lake Como](https://realhunt.co/homes/italy/lake-como) | 5 | €85,000
-[Tuscany](https://realhunt.co/homes/italy/tuscany) | 16 | €115,000
 [Piedmont](https://realhunt.co/homes/italy/piedmont) | 5 | €115,000
 [Lombardy](https://realhunt.co/homes/italy/lombardy) | 4 | €115,000
 Le Marche | 2 | €120,000
+[Tuscany](https://realhunt.co/homes/italy/tuscany) | 18 | €125,000
 [Umbria](https://realhunt.co/homes/italy/umbria) | 9 | €125,000
 [Sardinia](https://realhunt.co/homes/italy/sardinia) | 6 | €150,000
 [Liguria](https://realhunt.co/homes/italy/liguria) | 5 | €170,000
 
 ### Buying costs and rules for foreigners in Italy
 
-Taxes and fees add about 4 to 15% to the price: Registration tax 9% on a second home (resale), or VAT on new builds; notary 1-2% + legal ~1% + agent ~3% (GPG roundtrip 10-18%). On the median home on this page (€80,000) that is €3,200 to €12,000, so €83,200 to €92,000 in all.
+Taxes and fees add about 4 to 15% to the price: Registration tax 9% on a second home (resale), or VAT on new builds; notary 1-2% + legal ~1% + agent ~3% (GPG roundtrip 10-18%). On the median home on this page (€83,000) that is €3,320 to €12,450, so €86,320 to €95,450 in all.
 
 At the same percentages: on €40,000, €1,600 to €6,000; on €80,000, €3,200 to €12,000; on €150,000, €6,000 to €22,500.
 
@@ -179,18 +179,18 @@ General information, not tax or legal advice. Figures checked in 2026.
 ### What to watch out for
 
 - A low price has a reason. [Furnished lake-view house in the old centre of San Siro, Lake Como](https://realhunt.co/deal/it-san-siro-como-lake-view-115k-805633): The boiler needs replacing (radiators and pipes are in place), and the house is reached on foot: public parking is about 200 m away, with no private parking.
-- 18 of the 83 listings give no floor area, so their price per m² cannot be compared.
+- 18 of the 85 listings give no floor area, so their price per m² cannot be compared.
 - 1 listing states a monthly community fee, of 58 EUR. Add it to your yearly costs.
 - 3 are in a shared building or complex but the listing does not state the community fee: ask for it in writing.
-- 1 of 83 sits where our rough flood check reads medium or high. Each home page links the official flood map.
-- 2 of 83 are close to a motorway, a railway or an airport (high on our noise check).
-- 35 of 83 were added more than 60 days ago. Ask the agent whether they are still for sale before you plan a trip.
+- 1 of 85 sits where our rough flood check reads medium or high. Each home page links the official flood map.
+- 2 of 85 are close to a motorway, a railway or an airport (high on our noise check).
+- 35 of 85 were added more than 60 days ago. Ask the agent whether they are still for sale before you plan a trip.
 
 ### Questions buyers ask
 
 #### How much does a house for sale in Italy cost?
 
-Asking prices run from €12,000 to €197,000 across 83 homes. The median is €80,000, or €1,000/m².
+Asking prices run from €12,000 to €197,000 across 85 homes. The median is €83,000, or €1,000/m².
 
 #### What is the cheapest house for sale in Italy?
 
@@ -202,7 +202,7 @@ Yes for EU citizens; non-EU buyers need reciprocity (US, UK, Canada, Australia q
 
 #### What are the buying costs in Italy?
 
-About 4 to 15% on top of the price: Registration tax 9% on a second home (resale), or VAT on new builds; notary 1-2% + legal ~1% + agent ~3% (GPG roundtrip 10-18%). On the median home on this page (€80,000) that is €3,200 to €12,000. General information, not tax advice.
+About 4 to 15% on top of the price: Registration tax 9% on a second home (resale), or VAT on new builds; notary 1-2% + legal ~1% + agent ~3% (GPG roundtrip 10-18%). On the median home on this page (€83,000) that is €3,320 to €12,450. General information, not tax advice.
 
 #### Which region is cheapest in Italy?
 
@@ -210,19 +210,19 @@ Among regions with at least 3 homes on RealHunt, Lazio has the lowest median pri
 
 ### More searches in Italy
 
-By budget [Under €20,000 5](https://realhunt.co/homes/italy/under-20000) [Under €30,000 13](https://realhunt.co/homes/italy/under-30000) [Under €40,000 22](https://realhunt.co/homes/italy/under-40000) [Under €50,000 32](https://realhunt.co/homes/italy/under-50000) [Under €60,000 36](https://realhunt.co/homes/italy/under-60000) [Under €80,000 42](https://realhunt.co/homes/italy/under-80000) [Under €100,000 53](https://realhunt.co/homes/italy/under-100000) [Under €150,000 69](https://realhunt.co/homes/italy/under-150000)
+By budget [Under €20,000 5](https://realhunt.co/homes/italy/under-20000) [Under €30,000 13](https://realhunt.co/homes/italy/under-30000) [Under €40,000 22](https://realhunt.co/homes/italy/under-40000) [Under €50,000 32](https://realhunt.co/homes/italy/under-50000) [Under €60,000 36](https://realhunt.co/homes/italy/under-60000) [Under €80,000 42](https://realhunt.co/homes/italy/under-80000) [Under €100,000 53](https://realhunt.co/homes/italy/under-100000) [Under €150,000 71](https://realhunt.co/homes/italy/under-150000)
 
-By setting [By the sea 12](https://realhunt.co/homes/italy/by-the-sea) [Village houses 63](https://realhunt.co/homes/italy/village-houses)
+By setting [By the sea 12](https://realhunt.co/homes/italy/by-the-sea) [Village houses 65](https://realhunt.co/homes/italy/village-houses)
 
-By type [Apartments 17](https://realhunt.co/homes/italy/apartments) [Houses 53](https://realhunt.co/homes/italy/houses)
+By type [Apartments 18](https://realhunt.co/homes/italy/apartments) [Houses 54](https://realhunt.co/homes/italy/houses)
 
-By bedrooms [1 bedroom 23](https://realhunt.co/homes/italy/1-bedroom) [2 bedrooms 34](https://realhunt.co/homes/italy/2-bedroom) [3 bedrooms 11](https://realhunt.co/homes/italy/3-bedroom)
+By bedrooms [1 bedroom 23](https://realhunt.co/homes/italy/1-bedroom) [2 bedrooms 36](https://realhunt.co/homes/italy/2-bedroom) [3 bedrooms 11](https://realhunt.co/homes/italy/3-bedroom)
 
-By region [Tuscany 16](https://realhunt.co/homes/italy/tuscany) [Umbria 9](https://realhunt.co/homes/italy/umbria) [Calabria 8](https://realhunt.co/homes/italy/calabria) [Lazio 7](https://realhunt.co/homes/italy/lazio) [Sardinia 6](https://realhunt.co/homes/italy/sardinia) [Sicily 6](https://realhunt.co/homes/italy/sicily) [Apulia 5](https://realhunt.co/homes/italy/apulia) [Lake Como 5](https://realhunt.co/homes/italy/lake-como) [Liguria 5](https://realhunt.co/homes/italy/liguria) [Piedmont 5](https://realhunt.co/homes/italy/piedmont) [Lombardy 4](https://realhunt.co/homes/italy/lombardy) [Abruzzo 3](https://realhunt.co/homes/italy/abruzzo)
+By region [Tuscany 18](https://realhunt.co/homes/italy/tuscany) [Umbria 9](https://realhunt.co/homes/italy/umbria) [Calabria 8](https://realhunt.co/homes/italy/calabria) [Lazio 7](https://realhunt.co/homes/italy/lazio) [Sardinia 6](https://realhunt.co/homes/italy/sardinia) [Sicily 6](https://realhunt.co/homes/italy/sicily) [Apulia 5](https://realhunt.co/homes/italy/apulia) [Lake Como 5](https://realhunt.co/homes/italy/lake-como) [Liguria 5](https://realhunt.co/homes/italy/liguria) [Piedmont 5](https://realhunt.co/homes/italy/piedmont) [Lombardy 4](https://realhunt.co/homes/italy/lombardy) [Abruzzo 3](https://realhunt.co/homes/italy/abruzzo)
 
 By area [Southern Italy 28](https://realhunt.co/homes/italy/southern-italy) [Abruzzo and Marche 4](https://realhunt.co/homes/italy/abruzzo-and-marche)
 
-By feature [Near a lake 13](https://realhunt.co/cheap-houses/near-a-lake-in-italy) [With a garden 25](https://realhunt.co/cheap-houses/with-garden-in-italy) [Stone houses 29](https://realhunt.co/cheap-houses/stone-houses-in-italy) [Cabins and cottages 3](https://realhunt.co/cheap-houses/cabins-and-cottages-in-italy) [With a terrace 42](https://realhunt.co/cheap-houses/with-a-terrace-in-italy) [Move-in ready 20](https://realhunt.co/cheap-houses/turnkey-in-italy) [Sea view 12](https://realhunt.co/cheap-houses/with-sea-view-in-italy) [With a fireplace 29](https://realhunt.co/cheap-houses/with-fireplace-in-italy) [With a garage 15](https://realhunt.co/cheap-houses/with-garage-in-italy) [On an island 12](https://realhunt.co/cheap-houses/on-an-island-in-italy) [In the mountains 6](https://realhunt.co/cheap-houses/in-the-mountains-in-italy) [Olive trees or vines 5](https://realhunt.co/cheap-houses/with-olive-trees-or-vines-in-italy) [Near an airport 22](https://realhunt.co/cheap-houses/near-an-airport-in-italy) [Under €500/m² 8](https://realhunt.co/cheap-houses/under-500-per-sqm-in-italy) [Score 90+ 8](https://realhunt.co/cheap-houses/score-90-plus-in-italy) [Hand-picked 10](https://realhunt.co/cheap-houses/editors-picks-in-italy) [New this month 37](https://realhunt.co/cheap-houses/new-this-month-in-italy) [New this week 30](https://realhunt.co/cheap-houses/new-this-week-in-italy) [Period features 16](https://realhunt.co/cheap-houses/with-period-features-in-italy) [Good weather 3](https://realhunt.co/cheap-houses/good-weather-in-italy) [Quiet location 44](https://realhunt.co/cheap-houses/quiet-location-in-italy) [Unusual buildings 3](https://realhunt.co/cheap-houses/unusual-buildings-in-italy) [Over 80 m² 34](https://realhunt.co/cheap-houses/over-80-sqm-in-italy) [Over 120 m² 13](https://realhunt.co/cheap-houses/over-120-sqm-in-italy)
+By feature [Near a lake 13](https://realhunt.co/cheap-houses/near-a-lake-in-italy) [With a garden 27](https://realhunt.co/cheap-houses/with-garden-in-italy) [Stone houses 29](https://realhunt.co/cheap-houses/stone-houses-in-italy) [Cabins and cottages 4](https://realhunt.co/cheap-houses/cabins-and-cottages-in-italy) [With a terrace 43](https://realhunt.co/cheap-houses/with-a-terrace-in-italy) [Move-in ready 21](https://realhunt.co/cheap-houses/turnkey-in-italy) [Sea view 12](https://realhunt.co/cheap-houses/with-sea-view-in-italy) [With a fireplace 30](https://realhunt.co/cheap-houses/with-fireplace-in-italy) [With a garage 16](https://realhunt.co/cheap-houses/with-garage-in-italy) [On an island 12](https://realhunt.co/cheap-houses/on-an-island-in-italy) [In the mountains 6](https://realhunt.co/cheap-houses/in-the-mountains-in-italy) [Olive trees or vines 6](https://realhunt.co/cheap-houses/with-olive-trees-or-vines-in-italy) [Near an airport 22](https://realhunt.co/cheap-houses/near-an-airport-in-italy) [Under €500/m² 8](https://realhunt.co/cheap-houses/under-500-per-sqm-in-italy) [Score 90+ 8](https://realhunt.co/cheap-houses/score-90-plus-in-italy) [Hand-picked 10](https://realhunt.co/cheap-houses/editors-picks-in-italy) [New this month 37](https://realhunt.co/cheap-houses/new-this-month-in-italy) [New this week 30](https://realhunt.co/cheap-houses/new-this-week-in-italy) [Period features 16](https://realhunt.co/cheap-houses/with-period-features-in-italy) [Good weather 3](https://realhunt.co/cheap-houses/good-weather-in-italy) [Quiet location 46](https://realhunt.co/cheap-houses/quiet-location-in-italy) [Unusual buildings 3](https://realhunt.co/cheap-houses/unusual-buildings-in-italy) [Over 80 m² 34](https://realhunt.co/cheap-houses/over-80-sqm-in-italy) [Over 120 m² 13](https://realhunt.co/cheap-houses/over-120-sqm-in-italy)
 
 Rankings [Most space for the money 20](https://realhunt.co/cheap-houses/most-space-for-the-money-in-italy) [Top 10 by score 10](https://realhunt.co/cheap-houses/best-rated-in-italy)
 
@@ -230,15 +230,15 @@ By feature and budget [Houses under €100,000 32](https://realhunt.co/cheap-hou
 
 In pounds and dollars [Under £100,000 59](https://realhunt.co/cheap-houses/under-100000-pounds-in-italy) [Under $50,000 28](https://realhunt.co/cheap-houses/under-50000-dollars-in-italy) [Under $100,000 47](https://realhunt.co/cheap-houses/under-100000-dollars-in-italy)
 
-Near a city [Near Milan 9](https://realhunt.co/cheap-houses/near-milan) [Near Rome 8](https://realhunt.co/cheap-houses/near-rome) [Near Florence 13](https://realhunt.co/cheap-houses/near-florence)
+Near a city [Near Milan 9](https://realhunt.co/cheap-houses/near-milan) [Near Rome 8](https://realhunt.co/cheap-houses/near-rome) [Near Florence 14](https://realhunt.co/cheap-houses/near-florence)
 
 Neighbouring countries [France 44](https://realhunt.co/homes/france) [Switzerland 10](https://realhunt.co/homes/switzerland)
 
-By country [Spain 134](https://realhunt.co/homes/spain) [United States 61](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [France 44](https://realhunt.co/homes/france) [Sweden 40](https://realhunt.co/homes/sweden) [Japan 34](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 26](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Portugal 6](https://realhunt.co/homes/portugal) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
+By country [Spain 133](https://realhunt.co/homes/spain) [United States 61](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [France 44](https://realhunt.co/homes/france) [Sweden 40](https://realhunt.co/homes/sweden) [Japan 34](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 26](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Portugal 6](https://realhunt.co/homes/portugal) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
 
-These listings come from green-acres.it (39), idealista.it (16), instagram.com (13), immobiliare.it (10), rightmove.co.uk (2). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
+These listings come from green-acres.it (41), idealista.it (16), instagram.com (13), immobiliare.it (10), rightmove.co.uk (2). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 
 [Email me new homes in Italy](https://realhunt.co/alerts?country=Italy) · [Filter and sort these homes](https://realhunt.co/?country=Italy#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in Italy](https://realhunt.co/sitemap/italy)
 
 ---
-Source: https://realhunt.co/homes/italy (RealHunt, 2026-11-24). Licence CC BY 4.0: quote it with a link to the page.
+Source: https://realhunt.co/homes/italy (RealHunt, 2026-11-25). Licence CC BY 4.0: quote it with a link to the page.

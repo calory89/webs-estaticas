@@ -1,8 +1,8 @@
 ## Casas en venta en la República Checa
 
-Actualizado el 24 de noviembre de 2026. Última vivienda añadida el 21 de noviembre de 2026.
+Actualizado el 25 de noviembre de 2026. Última vivienda añadida el 21 de noviembre de 2026.
 
-RealHunt tiene hoy 3 casas en venta en la República Checa, con precios de 130.900 € a 179.700 €. La más barata cuesta 130.900 €: [Casa de ladrillo mantenida con bomba de calor y jardín en Lomnička cerca de Plesná, Cheb](https://realhunt.co/es/deal/cz-lomnicka-plesna-brick-house-heat-pump-131k), en Lomnička (120 m², 1 dormitorio). El precio mediano es de 159.600 € (1.464 €/m²), frente a 93.200 € (1.220 €/m²) de las 615 viviendas de RealHunt en 29 países.
+RealHunt tiene hoy 3 casas en venta en la República Checa, con precios de 130.900 € a 179.700 €. La más barata cuesta 130.900 €: [Casa de ladrillo mantenida con bomba de calor y jardín en Lomnička cerca de Plesná, Cheb](https://realhunt.co/es/deal/cz-lomnicka-plesna-brick-house-heat-pump-131k), en Lomnička (120 m², 1 dormitorio). El precio mediano es de 159.600 € (1.464 €/m²), frente a 93.200 € (1.220 €/m²) de las 616 viviendas de RealHunt en 29 países.
 
 Viviendas
 3
@@ -23,13 +23,13 @@ Mejor nota
 85
 
 Datos del
-24 nov 2026
+25 nov 2026
 
 ### Las 3 viviendas, de mejor a peor nota
 
-- [Nota 85Nueva130.900 €Casa de ladrillo mantenida con bomba de calor y jardín en Lomnička cerca de Plesná, ChebLomnička, región de Karlovy Vary120 m² · 1 dorm. · 1.091 €/m² · 4 días en RealHuntPidiendo 3.182.000 CZK (aproximadamente 130.900 euros).](https://realhunt.co/es/deal/cz-lomnicka-plesna-brick-house-heat-pump-131k)
-- [Nota 84Nueva159.600 €Casa unifamiliar renovada con terraza de 50 m² y gran jardín en ČástohosticeČastohostice, región de Vysočina109 m² · 3 dorm. · 1.464 €/m² · 3 días en RealHuntSe pide 3.900.000 CZK (aproximadamente 159.600 €), una venta privada sin agencia.](https://realhunt.co/es/deal/cz-castohostice-renovated-four-room-house-big-garden-160k)
-- [Nota 77Nueva179.700 €Piso luminoso con dos largos balcones y vistas sobre la ciudad antigua de LitoměřiceLitoměřice, región de Ústí nad Labem61 m² · 1 dorm. · 2.946 €/m² · 3 días en RealHuntSe pide 4.390.000 CZK (aproximadamente 179.700 €).](https://realhunt.co/es/deal/cz-litomerice-two-balcony-flat-old-town-view-180k)
+- [Nota 85Nueva130.900 €Casa de ladrillo mantenida con bomba de calor y jardín en Lomnička cerca de Plesná, ChebLomnička, región de Karlovy Vary120 m² · 1 dorm. · 1.091 €/m² · 5 días en RealHuntPidiendo 3.182.000 CZK (aproximadamente 130.900 euros).](https://realhunt.co/es/deal/cz-lomnicka-plesna-brick-house-heat-pump-131k)
+- [Nota 84Nueva159.600 €Casa unifamiliar renovada con terraza de 50 m² y gran jardín en ČástohosticeČastohostice, región de Vysočina109 m² · 3 dorm. · 1.464 €/m² · 4 días en RealHuntSe pide 3.900.000 CZK (aproximadamente 159.600 €), una venta privada sin agencia.](https://realhunt.co/es/deal/cz-castohostice-renovated-four-room-house-big-garden-160k)
+- [Nota 77Nueva179.700 €Piso luminoso con dos largos balcones y vistas sobre la ciudad antigua de LitoměřiceLitoměřice, región de Ústí nad Labem61 m² · 1 dorm. · 2.946 €/m² · 4 días en RealHuntSe pide 4.390.000 CZK (aproximadamente 179.700 €).](https://realhunt.co/es/deal/cz-litomerice-two-balcony-flat-old-town-view-180k)
 
 ### Compara las 3 viviendas, de más barata a más cara
 
@@ -89,11 +89,11 @@ Sí. Los extranjeros pueden comprar viviendas y terrenos en la República Checa 
 
 Por presupuesto [Menos de 200.000 € 3](https://realhunt.co/es/homes/czech-republic/under-200000)
 
-Por país [España 134](https://realhunt.co/es/homes/spain) [Italia 83](https://realhunt.co/es/homes/italy) [Estados Unidos 61](https://realhunt.co/es/homes/united-states) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Francia 44](https://realhunt.co/es/homes/france) [Suecia 40](https://realhunt.co/es/homes/sweden) [Japón 34](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 26](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 16](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Portugal 6](https://realhunt.co/es/homes/portugal) [Chipre 5](https://realhunt.co/es/homes/cyprus) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Reino Unido 5](https://realhunt.co/es/homes/united-kingdom) [Uruguay 4](https://realhunt.co/es/homes/uruguay) [Irlanda 4](https://realhunt.co/es/homes/ireland) [Colombia 3](https://realhunt.co/es/homes/colombia)
+Por país [España 133](https://realhunt.co/es/homes/spain) [Italia 85](https://realhunt.co/es/homes/italy) [Estados Unidos 61](https://realhunt.co/es/homes/united-states) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Francia 44](https://realhunt.co/es/homes/france) [Suecia 40](https://realhunt.co/es/homes/sweden) [Japón 34](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 26](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 16](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Portugal 6](https://realhunt.co/es/homes/portugal) [Chipre 5](https://realhunt.co/es/homes/cyprus) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Reino Unido 5](https://realhunt.co/es/homes/united-kingdom) [Uruguay 4](https://realhunt.co/es/homes/uruguay) [Irlanda 4](https://realhunt.co/es/homes/ireland) [Colombia 3](https://realhunt.co/es/homes/colombia)
 
 Estos anuncios proceden de bezrealitky.cz (3). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 
 [Avísame por correo de viviendas nuevas en la República Checa](https://realhunt.co/es/alerts?country=Czech%20Republic) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Czech+Republic#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en la República Checa](https://realhunt.co/es/sitemap/czech-republic)
 
 ---
-Fuente: https://realhunt.co/es/homes/czech-republic (RealHunt, 2026-11-24). Licencia CC BY 4.0: se puede citar con un enlace a la página.
+Fuente: https://realhunt.co/es/homes/czech-republic (RealHunt, 2026-11-25). Licencia CC BY 4.0: se puede citar con un enlace a la página.

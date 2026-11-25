@@ -1,14 +1,14 @@
 {
- "total": 2816,
+ "total": 2813,
  "max_total": 3200,
  "langs": {
   "de": {
-   "pages": 629,
+   "pages": 628,
    "by_kind": {
     "country": 22,
     "gband": 5,
     "gfeature": 37,
-    "ccyBand": 15,
+    "ccyBand": 14,
     "band": 57,
     "feature": 210,
     "setting": 24,
@@ -26,7 +26,7 @@
     "italy": 97,
     "united-states": 48,
     "denmark": 34,
-    "france": 39,
+    "france": 38,
     "sweden": 41,
     "japan": 48,
     "poland": 14,
@@ -46,18 +46,18 @@
     "czech-republic": 2,
     "all countries": 60
    },
-   "homes": 615,
-   "homes_with_title": 615,
+   "homes": 616,
+   "homes_with_title": 616,
    "not_published": 0,
    "not_published_sample": [],
    "sitemap": "sitemap-de.xml"
   },
   "ru": {
-   "pages": 316,
+   "pages": 315,
    "by_kind": {
     "country": 22,
     "gband": 5,
-    "ccyBand": 15,
+    "ccyBand": 14,
     "band": 57,
     "setting": 24,
     "ptype": 11,
@@ -72,7 +72,7 @@
     "italy": 55,
     "united-states": 26,
     "denmark": 17,
-    "france": 16,
+    "france": 15,
     "sweden": 20,
     "japan": 25,
     "poland": 6,
@@ -92,19 +92,19 @@
     "czech-republic": 2,
     "all countries": 8
    },
-   "homes": 615,
-   "homes_with_title": 615,
+   "homes": 616,
+   "homes_with_title": 616,
    "not_published": 0,
    "not_published_sample": [],
    "sitemap": "sitemap-ru.xml"
   },
   "fr": {
-   "pages": 629,
+   "pages": 628,
    "by_kind": {
     "country": 22,
     "gband": 5,
     "gfeature": 37,
-    "ccyBand": 15,
+    "ccyBand": 14,
     "band": 57,
     "feature": 210,
     "setting": 24,
@@ -122,7 +122,7 @@
     "italy": 97,
     "united-states": 48,
     "denmark": 34,
-    "france": 39,
+    "france": 38,
     "sweden": 41,
     "japan": 48,
     "poland": 14,
@@ -142,8 +142,8 @@
     "czech-republic": 2,
     "all countries": 60
    },
-   "homes": 615,
-   "homes_with_title": 615,
+   "homes": 616,
+   "homes_with_title": 616,
    "not_published": 0,
    "not_published_sample": [],
    "sitemap": "sitemap-fr.xml"
@@ -154,7 +154,7 @@
     "country": 22,
     "gband": 5,
     "gfeature": 37,
-    "ccyBand": 15,
+    "ccyBand": 14,
     "band": 57,
     "feature": 210,
     "setting": 22,
@@ -164,7 +164,7 @@
     "area": 22,
     "near": 12,
     "regionBand": 62,
-    "region": 56,
+    "region": 57,
     "town": 6
    },
    "by_country": {
@@ -172,8 +172,8 @@
     "italy": 97,
     "united-states": 44,
     "denmark": 34,
-    "france": 39,
-    "sweden": 39,
+    "france": 38,
+    "sweden": 40,
     "japan": 48,
     "poland": 14,
     "greece": 40,
@@ -192,14 +192,10 @@
     "czech-republic": 2,
     "all countries": 60
    },
-   "homes": 615,
-   "homes_with_title": 615,
-   "not_published": 8,
+   "homes": 616,
+   "homes_with_title": 616,
+   "not_published": 7,
    "not_published_sample": [
-    {
-     "path": "/homes/sweden/kronoberg",
-     "why": "over the page budget of the language (620)"
-    },
     {
      "path": "/homes/sweden/varmland/under-80000",
      "why": "over the page budget of the language (620)"
@@ -237,7 +233,7 @@
     "country": 22,
     "gband": 5,
     "gfeature": 37,
-    "ccyBand": 15,
+    "ccyBand": 14,
     "band": 57,
     "feature": 210,
     "setting": 22,
@@ -247,7 +243,7 @@
     "area": 22,
     "near": 12,
     "regionBand": 62,
-    "region": 56,
+    "region": 57,
     "town": 6
    },
    "by_country": {
@@ -255,8 +251,8 @@
     "italy": 97,
     "united-states": 44,
     "denmark": 34,
-    "france": 39,
-    "sweden": 39,
+    "france": 38,
+    "sweden": 40,
     "japan": 48,
     "poland": 14,
     "greece": 40,
@@ -275,14 +271,10 @@
     "czech-republic": 2,
     "all countries": 60
    },
-   "homes": 615,
-   "homes_with_title": 615,
-   "not_published": 8,
+   "homes": 616,
+   "homes_with_title": 616,
+   "not_published": 7,
    "not_published_sample": [
-    {
-     "path": "/homes/sweden/kronoberg",
-     "why": "over the page budget of the language (620)"
-    },
     {
      "path": "/homes/sweden/varmland/under-80000",
      "why": "over the page budget of the language (620)"
@@ -316,9 +308,9 @@
   }
  },
  "hreflang": {
-  "english_pages_linked": 629,
-  "spanish_pages_linked": 629
+  "english_pages_linked": 628,
+  "spanish_pages_linked": 628
  },
- "home_pages_linked": 1210,
+ "home_pages_linked": 1212,
  "failures": []
 }

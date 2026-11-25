@@ -1,8 +1,8 @@
 # Casas baratas en Irlanda: datos clave y todas las casas de RealHunt
 
-A 24 de noviembre de 2026, RealHunt publica 4 casas en venta en Irlanda, revisadas una a una por una persona. En Irlanda, el precio de salida mediano de esas 4 casas es de 230.000 € (2.255 € por m², calculado con las 4 casas de superficie conocida); la más barata cuesta 170.000 € y la más cara, 230.000 €. Los impuestos y gastos de compra suman alrededor del 2,5–3,5% del precio de una casa en Irlanda (cifras de 2026). Con 4 casas la muestra es pequeña, así que la mediana de Irlanda es solo orientativa.
+A 25 de noviembre de 2026, RealHunt publica 4 casas en venta en Irlanda, revisadas una a una por una persona. En Irlanda, el precio de salida mediano de esas 4 casas es de 230.000 € (2.255 € por m², calculado con las 4 casas de superficie conocida); la más barata cuesta 170.000 € y la más cara, 230.000 €. Los impuestos y gastos de compra suman alrededor del 2,5–3,5% del precio de una casa en Irlanda (cifras de 2026). Con 4 casas la muestra es pequeña, así que la mediana de Irlanda es solo orientativa.
 
-Fuente: RealHunt, https://realhunt.co/es/homes/ireland · Actualizado el 24 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
+Fuente: RealHunt, https://realhunt.co/es/homes/ireland · Actualizado el 25 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/ireland.json · PDF: https://realhunt.co/data/countries/ireland.es.pdf
 
 ## Datos clave
@@ -18,7 +18,7 @@ También en JSON: https://realhunt.co/data/countries/ireland.json · PDF: https:
 | Impuestos y gastos de compra | 2,5–3,5% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sí. No hay restricciones para que los extranjeros compren viviendas en Irlanda, y ser propietario no da derecho a vivir allí. |
 | Impuesto anual sobre la vivienda | Impuesto local sobre la propiedad (Local Property Tax, LPT): desde 2026 una vivienda valorada en hasta 240.000 € paga una cuota básica de 95 € al año y una de 240.001 € a 315.000 € paga 235 €; cada ayuntamiento puede subir o bajar la cuota básica hasta un 15%, y la mayoría la subió un 15% para 2026. |
-| Fecha de estas cifras | 24 de noviembre de 2026 |
+| Fecha de estas cifras | 25 de noviembre de 2026 |
 
 ## Gastos e impuestos
 

@@ -1,8 +1,8 @@
 # Casas baratas en Eslovenia: datos clave y todas las casas de RealHunt
 
-A 24 de noviembre de 2026, RealHunt publica 3 casas en venta en Eslovenia, revisadas una a una por una persona. En Eslovenia, el precio de salida mediano de esas 3 casas es de 229.000 € (1.346 € por m², calculado con las 3 casas de superficie conocida); la más barata cuesta 105.000 € y la más cara, 245.000 €. Con 3 casas la muestra es pequeña, así que la mediana de Eslovenia es solo orientativa.
+A 25 de noviembre de 2026, RealHunt publica 3 casas en venta en Eslovenia, revisadas una a una por una persona. En Eslovenia, el precio de salida mediano de esas 3 casas es de 229.000 € (1.346 € por m², calculado con las 3 casas de superficie conocida); la más barata cuesta 105.000 € y la más cara, 245.000 €. Con 3 casas la muestra es pequeña, así que la mediana de Eslovenia es solo orientativa.
 
-Fuente: RealHunt, https://realhunt.co/es/homes/slovenia · Actualizado el 24 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
+Fuente: RealHunt, https://realhunt.co/es/homes/slovenia · Actualizado el 25 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/slovenia.json · PDF: https://realhunt.co/data/countries/slovenia.es.pdf
 
 ## Datos clave
@@ -17,7 +17,7 @@ También en JSON: https://realhunt.co/data/countries/slovenia.json · PDF: https
 | Nota RealHunt mediana (de 70 a 98) | 83 |
 | ¿Puede comprar un extranjero? | Sí para los ciudadanos de países de la UE, del EEE y de la OCDE (como Estados Unidos, el Reino Unido y Canadá), que compran como los eslovenos. Los ciudadanos de los países candidatos a la UE (Macedonia del Norte, Serbia, Montenegro, Albania, Ucrania, Moldavia, Bosnia y Herzegovina y Georgia) necesitan antes una resolución que confirme la reciprocidad, y los de los demás países, como China y Rusia, no pueden comprar, solo heredar cuando hay reciprocidad. |
 | Impuesto anual sobre la vivienda | Quien usa directamente la vivienda, normalmente el propietario, paga una tasa anual por el uso del suelo urbano (nadomestilo za uporabo stavbnega zemljišča, NUSZ), que fija la ordenanza de cada municipio y que la administración tributaria (FURS) liquida una vez al año; los propietarios de casas de vacaciones pagan además el impuesto sobre el patrimonio (davek od premoženja). |
-| Fecha de estas cifras | 24 de noviembre de 2026 |
+| Fecha de estas cifras | 25 de noviembre de 2026 |
 
 ## Gastos e impuestos
 

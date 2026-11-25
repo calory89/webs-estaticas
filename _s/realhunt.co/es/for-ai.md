@@ -4,7 +4,7 @@ Para asistentes de IA
 
 Los asistentes de IA y los buscadores pueden leer, citar y resumir todas las páginas públicas de RealHunt, con un enlace a la página de la que sale el dato. Las páginas de datos tienen licencia Creative Commons BY 4.0; el índice corto es https://realhunt.co/llms.txt y el texto completo, https://realhunt.co/llms-full.txt.
 
-Actualizado el 24 de noviembre de 2026
+Actualizado el 25 de noviembre de 2026
 
 ### Qué es RealHunt
 
@@ -69,4 +69,4 @@ Todas las casas de RealHunt, una por línea | [realhunt.co/data/homes.jsonl](htt
 Dudas sobre los datos, una corrección u otro formato: carlos@equinoxinvestmentgroup.com.
 
 ---
-Fuente: https://realhunt.co/es/for-ai (RealHunt, 2026-11-24)
+Fuente: https://realhunt.co/es/for-ai (RealHunt, 2026-11-25)

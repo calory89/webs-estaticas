@@ -1,11 +1,11 @@
 {
  "summary": {
-  "pages": 4688,
-  "indexable": 4146,
+  "pages": 4686,
+  "indexable": 4144,
   "noindex": 542,
   "noindex_by_polish": 450,
   "duplicate_homes": 2,
-  "title_over_60": 447,
+  "title_over_60": 445,
   "desc_over_155": 0,
   "desc_under_120": 69,
   "desc_out_of_range": 69,
@@ -17,13 +17,13 @@
   "orphans": 0,
   "inlinks_under_3": 44,
   "hreflang_problems": 0,
-  "pages_with_hreflang": 4128,
+  "pages_with_hreflang": 4126,
   "thin_under_150_words": 29,
   "mixed_content": 0,
   "no_lang": 0,
-  "with_lastmod": 4094,
-  "redirects": 1851,
-  "moved_stubs": 325
+  "with_lastmod": 4092,
+  "redirects": 1857,
+  "moved_stubs": 327
  },
  "failures": [],
  "groups": {
@@ -130,14 +130,14 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 1935,
+   "median_words": 1932,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/cheap-houses/*": {
-   "pages": 343,
-   "indexable": 343,
+   "pages": 342,
+   "indexable": 342,
    "noindex": 0,
    "median_words": 1636,
    "title_over_60": 10,
@@ -346,17 +346,17 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 2357,
+   "median_words": 2352,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/es/cheap-houses/*": {
-   "pages": 343,
-   "indexable": 343,
+   "pages": 342,
+   "indexable": 342,
    "noindex": 0,
-   "median_words": 1930,
-   "title_over_60": 86,
+   "median_words": 1925,
+   "title_over_60": 85,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
@@ -419,7 +419,7 @@
    "indexable": 725,
    "noindex": 1,
    "median_words": 1091,
-   "title_over_60": 129,
+   "title_over_60": 128,
    "desc_out_of_range": 1,
    "inlinks_under_3": 0
   },
@@ -1056,9 +1056,9 @@
  "healed_links": {},
  "json_ld": {
   "notes": {
-   "pages with JSON-LD changed": 4146,
+   "pages with JSON-LD changed": 4144,
    "ItemList: items removed or renumbered": 10,
-   "RealEstateListing: availability left out (advert not confirmed)": 264,
+   "RealEstateListing: availability left out (advert not confirmed)": 272,
    "Article: author, date, headline or image missing": 52
   },
   "missing": {}
@@ -1265,7 +1265,7 @@
    "/cheap-houses/with-a-terrace-in-dominican-republic",
    "/cheap-houses/with-garden-under-100000-in-united-states",
    "/cheap-houses/with-olive-trees-or-vines-in-sweden",
-   "... 387 more"
+   "... 385 more"
   ],
   "title_under_20": [
    "/contact",
@@ -1273,7 +1273,7 @@
   ]
  },
  "spanish": {
-  "twins": 1194,
+  "twins": 1193,
   "groups": {
    "homes": {
     "pages": 726,
@@ -1284,9 +1284,9 @@
     "spanish_pct": 0
    },
    "places": {
-    "pages": 639,
-    "twins": 639,
-    "words": 1373643,
+    "pages": 638,
+    "twins": 638,
+    "words": 1370600,
     "english": 0,
     "spanish_pct": 100
    },
@@ -1301,7 +1301,7 @@
    "content": {
     "pages": 592,
     "twins": 591,
-    "words": 458488,
+    "words": 458459,
     "english": 0,
     "by_hand": 42,
     "spanish_pct": 100
@@ -1317,16 +1317,17 @@
  },
  "tech": {
   "summary": {
-   "checked": 4688,
-   "indexable": 4146,
+   "checked": 4686,
+   "indexable": 4144,
    "max_depth": 3,
-   "titles_changed_since_last_build": 0,
+   "titles_changed_since_last_build": 123,
    "external_link_hosts": 316,
    "no_text_without_javascript": 9,
    "legal_page_without_disclaimer": 3,
    "keyword_stuffing": 6,
    "year_in_title": 2,
    "near_identical_pages": 528,
+   "title_changed_twice_in_28_days": 109,
    "fixed_here": 4,
    "links_pointed_past_a_redirect": 4
   },
@@ -1402,12 +1403,55 @@
     "/can-i-buy/danish-in-dominican-republic ~ /can-i-buy/dutch-in-dominican-republic (97%)",
     "/can-i-buy/danish-in-dominican-republic ~ /can-i-buy/french-in-dominican-republic (94%)",
     "... 488 more"
+   ],
+   "title_changed_twice_in_28_days": [
+    "/cheap-houses/apartments-under-100000-in-spain: Cheap apartments for sale in Spain under €100,000 (27)",
+    "/cheap-houses/by-the-sea: Cheap homes by the sea (142, from €19,320) · RealHunt",
+    "/cheap-houses/cabins-and-cottages: Cheap cabins and cottages (47, from €7,400) · RealHunt",
+    "/cheap-houses/good-weather: Cheap homes with 150 or more good-weather days a year (51)",
+    "/cheap-houses/near-alicante: Cheap homes for sale within 100 km of Alicante (36)",
+    "/cheap-houses/near-florence: Homes for sale within 100 km of Florence (14, from €16,000)",
+    "/cheap-houses/near-seville: Cheap homes for sale within 100 km of Seville (9) · RealHunt",
+    "/cheap-houses/near-valencia: Homes for sale within 100 km of Valencia (13, from €65,000)",
+    "/cheap-houses/on-an-island: Homes on an island (60, from €30,000) · RealHunt",
+    "/cheap-houses/quiet-location: Cheap homes away from motorways and railways (273)",
+    "/cheap-houses/quiet-location-in-italy: Cheap homes away from motorways and railways in Italy (46)",
+    "/cheap-houses/quiet-location-in-spain: Cheap homes away from motorways and railways in Spain (79)",
+    "/cheap-houses/turnkey-in-italy: Move-in ready homes in Italy (21, from €30,000) · RealHunt",
+    "/cheap-houses/turnkey-in-spain: Cheap move-in ready homes in Spain (90, from €39,000)",
+    "/cheap-houses/under-100000: Cheap houses for sale under €100,000 (366, from €7,400)",
+    "/cheap-houses/under-100000-dollars: Cheap homes for sale under $100,000 (300, from €7,400)",
+    "/cheap-houses/under-100000-dollars-in-spain: Cheap homes for sale in Spain under $100,000 (53) · RealHunt",
+    "/cheap-houses/village-houses: Cheap village houses (316, from €7,400) · RealHunt",
+    "/cheap-houses/with-a-terrace: Homes with a terrace or balcony (338, from €10,240)",
+    "/cheap-houses/with-a-terrace-in-italy: Cheap homes with a terrace or balcony in Italy (43)",
+    "/cheap-houses/with-a-terrace-in-spain: Cheap homes with a terrace or balcony in Spain (99)",
+    "/cheap-houses/with-fireplace: Homes with a fireplace (107, from €7,400) · RealHunt",
+    "/cheap-houses/with-fireplace-in-italy: Homes with a fireplace in Italy (30, from €13,000)",
+    "/cheap-houses/with-garage: Homes with a garage (147, from €18,770) · RealHunt",
+    "/cheap-houses/with-garage-in-italy: Homes with a garage in Italy (16, from €39,000) · RealHunt",
+    "/cheap-houses/with-garage-in-spain: Homes with a garage in Spain (27, from €69,000) · RealHunt",
+    "/cheap-houses/with-garden-in-italy: Houses with a garden in Italy (27, from €29,000) · RealHunt",
+    "/cheap-houses/with-garden-in-spain: Homes with a garden in Spain (30, from €60,000) · RealHunt",
+    "/cheap-houses/with-olive-trees-or-vines: Homes with olive trees, vines or fruit trees (19) · RealHunt",
+    "/cheap-houses/with-olive-trees-or-vines-in-italy: Homes with olive trees, vines or fruit trees in Italy (6)",
+    "/cheap-houses/with-pool: Homes with a pool (71, from €19,910) · RealHunt",
+    "/cheap-houses/with-pool-in-spain: Apartments with a pool in Spain (31, from €91,000)",
+    "/cheap-houses/with-sea-view: Homes with a sea view (60, from €10,240) · RealHunt",
+    "/cheap-houses/with-sea-view-in-spain: Homes with a sea view in Spain (14, from €49,000) · RealHunt",
+    "/deal/es-costa-del-silencio-240k-479658: Sold or withdrawn: 1-bedroom flat in Costa del Silencio for €240,000",
+    "/deal/es-la-sella-255k-025158: Sold or withdrawn: 2-bedroom flat in La Sella for €255,000",
+    "/deal/es-utrera-renovated-80k-190050590: 3-bedroom flat in El Tinte, Spain for €80,000 · RealHunt",
+    "/deal/it-tuscany-montaione-renovated-140k: 2-bedroom flat in Montaione, Italy for €140,000 · RealHunt",
+    "/deal/it-tuscany-montemerano-saturnia-139k: 2-bedroom cottage in Montemerano, Italy for €139,000",
+    "/es/cheap-houses/apartments-under-100000-in-spain: Pisos baratos en venta en España por menos de 100.000 € (27)",
+    "... 69 more"
    ]
   },
   "depth": {
    "0": 2,
    "1": 142,
-   "2": 3606,
+   "2": 3604,
    "3": 396
   },
   "noindex": {
@@ -1514,7 +1558,7 @@
   "sitemap-main.xml": 22,
   "sitemap-countries.xml": 238,
   "sitemap-prices.xml": 57,
-  "sitemap-cheap-houses.xml": 344,
+  "sitemap-cheap-houses.xml": 343,
   "sitemap-guides.xml": 61,
   "sitemap-costs.xml": 56,
   "sitemap-blog.xml": 39,
@@ -1555,7 +1599,7 @@
   "sitemap-es-main.xml": 19,
   "sitemap-es-countries.xml": 238,
   "sitemap-es-prices.xml": 57,
-  "sitemap-es-cheap-houses.xml": 344,
+  "sitemap-es-cheap-houses.xml": 343,
   "sitemap-es-guides.xml": 61,
   "sitemap-es-costs.xml": 56,
   "sitemap-es-blog.xml": 38,

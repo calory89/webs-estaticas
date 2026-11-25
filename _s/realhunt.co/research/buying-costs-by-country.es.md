@@ -4,7 +4,7 @@ De 29 países y destinos, los impuestos y gastos que se pagan además del precio
 
 Impuesto de transmisiones o IVA, actos jurídicos, notaría, registro y abogado, como porcentaje del precio. Recopilado de las fuentes enlazadas en cada país; información general, no asesoramiento fiscal.
 
-Actualizado el 24 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/buying-costs-by-country (CC BY 4.0). CSV: https://realhunt.co/research/buying-costs-by-country.es.csv
+Actualizado el 25 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/buying-costs-by-country (CC BY 4.0). CSV: https://realhunt.co/research/buying-costs-by-country.es.csv
 
 ## La tabla
 

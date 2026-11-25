@@ -1,8 +1,8 @@
 # Cheap homes in Canada: key facts and every home on RealHunt
 
-On 24 November 2026, RealHunt lists 16 homes for sale in Canada, each one checked by a person. In Canada, the median asking price of those 16 homes is €99,500 (€963 per m², from the 16 homes with a known size); the cheapest costs €55,842 and the most expensive €190,700. Taxes and fees add about 1.5–4% to the price of a home in Canada (figures as of 2026).
+On 25 November 2026, RealHunt lists 16 homes for sale in Canada, each one checked by a person. In Canada, the median asking price of those 16 homes is €99,500 (€963 per m², from the 16 homes with a known size); the cheapest costs €55,842 and the most expensive €190,700. Taxes and fees add about 1.5–4% to the price of a home in Canada (figures as of 2026).
 
-Source: RealHunt, https://realhunt.co/homes/canada · Updated 24 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
+Source: RealHunt, https://realhunt.co/homes/canada · Updated 25 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/canada.json · PDF: https://realhunt.co/data/countries/canada.pdf
 
 ## Key facts
@@ -18,7 +18,7 @@ Also as JSON: https://realhunt.co/data/countries/canada.json · PDF: https://rea
 | Taxes and fees to buy | 1.5–4% of the price (as of 2026) |
 | Can foreigners buy? | Mostly not for now: a federal ban stops non-Canadians from buying homes in cities and larger towns until January 1, 2027, with exceptions such as work permit holders and spouses of citizens or permanent residents. The ban does not cover rural areas and small towns, and the government has said it does not plan simply to extend it, but a replacement is being studied. |
 | Yearly property tax | Property tax is set by each city as a share of assessed value, from about 0.3% in Vancouver to 2.12% in Saint John in 2026. |
-| Date of these figures | 24 November 2026 |
+| Date of these figures | 25 November 2026 |
 
 ## Costs and taxes
 

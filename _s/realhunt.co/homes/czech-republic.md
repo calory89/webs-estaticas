@@ -1,8 +1,8 @@
 ## Houses for sale in the Czech Republic
 
-Updated 24 November 2026. Newest home added 21 November 2026.
+Updated 25 November 2026. Newest home added 21 November 2026.
 
-RealHunt lists 3 houses for sale in the Czech Republic today, priced from €130,900 to €179,700. The cheapest costs €130,900: [Maintained brick house with a heat pump and garden in Lomnička near Plesná, Cheb](https://realhunt.co/deal/cz-lomnicka-plesna-brick-house-heat-pump-131k), in Lomnička (120 m², 1 bedroom). The median price is €159,600 (€1,464/m²), against €93,200 (€1,220/m²) for the 615 homes on RealHunt in 29 countries.
+RealHunt lists 3 houses for sale in the Czech Republic today, priced from €130,900 to €179,700. The cheapest costs €130,900: [Maintained brick house with a heat pump and garden in Lomnička near Plesná, Cheb](https://realhunt.co/deal/cz-lomnicka-plesna-brick-house-heat-pump-131k), in Lomnička (120 m², 1 bedroom). The median price is €159,600 (€1,464/m²), against €93,200 (€1,220/m²) for the 616 homes on RealHunt in 29 countries.
 
 Homes
 3
@@ -23,13 +23,13 @@ Top score
 85
 
 Data of
-24 Nov 2026
+25 Nov 2026
 
 ### The 3 homes, best score first
 
-- [Score 85New€130,900Maintained brick house with a heat pump and garden in Lomnička near Plesná, ChebLomnička, Karlovy Vary region120 m² · 1 bed · €1,091/m² · 4 days on RealHuntAsking 3,182,000 CZK (about €130,900).](https://realhunt.co/deal/cz-lomnicka-plesna-brick-house-heat-pump-131k)
-- [Score 84New€159,600Renovated single-storey house with a 50 m² terrace and big garden in ČastohosticeČastohostice, Vysočina region109 m² · 3 bed · €1,464/m² · 3 days on RealHuntAsking 3,900,000 CZK (about €159,600), a private sale with no agency.](https://realhunt.co/deal/cz-castohostice-renovated-four-room-house-big-garden-160k)
-- [Score 77New€179,700Bright flat with two long balconies and a view over the old town of LitoměřiceLitoměřice, Ústí nad Labem region61 m² · 1 bed · €2,946/m² · 3 days on RealHuntAsking 4,390,000 CZK (about €179,700).](https://realhunt.co/deal/cz-litomerice-two-balcony-flat-old-town-view-180k)
+- [Score 85New€130,900Maintained brick house with a heat pump and garden in Lomnička near Plesná, ChebLomnička, Karlovy Vary region120 m² · 1 bed · €1,091/m² · 5 days on RealHuntAsking 3,182,000 CZK (about €130,900).](https://realhunt.co/deal/cz-lomnicka-plesna-brick-house-heat-pump-131k)
+- [Score 84New€159,600Renovated single-storey house with a 50 m² terrace and big garden in ČastohosticeČastohostice, Vysočina region109 m² · 3 bed · €1,464/m² · 4 days on RealHuntAsking 3,900,000 CZK (about €159,600), a private sale with no agency.](https://realhunt.co/deal/cz-castohostice-renovated-four-room-house-big-garden-160k)
+- [Score 77New€179,700Bright flat with two long balconies and a view over the old town of LitoměřiceLitoměřice, Ústí nad Labem region61 m² · 1 bed · €2,946/m² · 4 days on RealHuntAsking 4,390,000 CZK (about €179,700).](https://realhunt.co/deal/cz-litomerice-two-balcony-flat-old-town-view-180k)
 
 ### Compare the 3 homes, cheapest first
 
@@ -89,11 +89,11 @@ Yes. Foreigners can buy homes and land in the Czech Republic on the same terms a
 
 By budget [Under €200,000 3](https://realhunt.co/homes/czech-republic/under-200000)
 
-By country [Spain 134](https://realhunt.co/homes/spain) [Italy 83](https://realhunt.co/homes/italy) [United States 61](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [France 44](https://realhunt.co/homes/france) [Sweden 40](https://realhunt.co/homes/sweden) [Japan 34](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 26](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Portugal 6](https://realhunt.co/homes/portugal) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Colombia 3](https://realhunt.co/homes/colombia)
+By country [Spain 133](https://realhunt.co/homes/spain) [Italy 85](https://realhunt.co/homes/italy) [United States 61](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [France 44](https://realhunt.co/homes/france) [Sweden 40](https://realhunt.co/homes/sweden) [Japan 34](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 26](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Portugal 6](https://realhunt.co/homes/portugal) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Colombia 3](https://realhunt.co/homes/colombia)
 
 These listings come from bezrealitky.cz (3). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 
 [Email me new homes in the Czech Republic](https://realhunt.co/alerts?country=Czech%20Republic) · [Filter and sort these homes](https://realhunt.co/?country=Czech+Republic#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in the Czech Republic](https://realhunt.co/sitemap/czech-republic)
 
 ---
-Source: https://realhunt.co/homes/czech-republic (RealHunt, 2026-11-24). Licence CC BY 4.0: quote it with a link to the page.
+Source: https://realhunt.co/homes/czech-republic (RealHunt, 2026-11-25). Licence CC BY 4.0: quote it with a link to the page.
