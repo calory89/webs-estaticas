@@ -289,7 +289,8 @@ const SRI_JS = ['/k/site.js', '/k/case.js', '/k/cases.js', '/k/acct.js', '/k/cyc
 async function sriJs(env) {
   const M = new Map(), td = new TextDecoder();
   await Promise.all(SRI_JS.map(async f => { const b = await rawFile(env, f); if (!b) return; const s = td.decode(b);
-    for (const m of s.matchAll(/https:\/\/(?:cdnjs\.cloudflare\.com|unpkg\.com|cdn\.jsdelivr\.net)\/[^"' )`]+/g)) { const u = m[0].replace(/@'$/, ''), w = s.slice(Math.max(0, m.index - 250), m.index + m[0].length + 400), ok = /sha(256|384|512)-[A-Za-z0-9+/=]{40,}/.test(w); const o = M.get(u) || { n: new Set(), ok: true }; o.n.add(f); o.ok = o.ok && ok; M.set(u, o); } }));
+    for (const m of s.matchAll(/https:\/\/(?:cdnjs\.cloudflare\.com|unpkg\.com|cdn\.jsdelivr\.net)\/[^"' )`]+/g)) { const u = m[0].replace(/@'$/, ''), w = s.slice(Math.max(0, m.index - 250), m.index + m[0].length + 400), ok = /sha(256|384|512)-[A-Za-z0-9+/=]{40,}/.test(w); (M.get(u) || M.set(u, { n: new Set(), ok: true, f: {} }).get(u)).f[f] = ((M.get(u).f[f]) || ok); } }));
+  for (const o of M.values()) { for (const f in o.f) { o.n.add(f); o.ok = o.ok && o.f[f]; } }   // per file: a hash next to any mention of the address (loaders look it up in a map)
   return M;
 }
 async function sriSec(env, l, d) {
