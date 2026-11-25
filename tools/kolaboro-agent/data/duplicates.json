@@ -320,6 +320,14 @@
   ]
  },
  {
+  "a": "lumara-broadbeach-5point-bourke",
+  "b": "lido-broadbeach",
+  "market": "Gold Coast",
+  "why": [
+   "144 m apart"
+  ]
+ },
+ {
   "a": "banyan-tree-beach-residences-nerea-banyan-group",
   "b": "banyan-tree-beach-residences-oceanus",
   "market": "Phuket",
@@ -385,9 +393,25 @@
   ]
  },
  {
+  "a": "nad-al-sheba-gardens-phase-7-meraas",
+  "b": "nad-al-sheba-gardens-phase-12",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "forest-city-2-hz-development",
   "b": "forest-city-tower",
   "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "the-gate-6-aljada-arada",
+  "b": "the-gate-3-4-at-aljada-arada",
+  "market": "Sharjah",
   "why": [
    "similar name"
   ]
@@ -448,6 +472,22 @@
   "market": "Spain",
   "why": [
    "similar name"
+  ]
+ },
+ {
+  "a": "palmera-residences-central-equity",
+  "b": "arc-residences-northcliffe-surfers-paradise",
+  "market": "Gold Coast",
+  "why": [
+   "80 m apart"
+  ]
+ },
+ {
+  "a": "aura-melbourne-square-osk-property",
+  "b": "blvd-at-melbourne-square-southbank",
+  "market": "Melbourne",
+  "why": [
+   "121 m apart"
   ]
  },
  {
@@ -763,6 +803,14 @@
   ]
  },
  {
+  "a": "samana-portside-dubai",
+  "b": "portside-2-by-samana-developers",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "fahid-beach-residences",
   "b": "the-beach-house-fahid",
   "market": "Abu Dhabi",
@@ -814,6 +862,14 @@
   "a": "cove-edition-5-by-imtiaz",
   "b": "cove-edition-iii-by-imtiaz",
   "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "villa-miami",
+  "b": "hq-residences-miami",
+  "market": "Miami",
   "why": [
    "similar name"
   ]
@@ -998,6 +1054,14 @@
   "a": "atrium-gardens-the-ellinikon-little-athens",
   "b": "trinity-gardens-the-ellinikon-little-athens",
   "market": "Greece",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "branz-city-funabashi-biare",
+  "b": "branz-city-hashimoto-biare",
+  "market": "Japan",
   "why": [
    "similar name"
   ]
@@ -1333,6 +1397,14 @@
  {
   "a": "palm-central-private-residences-frond-m",
   "b": "palm-central-private-residences-frond-n",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "palm-central-private-residences-frond-m",
+  "b": "palm-central-private-residences-frond-d",
   "market": "Dubai",
   "why": [
    "similar name"
@@ -1684,6 +1756,14 @@
   ]
  },
  {
+  "a": "terra-gardens",
+  "b": "sol-terra-gardens",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "sera-1-dubai",
   "b": "sera-2-dubai",
   "market": "Dubai",
@@ -1702,6 +1782,30 @@
  {
   "a": "serro-the-heights",
   "b": "serro-2-the-heights",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "the-valley-alva",
+  "b": "the-valley-alva-3",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "the-valley-alva",
+  "b": "the-valley-alva-2",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "fior-1-dubai",
+  "b": "fior-2-dubai",
   "market": "Dubai",
   "why": [
    "similar name"
@@ -1884,6 +1988,14 @@
   ]
  },
  {
+  "a": "azizi-riviera-49",
+  "b": "azizi-riviera-reve",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "azizi-riviera-50",
   "b": "azizi-riviera-53",
   "market": "Dubai",
@@ -1940,6 +2052,14 @@
   ]
  },
  {
+  "a": "azizi-riviera-50",
+  "b": "azizi-riviera-reve",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "azizi-riviera-53",
   "b": "azizi-riviera-62",
   "market": "Dubai",
@@ -1988,6 +2108,14 @@
   ]
  },
  {
+  "a": "azizi-riviera-53",
+  "b": "azizi-riviera-reve",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "azizi-riviera-62",
   "b": "azizi-riviera-60",
   "market": "Dubai",
@@ -2028,6 +2156,14 @@
   ]
  },
  {
+  "a": "azizi-riviera-62",
+  "b": "azizi-riviera-reve",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "azizi-riviera-60",
   "b": "azizi-riviera-54",
   "market": "Dubai",
@@ -2054,6 +2190,14 @@
  {
   "a": "azizi-riviera-60",
   "b": "azizi-riviera-68",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "azizi-riviera-60",
+  "b": "azizi-riviera-reve",
   "market": "Dubai",
   "why": [
    "similar name"
@@ -2364,6 +2508,14 @@
   ]
  },
  {
+  "a": "azizi-riviera-54",
+  "b": "azizi-riviera-reve",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "azizi-riviera-64",
   "b": "azizi-riviera-66",
   "market": "Dubai",
@@ -2380,8 +2532,32 @@
   ]
  },
  {
+  "a": "azizi-riviera-64",
+  "b": "azizi-riviera-reve",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "azizi-riviera-66",
   "b": "azizi-riviera-68",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "azizi-riviera-66",
+  "b": "azizi-riviera-reve",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "azizi-riviera-68",
+  "b": "azizi-riviera-reve",
   "market": "Dubai",
   "why": [
    "similar name"
@@ -3012,6 +3188,14 @@
   ]
  },
  {
+  "a": "palm-central-private-residences-frond-n",
+  "b": "palm-central-private-residences-frond-d",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "south-garden-a",
   "b": "south-garden-b",
   "market": "Dubai",
@@ -3180,6 +3364,22 @@
   ]
  },
  {
+  "a": "expo-valley-views",
+  "b": "expo-valley-views-2",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "expo-valley-views",
+  "b": "expo-valley-views-1",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "la-tilia-at-villanova-phase-1",
   "b": "la-tilia-at-villanova-phase-2",
   "market": "Dubai",
@@ -3212,8 +3412,32 @@
   ]
  },
  {
+  "a": "taormina-village-1",
+  "b": "taormina-village-2",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "verdana-dubai",
   "b": "verdana-residence",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "beachfront-gates-2",
+  "b": "beachfront-gates-1",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "beachfront-gates-2",
+  "b": "beachfront-gates-3",
   "market": "Dubai",
   "why": [
    "similar name"
@@ -3268,6 +3492,30 @@
   ]
  },
  {
+  "a": "sky-harmony-by-peace-homes",
+  "b": "sky-suites-by-peace-homes",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "sky-line-by-peace-homes",
+  "b": "sky-suites-by-peace-homes",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "sol-terra-casa-i",
+  "b": "sol-terra-casa-ii",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "gen-rise",
   "b": "coven-tower",
   "market": "Malaysia",
@@ -3284,6 +3532,14 @@
   ]
  },
  {
+  "a": "yas-riva",
+  "b": "yas-riva-reserve-aldar",
+  "market": "Abu Dhabi",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "999-residences-by-reef-luxury-development",
   "b": "997-residences-by-reef-luxury-development",
   "market": "Dubai",
@@ -3294,6 +3550,14 @@
  {
   "a": "oasis-residences",
   "b": "oasis-tower-2",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "capital-one",
+  "b": "capital-one-by-centurion",
   "market": "Dubai",
   "why": [
    "similar name"
@@ -3428,6 +3692,14 @@
   ]
  },
  {
+  "a": "solaya-1-2-3",
+  "b": "solaya-8-9",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "bahce-bahcesehir",
   "b": "bahceada-bahcesehir",
   "market": "Istanbul",
@@ -3468,11 +3740,35 @@
   ]
  },
  {
+  "a": "menesse-cocobeach-3-playa-del-carmen",
+  "b": "menesse-cocobeach-2-playa-del-carmen",
+  "market": "Riviera Maya",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "callista-on-park-west-end",
   "b": "mollison-towers-west-end",
   "market": "Brisbane",
   "why": [
    "117 m apart"
+  ]
+ },
+ {
+  "a": "amargo-palm-beach",
+  "b": "corallo-palm-beach",
+  "market": "Gold Coast",
+  "why": [
+   "70 m apart"
+  ]
+ },
+ {
+  "a": "101-obr-residences-broadbeach",
+  "b": "crest-broadbeach",
+  "market": "Gold Coast",
+  "why": [
+   "65 m apart"
   ]
  },
  {
@@ -3513,6 +3809,14 @@
   "market": "Melbourne",
   "why": [
    "122 m apart"
+  ]
+ },
+ {
+  "a": "archer-albert-chatswood",
+  "b": "celine-chatswood",
+  "market": "Sydney",
+  "why": [
+   "124 m apart"
   ]
  },
  {
@@ -3839,6 +4143,14 @@
   ]
  },
  {
+  "a": "nad-al-sheba-gardens-phase-11",
+  "b": "nad-al-sheba-gardens-phase-12",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "nad-al-sheba-gardens-phase-8-9",
   "b": "nad-al-sheba-gardens-phase-10",
   "market": "Dubai",
@@ -3847,8 +4159,24 @@
   ]
  },
  {
+  "a": "nad-al-sheba-gardens-phase-8-9",
+  "b": "nad-al-sheba-gardens-phase-12",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "solaya-4-6",
   "b": "solaya-5-7",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "solaya-4-6",
+  "b": "solaya-8-9",
   "market": "Dubai",
   "why": [
    "similar name"
@@ -3879,8 +4207,32 @@
   ]
  },
  {
+  "a": "j-haus-residences",
+  "b": "haus-99-residences",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "nad-al-sheba-gardens-phase-10",
+  "b": "nad-al-sheba-gardens-phase-12",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "peninsula-dubai-residences-tower-2",
   "b": "peninsula-dubai-residences-tower-1",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "solaya-5-7",
+  "b": "solaya-8-9",
   "market": "Dubai",
   "why": [
    "similar name"
@@ -3911,6 +4263,14 @@
   ]
  },
  {
+  "a": "phoeniz-suites-kl-city-centre",
+  "b": "hanaz-suites-kl-city-centre",
+  "market": "Kuala Lumpur",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "residensi-brightwood-sungai-besi",
   "b": "residensi-rimbun-sungai-besi",
   "market": "Kuala Lumpur",
@@ -3929,6 +4289,22 @@
  {
   "a": "residensi-lestari-1",
   "b": "residensi-lestari-2",
+  "market": "Malaysia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "residensi-lestari-1",
+  "b": "residensi-lestari-tebrau",
+  "market": "Malaysia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "residensi-lestari-2",
+  "b": "residensi-lestari-tebrau",
   "market": "Malaysia",
   "why": [
    "similar name"
@@ -3959,6 +4335,22 @@
   ]
  },
  {
+  "a": "residensi-ria",
+  "b": "residensi-bestari-ria",
+  "market": "Malaysia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "residensi-ria",
+  "b": "residensi-ria-sutera",
+  "market": "Malaysia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "residensi-radium-evara",
   "b": "residensi-radium",
   "market": "Kuala Lumpur",
@@ -3970,6 +4362,14 @@
   "a": "residensi-warisan-salak-selatan",
   "b": "residensi-kirana-salak-selatan",
   "market": "Kuala Lumpur",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "residensi-bestari",
+  "b": "residensi-bestari-ria",
+  "market": "Malaysia",
   "why": [
    "similar name"
   ]
@@ -3991,6 +4391,14 @@
   ]
  },
  {
+  "a": "residensi-naluri",
+  "b": "residensi-naluri-damai",
+  "market": "Malaysia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "residensi-platinum-melati",
   "b": "residensi-mh-platinum-3",
   "market": "Kuala Lumpur",
@@ -4007,11 +4415,28 @@
   ]
  },
  {
+  "a": "kyliez-suites-kl-city-centre",
+  "b": "hanaz-suites-kl-city-centre",
+  "market": "Kuala Lumpur",
+  "why": [
+   "similar name",
+   "94 m apart"
+  ]
+ },
+ {
   "a": "residensi-andalan",
   "b": "residensi-ayanna",
   "market": "Kuala Lumpur",
   "why": [
    "113 m apart"
+  ]
+ },
+ {
+  "a": "hugoz-suites-kl-city-centre",
+  "b": "hanaz-suites-kl-city-centre",
+  "market": "Kuala Lumpur",
+  "why": [
+   "similar name"
   ]
  },
  {
@@ -4033,6 +4458,14 @@
  {
   "a": "residensi-tiara",
   "b": "residensi-tiara-cemerlang-1",
+  "market": "Malaysia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "residensi-tiara",
+  "b": "residensi-tiara-vista",
   "market": "Malaysia",
   "why": [
    "similar name"
@@ -4131,6 +4564,14 @@
   ]
  },
  {
+  "a": "residensi-tiara-cemerlang-3",
+  "b": "residensi-cemerlang",
+  "market": "Malaysia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "axis-tower",
   "b": "brixton-tower",
   "market": "Malaysia",
@@ -4155,12 +4596,44 @@
   ]
  },
  {
+  "a": "residensi-rimba",
+  "b": "residensi-ambar-rimba",
+  "market": "Malaysia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "residensi-rimba",
+  "b": "residensi-rimba-flora",
+  "market": "Malaysia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
   "a": "residensi-tiara-cemerlang-2",
   "b": "residensi-tiara-cemerlang-1",
   "market": "Malaysia",
   "why": [
    "similar name",
    "0 m apart"
+  ]
+ },
+ {
+  "a": "residensi-tiara-cemerlang-2",
+  "b": "residensi-cemerlang",
+  "market": "Malaysia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "residensi-tiara-cemerlang-1",
+  "b": "residensi-cemerlang",
+  "market": "Malaysia",
+  "why": [
+   "similar name"
   ]
  },
  {
@@ -4212,8 +4685,32 @@
   ]
  },
  {
+  "a": "residensi-suria-idaman",
+  "b": "residensi-suria",
+  "market": "Malaysia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "the-loop-residences",
+  "b": "pangsapuri-le-via",
+  "market": "Malaysia",
+  "why": [
+   "145 m apart"
+  ]
+ },
+ {
   "a": "the-one-by-prestige-one",
   "b": "sanctuary-by-prestige-one",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "lincoln-star-residence-ii",
+  "b": "lincoln-star-residence-iii",
   "market": "Dubai",
   "why": [
    "similar name"
@@ -4223,6 +4720,313 @@
   "a": "residensi-komersial-botani-sayang-3",
   "b": "residensi-komersial-botani-sayang-2",
   "market": "Malaysia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "pangsapuri-pulai-duta-6",
+  "b": "pangsapuri-pulai-duta-2",
+  "market": "Malaysia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "pangsapuri-pulai-duta-6",
+  "b": "pangsapuri-pulai-duta-1",
+  "market": "Malaysia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "ekotropika-9",
+  "b": "ekotropika-10",
+  "market": "Malaysia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "flora-santai-tiga",
+  "b": "flora-santai",
+  "market": "Malaysia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "skim-perumahan-mampu-milik-bestari-perdana-2",
+  "b": "skim-perumahan-mampu-milik-taman-bestari-perdana-2",
+  "market": "Malaysia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "pangsapuri-pulai-duta-2",
+  "b": "pangsapuri-pulai-duta-1",
+  "market": "Malaysia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "residensi-danau-utama",
+  "b": "residensi-danau",
+  "market": "Malaysia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "flora-santai",
+  "b": "flora-dwipuncak-santai",
+  "market": "Malaysia",
+  "why": [
+   "similar name",
+   "99 m apart"
+  ]
+ },
+ {
+  "a": "rumah-bandar-palma-kipas",
+  "b": "rumah-bandar-palma-rafis",
+  "market": "Malaysia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "harbour-view-residence",
+  "b": "pangsapuri-suria",
+  "market": "Malaysia",
+  "why": [
+   "74 m apart"
+  ]
+ },
+ {
+  "a": "residensi-seri-damansara",
+  "b": "damansara-livista",
+  "market": "Malaysia",
+  "why": [
+   "121 m apart"
+  ]
+ },
+ {
+  "a": "residensi-ara-1",
+  "b": "residensi-tiga-ara",
+  "market": "Malaysia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "enlace-pantai-sentral-park",
+  "b": "enlace-pantai-sentral-park-kuala-lumpur",
+  "market": "Kuala Lumpur",
+  "why": [
+   "similar name",
+   "38 m apart"
+  ]
+ },
+ {
+  "a": "residensi-aurora-2-residensi-dwitara",
+  "b": "residensi-dwitara",
+  "market": "Malaysia",
+  "why": [
+   "similar name",
+   "128 m apart"
+  ]
+ },
+ {
+  "a": "bayu-timur",
+  "b": "pangsapuri-azalea",
+  "market": "Malaysia",
+  "why": [
+   "11 m apart"
+  ]
+ },
+ {
+  "a": "serenia-amalia-6",
+  "b": "serenia-amalia-5",
+  "market": "Malaysia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "residensi-mori-3",
+  "b": "residensi-mori-2-scientex-rawang",
+  "market": "Malaysia",
+  "why": [
+   "0 m apart"
+  ]
+ },
+ {
+  "a": "pangsapuri-bayu-idaman",
+  "b": "idaman-bayu",
+  "market": "Malaysia",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "nadi-1-eco-ardence",
+  "b": "nadi-2-petaling",
+  "market": "Malaysia",
+  "why": [
+   "105 m apart"
+  ]
+ },
+ {
+  "a": "residensi-kamelia",
+  "b": "damansara-livista",
+  "market": "Malaysia",
+  "why": [
+   "135 m apart"
+  ]
+ },
+ {
+  "a": "18-mary-avenue-broadbeach",
+  "b": "madeline-by-mosaic-broadbeach",
+  "market": "Gold Coast",
+  "why": [
+   "49 m apart"
+  ]
+ },
+ {
+  "a": "lago-birtinya",
+  "b": "mantra-esplanade-birtinya",
+  "market": "Sunshine Coast",
+  "why": [
+   "101 m apart"
+  ]
+ },
+ {
+  "a": "oro-newstead",
+  "b": "crest-walker-newstead",
+  "market": "Brisbane",
+  "why": [
+   "107 m apart"
+  ]
+ },
+ {
+  "a": "amari-toowong",
+  "b": "eave-toowong",
+  "market": "Brisbane",
+  "why": [
+   "80 m apart"
+  ]
+ },
+ {
+  "a": "mr-c-residences-west-palm-beach",
+  "b": "ritz-carlton-residences-west-palm-beach",
+  "market": "Palm Beach County",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "jewel-premium-incek",
+  "b": "incek-premium",
+  "market": "Turkey",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "evo-hills-esentepe",
+  "b": "esentepe-hills",
+  "market": "Northern Cyprus",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "fuzul-topraktan-yeni-esenler",
+  "b": "fuzul-topraktan-yeni-arnavutkoy",
+  "market": "Istanbul",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "beachfront-gates-1",
+  "b": "beachfront-gates-3",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "expo-valley-views-2",
+  "b": "expo-valley-views-1",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "boulevard-living-1",
+  "b": "boulevard-living-2",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "the-valley-alva-3",
+  "b": "the-valley-alva-2",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "faro-2-the-heights",
+  "b": "faro-the-heights",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "rancho-one-aliso-one-at-palm-springs",
+  "b": "rancho-two-aliso-two-at-palm-springs",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "elitz-3-by-danube",
+  "b": "elitz-2-by-danube",
+  "market": "Dubai",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "dryas-alcala-de-henares",
+  "b": "dryas-ii-alcala-de-henares",
+  "market": "Spain",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "insur-altos-del-aire-siroco-tomares",
+  "b": "insur-altos-del-aire-poniente-tomares",
+  "market": "Spain",
+  "why": [
+   "similar name"
+  ]
+ },
+ {
+  "a": "park-luxe-bunkyo-hongo",
+  "b": "park-homes-bunkyo-hongo",
+  "market": "Tokyo",
   "why": [
    "similar name"
   ]
