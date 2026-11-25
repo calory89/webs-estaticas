@@ -3,13 +3,257 @@
 # time (WITA, HH:MM), dateline, kind ("brief" | "guide" | "letter").
 WA = "https://www.waingapu.com/"
 BRIEFS = [
+    {'section': 'living',
+     'slug': 'waingapu-ferry-port-parcel-courier-warning-2026',
+     'date': '2026-11-26',
+     'time': '06:00',
+     'dateline': 'WAINGAPU',
+     'kind': 'brief',
+     'top': True,
+     'slugs': {'es': 'policia-waingapu-no-llevar-paquetes-desconocidos-ferri-2026',
+               'id': 'polisi-waingapu-jangan-bawa-titipan-paket-orang-asing-feri-2026'},
+     'keywords': {'en': ['Waingapu ferry port',
+                         'Sumba ferry safety',
+                         'Waingapu police drug checks',
+                         'carrying parcels for strangers Indonesia',
+                         'Indonesia drug laws foreigners',
+                         'East Sumba news'],
+                  'es': ['puerto de ferris Waingapu',
+                         'seguridad ferri Sumba',
+                         'controles antidroga Waingapu',
+                         'llevar paquetes de desconocidos Indonesia',
+                         'leyes antidroga Indonesia extranjeros',
+                         'noticias Sumba Oriental'],
+                  'id': ['Pelabuhan Feri Waingapu',
+                         'keamanan feri Sumba',
+                         'razia narkoba Waingapu',
+                         'titipan paket orang tak dikenal',
+                         'hukum narkotika Indonesia WNA',
+                         'berita Sumba Timur']},
+     'en': {'title': "Police warn Waingapu ferry riders not to carry strangers' parcels",
+            'dek': 'The warning came in a two-hour raid on the first day the ferry port was active '
+                   'again; no drugs were found.',
+            'answer': 'East Sumba police warned ferry passengers at Waingapu not to carry parcels for '
+                      'people they have just met, even for cash, in a raid on 25 November 2026 that '
+                      'found no drugs, Waingapu.Com reported.',
+            'keys': ['Police head Iptu I Gede Putu Parwata urged passengers to refuse parcels from '
+                     'strangers, even for money, and to report the offer.',
+                     'The raid on 25 November lasted about two hours and found no narcotics.',
+                     'Passengers, vehicles, luggage and courier parcels were checked; travel drivers '
+                     'and ship crew had random urine tests.',
+                     'Police say more raids will follow, on arrival and before departure.',
+                     'The report says the ferry port was active again after a long pause, without '
+                     'saying why. It comes from one outlet.'],
+            'visitors': 'Expect bag and parcel checks on ferries, keep your ID at hand and never carry '
+                        'anything for a stranger. Drug laws apply equally to foreigners.',
+            'faq': [['What did police warn ferry passengers at Waingapu about?',
+                     'Not to carry packages for people they have just met on the boat, especially when '
+                     'money is offered, because drug networks can use them as couriers.'],
+                    ['Did police find drugs in the 25 November raid?',
+                     'No. The report says the two-hour raid found no narcotics or illegal drugs.'],
+                    ['Will there be more checks at Waingapu ferry port?',
+                     'Police say they will continue routine and surprise checks, on arrival and before '
+                     'departure.']],
+            'body': "<p>East Sumba's police narcotics unit used the first day of renewed sailings at "
+                    'Waingapu ferry port to warn passengers about a courier trick: a stranger on the '
+                    'boat offers money if you carry a package for them. Unit head Iptu I Gede Putu '
+                    'Parwata gave the warning during a raid at the port in the early hours of '
+                    'Wednesday, 25 November, local outlet Waingapu.Com reported.</p><h2>What police '
+                    'told ferry passengers about parcels</h2><p>Parwata said one pattern to watch for '
+                    'is someone asking another passenger to take a package or item in exchange for '
+                    'cash. Drug networks can use ordinary travellers as couriers without their '
+                    'knowledge, he warned. "If someone you have just met on the boat asks you to carry '
+                    'a package, or offers money to carry something, don\'t do it," he said. He urged '
+                    'people to refuse any such offer and report it to police, adding that it is not '
+                    'worth facing the law for life over an offer of Rp500,000.</p><h2>Who took part in '
+                    'the Waingapu ferry port raid and what was checked</h2><p>The report says the '
+                    'warning came as the ferry port became active again after a long period without '
+                    'operations; it does not say why the port had been idle or for how long. On the '
+                    'first day sailings resumed, the narcotics unit checked passengers, vehicles and '
+                    'luggage coming off the ship. Courier parcels also got attention, because they can '
+                    'be used to disguise drug shipments by sea. Travel-car drivers and ship crew were '
+                    'given random urine tests.</p><p>The raid was led by Parwata with his deputy, '
+                    'section heads and unit officers, together with the marine police post (KP3 Laut), '
+                    'the transport office and the Waingapu harbour authority (KSOP). It lasted about '
+                    'two hours and found no narcotics or illegal drugs. Police said checks will '
+                    'continue routinely and without notice, both when ships arrive and before they '
+                    'depart, and asked the public to report anything suspicious at the port. This '
+                    'account comes from one outlet. No arrests, ferry operator or route were named. We '
+                    'reported on earlier passenger checks at the port <a '
+                    'href="/en/living/waingapu-port-drug-checks-ferry-passengers/">on 3 '
+                    'November</a>.</p><h2>What it means for visitors, residents and '
+                    'investors</h2><p>Visitors: if you arrive or leave Sumba by ferry, expect bag and '
+                    'parcel checks and keep your ID at hand. Never carry anything for someone you do '
+                    'not know, however small the favour or the fee looks. Indonesia has some of the '
+                    'strictest drug laws in the world, and they apply equally to '
+                    'foreigners.</p><p>Residents: be careful with parcels sent or collected through '
+                    'ferry passengers, and use a known courier or shipping service. Investors: ports '
+                    "are where Sumba's supply chain meets enforcement, so expect more routine "
+                    'inspections of cargo and crews as sea traffic recovers.</p>'},
+     'es': {'title': 'Policía de Waingapu: no lleve en el ferri paquetes de desconocidos',
+            'dek': 'El aviso llegó en un control de dos horas el primer día en que el puerto de ferris '
+                   'volvía a estar activo; no se halló droga.',
+            'answer': 'La policía de Sumba Oriental advirtió a los pasajeros del ferri en Waingapu de '
+                      'que no lleven paquetes de personas que acaban de conocer, ni siquiera a cambio '
+                      'de dinero, en un control del 25 de noviembre de 2026 que no halló droga, según '
+                      'Waingapu.Com.',
+            'keys': ['El jefe de la unidad, Iptu I Gede Putu Parwata, pidió rechazar los paquetes de '
+                     'desconocidos, aunque ofrezcan dinero, y denunciar la oferta.',
+                     'El control del 25 de noviembre duró unas dos horas y no halló estupefacientes.',
+                     'Se revisaron pasajeros, vehículos, equipaje y paquetes de mensajería; a '
+                     'conductores de coches de viaje y tripulación se les hizo análisis de orina al '
+                     'azar.',
+                     'La policía dice que habrá más controles, a la llegada y antes de la salida.',
+                     'La información dice que el puerto de ferris volvía a estar activo tras una larga '
+                     'pausa, sin explicar el motivo. Procede de un solo medio.'],
+            'visitors': 'Cuente con controles de equipaje y paquetes en los ferris, lleve la '
+                        'documentación a mano y no lleve nunca nada para un desconocido. Las leyes '
+                        'antidroga se aplican igual a los extranjeros.',
+            'faq': [['¿De qué advirtió la policía a los pasajeros del ferri en Waingapu?',
+                     'De que no lleven paquetes de personas que acaban de conocer a bordo, sobre todo '
+                     'si les ofrecen dinero, porque las redes de tráfico pueden usarlos como correos.'],
+                    ['¿Halló droga la policía en el control del 25 de noviembre?',
+                     'No. Según la información, el control de dos horas no halló estupefacientes ni '
+                     'drogas ilegales.'],
+                    ['¿Habrá más controles en el puerto de ferris de Waingapu?',
+                     'La policía dice que seguirá con controles rutinarios y por sorpresa, a la '
+                     'llegada y antes de la salida.']],
+            'body': '<p>La unidad de narcóticos de la policía de Sumba Oriental aprovechó el primer '
+                    'día de navegaciones renovadas en el puerto de ferris de Waingapu para advertir a '
+                    'los pasajeros de una táctica de correos: un desconocido a bordo ofrece dinero a '
+                    'cambio de que lleve un paquete. El jefe de la unidad, Iptu I Gede Putu Parwata, '
+                    'lanzó el aviso durante un control en el puerto en la madrugada del miércoles 25 '
+                    'de noviembre, según informó el medio local Waingapu.Com.</p><h2>Qué dijo la '
+                    'policía a los pasajeros del ferri sobre los paquetes</h2><p>Parwata explicó que '
+                    'una de las pautas a vigilar es que alguien pida a otro pasajero que lleve un '
+                    'paquete u objeto a cambio de dinero. Advirtió de que las redes de tráfico pueden '
+                    'usar a viajeros corrientes como correos sin que lo sepan. "Si alguien que acaba '
+                    'de conocer en el barco le pide que lleve un paquete, o le ofrece dinero por '
+                    'llevar algo, no lo haga", dijo. Pidió rechazar cualquier oferta así y denunciarla '
+                    'a la policía, y añadió que no merece la pena enfrentarse a la justicia de por '
+                    'vida por una oferta de 500.000 rupias.</p><h2>Quién participó en el control del '
+                    'puerto de ferris de Waingapu y qué se revisó</h2><p>Según la información, el '
+                    'aviso llegó cuando el puerto de ferris volvía a estar activo tras un largo '
+                    'periodo sin operaciones; no explica por qué estuvo parado ni durante cuánto '
+                    'tiempo. El primer día de navegación, la unidad de narcóticos revisó a los '
+                    'pasajeros, los vehículos y el equipaje que bajaban del barco. También se prestó '
+                    'atención a los paquetes de mensajería, porque pueden servir para disimular envíos '
+                    'de droga por mar. A los conductores de coches de viaje y a la tripulación se les '
+                    'hicieron análisis de orina al azar.</p><p>El control lo dirigió Parwata junto con '
+                    'su segundo, los jefes de sección y los agentes de la unidad, con el puesto de '
+                    'policía marítima (KP3 Laut), la oficina de transporte y la autoridad portuaria de '
+                    'Waingapu (KSOP). Duró unas dos horas y no halló estupefacientes ni drogas '
+                    'ilegales. La policía dijo que los controles seguirán de forma rutinaria y sin '
+                    'previo aviso, tanto a la llegada de los barcos como antes de su salida, y pidió '
+                    'al público que comunique cualquier indicio sospechoso en el puerto. Este relato '
+                    'procede de un solo medio. No se citan detenciones, naviera ni ruta. Informamos de '
+                    'controles anteriores a pasajeros en el puerto <a '
+                    'href="/es/living/waingapu-port-drug-checks-ferry-passengers/">el 3 de '
+                    'noviembre</a>.</p><h2>Qué significa para visitantes, residentes e '
+                    'inversores</h2><p>Visitantes: si llega a Sumba o sale de ella en ferri, cuente '
+                    'con controles de equipaje y paquetes y lleve la documentación a mano. No lleve '
+                    'nunca nada para alguien a quien no conoce, por pequeño que parezca el favor o el '
+                    'pago. Indonesia tiene una de las legislaciones antidroga más severas del mundo, y '
+                    'se aplica igual a los extranjeros.</p><p>Residentes: tenga cuidado con los '
+                    'paquetes enviados o recogidos a través de pasajeros del ferri y use un servicio '
+                    'de mensajería conocido. Inversores: los puertos son el punto donde la cadena de '
+                    'suministro de Sumba se cruza con el control policial, así que cabe esperar más '
+                    'inspecciones rutinarias de carga y tripulaciones a medida que se recupere el '
+                    'tráfico marítimo.</p>'},
+     'id': {'title': 'Polisi Waingapu ingatkan: jangan bawa titipan paket orang asing di feri',
+            'dek': 'Peringatan disampaikan dalam razia dua jam pada hari pertama pelabuhan feri aktif '
+                   'lagi; tidak ditemukan narkoba.',
+            'answer': 'Polres Sumba Timur mengingatkan penumpang feri di Waingapu agar tidak membawa '
+                      'titipan paket dari orang yang baru dikenal, meski ditawari uang, dalam razia 25 '
+                      'November 2026 yang tidak menemukan narkoba, menurut Waingapu.Com.',
+            'keys': ['Kasat Resnarkoba Iptu I Gede Putu Parwata meminta penumpang menolak titipan '
+                     'paket orang asing, meski ditawari uang, dan melaporkan tawaran itu.',
+                     'Razia pada 25 November berlangsung sekitar dua jam dan tidak menemukan '
+                     'narkotika.',
+                     'Penumpang, kendaraan, barang bawaan dan paket ekspedisi diperiksa; sopir travel '
+                     'dan ABK kapal menjalani tes urine acak.',
+                     'Polisi menyatakan razia akan berlanjut, saat kapal tiba dan sebelum berangkat.',
+                     'Laporan menyebut pelabuhan feri aktif lagi setelah lama berhenti, tanpa '
+                     'menjelaskan sebabnya. Informasi berasal dari satu media.'],
+            'visitors': 'Bersiaplah menghadapi pemeriksaan tas dan paket di feri, siapkan kartu '
+                        'identitas dan jangan pernah membawakan barang untuk orang tak dikenal. Hukum '
+                        'narkotika juga berlaku bagi WNA.',
+            'faq': [['Apa yang diingatkan polisi kepada penumpang feri di Waingapu?',
+                     'Agar tidak membawa titipan paket dari orang yang baru dikenal di kapal, terutama '
+                     'bila ditawari uang, karena jaringan pengedar bisa memanfaatkannya sebagai '
+                     'kurir.'],
+                    ['Apakah polisi menemukan narkoba dalam razia 25 November?',
+                     'Tidak. Menurut laporan, razia dua jam itu tidak menemukan narkotika maupun obat '
+                     'terlarang.'],
+                    ['Apakah akan ada pemeriksaan lagi di Pelabuhan Feri Waingapu?',
+                     'Polisi menyatakan akan terus melakukan razia rutin dan mendadak, saat kapal tiba '
+                     'dan sebelum berangkat.']],
+            'body': '<p>Satuan Reserse Narkoba Polres Sumba Timur memanfaatkan hari pertama pelayaran '
+                    'kembali berjalan di Pelabuhan Feri Waingapu untuk mengingatkan penumpang soal '
+                    'modus kurir: orang asing di kapal menawarkan uang agar penumpang membawakan '
+                    'paketnya. Kasat Resnarkoba Iptu I Gede Putu Parwata menyampaikan peringatan itu '
+                    'saat razia di pelabuhan pada Rabu dini hari, 25 November, menurut media lokal '
+                    'Waingapu.Com.</p><h2>Peringatan polisi kepada penumpang feri soal titipan '
+                    'paket</h2><p>Parwata menyebut salah satu modus yang perlu diwaspadai adalah '
+                    'seseorang meminta penumpang lain membawa paket atau barang tertentu dengan '
+                    'imbalan uang. Ia mengingatkan, jaringan pengedar bisa memanfaatkan masyarakat '
+                    'biasa sebagai kurir tanpa sepengetahuan mereka. "Kalau ada yang baru kenal di '
+                    'kapal lalu minta tolong bawakan paket, atau menawarkan uang untuk membawakan '
+                    'barang, jangan mau," katanya. Ia meminta warga menolak tawaran semacam itu dan '
+                    'melaporkannya ke polisi, serta mengingatkan agar jangan sampai karena uang Rp500 '
+                    'ribu harus berurusan dengan hukum seumur hidup.</p><h2>Siapa yang terlibat razia '
+                    'di Pelabuhan Feri Waingapu dan apa yang diperiksa</h2><p>Menurut laporan itu, '
+                    'peringatan disampaikan bertepatan dengan kembali aktifnya Pelabuhan Feri Waingapu '
+                    'setelah cukup lama tidak beroperasi; laporan tidak menjelaskan penyebab maupun '
+                    'lamanya pelabuhan berhenti. Pada hari pertama pelayaran, Satresnarkoba memeriksa '
+                    'penumpang, kendaraan dan barang bawaan yang turun dari kapal. Paket ekspedisi '
+                    'juga menjadi perhatian karena berpotensi dipakai menyamarkan pengiriman narkotika '
+                    'lewat jalur laut. Sopir travel dan ABK kapal menjalani tes urine '
+                    'acak.</p><p>Razia dipimpin langsung Parwata bersama KBO, para Kanit dan personel '
+                    'Satresnarkoba, dengan melibatkan KP3 Laut, Dinas Perhubungan dan KSOP Waingapu. '
+                    'Razia berlangsung sekitar dua jam dan tidak menemukan narkotika maupun '
+                    'obat-obatan terlarang. Polisi menyatakan razia akan terus dilakukan secara rutin '
+                    'dan mendadak, baik saat kapal tiba maupun sebelum berangkat, dan meminta '
+                    'masyarakat melapor bila menemukan indikasi peredaran narkoba di pelabuhan. '
+                    'Informasi ini berasal dari satu media. Tidak disebut penangkapan, operator feri, '
+                    'maupun rute. Kami melaporkan pemeriksaan penumpang sebelumnya di pelabuhan ini <a '
+                    'href="/id/living/waingapu-port-drug-checks-ferry-passengers/">pada 3 '
+                    'November</a>.</p><h2>Apa artinya bagi wisatawan, warga, dan '
+                    'investor</h2><p>Wisatawan: jika tiba atau meninggalkan Sumba dengan feri, '
+                    'bersiaplah menghadapi pemeriksaan tas dan paket serta siapkan kartu identitas. '
+                    'Jangan pernah membawakan barang untuk orang yang tidak dikenal, sekecil apa pun '
+                    'bantuan atau imbalannya. Indonesia memiliki salah satu undang-undang narkotika '
+                    'paling ketat di dunia, yang juga berlaku bagi warga negara asing.</p><p>Warga: '
+                    'berhati-hatilah dengan paket yang dikirim atau diambil lewat penumpang feri, dan '
+                    'gunakan jasa ekspedisi yang dikenal. Investor: pelabuhan adalah titik temu rantai '
+                    'pasok Sumba dan penegakan hukum, sehingga pemeriksaan rutin atas muatan dan awak '
+                    'kapal kemungkinan bertambah seiring pulihnya lalu lintas laut.</p>'},
+     'image': {'ai': True,
+               'credit': '',
+               'license': '',
+               'license_url': '',
+               'page': '',
+               'w': 1280,
+               'h': 853,
+               'caption': {'en': 'AI-generated illustration of a generic ferry at a tropical pier; not '
+                                 'a photo of Waingapu port or of any ship named in this story.',
+                           'es': 'Ilustración generada con IA de un ferri genérico en un muelle '
+                                 'tropical; no es una foto del puerto de Waingapu ni de ningún barco '
+                                 'citado en esta noticia.',
+                           'id': 'Ilustrasi buatan AI feri generik di dermaga tropis; bukan foto '
+                                 'Pelabuhan Waingapu maupun kapal yang disebut dalam berita ini.'}},
+     'sources': [['Waingapu.Com: Polisi Ingatkan Modus Kurir Narkoba di Kapal Feri: Jangan Mudah Bawa '
+                  'Paket Titipan Tanpa Tahu Jelas Isi dan Pengirim (25 Nov 2026)',
+                  'https://www.waingapu.com/polisi-ingatkan-modus-kurir-narkoba-di-kapal-feri-jangan-mudah-bawa-paket-titipan-tanpa-tahu-jelas-isi-dan-pengirim/'],
+                 ['Waingapu.Com: Bukan Sekadar Periksa Tas, Polisi Gunakan Profiling hingga Tes Urine '
+                  'untuk Awasi Penumpang Kapal di Waingapu (3 Nov 2026)',
+                  'https://www.waingapu.com/bukan-sekadar-periksa-tas-polisi-gunakan-profiling-hingga-tes-urine-untuk-awasi-penumpang-kapal-di-waingapu/']]},
 {'section': 'travel',
  'slug': 'waingapu-port-cruise-ship-services-pelindo-2026',
  'date': '2026-11-25',
  'time': '06:00',
  'dateline': 'WAINGAPU',
  'kind': 'brief',
- 'top': True,
  'slugs': {'es': 'puerto-waingapu-servicios-cruceros-pelindo-2026', 'id': 'pelabuhan-waingapu-layanan-kapal-pesiar-pelindo-2026'},
  'keywords': {'en': ['Waingapu cruise ship',
                      'Sumba cruise port',
