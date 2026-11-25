@@ -2,7 +2,7 @@
 
 > General information about no-win-no-fee claims, contingency fees, litigation funding, deadlines and costs, by country.
 > Not legal advice. JuriMatch is not a law firm. Each section links to the page it comes from; cite that URL.
-> Generated 2026-11-07 from https://jurimatch.com/seo-manifest.json. Short index: https://jurimatch.com/llms.txt
+> Generated 2026-11-25 from https://jurimatch.com/seo-manifest.json. Short index: https://jurimatch.com/llms.txt
 
 ## Guides
 
@@ -2578,6 +2578,20 @@ Choose a country to see the usual rule on the other side's legal costs when a cl
 
 ## Guías en español
 
+### Abogados sin provisión de fondos: reclamar sin pagar por adelantado
+URL: https://jurimatch.com/es/guias/abogados-sin-provision-de-fondos
+
+La provisión de fondos es el dinero que un abogado pide por adelantado para empezar a trabajar en un asunto. Muchos despachos aceptan reclamaciones sin provisión de fondos: no cobran nada al principio y cobran al final, normalmente un porcentaje de lo recuperado. Así funciona y esto es lo que debe revisar.
+
+Q: ¿Qué es la provisión de fondos?
+A: Es un adelanto que el abogado pide al empezar, a cuenta de sus honorarios y de los gastos del asunto. Sin provisión de fondos, usted no adelanta ese dinero.
+
+Q: ¿Sin provisión de fondos es lo mismo que gratis?
+A: No. Normalmente paga al final un porcentaje de lo que se recupere, y puede haber gastos o una parte fija. Lo que evita es pagar por adelantado y, en la mayoría de los casos, pagar si pierde.
+
+Q: ¿Y si pierdo el juicio?
+A: Lo habitual es que no pague honorarios a su abogado, pero el juez puede condenarle a pagar las costas de la otra parte. Revise la hoja de encargo y su seguro de defensa jurídica.
+
 ### Accidente de tráfico: cómo reclamar la indemnización
 URL: https://jurimatch.com/es/guias/accidente-de-trafico
 
@@ -2719,6 +2733,23 @@ A: No automáticamente. Según la jurisprudencia europea, hay que analizar si se
 
 Q: ¿Merece la pena reclamar el IRPH?
 A: Depende de la documentación y de la diferencia económica. Un abogado puede valorar su caso concreto; es un litigio con resultados desiguales.
+
+### MASC: el intento de acuerdo obligatorio antes de demandar
+URL: https://jurimatch.com/es/guias/masc-requisito-antes-de-demandar
+
+La Ley Orgánica 1/2025, de eficiencia del Servicio Público de Justicia, cambió una regla básica: desde el 3 de abril de 2025, antes de presentar la mayoría de demandas civiles y mercantiles hay que haber intentado resolver el conflicto por las buenas. Si no se acredita ese intento, la demanda no se admite. Esto es lo que conviene saber antes de reclamar.
+
+Q: ¿Desde cuándo es obligatorio el MASC?
+A: Desde el 3 de abril de 2025, cuando entró en vigor la Ley Orgánica 1/2025 de eficiencia del Servicio Público de Justicia.
+
+Q: ¿Sirve una reclamación por escrito a la empresa?
+A: Una reclamación escrita que explique lo que pide y proponga una solución suele servir como intento de negociación, si se puede probar que la otra parte la recibió. Confirme con su abogado que cumple en su caso.
+
+Q: ¿Qué pasa si la otra parte no contesta?
+A: Si no responde en el plazo legal, el requisito se considera cumplido y puede presentar la demanda, acompañando la prueba de que envió la solicitud.
+
+Q: ¿Necesito abogado para el intento de acuerdo?
+A: No siempre. Puede negociar usted mismo, aunque con un abogado es más fácil que la propuesta y la prueba del intento sirvan después en el juicio.
 
 ### Negligencia médica: cómo reclamar en la sanidad pública y privada
 URL: https://jurimatch.com/es/guias/negligencia-medica
@@ -3640,7 +3671,7 @@ JuriMatch is free to search. Claimants pay a subscription for matching only when
 ### Hand-verified firms, free to reuse
 URL: https://jurimatch.com/open-data
 
-Download the 697 hand-verified no-win-no-fee law firms and litigation funders as CSV, free to reuse under CC BY 4.0.
+Download the 671 hand-verified no-win-no-fee law firms and litigation funders as CSV, free to reuse under CC BY 4.0.
 
 ### Press and data
 URL: https://jurimatch.com/press

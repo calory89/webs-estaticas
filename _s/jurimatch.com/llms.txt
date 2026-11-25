@@ -1,11 +1,11 @@
 # JuriMatch
 
-> Search engine for no-win-no-fee lawyers and litigation funders. 6,900+ no-win-no-fee firms indexed in 133 countries, 697 hand-verified. JuriMatch is not a law firm and gives no legal advice.
+> Search engine for no-win-no-fee lawyers and litigation funders. 6,700+ no-win-no-fee firms indexed in 129 countries, 671 hand-verified. JuriMatch is not a law firm and gives no legal advice.
 
-## Facts (as of 2026-11-07)
-- Firms indexed from public research that advertise no-win-no-fee, contingency or funded work: 6,990
-- Firms whose fee terms our team checked by hand on their own website: 697
-- Countries with at least 20 indexed firms: 133; countries with a hand-verified firm: 54
+## Facts (as of 2026-11-25)
+- Firms indexed from public research that advertise no-win-no-fee, contingency or funded work: 6,755
+- Firms whose fee terms our team checked by hand on their own website: 671
+- Countries with at least 20 indexed firms: 129; countries with a hand-verified firm: 53
 - Cite as: JuriMatch directory, jurimatch.com, with the date above
 
 ## Key pages
@@ -54,21 +54,20 @@
 - [Firms by fee model and country](https://jurimatch.com/fee-models): contingency fees, no win no fee, litigation funding
 - [Class action lawyers in Vienna, Austria](https://jurimatch.com/lawyers/class-actions/austria/vienna): 6 hand-verified firms
 - [Class action lawyers in Toronto, Canada](https://jurimatch.com/lawyers/class-actions/canada/toronto): 5 hand-verified firms
-- [Contract dispute lawyers in London, United Kingdom](https://jurimatch.com/lawyers/contract-dispute/united-kingdom/london): 8 hand-verified firms
-- [Employment claim lawyers in Buenos Aires, Argentina](https://jurimatch.com/lawyers/employment/argentina/buenos-aires): 6 hand-verified firms
+- [Contract dispute lawyers in London, United Kingdom](https://jurimatch.com/lawyers/contract-dispute/united-kingdom/london): 7 hand-verified firms
+- [Employment claim lawyers in Buenos Aires, Argentina](https://jurimatch.com/lawyers/employment/argentina/buenos-aires): 5 hand-verified firms
 - [Insurance claim lawyers in Brisbane, Australia](https://jurimatch.com/lawyers/insurance-claims/australia/brisbane): 6 hand-verified firms
 - [Investment fraud lawyers in New York, United States](https://jurimatch.com/lawyers/investment-fraud/united-states/new-york): 5 hand-verified firms
 - [Personal injury lawyers in Buenos Aires, Argentina](https://jurimatch.com/lawyers/personal-injury/argentina/buenos-aires): 6 hand-verified firms
 - [Personal injury lawyers in Adelaide, Australia](https://jurimatch.com/lawyers/personal-injury/australia/adelaide): 10 hand-verified firms
 - [Personal injury lawyers in Brisbane, Australia](https://jurimatch.com/lawyers/personal-injury/australia/brisbane): 7 hand-verified firms
 - [Personal injury lawyers in Melbourne, Australia](https://jurimatch.com/lawyers/personal-injury/australia/melbourne): 5 hand-verified firms
-- [Personal injury lawyers in Perth, Australia](https://jurimatch.com/lawyers/personal-injury/australia/perth): 11 hand-verified firms
+- [Personal injury lawyers in Perth, Australia](https://jurimatch.com/lawyers/personal-injury/australia/perth): 9 hand-verified firms
 - [Personal injury lawyers in Sydney, Australia](https://jurimatch.com/lawyers/personal-injury/australia/sydney): 5 hand-verified firms
 - [Personal injury lawyers in Halifax, Canada](https://jurimatch.com/lawyers/personal-injury/canada/halifax): 5 hand-verified firms
-- [Personal injury lawyers in Manchester, United Kingdom](https://jurimatch.com/lawyers/personal-injury/united-kingdom/manchester): 5 hand-verified firms
 - [Personal injury lawyers in Atlanta, United States](https://jurimatch.com/lawyers/personal-injury/united-states/atlanta): 5 hand-verified firms
 - [Personal injury lawyers in Omaha, United States](https://jurimatch.com/lawyers/personal-injury/united-states/omaha): 5 hand-verified firms
-- [Professional negligence lawyers in London, United Kingdom](https://jurimatch.com/lawyers/professional-negligence/united-kingdom/london): 6 hand-verified firms
+- [Professional negligence lawyers in London, United Kingdom](https://jurimatch.com/lawyers/professional-negligence/united-kingdom/london): 5 hand-verified firms
 - [Real estate dispute lawyers in London, United Kingdom](https://jurimatch.com/lawyers/real-estate/united-kingdom/london): 6 hand-verified firms
 
 ## Country guides
@@ -157,6 +156,7 @@
 - [¿Vuelo retrasado o cancelado? Calcule lo que le podrían deber](https://jurimatch.com/es/herramientas/indemnizacion-vuelo)
 - [Intereses de demora en facturas entre empresas](https://jurimatch.com/es/herramientas/intereses-de-demora)
 - [¿Cuánto tiempo tengo para reclamar?](https://jurimatch.com/es/herramientas/plazo-de-prescripcion)
+- [¿Le debe dinero su banco? Test de reclamaciones bancarias](https://jurimatch.com/es/herramientas/test-reclamaciones-bancarias)
 
 ### Deutsch
 - [Anwälte und Prozessfinanzierer, die erst im Erfolgsfall verdienen](https://jurimatch.com/de): home

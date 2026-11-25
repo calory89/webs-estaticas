@@ -1,4 +1,16 @@
+# 21-nov: AI search and answer crawlers are named explicitly so they are clearly welcome on public pages
+# (same rules as everyone else). One group, several user-agent lines (RFC 9309).
 User-agent: *
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: PerplexityBot
+User-agent: Google-Extended
+User-agent: Applebot-Extended
 Allow: /
 Disallow: /admin
 Disallow: /dashboard
