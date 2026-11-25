@@ -73,7 +73,8 @@ for x in P:
         while i >= 0 and (not dts[i] or not str(dts[i]).startswith(lm or '~')): i -= 1
         c['sat'] = [str(sm.get('b_first')) + '% > ' + str(sm.get('b_last')) + '%', '/satellite/construction-index/', 'sat', str(dts[i])[:10] if i >= 0 else lm]
     if rw.get('register'):
-        u = (rv.get('reg') or [None, None, ''])[2] or dsrc
+        # n39 i1: no review link and no DLD mirror: the source of the claim that names this register code (e.g. Florida DBPR extract)
+        u = (rv.get('reg') or [None, None, ''])[2] or dsrc or (next((c[3] for c in (x.get('cl') or []) if rw.get('code') and len(str(rw['code'])) >= 4 and str(rw['code']) in c[0] and re.match(r'https?://(?:[a-z0-9-]+\.)*(?:gov|gov\.[a-z]{2}|go\.[a-z]{2}|myfloridalicense\.com)/', str(c[3]))), '') if rw.get('code') else '')
         c['reg'] = [rw['register'] + (': ' + rw['item'] if rw.get('item') else '') + (' (' + rw['status'] + ')' if rw.get('status') else ''), u or '', 'reg', rwd]
     dc = cases_by_dev.get(x.get('dvs') or '')
     if dc: c['ct'] = [len(dc), '/courts/', 'reg', max(k.get('date') or '' for k in dc)]
