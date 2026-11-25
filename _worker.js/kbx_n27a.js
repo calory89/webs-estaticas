@@ -186,6 +186,25 @@ export function count(req, u, ctx) {
   const t = (TPL.find(z => z[1].test(u.pathname)) || ['other'])[0];
   ctx.waitUntil(inc(CK(day(), t)));
 }
+// n39 t3 (25 Nov 2026): 404 and 5xx answers counted at the edge per UTC day, by kind (page, API, data, asset) and status, bots apart, plus
+// the most hit missing page paths (paths only: no query, no IP, no user agent kept; private and token paths left out; at most 120 a day)
+const ERRK = p => /^\/(api|mcp)\b/.test(p) ? 'api' : /^\/data\//.test(p) ? 'data' : /\.[a-z0-9]{2,5}$/i.test(p) || /^\/(k|_s|cdn-cgi)\//.test(p) ? 'asset' : 'page';
+export function countStatus(req, u, st, ctx) {
+  if (typeof caches === 'undefined' || !ctx || !ctx.waitUntil || !(st === 404 || st === 410 || st >= 500) || /kolaboro-|deploy-guard/i.test(req.headers.get('user-agent') || '')) return;
+  const bot = BOT.test(req.headers.get('user-agent') || ''), k = ERRK(u.pathname), c = st >= 500 ? '5xx' : String(st);
+  ctx.waitUntil(incJ(CK(day(), '_err'), c + ' ' + k + (bot ? ' bot' : '')));
+  if (k === 'page' && !bot && u.pathname.length <= 100 && /^\/[a-z0-9\/._-]*$/i.test(u.pathname) && !/^\/(admin|portal|login|reset|agents\/me|shared|backup-admin|verify\/[a-f0-9]{16,})/.test(u.pathname)) ctx.waitUntil(incJ(CK(day(), '_e' + c), u.pathname));
+}
+export async function errUsage(days) {
+  const per = [], top = {}, by = {};
+  for (let i = 0; i < days; i++) { const d = day(i); let a = {};
+    try { const r = await caches.default.match(CK(d, '_err')); if (r) a = JSON.parse(await r.text()) || {}; } catch (e) {}
+    for (const c of ['404', '5xx']) { try { const r = await caches.default.match(CK(d, '_e' + c)); if (r) for (const [k, v] of Object.entries(JSON.parse(await r.text()) || {})) top[c + ' ' + k] = (top[c + ' ' + k] || 0) + v; } catch (e) {} }
+    for (const [k, v] of Object.entries(a)) by[k] = (by[k] || 0) + v;
+    per.push({ date: d, counts: a }); }
+  return { since: '2026-11-25', days, by_kind: by, top_paths: Object.entries(top).sort((x, y) => y[1] - x[1]).slice(0, 25).map(([k, n]) => ({ status: k.slice(0, 3), path: k.slice(4), n })), per_day: per,
+    note: '404, 410 and 5xx answers counted at the edge per UTC day in the Cloudflare location that answers this request, by kind (page, api, data, asset) and status, with bots and crawlers counted apart. Paths only, no query string, IP address or user agent is kept. Lower bounds; counting since 25 Nov 2026; our own monitors are left out.' };
+}
 async function readDays(keys, days) {
   const out = [];
   for (let i = 0; i < days; i++) {
@@ -365,7 +384,7 @@ export async function handle(req, u, env, ctx, shell, inner) {
     return new Response(null, { status: 204, headers: { 'cache-control': 'no-store' } });
   }
   if (req.method !== 'GET' && req.method !== 'HEAD') return null;
-  if (p === '/api/open/usage' || p === '/api/open/usage/') { const d = Math.min(35, Math.max(1, +u.searchParams.get('days') || 28)); return txt(JSON.stringify(await usage(d), null, 1), 'application/json; charset=utf-8', { 'cache-control': 'public, max-age=300' }); }
+  if (p === '/api/open/usage' || p === '/api/open/usage/') { const d = Math.min(35, Math.max(1, +u.searchParams.get('days') || 28)); return txt(JSON.stringify(Object.assign(await usage(d), { errors: await errUsage(Math.min(d, 14)) }), null, 1), 'application/json; charset=utf-8', { 'cache-control': 'public, max-age=300' }); }
   if (p === '/corrections.json' || p === '/corrections.md') {
     const E = await corrections(env, shell);
     const head = { page: ORIGIN + '/corrections/', licence: 'CC BY 4.0 (credit: Kolaboro, kolaboro.com)', at: new Date().toISOString().slice(0, 10), rules: 'Every factual error we found or were shown with evidence, as logged on /corrections/. Corrections are dated; nothing is removed from this log. To request a correction: ' + ORIGIN + '/corrections/ ; developers can reply with documents on any project page.', count: E.length };

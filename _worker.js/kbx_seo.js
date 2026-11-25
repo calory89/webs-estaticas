@@ -152,7 +152,7 @@ const CSS = '<style>.sx-cf{max-width:420px;margin:0 0 16px}.sx-cf label{display:
   '.sx-tw{border:1px solid var(--line);border-radius:var(--k-r-lg,14px);background:var(--k-surface,var(--paper))}.sx-tw .ptable{background:transparent;border-radius:0}.sx-tw .ptable th{text-transform:none;letter-spacing:0;font-size:.82rem;font-weight:600;background:var(--k-sunken,var(--paper))}.sx-tw .ptable td{font-variant-numeric:tabular-nums}.sx-tw .ptable tbody tr:last-child td{border-bottom:0}.sx-tw .ptable tbody tr:hover{background:color-mix(in srgb,var(--ink) 3%,transparent)}' +
   '.sx-chips a{border-radius:var(--k-r-md,10px);min-height:44px;display:inline-flex;align-items:center;padding:0 14px;background:var(--k-surface,var(--paper))}.sx-chips a:focus-visible{outline:3px solid var(--k-sea,#155C75);outline-offset:2px}.sx-reg{background:var(--k-surface,var(--paper))}.sx-reply{border-style:solid;border-width:1px;background:var(--k-surface,var(--paper))}' +
   '@media(max-width:640px){.sx-tw{border:0;background:none;overflow:visible}.sx-tw table,.sx-tw tbody,.sx-tw tr,.sx-tw td{display:block}.sx-tw table{min-width:0}.sx-tw thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}.sx-tw tr{border:1px solid var(--line);border-radius:var(--k-r-lg,14px);background:var(--k-surface,var(--paper));padding:12px 14px;margin:0 0 10px}.sx-tw .ptable td{border:0;padding:3px 0}.sx-tw td:first-child{font-weight:700;padding-bottom:6px}.sx-tw td[data-l]:not(:first-child){text-align:end;overflow:hidden}.sx-tw td[data-l]:not(:first-child)::before{content:attr(data-l);float:inline-start;margin-inline-end:12px;color:var(--muted);font-size:.85rem;text-align:start;max-width:55%}.sx-kv{grid-template-columns:1fr 1fr}.sx-kv div{padding:12px 14px}}' +
-  '@media(prefers-reduced-motion:reduce){.sx-anchor{transition:none}}</style>';
+  '@media(prefers-reduced-motion:reduce){.sx-anchor{transition:none}}.sx-pg p{display:flex;flex-wrap:wrap;gap:4px 6px;align-items:center}.sx-pg a,.sx-pg b{display:inline-flex;min-width:44px;min-height:44px;align-items:center;justify-content:center;border:1px solid var(--line,#d5d3cc);border-radius:10px}.sx-pg b{background:var(--ink,#16202A);color:var(--bg,#fff)}</style>';
 function h2(id, text) { return '<h2 id="' + id + '">' + esc(text) + '<a class="sx-anchor" href="#' + id + '" aria-label="Link to this section">#</a></h2>'; }
 function crumbs(list) {   // [[name, path], ...] last without link
   return '<p class="crumb">' + list.map((x, i) => i < list.length - 1 ? '<a href="' + x[1] + '">' + esc(x[0]) + '</a>' : esc(x[0])).join(' / ') + '</p>';
@@ -356,16 +356,23 @@ function addedDates(B) {   // first day a project appears in our daily page copi
   for (const c of B.cases) { const ds = []; if (P[c.id] && P[c.id].first) ds.push(P[c.id].first); for (const x of PR[c.id] || []) for (const h of x.hist || []) if (h.seen) ds.push(h.seen); for (const h of c.history || []) if (h.d) ds.push(h.d); out.set(c.id, ds.length ? ds.sort()[0] : null); }
   return out;
 }
-function pNew(B) {
+// n39 t3 (25 Nov 2026): /new/ is paged (NEW_PER projects a page, ?p=2 ...); the English page was 620 KB with every project in one table set
+const NEW_PER = 150;
+function pNew(B, u) {
   const up = B.d.updated, m0 = up.slice(0, 7), A = addedDates(B);
   const L = B.all.filter(c => { const a = A.get(c.id); return reviewed(c) ? a != null && a.slice(0, 7) === m0 : true; }).sort((a, b) => String(A.get(b.id) || '9').localeCompare(String(A.get(a.id) || '9')) || a.id.localeCompare(b.id));
   const none = B.cases.filter(c => A.get(c.id) == null).length, mname = ymName(m0 + '-01');
   let body = '<div class="sx-sum" id="summary"><p><b>' + L.length + ' off-plan projects first appear in our records in ' + mname + '</b>, in ' + new Set(L.map(c => c.country)).size + ' countries. The date shown is the first day we hold a dated copy of the project page, a dated promise or a recorded change.</p>' + (none ? '<p>' + none + ' tracked projects have none of these on record yet, so they are not listed here; they are on <a href="/countries/">the country pages</a>.</p>' : '') + '</div>';
   const by = new Map(); for (const c of L) { if (!by.has(c.country)) by.set(c.country, []); by.get(c.country).push(c); }
-  body += '<ul class="sx-chips">' + [...by.entries()].sort((a, b) => b[1].length - a[1].length).map(([k, v]) => '<li><a href="#' + slug(k) + '">' + esc(k) + ' (' + v.length + ')</a></li>').join('') + '</ul>';
-  for (const [k, v] of [...by.entries()].sort((a, b) => b[1].length - a[1].length)) body += h2(slug(k), k) + tableWrap(['Project', 'Where', 'Stage', 'Handover year advertised', 'Checks public', 'First on record'], v.map(c => '<tr><td><a href="' + plink(B, c) + '">' + esc(pname(B, c)) + '</a></td><td>' + esc(place(c)) + '</td><td>' + esc(c.stage || 'not stated') + '</td><td>' + (c.done || 'not published') + '</td><td>' + (reviewed(c) ? c.score + '/6</td><td>' + longDate(A.get(c.id)) : NOT_REVIEWED + '</td><td>added recently') + '</td></tr>')) + '<p><a href="/countries/' + slug(k) + '/">All projects in ' + esc(k) + '</a></p>';
-  body += REPLY;
-  return render({ path: '/new/', title: 'New off-plan projects in ' + mname + ': ' + L.length + ' first on record | Kolaboro', h1: 'New off-plan projects this month', lead: 'Projects that first appear in our records in ' + mname + ', with what they publish.', desc: L.length + ' off-plan projects first on record at Kolaboro in ' + mname + ' in ' + by.size + ' countries: stage, advertised handover, public buyer checks.', updated: up, type: 'CollectionPage', crumbs: [['Kolaboro', '/'], ['New this month', '/new/']], body });
+  const G = [...by.entries()].sort((a, b) => b[1].length - a[1].length), flat = [].concat(...G.map(g => g[1])), NP = Math.max(1, Math.ceil(flat.length / NEW_PER));
+  const pg = Math.min(NP, Math.max(1, parseInt((u && u.searchParams.get('p')) || '1', 10) || 1)), lo = (pg - 1) * NEW_PER, hi = lo + NEW_PER;
+  const pU = n => '/new/' + (n > 1 ? '?p=' + n : ''), start = new Map(); let ix = 0; for (const [k, v] of G) { start.set(k, Math.floor(ix / NEW_PER) + 1); ix += v.length; }
+  const pager = NP < 2 ? '' : '<nav class="sx-pg" aria-label="Pages"><p><span>' + (lo + 1) + '-' + Math.min(hi, flat.length) + ' / ' + flat.length + '</span> ' + Array.from({ length: NP }, (_, i) => i + 1).map(n => n === pg ? '<b aria-current="page">' + n + '</b>' : '<a href="' + pU(n) + '" hreflang="en"' + (n === pg - 1 ? ' rel="prev"' : n === pg + 1 ? ' rel="next"' : '') + '>' + n + '</a>').join(' ') + '</p></nav>';
+  body += '<ul class="sx-chips">' + G.map(([k, v]) => '<li><a href="' + (start.get(k) === pg ? '' : pU(start.get(k))) + '#' + slug(k) + '"' + (start.get(k) === pg ? '' : ' hreflang="en"') + '>' + esc(k) + ' (' + v.length + ')</a></li>').join('') + '</ul>' + pager;
+  let at = 0; const G2 = []; for (const [k, v] of G) { const a = Math.max(lo, at), b = Math.min(hi, at + v.length); if (a < b) G2.push([k, v.slice(a - at, b - at), a > at]); at += v.length; }
+  for (const [k, v, cont] of G2) body += h2(cont ? slug(k) + '-' + pg : slug(k), k + (cont ? ' (continued)' : '')) + tableWrap(['Project', 'Where', 'Stage', 'Handover year advertised', 'Checks public', 'First on record'], v.map(c => '<tr><td><a href="' + plink(B, c) + '">' + esc(pname(B, c)) + '</a></td><td>' + esc(place(c)) + '</td><td>' + esc(c.stage || 'not stated') + '</td><td>' + (c.done || 'not published') + '</td><td>' + (reviewed(c) ? c.score + '/6</td><td>' + longDate(A.get(c.id)) : NOT_REVIEWED + '</td><td>added recently') + '</td></tr>')) + '<p><a href="/countries/' + slug(k) + '/">All projects in ' + esc(k) + '</a></p>';
+  body += pager + REPLY;
+  return render({ path: pU(pg), noindex: pg > 1, title: 'New off-plan projects in ' + mname + ': ' + L.length + ' first on record' + (pg > 1 ? ', page ' + pg : '') + ' | Kolaboro', h1: 'New off-plan projects this month', lead: 'Projects that first appear in our records in ' + mname + ', with what they publish.', desc: L.length + ' off-plan projects first on record at Kolaboro in ' + mname + ' in ' + by.size + ' countries: stage, advertised handover, public buyer checks.', updated: up, type: 'CollectionPage', crumbs: [['Kolaboro', '/'], ['New this month', '/new/']], body });
 }
 // Comparisons only for named projects in the same market, same stage and same price band (a pair a buyer actually weighs); max 2 per project.
 function pairs(B) {
@@ -616,6 +623,38 @@ async function llms(env, B, full) {
 }
 
 // ---------- measurement ----------
+// n39 t3 (25 Nov 2026): structured data of every page template read live and checked: each JSON-LD block parses, has the schema.org
+// context and a @type on every node, no Review, AggregateRating or ClaimReview anywhere, the page node's url equals the canonical,
+// breadcrumb positions run 1..n with a name, and inLanguage matches the page language. Memo 10 minutes (17 pages, about 2 MB read).
+const SD_PAGES = ['/', '/es/', '/ar/', '/projects/emaar-golf-vale/', '/fr/projects/emaar-golf-vale/', '/projects/emaar-golf-vale/record/', '/developers/emaar-properties/', '/m/dubai/', '/de/m/dubai/', '/countries/spain/', '/rankings/most-delayed/', '/new/', '/data/', '/data/delays/', '/glossary/', '/engineering/', '/yc/'];
+let SDM = null;
+async function sdLive() {
+  if (SDM && Date.now() - SDM.t < 600000) return SDM.v;
+  const one = async p => {
+    const o = { p, st: 0, blocks: 0, nodes: 0, types: {}, issues: [] };
+    try { const r = await fetch(SITE + p, { headers: { 'user-agent': 'kolaboro-sd-check/1.0' }, redirect: 'manual' }); o.st = r.status; if (r.status !== 200) { o.issues.push('HTTP ' + r.status); try { await r.body.cancel(); } catch (e) {} return o; }
+      const h = await r.text(), lang = (/<html[^>]*\blang="([a-zA-Z-]+)"/.exec(h) || [])[1] || '', can = (/<link rel="canonical" href="([^"]+)"/.exec(h) || [])[1] || '';
+      const B = [...h.matchAll(/<script[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)].map(m => m[1]); o.blocks = B.length; if (!B.length) o.issues.push('no JSON-LD');
+      const walk = (x, top) => { if (Array.isArray(x)) return x.forEach(y => walk(y, top)); if (!x || typeof x !== 'object') return;
+        if (x['@type']) { o.nodes++; for (const ty of [].concat(x['@type'])) { o.types[ty] = (o.types[ty] || 0) + 1; if (/^(Review|AggregateRating|ClaimReview)$/.test(ty)) o.issues.push(ty + ' present'); }
+          if (x['@type'] === 'BreadcrumbList') { const L = x.itemListElement || []; if (!L.length || L.some((e, i) => +e.position !== i + 1 || !e.name)) o.issues.push('breadcrumb positions or names'); }
+          if (x.inLanguage && lang && typeof x.inLanguage === 'string' && x.inLanguage.slice(0, 2).toLowerCase() !== lang.slice(0, 2).toLowerCase()) o.issues.push('inLanguage ' + x.inLanguage + ' on a ' + lang + ' page');
+          if (top && /Page$/.test([].concat(x['@type'])[0]) && x.url && can && x.url !== can) o.issues.push('page url ' + x.url + ' differs from canonical'); }
+        else if (top && !x['@graph']) o.issues.push('node without @type');
+        for (const k in x) if (k !== '@context' && x[k] && typeof x[k] === 'object') walk(x[k], false); };
+      for (const b of B) { let j; try { j = JSON.parse(b); } catch (e) { o.issues.push('JSON does not parse'); continue; }
+        for (const n of [].concat(j)) { if (!/schema\.org/.test(JSON.stringify(n['@context'] || ''))) o.issues.push('no schema.org @context'); walk(n['@graph'] || n, true); } }
+    } catch (e) { o.issues.push('fetch failed'); }
+    o.issues = [...new Set(o.issues)]; return o;
+  };
+  const v = { at: new Date().toISOString(), pages: await Promise.all(SD_PAGES.map(one)) }; SDM = { t: Date.now(), v }; return v;
+}
+export async function sdSection() {
+  let d; try { d = await sdLive(); } catch (e) { return ''; }
+  const ok = d.pages.filter(x => !x.issues.length).length, n = d.pages.reduce((a, x) => a + x.nodes, 0);
+  return h2('sd-live', 'Structured data, every template checked live') + '<p>Read ' + esc(longDate(d.at.slice(0, 10))) + ' ' + esc(d.at.slice(11, 16)) + ' UTC: <b>' + ok + ' of ' + d.pages.length + ' templates pass</b>, ' + n + ' schema.org nodes. Checks: every JSON-LD block parses and names schema.org, every node has a type, no Review, AggregateRating or ClaimReview, the page node matches the canonical URL, breadcrumbs run 1 to n with names, and the language matches the page.</p>' +
+    tableWrap(['Page', 'Blocks', 'Nodes', 'Main types', 'Result'], d.pages.map(x => '<tr><td><a href="' + esc(x.p) + '"><code>' + esc(x.p) + '</code></a></td><td>' + x.blocks + '</td><td>' + x.nodes + '</td><td>' + esc(Object.entries(x.types).sort((a, b) => b[1] - a[1]).slice(0, 4).map(e => e[0]).join(', ')) + '</td><td>' + (x.issues.length ? '<b>' + esc(x.issues.join('; ')) + '</b>' : 'pass') + '</td></tr>'));
+}
 async function pSeo(env, B) {
   const audit = await file(env, '/data/seo-audit.json'), cnt = await sitemaps(env, B, 'stats'), lh = await file(env, '/data/lighthouse.json'), inow = await file(env, '/data/indexnow.json'), daily = await file(env, '/data/seo-daily.json');
   const total = Object.values(cnt).reduce((a, b) => a + b, 0);
@@ -654,6 +693,7 @@ async function pSeo(env, B) {
       tableWrap(['Last data change', 'Projects'], [...byDay.entries()].sort((a, b) => a[0] < b[0] ? 1 : -1).slice(0, 10).map(([d, n]) => '<tr><td>' + longDate(d) + '</td><td>' + fmt(n) + '</td></tr>'));
   }
   body += h2('images', 'Image sitemap') + '<p><a href="/sitemaps/images.xml">/sitemaps/images.xml</a> lists ' + fmt(cnt.images || 0) + ' English pages with their images: every named project and developer page with its 1200 x 630 facts card and, where we hold one, the monthly Sentinel-2 satellite strip, plus the static pages that carry their own share image. Each card is also an <code>ImageObject</code> (primaryImageOfPage) in the page\'s JSON-LD.</p>';
+  body += await sdSection();   // n39 t3
   body += h2('hygiene', 'Crawl rules') + '<ul class="sx-l"><li>One URL per page: trailing slash, lower case; <code>/p/&lt;id&gt;/</code>, <code>/projects/x</code> and <code>index.html</code> answer one 301 to the final URL (no chains).</li><li>Pages reached with a functional query (<code>?q=</code>, <code>?sort=</code>, <code>?lang=</code> ...) answer <code>X-Robots-Tag: noindex, follow</code>; tracking-only queries (<code>utm_*</code>, <code>gclid</code>, <code>fbclid</code>) keep the canonical as the only signal.</li><li><a href="/robots.txt">robots.txt</a> allows every search and answer-engine crawler (Googlebot, Bingbot, GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot, Applebot and others) on public pages.</li><li>Structured data on named pages: WebPage or ProfilePage, Organization, Residence or ApartmentComplex with GeoCoordinates where the location is public, Dataset, FAQPage, BreadcrumbList, ImageObject. Never Review, AggregateRating or ClaimReview.</li><li>Since 20 Nov 2026: every <code>/api/</code> answer carries <code>X-Robots-Tag: noindex</code>; old query addresses (<code>/p/?id=</code>, <code>/m/?market=</code>, translated <code>/ask-developer/?id=</code>) answer one 301 to the clean page, and an id we do not hold answers a real 404; links to addresses with a query string carry <code>rel="nofollow"</code>; robots.txt closes <code>/api/kb/</code>, <code>/k/</code> (except scripts, styles, fonts and images) and, for search crawlers, <code>/api/x/</code>.</li><li>Crawlers revalidate pages with <code>If-Modified-Since</code> and get a 304 when the page did not change (the edge remembers each page\'s fingerprint).</li><li>hreflang check: <a href="/open/hreflang-check.py">/open/hreflang-check.py</a> (Python standard library) samples every sitemap and checks status, noindex, self-canonical, return links and x-default.</li></ul>';
   // n33i (batch 33, item 23): the weekly indexing log (Search Console counts only) and the URL lists behind each validation request
   try {
@@ -681,7 +721,7 @@ export async function handle(req, u, env, ctx, shell, inner) {
   if (/^\/(countries|rankings|vs|new|embed\/(delay|project|widgets)|engineering\/seo|press\/delivery-index)(\/[^?#.]*)?$/.test(p) && !p.endsWith('/')) return new Response(null, { status: 301, headers: { location: p + '/' + u.search } });
   // batch 15 (s15b): hub and guide pages are cached at the edge per deploy (every data publish is a deploy), so a crawler gets the
   // HTML without the data join (TTFB). Only clean URLs; a query string always renders fresh.
-  const ckey = req.method === 'GET' && !u.search && env && env.CF_PAGES_COMMIT_SHA && /^\/(countries|rankings|vs|new|press\/delivery-index|embed\/widgets)\//.test(p) && typeof caches !== 'undefined' ? new Request(SITE + '/__seo_html/v2/' + env.CF_PAGES_COMMIT_SHA + p) : null;
+  const ckey = req.method === 'GET' && (!u.search || [...u.searchParams.keys()].every(k => /^(utm_[a-z_]+|gclid|gbraid|wbraid|fbclid|msclkid|mc_[a-z]+|igshid|ref|_ga)$/i.test(k))) && env && env.CF_PAGES_COMMIT_SHA && /^\/(countries|rankings|vs|new|press\/delivery-index|embed\/widgets)\//.test(p) && typeof caches !== 'undefined' ? new Request(SITE + '/__seo_html/v2/' + env.CF_PAGES_COMMIT_SHA + p) : null;
   if (ckey) { try { const hit = await caches.default.match(ckey); if (hit) { const h = new Headers(hit.headers); h.set('x-seo-cache', 'hit'); h.set('cache-control', 'no-cache'); return new Response(hit.body, { status: hit.status, headers: h }); } } catch (e) {} }
   let B; try { B = await base(env, inner); } catch (e) { return new Response('Data temporarily unavailable', { status: 503, headers: { 'retry-after': '60', 'content-type': 'text/plain' } }); }
   if (p === '/sitemap_index.xml') { B.inner = inner; B.ctx = ctx; return sitemaps(env, B, 'index'); }
@@ -702,7 +742,7 @@ export async function handle(req, u, env, ctx, shell, inner) {
   else if (p === '/rankings/most-delayed/') R = pDelayed(B, null);
   else if ((m = /^\/rankings\/most-delayed\/([a-z0-9-]+)\/$/.exec(p))) { const mk = marketsWithDelays(B).find(([x]) => slug(x) === m[1]); R = mk ? pDelayed(B, mk[0]) : null; }
   else if (p === '/rankings/changed-promises/') R = pChanged(B);
-  else if (p === '/new/') R = pNew(B);
+  else if (p === '/new/') R = pNew(B, u);
   else if (p === '/vs/') R = pVs(B, null);
   else if ((m = /^\/vs\/([a-z0-9-]+)\/$/.exec(p))) R = pVs(B, m[1]);
   else if (p === '/embed/widgets/') R = pWidgets(B);

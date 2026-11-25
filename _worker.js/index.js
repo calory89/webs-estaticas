@@ -195,7 +195,7 @@ function kbHeaders(r, u) {
   // n28a: 146 static pages have Open Graph tags but no og:locale (shared links were read as English); it is added from the path language
   let ogT = false, ogL = false; const OGL = { es: 'es_ES', de: 'de_DE', fr: 'fr_FR', nl: 'nl_NL', ru: 'ru_RU', zh: 'zh_CN', ar: 'ar_AR' }[(/^\/(es|de|fr|nl|ru|zh|ar)(\/|$)/.exec(u.pathname) || [])[1]] || (/^\/agents\/id(\/|$)/.test(u.pathname) ? 'id_ID' : 'en_GB');
   // n33c (item 40, 20 Nov 2026): a title over 60 characters drops " | Kolaboro" (234 of the 536 main-sitemap pages were cut in results)
-  let tB = '';
+  let tB = '', imgN = 0;
   // n33a (batch 33): items 86 (a JSON Feed and an Atom feed of the data changes in the <head> of every hub that carries none) and 89
   // (who made a report, from what, the method and where to send corrections, under every report)
   let fJ = false, fA = false; const n33 = kn33a && r.status === 200 && !priv && !embed ? kn33a : null, n33F = n33 && n33.FEED_HUB.test(u.pathname), n33B = n33 && n33.REPORTS.test(u.pathname);
@@ -204,6 +204,7 @@ function kbHeaders(r, u) {
     .on('main', { element(e) { if (n33B) { const lg = (/^\/(es|de|fr|nl|ru|zh|ar)\//.exec(u.pathname) || [0, 'en'])[1]; const b = n33.byline(lg, u.pathname); if (b) e.append('<div class="wrap">' + b + '</div>', { html: true }); } } })
     .on('meta[property="og:title"]', { element() { ogT = true; } }).on('meta[property="og:locale"]', { element() { ogL = true; } }).on('script', { element(e) { e.setAttribute('nonce', nonce); if ((e.getAttribute('src') || '').startsWith('/k/prov.js')) e.setAttribute('src', '/k/prov.js?v=' + KB_PROV_V); } })
     .on('head script', { element(e) { gaTail = ''; if ((e.getAttribute('src') || '').includes(KB_GA)) ga = true; }, text(t) { if (ga) return; const x = gaTail + t.text; if (x.includes(KB_GA)) ga = true; gaTail = t.lastInTextNode ? '' : x.slice(-12); } })
+    .on('img', { element(e) { if (!e.hasAttribute('decoding')) e.setAttribute('decoding', 'async'); if (++imgN > 2 && !e.hasAttribute('loading') && e.getAttribute('fetchpriority') !== 'high') e.setAttribute('loading', 'lazy'); } })   // n39 t3: decoding hints on every image, lazy loading after the first two that set none
     .on('style[id]', { element(e) { const id = e.getAttribute('id'); if (styleIds.has(id)) e.remove(); else styleIds.add(id); } })   // n19f: a style block repeated with the same id (36 static pages, sections that each carry their CSS) is kept once
     .on('link[rel="stylesheet"]', { element(e) { const hf = e.getAttribute('href') || ''; if (/^\/k\/site\.css/.test(hf)) e.setAttribute('href', '/k/site.css?v=' + KB_SITE_CSS_V);   // n21e: one version for the 235 pages that hard-code an older ?v=
       if (!ds && /^\/k\/(site|app)\.css/.test(hf)) { e.after(/^\/k\/site\.css/.test(hf) ? DSLS : DSL, { html: true }); ds = true; } } })
@@ -434,9 +435,13 @@ async function h29Inject(req, u, env, r) {
 // (n29q), a copy is served at once and rebuilt in the background when it is older than 15 minutes or was built by another deployment.
 // The copy is taken after kbHeaders, so on every answer its script nonce is replaced in the body and in the CSP headers by a fresh one.
 // n38 d5: also /yc/ (6.7 s cold) and the translated /<lang>/new/ (built from the 620 KB English page)
+// n39 t3 (25 Nov 2026): a link that only adds tracking parameters (utm_*, gclid, fbclid ...) is served from the same edge copies as the
+// clean URL (before, any query string skipped them and rebuilt the page); functional queries (?q=, ?p=, ?m= ...) still render fresh
+const KB_TRACKQ = /^(utm_[a-z_]+|gclid|gbraid|wbraid|fbclid|msclkid|mc_[a-z]+|igshid|ref|_ga)$/i;
+const kbClean = u => !u.search || [...u.searchParams.keys()].every(k => KB_TRACKQ.test(k));
 const KB_EDGE = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:m\/[^/.]{2,60}|engineering\/status|yc|new)\/$/, KB_EDGE_BUSY = new Set();
 async function kbEdge(req, u, env, ctx, make) {
-  if (req.method !== 'GET' || u.search || typeof caches === 'undefined' || !KB_EDGE.test(u.pathname)) return make();
+  if (req.method !== 'GET' || !kbClean(u) || typeof caches === 'undefined' || !KB_EDGE.test(u.pathname)) return make();
   const ck = new Request('https://kolaboro.com/__edge/v1' + u.pathname), sha = String((env && env.CF_PAGES_COMMIT_SHA) || '');
   const keep = async r0 => {
     if (!r0 || r0.status !== 200 || !/text\/html/.test(r0.headers.get('content-type') || '')) return r0;
@@ -476,8 +481,9 @@ export default {
     let r;   // r3u (batch 37): a kolaboro.com page that throws is tried once more, then answers a short retry notice in its language (503) instead of the platform error page
     try { r = await this.fetch0(req, env, ctx); } catch (e0) {
       if (!/^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname) || (req.method !== 'GET' && req.method !== 'HEAD')) throw e0;
-      try { r = await this.fetch0(req, env, ctx); } catch (e1) { try { if (!kn37u) kn37u = await import('./kbx_n37u.js'); const er = await kn37u.errPage(new URL(req.url)); er.headers.set('x-kb-err', String(e1 && e1.message || e1).slice(0, 120).replace(/[^\x20-\x7e]/g, '')); return er; } catch (e2) { throw e1; } }
+      try { r = await this.fetch0(req, env, ctx); } catch (e1) { try { if (!kn37u) kn37u = await import('./kbx_n37u.js'); const er = await kn37u.errPage(new URL(req.url)); er.headers.set('x-kb-err', String(e1 && e1.message || e1).slice(0, 120).replace(/[^\x20-\x7e]/g, '')); try { if (k27a) k27a.countStatus(req, new URL(req.url), 503, ctx); } catch (e3) {} return er; } catch (e2) { throw e1; } }
     }
+    if (r && (r.status === 404 || r.status === 410 || r.status >= 500) && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) { try { if (!k27a) k27a = await import('./kbx_n27a.js'); k27a.countStatus(req, new URL(req.url), r.status, ctx); } catch (e) {} }   // n39 t3: 404 and 5xx counters (/engineering/monitoring/#errors)
     if (req.method === 'GET' && r && r.status === 200 && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname) && KN37U_INJ.test(new URL(req.url).pathname)) { try { if (!kn37u) kn37u = await import('./kbx_n37u.js'); r = await kn37u.inject(req, new URL(req.url), env, r); } catch (e) {} }   // r1u (batch 37): record links on project pages, gaps link on /data/, /data/dictionary/, /registers/, shipped list on /engineering/ and /yc/
     if (req.method === 'GET' && r && r.status === 200 && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname) && KN35A_INJ.test(new URL(req.url).pathname)) { try { if (!kn35a) kn35a = await import('./kbx_n35a.js'); r = await kn35a.inject(req, new URL(req.url), env, r, kbNonce(r)); } catch (e) {} }   // n35a (batch 35): construction pace + contradictions on project pages, signals on developer pages, links on /m/dubai/, /data/, /registers/, /numbers/, shipped list on /engineering/ and /yc/
     if (req.method === 'GET' && r && r.status === 200 && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname) && KN34A_INJ.test(new URL(req.url).pathname)) { try { if (!kn34a) kn34a = await import('./kbx_n34a.js'); r = await kn34a.inject(req, new URL(req.url), env, r, kbNonce(r)); } catch (e) {} }   // n34a (batch 34): track record on developer pages, evidence button on project pages, intervals on /numbers/, /delays/, /m/<market>/, links on /engineering/, /yc/, /data/
@@ -848,7 +854,7 @@ export default {
         if (r0 && r0.status === 200) { try { if (!kn30) kn30 = await import('./kbx_n30a.js'); const sb = await kn30.slipBlock(env, decodeURIComponent(mm32[2]), mm32[1]); if (sb) r0 = new HTMLRewriter().on('main', { element(e) { e.append(sb, { html: true }); } }).transform(r0); } catch (e) {} }
         return r0 && /text\/html/.test(r0.headers.get('content-type') || '') ? kbHeaders(r0, u) : r0; }); if (r) return r; }
       // n31s (item 193): translated country pages are kept in the edge cache like the English ones (served at once, rebuilt in the background after 15 minutes)
-      const kc31 = !u.search && req.method === 'GET' && typeof caches !== 'undefined' && /^\/(?:es|de|fr|nl|ru|zh|ar)\/countries\/[a-z0-9-]{2,60}\/$/.test(u.pathname) ? new Request('https://kolaboro.com/__seoc/n31' + u.pathname) : null;
+      const kc31 = kbClean(u) && req.method === 'GET' && typeof caches !== 'undefined' && /^\/(?:es|de|fr|nl|ru|zh|ar)\/countries\/[a-z0-9-]{2,60}\/$/.test(u.pathname) ? new Request('https://kolaboro.com/__seoc/n31' + u.pathname) : null;
       if (kc31) { try { const hit = await caches.default.match(kc31); if (hit) { const age = Date.now() - (+hit.headers.get('x-built') || 0);
         if (age > 900e3 && ctx && ctx.waitUntil) ctx.waitUntil(k29i.page(req, u, env, ctx, shell).then(async r0 => { if (r0 && r0.status === 200 && /text\/html/.test(r0.headers.get('content-type') || '')) { const h0 = new Headers(r0.headers); h0.delete('content-length'); h0.set('x-built', String(Date.now())); h0.set('cache-control', 'public, max-age=86400'); await caches.default.put(kc31, new Response(await r0.text(), { headers: h0 })); } }).catch(() => {}));
         const h = new Headers(hit.headers); h.delete('x-built'); h.set('cache-control', 'public, max-age=600'); h.set('x-seo-cache', age > 900e3 ? 'stale' : 'hit'); return kbHeaders(new Response(hit.body, { status: 200, headers: h }), u); } } catch (e) {} }
@@ -936,7 +942,7 @@ export default {
         return r;
       };
       // n38 d5: the rankings hubs and lists (most-delayed Dubai 5.3 s cold) and /new/ (4.7 s) use the same edge copy
-      const kck = !u.search && typeof caches !== 'undefined' && /^\/(?:countries\/(?:[a-z0-9-]{2,60}\/(?:[a-z-]{3,30}\/)?)?|rankings\/(?:(?:most-delayed|changed-promises)\/(?:[a-z0-9-]{2,60}\/)?)?|new\/)$/.test(u.pathname) ? new Request('https://kolaboro.com/__seoc/v1' + u.pathname) : null;
+      const kck = kbClean(u) && typeof caches !== 'undefined' && /^\/(?:countries\/(?:[a-z0-9-]{2,60}\/(?:[a-z-]{3,30}\/)?)?|rankings\/(?:(?:most-delayed|changed-promises)\/(?:[a-z0-9-]{2,60}\/)?)?|new\/)$/.test(u.pathname) ? new Request('https://kolaboro.com/__seoc/v1' + u.pathname) : null;
       const keep = async (r0) => { if (!r0 || r0.status !== 200 || !/text\/html/.test(r0.headers.get('content-type') || '')) return r0; const t = await r0.text(), h = new Headers(r0.headers); h.delete('content-length'); h.set('x-built', String(Date.now())); h.set('cache-control', 'public, max-age=86400'); try { await caches.default.put(kck, new Response(t, { headers: h })); } catch (e) {} const h2 = new Headers(r0.headers); h2.delete('content-length'); return new Response(t, { status: 200, headers: h2 }); };
       let r = null;
       if (kck) { try { const hit = await caches.default.match(kck); if (hit) { const age = Date.now() - (+hit.headers.get('x-built') || 0); if (age > 900e3 && ctx && ctx.waitUntil) ctx.waitUntil(make().then(keep).catch(() => {})); const h = new Headers(hit.headers); h.delete('x-built'); h.set('x-seo-cache', age > 900e3 ? 'stale' : 'hit'); r = new Response(hit.body, { status: 200, headers: h }); } } catch (e) { r = null; } }
