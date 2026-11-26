@@ -387,6 +387,34 @@ function factCounts(rows) {
 }
 const recList = (l, rows) => '<ul class="n37-rel">' + rows.map(x => '<li><a href="' + recU(l, x[1]) + '">' + bdi(x[2]) + '</a>&nbsp;<span class="k-xs">' + nf(cnt(x), l) + '/10</span></li>').join('') + '</ul>';
 // r4u: on English market pages the styles of this section are added by /m/m.js (loaded there), not inline; translated market pages do not load m.js: keeps the page under its budget
+// n40 k6 (R04-18/19/42/43, R05-17/41/42/43): market dashboard, 4 tiles (past handover date, permit, register entry, handover pipeline) with sample size and data date
+const MO40 = { jan: 1, feb: 2, mar: 3, apr: 4, may: 5, jun: 6, jul: 7, aug: 8, sep: 9, oct: 10, nov: 11, dec: 12 };
+function hoEnd(v) {   // end of the period of a handover value as year*12+month (conservative: a year counts as December), or null
+  const s = String(v || ''), y = /(20\d\d)/.exec(s); if (!y) return null; const Y = +y[1]; let m;
+  if ((m = /20\d\d-(\d\d)/.exec(s))) return Y * 12 + Math.min(12, +m[1]);
+  if ((m = /Q([1-4])/i.exec(s))) return Y * 12 + 3 * m[1];
+  if ((m = /H([12])/i.exec(s))) return Y * 12 + 6 * m[1];
+  if ((m = /\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\s+20\d\d/i.exec(s))) return Y * 12 + MO40[m[1].toLowerCase()];
+  if (/early/i.test(s)) return Y * 12 + 4; if (/mid|summer/i.test(s)) return Y * 12 + 9;
+  return Y * 12 + 12;
+}
+function mkDash(l, m) { const k = 'd|' + l + '|' + m; if (!IX.mkm) IX.mkm = new Map(); if (!IX.mkm.has(k)) IX.mkm.set(k, mkDash0(l, m)); return IX.mkm.get(k); }
+function mkDash0(l, m) {
+  const rows = IX.byMk.get(m) || [], n = rows.length; if (n < 5) return '';
+  const b = /^(\d{4})-(\d{2})/.exec(D.built || ''), now = b ? +b[1] * 12 + +b[2] : 0, Y0 = b ? +b[1] : 2026;
+  let dated = 0, past = 0, pn = 0, rg = 0; const yr = new Map();
+  for (const r of rows) { const c = r[8]; if (c[1]) pn++; if (c[8]) rg++; const e = c[0] ? hoEnd(c[0][0]) : null; if (e == null) continue; dated++; if (e < now) past++; else { const y = Math.floor((e - 1) / 12); const key = y > Y0 + 2 ? 'l' : String(y); yr.set(key, (yr.get(key) || 0) + 1); } }
+  const fut = [...yr.values()].reduce((a, x) => a + x, 0), keys = [String(Y0), String(Y0 + 1), String(Y0 + 2), 'l'], mx = Math.max(1, ...keys.map(x => yr.get(x) || 0));
+  const pc = (a, z) => z ? bdi(nf(share(a, z), l) + '%') : '-';
+  const tile = (h, v, sub) => '<div class="d40-t"><p class="d40-l">' + esc(h) + '</p><p class="d40-v">' + v + '</p><p class="d40-s">' + sub + '</p></div>';
+  return '<style>.d40{margin:14px 0 18px}.d40 h2{font-size:1.1rem;margin:0 0 8px}.d40-g{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));gap:10px}.d40-t{border:1px solid var(--k-line,#D5DCDB);border-radius:12px;padding:12px 14px;background:var(--k-sunken,transparent)}.d40-t p{margin:0}.d40-l{font-size:.85rem;color:var(--k-muted,#5f5c55)}.d40-v{font-size:1.6rem;font-weight:700;font-variant-numeric:tabular-nums;line-height:1.25}.d40-s{font-size:.85rem;color:var(--k-muted,#5f5c55)}.d40-b{list-style:none;padding:0;margin:4px 0 0;font-size:.85rem}.d40-b li{display:grid;grid-template-columns:3.6em 1fr 3em;gap:6px;align-items:center}.d40-b i{display:block;height:8px;border-radius:4px;background:var(--k-sea,#0f766e)}.d40-f{font-size:.82rem;color:var(--k-muted,#5f5c55);margin:8px 0 0}.d40-f a{display:inline-block;padding:6px 0}</style>' +
+    '<section class="d40" id="dash"' + dir(l) + ' aria-labelledby="d40-h"><h2 id="d40-h">' + esc(tf(l, 'd40_h', { m })) + '</h2><div class="d40-g">' +
+    tile(t(l, 'd40_dl'), pc(past, dated), esc(tf(l, 'd40_ds', { a: nf(past, l), n: nf(dated, l) }))) +
+    tile(t(l, 'd40_pl'), pc(pn, n), esc(tf(l, 'd40_ps', { a: nf(pn, l), n: nf(n, l) }))) +
+    tile(t(l, 'd40_rl'), pc(rg, n), esc(tf(l, 'd40_rs', { a: nf(rg, l), n: nf(n, l) }))) +
+    '<div class="d40-t"><p class="d40-l">' + esc(t(l, 'd40_hl')) + '</p><p class="d40-v">' + bdi(nf(fut, l)) + '</p><ul class="d40-b">' + keys.map(x => { const v = yr.get(x) || 0; return '<li><span>' + esc(x === 'l' ? t(l, 'd40_later') : x) + '</span><i style="width:' + Math.max(v ? 3 : 0, Math.round(100 * v / mx)) + '%" aria-hidden="true"></i><span>' + nf(v, l) + '</span></li>'; }).join('') + '</ul><p class="d40-s">' + esc(tf(l, 'd40_hs', { n: nf(fut, l) })) + '</p></div>' +
+    '</div><p class="d40-f">' + esc(tf(l, 'd40_ft', { n: nf(n, l), d: fd(D.built, l) })) + ' <a href="/data/n37u.json">n37u.json</a> · <a href="' + pre(l) + '/data/dictionary/">' + esc(t(l, 'd40_dic')) + '</a></p></section>';
+}
 function mkSection(l, m) {   // r8u: one build per market and language for each data version (IX is rebuilt when the data changes)
   const k = l + '|' + m; if (!IX.mkm) IX.mkm = new Map(); if (!IX.mkm.has(k)) IX.mkm.set(k, mkSection0(l, m)); return IX.mkm.get(k);
 }
@@ -1198,7 +1226,7 @@ export async function inject(req, u, env, r) {
     }
     else if (p === '') { const h = await homeBits(l, env); if (h) { add.push(['p.hero-sub', 'after', h[0]]); add.push(['#hp-band > .wrap', 'prepend', h[1]]); } }   // n38 d4: one proof line in the hero, the numbers in a tile band below
     else if (p === 'yc/try/') add.push(['section.k27 .k-prose > ol', 'before', await progBlock(l, env)]);   // r8u
-    else if ((mm = /^m\/([^/.]{2,60})\/$/.exec(p))) { const mk = mBySlug(mm[1]); const h = mk ? mkSection(l, mk) + kpMarket(l, mk) + '<div class="n37">' + areaBlock(l, mk) + nextBlock(l, mk) + '</div>' : ''; if (!h) return r; add.push(['#slippage', 'before', h]); }   // r9u: register status summary (Malaysia); n39 t2: areas, next 12 months
+    else if ((mm = /^m\/([^/.]{2,60})\/$/.exec(p))) { const mk = mBySlug(mm[1]); const dh = mk ? mkDash(l, mk) : ''; if (dh) add.push(l === 'en' ? ['#in-short', 'after', dh] : ['.k29-kv', 'after', dh]); const h = mk ? mkSection(l, mk) + kpMarket(l, mk) + '<div class="n37">' + areaBlock(l, mk) + nextBlock(l, mk) + '</div>' : ''; if (!h) return r; add.push(['#slippage', 'before', h]); }   // r9u: register status summary (Malaysia); n39 t2: areas, next 12 months
     else if ((mm = /^developers\/([a-z0-9-]{2,90})\/$/.exec(p))) { const h = devSection(l, mm[1]); if (!h) return r; add.push(['#projects', 'append', h + peers(l, mm[1]) + '<p class="n37-in"' + dir(l) + '><a href="' + pre(l) + '/developers/' + mm[1] + '/timeline/">' + esc(t(l, 'v_link')) + '</a></p>']); }   // n39 t2
     else if ((mm = /^projects\/([a-z0-9-]{1,90})\/$/.exec(p))) {
       const x = IX.bySlug.get(mm[1]); if (!x) return r;
