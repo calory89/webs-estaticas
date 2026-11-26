@@ -417,12 +417,25 @@ function peers(l, slug) {
   return '<div class="n37" id="n40-peers"' + dir(l) + '><h3>' + esc(tf(l, 'pe_h', { m: mkName(mk, l) })) + '</h3><ul class="n40-pe">' + L.map(o => '<li><a href="' + pre(l) + '/developers/' + o.s + '/">' + bdi(o.d) + '</a> <small>' + esc(tf(l, 'pe_n', { n: nf(o.k, l) })) + '</small></li>').join('') + '</ul></div>';
 }
 // n40: zh font stack (R02-45), form error links (R02-47), method box on rankings (R02-40); the footer hubs (R02-33) are rows in /data/n33l.json
+// n40 k4 (R04-04..08, R04-29..33): the country page, how to check, is it safe, the buyer protection law page and the 3 largest markets of a
+// country link each other in every language. cg26 in /data/n37u-i18n.json lists which of these pages exist per language (from the sitemaps).
+function cgBox(l, p) {
+  const m = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?countries\/([a-z0-9-]{2,60})\/(?:(how-to-check|is-it-safe|buyer-protection-law)\/)?$/.exec(p); if (!m || !T.cg26) return '';
+  const c = T.cg26[m[1]]; if (!c) return ''; const cur = ['', 'how-to-check', 'is-it-safe', 'buyer-protection-law'].indexOf(m[2] || ''), bl = c.p[l] || 0, be = c.p.en || 0, en = ' <small>' + esc(t(l, 'cg_en')) + '</small>';
+  if (!(bl & (1 << cur))) return '';   // only on pages that exist in this language
+  const A = [];
+  ['', 'how-to-check/', 'is-it-safe/', 'buyer-protection-law/'].forEach((s, i) => { if (i === cur) return; const lab = esc(t(l, 'cg_' + i));
+    if (bl & (1 << i)) A.push('<a href="' + pre(l) + '/countries/' + m[1] + '/' + s + '">' + lab + '</a>'); else if (l !== 'en' && (be & (1 << i))) A.push('<a href="/countries/' + m[1] + '/' + s + '" hreflang="en">' + lab + '</a>' + en); });
+  for (const [s, n, loc] of c.m) A.push(l === 'en' || loc ? '<a href="' + pre(l) + '/m/' + s + '/">' + esc(tf(l, 'cg_m', { m: mkName(n, l) })) + '</a>' : '<a href="/m/' + s + '/" hreflang="en">' + esc(tf(l, 'cg_m', { m: mkName(n, l) })) + '</a>' + en);
+  if (A.length < 2) return '';
+  return '<nav class="wrap" id="n40-cg" aria-labelledby="n40-cg-h"' + dir(l) + '><div style="border:1px solid var(--line,#d9d9d9);border-radius:12px;padding:14px 16px;margin:24px 0"><h2 id="n40-cg-h" style="font-size:1.05rem;margin:0 0 6px">' + esc(t(l, 'cg_h')) + '</h2><ul style="margin:0;padding-inline-start:20px;line-height:1.9">' + A.map(a => '<li>' + a + '</li>').join('') + '</ul></div></nav>';
+}
 export async function foot(u, env, r) {
   const l = (/^\/(es|de|fr|nl|ru|zh|ar)\//.exec(u.pathname) || [])[1] || 'en'; if (!T) T = await file(env, '/data/n37u-i18n.json'); if (!T) return r;
   const zh = l === 'zh' ? '<style id="n40-cjk">:root{--k-font:Archivo,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC","Noto Sans SC","Source Han Sans SC",system-ui,sans-serif}body{font-synthesis-weight:none;font-synthesis-style:none}input,button,select,textarea{font-family:inherit}</style>' : '';   // n40 R02-45: one CJK stack for every element, no faux bold or italic
   const nc = ((r.headers.get('content-security-policy') || '').match(/'nonce-([^']+)'/) || [])[1], fl = '<script src="/k/fl.js?v=n40k2b" defer' + (nc ? ' nonce="' + nc + '"' : '') + '></script>';   // n40 R02-47: form errors linked to their fields (/k/fl.js)
   return new HTMLRewriter().on('head', { element(e) { if (zh) e.append(zh, { html: true }); } }).on('body', { element(e) { e.append(fl, { html: true }); } })
-    .on('main', { element(e) { if (/^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?rankings\//.test(u.pathname)) e.append('<section class="wrap" id="n40-meth"' + dir(l) + '><div style="border:1px solid var(--line,#d9d9d9);border-radius:12px;padding:14px 16px;margin:24px 0"><h2 style="font-size:1.05rem;margin:0 0 6px">' + esc(t(l, 'mt_h')) + '</h2><p style="margin:0">' + esc(t(l, 'mt_p')) + ' <a href="' + pre(l) + '/how-we-score/">' + esc(t(l, 'mt_a')) + '</a></p></div></section>', { html: true }); } }).transform(r);   // n40 R02-40: method box on every rankings page
+    .on('main', { element(e) { const cg = cgBox(l, u.pathname); if (cg) e.append(cg, { html: true }); if (/^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?rankings\//.test(u.pathname)) e.append('<section class="wrap" id="n40-meth"' + dir(l) + '><div style="border:1px solid var(--line,#d9d9d9);border-radius:12px;padding:14px 16px;margin:24px 0"><h2 style="font-size:1.05rem;margin:0 0 6px">' + esc(t(l, 'mt_h')) + '</h2><p style="margin:0">' + esc(t(l, 'mt_p')) + ' <a href="' + pre(l) + '/how-we-score/">' + esc(t(l, 'mt_a')) + '</a></p></div></section>', { html: true }); } }).transform(r);   // n40 R02-40: method box on every rankings page
 }
 let STATS = null;
 async function stats(env) {
