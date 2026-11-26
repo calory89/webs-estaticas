@@ -57,6 +57,11 @@ def sub(pat, rep, s, flags=re.S):
 
 
 p = sub(r'(<div class="lw-filter"[^>]*>).*?(</div>)', lambda m: m.group(1) + flt + m.group(2), p)
+# the country pages that show the same rules in 8 languages (one link per market with notes)
+CC = {'ID': 'indonesia', 'AE-DU': 'uae', 'TH': 'thailand', 'ES': 'spain', 'PT': 'portugal', 'US-FL': 'usa', 'AU-VIC': 'australia', 'MX': 'mexico', 'JP': 'japan', 'GB': 'united-kingdom', 'TR': 'turkey'}
+cc = '<p class="tl-hint lw-cc">The same notes by country, in 8 languages: ' + ', '.join('<a href="/countries/%s/buyer-protection-law/">%s</a>' % (CC[k], e(v)) for k, v in mk.items() if count.get(k) and k in CC) + '.</p>'
+if 'class="tl-hint lw-cc"' in p: p = sub(r'<p class="tl-hint lw-cc">.*?</p>', lambda m: cc, p)
+else: p = sub(r'(<div class="lw-filter"[^>]*>.*?</div>)', lambda m: m.group(1) + '\n  ' + cc, p)
 p = sub(r'(<div class="lw-list" id="lwList">).*?</article></div>', lambda m: m.group(1) + lst + '</div>', p)
 p = sub(r'(<p class="lead">)\d+( short notes)', lambda m: m.group(1) + str(n) + m.group(2), p)
 for pat in (r'(<meta name="description" content=")[^"]*(")', r'(<meta property="og:description" content=")[^"]*(")'):
