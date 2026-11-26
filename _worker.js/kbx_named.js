@@ -690,6 +690,7 @@ const res = new HTMLRewriter()
 .on('head', { element(e) { e.append(tags, { html: true }); } })
 .on('main', { element(e) { e.setInnerContent(body + (/data-live|data-kw|data-kx|data-kn=|data-kf=|data-u27/.test(body) ? '<script src="/k/u27.js?v=' + U27_SRC_V + '" defer></script>' : ''), { html: true }); } })
 .on('div.mcta', { element(e) { const m = /^\/projects\/([a-z0-9-]{1,90})\/$/.exec((pg.feed && pg.feed.path) || ''); if (m) e.replace(ctaHtml(lang, m[1]), { html: true }); } })
+.on('link[rel="stylesheet"][href^="/k/site.css"]', { element(e) { if (pg.feed && /^\/(?:projects|developers)\/[a-z0-9-]+\/$/.test(pg.feed.path)) e.setAttribute('data-kp', ''); } })   // n40 d8: kbHeaders serves /k/site-p.css here
 .on('details.lsw a[hreflang]', { element(e) { const l = e.getAttribute('hreflang'); if (LANGS.includes(l)) e.setAttribute('href', pg.alt(l).replace(ORIGIN, '')); } })
 .transform(new Response(shellRes.body, { headers: { 'content-type': 'text/html; charset=utf-8' } }));
 return await res.text();

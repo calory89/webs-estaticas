@@ -47,3 +47,23 @@
 @media (min-width:1120px){:root .phero.kp .kans>#checks6 .klt-l{grid-template-columns:repeat(2,minmax(0,1fr))}:root .phero.kp>.wrap>.kfl8{margin:var(--k-3) 0 var(--k-2)}}
 @media (max-width:1119px){:root .phero.kp .kans{border:0;padding:0;background:none;box-shadow:none;max-width:none}:root .phero.kp>.wrap>.kfl8{margin:var(--k-3) 0 var(--k-2)}}
 :root .phero.kp .kans>.kans-u>span{display:inline-flex;align-items:center;min-height:44px}
+/* n40 d8: developer summary card (projects, register share, later handover dates, past due) and the handover years strip */
+.kdc{margin:22px 0 4px;padding:18px 20px 16px;border:1px solid var(--k-line,#DFE4EB);border-radius:var(--k-r-lg,12px);background:var(--k-surface,#fff);box-shadow:var(--k-sh-card,none);max-width:680px}
+.kdc-g{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin:0}
+.kdc-s{display:flex;flex-direction:column;margin:0;padding:0 14px;border-inline-start:1px solid var(--k-line,#DFE4EB)}
+.kdc-s:first-child{padding-inline-start:0;border:0}
+.kdc-s dt{flex:1 0 auto;margin:0 0 8px;font-weight:500;font-size:var(--k-fs-xs,.8125rem);line-height:1.35;color:var(--k-muted,#536073)}
+.kdc-s dd{margin:0;min-height:52px}
+.kdc-s b{display:block;font-family:var(--k-display,serif);font-size:clamp(1.5rem,1.2rem + 1vw,1.9rem);font-weight:600;line-height:1;color:var(--k-ink,#0E1A2B);font-variant-numeric:tabular-nums}
+.kdc-s dd span{display:block;margin-top:5px;font-size:var(--k-fs-xs,.8125rem);color:var(--k-muted,#536073)}
+.kdc-h{max-width:none;margin:16px 0 10px;padding-top:14px;border-top:1px solid var(--k-line,#DFE4EB);font-size:var(--k-fs-xs,.8125rem);color:var(--k-muted,#536073)}
+.kdc-h a{margin-inline-start:4px}
+.kdc-t{display:flex;align-items:flex-end;gap:6px;margin:0;padding:0;list-style:none;direction:ltr}
+.kdc-t li{flex:1 1 0;min-width:0;display:flex;flex-direction:column;align-items:center;margin:0}
+.kdc-t b{font-size:var(--k-fs-xs,.8125rem);font-weight:600;line-height:1.2;margin-bottom:3px;font-variant-numeric:tabular-nums;color:var(--k-ink,#0E1A2B)}
+.kdc-t i{display:block;width:100%;max-width:48px;height:calc(56px * var(--h) / 100);border-radius:3px 3px 0 0;background:var(--k-viz-reg,#2340B8)}
+.kdc-t .kdc-nd i{background:var(--k-viz-dev,#AFB8C4)}
+.kdc-t span{width:100%;padding-top:5px;border-top:1px solid var(--k-line-2,#C5CEDA);font-size:11px;line-height:1.2;text-align:center;color:var(--k-muted,#536073);font-variant-numeric:tabular-nums;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+@media (max-width:640px){.kdc{padding:14px 14px 12px}.kdc-g{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:14px}.kdc-s:nth-child(odd){padding-inline-start:0;border:0}.kdc-s:nth-child(n+3){padding-top:12px;border-top:1px solid var(--k-line,#DFE4EB)}.kdc-s:nth-child(4){border-inline-start:1px solid var(--k-line,#DFE4EB)}.kdc-t{gap:3px}.kdc-t span{font-size:10px}}
+/* n40 d8: search filters: a label that wraps to two lines no longer pushes its select out of line with the others */
+#n34-se .n34-fac label{display:flex;flex-direction:column;justify-content:flex-end;gap:6px;height:100%}

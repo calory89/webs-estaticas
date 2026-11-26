@@ -571,6 +571,16 @@ for (const r of rows) { const ev = tlEvents(r); if (ev) for (const x of ev) if (
 return out.sort((a, c) => (a.x.d < c.x.d ? 1 : a.x.d > c.x.d ? -1 : 0) || a.r[2].localeCompare(c.r[2]));
 }
 const byM = (l, dm) => dm == null ? t(l, 'tr_nm') : dm === 0 ? t(l, 'tr_m0') : tf(l, dm > 0 ? 'tr_ml' : 'tr_me', { n: nf(Math.abs(dm), l) });
+// n40 d8: developer summary card under the lead: projects, register-confirmed facts, later handover dates, past due, and the handover years as a strip
+function devCard(l, slug) {
+const rows = IX.byDev.get(slug) || []; if (rows.length < 2) return '';
+const g = regShare(rows), k = devTrack(slug), lp = k ? new Set(k.late.map(m => m.r[1])).size : 0, od = dlAll().od.filter(([x]) => x[5] === slug).length, Y = new Map();
+for (const r of rows) { const y = r[8][0] ? yOf(r[8][0][0]) : null; Y.set(y, (Y.get(y) || 0) + 1); }
+const ys = [...Y.keys()].filter(Boolean).sort(), mx = Math.max(...Y.values()), c = (n, a, b) => '<div class="kdc-s"><dt>' + esc(t(l, a)) + '</dt><dd><b>' + bdi(n) + '</b>' + (b ? ' <span>' + esc(b) + '</span>' : '') + '</dd></div>';
+const col = (y, n) => '<li' + (y ? '' : ' class="kdc-nd"') + ' style="--h:' + Math.max(6, Math.round(100 * n / mx)) + '"><b>' + nf(n, l) + '</b><i aria-hidden="true"></i><span>' + (y ? y : esc(t(l, 'n40d8_nd'))) + '</span></li>';
+return '<section class="kdc"' + dir(l) + ' aria-label="' + esc(t(l, 'n40d8_lbl')) + '"><dl class="kdc-g">' + c(nf(rows.length, l), 'n40d8_k') + c(nf(share(g.g, g.h), l) + '%', 'n40d8_reg', tf(l, 'n40d8_of', { a: nf(g.g, l), b: nf(g.h, l) })) +
+c(nf(lp, l), 'n40d8_late', k ? tf(l, 'n40d8_since', { d: fd(TL.days[0][0], l) }) : '') + c(nf(od, l), 'n40d8_od') + '</dl>' + (ys.length > 1 ? '<p class="kdc-h">' + esc(t(l, 'n40d8_tl')) + ' <a href="#by-year">' + esc(t(l, 'n40d8_tla')) + '</a></p><ol class="kdc-t">' + ys.map(y => col(y, Y.get(y))).join('') + (Y.get(null) ? col(null, Y.get(null)) : '') + '</ol>' : '') + '</section>';
+}
 function devTrack(slug) {
 const rows = IX.byDev.get(slug) || [], th = rows.filter(r => TL && TL.p && TL.p[r[1]] && TL.p[r[1]].ho);
 if (!th.length) return null;
@@ -1135,7 +1145,7 @@ return new HTMLRewriter().on('#n34-out', { element(e) { e.setAttribute('data-n37
 else if (p === '') { const h = await homeBits(l, env); if (h) { add.push(['p.hero-sub', 'after', h[0]]); add.push(['#hp-band > .wrap', 'prepend', h[1]]); } }
 else if (p === 'yc/try/') add.push(['section.k27 .k-prose > ol', 'before', await progBlock(l, env)]);
 else if ((mm = /^m\/([^/.]{2,60})\/$/.exec(p))) { const mk = mBySlug(mm[1]); const dh = mk ? mkDash(l, mk) : ''; if (dh) add.push(l === 'en' ? ['#in-short', 'after', dh] : ['.k29-kv', 'after', dh]); const h = mk ? mkSection(l, mk) + kpMarket(l, mk) + '<div class="n37">' + areaBlock(l, mk) + nextBlock(l, mk) + '</div>' : ''; if (!h) return r; add.push(['#slippage', 'before', h]); }
-else if ((mm = /^developers\/([a-z0-9-]{2,90})\/$/.exec(p))) { const h = devSection(l, mm[1]); if (!h) return r; add.push(['#projects', 'append', h + peers(l, mm[1]) + '<p class="n37-in"' + dir(l) + '><a href="' + pre(l) + '/developers/' + mm[1] + '/timeline/">' + esc(t(l, 'b_v_link')) + '</a></p>']); }
+else if ((mm = /^developers\/([a-z0-9-]{2,90})\/$/.exec(p))) { const h = devSection(l, mm[1]); if (!h) return r; const dc = devCard(l, mm[1]); if (dc) add.push(['.phero .lead', 'after', dc]); add.push(['#projects', 'append', h + peers(l, mm[1]) + '<p class="n37-in"' + dir(l) + '><a href="' + pre(l) + '/developers/' + mm[1] + '/timeline/">' + esc(t(l, 'b_v_link')) + '</a></p>']); }
 else if ((mm = /^projects\/([a-z0-9-]{1,90})\/$/.exec(p))) {
 const x = IX.bySlug.get(mm[1]); if (!x) return r;
 const k = cnt(x);

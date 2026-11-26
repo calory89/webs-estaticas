@@ -1,4 +1,4 @@
-/* GENERATED from /k/ds.css (v bfc1461c40) for pages that load site.css. The page test :has(link[href*=site.css]) is replaced by
+/* GENERATED from /k/ds.css (v 0c8d47b23a) for pages that load site.css. The page test :has(link[href*=site.css]) is replaced by
    :not(a[data-ks]), always true with the same weight: :has() on the root made the browser restyle the whole page after every
    DOM change. Do not edit. To rebuild after ds.css changes: replace that test in a copy of ds.css, keep this comment with the
    new version, and set KB_DSS_V to the new KB_DS_V in _worker.js/index.js (while they differ the worker serves plain ds.css).
@@ -784,6 +784,8 @@ a.k-src:hover{color:var(--k-sea);border-bottom-color:currentColor}
   :root:not(a[data-ks]) .nav .links>a:is([href$="#how"],[href$="/about/"],[href$="/about"],[href$="/cases/"],[href$="/cases"]):not(.btn),:root:not(a[data-ks]) .nav .links>.kmn,:root:not(a[data-ks]) .nav .nav-right>.kx-sb{display:none!important}
   :root:not(a[data-ks]) .nav .links>a:not(.btn){white-space:nowrap}
   :root:not(a[data-ks]) .nav .links .kx-th{margin-inline-start:6px}
+  :root:not(a[data-ks]) .nav .links>.kx-th{order:1}:root:not(a[data-ks]) .nav .links>.lsw{order:2}:root:not(a[data-ks]) .nav .links>.btn{order:3}
+  :root:not(a[data-ks]) .nav .links:not(:has(>.kx-th))::after{content:"";order:1;flex:none;width:46px;height:40px}   /* the theme button is added by site.js: its place is kept so the links do not move */
 }
 @media (min-width:901px) and (max-width:1080px){:root:not(a[data-ks]) .nav .nsr{flex-basis:240px}:root:not(a[data-ks]) .nav .links>a[href$="/pricing/"]:not(.btn){display:none}}
 @media (max-width:900px){

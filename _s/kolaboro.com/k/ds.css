@@ -806,6 +806,8 @@ a.k-src:hover{color:var(--k-sea);border-bottom-color:currentColor}
   :root:has(link[href*="/k/site.css"]) .nav .links>a:is([href$="#how"],[href$="/about/"],[href$="/about"],[href$="/cases/"],[href$="/cases"]):not(.btn),:root:has(link[href*="/k/site.css"]) .nav .links>.kmn,:root:has(link[href*="/k/site.css"]) .nav .nav-right>.kx-sb{display:none!important}
   :root:has(link[href*="/k/site.css"]) .nav .links>a:not(.btn){white-space:nowrap}
   :root:has(link[href*="/k/site.css"]) .nav .links .kx-th{margin-inline-start:6px}
+  :root:has(link[href*="/k/site.css"]) .nav .links>.kx-th{order:1}:root:has(link[href*="/k/site.css"]) .nav .links>.lsw{order:2}:root:has(link[href*="/k/site.css"]) .nav .links>.btn{order:3}
+  :root:has(link[href*="/k/site.css"]) .nav .links:not(:has(>.kx-th))::after{content:"";order:1;flex:none;width:46px;height:40px}   /* the theme button is added by site.js: its place is kept so the links do not move */
 }
 @media (min-width:901px) and (max-width:1080px){:root:has(link[href*="/k/site.css"]) .nav .nsr{flex-basis:240px}:root:has(link[href*="/k/site.css"]) .nav .links>a[href$="/pricing/"]:not(.btn){display:none}}
 @media (max-width:900px){
