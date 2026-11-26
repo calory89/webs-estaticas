@@ -3385,8 +3385,8 @@ var Y = {
 		all: "All",
 		embedTitle: "Add this Top 3 to your blog or website",
 		embedHow: "Copy this code. It shows the three picks with photos and links, and stays up to date.",
-		newsTitle: "3 cities, 9 hotels, every Friday",
-		newsLead: "One short email with three destinations and their Budget, Best Value and Luxury picks. No spam, unsubscribe in one click.",
+		newsTitle: "Join the Top3Hotels email list",
+		newsLead: "We have not started sending emails yet. Leave your address and we will write when the newsletter with new picks starts; every email will have a one-click unsubscribe.",
 		newsBtn: "Subscribe",
 		emailPh: "Your email",
 		nfTitle: "This page took a wrong turn",
@@ -3436,8 +3436,8 @@ var Y = {
 		all: "Todos",
 		embedTitle: "Añade este Top 3 a tu blog o web",
 		embedHow: "Copia este código. Muestra los tres hoteles con fotos y enlaces, y se actualiza solo.",
-		newsTitle: "3 ciudades, 9 hoteles, cada viernes",
-		newsLead: "Un email corto con tres destinos y sus hoteles Económico, Mejor calidad-precio y Lujo. Sin spam, te das de baja con un clic.",
+		newsTitle: "Apúntate a la lista de correo de Top3Hotels",
+		newsLead: "Todavía no enviamos correos. Deja tu email y te escribiremos cuando empiece el boletín con selecciones nuevas; cada correo tendrá baja con un clic.",
 		newsBtn: "Suscribirme",
 		emailPh: "Tu email",
 		nfTitle: "Esta página se ha perdido",
@@ -3487,8 +3487,8 @@ var Y = {
 		all: "Alle",
 		embedTitle: "Diese Top 3 in deinen Blog oder deine Website einbauen",
 		embedHow: "Code kopieren. Zeigt die drei Hotels mit Fotos und Links und bleibt aktuell.",
-		newsTitle: "3 Städte, 9 Hotels, jeden Freitag",
-		newsLead: "Eine kurze E-Mail mit drei Reisezielen und ihren Budget-, Preis-Leistungs- und Luxus-Tipps. Kein Spam, Abmeldung mit einem Klick.",
+		newsTitle: "Trag dich in die Top3Hotels-Liste ein",
+		newsLead: "Wir verschicken noch keine E-Mails. Hinterlass deine Adresse, und wir schreiben dir, sobald der Newsletter mit neuen Tipps startet; jede E-Mail hat eine Abmeldung mit einem Klick.",
 		newsBtn: "Abonnieren",
 		emailPh: "Deine E-Mail",
 		nfTitle: "Diese Seite hat sich verlaufen",
@@ -3538,8 +3538,8 @@ var Y = {
 		all: "Toutes",
 		embedTitle: "Ajoutez ce Top 3 à votre blog ou site",
 		embedHow: "Copiez ce code. Il affiche les trois hôtels avec photos et liens, et reste à jour.",
-		newsTitle: "3 villes, 9 hôtels, chaque vendredi",
-		newsLead: "Un e-mail court avec trois destinations et leurs choix Petit budget, Rapport qualité-prix et Luxe. Pas de spam, désinscription en un clic.",
+		newsTitle: "Inscrivez-vous à la liste Top3Hotels",
+		newsLead: "Nous n'envoyons pas encore d'e-mails. Laissez votre adresse et nous vous écrirons au lancement de la newsletter avec de nouveaux choix ; chaque e-mail aura un lien de désinscription en un clic.",
 		newsBtn: "S'abonner",
 		emailPh: "Votre e-mail",
 		nfTitle: "Cette page s'est égarée",
@@ -3589,8 +3589,8 @@ var Y = {
 		all: "Tutte",
 		embedTitle: "Aggiungi questa Top 3 al tuo blog o sito",
 		embedHow: "Copia questo codice. Mostra i tre hotel con foto e link, sempre aggiornati.",
-		newsTitle: "3 città, 9 hotel, ogni venerdì",
-		newsLead: "Una breve email con tre destinazioni e le loro scelte Economico, Qualità-prezzo e Lusso. Niente spam, disiscrizione con un clic.",
+		newsTitle: "Iscriviti alla lista di Top3Hotels",
+		newsLead: "Non inviamo ancora email. Lascia il tuo indirizzo e ti scriveremo quando partirà la newsletter con nuove scelte; ogni email avrà la disiscrizione con un clic.",
 		newsBtn: "Iscriviti",
 		emailPh: "La tua email",
 		nfTitle: "Questa pagina si è persa",
@@ -3640,8 +3640,8 @@ var Y = {
 		all: "Todas",
 		embedTitle: "Adicione este Top 3 ao seu blog ou site",
 		embedHow: "Copie este código. Mostra os três hotéis com fotos e links, sempre atualizados.",
-		newsTitle: "3 cidades, 9 hotéis, todas as sextas",
-		newsLead: "Um email curto com três destinos e as escolhas Económico, Custo-benefício e Luxo. Sem spam, cancele com um clique.",
+		newsTitle: "Junte-se à lista da Top3Hotels",
+		newsLead: "Ainda não enviamos emails. Deixe o seu endereço e escreveremos quando a newsletter com novas escolhas começar; cada email terá cancelamento com um clique.",
 		newsBtn: "Subscrever",
 		emailPh: "O seu email",
 		nfTitle: "Esta página perdeu-se",
@@ -3691,8 +3691,8 @@ var Y = {
 		all: "Alle",
 		embedTitle: "Tilføj denne Top 3 til din blog eller hjemmeside",
 		embedHow: "Kopiér koden. Den viser de tre hoteller med billeder og links og holder sig opdateret.",
-		newsTitle: "3 byer, 9 hoteller, hver fredag",
-		newsLead: "En kort e-mail med tre destinationer og deres Budget-, Værdi- og Luksusvalg. Ingen spam, afmeld med ét klik.",
+		newsTitle: "Skriv dig på Top3Hotels-listen",
+		newsLead: "Vi sender ikke e-mails endnu. Skriv din adresse, så skriver vi, når nyhedsbrevet med nye valg starter; hver e-mail får afmelding med ét klik.",
 		newsBtn: "Tilmeld",
 		emailPh: "Din e-mail",
 		nfTitle: "Denne side er faret vild",
@@ -4003,7 +4003,7 @@ document.addEventListener('click',function(e){var b=e.target.closest('[data-shar
 var me=document.querySelector('[data-track]');if(me){var r=ls('t3-recent')||[],d=JSON.parse(me.getAttribute('data-track'));r=r.filter(function(x){return x.s!==d.s});r.unshift(d);ls('t3-recent',r.slice(0,10))}
 document.querySelectorAll('[data-recent]').forEach(function(box){var r=(ls('t3-recent')||[]).filter(function(x){return !me||x.s!==JSON.parse(me.getAttribute('data-track')).s}).slice(0,8);if(!r.length)return;box.hidden=false;box.querySelector('.chipsrow').innerHTML=r.map(function(x){return '<a href="'+pre+'/'+x.s+'">'+esc(x.c)+'</a>'}).join('')});
 /* saved page */
-var sv=document.querySelector('[data-savedpage]');if(sv){var draw=function(){var f=favs();sv.innerHTML=f.length?f.map(function(x,i){return '<div class="it '+esc(x.cat)+'">'+(x.img?'<img src="'+esc(x.img)+'" alt="" loading="lazy" referrerpolicy="no-referrer">':'')+'<div><small>'+esc(x.lbl)+' · '+esc(x.c)+'</small><b>'+esc(x.n)+'</b><small>'+esc(x.p||'')+'</small></div><a class="btn ghost" href="'+pre+'/'+esc(x.s)+'#'+esc(x.cat)+'">'+esc(S.open)+'</a><button class="tbtn" data-rm="'+i+'" aria-label="'+esc(S.remove)+'">✕</button></div>'}).join(''):'<p class="lead">'+esc(S.empty)+'</p>'};draw();sv.addEventListener('click',function(e){var b=e.target.closest('[data-rm]');if(!b)return;var f=favs();f.splice(+b.getAttribute('data-rm'),1);ls('t3-fav',f);draw();savedCount()})}
+var sv=document.querySelector('[data-savedpage]');if(sv){var draw=function(){var f=favs();sv.innerHTML=f.length?f.map(function(x,i){return '<div class="it '+esc(x.cat)+'">'+(x.img?'<img src="'+esc(x.img)+'" alt="" loading="lazy" referrerpolicy="no-referrer">':'')+'<div><small>'+esc(x.lbl)+' · '+esc(x.c)+'</small><b>'+esc(x.n)+'</b><small>'+esc(x.p||'')+'</small></div>'+((x.u||'').indexOf('https://www.anrdoezrs.net/')===0||(x.u||'').indexOf('https://www.booking.com/')===0?'<a class="bkb" href="'+esc(x.u)+'" rel="sponsored nofollow noopener" target="_blank" data-t="check_availability" data-city="'+esc(x.s)+'" data-cat="'+esc(x.cat)+'" data-p="booking-saved">'+esc(sv.getAttribute('data-bk')||'Booking.com')+'<span aria-hidden="true"> ↗</span></a>':'')+'<a class="btn ghost" href="'+pre+'/'+esc(x.s)+'#'+esc(x.cat)+'">'+esc(S.open)+'</a><button class="tbtn" data-rm="'+i+'" aria-label="'+esc(S.remove)+'">✕</button></div>'}).join(''):'<p class="lead">'+esc(S.empty)+'</p>'};draw();sv.addEventListener('click',function(e){var b=e.target.closest('[data-rm]');if(!b)return;var f=favs();f.splice(+b.getAttribute('data-rm'),1);ls('t3-fav',f);draw();savedCount()})}
 /* currency */
 var CUR={EUR:1,GBP:.86,USD:1.08,DKK:7.46,SEK:11.4,NOK:11.6,CHF:.94};var cr=ls('t3-rates');if(cr&&Date.now()-cr.t<864e5)Object.assign(CUR,cr.r);else fetch('/api/rates').then(function(r){return r.json()}).then(function(j){if(j&&j.rates){Object.assign(CUR,j.rates);ls('t3-rates',{t:Date.now(),r:j.rates});paint()}}).catch(function(){});
 function guessCur(){var l=(navigator.language||'').toLowerCase();if(/-gb$/.test(l))return'GBP';if(/-us$/.test(l))return'USD';if(/^da/.test(l))return'DKK';if(/^sv/.test(l))return'SEK';if(/^(nb|nn|no)/.test(l))return'NOK';if(/-ch$/.test(l))return'CHF';return'EUR'}
@@ -21249,7 +21249,15 @@ var BKX = {
 		glance: "Open on Booking.com",
 		none: (c) => `None of the three fits? Other hotel lists for ${c}:`,
 		shortcut: "Shortcut: press B",
-		short: "Booking.com"
+		short: "Booking.com",
+		all: (c) => `All hotels in ${c} on Booking.com`,
+		datesOn: "Your dates and guests are applied to every Booking.com button below: Booking.com shows the price for your stay. The prices on the cards are reference prices.",
+		more: "Why pay more",
+		vs: "vs",
+		has: (x) => `Listed facilities the other two do not show: ${x}.`,
+		stars2: (a, b) => `${a} stars vs ${b} for the other two.`,
+		score2: (a, b) => `Guest score ${a} vs ${b}.`,
+		alsoTop: (c) => `Also in the top 3 for ${c}`
 	},
 	es: {
 		btn: "Ver precio en Booking.com",
@@ -21263,7 +21271,15 @@ var BKX = {
 		glance: "Abrir en Booking.com",
 		none: (c) => `¿Ninguna de las tres te encaja? Otras listas de hoteles en ${c}:`,
 		shortcut: "Atajo: pulsa B",
-		short: "Booking.com"
+		short: "Booking.com",
+		all: (c) => `Todos los hoteles de ${c} en Booking.com`,
+		datesOn: "Tus fechas y huéspedes se aplican a cada botón de Booking.com de abajo: Booking.com te muestra el precio de tu estancia. Los precios de las tarjetas son de referencia.",
+		more: "Por qué pagar más",
+		vs: "frente a",
+		has: (x) => `Servicios que las otras dos no indican: ${x}.`,
+		stars2: (a, b) => `${a} estrellas frente a ${b} de las otras dos.`,
+		score2: (a, b) => `Nota de los clientes ${a} frente a ${b}.`,
+		alsoTop: (c) => `También en el top 3 de ${c}`
 	},
 	de: {
 		btn: "Preis auf Booking.com ansehen",
@@ -21277,7 +21293,15 @@ var BKX = {
 		glance: "Auf Booking.com öffnen",
 		none: (c) => `Keines der drei passt? Weitere Hotellisten für ${c}:`,
 		shortcut: "Tastenkürzel: B",
-		short: "Booking.com"
+		short: "Booking.com",
+		all: (c) => `Alle Hotels in ${c} auf Booking.com`,
+		datesOn: "Deine Daten und Gäste gelten für jeden Booking.com-Button unten: Booking.com zeigt den Preis für deinen Aufenthalt. Die Preise auf den Karten sind Referenzpreise.",
+		more: "Warum mehr zahlen",
+		vs: "gegenüber",
+		has: (x) => `Angegebene Ausstattung, die die anderen beiden nicht nennen: ${x}.`,
+		stars2: (a, b) => `${a} Sterne gegenüber ${b} bei den anderen beiden.`,
+		score2: (a, b) => `Gästebewertung ${a} gegenüber ${b}.`,
+		alsoTop: (c) => `Auch in den Top 3 für ${c}`
 	},
 	fr: {
 		btn: "Voir le prix sur Booking.com",
@@ -21291,7 +21315,15 @@ var BKX = {
 		glance: "Ouvrir sur Booking.com",
 		none: (c) => `Aucun des trois ne vous convient ? Autres listes d'hôtels à ${c} :`,
 		shortcut: "Raccourci : touche B",
-		short: "Booking.com"
+		short: "Booking.com",
+		all: (c) => `Tous les hôtels de ${c} sur Booking.com`,
+		datesOn: "Vos dates et voyageurs sont appliqués à chaque bouton Booking.com ci-dessous : Booking.com affiche le prix de votre séjour. Les prix des cartes sont des prix de référence.",
+		more: "Pourquoi payer plus",
+		vs: "contre",
+		has: (x) => `Services que les deux autres n\'indiquent pas : ${x}.`,
+		stars2: (a, b) => `${a} étoiles contre ${b} pour les deux autres.`,
+		score2: (a, b) => `Note des clients ${a} contre ${b}.`,
+		alsoTop: (c) => `Aussi dans le top 3 de ${c}`
 	},
 	it: {
 		btn: "Vedi il prezzo su Booking.com",
@@ -21305,7 +21337,15 @@ var BKX = {
 		glance: "Apri su Booking.com",
 		none: (c) => `Nessuno dei tre fa per te? Altre liste di hotel a ${c}:`,
 		shortcut: "Scorciatoia: tasto B",
-		short: "Booking.com"
+		short: "Booking.com",
+		all: (c) => `Tutti gli hotel di ${c} su Booking.com`,
+		datesOn: "Le tue date e gli ospiti valgono per ogni pulsante Booking.com qui sotto: Booking.com mostra il prezzo del tuo soggiorno. I prezzi delle schede sono di riferimento.",
+		more: "Perché pagare di più",
+		vs: "contro",
+		has: (x) => `Servizi che gli altri due non indicano: ${x}.`,
+		stars2: (a, b) => `${a} stelle contro ${b} degli altri due.`,
+		score2: (a, b) => `Voto degli ospiti ${a} contro ${b}.`,
+		alsoTop: (c) => `Anche nella top 3 di ${c}`
 	},
 	pt: {
 		btn: "Ver preço no Booking.com",
@@ -21319,7 +21359,15 @@ var BKX = {
 		glance: "Abrir no Booking.com",
 		none: (c) => `Nenhum dos três serve? Outras listas de hotéis em ${c}:`,
 		shortcut: "Atalho: tecla B",
-		short: "Booking.com"
+		short: "Booking.com",
+		all: (c) => `Todos os hotéis de ${c} no Booking.com`,
+		datesOn: "As suas datas e hóspedes aplicam-se a cada botão Booking.com abaixo: o Booking.com mostra o preço da sua estadia. Os preços dos cartões são de referência.",
+		more: "Porquê pagar mais",
+		vs: "contra",
+		has: (x) => `Serviços que os outros dois não indicam: ${x}.`,
+		stars2: (a, b) => `${a} estrelas contra ${b} dos outros dois.`,
+		score2: (a, b) => `Nota dos hóspedes ${a} contra ${b}.`,
+		alsoTop: (c) => `Também no top 3 de ${c}`
 	},
 	da: {
 		btn: "Se pris på Booking.com",
@@ -21333,11 +21381,32 @@ var BKX = {
 		glance: "Åbn på Booking.com",
 		none: (c) => `Passer ingen af de tre? Flere hotellister for ${c}:`,
 		shortcut: "Genvej: tast B",
-		short: "Booking.com"
+		short: "Booking.com",
+		all: (c) => `Alle hoteller i ${c} på Booking.com`,
+		datesOn: "Dine datoer og gæster bruges på hver Booking.com-knap herunder: Booking.com viser prisen for dit ophold. Priserne på kortene er referencepriser.",
+		more: "Hvorfor betale mere",
+		vs: "mod",
+		has: (x) => `Faciliteter, som de to andre ikke nævner: ${x}.`,
+		stars2: (a, b) => `${a} stjerner mod ${b} for de to andre.`,
+		score2: (a, b) => `Gæstekarakter ${a} mod ${b}.`,
+		alsoTop: (c) => `Også i top 3 for ${c}`
 	}
 };
 var bkx = (L) => BKX[L] ?? BKX.en;
 var escA = (s) => s.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+/** T2.19: Booking.com search for the whole city (needs the city's Booking destination id). */
+function bkCityUrl(destId, L) {
+	if (!destId) return null;
+	const u = new URL("https://www.booking.com/searchresults.html");
+	u.searchParams.set("dest_id", String(destId));
+	u.searchParams.set("dest_type", "city");
+	u.searchParams.set("group_adults", "2");
+	u.searchParams.set("no_rooms", "1");
+	u.searchParams.set("group_children", "0");
+	u.searchParams.set("order", "bayesian_review_score");
+	u.searchParams.set("lang", BK_LANG[L] ?? "en-gb");
+	return u.toString();
+}
 /** Small Booking.com button for tables and lists (T2.10, T2.12, T2.27). */
 function bkBtn(u, sid, L, name, extra = "", text) {
 	const b = bkUrl(u, L);
@@ -21356,6 +21425,13 @@ var BK_CSS = `.sr{position:absolute!important;width:1px;height:1px;padding:0;mar
 .qbk{margin:28px 0}.qbk ul{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:10px}.qbk li{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:12px 14px;border:1px solid var(--line);border-radius:14px;background:var(--card)}.qbk li div{min-width:0;flex:1 1 200px}.qbk small{display:block;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--muted);font-weight:700}.qbk strong{font:600 16px/1.3 var(--serif,serif)}.qbk span.m{display:block;font-size:13px;color:var(--muted)}
 .notfit{margin:18px 0}.notfit p{margin:0 0 8px}
 .tilew{display:flex;flex-direction:column;gap:8px;min-width:0}.tilew .tile{flex:1}.tilew .bkb{align-self:stretch}
+.allbk{margin:10px 0 0;font-size:14px}.allbk a{color:inherit;text-decoration:underline;text-underline-offset:3px;display:inline-block;padding:10px 0}
+.t3dn{margin:12px 0;padding:10px 14px;border-radius:12px;background:var(--soft);font-size:14px;color:var(--ink)}
+.paymore{margin:12px 0 0;padding:10px 12px;border-radius:12px;border:1px solid var(--line);font-size:14px}.paymore b{display:block;font-size:12px;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px;color:var(--muted)}.paymore p{margin:2px 0}
+.cprev{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:18px 0;font-size:15px}.cprev a{display:inline-block;padding:10px 0}
+.saved .it{flex-wrap:wrap}.saved .it>div{min-width:160px}
+.bkb.budget{background:var(--budget,#1f7a5a)}.bkb.value{background:var(--value,#d83b51)}.bkb.lux{background:var(--lux,#9a6f0a)}
+@media (prefers-color-scheme:dark){.bkb.budget,.bkb.value,.bkb.lux{color:#fff!important}}
 .mapgo{background:none;border:0;padding:0;font:inherit;color:inherit;text-decoration:underline;text-underline-offset:3px;cursor:pointer}`;
 var PICKS;
 function allPicks() {
@@ -22373,7 +22449,11 @@ function ls(k,v){try{if(v===undefined)return JSON.parse(localStorage.getItem(k)|
 var f=document.querySelector('form.plan'),ci=f&&f.querySelector('[name=checkin]');
 if(ci){var co=f.querySelector('[name=checkout]'),ad=f.querySelector('[name=adults]'),ro=f.querySelector('[name=rooms]'),sv=ls('t3-plan'),today=new Date().toISOString().slice(0,10);
 if(sv&&sv.ci>=today&&sv.co>sv.ci&&!ci.value){ci.value=sv.ci;co.value=sv.co;if(ad&&sv.ad)ad.value=sv.ad;if(ro&&sv.ro)ro.value=sv.ro;ci.dispatchEvent(new Event('change',{bubbles:true}))}
-f.addEventListener('change',function(){ls('t3-plan',{ci:ci.value,co:co.value,ad:ad?ad.value:'2',ro:ro?ro.value:'1'})})}
+f.addEventListener('change',function(){ls('t3-plan',{ci:ci.value,co:co.value,ad:ad?ad.value:'2',ro:ro?ro.value:'1'})});
+/* T2.13: quiet note above the cards once dates are chosen (the cards themselves never show dates) */
+var dn=document.querySelector('[data-datesnote]');function dnu(){if(dn)dn.hidden=!(ci.value&&co.value&&co.value>ci.value)}dnu();f.addEventListener('change',dnu);f.addEventListener('input',dnu);document.addEventListener('click',function(e){if(e.target.closest&&e.target.closest('[data-quick]'))setTimeout(dnu,0)})}
+/* T2.14: pages without the date form still pass the saved guests, rooms and dates to Booking.com */
+else{var sp=ls('t3-plan'),td=new Date().toISOString().slice(0,10);if(sp&&(sp.ad||sp.ro)){var okd=sp.ci>=td&&sp.co>sp.ci;document.querySelectorAll('a[href*="booking.com"],a[href*="anrdoezrs.net"]').forEach(function(a){try{var u=new URL(a.href),cj=null;if(/anrdoezrs/.test(u.hostname)){cj=u;u=new URL(cj.searchParams.get('url'))}if(!/booking\.com$/.test(u.hostname))return;if(sp.ad)u.searchParams.set('group_adults',sp.ad);if(sp.ro)u.searchParams.set('no_rooms',sp.ro);if(okd){u.searchParams.set('checkin',sp.ci);u.searchParams.set('checkout',sp.co)}if(cj){cj.searchParams.set('url',u.toString());a.href=cj.toString()}else a.href=u.toString()}catch(_){}})}}
 /* 2. voice search inside the search palette */
 var SR=window.SpeechRecognition||window.webkitSpeechRecognition;
 if(SR&&'MutationObserver' in window){new MutationObserver(function(){var p=document.querySelector('.pal');if(!p||p.querySelector('.mic'))return;var inp=p.querySelector('input');if(!inp)return;var b=document.createElement('button');b.type='button';b.className='mic';b.textContent='🎤';b.setAttribute('aria-label',window.T3V||'Voice');inp.parentNode.appendChild(b);
@@ -22508,8 +22588,8 @@ var TX$1 = {
 			budget: "3 stars or less"
 		},
 		h1: (c) => `The best hotel gyms in ${c}`,
-		title: (c) => `Best hotel gyms in ${c}: luxury, mid-range and budget | Top3Hotels`,
-		desc: (c, n) => `The hotel with the best gym in ${c} at every budget: ${n.join(", ")}. Judged on the gym only: size, equipment, hours and extras.`,
+		title: (c) => `Best hotel gyms in ${c} (2026): luxury, mid-range and budget | Top3Hotels`,
+		desc: (c, n) => `Best hotel gym in ${c} at every budget, judged on the gym only (size, equipment, hours): ${n.join(", ")}.`,
 		lead: "One hotel per budget, picked for its gym, not its lobby. Size, equipment, opening hours and extras, with sources.",
 		best: "Best gym in the city",
 		size: "Size",
@@ -22549,8 +22629,8 @@ var TX$1 = {
 			budget: "3 estrellas o menos"
 		},
 		h1: (c) => `Los mejores gimnasios de hotel en ${c}`,
-		title: (c) => `Mejores gimnasios de hotel en ${c}: lujo, estándar y económico | Top3Hotels`,
-		desc: (c, n) => `El hotel con el mejor gimnasio de ${c} en cada presupuesto: ${n.join(", ")}. Valoramos solo el gimnasio: tamaño, equipamiento, horario y extras.`,
+		title: (c) => `Mejores gimnasios de hotel en ${c} (2026): lujo, estándar y económico | Top3Hotels`,
+		desc: (c, n) => `El mejor gimnasio de hotel en ${c} en cada presupuesto, valorando solo el gimnasio (tamaño, equipamiento, horario): ${n.join(", ")}.`,
 		lead: "Un hotel por presupuesto, elegido por su gimnasio, no por su recepción. Tamaño, equipamiento, horario y extras, con fuentes.",
 		best: "El mejor gimnasio de la ciudad",
 		size: "Tamaño",
@@ -22655,7 +22735,8 @@ var srcLink$1 = (s) => {
 };
 function card$2(t, p, city, L, cityImg, slug, price) {
 	const x = TX$1[L];
-	const chips = `<div class="gchips"><span>${esc(x.tier[t])}</span>${city.best === t ? `<span class="top">${esc(x.best)}</span>` : ""}</div>`;
+	const top3 = p?._top;
+	const chips = `<div class="gchips"><span>${esc(x.tier[t])}</span>${city.best === t ? `<span class="top">${esc(x.best)}</span>` : ""}${top3 ? `<span class="top3b">${esc(bkx(L).alsoTop(top3))}</span>` : ""}</div>`;
 	if (!p) return `<article class="gcard ${t} empty"><div class="bd">${chips.replace("class=\"gchips\"", "class=\"gchips\" style=\"position:static\"")}<p>${esc(x.none)}</p><small>${esc(x.tierNote[t])}</small></div></article>`;
 	const g = p.gym ?? {};
 	const px = p;
@@ -22701,7 +22782,8 @@ async function gymCityPage(urlSlug, Lx) {
 		const gal = new Map((cd?.hotels ?? []).map((h) => [bkPath(h.booking?.url), (h.gallery ?? []).map((g) => g.src).filter(Boolean)]));
 		for (const [t, pk] of picks) if (pk) Object.assign(pk, {
 			_gk: `${id}:${t}`,
-			_cat: gal.get(bkPath(pk.bookingUrl)) ?? []
+			_cat: gal.get(bkPath(pk.bookingUrl)) ?? [],
+			_top: bkPath(pk.bookingUrl) && gal.has(bkPath(pk.bookingUrl)) ? cn : void 0
 		});
 	}
 	const names = picks.filter(([, p]) => p).map(([t, p]) => `${p.hotel} (${x.tier[t].toLowerCase()})`);
@@ -22877,8 +22959,8 @@ var TX = {
 			budget: "3 stars or less"
 		},
 		h1: (c) => `The best hotel pools in ${c}`,
-		title: (c) => `Best hotel pools in ${c}: luxury, mid-range and budget | Top3Hotels`,
-		desc: (c, n) => `The hotel with the best pool in ${c} at every budget: ${n.join(", ")}. Judged on the pool only: type, size, heating, views and hours.`,
+		title: (c) => `Best hotel pools in ${c} (2026): luxury, mid-range and budget | Top3Hotels`,
+		desc: (c, n) => `Best hotel pool in ${c} at every budget, judged on the pool only (type, size, heating, views): ${n.join(", ")}.`,
 		lead: "One hotel per budget, picked for its pool. Rooftop, indoor or lap pool, heating, season and extras, with sources.",
 		best: "Best pool in the city",
 		type: "Pool",
@@ -22930,8 +23012,8 @@ var TX = {
 			budget: "3 estrellas o menos"
 		},
 		h1: (c) => `Las mejores piscinas de hotel en ${c}`,
-		title: (c) => `Mejores piscinas de hotel en ${c}: lujo, estándar y económico | Top3Hotels`,
-		desc: (c, n) => `El hotel con la mejor piscina de ${c} en cada presupuesto: ${n.join(", ")}. Valoramos solo la piscina: tipo, tamaño, climatización, vistas y horario.`,
+		title: (c) => `Mejores piscinas de hotel en ${c} (2026): lujo, estándar y económico | Top3Hotels`,
+		desc: (c, n) => `La mejor piscina de hotel en ${c} en cada presupuesto, valorando solo la piscina (tipo, tamaño, climatización, vistas): ${n.join(", ")}.`,
 		lead: "Un hotel por presupuesto, elegido por su piscina. En azotea, cubierta o de nado, climatización, temporada y extras, con fuentes.",
 		best: "La mejor piscina de la ciudad",
 		type: "Piscina",
@@ -23048,7 +23130,8 @@ var srcLink = (s) => {
 };
 function card$1(t, p, city, L, cityImg, slug, price) {
 	const x = TX[L];
-	const chips = `<div class="gchips"><span>${esc(x.tier[t])}</span>${city.best === t ? `<span class="top">${esc(x.best)}</span>` : ""}</div>`;
+	const top3 = p?._top;
+	const chips = `<div class="gchips"><span>${esc(x.tier[t])}</span>${city.best === t ? `<span class="top">${esc(x.best)}</span>` : ""}${top3 ? `<span class="top3b">${esc(bkx(L).alsoTop(top3))}</span>` : ""}</div>`;
 	if (!p) return `<article class="gcard ${t} empty"><div class="bd">${chips.replace("class=\"gchips\"", "class=\"gchips\" style=\"position:static\"")}<p>${esc(x.none)}</p><small>${esc(x.tierNote[t])}</small></div></article>`;
 	const g = p.pool ?? {};
 	const px = p;
@@ -23095,7 +23178,8 @@ async function poolCityPage(urlSlug, Lx) {
 		const gal = new Map((cd?.hotels ?? []).map((h) => [bkPath(h.booking?.url), (h.gallery ?? []).map((g) => g.src).filter(Boolean)]));
 		for (const [t, pk] of picks) if (pk) Object.assign(pk, {
 			_gk: `${id}:${t}`,
-			_cat: gal.get(bkPath(pk.bookingUrl)) ?? []
+			_cat: gal.get(bkPath(pk.bookingUrl)) ?? [],
+			_top: bkPath(pk.bookingUrl) && gal.has(bkPath(pk.bookingUrl)) ? cn : void 0
 		});
 	}
 	const names = picks.filter(([, p]) => p).map(([t, p]) => `${p.hotel} (${x.tier[t].toLowerCase()})`);
@@ -24006,6 +24090,22 @@ var q=ev.target.closest&&ev.target.closest('[data-quick]');if(q){ev.preventDefau
 function seoNorm(o) {
 	let title = o.title;
 	if (title.length > 60 && title.endsWith(" | Top3Hotels")) title = title.slice(0, -13);
+	if (/^\/hotel\//.test(o.path) && title.length > 65) {
+		const k = title.indexOf(": ");
+		const nm = k > 0 ? title.slice(0, k) : title;
+		let rest = k > 0 ? title.slice(k) : "";
+		while ((nm + rest).length > 65 && /,\s|\sy\s|\sand\s|\sog\s|\set\s|\se\s|\sund\s/.test(rest)) rest = rest.slice(0, Math.max(rest.lastIndexOf(", "), rest.search(/\s(?:y|and|og|et|e|und)\s(?!.*\s(?:y|and|og|et|e|und)\s)/))).replace(/[\s,]+$/, "");
+		title = (nm + rest).length <= 65 ? nm + rest : nm.length <= 65 ? nm : nm.slice(0, 64).replace(/\s+\S*$/, "");
+	}
+	if (o.description.length > 160 && o.description.includes(" (")) {
+		if (o.description.slice(0, 159).lastIndexOf(". ") < 109) {
+			const np = o.description.replace(/\s\([^()]{1,60}\)/g, "");
+			if (np.length <= 160 || np.slice(0, 159).lastIndexOf(". ") >= 109) o = {
+				...o,
+				description: np
+			};
+		}
+	}
 	let description = o.description;
 	if (description.length > 160) {
 		const cut = description.slice(0, 159);
@@ -24261,7 +24361,7 @@ var NO5 = {
 	pt: "Não há um 5 estrelas elegível na nossa amostra para esta cidade, por isso a opção de luxo é um 4 estrelas.",
 	da: "Der er intet egnet 5-stjernet hotel i vores udvalg for denne by, så luksusvalget er et 4-stjernet hotel."
 };
-function card(h, city, i, L, sights, cityImg, review) {
+function card(h, city, i, L, sights, cityImg, review, extra = "") {
 	const t = T[L];
 	const b = h.booking ?? {}, o = h.offer ?? {}, ex = h.extras ?? {};
 	const img = h.gallery?.find((g) => g.src && !BROKEN_PH.has(g.src))?.src;
@@ -24281,7 +24381,8 @@ function card(h, city, i, L, sights, cityImg, review) {
 		n: h.name,
 		lbl: label(h, L),
 		img: img ?? "",
-		p: `${b.score ? scoreL(b.score, L) + "/10 · " : ""}${moneyL(o.nightly, L)} ${t.perNight}`
+		p: `${b.score ? scoreL(b.score, L) + "/10 · " : ""}${moneyL(o.nightly, L)} ${t.perNight}`,
+		...link ? { u: bookingLink(h, void 0, void 0, "t3saved", L) ?? "" } : {}
 	};
 	const y = Y[L];
 	const why = [
@@ -24296,7 +24397,7 @@ function card(h, city, i, L, sights, cityImg, review) {
 <div class="body"><h2 class="hname">${link ? `<a href="${esc(link)}" tabindex="-1" rel="sponsored nofollow noopener" target="_blank" data-t="check_availability" data-city="${esc(city.slug)}" data-cat="${k}" data-p="booking-name">${esc(h.name)}</a>` : esc(h.name)}</h2>
 <div class="meta">${b.stars ? `<span class="stars" aria-label="${b.stars} stars">${"★".repeat(b.stars)}</span>` : ""}<span>${esc(h.area ?? city.city)}</span></div>
 <p class="bestfor"><b>${esc(X[L].bestFor)}</b>${esc(bestFor(h, i, L, sights).join(" · "))}</p>
-${why.length ? `<ul class="why">${why.map((w) => `<li>${esc(w)}</li>`).join("")}</ul>` : ""}
+${why.length ? `<ul class="why">${why.map((w) => `<li>${esc(w)}</li>`).join("")}</ul>` : ""}${extra}
 <div class="trust"><span><b>${intL(b.count, L)}</b> Booking.com ${esc(t.reviews)}</span>${ex.loc ? `<span>${esc(t.location)} <b>${ex.loc}</b></span>` : ""}<span class="live">${esc(M[L].live(fmtLiveL(isoDay(b.checked), L)))}</span></div>
 ${ex.pros?.length ? `<ul class="pc"><li class="pro"><small>${esc(t.guestsSay)}</small><span${L === "en" ? "" : " lang=\"en\""}>${esc(ex.pros[0])}</span></li>${ex.cons?.[0] ? `<li class="con"${L === "en" ? "" : " lang=\"en\""}>${esc(ex.cons[0])}</li>` : ""}</ul>` : `<p style="margin:0;font-size:14px">${esc(h.evidence?.shortReason ?? h.reason ?? "")}</p>`}
 ${tags.length ? `<ul class="chips">${tags.map((x) => `<li>${esc(t.tags[x] ?? x)}</li>`).join("")}</ul>` : ""}
@@ -24361,7 +24462,23 @@ async function cityPage(city0, L) {
 	const homonym = (await data()).index.some((x) => x.id !== city.id && (x.city === city0.city || cityName(x, L) === city.city));
 	const title = t.title(homonym ? `${city.city}, ${cname}` : city.city);
 	const minPrice = Math.min(...hs.map((h) => h.offer?.nightly ?? Infinity));
-	const description = Number.isFinite(minPrice) && minPrice <= 150 ? cityDescPrice(L, city.city, budget.name, value.name, lux.name, moneyL(minPrice, L), value.booking?.score) : t.desc(city.city, cname, budget.name, value.name, lux.name);
+	const desc0 = Number.isFinite(minPrice) && minPrice <= 150 ? cityDescPrice(L, city.city, budget.name, value.name, lux.name, moneyL(minPrice, L), value.booking?.score) : t.desc(city.city, cname, budget.name, value.name, lux.name);
+	const from = Number.isFinite(minPrice) && minPrice <= 150 ? moneyL(minPrice, L) : "";
+	const SHORT = {
+		en: `${from ? `From ${from} a night: t` : "T"}he 3 best hotels in ${city.city}, ${cname}: one Budget, one Best Value and one Luxury pick, with Booking.com guest scores and a map.`,
+		es: `${from ? `Desde ${from} la noche: l` : "L"}os 3 mejores hoteles de ${city.city}, ${cname}: uno económico, uno calidad-precio y uno de lujo, con notas de Booking.com y mapa.`,
+		de: `${from ? `Ab ${from} pro Nacht: d` : "D"}ie 3 besten Hotels in ${city.city}, ${cname}: günstig, Preis-Leistung und Luxus, mit Booking.com-Bewertungen und Karte.`,
+		fr: `${from ? `Dès ${from} la nuit : l` : "L"}es 3 meilleurs hôtels de ${city.city}, ${cname} : petit budget, rapport qualité-prix et luxe, avec notes Booking.com et carte.`,
+		it: `${from ? `Da ${from} a notte: i` : "I"} 3 migliori hotel di ${city.city}, ${cname}: economico, qualità-prezzo e lusso, con voti di Booking.com e mappa.`,
+		pt: `${from ? `Desde ${from} por noite: o` : "O"}s 3 melhores hotéis de ${city.city}, ${cname}: económico, qualidade-preço e luxo, com notas do Booking.com e mapa.`,
+		da: `${from ? `Fra ${from} pr. nat: d` : "D"}e 3 bedste hoteller i ${city.city}, ${cname}: billigt, mest for pengene og luksus, med Booking.com-karakterer og kort.`
+	};
+	const description = desc0.length > 160 && seoNorm({
+		L,
+		title: "",
+		description: desc0,
+		path: "/x"
+	}).description.length < 110 ? SHORT[L] : desc0;
 	const areas = [...new Set(hs.map((h) => h.area).filter(Boolean))].join(", ");
 	const dates = range(o0.checkin, o0.checkout, L);
 	const pageDate = cityChecked(hs);
@@ -24372,6 +24489,33 @@ async function cityPage(city0, L) {
 	const ariaH = (h) => bx.aria(h.name, [h.booking?.stars ? bx.stars(h.booking.stars) : "", label(h, L)].filter(Boolean).join(", "));
 	const in1b = `<p class="in1b">${hs.map((h) => bks(h, "t3city-g") ? `<a class="bkb ${catKey(h)}" href="${esc(bks(h, "t3city-g"))}" rel="sponsored nofollow noopener" target="_blank" data-t="check_availability" data-city="${esc(city.slug)}" data-cat="${catKey(h)}" data-p="booking-glance" aria-label="${esc(ariaH(h))}">${esc(label(h, L))}<span aria-hidden="true"> ↗</span></a>` : "").join("")}</p>`;
 	const quickBk = `<section class="qbk" aria-labelledby="qbk"><h2 id="qbk">${esc(bx.quick)}</h2><p class="note">${esc(bx.quickLead)}</p><ul>${hs.map((h) => `<li><div><small>${esc(label(h, L))}</small><strong>${esc(h.name)}</strong><span class="m">${h.booking?.score ? `${scoreL(h.booking.score, L)}/10 · ` : ""}${h.offer?.nightly ? `<span data-eur="${h.offer.nightly}"><span class="v">${moneyL(h.offer.nightly, L)}</span></span> ${esc(t.perNight)}` : ""}</span></div>${bks(h, "t3city-q") ? `<a class="bkb" href="${esc(bks(h, "t3city-q"))}" rel="sponsored nofollow noopener" target="_blank" data-t="check_availability" data-city="${esc(city.slug)}" data-cat="${catKey(h)}" data-p="booking-quick" aria-label="${esc(ariaH(h))}">${esc(h.offer?.nightly ? t.checkPrice : bx.avail)}<span aria-hidden="true"> ↗</span></a>` : ""}</li>`).join("")}</ul></section>`;
+	const allU = bkCityUrl(BK_DEST[city.id] ?? BK_DEST[city.slug], L);
+	const allBk = allU ? `<p class="allbk"><a href="${esc(CJ_BOOKING(allU, "t3city-all"))}" rel="sponsored nofollow noopener" target="_blank" data-t="check_availability" data-city="${esc(city.slug)}" data-cat="all" data-p="booking-all">${esc(bx.all(city.city))}<span class="sr"> ${esc(bx.newTab)}</span><span aria-hidden="true"> ↗</span></a></p>` : "";
+	const payMore = (() => {
+		const others = [budget, value];
+		const lines = [];
+		const ls = lux.booking?.stars, os = others.map((h) => h.booking?.stars);
+		if (ls && os.every((x) => x && x < ls)) lines.push(bx.stars2(ls, [...new Set(os)].join(` ${{
+			en: "and",
+			es: "y",
+			de: "und",
+			fr: "et",
+			it: "e",
+			pt: "e",
+			da: "og"
+		}[L]} `)));
+		const lsc = lux.booking?.score, osc = others.map((h) => h.booking?.score);
+		if (lsc && osc.every((x) => x && x < lsc)) lines.push(bx.score2(scoreL(lsc, L), osc.map((x) => scoreL(x, L)).join(" / ")));
+		const ot = new Set(others.flatMap((h) => h.extras?.tags ?? []));
+		const only = (lux.extras?.tags ?? []).filter((x) => x !== "ac" && !ot.has(x) && t.tags[x]).map((x) => t.tags[x].toLowerCase());
+		if (only.length) lines.push(bx.has(only.slice(0, 3).join(", ")));
+		return lines.length ? `<div class="paymore"><b>${esc(bx.more)}</b>${lines.map((x) => `<p>${esc(x)}</p>`).join("")}</div>` : "";
+	})();
+	const sib = [...byCountry.get(city.cslug) ?? []].sort((a, b) => cityName(a, L).localeCompare(cityName(b, L), L));
+	const si = sib.findIndex((c) => c.slug === city.slug);
+	const prevC = sib.length > 1 && si >= 0 ? sib[(si - 1 + sib.length) % sib.length] : void 0;
+	const nextC = sib.length > 2 && si >= 0 ? sib[(si + 1) % sib.length] : void 0;
+	const cprev = prevC ? `<nav class="cprev" aria-label="${esc(cname)}"><a href="${P(L, "/" + prevC.slug)}" rel="prev">← ${esc(cityName(prevC, L))}</a>${nextC && nextC.slug !== prevC.slug ? `<a href="${P(L, "/" + nextC.slug)}" rel="next">${esc(cityName(nextC, L))} →</a>` : ""}</nav>` : "";
 	const ans = (h) => `${h.name}${h.area ? ` (${h.area})` : ""}: ${scoreL(h.booking?.score, L)}/10 · ${intL(h.booking?.count, L)} ${t.reviews} · ${moneyL(h.offer?.nightly, L)} ${t.perNight}${L === "en" && h.extras?.pros?.[0] ? ` · ${t.guestsSay}: “${h.extras.pros[0]}”` : ""}`;
 	const faq = [
 		[t.faq.budget(city.city), ans(budget)],
@@ -24511,12 +24655,13 @@ async function cityPage(city0, L) {
 		body: `<p class="crumbs"><a href="${P(L, "/")}">${esc(t.home)}</a> › <a href="${P(L, `/country/${city.cslug}`)}">${esc(cname)}</a> › ${esc(city.city)}</p>
 <div class="hero${hero?.img ? "" : " noimg"}">${hero?.img ? `<img src="/api/img/${esc(city.id)}/big" srcset="/api/img/${esc(city.id)}/small 500w, /api/img/${esc(city.id)}/mid 960w, /api/img/${esc(city.id)}/big 1280w" sizes="(max-width: 960px) 100vw, 1180px" alt="${esc(city.city)}" fetchpriority="high" onerror="this.onerror=null;this.src='/api/img/${esc(city.id)}/orig'">` : ""}
 <div class="in"><p class="eyebrow">${esc(cname)} · Top 3</p><h1>${esc(t.h1(city.city))}<em>.</em></h1><p class="lead">${esc(t.lead(sample))}</p><p class="lead answer">${esc(description)}</p></div>${hero?.page ? `<small>${esc(t.photo)}: <a href="${esc(hero.page)}" rel="nofollow noopener" target="_blank">Wikimedia Commons</a></small>` : ""}</div>
-<p class="byline"><span class="ok">${esc(xt.reviewed(updated))}</span><span class="ok">${esc(xt.independent)}</span><span class="ok">${esc(xt.noPaid)}</span></p>${flights}${in1}${in1b}${jump}<span hidden data-track="${esc(JSON.stringify({
+<p class="byline"><span class="ok">${esc(xt.reviewed(updated))}</span><span class="ok">${esc(xt.independent)}</span><span class="ok">${esc(xt.noPaid)}</span></p>${flights}${in1}${in1b}${allBk}${jump}<span hidden data-track="${esc(JSON.stringify({
 			s: city.slug,
 			c: city.city
 		}))}"></span>
 <form class="plan" action="/" method="get"><input type="hidden" name="city" value="${esc(city.slug)}"><label>${esc(t.checkIn)}<input type="date" name="checkin"></label><label>${esc(t.checkOut)}<input type="date" name="checkout"></label>${guestSel}${curSel}<button class="btn" type="submit" data-t="dates_submit" data-city="${esc(city.slug)}">${esc(t.seeDates)}</button><div class="quick"><span>${esc(xt.quick)}:</span><button type="button" data-quick="-1">${esc(xt.thisWeekend)}</button><button type="button" data-quick="-2">${esc(xt.nextWeekend)}</button><button type="button" data-quick="30">${esc(xt.inAMonth)}</button></div></form>
-<div class="cards" id="hotels">${hs.map((h, i) => card(h, city, i, L, sights, hero?.img ? `/api/img/${city.id}/big` : void 0, hpLive.has(hotelSlug(h.name, city.slug)) ? P(hpL.get(hotelSlug(h.name, city.slug))?.includes(L) ? L : "en", `/hotel/${hotelSlug(h.name, city.slug)}`) : void 0)).join("")}</div>
+<p class="t3dn" hidden data-datesnote role="status">${esc(bx.datesOn)}</p>
+<div class="cards" id="hotels">${hs.map((h, i) => card(h, city, i, L, sights, hero?.img ? `/api/img/${city.id}/big` : void 0, hpLive.has(hotelSlug(h.name, city.slug)) ? P(hpL.get(hotelSlug(h.name, city.slug))?.includes(L) ? L : "en", `/hotel/${hotelSlug(h.name, city.slug)}`) : void 0, h === lux ? payMore : "")).join("")}</div>
 <p class="more-links" style="margin:14px 0 4px;font-size:15px"><a href="${P(GROWTH_LANGS.includes(L) ? L : "en", `/compare-picks/${city.slug}`)}">${L === "es" ? "Comparar los tres hoteles" : "Compare the three hotels side by side"}</a>${(sights ?? []).length ? ` · ${L === "es" ? "Hoteles cerca de" : "Hotels near"}: ${(sights ?? []).slice(0, 6).map((x) => `<a href="${P(GROWTH_LANGS.includes(L) ? L : "en", `/near/${city.slug}/${x.name.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/&/g, " and ").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}`)}">${esc(x.name)}</a>`).join(", ")}` : ""}</p>${GROWTH_LANGS.includes(L) ? voteWidget(L, city.slug) : ""}
 ${gymLink(city.id, city.slug, L, city.city)}${poolLink(city.id, city.slug, L, city.city)}<aside class="curator"><span class="av" aria-hidden="true">CO</span><div><h3>${esc(M[L].curatorT)}</h3><p>${esc(M[L].curatorB)}</p><p style="margin-top:6px"><a href="/how-we-choose">${esc(M[L].how)} →</a><a href="/affiliate-disclosure">${esc(M[L].money)} →</a></p></div></aside>${guideFor(city.slug) ? `<p class="note" style="margin:14px 0"><a href="/guides/${guideFor(city.slug).slug}">📖 ${esc(guideFor(city.slug).h1)}: areas, tips and our three picks →</a></p>` : ""}
 <p class="note">${esc(t.refRate)}: ${esc(dates)}, ${esc({
@@ -24555,7 +24700,7 @@ ${hotelsBlock(city, L)}
 <section hidden data-recent><h2>${esc(y.js["recent"])}</h2><div class="chipsrow"></div></section>
 ${newsBlock(L)}
 ${same.length ? `<section aria-labelledby="more"><h2 id="more">${esc(t.moreIn(cname))}</h2><ul class="grid">${same.map((c) => `<li><a href="${P(L, "/" + c.slug)}">${esc(c.city)}</a></li>`).join("")}</ul><p class="note"><a href="${P(L, `/country/${city.cslug}`)}">${esc(t.allIn(cname))}</a></p></section>` : ""}
-${quickBk}${((g, pl) => g || pl ? `<div class="notfit"><p>${esc(bx.none(city.city))}</p>${g}${pl}</div>` : "")(gymLink(city.id, city.slug, L, city.city), poolLink(city.id, city.slug, L, city.city))}
+${cprev}${quickBk}${((g, pl) => g || pl ? `<div class="notfit"><p>${esc(bx.none(city.city))}</p>${g}${pl}</div>` : "")(gymLink(city.id, city.slug, L, city.city), poolLink(city.id, city.slug, L, city.city))}
 <div class="sticky">${bks(value, "t3city-s") ? `<a class="btn coral" href="${esc(bks(value, "t3city-s"))}" rel="sponsored nofollow noopener" target="_blank" data-t="check_availability" data-city="${esc(city.slug)}" data-cat="value" data-p="booking-sticky">★ ${esc(t.checkPrice)}</a>` : ""}</div>
 <nav class="sticky3" aria-label="${esc(bx.quick)}">${hs.map((h) => bks(h, "t3city-s3") ? `<a class="${catKey(h)}" href="${esc(bks(h, "t3city-s3"))}" rel="sponsored nofollow noopener" target="_blank" data-t="check_availability" data-city="${esc(city.slug)}" data-cat="${catKey(h)}" data-p="booking-sticky3"><span>${esc(label(h, L))}</span><b data-eur="${h.offer?.nightly ?? ""}"><span class="v">${money(h.offer?.nightly)}</span></b></a>` : "").join("")}</nav>`,
 		ld,
@@ -24761,9 +24906,20 @@ async function destinationsPage(L) {
 	const { byCountry, index } = await data();
 	const t = T[L];
 	const countries = [...byCountry.entries()].sort((a, b) => countryName(a[1][0], L).localeCompare(countryName(b[1][0], L), L));
+	const first = /* @__PURE__ */ new Map();
+	const seen = /* @__PURE__ */ new Set();
+	for (const [cs, list] of countries) {
+		const ch = countryName(list[0], L).normalize("NFD").replace(/[̀-ͯ]/g, "").charAt(0).toUpperCase();
+		if (/[A-Z]/.test(ch) && !seen.has(ch)) {
+			seen.add(ch);
+			first.set(cs, ch);
+		}
+	}
+	const azNav = `<nav class="az" aria-label="A-Z">${[...seen].map((ch) => `<a href="#az-${ch.toLowerCase()}">${ch}</a>`).join("")}</nav><style>.az{display:flex;flex-wrap:wrap;gap:6px;margin:16px 0 8px}.az a{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;border:1px solid var(--line);border-radius:10px;font-weight:700;text-decoration:none}.countries h2{scroll-margin-top:90px}.countries h2>span{position:relative;top:-90px}</style>`;
 	const body = `<p class="crumbs"><a href="${P(L, "/")}">${esc(t.home)}</a> › ${esc(t.allDest)}</p><h1>${esc(t.destH1(index.length))}<em>.</em></h1>
 <p class="lead">${esc(t.destLead(countries.length))}</p>
-<section class="countries">${countries.map(([cs, list]) => `<h2><a href="${P(L, `/country/${cs}`)}">${esc(countryName(list[0], L))}</a> <small>${list.length}</small></h2><ul class="grid">${list.map((c) => `<li><a href="${P(L, "/" + c.slug)}">${esc(cityName(c, L))}</a></li>`).join("")}</ul>`).join("")}</section>`;
+${azNav}
+<section class="countries">${countries.map(([cs, list]) => `<h2 id="${esc(cs)}"${first.get(cs) ? ` data-az="${first.get(cs)}"` : ""}>${first.get(cs) ? `<span id="az-${first.get(cs).toLowerCase()}"></span>` : ""}<a href="${P(L, `/country/${cs}`)}">${esc(countryName(list[0], L))}</a> <small>${list.length}</small></h2><ul class="grid">${list.map((c) => `<li><a href="${P(L, "/" + c.slug)}">${esc(cityName(c, L))}</a></li>`).join("")}</ul>`).join("")}</section>`;
 	return page({
 		L,
 		title: t.destTitle(index.length),
@@ -25548,7 +25704,7 @@ function savedPage(L) {
 		path: "/saved",
 		noindex: true,
 		langs: true,
-		body: `<p class="crumbs"><a href="${P(L, "/")}">${esc(T[L].home)}</a> › ${esc(y.js["saved"])}</p><h1>${esc(y.savedTitle)}<em>.</em></h1><p class="lead">${esc(y.savedLead)}</p><section style="margin-top:26px"><div class="saved" data-savedpage></div></section><section hidden data-recent><h2>${esc(y.js["recent"])}</h2><div class="chipsrow"></div></section>`
+		body: `<p class="crumbs"><a href="${P(L, "/")}">${esc(T[L].home)}</a> › ${esc(y.js["saved"])}</p><h1>${esc(y.savedTitle)}<em>.</em></h1><p class="lead">${esc(y.savedLead)}</p><section style="margin-top:26px"><div class="saved" data-savedpage data-bk="${esc(bkx(L).btn)}"></div></section><section hidden data-recent><h2>${esc(y.js["recent"])}</h2><div class="chipsrow"></div></section>`
 	});
 }
 async function citiesJson() {
@@ -26246,6 +26402,11 @@ async function handleSeo(request, env) {
 	if (request.method !== "GET" && request.method !== "HEAD") return null;
 	const enx = p.match(/^\/en(\/.*)?$/i);
 	if (enx) return Response.redirect(`${SITE}${enx[1] && enx[1] !== "/" ? enx[1] : "/"}${url.search}`, 301);
+	if (p.length > 1 && (p.endsWith("/") || p.includes("//")) && !p.startsWith("/api/")) {
+		const clean = p.replace(/\/{2,}/g, "/").replace(/\/+$/, "") || "/";
+		const low = /^\/(hotel|country|lists|gyms|pools|es|de|fr|it|pt|da)(\/|$)/i.test(clean) ? clean.toLowerCase() : clean;
+		if (low !== p) return Response.redirect(`${SITE}${low}${url.search}`, 301);
+	}
 	if (p === "/sitemap.xml") return new Response(sitemapIndex(), { headers: {
 		"content-type": "application/xml; charset=utf-8",
 		"cache-control": "public, max-age=3600"
@@ -26525,14 +26686,20 @@ Policy: https://www.top3hotels.com/terms
 			for (let i = 1; i <= a.length; i++) for (let j = 1; j <= b.length; j++) d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
 			return d[a.length][b.length];
 		};
-		const sug = slug.length >= 3 && slug.length <= 40 ? (await data()).index.map((c) => ({
+		const scored = slug.length >= 3 && slug.length <= 40 ? (await data()).index.map((c) => ({
 			c,
 			s: lev(slug, c.slug)
-		})).filter((x) => x.s <= Math.max(2, Math.floor(slug.length / 4))).sort((a, b) => a.s - b.s || (b.c.pop ?? 0) - (a.c.pop ?? 0)).slice(0, 6).map((x) => x.c) : [];
+		})).filter((x) => x.s <= Math.max(2, Math.floor(slug.length / 4))).sort((a, b) => a.s - b.s || (b.c.pop ?? 0) - (a.c.pop ?? 0)) : [];
+		const one = scored.filter((x) => x.s === 1);
+		if (slug.length >= 5 && one.length === 1) return Response.redirect(`${SITE}${P(L, "/" + one[0].c.slug)}${url.search}`, 301);
+		const sug = scored.slice(0, 6).map((x) => x.c);
 		return html(notFoundPage(p, L, sug), 404, "no-store");
 	}
 	const out = await cityPage(city, L);
-	return out ? html(out) : html(notFoundPage(p, L), 404, "no-store");
+	if (!out) return html(notFoundPage(p, L), 404, "no-store");
+	const r = html(out);
+	r.headers.set("link", `<${SITE}/api/city/${city.slug}.json>; rel="alternate"; type="application/json"`);
+	return r;
 }
 var serverEntryPromise;
 async function getServerEntry() {
@@ -26569,7 +26736,20 @@ function secure(res, url) {
 	h.set("referrer-policy", "strict-origin-when-cross-origin");
 	h.set("permissions-policy", "camera=(), microphone=(self), geolocation=(self), payment=(), usb=(), serial=(), bluetooth=(), browsing-topics=(), interest-cohort=()");
 	h.set("x-permitted-cross-domain-policies", "none");
+	if (/^\/(api|facts|_t3)\//.test(url.pathname) && !h.has("x-robots-tag")) h.set("x-robots-tag", "noindex");
 	if (ct.includes("text/html")) {
+		const lm = url.pathname.match(/^\/(es|de|fr|it|pt|da)(?:\/|$)/);
+		if (!h.has("content-language")) h.set("content-language", lm ? lm[1] : "en");
+		if ([
+			"checkin",
+			"checkout",
+			"hl",
+			"adults",
+			"group_adults",
+			"rooms",
+			"no_rooms",
+			"children"
+		].some((k) => url.searchParams.has(k)) && !h.has("x-robots-tag")) h.set("x-robots-tag", "noindex, follow");
 		h.set("content-security-policy", `object-src 'none'; base-uri 'self'; form-action 'self' https://www.booking.com; frame-ancestors ${embed ? "*" : "'self'"}; upgrade-insecure-requests`);
 		if (!embed) h.set("x-frame-options", "SAMEORIGIN");
 		h.set("cross-origin-opener-policy", "same-origin-allow-popups");
