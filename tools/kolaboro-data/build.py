@@ -12,7 +12,7 @@ that description, then writes:
   data/schemas/kolaboro-data.schema.json   the contracts (one schema with $defs per dataset)
   data/index.html            the /data/ page (only the generated blocks between kd markers are replaced)
   docs/api/openapi.json      the OpenAPI 3.1 description
-  llms-full.txt              plain-text guide for AI assistants, generated from the catalog and the spec
+  llms-full.txt              plain-text guide to the data and API, generated from the catalog and the spec
 
 Usage: build.py --files <list of repo paths under _s/kolaboro.com/data/> --out <dir> [--page <current data/index.html>]
        [--commits] (look up the last commit of each file on pub/_lovable with the GitHub API)
@@ -566,7 +566,7 @@ d.addEventListener('toggle',function(){{if(d.open)load()}});if(/^#undescribed/.t
 <li><a href="/data/contracts.json">/data/contracts.json</a>: contract results per file and per API operation.</li>
 <li><a href="/data/schemas/kolaboro-data.schema.json">/data/schemas/kolaboro-data.schema.json</a>: all data contracts (JSON Schema 2020-12, <code>$defs</code> per dataset).</li>
 <li><a href="/docs/api/openapi.json">/docs/api/openapi.json</a>: OpenAPI 3.1 description of {s['api_operations']} API operations; try them in the <a href="/docs/api/explorer/">API explorer</a>.</li>
-<li><a href="/llms-full.txt">/llms-full.txt</a>: a plain-text guide to all of this for AI assistants.</li>
+<li><a href="/llms-full.txt">/llms-full.txt</a>: a plain-text guide to all of this in one file.</li>
 <li>This page carries schema.org <code>DataCatalog</code> and <code>Dataset</code> markup for dataset search engines.</li></ul></div></section>
 <section class="sec" id="method"><div class="wrap prose"><h2>Method and limits</h2>
 <p>{E(cat['rules']['sizes_hashes'])}</p><p>{E(cat['rules']['contracts'])}</p>
@@ -596,7 +596,7 @@ def llms_full(cat, con, spec):
     s = cat['summary']
     L = []
     A = L.append
-    A('# Kolaboro: full guide for AI assistants')
+    A('# Kolaboro: full plain-text guide')
     A('')
     A(f'Generated {cat["generated_at"]} by the Kolaboro data catalog job from https://kolaboro.com/data/catalog.json and https://kolaboro.com/docs/api/openapi.json. The short version is https://kolaboro.com/llms.txt.')
     A('')

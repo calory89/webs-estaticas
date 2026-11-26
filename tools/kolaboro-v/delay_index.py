@@ -17,6 +17,9 @@ MIN_MARKET = 5      # minimum sample for any market figure
 MIN_ODDS = 10       # minimum resolved comparables for an odds estimate
 Z = 1.959963984540054
 BASE = 'https://kolaboro.com'
+# Owner rule: Sumba appears only in the transparency ranking. Its projects are left out of the delay index and the on-time odds
+# (rows, totals, history and ids); the transparency figures below still read every case.
+HIDE_MARKETS = {'Sumba'}
 MON = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
 
@@ -342,7 +345,7 @@ def main():
     os.makedirs(os.path.join(a.out, 'press'), exist_ok=True)
 
     raw = json.load(open(a.cases))
-    cases = raw['cases']
+    cases = [c for c in raw['cases'] if c.get('market') not in HIDE_MARKETS]
     upd = raw.get('updated') or datetime.date.today().isoformat()
     NOWd = datetime.date.fromisoformat(upd[:10])
     NOW = mi(NOWd.year, NOWd.month)
@@ -357,6 +360,9 @@ def main():
     mk = sorted((market_row(m, rs) for m, rs in bym.items()), key=lambda o: (-o['with_date'], o['market']))
     allrow = market_row('All markets', rows)
     prev = load(a.prev_delay, {}) or {}
+    for h in prev.get('history') or []:
+        for m in HIDE_MARKETS:
+            (h.get('markets') or {}).pop(m, None)
     hist = [h for h in (prev.get('history') or []) if h.get('month') != month]
     old = [h for h in (prev.get('history') or []) if h.get('month') == month]
     snap = old[0] if old else {
@@ -376,7 +382,7 @@ def main():
                   'share_past_current': 'projects past the currently advertised handover / the same denominator'},
         'caveats': ['History starts in %s %d: one monthly snapshot is stored each month from now on, so trends need time.' % (MON[NOWd.month - 1], NOWd.year),
                     'Where only a year is public we assume December, and where no date move is recorded we assume none. Both can only understate lateness.',
-                    'Dates are what developers and agents advertise, read by a language model and checked by our research agent. A misread date changes a project\'s figure.',
+                    'Dates are what developers and agents advertise, read from their pages. A misread date changes a project\'s figure.',
                     'The tracked projects are the ones being marketed now, not every project in a market. Projects that were finished and stopped marketing are under-represented.'],
         'all_markets': allrow, 'markets': mk, 'history': hist, 'inputs': inputs}
 
@@ -443,7 +449,7 @@ def main():
                              'moved': 'not completed and the developer\'s own current date is more than %d months after the first one: no, unless it hands over earlier than it now says' % WINDOW,
                              'done_on_time': 'completed, recorded moves of %d months or less' % WINDOW, 'done_late': 'completed, recorded moves of more than %d months' % WINDOW,
                              'no_date': 'no handover date in the open data', 'completed_no_date': 'completed, no date in the open data',
-                             'inconsistent': 'a past handover year but no overdue reading: left out until the research agent re-reads it'}},
+                             'inconsistent': 'a past handover year but no overdue reading: left out until its page is read again'}},
         'why_not_stage': ('The brief for this estimate asked to match on stage and on months to the promised date. The open data has no dated record of what stage each closed project '
                           'was at, or when its delay was announced, so matching on today\'s stage would be circular (a project that handed over is "completed" because of the outcome). '
                           'The monthly snapshot below records stage, advertised date and moves for every project from %s %d, so comparables can be matched on stage and time to handover once those snapshots have closed windows.' % (MON[NOWd.month - 1], NOWd.year)),
@@ -455,7 +461,7 @@ def main():
 
     # ---- 3. press release ----
     prices = load(a.prices, None) if a.prices else None
-    ti = transparency(cases)
+    ti = transparency(raw['cases'])
     tiv = sorted(x['transparency_index'] for x in ti)
     ti_med = q7(tiv, 0.5) if tiv else None
     pi_last = pi_base = None

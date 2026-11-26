@@ -1,11 +1,13 @@
 name: Kolaboro delay index
 # Delivery-delay index by market, on-time odds per project id and the monthly press release (block V).
 # Rebuilt daily from the public /data/bali-cases.json so the in-browser check matches; one snapshot is frozen per month;
-# the press release is regenerated on the first run of each month, on push and on manual dispatch. AI drafts one paragraph only.
+# the press release is regenerated on the first run of each month, on push and on manual dispatch.
 on:
   schedule:
     - cron: '7 3 1 * *'
-    - cron: '37 16 * * 4'
+    # n40 k22 (26 Nov 2026): weekly run moved from 16:37 to 00:41 UTC, right after the daily Kolaboro Actions budget resets;
+    # at 16:37 the budget gate had already cancelled it (12 and 19 Nov), so /data/delay-index.json stayed on the 5 Nov input.
+    - cron: '41 0 * * 4'
   workflow_dispatch:
     inputs:
       press:

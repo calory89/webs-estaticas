@@ -1158,8 +1158,8 @@
    ]
   },
   "benchmark-file": {
-   "title": "AI desk review benchmark, one file",
-   "description": "Contract of each JSON file under https://kolaboro.com/data/benchmark/. Results of the desk review benchmark on fixed fictional cases, one file per model (Haiku, Sonnet), each case answer signed with the Kolaboro Ed25519 key.",
+   "title": "Desk review benchmark, one file",
+   "description": "Contract of each JSON file under https://kolaboro.com/data/benchmark/. Results of the desk review benchmark on fixed fictional cases, one file per reader configuration, each case answer signed with the Kolaboro Ed25519 key.",
    "type": "object",
    "properties": {
     "benchmark": {
@@ -1797,7 +1797,7 @@
   },
   "chaos": {
    "title": "Chaos drills",
-   "description": "Contract of https://kolaboro.com/data/chaos.json. Weekly fault-injection drills of the desk review (for example the primary AI reader down): what was forced, what was expected, what happened, and what is not covered.",
+   "description": "Contract of https://kolaboro.com/data/chaos.json. Weekly fault-injection drills of the desk review (for example the primary reader down): what was forced, what was expected, what happened, and what is not covered.",
    "type": "object",
    "properties": {
     "updated": {
@@ -3332,7 +3332,7 @@
   },
   "digest": {
    "title": "Weekly market digest",
-   "description": "Contract of https://kolaboro.com/data/digest.json. Per ISO week: new projects, changes and alerts by market, built from the public bali-cases, promises, register-checks and stalled-sites files. An AI model may draft only the intro paragraph, and code checks every number in it.",
+   "description": "Contract of https://kolaboro.com/data/digest.json. Per ISO week: new projects, changes and alerts by market, built from the public bali-cases, promises, register-checks and stalled-sites files. Code checks every number in the intro paragraph against these files.",
    "type": "object",
    "properties": {
     "version": {
@@ -4796,7 +4796,7 @@
   },
   "image-index": {
    "title": "Render index",
-   "description": "Contract of https://kolaboro.com/data/image-index.json. Perceptual hashes of images found on the websites the research agent reads, used to check whether a picture a buyer was sent also appears elsewhere.",
+   "description": "Contract of https://kolaboro.com/data/image-index.json. Perceptual hashes of images found on the websites our checks read, used to check whether a picture a buyer was sent also appears elsewhere.",
    "type": "object",
    "properties": {
     "updated": {
@@ -13206,7 +13206,7 @@
   },
   "similar": {
    "title": "Similar projects",
-   "description": "Contract of https://kolaboro.com/data/similar.json. For every public project, the 5 most similar other public projects: ids and rounded scores only (text similarity from an open sentence-embedding model run on the GitHub runner, plus structured similarity). Input is only the public bali-cases.json.",
+   "description": "Contract of https://kolaboro.com/data/similar.json. For every public project, the 5 most similar other public projects: ids and rounded scores only (text similarity computed on the GitHub runner with open-source code, plus structured similarity). Input is only the public bali-cases.json.",
    "type": "object",
    "properties": {
     "version": {
