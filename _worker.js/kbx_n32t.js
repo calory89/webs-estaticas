@@ -22,7 +22,7 @@ const SOP = 'report/state-of-off-plan-2026';
 export const EN_RX = /^\/(?:tools\/[a-z-]{3,30}|new|vs|m|registers)\/$/;
 // n40 L1: the country guides and the delay rankings (kbx_seo.js) share one dictionary per language, /data/n32t/<lang>/guides.json, on top of the registers one
 // n40 L2: the buyer-protection-law pages: guides.json plus /data/n32t/<lang>/law.json (the rule texts), listed as 'law' in the manifest
-const FAM = k => /^countries\/[a-z0-9-]+\/buyer-protection-law$/.test(k) ? 'law' : /^(?:countries\/[a-z0-9-]+\/(?:how-to-check|is-it-safe)|rankings\/most-delayed(?:\/[a-z0-9-]+)?)$/.test(k) ? 'guides' : k === 'rankings/changed-promises' ? 'changed-promises' : null;
+const FAM = k => /^countries\/[a-z0-9-]+\/buyer-protection-law$/.test(k) ? 'law' : /^countries\/[a-z0-9-]+$/.test(k) ? 'country' : /^(?:countries\/[a-z0-9-]+\/(?:how-to-check|is-it-safe)|rankings\/most-delayed(?:\/[a-z0-9-]+)?)$/.test(k) ? 'guides' : k === 'rankings/changed-promises' ? 'changed-promises' : null;
 const pre = l => l === 'en' ? '' : '/' + l;
 const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
@@ -35,7 +35,7 @@ async function asset(env, p, json) {
   MEMO.set(p, { t: Date.now(), v }); return v;
 }
 const manifest = async env => (await asset(env, '/data/n32t/manifest.json', true)) || { pages: {} };
-export async function langsOf(env, key) { const M = await manifest(env); return (M.pages && M.pages[FAM(key) || key]) || []; }
+export async function langsOf(env, key) { const M = await manifest(env); return (M.pages && M.pages[FAM(key) === 'country' ? 'guides' : FAM(key) || key]) || []; }
 // paths ('/tools/risk/') that exist in this language: ours plus the pages other modules serve in 8 languages (manifest.json x, n40 k20)
 export async function localSet(env, lang) {
   const M = await manifest(env), S = new Set(M.x);
@@ -71,10 +71,10 @@ const encA = s => enc(s).replace(/"/g, '&quot;');
 const SEP = /^[\s/·|›>]+/;
 const DCACHE = new Map();
 async function dict(env, lang, key) {
-  const fm = FAM(key), f = fm === 'law' ? 'guides' : fm || key.replace(/\//g, '-'), k = lang + ':' + (fm || f), c = DCACHE.get(k); if (c && Date.now() - c.t < 600000) return c.v;
-  const [a, b, r, x] = await Promise.all([asset(env, '/data/n32t/' + lang + '/_common.json', true), asset(env, '/data/n32t/' + lang + '/' + f + '.json', true), fm ? asset(env, '/data/n32t/' + lang + '/registers.json', true) : null, fm === 'law' ? asset(env, '/data/n32t/' + lang + '/law.json', true) : null]);
+  const fm = FAM(key), f = fm === 'law' || fm === 'country' ? 'guides' : fm || key.replace(/\//g, '-'), k = lang + ':' + (fm || f), c = DCACHE.get(k); if (c && Date.now() - c.t < 600000) return c.v;
+  const [a, b, r, x] = await Promise.all([asset(env, '/data/n32t/' + lang + '/_common.json', true), asset(env, '/data/n32t/' + lang + '/' + f + '.json', true), fm ? asset(env, '/data/n32t/' + lang + '/registers.json', true) : null, fm === 'law' || fm === 'country' ? asset(env, '/data/n32t/' + lang + '/' + fm + '.json', true) : null]);
   let v = null;
-  if (b && b.s && (fm !== 'law' || (x && x.s))) {
+  if (b && b.s && ((fm !== 'law' && fm !== 'country') || (x && x.s))) {
     const s = Object.assign({}, (a && a.s) || {}, (r && r.s) || {}, b.s, (x && x.s) || {}), P = [], H = [];   // H: patterns that span inline markup ("tracks <b>{n}</b> projects"), applied to the HTML first
     for (const [src, out] of ((x && x.p) || []).concat((a && a.p) || [], (r && r.p) || [], b.p || [])) { const names = [], html = src.includes('<'); const rx = new RegExp((html ? '' : '^') + src.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\\\{(\w+)\\\}/g, (m, n) => { names.push(n); return html ? '([^<>"]*?)' : '(.+?)'; }) + (html ? '' : '$'), html ? 'g' : ''); (html ? H : P).push([rx, out, names]); }
     v = { s, P, H, t: b.t, d: b.d, h: b.h || null, lang };
@@ -102,6 +102,9 @@ function place(s, lang) {
 const fill = (D, out, names, g, e) => out.replace(/\{(\w+)(?:\|(\w+))?\}/g, (z, k, md) => { const i = names.indexOf(k); if (i < 0) return z; const v = dec(g(i)).trim(), x = md && D.s[md + ':' + v] != null ? D.s[md + ':' + v] : D.s[v] != null ? D.s[v] : v.includes('; ') ? v.split('; ').map(z => D.s[z] != null ? D.s[z] : (auto(z, D.lang) || z)).join('; ') : (auto(v, D.lang) || v); return e ? e(x) : x; });
 function T(D, s) {
   if (D.s[s] != null) return D.s[s];
+  const Z = D.mz || (D.mz = new Map()); if (Z.has(s)) return Z.get(s); if (Z.size > 30000) Z.clear(); const v = T0(D, s); Z.set(s, v); return v;   // n40 k35: country pages repeat the same cells hundreds of times
+}
+function T0(D, s) {
   for (const [rx, out, names] of D.P) { const m = rx.exec(s); if (m) return fill(D, out, names, i => m[i + 1]); }
   return auto(s, D.lang);
 }
@@ -155,7 +158,7 @@ async function render(env, lang, key, D, body, shTxt, extra) {
     const cr = [...((/<p class="crumb">([\s\S]*?)<\/p>/.exec(body) || [])[1] || '').matchAll(/<a href="([^"]+)">([^<]+)<\/a>/g)].map(m => [dec(m[2]), ORIGIN + m[1]]).concat([[D.h || D.t, canon]]);
     const fq = [...body.matchAll(/<details><summary>([^<]+)<\/summary><p>([^<]+)<\/p><\/details>/g)].map(m => ({ '@type': 'Question', name: dec(m[1]), acceptedAnswer: { '@type': 'Answer', text: dec(m[2]) } }));
     if (extra && extra.il) ld['@graph'][0].mainEntity = extra.il;
-    ld['@graph'] = [Object.assign(ld['@graph'][0], { '@type': key.startsWith('rankings/') ? 'CollectionPage' : 'WebPage' }), { '@type': 'BreadcrumbList', itemListElement: cr.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c[0], item: c[1] })) }].concat(fq.length ? [{ '@type': 'FAQPage', mainEntity: fq }] : []);
+    ld['@graph'] = [Object.assign(ld['@graph'][0], { '@type': /^(?:rankings|countries)\//.test(key) && !/\/(?:how-to-check|is-it-safe|buyer-protection-law)$/.test(key) ? 'CollectionPage' : 'WebPage' }), { '@type': 'BreadcrumbList', itemListElement: cr.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c[0], item: c[1] })) }].concat(fq.length ? [{ '@type': 'FAQPage', mainEntity: fq }] : []);
   }
   const pg = { title: D.t + (q ? ' (' + q.slice(3) + ')' : '') + ([...D.t].length > 49 && FAM(key) ? '' : ' | Kolaboro'), desc: D.d, canon, body, alt, ld, noindex: !!q };
   let html = await N.assemble(pg, lang, new Response(shTxt));
@@ -185,6 +188,7 @@ export async function handle(req, u, env, ctx, shell, inner) {
   const m = /^\/(es|de|fr|nl|ru|zh|ar)\/(.+?)(\/?)$/.exec(u.pathname); if (!m) return null;
   const lang = m[1], key = m[2], pn = /^(new|vs)$/.test(key) && u.searchParams.get('p') | 0, q = pn > 1 ? '?p=' + pn : '';   // n40 k20: the page of a paged list (was always page 1)
   if (!(await langsOf(env, key)).includes(lang)) return null;
+  if (FAM(key) === 'country' && !(await placeKeys(env)).c.includes(key.slice(10))) return null;   // n40 k35: country pages in 7 languages only where kbx_n29i has the market file (5+ named projects)
   if (!m[3]) return new Response(null, { status: 301, headers: { location: u.pathname + '/' + u.search, 'cache-control': 'public, max-age=3600' } });
   const D = await dict(env, lang, key); if (!D) return null;
   const ck = typeof caches !== 'undefined' ? new Request(ORIGIN + '/__n32t/' + N32T_V + '.' + ((await manifest(env)).v || 0) + u.pathname + q) : null;   // the built page for 15 minutes (the English /new/ is 400 KB)
@@ -199,7 +203,7 @@ async function build(env, lang, key, D, shell, inner, q) {
   if (key === 'm') return render(env, lang, key, D, await marketsBody(env, lang, D), shTxt, null);
   const src = await englishOf(env, key, inner, q); if (!src) return null;
   const P = parts(src, shTxt); if (!P) return null;
-  if (FAM(key)) P.main = P.main.replace(/<section id="how-to-cite"[\s\S]*?<\/section>/, '').replace(/<div class="wrap"><p class="k-xs n33-by"[\s\S]*?<\/p><\/div>/, '');   // n40 L1: English credit and cite blocks
+  if (FAM(key)) P.main = P.main.replace(/<nav class="wrap" id="n40-cg"[\s\S]*?<\/nav>/, '').replace(/<style>\.n33-ms[\s\S]*?<\/style><nav class="n33-ms"[\s\S]*?<\/nav>/, '').replace(/<section id="how-to-cite"[\s\S]*?<\/section>/, '').replace(/<div class="wrap"><p class="k-xs n33-by"[\s\S]*?<\/p><\/div>/, '');   // n40 L1: English credit and cite blocks
   let body = trHtml(P.main, D, LS);
   if (FAM(key)) {   // n40 L1: title, description and h1 of the English page, translated with the same dictionary
     const g = rx => dec((rx.exec(src) || [])[1] || '').trim(), h1 = g(/<h1[^>]*>([^<]+)<\/h1>/), tt = g(/<title>([^<]+)<\/title>/).replace(/ \| Kolaboro$/, ''), ds = g(/<meta name="description" content="([^"]+)"/);
@@ -215,7 +219,7 @@ async function build(env, lang, key, D, shell, inner, q) {
     body = body.split(/(<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>|<!--[\s\S]*?-->|<[^>]+>)/).map(tok => !tok || tok[0] === '<' ? tok : tok.replace(/(^|[^\d.,])(\d{1,3}(?:,\d{3})+)(?![\d,]|\.\d)/g, (_, x, y) => x + NF.format(+y.replace(/,/g, '')))).join(''); } catch (e) {} }
   // n40 L3: the ranking's ItemList (mainEntity of the English page) in the translated page too, project links pointed at the page language
   let il = null;
-  if (FAM(key) === 'guides' && key.startsWith('rankings/')) { try { for (const m of src.matchAll(/<script type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)) { const j = JSON.parse(m[1]); for (const o of [].concat(j['@graph'] || j)) if (o && o.mainEntity && o.mainEntity['@type'] === 'ItemList') il = o.mainEntity; } } catch (e) { il = null; }
+  if ((FAM(key) === 'guides' && key.startsWith('rankings/')) || FAM(key) === 'country') { try { for (const m of src.matchAll(/<script type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)) { const j = JSON.parse(m[1]); for (const o of [].concat(j['@graph'] || j)) if (o && o.mainEntity && o.mainEntity['@type'] === 'ItemList') il = o.mainEntity; } } catch (e) { il = null; }
     if (il) il = Object.assign({}, il, { itemListElement: (il.itemListElement || []).map(x => x && typeof x.url === 'string' && x.url.startsWith(ORIGIN + '/') ? Object.assign({}, x, { url: ORIGIN + locHref(x.url.slice(ORIGIN.length), lang, LS) }) : x) }); }
   return render(env, lang, key, D, body, shTxt, { css: P.css, js: P.js, il, q });
 }
