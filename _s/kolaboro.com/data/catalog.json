@@ -14065,7 +14065,11 @@
   }
  ],
  "refreshed": {
+<<<<<<< HEAD
   "at": "2026-11-26T10:57:31Z",
+=======
+  "at": "2026-11-26T10:57:40Z",
+>>>>>>> f00f1b67bab (kolaboro.com n40 k7: catalog refresh after rebase)
   "by": "https://kolaboro.com/open/catalog-refresh.py",
   "datasets_changed": 0,
   "note": "Sizes, hashes, row counts and stamps of files changed since generated_at, read from the published files. Contracts, probes and freshness status are from generated_at."
