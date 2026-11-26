@@ -148,6 +148,7 @@ const sg1 = s => String(s).replace(/(^|[^\d.,])1 (tracked |official )?(project|r
 function render(P) {
   const canon = SITE + P.path;
   if (P.updated && /^\/countries\/[^/]+\/[a-z-]+\/$/.test(P.path)) P.body = '<p class="sx-src" id="byline">Researched by <a href="/team/">the Kolaboro team</a> · Checked on <time datetime="' + esc(P.updated) + '">' + longDate(P.updated) + '</time></p>' + P.body;   // n40 R01-15
+  P.body = P.body.replace(/href="\/corrections\/"/g, 'href="/corrections/?page=' + encodeURIComponent(P.path) + '#request"');   // n40 R01-16
   for (const k of ['title', 'desc', 'lead', 'body']) if (P[k]) P[k] = sg1(P[k]); if (P.ld) P.ld = JSON.parse(sg1(JSON.stringify(P.ld)));   // n40 R01-01
   if ((P.type || '') === 'CollectionPage' && !(P.pageLd && P.pageLd.mainEntity) && !(P.ld || []).some(x => x && x['@type'] === 'ItemList')) { const il = listLd(P.body); if (il) P.pageLd = Object.assign({}, P.pageLd || {}, { mainEntity: il }); }
   if (P.title && P.title.length > 60) P.title = P.title.replace(/ \| Kolaboro( engineering)?$/, '');   // n29t (item 46): titles of hubs and rankings fit in 60 characters where the brand suffix is what overflows

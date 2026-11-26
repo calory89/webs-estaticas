@@ -58,7 +58,7 @@ async function load(env, name) {   // same shared parse cache as kbx_tr.js / kbx
 const eligible = ix => [...ix.rows.values()].filter(r => !r.sumba && r.score >= BADGE_MIN).sort((a, b) => b.score - a.score || a.n.localeCompare(b.n));
 
 // ------------------------------------------------------------------------------------------------ pages
-function corrPage(C, lang, id, SL) {
+function corrPage(C, lang, id, SL, pg) {
   const st = v => v == null ? '' : esc(t27(lang, 'st_' + v) || v);
   const E = (C.entries || []).filter(e => !id || e.id === id);
   const row = e => '<li><b>' + tm(e.date, lang) + '</b> · ' + (SL[e.id] ? '<a href="' + pre(lang) + '/projects/' + SL[e.id].s + '/"><bdi>' + esc(SL[e.id].n) + '</bdi></a> <span class="k-muted k-small" dir="ltr">' + esc(e.id) + '</span>' : '<bdi>' + esc(e.id) + '</bdi>') + ' · ' + esc((e.kind === 'field' || e.kind === 'removal' ? t31(lang, 'co_k_' + e.kind) : '') || t27(lang, e.kind === 'pin' ? 'co_k_pin' : 'co_k_claim')) + '<br>' +
@@ -68,7 +68,7 @@ function corrPage(C, lang, id, SL) {
   const latest = (C.entries || []).reduce((m, e) => e.date > m ? e.date : m, '');
   const log = id ? '<h2 id="log">' + te(lang, 'co_for', { id: bdi(id) }) + '</h2>' + (E.length ? '<ol class="k27-log">' + E.map(row).join('') + '</ol>' : '<p class="k27-empty">' + te(lang, 'co_for_none', { id: bdi(id) }) + '</p>') + '<p><a href="' + pre(lang) + '/corrections/">' + esc(t27(lang, 'co_all')) + '</a></p>'
     : '<h2 id="log">' + esc(t27(lang, 'co_log_h')) + '</h2>' + (E.length ? '<p>' + te(lang, 'co_n', { n: nf(lang, E.length), d: tm(latest, lang) }) + ' <span class="k-small k-muted">' + esc(t27(lang, 'co_en')) + '</span></p><ol class="k27-log">' + E.map(row).join('') + '</ol>' : '<p class="k27-empty">' + esc(t27(lang, 'co_empty')) + '</p>');
-  const req = '<h2 id="request">' + esc(t27(lang, 'co_req_h')) + '</h2><p>' + te(lang, 'co_req', { mail: mail(MAIL.hello) }) + '</p><p><a class="k-btn k-btn--line" href="mailto:' + MAIL.hello + '?subject=' + encodeURIComponent(t27(lang, 'co_req_subj') + (id ? ' ' + id : '')) + '">' + esc(t27(lang, 'co_req_b')) + '</a></p>' +
+  const req = '<h2 id="request">' + esc(t27(lang, 'co_req_h')) + '</h2>' + (pg ? '<p class="k27-empty" id="prefill">' + te(lang, 'co_pg', { p: '<a href="' + esc(pg) + '" dir="ltr">' + esc('kolaboro.com' + pg) + '</a>' }) + '</p>' : '') + '<p>' + te(lang, 'co_req', { mail: mail(MAIL.hello) }) + '</p><p><a class="k-btn k-btn--line" href="mailto:' + MAIL.hello + '?subject=' + encodeURIComponent(t27(lang, 'co_req_subj') + (id ? ' ' + id : '') + (pg ? ' ' + pg : '')) + (pg ? '&body=' + encodeURIComponent(fill(t27(lang, 'co_pg_body'), { u: ORIGIN + pg })) : '') + '">' + esc(t27(lang, 'co_req_b')) + '</a></p>' +
     '<h2 id="removal">' + esc(t27(lang, 'co_rm_h')) + '</h2><p>' + esc(t27(lang, 'co_rm')) + '</p><p class="k-small">' + esc(t27(lang, 'co_data')) + ' <a class="k-src" href="/data/corrections.json">/data/corrections.json</a></p>';
   const body = '<div class="kpg">' + head(lang, [[t27(lang, 'co_h1'), pre(lang) + '/corrections/']], esc(t27(lang, 'co_h1')), esc(t27(lang, 'co_lead')), '<p class="k-small k-muted">' + fill(esc(t27(lang, 'upd')), { d: tm(C.updated || REVIEWED, lang) }) + '</p>') +
     '<div class="k-prose">' + (id ? log + req : '<h2 id="audits">' + esc(t27(lang, 'co_audit_h')) + '</h2>' + A + log + req) +
@@ -173,8 +173,8 @@ export async function handle(req, u, env, ctx, shell) {
   try {
     if (kind === 'corrections') {
       const [C, NM] = await Promise.all([load(env, 'corrections.json'), load(env, 'named.json').catch(() => null)]), id = String(u.searchParams.get('id') || '').toUpperCase();
-      const okId = /^[A-Z]{2,5}-\d{3,4}$/.test(id) ? id : '';
-      const k = lang + '|c|' + okId + '|' + (C.updated || '') + '|' + (C.entries || []).length; pg = BODY.get(k); if (!pg) { const SL = {}; if (NM) for (const x of NM.projects || []) if ((C.entries || []).some(e => e.id === x.id)) SL[x.id] = { s: x.s, n: String(x.n || x.id).replace(/\s*\([^)]*\)\s*$/, '') }; pg = corrPage(C, lang, okId, SL); if (BODY.size > 600) BODY.clear(); BODY.set(k, pg); }
+      const okId = /^[A-Z]{2,5}-\d{3,4}$/.test(id) ? id : '', pp = String(u.searchParams.get('page') || ''), okPg = /^\/[a-z0-9][a-z0-9\/._-]{0,160}$/i.test(pp) && !pp.includes('..') ? pp : '';   // n40 R01-16: ?page= prefills the request
+      const k = lang + '|c|' + okId + '|' + okPg + '|' + (C.updated || '') + '|' + (C.entries || []).length; pg = BODY.get(k); if (!pg) { const SL = {}; if (NM) for (const x of NM.projects || []) if ((C.entries || []).some(e => e.id === x.id)) SL[x.id] = { s: x.s, n: String(x.n || x.id).replace(/\s*\([^)]*\)\s*$/, '') }; pg = corrPage(C, lang, okId, SL, okPg); if (BODY.size > 600) BODY.clear(); BODY.set(k, pg); }
     } else if (kind === 'transparency-badge' || kind === 'cite') {
       let ix = null; try { ix = await trData(env); } catch (e) { if (kind === 'transparency-badge') return null; }
       const k = lang + '|' + kind + '|' + (ix ? ix.v : ''); pg = BODY.get(k); if (!pg) { pg = kind === 'cite' ? citePage(lang, ix) : badgePage(lang, ix); if (BODY.size > 600) BODY.clear(); BODY.set(k, pg); }

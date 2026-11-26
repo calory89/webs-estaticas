@@ -76,6 +76,10 @@
   $('bkReset').addEventListener('click', function(){ st.pub = {}; st.conf = {}; Array.prototype.forEach.call(document.querySelectorAll('#bkRows input'), function(i){ i.checked = false; }); render(); });
   fetch('/data/bali-cases.json?t=' + Math.floor(Date.now() / 6e5)).then(function(r){ if (!r.ok) throw new Error(r.status); return r.json(); }).then(function(d){
     C = d.cases || [];
+    try { var MM = {}; C.forEach(function(c){ var m = c.market || ''; if (/sumba/i.test(m + ' ' + (c.region || ''))) return; (MM[m] = MM[m] || []).push(c); });
+      var md = function(v){ v.sort(function(a, b){ return a - b; }); var n = v.length, h = n >> 1; return n % 2 ? v[h] : (v[h - 1] + v[h]) / 2; };
+      $('bkMed').innerHTML = Object.keys(MM).sort(function(a, b){ return MM[b].length - MM[a].length || (a < b ? -1 : 1); }).slice(0, 10).map(function(m){ var L = MM[m]; return '<tr><td>' + esc(m) + '</td><td>' + L.length.toLocaleString('en') + '</td><td>' + md(L.map(sc)) + '</td><td>' + md(L.map(vs)) + '</td><td>' + pc(L.filter(function(c){ return cf(c, 'permit'); }).length, L.length) + '%</td></tr>'; }).join('');
+      if (d.updated) { var dd = new Date(d.updated + 'T00:00:00Z'); $('bkMedD').textContent = dd.getUTCDate() + ' ' + dd.toLocaleString('en', { month: 'long', timeZone: 'UTC' }) + ' ' + dd.getUTCFullYear(); } } catch (e) {}   // n40 R01-07: the medians table, refreshed from the live file
     var G = {}; C.forEach(function(c){ var g = G[c.country] = G[c.country] || {}; g[c.market] = (g[c.market] || 0) + 1; });
     var top = null, tn = 0, h = '';
     Object.keys(G).sort(function(a, b){ return a.localeCompare(b); }).forEach(function(k){ h += '<optgroup label="' + esc(k) + '">' + Object.keys(G[k]).sort(function(a, b){ return a.localeCompare(b); }).map(function(m){ if (G[k][m] > tn) { tn = G[k][m]; top = m; } return '<option value="' + esc(m) + '">' + esc(m) + ' (' + G[k][m] + ')</option>'; }).join('') + '</optgroup>'; });
