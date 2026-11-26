@@ -1,8 +1,8 @@
 # Casas baratas en Suiza: datos clave y todas las casas de RealHunt
 
-A 25 de noviembre de 2026, RealHunt publica 10 casas en venta en Suiza, revisadas una a una por una persona. En Suiza, el precio de salida mediano de esas 10 casas es de 70.100 € (2.337 € por m², calculado con las 10 casas de superficie conocida); la más barata cuesta 32.300 € y la más cara, 88.400 €. Los impuestos y gastos de compra suman alrededor del 1–5% del precio de una casa en Suiza (cifras de 2026).
+A 26 de noviembre de 2026, RealHunt publica 10 casas en venta en Suiza, revisadas una a una por una persona. En Suiza, el precio de salida mediano de esas 10 casas es de 70.100 € (2.337 € por m², calculado con las 10 casas de superficie conocida); la más barata cuesta 32.300 € y la más cara, 88.400 €. Los impuestos y gastos de compra suman alrededor del 1–5% del precio de una casa en Suiza (cifras de 2026).
 
-Fuente: RealHunt, https://realhunt.co/es/homes/switzerland · Actualizado el 25 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
+Fuente: RealHunt, https://realhunt.co/es/homes/switzerland · Actualizado el 26 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/switzerland.json · PDF: https://realhunt.co/data/countries/switzerland.es.pdf
 
 ## Datos clave
@@ -18,7 +18,7 @@ También en JSON: https://realhunt.co/data/countries/switzerland.json · PDF: ht
 | Impuestos y gastos de compra | 1–5% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Bajo la ley Lex Koller, los ciudadanos de la UE/EFTA que viven en Suiza y los titulares de un permiso C compran como ciudadanos suizos, y los no ciudadanos de la UE titulares de un permiso B pueden comprar una vivienda en la que viven. Las personas que viven en el extranjero necesitan un permiso cantonal y normalmente solo pueden comprar una casa de vacaciones en una zona turística, dentro de cuotas nacionales; un endurecimiento propuesto estaba en consulta en 2026. |
 | Impuesto anual sobre la vivienda | Más de la mitad de los cantones cobran un impuesto anual sobre bienes inmuebles (Liegenschaftssteuer), normalmente del 0,01-0,3% del valor tasado, y los propietarios pagan además el impuesto cantonal sobre el patrimonio por el valor del inmueble menos la hipoteca. |
-| Fecha de estas cifras | 25 de noviembre de 2026 |
+| Fecha de estas cifras | 26 de noviembre de 2026 |
 
 ## Gastos e impuestos
 

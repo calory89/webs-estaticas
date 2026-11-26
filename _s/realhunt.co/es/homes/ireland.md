@@ -1,8 +1,8 @@
 ## Viviendas en venta en Irlanda
 
-Actualizado el 25 de noviembre de 2026. Última vivienda añadida el 20 de noviembre de 2026.
+Actualizado el 26 de noviembre de 2026. Última vivienda añadida el 20 de noviembre de 2026.
 
-RealHunt tiene hoy 4 viviendas en venta en Irlanda, con precios de 170.000 € a 230.000 €. La más barata cuesta 170.000 €: [Casa de pueblo renovada con calificación energética A3 cerca del puerto de Killala, Mayo](https://realhunt.co/es/deal/ie-killala-renovated-village-house-a3-energy-170k), en Killala (95 m², 1 dormitorio). El precio mediano es de 230.000 € (2.255 €/m²), frente a 93.200 € (1.220 €/m²) de las 616 viviendas de RealHunt en 29 países.
+RealHunt tiene hoy 4 viviendas en venta en Irlanda, con precios de 170.000 € a 230.000 €. La más barata cuesta 170.000 €: [Casa de pueblo renovada con calificación energética A3 cerca del puerto de Killala, Mayo](https://realhunt.co/es/deal/ie-killala-renovated-village-house-a3-energy-170k), en Killala (95 m², 1 dormitorio). El precio mediano es de 230.000 € (2.255 €/m²), frente a 93.000 € (1.200 €/m²) de las 654 viviendas de RealHunt en 30 países.
 
 Viviendas
 4
@@ -26,14 +26,14 @@ Gastos de compra
 2,5–3,5%
 
 Datos del
-25 nov 2026
+26 nov 2026
 
 ### Las 4 viviendas, de mejor a peor nota
 
-- [Nota 83Nueva170.000 €Casa de pueblo renovada con calificación energética A3 cerca del puerto de Killala, MayoKillala, condado de Mayo95 m² · 1 dorm. · 1.789 €/m² · 5 días en RealHuntUna casa de dos plantas recientemente renovada en Gore Street en el centro de Killala, a un corto paseo del puerto en Killala Bay.](https://realhunt.co/es/deal/ie-killala-renovated-village-house-a3-energy-170k)
-- [Nota 80Nueva230.000 €Casa adosada de dos dormitorios con vistas al mar en el Atlántico en Kilkieran, ConnemaraKilkieran, condado de Galway102 m² · 2 dorm. · 2.255 €/m² · 5 días en RealHuntUna casa adosada en un pequeño y ordenado desarrollo en un sitio elevado sobre el Atlántico cerca del pueblo de Kilkieran en Connemara, con…](https://realhunt.co/es/deal/ie-kilkieran-connemara-sea-view-two-bed-house-230k)
-- [Nota 80Nueva230.000 €Apartamento de tres dormitorios con vistas al puerto, terraza en la azotea y amarre de barco en Leitrim VillageLeitrim Village, condado de Leitrim121 m² · 3 dorm. · 1.901 €/m² · 5 días en RealHuntUn apartamento de tres dormitorios de 121 m² por 230.000 euros, vendido completamente amueblado, con un amarre privado en el puerto incluido.](https://realhunt.co/es/deal/ie-leitrim-village-marina-view-apartment-berth-230k)
-- [Nota 77Nueva220.000 €Piso de planta baja con dos dormitorios y baño en suite, a pie de playa de Tramore, WaterfordTramore, condado de Waterford76 m² · 2 dorm. · 2.895 €/m² · 5 días en RealHuntUn piso de planta baja en la promoción Pebble Beach en Tramore, a distancia de paseo de la playa y del paseo marítimo, situado entre césped con…](https://realhunt.co/es/deal/ie-tramore-ground-floor-two-bed-flat-near-beach-220k)
+- [Nota 83Nueva170.000 €Casa de pueblo renovada con calificación energética A3 cerca del puerto de Killala, MayoKillala, condado de Mayo95 m² · 1 dorm. · 1.789 €/m² · 6 días en RealHuntUna casa de dos plantas recientemente renovada en Gore Street en el centro de Killala, a un corto paseo del puerto en Killala Bay.](https://realhunt.co/es/deal/ie-killala-renovated-village-house-a3-energy-170k)
+- [Nota 80Nueva230.000 €Casa adosada de dos dormitorios con vistas al mar en el Atlántico en Kilkieran, ConnemaraKilkieran, condado de Galway102 m² · 2 dorm. · 2.255 €/m² · 6 días en RealHuntUna casa adosada en un pequeño y ordenado desarrollo en un sitio elevado sobre el Atlántico cerca del pueblo de Kilkieran en Connemara, con…](https://realhunt.co/es/deal/ie-kilkieran-connemara-sea-view-two-bed-house-230k)
+- [Nota 80Nueva230.000 €Apartamento de tres dormitorios con vistas al puerto, terraza en la azotea y amarre de barco en Leitrim VillageLeitrim Village, condado de Leitrim121 m² · 3 dorm. · 1.901 €/m² · 6 días en RealHuntUn apartamento de tres dormitorios de 121 m² por 230.000 euros, vendido completamente amueblado, con un amarre privado en el puerto incluido.](https://realhunt.co/es/deal/ie-leitrim-village-marina-view-apartment-berth-230k)
+- [Nota 77Nueva220.000 €Piso de planta baja con dos dormitorios y baño en suite, a pie de playa de Tramore, WaterfordTramore, condado de Waterford76 m² · 2 dorm. · 2.895 €/m² · 6 días en RealHuntUn piso de planta baja en la promoción Pebble Beach en Tramore, a distancia de paseo de la playa y del paseo marítimo, situado entre césped con…](https://realhunt.co/es/deal/ie-tramore-ground-floor-two-bed-flat-near-beach-220k)
 
 ### Compara las 4 viviendas, de más barata a más cara
 
@@ -107,13 +107,13 @@ Por entorno [Junto al mar 3](https://realhunt.co/es/homes/ireland/by-the-sea)
 
 Por característica [Con terraza 3](https://realhunt.co/es/cheap-houses/with-a-terrace-in-ireland) [Más de 80 m² 3](https://realhunt.co/es/cheap-houses/over-80-sqm-in-ireland)
 
-Países vecinos [Reino Unido 5](https://realhunt.co/es/homes/united-kingdom)
+Países vecinos [Reino Unido 6](https://realhunt.co/es/homes/united-kingdom)
 
-Por país [España 133](https://realhunt.co/es/homes/spain) [Italia 85](https://realhunt.co/es/homes/italy) [Estados Unidos 61](https://realhunt.co/es/homes/united-states) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Francia 44](https://realhunt.co/es/homes/france) [Suecia 40](https://realhunt.co/es/homes/sweden) [Japón 34](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 26](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 16](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Portugal 6](https://realhunt.co/es/homes/portugal) [Chipre 5](https://realhunt.co/es/homes/cyprus) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Reino Unido 5](https://realhunt.co/es/homes/united-kingdom) [Uruguay 4](https://realhunt.co/es/homes/uruguay) [Colombia 3](https://realhunt.co/es/homes/colombia) [República Checa 3](https://realhunt.co/es/homes/czech-republic)
+Por país [España 150](https://realhunt.co/es/homes/spain) [Italia 87](https://realhunt.co/es/homes/italy) [Estados Unidos 61](https://realhunt.co/es/homes/united-states) [Francia 48](https://realhunt.co/es/homes/france) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Suecia 41](https://realhunt.co/es/homes/sweden) [Japón 36](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 26](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 16](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [México 9](https://realhunt.co/es/homes/mexico) [Portugal 8](https://realhunt.co/es/homes/portugal) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Chipre 6](https://realhunt.co/es/homes/cyprus) [Reino Unido 6](https://realhunt.co/es/homes/united-kingdom) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Uruguay 4](https://realhunt.co/es/homes/uruguay) [Colombia 3](https://realhunt.co/es/homes/colombia) [República Checa 3](https://realhunt.co/es/homes/czech-republic)
 
 Estos anuncios proceden de myhome.ie (4). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 
 [Avísame por correo de viviendas nuevas en Irlanda](https://realhunt.co/es/alerts?country=Ireland) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Ireland#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en Irlanda](https://realhunt.co/es/sitemap/ireland)
 
 ---
-Fuente: https://realhunt.co/es/homes/ireland (RealHunt, 2026-11-25). Licencia CC BY 4.0: se puede citar con un enlace a la página.
+Fuente: https://realhunt.co/es/homes/ireland (RealHunt, 2026-11-26). Licencia CC BY 4.0: se puede citar con un enlace a la página.

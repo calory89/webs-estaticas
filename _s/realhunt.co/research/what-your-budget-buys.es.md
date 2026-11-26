@@ -2,9 +2,9 @@
 
 Entre 50.001 y 100.000 €, las casas de RealHunt son más grandes en Dinamarca (mediana de 115 m²), Suecia (mediana de 110 m²) e Italia (mediana de 97 m²) y más pequeñas en Suiza (34 m²). Hasta 50.000 € hay casas en 5 países, sobre todo en Italia (33), Japón (19) y Alemania (10).
 
-A partir de 726 anuncios revisados por una persona, a 25 de noviembre de 2026. Cada casa cuenta en un solo tramo de precio.
+A partir de 726 anuncios revisados por una persona, a 26 de noviembre de 2026. Cada casa cuenta en un solo tramo de precio.
 
-Actualizado el 25 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/what-your-budget-buys (CC BY 4.0). CSV: https://realhunt.co/research/what-your-budget-buys.es.csv
+Actualizado el 26 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/what-your-budget-buys (CC BY 4.0). CSV: https://realhunt.co/research/what-your-budget-buys.es.csv
 
 ## La tabla
 
@@ -36,8 +36,8 @@ Actualizado el 25 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es
 | Estados Unidos | 15 | 96 m² | 832 € | 2 | [Casa de 2 dormitorios lista para entrar a vivir en Chapmanville, Virginia Occidental](https://realhunt.co/es/deal/chapmanville-82875), 82.875 €, nota 95 |
 | Japón | 14 | 92 m² | 758 € | 3 | [Kominka en la ladera con vistas al mar sobre la costa de Kyoto](https://realhunt.co/es/deal/Da7vZIFDIuo), 54.280 €, nota 86 |
 | Alemania | 10 | 57 m² | 1.078 € | 1 | [Ático de 65 m² con ventanas de tejado y balcón en Chemnitz-Gablenz](https://realhunt.co/es/deal/de-chemnitz-55k-462680), 55.000 €, nota 84 |
-| Canadá | 9 | 83 m² | 930 € | 2 | [Casa de 2 dormitorios actualizada en Glace Bay, Nueva Escocia](https://realhunt.co/es/deal/glace-bay-86962), 86.962 €, nota 94 |
 | México | 9 | 65 m² | 1.140 € | 2 | [Piso de 2 dormitorios en San Pedro Tlaquepaque, Jalisco](https://realhunt.co/es/deal/san-pedro-tlaquepaque-50575), 50.575 €, nota 93 |
+| Canadá | 9 | 83 m² | 930 € | 2 | [Casa de 2 dormitorios actualizada en Glace Bay, Nueva Escocia](https://realhunt.co/es/deal/glace-bay-86962), 86.962 €, nota 94 |
 | Suiza | 8 | 34 m² | 2.372 € | 1 | [Casita de vacaciones con jardín de invierno junto a un lago de baño en Salgesch](https://realhunt.co/es/deal/ch-salgesch-49k-76547), 52.800 €, nota 85 |
 | Grecia | 7 | 68 m² | 1.250 € | 2 | [Casa de piedra de dos plantas con vistas al mar en Marathokampos, Samos](https://realhunt.co/es/deal/gr-samos-agia-triada-68k-20601330), 68.000 €, nota 90 |
 | Bulgaria | 7 | 87 m² | 740 € | 2 | [Piso amueblado de dos dormitorios con vistas al mar en un complejo cerrado en Kavarna](https://realhunt.co/es/deal/bg-kavarna-66k-89698), 66.000 €, nota 94 |
@@ -55,14 +55,14 @@ Actualizado el 25 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es
 | Portugal | 15 | 96 m² | 1.510 € | 2 | [Casa de cinco dormitorios con dos cocinas, calefacción central y tejado nuevo en Silvares, Fundão](https://realhunt.co/es/deal/pt-silvares-110k-271372), 110.000 €, nota 91 |
 | Estados Unidos | 13 | 117 m² | 1.379 € | 3 | [La histórica Savage House: casa victoriana blanca con porche de encaje](https://realhunt.co/es/deal/us-north-carolina-victorian-170k), 153.900 €, nota 91 |
 | Canadá | 7 | 155 m² | 963 € | 3 | [Casa actualizada de cinco dormitorios con cuarto de baño para cada dormitorio en Twillingate, Terranova](https://realhunt.co/es/deal/ca-twillingate-nl-five-bed-house-each-room-ensuite-194k), 123.400 €, nota 90 |
-| Reino Unido | 5 | 80 m² | 1.807 € | 2 | [Casa de dos dormitorios amueblada con vistas al fiordo de Moray en la ciudad portuaria de Macduff](https://realhunt.co/es/deal/uk-macduff-furnished-house-sea-views-110k), 126.500 €, nota 83 |
+| Reino Unido | 5 | 80 m² | 1.807 € | 2 | [Casa adosada de época renovada con garaje doble en el pueblo de Lack, County Fermanagh](https://realhunt.co/es/deal/uk-lack-fermanagh-refurbished-townhouse-double-garage-172k), 198.400 €, nota 83 |
 | Japón | 5 | 132 m² | 1.018 € | 4 | [Casa de estilo japonés de una planta de 2016 en una gran parcela en esquina cerca de Kaike, Yonago](https://realhunt.co/es/deal/jp-yonago-kaike-2016-one-floor-japanese-house-143k), 142.500 €, nota 81 |
 | México | 4 | 146 m² | 1.704 € | 3 | [Casa de piedra y ladrillo de cinco dormitorios con terraza con vistas al Lago Chapala en El Tepehuaje](https://realhunt.co/es/deal/mx-tuxcueca-el-tepehuaje-lake-chapala-view-house-4-08m), 195.300 €, nota 88 |
 | Uruguay | 4 | 113 m² | 1.649 € | 3 | [Casa de techo de madera con chimenea y barbacoa a menos de 100 m del mar, Playa Grande](https://realhunt.co/es/deal/uy-piriapolis-playa-grande-house-near-sea-198k), 180.300 €, nota 85 |
 | Chipre | 3 | 74 m² | 2.527 € | 2 | [Apartamento amueblado de dos dormitorios con escritura de propiedad y piscina compartida en Mazotos, Larnaca](https://realhunt.co/es/deal/cy-mazotos-2-bed-pool-130k-477874), 130.000 €, nota 83 |
 | República Checa | 3 | 109 m² | 1.464 € | 1 | [Casa de ladrillo mantenida con bomba de calor y jardín en Lomnička cerca de Plesná, Cheb](https://realhunt.co/es/deal/cz-lomnicka-plesna-brick-house-heat-pump-131k), 130.900 €, nota 85 |
-| Dominican Republic | 2 | s. d. | s. d. | 2 | [Piso amueblado en primera línea en Juan Dolio con balcón con vistas al mar](https://realhunt.co/es/deal/dr-juan-dolio-188k-425359), 187.800 €, nota 89 |
 | Colombia | 2 | s. d. | s. d. | 3 | [Casa de tres dormitorios completamente remodelada en complejo cerrado con piscina, Santa Marta](https://realhunt.co/es/deal/co-santa-marta-remodelled-house-pool-rodadero-590m), 165.200 €, nota 86 |
+| Dominican Republic | 2 | s. d. | s. d. | 2 | [Piso amueblado en primera línea en Juan Dolio con balcón con vistas al mar](https://realhunt.co/es/deal/dr-juan-dolio-188k-425359), 187.800 €, nota 89 |
 | Suecia | 2 | s. d. | s. d. | 4 | [Casa de madera roja renovada en una gran parcela rural cerca de Ingelstad, Småland](https://realhunt.co/es/deal/se-ingelstad-red-wooden-house-countryside-plot-187k), 187.400 €, nota 84 |
 | Dinamarca | 1 | s. d. | s. d. | 3 | [Villa lista para entrar a vivir con cocina moderna, terraza grande y vistas al campo abierto cerca de Høng](https://realhunt.co/es/deal/dk-hoeng-saeby-move-in-ready-villa-1195k-dkk), 160.000 €, nota 82 |
 | Irlanda | 1 | s. d. | s. d. | 1 | [Casa de pueblo renovada con calificación energética A3 cerca del puerto de Killala, Mayo](https://realhunt.co/es/deal/ie-killala-renovated-village-house-a3-energy-170k), 170.000 €, nota 83 |

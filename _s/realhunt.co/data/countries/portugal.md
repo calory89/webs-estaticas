@@ -1,8 +1,8 @@
 # Cheap homes in Portugal: key facts and every home on RealHunt
 
-On 25 November 2026, RealHunt lists 21 homes for sale in Portugal, each one checked by a person. In Portugal, the median asking price of those 21 homes is €130,000 (€1,364 per m², from the 21 homes with a known size); the cheapest costs €48,000 and the most expensive €189,000. Taxes and fees add about 3–12% to the price of a home in Portugal (figures as of 2026).
+On 26 November 2026, RealHunt lists 21 homes for sale in Portugal, each one checked by a person. In Portugal, the median asking price of those 21 homes is €130,000 (€1,364 per m², from the 21 homes with a known size); the cheapest costs €48,000 and the most expensive €189,000. Taxes and fees add about 3–12% to the price of a home in Portugal (figures as of 2026).
 
-Source: RealHunt, https://realhunt.co/homes/portugal · Updated 25 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
+Source: RealHunt, https://realhunt.co/homes/portugal · Updated 26 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/portugal.json · PDF: https://realhunt.co/data/countries/portugal.pdf
 
 ## Key facts
@@ -18,7 +18,7 @@ Also as JSON: https://realhunt.co/data/countries/portugal.json · PDF: https://r
 | Taxes and fees to buy | 3–12% of the price (as of 2026) |
 | Can foreigners buy? | Yes, same rights as Portuguese citizens (IMT increase for foreign second-home buyers announced Sept 2025). |
 | Yearly property tax | IMI 0.3-0.45% of taxable value (urban), set by municipality. |
-| Date of these figures | 25 November 2026 |
+| Date of these figures | 26 November 2026 |
 
 ## Costs and taxes
 

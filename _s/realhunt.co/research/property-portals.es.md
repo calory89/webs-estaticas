@@ -2,7 +2,7 @@
 
 Este es un directorio de 179 portales inmobiliarios de 54 países: los portales nacionales, las grandes webs de anuncios clasificados y los portales pensados para compradores extranjeros, cada uno con su dirección. Aparecen en el orden en que RealHunt los consulta cuando busca casas en ese país. Estar en la lista no es una recomendación ni una valoración.
 
-Actualizado el 25 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/property-portals (CC BY 4.0).
+Actualizado el 26 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/property-portals (CC BY 4.0).
 
 ## España
 
@@ -237,6 +237,8 @@ RealHunt: 16 casas revisadas, https://realhunt.co/es/homes/canada
 3. [Lamudi MX](https://www.lamudi.com.mx/)
 4. [Propiedades.com](https://propiedades.com/)
 5. [Century 21 México](https://century21mexico.com/)
+
+RealHunt: 14 casas revisadas, https://realhunt.co/es/homes/mexico
 
 ## Colombia
 

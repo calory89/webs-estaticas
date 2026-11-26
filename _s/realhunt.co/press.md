@@ -4,7 +4,7 @@ Press
 
 RealHunt (realhunt.co) is a website where foreigners find, check and buy property: it lists cheap homes for sale around the world, each one checked by a person and graded from 70 to 98 against every other home on the site. It is not an estate agent: every home links to its original listing and buyers pay nothing. It also publishes, free to quote, the buying rules, taxes and costs of 20 countries and data on what cheap homes cost.
 
-Numbers updated 25 November 2026 · Press contact: carlos@equinoxinvestmentgroup.com
+Numbers updated 26 November 2026 · Press contact: carlos@equinoxinvestmentgroup.com
 
 ### RealHunt in numbers
 
@@ -69,4 +69,4 @@ Press, data requests and interviews: carlos@equinoxinvestmentgroup.com. We answe
 Write to the press contact[All the data](https://realhunt.co/research)[Badges and widgets](https://realhunt.co/embed)
 
 ---
-Source: https://realhunt.co/press (RealHunt, 2026-11-25)
+Source: https://realhunt.co/press (RealHunt, 2026-11-26)

@@ -2,13 +2,13 @@
  "noindex_copies": 8,
  "written_by_hand": {
   "pages": 838,
-  "words": 1066286,
+  "words": 1065161,
   "english": 0,
   "failed": []
  },
  "max_english_share": 0.004,
  "max_english_words": 0,
- "twins": 1193,
+ "twins": 1226,
  "groups": {
   "homes": {
    "pages": 726,
@@ -19,9 +19,9 @@
    "spanish_pct": 0
   },
   "places": {
-   "pages": 638,
-   "twins": 638,
-   "words": 1370600,
+   "pages": 671,
+   "twins": 671,
+   "words": 1427465,
    "english": 0,
    "spanish_pct": 100
   },

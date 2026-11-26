@@ -4,7 +4,7 @@ How RealHunt works
 
 Buyers pay nothing. RealHunt earns a fee only from developers of new-build projects, and only when a buyer it introduced buys. It takes no money for the resale homes it lists, for a place in a list or for a score.
 
-Updated 25 November 2026
+Updated 26 November 2026
 
 ### Where the money comes from
 
@@ -35,4 +35,4 @@ RealHunt is run by Equinox Investment Group LLC (Sheridan, Wyoming, United State
 - [Editorial policy](https://realhunt.co/editorial-policy)
 
 ---
-Source: https://realhunt.co/how-we-make-money (RealHunt, 2026-11-25)
+Source: https://realhunt.co/how-we-make-money (RealHunt, 2026-11-26)

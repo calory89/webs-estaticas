@@ -1,8 +1,8 @@
 # Casas baratas en Uruguay: datos clave y todas las casas de RealHunt
 
-A 25 de noviembre de 2026, RealHunt publica 4 casas en venta en Uruguay, revisadas una a una por una persona. En Uruguay, el precio de salida mediano de esas 4 casas es de 180.300 € (1.649 € por m², calculado con las 4 casas de superficie conocida); la más barata cuesta 150.300 € y la más cara, 186.300 €. Los impuestos y gastos de compra suman alrededor del 5–8% del precio de una casa en Uruguay (cifras de 2026). Con 4 casas la muestra es pequeña, así que la mediana de Uruguay es solo orientativa.
+A 26 de noviembre de 2026, RealHunt publica 4 casas en venta en Uruguay, revisadas una a una por una persona. En Uruguay, el precio de salida mediano de esas 4 casas es de 180.300 € (1.649 € por m², calculado con las 4 casas de superficie conocida); la más barata cuesta 150.300 € y la más cara, 186.300 €. Los impuestos y gastos de compra suman alrededor del 5–8% del precio de una casa en Uruguay (cifras de 2026). Con 4 casas la muestra es pequeña, así que la mediana de Uruguay es solo orientativa.
 
-Fuente: RealHunt, https://realhunt.co/es/homes/uruguay · Actualizado el 25 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
+Fuente: RealHunt, https://realhunt.co/es/homes/uruguay · Actualizado el 26 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/uruguay.json · PDF: https://realhunt.co/data/countries/uruguay.es.pdf
 
 ## Datos clave
@@ -17,7 +17,7 @@ También en JSON: https://realhunt.co/data/countries/uruguay.json · PDF: https:
 | Nota RealHunt mediana (de 70 a 98) | 85 |
 | Impuestos y gastos de compra | 5–8% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sí. No hay límites a los tipos de inmuebles que pueden comprar los extranjeros en Uruguay, y tienen los mismos derechos de propiedad que los ciudadanos. |
-| Fecha de estas cifras | 25 de noviembre de 2026 |
+| Fecha de estas cifras | 26 de noviembre de 2026 |
 
 ## Gastos e impuestos
 

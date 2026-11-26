@@ -1,30 +1,30 @@
-## Houses for sale in Mexico
+## Apartments for sale in Mexico
 
-Updated 20 November 2026. Newest home added 20 November 2026.
+Updated 26 November 2026. Newest home added 5 October 2026.
 
-RealHunt lists 3 houses for sale in Mexico today, priced from €152,100 to €216,600. The cheapest costs €152,100: [Three-bedroom house in a gated estate with pool and tennis in El Marqués, Querétaro](https://realhunt.co/deal/mx-queretaro-el-marques-three-bed-house-pool-tennis-3-1m), in El Marqués (146 m², 3 bedrooms). The median price is €195,300 (€1,042/m²), against €93,111 (€1,221/m²) for the 613 homes on RealHunt in 31 countries.
+RealHunt lists 9 apartments for sale in Mexico today, priced from €50,575 to €98,621. The cheapest costs €50,575: [2-bed apartment in San Pedro Tlaquepaque, Jalisco](https://realhunt.co/deal/san-pedro-tlaquepaque-50575), in San Pedro Tlaquepaque (49 m², 2 bedrooms). The median price is €83,298 (€1,140/m²), against €93,000 (€1,200/m²) for the 654 homes on RealHunt in 30 countries.
 Can you buy here? Read this first
 Yes, but in the Restricted Zone (within 50 km of the coast or 100 km of borders, which covers Tulum and Playa del Carmen) only through a fideicomiso bank trust or a Mexican company; direct ownership elsewhere.
 
 [Rules by nationality](https://realhunt.co/can-i-buy) · Buying costs and rules for foreigners in Mexico
 
 Homes
-3
+9
 
 From
-€152,100
+€50,575
 
 Median price
-€195,300
+€83,298
 
 Median per m²
-€1,042/m²
+€1,140/m²
 
 Median size
-160 m²
+65 m²
 
 Top score
-88
+93
 
 Buying costs
 3.5–8%
@@ -33,42 +33,54 @@ Foreign buyers
 Some limits
 
 Data of
-20 Nov 2026
+26 Nov 2026
 
-### The 3 homes, best score first
+### The 9 homes, best score first
 
-- [Score 88New€195,300Five-bed stone and brick house with a Lake Chapala view terrace in El TepehuajeEl Tepehuaje, Jalisco245 m² · 5 bed · €797/m² · Added todayAsking MX$4,080,000 (about €195,300).](https://realhunt.co/deal/mx-tuxcueca-el-tepehuaje-lake-chapala-view-house-4-08m)
-- [Score 86New€216,600Colonial house with a pool and garden in Barrio de Santiago, Mérida centreMérida, Yucatán160 m² · 2 bed · €1,354/m² · Added todayAsking MX$4,450,000 (about €216,600) for Casa Ya'axche', a single-storey colonial house of 160 m² on a 279 m² plot in Barrio de Santiago, one of…](https://realhunt.co/deal/mx-merida-centro-colonial-house-pool-barrio-santiago-4-45m)
-- [Score 85New€152,100Three-bedroom house in a gated estate with pool and tennis in El Marqués, QuerétaroEl Marqués, Querétaro146 m² · 3 bed · €1,042/m² · Added todayAsking MX$3,125,000 (about €152,100) for a three-year-old two-storey house of about 146 m² in Alleza Mirador, a gated estate in El Marqués on the…](https://realhunt.co/deal/mx-queretaro-el-marques-three-bed-house-pool-tennis-3-1m)
+- [Score 93€50,5752-bed apartment in San Pedro Tlaquepaque, JaliscoSan Pedro Tlaquepaque, Jalisco49 m² · 2 bed · €1,032/m² · 64 days on RealHunt49 m², 2 bed.](https://realhunt.co/deal/san-pedro-tlaquepaque-50575)
+- [Score 90€80,9203-bed apartment near the beach in Mazatlán, SinaloaMazatlán, Sinaloa71 m² · 3 bed · €1,140/m² · 64 days on RealHunt71 m², 3 bed, 2 bath.](https://realhunt.co/deal/mazatlan-80920)
+- [Score 89€70,8052-bed house in Tonalá, JaliscoTonalá, Jalisco65 m² · 2 bed · €1,089/m² · 64 days on RealHunt65 m², 2 bed.](https://realhunt.co/deal/tonala-70805)
+- [Score 87€68,9843-bed apartment in Cuautlancingo, PueblaCuautlancingo, Puebla78 m² · 3 bed · €884/m² · 64 days on RealHunt78 m², 3 bed, 2 bath.](https://realhunt.co/deal/cuautlancingo-68984)
+- [Score 86€86,100New 2-bed condo with rooftop and terrace in Mazatlán, ready nowMazatlán, Sinaloa68 m² · 2 bed · €1,266/m² · 52 days on RealHuntA 68 m² apartment in La Rocca, a gated complex of eight towers on Av.](https://realhunt.co/deal/mx-mazatlan-86k-809756)
+- [Score 86€98,6212-bed apartment in Mazatlán, SinaloaMazatlán, Sinaloa89 m² · 2 bed · €1,108/m² · 64 days on RealHuntAn 89 m² apartment with two bedrooms and two bathrooms in Mazatlán, Sinaloa.](https://realhunt.co/deal/mazatlan-98621)
+- [Score 86€83,2982-bed apartment in Mazatlán, SinaloaMazatlán, Sinaloa60 m² · 2 bed · €1,388/m² · 64 days on RealHunt60 m², 2 bed.](https://realhunt.co/deal/mazatlan-83298)
+- [Score 84€97,1002-bed, 2-bath apartment with pool in a gated Mazatlán complexMazatlán, Sinaloa65 m² · 2 bed · €1,494/m² · 52 days on RealHuntA 65 m² apartment in Adora Residencial, a private gated community in Mazatlán: two bedrooms, two bathrooms and covered parking, with a pool…](https://realhunt.co/deal/mx-mazatlan-97k-889034)
+- [Score 84€83,4482-bed apartment in Mazatlán, SinaloaMazatlán, Sinaloa60 m² · 2 bed · €1,391/m² · 64 days on RealHuntA 60 m² two-bedroom apartment in Mazatlán, Sinaloa.](https://realhunt.co/deal/mazatlan-83448)
 
-### Compare the 3 homes, cheapest first
+### Compare the 9 homes, cheapest first
 
 Home | Place | Price | Size | Per m² | Beds | Score | Added
-[Three-bedroom house in a gated estate with pool and tennis in El Marqués, Querétaro](https://realhunt.co/deal/mx-queretaro-el-marques-three-bed-house-pool-tennis-3-1m) | El Marqués, Querétaro | €152,100 | 146 m² | €1,042/m² | 3 | 85 | 20 Nov 2026
-[Five-bed stone and brick house with a Lake Chapala view terrace in El Tepehuaje](https://realhunt.co/deal/mx-tuxcueca-el-tepehuaje-lake-chapala-view-house-4-08m) | El Tepehuaje, Jalisco | €195,300 | 245 m² | €797/m² | 5 | 88 | 20 Nov 2026
-[Colonial house with a pool and garden in Barrio de Santiago, Mérida centre](https://realhunt.co/deal/mx-merida-centro-colonial-house-pool-barrio-santiago-4-45m) | Mérida, Yucatán | €216,600 | 160 m² | €1,354/m² | 2 | 86 | 20 Nov 2026
+[2-bed apartment in San Pedro Tlaquepaque, Jalisco](https://realhunt.co/deal/san-pedro-tlaquepaque-50575) | San Pedro Tlaquepaque, Jalisco | €50,575 | 49 m² | €1,032/m² | 2 | 93 | 23 Sep 2026
+[3-bed apartment in Cuautlancingo, Puebla](https://realhunt.co/deal/cuautlancingo-68984) | Cuautlancingo, Puebla | €68,984 | 78 m² | €884/m² | 3 | 87 | 23 Sep 2026
+[2-bed house in Tonalá, Jalisco](https://realhunt.co/deal/tonala-70805) | Tonalá, Jalisco | €70,805 | 65 m² | €1,089/m² | 2 | 89 | 23 Sep 2026
+[3-bed apartment near the beach in Mazatlán, Sinaloa](https://realhunt.co/deal/mazatlan-80920) | Mazatlán, Sinaloa | €80,920 | 71 m² | €1,140/m² | 3 | 90 | 23 Sep 2026
+[2-bed apartment in Mazatlán, Sinaloa](https://realhunt.co/deal/mazatlan-83298) | Mazatlán, Sinaloa | €83,298 | 60 m² | €1,388/m² | 2 | 86 | 23 Sep 2026
+[2-bed apartment in Mazatlán, Sinaloa](https://realhunt.co/deal/mazatlan-83448) | Mazatlán, Sinaloa | €83,448 | 60 m² | €1,391/m² | 2 | 84 | 23 Sep 2026
+[New 2-bed condo with rooftop and terrace in Mazatlán, ready now](https://realhunt.co/deal/mx-mazatlan-86k-809756) | Mazatlán, Sinaloa | €86,100 | 68 m² | €1,266/m² | 2 | 86 | 5 Oct 2026
+[2-bed, 2-bath apartment with pool in a gated Mazatlán complex](https://realhunt.co/deal/mx-mazatlan-97k-889034) | Mazatlán, Sinaloa | €97,100 | 65 m² | €1,494/m² | 2 | 84 | 5 Oct 2026
+[2-bed apartment in Mazatlán, Sinaloa](https://realhunt.co/deal/mazatlan-98621) | Mazatlán, Sinaloa | €98,621 | 89 m² | €1,108/m² | 2 | 86 | 23 Sep 2026
 
-### The 3 homes in numbers
+### The 9 homes in numbers
 
-- Size: half of them have 160 m² or more. The largest has 245 m²: [Five-bed stone and brick house with a Lake Chapala view terrace in El Tepehuaje](https://realhunt.co/deal/mx-tuxcueca-el-tepehuaje-lake-chapala-view-house-4-08m).
-- Bedrooms: 1 with 2 bedrooms, 1 with 3, 1 with 4 or more.
-- Type: 3 houses.
-- Setting: 1 in villages, 2 in towns.
-- Where: Jalisco (1), Querétaro (1), Yucatán (1).
-- Extras named in the listings: 1 with a garden, 3 with a terrace, 2 with a garage, 2 with a pool, 1 with a fireplace.
-- Scores: 85 to 88 out of 98. The best rated: [Five-bed stone and brick house with a Lake Chapala view terrace in El Tepehuaje](https://realhunt.co/deal/mx-tuxcueca-el-tepehuaje-lake-chapala-view-house-4-08m).
-- Newest, added 20 November 2026: [Five-bed stone and brick house with a Lake Chapala view terrace in El Tepehuaje](https://realhunt.co/deal/mx-tuxcueca-el-tepehuaje-lake-chapala-view-house-4-08m). 3 of these homes were added in the last 30 days.
+- Size: half of them have 65 m² or more. The largest has 89 m²: [2-bed apartment in Mazatlán, Sinaloa](https://realhunt.co/deal/mazatlan-98621).
+- Bedrooms: 7 with 2 bedrooms, 2 with 3.
+- Type: 8 apartments and 1 house.
+- Setting: 6 by the sea, 2 in villages, 1 in towns.
+- Where: Sinaloa (6), Jalisco (2), Puebla (1).
+- Extras named in the listings: 2 with a garden, 1 with a terrace, 7 with a garage, 4 with a pool.
+- Scores: 84 to 93 out of 98. The best rated: [2-bed apartment in San Pedro Tlaquepaque, Jalisco](https://realhunt.co/deal/san-pedro-tlaquepaque-50575).
+- Newest, added 5 October 2026: [New 2-bed condo with rooftop and terrace in Mazatlán, ready now](https://realhunt.co/deal/mx-mazatlan-86k-809756).
 
 ### Median price by region in Mexico
 
 Region | Homes | Median price
-Querétaro | 1 | €152,100
-Jalisco | 1 | €195,300
-Yucatán | 1 | €216,600
+Puebla | 1 | €68,984
+Jalisco | 2 | €70,805
+Sinaloa | 6 | €86,100
 
 ### Buying costs and rules for foreigners in Mexico
 
-Taxes and fees add about 3.5 to 8% to the price: Acquisition tax 2-5% + notary 0.5-1% + legal 1-1.5% (GPG 3.5-7.5%), plus 0.5-1.5% for fideicomiso/permit setup; TheLatinvestor budgets 5-8%. On the median home on this page (€195,300) that is €6,836 to €15,624, so €202,136 to €210,924 in all.
+Taxes and fees add about 3.5 to 8% to the price: Acquisition tax 2-5% + notary 0.5-1% + legal 1-1.5% (GPG 3.5-7.5%), plus 0.5-1.5% for fideicomiso/permit setup; TheLatinvestor budgets 5-8%. On the median home on this page (€83,298) that is €2,915 to €6,664, so €86,213 to €89,962 in all.
 
 At the same percentages: on €40,000, €1,400 to €3,200; on €80,000, €2,800 to €6,400; on €150,000, €5,250 to €12,000.
 
@@ -80,19 +92,20 @@ General information, not tax or legal advice. Figures checked in 2026.
 
 ### What to watch out for
 
-- 1 is in a shared building or complex but the listing does not state the community fee: ask for it in writing.
-- As a group these homes score lowest on price (7/100 on average) and highest on distance to an airport (96/100).
+- 1 of 9 sits where our rough flood check reads medium or high. Each home page links the official flood map.
+- 7 of 9 were added more than 60 days ago. Ask the agent whether they are still for sale before you plan a trip.
+- As a group these homes score lowest on space (35/100 on average) and highest on good-weather days (100/100).
 - Planning to rent it out? Quintana Roo: mandatory RETUR-Q registration (since Aug 2025, renewed annually) plus a state operating licence and RFC tax ID; 6% lodging tax; fines up to MXN 100,000.
 
 ### Questions buyers ask
 
-#### How much does a house for sale in Mexico cost?
+#### How much does an apartment for sale in Mexico cost?
 
-Asking prices run from €152,100 to €216,600 across 3 homes. The median is €195,300, or €1,042/m².
+Asking prices run from €50,575 to €98,621 across 9 homes. The median is €83,298, or €1,140/m².
 
-#### What is the cheapest house for sale in Mexico?
+#### What is the cheapest apartment for sale in Mexico?
 
-Three-bedroom house in a gated estate with pool and tennis in El Marqués, Querétaro in El Marqués, listed at €152,100, 146 m², 3 bedrooms. Its RealHunt score is 85.
+2-bed apartment in San Pedro Tlaquepaque, Jalisco in San Pedro Tlaquepaque, listed at €50,575, 49 m², 2 bedrooms. Its RealHunt score is 93.
 
 #### Can foreigners buy a house in Mexico?
 
@@ -100,19 +113,31 @@ Yes, but in the Restricted Zone (within 50 km of the coast or 100 km of borders,
 
 #### What are the buying costs in Mexico?
 
-About 3.5 to 8% on top of the price: Acquisition tax 2-5% + notary 0.5-1% + legal 1-1.5% (GPG 3.5-7.5%), plus 0.5-1.5% for fideicomiso/permit setup; TheLatinvestor budgets 5-8%. On the median home on this page (€195,300) that is €6,836 to €15,624. General information, not tax advice.
+About 3.5 to 8% on top of the price: Acquisition tax 2-5% + notary 0.5-1% + legal 1-1.5% (GPG 3.5-7.5%), plus 0.5-1.5% for fideicomiso/permit setup; TheLatinvestor budgets 5-8%. On the median home on this page (€83,298) that is €2,915 to €6,664. General information, not tax advice.
 
 ### More searches in Mexico
 
-By budget [Under €300,000 3](https://realhunt.co/homes/mexico/under-300000)
+By budget [Under €80,000 3](https://realhunt.co/homes/mexico/under-80000) [Under €100,000 9](https://realhunt.co/homes/mexico/under-100000)
 
-Neighbouring countries [United States 62](https://realhunt.co/homes/united-states)
+By setting [By the sea 6](https://realhunt.co/homes/mexico/by-the-sea)
 
-By country [Spain 137](https://realhunt.co/homes/spain) [Italy 77](https://realhunt.co/homes/italy) [United States 62](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [France 45](https://realhunt.co/homes/france) [Sweden 38](https://realhunt.co/homes/sweden) [Japan 33](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 27](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Portugal 6](https://realhunt.co/homes/portugal) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Colombia 3](https://realhunt.co/homes/colombia)
+By type [Apartments 8](https://realhunt.co/homes/mexico/apartments)
 
-These listings come from casasyterrenos.com (3). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
+By bedrooms [2 bedrooms 7](https://realhunt.co/homes/mexico/2-bedroom)
+
+By feature [With a garage 7](https://realhunt.co/cheap-houses/with-garage-in-mexico)
+
+By feature and budget [With a pool under €100,000 4](https://realhunt.co/cheap-houses/with-pool-under-100000-in-mexico)
+
+In pounds and dollars [Under $100,000 7](https://realhunt.co/cheap-houses/under-100000-dollars-in-mexico)
+
+Neighbouring countries [United States 61](https://realhunt.co/homes/united-states)
+
+By country [Spain 150](https://realhunt.co/homes/spain) [Italy 87](https://realhunt.co/homes/italy) [United States 61](https://realhunt.co/homes/united-states) [France 48](https://realhunt.co/homes/france) [Denmark 46](https://realhunt.co/homes/denmark) [Sweden 41](https://realhunt.co/homes/sweden) [Japan 36](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 26](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Portugal 8](https://realhunt.co/homes/portugal) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Cyprus 6](https://realhunt.co/homes/cyprus) [United Kingdom 6](https://realhunt.co/homes/united-kingdom) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
+
+These listings come from casasyterrenos.com (9). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 
 [Email me new homes in Mexico](https://realhunt.co/alerts?country=Mexico) · [Filter and sort these homes](https://realhunt.co/?country=Mexico#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in Mexico](https://realhunt.co/sitemap/mexico)
 
 ---
-Source: https://realhunt.co/homes/mexico (RealHunt, 2026-11-21). Licence CC BY 4.0: quote it with a link to the page.
+Source: https://realhunt.co/homes/mexico (RealHunt, 2026-11-26). Licence CC BY 4.0: quote it with a link to the page.

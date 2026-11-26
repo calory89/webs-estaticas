@@ -1,30 +1,30 @@
-## Casas en venta en México
+## Pisos en venta en México
 
-Actualizado el 20 de noviembre de 2026. Última vivienda añadida el 20 de noviembre de 2026.
+Actualizado el 26 de noviembre de 2026. Última vivienda añadida el 5 de octubre de 2026.
 
-RealHunt tiene hoy 3 casas en venta en México, con precios de 152.100 € a 216.600 €. La más barata cuesta 152.100 €: [Casa de tres dormitorios en una urbanización cerrada con piscina y tenis en El Marqués, Querétaro](https://realhunt.co/es/deal/mx-queretaro-el-marques-three-bed-house-pool-tennis-3-1m), en El Marqués (146 m², 3 dormitorios). El precio mediano es de 195.300 € (1.042 €/m²), frente a 93.111 € (1.221 €/m²) de las 613 viviendas de RealHunt en 31 países.
+RealHunt tiene hoy 9 pisos en venta en México, con precios de 50.575 € a 98.621 €. La más barata cuesta 50.575 €: [Piso de 2 dormitorios en San Pedro Tlaquepaque, Jalisco](https://realhunt.co/es/deal/san-pedro-tlaquepaque-50575), en San Pedro Tlaquepaque (49 m², 2 dormitorios). El precio mediano es de 83.298 € (1.140 €/m²), frente a 93.000 € (1.200 €/m²) de las 654 viviendas de RealHunt en 30 países.
 ¿Puedes comprar aquí? Lee esto primero
 Sí, pero en la Zona Restringida (dentro de 50 km de la costa o 100 km de fronteras, que cubre Tulum y Playa del Carmen) solo mediante un fideicomiso bancario o una empresa mexicana; propiedad directa en otros lugares.
 
 [Normas según tu nacionalidad](https://realhunt.co/es/can-i-buy) · Gastos de compra y normas para extranjeros en México
 
 Viviendas
-3
+9
 
 Desde
-152.100 €
+50.575 €
 
 Precio mediano
-195.300 €
+83.298 €
 
 Mediana por m²
-1.042 €/m²
+1.140 €/m²
 
 Tamaño mediano
-160 m²
+65 m²
 
 Mejor nota
-88
+93
 
 Gastos de compra
 3,5–8%
@@ -33,42 +33,54 @@ Compradores extranjeros
 Con límites
 
 Datos del
-20 nov 2026
+26 nov 2026
 
-### Las 3 viviendas, de mejor a peor nota
+### Las 9 viviendas, de mejor a peor nota
 
-- [Nota 88Nueva195.300 €Casa de piedra y ladrillo de cinco dormitorios con terraza con vistas al Lago Chapala en El TepehuajeEl Tepehuaje, Jalisco245 m² · 5 dorm. · 797 €/m² · Añadida hoySe pide MX$4.080.000 (aproximadamente 195,3 €).](https://realhunt.co/es/deal/mx-tuxcueca-el-tepehuaje-lake-chapala-view-house-4-08m)
-- [Nota 86Nueva216.600 €Casa colonial con piscina y jardín en Barrio de Santiago, centro de MéridaMérida, Yucatán160 m² · 2 dorm. · 1.354 €/m² · Añadida hoySe pide MX$4.450.000 (aproximadamente 216.600 €) por Casa Ya'axche', una casa colonial de una planta de 160 m² en un solar de 279 m² en Barrio de…](https://realhunt.co/es/deal/mx-merida-centro-colonial-house-pool-barrio-santiago-4-45m)
-- [Nota 85Nueva152.100 €Casa de tres dormitorios en una urbanización cerrada con piscina y tenis en El Marqués, QuerétaroEl Marqués, Querétaro146 m² · 3 dorm. · 1.042 €/m² · Añadida hoySe pide MX$3.125.000 (aproximadamente 152,1 €) por una casa de dos plantas de tres años de antigüedad de aproximadamente 146 m² en Alleza…](https://realhunt.co/es/deal/mx-queretaro-el-marques-three-bed-house-pool-tennis-3-1m)
+- [Nota 9350.575 €Piso de 2 dormitorios en San Pedro Tlaquepaque, JaliscoSan Pedro Tlaquepaque, Jalisco49 m² · 2 dorm. · 1.032 €/m² · 64 días en RealHunt49 m², 2 dormitorios.](https://realhunt.co/es/deal/san-pedro-tlaquepaque-50575)
+- [Nota 9080.920 €Piso de 3 dormitorios cerca de la playa en Mazatlán, SinaloaMazatlán, Sinaloa71 m² · 3 dorm. · 1.140 €/m² · 64 días en RealHunt71 m², 3 dormitorios, 2 baños.](https://realhunt.co/es/deal/mazatlan-80920)
+- [Nota 8970.805 €Casa de 2 dormitorios en Tonalá, JaliscoTonalá, Jalisco65 m² · 2 dorm. · 1.089 €/m² · 64 días en RealHunt65 m², 2 dormitorios.](https://realhunt.co/es/deal/tonala-70805)
+- [Nota 8768.984 €Piso de 3 dormitorios en Cuautlancingo, PueblaCuautlancingo, Puebla78 m² · 3 dorm. · 884 €/m² · 64 días en RealHunt78 m², 3 dormitorios, 2 baños.](https://realhunt.co/es/deal/cuautlancingo-68984)
+- [Nota 8686.100 €Piso nuevo de 2 dormitorios con azotea y terraza en Mazatlán, entrega inmediataMazatlán, Sinaloa68 m² · 2 dorm. · 1.266 €/m² · 52 días en RealHuntPiso de 68 m² en La Rocca, conjunto cerrado de ocho torres en la Av.](https://realhunt.co/es/deal/mx-mazatlan-86k-809756)
+- [Nota 8698.621 €Piso de 2 dormitorios en Mazatlán, SinaloaMazatlán, Sinaloa89 m² · 2 dorm. · 1.108 €/m² · 64 días en RealHuntApartamento de 89 m² con dos dormitorios y dos baños en Mazatlán, Sinaloa.](https://realhunt.co/es/deal/mazatlan-98621)
+- [Nota 8683.298 €Piso de 2 dormitorios en Mazatlán, SinaloaMazatlán, Sinaloa60 m² · 2 dorm. · 1.388 €/m² · 64 días en RealHunt60 m², 2 dormitorios.](https://realhunt.co/es/deal/mazatlan-83298)
+- [Nota 8497.100 €Piso de 2 dormitorios y 2 baños con piscina en un residencial cerrado de MazatlánMazatlán, Sinaloa65 m² · 2 dorm. · 1.494 €/m² · 52 días en RealHuntPiso de 65 m² en Adora Residencial, urbanización privada y cerrada en Mazatlán: dos dormitorios, dos baños y aparcamiento cubierto, con piscina…](https://realhunt.co/es/deal/mx-mazatlan-97k-889034)
+- [Nota 8483.448 €Piso de 2 dormitorios en Mazatlán, SinaloaMazatlán, Sinaloa60 m² · 2 dorm. · 1.391 €/m² · 64 días en RealHuntApartamento de 60 m² con dos dormitorios en Mazatlán, Sinaloa.](https://realhunt.co/es/deal/mazatlan-83448)
 
-### Compara las 3 viviendas, de más barata a más cara
+### Compara las 9 viviendas, de más barata a más cara
 
 Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
-[Casa de tres dormitorios en una urbanización cerrada con piscina y tenis en El Marqués, Querétaro](https://realhunt.co/es/deal/mx-queretaro-el-marques-three-bed-house-pool-tennis-3-1m) | El Marqués, Querétaro | 152.100 € | 146 m² | 1.042 €/m² | 3 | 85 | 20 nov 2026
-[Casa de piedra y ladrillo de cinco dormitorios con terraza con vistas al Lago Chapala en El Tepehuaje](https://realhunt.co/es/deal/mx-tuxcueca-el-tepehuaje-lake-chapala-view-house-4-08m) | El Tepehuaje, Jalisco | 195.300 € | 245 m² | 797 €/m² | 5 | 88 | 20 nov 2026
-[Casa colonial con piscina y jardín en Barrio de Santiago, centro de Mérida](https://realhunt.co/es/deal/mx-merida-centro-colonial-house-pool-barrio-santiago-4-45m) | Mérida, Yucatán | 216.600 € | 160 m² | 1.354 €/m² | 2 | 86 | 20 nov 2026
+[Piso de 2 dormitorios en San Pedro Tlaquepaque, Jalisco](https://realhunt.co/es/deal/san-pedro-tlaquepaque-50575) | San Pedro Tlaquepaque, Jalisco | 50.575 € | 49 m² | 1.032 €/m² | 2 | 93 | 23 sept 2026
+[Piso de 3 dormitorios en Cuautlancingo, Puebla](https://realhunt.co/es/deal/cuautlancingo-68984) | Cuautlancingo, Puebla | 68.984 € | 78 m² | 884 €/m² | 3 | 87 | 23 sept 2026
+[Casa de 2 dormitorios en Tonalá, Jalisco](https://realhunt.co/es/deal/tonala-70805) | Tonalá, Jalisco | 70.805 € | 65 m² | 1.089 €/m² | 2 | 89 | 23 sept 2026
+[Piso de 3 dormitorios cerca de la playa en Mazatlán, Sinaloa](https://realhunt.co/es/deal/mazatlan-80920) | Mazatlán, Sinaloa | 80.920 € | 71 m² | 1.140 €/m² | 3 | 90 | 23 sept 2026
+[Piso de 2 dormitorios en Mazatlán, Sinaloa](https://realhunt.co/es/deal/mazatlan-83298) | Mazatlán, Sinaloa | 83.298 € | 60 m² | 1.388 €/m² | 2 | 86 | 23 sept 2026
+[Piso de 2 dormitorios en Mazatlán, Sinaloa](https://realhunt.co/es/deal/mazatlan-83448) | Mazatlán, Sinaloa | 83.448 € | 60 m² | 1.391 €/m² | 2 | 84 | 23 sept 2026
+[Piso nuevo de 2 dormitorios con azotea y terraza en Mazatlán, entrega inmediata](https://realhunt.co/es/deal/mx-mazatlan-86k-809756) | Mazatlán, Sinaloa | 86.100 € | 68 m² | 1.266 €/m² | 2 | 86 | 5 oct 2026
+[Piso de 2 dormitorios y 2 baños con piscina en un residencial cerrado de Mazatlán](https://realhunt.co/es/deal/mx-mazatlan-97k-889034) | Mazatlán, Sinaloa | 97.100 € | 65 m² | 1.494 €/m² | 2 | 84 | 5 oct 2026
+[Piso de 2 dormitorios en Mazatlán, Sinaloa](https://realhunt.co/es/deal/mazatlan-98621) | Mazatlán, Sinaloa | 98.621 € | 89 m² | 1.108 €/m² | 2 | 86 | 23 sept 2026
 
-### Las 3 viviendas en cifras
+### Las 9 viviendas en cifras
 
-- Tamaño: la mitad tiene 160 m² o más. La más grande tiene 245 m²: [Casa de piedra y ladrillo de cinco dormitorios con terraza con vistas al Lago Chapala en El Tepehuaje](https://realhunt.co/es/deal/mx-tuxcueca-el-tepehuaje-lake-chapala-view-house-4-08m).
-- Dormitorios: 1 con 2 dormitorios, 1 con 3, 1 con 4 o más.
-- Tipo: 3 casas.
-- Entorno: 1 en pueblos, 2 en ciudad.
-- Dónde: Jalisco (1), Querétaro (1), Yucatán (1).
-- Extras que mencionan los anuncios: 1 con jardín, 3 con terraza, 2 con garaje, 2 con piscina, 1 con chimenea.
-- Notas: de 85 a 88 sobre 98. La de mejor nota: [Casa de piedra y ladrillo de cinco dormitorios con terraza con vistas al Lago Chapala en El Tepehuaje](https://realhunt.co/es/deal/mx-tuxcueca-el-tepehuaje-lake-chapala-view-house-4-08m).
-- La más reciente, añadida el 20 de noviembre de 2026: [Casa de piedra y ladrillo de cinco dormitorios con terraza con vistas al Lago Chapala en El Tepehuaje](https://realhunt.co/es/deal/mx-tuxcueca-el-tepehuaje-lake-chapala-view-house-4-08m). 3 de estas viviendas se añadieron en los últimos 30 días.
+- Tamaño: la mitad tiene 65 m² o más. La más grande tiene 89 m²: [Piso de 2 dormitorios en Mazatlán, Sinaloa](https://realhunt.co/es/deal/mazatlan-98621).
+- Dormitorios: 7 con 2 dormitorios, 2 con 3.
+- Tipo: 8 pisos y 1 casa.
+- Entorno: 6 junto al mar, 2 en pueblos, 1 en ciudad.
+- Dónde: Sinaloa (6), Jalisco (2), Puebla (1).
+- Extras que mencionan los anuncios: 2 con jardín, 1 con terraza, 7 con garaje, 4 con piscina.
+- Notas: de 84 a 93 sobre 98. La de mejor nota: [Piso de 2 dormitorios en San Pedro Tlaquepaque, Jalisco](https://realhunt.co/es/deal/san-pedro-tlaquepaque-50575).
+- La más reciente, añadida el 5 de octubre de 2026: [Piso nuevo de 2 dormitorios con azotea y terraza en Mazatlán, entrega inmediata](https://realhunt.co/es/deal/mx-mazatlan-86k-809756).
 
 ### Precio mediano por región en México
 
 Región | Viviendas | Precio mediano
-Querétaro | 1 | 152.100 €
-Jalisco | 1 | 195.300 €
-Yucatán | 1 | 216.600 €
+Puebla | 1 | 68.984 €
+Jalisco | 2 | 70.805 €
+Sinaloa | 6 | 86.100 €
 
 ### Gastos de compra y normas para extranjeros en México
 
-Los impuestos y gastos añaden alrededor de un 3,5 a 8 % al precio: Impuesto sobre adquisición de inmuebles 2-5% + notario 0,5-1% + abogado 1-1,5% (GPG 3,5-7,5%), más 0,5-1,5% para constituir el fideicomiso o el permiso; TheLatinvestor calcula un 5-8%. En la vivienda mediana de esta página (195.300 €) son de 6.836 € a 15.624 €, es decir, de 202.136 € a 210.924 € en total.
+Los impuestos y gastos añaden alrededor de un 3,5 a 8 % al precio: Impuesto sobre adquisición de inmuebles 2-5% + notario 0,5-1% + abogado 1-1,5% (GPG 3,5-7,5%), más 0,5-1,5% para constituir el fideicomiso o el permiso; TheLatinvestor calcula un 5-8%. En la vivienda mediana de esta página (83.298 €) son de 2.915 € a 6.664 €, es decir, de 86.213 € a 89.962 € en total.
 
 Con los mismos porcentajes: sobre 40.000 €, de 1.400 € a 3.200 €; sobre 80.000 €, de 2.800 € a 6.400 €; sobre 150.000 €, de 5.250 € a 12.000 €.
 
@@ -80,19 +92,20 @@ Información general, no asesoramiento fiscal ni legal. Datos revisados en 2026.
 
 ### En qué fijarse antes de comprar
 
-- 1 está en un edificio o una urbanización con gastos comunes, pero el anuncio no dice la cuota: pídela por escrito.
-- En conjunto, estas viviendas puntúan más bajo en precio (7/100 de media) y más alto en cercanía a un aeropuerto (96/100).
+- 1 de 9 está donde nuestra comprobación orientativa de inundación da riesgo medio o alto. La ficha de cada vivienda enlaza el mapa oficial.
+- 7 de 9 se añadieron hace más de 60 días. Pregunta a la agencia si siguen en venta antes de organizar un viaje.
+- En conjunto, estas viviendas puntúan más bajo en espacio (35/100 de media) y más alto en días de buen tiempo (100/100).
 - ¿Piensas alquilarla? Quintana Roo: registro RETUR-Q obligatorio (desde ago 2025, renovado anualmente) más una licencia operativa estatal y RFC; impuesto hotelero 6%; multas hasta MXN 100.000.
 
 ### Preguntas de quienes compran
 
-#### ¿Cuánto cuesta una casa en venta en México?
+#### ¿Cuánto cuesta un piso en venta en México?
 
-Los precios de venta van de 152.100 € a 216.600 € entre 3 viviendas. La mediana es de 195.300 € (1.042 €/m²).
+Los precios de venta van de 50.575 € a 98.621 € entre 9 viviendas. La mediana es de 83.298 € (1.140 €/m²).
 
-#### ¿Cuál es la casa más barata en venta en México?
+#### ¿Cuál es el piso más barato en venta en México?
 
-Casa de tres dormitorios en una urbanización cerrada con piscina y tenis en El Marqués, Querétaro, en El Marqués, anunciada por 152.100 €, con 146 m² y 3 dormitorios. Su nota en RealHunt es 85.
+Piso de 2 dormitorios en San Pedro Tlaquepaque, Jalisco, en San Pedro Tlaquepaque, anunciada por 50.575 €, con 49 m² y 2 dormitorios. Su nota en RealHunt es 93.
 
 #### ¿Pueden los extranjeros comprar una casa en México?
 
@@ -100,19 +113,31 @@ Sí, pero en la Zona Restringida (dentro de 50 km de la costa o 100 km de fronte
 
 #### ¿Cuáles son los gastos de compra en México?
 
-Alrededor de un 3,5 a 8 % además del precio: Impuesto sobre adquisición de inmuebles 2-5% + notario 0,5-1% + abogado 1-1,5% (GPG 3,5-7,5%), más 0,5-1,5% para constituir el fideicomiso o el permiso; TheLatinvestor calcula un 5-8%. En la vivienda mediana de esta página (195.300 €) son de 6.836 € a 15.624 €. Información general, no asesoramiento fiscal.
+Alrededor de un 3,5 a 8 % además del precio: Impuesto sobre adquisición de inmuebles 2-5% + notario 0,5-1% + abogado 1-1,5% (GPG 3,5-7,5%), más 0,5-1,5% para constituir el fideicomiso o el permiso; TheLatinvestor calcula un 5-8%. En la vivienda mediana de esta página (83.298 €) son de 2.915 € a 6.664 €. Información general, no asesoramiento fiscal.
 
 ### Más búsquedas en México
 
-Por presupuesto [Menos de 300.000 € 3](https://realhunt.co/es/homes/mexico/under-300000)
+Por presupuesto [Menos de 80.000 € 3](https://realhunt.co/es/homes/mexico/under-80000) [Menos de 100.000 € 9](https://realhunt.co/es/homes/mexico/under-100000)
 
-Países vecinos [Estados Unidos 62](https://realhunt.co/es/homes/united-states)
+Por entorno [Junto al mar 6](https://realhunt.co/es/homes/mexico/by-the-sea)
 
-Por país [España 137](https://realhunt.co/es/homes/spain) [Italia 77](https://realhunt.co/es/homes/italy) [Estados Unidos 62](https://realhunt.co/es/homes/united-states) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Francia 45](https://realhunt.co/es/homes/france) [Suecia 38](https://realhunt.co/es/homes/sweden) [Japón 33](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 27](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 16](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Portugal 6](https://realhunt.co/es/homes/portugal) [Chipre 5](https://realhunt.co/es/homes/cyprus) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Reino Unido 5](https://realhunt.co/es/homes/united-kingdom) [Uruguay 4](https://realhunt.co/es/homes/uruguay) [Irlanda 4](https://realhunt.co/es/homes/ireland) [Colombia 3](https://realhunt.co/es/homes/colombia)
+Por tipo [Pisos 8](https://realhunt.co/es/homes/mexico/apartments)
 
-Estos anuncios proceden de casasyterrenos.com (3). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
+Por dormitorios [2 dormitorios 7](https://realhunt.co/es/homes/mexico/2-bedroom)
+
+Por característica [Con garaje 7](https://realhunt.co/es/cheap-houses/with-garage-in-mexico)
+
+Por característica y presupuesto [Con piscina, menos de 100.000 € 4](https://realhunt.co/es/cheap-houses/with-pool-under-100000-in-mexico)
+
+En libras y en dólares [Menos de 100.000 dólares 7](https://realhunt.co/es/cheap-houses/under-100000-dollars-in-mexico)
+
+Países vecinos [Estados Unidos 61](https://realhunt.co/es/homes/united-states)
+
+Por país [España 150](https://realhunt.co/es/homes/spain) [Italia 87](https://realhunt.co/es/homes/italy) [Estados Unidos 61](https://realhunt.co/es/homes/united-states) [Francia 48](https://realhunt.co/es/homes/france) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Suecia 41](https://realhunt.co/es/homes/sweden) [Japón 36](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 26](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 16](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Portugal 8](https://realhunt.co/es/homes/portugal) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Chipre 6](https://realhunt.co/es/homes/cyprus) [Reino Unido 6](https://realhunt.co/es/homes/united-kingdom) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Uruguay 4](https://realhunt.co/es/homes/uruguay) [Irlanda 4](https://realhunt.co/es/homes/ireland) [Colombia 3](https://realhunt.co/es/homes/colombia) [República Checa 3](https://realhunt.co/es/homes/czech-republic)
+
+Estos anuncios proceden de casasyterrenos.com (9). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 
 [Avísame por correo de viviendas nuevas en México](https://realhunt.co/es/alerts?country=Mexico) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Mexico#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en México](https://realhunt.co/es/sitemap/mexico)
 
 ---
-Fuente: https://realhunt.co/es/homes/mexico (RealHunt, 2026-11-21). Licencia CC BY 4.0: se puede citar con un enlace a la página.
+Fuente: https://realhunt.co/es/homes/mexico (RealHunt, 2026-11-26). Licencia CC BY 4.0: se puede citar con un enlace a la página.

@@ -1,8 +1,8 @@
 # Cheap homes in the United States: key facts and every home on RealHunt
 
-On 25 November 2026, RealHunt lists 62 homes for sale in the United States, each one checked by a person. In the United States, the median asking price of those 62 homes is €214,900 (€1,570 per m², from the 62 homes with a known size); the cheapest costs €65,428 and the most expensive €447,600. Taxes and fees add about 2–5% to the price of a home in the United States (figures as of 2026).
+On 26 November 2026, RealHunt lists 62 homes for sale in the United States, each one checked by a person. In the United States, the median asking price of those 62 homes is €214,900 (€1,570 per m², from the 62 homes with a known size); the cheapest costs €65,428 and the most expensive €447,600. Taxes and fees add about 2–5% to the price of a home in the United States (figures as of 2026).
 
-Source: RealHunt, https://realhunt.co/homes/united-states · Updated 25 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
+Source: RealHunt, https://realhunt.co/homes/united-states · Updated 26 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/united-states.json · PDF: https://realhunt.co/data/countries/united-states.pdf
 
 ## Key facts
@@ -18,7 +18,7 @@ Also as JSON: https://realhunt.co/data/countries/united-states.json · PDF: http
 | Taxes and fees to buy | 2–5% of the price (as of 2026) |
 | Can foreigners buy? | Yes. There is no federal ban on foreigners buying homes, but about 30 states have added some limits, and Texas and Florida restrict buyers from certain countries such as China. |
 | Yearly property tax | Property tax is set locally and in 2024 averaged about 1.22% of value across the largest city in each state, from 0.30% in Honolulu to 3.02% in Detroit. |
-| Date of these figures | 25 November 2026 |
+| Date of these figures | 26 November 2026 |
 
 ## Costs and taxes
 

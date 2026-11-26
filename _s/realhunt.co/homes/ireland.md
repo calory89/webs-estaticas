@@ -1,8 +1,8 @@
 ## Homes for sale in Ireland
 
-Updated 25 November 2026. Newest home added 20 November 2026.
+Updated 26 November 2026. Newest home added 20 November 2026.
 
-RealHunt lists 4 homes for sale in Ireland today, priced from €170,000 to €230,000. The cheapest costs €170,000: [Renovated village house with an A3 energy rating near Killala harbour, Mayo](https://realhunt.co/deal/ie-killala-renovated-village-house-a3-energy-170k), in Killala (95 m², 1 bedroom). The median price is €230,000 (€2,255/m²), against €93,200 (€1,220/m²) for the 616 homes on RealHunt in 29 countries.
+RealHunt lists 4 homes for sale in Ireland today, priced from €170,000 to €230,000. The cheapest costs €170,000: [Renovated village house with an A3 energy rating near Killala harbour, Mayo](https://realhunt.co/deal/ie-killala-renovated-village-house-a3-energy-170k), in Killala (95 m², 1 bedroom). The median price is €230,000 (€2,255/m²), against €93,000 (€1,200/m²) for the 654 homes on RealHunt in 30 countries.
 
 Homes
 4
@@ -26,14 +26,14 @@ Buying costs
 2.5–3.5%
 
 Data of
-25 Nov 2026
+26 Nov 2026
 
 ### The 4 homes, best score first
 
-- [Score 83New€170,000Renovated village house with an A3 energy rating near Killala harbour, MayoKillala, County Mayo95 m² · 1 bed · €1,789/m² · 5 days on RealHuntA recently renovated two-storey house on Gore Street in the centre of Killala, a short stroll from the harbour on Killala Bay.](https://realhunt.co/deal/ie-killala-renovated-village-house-a3-energy-170k)
-- [Score 80New€230,000Sea-view two-bed end-of-terrace house above the Atlantic in Kilkieran, ConnemaraKilkieran, County Galway102 m² · 2 bed · €2,255/m² · 5 days on RealHuntAn end-of-terrace house in a small, tidy development on a raised site above the Atlantic near Kilkieran village in Connemara, with wide sea views.](https://realhunt.co/deal/ie-kilkieran-connemara-sea-view-two-bed-house-230k)
-- [Score 80New€230,000Three-bed marina-view apartment with roof terrace and boat berth in Leitrim VillageLeitrim Village, County Leitrim121 m² · 3 bed · €1,901/m² · 5 days on RealHuntA 121 m² three-bedroom apartment for €230,000, sold fully furnished, with a private marina berth included.](https://realhunt.co/deal/ie-leitrim-village-marina-view-apartment-berth-230k)
-- [Score 77New€220,000Ground-floor two-bed flat with an en suite, a walk from Tramore beach, WaterfordTramore, County Waterford76 m² · 2 bed · €2,895/m² · 5 days on RealHuntA ground-floor flat in the Pebble Beach development in Tramore, within walking distance of the beach and promenade, set among lawns with views of…](https://realhunt.co/deal/ie-tramore-ground-floor-two-bed-flat-near-beach-220k)
+- [Score 83New€170,000Renovated village house with an A3 energy rating near Killala harbour, MayoKillala, County Mayo95 m² · 1 bed · €1,789/m² · 6 days on RealHuntA recently renovated two-storey house on Gore Street in the centre of Killala, a short stroll from the harbour on Killala Bay.](https://realhunt.co/deal/ie-killala-renovated-village-house-a3-energy-170k)
+- [Score 80New€230,000Sea-view two-bed end-of-terrace house above the Atlantic in Kilkieran, ConnemaraKilkieran, County Galway102 m² · 2 bed · €2,255/m² · 6 days on RealHuntAn end-of-terrace house in a small, tidy development on a raised site above the Atlantic near Kilkieran village in Connemara, with wide sea views.](https://realhunt.co/deal/ie-kilkieran-connemara-sea-view-two-bed-house-230k)
+- [Score 80New€230,000Three-bed marina-view apartment with roof terrace and boat berth in Leitrim VillageLeitrim Village, County Leitrim121 m² · 3 bed · €1,901/m² · 6 days on RealHuntA 121 m² three-bedroom apartment for €230,000, sold fully furnished, with a private marina berth included.](https://realhunt.co/deal/ie-leitrim-village-marina-view-apartment-berth-230k)
+- [Score 77New€220,000Ground-floor two-bed flat with an en suite, a walk from Tramore beach, WaterfordTramore, County Waterford76 m² · 2 bed · €2,895/m² · 6 days on RealHuntA ground-floor flat in the Pebble Beach development in Tramore, within walking distance of the beach and promenade, set among lawns with views of…](https://realhunt.co/deal/ie-tramore-ground-floor-two-bed-flat-near-beach-220k)
 
 ### Compare the 4 homes, cheapest first
 
@@ -107,13 +107,13 @@ By setting [By the sea 3](https://realhunt.co/homes/ireland/by-the-sea)
 
 By feature [With a terrace 3](https://realhunt.co/cheap-houses/with-a-terrace-in-ireland) [Over 80 m² 3](https://realhunt.co/cheap-houses/over-80-sqm-in-ireland)
 
-Neighbouring countries [United Kingdom 5](https://realhunt.co/homes/united-kingdom)
+Neighbouring countries [United Kingdom 6](https://realhunt.co/homes/united-kingdom)
 
-By country [Spain 133](https://realhunt.co/homes/spain) [Italy 85](https://realhunt.co/homes/italy) [United States 61](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [France 44](https://realhunt.co/homes/france) [Sweden 40](https://realhunt.co/homes/sweden) [Japan 34](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 26](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Portugal 6](https://realhunt.co/homes/portugal) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Uruguay 4](https://realhunt.co/homes/uruguay) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
+By country [Spain 150](https://realhunt.co/homes/spain) [Italy 87](https://realhunt.co/homes/italy) [United States 61](https://realhunt.co/homes/united-states) [France 48](https://realhunt.co/homes/france) [Denmark 46](https://realhunt.co/homes/denmark) [Sweden 41](https://realhunt.co/homes/sweden) [Japan 36](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 26](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Mexico 9](https://realhunt.co/homes/mexico) [Portugal 8](https://realhunt.co/homes/portugal) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Cyprus 6](https://realhunt.co/homes/cyprus) [United Kingdom 6](https://realhunt.co/homes/united-kingdom) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [Uruguay 4](https://realhunt.co/homes/uruguay) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
 
 These listings come from myhome.ie (4). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 
 [Email me new homes in Ireland](https://realhunt.co/alerts?country=Ireland) · [Filter and sort these homes](https://realhunt.co/?country=Ireland#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in Ireland](https://realhunt.co/sitemap/ireland)
 
 ---
-Source: https://realhunt.co/homes/ireland (RealHunt, 2026-11-25). Licence CC BY 4.0: quote it with a link to the page.
+Source: https://realhunt.co/homes/ireland (RealHunt, 2026-11-26). Licence CC BY 4.0: quote it with a link to the page.

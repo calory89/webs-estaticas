@@ -36,7 +36,7 @@ Impuesto sobre los ingresos por alquiler: No residentes: retención del 25% de I
 - [68.984 € · Piso de 3 dormitorios en Cuautlancingo, Puebla](https://realhunt.co/es/deal/cuautlancingo-68984) · Cuautlancingo, Puebla · nota 87 · 78 m² · 3 dorm.
 - [86.100 € · Piso nuevo de 2 dormitorios con azotea y terraza en Mazatlán, entrega inmediata](https://realhunt.co/es/deal/mx-mazatlan-86k-809756) · Mazatlán, Sinaloa · nota 86 · 68 m² · 2 dorm.
 
-[Las 14 casas en México](https://realhunt.co/homes/mexico)
+[Las 14 casas en México](https://realhunt.co/es/homes/mexico)
 
 [Gastos, impuestos y fuentes de México](https://realhunt.co/es/costs/mexico) · [Calculadora de gastos de compra para México](https://realhunt.co/es/buying-costs/mexico) · [¿Puedo comprar allí? Normas por nacionalidad](https://realhunt.co/es/can-i-buy)
 
@@ -64,4 +64,4 @@ Impuesto sobre los ingresos por alquiler: No residentes: retención del 25% de I
 Quién escribe esto. RealHunt Research es el nombre con el que RealHunt publica sus propios estudios y guías; RealHunt pertenece a Equinox Investment Group LLC, fundada por Carlos de Ory Gordillo. Las normas, los impuestos y los gastos se recopilan de las fuentes citadas en esta página; los precios salen de las casas publicadas en RealHunt. Información general, no asesoramiento jurídico ni fiscal. [Política editorial y correcciones](https://realhunt.co/es/editorial-policy) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Quiénes somos](https://realhunt.co/es/about)
 
 ---
-Fuente: https://realhunt.co/es/guide/mexico (RealHunt, 2026-11-25)
+Fuente: https://realhunt.co/es/guide/mexico (RealHunt, 2026-11-26)

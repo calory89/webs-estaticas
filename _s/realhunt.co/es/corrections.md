@@ -4,7 +4,7 @@ Confianza
 
 Cuando vemos que algo que publicamos estaba mal o desfasado, cambiamos la página y su fecha, y anotamos el cambio aquí. Esta página recoge los cambios de precio de las casas, los cambios del método y las correcciones que nos han comunicado.
 
-Actualizado el 25 de noviembre de 2026
+Actualizado el 26 de noviembre de 2026
 
 ### Precios cambiados para coincidir con el anuncio
 
@@ -52,4 +52,4 @@ Escribe a carlos@equinoxinvestmentgroup.com con la página y qué está mal. Si 
 - [Política editorial](https://realhunt.co/es/editorial-policy)
 
 ---
-Fuente: https://realhunt.co/es/corrections (RealHunt, 2026-11-25)
+Fuente: https://realhunt.co/es/corrections (RealHunt, 2026-11-26)

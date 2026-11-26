@@ -1,8 +1,8 @@
 # Casas baratas en la República Checa: datos clave y todas las casas de RealHunt
 
-A 25 de noviembre de 2026, RealHunt publica 3 casas en venta en la República Checa, revisadas una a una por una persona. En la República Checa, el precio de salida mediano de esas 3 casas es de 159.600 € (1.464 € por m², calculado con las 3 casas de superficie conocida); la más barata cuesta 130.900 € y la más cara, 179.700 €. Con 3 casas la muestra es pequeña, así que la mediana de la República Checa es solo orientativa.
+A 26 de noviembre de 2026, RealHunt publica 3 casas en venta en la República Checa, revisadas una a una por una persona. En la República Checa, el precio de salida mediano de esas 3 casas es de 159.600 € (1.464 € por m², calculado con las 3 casas de superficie conocida); la más barata cuesta 130.900 € y la más cara, 179.700 €. Con 3 casas la muestra es pequeña, así que la mediana de la República Checa es solo orientativa.
 
-Fuente: RealHunt, https://realhunt.co/es/homes/czech-republic · Actualizado el 25 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
+Fuente: RealHunt, https://realhunt.co/es/homes/czech-republic · Actualizado el 26 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/czech-republic.json · PDF: https://realhunt.co/data/countries/czech-republic.es.pdf
 
 ## Datos clave
@@ -17,7 +17,7 @@ También en JSON: https://realhunt.co/data/countries/czech-republic.json · PDF:
 | Nota RealHunt mediana (de 70 a 98) | 84 |
 | ¿Puede comprar un extranjero? | Sí. Los extranjeros pueden comprar viviendas y terrenos en la República Checa en las mismas condiciones que los checos: los límites para las viviendas terminaron el 1 de mayo de 2009 y los de las tierras agrícolas y los bosques el 1 de mayo de 2011. |
 | Impuesto anual sobre la vivienda | Los propietarios pagan cada año un impuesto sobre el suelo y los edificios (daň z nemovitých věcí); desde 2024 las tarifas subieron de media a 1,8 veces las anteriores, y cada municipio puede multiplicar el impuesto por un coeficiente local de entre 0,5 y 5. La declaración se presenta hasta el 31 de enero y el impuesto se paga hasta el 31 de mayo. |
-| Fecha de estas cifras | 25 de noviembre de 2026 |
+| Fecha de estas cifras | 26 de noviembre de 2026 |
 
 ## Gastos e impuestos
 

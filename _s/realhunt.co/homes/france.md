@@ -1,20 +1,20 @@
 ## Houses for sale in France
 
-Updated 25 November 2026. Newest home added 20 November 2026.
+Updated 26 November 2026. Newest home added 20 November 2026.
 
-RealHunt lists 44 houses for sale in France today, priced from €39,000 to €285,000. The cheapest costs €39,000: [Renovated two-room flat for €39,000 in Saint-Étienne](https://realhunt.co/deal/fr-saint-etienne-39k-705662), in Montaud (45 m², 1 bedroom). The median price is €66,600 (€1,158/m²), against €93,200 (€1,220/m²) for the 616 homes on RealHunt in 29 countries.
+RealHunt lists 48 houses for sale in France today, priced from €39,000 to €285,000. The cheapest costs €39,000: [Renovated two-room flat for €39,000 in Saint-Étienne](https://realhunt.co/deal/fr-saint-etienne-39k-705662), in Montaud (45 m², 1 bedroom). The median price is €69,900 (€1,154/m²), against €93,000 (€1,200/m²) for the 654 homes on RealHunt in 30 countries.
 
 Homes
-44
+48
 
 From
 €39,000
 
 Median price
-€66,600
+€69,900
 
 Median per m²
-€1,158/m²
+€1,154/m²
 
 Median size
 83 m²
@@ -29,44 +29,44 @@ Foreign buyers
 Can buy freely
 
 Data of
-25 Nov 2026
+26 Nov 2026
 
-### The 30 best of 44, by score
+### The 30 best of 48, by score
 
-- [Score 92€39,950171 m² house with a former shop in the centre of Bussière-PoitevineBussière-Poitevine, Haute-Vienne171 m² · 3 bed · €234/m² · 42 days on RealHuntIn the heart of the village, next to the baker, pharmacy and school: a cellar, a kitchen, a living room, a WC and a former shop with a street…](https://realhunt.co/deal/fr-bussiere-poitevine-39k-088775)
-- [Score 91New€148,400Brick house with a 2019 living-room extension, garden and garage in Ohain, AvesnoisOhain, Nord106 m² · 3 bed · €1,400/m² · 11 days on RealHuntA semi-detached brick house in the green Avesnois, next to the Belgian border.](https://realhunt.co/deal/fr-ohain-148k-150454)
-- [Score 91New€137,900Renovated old house with stone walls and terracotta floors in the Perche, 3 minutes from Nogent-le-RotrouVal-au-Perche, Orne81 m² · 3 bed · €1,702/m² · 11 days on RealHuntA renovated old house in a hamlet of only three houses, with an open view, three minutes from Nogent-le-Rotrou.](https://realhunt.co/deal/fr-val-au-perche-137k-446720)
-- [Score 91New€134,375Furnished old stone house with a 53 m² living room and 2,825 m² of garden in Bessac, CharenteBessac, Charente116 m² · 2 bed · €1,158/m² · 11 days on RealHuntA characterful old house sold fully furnished.](https://realhunt.co/deal/fr-bessac-134k-729283)
-- [Score 91New€123,000Fully renovated 19th-century longère on one level with garage in Lencloître, VienneLencloître, Vienne102 m² · 2 bed · €1,206/m² · 11 days on RealHuntA 19th-century longère, fully renovated and all on one level.](https://realhunt.co/deal/fr-lencloitre-123k-157528)
-- [Score 91New€139,000Former level-crossing keeper's house renovated in 2023 on 1,824 m² in Bergerac, DordogneBergerac, Dordogne77 m² · 2 bed · €1,805/m² · 11 days on RealHuntAn old level-crossing keeper's house, 2.5 km from the centre of Bergerac, fully renovated in 2023.](https://realhunt.co/deal/fr-bergerac-139k-175736)
-- [Score 91New€109,760Stone country house from 1550 with a mezzanine and 1,686 m² of land in Nieuil, CharenteNieuil, Charente116 m² · 2 bed · €946/m² · 11 days on RealHuntA stone country house dating from 1550 in a quiet hamlet, 5 km from shops.](https://realhunt.co/deal/fr-nieuil-109k-mo5052)
-- [Score 91New€146,990Tastefully renovated stone-fronted house with full basement near the station in Salbris, SologneSalbris, Loir-et-Cher83 m² · 3 bed · €1,771/m² · 11 days on RealHuntA fully renovated house in the centre of Salbris, close to shops and the train station.](https://realhunt.co/deal/fr-salbris-146k-279709)
-- [Score 91New€136,250Renovated stone house with open countryside views and a heat pump near Saint-Vaury, Creusenear Saint-Vaury, Creuse98 m² · 2 bed · €1,390/m² · 11 days on RealHuntA renovated stone house with a wide open view over the Creuse countryside.](https://realhunt.co/deal/fr-saint-vaury-136k-559424)
-- [Score 91New€125,000Renovated stone house with a 60 m² living space and mezzanine near Villefagnan, CharenteVillefagnan, Charente153 m² · 3 bed · €817/m² · 11 days on RealHuntA well renovated stone house in a hamlet 2 km from Villefagnan and 7 km from Ruffec.](https://realhunt.co/deal/fr-villefagnan-125k-152329)
-- [Score 91New€149,000Fully renovated 250 m² house from 1900 with five bedrooms in La Courtine, CreuseLa Courtine, Creuse250 m² · 5 bed · €596/m² · 11 days on RealHuntA traditional house from 1900, fully renovated, in a village with all services.](https://realhunt.co/deal/fr-la-courtine-149k-115059)
-- [Score 90€49,980Renovated three-level house with an energy rating C in Decazeville, AveyronDecazeville, Aveyron116 m² · 3 bed · €431/m² · 42 days on RealHuntA neat, renovated townhouse: a cellar, a laundry and an entrance on the ground floor; a bright living room with an open kitchen, a bedroom and a…](https://realhunt.co/deal/fr-decazeville-49k-900846)
-- [Score 90€51,800Four-room 71 m² flat with two balconies in MulhouseBourtzwiller, Mulhouse71 m² · 3 bed · €730/m² · 43 days on RealHunt71 m² on the 4th floor: a spacious living room with a balcony, a fitted kitchen with a second balcony, three bright bedrooms, a bathroom with a…](https://realhunt.co/deal/fr-mulhouse-52k-754748)
-- [Score 89€49,900Country house with a veranda near the Saint-Rémy lake, ThiersThiers, Puy-de-Dôme120 m² · 3 bed · €416/m² · 42 days on RealHuntIn a quiet hamlet 5 km from Thiers and the Saint-Rémy-sur-Durolle lake: a bright veranda, an open kitchen onto a living room with a fireplace…](https://realhunt.co/deal/fr-thiers-49k-mo1869)
-- [Score 86New€139,000Fully renovated four-bedroom house with balcony and garden in Bergerac, DordogneBergerac, Dordogne150 m² · 4 bed · €927/m² · 7 days on RealHuntA 150 m² stone house in Bergerac, on the Dordogne river, on a plot of about 270 m² and close to shops and services.](https://realhunt.co/deal/fr-bergerac-stone-house-balcony-garden-139k)
-- [Score 85€285,000Top-floor loft with an 82 m² cathedral living room in LodèveLodève, Occitanie215 m² · 5 bed · €1,326/m² · 26 days on RealHuntA fully renovated 215 m² loft on the top floor of a historic building, below the Larzac plateau.](https://realhunt.co/deal/fr-lodeve-top-floor-loft-terrace-285k)
-- [Score 85€59,990Bright south-west three-room flat with a lift in Le HavreCaucriauville, Le Havre70 m² · 2 bed · €857/m² · 43 days on RealHunt70 m² on the 5th floor with a lift in quiet Caucriauville: an 18 m² living room full of light, a separate 10 m² kitchen, two bedrooms with…](https://realhunt.co/deal/fr-le-havre-60k-595133)
-- [Score 85€57,00066 m² flat with open views and a lift in DijonFontaine d'Ouche, Dijon66 m² · 1 bed · €864/m² · 43 days on RealHunt66 m² on the 4th floor of a residence with a lift: a large bright living room, a fitted kitchen, a bedroom and a bathroom, in good condition, with…](https://realhunt.co/deal/fr-dijon-57k-969671)
-- [Score 84€39,000Renovated two-room flat for €39,000 in Saint-ÉtienneMontaud, Saint-Étienne45 m² · 1 bed · €867/m² · 43 days on RealHunt45 m² on the ground floor of a small building (7 lots) on rue Dufour, Carnot: a through living room, a new fitted kitchen, a bedroom with its own…](https://realhunt.co/deal/fr-saint-etienne-39k-705662)
-- [Score 84€60,000Three-room flat with a balcony, cellar and parking in MulhouseMulhouse60 m² · 2 bed · €1,000/m² · 43 days on RealHunt60 m² on the 3rd floor of a 1963 building on Rue des Pins: a living room, a kitchen, two bedrooms (11 and 13 m²), a bathroom, a separate WC, a…](https://realhunt.co/deal/fr-mulhouse-60k-377472)
-- [Score 84€48,000Charming furnished two-room flat near the universities, Saint-ÉtienneCouriot, Saint-Étienne45 m² · 1 bed · €1,067/m² · 43 days on RealHunt45 m² on the 2nd floor of a small secure building on rue Pierre Sémard: a 17 m² living room with a fireplace, a semi-open kitchen, a 10 m²…](https://realhunt.co/deal/fr-saint-etienne-48k-108807)
-- [Score 84€55,000Hilltop village house with a sunny terrace in BourmontBourmont, Haute-Marne2 bed · 50 days on RealHuntOn the heights of the historic village of Bourmont, in Haute-Marne: a fitted kitchen, a large living room with a fireplace, a balcony and a big…](https://realhunt.co/deal/fr-bourmont-60k-q27mnf)
-- [Score 84New€189,000Move-in ready 1700s stone village house of 180 m² near La Rochefoucauld, CharenteYvrac-et-Malleyrand, Charente180 m² · 2 bed · €1,050/m² · 5 days on RealHuntAbout 180 m² of old stone house for €189,000, roughly €1,050 per m², and the advert says it is ready to move into.](https://realhunt.co/deal/fr-yvrac-et-malleyrand-1700s-stone-house-180m2-189k)
-- [Score 83€66,600Character house with panoramic views in TreignacTreignac, Corrèze88 m² · 2 bed · €757/m² · 51 days on RealHuntA character house of about 88 m² in Treignac, one of the 'most beautiful villages' of the Corrèze, close enough to walk to the shops, with…](https://realhunt.co/deal/fr-treignac-66k-6l5r27)
-- [Score 82€55,00050 m² flat with city views on the tram line in Le MansLes Maillets, Le Mans51 m² · 1 bed · €1,078/m² · 43 days on RealHunt50.7 m² on the 5th floor in Maillets-Bellevue: a living room, a modern kitchen, a bedroom and a new shower room, with long views over the rooftops.](https://realhunt.co/deal/fr-le-mans-55k-949995)
-- [Score 81€60,000Recently renovated through flat with a heat pump in Saint-ÉtienneSaint-Roch, Saint-Étienne52 m² · 1 bed · €1,154/m² · 43 days on RealHunt52 m² in a handsome building on boulevard Valbenoite, near the university: a big living room over the courtyard, a fitted kitchen, a bedroom, a…](https://realhunt.co/deal/fr-saint-etienne-60k-772580)
-- [Score 81€57,000Furnished studio with a balcony near the Palais des Congrès, PerpignanLes Platanes, Perpignan35 m² · €1,629/m² · 43 days on RealHunt35 m² on the 4th floor with a lift in a secure residence with a garden: a bright living room with a balcony, a semi-open fitted kitchen, a shower…](https://realhunt.co/deal/fr-perpignan-57k-t-9872)
-- [Score 81€60,000Town house with a mezzanine in historic Saint-Mathieu, PerpignanSaint-Matthieu, Perpignan50 m² · 1 bed · €1,200/m² · 43 days on RealHuntA 50 m² town house at the edge of the historic Saint-Mathieu quarter, with a light well: a living room with an open kitchen, a master bedroom with…](https://realhunt.co/deal/fr-perpignan-60k-990769)
-- [Score 81New€119,500Renovated town house with a central patio in the centre of La Charité-sur-Loire, BurgundyLa Charité-sur-Loire, Burgundy156 m² · 4 bed · €766/m² · 7 days on RealHuntA renovated town house in the centre of La Charité-sur-Loire, the old priory town on the Loire, with shops, schools and transport close by.](https://realhunt.co/deal/fr-la-charite-sur-loire-town-house-patio-119k)
-- [Score 81New€69,500Renovated townhouse with new kitchen and air conditioning in Masseube, GersMasseube, Gers70 m² · 2 bed · €993/m² · 5 days on RealHuntA renovated 70 m² townhouse in Masseube for €69,500, under €1,000 per m², close to the shops and services.](https://realhunt.co/deal/fr-masseube-gers-renovated-townhouse-70k)
+- [Score 92€39,950171 m² house with a former shop in the centre of Bussière-PoitevineBussière-Poitevine, Haute-Vienne171 m² · 3 bed · €234/m² · 43 days on RealHuntIn the heart of the village, next to the baker, pharmacy and school: a cellar, a kitchen, a living room, a WC and a former shop with a street…](https://realhunt.co/deal/fr-bussiere-poitevine-39k-088775)
+- [Score 91New€148,400Brick house with a 2019 living-room extension, garden and garage in Ohain, AvesnoisOhain, Nord106 m² · 3 bed · €1,400/m² · 12 days on RealHuntA semi-detached brick house in the green Avesnois, next to the Belgian border.](https://realhunt.co/deal/fr-ohain-148k-150454)
+- [Score 91New€137,900Renovated old house with stone walls and terracotta floors in the Perche, 3 minutes from Nogent-le-RotrouVal-au-Perche, Orne81 m² · 3 bed · €1,702/m² · 12 days on RealHuntA renovated old house in a hamlet of only three houses, with an open view, three minutes from Nogent-le-Rotrou.](https://realhunt.co/deal/fr-val-au-perche-137k-446720)
+- [Score 91New€134,375Furnished old stone house with a 53 m² living room and 2,825 m² of garden in Bessac, CharenteBessac, Charente116 m² · 2 bed · €1,158/m² · 12 days on RealHuntA characterful old house sold fully furnished.](https://realhunt.co/deal/fr-bessac-134k-729283)
+- [Score 91New€123,000Fully renovated 19th-century longère on one level with garage in Lencloître, VienneLencloître, Vienne102 m² · 2 bed · €1,206/m² · 12 days on RealHuntA 19th-century longère, fully renovated and all on one level.](https://realhunt.co/deal/fr-lencloitre-123k-157528)
+- [Score 91New€139,000Former level-crossing keeper's house renovated in 2023 on 1,824 m² in Bergerac, DordogneBergerac, Dordogne77 m² · 2 bed · €1,805/m² · 12 days on RealHuntAn old level-crossing keeper's house, 2.5 km from the centre of Bergerac, fully renovated in 2023.](https://realhunt.co/deal/fr-bergerac-139k-175736)
+- [Score 91New€109,760Stone country house from 1550 with a mezzanine and 1,686 m² of land in Nieuil, CharenteNieuil, Charente116 m² · 2 bed · €946/m² · 12 days on RealHuntA stone country house dating from 1550 in a quiet hamlet, 5 km from shops.](https://realhunt.co/deal/fr-nieuil-109k-mo5052)
+- [Score 91New€146,990Tastefully renovated stone-fronted house with full basement near the station in Salbris, SologneSalbris, Loir-et-Cher83 m² · 3 bed · €1,771/m² · 12 days on RealHuntA fully renovated house in the centre of Salbris, close to shops and the train station.](https://realhunt.co/deal/fr-salbris-146k-279709)
+- [Score 91New€136,250Renovated stone house with open countryside views and a heat pump near Saint-Vaury, Creusenear Saint-Vaury, Creuse98 m² · 2 bed · €1,390/m² · 12 days on RealHuntA renovated stone house with a wide open view over the Creuse countryside.](https://realhunt.co/deal/fr-saint-vaury-136k-559424)
+- [Score 91New€125,000Renovated stone house with a 60 m² living space and mezzanine near Villefagnan, CharenteVillefagnan, Charente153 m² · 3 bed · €817/m² · 12 days on RealHuntA well renovated stone house in a hamlet 2 km from Villefagnan and 7 km from Ruffec.](https://realhunt.co/deal/fr-villefagnan-125k-152329)
+- [Score 91New€149,000Fully renovated 250 m² house from 1900 with five bedrooms in La Courtine, CreuseLa Courtine, Creuse250 m² · 5 bed · €596/m² · 12 days on RealHuntA traditional house from 1900, fully renovated, in a village with all services.](https://realhunt.co/deal/fr-la-courtine-149k-115059)
+- [Score 90€49,980Renovated three-level house with an energy rating C in Decazeville, AveyronDecazeville, Aveyron116 m² · 3 bed · €431/m² · 43 days on RealHuntA neat, renovated townhouse: a cellar, a laundry and an entrance on the ground floor; a bright living room with an open kitchen, a bedroom and a…](https://realhunt.co/deal/fr-decazeville-49k-900846)
+- [Score 90€51,800Four-room 71 m² flat with two balconies in MulhouseBourtzwiller, Mulhouse71 m² · 3 bed · €730/m² · 44 days on RealHunt71 m² on the 4th floor: a spacious living room with a balcony, a fitted kitchen with a second balcony, three bright bedrooms, a bathroom with a…](https://realhunt.co/deal/fr-mulhouse-52k-754748)
+- [Score 89€49,900Country house with a veranda near the Saint-Rémy lake, ThiersThiers, Puy-de-Dôme120 m² · 3 bed · €416/m² · 43 days on RealHuntIn a quiet hamlet 5 km from Thiers and the Saint-Rémy-sur-Durolle lake: a bright veranda, an open kitchen onto a living room with a fireplace…](https://realhunt.co/deal/fr-thiers-49k-mo1869)
+- [Score 86New€139,000Fully renovated four-bedroom house with balcony and garden in Bergerac, DordogneBergerac, Dordogne150 m² · 4 bed · €927/m² · 8 days on RealHuntA 150 m² stone house in Bergerac, on the Dordogne river, on a plot of about 270 m² and close to shops and services.](https://realhunt.co/deal/fr-bergerac-stone-house-balcony-garden-139k)
+- [Score 85€285,000Top-floor loft with an 82 m² cathedral living room in LodèveLodève, Occitanie215 m² · 5 bed · €1,326/m² · 27 days on RealHuntA fully renovated 215 m² loft on the top floor of a historic building, below the Larzac plateau.](https://realhunt.co/deal/fr-lodeve-top-floor-loft-terrace-285k)
+- [Score 85€59,990Bright south-west three-room flat with a lift in Le HavreCaucriauville, Le Havre70 m² · 2 bed · €857/m² · 44 days on RealHunt70 m² on the 5th floor with a lift in quiet Caucriauville: an 18 m² living room full of light, a separate 10 m² kitchen, two bedrooms with…](https://realhunt.co/deal/fr-le-havre-60k-595133)
+- [Score 85€57,00066 m² flat with open views and a lift in DijonFontaine d'Ouche, Dijon66 m² · 1 bed · €864/m² · 44 days on RealHunt66 m² on the 4th floor of a residence with a lift: a large bright living room, a fitted kitchen, a bedroom and a bathroom, in good condition, with…](https://realhunt.co/deal/fr-dijon-57k-969671)
+- [Score 84€39,000Renovated two-room flat for €39,000 in Saint-ÉtienneMontaud, Saint-Étienne45 m² · 1 bed · €867/m² · 44 days on RealHunt45 m² on the ground floor of a small building (7 lots) on rue Dufour, Carnot: a through living room, a new fitted kitchen, a bedroom with its own…](https://realhunt.co/deal/fr-saint-etienne-39k-705662)
+- [Score 84€60,000Three-room flat with a balcony, cellar and parking in MulhouseMulhouse60 m² · 2 bed · €1,000/m² · 44 days on RealHunt60 m² on the 3rd floor of a 1963 building on Rue des Pins: a living room, a kitchen, two bedrooms (11 and 13 m²), a bathroom, a separate WC, a…](https://realhunt.co/deal/fr-mulhouse-60k-377472)
+- [Score 84€48,000Charming furnished two-room flat near the universities, Saint-ÉtienneCouriot, Saint-Étienne45 m² · 1 bed · €1,067/m² · 44 days on RealHunt45 m² on the 2nd floor of a small secure building on rue Pierre Sémard: a 17 m² living room with a fireplace, a semi-open kitchen, a 10 m²…](https://realhunt.co/deal/fr-saint-etienne-48k-108807)
+- [Score 84€55,000Hilltop village house with a sunny terrace in BourmontBourmont, Haute-Marne2 bed · 51 days on RealHuntOn the heights of the historic village of Bourmont, in Haute-Marne: a fitted kitchen, a large living room with a fireplace, a balcony and a big…](https://realhunt.co/deal/fr-bourmont-60k-q27mnf)
+- [Score 84New€189,000Move-in ready 1700s stone village house of 180 m² near La Rochefoucauld, CharenteYvrac-et-Malleyrand, Charente180 m² · 2 bed · €1,050/m² · 6 days on RealHuntAbout 180 m² of old stone house for €189,000, roughly €1,050 per m², and the advert says it is ready to move into.](https://realhunt.co/deal/fr-yvrac-et-malleyrand-1700s-stone-house-180m2-189k)
+- [Score 83€66,600Character house with panoramic views in TreignacTreignac, Corrèze88 m² · 2 bed · €757/m² · 52 days on RealHuntA character house of about 88 m² in Treignac, one of the 'most beautiful villages' of the Corrèze, close enough to walk to the shops, with…](https://realhunt.co/deal/fr-treignac-66k-6l5r27)
+- [Score 82€55,00050 m² flat with city views on the tram line in Le MansLes Maillets, Le Mans51 m² · 1 bed · €1,078/m² · 44 days on RealHunt50.7 m² on the 5th floor in Maillets-Bellevue: a living room, a modern kitchen, a bedroom and a new shower room, with long views over the rooftops.](https://realhunt.co/deal/fr-le-mans-55k-949995)
+- [Score 81€60,000Recently renovated through flat with a heat pump in Saint-ÉtienneSaint-Roch, Saint-Étienne52 m² · 1 bed · €1,154/m² · 44 days on RealHunt52 m² in a handsome building on boulevard Valbenoite, near the university: a big living room over the courtyard, a fitted kitchen, a bedroom, a…](https://realhunt.co/deal/fr-saint-etienne-60k-772580)
+- [Score 81€57,000Furnished studio with a balcony near the Palais des Congrès, PerpignanLes Platanes, Perpignan35 m² · €1,629/m² · 44 days on RealHunt35 m² on the 4th floor with a lift in a secure residence with a garden: a bright living room with a balcony, a semi-open fitted kitchen, a shower…](https://realhunt.co/deal/fr-perpignan-57k-t-9872)
+- [Score 81€60,000Town house with a mezzanine in historic Saint-Mathieu, PerpignanSaint-Matthieu, Perpignan50 m² · 1 bed · €1,200/m² · 44 days on RealHuntA 50 m² town house at the edge of the historic Saint-Mathieu quarter, with a light well: a living room with an open kitchen, a master bedroom with…](https://realhunt.co/deal/fr-perpignan-60k-990769)
+- [Score 81New€119,500Renovated town house with a central patio in the centre of La Charité-sur-Loire, BurgundyLa Charité-sur-Loire, Burgundy156 m² · 4 bed · €766/m² · 8 days on RealHuntA renovated town house in the centre of La Charité-sur-Loire, the old priory town on the Loire, with shops, schools and transport close by.](https://realhunt.co/deal/fr-la-charite-sur-loire-town-house-patio-119k)
+- [Score 81New€69,500Renovated townhouse with new kitchen and air conditioning in Masseube, GersMasseube, Gers70 m² · 2 bed · €993/m² · 6 days on RealHuntA renovated 70 m² townhouse in Masseube for €69,500, under €1,000 per m², close to the shops and services.](https://realhunt.co/deal/fr-masseube-gers-renovated-townhouse-70k)
 
-Showing the 30 best-scored of 44 homes. The table and the narrower searches below cover the rest.
+Showing the 30 best-scored of 48 homes. The table and the narrower searches below cover the rest.
 
-### Compare the 44 homes, cheapest first
+### Compare the 48 homes, cheapest first
 
 Home | Place | Price | Size | Per m² | Beds | Score | Added
 [Renovated two-room flat for €39,000 in Saint-Étienne](https://realhunt.co/deal/fr-saint-etienne-39k-705662) | Montaud, Saint-Étienne | €39,000 | 45 m² | €867/m² | 1 | 84 | 13 Oct 2026
@@ -93,7 +93,11 @@ Home | Place | Price | Size | Per m² | Beds | Score | Added
 [Recently renovated through flat with a heat pump in Saint-Étienne](https://realhunt.co/deal/fr-saint-etienne-60k-772580) | Saint-Roch, Saint-Étienne | €60,000 | 52 m² | €1,154/m² | 1 | 81 | 13 Oct 2026
 [Character house with panoramic views in Treignac](https://realhunt.co/deal/fr-treignac-66k-6l5r27) | Treignac, Corrèze | €66,600 | 88 m² | €757/m² | 2 | 83 | 5 Oct 2026
 [Renovated townhouse with new kitchen and air conditioning in Masseube, Gers](https://realhunt.co/deal/fr-masseube-gers-renovated-townhouse-70k) | Masseube, Gers | €69,500 | 70 m² | €993/m² | 2 | 81 | 20 Nov 2026
+[Cosy stone house with pellet stove and views near Limoux](https://realhunt.co/deal/fr-limoux-69k-vdt9re) | Limoux, Aude | €69,900 | 74 m² | €945/m² | 2 | 80 | 5 Oct 2026
+[137 m² village house with a roof terrace near Carcassonne](https://realhunt.co/deal/fr-azille-72k-4qkrv1) | Azille, Aude | €72,000 | 137 m² | €526/m² | 4 | 87 | 6 Oct 2026
+[Cosy, fully kept village house below the Montagne Noire](https://realhunt.co/deal/fr-saint-denis-73k-bk6670) | Saint-Denis, Aude | €73,000 | 50 m² | €1,460/m² | 2 | 73 | 6 Oct 2026
 [2009 duplex house with a private garden in a spa village](https://realhunt.co/deal/fr-encausse-les-thermes-85k-vjwr3w) | Encausse-les-Thermes, Haute-Garonne | €85,000 | 66 m² | €1,288/m² | 2 | 75 | 6 Oct 2026
+[114 m² town house with a courtyard near Limoux](https://realhunt.co/deal/fr-esperaza-86k-sxd5p3) | Espéraza, Aude | €86,400 | 114 m² | €758/m² | 2 | 79 | 6 Oct 2026
 [Stone country house from 1550 with a mezzanine and 1,686 m² of land in Nieuil, Charente](https://realhunt.co/deal/fr-nieuil-109k-mo5052) | Nieuil, Charente | €109,760 | 116 m² | €946/m² | 2 | 91 | 14 Nov 2026
 [Renovated town house with a central patio in the centre of La Charité-sur-Loire, Burgundy](https://realhunt.co/deal/fr-la-charite-sur-loire-town-house-patio-119k) | La Charité-sur-Loire, Burgundy | €119,500 | 156 m² | €766/m² | 4 | 81 | 18 Nov 2026
 [Fully renovated 19th-century longère on one level with garage in Lencloître, Vienne](https://realhunt.co/deal/fr-lencloitre-123k-157528) | Lencloître, Vienne | €123,000 | 102 m² | €1,206/m² | 2 | 91 | 14 Nov 2026
@@ -114,16 +118,16 @@ Home | Place | Price | Size | Per m² | Beds | Score | Added
 [Renovated Luberon village house with vaulted cellar in Saint-Martin-de-Castillon](https://realhunt.co/deal/fr-provence-saint-martin-de-castillon-village-house-210k) | Saint-Martin-de-Castillon, Provence | €210,000 | 90 m² | €2,333/m² | 2 | 78 | 20 Nov 2026
 [Top-floor loft with an 82 m² cathedral living room in Lodève](https://realhunt.co/deal/fr-lodeve-top-floor-loft-terrace-285k) | Lodève, Occitanie | €285,000 | 215 m² | €1,326/m² | 5 | 85 | 30 Oct 2026
 
-### The 44 homes in numbers
+### The 48 homes in numbers
 
 - Size: half of them have 83 m² or more. The largest has 250 m²: [Fully renovated 250 m² house from 1900 with five bedrooms in La Courtine, Creuse](https://realhunt.co/deal/fr-la-courtine-149k-115059).
-- Bedrooms: 10 with 1 bedroom, 16 with 2, 11 with 3, 4 with 4 or more; 3 listings do not say.
-- Type: 17 apartments and 27 houses.
-- Setting: 1 by the sea, 24 in villages, 19 in towns.
-- Where: Saint-Étienne (5), Charente (4), Burgundy (2), Creuse (2), Dordogne (2), Mulhouse (2).
+- Bedrooms: 10 with 1 bedroom, 19 with 2, 11 with 3, 5 with 4 or more; 3 listings do not say.
+- Type: 17 apartments and 31 houses.
+- Setting: 1 by the sea, 28 in villages, 19 in towns.
+- Where: Saint-Étienne (5), Aude (4), Charente (4), Burgundy (2), Creuse (2), Dordogne (2).
 - Lowest median price: Saint-Étienne, €54,000 across 5 homes. Highest: Charente, €134,375 across 4.
-- Extras named in the listings: 16 with a garden, 16 with a terrace, 9 with a garage, 1 with a pool, 8 with a fireplace.
-- Scores: 75 to 92 out of 98. The best rated: [171 m² house with a former shop in the centre of Bussière-Poitevine](https://realhunt.co/deal/fr-bussiere-poitevine-39k-088775).
+- Extras named in the listings: 17 with a garden, 17 with a terrace, 10 with a garage, 1 with a pool, 9 with a fireplace.
+- Scores: 73 to 92 out of 98. The best rated: [171 m² house with a former shop in the centre of Bussière-Poitevine](https://realhunt.co/deal/fr-bussiere-poitevine-39k-088775).
 - Newest, added 20 November 2026: [Move-in ready 1700s stone village house of 180 m² near La Rochefoucauld, Charente](https://realhunt.co/deal/fr-yvrac-et-malleyrand-1700s-stone-house-180m2-189k). 20 of these homes were added in the last 30 days.
 
 ### Median price by region in France
@@ -146,6 +150,7 @@ Mulhouse | 2 | €60,000
 Perpignan | 2 | €60,000
 Corrèze | 1 | €66,600
 Gers | 1 | €69,500
+[Aude](https://realhunt.co/homes/france/aude) | 4 | €73,000
 Haute-Garonne | 1 | €85,000
 Vienne | 1 | €123,000
 Lot | 1 | €125,000
@@ -164,7 +169,7 @@ Occitanie | 1 | €285,000
 
 Can foreigners buy? Yes. Foreigners can buy property in France without major restrictions, and non-EU buyers do not need a permit, although the paperwork can take longer.
 
-Taxes and fees add about 7 to 8.5% to the price: Transfer taxes (droits de mutation) of about 5.8%, or about 6.3% in departments that raised their rate for 2025 to March 2028; notary fee (émoluments) on a sliding scale from 3.87% down to 0.799% plus 20% VAT, about 1.3% on a €150,000 home; land security contribution (contribution de sécurité immobilière) 0.10%; disbursements (débours) of about €800 to €1,200; the agent fee is usually built into the advertised price (FAI) and paid by the seller, sometimes shared. On the median home on this page (€66,600) that is €4,662 to €5,661, so €71,262 to €72,261 in all.
+Taxes and fees add about 7 to 8.5% to the price: Transfer taxes (droits de mutation) of about 5.8%, or about 6.3% in departments that raised their rate for 2025 to March 2028; notary fee (émoluments) on a sliding scale from 3.87% down to 0.799% plus 20% VAT, about 1.3% on a €150,000 home; land security contribution (contribution de sécurité immobilière) 0.10%; disbursements (débours) of about €800 to €1,200; the agent fee is usually built into the advertised price (FAI) and paid by the seller, sometimes shared. On the median home on this page (€69,900) that is €4,893 to €5,942, so €74,793 to €75,842 in all.
 
 At the same percentages: on €40,000, €2,800 to €3,400; on €80,000, €5,600 to €6,800; on €150,000, €10,500 to €12,750.
 
@@ -176,17 +181,17 @@ General information, not tax or legal advice. Figures checked in 2026.
 
 ### What to watch out for
 
-- 3 of the 44 listings give no floor area, so their price per m² cannot be compared.
-- 5 of 44 are close to a motorway, a railway or an airport (high on our noise check).
-- 2 of 44 were added more than 60 days ago. Ask the agent whether they are still for sale before you plan a trip.
-- 2 of 44 show an approximate map position: the listing names the town, not the street.
-- As a group these homes score lowest on buying costs (36/100 on average) and highest on distance to an airport (83/100).
+- 3 of the 48 listings give no floor area, so their price per m² cannot be compared.
+- 5 of 48 are close to a motorway, a railway or an airport (high on our noise check).
+- 2 of 48 were added more than 60 days ago. Ask the agent whether they are still for sale before you plan a trip.
+- 2 of 48 show an approximate map position: the listing names the town, not the street.
+- As a group these homes score lowest on buying costs (36/100 on average) and highest on distance to an airport (84/100).
 
 ### Questions buyers ask
 
 #### How much does a house for sale in France cost?
 
-Asking prices run from €39,000 to €285,000 across 44 homes. The median is €66,600, or €1,158/m².
+Asking prices run from €39,000 to €285,000 across 48 homes. The median is €69,900, or €1,154/m².
 
 #### What is the cheapest house for sale in France?
 
@@ -198,7 +203,7 @@ Yes. Foreigners can buy property in France without major restrictions, and non-E
 
 #### What are the buying costs in France?
 
-About 7 to 8.5% on top of the price: Transfer taxes (droits de mutation) of about 5.8%, or about 6.3% in departments that raised their rate for 2025 to March 2028; notary fee (émoluments) on a sliding scale from 3.87% down to 0.799% plus 20% VAT, about 1.3% on a €150,000 home; land security contribution (contribution de sécurité immobilière) 0.10%; disbursements (débours) of about €800 to €1,200; the agent fee is usually built into the advertised price (FAI) and paid by the seller, sometimes shared. On the median home on this page (€66,600) that is €4,662 to €5,661. General information, not tax advice.
+About 7 to 8.5% on top of the price: Transfer taxes (droits de mutation) of about 5.8%, or about 6.3% in departments that raised their rate for 2025 to March 2028; notary fee (émoluments) on a sliding scale from 3.87% down to 0.799% plus 20% VAT, about 1.3% on a €150,000 home; land security contribution (contribution de sécurité immobilière) 0.10%; disbursements (débours) of about €800 to €1,200; the agent fee is usually built into the advertised price (FAI) and paid by the seller, sometimes shared. On the median home on this page (€69,900) that is €4,893 to €5,942. General information, not tax advice.
 
 #### Which region is cheapest in France?
 
@@ -206,33 +211,35 @@ Among regions with at least 3 homes on RealHunt, Saint-Étienne has the lowest m
 
 ### More searches in France
 
-By budget [Under €50,000 6](https://realhunt.co/homes/france/under-50000) [Under €80,000 24](https://realhunt.co/homes/france/under-80000) [Under €150,000 38](https://realhunt.co/homes/france/under-150000)
+By budget [Under €50,000 6](https://realhunt.co/homes/france/under-50000) [Under €60,000 22](https://realhunt.co/homes/france/under-60000) [Under €80,000 27](https://realhunt.co/homes/france/under-80000) [Under €150,000 42](https://realhunt.co/homes/france/under-150000)
 
-By setting [Village houses 24](https://realhunt.co/homes/france/village-houses) [In town 19](https://realhunt.co/homes/france/in-town)
+By setting [Village houses 28](https://realhunt.co/homes/france/village-houses) [In town 19](https://realhunt.co/homes/france/in-town)
 
-By type [Apartments 17](https://realhunt.co/homes/france/apartments) [Houses 27](https://realhunt.co/homes/france/houses)
+By type [Apartments 17](https://realhunt.co/homes/france/apartments) [Houses 31](https://realhunt.co/homes/france/houses)
 
-By bedrooms [1 bedroom 10](https://realhunt.co/homes/france/1-bedroom) [2 bedrooms 16](https://realhunt.co/homes/france/2-bedroom) [3 bedrooms 11](https://realhunt.co/homes/france/3-bedroom)
+By bedrooms [1 bedroom 10](https://realhunt.co/homes/france/1-bedroom) [2 bedrooms 19](https://realhunt.co/homes/france/2-bedroom) [3 bedrooms 11](https://realhunt.co/homes/france/3-bedroom) [4+ bedrooms 5](https://realhunt.co/homes/france/4-bedroom)
 
-By region [Saint-Étienne 5](https://realhunt.co/homes/france/saint-etienne) [Charente 4](https://realhunt.co/homes/france/charente)
+By region [Saint-Étienne 5](https://realhunt.co/homes/france/saint-etienne) [Aude 4](https://realhunt.co/homes/france/aude) [Charente 4](https://realhunt.co/homes/france/charente)
 
 By area [Limousin 4](https://realhunt.co/homes/france/limousin)
 
-By feature [With a garden 16](https://realhunt.co/cheap-houses/with-garden-in-france) [Stone houses 13](https://realhunt.co/cheap-houses/stone-houses-in-france) [With a terrace 17](https://realhunt.co/cheap-houses/with-a-terrace-in-france) [Move-in ready 12](https://realhunt.co/cheap-houses/turnkey-in-france) [With land 5](https://realhunt.co/cheap-houses/with-land-in-france) [With a fireplace 8](https://realhunt.co/cheap-houses/with-fireplace-in-france) [With a garage 9](https://realhunt.co/cheap-houses/with-garage-in-france) [Near an airport 12](https://realhunt.co/cheap-houses/near-an-airport-in-france) [Under €500/m² 3](https://realhunt.co/cheap-houses/under-500-per-sqm-in-france) [Score 90+ 13](https://realhunt.co/cheap-houses/score-90-plus-in-france) [Hand-picked 10](https://realhunt.co/cheap-houses/editors-picks-in-france) [New this month 20](https://realhunt.co/cheap-houses/new-this-month-in-france) [Single-storey 3](https://realhunt.co/cheap-houses/single-storey-in-france) [Period features 8](https://realhunt.co/cheap-houses/with-period-features-in-france) [Quiet location 18](https://realhunt.co/cheap-houses/quiet-location-in-france) [Over 80 m² 22](https://realhunt.co/cheap-houses/over-80-sqm-in-france) [Over 120 m² 8](https://realhunt.co/cheap-houses/over-120-sqm-in-france)
+By feature [With a garden 17](https://realhunt.co/cheap-houses/with-garden-in-france) [Stone houses 14](https://realhunt.co/cheap-houses/stone-houses-in-france) [With a terrace 18](https://realhunt.co/cheap-houses/with-a-terrace-in-france) [Move-in ready 13](https://realhunt.co/cheap-houses/turnkey-in-france) [With land 5](https://realhunt.co/cheap-houses/with-land-in-france) [With a fireplace 9](https://realhunt.co/cheap-houses/with-fireplace-in-france) [With a garage 10](https://realhunt.co/cheap-houses/with-garage-in-france) [Near an airport 15](https://realhunt.co/cheap-houses/near-an-airport-in-france) [Under €500/m² 3](https://realhunt.co/cheap-houses/under-500-per-sqm-in-france) [Score 90+ 13](https://realhunt.co/cheap-houses/score-90-plus-in-france) [Hand-picked 10](https://realhunt.co/cheap-houses/editors-picks-in-france) [New this month 20](https://realhunt.co/cheap-houses/new-this-month-in-france) [Single-storey 3](https://realhunt.co/cheap-houses/single-storey-in-france) [Period features 8](https://realhunt.co/cheap-houses/with-period-features-in-france) [Quiet location 21](https://realhunt.co/cheap-houses/quiet-location-in-france) [Over 80 m² 24](https://realhunt.co/cheap-houses/over-80-sqm-in-france) [Over 120 m² 9](https://realhunt.co/cheap-houses/over-120-sqm-in-france)
 
-Rankings [The cheapest 20](https://realhunt.co/cheap-houses/cheapest-in-france) [Most space for the money 20](https://realhunt.co/cheap-houses/most-space-for-the-money-in-france) [Top 10 by score 10](https://realhunt.co/cheap-houses/best-rated-in-france)
+Rankings [Most space for the money 20](https://realhunt.co/cheap-houses/most-space-for-the-money-in-france) [Top 10 by score 10](https://realhunt.co/cheap-houses/best-rated-in-france)
 
-By feature and budget [Houses under €100,000 9](https://realhunt.co/cheap-houses/houses-under-100000-in-france) [With a garden under €100,000 5](https://realhunt.co/cheap-houses/with-garden-under-100000-in-france) [Village houses under €50,000 4](https://realhunt.co/cheap-houses/village-houses-under-50000-in-france) [Move-in ready under €100,000 3](https://realhunt.co/cheap-houses/turnkey-under-100000-in-france)
+By feature and budget [Houses under €100,000 13](https://realhunt.co/cheap-houses/houses-under-100000-in-france) [With a garden under €100,000 6](https://realhunt.co/cheap-houses/with-garden-under-100000-in-france) [Village houses under €50,000 4](https://realhunt.co/cheap-houses/village-houses-under-50000-in-france) [Move-in ready under €100,000 4](https://realhunt.co/cheap-houses/turnkey-under-100000-in-france)
 
-Near a city [Near Lyon 6](https://realhunt.co/cheap-houses/near-lyon)
+In pounds and dollars [Under £50,000 18](https://realhunt.co/cheap-houses/under-50000-pounds-in-france)
 
-Neighbouring countries [Spain 133](https://realhunt.co/homes/spain) [Italy 85](https://realhunt.co/homes/italy) [Switzerland 10](https://realhunt.co/homes/switzerland) [Germany 21](https://realhunt.co/homes/germany)
+Near a city [Near Lyon 6](https://realhunt.co/cheap-houses/near-lyon) [Near Toulouse 6](https://realhunt.co/cheap-houses/near-toulouse)
 
-By country [Spain 133](https://realhunt.co/homes/spain) [Italy 85](https://realhunt.co/homes/italy) [United States 61](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [Sweden 40](https://realhunt.co/homes/sweden) [Japan 34](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 26](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Portugal 6](https://realhunt.co/homes/portugal) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
+Neighbouring countries [Spain 150](https://realhunt.co/homes/spain) [Italy 87](https://realhunt.co/homes/italy) [Switzerland 10](https://realhunt.co/homes/switzerland) [Germany 21](https://realhunt.co/homes/germany)
 
-These listings come from bienici.com (31), green-acres.fr (9), espaces-atypiques.com (1), french-property.com (1), instagram.com (1). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
+By country [Spain 150](https://realhunt.co/homes/spain) [Italy 87](https://realhunt.co/homes/italy) [United States 61](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [Sweden 41](https://realhunt.co/homes/sweden) [Japan 36](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 26](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Mexico 9](https://realhunt.co/homes/mexico) [Portugal 8](https://realhunt.co/homes/portugal) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Cyprus 6](https://realhunt.co/homes/cyprus) [United Kingdom 6](https://realhunt.co/homes/united-kingdom) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
+
+These listings come from bienici.com (31), green-acres.fr (13), espaces-atypiques.com (1), french-property.com (1), instagram.com (1). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 
 [Email me new homes in France](https://realhunt.co/alerts?country=France) · [Filter and sort these homes](https://realhunt.co/?country=France#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in France](https://realhunt.co/sitemap/france)
 
 ---
-Source: https://realhunt.co/homes/france (RealHunt, 2026-11-25). Licence CC BY 4.0: quote it with a link to the page.
+Source: https://realhunt.co/homes/france (RealHunt, 2026-11-26). Licence CC BY 4.0: quote it with a link to the page.

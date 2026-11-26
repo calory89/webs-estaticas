@@ -1,8 +1,8 @@
 # Casas baratas en Polonia: datos clave y todas las casas de RealHunt
 
-A 25 de noviembre de 2026, RealHunt publica 31 casas en venta en Polonia, revisadas una a una por una persona. En Polonia, el precio de salida mediano de esas 31 casas es de 75.170 € (1.139 € por m², calculado con las 31 casas de superficie conocida); la más barata cuesta 53.693 € y la más cara, 90.600 €. Los impuestos y gastos de compra suman alrededor del 2,5–4% del precio de una casa en Polonia (cifras de 2026).
+A 26 de noviembre de 2026, RealHunt publica 31 casas en venta en Polonia, revisadas una a una por una persona. En Polonia, el precio de salida mediano de esas 31 casas es de 75.170 € (1.139 € por m², calculado con las 31 casas de superficie conocida); la más barata cuesta 53.693 € y la más cara, 90.600 €. Los impuestos y gastos de compra suman alrededor del 2,5–4% del precio de una casa en Polonia (cifras de 2026).
 
-Fuente: RealHunt, https://realhunt.co/es/homes/poland · Actualizado el 25 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
+Fuente: RealHunt, https://realhunt.co/es/homes/poland · Actualizado el 26 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/poland.json · PDF: https://realhunt.co/data/countries/poland.es.pdf
 
 ## Datos clave
@@ -18,7 +18,7 @@ También en JSON: https://realhunt.co/data/countries/poland.json · PDF: https:/
 | Impuestos y gastos de compra | 2,5–4% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Los ciudadanos de la UE, EEE e Islandia compran en los mismos términos que los polacos. Otros extranjeros pueden comprar un apartamento sin permiso, pero normalmente necesitan un permiso del Ministerio del Interior (MSWiA) para comprar una casa o terreno. |
 | Impuesto anual sobre la vivienda | Los propietarios pagan un impuesto local sobre bienes inmuebles (podatek od nieruchomości) que fija el municipio, con un máximo en 2026 de 1,25 PLN por m² de superficie útil en pisos y casas. |
-| Fecha de estas cifras | 25 de noviembre de 2026 |
+| Fecha de estas cifras | 26 de noviembre de 2026 |
 
 ## Gastos e impuestos
 

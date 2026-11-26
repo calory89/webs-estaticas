@@ -1,8 +1,8 @@
 # Casas baratas en Alemania: datos clave y todas las casas de RealHunt
 
-A 25 de noviembre de 2026, RealHunt publica 21 casas en venta en Alemania, revisadas una a una por una persona. En Alemania, el precio de salida mediano de esas 21 casas es de 55.000 € (1.053 € por m², calculado con las 21 casas de superficie conocida); la más barata cuesta 40.000 € y la más cara, 199.000 €. Los impuestos y gastos de compra suman alrededor del 5–8,5% del precio de una casa en Alemania (cifras de 2026).
+A 26 de noviembre de 2026, RealHunt publica 21 casas en venta en Alemania, revisadas una a una por una persona. En Alemania, el precio de salida mediano de esas 21 casas es de 55.000 € (1.053 € por m², calculado con las 21 casas de superficie conocida); la más barata cuesta 40.000 € y la más cara, 199.000 €. Los impuestos y gastos de compra suman alrededor del 5–8,5% del precio de una casa en Alemania (cifras de 2026).
 
-Fuente: RealHunt, https://realhunt.co/es/homes/germany · Actualizado el 25 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
+Fuente: RealHunt, https://realhunt.co/es/homes/germany · Actualizado el 26 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/germany.json · PDF: https://realhunt.co/data/countries/germany.es.pdf
 
 ## Datos clave
@@ -18,7 +18,7 @@ También en JSON: https://realhunt.co/data/countries/germany.json · PDF: https:
 | Impuestos y gastos de compra | 5–8,5% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sí. No hay restricciones para que los extranjeros compren propiedades en Alemania, aunque los compradores no comunitarios normalmente necesitan un depósito mayor para obtener un préstamo. |
 | Impuesto anual sobre la vivienda | Los propietarios pagan el impuesto sobre bienes inmuebles (Grundsteuer), que desde 2025 se calcula como valor tasado x tipo impositivo x un coeficiente municipal (Hebesatz) que fija cada municipio. |
-| Fecha de estas cifras | 25 de noviembre de 2026 |
+| Fecha de estas cifras | 26 de noviembre de 2026 |
 
 ## Gastos e impuestos
 

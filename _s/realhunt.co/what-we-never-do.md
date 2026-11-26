@@ -4,7 +4,7 @@ How RealHunt works
 
 RealHunt never invents urgency, reviews, returns or numbers, never sells a place in a list, never charges buyers and never publishes a phone number. The build of the site checks every page for false urgency, promised returns, phone numbers and review markup, and reports what it finds.
 
-Updated 25 November 2026
+Updated 26 November 2026
 
 ### No false urgency
 
@@ -59,4 +59,4 @@ Seen one of these on RealHunt? Tell us at carlos@equinoxinvestmentgroup.com and 
 - [Editorial policy](https://realhunt.co/editorial-policy)
 
 ---
-Source: https://realhunt.co/what-we-never-do (RealHunt, 2026-11-25)
+Source: https://realhunt.co/what-we-never-do (RealHunt, 2026-11-26)

@@ -1,8 +1,8 @@
 # Casas baratas en el Reino Unido: datos clave y todas las casas de RealHunt
 
-A 25 de noviembre de 2026, RealHunt publica 7 casas en venta en el Reino Unido, revisadas una a una por una persona. En el Reino Unido, el precio de salida mediano de esas 7 casas es de 126.500 € (1.807 € por m², calculado con las 6 casas de superficie conocida); la más barata cuesta 82.600 € y la más cara, 198.400 €. Los impuestos y gastos de compra suman alrededor del 3–9% del precio de una casa en el Reino Unido (cifras de 2026). Con 7 casas la muestra es pequeña, así que la mediana de el Reino Unido es solo orientativa.
+A 26 de noviembre de 2026, RealHunt publica 7 casas en venta en el Reino Unido, revisadas una a una por una persona. En el Reino Unido, el precio de salida mediano de esas 7 casas es de 126.500 € (1.807 € por m², calculado con las 6 casas de superficie conocida); la más barata cuesta 82.600 € y la más cara, 198.400 €. Los impuestos y gastos de compra suman alrededor del 3–9% del precio de una casa en el Reino Unido (cifras de 2026). Con 7 casas la muestra es pequeña, así que la mediana de el Reino Unido es solo orientativa.
 
-Fuente: RealHunt, https://realhunt.co/es/homes/united-kingdom · Actualizado el 25 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
+Fuente: RealHunt, https://realhunt.co/es/homes/united-kingdom · Actualizado el 26 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/united-kingdom.json · PDF: https://realhunt.co/data/countries/united-kingdom.es.pdf
 
 ## Datos clave
@@ -18,7 +18,7 @@ También en JSON: https://realhunt.co/data/countries/united-kingdom.json · PDF:
 | Impuestos y gastos de compra | 3–9% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sí. No hay restricciones de nacionalidad para comprar viviendas en ninguna parte del Reino Unido ni se necesita visado, pero la compra no da derecho a vivir allí. |
 | Impuesto anual sobre la vivienda | Los propietarios u ocupantes pagan el council tax al ayuntamiento, y muchos ayuntamientos de Inglaterra cobran a las segundas viviendas un recargo de hasta el 100% desde abril de 2025. |
-| Fecha de estas cifras | 25 de noviembre de 2026 |
+| Fecha de estas cifras | 26 de noviembre de 2026 |
 
 ## Gastos e impuestos
 

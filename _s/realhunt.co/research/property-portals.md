@@ -2,7 +2,7 @@
 
 This is a directory of 179 property portals in 54 countries: the national portals, the large classified sites and the portals made for foreign buyers, each with its web address. They are in the order RealHunt checks them when it looks for homes in that country. Being listed here is not a recommendation or a rating.
 
-Updated 25 November 2026. Source: RealHunt, https://realhunt.co/research/property-portals (CC BY 4.0).
+Updated 26 November 2026. Source: RealHunt, https://realhunt.co/research/property-portals (CC BY 4.0).
 
 ## Spain
 
@@ -237,6 +237,8 @@ RealHunt: 16 checked homes, https://realhunt.co/homes/canada
 3. [Lamudi MX](https://www.lamudi.com.mx/)
 4. [Propiedades.com](https://propiedades.com/)
 5. [Century 21 México](https://century21mexico.com/)
+
+RealHunt: 14 checked homes, https://realhunt.co/homes/mexico
 
 ## Colombia
 

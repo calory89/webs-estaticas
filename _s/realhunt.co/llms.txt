@@ -2,7 +2,7 @@
 
 > RealHunt lists cheap homes for sale around the world (mostly under €100,000), each checked by a person and graded from 70 to 98 against every other home on the site. It is not an estate agent: every home links to its original listing.
 
-Today: 726 homes in 24 countries. Updated 2026-11-25.
+Today: 726 homes in 24 countries. Updated 2026-11-26.
 
 ## Key pages
 
@@ -97,7 +97,7 @@ Today: 726 homes in 24 countries. Updated 2026-11-25.
 - [Nederlands](https://realhunt.co/nl/llms.txt)
 - [Polski](https://realhunt.co/pl/llms.txt)
 
-## Countries (figures of 2026-11-25)
+## Countries (figures of 2026-11-26)
 
 - [Spain](https://realhunt.co/homes/spain): 191 homes from €38,000, median €97,000 (€1,217/m²); buying costs about 7.5 to 14% on top of the price. Text: https://realhunt.co/homes/spain.md. Data: https://realhunt.co/data/countries/spain.json, https://realhunt.co/data/countries/spain.md
 - [Italy](https://realhunt.co/homes/italy): 88 homes from €12,000, median €85,000 (€1,000/m²); buying costs about 4 to 15% on top of the price. Text: https://realhunt.co/homes/italy.md. Data: https://realhunt.co/data/countries/italy.json, https://realhunt.co/data/countries/italy.md
@@ -112,6 +112,7 @@ Today: 726 homes in 24 countries. Updated 2026-11-25.
 - [Portugal](https://realhunt.co/homes/portugal): 21 homes from €48,000, median €130,000 (€1,364/m²); buying costs about 3 to 12% on top of the price. Text: https://realhunt.co/homes/portugal.md. Data: https://realhunt.co/data/countries/portugal.json, https://realhunt.co/data/countries/portugal.md
 - [Netherlands](https://realhunt.co/homes/netherlands): 18 homes from €299,000, median €325,000 (€4,286/m²); buying costs about 2 to 9% on top of the price. Text: https://realhunt.co/homes/netherlands.md. Data: https://realhunt.co/data/countries/netherlands.json, https://realhunt.co/data/countries/netherlands.md
 - [Canada](https://realhunt.co/homes/canada): 16 homes from €55,842, median €99,500 (€963/m²); buying costs about 1.5 to 4% on top of the price. Text: https://realhunt.co/homes/canada.md. Data: https://realhunt.co/data/countries/canada.json, https://realhunt.co/data/countries/canada.md
+- [Mexico](https://realhunt.co/homes/mexico): 14 homes from €50,575, median €97,100 (€1,266/m²); buying costs about 3.5 to 8% on top of the price. Text: https://realhunt.co/homes/mexico.md. Data: https://realhunt.co/data/countries/mexico.json, https://realhunt.co/data/countries/mexico.md
 - [Switzerland](https://realhunt.co/homes/switzerland): 10 homes from €32,300, median €70,100 (€2,337/m²); buying costs about 1 to 5% on top of the price. Text: https://realhunt.co/homes/switzerland.md. Data: https://realhunt.co/data/countries/switzerland.json, https://realhunt.co/data/countries/switzerland.md
 - [Bulgaria](https://realhunt.co/homes/bulgaria): 7 homes from €58,900, median €66,000 (€740/m²); buying costs about 3.2 to 8.5% on top of the price (small sample). Text: https://realhunt.co/homes/bulgaria.md. Data: https://realhunt.co/data/countries/bulgaria.json, https://realhunt.co/data/countries/bulgaria.md
 - [United Kingdom](https://realhunt.co/homes/united-kingdom): 7 homes from €82,600, median €126,500 (€1,807/m²); buying costs about 3 to 9% on top of the price (small sample). Text: https://realhunt.co/homes/united-kingdom.md. Data: https://realhunt.co/data/countries/united-kingdom.json, https://realhunt.co/data/countries/united-kingdom.md
