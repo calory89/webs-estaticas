@@ -4,8 +4,24 @@
 <link href="https://kolaboro.com/shipping/feed.xml" rel="self"/>
 <link href="https://kolaboro.com/shipping/"/>
 <id>https://kolaboro.com/shipping/</id>
-<updated>2026-11-25T09:06:35Z</updated>
+<updated>2026-11-26T08:53:28Z</updated>
 <author><name>Kolaboro</name></author>
+<entry>
+<title>26 November 2026: 18 changes shipped so far</title>
+<link href="https://kolaboro.com/shipping/#d-2026-11-26"/>
+<id>https://kolaboro.com/shipping/#d-2026-11-26</id>
+<published>2026-11-26T00:00:00Z</published>
+<updated>2026-11-26T08:51:57Z</updated>
+<content type="html">&lt;ul&gt;&lt;li&gt;Kolaboro.com n40 r1b: /data/ copy without tool names, /m/ and tool descriptions under 160, per-market Atom feed on /m/, neutral conflict-of-interest line on country pages&lt;/li&gt;&lt;li&gt;Kolaboro.com n40 r1a: singular fix on country guides, contract check renamed, shorter /check/ descriptions, plainer about text, shipped lists moved to JSON&lt;/li&gt;&lt;li&gt;Kolaboro.com n40 r1c: /faq/ in 8 languages, 40 buyer questions answered from the open data with source and date (R01-08)&lt;/li&gt;&lt;li&gt;Kolaboro.com n40 r1b: shipped rows for 26 Nov (data page wording, market snippets, shorter snippets, Atom per market)&lt;/li&gt;&lt;li&gt;Kolaboro.com n40 r1a: byline with check date on country guides, verb agreement after singular fix&lt;/li&gt;&lt;li&gt;Kolaboro.com n40 r1a: catalog refresh after rebase&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Day in progress: summary taken from the commit subjects so far.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>25 November 2026: 28 changes shipped</title>
+<link href="https://kolaboro.com/changelog/2026-11-25/"/>
+<id>https://kolaboro.com/shipping/#d-2026-11-25</id>
+<published>2026-11-25T00:00:00Z</published>
+<updated>2026-11-25T23:19:29Z</updated>
+<content type="html">&lt;ul&gt;&lt;li&gt;Kolaboro.com n39 t1: JSON Schemas, live validation and badge, record fingerprints, ETag/304, query by URL, NDJSON, changes CSV, possible duplicates, source status by site&lt;/li&gt;&lt;li&gt;Kolaboro.com n39 t3: SRI audit counts a hash next to any mention of a library address in a loader file (loaders look it up in a map)&lt;/li&gt;&lt;li&gt;Kolaboro.com n39 t2: one end-of-main handler in inject, so /engineering/ shows the shipped lists again next to the data links&lt;/li&gt;&lt;li&gt;Kolaboro.com n39 t3: heading item text matches the measurement (fr and ru fixed, es still one line on phones)&lt;/li&gt;&lt;li&gt;Kolaboro.com n39 t2: Shipped 25 Nov 2026 heading on /engineering/ and /yc/ (per-agent item lists)&lt;/li&gt;&lt;li&gt;Kolaboro.com n39 t1: query form fits 390 px, 44 px link rows on record and data pages&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Summary taken from the day&amp;#x27;s commit subjects.&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>23 November 2026: 109 changes shipped</title>
 <link href="https://kolaboro.com/changelog/2026-11-23/"/>
@@ -132,7 +148,7 @@
 <id>https://kolaboro.com/shipping/#d-2026-11-05</id>
 <published>2026-11-05T00:00:00Z</published>
 <updated>2026-11-05T22:49:07Z</updated>
-<content type="html">&lt;ul&gt;&lt;li&gt;You can now look up a project or developer name in official registers live, and the results appear in your check.&lt;/li&gt;&lt;li&gt;Projects not yet reviewed now show only facts and a &amp;#x27;Not yet reviewed&amp;#x27; note, with no score, and are left out of rankings.&lt;/li&gt;&lt;li&gt;After paying with PayPal, the thanks page shows your order, next steps and live payment status. Phones get a sticky pay bar for unpaid cases.&lt;/li&gt;&lt;li&gt;Every project page now shows hourly findings.&lt;/li&gt;&lt;li&gt;New dark mode, keyboard shortcuts and a printable one page project scorecard. Offline reading is back too.&lt;/li&gt;&lt;li&gt;The Spanish portal now covers the dashboard, permit upload and sharing texts, and each language page appears in its own language.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Summary written by AI from the day&amp;#x27;s commits and checked by code.&lt;/p&gt;</content>
+<content type="html">&lt;ul&gt;&lt;li&gt;Image-index.json and the technology render check no longer show developer domains or project names (anonymity rule); matches link to the image check tool&amp;#x27;s anonymous ids&lt;/li&gt;&lt;li&gt;Sitemap index split by type and language, country hubs and guides, rankings, embeds, SEO dashboard, live llms.txt, IndexNow key, HEAD = GET, robots for AI crawlers&lt;/li&gt;&lt;li&gt;Buyer cycle: one-box check with register lookup, login gate and return, dashboard checks, watch, permit upload, private report with QR, pay and site visit path&lt;/li&gt;&lt;li&gt;Translation engine never rewrites a text to itself (fixes a hang on translated check pages during a review), place names and dates inside translated sentences&lt;/li&gt;&lt;li&gt;Buyer cycle uses the live /api/kb/lookup (register-only pass after the desk review, with developer and permit), legacy registers as fallback&lt;/li&gt;&lt;li&gt;Hold back sw.js and /saved/ (net zero files while the Pages file limit is fixed); Save offline button appears only once /sw.js is published&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Summary taken from the day&amp;#x27;s commit subjects.&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>4 November 2026: 67 changes shipped</title>
@@ -148,7 +164,7 @@
 <id>https://kolaboro.com/shipping/#d-2026-11-03</id>
 <published>2026-11-03T00:00:00Z</published>
 <updated>2026-11-03T23:41:45Z</updated>
-<content type="html">&lt;ul&gt;&lt;li&gt;Project pages now show what would change a project&amp;#x27;s score, how old its website is, and whether its promises have drifted over time.&lt;/li&gt;&lt;li&gt;A new hazards page lets you pin a plot and read flood, earthquake, tsunami and volcano information live, with the source shown for each figure.&lt;/li&gt;&lt;li&gt;Satellite pages now show radar and monthly photo changes for an area, plus milestone evidence, and they fit phone screens.&lt;/li&gt;&lt;li&gt;New buyer tools run in your browser: PDF forensics, a payment account check, a contract check and an image check for content credentials.&lt;/li&gt;&lt;li&gt;Advertised prices are now compared with registered sales, and Dubai prices per square metre are checked against official area data.&lt;/li&gt;&lt;li&gt;Desk review of project websites got better at reading script-built pages and now says honestly when a site blocks the reader.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Summary written by AI from the day&amp;#x27;s commits and checked by code.&lt;/p&gt;</content>
+<content type="html">&lt;ul&gt;&lt;li&gt;Kolaboro hazards: live point lookup from open sources (Copernicus DEM, Aqueduct floods, USGS, NOAA tsunami, GVP volcanoes, OSM coastline) and zoning service probe&lt;/li&gt;&lt;li&gt;Kolaboro.com provenance: panel status classes no longer collide with site.css .ok; manifest &amp;#x27;starting&amp;#x27; state answers 200 (no console error)&lt;/li&gt;&lt;li&gt;Live State of Off-Plan report computed in the browser from the Parquet file, with code and SQL under every chart; property test results&lt;/li&gt;&lt;li&gt;Email_off around the 20 pages that show an email, so Cloudflare no longer injects its email-decode script (it carries no CSP nonce)&lt;/li&gt;&lt;li&gt;Desk review repairs malformed model JSON and falls back to the second reader; eval summary check v2 targets the injected claims&lt;/li&gt;&lt;li&gt;Nonce on scripts injected after kbHeaders (/admin, /check, ssr JSON-LD), private cache for /p/ /m/, 60 s cache for /data/*.json&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Summary taken from the day&amp;#x27;s commit subjects.&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>2 November 2026: 26 changes shipped</title>

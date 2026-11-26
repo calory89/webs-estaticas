@@ -13,6 +13,34 @@
  ],
  "items": [
   {
+   "id": "https://kolaboro.com/shipping/#d-2026-11-26",
+   "url": "https://kolaboro.com/shipping/#d-2026-11-26",
+   "title": "26 November 2026: 18 changes shipped so far",
+   "content_text": "- Kolaboro.com n40 r1b: /data/ copy without tool names, /m/ and tool descriptions under 160, per-market Atom feed on /m/, neutral conflict-of-interest line on country pages\n- Kolaboro.com n40 r1a: singular fix on country guides, contract check renamed, shorter /check/ descriptions, plainer about text, shipped lists moved to JSON\n- Kolaboro.com n40 r1c: /faq/ in 8 languages, 40 buyer questions answered from the open data with source and date (R01-08)\n- Kolaboro.com n40 r1b: shipped rows for 26 Nov (data page wording, market snippets, shorter snippets, Atom per market)\n- Kolaboro.com n40 r1a: byline with check date on country guides, verb agreement after singular fix\n- Kolaboro.com n40 r1a: catalog refresh after rebase\n\nDay in progress: summary taken from the commit subjects so far.",
+   "content_html": "<ul><li>Kolaboro.com n40 r1b: /data/ copy without tool names, /m/ and tool descriptions under 160, per-market Atom feed on /m/, neutral conflict-of-interest line on country pages</li><li>Kolaboro.com n40 r1a: singular fix on country guides, contract check renamed, shorter /check/ descriptions, plainer about text, shipped lists moved to JSON</li><li>Kolaboro.com n40 r1c: /faq/ in 8 languages, 40 buyer questions answered from the open data with source and date (R01-08)</li><li>Kolaboro.com n40 r1b: shipped rows for 26 Nov (data page wording, market snippets, shorter snippets, Atom per market)</li><li>Kolaboro.com n40 r1a: byline with check date on country guides, verb agreement after singular fix</li><li>Kolaboro.com n40 r1a: catalog refresh after rebase</li></ul><p>Day in progress: summary taken from the commit subjects so far.</p>",
+   "date_published": "2026-11-26T00:00:00Z",
+   "date_modified": "2026-11-26T08:51:57Z",
+   "_kolaboro": {
+    "ships": 18,
+    "data_updates": 1,
+    "method": "so-far"
+   }
+  },
+  {
+   "id": "https://kolaboro.com/shipping/#d-2026-11-25",
+   "url": "https://kolaboro.com/changelog/2026-11-25/",
+   "title": "25 November 2026: 28 changes shipped",
+   "content_text": "- Kolaboro.com n39 t1: JSON Schemas, live validation and badge, record fingerprints, ETag/304, query by URL, NDJSON, changes CSV, possible duplicates, source status by site\n- Kolaboro.com n39 t3: SRI audit counts a hash next to any mention of a library address in a loader file (loaders look it up in a map)\n- Kolaboro.com n39 t2: one end-of-main handler in inject, so /engineering/ shows the shipped lists again next to the data links\n- Kolaboro.com n39 t3: heading item text matches the measurement (fr and ru fixed, es still one line on phones)\n- Kolaboro.com n39 t2: Shipped 25 Nov 2026 heading on /engineering/ and /yc/ (per-agent item lists)\n- Kolaboro.com n39 t1: query form fits 390 px, 44 px link rows on record and data pages\n\nSummary taken from the day's commit subjects.",
+   "content_html": "<ul><li>Kolaboro.com n39 t1: JSON Schemas, live validation and badge, record fingerprints, ETag/304, query by URL, NDJSON, changes CSV, possible duplicates, source status by site</li><li>Kolaboro.com n39 t3: SRI audit counts a hash next to any mention of a library address in a loader file (loaders look it up in a map)</li><li>Kolaboro.com n39 t2: one end-of-main handler in inject, so /engineering/ shows the shipped lists again next to the data links</li><li>Kolaboro.com n39 t3: heading item text matches the measurement (fr and ru fixed, es still one line on phones)</li><li>Kolaboro.com n39 t2: Shipped 25 Nov 2026 heading on /engineering/ and /yc/ (per-agent item lists)</li><li>Kolaboro.com n39 t1: query form fits 390 px, 44 px link rows on record and data pages</li></ul><p>Summary taken from the day&#x27;s commit subjects.</p>",
+   "date_published": "2026-11-25T00:00:00Z",
+   "date_modified": "2026-11-25T23:19:29Z",
+   "_kolaboro": {
+    "ships": 28,
+    "data_updates": 12,
+    "method": "deterministic"
+   }
+  },
+  {
    "id": "https://kolaboro.com/shipping/#d-2026-11-23",
    "url": "https://kolaboro.com/changelog/2026-11-23/",
    "title": "23 November 2026: 109 changes shipped",
@@ -226,14 +254,14 @@
    "id": "https://kolaboro.com/shipping/#d-2026-11-05",
    "url": "https://kolaboro.com/changelog/2026-11-05/",
    "title": "5 November 2026: 72 changes shipped",
-   "content_text": "- You can now look up a project or developer name in official registers live, and the results appear in your check.\n- Projects not yet reviewed now show only facts and a 'Not yet reviewed' note, with no score, and are left out of rankings.\n- After paying with PayPal, the thanks page shows your order, next steps and live payment status. Phones get a sticky pay bar for unpaid cases.\n- Every project page now shows hourly findings.\n- New dark mode, keyboard shortcuts and a printable one page project scorecard. Offline reading is back too.\n- The Spanish portal now covers the dashboard, permit upload and sharing texts, and each language page appears in its own language.\n\nSummary written by AI from the day's commits and checked by code.",
-   "content_html": "<ul><li>You can now look up a project or developer name in official registers live, and the results appear in your check.</li><li>Projects not yet reviewed now show only facts and a &#x27;Not yet reviewed&#x27; note, with no score, and are left out of rankings.</li><li>After paying with PayPal, the thanks page shows your order, next steps and live payment status. Phones get a sticky pay bar for unpaid cases.</li><li>Every project page now shows hourly findings.</li><li>New dark mode, keyboard shortcuts and a printable one page project scorecard. Offline reading is back too.</li><li>The Spanish portal now covers the dashboard, permit upload and sharing texts, and each language page appears in its own language.</li></ul><p>Summary written by AI from the day&#x27;s commits and checked by code.</p>",
+   "content_text": "- Image-index.json and the technology render check no longer show developer domains or project names (anonymity rule); matches link to the image check tool's anonymous ids\n- Sitemap index split by type and language, country hubs and guides, rankings, embeds, SEO dashboard, live llms.txt, IndexNow key, HEAD = GET, robots for AI crawlers\n- Buyer cycle: one-box check with register lookup, login gate and return, dashboard checks, watch, permit upload, private report with QR, pay and site visit path\n- Translation engine never rewrites a text to itself (fixes a hang on translated check pages during a review), place names and dates inside translated sentences\n- Buyer cycle uses the live /api/kb/lookup (register-only pass after the desk review, with developer and permit), legacy registers as fallback\n- Hold back sw.js and /saved/ (net zero files while the Pages file limit is fixed); Save offline button appears only once /sw.js is published\n\nSummary taken from the day's commit subjects.",
+   "content_html": "<ul><li>Image-index.json and the technology render check no longer show developer domains or project names (anonymity rule); matches link to the image check tool&#x27;s anonymous ids</li><li>Sitemap index split by type and language, country hubs and guides, rankings, embeds, SEO dashboard, live llms.txt, IndexNow key, HEAD = GET, robots for AI crawlers</li><li>Buyer cycle: one-box check with register lookup, login gate and return, dashboard checks, watch, permit upload, private report with QR, pay and site visit path</li><li>Translation engine never rewrites a text to itself (fixes a hang on translated check pages during a review), place names and dates inside translated sentences</li><li>Buyer cycle uses the live /api/kb/lookup (register-only pass after the desk review, with developer and permit), legacy registers as fallback</li><li>Hold back sw.js and /saved/ (net zero files while the Pages file limit is fixed); Save offline button appears only once /sw.js is published</li></ul><p>Summary taken from the day&#x27;s commit subjects.</p>",
    "date_published": "2026-11-05T00:00:00Z",
    "date_modified": "2026-11-05T22:49:07Z",
    "_kolaboro": {
     "ships": 72,
     "data_updates": 139,
-    "method": "ai-checked"
+    "method": "deterministic"
    }
   },
   {
@@ -254,14 +282,14 @@
    "id": "https://kolaboro.com/shipping/#d-2026-11-03",
    "url": "https://kolaboro.com/changelog/2026-11-03/",
    "title": "3 November 2026: 124 changes shipped",
-   "content_text": "- Project pages now show what would change a project's score, how old its website is, and whether its promises have drifted over time.\n- A new hazards page lets you pin a plot and read flood, earthquake, tsunami and volcano information live, with the source shown for each figure.\n- Satellite pages now show radar and monthly photo changes for an area, plus milestone evidence, and they fit phone screens.\n- New buyer tools run in your browser: PDF forensics, a payment account check, a contract check and an image check for content credentials.\n- Advertised prices are now compared with registered sales, and Dubai prices per square metre are checked against official area data.\n- Desk review of project websites got better at reading script-built pages and now says honestly when a site blocks the reader.\n\nSummary written by AI from the day's commits and checked by code.",
-   "content_html": "<ul><li>Project pages now show what would change a project&#x27;s score, how old its website is, and whether its promises have drifted over time.</li><li>A new hazards page lets you pin a plot and read flood, earthquake, tsunami and volcano information live, with the source shown for each figure.</li><li>Satellite pages now show radar and monthly photo changes for an area, plus milestone evidence, and they fit phone screens.</li><li>New buyer tools run in your browser: PDF forensics, a payment account check, a contract check and an image check for content credentials.</li><li>Advertised prices are now compared with registered sales, and Dubai prices per square metre are checked against official area data.</li><li>Desk review of project websites got better at reading script-built pages and now says honestly when a site blocks the reader.</li></ul><p>Summary written by AI from the day&#x27;s commits and checked by code.</p>",
+   "content_text": "- Kolaboro hazards: live point lookup from open sources (Copernicus DEM, Aqueduct floods, USGS, NOAA tsunami, GVP volcanoes, OSM coastline) and zoning service probe\n- Kolaboro.com provenance: panel status classes no longer collide with site.css .ok; manifest 'starting' state answers 200 (no console error)\n- Live State of Off-Plan report computed in the browser from the Parquet file, with code and SQL under every chart; property test results\n- Email_off around the 20 pages that show an email, so Cloudflare no longer injects its email-decode script (it carries no CSP nonce)\n- Desk review repairs malformed model JSON and falls back to the second reader; eval summary check v2 targets the injected claims\n- Nonce on scripts injected after kbHeaders (/admin, /check, ssr JSON-LD), private cache for /p/ /m/, 60 s cache for /data/*.json\n\nSummary taken from the day's commit subjects.",
+   "content_html": "<ul><li>Kolaboro hazards: live point lookup from open sources (Copernicus DEM, Aqueduct floods, USGS, NOAA tsunami, GVP volcanoes, OSM coastline) and zoning service probe</li><li>Kolaboro.com provenance: panel status classes no longer collide with site.css .ok; manifest &#x27;starting&#x27; state answers 200 (no console error)</li><li>Live State of Off-Plan report computed in the browser from the Parquet file, with code and SQL under every chart; property test results</li><li>Email_off around the 20 pages that show an email, so Cloudflare no longer injects its email-decode script (it carries no CSP nonce)</li><li>Desk review repairs malformed model JSON and falls back to the second reader; eval summary check v2 targets the injected claims</li><li>Nonce on scripts injected after kbHeaders (/admin, /check, ssr JSON-LD), private cache for /p/ /m/, 60 s cache for /data/*.json</li></ul><p>Summary taken from the day&#x27;s commit subjects.</p>",
    "date_published": "2026-11-03T00:00:00Z",
    "date_modified": "2026-11-03T23:41:45Z",
    "_kolaboro": {
     "ships": 124,
     "data_updates": 84,
-    "method": "ai-checked"
+    "method": "deterministic"
    }
   },
   {
