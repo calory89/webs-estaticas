@@ -31,6 +31,9 @@ export const PATHS = /^\/(?:es|de|fr|nl|ru|zh|ar)\/(?:countries|rankings)(?:\/[a
 const slugM = m => encodeURIComponent(String(m).toLowerCase().replace(/\s+/g, '-'));
 const slugA = s => String(s || '').normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
 const bdi = s => '<bdi>' + esc(s) + '</bdi>';
+// k15 (26 Nov 2026): area text in the page language when /data/i18n/kbx_n29i.json AR holds it; English wording we hold no translation for keeps lang="en"
+const ENW = /\b(the|near|of|and|side|shore|highway|next|area|phase|west|east|north|south|labels|page|parcel|urban|listing|road|street|lake|beach|airport|behind|opposite|between|along|axis)\b/i;
+const arCell = (a, lang) => lang === 'en' ? bdi(a) : '<bdi>' + String(a).split(', ').map(k => { const h = TB.kbx_n29i_AR[k] && TB.kbx_n29i_AR[k][lang]; if (h) return esc(h); const m = mkName(k, lang); return m === k && ENW.test(k) ? '<span lang="en">' + esc(k) + '</span>' : esc(m); }).join(', ') + '</bdi>';
 const nf = (lang, n) => Number(n).toLocaleString(LOC[lang] || 'en-GB');
 const pct = (a, b) => b ? Math.round(a / b * 100) : 0;
 const med = a => { const s = a.filter(v => v != null).sort((x, y) => x - y); return s.length ? (s.length % 2 ? s[(s.length - 1) / 2] : Math.round((s[s.length / 2 - 1] + s[s.length / 2]) / 2)) : null; };
@@ -89,7 +92,7 @@ function marketPage(D, m, lang) {
   const rows = L.slice().sort((a, b) => (D.score(b.id) ?? -1) - (D.score(a.id) ?? -1) || a.n.localeCompare(b.n)).map(x => {
     const h = handoverOf(ix, x), s = D.score(x.id);
     return '<tr><td><a href="' + pre(lang) + '/projects/' + x.s + '/">' + bdi(x.n) + '</a></td><td>' +
-      (x.dv ? (x.dvs && ix.devs.has(x.dvs) ? '<a href="' + pre(lang) + '/developers/' + x.dvs + '/">' + bdi(x.dv) + '</a>' : bdi(x.dv)) : esc(t(lang, 'np'))) + '</td><td>' + (x.ar && x.ar !== x.mk ? bdi(placeName(x.ar, lang)) : '') +
+      (x.dv ? (x.dvs && ix.devs.has(x.dvs) ? '<a href="' + pre(lang) + '/developers/' + x.dvs + '/">' + bdi(x.dv) + '</a>' : bdi(x.dv)) : esc(t(lang, 'np'))) + '</td><td>' + (x.ar && x.ar !== x.mk ? arCell(x.ar, lang) : '') +
       '</td><td>' + (h ? bdi(hdisp(h.d, lang)) : esc(t(lang, 'np'))) + '</td><td>' + esc(st.permit(x) ? t(lang, 'yes') : t(lang, 'no')) + '</td><td>' + (s == null ? '-' : nf(lang, s)) + '</td></tr>';
   }).join('');
   const Q = [[t(lang, 'q1', v), t(lang, 'a1', v)], [t(lang, 'q2', v), t(lang, 'a2', Object.assign({}, v, { pn: nf(lang, st.pn), pp: nf(lang, pct(st.pn, st.n)) }))],
