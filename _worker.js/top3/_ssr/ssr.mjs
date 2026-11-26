@@ -23321,7 +23321,7 @@ ${countries.map((c) => `<h2 style="font-size:20px;margin:22px 0 6px">${esc(c)}</
 	});
 }
 /** Small link for the city page. */
-var poolLink = (id, slug, L, esName) => I$1[id] ? `<p class="note" style="margin:10px 0"><a href="${P(L === "es" ? "es" : "en", `/pools/${slug}`)}" data-t="pool_link" data-city="${esc(slug)}">${icon("pool")} ${esc(TX$3[L === "es" ? "es" : "en"].h1(L === "es" && esName ? esName : I$1[id]))} →</a></p>` : "";
+var poolLink = (id, slug, L, esName) => I$1[id] ? `<p class="note" style="margin:10px 0"><a href="${P(L === "es" ? "es" : "en", `/pools/${slug}`)}" data-t="pool_link" data-city="${esc(slug)}">${icon("pool")} ${esc(L === "en" || L === "es" ? TX$3[L].h1(L === "es" && esName ? esName : I$1[id]) : `${FL[L].pool}: ${esName ?? I$1[id]}`)} →</a></p>` : "";
 /** T5.5 / T5.21: winners of this filter in a city, for the hotel page ("Also a winner in" and alternatives). */
 async function poolWinners(id, slug, L, cn) {
 	if (!I$1[id]) return [];
@@ -23827,7 +23827,7 @@ ${countries.map((c) => `<h2 style="font-size:20px;margin:22px 0 6px">${esc(c)}</
 	});
 }
 /** Small link for the city page. */
-var gymLink = (id, slug, L, esName) => I[id] ? `<p class="note" style="margin:10px 0"><a href="${P(L === "es" ? "es" : "en", `/gyms/${slug}`)}" data-t="gym_link" data-city="${esc(slug)}">${icon("gym")} ${esc(TX$2[L === "es" ? "es" : "en"].h1(L === "es" && esName ? esName : I[id]))} →</a></p>` : "";
+var gymLink = (id, slug, L, esName) => I[id] ? `<p class="note" style="margin:10px 0"><a href="${P(L === "es" ? "es" : "en", `/gyms/${slug}`)}" data-t="gym_link" data-city="${esc(slug)}">${icon("gym")} ${esc(L === "en" || L === "es" ? TX$2[L].h1(L === "es" && esName ? esName : I[id]) : `${FL[L].gym}: ${esName ?? I[id]}`)} →</a></p>` : "";
 /** T5.5 / T5.21: winners of this filter in a city, for the hotel page ("Also a winner in" and alternatives). */
 async function gymWinners(id, slug, L, cn) {
 	if (!I[id]) return [];
@@ -55487,7 +55487,21 @@ async function cityPage(city0, L) {
 <p class="t3dn" hidden data-datesnote role="status">${esc(bx.datesOn)}</p>
 <div class="cards" id="hotels">${hs.map((h, i) => card(h, city, i, L, sights, hero?.img ? `/api/img/${city.id}/big` : void 0, hpLive.has(hotelSlug(h.name, city.slug)) ? P(hpL.get(hotelSlug(h.name, city.slug))?.includes(L) ? L : "en", `/hotel/${hotelSlug(h.name, city.slug)}`) : void 0, h === lux ? payMore : "", x4[i])).join("")}</div>
 <p class="c4row c4cmp"><a href="#cmp">⇄ ${esc(c4.cmp3)}</a></p>
-<section class="c4ref" aria-labelledby="c4ref"><h2 id="c4ref">${esc(c4.refineH)}</h2><p class="more-links" style="margin:14px 0 4px;font-size:15px"><a href="${P(GROWTH_LANGS.includes(L) ? L : "en", `/compare-picks/${city.slug}`)}">${L === "es" ? "Comparar los tres hoteles" : "Compare the three hotels side by side"}</a>${(sights ?? []).length ? ` · ${L === "es" ? "Hoteles cerca de" : "Hotels near"}: ${(sights ?? []).slice(0, 6).map((x) => `<a href="${P(GROWTH_LANGS.includes(L) ? L : "en", `/near/${city.slug}/${x.name.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/&/g, " and ").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}`)}">${esc(x.name)}</a>`).join(", ")}` : ""}</p>${GROWTH_LANGS.includes(L) ? voteWidget(L, city.slug) : ""}
+<section class="c4ref" aria-labelledby="c4ref"><h2 id="c4ref">${esc(c4.refineH)}</h2><p class="more-links" style="margin:14px 0 4px;font-size:15px"><a href="${P(GROWTH_LANGS.includes(L) ? L : "en", `/compare-picks/${city.slug}`)}">${{
+			es: "Comparar los tres hoteles",
+			de: "Die drei Hotels im Vergleich",
+			fr: "Comparer les trois hôtels",
+			it: "Confronta i tre hotel",
+			pt: "Comparar os três hotéis",
+			da: "Sammenlign de tre hoteller"
+		}[L] ?? "Compare the three hotels side by side"}</a>${(sights ?? []).length ? ` · ${{
+			es: "Hoteles cerca de",
+			de: "Hotels in der Nähe von",
+			fr: "Hôtels près de",
+			it: "Hotel vicino a",
+			pt: "Hotéis perto de",
+			da: "Hoteller nær"
+		}[L] ?? "Hotels near"}:${(sights ?? []).slice(0, 6).map((x) => `<a href="${P(GROWTH_LANGS.includes(L) ? L : "en", `/near/${city.slug}/${x.name.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/&/g, " and ").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}`)}">${esc(x.name)}</a>`).join(", ")}` : ""}</p>${GROWTH_LANGS.includes(L) ? voteWidget(L, city.slug) : ""}
 ${filterChips({
 			slug: city.slug,
 			L,
