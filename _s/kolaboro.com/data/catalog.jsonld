@@ -26,7 +26,7 @@
   "@id": "http://publications.europa.eu/resource/authority/language/ENG"
  },
  "dct:modified": {
-  "@value": "2026-11-26T09:34:35Z",
+  "@value": "2026-11-26T09:37:10Z",
   "@type": "xsd:dateTime"
  },
  "dct:license": {
@@ -3262,7 +3262,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "235875",
+      "@value": "235895",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -3276,7 +3276,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "c5ccd2b5dfe57fb6a98477bb7ec3b69b34b82d05b8a1c32ec51228de92ffd0e5"
+      "spdx:checksumValue": "d9ddaed9144fe401e777882b0e31a0845bd93ef7a50db610f411c2aaba2c0793"
      },
      "dct:conformsTo": {
       "@id": "https://kolaboro.com/api/x/data/schema/shipping.json"
