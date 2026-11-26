@@ -3,10 +3,11 @@
 Uso: python3 hlc/build.py   (desde la raíz de la rama pub/happylowcost.com)
 """
 import os, re, subprocess, json, sys
+from urllib.parse import unquote
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import bk as BK
 
-V = '49'
+V = '50'
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 files = subprocess.run(['git', 'ls-files', '-co', '--exclude-standard', '-z', '*.html'], capture_output=True).stdout.decode().split('\0')
@@ -495,7 +496,17 @@ if not ONLY and KEEP is not None:
         x = open(sm, encoding='utf-8').read()
         def keep_url(m):
             loc = re.search(r'<loc>https?://(?:www\.)?happylowcost\.com/([^/<]+)/?</loc>', m.group(0))
-            return '' if loc and loc.group(1) in gone else m.group(0)
+            if not loc:
+                return m.group(0)
+            slug = unquote(loc.group(1))
+            if slug in gone:
+                return ''
+            # 1.115 de las 1.702 URLs de estos sitemaps eran 404: el post se
+            # borro en la migracion y el sitemap seguia mandando a Google a
+            # rastrearlo. Si la pagina no esta en la rama, fuera del sitemap.
+            if not (os.path.isfile(os.path.join(slug, 'index.html')) or os.path.isfile(slug + '.html')):
+                return ''
+            return m.group(0)
         y = re.sub(r'\s*<url>.*?</url>', keep_url, x, flags=re.S)
         n += x.count('<url>') - y.count('<url>')
         if y != x:

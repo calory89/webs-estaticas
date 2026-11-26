@@ -81,7 +81,51 @@ if nfiles > 19500:
 elif nfiles > 18500:
     warns.append(f'{nfiles} ficheros (límite 20.000)')
 
-print(json.dumps({'paginas': len(set(scope)), 'ficheros': nfiles, 'errores': len(errors), 'avisos': len(warns)}, ensure_ascii=False))
+# ---------- lo que pedimos a Google tiene que existir ----------
+# El 26-nov-2026 los sitemaps pedian 1.702 URLs y 1.115 daban 404, y 195 de las
+# 207 URLs de /en/deals/ que Google tenia indexadas tambien. Se mira aqui.
+sm_dead = []
+for sm in sorted(glob.glob('*-sitemap*.xml') + glob.glob('sitemap*.xml')):
+    if sm.startswith('sitemap_index'):
+        continue
+    try:
+        x = open(sm, encoding='utf-8', errors='ignore').read()
+    except Exception:
+        continue
+    for loc in re.findall(r'<loc>\s*(.*?)\s*</loc>', x):
+        p = unquote(urlsplit(loc).path)
+        rel = p.lstrip('/')
+        if not rel:
+            continue
+        if os.path.isfile(rel) or os.path.isfile(os.path.join(rel, 'index.html')):
+            continue
+        sm_dead.append((sm, p))
+if sm_dead:
+    ex = ', '.join(p for _, p in sm_dead[:5])
+    errors.append(f'{len(sm_dead)} URL(s) en los sitemaps sin pagina en la rama: {ex}')
+
+# ---------- una redireccion no puede llevar a un 404 ----------
+red_dead = []
+nrules = 0
+for line in open('_redirects', encoding='utf-8'):
+    p = line.split()
+    if len(p) < 2 or p[0].startswith('#'):
+        continue
+    nrules += 1
+    dst = unquote(p[1].split('#')[0].split('?')[0])
+    if not dst.startswith('/') or '*' in dst or ':' in dst:
+        continue
+    if not exists(dst):
+        red_dead.append((p[0], dst))
+if red_dead:
+    ex = ', '.join(f'{a} -> {b}' for a, b in red_dead[:5])
+    errors.append(f'{len(red_dead)} redireccion(es) llevan a una pagina que no existe: {ex}')
+if nrules > 1900:
+    errors.append(f'{nrules} reglas en _redirects: Cloudflare Pages solo aplica 2.000 estaticas')
+elif nrules > 1600:
+    warns.append(f'{nrules} reglas en _redirects (limite 2.000)')
+
+print(json.dumps({'paginas': len(set(scope)), 'ficheros': nfiles, 'reglas': nrules, 'errores': len(errors), 'avisos': len(warns)}, ensure_ascii=False))
 for w in warns:
     print('AVISO', w)
 for e in errors[:60]:

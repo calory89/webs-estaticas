@@ -520,3 +520,48 @@ document.documentElement.classList.add('hlc-js');
   }
   if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',init);else init();
 })();
+
+/* ───── 404 con memoria (26-nov-2026) ─────────────────────────────────────────
+   Nueve anos de chollos publicados en Facebook dejan miles de enlaces que ya no
+   existen: 1.115 URLs de los sitemaps antiguos daban 404 y la mitad seguian
+   recibiendo visitas. Si la direccion que falla nombra un destino del indice,
+   la pagina de 404 lo ofrece en vez de dejar al visitante sin salida. */
+(function(){
+  var b=document.body; if(!b||!/(^|\s)e404(\s|$)/.test(b.className))return;
+  var raw=location.pathname||'';
+  var p=raw; try{p=decodeURIComponent(raw);}catch(e){}
+  function fold(s){return String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-');}
+  var f='-'+fold(p)+'-';
+  if(f.length<7)return;
+  var en=/^\/en\//.test(raw);
+  fetch('/hlc/destinos.json').then(function(r){return r.json();}).then(function(L){
+    var best=null;
+    (L||[]).forEach(function(x){
+      [x.s].concat(x.a||[]).concat([x.n]).forEach(function(n){
+        n=fold(n); if(n.length<4)return;
+        var i=f.indexOf('-'+n+'-'); if(i<0)i=f.indexOf('-'+n);
+        if(i<0)return;
+        if(!best||i<best.i||(i===best.i&&n.length>best.len))best={i:i,len:n.length,x:x};
+      });
+    });
+    if(!best)return;
+    var x=best.x, wrap=document.querySelector('main .wrap'); if(!wrap)return;
+    var guide=x.g?(en?('/en/destinations/'+x.s+'/'):('/destinos/'+x.s+'/')):'';
+    var srch=(en?'/en/search/?q=':'/buscar/?q=')+encodeURIComponent(x.n);
+    var alert_=en?'/en/deals/':('/alertas/?d='+encodeURIComponent(x.n));
+    var box=document.createElement('div');
+    box.setAttribute('data-sug','');
+    box.style.cssText='margin:18px auto 6px;max-width:560px;border:1.5px solid #EADCC4;background:#fff;border-radius:16px;padding:16px 18px';
+    box.innerHTML='<p style="margin:0 0 10px;font-size:17px">'+(en?'Were you looking for <strong>':'¿Buscabas <strong>')+x.n+'</strong>?</p>'+
+      '<div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center">'+
+      (guide?'<a class="hlc-btn" href="'+guide+'">'+(en?'Guide: ':'Guía de ')+x.n+'</a>':'')+
+      '<a class="hlc-btn'+(guide?' o':'')+'" href="'+alert_+'">'+(en?"Today's deals":'Avísame de un chollo a '+x.n)+'</a>'+
+      '<a class="hlc-btn o" href="'+srch+'">'+(en?'Search '+x.n:'Buscar '+x.n)+'</a></div>';
+    var h1=wrap.querySelector('h1');
+    var after=h1&&h1.parentNode===wrap?h1.nextElementSibling:null;
+    if(after&&after.nextSibling)wrap.insertBefore(box,after.nextSibling);
+    else if(after)wrap.appendChild(box);
+    else wrap.insertBefore(box,wrap.firstChild);
+    try{if(window.dataLayer)window.dataLayer.push({event:'hlc_404_sug',dest:x.s});}catch(e){}
+  }).catch(function(){});
+})();

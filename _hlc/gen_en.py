@@ -88,7 +88,7 @@ FOOTER = '''<footer class="fx"><div class="fx-in">
 <div><h2 class="fx-h">Follow us</h2><a href="https://www.facebook.com/happylowcostofficialpage/" target="_blank" rel="noopener">Facebook</a><a href="https://x.com/happylowcost" target="_blank" rel="noopener">X / Twitter</a><a href="/">🇪🇸 Versión en español</a></div>
 </div>
 <div class="fx-legal">Some links are affiliate links: if you book through them we may earn a small commission at no extra cost to you. Prices were checked on the date shown on each deal and can change. Destination photos: Wikimedia Commons (credits on each page). <a href="/en/legal/" style="display:inline;color:#D6DCEA!important;text-decoration:underline">Legal notice, privacy &amp; cookies</a> · © 2012-2026 Happy Low Cost</div>
-</footer><script src="/hlc/hlc.js?v=49" defer></script>'''
+</footer><script src="/hlc/hlc.js?v=50" defer></script>'''
 
 
 def head(title, desc, canonical, es_url=None, og_image=None, og_type='website', ld=None, robots='index, follow, max-image-preview:large', body_class=''):
@@ -328,11 +328,82 @@ def main():
 </div></main>{FOOTER}</body></html>'''
         write(f'en/deals/from/{ck}', pg)
         city_links.append((ck, cn, len(sub)))
+    # Una pagina de ciudad que se borra el dia que no sale ningun chollo desde
+    # alli es un 404 para Google: 42 de estas paginas sumaron 2.323 impresiones
+    # en 28 dias y las 42 respondian 404. Ahora la pagina se queda, dice que hoy
+    # no hay nada y ofrece la ruta, la lista completa y la alerta. Como en
+    # espanol, que nunca borro estas paginas: solo las saca del indice.
     if os.path.isdir('en/deals/from'):
-        import shutil
-        for d_ in os.listdir('en/deals/from'):
-            if d_ not in bycity and os.path.isdir(os.path.join('en/deals/from', d_)):
-                shutil.rmtree(os.path.join('en/deals/from', d_))
+        kept_empty = 0
+        for d_ in sorted(os.listdir('en/deals/from')):
+            p_ = os.path.join('en/deals/from', d_, 'index.html')
+            if d_ in bycity or not os.path.isfile(p_):
+                continue
+            old_ = open(p_, encoding='utf-8').read()
+            if 'data-empty' in old_:
+                continue
+            m_ = re.search(r'<h1[^>]*>(.*?)</h1>', old_, re.S)
+            cn_ = re.sub(r'<[^>]+>', '', m_.group(1)).strip() if m_ else d_.replace('-', ' ').title()
+            cn_ = re.sub(r'^Flight deals from\s*', '', cn_) or d_.replace('-', ' ').title()
+            fl_ = (f'<a class="hlc-btn" href="/en/flights/from/{d_}/">Cheapest routes from {e(cn_)}</a>'
+                   if os.path.isdir(os.path.join('en/flights/from', d_)) else '')
+            pg_ = head(f'Flight deals from {cn_}: nothing right now - Happy Low Cost',
+                       f'No verified deal leaving from {cn_} today. See the cheapest routes from {cn_}, '
+                       f"today's deals from everywhere, or let us tell you the moment one appears.",
+                       f'{SITE}/en/deals/from/{d_}/', None, robots='noindex, follow', body_class='chollos')
+            pg_ += (f'<main class="sec" data-empty style="padding-top:30px"><div class="wrap" style="max-width:760px">'
+                    f'<div class="kicker">Departures from {e(cn_)}</div>'
+                    f'<h1 class="x-h1">Nothing from {e(cn_)} today</h1>'
+                    f'<p style="font-size:18px">We re-check every price each day and nothing leaving from '
+                    f'{e(cn_)} clears our bar right now. New ones turn up most days.</p>'
+                    f'<div style="display:flex;gap:10px;flex-wrap:wrap">{fl_}'
+                    f'<a class="hlc-btn{" o" if fl_ else ""}" href="/en/deals/">Today\'s deals</a>'
+                    f'<a class="hlc-btn o" href="/en/flights/">All flight routes</a></div>'
+                    f'</div></main>{FOOTER}</body></html>')
+            open(p_, 'w', encoding='utf-8').write(pg_)
+            for fn_ in ('og.jpg', 'foto.jpg'):
+                q_ = os.path.join('en/deals/from', d_, fn_)
+                if os.path.exists(q_):
+                    os.remove(q_)
+            kept_empty += 1
+        print('en-from-empty', kept_empty)
+
+    # ---------- chollos ingleses retirados: pagina de "caducado", no un 404 ----------
+    # En espanol esto ya se hacia (gen_deals.py). En ingles la pagina
+    # desaparecia y Google se quedaba con 131 URLs muertas.
+    live_en = {G.en_deal_slug(x) for x in deals}
+    gone_en = 0
+    if os.path.isdir('en/deals'):
+        for d_ in sorted(os.listdir('en/deals')):
+            p_ = os.path.join('en/deals', d_, 'index.html')
+            if d_ in ('from', 'ideas', 'to') or d_ in live_en or not os.path.isfile(p_):
+                continue
+            old_ = open(p_, encoding='utf-8').read()
+            if 'data-expired' in old_ or 'data-empty' in old_:
+                continue
+            m_ = re.search(r'<h1[^>]*>(.*?)</h1>', old_, re.S)
+            t_ = re.sub(r'<[^>]+>', '', m_.group(1)).strip() if m_ else 'This deal'
+            mt_ = re.match(r'(.+?)-\d+-eur-', d_)
+            rt_ = mt_.group(1) if mt_ else ''
+            rl_ = (f'<a class="hlc-btn" href="/en/flights/{rt_}/">Today\'s price on this route</a>'
+                   if rt_ and os.path.isdir(os.path.join('en/flights', rt_)) else '')
+            pg_ = head(f'{t_} - expired - Happy Low Cost',
+                       'This deal is gone. See the flight deals we verified today.',
+                       f'{SITE}/en/deals/{d_}/', None, robots='noindex, follow', body_class='deal')
+            pg_ += (f'<main class="sec" data-expired style="padding-top:30px"><div class="wrap" style="max-width:760px">'
+                    f'<div class="kicker">Expired deal</div><h1 class="x-h1">{e(t_)}</h1>'
+                    f'<p style="font-size:18px">This price is no longer there: either the date has passed or it '
+                    f'went up when we checked it again. Deals fly, and new ones land every day.</p>'
+                    f'<div style="display:flex;gap:10px;flex-wrap:wrap">{rl_}'
+                    f'<a class="hlc-btn{" o" if rl_ else ""}" href="/en/deals/">Today\'s deals</a></div>'
+                    f'</div></main>{FOOTER}</body></html>')
+            open(p_, 'w', encoding='utf-8').write(pg_)
+            for fn_ in ('og.jpg', 'foto.jpg', 'credito.txt'):
+                q_ = os.path.join('en/deals', d_, fn_)
+                if os.path.exists(q_):
+                    os.remove(q_)
+            gone_en += 1
+    print('en-expired', gone_en)
 
     # ---------- ideas (EN) ----------
     def nights(f_):
