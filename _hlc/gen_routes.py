@@ -3,7 +3,7 @@
 El texto lo escribe la función hlc-routes de Supabase con la API de Claude (créditos de Carlos);
 este script solo descarga ese contenido y monta el HTML estático. Ejecutar desde la raíz de la rama pub/happylowcost.com,
 después de gen_deals.py y gen_en.py, y antes de `HLC_ONLY=vuelos python3 _hlc/build.py`."""
-import os, re, sys, json, html, shutil, urllib.request, datetime
+import io, os, re, sys, json, html, shutil, urllib.request, datetime
 from urllib.parse import quote
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import gen_deals as G  # noqa: E402
@@ -11,6 +11,35 @@ import gen_en as E  # noqa: E402
 
 SITE = 'https://www.happylowcost.com'
 FEED = 'https://gmdalfsvtfhzepyrdmjj.supabase.co/functions/v1/hlc-routes?action=feed'
+# ---- que rutas siguen en el indice de Google ----------------------------------
+# Las 3.380 paginas de ruta son el 61% de las impresiones del sitio y el 16% de
+# los clics, con posicion media 38-46. Las que no llegan a la posicion 25 y no
+# han tenido ni un clic en 28 dias sumaban 56.956 impresiones y cero clics: no
+# compiten, solo gastan rastreo. Quedan en noindex, follow (siguen pasando
+# enlace a los hubs) y fuera del sitemap.
+def _keep_routes():
+    p = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'rutas_indexadas.txt')
+    try:
+        out = set()
+        for ln in io.open(p, encoding='utf-8'):
+            ln = ln.split('#')[0].split()
+            if len(ln) == 2:
+                out.add(ln[0] + ' ' + ln[1])
+        return out
+    except Exception:
+        return set()
+
+
+KEEP_ROUTES = _keep_routes()
+CHEAP_SLUGS = set()   # lo rellena main(): las dos mas baratas por destino y por origen
+
+
+def route_indexed(lang, sl, r):
+    if not KEEP_ROUTES:
+        return True
+    return (lang + ' ' + sl) in KEEP_ROUTES or r['slug'] in CHEAP_SLUGS
+
+
 def e(x):
     return html.escape(str(x if x is not None else ""))
 
@@ -84,6 +113,7 @@ def page(r, lang, others):
     slug = r['slug']
     url = f"{SITE}/en/flights/{en_slug(r)}/" if en else f"{SITE}/vuelos/{slug}/"
     es_url, en_url = f"{SITE}/vuelos/{slug}/", f"{SITE}/en/flights/{en_slug(r)}/"
+    rob = 'index, follow, max-image-preview:large' if route_indexed(lang, en_slug(r) if en else slug, r) else 'noindex, follow'
     ds = r['dest_slug']
     hero = f'/hlc/img/cities/{ds}.jpg'
     dest = E.NAMES.get(ds, r['dest']) if en else r['dest']
@@ -110,9 +140,9 @@ def page(r, lang, others):
             c['meta'] = (f"Vuelos {r['origin']}-{dest} desde {p_} € ida y vuelta" + (', directo' if stops == 0 else '') + (f' con {air_}' if air_ else '') + '. '
                          + (f"Lo normal son unos {med_} €. " if med_ and med_ > p_ else '') + f"Mes más barato, calendario de precios y tarifas consultadas el {fdate(f.get('consultado'))}.")
     if en:
-        h = E.head(c.get('title', ''), c.get('meta', ''), url, es_url, og_image=f'{SITE}{hero}', ld=ld(c, url, crumbs), body_class='deal')
+        h = E.head(c.get('title', ''), c.get('meta', ''), url, es_url, og_image=f'{SITE}{hero}', ld=ld(c, url, crumbs), robots=rob, body_class='deal')
     else:
-        h = G.head(title=e(c.get('title', '')), desc=e(c.get('meta', '')), canonical=url, og_image=f'{SITE}{hero}', og_type='article',
+        h = G.head(title=e(c.get('title', '')), desc=e(c.get('meta', '')), canonical=url, og_image=f'{SITE}{hero}', og_type='article', robots=rob,
                    extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12">' + alt + G.ld_script(ld(c, url, crumbs)), body_class='deal')
     rel = ''.join(f'<a class="hub-l" href="{"/en/flights/" + en_slug(o) if en else "/vuelos/" + o["slug"]}/">{e(o["origin"])} → {e(E.NAMES.get(o["dest_slug"], o["dest"]) if en else o["dest"])} · {o["price_from"]} €</a>' for o in others[:12])
     L = (lambda es_, en_: en_ if en else es_)
@@ -224,6 +254,12 @@ def main():
     for r in rows:
         by_dest.setdefault(r['dest_slug'], []).append(r)
         by_orig.setdefault(r['origin'], []).append(r)
+    # una ruta nueva, aunque Search Console no la conozca todavia, se indexa si es
+    # una de las dos mas baratas a su destino o desde su ciudad: ahi si aporta algo
+    # que no esta en otra pagina.
+    for _l in list(by_dest.values()) + list(by_orig.values()):
+        for _r in sorted(_l, key=lambda x: x['price_from'])[:2]:
+            CHEAP_SLUGS.add(_r['slug'])
     urls_es, urls_en = [f'{SITE}/vuelos/'], [f'{SITE}/en/flights/']
     moved = {}
     for r in rows:
@@ -233,7 +269,8 @@ def main():
             d = os.path.join(base, sl)
             os.makedirs(d, exist_ok=True)
             open(os.path.join(d, 'index.html'), 'w', encoding='utf-8').write(page(r, lang, others))
-            urls.append(f"{SITE}/{base}/{sl}/")
+            if route_indexed(lang, sl, r):
+                urls.append(f"{SITE}/{base}/{sl}/")
             if lang == 'en' and sl != r['slug']:
                 moved[f"/en/flights/{r['slug']}/"] = f"/en/flights/{sl}/"
                 if os.path.isdir(os.path.join(base, r['slug'])):
@@ -259,7 +296,7 @@ def main():
     stamp = urllib.request.urlopen(urllib.request.Request(FEED.replace('action=feed', 'action=stamp'), headers={'User-Agent': 'hlc-build'}), timeout=60).read().decode()
     open('vuelos/feed.sha', 'w').write(stamp)
     json.dump(moved, open('en/_map-flights.json', 'w'), separators=(',', ':'))
-    print('rutas', len(rows), 'EN movidas', len(moved))
+    print('rutas', len(rows), 'EN movidas', len(moved), 'indexadas ES', sum(1 for r in rows if route_indexed('es', r['slug'], r)), 'indexadas EN', sum(1 for r in rows if route_indexed('en', en_slug(r), r)))
 
 
 if __name__ == '__main__':

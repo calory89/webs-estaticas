@@ -84,7 +84,7 @@ elif nfiles > 18500:
 # ---------- lo que pedimos a Google tiene que existir ----------
 # El 26-nov-2026 los sitemaps pedian 1.702 URLs y 1.115 daban 404, y 195 de las
 # 207 URLs de /en/deals/ que Google tenia indexadas tambien. Se mira aqui.
-sm_dead = []
+sm_dead, sm_noidx = [], []
 for sm in sorted(glob.glob('*-sitemap*.xml') + glob.glob('sitemap*.xml')):
     if sm.startswith('sitemap_index'):
         continue
@@ -97,12 +97,25 @@ for sm in sorted(glob.glob('*-sitemap*.xml') + glob.glob('sitemap*.xml')):
         rel = p.lstrip('/')
         if not rel:
             continue
-        if os.path.isfile(rel) or os.path.isfile(os.path.join(rel, 'index.html')):
+        f_ = rel if os.path.isfile(rel) else os.path.join(rel, 'index.html')
+        if os.path.isfile(f_):
+            # Pedirle a Google una pagina que le dice noindex es mandarle a rastrear
+            # para nada. Desde el 26-nov gen_routes.py deja en noindex las rutas que
+            # no llegan a la posicion 25, asi que esto puede pasar por despiste.
+            try:
+                h_ = open(f_, encoding='utf-8', errors='ignore').read(4000)
+            except Exception:
+                h_ = ''
+            if "content='noindex" in h_ or 'content="noindex' in h_:
+                sm_noidx.append((sm, p))
             continue
         sm_dead.append((sm, p))
 if sm_dead:
     ex = ', '.join(p for _, p in sm_dead[:5])
     errors.append(f'{len(sm_dead)} URL(s) en los sitemaps sin pagina en la rama: {ex}')
+if sm_noidx:
+    ex = ', '.join(p for _, p in sm_noidx[:5])
+    errors.append(f'{len(sm_noidx)} URL(s) en los sitemaps con noindex: {ex}')
 
 # ---------- una redireccion no puede llevar a un 404 ----------
 red_dead = []

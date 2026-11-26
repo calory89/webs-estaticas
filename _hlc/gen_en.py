@@ -537,7 +537,23 @@ def main():
                "dateModified": g.get('updated_at'), "inLanguage": "en", "about": {"@id": url + '#dest'}, "author": {"@type": "Organization", "name": "Happy Low Cost"},
                "publisher": {"@type": "Organization", "name": "Happy Low Cost", "logo": {"@type": "ImageObject", "url": f"{SITE}/hlc/brand/icon-512.png"}}, "mainEntityOfPage": url}
         es = f"{SITE}/destinos/{p['s']}/" if os.path.exists(f"destinos/{p['s']}/index.html") else None
-        page = head((g.get('seo_title_en') or f'What to see in {n}') + ' · Happy Low Cost', g.get('meta_description_en') or f'{n} travel guide: what to see, where to stay, what to eat and cheap flights.',
+        # Estas paginas ya estan arriba y no reciben clics: 1.995 paginas del sitio
+        # estan en el top 15 y entre todas suman 157 clics (0,84% de CTR). Las
+        # consultas que las traen son "tallinn itinerary 3 days" (892 impresiones,
+        # posicion 5,7, cero clics) o "zanzibar itinerary 7 days" (201, posicion 1,
+        # cero clics), y el titulo decia "travel guide: what to see, eat and do in
+        # three days": ni la palabra "itinerary" ni el numero en cifra. Si la guia
+        # tiene un itinerario por dias, el titulo lo dice con la cifra.
+        nd_ = 0
+        for m_ in re.finditer(r'\bday\s*(\d{1,2})\b', gh, re.I):
+            nd_ = max(nd_, int(m_.group(1)))
+        ttl_ = g.get('seo_title_en') or f'What to see in {n}'
+        dsc_ = g.get('meta_description_en') or f'{n} travel guide: what to see, where to stay, what to eat and cheap flights.'
+        if 2 <= nd_ <= 21:
+            ttl_ = f'{n} itinerary: what to see in {nd_} days'
+            if 'itinerar' not in dsc_.lower():
+                dsc_ = f'{nd_} days in {n}, day by day: ' + dsc_[:1].lower() + dsc_[1:]
+        page = head(ttl_ + ' · Happy Low Cost', dsc_[:300],
                     url, es, f"{SITE}/hlc/img/cities/{p['s']}.jpg", 'article', [dest_ld, art, cld] + ([faq_ld] if faq_ld else []), body_class='destino')
         cr = G.CR.get(p['s']) or {}
         page += f'''<main>
