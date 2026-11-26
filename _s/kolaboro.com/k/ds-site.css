@@ -1,4 +1,4 @@
-/* GENERATED from /k/ds.css (v e669c98429) for pages that load site.css. The page test :has(link[href*=site.css]) is replaced by
+/* GENERATED from /k/ds.css (v 0ec05a949d) for pages that load site.css. The page test :has(link[href*=site.css]) is replaced by
    :not(a[data-ks]), always true with the same weight: :has() on the root made the browser restyle the whole page after every
    DOM change. Do not edit. To rebuild after ds.css changes: replace that test in a copy of ds.css, keep this comment with the
    new version, and set KB_DSS_V to the new KB_DS_V in _worker.js/index.js (while they differ the worker serves plain ds.css).
@@ -25,7 +25,7 @@
   /* colour (n40 d6 "Registry"): cool paper and white sheets, deep registry ink, one cobalt accent for actions, links and focus */
   --k-paper:#F5F7FA; --k-surface:#FFFFFF; --k-sunken:#EDF1F6; --k-raised:#FFFFFF;
   --k-ink:#0E1A2B; --k-ink-2:#2B394C; --k-muted:#536073; --k-faint:#5C687A;
-  --k-line:#DFE4EB; --k-line-2:#C5CEDA; --k-field:#98A4B4;
+  --k-line:#DFE4EB; --k-line-2:#C5CEDA; --k-field:#778394;
   --k-brand:#2340B8; --k-brand-ink:#2340B8; --k-on-brand:#FFFFFF; --k-brand-soft:#E7ECFB; --k-brand-hover:#1A3196;
   --k-sea:#2340B8; --k-sea-soft:#E7ECFB;          /* links, focus, selected: the same cobalt as the action colour */
   --k-ok:#0B6B4B; --k-ok-bg:#E1F1E9; --k-warn:#8A5300; --k-warn-bg:#FBF0D8; --k-bad:#A8261B; --k-bad-bg:#FBE6E3; --k-info:#2340B8; --k-info-bg:#E7ECFB;
