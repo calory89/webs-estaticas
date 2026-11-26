@@ -7,7 +7,7 @@
  "summary": {
   "datasets": 550,
   "files": 606,
-  "bytes": 169112261,
+  "bytes": 169112671,
   "contracts_pass": 71,
   "contracts_fail": 3,
   "api_operations": 70,
@@ -2146,29 +2146,29 @@
    ],
    "licence": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
    "described": true,
-   "bytes": 89191,
+   "bytes": 89601,
    "url": "https://kolaboro.com/data/site-manifest.json",
-   "sha256": "d4294d15e10b7503d6e2d181347be1a9aa54286116e07235e7d17288bcd5a467",
+   "sha256": "9a02d0d50bdaf97a49b9ca4ead56a02b807f318554a89468e71cdc250b8342d7",
    "http": 200,
    "media_type": "application/json",
    "format": "json",
    "contract": "pass",
    "schema_url": "https://kolaboro.com/api/x/data/schema/site-manifest.json",
-   "rows": 908,
+   "rows": 909,
    "rows_unit": "files",
    "freshness": {
     "stamp_key": "generated_at",
-    "stamp": "2026-11-26T17:46:05Z",
+    "stamp": "2026-11-26T19:22:13Z",
     "date_only": false,
     "published_at": "2026-11-23T14:55:59Z",
-    "data_as_of": "2026-11-26T17:46:05Z",
+    "data_as_of": "2026-11-26T19:22:13Z",
     "target_hours": null,
     "age_hours": 68.39,
     "event_driven": true,
     "probe": true,
     "status": "no_target"
    },
-   "last_updated": "2026-11-26T17:46:05Z",
+   "last_updated": "2026-11-26T19:22:13Z",
    "frequency": "IRREG"
   },
   {
@@ -19846,9 +19846,9 @@
   }
  ],
  "refreshed": {
-  "at": "2026-11-26T19:21:32Z",
+  "at": "2026-11-26T19:22:41Z",
   "by": "https://kolaboro.com/open/catalog-refresh.py",
-  "datasets_changed": 0,
+  "datasets_changed": 1,
   "note": "Sizes, hashes, row counts and stamps of files changed since generated_at, read from the published files. Contracts, probes and freshness status are from generated_at."
  }
 }
