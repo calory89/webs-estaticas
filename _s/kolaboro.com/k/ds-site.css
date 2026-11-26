@@ -1,4 +1,4 @@
-/* GENERATED from /k/ds.css (v f40ec3d274) for pages that load site.css. The page test :has(link[href*=site.css]) is replaced by
+/* GENERATED from /k/ds.css (v 3982f84cc1) for pages that load site.css. The page test :has(link[href*=site.css]) is replaced by
    :not(a[data-ks]), always true with the same weight: :has() on the root made the browser restyle the whole page after every
    DOM change. Do not edit. To rebuild after ds.css changes: replace that test in a copy of ds.css, keep this comment with the
    new version, and set KB_DSS_V to the new KB_DS_V in _worker.js/index.js (while they differ the worker serves plain ds.css).
@@ -58,10 +58,10 @@
 :root[data-theme=dark]{
   --k-paper:#0A111C; --k-surface:#101A28; --k-sunken:#0D1522; --k-raised:#162233;
   --k-ink:#E9EEF6; --k-ink-2:#C5CFDD; --k-muted:#9BA8BB; --k-faint:#8693A7;
-  --k-line:#1E2A3C; --k-line-2:#2B394F; --k-field:#46556C;
+  --k-line:#1E2A3C; --k-line-2:#2B394F; --k-field:#606D81;
   --k-brand:#93A9FF; --k-brand-ink:#AFC0FF; --k-on-brand:#0A111C; --k-brand-soft:#18234A; --k-brand-hover:#B3C3FF;
   --k-sea:#A6B9FF; --k-sea-soft:#18234A;
-  --k-viz-reg:#93A9FF; --k-viz-ok:#4FC08D; --k-viz-dev:#5B6A80; --k-viz-bad:#FF8A5C; --k-viz-ref:#8693A7; --k-viz-track:#1F2B3D;
+  --k-viz-reg:#93A9FF; --k-viz-ok:#4FC08D; --k-viz-dev:#68768A; --k-viz-bad:#FF8A5C; --k-viz-ref:#8693A7; --k-viz-track:#1F2B3D;
   --k-ok:#5BD6A2; --k-ok-bg:#123A2B; --k-warn:#F2C35B; --k-warn-bg:#3A2F12; --k-bad:#FF9A8F; --k-bad-bg:#3D1C1A; --k-info:#A6B9FF; --k-info-bg:#18234A;
   --k-band:#131F31; --k-band-ink:#EEF2F8; --k-band-muted:#A9B5C6; --k-overlay:rgba(0,0,0,.6);
   --k-sh-1:0 1px 2px rgba(0,0,0,.3); --k-sh-card:0 1px 0 rgba(0,0,0,.25); --k-sh-2:0 1px 2px rgba(0,0,0,.3),0 10px 28px -10px rgba(0,0,0,.6); --k-sh-3:0 2px 6px rgba(0,0,0,.35),0 24px 56px -16px rgba(0,0,0,.7);
