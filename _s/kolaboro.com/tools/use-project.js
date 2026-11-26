@@ -83,7 +83,7 @@
     else if (ho) bits.push(S[1] + ' <bdi dir="ltr">' + esc(ho) + '</bdi>');
     if (cfg.m) setSel($(cfg.m), mkCode(cfg.mk, q.get('co') || '', r.market || ''));
     var pre = lang === 'en' ? '' : '/' + lang;
-    note(S[0] + ' <a href="' + pre + '/projects/' + esc(slug) + '/">' + esc(r.name || slug) + '</a> (' + esc(r.market || '') + ')' + (bits.length ? ': ' + bits.join('; ') : '') + '. ' + S[4]);
+    note(S[0] + ' <a href="' + pre + '/projects/' + esc(slug) + '/">' + esc(r.name || slug) + '</a> (' + esc(r.market || '') + ')' + (bits.length ? ': ' + bits.join(lang === 'ar' ? '؛ ' : lang === 'zh' ? '；' : '; ') : '') + '. ' + S[4]);
     fire();
   }
   function start(){

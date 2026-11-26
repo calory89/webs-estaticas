@@ -76,6 +76,7 @@ return '<tr><td><a href="' + pre(lang) + '/projects/' + x.s + '/">' + bdi(x.n) +
 const Q = [[t(lang, 'q1', v), t(lang, 'a1', v)], [t(lang, 'q2', v), t(lang, 'a2', Object.assign({}, v, { pn: nf(lang, st.pn), pp: nf(lang, pct(st.pn, st.n)) }))],
 [t(lang, 'q3', v), st.h && st.yTop ? t(lang, 'a3', Object.assign({}, v, { h: nf(lang, st.h), y: st.yTop[0], k: nf(lang, st.yTop[1]) })) : t(lang, 'a3n', v)],
 [t(lang, 'q4', v), t(lang, st.ov === 1 ? 'a4_1' : 'a4', Object.assign({}, v, { ov: nf(lang, st.ov), mv: nf(lang, st.mv) }))]];
+{ const D3 = [...st.devs.values()].sort((a, b) => b.k - a.k || String(a.n).localeCompare(String(b.n))).slice(0, 3); if (T.en.q5 && D3.length > 1) Q.push([t(lang, 'q5', v), t(lang, 'a5', Object.assign({}, v, { l: list(lang, D3.map(x => x.n + ' (' + nf(lang, x.k) + ')')) }))]); if (T.en.dof) for (const q of Q) if (q[1].indexOf(d) < 0) q[1] += ' ' + t(lang, 'dof', v); }   // n40 k26: fifth question (developers with the most projects) and the data date on every answer
 const links = [];
 for (const P of TRP) links.push('<a href="' + pre(lang) + '/rankings/transparency/' + P.s + '/">' + th(lang, 'l_tr', { p: mkName(P.n, lang) }) + '</a>');
 if (isC) for (const g of [...new Set(L.map(x => x.mk))].map(k => D.M.get(slugM(k))).filter(Boolean).sort((a, b) => b.L.length - a.L.length)) links.push('<a href="' + pre(lang) + '/m/' + slugM(g.mk) + '/">' + bdi(mkName(g.mk, lang)) + ' (' + nf(lang, g.L.length) + ')</a>');
@@ -326,3 +327,4 @@ const res = new HTMLRewriter()
 return new Response(req.method === 'HEAD' ? null : await res.text(), { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=600', 'last-modified': new Date(pg.lm + 'T00:00:00Z').toUTCString() } });
 }
 export { marketPage, mdata, questions, hubParts, buyerPage };
+export async function mFaq(env, key) { let D; try { D = await mdata(env); } catch (e) { return null; } const m = findMk(D, key); if (!m) return null; const r = marketPage(D, m, 'en'), i = r.body.indexOf('<h2 id="questions">'), j = i < 0 ? -1 : r.body.indexOf('</div>', i); if (j < 0) return null; return { html: '<section aria-labelledby="questions" style="padding:28px 0;border-top:1px solid var(--k-line,#d5d3cc)">' + r.body.slice(i, j + 6) + '</section>', fq: r.ld.find(x => x['@type'] === 'FAQPage') }; }   // n40 k26: the market questions on the English /m/<market>/ page
