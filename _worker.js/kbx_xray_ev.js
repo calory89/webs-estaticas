@@ -17,7 +17,7 @@
 // Rules: facts only, each with its source; "not found" / "not published" when we have nothing; Sumba never named (conflict of
 // interest, see kbx_named.js); projects not yet reviewed never get a score; no paid AI call anywhere in this file.
 import { data as named } from './kbx_named.js';
-import { ppmData } from './kbx_named_plus.js';
+import { ppmData, ppmLoad } from './kbx_named_plus.js';
 import decodeJpeg from './kbx_xray_jpeg.js';
 
 export const PATHS = /^\/api\/xev(?:\/sat\.png)?$/;
@@ -622,6 +622,7 @@ const bandOf = usd => usd == null ? null : usd < 1e5 ? BANDS[0] : usd < 2e5 ? BA
 
 // ------------------------------------------------------------------------------------------------ (14) price per m2
 async function evPpm(S, env, ctx) {
+  await ppmLoad(env);
   const c = card('ppm', 14), R = S.rec && S.rec.x;
   c.limits = ['A starting price is for the cheapest unit and the smallest size may be a different unit, so the figure per m2 is indicative only.', 'Official figures are registered sales (Dubai) or official appraisals (Spain), not the price of this unit.'];
   let x, from;
