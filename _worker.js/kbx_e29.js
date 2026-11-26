@@ -5,6 +5,7 @@ import { coName } from './kbx_hdate.js';
 import { REVIEWED, NEXT, METHOD, ACC, FOUNDERS, dots, reviewLine, accLine, errLine } from './kbx_e29_lines.js';
 import { TB } from './kbx_strings.js';
 export { methodLine, guideNext, aboutBox, ABOUT_CSS } from './kbx_e29_lines.js';
+const IF = (globalThis.__kbIF = globalThis.__kbIF || {}); function sf(k, f) { if (IF[k]) return IF[k]; const p = f(); IF[k] = p; const d = () => { if (IF[k] === p) delete IF[k]; }; p.then(d, d); return p; }   // n40 d12
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' };
@@ -31,7 +32,8 @@ const lk = (lang, h) => EN_ONLY.test(h) && !/^\/countries\/foreign-buyers\//.tes
 const rel = (lang, L) => '<h2 id="related">' + esc(t(lang, 'rel')) + '</h2><ul class="k29-rel">' + L.map(([h, k]) => '<li><a href="' + lk(lang, h) + '">' + esc(t(lang, k)) + '</a></li>').join('') + '</ul>';
 const ldPage = (lang, path, title, desc, mod, extra) => Object.assign({ '@type': 'WebPage', '@id': ORIGIN + pre(lang) + path + '#page', url: ORIGIN + pre(lang) + path, name: title, description: desc, inLanguage: lang, dateModified: mod || REVIEWED, lastReviewed: REVIEWED, publisher: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' } }, extra || {});
 const SHARED = (globalThis.__kbJson = globalThis.__kbJson || {});
-async function load(env, name, base) {
+const load = (env, name, base) => sf('e29:' + (base || '') + name, () => load0(env, name, base));
+async function load0(env, name, base) {
 const key = (base || 'data/') + name, m = SHARED[base ? key : name]; if (m && (m.a || Date.now() - m.t < 600000)) return m.v;
 let r = null, a = false;
 try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/' + key)); a = !!(r && r.ok); } catch (e) { r = null; }

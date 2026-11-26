@@ -5,11 +5,13 @@ const TT = TB.kbx_named_diff_TT ;
 const tt = (l, k) => (TT[l] && TT[l][k]) || TT.en[k] || '';
 const tf = (l, k, o) => tt(l, k).replace(/\{(\w+)\}/g, (m, z) => o[z] != null ? o[z] : m);
 const dr = l => l === 'ar' ? ' dir="rtl"' : '';
+const IF = (globalThis.__kbIF = globalThis.__kbIF || {}); function sf(k, f) { if (IF[k]) return IF[k]; const p = f(); IF[k] = p; const d = () => { if (IF[k] === p) delete IF[k]; }; p.then(d, d); return p; }   // n40 d12
 const ORIGIN = 'https://kolaboro.com';
 const SHARDS = 3;
 const shardOf = id => [...id].reduce((a, c) => a + c.charCodeAt(0), 0) % SHARDS;
 const MEMO = {};
-async function shard(env, k) {
+const shard = (env, k) => { const m = MEMO[k]; return m && (m.a || Date.now() - m.t < 600000) ? Promise.resolve(m.v) : sf('ph:' + k, () => shard0(env, k)); };
+async function shard0(env, k) {
 const m = MEMO[k]; if (m && (m.a || Date.now() - m.t < 600000)) return m.v;
 let r = null, a = false;
 try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/page-history-' + k + '.json')); a = !!(r && r.ok); } catch (e) { r = null; }

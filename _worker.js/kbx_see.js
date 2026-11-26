@@ -1,9 +1,11 @@
 // comments: _notes/kolaboro-worker-comments.txt
 import { TB } from './kbx_strings.js';
+const IF = (globalThis.__kbIF = globalThis.__kbIF || {}); function sf(k, f) { if (IF[k]) return IF[k]; const p = f(); IF[k] = p; const d = () => { if (IF[k] === p) delete IF[k]; }; p.then(d, d); return p; }   // n40 d12
 const ORIGIN = 'https://kolaboro.com';
 const ML = '4.7.1', ML_CDN = 'https://cdnjs.cloudflare.com/ajax/libs/maplibre-gl/' + ML + '/';
 let MEMO = {};
-async function loadOne(env, name) {
+const loadOne = (env, name) => sf('see:' + name, () => loadOne0(env, name));
+async function loadOne0(env, name) {
 const m = MEMO[name]; if (m && (m.a || Date.now() - m.t < 600000)) return m.v;
 let r = null, a = false;
 try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/' + name)); a = !!(r && r.ok); } catch (e) { r = null; }

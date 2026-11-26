@@ -39,6 +39,7 @@ let kb = null, kbx = null, ksat = null, klk = null;
 // n32w (19 Nov 2026): kolaboro.com string tables live in /_s/kolaboro.com/data/i18n/*.json (worker size limit); every kolaboro.com
 // request waits for them once per isolate (kbx_strings.js) before any module that reads them runs
 let kStr = null;
+let kcbr = null; const KB_CSSBR_ON = 1;
 async function kbStrings(env) { try { if (!kStr) kStr = await import('./kbx_strings.js'); if (!kStr.isReady()) await kStr.ready(env); if (!kStr.isReady()) await kStr.ready(env); } catch (e) {} try { if (!kn33a) kn33a = await import('./kbx_n33a.js'); } catch (e) {} }   // n33a: byline and hub feeds read by kbHeaders (sync)
 async function kScript(env, k) { await kbStrings(env); const o = kStr && kStr.TB && kStr.TB.index_K; return (o && o[k]) || ''; }   // n40 k5: /__k/ script texts from /data/i18n/index.json
 const KXR_V = 'n40k40a'; let kxr = null; const KXR = /^\/api\/kb\/xray(?:\/stats)?\/?$|^\/api\/v1\/xray(?:\/openapi\.json)?\/?$|^\/x\/[0-9a-f]{64}(?:\/|\.json|\/vc)?$/;   // b11 x11a: Project X-ray (keep equal to PATHS in kbx_xray.js)
@@ -511,6 +512,7 @@ export default {
   async fetch(req, env, ctx) {
     const t0 = Date.now();   // n31t (batch 31, item 258)
     if (env && env.ASSETS && !env.__kbA) { const A = env.ASSETS; try { env.ASSETS = { async fetch(q, i) { if (!(q instanceof Request)) q = new Request(q, i); if (q.method !== 'GET' && q.method !== 'HEAD') return A.fetch(q); let x; for (let n = 0; n < 3; n++) { try { x = await A.fetch(q.clone()); if (x.status < 500) return x; } catch (e) { if (n > 1) throw e; } await new Promise(s => setTimeout(s, 40 * n + 40)); } return x; } }; env.__kbA = 1; } catch (e) {} }   // n40 k21: a static file read that fails under load (5xx or throw) is tried twice more: worker time to response headers, sent as Server-Timing on kolaboro.com HTML
+    if (KB_CSSBR_ON && /^\/k\/(?:site|site-p|ds-site|ds)\.css$/.test(new URL(req.url).pathname) && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname) && (KB_CSSBR_ON === 2 || req.headers.get('x-kolaboro-br-test') === '1')) { try { if (!kcbr) kcbr = await import('./kbx_cssbr.js'); const r = await kcbr.serve(req, new URL(req.url), env); if (r) return r; } catch (e) {} }   // n40 d12: KB_CSSBR_ON 2 on, 1 test header, 0 off
     // n31t (batch 31, item 273): maintenance mode. Off unless the environment setting KB_MAINT is "1": then every kolaboro.com page
     // answers with a short notice in its language (503, Retry-After); data files, APIs, scripts and /status/ keep working.
     if (env && env.KB_MAINT === '1' && (req.method === 'GET' || req.method === 'HEAD') && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) {

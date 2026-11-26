@@ -3,9 +3,11 @@ import { BA_BTN_JS, baButton } from './kbx_n30a.js';
 import { spaceData, spaceHtml } from './kbx_space.js';
 import { stages, stageHtml, stageLabels } from './kbx_stage.js';
 import { TB } from './kbx_strings.js';
+const IF = (globalThis.__kbIF = globalThis.__kbIF || {}); function sf(k, f) { if (IF[k]) return IF[k]; const p = f(); IF[k] = p; const d = () => { if (IF[k] === p) delete IF[k]; }; p.then(d, d); return p; }   // n40 d12
 const ORIGIN = 'https://kolaboro.com';
 let MEMO = null;
-export async function satData(env) {
+export const satData = env => sf('sat', () => satData0(env));
+async function satData0(env) {
 if (!S.es) { let si = null; try { const r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/media-i18n.json')); si = r.ok ? await r.json() : null; } catch (e) { si = null; } if (si && si.sat) { S = si.sat; TM = si.sat_TM || TM; } }
 if (MEMO && Date.now() - MEMO.t < 600000) return MEMO.v;
 let r = null;

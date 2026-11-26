@@ -1,5 +1,6 @@
 // comments: _notes/kolaboro-worker-comments.txt
 import { TB } from './kbx_strings.js';
+const IF = (globalThis.__kbIF = globalThis.__kbIF || {}); function sf(k, f) { if (IF[k]) return IF[k]; const p = f(); IF[k] = p; const d = () => { if (IF[k] === p) delete IF[k]; }; p.then(d, d); return p; }   // n40 d12
 const ORIGIN = 'https://kolaboro.com';
 export const PATHS = /^\/api\/x\/paper\//;
 export const TOOL_RX = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?tools\/contract-addendum\/?$/;
@@ -10,7 +11,8 @@ const pre = l => l === 'en' ? '' : '/' + l;
 const OPINION = /\b(scam\w*|fraud\w*|ponzi|swindl\w*|rip-?off|avoid\w*|beware|dodgy|shady|crook\w*|estafa\w*|fraude\w*|timo|betrug\w*|arnaque\w*|escroc\w*|oplicht\w*|bedrog\w*)\b|мошен|обман|афер|骗局|诈骗|欺诈|احتيال|نصب/i;
 const MASK = s => String(s || '').replace(/[\w.+-]+@[\w-]+\.[\w.]+/g, '[e-mail]').replace(/\+?\d[\d ()-]{8,}\d/g, m => /\d{1,3}([.,\s]\d{3}){2,}/.test(m) ? m : '[phone]');
 let MEMO = {};
-async function loadOne(env, path, ttl) {
+const loadOne = (env, path, ttl) => sf('paper:' + path, () => loadOne0(env, path, ttl));
+async function loadOne0(env, path, ttl) {
 const m = MEMO[path]; if (m && (m.a || Date.now() - m.t < (ttl || 600000))) return m.v;
 let r = null, a = false;
 try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com' + path)); a = !!(r && r.ok); } catch (e) { r = null; }

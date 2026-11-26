@@ -3,6 +3,7 @@ import * as N from './kbx_named.js';
 import { S, t, esc, num, LANGS, slugMk, pinRecord, phMarkets, PH_MIN } from './kbx_n30c_named.js';
 import { mkName, coName } from './kbx_hdate.js';
 import { TB } from './kbx_strings.js';
+const IF = (globalThis.__kbIF = globalThis.__kbIF || {}); function sf(k, f) { if (IF[k]) return IF[k]; const p = f(); IF[k] = p; const d = () => { if (IF[k] === p) delete IF[k]; }; p.then(d, d); return p; }   // n40 d12
 const ORIGIN = 'https://kolaboro.com';
 const COI_RX = /eco\s*beach\s*city|\bequinox\b/i;
 const pre = l => l === 'en' ? '' : '/' + l;
@@ -10,7 +11,8 @@ export const N30C_V = 'n32s1';
 export const PATHS = /^\/k\/n30c-map\.js$|^\/api\/v1\/pin\/[A-Za-z0-9-]{3,20}$|^\/embed\/v2(?:\.js|\/[a-z0-9-]{1,90}\/?)$|^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:prices\/history(?:\/[a-z0-9-]{2,60})?|watch\/lookalikes\/images|tools\/widget|engineering\/status)\/?$/;
 const jr = (o, s, cc) => new Response(JSON.stringify(o), { status: s || 200, headers: { 'content-type': 'application/json; charset=utf-8', 'access-control-allow-origin': '*', 'cache-control': cc || 'public, max-age=600' } });
 const MEMO = {};
-async function file(env, name, ttl) {
+const file = (env, name, ttl) => sf('n30c:' + name, () => file0(env, name, ttl));
+async function file0(env, name, ttl) {
   const m = MEMO[name]; if (m && Date.now() - m.t < (ttl || 600000)) return m.v;
   let v = null;
   try { const r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/' + name)); if (r.ok) v = await r.json(); } catch (e) { v = null; }

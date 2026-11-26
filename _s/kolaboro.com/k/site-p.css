@@ -1,4 +1,4 @@
-/* GENERATED from /k/site.css (v 0e01ffc296) for project and developer pages only (kbx_named marks their site.css link, kbHeaders swaps it
+/* GENERATED from /k/site.css (v 60e1f60ff2) for project and developer pages only (kbx_named marks their site.css link, kbHeaders swaps it
    while KB_SITEP_FROM in _worker.js/index.js equals KB_SITE_CSS_V; after a site.css change every page gets plain site.css until this file
    is rebuilt). Rules whose classes never appear on those pages or in any script they load are left out. Do not edit. */
 /* n40 d6: the old Archivo name now resolves to IBM Plex Sans, so inline styles that still name Archivo match the site type */
@@ -874,7 +874,7 @@ pre.mail{white-space:pre-wrap;font-family:inherit;font-size:1rem;background:var(
 .az-reqf{display:grid;gap:10px;width:100%}.az-reqf b{font-size:1.15rem;color:#fff}.az-reqf label{display:grid;gap:4px;font-weight:700;font-size:.9rem;color:#E6EAED}.az-reqf small{font-weight:400;color:#AEB9C2}
 .az-reqf input,.az-reqf textarea{font:inherit;border:2px solid #2B3743;background:var(--card,#fff);color:var(--t-ink,#17212B);border-radius:12px;padding:10px}.az-cta.open{grid-template-columns:1fr}
 .az-done b{display:block;color:#fff;font-size:1.2rem}.az-done ol{color:#D7DDE2;margin:10px 0 14px 1.1em;padding:0;display:grid;gap:6px}.az-done .row{display:flex;gap:10px;flex-wrap:wrap}.az-done .az-k{color:#FF8A57}
-.f-ini{display:grid;place-items:center;background:var(--hivis);color:#111;font-size:6rem;font-weight:800}
+
 
 
 

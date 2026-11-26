@@ -50,7 +50,8 @@ for (const x of xs) { const d = one(q.raw ? q.raw(x) : x, P, part, fileDay, toda
 return best;
 }
 let PIN = null;
-export async function pinFile(env) { if (PIN) return PIN; const v = await json(env, 'lastmod.json'); if (v) PIN = v; return v; }
+export async function pinFile(env) { if (PIN) return PIN; const v = await (PINP || (PINP = json(env, 'lastmod.json').finally(() => { PINP = null; }))); if (v) PIN = v; return v; }
+let PINP = null;
 let MEMO = null;
 let NET = false;
 async function json(env, name) {

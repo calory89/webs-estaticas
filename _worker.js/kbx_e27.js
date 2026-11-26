@@ -4,6 +4,7 @@ import { TB } from './kbx_strings.js';
 import { TR_PLACES, inPlace } from './kbx_tr_places.js';
 import { E } from './kbx_e27_i18n.js';
 import { regSale, rsText } from './kbx_n31d_rs.js';
+const IF = (globalThis.__kbIF = globalThis.__kbIF || {}); function sf(k, f) { if (IF[k]) return IF[k]; const p = f(); IF[k] = p; const d = () => { if (IF[k] === p) delete IF[k]; }; p.then(d, d); return p; }   // n40 d12
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const PDF_LANGS = new Set(['en', 'es', 'de', 'fr', 'nl']);
@@ -19,7 +20,8 @@ const PLACES = TR_PLACES.filter(P => !P.coi);
 const okName = x => !COI.test(String(x.n || '')) && !COI.test(String(x.dv || ''));
 export const PATHS = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:projects\/[a-z0-9-]{1,90}\/report(?:\/|\.pdf)?|weekly(?:\/[a-z0-9-]{2,40})?\/?)$|^\/weekly\/(?:[a-z0-9-]{2,40}\/feed\.(?:atom|json)|sitemap\.xml)$|^\/api\/x\/e27\/(?:mail\/(?:review|delays)|signups|notices\/[A-Za-z0-9-]{3,20})\/?$/;
 const MEMO = {};
-async function file(env, name) {
+const file = (env, name) => sf('e27:' + name, () => file0(env, name));
+async function file0(env, name) {
   const m = MEMO[name]; if (m && (m.a || Date.now() - m.t < 600000)) return m.v;
   let r = null, a = false, v = null;
   try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/' + name)); a = !!(r && r.ok); } catch (e) { r = null; }
