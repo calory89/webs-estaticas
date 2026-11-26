@@ -1,0 +1,324 @@
+{
+ "license": "CC BY 4.0",
+ "attribution": "JuriMatch, jurimatch.com",
+ "source": "https://jurimatch.com/where-no-win-no-fee-is-legal",
+ "generatedAt": "2026-11-26T15:51:49.904Z",
+ "rules": {
+  "percentage": "Lawyers may take a share of what you recover, usually within caps or reasonableness rules.",
+  "success": "A fee that is only a percentage of the result is not allowed, but a success fee or bonus on top of a base fee (or no fee if you lose) is.",
+  "restricted": "Contingency and success fees are restricted for lawyers, with narrow exceptions. Litigation funders and legal expenses insurance often fill the gap.",
+  "check": "Practice varies or depends on the court or forum. Ask the firm to confirm its fee structure in writing."
+ },
+ "countries": [
+  {
+   "slug": "united-states",
+   "name": "United States",
+   "rule": "percentage",
+   "answer": "Yes. Contingency fees are legal in every US state for most civil claims, usually as a percentage of the recovery set out in a signed written agreement. The ABA Model Rules, adopted in some form by the states, bar them in criminal cases and most family matters, and several states cap the percentage for certain claims.",
+   "source": {
+    "label": "ABA Model Rule 1.5, fees",
+    "href": "https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_1_5_fees/"
+   }
+  },
+  {
+   "slug": "united-kingdom",
+   "name": "United Kingdom",
+   "rule": "percentage",
+   "answer": "Yes, in England and Wales. Conditional fee agreements (no win, no fee with a success fee) are allowed under section 58 of the Courts and Legal Services Act 1990, and damages-based agreements, where the lawyer takes a share of the damages, under section 58AA. Scotland and Northern Ireland have their own rules.",
+   "source": {
+    "label": "Courts and Legal Services Act 1990, s. 58 (legislation.gov.uk)",
+    "href": "https://www.legislation.gov.uk/ukpga/1990/41/section/58"
+   }
+  },
+  {
+   "slug": "spain",
+   "name": "Spain",
+   "rule": "percentage",
+   "answer": "Yes. Spanish lawyers may agree a fee that depends on the result (cuota litis) since the Supreme Court upheld in 2008 a competition ruling against the Bar's ban. Fees are agreed freely with the client, often as a percentage of what is recovered plus a smaller fixed amount, and should be put in writing.",
+   "source": {
+    "label": "Estatuto General de la Abogacía Española, Real Decreto 135/2021 (BOE)",
+    "href": "https://www.boe.es/eli/es/rd/2021/03/02/135"
+   }
+  },
+  {
+   "slug": "germany",
+   "name": "Germany",
+   "rule": "restricted",
+   "answer": "Only in specific cases. Under section 4a of the Lawyers' Remuneration Act (RVG), a success fee is allowed for money claims up to 2,000 euros, for out-of-court debt collection, or when the client would otherwise not pursue the claim for financial reasons. Otherwise lawyers charge the statutory fee scale or an agreed fee.",
+   "source": {
+    "label": "§ 4a RVG (gesetze-im-internet.de)",
+    "href": "https://www.gesetze-im-internet.de/rvg/__4a.html"
+   }
+  },
+  {
+   "slug": "france",
+   "name": "France",
+   "rule": "success",
+   "answer": "Partly. A fee based only on the result (pacte de quota litis) is prohibited, but a result-based fee on top of a fixed or time-based fee is allowed and common. Since 2015 a written fee agreement has been compulsory for French lawyers under article 10 of the Act of 31 December 1971.",
+   "source": {
+    "label": "Loi n° 71-1130 du 31 décembre 1971, art. 10 (Légifrance)",
+    "href": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000508793"
+   }
+  },
+  {
+   "slug": "italy",
+   "name": "Italy",
+   "rule": "percentage",
+   "answer": "Yes, within limits. Under article 13 of Law 247/2012, Italian lawyers may agree a fee calculated as a percentage of the value of the matter or of what the client is expected to obtain. An agreement giving the lawyer a share of the disputed property or claim itself is prohibited, and the fee must stay proportionate.",
+   "source": {
+    "label": "Legge 247/2012, art. 13 (Normattiva)",
+    "href": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2012-12-31;247"
+   }
+  },
+  {
+   "slug": "portugal",
+   "name": "Portugal",
+   "rule": "success",
+   "answer": "No, not as a share of the result. The Portuguese Bar Statute prohibits quota litis, an agreement where the fee depends exclusively on the outcome and consists of part of what is obtained (article 106). Lawyers may, however, take the result into account when setting a fee, alongside the work done and other criteria.",
+   "source": {
+    "label": "Ordem dos Advogados, Estatuto (portal.oa.pt)",
+    "href": "https://portal.oa.pt"
+   }
+  },
+  {
+   "slug": "netherlands",
+   "name": "Netherlands",
+   "rule": "restricted",
+   "answer": "Generally no. The rules of the Netherlands Bar prohibit Dutch lawyers from working on a no cure, no pay basis or for a percentage of the result, with limited exceptions. The success-based risk is usually carried by claims agencies or litigation funders, which are not law firms, while lawyers charge hourly or fixed fees.",
+   "source": {
+    "label": "Nederlandse orde van advocaten",
+    "href": "https://www.advocatenorde.nl"
+   }
+  },
+  {
+   "slug": "ireland",
+   "name": "Ireland",
+   "rule": "success",
+   "answer": "Not as a percentage. Irish solicitors may not charge a fee calculated as a percentage or proportion of damages in contentious business (section 68 of the Solicitors Act 1994). \"No foal, no fee\" arrangements, where nothing is charged if the case is lost, are lawful and common in personal injury claims.",
+   "source": {
+    "label": "Solicitors Act 1994, s. 68 (Irish Statute Book)",
+    "href": "https://www.irishstatutebook.ie/eli/1994/act/27"
+   }
+  },
+  {
+   "slug": "switzerland",
+   "name": "Switzerland",
+   "rule": "success",
+   "answer": "Not as a pure share of the result. Article 12(e) of the Federal Act on the Free Movement of Lawyers prohibits a pactum de quota litis. A success bonus on top of a fee that covers the lawyer's costs is allowed within limits set by the Federal Supreme Court, so ask how any bonus is calculated.",
+   "source": {
+    "label": "Federal Act on the Free Movement of Lawyers, art. 12 (Fedlex)",
+    "href": "https://www.fedlex.admin.ch/eli/cc/2002/153/en"
+   }
+  },
+  {
+   "slug": "belgium",
+   "name": "Belgium",
+   "rule": "success",
+   "answer": "Not as a pure share of the result. Article 446ter of the Belgian Judicial Code prohibits agreements where the lawyer's fee depends exclusively on the outcome of the case (pactum de quota litis). A success-related supplement on top of a base fee is allowed, so ask for the full fee arrangement in writing.",
+   "source": {
+    "label": "Avocats.be, Ordre des barreaux francophones et germanophone",
+    "href": "https://avocats.be"
+   }
+  },
+  {
+   "slug": "austria",
+   "name": "Austria",
+   "rule": "success",
+   "answer": "Not as a share of the result. Section 879(2)(2) of the Austrian Civil Code makes void an agreement by which a lawyer takes part of the amount in dispute as a fee (quota litis). Fee agreements that reward success in other ways, such as a bonus on top of a base fee, are possible.",
+   "source": {
+    "label": "§ 879 ABGB (Rechtsinformationssystem des Bundes)",
+    "href": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10001622&Paragraf=879"
+   }
+  },
+  {
+   "slug": "luxembourg",
+   "name": "Luxembourg",
+   "rule": "success",
+   "answer": "Not on the result alone. The professional rules of the Luxembourg Bar do not allow a fee fixed solely by the outcome of the case, but the fee may take the result into account alongside the work done and other criteria. Ask the lawyer for a written fee agreement explaining any result-related element.",
+   "source": {
+    "label": "Barreau de Luxembourg",
+    "href": "https://www.barreau.lu"
+   }
+  },
+  {
+   "slug": "sweden",
+   "name": "Sweden",
+   "rule": "restricted",
+   "answer": "Generally not. The Swedish Bar Association's code of conduct does not allow a fee that depends on the outcome of the case, except in special circumstances. The Group Proceedings Act allows court-approved risk agreements in class actions, and legal expenses cover in home insurance often pays much of a lawyer's fees.",
+   "source": {
+    "label": "Swedish Bar Association (advokatsamfundet.se)",
+    "href": "https://www.advokatsamfundet.se"
+   }
+  },
+  {
+   "slug": "poland",
+   "name": "Poland",
+   "rule": "success",
+   "answer": "Not as the only fee. The Polish Bar's code of ethics does not allow an advocate's fee to depend solely on the result (pactum de quota litis), but a success fee on top of a base fee is permitted and common. Agree the base fee, the success fee and how it is calculated in writing.",
+   "source": {
+    "label": "Naczelna Rada Adwokacka (adwokatura.pl)",
+    "href": "https://www.adwokatura.pl"
+   }
+  },
+  {
+   "slug": "greece",
+   "name": "Greece",
+   "rule": "percentage",
+   "answer": "Yes, within limits. The Greek Code of Lawyers (Law 4194/2013) allows a written fee agreement that includes a percentage of the result, subject to a statutory ceiling, so lawyers can work partly on success terms. Ask for the agreement in writing and check how the percentage and any fixed part are calculated.",
+   "source": {
+    "label": "Athens Bar Association (dsa.gr)",
+    "href": "https://www.dsa.gr"
+   }
+  },
+  {
+   "slug": "turkey",
+   "name": "Turkey",
+   "rule": "percentage",
+   "answer": "Yes, within a cap. Under article 164 of the Attorneyship Law No. 1136, a fee agreement may set the fee as a percentage of the value or result of the case, but not more than 25% of it. Agreed fees may not fall below the minimum fee tariff set each year by the Union of Turkish Bar Associations.",
+   "source": {
+    "label": "Union of Turkish Bar Associations (barobirlik.org.tr)",
+    "href": "https://www.barobirlik.org.tr"
+   }
+  },
+  {
+   "slug": "canada",
+   "name": "Canada",
+   "rule": "percentage",
+   "answer": "Yes. Contingency fees are permitted in every province and territory, subject to provincial rules such as written agreements, caps in some provinces and the client's right to have the fee reviewed. In Ontario, for example, they are regulated under the Solicitors Act and its contingency fee regulation.",
+   "source": {
+    "label": "Ontario Solicitors Act (ontario.ca)",
+    "href": "https://www.ontario.ca/laws/statute/90s15"
+   }
+  },
+  {
+   "slug": "mexico",
+   "name": "Mexico",
+   "rule": "percentage",
+   "answer": "Yes. Mexican law lets lawyer and client agree fees freely, including a percentage of the result (cuota litis), which is common in practice. Under the Federal Civil Code, fees for professional services are set by agreement and, failing that, by local custom and the importance of the work (articles 2606 and 2607).",
+   "source": {
+    "label": "Código Civil Federal (Cámara de Diputados)",
+    "href": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CCF.pdf"
+   }
+  },
+  {
+   "slug": "brazil",
+   "name": "Brazil",
+   "rule": "percentage",
+   "answer": "Yes. Success fees (honorários de êxito) are lawful and common in Brazil, often combined with a smaller fixed fee, and the OAB Code of Ethics requires moderation and recommends a written contract. Separately, the losing party pays statutory fees (honorários de sucumbência) to the winner's lawyer under article 85 of the Code of Civil Procedure.",
+   "source": {
+    "label": "Código de Processo Civil, art. 85 (Planalto)",
+    "href": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm"
+   }
+  },
+  {
+   "slug": "argentina",
+   "name": "Argentina",
+   "rule": "percentage",
+   "answer": "Yes. Argentine law allows a pacto de cuota litis, where the lawyer takes a percentage of the result, subject to caps. At national level it is governed by the professional fees law (Ley 27.423), and each province has its own fee statute and limits, so check the rule where the case will be heard.",
+   "source": {
+    "label": "Colegio Público de la Abogacía de la Capital Federal",
+    "href": "https://www.cpacf.org.ar"
+   }
+  },
+  {
+   "slug": "colombia",
+   "name": "Colombia",
+   "rule": "percentage",
+   "answer": "Yes. Colombian lawyers commonly agree fees as a percentage of the result (cuota litis), often combined with a fixed amount. The Disciplinary Code for Lawyers (Ley 1123 de 2007) sanctions fees that are disproportionate to the work done, so the percentage must stay reasonable. Put the agreement in writing before the work starts.",
+   "source": {
+    "label": "Ley 1123 de 2007, Código Disciplinario del Abogado (Secretaría del Senado)",
+    "href": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1123_2007.html"
+   }
+  },
+  {
+   "slug": "chile",
+   "name": "Chile",
+   "rule": "percentage",
+   "answer": "Yes. Chilean lawyers may agree a fee that depends on the result (pacto de cuota litis), and it is common in practice. The Chilean Bar's Code of Professional Ethics requires fees to be fair and agreed clearly in advance, so ask for the percentage and any fixed part in writing before you hire a lawyer.",
+   "source": {
+    "label": "Colegio de Abogados de Chile",
+    "href": "https://colegioabogados.cl"
+   }
+  },
+  {
+   "slug": "israel",
+   "name": "Israel",
+   "rule": "percentage",
+   "answer": "Yes. Contingency fees are common and lawful in Israel, usually as a percentage of the amount recovered agreed in writing. Some areas have statutory caps, for example road-accident compensation claims, where the law limits the percentage a lawyer may charge. Ask for the full agreement, including expenses, before you sign.",
+   "source": {
+    "label": "Israel Bar Association",
+    "href": "https://www.israelbar.org.il"
+   }
+  },
+  {
+   "slug": "australia",
+   "name": "Australia",
+   "rule": "success",
+   "answer": "Not as a percentage, with one exception. Australian lawyers generally may not charge a share of the damages, but conditional no win, no fee agreements with an uplift of up to 25% of the legal costs are allowed. Since 2020, Victoria's Supreme Court can make group costs orders in class actions that set a percentage fee.",
+   "source": {
+    "label": "Law Council of Australia",
+    "href": "https://lawcouncil.au"
+   }
+  },
+  {
+   "slug": "new-zealand",
+   "name": "New Zealand",
+   "rule": "success",
+   "answer": "Conditional fees, yes. Under the Lawyers and Conveyancers Act 2006, a lawyer may agree to be paid only if the case succeeds, and may add a premium to normal fees, as long as the agreement is in writing and the fee is fair and reasonable. Fees calculated as a percentage of the amount recovered are restricted.",
+   "source": {
+    "label": "Lawyers and Conveyancers Act 2006 (legislation.govt.nz)",
+    "href": "https://www.legislation.govt.nz/act/public/2006/0001/latest/whole.html"
+   }
+  },
+  {
+   "slug": "singapore",
+   "name": "Singapore",
+   "rule": "restricted",
+   "answer": "Mostly no. Contingency fees remain prohibited under the Legal Profession Act 1966, but since 2022 conditional fee agreements are allowed for international and domestic arbitration, certain proceedings in the Singapore International Commercial Court and related mediation. Under these, the lawyer is paid fully or partly only if the claim succeeds.",
+   "source": {
+    "label": "Legal Profession Act 1966 (Singapore Statutes Online)",
+    "href": "https://sso.agc.gov.sg/Act/LPA1966"
+   }
+  },
+  {
+   "slug": "hong-kong",
+   "name": "Hong Kong",
+   "rule": "restricted",
+   "answer": "Not in court litigation. Contingency and conditional fees remain prohibited for litigation in Hong Kong because of the common-law rules against maintenance and champerty. Since 2022, outcome-related fee structures, including conditional and damages-based agreements, are allowed for arbitration under the Arbitration Ordinance, subject to a code of practice.",
+   "source": {
+    "label": "Department of Justice, Hong Kong (doj.gov.hk)",
+    "href": "https://www.doj.gov.hk"
+   }
+  },
+  {
+   "slug": "india",
+   "name": "India",
+   "rule": "restricted",
+   "answer": "No. The Bar Council of India Rules forbid advocates from stipulating a fee contingent on the result of litigation or agreeing to share in the proceeds. Indian lawyers charge fixed, per-hearing or hourly fees instead, and litigation funding by third parties who are not lawyers is lawful in principle but uncommon.",
+   "source": {
+    "label": "Bar Council of India",
+    "href": "https://www.barcouncilofindia.org"
+   }
+  },
+  {
+   "slug": "malaysia",
+   "name": "Malaysia",
+   "rule": "restricted",
+   "answer": "No. Under the Legal Profession Act 1976, advocates and solicitors may not enter into an agreement under which the fee depends on the outcome of contentious proceedings or take a share of what is recovered. Lawyers charge agreed fees, scale fees or hourly rates instead, so ask for a written estimate before you start.",
+   "source": {
+    "label": "Malaysian Bar",
+    "href": "https://www.malaysianbar.org.my"
+   }
+  },
+  {
+   "slug": "south-africa",
+   "name": "South Africa",
+   "rule": "percentage",
+   "answer": "Yes, under the Contingency Fees Act 66 of 1997. A lawyer may agree to charge no fee if the case is lost and a success fee if it is won. The success fee may not exceed the normal fee by more than 100% and, in money claims, may not exceed 25% of the total amount awarded.",
+   "source": {
+    "label": "Legal Practice Council, South Africa",
+    "href": "https://lpc.org.za"
+   }
+  }
+ ]
+}

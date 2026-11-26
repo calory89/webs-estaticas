@@ -1,2 +1,0 @@
-const c=t=>{if(t==null)return"";let e=Array.isArray(t)?t.join("; "):String(t);return/^[=+\-@\t\r]/.test(e)&&(e=`'${e}`),/[",\n\r;]/.test(e)?`"${e.replace(/"/g,'""')}"`:e},s=(t,e)=>[e.map(o=>c(o.label)).join(","),...t.map(o=>e.map(r=>c(o[r.key])).join(","))].join(`\r
-`),l=(t,e,o="text/csv;charset=utf-8")=>{const r=new Blob(["\uFEFF",e],{type:o}),a=URL.createObjectURL(r),n=document.createElement("a");n.href=a,n.download=t,document.body.appendChild(n),n.click(),n.remove(),setTimeout(()=>URL.revokeObjectURL(a),1e3)};export{l as d,s as t};
