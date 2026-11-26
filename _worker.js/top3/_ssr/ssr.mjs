@@ -23465,6 +23465,25 @@ var money = (n) => n == null ? "" : new Intl.NumberFormat("en-GB", {
 	maximumFractionDigits: 0
 }).format(n);
 var fmtInt = (n) => n == null ? "" : n.toLocaleString("en-US");
+var NLOC = {
+	en: "en-GB",
+	es: "es-ES",
+	de: "de-DE",
+	fr: "fr-FR",
+	it: "it-IT",
+	pt: "pt-PT",
+	da: "da-DK"
+};
+var moneyL = (n, L) => n == null ? "" : L === "en" ? money(n) : new Intl.NumberFormat(NLOC[L] ?? "en-GB", {
+	style: "currency",
+	currency: "EUR",
+	maximumFractionDigits: 0
+}).format(n);
+var intL = (n, L) => n == null ? "" : n.toLocaleString(L === "en" ? "en-US" : NLOC[L] ?? "en-US");
+var scoreL = (n, L) => n == null ? "–" : n.toLocaleString(NLOC[L] ?? "en-GB", {
+	minimumFractionDigits: 1,
+	maximumFractionDigits: 1
+});
 var range = (a, b) => {
 	if (!a || !b) return "";
 	const da = /* @__PURE__ */ new Date(a + "T12:00:00Z"), db = /* @__PURE__ */ new Date(b + "T12:00:00Z");
@@ -23677,7 +23696,11 @@ function seoNorm(o) {
 	let title = o.title;
 	if (title.length > 60 && title.endsWith(" | Top3Hotels")) title = title.slice(0, -13);
 	let description = o.description;
-	if (description.length > 160) description = description.slice(0, 157).replace(/[\s,;:·–-]+[^\s]*$/, "") + "…";
+	if (description.length > 160) {
+		const cut = description.slice(0, 159);
+		const stop = cut.lastIndexOf(". ");
+		description = stop >= 90 ? cut.slice(0, stop + 1) : cut.slice(0, 157).replace(/[\s,;:·–-]+[^\s]*$/, "").replace(/(?:[\s,;:(]+(?:&|and|y|e|et|und|og|del?|the|a|à|di|da|em|en|in|i|\())+$/i, "").replace(/[\s,;:(]+$/, "") + "…";
+	}
 	const ld = [...o.ld ?? []].map((x) => x && x["@type"] === "Article" ? {
 		...x,
 		image: x.image ?? [o.image ?? `https://www.top3hotels.com/og.png`],
@@ -23950,7 +23973,7 @@ function card(h, city, i, L, sights, cityImg, review) {
 <p class="bestfor"><b>${esc(X[L].bestFor)}</b>${esc(bestFor(h, i, L, sights).join(" · "))}</p>
 ${why.length ? `<ul class="why">${why.map((w) => `<li>${esc(w)}</li>`).join("")}</ul>` : ""}
 <div class="trust"><span><b>${fmtInt(b.count)}</b> Booking.com ${esc(t.reviews)}</span>${ex.loc ? `<span>${esc(t.location)} <b>${ex.loc}</b></span>` : ""}<span class="live">${esc(M[L].live(fmtLive(isoDay(b.checked))))}</span></div>
-${ex.pros?.length ? `<ul class="pc"><li class="pro"><small>${esc(t.guestsSay)}</small>${esc(ex.pros[0])}</li>${ex.cons?.[0] ? `<li class="con">${esc(ex.cons[0])}</li>` : ""}</ul>` : `<p style="margin:0;font-size:14px">${esc(h.evidence?.shortReason ?? h.reason ?? "")}</p>`}
+${ex.pros?.length ? `<ul class="pc"><li class="pro"><small>${esc(t.guestsSay)}</small><span${L === "en" ? "" : " lang=\"en\""}>${esc(ex.pros[0])}</span></li>${ex.cons?.[0] ? `<li class="con"${L === "en" ? "" : " lang=\"en\""}>${esc(ex.cons[0])}</li>` : ""}</ul>` : `<p style="margin:0;font-size:14px">${esc(h.evidence?.shortReason ?? h.reason ?? "")}</p>`}
 ${tags.length ? `<ul class="chips">${tags.map((x) => `<li>${esc(t.tags[x] ?? x)}</li>`).join("")}</ul>` : ""}
 <div class="price"><span>${esc(t.refRate)}</span><span class="total" data-total="${o.nightly ?? ""}" hidden></span></div>
 ${o.checkout && dayMs(o.checkout) < Date.now() ? `<p class="cnote">${esc(NOTE[L].past(range(o.checkin, o.checkout)))}</p>` : ""}${isHostel(h) ? `<p class="cnote">${esc(NOTE[L].hostel)}</p>` : ""}${h.sameAs ? `<p class="cnote">${esc(NOTE[L].same(h.sameAs))}</p>` : ""}
@@ -24019,7 +24042,7 @@ async function cityPage(city0, L) {
 	const pageDate = cityChecked(hs);
 	const days = [...new Set(hs.map((h) => isoDay(h.booking?.checked)))].sort();
 	const checkedText = M[L].live(days.length > 1 ? `${fmtLive(days[0])} – ${fmtLive(days[days.length - 1])}` : fmtLive(days[0] ?? pageDate));
-	const ans = (h) => `${h.name}${h.area ? ` (${h.area})` : ""}: ${h.booking?.score ?? "–"}/10 · ${fmtInt(h.booking?.count)} ${t.reviews} · ${money(h.offer?.nightly)} ${t.perNight}${h.extras?.pros?.[0] ? ` · ${t.guestsSay}: “${h.extras.pros[0]}”` : ""}`;
+	const ans = (h) => `${h.name}${h.area ? ` (${h.area})` : ""}: ${scoreL(h.booking?.score, L)}/10 · ${intL(h.booking?.count, L)} ${t.reviews} · ${moneyL(h.offer?.nightly, L)} ${t.perNight}${L === "en" && h.extras?.pros?.[0] ? ` · ${t.guestsSay}: “${h.extras.pros[0]}”` : ""}`;
 	const faq = [
 		[t.faq.budget(city.city), ans(budget)],
 		[t.faq.value(city.city), ans(value)],
@@ -25512,11 +25535,76 @@ var CSS_HP = `.hp-facts{display:flex;flex-wrap:wrap;gap:8px 18px;margin:0 0 18px
 .hp-hero{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:14px;margin:6px 0 18px;background:#e5e8ee}.hp-verdict{font-size:19px;line-height:1.55;border-left:4px solid currentColor;padding:4px 0 4px 16px;margin:0 0 22px}
 .hp-cta{display:block;text-align:center;font-weight:700;padding:14px 18px;border-radius:12px;background:#0b3b8c;color:#fff!important;text-decoration:none;margin:18px 0 6px}.hp-small{font-size:13px;color:var(--muted);text-align:center;margin:0 0 6px}.hp-alt{display:block;text-align:center;font-size:14px;margin:0 0 22px}
 .hp-faq details{border-top:1px solid rgba(127,127,127,.25);padding:12px 0}.hp-faq summary{font-weight:700;cursor:pointer;font-size:17px}.hp-others{display:grid;gap:10px;margin:10px 0 0;padding:0;list-style:none}.hp-others a{display:block;padding:12px 14px;border:1px solid rgba(127,127,127,.25);border-radius:12px;text-decoration:none}`;
+var HP_MONEY = /€\s?\d|\d[\d.,]*\s?€|\bEUR\s?\d|\$\s?\d|\d[\d.,]*\s?(?:kr|DKK)\b/;
+var HP_STAY = /(?:January|February|March|April|May|June|July|August|September|October|November|December|enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre|Januar|Februar|März|Juni|Juli|Oktober|Dezember|janvier|février|mars|avril|mai|juin|juillet|août|septembre|octobre|novembre|décembre|gennaio|febbraio|aprile|maggio|giugno|luglio|settembre|ottobre|dicembre|janeiro|fevereiro|março|maio|junho|julho|setembro|outubro|novembro|dezembro)(?: de)? 20\d\d/i;
+var HP_NOINFO = /sample median|mediana de la muestra|no breakdown of what guests|will not guess at|no tenemos un desglose|no vamos a inventar/i;
+var HP_PXNOTE = {
+	en: "Prices change by date. The latest reference price is at the top of this page; check the live rate for your own dates on Booking.com.",
+	es: "Los precios cambian según la fecha. El último precio de referencia está arriba en esta página; consulta la tarifa en directo para tus fechas en Booking.com.",
+	de: "Preise ändern sich je nach Datum. Der aktuelle Referenzpreis steht oben auf dieser Seite; prüfen Sie den Live-Preis für Ihre Daten auf Booking.com.",
+	fr: "Les prix changent selon les dates. Le dernier prix de référence figure en haut de cette page ; vérifiez le tarif en direct pour vos dates sur Booking.com.",
+	it: "I prezzi cambiano in base alle date. L'ultimo prezzo di riferimento è in cima a questa pagina; controlla la tariffa in tempo reale per le tue date su Booking.com.",
+	pt: "Os preços mudam consoante as datas. O último preço de referência está no topo desta página; confirme a tarifa em direto para as suas datas no Booking.com.",
+	da: "Priserne ændrer sig efter dato. Den seneste referencepris står øverst på siden; tjek den aktuelle pris for dine datoer på Booking.com."
+};
+var hpSplit = (s) => s.split(/(?<=[.!?])\s+(?=[A-ZÁÉÍÓÚÑÄÖÜÅÆØÀÈÌÒÙÇ¿¡"“])/);
+function hpScrub(s) {
+	const parts = hpSplit(s);
+	const bad = (x) => HP_MONEY.test(x) || HP_STAY.test(x) || HP_NOINFO.test(x);
+	if (!parts.some(bad)) return {
+		text: s.trim(),
+		cut: false
+	};
+	const lean = /^(?:It|This|That|Those|Whether|So|Es|Esto|Eso|Esa|Salen|Si compensa|Con|Das|Dies|Ce|Cela|Questo|Isto|Det)\b/;
+	return {
+		text: parts.filter((x) => !bad(x) && !lean.test(x)).join(" ").trim(),
+		cut: true
+	};
+}
+function hpCleanContent(c, L) {
+	const note = HP_PXNOTE[L] ?? HP_PXNOTE["en"];
+	let noted = false;
+	const sections = (c.sections ?? []).map((x) => {
+		let cut = false;
+		const p = (x.p ?? []).map((pp) => {
+			const r = hpScrub(pp);
+			cut ||= r.cut;
+			return r.text;
+		}).filter(Boolean);
+		if (cut && !noted && HP_MONEY.test((x.p ?? []).join(" "))) {
+			p.push(note);
+			noted = true;
+		}
+		return {
+			h: x.h,
+			p
+		};
+	}).filter((x) => x.p.length);
+	const faq = (c.faq ?? []).map((q) => {
+		const r = hpScrub(q.a);
+		if (!r.cut) return q;
+		const a = HP_MONEY.test(q.a) ? note : r.text;
+		return a ? {
+			q: q.q,
+			a
+		} : null;
+	}).filter(Boolean);
+	const title = (c.title ?? "").replace(/honest review and who it suits/i, "guest scores, price and who it suits").replace(/honest review/i, "guest scores and price").replace(/opinión sincera y para quién es/i, "notas, precio y para quién es").replace(/opinión sincera/i, "notas y precio");
+	const meta = (c.meta ?? "").replace(/,?\s*(?:a\s+)?(?:reference price|precio de referencia|Referenzpreis|prix de référence|prezzo di riferimento|preço de referência|referencepris)[^.;]*?(?:€\s?\d[\d.,]*|\d[\d.,]*\s?€)[^.;,]*/gi, "").replace(/\s+\./g, ".").replace(/\s{2,}/g, " ").trim();
+	return {
+		...c,
+		title,
+		meta,
+		sections,
+		faq
+	};
+}
 async function hotelPage(slug, L) {
 	if (!HP_LANGS.includes(L)) return null;
 	const d = await hotelPageData(slug);
-	const c = d?.content?.[L];
-	if (!d || !c) return null;
+	const c0 = d?.content?.[L];
+	if (!d || !c0) return null;
+	const c = hpCleanContent(c0, L);
 	const f = d.facts ?? {};
 	const t = HPT[L];
 	const { bySlug } = await data();
@@ -25535,7 +25623,13 @@ async function hotelPage(slug, L) {
 	const hfb = city ? `/api/img/${city.id}/big` : "";
 	const others = (f.other_picks ?? []).map((o) => {
 		const s2 = hotelSlug(o.name, d.city_slug);
-		return `<li><a href="${esc(live.has(s2) ? P(L, `/hotel/${s2}`) : P(L, `/${d.city_slug}`))}"><b>${esc(o.name)}</b> · ${esc(o.category)}${o.score ? ` · ${o.score.toFixed(1)}/10` : ""}${o.nightly_eur ? ` · ${money(o.nightly_eur)}` : ""}</a></li>`;
+		const href = live.has(s2) ? P(L, `/hotel/${s2}`) : P(L, `/${d.city_slug}`);
+		const catL = t[`cat_${{
+			Budget: "budget",
+			"Best Value": "value",
+			Luxury: "lux"
+		}[o.category] ?? o.category}`] ?? o.category;
+		return `<li><a href="${esc(href)}"><b>${esc(o.name)}</b> · ${esc(catL)}${o.score ? ` · ${o.score.toFixed(1)}/10` : ""}${o.nightly_eur ? ` · ${money(o.nightly_eur)}` : ""}</a></li>`;
 	});
 	const op = f.other_picks ?? [];
 	const CMP = {
@@ -25602,7 +25696,7 @@ async function hotelPage(slug, L) {
 		category: t[`cat_${{
 			Budget: "budget",
 			"Best Value": "value",
-			Luxury: "luxury"
+			Luxury: "lux"
 		}[o.category] ?? o.category}`] ?? o.category,
 		me: false
 	}))].map((o) => `<tr${o.me ? " style=\"background:#fff6e5\"" : ""}><td style="padding:8px;border-bottom:1px solid #eee">${o.me ? `<b>${esc(o.name)}</b>` : esc(o.name)}</td><td style="padding:8px;border-bottom:1px solid #eee">${esc(o.category)}</td><td style="padding:8px;border-bottom:1px solid #eee">${sc1(o.score)}</td><td style="padding:8px;border-bottom:1px solid #eee">${o.nightly_eur ? money(o.nightly_eur) : "–"}</td></tr>`).join("")}</tbody></table></div>` : "";
@@ -25611,9 +25705,9 @@ async function hotelPage(slug, L) {
 	const facts = [
 		f.score ? `<span>${esc(t.score)} <b>${Number(f.score).toFixed(1)}</b>/10${f.reviews ? ` · ${fmtInt(f.reviews)} ${esc(t.reviews)}` : ""}</span>` : "",
 		f.stars ? `<span>${"★".repeat(Number(f.stars))}</span>` : "",
-		f.nightly_eur ? `<span><b>${money(f.nightly_eur)}</b> ${esc(t.per)}</span>` : "",
+		f.nightly_eur ? `<span class="hp-px"><b>${money(f.nightly_eur)}</b> ${esc(t.per)}</span>` : "",
 		f.area ? `<span>${esc(f.area)}, ${esc(d.city)}</span>` : "",
-		f.candidates_compared ? `<span>${esc(t.from)} ${fmtInt(f.candidates_compared)} ${esc(t.hotels)}</span>` : ""
+		Number(f.candidates_compared) > 1 ? `<span>${esc(t.from)} ${fmtInt(f.candidates_compared)} ${esc(t.hotels)}</span>` : ""
 	].filter(Boolean).join("");
 	const cta = bk ? `<a class="hp-cta" href="${esc(bk)}" rel="sponsored nofollow noopener" target="_blank" data-t="check_availability" data-city="${esc(d.city_slug)}" data-cat="${esc(d.cat)}" data-p="hotel-page">${esc(t.book)} ↗</a><p class="hp-small">${esc(t.disc)}</p>${alt ? `<a class="hp-alt" href="${esc(alt)}" rel="sponsored nofollow noopener" target="_blank" data-t="alt_click" data-city="${esc(d.city_slug)}" data-cat="${esc(d.cat)}" data-p="hotel-page-alt">${esc(t.altl)} →</a>` : ""}` : "";
 	const body = `<style>${CSS_BLOG}${CSS_HP}</style><article class="post">
@@ -25652,8 +25746,7 @@ ${cmpTable}
 			...f.stars ? { starRating: {
 				"@type": "Rating",
 				ratingValue: f.stars
-			} } : {},
-			...f.nightly_eur ? { priceRange: `€${Math.round(f.nightly_eur)} per night (reference)` } : {}
+			} } : {}
 		},
 		{
 			"@context": "https://schema.org",
