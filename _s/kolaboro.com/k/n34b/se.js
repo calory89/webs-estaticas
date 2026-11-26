@@ -15,7 +15,7 @@
   function load() {
     if (X) return Promise.resolve(X); if (busy) return busy;
     busy = fetch('/data/n34b-search.json').then(function (r) { return r.json(); }).then(function (d) {
-      X = d.p.filter(function (r) { return !/eco\s*beach|\bequinox\b|\bsumba\b/i.test(r[1] + ' ' + r[3] + ' ' + r[5] + ' ' + r[7]); }).map(function (r) { return { s: r[0], n: r[1], id: r[2], dv: r[3], mk: r[5], co: r[6], ar: r[7], st: r[8], pm: r[9], hy: r[10], ov: r[11], h: norm([r[1], r[2], r[3], r[5], r[6], r[7]].join(' ')), hn: norm(r[1]) }; });
+      X = d.p.filter(function (r) { return !/eco\s*beach|\bequinox\b|\bsumba\b/i.test(r[1] + ' ' + r[3] + ' ' + r[5] + ' ' + r[7]); }).map(function (r) { return { s: r[0], n: r[1], id: r[2], dv: r[3], mk: r[5], co: r[6], ar: r[7], st: r[8], pm: r[9], hy: r[10], ov: r[11], h: norm([r[1], r[2], r[3], r[5], r[6], r[7], r[4]].join(' ')), hn: norm(r[1]) }; });
       if (!N7T) return X;
       return fetch('/data/n37u-se.json').then(function (r) { return r.json(); }).then(function (j) { N7 = j.p; N7G = j.g || {}; return X; }).catch(function () { return X; });
     }).catch(function () { busy = null; return null; });
