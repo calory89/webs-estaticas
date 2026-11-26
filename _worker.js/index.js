@@ -507,12 +507,11 @@ async function kbEdge(req, u, env, ctx, make) {
   } catch (e) {}
   return keep(await make());
 }
-let kTick = null, kbots = null, kg27 = null, kogi = null;
+let kTick = null, kbots = null, kg27 = null;
 export default {
   async fetch(req, env, ctx) {
     const t0 = Date.now();   // n31t (batch 31, item 258)
     if (env && env.ASSETS && !env.__kbA) { const A = env.ASSETS; try { env.ASSETS = { async fetch(q, i) { if (!(q instanceof Request)) q = new Request(q, i); if (q.method !== 'GET' && q.method !== 'HEAD') return A.fetch(q); let x; for (let n = 0; n < 3; n++) { try { x = await A.fetch(q.clone()); if (x.status < 500) return x; } catch (e) { if (n > 1) throw e; } await new Promise(s => setTimeout(s, 40 * n + 40)); } return x; } }; env.__kbA = 1; } catch (e) {} }   // n40 k21: a static file read that fails under load (5xx or throw) is tried twice more: worker time to response headers, sent as Server-Timing on kolaboro.com HTML
-    if (/^\/k\/og\/[a-z0-9-]+\.png$/.test(new URL(req.url).pathname) && /image\/(avif|webp)/.test(req.headers.get('accept') || '') && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) { try { if (!kogi) kogi = await import('./kbx_ogimg.js'); const r = await kogi.serve(req, new URL(req.url), env); if (r) return r; } catch (e) {} }   // n40 k50 R03-49: AVIF/WebP share images by Accept
     if (KB_CSSBR_ON && /^\/k\/(?:site|site-p|ds-site|ds)\.css$/.test(new URL(req.url).pathname) && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname) && (KB_CSSBR_ON === 2 || req.headers.get('x-kolaboro-br-test') === '1')) { try { if (!kcbr) kcbr = await import('./kbx_cssbr.js'); const r = await kcbr.serve(req, new URL(req.url), env); if (r) return r; } catch (e) {} }   // n40 d12: KB_CSSBR_ON 2 on, 1 test header, 0 off
     // n31t (batch 31, item 273): maintenance mode. Off unless the environment setting KB_MAINT is "1": then every kolaboro.com page
     // answers with a short notice in its language (503, Retry-After); data files, APIs, scripts and /status/ keep working.
