@@ -26,6 +26,8 @@ NORMALIZE = [
     'Cloudflare email obfuscation: mailto links become /cdn-cgi/l/email-protection#<hex> with a <span class="__cf_email__"> and an injected email-decode.min.js script; the checker decodes the hex back to the address and removes that script.',
     'Scripts the worker appends on two private or campaign pages (src under /__k/), which are not part of the published file.',
     'Only if the hash still does not match: the Google Analytics snippet right before </head> and the Clarity snippet right before </body>, which the deploy adds to pages whose source has none.',
+    'The checker reads each file as published source, unchanged from the deploy, at /api/x/n/src?path= (no-store); the decorations the server adds to HTML per response are listed on the result, not hashed.',
+    'Only if the hash still does not match: the public successor key of the retired Supabase anon key, which some served copies carry in its place, is put back.',
 ]
 
 
