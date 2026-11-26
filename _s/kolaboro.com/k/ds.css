@@ -358,13 +358,22 @@ a.k-src:hover{color:var(--k-sea);border-bottom-color:currentColor}
 :where(:root:has(link[href*="/k/site.css"])) .hero .hero-alt a{font-weight:650;color:var(--k-ink);text-decoration:underline;text-decoration-color:var(--k-brand);text-decoration-thickness:2px;text-underline-offset:.25em}
 :where(:root:has(link[href*="/k/site.css"])) .hero .launch{margin-top:14px;font-size:var(--k-fs-sm);color:var(--k-muted)}
 :where(:root:has(link[href*="/k/site.css"])) .hero .launch a{color:var(--k-ink-2)}
+
 :where(:root:has(link[href*="/k/site.css"])) .hero .example a{color:var(--k-muted);font-size:var(--k-fs-xs)}
+
 @media (max-width:560px){:where(:root:has(link[href*="/k/site.css"])) .hero h1{font-size:clamp(2.3rem,10.5vw,3rem)}:where(:root:has(link[href*="/k/site.css"])) .hero .lead{font-size:1.05rem}}
 
-/* the numbers strip: light, readable{background:var(--k-surface);border-block:1px solid var(--k-line)}
+/* the numbers strip: light, readable, still one line on desktop */
+
+
+
+
+
 :where(:root:has(link[href*="/k/site.css"])) .trust{background:var(--k-paper);border-bottom:1px solid var(--k-line)}
+
 :where(:root:has(link[href*="/k/site.css"])) .trust a{font-size:var(--k-fs-sm);color:var(--k-ink-2)}
 :where(:root:has(link[href*="/k/site.css"])) .lv{background:var(--k-paper)}
+
 :where(:root:has(link[href*="/k/site.css"])) .lv-l>li{border-radius:var(--k-r-md)!important;border-color:var(--k-line)!important;background:var(--k-surface)!important;box-shadow:none!important}
 
 /* how it works: a real sequence, so numbered; quiet nodes */
@@ -380,6 +389,24 @@ a.k-src:hover{color:var(--k-sea);border-bottom-color:currentColor}
 :where(:root:has(link[href*="/k/site.css"])) .fd-m em{text-transform:none!important;letter-spacing:0!important;font-size:var(--k-fs-xs)!important;font-weight:640!important}
 :where(:root:has(link[href*="/k/site.css"])) .fd-t{font-size:var(--k-fs-md);line-height:1.5}
 :where(:root:has(link[href*="/k/site.css"])) .fd-x{color:var(--k-muted);font-size:var(--k-fs-xs)}
+
+/* product + tools */
+
+
+
+
+
+
+
+
+
+
+
+/* buying alone vs with Kolaboro */
+
+
+
+
 
 /* prices */
 :where(:root:has(link[href*="/k/site.css"])) .tile{border:1px solid var(--k-line)!important;border-radius:var(--k-r-lg)!important;background:var(--k-surface);box-shadow:none!important}
@@ -547,7 +574,8 @@ a.k-src:hover{color:var(--k-sea);border-bottom-color:currentColor}
 /* home, first screen: one promise, the search, one short proof line (server-rendered, one line reserved so nothing moves) */
 :root:has(link[href*="/k/site.css"]) .hero .hp-proof{display:flex;align-items:baseline;gap:10px;margin:var(--k-4) 0 0;min-height:1.5em;font-size:var(--k-fs-sm);line-height:1.5;color:var(--k-ink-2);max-width:62ch;font-variant-numeric:tabular-nums}
 :root:has(link[href*="/k/site.css"]) .hero .hp-proof i{flex:none;width:8px;height:8px;border-radius:50%;background:var(--k-ok);box-shadow:0 0 0 3px color-mix(in srgb,var(--k-ok) 22%,transparent);transform:translateY(-1px)}
-/* home, below the hero: the numbers as four figures under a heavy rule{border-top:0}
+/* home, below the hero: the numbers as four figures under a heavy rule, then the quieter links */
+
 :root:has(link[href*="/k/site.css"]) .hp-h{font-size:var(--k-fs-xl);font-weight:680;letter-spacing:-.012em;line-height:1.2;margin:0 0 var(--k-5);color:var(--k-ink)}
 :root:has(link[href*="/k/site.css"]) :is(.hp-stats,.n38-t){display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0 var(--k-6);list-style:none;margin:0;padding:0}
 :root:has(link[href*="/k/site.css"]) .hp-stats>li{border-top:1px solid rgba(255,255,255,.28);margin:0}
@@ -571,6 +599,7 @@ a.k-src:hover{color:var(--k-sea);border-bottom-color:currentColor}
 :root:has(link[href*="/k/site.css"]) .hp-band .n33-ms .wrap{padding:0;max-width:none;width:auto;margin:0}
 :root:has(link[href*="/k/site.css"]) .hp-band .n33-ms b{font-weight:600;color:var(--k-ink-2)}
 :root:has(link[href*="/k/site.css"]) .hp-band .n33-ms a{color:var(--k-ink-2)}
+
 @media (max-width:899px){
   :root:has(link[href*="/k/site.css"]) :is(.hp-stats,.n38-t){grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--k-2) var(--k-5)}
   :root:has(link[href*="/k/site.css"]) .hp-more{justify-content:flex-start}
@@ -578,7 +607,6 @@ a.k-src:hover{color:var(--k-sea);border-bottom-color:currentColor}
 }
 /* project head: the name alone in the title, a quiet line under it says what the page is */
 :root:has(link[href*="/k/site.css"]) .phero .kh1sub{margin:var(--k-2) 0 0;font-size:var(--k-fs-lg);font-weight:560;color:var(--k-muted);letter-spacing:-.005em}
-}
 /* data pages, record and brief: same column as the header, same heads, tables and figures as the rest of the site */
 :root:has(link[href*="/k/site.css"]) .wrap.n37{max-width:var(--k-wrap);padding-bottom:var(--k-sec)}
 :root:has(link[href*="/k/site.css"]) .phero>.wrap>.lead+.k-xs{margin-top:var(--k-3);font-size:var(--k-fs-xs);color:var(--k-muted)}
@@ -668,6 +696,8 @@ a.k-src:hover{color:var(--k-sea);border-bottom-color:currentColor}
 :root:has(link[href*="/k/site.css"]) .hero .hero-check.k-omni .btn{border-radius:var(--k-r-md)}
 :root:has(link[href*="/k/site.css"]) .hero .hp-proof{color:var(--k-ink-2)}
 
+
+
 /* key numbers band: ink sheet with serif numerals */
 :root:has(link[href*="/k/site.css"]) .hp-band{background:var(--k-band);color:var(--k-band-ink);border:0;margin:0;padding-block:clamp(36px,4.4vw,64px)}
 :root:has(link[href*="/k/site.css"]) .hp-band .hp-h{color:var(--k-band-ink);font-size:var(--k-fs-2xl)}
@@ -706,6 +736,7 @@ a.k-src:hover{color:var(--k-sea);border-bottom-color:currentColor}
 :where(:root:has(link[href*="/k/site.css"])) :is(.ship-l,.ship-r){background:var(--k-sunken);box-shadow:12px 0 14px var(--k-sunken);color:var(--k-ink-2);text-transform:none;letter-spacing:0;font-size:12px;font-weight:600}
 :root:has(link[href*="/k/site.css"]) .ship-r{box-shadow:-12px 0 14px var(--k-sunken);color:var(--k-brand-ink)}
 :root:has(link[href*="/k/site.css"]) .ship a:focus-visible{outline-color:var(--k-sea)}
+:where(:root:has(link[href*="/k/site.css"])) :is(.finale,.tag,.tile .tag,.f-ini,.pv-img i,.mm-rank,.look .n,.play){color:var(--k-on-brand)}
 :root:has(link[href*="/k/site.css"]) .mk-ti .big{font-family:var(--k-display);font-weight:600;letter-spacing:-.03em}
 :root:has(link[href*="/k/site.css"]) .mk-ti .rk{background:#FFFFFF;color:#0E1A2B;font-weight:650;border-radius:var(--k-r-sm)}
 :root:has(link[href*="/k/site.css"]) .mk-ti h2{font-size:var(--k-fs-xl)}
