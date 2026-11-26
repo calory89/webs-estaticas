@@ -184,7 +184,7 @@ function kbHeaders(r, u) {
   h.set('cross-origin-opener-policy', 'same-origin-allow-popups');
   // n32x (batch 32, Early Hints): the stylesheets and main font every public page loads, as Link preload headers; Cloudflare answers the
   // next requests with 103 Early Hints from them, so the browser fetches the CSS while the worker still builds the page (/engineering/early-hints/)
-  if (r.status === 200 && !priv && !embed && !/^\/(?:(?:es\/)?apply|agents|shared|thanks|visit)(?:\/|$)/.test(u.pathname)) h.append('link', '</k/site.css?v=' + KB_SITE_CSS_V + '>; rel=preload; as=style, </k/' + (KB_DSS_V === KB_DS_V ? 'ds-site' : 'ds') + '.css?v=' + KB_DS_V + '>; rel=preload; as=style, </k/fonts/plexsans-latin.woff2>; rel=preload; as=font; type="font/woff2"; crossorigin, </k/fonts/ss4d-latin.woff2>; rel=preload; as=font; type="font/woff2"; crossorigin');
+  if (r.status === 200 && !priv && !embed && !/^\/(?:(?:es\/)?apply|agents|shared|thanks|visit)(?:\/|$)/.test(u.pathname)) h.append('link', '</k/site.css?v=' + KB_SITE_CSS_V + '>; rel=preload; as=style, </k/' + (KB_DSS_V === KB_DS_V ? 'ds-site' : 'ds') + '.css?v=' + KB_DS_V + '>; rel=preload; as=style, </k/fonts/plexsans-latin.woff2>; rel=preload; as=font; type="font/woff2"; crossorigin, </k/fonts/' + (/^\/ar\//.test(u.pathname) ? 'plexar-arabic-600' : 'ss4d-latin') + '.woff2>; rel=preload; as=font; type="font/woff2"; crossorigin');   // n40 d8: Arabic headings use Plex Arabic 600
   if (priv) { h.set('cache-control', 'no-store'); h.set('x-robots-tag', 'noindex, nofollow'); }
   h.delete('access-control-allow-origin');
   h.set('cache-control', priv ? 'no-store' : 'no-cache'); // a nonce must never be reused from a cache
@@ -257,8 +257,8 @@ let KB_CSP_SCRIPTS = true;   // n21e: strict script policy enforced site-wide; f
 const KB_GA = 'G-FJKJE77K4V';
 const KB_GA_JS = '(window.kbLate||function(f){addEventListener("load",function(){setTimeout(f,1500)})})(function(){var s=document.createElement("script");s.async=1;s.src="https://www.googletagmanager.com/gtag/js?id=' + KB_GA + '";document.head.appendChild(s)});' +
   "window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','" + KB_GA + "');";
-const KB_DS_V = '618404f78c';   // bump with ds.css (scratchpad d12a/dsv.sh does it)
-const KB_DSS_V = '618404f78c';   // the ds.css version /k/ds-site.css was generated from; when it differs from KB_DS_V every page gets plain ds.css
+const KB_DS_V = 'bfc1461c40';   // bump with ds.css (scratchpad d12a/dsv.sh does it)
+const KB_DSS_V = 'bfc1461c40';   // the ds.css version /k/ds-site.css was generated from; when it differs from KB_DS_V every page gets plain ds.css
 // kolaboro.com mobile speed (b9c, 6 Nov 2026): third-party tags wait for the first interaction (tap, key, scroll, mouse move)
 // or 8 s after load, whichever comes first. window.kbLate(fn) queues work for that moment (the static pages load gtag through it);
 // Cloudflare Zaraz (Clarity) is held the same way by deferring its zaraz.init call. Events queued before that are kept.
