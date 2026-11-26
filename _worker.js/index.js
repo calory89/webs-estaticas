@@ -252,7 +252,7 @@ const KB_U1 = { en: { months: 'month', days: 'day', weeks: 'week', years: 'year'
   de: { Monaten: 'Monat', Monate: 'Monat', Tagen: 'Tag', Tage: 'Tag', Wochen: 'Woche', Jahren: 'Jahr', Jahre: 'Jahr' }, nl: { maanden: 'maand', dagen: 'dag', weken: 'week', jaren: 'jaar' } };
 const KB_U1_RE = {}; for (const [l, m] of Object.entries(KB_U1)) KB_U1_RE[l] = new RegExp('(^|[\\s(>:;\u00a0])1([ \u00a0])(' + Object.keys(m).join('|') + ')(?![\\p{L}])', 'gu');
 function kbOne(html, m) { const re = KB_U1_RE[Object.keys(KB_U1).find(l => KB_U1[l] === m)]; return html.replace(re, (x, a, g, n) => a + '1' + g + m[n]); }
-const KB_SITE_CSS_V = '0e01ffc296', KB_PROV_V = '3eb9f3395e';   // n21e: bump when /k/site.css or /k/prov.js change (sha1 of the file, 10 chars); pages keep their old ?v= in the HTML
+const KB_SITE_CSS_V = '0e01ffc296', KB_PROV_V = 'fc21e0e8ce';   // n21e: bump when /k/site.css or /k/prov.js change (sha1 of the file, 10 chars); pages keep their old ?v= in the HTML
 const KB_SITEP_V = '35d78d1c6e', KB_SITEP_FROM = '0e01ffc296', KB_SITEP_RX = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:projects|developers)\/(?!compare\/)(?![a-z0-9-]*-vs-)[a-z0-9-]+\/$/;   // n40 d8: /k/site-p.css on project and developer pages (see its first lines)
 let KB_CSP_SCRIPTS = true;   // n21e: strict script policy enforced site-wide; false = report-only again (as before 11 Nov 2026)
 const KB_GA = 'G-FJKJE77K4V';

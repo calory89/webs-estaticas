@@ -190,9 +190,11 @@
   }
   // ---------- "Verify this page" in the footer
   function footer() {
-    var a = document.querySelector('footer a[href="/log/"], footer a[href="/log"]'); if (!a || document.getElementById('kbp-vp')) return;
+    // n40 k33: the new footer has no /log/ link; the button follows /log/, else the changelog or the last footer link
+    var a = document.querySelector('footer a[href="/log/"], footer a[href="/log"]') || document.querySelector('footer a[href$="/changelog/"]') || [].slice.call(document.querySelectorAll('footer li a')).pop(); if (!a || document.getElementById('kbp-vp')) return;
     var li = a.closest('li'); if (!li) return;
-    var n = document.createElement('li'); n.innerHTML = '<button type="button" class="kbp-pv" id="kbp-vp" aria-haspopup="dialog">Verify this page</button>';
+    var VT = { es: 'Verificar esta página', fr: 'Vérifier cette page', de: 'Diese Seite prüfen', ru: 'Проверить эту страницу', zh: '核验此页面', ar: 'تحقق من هذه الصفحة', nl: 'Deze pagina controleren' }[(document.documentElement.lang || '').slice(0, 2)] || 'Verify this page';
+    var n = document.createElement('li'); n.innerHTML = '<button type="button" class="kbp-pv" id="kbp-vp" aria-haspopup="dialog">' + VT + '</button>';
     li.parentNode.insertBefore(n, li.nextSibling);
     n.firstChild.addEventListener('click', function () { var b = this; css(); b.setAttribute('aria-busy', 'true'); load('pc', PC).then(function () { b.removeAttribute('aria-busy'); window.KBPageCheck.dialog(b); }, function () { b.removeAttribute('aria-busy'); location.href = '/verify?page=' + encodeURIComponent(location.pathname) + '#page'; }); });
   }
