@@ -1,3 +1,0 @@
-# Shared hashed build files (every name under /assets/ carries a content hash): cache for a year.
-/assets/*
-  Cache-Control: public, max-age=31536000, immutable

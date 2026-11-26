@@ -1,1 +1,0 @@
-import{r,l as c,j as l}from"./vendor-react-CtrgGfNe.js";import{P as m}from"./index-aCQPs-XW.js";import{u}from"./index-DnnuhSP4.js";var p="Portal",f=r.forwardRef((o,a)=>{const{container:e,...s}=o,[n,i]=r.useState(!1);u(()=>i(!0),[]);const t=e||n&&globalThis?.document?.body;return t?c.createPortal(l.jsx(m.div,{...s,ref:a}),t):null});f.displayName=p;export{f as P};
