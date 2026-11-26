@@ -26,7 +26,7 @@
   "@id": "http://publications.europa.eu/resource/authority/language/ENG"
  },
  "dct:modified": {
-  "@value": "2026-11-26T17:52:54Z",
+  "@value": "2026-11-26T18:09:17Z",
   "@type": "xsd:dateTime"
  },
  "dct:license": {
@@ -466,7 +466,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "145479",
+      "@value": "146775",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -480,7 +480,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "5ab6853317c6e54a2af033316d38ecf2033de160e2c8cd2561f19ae4c409b139"
+      "spdx:checksumValue": "8acfd866071d6edd588500371fba520f806b7cd560e180ae5007b01f531e79e1"
      }
     }
    ],
@@ -488,7 +488,7 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/DAILY"
    },
    "dct:modified": {
-    "@value": "2026-11-25T18:09:34Z",
+    "@value": "2026-11-26T17:52:18Z",
     "@type": "xsd:dateTime"
    }
   },
@@ -524,7 +524,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "428760",
+      "@value": "470021",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -538,7 +538,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "0a9e60b6db4eabf5fae4b1cd68c44219e661023bf062733c235c54b4b54f78f9"
+      "spdx:checksumValue": "051a184424dd8162c1659f874cea2169f5b1ec4d6d65163e28d780a006f2af75"
      }
     }
    ],
@@ -546,7 +546,7 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/DAILY"
    },
    "dct:modified": {
-    "@value": "2026-11-25T18:09:34Z",
+    "@value": "2026-11-26T17:52:18Z",
     "@type": "xsd:dateTime"
    }
   },
@@ -26596,7 +26596,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "937242",
+      "@value": "948359",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -26610,7 +26610,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "3bdcb73afc3c0defc3762085711f9c80047fce853e380a8329c92a0c32ffa12b"
+      "spdx:checksumValue": "923e018972df62ee907fc66d0eb4a132e5bab7651af8f81966c4717fe86d97cf"
      }
     }
    ],
