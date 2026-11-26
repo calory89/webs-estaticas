@@ -349,7 +349,7 @@ Property-based tests of the scoring rules (id: property-tests)
 
 Shipping log (id: shipping)
   URL: https://kolaboro.com/data/shipping.json
-  Ships (commits by people, or by Claude working for one) and data updates per UTC day from the git history of the live branch, streaks, engineering metrics and day summaries written by an AI model and checked in code.
+  Ships (commits) and data updates per UTC day from the git history of the live branch, streaks, engineering metrics and day summaries checked in code.
   Size 187.5 KB; 26 days; SHA-256 f2e71ecfee830f02e035d22d0f1c05338761776223d62b7ed295e91f197dea65; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
   Updates: weekly, Friday 12:19 UTC. Last updated: 2026-11-20T07:44:27Z. Freshness target 9 days.
   Schema: https://kolaboro.com/api/x/data/schema/shipping.json

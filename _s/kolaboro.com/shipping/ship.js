@@ -15,7 +15,7 @@
   function dur(s) { if (s == null) return 'n/a'; s = Math.round(s); return s < 120 ? s + ' s' : (Math.round(s / 6) / 10) + ' min'; }
   function lvl(c) { return !c ? 0 : c < 5 ? 1 : c < 20 ? 2 : c < 80 ? 3 : 4; }
   var LVL = ['0', '1 to 4', '5 to 19', '20 to 79', '80 or more'];
-  var METH = { 'ai-checked': 'Written by AI from the day’s commits, checked by code', 'deterministic': 'Taken from the day’s commit subjects', 'so-far': 'Day in progress: commit subjects so far', 'none': '' };
+  var METH = { 'ai-checked': 'Summary of the day’s commits, checked by code', 'deterministic': 'Taken from the day’s commit subjects', 'so-far': 'Day in progress: commit subjects so far', 'none': '' };
   var D, byDate = {}, sel = null;
 
   function kpis() {
@@ -66,7 +66,7 @@
     if (!r || !r.summary || !r.summary.lines.length) return '<p class="muted">Nothing shipped this day.</p>';
     return '<ul class="sh-sum">' + r.summary.lines.map(function (l) {
       return '<li>' + e(l.text) + ' <span class="sh-ids">' + l.commits.map(function (c) { return '<code>' + e(c) + '</code>'; }).join(' ') + '</span></li>';
-    }).join('') + '</ul><p class="sh-m">' + e(METH[r.summary.method] || '') + (r.summary.fallback_reason ? '. The AI version was rejected by the code check (' + e(r.summary.fallback_reason) + ').' : '') + '</p>';
+    }).join('') + '</ul><p class="sh-m">' + e(METH[r.summary.method] || '') + (r.summary.fallback_reason ? '. A summary draft was rejected by the code check (' + e(r.summary.fallback_reason) + ').' : '') + '</p>';
   }
   function commits(r) {
     if (!r || !r.commits.length) return '';

@@ -66,7 +66,7 @@ export async function handle(req, u, env, ctx) {
     if (!d) return new Response(JSON.stringify({ status: 'starting', note: 'the shipping log has not been built yet' }), { status: 200, headers: { ...CORS, 'content-type': 'application/json; charset=utf-8', 'cache-control': 'public, max-age=60' } });
     const f = figures(d);
     return new Response(JSON.stringify({ ...f, page: 'https://kolaboro.com/shipping/', data: 'https://kolaboro.com/data/shipping.json', badge: 'https://kolaboro.com/api/x/ship/badge.svg',
-      method: 'Ships are commits by people (or Claude working for one) on the live branch; UTC days. Streak recomputed at request time from the day list.' }, null, 1),
+      method: 'Ships are commits by people (or software working for one) on the live branch; UTC days. Streak recomputed at request time from the day list.' }, null, 1),
       { headers: { ...CORS, 'content-type': 'application/json; charset=utf-8', 'cache-control': 'public, max-age=300' } });
   }
   return json({ error: 'not found', module: 'ship', endpoints: ['/api/x/ship/badge.svg', '/api/x/ship/today'] }, 404);
