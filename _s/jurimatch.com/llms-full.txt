@@ -3053,6 +3053,20 @@ A: Ante la Policía Nacional, la Guardia Civil o el juzgado de guardia. Si se tr
 Q: ¿Son fiables las empresas que prometen recuperar criptomonedas?
 A: Hay que desconfiar mucho. Pedir pagos por adelantado y contactar sin que usted lo pida son señales típicas de una segunda estafa.
 
+### Falsos abogados y estafas de recuperación: cómo detectarlos
+URL: https://jurimatch.com/es/guias/falsos-abogados-y-estafas-de-recuperacion
+
+Quien ha sido víctima de una estafa, por ejemplo con criptomonedas o inversiones, suele recibir después mensajes de supuestos abogados o agencias que prometen recuperar el dinero. Muchos son una segunda estafa. Estas son las señales para reconocerlos.
+
+Q: ¿Cómo sé si un abogado es real?
+A: Pida su nombre, número de colegiado y colegio, y compruébelo en el censo de letrados del Consejo General de la Abogacía o en la web de su colegio.
+
+Q: Me ofrecen recuperar el dinero de una estafa si pago antes, ¿es fiable?
+A: Es una de las señales más claras de una estafa de recuperación. Nadie puede garantizar la recuperación y las autoridades no cobran por investigar.
+
+Q: Ya he pagado, ¿qué hago?
+A: Avise a su banco de inmediato, guarde las pruebas y denuncie ante la Policía Nacional o la Guardia Civil.
+
 ### Fianza de alquiler: cómo reclamar su devolución
 URL: https://jurimatch.com/es/guias/fianza-de-alquiler
 
@@ -4321,5 +4335,5 @@ How many no-win-no-fee firms JuriMatch lists by country and case type, from live
 ### Verification policy
 URL: https://jurimatch.com/verification-policy
 
-How JuriMatch lists and verifies lawyers and litigation funders: two tiers, what verification checks, re-verification, and how to claim or remove a listing.
+How JuriMatch lists and checks lawyers and litigation funders: three levels of checking, why some firms are hidden, re-verification, and how to claim or…
 

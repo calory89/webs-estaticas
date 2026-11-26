@@ -1,0 +1,1 @@
+import{d as t,u as s,r}from"./vendor-react-CtrgGfNe-r2.js";const o=()=>{const e=t(),a=s();return r.useEffect(()=>{e(`/auth${a.search}${a.hash}`,{replace:!0})},[e,a.search,a.hash]),null};export{o as default};
