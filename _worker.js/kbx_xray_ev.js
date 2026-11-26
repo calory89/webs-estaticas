@@ -715,7 +715,7 @@ async function evDeveloper(S, env, ctx) {
 }
 
 // ------------------------------------------------------------------------------------------------ (17) law and registers
-const LAWC = { ID: 'Indonesia', 'AE-DU': 'UAE', TH: 'Thailand', ES: 'Spain', PT: 'Portugal', 'US-FL': 'USA', 'AU-VIC': 'Australia', MX: 'Mexico' };
+const LAWC = { ID: 'Indonesia', 'AE-DU': 'UAE', TH: 'Thailand', ES: 'Spain', PT: 'Portugal', 'US-FL': 'USA', 'AU-VIC': 'Australia', MX: 'Mexico', JP: 'Japan', GB: 'United Kingdom' };
 const COVC = { Spain: 'ES', USA: 'US', UAE: 'AE', Indonesia: 'ID', 'United Kingdom': 'GB' };
 async function evLaw(S, env, ctx) {
   const c = card('law', 17), B = S.B, C = S.country;

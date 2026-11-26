@@ -1,6 +1,6 @@
 {
   "name": "Kolaboro law notes for off-plan buyers",
-  "version": "2026-11-03",
+  "version": "2026-11-26",
   "about": "Short, plain-language notes on rules that matter when you buy property off-plan abroad. Every note quotes the official text and links to it. We only include an article after reading it in the official source. This is general information, not legal advice.",
   "topics": {
     "parties": "Who is buying and selling",
@@ -22,7 +22,9 @@
     "PT": "Portugal",
     "US-FL": "Florida (USA)",
     "AU-VIC": "Victoria (Australia)",
-    "MX": "Mexico"
+    "MX": "Mexico",
+    "JP": "Japan",
+    "GB": "United Kingdom"
   },
   "sources": {
     "id-pp18-2021": {
@@ -121,6 +123,46 @@
       "language": "es",
       "read": "2026-11-26",
       "note": "Consolidated text, last amendment published in the Diario Oficial de la Federación on 12 December 2025."
+    },
+    "jp-takken-1952": {
+      "law": "Real Estate Brokerage Act (Takuchi Tatemono Torihikigyō Hō, Act No. 176 of 1952)",
+      "publisher": "e-Gov Laws Search (laws.e-gov.go.jp), Digital Agency, Government of Japan",
+      "url": "https://laws.e-gov.go.jp/law/327AC1000000176",
+      "language": "ja",
+      "read": "2026-11-26",
+      "note": "Current text as served by e-Gov. The rules apply when a licensed real estate business sells as the seller itself."
+    },
+    "jp-takken-order-1964": {
+      "law": "Order for Enforcement of the Real Estate Brokerage Act (Cabinet Order No. 383 of 1964)",
+      "publisher": "e-Gov Laws Search (laws.e-gov.go.jp), Digital Agency, Government of Japan",
+      "url": "https://laws.e-gov.go.jp/law/339CO0000000383",
+      "language": "ja",
+      "read": "2026-11-26",
+      "note": "Current text as served by e-Gov."
+    },
+    "gb-eaa-1979": {
+      "law": "Estate Agents Act 1979",
+      "publisher": "legislation.gov.uk, The National Archives",
+      "url": "https://www.legislation.gov.uk/ukpga/1979/38/section/13",
+      "language": "en",
+      "read": "2026-11-26",
+      "note": "Section 13 applies in England, Wales and Northern Ireland; in Scotland the money is held as agent."
+    },
+    "gb-dpa-1972": {
+      "law": "Defective Premises Act 1972",
+      "publisher": "legislation.gov.uk, The National Archives",
+      "url": "https://www.legislation.gov.uk/ukpga/1972/35/section/1",
+      "language": "en",
+      "read": "2026-11-26",
+      "note": "Applies in England and Wales."
+    },
+    "gb-la-1980": {
+      "law": "Limitation Act 1980",
+      "publisher": "legislation.gov.uk, The National Archives",
+      "url": "https://www.legislation.gov.uk/ukpga/1980/58/section/4B",
+      "language": "en",
+      "read": "2026-11-26",
+      "note": "Section 4B was inserted by section 135 of the Building Safety Act 2022. Applies in England and Wales."
     }
   },
   "rules": [
@@ -607,6 +649,106 @@
       "cite": "Article 73 QUÁTER",
       "quote": "Todo bien inmueble cuya transacción esté regulada por esta Ley, deberá ofrecerse al consumidor con la garantía correspondiente, la cual no podrá ser inferior a cinco años para cuestiones estructurales y tres años para impermeabilización; para los demás elementos la garantía mínima será de un año. Todos los plazos serán contados a partir de la entrega real del bien.",
       "translation": "Every property whose transaction is governed by this Law must be offered to the consumer with the corresponding warranty, which may not be less than five years for structural matters and three years for waterproofing; for the other elements the minimum warranty is one year. All periods are counted from the actual delivery of the property.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "jp-advance-guarantee",
+      "market": "JP",
+      "topics": [
+        "escrow",
+        "payment"
+      ],
+      "title": "In Japan, a developer selling before completion needs a bank guarantee or insurance for your advance payments",
+      "plain": "When a licensed real estate business sells a home it is still building, it may not take your deposit or other advance payments until a bank or other designated institution guarantees their refund, or a guarantee insurance policy covers them, and you are given the guarantee document or policy. Small amounts are exempt (see the next note). If the developer has not taken these measures, you may refuse to pay.",
+      "source": "jp-takken-1952",
+      "cite": "Article 41(1) and (4)",
+      "quote": "宅地建物取引業者は、宅地の造成又は建築に関する工事の完了前において行う当該工事に係る宅地又は建物の売買で自ら売主となるものに関しては、次の各号のいずれかに掲げる措置を講じた後でなければ、買主から手付金等（代金の全部又は一部として授受される金銭及び手付金その他の名義をもつて授受される金銭で代金に充当されるものであつて、契約の締結の日以後当該宅地又は建物の引渡し前に支払われるものをいう。以下同じ。）を受領してはならない。[...] ４ 宅地建物取引業者が、第一項に規定する宅地又は建物の売買を行う場合（同項ただし書に該当する場合を除く。）において、同項第一号又は第二号に掲げる措置を講じないときは、買主は、手付金等を支払わないことができる。",
+      "translation": "In a sale, with itself as the seller, of land or a building covered by works for land development or construction made before those works are completed, a real estate business may not receive advance payments (money paid as all or part of the price, and money paid as a deposit or under any other name that counts towards the price, paid on or after the contract date and before handover) from the buyer until it has taken one of the following measures. [...] 4. If a real estate business makes such a sale (other than in the cases of the proviso) without taking the measure in item 1 or item 2, the buyer may refuse to pay the advance payments.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "jp-advance-threshold",
+      "market": "JP",
+      "topics": [
+        "escrow",
+        "payment"
+      ],
+      "title": "The guarantee is required once advance payments pass 5% of the price or 10 million yen",
+      "plain": "The guarantee rule does not apply while the total advance payments are no more than 5% of the price and no more than an amount set by Cabinet Order, which the Order sets at 10 million yen, or once the title is registered in your name. Above either limit, ask for the guarantee document before paying.",
+      "source": "jp-takken-order-1964",
+      "cite": "Article 3-5, with Article 41(1) proviso of the Act",
+      "quote": "法第四十一条第一項ただし書及び第四十一条の二第一項ただし書の政令で定める額は、千万円とする。",
+      "translation": "The amount set by Cabinet Order under the proviso to Article 41(1) and the proviso to Article 41-2(1) of the Act is ten million yen.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "jp-deposit-20",
+      "market": "JP",
+      "topics": [
+        "payment",
+        "termination"
+      ],
+      "title": "The deposit may not exceed 20% of the price, and you can walk away by giving it up",
+      "plain": "A real estate business selling as the seller may not take a deposit (tetsukekin) of more than 20% of the price. Whatever the contract calls the deposit, you may cancel by giving it up, and the seller may cancel by paying you double, until the other side has started performing the contract. Terms worse for you than this are void.",
+      "source": "jp-takken-1952",
+      "cite": "Article 39(1) to (3)",
+      "quote": "宅地建物取引業者は、自ら売主となる宅地又は建物の売買契約の締結に際して、代金の額の十分の二を超える額の手付を受領することができない。 ２ 宅地建物取引業者が、自ら売主となる宅地又は建物の売買契約の締結に際して手付を受領したときは、その手付がいかなる性質のものであつても、買主はその手付を放棄して、当該宅地建物取引業者はその倍額を現実に提供して、契約の解除をすることができる。 ただし、その相手方が契約の履行に着手した後は、この限りでない。 ３ 前項の規定に反する特約で、買主に不利なものは、無効とする。",
+      "translation": "A real estate business may not, on concluding a sale contract for land or a building of which it is itself the seller, receive a deposit exceeding two tenths of the price. 2. When a real estate business receives a deposit on concluding such a contract, whatever the nature of the deposit, the buyer may cancel the contract by giving up the deposit, and the real estate business by actually tendering double its amount; this does not apply after the other party has started performing the contract. 3. A special agreement contrary to the preceding paragraph that is unfavourable to the buyer is void.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "jp-cooling-off",
+      "market": "JP",
+      "topics": [
+        "termination"
+      ],
+      "title": "Signed away from the seller's office? You can cancel in writing within 8 days",
+      "plain": "If you made the offer or signed the contract somewhere other than the seller's office (for example at a hotel event or at home), you may withdraw or cancel in writing, without paying damages or a penalty, and the seller must promptly return your deposit and other money. The right ends 8 days after you are told about it in writing, or once the home is handed over and fully paid.",
+      "source": "jp-takken-1952",
+      "cite": "Article 37-2(1) and (3)",
+      "quote": "宅地建物取引業者が自ら売主となる宅地又は建物の売買契約について、当該宅地建物取引業者の事務所その他国土交通省令・内閣府令で定める場所（以下この条において「事務所等」という。）以外の場所において、当該宅地又は建物の買受けの申込みをした者又は売買契約を締結した買主（事務所等において買受けの申込みをし、事務所等以外の場所において売買契約を締結した買主を除く。）は、次に掲げる場合を除き、書面により、当該買受けの申込みの撤回又は当該売買契約の解除（以下この条において「申込みの撤回等」という。）を行うことができる。 この場合において、宅地建物取引業者は、申込みの撤回等に伴う損害賠償又は違約金の支払を請求することができない。 一 [...] その告げられた日から起算して八日を経過したとき。 二 申込者等が、当該宅地又は建物の引渡しを受け、かつ、その代金の全部を支払つたとき。 [...] ３ 申込みの撤回等が行われた場合においては、宅地建物取引業者は、申込者等に対し、速やかに、買受けの申込み又は売買契約の締結に際し受領した手付金その他の金銭を返還しなければならない。",
+      "translation": "For a sale contract for land or a building of which a real estate business is itself the seller, a person who offered to buy, or a buyer who signed the contract, at a place other than the business's office or another place set by ministerial order (the \"office\"), other than a buyer who made the offer at the office and signed elsewhere, may withdraw the offer or cancel the contract in writing, except in the following cases. In that case the real estate business may not claim damages or a penalty for the withdrawal or cancellation. 1. [...] when eight days have passed from the day the person was told [in writing of this right and how to use it]. 2. When the person has received the land or building and paid the full price. [...] 3. After a withdrawal or cancellation, the real estate business must promptly return the deposit and any other money received for the offer or the contract.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "gb-agent-trust",
+      "market": "GB",
+      "topics": [
+        "escrow",
+        "payment"
+      ],
+      "title": "In the UK, a deposit paid to an estate agent is held on trust for you",
+      "plain": "Money an estate agent receives from you in England, Wales or Northern Ireland, including a deposit held as stakeholder until completion, is clients' money that the agent holds on trust, not the agent's own money. UK law has no general escrow rule for new-build deposits paid to a developer's solicitor, so ask in writing who holds your deposit and on what terms.",
+      "source": "gb-eaa-1979",
+      "cite": "Section 13(1)",
+      "quote": "It is hereby declared that clients’ money received by any person in the course of estate agency work in England, Wales or Northern Ireland [...] (a) is held by him on trust for the person who is entitled to call for it to be paid over to him or to be paid on his direction or to have it otherwise credited to him, or (b) if it is received by him as stakeholder, is held by him on trust for the person who may become so entitled on the occurrence of the event against which the money is held.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "gb-dpa-duty",
+      "market": "GB",
+      "topics": [
+        "completion",
+        "parties"
+      ],
+      "title": "Builders owe every buyer a legal duty that a new home is fit to live in",
+      "plain": "In England and Wales, everyone who takes on work to provide a new dwelling owes a duty to the person who ordered it and to every later owner that the work is done in a workmanlike or professional way, with proper materials, so that the home is fit for habitation when completed. For time limits, a claim counts from the date the dwelling was completed.",
+      "source": "gb-dpa-1972",
+      "cite": "Section 1(1) and (5)",
+      "quote": "A person taking on work for or in connection with the provision of a dwelling (whether the dwelling is provided by the erection or by the conversion or enlargement of a building) owes a duty [...] (a) if the dwelling is provided to the order of any person, to that person; and (b) without prejudice to paragraph (a) above, to every person who acquires an interest (whether legal or equitable) in the dwelling; to see that the work which he takes on is done in a workmanlike or, as the case may be, professional manner, with proper materials and so that as regards that work the dwelling will be fit for habitation when completed. [...] (5) Any cause of action in respect of a breach of the duty imposed by this section shall be deemed, for the purposes of the Limitation Act 1980, to have accrued at the time when the dwelling was completed [...]",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "gb-15-years",
+      "market": "GB",
+      "topics": [
+        "completion"
+      ],
+      "title": "You have 15 years from completion to sue over a home unfit to live in",
+      "plain": "A claim under that duty must be brought within 15 years of when the right of action arose, which is the date the dwelling was completed. For claims that arose before section 135 of the Building Safety Act 2022 came into force (28 June 2022, as recorded on legislation.gov.uk), the limit is 30 years. Keep your completion date and documents.",
+      "source": "gb-la-1980",
+      "cite": "Section 4B(1), (3), (4) and (5)",
+      "quote": "(1) Where by virtue of a relevant provision a person becomes entitled to bring an action against any other person, no action may be brought after the expiration of 15 years from the date on which the right of action accrued. [...] (3) In this section “ relevant provision ” means (a) section 1 or 2A of the Defective Premises Act 1972; (b) section 38 of the Building Act 1984. (4) Where by virtue of section 1 of the Defective Premises Act 1972 a person became entitled, before the commencement date, to bring an action against any other person, this section applies in relation to the action as if the reference in subsection (1) to 15 years were a reference to 30 years. (5) In subsection (4) “the commencement date” means the day on which section 135 of the Building Safety Act 2022 came into force.",
       "checked": "2026-11-26"
     }
   ]
