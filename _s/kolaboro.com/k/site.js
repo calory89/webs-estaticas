@@ -49,18 +49,35 @@
   if (nav) addEventListener('scroll', function () { nav.classList.toggle('scrolled', scrollY > 8); }, { passive: true });
   var burger = document.querySelector('.burger'), links = document.querySelector('.links');
   if (burger && links) {
-    burger.addEventListener('click', function () {
-      var open = links.classList.toggle('open');
+    // n40 d8: on phones the menu is a full-height sheet under the header: the page behind it does not scroll, Tab stays inside it
+    // (burger and menu), Escape closes it and gives focus back to the burger. The open state is synced by an observer, so the
+    // older handlers that only remove the "open" class (link taps, the search button) also restore the page.
+    var bsv = burger.querySelector('svg path'), bd0 = bsv && bsv.getAttribute('d'), sync = function () {
+      var open = links.classList.contains('open'), ph = innerWidth <= 900;
+      if (open && ph) { var hb = nav ? nav.getBoundingClientRect().bottom : 60; links.style.setProperty('--kmt', Math.max(0, Math.round(hb)) + 'px'); }
+      document.documentElement.classList.toggle('kmo', open && ph);
       burger.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
+      if (bsv) bsv.setAttribute('d', open ? 'M4 4l12 12M16 4 4 16' : bd0);
+    };
+    try { new MutationObserver(sync).observe(links, { attributes: true, attributeFilter: ['class'] }); } catch (e) {}
+    burger.addEventListener('click', function () { links.classList.toggle('open'); sync(); });
+    addEventListener('resize', function () { if (links.classList.contains('open') && innerWidth > 900) links.classList.remove('open'); });
     links.addEventListener('click', function (e) { if (e.target.closest('a')) { links.classList.remove('open'); burger.setAttribute('aria-expanded', 'false'); } });
-    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && links.classList.contains('open')) { links.classList.remove('open'); burger.setAttribute('aria-expanded', 'false'); burger.focus(); } });
+    document.addEventListener('keydown', function (e) {
+      if (!links.classList.contains('open')) return;
+      if (e.key === 'Escape') { links.classList.remove('open'); burger.setAttribute('aria-expanded', 'false'); burger.focus(); return; }
+      if (e.key !== 'Tab' || innerWidth > 900) return;
+      var F = [burger].concat([].slice.call(links.querySelectorAll('a[href],button,input,summary,[tabindex]:not([tabindex="-1"])')).filter(function (x) { return x.offsetParent !== null && x.tabIndex >= 0; }));
+      var i = F.indexOf(document.activeElement);
+      if (e.shiftKey && i <= 0) { e.preventDefault(); F[F.length - 1].focus(); } else if (!e.shiftKey && (i === F.length - 1 || i < 0)) { e.preventDefault(); F[0].focus(); }
+    });
     // a tap outside the open menu closes it
     document.addEventListener('click', function (e) { if (links.classList.contains('open') && !e.target.closest('.nav')) { links.classList.remove('open'); burger.setAttribute('aria-expanded', 'false'); } });
     // n26u (13 Nov 2026): the phone menu starts with search (projects, developers, places; opens the search with suggestions) and
     // "My projects" (the list saved in this browser, with its count). Wide screens keep the search button in the header.
     try {
       var ML = (document.documentElement.lang || 'en').slice(0, 2), MT = { en: ['Search projects, developers, places', 'My projects'], es: ['Buscar proyectos, promotoras, lugares', 'Mis proyectos'], de: ['Projekte, Bauträger, Orte suchen', 'Meine Projekte'], fr: ['Rechercher projets, promoteurs, lieux', 'Mes projets'], nl: ['Zoek projecten, ontwikkelaars, plaatsen', 'Mijn projecten'], ru: ['Поиск проектов, застройщиков, мест', 'Мои проекты'], zh: ['搜索项目、开发商、地点', '我的项目'], ar: ['ابحث عن مشاريع ومطوّرين وأماكن', 'مشاريعي'] }[ML] || null;
+      var HSF = links.querySelector('form[data-hs]');   // n40 d8: the sheet starts with the real search field, so no search button
       if (MT && !links.querySelector('.kmn')) {
         var mst = document.createElement('style');
         mst.textContent = '.kmn{display:none}@media (max-width:900px){.links .kmn{display:flex}.links .kmn-s{order:-2;align-items:center;gap:10px;width:100%;min-height:52px;margin:4px 0 6px;padding:0 14px;border:2px solid #17212B;border-radius:12px;background:#fff;color:#59626B;font:500 1rem Archivo,system-ui,sans-serif;text-align:start;cursor:pointer}.links .kmn-s svg{width:18px;height:18px;flex:none;color:#17212B}.links .kmn-m{order:-1;align-items:center;gap:10px}.links .kmn-m b{min-width:24px;padding:0 7px;border-radius:99px;background:#17212B;color:#fff;font-size:.78rem;line-height:24px;text-align:center}}';
@@ -72,7 +89,7 @@
         var my = document.createElement('a'); my.className = 'kmn kmn-m'; my.href = '/watchlist/'; my.textContent = MT[1];
         var nmy = 0; try { nmy = (JSON.parse(localStorage.getItem('kb_watch') || '[]') || []).length; } catch (e) {}
         if (nmy > 0) { var bb = document.createElement('b'); bb.textContent = nmy; my.appendChild(bb); }
-        links.insertBefore(my, links.firstChild); links.insertBefore(sb2, links.firstChild);
+        if (HSF) links.insertBefore(my, HSF.nextSibling); else { links.insertBefore(my, links.firstChild); links.insertBefore(sb2, links.firstChild); }
       }
     } catch (e) {}
   }
@@ -680,6 +697,19 @@
     btn.setAttribute('aria-haspopup', 'dialog'); btn.title = SRL[0] + ' (' + (mac ? '⌘K' : 'Ctrl+K') + ')'; btn.setAttribute('aria-expanded', 'false'); btn.setAttribute('aria-label', SRL[1] + ' (' + (mac ? 'Command' : 'Control') + ' K)');
     btn.innerHTML = '<svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="m13 13 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span class="kx-t">' + SRL[0] + '</span><kbd aria-hidden="true">' + (mac ? '⌘K' : 'Ctrl K') + '</kbd>';
     var nr = nin.querySelector('.nav-right'); if (nr) nr.insertBefore(btn, nr.firstChild); else nin.appendChild(btn);
+  }
+  // n40 d8: the header search field. Its suggestions (projects, developers, markets) come from /k/u27.js, loaded on first use;
+  // on the home page the hero box's own loader is used, so the script never runs twice. "/" focuses the field on wide screens.
+  var HS = document.querySelector('form[data-hs] input[name=q]');
+  if (HS) {
+    var u27 = function () {
+      if (document.querySelector('script[src*="/k/u27.js"]')) return;
+      var hu = document.getElementById('hero-url'); if (hu) { try { hu.dispatchEvent(new Event('pointerdown')); } catch (e) {} if (document.querySelector('script[src*="/k/u27.js"]')) return; }
+      var s27 = document.createElement('script'); s27.src = '/k/u27.js?v=hs1'; s27.defer = true; document.head.appendChild(s27);
+    };
+    HS.addEventListener('focus', u27, { once: true }); HS.addEventListener('pointerdown', u27, { once: true });
+    HS.form.addEventListener('submit', function (e) { if (!HS.value.trim()) { e.preventDefault(); HS.focus(); } else if (window.kbEvent) window.kbEvent('header_search', { q: HS.value.trim().slice(0, 80) }); });
+    document.addEventListener('keydown', function (e) { if (e.key !== '/' || e.metaKey || e.ctrlKey || e.altKey || innerWidth <= 900) return; var a = document.activeElement; if (a && (/^(INPUT|TEXTAREA|SELECT)$/.test(a.tagName) || a.isContentEditable)) return; e.preventDefault(); HS.focus(); });
   }
   function openP(q) { window.kbLoad('palette').then(function () { window.KBPalette.open(q); }).catch(function () {}); }
   window.kbOpenSearch = openP;

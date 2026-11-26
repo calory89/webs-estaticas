@@ -788,3 +788,54 @@ a.k-src:hover{color:var(--k-sea);border-bottom-color:currentColor}
 /* home rhythm: every section gets the same generous spacing and a hairline between plain sections */
 :root:has(link[href*="/k/site.css"]) main:has(>.hero>.hero-grid>.hsr-c)>:is(.how,.sec,.founder,.start,.kg27){padding-block:var(--k-sec)}
 :root:has(link[href*="/k/site.css"]) main:has(>.hero>.hero-grid>.hsr-c)>:is(.how,.sec:not(.alt),.kg27)+:is(.how,.sec:not(.alt),.kg27){border-top:1px solid var(--k-line)}
+/* n40 d8 (26 Nov 2026) global header: brand, a real search field (suggestions from u27.js), two links, theme, language, one action.
+   "How it works", "About" and "Live cases" stay in the phone menu and the footer. Phones: the menu is a full-height sheet. */
+:root:has(link[href*="/k/site.css"]) .nav .nsr{position:relative;display:flex;align-items:center;flex:0 1 400px;min-width:0;margin-inline-end:auto;order:-5}
+:root:has(link[href*="/k/site.css"]) .nav .nsr>svg{position:absolute;inset-inline-start:12px;width:16px;height:16px;color:var(--k-muted);pointer-events:none}
+:root:has(link[href*="/k/site.css"]) .nav .nsr input{width:100%;height:40px;margin:0;padding:0 12px 0 36px;padding-inline:36px 12px;border:1px solid var(--k-line-2);border-radius:var(--k-r-md);background:var(--k-sunken);color:var(--k-ink);font:inherit;font-size:var(--k-fs-sm);font-weight:450;-webkit-appearance:none;appearance:none;transition:border-color var(--k-t1),background-color var(--k-t1)}
+:root:has(link[href*="/k/site.css"]) .nav .nsr input::placeholder{color:var(--k-muted);opacity:1}
+:root:has(link[href*="/k/site.css"]) .nav .nsr input:hover{border-color:var(--k-field)}
+:root:has(link[href*="/k/site.css"]) .nav .nsr input:focus{outline:none;border-color:var(--k-sea);background:var(--k-surface);box-shadow:0 0 0 3px var(--k-sea-soft)}
+:root:has(link[href*="/k/site.css"]) .nav .nsr input::-webkit-search-cancel-button{cursor:pointer}
+:root:has(link[href*="/k/site.css"]) .nav .nsr .khs{top:calc(100% + 6px);min-width:min(420px,calc(100vw - 32px));background:var(--k-surface);color:var(--k-ink);border-color:var(--k-line);border-radius:var(--k-r-lg);box-shadow:var(--k-sh-3)}
+:root:has(link[href*="/k/site.css"]) .nav .nsr .khs :is(li[aria-selected=true] a,li a:hover){background:var(--k-brand-soft)}
+:root:has(link[href*="/k/site.css"]) .nav .nsr .khs small{color:var(--k-muted)}
+@media (min-width:901px){
+  :root:has(link[href*="/k/site.css"]) .nav .nav-in{gap:20px}
+  :root:has(link[href*="/k/site.css"]) .nav .nav-in>.links{flex:1 1 auto;min-width:0;margin-inline-start:12px;justify-content:flex-end;gap:2px}
+  :root:has(link[href*="/k/site.css"]) .nav .links>a:is([href$="#how"],[href$="/about/"],[href$="/about"],[href$="/cases/"],[href$="/cases"]):not(.btn),:root:has(link[href*="/k/site.css"]) .nav .links>.kmn,:root:has(link[href*="/k/site.css"]) .nav .nav-right>.kx-sb{display:none!important}
+  :root:has(link[href*="/k/site.css"]) .nav .links>a:not(.btn){white-space:nowrap}
+  :root:has(link[href*="/k/site.css"]) .nav .links .kx-th{margin-inline-start:6px}
+}
+@media (min-width:901px) and (max-width:1080px){:root:has(link[href*="/k/site.css"]) .nav .nsr{flex-basis:240px}:root:has(link[href*="/k/site.css"]) .nav .links>a[href$="/pricing/"]:not(.btn){display:none}}
+@media (max-width:900px){
+  :root:has(link[href*="/k/site.css"]) .nav .links{position:fixed;top:var(--kmt,60px);bottom:0;left:0;right:0;z-index:30;display:flex;flex-flow:row wrap;align-content:flex-start;gap:0 10px;max-height:none;margin:0;padding:16px var(--k-gut) calc(24px + env(safe-area-inset-bottom));background:var(--k-surface);border-top:1px solid var(--k-line);box-shadow:none;overflow-y:auto;overscroll-behavior:contain;visibility:hidden;opacity:0;transform:translateY(-8px);transition:opacity var(--k-t2) var(--k-ease),transform var(--k-t2) var(--k-ease),visibility 0s linear var(--k-t2)}
+  :root:has(link[href*="/k/site.css"]) .nav .links.open{visibility:visible;opacity:1;transform:none;transition:opacity var(--k-t2) var(--k-ease),transform var(--k-t2) var(--k-ease)}
+  :root:has(link[href*="/k/site.css"]) .nav .links>*{flex:1 1 100%}
+  :root:has(link[href*="/k/site.css"]) .nav .nsr{order:-5;margin:0 0 10px}
+  :root:has(link[href*="/k/site.css"]) .nav .nsr input{height:52px;font-size:1rem;padding-inline:42px 14px;border-radius:var(--k-r-lg);background:var(--k-surface)}
+  :root:has(link[href*="/k/site.css"]) .nav .nsr>svg{inset-inline-start:15px;width:18px;height:18px}
+  :root:has(link[href*="/k/site.css"]) .nav .nsr .khs{position:static;margin-top:6px;min-width:0;box-shadow:none;max-height:none}
+  :root:has(link[href*="/k/site.css"]) .nav .links>.kmn-s{display:none!important}
+  :root:has(link[href*="/k/site.css"]) .nav .links>.kmn-m{order:-4;display:flex;min-height:52px;margin:0;padding:0 4px;border-bottom:1px solid var(--k-line);font-family:var(--k-font);font-size:1rem;font-weight:600;color:var(--k-ink)}
+  :root:has(link[href*="/k/site.css"]) .nav .links>a:not(.btn):not(.kmn){display:flex;align-items:center;min-height:56px;padding:0 4px;border-bottom:1px solid var(--k-line);font-family:var(--k-display);font-size:1.3rem;font-weight:600;color:var(--k-ink);text-decoration:none}
+  :root:has(link[href*="/k/site.css"]) .nav .links>.btn{order:1;margin:20px 0 8px;min-height:52px;width:100%;justify-content:center;font-size:1rem}
+  :root:has(link[href*="/k/site.css"]) .nav .links>:is(.kx-th,.lsw){order:2;flex:1 1 calc(50% - 5px);min-width:0;margin-top:8px;border:1px solid var(--k-line-2)!important;border-radius:var(--k-r-md)!important}
+  :root:has(link[href*="/k/site.css"]) .nav .links>.kx-th{display:flex;align-items:center;justify-content:center;gap:8px;height:auto;min-height:48px;padding:0 12px;font-size:var(--k-fs-sm);font-weight:600;color:var(--k-ink)}
+  :root:has(link[href*="/k/site.css"]) .nav .links>.kx-th .kx-tht{display:inline}
+  :root:has(link[href*="/k/site.css"]) .nav .links>.lsw summary{justify-content:center;min-height:46px;padding:0 12px;font-size:var(--k-fs-sm)}
+  :root:has(link[href*="/k/site.css"]) .nav .links>.lsw summary::after{margin-inline-start:6px}
+  :root:has(link[href*="/k/site.css"]) .nav .links>.lsw[open]{flex-basis:100%}
+  :root:has(link[href*="/k/site.css"]) .nav .links>.lsw ul{margin:4px 8px 10px}
+  :root:has(link[href*="/k/site.css"]) .nav .links>.lsw a{background:var(--k-sunken);border-color:var(--k-line)}
+  html.kmo,html.kmo body{overflow:hidden}
+  html.kmo .nav{-webkit-backdrop-filter:none!important;backdrop-filter:none!important;background:var(--k-surface)}
+  html.kmo .mcta,html.kmo .totop{visibility:hidden}
+}
+@media (prefers-reduced-motion:reduce){:root:has(link[href*="/k/site.css"]) .nav .links{transition:none!important;transform:none!important}}
+/* footer: a quiet sunken block; the legal line sits under its own rule */
+:root:has(link[href*="/k/site.css"]) footer{background:var(--k-sunken);border-top:1px solid var(--k-line)}
+:root:has(link[href*="/k/site.css"]) footer .fgrid .fh{margin-bottom:14px}
+:root:has(link[href*="/k/site.css"]) footer ul a:hover{color:var(--k-ink);text-decoration:underline;text-underline-offset:3px}
+:root:has(link[href*="/k/site.css"]) footer .fine{margin-top:40px;padding-top:20px;border-top:1px solid var(--k-line)}
+:root:has(link[href*="/k/site.css"]) footer .news .qform{max-width:360px}

@@ -1,8 +1,9 @@
-/* GENERATED from /k/ds.css (v 618404f78c) for pages that load site.css. The page test :has(link[href*=site.css]) is replaced by
+/* GENERATED from /k/ds.css (v a34c992935) for pages that load site.css. The page test :has(link[href*=site.css]) is replaced by
    :not(a[data-ks]), always true with the same weight: :has() on the root made the browser restyle the whole page after every
    DOM change. Do not edit. To rebuild after ds.css changes: replace that test in a copy of ds.css, keep this comment with the
    new version, and set KB_DSS_V to the new KB_DS_V in _worker.js/index.js (while they differ the worker serves plain ds.css).
-   Blocks between app-only:start and app-only:end in ds.css are left out (pages that load app.css only). *///* Kolaboro design system "Survey ledger" (d12a, 7 Nov 2026). Loaded on every kolaboro.com HTML page right after
+   Blocks between app-only:start and app-only:end in ds.css are left out (pages that load app.css only). */
+/* Kolaboro design system "Survey ledger" (d12a, 7 Nov 2026). Loaded on every kolaboro.com HTML page right after
    site.css/app.css by the edge worker (kbHeaders in _worker.js/index.js). Docs: DESIGN.md at the repo root of the d12 work.
    Part 1 tokens. Part 2 legacy token remap + global shell (header, footer, type, buttons). Part 3 components (k-*). */
 
@@ -765,3 +766,54 @@ a.k-src:hover{color:var(--k-sea);border-bottom-color:currentColor}
 /* home rhythm: every section gets the same generous spacing and a hairline between plain sections */
 :root:not(a[data-ks]) main:has(>.hero>.hero-grid>.hsr-c)>:is(.how,.sec,.founder,.start,.kg27){padding-block:var(--k-sec)}
 :root:not(a[data-ks]) main:has(>.hero>.hero-grid>.hsr-c)>:is(.how,.sec:not(.alt),.kg27)+:is(.how,.sec:not(.alt),.kg27){border-top:1px solid var(--k-line)}
+/* n40 d8 (26 Nov 2026) global header: brand, a real search field (suggestions from u27.js), two links, theme, language, one action.
+   "How it works", "About" and "Live cases" stay in the phone menu and the footer. Phones: the menu is a full-height sheet. */
+:root:not(a[data-ks]) .nav .nsr{position:relative;display:flex;align-items:center;flex:0 1 400px;min-width:0;margin-inline-end:auto;order:-5}
+:root:not(a[data-ks]) .nav .nsr>svg{position:absolute;inset-inline-start:12px;width:16px;height:16px;color:var(--k-muted);pointer-events:none}
+:root:not(a[data-ks]) .nav .nsr input{width:100%;height:40px;margin:0;padding:0 12px 0 36px;padding-inline:36px 12px;border:1px solid var(--k-line-2);border-radius:var(--k-r-md);background:var(--k-sunken);color:var(--k-ink);font:inherit;font-size:var(--k-fs-sm);font-weight:450;-webkit-appearance:none;appearance:none;transition:border-color var(--k-t1),background-color var(--k-t1)}
+:root:not(a[data-ks]) .nav .nsr input::placeholder{color:var(--k-muted);opacity:1}
+:root:not(a[data-ks]) .nav .nsr input:hover{border-color:var(--k-field)}
+:root:not(a[data-ks]) .nav .nsr input:focus{outline:none;border-color:var(--k-sea);background:var(--k-surface);box-shadow:0 0 0 3px var(--k-sea-soft)}
+:root:not(a[data-ks]) .nav .nsr input::-webkit-search-cancel-button{cursor:pointer}
+:root:not(a[data-ks]) .nav .nsr .khs{top:calc(100% + 6px);min-width:min(420px,calc(100vw - 32px));background:var(--k-surface);color:var(--k-ink);border-color:var(--k-line);border-radius:var(--k-r-lg);box-shadow:var(--k-sh-3)}
+:root:not(a[data-ks]) .nav .nsr .khs :is(li[aria-selected=true] a,li a:hover){background:var(--k-brand-soft)}
+:root:not(a[data-ks]) .nav .nsr .khs small{color:var(--k-muted)}
+@media (min-width:901px){
+  :root:not(a[data-ks]) .nav .nav-in{gap:20px}
+  :root:not(a[data-ks]) .nav .nav-in>.links{flex:1 1 auto;min-width:0;margin-inline-start:12px;justify-content:flex-end;gap:2px}
+  :root:not(a[data-ks]) .nav .links>a:is([href$="#how"],[href$="/about/"],[href$="/about"],[href$="/cases/"],[href$="/cases"]):not(.btn),:root:not(a[data-ks]) .nav .links>.kmn,:root:not(a[data-ks]) .nav .nav-right>.kx-sb{display:none!important}
+  :root:not(a[data-ks]) .nav .links>a:not(.btn){white-space:nowrap}
+  :root:not(a[data-ks]) .nav .links .kx-th{margin-inline-start:6px}
+}
+@media (min-width:901px) and (max-width:1080px){:root:not(a[data-ks]) .nav .nsr{flex-basis:240px}:root:not(a[data-ks]) .nav .links>a[href$="/pricing/"]:not(.btn){display:none}}
+@media (max-width:900px){
+  :root:not(a[data-ks]) .nav .links{position:fixed;top:var(--kmt,60px);bottom:0;left:0;right:0;z-index:30;display:flex;flex-flow:row wrap;align-content:flex-start;gap:0 10px;max-height:none;margin:0;padding:16px var(--k-gut) calc(24px + env(safe-area-inset-bottom));background:var(--k-surface);border-top:1px solid var(--k-line);box-shadow:none;overflow-y:auto;overscroll-behavior:contain;visibility:hidden;opacity:0;transform:translateY(-8px);transition:opacity var(--k-t2) var(--k-ease),transform var(--k-t2) var(--k-ease),visibility 0s linear var(--k-t2)}
+  :root:not(a[data-ks]) .nav .links.open{visibility:visible;opacity:1;transform:none;transition:opacity var(--k-t2) var(--k-ease),transform var(--k-t2) var(--k-ease)}
+  :root:not(a[data-ks]) .nav .links>*{flex:1 1 100%}
+  :root:not(a[data-ks]) .nav .nsr{order:-5;margin:0 0 10px}
+  :root:not(a[data-ks]) .nav .nsr input{height:52px;font-size:1rem;padding-inline:42px 14px;border-radius:var(--k-r-lg);background:var(--k-surface)}
+  :root:not(a[data-ks]) .nav .nsr>svg{inset-inline-start:15px;width:18px;height:18px}
+  :root:not(a[data-ks]) .nav .nsr .khs{position:static;margin-top:6px;min-width:0;box-shadow:none;max-height:none}
+  :root:not(a[data-ks]) .nav .links>.kmn-s{display:none!important}
+  :root:not(a[data-ks]) .nav .links>.kmn-m{order:-4;display:flex;min-height:52px;margin:0;padding:0 4px;border-bottom:1px solid var(--k-line);font-family:var(--k-font);font-size:1rem;font-weight:600;color:var(--k-ink)}
+  :root:not(a[data-ks]) .nav .links>a:not(.btn):not(.kmn){display:flex;align-items:center;min-height:56px;padding:0 4px;border-bottom:1px solid var(--k-line);font-family:var(--k-display);font-size:1.3rem;font-weight:600;color:var(--k-ink);text-decoration:none}
+  :root:not(a[data-ks]) .nav .links>.btn{order:1;margin:20px 0 8px;min-height:52px;width:100%;justify-content:center;font-size:1rem}
+  :root:not(a[data-ks]) .nav .links>:is(.kx-th,.lsw){order:2;flex:1 1 calc(50% - 5px);min-width:0;margin-top:8px;border:1px solid var(--k-line-2)!important;border-radius:var(--k-r-md)!important}
+  :root:not(a[data-ks]) .nav .links>.kx-th{display:flex;align-items:center;justify-content:center;gap:8px;height:auto;min-height:48px;padding:0 12px;font-size:var(--k-fs-sm);font-weight:600;color:var(--k-ink)}
+  :root:not(a[data-ks]) .nav .links>.kx-th .kx-tht{display:inline}
+  :root:not(a[data-ks]) .nav .links>.lsw summary{justify-content:center;min-height:46px;padding:0 12px;font-size:var(--k-fs-sm)}
+  :root:not(a[data-ks]) .nav .links>.lsw summary::after{margin-inline-start:6px}
+  :root:not(a[data-ks]) .nav .links>.lsw[open]{flex-basis:100%}
+  :root:not(a[data-ks]) .nav .links>.lsw ul{margin:4px 8px 10px}
+  :root:not(a[data-ks]) .nav .links>.lsw a{background:var(--k-sunken);border-color:var(--k-line)}
+  html.kmo,html.kmo body{overflow:hidden}
+  html.kmo .nav{-webkit-backdrop-filter:none!important;backdrop-filter:none!important;background:var(--k-surface)}
+  html.kmo .mcta,html.kmo .totop{visibility:hidden}
+}
+@media (prefers-reduced-motion:reduce){:root:not(a[data-ks]) .nav .links{transition:none!important;transform:none!important}}
+/* footer: a quiet sunken block; the legal line sits under its own rule */
+:root:not(a[data-ks]) footer{background:var(--k-sunken);border-top:1px solid var(--k-line)}
+:root:not(a[data-ks]) footer .fgrid .fh{margin-bottom:14px}
+:root:not(a[data-ks]) footer ul a:hover{color:var(--k-ink);text-decoration:underline;text-underline-offset:3px}
+:root:not(a[data-ks]) footer .fine{margin-top:40px;padding-top:20px;border-top:1px solid var(--k-line)}
+:root:not(a[data-ks]) footer .news .qform{max-width:360px}
