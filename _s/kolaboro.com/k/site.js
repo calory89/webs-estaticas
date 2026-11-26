@@ -11,6 +11,14 @@
 })();
 (function () {
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // n40 k10: with reduced motion, every scripted scroll on the site jumps instead of gliding (CSS scroll-behavior does not reach behavior:'smooth' in scripts)
+  if (reduce) (function () {
+    function fix(o) { if (o && typeof o === 'object' && o.behavior === 'smooth') { o = Object.assign({}, o); o.behavior = 'auto'; } return o; }
+    [[Element.prototype, 'scrollIntoView'], [Element.prototype, 'scrollTo'], [Element.prototype, 'scrollBy'], [window, 'scrollTo'], [window, 'scrollBy'], [window, 'scroll']].forEach(function (p) {
+      var f = p[0][p[1]]; if (typeof f !== 'function') return;
+      p[0][p[1]] = function (a) { var args = Array.prototype.slice.call(arguments); args[0] = fix(a); return f.apply(this, args); };
+    });
+  })();
   function ev(name, params) {
     try { if (window.gtag) gtag('event', name, params || {}); } catch (e) {}
     try { if (window.clarity) clarity('event', name); } catch (e) {}
