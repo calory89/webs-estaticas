@@ -197,6 +197,7 @@ addEventListener('load', function(){ setTimeout(function(){   // n27u: read the 
   function e(t) { return String(t == null ? '' : t).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   function when(iso) { var d = new Date(iso); return isNaN(d) ? '' : d.toISOString().slice(0, 16).replace('T', ' ') + ' UTC'; }
   function kb(b) { return b == null ? '' : b === 0 ? '0' : (b / 1024 < 10 ? (b / 1024).toFixed(1) : Math.round(b / 1024)) + ' KB'; }
+  function wh(u, w) { try { var b = atob(u.slice(u.indexOf(',') + 1, u.indexOf(',') + 49)), g = function (i, n) { var v = 0; for (var k = n - 1; k >= 0; k--) v = v * 256 + b.charCodeAt(i + k); return v; }, c = b.slice(12, 16), W, H; if (c === 'VP8X') { W = g(24, 3) + 1; H = g(27, 3) + 1; } else if (c === 'VP8 ') { W = g(26, 2) & 16383; H = g(28, 2) & 16383; } else if (c === 'VP8L') { var x = g(21, 4); W = (x & 16383) + 1; H = ((x >>> 14) & 16383) + 1; } if (W > 0 && H > 0) return ' width="' + W + '" height="' + H + '"'; } catch (err) {} return +w >= 1000 ? ' width="1092" height="450"' : ' width="612" height="1231"'; }   // n40 k4 (R04-03): intrinsic size from the WebP header, no layout shift
   function fail(msg) { root.innerHTML = '<p class="qa-empty">' + e(msg) + '</p>'; }
   function tiles(a) { return '<div class="eg-k">' + a.map(function (x) { return '<div><b' + (x[2] ? ' class="' + x[2] + '"' : '') + '>' + e(x[0]) + '</b><span>' + e(x[1]) + '</span></div>'; }).join('') + '</div>'; }
   function scroller(label, html) { return '<div class="qa-scroll" tabindex="0" role="region" aria-label="' + e(label) + '">' + html + '</div>'; }
@@ -220,7 +221,7 @@ addEventListener('load', function(){ setTimeout(function(){   // n27u: read the 
     if (!ch.length) h += '<p>No page changed in the latest run.</p>';
     ch.forEach(function (r) {
       h += '<figure class="qa-fig"><figcaption><b>' + e(r.page) + '</b> at ' + e(r.width) + ' px: ' + e(r.diff_pct) + '% of pixels differ. Left: previous run. Middle: latest. Right: differences in red.</figcaption>' +
-        (r.image_data && /^data:image\/webp;base64,[A-Za-z0-9+\/=]+$/.test(r.image_data) ? '<img src="' + r.image_data + '" alt="Previous, latest and difference screenshots of ' + e(r.page) + ' at ' + e(r.width) + ' px" loading="lazy" decoding="async">' : '<p><small>No image kept for this one (at most 6 images per run, largest changes first).</small></p>') + '</figure>';
+        (r.image_data && /^data:image\/webp;base64,[A-Za-z0-9+\/=]+$/.test(r.image_data) ? '<img src="' + r.image_data + '"' + wh(r.image_data, r.width) + ' alt="Previous, latest and difference screenshots of ' + e(r.page) + ' at ' + e(r.width) + ' px" loading="lazy" decoding="async">' : '<p><small>No image kept for this one (at most 6 images per run, largest changes first).</small></p>') + '</figure>';
     });
     root.innerHTML = h;
   }).catch(function () { fail('The first visual test run has not been published yet. It appears here after the daily quality job runs.'); });
