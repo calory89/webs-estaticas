@@ -1,29 +1,33 @@
-# 21-nov: AI search and answer crawlers are named explicitly so they are clearly welcome on public pages
-# (same rules as everyone else). One group, several user-agent lines (RFC 9309).
-User-agent: *
 User-agent: Googlebot
-User-agent: Bingbot
-User-agent: GPTBot
-User-agent: OAI-SearchBot
-User-agent: ChatGPT-User
-User-agent: ClaudeBot
-User-agent: Claude-SearchBot
-User-agent: PerplexityBot
-User-agent: Google-Extended
-User-agent: Applebot-Extended
 Allow: /
 Disallow: /admin
 Disallow: /dashboard
 Disallow: /case/
-Disallow: /lawyer/case/
 Disallow: /auth
 Disallow: /reset-password
-Disallow: /payment-success
-Disallow: /my-data
-Disallow: /embed/
-Disallow: /saved
-Disallow: /*?q=
-Disallow: /*&q=
-Disallow: /__jm/
 
-Sitemap: https://jurimatch.com/sitemap.xml
+User-agent: Bingbot
+Allow: /
+Disallow: /admin
+Disallow: /dashboard
+Disallow: /case/
+Disallow: /auth
+Disallow: /reset-password
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /dashboard
+Disallow: /case/
+Disallow: /auth
+Disallow: /reset-password
+
+Sitemap: https://ldmevkznlgptcinfweru.supabase.co/functions/v1/sitemap
+
+Sitemap: https://jurimatch.com/sitemap-seo.xml

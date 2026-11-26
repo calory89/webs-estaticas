@@ -1,8 +1,0 @@
-/* /satellite/night/ (block U); tables reuse /hazards/hz.css */
-.nl-t{min-width:880px}
-.hz-t tbody th small{display:block;font-weight:400;color:var(--muted);font-size:.78rem;white-space:normal}
-.nl-sp{color:var(--hivis-ink,#B03A00);display:block}
-.st-flag{background:var(--t-warn-bg,#FDE7DD)}
-.st-f .st-sort input[type=checkbox]{width:20px;height:20px;accent-color:var(--ink)}
-#stt{min-width:640px}
-.st-n b{overflow-wrap:anywhere}
