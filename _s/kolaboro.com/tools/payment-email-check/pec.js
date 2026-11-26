@@ -236,6 +236,7 @@
   var BADGE = { warn: ['k-badge--warn', 'b_warn'], ok: ['k-badge--ok', 'b_ok'], info: ['k-badge--info', 'b_info'], nf: ['k-badge--plain', 'b_nf'] };
   function item(lv, title, body) { return '<li class="pec-f pec-' + lv + '"><span class="k-badge ' + BADGE[lv][0] + '">' + esc(t(BADGE[lv][1])) + '</span><div><b>' + title + '</b>' + (body ? '<p>' + body + '</p>' : '') + '</div></li>'; }
   function devA(x) { return x ? '<a href="' + esc(x.url) + '">' + esc(x.dv || x.pn || x.d) + '</a>' : ''; }
+  function cnx(x) { if (LG === 'en') return x.country; try { var n = new Intl.DisplayNames([LOC], { type: 'region' }).of(x.cc); return n && n !== x.cc ? n : x.country; } catch (e) { return x.country; } }   // n40 L12: country name in the page language
   function age(days) { return days < 62 ? t('age_d', { n: days }) : days < 730 ? t('age_m', { n: Math.round(days / 30.4) }) : t('age_y', { n: Math.floor(days / 365.25) }); }
   function fdate(s) { try { return new Intl.DateTimeFormat(LOC, { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' }).format(new Date(s)); } catch (e) { return String(s).slice(0, 10); } }
 
@@ -311,7 +312,7 @@
       else if (W.hits.pay) add('info', esc(t('wd_pay')), W.hits.pay.slice(0, 2).map(function (s) { return '<q>' + esc(s) + '</q>'; }).join(' ') + '<br>' + esc(t('wd_none')));
       else add('nf', esc(t('wd_none')), '');
       var IB = ibansIn(body);
-      if (IB.length) add('info', esc(t('ib_t')), t('ib_p', { n: IB.length, list: IB.map(function (x) { return '<code>' + esc(x.mask) + '</code> ' + esc(x.country) + ' (' + esc(t(x.ok ? 'ib_ok' : 'ib_bad')) + ')'; }).join(', ') }) + ' <a href="/tools/account-check/' + (LG !== 'en' ? '?lang=' + LG : '') + '">/tools/account-check/</a>');
+      if (IB.length) add('info', esc(t('ib_t')), t('ib_p', { n: IB.length, list: IB.map(function (x) { return '<code>' + esc(x.mask) + '</code> ' + esc(cnx(x)) + ' (' + esc(t(x.ok ? 'ib_ok' : 'ib_bad')) + ')'; }).join(', ') }) + ' <a href="/tools/account-check/' + (LG !== 'en' ? '?lang=' + LG : '') + '">/tools/account-check/</a>');
       var hp = H ? hops(H) : [];
       function draw(dnsItem) {
         var all = F.slice(); if (dnsItem) all.splice(Math.min(all.length, 3), 0, dnsItem);
