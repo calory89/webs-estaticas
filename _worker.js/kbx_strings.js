@@ -159,15 +159,16 @@ for (const m of 'kbx_404 kbx_a kbx_acct kbx_around kbx_b kbx_bots kbx_bulk kbx_b
 // n40 k19 end
 const done = new Set();
 let pend = null;
-export const stat = { loaded: 0, files: Object.keys(FILES).length, ms: 0, errors: 0, at: null };
+export const stat = { loaded: 0, files: Object.keys(FILES).length, ms: 0, errors: 0, at: null, fb: 0 };
 async function one(env, name) {
   // r3u (batch 37): one more try per file; a failed read left the tables empty for that request, and pages then threw (seen as rare 500/503)
   let j = null, err = null;
   for (let i = 0; i < 2 && !j; i++) { try { const r = await env.ASSETS.fetch(new Request('https://kolaboro.com/_s/kolaboro.com/data/i18n/' + name + '.json')); if (!r.ok) throw new Error(name + ' ' + r.status); j = await r.json(); } catch (e) { err = e; } }
   // r4u (batch 37): still about 1 request in 20 threw on 'live_wait' (kbx_named_i18n empty) after a deploy; last try: the public copy through the edge cache
-  if (!j) { try { const r = await fetch('https://kolaboro.com/data/i18n/' + name + '.json', { cf: { cacheTtl: 600 } }); if (r.ok) j = await r.json(); } catch (e) { err = e; } }
+  let pub = false; if (!j) { try { const r = await fetch('https://kolaboro.com/data/i18n/' + name + '.json', { cf: { cacheTtl: 600 } }); if (r.ok) { j = await r.json(); pub = true; } } catch (e) { err = e; } }
   if (!j) throw err || new Error(name);
   for (const [k, obj] of Object.entries(FILES[name])) { if (j[k] && typeof j[k] === 'object') Object.assign(obj, j[k]); else throw new Error(name + '.' + k + ' missing'); }
+  if (pub) { stat.fb = Date.now(); return; }   // n40 d10: maybe the previous deployment's copy: read again next time
   done.add(name);
 }
 export function ready(env) {

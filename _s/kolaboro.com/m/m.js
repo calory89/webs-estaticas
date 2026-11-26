@@ -176,8 +176,9 @@
     var r = R.rows.filter(function(x){ return x.market === market; })[0], place = market === country ? market : market + ', ' + country, pl = C.length === 1 ? '' : 's';
     var sib = {}; ALL.forEach(function(c){ if (c.country === country && c.market !== market) sib[c.market] = (sib[c.market] || 0) + 1; });
     var sibs = Object.keys(sib).sort();
-    $('mk-crumb').innerHTML = ' / ' + esc(market);
-    $('mk-root').innerHTML = '<p class="eyebrow">Market file · ' + esc(country) + '</p><h1 id="mk-h1">Off-plan in ' + esc(market) + '</h1>' +
+    var ssr = $('mk-root').hasAttribute('data-ssr');   // n40 d10: the server already wrote this hero (kolaboro.js mkHero, same markup); rewriting it would paint it twice
+    if (!ssr) $('mk-crumb').innerHTML = ' / ' + esc(market);
+    if (!ssr) $('mk-root').innerHTML = '<p class="eyebrow">Market file · ' + esc(country) + '</p><h1 id="mk-h1">Off-plan in ' + esc(market) + '</h1>' +
       '<p class="lead">' + fmt(C.length) + ' project' + (C.length === 1 ? '' : 's') + ' tracked in ' + esc(place) + '. What developers publish, what an official or independent source confirms, and what is contradicted. Data updated ' + esc(K.fmtDate ? K.fmtDate(d.updated) : d.updated) + '.</p>' +
       '<div class="mk-tags"><span class="mk-tag">' + esc(country) + '</span><span class="mk-tag"><b>' + fmt(C.length) + '</b> project' + (C.length === 1 ? '' : 's') + ' tracked</span>' + stageTags(C) + '</div>' + tiBlock(r, K.MIN || 3, R.rows.length);
     var L = listSec(C, market, false);
@@ -241,6 +242,7 @@
     if (qm && co[qm]) return renderCountry(d, co[qm], R);
     renderIndex(d, p.m || p.c);
   }).catch(function(){
+    var mr = $('mk-root'); if (mr && mr.hasAttribute('data-ssr')) { $('mk-body').innerHTML = '<section class="mk-sec"><div class="wrap"><p class="sub">The full project list could not load right now. Try again in a minute, or open the <a href="/database">database</a>.</p></div></section>'; return; }
     $('mk-root').innerHTML = '<p class="eyebrow">Market file</p><h1 id="mk-h1">Off-plan market file</h1><p class="lead">The data could not load right now. Try again in a minute, or open the <a href="/database">database</a>.</p>';
   });
 })();

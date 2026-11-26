@@ -77,10 +77,6 @@ function pageParts(html) {
   h = h.replace(/<script\b[^>]*>([\s\S]*?)<\/script>/gi, (m, c) => { if (/type=["']?application\/ld\+json/i.test(m)) hidden.push(c); return ' '; });
   h = h.replace(/<meta\b[^>]*\bcontent=["']([^"']{20,})["'][^>]*>/gi, (m, c) => { hidden.push(c); return ' '; });
   h = h.replace(/<input\b[^>]*type=["']?hidden[^>]*>/gi, m => { const v = m.match(/value=["']([^"']*)/i); if (v) hidden.push(v[1]); return ' '; });
-  // elements a visitor cannot see: hidden attribute, aria-hidden, or a hiding inline style; capture to the first matching close tag
-  // elements a visitor cannot see: hidden attribute, aria-hidden, or a hiding inline style. Each hidden opening tag is matched to its own
-  // closing tag by counting nesting, so a hidden element inside a visible one (or holding nested tags of the same kind) is removed whole.
-  // React 18 streaming SSR sends Suspense content in <div hidden id="S:n"> and swaps it in at once: that is visible page content.
   const isHid = attrs => { if (/\bid=["']?S:\d+["'\s>]/i.test(attrs + ' ')) return false; const st = (attrs.match(/style=["']([^"']*)/i) || [])[1] || ''; return /\shidden(\s|=|$)/i.test(attrs) || /aria-hidden=["']?true/i.test(attrs) || HIDDEN_STYLE.test(st) || (/color\s*:\s*(#fff(fff)?|white|rgba?\(\s*255\s*,\s*255\s*,\s*255)\b/i.test(st) && /background(-color)?\s*:\s*(#fff(fff)?|white)\b/i.test(st)); };
   const OPEN = /<(div|span|p|section|article|aside|li|ul|ol|a|font|small|label|h[1-6]|td|em|strong|b|i)\b([^>]*)>/gi;
   for (let guard = 0; guard < 400; guard++) {
@@ -90,7 +86,7 @@ function pageParts(html) {
     const tag = hit[1].toLowerCase(), tre = new RegExp('<(/?)' + tag + '\\b[^>]*>', 'gi'); tre.lastIndex = hit.index + hit[0].length;
     let depth = 1, t, end = -1, innerEnd = -1;
     while ((t = tre.exec(h))) { if (t[1]) depth--; else if (!/\/>$/.test(t[0])) depth++; if (!depth) { innerEnd = t.index; end = t.index + t[0].length; break; } }
-    if (end < 0) { h = h.slice(0, hit.index) + ' ' + h.slice(hit.index + hit[0].length); continue; }   // never closed: drop the tag only, never the rest of the page
+    if (end < 0) { h = h.slice(0, hit.index) + ' ' + h.slice(hit.index + hit[0].length); continue; }
     hidden.push(textOf(h.slice(hit.index + hit[0].length, innerEnd)));
     h = h.slice(0, hit.index) + ' ' + h.slice(end);
   }
@@ -191,7 +187,6 @@ async function deskReview(env, urlStr, html, opts) {
   const text = rd.text.slice(0, MAX_TEXT);
   step(Object.assign({ step: 'strip', ms: now() - t, hidden_blocks: parts.hidden.length, hidden_chars: parts.hidden.reduce((a, x) => a + x.length, 0), visible_chars: parts.visible.length, read_chars: text.length }, rd.embedded_chars ? { embedded_chars: rd.embedded_chars } : {}));
   if (text.length < 200) {
-    // almost nothing to read here (a page built in the browser, a splash page): look for the page where the site sells before giving up
     if (top) { const ex = await explore(urlStr, html, 0, step); const r2 = ex && ex.best ? await followReview(env, urlStr, ex, step, lang) : null; if (r2) return r2; return { error: 'empty', read_chars: text.length, pages_found: ex ? ex.found : [] }; }
     return { error: 'empty', read_chars: text.length };
   }
@@ -205,7 +200,7 @@ async function deskReview(env, urlStr, html, opts) {
     claude(env, ask, DESK_SYSTEM).then(o => { const fb = claude.lastFallback; step(Object.assign({ step: 'model_a', ms: now() - tm, model: claude.lastModel || MODELS[0], ok: true }, fb ? { fallback_from: fb } : {})); return o; }, e => { step({ step: 'model_a', ms: now() - tm, model: MODELS[0], ok: false }); return { __err: e }; }),
     claude(env, ask, DESK_SYSTEM, 'claude-sonnet-5-5').then(o => { step({ step: 'model_b', ms: now() - tm, model: 'claude-sonnet-5-5', ok: true }); return o; }, () => { step({ step: 'model_b', ms: now() - tm, model: 'claude-sonnet-5-5', ok: false }); return null; })]);
   if (r1 && r1.__err && !raw2) throw r1.__err;
-  const single = !!(r1 && r1.__err);   // the primary failed: the second reader's answer is used alone, without a consensus
+  const single = !!(r1 && r1.__err);
   const raw = single ? raw2 : r1;
   const out = cleanReport(raw), second = single ? null : cleanReport(raw2);
   if (!out) throw new Error('bad json');
@@ -237,26 +232,21 @@ async function deskReview(env, urlStr, html, opts) {
     }
   }
   delete out.ai_instructions_found; delete out.ai_instructions_quote;
-  // Where does this site sell? A home page, a group or brand site (a "creative city", a holding) or a developer home page without offer
-  // facts usually sells on a sub-page (/invest, /villas, /residences, /properti ...). Read up to three same-site candidates, pick the one
-  // with the strongest property-offer signals and review that page instead (one level only, at most one extra pair of model calls).
   const kindDisputed = out.consensus && out.consensus.disagreements.some(x => x.field === 'page_kind');
   let depth = 9; try { depth = new URL(urlStr).pathname.split('/').filter(Boolean).length; } catch (e) {}
   const noOffer = !out.price_from && !out.payment_plan && depth <= 1 && (out.page_kind === 'developer_site' || (out.page_kind === 'project' && !out.project));
   if (top && (notProp || kindDisputed || noOffer || text.length < 1500)) {
     const homeOffer = offerScore(text);
-    // a page with no offer facts follows any candidate with a clear offer; a thin page that already states the offer needs a stronger one
     const ex = await explore(urlStr, html, notProp || kindDisputed ? 0 : noOffer ? 2 : homeOffer, step);
     if (ex) {
       out.pages_found = ex.found;
       if (ex.best) {
         const r2 = await followReview(env, urlStr, ex, step, lang);
-        if (r2 && (notProp || kindDisputed || offerFacts(r2.report) >= offerFacts(out))) return r2;   // a tie goes to the page where the site sells
+        if (r2 && (notProp || kindDisputed || offerFacts(r2.report) >= offerFacts(out))) return r2;
         if (r2) step({ step: 'follow_kept', url: ex.best.url, reason: 'the page you pasted states more of the offer', facts_pasted: offerFacts(out), facts_followed: offerFacts(r2.report) });
       }
     }
   }
-  // Too little readable text (a site built in JavaScript, a splash page) is not evidence that a site has nothing to do with property.
   out.read_chars = text.length;
   if (notProp && text.length < 1500) out.thin_text = true;
   if (lang !== 'en') out.lang = lang;
@@ -566,7 +556,6 @@ export async function api(req, u, env, ctx) {
   if (u.pathname === '/api/kb/paypal-webhook' && req.method === 'POST') return ppWebhook(req, env, ctx);
   if (u.pathname === '/api/kb/ask' && req.method === 'POST') return logged('ask', () => ask(req, env, ctx), ctx);
   if (u.pathname.startsWith('/api/v1')) return apiV1(req, u, env, ctx);
-  // n34s (21 Nov 2026): eval-run and witness need no key (the daily jobs call them), so each location takes at most a few calls an hour
   if (u.pathname === '/api/kb/eval-run' && req.method === 'POST') return (await hourCap('eval', 4)) ? json({ error: 'rate', note: 'at most 4 calls an hour' }, 429) : evalRun(req, env, ctx);
   if (u.pathname === '/api/kb/probe' && req.method === 'POST') return probeReport(req, env, ctx);
   if (u.pathname === '/api/kb/witness' && req.method === 'POST') return (await hourCap('witness', 6)) ? json({ error: 'rate', note: 'at most 6 calls an hour' }, 429) : witness(req, env, ctx);
@@ -1329,6 +1318,16 @@ const cs = d.cases || [], mk = [...new Set(cs.map(c => c.market))];
 const urls = [].concat(mk.map(m => '<url><loc>https://kolaboro.com/m/' + slugM(m) + '/</loc><lastmod>' + d.updated + '</lastmod></url>'));
 return new Response(TB.kolaboro__s.k19 + urls.join('') + '</urlset>', { headers: { 'content-type': 'application/xml; charset=utf-8', 'cache-control': 'public, max-age=3600' } });
 }
+function mkHero(cs, L, m, up) {
+const T = TB.kolaboro__t.d10h; if (!T || !T.h) return '';
+const M = {}; for (const c of cs) { if (!c || !c.market) continue; const x = M[c.market] = M[c.market] || { m: c.market, n: 0, d: 0, v: 0, f: 0 }, mx = c.max || 6; x.n++; x.d += Math.min(1, (c.score || 0) / mx); x.v += Math.min(1, (c.vscore || 0) / mx); if (!(c.flags || []).length) x.f++; }
+const R = Object.values(M).filter(x => x.n >= 3).map(x => { const D = x.d / x.n, V = x.v / x.n, F = x.f / x.n; return { market: x.m, n: x.n, D, V, F, ix: Math.floor(1000 * (0.6 * D + 0.3 * V + 0.1 * F) + 0.5 + 1e-9) / 10 }; });
+R.sort((a, b) => b.ix - a.ix || b.n - a.n || (a.market < b.market ? -1 : 1)); R.forEach((r, i) => { r.rk = i && R[i - 1].ix === r.ix ? R[i - 1].rk : i + 1; });
+const r = R.find(x => x.market === m), co = L[0].country, n = L.length, f = x => x.toLocaleString('en'), pc = x => Math.round(x * 100) + '%', p = /^(\d{4})-(\d{2})-(\d{2})/.exec(up || ''), st = {}, F = (t, o) => t.replace(/\{(\w+)\}/g, (q, k) => o[k] != null ? o[k] : q);
+L.forEach(c => { st[c.stage] = (st[c.stage] || 0) + 1; }); const oth = n - T.st.reduce((a, x) => a + (st[x[0]] || 0), 0);
+const tg = T.st.filter(x => st[x[0]]).map(x => F(T.tg, { n: f(st[x[0]]), t: x[1] })).join('') + (oth > 0 ? F(T.tg, { n: oth, t: T.ns }) : '');
+return F(T.h, { co: hesc(co), m: hesc(m), n: f(n), s: n === 1 ? '' : 's', pl: hesc(m === co ? m : m + ', ' + co), dt: hesc(p ? (+p[3]) + ' ' + T.mo[+p[2] - 1] + ' ' + p[1] : String(up || '')), tg, ti: r ? F(T.ti, { ix: r.ix.toFixed(1), rk: r.rk, tot: R.length, d: pc(r.D), v: pc(r.V), f: pc(r.F) }) : T.t0 });
+}
 export async function ssr(base, u, kind, env) {
 let d; try { d = await openData(); } catch (e) { return base; }
 let SL = {}, SN = {}, RV = () => false, OTP = null; if (kind !== 'p') try { const NMm = await import('./kbx_named.js'), ix = await NMm.data(env); OTP = ix.ot; for (const [id, x] of ix.byId) { SL[id] = x.s; SN[id] = x; } RV = id => !!SN[id] && NMm.reviewed(ix.caseBy.get(id)); } catch (e) { SL = {}; SN = {}; }
@@ -1336,7 +1335,7 @@ const pHref = id => SL[id] ? '/projects/' + SL[id] + '/' : '/p/' + encodeURIComp
 const pLink = (id, more) => { const x = SN[id], h = '<a href="' + pHref(id) + '">'; if (!x || !x.n) return h + hesc(id) + '</a>'; if (!more) return h + hesc(x.n) + '</a>'; const f = x.fx || {}, ho = f.handover_promised && /\d{4}/.test(String(f.handover_promised)) ? String(f.handover_promised) : '', w = [x.ar && String(x.ar).length < 60 ? x.ar : '', x.dv].filter(Boolean).join(', ');
 return h + hesc(x.n) + '</a>' + (w || ho ? ' <small>(' + hesc(w) + (ho ? (w ? '; ' : '') + 'handover on record ' + hesc(ho) : '') + ')</small>' : ''); };
 const cs = d.cases || [], key = decodeURIComponent(u.pathname.split('/')[2] || '');
-let title, desc, canon, body, ld, mcrumb = '', mfeed = '';
+let title, desc, canon, body, ld, mcrumb = '', mfeed = '', mhero = '';
 if (kind === 'p') {
 const c = cs.find(x => x.id.toLowerCase() === key.toLowerCase());
 if (!c) return new Response(base.body, { status: 404, headers: base.headers });
@@ -1377,6 +1376,7 @@ body = '<h2>Off-plan projects in ' + hesc(m) + (same31 ? '' : ', ' + hesc(L[0].c
 const cs8 = String(L[0].country === 'Puerto Rico (USA)' ? 'Puerto Rico' : L[0].country === 'St Lucia' ? 'Saint Lucia' : L[0].country).normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
 body = TB.kolaboro__s.k21 + cs8 + '/">' + hesc(L[0].country) + '</a> / ' + hesc(m) + '</p>' + body + '<p><a href="/countries/' + cs8 + '/">All projects in ' + hesc(L[0].country) + TB.kolaboro__t.k50 + encodeURIComponent(m) + TB.kolaboro__t.k51 + hesc(m) + '</a> · <a href="/countries/' + cs8 + TB.kolaboro__t.k52 + hesc(L[0].country) + TB.kolaboro__s.k22 + (String(m).toLowerCase() !== 'sumba' && L.filter(x => RV(x.id)).length >= 8 ? ' · <a href="/stories/' + new Date().toISOString().slice(0, 7) + '/' + slugM(m) + '/">' + hesc(m) + ': this month\'s story</a>' : '') + placesForMarket(m).map(P => ' · <a href="/rankings/transparency/' + P.s + '/">Transparency ranking: ' + hesc(P.n) + '</a>').join('') + '</p>';
 ld = { '@context': 'https://schema.org', '@graph': [{ '@type': 'CollectionPage', name: title.replace(' | Kolaboro', ''), description: desc, url: canon, dateModified: d.updated, about: { '@id': canon + '#place' } }, { '@type': 'Place', '@id': canon + '#place', name: m, containedInPlace: { '@type': 'Country', name: L[0].country, url: 'https://kolaboro.com/countries/' + cs8 + '/' } }, { '@type': 'BreadcrumbList', itemListElement: [['Kolaboro', '/'], ['Countries', '/countries/'], [L[0].country, '/countries/' + cs8 + '/'], [m, '/m/' + slugM(m) + '/']].map((x, i) => ({ '@type': 'ListItem', position: i + 1, name: x[0], item: 'https://kolaboro.com' + x[1] })) }] };
+mhero = mkHero(cs, L, m, d.updated);
 mcrumb = TB.kolaboro__t.k53 + cs8 + '/">' + hesc(L[0].country) + '</a><span id="mk-crumb"> / ' + hesc(m) + '</span>';
 mfeed = TB.kolaboro__t.k54 + hesc('Kolaboro: ' + m) + '" href="/feed.xml?market=' + encodeURIComponent(m) + TB.kolaboro__t.k55 + hesc('Kolaboro: record changes in ' + m) + '" href="/data/changes/feed.atom?m=' + encodeURIComponent(m) + '">';
 if (title.length > 60) title = title.replace(/ \| Kolaboro$/, '');
@@ -1396,6 +1396,7 @@ const res = new HTMLRewriter()
 .on('script#mk-ld', { element(e) { if (mcrumb) e.remove(); } })
 .on(TB.kolaboro__t.k60, { element(e) { if (mcrumb) e.setAttribute('content', TB.kolaboro__t.k61); } })
 .on('p.crumb', { element(e) { if (mcrumb) e.setInnerContent(mcrumb, { html: true }); } })
+.on('#mk-root', { element(e) { if (mhero) { e.setInnerContent(mhero, { html: true }); e.setAttribute('data-ssr', '1'); } } })
 .on('main', { element(e) { e.prepend(TB.kolaboro__t.k62 + body + '</div></section>', { html: true }); } })
 .on('body', { element(e) { if (kind !== 'p') { e.append(TB.kolaboro__t.k63 + slugM(key) + '/slugs.json">{}</script>', { html: true });  } } })
 .transform(base);

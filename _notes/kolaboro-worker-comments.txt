@@ -4390,3 +4390,20 @@ Comments removed from the kolaboro.com worker modules on 26 Nov 2026 (n40 k19, w
 @line 1586: private: the page carries a per-response CSP nonce, no shared cache may reuse it
 @line 1589: Shared helpers for the feature modules in kbx_*.js (routed by kbx.js).
 @line 1590: for kbx_b.js (live desk review, red-team playground): logApi writes the same usage row as the non-streaming endpoint
+== kolaboro.js (n40 d10, 26 Nov 2026)
+
+@line 80: elements a visitor cannot see: hidden attribute, aria-hidden, or a hiding inline style; capture to the first matching close tag
+@line 81: elements a visitor cannot see: hidden attribute, aria-hidden, or a hiding inline style. Each hidden opening tag is matched to its own
+@line 82: closing tag by counting nesting, so a hidden element inside a visible one (or holding nested tags of the same kind) is removed whole.
+@line 83: React 18 streaming SSR sends Suspense content in <div hidden id="S:n"> and swaps it in at once: that is visible page content.
+@line 93: never closed: drop the tag only, never the rest of the page
+@line 194: almost nothing to read here (a page built in the browser, a splash page): look for the page where the site sells before giving up
+@line 208: the primary failed: the second reader's answer is used alone, without a consensus
+@line 240: Where does this site sell? A home page, a group or brand site (a "creative city", a holding) or a developer home page without offer
+@line 241: facts usually sells on a sub-page (/invest, /villas, /residences, /properti ...). Read up to three same-site candidates, pick the one
+@line 242: with the strongest property-offer signals and review that page instead (one level only, at most one extra pair of model calls).
+@line 248: a page with no offer facts follows any candidate with a clear offer; a thin page that already states the offer needs a stronger one
+@line 254: a tie goes to the page where the site sells
+@line 259: Too little readable text (a site built in JavaScript, a splash page) is not evidence that a site has nothing to do with property.
+@line 569: n34s (21 Nov 2026): eval-run and witness need no key (the daily jobs call them), so each location takes at most a few calls an hour
+@line 1332: n40 d10: renderMarket() hero of /m/m.js and compute() of ti-core.js, server side; templates in k19s.json kolaboro.d10h
