@@ -1,457 +1,7 @@
 import { C as getStylesheetHref, M as createLRUCache, N as invariant, P as decodePath, b as createInlineCssPlaceholderAsset, k as rootRouteId, v as GLOBAL_TSR, x as createInlineCssStyleAsset, y as TSR_SCRIPT_BARRIER_ID } from "./react-router+[...].mjs";
 import { Buffer } from "node:buffer";
-//#region node_modules/seroval/dist/index.js
-var SYM_ASYNC_ITERATOR = Symbol.asyncIterator;
-var SYM_HAS_INSTANCE = Symbol.hasInstance;
-var SYM_IS_CONCAT_SPREADABLE = Symbol.isConcatSpreadable;
-var SYM_ITERATOR = Symbol.iterator;
-var SYM_MATCH = Symbol.match;
-var SYM_MATCH_ALL = Symbol.matchAll;
-var SYM_REPLACE = Symbol.replace;
-var SYM_SEARCH = Symbol.search;
-var SYM_SPECIES = Symbol.species;
-var SYM_SPLIT = Symbol.split;
-var SYM_TO_PRIMITIVE = Symbol.toPrimitive;
-var SYM_TO_STRING_TAG = Symbol.toStringTag;
-var SYM_UNSCOPABLES = Symbol.unscopables;
-var TEMPORAL_TYPE_NAME = {
-	[0]: "Instant",
-	[1]: "Duration",
-	[2]: "PlainDate",
-	[3]: "PlainDateTime",
-	[4]: "PlainMonthDay",
-	[5]: "PlainTime",
-	[6]: "PlainYearMonth",
-	[7]: "ZonedDateTime"
-};
-var SYMBOL_REF = {
-	[0]: SYM_ASYNC_ITERATOR,
-	[1]: SYM_HAS_INSTANCE,
-	[2]: SYM_IS_CONCAT_SPREADABLE,
-	[3]: SYM_ITERATOR,
-	[4]: SYM_MATCH,
-	[5]: SYM_MATCH_ALL,
-	[6]: SYM_REPLACE,
-	[7]: SYM_SEARCH,
-	[8]: SYM_SPECIES,
-	[9]: SYM_SPLIT,
-	[10]: SYM_TO_PRIMITIVE,
-	[11]: SYM_TO_STRING_TAG,
-	[12]: SYM_UNSCOPABLES
-};
-function createSymbolStringTable() {
-	const result = {};
-	for (let i = 0; i <= 12; i++) result[i] = SYMBOL_REF[i].description;
-	return result;
-}
-var SYMBOL_STRING = /* @__PURE__ */ createSymbolStringTable();
-function createInverseSymbolTable() {
-	const result = {};
-	for (let i = 0; i <= 12; i++) result[SYMBOL_REF[i]] = i;
-	return result;
-}
-var INV_SYMBOL_REF = /* @__PURE__ */ createInverseSymbolTable();
-var CONSTANT_STRING = {
-	[2]: "!0",
-	[3]: "!1",
-	[1]: "void 0",
-	[0]: "null",
-	[4]: "-0",
-	[5]: "1/0",
-	[6]: "-1/0",
-	[7]: "0/0"
-};
-var CONSTANT_VAL = {
-	[2]: true,
-	[3]: false,
-	[1]: void 0,
-	[0]: null,
-	[4]: -0,
-	[5]: Infinity,
-	[6]: -Infinity,
-	[7]: NaN
-};
-var ERROR_CONSTRUCTOR = {
-	[0]: Error,
-	[1]: EvalError,
-	[2]: RangeError,
-	[3]: ReferenceError,
-	[4]: SyntaxError,
-	[5]: TypeError,
-	[6]: URIError
-};
-function createErrorConstructorStringTable() {
-	const result = {};
-	for (let i = 0; i <= 6; i++) result[i] = ERROR_CONSTRUCTOR[i].name;
-	return result;
-}
-var ERROR_CONSTRUCTOR_STRING = /* @__PURE__ */ createErrorConstructorStringTable();
-function createSerovalNode(t, i, s, c, m, p, e, a, f, b, o, l) {
-	if (c === void 0 && m === void 0 && p === void 0 && e === void 0 && a === void 0 && f === void 0 && b === void 0 && o === void 0 && l === void 0) return {
-		t,
-		i,
-		s
-	};
-	return {
-		t,
-		i,
-		s,
-		c,
-		m,
-		p,
-		e,
-		a,
-		f,
-		b,
-		o,
-		l
-	};
-}
-function createConstantNode(value) {
-	return createSerovalNode(2, void 0, value);
-}
-var TRUE_NODE = /* @__PURE__ */ createConstantNode(2);
-var FALSE_NODE = /* @__PURE__ */ createConstantNode(3);
-var UNDEFINED_NODE = /* @__PURE__ */ createConstantNode(1);
-var NULL_NODE = /* @__PURE__ */ createConstantNode(0);
-var NEG_ZERO_NODE = /* @__PURE__ */ createConstantNode(4);
-var INFINITY_NODE = /* @__PURE__ */ createConstantNode(5);
-var NEG_INFINITY_NODE = /* @__PURE__ */ createConstantNode(6);
-var NAN_NODE = /* @__PURE__ */ createConstantNode(7);
-var MIN_JSON_STRINGIFY_LENGTH = 64;
-var NEEDS_ESCAPE = /["\\\n\r\b\t\f<\u2028\u2029]/;
-var JSON_ESCAPE_DIFFERENCES = /[\x00-\x07\x0b\x0e-\x1f\ud800-\udfff]/;
-var LESS_THAN = /</g;
-var LINE_SEPARATOR = /\u2028/g;
-var PARAGRAPH_SEPARATOR = /\u2029/g;
-function escapeCharCode(code) {
-	switch (code) {
-		case 34: return "\\\"";
-		case 92: return "\\\\";
-		case 10: return "\\n";
-		case 13: return "\\r";
-		case 8: return "\\b";
-		case 9: return "\\t";
-		case 12: return "\\f";
-		case 60: return "\\x3C";
-		case 8232: return "\\u2028";
-		case 8233: return "\\u2029";
-		default: return;
-	}
-}
-function serializeString(input) {
-	const str = "" + input;
-	if (!NEEDS_ESCAPE.test(str)) return str;
-	if (str.length >= MIN_JSON_STRINGIFY_LENGTH && !JSON_ESCAPE_DIFFERENCES.test(str)) {
-		let result = JSON.stringify(str).slice(1, -1);
-		if (result.includes("<")) result = result.replace(LESS_THAN, "\\x3C");
-		if (result.includes("\u2028")) result = result.replace(LINE_SEPARATOR, "\\u2028");
-		if (result.includes("\u2029")) result = result.replace(PARAGRAPH_SEPARATOR, "\\u2029");
-		return result;
-	}
-	let result = "";
-	let lastPos = 0;
-	let replacement;
-	for (let i = 0, len = str.length; i < len; i++) {
-		replacement = escapeCharCode(str.charCodeAt(i));
-		if (replacement) {
-			result += str.slice(lastPos, i) + replacement;
-			lastPos = i + 1;
-		}
-	}
-	return result + str.slice(lastPos);
-}
-var JSON_COMPATIBLE = /^(?:[^"\\\x00-\x1f]|\\["\\nrbtf])*$/;
-var ESCAPE_SEQUENCE = /(\\\\|\\"|\\n|\\r|\\b|\\t|\\f|\\u2028|\\u2029|\\x3C)/g;
-function deserializeString(str) {
-	if (typeof str !== "string") return str.replace(ESCAPE_SEQUENCE, deserializeString);
-	let index = str.indexOf("\\");
-	if (index === -1) return str;
-	if (JSON_COMPATIBLE.test(str)) return JSON.parse("\"" + str + "\"");
-	let result = "";
-	let lastPos = 0;
-	const last = str.length - 1;
-	while (index !== -1 && index < last) {
-		let replacement;
-		let length = 2;
-		switch (str.charCodeAt(index + 1)) {
-			case 92:
-				replacement = "\\";
-				break;
-			case 34:
-				replacement = "\"";
-				break;
-			case 110:
-				replacement = "\n";
-				break;
-			case 114:
-				replacement = "\r";
-				break;
-			case 98:
-				replacement = "\b";
-				break;
-			case 116:
-				replacement = "	";
-				break;
-			case 102:
-				replacement = "\f";
-				break;
-			case 120:
-				if (str.startsWith("3C", index + 2)) {
-					replacement = "<";
-					length = 4;
-				}
-				break;
-			case 117: if (str.startsWith("2028", index + 2)) {
-				replacement = "\u2028";
-				length = 6;
-			} else if (str.startsWith("2029", index + 2)) {
-				replacement = "\u2029";
-				length = 6;
-			}
-		}
-		if (replacement) {
-			result += str.slice(lastPos, index) + replacement;
-			lastPos = index + length;
-			index = str.indexOf("\\", lastPos);
-		} else index = str.indexOf("\\", index + 1);
-	}
-	return result + str.slice(lastPos);
-}
-var STEP_ERROR_CODES = {
-	parsing: 1,
-	serialization: 2,
-	deserialization: 3
-};
-function getErrorMessageProd(type) {
-	return `Seroval Error (step: ${STEP_ERROR_CODES[type]})`;
-}
-var SerovalError = class extends Error {
-	constructor(type, cause) {
-		super(getErrorMessageProd(type));
-		this.cause = cause;
-	}
-};
-var SerovalParserError = class extends SerovalError {
-	constructor(cause) {
-		super("parsing", cause);
-	}
-};
-var SerovalSerializationError = class extends SerovalError {
-	constructor(cause) {
-		super("serialization", cause);
-	}
-};
-var SerovalDeserializationError = class extends SerovalError {
-	constructor(cause) {
-		super("deserialization", cause);
-	}
-};
-function getSpecificErrorMessage(code) {
-	return `Seroval Error (specific: ${code})`;
-}
-var SerovalUnsupportedTypeError = class extends Error {
-	constructor(value) {
-		super(getSpecificErrorMessage(1));
-		this.value = value;
-	}
-};
-var SerovalUnsupportedNodeError = class extends Error {
-	constructor(node) {
-		super(getSpecificErrorMessage(2));
-	}
-};
-var SerovalMissingPluginError = class extends Error {
-	constructor(tag) {
-		super(getSpecificErrorMessage(3));
-	}
-};
-var SerovalMissingInstanceError = class extends Error {
-	constructor(tag) {
-		super(getSpecificErrorMessage(4));
-	}
-};
-var SerovalMissingReferenceForIdError = class extends Error {
-	constructor(id) {
-		super(getSpecificErrorMessage(6));
-	}
-};
-var SerovalUnknownTypedArrayError = class extends Error {
-	constructor(name) {
-		super(getSpecificErrorMessage(7));
-	}
-};
-var SerovalMalformedNodeError = class extends Error {
-	constructor(node) {
-		super(getSpecificErrorMessage(8));
-	}
-};
-var SerovalConflictedNodeIdError = class extends Error {
-	constructor(node) {
-		super(getSpecificErrorMessage(9));
-	}
-};
-var SerovalDepthLimitError = class extends Error {
-	constructor(limit) {
-		super(getSpecificErrorMessage(10));
-	}
-};
-function getErrorConstructor(error) {
-	for (let i = 1; i <= 6; i++) if (error instanceof ERROR_CONSTRUCTOR[i]) return i;
-	return 0;
-}
-function getErrorOptions(error, features) {
-	const options = Object.create(null);
-	const construct = ERROR_CONSTRUCTOR_STRING[getErrorConstructor(error)];
-	if (error.name !== construct) options.name = error.name;
-	else if (error.constructor.name !== construct) options.name = error.constructor.name;
-	for (const name of Object.getOwnPropertyNames(error)) if (name !== "name" && name !== "message" && (name !== "stack" || features & 4)) options[name] = error[name];
-	return options;
-}
-function getObjectFlag(obj) {
-	if (Object.isExtensible(obj)) return 0;
-	if (Object.isFrozen(obj)) return 3;
-	if (Object.isSealed(obj)) return 2;
-	return 1;
-}
-function getTypedArrayConstructor(name) {
-	switch (name) {
-		case "Int8Array": return Int8Array;
-		case "Int16Array": return Int16Array;
-		case "Int32Array": return Int32Array;
-		case "Uint8Array": return Uint8Array;
-		case "Uint16Array": return Uint16Array;
-		case "Uint32Array": return Uint32Array;
-		case "Uint8ClampedArray": return Uint8ClampedArray;
-		case "Float32Array": return Float32Array;
-		case "Float64Array": return Float64Array;
-		case "BigInt64Array": return BigInt64Array;
-		case "BigUint64Array": return BigUint64Array;
-		default: throw new SerovalUnknownTypedArrayError(name);
-	}
-}
-var typedArrayNameGetter;
-function getTypedArrayName(value) {
-	if (!typedArrayNameGetter) typedArrayNameGetter = Object.getOwnPropertyDescriptor(Object.getPrototypeOf(Int8Array.prototype), Symbol.toStringTag).get;
-	return typedArrayNameGetter.call(value);
-}
-var typedArrayGetters;
-var dataViewGetters;
-function getAccessor(proto, key) {
-	return Object.getOwnPropertyDescriptor(proto, key).get;
-}
-function getViewGetters(proto, lengthKey) {
-	return {
-		buffer: getAccessor(proto, "buffer"),
-		byteOffset: getAccessor(proto, "byteOffset"),
-		byteLength: getAccessor(proto, "byteLength"),
-		length: getAccessor(proto, lengthKey)
-	};
-}
-function readArrayBufferView(value, isDataView) {
-	let getters;
-	if (isDataView) getters = dataViewGetters ?? (dataViewGetters = getViewGetters(DataView.prototype, "byteLength"));
-	else getters = typedArrayGetters ?? (typedArrayGetters = getViewGetters(Object.getPrototypeOf(Int8Array.prototype), "length"));
-	return {
-		buffer: getters.buffer.call(value),
-		byteOffset: getters.byteOffset.call(value),
-		byteLength: getters.byteLength.call(value),
-		length: getters.length.call(value)
-	};
-}
-function createNumberNode(value) {
-	switch (value) {
-		case Number.POSITIVE_INFINITY: return INFINITY_NODE;
-		case Number.NEGATIVE_INFINITY: return NEG_INFINITY_NODE;
-	}
-	if (value !== value) return NAN_NODE;
-	if (Object.is(value, -0)) return NEG_ZERO_NODE;
-	return createSerovalNode(0, void 0, value);
-}
-function createStringNode(value) {
-	return createSerovalNode(1, void 0, serializeString(value));
-}
-function createBigIntNode(current) {
-	return createSerovalNode(3, void 0, "" + current);
-}
-function createIndexedValueNode(id) {
-	return createSerovalNode(4, id);
-}
-var getDateTime = Date.prototype.getTime;
-var getDateISOString = Date.prototype.toISOString;
-function createDateNode(id, current) {
-	const timestamp = getDateTime.call(current);
-	return createSerovalNode(5, id, timestamp === timestamp ? getDateISOString.call(current) : "");
-}
-function createTemporalNode(id, type, temporalClass, current) {
-	return createSerovalNode(36, id, temporalClass.prototype.toString.call(current), type);
-}
-var getRegExpSource = Object.getOwnPropertyDescriptor(RegExp.prototype, "source").get;
-var getRegExpFlags = Object.getOwnPropertyDescriptor(RegExp.prototype, "flags").get;
-function createRegExpNode(id, current) {
-	return createSerovalNode(6, id, void 0, serializeString(getRegExpSource.call(current)), getRegExpFlags.call(current));
-}
-function createWKSymbolNode(id, current) {
-	return createSerovalNode(17, id, INV_SYMBOL_REF[current]);
-}
-function createReferenceNode(id, referenceId) {
-	return createSerovalNode(18, id, serializeString(referenceId));
-}
-function createPluginNode(id, tag, value) {
-	return createSerovalNode(25, id, value, serializeString(tag));
-}
-function createArrayNode(id, current, parsedItems) {
-	return createSerovalNode(9, id, void 0, void 0, void 0, void 0, void 0, parsedItems, void 0, void 0, getObjectFlag(current));
-}
-function createBoxedNode(id, boxed) {
-	return createSerovalNode(21, id, void 0, void 0, void 0, void 0, void 0, void 0, boxed);
-}
-var MAX_TYPED_ARRAY_LENGTH = 1e6;
-/**
-* Rejects a sparse array with more holes than the typed array limit. Each hole
-* still costs a node and output, however few elements the array holds.
-*/
-function assertArrayHoles(current) {
-	const len = current.length;
-	if (len > MAX_TYPED_ARRAY_LENGTH && len - Object.keys(current).length > MAX_TYPED_ARRAY_LENGTH) throw new SerovalUnsupportedTypeError(current);
-}
-function createViewNode(type, id, current, view, buffer) {
-	const isDataView = type === 20;
-	const size = view.length;
-	if (size > MAX_TYPED_ARRAY_LENGTH) throw new SerovalUnsupportedTypeError(current);
-	return createSerovalNode(type, id, void 0, isDataView ? void 0 : getTypedArrayName(current), void 0, void 0, void 0, void 0, buffer, view.byteOffset, void 0, size);
-}
-function createErrorNode(type, id, current, options) {
-	return createSerovalNode(type, id, getErrorConstructor(current), void 0, serializeString(current.message), options);
-}
-function createSetNode(id, items) {
-	return createSerovalNode(7, id, void 0, void 0, void 0, void 0, void 0, items);
-}
-function createIteratorFactoryInstanceNode(type, factory, items) {
-	return createSerovalNode(type, void 0, void 0, void 0, void 0, void 0, void 0, [factory, items]);
-}
-function createStreamConstructorNode(id, factory, sequence, live) {
-	return createSerovalNode(31, id, void 0, void 0, void 0, void 0, void 0, sequence, factory, void 0, void 0, live);
-}
-function createStreamEventNode(type, id, parsed) {
-	return createSerovalNode(type, id, void 0, void 0, void 0, void 0, void 0, void 0, parsed);
-}
-function createSequenceNode(id, sequence, throwAt, doneAt) {
-	return createSerovalNode(35, id, throwAt, void 0, void 0, void 0, void 0, sequence, void 0, void 0, void 0, doneAt);
-}
-var BRAND = /* @__PURE__ */ Symbol("LiveStream");
-function isLiveStream(value) {
-	return value != null && value[BRAND] === true;
-}
-/**
-* An opaque reference allows hiding values from the serializer.
-*/
-var OpaqueReference = class {
-	constructor(value, replacement) {
-		this.value = value;
-		this.replacement = replacement;
-	}
-};
+//#endregion
+//#region node_modules/seroval/dist/shared-DJIVyqa9.js
 var PROMISE_CONSTRUCTOR = () => {
 	const resolver = {
 		p: 0,
@@ -656,6 +206,294 @@ var ARRAY_BUFFER_CONSTRUCTOR = (b64) => {
 	return arr.buffer;
 };
 var SERIALIZED_ARRAY_BUFFER_CONSTRUCTOR = /* @__PURE__ */ ARRAY_BUFFER_CONSTRUCTOR.toString();
+var SYM_ASYNC_ITERATOR = Symbol.asyncIterator;
+var SYM_HAS_INSTANCE = Symbol.hasInstance;
+var SYM_IS_CONCAT_SPREADABLE = Symbol.isConcatSpreadable;
+var SYM_ITERATOR = Symbol.iterator;
+var SYM_MATCH = Symbol.match;
+var SYM_MATCH_ALL = Symbol.matchAll;
+var SYM_REPLACE = Symbol.replace;
+var SYM_SEARCH = Symbol.search;
+var SYM_SPECIES = Symbol.species;
+var SYM_SPLIT = Symbol.split;
+var SYM_TO_PRIMITIVE = Symbol.toPrimitive;
+var SYM_TO_STRING_TAG = Symbol.toStringTag;
+var SYM_UNSCOPABLES = Symbol.unscopables;
+var TEMPORAL_TYPE_NAME = {
+	[0]: "Instant",
+	[1]: "Duration",
+	[2]: "PlainDate",
+	[3]: "PlainDateTime",
+	[4]: "PlainMonthDay",
+	[5]: "PlainTime",
+	[6]: "PlainYearMonth",
+	[7]: "ZonedDateTime"
+};
+var SYMBOL_REF = {
+	[0]: SYM_ASYNC_ITERATOR,
+	[1]: SYM_HAS_INSTANCE,
+	[2]: SYM_IS_CONCAT_SPREADABLE,
+	[3]: SYM_ITERATOR,
+	[4]: SYM_MATCH,
+	[5]: SYM_MATCH_ALL,
+	[6]: SYM_REPLACE,
+	[7]: SYM_SEARCH,
+	[8]: SYM_SPECIES,
+	[9]: SYM_SPLIT,
+	[10]: SYM_TO_PRIMITIVE,
+	[11]: SYM_TO_STRING_TAG,
+	[12]: SYM_UNSCOPABLES
+};
+function createSymbolStringTable() {
+	const result = {};
+	for (let i = 0; i <= 12; i++) result[i] = SYMBOL_REF[i].description;
+	return result;
+}
+var SYMBOL_STRING = /* @__PURE__ */ createSymbolStringTable();
+function createInverseSymbolTable() {
+	const result = {};
+	for (let i = 0; i <= 12; i++) result[SYMBOL_REF[i]] = i;
+	return result;
+}
+var INV_SYMBOL_REF = /* @__PURE__ */ createInverseSymbolTable();
+var CONSTANT_STRING = {
+	[2]: "!0",
+	[3]: "!1",
+	[1]: "void 0",
+	[0]: "null",
+	[4]: "-0",
+	[5]: "1/0",
+	[6]: "-1/0",
+	[7]: "0/0"
+};
+var CONSTANT_VAL = {
+	[2]: true,
+	[3]: false,
+	[1]: void 0,
+	[0]: null,
+	[4]: -0,
+	[5]: Infinity,
+	[6]: -Infinity,
+	[7]: NaN
+};
+var ERROR_CONSTRUCTOR = {
+	[0]: Error,
+	[1]: EvalError,
+	[2]: RangeError,
+	[3]: ReferenceError,
+	[4]: SyntaxError,
+	[5]: TypeError,
+	[6]: URIError
+};
+function createErrorConstructorStringTable() {
+	const result = {};
+	for (let i = 0; i <= 6; i++) result[i] = ERROR_CONSTRUCTOR[i].name;
+	return result;
+}
+var ERROR_CONSTRUCTOR_STRING = /* @__PURE__ */ createErrorConstructorStringTable();
+var MIN_JSON_STRINGIFY_LENGTH = 64;
+var NEEDS_ESCAPE = /["\\\n\r\b\t\f<\u2028\u2029]/;
+var JSON_ESCAPE_DIFFERENCES = /[\x00-\x07\x0b\x0e-\x1f\ud800-\udfff]/;
+var LESS_THAN = /</g;
+var LINE_SEPARATOR = /\u2028/g;
+var PARAGRAPH_SEPARATOR = /\u2029/g;
+function escapeCharCode(code) {
+	switch (code) {
+		case 34: return "\\\"";
+		case 92: return "\\\\";
+		case 10: return "\\n";
+		case 13: return "\\r";
+		case 8: return "\\b";
+		case 9: return "\\t";
+		case 12: return "\\f";
+		case 60: return "\\x3C";
+		case 8232: return "\\u2028";
+		case 8233: return "\\u2029";
+		default: return;
+	}
+}
+function serializeString(input) {
+	const str = "" + input;
+	if (!NEEDS_ESCAPE.test(str)) return str;
+	if (str.length >= MIN_JSON_STRINGIFY_LENGTH && !JSON_ESCAPE_DIFFERENCES.test(str)) {
+		let result = JSON.stringify(str).slice(1, -1);
+		if (result.includes("<")) result = result.replace(LESS_THAN, "\\x3C");
+		if (result.includes("\u2028")) result = result.replace(LINE_SEPARATOR, "\\u2028");
+		if (result.includes("\u2029")) result = result.replace(PARAGRAPH_SEPARATOR, "\\u2029");
+		return result;
+	}
+	let result = "";
+	let lastPos = 0;
+	let replacement;
+	for (let i = 0, len = str.length; i < len; i++) {
+		replacement = escapeCharCode(str.charCodeAt(i));
+		if (replacement) {
+			result += str.slice(lastPos, i) + replacement;
+			lastPos = i + 1;
+		}
+	}
+	return result + str.slice(lastPos);
+}
+var JSON_COMPATIBLE = /^(?:[^"\\\x00-\x1f]|\\["\\nrbtf])*$/;
+var ESCAPE_SEQUENCE = /(\\\\|\\"|\\n|\\r|\\b|\\t|\\f|\\u2028|\\u2029|\\x3C)/g;
+function deserializeString(str) {
+	if (typeof str !== "string") return str.replace(ESCAPE_SEQUENCE, deserializeString);
+	let index = str.indexOf("\\");
+	if (index === -1) return str;
+	if (JSON_COMPATIBLE.test(str)) return JSON.parse("\"" + str + "\"");
+	let result = "";
+	let lastPos = 0;
+	const last = str.length - 1;
+	while (index !== -1 && index < last) {
+		let replacement;
+		let length = 2;
+		switch (str.charCodeAt(index + 1)) {
+			case 92:
+				replacement = "\\";
+				break;
+			case 34:
+				replacement = "\"";
+				break;
+			case 110:
+				replacement = "\n";
+				break;
+			case 114:
+				replacement = "\r";
+				break;
+			case 98:
+				replacement = "\b";
+				break;
+			case 116:
+				replacement = "	";
+				break;
+			case 102:
+				replacement = "\f";
+				break;
+			case 120:
+				if (str.startsWith("3C", index + 2)) {
+					replacement = "<";
+					length = 4;
+				}
+				break;
+			case 117: if (str.startsWith("2028", index + 2)) {
+				replacement = "\u2028";
+				length = 6;
+			} else if (str.startsWith("2029", index + 2)) {
+				replacement = "\u2029";
+				length = 6;
+			}
+		}
+		if (replacement) {
+			result += str.slice(lastPos, index) + replacement;
+			lastPos = index + length;
+			index = str.indexOf("\\", lastPos);
+		} else index = str.indexOf("\\", index + 1);
+	}
+	return result + str.slice(lastPos);
+}
+var STEP_ERROR_CODES = {
+	parsing: 1,
+	serialization: 2,
+	deserialization: 3
+};
+function getErrorMessageProd(type) {
+	return `Seroval Error (step: ${STEP_ERROR_CODES[type]})`;
+}
+var SerovalError = class extends Error {
+	constructor(type, cause) {
+		super(getErrorMessageProd(type));
+		this.cause = cause;
+	}
+};
+var SerovalParserError = class extends SerovalError {
+	constructor(cause) {
+		super("parsing", cause);
+	}
+};
+var SerovalSerializationError = class extends SerovalError {
+	constructor(cause) {
+		super("serialization", cause);
+	}
+};
+var SerovalDeserializationError = class extends SerovalError {
+	constructor(cause) {
+		super("deserialization", cause);
+	}
+};
+function getSpecificErrorMessage(code) {
+	return `Seroval Error (specific: ${code})`;
+}
+var SerovalUnsupportedTypeError = class extends Error {
+	constructor(value) {
+		super(getSpecificErrorMessage(1));
+		this.value = value;
+	}
+};
+var SerovalUnsupportedNodeError = class extends Error {
+	constructor(node) {
+		super(getSpecificErrorMessage(2));
+	}
+};
+var SerovalMissingPluginError = class extends Error {
+	constructor(tag) {
+		super(getSpecificErrorMessage(3));
+	}
+};
+var SerovalPluginValidationError = class extends Error {
+	constructor(tag, field) {
+		super(getSpecificErrorMessage(13));
+		this.tag = tag;
+		this.field = field;
+	}
+};
+var SerovalMissingInstanceError = class extends Error {
+	constructor(tag) {
+		super(getSpecificErrorMessage(4));
+	}
+};
+var SerovalMissingReferenceForIdError = class extends Error {
+	constructor(id) {
+		super(getSpecificErrorMessage(6));
+	}
+};
+var SerovalUnknownTypedArrayError = class extends Error {
+	constructor(name) {
+		super(getSpecificErrorMessage(7));
+	}
+};
+var SerovalMalformedNodeError = class extends Error {
+	constructor(node) {
+		super(getSpecificErrorMessage(8));
+	}
+};
+var SerovalConflictedNodeIdError = class extends Error {
+	constructor(node) {
+		super(getSpecificErrorMessage(9));
+	}
+};
+var SerovalDepthLimitError = class extends Error {
+	constructor(limit) {
+		super(getSpecificErrorMessage(10));
+	}
+};
+var REFERENCES_KEY = "__SEROVAL_REFS__";
+var GLOBAL_CONTEXT_R = `self.\$R`;
+function getCrossReferenceHeader(id) {
+	if (id == null) return `${GLOBAL_CONTEXT_R}=${GLOBAL_CONTEXT_R}||[]`;
+	return `(${GLOBAL_CONTEXT_R}=${GLOBAL_CONTEXT_R}||{})["${serializeString(id)}"]=[]`;
+}
+var REFERENCE = /* @__PURE__ */ new Map();
+var INV_REFERENCE = /* @__PURE__ */ new Map();
+function hasReference(id) {
+	return INV_REFERENCE.has(id);
+}
+function getReferenceID(value) {
+	return REFERENCE.get(value);
+}
+function getReference(id) {
+	if (hasReference(id)) return INV_REFERENCE.get(id);
+	throw new SerovalMissingReferenceForIdError(id);
+}
 /**
 * An internal class rather than a tagged POJO: identity is checked with
 * `instanceof`, which untrusted input cannot forge. The class is exported
@@ -702,27 +540,10 @@ var createIterator = /* @__PURE__ */ ITERATOR_CONSTRUCTOR(SYM_ITERATOR);
 function sequenceToIterator(sequence) {
 	return createIterator(sequence);
 }
-var ITERATOR = {};
-var ASYNC_ITERATOR = {};
-/**
-* Placeholder references
-*/
-var SPECIAL_REFS = {
-	[0]: {},
-	[1]: {},
-	[2]: {},
-	[3]: {},
-	[4]: {},
-	[5]: {}
-};
-var SPECIAL_REF_STRING = {
-	[0]: "[]",
-	[1]: SERIALIZED_PROMISE_CONSTRUCTOR,
-	[2]: SERIALIZED_PROMISE_SUCCESS,
-	[3]: SERIALIZED_PROMISE_FAILURE,
-	[4]: SERIALIZED_STREAM_CONSTRUCTOR,
-	[5]: SERIALIZED_ARRAY_BUFFER_CONSTRUCTOR
-};
+var BRAND = /* @__PURE__ */ Symbol("LiveStream");
+function isLiveStream(value) {
+	return value != null && value[BRAND] === true;
+}
 /**
 * An internal class rather than a tagged POJO: identity is checked with
 * `instanceof`, which untrusted input cannot forge. The class is exported
@@ -822,32 +643,6 @@ var createAsyncIterable = /* @__PURE__ */ ASYNC_ITERATOR_CONSTRUCTOR(SYM_ASYNC_I
 function streamToAsyncIterable(stream) {
 	return createAsyncIterable(stream);
 }
-async function promiseToResult(current) {
-	try {
-		return [1, await current];
-	} catch (e) {
-		return [0, e];
-	}
-}
-function encodeArrayBuffer$1(current) {
-	const bytes = new Uint8Array(current);
-	if (typeof bytes.toBase64 === "function") return bytes.toBase64();
-	let result = "";
-	for (let i = 0, len = bytes.length; i < len; i++) result += String.fromCharCode(bytes[i]);
-	return btoa(result);
-}
-var MIN_NATIVE_BASE64_LENGTH = 512;
-function encodeArrayBuffer(current) {
-	if (typeof Buffer !== "undefined") return Buffer.from(current).toString("base64");
-	return encodeArrayBuffer$1(current);
-}
-function decodeArrayBuffer(source) {
-	if (source.length < MIN_NATIVE_BASE64_LENGTH || typeof Buffer === "undefined") return ARRAY_BUFFER_CONSTRUCTOR(source);
-	const decoded = atob(source);
-	const buffer = new ArrayBuffer(decoded.length);
-	Buffer.from(buffer).write(decoded, "latin1");
-	return buffer;
-}
 function createPlugin(plugin) {
 	return plugin;
 }
@@ -901,22 +696,240 @@ function getPlainObjectPlugins(plugins) {
 	}
 	return plugins;
 }
-var GLOBAL_CONTEXT_R = `self.\$R`;
-function getCrossReferenceHeader(id) {
-	if (id == null) return `${GLOBAL_CONTEXT_R}=${GLOBAL_CONTEXT_R}||[]`;
-	return `(${GLOBAL_CONTEXT_R}=${GLOBAL_CONTEXT_R}||{})["${serializeString(id)}"]=[]`;
+/**
+* An opaque reference allows hiding values from the serializer.
+*/
+var OpaqueReference = class {
+	constructor(value, replacement) {
+		this.value = value;
+		this.replacement = replacement;
+	}
+};
+//#endregion
+//#region node_modules/seroval/dist/typed-array-BWH0IKxT.js
+function encodeArrayBuffer$1(current) {
+	const bytes = new Uint8Array(current);
+	if (typeof bytes.toBase64 === "function") return bytes.toBase64();
+	let result = "";
+	for (let i = 0, len = bytes.length; i < len; i++) result += String.fromCharCode(bytes[i]);
+	return btoa(result);
 }
-var REFERENCE = /* @__PURE__ */ new Map();
-var INV_REFERENCE = /* @__PURE__ */ new Map();
-function hasReference(id) {
-	return INV_REFERENCE.has(id);
+var MIN_NATIVE_BASE64_LENGTH = 512;
+function encodeArrayBuffer(current) {
+	if (typeof Buffer !== "undefined") return Buffer.from(current).toString("base64");
+	return encodeArrayBuffer$1(current);
 }
-function getReferenceID(value) {
-	return REFERENCE.get(value);
+function decodeArrayBuffer(source) {
+	if (source.length < MIN_NATIVE_BASE64_LENGTH || typeof Buffer === "undefined") return ARRAY_BUFFER_CONSTRUCTOR(source);
+	const decoded = atob(source);
+	const buffer = new ArrayBuffer(decoded.length);
+	Buffer.from(buffer).write(decoded, "latin1");
+	return buffer;
 }
-function getReference(id) {
-	if (hasReference(id)) return INV_REFERENCE.get(id);
-	throw new SerovalMissingReferenceForIdError(id);
+function getTypedArrayConstructor(name) {
+	switch (name) {
+		case "Int8Array": return Int8Array;
+		case "Int16Array": return Int16Array;
+		case "Int32Array": return Int32Array;
+		case "Uint8Array": return Uint8Array;
+		case "Uint16Array": return Uint16Array;
+		case "Uint32Array": return Uint32Array;
+		case "Uint8ClampedArray": return Uint8ClampedArray;
+		case "Float32Array": return Float32Array;
+		case "Float64Array": return Float64Array;
+		case "BigInt64Array": return BigInt64Array;
+		case "BigUint64Array": return BigUint64Array;
+		default: throw new SerovalUnknownTypedArrayError(name);
+	}
+}
+var typedArrayNameGetter;
+function getTypedArrayName(value) {
+	if (!typedArrayNameGetter) typedArrayNameGetter = Object.getOwnPropertyDescriptor(Object.getPrototypeOf(Int8Array.prototype), Symbol.toStringTag).get;
+	return typedArrayNameGetter.call(value);
+}
+var typedArrayGetters;
+var dataViewGetters;
+function getAccessor(proto, key) {
+	return Object.getOwnPropertyDescriptor(proto, key).get;
+}
+function getViewGetters(proto, lengthKey) {
+	return {
+		buffer: getAccessor(proto, "buffer"),
+		byteOffset: getAccessor(proto, "byteOffset"),
+		byteLength: getAccessor(proto, "byteLength"),
+		length: getAccessor(proto, lengthKey)
+	};
+}
+function readArrayBufferView(value, isDataView) {
+	let getters;
+	if (isDataView) getters = dataViewGetters ?? (dataViewGetters = getViewGetters(DataView.prototype, "byteLength"));
+	else getters = typedArrayGetters ?? (typedArrayGetters = getViewGetters(Object.getPrototypeOf(Int8Array.prototype), "length"));
+	return {
+		buffer: getters.buffer.call(value),
+		byteOffset: getters.byteOffset.call(value),
+		byteLength: getters.byteLength.call(value),
+		length: getters.length.call(value)
+	};
+}
+//#endregion
+//#region node_modules/seroval/dist/write-B_hZaAwC.js
+function createSerovalNode(t, i, s, c, m, p, e, a, f, b, o, l) {
+	if (c === void 0 && m === void 0 && p === void 0 && e === void 0 && a === void 0 && f === void 0 && b === void 0 && o === void 0 && l === void 0) return {
+		t,
+		i,
+		s
+	};
+	return {
+		t,
+		i,
+		s,
+		c,
+		m,
+		p,
+		e,
+		a,
+		f,
+		b,
+		o,
+		l
+	};
+}
+function createConstantNode(value) {
+	return createSerovalNode(2, void 0, value);
+}
+var TRUE_NODE = /* @__PURE__ */ createConstantNode(2);
+var FALSE_NODE = /* @__PURE__ */ createConstantNode(3);
+var UNDEFINED_NODE = /* @__PURE__ */ createConstantNode(1);
+var NULL_NODE = /* @__PURE__ */ createConstantNode(0);
+var NEG_ZERO_NODE = /* @__PURE__ */ createConstantNode(4);
+var INFINITY_NODE = /* @__PURE__ */ createConstantNode(5);
+var NEG_INFINITY_NODE = /* @__PURE__ */ createConstantNode(6);
+var NAN_NODE = /* @__PURE__ */ createConstantNode(7);
+function getErrorConstructor(error) {
+	for (let i = 1; i <= 6; i++) if (error instanceof ERROR_CONSTRUCTOR[i]) return i;
+	return 0;
+}
+function getErrorOptions(error, features) {
+	const options = Object.create(null);
+	const construct = ERROR_CONSTRUCTOR_STRING[getErrorConstructor(error)];
+	if (error.name !== construct) options.name = error.name;
+	else if (error.constructor.name !== construct) options.name = error.constructor.name;
+	for (const name of Object.getOwnPropertyNames(error)) if (name !== "name" && name !== "message" && (name !== "stack" || features & 4)) options[name] = error[name];
+	return options;
+}
+function getObjectFlag(obj) {
+	if (Object.isExtensible(obj)) return 0;
+	if (Object.isFrozen(obj)) return 3;
+	if (Object.isSealed(obj)) return 2;
+	return 1;
+}
+function createNumberNode(value) {
+	switch (value) {
+		case Number.POSITIVE_INFINITY: return INFINITY_NODE;
+		case Number.NEGATIVE_INFINITY: return NEG_INFINITY_NODE;
+	}
+	if (value !== value) return NAN_NODE;
+	if (Object.is(value, -0)) return NEG_ZERO_NODE;
+	return createSerovalNode(0, void 0, value);
+}
+function createStringNode(value) {
+	return createSerovalNode(1, void 0, serializeString(value));
+}
+function createBigIntNode(current) {
+	return createSerovalNode(3, void 0, "" + current);
+}
+function createIndexedValueNode(id) {
+	return createSerovalNode(4, id);
+}
+var getDateTime = Date.prototype.getTime;
+var getDateISOString = Date.prototype.toISOString;
+function createDateNode(id, current) {
+	const timestamp = getDateTime.call(current);
+	return createSerovalNode(5, id, timestamp === timestamp ? getDateISOString.call(current) : "");
+}
+function createTemporalNode(id, type, temporalClass, current) {
+	return createSerovalNode(36, id, temporalClass.prototype.toString.call(current), type);
+}
+var getRegExpSource = Object.getOwnPropertyDescriptor(RegExp.prototype, "source").get;
+var getRegExpFlags = Object.getOwnPropertyDescriptor(RegExp.prototype, "flags").get;
+function createRegExpNode(id, current) {
+	return createSerovalNode(6, id, void 0, serializeString(getRegExpSource.call(current)), getRegExpFlags.call(current));
+}
+function createWKSymbolNode(id, current) {
+	return createSerovalNode(17, id, INV_SYMBOL_REF[current]);
+}
+function createReferenceNode(id, referenceId) {
+	return createSerovalNode(18, id, serializeString(referenceId));
+}
+function createPluginNode(id, tag, value) {
+	return createSerovalNode(25, id, value, serializeString(tag));
+}
+function createArrayNode(id, current, parsedItems) {
+	return createSerovalNode(9, id, void 0, void 0, void 0, void 0, void 0, parsedItems, void 0, void 0, getObjectFlag(current));
+}
+function createBoxedNode(id, boxed) {
+	return createSerovalNode(21, id, void 0, void 0, void 0, void 0, void 0, void 0, boxed);
+}
+var MAX_TYPED_ARRAY_LENGTH = 1e6;
+/**
+* Rejects a sparse array with more holes than the typed array limit. Each hole
+* still costs a node and output, however few elements the array holds.
+*/
+function assertArrayHoles(current) {
+	const len = current.length;
+	if (len > MAX_TYPED_ARRAY_LENGTH && len - Object.keys(current).length > MAX_TYPED_ARRAY_LENGTH) throw new SerovalUnsupportedTypeError(current);
+}
+function createViewNode(type, id, current, view, buffer) {
+	const isDataView = type === 20;
+	const size = view.length;
+	if (size > MAX_TYPED_ARRAY_LENGTH) throw new SerovalUnsupportedTypeError(current);
+	return createSerovalNode(type, id, void 0, isDataView ? void 0 : getTypedArrayName(current), void 0, void 0, void 0, void 0, buffer, view.byteOffset, void 0, size);
+}
+function createErrorNode(type, id, current, options) {
+	return createSerovalNode(type, id, getErrorConstructor(current), void 0, serializeString(current.message), options);
+}
+function createSetNode(id, items) {
+	return createSerovalNode(7, id, void 0, void 0, void 0, void 0, void 0, items);
+}
+function createIteratorFactoryInstanceNode(type, factory, items) {
+	return createSerovalNode(type, void 0, void 0, void 0, void 0, void 0, void 0, [factory, items]);
+}
+function createStreamConstructorNode(id, factory, sequence, live) {
+	return createSerovalNode(31, id, void 0, void 0, void 0, void 0, void 0, sequence, factory, void 0, void 0, live);
+}
+function createStreamEventNode(type, id, parsed) {
+	return createSerovalNode(type, id, void 0, void 0, void 0, void 0, void 0, void 0, parsed);
+}
+function createSequenceNode(id, sequence, throwAt, doneAt) {
+	return createSerovalNode(35, id, throwAt, void 0, void 0, void 0, void 0, sequence, void 0, void 0, void 0, doneAt);
+}
+var ITERATOR = {};
+var ASYNC_ITERATOR = {};
+/**
+* Placeholder references
+*/
+var SPECIAL_REFS = {
+	[0]: {},
+	[1]: {},
+	[2]: {},
+	[3]: {},
+	[4]: {},
+	[5]: {}
+};
+var SPECIAL_REF_STRING = {
+	[0]: "[]",
+	[1]: SERIALIZED_PROMISE_CONSTRUCTOR,
+	[2]: SERIALIZED_PROMISE_SUCCESS,
+	[3]: SERIALIZED_PROMISE_FAILURE,
+	[4]: SERIALIZED_STREAM_CONSTRUCTOR,
+	[5]: SERIALIZED_ARRAY_BUFFER_CONSTRUCTOR
+};
+async function promiseToResult(current) {
+	try {
+		return [1, await current];
+	} catch (e) {
+		return [0, e];
+	}
 }
 function createBaseParserContext(options) {
 	return {
@@ -1107,7 +1120,7 @@ function createArrayBufferNode(ctx, id, current) {
 function createAsyncParserContext(options) {
 	return { base: createBaseParserContext(options) };
 }
-function ignoreRejection$1() {}
+function ignoreRejection() {}
 /**
 * A promise gets its rejection handler only when the walk reaches it. While an
 * earlier sibling is still pending, a later one that rejects would be an
@@ -1115,7 +1128,7 @@ function ignoreRejection$1() {}
 * promises among the children as handled before walking them.
 */
 function handleChildPromises(values) {
-	for (const value of values) if (value instanceof Promise) Promise.prototype.then.call(value, void 0, ignoreRejection$1);
+	for (const value of values) if (value instanceof Promise) Promise.prototype.then.call(value, void 0, ignoreRejection);
 }
 async function parseItems$1(ctx, depth, current) {
 	assertArrayHoles(current);
@@ -1391,354 +1404,6 @@ async function parseTopAsync(ctx, current) {
 		throw error instanceof SerovalParserError ? error : new SerovalParserError(error);
 	}
 }
-function isValidKey(key) {
-	switch (key) {
-		case "constructor":
-		case "__proto__":
-		case "prototype":
-		case "__defineGetter__":
-		case "__defineSetter__":
-		case "__lookupGetter__":
-		case "__lookupSetter__": return false;
-		default: return true;
-	}
-}
-function isValidSymbol(symbol) {
-	switch (symbol) {
-		case SYM_ASYNC_ITERATOR:
-		case SYM_IS_CONCAT_SPREADABLE:
-		case SYM_TO_STRING_TAG:
-		case SYM_ITERATOR: return true;
-		default: return false;
-	}
-}
-var DEFAULT_MAX_BASE64_LENGTH = 1e6;
-var MAX_BIGINT_LENGTH = 1e4;
-var MAX_REGEXP_SOURCE_LENGTH = 2e4;
-function applyObjectFlag(obj, flag) {
-	switch (flag) {
-		case 3: return Object.freeze(obj);
-		case 1: return Object.preventExtensions(obj);
-		case 2: return Object.seal(obj);
-		default: return obj;
-	}
-}
-var DEFAULT_DEPTH_LIMIT = 1e3;
-var MAX_REGEXP_PROPERTY_ESCAPES = 32;
-var REGEXP_PROPERTY_ESCAPE = /\\[pP]\{/g;
-function createBaseDeserializerContext(options) {
-	const maxBase64Length = options.maxBase64Length ?? DEFAULT_MAX_BASE64_LENGTH;
-	if (!Number.isSafeInteger(maxBase64Length) || maxBase64Length < 0) throw new RangeError("maxBase64Length must be a non-negative safe integer");
-	const refs = options.refs ?? /* @__PURE__ */ new Map();
-	if (!("types" in refs)) Object.assign(refs, { types: /* @__PURE__ */ new Map() });
-	return {
-		plugins: options.plugins,
-		refs,
-		features: options.features ?? 127 ^ (options.disabledFeatures ?? 0),
-		depthLimit: options.depthLimit || DEFAULT_DEPTH_LIMIT,
-		maxBase64Length,
-		regexpPropertyEscapes: MAX_REGEXP_PROPERTY_ESCAPES
-	};
-}
-function createVanillaDeserializerContext(options) {
-	return {
-		base: createBaseDeserializerContext(options),
-		marked: new Set(options.markedRefs)
-	};
-}
-function guardIndexedValue(ctx, id) {
-	const node = {
-		t: 4,
-		i: id
-	};
-	if (id < 0 || !Number.isInteger(id)) throw new SerovalMalformedNodeError(node);
-	if (ctx.refs.has(id)) throw new SerovalConflictedNodeIdError(node);
-}
-function isThennable(value) {
-	return !!value && (typeof value === "object" || typeof value === "function") && "then" in value && typeof value.then === "function";
-}
-var ignoreRejection = () => {};
-function assignIndexedValue$1(ctx, id, value) {
-	guardIndexedValue(ctx.base, id);
-	if (value instanceof Promise) value.catch(ignoreRejection);
-	const marked = ctx.marked;
-	if (!marked || marked.has(id)) ctx.base.refs.set(id, value);
-	return value;
-}
-function deserializeKnownValue(node, record, key) {
-	if (Object.hasOwn(record, key)) return record[key];
-	throw new SerovalMalformedNodeError(node);
-}
-function deserializeReference(ctx, node) {
-	return assignIndexedValue$1(ctx, node.i, getReference(deserializeString(node.s)));
-}
-function validateNodeList(node, list) {
-	if (!Array.isArray(list)) throw new SerovalMalformedNodeError(node);
-}
-function deserializeArray(ctx, depth, node) {
-	const items = node.a;
-	validateNodeList(node, items);
-	const len = items.length;
-	const result = assignIndexedValue$1(ctx, node.i, new Array(len));
-	for (let i = 0, item; i < len; i++) {
-		item = items[i];
-		if (item) result[i] = deserialize$1(ctx, depth, item);
-	}
-	applyObjectFlag(result, node.o);
-	return result;
-}
-function assignStringProperty(object, key, value) {
-	if (isValidKey(key)) object[key] = value;
-	else Object.defineProperty(object, key, {
-		value,
-		configurable: true,
-		enumerable: true,
-		writable: true
-	});
-}
-function assignProperty(ctx, depth, object, key, value) {
-	if (typeof key === "string") assignStringProperty(object, deserializeString(key), deserialize$1(ctx, depth, value));
-	else {
-		const actual = deserialize$1(ctx, depth, key);
-		switch (typeof actual) {
-			case "string":
-				assignStringProperty(object, actual, deserialize$1(ctx, depth, value));
-				break;
-			case "symbol":
-				if (isValidSymbol(actual)) object[actual] = deserialize$1(ctx, depth, value);
-				break;
-			default: throw new SerovalMalformedNodeError(key);
-		}
-	}
-}
-function assignNodeType(ctx, id, type) {
-	ctx.base.refs.types.set(id, type);
-}
-function validateNodeType(ctx, node, id, type) {
-	if (ctx.base.refs.types.get(id) !== type) throw new SerovalMalformedNodeError(node);
-}
-function deserializeProperties(ctx, depth, node, result) {
-	const keys = node.k;
-	validateNodeList(node, keys);
-	validateNodeList(node, node.v);
-	const len = keys.length;
-	if (len > 0) for (let i = 0, vals = node.v; i < len; i++) assignProperty(ctx, depth, result, keys[i], vals[i]);
-	return result;
-}
-function deserializeObject(ctx, depth, node) {
-	const result = assignIndexedValue$1(ctx, node.i, node.t === 10 ? {} : Object.create(null));
-	deserializeProperties(ctx, depth, node.p, result);
-	applyObjectFlag(result, node.o);
-	return result;
-}
-function deserializeDate(ctx, node) {
-	return assignIndexedValue$1(ctx, node.i, new Date(node.s));
-}
-function deserializeTemporal(ctx, node) {
-	if (!(ctx.base.features & 64)) throw new SerovalUnsupportedNodeError(node);
-	const construct = Temporal[deserializeKnownValue(node, TEMPORAL_TYPE_NAME, node.c)];
-	return assignIndexedValue$1(ctx, node.i, construct.from(node.s));
-}
-function deserializeRegExp(ctx, node) {
-	if (ctx.base.features & 32) {
-		const source = deserializeString(node.c);
-		if (source.length > MAX_REGEXP_SOURCE_LENGTH) throw new SerovalMalformedNodeError(node);
-		if (/[uv]/.test(String(node.m))) {
-			const escapes = source.match(REGEXP_PROPERTY_ESCAPE);
-			if (escapes) {
-				ctx.base.regexpPropertyEscapes -= escapes.length;
-				if (ctx.base.regexpPropertyEscapes < 0) throw new SerovalMalformedNodeError(node);
-			}
-		}
-		return assignIndexedValue$1(ctx, node.i, new RegExp(source, node.m));
-	}
-	throw new SerovalUnsupportedNodeError(node);
-}
-function deserializeSet(ctx, depth, node) {
-	const result = assignIndexedValue$1(ctx, node.i, /* @__PURE__ */ new Set());
-	validateNodeList(node, node.a);
-	for (let i = 0, items = node.a, len = items.length; i < len; i++) result.add(deserialize$1(ctx, depth, items[i]));
-	return result;
-}
-function deserializeMap(ctx, depth, node) {
-	const result = assignIndexedValue$1(ctx, node.i, /* @__PURE__ */ new Map());
-	validateNodeList(node, node.e.k);
-	validateNodeList(node, node.e.v);
-	for (let i = 0, keys = node.e.k, vals = node.e.v, len = keys.length; i < len; i++) result.set(deserialize$1(ctx, depth, keys[i]), deserialize$1(ctx, depth, vals[i]));
-	return result;
-}
-function deserializeArrayBuffer(ctx, node) {
-	if (typeof node.s !== "string") throw new SerovalMalformedNodeError(node);
-	if (node.s.length > ctx.base.maxBase64Length) throw new RangeError("ArrayBuffer exceeds maxBase64Length (" + ctx.base.maxBase64Length + ")");
-	const buffer = decodeArrayBuffer(deserializeString(node.s));
-	return assignIndexedValue$1(ctx, node.i, buffer);
-}
-function deserializeView(ctx, depth, node, construct) {
-	const source = deserialize$1(ctx, depth, node.f);
-	if (!(source instanceof ArrayBuffer)) throw new SerovalMalformedNodeError(node);
-	const offset = node.b ?? 0;
-	if (offset < 0 || offset > source.byteLength) throw new SerovalMalformedNodeError(node);
-	return assignIndexedValue$1(ctx, node.i, construct ? new construct(source, offset, node.l) : new DataView(source, offset, node.l));
-}
-function deserializeDictionary(ctx, depth, node, result) {
-	if (node.p) {
-		const fields = deserializeProperties(ctx, depth, node.p, {});
-		Object.defineProperties(result, Object.getOwnPropertyDescriptors(fields));
-	}
-	return result;
-}
-function deserializeAggregateError(ctx, depth, node) {
-	return deserializeDictionary(ctx, depth, node, assignIndexedValue$1(ctx, node.i, new AggregateError([], deserializeString(node.m))));
-}
-function deserializeError(ctx, depth, node) {
-	const construct = deserializeKnownValue(node, ERROR_CONSTRUCTOR, node.s);
-	return deserializeDictionary(ctx, depth, node, assignIndexedValue$1(ctx, node.i, new construct(deserializeString(node.m))));
-}
-function deserializePromise(ctx, depth, node) {
-	const deferred = PROMISE_CONSTRUCTOR();
-	const result = assignIndexedValue$1(ctx, node.i, deferred.p);
-	const deserialized = deserialize$1(ctx, depth, node.f);
-	if (isThennable(deserialized)) throw new SerovalMalformedNodeError(node.f);
-	if (node.s) deferred.s(deserialized);
-	else deferred.f(deserialized);
-	return result;
-}
-function deserializeBoxed(ctx, depth, node) {
-	return assignIndexedValue$1(ctx, node.i, Object(deserialize$1(ctx, depth, node.f)));
-}
-function deserializePlugin(ctx, depth, node) {
-	const currentPlugins = ctx.base.plugins;
-	if (currentPlugins) {
-		const tag = deserializeString(node.c);
-		for (let i = 0, len = currentPlugins.length; i < len; i++) {
-			const plugin = currentPlugins[i];
-			if (plugin.tag === tag) return assignIndexedValue$1(ctx, node.i, plugin.deserialize(node.s, { deserialize: (current) => deserialize$1(ctx, depth, current) }, { id: node.i }));
-		}
-	}
-	throw new SerovalMissingPluginError(node.c);
-}
-function deserializePromiseConstructor(ctx, node) {
-	const value = assignIndexedValue$1(ctx, node.i, assignIndexedValue$1(ctx, node.s, PROMISE_CONSTRUCTOR()).p);
-	assignNodeType(ctx, node.s, 22);
-	ctx.base.pending?.add(node.s);
-	return value;
-}
-function deserializePromiseFulfill(ctx, depth, node) {
-	const deferred = ctx.base.refs.get(node.i);
-	if (deferred) {
-		validateNodeType(ctx, node, node.i, 22);
-		const deserialized = deserialize$1(ctx, depth, node.a[1]);
-		if (isThennable(deserialized)) throw new SerovalMalformedNodeError(node.a[1]);
-		if (node.t === 23) deferred.s(deserialized);
-		else deferred.f(deserialized);
-		ctx.base.pending?.delete(node.i);
-		return;
-	}
-	throw new SerovalMissingInstanceError("Promise");
-}
-function deserializeIteratorFactoryInstance(ctx, depth, node) {
-	deserialize$1(ctx, depth, node.a[0]);
-	const source = deserialize$1(ctx, depth, node.a[1]);
-	if (!isSequence(source)) throw new SerovalMalformedNodeError(node.a[1]);
-	return sequenceToIterator(source);
-}
-function deserializeAsyncIteratorFactoryInstance(ctx, depth, node) {
-	deserialize$1(ctx, depth, node.a[0]);
-	const source = deserialize$1(ctx, depth, node.a[1]);
-	if (!isStream(source)) throw new SerovalMalformedNodeError(node.a[1]);
-	return streamToAsyncIterable(source);
-}
-function deserializeStreamConstructor(ctx, depth, node) {
-	const result = assignIndexedValue$1(ctx, node.i, new Stream(node.l === 1 ? 1 : void 0));
-	assignNodeType(ctx, node.i, 31);
-	ctx.base.pending?.add(node.i);
-	const items = node.a;
-	validateNodeList(node, items);
-	const len = items.length;
-	if (len) for (let i = 0; i < len; i++) deserialize$1(ctx, depth, items[i]);
-	return result;
-}
-function deserializeStreamCall(ctx, depth, node, method) {
-	const deferred = ctx.base.refs.get(node.i);
-	if (deferred) {
-		validateNodeType(ctx, node, node.i, 31);
-		deferred[method](deserialize$1(ctx, depth, node.f));
-		if (method !== "next") ctx.base.pending?.delete(node.i);
-		return;
-	}
-	throw new SerovalMissingInstanceError("Stream");
-}
-function deserializeIteratorFactory(ctx, depth, node) {
-	deserialize$1(ctx, depth, node.f);
-}
-function deserializeAsyncIteratorFactory(ctx, depth, node) {
-	deserialize$1(ctx, depth, node.a[1]);
-}
-function isSequenceIndex(value, size) {
-	return Number.isInteger(value) && value >= -1 && value < size;
-}
-function deserializeSequence(ctx, depth, node) {
-	validateNodeList(node, node.a);
-	const size = node.a.length;
-	if (!(isSequenceIndex(node.s, size) && isSequenceIndex(node.l, size))) throw new SerovalMalformedNodeError(node);
-	const result = assignIndexedValue$1(ctx, node.i, createSequence([], node.s, node.l));
-	assignNodeType(ctx, node.i, 35);
-	for (let i = 0; i < size; i++) result.v[i] = deserialize$1(ctx, depth, node.a[i]);
-	return result;
-}
-function deserialize$1(ctx, depth, node) {
-	if (depth > ctx.base.depthLimit) throw new SerovalDepthLimitError(ctx.base.depthLimit);
-	depth += 1;
-	switch (node.t) {
-		case 2: return deserializeKnownValue(node, CONSTANT_VAL, node.s);
-		case 0: return Number(node.s);
-		case 1: return deserializeString(String(node.s));
-		case 3:
-			if (String(node.s).length > MAX_BIGINT_LENGTH) throw new SerovalMalformedNodeError(node);
-			return BigInt(node.s);
-		case 4: return ctx.base.refs.get(node.i);
-		case 18: return deserializeReference(ctx, node);
-		case 9: return deserializeArray(ctx, depth, node);
-		case 10:
-		case 11: return deserializeObject(ctx, depth, node);
-		case 5: return deserializeDate(ctx, node);
-		case 6: return deserializeRegExp(ctx, node);
-		case 7: return deserializeSet(ctx, depth, node);
-		case 8: return deserializeMap(ctx, depth, node);
-		case 19: return deserializeArrayBuffer(ctx, node);
-		case 16:
-		case 15: return deserializeView(ctx, depth, node, getTypedArrayConstructor(node.c));
-		case 20: return deserializeView(ctx, depth, node);
-		case 14: return deserializeAggregateError(ctx, depth, node);
-		case 13: return deserializeError(ctx, depth, node);
-		case 12: return deserializePromise(ctx, depth, node);
-		case 17: return deserializeKnownValue(node, SYMBOL_REF, node.s);
-		case 21: return deserializeBoxed(ctx, depth, node);
-		case 25: return deserializePlugin(ctx, depth, node);
-		case 22: return deserializePromiseConstructor(ctx, node);
-		case 23:
-		case 24: return deserializePromiseFulfill(ctx, depth, node);
-		case 28: return deserializeIteratorFactoryInstance(ctx, depth, node);
-		case 30: return deserializeAsyncIteratorFactoryInstance(ctx, depth, node);
-		case 31: return deserializeStreamConstructor(ctx, depth, node);
-		case 32: return deserializeStreamCall(ctx, depth, node, "next");
-		case 33: return deserializeStreamCall(ctx, depth, node, "throw");
-		case 34: return deserializeStreamCall(ctx, depth, node, "return");
-		case 27: return deserializeIteratorFactory(ctx, depth, node);
-		case 29: return deserializeAsyncIteratorFactory(ctx, depth, node);
-		case 35: return deserializeSequence(ctx, depth, node);
-		case 36: return deserializeTemporal(ctx, node);
-		default: throw new SerovalUnsupportedNodeError(node);
-	}
-}
-function deserializeTop(ctx, node) {
-	ctx.base.regexpPropertyEscapes = MAX_REGEXP_PROPERTY_ESCAPES;
-	try {
-		return deserialize$1(ctx, 0, node);
-	} catch (error) {
-		throw new SerovalDeserializationError(error);
-	}
-}
 var RETURN = () => T;
 var IS_MODERN = /* @__PURE__ */ (/* @__PURE__ */ RETURN.toString()).includes("=>");
 function createFunction(parameters, body) {
@@ -2012,7 +1677,7 @@ function assignIndexedValue(ctx, index, value) {
 	return getRefParam(ctx, index) + "=" + value;
 }
 function serializeReference(node) {
-	return "__SEROVAL_REFS__.get(\"" + node.s + "\")";
+	return REFERENCES_KEY + ".get(\"" + node.s + "\")";
 }
 function serializeArrayItem(ctx, id, item, index) {
 	if (item) {
@@ -3148,19 +2813,6 @@ function toCrossJSONStream(source, options) {
 	startStreamParse(ctx, source);
 	return destroyStreamParse.bind(null, ctx);
 }
-function fromJSON(source, options = {}) {
-	const plugins = resolvePlugins(options.plugins);
-	const disabledFeatures = options.disabledFeatures ?? 0;
-	const sourceFeatures = source.f ?? 127;
-	return deserializeTop(createVanillaDeserializerContext({
-		depthLimit: options.depthLimit,
-		maxBase64Length: options.maxBase64Length,
-		plugins,
-		markedRefs: source.m,
-		features: sourceFeatures & ~disabledFeatures,
-		disabledFeatures
-	}), source.t);
-}
 //#endregion
 //#region node_modules/@tanstack/router-core/dist/esm/ssr/serializer/transformer.js
 /**
@@ -3510,8 +3162,10 @@ var ShallowErrorPlugin = /* @__PURE__ */ createPlugin({
 //#region node_modules/seroval-plugins/dist/web.js
 var CLAIMED = /* @__PURE__ */ new WeakSet();
 function claim(value) {
-	if (CLAIMED.has(value)) throw new Error("Expected a value used by one plugin value only.");
-	CLAIMED.add(value);
+	if (typeof value === "object" && value !== null) {
+		if (CLAIMED.has(value)) throw new Error("Expected a value used by one plugin value only.");
+		CLAIMED.add(value);
+	}
 	return value;
 }
 var READABLE_STREAM_FACTORY = {};
@@ -3642,10 +3296,9 @@ var defaultSerovalPlugins = [
 		serialize(node, ctx) {
 			return "(" + ctx.serialize(node.factory) + ")(" + ctx.serialize(node.stream) + ")";
 		},
+		validate: { stream: isStream },
 		deserialize(node, ctx) {
-			const stream = ctx.deserialize(node.stream);
-			if (!isStream(stream)) throw new Error("Expected a stream source.");
-			return READABLE_STREAM_FACTORY_CONSTRUCTOR(claim(stream));
+			return READABLE_STREAM_FACTORY_CONSTRUCTOR(claim(ctx.deserialize(node.stream)));
 		}
 	})
 ];
@@ -4197,4 +3850,4 @@ function mergeHeaders(...headers) {
 	}, new Headers());
 }
 //#endregion
-export { defaultSerovalPlugins as a, makeSerovalPlugin as c, toCrossJSONStream as d, getOrigin as i, fromJSON as l, attachRouterServerSsrUtils as n, createRawStreamRPCPlugin as o, getNormalizedURL as r, createSerializationAdapter as s, mergeHeaders as t, toCrossJSONAsync as u };
+export { TEMPORAL_TYPE_NAME as A, SerovalDeserializationError as C, SerovalPluginValidationError as D, SerovalMissingPluginError as E, isStream as F, resolvePlugins as I, sequenceToIterator as L, deserializeString as M, getReference as N, SerovalUnsupportedNodeError as O, isSequence as P, streamToAsyncIterable as R, SerovalDepthLimitError as S, SerovalMissingInstanceError as T, SYM_ASYNC_ITERATOR as _, defaultSerovalPlugins as a, SYM_TO_STRING_TAG as b, makeSerovalPlugin as c, decodeArrayBuffer as d, getTypedArrayConstructor as f, SYMBOL_REF as g, PROMISE_CONSTRUCTOR as h, getOrigin as i, createSequence as j, Stream as k, toCrossJSONAsync as l, ERROR_CONSTRUCTOR as m, attachRouterServerSsrUtils as n, createRawStreamRPCPlugin as o, CONSTANT_VAL as p, getNormalizedURL as r, createSerializationAdapter as s, mergeHeaders as t, toCrossJSONStream as u, SYM_IS_CONCAT_SPREADABLE as v, SerovalMalformedNodeError as w, SerovalConflictedNodeIdError as x, SYM_ITERATOR as y };

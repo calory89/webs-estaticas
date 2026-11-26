@@ -3332,7 +3332,18 @@ function cityDescPrice(L, c, b, v, l, price, score) {
 		pt: `Desde ${price} por noite: os 3 melhores hotéis em ${c}. Económico ${b}, qualidade-preço ${v}${s} e luxo ${l}. Notas reais de hóspedes.`,
 		da: `Fra ${price} pr. nat: de 3 bedste hoteller i ${c}. Billigt ${b}, mest for pengene ${v}${s} og luksus ${l}. Ægte gæstekarakterer.`
 	};
-	return D[L] ?? D.en;
+	const out = D[L] ?? D.en;
+	if (out.length <= 160) return out;
+	const A = {
+		en: `From ${price} a night: the 3 best hotels in ${c}. Budget ${b}, best value ${v}${s} and a luxury pick. Real guest scores, no paid rankings.`,
+		es: `Desde ${price} la noche: los 3 mejores hoteles de ${c}. Económico ${b}, calidad-precio ${v}${s} y una opción de lujo. Notas reales, sin rankings pagados.`,
+		de: `Ab ${price} pro Nacht: die 3 besten Hotels in ${c}. Günstig ${b}, Preis-Leistung ${v}${s} und ein Luxushotel. Echte Gästenoten, keine gekauften Rankings.`,
+		fr: `Dès ${price} la nuit : les 3 meilleurs hôtels à ${c}. Petit budget ${b}, qualité-prix ${v}${s} et un hôtel de luxe. Vraies notes clients.`,
+		it: `Da ${price} a notte: i 3 migliori hotel a ${c}. Economico ${b}, qualità-prezzo ${v}${s} e un hotel di lusso. Voti reali degli ospiti.`,
+		pt: `Desde ${price} por noite: os 3 melhores hotéis em ${c}. Económico ${b}, qualidade-preço ${v}${s} e um hotel de luxo. Notas reais de hóspedes.`,
+		da: `Fra ${price} pr. nat: de 3 bedste hoteller i ${c}. Billigt ${b}, mest for pengene ${v}${s} og et luksushotel. Ægte gæstekarakterer.`
+	};
+	return A[L] ?? A.en;
 }
 var js = (o) => o;
 var Y = {
@@ -21092,6 +21103,102 @@ var hotel_photos_default = {
 		"b:94978782"
 	]
 };
+var photo_broken_default = {
+	checked: "2026-11-26",
+	note: "First card photos that answered 404 on cf.bstatic.com (HEAD), skipped when rendering (T1.21).",
+	urls: [
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/10895794.jpg?k=0706ecd31d9e00bf7414437b326a08464aa7f3ab5674073e87702660b63d2925&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/10895922.jpg?k=680e57b17ab749a9aa8107e28813f45760dda3c17fd166902817df64518799c6&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/116240499.jpg?k=dbd0d0d23e2304fd80b639347d4fcf97203b5d64731175ac6c3302deba325e02&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/170061189.jpg?k=520b1c99f0833b64f9b61557b594fdc8bd0dd5d6c659f1faa47b4f4ba9b94a38&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/209941640.jpg?k=4f2bd50e3c00d1635e4d457364d8e1f75cf3f32acf587e01c39d5900f5e04c9e&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/253946757.jpg?k=3b4cd67d14af479d610b44d6f50cede6476e2fe5247e41f9bdc74fa010422699&o=",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/262912649.jpg?k=106e0069dbe2535c5c01881c4e74973d32b4e164dcafbf445703f823b8261d7e&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/264949033.jpg?k=3eb741459c66da4008ad3c30bc094aa72780adbbd994b05f47884ae32835bfb2&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/266823830.jpg?k=b312849e8a611253d8f3ebebab1f894cd55870296a4f89e6acf667b8413aed43&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/310927622.jpg?k=9625c0997bdb788da84287643fb38472ef56e272520398a259b0143984f19b49&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/36213779.jpg?k=e07acc24cc84b1fd9c642791585130263d60ad6d74beaf98a0f78e87eaa423e0&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/36213978.jpg?k=06565b11c1aa0d14e21277cec5c8ae19154614916694ca90ca5d733a07fa0474&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/36214140.jpg?k=b1c6482bdf5d58c8bcb7dffe62fe32ed9cfaa39819003b8fc5bdf65538ebc7b6&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/37999214.jpg?k=840ef58f791f8463a74a377790c985ce4f424307e55d195faae475f2911e316d&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/37999218.jpg?k=64c4c881052432ecc9871ef04c6437dc505d6e01cb7d337b82d8929e23944e7b&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/37999234.jpg?k=a77e8d15adb7bc6d7b6e43836e6b3bdfcfefd6f9376530e02d349487175052ec&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/37999235.jpg?k=6068aa95569cd678906accdf349138c169124f71d3c60f7d549993581d5e5507&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/453494302.jpg?k=23989c16c72eda0041cd9cbfb06f81a9d7c452c95ef79a23d5645fa7fc295761&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/454128426.jpg?k=20df5135d77d2dae9ef0c0f7f15795c2f13d9336a414411e2bf2ff27adf19253&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/454129300.jpg?k=d958898f81c6b92b7ed7815a68d957b7d01d98309624487e49f30542e7d679f7&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/454458381.jpg?k=43367165b0e329274e9082e5beece9d71da2437365cb53041a62922216985b90&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/463839695.jpg?k=103fd2129910f7ebceee917c2aef6ffc1a6ee0714ffb4d0493df946070cb2ccd&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/474976441.jpg?k=0f17fd069e0de5cd4db2bb08bfafff4301533c8ac944f2493246c0c4b2c59965&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/475248423.jpg?k=c7cf986120eb7bff4a31895db4c877b42b7deb38dc6433057bbaf4fa610cd9bd&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/486039890.jpg?k=cedd6c214c2dc05e0770a2c0b1efab3d8932f089a438d774c2ae665f7ecfc91e&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/486054329.jpg?k=377a2efa52205ab3b23a491c992dc33322901c86706bd3d02dc852c467856cbc&o=",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/486054339.jpg?k=2831c96beb96abaa3dca3ae558ea5d53f9d9f9de171b10c58c78537deb8fc4bb&o=",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/486054343.jpg?k=43cdd1285fbf44d41789e6d2b614f02a7edd22edb09a3007a437454867b8ea41&o=",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/507570297.jpg?k=b79db0af645960ff025a818bed2f1ec8fb796009f00d9b05c593d0a982912013&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/510945640.jpg?k=eab438f05dacb52aa32275d21581ba6db8773629473845d38ae80698ab0b8346&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/522322170.jpg?k=3b126e7464d353e481c91064e6212e90057abb4b5652eeff69f2ecf73b897b84&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/581955071.jpg?k=8010894a21d6c2e346e17a2d6aabd52b69432d27a296074d33f37068c66dfcb5&o=",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/581955477.jpg?k=874da02980e8dcb312e3515a0e5f99f258cfbee884ada2312c45c8efe195f27c&o=",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/584421546.jpg?k=a79dac3bc51c0aa68b33808ccd90dfb217afe7f33144d64ee0916ec85f912c82&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/584421551.jpg?k=da76ff543fa7323860b917846329212fe634b7192d8d3ae11be1cea948265674&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/584421565.jpg?k=a7fa0fdee2dde2bed6c23ec23f4ba087bd7f815f92d414de72d14d60292adf5c&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/588035112.jpg?k=4f6985a3aa19c089905ad05dbdd3752e50676ce89fe5b867702cbdb13fc7c1fa&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/591423632.jpg?k=b11bc2d2233428bb2e610e246514622e198c129b880f9521cd5787026d0e18b3&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/614487966.jpg?k=5ecdb4b468cd2b5a4b52586e4d470265b9cd3831c3f2bc41c21a945bda87aa28&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/628163786.jpg?k=a57ad9759817a5889835fcbefd805a68b0f3d8bb381d8c164dd711228699cf4a&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/645280118.jpg?k=7405b0e211a5197ffaffd4ce47827e7d850a5ec7e86849b00b206bd3d5f90151&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/646944873.jpg?k=01fc73639f32c54436e6d12643c9ee1808563a359d75a9f36a6e6a6a82441de9&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/667285015.jpg?k=b75363ebf5798122e26ba33aaf2bbb1f5d15c1204fd414d9fc8715e796f2f442&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/667285122.jpg?k=491ad4281757306e6637b530f5b32e8e6fc815c9746a273f33ae37e9a6fd7a10&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/667285242.jpg?k=5696972c7f706633207ffe098d2bde6244bc309d5231da5e58b7ad09316b48df&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/667285271.jpg?k=a06507ef971d4851078d6fc6542f2db4da44e8c286102c5decf15367d5bc7f3c&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/667285280.jpg?k=321155b5a6bc7a4855532c6ab1cc4a43ec083c9d422b02b63ad353ebade40bc9&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/751964704.jpg?k=b885acef68432e418a77e287015055f5907ac6364d8dfe0217eeeb69bfe3afa5&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/761112047.jpg?k=6e1b2729452f378f060388959570d6c3a5653a326d053811690a082a34ec5a71&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/8612118.jpg?k=bc20d9522a5d4b78938e69faa340af3eb605aeca3897683c1330da6d6f5a7dbd&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/870856220.jpg?k=8ac20b3c2ac58455f8239b9226d7ad598abbbe2b82b06fb92991cb9cf28a7292&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/871807726.jpg?k=123505c7686336e6a437799affdf9c180f558125a3582b5389b4c962e03f1011&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/881787302.jpg?k=bd866c018a705aa743cca700064f870827908783c232c27d340da2ae80b5ee98&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/889045691.jpg?k=ee8a0488c2140b1fb3c915835b7faf8cc2066a25523233bd99160c49eb60a2fa&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/895390040.jpg?k=2651dccf8d6fee6f13515dd00262fd6cafca4fcf1752ccff3e6c410df3797687&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/900425110.jpg?k=38bcab013384b816977407ea0b39064ccfeaecb8f074a0f3d6a2c4b160617deb&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/900425112.jpg?k=7f32ac5a50cbecdd89e48557018bbc212987ef22bec29911b67d667f70f01e4c&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/900425135.jpg?k=ba02760adf745a37f24668ee3da206251e6628b372f8a956f3bb2d1709dc4a95&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/900425183.jpg?k=bc13469247e079b02370b782114739626fa3dd8563e54bc97f1310122afb9730&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/900425224.jpg?k=753c7f71294722c5ee72f0f826f5585a2f27bf8a977d6ecd63c1a14ec0fc4ac4&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/904358503.jpg?k=ebb1835dc32afc566403ee483fe0295176b9501dc154b35061460cd2d7497247&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/904369533.jpg?k=3f5ed0a3677357dcc08a9b0ccff3d2583390aeef941abcca108f99d4dfdc4f7a&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/904369535.jpg?k=4df9531bb7ecb95fef2125d6a300cbd3c7af3a1ca15f9ac20ab4b2c5b8572892&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/904369537.jpg?k=ebed1f284ef6281b70d27520c467aa8c8edcae4cac85d8c1128a69fe74702327&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/904369538.jpg?k=c6c11951badb1bdfe6a67bb08c5ac129f029c1dc33322507928a6ef4d9c3fa64&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/906427086.jpg?k=4ee04af71940358d926fd50ad198d61a6cc5797bc63b5eaeae82564add7bd5ab&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/909756948.jpg?k=d345610aa7fc177a74efa51523a2d4744d7028067865b9a366d2acb98d047aa6&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/91360682.jpg?k=78b1428f0d30b756e498ace6b5606b7197efb547082457db7110584217a6ee40&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/915009200.jpg?k=f697eb1952d2433199aa7d34242d53cc383f58f11d414efb3a035c44e3701849&o=",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/915009202.jpg?k=6f0067e6400318c7c15154d79e00c74b147694257843e8e843f78c7a4561bb0d&o=",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/915009204.jpg?k=647f05b0dc5e850b82b0f9a5936a48f976906143233fd0ec06e8a80f30a10cb4&o=",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/921413937.jpg?k=6a6fe213a15b0777aa52aa380d4ac9dcf83ba53da785248ecdb7e79925a76a3d&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/921413941.jpg?k=7b7d17197f1bf8e6653b5a8ae12866ca51ed37e6a40c8ad3cfbbfa0d4d8ae3df&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/921413944.jpg?k=b5a34a7bb0281e214b60a3d7b07b1cf1b58e311f1a847ea21d6841f39372fb0b&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/921413946.jpg?k=e739a6522aa6117cc181069b66408b814bb06ed6db380e908188b94616db8548&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/921413948.jpg?k=4754767a14302b916aa594de1f7faff231122ca5ef960040361424bfe995ddaa&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/925563826.jpg?k=60768dc9a389083fd567adcb8aef4d7bdfcdeba49f8ec79d0234e0d6589f507f&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/925956699.jpg?k=023bc35e4f1cf31948fd5cc748a187dd0df2b2d1e5ddd88ef6b329c96e8f133e&o=&hp=1",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/929621173.jpg?k=5f9a9e5cf89573a4130f9808a9d9bf7c7a0c153ccee07e553206bd4a1488f104&o=",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/929621178.jpg?k=a064c11223c4bff37270d629c8bf28be999a5c551d891bc1ad56df0d3b1ccf88&o=",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/929621274.jpg?k=ff4a93b476d2a5a85d9b87f13a0c39ff1447f80b1a8951e9545abde66eb546ea&o=",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/930847730.jpg?k=fb016be335cfa939cf182596656d422d2e1dbe54f3e3971f532233700bad7fe4&o=",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/930847733.jpg?k=841b4c35b05d0f6564b1afa32622f48b8df7f4863fa5404a2551db5306612c39&o=",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/931405384.jpg?k=2fe3092e3a1a3fefda4e6c8186f73f03e1bf6ee64b48044b1179a8c4c341bd1d&o=",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/931405385.jpg?k=d7e9870117d5777a6fd5a58492d3776f8b34745612c46f997c4b361be0a6a74f&o=",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/931405386.jpg?k=bf376dd297f8298c783658e3a675b0c9fe3824a3d3236c6a09bcfda05fe9ced3&o=",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/933169321.jpg?k=ddee64af8c7138b5ccedace1e46aa73913f980b41fc20a4c0308dc3333c9b4e5&o=",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/933169328.jpg?k=531621f0ffef3cbfa5b2c377e84f97aa5c80c68cf89e0ac64b390e1f1e455202&o=",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/933169329.jpg?k=7808ad57e538c50f499449bf59743b6ea2a2fe8762f9945eb4a4b1a4c82f8b50&o=",
+		"https://cf.bstatic.com/xdata/images/hotel/max1024x768/98732594.jpg?k=1c7ef7e5b93ab39cd40691795866bb369048d619c051a91a2750ab703bb00f03&o=&hp=1"
+	]
+};
 var PICKS;
 function allPicks() {
 	if (!PICKS) PICKS = (async () => {
@@ -22946,6 +23053,7 @@ var poolLink = (id, slug, L) => I[id] ? `<p class="note" style="margin:10px 0"><
 * Six languages with hreflang, themed lists, event lists, real map (MapLibre + OpenFreeMap), dark mode.
 * No framework: plain HTML + inline CSS, a few lines of JS for the map.
 */
+var BROKEN_PH = new Set(photo_broken_default.urls);
 var SITE = "https://www.top3hotels.com";
 var SNAPSHOT_DATE = "2026-10-08";
 var BRAND = {
@@ -23183,12 +23291,13 @@ var NAME_FIX = { "/hotel/us/resort-at-marina-village.html": {
 function tidyReasons(h) {
 	const ev = h.evidence;
 	if (!ev?.reasons) return;
-	const n = h.offer?.nightly;
 	const cnt = h.booking?.count;
-	ev.reasons = ev.reasons.filter((r) => !(h.live && /^Price context:/.test(r))).map((r) => {
+	ev.reasons = ev.reasons.filter((r) => !/^Price context:/.test(r)).map((r) => {
 		let x = r;
 		if (cnt) x = x.replace(/from [\d,.]+ guest reviews/g, `from ${cnt.toLocaleString("en-US")} guest reviews`);
-		if (h.live && n && /^Budget choice:/.test(x)) x = x.replace(/€[\d,]+\.\d{2} per night/, `€${n.toFixed(2)} per night`);
+		const cc = h.candidateCount;
+		x = x.replace(/position (\d+) of (\d+) eligible properties in the provider sample/, (_m, a, e) => cc && Number(e) !== cc ? `position ${a} of ${e} eligible hotels (out of ${cc} in the sample)` : `position ${a} of ${e} hotels in the sample`);
+		if (/^Budget choice:/.test(x)) x = x.replace(/€[\d,]+(?:\.\d{2})? per night was the lowest/, "it had the lowest");
 		x = x.replace(/(\d+)% above the median/g, (_m, p) => {
 			const k = 1 + Number(p) / 100;
 			return k >= 2 ? `${k.toFixed(1)}× the median` : `${p}% above the median`;
@@ -23484,9 +23593,17 @@ var scoreL = (n, L) => n == null ? "–" : n.toLocaleString(NLOC[L] ?? "en-GB", 
 	minimumFractionDigits: 1,
 	maximumFractionDigits: 1
 });
-var range = (a, b) => {
+var range = (a, b, L = "en") => {
 	if (!a || !b) return "";
 	const da = /* @__PURE__ */ new Date(a + "T12:00:00Z"), db = /* @__PURE__ */ new Date(b + "T12:00:00Z");
+	if (L !== "en") try {
+		return new Intl.DateTimeFormat(NLOC[L] ?? "en-GB", {
+			day: "numeric",
+			month: "short",
+			year: "numeric",
+			timeZone: "UTC"
+		}).formatRange(da, db);
+	} catch {}
 	const m = db.toLocaleDateString("en-GB", {
 		month: "short",
 		year: "numeric",
@@ -23699,7 +23816,10 @@ function seoNorm(o) {
 	if (description.length > 160) {
 		const cut = description.slice(0, 159);
 		const stop = cut.lastIndexOf(". ");
-		description = stop >= 90 ? cut.slice(0, stop + 1) : cut.slice(0, 157).replace(/[\s,;:·–-]+[^\s]*$/, "").replace(/(?:[\s,;:(]+(?:&|and|y|e|et|und|og|del?|the|a|à|di|da|em|en|in|i|\())+$/i, "").replace(/[\s,;:(]+$/, "") + "…";
+		const c158 = cut.slice(0, 158);
+		const par = Math.max(...[...c158.matchAll(/\)(?=[\s,;]|$)/g)].map((m) => m.index ?? -1), -1);
+		const sep = Math.max(...[...c158.matchAll(/,\s|\s(?:and|y|und|e|et|og|en)\s/g)].map((m) => m.index ?? -1), -1);
+		description = stop >= 90 ? cut.slice(0, stop + 1) : par >= 90 ? c158.slice(0, par + 1) + "…" : sep >= 90 ? c158.slice(0, sep).replace(/[\s,;:(&]+$/, "") + "…" : cut.slice(0, 157).replace(/[\s,;:·–-]+[^\s]*$/, "").replace(/(?:[\s,;:(]+(?:&|and|y|e|et|und|og|del?|the|a|à|di|da|em|en|in|i|\())+$/i, "").replace(/[\s,;:(]+$/, "") + "…";
 	}
 	const ld = [...o.ld ?? []].map((x) => x && x["@type"] === "Article" ? {
 		...x,
@@ -23789,10 +23909,10 @@ ${CSS_DP}</style><link rel="preconnect" href="https://cf.bstatic.com"><link rel=
 ${(o.ld ?? []).map((x) => `<script type="application/ld+json">${json(x)}<\/script>`).join("")}
 <script>window.t3track=function(e,p){try{(window.dataLayer=window.dataLayer||[]).push(Object.assign({event:e},p||{}));if(window.gtag)gtag('event',e,p||{});if(window.plausible)plausible(e,{props:p||{}})}catch(_){}};document.addEventListener('click',function(ev){var a=ev.target.closest&&ev.target.closest('[data-t]');if(a)t3track(a.dataset.t,{city:a.dataset.city,category:a.dataset.cat,provider:a.dataset.p})});<\/script>
 ${consentScript(Z[o.L])}</head><body><style id="t3-v6">${V6_CSS}</style><a class="skip" href="#main">${o.L === "es" ? "Ir al contenido" : o.L === "de" ? "Zum Inhalt" : o.L === "fr" ? "Aller au contenu" : o.L === "it" ? "Vai al contenuto" : o.L === "pt" ? "Ir para o conteúdo" : o.L === "da" ? "Gå til indhold" : "Skip to content"}</a><div class="wrap">
-<header class="top">${BRAND_LINK(P(o.L, "/"))}<nav aria-label="Main"><a href="${P(o.L, "/destinations")}">${t.allDest}</a><a class="hide-sm" href="${P(o.L, "/lists")}">${t.lists}</a><a class="hide-sm" href="${o.L === "es" ? "/es/guides" : "/guides"}">${o.L === "es" ? "Guías" : "Guides"}</a><a class="hide-sm" href="/how-we-choose">${t.how}</a><a class="hide-sm hide-md" href="${P(o.L, "/map")}">🗺 ${esc(M[o.L].map)}</a><a class="hide-sm hide-md" href="/affiliate-disclosure">${esc(M[o.L].money)}</a><a class="cta" href="/partners">${X[o.L].forHotels}</a><button type="button" class="tbtn" data-pal aria-label="${esc(Y[o.L].js["search"])}">🔍 <span class="lbl">${esc(Y[o.L].js["search"])}</span> <kbd>/</kbd></button><a class="tbtn" href="${P(o.L, "/saved")}" aria-label="${esc(Y[o.L].js["saved"])}">♡<span class="n" data-savedn hidden></span></a>${langSel}</nav></header>
+<header class="top">${BRAND_LINK(P(o.L, "/"))}<nav aria-label="Main"><a href="${P(o.L, "/destinations")}">${t.allDest}</a><a class="hide-sm" href="${P(o.L, "/lists")}">${t.lists}</a><a class="hide-sm" href="${o.L === "es" ? "/es/guides" : "/guides"}">${o.L === "es" ? "Guías" : "Guides"}</a><a class="hide-sm" href="/how-we-choose">${t.how}</a><a class="hide-sm hide-md" href="${P(o.L, "/map")}"><span aria-hidden="true">🗺</span> ${esc(M[o.L].map)}</a><a class="hide-sm hide-md" href="/affiliate-disclosure">${esc(M[o.L].money)}</a><a class="cta" href="/partners">${X[o.L].forHotels}</a><button type="button" class="tbtn" data-pal aria-label="${esc(Y[o.L].js["search"])}"><span aria-hidden="true">🔍</span> <span class="lbl">${esc(Y[o.L].js["search"])}</span> <kbd>/</kbd></button><a class="tbtn" href="${P(o.L, "/saved")}" aria-label="${esc(Y[o.L].js["saved"])}">♡<span class="n" data-savedn hidden></span></a>${langSel}</nav></header>
 ${socialPill(o.L)}<main id="main" tabindex="-1">${o.body.replace(/<img(?![^>]*\bdecoding=)/g, "<img decoding=\"async\"")}</main>
 <footer><div class="cols"><div>${BRAND_LINK(P(o.L, "/"), "Top3Hotels", 30)}<p style="max-width:340px;margin:12px 0 0">${t.footer} ${X[o.L].independent} · ${X[o.L].noPaid}.</p></div>
-<div><h3>${X[o.L].explore}</h3><ul><li><a href="${P(o.L, "/destinations")}">${t.allDest}</a></li><li><a href="${P(o.L, "/lists")}">${t.lists}</a></li><li><a href="${P(GROWTH_LANGS.includes(o.L) ? o.L : "en", "/hotel-price-index")}">${o.L === "es" ? "Índice de precios" : "Hotel Price Index"}</a></li><li><a href="${P(GROWTH_LANGS.includes(o.L) ? o.L : "en", "/open-data")}">${o.L === "es" ? "Datos abiertos" : "Open data"}</a></li>${o.L === "da" ? `<li><a href="${P(o.L, "/from/billund")}">✈ Billund</a></li><li><a href="${P(o.L, "/from/aalborg")}">✈ Aalborg</a></li><li><a href="${P(o.L, "/from/aarhus")}">✈ Aarhus</a></li>` : ""}<li><a href="${P(o.L, "/cheap-cities")}">${esc(Y[o.L].cheapNav)}</a></li><li><a href="${P(o.L, "/map")}">🗺 ${esc(M[o.L].map)}</a></li><li><a href="/random">🎲 ${esc(Y[o.L].js["surprise"])}</a></li>${o.L === "en" || o.L === "es" ? `<li><a href="${P(o.L, "/gyms")}">${o.L === "es" ? "Hoteles con gimnasio" : "Hotel gyms"}</a></li><li><a href="${P(o.L, "/pools")}">${o.L === "es" ? "Hoteles con piscina" : "Hotel pools"}</a></li>` : ""}${FOOT_COUNTRIES.map(([s, cc]) => `<li><a href="${P(o.L, "/country/" + s)}">${esc(new Intl.DisplayNames([o.L], { type: "region" }).of(cc) ?? s)}</a></li>`).join("")}<li><a href="/press">Press &amp; data</a></li><li><a href="${o.L === "es" ? "/es/guides" : "/guides"}">${o.L === "es" ? "Guías" : "Guides"}</a></li></ul></div>
+<div><h3>${X[o.L].explore}</h3><ul><li><a href="${P(o.L, "/destinations")}">${t.allDest}</a></li><li><a href="${P(o.L, "/lists")}">${t.lists}</a></li><li><a href="${P(GROWTH_LANGS.includes(o.L) ? o.L : "en", "/hotel-price-index")}">${o.L === "es" ? "Índice de precios" : "Hotel Price Index"}</a></li><li><a href="${P(GROWTH_LANGS.includes(o.L) ? o.L : "en", "/open-data")}">${o.L === "es" ? "Datos abiertos" : "Open data"}</a></li>${o.L === "da" ? `<li><a href="${P(o.L, "/from/billund")}"><span aria-hidden="true">✈</span> Billund</a></li><li><a href="${P(o.L, "/from/aalborg")}"><span aria-hidden="true">✈</span> Aalborg</a></li><li><a href="${P(o.L, "/from/aarhus")}"><span aria-hidden="true">✈</span> Aarhus</a></li>` : ""}<li><a href="${P(o.L, "/cheap-cities")}">${esc(Y[o.L].cheapNav)}</a></li><li><a href="${P(o.L, "/map")}"><span aria-hidden="true">🗺</span> ${esc(M[o.L].map)}</a></li><li><a href="/random"><span aria-hidden="true">🎲</span> ${esc(Y[o.L].js["surprise"])}</a></li>${o.L === "en" || o.L === "es" ? `<li><a href="${P(o.L, "/gyms")}">${o.L === "es" ? "Hoteles con gimnasio" : "Hotel gyms"}</a></li><li><a href="${P(o.L, "/pools")}">${o.L === "es" ? "Hoteles con piscina" : "Hotel pools"}</a></li>` : ""}${FOOT_COUNTRIES.map(([s, cc]) => `<li><a href="${P(o.L, "/country/" + s)}">${esc(new Intl.DisplayNames([o.L], { type: "region" }).of(cc) ?? s)}</a></li>`).join("")}<li><a href="/press">Press &amp; data</a></li><li><a href="${o.L === "es" ? "/es/guides" : "/guides"}">${o.L === "es" ? "Guías" : "Guides"}</a></li></ul></div>
 <div><h3>${X[o.L].company}</h3><ul><li><a href="/about">${X[o.L].about}</a></li><li><a href="/how-we-choose">${t.how}</a></li><li><a href="/partners">${X[o.L].forHotels}</a></li><li><a href="/contact">${X[o.L].contact}</a></li></ul></div>
 <div><h3>${X[o.L].legal}</h3><ul><li><a href="/privacy">${X[o.L].privacy}</a></li><li><a href="/cookies">${X[o.L].cookies}</a></li><li><a href="/terms">${X[o.L].terms}</a></li><li><a href="/imprint">${X[o.L].imprint}</a></li><li><a href="/affiliate-disclosure">Affiliate disclosure</a></li><li><a href="/sitemap.xml">Sitemap</a></li></ul></div></div>
 <div class="fine"><span>© 2026 Top3Hotels · ${BRAND.entity} (${BRAND.place})</span><span>${t.disclaimer}</span></div></footer>
@@ -23938,16 +24058,25 @@ var addrKey = (a) => {
 	return street && num ? `${street}#${num}` : "";
 };
 var CSS_ALT = `.rep{margin:8px 0 0;font-size:13px}.rep summary{cursor:pointer;color:var(--muted);text-decoration:underline;text-underline-offset:3px}.rep form{display:flex;flex-direction:column;gap:8px;margin-top:8px}.rep textarea,.rep input{font:inherit;font-size:16px;border:1px solid var(--line);border-radius:10px;padding:8px 10px;background:var(--paper);color:var(--ink)}.rep .btn{min-height:40px}.repmsg{margin:0;font-size:12.5px;color:var(--muted)}.cnote{margin:10px 0 0;padding:8px 10px;border-radius:10px;background:var(--soft);font-size:12.5px;color:var(--muted)}.alt{display:block;margin:8px 0 0;font-size:13px;text-align:center;color:var(--muted);text-decoration:underline;text-underline-offset:3px}.alt:hover{color:inherit}a.alt{padding:11px 0;margin-top:2px}`;
+var NO5 = {
+	en: "No eligible 5-star hotel in our sample for this city, so the luxury pick is a 4-star hotel.",
+	es: "No hay un 5 estrellas elegible en nuestra muestra para esta ciudad, así que la opción de lujo es un 4 estrellas.",
+	de: "In unserer Stichprobe gibt es für diese Stadt kein geeignetes 5-Sterne-Hotel, daher ist die Luxus-Wahl ein 4-Sterne-Hotel.",
+	fr: "Aucun 5 étoiles éligible dans notre échantillon pour cette ville : le choix luxe est donc un 4 étoiles.",
+	it: "Nel nostro campione non c'è un 5 stelle idoneo per questa città, quindi la scelta di lusso è un 4 stelle.",
+	pt: "Não há um 5 estrelas elegível na nossa amostra para esta cidade, por isso a opção de luxo é um 4 estrelas.",
+	da: "Der er intet egnet 5-stjernet hotel i vores udvalg for denne by, så luksusvalget er et 4-stjernet hotel."
+};
 function card(h, city, i, L, sights, cityImg, review) {
 	const t = T[L];
 	const b = h.booking ?? {}, o = h.offer ?? {}, ex = h.extras ?? {};
-	const img = h.gallery?.find((g) => g.src)?.src;
+	const img = h.gallery?.find((g) => g.src && !BROKEN_PH.has(g.src))?.src;
 	const k = catKey(h);
 	const link = bookingLink(h);
 	const walk = walkText(h, sights, L);
 	const tags = (ex.tags ?? []).filter((x) => x !== "ac" && x !== "gym").slice(0, 5);
 	const cmp = [];
-	const gal = (h.gallery ?? []).map((g) => g.src).filter(Boolean).slice(0, 10);
+	const gal = (h.gallery ?? []).map((g) => g.src).filter((s) => s && !BROKEN_PH.has(s)).slice(0, 10);
 	const fav = {
 		k: `${city.slug}/${k}`,
 		s: city.slug,
@@ -23956,7 +24085,7 @@ function card(h, city, i, L, sights, cityImg, review) {
 		n: h.name,
 		lbl: label(h, L),
 		img: img ?? "",
-		p: `${b.score ? b.score.toFixed(1) + "/10 · " : ""}${money(o.nightly)} ${t.perNight}`
+		p: `${b.score ? scoreL(b.score, L) + "/10 · " : ""}${moneyL(o.nightly, L)} ${t.perNight}`
 	};
 	const y = Y[L];
 	const why = [
@@ -23967,16 +24096,16 @@ function card(h, city, i, L, sights, cityImg, review) {
 	return `<article class="card ${k}" id="${k}">
 <div class="media"${gal.length ? ` data-gallery="${esc(JSON.stringify(gal))}"` : ""}><div class="acts"><button type="button" data-fav="${esc(JSON.stringify(fav))}" aria-pressed="false" aria-label="${esc(y.js["save"])}">♡</button><button type="button" data-sharecard="${esc(`${SITE}${P(L, "/" + city.slug)}#${k}`)}" data-title="${esc(`${label(h, L)}: ${h.name} · ${city.city}`)}" aria-label="${esc(y.js["share"])}">↗</button></div>${img ? `<img src="${esc(img)}"${bsSet(img)} alt="${esc(h.name)}, ${esc(city.city)}" width="600" height="400" loading="lazy" decoding="async" referrerpolicy="no-referrer"${fbAttr([...gal.slice(1), cityImg])}>` : cityImg ? `<img src="${esc(cityImg)}" alt="${esc(city.city)}" loading="lazy"><span class="cityphoto">${esc(t.cityPhoto)}</span>` : `<div class="nophoto">${esc(h.name.slice(0, 1))}</div>`}
 <div class="badge"><span><i class="ico" aria-hidden="true">${k === "budget" ? "€" : k === "value" ? "★" : "♛"}</i>${esc(label(h, L))}</span>${i === 1 ? `<span class="pick">★ ${esc(t.ourPick)}</span>` : ""}${h.deal ? `<span class="pick deal">🔥 ${esc(M[L].deal)}</span>` : ""}</div>
-<div class="over">${b.score ? `<span class="ring" style="--p:${Math.round(b.score * 10)}" title="Booking.com ${b.score.toFixed(1)}/10"><b>${b.score.toFixed(1)}</b></span>` : "<span></span>"}<span class="pricetag" data-eur="${o.nightly ?? ""}" title="${esc(y.priceRef(fmtDate(isoDay(b.checked), L)))}"><span class="v">${money(o.nightly)}</span><small> ${esc(t.perNight)}</small></span></div></div>
+<div class="over">${b.score ? `<span class="ring" style="--p:${Math.round(b.score * 10)}" title="Booking.com ${scoreL(b.score, L)}/10"><b>${scoreL(b.score, L)}</b></span>` : "<span></span>"}<span class="pricetag" data-eur="${o.nightly ?? ""}" title="${esc(y.priceRef(fmtDate(isoDay(b.checked), L)))}"><span class="v">${moneyL(o.nightly, L)}</span><small> ${esc(t.perNight)}</small></span></div></div>
 <div class="body"><h2 class="hname">${esc(h.name)}</h2>
 <div class="meta">${b.stars ? `<span class="stars" aria-label="${b.stars} stars">${"★".repeat(b.stars)}</span>` : ""}<span>${esc(h.area ?? city.city)}</span></div>
 <p class="bestfor"><b>${esc(X[L].bestFor)}</b>${esc(bestFor(h, i, L, sights).join(" · "))}</p>
 ${why.length ? `<ul class="why">${why.map((w) => `<li>${esc(w)}</li>`).join("")}</ul>` : ""}
-<div class="trust"><span><b>${fmtInt(b.count)}</b> Booking.com ${esc(t.reviews)}</span>${ex.loc ? `<span>${esc(t.location)} <b>${ex.loc}</b></span>` : ""}<span class="live">${esc(M[L].live(fmtLive(isoDay(b.checked))))}</span></div>
+<div class="trust"><span><b>${intL(b.count, L)}</b> Booking.com ${esc(t.reviews)}</span>${ex.loc ? `<span>${esc(t.location)} <b>${ex.loc}</b></span>` : ""}<span class="live">${esc(M[L].live(fmtLive(isoDay(b.checked))))}</span></div>
 ${ex.pros?.length ? `<ul class="pc"><li class="pro"><small>${esc(t.guestsSay)}</small><span${L === "en" ? "" : " lang=\"en\""}>${esc(ex.pros[0])}</span></li>${ex.cons?.[0] ? `<li class="con"${L === "en" ? "" : " lang=\"en\""}>${esc(ex.cons[0])}</li>` : ""}</ul>` : `<p style="margin:0;font-size:14px">${esc(h.evidence?.shortReason ?? h.reason ?? "")}</p>`}
 ${tags.length ? `<ul class="chips">${tags.map((x) => `<li>${esc(t.tags[x] ?? x)}</li>`).join("")}</ul>` : ""}
 <div class="price"><span>${esc(t.refRate)}</span><span class="total" data-total="${o.nightly ?? ""}" hidden></span></div>
-${o.checkout && dayMs(o.checkout) < Date.now() ? `<p class="cnote">${esc(NOTE[L].past(range(o.checkin, o.checkout)))}</p>` : ""}${isHostel(h) ? `<p class="cnote">${esc(NOTE[L].hostel)}</p>` : ""}${h.sameAs ? `<p class="cnote">${esc(NOTE[L].same(h.sameAs))}</p>` : ""}
+${o.checkout && dayMs(o.checkout) < Date.now() ? `<p class="cnote">${esc(NOTE[L].past(range(o.checkin, o.checkout, L)))}</p>` : ""}${isHostel(h) ? `<p class="cnote">${esc(NOTE[L].hostel)}</p>` : ""}${h.category === "Luxury" && b.stars != null && b.stars < 5 ? `<p class="cnote">${esc(NO5[L] ?? NO5["en"] ?? "")}</p>` : ""}${h.sameAs ? `<p class="cnote">${esc(NOTE[L].same(h.sameAs))}</p>` : ""}
 ${link ? `<a class="btn" href="${esc(link)}" rel="sponsored nofollow noopener" target="_blank" data-t="check_availability" data-city="${esc(city.slug)}" data-cat="${k}" data-p="booking">${esc(t.checkPrice)} ↗</a><p class="disc">${esc(Z[L].disc)}</p>${((a) => a ? `<a class="alt" href="${esc(a)}" rel="sponsored nofollow noopener" target="_blank" data-t="alt_click" data-city="${esc(city.slug)}" data-cat="${k}" data-p="booking-alt">${esc(ALT_TXT[L])} →</a>` : "")(altSearch(k, o.nightly, b.stars, city))}` : ""}
 ${review ? `<a class="alt" href="${esc(review)}" data-t="review_click" data-city="${esc(city.slug)}" data-cat="${k}">${esc(L === "es" ? "Leer el análisis completo" : L === "en" ? "Read the full review" : "Full review (English)")} →</a>` : ""}
 <div class="cmp">${cmp.map(([n, u]) => `<a href="${esc(u)}" rel="nofollow noopener" target="_blank" data-t="compare_click" data-city="${esc(city.slug)}" data-cat="${k}" data-p="${esc(n)}">${esc(n)}</a>`).join("")}<a href="${esc(mapLink(h, city))}" rel="noopener nofollow" target="_blank">${esc(t.map)} ↗</a></div><details class="rep"><summary>${esc(M[L].report)}</summary><form data-report="${esc(JSON.stringify({
@@ -24036,9 +24165,9 @@ async function cityPage(city0, L) {
 	const homonym = (await data()).index.some((x) => x.id !== city.id && (x.city === city0.city || cityName(x, L) === city.city));
 	const title = t.title(homonym ? `${city.city}, ${cname}` : city.city);
 	const minPrice = Math.min(...hs.map((h) => h.offer?.nightly ?? Infinity));
-	const description = Number.isFinite(minPrice) && minPrice <= 150 ? cityDescPrice(L, city.city, budget.name, value.name, lux.name, money(minPrice), value.booking?.score) : t.desc(city.city, cname, budget.name, value.name, lux.name);
+	const description = Number.isFinite(minPrice) && minPrice <= 150 ? cityDescPrice(L, city.city, budget.name, value.name, lux.name, moneyL(minPrice, L), value.booking?.score) : t.desc(city.city, cname, budget.name, value.name, lux.name);
 	const areas = [...new Set(hs.map((h) => h.area).filter(Boolean))].join(", ");
-	const dates = range(o0.checkin, o0.checkout);
+	const dates = range(o0.checkin, o0.checkout, L);
 	const pageDate = cityChecked(hs);
 	const days = [...new Set(hs.map((h) => isoDay(h.booking?.checked)))].sort();
 	const checkedText = M[L].live(days.length > 1 ? `${fmtLive(days[0])} – ${fmtLive(days[days.length - 1])}` : fmtLive(days[0] ?? pageDate));
@@ -24069,7 +24198,7 @@ async function cityPage(city0, L) {
 	const y = Y[L];
 	const aps = Object.entries(await airports()).filter(([, a]) => a.dest.some(([id]) => id === city.id));
 	const flights = aps.length && L === "da" ? `<p class="flights"><span>✈ ${esc(y.flights)}</span>${aps.map(([k, a]) => `<a href="${P(L, `/from/${k}`)}">${esc(a.name)} (${esc(a.iata)})</a>`).join("")}</p>` : "";
-	const in1 = `<p class="in1h">${esc(y.in1)}</p><div class="in1">${hs.map((h) => `<a class="${catKey(h)}" href="#${catKey(h)}"><small>${esc(label(h, L))}</small><strong>${esc(h.name)}</strong><span>${h.booking?.score ? h.booking.score.toFixed(1) + "/10 · " : ""}<span data-eur="${h.offer?.nightly ?? ""}"><span class="v">${money(h.offer?.nightly)}</span></span> ${esc(t.perNight)}</span></a>`).join("")}</div>`;
+	const in1 = `<p class="in1h">${esc(y.in1)}</p><div class="in1">${hs.map((h) => `<a class="${catKey(h)}" href="#${catKey(h)}"><small>${esc(label(h, L))}</small><strong>${esc(h.name)}</strong><span>${h.booking?.score ? scoreL(h.booking.score, L) + "/10 · " : ""}<span data-eur="${h.offer?.nightly ?? ""}"><span class="v">${moneyL(h.offer?.nightly, L)}</span></span> ${esc(t.perNight)}</span></a>`).join("")}</div>`;
 	const jump = `<nav class="jump" aria-label="${esc(y.jHotels)}"><a href="#hotels">${esc(y.jHotels)}</a><a href="#where">${esc(y.jWhere)}</a><a href="#maph">${esc(y.jMap)}</a><a href="#cmp">${esc(y.jCompare)}</a><a href="#faq">${esc(y.jFaq)}</a></nav>`;
 	const curSel = `<label>${esc(y.currency)}<select data-cur aria-label="${esc(y.currency)}">${[
 		"EUR",
@@ -24214,7 +24343,7 @@ ${guideBlock(city, L)}
 ${areaBlock}
 <section aria-labelledby="maph"><h2 id="maph">${esc(t.map)}</h2><div id="map" role="img" aria-label="${esc(t.mapHint)}"></div><div class="legend"><span><i style="background:#1f7a5a"></i>${esc(t.cat.Budget)}</span><span><i style="background:#d83b51"></i>${esc(t.cat["Best Value"])}</span><span><i style="background:#b8860b"></i>${esc(label(lux, L))}</span>${sights?.length ? `<span><i style="background:#46566a"></i>${esc(sights.map((s) => s.name).join(" · "))}</span>` : ""}</div></section>
 <section aria-labelledby="cmp"><h2 id="cmp">${esc(t.compared(city.city))}</h2><div class="tablewrap"><table><thead><tr>${t.cols.map((c) => `<th>${esc(c)}</th>`).join("")}</tr></thead><tbody>
-${hs.map((h) => `<tr><td>${esc(label(h, L))}</td><td>${esc(h.name)}</td><td>${esc(h.area ?? "")}</td><td>${h.booking?.stars ?? "–"}</td><td>${h.booking?.score?.toFixed(1) ?? "–"} (${fmtInt(h.booking?.count)})</td><td>${money(h.offer?.nightly)}</td></tr>`).join("")}
+${hs.map((h) => `<tr><td>${esc(label(h, L))}</td><td>${esc(h.name)}</td><td>${esc(h.area ?? "")}</td><td>${h.booking?.stars ?? "–"}</td><td>${h.booking?.score != null ? scoreL(h.booking.score, L) : "–"} (${intL(h.booking?.count, L)})</td><td>${moneyL(h.offer?.nightly, L)}</td></tr>`).join("")}
 </tbody></table></div></section>
 <section aria-labelledby="faq"><h2 id="faq">${esc(t.faqTitle(city.city))}</h2><dl class="faq">${faq.map(([q, a]) => `<dt>${esc(q)}</dt><dd>${esc(a)}</dd>`).join("")}</dl></section>
 <section aria-labelledby="how"><h2 id="how">${esc(t.howTitle)}</h2><p class="lead">${esc(t.howText)} <a href="/how-we-choose">${esc(t.how)} →</a></p></section>
@@ -26202,7 +26331,7 @@ Policy: https://www.top3hotels.com/terms
 }
 var serverEntryPromise;
 async function getServerEntry() {
-	if (!serverEntryPromise) serverEntryPromise = import("./server-CW6UWq0F.mjs").then((m) => m.default ?? m);
+	if (!serverEntryPromise) serverEntryPromise = import("./server-DucyLT9j.mjs").then((m) => m.default ?? m);
 	return serverEntryPromise;
 }
 async function normalizeCatastrophicSsrResponse(response) {
