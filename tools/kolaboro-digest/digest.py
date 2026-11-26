@@ -81,12 +81,35 @@ class Hist:
     def content(self, name, sha):
         p = os.path.join(self.cache, name.replace('/', '_') + '.' + sha[:16] + '.json')
         if os.path.exists(p):
-            return json.load(open(p))
+            return hide(json.load(open(p)))
         b = self._get('%s/repos/%s/contents/%s?ref=%s' % (API, self.repo, K + name, sha), raw=True)
         if b is None:
             return None
         open(p, 'wb').write(b)
-        return json.loads(b)
+        return hide(json.loads(b))
+
+
+# Owner rule: Sumba appears only in the transparency ranking. Its projects are left out of every copy of the case file read here,
+# so the digest, the change heatmap and their JSON never list Sumba as a market (n40 k24, 26 Nov 2026).
+HIDE_MARKETS = {'Sumba'}
+
+
+HIDDEN_IDS = set()   # ids of hidden-market projects seen in any case file copy; dropped from the per-project files too (promises, register checks, stalled sites)
+
+
+def hide(d):
+    if isinstance(d, dict) and isinstance(d.get('cases'), list):
+        out = []
+        for c in d['cases']:
+            if isinstance(c, dict) and (c.get('market') in HIDE_MARKETS or c.get('region') in HIDE_MARKETS):
+                if c.get('id'):
+                    HIDDEN_IDS.add(c['id'])
+                continue
+            out.append(c)
+        d = dict(d, cases=out)
+    if isinstance(d, dict) and isinstance(d.get('projects'), dict) and HIDDEN_IDS:
+        d = dict(d, projects={i: v for i, v in d['projects'].items() if i not in HIDDEN_IDS})
+    return d
 
 
 def day_versions(commits, d0, d1):
@@ -433,9 +456,9 @@ def intro(W, use_ai):
             txt, spend = ask_claude(f, key)
             chk = check_text(txt, allowed)
             if chk['all_backed'] and 40 <= len(txt.split()) <= 160:
-                return {'text': txt, 'by': spend['model'], 'check': chk, 'spend': spend, 'facts': f}
+                return {'text': txt, 'by': 'checked-draft', 'check': chk, 'facts': f}   # public copy never names the drafting tool (owner rule); spend goes to the run summary
             chk.update({'rejected': True, 'draft': txt[:1500]})
-            return {'text': tpl, 'by': 'template', 'check': chk, 'spend': spend, 'facts': f}
+            return {'text': tpl, 'by': 'template', 'check': chk, 'facts': f}
         except Exception as e:
             return {'text': tpl, 'by': 'template', 'check': {'error': str(e)[:200]}, 'facts': f}
     return {'text': tpl, 'by': 'template', 'check': tchk, 'facts': f}
@@ -533,7 +556,7 @@ def week_main(W, weeks, latest):
     span = '%s to %s' % (fdate(mon), fdate(to))
     arch = '<ul class="dg-arch">' + ''.join('<li><a href="%s"%s>Week %s%s</a></li>' % ('#top' if w['id'] == W['id'] else '#w-' + w['id'], ' aria-current="page"' if w['id'] == W['id'] else '', w['id'].replace('-', ' week ').split(' week ')[1] + ', ' + w['id'][:4], ' (to date)' if w.get('partial') else '') for w in weeks) + '</ul>'
     I = W['intro']
-    by = ('Intro drafted by %s from the counts below, then checked by code: every number in it appears in the data.' % esc(I['by'])) if I['by'] != 'template' else 'Intro filled in by code from the counts below (no AI).'
+    by = 'Intro checked by code against the counts below: every number in it appears in the data.' if I['by'] != 'template' else 'Intro filled in by code from the counts below.'
     sec = lambda h, idh, body, sub='': '<section class="y-sec dg-sec" aria-labelledby="%s"><div class="wrap"><h2 id="%s">%s</h2>%s%s</div></section>' % (idh, idh, h, ('<p class="lead">%s</p>' % sub) if sub else '', body)   # noqa: E731
     P = S['promises']
     body = []
@@ -716,8 +739,7 @@ def main():
     os.makedirs(os.path.join(a.out, 'digest'), exist_ok=True)
     HM = heatmap(today, H, CM, hist_start)
     D = {'version': 'digest-1', 'generated': dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'), 'history_starts': hist_start.isoformat(), 'latest': latest,
-         'licence': 'CC BY 4.0 (credit: Kolaboro, kolaboro.com)', 'sources': ['/data/' + n for n in names], 'weeks': WL, 'changes': HM,
-         'ai': {'model': 'claude-haiku-5-5', 'role': 'intro paragraph only, checked by code', 'this_run_usd': round(SPEND['usd'], 4)}}
+         'licence': 'CC BY 4.0 (credit: Kolaboro, kolaboro.com)', 'sources': ['/data/' + n for n in names], 'weeks': WL, 'changes': HM}
     data = '<script type="application/json" id="digest-data">' + json.dumps(D, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/') + '</script>'
     # one page and no other file (file budget of the shared Pages project): the data rides inside the page and the worker serves it
     # as /api/x/ins/digest.json; latest week in full, earlier weeks summarised, heatmap of 7 and 30 days (file budget of the shared Pages project): latest week in full, earlier weeks summarised, heatmap of 7 and 30 days

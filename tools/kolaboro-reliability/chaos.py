@@ -7,6 +7,7 @@ Two kinds of scenario:
     a host that never answers (TCP blackhole) and a page that answers very slowly.
 Usage: python3 chaos.py <outdir>
 """
+import re
 import json, os, sys, time, random, string, datetime, urllib.request, urllib.error
 
 BASE = os.environ.get('BASE', 'https://kolaboro.com')
@@ -45,19 +46,30 @@ def oidc():
     return json.load(r)['value']
 
 
+# public wording (owner rule: public copy never mentions AI): the two models are "the primary reader" and "the second reader"
 AI = [
-    ('primary_model_down', 'Primary AI reader down', 'claude-haiku answers HTTP 529 (overloaded)'),
-    ('primary_model_down_injection', 'Primary AI reader down, page with hidden AI instructions', 'claude-haiku answers HTTP 529'),
-    ('second_model_down', 'Second AI reader down', 'claude-sonnet answers HTTP 529'),
-    ('primary_model_slow', 'Primary AI reader hangs (never answers)', 'claude-haiku request never answers; the 60 s deadline in anthropic() must cut it'),
-    ('both_models_down', 'Both AI readers down', 'claude-haiku and claude-sonnet answer HTTP 529'),
+    ('primary_model_down', 'Primary reader down', 'the primary reader answers HTTP 529 (overloaded)'),
+    ('primary_model_down_injection', 'Primary reader down, page with hidden instructions', 'the primary reader answers HTTP 529'),
+    ('second_model_down', 'Second reader down', 'the second reader answers HTTP 529'),
+    ('primary_model_slow', 'Primary reader hangs (never answers)', 'the primary reader never answers; the 60 s deadline must cut it'),
+    ('both_models_down', 'Both readers down', 'both readers answer HTTP 529'),
 ]
+PUB = [(re.compile(r'claude-haiku[\w.-]*', re.I), 'primary reader'), (re.compile(r'claude-sonnet[\w.-]*', re.I), 'second reader'), (re.compile(r'claude-[\w.-]+', re.I), 'reader'),
+       (re.compile(r'\bAI manipulation\b'), 'hidden instructions'), (re.compile(r'\bAI\b'), 'automated'), (re.compile(r'\b(anthropic|claude)\b', re.I), 'reader')]
+
+
+def pub(t):
+    """Observed and expected text as published: model and vendor names become reader roles."""
+    t = '' if t is None else str(t)
+    for rx, rep in PUB:
+        t = rx.sub(rep, t)
+    return t
 
 
 def ai_scenarios(tok):
     out = []
     for sid, title, forced in AI:
-        s = {'id': sid, 'title': title, 'kind': 'ai', 'forced': forced}
+        s = {'id': sid, 'title': title, 'kind': 'reader', 'forced': forced}
         if not tok:
             s.update(pass_=None, expected='', observed_text='skipped: no OIDC token (not running in GitHub Actions)', ms=None)
             out.append(s)
@@ -66,15 +78,15 @@ def ai_scenarios(tok):
         if st == 200 and js and 'pass' in js:
             o = js.get('observed') or {}
             if o.get('report'):
-                obs = 'report returned' + (', with consensus block' if o.get('consensus_block') else ', single reader (no consensus block)') + ', title type ' + str(o.get('title_type')) + ', attention ' + str(o.get('attention')) + (', AI manipulation detected' if o.get('ai_manipulation') else '')
+                obs = 'report returned' + (', with consensus block' if o.get('consensus_block') else ', single reader (no consensus block)') + ', title type ' + str(o.get('title_type')) + ', attention ' + str(o.get('attention')) + (', hidden instructions detected' if o.get('ai_manipulation') else '')
             else:
                 obs = 'no report; error raised: ' + str(o.get('error'))
             obs += ' (' + str(js.get('forced_failures_served')) + ' forced failure(s) served)'
-            s.update(pass_=bool(js['pass']), expected=js.get('expected'), observed_text=obs, ms=js.get('ms'), wall_ms=ms)
+            s.update(pass_=bool(js['pass']), expected=pub(js.get('expected')), observed_text=pub(obs), ms=js.get('ms'), wall_ms=ms)
         elif st == 200 and js and js.get('skipped'):
-            s.update(pass_=None, expected='', observed_text='skipped: ' + js['skipped'], ms=ms)
+            s.update(pass_=None, expected='', observed_text=pub('skipped: ' + js['skipped']), ms=ms)
         else:
-            s.update(pass_=False, expected='The drill endpoint answers and the scenario runs.', observed_text='drill endpoint answered HTTP %s: %s' % (st, txt[:160]), ms=ms)
+            s.update(pass_=False, expected='The drill endpoint answers and the scenario runs.', observed_text=pub('drill endpoint answered HTTP %s: %s' % (st, txt[:160])), ms=ms)
         out.append(s)
     return out
 
@@ -90,7 +102,7 @@ def source_scenarios():
     st, js, txt, ms = analyze('https://kolaboro-drill-%s.invalid/' % rnd)
     ok = st == 422 and js and js.get('error') == 'fetch' and ms < 15000
     out.append({'id': 'dead_domain', 'title': 'Source website gone (domain does not resolve)', 'kind': 'source', 'forced': 'URL on a .invalid domain',
-                'expected': 'Clean error {"error":"fetch"} with HTTP 422 in under 15 s, no AI call, nothing invented.',
+                'expected': 'Clean error {"error":"fetch"} with HTTP 422 in under 15 s, no automated reading, nothing invented.',
                 'observed_text': 'HTTP %s %s' % (st, txt[:120]), 'ms': ms, 'pass_': bool(ok)})
     # 2. page removed
     pre, _, _, _ = call('https://httpbin.org/status/410', timeout=20)
@@ -138,10 +150,17 @@ def main():
     ran = [s for s in sc if s['pass'] is not None]
     run = {'at': datetime.datetime.utcnow().isoformat(timespec='seconds') + 'Z', 'seconds': int(time.time() - t0), 'ran': len(ran), 'passed': sum(1 for s in ran if s['pass']), 'scenarios': sc}
     runs = [run] + [r for r in (prev.get('runs') or []) if isinstance(r, dict) and r.get('at')][:KEEP - 1]
+    for r in runs[1:]:   # earlier runs keep their results; their text is published in today's wording
+        for x in r.get('scenarios') or []:
+            for k in ('title', 'forced', 'expected', 'observed_text'):
+                if isinstance(x.get(k), str):
+                    x[k] = pub(x[k])
+            if x.get('kind') == 'ai':
+                x['kind'] = 'reader'
     out = {'updated': run['at'], 'target': BASE, 'schedule': 'weekly, Wednesday 05:11 UTC',
            'not_covered': [
                'database (Supabase) down or slow: needs a fault switch inside rpc() in kolaboro.js',
-               'AI daily budget breaker tripping: needs a test switch in aiAllowed()',
+               'daily spending breaker of the automated reading tripping: needs a test switch',
                'source page that trickles its body for minutes: fetchPage() now has a 15 s deadline covering the body, but no public test server that trickles to Cloudflare was found to drill it',
                'Cloudflare edge or static assets failing: outside our control, covered by the outside uptime probe',
                'OpenTimestamps calendars down during evidence stamping'],
