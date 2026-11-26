@@ -23858,6 +23858,204 @@ document.addEventListener('click',function(e){var c=e.target.closest&&e.target.c
 var f=e.target.closest&&e.target.closest('[data-fav]');if(f){setTimeout(function(){lv.textContent=f.getAttribute('aria-pressed')==='true'?lv.getAttribute('data-s')||'':lv.getAttribute('data-r')||''},50)}
 var p=e.target.closest&&e.target.closest('[data-c4ph]');if(p){e.preventDefault();e.stopPropagation();var m=p.closest('.media'),g=[];try{g=JSON.parse(m.getAttribute('data-gallery')||'[]')}catch(_){}if(!g.length)return;var i=0,d=document.createElement('div');d.className='lb';d.setAttribute('role','dialog');d.setAttribute('aria-modal','true');d.setAttribute('aria-label',p.getAttribute('aria-label'));d.innerHTML='<img alt="" referrerpolicy="no-referrer"><span class="cnt"></span><button class="x" aria-label="✕">✕</button>'+(g.length>1?'<button class="nav prev" aria-label="‹">‹</button><button class="nav next" aria-label="›">›</button>':'');var big=d.querySelector('img'),cnt=d.querySelector('.cnt');var show=function(k){i=(k+g.length)%g.length;big.src=g[i];cnt.textContent=(i+1)+' / '+g.length};show(0);var close=function(){d.remove();document.removeEventListener('keydown',key);p.focus()};var key=function(ev){if(ev.key==='Escape')close();if(ev.key==='ArrowRight')show(i+1);if(ev.key==='ArrowLeft')show(i-1);if(ev.key==='Tab'){var b=d.querySelectorAll('button');if(!b.length)return;var a=b[0],z=b[b.length-1];if(ev.shiftKey&&document.activeElement===a){ev.preventDefault();z.focus()}else if(!ev.shiftKey&&document.activeElement===z){ev.preventDefault();a.focus()}}};document.addEventListener('keydown',key);d.addEventListener('click',function(ev){if(ev.target.closest('.next'))show(i+1);else if(ev.target.closest('.prev'))show(i-1);else if(ev.target===d||ev.target.closest('.x'))close()});var x0=null;d.addEventListener('touchstart',function(ev){x0=ev.touches[0].clientX},{passive:true});d.addEventListener('touchend',function(ev){if(x0===null)return;var dx=ev.changedTouches[0].clientX-x0;if(Math.abs(dx)>40)show(i+(dx<0?1:-1));x0=null});document.body.appendChild(d);d.querySelector('.x').focus()}},true);
 var sl=document.querySelector('[data-c4live]');if(sl){lv.setAttribute('data-s',sl.getAttribute('data-s'));lv.setAttribute('data-r',sl.getAttribute('data-r'))}})();<\/script>`;
+var H4 = {
+	en: {
+		keyH: "Key data",
+		type: "Pick type",
+		stars: "Stars",
+		score: "Guest score",
+		reviews: "Reviews",
+		area: "Area",
+		centre: "To the centre",
+		airport: "Nearest large airport",
+		starsChip: (n) => `${n}-star hotel`,
+		copyAddr: "Copy address",
+		copied: "Copied",
+		mapOpen: "Open in Google Maps",
+		qStars: (h) => `How many stars does ${h} have?`,
+		aStars: (h, n) => `${h} is listed as a ${n}-star hotel on Booking.com.`,
+		qScore: (h) => `What is the guest score of ${h}?`,
+		aScore: (h, s, n) => `${s}/10 on Booking.com${n ? `, from ${n} reviews` : ""}.`,
+		qCentre: (h, c) => `How far is ${h} from the centre of ${c}?`,
+		aCentre: (d) => `${d} in a straight line.`,
+		qPark: (h) => `Does ${h} have free parking?`,
+		qPets: (h) => `Does ${h} allow pets?`,
+		yes: (x) => `Yes, the hotel lists ${x} on Booking.com. Check the conditions before you book.`,
+		no: "The hotel does not list it on Booking.com.",
+		badgeH: "For this hotel",
+		badge: "This hotel can show the official Top3Hotels badge for its pick.",
+		report: "Report an error on this page",
+		dataNote: "Straight-line distances. Airports: OurAirports (public domain)."
+	},
+	es: {
+		keyH: "Datos clave",
+		type: "Tipo de elección",
+		stars: "Estrellas",
+		score: "Nota",
+		reviews: "Opiniones",
+		area: "Zona",
+		centre: "Al centro",
+		airport: "Aeropuerto grande más cercano",
+		starsChip: (n) => `Hotel de ${n} estrellas`,
+		copyAddr: "Copiar dirección",
+		copied: "Copiada",
+		mapOpen: "Abrir en Google Maps",
+		qStars: (h) => `¿Cuántas estrellas tiene ${h}?`,
+		aStars: (h, n) => `${h} figura como hotel de ${n} estrellas en Booking.com.`,
+		qScore: (h) => `¿Qué nota tiene ${h}?`,
+		aScore: (h, s, n) => `${s}/10 en Booking.com${n ? `, con ${n} opiniones` : ""}.`,
+		qCentre: (h, c) => `¿A qué distancia del centro de ${c} está ${h}?`,
+		aCentre: (d) => `${d} en línea recta.`,
+		qPark: (h) => `¿Tiene ${h} parking gratis?`,
+		qPets: (h) => `¿Admite mascotas ${h}?`,
+		yes: (x) => `Sí, el hotel indica ${x} en Booking.com. Revisa las condiciones antes de reservar.`,
+		no: "El hotel no lo indica en Booking.com.",
+		badgeH: "Para este hotel",
+		badge: "Este hotel puede mostrar la insignia oficial de Top3Hotels de su elección.",
+		report: "Informar de un error en esta página",
+		dataNote: "Distancias en línea recta. Aeropuertos: OurAirports (dominio público)."
+	},
+	de: {
+		keyH: "Eckdaten",
+		type: "Art der Empfehlung",
+		stars: "Sterne",
+		score: "Gästenote",
+		reviews: "Bewertungen",
+		area: "Lage",
+		centre: "Zum Zentrum",
+		airport: "Nächster großer Flughafen",
+		starsChip: (n) => `${n}-Sterne-Hotel`,
+		copyAddr: "Adresse kopieren",
+		copied: "Kopiert",
+		mapOpen: "In Google Maps öffnen",
+		qStars: (h) => `Wie viele Sterne hat ${h}?`,
+		aStars: (h, n) => `${h} ist auf Booking.com als ${n}-Sterne-Hotel gelistet.`,
+		qScore: (h) => `Welche Gästenote hat ${h}?`,
+		aScore: (h, s, n) => `${s}/10 auf Booking.com${n ? `, aus ${n} Bewertungen` : ""}.`,
+		qCentre: (h, c) => `Wie weit ist ${h} vom Zentrum von ${c} entfernt?`,
+		aCentre: (d) => `${d} Luftlinie.`,
+		qPark: (h) => `Hat ${h} kostenlose Parkplätze?`,
+		qPets: (h) => `Sind Haustiere in ${h} erlaubt?`,
+		yes: (x) => `Ja, das Hotel gibt auf Booking.com ${x} an. Prüfen Sie die Bedingungen vor der Buchung.`,
+		no: "Das Hotel gibt das auf Booking.com nicht an.",
+		badgeH: "Für dieses Hotel",
+		badge: "Dieses Hotel kann das offizielle Top3Hotels-Abzeichen seiner Empfehlung zeigen.",
+		report: "Fehler auf dieser Seite melden",
+		dataNote: "Entfernungen in Luftlinie. Flughäfen: OurAirports (gemeinfrei)."
+	},
+	fr: {
+		keyH: "Données clés",
+		type: "Type de choix",
+		stars: "Étoiles",
+		score: "Note",
+		reviews: "Avis",
+		area: "Quartier",
+		centre: "Au centre",
+		airport: "Grand aéroport le plus proche",
+		starsChip: (n) => `Hôtel ${n} étoiles`,
+		copyAddr: "Copier l'adresse",
+		copied: "Copiée",
+		mapOpen: "Ouvrir dans Google Maps",
+		qStars: (h) => `Combien d'étoiles a ${h} ?`,
+		aStars: (h, n) => `${h} est classé ${n} étoiles sur Booking.com.`,
+		qScore: (h) => `Quelle est la note de ${h} ?`,
+		aScore: (h, s, n) => `${s}/10 sur Booking.com${n ? `, sur ${n} avis` : ""}.`,
+		qCentre: (h, c) => `À quelle distance du centre de ${c} se trouve ${h} ?`,
+		aCentre: (d) => `${d} à vol d'oiseau.`,
+		qPark: (h) => `${h} a-t-il un parking gratuit ?`,
+		qPets: (h) => `${h} accepte-t-il les animaux ?`,
+		yes: (x) => `Oui, l'hôtel indique ${x} sur Booking.com. Vérifiez les conditions avant de réserver.`,
+		no: "L'hôtel ne l'indique pas sur Booking.com.",
+		badgeH: "Pour cet hôtel",
+		badge: "Cet hôtel peut afficher le badge officiel Top3Hotels de son choix.",
+		report: "Signaler une erreur sur cette page",
+		dataNote: "Distances à vol d'oiseau. Aéroports : OurAirports (domaine public)."
+	},
+	it: {
+		keyH: "Dati chiave",
+		type: "Tipo di scelta",
+		stars: "Stelle",
+		score: "Voto",
+		reviews: "Recensioni",
+		area: "Zona",
+		centre: "Al centro",
+		airport: "Grande aeroporto più vicino",
+		starsChip: (n) => `Hotel a ${n} stelle`,
+		copyAddr: "Copia indirizzo",
+		copied: "Copiato",
+		mapOpen: "Apri in Google Maps",
+		qStars: (h) => `Quante stelle ha ${h}?`,
+		aStars: (h, n) => `${h} è indicato come hotel a ${n} stelle su Booking.com.`,
+		qScore: (h) => `Che voto ha ${h}?`,
+		aScore: (h, s, n) => `${s}/10 su Booking.com${n ? `, su ${n} recensioni` : ""}.`,
+		qCentre: (h, c) => `Quanto dista ${h} dal centro di ${c}?`,
+		aCentre: (d) => `${d} in linea d'aria.`,
+		qPark: (h) => `${h} ha il parcheggio gratuito?`,
+		qPets: (h) => `${h} accetta animali?`,
+		yes: (x) => `Sì, l'hotel indica ${x} su Booking.com. Verifica le condizioni prima di prenotare.`,
+		no: "L'hotel non lo indica su Booking.com.",
+		badgeH: "Per questo hotel",
+		badge: "Questo hotel può mostrare il badge ufficiale Top3Hotels della sua scelta.",
+		report: "Segnala un errore in questa pagina",
+		dataNote: "Distanze in linea d'aria. Aeroporti: OurAirports (pubblico dominio)."
+	},
+	pt: {
+		keyH: "Dados principais",
+		type: "Tipo de escolha",
+		stars: "Estrelas",
+		score: "Nota",
+		reviews: "Avaliações",
+		area: "Zona",
+		centre: "Ao centro",
+		airport: "Grande aeroporto mais próximo",
+		starsChip: (n) => `Hotel de ${n} estrelas`,
+		copyAddr: "Copiar morada",
+		copied: "Copiada",
+		mapOpen: "Abrir no Google Maps",
+		qStars: (h) => `Quantas estrelas tem ${h}?`,
+		aStars: (h, n) => `${h} aparece como hotel de ${n} estrelas no Booking.com.`,
+		qScore: (h) => `Que nota tem ${h}?`,
+		aScore: (h, s, n) => `${s}/10 no Booking.com${n ? `, com ${n} avaliações` : ""}.`,
+		qCentre: (h, c) => `A que distância do centro de ${c} fica ${h}?`,
+		aCentre: (d) => `${d} em linha reta.`,
+		qPark: (h) => `${h} tem estacionamento gratuito?`,
+		qPets: (h) => `${h} aceita animais?`,
+		yes: (x) => `Sim, o hotel indica ${x} no Booking.com. Confirme as condições antes de reservar.`,
+		no: "O hotel não o indica no Booking.com.",
+		badgeH: "Para este hotel",
+		badge: "Este hotel pode mostrar o selo oficial Top3Hotels da sua escolha.",
+		report: "Comunicar um erro nesta página",
+		dataNote: "Distâncias em linha reta. Aeroportos: OurAirports (domínio público)."
+	},
+	da: {
+		keyH: "Nøgletal",
+		type: "Type valg",
+		stars: "Stjerner",
+		score: "Karakter",
+		reviews: "Anmeldelser",
+		area: "Område",
+		centre: "Til centrum",
+		airport: "Nærmeste store lufthavn",
+		starsChip: (n) => `${n}-stjernet hotel`,
+		copyAddr: "Kopiér adresse",
+		copied: "Kopieret",
+		mapOpen: "Åbn i Google Maps",
+		qStars: (h) => `Hvor mange stjerner har ${h}?`,
+		aStars: (h, n) => `${h} står som ${n}-stjernet hotel på Booking.com.`,
+		qScore: (h) => `Hvilken karakter har ${h}?`,
+		aScore: (h, s, n) => `${s}/10 på Booking.com${n ? `, fra ${n} anmeldelser` : ""}.`,
+		qCentre: (h, c) => `Hvor langt ligger ${h} fra centrum af ${c}?`,
+		aCentre: (d) => `${d} i luftlinje.`,
+		qPark: (h) => `Har ${h} gratis parkering?`,
+		qPets: (h) => `Må man have kæledyr med på ${h}?`,
+		yes: (x) => `Ja, hotellet oplyser ${x} på Booking.com. Tjek betingelserne før du booker.`,
+		no: "Hotellet oplyser det ikke på Booking.com.",
+		badgeH: "For dette hotel",
+		badge: "Dette hotel kan vise det officielle Top3Hotels-mærke for sit valg.",
+		report: "Meld en fejl på denne side",
+		dataNote: "Afstande i luftlinje. Lufthavne: OurAirports (public domain)."
+	}
+};
 var flag = (cc) => cc && /^[A-Z]{2}$/.test(cc) ? String.fromCodePoint(...[...cc].map((c) => 127397 + c.charCodeAt(0))) : "";
 /**
 * Server-rendered SEO layer for Top3Hotels (v2).
@@ -26018,7 +26216,7 @@ async function contactPage() {
 		path: "/contact",
 		body: `${crumbsEn("Contact")}<h1>Contact us<em>.</em></h1><p class="lead">We usually reply within two working days.</p>
 <div class="pillars"><div class="pillar"><b>Partners</b><span>Hotels, destinations, travel brands.<br>${mail("Partnership with Top3Hotels", "Write to partnerships")}</span></div><div class="pillar"><b>Corrections</b><span>Wrong photo, price or detail?<br>${mail("Correction request", "Send a correction")}</span></div><div class="pillar"><b>Press</b><span>Interviews, data and quotes.<br>${mail("Press enquiry", "Press enquiries")}</span></div></div>
-<section aria-labelledby="cform"><h2 id="cform">Write to us</h2><form class="plan" style="max-width:720px;flex-direction:column;align-items:stretch" onsubmit="event.preventDefault();var f=this;location.href='mailto:${BRAND.email}?subject='+encodeURIComponent('['+f.topic.value+'] '+f.name.value)+'&body='+encodeURIComponent(f.msg.value+'\n\n'+f.name.value+' · '+f.email.value)"><label>Your name<input name="name" required autocomplete="name"></label><label>Your email<input name="email" type="email" required autocomplete="email"></label><label>Topic<select name="topic"><option>Hotel partnership</option><option>Correction</option><option>Press</option><option>Other</option></select></label><label>Message<textarea name="msg" rows="5" required style="font:inherit;border:1px solid var(--line);border-radius:12px;padding:10px;background:var(--paper);color:var(--ink)"></textarea></label><button class="btn" type="submit">Send message</button></form></section>
+<section aria-labelledby="cform"><h2 id="cform">Write to us</h2><form class="plan" style="max-width:720px;flex-direction:column;align-items:stretch" onsubmit="event.preventDefault();var f=this;location.href='mailto:${BRAND.email}?subject='+encodeURIComponent('['+f.topic.value+'] '+f.name.value)+'&body='+encodeURIComponent(f.msg.value+'\n\n'+f.name.value+' · '+f.email.value)"><label>Your name<input name="name" required autocomplete="name"></label><label>Your email<input name="email" type="email" required autocomplete="email"></label><label>Topic<select name="topic"><option>Hotel partnership</option><option>Correction</option><option>Press</option><option>Other</option></select></label><label>Message<script>document.addEventListener('DOMContentLoaded',function(){try{var q=new URLSearchParams(location.search),h=q.get('hotel');if(!h||!/^[a-z0-9-]{2,120}$/.test(h))return;var f=document.querySelector('textarea[name=msg]'),s=document.querySelector('select[name=topic]');if(s)s.value='Correction';if(f&&!f.value)f.value='Hotel page: https://www.top3hotels.com/hotel/'+h+'\\n\\n'}catch(_){}})<\/script><textarea name="msg" rows="5" required style="font:inherit;border:1px solid var(--line);border-radius:12px;padding:10px;background:var(--paper);color:var(--ink)"></textarea></label><button class="btn" type="submit">Send message</button></form></section>
 <div class="prose"><h2>Company</h2><p><strong>${esc(BRAND.entity)}</strong><br>30 N Gould St, Ste N<br>Sheridan, WY 82801<br>United States<br>${mail("Hello Top3Hotels")}</p><p class="muted">Top3Hotels is operated by ${esc(BRAND.entity)}, founded by ${esc(BRAND.founder)}. We reply within two working days.</p></div>`
 	});
 }
@@ -26789,7 +26987,8 @@ async function hotelPage(slug, L) {
 		city: d.city,
 		country: d.country
 	});
-	const hgal = ((city ? await cityData(city.id).catch(() => null) : null)?.hotels ?? []).find((h) => bkPath(h.booking?.url) && bkPath(h.booking?.url) === bkPath(f.booking_url))?.gallery?.map((g) => g.src) ?? [];
+	const hcd = city ? await cityData(city.id).catch(() => null) : null;
+	const hgal = (hcd?.hotels ?? []).find((h) => bkPath(h.booking?.url) && bkPath(h.booking?.url) === bkPath(f.booking_url))?.gallery?.map((g) => g.src) ?? [];
 	const hphotos = hotelPhotos(f.booking_url, [f.photo, ...hgal]);
 	const hfb = city ? `/api/img/${city.id}/big` : "";
 	const others = (f.other_picks ?? []).map((o) => {
@@ -26873,9 +27072,79 @@ async function hotelPage(slug, L) {
 	}))].map((o) => `<tr${o.me ? " style=\"background:#fff6e5\"" : ""}><td style="padding:8px;border-bottom:1px solid #eee">${o.me ? `<b>${esc(o.name)}</b>` : esc(o.name)}</td><td style="padding:8px;border-bottom:1px solid #eee">${esc(o.category)}</td><td style="padding:8px;border-bottom:1px solid #eee">${sc1(o.score)}</td><td style="padding:8px;border-bottom:1px solid #eee">${o.nightly_eur ? money(o.nightly_eur) : "–"}</td></tr>`).join("")}</tbody></table></div>` : "";
 	const upd = (d.updated_at || d.published_at || "").slice(0, 10);
 	const path = `/hotel/${slug}`;
+	const h5 = H4[L];
+	const nl5 = NLOC[L] ?? "en-GB";
+	const cityL = city ? cityName(city, L) : d.city;
+	const tags5 = (hcd?.hotels ?? []).find((h) => bkPath(h.booking?.url) && bkPath(h.booking?.url) === bkPath(f.booking_url))?.extras?.tags;
+	const la = Number(f.lat), lo = Number(f.lng);
+	const hasGeo = Number.isFinite(la) && Number.isFinite(lo) && (la !== 0 || lo !== 0);
+	const dC5 = city && hasGeo ? km({
+		lat: city.lat,
+		lng: city.lng
+	}, {
+		lat: la,
+		lng: lo
+	}) : null;
+	const dTxt = dC5 != null ? `${dC5.toLocaleString(nl5, {
+		minimumFractionDigits: 1,
+		maximumFractionDigits: 1
+	})} km${dC5 * 1.25 <= 3 ? ` (≈ ${Math.max(1, Math.round(dC5 * 1.25 / 4.8 * 60))} min)` : ""}` : "";
+	const ap5 = city ? C4DATA.airports[city.id] : void 0;
+	const apTxt = ap5 && hasGeo ? `${ap5.n} (${ap5.i}), ${Math.round(km({
+		lat: ap5.la,
+		lng: ap5.lo
+	}, {
+		lat: la,
+		lng: lo
+	}))} km` : "";
+	const sc5 = f.score ? Number(f.score).toLocaleString(nl5, {
+		minimumFractionDigits: 1,
+		maximumFractionDigits: 1
+	}) : "";
+	const keyRows = [
+		[h5.type, t[`cat_${d.cat}`] ?? d.cat],
+		...f.stars ? [[h5.stars, h5.starsChip(Number(f.stars))]] : [],
+		...sc5 ? [[h5.score, `${sc5}/10`]] : [],
+		...f.reviews ? [[h5.reviews, Number(f.reviews).toLocaleString(nl5)]] : [],
+		...f.area ? [[h5.area, `${f.area}, ${cityL}`]] : [],
+		...dTxt ? [[h5.centre, dTxt]] : [],
+		...apTxt ? [[h5.airport, apTxt]] : []
+	];
+	const key5 = `<h2>${esc(h5.keyH)}</h2><div style="overflow-x:auto"><table class="hp-key" style="width:100%;border-collapse:collapse;font-size:15px"><tbody>${keyRows.map(([k, v]) => `<tr><th scope="row" style="text-align:left;padding:8px;border-bottom:1px solid #eee;width:42%">${esc(k)}</th><td style="padding:8px;border-bottom:1px solid #eee">${esc(v)}</td></tr>`).join("")}</tbody></table></div>${apTxt || dTxt ? `<p class="hp-small" style="text-align:left">${esc(h5.dataNote)}</p>` : ""}`;
+	const addr5 = f.address || hasGeo ? `<p class="hp-addr">${f.address ? `${esc(f.address)} <button type="button" class="hp-copy" data-copy="${esc(`${f.address}, ${d.city}`)}" data-done="${esc(h5.copied)}">📋 ${esc(h5.copyAddr)}</button>` : ""}${hasGeo ? ` <a href="https://www.google.com/maps/search/?api=1&amp;query=${la},${lo}" target="_blank" rel="noopener nofollow">📍 ${esc(h5.mapOpen)}<span aria-hidden="true"> ↗</span></a>` : ""}</p>` : "";
+	const fq0 = (c.faq ?? []).map((q) => q.q).join(" ");
+	const faq5 = [];
+	if (f.stars && !/star|estrell|stern|étoile|stell|estrel|stjern/i.test(fq0)) faq5.push({
+		q: h5.qStars(f.name),
+		a: h5.aStars(f.name, Number(f.stars))
+	});
+	if (sc5 && !/score|nota|note|voto|karakter|bewert/i.test(fq0)) faq5.push({
+		q: h5.qScore(f.name),
+		a: h5.aScore(f.name, sc5, f.reviews ? Number(f.reviews).toLocaleString(nl5) : "")
+	});
+	if (dTxt && city && !/cent(re|er|ro)|zentrum|centrum/i.test(fq0)) faq5.push({
+		q: h5.qCentre(f.name, cityL),
+		a: h5.aCentre(dTxt)
+	});
+	if (tags5?.length && !/park/i.test(fq0)) faq5.push({
+		q: h5.qPark(f.name),
+		a: tags5.includes("parking") ? h5.yes((T[L].tags["parking"] ?? "parking").toLowerCase()) : h5.no
+	});
+	if (tags5?.length && !/pet|mascot|haustier|animal|kæledyr/i.test(fq0)) faq5.push({
+		q: h5.qPets(f.name),
+		a: tags5.includes("pets") ? h5.yes((T[L].tags["pets"] ?? "pets").toLowerCase()) : h5.no
+	});
+	const faqAll = [...c.faq ?? [], ...faq5];
+	const catK = {
+		budget: "budget",
+		value: "value",
+		lux: "lux"
+	}[d.cat] ?? "";
+	const badge5 = city && catK ? `<aside class="hp-badgebox" style="margin:26px 0 0;padding:16px;border:1px dashed rgba(127,127,127,.4);border-radius:12px"><h2 style="margin-top:0">${esc(h5.badgeH)}</h2><p>${esc(h5.badge)}</p><a href="/partners"><img src="/badge/${esc(city.slug)}/${catK}.svg" width="180" height="60" alt="Top 3 ${esc(t[`cat_${d.cat}`] ?? "")} · ${esc(d.city)} · Top3Hotels" loading="lazy"></a></aside>` : "";
+	const rep5 = `<p class="hp-small" style="text-align:left;margin-top:18px"><a href="/contact?hotel=${esc(slug)}">⚑ ${esc(h5.report)}</a></p>`;
 	const facts = [
 		f.score ? `<span>${esc(t.score)} <b>${Number(f.score).toFixed(1)}</b>/10${f.reviews ? ` · ${fmtInt(f.reviews)} ${esc(t.reviews)}` : ""}</span>` : "",
-		f.stars ? `<span>${"★".repeat(Number(f.stars))}</span>` : "",
+		f.stars ? `<span><span aria-hidden="true">${"★".repeat(Number(f.stars))}</span> ${esc(H4[L].starsChip(Number(f.stars)))}</span>` : "",
 		f.nightly_eur ? `<span class="hp-px"><b>${money(f.nightly_eur)}</b> ${esc(t.per)}</span>` : "",
 		f.area ? `<span>${esc(f.area)}, ${esc(d.city)}</span>` : "",
 		Number(f.candidates_compared) > 1 ? `<span>${esc(t.from)} ${fmtInt(f.candidates_compared)} ${esc(t.hotels)}</span>` : ""
@@ -26884,18 +27153,23 @@ async function hotelPage(slug, L) {
 	const body = `<style>${CSS_BLOG}${CSS_HP}</style><article class="post">
 <nav class="crumbs"><a href="${P(L, "/")}">${esc(t.home)}</a> › ${city ? `<a href="${P(L, `/country/${city.cslug}`)}">${esc(countryName(city, L))}</a> › ` : ""}<a href="${P(L, `/${d.city_slug}`)}">${esc(d.city)}</a> › ${esc(f.name)}</nav>
 <span class="hp-badge">${esc(t[`cat_${d.cat}`] ?? d.cat)} · ${esc(d.city)}</span>
-<h1>${esc(f.name)}</h1>
+<h1>${esc(f.name)}<span class="hp-h1c">, ${esc(cityL)}</span></h1>
 <p class="by">${esc(t.by)} ${esc(t.updated)} ${esc(upd)}.</p>
 ${cta}
 ${hphotos[0] || hfb ? `<img class="hp-hero" width="1280" height="720" fetchpriority="high" src="${esc(hphotos[0] || hfb)}" alt="${esc(f.name)}, ${esc(d.city)}" loading="eager" referrerpolicy="no-referrer"${fbAttr([...hphotos.slice(1), hfb])}>` : ""}
-<div class="hp-facts">${facts}</div>
+<div class="hp-facts">${facts}</div>${addr5}
 <p class="hp-verdict">${esc(c.verdict)}</p>
+${key5}
 ${(c.sections ?? []).map((x) => `<h2>${esc(x.h)}</h2>${(x.p ?? []).map((pp) => `<p>${esc(pp)}</p>`).join("")}`).join("\n")}
 ${cta}
-<h2>${esc(t.faq)}</h2><div class="hp-faq">${(c.faq ?? []).map((q) => `<details><summary>${esc(q.q)}</summary><p>${esc(q.a)}</p></details>`).join("")}</div>
+<h2>${esc(t.faq)}</h2><div class="hp-faq">${faqAll.map((q) => `<details><summary>${esc(q.q)}</summary><p>${esc(q.a)}</p></details>`).join("")}</div>
 ${cmpTable}
 <h2>${esc(t.others)} ${esc(d.city)}</h2><ul class="hp-others">${others.join("")}<li><a href="${P(L, `/${d.city_slug}`)}">${esc(t.all)} ${esc(d.city)} →</a></li></ul>
-</article><script>document.addEventListener('keydown',function(e){if(e.key!=='b'&&e.key!=='B')return;if(e.ctrlKey||e.metaKey||e.altKey)return;var g=e.target||{};if(/INPUT|TEXTAREA|SELECT/.test(g.tagName||'')||g.isContentEditable)return;var a=document.querySelector('a.hp-cta');if(!a)return;e.preventDefault();a.scrollIntoView({block:'center'});a.focus()})<\/script>`;
+${badge5}${rep5}
+</article><script type="speculationrules">${JSON.stringify({ prefetch: [{
+		source: "list",
+		urls: [P(L, `/${d.city_slug}`)]
+	}] })}<\/script><script>document.addEventListener('keydown',function(e){if(e.key!=='b'&&e.key!=='B')return;if(e.ctrlKey||e.metaKey||e.altKey)return;var g=e.target||{};if(/INPUT|TEXTAREA|SELECT/.test(g.tagName||'')||g.isContentEditable)return;var a=document.querySelector('a.hp-cta');if(!a)return;e.preventDefault();a.scrollIntoView({block:'center'});a.focus()})<\/script>`;
 	const ld = [
 		{
 			"@context": "https://schema.org",
@@ -26919,10 +27193,18 @@ ${cmpTable}
 				ratingValue: f.stars
 			} } : {}
 		},
+		...upd ? [{
+			"@context": "https://schema.org",
+			"@type": "WebPage",
+			url: SITE + P(L, path),
+			name: `${f.name}, ${cityL}`,
+			dateModified: upd,
+			inLanguage: L
+		}] : [],
 		{
 			"@context": "https://schema.org",
 			"@type": "FAQPage",
-			mainEntity: (c.faq ?? []).map((q) => ({
+			mainEntity: faqAll.map((q) => ({
 				"@type": "Question",
 				name: q.q,
 				acceptedAnswer: {
