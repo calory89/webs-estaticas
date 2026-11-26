@@ -174,8 +174,10 @@ function listLd(body) {
   const seen = new Set(), it = []; for (const x of m) { if (seen.has(x[1])) continue; seen.add(x[1]); it.push({ '@type': 'ListItem', position: it.length + 1, name: unesc(x[2]).trim(), url: SITE + x[1] }); if (it.length >= 100) break; }
   return it.length >= 2 ? { '@type': 'ItemList', numberOfItems: it.length, itemListElement: it } : null;
 }
+const sg1 = s => String(s).replace(/(^|[^\d.,])1 (tracked |official )?(project|register|rule)s\b/g, '$1' + '1 $2$3').replace(/(\b1 (tracked )?project) (leave|are|have)\b/g, (m, a, b, v) => a + ' ' + { leave: 'leaves', are: 'is', have: 'has' }[v]);
 function render(P) {
   const canon = SITE + P.path;
+  for (const k of ['title', 'desc', 'lead', 'body']) if (P[k]) P[k] = sg1(P[k]); if (P.ld) P.ld = JSON.parse(sg1(JSON.stringify(P.ld)));   // n40 R01-01
   if ((P.type || '') === 'CollectionPage' && !(P.pageLd && P.pageLd.mainEntity) && !(P.ld || []).some(x => x && x['@type'] === 'ItemList')) { const il = listLd(P.body); if (il) P.pageLd = Object.assign({}, P.pageLd || {}, { mainEntity: il }); }
   if (P.title && P.title.length > 60) P.title = P.title.replace(/ \| Kolaboro( engineering)?$/, '');   // n29t (item 46): titles of hubs and rankings fit in 60 characters where the brand suffix is what overflows
   const ld = { '@context': 'https://schema.org', '@graph': [Object.assign({ '@type': P.type || 'WebPage', '@id': canon + '#page', url: canon, name: P.h1 || P.title, description: P.desc, inLanguage: 'en', dateModified: (HLM && HLM.get(P.path)) || P.updated, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: SITE + '/' }, publisher: { '@type': 'Organization', name: 'Kolaboro', url: SITE + '/' } }, P.pageLd || {}), crumbLd(P.crumbs)].concat(P.ld || []) };
