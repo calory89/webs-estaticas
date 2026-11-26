@@ -1,4 +1,4 @@
-/* GENERATED from /k/ds.css (v ff44ef2f50) for pages that load site.css. The page test :has(link[href*=site.css]) is replaced by
+/* GENERATED from /k/ds.css (v 103a815c34) for pages that load site.css. The page test :has(link[href*=site.css]) is replaced by
    :not(a[data-ks]), always true with the same weight: :has() on the root made the browser restyle the whole page after every
    DOM change. Do not edit. To rebuild after ds.css changes: replace that test in a copy of ds.css, keep this comment with the
    new version, and set KB_DSS_V to the new KB_DS_V in _worker.js/index.js (while they differ the worker serves plain ds.css).
@@ -755,8 +755,9 @@ a.k-src:hover{color:var(--k-sea);border-bottom-color:currentColor}
 :root:not(a[data-ks]) .mk-ti .big{font-family:var(--k-display);font-weight:600;letter-spacing:-.03em}
 :root:not(a[data-ks]) .mk-ti .rk{background:#FFFFFF;color:#0E1A2B;font-weight:650;border-radius:var(--k-r-sm)}
 :root:not(a[data-ks]) .mk-ti h2{font-size:var(--k-fs-xl)}
-:root:not(a[data-ks]) .hero-grid{align-items:center}
+
 :root:not(a[data-ks]) .hp-band :is(.n33-ms b,.h3p span,.n33-ms small){color:var(--k-band-muted)!important}
 :root:not(a[data-ks]) .klt-q b{text-transform:none;letter-spacing:0}
 :root:not(a[data-ks]) .hp-band .launch i{box-shadow:none}
+:root:not(a[data-ks]) :is(.n34 .n34-b.hi,.n34 button.hi){--hi:var(--k-brand);color:var(--k-on-brand);font-weight:600}
 /* ---------- end 6 ---------- */
