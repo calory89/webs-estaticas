@@ -2,10 +2,9 @@ User-agent: *
 Allow: /
 Disallow: /admin
 Disallow: /company/
-Disallow: /talent/dashboard
-Disallow: /talent/profile
+Disallow: /talent/
 Disallow: /messages
-Disallow: /auth/callback
+Disallow: /auth
 Disallow: /reset-password
 
 Sitemap: https://reelrole.com/sitemap.xml
