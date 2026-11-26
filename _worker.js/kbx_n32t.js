@@ -144,6 +144,7 @@ async function render(env, lang, key, D, body, shTxt, extra) {
   if (FAM(key)) {   // n40 L1: the guide's own crumbs and questions, in the page language
     const cr = [...((/<p class="crumb">([\s\S]*?)<\/p>/.exec(body) || [])[1] || '').matchAll(/<a href="([^"]+)">([^<]+)<\/a>/g)].map(m => [dec(m[2]), ORIGIN + m[1]]).concat([[D.h || D.t, canon]]);
     const fq = [...body.matchAll(/<details><summary>([^<]+)<\/summary><p>([^<]+)<\/p><\/details>/g)].map(m => ({ '@type': 'Question', name: dec(m[1]), acceptedAnswer: { '@type': 'Answer', text: dec(m[2]) } }));
+    if (extra && extra.il) ld['@graph'][0].mainEntity = extra.il;
     ld['@graph'] = [Object.assign(ld['@graph'][0], { '@type': key.startsWith('rankings/') ? 'CollectionPage' : 'WebPage' }), { '@type': 'BreadcrumbList', itemListElement: cr.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c[0], item: c[1] })) }].concat(fq.length ? [{ '@type': 'FAQPage', mainEntity: fq }] : []);
   }
   const pg = { title: D.t + ([...D.t].length > 49 && FAM(key) ? '' : ' | Kolaboro'), desc: D.d, canon, body, alt, ld };
@@ -201,7 +202,11 @@ async function build(env, lang, key, D, shell, inner) {
   const kn = /"num":\s*"([^"]+)"/.exec(shTxt);
   if (kn && !/^(en|zh)/.test(kn[1])) { try { const NF = new Intl.NumberFormat(kn[1]);
     body = body.split(/(<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>|<!--[\s\S]*?-->|<[^>]+>)/).map(tok => !tok || tok[0] === '<' ? tok : tok.replace(/(^|[^\d.,])(\d{1,3}(?:,\d{3})+)(?![\d,]|\.\d)/g, (_, x, y) => x + NF.format(+y.replace(/,/g, '')))).join(''); } catch (e) {} }
-  return render(env, lang, key, D, body, shTxt, { css: P.css, js: P.js });
+  // n40 L3: the ranking's ItemList (mainEntity of the English page) in the translated page too, project links pointed at the page language
+  let il = null;
+  if (FAM(key) === 'guides' && key.startsWith('rankings/')) { try { for (const m of src.matchAll(/<script type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)) { const j = JSON.parse(m[1]); for (const o of [].concat(j['@graph'] || j)) if (o && o.mainEntity && o.mainEntity['@type'] === 'ItemList') il = o.mainEntity; } } catch (e) { il = null; }
+    if (il) il = Object.assign({}, il, { itemListElement: (il.itemListElement || []).map(x => x && typeof x.url === 'string' && x.url.startsWith(ORIGIN + '/') ? Object.assign({}, x, { url: ORIGIN + locHref(x.url.slice(ORIGIN.length), lang, LS) }) : x) }); }
+  return render(env, lang, key, D, body, shTxt, { css: P.css, js: P.js, il });
 }
 
 // English pages with translations: hreflang alternates and the language menu pointed at the translated page
