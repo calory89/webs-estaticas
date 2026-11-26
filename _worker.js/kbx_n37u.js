@@ -575,12 +575,19 @@ function devTrack(slug) {
   const mv = hoMoves(rows), late = mv.filter(m => m.dm > 0), early = mv.filter(m => m.dm < 0);
   return { rows, th, mv, late, early, nc: mv.filter(m => m.dm == null || m.dm === 0).length, p: new Set(mv.map(m => m.r)).size, md: median(late.map(m => m.dm)) };
 }
+function moveChart(l, mv, name) {
+  const M = mv.filter(m => m.dm != null && m.dm !== 0).slice(0, 16); if (!M.length) return '';
+  const mx = Math.max(6, ...M.map(m => Math.abs(m.dm))), W = 640, L = 230, R = 50, cx = L + (W - L - R) / 2, sc = (W - L - R) / 2 / mx, H = 24 * M.length + 30, rtl = l === 'ar';
+  const bars = M.map((m, i) => { const y = 8 + i * 24, w = Math.max(2, Math.abs(m.dm) * sc), x = m.dm > 0 ? cx : cx - w, nm = String(m.r[2] || ''); return '<text x="' + (L - 8) + '" y="' + (y + 13) + '" text-anchor="end" font-size="12" fill="currentColor">' + esc(nm.length > 32 ? nm.slice(0, 31) + '…' : nm) + '</text><rect x="' + x.toFixed(1) + '" y="' + y + '" width="' + w.toFixed(1) + '" height="16" rx="3" fill="' + (m.dm > 0 ? '#B42318' : '#0F7B3E') + '"><title>' + esc(nm + ': ' + byM(l, m.dm)) + '</title></rect><text x="' + (m.dm > 0 ? x + w + 4 : x - 4).toFixed(1) + '" y="' + (y + 13) + '" text-anchor="' + (m.dm > 0 ? 'start' : 'end') + '" font-size="11" fill="currentColor">' + (m.dm > 0 ? '+' : '') + nf(m.dm, l) + '</text>'; }).join('');
+  return '<figure class="n40-mc" style="margin:12px 0;overflow-x:auto"' + (rtl ? ' dir="ltr"' : '') + '><svg viewBox="0 0 ' + W + ' ' + H + '" width="100%" style="max-width:' + W + 'px;min-width:420px" role="img" aria-label="' + esc(tf(l, 'mc_l', { d: name, n: nf(M.length, l) })) + '"><line x1="' + cx + '" x2="' + cx + '" y1="0" y2="' + (H - 22) + '" stroke="currentColor" stroke-opacity=".4"/>' + bars + '<text x="' + cx + '" y="' + (H - 6) + '" text-anchor="middle" font-size="11" fill="currentColor">' + esc(t(l, 'mc_ax')) + '</text></svg><figcaption class="k-xs"' + dir(l) + '>' + esc(t(l, 'mc_c')) + '</figcaption></figure>';
+}
 function trackSection(l, slug) {
   const k = devTrack(slug); if (!k) return '';
   const days = TL.days, name = k.rows[0][6] || slug;
   let b = '<h3 id="n37-track">' + esc(t(l, 'tr_h')) + '</h3><p>' + esc(tf(l, 'tr_p', { a: fd(days[0][0], l), b: fd(D.built, l), d: name, t: nf(k.th.length, l), p: nf(k.p, l), m: nf(k.mv.length, l) })) + '</p>';
   if (!k.mv.length) return b + '<p>' + esc(t(l, 'tr_0')) + '</p>';
   b += '<ul><li>' + esc(k.late.length ? tf(l, 'tr_late', { n: nf(k.late.length, l), m: nf(k.md, l) }) : tf(l, 'tr_late0', { n: nf(0, l) })) + '</li><li>' + esc(tf(l, 'tr_early', { n: nf(k.early.length, l) })) + '</li>' + (k.nc ? '<li>' + esc(tf(l, 'tr_nc', { n: nf(k.nc, l) })) + '</li>' : '') + '</ul>';
+  b += moveChart(l, k.mv, name);   // n40 R02-42: the same moves as one chart; the table below stays as the text version
   b += '<div class="n37-tw" tabindex="0" role="region" aria-label="' + esc(t(l, 'tr_h')) + '"><table><thead><tr><th scope="col">' + esc(t(l, 'th_p')) + '</th><th scope="col">' + esc(t(l, 'ch_from')) + '</th><th scope="col">' + esc(t(l, 'ch_to')) + '</th><th scope="col">' + esc(t(l, 'tr_by')) + '</th><th scope="col">' + esc(t(l, 'tr_seen')) + '</th><th scope="col">' + esc(t(l, 'th_s')) + '</th></tr></thead><tbody>' +
     k.mv.map(m => { const c = m.r[8][0], u = c && c[1];
       return '<tr><th scope="row"><a href="' + recU(l, m.r[1]) + '#timeline">' + bdi(m.r[2]) + '</a></th><td class="n">' + bdi(tv(m.x.p, l, 40)) + '</td><td class="n">' + bdi(tv(m.x.v, l, 40)) + '</td><td class="n">' + esc(byM(l, m.dm)) + '</td><td class="n">' + esc(fd(m.x.d, l)) + '</td><td>' + (c ? esc(t(l, 'k_' + c[2])) : '') + (u && /^https?:/.test(u) ? '<span class="n37-dot" aria-hidden="true"> · </span><a href="' + esc(u) + '" rel="nofollow noopener">' + esc(host(u)) + '</a>' : '') + '</td></tr>'; }).join('') + '</tbody></table></div>';
