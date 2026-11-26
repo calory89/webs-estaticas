@@ -6,7 +6,79 @@
     <atom:link href="https://jurimatch.com/feeds/changelog.xml" rel="self" type="application/rss+xml" />
     <description>The improvements we publish on JuriMatch each week, in plain language.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 07 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <item>
+      <title>New table of where a lawyer may charge only if you win, country by country, with the...</title>
+      <link>https://jurimatch.com/changelog</link>
+      <guid isPermaLink="false">jurimatch-changelog-2026-11-26-17pnz0b</guid>
+      <pubDate>Thu, 26 Nov 2026 12:00:00 GMT</pubDate>
+      <category>Week of 23 November 2026</category>
+      <description>New table of where a lawyer may charge only if you win, country by country, with the law behind each rule, also downloadable as open data.</description>
+    </item>
+    <item>
+      <title>New pages listing every guide by topic and every city page by country.</title>
+      <link>https://jurimatch.com/changelog</link>
+      <guid isPermaLink="false">jurimatch-changelog-2026-11-26-y3l4h7</guid>
+      <pubDate>Thu, 26 Nov 2026 12:00:00 GMT</pubDate>
+      <category>Week of 23 November 2026</category>
+      <description>New pages listing every guide by topic and every city page by country.</description>
+    </item>
+    <item>
+      <title>Short answers on what a no-win-no-fee lawyer costs and who pays if you lose, now in...</title>
+      <link>https://jurimatch.com/changelog</link>
+      <guid isPermaLink="false">jurimatch-changelog-2026-11-26-ube49t</guid>
+      <pubDate>Thu, 26 Nov 2026 12:00:00 GMT</pubDate>
+      <category>Week of 23 November 2026</category>
+      <description>Short answers on what a no-win-no-fee lawyer costs and who pays if you lose, now in the local language for ten countries.</description>
+    </item>
+    <item>
+      <title>More than 150 new firms whose own website says they only charge if you win, each shown...</title>
+      <link>https://jurimatch.com/changelog</link>
+      <guid isPermaLink="false">jurimatch-changelog-2026-11-26-iv4rr0</guid>
+      <pubDate>Thu, 26 Nov 2026 12:00:00 GMT</pubDate>
+      <category>Week of 23 November 2026</category>
+      <description>More than 150 new firms whose own website says they only charge if you win, each shown with the exact sentence and a link to the page where they say it.</description>
+    </item>
+    <item>
+      <title>A list of US firms that serve clients in Spanish and only charge if they win, with...</title>
+      <link>https://jurimatch.com/changelog</link>
+      <guid isPermaLink="false">jurimatch-changelog-2026-11-26-13smwo7</guid>
+      <pubDate>Thu, 26 Nov 2026 12:00:00 GMT</pubDate>
+      <category>Week of 23 November 2026</category>
+      <description>A list of US firms that serve clients in Spanish and only charge if they win, with pages for Texas, California and Florida.</description>
+    </item>
+    <item>
+      <title>A clearer design: new typefaces, a lighter background and highlighted fee quotes on...</title>
+      <link>https://jurimatch.com/changelog</link>
+      <guid isPermaLink="false">jurimatch-changelog-2026-11-25-dhav7t</guid>
+      <pubDate>Wed, 25 Nov 2026 12:00:00 GMT</pubDate>
+      <category>Week of 23 November 2026</category>
+      <description>A clearer design: new typefaces, a lighter background and highlighted fee quotes on firm pages.</description>
+    </item>
+    <item>
+      <title>New calculators for severance in Mexico, Chile and Argentina, a contingency fee...</title>
+      <link>https://jurimatch.com/changelog</link>
+      <guid isPermaLink="false">jurimatch-changelog-2026-11-25-obg1ua</guid>
+      <pubDate>Wed, 25 Nov 2026 12:00:00 GMT</pubDate>
+      <category>Week of 23 November 2026</category>
+      <description>New calculators for severance in Mexico, Chile and Argentina, a contingency fee calculator for Latin America and a UK conditional fee calculator.</description>
+    </item>
+    <item>
+      <title>Dozens of new guides in Spanish for Spain, the United States and Latin America, each...</title>
+      <link>https://jurimatch.com/changelog</link>
+      <guid isPermaLink="false">jurimatch-changelog-2026-11-24-h1hv6s</guid>
+      <pubDate>Tue, 24 Nov 2026 12:00:00 GMT</pubDate>
+      <category>Week of 23 November 2026</category>
+      <description>Dozens of new guides in Spanish for Spain, the United States and Latin America, each with its official sources.</description>
+    </item>
+    <item>
+      <title>Pages no longer show an error for visitors who had the site open while we published an...</title>
+      <link>https://jurimatch.com/changelog</link>
+      <guid isPermaLink="false">jurimatch-changelog-2026-11-24-1655g1z</guid>
+      <pubDate>Tue, 24 Nov 2026 12:00:00 GMT</pubDate>
+      <category>Week of 23 November 2026</category>
+      <description>Pages no longer show an error for visitors who had the site open while we published an update.</description>
+    </item>
     <item>
       <title>Fixed an error that could appear on the sign-in page when the browser filled in your...</title>
       <link>https://jurimatch.com/changelog</link>
