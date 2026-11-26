@@ -172,8 +172,17 @@
   document.addEventListener('DOMContentLoaded', function () {
     $('tcC').innerHTML = Object.keys(C).map(function (k) { return '<option value="' + k + '">' + esc(C[k].name) + '</option>'; }).join('');
     $('tcCur').innerHTML = CURS.map(function (c) { return '<option>' + c + '</option>'; }).join('');
-    var q = ''; try { q = new URLSearchParams(location.search).get('country') || ''; } catch (e) {}
+    var q = '', qs = null; try { qs = new URLSearchParams(location.search); q = qs.get('country') || qs.get('tcC') || ''; } catch (e) {}
     var k = C[q] ? q : 'ae'; $('tcC').value = k;
+    // n40 k13 (R07-19): ?project=<slug> (the "use this project" link) also picks the country table from the public record;
+    // /tools/use-project.js fills price and currency and keeps every field in the address, so a shared link restores the result
+    var pj = qs && qs.get('project'); if (pj && /^[a-z0-9-]{1,120}$/.test(pj) && !C[q]) fetch('/projects/' + pj + '/record.json').then(function (r) { return r.ok ? r.json() : null; }).then(function (r) {
+      if (!r) return; var f = {}; (r.facts || []).forEach(function (x) { f[x.field] = String(x.value || ''); });
+      var co = f.co || '', m = { Spain: 'es', Portugal: 'pt', Thailand: 'th', Indonesia: 'id', Mexico: 'mx', 'United Kingdom': 'uk', Turkey: 'tr' }, nk = /^(UAE|United Arab Emirates)$/.test(co) ? (r.market === 'Dubai' ? 'ae' : 'xx') : (m[co] || 'xx');
+      if (nk !== $('tcC').value) { $('tcC').value = nk; setCountry(nk); }
+      var cu = /^([A-Z]{3})\s*[\d.,]+/.exec(f.pr || ''); if (cu && CURS.indexOf(cu[1]) >= 0) $('tcCur').value = cu[1];
+      calc(); try { $('tcF').dispatchEvent(new Event('change', { bubbles: true })); } catch (e) {}
+    }).catch(function () {});
     $('tcC').addEventListener('change', function () { setCountry(this.value); });
     $('tcItems').addEventListener('input', function (e) {
       var t = e.target;

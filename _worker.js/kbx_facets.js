@@ -200,14 +200,14 @@ function useLine(x, lang) {
 }
 function costHtml(F, x, lang) {
   const T = tcFor(x), co = coName(x.co, lang) || x.co, fx = x.fx || {};
-  if (!T) return { html: '<p class="ki">' + te(lang, 'co_none', { c: co }) + ' <a href="/tools/total-cost/">' + te(lang, 'co_tool') + '</a></p>' + useLine(x, lang), faq: null };
+  if (!T) return { html: '<p class="ki">' + te(lang, 'co_none', { c: co }) + ' <a href="' + pre(lang) + '/tools/total-cost/' + (x.s ? '?project=' + encodeURIComponent(x.s) : '') + '">' + te(lang, 'co_tool') + '</a></p>' + useLine(x, lang), faq: null };
   const p = fx.price_min > 0 && !regSale(x) && String(fx.currency || '').toUpperCase() === T.cur ? +fx.price_min : null;
   let tot = 0; const used = new Set();
   const rows = T.rows.map(r => { const a = p ? r.f(p) : null; if (a != null) tot += a; return li('<b>' + te(lang, r.k) + ':</b> <bdi dir="ltr">' + esc(rt(r, lang)) + '</bdi>' + (a != null && !r.fixed ? ' · ' + money(lang, T.cur, Math.round(a)) : ''), used.has(r.s[0]) ? null : (used.add(r.s[0]), TC_SRC[r.s[0]][1]), TC_SRC[r.s[0]][0]);  }).join('');
   const L = [rows, T.part ? '<li>' + te(lang, T.part) + '</li>' : '', T.note ? '<li>' + te(lang, T.note) + '</li>' : '', '<li>' + te(lang, 'co_other') + '</li>'].join('');
   const ex = p && T.rows.length ? '<p>' + th(lang, 'co_ex', { p: money(lang, T.cur, p), t: money(lang, T.cur, Math.round(tot)), s: money(lang, T.cur, Math.round(p + tot)) }) + '</p>' : (T.rows.length ? '<p class="ki">' + te(lang, fx.price_min > 0 ? 'co_cur' : 'co_noprice') + '</p>' : '');
   const cs = TCSLUG[Object.keys(TC).find(k => TC[k] === T)], cIn = cs && (((TCPL_T[cs] || TCPL[cs] || {})[lang]) || (BPL[cs] && (BPL[cs].in[lang] || BPL[cs].in.en)));   // n29h2: the place's cost page
-  const html = '<p class="ki">' + te(lang, 'co_intro', { c: co }) + '</p><ul class="fl">' + L + '</ul>' + ex + '<p><a class="more" href="/tools/total-cost/?country=' + T.tool + '">' + te(lang, 'co_tool') + '</a>' + (cIn ? ' · <a href="' + pre(lang) + '/tools/total-cost/' + cs + '/">' + esc(String(TCS[lang].c_t).replace('{in}', cIn)) + '</a>' : '') + '</p>' + useLine(x, lang);
+  const html = '<p class="ki">' + te(lang, 'co_intro', { c: co }) + '</p><ul class="fl">' + L + '</ul>' + ex + '<p><a class="more" href="' + pre(lang) + '/tools/total-cost/?country=' + T.tool + (x.s ? '&amp;project=' + encodeURIComponent(x.s) : '') + '">' + te(lang, 'co_tool') + '</a>' + (cIn ? ' · <a href="' + pre(lang) + '/tools/total-cost/' + cs + '/">' + esc(String(TCS[lang].c_t).replace('{in}', cIn)) + '</a>' : '') + '</p>' + useLine(x, lang);
   const faqA = T.rows.length ? T.rows.map(r => t(lang, r.k) + ': ' + rt(r, lang)).join('; ') + '.' + (T.part ? ' ' + t(lang, T.part) : '') : t(lang, T.part || 'co_other');
   return { html, faq: [t(lang, 'q_cost', { n: x.n }), faqA] };
 }
