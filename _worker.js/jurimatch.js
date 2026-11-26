@@ -452,7 +452,10 @@ export async function render(req, res, u, env, ctx) {
       if (!preHtml) return;
       const src = e.getAttribute('src') || '';
       if (!/^\/assets\/index-[A-Za-z0-9_-]+\.js$/.test(src)) return;
-      e.replace('<script>(function(){var go=function(){var s=document.createElement("script");s.type="module";s.crossOrigin="";s.src=' + JSON.stringify(src) + ';document.head.appendChild(s)};if(document.readyState==="complete")setTimeout(go,0);else addEventListener("load",function(){setTimeout(go,0)})})()</script>', { html: true });
+      // T5b: the app starts on the visitor's first interaction (touch, click, key, scroll) or 6 s after load,
+      // whichever comes first; links in the prerendered page work before that as ordinary links. Tools start
+      // right after load, so nothing typed into a form is lost when the app takes over the page.
+      e.replace('<script>(function(){var done=0,go=function(){if(done)return;done=1;var s=document.createElement("script");s.type="module";s.crossOrigin="";s.src=' + JSON.stringify(src) + ';document.head.appendChild(s)};["pointerdown","keydown","touchstart","wheel","scroll"].forEach(function(n){addEventListener(n,go,{once:true,passive:true})});var t=function(){setTimeout(go,' + (/^\/(tools|es\/herramientas)\//.test(u.pathname) ? 0 : 6000) + ')};if(document.readyState==="complete")t();else addEventListener("load",t)})()</script>', { html: true });
     } })
     .on('noscript', { element(e) { e.remove(); } })
     .transform(new Response(html, { status, headers: h }));
