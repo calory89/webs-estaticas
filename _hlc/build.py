@@ -479,7 +479,10 @@ for f in subprocess.run(['git', 'ls-files', '-co', '--exclude-standard', '-z', '
                 open(f, 'w', encoding='utf-8', errors='surrogateescape').write(s1); stats['bk_en'] = stats.get('bk_en', 0) + 1
 
 # ---------- sitemaps de posts antiguos: solo lo que queremos indexado ----------
-if not ONLY and KEEP is not None:
+# Con HLC_ONLY=sitemaps este bloque corre solo: el workflow siempre pasa
+# HLC_ONLY, asi que nunca se habia ejecutado en CI y los sitemaps de
+# WordPress seguian pidiendo a Google 1.115 paginas borradas (de 1.702).
+if (not ONLY or ONLY == 'sitemaps') and KEEP is not None:
     gone = set()
     for f in files:
         if f.endswith('/index.html') and f.count('/') == 1:
