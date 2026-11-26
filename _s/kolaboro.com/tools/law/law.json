@@ -25,7 +25,8 @@
     "MX": "Mexico",
     "JP": "Japan",
     "GB": "United Kingdom",
-    "TR": "Turkey"
+    "TR": "Turkey",
+    "CR": "Costa Rica"
   },
   "sources": {
     "id-pp18-2021": {
@@ -173,6 +174,14 @@
       "language": "tr",
       "read": "2026-11-26",
       "note": "Consolidated text. Articles 40 to 46 cover pre-paid home sales (ön ödemeli konut satışı); details are set in a separate regulation."
+    },
+    "cr-42995": {
+      "law": "Executive Decree No. 42995-MEIC, Regulation on future-execution instalment sales of real estate projects (Reglamento de ventas a plazo de ejecución futura de proyectos inmobiliarios)",
+      "publisher": "Costa Rican Legal Information System (SCIJ, pgrweb.go.cr), Office of the Attorney General of the Republic",
+      "url": "https://pgrweb.go.cr/scij/Busqueda/Normativa/Normas/nrm_texto_completo.aspx?param1=NRTC&nValor1=1&nValor2=94816",
+      "language": "es",
+      "read": "2026-11-26",
+      "note": "Current version as served by SCIJ (version 2 of 2) of the decree dated 9 April 2021; some definitions in article 2 were amended by Decree 43673 of 26 July 2022."
     }
   },
   "rules": [
@@ -848,6 +857,80 @@
       "cite": "Article 45(1) to (3)",
       "quote": "(1) Ön ödemeli konut satışında sözleşme tarihinden itibaren yirmidört aya kadar tüketicinin herhangi bir gerekçe göstermeden sözleşmeden dönme hakkı vardır. Sözleşmeden dönülmesi durumunda satıcı; konutun satışı veya satış vaadi sözleşmesi nedeniyle oluşan vergi, harç ve benzeri yasal yükümlülüklerden doğan masraflar ile sözleşme tarihinden itibaren ilk üç ay için sözleşme bedelinin yüzde ikisine, üç ila altı ay arası için yüzde dördüne, altı ila oniki ay arası için yüzde altısına ve oniki ila yirmidört ay arası için de yüzde sekizine kadar tazminatın ödenmesini isteyebilir. (2) Satıcı, yükümlülüklerini hiç ya da gereği gibi yerine getirmezse tüketiciden herhangi bir bedel talep edemez. [...] (3) Sözleşmeden dönülmesi durumunda, tüketiciye iade edilmesi gereken tutar ve tüketiciyi borç altına sokan her türlü belge, dönme bildiriminin satıcıya ulaştığı tarihten itibaren en geç yüzseksen gün içinde tüketiciye geri verilir.",
       "translation": "(1) In a pre-paid home sale, the consumer has the right to rescind the contract without giving any reason up to twenty-four months from the contract date. If the contract is rescinded, the seller may ask for the costs arising from taxes, fees and similar legal obligations caused by the sale or promise-to-sell contract, and for compensation of up to two percent of the contract price for the first three months from the contract date, up to four percent between three and six months, up to six percent between six and twelve months, and up to eight percent between twelve and twenty-four months. (2) If the seller does not perform its obligations at all or properly, it may not claim any amount from the consumer. [...] (3) If the contract is rescinded, the amount to be refunded to the consumer and every document putting the consumer in debt are returned to the consumer within one hundred and eighty days at the latest from the date the rescission notice reaches the seller.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "cr-meic-authorisation",
+      "market": "CR",
+      "topics": [
+        "permit",
+        "law"
+      ],
+      "title": "In Costa Rica, a developer needs MEIC authorisation before it offers homes that are not yet built",
+      "plain": "Before a pre-sale of a real estate project is offered to the public, the developer must hold an authorisation of its sales plan from the consumer protection directorate (DAC) of the Ministry of Economy, Industry and Commerce (MEIC). Without it, the DAC asks the national consumer commission to stop the marketing, and everyone who organises, promotes or sells the plan is liable. Ask for the authorisation before you pay.",
+      "source": "cr-42995",
+      "cite": "Article 4",
+      "quote": "Artículo 4º-Sobre el ofrecimiento de venta a plazo de ejecución futura de proyectos inmobiliarios. Previo al ofrecimiento público y generalizado, el comerciante o responsable del proyecto debe contar con la respectiva autorización del Plan de venta a plazo de ejecución futura del proyecto inmobiliario por parte de la DAC. Caso contrario, la DAC interpondrá una denuncia con solicitud de medida cautelar ante la CNC, para impedir la comercialización y publicidad que en este sentido se haya dispuesto, así como informarlo a las personas consumidoras. El ofrecimiento de venta a plazo de ejecución futura de proyectos inmobiliarios bajo esta modalidad, que no cuenten con la autorización dispuesta en el párrafo anterior, implicará responsabilidad para todos los agentes económicos involucrados en la organización, promoción, comercialización y desarrollo del plan de venta a plazo o de ejecución futura de bienes inmuebles.",
+      "translation": "Before any public and general offer, the trader or person responsible for the project must hold the authorisation of the plan for the future-execution instalment sale of the real estate project from the DAC. Otherwise, the DAC will file a complaint with a request for an interim measure before the CNC to stop the marketing and advertising arranged for it, and will inform consumers. Offering such sales without the authorisation set out above makes all economic agents involved in organising, promoting, marketing and developing the plan liable.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "cr-public-list",
+      "market": "CR",
+      "topics": [
+        "permit"
+      ],
+      "title": "MEIC publishes the authorised plans and contract models, and certifies them on request",
+      "plain": "MEIC keeps a public database on its website of the authorised real estate plans and the authorised contract models. Anyone can ask for a certificate, which the DAC has eight working days to issue. Check that the project and the contract you are offered are on that list.",
+      "source": "cr-42995",
+      "cite": "Article 9",
+      "quote": "Artículo 9º-Publicidad de la información. El MEIC a través de la DAC mantendrá una base de datos con información actualizada y permanente a disposición del público por medio de su propia página web, sobre los planes de desarrollo inmobiliario autorizados y modelos de contratos autorizados, de conformidad con el artículo 5 del presente reglamento.",
+      "translation": "Through the DAC, MEIC will keep an up-to-date and permanent database available to the public on its own website on the authorised real estate development plans and authorised contract models, in accordance with article 5 of this regulation.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "cr-trust-deposits",
+      "market": "CR",
+      "topics": [
+        "escrow",
+        "payment"
+      ],
+      "title": "Your down payment must be held in a trust before the plan is authorised",
+      "plain": "To authorise the plan, MEIC checks that the developer has a trust (fideicomiso) that protects buyers' down payments (primas), so that the money is used to build the project; failing that, the developer must post a guarantee or bond. The trust holds your down payment, extra payments and additional instalments, and the developer keeps all its duties under your contract.",
+      "source": "cr-42995",
+      "cite": "Articles 13 and 15",
+      "quote": "Artículo 13.-Comprobación de la solvencia económica con respecto al Plan de venta a plazo de ejecución futura de proyectos inmobiliarios. Para los efectos de la autorización del plan de venta a plazo de ejecución futura de proyectos inmobiliarios, el MEIC comprobará que el comerciante o responsable cuenta con un fideicomiso de protección de primas, que se define en la Sección II del presente Capítulo para garantizar que los recursos que aporten por este concepto los consumidores sean administrados adecuadamente para materializar el plan. [...] Artículo 15.-Objeto del Fideicomiso. El Fideicomiso a que se refiere estas disposiciones tiene como objeto principal la custodia, manejo y administración de las primas, pagos extraordinarios o abonos adicionales por parte del consumidor o promitente comprador que deben ser entregados al comerciante o responsable del plan.",
+      "translation": "For the authorisation of the plan, MEIC will check that the trader or person responsible has a trust for the protection of down payments, defined in Section II of this Chapter, to guarantee that the resources consumers contribute for this purpose are properly managed to carry out the plan. [...] The main purpose of the Trust is the custody, handling and administration of the down payments, extraordinary payments or additional instalments by the consumer or promissory buyer that must be delivered to the trader or person responsible for the plan.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "cr-six-releases",
+      "market": "CR",
+      "topics": [
+        "escrow",
+        "completion"
+      ],
+      "title": "The trust pays the developer in six steps, at 10%, 30%, 50%, 70%, 90% and 100% of construction",
+      "plain": "The trustee releases your money to the developer gradually, against a construction progress report by an impartial civil engineer registered with the CFIA and named by the trustee. There are six releases, when the works reach 10%, 30%, 50%, 70%, 90% and 100%, each the same share of what buyers have paid. Ask the trustee for the latest progress report.",
+      "source": "cr-42995",
+      "cite": "Article 25(a) and (b)",
+      "quote": "Artículo 25.-Sobre los desembolsos del fideicomiso en favor del comerciante o responsable del plan y su terminación normal. Los recursos de las primas, pagos extraordinarios o abonos adicionales serán desembolsados gradualmente al comerciante o responsable del plan por el fiduciario de acuerdo con el informe de avance de construcción realizado por un perito fiscalizador imparcial, profesional en ingeniería civil, inscrito en el CFIA independiente y nombrado por el fiduciario. En caso de que el proyecto cuente con un financiamiento de una entidad supervisada por SUGEF, el fiduciario podrá utilizar el mismo informe pericial de avance de construcción rendido al ente financiero. [...] a. Se harán 6 desembolsos, una vez que se logre el 10%, 30%, 50%, 70%, 90% y el 100% del avance de la obra del Plan de venta a plazo o de ejecución futura de bienes inmuebles, por etapa o finca filial.",
+      "translation": "The resources from down payments, extraordinary payments or additional instalments will be released gradually to the trader or person responsible for the plan by the trustee, according to the construction progress report made by an impartial supervising expert, a civil engineering professional registered with the CFIA, independent and appointed by the trustee. [...] a. There will be 6 releases, once 10%, 30%, 50%, 70%, 90% and 100% of the progress of the works of the plan is reached, by stage or unit.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "cr-full-refund",
+      "market": "CR",
+      "topics": [
+        "termination",
+        "delay"
+      ],
+      "title": "If the developer breaks the contract, you are owed 100% of what you paid",
+      "plain": "If the developer does not perform the contract, you have the right to get back 100% of your down payment, extra payments and additional instalments. The developer must pay you whatever the trust does not hold in your individual sub-account.",
+      "source": "cr-42995",
+      "cite": "Article 26",
+      "quote": "Artículo 26.-Sobre la responsabilidad de devolución del 100% de los aportes. En caso de incumplimiento de contrato por parte del comerciante o responsable del plan, el consumidor o promitente comprador tiene derecho a la devolución del 100% de los aportes o sumas pagadas por concepto de primas, pagos extraordinarios o abonos adicionales. Para tales efectos el comerciante o responsable del plan deberá devolver la diferencia entre el dinero registrado en la subcuenta individual a nombre del consumidor que tenga el fiduciario en su poder y el total del aporte entregado por el consumidor o promitente comprador; lo anterior de conformidad con lo establecido en los artículos 32 inciso b), 34 incisos a) y b); 53 y 57 de la Ley N° 7472.",
+      "translation": "If the trader or person responsible for the plan breaches the contract, the consumer or promissory buyer has the right to the return of 100% of the contributions or sums paid as down payments, extraordinary payments or additional instalments. For this purpose the trader or person responsible for the plan must return the difference between the money recorded in the consumer's individual sub-account held by the trustee and the total contribution delivered by the consumer or promissory buyer, in accordance with articles 32(b), 34(a) and (b), 53 and 57 of Law No. 7472.",
       "checked": "2026-11-26"
     }
   ]
