@@ -17,7 +17,7 @@ const ORIGIN = 'https://kolaboro.com';
 const L7 = ['es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'], LANGS = ['en'].concat(L7);
 const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar-u-nu-latn' };   // Arabic with Latin digits, as the rest of the site
 export const N32T_V = 'n32t5';   // n32t5: numbers in the page locale on the server (n38 d5)
-export const PATHS = /^\/(?:es|de|fr|nl|ru|zh|ar)\/(?:tools\/[a-z-]{3,30}|new|vs|m|registers|countries\/[a-z0-9-]{2,60}\/(?:how-to-check|is-it-safe|buyer-protection-law)|rankings\/most-delayed(?:\/[a-z0-9-]{2,60})?|report\/state-of-off-plan-2026|guides\/(?:off-plan-payments|bali-land-titles|contract-clauses|questions-to-ask-a-developer))\/?$/;
+export const PATHS = /^\/(?:es|de|fr|nl|ru|zh|ar)\/(?:tools\/[a-z-]{3,30}|new|vs|m|registers|countries\/[a-z0-9-]{2,60}\/(?:how-to-check|is-it-safe|buyer-protection-law)|rankings\/most-delayed(?:\/[a-z0-9-]{2,60})?|report\/state-of-off-plan-2026|guides\/(?:off-plan-payments|bali-land-titles|contract-clauses|questions-to-ask-a-developer)|bali|dubai|phuket|tulum|algarve|lombok)\/?$/;
 const SOP = 'report/state-of-off-plan-2026';
 export const EN_RX = /^\/(?:tools\/[a-z-]{3,30}|new|vs|m|registers)\/$/;
 // n40 L1: the country guides and the delay rankings (kbx_seo.js) share one dictionary per language, /data/n32t/<lang>/guides.json, on top of the registers one
@@ -45,7 +45,7 @@ export async function localSet(env, lang) {
   try { const { mdata } = await import('./kbx_n29i.js'), D = await mdata(env); for (const c of D.C.keys()) S.add('/countries/' + c + '/'); for (const k of D.M.keys()) S.add('/m/' + k + '/'); } catch (e) {}
   return S;
 }
-const FIXED = /^\/(?:|countries\/[a-z0-9-]+\/(?:how-to-check|is-it-safe|buyer-protection-law)\/|rankings\/most-delayed\/(?:[a-z0-9-]+\/)?|check\/?|pricing\/|how-we-score\/|about\/|checklist\/|database\/|cases\/|apply\/|tools\/|glossary\/|docs\/|projects\/(?:[a-z0-9-]{1,90}\/)?|developers\/(?:[a-z0-9-]{1,90}\/)?|countries\/|rankings\/(?:[a-z0-9-]{2,60}\/)?|guides\/buyers-from\/(?:[a-z]+\/)?|reports\/month\/|satellite\/monthly\/|watch\/new-websites\/|app\/)$/;
+const FIXED = /^\/(?:|countries\/[a-z0-9-]+\/(?:how-to-check|is-it-safe|buyer-protection-law)\/|rankings\/most-delayed\/(?:[a-z0-9-]+\/)?|check\/?|pricing\/|how-we-score\/|about\/|checklist\/|database\/|cases\/|apply\/|tools\/|glossary\/|docs\/|projects\/(?:[a-z0-9-]{1,90}\/)?|developers\/(?:[a-z0-9-]{1,90}\/)?|countries\/|rankings\/(?:[a-z0-9-]{2,60}\/)?|guides\/buyers-from\/(?:[a-z]+\/)?|guides\/buying-off-plan\/(?:[a-z0-9-]+\/)?|reports\/month\/|satellite\/monthly\/|watch\/new-websites\/|app\/)$/;
 function locHref(h, lang, LS) {
   if (!/^\/(?!\/)/.test(h) || /^\/(?:es|de|fr|nl|ru|zh|ar)\//.test(h)) return h;
   const i = h.search(/[?#]/), p = i < 0 ? h : h.slice(0, i);
@@ -136,7 +136,7 @@ async function render(env, lang, key, D, body, shTxt, extra) {
   const N = await import('./kbx_named.js');
   const path = '/' + key + '/', canon = ORIGIN + pre(lang) + path, have = new Set(await langsOf(env, key));
   const alt = l => ORIGIN + (l === 'en' || have.has(l) ? pre(l) : '') + path;
-  const ld = { '@context': 'https://schema.org', '@graph': [{ '@type': key.startsWith('tools/') ? 'WebApplication' : key.startsWith('guides/') ? 'Article' : 'CollectionPage', name: D.t, description: D.d, url: canon, inLanguage: lang, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' } },
+  const ld = { '@context': 'https://schema.org', '@graph': [{ '@type': key.startsWith('tools/') ? 'WebApplication' : key.startsWith('guides/') ? 'Article' : /^[a-z]+$/.test(key) && key.length > 3 && !/^(?:new|registers)$/.test(key) ? 'WebPage' : 'CollectionPage', name: D.t, description: D.d, url: canon, inLanguage: lang, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' } },
     { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Kolaboro', item: ORIGIN + pre(lang) + '/' }].concat(key.startsWith('tools/') ? [{ '@type': 'ListItem', position: 2, name: T(D, 'Tools') || 'Tools', item: ORIGIN + pre(lang) + '/tools/' }] : []).concat([{ '@type': 'ListItem', position: key.startsWith('tools/') ? 3 : 2, name: D.t, item: canon }]) }] };
   if (key === SOP) Object.assign(ld['@graph'][0], { '@type': 'Report', datePublished: '2026-11-01', isBasedOn: ORIGIN + '/' + SOP + '/', publisher: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' } });
   if (key.startsWith('tools/')) Object.assign(ld['@graph'][0], { applicationCategory: 'UtilitiesApplication', operatingSystem: 'Any (runs in the browser)', offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' } });
