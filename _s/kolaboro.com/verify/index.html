@@ -97,7 +97,7 @@ document.getElementById('chfile').onchange = function(){ var f = this.files[0]; 
 <form id="pg-f" style="display:flex;gap:8px;flex-wrap:wrap"><label for="pg-u" class="sr-only">Page address on kolaboro.com</label><input id="pg-u" value="/" spellcheck="false" autocomplete="off" style="flex:1;min-width:200px;min-height:46px;border:1px solid #D8D6CE;border-radius:12px;padding:0 12px;font:inherit"><button class="btn btn-hi" type="submit">Check this page</button></form>
 <div id="pg-o" style="margin-top:12px" aria-live="polite"></div>
 <details style="margin-top:14px"><summary><b>Exactly what is normalized before hashing</b></summary>
-<p>The published source is compared as stored in the deploy. The deploy itself changes files in two known ways, each reversed only after a first mismatch: the Google Analytics and Clarity snippets (point 4 below), and the retired Supabase anon key, which the deploy replaces with its public successor key in scripts and pages that still carry it; that one string is put back. Nothing else is touched; any other difference shows as a mismatch. If the source cannot be fetched, the check falls back to the page as you received it, with the reversals below.</p>
+<p>The published source is compared as stored in the deploy. Two known changes are reversed only after a first mismatch: the Google Analytics and Clarity snippets (point 4 below), and the retired Supabase anon key, which the copy served to you carries as its public successor key in scripts and pages that still hold it; that one string is put back, and the row says when the served copy differs only by it. Nothing else is touched; any other difference shows as a mismatch. If the source cannot be fetched, the check falls back to the page as you received it, with the reversals below.</p>
 <ol><li>The worker stamps a fresh <code>nonce="..."</code> on every <code>&lt;script&gt;</code> tag of each response (it is the key of our Content Security Policy, so it must change every time). The attribute is removed.</li>
 <li>Cloudflare hides email addresses from spam bots: a <code>mailto:</code> link becomes <code>/cdn-cgi/l/email-protection#&lt;hex&gt;</code>, the address becomes a <code>[email protected]</code> placeholder, and a script <code>email-decode.min.js</code> is added. The hex is decoded back to the address and the script removed.</li>
 <li>On two pages (<code>/admin</code> and one campaign landing) the worker appends a script from <code>/__k/</code>. It is removed.</li>
@@ -209,7 +209,7 @@ document.getElementById('chfile').onchange = function(){ var f = this.files[0]; 
     <p class="fine">© 2026 Kolaboro, operated by Equinox Investment Group LLC, 30 N Gould St Ste N, Sheridan, WY 82801, USA. Kolaboro agents provide independent verification and information, not legal, tax or financial advice. Reports are opinions based on the evidence listed in them.</p>
   </div>
 </footer>
-<script src="/k/site.js?v=3222000ecc" defer></script><script src="/k/prov.js?v=85080e1313" defer></script><script src="/verify/n.js?v=b4d87542f9" defer></script>
+<script src="/k/site.js?v=3222000ecc" defer></script><script src="/k/prov.js?v=85080e1313" defer></script><script src="/verify/n.js?v=d372551844" defer></script>
 <script>(function(){var _c=window.clarity;try{Object.defineProperty(window,'clarity',{configurable:true,get:function(){return _c},set:function(v){if(typeof v==='function'&&!v.q)v.q=[];_c=v;}})}catch(e){}})();</script><script>
 (function(){
   function $(i){ return document.getElementById(i); }

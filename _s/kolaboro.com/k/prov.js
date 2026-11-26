@@ -8,7 +8,7 @@
  */
 (function () {
   if (window.KBProv) return;
-  var REG = '/k/prov.json', VB = '/k/verify-badge.js?v=6b61413c9f', PC = '/k/pagecheck.js?v=9c06f607ee';
+  var REG = '/k/prov.json', VB = '/k/verify-badge.js?v=6b61413c9f', PC = '/k/pagecheck.js?v=26bf93e7ae';
   var me = document.currentScript && document.currentScript.src;
   if (me) { var q = me.split('?')[1] || ''; REG += '?' + q; }
   var reg = null, regP = null, cache = {}, panel = null, opener = null;

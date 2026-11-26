@@ -3,7 +3,7 @@
   var $ = function (i) { return document.getElementById(i); };
   function esc(t) { return String(t == null ? '' : t).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
   function load(u) { return new Promise(function (ok, no) { var s = document.createElement('script'); s.src = u; s.onload = ok; s.onerror = no; document.head.appendChild(s); }); }
-  function pc() { return window.KBPageCheck ? Promise.resolve(window.KBPageCheck) : load('/k/pagecheck.js?v=9c06f607ee').then(function () { return window.KBPageCheck; }); }
+  function pc() { return window.KBPageCheck ? Promise.resolve(window.KBPageCheck) : load('/k/pagecheck.js?v=26bf93e7ae').then(function () { return window.KBPageCheck; }); }
   function vb() { return window.KBVerify ? Promise.resolve(window.KBVerify) : load('/k/verify-badge.js?v=6b61413c9f').then(function () { return window.KBVerify; }); }
   var f = $('pg-f'), u = $('pg-u'), o = $('pg-o');
   function go() {
