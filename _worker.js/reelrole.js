@@ -6,10 +6,10 @@
 // Any error falls back to the untouched response.
 
 const ORIGIN = 'https://reelrole.com';
-const SB = 'https://mfyfqtlozspmiautbgef.supabase.co/rest/v1/';
-const SB_URL = 'https://mfyfqtlozspmiautbgef.supabase.co';
+const SB = 'https://gmdalfsvtfhzepyrdmjj.supabase.co/rest/v1/';
+const SB_URL = 'https://gmdalfsvtfhzepyrdmjj.supabase.co';
 // Public publishable key (new Supabase key format; safe in the browser). Row-level security applies.
-const ANON = 'sb_publishable_m3p4bAQ2IufrhXsRR_-tpA_r-HbC4Vd';
+const ANON = 'sb_publishable_Eh-sCyaGiw6AVE910v_mqA_WsW63Bdz';
 const OG_IMAGE = ORIGIN + '/og-image.png';
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 
@@ -40,6 +40,12 @@ const PAGES = {
   '/hire/english-speaking-sales': ['Hire English-Speaking Sales People | ReelRole', 'English-speaking sales candidates on video. Hear their English before you call.'],
   '/hire/high-ticket-closers': ['Hire High-Ticket Closers | ReelRole', 'High-ticket closers pitching on video. See how they sell before you book a call.'],
   '/hire/customer-success': ['Hire Customer Success People | ReelRole', 'Customer success candidates with short video introductions. Browse free, unlock for 5 euros.'],
+  '/hire/closers-spain': ['Hire Closers in Spain | ReelRole', 'Closers based in Spain who sell in Spanish. Hear them on video before you unlock their contact.'],
+  '/hire/closers-mexico': ['Hire Closers in Mexico | ReelRole', 'Closers in Mexico for Spanish-speaking markets, with an intro video.'],
+  '/hire/closers-latam': ['Hire Closers in Latin America | ReelRole', 'Remote closers in Argentina, Colombia, Venezuela, Chile and more, on video.'],
+  '/hire/closers-uk': ['Hire Closers in the UK | ReelRole', 'Closers in the UK and Ireland who sell in English, on video.'],
+  '/guia-closer': ['Cómo ser closer high-ticket en remoto | ReelRole', 'Qué hace un closer, cuánto gana, qué piden las empresas y cómo conseguir tu primer trabajo.'],
+  '/closer-guide': ['How to Become a Remote High-Ticket Closer | ReelRole', 'What a closer does, how much they earn, what companies look for and how to land your first job.'],
 };
 // App screens: served normally but never indexed.
 const APP = /^\/(talent|company|admin|messages|auth|login|register|reset-password)(\/|$)/;
@@ -73,7 +79,7 @@ async function loadTalent(id, ctx) {
   const key = new Request('https://reelrole-edge-cache/' + id);
   const hit = await cache.match(key);
   if (hit) return hit.json();
-  const r = await fetch(url, { headers: { apikey: ANON, authorization: 'Bearer ' + ANON } });
+  const r = await fetch(url, { headers: { apikey: ANON, 'accept-profile': 'reelrole' } });
   if (!r.ok) return { error: true };
   const rows = await r.json();
   const t = Array.isArray(rows) && rows[0] ? rows[0] : null;
@@ -88,7 +94,7 @@ async function loadJob(id, ctx) {
   const key = new Request('https://reelrole-edge-cache/job/' + id);
   const hit = await cache.match(key);
   if (hit) return hit.json();
-  const r = await fetch(url, { headers: { apikey: ANON, authorization: 'Bearer ' + ANON } });
+  const r = await fetch(url, { headers: { apikey: ANON, 'accept-profile': 'reelrole' } });
   if (!r.ok) return { error: true };
   const rows = await r.json();
   const j = Array.isArray(rows) && rows[0] ? rows[0] : null;
