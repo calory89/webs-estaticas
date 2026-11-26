@@ -24177,7 +24177,7 @@ function page(o) {
 	};
 	const t = T[o.L];
 	const url = SITE + P(o.L, o.path);
-	const image = o.image ?? ogImage(o.L);
+	const image = (o.image ?? ogImage(o.L)).replace(/^(https:\/\/cf\.bstatic\.com\/xdata\/images\/hotel\/)max1024x768\//, "$1max1280x900/");
 	const alt = o.altLinks ? o.altLinks.map(([l, h]) => `<link rel="alternate" hreflang="${l}" href="${SITE}${h}">`).join("") + (o.altLinks.find(([l]) => l === "en") ? `<link rel="alternate" hreflang="x-default" href="${SITE}${o.altLinks.find(([l]) => l === "en")[1]}">` : "") : o.langs ? LANGS.map((l) => `<link rel="alternate" hreflang="${l}" href="${SITE}${P(l, o.path)}">`).join("") + `<link rel="alternate" hreflang="x-default" href="${SITE}${o.path}">` : o.alts ? o.alts.map((l) => `<link rel="alternate" hreflang="${l}" href="${SITE}${P(l, o.path)}">`).join("") + `<link rel="alternate" hreflang="x-default" href="${SITE}${o.path}">` : "";
 	const langSel = o.langs ? `<label class="lang"><span class="sr" hidden>Language</span><select aria-label="Language" onchange="location.href=this.value">${LANGS.map((l) => `<option value="${P(l, o.path)}"${l === o.L ? " selected" : ""}>${T[l].name}</option>`).join("")}</select></label>` : "";
 	return `<!doctype html><html lang="${t.htmlLang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
