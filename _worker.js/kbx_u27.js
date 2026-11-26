@@ -337,6 +337,8 @@ function client() {
     var load = function () { if (P) return P; P = fetch('/api/v1/search-index').then(function (r) { return r.json(); }).then(function (d) {
       IX = (d.p || []).map(function (p) { return { u: PRE + '/projects/' + p[0] + '/', n: p[1], sub: [p[3], p[7] || p[5], p[6]].filter(Boolean).join(' · '), h: ' ' + norm(p[1] + ' ' + p[3] + ' ' + p[5] + ' ' + p[6] + ' ' + p[7]), w: 0 }; })
         .concat((d.d || []).map(function (x) { return { u: PRE + '/developers/' + x[0] + '/', n: x[1], sub: f('sgd') + ' · ' + f('sgp', { k: x[2] }) + (x[3] ? ' · ' + x[3] : ''), h: ' ' + norm(x[1] + ' ' + x[3]), w: 1 }; }));
+      var MK = {}; (d.p || []).forEach(function (p) { if (!p[5]) return; var m = MK[p[5]] || (MK[p[5]] = { c: p[6], k: 0 }); m.k++; });   // n40 k6: markets too
+      Object.keys(MK).forEach(function (m) { var sl = m.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''); IX.push({ u: PRE + '/m/' + sl + '/', n: m, sub: [MK[m].c !== m ? MK[m].c : '', f('sgp', { k: MK[m].k })].filter(Boolean).join(' · '), h: ' ' + norm(m + ' ' + MK[m].c), w: 2 }); });
     }).catch(function () { P = null; }); return P; };
     var close = function () { ul.hidden = true; HQ.setAttribute('aria-expanded', 'false'); HQ.removeAttribute('aria-activedescendant'); act = -1; };
     var run = function () {
@@ -344,7 +346,8 @@ function client() {
       if (!ws.length || /^(https?:\/\/|www\.)/i.test(v.trim()) || /\.[a-z]{2,}(\/|$)/i.test(v.trim())) { close(); return; }
       load().then(function () { if (!IX) return;
         var R = IX.filter(function (it) { return ws.every(function (w) { return it.h.indexOf(' ' + w) >= 0 || (w.length > 2 && it.h.indexOf(w) >= 0); }); })
-          .sort(function (a, b) { var x = norm(a.n).indexOf(ws[0]) === 0 ? 0 : 1, y = norm(b.n).indexOf(ws[0]) === 0 ? 0 : 1; return x - y || a.w - b.w || a.n.length - b.n.length; }).slice(0, 7);
+          .sort(function (a, b) { var x = norm(a.n).indexOf(ws[0]) === 0 ? 0 : 1, y = norm(b.n).indexOf(ws[0]) === 0 ? 0 : 1; return x - y || a.w - b.w || a.n.length - b.n.length; });
+        var Rh = R.filter(function (it) { return it.w === 2; }).slice(0, 2).concat(R.filter(function (it) { return it.w === 1; }).slice(0, 2)); R = Rh.concat(R.filter(function (it) { return it.w === 0; })).slice(0, 7);   // n40 k6: up to 2 markets and 2 developers first
         ul.innerHTML = ''; R.forEach(function (it, i) { var li = el('li'), a = el('a'); li.setAttribute('role', 'option'); li.id = 'khs-' + i; a.href = it.u; a.tabIndex = -1; a.appendChild(el('b', null, it.n)); a.appendChild(el('small', null, it.sub)); li.appendChild(a); ul.appendChild(li); });
         ul.hidden = !R.length; HQ.setAttribute('aria-expanded', R.length ? 'true' : 'false'); act = -1; });
     };
