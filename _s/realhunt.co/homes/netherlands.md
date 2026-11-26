@@ -1,8 +1,14 @@
 ## Apartments for sale in the Netherlands
 
-Updated 26 November 2026. Newest home added 13 October 2026.
+List last changed 13 October 2026. Jump to the homes
 
-RealHunt lists 18 apartments for sale in the Netherlands today, priced from €299,000 to €339,500. The cheapest costs €299,000: [Remodelled corner flat with a south balcony over the canal, Reigersbos](https://realhunt.co/deal/nl-amsterdam-299k-563619), in Reigersbos (73 m², 2 bedrooms). The median price is €325,000 (€4,286/m²), against €93,000 (€1,200/m²) for the 654 homes on RealHunt in 30 countries.
+### Three picks from this list
+
+- [Best score€325,000107 m² corner flat on the 10th floor with views over nature, AmsterdamGouden Rand, Amsterdam107 m² · 3 bed · €3,037/m² · 44 days on RealHunt](https://realhunt.co/deal/nl-amsterdam-325k-505653)
+- [Cheapest€299,000Remodelled corner flat with a south balcony over the canal, ReigersbosReigersbos, Amsterdam73 m² · 2 bed · €4,096/m² · 44 days on RealHunt](https://realhunt.co/deal/nl-amsterdam-299k-563619)
+- [Most space for the money€335,00093 m² four-room flat with a 13.5 m² balcony by Nelson Mandela ParkNelson Mandelapark, Amsterdam93 m² · 3 bed · €3,602/m² · 44 days on RealHunt](https://realhunt.co/deal/nl-amsterdam-335k-962495)
+
+RealHunt lists 18 apartments for sale in the Netherlands today, priced from €299,000 to €339,500. The cheapest costs €299,000: [Remodelled corner flat with a south balcony over the canal, Reigersbos](https://realhunt.co/deal/nl-amsterdam-299k-563619), in Reigersbos (73 m², 2 bedrooms). The median price is €325,000 (€4,286/m²), against €93,200 (€1,206/m²) for the 726 homes on RealHunt in 24 countries.
 
 Homes
 18
@@ -33,6 +39,8 @@ Data of
 
 ### The 18 homes, best score first
 
+Sorted by RealHunt score, best first. For the cheapest first, see the table below: tap a heading such as Price to sort it. [See these homes on the map](https://realhunt.co/map?country=Netherlands)
+
 - [Score 94€325,000107 m² corner flat on the 10th floor with views over nature, AmsterdamGouden Rand, Amsterdam107 m² · 3 bed · €3,037/m² · 44 days on RealHuntA huge 107 m² corner flat (formerly four rooms) on the 10th floor of the Gouden Rand in Zuidoost: a long bright living room with an open kitchen…](https://realhunt.co/deal/nl-amsterdam-325k-505653)
 - [Score 94€299,000Remodelled corner flat with a south balcony over the canal, ReigersbosReigersbos, Amsterdam73 m² · 2 bed · €4,096/m² · 44 days on RealHunt72 m² on the 1st floor: the layout was redone so the bedrooms face the front and the living room the back, with a modern dark kitchen, a new…](https://realhunt.co/deal/nl-amsterdam-299k-563619)
 - [Score 93€299,000Three-room flat with a 14 m² south terrace next to Reigersbos metroReigersbos, Amsterdam72 m² · 2 bed · €4,153/m² · 44 days on RealHunt72 m² on the 1st floor, 50 m from Reigersbos shopping centre and metro: a big living room with an open kitchen, two bedrooms and a 14 m²…](https://realhunt.co/deal/nl-amsterdam-299k-968188)
@@ -53,6 +61,8 @@ Data of
 - [Score 83€330,000Three-room flat with a modern kitchen and two balconies in ReigersbosReigersbos, Amsterdam74 m² · 2 bed · €4,459/m² · 44 days on RealHunt74 m² on the 3rd floor: a bright living room, a modern white kitchen with an induction hob, two bedrooms, a new bathroom and WC, a 5 m² west…](https://realhunt.co/deal/nl-amsterdam-330k-474793)
 
 ### Compare the 18 homes, cheapest first
+
+Median price per m² of this list: €4,286/m².
 
 Home | Place | Price | Size | Per m² | Beds | Score | Added
 [Remodelled corner flat with a south balcony over the canal, Reigersbos](https://realhunt.co/deal/nl-amsterdam-299k-563619) | Reigersbos, Amsterdam | €299,000 | 73 m² | €4,096/m² | 2 | 94 | 13 Oct 2026
@@ -84,6 +94,10 @@ Home | Place | Price | Size | Per m² | Beds | Score | Added
 - Scores: 83 to 94 out of 98. The best rated: [107 m² corner flat on the 10th floor with views over nature, Amsterdam](https://realhunt.co/deal/nl-amsterdam-325k-505653).
 - Newest, added 13 October 2026: [107 m² corner flat on the 10th floor with views over nature, Amsterdam](https://realhunt.co/deal/nl-amsterdam-325k-505653).
 
+### What your money buys here
+
+Split into three groups of the same size by asking price: from €299,000 to €310,000, 6 homes with a median of 72 m², most often 2 bedrooms; from €315,000 to €325,000, 6 homes with a median of 75 m², most often 2 bedrooms; from €330,000 to €339,500, 6 homes with a median of 81 m², most often 3 bedrooms.
+
 ### Buying costs and rules for foreigners in the Netherlands
 
 Can foreigners buy? Yes. There are no nationality or residence rules and no surcharge for foreign buyers. Some cities, such as The Hague, restrict renting out cheaper homes after purchase without a permit (opkoopbescherming).
@@ -94,7 +108,7 @@ At the same percentages: on €40,000, €800 to €3,600; on €80,000, €1,60
 
 Yearly property tax: Owners pay municipal property tax (onroerendezaakbelasting, OZB) on the official WOZ value, at a rate each municipality sets, which in practice is a per mille figure; tenants of homes do not pay it.
 
-[Buying-cost calculator for a home in the Netherlands](https://realhunt.co/buying-costs/netherlands) · [All costs and taxes](https://realhunt.co/costs/netherlands) · [How to buy, step by step](https://realhunt.co/guide/netherlands) · [Rules by nationality](https://realhunt.co/can-i-buy)
+[Buying-cost calculator for a home in the Netherlands](https://realhunt.co/buying-costs/netherlands) · [All costs and taxes](https://realhunt.co/costs/netherlands) · [How to buy, step by step](https://realhunt.co/guide/netherlands) · [Rules by nationality](https://realhunt.co/can-i-buy) · [Yearly running costs of a home](https://realhunt.co/tools/home-running-costs)
 
 General information, not tax or legal advice. Figures checked in 2026.
 
@@ -135,6 +149,8 @@ Rankings [Top 10 by score 10](https://realhunt.co/cheap-houses/best-rated-in-net
 Neighbouring countries [Germany 21](https://realhunt.co/homes/germany)
 
 By country [Spain 150](https://realhunt.co/homes/spain) [Italy 87](https://realhunt.co/homes/italy) [United States 61](https://realhunt.co/homes/united-states) [France 48](https://realhunt.co/homes/france) [Denmark 46](https://realhunt.co/homes/denmark) [Sweden 41](https://realhunt.co/homes/sweden) [Japan 36](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 26](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Mexico 9](https://realhunt.co/homes/mexico) [Portugal 8](https://realhunt.co/homes/portugal) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Cyprus 6](https://realhunt.co/homes/cyprus) [United Kingdom 6](https://realhunt.co/homes/united-kingdom) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
+
+How we choose these homes: a person reads every listing and checks its price, size, photos and place before it goes up, and the nightly check takes it off when the advert goes. [How we check homes](https://realhunt.co/how-we-check-homes) 18 of these 18 homes were checked against the original listing in the last 30 days.
 
 These listings come from funda.nl (18). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 

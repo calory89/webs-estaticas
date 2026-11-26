@@ -1,8 +1,14 @@
 ## Houses for sale in Portugal
 
-Updated 26 November 2026. Newest home added 20 November 2026.
+List last changed 20 November 2026. Jump to the homes
 
-RealHunt lists 8 houses for sale in Portugal today, priced from €48,000 to €189,000. The cheapest costs €48,000: [Freshly painted three-bedroom village house near the Sabor lakes](https://realhunt.co/deal/pt-mogadouro-48k-19109522), in Brunhoso (100 m², 3 bedrooms). The median price is €140,000 (€2,000/m²), against €93,000 (€1,200/m²) for the 654 homes on RealHunt in 30 countries.
+### Three picks from this list
+
+- [Best score€76,500Two-bed village house with terrace in Portugal's Dão wine countryCarregal do Sal, Viseu134 m² · 2 bed · €571/m² · 52 days on RealHunt](https://realhunt.co/deal/pt-carregal-do-sal-76k-1bjc5q)
+- [Cheapest€48,000Freshly painted three-bedroom village house near the Sabor lakesBrunhoso, Bragança100 m² · 3 bed · €480/m² · 43 days on RealHunt](https://realhunt.co/deal/pt-mogadouro-48k-19109522)
+- [Most space for the moneyNew€130,000Renovated detached house with open hill views in the eastern Algarve, near AlcoutimAlcoutim e Pereiro, Faro77 m² · 2 bed · €1,688/m² · 8 days on RealHunt](https://realhunt.co/deal/pt-algarve-alcoutim-renovated-hill-house-130k)
+
+RealHunt lists 8 houses for sale in Portugal today, priced from €48,000 to €189,000. The cheapest costs €48,000: [Freshly painted three-bedroom village house near the Sabor lakes](https://realhunt.co/deal/pt-mogadouro-48k-19109522), in Brunhoso (100 m², 3 bedrooms). The median price is €140,000 (€2,000/m²), against €93,200 (€1,206/m²) for the 726 homes on RealHunt in 24 countries.
 
 Homes
 8
@@ -33,6 +39,8 @@ Data of
 
 ### The 8 homes, best score first
 
+Sorted by RealHunt score, best first. For the cheapest first, see the table below: tap a heading such as Price to sort it. [See these homes on the map](https://realhunt.co/map?country=Portugal)
+
 - [Score 85€76,500Two-bed village house with terrace in Portugal's Dão wine countryCarregal do Sal, Viseu134 m² · 2 bed · €571/m² · 52 days on RealHuntA T2 house with a terrace in Sobral, Carregal do Sal, in the Dão wine region: kitchen, living room, two bedrooms and a bathroom on the main floor…](https://realhunt.co/deal/pt-carregal-do-sal-76k-1bjc5q)
 - [Score 80New€189,000Three-bedroom village house with terrace and Serra da Lousã views near PenacovaParadela da Cortiça, Coimbra95 m² · 3 bed · €1,989/m² · 6 days on RealHuntA neat three-storey village house in Paradela da Cortiça with an open view of the Serra da Lousã.](https://realhunt.co/deal/pt-centro-penacova-paradela-village-house-views-189k)
 - [Score 80New€130,000Renovated detached house with open hill views in the eastern Algarve, near AlcoutimAlcoutim e Pereiro, Faro77 m² · 2 bed · €1,688/m² · 8 days on RealHuntA detached single-storey house with a new tiled roof and an Algarve chimney at the edge of a small hill village, about 15 km from Alcoutim.](https://realhunt.co/deal/pt-algarve-alcoutim-renovated-hill-house-130k)
@@ -43,6 +51,8 @@ Data of
 - [Score 83€183,000Renovated, furnished flat in a garden resort with pool near TaviraMoncarapacho, Tavira (Algarve)68 m² · 1 bed · €2,691/m² · 46 days on RealHuntA 68 m² flat in the Colina Verde Resort in Moncarapacho, among olive trees, palms and lawns a few kilometres from the Algarve coast between Tavira…](https://realhunt.co/deal/pt-tavira-183k-300012)
 
 ### Compare the 8 homes, cheapest first
+
+Median price per m² of this list: €2,000/m².
 
 Home | Place | Price | Size | Per m² | Beds | Score | Added
 [Freshly painted three-bedroom village house near the Sabor lakes](https://realhunt.co/deal/pt-mogadouro-48k-19109522) | Brunhoso, Bragança | €48,000 | 100 m² | €480/m² | 3 | 84 | 14 Oct 2026
@@ -87,7 +97,7 @@ At the same percentages: on €40,000, €1,200 to €4,800; on €80,000, €2,
 
 Yearly property tax: IMI 0.3-0.45% of taxable value (urban), set by municipality.
 
-[Buying-cost calculator for a home in Portugal](https://realhunt.co/buying-costs/portugal) · [All costs and taxes](https://realhunt.co/costs/portugal) · [How to buy, step by step](https://realhunt.co/guide/portugal) · [Rules by nationality](https://realhunt.co/can-i-buy)
+[Buying-cost calculator for a home in Portugal](https://realhunt.co/buying-costs/portugal) · [All costs and taxes](https://realhunt.co/costs/portugal) · [How to buy, step by step](https://realhunt.co/guide/portugal) · [Rules by nationality](https://realhunt.co/can-i-buy) · [Portugal IMT and stamp duty calculator](https://realhunt.co/tools/portugal-imt) · [Yearly running costs of a home](https://realhunt.co/tools/home-running-costs)
 
 General information, not tax or legal advice. Figures checked in 2026.
 
@@ -125,6 +135,8 @@ By feature [With a garden 3](https://realhunt.co/cheap-houses/with-garden-in-por
 Neighbouring countries [Spain 150](https://realhunt.co/homes/spain)
 
 By country [Spain 150](https://realhunt.co/homes/spain) [Italy 87](https://realhunt.co/homes/italy) [United States 61](https://realhunt.co/homes/united-states) [France 48](https://realhunt.co/homes/france) [Denmark 46](https://realhunt.co/homes/denmark) [Sweden 41](https://realhunt.co/homes/sweden) [Japan 36](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 26](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Mexico 9](https://realhunt.co/homes/mexico) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Cyprus 6](https://realhunt.co/homes/cyprus) [United Kingdom 6](https://realhunt.co/homes/united-kingdom) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
+
+How we choose these homes: a person reads every listing and checks its price, size, photos and place before it goes up, and the nightly check takes it off when the advert goes. [How we check homes](https://realhunt.co/how-we-check-homes) 6 of these 8 homes were checked against the original listing in the last 30 days. 10 homes in Portugal left RealHunt or were marked as no longer for sale in the last 30 days. [See the log of homes taken off the site](https://realhunt.co/research/removed-homes)
 
 These listings come from green-acres.pt (6), imovirtual.com (2). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 

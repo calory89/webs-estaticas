@@ -1,8 +1,14 @@
 ## Houses for sale in the United States
 
-Updated 26 November 2026. Newest home added 20 November 2026.
+List last changed 20 November 2026. Jump to the homes
 
-RealHunt lists 61 houses for sale in the United States today, priced from €65,428 to €447,600. The cheapest costs €65,428: [Updated 3-bed townhouse in McKees Rocks, Pennsylvania](https://realhunt.co/deal/mckees-rocks-65428), in McKees Rocks (106 m², 3 bedrooms). The median price is €214,900 (€1,560/m²), against €93,000 (€1,200/m²) for the 654 homes on RealHunt in 30 countries.
+### Three picks from this list
+
+- [Best scoreNew€223,300Renovated 1889 Victorian with a deep front porch in Lynchburg, VirginiaLynchburg, Virginia289 m² · 3 bed · €773/m² · 6 days on RealHunt](https://realhunt.co/deal/us-lynchburg-va-renovated-victorian-carriage-house-245k)
+- [Cheapest€65,428Updated 3-bed townhouse in McKees Rocks, PennsylvaniaMcKees Rocks, Pennsylvania106 m² · 3 bed · €617/m² · 64 days on RealHunt](https://realhunt.co/deal/mckees-rocks-65428)
+- [Most space for the money€82,875Move-in ready 2-bed house in Chapmanville, West VirginiaChapmanville, West Virginia176 m² · 2 bed · €471/m² · 64 days on RealHunt](https://realhunt.co/deal/chapmanville-82875)
+
+RealHunt lists 61 houses for sale in the United States today, priced from €65,428 to €447,600. The cheapest costs €65,428: [Updated 3-bed townhouse in McKees Rocks, Pennsylvania](https://realhunt.co/deal/mckees-rocks-65428), in McKees Rocks (106 m², 3 bedrooms). The median price is €214,900 (€1,560/m²), against €93,200 (€1,206/m²) for the 726 homes on RealHunt in 24 countries.
 
 Homes
 61
@@ -33,10 +39,12 @@ Data of
 
 ### The 30 best of 61, by score
 
+Sorted by RealHunt score, best first. For the cheapest first, see the table below: tap a heading such as Price to sort it. [All homes by the sea](https://realhunt.co/homes/united-states/by-the-sea) [See these homes on the map](https://realhunt.co/map?country=United+States)
+
 - [Score 93New€223,300Renovated 1889 Victorian with a deep front porch in Lynchburg, VirginiaLynchburg, Virginia289 m² · 3 bed · €773/m² · 6 days on RealHuntAsking US$245,000 (about €223,300) for a renovated 1889 Victorian of about 289 m² in Lynchburg, a historic city on the James River at the foot of…](https://realhunt.co/deal/us-lynchburg-va-renovated-victorian-carriage-house-245k)
 - [Score 91€153,900The historic Savage House: a white Victorian with a gingerbread porchScotland Neck, North Carolina199 m² · 3 bed · €773/m² · 41 days on RealHuntStep into the charm of the historic Savage House, a beautiful 1900 Victorian in Scotland Neck, North Carolina: 2,143 sq ft (199 m²) with three…](https://realhunt.co/deal/us-north-carolina-victorian-170k)
 - [Score 90New€200,000Victorian house with original oak woodwork opposite a park in Marietta, OhioMarietta, Ohio191 m² · 3 bed · €1,047/m² · 8 days on RealHuntAsking US$220,000 (about €200,000) for a 1929 Victorian of about 191 m² in the centre of Marietta, a historic river town in south-east Ohio.](https://realhunt.co/deal/us-marietta-oh-victorian-oak-woodwork-220k)
-- [Score 90New€227,700Wooded raised ranch with cedar ceilings across the road from Lake Huron, AlpenaAlpena, Michigan172 m² · 2 bed · €1,324/m² · 6 days on RealHuntAsking US$250,000 (about €227,700).](https://realhunt.co/deal/us-alpena-mi-cedar-ceiling-house-across-from-lake-huron-250k)
+- [Score 90New€227,700Wooded raised ranch with cedar ceilings across the road from Lake Huron, AlpenaAlpena, Michigan172 m² · 2 bed · €1,324/m² · 6 days on RealHuntCommunity fee €11 a monthAsking US$250,000 (about €227,700).](https://realhunt.co/deal/us-alpena-mi-cedar-ceiling-house-across-from-lake-huron-250k)
 - [Score 90New€195,800Updated 1886 house with a fenced garden and an oversized garage in La Crosse, WisconsinLa Crosse, Wisconsin142 m² · 3 bed · €1,379/m² · 6 days on RealHuntAsking US$214,900 (about €195,800) for a three-bedroom house of about 142 m² in La Crosse, a university city on the Mississippi in western Wisconsin.](https://realhunt.co/deal/us-la-crosse-wi-1886-house-fenced-garden-big-garage-215k)
 - [Score 89€79,200Blue 1907 cottage with 9-foot ceilings and a new kitchenFreeport, Illinois83 m² · 2 bed · €954/m² · 52 days on RealHuntA 1907 cottage with two bedrooms in about 83 m², freshly painted outside, with 9-foot ceilings, open beams, brand-new flooring and an open kitchen…](https://realhunt.co/deal/us-freeport-83k-605154)
 - [Score 89€85,929Updated 3-bed house in Clairton, PennsylvaniaClairton, Pennsylvania116 m² · 3 bed · €741/m² · 64 days on RealHunt116 m² (1,248 sq ft), 3 bed, 2 bath, built 1938.](https://realhunt.co/deal/clairton-85929)
@@ -51,22 +59,24 @@ Data of
 - [Score 87€163,100Adirondack farmhouse on 10.8 acres of autumn forestForestport, New York147 m² · 3 bed · €1,110/m² · 41 days on RealHuntForestport Adirondack foothills retreat on 10.8 acres: a 1918 farmhouse of 1,577 sq ft (147 m²) with three bedrooms, a renovated grey kitchen with…](https://realhunt.co/deal/us-adirondacks-farmhouse-10-acres-179k)
 - [Score 87€72,800Gambrel-roof farmhouse with metal roof and heat pump in MaineAshland, Maine96 m² · 3 bed · €758/m² · 52 days on RealHuntThree bedrooms and two bathrooms in about 96 m², with hardwood floors, an eat-in kitchen and updated bathrooms.](https://realhunt.co/deal/us-ashland-89k-672054)
 - [Score 87€77,300Garden house with arbor and garage on the Canadian borderMadawaska, Maine124 m² · 3 bed · €623/m² · 52 days on RealHuntA 1943 house with three bedrooms and 1.5 baths in about 124 m².](https://realhunt.co/deal/us-madawaska-79k-677888)
-- [Score 87€259,800Corner three-bed condo with three balconies in Downtown HollywoodHollywood, Florida141 m² · 3 bed · €1,843/m² · 19 days on RealHuntA corner 3-bed, 2-bath condo of 1,522 sq ft in a 2007 building, with three balconies facing the sunsets, two parking spaces, a walk-in closet…](https://realhunt.co/deal/us-hollywood-140-501-290k)
-- [Score 87€223,100Top-floor two-bed condo in a gated resort-style community in DoralDoral, Florida111 m² · 2 bed · €2,010/m² · 19 days on RealHuntAn updated 2-bed, 2-bath top-floor condo of 1,197 sq ft in the gated Las Vistas community, with a private balcony, an in-unit washer and dryer and…](https://realhunt.co/deal/us-doral-8215-502-249k)
+- [Score 87€259,800Corner three-bed condo with three balconies in Downtown HollywoodHollywood, Florida141 m² · 3 bed · €1,843/m² · 19 days on RealHuntCommunity fee not statedA corner 3-bed, 2-bath condo of 1,522 sq ft in a 2007 building, with three balconies facing the sunsets, two parking spaces, a walk-in closet…](https://realhunt.co/deal/us-hollywood-140-501-290k)
+- [Score 87€223,100Top-floor two-bed condo in a gated resort-style community in DoralDoral, Florida111 m² · 2 bed · €2,010/m² · 19 days on RealHuntCommunity fee $625 a monthAn updated 2-bed, 2-bath top-floor condo of 1,197 sq ft in the gated Las Vistas community, with a private balcony, an in-unit washer and dryer and…](https://realhunt.co/deal/us-doral-8215-502-249k)
 - [Score 87New€227,7001927 brick house with a three-season room and pergola garden in Manitowoc, WisconsinManitowoc, Wisconsin146 m² · 4 bed · €1,560/m² · 6 days on RealHuntAsking US$249,900 (about €227,700) for a 1927 brick house of about 146 m² on the north side of Manitowoc, a port town on Lake Michigan.](https://realhunt.co/deal/us-manitowoc-wi-1927-brick-house-pergola-garden-250k)
 - [Score 87€237,400Main house with a second unit in Belmont Heights, TampaBelmont Heights, Florida158 m² · 4 bed · €1,503/m² · 18 days on RealHuntA main house with recent upgrades (2021 roof, 2020 HVAC, granite countertops, stainless steel appliances, updated electrical and plumbing) plus a…](https://realhunt.co/deal/us-tampa-4811-265k)
 - [Score 87New€218,100Well-kept three-bedroom colonial with a metal roof in Geneva, Finger LakesGeneva, New York128 m² · 3 bed · €1,704/m² · 8 days on RealHuntAsking US$239,900 (about €218,100) for a move-in ready colonial of about 128 m² in Geneva, a small lakeside city in the Finger Lakes region of…](https://realhunt.co/deal/us-geneva-ny-finger-lakes-colonial-240k)
 - [Score 87€279,600Mid-century ranch with open floor plan and mature oaks in Herchel Heights, TampaHerchel Heights Rev, Florida177 m² · 3 bed · €1,580/m² · 18 days on RealHuntCharming 1958 ranch home with recently renovated interior featuring soaring ceilings, exposed wood ceiling details, and wood-look tile flooring.](https://realhunt.co/deal/us-tampa-8009-312k)
-- [Score 86€237,400Corner lakefront townhouse with a tropical garden in Westview, Pembroke PinesPembroke Pines, Florida97 m² · 2 bed · €2,447/m² · 19 days on RealHuntA 2-bed, 1.5-bath corner townhouse of 1,040 sq ft with extra green space, a lush front garden, impact windows throughout, a newer A/C and a…](https://realhunt.co/deal/us-pembroke-pines-8982-265k)
-- [Score 86€241,900Townhouse with a screened patio three blocks from Young Circle, HollywoodHollywood, Florida121 m² · 2 bed · €1,999/m² · 19 days on RealHuntA 2-bed, 2.5-bath townhouse of 1,300 sq ft with a screened patio, an in-unit washer and dryer, a community pool and one assigned parking space.](https://realhunt.co/deal/us-hollywood-2200-6-270k)
+- [Score 86€237,400Corner lakefront townhouse with a tropical garden in Westview, Pembroke PinesPembroke Pines, Florida97 m² · 2 bed · €2,447/m² · 19 days on RealHuntCommunity fee not statedA 2-bed, 1.5-bath corner townhouse of 1,040 sq ft with extra green space, a lush front garden, impact windows throughout, a newer A/C and a…](https://realhunt.co/deal/us-pembroke-pines-8982-265k)
+- [Score 86€241,900Townhouse with a screened patio three blocks from Young Circle, HollywoodHollywood, Florida121 m² · 2 bed · €1,999/m² · 19 days on RealHuntCommunity fee not statedA 2-bed, 2.5-bath townhouse of 1,300 sq ft with a screened patio, an in-unit washer and dryer, a community pool and one assigned parking space.](https://realhunt.co/deal/us-hollywood-2200-6-270k)
 - [Score 86New€213,600Fully renovated brick rowhouse with a fenced yard in Lancaster, PennsylvaniaLancaster, Pennsylvania127 m² · 3 bed · €1,682/m² · 8 days on RealHuntAsking US$235,000 (about €213,600) for a brick rowhouse of about 127 m² that has been redone from top to bottom.](https://realhunt.co/deal/us-lancaster-pa-renovated-brick-rowhouse-235k)
-- [Score 86€134,400Updated first-floor two-bedroom condo near the beach in Maybury Mansions, Fort LauderdaleMaybury Mansions, Florida81 m² · 2 bed · €1,659/m² · 18 days on RealHuntRenovated with modern finishes, light-filled spaces, and private outdoor access on the first floor.](https://realhunt.co/deal/us-fort-lauderdale-2455-e102-150k)
-- [Score 86€389,800Renovated house with a two-car garage and a 2024 roof in Greenbriar (55+ community), Boca RatonBoca Raton, Florida158 m² · 3 bed · €2,467/m² · 19 days on RealHunt55+ community: at least one resident must be 55 or older.](https://realhunt.co/deal/us-boca-raton-18102-435k)
+- [Score 86€134,400Updated first-floor two-bedroom condo near the beach in Maybury Mansions, Fort LauderdaleMaybury Mansions, Florida81 m² · 2 bed · €1,659/m² · 18 days on RealHuntCommunity fee $750 a monthRenovated with modern finishes, light-filled spaces, and private outdoor access on the first floor.](https://realhunt.co/deal/us-fort-lauderdale-2455-e102-150k)
+- [Score 86€389,800Renovated house with a two-car garage and a 2024 roof in Greenbriar (55+ community), Boca RatonBoca Raton, Florida158 m² · 3 bed · €2,467/m² · 19 days on RealHuntCommunity fee $218 a month55+ community: at least one resident must be 55 or older.](https://realhunt.co/deal/us-boca-raton-18102-435k)
 - [Score 85€159,100Scandinavian-style log cabin with a stone fireplace on 10 acresSaxon, Wisconsin133 m² · 3 bed · €1,196/m² · 41 days on RealHuntA large custom-built Scandinavian-style log cabin from 1998 on a quiet country road in Saxon, Wisconsin, near Lake Superior: 1,430 sq ft (133 m²)…](https://realhunt.co/deal/us-wisconsin-scandi-log-cabin-179k)
 
 Showing the 30 best-scored of 61 homes. The table and the narrower searches below cover the rest.
 
 ### Compare the 60 cheapest of 61
+
+Median price per m² of this list: €1,560/m².
 
 Home | Place | Price | Size | Per m² | Beds | Score | Added
 [Updated 3-bed townhouse in McKees Rocks, Pennsylvania](https://realhunt.co/deal/mckees-rocks-65428) | McKees Rocks, Pennsylvania | €65,428 | 106 m² | €617/m² | 3 | 93 | 23 Sep 2026
@@ -107,25 +117,25 @@ Home | Place | Price | Size | Per m² | Beds | Score | Added
 [Wooded raised ranch with cedar ceilings across the road from Lake Huron, Alpena](https://realhunt.co/deal/us-alpena-mi-cedar-ceiling-house-across-from-lake-huron-250k) | Alpena, Michigan | €227,700 | 172 m² | €1,324/m² | 2 | 90 | 20 Nov 2026
 [Move-in ready three-bedroom house a short walk from downtown Bedford, Virginia](https://realhunt.co/deal/us-bedford-va-move-in-ready-house-walk-to-downtown-250k) | Bedford, Virginia | €227,700 | 109 m² | €2,089/m² | 3 | 85 | 20 Nov 2026
 [1927 brick house with a three-season room and pergola garden in Manitowoc, Wisconsin](https://realhunt.co/deal/us-manitowoc-wi-1927-brick-house-pergola-garden-250k) | Manitowoc, Wisconsin | €227,700 | 146 m² | €1,560/m² | 4 | 87 | 20 Nov 2026
-[High-floor two-bedroom with city views at Commodore Plaza, Aventura](https://realhunt.co/deal/us-aventura-2750-2404-259k) | Aventura, Florida | €232,100 | 100 m² | €2,321/m² | 2 | 83 | 7 Nov 2026
+[High-floor two-bedroom with city views at Commodore Plaza, Aventura](https://realhunt.co/deal/us-aventura-2750-2404-259k) | [Aventura, Florida](https://realhunt.co/homes/united-states/florida/aventura) | €232,100 | 100 m² | €2,321/m² | 2 | 83 | 7 Nov 2026
 [Well-kept 1899 house with a new double garage near Chester Park in Duluth](https://realhunt.co/deal/us-duluth-mn-renewed-1899-house-double-garage-255k) | Duluth, Minnesota | €232,400 | 148 m² | €1,570/m² | 3 | 88 | 20 Nov 2026
-[Waterfront two-bedroom plus den with two balconies at El Prado, Aventura](https://realhunt.co/deal/us-aventura-18041-1201-260k) | Aventura, Florida | €233,000 | 145 m² | €1,607/m² | 2 | 82 | 7 Nov 2026
-[Golf course and skyline views from a two-bedroom at Coronado, Aventura](https://realhunt.co/deal/us-aventura-20335-2302-265k) | Aventura, Florida | €237,400 | 106 m² | €2,240/m² | 2 | 82 | 7 Nov 2026
+[Waterfront two-bedroom plus den with two balconies at El Prado, Aventura](https://realhunt.co/deal/us-aventura-18041-1201-260k) | [Aventura, Florida](https://realhunt.co/homes/united-states/florida/aventura) | €233,000 | 145 m² | €1,607/m² | 2 | 82 | 7 Nov 2026
+[Golf course and skyline views from a two-bedroom at Coronado, Aventura](https://realhunt.co/deal/us-aventura-20335-2302-265k) | [Aventura, Florida](https://realhunt.co/homes/united-states/florida/aventura) | €237,400 | 106 m² | €2,240/m² | 2 | 82 | 7 Nov 2026
 [Corner lakefront townhouse with a tropical garden in Westview, Pembroke Pines](https://realhunt.co/deal/us-pembroke-pines-8982-265k) | Pembroke Pines, Florida | €237,400 | 97 m² | €2,447/m² | 2 | 86 | 7 Nov 2026
 [Main house with a second unit in Belmont Heights, Tampa](https://realhunt.co/deal/us-tampa-4811-265k) | Belmont Heights, Florida | €237,400 | 158 m² | €1,503/m² | 4 | 87 | 8 Nov 2026
 [Townhouse with a screened patio three blocks from Young Circle, Hollywood](https://realhunt.co/deal/us-hollywood-2200-6-270k) | Hollywood, Florida | €241,900 | 121 m² | €1,999/m² | 2 | 86 | 7 Nov 2026
-[Updated 1,605 sq ft corner flat on Lake Maule with a wraparound balcony](https://realhunt.co/deal/us-aventura-18011-705-275k) | Aventura, Florida | €246,400 | 149 m² | €1,654/m² | 2 | 84 | 7 Nov 2026
+[Updated 1,605 sq ft corner flat on Lake Maule with a wraparound balcony](https://realhunt.co/deal/us-aventura-18011-705-275k) | [Aventura, Florida](https://realhunt.co/homes/united-states/florida/aventura) | €246,400 | 149 m² | €1,654/m² | 2 | 84 | 7 Nov 2026
 [Bright corner split-level condo with 2.5 baths at Paragon, Plantation](https://realhunt.co/deal/us-plantation-791-214-280k) | Plantation, Florida | €250,900 | 122 m² | €2,057/m² | 2 | 85 | 7 Nov 2026
 [Two-bed condo with a split plan over the gardens of Las Vistas, Doral](https://realhunt.co/deal/us-doral-8290-236-285k) | Doral, Florida | €255,400 | 96 m² | €2,660/m² | 2 | 82 | 7 Nov 2026
 [Three-bed lake-view townhouse with a private patio in Miramar](https://realhunt.co/deal/us-miramar-3625-23x-285k) | Miramar, Florida | €255,400 | 97 m² | €2,633/m² | 3 | 85 | 7 Nov 2026
 [Corner three-bed condo with three balconies in Downtown Hollywood](https://realhunt.co/deal/us-hollywood-140-501-290k) | Hollywood, Florida | €259,800 | 141 m² | €1,843/m² | 3 | 87 | 7 Nov 2026
-[Sunset-view two-bedroom at waterfront Commodore Plaza, Aventura](https://realhunt.co/deal/us-aventura-2750-2208-295k) | Aventura, Florida | €264,300 | 118 m² | €2,240/m² | 2 | 83 | 7 Nov 2026
+[Sunset-view two-bedroom at waterfront Commodore Plaza, Aventura](https://realhunt.co/deal/us-aventura-2750-2208-295k) | [Aventura, Florida](https://realhunt.co/homes/united-states/florida/aventura) | €264,300 | 118 m² | €2,240/m² | 2 | 83 | 7 Nov 2026
 [Townhouse with vaulted wood ceilings and two primary suites in Plantation](https://realhunt.co/deal/us-plantation-485-36-298k) | Plantation, Florida | €266,600 | 96 m² | €2,777/m² | 2 | 79 | 7 Nov 2026
-[Two-bedroom with a screened balcony over the fairways at Coronado Tower II](https://realhunt.co/deal/us-aventura-20301-523-299k) | Aventura, Florida | €267,900 | 122 m² | €2,196/m² | 2 | 81 | 7 Nov 2026
+[Two-bedroom with a screened balcony over the fairways at Coronado Tower II](https://realhunt.co/deal/us-aventura-20301-523-299k) | [Aventura, Florida](https://realhunt.co/homes/united-states/florida/aventura) | €267,900 | 122 m² | €2,196/m² | 2 | 81 | 7 Nov 2026
 [Guard-gated lakeside condo with an oversized balcony at the Atriums, Kendall](https://realhunt.co/deal/us-kendall-6666-301-299k) | Kendall, Florida | €267,900 | 124 m² | €2,160/m² | 2 | 84 | 7 Nov 2026
 [Mid-century ranch with open floor plan and mature oaks in Herchel Heights, Tampa](https://realhunt.co/deal/us-tampa-8009-312k) | Herchel Heights Rev, Florida | €279,600 | 177 m² | €1,580/m² | 3 | 87 | 8 Nov 2026
 [Spacious two-story four-bedroom house with split floor plan in Buffalo Estates, Tampa](https://realhunt.co/deal/us-tampa-8105-325k) | Buffalo Estates, Florida | €291,200 | 210 m² | €1,387/m² | 4 | 88 | 8 Nov 2026
-[Renovated high-floor two-bedroom with skyline and sunset views in Aventura](https://realhunt.co/deal/us-aventura-18011-1904-350k) | Aventura, Florida | €313,600 | 149 m² | €2,105/m² | 2 | 83 | 7 Nov 2026
+[Renovated high-floor two-bedroom with skyline and sunset views in Aventura](https://realhunt.co/deal/us-aventura-18011-1904-350k) | [Aventura, Florida](https://realhunt.co/homes/united-states/florida/aventura) | €313,600 | 149 m² | €2,105/m² | 2 | 83 | 7 Nov 2026
 [Renovated house with a two-car garage and a 2024 roof in Greenbriar (55+ community), Boca Raton](https://realhunt.co/deal/us-boca-raton-18102-435k) | Boca Raton, Florida | €389,800 | 158 m² | €2,467/m² | 3 | 86 | 7 Nov 2026
 [Updated corner house with impact windows in Greenbriar at Boca Chase (55+ community)](https://realhunt.co/deal/us-boca-raton-10308-460k) | Boca Raton, Florida | €412,200 | 147 m² | €2,804/m² | 3 | 85 | 7 Nov 2026
 [Corner-lot family house with a big fenced garden of fruit trees, Country Park, Boca Raton](https://realhunt.co/deal/us-boca-raton-8315-490k) | Boca Raton, Florida | €439,000 | 102 m² | €4,304/m² | 3 | 82 | 7 Nov 2026
@@ -141,6 +151,10 @@ Home | Place | Price | Size | Per m² | Beds | Score | Added
 - Extras named in the listings: 26 with a garden, 42 with a terrace, 21 with a garage, 14 with a pool, 5 with a fireplace, 2 with a sauna.
 - Scores: 79 to 95 out of 98. The best rated: [Renovated 1889 Victorian with a deep front porch in Lynchburg, Virginia](https://realhunt.co/deal/us-lynchburg-va-renovated-victorian-carriage-house-245k).
 - Newest, added 20 November 2026: [Renovated 1889 Victorian with a deep front porch in Lynchburg, Virginia](https://realhunt.co/deal/us-lynchburg-va-renovated-victorian-carriage-house-245k). 38 of these homes were added in the last 30 days.
+
+### What your money buys here
+
+Split into three groups of the same size by asking price: from €65,428 to €159,100, 20 homes with a median of 98 m², most often 2 bedrooms; from €159,400 to €233,000, 21 homes with a median of 128 m², most often 3 bedrooms; from €237,400 to €447,600, 20 homes with a median of 124 m², most often 2 bedrooms.
 
 ### Median price by region in the United States
 
@@ -175,7 +189,7 @@ At the same percentages: on €40,000, €800 to €2,000; on €80,000, €1,60
 
 Yearly property tax: Property tax is set locally and in 2024 averaged about 1.22% of value across the largest city in each state, from 0.30% in Honolulu to 3.02% in Detroit.
 
-[Buying-cost calculator for a home in the United States](https://realhunt.co/buying-costs/united-states) · [All costs and taxes](https://realhunt.co/costs/united-states) · [How to buy, step by step](https://realhunt.co/guide/united-states) · [Rules by nationality](https://realhunt.co/can-i-buy)
+[Buying-cost calculator for a home in the United States](https://realhunt.co/buying-costs/united-states) · [All costs and taxes](https://realhunt.co/costs/united-states) · [How to buy, step by step](https://realhunt.co/guide/united-states) · [Rules by nationality](https://realhunt.co/can-i-buy) · [Yearly running costs of a home](https://realhunt.co/tools/home-running-costs)
 
 General information, not tax or legal advice. Figures checked in 2026.
 
@@ -244,6 +258,8 @@ Near a city [Near Miami 22](https://realhunt.co/cheap-houses/near-miami)
 Neighbouring countries [Canada 16](https://realhunt.co/homes/canada) [Mexico 9](https://realhunt.co/homes/mexico)
 
 By country [Spain 150](https://realhunt.co/homes/spain) [Italy 87](https://realhunt.co/homes/italy) [France 48](https://realhunt.co/homes/france) [Denmark 46](https://realhunt.co/homes/denmark) [Sweden 41](https://realhunt.co/homes/sweden) [Japan 36](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 26](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Mexico 9](https://realhunt.co/homes/mexico) [Portugal 8](https://realhunt.co/homes/portugal) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Cyprus 6](https://realhunt.co/homes/cyprus) [United Kingdom 6](https://realhunt.co/homes/united-kingdom) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
+
+How we choose these homes: a person reads every listing and checks its price, size, photos and place before it goes up, and the nightly check takes it off when the advert goes. [How we check homes](https://realhunt.co/how-we-check-homes) 50 of these 61 homes were checked against the original listing in the last 30 days. 5 homes in the United States left RealHunt or were marked as no longer for sale in the last 30 days. [See the log of homes taken off the site](https://realhunt.co/research/removed-homes)
 
 These listings come from coldwellbanker.com (38), redfin.com (15), estately.com (8). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 

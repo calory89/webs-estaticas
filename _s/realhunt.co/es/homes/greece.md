@@ -1,8 +1,14 @@
 ## Casas en venta en Grecia
 
-Actualizado el 26 de noviembre de 2026. Última vivienda añadida el 20 de noviembre de 2026.
+Lista cambiada por última vez el 20 de noviembre de 2026. Ir a las viviendas
 
-RealHunt tiene hoy 26 casas en venta en Grecia, con precios de 68.000 € a 199.000 €. La más barata cuesta 68.000 €: [Casa de piedra de dos plantas con vistas al mar en Marathokampos, Samos](https://realhunt.co/es/deal/gr-samos-agia-triada-68k-20601330), en Agia Triada (80 m², 2 dormitorios). El precio mediano es de 155.000 € (1.477 €/m²), frente a 93.000 € (1.200 €/m²) de las 654 viviendas de RealHunt en 30 países.
+### Tres de esta lista
+
+- [Mejor nota109.000 €Casa de pueblo de tres dormitorios con terraza de parra y vistas al mar en MeseniaVasilitsi, Mesenia116 m² · 3 dorm. · 940 €/m² · 41 días en RealHunt](https://realhunt.co/es/deal/gr-messinia-vasilitsi-sea-view-109k)
+- [La más barata68.000 €Casa de piedra de dos plantas con vistas al mar en Marathokampos, SamosAgia Triada, Samos80 m² · 2 dorm. · 850 €/m² · 43 días en RealHunt](https://realhunt.co/es/deal/gr-samos-agia-triada-68k-20601330)
+- [Más metros por el dineroNueva170.000 €Casa de pueblo de cuatro dormitorios con terraza con vistas al mar en Othos, KarpathosOthos, Karpathos165 m² · 4 dorm. · 1.030 €/m² · 8 días en RealHunt](https://realhunt.co/es/deal/gr-karpathos-othos-four-bed-sea-view-170k)
+
+RealHunt tiene hoy 26 casas en venta en Grecia, con precios de 68.000 € a 199.000 €. La más barata cuesta 68.000 €: [Casa de piedra de dos plantas con vistas al mar en Marathokampos, Samos](https://realhunt.co/es/deal/gr-samos-agia-triada-68k-20601330), en Agia Triada (80 m², 2 dormitorios). El precio mediano es de 155.000 € (1.477 €/m²), frente a 93.200 € (1.206 €/m²) de las 726 viviendas de RealHunt en 24 países.
 ¿Puedes comprar aquí? Lee esto primero
 Sí. Los compradores de fuera de la UE y EFTA necesitan un permiso para comprar en zonas fronterizas designadas (partes del norte de Grecia e islas del Egeo oriental como el Dodecaneso y Rodas). El gobierno ha anunciado un impuesto de transferencia del 15% para compradores no comunitarios de viviendas a partir del 1 de enero de 2027, aún no definitivo en septiembre de 2026.
 
@@ -37,6 +43,8 @@ Datos del
 
 ### Las 26 viviendas, de mejor a peor nota
 
+Ordenadas por la nota de RealHunt, de mejor a peor. Para verlas de más barata a más cara, mira la tabla de abajo: toca un encabezado como Precio para ordenarla. [Todas las viviendas junto al mar](https://realhunt.co/es/homes/greece/by-the-sea) [Ver estas viviendas en el mapa](https://realhunt.co/es/map?country=Greece)
+
 - [Nota 93109.000 €Casa de pueblo de tres dormitorios con terraza de parra y vistas al mar en MeseniaVasilitsi, Mesenia116 m² · 3 dorm. · 940 €/m² · 41 días en RealHuntCasa de dos plantas y 116 m² en Vasilitsi, en el extremo sur de la península de Mesenia, con vistas al mar y a las colinas: tres dormitorios, dos…](https://realhunt.co/es/deal/gr-messinia-vasilitsi-sea-view-109k)
 - [Nota 91115.000 €Casa encalada en un pueblo de Creta con azotea y escalera de caracolChoumeriako, Creta93 m² · 2 dorm. · 1.237 €/m² · 41 días en RealHuntCasa independiente de 93 m² reformada en el pueblo tradicional de Choumeriako, a 3 km de Neapoli y a 13 km de las playas de Agios Nikolaos.](https://realhunt.co/es/deal/gr-crete-choumeriako-renovated-115k)
 - [Nota 9068.000 €Casa de piedra de dos plantas con vistas al mar en Marathokampos, SamosAgia Triada, Samos80 m² · 2 dorm. · 850 €/m² · 43 días en RealHuntCasa de piedra cuidada de 80 m² en la parte alta de Marathokampos, zona de Agia Triada, con una vista preciosa al mar.](https://realhunt.co/es/deal/gr-samos-agia-triada-68k-20601330)
@@ -61,10 +69,12 @@ Datos del
 - [Nota 83Nueva195.000 €Casa de piedra de dos plantas con vista al mar de Libia en Koutsounari, sur de CretaKoutsounari, Creta88 m² · 2 dorm. · 2.216 €/m² · 6 días en RealHuntUna casa de piedra de dos plantas con vistas abiertas del mar de Libia, a 1,3 km de Long Beach en la costa sur de Creta.](https://realhunt.co/es/deal/gr-crete-koutsounari-stone-house-libyan-sea-view-195k)
 - [Nota 82158.000 €Casita de verano en una parcela de 980 m² a 2 km de la playaMarathopolis, Mesenia62 m² · 2 dorm. · 2.548 €/m² · 41 días en RealHuntCasa de 62 m² en una parcela llana de 980 m² entre olivos y pocos vecinos, cerca de Marathopolis: zona de estar con estufa de leña, cocina…](https://realhunt.co/es/deal/gr-gargaliani-garden-sea-158k)
 - [Nota 82Nueva195.000 €Casa de patio de piedra restaurada con terraza con vistas al mar en GytheioGytheio, Laconia85 m² · 2 dorm. · 2.294 €/m² · 6 días en RealHuntUna casa de piedra tradicional de 85 m² en un callejón tranquilo sin coches en el casco antiguo de Gytheio, a corta distancia del paseo portuario…](https://realhunt.co/es/deal/gr-peloponnese-gytheio-stone-house-sea-view-terrace-195k)
-- [Nota 80Nueva170.000 €Piso de dos dormitorios amueblado con vistas al mar en Nea Fokea, Kassandra, HalkidikiNea Fokea, Halkidiki60 m² · 2 dorm. · 2.833 €/m² · 6 días en RealHuntUn piso de 60 m² en la primera planta de un edificio de dos plantas en Nea Fokea, un pueblo costero en la península de Kassandra de Halkidiki.](https://realhunt.co/es/deal/gr-halkidiki-nea-fokea-two-bed-flat-sea-view-170k)
-- [Nota 79Nueva125.000 €Apartamento de planta baja amueblado de un dormitorio con patio privado en Elounda, CretaElounda, Creta35 m² · 1 dorm. · 3.571 €/m² · 8 días en RealHuntUn apartamento de planta baja de 35,5 m² en Elounda, uno de los pueblos turísticos más conocidos de Creta, vendido completamente amueblado y listo…](https://realhunt.co/es/deal/gr-crete-elounda-one-bed-private-yard-125k)
+- [Nota 80Nueva170.000 €Piso de dos dormitorios amueblado con vistas al mar en Nea Fokea, Kassandra, HalkidikiNea Fokea, Halkidiki60 m² · 2 dorm. · 2.833 €/m² · 6 días en RealHuntCuota de comunidad no indicadaUn piso de 60 m² en la primera planta de un edificio de dos plantas en Nea Fokea, un pueblo costero en la península de Kassandra de Halkidiki.](https://realhunt.co/es/deal/gr-halkidiki-nea-fokea-two-bed-flat-sea-view-170k)
+- [Nota 79Nueva125.000 €Apartamento de planta baja amueblado de un dormitorio con patio privado en Elounda, CretaElounda, Creta35 m² · 1 dorm. · 3.571 €/m² · 8 días en RealHuntCuota de comunidad no indicadaUn apartamento de planta baja de 35,5 m² en Elounda, uno de los pueblos turísticos más conocidos de Creta, vendido completamente amueblado y listo…](https://realhunt.co/es/deal/gr-crete-elounda-one-bed-private-yard-125k)
 
 ### Compara las 26 viviendas, de más barata a más cara
+
+Precio mediano por m² de esta lista: 1.477 €/m².
 
 Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 [Casa de piedra de dos plantas con vistas al mar en Marathokampos, Samos](https://realhunt.co/es/deal/gr-samos-agia-triada-68k-20601330) | Agia Triada, Samos | 68.000 € | 80 m² | 850 €/m² | 2 | 90 | 14 oct 2026
@@ -106,6 +116,10 @@ Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 - Notas: de 79 a 93 sobre 98. La de mejor nota: [Casa de pueblo de tres dormitorios con terraza de parra y vistas al mar en Mesenia](https://realhunt.co/es/deal/gr-messinia-vasilitsi-sea-view-109k).
 - La más reciente, añadida el 20 de noviembre de 2026: [Casa de piedra adosada renovada con patio en Andriani, Mesinia](https://realhunt.co/es/deal/gr-messinia-andriani-renovated-stone-house-180k). 12 de estas viviendas se añadieron en los últimos 30 días.
 
+### Qué compra tu dinero aquí
+
+Divididas por precio en tres grupos del mismo tamaño: de 68.000 € a 115.000 €, 9 viviendas con una mediana de 80 m², casi siempre con 2 dormitorios; de 120.000 € a 159.990 €, 8 viviendas con una mediana de 76 m², casi siempre con 2 dormitorios; de 167.000 € a 199.000 €, 9 viviendas con una mediana de 114 m², casi siempre con 2 dormitorios.
+
 ### Precio mediano por región en Grecia
 
 Región | Viviendas | Precio mediano
@@ -131,7 +145,7 @@ Con los mismos porcentajes: sobre 40.000 €, de 2.200 € a 2.800 €; sobre 80
 
 Impuesto anual sobre la propiedad: Quienes son propietarios a 1 de enero pagan el impuesto unificado sobre la propiedad (ENFIA), calculado por inmueble según su ubicación, superficie, antigüedad y valor oficial de la zona, con un recargo si el total de inmuebles en Grecia supera 500.000 €.
 
-[Calculadora de gastos de compra en Grecia](https://realhunt.co/es/buying-costs/greece) · [Todos los gastos e impuestos](https://realhunt.co/es/costs/greece) · [Cómo comprar, paso a paso](https://realhunt.co/es/guide/greece) · [Normas según tu nacionalidad](https://realhunt.co/es/can-i-buy)
+[Calculadora de gastos de compra en Grecia](https://realhunt.co/es/buying-costs/greece) · [Todos los gastos e impuestos](https://realhunt.co/es/costs/greece) · [Cómo comprar, paso a paso](https://realhunt.co/es/guide/greece) · [Normas según tu nacionalidad](https://realhunt.co/es/can-i-buy) · [Gastos anuales de mantener una casa](https://realhunt.co/es/tools/home-running-costs)
 
 Información general, no asesoramiento fiscal ni legal. Datos revisados en 2026.
 
@@ -196,6 +210,8 @@ En libras y en dólares [Menos de 100.000 libras 9](https://realhunt.co/es/cheap
 Países vecinos [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Chipre 6](https://realhunt.co/es/homes/cyprus)
 
 Por país [España 150](https://realhunt.co/es/homes/spain) [Italia 87](https://realhunt.co/es/homes/italy) [Estados Unidos 61](https://realhunt.co/es/homes/united-states) [Francia 48](https://realhunt.co/es/homes/france) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Suecia 41](https://realhunt.co/es/homes/sweden) [Japón 36](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 16](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [México 9](https://realhunt.co/es/homes/mexico) [Portugal 8](https://realhunt.co/es/homes/portugal) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Chipre 6](https://realhunt.co/es/homes/cyprus) [Reino Unido 6](https://realhunt.co/es/homes/united-kingdom) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Uruguay 4](https://realhunt.co/es/homes/uruguay) [Irlanda 4](https://realhunt.co/es/homes/ireland) [Colombia 3](https://realhunt.co/es/homes/colombia) [República Checa 3](https://realhunt.co/es/homes/czech-republic)
+
+Cómo elegimos estas viviendas: una persona lee cada anuncio y comprueba precio, tamaño, fotos y lugar antes de publicarlo, y la revisión de cada noche lo retira cuando el anuncio desaparece. [Cómo revisamos las casas](https://realhunt.co/es/how-we-check-homes) 26 de estas 26 viviendas se comprobaron con su anuncio original en los últimos 30 días.
 
 Estos anuncios proceden de green-acres.gr (22), spitogatos.gr (4). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 

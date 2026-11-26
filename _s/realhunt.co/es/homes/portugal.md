@@ -1,8 +1,14 @@
 ## Casas en venta en Portugal
 
-Actualizado el 26 de noviembre de 2026. Última vivienda añadida el 20 de noviembre de 2026.
+Lista cambiada por última vez el 20 de noviembre de 2026. Ir a las viviendas
 
-RealHunt tiene hoy 8 casas en venta en Portugal, con precios de 48.000 € a 189.000 €. La más barata cuesta 48.000 €: [Casa de pueblo recién pintada de tres dormitorios junto a los lagos del Sabor](https://realhunt.co/es/deal/pt-mogadouro-48k-19109522), en Brunhoso (100 m², 3 dormitorios). El precio mediano es de 140.000 € (2.000 €/m²), frente a 93.000 € (1.200 €/m²) de las 654 viviendas de RealHunt en 30 países.
+### Tres de esta lista
+
+- [Mejor nota76.500 €Casa de pueblo de 2 dormitorios con terraza en la región vinícola del DãoCarregal do Sal, Viseu134 m² · 2 dorm. · 571 €/m² · 52 días en RealHunt](https://realhunt.co/es/deal/pt-carregal-do-sal-76k-1bjc5q)
+- [La más barata48.000 €Casa de pueblo recién pintada de tres dormitorios junto a los lagos del SaborBrunhoso, Bragança100 m² · 3 dorm. · 480 €/m² · 43 días en RealHunt](https://realhunt.co/es/deal/pt-mogadouro-48k-19109522)
+- [Más metros por el dineroNueva130.000 €Casa aislada renovada con vistas abiertas a las colinas en el este del Algarve, cerca de AlcoutimAlcoutim e Pereiro, Faro77 m² · 2 dorm. · 1.688 €/m² · 8 días en RealHunt](https://realhunt.co/es/deal/pt-algarve-alcoutim-renovated-hill-house-130k)
+
+RealHunt tiene hoy 8 casas en venta en Portugal, con precios de 48.000 € a 189.000 €. La más barata cuesta 48.000 €: [Casa de pueblo recién pintada de tres dormitorios junto a los lagos del Sabor](https://realhunt.co/es/deal/pt-mogadouro-48k-19109522), en Brunhoso (100 m², 3 dormitorios). El precio mediano es de 140.000 € (2.000 €/m²), frente a 93.200 € (1.206 €/m²) de las 726 viviendas de RealHunt en 24 países.
 
 Viviendas
 8
@@ -33,6 +39,8 @@ Datos del
 
 ### Las 8 viviendas, de mejor a peor nota
 
+Ordenadas por la nota de RealHunt, de mejor a peor. Para verlas de más barata a más cara, mira la tabla de abajo: toca un encabezado como Precio para ordenarla. [Ver estas viviendas en el mapa](https://realhunt.co/es/map?country=Portugal)
+
 - [Nota 8576.500 €Casa de pueblo de 2 dormitorios con terraza en la región vinícola del DãoCarregal do Sal, Viseu134 m² · 2 dorm. · 571 €/m² · 52 días en RealHuntCasa T2 con terraza en Sobral (Carregal do Sal), en la región vinícola del Dão: cocina, salón, dos dormitorios y baño en la planta principal, más…](https://realhunt.co/es/deal/pt-carregal-do-sal-76k-1bjc5q)
 - [Nota 80Nueva189.000 €Casa de pueblo de tres dormitorios con terraza y vistas a la Serra da Lousã cerca de PenacovaParadela da Cortiça, Coimbra95 m² · 3 dorm. · 1.989 €/m² · 6 días en RealHuntUna casa de pueblo ordenada de tres plantas en Paradela da Cortiça con vista abierta a la Serra da Lousã.](https://realhunt.co/es/deal/pt-centro-penacova-paradela-village-house-views-189k)
 - [Nota 80Nueva130.000 €Casa aislada renovada con vistas abiertas a las colinas en el este del Algarve, cerca de AlcoutimAlcoutim e Pereiro, Faro77 m² · 2 dorm. · 1.688 €/m² · 8 días en RealHuntUna casa aislada de una sola planta con un tejado de nuevas tejas y una chimenea del Algarve al borde de un pequeño pueblo de montaña…](https://realhunt.co/es/deal/pt-algarve-alcoutim-renovated-hill-house-130k)
@@ -43,6 +51,8 @@ Datos del
 - [Nota 83183.000 €Apartamento reformado y amueblado en un resort ajardinado con piscina cerca de TaviraMoncarapacho, Tavira (Algarve)68 m² · 1 dorm. · 2.691 €/m² · 46 días en RealHuntApartamento de 68 m² en el Colina Verde Resort de Moncarapacho, entre olivos, palmeras y césped, a pocos kilómetros de la costa del Algarve entre…](https://realhunt.co/es/deal/pt-tavira-183k-300012)
 
 ### Compara las 8 viviendas, de más barata a más cara
+
+Precio mediano por m² de esta lista: 2.000 €/m².
 
 Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 [Casa de pueblo recién pintada de tres dormitorios junto a los lagos del Sabor](https://realhunt.co/es/deal/pt-mogadouro-48k-19109522) | Brunhoso, Bragança | 48.000 € | 100 m² | 480 €/m² | 3 | 84 | 14 oct 2026
@@ -87,7 +97,7 @@ Con los mismos porcentajes: sobre 40.000 €, de 1.200 € a 4.800 €; sobre 80
 
 Impuesto anual sobre la propiedad: IMI 0,3-0,45% del valor fiscal (urbano), fijado por cada municipio.
 
-[Calculadora de gastos de compra en Portugal](https://realhunt.co/es/buying-costs/portugal) · [Todos los gastos e impuestos](https://realhunt.co/es/costs/portugal) · [Cómo comprar, paso a paso](https://realhunt.co/es/guide/portugal) · [Normas según tu nacionalidad](https://realhunt.co/es/can-i-buy)
+[Calculadora de gastos de compra en Portugal](https://realhunt.co/es/buying-costs/portugal) · [Todos los gastos e impuestos](https://realhunt.co/es/costs/portugal) · [Cómo comprar, paso a paso](https://realhunt.co/es/guide/portugal) · [Normas según tu nacionalidad](https://realhunt.co/es/can-i-buy) · [Calculadora del IMT y el impuesto de timbre de Portugal](https://realhunt.co/es/tools/portugal-imt) · [Gastos anuales de mantener una casa](https://realhunt.co/es/tools/home-running-costs)
 
 Información general, no asesoramiento fiscal ni legal. Datos revisados en 2026.
 
@@ -125,6 +135,8 @@ Por característica [Con jardín 3](https://realhunt.co/es/cheap-houses/with-gar
 Países vecinos [España 150](https://realhunt.co/es/homes/spain)
 
 Por país [España 150](https://realhunt.co/es/homes/spain) [Italia 87](https://realhunt.co/es/homes/italy) [Estados Unidos 61](https://realhunt.co/es/homes/united-states) [Francia 48](https://realhunt.co/es/homes/france) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Suecia 41](https://realhunt.co/es/homes/sweden) [Japón 36](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 26](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 16](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [México 9](https://realhunt.co/es/homes/mexico) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Chipre 6](https://realhunt.co/es/homes/cyprus) [Reino Unido 6](https://realhunt.co/es/homes/united-kingdom) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Uruguay 4](https://realhunt.co/es/homes/uruguay) [Irlanda 4](https://realhunt.co/es/homes/ireland) [Colombia 3](https://realhunt.co/es/homes/colombia) [República Checa 3](https://realhunt.co/es/homes/czech-republic)
+
+Cómo elegimos estas viviendas: una persona lee cada anuncio y comprueba precio, tamaño, fotos y lugar antes de publicarlo, y la revisión de cada noche lo retira cuando el anuncio desaparece. [Cómo revisamos las casas](https://realhunt.co/es/how-we-check-homes) 6 de estas 8 viviendas se comprobaron con su anuncio original en los últimos 30 días. 10 viviendas en Portugal salieron de RealHunt o se marcaron como ya no a la venta en los últimos 30 días. [Ver el registro de casas retiradas](https://realhunt.co/es/research/removed-homes)
 
 Estos anuncios proceden de green-acres.pt (6), imovirtual.com (2). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 

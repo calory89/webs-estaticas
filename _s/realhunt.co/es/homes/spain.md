@@ -1,8 +1,14 @@
 ## Viviendas en venta en España
 
-Actualizado el 26 de noviembre de 2026. Última vivienda añadida el 20 de noviembre de 2026.
+Lista cambiada por última vez el 20 de noviembre de 2026. Ir a las viviendas
 
-RealHunt tiene hoy 150 viviendas en venta en España, con precios de 38.000 € a 348.000 €. La más barata cuesta 38.000 €: [Casa de 2 dormitorios con terraza en Alpujarra de la Sierra](https://realhunt.co/es/deal/es-alpujarra-de-la-sierra-38k-35809), en Alpujarra de la Sierra (150 m², 2 dormitorios). El precio mediano es de 97.000 € (1.225 €/m²), frente a 93.000 € (1.200 €/m²) de las 654 viviendas de RealHunt en 30 países.
+### Tres de esta lista
+
+- [Mejor nota55.000 €Casa de pueblo con terraza panorámica al mar y a la montaña en Rossell, CastellónRossell, Castellón120 m² · 5 dorm. · 458 €/m² · 43 días en RealHunt](https://realhunt.co/es/deal/es-rossell-55k-187471380)
+- [La más barata38.000 €Casa de 2 dormitorios con terraza en Alpujarra de la SierraAlpujarra de la Sierra, Granada150 m² · 2 dorm. · 253 €/m² · 56 días en RealHunt](https://realhunt.co/es/deal/es-alpujarra-de-la-sierra-38k-35809)
+- [Más metros por el dineroNueva63.000 €Casa tradicional aragonesa luminosa con patio de entrada empedrado en Torre los Negros, TeruelTorre los Negros, Teruel256 m² · 4 dorm. · 246 €/m² · 12 días en RealHunt](https://realhunt.co/es/deal/es-torre-los-negros-63k-028057)
+
+RealHunt tiene hoy 150 viviendas en venta en España, con precios de 38.000 € a 348.000 €. La más barata cuesta 38.000 €: [Casa de 2 dormitorios con terraza en Alpujarra de la Sierra](https://realhunt.co/es/deal/es-alpujarra-de-la-sierra-38k-35809), en Alpujarra de la Sierra (150 m², 2 dormitorios). El precio mediano es de 97.000 € (1.225 €/m²), frente a 93.200 € (1.206 €/m²) de las 726 viviendas de RealHunt en 24 países.
 
 Viviendas
 150
@@ -32,6 +38,8 @@ Datos del
 26 nov 2026
 
 ### Las 30 mejores de 150, por nota
+
+Ordenadas por la nota de RealHunt, de mejor a peor. Para verlas de más barata a más cara, mira la tabla de abajo: toca un encabezado como Precio para ordenarla. [Todas las viviendas junto al mar](https://realhunt.co/es/homes/spain/by-the-sea) [Ver estas viviendas en el mapa](https://realhunt.co/es/map?country=Spain)
 
 - [Nota 9455.000 €Casa de pueblo con terraza panorámica al mar y a la montaña en Rossell, CastellónRossell, Castellón120 m² · 5 dorm. · 458 €/m² · 43 días en RealHuntCasa de pueblo de 120 m² en el pintoresco Rossell con vistas amplias: recibidor, sala de estar, cocina, cinco dormitorios, baño y dos terrazas…](https://realhunt.co/es/deal/es-rossell-55k-187471380)
 - [Nota 9459.000 €Casa de 5 dormitorios con terraza en SorvilánSorvilán, Granada147 m² · 5 dorm. · 401 €/m² · 56 días en RealHunt59.000 € por 147 m² y 5 dormitorios en Sorvilán (Granada), unos 401 €/m².](https://realhunt.co/es/deal/es-sorvilan-59k-76765)
@@ -66,7 +74,9 @@ Datos del
 
 Se muestran las 30 con mejor nota de 150 viviendas. La tabla y las búsquedas más concretas de abajo recogen el resto.
 
-### Compara las 60 más baratas de 150
+### Compara las 30 más baratas de 150
+
+Precio mediano por m² de esta lista: 1.225 €/m².
 
 Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 [Casa de 2 dormitorios con terraza en Alpujarra de la Sierra](https://realhunt.co/es/deal/es-alpujarra-de-la-sierra-38k-35809) | Alpujarra de la Sierra, Granada | 38.000 € | 150 m² | 253 €/m² | 2 | 94 | 1 oct 2026
@@ -77,7 +87,7 @@ Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 [Dúplex de 2 dormitorios con terraza en Aller](https://realhunt.co/es/deal/es-aller-57k-23270) | Aller, Asturias | 57.500 € | 124 m² | 464 €/m² | 2 | 86 | 1 oct 2026
 [Casa de 2 dormitorios con terraza en Montefrío](https://realhunt.co/es/deal/es-montefrio-59k-97906) | Montefrío, Granada | 59.000 € | 115 m² | 513 €/m² | 2 | 87 | 1 oct 2026
 [Casa de 5 dormitorios con terraza en Sorvilán](https://realhunt.co/es/deal/es-sorvilan-59k-76765) | Sorvilán, Granada | 59.000 € | 147 m² | 401 €/m² | 5 | 94 | 1 oct 2026
-[Casa de 1 dormitorio con terraza en Terque](https://realhunt.co/es/deal/es-terque-59k-29455) | Terque, Almería | 59.500 € | 52 m² | 1.144 €/m² | 1 | 88 | 1 oct 2026
+[Casa de 1 dormitorio con terraza en Terque](https://realhunt.co/es/deal/es-terque-59k-29455) | [Terque, Almería](https://realhunt.co/es/homes/spain/almeria/terque) | 59.500 € | 52 m² | 1.144 €/m² | 1 | 88 | 1 oct 2026
 [Casa de 5 dormitorios con terraza en Cehegín](https://realhunt.co/es/deal/es-cehegin-59k-77832) | Cehegín, Murcia | 59.900 € | 200 m² | 300 €/m² | 5 | 88 | 1 oct 2026
 [Casa de campo en la montaña con mucho espacio exterior](https://realhunt.co/es/deal/Dc26I9MkYDj) | La Garapacha, Murcia | 60.000 € | · | · | · | 82 | 23 sept 2026
 [Casa de 2 dormitorios con terraza en Cieza](https://realhunt.co/es/deal/es-cieza-60k-59837) | Cieza, Murcia | 60.000 € | 96 m² | 625 €/m² | 2 | 85 | 1 oct 2026
@@ -99,36 +109,6 @@ Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 [Casa de campo de 1 dormitorio en Polaciones](https://realhunt.co/es/deal/es-polaciones-76k-71631) | Polaciones, Cantabria | 76.000 € | 70 m² | 1.086 €/m² | 1 | 83 | 1 oct 2026
 [Casa de 2 dormitorios con terraza en Villamartín](https://realhunt.co/es/deal/es-villamartin-78k-15617) | Villamartín, Cádiz | 78.000 € | 100 m² | 780 €/m² | 2 | 84 | 1 oct 2026
 [Piso de 1 dormitorio en Palafrugell](https://realhunt.co/es/deal/es-palafrugell-79k-70840) | Palafrugell, Girona | 79.000 € | 55 m² | 1.436 €/m² | 1 | 84 | 1 oct 2026
-[Casa de 2 dormitorios con terraza en Terque](https://realhunt.co/es/deal/es-terque-79k-93348) | Terque, Almería | 79.500 € | 81 m² | 981 €/m² | 2 | 88 | 1 oct 2026
-[Terraza comedor de piedra sobre el valle del Andarax](https://realhunt.co/es/deal/terque-stone-terrace-cave-79500) | Terque, Almería | 79.500 € | 81 m² | 981 €/m² | 2 | 89 | 2 oct 2026
-[Apartamento de 2 dormitorios con vistas al mar en Cartagena](https://realhunt.co/es/deal/es-cartagena-79k-19964) | Cartagena, Murcia | 79.900 € | 56 m² | 1.427 €/m² | 2 | 87 | 1 oct 2026
-[Casa de 4 dormitorios con terraza en Cehegín](https://realhunt.co/es/deal/es-cehegin-79k-37859) | Cehegín, Murcia | 79.900 € | 200 m² | 400 €/m² | 4 | 86 | 1 oct 2026
-[Piso bajo de 2 dormitorios con jardín en Águilas](https://realhunt.co/es/deal/es-aguilas-80k-19039) | Águilas, Murcia | 80.000 € | 79 m² | 1.013 €/m² | 2 | 89 | 1 oct 2026
-[Casa de 4 dormitorios en Flix](https://realhunt.co/es/deal/es-flix-80k-33800) | Flix, Tarragona | 80.000 € | 152 m² | 526 €/m² | 4 | 85 | 1 oct 2026
-[Piso de 1 dormitorio con patio en Murcia](https://realhunt.co/es/deal/es-murcia-80k-47450) | Murcia | 80.000 € | 45 m² | 1.778 €/m² | 1 | 84 | 1 oct 2026
-[Casa de campo de 1 dormitorio con chimenea en O Saviñao](https://realhunt.co/es/deal/es-o-savinao-80k-20772) | O Saviñao, Lugo | 80.000 € | 50 m² | 1.600 €/m² | 1 | 76 | 1 oct 2026
-[Casa pareada de 2 dormitorios con chimenea en Polaciones](https://realhunt.co/es/deal/es-polaciones-80k-72000) | Polaciones, Cantabria | 80.000 € | 86 m² | 930 €/m² | 2 | 85 | 1 oct 2026
-[Piso de tres dormitorios con reforma integral de calidad en Utrera](https://realhunt.co/es/deal/es-utrera-renovated-80k-190050590) | El Tinte, Sevilla | 80.000 € | 102 m² | 784 €/m² | 3 | 88 | 14 oct 2026
-[Apartamento de 1 dormitorio con vistas al mar en Vícar](https://realhunt.co/es/deal/es-vicar-82k-27426) | Vícar, Almería | 82.900 € | 47 m² | 1.764 €/m² | 1 | 84 | 1 oct 2026
-[Casa cueva blanca en lo alto de Galera](https://realhunt.co/es/deal/galera-hillside-cave-84000) | Galera, Granada | 84.000 € | · | · | 2 | 84 | 2 oct 2026
-[Casa de campo de 1 dormitorio en Biar](https://realhunt.co/es/deal/es-biar-85k-66151) | Biar, Alicante | 85.000 € | 63 m² | 1.349 €/m² | 1 | 78 | 1 oct 2026
-[Casa de 3 dormitorios con terraza en Castalla](https://realhunt.co/es/deal/es-castalla-85k-41639) | Castalla, Alicante | 85.000 € | 90 m² | 944 €/m² | 3 | 88 | 1 oct 2026
-[Casa de 1 dormitorio con terraza en Gualchos](https://realhunt.co/es/deal/es-gualchos-85k-92930) | Gualchos, Granada | 85.000 € | 93 m² | 914 €/m² | 1 | 89 | 1 oct 2026
-[Apartamento de 1 dormitorio en Murcia](https://realhunt.co/es/deal/es-murcia-85k-23435) | Murcia | 85.000 € | 46 m² | 1.848 €/m² | 1 | 82 | 1 oct 2026
-[Piso de 3 dormitorios con vistas a la montaña en Reinosa](https://realhunt.co/es/deal/es-reinosa-85k-84223) | Reinosa, Cantabria | 85.000 € | 80 m² | 1.063 €/m² | 3 | 81 | 1 oct 2026
-[Piso de 2 dormitorios con vistas a la montaña en Riba-roja d'Ebre](https://realhunt.co/es/deal/es-riba-roja-d-ebre-85k-99837) | Riba-roja d'Ebre, Tarragona | 85.000 € | 91 m² | 934 €/m² | 2 | 83 | 1 oct 2026
-[Casa de 3 dormitorios con terraza en Bimenes](https://realhunt.co/es/deal/es-bimenes-86k-71966) | Bimenes, Asturias | 86.000 € | 195 m² | 441 €/m² | 3 | 90 | 1 oct 2026
-[Piso de 2 dormitorios con patio en Cartagena](https://realhunt.co/es/deal/es-cartagena-88k-38250) | Cartagena, Murcia | 88.000 € | 60 m² | 1.467 €/m² | 2 | 85 | 1 oct 2026
-[Piso de 2 dormitorios en Mazaricos](https://realhunt.co/es/deal/es-mazaricos-88k-64288) | Mazaricos, A Coruña | 88.000 € | 109 m² | 807 €/m² | 2 | 87 | 1 oct 2026
-[Casa de campo de 3 dormitorios con terraza en Sorbas](https://realhunt.co/es/deal/es-sorbas-89k-70321) | Sorbas, Almería | 89.000 € | 97 m² | 918 €/m² | 3 | 90 | 1 oct 2026
-[Casa de pueblo renovada en 2024 con azotea y vistas a la sierra en Vélez-Blanco](https://realhunt.co/es/deal/es-velez-blanco-89k-797484) | Vélez-Blanco, Almería | 89.000 € | 150 m² | 593 €/m² | 4 | 91 | 14 nov 2026
-[Casa cueva encalada con patio soleado cerca del embalse del Negratín](https://realhunt.co/es/deal/freila-cave-courtyard-89000) | Freila, Granada | 89.000 € | 50 m² | 1.780 €/m² | 3 | 81 | 2 oct 2026
-[Casa de 3 dormitorios con terraza en Bicorp](https://realhunt.co/es/deal/es-bicorp-90k-04086) | Bicorp, Valencia | 90.000 € | 173 m² | 520 €/m² | 3 | 87 | 1 oct 2026
-[Casa pareada de 2 dormitorios con terraza en L'Orxa / Lorcha](https://realhunt.co/es/deal/es-l-orxa-lorcha-90k-79857) | L'Orxa / Lorcha, Alicante | 90.000 € | 177 m² | 508 €/m² | 2 | 91 | 1 oct 2026
-[Casa de 5 dormitorios con vistas a la montaña en Parres](https://realhunt.co/es/deal/es-parres-90k-15042) | Parres, Asturias | 90.000 € | 355 m² | 254 €/m² | 5 | 90 | 1 oct 2026
-[Ático de 1 dormitorio con piscina en Albuñol](https://realhunt.co/es/deal/es-albunol-91k-41469) | Albuñol, Granada | 91.000 € | 75 m² | 1.213 €/m² | 1 | 85 | 1 oct 2026
-[Casa de 4 dormitorios con terraza en Alozaina](https://realhunt.co/es/deal/es-alozaina-91k-40320) | Alozaina, Málaga | 91.000 € | 175 m² | 520 €/m² | 4 | 92 | 1 oct 2026
-[Casa reformada por completo de tres dormitorios con azotea de 80 m² en Alzira](https://realhunt.co/es/deal/es-alzira-renovated-91k-189401106) | Alquerieta, Valencia | 91.000 € | 113 m² | 805 €/m² | 3 | 87 | 14 oct 2026
 
 ### Las 150 viviendas en cifras
 
@@ -141,6 +121,10 @@ Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 - Extras que mencionan los anuncios: 32 con jardín, 109 con terraza, 29 con garaje, 33 con piscina, 35 con chimenea.
 - Notas: de 71 a 94 sobre 98. La de mejor nota: [Casa de pueblo con terraza panorámica al mar y a la montaña en Rossell, Castellón](https://realhunt.co/es/deal/es-rossell-55k-187471380).
 - La más reciente, añadida el 20 de noviembre de 2026: [Dúplex de esquina de dos dormitorios con terraza con vistas a las montañas en Alcalá de la Selva](https://realhunt.co/es/deal/es-teruel-alcala-de-la-selva-duplex-mountain-terrace-177k). 30 de estas viviendas se añadieron en los últimos 30 días.
+
+### Qué compra tu dinero aquí
+
+Divididas por precio en tres grupos del mismo tamaño: de 38.000 € a 88.000 €, 50 viviendas con una mediana de 86 m², casi siempre con 2 dormitorios; de 88.000 € a 145.000 €, 50 viviendas con una mediana de 82 m², casi siempre con 2 dormitorios; de 145.000 € a 348.000 €, 50 viviendas con una mediana de 91 m², casi siempre con 2 dormitorios.
 
 ### Precio mediano por región en España
 
@@ -183,7 +167,7 @@ Con los mismos porcentajes: sobre 40.000 €, de 3.000 € a 5.600 €; sobre 80
 
 Impuesto anual sobre la propiedad: IBI 0,4-1,1% del valor catastral (municipal), más imputación de rentas en el IRPF/IRNR si no está alquilada.
 
-[Calculadora de gastos de compra en España](https://realhunt.co/es/buying-costs/spain) · [Todos los gastos e impuestos](https://realhunt.co/es/costs/spain) · [Cómo comprar, paso a paso](https://realhunt.co/es/guide/spain) · [Normas según tu nacionalidad](https://realhunt.co/es/can-i-buy)
+[Calculadora de gastos de compra en España](https://realhunt.co/es/buying-costs/spain) · [Todos los gastos e impuestos](https://realhunt.co/es/costs/spain) · [Cómo comprar, paso a paso](https://realhunt.co/es/guide/spain) · [Normas según tu nacionalidad](https://realhunt.co/es/can-i-buy) · [Calculadora del impuesto de no residentes en España](https://realhunt.co/es/tools/spain-non-resident-tax) · [Gastos anuales de mantener una casa](https://realhunt.co/es/tools/home-running-costs)
 
 Información general, no asesoramiento fiscal ni legal. Datos revisados en 2026.
 
@@ -254,6 +238,8 @@ Cerca de una ciudad [Cerca de Valencia 14](https://realhunt.co/es/cheap-houses/n
 Países vecinos [Portugal 8](https://realhunt.co/es/homes/portugal) [Francia 48](https://realhunt.co/es/homes/france)
 
 Por país [Italia 87](https://realhunt.co/es/homes/italy) [Estados Unidos 61](https://realhunt.co/es/homes/united-states) [Francia 48](https://realhunt.co/es/homes/france) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Suecia 41](https://realhunt.co/es/homes/sweden) [Japón 36](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 26](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 16](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [México 9](https://realhunt.co/es/homes/mexico) [Portugal 8](https://realhunt.co/es/homes/portugal) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Chipre 6](https://realhunt.co/es/homes/cyprus) [Reino Unido 6](https://realhunt.co/es/homes/united-kingdom) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Uruguay 4](https://realhunt.co/es/homes/uruguay) [Irlanda 4](https://realhunt.co/es/homes/ireland) [Colombia 3](https://realhunt.co/es/homes/colombia) [República Checa 3](https://realhunt.co/es/homes/czech-republic)
+
+Cómo elegimos estas viviendas: una persona lee cada anuncio y comprueba precio, tamaño, fotos y lugar antes de publicarlo, y la revisión de cada noche lo retira cuando el anuncio desaparece. [Cómo revisamos las casas](https://realhunt.co/es/how-we-check-homes) 129 de estas 150 viviendas se comprobaron con su anuncio original en los últimos 30 días. 35 viviendas en España salieron de RealHunt o se marcaron como ya no a la venta en los últimos 30 días. [Ver el registro de casas retiradas](https://realhunt.co/es/research/removed-homes)
 
 Estos anuncios proceden de fotocasa.es (111), pisos.com (17), green-acres.es (10), thinkspain.com (6), idealista.com (4). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 

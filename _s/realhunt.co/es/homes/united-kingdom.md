@@ -1,8 +1,14 @@
 ## Casas en venta en el Reino Unido
 
-Actualizado el 26 de noviembre de 2026. Última vivienda añadida el 20 de noviembre de 2026.
+Lista cambiada por última vez el 20 de noviembre de 2026. Ir a las viviendas
 
-RealHunt tiene hoy 6 casas en venta en el Reino Unido, con precios de 88.500 € a 198.400 €. La más barata cuesta 88.500 €: [Bungalow luminoso con jardín cerca del centro y la playa de Blyth](https://realhunt.co/es/deal/uk-blyth-88k-869241), en Blyth (1 dormitorio). El precio mediano es de 161.000 € (1.807 €/m²), frente a 93.000 € (1.200 €/m²) de las 654 viviendas de RealHunt en 30 países.
+### Tres de esta lista
+
+- [Mejor notaNueva126.500 €Casa de dos dormitorios amueblada con vistas al fiordo de Moray en la ciudad portuaria de MacduffMacduff, Aberdeenshire70 m² · 2 dorm. · 1.807 €/m² · 8 días en RealHunt](https://realhunt.co/es/deal/uk-macduff-furnished-house-sea-views-110k)
+- [La más barata88.500 €Bungalow luminoso con jardín cerca del centro y la playa de BlythBlyth, Northumberland1 dorm. · 51 días en RealHunt](https://realhunt.co/es/deal/uk-blyth-88k-869241)
+- [Más metros por el dineroNueva161.000 €Casa adosada de tres dormitorios bien mantenida con paneles solares en Enniskillen, FermanaghEnniskillen, Irlanda del Norte107 m² · 3 dorm. · 1.505 €/m² · 6 días en RealHunt](https://realhunt.co/es/deal/uk-enniskillen-three-bed-semi-solar-panels-140k)
+
+RealHunt tiene hoy 6 casas en venta en el Reino Unido, con precios de 88.500 € a 198.400 €. La más barata cuesta 88.500 €: [Bungalow luminoso con jardín cerca del centro y la playa de Blyth](https://realhunt.co/es/deal/uk-blyth-88k-869241), en Blyth (1 dormitorio). El precio mediano es de 161.000 € (1.807 €/m²), frente a 93.200 € (1.206 €/m²) de las 726 viviendas de RealHunt en 24 países.
 
 Viviendas
 6
@@ -33,6 +39,8 @@ Datos del
 
 ### Las 6 viviendas, de mejor a peor nota
 
+Ordenadas por la nota de RealHunt, de mejor a peor. Para verlas de más barata a más cara, mira la tabla de abajo: toca un encabezado como Precio para ordenarla. [Ver estas viviendas en el mapa](https://realhunt.co/es/map?country=United+Kingdom)
+
 - [Nota 83Nueva126.500 €Casa de dos dormitorios amueblada con vistas al fiordo de Moray en la ciudad portuaria de MacduffMacduff, Aberdeenshire70 m² · 2 dorm. · 1.807 €/m² · 8 días en RealHuntUna casa adosada bien presentada en el centro de Macduff, una ciudad costera en el fiordo de Moray en el nordeste de Escocia, vendida…](https://realhunt.co/es/deal/uk-macduff-furnished-house-sea-views-110k)
 - [Nota 83Nueva198.400 €Casa adosada de época renovada con garaje doble en el pueblo de Lack, condado de FermanaghLack, Irlanda del Norte107 m² · 3 dorm. · 1.854 €/m² · 6 días en RealHuntSe piden £172.500 (aproximadamente 198.400 €) por una casa adosada de época de 107 m² que ha sido completamente y cuidadosamente renovada…](https://realhunt.co/es/deal/uk-lack-fermanagh-refurbished-townhouse-double-garage-172k)
 - [Nota 83Nueva161.000 €Casa adosada de tres dormitorios bien mantenida con paneles solares en Enniskillen, FermanaghEnniskillen, Irlanda del Norte107 m² · 3 dorm. · 1.505 €/m² · 6 días en RealHuntSe pide £140.000 (unos 161 €).](https://realhunt.co/es/deal/uk-enniskillen-three-bed-semi-solar-panels-140k)
@@ -41,6 +49,8 @@ Datos del
 - [Nota 8888.500 €Bungalow luminoso con jardín cerca del centro y la playa de BlythBlyth, Northumberland1 dorm. · 51 días en RealHuntUn bungalow pareado encantador de un dormitorio, con cocina moderna, salón luminoso, baño con ducha, aparcamiento propio y jardín con césped…](https://realhunt.co/es/deal/uk-blyth-88k-869241)
 
 ### Compara las 6 viviendas, de más barata a más cara
+
+Precio mediano por m² de esta lista: 1.807 €/m².
 
 Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 [Bungalow luminoso con jardín cerca del centro y la playa de Blyth](https://realhunt.co/es/deal/uk-blyth-88k-869241) | Blyth, Northumberland | 88.500 € | · | · | 1 | 88 | 6 oct 2026
@@ -79,7 +89,7 @@ Con los mismos porcentajes: sobre 40.000 €, de 1.200 € a 3.600 €; sobre 80
 
 Impuesto anual sobre la propiedad: Los propietarios u ocupantes pagan el council tax al ayuntamiento, y muchos ayuntamientos de Inglaterra cobran a las segundas viviendas un recargo de hasta el 100% desde abril de 2025.
 
-[Calculadora de gastos de compra en el Reino Unido](https://realhunt.co/es/buying-costs/united-kingdom) · [Todos los gastos e impuestos](https://realhunt.co/es/costs/united-kingdom) · [Cómo comprar, paso a paso](https://realhunt.co/es/guide/united-kingdom) · [Normas según tu nacionalidad](https://realhunt.co/es/can-i-buy)
+[Calculadora de gastos de compra en el Reino Unido](https://realhunt.co/es/buying-costs/united-kingdom) · [Todos los gastos e impuestos](https://realhunt.co/es/costs/united-kingdom) · [Cómo comprar, paso a paso](https://realhunt.co/es/guide/united-kingdom) · [Normas según tu nacionalidad](https://realhunt.co/es/can-i-buy) · [Calculadora del impuesto de timbre del Reino Unido para no residentes](https://realhunt.co/es/tools/uk-stamp-duty-non-resident) · [Gastos anuales de mantener una casa](https://realhunt.co/es/tools/home-running-costs)
 
 Información general, no asesoramiento fiscal ni legal. Datos revisados en 2026.
 
@@ -125,6 +135,8 @@ Por característica [Con jardín 4](https://realhunt.co/es/cheap-houses/with-gar
 Países vecinos [Irlanda 4](https://realhunt.co/es/homes/ireland) [Francia 48](https://realhunt.co/es/homes/france)
 
 Por país [España 150](https://realhunt.co/es/homes/spain) [Italia 87](https://realhunt.co/es/homes/italy) [Estados Unidos 61](https://realhunt.co/es/homes/united-states) [Francia 48](https://realhunt.co/es/homes/france) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Suecia 41](https://realhunt.co/es/homes/sweden) [Japón 36](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 26](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 16](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [México 9](https://realhunt.co/es/homes/mexico) [Portugal 8](https://realhunt.co/es/homes/portugal) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Chipre 6](https://realhunt.co/es/homes/cyprus) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Uruguay 4](https://realhunt.co/es/homes/uruguay) [Irlanda 4](https://realhunt.co/es/homes/ireland) [Colombia 3](https://realhunt.co/es/homes/colombia) [República Checa 3](https://realhunt.co/es/homes/czech-republic)
+
+Cómo elegimos estas viviendas: una persona lee cada anuncio y comprueba precio, tamaño, fotos y lugar antes de publicarlo, y la revisión de cada noche lo retira cuando el anuncio desaparece. [Cómo revisamos las casas](https://realhunt.co/es/how-we-check-homes) 5 de estas 6 viviendas se comprobaron con su anuncio original en los últimos 30 días.
 
 Estos anuncios proceden de propertypal.com (3), onthemarket.com (2), rightmove.co.uk (1). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 

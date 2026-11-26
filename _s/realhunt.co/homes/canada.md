@@ -1,8 +1,14 @@
 ## Houses for sale in Canada
 
-Updated 26 November 2026. Newest home added 20 November 2026.
+List last changed 20 November 2026. Jump to the homes
 
-RealHunt lists 16 houses for sale in Canada today, priced from €55,842 to €190,700. The cheapest costs €55,842: [Updated 2-bed house in Bulyea, Saskatchewan](https://realhunt.co/deal/bulyea-55842), in Bulyea (62 m², 2 bedrooms). The median price is €99,500 (€963/m²), against €93,000 (€1,200/m²) for the 654 homes on RealHunt in 30 countries.
+### Three picks from this list
+
+- [Best scoreNew€123,400Updated five-bedroom house with a bathroom for every bedroom in Twillingate, NewfoundlandTwillingate, Newfoundland203 m² · 5 bed · €608/m² · 6 days on RealHunt](https://realhunt.co/deal/ca-twillingate-nl-five-bed-house-each-room-ensuite-194k)
+- [Cheapest€55,842Updated 2-bed house in Bulyea, SaskatchewanBulyea, Saskatchewan62 m² · 2 bed · €901/m² · 64 days on RealHunt](https://realhunt.co/deal/bulyea-55842)
+- [Most space for the money€90,400Big family house with sea views over the Strait of CansoMulgrave, Nova Scotia215 m² · 3 bed · €420/m² · 52 days on RealHunt](https://realhunt.co/deal/ca-mulgrave-90k-623450)
+
+RealHunt lists 16 houses for sale in Canada today, priced from €55,842 to €190,700. The cheapest costs €55,842: [Updated 2-bed house in Bulyea, Saskatchewan](https://realhunt.co/deal/bulyea-55842), in Bulyea (62 m², 2 bedrooms). The median price is €99,500 (€963/m²), against €93,200 (€1,206/m²) for the 726 homes on RealHunt in 24 countries.
 Can you buy here? Read this first
 Mostly not for now: a federal ban stops non-Canadians from buying homes in cities and larger towns until January 1, 2027, with exceptions such as work permit holders and spouses of citizens or permanent residents. The ban does not cover rural areas and small towns, and the government has said it does not plan simply to extend it, but a replacement is being studied.
 
@@ -37,6 +43,8 @@ Data of
 
 ### The 16 homes, best score first
 
+Sorted by RealHunt score, best first. For the cheapest first, see the table below: tap a heading such as Price to sort it. [All homes by the sea](https://realhunt.co/homes/canada/by-the-sea) [See these homes on the map](https://realhunt.co/map?country=Canada)
+
 - [Score 90New€123,400Updated five-bedroom house with a bathroom for every bedroom in Twillingate, NewfoundlandTwillingate, Newfoundland203 m² · 5 bed · €608/m² · 6 days on RealHuntAsking C$194,000 (about €123,400), under €610 per m².](https://realhunt.co/deal/ca-twillingate-nl-five-bed-house-each-room-ensuite-194k)
 - [Score 88New€124,000Freshly painted three-bedroom house with ocean views in Hillsburn, Nova ScotiaHillsburn, Nova Scotia106 m² · 3 bed · €1,170/m² · 6 days on RealHuntAsking C$194,900 (about €124,000) for a three-bedroom house of about 106 m² on a hillside plot in Hillsburn, a shore village on the Bay of Fundy…](https://realhunt.co/deal/ca-hillsburn-ns-cottage-house-bay-of-fundy-views-195k)
 - [Score 87New€159,000Character 1888 house with harbour views and a koi pond garden in Pictou, Nova ScotiaPictou, Nova Scotia171 m² · 3 bed · €930/m² · 6 days on RealHuntAsking C$249,900 (about €159,000) for a white wooden house of about 171 m², built in 1888 in the preserved old town of Pictou, with views over the…](https://realhunt.co/deal/ca-pictou-ns-1888-house-harbour-views-koi-pond-250k)
@@ -55,6 +63,8 @@ Data of
 - [Score 81€92,552Updated 2-bed house in Hughes Brook, NewfoundlandHughes Brook, Newfoundland62 m² · 2 bed · €1,493/m² · 64 days on RealHunt62 m² (672 sq ft), 2 bed, 1 bath, built 1962.](https://realhunt.co/deal/hughes-brook-92552)
 
 ### Compare the 16 homes, cheapest first
+
+Median price per m² of this list: €963/m².
 
 Home | Place | Price | Size | Per m² | Beds | Score | Added
 [Updated 2-bed house in Bulyea, Saskatchewan](https://realhunt.co/deal/bulyea-55842) | Bulyea, Saskatchewan | €55,842 | 62 m² | €901/m² | 2 | 88 | 23 Sep 2026
@@ -86,6 +96,10 @@ Home | Place | Price | Size | Per m² | Beds | Score | Added
 - Scores: 81 to 94 out of 98. The best rated: [Updated five-bedroom house with a bathroom for every bedroom in Twillingate, Newfoundland](https://realhunt.co/deal/ca-twillingate-nl-five-bed-house-each-room-ensuite-194k).
 - Newest, added 20 November 2026: [Updated five-bedroom house with a bathroom for every bedroom in Twillingate, Newfoundland](https://realhunt.co/deal/ca-twillingate-nl-five-bed-house-each-room-ensuite-194k). 7 of these homes were added in the last 30 days.
 
+### What your money buys here
+
+Split into three groups of the same size by asking price: from €55,842 to €92,552, 5 homes with a median of 77 m², most often 2 bedrooms; from €93,111 to €124,000, 6 homes with a median of 106 m², most often 2 bedrooms; from €127,100 to €190,700, 5 homes with a median of 155 m², most often 3 bedrooms.
+
 ### Median price by region in Canada
 
 Region | Homes | Median price
@@ -103,7 +117,7 @@ At the same percentages: on €40,000, €600 to €1,600; on €80,000, €1,20
 
 Yearly property tax: Property tax is set by each city as a share of assessed value, from about 0.3% in Vancouver to 2.12% in Saint John in 2026.
 
-[Buying-cost calculator for a home in Canada](https://realhunt.co/buying-costs/canada) · [All costs and taxes](https://realhunt.co/costs/canada) · [How to buy, step by step](https://realhunt.co/guide/canada) · [Rules by nationality](https://realhunt.co/can-i-buy)
+[Buying-cost calculator for a home in Canada](https://realhunt.co/buying-costs/canada) · [All costs and taxes](https://realhunt.co/costs/canada) · [How to buy, step by step](https://realhunt.co/guide/canada) · [Rules by nationality](https://realhunt.co/can-i-buy) · [Yearly running costs of a home](https://realhunt.co/tools/home-running-costs)
 
 General information, not tax or legal advice. Figures checked in 2026.
 
@@ -156,6 +170,8 @@ By feature and budget [By the sea under €100,000 5](https://realhunt.co/cheap-
 Neighbouring countries [United States 61](https://realhunt.co/homes/united-states)
 
 By country [Spain 150](https://realhunt.co/homes/spain) [Italy 87](https://realhunt.co/homes/italy) [United States 61](https://realhunt.co/homes/united-states) [France 48](https://realhunt.co/homes/france) [Denmark 46](https://realhunt.co/homes/denmark) [Sweden 41](https://realhunt.co/homes/sweden) [Japan 36](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 26](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Switzerland 10](https://realhunt.co/homes/switzerland) [Mexico 9](https://realhunt.co/homes/mexico) [Portugal 8](https://realhunt.co/homes/portugal) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Cyprus 6](https://realhunt.co/homes/cyprus) [United Kingdom 6](https://realhunt.co/homes/united-kingdom) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
+
+How we choose these homes: a person reads every listing and checks its price, size, photos and place before it goes up, and the nightly check takes it off when the advert goes. [How we check homes](https://realhunt.co/how-we-check-homes) 7 of these 16 homes were checked against the original listing in the last 30 days.
 
 These listings come from redfin.ca (9), remax.ca (7). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 

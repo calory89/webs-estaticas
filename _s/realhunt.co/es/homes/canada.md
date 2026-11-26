@@ -1,8 +1,14 @@
 ## Casas en venta en Canadá
 
-Actualizado el 26 de noviembre de 2026. Última vivienda añadida el 20 de noviembre de 2026.
+Lista cambiada por última vez el 20 de noviembre de 2026. Ir a las viviendas
 
-RealHunt tiene hoy 16 casas en venta en Canadá, con precios de 55.842 € a 190.700 €. La más barata cuesta 55.842 €: [Casa de 2 dormitorios actualizada en Bulyea, Saskatchewan](https://realhunt.co/es/deal/bulyea-55842), en Bulyea (62 m², 2 dormitorios). El precio mediano es de 99.500 € (963 €/m²), frente a 93.000 € (1.200 €/m²) de las 654 viviendas de RealHunt en 30 países.
+### Tres de esta lista
+
+- [Mejor notaNueva123.400 €Casa actualizada de cinco dormitorios con cuarto de baño para cada dormitorio en Twillingate, TerranovaTwillingate, Terranova203 m² · 5 dorm. · 608 €/m² · 6 días en RealHunt](https://realhunt.co/es/deal/ca-twillingate-nl-five-bed-house-each-room-ensuite-194k)
+- [La más barata55.842 €Casa de 2 dormitorios actualizada en Bulyea, SaskatchewanBulyea, Saskatchewan62 m² · 2 dorm. · 901 €/m² · 64 días en RealHunt](https://realhunt.co/es/deal/bulyea-55842)
+- [Más metros por el dinero90.400 €Casa familiar grande con vistas al mar sobre el estrecho de CansoMulgrave, Nueva Escocia215 m² · 3 dorm. · 420 €/m² · 52 días en RealHunt](https://realhunt.co/es/deal/ca-mulgrave-90k-623450)
+
+RealHunt tiene hoy 16 casas en venta en Canadá, con precios de 55.842 € a 190.700 €. La más barata cuesta 55.842 €: [Casa de 2 dormitorios actualizada en Bulyea, Saskatchewan](https://realhunt.co/es/deal/bulyea-55842), en Bulyea (62 m², 2 dormitorios). El precio mediano es de 99.500 € (963 €/m²), frente a 93.200 € (1.206 €/m²) de las 726 viviendas de RealHunt en 24 países.
 ¿Puedes comprar aquí? Lee esto primero
 Mayormente no por ahora: una prohibición federal impide que no canadienses compren viviendas en ciudades y pueblos grandes hasta el 1 de enero de 2027, con excepciones como titulares de permiso de trabajo y cónyuges de ciudadanos o residentes permanentes. La prohibición no cubre áreas rurales y pueblos pequeños, y el gobierno ha dicho que no tiene previsto simplemente extenderla, pero se está estudiando un sustituto.
 
@@ -37,6 +43,8 @@ Datos del
 
 ### Las 16 viviendas, de mejor a peor nota
 
+Ordenadas por la nota de RealHunt, de mejor a peor. Para verlas de más barata a más cara, mira la tabla de abajo: toca un encabezado como Precio para ordenarla. [Todas las viviendas junto al mar](https://realhunt.co/es/homes/canada/by-the-sea) [Ver estas viviendas en el mapa](https://realhunt.co/es/map?country=Canada)
+
 - [Nota 90Nueva123.400 €Casa actualizada de cinco dormitorios con cuarto de baño para cada dormitorio en Twillingate, TerranovaTwillingate, Terranova203 m² · 5 dorm. · 608 €/m² · 6 días en RealHuntSe pide C$194.000 (aproximadamente 123,4 €), menos de 610 € por m².](https://realhunt.co/es/deal/ca-twillingate-nl-five-bed-house-each-room-ensuite-194k)
 - [Nota 88Nueva124.000 €Casa de tres dormitorios recién pintada con vistas al océano en Hillsburn, Nueva EscociaHillsburn, Nueva Escocia106 m² · 3 dorm. · 1.170 €/m² · 6 días en RealHuntSe pide C$194.900 (aproximadamente 124.000 euros) por una casa de tres dormitorios de aproximadamente 106 m² en una parcela en una colina en…](https://realhunt.co/es/deal/ca-hillsburn-ns-cottage-house-bay-of-fundy-views-195k)
 - [Nota 87Nueva159.000 €Casa de carácter de 1888 con vistas al puerto y jardín con estanque de carpas en Pictou, Nueva EscociaPictou, Nueva Escocia171 m² · 3 dorm. · 930 €/m² · 6 días en RealHuntSe pide C$249.900 (aproximadamente 159.000 €) por una casa de madera blanca de aproximadamente 171 m², construida en 1888 en el pueblo histórico…](https://realhunt.co/es/deal/ca-pictou-ns-1888-house-harbour-views-koi-pond-250k)
@@ -55,6 +63,8 @@ Datos del
 - [Nota 8192.552 €Casa de 2 dormitorios actualizada en Hughes Brook, TerranovaHughes Brook, Terranova62 m² · 2 dorm. · 1.493 €/m² · 64 días en RealHunt62 m² (672 pies cuadrados), 2 dormitorios, 1 baño, construida en 1962.](https://realhunt.co/es/deal/hughes-brook-92552)
 
 ### Compara las 16 viviendas, de más barata a más cara
+
+Precio mediano por m² de esta lista: 963 €/m².
 
 Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 [Casa de 2 dormitorios actualizada en Bulyea, Saskatchewan](https://realhunt.co/es/deal/bulyea-55842) | Bulyea, Saskatchewan | 55.842 € | 62 m² | 901 €/m² | 2 | 88 | 23 sept 2026
@@ -86,6 +96,10 @@ Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 - Notas: de 81 a 94 sobre 98. La de mejor nota: [Casa actualizada de cinco dormitorios con cuarto de baño para cada dormitorio en Twillingate, Terranova](https://realhunt.co/es/deal/ca-twillingate-nl-five-bed-house-each-room-ensuite-194k).
 - La más reciente, añadida el 20 de noviembre de 2026: [Casa actualizada de cinco dormitorios con cuarto de baño para cada dormitorio en Twillingate, Terranova](https://realhunt.co/es/deal/ca-twillingate-nl-five-bed-house-each-room-ensuite-194k). 7 de estas viviendas se añadieron en los últimos 30 días.
 
+### Qué compra tu dinero aquí
+
+Divididas por precio en tres grupos del mismo tamaño: de 55.842 € a 92.552 €, 5 viviendas con una mediana de 77 m², casi siempre con 2 dormitorios; de 93.111 € a 124.000 €, 6 viviendas con una mediana de 106 m², casi siempre con 2 dormitorios; de 127.100 € a 190.700 €, 5 viviendas con una mediana de 155 m², casi siempre con 3 dormitorios.
+
 ### Precio mediano por región en Canadá
 
 Región | Viviendas | Precio mediano
@@ -103,7 +117,7 @@ Con los mismos porcentajes: sobre 40.000 €, de 600 € a 1.600 €; sobre 80.0
 
 Impuesto anual sobre la propiedad: El impuesto sobre la propiedad lo fija cada ciudad como un porcentaje del valor tasado, desde alrededor del 0,3% en Vancouver hasta el 2,12% en Saint John en 2026.
 
-[Calculadora de gastos de compra en Canadá](https://realhunt.co/es/buying-costs/canada) · [Todos los gastos e impuestos](https://realhunt.co/es/costs/canada) · [Cómo comprar, paso a paso](https://realhunt.co/es/guide/canada) · [Normas según tu nacionalidad](https://realhunt.co/es/can-i-buy)
+[Calculadora de gastos de compra en Canadá](https://realhunt.co/es/buying-costs/canada) · [Todos los gastos e impuestos](https://realhunt.co/es/costs/canada) · [Cómo comprar, paso a paso](https://realhunt.co/es/guide/canada) · [Normas según tu nacionalidad](https://realhunt.co/es/can-i-buy) · [Gastos anuales de mantener una casa](https://realhunt.co/es/tools/home-running-costs)
 
 Información general, no asesoramiento fiscal ni legal. Datos revisados en 2026.
 
@@ -156,6 +170,8 @@ Por característica y presupuesto [Junto al mar, menos de 100.000 € 5](https:/
 Países vecinos [Estados Unidos 61](https://realhunt.co/es/homes/united-states)
 
 Por país [España 150](https://realhunt.co/es/homes/spain) [Italia 87](https://realhunt.co/es/homes/italy) [Estados Unidos 61](https://realhunt.co/es/homes/united-states) [Francia 48](https://realhunt.co/es/homes/france) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Suecia 41](https://realhunt.co/es/homes/sweden) [Japón 36](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 26](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Suiza 10](https://realhunt.co/es/homes/switzerland) [México 9](https://realhunt.co/es/homes/mexico) [Portugal 8](https://realhunt.co/es/homes/portugal) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Chipre 6](https://realhunt.co/es/homes/cyprus) [Reino Unido 6](https://realhunt.co/es/homes/united-kingdom) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Uruguay 4](https://realhunt.co/es/homes/uruguay) [Irlanda 4](https://realhunt.co/es/homes/ireland) [Colombia 3](https://realhunt.co/es/homes/colombia) [República Checa 3](https://realhunt.co/es/homes/czech-republic)
+
+Cómo elegimos estas viviendas: una persona lee cada anuncio y comprueba precio, tamaño, fotos y lugar antes de publicarlo, y la revisión de cada noche lo retira cuando el anuncio desaparece. [Cómo revisamos las casas](https://realhunt.co/es/how-we-check-homes) 7 de estas 16 viviendas se comprobaron con su anuncio original en los últimos 30 días.
 
 Estos anuncios proceden de redfin.ca (9), remax.ca (7). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 

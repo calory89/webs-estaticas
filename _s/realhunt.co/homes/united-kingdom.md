@@ -1,8 +1,14 @@
 ## Houses for sale in the United Kingdom
 
-Updated 26 November 2026. Newest home added 20 November 2026.
+List last changed 20 November 2026. Jump to the homes
 
-RealHunt lists 6 houses for sale in the United Kingdom today, priced from €88,500 to €198,400. The cheapest costs €88,500: [Bright bungalow with a garden near Blyth town and beach](https://realhunt.co/deal/uk-blyth-88k-869241), in Blyth (1 bedroom). The median price is €161,000 (€1,807/m²), against €93,000 (€1,200/m²) for the 654 homes on RealHunt in 30 countries.
+### Three picks from this list
+
+- [Best scoreNew€126,500Furnished two-bedroom house with Moray Firth sea views in the harbour town of MacduffMacduff, Aberdeenshire70 m² · 2 bed · €1,807/m² · 8 days on RealHunt](https://realhunt.co/deal/uk-macduff-furnished-house-sea-views-110k)
+- [Cheapest€88,500Bright bungalow with a garden near Blyth town and beachBlyth, Northumberland1 bed · 51 days on RealHunt](https://realhunt.co/deal/uk-blyth-88k-869241)
+- [Most space for the moneyNew€161,000Well-kept three-bed semi-detached house with solar panels in Enniskillen, FermanaghEnniskillen, Northern Ireland107 m² · 3 bed · €1,505/m² · 6 days on RealHunt](https://realhunt.co/deal/uk-enniskillen-three-bed-semi-solar-panels-140k)
+
+RealHunt lists 6 houses for sale in the United Kingdom today, priced from €88,500 to €198,400. The cheapest costs €88,500: [Bright bungalow with a garden near Blyth town and beach](https://realhunt.co/deal/uk-blyth-88k-869241), in Blyth (1 bedroom). The median price is €161,000 (€1,807/m²), against €93,200 (€1,206/m²) for the 726 homes on RealHunt in 24 countries.
 
 Homes
 6
@@ -33,6 +39,8 @@ Data of
 
 ### The 6 homes, best score first
 
+Sorted by RealHunt score, best first. For the cheapest first, see the table below: tap a heading such as Price to sort it. [See these homes on the map](https://realhunt.co/map?country=United+Kingdom)
+
 - [Score 83New€126,500Furnished two-bedroom house with Moray Firth sea views in the harbour town of MacduffMacduff, Aberdeenshire70 m² · 2 bed · €1,807/m² · 8 days on RealHuntA well-presented semi-detached house in the centre of Macduff, a coastal town on the Moray Firth in north-east Scotland, sold fully furnished and…](https://realhunt.co/deal/uk-macduff-furnished-house-sea-views-110k)
 - [Score 83New€198,400Refurbished period townhouse with a double garage in Lack village, County FermanaghLack, Northern Ireland107 m² · 3 bed · €1,854/m² · 6 days on RealHuntAsking £172,500 (about €198,400) for a 107 m² traditional end-terrace townhouse that has been fully and carefully refurbished, keeping its…](https://realhunt.co/deal/uk-lack-fermanagh-refurbished-townhouse-double-garage-172k)
 - [Score 83New€161,000Well-kept three-bed semi-detached house with solar panels in Enniskillen, FermanaghEnniskillen, Northern Ireland107 m² · 3 bed · €1,505/m² · 6 days on RealHuntAsking £140,000 (about €161,000).](https://realhunt.co/deal/uk-enniskillen-three-bed-semi-solar-panels-140k)
@@ -41,6 +49,8 @@ Data of
 - [Score 88€88,500Bright bungalow with a garden near Blyth town and beachBlyth, Northumberland1 bed · 51 days on RealHuntA charming one-bedroom semi-detached bungalow with a modern kitchen, a bright living room, a shower room, off-street parking and a lawned garden…](https://realhunt.co/deal/uk-blyth-88k-869241)
 
 ### Compare the 6 homes, cheapest first
+
+Median price per m² of this list: €1,807/m².
 
 Home | Place | Price | Size | Per m² | Beds | Score | Added
 [Bright bungalow with a garden near Blyth town and beach](https://realhunt.co/deal/uk-blyth-88k-869241) | Blyth, Northumberland | €88,500 | · | · | 1 | 88 | 6 Oct 2026
@@ -79,7 +89,7 @@ At the same percentages: on €40,000, €1,200 to €3,600; on €80,000, €2,
 
 Yearly property tax: Owners or occupiers pay council tax to the local council, and many councils in England charge second homes a premium of up to 100% from April 2025.
 
-[Buying-cost calculator for a home in the United Kingdom](https://realhunt.co/buying-costs/united-kingdom) · [All costs and taxes](https://realhunt.co/costs/united-kingdom) · [How to buy, step by step](https://realhunt.co/guide/united-kingdom) · [Rules by nationality](https://realhunt.co/can-i-buy)
+[Buying-cost calculator for a home in the United Kingdom](https://realhunt.co/buying-costs/united-kingdom) · [All costs and taxes](https://realhunt.co/costs/united-kingdom) · [How to buy, step by step](https://realhunt.co/guide/united-kingdom) · [Rules by nationality](https://realhunt.co/can-i-buy) · [UK stamp duty calculator for non-residents](https://realhunt.co/tools/uk-stamp-duty-non-resident) · [Yearly running costs of a home](https://realhunt.co/tools/home-running-costs)
 
 General information, not tax or legal advice. Figures checked in 2026.
 
@@ -125,6 +135,8 @@ By feature [With a garden 4](https://realhunt.co/cheap-houses/with-garden-in-uni
 Neighbouring countries [Ireland 4](https://realhunt.co/homes/ireland) [France 48](https://realhunt.co/homes/france)
 
 By country [Spain 150](https://realhunt.co/homes/spain) [Italy 87](https://realhunt.co/homes/italy) [United States 61](https://realhunt.co/homes/united-states) [France 48](https://realhunt.co/homes/france) [Denmark 46](https://realhunt.co/homes/denmark) [Sweden 41](https://realhunt.co/homes/sweden) [Japan 36](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 26](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Mexico 9](https://realhunt.co/homes/mexico) [Portugal 8](https://realhunt.co/homes/portugal) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Cyprus 6](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
+
+How we choose these homes: a person reads every listing and checks its price, size, photos and place before it goes up, and the nightly check takes it off when the advert goes. [How we check homes](https://realhunt.co/how-we-check-homes) 5 of these 6 homes were checked against the original listing in the last 30 days.
 
 These listings come from propertypal.com (3), onthemarket.com (2), rightmove.co.uk (1). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 

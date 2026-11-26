@@ -1,8 +1,14 @@
 ## Pisos en venta en Bulgaria
 
-Actualizado el 26 de noviembre de 2026. Última vivienda añadida el 18 de noviembre de 2026.
+Lista cambiada por última vez el 18 de noviembre de 2026. Ir a las viviendas
 
-RealHunt tiene hoy 6 pisos en venta en Bulgaria, con precios de 58.900 € a 89.000 €. La más barata cuesta 58.900 €: [Apartamento con vistas al mar y piscina en la costa del mar Negro (Bulgaria)](https://realhunt.co/es/deal/bg-byala-58k-fbw62u), en Byala (53 m², 1 dormitorio). El precio mediano es de 69.000 € (759 €/m²), frente a 93.000 € (1.200 €/m²) de las 654 viviendas de RealHunt en 30 países.
+### Tres de esta lista
+
+- [Mejor nota66.000 €Piso amueblado de dos dormitorios con vistas al mar en un complejo cerrado en KavarnaKavarna Paradise, Kavarna (mar Negro)90 m² · 2 dorm. · 733 €/m² · 43 días en RealHunt](https://realhunt.co/es/deal/bg-kavarna-66k-89698)
+- [La más barata58.900 €Apartamento con vistas al mar y piscina en la costa del mar Negro (Bulgaria)Byala, Varna53 m² · 1 dorm. · 1.111 €/m² · 52 días en RealHunt](https://realhunt.co/es/deal/bg-byala-58k-fbw62u)
+- [Más metros por el dinero69.000 €Piso de dos dormitorios con dos terrazas con panorámica al mar en Kavarna HillsKavarna Hills, Kavarna (mar Negro)100 m² · 2 dorm. · 690 €/m² · 43 días en RealHunt](https://realhunt.co/es/deal/bg-kavarna-hills-69k-1606144)
+
+RealHunt tiene hoy 6 pisos en venta en Bulgaria, con precios de 58.900 € a 89.000 €. La más barata cuesta 58.900 €: [Apartamento con vistas al mar y piscina en la costa del mar Negro (Bulgaria)](https://realhunt.co/es/deal/bg-byala-58k-fbw62u), en Byala (53 m², 1 dormitorio). El precio mediano es de 69.000 € (759 €/m²), frente a 93.200 € (1.206 €/m²) de las 726 viviendas de RealHunt en 24 países.
 ¿Puedes comprar aquí? Lee esto primero
 Sí, edificios y apartamentos, con derechos similares a los locales; según GPG, los extranjeros no pueden ser propietarios de tierra directamente, por lo que una empresa búlgara es la ruta habitual.
 
@@ -37,6 +43,8 @@ Datos del
 
 ### Las 6 viviendas, de mejor a peor nota
 
+Ordenadas por la nota de RealHunt, de mejor a peor. Para verlas de más barata a más cara, mira la tabla de abajo: toca un encabezado como Precio para ordenarla. [Ver estas viviendas en el mapa](https://realhunt.co/es/map?country=Bulgaria)
+
 - [Nota 9466.000 €Piso amueblado de dos dormitorios con vistas al mar en un complejo cerrado en KavarnaKavarna Paradise, Kavarna (mar Negro)90 m² · 2 dorm. · 733 €/m² · 43 días en RealHuntPiso amplio de 89,5 m² en la tercera planta de un edificio de cinco alturas dentro del complejo cerrado y cuidado Kavarna Paradise, a 3 minutos…](https://realhunt.co/es/deal/bg-kavarna-66k-89698)
 - [Nota 9369.000 €Piso de dos dormitorios con dos terrazas con panorámica al mar en Kavarna HillsKavarna Hills, Kavarna (mar Negro)100 m² · 2 dorm. · 690 €/m² · 43 días en RealHuntPiso amueblado de 99,6 m² en la cuarta de seis plantas de un edificio de ladrillo de 2008 en el complejo Kavarna Hills, en la parte de la ciudad…](https://realhunt.co/es/deal/bg-kavarna-hills-69k-1606144)
 - [Nota 9370.000 €Piso amueblado de dos dormitorios con terraza con vistas al mar a 300 m de la playa en KavarnaKavarna, Kavarna (mar Negro)99 m² · 2 dorm. · 707 €/m² · 43 días en RealHuntPiso de 99 m² en la quinta de seis plantas, a unos 300 m de la playa: pasillo, salón amplio con cocina, dos baños completos, dos dormitorios…](https://realhunt.co/es/deal/bg-kavarna-70k-1672825)
@@ -45,6 +53,8 @@ Datos del
 - [Nota 84Nueva89.000 €Piso con vista al mar de un dormitorio con piscina y sin cuota de mantenimiento en Sveti VlasSveti Vlas, Burgas64 m² · 1 dorm. · 1.391 €/m² · 8 días en RealHuntUn piso amueblado de 64 m² (57 m² neto) en la 2ª planta de un pequeño edificio de tres plantas en Sveti Vlas, a unos 300 m de la playa.](https://realhunt.co/es/deal/bg-sveti-vlas-sea-view-89k-92034)
 
 ### Compara las 6 viviendas, de más barata a más cara
+
+Precio mediano por m² de esta lista: 759 €/m².
 
 Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 [Apartamento con vistas al mar y piscina en la costa del mar Negro (Bulgaria)](https://realhunt.co/es/deal/bg-byala-58k-fbw62u) | Byala, Varna | 58.900 € | 53 m² | 1.111 €/m² | 1 | 92 | 5 oct 2026
@@ -80,7 +90,7 @@ Con los mismos porcentajes: sobre 40.000 €, de 1.280 € a 3.400 €; sobre 80
 
 Impuesto anual sobre la propiedad: 0,01-0,45% del valor fiscal del inmueble más una tasa municipal de basuras.
 
-[Calculadora de gastos de compra en Bulgaria](https://realhunt.co/es/buying-costs/bulgaria) · [Todos los gastos e impuestos](https://realhunt.co/es/costs/bulgaria) · [Cómo comprar, paso a paso](https://realhunt.co/es/guide/bulgaria) · [Normas según tu nacionalidad](https://realhunt.co/es/can-i-buy)
+[Calculadora de gastos de compra en Bulgaria](https://realhunt.co/es/buying-costs/bulgaria) · [Todos los gastos e impuestos](https://realhunt.co/es/costs/bulgaria) · [Cómo comprar, paso a paso](https://realhunt.co/es/guide/bulgaria) · [Normas según tu nacionalidad](https://realhunt.co/es/can-i-buy) · [Gastos anuales de mantener una casa](https://realhunt.co/es/tools/home-running-costs)
 
 Información general, no asesoramiento fiscal ni legal. Datos revisados en 2026.
 
@@ -128,6 +138,8 @@ Por característica y presupuesto [Con piscina, menos de 100.000 € 3](https://
 Países vecinos [Grecia 26](https://realhunt.co/es/homes/greece)
 
 Por país [España 150](https://realhunt.co/es/homes/spain) [Italia 87](https://realhunt.co/es/homes/italy) [Estados Unidos 61](https://realhunt.co/es/homes/united-states) [Francia 48](https://realhunt.co/es/homes/france) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Suecia 41](https://realhunt.co/es/homes/sweden) [Japón 36](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 26](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 16](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [México 9](https://realhunt.co/es/homes/mexico) [Portugal 8](https://realhunt.co/es/homes/portugal) [Chipre 6](https://realhunt.co/es/homes/cyprus) [Reino Unido 6](https://realhunt.co/es/homes/united-kingdom) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Uruguay 4](https://realhunt.co/es/homes/uruguay) [Irlanda 4](https://realhunt.co/es/homes/ireland) [Colombia 3](https://realhunt.co/es/homes/colombia) [República Checa 3](https://realhunt.co/es/homes/czech-republic)
+
+Cómo elegimos estas viviendas: una persona lee cada anuncio y comprueba precio, tamaño, fotos y lugar antes de publicarlo, y la revisión de cada noche lo retira cuando el anuncio desaparece. [Cómo revisamos las casas](https://realhunt.co/es/how-we-check-homes) 6 de estas 6 viviendas se comprobaron con su anuncio original en los últimos 30 días. 2 viviendas en Bulgaria salieron de RealHunt o se marcaron como ya no a la venta en los últimos 30 días. [Ver el registro de casas retiradas](https://realhunt.co/es/research/removed-homes)
 
 Estos anuncios proceden de bulgarianproperties.com (3), homes.bg (2), green-acres.fr (1). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 

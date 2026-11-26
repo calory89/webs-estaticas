@@ -1,8 +1,14 @@
 ## Casas en venta en Japón
 
-Actualizado el 26 de noviembre de 2026. Última vivienda añadida el 21 de noviembre de 2026.
+Lista cambiada por última vez el 21 de noviembre de 2026. Ir a las viviendas
 
-RealHunt tiene hoy 36 casas en venta en Japón, con precios de 7.400 € a 159.600 €. La más barata cuesta 7.400 €: [Chalet de montaña con estufa de leña y altillo en el bosque de Hida](https://realhunt.co/es/deal/jp-takayama-shokawa-chalet-7k-179056), en Shokawa (94 m², 2 dormitorios). El precio mediano es de 49.680 € (463 €/m²), frente a 93.000 € (1.200 €/m²) de las 654 viviendas de RealHunt en 30 países.
+### Tres de esta lista
+
+- [Mejor nota11.380 €Cabaña de troncos amueblada sobre pilotes con terraza en el bosque de HidaShokawa, Gifu53 m² · 1 dorm. · 215 €/m² · 24 días en RealHunt](https://realhunt.co/es/deal/jp-takayama-log-cabin-11k-225929)
+- [La más barata7.400 €Chalet de montaña con estufa de leña y altillo en el bosque de HidaShokawa, Gifu94 m² · 2 dorm. · 79 €/m² · 24 días en RealHunt](https://realhunt.co/es/deal/jp-takayama-shokawa-chalet-7k-179056)
+- [Más metros por el dinero15.930 €Villa forestal lista para vivir con dos balcones cerca del lago Misasa, NaganoMisasa, Nagano106 m² · 3 dorm. · 150 €/m² · 24 días en RealHunt](https://realhunt.co/es/deal/jp-saku-forest-villa-16k-837899)
+
+RealHunt tiene hoy 36 casas en venta en Japón, con precios de 7.400 € a 159.600 €. La más barata cuesta 7.400 €: [Chalet de montaña con estufa de leña y altillo en el bosque de Hida](https://realhunt.co/es/deal/jp-takayama-shokawa-chalet-7k-179056), en Shokawa (94 m², 2 dormitorios). El precio mediano es de 49.680 € (463 €/m²), frente a 93.200 € (1.206 €/m²) de las 726 viviendas de RealHunt en 24 países.
 
 Viviendas
 36
@@ -32,6 +38,8 @@ Datos del
 26 nov 2026
 
 ### Las 30 mejores de 36, por nota
+
+Ordenadas por la nota de RealHunt, de mejor a peor. Para verlas de más barata a más cara, mira la tabla de abajo: toca un encabezado como Precio para ordenarla. [Todas las viviendas junto al mar](https://realhunt.co/es/homes/japan/by-the-sea) [Ver estas viviendas en el mapa](https://realhunt.co/es/map?country=Japan)
 
 - [Nota 9111.380 €Cabaña de troncos amueblada sobre pilotes con terraza en el bosque de HidaShokawa, Gifu53 m² · 1 dorm. · 215 €/m² · 24 días en RealHuntUna cabaña de troncos de 1999 de 53 m² en una parcela de 332 m² en propiedad en una urbanización de bosque gestionado en Shokawa, Takayama.](https://realhunt.co/es/deal/jp-takayama-log-cabin-11k-225929)
 - [Nota 917.400 €Chalet de montaña con estufa de leña y altillo en el bosque de HidaShokawa, Gifu94 m² · 2 dorm. · 79 €/m² · 24 días en RealHuntUn chalet de dos plantas de 1992 de 93 m² en una parcela de 558 m² en propiedad absoluta en una urbanización de casas de vacaciones gestionada en…](https://realhunt.co/es/deal/jp-takayama-shokawa-chalet-7k-179056)
@@ -67,6 +75,8 @@ Datos del
 Se muestran las 30 con mejor nota de 36 viviendas. La tabla y las búsquedas más concretas de abajo recogen el resto.
 
 ### Compara las 36 viviendas, de más barata a más cara
+
+Precio mediano por m² de esta lista: 463 €/m².
 
 Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 [Chalet de montaña con estufa de leña y altillo en el bosque de Hida](https://realhunt.co/es/deal/jp-takayama-shokawa-chalet-7k-179056) | Shokawa, Gifu | 7.400 € | 94 m² | 79 €/m² | 2 | 91 | 2 nov 2026
@@ -118,6 +128,10 @@ Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 - Notas: de 75 a 91 sobre 98. La de mejor nota: [Cabaña de troncos amueblada sobre pilotes con terraza en el bosque de Hida](https://realhunt.co/es/deal/jp-takayama-log-cabin-11k-225929).
 - La más reciente, añadida el 21 de noviembre de 2026: [Casa de 2016 de cuatro dormitorios de 132 m² en una parcela esquinera en Takashima, Otaru, Hokkaido](https://realhunt.co/es/deal/jp-otaru-takashima-2016-four-bed-house-corner-plot-117k). 18 de estas viviendas se añadieron en los últimos 30 días.
 
+### Qué compra tu dinero aquí
+
+Divididas por precio en tres grupos del mismo tamaño: de 7.400 € a 27.300 €, 12 viviendas con una mediana de 69 m², casi siempre con 2 dormitorios; de 27.870 € a 56.120 €, 12 viviendas con una mediana de 91 m², casi siempre con 1 dormitorio; de 57.040 € a 159.600 €, 12 viviendas con una mediana de 132 m², casi siempre con 4 dormitorios o más.
+
 ### Precio mediano por región en Japón
 
 Región | Viviendas | Precio mediano
@@ -152,7 +166,7 @@ Con los mismos porcentajes: sobre 40.000 €, de 2.400 € a 3.600 €; sobre 80
 
 Impuesto anual sobre la propiedad: El impuesto sobre bienes inmuebles (fixed asset tax) es del 1,4% del valor tasado por la Administración, más el impuesto de urbanismo de hasta el 0,3% en zonas urbanas, y las parcelas residenciales pequeñas tienen una base imponible reducida.
 
-[Calculadora de gastos de compra en Japón](https://realhunt.co/es/buying-costs/japan) · [Todos los gastos e impuestos](https://realhunt.co/es/costs/japan) · [Cómo comprar, paso a paso](https://realhunt.co/es/guide/japan) · [Normas según tu nacionalidad](https://realhunt.co/es/can-i-buy)
+[Calculadora de gastos de compra en Japón](https://realhunt.co/es/buying-costs/japan) · [Todos los gastos e impuestos](https://realhunt.co/es/costs/japan) · [Cómo comprar, paso a paso](https://realhunt.co/es/guide/japan) · [Normas según tu nacionalidad](https://realhunt.co/es/can-i-buy) · [Gastos anuales de mantener una casa](https://realhunt.co/es/tools/home-running-costs)
 
 Información general, no asesoramiento fiscal ni legal. Datos revisados en 2026.
 
@@ -208,6 +222,8 @@ Por característica y presupuesto [Casas, menos de 100.000 € 27](https://realh
 Cerca de una ciudad [Cerca de Osaka 10](https://realhunt.co/es/cheap-houses/near-osaka)
 
 Por país [España 150](https://realhunt.co/es/homes/spain) [Italia 87](https://realhunt.co/es/homes/italy) [Estados Unidos 61](https://realhunt.co/es/homes/united-states) [Francia 48](https://realhunt.co/es/homes/france) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Suecia 41](https://realhunt.co/es/homes/sweden) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 26](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 16](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [México 9](https://realhunt.co/es/homes/mexico) [Portugal 8](https://realhunt.co/es/homes/portugal) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Chipre 6](https://realhunt.co/es/homes/cyprus) [Reino Unido 6](https://realhunt.co/es/homes/united-kingdom) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Uruguay 4](https://realhunt.co/es/homes/uruguay) [Irlanda 4](https://realhunt.co/es/homes/ireland) [Colombia 3](https://realhunt.co/es/homes/colombia) [República Checa 3](https://realhunt.co/es/homes/czech-republic)
+
+Cómo elegimos estas viviendas: una persona lee cada anuncio y comprueba precio, tamaño, fotos y lugar antes de publicarlo, y la revisión de cada noche lo retira cuando el anuncio desaparece. [Cómo revisamos las casas](https://realhunt.co/es/how-we-check-homes) 17 de estas 36 viviendas se comprobaron con su anuncio original en los últimos 30 días. 3 viviendas en Japón salieron de RealHunt o se marcaron como ya no a la venta en los últimos 30 días. [Ver el registro de casas retiradas](https://realhunt.co/es/research/removed-homes)
 
 Estos anuncios proceden de athome.co.jp (11), instagram.com (10), homes.co.jp (6), suumo.jp (4), ark-next.com (1). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 

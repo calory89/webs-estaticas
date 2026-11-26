@@ -1,8 +1,14 @@
 ## Pisos en venta en Alemania
 
-Actualizado el 26 de noviembre de 2026. Última vivienda añadida el 20 de noviembre de 2026.
+Lista cambiada por última vez el 20 de noviembre de 2026. Ir a las viviendas
 
-RealHunt tiene hoy 21 pisos en venta en Alemania, con precios de 40.000 € a 199.000 €. La más barata cuesta 40.000 €: [Estudio vacío y listo para entrar por 40.000 € en Chemnitz, sin comisión](https://realhunt.co/es/deal/de-chemnitz-40k-587336), en Sonnenberg (41 m²). El precio mediano es de 55.000 € (1.053 €/m²), frente a 93.000 € (1.200 €/m²) de las 654 viviendas de RealHunt en 30 países.
+### Tres de esta lista
+
+- [Mejor nota40.000 €Ático soleado con balcón por 40.000 € en ChemnitzEbersdorf, Chemnitz54 m² · 1 dorm. · 741 €/m² · 44 días en RealHunt](https://realhunt.co/es/deal/de-chemnitz-40k-931045)
+- [La más barata40.000 €Estudio vacío y listo para entrar por 40.000 € en Chemnitz, sin comisiónSonnenberg, Chemnitz41 m² · 976 €/m² · 44 días en RealHunt](https://realhunt.co/es/deal/de-chemnitz-40k-587336)
+- [Más metros por el dinero50.000 €Piso de 72 m² en un edificio protegido junto a la universidad, vacíoSchloßchemnitz, Chemnitz72 m² · 1 dorm. · 694 €/m² · 44 días en RealHunt](https://realhunt.co/es/deal/de-chemnitz-50k-665910)
+
+RealHunt tiene hoy 21 pisos en venta en Alemania, con precios de 40.000 € a 199.000 €. La más barata cuesta 40.000 €: [Estudio vacío y listo para entrar por 40.000 € en Chemnitz, sin comisión](https://realhunt.co/es/deal/de-chemnitz-40k-587336), en Sonnenberg (41 m²). El precio mediano es de 55.000 € (1.053 €/m²), frente a 93.200 € (1.206 €/m²) de las 726 viviendas de RealHunt en 24 países.
 
 Viviendas
 21
@@ -33,6 +39,8 @@ Datos del
 
 ### Las 21 viviendas, de mejor a peor nota
 
+Ordenadas por la nota de RealHunt, de mejor a peor. Para verlas de más barata a más cara, mira la tabla de abajo: toca un encabezado como Precio para ordenarla. [Ver estas viviendas en el mapa](https://realhunt.co/es/map?country=Germany)
+
 - [Nota 8740.000 €Ático soleado con balcón por 40.000 € en ChemnitzEbersdorf, Chemnitz54 m² · 1 dorm. · 741 €/m² · 44 días en RealHunt54 m² bajo cubierta en un edificio de los años 30 bien cuidado, a 4,4 km del centro: recibidor, salón, dormitorio, baño con luz natural y bañera…](https://realhunt.co/es/deal/de-chemnitz-40k-931045)
 - [Nota 8650.000 €Piso de 72 m² en un edificio protegido junto a la universidad, vacíoSchloßchemnitz, Chemnitz72 m² · 1 dorm. · 694 €/m² · 44 días en RealHunt71,8 m² en la 3ª planta de un edificio protegido (rehabilitado hacia 1994) en Schloßchemnitz, cerca del centro y de la universidad: cocina grande…](https://realhunt.co/es/deal/de-chemnitz-50k-665910)
 - [Nota 8455.000 €Ático de 65 m² con ventanas de tejado y balcón en Chemnitz-GablenzGablenz, Chemnitz65 m² · 1 dorm. · 846 €/m² · 44 días en RealHuntUn ático amplio de dos habitaciones en un edificio rehabilitado en una calle tranquila: tarima, salón luminoso con ventanas de tejado, baño con…](https://realhunt.co/es/deal/de-chemnitz-55k-462680)
@@ -48,7 +56,7 @@ Datos del
 - [Nota 7850.000 €Piso amueblado en un edificio histórico de 1890 en el Kaßberg, ChemnitzKaßberg, Chemnitz41 m² · 1.220 €/m² · 44 días en RealHunt41 m² en la 3ª planta del edificio protegido de Gerhart-Hauptmann-Platz 1, uno de los pocos de la plaza que sobrevivieron a la guerra, restaurado…](https://realhunt.co/es/deal/de-chemnitz-50k-826803)
 - [Nota 7750.000 €Estudio amueblado en una calle tranquila de Wuppertal-LangerfeldLangerfeld, Wuppertal34 m² · 1.471 €/m² · 44 días en RealHunt34 m² en la 1ª planta: estancia, cocina equipada con mesa de comedor, baño con ducha y trastero.](https://realhunt.co/es/deal/de-wuppertal-50k-248035)
 - [Nota 7755.000 €Piso de dos habitaciones en un edificio de época de ladrillo rojo en Chemnitz-AltendorfAltendorf, Chemnitz51 m² · 1 dorm. · 1.078 €/m² · 44 días en RealHunt51,4 m² en la 1ª planta de un edificio de época bien cuidado: salón y dormitorio con tarima, cocina alicatada y baño con bañera, más trastero.](https://realhunt.co/es/deal/de-chemnitz-55k-074122)
-- [Nota 77Nueva199.000 €Apartamento a nivel del jardín con terraza sur a pasos de la playa en el fiordo de FlensburgWassersleben, Schleswig-Holstein60 m² · 2 dorm. · 3.317 €/m² · 6 días en RealHuntUn piso de tres habitaciones de aproximadamente 60 m² a pocos pasos de la playa y del fiordo de Flensburg.](https://realhunt.co/es/deal/de-wassersleben-flensburg-fjord-beach-flat-terrace-199k)
+- [Nota 77Nueva199.000 €Apartamento a nivel del jardín con terraza sur a pasos de la playa en el fiordo de FlensburgWassersleben, Schleswig-Holstein60 m² · 2 dorm. · 3.317 €/m² · 6 días en RealHuntCuota de comunidad no indicadaUn piso de tres habitaciones de aproximadamente 60 m² a pocos pasos de la playa y del fiordo de Flensburg.](https://realhunt.co/es/deal/de-wassersleben-flensburg-fjord-beach-flat-terrace-199k)
 - [Nota 7660.000 €Piso de dos habitaciones con balcón y plaza de garaje en ChemnitzEbersdorf, Chemnitz57 m² · 1 dorm. · 1.053 €/m² · 44 días en RealHunt56,6 m² en la 2ª planta de un edificio de 1996: salón luminoso con balcón, dormitorio, cocina equipada y baño con ducha, más trastero y plaza…](https://realhunt.co/es/deal/de-chemnitz-60k-885916)
 - [Nota 7555.000 €Estudio luminoso reformado en un edificio de época en el Kaßberg, ChemnitzKaßberg, Chemnitz38 m² · 1.447 €/m² · 44 días en RealHunt38 m² en la 4ª planta de un edificio cuidado en el Kaßberg, el barrio antiguo más bonito de Chemnitz: una estancia grande con ventanales, suelos…](https://realhunt.co/es/deal/de-chemnitz-55k-536019)
 - [Nota 7260.000 €Estudio amueblado con reforma de diseño en Magdeburgo, sin comisiónSudenburg, Magdeburg39 m² · 1.538 €/m² · 44 días en RealHunt39 m² en planta baja de un edificio interior tranquilo, con reforma de diseño en 2021 y todavía como nuevo: cocina equipada de gama alta (nevera…](https://realhunt.co/es/deal/de-magdeburg-60k-478460)
@@ -57,20 +65,22 @@ Datos del
 
 ### Compara las 21 viviendas, de más barata a más cara
 
+Precio mediano por m² de esta lista: 1.053 €/m².
+
 Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 [Estudio vacío y listo para entrar por 40.000 € en Chemnitz, sin comisión](https://realhunt.co/es/deal/de-chemnitz-40k-587336) | Sonnenberg, Chemnitz | 40.000 € | 41 m² | 976 €/m² | · | 80 | 13 oct 2026
 [Ático soleado con balcón por 40.000 € en Chemnitz](https://realhunt.co/es/deal/de-chemnitz-40k-931045) | Ebersdorf, Chemnitz | 40.000 € | 54 m² | 741 €/m² | 1 | 87 | 13 oct 2026
 [Estudio modernista con ascensor, cocina equipada y plaza cubierta en Chemnitz](https://realhunt.co/es/deal/de-chemnitz-45k-168857) | Altchemnitz, Chemnitz | 45.000 € | 41 m² | 1.098 €/m² | · | 81 | 13 oct 2026
-[Piso de dos habitaciones reformado con cocina nueva y jardín en el Kaßberg](https://realhunt.co/es/deal/de-chemnitz-45k-234628) | Kaßberg, Chemnitz | 45.000 € | 49 m² | 918 €/m² | 1 | 83 | 13 oct 2026
+[Piso de dos habitaciones reformado con cocina nueva y jardín en el Kaßberg](https://realhunt.co/es/deal/de-chemnitz-45k-234628) | [Kaßberg, Chemnitz](https://realhunt.co/es/homes/germany/chemnitz/kassberg) | 45.000 € | 49 m² | 918 €/m² | 1 | 83 | 13 oct 2026
 [Piso de tres habitaciones con balcón a zona verde, sin comisión](https://realhunt.co/es/deal/de-chemnitz-50k-484380) | Markersdorf, Chemnitz | 50.000 € | 57 m² | 877 €/m² | 2 | 82 | 13 oct 2026
 [Piso de 72 m² en un edificio protegido junto a la universidad, vacío](https://realhunt.co/es/deal/de-chemnitz-50k-665910) | Schloßchemnitz, Chemnitz | 50.000 € | 72 m² | 694 €/m² | 1 | 86 | 13 oct 2026
-[Piso amueblado en un edificio histórico de 1890 en el Kaßberg, Chemnitz](https://realhunt.co/es/deal/de-chemnitz-50k-826803) | Kaßberg, Chemnitz | 50.000 € | 41 m² | 1.220 €/m² | · | 78 | 13 oct 2026
+[Piso amueblado en un edificio histórico de 1890 en el Kaßberg, Chemnitz](https://realhunt.co/es/deal/de-chemnitz-50k-826803) | [Kaßberg, Chemnitz](https://realhunt.co/es/homes/germany/chemnitz/kassberg) | 50.000 € | 41 m² | 1.220 €/m² | · | 78 | 13 oct 2026
 [Piso de tres habitaciones listo para entrar, con logia sobre el parque, en Chemnitz](https://realhunt.co/es/deal/de-chemnitz-50k-950618) | Helbersdorf, Chemnitz | 50.000 € | 56 m² | 893 €/m² | 2 | 82 | 13 oct 2026
 [Estudio reformado con balcón grande y ascensor en Krefeld](https://realhunt.co/es/deal/de-krefeld-50k-993543) | Inrath, Krefeld | 50.000 € | 30 m² | 1.667 €/m² | · | 78 | 13 oct 2026
 [Estudio amueblado en una calle tranquila de Wuppertal-Langerfeld](https://realhunt.co/es/deal/de-wuppertal-50k-248035) | Langerfeld, Wuppertal | 50.000 € | 34 m² | 1.471 €/m² | · | 77 | 13 oct 2026
 [Piso de dos habitaciones en un edificio de época de ladrillo rojo en Chemnitz-Altendorf](https://realhunt.co/es/deal/de-chemnitz-55k-074122) | Altendorf, Chemnitz | 55.000 € | 51 m² | 1.078 €/m² | 1 | 77 | 13 oct 2026
 [Ático de 65 m² con ventanas de tejado y balcón en Chemnitz-Gablenz](https://realhunt.co/es/deal/de-chemnitz-55k-462680) | Gablenz, Chemnitz | 55.000 € | 65 m² | 846 €/m² | 1 | 84 | 13 oct 2026
-[Estudio luminoso reformado en un edificio de época en el Kaßberg, Chemnitz](https://realhunt.co/es/deal/de-chemnitz-55k-536019) | Kaßberg, Chemnitz | 55.000 € | 38 m² | 1.447 €/m² | · | 75 | 13 oct 2026
+[Estudio luminoso reformado en un edificio de época en el Kaßberg, Chemnitz](https://realhunt.co/es/deal/de-chemnitz-55k-536019) | [Kaßberg, Chemnitz](https://realhunt.co/es/homes/germany/chemnitz/kassberg) | 55.000 € | 38 m² | 1.447 €/m² | · | 75 | 13 oct 2026
 [Piso de tres habitaciones modernizado con balcón a zona verde en Chemnitz](https://realhunt.co/es/deal/de-chemnitz-55k-650355) | Markersdorf, Chemnitz | 55.000 € | 57 m² | 965 €/m² | 2 | 81 | 13 oct 2026
 [Piso de época reformado por completo con balcón al sur](https://realhunt.co/es/deal/de-chemnitz-55k-893563) | Sonnenberg, Chemnitz | 55.000 € | 66 m² | 833 €/m² | 1 | 83 | 13 oct 2026
 [Piso de tres habitaciones y 71 m² con suelos nuevos, a 10 km de Saarbrücken](https://realhunt.co/es/deal/de-quierschied-55k-581809) | Fischbach, Quierschied | 55.000 € | 71 m² | 775 €/m² | 2 | 84 | 13 oct 2026
@@ -90,6 +100,10 @@ Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 - Extras que mencionan los anuncios: 6 con jardín, 9 con terraza, 3 con garaje.
 - Notas: de 71 a 87 sobre 98. La de mejor nota: [Ático soleado con balcón por 40.000 € en Chemnitz](https://realhunt.co/es/deal/de-chemnitz-40k-931045).
 - La más reciente, añadida el 20 de noviembre de 2026: [Apartamento a nivel del jardín con terraza sur a pasos de la playa en el fiordo de Flensburg](https://realhunt.co/es/deal/de-wassersleben-flensburg-fjord-beach-flat-terrace-199k). 1 de estas viviendas se añadió en los últimos 30 días.
+
+### Qué compra tu dinero aquí
+
+Divididas por precio en tres grupos del mismo tamaño: de 40.000 € a 50.000 €, 7 viviendas con una mediana de 49 m², casi siempre con 1 dormitorio; de 50.000 € a 55.000 €, 7 viviendas con una mediana de 51 m², casi siempre con 1 dormitorio; de 55.000 € a 199.000 €, 7 viviendas con una mediana de 57 m², casi siempre con 1 dormitorio.
 
 ### Precio mediano por región en Alemania
 
@@ -113,7 +127,7 @@ Con los mismos porcentajes: sobre 40.000 €, de 2.000 € a 3.400 €; sobre 80
 
 Impuesto anual sobre la propiedad: Los propietarios pagan el impuesto sobre bienes inmuebles (Grundsteuer), que desde 2025 se calcula como valor tasado x tipo impositivo x un coeficiente municipal (Hebesatz) que fija cada municipio.
 
-[Calculadora de gastos de compra en Alemania](https://realhunt.co/es/buying-costs/germany) · [Todos los gastos e impuestos](https://realhunt.co/es/costs/germany) · [Cómo comprar, paso a paso](https://realhunt.co/es/guide/germany) · [Normas según tu nacionalidad](https://realhunt.co/es/can-i-buy)
+[Calculadora de gastos de compra en Alemania](https://realhunt.co/es/buying-costs/germany) · [Todos los gastos e impuestos](https://realhunt.co/es/costs/germany) · [Cómo comprar, paso a paso](https://realhunt.co/es/guide/germany) · [Normas según tu nacionalidad](https://realhunt.co/es/can-i-buy) · [Calculadora del impuesto de transmisiones en Alemania](https://realhunt.co/es/tools/germany-property-transfer-tax) · [Gastos anuales de mantener una casa](https://realhunt.co/es/tools/home-running-costs)
 
 Información general, no asesoramiento fiscal ni legal. Datos revisados en 2026.
 
@@ -160,6 +174,8 @@ En libras y en dólares [Menos de 50.000 libras 16](https://realhunt.co/es/cheap
 Países vecinos [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Francia 48](https://realhunt.co/es/homes/france) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Polonia 31](https://realhunt.co/es/homes/poland) [Dinamarca 46](https://realhunt.co/es/homes/denmark)
 
 Por país [España 150](https://realhunt.co/es/homes/spain) [Italia 87](https://realhunt.co/es/homes/italy) [Estados Unidos 61](https://realhunt.co/es/homes/united-states) [Francia 48](https://realhunt.co/es/homes/france) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Suecia 41](https://realhunt.co/es/homes/sweden) [Japón 36](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 26](https://realhunt.co/es/homes/greece) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 16](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [México 9](https://realhunt.co/es/homes/mexico) [Portugal 8](https://realhunt.co/es/homes/portugal) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Chipre 6](https://realhunt.co/es/homes/cyprus) [Reino Unido 6](https://realhunt.co/es/homes/united-kingdom) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Uruguay 4](https://realhunt.co/es/homes/uruguay) [Irlanda 4](https://realhunt.co/es/homes/ireland) [Colombia 3](https://realhunt.co/es/homes/colombia) [República Checa 3](https://realhunt.co/es/homes/czech-republic)
+
+Cómo elegimos estas viviendas: una persona lee cada anuncio y comprueba precio, tamaño, fotos y lugar antes de publicarlo, y la revisión de cada noche lo retira cuando el anuncio desaparece. [Cómo revisamos las casas](https://realhunt.co/es/how-we-check-homes) 21 de estas 21 viviendas se comprobaron con su anuncio original en los últimos 30 días.
 
 Estos anuncios proceden de kleinanzeigen.de (20), green-acres.fr (1). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 

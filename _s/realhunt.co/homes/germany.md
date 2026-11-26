@@ -1,8 +1,14 @@
 ## Apartments for sale in Germany
 
-Updated 26 November 2026. Newest home added 20 November 2026.
+List last changed 20 November 2026. Jump to the homes
 
-RealHunt lists 21 apartments for sale in Germany today, priced from €40,000 to €199,000. The cheapest costs €40,000: [Empty, ready-to-move-in studio for €40,000 in Chemnitz, no commission](https://realhunt.co/deal/de-chemnitz-40k-587336), in Sonnenberg (41 m²). The median price is €55,000 (€1,053/m²), against €93,000 (€1,200/m²) for the 654 homes on RealHunt in 30 countries.
+### Three picks from this list
+
+- [Best score€40,000Sunny attic flat with a balcony for €40,000 in ChemnitzEbersdorf, Chemnitz54 m² · 1 bed · €741/m² · 44 days on RealHunt](https://realhunt.co/deal/de-chemnitz-40k-931045)
+- [Cheapest€40,000Empty, ready-to-move-in studio for €40,000 in Chemnitz, no commissionSonnenberg, Chemnitz41 m² · €976/m² · 44 days on RealHunt](https://realhunt.co/deal/de-chemnitz-40k-587336)
+- [Most space for the money€50,00072 m² flat in a listed building near the university, vacantSchloßchemnitz, Chemnitz72 m² · 1 bed · €694/m² · 44 days on RealHunt](https://realhunt.co/deal/de-chemnitz-50k-665910)
+
+RealHunt lists 21 apartments for sale in Germany today, priced from €40,000 to €199,000. The cheapest costs €40,000: [Empty, ready-to-move-in studio for €40,000 in Chemnitz, no commission](https://realhunt.co/deal/de-chemnitz-40k-587336), in Sonnenberg (41 m²). The median price is €55,000 (€1,053/m²), against €93,200 (€1,206/m²) for the 726 homes on RealHunt in 24 countries.
 
 Homes
 21
@@ -33,6 +39,8 @@ Data of
 
 ### The 21 homes, best score first
 
+Sorted by RealHunt score, best first. For the cheapest first, see the table below: tap a heading such as Price to sort it. [See these homes on the map](https://realhunt.co/map?country=Germany)
+
 - [Score 87€40,000Sunny attic flat with a balcony for €40,000 in ChemnitzEbersdorf, Chemnitz54 m² · 1 bed · €741/m² · 44 days on RealHunt54 m² under the roof of a well-kept 1930s building, 4.4 km from the centre: a hallway, a living room, a bedroom, a daylight bathroom with a bath…](https://realhunt.co/deal/de-chemnitz-40k-931045)
 - [Score 86€50,00072 m² flat in a listed building near the university, vacantSchloßchemnitz, Chemnitz72 m² · 1 bed · €694/m² · 44 days on RealHunt71.8 m² on the 3rd floor of a listed building (renovated around 1994) in Schloßchemnitz, close to the centre and the university: a large kitchen…](https://realhunt.co/deal/de-chemnitz-50k-665910)
 - [Score 84€55,00065 m² attic flat with skylights and a balcony in Chemnitz-GablenzGablenz, Chemnitz65 m² · 1 bed · €846/m² · 44 days on RealHuntA spacious two-room attic flat in a renovated building on a quiet side street: laminate floors, a bright living room under skylights, a daylight…](https://realhunt.co/deal/de-chemnitz-55k-462680)
@@ -48,7 +56,7 @@ Data of
 - [Score 78€50,000Furnished flat in a listed 1890 landmark on the Kaßberg, ChemnitzKaßberg, Chemnitz41 m² · €1,220/m² · 44 days on RealHunt41 m² on the 3rd floor of the listed building at Gerhart-Hauptmann-Platz 1, one of the few on the square to survive the war, restored in 1998: a…](https://realhunt.co/deal/de-chemnitz-50k-826803)
 - [Score 77€50,000Furnished studio on a quiet street in Wuppertal-LangerfeldLangerfeld, Wuppertal34 m² · €1,471/m² · 44 days on RealHunt34 m² on the 1st floor: a living-sleeping room, a fitted kitchen with a dining table, a shower room and a cellar.](https://realhunt.co/deal/de-wuppertal-50k-248035)
 - [Score 77€55,000Two-room flat in a red-brick period building in Chemnitz-AltendorfAltendorf, Chemnitz51 m² · 1 bed · €1,078/m² · 44 days on RealHunt51.4 m² on the 1st floor of a well-kept period building: a living room and bedroom with laminate floors, a tiled kitchen and a bathroom with a…](https://realhunt.co/deal/de-chemnitz-55k-074122)
-- [Score 77New€199,000Garden-level flat with a south terrace steps from the beach on the Flensburg FjordWassersleben, Schleswig-Holstein60 m² · 2 bed · €3,317/m² · 6 days on RealHuntA three-room flat of about 60 m² a few steps from the beach and the Flensburg Fjord.](https://realhunt.co/deal/de-wassersleben-flensburg-fjord-beach-flat-terrace-199k)
+- [Score 77New€199,000Garden-level flat with a south terrace steps from the beach on the Flensburg FjordWassersleben, Schleswig-Holstein60 m² · 2 bed · €3,317/m² · 6 days on RealHuntCommunity fee not statedA three-room flat of about 60 m² a few steps from the beach and the Flensburg Fjord.](https://realhunt.co/deal/de-wassersleben-flensburg-fjord-beach-flat-terrace-199k)
 - [Score 76€60,000Two-room flat with a balcony and underground parking in ChemnitzEbersdorf, Chemnitz57 m² · 1 bed · €1,053/m² · 44 days on RealHunt56.6 m² on the 2nd floor of a 1996 building: a bright living room with a balcony, a bedroom, a fitted kitchen and a shower room, plus a cellar and…](https://realhunt.co/deal/de-chemnitz-60k-885916)
 - [Score 75€55,000Bright renovated studio in a period building on the Kaßberg, ChemnitzKaßberg, Chemnitz38 m² · €1,447/m² · 44 days on RealHunt38 m² on the 4th floor of a well-kept building in the Kaßberg, Chemnitz's prettiest old quarter: one large room with tall windows, new floors, a…](https://realhunt.co/deal/de-chemnitz-55k-536019)
 - [Score 72€60,000Designer-renovated furnished studio in Magdeburg, no commissionSudenburg, Magdeburg39 m² · €1,538/m² · 44 days on RealHunt39 m² on the ground floor of a quiet rear building, given a full design renovation in 2021 and still like new: a high-end fitted kitchen (fridge…](https://realhunt.co/deal/de-magdeburg-60k-478460)
@@ -57,20 +65,22 @@ Data of
 
 ### Compare the 21 homes, cheapest first
 
+Median price per m² of this list: €1,053/m².
+
 Home | Place | Price | Size | Per m² | Beds | Score | Added
 [Empty, ready-to-move-in studio for €40,000 in Chemnitz, no commission](https://realhunt.co/deal/de-chemnitz-40k-587336) | Sonnenberg, Chemnitz | €40,000 | 41 m² | €976/m² | · | 80 | 13 Oct 2026
 [Sunny attic flat with a balcony for €40,000 in Chemnitz](https://realhunt.co/deal/de-chemnitz-40k-931045) | Ebersdorf, Chemnitz | €40,000 | 54 m² | €741/m² | 1 | 87 | 13 Oct 2026
 [Art nouveau studio with a lift, fitted kitchen and carport in Chemnitz](https://realhunt.co/deal/de-chemnitz-45k-168857) | Altchemnitz, Chemnitz | €45,000 | 41 m² | €1,098/m² | · | 81 | 13 Oct 2026
-[Renovated two-room flat with a new kitchen and garden in the Kaßberg](https://realhunt.co/deal/de-chemnitz-45k-234628) | Kaßberg, Chemnitz | €45,000 | 49 m² | €918/m² | 1 | 83 | 13 Oct 2026
+[Renovated two-room flat with a new kitchen and garden in the Kaßberg](https://realhunt.co/deal/de-chemnitz-45k-234628) | [Kaßberg, Chemnitz](https://realhunt.co/homes/germany/chemnitz/kassberg) | €45,000 | 49 m² | €918/m² | 1 | 83 | 13 Oct 2026
 [Three-room flat with a balcony over the green, no buyer's commission](https://realhunt.co/deal/de-chemnitz-50k-484380) | Markersdorf, Chemnitz | €50,000 | 57 m² | €877/m² | 2 | 82 | 13 Oct 2026
 [72 m² flat in a listed building near the university, vacant](https://realhunt.co/deal/de-chemnitz-50k-665910) | Schloßchemnitz, Chemnitz | €50,000 | 72 m² | €694/m² | 1 | 86 | 13 Oct 2026
-[Furnished flat in a listed 1890 landmark on the Kaßberg, Chemnitz](https://realhunt.co/deal/de-chemnitz-50k-826803) | Kaßberg, Chemnitz | €50,000 | 41 m² | €1,220/m² | · | 78 | 13 Oct 2026
+[Furnished flat in a listed 1890 landmark on the Kaßberg, Chemnitz](https://realhunt.co/deal/de-chemnitz-50k-826803) | [Kaßberg, Chemnitz](https://realhunt.co/homes/germany/chemnitz/kassberg) | €50,000 | 41 m² | €1,220/m² | · | 78 | 13 Oct 2026
 [Move-in-ready three-room flat with a loggia over the city park in Chemnitz](https://realhunt.co/deal/de-chemnitz-50k-950618) | Helbersdorf, Chemnitz | €50,000 | 56 m² | €893/m² | 2 | 82 | 13 Oct 2026
 [Renovated studio with a big balcony and lift in Krefeld](https://realhunt.co/deal/de-krefeld-50k-993543) | Inrath, Krefeld | €50,000 | 30 m² | €1,667/m² | · | 78 | 13 Oct 2026
 [Furnished studio on a quiet street in Wuppertal-Langerfeld](https://realhunt.co/deal/de-wuppertal-50k-248035) | Langerfeld, Wuppertal | €50,000 | 34 m² | €1,471/m² | · | 77 | 13 Oct 2026
 [Two-room flat in a red-brick period building in Chemnitz-Altendorf](https://realhunt.co/deal/de-chemnitz-55k-074122) | Altendorf, Chemnitz | €55,000 | 51 m² | €1,078/m² | 1 | 77 | 13 Oct 2026
 [65 m² attic flat with skylights and a balcony in Chemnitz-Gablenz](https://realhunt.co/deal/de-chemnitz-55k-462680) | Gablenz, Chemnitz | €55,000 | 65 m² | €846/m² | 1 | 84 | 13 Oct 2026
-[Bright renovated studio in a period building on the Kaßberg, Chemnitz](https://realhunt.co/deal/de-chemnitz-55k-536019) | Kaßberg, Chemnitz | €55,000 | 38 m² | €1,447/m² | · | 75 | 13 Oct 2026
+[Bright renovated studio in a period building on the Kaßberg, Chemnitz](https://realhunt.co/deal/de-chemnitz-55k-536019) | [Kaßberg, Chemnitz](https://realhunt.co/homes/germany/chemnitz/kassberg) | €55,000 | 38 m² | €1,447/m² | · | 75 | 13 Oct 2026
 [Modernised three-room flat with a green-view balcony in Chemnitz](https://realhunt.co/deal/de-chemnitz-55k-650355) | Markersdorf, Chemnitz | €55,000 | 57 m² | €965/m² | 2 | 81 | 13 Oct 2026
 [Fully renovated period flat with a south balcony](https://realhunt.co/deal/de-chemnitz-55k-893563) | Sonnenberg, Chemnitz | €55,000 | 66 m² | €833/m² | 1 | 83 | 13 Oct 2026
 [Three-room 71 m² flat with new floors, 10 km from Saarbrücken](https://realhunt.co/deal/de-quierschied-55k-581809) | Fischbach, Quierschied | €55,000 | 71 m² | €775/m² | 2 | 84 | 13 Oct 2026
@@ -90,6 +100,10 @@ Home | Place | Price | Size | Per m² | Beds | Score | Added
 - Extras named in the listings: 6 with a garden, 9 with a terrace, 3 with a garage.
 - Scores: 71 to 87 out of 98. The best rated: [Sunny attic flat with a balcony for €40,000 in Chemnitz](https://realhunt.co/deal/de-chemnitz-40k-931045).
 - Newest, added 20 November 2026: [Garden-level flat with a south terrace steps from the beach on the Flensburg Fjord](https://realhunt.co/deal/de-wassersleben-flensburg-fjord-beach-flat-terrace-199k). 1 of these homes was added in the last 30 days.
+
+### What your money buys here
+
+Split into three groups of the same size by asking price: from €40,000 to €50,000, 7 homes with a median of 49 m², most often 1 bedroom; from €50,000 to €55,000, 7 homes with a median of 51 m², most often 1 bedroom; from €55,000 to €199,000, 7 homes with a median of 57 m², most often 1 bedroom.
 
 ### Median price by region in Germany
 
@@ -113,7 +127,7 @@ At the same percentages: on €40,000, €2,000 to €3,400; on €80,000, €4,
 
 Yearly property tax: Owners pay property tax (Grundsteuer), calculated since 2025 as assessed value x a tax rate x a municipal multiplier (Hebesatz) that each municipality sets.
 
-[Buying-cost calculator for a home in Germany](https://realhunt.co/buying-costs/germany) · [All costs and taxes](https://realhunt.co/costs/germany) · [How to buy, step by step](https://realhunt.co/guide/germany) · [Rules by nationality](https://realhunt.co/can-i-buy)
+[Buying-cost calculator for a home in Germany](https://realhunt.co/buying-costs/germany) · [All costs and taxes](https://realhunt.co/costs/germany) · [How to buy, step by step](https://realhunt.co/guide/germany) · [Rules by nationality](https://realhunt.co/can-i-buy) · [German property transfer tax calculator](https://realhunt.co/tools/germany-property-transfer-tax) · [Yearly running costs of a home](https://realhunt.co/tools/home-running-costs)
 
 General information, not tax or legal advice. Figures checked in 2026.
 
@@ -160,6 +174,8 @@ In pounds and dollars [Under £50,000 16](https://realhunt.co/cheap-houses/under
 Neighbouring countries [Netherlands 18](https://realhunt.co/homes/netherlands) [France 48](https://realhunt.co/homes/france) [Switzerland 10](https://realhunt.co/homes/switzerland) [Poland 31](https://realhunt.co/homes/poland) [Denmark 46](https://realhunt.co/homes/denmark)
 
 By country [Spain 150](https://realhunt.co/homes/spain) [Italy 87](https://realhunt.co/homes/italy) [United States 61](https://realhunt.co/homes/united-states) [France 48](https://realhunt.co/homes/france) [Denmark 46](https://realhunt.co/homes/denmark) [Sweden 41](https://realhunt.co/homes/sweden) [Japan 36](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 26](https://realhunt.co/homes/greece) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Mexico 9](https://realhunt.co/homes/mexico) [Portugal 8](https://realhunt.co/homes/portugal) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Cyprus 6](https://realhunt.co/homes/cyprus) [United Kingdom 6](https://realhunt.co/homes/united-kingdom) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
+
+How we choose these homes: a person reads every listing and checks its price, size, photos and place before it goes up, and the nightly check takes it off when the advert goes. [How we check homes](https://realhunt.co/how-we-check-homes) 21 of these 21 homes were checked against the original listing in the last 30 days.
 
 These listings come from kleinanzeigen.de (20), green-acres.fr (1). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 

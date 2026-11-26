@@ -1,8 +1,8 @@
 ## Houses for sale in the Czech Republic
 
-Updated 26 November 2026. Newest home added 21 November 2026.
+List last changed 21 November 2026. Jump to the homes
 
-RealHunt lists 3 houses for sale in the Czech Republic today, priced from €130,900 to €179,700. The cheapest costs €130,900: [Maintained brick house with a heat pump and garden in Lomnička near Plesná, Cheb](https://realhunt.co/deal/cz-lomnicka-plesna-brick-house-heat-pump-131k), in Lomnička (120 m², 1 bedroom). The median price is €159,600 (€1,464/m²), against €93,000 (€1,200/m²) for the 654 homes on RealHunt in 30 countries.
+RealHunt lists 3 houses for sale in the Czech Republic today, priced from €130,900 to €179,700. The cheapest costs €130,900: [Maintained brick house with a heat pump and garden in Lomnička near Plesná, Cheb](https://realhunt.co/deal/cz-lomnicka-plesna-brick-house-heat-pump-131k), in Lomnička (120 m², 1 bedroom). The median price is €159,600 (€1,464/m²), against €93,200 (€1,206/m²) for the 726 homes on RealHunt in 24 countries.
 
 Homes
 3
@@ -27,11 +27,15 @@ Data of
 
 ### The 3 homes, best score first
 
+Sorted by RealHunt score, best first. For the cheapest first, see the table below: tap a heading such as Price to sort it. [See these homes on the map](https://realhunt.co/map?country=Czech+Republic)
+
 - [Score 85New€130,900Maintained brick house with a heat pump and garden in Lomnička near Plesná, ChebLomnička, Karlovy Vary region120 m² · 1 bed · €1,091/m² · 6 days on RealHuntAsking 3,182,000 CZK (about €130,900).](https://realhunt.co/deal/cz-lomnicka-plesna-brick-house-heat-pump-131k)
 - [Score 84New€159,600Renovated single-storey house with a 50 m² terrace and big garden in ČastohosticeČastohostice, Vysočina region109 m² · 3 bed · €1,464/m² · 5 days on RealHuntAsking 3,900,000 CZK (about €159,600), a private sale with no agency.](https://realhunt.co/deal/cz-castohostice-renovated-four-room-house-big-garden-160k)
-- [Score 77New€179,700Bright flat with two long balconies and a view over the old town of LitoměřiceLitoměřice, Ústí nad Labem region61 m² · 1 bed · €2,946/m² · 5 days on RealHuntAsking 4,390,000 CZK (about €179,700).](https://realhunt.co/deal/cz-litomerice-two-balcony-flat-old-town-view-180k)
+- [Score 77New€179,700Bright flat with two long balconies and a view over the old town of LitoměřiceLitoměřice, Ústí nad Labem region61 m² · 1 bed · €2,946/m² · 5 days on RealHuntCommunity fee not statedAsking 4,390,000 CZK (about €179,700).](https://realhunt.co/deal/cz-litomerice-two-balcony-flat-old-town-view-180k)
 
 ### Compare the 3 homes, cheapest first
+
+Median price per m² of this list: €1,464/m².
 
 Home | Place | Price | Size | Per m² | Beds | Score | Added
 [Maintained brick house with a heat pump and garden in Lomnička near Plesná, Cheb](https://realhunt.co/deal/cz-lomnicka-plesna-brick-house-heat-pump-131k) | Lomnička, Karlovy Vary region | €130,900 | 120 m² | €1,091/m² | 1 | 85 | 20 Nov 2026
@@ -62,7 +66,7 @@ Can foreigners buy? Yes. Foreigners can buy homes and land in the Czech Republic
 
 Yearly property tax: Owners pay a yearly tax on land and buildings (daň z nemovitých věcí); from 2024 the rates rose to 1.8 times their old level on average, and each municipality can multiply the tax by a local coefficient between 0.5 and 5. The return is due by 31 January and the tax by 31 May.
 
-[Rules by nationality](https://realhunt.co/can-i-buy)
+[Rules by nationality](https://realhunt.co/can-i-buy) · [Yearly running costs of a home](https://realhunt.co/tools/home-running-costs)
 
 General information, not tax or legal advice. Figures checked in 2026.
 
@@ -90,6 +94,8 @@ Yes. Foreigners can buy homes and land in the Czech Republic on the same terms a
 By budget [Under €200,000 3](https://realhunt.co/homes/czech-republic/under-200000)
 
 By country [Spain 150](https://realhunt.co/homes/spain) [Italy 87](https://realhunt.co/homes/italy) [United States 61](https://realhunt.co/homes/united-states) [France 48](https://realhunt.co/homes/france) [Denmark 46](https://realhunt.co/homes/denmark) [Sweden 41](https://realhunt.co/homes/sweden) [Japan 36](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 26](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Mexico 9](https://realhunt.co/homes/mexico) [Portugal 8](https://realhunt.co/homes/portugal) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Cyprus 6](https://realhunt.co/homes/cyprus) [United Kingdom 6](https://realhunt.co/homes/united-kingdom) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Colombia 3](https://realhunt.co/homes/colombia)
+
+How we choose these homes: a person reads every listing and checks its price, size, photos and place before it goes up, and the nightly check takes it off when the advert goes. [How we check homes](https://realhunt.co/how-we-check-homes) 3 of these 3 homes were checked against the original listing in the last 30 days.
 
 These listings come from bezrealitky.cz (3). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 

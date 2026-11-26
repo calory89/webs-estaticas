@@ -1,8 +1,14 @@
 ## Casas en venta en Francia
 
-Actualizado el 26 de noviembre de 2026. Última vivienda añadida el 20 de noviembre de 2026.
+Lista cambiada por última vez el 20 de noviembre de 2026. Ir a las viviendas
 
-RealHunt tiene hoy 48 casas en venta en Francia, con precios de 39.000 € a 285.000 €. La más barata cuesta 39.000 €: [Piso de dos habitaciones reformado por 39.000 € en Saint-Étienne](https://realhunt.co/es/deal/fr-saint-etienne-39k-705662), en Montaud (45 m², 1 dormitorio). El precio mediano es de 69.900 € (1.154 €/m²), frente a 93.000 € (1.200 €/m²) de las 654 viviendas de RealHunt en 30 países.
+### Tres de esta lista
+
+- [Mejor nota39.950 €Casa de 171 m² con antiguo local comercial en el centro de Bussière-PoitevineBussière-Poitevine, Haute-Vienne171 m² · 3 dorm. · 234 €/m² · 43 días en RealHunt](https://realhunt.co/es/deal/fr-bussiere-poitevine-39k-088775)
+- [La más barata39.000 €Piso de dos habitaciones reformado por 39.000 € en Saint-ÉtienneMontaud, Saint-Étienne45 m² · 1 dorm. · 867 €/m² · 44 días en RealHunt](https://realhunt.co/es/deal/fr-saint-etienne-39k-705662)
+- [Más metros por el dinero49.900 €Casa de campo con veranda junto al lago de Saint-Rémy, ThiersThiers, Puy-de-Dôme120 m² · 3 dorm. · 416 €/m² · 43 días en RealHunt](https://realhunt.co/es/deal/fr-thiers-49k-mo1869)
+
+RealHunt tiene hoy 48 casas en venta en Francia, con precios de 39.000 € a 285.000 €. La más barata cuesta 39.000 €: [Piso de dos habitaciones reformado por 39.000 € en Saint-Étienne](https://realhunt.co/es/deal/fr-saint-etienne-39k-705662), en Montaud (45 m², 1 dormitorio). El precio mediano es de 69.900 € (1.154 €/m²), frente a 93.200 € (1.206 €/m²) de las 726 viviendas de RealHunt en 24 países.
 
 Viviendas
 48
@@ -32,6 +38,8 @@ Datos del
 26 nov 2026
 
 ### Las 30 mejores de 48, por nota
+
+Ordenadas por la nota de RealHunt, de mejor a peor. Para verlas de más barata a más cara, mira la tabla de abajo: toca un encabezado como Precio para ordenarla. [Ver estas viviendas en el mapa](https://realhunt.co/es/map?country=France)
 
 - [Nota 9239.950 €Casa de 171 m² con antiguo local comercial en el centro de Bussière-PoitevineBussière-Poitevine, Haute-Vienne171 m² · 3 dorm. · 234 €/m² · 43 días en RealHuntEn pleno centro del pueblo, junto a la panadería, la farmacia y el colegio: bodega, cocina, salón, aseo y un antiguo local con escaparate en la…](https://realhunt.co/es/deal/fr-bussiere-poitevine-39k-088775)
 - [Nota 91Nueva148.400 €Casa de ladrillo con ampliación del salón de 2019, jardín y garaje en Ohain, AvesnoisOhain, Nord106 m² · 3 dorm. · 1.400 €/m² · 12 días en RealHuntCasa pareada de ladrillo en el verde Avesnois, junto a la frontera belga.](https://realhunt.co/es/deal/fr-ohain-148k-150454)
@@ -67,6 +75,8 @@ Datos del
 Se muestran las 30 con mejor nota de 48 viviendas. La tabla y las búsquedas más concretas de abajo recogen el resto.
 
 ### Compara las 48 viviendas, de más barata a más cara
+
+Precio mediano por m² de esta lista: 1.154 €/m².
 
 Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 [Piso de dos habitaciones reformado por 39.000 € en Saint-Étienne](https://realhunt.co/es/deal/fr-saint-etienne-39k-705662) | Montaud, Saint-Étienne | 39.000 € | 45 m² | 867 €/m² | 1 | 84 | 13 oct 2026
@@ -130,6 +140,10 @@ Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 - Notas: de 73 a 92 sobre 98. La de mejor nota: [Casa de 171 m² con antiguo local comercial en el centro de Bussière-Poitevine](https://realhunt.co/es/deal/fr-bussiere-poitevine-39k-088775).
 - La más reciente, añadida el 20 de noviembre de 2026: [Casa de pueblo de piedra de los años 1700 lista para entrar de 180 m² cerca de La Rochefoucauld, Charente](https://realhunt.co/es/deal/fr-yvrac-et-malleyrand-1700s-stone-house-180m2-189k). 20 de estas viviendas se añadieron en los últimos 30 días.
 
+### Qué compra tu dinero aquí
+
+Divididas por precio en tres grupos del mismo tamaño: de 39.000 € a 57.000 €, 16 viviendas con una mediana de 45 m², casi siempre con 1 dormitorio; de 59.000 € a 123.000 €, 16 viviendas con una mediana de 70 m², casi siempre con 2 dormitorios; de 125.000 € a 285.000 €, 16 viviendas con una mediana de 113 m², casi siempre con 2 dormitorios.
+
 ### Precio mediano por región en Francia
 
 Región | Viviendas | Precio mediano
@@ -175,7 +189,7 @@ Con los mismos porcentajes: sobre 40.000 €, de 2.800 € a 3.400 €; sobre 80
 
 Impuesto anual sobre la propiedad: Los propietarios pagan un impuesto anual sobre bienes inmuebles (taxe foncière) que fijan las administraciones locales, y los propietarios de una segunda vivienda amueblada pagan además el impuesto de habitación (taxe d'habitation), que algunos municipios incrementan con un recargo del 5% al 60%.
 
-[Calculadora de gastos de compra en Francia](https://realhunt.co/es/buying-costs/france) · [Todos los gastos e impuestos](https://realhunt.co/es/costs/france) · [Cómo comprar, paso a paso](https://realhunt.co/es/guide/france) · [Normas según tu nacionalidad](https://realhunt.co/es/can-i-buy)
+[Calculadora de gastos de compra en Francia](https://realhunt.co/es/buying-costs/france) · [Todos los gastos e impuestos](https://realhunt.co/es/costs/france) · [Cómo comprar, paso a paso](https://realhunt.co/es/guide/france) · [Normas según tu nacionalidad](https://realhunt.co/es/can-i-buy) · [Calculadora de gastos de notaría en Francia](https://realhunt.co/es/tools/france-notary-fees) · [Gastos anuales de mantener una casa](https://realhunt.co/es/tools/home-running-costs)
 
 Información general, no asesoramiento fiscal ni legal. Datos revisados en 2026.
 
@@ -236,6 +250,8 @@ Cerca de una ciudad [Cerca de Lyon 6](https://realhunt.co/es/cheap-houses/near-l
 Países vecinos [España 150](https://realhunt.co/es/homes/spain) [Italia 87](https://realhunt.co/es/homes/italy) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Alemania 21](https://realhunt.co/es/homes/germany)
 
 Por país [España 150](https://realhunt.co/es/homes/spain) [Italia 87](https://realhunt.co/es/homes/italy) [Estados Unidos 61](https://realhunt.co/es/homes/united-states) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Suecia 41](https://realhunt.co/es/homes/sweden) [Japón 36](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 26](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 16](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [México 9](https://realhunt.co/es/homes/mexico) [Portugal 8](https://realhunt.co/es/homes/portugal) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Chipre 6](https://realhunt.co/es/homes/cyprus) [Reino Unido 6](https://realhunt.co/es/homes/united-kingdom) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Uruguay 4](https://realhunt.co/es/homes/uruguay) [Irlanda 4](https://realhunt.co/es/homes/ireland) [Colombia 3](https://realhunt.co/es/homes/colombia) [República Checa 3](https://realhunt.co/es/homes/czech-republic)
+
+Cómo elegimos estas viviendas: una persona lee cada anuncio y comprueba precio, tamaño, fotos y lugar antes de publicarlo, y la revisión de cada noche lo retira cuando el anuncio desaparece. [Cómo revisamos las casas](https://realhunt.co/es/how-we-check-homes) 43 de estas 48 viviendas se comprobaron con su anuncio original en los últimos 30 días. 3 viviendas en Francia salieron de RealHunt o se marcaron como ya no a la venta en los últimos 30 días. [Ver el registro de casas retiradas](https://realhunt.co/es/research/removed-homes)
 
 Estos anuncios proceden de bienici.com (31), green-acres.fr (13), espaces-atypiques.com (1), french-property.com (1), instagram.com (1). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 

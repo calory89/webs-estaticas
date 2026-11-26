@@ -1,8 +1,14 @@
 ## Casas en venta en Suiza
 
-Actualizado el 26 de noviembre de 2026. Última vivienda añadida el 4 de octubre de 2026.
+Lista cambiada por última vez el 4 de octubre de 2026. Ir a las viviendas
 
-RealHunt tiene hoy 10 casas en venta en Suiza, con precios de 32.300 € a 88.400 €. La más barata cuesta 32.300 €: [Casa modular de 70 m² con bomba de calor, para llevar a tu propio terreno](https://realhunt.co/es/deal/ch-lengnau-30k-26130), en Lengnau (70 m², 1 dormitorio). El precio mediano es de 70.100 € (2.337 €/m²), frente a 93.000 € (1.200 €/m²) de las 654 viviendas de RealHunt en 30 países.
+### Tres de esta lista
+
+- [Mejor nota70.100 €Chalet reformado con jardín en un camping verde de las colinas de NeuchâtelLignières, Neuchâtel30 m² · 1 dorm. · 2.337 €/m² · 53 días en RealHunt](https://realhunt.co/es/deal/ch-lignieres-65k-24005)
+- [La más barata32.300 €Casa modular de 70 m² con bomba de calor, para llevar a tu propio terrenoLengnau, Berna70 m² · 1 dorm. · 461 €/m² · 53 días en RealHunt](https://realhunt.co/es/deal/ch-lengnau-30k-26130)
+- [Más metros por el dinero42.600 €Casa de camping vallada de 2,5 habitaciones con terraza soleada en RaronRaron, Valais45 m² · 2 dorm. · 947 €/m² · 53 días en RealHunt](https://realhunt.co/es/deal/ch-raron-40k-76568)
+
+RealHunt tiene hoy 10 casas en venta en Suiza, con precios de 32.300 € a 88.400 €. La más barata cuesta 32.300 €: [Casa modular de 70 m² con bomba de calor, para llevar a tu propio terreno](https://realhunt.co/es/deal/ch-lengnau-30k-26130), en Lengnau (70 m², 1 dormitorio). El precio mediano es de 70.100 € (2.337 €/m²), frente a 93.200 € (1.206 €/m²) de las 726 viviendas de RealHunt en 24 países.
 ¿Puedes comprar aquí? Lee esto primero
 Bajo la ley Lex Koller, los ciudadanos de la UE/EFTA que viven en Suiza y los titulares de un permiso C compran como ciudadanos suizos, y los no ciudadanos de la UE titulares de un permiso B pueden comprar una vivienda en la que viven. Las personas que viven en el extranjero necesitan un permiso cantonal y normalmente solo pueden comprar una casa de vacaciones en una zona turística, dentro de cuotas nacionales; un endurecimiento propuesto estaba en consulta en 2026.
 
@@ -37,6 +43,8 @@ Datos del
 
 ### Las 10 viviendas, de mejor a peor nota
 
+Ordenadas por la nota de RealHunt, de mejor a peor. Para verlas de más barata a más cara, mira la tabla de abajo: toca un encabezado como Precio para ordenarla. [Ver estas viviendas en el mapa](https://realhunt.co/es/map?country=Switzerland)
+
 - [Nota 8270.100 €Chalet reformado con jardín en un camping verde de las colinas de NeuchâtelLignières, Neuchâtel30 m² · 1 dorm. · 2.337 €/m² · 53 días en RealHuntUn chalet reformado de 1,5 habitaciones y unos 30 m² en una parcela de unos 150 m², con grandes ventanales correderos, cocina nueva y baño con ducha.](https://realhunt.co/es/deal/ch-lignieres-65k-24005)
 - [Nota 7685.900 €Casa móvil con 120 m² de jardín, cenador y calefacción de pellets en el ValaisRaron, Valais34 m² · 1 dorm. · 2.526 €/m² · 53 días en RealHuntLa casa móvil 'Bijou': 34 m² habitables más veranda, en una parcela de 213 m² con unos 120 m² de jardín, cenador con zona chill-out y chimenea…](https://realhunt.co/es/deal/ch-raron-80k-63919)
 - [Nota 7088.400 €Casa de camping amueblada como nueva en el soleado Alto ValaisRaron, Valais34 m² · 2 dorm. · 2.600 €/m² · 53 días en RealHuntSolo tiene dos años y se vende amueblada: unos 34 m² con salón acogedor, cocina, baño y dormitorio, persianas y mosquiteras, y extras que el…](https://realhunt.co/es/deal/ch-raron-82k-76555)
@@ -50,17 +58,19 @@ Datos del
 
 ### Compara las 10 viviendas, de más barata a más cara
 
+Precio mediano por m² de esta lista: 2.337 €/m².
+
 Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 [Casa modular de 70 m² con bomba de calor, para llevar a tu propio terreno](https://realhunt.co/es/deal/ch-lengnau-30k-26130) | Lengnau, Berna | 32.300 € | 70 m² | 461 €/m² | 1 | 92 | 4 oct 2026
-[Casa de camping vallada de 2,5 habitaciones con terraza soleada en Raron](https://realhunt.co/es/deal/ch-raron-40k-76568) | Raron, Valais | 42.600 € | 45 m² | 947 €/m² | 2 | 84 | 4 oct 2026
+[Casa de camping vallada de 2,5 habitaciones con terraza soleada en Raron](https://realhunt.co/es/deal/ch-raron-40k-76568) | [Raron, Valais](https://realhunt.co/es/homes/switzerland/valais/raron) | 42.600 € | 45 m² | 947 €/m² | 2 | 84 | 4 oct 2026
 [Casita de vacaciones con jardín de invierno junto a un lago de baño en Salgesch](https://realhunt.co/es/deal/ch-salgesch-49k-76547) | Salgesch, Valais | 52.800 € | 40 m² | 1.320 €/m² | 1 | 85 | 4 oct 2026
 [Tiny house luminosa como nueva, con altillo para dormir y bomba de calor](https://realhunt.co/es/deal/ch-brig-55k-63824) | Brig, Valais | 59.300 € | 20 m² | 2.965 €/m² | 1 | 74 | 4 oct 2026
 [Tiny house de madera con dos altillos y estufa de leña, lista para trasladar](https://realhunt.co/es/deal/ch-brig-55k-63831) | Brig, Valais | 59.300 € | 25 m² | 2.372 €/m² | 1 | 78 | 4 oct 2026
 [Chalet reformado con jardín en un camping verde de las colinas de Neuchâtel](https://realhunt.co/es/deal/ch-lignieres-65k-24005) | Lignières, Neuchâtel | 70.100 € | 30 m² | 2.337 €/m² | 1 | 82 | 4 oct 2026
-[Chalet de madera preparado para el invierno junto a un arroyo en los Alpes del Valais](https://realhunt.co/es/deal/ch-raron-70k-61979) | Raron, Valais | 74.900 € | 48 m² | 1.560 €/m² | 1 | 81 | 4 oct 2026
+[Chalet de madera preparado para el invierno junto a un arroyo en los Alpes del Valais](https://realhunt.co/es/deal/ch-raron-70k-61979) | [Raron, Valais](https://realhunt.co/es/homes/switzerland/valais/raron) | 74.900 € | 48 m² | 1.560 €/m² | 1 | 81 | 4 oct 2026
 [Chalet de madera para todo el año con jardín y piscina cerca del lago de Zúrich](https://realhunt.co/es/deal/ch-gommiswald-75k-93656) | Gommiswald, San Galo | 80.700 € | 50 m² | 1.614 €/m² | 2 | 83 | 4 oct 2026
-[Casa móvil con 120 m² de jardín, cenador y calefacción de pellets en el Valais](https://realhunt.co/es/deal/ch-raron-80k-63919) | Raron, Valais | 85.900 € | 34 m² | 2.526 €/m² | 1 | 76 | 4 oct 2026
-[Casa de camping amueblada como nueva en el soleado Alto Valais](https://realhunt.co/es/deal/ch-raron-82k-76555) | Raron, Valais | 88.400 € | 34 m² | 2.600 €/m² | 2 | 70 | 4 oct 2026
+[Casa móvil con 120 m² de jardín, cenador y calefacción de pellets en el Valais](https://realhunt.co/es/deal/ch-raron-80k-63919) | [Raron, Valais](https://realhunt.co/es/homes/switzerland/valais/raron) | 85.900 € | 34 m² | 2.526 €/m² | 1 | 76 | 4 oct 2026
+[Casa de camping amueblada como nueva en el soleado Alto Valais](https://realhunt.co/es/deal/ch-raron-82k-76555) | [Raron, Valais](https://realhunt.co/es/homes/switzerland/valais/raron) | 88.400 € | 34 m² | 2.600 €/m² | 2 | 70 | 4 oct 2026
 
 ### Las 10 viviendas en cifras
 
@@ -72,6 +82,10 @@ Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 - Extras que mencionan los anuncios: 5 con jardín, 2 con terraza, 4 con garaje, 4 con piscina, 3 con chimenea.
 - Notas: de 70 a 92 sobre 98. La de mejor nota: [Chalet reformado con jardín en un camping verde de las colinas de Neuchâtel](https://realhunt.co/es/deal/ch-lignieres-65k-24005).
 - La más reciente, añadida el 4 de octubre de 2026: [Chalet reformado con jardín en un camping verde de las colinas de Neuchâtel](https://realhunt.co/es/deal/ch-lignieres-65k-24005).
+
+### Qué compra tu dinero aquí
+
+Divididas por precio en tres grupos del mismo tamaño: de 32.300 € a 52.800 €, 3 viviendas con una mediana de 45 m², casi siempre con 1 dormitorio; de 59.300 € a 74.900 €, 4 viviendas con una mediana de 30 m², casi siempre con 1 dormitorio; de 80.700 € a 88.400 €, 3 viviendas con una mediana de 34 m², casi siempre con 2 dormitorios.
 
 ### Precio mediano por región en Suiza
 
@@ -89,7 +103,7 @@ Con los mismos porcentajes: sobre 40.000 €, de 400 € a 2.000 €; sobre 80.0
 
 Impuesto anual sobre la propiedad: Más de la mitad de los cantones cobran un impuesto anual sobre bienes inmuebles (Liegenschaftssteuer), normalmente del 0,01-0,3% del valor tasado, y los propietarios pagan además el impuesto cantonal sobre el patrimonio por el valor del inmueble menos la hipoteca.
 
-[Calculadora de gastos de compra en Suiza](https://realhunt.co/es/buying-costs/switzerland) · [Todos los gastos e impuestos](https://realhunt.co/es/costs/switzerland) · [Cómo comprar, paso a paso](https://realhunt.co/es/guide/switzerland) · [Normas según tu nacionalidad](https://realhunt.co/es/can-i-buy)
+[Calculadora de gastos de compra en Suiza](https://realhunt.co/es/buying-costs/switzerland) · [Todos los gastos e impuestos](https://realhunt.co/es/costs/switzerland) · [Cómo comprar, paso a paso](https://realhunt.co/es/guide/switzerland) · [Normas según tu nacionalidad](https://realhunt.co/es/can-i-buy) · [Gastos anuales de mantener una casa](https://realhunt.co/es/tools/home-running-costs)
 
 Información general, no asesoramiento fiscal ni legal. Datos revisados en 2026.
 
@@ -131,6 +145,8 @@ Por característica y presupuesto [Con piscina, menos de 100.000 € 4](https://
 Países vecinos [Francia 48](https://realhunt.co/es/homes/france) [Italia 87](https://realhunt.co/es/homes/italy) [Alemania 21](https://realhunt.co/es/homes/germany)
 
 Por país [España 150](https://realhunt.co/es/homes/spain) [Italia 87](https://realhunt.co/es/homes/italy) [Estados Unidos 61](https://realhunt.co/es/homes/united-states) [Francia 48](https://realhunt.co/es/homes/france) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Suecia 41](https://realhunt.co/es/homes/sweden) [Japón 36](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 26](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 16](https://realhunt.co/es/homes/canada) [México 9](https://realhunt.co/es/homes/mexico) [Portugal 8](https://realhunt.co/es/homes/portugal) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Chipre 6](https://realhunt.co/es/homes/cyprus) [Reino Unido 6](https://realhunt.co/es/homes/united-kingdom) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Uruguay 4](https://realhunt.co/es/homes/uruguay) [Irlanda 4](https://realhunt.co/es/homes/ireland) [Colombia 3](https://realhunt.co/es/homes/colombia) [República Checa 3](https://realhunt.co/es/homes/czech-republic)
+
+Cómo elegimos estas viviendas: una persona lee cada anuncio y comprueba precio, tamaño, fotos y lugar antes de publicarlo, y la revisión de cada noche lo retira cuando el anuncio desaparece. [Cómo revisamos las casas](https://realhunt.co/es/how-we-check-homes) 3 de estas 10 viviendas se comprobaron con su anuncio original en los últimos 30 días.
 
 Estos anuncios proceden de immoscout24.ch (10). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 

@@ -1,8 +1,14 @@
 ## Houses for sale in Uruguay
 
-Updated 26 November 2026. Newest home added 20 November 2026.
+List last changed 20 November 2026. Jump to the homes
 
-RealHunt lists 4 houses for sale in Uruguay today, priced from €150,300 to €186,300. The cheapest costs €150,300: [Brick chalet with three bedrooms one block from the beach in La Aguada, La Paloma](https://realhunt.co/deal/uy-la-aguada-brick-chalet-one-block-from-beach-165k), in La Aguada (100 m², 3 bedrooms). The median price is €180,300 (€1,649/m²), against €93,000 (€1,200/m²) for the 654 homes on RealHunt in 30 countries.
+### Three picks from this list
+
+- [Best scoreNew€180,300Timber-ceiling house with fireplace and barbecue under 100 m from the sea, Playa GrandePlaya Grande, Maldonado115 m² · 2 bed · €1,568/m² · 6 days on RealHunt](https://realhunt.co/deal/uy-piriapolis-playa-grande-house-near-sea-198k)
+- [CheapestNew€150,300Brick chalet with three bedrooms one block from the beach in La Aguada, La PalomaLa Aguada, Rocha100 m² · 3 bed · €1,503/m² · 6 days on RealHunt](https://realhunt.co/deal/uy-la-aguada-brick-chalet-one-block-from-beach-165k)
+- [Most space for the moneyNew€186,300Three-bedroom house with a barbecue patio near the rambla in Colonia del SacramentoColonia del Sacramento, Colonia113 m² · 3 bed · €1,649/m² · 8 days on RealHunt](https://realhunt.co/deal/uy-colonia-del-sacramento-three-bed-house-near-rambla-205k)
+
+RealHunt lists 4 houses for sale in Uruguay today, priced from €150,300 to €186,300. The cheapest costs €150,300: [Brick chalet with three bedrooms one block from the beach in La Aguada, La Paloma](https://realhunt.co/deal/uy-la-aguada-brick-chalet-one-block-from-beach-165k), in La Aguada (100 m², 3 bedrooms). The median price is €180,300 (€1,649/m²), against €93,200 (€1,206/m²) for the 726 homes on RealHunt in 24 countries.
 
 Homes
 4
@@ -30,12 +36,16 @@ Data of
 
 ### The 4 homes, best score first
 
+Sorted by RealHunt score, best first. For the cheapest first, see the table below: tap a heading such as Price to sort it. [See these homes on the map](https://realhunt.co/map?country=Uruguay)
+
 - [Score 85New€180,300Timber-ceiling house with fireplace and barbecue under 100 m from the sea, Playa GrandePlaya Grande, Maldonado115 m² · 2 bed · €1,568/m² · 6 days on RealHuntAsking US$198,000 (about €180,300).](https://realhunt.co/deal/uy-piriapolis-playa-grande-house-near-sea-198k)
 - [Score 85New€150,300Brick chalet with three bedrooms one block from the beach in La Aguada, La PalomaLa Aguada, Rocha100 m² · 3 bed · €1,503/m² · 6 days on RealHuntAsking US$165,000 (about €150,300).](https://realhunt.co/deal/uy-la-aguada-brick-chalet-one-block-from-beach-165k)
 - [Score 82New€150,300Recently built three-bed house three blocks from the beach in La Paloma, RochaLa Paloma, Rocha90 m² · 3 bed · €1,670/m² · 6 days on RealHuntAsking US$165,000 (about €150,300).](https://realhunt.co/deal/uy-la-paloma-new-house-three-blocks-from-beach-165k)
 - [Score 82New€186,300Three-bedroom house with a barbecue patio near the rambla in Colonia del SacramentoColonia del Sacramento, Colonia113 m² · 3 bed · €1,649/m² · 8 days on RealHuntAsking US$205,000 (about €186,300) for a single-storey brick house of 113 m² on a 475 m² plot in Colonia del Sacramento, the old Portuguese…](https://realhunt.co/deal/uy-colonia-del-sacramento-three-bed-house-near-rambla-205k)
 
 ### Compare the 4 homes, cheapest first
+
+Median price per m² of this list: €1,649/m².
 
 Home | Place | Price | Size | Per m² | Beds | Score | Added
 [Brick chalet with three bedrooms one block from the beach in La Aguada, La Paloma](https://realhunt.co/deal/uy-la-aguada-brick-chalet-one-block-from-beach-165k) | La Aguada, Rocha | €150,300 | 100 m² | €1,503/m² | 3 | 85 | 20 Nov 2026
@@ -69,7 +79,7 @@ Taxes and fees add about 5 to 8% to the price: Transfer tax (ITP) of 2% for the 
 
 At the same percentages: on €40,000, €2,000 to €3,200; on €80,000, €4,000 to €6,400; on €150,000, €7,500 to €12,000.
 
-[Rules by nationality](https://realhunt.co/can-i-buy)
+[Rules by nationality](https://realhunt.co/can-i-buy) · [Yearly running costs of a home](https://realhunt.co/tools/home-running-costs)
 
 General information, not tax or legal advice. Figures checked in 2026.
 
@@ -102,6 +112,8 @@ By budget [Under €200,000 4](https://realhunt.co/homes/uruguay/under-200000)
 By feature [With a terrace 3](https://realhunt.co/cheap-houses/with-a-terrace-in-uruguay) [Quiet location 3](https://realhunt.co/cheap-houses/quiet-location-in-uruguay)
 
 By country [Spain 150](https://realhunt.co/homes/spain) [Italy 87](https://realhunt.co/homes/italy) [United States 61](https://realhunt.co/homes/united-states) [France 48](https://realhunt.co/homes/france) [Denmark 46](https://realhunt.co/homes/denmark) [Sweden 41](https://realhunt.co/homes/sweden) [Japan 36](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 26](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Mexico 9](https://realhunt.co/homes/mexico) [Portugal 8](https://realhunt.co/homes/portugal) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Cyprus 6](https://realhunt.co/homes/cyprus) [United Kingdom 6](https://realhunt.co/homes/united-kingdom) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [Ireland 4](https://realhunt.co/homes/ireland) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
+
+How we choose these homes: a person reads every listing and checks its price, size, photos and place before it goes up, and the nightly check takes it off when the advert goes. [How we check homes](https://realhunt.co/how-we-check-homes) 4 of these 4 homes were checked against the original listing in the last 30 days.
 
 These listings come from infocasas.com.uy (4). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 

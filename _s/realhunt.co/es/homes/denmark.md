@@ -1,8 +1,14 @@
 ## Casas en venta en Dinamarca
 
-Actualizado el 26 de noviembre de 2026. Última vivienda añadida el 18 de noviembre de 2026.
+Lista cambiada por última vez el 18 de noviembre de 2026. Ir a las viviendas
 
-RealHunt tiene hoy 46 casas en venta en Dinamarca, con precios de 35.400 € a 160.000 €. La más barata cuesta 35.400 €: [Casita con tejado de paja de 1800 en pleno campo abierto](https://realhunt.co/es/deal/Dc4LcqwjPZX), en Bønderby. El precio mediano es de 93.200 € (790 €/m²), frente a 93.000 € (1.200 €/m²) de las 654 viviendas de RealHunt en 30 países.
+### Tres de esta lista
+
+- [Mejor nota79.800 €Villa familiar de 198 m² junto al Limfjord por menos de 80.000 €Ranum, Jutlandia Septentrional198 m² · 5 dorm. · 403 €/m² · 52 días en RealHunt](https://realhunt.co/es/deal/dk-ranum-79k-6d9fbd)
+- [La más barata35.400 €Casita con tejado de paja de 1800 en pleno campo abiertoBønderby, Sønderjylland64 días en RealHunt](https://realhunt.co/es/deal/Dc4LcqwjPZX)
+- [Más metros por el dinero79.800 €Villa familiar de 182 m² entre bosque y mar, a 84 min de CopenhagueOrehoved, Falster182 m² · 5 dorm. · 438 €/m² · 46 días en RealHunt](https://realhunt.co/es/deal/dk-orehoved-80k-12ff7b)
+
+RealHunt tiene hoy 46 casas en venta en Dinamarca, con precios de 35.400 € a 160.000 €. La más barata cuesta 35.400 €: [Casita con tejado de paja de 1800 en pleno campo abierto](https://realhunt.co/es/deal/Dc4LcqwjPZX), en Bønderby. El precio mediano es de 93.200 € (790 €/m²), frente a 93.200 € (1.206 €/m²) de las 726 viviendas de RealHunt en 24 países.
 ¿Puedes comprar aquí? Lee esto primero
 Sin domicilio danés o 5 años de residencia anterior necesitas permiso del Departamento de Asuntos Civiles (Civilstyrelsen); los ciudadanos de la UE/EEE que viven y están registrados en Dinamarca pueden comprar una vivienda permanente sin permiso firmando una declaración ante el Tribunal de Registro de Tierras. Las casas de vacaciones (sommerhuse) necesitan permiso, que solo se concede a personas con vínculos particularmente fuertes con Dinamarca, como muchos años de vacaciones allí.
 
@@ -36,6 +42,8 @@ Datos del
 26 nov 2026
 
 ### Las 30 mejores de 46, por nota
+
+Ordenadas por la nota de RealHunt, de mejor a peor. Para verlas de más barata a más cara, mira la tabla de abajo: toca un encabezado como Precio para ordenarla. [Todas las viviendas junto al mar](https://realhunt.co/es/homes/denmark/by-the-sea) [Ver estas viviendas en el mapa](https://realhunt.co/es/map?country=Denmark)
 
 - [Nota 9879.800 €Villa familiar de 198 m² junto al Limfjord por menos de 80.000 €Ranum, Jutlandia Septentrional198 m² · 5 dorm. · 403 €/m² · 52 días en RealHuntVilla de 1973 bien cuidada, con 198 m² y cinco dormitorios, en una calle tranquila de Ranum, cerca del Limfjord y el lago Vilsted.](https://realhunt.co/es/deal/dk-ranum-79k-6d9fbd)
 - [Nota 9390.500 €Villa con vistas al fiordo y placas solares en 1.700 m² en HygumHygum, Jutlandia Occidental157 m² · 3 dorm. · 576 €/m² · 52 días en RealHuntVilla de ladrillo de 157 m² retirada de la carretera, en una parcela de 1.693 m² en el tranquilo Hygum, cerca de Lemvig, con vistas hacia el agua.](https://realhunt.co/es/deal/dk-hygum-90k-715977)
@@ -71,6 +79,8 @@ Datos del
 Se muestran las 30 con mejor nota de 46 viviendas. La tabla y las búsquedas más concretas de abajo recogen el resto.
 
 ### Compara las 46 viviendas, de más barata a más cara
+
+Precio mediano por m² de esta lista: 790 €/m².
 
 Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 [Casita con tejado de paja de 1800 en pleno campo abierto](https://realhunt.co/es/deal/Dc4LcqwjPZX) | Bønderby, Sønderjylland | 35.400 € | · | · | · | 91 | 23 sept 2026
@@ -132,6 +142,10 @@ Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 - Notas: de 82 a 98 sobre 98. La de mejor nota: [Villa familiar de 198 m² junto al Limfjord por menos de 80.000 €](https://realhunt.co/es/deal/dk-ranum-79k-6d9fbd).
 - La más reciente, añadida el 18 de noviembre de 2026: [Villa lista para entrar a vivir con cocina moderna, terraza grande y vistas al campo abierto cerca de Høng](https://realhunt.co/es/deal/dk-hoeng-saeby-move-in-ready-villa-1195k-dkk). 1 de estas viviendas se añadió en los últimos 30 días.
 
+### Qué compra tu dinero aquí
+
+Divididas por precio en tres grupos del mismo tamaño: de 35.400 € a 83.800 €, 15 viviendas con una mediana de 115 m², casi siempre con 2 dormitorios; de 86.300 € a 93.200 €, 16 viviendas con una mediana de 113 m², casi siempre con 3 dormitorios; de 93.200 € a 160.000 €, 15 viviendas con una mediana de 115 m², casi siempre con 3 dormitorios.
+
 ### Precio mediano por región en Dinamarca
 
 Región | Viviendas | Precio mediano
@@ -165,7 +179,7 @@ Con los mismos porcentajes: sobre 40.000 €, de 600 € a 1.200 €; sobre 80.0
 
 Impuesto anual sobre la propiedad: Los propietarios pagan el impuesto sobre el valor de la vivienda (ejendomsværdiskat) del 0,51% sobre el 80% de la valoración oficial (1,4% por encima de 9,2 millones de DKK) más el impuesto municipal sobre el suelo (grundskyld) al tipo que fija cada municipio, con un máximo del 30 por mil del valor del suelo.
 
-[Calculadora de gastos de compra en Dinamarca](https://realhunt.co/es/buying-costs/denmark) · [Todos los gastos e impuestos](https://realhunt.co/es/costs/denmark) · [Cómo comprar, paso a paso](https://realhunt.co/es/guide/denmark) · [Normas según tu nacionalidad](https://realhunt.co/es/can-i-buy)
+[Calculadora de gastos de compra en Dinamarca](https://realhunt.co/es/buying-costs/denmark) · [Todos los gastos e impuestos](https://realhunt.co/es/costs/denmark) · [Cómo comprar, paso a paso](https://realhunt.co/es/guide/denmark) · [Normas según tu nacionalidad](https://realhunt.co/es/can-i-buy) · [Gastos anuales de mantener una casa](https://realhunt.co/es/tools/home-running-costs)
 
 Información general, no asesoramiento fiscal ni legal. Datos revisados en 2026.
 
@@ -221,6 +235,8 @@ Cerca de una ciudad [Cerca de Copenhague 18](https://realhunt.co/es/cheap-houses
 Países vecinos [Alemania 21](https://realhunt.co/es/homes/germany) [Suecia 41](https://realhunt.co/es/homes/sweden)
 
 Por país [España 150](https://realhunt.co/es/homes/spain) [Italia 87](https://realhunt.co/es/homes/italy) [Estados Unidos 61](https://realhunt.co/es/homes/united-states) [Francia 48](https://realhunt.co/es/homes/france) [Suecia 41](https://realhunt.co/es/homes/sweden) [Japón 36](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 26](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 16](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [México 9](https://realhunt.co/es/homes/mexico) [Portugal 8](https://realhunt.co/es/homes/portugal) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Chipre 6](https://realhunt.co/es/homes/cyprus) [Reino Unido 6](https://realhunt.co/es/homes/united-kingdom) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Uruguay 4](https://realhunt.co/es/homes/uruguay) [Irlanda 4](https://realhunt.co/es/homes/ireland) [Colombia 3](https://realhunt.co/es/homes/colombia) [República Checa 3](https://realhunt.co/es/homes/czech-republic)
+
+Cómo elegimos estas viviendas: una persona lee cada anuncio y comprueba precio, tamaño, fotos y lugar antes de publicarlo, y la revisión de cada noche lo retira cuando el anuncio desaparece. [Cómo revisamos las casas](https://realhunt.co/es/how-we-check-homes) 16 de estas 46 viviendas se comprobaron con su anuncio original en los últimos 30 días.
 
 Estos anuncios proceden de boligsiden.dk (43), boliga.dk (2), estate.dk (1). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 

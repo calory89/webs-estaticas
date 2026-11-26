@@ -1,8 +1,14 @@
 ## Houses for sale in Greece
 
-Updated 26 November 2026. Newest home added 20 November 2026.
+List last changed 20 November 2026. Jump to the homes
 
-RealHunt lists 26 houses for sale in Greece today, priced from €68,000 to €199,000. The cheapest costs €68,000: [Two-level stone house with a sea view in Marathokampos, Samos](https://realhunt.co/deal/gr-samos-agia-triada-68k-20601330), in Agia Triada (80 m², 2 bedrooms). The median price is €155,000 (€1,477/m²), against €93,000 (€1,200/m²) for the 654 homes on RealHunt in 30 countries.
+### Three picks from this list
+
+- [Best score€109,000Three-bedroom village house with a vine-covered terrace and sea views in MessiniaVasilitsi, Messinia116 m² · 3 bed · €940/m² · 41 days on RealHunt](https://realhunt.co/deal/gr-messinia-vasilitsi-sea-view-109k)
+- [Cheapest€68,000Two-level stone house with a sea view in Marathokampos, SamosAgia Triada, Samos80 m² · 2 bed · €850/m² · 43 days on RealHunt](https://realhunt.co/deal/gr-samos-agia-triada-68k-20601330)
+- [Most space for the moneyNew€170,000Four-bedroom village house with a sea-view roof terrace in Othos, KarpathosOthos, Karpathos165 m² · 4 bed · €1,030/m² · 8 days on RealHunt](https://realhunt.co/deal/gr-karpathos-othos-four-bed-sea-view-170k)
+
+RealHunt lists 26 houses for sale in Greece today, priced from €68,000 to €199,000. The cheapest costs €68,000: [Two-level stone house with a sea view in Marathokampos, Samos](https://realhunt.co/deal/gr-samos-agia-triada-68k-20601330), in Agia Triada (80 m², 2 bedrooms). The median price is €155,000 (€1,477/m²), against €93,200 (€1,206/m²) for the 726 homes on RealHunt in 24 countries.
 Can you buy here? Read this first
 Yes. Buyers from outside the EU and EFTA need a permit to buy in designated border areas (parts of northern Greece and eastern Aegean islands such as the Dodecanese and Rhodes). The government has announced a 15% transfer tax for non-EU buyers of homes from 1 January 2027, not yet final in September 2026.
 
@@ -37,6 +43,8 @@ Data of
 
 ### The 26 homes, best score first
 
+Sorted by RealHunt score, best first. For the cheapest first, see the table below: tap a heading such as Price to sort it. [All homes by the sea](https://realhunt.co/homes/greece/by-the-sea) [See these homes on the map](https://realhunt.co/map?country=Greece)
+
 - [Score 93€109,000Three-bedroom village house with a vine-covered terrace and sea views in MessiniaVasilitsi, Messinia116 m² · 3 bed · €940/m² · 41 days on RealHuntA 116 m² two-storey house in Vasilitsi, at the southern tip of the Messinian peninsula, with views over the sea and the hills: three bedrooms, two…](https://realhunt.co/deal/gr-messinia-vasilitsi-sea-view-109k)
 - [Score 91€115,000Whitewashed Cretan village house with a roof terrace and spiral stairsChoumeriako, Crete93 m² · 2 bed · €1,237/m² · 41 days on RealHuntA renovated 93 m² detached house in the traditional village of Choumeriako, 3 km from Neapoli and 13 km from the beaches of Agios Nikolaos.](https://realhunt.co/deal/gr-crete-choumeriako-renovated-115k)
 - [Score 90€68,000Two-level stone house with a sea view in Marathokampos, SamosAgia Triada, Samos80 m² · 2 bed · €850/m² · 43 days on RealHuntA well-kept 80 m² stone house in the upper part of Marathokampos, in the Agia Triada area, with a wonderful view of the sea.](https://realhunt.co/deal/gr-samos-agia-triada-68k-20601330)
@@ -61,10 +69,12 @@ Data of
 - [Score 83New€195,000Two-storey stone house facing the Libyan Sea in Koutsounari, south CreteKoutsounari, Crete88 m² · 2 bed · €2,216/m² · 6 days on RealHuntA two-storey stone house with open views of the Libyan Sea, 1.3 km from Long Beach on the south coast of Crete.](https://realhunt.co/deal/gr-crete-koutsounari-stone-house-libyan-sea-view-195k)
 - [Score 82€158,000Summer cottage on a 980 m² garden plot 2 km from the beachMarathopolis, Messinia62 m² · 2 bed · €2,548/m² · 41 days on RealHuntA 62 m² house on a flat plot of 980 m² among olive trees and just a few neighbours, near Marathopolis: a sitting area with a wood stove, an open…](https://realhunt.co/deal/gr-gargaliani-garden-sea-158k)
 - [Score 82New€195,000Restored stone courtyard house with a sea-view roof terrace in GytheioGytheio, Laconia85 m² · 2 bed · €2,294/m² · 6 days on RealHuntA traditional stone house of 85 m2 on a quiet car-free lane in the old town of Gytheio, a short walk from the harbour front, on a 127 m2 walled plot.](https://realhunt.co/deal/gr-peloponnese-gytheio-stone-house-sea-view-terrace-195k)
-- [Score 80New€170,000Furnished two-bedroom flat with sea views in Nea Fokea, Kassandra, HalkidikiNea Fokea, Halkidiki60 m² · 2 bed · €2,833/m² · 6 days on RealHuntA 60 m2 first-floor flat in a two-storey building in Nea Fokea, a seaside village on the Kassandra peninsula of Halkidiki.](https://realhunt.co/deal/gr-halkidiki-nea-fokea-two-bed-flat-sea-view-170k)
-- [Score 79New€125,000Furnished one-bedroom ground-floor flat with a private yard in Elounda, CreteElounda, Crete35 m² · 1 bed · €3,571/m² · 8 days on RealHuntA ground-floor flat of 35.5 m² in Elounda, one of the best-known resort towns in Crete, sold fully furnished and ready to use.](https://realhunt.co/deal/gr-crete-elounda-one-bed-private-yard-125k)
+- [Score 80New€170,000Furnished two-bedroom flat with sea views in Nea Fokea, Kassandra, HalkidikiNea Fokea, Halkidiki60 m² · 2 bed · €2,833/m² · 6 days on RealHuntCommunity fee not statedA 60 m2 first-floor flat in a two-storey building in Nea Fokea, a seaside village on the Kassandra peninsula of Halkidiki.](https://realhunt.co/deal/gr-halkidiki-nea-fokea-two-bed-flat-sea-view-170k)
+- [Score 79New€125,000Furnished one-bedroom ground-floor flat with a private yard in Elounda, CreteElounda, Crete35 m² · 1 bed · €3,571/m² · 8 days on RealHuntCommunity fee not statedA ground-floor flat of 35.5 m² in Elounda, one of the best-known resort towns in Crete, sold fully furnished and ready to use.](https://realhunt.co/deal/gr-crete-elounda-one-bed-private-yard-125k)
 
 ### Compare the 26 homes, cheapest first
+
+Median price per m² of this list: €1,477/m².
 
 Home | Place | Price | Size | Per m² | Beds | Score | Added
 [Two-level stone house with a sea view in Marathokampos, Samos](https://realhunt.co/deal/gr-samos-agia-triada-68k-20601330) | Agia Triada, Samos | €68,000 | 80 m² | €850/m² | 2 | 90 | 14 Oct 2026
@@ -106,6 +116,10 @@ Home | Place | Price | Size | Per m² | Beds | Score | Added
 - Scores: 79 to 93 out of 98. The best rated: [Three-bedroom village house with a vine-covered terrace and sea views in Messinia](https://realhunt.co/deal/gr-messinia-vasilitsi-sea-view-109k).
 - Newest, added 20 November 2026: [Renovated detached stone house with courtyard in Andriani, Messinia](https://realhunt.co/deal/gr-messinia-andriani-renovated-stone-house-180k). 12 of these homes were added in the last 30 days.
 
+### What your money buys here
+
+Split into three groups of the same size by asking price: from €68,000 to €115,000, 9 homes with a median of 80 m², most often 2 bedrooms; from €120,000 to €159,990, 8 homes with a median of 76 m², most often 2 bedrooms; from €167,000 to €199,000, 9 homes with a median of 114 m², most often 2 bedrooms.
+
 ### Median price by region in Greece
 
 Region | Homes | Median price
@@ -131,7 +145,7 @@ At the same percentages: on €40,000, €2,200 to €2,800; on €80,000, €4,
 
 Yearly property tax: Owners on 1 January pay the unified property tax (ENFIA), calculated per property from its location, size, age and official zone value, with an extra charge if total Greek property exceeds €500,000.
 
-[Buying-cost calculator for a home in Greece](https://realhunt.co/buying-costs/greece) · [All costs and taxes](https://realhunt.co/costs/greece) · [How to buy, step by step](https://realhunt.co/guide/greece) · [Rules by nationality](https://realhunt.co/can-i-buy)
+[Buying-cost calculator for a home in Greece](https://realhunt.co/buying-costs/greece) · [All costs and taxes](https://realhunt.co/costs/greece) · [How to buy, step by step](https://realhunt.co/guide/greece) · [Rules by nationality](https://realhunt.co/can-i-buy) · [Yearly running costs of a home](https://realhunt.co/tools/home-running-costs)
 
 General information, not tax or legal advice. Figures checked in 2026.
 
@@ -196,6 +210,8 @@ In pounds and dollars [Under £100,000 9](https://realhunt.co/cheap-houses/under
 Neighbouring countries [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Cyprus 6](https://realhunt.co/homes/cyprus)
 
 By country [Spain 150](https://realhunt.co/homes/spain) [Italy 87](https://realhunt.co/homes/italy) [United States 61](https://realhunt.co/homes/united-states) [France 48](https://realhunt.co/homes/france) [Denmark 46](https://realhunt.co/homes/denmark) [Sweden 41](https://realhunt.co/homes/sweden) [Japan 36](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Mexico 9](https://realhunt.co/homes/mexico) [Portugal 8](https://realhunt.co/homes/portugal) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Cyprus 6](https://realhunt.co/homes/cyprus) [United Kingdom 6](https://realhunt.co/homes/united-kingdom) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
+
+How we choose these homes: a person reads every listing and checks its price, size, photos and place before it goes up, and the nightly check takes it off when the advert goes. [How we check homes](https://realhunt.co/how-we-check-homes) 26 of these 26 homes were checked against the original listing in the last 30 days.
 
 These listings come from green-acres.gr (22), spitogatos.gr (4). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 

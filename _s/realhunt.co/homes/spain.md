@@ -1,8 +1,14 @@
 ## Homes for sale in Spain
 
-Updated 26 November 2026. Newest home added 20 November 2026.
+List last changed 20 November 2026. Jump to the homes
 
-RealHunt lists 150 homes for sale in Spain today, priced from €38,000 to €348,000. The cheapest costs €38,000: [2-bedroom house with terrace in Alpujarra de la Sierra](https://realhunt.co/deal/es-alpujarra-de-la-sierra-38k-35809), in Alpujarra de la Sierra (150 m², 2 bedrooms). The median price is €97,000 (€1,225/m²), against €93,000 (€1,200/m²) for the 654 homes on RealHunt in 30 countries.
+### Three picks from this list
+
+- [Best score€55,000Village house with a panoramic sea-and-mountain terrace in Rossell, CastellónRossell, Castellón120 m² · 5 bed · €458/m² · 43 days on RealHunt](https://realhunt.co/deal/es-rossell-55k-187471380)
+- [Cheapest€38,0002-bedroom house with terrace in Alpujarra de la SierraAlpujarra de la Sierra, Granada150 m² · 2 bed · €253/m² · 56 days on RealHunt](https://realhunt.co/deal/es-alpujarra-de-la-sierra-38k-35809)
+- [Most space for the moneyNew€63,000Bright traditional Aragonese house with a stone-floored entrance patio in Torre los Negros, TeruelTorre los Negros, Teruel256 m² · 4 bed · €246/m² · 12 days on RealHunt](https://realhunt.co/deal/es-torre-los-negros-63k-028057)
+
+RealHunt lists 150 homes for sale in Spain today, priced from €38,000 to €348,000. The cheapest costs €38,000: [2-bedroom house with terrace in Alpujarra de la Sierra](https://realhunt.co/deal/es-alpujarra-de-la-sierra-38k-35809), in Alpujarra de la Sierra (150 m², 2 bedrooms). The median price is €97,000 (€1,225/m²), against €93,200 (€1,206/m²) for the 726 homes on RealHunt in 24 countries.
 
 Homes
 150
@@ -32,6 +38,8 @@ Data of
 26 Nov 2026
 
 ### The 30 best of 150, by score
+
+Sorted by RealHunt score, best first. For the cheapest first, see the table below: tap a heading such as Price to sort it. [All homes by the sea](https://realhunt.co/homes/spain/by-the-sea) [See these homes on the map](https://realhunt.co/map?country=Spain)
 
 - [Score 94€55,000Village house with a panoramic sea-and-mountain terrace in Rossell, CastellónRossell, Castellón120 m² · 5 bed · €458/m² · 43 days on RealHuntA 120 m² village house in picturesque Rossell with sweeping views: an entrance hall, a sitting room, a kitchen, five bedrooms, a bathroom and two…](https://realhunt.co/deal/es-rossell-55k-187471380)
 - [Score 94€59,0005-bedroom house with terrace in SorvilánSorvilán, Granada147 m² · 5 bed · €401/m² · 56 days on RealHunt€59,000 for 147 m² and 5 bedrooms in Sorvilán (Granada), about €401/m².](https://realhunt.co/deal/es-sorvilan-59k-76765)
@@ -66,7 +74,9 @@ Data of
 
 Showing the 30 best-scored of 150 homes. The table and the narrower searches below cover the rest.
 
-### Compare the 60 cheapest of 150
+### Compare the 30 cheapest of 150
+
+Median price per m² of this list: €1,225/m².
 
 Home | Place | Price | Size | Per m² | Beds | Score | Added
 [2-bedroom house with terrace in Alpujarra de la Sierra](https://realhunt.co/deal/es-alpujarra-de-la-sierra-38k-35809) | Alpujarra de la Sierra, Granada | €38,000 | 150 m² | €253/m² | 2 | 94 | 1 Oct 2026
@@ -77,7 +87,7 @@ Home | Place | Price | Size | Per m² | Beds | Score | Added
 [2-bedroom duplex with terrace in Aller](https://realhunt.co/deal/es-aller-57k-23270) | Aller, Asturias | €57,500 | 124 m² | €464/m² | 2 | 86 | 1 Oct 2026
 [2-bedroom house with terrace in Montefrío](https://realhunt.co/deal/es-montefrio-59k-97906) | Montefrío, Granada | €59,000 | 115 m² | €513/m² | 2 | 87 | 1 Oct 2026
 [5-bedroom house with terrace in Sorvilán](https://realhunt.co/deal/es-sorvilan-59k-76765) | Sorvilán, Granada | €59,000 | 147 m² | €401/m² | 5 | 94 | 1 Oct 2026
-[1-bedroom house with terrace in Terque](https://realhunt.co/deal/es-terque-59k-29455) | Terque, Almería | €59,500 | 52 m² | €1,144/m² | 1 | 88 | 1 Oct 2026
+[1-bedroom house with terrace in Terque](https://realhunt.co/deal/es-terque-59k-29455) | [Terque, Almería](https://realhunt.co/homes/spain/almeria/terque) | €59,500 | 52 m² | €1,144/m² | 1 | 88 | 1 Oct 2026
 [5-bedroom house with terrace in Cehegín](https://realhunt.co/deal/es-cehegin-59k-77832) | Cehegín, Murcia | €59,900 | 200 m² | €300/m² | 5 | 88 | 1 Oct 2026
 [Mountain country house with big outdoor space](https://realhunt.co/deal/Dc26I9MkYDj) | La Garapacha, Murcia | €60,000 | · | · | · | 82 | 23 Sep 2026
 [2-bedroom house with terrace in Cieza](https://realhunt.co/deal/es-cieza-60k-59837) | Cieza, Murcia | €60,000 | 96 m² | €625/m² | 2 | 85 | 1 Oct 2026
@@ -99,36 +109,6 @@ Home | Place | Price | Size | Per m² | Beds | Score | Added
 [1-bedroom country house in Polaciones](https://realhunt.co/deal/es-polaciones-76k-71631) | Polaciones, Cantabria | €76,000 | 70 m² | €1,086/m² | 1 | 83 | 1 Oct 2026
 [2-bedroom house with terrace in Villamartín](https://realhunt.co/deal/es-villamartin-78k-15617) | Villamartín, Cádiz | €78,000 | 100 m² | €780/m² | 2 | 84 | 1 Oct 2026
 [1-bedroom flat in Palafrugell](https://realhunt.co/deal/es-palafrugell-79k-70840) | Palafrugell, Girona | €79,000 | 55 m² | €1,436/m² | 1 | 84 | 1 Oct 2026
-[2-bedroom house with terrace in Terque](https://realhunt.co/deal/es-terque-79k-93348) | Terque, Almería | €79,500 | 81 m² | €981/m² | 2 | 88 | 1 Oct 2026
-[A stone dining terrace above the Andarax valley](https://realhunt.co/deal/terque-stone-terrace-cave-79500) | Terque, Almería | €79,500 | 81 m² | €981/m² | 2 | 89 | 2 Oct 2026
-[2-bedroom apartment with sea views in Cartagena](https://realhunt.co/deal/es-cartagena-79k-19964) | Cartagena, Murcia | €79,900 | 56 m² | €1,427/m² | 2 | 87 | 1 Oct 2026
-[4-bedroom house with terrace in Cehegín](https://realhunt.co/deal/es-cehegin-79k-37859) | Cehegín, Murcia | €79,900 | 200 m² | €400/m² | 4 | 86 | 1 Oct 2026
-[2-bedroom ground-floor flat with garden in Águilas](https://realhunt.co/deal/es-aguilas-80k-19039) | Águilas, Murcia | €80,000 | 79 m² | €1,013/m² | 2 | 89 | 1 Oct 2026
-[4-bedroom house in Flix](https://realhunt.co/deal/es-flix-80k-33800) | Flix, Tarragona | €80,000 | 152 m² | €526/m² | 4 | 85 | 1 Oct 2026
-[1-bedroom flat with patio in Murcia](https://realhunt.co/deal/es-murcia-80k-47450) | Murcia | €80,000 | 45 m² | €1,778/m² | 1 | 84 | 1 Oct 2026
-[1-bedroom country house with fireplace in O Saviñao](https://realhunt.co/deal/es-o-savinao-80k-20772) | O Saviñao, Lugo | €80,000 | 50 m² | €1,600/m² | 1 | 76 | 1 Oct 2026
-[2-bedroom semi-detached house with fireplace in Polaciones](https://realhunt.co/deal/es-polaciones-80k-72000) | Polaciones, Cantabria | €80,000 | 86 m² | €930/m² | 2 | 85 | 1 Oct 2026
-[Three-bedroom flat with a full high-spec renovation in Utrera](https://realhunt.co/deal/es-utrera-renovated-80k-190050590) | El Tinte, Sevilla | €80,000 | 102 m² | €784/m² | 3 | 88 | 14 Oct 2026
-[1-bedroom apartment with sea views in Vícar](https://realhunt.co/deal/es-vicar-82k-27426) | Vícar, Almería | €82,900 | 47 m² | €1,764/m² | 1 | 84 | 1 Oct 2026
-[A white cave house perched above Galera](https://realhunt.co/deal/galera-hillside-cave-84000) | Galera, Granada | €84,000 | · | · | 2 | 84 | 2 Oct 2026
-[1-bedroom country house in Biar](https://realhunt.co/deal/es-biar-85k-66151) | Biar, Alicante | €85,000 | 63 m² | €1,349/m² | 1 | 78 | 1 Oct 2026
-[3-bedroom house with terrace in Castalla](https://realhunt.co/deal/es-castalla-85k-41639) | Castalla, Alicante | €85,000 | 90 m² | €944/m² | 3 | 88 | 1 Oct 2026
-[1-bedroom house with terrace in Gualchos](https://realhunt.co/deal/es-gualchos-85k-92930) | Gualchos, Granada | €85,000 | 93 m² | €914/m² | 1 | 89 | 1 Oct 2026
-[1-bedroom apartment in Murcia](https://realhunt.co/deal/es-murcia-85k-23435) | Murcia | €85,000 | 46 m² | €1,848/m² | 1 | 82 | 1 Oct 2026
-[3-bedroom flat with mountain views in Reinosa](https://realhunt.co/deal/es-reinosa-85k-84223) | Reinosa, Cantabria | €85,000 | 80 m² | €1,063/m² | 3 | 81 | 1 Oct 2026
-[2-bedroom flat with mountain views in Riba-roja d'Ebre](https://realhunt.co/deal/es-riba-roja-d-ebre-85k-99837) | Riba-roja d'Ebre, Tarragona | €85,000 | 91 m² | €934/m² | 2 | 83 | 1 Oct 2026
-[3-bedroom house with terrace in Bimenes](https://realhunt.co/deal/es-bimenes-86k-71966) | Bimenes, Asturias | €86,000 | 195 m² | €441/m² | 3 | 90 | 1 Oct 2026
-[2-bedroom flat with patio in Cartagena](https://realhunt.co/deal/es-cartagena-88k-38250) | Cartagena, Murcia | €88,000 | 60 m² | €1,467/m² | 2 | 85 | 1 Oct 2026
-[2-bedroom flat in Mazaricos](https://realhunt.co/deal/es-mazaricos-88k-64288) | Mazaricos, A Coruña | €88,000 | 109 m² | €807/m² | 2 | 87 | 1 Oct 2026
-[3-bedroom country house with terrace in Sorbas](https://realhunt.co/deal/es-sorbas-89k-70321) | Sorbas, Almería | €89,000 | 97 m² | €918/m² | 3 | 90 | 1 Oct 2026
-[Village house renovated in 2024 with a roof terrace and sierra views in Vélez-Blanco](https://realhunt.co/deal/es-velez-blanco-89k-797484) | Vélez-Blanco, Almería | €89,000 | 150 m² | €593/m² | 4 | 91 | 14 Nov 2026
-[Whitewashed cave home with a sunny courtyard near Lake Negratin](https://realhunt.co/deal/freila-cave-courtyard-89000) | Freila, Granada | €89,000 | 50 m² | €1,780/m² | 3 | 81 | 2 Oct 2026
-[3-bedroom house with terrace in Bicorp](https://realhunt.co/deal/es-bicorp-90k-04086) | Bicorp, Valencia | €90,000 | 173 m² | €520/m² | 3 | 87 | 1 Oct 2026
-[2-bedroom semi-detached house with terrace in L'Orxa / Lorcha](https://realhunt.co/deal/es-l-orxa-lorcha-90k-79857) | L'Orxa / Lorcha, Alicante | €90,000 | 177 m² | €508/m² | 2 | 91 | 1 Oct 2026
-[5-bedroom house with mountain views in Parres](https://realhunt.co/deal/es-parres-90k-15042) | Parres, Asturias | €90,000 | 355 m² | €254/m² | 5 | 90 | 1 Oct 2026
-[1-bedroom top-floor flat with pool in Albuñol](https://realhunt.co/deal/es-albunol-91k-41469) | Albuñol, Granada | €91,000 | 75 m² | €1,213/m² | 1 | 85 | 1 Oct 2026
-[4-bedroom house with terrace in Alozaina](https://realhunt.co/deal/es-alozaina-91k-40320) | Alozaina, Málaga | €91,000 | 175 m² | €520/m² | 4 | 92 | 1 Oct 2026
-[Fully renovated three-bedroom house with an 80 m² roof terrace in Alzira](https://realhunt.co/deal/es-alzira-renovated-91k-189401106) | Alquerieta, Valencia | €91,000 | 113 m² | €805/m² | 3 | 87 | 14 Oct 2026
 
 ### The 150 homes in numbers
 
@@ -141,6 +121,10 @@ Home | Place | Price | Size | Per m² | Beds | Score | Added
 - Extras named in the listings: 32 with a garden, 109 with a terrace, 29 with a garage, 33 with a pool, 35 with a fireplace.
 - Scores: 71 to 94 out of 98. The best rated: [Village house with a panoramic sea-and-mountain terrace in Rossell, Castellón](https://realhunt.co/deal/es-rossell-55k-187471380).
 - Newest, added 20 November 2026: [Two-bedroom corner duplex with mountain-view terrace in Alcalá de la Selva](https://realhunt.co/deal/es-teruel-alcala-de-la-selva-duplex-mountain-terrace-177k). 30 of these homes were added in the last 30 days.
+
+### What your money buys here
+
+Split into three groups of the same size by asking price: from €38,000 to €88,000, 50 homes with a median of 86 m², most often 2 bedrooms; from €88,000 to €145,000, 50 homes with a median of 82 m², most often 2 bedrooms; from €145,000 to €348,000, 50 homes with a median of 91 m², most often 2 bedrooms.
 
 ### Median price by region in Spain
 
@@ -183,7 +167,7 @@ At the same percentages: on €40,000, €3,000 to €5,600; on €80,000, €6,
 
 Yearly property tax: IBI 0.4-1.1% of cadastral value (municipal), plus imputed income tax on unlet homes.
 
-[Buying-cost calculator for a home in Spain](https://realhunt.co/buying-costs/spain) · [All costs and taxes](https://realhunt.co/costs/spain) · [How to buy, step by step](https://realhunt.co/guide/spain) · [Rules by nationality](https://realhunt.co/can-i-buy)
+[Buying-cost calculator for a home in Spain](https://realhunt.co/buying-costs/spain) · [All costs and taxes](https://realhunt.co/costs/spain) · [How to buy, step by step](https://realhunt.co/guide/spain) · [Rules by nationality](https://realhunt.co/can-i-buy) · [Spanish non-resident tax calculator](https://realhunt.co/tools/spain-non-resident-tax) · [Yearly running costs of a home](https://realhunt.co/tools/home-running-costs)
 
 General information, not tax or legal advice. Figures checked in 2026.
 
@@ -254,6 +238,8 @@ Near a city [Near Valencia 14](https://realhunt.co/cheap-houses/near-valencia) [
 Neighbouring countries [Portugal 8](https://realhunt.co/homes/portugal) [France 48](https://realhunt.co/homes/france)
 
 By country [Italy 87](https://realhunt.co/homes/italy) [United States 61](https://realhunt.co/homes/united-states) [France 48](https://realhunt.co/homes/france) [Denmark 46](https://realhunt.co/homes/denmark) [Sweden 41](https://realhunt.co/homes/sweden) [Japan 36](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 26](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Mexico 9](https://realhunt.co/homes/mexico) [Portugal 8](https://realhunt.co/homes/portugal) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Cyprus 6](https://realhunt.co/homes/cyprus) [United Kingdom 6](https://realhunt.co/homes/united-kingdom) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
+
+How we choose these homes: a person reads every listing and checks its price, size, photos and place before it goes up, and the nightly check takes it off when the advert goes. [How we check homes](https://realhunt.co/how-we-check-homes) 129 of these 150 homes were checked against the original listing in the last 30 days. 35 homes in Spain left RealHunt or were marked as no longer for sale in the last 30 days. [See the log of homes taken off the site](https://realhunt.co/research/removed-homes)
 
 These listings come from fotocasa.es (111), pisos.com (17), green-acres.es (10), thinkspain.com (6), idealista.com (4). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 

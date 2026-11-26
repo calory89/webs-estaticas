@@ -1,8 +1,14 @@
 ## Houses for sale in Japan
 
-Updated 26 November 2026. Newest home added 21 November 2026.
+List last changed 21 November 2026. Jump to the homes
 
-RealHunt lists 36 houses for sale in Japan today, priced from €7,400 to €159,600. The cheapest costs €7,400: [Mountain chalet with a wood stove and a loft in the Hida forest](https://realhunt.co/deal/jp-takayama-shokawa-chalet-7k-179056), in Shokawa (94 m², 2 bedrooms). The median price is €49,680 (€463/m²), against €93,000 (€1,200/m²) for the 654 homes on RealHunt in 30 countries.
+### Three picks from this list
+
+- [Best score€11,380Furnished log cabin on stilts with a deck in the Hida forestShokawa, Gifu53 m² · 1 bed · €215/m² · 24 days on RealHunt](https://realhunt.co/deal/jp-takayama-log-cabin-11k-225929)
+- [Cheapest€7,400Mountain chalet with a wood stove and a loft in the Hida forestShokawa, Gifu94 m² · 2 bed · €79/m² · 24 days on RealHunt](https://realhunt.co/deal/jp-takayama-shokawa-chalet-7k-179056)
+- [Most space for the money€15,930Ready-to-live forest villa with two balconies near Lake Misasa, NaganoMisasa, Nagano106 m² · 3 bed · €150/m² · 24 days on RealHunt](https://realhunt.co/deal/jp-saku-forest-villa-16k-837899)
+
+RealHunt lists 36 houses for sale in Japan today, priced from €7,400 to €159,600. The cheapest costs €7,400: [Mountain chalet with a wood stove and a loft in the Hida forest](https://realhunt.co/deal/jp-takayama-shokawa-chalet-7k-179056), in Shokawa (94 m², 2 bedrooms). The median price is €49,680 (€463/m²), against €93,200 (€1,206/m²) for the 726 homes on RealHunt in 24 countries.
 
 Homes
 36
@@ -32,6 +38,8 @@ Data of
 26 Nov 2026
 
 ### The 30 best of 36, by score
+
+Sorted by RealHunt score, best first. For the cheapest first, see the table below: tap a heading such as Price to sort it. [All homes by the sea](https://realhunt.co/homes/japan/by-the-sea) [See these homes on the map](https://realhunt.co/map?country=Japan)
 
 - [Score 91€11,380Furnished log cabin on stilts with a deck in the Hida forestShokawa, Gifu53 m² · 1 bed · €215/m² · 24 days on RealHuntA 1999 log cabin of 53 m² on a 332 m² freehold plot in a managed forest estate in Shokawa, Takayama.](https://realhunt.co/deal/jp-takayama-log-cabin-11k-225929)
 - [Score 91€7,400Mountain chalet with a wood stove and a loft in the Hida forestShokawa, Gifu94 m² · 2 bed · €79/m² · 24 days on RealHuntA 1992 two-storey chalet of 93 m² on a 558 m² freehold plot in a managed holiday-home estate in Shokawa, Takayama (Gifu).](https://realhunt.co/deal/jp-takayama-shokawa-chalet-7k-179056)
@@ -67,6 +75,8 @@ Data of
 Showing the 30 best-scored of 36 homes. The table and the narrower searches below cover the rest.
 
 ### Compare the 36 homes, cheapest first
+
+Median price per m² of this list: €463/m².
 
 Home | Place | Price | Size | Per m² | Beds | Score | Added
 [Mountain chalet with a wood stove and a loft in the Hida forest](https://realhunt.co/deal/jp-takayama-shokawa-chalet-7k-179056) | Shokawa, Gifu | €7,400 | 94 m² | €79/m² | 2 | 91 | 2 Nov 2026
@@ -118,6 +128,10 @@ Home | Place | Price | Size | Per m² | Beds | Score | Added
 - Scores: 75 to 91 out of 98. The best rated: [Furnished log cabin on stilts with a deck in the Hida forest](https://realhunt.co/deal/jp-takayama-log-cabin-11k-225929).
 - Newest, added 21 November 2026: [Four-bedroom 2016 house of 132 m² on a corner plot in Takashima, Otaru, Hokkaido](https://realhunt.co/deal/jp-otaru-takashima-2016-four-bed-house-corner-plot-117k). 18 of these homes were added in the last 30 days.
 
+### What your money buys here
+
+Split into three groups of the same size by asking price: from €7,400 to €27,300, 12 homes with a median of 69 m², most often 2 bedrooms; from €27,870 to €56,120, 12 homes with a median of 91 m², most often 1 bedroom; from €57,040 to €159,600, 12 homes with a median of 132 m², most often 4 or more bedrooms.
+
 ### Median price by region in Japan
 
 Region | Homes | Median price
@@ -152,7 +166,7 @@ At the same percentages: on €40,000, €2,400 to €3,600; on €80,000, €4,
 
 Yearly property tax: Fixed asset tax is 1.4% of the government's assessed value, plus city planning tax of up to 0.3% in urban areas, and small residential plots get a lower tax base.
 
-[Buying-cost calculator for a home in Japan](https://realhunt.co/buying-costs/japan) · [All costs and taxes](https://realhunt.co/costs/japan) · [How to buy, step by step](https://realhunt.co/guide/japan) · [Rules by nationality](https://realhunt.co/can-i-buy)
+[Buying-cost calculator for a home in Japan](https://realhunt.co/buying-costs/japan) · [All costs and taxes](https://realhunt.co/costs/japan) · [How to buy, step by step](https://realhunt.co/guide/japan) · [Rules by nationality](https://realhunt.co/can-i-buy) · [Yearly running costs of a home](https://realhunt.co/tools/home-running-costs)
 
 General information, not tax or legal advice. Figures checked in 2026.
 
@@ -208,6 +222,8 @@ By feature and budget [Houses under €100,000 27](https://realhunt.co/cheap-hou
 Near a city [Near Osaka 10](https://realhunt.co/cheap-houses/near-osaka)
 
 By country [Spain 150](https://realhunt.co/homes/spain) [Italy 87](https://realhunt.co/homes/italy) [United States 61](https://realhunt.co/homes/united-states) [France 48](https://realhunt.co/homes/france) [Denmark 46](https://realhunt.co/homes/denmark) [Sweden 41](https://realhunt.co/homes/sweden) [Poland 31](https://realhunt.co/homes/poland) [Greece 26](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Mexico 9](https://realhunt.co/homes/mexico) [Portugal 8](https://realhunt.co/homes/portugal) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Cyprus 6](https://realhunt.co/homes/cyprus) [United Kingdom 6](https://realhunt.co/homes/united-kingdom) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
+
+How we choose these homes: a person reads every listing and checks its price, size, photos and place before it goes up, and the nightly check takes it off when the advert goes. [How we check homes](https://realhunt.co/how-we-check-homes) 17 of these 36 homes were checked against the original listing in the last 30 days. 3 homes in Japan left RealHunt or were marked as no longer for sale in the last 30 days. [See the log of homes taken off the site](https://realhunt.co/research/removed-homes)
 
 These listings come from athome.co.jp (11), instagram.com (10), homes.co.jp (6), suumo.jp (4), ark-next.com (1). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 

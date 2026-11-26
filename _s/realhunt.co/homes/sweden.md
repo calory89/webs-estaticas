@@ -1,8 +1,14 @@
 ## Houses for sale in Sweden
 
-Updated 26 November 2026. Newest home added 21 November 2026.
+List last changed 21 November 2026. Jump to the homes
 
-RealHunt lists 41 houses for sale in Sweden today, priced from €22,000 to €187,400. The cheapest costs €22,000: [Charming wooden house in the forest near a lake](https://realhunt.co/deal/Dc6j54PF6hV), in Central Sweden. The median price is €73,000 (€800/m²), against €93,000 (€1,200/m²) for the 654 homes on RealHunt in 30 countries.
+### Three picks from this list
+
+- [Best score€78,000Extensively renovated 1945 house on 2,800 m² of garden and woodlandMarkaryd, Småland800 m² · 2 bed · €98/m² · 64 days on RealHunt](https://realhunt.co/deal/Dce2FjbIxt8)
+- [Cheapest€22,000Charming wooden house in the forest near a lakeCentral Sweden64 days on RealHunt](https://realhunt.co/deal/Dc6j54PF6hV)
+- [Most space for the money€99,0001926 character home with a full home spa, sauna and geothermal heatingBjurholm, Västerbotten680 m² · 5 bed · €146/m² · 64 days on RealHunt](https://realhunt.co/deal/DdAqg70oDDj)
+
+RealHunt lists 41 houses for sale in Sweden today, priced from €22,000 to €187,400. The cheapest costs €22,000: [Charming wooden house in the forest near a lake](https://realhunt.co/deal/Dc6j54PF6hV), in Central Sweden. The median price is €73,000 (€800/m²), against €93,200 (€1,206/m²) for the 726 homes on RealHunt in 24 countries.
 
 Homes
 41
@@ -32,6 +38,8 @@ Data of
 26 Nov 2026
 
 ### The 30 best of 41, by score
+
+Sorted by RealHunt score, best first. For the cheapest first, see the table below: tap a heading such as Price to sort it. [All homes by the sea](https://realhunt.co/homes/sweden/by-the-sea) [See these homes on the map](https://realhunt.co/map?country=Sweden)
 
 - [Score 93€78,000Extensively renovated 1945 house on 2,800 m² of garden and woodlandMarkaryd, Småland800 m² · 2 bed · €98/m² · 64 days on RealHuntSet along a small country road outside Markaryd, this 1945 house has been extensively updated in a clean, modern style while still offering 2,800…](https://realhunt.co/deal/Dce2FjbIxt8)
 - [Score 90€82,000Swedish villa with a glazed porch and big garden in GnarpGnarp, Gävleborg117 m² · 4 bed · €701/m² · 27 days on RealHuntA well-kept six-room villa with four bedrooms, a glazed porch, a living-room stove and a wood-burning kitchen range, on a 1,050 m² plot.](https://realhunt.co/deal/se-gnarp-villa-glazed-porch-82k)
@@ -67,6 +75,8 @@ Data of
 Showing the 30 best-scored of 41 homes. The table and the narrower searches below cover the rest.
 
 ### Compare the 41 homes, cheapest first
+
+Median price per m² of this list: €800/m².
 
 Home | Place | Price | Size | Per m² | Beds | Score | Added
 [Charming wooden house in the forest near a lake](https://realhunt.co/deal/Dc6j54PF6hV) | Central Sweden | €22,000 | · | · | · | 90 | 23 Sep 2026
@@ -123,6 +133,10 @@ Home | Place | Price | Size | Per m² | Beds | Score | Added
 - Scores: 76 to 93 out of 98. The best rated: [Extensively renovated 1945 house on 2,800 m² of garden and woodland](https://realhunt.co/deal/Dce2FjbIxt8).
 - Newest, added 21 November 2026: [Renovated red wooden house on a big countryside plot near Ingelstad, Småland](https://realhunt.co/deal/se-ingelstad-red-wooden-house-countryside-plot-187k). 6 of these homes were added in the last 30 days.
 
+### What your money buys here
+
+Split into three groups of the same size by asking price: from €22,000 to €64,000, 14 homes with a median of 120 m², most often 1 bedroom; from €64,000 to €81,000, 13 homes with a median of 100 m², most often 3 bedrooms; from €82,000 to €187,400, 14 homes with a median of 117 m², most often 3 bedrooms.
+
 ### Median price by region in Sweden
 
 Region | Homes | Median price
@@ -156,7 +170,7 @@ At the same percentages: on €40,000, €600 to €1,400; on €80,000, €1,20
 
 Yearly property tax: Houses pay a municipal property fee (kommunal fastighetsavgift) of SEK 10,425 in 2026, or 0.75% of the tax value if that is lower.
 
-[Buying-cost calculator for a home in Sweden](https://realhunt.co/buying-costs/sweden) · [All costs and taxes](https://realhunt.co/costs/sweden) · [How to buy, step by step](https://realhunt.co/guide/sweden) · [Rules by nationality](https://realhunt.co/can-i-buy)
+[Buying-cost calculator for a home in Sweden](https://realhunt.co/buying-costs/sweden) · [All costs and taxes](https://realhunt.co/costs/sweden) · [How to buy, step by step](https://realhunt.co/guide/sweden) · [Rules by nationality](https://realhunt.co/can-i-buy) · [Yearly running costs of a home](https://realhunt.co/tools/home-running-costs)
 
 General information, not tax or legal advice. Figures checked in 2026.
 
@@ -226,6 +240,8 @@ Near a city [Near Copenhagen 18](https://realhunt.co/cheap-houses/near-copenhage
 Neighbouring countries [Denmark 46](https://realhunt.co/homes/denmark)
 
 By country [Spain 150](https://realhunt.co/homes/spain) [Italy 87](https://realhunt.co/homes/italy) [United States 61](https://realhunt.co/homes/united-states) [France 48](https://realhunt.co/homes/france) [Denmark 46](https://realhunt.co/homes/denmark) [Japan 36](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 26](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Mexico 9](https://realhunt.co/homes/mexico) [Portugal 8](https://realhunt.co/homes/portugal) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Cyprus 6](https://realhunt.co/homes/cyprus) [United Kingdom 6](https://realhunt.co/homes/united-kingdom) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
+
+How we choose these homes: a person reads every listing and checks its price, size, photos and place before it goes up, and the nightly check takes it off when the advert goes. [How we check homes](https://realhunt.co/how-we-check-homes) 13 of these 41 homes were checked against the original listing in the last 30 days. 1 home in Sweden left RealHunt or was marked as no longer for sale in the last 30 days. [See the log of homes taken off the site](https://realhunt.co/research/removed-homes)
 
 These listings come from hemnet.se (20), instagram.com (8), svenskfast.se (5), finn.no (2), alembi.se (1). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 

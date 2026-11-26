@@ -1,8 +1,14 @@
 ## Viviendas en venta en Irlanda
 
-Actualizado el 26 de noviembre de 2026. Última vivienda añadida el 20 de noviembre de 2026.
+Lista cambiada por última vez el 20 de noviembre de 2026. Ir a las viviendas
 
-RealHunt tiene hoy 4 viviendas en venta en Irlanda, con precios de 170.000 € a 230.000 €. La más barata cuesta 170.000 €: [Casa de pueblo renovada con calificación energética A3 cerca del puerto de Killala, Mayo](https://realhunt.co/es/deal/ie-killala-renovated-village-house-a3-energy-170k), en Killala (95 m², 1 dormitorio). El precio mediano es de 230.000 € (2.255 €/m²), frente a 93.000 € (1.200 €/m²) de las 654 viviendas de RealHunt en 30 países.
+### Tres de esta lista
+
+- [Mejor notaNueva170.000 €Casa de pueblo renovada con calificación energética A3 cerca del puerto de Killala, MayoKillala, condado de Mayo95 m² · 1 dorm. · 1.789 €/m² · 6 días en RealHunt](https://realhunt.co/es/deal/ie-killala-renovated-village-house-a3-energy-170k)
+- [La más barataNueva220.000 €Piso de planta baja con dos dormitorios y baño en suite, a pie de playa de Tramore, WaterfordTramore, condado de Waterford76 m² · 2 dorm. · 2.895 €/m² · 6 días en RealHuntComunidad 85 euros al mes](https://realhunt.co/es/deal/ie-tramore-ground-floor-two-bed-flat-near-beach-220k)
+- [Más metros por el dineroNueva230.000 €Apartamento de tres dormitorios con vistas al puerto, terraza en la azotea y amarre de barco en Leitrim VillageLeitrim Village, condado de Leitrim121 m² · 3 dorm. · 1.901 €/m² · 6 días en RealHuntComunidad 169 euros al mes](https://realhunt.co/es/deal/ie-leitrim-village-marina-view-apartment-berth-230k)
+
+RealHunt tiene hoy 4 viviendas en venta en Irlanda, con precios de 170.000 € a 230.000 €. La más barata cuesta 170.000 €: [Casa de pueblo renovada con calificación energética A3 cerca del puerto de Killala, Mayo](https://realhunt.co/es/deal/ie-killala-renovated-village-house-a3-energy-170k), en Killala (95 m², 1 dormitorio). El precio mediano es de 230.000 € (2.255 €/m²), frente a 93.200 € (1.206 €/m²) de las 726 viviendas de RealHunt en 24 países.
 
 Viviendas
 4
@@ -30,12 +36,16 @@ Datos del
 
 ### Las 4 viviendas, de mejor a peor nota
 
+Ordenadas por la nota de RealHunt, de mejor a peor. Para verlas de más barata a más cara, mira la tabla de abajo: toca un encabezado como Precio para ordenarla. [Todas las viviendas junto al mar](https://realhunt.co/es/homes/ireland/by-the-sea) [Ver estas viviendas en el mapa](https://realhunt.co/es/map?country=Ireland)
+
 - [Nota 83Nueva170.000 €Casa de pueblo renovada con calificación energética A3 cerca del puerto de Killala, MayoKillala, condado de Mayo95 m² · 1 dorm. · 1.789 €/m² · 6 días en RealHuntUna casa de dos plantas recientemente renovada en Gore Street en el centro de Killala, a un corto paseo del puerto en Killala Bay.](https://realhunt.co/es/deal/ie-killala-renovated-village-house-a3-energy-170k)
 - [Nota 80Nueva230.000 €Casa adosada de dos dormitorios con vistas al mar en el Atlántico en Kilkieran, ConnemaraKilkieran, condado de Galway102 m² · 2 dorm. · 2.255 €/m² · 6 días en RealHuntUna casa adosada en un pequeño y ordenado desarrollo en un sitio elevado sobre el Atlántico cerca del pueblo de Kilkieran en Connemara, con…](https://realhunt.co/es/deal/ie-kilkieran-connemara-sea-view-two-bed-house-230k)
-- [Nota 80Nueva230.000 €Apartamento de tres dormitorios con vistas al puerto, terraza en la azotea y amarre de barco en Leitrim VillageLeitrim Village, condado de Leitrim121 m² · 3 dorm. · 1.901 €/m² · 6 días en RealHuntUn apartamento de tres dormitorios de 121 m² por 230.000 euros, vendido completamente amueblado, con un amarre privado en el puerto incluido.](https://realhunt.co/es/deal/ie-leitrim-village-marina-view-apartment-berth-230k)
-- [Nota 77Nueva220.000 €Piso de planta baja con dos dormitorios y baño en suite, a pie de playa de Tramore, WaterfordTramore, condado de Waterford76 m² · 2 dorm. · 2.895 €/m² · 6 días en RealHuntUn piso de planta baja en la promoción Pebble Beach en Tramore, a distancia de paseo de la playa y del paseo marítimo, situado entre césped con…](https://realhunt.co/es/deal/ie-tramore-ground-floor-two-bed-flat-near-beach-220k)
+- [Nota 80Nueva230.000 €Apartamento de tres dormitorios con vistas al puerto, terraza en la azotea y amarre de barco en Leitrim VillageLeitrim Village, condado de Leitrim121 m² · 3 dorm. · 1.901 €/m² · 6 días en RealHuntComunidad 169 euros al mesUn apartamento de tres dormitorios de 121 m² por 230.000 euros, vendido completamente amueblado, con un amarre privado en el puerto incluido.](https://realhunt.co/es/deal/ie-leitrim-village-marina-view-apartment-berth-230k)
+- [Nota 77Nueva220.000 €Piso de planta baja con dos dormitorios y baño en suite, a pie de playa de Tramore, WaterfordTramore, condado de Waterford76 m² · 2 dorm. · 2.895 €/m² · 6 días en RealHuntComunidad 85 euros al mesUn piso de planta baja en la promoción Pebble Beach en Tramore, a distancia de paseo de la playa y del paseo marítimo, situado entre césped con…](https://realhunt.co/es/deal/ie-tramore-ground-floor-two-bed-flat-near-beach-220k)
 
 ### Compara las 4 viviendas, de más barata a más cara
+
+Precio mediano por m² de esta lista: 2.255 €/m².
 
 Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 [Casa de pueblo renovada con calificación energética A3 cerca del puerto de Killala, Mayo](https://realhunt.co/es/deal/ie-killala-renovated-village-house-a3-energy-170k) | Killala, condado de Mayo | 170.000 € | 95 m² | 1.789 €/m² | 1 | 83 | 20 nov 2026
@@ -72,7 +82,7 @@ Con los mismos porcentajes: sobre 40.000 €, de 1.000 € a 1.400 €; sobre 80
 
 Impuesto anual sobre la propiedad: Impuesto local sobre la propiedad (Local Property Tax, LPT): desde 2026 una vivienda valorada en hasta 240.000 € paga una cuota básica de 95 € al año y una de 240.001 € a 315.000 € paga 235 €; cada ayuntamiento puede subir o bajar la cuota básica hasta un 15%, y la mayoría la subió un 15% para 2026.
 
-[Normas según tu nacionalidad](https://realhunt.co/es/can-i-buy)
+[Normas según tu nacionalidad](https://realhunt.co/es/can-i-buy) · [Gastos anuales de mantener una casa](https://realhunt.co/es/tools/home-running-costs)
 
 Información general, no asesoramiento fiscal ni legal. Datos revisados en 2026.
 
@@ -110,6 +120,8 @@ Por característica [Con terraza 3](https://realhunt.co/es/cheap-houses/with-a-t
 Países vecinos [Reino Unido 6](https://realhunt.co/es/homes/united-kingdom)
 
 Por país [España 150](https://realhunt.co/es/homes/spain) [Italia 87](https://realhunt.co/es/homes/italy) [Estados Unidos 61](https://realhunt.co/es/homes/united-states) [Francia 48](https://realhunt.co/es/homes/france) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Suecia 41](https://realhunt.co/es/homes/sweden) [Japón 36](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 26](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 16](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [México 9](https://realhunt.co/es/homes/mexico) [Portugal 8](https://realhunt.co/es/homes/portugal) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Chipre 6](https://realhunt.co/es/homes/cyprus) [Reino Unido 6](https://realhunt.co/es/homes/united-kingdom) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Uruguay 4](https://realhunt.co/es/homes/uruguay) [Colombia 3](https://realhunt.co/es/homes/colombia) [República Checa 3](https://realhunt.co/es/homes/czech-republic)
+
+Cómo elegimos estas viviendas: una persona lee cada anuncio y comprueba precio, tamaño, fotos y lugar antes de publicarlo, y la revisión de cada noche lo retira cuando el anuncio desaparece. [Cómo revisamos las casas](https://realhunt.co/es/how-we-check-homes) 4 de estas 4 viviendas se comprobaron con su anuncio original en los últimos 30 días.
 
 Estos anuncios proceden de myhome.ie (4). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 

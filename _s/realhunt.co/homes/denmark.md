@@ -1,8 +1,14 @@
 ## Houses for sale in Denmark
 
-Updated 26 November 2026. Newest home added 18 November 2026.
+List last changed 18 November 2026. Jump to the homes
 
-RealHunt lists 46 houses for sale in Denmark today, priced from €35,400 to €160,000. The cheapest costs €35,400: [Thatched cottage from 1800 in open countryside](https://realhunt.co/deal/Dc4LcqwjPZX), in Bønderby. The median price is €93,200 (€790/m²), against €93,000 (€1,200/m²) for the 654 homes on RealHunt in 30 countries.
+### Three picks from this list
+
+- [Best score€79,800198 m² family villa near the Limfjord for under €80kRanum, North Jutland198 m² · 5 bed · €403/m² · 52 days on RealHunt](https://realhunt.co/deal/dk-ranum-79k-6d9fbd)
+- [Cheapest€35,400Thatched cottage from 1800 in open countrysideBønderby, Sønderjylland64 days on RealHunt](https://realhunt.co/deal/Dc4LcqwjPZX)
+- [Most space for the money€79,800182 m² family villa between forest and water, 84 min from CopenhagenOrehoved, Falster182 m² · 5 bed · €438/m² · 46 days on RealHunt](https://realhunt.co/deal/dk-orehoved-80k-12ff7b)
+
+RealHunt lists 46 houses for sale in Denmark today, priced from €35,400 to €160,000. The cheapest costs €35,400: [Thatched cottage from 1800 in open countryside](https://realhunt.co/deal/Dc4LcqwjPZX), in Bønderby. The median price is €93,200 (€790/m²), against €93,200 (€1,206/m²) for the 726 homes on RealHunt in 24 countries.
 Can you buy here? Read this first
 Without Danish domicile or 5 years of past residence you need permission from the Department of Civil Affairs (Civilstyrelsen); EU/EEA citizens who live and are registered in Denmark can buy a permanent home without permission by signing a declaration to the Land Registration Court. Holiday homes (sommerhuse) need permission, which is only given to people with particularly strong ties to Denmark, such as many years of holidays there.
 
@@ -36,6 +42,8 @@ Data of
 26 Nov 2026
 
 ### The 30 best of 46, by score
+
+Sorted by RealHunt score, best first. For the cheapest first, see the table below: tap a heading such as Price to sort it. [All homes by the sea](https://realhunt.co/homes/denmark/by-the-sea) [See these homes on the map](https://realhunt.co/map?country=Denmark)
 
 - [Score 98€79,800198 m² family villa near the Limfjord for under €80kRanum, North Jutland198 m² · 5 bed · €403/m² · 52 days on RealHuntA well-kept 1973 villa with 198 m² and five bedrooms on a quiet street in Ranum, near the Limfjord and Vilsted Lake.](https://realhunt.co/deal/dk-ranum-79k-6d9fbd)
 - [Score 93€90,500Villa with fjord views and solar panels on 1,700 m² in HygumHygum, West Jutland157 m² · 3 bed · €576/m² · 52 days on RealHunt157 m² brick villa set back from the road on a 1,693 m² plot in peaceful Hygum, near Lemvig, with views towards the water.](https://realhunt.co/deal/dk-hygum-90k-715977)
@@ -71,6 +79,8 @@ Data of
 Showing the 30 best-scored of 46 homes. The table and the narrower searches below cover the rest.
 
 ### Compare the 46 homes, cheapest first
+
+Median price per m² of this list: €790/m².
 
 Home | Place | Price | Size | Per m² | Beds | Score | Added
 [Thatched cottage from 1800 in open countryside](https://realhunt.co/deal/Dc4LcqwjPZX) | Bønderby, Sønderjylland | €35,400 | · | · | · | 91 | 23 Sep 2026
@@ -132,6 +142,10 @@ Home | Place | Price | Size | Per m² | Beds | Score | Added
 - Scores: 82 to 98 out of 98. The best rated: [198 m² family villa near the Limfjord for under €80k](https://realhunt.co/deal/dk-ranum-79k-6d9fbd).
 - Newest, added 18 November 2026: [Move-in ready villa with modern kitchen, big terrace and open field views near Høng](https://realhunt.co/deal/dk-hoeng-saeby-move-in-ready-villa-1195k-dkk). 1 of these homes was added in the last 30 days.
 
+### What your money buys here
+
+Split into three groups of the same size by asking price: from €35,400 to €83,800, 15 homes with a median of 115 m², most often 2 bedrooms; from €86,300 to €93,200, 16 homes with a median of 113 m², most often 3 bedrooms; from €93,200 to €160,000, 15 homes with a median of 115 m², most often 3 bedrooms.
+
 ### Median price by region in Denmark
 
 Region | Homes | Median price
@@ -165,7 +179,7 @@ At the same percentages: on €40,000, €600 to €1,200; on €80,000, €1,20
 
 Yearly property tax: Owners pay property value tax (ejendomsværdiskat) of 0.51% on 80% of the official valuation (1.4% above DKK 9.2 million) plus municipal land tax (grundskyld) at a rate set by each municipality, capped at 30 per mille of the land value.
 
-[Buying-cost calculator for a home in Denmark](https://realhunt.co/buying-costs/denmark) · [All costs and taxes](https://realhunt.co/costs/denmark) · [How to buy, step by step](https://realhunt.co/guide/denmark) · [Rules by nationality](https://realhunt.co/can-i-buy)
+[Buying-cost calculator for a home in Denmark](https://realhunt.co/buying-costs/denmark) · [All costs and taxes](https://realhunt.co/costs/denmark) · [How to buy, step by step](https://realhunt.co/guide/denmark) · [Rules by nationality](https://realhunt.co/can-i-buy) · [Yearly running costs of a home](https://realhunt.co/tools/home-running-costs)
 
 General information, not tax or legal advice. Figures checked in 2026.
 
@@ -221,6 +235,8 @@ Near a city [Near Copenhagen 18](https://realhunt.co/cheap-houses/near-copenhage
 Neighbouring countries [Germany 21](https://realhunt.co/homes/germany) [Sweden 41](https://realhunt.co/homes/sweden)
 
 By country [Spain 150](https://realhunt.co/homes/spain) [Italy 87](https://realhunt.co/homes/italy) [United States 61](https://realhunt.co/homes/united-states) [France 48](https://realhunt.co/homes/france) [Sweden 41](https://realhunt.co/homes/sweden) [Japan 36](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 26](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Mexico 9](https://realhunt.co/homes/mexico) [Portugal 8](https://realhunt.co/homes/portugal) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Cyprus 6](https://realhunt.co/homes/cyprus) [United Kingdom 6](https://realhunt.co/homes/united-kingdom) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
+
+How we choose these homes: a person reads every listing and checks its price, size, photos and place before it goes up, and the nightly check takes it off when the advert goes. [How we check homes](https://realhunt.co/how-we-check-homes) 16 of these 46 homes were checked against the original listing in the last 30 days.
 
 These listings come from boligsiden.dk (43), boliga.dk (2), estate.dk (1). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 

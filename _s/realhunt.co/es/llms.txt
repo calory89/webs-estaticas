@@ -61,7 +61,7 @@ Hoy: 726 casas en 30 países. Actualizado el 2026-11-26. Índice en inglés, con
 - [Casas en venta en el Reino Unido](https://realhunt.co/es/homes/united-kingdom): 7 casas. Texto: https://realhunt.co/es/homes/united-kingdom.md
 - [Pisos en venta en Bulgaria](https://realhunt.co/es/homes/bulgaria): 7 casas. Texto: https://realhunt.co/es/homes/bulgaria.md
 - [Pisos en venta en Chipre](https://realhunt.co/es/homes/cyprus): 6 casas. Texto: https://realhunt.co/es/homes/cyprus.md
-- [Pisos en venta en República Dominicana](https://realhunt.co/es/homes/dominican-republic): 5 casas. Texto: https://realhunt.co/es/homes/dominican-republic.md
+- [Pisos en venta en la República Dominicana](https://realhunt.co/es/homes/dominican-republic): 5 casas. Texto: https://realhunt.co/es/homes/dominican-republic.md
 - [Viviendas en venta en Irlanda](https://realhunt.co/es/homes/ireland): 4 casas. Texto: https://realhunt.co/es/homes/ireland.md
 - [Casas en venta en Uruguay](https://realhunt.co/es/homes/uruguay): 4 casas. Texto: https://realhunt.co/es/homes/uruguay.md
 - [Casas en venta en Colombia](https://realhunt.co/es/homes/colombia): 3 casas. Texto: https://realhunt.co/es/homes/colombia.md
