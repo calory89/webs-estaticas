@@ -144,9 +144,10 @@ function listLd(body) {
   const seen = new Set(), it = []; for (const x of m) { if (seen.has(x[1])) continue; seen.add(x[1]); it.push({ '@type': 'ListItem', position: it.length + 1, name: unesc(x[2]).trim(), url: SITE + x[1] }); if (it.length >= 100) break; }
   return it.length >= 2 ? { '@type': 'ItemList', numberOfItems: it.length, itemListElement: it } : null;
 }
-const sg1 = s => String(s).replace(/(^|[^\d.,])1 (tracked |official )?(project|register|rule)s\b/g, '$1' + '1 $2$3').replace(/(\b1 (tracked )?project) (leave|are|have)\b/g, (m, a, b, v) => a + ' ' + { leave: 'leaves', are: 'is', have: 'has' }[v]);
+const sg1 = s => String(s).replace(/(^|[^\d.,])1 (tracked |official )?(project|register|rule)s\b/g, '$1' + '1 $2$3').replace(/(\b1 (tracked )?project) (leave|are|have|do not|make)\b/g, (m, a, b, v) => a + ' ' + { leave: 'leaves', are: 'is', have: 'has', 'do not': 'does not', make: 'makes' }[v]);
 function render(P) {
   const canon = SITE + P.path;
+  if (P.updated && /^\/countries\/[^/]+\/[a-z-]+\/$/.test(P.path)) P.body = '<p class="sx-src" id="byline">Researched by <a href="/team/">the Kolaboro team</a> · Checked on <time datetime="' + esc(P.updated) + '">' + longDate(P.updated) + '</time></p>' + P.body;   // n40 R01-15
   for (const k of ['title', 'desc', 'lead', 'body']) if (P[k]) P[k] = sg1(P[k]); if (P.ld) P.ld = JSON.parse(sg1(JSON.stringify(P.ld)));   // n40 R01-01
   if ((P.type || '') === 'CollectionPage' && !(P.pageLd && P.pageLd.mainEntity) && !(P.ld || []).some(x => x && x['@type'] === 'ItemList')) { const il = listLd(P.body); if (il) P.pageLd = Object.assign({}, P.pageLd || {}, { mainEntity: il }); }
   if (P.title && P.title.length > 60) P.title = P.title.replace(/ \| Kolaboro( engineering)?$/, '');   // n29t (item 46): titles of hubs and rankings fit in 60 characters where the brand suffix is what overflows
