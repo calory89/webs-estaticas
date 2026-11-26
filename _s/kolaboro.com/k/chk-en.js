@@ -8,7 +8,7 @@
   function ev(n, p){ if (window.kbEvent) kbEvent(n, p || {}); }
   function esc(s){ return String(s == null ? '' : s).replace(/[&<>"]/g, function(c){ return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]; }); }
   function knownEmail(){ var e = ($('az-email') && $('az-email').value.trim()) || ($('az-cpe') && $('az-cpe').value.trim()) || ''; if (!e) try { e = localStorage.getItem('kb-desk-email') || ''; } catch (x) {} return e; }
-  function norm(v){ v = v.trim(); if (!v) return ''; if (!/^https?:\/\//i.test(v)) v = 'https://' + v; try { var u = new URL(v); return /\./.test(u.hostname) ? u.toString() : ''; } catch (e) { return ''; } }
+  function norm(v){ v = v.trim(); if (!v) return ''; if (!/^https?:\/\//i.test(v)) v = 'https://' + v; try { var u = new URL(v); return /\.(?:[a-z]{2,63}|xn--[a-z0-9-]+)$/i.test(u.hostname) ? u.toString() : ''; } catch (e) { return ''; } }
   function step1(){ var raw = $('az-url').value, v = norm(raw); if (!v) { if (window.KBC7 && KBC7.only(raw)) { $('az-e1').textContent = ''; return; } $('az-e1').textContent = 'Type at least 3 characters: a website, a project name or a permit number.'; return; }
     url = v; if (window.KBC7) KBC7.start(raw, v); try { history.replaceState(null, '', '/check/?url=' + encodeURIComponent(v) + (/^#kxc-(buy|mon)$/.test(location.hash) ? location.hash : '#analyze')); } catch (x) {} try { localStorage.setItem('kb-desk-url', v); } catch(x){} $('az-e1').textContent = ''; $('az-host').textContent = new URL(url).hostname.replace(/^www\./, ''); ev('desk_url'); run(''); }
   $('az-f1').addEventListener('submit', step1);

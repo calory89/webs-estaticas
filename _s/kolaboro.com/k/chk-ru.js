@@ -8,7 +8,7 @@
   function ev(n, p){ if (window.kbEvent) kbEvent(n, p || {}); }
   function esc(s){ return String(s == null ? '' : s).replace(/[&<>"]/g, function(c){ return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]; }); }
   function knownEmail(){ var e = ($('az-email') && $('az-email').value.trim()) || ($('az-cpe') && $('az-cpe').value.trim()) || ''; if (!e) try { e = localStorage.getItem('kb-desk-email') || ''; } catch (x) {} return e; }
-  function norm(v){ v = v.trim(); if (!v) return ''; if (!/^https?:\/\//i.test(v)) v = 'https://' + v; try { var u = new URL(v); return /\./.test(u.hostname) ? u.toString() : ''; } catch (e) { return ''; } }
+  function norm(v){ v = v.trim(); if (!v) return ''; if (!/^https?:\/\//i.test(v)) v = 'https://' + v; try { var u = new URL(v); return /\.(?:[a-z]{2,63}|xn--[a-z0-9-]+)$/i.test(u.hostname) ? u.toString() : ''; } catch (e) { return ''; } }
   function step1(){ var raw = $('az-url').value.trim(), v = norm(raw), hs = /^#kxc-(buy|mon)$/.test(location.hash) ? location.hash : '#analyze';
     // a project name (not a website) is looked up by the X-ray (the worker adds it to every /check/ page), so it is not an error; the address bar keeps the query so a reload, the back button or a return from sign-up shows the same check
     if (!v) { if (raw.length >= 3 && !window.KBX_OFF) { $('az-e1').textContent = ''; try { history.replaceState(null, '', location.pathname + '?q=' + encodeURIComponent(raw) + hs); } catch (x) {} return; } $('az-e1').textContent = 'Paste the full website address of the project.'; return; }
