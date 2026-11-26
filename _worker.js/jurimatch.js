@@ -378,6 +378,12 @@ export async function render(req, res, u, env, ctx) {
   if (page.links && page.links.length) body += '<ul>' + page.links.map((l) => '<li><a href="' + esc(l.href) + '">' + esc(l.text) + '</a></li>').join('') + '</ul>';
   body += '<p><a href="/">JuriMatch</a> | <a href="' + (lang === 'es' ? '/es/abogados-a-exito' : '/lawyers') + '">' + chrome.lawyers + '</a> | <a href="/pricing">' + chrome.pricing + '</a> | <a href="/about">' + chrome.about + '</a></p></main>';
 
+  // T4 (27-nov): a few pages have the markup the app draws, prerendered at build time (scripts/prerender.mjs),
+  // so the largest element is painted with the first HTML. Falls back to the summary if the file is missing.
+  let pre = '';
+  if (page.pre && /^[a-z0-9_]+\.html$/.test(page.pre)) {
+    try { const pr = await env.ASSETS.fetch(new Request(new URL('/_s/jurimatch.com/_pre/' + page.pre, u))); if (pr.ok) { const x = await pr.text(); if (x.includes('<h1')) pre = x; } } catch (e) { pre = ''; }
+  }
   const headExtra = lds.map(ld).join('')
     + (page.alt || []).map((a) => '<link rel="alternate" hreflang="' + esc(a.hreflang) + '" href="' + esc(a.href) + '" />').join('')
     + (page.article && page.published ? '<meta property="article:published_time" content="' + esc(page.published) + '" />' : '')
@@ -435,7 +441,7 @@ export async function render(req, res, u, env, ctx) {
     .on('meta[name="twitter:image"]', set('content', image))
     .on('meta[name="twitter:image:alt"]', set('content', page.t))
     .on('head', { element(e) { e.append(headExtra, { html: true }); } })
-    .on('div#root', { element(e) { e.setInnerContent(body, { html: true }); } })
+    .on('div#root', { element(e) { e.setInnerContent(pre || body, { html: true }); } })
     .on('noscript', { element(e) { e.remove(); } })
     .transform(new Response(html, { status, headers: h }));
 }
