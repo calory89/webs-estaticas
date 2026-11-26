@@ -4194,5 +4194,14 @@
  "No motorway or railway nearby": "Sin autopista ni tren cerca",
  "Biggest price drop": "Mayor bajada de precio",
  "Distances are in a straight line. Homes where we do not know a value are left out by that filter.": "Las distancias son en línea recta. Las casas de las que no sabemos el dato quedan fuera de ese filtro.",
- "Open in Google Maps": "Abrir en Google Maps"
+ "Open in Google Maps": "Abrir en Google Maps",
+ "Photo {0} of {1}": "Foto {0} de {1}",
+ "{0}, photo {1} of {2}": "{0}, foto {1} de {2}",
+ "{0}, photo {1} unavailable": "{0}, foto {1} no disponible",
+ "{0} photos": "Fotos de {0}",
+ "Page {0} of {1}": "Página {0} de {1}",
+ "Home {0} of {1}": "Casa {0} de {1}",
+ "Score {0} out of 10": "Nota {0} sobre 10",
+ "RealHunt score {0} out of 100": "Nota RealHunt {0} sobre 100",
+ "{0} euros": "{0} euros"
 }
