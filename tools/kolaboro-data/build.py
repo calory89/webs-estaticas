@@ -488,6 +488,21 @@ def render_page(src, cat, con, spec):
     for kind in ['data', 'operations', 'tiles', 'sample', 'undescribed']:
         xs = [x for x in cat['datasets'] if x.get('kind') == kind and not x.get('missing')]
         if not xs: continue
+        if kind == 'undescribed':
+            # n40 k10 (R03-02): the 300+ files not yet described were 420 KB of cards; list them on demand from /data/catalog.json
+            ub = sum(x.get('bytes') or 0 for x in xs)
+            parts.append(f'''<h3 class="kd-h3" id="undescribed">{E(LABEL[kind])} <span>({len(xs)})</span></h3>
+<p class="kd-note">{len(xs)} more files ({E(fmt_bytes(ub))}) are published under /data/ without a hand-written description yet. Their size, SHA-256, rows and contract result are measured like the rest and are in <a href="/data/catalog.json">/data/catalog.json</a>; open the list to load them here.</p>
+<details class="kd-more" id="kdUndD"><summary>Show the {len(xs)} files</summary><div id="kdUnd" aria-live="polite"><noscript><p>The list needs JavaScript; the same data is in <a href="/data/catalog.json">/data/catalog.json</a>.</p></noscript></div></details>
+<script>(function(){{var d=document.getElementById('kdUndD'),box=document.getElementById('kdUnd'),done=0;function E(s){{return String(s==null?'':s).replace(/[&<>"]/g,function(c){{return{{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}}[c]}})}}
+function B(n){{if(n==null)return'';var u=['bytes','KB','MB','GB'],i=0;while(n>=1024&&i<3){{n/=1024;i++}}return i?n.toFixed(1)+' '+u[i]:n.toLocaleString('en')+' bytes'}}
+var C={{pass:'passes',fail:'fails',no_contract:'no contract',not_live:'not served yet'}},PG=50,all=[],pg=0;
+function draw(){{var n=Math.ceil(all.length/PG),r=all.slice(pg*PG,pg*PG+PG).map(function(x){{var p=x.url?x.url.replace('https://kolaboro.com/data/',''):x.title;return'<tr id="'+E(x.id)+'"><td><a href="'+E(x.url)+'"><code>'+E(p)+'</code></a></td><td>'+E(B(x.bytes))+'</td><td>'+(typeof x.rows==='number'?x.rows.toLocaleString('en')+' '+E(x.rows_unit||'rows'):'not a table')+'</td><td>'+E((x.freshness&&(x.freshness.stamp||x.freshness.published_at)||'').slice(0,10))+'</td><td>'+E(C[x.contract]||x.contract||'')+'</td></tr>'}}).join('');
+box.innerHTML='<div class="kd-tw"><table class="kd-t"><caption class="kd-meta">Files '+(pg*PG+1)+' to '+Math.min(all.length,pg*PG+PG)+' of '+all.length+'</caption><thead><tr><th>File</th><th>Size</th><th>Rows</th><th>Last updated</th><th>Contract</th></tr></thead><tbody>'+r+'</tbody></table></div>'+(n>1?'<p class="kd-pg"><button type="button" class="btn btn-line btn-sm" data-pg="-1"'+(pg?'':' disabled')+'>Previous</button> <span>Page '+(pg+1)+' of '+n+'</span> <button type="button" class="btn btn-line btn-sm" data-pg="1"'+(pg<n-1?'':' disabled')+'>Next</button></p>':'')}}
+box.addEventListener('click',function(e){{var b=e.target.closest&&e.target.closest('[data-pg]');if(!b)return;pg+=+b.getAttribute('data-pg');draw();box.scrollIntoView({{block:'nearest'}})}});
+function load(){{if(done)return;done=1;box.textContent='Loading...';fetch('/data/catalog.json').then(function(r){{return r.json()}}).then(function(j){{all=(j.datasets||[]).filter(function(x){{return x.kind==='undescribed'&&!x.missing}});var h=location.hash.slice(1),i=all.findIndex(function(x){{return x.id===h}});if(i>0)pg=Math.floor(i/PG);draw();var t=h&&document.getElementById(h);if(t)t.scrollIntoView()}}).catch(function(){{done=0;box.innerHTML='<p>Could not load the list. The same data is in <a href="/data/catalog.json">/data/catalog.json</a>.</p>'}})}}
+d.addEventListener('toggle',function(){{if(d.open)load()}});if(/^#undescribed/.test(location.hash)){{d.open=true;load()}}}})();</script>''')
+            continue
         parts.append(f'<h3 class="kd-h3">{E(LABEL[kind])} <span>({len(xs)})</span></h3><div class="kd-list">')
         for x in xs:
             fr = x['freshness']; st = fr['status']
@@ -518,10 +533,13 @@ def render_page(src, cat, con, spec):
 <p class="kd-meta">Validator: {E(con['validator'])}. OpenAPI description {'valid' if cs['spec_valid'] else 'INVALID'} ({E(cs['spec_validator'])}). Full results: <a href="/data/contracts.json">/data/contracts.json</a>.</p>
 <div class="kd-tw"><table class="kd-t"><thead><tr><th>File</th><th>Result</th><th>First errors</th></tr></thead><tbody>''')
     seen_c = set()   # a dataset with several files gets the anchor on its first row only (the id was repeated on every row)
+    und_c = [c for c in con['files'] if str(c.get('dataset', '')).startswith('undescribed-') and c['status'] != 'fail']
     for c in sorted(con['files'], key=lambda c: (c['status'] != 'fail', c['path'])):
+        if c in und_c: continue
         res = {'pass': '<span class="kd-ok-t">pass</span>', 'fail': '<b class="kd-late-t">fail</b>', 'no_contract': 'no contract', 'not_live': 'not served yet'}[c['status']]
         cid = '' if c['dataset'] in seen_c else f' id="c-{E(c["dataset"])}"'; seen_c.add(c['dataset'])
         parts.append(f'<tr{cid}><td><code>{E(c["path"])}</code></td><td>{res}</td><td>{"<br>".join(E(e) for e in c.get("errors") or []) or "&nbsp;"}</td></tr>')
+    if und_c: parts.append(f'<tr><td colspan="3">{len(und_c)} files not yet described ({sum(1 for c in und_c if c["status"] == "pass")} pass, {sum(1 for c in und_c if c["status"] == "no_contract")} without a contract): see <a href="#undescribed">Not yet described</a> and <a href="/data/contracts.json">/data/contracts.json</a>.</td></tr>')
     parts.append('</tbody></table></div><h3 class="kd-h3">API answers against the OpenAPI description</h3><div class="kd-tw"><table class="kd-t"><thead><tr><th>Operation</th><th>HTTP</th><th>Result</th><th>First errors</th></tr></thead><tbody>')
     for c in sorted(con['api'], key=lambda c: (c['status'] != 'fail', c['path'])):
         res = '<span class="kd-ok-t">pass</span>' if c['status'] == 'pass' else '<b class="kd-late-t">fail</b>'
@@ -532,11 +550,14 @@ def render_page(src, cat, con, spec):
 <p>{E(cat['rules']['freshness'])}</p>
 <p>Monitors can poll <a href="/api/x/data/freshness"><code>/api/x/data/freshness</code></a>: it re-reads each file's own timestamp from the first 64 KB of the live file at request time (cached 5 minutes), so a late file shows up within minutes, not at the next catalog run. It answers HTTP 200 with <code>"late": [...]</code>; add <code>?strict=1</code> to get HTTP 503 when any dataset is late.</p>
 <div class="kd-tw"><table class="kd-t" id="kdFresh"><thead><tr><th>Dataset</th><th>Target</th><th>Age</th><th>Status</th></tr></thead><tbody>''')
+    und_f = 0
     for x in cat['datasets']:
         if x.get('missing'): continue
         fr = x['freshness']
+        if x.get('kind') == 'undescribed' and fr['status'] != 'late': und_f += 1; continue
         st = {'ok': '<span class="kd-pill kd-ok">on time</span>', 'late': '<span class="kd-pill kd-late">late</span>', 'no_target': '<span class="kd-pill kd-na">no schedule</span>'}[fr['status']]
         parts.append(f'<tr data-id="{E(x["id"])}"><td><a href="#{E(x["id"])}">{E(x["title"])}</a></td><td>{E(human_hours(fr["target_hours"]) or "none")}</td><td class="kd-age">{E(ago(fr["age_hours"]))}</td><td class="kd-st">{st}</td></tr>')
+    if und_f: parts.append(f'<tr><td colspan="4">{und_f} files not yet described, none late: ages in <a href="#undescribed">Not yet described</a>.</td></tr>')
     parts.append('</tbody></table></div></div></section>')
     # machine readable + method
     parts.append(f'''<section class="sec" id="machine"><div class="wrap"><h2>Machine-readable</h2><ul class="kd-ml">
