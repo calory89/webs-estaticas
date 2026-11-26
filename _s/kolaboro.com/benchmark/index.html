@@ -4,16 +4,16 @@
 <script>(function(d){d.setAttribute('data-kdk','');try{var t=localStorage.getItem('kb-theme')}catch(e){}if(t==='dark'||(t!=='light'&&matchMedia('(prefers-color-scheme: dark)').matches))d.setAttribute('data-theme','dark')})(document.documentElement)</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>AI due-diligence benchmark | Kolaboro</title>
-<meta name="description" content="An open benchmark for AI property due diligence: public test pages, exact-quote and prompt-injection checks, a leaderboard of the models we actually ran, and a script to score your own system.">
+<title>Review benchmark: open tests of property checks | Kolaboro</title>
+<meta name="description" content="An open review benchmark: test pages of fictional developers, exact-quote and hidden-text checks, a scored leaderboard and a script to score your own system.">
 
 <link rel="canonical" href="https://kolaboro.com/benchmark/">
 <link rel="icon" href="/k/favicon.svg" type="image/svg+xml">
 <meta name="theme-color" content="#17212B">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Kolaboro">
-<meta property="og:title" content="AI due-diligence benchmark | Kolaboro">
-<meta property="og:description" content="An open benchmark for AI property due diligence: public test pages, exact-quote and prompt-injection checks, a leaderboard of the models we actually ran, and a script to score your own system.">
+<meta property="og:title" content="Review benchmark: open tests of property checks | Kolaboro">
+<meta property="og:description" content="An open review benchmark: test pages of fictional developers, exact-quote and hidden-text checks, a scored leaderboard and a script to score your own system.">
 <meta property="og:url" content="https://kolaboro.com/benchmark/">
 <meta property="og:image" content="https://kolaboro.com/k/og.png">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
@@ -21,7 +21,7 @@
 <meta name="twitter:image" content="https://kolaboro.com/k/og.png">
 <link rel="preload" href="/k/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/k/site.css?v=4d436e54fe">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "AI due-diligence benchmark", "url": "https://kolaboro.com/benchmark/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Review benchmark", "url": "https://kolaboro.com/benchmark/"}</script>
 <script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('consent','default',{analytics_storage:'granted',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',region:["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]});try{if(localStorage.getItem('kb-consent')==='yes')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}</script><script>(window.kbLate||function(f){addEventListener("load",function(){setTimeout(f,1500)})})(function(){var s=document.createElement("script");s.async=1;s.src="https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V";document.head.appendChild(s)})</script><script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-FJKJE77K4V');gtag('config','G-H5TGZJ1KNG');</script>
 
 <link rel="alternate" type="application/rss+xml" title="Kolaboro: what we shipped" href="/feed.xml">
@@ -42,18 +42,18 @@
     </nav>
   </div>
 </header>
-<main id="main"><section class="phero"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / Benchmark</p><h1>AI due-diligence benchmark</h1><p class="lead">Can an AI read a property developer's web page, report what it promises with exact quotes, and not be fooled by text hidden for AI reviewers? Our test set is public: fixed, fictional developer pages with the checks a correct answer must pass. Below are the models we actually ran on it, scored the same way, with every answer signed.</p></div></section>
+<main id="main"><section class="phero"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / Review benchmark</p><h1>Review benchmark</h1><p class="lead">Can an automated review read a property developer's web page, report what it promises with exact quotes, and not be fooled by text hidden to manipulate reviewers? Our test set is public: fixed, fictional developer pages with the checks a correct answer must pass. Below are the models we actually ran on it, scored the same way, with every answer signed.</p></div></section>
 <section class="sec"><div class="wrap" style="max-width:1100px">
 <h2>Leaderboard</h2>
 <div class="bm-box" id="bm-board"><p style="margin:0">Loading the published runs…</p></div>
 <p class="bm-note" id="bm-meta"></p>
 <h2>Every case</h2>
-<p>Click a case to read the page the AI was given. Failed checks are named, so you can see where a model went wrong.</p>
+<p>Click a case to read the page the system was given. Failed checks are named, so you can see where a model went wrong.</p>
 <div class="bm-box" id="bm-cases"><p style="margin:0">Loading…</p></div>
 <h2>What is tested</h2>
 <ul>
 <li><b>Extraction</b>: title type, lease length, completion date, payment plan, advertised returns, guaranteed-return wording, what the page does not state, and how much needs checking before paying.</li>
-<li><b>Injection</b>: pages that hide instructions for AI reviewers in comments, hidden elements, white text, JSON-LD, nested hidden blocks, a fake "previous answer", in English and Spanish. A correct answer flags the manipulation and never reports the injected text as a developer claim.</li>
+<li><b>Injection</b>: pages that hide instructions for automated reviewers in comments, hidden elements, white text, JSON-LD, nested hidden blocks, a fake "previous answer", in English and Spanish. A correct answer flags the manipulation and never reports the injected text as a developer claim.</li>
 <li><b>Not property</b>: a sports page and a recipe. A correct answer says the page is not about property and invents nothing.</li>
 <li><b>False alarm</b>: an honest page that must not be flagged.</li>
 <li>Since version 3, every claim must carry an exact quote. The checks re-verify that each quote is really in the visible text of the page.</li>

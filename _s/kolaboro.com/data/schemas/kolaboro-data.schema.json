@@ -12905,7 +12905,7 @@
            "number"
           ]
          },
-         "AI benchmark haiku": {
+         "Review benchmark haiku": {
           "type": [
            "null",
            "number"
@@ -12917,7 +12917,7 @@
            "number"
           ]
          },
-         "AI benchmark sonnet": {
+         "Review benchmark sonnet": {
           "type": [
            "null",
            "number"

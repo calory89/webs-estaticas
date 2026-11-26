@@ -1501,3 +1501,5 @@ main details>summary{min-height:44px!important}
 
 /* n40 R01-23 (r1c, 26 Nov): focus rings keep 3:1 contrast: light ring on the dark shipping bar, darker orange on light headers */
 .ship a:focus-visible{outline:3px solid #FF8A55;outline-offset:-3px}:root:not([data-theme=dark]) nav.links .lsw summary:focus-visible,:root:not([data-theme=dark]) nav.links .lsw a:focus-visible,:root:not([data-theme=dark]) .db-sb:focus-visible{outline-color:#C2410C}
+/* n40 k3: last focus rings under 3:1 (ask chips on the dark ask band, home place links and benchmark tables in dark theme, number source buttons on light pages) */
+.ask .ask-chip:focus-visible,.ask a:focus-visible{outline:3px solid #FF8A55;outline-offset:2px}:root[data-theme=dark] .h3p a:focus-visible,:root[data-theme=dark] .bm-scroll:focus-visible{outline:3px solid #5FB3D1;outline-offset:2px}:root:not([data-theme=dark]) main [data-prov]:focus-visible{outline-color:#C2410C}:root:not([data-theme=dark]) main .ask [data-prov]:focus-visible{outline-color:#FF8A55}
