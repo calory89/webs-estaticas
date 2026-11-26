@@ -118,6 +118,25 @@ const out = new Set(); const W = () => words(P.filter(p => !out.has(p[0])).map(p
 for (const k of en) { if (W() <= 60) break; out.add(k); }
 return P.filter(p => !out.has(p[0])).map(p => p[1]).join(' ');
 }
+// n40 k25: projects by stage and handover year on developer pages: stacked bars plus the same counts as a table (rows: { st, stL, y })
+const SY_C = { st_offplan: '#B07A12', st_construction: '#155C75', st_completed: '#2E7D4F', st_unknown: '#7A848C' };
+export function devStageYear(lang, rows, dev) {
+if (rows.length < 2) return '';
+const ND = '~', yrs = new Map(), sts = ['st_offplan', 'st_construction', 'st_completed', 'st_unknown'].filter(k => rows.some(r => r.st === k)), stL = {};
+for (const r of rows) { const y = r.y || ND; const o = yrs.get(y) || {}; o[r.st] = (o[r.st] || 0) + 1; yrs.set(y, o); stL[r.st] = r.stL; }
+const Y = [...yrs.keys()].sort((a, b) => a === ND ? 1 : b === ND ? -1 : a.localeCompare(b)), tot = y => sts.reduce((n, k) => n + (yrs.get(y)[k] || 0), 0), mx = Math.max(...Y.map(tot));
+const yl = y => y === ND ? t29(lang, 'sy_nd') : y, cap = s => String(s).charAt(0).toUpperCase() + String(s).slice(1);
+const W = 640, LW = 92, BW = 470, RH = 26, H = Y.length * RH + 34;
+let g = '';
+Y.forEach((y, i) => { let x = LW; const ty = 8 + i * RH; g += '<text x="' + (LW - 8) + '" y="' + (ty + 15) + '" text-anchor="end" font-size="13" fill="currentColor">' + esc(yl(y)) + '</text>';
+for (const k of sts) { const n = yrs.get(y)[k] || 0; if (!n) continue; const w = Math.max(2, Math.round(n / mx * BW)); g += '<rect x="' + x + '" y="' + ty + '" width="' + w + '" height="' + (RH - 8) + '" fill="' + SY_C[k] + '"><title>' + esc(yl(y) + ': ' + cap(stL[k]) + ' ' + nf(lang, n)) + '</title></rect>'; x += w; }
+g += '<text x="' + (x + 6) + '" y="' + (ty + 15) + '" font-size="13" fill="currentColor">' + esc(nf(lang, tot(y))) + '</text>'; });
+let lx = LW; const ly = Y.length * RH + 14; for (const k of sts) { const t = cap(stL[k]); g += '<rect x="' + lx + '" y="' + ly + '" width="12" height="12" fill="' + SY_C[k] + '"></rect><text x="' + (lx + 17) + '" y="' + (ly + 11) + '" font-size="12" fill="currentColor">' + esc(t) + '</text>'; lx += 30 + [...t].length * 7; }
+const svg = '<svg viewBox="0 0 ' + W + ' ' + H + '" width="100%" style="max-width:' + W + 'px;direction:ltr" direction="ltr" role="img" aria-label="' + esc(t29(lang, 'sy_al', { n: nf(lang, rows.length), dev })) + '">' + g + '</svg>';
+const th = '<tr><th scope="col">' + esc(t29(lang, 'sy_y')) + '</th>' + sts.map(k => '<th scope="col">' + esc(cap(stL[k])) + '</th>').join('') + '<th scope="col">' + esc(t29(lang, 'sy_t')) + '</th></tr>';
+const tb = Y.map(y => '<tr><th scope="row">' + esc(yl(y)) + '</th>' + sts.map(k => '<td>' + esc(nf(lang, yrs.get(y)[k] || 0)) + '</td>').join('') + '<td><b>' + esc(nf(lang, tot(y))) + '</b></td></tr>').join('') + '<tr><th scope="row">' + esc(t29(lang, 'sy_t')) + '</th>' + sts.map(k => '<td>' + esc(nf(lang, rows.filter(r => r.st === k).length)) + '</td>').join('') + '<td><b>' + esc(nf(lang, rows.length)) + '</b></td></tr>';
+return '<h3 id="by-year">' + esc(t29(lang, 'sy_h')) + '</h3><figure class="k25sy" style="margin:8px 0 12px;overflow-x:auto">' + svg + '</figure><div class="tw"><table><caption class="k-xs" style="text-align:start;caption-side:top">' + esc(t29(lang, 'sy_cap')) + '</caption><thead>' + th + '</thead><tbody>' + tb + '</tbody></table></div>';
+}
 export function devFilter(lang, rows) {
 if (rows.length < 6) return '';
 const grp = (k, kl) => { const m = new Map(); for (const r of rows) { const e = m.get(r[k]) || { l: r[kl], n: 0 }; e.n++; m.set(r[k], e); } return m; };
@@ -130,5 +149,5 @@ if (St.size > 1) for (const [k, e] of St) chips.push(b('s:' + k, e.l, e.n));
 return TB.kbx_p29__t.k1 + esc(t29(lang, 'fl_lbl')) + '">' + chips.join('') + '</div>';
 }
 export const DEV_CSS = '<style id="k29-css">.k29f{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px}.k29b{min-height:44px;padding:8px 14px;border:1px solid var(--line);border-radius:999px;background:var(--card,#fff);color:inherit;font:inherit;cursor:pointer}.k29b[aria-pressed=true]{border-color:var(--k-sea,#155C75);box-shadow:inset 0 0 0 1px var(--k-sea,#155C75)}.k29b small{color:var(--muted)}</style>';
-export const DEV_JS = "(function(){var g=document.querySelector('.k29f');if(!g)return;var R=document.querySelectorAll('#projects tbody tr');g.addEventListener('click',function(e){var b=e.target.closest('.k29b');if(!b)return;var f=b.getAttribute('data-f');g.querySelectorAll('.k29b').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});R.forEach(function(r){r.hidden=!!f&&r.getAttribute('data-f').split(' ').indexOf(f)<0})})})();";
+export const DEV_JS = "(function(){var g=document.querySelector('.k29f');if(!g)return;var R=document.querySelectorAll('#projects tbody tr[data-f]');g.addEventListener('click',function(e){var b=e.target.closest('.k29b');if(!b)return;var f=b.getAttribute('data-f');g.querySelectorAll('.k29b').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});R.forEach(function(r){r.hidden=!!f&&r.getAttribute('data-f').split(' ').indexOf(f)<0})})})();";
 export { regLi, lawFor, LAW, AE_L7 };
