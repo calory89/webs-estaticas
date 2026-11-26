@@ -1,3 +1,8 @@
+Title: Apartments for sale in Poland (31, from €53,693) · RealHunt
+URL: https://realhunt.co/homes/poland
+Updated: 2026-11-26
+Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+
 ## Apartments for sale in Poland
 
 List last changed 18 November 2026. Jump to the homes

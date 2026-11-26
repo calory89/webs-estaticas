@@ -1,3 +1,8 @@
+Título: Pisos en venta en Bulgaria (6, desde 58.900 €) · RealHunt
+URL: https://realhunt.co/es/homes/bulgaria
+Actualizado: 2026-11-26
+Licencia: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+
 ## Pisos en venta en Bulgaria
 
 Lista cambiada por última vez el 18 de noviembre de 2026. Ir a las viviendas

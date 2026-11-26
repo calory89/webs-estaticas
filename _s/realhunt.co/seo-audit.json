@@ -31,7 +31,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 666,
+   "median_words": 759,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -256,7 +256,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 725,
+   "median_words": 819,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -454,7 +454,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 767,
+   "median_words": 924,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -715,7 +715,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 725,
+   "median_words": 865,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -1474,9 +1474,9 @@
   },
   "depth": {
    "0": 2,
-   "1": 144,
-   "2": 3736,
-   "3": 412
+   "1": 156,
+   "2": 3733,
+   "3": 403
   },
   "noindex": {
    "app screen": 5,
@@ -1499,11 +1499,13 @@
    "pages": {
     "home": {
      "path": "/",
-     "html_kb": 9.2,
+     "html_kb": 9.6,
+     "html_raw_kb": 36.4,
+     "jsonld_kb": 5.3,
      "blocking_css_kb": 23.3,
-     "entry_js_kb": 79.5,
-     "route_js_kb": 410.2,
-     "requests_in_html": 14,
+     "entry_js_kb": 80.5,
+     "route_js_kb": 415,
+     "requests_in_html": 15,
      "high_priority_images": 2,
      "eager_images": 2,
      "lazy_images": 22,
@@ -1511,11 +1513,13 @@
     },
     "deal": {
      "path": "/deal/DZ-9LczExWp",
-     "html_kb": 13.5,
+     "html_kb": 13.7,
+     "html_raw_kb": 43.6,
+     "jsonld_kb": 4.5,
      "blocking_css_kb": 23.3,
-     "entry_js_kb": 79.5,
-     "route_js_kb": 410.2,
-     "requests_in_html": 13,
+     "entry_js_kb": 80.5,
+     "route_js_kb": 415,
+     "requests_in_html": 14,
      "high_priority_images": 1,
      "eager_images": 1,
      "lazy_images": 8,
@@ -1523,11 +1527,13 @@
     },
     "country": {
      "path": "/homes/spain",
-     "html_kb": 24,
+     "html_kb": 24.2,
+     "html_raw_kb": 116.9,
+     "jsonld_kb": 8.2,
      "blocking_css_kb": 23.3,
-     "entry_js_kb": 79.5,
-     "route_js_kb": 410.2,
-     "requests_in_html": 15,
+     "entry_js_kb": 80.5,
+     "route_js_kb": 415,
+     "requests_in_html": 16,
      "high_priority_images": 1,
      "eager_images": 3,
      "lazy_images": 30,
@@ -1535,11 +1541,13 @@
     },
     "band": {
      "path": "/homes/bulgaria/under-80000",
-     "html_kb": 13,
+     "html_kb": 13.2,
+     "html_raw_kb": 51.8,
+     "jsonld_kb": 4,
      "blocking_css_kb": 23.3,
-     "entry_js_kb": 79.5,
-     "route_js_kb": 410.2,
-     "requests_in_html": 15,
+     "entry_js_kb": 80.5,
+     "route_js_kb": 415,
+     "requests_in_html": 16,
      "high_priority_images": 1,
      "eager_images": 3,
      "lazy_images": 5,
@@ -1547,15 +1555,127 @@
     },
     "map": {
      "path": "/map",
-     "html_kb": 6.2,
+     "html_kb": 6.4,
+     "html_raw_kb": 18.7,
+     "jsonld_kb": 1.4,
      "blocking_css_kb": 23.3,
-     "entry_js_kb": 79.5,
-     "route_js_kb": 459.8,
-     "requests_in_html": 15,
+     "entry_js_kb": 80.5,
+     "route_js_kb": 464.6,
+     "requests_in_html": 16,
      "high_priority_images": 0,
      "eager_images": 0,
      "lazy_images": 0,
      "problems": []
+    }
+   },
+   "sizes": {
+    "other": {
+     "limit_kb": 100,
+     "pages": 1947,
+     "over": 2,
+     "biggest": [
+      {
+       "path": "/es/sitemap/homes",
+       "kb": 119.9
+      },
+      {
+       "path": "/sitemap/homes",
+       "kb": 110.2
+      },
+      {
+       "path": "/es/research/country-facts",
+       "kb": 95.9
+      },
+      {
+       "path": "/es/research/where-foreigners-can-buy",
+       "kb": 95.5
+      },
+      {
+       "path": "/research/where-foreigners-can-buy",
+       "kb": 92.6
+      }
+     ]
+    },
+    "listing": {
+     "limit_kb": 100,
+     "pages": 1699,
+     "over": 224,
+     "biggest": [
+      {
+       "path": "/es/homes/united-states",
+       "kb": 134.2
+      },
+      {
+       "path": "/es/homes/italy",
+       "kb": 133.7
+      },
+      {
+       "path": "/homes/united-states",
+       "kb": 127.5
+      },
+      {
+       "path": "/homes/italy",
+       "kb": 127.2
+      },
+      {
+       "path": "/es/homes/spain",
+       "kb": 122.8
+      }
+     ]
+    },
+    "languages": {
+     "limit_kb": 100,
+     "pages": 2858,
+     "over": 126,
+     "biggest": [
+      {
+       "path": "/ru/homes/united-states",
+       "kb": 123
+      },
+      {
+       "path": "/ru/homes/italy",
+       "kb": 117.7
+      },
+      {
+       "path": "/ru/homes/spain",
+       "kb": 115.5
+      },
+      {
+       "path": "/ru/homes/united-states/under-300000",
+       "kb": 115.1
+      },
+      {
+       "path": "/ru/homes/italy/under-150000",
+       "kb": 114
+      }
+     ]
+    },
+    "deal": {
+     "limit_kb": 120,
+     "pages": 1452,
+     "over": 0,
+     "biggest": [
+      {
+       "path": "/es/deal/us-aventura-2750-2404-259k",
+       "kb": 54.7
+      },
+      {
+       "path": "/es/deal/us-aventura-18041-1201-260k",
+       "kb": 54.5
+      },
+      {
+       "path": "/es/deal/us-aventura-18011-1904-350k",
+       "kb": 54.4
+      },
+      {
+       "path": "/es/deal/us-aventura-20301-523-299k",
+       "kb": 54.2
+      },
+      {
+       "path": "/es/deal/us-aventura-20335-2302-265k",
+       "kb": 54.2
+      }
+     ]
     }
    }
   },

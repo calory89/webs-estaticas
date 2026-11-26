@@ -1,3 +1,8 @@
+Título: Viviendas en venta en España (150, desde 38.000 €)
+URL: https://realhunt.co/es/homes/spain
+Actualizado: 2026-11-26
+Licencia: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+
 ## Viviendas en venta en España
 
 Lista cambiada por última vez el 20 de noviembre de 2026. Ir a las viviendas

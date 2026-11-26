@@ -1,3 +1,8 @@
+Title: Apartments for sale in the Netherlands (18, from €299,000)
+URL: https://realhunt.co/homes/netherlands
+Updated: 2026-11-26
+Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+
 ## Apartments for sale in the Netherlands
 
 List last changed 13 October 2026. Jump to the homes

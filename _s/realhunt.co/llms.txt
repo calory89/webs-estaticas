@@ -2,7 +2,7 @@
 
 > RealHunt lists cheap homes for sale around the world (mostly under €100,000), each checked by a person and graded from 70 to 98 against every other home on the site. It is not an estate agent: every home links to its original listing.
 
-Today: 726 homes in 24 countries. Updated 2026-11-26.
+Today: 726 homes in 24 countries (a country counts from 3 homes). Updated 2026-11-26 19:29 UTC.
 
 ## Key pages
 
@@ -19,6 +19,60 @@ Today: 726 homes in 24 countries. Updated 2026-11-26.
 - [Research and guides](https://realhunt.co/blog) and [RSS](https://realhunt.co/blog/rss.xml)
 - [Site map](https://realhunt.co/sitemap)
 - [Full reference text](https://realhunt.co/llms-full.txt): method, costs, guides and every home in one file.
+
+## The best pages for what you came for
+
+### To find homes
+
+- [Homes for sale by country: 726 homes in 24 countries](https://realhunt.co/homes)
+- [New homes on RealHunt, newest first](https://realhunt.co/new)
+- [The best homes on RealHunt, by country](https://realhunt.co/best)
+- [What €100,000 buys in 16 countries](https://realhunt.co/what-100k-buys)
+- [Homes for sale in Spain (150, from €38,000)](https://realhunt.co/homes/spain)
+- [Houses for sale in Italy (87, from €12,000)](https://realhunt.co/homes/italy)
+- [Houses for sale in the United States (61, from €65,428)](https://realhunt.co/homes/united-states)
+- [Houses for sale in France (48, from €39,000)](https://realhunt.co/homes/france)
+- [Houses for sale in Denmark (46, from €35,400)](https://realhunt.co/homes/denmark)
+- [Houses for sale in Sweden (41, from €22,000)](https://realhunt.co/homes/sweden)
+
+### For buying costs
+
+- [What it really costs to buy a cheap home abroad](https://realhunt.co/costs)
+- [Buying costs calculator: taxes and fees in 27 countries](https://realhunt.co/buying-costs)
+- [Free calculators for buying a home abroad](https://realhunt.co/tools)
+- [Buying costs by country 2026: taxes and fees ranked](https://realhunt.co/research/buying-costs-by-country)
+- [Buying a home in Spain: real costs, taxes and rental yield](https://realhunt.co/costs/spain)
+- [Buying a home in Italy: real costs, taxes and rental yield](https://realhunt.co/costs/italy)
+- [Buying a home in the United States: costs and taxes](https://realhunt.co/costs/united-states)
+- [Buying a home in France: real costs, taxes and rental yield](https://realhunt.co/costs/france)
+- [Buying a home in Denmark: real costs, taxes and rental yield](https://realhunt.co/costs/denmark)
+- [Buying a home in Sweden: real costs, taxes and rental yield](https://realhunt.co/costs/sweden)
+
+### For buying rules
+
+- [Can I buy property abroad? Rules by nationality](https://realhunt.co/can-i-buy)
+- [Guides to buying a home abroad as a foreigner](https://realhunt.co/guide)
+- [Buying a home abroad: questions and short answers](https://realhunt.co/guide/questions)
+- [Buying a home abroad: guides by subject](https://realhunt.co/guide/buying)
+- [Property glossary by country: local words explained](https://realhunt.co/guide/glossary)
+- [How to buy a home in Spain as a foreigner: steps and costs](https://realhunt.co/guide/spain)
+- [How to buy a home in Italy as a foreigner: steps and costs](https://realhunt.co/guide/italy)
+- [How to buy a home in the United States as a foreigner](https://realhunt.co/guide/united-states)
+- [How to buy a home in France as a foreigner: steps and costs](https://realhunt.co/guide/france)
+- [How to buy a home in Denmark as a foreigner: steps and costs](https://realhunt.co/guide/denmark)
+
+### For data
+
+- [RealHunt data: home prices, costs and rules by country](https://realhunt.co/research)
+- [Home prices by country 2026: median price and €/m²](https://realhunt.co/research/prices)
+- [RealHunt open data: JSON, CSV and Markdown files, CC BY 4.0](https://realhunt.co/research/open-data)
+- [Buying a cheap home abroad: key facts for 24 countries](https://realhunt.co/research/country-facts)
+- [What changed in RealHunt's data: homes added day by day](https://realhunt.co/research/data-changelog)
+- [Homes taken off the site, month by month](https://realhunt.co/research/removed-homes)
+- [What €50,000, €100,000 and €200,000 buy, by country](https://realhunt.co/research/what-your-budget-buys)
+- [The cheapest homes per square metre in Europe](https://realhunt.co/research/cheapest-per-sqm-europe)
+- [Best-scored regions for a cheap home (2026)](https://realhunt.co/research/best-scored-regions)
+- [Cheap homes and flood risk: a first check by country](https://realhunt.co/research/flood-indicator)
 
 ## Data to quote (CC BY 4.0, with a link)
 
@@ -77,6 +131,11 @@ Today: 726 homes in 24 countries. Updated 2026-11-26.
 - [Every home, one JSON object per line (JSON Lines)](https://realhunt.co/data/homes.jsonl): address, price, size, score and its one-line summary, state
 - One home as clean text: the address of its page followed by .md, for example https://realhunt.co/deal/<slug>.md
 - [Homes taken off the site and price changes, with dates (JSON)](https://realhunt.co/research/removed-homes.json) ([CSV](https://realhunt.co/research/removed-homes.csv))
+- [Every country in one file: homes, median, buying costs, rule for foreigners](https://realhunt.co/data/countries.json); [costs](https://realhunt.co/data/costs.json), [rules by nationality](https://realhunt.co/data/can-i-buy.json), [glossary](https://realhunt.co/data/glossary.json)
+- [Every home as CSV](https://realhunt.co/data/homes.csv); what each field means: https://realhunt.co/data/README.md
+- [Price drops (JSON Feed)](https://realhunt.co/feeds/price-drops.json) and [homes taken off the site (JSON Feed)](https://realhunt.co/feeds/removed.json)
+- [Pages added or changed in the last build](https://realhunt.co/data/changed-today.txt)
+- [Short answers to buying questions, one Markdown file each, with official sources](https://realhunt.co/answers/index.md)
 - Licence of text and figures: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); photos belong to the original listings
 
 ## How the homes are checked
@@ -96,6 +155,34 @@ Today: 726 homes in 24 countries. Updated 2026-11-26.
 - [Français](https://realhunt.co/fr/llms.txt)
 - [Nederlands](https://realhunt.co/nl/llms.txt)
 - [Polski](https://realhunt.co/pl/llms.txt)
+
+## One file per country
+
+Each file holds the country's listing page, its buying guide and costs, and every home: https://realhunt.co/llms/<country>.txt
+
+- [Spain](https://realhunt.co/llms/spain.txt): 191 homes
+- [Italy](https://realhunt.co/llms/italy.txt): 88 homes
+- [United States](https://realhunt.co/llms/united-states.txt): 62 homes
+- [France](https://realhunt.co/llms/france.txt): 52 homes
+- [Denmark](https://realhunt.co/llms/denmark.txt): 46 homes
+- [Sweden](https://realhunt.co/llms/sweden.txt): 41 homes
+- [Japan](https://realhunt.co/llms/japan.txt): 38 homes
+- [Poland](https://realhunt.co/llms/poland.txt): 31 homes
+- [Greece](https://realhunt.co/llms/greece.txt): 27 homes
+- [Germany](https://realhunt.co/llms/germany.txt): 21 homes
+- [Portugal](https://realhunt.co/llms/portugal.txt): 21 homes
+- [Netherlands](https://realhunt.co/llms/netherlands.txt): 18 homes
+- [Canada](https://realhunt.co/llms/canada.txt): 16 homes
+- [Mexico](https://realhunt.co/llms/mexico.txt): 14 homes
+- [Switzerland](https://realhunt.co/llms/switzerland.txt): 10 homes
+- [Bulgaria](https://realhunt.co/llms/bulgaria.txt): 7 homes
+- [United Kingdom](https://realhunt.co/llms/united-kingdom.txt): 7 homes
+- [Cyprus](https://realhunt.co/llms/cyprus.txt): 6 homes
+- [Dominican Republic](https://realhunt.co/llms/dominican-republic.txt): 5 homes
+- [Ireland](https://realhunt.co/llms/ireland.txt): 4 homes
+- [Uruguay](https://realhunt.co/llms/uruguay.txt): 4 homes
+- [Colombia](https://realhunt.co/llms/colombia.txt): 3 homes
+- [Czech Republic](https://realhunt.co/llms/czech-republic.txt): 3 homes
 
 ## Countries (figures of 2026-11-26)
 
@@ -122,4 +209,3 @@ Today: 726 homes in 24 countries. Updated 2026-11-26.
 - [Uruguay](https://realhunt.co/homes/uruguay): 4 homes from €150,300, median €180,300 (€1,649/m²); buying costs about 5 to 8% on top of the price (small sample). Text: https://realhunt.co/homes/uruguay.md. Data: https://realhunt.co/data/countries/uruguay.json, https://realhunt.co/data/countries/uruguay.md
 - [Colombia](https://realhunt.co/homes/colombia): 3 homes from €165,200, median €176,300 (€1,377/m²) (small sample). Text: https://realhunt.co/homes/colombia.md. Data: https://realhunt.co/data/countries/colombia.json, https://realhunt.co/data/countries/colombia.md
 - [Czech Republic](https://realhunt.co/homes/czech-republic): 3 homes from €130,900, median €159,600 (€1,464/m²) (small sample). Text: https://realhunt.co/homes/czech-republic.md. Data: https://realhunt.co/data/countries/czech-republic.json, https://realhunt.co/data/countries/czech-republic.md
-- [Slovenia](https://realhunt.co/homes/slovenia): 3 homes from €105,000, median €229,000 (€1,346/m²) (small sample). Data: https://realhunt.co/data/countries/slovenia.json, https://realhunt.co/data/countries/slovenia.md

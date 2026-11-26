@@ -1,3 +1,8 @@
+Título: Pisos en venta en los Países Bajos (18, desde 299.000 €)
+URL: https://realhunt.co/es/homes/netherlands
+Actualizado: 2026-11-26
+Licencia: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+
 ## Pisos en venta en los Países Bajos
 
 Lista cambiada por última vez el 13 de octubre de 2026. Ir a las viviendas

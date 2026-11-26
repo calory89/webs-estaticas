@@ -1,3 +1,8 @@
+Title: Apartments for sale in Mexico (9, from €50,575) · RealHunt
+URL: https://realhunt.co/homes/mexico
+Updated: 2026-11-26
+Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+
 ## Apartments for sale in Mexico
 
 List last changed 5 October 2026. Jump to the homes

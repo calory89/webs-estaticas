@@ -1,3 +1,8 @@
+Título: Casas en venta en Italia (87, desde 12.000 €) · RealHunt
+URL: https://realhunt.co/es/homes/italy
+Actualizado: 2026-11-26
+Licencia: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+
 ## Casas en venta en Italia
 
 Lista cambiada por última vez el 21 de noviembre de 2026. Ir a las viviendas

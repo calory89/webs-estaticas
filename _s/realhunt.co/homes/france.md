@@ -1,3 +1,8 @@
+Title: Houses for sale in France (48, from €39,000) · RealHunt
+URL: https://realhunt.co/homes/france
+Updated: 2026-11-26
+Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+
 ## Houses for sale in France
 
 List last changed 20 November 2026. Jump to the homes

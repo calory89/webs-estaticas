@@ -2,7 +2,7 @@
 
 > RealHunt publica casas baratas en venta en todo el mundo (la mayoría por menos de 100.000 €), revisadas una a una por una persona y calificadas de 70 a 98 frente a todas las demás casas de la web. No es una inmobiliaria: cada casa enlaza con su anuncio original.
 
-Hoy: 726 casas en 30 países. Actualizado el 2026-11-26. Índice en inglés, con todas las páginas: https://realhunt.co/llms.txt. Los textos y las cifras se pueden citar con un enlace a la página de origen (CC BY 4.0); las normas, los impuestos y los gastos son información general, no asesoramiento jurídico ni fiscal.
+Hoy: 726 casas en 24 países (un país cuenta a partir de 3 casas). Actualizado el 2026-11-26 19:29 UTC. Índice en inglés, con todas las páginas: https://realhunt.co/llms.txt. Los textos y las cifras se pueden citar con un enlace a la página de origen (CC BY 4.0); las normas, los impuestos y los gastos son información general, no asesoramiento jurídico ni fiscal.
 
 ## Páginas principales
 
@@ -31,6 +31,60 @@ Hoy: 726 casas en 30 países. Actualizado el 2026-11-26. Índice en inglés, con
 - [Correcciones y cambios, con su fecha](https://realhunt.co/es/corrections): cómo trabaja RealHunt
 - [Casas retiradas de la web, mes a mes](https://realhunt.co/es/research/removed-homes): cómo trabaja RealHunt
 
+## Las mejores páginas según lo que buscas
+
+### Para buscar casas
+
+- [Casas en venta por país: 726 viviendas en 24 países](https://realhunt.co/es/homes)
+- [Casas nuevas en RealHunt, primero las más recientes](https://realhunt.co/es/new)
+- [Las mejores casas de RealHunt, por país](https://realhunt.co/es/best)
+- [Qué se compra con 100.000 € en 16 países](https://realhunt.co/es/what-100k-buys)
+- [Viviendas en venta en España (150, desde 38.000 €)](https://realhunt.co/es/homes/spain)
+- [Casas en venta en Italia (87, desde 12.000 €)](https://realhunt.co/es/homes/italy)
+- [Casas en venta en Estados Unidos (61, desde 65.428 €)](https://realhunt.co/es/homes/united-states)
+- [Casas en venta en Francia (48, desde 39.000 €)](https://realhunt.co/es/homes/france)
+- [Casas en venta en Dinamarca (46, desde 35.400 €)](https://realhunt.co/es/homes/denmark)
+- [Casas en venta en Suecia (41, desde 22.000 €)](https://realhunt.co/es/homes/sweden)
+
+### Para los gastos de compra
+
+- [Lo que cuesta de verdad comprar una casa en el extranjero](https://realhunt.co/es/costs)
+- [Gastos de compra: calculadora de impuestos en 27 países](https://realhunt.co/es/buying-costs)
+- [Calculadoras gratis para comprar casa fuera](https://realhunt.co/es/tools)
+- [Gastos de compra por país en 2026: impuestos y gastos](https://realhunt.co/es/research/buying-costs-by-country)
+- [Comprar casa en España: costes, impuestos y rentabilidad](https://realhunt.co/es/costs/spain)
+- [Comprar casa en Italia: costes, impuestos y rentabilidad](https://realhunt.co/es/costs/italy)
+- [Comprar casa en Estados Unidos: costes e impuestos](https://realhunt.co/es/costs/united-states)
+- [Comprar casa en Francia: costes, impuestos y rentabilidad](https://realhunt.co/es/costs/france)
+- [Comprar casa en Dinamarca: costes, impuestos y rentabilidad](https://realhunt.co/es/costs/denmark)
+- [Comprar casa en Suecia: costes, impuestos y rentabilidad](https://realhunt.co/es/costs/sweden)
+
+### Para las normas
+
+- [¿Puedo comprar casa en el extranjero? Normas en 20 países](https://realhunt.co/es/can-i-buy)
+- [Guías para comprar una casa en el extranjero](https://realhunt.co/es/guide)
+- [Comprar casa fuera: preguntas y respuestas](https://realhunt.co/es/guide/questions)
+- [Comprar casa fuera: guías por temas](https://realhunt.co/es/guide/buying)
+- [Glosario inmobiliario por países](https://realhunt.co/es/guide/glossary)
+- [Cómo comprar casa en España siendo extranjero](https://realhunt.co/es/guide/spain)
+- [Cómo comprar casa en Italia siendo extranjero](https://realhunt.co/es/guide/italy)
+- [Cómo comprar casa en Estados Unidos siendo extranjero](https://realhunt.co/es/guide/united-states)
+- [Cómo comprar casa en Francia siendo extranjero](https://realhunt.co/es/guide/france)
+- [Cómo comprar casa en Dinamarca siendo extranjero](https://realhunt.co/es/guide/denmark)
+
+### Para los datos
+
+- [Datos de RealHunt: precios, gastos y normas por país](https://realhunt.co/es/research)
+- [Precio de la vivienda por país (2026): mediana y €/m²](https://realhunt.co/es/research/prices)
+- [Datos abiertos de RealHunt: archivos JSON, CSV y Markdown, CC BY 4.0](https://realhunt.co/es/research/open-data)
+- [Comprar una casa barata fuera: datos clave de 24 países](https://realhunt.co/es/research/country-facts)
+- [Novedades en los datos de RealHunt: casas añadidas día a día](https://realhunt.co/es/research/data-changelog)
+- [Casas retiradas de la web, mes a mes](https://realhunt.co/es/research/removed-homes)
+- [Qué se compra con 50.000, 100.000 y 200.000 € por país](https://realhunt.co/es/research/what-your-budget-buys)
+- [Las casas más baratas por metro cuadrado de Europa](https://realhunt.co/es/research/cheapest-per-sqm-europe)
+- [Regiones con mejor nota para una casa barata (2026)](https://realhunt.co/es/research/best-scored-regions)
+- [Casas baratas y riesgo de inundación, por país](https://realhunt.co/es/research/flood-indicator)
+
 ## Archivos para máquinas
 
 - [Descripción OpenAPI de todos los archivos](https://realhunt.co/openapi.json)
@@ -40,6 +94,8 @@ Hoy: 726 casas en 30 países. Actualizado el 2026-11-26. Índice en inglés, con
 - Estudios en español: https://realhunt.co/es/blog/rss.xml (RSS)
 - Método en Markdown: https://realhunt.co/es/method.md
 - Todas las casas, un objeto JSON por línea (con el título en español en title_es): https://realhunt.co/data/homes.jsonl
+- Todos los países en un archivo (casas, mediana, gastos de compra, norma para extranjeros): https://realhunt.co/data/countries.json
+- [Respuestas cortas a las preguntas de compra, un archivo Markdown cada una, con fuentes oficiales](https://realhunt.co/es/answers/index.md)
 
 ## Países
 

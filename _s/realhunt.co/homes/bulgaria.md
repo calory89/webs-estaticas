@@ -1,3 +1,8 @@
+Title: Apartments for sale in Bulgaria (6, from €58,900) · RealHunt
+URL: https://realhunt.co/homes/bulgaria
+Updated: 2026-11-26
+Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+
 ## Apartments for sale in Bulgaria
 
 List last changed 18 November 2026. Jump to the homes

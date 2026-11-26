@@ -1,3 +1,8 @@
+Title: Apartments for sale in Cyprus (6, from €130,000) · RealHunt
+URL: https://realhunt.co/homes/cyprus
+Updated: 2026-11-26
+Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+
 ## Apartments for sale in Cyprus
 
 List last changed 20 November 2026. Jump to the homes

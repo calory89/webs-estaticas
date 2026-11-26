@@ -1,3 +1,8 @@
+Title: Homes for sale in Spain (150, from €38,000) · RealHunt
+URL: https://realhunt.co/homes/spain
+Updated: 2026-11-26
+Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+
 ## Homes for sale in Spain
 
 List last changed 20 November 2026. Jump to the homes

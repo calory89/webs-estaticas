@@ -1,3 +1,8 @@
+Título: Casas en venta en Canadá (16, desde 55.842 €) · RealHunt
+URL: https://realhunt.co/es/homes/canada
+Actualizado: 2026-11-26
+Licencia: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+
 ## Casas en venta en Canadá
 
 Lista cambiada por última vez el 20 de noviembre de 2026. Ir a las viviendas

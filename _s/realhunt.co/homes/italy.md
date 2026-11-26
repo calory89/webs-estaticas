@@ -1,3 +1,8 @@
+Title: Houses for sale in Italy (87, from €12,000) · RealHunt
+URL: https://realhunt.co/homes/italy
+Updated: 2026-11-26
+Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+
 ## Houses for sale in Italy
 
 List last changed 21 November 2026. Jump to the homes

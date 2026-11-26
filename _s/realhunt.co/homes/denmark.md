@@ -1,3 +1,8 @@
+Title: Houses for sale in Denmark (46, from €35,400) · RealHunt
+URL: https://realhunt.co/homes/denmark
+Updated: 2026-11-26
+Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+
 ## Houses for sale in Denmark
 
 List last changed 18 November 2026. Jump to the homes

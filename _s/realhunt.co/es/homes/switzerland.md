@@ -1,3 +1,8 @@
+Título: Casas en venta en Suiza (10, desde 32.300 €) · RealHunt
+URL: https://realhunt.co/es/homes/switzerland
+Actualizado: 2026-11-26
+Licencia: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+
 ## Casas en venta en Suiza
 
 Lista cambiada por última vez el 4 de octubre de 2026. Ir a las viviendas

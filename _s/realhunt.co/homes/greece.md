@@ -1,3 +1,8 @@
+Title: Houses for sale in Greece (26, from €68,000) · RealHunt
+URL: https://realhunt.co/homes/greece
+Updated: 2026-11-26
+Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+
 ## Houses for sale in Greece
 
 List last changed 20 November 2026. Jump to the homes

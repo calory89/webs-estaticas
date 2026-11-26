@@ -1,3 +1,8 @@
+Título: Pisos en venta en Polonia (31, desde 53.693 €) · RealHunt
+URL: https://realhunt.co/es/homes/poland
+Actualizado: 2026-11-26
+Licencia: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+
 ## Pisos en venta en Polonia
 
 Lista cambiada por última vez el 18 de noviembre de 2026. Ir a las viviendas

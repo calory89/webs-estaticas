@@ -298,6 +298,198 @@
     }
    }
   },
+  "/data/homes.jsonl": {
+   "get": {
+    "operationId": "getHomesJsonl",
+    "summary": "Every home, one JSON object per line. The first line describes the file (_about, updated, license); every other line is a HomeLine",
+    "description": "Read it line by line and skip the first. Example: curl -s https://realhunt.co/data/homes.jsonl | tail -n +2 | jq -c 'select(.price_eur <= 30000)'",
+    "responses": {
+     "200": {
+      "description": "JSON Lines",
+      "content": {
+       "application/jsonl": {
+        "schema": {
+         "$ref": "#/components/schemas/HomeLine"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/data/homes.csv": {
+   "get": {
+    "operationId": "getHomesCsvAll",
+    "summary": "The same homes and fields as homes.jsonl, one row each (UTF-8 with BOM). Fields: https://realhunt.co/data/README.md",
+    "responses": {
+     "200": {
+      "description": "CSV",
+      "content": {
+       "text/csv": {}
+      }
+     }
+    }
+   }
+  },
+  "/data/countries.json": {
+   "get": {
+    "operationId": "getCountriesAll",
+    "summary": "Every country in one file: homes, median price, cheapest, buying costs and the rule for foreign buyers, with sources",
+    "responses": {
+     "200": {
+      "description": "JSON",
+      "content": {
+       "application/json": {}
+      }
+     }
+    }
+   }
+  },
+  "/data/costs.json": {
+   "get": {
+    "operationId": "getCosts",
+    "summary": "Buying costs, yearly taxes and the rule for foreigners by country, with sources (the data behind /costs)",
+    "responses": {
+     "200": {
+      "description": "JSON",
+      "content": {
+       "application/json": {}
+      }
+     }
+    }
+   }
+  },
+  "/data/can-i-buy.json": {
+   "get": {
+    "operationId": "getCanIBuy",
+    "summary": "Who can buy a home where, by nationality group (the data behind /can-i-buy)",
+    "responses": {
+     "200": {
+      "description": "JSON",
+      "content": {
+       "application/json": {}
+      }
+     }
+    }
+   }
+  },
+  "/data/glossary.json": {
+   "get": {
+    "operationId": "getGlossary",
+    "summary": "Words of a home purchase by country, as schema.org DefinedTermSet (JSON-LD)",
+    "responses": {
+     "200": {
+      "description": "JSON-LD",
+      "content": {
+       "application/ld+json": {}
+      }
+     }
+    }
+   }
+  },
+  "/data/changed-today.txt": {
+   "get": {
+    "operationId": "getChangedToday",
+    "summary": "Addresses of the pages added or changed in the last build, one per line",
+    "responses": {
+     "200": {
+      "description": "Text",
+      "content": {
+       "text/plain": {}
+      }
+     }
+    }
+   }
+  },
+  "/feeds/price-drops.json": {
+   "get": {
+    "operationId": "getPriceDrops",
+    "summary": "Price drops, newest first (JSON Feed 1.1). Also /feeds/removed.json for homes taken off the site",
+    "responses": {
+     "200": {
+      "description": "JSON Feed",
+      "content": {
+       "application/feed+json": {}
+      }
+     }
+    }
+   }
+  },
+  "/llms/{country}.txt": {
+   "get": {
+    "operationId": "getCountryForAssistants",
+    "summary": "One country for AI assistants: its listing page, buying guide, costs and every home, as text",
+    "parameters": [
+     {
+      "name": "country",
+      "in": "path",
+      "required": true,
+      "description": "Country key: lower case, words joined with a hyphen.",
+      "schema": {
+       "type": "string",
+       "enum": [
+        "spain",
+        "italy",
+        "united-states",
+        "france",
+        "denmark",
+        "sweden",
+        "japan",
+        "poland",
+        "greece",
+        "germany",
+        "portugal",
+        "netherlands",
+        "canada",
+        "mexico",
+        "switzerland",
+        "bulgaria",
+        "united-kingdom",
+        "cyprus",
+        "dominican-republic",
+        "ireland",
+        "uruguay",
+        "colombia",
+        "czech-republic",
+        "slovenia"
+       ]
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Text",
+      "content": {
+       "text/plain": {}
+      }
+     }
+    }
+   }
+  },
+  "/answers/{slug}.md": {
+   "get": {
+    "operationId": "getAnswer",
+    "summary": "The short answer to one buying question, with its official sources. Index: /answers/index.md; Spanish: /es/answers/{slug}.md",
+    "parameters": [
+     {
+      "name": "slug",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Markdown",
+      "content": {
+       "text/markdown": {}
+      }
+     }
+    }
+   }
+  },
   "/llms.txt": {
    "get": {
     "operationId": "getIndexForAssistants",
@@ -565,6 +757,183 @@
        "string",
        "null"
       ]
+     }
+    }
+   },
+   "HomeLine": {
+    "type": "object",
+    "required": [
+     "url",
+     "slug",
+     "price_eur",
+     "state"
+    ],
+    "properties": {
+     "url": {
+      "type": "string",
+      "format": "uri"
+     },
+     "slug": {
+      "type": "string"
+     },
+     "title": {
+      "type": "string"
+     },
+     "title_es": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "country": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "region": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "place": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "lat": {
+      "type": [
+       "number",
+       "null"
+      ],
+      "description": "Rounded to 3 decimals (about 100 m)."
+     },
+     "lng": {
+      "type": [
+       "number",
+       "null"
+      ],
+      "description": "Rounded to 3 decimals (about 100 m)."
+     },
+     "price_eur": {
+      "type": "number"
+     },
+     "size_sqm": {
+      "type": [
+       "number",
+       "null"
+      ]
+     },
+     "eur_per_sqm": {
+      "type": [
+       "number",
+       "null"
+      ]
+     },
+     "bedrooms": {
+      "type": [
+       "number",
+       "null"
+      ]
+     },
+     "score": {
+      "type": [
+       "number",
+       "null"
+      ]
+     },
+     "score_summary": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "added": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "format": "date"
+     },
+     "state": {
+      "type": "string",
+      "enum": [
+       "listed",
+       "unconfirmed",
+       "advert_offline"
+      ]
+     },
+     "listed_on": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "monthly_fee": {
+      "type": [
+       "number",
+       "null"
+      ],
+      "description": "Community fee (HOA) per month as the listing states it, in costs_currency."
+     },
+     "yearly_tax": {
+      "type": [
+       "number",
+       "null"
+      ],
+      "description": "Property tax per year as the listing states it, in costs_currency."
+     },
+     "costs_currency": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "fee_unknown": {
+      "type": "boolean",
+      "description": "A flat whose listing does not state its community fee."
+     },
+     "flood_indicator": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "enum": [
+       "low",
+       "medium",
+       "high",
+       null
+      ],
+      "description": "Rough indicator from height and distance to the sea and rivers, not an official flood map."
+     },
+     "noise_indicator": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "enum": [
+       "low",
+       "medium",
+       "high",
+       null
+      ],
+      "description": "From the distance to motorways and railways (OpenStreetMap)."
+     },
+     "airport_km": {
+      "type": [
+       "number",
+       "null"
+      ]
+     },
+     "last_confirmed": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "format": "date",
+      "description": "Last day our nightly check read the advert as still for sale (src_ok_at)."
      }
     }
    }

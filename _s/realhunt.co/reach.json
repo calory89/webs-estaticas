@@ -4,6 +4,20 @@
  "pages_given_a_date": 6853,
  "video_pages": 0,
  "listing_markdown": 46,
+ "answers": {
+  "en": 26,
+  "es": 26
+ },
+ "llms_by_country": 23,
+ "open_data": [
+  "data/countries.json",
+  "data/glossary.json",
+  "data/can-i-buy.json",
+  "data/costs.json",
+  "data/homes.csv",
+  "humans.txt",
+  ".well-known/security.txt"
+ ],
  "llms": {
   "en": true,
   "es": 24
@@ -16,12 +30,108 @@
  "indexnow": {
   "compared": true,
   "added": 0,
-  "changed": 0,
+  "changed": 4,
   "removed": 0
  },
- "releases": 30,
+ "changed_today": 4,
+ "press_pdf": [
+  "press/realhunt-in-figures.pdf",
+  "press/realhunt-in-figures-2026-11.pdf"
+ ],
+ "data_readme": 20,
+ "llms_check": {
+  "urls": 256,
+  "pages": 93,
+  "files": 158,
+  "missing": [],
+  "families": {
+   "front": 1,
+   "trust": 6,
+   "listing": 4,
+   "research": 20,
+   "costs": 7,
+   "guide": 6,
+   "can-i-buy": 1,
+   "tools": 14,
+   "compare": 1,
+   "new-builds": 1,
+   "blog": 1,
+   "country": 23,
+   "knowledge": 3,
+   "app": 5
+  },
+  "families_absent": [
+   "home",
+   "sources"
+  ]
+ },
+ "llms_check_es": {
+  "urls": 103,
+  "pages": 70,
+  "files": 32,
+  "missing": [],
+  "families": {
+   "front": 1,
+   "trust": 4,
+   "listing": 4,
+   "research": 12,
+   "costs": 7,
+   "guide": 6,
+   "can-i-buy": 1,
+   "tools": 2,
+   "compare": 1,
+   "blog": 1,
+   "app": 5,
+   "country": 23,
+   "knowledge": 3
+  },
+  "families_absent": [
+   "home",
+   "new-builds",
+   "sources"
+  ]
+ },
+ "llms_full": {
+  "bytes": 1799945,
+  "gz": 344608,
+  "over": false
+ },
+ "wrong_language_lines": {
+  "en": 0,
+  "es": 0,
+  "sample": []
+ },
+ "releases": 31,
+ "data_files": {
+  "data/homes.jsonl": 558882,
+  "data/homes.csv": 190047,
+  "data/countries.json": 31577,
+  "data/countries/index.json": 9665,
+  "data/costs.json": 44381,
+  "data/can-i-buy.json": 13222,
+  "data/glossary.json": 37489,
+  "data/realhunt-homes.geojson": 210596,
+  "data/realhunt-best-homes.kml": 60517,
+  "data/changed-today.txt": 101,
+  "research/homes.csv": 76169,
+  "research/removed-homes.json": 40527,
+  "research/removed-by-month.json": 447,
+  "research/monthly-series.json": 863,
+  "research/property-portals.csv": 11579,
+  "feeds/price-drops.json": 4124,
+  "feeds/removed.json": 44109,
+  "press/realhunt-in-figures.pdf": 3975,
+  "llms.txt": 22427,
+  "llms-full.txt": 1799945
+ },
  "files": [
   "openapi.json",
+  "data/countries.json",
+  "data/homes.csv",
+  "data/README.md",
+  "feeds/price-drops.json",
+  "humans.txt",
+  ".well-known/security.txt",
   "data/countries/index.json",
   "feed.atom",
   "feed.json",

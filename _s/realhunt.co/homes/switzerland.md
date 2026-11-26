@@ -1,3 +1,8 @@
+Title: Houses for sale in Switzerland (10, from €32,300) · RealHunt
+URL: https://realhunt.co/homes/switzerland
+Updated: 2026-11-26
+Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+
 ## Houses for sale in Switzerland
 
 List last changed 4 October 2026. Jump to the homes
