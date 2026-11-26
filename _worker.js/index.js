@@ -252,7 +252,7 @@ const KB_U1 = { en: { months: 'month', days: 'day', weeks: 'week', years: 'year'
   de: { Monaten: 'Monat', Monate: 'Monat', Tagen: 'Tag', Tage: 'Tag', Wochen: 'Woche', Jahren: 'Jahr', Jahre: 'Jahr' }, nl: { maanden: 'maand', dagen: 'dag', weken: 'week', jaren: 'jaar' } };
 const KB_U1_RE = {}; for (const [l, m] of Object.entries(KB_U1)) KB_U1_RE[l] = new RegExp('(^|[\\s(>:;\u00a0])1([ \u00a0])(' + Object.keys(m).join('|') + ')(?![\\p{L}])', 'gu');
 function kbOne(html, m) { const re = KB_U1_RE[Object.keys(KB_U1).find(l => KB_U1[l] === m)]; return html.replace(re, (x, a, g, n) => a + '1' + g + m[n]); }
-const KB_SITE_CSS_V = '0e01ffc296', KB_PROV_V = '369ff51a4c';   // n21e: bump when /k/site.css or /k/prov.js change (sha1 of the file, 10 chars); pages keep their old ?v= in the HTML
+const KB_SITE_CSS_V = '0e01ffc296', KB_PROV_V = '402fe471c6';   // n21e: bump when /k/site.css or /k/prov.js change (sha1 of the file, 10 chars); pages keep their old ?v= in the HTML
 const KB_SITEP_V = '35d78d1c6e', KB_SITEP_FROM = '0e01ffc296', KB_SITEP_RX = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:projects|developers)\/(?!compare\/)(?![a-z0-9-]*-vs-)[a-z0-9-]+\/$/;   // n40 d8: /k/site-p.css on project and developer pages (see its first lines)
 let KB_CSP_SCRIPTS = true;   // n21e: strict script policy enforced site-wide; false = report-only again (as before 11 Nov 2026)
 const KB_GA = 'G-FJKJE77K4V';
@@ -450,7 +450,7 @@ async function h29Inject(req, u, env, r) {
 // clean URL (before, any query string skipped them and rebuilt the page); functional queries (?q=, ?p=, ?m= ...) still render fresh
 const KB_TRACKQ = /^(utm_[a-z_]+|gclid|gbraid|wbraid|fbclid|msclkid|mc_[a-z]+|igshid|ref|_ga)$/i;
 const kbClean = u => !u.search || [...u.searchParams.keys()].every(k => KB_TRACKQ.test(k));
-const KB_EDGE = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:m\/[^/.]{2,60}|engineering\/status|yc|new)\/$/, KB_EDGE_BUSY = (() => { const M = new Map(); return { has: k => M.has(k) && Date.now() - M.get(k) < 60000, add: k => M.set(k, Date.now()), delete: k => M.delete(k) }; })()   /* n40 k14: a rebuild cut off by the platform no longer blocks every later one in the isolate (the sitemaps stayed hours old) */;
+const KB_EDGE = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:m\/[^/.]{2,60}|engineering\/status|yc|new|areas(?:\/[a-z0-9-]{2,60}\/[a-z0-9-]{2,80})?)\/$/, KB_EDGE_BUSY = (() => { const M = new Map(); return { has: k => M.has(k) && Date.now() - M.get(k) < 60000, add: k => M.set(k, Date.now()), delete: k => M.delete(k) }; })()   /* n40 k14: a rebuild cut off by the platform no longer blocks every later one in the isolate (the sitemaps stayed hours old) */;
 async function kbEdge(req, u, env, ctx, make) {
   if (req.method !== 'GET' || !kbClean(u) || typeof caches === 'undefined' || !KB_EDGE.test(u.pathname)) return make();
   const ck = new Request('https://kolaboro.com/__edge/v1' + u.pathname), sha = String((env && env.CF_PAGES_COMMIT_SHA) || '');
@@ -869,8 +869,8 @@ export default {
     if (host === 'kolaboro.com' && (req.method === 'GET' || req.method === 'HEAD') && KFA.test(u.pathname)) {
       if (!kfa) kfa = await import('./kbx_facets.js');
       const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
-      const r = await h29Inject(req, u, env, await kfa.page(req, u, env, ctx, shell));
-      if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r;
+      const r = await kbEdge(req, u, env, ctx, async () => { const r0 = await h29Inject(req, u, env, await kfa.page(req, u, env, ctx, shell)); return r0 && /text\/html/.test(r0.headers.get('content-type') || '') ? kbHeaders(r0, u) : r0; });   // n40 k33: area pages from the edge copy (worker time was 0.5 to 1.7 s, LCP 3.3 s)
+      if (r) return r;
     }
     // kolaboro.com (n29i, batch 29): /<lang>/m/<market>/ (5+ named projects), /m/sitemap.xml, /answers/questions.md|json (see kbx_n29i.js)
     if (host === 'kolaboro.com' && (req.method === 'GET' || req.method === 'HEAD') && K29I.test(u.pathname)) {

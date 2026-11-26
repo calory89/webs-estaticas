@@ -9,7 +9,11 @@
  *   3. scripts appended by the worker with src under /__k/ removed (only on /admin and one campaign landing);
  *   4. only if the hash does not match yet: the Google Analytics snippet right before </head> and the Microsoft Clarity
  *      snippet right before </body> are removed, because the deploy adds them to the few pages whose source has none.
- *  What it proves: the bytes you received match what we published. It does not prove our code is correct or safe.
+ *  n40: the page and each file are compared as published SOURCE, read unchanged from the deploy at /api/x/n/src?path= (no-store).
+ *  The worker then decorates HTML per response (nonces, an early script, font preloads, the shared stylesheet, hreflang links,
+ *  prefetch rules, a transition style, current ?v= versions, the live ticker, the footer, some sections); those are listed, not hashed.
+ *  The deploy also swaps the retired Supabase anon key for its public successor; only after a mismatch that one string is put back.
+ *  What it proves: the files we serve match what we published. It does not prove our code is correct or safe.
  *  KBPageCheck.run(path, el)  KBPageCheck.dialog(openerEl)  KBPageCheck.normalize(html) -> { html, steps }
  */
 (function () {
@@ -23,6 +27,35 @@
     return new Promise(function (ok, no) { var s = document.createElement('script'); s.src = VB; s.onload = function () { ok(window.KBVerify); }; s.onerror = no; document.head.appendChild(s); });
   }
   function cfDecode(h) { var k = parseInt(h.substr(0, 2), 16), b = []; for (var i = 2; i < h.length; i += 2) b.push(parseInt(h.substr(i, 2), 16) ^ k); return new TextDecoder().decode(new Uint8Array(b)); }
+  var SRC = '/api/x/n/src?path=', PUB = 'sb_publishable_' + 'WWMM9pbZfP4hJosLJlTobg_lWFGoJ3X', JWT = ['ey' + 'JhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9', 'ey' + 'Jpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0', 'n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw'].join('.');
+  var LANG = (/^(es|fr|de|ru|zh|ar|nl)/.exec(document.documentElement.lang || '') || [0, 'en'])[1];
+  var TX = {
+    en: ['Checked: the published source file, as stored in the deploy, against the signed manifest. The server then decorates the page on its way to you, so the copy you received is not byte for byte the same; the additions are listed and are not covered by the hash.', 'Added by the server', 'Served exactly as published.', 'The deploy replaces the retired Supabase anon key with its public successor key; that one string is put back before hashing.', ['CSP nonces on scripts', 'an early script at the top of the head', 'font preloads', 'the shared design stylesheet link', 'language alternate links (hreflang)', 'prefetch rules (speculationrules)', 'a page transition style', 'current ?v= versions on CSS and JS links', 'the live updates ticker', 'the current footer', 'other sections the server renders for this page']],
+    es: ['Comprobado: el archivo fuente publicado, tal como está guardado en el despliegue, frente al manifiesto firmado. Después el servidor decora la página antes de enviártela, así que la copia que recibes no es idéntica byte a byte; las adiciones se enumeran y no entran en el hash.', 'Añadido por el servidor', 'Servido exactamente como se publicó.', 'El despliegue sustituye la clave anónima retirada de Supabase por su clave pública sucesora; esa única cadena se restituye antes de calcular el hash.', ['nonces CSP en los scripts', 'un script temprano al inicio del head', 'precargas de fuentes', 'el enlace a la hoja de estilos de diseño común', 'enlaces a otros idiomas (hreflang)', 'reglas de precarga (speculationrules)', 'un estilo de transición entre páginas', 'versiones ?v= actuales en enlaces CSS y JS', 'el ticker de novedades en directo', 'el pie de página actual', 'otras secciones que el servidor genera para esta página']],
+    fr: ['Vérifié : le fichier source publié, tel qu\'il est stocké dans le déploiement, comparé au manifeste signé. Le serveur décore ensuite la page avant de vous l\'envoyer, donc la copie reçue n\'est pas identique octet pour octet ; les ajouts sont listés et ne sont pas couverts par le hachage.', 'Ajouté par le serveur', 'Servi exactement tel que publié.', 'Le déploiement remplace la clé anonyme Supabase retirée par sa clé publique de remplacement ; cette seule chaîne est rétablie avant le hachage.', ['nonces CSP sur les scripts', 'un script précoce en haut du head', 'préchargements de polices', 'le lien vers la feuille de style commune', 'liens vers les autres langues (hreflang)', 'règles de préchargement (speculationrules)', 'un style de transition entre pages', 'versions ?v= actuelles sur les liens CSS et JS', 'le bandeau des nouveautés en direct', 'le pied de page actuel', 'd\'autres sections générées par le serveur pour cette page']],
+    de: ['Geprüft: die veröffentlichte Quelldatei, wie sie im Deployment gespeichert ist, gegen das signierte Manifest. Der Server ergänzt die Seite danach auf dem Weg zu Ihnen, daher ist die empfangene Kopie nicht Byte für Byte gleich; die Ergänzungen sind aufgeführt und nicht vom Hash abgedeckt.', 'Vom Server ergänzt', 'Genau so ausgeliefert wie veröffentlicht.', 'Das Deployment ersetzt den ausgemusterten anonymen Supabase-Schlüssel durch seinen öffentlichen Nachfolger; genau diese Zeichenfolge wird vor dem Hashen zurückgesetzt.', ['CSP-Nonces an Skripten', 'ein frühes Skript am Anfang des Head', 'Font-Preloads', 'der Link zum gemeinsamen Design-Stylesheet', 'Links zu anderen Sprachen (hreflang)', 'Prefetch-Regeln (speculationrules)', 'ein Stil für Seitenübergänge', 'aktuelle ?v=-Versionen an CSS- und JS-Links', 'der Live-Ticker mit Neuigkeiten', 'die aktuelle Fußzeile', 'weitere Abschnitte, die der Server für diese Seite erzeugt']],
+    ru: ['Проверено: опубликованный исходный файл в том виде, в каком он хранится в развёртывании, сверен с подписанным манифестом. Затем сервер дополняет страницу по пути к вам, поэтому полученная копия не совпадает байт в байт; дополнения перечислены и хешем не покрываются.', 'Добавлено сервером', 'Отдано в точности как опубликовано.', 'При развёртывании устаревший анонимный ключ Supabase заменяется его публичным преемником; перед хешированием эта одна строка возвращается обратно.', ['CSP nonce у скриптов', 'ранний скрипт в начале head', 'предзагрузка шрифтов', 'ссылка на общий файл стилей', 'ссылки на другие языки (hreflang)', 'правила предзагрузки (speculationrules)', 'стиль перехода между страницами', 'текущие версии ?v= у ссылок CSS и JS', 'лента новостей в реальном времени', 'текущий подвал', 'другие разделы, которые сервер формирует для этой страницы']],
+    zh: ['已核对：部署中存储的已发布源文件与签名清单一致。服务器随后在发送页面时会添加内容，因此您收到的副本并非逐字节相同；添加的内容列在下方，不在哈希范围内。', '服务器添加', '按发布原样提供。', '部署时会把已停用的 Supabase 匿名密钥替换为其公开的新密钥；计算哈希前会把这一个字符串还原。', ['脚本上的 CSP nonce', 'head 开头的早期脚本', '字体预加载', '通用设计样式表链接', '其他语言链接 (hreflang)', '预取规则 (speculationrules)', '页面过渡样式', 'CSS 和 JS 链接上的当前 ?v= 版本', '实时更新滚动条', '当前页脚', '服务器为此页面生成的其他部分']],
+    ar: ['تم التحقق: ملف المصدر المنشور كما هو مخزن في النشر، مقارنة بالبيان الموقّع. ثم يضيف الخادم عناصر إلى الصفحة في طريقها إليك، لذلك لا تطابق النسخة التي تلقيتها الملف بايتًا ببايت؛ الإضافات مذكورة ولا تشملها بصمة التجزئة.', 'أضافه الخادم', 'قُدّم تمامًا كما نُشر.', 'يستبدل النشر مفتاح Supabase المجهول المتقاعد بالمفتاح العام الذي حل محله؛ وتُعاد هذه السلسلة الوحيدة قبل حساب التجزئة.', ['رموز nonce لسياسة CSP على السكربتات', 'سكربت مبكر في بداية head', 'تحميل مسبق للخطوط', 'رابط ورقة الأنماط المشتركة', 'روابط اللغات الأخرى (hreflang)', 'قواعد الجلب المسبق (speculationrules)', 'نمط انتقال بين الصفحات', 'إصدارات ?v= الحالية في روابط CSS وJS', 'شريط التحديثات المباشرة', 'التذييل الحالي', 'أقسام أخرى ينشئها الخادم لهذه الصفحة']],
+    nl: ['Gecontroleerd: het gepubliceerde bronbestand, zoals opgeslagen in de deploy, tegen het ondertekende manifest. Daarna voegt de server onderweg naar jou onderdelen aan de pagina toe, dus de ontvangen kopie is niet byte voor byte gelijk; de toevoegingen staan vermeld en vallen niet onder de hash.', 'Toegevoegd door de server', 'Precies zo geleverd als gepubliceerd.', 'De deploy vervangt de ingetrokken anonieme Supabase-sleutel door de openbare opvolger; alleen die ene tekenreeks wordt vóór het hashen teruggezet.', ['CSP-nonces op scripts', 'een vroeg script bovenaan de head', 'font-preloads', 'de link naar het gedeelde ontwerp-stylesheet', 'links naar andere talen (hreflang)', 'prefetchregels (speculationrules)', 'een stijl voor paginaovergangen', 'actuele ?v=-versies op CSS- en JS-links', 'de live nieuwsticker', 'de huidige footer', 'andere onderdelen die de server voor deze pagina maakt']]
+  }[LANG];
+  function cnt(h, rx) { return (h.match(rx) || []).length; }
+  // what the server added to this HTML compared with its published source (shown, never hashed)
+  function added(srcH, got) {
+    var D = [/ nonce="/g, null, /<link rel="preload"[^>]*as="font"/g, /\/k\/ds-site\.css/g, /hreflang="/g, /type="speculationrules"/g, /id="kb-vt"/g, null, null, null], o = [];
+    D.forEach(function (rx, i) { if (rx && cnt(got, rx) > cnt(srcH, rx)) o.push(TX[4][i]); });
+    var E = /<head>\s*<script[^>]*>\(function\(w,d\)\{var q=\[\]/; if (E.test(got) && !E.test(srcH)) o.splice(o.length && o[0] === TX[4][0] ? 1 : 0, 0, TX[4][1]);
+    var v0 = (srcH.match(/\?v=[\w-]+/g) || []).join(), v1 = (got.match(/\?v=[\w-]+/g) || []).join(); if (v0 !== v1) o.push(TX[4][7]);
+    function part(h, a, b) { var i = h.indexOf(a), j = i < 0 ? -1 : h.indexOf(b, i); return i < 0 || j < 0 ? '' : h.slice(i, j); }
+    if (part(srcH, 'class="ship-v', '</div></div>') !== part(got, 'class="ship-v', '</div></div>')) o.push(TX[4][8]);
+    if (part(srcH, '<footer', '</footer>') !== part(got, '<footer', '</footer>')) o.push(TX[4][9]);
+    o.push(TX[4][10]);
+    return o;
+  }
+  function keyBack(t) { return t.indexOf(PUB) < 0 ? null : t.split(PUB).join(JWT); }
+  // the source as deployed: the analytics snippets the deploy adds and the swapped key, each tried only after a mismatch
+  function srcAlt(t) { var o = [], k = keyBack(t); if (k != null) o.push({ html: k, step: TX[3] }); variants(t).forEach(function (v) { o.push(v); var kv = keyBack(v.html); if (kv != null) o.push({ html: kv, step: v.step + '; ' + TX[3] }); }); return o; }
+  function srcFetch(file) { return fetch(SRC + encodeURIComponent(file), { cache: 'no-store', credentials: 'omit' }).then(function (r) { if (r.status !== 200) throw new Error('src ' + r.status); return r.arrayBuffer(); }); }
   function normalize(html) {
     var steps = [], n;
     n = 0; html = html.replace(/(<script\b[^>]*?) nonce="[A-Za-z0-9+\/=]*"/g, function (_, a) { n++; return a; }); if (n) steps.push(n + ' script nonce attribute' + (n === 1 ? '' : 's') + ' removed');
@@ -93,11 +126,18 @@
         var raw = new TextDecoder('utf-8', { ignoreBOM: true }).decode(x.buf), ct = x.r.headers.get('content-type') || '';
         if (!/html/.test(ct)) throw new Error(path + ' did not answer with an HTML page (' + (x.r.status) + ').');
         var N = normalize(raw), A = assets(raw, x.r.url, here), rows = [];
-        rows.push({ path: file, kind: ssr ? 'page (server-rendered)' : 'page', bytes: te.encode(N.html), alt: ssr ? [] : variants(N.html), steps: N.steps, want: ssr ? null : files[file], note: ssr ? 'This page is assembled per request from ' + file + ' and live data, so its HTML cannot match a published file. Its scripts and styles are checked below.' : N.steps.length ? 'Normalized before hashing: ' + N.steps.join('; ') + '.' : 'No normalization needed.' });
         var keys = Object.keys(A.list);
-        return Promise.all(keys.map(function (k) {
-          return fetch(A.list[k].url, { cache: 'no-store', credentials: 'omit' }).then(function (r) { return r.arrayBuffer().then(function (b) { return { path: k, kind: A.list[k].kind, bytes: b, want: files[k], status: r.status }; }); }, function () { return { path: k, kind: A.list[k].kind, bytes: null, want: files[k], err: 'could not be fetched' }; });
-        })).then(function (more) {
+        return Promise.all([ssr || files[file] == null ? null : srcFetch(file).catch(function () { return null; })].concat(keys.map(function (k) {
+          // each script and style: the published source (unchanged, no-store) is hashed; the served copy is compared with it
+          return Promise.all([fetch(A.list[k].url, { cache: 'no-store', credentials: 'omit' }).then(function (r) { return r.arrayBuffer(); }).catch(function () { return null; }), files[k] == null ? null : srcFetch(k).catch(function () { return null; })]).then(function (ab) {
+            var b = ab[1] || ab[0]; if (!b) return { path: k, kind: A.list[k].kind, bytes: null, want: files[k], err: 'could not be fetched' };
+            var t = new TextDecoder().decode(b), kb = keyBack(t), same = ab[0] && ab[1] && new TextDecoder().decode(ab[0]) === t;
+            return { path: k, kind: A.list[k].kind, bytes: b, want: files[k], alt: kb == null ? [] : [{ html: kb, step: TX[3] }], steps: [], note: ab[1] ? (same ? TX[2] : ab[0] ? 'The copy served here differs from the published source.' : null) : null };
+          });
+        }))).then(function (more) {
+          var sb = more.shift(), st0 = sb ? new TextDecoder('utf-8', { ignoreBOM: true }).decode(sb) : null, ad = st0 == null ? [] : added(st0, raw);
+          rows.push({ path: file, kind: ssr ? 'page (server-rendered)' : 'page', bytes: st0 != null ? sb : te.encode(N.html), alt: ssr ? [] : st0 != null ? srcAlt(st0) : variants(N.html), steps: st0 != null ? [] : N.steps, want: ssr ? null : files[file], src: st0 != null,
+            note: ssr ? 'This page is assembled per request from ' + file + ' and live data, so its HTML cannot match a published file. Its scripts and styles are checked below.' : st0 != null ? TX[0] + ' ' + TX[1] + ': ' + ad.join('; ') + '.' : N.steps.length ? 'Normalized before hashing: ' + N.steps.join('; ') + '.' : 'No normalization needed.' });
           rows = rows.concat(more);
           return Promise.all(rows.map(function (rw) {
             if (!rw.bytes) return rw;
@@ -106,7 +146,7 @@
               if (h === rw.want || !rw.alt || !rw.alt.length) return rw;
               return Promise.all(rw.alt.map(function (v) { return sha(te.encode(v.html)); })).then(function (hs) {
                 var i = hs.indexOf(rw.want); if (i < 0) return rw;
-                rw.got = hs[i]; rw.note = 'Normalized before hashing: ' + rw.steps.concat([rw.alt[i].step]).join('; ') + '.'; return rw;
+                rw.got = hs[i]; rw.note = (rw.src || !rw.steps.length ? (rw.note ? rw.note + ' ' : '') + rw.alt[i].step : 'Normalized before hashing: ' + rw.steps.concat([rw.alt[i].step]).join('; ') + '.'); return rw;
               });
             });
           }));
@@ -122,7 +162,7 @@
               var lab = rw.state === 'ok' ? '<span class="kpc-y">Match</span>' : rw.state === 'bad' ? '<span class="kpc-n">Mismatch</span>' : rw.state === 'err' ? '<span class="kpc-n">Not fetched</span>' : '<span class="kpc-u">Not in manifest</span>';
               return '<tr><td><code>' + esc(rw.path) + '</code><br><small>' + esc(rw.kind) + (rw.note ? ': ' + esc(rw.note) : '') + '</small></td><td>' + lab + (rw.state === 'bad' ? '<br><small>expected <code>' + esc(String(rw.want).slice(0, 16)) + '…</code></small>' : '') + '</td><td><code>' + esc(rw.got ? rw.got.slice(0, 16) + '…' : '') + '</code></td></tr>';
             }).join('') + Object.keys(A.skipped).map(function (k) { return '<tr><td><code>' + esc(k) + '</code></td><td><span class="kpc-u">Not ours</span></td><td><small>' + esc(A.skipped[k]) + '</small></td></tr>'; }).join('') + '</tbody></table></div>' +
-            '<p class="kpc-m"><b>What this proves:</b> the bytes your browser received are the bytes we published at that commit. <b>What it does not prove:</b> that our code is correct or safe, or anything about third-party scripts (analytics) and data loaded later from /data/ or the API, which are signed and logged separately. Signed manifest: <a href="' + MAN + '">' + MAN + '</a>.</p>';
+            '<p class="kpc-m"><b>What this proves:</b> the files we serve are the files we published at that commit; for HTML pages the server adds the parts listed per row on the way to you. <b>What it does not prove:</b> that our code is correct or safe, or anything about third-party scripts (analytics) and data loaded later from /data/ or the API, which are signed and logged separately. Signed manifest: <a href="' + MAN + '">' + MAN + '</a>.</p>';
           V.badge(el.querySelector('.kpc-sig'), M.check, { what: 'the site manifest' });
           return { ok: ok, bad: bad, none: none, rows: rows, manifest: man.commit, live: live.commit };
         });
@@ -153,5 +193,5 @@
     box.focus();
     return run(location.pathname, box.querySelector('.kpc-out'), { search: location.search });
   }
-  window.KBPageCheck = { version: '1.0.0', run: run, dialog: dialog, normalize: normalize, variants: variants, fileFor: fileFor, css: css };
+  window.KBPageCheck = { version: '1.1.0', run: run, dialog: dialog, normalize: normalize, variants: variants, fileFor: fileFor, css: css };
 })();
