@@ -24,7 +24,8 @@
     "AU-VIC": "Victoria (Australia)",
     "MX": "Mexico",
     "JP": "Japan",
-    "GB": "United Kingdom"
+    "GB": "United Kingdom",
+    "TR": "Turkey"
   },
   "sources": {
     "id-pp18-2021": {
@@ -163,6 +164,15 @@
       "language": "en",
       "read": "2026-11-26",
       "note": "Section 4B was inserted by section 135 of the Building Safety Act 2022. Applies in England and Wales."
+    },
+    "tr-tkhk-6502": {
+      "law": "Consumer Protection Law No. 6502 (Tüketicinin Korunması Hakkında Kanun)",
+      "publisher": "Legislation Information System (mevzuat.gov.tr), Presidency of the Republic of Türkiye",
+      "url": "https://www.mevzuat.gov.tr/MevzuatMetin/1.5.6502.pdf",
+      "page": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6502&MevzuatTur=1&MevzuatTertip=5",
+      "language": "tr",
+      "read": "2026-11-26",
+      "note": "Consolidated text. Articles 40 to 46 cover pre-paid home sales (ön ödemeli konut satışı); details are set in a separate regulation."
     }
   },
   "rules": [
@@ -749,6 +759,95 @@
       "source": "gb-la-1980",
       "cite": "Section 4B(1), (3), (4) and (5)",
       "quote": "(1) Where by virtue of a relevant provision a person becomes entitled to bring an action against any other person, no action may be brought after the expiration of 15 years from the date on which the right of action accrued. [...] (3) In this section “relevant provision” means (a) section 1 or 2A of the Defective Premises Act 1972; (b) section 38 of the Building Act 1984. (4) Where by virtue of section 1 of the Defective Premises Act 1972 a person became entitled, before the commencement date, to bring an action against any other person, this section applies in relation to the action as if the reference in subsection (1) to 15 years were a reference to 30 years. (5) In subsection (4) “the commencement date” means the day on which section 135 of the Building Safety Act 2022 came into force.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "tr-permit-first",
+      "market": "TR",
+      "topics": [
+        "permit",
+        "parties"
+      ],
+      "title": "In Turkey, no off-plan sale to a consumer before the building permit, and an information form one day before",
+      "plain": "A seller may not sign a pre-paid home sale contract (selling a home you pay for before it is handed over) with a consumer before it holds the building permit (yapı ruhsatı), and must give you a pre-contract information form at least one day before signing. Ask for the permit number and check it with the municipality.",
+      "source": "tr-tkhk-6502",
+      "cite": "Article 40(1) to (3)",
+      "quote": "(1) Ön ödemeli konut satış sözleşmesi, tüketicinin konut amaçlı bir taşınmazın satış bedelini önceden peşin veya taksitle ödemeyi, satıcının da bedelin tamamen veya kısmen ödenmesinden sonra taşınmazı tüketiciye devir veya teslim etmeyi üstlendiği sözleşmedir. (2) Tüketicilere sözleşmenin kurulmasından en az bir gün önce, Bakanlıkça belirlenen hususları içeren ön bilgilendirme formu verilmek zorundadır. (3) Yapı ruhsatı alınmadan, tüketicilerle ön ödemeli konut satış sözleşmesi yapılamaz.",
+      "translation": "(1) A pre-paid home sale contract is a contract in which the consumer undertakes to pay the sale price of a property for housing in advance, in cash or in instalments, and the seller undertakes to transfer or deliver the property to the consumer after the price is paid in full or in part. (2) Consumers must be given, at least one day before the contract is concluded, a pre-information form containing the matters set by the Ministry. (3) No pre-paid home sale contract may be made with consumers before the building permit is obtained.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "tr-contract-form",
+      "market": "TR",
+      "topics": [
+        "title",
+        "payment"
+      ],
+      "title": "The sale must be registered at the land registry or made before a notary, and no payment before a valid contract",
+      "plain": "A pre-paid home sale must be registered in the land registry (tapu), or the promise-to-sell contract must be drawn up by a notary. If not, the seller cannot later use the defect against you. Until a valid contract exists, the seller may not ask you for any payment under any name, or for any document that puts you in debt.",
+      "source": "tr-tkhk-6502",
+      "cite": "Article 41(1) and (2)",
+      "quote": "(1) Ön ödemeli konut satışının tapu siciline tescil edilmesi, satış vaadi sözleşmesinin ise noterde düzenleme şeklinde yapılması zorunludur. Aksi hâlde satıcı, sonradan sözleşmenin geçersizliğini tüketicinin aleyhine olacak şekilde ileri süremez. (2) Satıcı, geçerli bir sözleşme yapılmış olmadıkça tüketiciden herhangi bir isim altında ödeme yapmasını veya tüketiciyi borç altına sokan herhangi bir belge vermesini isteyemez.",
+      "translation": "(1) A pre-paid home sale must be registered in the land registry, and a promise-to-sell contract must be drawn up before a notary. Otherwise the seller may not later claim the invalidity of the contract against the consumer. (2) Unless a valid contract has been made, the seller may not ask the consumer to make a payment under any name or to give any document that puts the consumer in debt.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "tr-completion-insurance",
+      "market": "TR",
+      "topics": [
+        "escrow",
+        "completion"
+      ],
+      "title": "Larger projects need building completion insurance, which creditors cannot seize",
+      "plain": "For projects above a size set by the Ministry (number of homes or total value), the seller must take out building completion insurance, or provide another guarantee the Ministry sets, before starting pre-paid sales. Payouts and guarantees under that insurance cannot go into a bankruptcy estate or be seized. Ask whether the project is above the threshold and for the insurance policy.",
+      "source": "tr-tkhk-6502",
+      "cite": "Article 42(1) and (2)",
+      "quote": "(1) Bakanlıkça projedeki konut adedi ya da projenin toplam bedeli kriterine göre belirlenecek büyüklüğün üzerindeki projeler için satıcının ön ödemeli konut satışına başlamadan önce; kapsamı, koşulları ve uygulama esasları Hazine Müsteşarlığınca belirlenen bina tamamlama sigortası yaptırması veya Bakanlıkça belirlenen diğer teminat ve şartları sağlaması zorunludur. (2) Bina tamamlama sigortası kapsamında sağlanan tazminat, teminat ve benzeri güvenceler iflas veya tasfiye masasına dâhil edilemez, haczolunamaz, üzerlerine ihtiyati tedbir ve ihtiyati haciz konulamaz.",
+      "translation": "(1) For projects above a size to be set by the Ministry by the number of homes in the project or its total value, the seller must, before starting pre-paid home sales, take out building completion insurance whose scope, conditions and rules are set by the Undersecretariat of the Treasury, or meet the other guarantees and conditions set by the Ministry. (2) Compensation, guarantees and similar securities provided under building completion insurance may not be included in a bankruptcy or liquidation estate, may not be seized, and may not be subject to interim injunctions or attachments.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "tr-14-days",
+      "market": "TR",
+      "topics": [
+        "termination"
+      ],
+      "title": "You can withdraw within 14 days without giving a reason or paying a penalty",
+      "plain": "You have 14 days to withdraw from a pre-paid home sale contract without any reason and without paying a penalty. It is enough to send the notice to the seller within that period, and the seller must prove it told you about this right.",
+      "source": "tr-tkhk-6502",
+      "cite": "Article 43(1)",
+      "quote": "Tüketici, on dört gün içinde herhangi bir gerekçe göstermeksizin ve cezai şart ödemeksizin ön ödemeli konut satış sözleşmesinden cayma hakkına sahiptir. Cayma hakkının kullanıldığına dair bildirimin bu süre içinde satıcıya yöneltilmiş olması yeterlidir. Satıcı, cayma hakkı konusunda tüketicinin bilgilendirildiğini ispat etmekle yükümlüdür.",
+      "translation": "The consumer has the right to withdraw from the pre-paid home sale contract within fourteen days without giving any reason and without paying a penalty. It is enough that notice of the withdrawal is sent to the seller within this period. The seller must prove that the consumer was informed about the right of withdrawal.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "tr-48-months",
+      "market": "TR",
+      "topics": [
+        "completion",
+        "delay"
+      ],
+      "title": "The home must be delivered on the promised date, and never later than 48 months after the contract",
+      "plain": "The seller must deliver the home within the period promised in the contract, and that period can never be longer than 48 months from the contract date. Registering the floor easement (kat irtifakı) in your name together with handing over possession counts as delivery.",
+      "source": "tr-tkhk-6502",
+      "cite": "Article 44(1)",
+      "quote": "Ön ödemeli konutun sözleşmede taahhüt edilen süre içinde tüketiciye teslim edilmesi zorunludur. Bu süre her hâlükârda sözleşme tarihinden itibaren kırk sekiz ayı geçemez. Kat irtifakının tüketici adına tapu siciline tescil edilmesiyle birlikte zilyetliğin devri hâlinde de devir ve teslim yapılmış sayılır.",
+      "translation": "The pre-paid home must be delivered to the consumer within the period promised in the contract. This period may in no case exceed forty-eight months from the contract date. Transfer and delivery are also deemed made when possession is transferred together with registration of the floor easement in the land registry in the consumer’s name.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "tr-24-months-exit",
+      "market": "TR",
+      "topics": [
+        "termination",
+        "payment"
+      ],
+      "title": "For 24 months you can cancel without a reason, paying at most 2% to 8% of the price",
+      "plain": "Within 24 months of the contract date you may cancel a pre-paid home sale without giving a reason. The seller may then claim the taxes and fees caused by the sale plus compensation of up to 2% of the price in the first three months, 4% from three to six months, 6% from six to twelve months and 8% from twelve to 24 months. If the seller did not perform its obligations, it can claim nothing. Your money must be returned within 180 days of the notice reaching the seller.",
+      "source": "tr-tkhk-6502",
+      "cite": "Article 45(1) to (3)",
+      "quote": "(1) Ön ödemeli konut satışında sözleşme tarihinden itibaren yirmidört aya kadar tüketicinin herhangi bir gerekçe göstermeden sözleşmeden dönme hakkı vardır. Sözleşmeden dönülmesi durumunda satıcı; konutun satışı veya satış vaadi sözleşmesi nedeniyle oluşan vergi, harç ve benzeri yasal yükümlülüklerden doğan masraflar ile sözleşme tarihinden itibaren ilk üç ay için sözleşme bedelinin yüzde ikisine, üç ila altı ay arası için yüzde dördüne, altı ila oniki ay arası için yüzde altısına ve oniki ila yirmidört ay arası için de yüzde sekizine kadar tazminatın ödenmesini isteyebilir. (2) Satıcı, yükümlülüklerini hiç ya da gereği gibi yerine getirmezse tüketiciden herhangi bir bedel talep edemez. [...] (3) Sözleşmeden dönülmesi durumunda, tüketiciye iade edilmesi gereken tutar ve tüketiciyi borç altına sokan her türlü belge, dönme bildiriminin satıcıya ulaştığı tarihten itibaren en geç yüzseksen gün içinde tüketiciye geri verilir.",
+      "translation": "(1) In a pre-paid home sale, the consumer has the right to rescind the contract without giving any reason up to twenty-four months from the contract date. If the contract is rescinded, the seller may ask for the costs arising from taxes, fees and similar legal obligations caused by the sale or promise-to-sell contract, and for compensation of up to two percent of the contract price for the first three months from the contract date, up to four percent between three and six months, up to six percent between six and twelve months, and up to eight percent between twelve and twenty-four months. (2) If the seller does not perform its obligations at all or properly, it may not claim any amount from the consumer. [...] (3) If the contract is rescinded, the amount to be refunded to the consumer and every document putting the consumer in debt are returned to the consumer within one hundred and eighty days at the latest from the date the rescission notice reaches the seller.",
       "checked": "2026-11-26"
     }
   ]
