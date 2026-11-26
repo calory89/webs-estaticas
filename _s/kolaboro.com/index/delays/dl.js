@@ -205,6 +205,6 @@
   fetch('/data/on-time.json' + BUST).then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(function (j) { OT = j; bootOdds(); })
     .catch(function () { $('dlOddsWhy').textContent = t('err2', 'The odds file is not published yet: the first build is running.'); });
   }
-  if (LG !== 'en' && /^(es|fr|de|nl|ru|zh|ar)$/.test(LG) && !window.KDL_TX) { var sc = document.createElement('script'); sc.src = '/index/delays/dl-tx.js?v=l8a'; sc.onload = sc.onerror = start; document.head.appendChild(sc); }
+  if (LG !== 'en' && /^(es|fr|de|nl|ru|zh|ar)$/.test(LG) && !window.KDL_TX) { var sc = document.createElement('script'); sc.src = '/index/delays/dl-tx.js?v=l8b'; sc.onload = sc.onerror = start; document.head.appendChild(sc); }
   else start();
 })();

@@ -305,7 +305,7 @@
     $('cm-out').innerHTML = '<p>' + t('err', 'A public data file could not load ({e}). Try again in a moment.', { e: esc(e && e.message || 'network') }) + '</p>';
   });
   }
-  if (LG !== 'en' && /^(es|fr|de|nl|ru|zh|ar)$/.test(LG) && !window.KCM_TX) { var sc = document.createElement('script'); sc.src = '/compare/markets/cm-tx.js?v=l8a'; sc.onload = sc.onerror = start; document.head.appendChild(sc); }
+  if (LG !== 'en' && /^(es|fr|de|nl|ru|zh|ar)$/.test(LG) && !window.KCM_TX) { var sc = document.createElement('script'); sc.src = '/compare/markets/cm-tx.js?v=l8b'; sc.onload = sc.onerror = start; document.head.appendChild(sc); }
   else start();
 })();
 });</script>

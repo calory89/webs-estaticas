@@ -1,5 +1,5 @@
 {
- "v": "1moql0w-ckfj-g1-l2b-l3b-l5gggg-l6-l7d",
+ "v": "1moql0w-ckfj-g1-l2b-l3b-l5gggg-l6-l7d-l8a",
  "built": "2026-11-20",
  "pages": {
   "m": [
@@ -372,6 +372,24 @@
    "ar"
   ],
   "index/prices": [
+   "es",
+   "de",
+   "fr",
+   "nl",
+   "ru",
+   "zh",
+   "ar"
+  ],
+  "index/delays": [
+   "es",
+   "de",
+   "fr",
+   "nl",
+   "ru",
+   "zh",
+   "ar"
+  ],
+  "compare/markets": [
    "es",
    "de",
    "fr",
