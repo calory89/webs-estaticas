@@ -401,8 +401,8 @@ F.map((f, i) => '<tr><th scope="row">' + fname(l, f) + '</th><td class="n">' + n
 }
 function peers(l, slug) {
 const rows = IX.byDev.get(slug) || []; if (!rows.length) return ''; const c = new Map(); for (const r of rows) c.set(r[3], (c.get(r[3]) || 0) + 1);
-const mk = [...c.entries()].sort((a, b) => b[1] - a[1])[0][0], n = new Map(), co = (D.mk[mk] || {}).co, add = R => { for (const r of R || []) if (r[5] && r[5] !== slug) { const o = n.get(r[5]) || { s: r[5], d: r[6] || r[5], k: 0 }; o.k++; n.set(r[5], o); } }; add(IX.byMk.get(mk)); let lab = mkName(mk, l), hk = 'pe_h';
-if (!n.size && co) { for (const [m, R] of IX.byMk) if ((D.mk[m] || {}).co === co) add(R); lab = coName(co, l); hk = 'pe_hc'; }   // n40 k38: only developer in its market: the country's
+const mk = [...c.entries()].sort((a, b) => b[1] - a[1])[0][0], n = new Map(), co = D.co[rows[0][0]], add = R => { for (const r of R || []) if (r[5] && r[5] !== slug) { const o = n.get(r[5]) || { s: r[5], d: r[6] || r[5], k: 0 }; o.k++; n.set(r[5], o); } }; add(IX.byMk.get(mk)); let lab = mkName(mk, l), hk = 'pe_h';
+if (!n.size && co) { for (const [m, R] of IX.byMk) if (D.co[R[0][0]] === co) add(R); lab = coName(co, l); hk = 'pe_hc'; }   // n40 k38: only developer in its market: the country's
 const A = [...n.values()].sort((a, b) => b.k - a.k || a.d.localeCompare(b.d)), L = A.slice(0, 6), S = A.concat({ s: slug, d: rows[0][6] || slug }).sort((a, b) => a.d.localeCompare(b.d) || a.s.localeCompare(b.s)), i = S.findIndex(o => o.s === slug); if (!A.length) return '';
 for (const o of [S[(i + S.length - 1) % S.length], S[(i + 1) % S.length]].concat(A.slice(6))) if (L.length < 8 && o.s !== slug && !L.includes(o)) L.push(o);   // n40 k38: plus the two alphabetical neighbours
 return '<div class="n37" id="n40-peers"' + dir(l) + '><h3>' + esc(tf(l, hk, { m: lab })) + '</h3>' + peUl(l, L) + '</div>';
@@ -1153,7 +1153,7 @@ return new HTMLRewriter().on('#n34-out', { element(e) { e.setAttribute('data-n37
 }
 else if (p === '') { const h = await homeBits(l, env); if (h) { add.push(['p.hero-sub', 'after', h[0]]); add.push(['#hp-band > .wrap', 'prepend', h[1]]); } }
 else if (p === 'yc/try/') add.push(['section.k27 .k-prose > ol', 'before', await progBlock(l, env)]);
-else if ((mm = /^m\/([^/.]{2,60})\/$/.exec(p))) { const mk = mBySlug(mm[1]); let kk = null; if (mk) try { kk = await (await import('./kbx_n29i.js')).mkKey(env, mm[1], l); } catch (e) {} const dh = mk ? mkDash(l, mk, kk) : ''; if (dh) add.push(l === 'en' ? ['#in-short', 'before', dh] : ['.k29-kv', 'before', dh]); const h = mk ? mkSection(l, mk) + kpMarket(l, mk) + '<div class="n37">' + areaBlock(l, mk) + devBlock(l, mk) + nextBlock(l, mk) + '</div>' : ''; if (!h) return r; add.push(['#slippage', 'before', h]); }
+else if ((mm = /^m\/([^/.]{2,60})\/$/.exec(p))) { const mk = mBySlug(mm[1]); let kk = null; if (mk) try { kk = await (await import('./kbx_n29i.js')).mkKey(env, mm[1], l); } catch (e) {} const dh = mk ? mkDash(l, mk, kk) : ''; if (dh) add.push(l === 'en' ? ['#in-short', 'before', dh] : ['.k29-kv', 'before', dh]); const m2 = mk || [...IX.byMk.keys()].find(k => slugM(k) === mm[1]), h = mk ? mkSection(l, mk) + kpMarket(l, mk) + '<div class="n37">' + areaBlock(l, mk) + devBlock(l, mk) + nextBlock(l, mk) + '</div>' : m2 ? '<div class="n37">' + devBlock(l, m2) + '</div>' : ''; if (!h) return r; add.push(['#slippage', 'before', h]); }
 else if ((mm = /^developers\/([a-z0-9-]{2,90})\/$/.exec(p))) { const h = devSection(l, mm[1]); if (!h) return r; const dc = devCard(l, mm[1]); if (dc) add.push(['.phero .lead', 'after', dc]); add.push(['#projects', 'append', h + peers(l, mm[1]) + '<p class="n37-in"' + dir(l) + '><a href="' + pre(l) + '/developers/' + mm[1] + '/timeline/">' + esc(t(l, 'b_v_link')) + '</a></p>']); }
 else if ((mm = /^projects\/([a-z0-9-]{1,90})\/$/.exec(p))) {
 const x = IX.bySlug.get(mm[1]); if (!x) return r;
