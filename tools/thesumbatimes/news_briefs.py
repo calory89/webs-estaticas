@@ -3,13 +3,226 @@
 # time (WITA, HH:MM), dateline, kind ("brief" | "guide" | "letter").
 WA = "https://www.waingapu.com/"
 BRIEFS = [
+{'section': 'travel',
+ 'slug': 'le-soleal-ponant-expedition-ship-waikelo-sumba-2026',
+ 'date': '2026-11-27',
+ 'time': '06:00',
+ 'dateline': 'WAIKELO',
+ 'kind': 'brief',
+ 'top': True,
+ 'slugs': {'es': 'barco-expedicion-le-soleal-ponant-waikelo-sumba-2026',
+           'id': 'kapal-ekspedisi-le-soleal-ponant-waikelo-sumba-2026'},
+ 'keywords': {'en': ['Le Soléal Sumba',
+                     'PONANT Waikelo',
+                     'Sumba cruise ship',
+                     'Waikelo port',
+                     'Southwest Sumba tourism',
+                     'expedition cruise Indonesia'],
+              'es': ['Le Soléal Sumba',
+                     'PONANT Waikelo',
+                     'crucero Sumba',
+                     'puerto de Waikelo',
+                     'turismo Sumba Suroccidental',
+                     'crucero de expedición Indonesia'],
+              'id': ['Le Soléal Sumba',
+                     'PONANT Waikelo',
+                     'kapal pesiar Sumba',
+                     'Pelabuhan Waikelo',
+                     'wisata Sumba Barat Daya',
+                     'kapal pesiar ekspedisi Indonesia']},
+ 'en': {'title': 'French expedition ship Le Soléal anchors off Sumba',
+        'dek': 'The 10,992-tonne PONANT vessel stopped at Waikelo on Thursday on a ten-night Bali '
+               "round trip, one of the few cruise calls on the island's west coast.",
+        'answer': 'The French expedition ship Le Soléal anchored off Waikelo, Southwest Sumba, on '
+                  "Thursday 26 November 2026 on an eleven-day PONANT voyage from Bali; PONANT's "
+                  'itinerary lists the stop from 13:30 to 18:30 WITA, and the number of passengers '
+                  'has not been reported.',
+        'keys': ['Le Soléal anchored off Waikelo, Southwest Sumba, on Thursday 26 November 2026, '
+                 'according to a photo sent to The Sumba Times by a reader.',
+                 "PONANT's itinerary lists Waikelo from 13:30 to 18:30 WITA as the first stop of "
+                 'an eleven-day Bali round trip that left Benoa on 24 November.',
+                 'The ship is 10,992 gross tonnes and passengers go ashore by boat; fares start at '
+                 'about US$7,570 per person.',
+                 'No passenger count or local coverage of the call has been found.'],
+        'visitors': 'Small expedition ships now include Sumba on Bali to Flores routes, usually '
+                    'with a few hours ashore at Waikelo or Waingapu.',
+        'faq': [['Where did Le Soléal stop in Sumba?',
+                 'It anchored off Waikelo, the port near Tambolaka in Southwest Sumba, on Thursday '
+                 '26 November 2026. PONANT lists the stop from 13:30 to 18:30 WITA.'],
+                ['Can cruise ships dock at Waikelo?',
+                 'Ships of this size do not tie up at the small dock; passengers go ashore by '
+                 'boat.']],
+        'body': '<p>The French expedition cruise ship Le Soléal anchored off Southwest Sumba on '
+                "Thursday 26 November 2026, bringing one of the island's rare luxury cruise calls "
+                'to its west coast. The 10,992-gross-tonne ship, run by the French line PONANT, is '
+                'on an eleven-day "Wild Lands of Indonesia" voyage that left Benoa, Bali, on 24 '
+                "November.</p><h2>Where the ship goes next</h2><p>PONANT's published itinerary "
+                'lists Waikelo, the port near Tambolaka, as the first stop, from 13:30 to 18:30 '
+                'WITA. The ship then sails on to Dili in Timor-Leste, Maumere on Flores, the '
+                'Komodo area, Satonda and Saleh Bay on Sumbawa, and back to Bali on 4 December. '
+                'Fares start at about US$7,570 per person.</p><p>A photo sent to The Sumba Times '
+                'by a reader shows the ship at anchor offshore with a tender boat alongside. Ships '
+                "of this size do not tie up at Waikelo's small dock; passengers go ashore by "
+                'boat.</p><h2>A regular in eastern Indonesia</h2><p>Le Soléal, built in 2013, is a '
+                'regular in the region. When it called at Badas port on Sumbawa on 21 June 2025, '
+                'it carried 190 foreign passengers, according to Antara as published by Koran '
+                'Jakarta. The number of passengers on this voyage has not been reported, and we '
+                'found no local coverage of the Waikelo call at the time of writing.</p><p>The '
+                "call comes as Sumba's ports prepare for more cruise traffic. Pelindo has said "
+                'that <a '
+                'href="/en/travel/waingapu-port-cruise-ship-services-pelindo-2026/">Waingapu port '
+                'is setting up money-changer and local-product stands</a> for cruise visitors, and '
+                'the NTT governor has asked Jakarta to enlarge <a '
+                'href="/en/business/waikelo-port-tambolaka-airport-upgrade-push-2026/">Waikelo '
+                'port</a>.</p><h2>What it means for visitors, residents and '
+                'investors</h2><p>Visitors: small expedition ships now include Sumba on Bali to '
+                'Flores routes, usually with a few hours ashore at Waikelo or Waingapu. Residents: '
+                'expect a few hours of extra visitors around Tambolaka and nearby villages on '
+                'cruise days; local guides, drivers and sellers benefit most. Investors: cruise '
+                'calls are still occasional, but they put Sumba on international itineraries and '
+                'add weight to the case for a bigger Waikelo port.</p>'},
+ 'es': {'title': 'El barco de expedición francés Le Soléal fondea frente a Sumba',
+        'dek': 'El buque de PONANT, de 10.992 toneladas, paró el jueves en Waikelo en un crucero '
+               'de ida y vuelta desde Bali, una de las pocas escalas de cruceros en la costa oeste '
+               'de la isla.',
+        'answer': 'El barco de expedición francés Le Soléal fondeó frente a Waikelo, en Sumba '
+                  'Suroccidental, el jueves 26 de noviembre de 2026, en un viaje de once días de '
+                  'PONANT desde Bali; el itinerario de PONANT fija la parada de 13:30 a 18:30 WITA '
+                  'y no se ha informado del número de pasajeros.',
+        'keys': ['Le Soléal fondeó frente a Waikelo, en Sumba Suroccidental, el jueves 26 de '
+                 'noviembre de 2026, según una foto que un lector envió a The Sumba Times.',
+                 'El itinerario de PONANT fija Waikelo de 13:30 a 18:30 WITA como primera parada '
+                 'de un viaje de once días que salió de Benoa el 24 de noviembre.',
+                 'El barco tiene 10.992 toneladas de arqueo bruto y los pasajeros bajan a tierra '
+                 'en lancha; el precio parte de unos 7.570 dólares por persona.',
+                 'No se ha encontrado el número de pasajeros ni cobertura local de la escala.'],
+        'visitors': 'Los barcos de expedición pequeños ya incluyen Sumba en sus rutas de Bali a '
+                    'Flores, casi siempre con unas horas en tierra en Waikelo o Waingapu.',
+        'faq': [['¿Dónde paró Le Soléal en Sumba?',
+                 'Fondeó frente a Waikelo, el puerto junto a Tambolaka, en Sumba Suroccidental, el '
+                 'jueves 26 de noviembre de 2026. PONANT fija la parada de 13:30 a 18:30 WITA.'],
+                ['¿Pueden atracar cruceros en Waikelo?',
+                 'Los barcos de este tamaño no atracan en el pequeño muelle; los pasajeros bajan a '
+                 'tierra en lancha.']],
+        'body': '<p>El crucero de expedición francés Le Soléal fondeó frente a Sumba Suroccidental '
+                'el jueves 26 de noviembre de 2026, en una de las raras escalas de cruceros de '
+                'lujo en la costa oeste de la isla. El barco, de 10.992 toneladas de arqueo bruto '
+                'y de la naviera francesa PONANT, hace el viaje "Wild Lands of Indonesia", de once '
+                'días, que salió de Benoa (Bali) el 24 de noviembre.</p><h2>Adónde va '
+                'después</h2><p>Según el itinerario publicado por PONANT, la primera parada es '
+                'Waikelo, el puerto junto a Tambolaka, de 13:30 a 18:30 WITA. Después sigue hacia '
+                'Dili (Timor Oriental), Maumere (Flores), la zona de Komodo, Satonda y la bahía de '
+                'Saleh (Sumbawa), y vuelve a Bali el 4 de diciembre. El precio parte de unos 7.570 '
+                'dólares por persona.</p><p>Una foto enviada a The Sumba Times por un lector '
+                'muestra el barco fondeado mar adentro, con una lancha a su lado. Los barcos de '
+                'este tamaño no atracan en el pequeño muelle de Waikelo: los pasajeros bajan a '
+                'tierra en lancha.</p><h2>Un habitual del este de Indonesia</h2><p>Le Soléal, '
+                'construido en 2013, navega a menudo por la región. En su escala en el puerto de '
+                'Badas (Sumbawa) el 21 de junio de 2025 llevaba 190 pasajeros extranjeros, según '
+                'Antara publicada por Koran Jakarta. No se ha informado de cuántos pasajeros lleva '
+                'en este viaje, y no hemos encontrado cobertura local de la escala en Waikelo al '
+                'redactar esta noticia.</p><p>La escala llega mientras los puertos de Sumba se '
+                'preparan para más cruceros. Pelindo ha dicho que <a '
+                'href="/es/travel/puerto-waingapu-servicios-cruceros-pelindo-2026/">el puerto de '
+                'Waingapu monta puestos de cambio de moneda y de productos locales</a> para los '
+                'cruceristas, y el gobernador de NTT ha pedido a Yakarta ampliar el <a '
+                'href="/es/business/mejorar-puerto-waikelo-aeropuerto-tambolaka-gobernador-ntt-2026/">puerto '
+                'de Waikelo</a>.</p><h2>Qué significa para visitantes, residentes e '
+                'inversores</h2><p>Visitantes: los barcos de expedición pequeños ya incluyen Sumba '
+                'en sus rutas de Bali a Flores, casi siempre con unas horas en tierra en Waikelo o '
+                'Waingapu. Residentes: los días de crucero habrá unas horas de visitantes extra en '
+                'Tambolaka y los pueblos cercanos; ganan sobre todo guías, conductores y '
+                'vendedores locales. Inversores: las escalas aún son ocasionales, pero ponen a '
+                'Sumba en itinerarios internacionales y refuerzan el argumento para ampliar el '
+                'puerto de Waikelo.</p>'},
+ 'id': {'title': 'Kapal ekspedisi Prancis Le Soléal lego jangkar di Sumba',
+        'dek': 'Kapal PONANT berbobot 10.992 GT itu singgah di Waikelo pada Kamis dalam pelayaran '
+               'sepuluh malam dari Bali, salah satu kunjungan kapal pesiar yang jarang di pantai '
+               'barat pulau ini.',
+        'answer': 'Kapal ekspedisi Prancis Le Soléal lego jangkar di Waikelo, Sumba Barat Daya, '
+                  'pada Kamis 26 November 2026 dalam pelayaran sebelas hari PONANT dari Bali; '
+                  'jadwal PONANT mencantumkan singgah pukul 13.30 sampai 18.30 WITA, dan jumlah '
+                  'penumpang belum dilaporkan.',
+        'keys': ['Le Soléal lego jangkar di Waikelo, Sumba Barat Daya, pada Kamis 26 November '
+                 '2026, menurut foto yang dikirim pembaca ke The Sumba Times.',
+                 'Jadwal PONANT mencantumkan Waikelo pukul 13.30 sampai 18.30 WITA sebagai '
+                 'persinggahan pertama pelayaran sebelas hari dari Benoa yang berangkat pada 24 '
+                 'November.',
+                 'Kapal berbobot 10.992 GT dan penumpang turun ke darat dengan perahu; harga mulai '
+                 'sekitar US$7.570 per orang.',
+                 'Jumlah penumpang dan liputan media lokal tentang kunjungan ini belum ditemukan.'],
+        'visitors': 'Kapal ekspedisi kecil kini memasukkan Sumba dalam rute Bali ke Flores, '
+                    'biasanya dengan beberapa jam di darat di Waikelo atau Waingapu.',
+        'faq': [['Di mana Le Soléal singgah di Sumba?',
+                 'Kapal lego jangkar di Waikelo, pelabuhan dekat Tambolaka, Sumba Barat Daya, pada '
+                 'Kamis 26 November 2026. PONANT mencantumkan singgah pukul 13.30 sampai 18.30 '
+                 'WITA.'],
+                ['Bisakah kapal pesiar bersandar di Waikelo?',
+                 'Kapal sebesar ini tidak bersandar di dermaga kecil; penumpang turun ke darat '
+                 'dengan perahu.']],
+        'body': '<p>Kapal pesiar ekspedisi asal Prancis, Le Soléal, lego jangkar di perairan Sumba '
+                'Barat Daya pada Kamis, 26 November 2026, menjadi salah satu kunjungan kapal '
+                'pesiar mewah yang jarang terjadi di pantai barat Sumba. Kapal berbobot 10.992 GT '
+                'milik perusahaan pelayaran Prancis PONANT ini sedang menjalani pelayaran "Wild '
+                'Lands of Indonesia" selama sebelas hari yang berangkat dari Benoa, Bali, pada 24 '
+                'November.</p><h2>Ke mana kapal berlayar berikutnya</h2><p>Menurut jadwal yang '
+                'dipublikasikan PONANT, Waikelo, pelabuhan dekat Tambolaka, menjadi persinggahan '
+                'pertama pukul 13.30 sampai 18.30 WITA. Kapal lalu melanjutkan ke Dili '
+                '(Timor-Leste), Maumere (Flores), kawasan Komodo, Satonda dan Teluk Saleh '
+                '(Sumbawa), kemudian kembali ke Bali pada 4 Desember. Harga mulai sekitar US$7.570 '
+                'per orang.</p><p>Foto yang dikirim pembaca ke The Sumba Times memperlihatkan '
+                'kapal berlabuh di tengah laut dengan sebuah sekoci di sampingnya. Kapal sebesar '
+                'ini tidak bersandar di dermaga kecil Waikelo; penumpang turun ke darat dengan '
+                'perahu.</p><h2>Langganan perairan Indonesia timur</h2><p>Le Soléal, dibangun '
+                'tahun 2013, rutin berlayar di kawasan ini. Saat singgah di Pelabuhan Badas, '
+                'Sumbawa, pada 21 Juni 2025, kapal ini membawa 190 wisatawan mancanegara, menurut '
+                'Antara yang dimuat Koran Jakarta. Jumlah penumpang pada pelayaran kali ini belum '
+                'dilaporkan, dan kami belum menemukan liputan media lokal tentang singgahnya kapal '
+                'di Waikelo saat berita ini ditulis.</p><p>Kunjungan ini terjadi saat '
+                'pelabuhan-pelabuhan di Sumba bersiap menyambut lebih banyak kapal pesiar. Pelindo '
+                'menyebut <a '
+                'href="/id/travel/pelabuhan-waingapu-layanan-kapal-pesiar-pelindo-2026/">Pelabuhan '
+                'Waingapu menyiapkan gerai penukaran uang dan produk UMKM</a> untuk wisatawan '
+                'kapal pesiar, dan Gubernur NTT telah meminta pemerintah pusat memperbesar <a '
+                'href="/id/business/gubernur-ntt-percepatan-pelabuhan-waikelo-bandara-tambolaka-2026/">Pelabuhan '
+                'Waikelo</a>.</p><h2>Apa artinya bagi wisatawan, penduduk, dan '
+                'investor</h2><p>Wisatawan: kapal ekspedisi kecil kini memasukkan Sumba dalam rute '
+                'Bali ke Flores, biasanya dengan beberapa jam di darat di Waikelo atau Waingapu. '
+                'Penduduk: pada hari kunjungan kapal, ada tambahan wisatawan beberapa jam di '
+                'sekitar Tambolaka dan desa terdekat; pemandu, sopir dan pedagang lokal paling '
+                'diuntungkan. Investor: kunjungan kapal pesiar masih sesekali, tetapi menempatkan '
+                'Sumba dalam rute internasional dan memperkuat alasan untuk memperbesar Pelabuhan '
+                'Waikelo.</p>'},
+ 'sources': [['PONANT itinerary Wild Lands of Indonesia, Le Soléal, 24 Nov 2026 (via Jetsetter '
+              'Guide)',
+              'https://jetsetterguide.com/cruise-itinerary/PONANTSO241126'],
+             ['PONANT Explorations: Indonesia Explorations November - December 2026 (brochure)',
+              'https://assets.widgety.co.uk/2026/06/01/12/17/18/d58f36f4-3424-4786-81e4-4d9d21a69514/PONANT%20EXPLORATIONS%20Indonesia%20Explorations%20November%20-%20December%202026.pdf'],
+             ['Koran Jakarta (Antara): Pelabuhan Badas Sumbawa kian diminati kapal pesiar (22 Jun '
+              '2025)',
+              'https://koran-jakarta.com/2025-06-22/pelabuhan-badas-sumbawa-kian-diminati-kapal-pesiar'],
+             ['Photo sent to The Sumba Times by a reader, 26 Nov 2026 (no public link)',
+              'https://thesumbatimes.com/en/about/']],
+ 'image': {'w': 1280,
+           'h': 719,
+           'credit': 'The Sumba Times reader',
+           'page': 'https://thesumbatimes.com/img/le-soleal-ponant-expedition-ship-waikelo-sumba-2026-1280.webp',
+           'license': 'Used with permission',
+           'ai': False,
+           'caption': {'en': 'Le Soléal at anchor off Waikelo, Southwest Sumba, on 26 November '
+                             '2026, with a tender alongside. Photo: The Sumba Times reader.',
+                       'es': 'Le Soléal fondeado frente a Waikelo, en Sumba Suroccidental, el 26 '
+                             'de noviembre de 2026, con una lancha a su lado. Foto: lector de The '
+                             'Sumba Times.',
+                       'id': 'Le Soléal berlabuh di perairan Waikelo, Sumba Barat Daya, pada 26 '
+                             'November 2026, dengan sebuah sekoci di sampingnya. Foto: pembaca The '
+                             'Sumba Times.'}}},
     {'section': 'living',
      'slug': 'waingapu-ferry-port-parcel-courier-warning-2026',
      'date': '2026-11-26',
      'time': '06:00',
      'dateline': 'WAINGAPU',
      'kind': 'brief',
-     'top': True,
      'slugs': {'es': 'policia-waingapu-no-llevar-paquetes-desconocidos-ferri-2026',
                'id': 'polisi-waingapu-jangan-bawa-titipan-paket-orang-asing-feri-2026'},
      'keywords': {'en': ['Waingapu ferry port',
