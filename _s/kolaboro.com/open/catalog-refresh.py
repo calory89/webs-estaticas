@@ -10,7 +10,10 @@ import json, sys, os, hashlib, datetime
 
 ROOT = os.path.join(sys.argv[1] if len(sys.argv) > 1 else '.', '_s/kolaboro.com')
 P = os.path.join(ROOT, 'data/catalog.json'); PL = os.path.join(ROOT, 'data/catalog.jsonld')
-raw = open(P, encoding='utf-8').read(); c = json.loads(raw)
+import re as _re
+# n40 k10: heal a merge left with conflict markers by two agents refreshing at once (keep the first side; this script rewrites the values anyway)
+def _heal(t): return _re.sub(r'<<<<<<< [^\n]*\n(.*?)=======\n.*?>>>>>>> [^\n]*\n', r'\1', t, flags=_re.S)
+raw = _heal(open(P, encoding='utf-8').read()); c = json.loads(raw)
 SKIP = {'seal', 'ships', 'db', 'meta', 'schema', 'links'}
 
 def rows_of(j, unit):
@@ -69,7 +72,7 @@ c['refreshed'] = {'at': now, 'by': 'https://kolaboro.com/open/catalog-refresh.py
 open(P, 'w', encoding='utf-8').write(json.dumps(c, ensure_ascii=False, indent=1 if raw.startswith('{\n') else None) + ('\n' if raw.endswith('\n') else ''))
 # 2. the DCAT copy
 if os.path.isfile(PL):
-    rl = open(PL, encoding='utf-8').read(); L = json.loads(rl); n = 0
+    rl = _heal(open(PL, encoding='utf-8').read()); L = json.loads(rl); n = 0
     for ds in L.get('dcat:dataset', []):
         for di in ds.get('dcat:distribution', []) or []:
             d = by_url.get(((di.get('dcat:downloadURL') or {}).get('@id')) or '')
