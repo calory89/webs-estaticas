@@ -91,22 +91,41 @@
     var h = '<section class="mk-sec" id="projects"><div class="wrap"><p class="eyebrow">Projects</p><h2>All ' + C.length + ' project' + (C.length === 1 ? '' : 's') + ' tracked in ' + esc(label) + '</h2>' +
       '<p class="sub">Each project also has its own page with its name and sourced facts. Published is how many of the 6 checks the developer makes public; confirmed is how many an official or independent source backs.</p>' +
       '<div class="mk-tools" role="group" aria-label="Sort projects"><span class="lbl">Sort</span>' +
-      '<button type="button" class="mk-sort" data-s="desc" aria-pressed="true">Score, high to low</button><button type="button" class="mk-sort" data-s="asc" aria-pressed="false">Score, low to high</button><button type="button" class="mk-sort" data-s="id" aria-pressed="false">ID</button></div>' +
+      '<button type="button" class="mk-sort" data-s="desc" aria-pressed="true">Score, high to low</button><button type="button" class="mk-sort" data-s="asc" aria-pressed="false">Score, low to high</button><button type="button" class="mk-sort" data-s="id" aria-pressed="false">ID</button></div>' + filt(C) +
       '<ol class="mk-list" id="mk-list"></ol><div class="mk-acts">';
     if (top.length >= 2) h += '<a class="btn btn-hi" href="/compare/?ids=' + top.map(encodeURIComponent).join(',') + '">Compare the top ' + top.length + '</a>';
     h += '<a class="btn btn-line" href="/database#ask">Ask about this market</a></div></div></section>';
     return { html: h, draw: function(mode){
-      var s = C.slice().sort(byScore); if (mode === 'asc') s.reverse(); if (mode === 'id') s.sort(function(a, b){ return a.id < b.id ? -1 : 1; });
+      var s = C.filter(pass).sort(byScore); if (mode === 'asc') s.reverse(); if (mode === 'id') s.sort(function(a, b){ return a.id < b.id ? -1 : 1; });
       // n32s (item 259): the first 40 rows at once, the rest in slices of 80 between frames (482 rows for Dubai were one 300 ms task on a phone)
       var R = s.map(function(c){ return row(c, showMarket); }), el = $('mk-list'), tok = (el._kt = (el._kt || 0) + 1), i = 40;
-      el.innerHTML = '<li class="mk-hd" aria-hidden="true"><span>Project</span><span>' + (showMarket ? 'Market, stage, price' : 'Stage, price') + '</span><span>Published</span><span>Confirmed</span><span>Signals</span></li>' + R.slice(0, i).join('');
+      el.innerHTML = '<li class="mk-hd" aria-hidden="true"><span>Project</span><span>' + (showMarket ? 'Market, stage, price' : 'Stage, price') + '</span><span>Published</span><span>Confirmed</span><span>Signals</span></li>' + (R.length ? R.slice(0, i).join('') : '<li class="mk-none">No projects match these filters. <a href="?">Show all</a></li>');
+      var st = $('mk-fn'); if (st) st.textContent = (FIL.hy || FIL.pn) ? 'Showing ' + R.length + ' of ' + C.length + ' projects' : '';
       (function more(){ if (el._kt !== tok || i >= R.length) return; el.insertAdjacentHTML('beforeend', R.slice(i, i + 80).join('')); i += 80; setTimeout(more, 30); })();
     } };
   }
+  // n40 k4 (R02-41): filter by handover year and permit number without a reload; the state lives in the URL (?hy=2027&pn=yes), so a filtered list can be shared
+  var FIL = (function(){ var q = new URLSearchParams(location.search), hy = q.get('hy') || '', pn = q.get('pn') || ''; return { hy: /^(\d{4}|none)$/.test(hy) ? hy : '', pn: /^(yes|no)$/.test(pn) ? pn : '' }; })();
+  function pass(c){ var y = c.done ? String(c.done) : 'none'; return (!FIL.hy || FIL.hy === y) && (!FIL.pn || (FIL.pn === 'yes') === ok(c, 'permit')); }
+  function filt(C){
+    var Y = {}, none = 0; C.forEach(function(c){ if (c.done) Y[c.done] = (Y[c.done] || 0) + 1; else none++; });
+    var o = function(v, t, cur){ return '<option value="' + v + '"' + (v === cur ? ' selected' : '') + '>' + esc(t) + '</option>'; };
+    return '<div class="mk-tools mk-filt" role="group" aria-label="Filter projects"><span class="lbl">Filter</span>' +
+      '<label>Handover year <select id="mk-hy">' + o('', 'Any year', FIL.hy) + Object.keys(Y).sort().map(function(y){ return o(y, y + ' (' + Y[y] + ')', FIL.hy); }).join('') + (none ? o('none', 'Not stated (' + none + ')', FIL.hy) : '') + '</select></label>' +
+      '<label>Permit number <select id="mk-pn">' + o('', 'Any', FIL.pn) + o('yes', 'Published', FIL.pn) + o('no', 'Not published', FIL.pn) + '</select></label>' +
+      '<span class="mk-fn" id="mk-fn" role="status" aria-live="polite"></span></div>';
+  }
   function wireSort(draw){
-    draw('desc');
+    var mode = 'desc';
+    draw(mode);
+    ['mk-hy', 'mk-pn'].forEach(function(id){ var el = $(id); if (el) el.addEventListener('change', function(){
+      FIL[id === 'mk-hy' ? 'hy' : 'pn'] = el.value;
+      var q = new URLSearchParams(location.search); ['hy', 'pn'].forEach(function(k){ if (FIL[k]) q.set(k, FIL[k]); else q.delete(k); });
+      try { history.replaceState(null, '', location.pathname + (q.toString() ? '?' + q : '') + location.hash); } catch (e) {}
+      draw(mode);
+    }); });
     document.querySelectorAll('.mk-sort').forEach(function(b){ b.addEventListener('click', function(){
-      document.querySelectorAll('.mk-sort').forEach(function(x){ x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); }); draw(b.dataset.s);
+      document.querySelectorAll('.mk-sort').forEach(function(x){ x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); }); mode = b.dataset.s; draw(mode);
     }); });
   }
   function chips(list, cur){ return '<ul class="mk-mk">' + list.map(function(x){ return '<li><a href="' + x.href + '"' + (x.name === cur ? ' aria-current="page"' : '') + '>' + esc(x.name) + ' <small>' + x.n + '</small></a></li>'; }).join('') + '</ul>'; }

@@ -112,3 +112,4 @@
 /* n32s (item 259): rows below the first screens are laid out only when they come near the viewport */
 .mk-list>li:nth-child(n+24){content-visibility:auto;contain-intrinsic-size:auto 53px}
 @media(max-width:760px){.mk-list>li:nth-child(n+24){contain-intrinsic-size:auto 86px}}
+.mk-filt{margin-top:10px}.mk-filt label{display:inline-flex;align-items:center;gap:8px;font-size:.9rem;font-weight:700}.mk-filt select{min-height:44px;padding:0 10px;border-radius:10px;border:2px solid var(--ink);background:var(--card,#fff);color:var(--ink);font:inherit;font-weight:400}.mk-filt select:focus-visible{outline:3px solid var(--hivis);outline-offset:2px}.mk-fn{font-size:.86rem;color:var(--muted)}.mk-none{padding:14px 4px;list-style:none}
