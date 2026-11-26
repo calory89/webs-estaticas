@@ -55,7 +55,7 @@
     'Payment schedule': 'Calendario de pagos', 'Copy each instalment from your contract. We use it to tell you, before each one, whether the evidence supports paying.': 'Copia cada cuota de tu contrato. Lo usamos para decirte, antes de cada una, si las pruebas respaldan pagarla.',
     'Instalment': 'Cuota', 'Due': 'Vence', 'Amount': 'Importe', 'Add': 'Añadir', 'e.g. 2nd instalment': 'p. ej. 2ª cuota', 'Tied to (e.g. roof finished)': 'Ligada a (p. ej. tejado terminado)',
     'Add the unpaid instalments to your calendar': 'Añade las cuotas pendientes a tu calendario', '(reminder 7 days before each)': '(aviso 7 días antes de cada una)',
-    'Read my contract': 'Leer mi contrato', 'AI fills the schedule for you': 'La IA rellena el calendario por ti',
+    'Read my contract': 'Leer mi contrato', 'The schedule is filled in automatically': 'El calendario se rellena automáticamente',
     'Upload the contract or payment schedule (PDF or photo, up to 4 MB) or paste its text. You check every line before anything is saved. The file is read once and not stored.': 'Sube el contrato o el calendario de pagos (PDF o foto, hasta 4 MB) o pega su texto. Revisas cada línea antes de guardar nada. El archivo se lee una vez y no se guarda.',
     '…or paste the payment terms here': '…o pega aquí las condiciones de pago', 'Read payment terms': 'Leer condiciones de pago', 'Add to my schedule': 'Añadir a mi calendario',
     'Reading… this takes up to a minute.': 'Leyendo… tarda hasta un minuto.',
