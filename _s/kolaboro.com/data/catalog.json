@@ -7,7 +7,7 @@
  "summary": {
   "datasets": 385,
   "files": 441,
-  "bytes": 104065445,
+  "bytes": 104100183,
   "contracts_pass": 71,
   "contracts_fail": 3,
   "api_operations": 65,
@@ -4663,9 +4663,9 @@
    "keywords": [],
    "licence": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
    "described": false,
-   "bytes": 71706,
+   "bytes": 85203,
    "url": "https://kolaboro.com/data/i18n/kbx_n30a_i18n.json",
-   "sha256": "4df886001639d593aeaa5b82b46f0aef51c4438038a8523042dca43e311074d2",
+   "sha256": "ba66f1dbf4ebf3371725c25907f5d5b30808d154691643cd89e13d7e3998a42d",
    "http": 200,
    "media_type": "application/json",
    "format": "json",
@@ -4908,9 +4908,9 @@
    "keywords": [],
    "licence": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
    "described": false,
-   "bytes": 32268,
+   "bytes": 46724,
    "url": "https://kolaboro.com/data/i18n/kbx_net.json",
-   "sha256": "53b72f4c745ed2ff0fb24ae37d8143cd372a9b8484f85ed835342c025a797762",
+   "sha256": "a581dc67871ac90609c4fed9ac68786a478e8a855e358e67eb5e14e86a1f3d43",
    "http": 200,
    "media_type": "application/json",
    "format": "json",
@@ -4943,9 +4943,9 @@
    "keywords": [],
    "licence": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
    "described": false,
-   "bytes": 54887,
+   "bytes": 61672,
    "url": "https://kolaboro.com/data/i18n/kbx_paper.json",
-   "sha256": "ac28579885a6fea7a16da7a2edfb66b6a0215f21c225825a60682c9bb4108ca7",
+   "sha256": "beced849402916716dfad417be1f6939b8789385ad84278bb1fa7c2587924ab9",
    "http": 200,
    "media_type": "application/json",
    "format": "json",
@@ -14065,9 +14065,9 @@
   }
  ],
  "refreshed": {
-  "at": "2026-11-26T10:15:08Z",
+  "at": "2026-11-26T10:15:44Z",
   "by": "https://kolaboro.com/open/catalog-refresh.py",
-  "datasets_changed": 1,
+  "datasets_changed": 3,
   "note": "Sizes, hashes, row counts and stamps of files changed since generated_at, read from the published files. Contracts, probes and freshness status are from generated_at."
  }
 }
