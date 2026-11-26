@@ -851,7 +851,7 @@ a.k-src:hover{color:var(--k-sea);border-bottom-color:currentColor}
 :root:has(link[href*="/k/site.css"]) footer .fine{margin-top:40px;padding-top:20px;border-top:1px solid var(--k-line)}
 :root:has(link[href*="/k/site.css"]) footer .news .qform{max-width:360px}
 /* n40 d9: market key figures (#dash.d40): the two named delay counts carry a warm edge; translated pages open with the median score */
-.d40 .d40-t.d9-w{border-inline-start:4px solid var(--k-warn);background:color-mix(in srgb,var(--k-warn-bg) 55%,var(--k-surface))}
+.d40 .d40-t.d9-w{border-inline-start:4px solid var(--k-warn);background:var(--k-warn-bg)}
 .d40 .d40-t .d40-v{font-size:clamp(1.6rem,3.2vw,2rem);letter-spacing:-.01em}
 .d40 .d40-t .d40-l{font-weight:650;color:var(--k-ink-2)}
 .d40 .d40-s a{font-weight:650}
