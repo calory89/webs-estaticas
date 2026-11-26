@@ -7,16 +7,6 @@ const SITE = 'https://kolaboro.com';
 const ID_RE = /^[A-Z]{2,5}-[0-9]{3,4}$/;
 const CHECKS = ['permit', 'escrow', 'progress', 'plans', 'record', 'returns_ok'];
 const CONFIRMED = ['registry', 'independent'];
-const NAME = { permit: 'Permit or licence number', escrow: 'Deposit protection', progress: 'Construction progress', plans: 'Site or floor plans', record: 'Developer track record', returns_ok: 'No guaranteed returns' };
-const WHAT = {
-permit: 'an official permit or sales licence number a buyer can look up',
-escrow: 'escrow, a bank guarantee or a trust account for buyer payments',
-progress: 'a percentage built or dated progress updates',
-plans: 'site or floor plans a buyer can compare with the contract',
-record: 'past projects delivered, stated in public',
-returns_ok: 'no "guaranteed" rental return language in the marketing'
-};
-const LVL = { registry: 'confirmed on an official register', independent: 'confirmed by an independent source (regulator notice, court record, filing or major newspaper)', developer: 'stated only by the developer, its agents or listing portals', contradicted: 'contradicted: sources disagree with the developer', none: 'no source found' };
 const TIER = { clear: 'Strong public disclosure', mixed: 'Some gaps', caution: 'Check carefully' };
 const METHOD = { scoring: SITE + '/open/scoring.py', how: SITE + '/how-we-score', levels: SITE + '/database', whatif: SITE + '/p/whatif.js' };
 function out(o, s = 200, maxAge) {
@@ -60,19 +50,19 @@ const s = scoreOf(ck), vs = vscoreOf(V), tier = tierOf(s, flags, researched.leng
 const rows = CHECKS.map(k => {
 const pub = met(ck, k), lv = level(V[k]), res = researched.includes(k);
 let state, text;
-if (!res) { state = 'not_researched'; text = NAME[k] + TB.kbx_ins__t.k1; }
-else if (pub) { state = CONFIRMED.includes(lv) ? 'published_confirmed' : lv === 'contradicted' ? 'published_contradicted' : 'published'; text = NAME[k] + ': published (' + WHAT[k] + '). Source level: ' + LVL[lv] + '.'; }
-else if (k === 'permit' && ck.permit === 1) { state = 'claimed'; text = NAME[k] + TB.kbx_ins__s.k2; }
-else if (k === 'returns_ok') { state = 'missing'; text = NAME[k] + TB.kbx_ins__t.k2; }
-else { state = 'missing'; text = NAME[k] + ': not published (we look for ' + WHAT[k] + ').'; }
-return { check: k, name: NAME[k], published: pub, level: lv, researched: res, state, text };
+if (!res) { state = 'not_researched'; text = TB.kbx_ins__t.o_NAME[k] + TB.kbx_ins__t.k1; }
+else if (pub) { state = CONFIRMED.includes(lv) ? 'published_confirmed' : lv === 'contradicted' ? 'published_contradicted' : 'published'; text = TB.kbx_ins__t.o_NAME[k] + ': published (' + TB.kbx_ins__t.o_WHAT[k] + '). Source level: ' + TB.kbx_ins__t.o_LVL[lv] + '.'; }
+else if (k === 'permit' && ck.permit === 1) { state = 'claimed'; text = TB.kbx_ins__t.o_NAME[k] + TB.kbx_ins__s.k2; }
+else if (k === 'returns_ok') { state = 'missing'; text = TB.kbx_ins__t.o_NAME[k] + TB.kbx_ins__t.k2; }
+else { state = 'missing'; text = TB.kbx_ins__t.o_NAME[k] + ': not published (we look for ' + TB.kbx_ins__t.o_WHAT[k] + ').'; }
+return { check: k, name: TB.kbx_ins__t.o_NAME[k], published: pub, level: lv, researched: res, state, text };
 });
 const pubRows = rows.filter(r => r.published), miss = rows.filter(r => !r.published && r.researched);
 const unconf = pubRows.filter(r => !CONFIRMED.includes(r.level)), contra = rows.filter(r => r.level === 'contradicted');
 const raise = [];
 miss.forEach(r => {
 const s2 = s + 1, t2 = tierOf(s2, flags, researched.length);
-raise.push({ check: r.check, kind: 'publish', text: (r.check === 'returns_ok' ? TB.kbx_ins__t.k3 : 'If the developer published ' + WHAT[r.check]) + ': published ' + s + ' to ' + s2 + ' of ' + mx + (t2 !== tier ? ', tier "' + TIER[tier] + '" to "' + TIER[t2] + '"' : '') + '.', score: [s, s2], tier: [tier, t2] });
+raise.push({ check: r.check, kind: 'publish', text: (r.check === 'returns_ok' ? TB.kbx_ins__t.k3 : 'If the developer published ' + TB.kbx_ins__t.o_WHAT[r.check]) + ': published ' + s + ' to ' + s2 + ' of ' + mx + (t2 !== tier ? ', tier "' + TIER[tier] + '" to "' + TIER[t2] + '"' : '') + '.', score: [s, s2], tier: [tier, t2] });
 });
 unconf.forEach(r => raise.push({ check: r.check, kind: 'confirm', text: TB.kbx_ins__t.k4 + r.name.toLowerCase() + ': confirmed ' + vs + ' to ' + (vs + 1) + ' of 6.', vscore: [vs, vs + 1] }));
 if (flags.length) raise.push({ kind: 'flags', text: 'While ' + (flags.length === 1 ? 'a problem appears' : flags.length + ' problems appear') + TB.kbx_ins__t.k5 + TIER.caution + TB.kbx_ins__t.k6 });
@@ -111,7 +101,7 @@ const rec = {}; Object.keys(REN).forEach(k => { rec[REN[k]] = k === 'tier' && c.
 flat('record', rec, L, 0);
 (c.q || []).slice(0, 8).forEach((x, i) => L.push(['record.question_to_ask[' + i + ']', String(x)]));
 const ck = c.checks || {}, rs = ck.researched && ck.researched.length ? ck.researched : CHECKS;
-const read = {}; CHECKS.forEach(k => { read[NAME[k]] = !rs.includes(k) ? 'not researched' : met(ck, k) ? (k === 'progress' && typeof ck.progress === 'number' ? 'published (' + ck.progress + '% built stated)' : 'published') : k === 'permit' && ck.permit === 1 ? 'permit claimed, no number published' : k === 'returns_ok' ? TB.kbx_ins__t.k14 : 'not published'; });
+const read = {}; CHECKS.forEach(k => { read[TB.kbx_ins__t.o_NAME[k]] = !rs.includes(k) ? 'not researched' : met(ck, k) ? (k === 'progress' && typeof ck.progress === 'number' ? 'published (' + ck.progress + '% built stated)' : 'published') : k === 'permit' && ck.permit === 1 ? 'permit claimed, no number published' : k === 'returns_ok' ? TB.kbx_ins__t.k14 : 'not published'; });
 flat('record.checks', read, L, 1);
 flat('record.verified', c.verified, L, 1); flat('record.claims', c.claims, L, 1);
 flat('record.page_changes', (c.history || []).map(h => ({ date: h.d, change: h.f, from: h.from, to: h.to })), L, 1);

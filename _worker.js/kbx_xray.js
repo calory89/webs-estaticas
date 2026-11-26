@@ -364,11 +364,10 @@ const rp = d.report; c.status = 'found'; c.summary = clip(rp.summary || '', 300)
 c.facts = ['project', 'developer', 'location', 'completion', 'price_from', 'title_type', 'permit_claim', 'advertised_return'].filter(k => rp[k]).map(k => ({ k: k.replace(/_/g, ' '), v: String(rp[k]), src: X.input.url }));
 return c;
 }
-const EV_TITLES = { location: 'Location', satellite: 'Satellite image now', images: 'Images on the page', ppm: 'Price per m² vs official data', market: 'Market base rates', developer: 'Developer track record', law: 'Buyer protection law', similar: 'Similar projects nearby' };
 const EV_GAPS = { location: ['site'], satellite: ['site'], law: ['contract'], developer: ['developer'], ppm: [], market: [], images: [], similar: [] };
 const absU = x => typeof x === 'string' && x ? (x.startsWith('/') ? ORIGIN + x : x) : undefined;
 function evCard(c) {
-const k = { id: c.id, n: c.n, title: c.title || EV_TITLES[c.id] || c.id, status: c.status === 'not_applicable' ? 'skipped' : (c.status || 'ok'), summary: c.summary || '',
+const k = { id: c.id, n: c.n, title: c.title || TB.kbx_xray__t.o_EV_TITLES[c.id] || c.id, status: c.status === 'not_applicable' ? 'skipped' : (c.status || 'ok'), summary: c.summary || '',
 facts: (c.items || []).slice(0, 30).map(i => ({ k: String(i.label || ''), v: i.value == null ? '' : String(i.value), q: i.quote || undefined, src: absU(i.url), kind: i.kind || undefined })),
 limits: Array.isArray(c.limits) ? c.limits.slice(0, 6) : undefined, paid: c.paid || undefined, data: c.data || undefined,
 gaps: (c.status === 'found' && c.id === 'developer') ? [] : (EV_GAPS[c.id] || []),
@@ -407,7 +406,7 @@ let ev = null; try { ev = await import('./kbx_xray_ev.js'); if (typeof ev.evRun 
 const evIds = ev && (inp.url || m.project) ? (ev.EV_IDS || []) : [];
 const list = CARDS.filter(c => !(c.web && !inp.host));
 if (opts.desk && inp.url) list.push({ id: 'desk', title: 'Desk review (AI)', run: cardDesk, where: 'edge+ai' });
-emit({ type: 'plan', checks: list.map(c => ({ id: c.id, title: c.title })).concat(evIds.map(id => ({ id, title: EV_TITLES[id] || id }))), input: inp, at: started, colo: (req.cf && req.cf.colo) || null, version: VERSION });
+emit({ type: 'plan', checks: list.map(c => ({ id: c.id, title: c.title })).concat(evIds.map(id => ({ id, title: TB.kbx_xray__t.o_EV_TITLES[id] || id }))), input: inp, at: started, colo: (req.cf && req.cf.colo) || null, version: VERSION });
 X.page = inp.url ? (async () => {
 const t = Date.now(), rec = { name: 'The project website', url: inp.url, status: 0, bytes: 0, sha256: null, ms: 0 }; allSources.push(rec);
 const pg = await fetchPage(new URL(inp.url));
@@ -442,7 +441,7 @@ const page = pg && pg.ok ? { url: inp.url, final_url: pg.url, html: pg.html, tex
 const seen = new Set();
 try { await ev.evRun(page, hint, env, ctx, c => { if (!c || !c.id || seen.has(c.id)) return; seen.add(c.id); const k = evCard(c); done(k, { id: k.id, title: k.title, where: 'edge' }, t, []); }, {}); }
 catch (e) {}
-evIds.filter(id => !seen.has(id)).forEach(id => done({ status: 'error', summary: 'This check did not answer.', sk: 'error' }, { id, title: EV_TITLES[id] || id }, t, []));
+evIds.filter(id => !seen.has(id)).forEach(id => done({ status: 'error', summary: 'This check did not answer.', sk: 'error' }, { id, title: TB.kbx_xray__t.o_EV_TITLES[id] || id }, t, []));
 })());
 await Promise.all(jobs);
 return finish(cards, inp, started, t0, opts, emit, allSources);

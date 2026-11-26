@@ -13,8 +13,7 @@ const DAY = 864e5;
 const monday = iso => { const d = new Date(iso + 'T00:00:00Z'); return new Date(d.getTime() - ((d.getUTCDay() + 6) % 7) * DAY).toISOString().slice(0, 10); };
 const addD = (iso, n) => new Date(new Date(iso + 'T00:00:00Z').getTime() + n * DAY).toISOString().slice(0, 10);
 function isoWeek(iso) { const d = new Date(iso + 'T00:00:00Z'), th = new Date(d.getTime() + (3 - (d.getUTCDay() + 6) % 7) * DAY), y = th.getUTCFullYear(), j4 = new Date(Date.UTC(y, 0, 4)); return { y, n: 1 + Math.round(((th - j4) / DAY - 3 + (j4.getUTCDay() + 6) % 7) / 7) }; }
-const WL = { en: 'week {w}, {y}', es: 'semana {w} de {y}', de: 'KW {w}/{y}', fr: 'semaine {w}, {y}', nl: 'week {w}, {y}', ru: '{w}-я неделя {y}', zh: '{y}年第{w}周', ar: 'الأسبوع {w}، {y}' };
-const wkLabel = (l, w) => { const k = isoWeek(w); return (WL[l] || WL.en).replace('{w}', k.n).replace('{y}', k.y); };
+const wkLabel = (l, w) => { const k = isoWeek(w); return (TB.kbx_n33a__t.o_WL[l] || TB.kbx_n33a__t.o_WL.en).replace('{w}', k.n).replace('{y}', k.y); };
 function span(d) {
 const s = String(d || '').trim(); let m;
 if ((m = /^(20\d\d)-(\d\d)(?:-\d\d)?$/.exec(s))) { const v = +m[1] * 12 + +m[2]; return [v, v]; }

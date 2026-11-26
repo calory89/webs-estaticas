@@ -207,7 +207,6 @@ url: TB.kbx_p_hz__t.k14 + f.properties.Volcano_Number })).filter(x => x.dist_km 
 return { ok: true, radius_km: radiusKm, count: v.length, nearest: v.slice(0, 4), source: src, query: q, limits };
 } catch (e) { return { ok: false, why: String(e.message || e).slice(0, 80), source: src, query: q, limits }; }
 }
-const OVERPASS = ['https://overpass-api.de/api/interpreter', 'https://maps.mail.ru/osm/tools/overpass/api/interpreter', 'https://overpass.kumi.systems/api/interpreter'];
 function segKm(lat, lng, a, b) {
 const kx = 111.32 * Math.cos(R(lat)), ky = 110.57;
 const ax = (a.lon - lng) * kx, ay = (a.lat - lat) * ky, bx = (b.lon - lng) * kx, by = (b.lat - lat) * ky;
@@ -232,7 +231,7 @@ const one = async ep => {   // both public servers are asked at once; the first 
 let lastErr = '';
 const ne = neCoast(lat, lng, radiusKm, opt).catch(e => ({ ok: false, why: String(e.message || e).slice(0, 60) }));
 try {
-const { best, ep } = await Promise.any(OVERPASS.map(one));
+const { best, ep } = await Promise.any(TB.kbx_p_hz__t.o_OVERPASS.map(one));
 if (best === Infinity) return { ok: true, within_km: radiusKm, distance_m: null, beyond: true, source: src, query, limits };
 return { ok: true, within_km: radiusKm, distance_m: best < 1 ? Math.round(best * 1000 / 10) * 10 : Math.round(best * 1000 / 50) * 50, source: src, query, limits, endpoint: ep.replace(/\/api\/interpreter$/, '') };
 } catch (e) { lastErr = e && e.errors ? e.errors.map(x => String(x.message || x).slice(0, 50)).join('; ') : String(e.message || e).slice(0, 80); }
@@ -240,7 +239,6 @@ const f = await ne;
 if (f.ok) { f.osm_failed = lastErr || 'no Overpass server answered'; return f; }
 return { ok: false, why: (lastErr || 'no Overpass server answered') + '; fallback: ' + f.why, source: src, limits };
 }
-const NE_SRC = { name: 'Natural Earth 1:10m land outline (fallback, used because no OpenStreetMap server answered)', url: 'https://www.naturalearthdata.com/about/terms-of-use/', license: 'Public domain (Natural Earth), redistributed by world-atlas 2.0.2' };
 async function neCoast(lat, lng, radiusKm, opt) {
 const tx = Math.floor((lng + 180) / 10) * 10 - 180, ty = Math.floor((lat + 90) / 10) * 10 - 90;
 const path = '/data/coast/' + tx + '.json';
@@ -254,9 +252,9 @@ for (const e of d.l) {
 let x = e[0], y = e[1], prev = { lon: ox + x * sx, lat: oy + y * sy };
 for (let i = 2; i < e.length; i += 2) { x += e[i]; y += e[i + 1]; const cur = { lon: ox + x * sx, lat: oy + y * sy }; best = Math.min(best, segKm(lat, lng, prev, cur)); prev = cur; }
 }
-if (!(best <= radiusKm)) return { ok: true, approx: true, within_km: radiusKm, distance_m: null, beyond: true, source: NE_SRC, query, limits: TB.kbx_p_hz__s.NE_LIMITS };
-return best < 1 ? { ok: true, approx: true, within_km: radiusKm, distance_m: null, under_m: 1000, source: NE_SRC, query, limits: TB.kbx_p_hz__s.NE_LIMITS }
-: { ok: true, approx: true, within_km: radiusKm, distance_m: Math.round(best * 2) * 500, source: NE_SRC, query, limits: TB.kbx_p_hz__s.NE_LIMITS };
+if (!(best <= radiusKm)) return { ok: true, approx: true, within_km: radiusKm, distance_m: null, beyond: true, source: TB.kbx_p_hz__t.o_NE_SRC, query, limits: TB.kbx_p_hz__s.NE_LIMITS };
+return best < 1 ? { ok: true, approx: true, within_km: radiusKm, distance_m: null, under_m: 1000, source: TB.kbx_p_hz__t.o_NE_SRC, query, limits: TB.kbx_p_hz__s.NE_LIMITS }
+: { ok: true, approx: true, within_km: radiusKm, distance_m: Math.round(best * 2) * 500, source: TB.kbx_p_hz__t.o_NE_SRC, query, limits: TB.kbx_p_hz__s.NE_LIMITS };
 }
 export const SOURCES = ['elevation', 'flood', 'quakes', 'tsunami', 'volcano', 'coast'];
 export async function all(lat, lng, opt = {}) {

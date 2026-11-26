@@ -20,11 +20,11 @@ const MEMO = {};
 function file(e, p, t) { return FQ[p] || (FQ[p] = file0(e, p, t).finally(() => { delete FQ[p]; })); }   // n40 k21: one shared read per file
 const FQ = {};
 async function file0(env, p, ttl) {
-  const m = MEMO[p]; if (m && m.v && Date.now() - m.t < (ttl || 600000)) return m.v;
-  let v = null;
-  try { const r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com' + p)); if (r.ok) v = await r.json(); } catch (e) { v = null; }
-  if (!v) { try { const r = await fetch(ORIGIN + p, { cf: { cacheTtl: 600 } }); if (r.ok) v = await r.json(); } catch (e) { v = null; } }
-  MEMO[p] = { t: Date.now(), v }; return v;
+const m = MEMO[p]; if (m && m.v && Date.now() - m.t < (ttl || 600000)) return m.v;
+let v = null;
+try { const r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com' + p)); if (r.ok) v = await r.json(); } catch (e) { v = null; }
+if (!v) { try { const r = await fetch(ORIGIN + p, { cf: { cacheTtl: 600 } }); if (r.ok) v = await r.json(); } catch (e) { v = null; } }
+MEMO[p] = { t: Date.now(), v }; return v;
 }
 const pre = l => l === 'en' ? '' : '/' + l;
 const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -41,7 +41,6 @@ const dirA = l => l === 'ar' ? ' dir="rtl"' : '';
 const LP = '(?:(es|de|fr|nl|ru|zh|ar)\\/)?';
 export const PATHS = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:tools\/due-diligence|markets\/compare|search|projects\/[a-z0-9-]{1,90}\/questions)\/?$|^\/api\/v1\/projects\/[a-z0-9-]{1,90}\/questions$/;
 const RX = { q: new RegExp('^\\/' + LP + 'projects\\/([a-z0-9-]{1,90})\\/questions(\\/?)$'), dd: new RegExp('^\\/' + LP + 'tools\\/due-diligence(\\/?)$'), mc: new RegExp('^\\/' + LP + 'markets\\/compare(\\/?)$'), se: new RegExp('^\\/' + LP + 'search(\\/?)$'), api: /^\/api\/v1\/projects\/([a-z0-9-]{1,90})\/questions$/ };
-const PM35 = { en: 'Check a price', es: 'Comprobar un precio', fr: 'Vérifier un prix', de: 'Preis prüfen', nl: 'Prijs controleren', ru: 'Проверить цену', zh: '检查价格', ar: 'افحص سعرًا' };
 const ALL = [['se', '/search/'], ['dd', '/tools/due-diligence/'], ['mc', '/markets/compare/'], ['wl', '/watchlist/']];
 const CSS = '<style>.n34{max-width:1100px}.n34 h2{margin:28px 0 8px;font-size:1.3rem}.n34 p,.n34 li{line-height:1.6}.n34 .k-xs{font-size:.9rem;color:var(--muted,#59626B)}' +
 '.n34-tw{overflow-x:auto;border:1px solid var(--line,#d5d3cc);border-radius:12px;margin:10px 0 22px;-webkit-overflow-scrolling:touch}.n34 table{width:100%;border-collapse:collapse;font-size:.93rem}.n34 th,.n34 td{padding:8px 10px;border-bottom:1px solid var(--line,#d5d3cc);text-align:start;vertical-align:top}.n34 thead th{font-size:.82rem;background:var(--card,#fff)}.n34 td.n{font-variant-numeric:tabular-nums}' +
@@ -210,7 +209,7 @@ const R = [
 [t(l, 'mc_permit'), m => bdi(l, pct(m.permit_published, m.projects)) + ' <span class="k-xs">' + bdi(l, nf(m.permit_published, l) + ' / ' + nf(m.projects, l)) + '</span>'],
 [t(l, 'mc_ti'), m => m.disclosure ? bdi(l, nf(m.disclosure.transparency_index, l)) + ' <span class="k-xs">/ 100</span>' : '<span class="mut">–</span>'],
 [t(l, 'mc_dep'), m => m.disclosure && m.disclosure.deposit_protection_pct != null ? bdi(l, nf(m.disclosure.deposit_protection_pct, l) + '%') : '<span class="mut">–</span>'],
-[t(l, 'mc_ppm'), m => m.ppm ? bdi(l, esc(m.ppm.currency) + ' ' + nf(m.ppm.median, l)) + ' ' + ci(l, m.ppm.ci95, 0) + ' <span class="k-xs">' + esc(tf(l, 'n_is', { n: nf(m.ppm.n, l) })) + (m.ppm.n < 5 ? ', ' + esc(t(l, 'few')) : '') + '</span>' + (m.ppm.n >= 5 ? ' <a class="k-xs" href="' + pre(l) + '/tools/price-per-m2/?m=' + m.slug + '">' + esc(PM35[l] || PM35.en) + '</a>' : '') : '<span class="mut">' + esc(t(l, 'none_rec')) + '</span>'],
+[t(l, 'mc_ppm'), m => m.ppm ? bdi(l, esc(m.ppm.currency) + ' ' + nf(m.ppm.median, l)) + ' ' + ci(l, m.ppm.ci95, 0) + ' <span class="k-xs">' + esc(tf(l, 'n_is', { n: nf(m.ppm.n, l) })) + (m.ppm.n < 5 ? ', ' + esc(t(l, 'few')) : '') + '</span>' + (m.ppm.n >= 5 ? ' <a class="k-xs" href="' + pre(l) + '/tools/price-per-m2/?m=' + m.slug + '">' + esc(TB.kbx_n34b__t.o_PM35[l] || TB.kbx_n34b__t.o_PM35.en) + '</a>' : '') : '<span class="mut">' + esc(t(l, 'none_rec')) + '</span>'],
 [t(l, 'mc_regs'), m => m.registers.length ? TB.kbx_n34b__t.k18 + m.registers.map(r => '<li><a href="' + esc(r.url) + TB.kbx_n34b__t.k19 + esc(r.name) + '</a> <span class="k-xs">' + esc(t(l, 'auto_' + String(r.automation || '').replace(/[^a-z]+/g, '_')) || r.automation || '') + '</span></li>').join('') + '</ul>' : '<span class="mut">' + esc(t(l, 'mc_noreg')) + '</span>']
 ];
 const tbl = table([t(l, 'mc_metric')].concat(M.map(m => m.market)), R.map(r => '<tr><th scope="row">' + esc(r[0]) + '</th>' + M.map(m => '<td>' + r[1](m) + '</td>').join('') + '</tr>'), t(l, 'mc_cap'));

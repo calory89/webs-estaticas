@@ -28,16 +28,6 @@ const pg = { title: o.title + ' | Kolaboro', desc: o.desc, canon: o.canon, body,
 ld: { '@context': 'https://schema.org', '@graph': [{ '@type': o.type || 'WebPage', name: o.title, url: o.canon, inLanguage: lang, description: o.desc, dateModified: o.mod || undefined, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' } }].concat(o.ld || []) } };
 return new Response(await N.assemble(pg, lang, sh), { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=600' } });
 }
-const A11Y = {
-en: { sum: 'Median index of the {n} projects: {a} on {d1}, {b} on {d2}.', tbl: 'Data table of the median line', d: 'Date', m: 'Median index (first copy = 100)' },
-es: { sum: 'Índice mediano de los {n} proyectos: {a} el {d1}, {b} el {d2}.', tbl: 'Tabla de datos de la línea mediana', d: 'Fecha', m: 'Índice mediano (primera copia = 100)' },
-fr: { sum: 'Indice médian des {n} projets : {a} le {d1}, {b} le {d2}.', tbl: 'Tableau des données de la ligne médiane', d: 'Date', m: 'Indice médian (première copie = 100)' },
-de: { sum: 'Medianindex der {n} Projekte: {a} am {d1}, {b} am {d2}.', tbl: 'Datentabelle der Medianlinie', d: 'Datum', m: 'Medianindex (erste Kopie = 100)' },
-nl: { sum: 'Mediane index van de {n} projecten: {a} op {d1}, {b} op {d2}.', tbl: 'Gegevenstabel van de mediaanlijn', d: 'Datum', m: 'Mediane index (eerste kopie = 100)' },
-ru: { sum: 'Медианный индекс {n} проектов: {a} на {d1}, {b} на {d2}.', tbl: 'Таблица данных медианной линии', d: 'Дата', m: 'Медианный индекс (первая копия = 100)' },
-zh: { sum: '{n} 个项目的中位指数：{d1} 为 {a}，{d2} 为 {b}。', tbl: '中位线数据表', d: '日期', m: '中位指数（首份副本 = 100）' },
-ar: { sum: 'المؤشر الوسيط لـ{n} مشروعًا: {a} في {d1}، و{b} في {d2}.', tbl: 'جدول بيانات الخط الوسيط', d: 'التاريخ', m: 'المؤشر الوسيط (النسخة الأولى = 100)' }
-};
 function phChart(e, lang) {
 const W = 720, Hh = 300, pl = 44, pr = 12, pt = 12, pb = 30, ms = d => Date.parse(d + 'T00:00:00Z');
 const t0 = ms(e.a), t1 = Math.max(ms(e.b), t0 + 864e5 * 30);
@@ -53,7 +43,7 @@ const lines = e.L.map(r => '<polyline class="n3-pl" points="' + r.pts.map(p => X
 const days = [...new Set(e.L.flatMap(r => r.pts.map(p => p[0])))].sort(), med = [];
 for (const d of days) { const v = []; for (const r of e.L) { if (r.pts[0][0] > d) continue; let last = null; for (const p of r.pts) { if (p[0] <= d) last = p[1]; else break; } v.push(last); } if (v.length >= 3) med.push([d, quant(v, .5)]); }
 const ml = med.length > 1 ? '<polyline class="n3-med" points="' + med.map(p => X(p[0]).toFixed(1) + ',' + Y(p[1]).toFixed(1)).join(' ') + '"/>' : '';
-const A11 = A11Y[lang] || A11Y.en, sid = 'kph-s' + (e.mk ? String(e.mk).toLowerCase().replace(/[^a-z0-9]+/g, '') : 'all');
+const A11 = TB.kbx_n30c__t.o_A11Y[lang] || TB.kbx_n30c__t.o_A11Y.en, sid = 'kph-s' + (e.mk ? String(e.mk).toLowerCase().replace(/[^a-z0-9]+/g, '') : 'all');
 const sum = med.length > 1 ? A11.sum.replace('{n}', num(e.L.length, lang)).replace('{a}', num(med[0][1], lang, 1)).replace('{d1}', fdt(med[0][0], lang)).replace('{b}', num(med[med.length - 1][1], lang, 1)).replace('{d2}', fdt(med[med.length - 1][0], lang)) : '';
 const tbl = med.length > 1 ? '<details class="kph-dt"><summary>' + esc(A11.tbl) + TB.kbx_n30c__t.k2 + esc(A11.d) + '</th><th scope="col" class="k-n">' + esc(A11.m) + '</th></tr></thead><tbody>' +
 (med.length > 80 ? med.filter((p, i) => i % Math.ceil(med.length / 80) === 0 || i === med.length - 1) : med).map(p => '<tr><td>' + esc(fdt(p[0], lang)) + '</td><td class="k-n">' + num(p[1], lang, 1) + '</td></tr>').join('') + '</tbody></table></div></details>' : '';
@@ -161,12 +151,11 @@ TB.kbx_n30c__s.k11 +
 '<script>' + TB.kbx_n30c__s.BUILDER_JS + '</script>';
 return shellPage(shell, lang, { title: t(lang, 'w_t'), h1: t(lang, 'w_t'), lead: t(lang, 'w_lead'), desc: t(lang, 'w_d'), canon: ORIGIN + P + '/tools/widget/', alt: l => ORIGIN + pre(l) + '/tools/widget/', body, crumb: [['/tools/', t(lang, 'cr_tools')]] });
 }
-const TEMPLATES = [['tpl_home', '/'], ['tpl_hub', '/projects/'], ['tpl_proj', '/projects/emaar-golf-vale/'], ['tpl_dev', '/developers/emaar-properties/'], ['tpl_mk', '/m/dubai/'], ['tpl_rank', '/rankings/transparency/'], ['tpl_map', '/map/']];
 async function measure(ctx) {
 const ck = new Request(ORIGIN + '/__n30c_weight/v1');
 try { const hit = await caches.default.match(ck); if (hit) return await hit.json(); } catch (e) {}
 const H = { 'user-agent': 'kolaboro-status-probe/1.0', accept: 'text/html' }, js = new Map();
-const pages = await Promise.all(TEMPLATES.map(async ([k, p]) => {
+const pages = await Promise.all(TB.kbx_n30c__t.o_TEMPLATES.map(async ([k, p]) => {
 const t0 = Date.now(); let r; try { r = await fetch(ORIGIN + p, { headers: H }); } catch (e) { return { k, p, ok: false }; }
 const html = await r.text(), ms = Date.now() - t0;
 const S = [...html.matchAll(/<script\b[^>]*\bsrc="(\/[^"]+)"/g)].map(m => m[1]).filter(s => !/^\/\//.test(s));

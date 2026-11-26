@@ -20,7 +20,6 @@ const j = a => a.join(SEP[lang] || ', ');
 return '<p class="k31q"><b class="kans-l">' + esc(t31(lang, 'q_lbl')) + '</b> ' + esc(t31(lang, 'known', { a: k.length ? j(k) : t31(lang, 'none_k') })) + (u.length ? ' ' + esc(t31(lang, 'unknown', { b: j(u) })) : '') + '</p>';
 }
 export const nrNote = lang => '<p class="k31nr" role="note"><b>' + esc(t31(lang, 'nr_h')) + '</b> ' + esc(t31(lang, 'nr_t')) + ' <a href="' + pre(lang) + '/how-we-work/">' + esc(t31(lang, 'nr_l')) + '</a></p>';
-const ASK34 = { en: 'All questions, with the reason for each', es: 'Todas las preguntas, con su motivo', fr: 'Toutes les questions, avec leur raison', de: 'Alle Fragen mit Begründung', nl: 'Alle vragen, met de reden', ru: 'Все вопросы с причинами', zh: '全部问题及原因', ar: 'كل الأسئلة مع أسبابها' };
 export function askHtml(lang, o) {
 const Q = [], st = {}; for (const [key, , s] of o.L6) st[key] = s;
 const n = o.n, h = o.h;
@@ -33,7 +32,7 @@ if (st.build && (st.build[0] === 'nc' || st.build[0] === 'part')) Q.push(t31(lan
 if (!o.price) Q.push(t31(lang, 'a_price'));
 Q.push(t31(lang, 'a_title'));
 return '<ol>' + Q.slice(0, 5).map(q => '<li>' + esc(q) + '</li>').join('') + TB.kbx_n31d__t.k0 + encodeURIComponent(o.id) + '" data-k31as>' + esc(t31(lang, 'ask_b')) + '</a>' +
-(o.s ? ' · <a href="' + (lang === 'en' ? '' : '/' + lang) + '/projects/' + o.s + '/questions/" rel="nofollow">' + esc(ASK34[lang] || ASK34.en) + '</a>' : '') + '</p>';
+(o.s ? ' · <a href="' + (lang === 'en' ? '' : '/' + lang) + '/projects/' + o.s + '/questions/" rel="nofollow">' + esc(TB.kbx_n31d__t.o_ASK34[lang] || TB.kbx_n31d__t.o_ASK34.en) + '</a>' : '') + '</p>';
 }
 const R = 6371, rad = d => d * Math.PI / 180;
 const km = (a, b, c, d) => 2 * R * Math.asin(Math.sqrt(Math.sin(rad(c - a) / 2) ** 2 + Math.cos(rad(a)) * Math.cos(rad(c)) * Math.sin(rad(d - b) / 2) ** 2));

@@ -193,7 +193,6 @@ const ld = { '@context': 'https://schema.org', '@graph': [{ '@type': 'WebPage', 
 { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Kolaboro', item: ORIGIN + P + '/' }, { '@type': 'ListItem', position: 2, name: L.eng, item: ORIGIN + '/engineering/' }, { '@type': 'ListItem', position: 3, name: L.dq_h1, item: canonU }] }] };
 return assemble({ title: L.dq_title + ' | Kolaboro', desc: L.dq_lead.slice(0, 155), canon: canonU, body, ld, lastmod: q.data_updated, alt: l => ORIGIN + pre(l) + '/engineering/data-quality/' }, lang, shell, '/engineering/');
 }
-const STAGE = { 'off-plan': { es: 'sobre plano', de: 'in Planung', fr: 'sur plan', nl: 'op plan', ru: 'на этапе проекта', zh: '期房', ar: 'على المخطط' }, 'under construction': { es: 'en construcción', de: 'im Bau', fr: 'en construction', nl: 'in aanbouw', ru: 'строится', zh: '在建', ar: 'قيد الإنشاء' }, completed: { es: 'terminado', de: 'fertiggestellt', fr: 'achevé', nl: 'opgeleverd', ru: 'завершён', zh: '已完工', ar: 'مكتمل' } };
 async function certificate(env, slug) {
 const n = await N(), ix = await n.data(env), x = ix.bySlug.get(slug); if (!x) return null;
 const c = ix.caseBy.get(x.id) || {}, rvd = n.reviewed(c), ho = n.handoverOf(ix, x), page = n.okHttp(x.url) ? n.fixU(x.url) : null, rw = x.rw || c.register || null;
@@ -218,7 +217,7 @@ return { x, cert, signature };
 async function certPage(req, u, env, ctx, shell, lang, slug) {
 const L = T[lang], P = pre(lang), r = await certificate(env, slug); if (!r) return null;
 const { x, cert, signature } = r, F = cert.facts, K = L.ce_k, h = (u.searchParams.get('h') || '').toLowerCase().replace(/[^0-9a-f]/g, '').slice(0, 64);
-const yn = v => v ? L.ce_yes : L.ce_no, stage = F.stage ? (lang === 'en' ? F.stage : ((STAGE[F.stage] || {})[lang] || F.stage)) : '';
+const yn = v => v ? L.ce_yes : L.ce_no, stage = F.stage ? (lang === 'en' ? F.stage : ((TB.kbx_n30b__t.o_STAGE[F.stage] || {})[lang] || F.stage)) : '';
 const row = (k, v) => v ? '<tr><th scope="row">' + esc(K[k]) + '</th><td>' + v + '</td></tr>' : '';
 const a = (href, t) => '<a href="' + esc(href) + '" rel="nofollow noopener" target="_blank"><bdi>' + esc(t) + '</bdi></a>';
 const host = s => { try { return new URL(s).hostname.replace(/^www\./, ''); } catch (e) { return s; } };
@@ -263,11 +262,10 @@ const v = { openapi: '3.1.0', info: { title: 'Kolaboro API v1', version: '2026-1
 servers: [{ url: ORIGIN }], paths, components: Object.assign({}, full.components || {}, { schemas: Object.assign({}, (full.components || {}).schemas || {}, (v1x && v1x.schemas) || {}) }) };
 OA = { t: Date.now(), v }; return v;
 }
-const EPS = [['projects', '/api/v1/projects'], ['project', '/api/v1/projects/{slug}', 'coco-hills'], ['developers', '/api/v1/developers'], ['developer', '/api/v1/developers/{slug}', 'coco-development-group'], ['website', '/api/v1/developers/{slug}/website', 'coco-development-group'], ['changes', '/api/v1/changes?since={since}', '2026-11-15'], ['feed', '/api/v1/changes/feed.json'], ['certificate', '/api/v1/projects/{slug}/certificate', 'coco-hills'], ['snapshots', '/api/v1/snapshots'], ['quality', '/api/v1/data-quality'], ['search', '/api/v1/search-index']];
 async function docsPage(req, u, env, ctx, shell, lang) {
 let X34 = ''; try { const m = await import('./kbx_n34c.js'); if (await m.ready(env)) X34 = m.relLinks(lang); } catch (e) {}
 const L = T[lang], P = pre(lang), canonU = ORIGIN + P + '/api/docs/';
-const rows = EPS.map(([k, p, ex]) => { const v = ex ? p.replace(/\{[a-z]+\}/, ex) : p; return TB.kbx_n30b__t.k31 + esc(p) + '</code><p>' + esc(L.ad_d[k]) + TB.kbx_n30b__t.k32 + esc(v) + '">' + esc(L.ad_try) + '</button></li>'; }).join('');
+const rows = TB.kbx_n30b__t.o_EPS.map(([k, p, ex]) => { const v = ex ? p.replace(/\{[a-z]+\}/, ex) : p; return TB.kbx_n30b__t.k31 + esc(p) + '</code><p>' + esc(L.ad_d[k]) + TB.kbx_n30b__t.k32 + esc(v) + '">' + esc(L.ad_try) + '</button></li>'; }).join('');
 const msg = { st: L.ad_status, tm: L.ad_time, hd: L.ad_hdr, bd: L.ad_body, again: L.ad_again };
 const body = '<section class="phero"' + (lang === 'ar' ? ' dir="rtl"' : '') + TB.kbx_n30b__t.k33 + P + '/">' + esc(L.home) + TB.kbx_n30b__t.k34 + esc(L.ad_h1) + '</h1><p class="lead">' + esc(L.ad_lead) + '</p></div></section>' +
 '<div class="wrap n30" id="ad"' + (lang === 'ar' ? ' dir="rtl"' : '') + ' data-msg="' + esc(JSON.stringify(msg)) + '">' + TB.kbx_n30b__s.CSS +
@@ -278,11 +276,6 @@ TB.kbx_n30b__t.k36 + esc(L.ad_hdr) + TB.kbx_n30b__t.k37 + esc(L.ad_body) + TB.kb
 const ld = { '@context': 'https://schema.org', '@graph': [{ '@type': 'WebAPI', name: 'Kolaboro API v1', url: canonU, documentation: ORIGIN + '/api/v1/openapi.json', provider: { '@id': ORIGIN + '/#org' }, termsOfService: ORIGIN + '/legal/terms/' }] };
 return assemble({ title: L.ad_title + ' | Kolaboro', desc: L.ad_lead.slice(0, 155), canon: canonU, body, ld, lastmod: '2026-11-17', alt: l => ORIGIN + pre(l) + '/api/docs/' }, lang, shell, '/docs/api/');
 }
-const MANIFEST = { name: 'Kolaboro: check off-plan property projects', short_name: 'Kolaboro', id: '/', start_url: '/', scope: '/', display: 'standalone', background_color: '#F6F6F3', theme_color: '#17212B', lang: 'en', dir: 'auto',
-description: 'Sourced facts, dates and official register checks for off-plan property projects. Projects you save and comparisons you open stay readable offline.',
-icons: [{ src: '/k/icon-192.png', sizes: '192x192', type: 'image/png', purpose: 'any' }, { src: '/k/icon-512.png', sizes: '512x512', type: 'image/png', purpose: 'any' }, { src: '/k/icon-512m.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' }, { src: '/k/favicon.svg', sizes: 'any', type: 'image/svg+xml' }],
-shortcuts: [{ name: 'Projects', url: '/projects/' }, { name: 'My projects', url: '/watchlist/' }, { name: 'Compare', url: '/compare/' }, { name: 'Find a listing', short_name: 'Find', url: '/tools/find-listing/' }, { name: 'Tools', url: '/tools/' }],
-categories: ['business', 'finance', 'utilities'], launch_handler: { client_mode: 'navigate-existing' }, prefer_related_applications: false };
 async function offPage(req, u, env, ctx, shell, lang) {
 const L = T[lang], P = pre(lang), canonU = ORIGIN + P + '/offline/';
 const body = '<section class="phero"' + (lang === 'ar' ? ' dir="rtl"' : '') + '><div class="wrap"><h1>' + esc(L.of_h1) + '</h1><p class="lead">' + esc(L.of_lead) + TB.kbx_n30b__t.k40 + esc(L.of_retry) + '</button></p></div></section>' +
@@ -303,7 +296,7 @@ const p = u.pathname;
 if (!PATHS.test(p)) return null;
 if (req.method === 'OPTIONS') return new Response(null, { status: 204, headers: CORS });
 if (req.method !== 'GET' && req.method !== 'HEAD') return null;
-if (p === '/manifest.webmanifest') return new Response(JSON.stringify(MANIFEST), { headers: { 'content-type': TB.kbx_n30b__t.k42, 'cache-control': 'public, max-age=86400', 'access-control-allow-origin': '*' } });
+if (p === '/manifest.webmanifest') return new Response(JSON.stringify(TB.kbx_n30b__t.o_MANIFEST), { headers: { 'content-type': TB.kbx_n30b__t.k42, 'cache-control': 'public, max-age=86400', 'access-control-allow-origin': '*' } });
 if (p.startsWith('/api/v1/')) {
 const rl = await rate(req, ctx, 'n30', LIMIT), rh = rlHeaders(rl);
 if (!rl.ok) return jerr({ error: 'rate_limited', limit_per_minute: LIMIT, retry_after_s: rl.reset }, 429, Object.assign(rh, { 'retry-after': String(rl.reset) }));

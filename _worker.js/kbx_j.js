@@ -355,19 +355,16 @@ const r = await fetch(sub.endpoint, { method: 'POST', headers: { authorization: 
 return { status: r.status, gone: r.status === 404 || r.status === 410 };
 }
 function pushKey(env) { return out({ open: !!env.VAPID_PRIVATE_KEY, public_key: TB.kbx_j__t.VAPID_PUBLIC, note: env.VAPID_PRIVATE_KEY ? 'Alerts are open.' : TB.kbx_j__t.k12 }, 200, { 'cache-control': 'public, max-age=300' }); }
-const VEC = { plain: 'When I grow up, I want to be a watermelon', asPublic: 'BP4z9KsN6nGRTbVYI_c7VJSPQTBtkgcy27mlmlMoZIIgDll6e3vCYLocInmYWAmS6TlzAC8wEqKK6PBru3jl7A8', asPrivate: 'yfWPiYE-n46HLnH0KqZOF1fJJU3MYrct3AELtAQ-oRw',
-uaPublic: 'BCVxsr7N_eNgVRqvHtD0zTZsEc6-VV-JvLexhqUzORcxaOzi6-AYWXvTBHm4bjyPjs7Vd8pZGH6SRpkNtoIAiw4', salt: 'DGv6ra1nlYgDCS1FRnbzlw', auth: 'BTBZMqHH6r4Tts7J_aSIgg',
-expect: 'DGv6ra1nlYgDCS1FRnbzlwAAEABBBP4z9KsN6nGRTbVYI_c7VJSPQTBtkgcy27mlmlMoZIIgDll6e3vCYLocInmYWAmS6TlzAC8wEqKK6PBru3jl7A_yl95bQpu6cVPTpK4Mqgkf1CXztLVBSt2Ks3oZwbuwXPXLWyouBWLVWGNWQexSgSxsj_Qulcy4a-fN' };
 async function selftest(env) {
 const t0 = Date.now();
-const got = b64u.enc(await encryptPush(VEC.plain, VEC.uaPublic, VEC.auth, { salt: VEC.salt, asPrivate: VEC.asPrivate, asPublic: VEC.asPublic }));
+const got = b64u.enc(await encryptPush(TB.kbx_j__t.o_VEC.plain, TB.kbx_j__t.o_VEC.uaPublic, TB.kbx_j__t.o_VEC.auth, { salt: TB.kbx_j__t.o_VEC.salt, asPrivate: TB.kbx_j__t.o_VEC.asPrivate, asPublic: TB.kbx_j__t.o_VEC.asPublic }));
 let vapid = null;
 if (env.VAPID_PRIVATE_KEY) {
 const a = await vapidAuth(env, 'https://fcm.googleapis.com/fcm/send/x'), jwt = a.match(/t=([^,]+)/)[1].split('.');
 const pk = await crypto.subtle.importKey('raw', b64u.dec(TB.kbx_j__t.VAPID_PUBLIC), { name: 'ECDSA', namedCurve: 'P-256' }, false, ['verify']);
 vapid = await crypto.subtle.verify({ name: 'ECDSA', hash: 'SHA-256' }, pk, b64u.dec(jwt[2]), te.encode(jwt[0] + '.' + jwt[1]));
 }
-return out({ rfc8291_appendix_a: got === VEC.expect, bytes: b64u.dec(got).length, vapid_signature_verifies: vapid, sending_key_installed: !!env.VAPID_PRIVATE_KEY, ms: Date.now() - t0, ran_at: new Date().toISOString() });
+return out({ rfc8291_appendix_a: got === TB.kbx_j__t.o_VEC.expect, bytes: b64u.dec(got).length, vapid_signature_verifies: vapid, sending_key_installed: !!env.VAPID_PRIVATE_KEY, ms: Date.now() - t0, ran_at: new Date().toISOString() });
 }
 const PID = /^[A-Z]{2,5}-\d{3}$/;
 async function jobKey(env) { return env.VAPID_PRIVATE_KEY ? sha('kolaboro-push-job-v1\n' + env.VAPID_PRIVATE_KEY.trim()) : null; }

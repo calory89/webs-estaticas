@@ -11,7 +11,6 @@ const src = (u, label) => ' <a class="src" href="' + esc(u) + '" rel="nofollow n
 const norm = s => String(s || '').normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, ' ').trim();
 const fmt = n => { try { return Math.round(n).toLocaleString(LOCALE[lang] || 'en-GB'); } catch (e) { return String(Math.round(n)); } };
 const pct = (lang, a, b) => { const d = Math.round((a / b - 1) * 100); return d === 0 ? tl(lang, 'ppm_same') : tl(lang, d > 0 ? 'ppm_above' : 'ppm_below', { d: Math.abs(d) }); };
-const DLD_ALIAS = [['downtown dubai', 'BURJ KHALIFA'], ['emaar beachfront', 'DUBAI HARBOUR'], ['mohammed bin rashid city', 'HADAEQ SHEIKH MOHAMMED BIN RASHID'], ['nad al sheba', 'NAD AL SHIBA FIRST'], ['jumeirah lake towers', 'AL THANYAH FIFTH'], ['dubai marina', 'MARSA DUBAI']];
 let DIDX = null;
 function dldIndex() {
 if (DIDX) return DIDX;
@@ -25,19 +24,18 @@ if (!pk && nm2.length >= 6) { const c = [...ix.P.keys()].filter(k => k.startsWit
 const ar = norm(x.ar || '');
 let ak = null;
 for (const [n, k] of ix.A) if (n.length >= 4 && new RegExp('\\b' + n.replace(/ /g, '\\s+') + '\\b').test(ar)) { ak = k; break; }
-if (!ak) for (const [a, k] of DLD_ALIAS) if (ar.includes(a) && DLD.areas[k]) { ak = k; break; }
+if (!ak) for (const [a, k] of TB.kbx_named_plus__t.o_DLD_ALIAS) if (ar.includes(a) && DLD.areas[k]) { ak = k; break; }
 return { pk, ak };
 }
 const ES_PROV = [[/malaga|costa del sol|marbella|estepona|mijas|benahavis|manilva|casares|torremolinos|benalmadena|fuengirola|ojen|istan/, 'Málaga'], [/alicante|costa blanca|benidorm|torrevieja|finestrat|denia|javea|xabia|calp|villajoyosa|el verger|orihuela/, 'Alicante/Alacant'],
 [/mallorca|ibiza|eivissa|menorca|balear|palma|andratx|capdepera|santa eularia/, 'Balears (Illes)'], [/tenerife|adeje|arona|granadilla|arico|la palma\b/, 'Santa Cruz de Tenerife'], [/gran canaria|mogan|san bartolome de tirajana|lanzarote|fuerteventura/, 'Palmas (Las)'],
 [/murcia|cartagena|costa calida|la manga/, 'Murcia (Región de)'], [/girona|costa brava|platja d aro/, 'Girona'], [/barcelona|esplugues/, 'Barcelona'], [/valencia/, 'Valencia/València'], [/madrid/, 'Madrid (Comunidad de)']];
-const ES_ALIAS = { 'santa eularia des riu': 'Santa Eulalia del Río', 'santa eularia': 'Santa Eulalia del Río', 'palma': 'Palma de Mallorca', 'malaga city': 'Málaga', 'velez malaga': 'Vélez Málaga', 'alicante': 'Alicante', 'calpe': 'Calpe', 'javea': 'Jávea' };
 let MIDX = null;
 function esMatch(x) {
 if (!MIDX) MIDX = Object.keys(ES.muni).map(k => [norm(k), k]).filter(a => a[0].length >= 4).sort((a, b) => b[0].length - a[0].length);
 const ar = norm(String(x.ar || '').replace(/\([^)]*\)/g, ' '));
 let mk = null;
-for (const [a, k] of Object.entries(ES_ALIAS)) if (new RegExp('\\b' + a + '\\b').test(ar) && ES.muni[k]) { mk = k; break; }
+for (const [a, k] of Object.entries(TB.kbx_named_plus__t.o_ES_ALIAS)) if (new RegExp('\\b' + a + '\\b').test(ar) && ES.muni[k]) { mk = k; break; }
 if (!mk) for (const [n, k] of MIDX) if (new RegExp('\\b' + n + '\\b').test(ar)) { mk = k; break; }
 const all = norm((x.ar || '') + ' ' + (x.mk || ''));
 const pv = (ES_PROV.find(([re]) => re.test(all)) || [])[1] || null;
@@ -115,7 +113,6 @@ exception: dx && dx.data && dx.data.attributes ? dx.data.attributes.reason : nul
 try { const p = caches.default.put(key, new Response(JSON.stringify(res), { headers: { 'content-type': 'application/json', 'cache-control': 'max-age=' + (res.ok ? 604800 : 1800) } })); if (ctx && ctx.waitUntil) ctx.waitUntil(p.catch(() => {})); } catch (e) {}
 return res;
 }
-const EXC = { NATURAL_PERSONS: 'it is controlled by natural persons', NON_CONSOLIDATING: 'the parent does not consolidate it', NO_KNOWN_PERSON: 'no known parent', NON_PUBLIC: 'the parent information is not public', BINDING_LEGAL_COMMITMENTS: 'binding legal commitments', LEGAL_OBSTACLES: 'legal obstacles', DISCLOSURE_DETRIMENTAL: 'disclosure would be detrimental', DETRIMENT_NOT_EXCLUDED: 'detriment not excluded', CONSENT_NOT_OBTAINED: 'consent not obtained' };
 export function networkHtml(name, m, net, L, pre, self, other, lang = 'en') {
 const t = (k, v) => tl(lang, k, v);
 const gl = lei => 'https://search.gleif.org/#/record/' + lei;
@@ -133,7 +130,7 @@ if (!m && other) facts.push(t('net_other', { l: other.legal, c: other.country ||
 else if (!m) facts.push(t('net_none'));
 else if (!net || !net.ok) facts.push(t('net_err'));
 else {
-facts.push(net.parent ? t('net_par', { l: net.parent.legal }) : net.exception ? t('net_nopar_r', { r: EXC[net.exception] ? t('net_x_' + net.exception) : net.exception.toLowerCase().replace(/_/g, ' ') }) : t('net_nopar'));
+facts.push(net.parent ? t('net_par', { l: net.parent.legal }) : net.exception ? t('net_nopar_r', { r: TB.kbx_named_plus__t.o_EXC[net.exception] ? t('net_x_' + net.exception) : net.exception.toLowerCase().replace(/_/g, ' ') }) : t('net_nopar'));
 const k = net.children_total;
 facts.push(!k ? t('net_nokids') : k === 1 ? t('net_kids1') : t(k > 8 ? 'net_kids8' : 'net_kids', { k }));
 }

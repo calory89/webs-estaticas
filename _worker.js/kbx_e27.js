@@ -155,12 +155,11 @@ const canon = ORIGIN + pre(lang) + '/projects/' + x.s + '/report/';
 return htmlPage(env, ctx, shell, lang, { title: t(lang, 'rp_t', { n: name }) + ' | Kolaboro', desc: t(lang, 'rp_sub', { d: N.fd(R.today, lang) }), canon, body, alt: l => ORIGIN + pre(l) + '/projects/' + x.s + '/report/' }, true);
 }
 const HW = [278, 278, 355, 556, 556, 889, 667, 191, 333, 333, 389, 584, 278, 333, 278, 278, 556, 556, 556, 556, 556, 556, 556, 556, 556, 556, 278, 278, 584, 584, 584, 556, 1015, 667, 667, 722, 722, 667, 611, 778, 722, 278, 500, 667, 556, 833, 722, 778, 667, 778, 722, 667, 611, 722, 667, 944, 667, 667, 611, 278, 278, 278, 469, 556, 333, 556, 556, 500, 556, 556, 278, 556, 556, 222, 222, 500, 222, 833, 556, 556, 556, 556, 333, 500, 278, 556, 500, 722, 500, 500, 500, 334, 260, 334, 584];
-const WIN = { 0x20AC: 0x80, 0x201A: 0x82, 0x0192: 0x83, 0x201E: 0x84, 0x2026: 0x85, 0x2020: 0x86, 0x2021: 0x87, 0x02C6: 0x88, 0x2030: 0x89, 0x0160: 0x8A, 0x2039: 0x8B, 0x0152: 0x8C, 0x017D: 0x8E, 0x2018: 0x91, 0x2019: 0x92, 0x201C: 0x93, 0x201D: 0x94, 0x2022: 0x95, 0x2013: 0x96, 0x2014: 0x96, 0x02DC: 0x98, 0x2122: 0x99, 0x0161: 0x9A, 0x203A: 0x9B, 0x0153: 0x9C, 0x017E: 0x9E, 0x0178: 0x9F };
 function winBytes(s) {
 const out = [];
 for (const ch of String(s).replace(/[    ]/g, ' ').replace(/[✓]/g, 'x').replace(/[◐]/g, '~').replace(/[○]/g, 'o').replace(/[→]/g, '>')) {
 const cp = ch.codePointAt(0);
-if (cp >= 32 && cp < 127) out.push(cp); else if (cp >= 0xA0 && cp <= 0xFF) out.push(cp); else if (WIN[cp]) out.push(WIN[cp]);
+if (cp >= 32 && cp < 127) out.push(cp); else if (cp >= 0xA0 && cp <= 0xFF) out.push(cp); else if (TB.kbx_e27__t.o_WIN[cp]) out.push(TB.kbx_e27__t.o_WIN[cp]);
 else { const d = ch.normalize('NFKD').replace(/[̀-ͯ]/g, ''); const c2 = d.codePointAt(0); out.push(d && c2 >= 32 && c2 < 127 ? c2 : 63); }
 }
 return out;

@@ -92,8 +92,7 @@ return false;
 async function body(req) { try { const b = await req.json(); return b && typeof b === 'object' ? b : {}; } catch (e) { return {}; } }
 const tokOk = t => typeof t === 'string' && /^[0-9a-f]{48}$/.test(t);
 async function challenge(purpose, chal) { return b64u(await h256('kolaboro-passkey-v1\n' + purpose + '\n' + chal)); }
-const PK_MSG = { auth: 'Please sign in again first.', challenge: 'That passkey request expired. Try again.', key: 'Your browser sent a key we cannot use.', limit: 'You already have 10 passkeys. Remove one first.', exists: 'This passkey is already registered.', unknown: 'This passkey is not registered with Kolaboro. Sign in with your password, then add a passkey in your portal.', counter: 'This passkey looks cloned (its counter went backwards), so we refused it. Sign in with your password.', busy: 'Too many sign-in attempts right now. Try again in a minute.', denied: 'Passkeys are not available right now.' };
-const fail = (e, s) => out({ error: e, message: PK_MSG[e] || 'Something went wrong. Try again.' }, s || 400);
+const fail = (e, s) => out({ error: e, message: TB.kbx_acct__t.o_PK_MSG[e] || 'Something went wrong. Try again.' }, s || 400);
 async function regOptions(req, ctx) {
 const b = await body(req); if (!tokOk(b.token)) return fail('auth', 401);
 if (await limited(req, ctx, 'pkreg', 30)) return fail('busy', 429);

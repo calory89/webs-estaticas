@@ -7,10 +7,6 @@ const ASK_MODEL = 'claude-haiku-5-5';
 const ASK_PER_HOUR = 10;
 const KEY_CREATE_PER_HOUR = 3;
 const KEY_PER_MIN = 60;
-const PLANS = [
-{ plan: 'free', daily_quota: 1000, per_minute: 60, price: null, how: 'self-serve on this page' },
-{ plan: 'partner', daily_quota: null, price: null, how: 'higher limits by agreement: write to hello@kolaboro.com' }
-];
 const cors = r => { const h = new Headers(r.headers); h.set('access-control-allow-origin', '*'); h.set('access-control-allow-headers', 'x-api-key, content-type'); h.set('access-control-allow-methods', 'GET, POST, OPTIONS'); h.set('access-control-expose-headers', TB.kbx_k__s.k0); return new Response(r.body, { status: r.status, headers: h }); };
 const ipOf = req => { const ip = req.headers.get('cf-connecting-ip') || 'x'; return ip.includes(':') ? ip.split(':').slice(0, 4).join(':') + '::/64' : ip; };
 async function overLimit(req, ctx, name, max, count = true) {
@@ -38,8 +34,8 @@ let KSTAT = { t: 0, v: null };
 async function keyStatus() {
 if (KSTAT.v && Date.now() - KSTAT.t < 60000) return KSTAT.v;
 let v;
-if (!KB.WKEY) v = { open: false, why: 'opening soon', plans: PLANS };
-else { try { const s = await rpc('kolaboro_k_status', { p_wkey: KB.WKEY }); v = s && s.ok ? { open: true, plans: PLANS, keys_active: s.keys_active, calls_today: s.calls_today } : { open: false, why: 'opening soon', plans: PLANS }; } catch (e) { v = { open: false, why: 'opening soon', plans: PLANS }; } }
+if (!KB.WKEY) v = { open: false, why: 'opening soon', plans: TB.kbx_k__t.o_PLANS };
+else { try { const s = await rpc('kolaboro_k_status', { p_wkey: KB.WKEY }); v = s && s.ok ? { open: true, plans: TB.kbx_k__t.o_PLANS, keys_active: s.keys_active, calls_today: s.calls_today } : { open: false, why: 'opening soon', plans: TB.kbx_k__t.o_PLANS }; } catch (e) { v = { open: false, why: 'opening soon', plans: TB.kbx_k__t.o_PLANS }; } }
 KSTAT = { t: Date.now(), v }; return v;
 }
 const keyOf = req => { const k = req.headers.get('x-api-key') || ''; return /^kb_live_[0-9a-f]{40}$/.test(k) ? k : null; };

@@ -39,7 +39,6 @@ return TB.kbx_cohort__t.k0 + esc(tr(lang, 'card_h')) + '</h3><p>' + esc(tr(lang,
 } catch (e) { return ''; }
 }
 export const cohortKey = env => flagOn(env) ? '|c1' : '';
-const ERR = { input: 400, note_links: 400, message: 400, message_contact: 400, member: 404, token: 404, unconfirmed: 409, left: 409, closed: 409, already: 409, busy: 429, auth: 401 };
 export async function handle(req, u, env, ctx) {
 const p = u.pathname.replace(/\/+$/, '');
 if (p === '/api/x/cohort' || p === '/api/x/cohort/status') {
@@ -78,7 +77,7 @@ pl.t = tok(b.t); if (!pl.t) return out({ error: 'token' }, 404);
 if (act === 'intro') { pl.to = String(b.to || '').slice(0, 20); pl.message = String(b.message || '').slice(0, 600); }
 }
 let r; try { r = await rpcW('kolaboro_cohort', { p_action: act, p_payload: pl }); } catch (e) { return out({ error: 'unavailable' }, 503); }
-if (r && r.error) return out({ error: r.error }, ERR[r.error] || 400);
+if (r && r.error) return out({ error: r.error }, TB.kbx_cohort__t.o_ERR[r.error] || 400);
 return out(r || { ok: true });
 }
 const CSS = '<style id="kcoh">.kc-pg .k-phead{padding-block:var(--k-7,48px) var(--k-5,24px)}.kc-pg h1{max-width:22ch}.kc-pg .lead{max-width:62ch;color:var(--k-ink-2)}.kc-pg .k-sec{padding-block:var(--k-6,32px)}' +

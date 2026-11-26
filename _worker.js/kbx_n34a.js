@@ -14,10 +14,10 @@ const MEMO = {};
 function file(e, p, t) { return FQ[p] || (FQ[p] = file0(e, p, t).finally(() => { delete FQ[p]; })); }   // n40 k21: one shared read per file
 const FQ = {};
 async function file0(env, p, ttl) {
-  const m = MEMO[p]; if (m && Date.now() - m.t < (ttl || 600000)) return m.v;
-  let v = null;
-  try { const r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com' + p)); if (r.ok) v = await r.json(); } catch (e) { v = null; }
-  MEMO[p] = { t: Date.now(), v }; return v;
+const m = MEMO[p]; if (m && Date.now() - m.t < (ttl || 600000)) return m.v;
+let v = null;
+try { const r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com' + p)); if (r.ok) v = await r.json(); } catch (e) { v = null; }
+MEMO[p] = { t: Date.now(), v }; return v;
 }
 const pre = l => l === 'en' ? '' : '/' + l;
 const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));

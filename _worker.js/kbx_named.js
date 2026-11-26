@@ -152,9 +152,7 @@ const sec = (id, h, inner) => '<section class="ks" id="' + id + '"><h2>' + h + '
 const stageKey = s => s === 'off-plan' ? 'st_offplan' : s === 'under construction' ? 'st_construction' : s === 'completed' ? 'st_completed' : 'st_unknown';
 const cleanOk = t => t && !OPINION_RX.test(t);
 const SEQ = ['permit', 'escrow', 'progress', 'plans', 'record', 'returns_ok'];
-const HF = { 'permit claimed': 'hf_permit_claimed', 'plans published': 'hf_plans_published', 'price from': 'hf_price_from', completion: 'hf_completion', 'deposit protection stated': 'hf_deposit_protection_stated', 'construction progress %': 'hf_construction_progress', 'guaranteed-return language': 'hf_guaranteed', 'advertised yield %': 'hf_yield', units: 'hf_units', 'permit number published': 'hf_permit_number' };
 const hv = (v, lang) => v === true ? tr(lang, 'yes') : v === false ? tr(lang, 'no') : v == null ? '-' : fd(v, lang);
-const COUNTRY_ISO = { UAE: 'AE', 'United Arab Emirates': 'AE', Indonesia: 'ID', Spain: 'ES', 'United States': 'US', USA: 'US', 'United Kingdom': 'GB', UK: 'GB', Thailand: 'TH', Mexico: 'MX', Portugal: 'PT', Turkey: 'TR', Türkiye: 'TR', Malaysia: 'MY', Philippines: 'PH', Vietnam: 'VN', Greece: 'GR', Cyprus: 'CY', Oman: 'OM', Egypt: 'EG', Georgia: 'GE', Montenegro: 'ME', Croatia: 'HR', 'Costa Rica': 'CR', Panama: 'PA', 'Sri Lanka': 'LK', Cambodia: 'KH', Mauritius: 'MU', Australia: 'AU', Canada: 'CA', France: 'FR', Italy: 'IT', Bahrain: 'BH', Morocco: 'MA' };
 const reviewed = c => !!(c && c.verified && Object.values(c.verified).some(v => v && v !== 'none'));
 const PORTAL_RX = /(^|\.)(propertyfinder|bayut|thepreplan|imovirtual|idealista|fotocasa|rumavi|a1properties|dubizzle|lucasfox|kyero|rightmove|zoopla|realtor|zillow|redfin|ddproperty|hipflat|fazwaz|propertyguru|iproperty|lamudi|dotproperty|99acres|magicbricks|sahibinden|hepsiemlak|emlakjet|inmuebles24|vivanuncios|encuentra24|point2homes|jamesedition|sothebysrealty|knightfrank|savills|cbre|jll|engelvoelkers|remax|century21|coldwellbanker|eurovilla|suprimmo|benoit|terra|regent|luxinmo|tranio|prian|realting|ziprealty|propertyfinder|realtyna|thailand-property|homify|offplan|uaepropertychecker|dubairealestateiq|joshsteinrealtor|malaysiaproperty4u|newhomes|properstar|green-acres|immobilienscout24|immowelt|funda|seloger|leboncoin|logic-immo|bienici|casa|immobiliare|tecnocasa|engel)\./i;
 const isListing = u => { const h = host(u); return !!h && PORTAL_RX.test('.' + h); };
@@ -172,7 +170,6 @@ const own = [x.url, x.du].map(host).filter(d => d && !SQ_PRESS.test(d) && !PORTA
 if (own.some(d => h === d || h.endsWith('.' + d) || d.endsWith('.' + h)) || (lab.length >= 4 && dv.length >= 4 && (dv.includes(lab) || lab.includes(dv)))) return 1;
 return 2;
 }
-const RVW_L = { en: 'Reviewed on {d}: developer page or official register read, register looked up, handover date checked.', es: 'Revisado el {d}: leída la web del promotor o el registro oficial, consultado el registro y comprobada la fecha de entrega.', fr: 'Examiné le {d} : page du promoteur ou registre officiel lu, registre consulté, date de livraison vérifiée.', de: 'Geprüft am {d}: Seite des Bauträgers oder amtliches Register gelesen, Register abgefragt, Übergabetermin geprüft.', ru: 'Проверено {d}: прочитаны сайт застройщика или официальный реестр, выполнен поиск в реестре, проверена дата сдачи.', zh: '审核于 {d}：已阅读开发商页面或官方登记，已查询登记，已核对交付日期。', ar: 'رُوجع في {d}: قُرئت صفحة المطوّر أو السجل الرسمي، وجرى البحث في السجل، وتم التحقق من موعد التسليم.', nl: 'Beoordeeld op {d}: pagina van de ontwikkelaar of officieel register gelezen, register geraadpleegd, opleverdatum gecontroleerd.' };
 const srcKindHtml = (u, x, lang) => { const k = srcKind(u, x); return k < 0 ? '' : '<br>' + kindIco(k, lang); };
 function handoverOf(ix, x) {
 const pr = ix.prom[x.id] || [], h = pr.find(p => p.k === 'handover');
@@ -257,12 +254,8 @@ let h = 0; for (const ch of String(seed || '')) h = (h * 31 + ch.charCodeAt(0)) 
 const key = x => { let k = h; for (const ch of x.id) k = (k * 33 + ch.charCodeAt(0)) >>> 0; return k; };
 return ix.P.slice().sort((a, b) => C.get(a.id) - C.get(b.id) || key(a) - key(b)).slice(0, n).map(x => ({ x, links: C.get(x.id) }));
 }
-const LLH = { en: ['More projects to look at', 'Pages few other project pages link to yet.'], es: ['Más proyectos para revisar', 'Fichas a las que todavía enlazan pocas otras fichas.'],
-de: ['Weitere Projekte', 'Seiten, auf die bisher nur wenige andere Projektseiten verlinken.'], fr: ['D\'autres projets à consulter', 'Des fiches vers lesquelles peu d\'autres fiches renvoient encore.'],
-nl: ['Meer projecten om te bekijken', 'Pagina\'s waar nog weinig andere projectpagina\'s naar linken.'], ru: ['Ещё проекты', 'Страницы, на которые пока ссылаются немногие другие страницы проектов.'],
-zh: ['更多可查看的项目', '目前很少有其他项目页面链接到这些页面。'], ar: ['مشاريع أخرى للاطلاع', 'صفحات لا تشير إليها حتى الآن إلا صفحات مشاريع قليلة.'] };
 export function leastHtml(ix, lang, n, seed) {
-const L = leastLinked(ix, n, seed), T = LLH[lang] || LLH.en, b = s => lang === 'ar' ? '<bdi>' + esc(s) + '</bdi>' : esc(s);
+const L = leastLinked(ix, n, seed), T = TB.kbx_named__t.o_LLH[lang] || TB.kbx_named__t.o_LLH.en, b = s => lang === 'ar' ? '<bdi>' + esc(s) + '</bdi>' : esc(s);
 if (!L.length) return '';
 return TB.kbx_named__t.k6 + (lang === 'ar' ? ' dir="rtl"' : '') + '><div class="wrap"><h2>' + esc(T[0]) + '</h2><p class="kll-s">' + esc(T[1]) + '</p><ul class="kll-l">' +
 L.map(({ x }) => '<li><a href="' + pre(lang) + '/projects/' + x.s + '/">' + b(x.n) + '</a> <small>' + b(mkName(x.mk, lang)) + '</small></li>').join('') + '</ul></div></section>';
@@ -367,7 +360,7 @@ const delivery = '<p class="ki">' + tr(lang, 'del_intro', { link: own('/promises
 const webHtml = extra.web ? webProjectHtml(extra.web, x, lang) : '';
 const seeSec = extra.see ? seeHtml(extra.see, x.id, lang, d => fd(d, lang), name) : '';
 const satHtml = extra.sat ? satSection(extra.sat, x.id, ix.prom[x.id] || [], fx, lang, d => fd(d, lang), k => tr(lang, 'pk_' + k), d => tr(lang, 'sat_tile', { n: name + (x.mk ? ' (' + mkName(x.mk, lang) + ')' : ''), d })) : '';
-const rw = x.rw, lk = { url: page || '', q: name, country: COUNTRY_ISO[x.co] || '', permit: x.pn && x.pn.length <= 40 ? x.pn : '', company: x.dv || '', ai: '0' };
+const rw = x.rw, lk = { url: page || '', q: name, country: TB.kbx_named__t.o_COUNTRY_ISO[x.co] || '', permit: x.pn && x.pn.length <= 40 ? x.pn : '', company: x.dv || '', ai: '0' };
 const permits = '<ul class="fl">' + (x.pn ? fact(esc(tr(lang, 'permit_pn', { pn: '%%PN%%' })).replace('%%PN%%', en(x.pn)), x.du || page) : '<li>' + esc(tr(lang, 'permit_none')) + '</li>') +
 (x.ev && x.ev.permit && cleanOk(x.ev.permit) ? fact(en(x.ev.permit), x.du || page) : '') +
 (rw ? fact(esc(tr(lang, 'rw_line', { reg: rw.register, item: rw.item, st: rw.status, det: rw.detail ? ', ' + rw.detail : '', d: fd(rw.checked, lang) })), '/registers/', 'kolaboro.com/registers') : '') +
@@ -382,11 +375,11 @@ return '<tr><th scope="row">' + esc(tr(lang, 'c_' + k)) + '</th><td>' + esc(rese
 }).join('');
 const checks = !rvd ? '<p class="knote">' + esc(nrB) + '. ' + esc(tr(lang, 'nr_txt')) + '</p>' : '<p class="ki">' + tr(lang, 'checks_intro', { link: own('/how-we-score/', tr(lang, 'm_method')) }) + TB.kbx_named__t.k10 + esc(tr(lang, 'th_check')) + '</th><th>' + esc(tr(lang, 'th_public')) + '</th><th>' + esc(tr(lang, 'th_level')) + '</th><th>' + esc(tr(lang, 'th_evidence')) + '</th></tr></thead><tbody>' + rows + '</tbody></table></div>';
 const CL = (x.cl || []).filter(r => cleanOk(r[0]));
-const rvwP = x.rvw && x.rvw.ok && x.rvw.d ? '<p class="ki">' + esc((RVW_L[lang] || RVW_L.en).replace('{d}', fd(x.rvw.d, lang))) + '</p>' : '';
+const rvwP = x.rvw && x.rvw.ok && x.rvw.d ? '<p class="ki">' + esc((TB.kbx_named__t.o_RVW_L[lang] || TB.kbx_named__t.o_RVW_L.en).replace('{d}', fd(x.rvw.d, lang))) + '</p>' : '';
 const claims = rvwP + (CL.length ? TB.kbx_named__t.k11 + vsHead(lang) + '</thead><tbody>' +
 CL.map(r => '<tr class="kfact"><td>' + en(r[0]) + ' ' + srcA(r[3]) + srcKindHtml(r[3], x, lang) + '</td><td><span class="kpill c-' + esc(r[1]) + '">' + esc(tr(lang, 'cs_' + r[1])) + '</span>' + (r[2] && r[2] !== 'none' ? ' ' + (r[2] === 'independent' || r[2] === 'registry' ? esc(tr(lang, 'by_' + r[2])) : en(r[2])) : '') + '</td></tr>').join('') + '</tbody></table></div>' : '<p>' + esc(tr(lang, 'no_hist')) + '</p>');
 const H = [];
-for (const h of c.history || []) H.push([h.d, fact(esc(fd(h.d, lang)) + ': ' + esc(tr(lang, 'hist_row', { f: tr(lang, HF[h.f] || 'hf_units'), a: hv(h.from, lang), b: hv(h.to, lang) })), page)]);
+for (const h of c.history || []) H.push([h.d, fact(esc(fd(h.d, lang)) + ': ' + esc(tr(lang, 'hist_row', { f: tr(lang, TB.kbx_named__t.o_HF[h.f] || 'hf_units'), a: hv(h.from, lang), b: hv(h.to, lang) })), page)]);
 const fdx = ix.find[x.id];
 for (const f of ((fdx && fdx.f) || []).slice(0, 8)) { const t = String(f.text || '').replace(/^[A-Z]{2,5}-\d{3,4}\s*·\s*/, ''); if (cleanOk(t)) H.push([iso(f.at), fact(esc(fd(f.at, lang)) + ' · ' + esc(tr(lang, 'hist_hourly')) + ': ' + en(t) + (f.fp ? ' <small>(SHA-256 ' + esc(f.fp) + '...)</small>' : ''), page)]); }
 H.sort((a, b) => String(b[0]).localeCompare(String(a[0])));
@@ -536,7 +529,7 @@ publisher: { '@id': ORIGIN + '/#org' }, primaryImageOfPage: { '@id': canon + '#o
 mentions: [{ '@type': 'Place', name: mkName(x.mk, lang), url: ORIGIN + mkHref(ix, x, lang) }].concat(x.co && x.co !== x.mk ? [{ '@type': 'Country', name: coName(x.co, lang) }] : [], okHttp(x.du) ? [{ '@type': 'WebPage', url: fixU(x.du), name: host(fixU(x.du)) }] : []),  mainEntity: { '@id': canon + '#faq' }, isBasedOn: { '@id': canon + '#data' } },
 { '@type': 'Organization', '@id': ORIGIN + '/#org', name: 'Kolaboro', url: ORIGIN + '/', logo: ORIGIN + '/k/favicon.svg', sameAs: [TB.kbx_named__t.k30] },
 ...imgs.map(i => Object.assign({ '@type': 'ImageObject' }, i)),
-Object.assign({ '@type': placeType, '@id': canon + '#place', name }, alt.length ? { alternateName: alt } : {}, { image: imgs.map(i => ({ '@id': i['@id'] })), address: { '@type': 'PostalAddress', addressLocality: x.ar || x.mk, addressRegion: x.mk, addressCountry: COUNTRY_ISO[x.co] || CO_ISO2[x.co] || x.co }, containedInPlace: { '@type': 'Place', name: mkName(x.mk, lang), url: ORIGIN + mkHref(ix, x, lang) }, subjectOf: { '@id': canon + '#page' } }, geo ? { geo } : {}),
+Object.assign({ '@type': placeType, '@id': canon + '#place', name }, alt.length ? { alternateName: alt } : {}, { image: imgs.map(i => ({ '@id': i['@id'] })), address: { '@type': 'PostalAddress', addressLocality: x.ar || x.mk, addressRegion: x.mk, addressCountry: TB.kbx_named__t.o_COUNTRY_ISO[x.co] || CO_ISO2[x.co] || x.co }, containedInPlace: { '@type': 'Place', name: mkName(x.mk, lang), url: ORIGIN + mkHref(ix, x, lang) }, subjectOf: { '@id': canon + '#page' } }, geo ? { geo } : {}),
 ...(x.dv ? [Object.assign({ '@type': 'Organization', '@id': orgId, name: ((ix.devs.get(x.dvs) || {}).n) || x.dv }, devPage ? { url: dUrl('en', x.dvs) } : {}, ((ix.devs.get(x.dvs) || {}).n) && ix.devs.get(x.dvs).n !== x.dv ? { alternateName: x.dv } : {})] : []),
 { '@type': 'Dataset', '@id': canon + '#data', name: tr(lang, 'ds_name', { n: name }), description: tr(lang, rvd ? 'ds_rv' : 'ds_nr', { n: name, place, id: x.id }),
 url: canon, identifier: x.id, license: TB.kbx_named__t.k31, isAccessibleForFree: true, creator: { '@id': ORIGIN + '/#org' }, dateModified: checked, spatialCoverage: { '@id': canon + '#place' },
@@ -565,9 +558,7 @@ res = { ok: true, at: new Date().toISOString().slice(0, 10), matches: m };
 try { const p = caches.default.put(key, new Response(JSON.stringify(res), { headers: { 'content-type': 'application/json', 'cache-control': 'max-age=' + (res.ok ? 604800 : 1800) } })); if (ctx && ctx.waitUntil) ctx.waitUntil(p.catch(() => {})); } catch (e) {}
 return res;
 }
-const N32XL = { en: ['Entity graph', 'Website changes', 'Anomaly radar'], es: ['Grafo de entidades', 'Cambios en sus webs', 'Radar de anomalías'], de: ['Entitätsgraph', 'Website-Änderungen', 'Anomalie-Radar'], fr: ['Graphe des entités', 'Changements de ses sites', "Radar d'anomalies"], nl: ['Entiteitengraaf', 'Websitewijzigingen', 'Afwijkingenradar'], ru: ['Граф связей', 'Изменения сайтов', 'Радар аномалий'], zh: ['实体关系图', '网站改动', '异常雷达'], ar: ['مخطط الكيانات', 'تغييرات المواقع', 'رادار الحالات الشاذة'] };
-const n32xLinks = (l, s) => { const a = N32XL[l] || N32XL.en, p = pre(l); return '<p class="ksmall">' + [[p + '/graph/entities/?n=d:' + s, a[0]], [p + '/watch/website-changes/?dv=' + s, a[1]], [p + '/anomalies/', a[2]]].map(x => '<a href="' + esc(x[0]) + '">' + esc(x[1]) + '</a>').join(' · ') + '</p>'; };
-const DCL35 = { en: 'Compare with other developers', es: 'Comparar con otras promotoras', fr: 'Comparer avec d\'autres promoteurs', de: 'Mit anderen Bauträgern vergleichen', nl: 'Vergelijken met andere ontwikkelaars', ru: 'Сравнить с другими застройщиками', zh: '与其他开发商比较', ar: 'قارن مع مطوّرين آخرين' };
+const n32xLinks = (l, s) => { const a = TB.kbx_named__t.o_N32XL[l] || TB.kbx_named__t.o_N32XL.en, p = pre(l); return '<p class="ksmall">' + [[p + '/graph/entities/?n=d:' + s, a[0]], [p + '/watch/website-changes/?dv=' + s, a[1]], [p + '/anomalies/', a[2]]].map(x => '<a href="' + esc(x[0]) + '">' + esc(x[1]) + '</a>').join(' · ') + '</p>'; };
 function devPage(ix, dv, lang, extra) {
 const L = dv.ids.map(i => ix.byId.get(i)).filter(Boolean), name = dv.n, canon = dUrl(lang, dv.s);
 const mks = [...new Set(L.map(x => x.mk))], lm = L.map(x => lastmod(ix, x)).sort(), checked = lm[lm.length - 1];
@@ -629,7 +620,7 @@ const faq = FAQ.map(([q, a]) => '<details class="kfaq"><summary>' + esc(q) + '</
 const S = [...new Set(L.flatMap(x => [x.url, x.du]).concat(FLu.map(f => f[1])).filter(okHttp))];
 const sources = '<p class="ki">' + esc(tr(lang, 'src_intro')) + '</p><ol class="srcs">' + S.slice(0, 60).map(srcLi).join('') + '</ol>';
 const crumbs = [[tr(lang, 'crumb_home'), ORIGIN + pre(lang) + '/'], [tr(lang, 'crumb_devs'), ORIGIN + '/developers/'], [name, canon]];
-const body = TB.kbx_named__t.k45 + crumbs.slice(0, 2).map(([l, u]) => '<a href="' + esc(u.replace(ORIGIN, '')) + '">' + esc(l) + '</a>').join(' / ') + '</p><h1>' + h1x(tr(lang, 'h1_d', { dev: name }), name, lang) + '</h1><p class="lead">' + esc(tr(lang, 'lead_d', { dev: name })) + '</p>' + answer + feedLinks(lang, '/developers/' + dv.s + '/', name) + (dv.ids.length >= 2 ? '<p class="k-small"><a href="' + pre(lang) + '/developers/compare/?d=' + dv.s + '">' + esc(DCL35[lang] || DCL35.en) + '</a></p>' : '') + '</div></section>' +
+const body = TB.kbx_named__t.k45 + crumbs.slice(0, 2).map(([l, u]) => '<a href="' + esc(u.replace(ORIGIN, '')) + '">' + esc(l) + '</a>').join(' / ') + '</p><h1>' + h1x(tr(lang, 'h1_d', { dev: name }), name, lang) + '</h1><p class="lead">' + esc(tr(lang, 'lead_d', { dev: name })) + '</p>' + answer + feedLinks(lang, '/developers/' + dv.s + '/', name) + (dv.ids.length >= 2 ? '<p class="k-small"><a href="' + pre(lang) + '/developers/compare/?d=' + dv.s + '">' + esc(TB.kbx_named__t.o_DCL35[lang] || TB.kbx_named__t.o_DCL35.en) + '</a></p>' : '') + '</div></section>' +
 '<div class="wrap kwrap">' + sec('glance', bidi(lang, esc(tr(lang, 's_dpub', { dev: name })), [name]), '<ul class="fl glance">' + g.join('') + '</ul>') + sec('projects', esc(tr(lang, 's_dprojects')), projects) + (FD ? sec('promised', bidi(lang, esc(FD.h), [name]), FD.pv) : '') + sec('network', esc(tr(lang, 's_network')), n32xLinks(lang, dv.s) + networkHtml(name, extra.netOk ? gl.matches[0] : extra.fm ? extra.fm.m : null, extra.netOk ? extra.net : extra.fm ? extra.fm.net : null, L, pre(lang), '/developers/' + dv.s + '/', extra.netOk || extra.fm ? null : gl.matches[0], lang) + familyHtml(extra.fam, dv.s, lang, pre(lang)) + NET_CSS + '<script>' + NET_JS + '</script>') + (extra.web && webDevHealthHtml(extra.web, dv.s, lang) ? sec('webhealth', esc(webHeading(lang, 'h')), webDevHealthHtml(extra.web, dv.s, lang)) + sec('weblinks', esc(webHeading(lang, 'l')), webDevLinksHtml(extra.web, dv.s, lang)) : '') + (extra.watch && watchDevHtml(extra.watch, dv.s, lang) ? sec('watch', esc(watchHeading(lang)), watchDevHtml(extra.watch, dv.s, lang)) : '') + (extra.watch && gazDevHtml(extra.watch.gz, dv.s, lang) ? sec('gazette', esc(gazHeading(lang)), gazDevHtml(extra.watch.gz, dv.s, lang)) : '') + sec('record', esc(tr(lang, 's_drecord')), record) +
 sec('registers', esc(tr(lang, 's_dreg')), reg) + (extra.fil && filingsDevHtml(extra.fil, dv.s, lang) ? sec('filings', esc(filingsHeading(lang)), filingsDevHtml(extra.fil, dv.s, lang)) : '') + sec('reports', esc(tr(lang, 's_dreports')), reports) + (extra.rs ? sec('answers', esc(rsHeading(lang)), rsDevHtml(extra.rs, dv, lang, first.id)) : '') + sec('reply', esc(tr(lang, 's_reply')), reply + devDash(lang, dv.s)) + sec('cta', esc(tr(lang, 's_cta')), cta) + sec('faq', esc(tr(lang, 's_faq')), faq) + sec('sources', esc(tr(lang, 's_sources')), sources) +
 '<p class="ki kfoot">' + tr(lang, 'foot', { d: esc(fd(checked, lang)), link: own('/data-policy/', tr(lang, 'm_data_policy')) }) + '</p></div>';
@@ -641,20 +632,12 @@ Object.assign({ '@type': 'Organization', '@id': dUrl('en', dv.s) + '#org', name,
 ...(FQ33 => FQ33.length ? [{ '@type': 'FAQPage', '@id': canon + '#faq', mainEntity: FQ33.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }] : [])(faq33(FAQ, lang))] };
 return { title, desc, canon, body, ld, lastmod: checked, alt: l => dUrl(l, dv.s), feed: { path: '/developers/' + dv.s + '/', name } };
 }
-const COI28 = { en: 'Some projects are not listed here because of a {a}conflict of interest{b}. Site totals include them.',
-es: 'Algunos proyectos no figuran aquí por un {a}conflicto de interés{b}. Los totales del sitio los incluyen.',
-fr: 'Certains projets ne sont pas listés ici en raison d’un {a}conflit d’intérêts{b}. Les totaux du site les incluent.',
-de: 'Einige Projekte sind hier wegen eines {a}Interessenkonflikts{b} nicht aufgeführt. Die Gesamtzahlen der Website enthalten sie.',
-nl: 'Sommige projecten staan hier niet vanwege een {a}belangenconflict{b}. De totalen van de site tellen ze mee.',
-ru: 'Некоторые проекты здесь не указаны из-за {a}конфликта интересов{b}. Общие цифры сайта их учитывают.',
-zh: '由于{a}利益冲突{b}，部分项目未在此列出。网站总数包含它们。',
-ar: 'بعض المشاريع غير مدرجة هنا بسبب {a}تضارب مصالح{b}. تشملها أرقام الموقع الإجمالية.' };
 function indexPage(ix, lang) {
 const by = new Map(); for (const x of ix.P) { if (!by.has(x.mk)) by.set(x.mk, []); by.get(x.mk).push(x); }
 const mks = [...by.keys()].sort((a, b) => by.get(b).length - by.get(a).length);
 const canon = ORIGIN + pre(lang) + '/projects/', title = tr(lang, 'title_i'), desc = tr(lang, 'lead_i', { k: nf28(lang, ix.P.length), m: nf28(lang, mks.length) });
 const hidN = (ix.named.projects || []).filter(x => ix.caseBy.has(x.id) && COI_MARKETS.has(String(x.mk || '').toLowerCase())).length;
-const body = TB.kbx_named__t.k46 + pre(lang) + '/">Kolaboro</a></p><h1>' + esc(tr(lang, 'h1_i')) + '</h1><p class="lead">' + esc(desc) + '</p>' + (hidN ? '<p class="k-small k-muted">' + esc(COI28[lang] || COI28.en).replace('{a}', '<a href="/independence/">').replace('{b}', '</a>') + '</p>' : '') + searchBox(lang, ix.P.length, ix.devs.size) + filterBar(lang) + '</div></section>' + LL_CSS + leastHtml(ix, lang, 24, iso(ix.updated)) + TB.kbx_named__t.k47 +
+const body = TB.kbx_named__t.k46 + pre(lang) + '/">Kolaboro</a></p><h1>' + esc(tr(lang, 'h1_i')) + '</h1><p class="lead">' + esc(desc) + '</p>' + (hidN ? '<p class="k-small k-muted">' + esc(TB.kbx_named__t.o_COI28[lang] || TB.kbx_named__t.o_COI28.en).replace('{a}', '<a href="/independence/">').replace('{b}', '</a>') + '</p>' : '') + searchBox(lang, ix.P.length, ix.devs.size) + filterBar(lang) + '</div></section>' + LL_CSS + leastHtml(ix, lang, 24, iso(ix.updated)) + TB.kbx_named__t.k47 +
 '<details class="kmkt"><summary>' + esc(tr(lang, 'jump_mk')) + ' (' + mks.length + ')</summary><p>' + mks.map(m => '<a href="#m-' + slugM(m) + '">' + esc(mkName(m, lang)) + ' <small>' + by.get(m).length + '</small></a>').join('') + '</p></details>' +
 mks.map(m => '<section class="ks"><h2 id="m-' + slugM(m) + '">' + esc(mkName(m, lang)) + ' <small>' + by.get(m).length + '</small></h2><ul class="lk cols">' + by.get(m).sort((a, b) => a.n.localeCompare(b.n)).map(x => '<li><a href="' + pre(lang) + '/projects/' + x.s + '/">' + esc(x.n) + '</a>' + (x.dv ? ' <small>' + esc(x.dv) + '</small>' : '') + '</li>').join('') + '</ul></section>').join('') + '</div>';
 const ld = { '@context': 'https://schema.org', '@type': 'CollectionPage', url: canon, name: title.replace(/ \| Kolaboro$/, ''), description: desc, inLanguage: lang, dateModified: iso(ix.updated),
@@ -783,7 +766,7 @@ return pg;
 const dv = ix.devs.get(key); if (!dv) return null;
 const softD = f => (async () => { try { return await f(); } catch (e) { return null; } })();
 const [gn, rs, web, fam, watch, fil, fac, cc] = await Promise.all([
-(async () => { const gl = await gleif(dv.n, ctx), m0 = gl.matches[0], cs = new Set(dv.ids.map(i => ix.byId.get(i)).filter(Boolean).map(x => COUNTRY_ISO[x.co] || x.co));
+(async () => { const gl = await gleif(dv.n, ctx), m0 = gl.matches[0], cs = new Set(dv.ids.map(i => ix.byId.get(i)).filter(Boolean).map(x => TB.kbx_named__t.o_COUNTRY_ISO[x.co] || x.co));
 const netOk = !!(m0 && cs.has(m0.country)), net = netOk ? await gleifNet(m0.lei, ctx) : null;
 return { gl, netOk, net }; })(),
 softD(() => rsData(env)), softD(() => webData(env)), softD(() => familyData(env)), softD(() => watchData(env)), softD(() => filingsData(env)), softD(() => facetsData(env)), softD(() => ccData33(env))]);

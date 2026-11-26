@@ -34,23 +34,13 @@ ru: 'Закон Дубая № 7/2006, статья 4: собственност�
 zh: '迪拜 2006 年第 7 号法律第 4 条：产权限于阿联酋和海合会国家公民及其公司；其他外国人经统治者批准，仅可在其指定区域取得无期限永久产权，或最长 99 年的用益权或租赁权。',
 ar: 'قانون دبي رقم 7 لسنة 2006، المادة 4: التملّك لمواطني الدولة ودول مجلس التعاون وشركاتهم؛ ويجوز لغيرهم من الأجانب، بموافقة الحاكم وفي مناطق يحددها فقط، التملّك الحر دون قيد زمني، أو حق الانتفاع أو الإجارة حتى 99 سنة.'
 };
-const MX_RZ = {
-en: 'Within 100 km of the borders and 50 km of the coast (the restricted zone), a foreigner acquires residential property through a bank trust (fideicomiso) that needs a permit from the Foreign Affairs ministry (SRE); the trust lasts up to 50 years and can be extended.',
-es: 'A menos de 100 km de las fronteras y 50 km de la costa (la zona restringida), un extranjero adquiere vivienda mediante un fideicomiso bancario que requiere permiso de la Secretaría de Relaciones Exteriores (SRE); el fideicomiso dura hasta 50 años y se puede prorrogar.',
-fr: 'À moins de 100 km des frontières et de 50 km de la côte (la zone restreinte), un étranger acquiert un logement par une fiducie bancaire (fideicomiso) soumise à un permis du ministère des Affaires étrangères (SRE) ; la fiducie dure 50 ans au plus et peut être prolongée.',
-de: 'Innerhalb von 100 km zu den Grenzen und 50 km zur Küste (der Sperrzone) erwirbt ein Ausländer Wohneigentum über einen Bank-Treuhandvertrag (fideicomiso), der eine Genehmigung des Außenministeriums (SRE) braucht; er läuft bis zu 50 Jahre und ist verlängerbar.',
-nl: 'Binnen 100 km van de grenzen en 50 km van de kust (de beperkte zone) verwerft een buitenlander woningbezit via een banktrust (fideicomiso) waarvoor een vergunning van het ministerie van Buitenlandse Zaken (SRE) nodig is; de trust duurt maximaal 50 jaar en kan worden verlengd.',
-ru: 'В пределах 100 км от границ и 50 км от побережья (запретная зона) иностранец приобретает жильё через банковский траст (fideicomiso), для которого нужно разрешение министерства иностранных дел (SRE); траст действует до 50 лет и может быть продлён.',
-zh: '在距国境 100 公里、距海岸 50 公里的范围内（限制区），外国人须通过银行信托（fideicomiso）取得住宅物业，该信托需外交部（SRE）许可；信托期限最长 50 年，可延期。',
-ar: 'ضمن 100 كم من الحدود و50 كم من الساحل (المنطقة المقيّدة)، يتملّك الأجنبي العقار السكني عبر ائتمان مصرفي (fideicomiso) يحتاج إلى تصريح من وزارة الخارجية (SRE)؛ ومدته حتى 50 سنة قابلة للتمديد.'
-};
 const MX_COAST = new Set(['Riviera Maya', 'Los Cabos', 'Puerto Vallarta', 'Riviera Nayarit']);
 const landed = x => /villa|house|home|townhouse|bungalow|land|plot|landed/i.test(((x.fx || {}).unit_types || []).join(' ') + ' ' + x.n) && !/apartment|condo|suite|studio|tower/i.test(((x.fx || {}).unit_types || []).join(' '));
 function lawFor(x, lang) {
 const n = k => (NT[k] && (NT[k][lang] || NT[k].en)) || '';
 if (x.co === 'Indonesia') return [[n('n_id_milik'), LAW.id_uupa]].concat(landed(x) ? [[n('n_id_pakai'), LAW.id_pp18]] : []);
 if (x.co === 'Thailand') return landed(x) ? [[n('n_th_land'), LAW.th_dol]] : [[n('n_th_quota'), LAW.th_condo]];
-if (x.co === 'Mexico' && MX_COAST.has(x.mk)) return [[MX_RZ[lang] || MX_RZ.en, LAW.mx_lie]];
+if (x.co === 'Mexico' && MX_COAST.has(x.mk)) return [[TB.kbx_p29__t.o_MX_RZ[lang] || TB.kbx_p29__t.o_MX_RZ.en, LAW.mx_lie]];
 if (x.co === 'UAE' && x.mk === 'Dubai') return [[AE_L7[lang] || AE_L7.en, LAW.ae_l7]];
 return [];
 }

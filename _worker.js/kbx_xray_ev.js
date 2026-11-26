@@ -7,17 +7,6 @@ export const PATHS = /^\/api\/xev(?:\/sat\.png)?$/;
 export const EV_IDS = ['location', 'satellite', 'images', 'ppm', 'market', 'developer', 'law', 'similar'];
 const ORIGIN = 'https://kolaboro.com';
 const COI = new Set(['sumba']);
-const TITLES = { location: 'Location', satellite: 'Satellite now', images: 'Images on the page', ppm: 'Price per m2 vs official data', market: 'Market base rates', developer: 'Developer track record', law: 'Buyer protection law and registers', similar: 'Similar projects nearby' };
-const PAID = {
-location: 'A local agent will stand on the plot and send GPS-stamped photos (site visits are on request: we confirm a local agent for your location before you pay), so the pin is the real plot, not an address on a web page.',
-satellite: 'The site visit shows what is on the ground today (works, workers, access) instead of a 10 m satellite pixel.',
-images: 'The site visit photographs the real site, which tells you whether the renders and photos match it.',
-ppm: 'The land office and contract review check the price, the unit and the area you would actually sign for.',
-market: null,
-developer: 'We check the company at the official register, and the developer\'s past projects in person (site visits on request: we confirm a local agent for your location before you pay).',
-law: 'Our contract review checks whether your contract uses these protections (escrow, delay penalty, refund).',
-similar: null,
-};
 const esc = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const hex = b => [...new Uint8Array(b)].map(x => x.toString(16).padStart(2, '0')).join('');
 const sha256 = async b => hex(await crypto.subtle.digest('SHA-256', typeof b === 'string' ? new TextEncoder().encode(b) : b));
@@ -64,7 +53,7 @@ const optFile = (env, p) => file(env, p).catch(() => null);
 const OWN = p => ({ name: 'Kolaboro open data ' + p, url: ORIGIN + p, licence: 'CC BY 4.0 (Kolaboro)' });
 function card(id, n) {
 const t0 = Date.now(), contacted = new Set();
-const c = { id, n, title: TITLES[id], status: 'not_found', summary: '', items: [], limits: [], paid: PAID[id] || null, sources: [], proof: { ms: 0, bytes: 0, edge: true, contacted: [] }, data: {} };
+const c = { id, n, title: TB.kbx_xray_ev__t.o_TITLES[id], status: 'not_found', summary: '', items: [], limits: [], paid: TB.kbx_xray_ev__t.o_PAID[id] || null, sources: [], proof: { ms: 0, bytes: 0, edge: true, contacted: [] }, data: {} };
 c._src = (s, bytes) => { c.sources.push(s); if (bytes) c.proof.bytes += bytes; try { if (s.url) contacted.add(new URL(s.url).hostname); } catch (e) {} };
 c._host = h => contacted.add(h);
 c._done = () => { c.proof.ms = Date.now() - t0; c.proof.contacted = [...contacted]; delete c._src; delete c._host; delete c._done; return c; };
@@ -642,14 +631,13 @@ c.status = 'found';
 c.summary = dv.n + ': ' + xs.length + ' project' + (xs.length === 1 ? '' : 's') + ' tracked' + (tot ? ', ' + st.kept + ' of ' + tot + ' dated promises kept, ' + st.broken + ' broken, ' + st.moved + ' moved' : '') + '.';
 return c._done();
 }
-const LAWC = { ID: 'Indonesia', 'AE-DU': 'UAE', TH: 'Thailand', ES: 'Spain', PT: 'Portugal', 'US-FL': 'USA', 'AU-VIC': 'Australia', MX: 'Mexico', JP: 'Japan', GB: 'United Kingdom', TR: 'Turkey' };
 const COVC = { Spain: 'ES', USA: 'US', UAE: 'AE', Indonesia: 'ID', 'United Kingdom': 'GB' };
 async function evLaw(S, env, ctx) {
 const c = card('law', 17), B = S.B, C = S.country;
 c.limits = [TB.kbx_xray_ev__t.k59, TB.kbx_xray_ev__s.k17];
 if (!C) { c.status = 'not_found'; c.summary = TB.kbx_xray_ev__t.k60; return c._done(); }
 const rules = [];
-for (const src of [B.law, B.lh]) { if (!src || !src.rules) continue; for (const r of src.rules) if (LAWC[r.market] === C) { const s = (src.sources || {})[r.source] || ((B.law && B.law.sources) || {})[r.source]; if (s && s.url && !rules.some(x => x.id === r.id)) rules.push({ id: r.id, title: r.title, cite: r.cite || null, law: s.law, url: s.url, quote: String(r.quote || '').slice(0, 300), topics: r.topics || [] }); } }
+for (const src of [B.law, B.lh]) { if (!src || !src.rules) continue; for (const r of src.rules) if (TB.kbx_xray_ev__t.o_LAWC[r.market] === C) { const s = (src.sources || {})[r.source] || ((B.law && B.law.sources) || {})[r.source]; if (s && s.url && !rules.some(x => x.id === r.id)) rules.push({ id: r.id, title: r.title, cite: r.cite || null, law: s.law, url: s.url, quote: String(r.quote || '').slice(0, 300), topics: r.topics || [] }); } }
 const cov = ((B.cover && B.cover.countries) || []).find(x => x.code === (COVC[C] || 'ANY')) || ((B.cover && B.cover.countries) || []).find(x => x.code === 'ANY');
 c.data = { country: C, rules, registers: cov ? { code: cov.code, online: cov.online || [], manual: cov.manual || [], needs_key: cov.needs_key || [], site_visit: cov.site_visit || [] } : null, page: rules.length ? ORIGIN + '/countries/' + slugC(C) + '/buyer-protection-law/' : null };
 for (const r of rules.slice(0, 6)) c.items.push({ label: r.title, value: r.law + (r.cite ? ', ' + r.cite : ''), quote: r.quote, url: r.url, kind: 'link' });
@@ -709,7 +697,7 @@ export async function evRun(page, hint, env, ctx, onCard, opts) {
 hint = hint || {}; page = page || {};
 const only = new Set((opts && opts.only && opts.only.length ? opts.only : EV_IDS).filter(id => RUN[id]));
 const emit = c => { try { onCard && onCard(c); } catch (e) {} return c; };
-const fail = (id, e) => emit({ id, n: NUM[id], title: TITLES[id], status: 'error', summary: (/timed out/.test(String((e && e.message) || e)) ? TB.kbx_xray_ev__s.k19 : 'This check could not run: ' + String((e && e.message) || e).slice(0, 160)), error: String((e && e.message) || e).slice(0, 160), items: [], limits: [], paid: PAID[id] || null, sources: [], proof: { ms: 0, bytes: 0, edge: true, contacted: [] }, data: {} });
+const fail = (id, e) => emit({ id, n: NUM[id], title: TB.kbx_xray_ev__t.o_TITLES[id], status: 'error', summary: (/timed out/.test(String((e && e.message) || e)) ? TB.kbx_xray_ev__s.k19 : 'This check could not run: ' + String((e && e.message) || e).slice(0, 160)), error: String((e && e.message) || e).slice(0, 160), items: [], limits: [], paid: TB.kbx_xray_ev__t.o_PAID[id] || null, sources: [], proof: { ms: 0, bytes: 0, edge: true, contacted: [] }, data: {} });
 let B; try { B = await base(env); } catch (e) { return [...only].map(id => fail(id, e)); }
 const html = String(page.html || '');
 const S = { B, html, url: page.final_url || page.url || '', fetched: page.fetched || null, page_sha: page.sha256 || null, hint, market: null, country: null, coi: false, pin: null, place: null };
@@ -722,7 +710,7 @@ S.ps = priceSizeOnPage(page.text || htmlText(html));
 const scrub = c => { if (!S.coi || !c) return c; const rx = /sumba/i, deep = o => { if (typeof o === 'string') return rx.test(o) ? '(not shown)' : o; if (Array.isArray(o)) return o.map(deep); if (o && typeof o === 'object') { const r = {}; for (const k of Object.keys(o)) r[k] = deep(o[k]); return r; } return o; };
 c.items = (c.items || []).filter(it => !rx.test(JSON.stringify(it))); c.data = deep(c.data || {}); c.sources = deep(c.sources || []); c.summary = deep(c.summary); return c; };
 let locDone = null;
-const run = id => withTimeout(RUN[id](S, env, ctx), TMO[id], TITLES[id]).then(async c => { if (id !== 'location' && locDone) await locDone; return emit(scrub(c)); }, e => fail(id, e));
+const run = id => withTimeout(RUN[id](S, env, ctx), TMO[id], TB.kbx_xray_ev__t.o_TITLES[id]).then(async c => { if (id !== 'location' && locDone) await locDone; return emit(scrub(c)); }, e => fail(id, e));
 const loc = locDone = only.has('location') || only.has('satellite') || (!S.market && (only.has('ppm') || only.has('market') || only.has('law') || only.has('similar'))) ? run('location') : Promise.resolve(null);
 const jobs = {};
 for (const id of ['images', 'developer']) if (only.has(id)) jobs[id] = run(id);
@@ -738,7 +726,7 @@ if (req.method === 'OPTIONS') return new Response(null, { headers: { 'access-con
 if (req.method !== 'GET') return J({ error: 'GET only' }, 405);
 if (u.pathname === '/api/xev/sat.png') { try { return await satRoute(u, env, ctx); } catch (e) { return new Response('satellite image unavailable: ' + String(e.message || e).slice(0, 120), { status: 502 }); } }
 const target = u.searchParams.get('url');
-if (!target) return J({ about: TB.kbx_xray_ev__t.k68 + EV_IDS.join(',') + ']', cards: EV_IDS.map(id => ({ id, n: NUM[id], title: TITLES[id] })), contract: TB.kbx_xray_ev__s.k20 });
+if (!target) return J({ about: TB.kbx_xray_ev__t.k68 + EV_IDS.join(',') + ']', cards: EV_IDS.map(id => ({ id, n: NUM[id], title: TB.kbx_xray_ev__t.o_TITLES[id] })), contract: TB.kbx_xray_ev__s.k20 });
 if (!publicUrl(target)) return J({ error: 'url must be a public http(s) URL' }, 400);
 const only = (u.searchParams.get('only') || '').split(',').filter(x => EV_IDS.includes(x));
 const pid = u.searchParams.get('project_id') || '';

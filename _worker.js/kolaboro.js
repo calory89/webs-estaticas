@@ -4,9 +4,6 @@ import { TB } from './kbx_strings.js';
 const MODELS = ['claude-haiku-5-5', 'claude-sonnet-5-5'];
 const MAX_TEXT = 14000;
 const PER_IP_HOUR = 3;
-const TRACKED = ['every-bali.com', 'balitecture.com', 'breig-property.com', 'magnumestate.com', 'teus-group.com', 'lyvinproperties.co',
-'investlandbali.com', 'globalbalihome.com', 'urbanescape.id', 'coreconceptliving.com', 'axoradevelopments.com', 'cocodevelopmentgroup.com',
-'movepropertygroup.com', 'aravitaresidence.com'];
 const PROMPT = `You are the research agent of Kolaboro, a company that protects people who buy property abroad, especially off-plan.
 Below is the text of a web page about a property project. Extract ONLY what the page itself says. Never guess, never accuse.
 First decide what kind of page this is. If the site is not about buying or selling property (for example news, sport, shopping, a blog, a search engine, a social network, a bank, a hotel booking site, or anything else that is not real estate for sale), set "page_kind" to "not_real_estate", set every property field to null, leave every list empty, set "attention" to "low" and use "summary" to say plainly what the site is and that it is not a property project.
@@ -147,12 +144,11 @@ Object.keys(CRIT).forEach(k => { const x = critNorm(k, a[k]), y = critNorm(k, b[
 return { fields: Object.keys(CRIT).length, agreed: Object.keys(CRIT).length - dis.length, disagreements: dis };
 }
 const QFIELDS = ['price_from', 'title_type', 'lease_years', 'completion', 'advertised_return', 'permit_claim', 'payment_plan'];
-const QENT = { nbsp: ' ', amp: '&', quot: '"', apos: "'", lsquo: "'", rsquo: "'", ldquo: '"', rdquo: '"', ndash: '-', mdash: '-', hellip: '...', euro: '€', pound: '£', yen: '¥', deg: '°', times: 'x', sup2: '2', middot: '·', lt: '<', gt: '>' };
 function qnorm(s) {
 return String(s == null ? '' : s).normalize('NFKC')
 .replace(/&#x([0-9a-f]{1,6});/gi, (m, h) => { try { return String.fromCodePoint(parseInt(h, 16)); } catch (e) { return m; } })
 .replace(/&#(\d{1,7});/g, (m, d) => { try { return String.fromCodePoint(+d); } catch (e) { return m; } })
-.replace(/&([a-z]{2,8});/gi, (m, n) => QENT[n.toLowerCase()] || m)
+.replace(/&([a-z]{2,8});/gi, (m, n) => TB.kolaboro__t.o_QENT[n.toLowerCase()] || m)
 .toLowerCase().replace(/[​-‍⁠﻿­]/g, '').replace(/[‘’‚‛′`´]/g, "'").replace(/[“”„‟″«»]/g, '"')
 .replace(/[‐-―−]/g, '-').replace(/…/g, '...').replace(/\s+/g, ' ').replace(/ ([.,;:!?)\]%])/g, '$1').replace(/([(\[]) /g, '$1').trim();
 }
@@ -451,7 +447,7 @@ return o;
 }
 throw new Error(last || 'no model');
 }
-const isTracked = host => TRACKED.some(d => host === d || host.endsWith('.' + d));
+const isTracked = host => TB.kolaboro__t.o_TRACKED.some(d => host === d || host.endsWith('.' + d));
 const deskCacheKey = (u, lang) => new Request('https://kolaboro.com/__kb_desk9/' + (lang && lang !== 'en' ? lang + '/' : '') + encodeURIComponent(u.hostname.replace(/^www\./, '') + u.pathname.replace(/\/$/, '') + u.search));
 const WALL = /<title>\s*(just a moment|attention required|access denied|pardon our interruption|are you a (robot|human)|security check|ddos-guard|checking your browser|request blocked|forbidden|captcha|one more step|verify you are human|bot verification)|cf-chl-|challenge-platform\/|_incapsula_resource|px-captcha|captcha-delivery\.com|geo\.captcha-delivery|awswaf|perimeterx|sec-if-cpt|\/cdn-cgi\/challenge/i;
 function botWall(r, body) {
@@ -643,7 +639,6 @@ ctx.waitUntil(caches.default.put(ck, new Response(JSON.stringify(res), { headers
 return json({ ...res, cached: false });
 }
 const CALENDARS = ['https://a.pool.opentimestamps.org', 'https://b.pool.opentimestamps.org', 'https://a.pool.eternitywall.com'];
-const OTS_MAGIC = [0x00, 0x4f, 0x70, 0x65, 0x6e, 0x54, 0x69, 0x6d, 0x65, 0x73, 0x74, 0x61, 0x6d, 0x70, 0x73, 0x00, 0x00, 0x50, 0x72, 0x6f, 0x6f, 0x66, 0x00, 0xbf, 0x89, 0xe2, 0xe8, 0x84, 0xe8, 0x92, 0x94];
 async function payEvent(env, a) {
 if (!env.KB_HOOK_KEY || !a.p_txn) return;
 try { await rpc('kolaboro_pay_event', Object.assign({ p_key: env.KB_HOOK_KEY }, a)); } catch (e) {}
@@ -736,7 +731,7 @@ if (!r.ok) return null; const a = new Uint8Array(await r.arrayBuffer()); return 
 }));
 const ok = res.filter(Boolean);
 if (!ok.length) return json({ error: 'calendars' }, 503);
-const parts = [...OTS_MAGIC, 0x01, 0x08, ...digest];
+const parts = [...TB.kolaboro__t.o_OTS_MAGIC, 0x01, 0x08, ...digest];
 ok.forEach((x, i) => { if (i < ok.length - 1) parts.push(0xff); parts.push(...x.a); });
 const ots = b64(new Uint8Array(parts));
 try {
@@ -765,15 +760,7 @@ return json({ ...res, cached: false });
 }
 const LANGS = { en: 'English', es: 'Spanish', de: 'German', fr: 'French', nl: 'Dutch', ru: 'Russian', zh: 'Simplified Chinese', id: 'Indonesian' };
 function langRule(l) { return l && l !== 'en' ? TB.kolaboro__t.k9 + LANGS[l] + TB.kolaboro__s.k3 : ''; }
-const DOC_TYPES = {
-permit: 'a building permit or related approval (Indonesia: PBG, old IMB, SLF, KKPR/zoning; elsewhere the local equivalent). Extract permit number, holder, address/plot, permitted use, floors, building area, issue date, issuing office. Flag: holder differs from the developer, use not residential/tourism as sold, more floors/units sold than permitted, permit for a different plot, SLF (fit-for-use) missing for a finished building.',
-contract: 'a property sale or reservation contract (Indonesia: PPJB, AJB, lease agreement; or any off-plan SPA). Extract parties, property, price, payment schedule, completion date, title type, lease term and extension, penalties for late delivery, refund rights, governing law, who holds the title until transfer. In "clauses" list the clauses that put the buyer at risk (unilateral date changes, no penalty for delay, payments not tied to construction milestones, nominee structures, forfeit of all payments on buyer default, extension "promised" without fixed price, dispute forum far from the buyer).',
-company: 'a company deed or registration (Indonesia: Akta Pendirian/Perubahan, SK Kemenkumham/AHU, NIB/OSS, PT PMA). Extract company name, deed number and notary, registration numbers, shareholders, directors, authorised business lines (KBLI), capital. Flag: business lines that do not allow selling or renting property, shareholders that look like nominees, company younger than the project it sells, directors who are not the people you deal with.',
-invoice: 'an invoice, payment request or receipt from a developer or contractor. Extract issuer, bank account holder, amounts, currency, what is being paid for (which milestone), dates. Flag: bank account holder differs from the contracting company, milestone billed that the buyer cannot verify on site, amounts that do not match the payment schedule, personal accounts, crypto or cash requests.',
-certificate: 'an Indonesian land certificate (SHM, SHGB, Hak Pakai). Extract right type, certificate number, NIB, Surat Ukur, area, location, holder, dates, encumbrances (Hak Tanggungan, blokir). Flag: foreigners cannot hold SHM; SHGB/Hak Pakai expire; mortgages must be lifted before transfer.',
-auto: 'any document used when buying property abroad. First decide what it is, then extract what matters for a buyer.'
-};
-const DOC_PROMPT = (t) => `You read documents for Kolaboro, which protects people who buy property abroad. The buyer uploaded ${DOC_TYPES[t]}
+const DOC_PROMPT = (t) => `You read documents for Kolaboro, which protects people who buy property abroad. The buyer uploaded ${TB.kolaboro__t.o_DOC_TYPES[t]}
 Transcribe only what is legible; never invent a value. If a page is unreadable, say so in "legibility".
 Reply with ONLY one JSON object:
 {
@@ -796,7 +783,7 @@ if (!env.ANTHROPIC_API_KEY) return json({ error: 'not_configured' }, 503);
 const raw = await req.text(); if (raw.length > 4000000) return json({ error: 'too_big' }, 413);
 let b; try { b = JSON.parse(raw); } catch (e) { return json({ error: 'bad_request' }, 400); }
 if (b.company) return json({ error: 'bad_request' }, 400);
-const type = DOC_TYPES[b.type] ? b.type : 'auto', lang = LANGS[b.lang] ? b.lang : 'en', claim = String(b.claim || '').slice(0, 2500);
+const type = TB.kolaboro__t.o_DOC_TYPES[b.type] ? b.type : 'auto', lang = LANGS[b.lang] ? b.lang : 'en', claim = String(b.claim || '').slice(0, 2500);
 const files = (Array.isArray(b.files) ? b.files : [b.file]).filter(Boolean).slice(0, 4), content = [];
 for (const f of files) {
 const m = /^data:(image\/(jpeg|png|webp)|application\/pdf);base64,([A-Za-z0-9+/=]+)$/.exec(String(f));
@@ -857,24 +844,6 @@ if (!['safe', 'hold', 'stop'].includes(out.verdict)) out.verdict = 'hold';
 let saved = {}; try { saved = await rpc('kolaboro_ops2', { p_key: String(b.key || ''), p_action: 'report_save', p_payload: { case_code: input.case.code, draft: out, model: MODELS.join('/') } }); } catch (e) {}
 return json({ id: saved.id || null, draft: out, evidence: ev.length });
 }
-const API_DOC = { name: 'Kolaboro pilot API', version: 'v1', auth: 'Send your key in the x-api-key header. Get one at https://kolaboro.com/api-pilot', limits: '200 calls a day per key during the pilot',
-endpoints: [
-{ method: 'GET', path: '/api/v1/markets', does: 'What developers advertise in each market we track: title types, lease terms, extension promises, guaranteed-return language, permit numbers published, price bands. Advertised claims, not verified facts.' },
-{ method: 'GET', path: '/api/v1/cases', does: 'Anonymised cases from every market our research agent is following, with the questions a buyer must get answered.' },
-{ method: 'POST', path: '/api/v1/projects/check', body: '{ "url": "https://developer-site/project" }', does: 'Desk review of a project page: what it promises, what it leaves out, what to ask before paying.' },
-{ method: 'POST', path: '/api/v1/documents/read', body: '{ "type": "auto|certificate|contract|permit|company|invoice", "files": ["data:image/jpeg;base64,…" or "data:application/pdf;base64,…"], "claim": "what the seller told the buyer", "lang": "en" }', does: 'Reads a land certificate, contract, permit, company deed or invoice and compares it with the claim.' },
-{ method: 'GET', path: '/api/v1/verify/{sha256}', does: 'Whether a file fingerprint has a Bitcoin timestamp (OpenTimestamps) and when.' },
-{ method: 'GET', path: '/api/v1/attestations/{share_token}', does: 'The status of a buyer\'s case they chose to share with you: stage, verdict, evidence counts, chain head and dates.' }
-],
-open_endpoints: [
-{ method: 'GET', path: '/api/v1/projects', does: 'Every named project page with its market, developer and links. No key.' },
-{ method: 'GET', path: '/api/v1/projects/{slug}', does: 'One named project: sourced facts, dates, feeds. No key.' },
-{ method: 'GET', path: '/api/v1/developers', does: 'Every developer page with its project count. No key.' },
-{ method: 'GET', path: '/api/v1/developers/{slug}', does: 'One developer and its tracked projects. No key.' },
-{ method: 'GET', path: '/api/v1/search-index', does: 'Compact search index of projects and developers. No key.' },
-{ method: 'POST', path: '/api/v1/xray', body: '{ "url": "https://developer-site/project" }', does: 'Project X-ray as one JSON answer: register and free checks. No key for the free checks; description at /api/v1/xray/openapi.json.' }
-],
-openapi: 'https://kolaboro.com/docs/api/openapi.json' };
 function cors(r) { const h = new Headers(r.headers); h.set('access-control-allow-origin', '*'); h.set('access-control-allow-headers', 'x-api-key, content-type'); h.set('access-control-allow-methods', 'GET, POST, OPTIONS'); return new Response(r.body, { status: r.status, headers: h }); }
 export const PILOT_401 = key => ({ error: /^kb_live_/.test(key || '') ? 'wrong_key_type' : 'missing_key', how: 'https://kolaboro.com/api-pilot',
 note: TB.kolaboro__s.k4,
@@ -882,7 +851,7 @@ open: 'https://kolaboro.com/api/open', free_keys: 'https://kolaboro.com/api-keys
 async function apiV1(req, u, env, ctx) {
 if (req.method === 'OPTIONS') return cors(new Response(null, { status: 204 }));
 const path = u.pathname.replace(/\/+$/, '');
-if (path === '/api/v1' || path === '/api/v1/docs') return cors(json(API_DOC));
+if (path === '/api/v1' || path === '/api/v1/docs') return cors(json(TB.kolaboro__t.o_API_DOC));
 const key = req.headers.get('x-api-key') || '';
 if (!/^kb_pilot_[0-9a-f]{40}$/.test(key)) return cors(json(PILOT_401(key), 401));
 if (await sha(key) === TB.kolaboro__t.HONEY_API) { ctx.waitUntil(rpc('kolaboro_honey_hit', { p_wkey: WKEY, p_kind: 'api_key', p_hint: (req.headers.get('cf-ipcountry') || '?') + ' ' + path.slice(0, 60) }).catch(() => {})); return cors(json({ error: 'invalid_key' }, 401)); }
@@ -1352,8 +1321,6 @@ const res = { q, updated: d.updated, answer: String(out.answer || ''), numbers: 
 ctx.waitUntil(caches.default.put(ck, new Response(JSON.stringify(res), { headers: { 'content-type': 'application/json', 'cache-control': 'max-age=86400' } })));
 return json(res);
 }
-const LVL = { registry: 'confirmed in an official register', independent: 'confirmed by an independent source', developer: 'stated only by the developer', contradicted: 'contradicted by another source', none: 'not published' };
-const CKN = { permit: 'Permit or licence number', escrow: 'Deposit protection', progress: 'Construction progress', plans: 'Floor or site plans', record: 'Developer track record', returns_ok: 'No guaranteed returns' };
 const hesc = t => String(t == null ? '' : t).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const slugM = m => encodeURIComponent(m.toLowerCase().replace(/\s+/g, '-'));
 export async function dataSitemap() {
@@ -1378,7 +1345,7 @@ const ck = c.checks || {}, v = c.verified || {}, cl = c.claims || {};
 title = c.id + ': off-plan project in ' + place + ', ' + c.country + ' | Kolaboro';
 desc = 'Anonymous off-plan project in ' + place + ' (' + (c.stage || 'off-plan') + '). ' + c.score + ' of 6 buyer checks public, ' + (c.vscore || 0) + TB.kolaboro__t.k40 + (cl.contradicted ? ', ' + cl.contradicted + ' developer claims contradicted' : '') + '. Checked ' + (c.checked || d.updated) + '.';
 canon = 'https://kolaboro.com/p/' + encodeURIComponent(c.id) + '/';
-const rows = Object.keys(CKN).map(k => { const val = ck[k]; const pub = k === 'permit' ? val === 2 : k === 'progress' ? val != null : val === true; return '<li>' + CKN[k] + ': ' + (pub ? 'public' : 'not public') + (v[k] ? ', ' + LVL[v[k]] : '') + '</li>'; }).join('');
+const rows = Object.keys(TB.kolaboro__t.o_CKN).map(k => { const val = ck[k]; const pub = k === 'permit' ? val === 2 : k === 'progress' ? val != null : val === true; return '<li>' + TB.kolaboro__t.o_CKN[k] + ': ' + (pub ? 'public' : 'not public') + (v[k] ? ', ' + TB.kolaboro__t.o_LVL[v[k]] : '') + '</li>'; }).join('');
 body = '<h1>' + hesc(c.id) + ': off-plan project in ' + hesc(place) + ', ' + hesc(c.country) + '</h1><p>' + hesc(desc) + '</p><ul>' + rows + '</ul>' +
 (cl.verified + cl.unverified + cl.contradicted ? '<p>Developer claims tested: ' + cl.verified + ' verified, ' + cl.unverified + ' unverified, ' + cl.contradicted + ' contradicted.</p>' : '') +
 (c.overdue ? '<p>' + c.overdue + TB.kolaboro__t.k41 : '') + ((c.flags || []).length ? '<p>Problems in public reports: ' + c.flags.map(hesc).join('; ') + '</p>' : '') +

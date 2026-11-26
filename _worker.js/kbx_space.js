@@ -16,8 +16,6 @@ const v = { radar, bld, v: ((radar && radar.updated) || '') + '/' + ((bld && bld
 MEMO = { t: Date.now(), v }; return v;
 }
 let S = { en: {} };
-const OD = { en: { ascending: 'ascending', descending: 'descending' }, es: { ascending: 'ascendente', descending: 'descendente' }, fr: { ascending: 'ascendant', descending: 'descendant' }, de: { ascending: 'aufsteigender', descending: 'absteigender' },
-nl: { ascending: 'opgaande', descending: 'neergaande' }, ru: { ascending: 'восходящий', descending: 'нисходящий' }, zh: { ascending: '升轨', descending: '降轨' }, ar: { ascending: 'صاعد', descending: 'هابط' } };
 const t = (lang, k, v) => { const s = (S[lang] && S[lang][k]) || S.en[k] || ''; return v && typeof s === 'string' ? s.replace(/\{(\w+)\}/g, (m, x) => v[x] != null ? v[x] : m) : s; };
 const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const mi = s => { const m = String(s).match(/^(\d{4})-(\d{2})/); return m ? +m[1] * 12 + (+m[2] - 1) : null; };
@@ -45,7 +43,7 @@ const rec = rd && rd.projects && rd.projects[id];
 if (!rec || !rec.n || !rec.m0) return '';
 const m0 = mi(rec.m0), n = rec.n, months = Array.from({ length: n }, (_, i) => ym(m0 + i));
 const k = rec.months_ok || 0, tr = rec.track || {};
-let h = '<h3>' + esc(t(lang, 'rh')) + '</h3><p class="ki">' + esc(t(lang, 'ri', { c: opt && opt.cloudy != null ? opt.cloudy : '-', n: opt && opt.n || n, o: (OD[lang] || OD.en)[tr.orbit] || tr.orbit || '-', r: tr.relative_orbit != null ? tr.relative_orbit : '-' })) + '</p><ul class="ksat-sum"><li>' + esc(t(lang, 'rk', { k, n })) + '</li>';
+let h = '<h3>' + esc(t(lang, 'rh')) + '</h3><p class="ki">' + esc(t(lang, 'ri', { c: opt && opt.cloudy != null ? opt.cloudy : '-', n: opt && opt.n || n, o: (TB.kbx_space__t.o_OD[lang] || TB.kbx_space__t.o_OD.en)[tr.orbit] || tr.orbit || '-', r: tr.relative_orbit != null ? tr.relative_orbit : '-' })) + '</p><ul class="ksat-sum"><li>' + esc(t(lang, 'rk', { k, n })) + '</li>';
 const band = rd.band_db;
 if (rec.status === 'ok' && rec.sum && rec.y) {
 const s = rec.sum, big = band != null && Math.abs(s.y_last) > band;

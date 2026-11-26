@@ -159,11 +159,8 @@ const L = light6({ tp, c, pn: x.pn, ho, ev: x.ev, ids: [] });
 k.sub = k.sub + ' · ' + k.facts[2][1]; k.facts[1][1] = L[0][2][1] === 'p_reg' ? 'Confirmed in register' : k.facts[1][1];
 k.facts[2] = ['Last checked', fd(lastmod(ix, x), 'en')]; k.checks = L.map(([key, , st]) => [CKL[key], st[0]]); return k;
 }
-const TYPE_CARD = { rankings: ['Ranking', 'Off-plan rankings', 'Delays, changed promises and transparency, computed from public sources'], guides: ['Buyer guide', 'Buying off-plan: what to check', 'Official registers, laws and questions to ask, country by country'],
-reports: ['Data report', 'Off-plan data reports', 'Overdue handovers, delay index and market data, dated and citable'], countries: ['Country files', 'Off-plan property by country', 'Permits, deposit protection and delays in every country we track'],
-markets: ['Market file', 'Off-plan market files', 'What developers publish in each market, checked against registers'], compare: ['Comparison', 'Off-plan projects side by side', 'Permits, handover dates and delays compared on the same facts'] };
 function typeCard(ix, kind) {
-const C = [...ix.caseBy.values()], mk = new Set(C.map(c => c.market)).size, co = new Set(C.map(c => c.country)).size, T = TYPE_CARD[kind];
+const C = [...ix.caseBy.values()], mk = new Set(C.map(c => c.market)).size, co = new Set(C.map(c => c.country)).size, T = TB.kbx_og__t.o_TYPE_CARD[kind];
 return { kind: T[0], name: T[1], sub: T[2], facts: [['Projects tracked', C.length.toLocaleString('en-US')], ['Markets and countries', mk + ' in ' + co], ['Data of', fd(String(ix.updated || '').slice(0, 10), 'en')]], badge: null, path: '/' };
 }
 function devCard(ix, dv) {

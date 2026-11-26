@@ -8,11 +8,11 @@ const MEMO = {};
 function file(e, p, t) { return FQ[p] || (FQ[p] = file0(e, p, t).finally(() => { delete FQ[p]; })); }   // n40 k21: one shared read per file
 const FQ = {};
 async function file0(env, p) {
-  const m = MEMO[p]; if (m && m.v && Date.now() - m.t < 600000) return m.v;
-  let v = null;
-  try { const r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com' + p)); if (r.ok) v = await r.json(); } catch (e) { v = null; }
-  if (!v) { try { const r = await fetch(ORIGIN + p, { cf: { cacheTtl: 600 } }); if (r.ok) v = await r.json(); } catch (e) { v = null; } }
-  MEMO[p] = { t: Date.now(), v }; return v;
+const m = MEMO[p]; if (m && m.v && Date.now() - m.t < 600000) return m.v;
+let v = null;
+try { const r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com' + p)); if (r.ok) v = await r.json(); } catch (e) { v = null; }
+if (!v) { try { const r = await fetch(ORIGIN + p, { cf: { cacheTtl: 600 } }); if (r.ok) v = await r.json(); } catch (e) { v = null; } }
+MEMO[p] = { t: Date.now(), v }; return v;
 }
 let T = null, D = null, IX = null, TL = null;
 async function load(env) {
@@ -417,9 +417,8 @@ for (const [s, n, loc] of c.m) if (!mm || s !== mm[1]) A.push(l === 'en' || loc 
 if (A.length < 2) return '';
 return TB.kbx_n37u__t.k58 + dir(l) + TB.kbx_n37u__s.k11 + esc(t(l, 'cg_h')) + TB.kbx_n37u__t.k59 + A.map(a => '<li>' + a + '</li>').join('') + '</ul></div></nav>';
 }
-const LT41 = ['h', 'p', 'l', 'b', 'ld', 'er', 'nf', 'mn', 'mx', 'ho', 'nho', 'mv', 'mvn', 'late', 'late1', 'okmv', 'ok', 'done', 'unk', 'rg', 'nrg', 'pn', 'y', 'n', 'open', 'src'];
 function lateBox(l, nc) {
-const S = {}; for (const k of LT41) S[k] = t(l, 'lt_' + k + '41'); S.pre = pre(l); S.loc = LOC[l] || 'en-GB';
+const S = {}; for (const k of TB.kbx_n37u__t.o_LT41) S[k] = t(l, 'lt_' + k + '41'); S.pre = pre(l); S.loc = LOC[l] || 'en-GB';
 return TB.kbx_n37u__t.k60 + dir(l) + TB.kbx_n37u__t.k61 + esc(S.h) + '</h2><p>' + esc(S.p) + TB.kbx_n37u__t.k62 + esc(S.l) + TB.kbx_n37u__s.k12 + esc(S.b) + TB.kbx_n37u__t.k63 +
 TB.kbx_n37u__t.k64 + JSON.stringify(S).replace(/</g, '\\u003c') + TB.kbx_n37u__t.k65 + (nc ? ' nonce="' + nc + '"' : '') + '></script>' +
 TB.kbx_n37u__s.k13;
@@ -465,12 +464,11 @@ tile(P + '/data/changes/week/', nf(g.w, l), t(l, 'hp_t4')) + '</ul>' +
 '<p class="hp-foot"' + dir(l) + '>' + esc(tf(l, 'hp_foot', { s: nf(s.sources, l), f: nf(IX.src, l) })) + ' <a href="' + P + '/data/gaps/">' + esc(t(l, 'live_l')) + '</a>' + TB.kbx_n37u__t.DOT + '<a href="' + P + '/data/how-we-verify/">' + esc(t(l, 'vf_l')) + '</a></p>';
 return [proof, band];
 }
-const DS = [['ds1', 'bali-cases'], ['ds2', 'kolaboro-parquet'], ['ds3', 'kolaboro-markets-parquet'], ['ds4', 'world-claims'], ['ds5', 'promises'], ['ds6', 'delay-index'], ['ds7', 'price-index'], ['ds8', 'register-checks'], ['ds9', 'satellite'], ['ds10', null, '/data/n37u.json', 'JSON'], ['ds11', null, '/data/gaps.csv', 'CSV']];
 const sz = (b, l) => b >= 1048576 ? nf(Math.round(b / 104857.6) / 10, l) + ' MB' : nf(Math.max(1, Math.round(b / 1024)), l) + ' KB';
 async function dataHub(env, shell, l) {
 const C = await file(env, '/data/catalog.json'), by = new Map(((C && C.datasets) || []).map(x => [x.id, x]));
 let b = '<h2>' + esc(t(l, 'dh_main')) + TB.kbx_n37u__t.k67 + esc(t(l, 'tw_l')) + '"><table><thead><tr><th scope="col">' + esc(t(l, 'dh_main')) + '</th><th scope="col">' + esc(t(l, 'dh_fmt')) + '</th><th scope="col">' + esc(t(l, 'dh_rows')) + '</th><th scope="col">' + esc(t(l, 'dh_size')) + '</th><th scope="col">' + esc(t(l, 'dh_upd')) + TB.kbx_n37u__t.k68;
-for (const [k, id, url, fmt] of DS) {
+for (const [k, id, url, fmt] of TB.kbx_n37u__t.o_DS) {
 const x = id ? by.get(id) : null; if (id && !x) continue;
 const href = x ? x.url.replace(ORIGIN, '') : url, f = x ? String(x.format || '').toUpperCase() : fmt;
 b += '<tr><th scope="row"><a href="' + esc(href) + '" download>' + esc(t(l, k + '_t')) + '</a><br><span class="k-xs">' + esc(t(l, k + '_d')) + '</span></th><td>' + bdi(f) + '</td><td class="n">' + (x && typeof x.rows === 'number' ? nf(x.rows, l) : url === '/data/n37u.json' ? nf(D.n, l) : '') + '</td><td class="n">' + (x && x.bytes ? sz(x.bytes, l) : '') + '</td><td class="n">' +

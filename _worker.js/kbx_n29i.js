@@ -90,7 +90,7 @@ kvHtml([[nf(lang, st.n), t(lang, 'k_n')], [nf(lang, st.dv), t(lang, 'k_dv')], [n
 [nf(lang, st.mv), t(lang, 'k_mv')], [nf(lang, st.ov), t(lang, 'k_ov')], [st.med == null ? '-' : nf(lang, st.med), t(lang, 'k_med')], [esc(d), t(lang, 'k_d')]]) +
 '<h2 id="projects">' + esc(t(lang, 'tb')) + '</h2><style>@media (max-width:640px){' + ['c_p', 'c_dv', 'c_ar', 'c_h', 'c_pn', 'c_s'].map((k, i) => '.k40m td:nth-child(' + (i + 1) + ')::before{content:"' + String(t(lang, k)).replace(/[\\"<>]/g, '') + '"}').join('') + TB.kbx_n29i__s.k1 + ['c_p', 'c_dv', 'c_ar', 'c_h', 'c_pn', 'c_s'].map(k => '<th scope="col">' + esc(t(lang, k)) + '</th>').join('') + '</tr></thead><tbody>' + rows + '</tbody></table></div>' +
 (isC && TR_PLACES.some(P => P.coi && (CO_AL[P.co] || P.co) === m.co) ? '<p class="k-small k-muted">' + esc(t(lang, 'coi_n')) + TB.kbx_n29i__t.k7 + esc(t(lang, 'coi_l')) + '</a></p>' : '') +
-faqHtml(t(lang, 'faq', { p }), Q) + (BPL.some(P => P.mk === mk) ? buyerLinks(lang, mk).replace(TB.kbx_n29i__t.k8, '').replace('</div></section>', '') : '') + '<h2 id="more">' + th(lang, 'more', { p: H(bdi(p)) }) + '</h2><ul class="k29-l">' + links.map(a => '<li>' + a + '</li>').join('') + '</ul><p class="k-small k-muted">' + esc(t(lang, 'src')) + TB.kbx_n29i__s.k2;
+faqHtml(t(lang, 'faq', { p }), Q) + (TB.kbx_n29i__t.o_BPL.some(P => P.mk === mk) ? buyerLinks(lang, mk).replace(TB.kbx_n29i__t.k8, '').replace('</div></section>', '') : '') + '<h2 id="more">' + th(lang, 'more', { p: H(bdi(p)) }) + '</h2><ul class="k29-l">' + links.map(a => '<li>' + a + '</li>').join('') + '</ul><p class="k-small k-muted">' + esc(t(lang, 'src')) + TB.kbx_n29i__s.k2;
 const url = ORIGIN + pre(lang) + path;
 const ld = [{ '@type': 'CollectionPage', '@id': url + '#page', url, name: title, description: desc, inLanguage: lang, dateModified: st.lm, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' },
 about: isC ? { '@type': 'Country', name: p, alternateName: p !== m.co ? m.co : undefined } : { '@id': url + '#place' }, mainEntity: { '@type': 'ItemList', numberOfItems: L.length, itemListElement: L.slice(0, 50).map((x, i) => ({ '@type': 'ListItem', position: i + 1, url: ORIGIN + pre(lang) + '/projects/' + x.s + '/', name: x.n })) } },
@@ -106,7 +106,7 @@ function mSitemap(D) {
 const xe = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;');
 const urls = [...D.M.values()].flatMap(m => { const p = '/m/' + slugM(m.mk) + '/'; return LANGS.map(l => '<url><loc>' + xe(ORIGIN + pre(l) + p) + '</loc><lastmod>' + m.st.lm + '</lastmod>' + LANGS.map(a => TB.kbx_n29i__t.k11 + a + '" href="' + xe(ORIGIN + pre(a) + p) + '"/>').join('') + TB.kbx_n29i__t.k12 + xe(ORIGIN + p) + '"/></url>'); });
 for (const p of ['/countries/', '/rankings/'].concat([...D.C.values()].map(c => '/countries/' + c.s + '/'))) { const c = D.C.get(p.split('/')[2]), lm = c ? c.st.lm : D.d; for (const l of LANGS) urls.push('<url><loc>' + ORIGIN + pre(l) + p + '</loc><lastmod>' + lm + '</lastmod>' + LANGS.map(a => TB.kbx_n29i__t.k13 + a + '" href="' + ORIGIN + pre(a) + p + '"/>').join('') + TB.kbx_n29i__t.k14 + ORIGIN + p + '"/></url>'); }
-for (const g of GROUPS) { const p = '/guides/buyers-from/' + g + '/', lm = BPL.map(P => (D.M.get(slugM(P.mk)) || { st: { lm: '' } }).st.lm).concat(['2026-11-14']).sort().pop(); for (const l of LANGS) urls.push('<url><loc>' + ORIGIN + pre(l) + p + '</loc><lastmod>' + lm + '</lastmod>' + LANGS.map(a => TB.kbx_n29i__t.k15 + a + '" href="' + ORIGIN + pre(a) + p + '"/>').join('') + TB.kbx_n29i__t.k16 + ORIGIN + p + '"/></url>'); }
+for (const g of GROUPS) { const p = '/guides/buyers-from/' + g + '/', lm = TB.kbx_n29i__t.o_BPL.map(P => (D.M.get(slugM(P.mk)) || { st: { lm: '' } }).st.lm).concat(['2026-11-14']).sort().pop(); for (const l of LANGS) urls.push('<url><loc>' + ORIGIN + pre(l) + p + '</loc><lastmod>' + lm + '</lastmod>' + LANGS.map(a => TB.kbx_n29i__t.k15 + a + '" href="' + ORIGIN + pre(a) + p + '"/>').join('') + TB.kbx_n29i__t.k16 + ORIGIN + p + '"/></url>'); }
 return TB.kbx_n29i__s.k3 + urls.join('\n') + '\n</urlset>\n';
 }
 const HUB_RX = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?(projects|rankings\/transparency|handover|handover\/overdue)\/$/;
@@ -224,30 +224,17 @@ return L.join('\n');
 }
 export const BUYER_RX = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?guides\/buyers-from(?:\/(russia|china|gulf))?(\/?)$/;
 const GROUPS = ['russia', 'china', 'gulf'];
-const BPL = [{ s: 'dubai', mk: 'Dubai', g: 'dubai' }, { s: 'bali', mk: 'Bali', g: 'bali' }, { s: 'phuket', mk: 'Phuket', g: 'phuket' }, { s: 'cyprus', mk: 'Cyprus', g: 'cyprus' }];
-const BSRC = {
-ae7: { n: 'Dubai Law No. 7 of 2006 (Real Property Registration), Article 4', u: 'https://dlp.dubai.gov.ae/Legislation%20Reference/2006/Law%20No.%20(7)%20of%202006.html', d: '2026-11-14' },
-pp18: { n: 'Government Regulation No. 18 of 2021, Articles 52, 69, 71 and 72', u: 'https://www.peraturan.go.id/files3/pp-no-18-tahun-2021_asli.pdf', d: '2026-11-03' },
-th: { n: 'Condominium Act B.E. 2522, sections 19 bis and 19 ter', u: 'https://www.dol.go.th/media/716929789247754240/migration/2025/10/6Wp3Tk7hgK5HdDRuvYXGcNsi.pdf', d: '2026-11-14' },
-eu5b: { n: 'European Commission: FAQ on Article 5b of Council Regulation 833/2014 (deposits)', u: 'https://finance.ec.europa.eu/system/files/2022-10/faqs-sanctions-russia-deposits_en.pdf', d: '2026-11-14' },
-safe: { n: 'SAFE Beijing branch: current account FAQ (notice Huifa [2016] No. 36)', u: 'https://www.safe.gov.cn/beijing/file/file/20191127/b29df7fa63504266b9ccb23429185d40.pdf', d: '2026-11-14' }
-};
-const BRULE = {
-russia: { home: null, dubai: ['ae_for', 'ae7'], bali: ['id_for', 'pp18'], phuket: ['th_for', 'th'], cyprus: ['cy_ru', 'eu5b'] },
-china: { home: ['cn_safe', 'safe'], dubai: ['ae_for', 'ae7'], bali: ['id_for', 'pp18'], phuket: ['th_for', 'th'], cyprus: null },
-gulf: { home: null, dubai: ['ae_gcc', 'ae7'], bali: ['id_for', 'pp18'], phuket: ['th_for', 'th'], cyprus: null }
-};
 const BT = TB.kbx_n29i_BT ;
 const bt = (lang, k, v) => { let s = (BT[lang] && BT[lang][k] != null) ? BT[lang][k] : BT.en[k]; if (v) s = String(s).replace(/\{(\w+)\}/g, (m, a) => v[a] != null ? v[a] : m); return s.replace(/\.\.(?=\s|$)/g, '.'); };
 function buyerPage(D, g, lang) {
-const G = bt(lang, 'g_' + g), d = fd(D.d, lang), path = '/guides/buyers-from/' + g + '/', R = BRULE[g], N = n => nf(lang, n);
-const srcP = k => { const S = BSRC[k]; return '<p class="k-small k-muted">' + esc(bt(lang, 'src', { s: S.n, d: fd(S.d, lang) })).replace(esc(S.n), '<a href="' + esc(S.u) + '" rel="noopener">' + esc(S.n) + '</a>') + '</p>'; };
+const G = bt(lang, 'g_' + g), d = fd(D.d, lang), path = '/guides/buyers-from/' + g + '/', R = TB.kbx_n29i__t.o_BRULE[g], N = n => nf(lang, n);
+const srcP = k => { const S = TB.kbx_n29i__t.o_BSRC[k]; return '<p class="k-small k-muted">' + esc(bt(lang, 'src', { s: S.n, d: fd(S.d, lang) })).replace(esc(S.n), '<a href="' + esc(S.u) + '" rel="noopener">' + esc(S.n) + '</a>') + '</p>'; };
 let body = TB.kbx_n29i__s.k13 + pre(lang) + '/">Kolaboro</a> / <a href="' + pre(lang) + '/guides/buying-off-plan/">' + esc(bt(lang, 'hub')) + '</a> / <span>' + esc(G) + '</span></p>' +
 '<h1>' + esc(bt(lang, 'h1', { g: G })) + '</h1><p class="lead">' + esc(bt(lang, 'lead', { g: G })) + '</p></div>';
 if (R.home) body += '<h2 id="home">' + esc(bt(lang, 'home')) + '</h2><p>' + esc(bt(lang, R.home[0])) + '</p>' + srcP(R.home[1]);
 body += '<h2 id="rules">' + esc(bt(lang, 'rules')) + '</h2>';
 const rows = [];
-for (const P of BPL) {
+for (const P of TB.kbx_n29i__t.o_BPL) {
 const m = D.M.get(slugM(P.mk)), pn = mkName(P.mk, lang), r = R[P.s];
 body += '<h3 id="' + P.s + '">' + bdi(pn) + '</h3>' + (r ? '<p>' + esc(bt(lang, r[0])) + '</p>' + srcP(r[1]) : '<p>' + esc(bt(lang, 'same')) + '</p>') +
 '<ul class="k29-l"><li><a href="' + pre(lang) + '/guides/buying-off-plan/' + P.g + '/">' + esc(bt(lang, 'guide', { p: pn })) + '</a></li>' + (m ? '<li><a href="' + pre(lang) + '/m/' + slugM(P.mk) + '/">' + esc(bt(lang, 'mk', { p: pn })) + '</a></li>' : '') + '</ul>';
@@ -256,17 +243,16 @@ if (m) rows.push('<tr><td data-label="' + esc(bt(lang, 'c_pl')) + '"><a href="' 
 body += '<h2 id="data">' + esc(bt(lang, 'data')) + '</h2><p class="k-small k-muted">' + esc(t(lang, 'k_d')) + ': ' + esc(d) + TB.kbx_n29i__t.k31 + ['c_pl', 'c_n', 'c_pn', 'c_ov', 'c_m'].map(k => '<th scope="col">' + esc(bt(lang, k)) + '</th>').join('') + '</tr></thead><tbody>' + rows.join('') + '</tbody></table></div>' +
 '<h2 id="other">' + esc(bt(lang, 'other')) + '</h2><ul class="k29-l">' + GROUPS.filter(x => x !== g).map(x => '<li><a href="' + pre(lang) + '/guides/buyers-from/' + x + '/">' + esc(bt(lang, 'h1', { g: bt(lang, 'g_' + x) })) + '</a></li>').join('') + '</ul><p class="k-small k-muted">' + esc(bt(lang, 'reviewed', { d: fd('2026-11-14', lang) })) + '</p></div></section></div>';
 const title = bt(lang, 't', { g: G }), desc = bt(lang, 'desc', { g: G, d }), url = ORIGIN + pre(lang) + path;
-const lm = BPL.map(P => (D.M.get(slugM(P.mk)) || { st: { lm: '' } }).st.lm).concat(['2026-11-14']).sort().pop();
+const lm = TB.kbx_n29i__t.o_BPL.map(P => (D.M.get(slugM(P.mk)) || { st: { lm: '' } }).st.lm).concat(['2026-11-14']).sort().pop();
 const ld = [{ '@type': 'Article', '@id': url + '#page', url, headline: title, description: desc, inLanguage: lang, dateModified: lm, datePublished: '2026-11-14', author: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' }, publisher: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' },
-about: BPL.map(P => ({ '@type': 'Place', name: mkName(P.mk, lang) })), citation: Object.values(BSRC).filter((S, i, a) => JSON.stringify(R).includes(Object.keys(BSRC)[i])).map(S => ({ '@type': 'Legislation', name: S.n, url: S.u })) }];
+about: TB.kbx_n29i__t.o_BPL.map(P => ({ '@type': 'Place', name: mkName(P.mk, lang) })), citation: Object.values(TB.kbx_n29i__t.o_BSRC).filter((S, i, a) => JSON.stringify(R).includes(Object.keys(TB.kbx_n29i__t.o_BSRC)[i])).map(S => ({ '@type': 'Legislation', name: S.n, url: S.u })) }];
 return { path, title, desc, body, ld, lm };
 }
 export function buyerLinks(lang, mkOrGuide) {
-const P = BPL.find(q => q.s === mkOrGuide || q.mk === mkOrGuide); if (!P) return '';
+const P = TB.kbx_n29i__t.o_BPL.find(q => q.s === mkOrGuide || q.mk === mkOrGuide); if (!P) return '';
 return TB.kbx_n29i__t.k32 + esc(bt(lang, 'hub')) + '</h2><p>' + esc(bt(lang, 'hubl')) + '</p><ul class="k29-l">' + GROUPS.map(x => '<li><a href="' + pre(lang) + '/guides/buyers-from/' + x + '/#' + P.s + '">' + esc(bt(lang, 'h1', { g: bt(lang, 'g_' + x) })) + '</a></li>').join('') + '</ul></div></section>';
 }
 export const CR_RX = /^\/(es|de|fr|nl|ru|zh|ar)\/(countries|rankings)(?:\/([a-z0-9-]{2,60}))?(\/?)$/;
-const RK = ['/rankings/transparency/', '/rankings/developers/', '/permits/', '/price-ranges/', '/ownership/', '/golden-visa/', '/airports/', '/reports/', '/handover/', '/handover/overdue/', '/areas/', '/weekly/', '/numbers/'];
 function countriesHub(D, lang) {
 const C = [...D.C.values()].sort((a, b) => b.L.length - a.L.length || a.co.localeCompare(b.co)), d = fd(D.d, lang), N = n => nf(lang, n), path = '/countries/';
 const n = C.reduce((a, c) => a + c.L.length, 0), title = t(lang, 'ch_t', { c: N(C.length), n: N(n) }), desc = t(lang, 'ch_lead', { k: MIN_MK, d });
@@ -282,10 +268,10 @@ return { path, title, desc, body, lm, ld: [{ '@type': 'CollectionPage', '@id': u
 function rankingsHub(D, lang) {
 const path = '/rankings/', title = t(lang, 'rk_t'), desc = t(lang, 'rk_lead'), L = t(lang, 'rk'), d = fd(D.d, lang);
 const body = TB.kbx_n29i__s.k15 + pre(lang) + '/">Kolaboro</a> / <span>' + esc(title) + '</span></p><h1>' + esc(title) + '</h1><p class="lead">' + esc(desc) + '</p></div>' +
-'<ul class="k-list">' + RK.map((r, i) => '<li><a href="' + pre(lang) + r + '">' + esc(L[i]) + '</a></li>').join('') + '</ul>' +
+'<ul class="k-list">' + TB.kbx_n29i__t.o_RK.map((r, i) => '<li><a href="' + pre(lang) + r + '">' + esc(L[i]) + '</a></li>').join('') + '</ul>' +
 '<ul class="k29-l"><li><a href="' + pre(lang) + '/countries/">' + esc(t(lang, 'ch_h')) + TB.kbx_n29i__t.k36 + esc(t(lang, 'k_d')) + ': ' + esc(d) + '</p></div></section></div>';
 const url = ORIGIN + pre(lang) + path;
-return { path, title, desc, body, lm: D.d, ld: [{ '@type': 'CollectionPage', '@id': url + '#page', url, name: title, description: desc, inLanguage: lang, dateModified: D.d, mainEntity: { '@type': 'ItemList', numberOfItems: RK.length, itemListElement: RK.map((r, i) => ({ '@type': 'ListItem', position: i + 1, name: L[i], url: ORIGIN + pre(lang) + r })) } }] };
+return { path, title, desc, body, lm: D.d, ld: [{ '@type': 'CollectionPage', '@id': url + '#page', url, name: title, description: desc, inLanguage: lang, dateModified: D.d, mainEntity: { '@type': 'ItemList', numberOfItems: TB.kbx_n29i__t.o_RK.length, itemListElement: TB.kbx_n29i__t.o_RK.map((r, i) => ({ '@type': 'ListItem', position: i + 1, name: L[i], url: ORIGIN + pre(lang) + r })) } }] };
 }
 export async function crAlternates(env, path) {
 let ok = path === '/rankings/' || path === '/countries/';

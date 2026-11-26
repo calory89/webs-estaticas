@@ -15,10 +15,10 @@ const MEMO = {};
 function file(e, p, t) { return FQ[p] || (FQ[p] = file0(e, p, t).finally(() => { delete FQ[p]; })); }   // n40 k21: one shared read per file
 const FQ = {};
 async function file0(env, p, ttl) {
-  const m = MEMO[p]; if (m && Date.now() - m.t < (ttl || 600000)) return m.v;
-  let v = null;
-  try { const r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com' + p)); if (r.ok) v = await r.json(); } catch (e) { v = null; }
-  MEMO[p] = { t: Date.now(), v }; return v;
+const m = MEMO[p]; if (m && Date.now() - m.t < (ttl || 600000)) return m.v;
+let v = null;
+try { const r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com' + p)); if (r.ok) v = await r.json(); } catch (e) { v = null; }
+MEMO[p] = { t: Date.now(), v }; return v;
 }
 async function rawFile(env, p) { try { const r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com' + p)); return r.ok ? new Uint8Array(await r.arrayBuffer()) : null; } catch (e) { return null; } }
 const pre = l => l === 'en' ? '' : '/' + l;
@@ -249,15 +249,12 @@ sec(t(l, 'mo_runs_h'), table(t(l, 'mo_rth'), d.S.slice(-15).reverse().map(s => '
 sec(t(l, 'method'), paras(l, 'mo_p')) + files(l, [['/api/v1/monitoring', 'JSON'], ['/data/monitoring.json', 'JSON'], ['/api/x/status/pages', t(l, 'mo_edge')], ['/open/deploy-guard.py', 'Python'], ['/open/n34c-build.py', 'Python']]);
 return page(shell, l, Object.assign(H(l, 'mo'), { path: '/engineering/monitoring/', body: b, updated: d.S.length ? d.S[d.S.length - 1].at : null, maxAge: 300 }));
 }
-const SEC_PAGES = ['/', '/projects/amani-melasti/', '/ar/m/dubai/', '/login/', '/embed/chart/dubai/', '/api/v1/projects?limit=1', '/data/delta/index.json', '/mcp',
-'/es/', '/projects/emaar-golf-vale/record/', '/developers/emaar-properties/', '/search/?q=emaar', '/data/', '/engineering/', '/zh/new/', '/api/open/stats', '/k/site.css'];
 const CV_R = [['script-src nonce + strict-dynamic (enforced)', 'html', p => /script-src 'nonce-/.test(p.h['content-security-policy'] || '')], ['content-security-policy-report-only', 'html', p => !!p.h['content-security-policy-report-only']], ["default-src 'none' (data answers)", 'data', p => /default-src 'none'/.test(p.h['content-security-policy'] || '')], ['frame-ancestors', 'html', p => /frame-ancestors/.test(p.h['content-security-policy'] || '')], ['x-content-type-options: nosniff', 'all', p => /nosniff/i.test(p.h['x-content-type-options'] || '')], ['referrer-policy', 'html', p => !!p.h['referrer-policy']], ['permissions-policy', 'html', p => !!p.h['permissions-policy']]];
 const cvKind = p => /^\/embed\//.test(p.p) ? 'embed' : /^\/(api|mcp)|\.json/.test(p.p) ? 'data' : /\.(css|js)$/.test(p.p) ? 'asset' : 'html';
 function sriOf(html) { const o = []; for (const m of html.matchAll(/<(script|link)\b[^>]*>/gi)) { const tg = m[0], src = (/\s(?:src|href)="(https?:\/\/[^"]+)"/i.exec(tg) || [])[1]; if (!src || /^https:\/\/(www\.)?kolaboro\.com\//.test(src)) continue; if (/^<link/i.test(tg) && !/rel="(stylesheet|modulepreload)"/i.test(tg)) continue; o.push([src.split('?')[0], /\sintegrity="sha(256|384|512)-/i.test(tg)]); } return o; }
-const SRI_JS = ['/k/site.js', '/k/case.js', '/k/cases.js', '/k/acct.js', '/k/cycle.js', '/k/courtfile.js', '/k/ops2.js', '/graph/graph.js', '/k/n32x/sql.js', '/k/n35a/ask.js', '/sql/sql.js'];
 async function sriJs(env) {
 const M = new Map(), td = new TextDecoder();
-await Promise.all(SRI_JS.map(async f => { const b = await rawFile(env, f); if (!b) return; const s = td.decode(b);
+await Promise.all(TB.kbx_n34c__t.o_SRI_JS.map(async f => { const b = await rawFile(env, f); if (!b) return; const s = td.decode(b);
 for (const m of s.matchAll(/https:\/\/(?:cdnjs\.cloudflare\.com|unpkg\.com|cdn\.jsdelivr\.net)\/[^"' )`]+/g)) { const u = m[0].replace(/@'$/, ''), w = s.slice(Math.max(0, m.index - 250), m.index + m[0].length + 400), ok = /sha(256|384|512)-[A-Za-z0-9+/=]{40,}/.test(w); (M.get(u) || M.set(u, { n: new Set(), ok: true, f: {} }).get(u)).f[f] = ((M.get(u).f[f]) || ok); } }));
 for (const o of M.values()) { for (const f in o.f) { o.n.add(f); o.ok = o.ok && o.f[f]; } }
 return M;
@@ -271,19 +268,18 @@ function cvSec(l, d) {
 const S = t(l, 'n39_cv'), ok = d.pages.filter(p => p.status === 200);
 return sec(S[0], '<p class="k-xs">' + esc(S[1]) + '</p>' + table(S[2], CV_R.map(([n, k, f]) => { const P = ok.filter(p => k === 'all' || cvKind(p) === k), c = P.filter(f).length; return '<tr><th scope="row"><code dir="ltr">' + esc(n) + '</code></th><td class="n">' + okc(l, c === P.length, nf(c, l) + '/' + nf(P.length, l)) + '</td><td>' + esc(k === 'all' ? '*' : k) + '</td></tr>'; })), 'coverage');
 }
-const SEC_H = ['strict-transport-security', 'content-security-policy', 'content-security-policy-report-only', 'x-content-type-options', 'referrer-policy', 'permissions-policy', 'x-frame-options', 'cross-origin-opener-policy', 'access-control-allow-origin', 'reporting-endpoints'];
 let SECM = null;
 async function secData() {
 if (SECM && Date.now() - SECM.t < 300000) return SECM.v;
-const pages = await Promise.all(SEC_PAGES.map(async p => { try { const r = await fetch(ORIGIN + p, { headers: { 'user-agent': 'kolaboro-security-page/1.0' }, redirect: 'manual' }); const h = {}; for (const k of SEC_H) { const v = r.headers.get(k); if (v != null) h[k] = v; } let x = null; if (r.status === 200 && /text\/html/.test(r.headers.get('content-type') || '')) { try { x = sriOf(await r.text()); } catch (e) {} } else { try { await r.body.cancel(); } catch (e) {} } return { p, status: r.status, h, x }; } catch (e) { return { p, status: 0, h: {} }; } }));
+const pages = await Promise.all(TB.kbx_n34c__t.o_SEC_PAGES.map(async p => { try { const r = await fetch(ORIGIN + p, { headers: { 'user-agent': 'kolaboro-security-page/1.0' }, redirect: 'manual' }); const h = {}; for (const k of TB.kbx_n34c__t.o_SEC_H) { const v = r.headers.get(k); if (v != null) h[k] = v; } let x = null; if (r.status === 200 && /text\/html/.test(r.headers.get('content-type') || '')) { try { x = sriOf(await r.text()); } catch (e) {} } else { try { await r.body.cancel(); } catch (e) {} } return { p, status: r.status, h, x }; } catch (e) { return { p, status: 0, h: {} }; } }));
 let csp = null; try { const r = await fetch(ORIGIN + '/api/x/live/csp', { cf: { cacheTtl: 300 } }); if (r.ok) csp = await r.json(); } catch (e) {}
 const v = { at: new Date().toISOString(), pages, csp }; SECM = { t: Date.now(), v }; return v;
 }
 async function sePage(env, shell, l) {
 const [d, txt] = await Promise.all([secData(), file(env, '/data/security-text.json', 600000)]);
 const short = v => v.length > 90 ? v.slice(0, 88) + '…' : v;
-const rows = SEC_H.map(k => '<tr><th scope="row"><code>' + esc(k) + '</code></th>' + d.pages.map(p => '<td>' + (p.h[k] != null ? okc(l, true, '✓') : '<span class="mut">-</span>') + '</td>').join('') + '</tr>');
-const vals = SEC_H.map(k => { const p = d.pages.find(x => x.h[k] != null); return p ? '<tr><th scope="row"><code>' + esc(k) + '</code></th><td><code dir="ltr">' + esc(short(p.h[k])) + '</code><br><span class="k-xs">' + esc(p.p) + '</span></td></tr>' : ''; }).filter(Boolean);
+const rows = TB.kbx_n34c__t.o_SEC_H.map(k => '<tr><th scope="row"><code>' + esc(k) + '</code></th>' + d.pages.map(p => '<td>' + (p.h[k] != null ? okc(l, true, '✓') : '<span class="mut">-</span>') + '</td>').join('') + '</tr>');
+const vals = TB.kbx_n34c__t.o_SEC_H.map(k => { const p = d.pages.find(x => x.h[k] != null); return p ? '<tr><th scope="row"><code>' + esc(k) + '</code></th><td><code dir="ltr">' + esc(short(p.h[k])) + '</code><br><span class="k-xs">' + esc(p.p) + '</span></td></tr>' : ''; }).filter(Boolean);
 const c = d.csp, dir = c && c.by_directive ? c.by_directive.slice(0, 8) : [];
 const b = (txt && (txt[l] || txt.en) ? sec(t(l, 'se_in'), (txt[l] || txt.en).map(p => '<p>' + esc(p) + '</p>').join('')) : '') +
 sec(t(l, 'se_live'), '<p class="k-xs">' + esc(fill(t(l, 'se_at'), { d: ft(d.at, l) })) + '</p>' + table([t(l, 'se_h')].concat(d.pages.map(p => p.p + ' (' + p.status + ')')), rows)) +

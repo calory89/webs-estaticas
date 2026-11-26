@@ -75,7 +75,6 @@ const COUNTRY_HINTS = [
 ['ID', /\b(bali|indonesia|lombok|canggu|uluwatu|seminyak|ubud|jakarta)\b/i],
 ['GB', /\b(united kingdom|england|london|uk)\b/i]
 ];
-const COUNTRY_NAMES = { spain: 'ES', españa: 'ES', 'united states': 'US', usa: 'US', 'united arab emirates': 'AE', uae: 'AE', indonesia: 'ID', 'united kingdom': 'GB', uk: 'GB' };
 function countriesFrom(...texts) { const s = texts.filter(Boolean).join(' '), o = []; COUNTRY_HINTS.forEach(([c, re]) => { if (re.test(s)) o.push(c); }); return o; }
 function addressFrom(text) {
 const s = String(text || '');
@@ -177,7 +176,6 @@ c.status = 'found'; c.fields = { address: f.properties.label, borough: f.propert
 if (!bin) c.note = TB.kbx_lookup__t.k15;
 return { c, bbl: pad.bbl, bin };
 }
-const LANDUSE = { '01': 'One and two family buildings', '02': 'Multi-family walk-up buildings', '03': 'Multi-family elevator buildings', '04': 'Mixed residential and commercial', '05': 'Commercial and office', '06': 'Industrial and manufacturing', '07': 'Transportation and utility', '08': 'Public facilities and institutions', '09': 'Open space and outdoor recreation', '10': 'Parking facilities', '11': 'Vacant land' };
 async function nycPluto(bbl, ctx) {
 const url = TB.kbx_lookup__t.SOC + '64uk-42ks.json?bbl=' + encodeURIComponent(bbl);
 const c = check('us_nyc_pluto', TB.kbx_lookup__t.k16, TB.kbx_lookup__t.k17, 'US', { by: 'BBL', value: bbl, url });
@@ -187,11 +185,11 @@ if (!Array.isArray(j)) { c.note = raw.sha256 ? 'PLUTO answered HTTP ' + raw.stat
 if (!j.length) { c.status = 'not_found'; return c; }
 const p = j[0], lu = p.landuse ? String(p.landuse).padStart(2, '0') : null;
 c.status = 'found';
-c.fields = { address: p.address || null, owner: companyOnly(p.ownername), building_class: p.bldgclass || null, land_use: lu ? LANDUSE[lu] || lu : null,
+c.fields = { address: p.address || null, owner: companyOnly(p.ownername), building_class: p.bldgclass || null, land_use: lu ? TB.kbx_lookup__t.o_LANDUSE[lu] || lu : null,
 building_area_sqft: p.bldgarea ? +p.bldgarea : null, building_area_m2: p.bldgarea ? Math.round(+p.bldgarea * 0.092903) : null, lot_area_sqft: p.lotarea ? +p.lotarea : null,
 floors: p.numfloors ? Math.round(+p.numfloors) : null, units_total: p.unitstotal ? +p.unitstotal : null, units_residential: p.unitsres ? +p.unitsres : null,
 year_built: p.yearbuilt && +p.yearbuilt ? +p.yearbuilt : null, zoning: p.zonedist1 || null, landmark: p.landmark || null, dataset_version: p.version || null };
-c.literal = { building_area_m2: literal(raw.text, 'bldgarea'), floors: literal(raw.text, 'numfloors'), year_built: literal(raw.text, 'yearbuilt'), use: literal(raw.text, 'landuse') + (lu && LANDUSE[lu] ? ' (' + LANDUSE[lu] + ')' : '') };
+c.literal = { building_area_m2: literal(raw.text, 'bldgarea'), floors: literal(raw.text, 'numfloors'), year_built: literal(raw.text, 'yearbuilt'), use: literal(raw.text, 'landuse') + (lu && TB.kbx_lookup__t.o_LANDUSE[lu] ? ' (' + TB.kbx_lookup__t.o_LANDUSE[lu] + ')' : '') };
 c.official_page = 'https://zola.planning.nyc.gov/l/lot/' + bbl.slice(0, 1) + '/' + +bbl.slice(1, 6) + '/' + +bbl.slice(6);
 return c;
 }
@@ -454,7 +452,7 @@ if (pageText) brochureFigures(pageText, 'website', pageUrl).forEach(x => brochur
 if (inp.q) brochureFigures(inp.q, 'input', null).forEach(x => brochure.push(x));
 const cs = new Set();
 if (inp.country) cs.add(inp.country === 'UK' ? 'GB' : inp.country);
-if (rep && rep.country) { const k = COUNTRY_NAMES[String(rep.country).toLowerCase()]; if (k) cs.add(k); else countriesFrom(rep.country).forEach(x => cs.add(x)); }
+if (rep && rep.country) { const k = TB.kbx_lookup__t.o_COUNTRY_NAMES[String(rep.country).toLowerCase()]; if (k) cs.add(k); else countriesFrom(rep.country).forEach(x => cs.add(x)); }
 countriesFrom(inp.q, inp.address, rep && rep.location).forEach(x => cs.add(x));
 if (host && /\.es$/.test(host)) cs.add('ES'); if (host && /\.id$/.test(host)) cs.add('ID'); if (host && /\.ae$/.test(host)) cs.add('AE'); if (host && /\.uk$/.test(host)) cs.add('GB');
 if (ids.some(x => x.type === 'es_refcat')) cs.add('ES');

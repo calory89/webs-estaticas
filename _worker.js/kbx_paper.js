@@ -201,7 +201,6 @@ UK: { escrow: [], delay: ['uk-cra-62'], refund: ['uk-cra-62'], complete: [], per
 'US-FL': { escrow: ['fl-718-202-1', 'fl-718-202-2', 'fl-501-1375'], delay: [], refund: ['fl-718-202-1'], complete: [], permits: [], snag: [], reg: [] },
 'US-NY': { escrow: ['ny-352h'], delay: [], refund: ['ny-352h'], complete: [], permits: [], snag: ['ny-777a'], reg: [] }
 };
-const COUNTRIES = [['ES', 'Spain', 'EUR'], ['PT', 'Portugal', 'EUR'], ['AE-DU', 'Dubai (UAE)', 'AED'], ['MX', 'Mexico', 'MXN'], ['TH', 'Thailand', 'THB'], ['ID', 'Indonesia', 'IDR'], ['UK', 'England and Wales (UK)', 'GBP'], ['US-FL', 'Florida (USA)', 'USD'], ['US-NY', 'New York (USA)', 'USD']];
 const T = TB.kbx_paper_T ;
 const tt = l => Object.assign({}, T.en, T[l] || {});
 async function lawNotes(env) {
@@ -216,12 +215,12 @@ const t = tt(lang), p = pre(lang);
 const f = (id, label, type, extra, val, opt) => '<div class="k-field"><label class="k-label" for="ca-' + id + '">' + esc(label) + (opt ? ' <small class="k-muted">(' + esc(t.opt) + ')</small>' : '') + '</label>' +
     (type === 'textarea' ? '<textarea class="k-textarea" id="ca-' + id + '" name="' + id + '" rows="2" autocomplete="off"' + (extra || '') + '>' + esc(val || '') + '</textarea>' : '<input class="k-input" id="ca-' + id + '" name="' + id + '" type="' + type + '" autocomplete="off"' + (extra || '') + (val != null ? ' value="' + esc(val) + '"' : '') + '>') + '</div>';
 const cls = ['escrow', 'delay', 'refund', 'complete', 'permits', 'snag', 'reg'];
-const client = { lang, t: { law_none: t.law_none, law_open: t.law_open, quote: t.quote, trans: t.trans, note: t.note, st_pdf: t.st_pdf, st_done: t.st_done, st_err: t.st_err, st_latin: t.st_latin, empty: t.empty, law_h: t.law_h }, LAW, BASIS, C: COUNTRIES };
+const client = { lang, t: { law_none: t.law_none, law_open: t.law_open, quote: t.quote, trans: t.trans, note: t.note, st_pdf: t.st_pdf, st_done: t.st_done, st_err: t.st_err, st_latin: t.st_latin, empty: t.empty, law_h: t.law_h }, LAW, BASIS, C: TB.kbx_paper__t.o_COUNTRIES };
 return TB.kbx_paper__t.k18 + p + '/">Kolaboro</a> / <a href="/tools/">' + esc(t.crumb_tools) + '</a></p><h1>' + esc(t.h1) + '</h1><p class="lead">' + esc(t.lead) + '</p>' +
 TB.kbx_paper__t.k19 + esc(t.warn_b) + '</b><span>' + esc(t.warn) + '</span></div>' +
 TB.kbx_paper__t.k20 + esc(t.priv_b) + '</b><span>' + esc(t.priv) + '</span></div></div></section>' +
 TB.kbx_paper__s.k1 +
-'<fieldset><legend>' + esc(t.s1) + TB.kbx_paper__t.k21 + esc(t.f_country) + TB.kbx_paper__t.k22 + COUNTRIES.map(c => '<option value="' + c[0] + '">' + esc(c[1]) + '</option>').join('') + '</select></div>' +
+'<fieldset><legend>' + esc(t.s1) + TB.kbx_paper__t.k21 + esc(t.f_country) + TB.kbx_paper__t.k22 + TB.kbx_paper__t.o_COUNTRIES.map(c => '<option value="' + c[0] + '">' + esc(c[1]) + '</option>').join('') + '</select></div>' +
 '<div class="kca-row">' + f('seller', t.f_seller, 'text') + f('buyer', t.f_buyer, 'text', '', '', 1) + '</div><div class="kca-row">' + f('project', t.f_project, 'text') + f('unit', t.f_unit, 'text') + '</div>' + f('contract', t.f_contract, 'text', '', '', 1) + '</fieldset>' +
 '<fieldset><legend>' + esc(t.s2) + '</legend><div class="kca-row">' + f('price', t.f_price, 'text', ' inputmode="decimal"') + TB.kbx_paper__t.k23 + esc(t.f_cur) + TB.kbx_paper__s.k2 + f('paid', t.f_paid, 'text', ' inputmode="decimal"', '', 1) + '</div>' +
 f('sched', t.f_sched, 'textarea', '', '', 1) + '<div class="kca-row">' + f('date', t.f_date, 'date') + f('grace', t.f_grace, 'number', ' min="0" max="24" step="1"', '3') + f('long', t.f_long, 'number', ' min="1" max="60" step="1"', '6') + '</div>' +

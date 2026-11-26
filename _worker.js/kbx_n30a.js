@@ -2,7 +2,6 @@
 import { S, C } from './kbx_n30a_i18n.js';
 import { hkey, hdisp, mkName } from './kbx_hdate.js';
 import { TB } from './kbx_strings.js';
-const VT35 = { en: 'Private document vault (encrypted in your browser)', es: 'Archivo privado de documentos (cifrado en su navegador)', fr: 'Coffre de documents privé (chiffré dans votre navigateur)', de: 'Privater Dokumententresor (verschlüsselt im Browser)', nl: 'Privé documentenkluis (versleuteld in uw browser)', ru: 'Личный сейф документов (шифрование в браузере)', zh: '私人文件保险箱（在浏览器中加密）', ar: 'خزنة مستندات خاصة (مشفّرة في متصفحك)' };
 export const N30V = 'a7';
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
@@ -58,7 +57,6 @@ if (me) t += ' ' + t30(lang, 'sl_this', { m: nf(me.m, lang), d: hdisp(me.f.raw, 
 return '<li class="kfact">' + esc(t) + ' <a class="src" href="' + href + '">' + esc(t30(lang, 'sl_meth')) + '</a></li>';
 } catch (e) { return ''; }
 }
-const CMP34 = { en: 'Compare {mk} with other markets', es: 'Comparar {mk} con otros mercados', fr: 'Comparer {mk} à d\'autres marchés', de: '{mk} mit anderen Märkten vergleichen', nl: '{mk} vergelijken met andere markten', ru: 'Сравнить {mk} с другими рынками', zh: '将{mk}与其他市场比较', ar: 'قارن {mk} بأسواق أخرى' };
 export async function slipBlock(env, mkSlug, lang) {
 const N = await import('./kbx_named.js'), ix = await N.data(env), S0 = slipStats(ix, N.handoverOf);
 const r = S0.rows.find(o => slugM(o.mk) === slugM(mkSlug) || String(o.mk).toLowerCase() === String(mkSlug).toLowerCase()); if (!r) return '';
@@ -66,7 +64,7 @@ const mkN = mkName(r.mk, lang), href = pre(lang) + '/methods/handover-slippage/'
 const line = r.n >= MIN_N ? t30(lang, 'sl_line', { mk: mkN, n: nf(r.n, lang), m: nf(r.med, lang), a: nf(r.min, lang), b: nf(r.max, lang) }) : t30(lang, 'sl_line_few', { mk: mkN, min: MIN_N, m: nf(S0.all.med, lang), n: nf(S0.all.n, lang) });
 return TB.kbx_n30a__t.k0 + esc(t30(lang, 'sl_blk_h', { mk: mkN })) + '</h2><p>' + esc(line) + '</p>' +
 (r.n >= MIN_N ? '<p class="k-muted">' + esc(t30(lang, 'sl_th')[3]) + ': ' + nf(r.p25, lang) + ' – ' + nf(r.p75, lang) + ' · ' + esc(t30(lang, 'sl_th')[5]) + ': ' + nf(r.notdue, lang) + ' · ' + esc(t30(lang, 'sl_upd', { d: N.fd(S0.day, lang) })) + '</p>' : '') +
-'<p><a href="' + href + (r.n >= MIN_N ? '#m-' + slugM(r.mk) : '') + '">' + esc(t30(lang, 'sl_meth')) + '</a> · <a href="/api/v1/slippage">' + esc(t30(lang, 'sl_json')) + '</a> · <a href="' + pre(lang) + '/markets/compare/?m=' + encodeURIComponent(slugM(r.mk)) + '" rel="nofollow">' + esc((CMP34[lang] || CMP34.en).replace('{mk}', mkN)) + '</a></p></div></section>';
+'<p><a href="' + href + (r.n >= MIN_N ? '#m-' + slugM(r.mk) : '') + '">' + esc(t30(lang, 'sl_meth')) + '</a> · <a href="/api/v1/slippage">' + esc(t30(lang, 'sl_json')) + '</a> · <a href="' + pre(lang) + '/markets/compare/?m=' + encodeURIComponent(slugM(r.mk)) + '" rel="nofollow">' + esc((TB.kbx_n30a__t.o_CMP34[lang] || TB.kbx_n30a__t.o_CMP34.en).replace('{mk}', mkN)) + '</a></p></div></section>';
 }
 async function slipApi(env, csv) {
 const N = await import('./kbx_named.js'), ix = await N.data(env), S0 = slipStats(ix, N.handoverOf);
@@ -201,7 +199,7 @@ TB.kbx_n30a__t.k18 + esc(w('cr_drop')) + TB.kbx_n30a__t.k19 + esc(w('cr_pick')) 
 '<details class="n30px"><summary>' + esc(w('cr_or')) + TB.kbx_n30a__t.k20 + esc(w('cr_or')) + TB.kbx_n30a__s.k11 + esc(w('cr_go')) + TB.kbx_n30a__t.k21 + esc(w('cr_clear')) + '</button></p></details>' +
 TB.kbx_n30a__t.k22 +
 (await (await import('./kbx_n31e.js')).crBlock(lang, env).catch(() => '')) + '<ul class="n30q">' + CR_KEYS.map(k => '<li><b>' + esc(w('cr_' + k)) + '</b>: ' + esc(w('cr_' + k + '_q')) + '</li>').join('') + '</ul>' +
-'<p class="k-muted">' + esc(w('cr_note')) + '</p><h2>' + esc(w('cr_rel')) + TB.kbx_n30a__t.k23 + esc(w('cr_rel1')) + '</a></li><li><a href="' + P + '/tools/contract-addendum/">' + esc(w('cr_rel2')) + TB.kbx_n30a__t.k24 + esc(w('cr_rel3')) + '</a></li><li><a href="' + P + '/tools/vault/">' + esc(VT35[lang] || VT35.en) + '</a></li></ul></div>' +
+'<p class="k-muted">' + esc(w('cr_note')) + '</p><h2>' + esc(w('cr_rel')) + TB.kbx_n30a__t.k23 + esc(w('cr_rel1')) + '</a></li><li><a href="' + P + '/tools/contract-addendum/">' + esc(w('cr_rel2')) + TB.kbx_n30a__t.k24 + esc(w('cr_rel3')) + '</a></li><li><a href="' + P + '/tools/vault/">' + esc(TB.kbx_n30a__t.o_VT35[lang] || TB.kbx_n30a__t.o_VT35.en) + '</a></li></ul></div>' +
 TB.kbx_n30a__s.k12 +
 TB.kbx_n30a__s.k13 +
 TB.kbx_n30a__s.k14 +

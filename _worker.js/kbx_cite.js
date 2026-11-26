@@ -305,17 +305,8 @@ L.push('');
 }
 return L.join('\n');
 }
-const LL = {
-en: ['Kolaboro: off-plan projects, facts only', 'Every named off-plan project we track, with the quick answer shown at the top of its page. Facts only, each with its source on the page. Data of {d}. CC BY 4.0, attribute "Kolaboro". Projects not yet reviewed carry no score.', 'Other files', '{n} projects'],
-es: ['Kolaboro: proyectos sobre plano, solo hechos', 'Todos los proyectos sobre plano con nombre que seguimos, con la respuesta rápida que aparece arriba en su página. Solo hechos, cada uno con su fuente en la página. Datos del {d}. CC BY 4.0, cite "Kolaboro". Los proyectos aún no revisados no llevan puntuación.', 'Otros archivos', '{n} proyectos'],
-de: ['Kolaboro: Off-Plan-Projekte, nur Fakten', 'Alle benannten Off-Plan-Projekte, die wir verfolgen, mit der Kurzantwort oben auf ihrer Seite. Nur Fakten, jede mit Quelle auf der Seite. Datenstand {d}. CC BY 4.0, Quellenangabe „Kolaboro“. Noch nicht geprüfte Projekte haben keinen Wert.', 'Weitere Dateien', '{n} Projekte'],
-fr: ['Kolaboro : projets sur plan, des faits uniquement', 'Tous les projets sur plan nommés que nous suivons, avec la réponse courte affichée en haut de leur page. Des faits uniquement, chacun avec sa source sur la page. Données du {d}. CC BY 4.0, citer « Kolaboro ». Les projets pas encore examinés n\'ont pas de score.', 'Autres fichiers', '{n} projets'],
-nl: ['Kolaboro: projecten op plan, alleen feiten', 'Alle benoemde projecten op plan die we volgen, met het korte antwoord bovenaan hun pagina. Alleen feiten, elk met de bron op de pagina. Gegevens van {d}. CC BY 4.0, vermeld "Kolaboro". Projecten die nog niet zijn beoordeeld hebben geen score.', 'Andere bestanden', '{n} projecten'],
-ru: ['Kolaboro: строящиеся проекты, только факты', 'Все строящиеся проекты с названием, которые мы отслеживаем, с кратким ответом из начала их страницы. Только факты, у каждого источник на странице. Данные на {d}. CC BY 4.0, ссылка на «Kolaboro». У ещё не проверенных проектов нет оценки.', 'Другие файлы', 'проектов: {n}'],
-zh: ['Kolaboro：期房项目，只列事实', '我们跟踪的所有具名期房项目，附其页面顶部的简要回答。只列事实，每条在页面上都有来源。数据日期 {d}。CC BY 4.0，请注明“Kolaboro”。尚未审核的项目没有评分。', '其他文件', '{n} 个项目'],
-ar: ['Kolaboro: مشاريع على المخطط، حقائق فقط', 'كل المشاريع على المخطط المسماة التي نتابعها، مع الإجابة المختصرة الظاهرة أعلى صفحتها. حقائق فقط، لكل منها مصدر على الصفحة. بيانات {d}. ترخيص CC BY 4.0، مع ذكر "Kolaboro". المشاريع التي لم تُراجع بعد ليست لها درجة.', 'ملفات أخرى', '{n} مشروع'] };
 const LLD = {};
-const llT = (lang, i, v) => String((LL[lang] || LL.en)[i]).replace(/\{(\w+)\}/g, (m, k) => v && v[k] != null ? v[k] : m);
+const llT = (lang, i, v) => String((TB.kbx_cite__t.o_LL[lang] || TB.kbx_cite__t.o_LL.en)[i]).replace(/\{(\w+)\}/g, (m, k) => v && v[k] != null ? v[k] : m);
 const fdate = (d, lang) => { try { return new Intl.DateTimeFormat(LOC[lang] || 'en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(d + 'T12:00:00Z')); } catch (e) { return d; } };
 const CO_AL = { 'Puerto Rico (USA)': 'Puerto Rico', 'St Lucia': 'Saint Lucia', 'United States': 'USA', 'United Arab Emirates': 'UAE' };
 export function llmsCountries(X) { const m = new Map(); for (const x of X.ix.P) if (x.co) { const co = CO_AL[x.co] || x.co, k = slug(co); if (!m.has(k)) m.set(k, { co, s: k, L: [] }); m.get(k).L.push(x); } return [...m.values()].sort((a, b) => b.L.length - a.L.length || a.co.localeCompare(b.co)); }

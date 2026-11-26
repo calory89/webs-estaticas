@@ -40,15 +40,6 @@ ctx.waitUntil(cache.put(key, c).catch(() => {}));
 }
 return res;
 }
-const ZPROBE = [
-{ id: 'gistaru', name: 'GISTARU (Kementerian ATR/BPN), national spatial plan viewer', url: 'https://gistaru.atrbpn.go.id/' },
-{ id: 'gistaru_rest', name: 'GISTARU ArcGIS REST services directory', url: 'https://gistaru.atrbpn.go.id/arcgis/rest/services?f=json' },
-{ id: 'gistaru_robots', name: 'GISTARU robots.txt', url: 'https://gistaru.atrbpn.go.id/robots.txt' },
-{ id: 'bhumi', name: 'BHUMI (Kementerian ATR/BPN), land and spatial plan map', url: 'https://bhumi.atrbpn.go.id/' },
-{ id: 'bhumi_robots', name: 'BHUMI robots.txt', url: 'https://bhumi.atrbpn.go.id/robots.txt' },
-{ id: 'bhumi_wms', name: 'BHUMI GeoServer WMS capabilities', url: 'https://bhumi.atrbpn.go.id/geoserver/ows?service=WMS&request=GetCapabilities' },
-{ id: 'geosvc_wms', name: 'ATR/BPN GeoServer (geosvc) WMS capabilities', url: 'https://geosvc.atrbpn.go.id/geoserver/ows?service=WMS&request=GetCapabilities' },
-];
 async function probe(p) {
 const t0 = Date.now();
 const ac = new AbortController(), t = setTimeout(() => ac.abort(), 8000);
@@ -67,7 +58,7 @@ const key = new Request('https://kolaboro.com/__hzz/' + VERSION);
 const hit = await caches.default.match(key);
 if (hit) { const r = new Response(hit.body, hit); r.headers.set('x-cache', 'hit'); return r; }
 if (!(await allow(ctx, 'hzz/' + ipOf(req), 10, 600))) return out({ error: 'rate_limited' }, 429);
-const res = await Promise.all(ZPROBE.map(probe));
+const res = await Promise.all(TB.kbx_p__t.o_ZPROBE.map(probe));
 const body = { checked: new Date().toISOString(), from: 'Cloudflare worker (kolaboro.com)', automated_lookup: false,
 reason: TB.kbx_p__s.k2,
 probes: res };

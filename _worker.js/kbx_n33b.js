@@ -113,13 +113,12 @@ const body = '<div class="kpg">' + head(lang, [[t(lang, 'b_cr'), '/developers/']
 const title = t(lang, 'b_title'), url = ORIGIN + pre(lang) + P;
 return { path: P, title, desc: t(lang, 'b_desc'), body, ld: [{ '@type': 'WebPage', '@id': url + '#page', url, name: title, description: t(lang, 'b_desc'), inLanguage: lang, dateModified: D.updated }, crumbLd(lang, [[t(lang, 'b_title'), pre(lang) + P]])], ttl: 900 };
 }
-const SVGH = { 'content-type': 'image/svg+xml; charset=utf-8', 'cache-control': 'public, max-age=3600', 'access-control-allow-origin': '*', 'x-content-type-options': 'nosniff', 'content-security-policy': "default-src 'none'; style-src 'unsafe-inline'" };
 const BODY = new Map();
 export async function handle(req, u, env, ctx, shell) {
 const p = u.pathname;
 let m = /^\/embed\/transparency\/developer\/([a-z0-9-]{1,90})\.svg$/.exec(p);
 if (m) { let D; try { D = await devData(env); } catch (e) { return new Response('Not ready', { status: 503, headers: { 'cache-control': 'no-store' } }); }
-const d = D.set.get(m[1]); return new Response(devSvg(d ? d.P.length : null, D.updated), { status: d ? 200 : 404, headers: SVGH }); }
+const d = D.set.get(m[1]); return new Response(devSvg(d ? d.P.length : null, D.updated), { status: d ? 200 : 404, headers: TB.kbx_n33b__t.o_SVGH }); }
 m = /^\/reports\/transparency(?:\/(20\d\d-[01]\d))?\.csv$/.exec(p);
 if (m) { const E = await editions(env), ed = m[1] ? E.find(e => e.edition === m[1]) : E[E.length - 1];
 if (!ed) return new Response('Unknown edition', { status: 404, headers: { 'content-type': 'text/plain; charset=utf-8' } });

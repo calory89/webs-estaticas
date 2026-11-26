@@ -155,10 +155,9 @@ urls: { project: ORIGIN + TB.kbx_follow__t.k13, developer: ORIGIN + '/{lang}/dev
 SXI = { ix, v }; return v;
 }
 const LANG_URL = (kind, s) => Object.fromEntries(LANGS9.map(l => [l, ORIGIN + pre(l) + '/' + kind + '/' + s + '/']));
-const FX_KEYS = ['price_min', 'price_max', 'currency', 'size_min_m2', 'size_max_m2', 'unit_types', 'payment_plan', 'deposit_pct', 'foreign_ownership', 'service_charge', 'brand', 'permit_authority', 'construction_start', 'handover_promised', 'original_handover', 'developer_founded', 'developer_hq', 'developer_company', 'developer_projects_delivered', 'developer_units_delivered', 'listed_or_audited', 'lat', 'lng'];
 function projectJson(N, ix, x) {
 const c = ix.caseBy.get(x.id) || {}, rvd = N.reviewed(c), page = N.okHttp(x.url) ? N.fixU(x.url) : null, ho = N.handoverOf(ix, x);
-const fx = {}; for (const k of FX_KEYS) { const v = (x.fx || {})[k]; if (v != null && v !== '' && (typeof v !== 'string' || N.cleanOk(v))) fx[k] = v; }
+const fx = {}; for (const k of TB.kbx_follow__t.o_FX_KEYS) { const v = (x.fx || {})[k]; if (v != null && v !== '' && (typeof v !== 'string' || N.cleanOk(v))) fx[k] = v; }
 const prom = (ix.prom[x.id] || []).map(q => ({ kind: q.k, date: q.d, status: q.st, times_moved: q.mv || 0, months_moved: q.mm || 0, source: q.src === 'page' ? 'developer page' : 'research', first_seen: (q.hist && q.hist[0] && q.hist[0].seen) || q.seen, last_seen: q.seen, page_sha256: q.sha || null,
 history: (q.hist || []).map(h => ({ date: h.d, seen: h.seen })) }));
 const reg = x.rw || c.register || null;

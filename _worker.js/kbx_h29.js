@@ -51,7 +51,6 @@ const v = await r.json().catch(() => null); if (v) SHARED[name] = { t: Date.now(
 LOADING[name] = p; const done = () => { if (LOADING[name] === p) delete LOADING[name]; }; p.then(done, done);
 return p;
 }
-const BANDS = { USD: [250e3, 5e5, 1e6], EUR: [250e3, 5e5, 1e6], GBP: [250e3, 5e5, 1e6], AED: [1e6, 2e6, 4e6], SAR: [1e6, 2e6, 4e6], QAR: [1e6, 2e6, 4e6], THB: [5e6, 1e7, 2e7], IDR: [4e9, 8e9, 16e9], MYR: [1e6, 2e6, 4e6], PHP: [1e7, 25e6, 5e7], EGP: [1e7, 25e6, 5e7], MXN: [5e6, 1e7, 2e7], AUD: [5e5, 1e6, 2e6], CAD: [5e5, 1e6, 2e6], BRL: [1e6, 2e6, 4e6], OMR: [1e5, 2e5, 4e5], BHD: [1e5, 2e5, 4e5], JPY: [5e7, 1e8, 2e8], PLN: [5e5, 1e6, 2e6], LKR: [5e7, 1e8, 2e8], INR: [1e7, 2e7, 4e7] };
 const curOf = x => String((x.fx && x.fx.currency) || '').toUpperCase().trim();
 const pmin = x => (x.fx && +x.fx.price_min > 0 && !regSale(x)) ? +x.fx.price_min : null;
 const pmax = x => (x.fx && +x.fx.price_max > 0) ? +x.fx.price_max : null;
@@ -67,20 +66,10 @@ ae_dld_gv: { n: 'Dubai Land Department: Request for Golden Visa (Investor)', u: 
 ae_added_gv: { n: 'Abu Dhabi ADDED: Visa for real estate investors', u: 'https://www.added.gov.ae/en/live/long-term-residency/abu-dhabi-golden-visa/Investors/visa-for-real-estate-investors', d: '2026-11-14' },
 cy_crmd: { n: 'Civil Registry and Migration Department: immigration permit, Regulation 6(2)', u: 'https://moi.gov.cy/moi/CRMD/crmd.nsf/immigrationpfi_en/immigrationpfi_en', d: '2026-11-14' }
 };
-const OWN = [
-{ s: 'indonesia', co: ['Indonesia'], notes: [['n_id_milik', 'id_uupa'], ['n_id_pakai', 'id_pp18'], ['n_id_sewa', 'id_uupa_sewa']], q1: 'n_id_pakai' },
-{ s: 'thailand', co: ['Thailand'], notes: [['n_th_land', 'th_dol'], ['n_th_quota', 'th_condo']], q1: 'n_th_quota' },
-{ s: 'mexico', co: ['Mexico'], notes: [['n_mx_trust', 'mx_lie']], q1: 'n_mx_trust' },
-{ s: 'uae', co: ['UAE', 'United Arab Emirates'], notes: [['ow_ae_note', 'ae_l7']], q1: 'ow_ae_note' }
-];
 const noteT = (k, lang) => (NT[k] && (NT[k][lang] || NT[k].en)) || t(lang, k);
 const tenure = s => { s = String(s || '').toLowerCase();
 const tr = /fideicomiso|bank trust/.test(s), fh = /freehold|full ownership|title deed|hak milik|\bshm\b|full title|fee simple|direct (title|ownership)|title directly|own property .*directly|hold title directly|escritura|tapu|chanote|outright/.test(s), lh = /leasehold|\blease|hak pakai|hak sewa|\bhgb\b|usufruct|right of use/.test(s);
 if (tr && !fh && !lh) return 'trust'; if ((fh && lh) || (tr && (fh || lh))) return 'mixed'; return fh ? 'freehold' : lh ? 'leasehold' : 'other'; };
-const GV = [
-{ s: 'uae', co: ['UAE', 'United Arab Emirates'], cur: 'AED', th: 2e6, src: ['ae_dld_gv', 'ae_added_gv'] },
-{ s: 'cyprus', co: ['Cyprus'], cur: 'EUR', th: 3e5, src: ['cy_crmd'] }
-];
 const AIRPORTS = new Set(['DXB', 'DWC', 'SHJ', 'AUH', 'RKT', 'MIA', 'FLL', 'NCE', 'BER', 'MAN', 'TQO', 'CUN', 'KUL', 'HKT', 'DPS', 'LIS', 'AGP', 'LCA', 'PFO', 'IST', 'AYT', 'BKK', 'SGN', 'PVR', 'SJD', 'LHR', 'BCN', 'DOH', 'MCT', 'BAH']);
 const hav = (a, b) => { const R = 6371.0088, r = Math.PI / 180, d1 = (b[0] - a[0]) * r, d2 = (b[1] - a[1]) * r; const h = Math.sin(d1 / 2) ** 2 + Math.cos(a[0] * r) * Math.cos(b[0] * r) * Math.sin(d2 / 2) ** 2; return 2 * R * Math.asin(Math.sqrt(h)); };
 const decs = v => { const s = String(v), i = s.indexOf('.'); return i < 0 ? 0 : s.length - i - 1; };
@@ -129,8 +118,8 @@ for (const [mk, L] of byMk) { const W = L.filter(x => x.pn).sort(byScore); if (W
 const PR = new Map();
 for (const [mk, L] of byMk) {
 const cc = new Map(); for (const x of L) if (pmin(x)) { const c = curOf(x); cc.set(c, (cc.get(c) || 0) + 1); }
-const top = [...cc.entries()].sort((a, b) => b[1] - a[1])[0]; if (!top || !BANDS[top[0]] || top[1] < PR_PRICED) continue;
-const cur = top[0], B = BANDS[cur], W = L.filter(x => pmin(x) && curOf(x) === cur);
+const top = [...cc.entries()].sort((a, b) => b[1] - a[1])[0]; if (!top || !TB.kbx_h29__t.o_BANDS[top[0]] || top[1] < PR_PRICED) continue;
+const cur = top[0], B = TB.kbx_h29__t.o_BANDS[cur], W = L.filter(x => pmin(x) && curOf(x) === cur);
 const bands = [0, 1, 2, 3].map(i => ({ i, lo: i ? B[i - 1] : null, hi: i < 3 ? B[i] : null, L: [] }));
 for (const x of W) { const p = pmin(x); bands[p < B[0] ? 0 : p < B[1] ? 1 : p < B[2] ? 2 : 3].L.push(x); }
 for (const b of bands) b.L.sort((a, c) => pmin(a) - pmin(c) || String(a.n).localeCompare(String(c.n)));
@@ -139,14 +128,14 @@ const other = [...cc.entries()].filter(([c]) => c !== cur);
 PR.set(slugA(mk), { mk, s: slugA(mk), cur, bands, W, other, lm: maxS(W.map(x => lastmod(ix, x))) });
 }
 const OW = new Map();
-for (const o of OWN) {
+for (const o of TB.kbx_h29__t.o_OWN) {
 const W = P.filter(x => o.co.includes(x.co) && x.fx && x.fx.foreign_ownership).sort((a, b) => String(a.mk).localeCompare(String(b.mk)) || byScore(a, b));
 if (W.length < MIN) continue;
 const G = { freehold: [], leasehold: [], trust: [], mixed: [], other: [] }; for (const x of W) G[tenure(x.fx.foreign_ownership)].push(x);
 OW.set(o.s, { o, s: o.s, co: W[0].co, W, G, lm: maxS(W.map(x => lastmod(ix, x))) });
 }
 const GVM = new Map();
-for (const g of GV) {
+for (const g of TB.kbx_h29__t.o_GV) {
 const W = P.filter(x => g.co.includes(x.co) && pmin(x) && curOf(x) === g.cur);
 const all = W.filter(x => pmin(x) >= g.th).sort((a, b) => pmin(a) - pmin(b) || String(a.n).localeCompare(String(b.n)));
 const some = W.filter(x => pmin(x) < g.th && (pmax(x) || 0) >= g.th).sort((a, b) => pmin(b) - pmin(a));
@@ -447,8 +436,7 @@ const body = wrap(head(lang, cr, te(lang, 'rph_t', { mo }), te(lang, 'rph_lead')
 const ld = [webLd(lang, url, title, desc, lm), { '@type': 'ItemList', name: title, numberOfItems: G.length, itemListElement: G.map((g, i) => ({ '@type': 'ListItem', position: i + 1, name: g.mk, url: PUB(lang, path + g.s + '/') })) }, crumbLd(cr)];
 return { title, desc, body, ld, path, lm };
 }
-const HUBS = [['rph_t', '/reports/'], ['drh_t', '/rankings/developers/'], ['pmh_t', '/permits/'], ['prh_t', '/price-ranges/'], ['owh_t', '/ownership/'], ['gvh_t', '/golden-visa/'], ['aph_t', '/airports/']];
-const hubNav = (lang, skip) => '<ul class="kfa-l">' + HUBS.filter(([, p]) => p !== skip).map(([k, p]) => '<li><a href="' + pre(lang) + p + '">' + esc(t(lang, k, { mo: '' }).replace(/[,，،]\s*$/, '').trim()) + '</a></li>').join('') + '</ul>';
+const hubNav = (lang, skip) => '<ul class="kfa-l">' + TB.kbx_h29__t.o_HUBS.filter(([, p]) => p !== skip).map(([k, p]) => '<li><a href="' + pre(lang) + p + '">' + esc(t(lang, k, { mo: '' }).replace(/[,，،]\s*$/, '').trim()) + '</a></li>').join('') + '</ul>';
 export function allPaths(D) {
 const out = [], hub = (path, M) => { if (M.size) out.push([path, maxS([...M.values()].map(g => g.lm))]); for (const g of M.values()) out.push([path + g.s + '/', g.lm]); };
 hub('/reports/', D.RP); hub('/rankings/developers/', D.DR); hub('/permits/', D.PM); hub('/price-ranges/', D.PR); hub('/ownership/', D.OW); hub('/golden-visa/', D.GV); hub('/airports/', D.AP);
@@ -496,19 +484,18 @@ const xe = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;');
 const urls = allPaths(D).flatMap(([p, lm]) => LANGS.map(l => '<url><loc>' + xe(PUB(l, p)) + '</loc><lastmod>' + (lm || D.updated) + '</lastmod>' + LANGS.map(a => TB.kbx_h29__t.k3 + a + '" href="' + xe(PUB(a, p)) + '"/>').join('') + TB.kbx_h29__t.k4 + xe(ORIGIN + p) + '"/></url>'));
 return new Response(TB.kbx_h29__s.k2 + urls.join('\n') + '\n</urlset>\n', { headers: { 'content-type': 'application/xml; charset=utf-8', 'cache-control': 'public, max-age=3600' } });
 }
-const GUIDE = { bali: ['Bali'], dubai: ['Dubai'], phuket: ['Phuket'], 'costa-del-sol': ['Costa del Sol'], lisbon: ['Portugal'], cyprus: ['Cyprus'], miami: ['Miami'], tulum: ['Riviera Maya'] };
 const box = (lang, title, L) => L.length ? TB.kbx_h29__t.k5 + esc(title) + TB.kbx_h29__s.k3 + L.map(([l, p]) => '<li><a href="' + pre(lang) + p + '">' + esc(l) + '</a></li>').join('') + '</ul></div></section>' : '';
 export async function linksFor(env, pathname) {
 const m = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?(.*)$/.exec(pathname); if (!m) return '';
 const lang = m[1] || 'en', p = '/' + m[2].replace(/\/?$/, '/');
 let D; try { D = await h29Data(env); } catch (e) { return ''; }
-const hubs = () => HUBS.map(([k, q]) => [t(lang, k, { mo: fd(D.month, lang) }), q]);
+const hubs = () => TB.kbx_h29__t.o_HUBS.map(([k, q]) => [t(lang, k, { mo: fd(D.month, lang) }), q]);
 let x;
 if ((x = /^\/m\/([^/]+)\/$/.exec(p))) { const mk = [...D.byMk.keys()].find(k => slugM(k) === x[1] || slugA(k) === slugA(decodeURIComponent(x[1]))); return mk ? box(lang, t(lang, 'more_h', { p: mkName(mk, lang) }), placeLinks(D, mk, lang)) : ''; }
 if ((x = /^\/handover\/20\d\d\/([a-z0-9-]+)\/$/.exec(p))) { const mk = D.mkOfSlug.get(x[1]); return mk ? box(lang, t(lang, 'more_h', { p: mkName(mk, lang) }), placeLinks(D, mk, lang)) : ''; }
 if (p === '/handover/' || p === '/rankings/transparency/' || p === '/new/' || p === '/rankings/' || p === '/guides/buying-off-plan/') return box(lang, t(lang, 'all_places'), hubs());
 if ((x = /^\/rankings\/transparency\/([a-z0-9-]+)\/$/.exec(p))) { const P = TR_PLACES.find(q => q.s === x[1]); const mk = P && !P.a && P.m.find(k => D.byMk.has(k)); return mk ? box(lang, t(lang, 'more_h', { p: mkName(mk, lang) }), placeLinks(D, mk, lang)) : ''; }
-if ((x = /^\/guides\/buying-off-plan\/([a-z-]+)\/$/.exec(p))) { const mk = (GUIDE[x[1]] || []).find(k => D.byMk.has(k)); return mk ? box(lang, t(lang, 'more_h', { p: mkName(mk, lang) }), placeLinks(D, mk, lang)) : ''; }
+if ((x = /^\/guides\/buying-off-plan\/([a-z-]+)\/$/.exec(p))) { const mk = (TB.kbx_h29__t.o_GUIDE[x[1]] || []).find(k => D.byMk.has(k)); return mk ? box(lang, t(lang, 'more_h', { p: mkName(mk, lang) }), placeLinks(D, mk, lang)) : ''; }
 if ((x = /^\/developers\/([a-z0-9-]+)\/$/.exec(p)) && !/-vs-/.test(x[1])) {
 const L = (D.drOfDev.get(x[1]) || []).map(s => [t(lang, 'l_dr') + ': ' + mkName(D.DR.get(s).mk, lang), '/rankings/developers/' + s + '/']).concat((D.vsOfDev.get(x[1]) || []).map(pr => [t(lang, 'vs_t', { a: pr.a.dv, b: pr.b.dv, p: mkName(pr.mk, lang) }), '/developers/' + pr.k + '/']));
 return box(lang, t(lang, 'l_vs'), L);

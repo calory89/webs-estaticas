@@ -48,7 +48,6 @@ const altOf = path => l => ORIGIN + pre(l) + path;
 const ITEM_RX = /<div class="ft-f( look)?"><h3><a href="([^"]+)">([\s\S]*?)<\/a>(?:<span class="ft-tag (ok|note)">([\s\S]*?)<\/span>)?<\/h3><p>([\s\S]*?)<\/p><\/div>/g;
 const TAGS = { 'In your browser': 'tag_browser', 'Photos stay on your phone': 'tag_phone', 'Live lookup': 'tag_live', 'Works offline': 'tag_offline', 'Opens after setup': 'tag_setup' };
 const T35 = { en: ['Price per m² checker', 'Private document vault', 'Compare developers'], es: ['Comprobador de precio por m²', 'Archivo privado de documentos', 'Comparar promotoras'], fr: ['Vérificateur de prix au m²', 'Coffre de documents privé', 'Comparer des promoteurs'], de: ['Preis pro m² prüfen', 'Privater Dokumententresor', 'Bauträger vergleichen'], nl: ['Prijs per m² controleren', 'Privé documentenkluis', 'Ontwikkelaars vergelijken'], ru: ['Проверка цены за м²', 'Личный сейф документов', 'Сравнение застройщиков'], zh: ['每平方米价格检查', '私人文件保险箱', '比较开发商'], ar: ['فاحص سعر المتر المربع', 'خزنة مستندات خاصة', 'قارن بين المطوّرين'] };
-const T34 = { en: ['Due-diligence report builder', 'Search all projects with filters', 'Compare markets'], es: ['Generador de informe de due diligence', 'Buscar proyectos con filtros', 'Comparar mercados'], fr: ['Générateur de rapport de due diligence', 'Rechercher des projets avec filtres', 'Comparer des marchés'], de: ['Due-Diligence-Bericht erstellen', 'Projekte mit Filtern suchen', 'Märkte vergleichen'], nl: ['Due-diligencerapport samenstellen', 'Projecten zoeken met filters', 'Markten vergelijken'], ru: ['Конструктор отчёта due diligence', 'Поиск проектов с фильтрами', 'Сравнить рынки'], zh: ['尽职调查报告生成器', '带筛选搜索项目', '比较市场'], ar: ['منشئ تقرير العناية الواجبة', 'البحث في المشاريع مع مرشحات', 'مقارنة الأسواق'] };
 const LOCAL_TOOLS = new Set(['/tools/bulk-check/', '/tools/contract-addendum/', '/tools/contract-reader/', '/tools/permit-photo/', '/tools/widget/', '/tools/total-cost/dubai/']);
 export function toolsParse(src) {
 const m = /<main[^>]*>([\s\S]*?)<\/main>/.exec(src || ''); if (!m) return null;
@@ -70,7 +69,7 @@ return '<div class="ft-f' + (x.look ? ' look' : '') + '"><h3><a href="' + href +
 const jump = '<nav class="ft-jump" aria-label="' + esc(t(lang, 't_groups')) + '">' + P.G.map(g => '<a href="#' + g.id + '">' + esc(t(lang, 'g_' + g.id)) + ' <small>' + g.L.length + '</small></a>').join('') + '</nav>';
 const n = P.G.reduce((a, g) => a + g.L.length, 0);
 return page(shell, lang, { title: t(lang, 't_title'), desc: t(lang, 't_desc'), h1: t(lang, 't_title'), lead: t(lang, 't_lead'), canon: ORIGIN + pre(lang) + '/tools/', alt: altOf('/tools/'),
-crumb: [[null, t(lang, 'tools')]], head: '<link rel="stylesheet" href="' + esc(P.css) + '">', hero: '<p class="k-small"><a href="' + pre(lang) + '/tools/widget/">' + esc(t(lang, 't_widget')) + '</a>' + (T34[lang] || T34.en).map((x, i) => ' · <a href="' + pre(lang) + ['/tools/due-diligence/', '/search/', '/markets/compare/'][i] + '">' + esc(x) + '</a>').join('') + (T35[lang] || T35.en).map((x, i) => ' · <a href="' + pre(lang) + ['/tools/price-per-m2/', '/tools/vault/', '/developers/compare/'][i] + '">' + esc(x) + '</a>').join('') + '</p>' + jump,
+crumb: [[null, t(lang, 'tools')]], head: '<link rel="stylesheet" href="' + esc(P.css) + '">', hero: '<p class="k-small"><a href="' + pre(lang) + '/tools/widget/">' + esc(t(lang, 't_widget')) + '</a>' + (TB.kbx_n31s__t.o_T34[lang] || TB.kbx_n31s__t.o_T34.en).map((x, i) => ' · <a href="' + pre(lang) + ['/tools/due-diligence/', '/search/', '/markets/compare/'][i] + '">' + esc(x) + '</a>').join('') + (T35[lang] || T35.en).map((x, i) => ' · <a href="' + pre(lang) + ['/tools/price-per-m2/', '/tools/vault/', '/developers/compare/'][i] + '">' + esc(x) + '</a>').join('') + '</p>' + jump,
 body: '<section class="ft-sec">' + grp + '</section><!-- n31s tools ' + n + ', untranslated ' + untr + ' -->',
 type: 'CollectionPage' });
 }
@@ -105,14 +104,13 @@ if (L.length) M.set(k, L);
 GX = { ix, M }; return M;
 }
 const exHtml = (L, lang) => L && L.length ? '<ul class="n31-ex" aria-label="' + esc(t(lang, 'gl_ex')) + '"><li><b>' + esc(t(lang, 'gl_ex')) + '</b></li>' + L.map(e => '<li><a href="' + pre(lang) + '/projects/' + e.s + '/"><bdi>' + esc(e.n) + '</bdi></a> (<bdi>' + esc(mkName(e.mk, lang)) + '</bdi>): <q lang="' + ((e.q.match(/[\u0400-\u04FF]/g) || []).length > (e.q.match(/[A-Za-z]/g) || []).length ? 'ru' : 'en') + '">' + esc(e.q) + '</q></li>').join('') + '</ul>' : '';
-const GL_MORE = { escrow: ['/glossary/escrow/', 'gl_m_escrow'], freehold: ['/glossary/leasehold/', 'gl_m_lease'], leasehold: ['/glossary/leasehold/', 'gl_m_lease'], 'milestone-payment': ['/glossary/payment-plan/', 'gl_m_plan'] };
 async function glossaryPage(u, env, shell, lang) {
 const src = await asset(env, '/glossary/', 'text'); if (!src) return null;
 const E = []; const rx = /<div class="gl" id="([^"]+)"><dt>([\s\S]*?)<\/dt><dd>([\s\S]*?)<\/dd><\/div>/g; let m;
 while ((m = rx.exec(src))) E.push({ id: m[1], dt: m[2], dd: m[3] });
 if (!E.length) return null;
 let X = new Map(); try { X = await glossaryExamples(env); } catch (e) {}
-const rows = E.map(e => { const tr = (GL[e.id] || {})[lang], mo = GL_MORE[e.id];
+const rows = E.map(e => { const tr = (GL[e.id] || {})[lang], mo = TB.kbx_n31s__t.o_GL_MORE[e.id];
 return '<div class="gl" id="' + e.id + '"><dt>' + (tr ? esc(tr[0]) : e.dt) + '</dt><dd>' + (tr ? esc(tr[1]) : e.dd.replace(/<a [^>]*>[\s\S]*?<\/a>/g, '')) + (mo ? ' <a href="' + pre(lang) + mo[0] + '">' + esc(t(lang, mo[1])) + '</a>' : '') + exHtml(X.get(e.id), lang) + '</dd></div>'; }).join('');
 const terms = E.map(e => { const tr = (GL[e.id] || {})[lang]; return { '@type': 'DefinedTerm', name: tr ? tr[0] : e.dt.replace(/<[^>]+>/g, ''), description: tr ? tr[1] : e.dd.replace(/<[^>]+>/g, '').trim(), url: ORIGIN + pre(lang) + '/glossary/#' + e.id }; });
 return page(shell, lang, { title: t(lang, 'gl_title'), desc: t(lang, 'gl_desc'), h1: t(lang, 'gl_title'), lead: t(lang, 'gl_lead'), canon: ORIGIN + pre(lang) + '/glossary/', alt: altOf('/glossary/'),
@@ -202,7 +200,6 @@ ld: [{ '@type': 'TechArticle', headline: n.h, datePublished: n.d, dateModified: 
 return page(shell, 'en', { title: 'Engineering notes', desc: TB.kbx_n31s__s.k3, h1: 'Engineering notes', lead: TB.kbx_n31s__t.k23, canon: ORIGIN + '/engineering/notes/', alt: () => ORIGIN + '/engineering/notes/', enOnly: true, crumb: [['/engineering/', 'Engineering'], [null, 'Notes']],
 body: '<ul>' + NOTES.map(n => '<li><a href="/engineering/notes/' + n.s + '/">' + esc(n.h) + '</a> <span class="n31-s">(' + esc(fdt(n.d, 'en')) + ')</span><br>' + esc(n.l) + '</li>').join('') + '</ul>', type: 'CollectionPage' });
 }
-const GUIDE = { bali: ['Bali'], dubai: ['Dubai'], phuket: ['Phuket'], 'costa-del-sol': ['Costa del Sol'], lisbon: ['Portugal'], cyprus: ['Cyprus'], miami: ['Miami'], tulum: ['Riviera Maya'] };
 let TOPM = null;
 async function topByMk(env) {
 const ix = await N.data(env); if (TOPM && TOPM.ix === ix) return TOPM.M;
@@ -212,7 +209,7 @@ TOPM = { ix, M }; return M;
 }
 function placeOf(p) {
 let m;
-if ((m = /^\/guides\/buying-off-plan\/([a-z-]+)\/$/.exec(p))) { const mks = GUIDE[m[1]]; if (!mks) return null; return { mks, tr: TR_PLACES.find(P => !P.coi && !P.a && P.s === slugA(mks[0])) || TR_PLACES.find(P => !P.coi && !P.a && P.m.some(k => mks.includes(k))), name: mks[0] }; }
+if ((m = /^\/guides\/buying-off-plan\/([a-z-]+)\/$/.exec(p))) { const mks = TB.kbx_n31s__t.o_GUIDE[m[1]]; if (!mks) return null; return { mks, tr: TR_PLACES.find(P => !P.coi && !P.a && P.s === slugA(mks[0])) || TR_PLACES.find(P => !P.coi && !P.a && P.m.some(k => mks.includes(k))), name: mks[0] }; }
 if ((m = /^\/rankings\/transparency\/([a-z0-9-]+)\/$/.exec(p))) { const P = TR_PLACES.find(q => q.s === m[1] && !q.coi); return P ? { mks: P.m, tr: P, name: P.n } : null; }
 if ((m = /^\/handover\/20\d\d\/([a-z0-9-]+)\/$/.exec(p))) { const P = TR_PLACES.find(q => q.s === m[1] && !q.coi); return { slug: m[1], tr: P, mks: P ? P.m : null, name: P ? P.n : null }; }
 if ((m = /^\/m\/([^/]+)\/$/.exec(p))) { let k = m[1]; try { k = decodeURIComponent(k); } catch (e) {} const P = TR_PLACES.find(q => !q.coi && !q.a && q.s === slugA(k)) || TR_PLACES.find(q => !q.coi && !q.a && q.m.some(x => slugA(x) === slugA(k))); return { tr: P, mks: null, name: null, mOnly: true }; }

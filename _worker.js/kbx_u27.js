@@ -57,7 +57,6 @@ const P = String(t27(lang, 'lt_key')).split(/(?<=[.。])\s*/).map(x => x.trim())
 if (P.length < 5) return '<p>' + esc(t27(lang, 'lt_key')) + '</p>';
 return '<ul class="klt-kl">' + ['ok', 'part', 'no', 'nc'].map((k, i) => '<li class="klt-' + k + '"><i aria-hidden="true"></i>' + esc(P[i]) + '</li>').join('') + '</ul><p>' + esc(P.slice(4).join(' ')) + '</p>';
 }
-const JL35 = { en: 'Buyer journey for this project, from reservation to handover', es: 'Ruta del comprador para este proyecto, de la reserva a la entrega', fr: 'Parcours d\'achat pour ce projet, de la réservation à la livraison', de: 'Käuferweg für dieses Projekt, von der Reservierung bis zur Übergabe', nl: 'Kopersroute voor dit project, van reservering tot oplevering', ru: 'Путь покупателя для этого проекта: от брони до передачи ключей', zh: '此项目的购房流程：从预订到交付', ar: 'رحلة المشتري لهذا المشروع، من الحجز إلى التسليم' };
 export function checklistHtml(lang, o) {
 const co = o.co || '', L = [];
 L.push(esc(t27(lang, 'ck1', { co: '\u0000' })).replace('\u0000', bdi(lang, co)));
@@ -66,7 +65,7 @@ else L.push(esc(t27(lang, 'ck2')) + TB.kbx_u27__t.k3);
 for (const k of ['ck3', 'ck4', 'ck5', 'ck6', 'ck7']) L.push(esc(t27(lang, k)) + (k === 'ck5' ? ' <a href="' + pre(lang) + '/tools/contract-reader/">' + esc(t30(lang, 'cr_h1')) + '</a>' : ''));
 L.push(esc(t27(lang, 'ck8', { co: '\u0000' })).replace('\u0000', bdi(lang, co)) + (o.cost ? ' <a href="#buycost">' + esc(o.costLbl || '') + '</a>' : ''));
 return '<div class="kck" data-u27k="' + esc(o.id) + '"><h3>' + esc(t27(lang, 'ck_h', { co })) + '</h3><p class="ki">' + esc(t27(lang, 'ck_i')) + ' <span class="kck-n" data-n="' + esc(t27(lang, 'ck_n')) + TB.kbx_u27__t.k4 +
-L.map((h, i) => TB.kbx_u27__t.k5 + i + '"><span>' + h + '</span></label></li>').join('') + TB.kbx_u27__t.k6 + esc(t27(lang, 'ck_r')) + '</button>' + (o.s ? '<p class="kck-j"><a href="' + pre(lang) + '/projects/' + o.s + '/journey/">' + esc(JL35[lang] || JL35.en) + '</a></p>' : '') + '</div>';
+L.map((h, i) => TB.kbx_u27__t.k5 + i + '"><span>' + h + '</span></label></li>').join('') + TB.kbx_u27__t.k6 + esc(t27(lang, 'ck_r')) + '</button>' + (o.s ? '<p class="kck-j"><a href="' + pre(lang) + '/projects/' + o.s + '/journey/">' + esc(TB.kbx_u27__t.o_JL35[lang] || TB.kbx_u27__t.o_JL35.en) + '</a></p>' : '') + '</div>';
 }
 export const Z_CSS = '';
 function client() {

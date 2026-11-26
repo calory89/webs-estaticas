@@ -47,8 +47,7 @@ ECBR = { t: Date.now(), v }; return v;
 } catch (e) { ECBR = { t: Date.now() - 43200000 + 600000, v: null }; return null; }
 }
 const toUsd = (fx, amt, cur) => fx && fx.r[cur] ? amt / fx.r[cur] : null;
-const REL = ['find-listing', 'handover-history', 'on-time', 'request-documents', 'receipt-check', 'payment-vs-progress', 'visa-by-investment', 'compare-countries', 'inheritance', 'foreign-mortgages', 'area-report', 'translate'];
-const relList = (lang, me) => '<h2>' + esc(t31(lang, 'rel_h')) + '</h2><ul class="n31rel">' + REL.filter(k => k !== me).map(k => '<li><a href="' + pre(lang) + '/tools/' + k + '/">' + esc(t31(lang, k + '_h1')) + '</a></li>').join('') +
+const relList = (lang, me) => '<h2>' + esc(t31(lang, 'rel_h')) + '</h2><ul class="n31rel">' + TB.kbx_n31e__t.o_REL.filter(k => k !== me).map(k => '<li><a href="' + pre(lang) + '/tools/' + k + '/">' + esc(t31(lang, k + '_h1')) + '</a></li>').join('') +
 '<li><a href="' + pre(lang) + '/tools/contract-reader/">' + esc(t31(lang, 'cr_link')) + '</a></li><li><a href="' + pre(lang) + '/satellite/monthly/">' + esc(t31(lang, 'sm_h1')) + '</a></li><li><a href="' + pre(lang) + '/watch/new-websites/">' + esc(t31(lang, 'nw_h1')) + '</a></li><li><a href="/tools/">' + esc(t31(lang, 'all_tools')) + '</a></li></ul>';
 const script = '<script src="/k/n31e.js?v=' + N31V + '" defer></script>';
 function frame(lang, path, key, inner, o) {

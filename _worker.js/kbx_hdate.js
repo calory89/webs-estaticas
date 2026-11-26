@@ -1,3 +1,4 @@
+import { TB } from './kbx_strings.js';
 // comments: _notes/kolaboro-worker-comments.txt
 const MON = {
 jan: 1, january: 1, feb: 2, february: 2, mar: 3, march: 3, apr: 4, april: 4, may: 5, jun: 6, june: 6, jul: 7, july: 7, aug: 8, august: 8,
@@ -9,7 +10,6 @@ januar: 1, februar: 2, 'märz': 3, maerz: 3, juni: 6, juli: 7, oktober: 10, deze
 januari: 1, februari: 2, maart: 3, mei: 5, augustus: 8, gennaio: 1, febbraio: 2, aprile: 4, maggio: 5, giugno: 6, luglio: 7, settembre: 9, ottobre: 10, dicembre: 12
 };
 const SEASON = { spring: 'sp', summer: 'su', fall: 'au', autumn: 'au', winter: 'wi', primavera: 'sp', verano: 'su', 'otoño': 'au', invierno: 'wi', printemps: 'sp', 'été': 'su', automne: 'au', hiver: 'wi', 'frühling': 'sp', 'frühjahr': 'sp', sommer: 'su', herbst: 'au', voorjaar: 'sp', zomer: 'su', najaar: 'au' };
-const PART = { early: 'b', beginning: 'b', start: 'b', mid: 'm', middle: 'm', late: 'l', end: 'e', principios: 'b', inicios: 'b', comienzos: 'b', mediados: 'm', finales: 'e', fines: 'e', 'début': 'b', debut: 'b', fin: 'e', anfang: 'b', mitte: 'm', ende: 'e', begin: 'b', medio: 'm', eind: 'e' };
 const W = '[A-Za-zÀ-ÿçñäöüßéèêûôâîœ.]+';
 const Y = '((?:19|20)\\d\\d)(?![\\d])';
 const RX = [
@@ -28,7 +28,7 @@ m => { const w = m[1].toLowerCase(), o = /^(first|primer|1)/.test(w) ? 1 : 2; re
 [new RegExp('^(first|second|third|fourth|primer|segundo|tercer|cuarto|1er|1st|2nd|3rd|4th|[1-4]º|[1-4]°|[1-4]\\.)\\s+(?:quarter|trimestre|quartal)(?:\\s+(?:of|de|del))?\\s+' + Y, 'i'),
 m => { const w = m[1].toLowerCase().replace(/[º°.]|st|nd|rd|th|er/g, ''); const o = { first: 1, primer: 1, second: 2, segundo: 2, third: 3, tercer: 3, fourth: 4, cuarto: 4 }[w] || +w; return o >= 1 && o <= 4 ? { y: +m[2], q: o } : null; }],
 [new RegExp('^(early|beginning|start|mid|middle|late|end|principios|inicios|comienzos|mediados|finales|fines|d[ée]but|fin|anfang|mitte|ende|begin|medio|eind)(?:\\s*-\\s*|\\s+(?:of\\s+|de\\s+|del\\s+)?)' + Y, 'i'),
-m => ({ y: +m[2], p: PART[m[1].toLowerCase()] || PART[m[1].toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')] })],
+m => ({ y: +m[2], p: TB.kbx_hdate__t.o_PART[m[1].toLowerCase()] || TB.kbx_hdate__t.o_PART[m[1].toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')] })],
 [new RegExp('^mi-' + Y, 'i'), m => ({ y: +m[1], p: 'm' })],
 [new RegExp('^' + Y + '\\s+(mid|end)-?year\\b', 'i'), m => ({ y: +m[1], p: m[2].toLowerCase() === 'mid' ? 'm' : 'e' })],
 [new RegExp('^(' + Object.keys(SEASON).join('|') + ')(?:\\s+(?:of|de|del))?\\s+' + Y, 'i'), m => ({ y: +m[2], s: SEASON[m[1].toLowerCase()] })],

@@ -1,9 +1,7 @@
 // comments: _notes/kolaboro-worker-comments.txt
 import { TB } from './kbx_strings.js';
 const T = TB.kbx_n27lead_T ;
-const DL = { en: 'Download this record', es: 'Descargar esta ficha', de: 'Diesen Datensatz herunterladen', fr: 'Télécharger cette fiche', nl: 'Dit record downloaden', ru: 'Скачать эту запись', zh: '下载此记录', ar: 'تنزيل هذا السجل' };
-const CERT = { en: 'Verification certificate', es: 'Certificado de verificación', de: 'Prüfzertifikat', fr: 'Certificat de vérification', nl: 'Verificatiecertificaat', ru: 'Сертификат проверки', zh: '核验证书', ar: 'شهادة التحقق' };
-export const dlLine = (lang, s) => '<p class="ki">' + (DL[lang] || DL.en) + ': <a href="/api/v1/projects/' + s + TB.kbx_n27lead__t.k0 + s + TB.kbx_n27lead__t.k1 + s + TB.kbx_n27lead__t.k2 + (lang === 'en' ? '' : '/' + lang) + '/projects/' + s + '/certificate/" rel="nofollow">' + (CERT[lang] || CERT.en) + '</a></p>';
+export const dlLine = (lang, s) => '<p class="ki">' + (TB.kbx_n27lead__t.o_DL[lang] || TB.kbx_n27lead__t.o_DL.en) + ': <a href="/api/v1/projects/' + s + TB.kbx_n27lead__t.k0 + s + TB.kbx_n27lead__t.k1 + s + TB.kbx_n27lead__t.k2 + (lang === 'en' ? '' : '/' + lang) + '/projects/' + s + '/certificate/" rel="nofollow">' + (TB.kbx_n27lead__t.o_CERT[lang] || TB.kbx_n27lead__t.o_CERT.en) + '</a></p>';
 const DD = { en: 'Developer dashboard: your score and what is missing', es: 'Panel del promotor: su puntuación y lo que falta', de: 'Bauträger-Übersicht: Ihr Wert und was fehlt', fr: 'Tableau de bord du promoteur : votre score et ce qui manque', nl: 'Dashboard voor ontwikkelaars: uw score en wat ontbreekt', ru: 'Панель застройщика: ваша оценка и чего не хватает', zh: '开发商面板：您的评分和缺少的内容', ar: 'لوحة المطوّر: درجتك وما ينقص' };
 export const devDash = (lang, s) => '<p><a href="' + (lang === 'en' ? '' : '/' + lang) + '/developers/' + s + '/dashboard/">' + (DD[lang] || DD.en) + '</a></p>';
 export const LEAD_CSS = '<style>.klead{margin:0 0 12px;font-weight:600;line-height:1.45}.klead .k-src{font-weight:400}.klead-s{margin:0 0 10px;font-size:.86rem}</style>';

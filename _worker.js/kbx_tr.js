@@ -127,18 +127,13 @@ const dates = { named: named.updated, cases: cases.updated, ontime: ontime && on
 IDX = { key, rows, places, updated, dates, excluded, v: String(updated) + '|' + rows.size + '|' + [...rows.values()].reduce((a, r) => a + r.score, 0) };
 return IDX;
 }
-const BADGE = {
-en: ['Ranked #{r} of {m} for transparency in {p}', 'Transparency score {s} of 100 in {p}'], es: ['Puesto {r} de {m} en transparencia en {p}', 'Puntuación de transparencia {s} sobre 100 en {p}'],
-fr: ['Classé {r}e sur {m} pour la transparence à {p}', 'Score de transparence {s} sur 100 à {p}'], de: ['Platz {r} von {m} bei der Transparenz in {p}', 'Transparenzwert {s} von 100 in {p}'],
-nl: ['Plaats {r} van {m} voor transparantie in {p}', 'Transparantiescore {s} van 100 in {p}'], ru: ['Место {r} из {m} по прозрачности: {p}', 'Оценка прозрачности {s} из 100: {p}'],
-zh: ['在{p}透明度排名第 {r}（共 {m} 个）', '在{p}的透明度评分为 {s}/100'], ar: ['المرتبة {r} من {m} في الشفافية في {p}', 'درجة الشفافية {s} من 100 في {p}'] };
 export async function trBadge(env, id, lang) {
 let ix; try { ix = await trData(env); } catch (e) { return ''; }
 const r = ix.rows.get(id); if (!r || r.sumba) return '';
 const out = [];
 for (const [s, pl] of ix.places) {
 if (pl.P.coi || !pl.L.includes(r)) continue;
-const B = BADGE[lang] || BADGE.en, link = pre(lang) + '/rankings/transparency/' + s + '/';
+const B = TB.kbx_tr__t.o_BADGE[lang] || TB.kbx_tr__t.o_BADGE.en, link = pre(lang) + '/rankings/transparency/' + s + '/';
 const txt = pl.ranked ? B[0].replace('{r}', nf(lang, r['rk_' + s])).replace('{m}', nf(lang, pl.n)) : B[1].replace('{s}', nf(lang, r.score));
 out.push('<a href="' + link + '">' + esc(txt).replace('{p}', bdi(mkName(pl.P.n, lang))) + '</a>');
 }
@@ -256,19 +251,10 @@ return '<p class="ktr-links"><a href="' + pre(lang) + '/rankings/transparency/">
 }
 const THIN_K = ['legal', 'permit', 'date', 'deposit', 'location', 'price'];
 const isThin = r => THIN_K.filter(k => r.comp[k] && r.comp[k].st === 'yes').length <= 1;
-const THIN_T = {
-en: ['Little published so far ({n})', 'These projects publish at most one of the basic facts we look for. Their pages stay up and gain detail as the developer publishes more.', 'Published', 'nothing yet'],
-es: ['Poco publicado por ahora ({n})', 'Estos proyectos publican como mucho uno de los datos básicos que buscamos. Sus fichas siguen activas y ganan detalle a medida que el promotor publica más.', 'Publicado', 'nada todavía'],
-de: ['Bisher wenig veröffentlicht ({n})', 'Diese Projekte veröffentlichen höchstens eine der grundlegenden Angaben, nach denen wir suchen. Ihre Seiten bleiben online und werden ausführlicher, sobald der Bauträger mehr veröffentlicht.', 'Veröffentlicht', 'noch nichts'],
-fr: ['Peu publié pour l\'instant ({n})', 'Ces projets publient au plus une des informations de base que nous cherchons. Leurs fiches restent en ligne et s\'enrichissent quand le promoteur en publie davantage.', 'Publié', 'rien pour l\'instant'],
-nl: ['Tot nu toe weinig gepubliceerd ({n})', 'Deze projecten publiceren hooguit één van de basisgegevens die we zoeken. Hun pagina\'s blijven online en worden uitgebreider zodra de ontwikkelaar meer publiceert.', 'Gepubliceerd', 'nog niets'],
-ru: ['Пока опубликовано мало (проектов: {n})', 'Эти проекты публикуют не больше одного из основных сведений, которые мы ищем. Их страницы остаются на сайте и пополняются, когда застройщик публикует больше.', 'Опубликовано', 'пока ничего'],
-zh: ['目前公开信息很少（{n} 个）', '这些项目在我们查找的基本信息中最多只公开了一项。它们的页面会保留，并在开发商公开更多信息后补充。', '已公开', '暂无'],
-ar: ['القليل منشور حتى الآن ({n})', 'تنشر هذه المشاريع معلومة واحدة على الأكثر من المعلومات الأساسية التي نبحث عنها. تبقى صفحاتها متاحة وتزداد تفاصيلها كلما نشر المطوّر المزيد.', 'المنشور', 'لا شيء بعد'] };
 const PRICE_L = { en: 'Price', es: 'Precio', de: 'Preis', fr: 'Prix', nl: 'Prijs', ru: 'Цена', zh: '价格', ar: 'السعر' };
 function thinHtml(lang, pl) {
 const L = pl.L.filter(r => !r.sumba && isThin(r)); if (!L.length) return '';
-const T = THIN_T[lang] || THIN_T.en, f = (i, v) => esc(T[i]).replace('{n}', v == null ? '' : nf(lang, v));
+const T = TB.kbx_tr__t.o_THIN_T[lang] || TB.kbx_tr__t.o_THIN_T.en, f = (i, v) => esc(T[i]).replace('{n}', v == null ? '' : nf(lang, v));
 return '<h2 id="little-data">' + f(0, L.length) + '</h2><p class="k-small">' + f(1) + '</p><ul class="ktr-thin">' + L.map(r => {
 const got = THIN_K.filter(k => r.comp[k] && r.comp[k].st === 'yes').map(k => k === 'price' ? (PRICE_L[lang] || PRICE_L.en) : t(lang, 'k_' + k));
 return '<li><a href="' + pre(lang) + '/projects/' + esc(r.s) + '/">' + bdi(r.n) + '</a>' + (r.dv ? ' <span class="k-muted">' + bdi(r.dv) + '</span>' : '') + ' <small>' + f(2) + ': ' + (got.length ? got.map(esc).join(', ') : f(3)) + '</small></li>';

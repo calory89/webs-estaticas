@@ -125,7 +125,6 @@ g += '<polyline class="kpg-l" points="' + S.map((s, i) => x(i).toFixed(1) + ',' 
 const alt = tx(lang, 'ch_alt', { a: fdt(S[0].d, lang), b: fdt(S[n - 1].d, lang), n: nf(lang, tot) });
 return TB.kbx_trust__t.k0 + W + ' ' + H + '" role="img" aria-label="' + esc(alt) + '"><title>' + esc(alt) + '</title>' + g + '</svg><figcaption dir="auto">' + esc(t(lang, 'ch_cap')) + '</figcaption></figure>';
 }
-const NUMS_L = { en: 'Kolaboro in numbers: figures to cite', es: 'Kolaboro en cifras: datos para citar', de: 'Kolaboro in Zahlen: zitierfähige Angaben', fr: 'Kolaboro en chiffres : données à citer', nl: 'Kolaboro in cijfers: gegevens om te citeren', ru: 'Kolaboro в цифрах: данные для цитирования', zh: 'Kolaboro 数据一览：可引用的数字', ar: 'Kolaboro بالأرقام: أرقام قابلة للاقتباس' };
 function progressPage(D, lang, sm, smDay) {
 const L = D.live, S = D.series, now = day(new Date());
 const st = [stat(lang, L.projects, 'k_projects', srcA('/api/open/stats')), stat(lang, L.markets, 'k_markets', srcA('/api/open/stats')), stat(lang, L.countries, 'k_countries', srcA('/api/open/stats')),
@@ -138,7 +137,7 @@ const sn = D.days.length ? TB.kbx_trust__s.k0 + esc(t(lang, 'c_day')) + '</th><t
 D.days.slice(0, 60).map(r => '<tr><th scope="row"><time datetime="' + esc(r.d) + '">' + esc(fdt(r.d, lang)) + '</time></th>' + [r.sources, r.claims_total, r.sitemap_urls].map((v, i) => cell(v).replace('<td', '<td data-label="' + esc(t(lang, ['c_src', 'c_cl', 'c_sm'][i])) + '"')).join('') + '</tr>').join('') + '</tbody></table></div>' : '<p class="k-muted">' + esc(t(lang, 'sn_empty')) + '</p>';
 const c = D.cnt;
 const more = [['/changelog/', 'l_chg'], ['/shipping/', 'l_ship'], ['/metrics/', 'l_met'], ['/status/', 'l_stat']].map(([h, k]) => '<li><a href="' + h + '">' + esc(t(lang, k)) + '</a></li>').join('')
-+ '<li><a href="' + pre(lang) + '/numbers/">' + esc(NUMS_L[lang] || NUMS_L.en) + '</a></li>';
++ '<li><a href="' + pre(lang) + '/numbers/">' + esc(TB.kbx_trust__t.o_NUMS_L[lang] || TB.kbx_trust__t.o_NUMS_L.en) + '</a></li>';
 const body = '<div class="kpg">' + head(lang, [[t(lang, 'chg_a'), pre(lang) + PROG_P]], esc(t(lang, 'p_h1')), esc(t(lang, 'p_lead')), '<p class="k-small k-muted">' + esc(tx(lang, 'p_asof', { d: fdt(now, lang) })) + '</p>') +
 '<div class="k-grid" id="today">' + st + '</div>' +
 '<h2 id="chart">' + esc(t(lang, 'ch_h')) + '</h2>' + chartSvg(lang, S) +

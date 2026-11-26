@@ -123,20 +123,6 @@ if (d.uk && d.uk.error) d.partial = true;
 d.query = name;
 return out(d, 200, 0);
 }
-const AGENT_SOURCES = [
-{ id: 'ae-dubai-pulse', market: 'Dubai (UAE)', name: 'Dubai Pulse open data: DLD real estate brokers and offices', url: 'https://www.dubaipulse.gov.ae/organisation/dld/service/dld-registration',
-probe: 'https://www.dubaipulse.gov.ae/data/dld-registration/dld_brokers-open', terms: 'Dubai Data open licence. Official machine-readable source. Download pages did not answer our cloud servers in tests.' },
-{ id: 'ae-dubai-pulse-api', market: 'Dubai (UAE)', name: 'Dubai Pulse API (needs a free account key)', url: 'https://www.dubaipulse.gov.ae/',
-probe: 'https://api.dubaipulse.gov.ae/', env: 'DUBAI_PULSE_CLIENT_ID', terms: 'Same open datasets through an API. Needs a client id and secret from a Dubai Pulse account.' },
-{ id: 'ae-dld-site', market: 'Dubai (UAE)', name: 'Dubai Land Department open data page, Brokers tab', url: 'https://dubailand.gov.ae/en/open-data/real-estate-data/#broker',
-probe: 'https://dubailand.gov.ae/en/open-data/real-estate-data/', terms: 'Searchable by a person in a browser. The search is protected by a reCAPTCHA, so we do not query it automatically.' },
-{ id: 'ph-prc', market: 'Philippines', name: 'PRC online verification of licence (real estate brokers are PRC licensees)', url: 'https://verification.prc.gov.ph/',
-probe: 'https://verification.prc.gov.ph/', terms: 'Needs the licence number and birth date, behind a reCAPTCHA. Check by hand.' },
-{ id: 'in-maharera', market: 'India (Maharashtra)', name: 'MahaRERA registered agents search', url: 'https://maharera.maharashtra.gov.in/',
-probe: 'https://maharera.maharashtra.gov.in/', terms: 'Public search for a person in a browser. Did not answer our cloud servers in tests.' },
-{ id: 'in-karnataka', market: 'India (Karnataka)', name: 'RERA Karnataka registered agents', url: 'https://rera.karnataka.gov.in/',
-probe: 'https://rera.karnataka.gov.in/', terms: 'Public search for a person in a browser. Did not answer our cloud servers in tests.' }
-];
 async function probe(url) {
 try {
 const r = await fetch(url, { headers: { 'user-agent': TB.kbx_w__t.k9 }, redirect: 'follow', signal: AbortSignal.timeout(10000) });
@@ -148,7 +134,7 @@ return { http: r.status, status: r.ok && !/access denied|just a moment|captcha r
 async function agentSources(env, ctx, fresh) {
 const ck = new Request(TB.kbx_w__t.k10);
 if (!fresh) { const c = await caches.default.match(ck); if (c) return out(await c.json(), 200, 600); }
-const res = await Promise.all(AGENT_SOURCES.map(async s => {
+const res = await Promise.all(TB.kbx_w__t.o_AGENT_SOURCES.map(async s => {
 const p = await probe(s.probe);
 const o = { id: s.id, market: s.market, name: s.name, url: s.url, terms: s.terms, status: p.status, http: p.http || null, probed_at: new Date().toISOString() };
 if (s.id === 'ae-dubai-pulse') o.download_links = p.links;
@@ -160,9 +146,6 @@ ctx.waitUntil(caches.default.put(ck, new Response(JSON.stringify(d), { headers: 
 return out(d, 200, 600);
 }
 const DP = 'https://api.dubaipulse.gov.ae';
-const DP_KEEP = { broker_number: 'BRN', broker_name_en: 'Broker name', license_start_date: 'Licence start', license_end_date: 'Licence end',
-real_estate_number: 'Office licence number', real_estate_name_en: 'Office name', license_number: 'Licence number', license_type_en: 'Licence type',
-license_issue_date: 'Licence issued', license_expiry_date: 'Licence expiry', status_en: 'Status' };
 async function dpToken(env) {
 const r = await fetch(DP + TB.kbx_w__t.k11, { method: 'POST', headers: { 'content-type': 'application/x-www-form-urlencoded' },
 body: 'client_id=' + encodeURIComponent(env.DUBAI_PULSE_CLIENT_ID) + '&client_secret=' + encodeURIComponent(env.DUBAI_PULSE_CLIENT_SECRET), signal: AbortSignal.timeout(10000) });
@@ -174,10 +157,8 @@ const t = await dpToken(env);
 const r = await fetch(DP + '/open/dld/' + dataset + '?filter=' + encodeURIComponent(filter) + '&limit=10', { headers: { authorization: 'Bearer ' + t }, signal: AbortSignal.timeout(15000) });
 if (!r.ok) throw new Error(dataset + ' HTTP ' + r.status);
 const d = await r.json(), rows = Array.isArray(d) ? d : (d.results || d.data || d.result || []);
-return rows.slice(0, 10).map(x => { const o = {}; for (const k in DP_KEEP) if (x[k] != null && x[k] !== '') o[DP_KEEP[k]] = String(x[k]).slice(0, 120); return o; });
+return rows.slice(0, 10).map(x => { const o = {}; for (const k in TB.kbx_w__t.o_DP_KEEP) if (x[k] != null && x[k] !== '') o[TB.kbx_w__t.o_DP_KEEP[k]] = String(x[k]).slice(0, 120); return o; });
 }
-const BY_HAND = [{ name: 'Dubai Land Department open data, Brokers tab (search by broker number)', url: 'https://dubailand.gov.ae/en/open-data/real-estate-data/#broker' },
-{ name: 'Dubai REST app (DLD): scan the QR code on the broker card', url: 'https://dubailand.gov.ae/en/eservices/dubai-rest/' }];
 async function agent(req, u, env, ctx) {
 const brn = (u.searchParams.get('brn') || '').replace(/\D/g, '').slice(0, 10);
 const office = (u.searchParams.get('office') || '').replace(/[^\p{L}\p{N} &.'-]/gu, ' ').replace(/\s+/g, ' ').trim().slice(0, 120);
@@ -185,7 +166,7 @@ if (!brn && office.length < 3) return out({ error: TB.kbx_w__t.k12 }, 400, 0);
 const query = brn ? { brn } : { office };
 if (!env.DUBAI_PULSE_CLIENT_ID || !env.DUBAI_PULSE_CLIENT_SECRET) return out({ query, status: 'not connected',
 note: TB.kbx_w__s.k4,
-by_hand: BY_HAND }, 200, 0);
+by_hand: TB.kbx_w__t.o_BY_HAND }, 200, 0);
 try {
 const d = await cached('agent/v1/' + (brn ? 'b' + brn : 'o' + encodeURIComponent(office.toLowerCase())), async () => {
 const results = brn ? await dpQuery(env, 'dld_brokers-open-api', "broker_number='" + brn + "'")
@@ -194,7 +175,7 @@ return { query, status: 'live', results, dataset_date: new Date().toISOString().
 }, 86400, ctx);
 return out(d, 200, 0);
 } catch (e) {
-return out({ query, status: 'not connected', note: TB.kbx_w__t.k14 + String(e && e.message || e).slice(0, 60) + '). Check by hand below.', by_hand: BY_HAND }, 200, 0);
+return out({ query, status: 'not connected', note: TB.kbx_w__t.k14 + String(e && e.message || e).slice(0, 60) + '). Check by hand below.', by_hand: TB.kbx_w__t.o_BY_HAND }, 200, 0);
 }
 }
 export async function handle(req, u, env, ctx) {
