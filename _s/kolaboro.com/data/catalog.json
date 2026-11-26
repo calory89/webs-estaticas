@@ -7,7 +7,7 @@
  "summary": {
   "datasets": 550,
   "files": 606,
-  "bytes": 166679147,
+  "bytes": 167220948,
   "contracts_pass": 71,
   "contracts_fail": 3,
   "api_operations": 70,
@@ -4378,9 +4378,9 @@
    "keywords": [],
    "licence": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
    "described": false,
-   "bytes": 5029,
+   "bytes": 546830,
    "url": "https://kolaboro.com/data/ctr-changes.tsv",
-   "sha256": "a94ae4aea638fd8b2b57763b30e4995b482db38eb767ca13ce2761f8636edee4",
+   "sha256": "42ad2453d9a59e3d50ce073971d054401fd3eb6aeb0fdf30f5994a091e30ebeb",
    "http": 200,
    "media_type": "application/octet-stream",
    "format": "tsv",
@@ -19846,9 +19846,9 @@
   }
  ],
  "refreshed": {
-  "at": "2026-11-26T13:52:04Z",
+  "at": "2026-11-26T13:52:46Z",
   "by": "https://kolaboro.com/open/catalog-refresh.py",
-  "datasets_changed": 0,
+  "datasets_changed": 1,
   "note": "Sizes, hashes, row counts and stamps of files changed since generated_at, read from the published files. Contracts, probes and freshness status are from generated_at."
  }
 }
