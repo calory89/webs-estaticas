@@ -17,12 +17,12 @@ const ORIGIN = 'https://kolaboro.com';
 const L7 = ['es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'], LANGS = ['en'].concat(L7);
 const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar-u-nu-latn' };   // Arabic with Latin digits, as the rest of the site
 export const N32T_V = 'n32t5';   // n32t5: numbers in the page locale on the server (n38 d5)
-export const PATHS = /^\/(?:es|de|fr|nl|ru|zh|ar)\/(?:tools\/[a-z-]{3,30}|new|vs|m|registers|countries\/[a-z0-9-]{2,60}\/(?:how-to-check|is-it-safe|buyer-protection-law)|rankings\/most-delayed(?:\/[a-z0-9-]{2,60})?|report\/state-of-off-plan-2026|guides\/(?:off-plan-payments|bali-land-titles|contract-clauses|questions-to-ask-a-developer)|courts|developers\/benchmark|transparency-index|index\/(?:delays|prices)|compare\/markets|bali|dubai|phuket|tulum|algarve|lombok)\/?$/;
+export const PATHS = /^\/(?:es|de|fr|nl|ru|zh|ar)\/(?:tools\/[a-z-]{3,30}|new|vs|m|registers|countries\/[a-z0-9-]{2,60}\/(?:how-to-check|is-it-safe|buyer-protection-law)|rankings\/(?:most-delayed(?:\/[a-z0-9-]{2,60})?|changed-promises)|report\/state-of-off-plan-2026|guides\/(?:off-plan-payments|bali-land-titles|contract-clauses|questions-to-ask-a-developer)|courts|developers\/benchmark|transparency-index|index\/(?:delays|prices)|compare\/markets|bali|dubai|phuket|tulum|algarve|lombok)\/?$/;
 const SOP = 'report/state-of-off-plan-2026';
 export const EN_RX = /^\/(?:tools\/[a-z-]{3,30}|new|vs|m|registers)\/$/;
 // n40 L1: the country guides and the delay rankings (kbx_seo.js) share one dictionary per language, /data/n32t/<lang>/guides.json, on top of the registers one
 // n40 L2: the buyer-protection-law pages: guides.json plus /data/n32t/<lang>/law.json (the rule texts), listed as 'law' in the manifest
-const FAM = k => /^countries\/[a-z0-9-]+\/buyer-protection-law$/.test(k) ? 'law' : /^(?:countries\/[a-z0-9-]+\/(?:how-to-check|is-it-safe)|rankings\/most-delayed(?:\/[a-z0-9-]+)?)$/.test(k) ? 'guides' : null;
+const FAM = k => /^countries\/[a-z0-9-]+\/buyer-protection-law$/.test(k) ? 'law' : /^(?:countries\/[a-z0-9-]+\/(?:how-to-check|is-it-safe)|rankings\/most-delayed(?:\/[a-z0-9-]+)?)$/.test(k) ? 'guides' : k === 'rankings/changed-promises' ? 'changed-promises' : null;
 const pre = l => l === 'en' ? '' : '/' + l;
 const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
@@ -200,7 +200,7 @@ async function build(env, lang, key, D, shell, inner) {
   if (key === 'm') return render(env, lang, key, D, await marketsBody(env, lang, D), shTxt, null);
   const src = await englishOf(env, key, inner); if (!src) return null;
   const P = parts(src, shTxt); if (!P) return null;
-  if (FAM(key)) P.main = P.main.replace(/<section id="how-to-cite"[\s\S]*?<\/section>/, '').replace(/<div class="wrap"><p class="k-xs n33-by"[\s\S]*?<\/p><\/div>/, '');   // n40 L1: the English credit and citation blocks (other modules add their own)
+  if (FAM(key)) P.main = P.main.replace(/<section id="how-to-cite"[\s\S]*?<\/section>/, '').replace(/<div class="wrap"><p class="k-xs n33-by"[\s\S]*?<\/p><\/div>/, '');   // n40 L1: English credit and cite blocks
   let body = trHtml(P.main, D, LS);
   if (FAM(key)) {   // n40 L1: title, description and h1 of the English page, translated with the same dictionary
     const g = rx => dec((rx.exec(src) || [])[1] || '').trim(), h1 = g(/<h1[^>]*>([^<]+)<\/h1>/), tt = g(/<title>([^<]+)<\/title>/).replace(/ \| Kolaboro$/, ''), ds = g(/<meta name="description" content="([^"]+)"/);
