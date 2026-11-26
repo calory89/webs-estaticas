@@ -24,6 +24,13 @@
 "pj": {
 "one": "{n} project",
 "other": "{n} projects"
+},
+"tt40": {
+"/ar/pricing/": "الأسعار: التقارير والخطط والتحقق من المشاريع | Kolaboro",
+"/ar/graph/developers/": "شبكة المطورين: الروابط بين الشركات والمشاريع | Kolaboro",
+"/ar/tools/contract-addendum/": "منشئ ملحق العقد لشراء العقارات على الخارطة | Kolaboro",
+"/ar/tools/insolvency-check/": "فحص إعسار المطور في السجلات الرسمية | Kolaboro",
+"/ar/tools/permit-photo/": "قارئ صور التصاريح على لافتات المشاريع | Kolaboro"
 }
 },
 "es": {

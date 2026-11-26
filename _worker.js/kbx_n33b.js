@@ -166,14 +166,23 @@ export async function handle(req, u, env, ctx, shell) {
   return trustRender(lang, Object.assign({}, pg, { body: pg.body.replace('<div class="kpg">', CSS + '<div class="kpg">') }), shell);
 }
 
+// n40 k6 (R04-17): copy buttons for the plain credit line and an APA reference (date in the page language)
+const apa40 = (lang, ti, url, d) => { let ds = d; try { ds = d.slice(0, 4) + ', ' + new Intl.DateTimeFormat(lang === 'en' ? 'en-US' : LOC[lang] || 'en-GB', { month: 'long', day: 'numeric', timeZone: 'UTC' }).format(new Date(d + 'T12:00:00Z')); } catch (e) {} return 'Kolaboro. (' + ds + '). ' + ti + '. ' + url; };
+const CB40JS = "document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('[data-c40]');if(!b)return;var x=b.getAttribute('data-c40'),o=b.parentNode.querySelector('.c40-ok'),f=function(){if(o)o.textContent=b.getAttribute('data-ok')};if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(x).then(f,function(){prompt('',x)});else prompt('',x)});";
+const cb40 = (lang, plain, apa, nc) => { const bs = 'min-height:44px;padding:8px 14px;margin:0 8px 8px 0;border:1px solid var(--line,#c9c9c9);border-radius:8px;background:transparent;color:inherit;font:inherit;cursor:pointer';
+  return '<p class="c40" style="display:flex;flex-wrap:wrap;align-items:center;margin:8px 0">' + (plain ? '<button type="button" style="' + bs + '" data-c40="' + esc(plain) + '" data-ok="' + esc(t(lang, 'c_ok')) + '">' + esc(t(lang, 'c_cp')) + '</button>' : '') +
+    '<button type="button" style="' + bs + '" data-c40="' + esc(apa) + '" data-ok="' + esc(t(lang, 'c_ok')) + '">' + esc(t(lang, 'c_apa')) + '</button><span class="c40-ok" role="status" aria-live="polite"></span></p><script nonce="' + esc(nc) + '">' + CB40JS + '</script>'; };
+
 // ------------------------------------------------------------------------------------------------ item 93: "How to cite this page" on report pages
 export async function cite(req, r, env, u) {
   const m = /^\/(es|de|fr|nl|ru|zh|ar)\//.exec(u.pathname), lang = m ? m[1] : 'en';
   await loadT(env); if (!T) return r;
   let h1 = '', inH1 = false, seenH1 = false, has = false;
   const url = ORIGIN + u.pathname, today = new Date().toISOString().slice(0, 10);
+  const nc = ((((r.headers.get('content-security-policy') || '').match(/'nonce-([A-Za-z0-9+/=]+)'/)) || [])[1]) || '';
   return new HTMLRewriter()
     .on('#cite, #how-to-cite', { element() { has = true; } })
+    .on('.dd-cite', { element(e) { e.append(cb40(lang, null, apa40(lang, h1.replace(/\s+/g, ' ').trim() || 'Press data desk', url, today), nc), { html: true }); } })   // n40 k6: APA copy on /press/data/
     .on('main h1', { element(e) { if (seenH1) return; seenH1 = true; inH1 = true; e.onEndTag(() => { inH1 = false; }); }, text(x) { if (inH1) h1 += x.text; } })
     .on('main', { element(e) {
       e.onEndTag(end => {
@@ -182,6 +191,7 @@ export async function cite(req, r, env, u) {
         const bib = '@misc{kolaboro_' + u.pathname.replace(/[^a-z0-9]+/g, '_').replace(/^_|_$/g, '').slice(0, 50) + '_' + today.replace(/-/g, '') + ',\n  author = {{Kolaboro}},\n  title = {' + ti.replace(/[{}\\]/g, '') + '},\n  year = {' + today.slice(0, 4) + '},\n  url = {' + url + '},\n  note = {Read on ' + today + '. Licence CC BY 4.0}\n}';
         end.before('<section id="how-to-cite" aria-labelledby="n33b-ch" style="max-width:1120px;margin:40px auto 24px;padding:0 16px;box-sizing:border-box"><h2 id="n33b-ch">' + esc(t(lang, 'c_h')) + '</h2><p>' + esc(t(lang, 'c_lic')) + '</p>' +
           '<p style="overflow-wrap:anywhere"><code style="white-space:normal">Kolaboro, "' + esc(ti) + '", <a href="' + esc(url) + '">' + esc(url) + '</a>, ' + esc(t(lang, 'c_read', { d: today })) + '. CC BY 4.0.</code></p>' +
+          cb40(lang, 'Kolaboro, "' + ti + '", ' + url + ', ' + t(lang, 'c_read', { d: today }) + '. CC BY 4.0.', apa40(lang, ti, url, today), nc) +
           '<details><summary style="min-height:44px;display:flex;align-items:center;cursor:pointer">BibTeX</summary><pre dir="ltr" style="white-space:pre-wrap;overflow-wrap:anywhere;font-size:13px">' + esc(bib) + '</pre></details>' +
           '<p><a href="' + pre(lang) + '/cite/" style="display:inline-block;padding:10px 0">' + esc(t(lang, 'c_more')) + '</a></p></section>', { html: true });
       });

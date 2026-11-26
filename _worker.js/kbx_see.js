@@ -36,6 +36,7 @@ let S = { en: {} };   // n40 k4: strings in 8 languages live in /data/media-i18n
 
 const t = (lang, k, v) => { const s = (S[lang] && S[lang][k]) || S.en[k] || ''; return v && typeof s === 'string' ? s.replace(/\{(\w+)\}/g, (m, x) => v[x] != null ? v[x] : m) : s; };
 const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const phk = (l, n) => { const a = n % 10, b = n % 100; return n === 1 ? 'ph1' : l === 'ru' && a === 1 && b !== 11 ? 'phr' : l === 'ar' ? (n === 2 ? 'ph2' : b >= 3 && b <= 10 ? 'phn' : 'ph11') : 'phn'; };   // n40 k6: plural
 export const seeToc = lang => t(lang, 'toc');
 export const seeHeading = lang => t(lang, 'h');
 const SRCN = { panoramax: 'Panoramax', kartaview: 'KartaView', commons: 'Wikimedia Commons' };
@@ -68,7 +69,7 @@ export function seeHtml(sd, id, lang, fd, name) {
     const L = php.ph || [];
     if (!L.length) { const ok = ['panoramax', 'kartaview', 'commons'].filter(k => !(php.errors || []).includes(k)).map(k => SRCN[k]); if (ok.length) h += '<p>' + esc(t(lang, 'ph0', { d: fd(php.checked), s: ok.join(', ') })) + '</p>'; }
     else {
-      h += '<p class="ki">' + esc(t(lang, 'phn', { n: num(L.length) })) + '</p><ul class="ksee-ph">' + L.map((x, i) => {
+      h += '<p class="ki">' + esc(t(lang, phk(lang, L.length), { n: num(L.length) })) + '</p><ul class="ksee-ph">' + L.map((x, i) => {
         const sn = SRCN[x.src] || x.src, alt = sn + (x.date ? ', ' + fd(x.date) : '') + ', ' + num(x.d) + ' m' + (name ? ', ' + name : '');
         const ex = [x.az != null && x.to != null && adiff(x.az, x.to) <= 60 ? t(lang, 'face') : '', x.pano ? t(lang, 'pano') : '', x.src === 'commons' ? t(lang, 'commons') : ''].filter(Boolean).join(', ');
         return '<li><a class="im" href="' + esc(x.page) + '" rel="noopener nofollow" target="_blank"><img src="/api/x/see/ph/' + encodeURIComponent(id) + '/' + i + '.jpg?v=' + encodeURIComponent(sd.ph.updated || '') + '" alt="' + esc(alt) + '" loading="lazy" decoding="async" width="500" height="375" referrerpolicy="no-referrer"></a>' +

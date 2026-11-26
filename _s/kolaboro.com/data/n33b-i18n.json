@@ -61,7 +61,10 @@
 "b_reply": "Reply as the developer",
 "b_proj": "Badge for a single project (transparency score of 70 or more)",
 "b_cr": "For developers",
-"upd": "Data of {d}."
+"upd": "Data of {d}.",
+"c_cp": "Copy citation",
+"c_apa": "Copy APA reference",
+"c_ok": "Copied"
 },
 "es": {
 "r_title": "Ranking de transparencia por mercado, {m}",
@@ -125,7 +128,10 @@
 "b_reply": "Responder como promotor",
 "b_proj": "Distintivo para un solo proyecto (puntuación de transparencia de 70 o más)",
 "b_cr": "Para promotores",
-"upd": "Datos del {d}."
+"upd": "Datos del {d}.",
+"c_cp": "Copiar cita",
+"c_apa": "Copiar referencia APA",
+"c_ok": "Copiado"
 },
 "de": {
 "r_title": "Transparenz-Ranking nach Markt, {m}",
@@ -189,7 +195,10 @@
 "b_reply": "Als Bauträger antworten",
 "b_proj": "Abzeichen für ein einzelnes Projekt (Transparenzwert 70 oder mehr)",
 "b_cr": "Für Bauträger",
-"upd": "Daten vom {d}."
+"upd": "Daten vom {d}.",
+"c_cp": "Zitat kopieren",
+"c_apa": "APA-Angabe kopieren",
+"c_ok": "Kopiert"
 },
 "fr": {
 "r_title": "Classement de transparence par marché, {m}",
@@ -253,7 +262,10 @@
 "b_reply": "Répondre en tant que promoteur",
 "b_proj": "Badge pour un seul projet (score de transparence de 70 ou plus)",
 "b_cr": "Pour les promoteurs",
-"upd": "Données du {d}."
+"upd": "Données du {d}.",
+"c_cp": "Copier la citation",
+"c_apa": "Copier la référence APA",
+"c_ok": "Copié"
 },
 "nl": {
 "r_title": "Transparantieranglijst per markt, {m}",
@@ -317,7 +329,10 @@
 "b_reply": "Reageren als ontwikkelaar",
 "b_proj": "Badge voor één project (transparantiescore van 70 of meer)",
 "b_cr": "Voor ontwikkelaars",
-"upd": "Gegevens van {d}."
+"upd": "Gegevens van {d}.",
+"c_cp": "Bronvermelding kopiëren",
+"c_apa": "APA-verwijzing kopiëren",
+"c_ok": "Gekopieerd"
 },
 "ru": {
 "r_title": "Рейтинг прозрачности по рынкам, {m}",
@@ -381,7 +396,10 @@
 "b_reply": "Ответить как застройщик",
 "b_proj": "Значок для одного проекта (оценка прозрачности 70 и выше)",
 "b_cr": "Для застройщиков",
-"upd": "Данные на {d}."
+"upd": "Данные на {d}.",
+"c_cp": "Скопировать ссылку",
+"c_apa": "Скопировать ссылку APA",
+"c_ok": "Скопировано"
 },
 "zh": {
 "r_title": "按市场的透明度排名，{m}",
@@ -445,7 +463,10 @@
 "b_reply": "以开发商身份回复",
 "b_proj": "单个项目的徽章（透明度得分 70 分或以上）",
 "b_cr": "面向开发商",
-"upd": "数据日期 {d}。"
+"upd": "数据日期 {d}。",
+"c_cp": "复制引用",
+"c_apa": "复制 APA 引用",
+"c_ok": "已复制"
 },
 "ar": {
 "r_title": "ترتيب الشفافية حسب السوق، {m}",
@@ -509,6 +530,9 @@
 "b_reply": "الرد بصفتك المطور",
 "b_proj": "شارة لمشروع واحد (درجة شفافية 70 أو أكثر)",
 "b_cr": "للمطورين",
-"upd": "بيانات {d}."
+"upd": "بيانات {d}.",
+"c_cp": "نسخ الاستشهاد",
+"c_apa": "نسخ مرجع APA",
+"c_ok": "تم النسخ"
 }
 }
