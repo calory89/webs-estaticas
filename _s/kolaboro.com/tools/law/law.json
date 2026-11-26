@@ -30,7 +30,10 @@
     "CY": "Cyprus",
     "IN": "India",
     "BR": "Brazil",
-    "SA": "Saudi Arabia"
+    "SA": "Saudi Arabia",
+    "CA-BC": "British Columbia (Canada)",
+    "CO": "Colombia",
+    "MA": "Morocco"
   },
   "sources": {
     "id-pp18-2021": {
@@ -218,6 +221,37 @@
       "language": "ar",
       "read": "2026-11-26",
       "note": "Official Arabic text. The Implementing Regulations of the law add the detailed procedures."
+    },
+    "ca-bc-redma-2004": {
+      "law": "Real Estate Development Marketing Act, SBC 2004, c. 41 (British Columbia)",
+      "publisher": "BC Laws (bclaws.gov.bc.ca), King's Printer, Province of British Columbia",
+      "url": "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/04041_01",
+      "language": "en",
+      "read": "2026-11-26",
+      "note": "Canada has no federal off-plan law: each province has its own. These notes cover British Columbia only; text current to 24 November 2026."
+    },
+    "co-ley-962-2005": {
+      "law": "Law 962 of 2005 (simplification of administrative procedures), as amended by Decree-Law 19 of 2012",
+      "publisher": "Secretaría General del Senado de la República de Colombia, legal database (secretariasenado.gov.co)",
+      "url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0962_2005_pr001.html",
+      "language": "es",
+      "read": "2026-11-26",
+      "note": "Article 71 was replaced by article 185 of Decree-Law 19 of 2012. The filing is made with the city or district office that supervises housing construction and sales under Law 66 of 1968 and Decree 2610 of 1979."
+    },
+    "co-ley-1796-2016": {
+      "law": "Law 1796 of 2016 (safe housing law)",
+      "publisher": "Secretaría General del Senado de la República de Colombia, legal database (secretariasenado.gov.co)",
+      "url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_1796_2016.html",
+      "language": "es",
+      "read": "2026-11-26"
+    },
+    "ma-doc-vefa": {
+      "law": "Dahir of 12 August 1913 forming the Code of Obligations and Contracts, articles 618-1 to 618-20 (sale of a building in the future state of completion, Law 44-00 as amended by Law 107-12)",
+      "publisher": "Adala (adala.justice.gov.ma), legal portal of the Ministry of Justice of the Kingdom of Morocco, French consolidated version of 18 March 2021",
+      "url": "https://adala.justice.gov.ma/api/uploads/2024/02/28/Code%20des%20Obligations%20et%20des%20Contrats_compressed-1709126934943.pdf",
+      "language": "fr",
+      "read": "2026-11-26",
+      "note": "Quoted from the French version published by the Ministry of Justice; the Arabic text in the Bulletin officiel is the official one. Law 107-12 was published in Bulletin officiel No. 6518 of 17 November 2016."
     }
   },
   "rules": [
@@ -1202,6 +1236,136 @@
       "cite": "Article 20(1)",
       "quote": "يلتزم المطور بإنهاء المشروع العقاري في الموعد المحدد لإنجازه. وفي حال التأخر عن تسليم الأرض أو الوحدة العقارية دون سبب خارج عن إرادته؛ فيستحق المشتري تعويضاً ماديًّا يحدد مسبقاً إن كانت أرضاً مطورة، أو أجرة مثلٍ إن كانت وحدة سكنية.",
       "translation": "The developer is bound to finish the real estate project by the date set for its completion. If delivery of the land or the unit is delayed without a reason beyond the developer's control, the buyer is entitled to financial compensation fixed in advance if it is developed land, or the equivalent rent if it is a residential unit.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "ca-bc-disclosure-statement",
+      "market": "CA-BC",
+      "topics": [
+        "permit",
+        "parties"
+      ],
+      "title": "In British Columbia, a developer must file a disclosure statement before marketing, and give it to you before you sign",
+      "plain": "A developer may not market units in a development until it has prepared a disclosure statement for the development and filed it with the Superintendent of Real Estate. It may not sign a purchase agreement with you until it has given you a copy, given you a reasonable chance to read it, and obtained your written acknowledgement that you had that chance.",
+      "source": "ca-bc-redma-2004",
+      "cite": "Sections 14(1) and 15(1)",
+      "quote": "A developer must not market a development unit unless the developer has (a) prepared a disclosure statement respecting the development property in which the development unit is located, and (b) filed with the superintendent (i) the disclosure statement described under paragraph (a), and (ii) any records required by the superintendent under subsection (3). [...] A developer must not enter into a purchase agreement with a purchaser for the sale or lease of a development unit unless (a) a copy of the disclosure statement prepared in respect of the development property in which the development unit is located has been provided to the purchaser, (b) the purchaser has been afforded reasonable opportunity to read the disclosure statement, and (c) the developer has obtained a written statement from the purchaser acknowledging that the purchaser had an opportunity to read the disclosure statement.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "ca-bc-deposit-trust",
+      "market": "CA-BC",
+      "topics": [
+        "escrow",
+        "payment"
+      ],
+      "title": "Your deposit goes into a trust account held by a brokerage, lawyer or notary, not to the developer",
+      "plain": "A developer that receives your deposit must promptly place it with a real estate brokerage, a lawyer, a notary public or another prescribed person, who holds it as trustee in a trust account at a savings institution in British Columbia. The trustee holds it for both of you, not as the agent of either, and may release it only in the cases the Act lists. Make the deposit cheque or transfer out to the trustee named in your contract.",
+      "source": "ca-bc-redma-2004",
+      "cite": "Section 18(1) and (2)",
+      "quote": "A developer who receives a deposit from a purchaser in relation to a development unit must promptly place the deposit with a brokerage, lawyer, notary public or prescribed person who must hold the deposit as trustee in a trust account in a savings institution in British Columbia. (2) A trustee under subsection (1) holds the deposit for the developer and the purchaser and not as an agent for either of them and must not release the deposit from trust except as follows: [...]",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "ca-bc-rescission-7-days",
+      "market": "CA-BC",
+      "topics": [
+        "termination"
+      ],
+      "title": "You can cancel the purchase in writing within 7 days after signing or after acknowledging the disclosure statement",
+      "plain": "You may rescind the purchase agreement by serving written notice on the developer within 7 days after the later of the day the agreement was made and the day you signed the acknowledgement that you had a chance to read the disclosure statement. This applies even if title has already been transferred.",
+      "source": "ca-bc-redma-2004",
+      "cite": "Section 21(2)",
+      "quote": "Regardless of whether title, or the other interest for which a purchaser has contracted, to a development unit has been transferred, a purchaser of the development unit may rescind the purchase agreement by serving written notice of the rescission on the developer within 7 days after the later of (a) the date that the purchase agreement was made, and (b) the date that the developer obtained, under section 15 (1) (c) [providing disclosure statements to purchasers] , a written statement from the purchaser acknowledging that the purchaser had an opportunity to read (i) the disclosure statement provided under that section, or (ii) a new disclosure statement, if any, described in section 16 (1) (a) (i) [non-compliant disclosure statements] .",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "co-radicacion-documentos",
+      "market": "CO",
+      "topics": [
+        "permit",
+        "title"
+      ],
+      "title": "In Colombia, a developer must file the project papers with the city before selling homes, and buyers may read them at any time",
+      "plain": "Anyone who wants to sell homes in a housing plan must first file with the city or district office that supervises housing construction and sales: a recent property title extract (no older than three months), the model sale contracts, the project budget, the building licence (except under the pre-sale system) and, if the land is mortgaged, the lender's commitment to release each unit as it is sold. These papers are open to buyers at all times, so ask the city office to see them before you pay.",
+      "source": "co-ley-962-2005",
+      "cite": "Article 71",
+      "quote": "El interesado en adelantar planes de vivienda deberá radicar únicamente los siguientes documentos ante la instancia de la administración municipal o distrital encargada de ejercer la vigilancia y control de las actividades de construcción y enajenación de inmuebles contempladas en la Ley 66 de 1968 y el Decreto 2610 de 1979: a. Folio de matrícula inmobiliaria del inmueble o inmuebles objeto de la solicitud, cuya fecha de expedición no sea superior a tres (3) meses; b. Copia de los modelos de contratos que se vayan a utilizar en la celebración de los negocios de enajenación de inmuebles con los adquirientes, a fin de comprobar la coherencia y validez de las cláusulas con el cumplimiento de las normas que civil y comercialmente regulen el contrato; c. El presupuesto financiero del proyecto; d. Licencia urbanística respectiva, salvo que se trate del sistema de preventas; e. Cuando el inmueble en el cual ha de desarrollarse el plan o programa se encuentre gravado con hipoteca, ha de acreditarse que el acreedor hipotecario se obliga a liberar los lotes o construcciones que se vayan enajenando, mediante el pago proporcional del gravamen que afecte cada lote o construcción. PARÁGRAFO 1. Estos documentos estarán a disposición de los compradores de los planes de vivienda en todo momento con el objeto de que sobre ellos efectúen los estudios necesarios para determinar la conveniencia de la adquisición.",
+      "translation": "Anyone wishing to carry out housing plans must file only the following documents with the municipal or district office in charge of supervising and controlling the construction and sale of property covered by Law 66 of 1968 and Decree 2610 of 1979: a. The property registration extract of the property or properties concerned, issued no more than three (3) months earlier; b. A copy of the model contracts to be used for sales to buyers, so that the consistency and validity of their clauses with the civil and commercial rules governing the contract can be checked; c. The financial budget of the project; d. The relevant planning licence, except under the pre-sale system; e. Where the property on which the plan is to be built is mortgaged, proof that the mortgage lender undertakes to release the plots or buildings as they are sold, against proportional payment of the charge on each plot or building. Paragraph 1. These documents will be available to buyers of the housing plans at all times, so that they can study them to decide whether the purchase suits them.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "co-amparo-10-anos",
+      "market": "CO",
+      "topics": [
+        "completion",
+        "law"
+      ],
+      "title": "For 10 years after occupancy, the builder or seller of a new home must cover owners' losses from serious structural failure",
+      "plain": "If, within ten years after the technical occupancy certificate of a new home, one of the situations in article 2060(3) of the Civil Code occurs, the builder or the seller of the new home must cover the financial losses of the affected owners. They must back this duty with their own assets, bank guarantees, financial products or insurance. Ask which cover your project has.",
+      "source": "co-ley-1796-2016",
+      "cite": "Article 8",
+      "quote": "Sin perjuicio de la garantía legal de la que trata el artículo 8 o de la Ley 1480 de 2011, en el evento que dentro de los diez (10) años siguientes a la expedición de la certificación Técnica de Ocupación de una vivienda nueva, se presente alguna de las situaciones contempladas en el numeral 3 del artículo 2060 del Código Civil, el constructor o el enajenador de vivienda nueva, estará obligado a cubrir los perjuicios patrimoniales causados a los propietarios que se vean afectados. PARÁGRAFO. El constructor o el enajenador de vivienda nueva deberán amparar los perjuicios patrimoniales a los que hace referencia la presente ley a través de su patrimonio, garantías bancarias, productos financieros o seguros, entre otros. El Gobierno nacional reglamentará la materia.",
+      "translation": "Without prejudice to the legal guarantee in article 8 of Law 1480 of 2011, if within the ten (10) years following the issue of the Technical Occupancy Certificate of a new home one of the situations set out in number 3 of article 2060 of the Civil Code occurs, the builder or the seller of the new home will be bound to cover the financial losses caused to the owners affected. Paragraph. The builder or the seller of new housing must cover the financial losses referred to in this law through their own assets, bank guarantees, financial products or insurance, among others. The national Government will regulate the matter.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "ma-vefa-reservation",
+      "market": "MA",
+      "topics": [
+        "termination",
+        "escrow"
+      ],
+      "title": "In Morocco, you can withdraw from a reservation contract within one month and get everything back within 7 days",
+      "plain": "Before the preliminary sale contract, you may sign a reservation contract. You can withdraw from it within one month of signing, and the seller must then return the whole amount paid within seven days. A reservation lasts at most six months, after which it must become a preliminary sale contract or be cancelled with a refund. Money paid at reservation goes into a special bank account and cannot be used or seized until your withdrawal period ends; you get a deposit receipt.",
+      "source": "ma-doc-vefa",
+      "cite": "Article 618-3 quater",
+      "quote": "L’acquéreur a droit à se rétracter du contrat de réservation, dans un délai n’excédant pas un (1) mois à compter de la date de conclusion du contrat de réservation. Le vendeur doit, en cas de rétractation de l’acquéreur du contrat de réservation, lui restituer le montant total avancé dans un délai n’excédant pas sept (7) jours à compter de la date de l’exercice de ce droit. [...] La validité du contrat de réservation est fixée à un délai n’excédant pas six (6) mois non renouvelables et qui conduit obligatoirement soit à la conclusion du contrat préliminaire de vente, soit à la rétractation du contrat de réservation et la restitution des montants avancés. Le vendeur dépose, dans un compte bancaire spécial et en son nom, les montants versés par les acquéreurs lors de la conclusion des contrats de réservation et dans les limites prévues par l’article 618-6 ci-dessous. Les montants déposés ne sont susceptibles ni d’en disposer ni d’en saisir, et ce, jusqu’à l’expiration du délai du droit de rétractation relatif à chaque contrat. En contrepartie, l’acquéreur reçoit un récépissé de dépôt.",
+      "translation": "The buyer has the right to withdraw from the reservation contract within a period not exceeding one (1) month from the date the reservation contract was concluded. If the buyer withdraws from the reservation contract, the seller must return the full amount advanced within a period not exceeding seven (7) days from the date this right is exercised. [...] A reservation contract is valid for a period not exceeding six (6) months, not renewable, which must lead either to the conclusion of the preliminary sale contract or to withdrawal from the reservation contract and the return of the amounts advanced. The seller deposits, in a special bank account in its name, the amounts paid by buyers when reservation contracts are concluded, within the limits set by article 618-6 below. The amounts deposited can be neither used nor seized until the withdrawal period for each contract has expired. In return, the buyer receives a deposit receipt.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "ma-vefa-payment-stages",
+      "market": "MA",
+      "topics": [
+        "payment"
+      ],
+      "title": "The law caps each payment stage: 5% at reservation, 5% at the preliminary contract, 10% at start of works, 60% in three build stages, 20% at the keys",
+      "plain": "You pay at most a part of the total price as the works progress: 5% at the reservation contract, 5% at the preliminary contract (or 10% if there was no reservation), 10% when works start, 60% in three stages (foundations up to ground floor, structural works of the whole building, finishing and the occupancy permit or certificate of conformity) and the last 20% at the final sale contract and handover of the keys.",
+      "source": "ma-doc-vefa",
+      "cite": "Article 618-6",
+      "quote": "L’acquéreur est tenu de payer au maximum une partie du prix global au fur et à mesure de l’avancement des travaux selon les phases suivantes : -5% à la conclusion du contrat de réservation ; -5% à la conclusion du contrat préliminaire ou 10% en cas de non existence du contrat de réservation ; -10% au lancement des travaux ; -60% divisé en trois phases à payer, selon l’accord des parties, à l’achèvement des travaux de réalisation de chaque phase ; -phase des travaux relatifs aux fondations de la construction au niveau du rez-de-chaussée ; -phase des travaux des gros œuvres de l’ensemble de l’immeuble ; -phase des travaux de finition et l’obtention du permis d’habiter ou du certificat de conformité. -20% à la conclusion du contrat de vente définitif et la remise des clés.",
+      "translation": "The buyer is required to pay at most a part of the total price as the works progress, in the following stages: 5% when the reservation contract is concluded; 5% when the preliminary contract is concluded, or 10% if there is no reservation contract; 10% when the works start; 60% split into three stages, payable as agreed by the parties on completion of the works of each stage: the foundation works up to ground-floor level; the structural works of the whole building; the finishing works and the obtaining of the occupancy permit or the certificate of conformity; 20% when the final sale contract is concluded and the keys are handed over.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "ma-vefa-no-early-payment",
+      "market": "MA",
+      "topics": [
+        "payment",
+        "permit"
+      ],
+      "title": "No contract before the building permit, and any payment before a signed contract is void",
+      "plain": "A preliminary sale contract for an off-plan building can only be signed after the building permit has been issued. Any payment of any kind made before the preliminary sale contract, or before the reservation contract if one is used, is null and void. Do not pay anything before a written contract.",
+      "source": "ma-doc-vefa",
+      "cite": "Articles 618-5 and 618-8",
+      "quote": "Le contrat préliminaire de vente de l’immeuble en l’état futur d’achèvement ne peut être conclu qu’après l’obtention du permis de construire. [...] Est considéré comme nul et non avenu, tout paiement de quelque nature que ce soit, avant la signature du contrant préliminaire de vente ou du contrat de réservation en cas de recours à ce dernier.",
+      "translation": "The preliminary contract for the sale of a building in the future state of completion may only be concluded after the building permit has been obtained. [...] Any payment of any kind made before the signature of the preliminary sale contract, or of the reservation contract where one is used, is considered null and void.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "ma-vefa-guarantee",
+      "market": "MA",
+      "topics": [
+        "escrow",
+        "completion"
+      ],
+      "title": "After the preliminary contract, the seller must give you a completion guarantee or a refund guarantee",
+      "plain": "Once the preliminary sale contract is signed, the seller must set up in your favour either a guarantee that the works will be completed or a guarantee that the instalments you paid will be refunded if the contract is not performed. The professional who drew up the contract may release instalments deposited with them to the seller only after the seller has obtained a guarantee covering all the instalments you paid.",
+      "source": "ma-doc-vefa",
+      "cite": "Article 618-9",
+      "quote": "Le vendeur doit, après la signature du contrat préliminaire de vente, constituer au profit de l’acquéreur soit une garantie d’achévement des travaux soit une garantie de remboursement des échéances payées en cas de non-exécution du contrat. [...] La partie qui a dressé le contrat ne peut débloquer les échéances qui sont déposées auprès d’elle au profit du vendeur qu’après l’obtention de ce dernier d’une garantie couvrant toutes les échéances payées par l’acquéreur.",
+      "translation": "After the preliminary sale contract is signed, the seller must set up in favour of the buyer either a guarantee of completion of the works or a guarantee of refund of the instalments paid if the contract is not performed. [...] The party who drew up the contract may release to the seller the instalments deposited with it only after the seller has obtained a guarantee covering all the instalments paid by the buyer.",
       "checked": "2026-11-26"
     }
   ]
