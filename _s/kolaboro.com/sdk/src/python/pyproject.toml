@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kolaboro"
+version = "0.1.0"
+description = "Official client for the Kolaboro open data API (off-plan property due diligence), with built-in Ed25519 signature verification"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Kolaboro" }]
+classifiers = ["Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License", "Typing :: Typed"]
+
+[project.optional-dependencies]
+fast = ["cryptography>=41"]
+
+[project.urls]
+Homepage = "https://kolaboro.com/docs/sdk/"
+API = "https://kolaboro.com/api/open"
+
+[tool.setuptools]
+packages = ["kolaboro"]
+
+[tool.setuptools.package-data]
+kolaboro = ["py.typed"]

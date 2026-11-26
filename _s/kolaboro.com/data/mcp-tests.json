@@ -1,0 +1,110 @@
+{
+ "type": "kolaboro-mcp-tests-v1",
+ "at": "2026-11-23T05:39:06Z",
+ "endpoint": "https://kolaboro.com/mcp",
+ "server": {
+  "name": "kolaboro",
+  "title": "Kolaboro open data",
+  "version": "2.0.0",
+  "websiteUrl": "https://kolaboro.com/docs/mcp/"
+ },
+ "passed": 19,
+ "total": 19,
+ "results": [
+  {
+   "tool": "search_projects",
+   "ok": true,
+   "detail": "signed, 2127 bytes"
+  },
+  {
+   "tool": "get_project",
+   "ok": true,
+   "detail": "signed, 1668 bytes"
+  },
+  {
+   "tool": "project_quick_answer",
+   "ok": true,
+   "detail": "signed, 2790 bytes"
+  },
+  {
+   "tool": "compare_projects",
+   "ok": true,
+   "detail": "signed, 1495 bytes"
+  },
+  {
+   "tool": "list_by_handover_year",
+   "ok": true,
+   "detail": "signed, 2216 bytes"
+  },
+  {
+   "tool": "search_text",
+   "ok": true,
+   "detail": "signed, 5273 bytes"
+  },
+  {
+   "tool": "get_certificate",
+   "ok": true,
+   "detail": "signed, 2694 bytes"
+  },
+  {
+   "tool": "market_stats",
+   "ok": true,
+   "detail": "signed, 865 bytes"
+  },
+  {
+   "tool": "database_stats",
+   "ok": true,
+   "detail": "signed, 975 bytes"
+  },
+  {
+   "tool": "public_log",
+   "ok": true,
+   "detail": "signed, 1962 bytes"
+  },
+  {
+   "tool": "dataset_files",
+   "ok": true,
+   "detail": "signed, 1636 bytes"
+  },
+  {
+   "tool": "verify_signature",
+   "ok": true,
+   "detail": "{  \"valid\": true,  \"key_id\": \"kb-f2e04da5878f8c51\",  \"key_status\": \"active\",  \"k"
+  },
+  {
+   "tool": "project_history",
+   "ok": true,
+   "detail": "signed, 1286 bytes"
+  },
+  {
+   "tool": "project_evidence",
+   "ok": true,
+   "detail": "signed, 4316 bytes"
+  },
+  {
+   "tool": "compare_markets",
+   "ok": true,
+   "detail": "signed, 2638 bytes"
+  },
+  {
+   "tool": "transparency_proof",
+   "ok": true,
+   "detail": "signed, 7946 bytes"
+  },
+  {
+   "tool": "dataset_delta",
+   "ok": true,
+   "detail": "signed, 3464 bytes"
+  },
+  {
+   "tool": "get_project_record",
+   "ok": true,
+   "detail": "signed, 3703 bytes"
+  },
+  {
+   "tool": "list_fact_changes",
+   "ok": true,
+   "detail": "signed, 1874 bytes"
+  }
+ ]
+}

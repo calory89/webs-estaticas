@@ -1,0 +1,1023 @@
+{
+ "updated": "2026-11-26T14:29:51.389Z",
+ "base": "https://kolaboro.com",
+ "journey": [
+  "Home page",
+  "Search the database",
+  "Open a project",
+  "Verify its signed data on /verify",
+  "Status page"
+ ],
+ "runs_kept": 14,
+ "runs_passed": 11,
+ "median_ms_by_step": {
+  "1": 2069,
+  "2": 850,
+  "3": 1385,
+  "4": 1541,
+  "5": 500
+ },
+ "latest_shots": [
+  "/data/journeys/1.webp",
+  "/data/journeys/2.webp"
+ ],
+ "runs": [
+  {
+   "at": "2026-11-26T14:29:51.389Z",
+   "ok": false,
+   "total_ms": 26694,
+   "browser": "Chrome (GitHub Actions runner, Linux)",
+   "steps": [
+    {
+     "n": 1,
+     "name": "Home page",
+     "ok": true,
+     "ms": 3522,
+     "url": "/",
+     "detail": "Never buy property abroad alone again.",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 2,
+     "name": "Search the database",
+     "ok": false,
+     "ms": 23172,
+     "url": "/cases/?q=Bali",
+     "detail": "page.waitForSelector: Timeout 20000ms exceeded.",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 3,
+     "name": "Open a project",
+     "ok": false,
+     "ms": null,
+     "url": null,
+     "detail": "not run: an earlier step failed",
+     "console_errors": 0,
+     "skipped": true
+    },
+    {
+     "n": 4,
+     "name": "Verify its signed data on /verify",
+     "ok": false,
+     "ms": null,
+     "url": null,
+     "detail": "not run: an earlier step failed",
+     "console_errors": 0,
+     "skipped": true
+    },
+    {
+     "n": 5,
+     "name": "Status page",
+     "ok": false,
+     "ms": null,
+     "url": null,
+     "detail": "not run: an earlier step failed",
+     "console_errors": 0,
+     "skipped": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-19T13:56:58.749Z",
+   "ok": false,
+   "total_ms": 26784,
+   "browser": "Chrome (GitHub Actions runner, Linux)",
+   "steps": [
+    {
+     "n": 1,
+     "name": "Home page",
+     "ok": true,
+     "ms": 5492,
+     "url": "/",
+     "detail": "Never buy property abroad alone again.",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 2,
+     "name": "Search the database",
+     "ok": false,
+     "ms": 21292,
+     "url": "/cases/?q=Bali",
+     "detail": "page.waitForSelector: Timeout 20000ms exceeded.",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 3,
+     "name": "Open a project",
+     "ok": false,
+     "ms": null,
+     "url": null,
+     "detail": "not run: an earlier step failed",
+     "console_errors": 0,
+     "skipped": true
+    },
+    {
+     "n": 4,
+     "name": "Verify its signed data on /verify",
+     "ok": false,
+     "ms": null,
+     "url": null,
+     "detail": "not run: an earlier step failed",
+     "console_errors": 0,
+     "skipped": true
+    },
+    {
+     "n": 5,
+     "name": "Status page",
+     "ok": false,
+     "ms": null,
+     "url": null,
+     "detail": "not run: an earlier step failed",
+     "console_errors": 0,
+     "skipped": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-12T13:16:31.134Z",
+   "ok": false,
+   "total_ms": 23912,
+   "browser": "Chrome (GitHub Actions runner, Linux)",
+   "steps": [
+    {
+     "n": 1,
+     "name": "Home page",
+     "ok": true,
+     "ms": 2985,
+     "url": "/",
+     "detail": "Never buy property abroad alone again.",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 2,
+     "name": "Search the database",
+     "ok": false,
+     "ms": 20927,
+     "url": "/cases/?q=Bali",
+     "detail": "page.waitForSelector: Timeout 20000ms exceeded.",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 3,
+     "name": "Open a project",
+     "ok": false,
+     "ms": null,
+     "url": null,
+     "detail": "not run: an earlier step failed",
+     "console_errors": 0,
+     "skipped": true
+    },
+    {
+     "n": 4,
+     "name": "Verify its signed data on /verify",
+     "ok": false,
+     "ms": null,
+     "url": null,
+     "detail": "not run: an earlier step failed",
+     "console_errors": 0,
+     "skipped": true
+    },
+    {
+     "n": 5,
+     "name": "Status page",
+     "ok": false,
+     "ms": null,
+     "url": null,
+     "detail": "not run: an earlier step failed",
+     "console_errors": 0,
+     "skipped": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-06T07:21:00.477Z",
+   "ok": true,
+   "total_ms": 4767,
+   "browser": "Chrome (GitHub Actions runner, Linux)",
+   "steps": [
+    {
+     "n": 1,
+     "name": "Home page",
+     "ok": true,
+     "ms": 1011,
+     "url": "/",
+     "detail": "Never buy property abroad alone again.",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 2,
+     "name": "Search the database",
+     "ok": true,
+     "ms": 687,
+     "url": "/cases/?q=Bali",
+     "detail": "24 project links for \"Bali\"",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 3,
+     "name": "Open a project",
+     "ok": true,
+     "ms": 1385,
+     "url": "/p/?id=BALI-018",
+     "detail": "BALI-018: Under construction project in Canggu coast, Bali",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 4,
+     "name": "Verify its signed data on /verify",
+     "ok": true,
+     "ms": 1325,
+     "url": "/verify/#sig",
+     "detail": "Ed25519 signature valid for /api/open/projects/BALI-018",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 5,
+     "name": "Status page",
+     "ok": true,
+     "ms": 359,
+     "url": "/status/",
+     "detail": "8 components listed, none down",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-06T00:32:17.018Z",
+   "ok": true,
+   "total_ms": 8644,
+   "browser": "Chrome (GitHub Actions runner, Linux)",
+   "steps": [
+    {
+     "n": 1,
+     "name": "Home page",
+     "ok": true,
+     "ms": 2585,
+     "url": "/",
+     "detail": "Never buy property abroad alone again.",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 2,
+     "name": "Search the database",
+     "ok": true,
+     "ms": 1843,
+     "url": "/cases/?q=Bali",
+     "detail": "24 project links for \"Bali\"",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 3,
+     "name": "Open a project",
+     "ok": true,
+     "ms": 2019,
+     "url": "/p/?id=BALI-018",
+     "detail": "BALI-018: Under construction project in Canggu coast, Bali",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 4,
+     "name": "Verify its signed data on /verify",
+     "ok": true,
+     "ms": 1697,
+     "url": "/verify/#sig",
+     "detail": "Ed25519 signature valid for /api/open/projects/BALI-018",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 5,
+     "name": "Status page",
+     "ok": true,
+     "ms": 500,
+     "url": "/status/",
+     "detail": "3 components listed, none down",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-05T18:56:54.919Z",
+   "ok": true,
+   "total_ms": 8562,
+   "browser": "Chrome (GitHub Actions runner, Linux)",
+   "steps": [
+    {
+     "n": 1,
+     "name": "Home page",
+     "ok": true,
+     "ms": 3235,
+     "url": "/",
+     "detail": "Never buy property abroad alone again.",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 2,
+     "name": "Search the database",
+     "ok": true,
+     "ms": 1827,
+     "url": "/cases/?q=Bali",
+     "detail": "24 project links for \"Bali\"",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 3,
+     "name": "Open a project",
+     "ok": true,
+     "ms": 1244,
+     "url": "/p/?id=BALI-018",
+     "detail": "BALI-018: Under construction project in Canggu coast, Bali",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 4,
+     "name": "Verify its signed data on /verify",
+     "ok": true,
+     "ms": 1675,
+     "url": "/verify/#sig",
+     "detail": "Ed25519 signature valid for /api/open/projects/BALI-018",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 5,
+     "name": "Status page",
+     "ok": true,
+     "ms": 581,
+     "url": "/status/",
+     "detail": "4 components listed, none down",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-05T11:28:11.795Z",
+   "ok": true,
+   "total_ms": 5054,
+   "browser": "Chrome (GitHub Actions runner, Linux)",
+   "steps": [
+    {
+     "n": 1,
+     "name": "Home page",
+     "ok": true,
+     "ms": 1201,
+     "url": "/",
+     "detail": "Never buy property abroad alone again.",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 2,
+     "name": "Search the database",
+     "ok": true,
+     "ms": 801,
+     "url": "/cases/?q=Bali",
+     "detail": "24 project links for \"Bali\"",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 3,
+     "name": "Open a project",
+     "ok": true,
+     "ms": 951,
+     "url": "/p/?id=BALI-018",
+     "detail": "BALI-018: Under construction project in Canggu coast, Bali",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 4,
+     "name": "Verify its signed data on /verify",
+     "ok": true,
+     "ms": 1428,
+     "url": "/verify/#sig",
+     "detail": "Ed25519 signature valid for /api/open/projects/BALI-018",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 5,
+     "name": "Status page",
+     "ok": true,
+     "ms": 673,
+     "url": "/status/",
+     "detail": "9 components listed, none down",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-05T02:44:40.632Z",
+   "ok": true,
+   "total_ms": 5287,
+   "browser": "Chrome (GitHub Actions runner, Linux)",
+   "steps": [
+    {
+     "n": 1,
+     "name": "Home page",
+     "ok": true,
+     "ms": 1648,
+     "url": "/",
+     "detail": "Never buy property abroad alone again.",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 2,
+     "name": "Search the database",
+     "ok": true,
+     "ms": 653,
+     "url": "/cases/?q=Bali",
+     "detail": "24 project links for \"Bali\"",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 3,
+     "name": "Open a project",
+     "ok": true,
+     "ms": 1128,
+     "url": "/p/?id=BALI-032",
+     "detail": "BALI-032: Off-plan project in Bali",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 4,
+     "name": "Verify its signed data on /verify",
+     "ok": true,
+     "ms": 1436,
+     "url": "/verify/#sig",
+     "detail": "Ed25519 signature valid for /api/open/projects/BALI-032",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 5,
+     "name": "Status page",
+     "ok": true,
+     "ms": 422,
+     "url": "/status/",
+     "detail": "3 components listed, none down",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-04T16:33:11.061Z",
+   "ok": true,
+   "total_ms": 9598,
+   "browser": "Chrome (GitHub Actions runner, Linux)",
+   "steps": [
+    {
+     "n": 1,
+     "name": "Home page",
+     "ok": true,
+     "ms": 2069,
+     "url": "/",
+     "detail": "Never buy property abroad alone again.",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 2,
+     "name": "Search the database",
+     "ok": true,
+     "ms": 2148,
+     "url": "/cases/?q=Bali",
+     "detail": "24 project links for \"Bali\"",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 3,
+     "name": "Open a project",
+     "ok": true,
+     "ms": 1534,
+     "url": "/p/?id=BALI-018",
+     "detail": "BALI-018: Under construction project in Canggu coast, Bali",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 4,
+     "name": "Verify its signed data on /verify",
+     "ok": true,
+     "ms": 2339,
+     "url": "/verify/#sig",
+     "detail": "Ed25519 signature valid for /api/open/projects/BALI-018",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 5,
+     "name": "Status page",
+     "ok": true,
+     "ms": 1508,
+     "url": "/status/",
+     "detail": "9 components listed, none down",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-04T07:58:41.842Z",
+   "ok": true,
+   "total_ms": 5184,
+   "browser": "Chrome (GitHub Actions runner, Linux)",
+   "steps": [
+    {
+     "n": 1,
+     "name": "Home page",
+     "ok": true,
+     "ms": 1498,
+     "url": "/",
+     "detail": "Never buy property abroad alone again.",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 2,
+     "name": "Search the database",
+     "ok": true,
+     "ms": 850,
+     "url": "/cases/",
+     "detail": "24 project links for \"Bali\"",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 3,
+     "name": "Open a project",
+     "ok": true,
+     "ms": 1944,
+     "url": "/p/?id=BALI-018",
+     "detail": "BALI-018: Under construction project in Canggu coast, Bali",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 4,
+     "name": "Verify its signed data on /verify",
+     "ok": true,
+     "ms": 534,
+     "url": "/verify/#sig",
+     "detail": "Ed25519 signature valid for /api/open/projects/BALI-018",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 5,
+     "name": "Status page",
+     "ok": true,
+     "ms": 358,
+     "url": "/status/",
+     "detail": "3 components listed, none down",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-04T00:52:40.965Z",
+   "ok": true,
+   "total_ms": 10157,
+   "browser": "Chrome (GitHub Actions runner, Linux)",
+   "steps": [
+    {
+     "n": 1,
+     "name": "Home page",
+     "ok": true,
+     "ms": 2436,
+     "url": "/",
+     "detail": "Never buy property abroad alone again.",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 2,
+     "name": "Search the database",
+     "ok": true,
+     "ms": 1256,
+     "url": "/cases/",
+     "detail": "24 project links for \"Bali\"",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 3,
+     "name": "Open a project",
+     "ok": true,
+     "ms": 3228,
+     "url": "/p/?id=BALI-018",
+     "detail": "BALI-018: Under construction project in Canggu coast, Bali",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 4,
+     "name": "Verify its signed data on /verify",
+     "ok": true,
+     "ms": 2246,
+     "url": "/verify/#sig",
+     "detail": "Ed25519 signature valid for /api/open/projects/BALI-018",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 5,
+     "name": "Status page",
+     "ok": true,
+     "ms": 991,
+     "url": "/status/",
+     "detail": "9 components listed, none down",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-03T20:47:16.090Z",
+   "ok": true,
+   "total_ms": 8079,
+   "browser": "Chrome (GitHub Actions runner, Linux)",
+   "steps": [
+    {
+     "n": 1,
+     "name": "Home page",
+     "ok": true,
+     "ms": 1941,
+     "url": "/",
+     "detail": "Never buy property abroad alone again.",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 2,
+     "name": "Search the database",
+     "ok": true,
+     "ms": 1604,
+     "url": "/cases/",
+     "detail": "24 project links for \"Bali\"",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 3,
+     "name": "Open a project",
+     "ok": true,
+     "ms": 2067,
+     "url": "/p/?id=BALI-018",
+     "detail": "BALI-018: Under construction project in Canggu coast, Bali",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 4,
+     "name": "Verify its signed data on /verify",
+     "ok": true,
+     "ms": 1632,
+     "url": "/verify/#sig",
+     "detail": "Ed25519 signature valid for /api/open/projects/BALI-018",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 5,
+     "name": "Status page",
+     "ok": true,
+     "ms": 835,
+     "url": "/status/",
+     "detail": "3 components listed, none down",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-03T20:17:18.628Z",
+   "ok": true,
+   "total_ms": 3896,
+   "browser": "Chrome (GitHub Actions runner, Linux)",
+   "steps": [
+    {
+     "n": 1,
+     "name": "Home page",
+     "ok": true,
+     "ms": 1356,
+     "url": "/",
+     "detail": "Never buy property abroad alone again.",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 2,
+     "name": "Search the database",
+     "ok": true,
+     "ms": 619,
+     "url": "/cases/",
+     "detail": "24 project links for \"Bali\"",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 3,
+     "name": "Open a project",
+     "ok": true,
+     "ms": 964,
+     "url": "/p/?id=BALI-018",
+     "detail": "BALI-018: Under construction project in Canggu coast, Bali",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 4,
+     "name": "Verify its signed data on /verify",
+     "ok": true,
+     "ms": 549,
+     "url": "/verify/#sig",
+     "detail": "Ed25519 signature valid for /api/open/projects/BALI-018",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 5,
+     "name": "Status page",
+     "ok": true,
+     "ms": 408,
+     "url": "/status/",
+     "detail": "7 components listed, none down",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-03T13:09:24.049Z",
+   "ok": true,
+   "total_ms": 4637,
+   "browser": "Chrome (GitHub Actions runner, Linux)",
+   "steps": [
+    {
+     "n": 1,
+     "name": "Home page",
+     "ok": true,
+     "ms": 1200,
+     "url": "/",
+     "detail": "Never buy property abroad alone again.",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 2,
+     "name": "Search the database",
+     "ok": true,
+     "ms": 654,
+     "url": "/cases/",
+     "detail": "24 project links for \"Bali\"",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 3,
+     "name": "Open a project",
+     "ok": true,
+     "ms": 912,
+     "url": "/p/?id=BALI-018",
+     "detail": "BALI-018: Under construction project in Canggu coast, Bali",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 4,
+     "name": "Verify its signed data on /verify",
+     "ok": true,
+     "ms": 1541,
+     "url": "/verify/#sig",
+     "detail": "Ed25519 signature valid for /api/open/projects/BALI-018",
+     "console_errors": 1,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
+     ],
+     "shot": true
+    },
+    {
+     "n": 5,
+     "name": "Status page",
+     "ok": true,
+     "ms": 330,
+     "url": "/status/",
+     "detail": "3 components listed, none down",
+     "console_errors": 4,
+     "errors": [
+      "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ",
+      "Failed to load resource: the server responded with a status of 404 ()",
+      "Failed to load resource: the server responded with a status of 404 ()"
+     ],
+     "shot": true
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,112 @@
+{
+ "id": "13425-8",
+ "nama": "M SINAR",
+ "pemaju": {
+  "kod_pemaju": "13425",
+  "nama": "SOUTHVILLE CITY SDN. BHD.",
+  "telefon": "[removed: personal contact]",
+  "telefon2": null,
+  "emel": "[removed: personal contact]",
+  "alamat_web": null,
+  "alamat_daftar": "Penthouse Suite 1, Wisma Mah Sing, No 163, Jalan Sungai Besi, 57100, Kuala Lumpur, Wp Kuala Lumpur",
+  "alamat_perniagaan": "Penthouse Suite 2, Wisma Mah Sing, No 163, Jalan Sungai Besi, 57100, Kuala Lumpur, Wp Kuala Lumpur",
+  "statusPemaju": "Aktif",
+  "mempunyaiKesalahan": null,
+  "bilanganProjek": 9,
+  "latest_lesen": {
+   "no_lesenpermit": "13425/03-2028/0360(A)",
+   "tarikh_mula": "2023-03-02",
+   "tarikh_luput": "2028-03-01"
+  }
+ },
+ "projek": {
+  "permitNo": "13425-8/05-2027/0477(A)-(S)",
+  "nama": "M Sinar",
+  "kod_projek": "13425-8",
+  "daerah": "Sepang",
+  "negeri": "Selangor",
+  "permitMula": "2024-05-31",
+  "permitTamat": "2027-05-30"
+ },
+ "unitSummary": {
+  "unit": 500,
+  "keluasan": "0 mps",
+  "bilik": "2, 3",
+  "bilikAir": "1, 2"
+ },
+ "pjb": {
+  "jenis": "Jadual H",
+  "tempohAsal": "36 Bulan",
+  "tarikhPjbPertama": "04 Jun 2024",
+  "serahKosongIkutPjb": "04 Jun 2027",
+  "pindaanTempohSerahKosong": "Ya",
+  "tempohTambahanDiluluskan": "12 Bulan",
+  "tempohPembinaanBaharu": "48 Bulan",
+  "serahKosongBaharuIkutPjbPertama": "04 Jun 2028"
+ },
+ "status": {
+  "maklumatPembangunan": "Berfasa",
+  "keseluruhan": "Lancar",
+  "nota": "Status komponen adalah berdasarkan laporan 7(f) terkini di HIMS.",
+  "rows": [
+   {
+    "jenis": "Pangsapuri Servis",
+    "tingkat": "33",
+    "bilik": "1, 3",
+    "tandas": "1, 2",
+    "keluasan": "0",
+    "unit": 422,
+    "hargaMin": "618,000.00",
+    "hargaMax": "643,000.00",
+    "peratus": "64.10",
+    "komponen": "Lancar",
+    "ccc": "-",
+    "vp": "-"
+   },
+   {
+    "jenis": "Pangsapuri Servis",
+    "tingkat": "33",
+    "bilik": "2, 3",
+    "tandas": "1, 2",
+    "keluasan": "0",
+    "unit": 78,
+    "hargaMin": "270,000.00",
+    "hargaMax": "270,000.00",
+    "peratus": "70.00",
+    "komponen": "Lancar",
+    "ccc": "-",
+    "vp": "-"
+   }
+  ]
+ },
+ "lesen_records": [
+  {
+   "no": "13425-8/05-2027/0477(A)-(S)",
+   "mula": "31 May 2024",
+   "tamat": "30 May 2027",
+   "tempoh": "36 bulan",
+   "is_latest": false,
+   "status": "Aktif"
+  },
+  {
+   "no": "13425-8/05-2027/0477(N)-(S)",
+   "mula": "31 May 2024",
+   "tamat": "30 May 2027",
+   "tempoh": "36 bulan",
+   "is_latest": false,
+   "status": "Tidak Aktif"
+  }
+ ],
+ "brochure": {
+  "dokumen_url": "https://hims.kpkt.gov.my/files/13425/P45/P45-20240626-00012323/IKLAN_BROSUR_01.pdf"
+ },
+ "iklan": [
+  {
+   "src": "https://hims.kpkt.gov.my/files/13425/P45/P45-20240626-00012323/IKLAN_BROSUR_01.pdf",
+   "caption": "Iklan Projek"
+  }
+ ],
+ "lokasi": "Sepang, Selangor",
+ "lat": "2.908712",
+ "lng": "101.762352"
+}

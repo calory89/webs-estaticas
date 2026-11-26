@@ -1,0 +1,812 @@
+{
+ "type": "kolaboro-search-quality-v1",
+ "tests": "/open/search-tests.json",
+ "runner": "/open/search-quality.mjs",
+ "about": "A fixed set: written once from the data of 21 Nov 2026 and never regenerated, so scores stay comparable over time. Kinds: name (the project name, with the word for project in the language: pass if it is first), name_place (name plus the place name in the language: pass if first), developer_place (developer plus place in the language: pass if the first result is by that developer in that place). Scores: pass rate and mean reciprocal rank (MRR, first 10 results).",
+ "runs": [
+  {
+   "at": "2026-11-21T08:15:42Z",
+   "label": "before multilingual search (code of 21 Nov 2026 09:00)",
+   "languages": {
+    "en": {
+     "n": 50,
+     "pass": 26,
+     "pass_pct": 52,
+     "mrr": 0.52,
+     "kinds": {
+      "name": {
+       "n": 17,
+       "pass": 17
+      },
+      "name_place": {
+       "n": 17,
+       "pass": 9
+      },
+      "developer_place": {
+       "n": 16,
+       "pass": 0
+      }
+     },
+     "fails": [
+      {
+       "q": "Bayn - Views 3 in Abu Dhabi",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "RAK Properties projects in Ras Al Khaimah",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "Banyan Group Residences projects in Phuket",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "Life Udomsuk Station in Bangkok",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "Gefen Global projects in Koh Samui",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "AEDAS Homes projects in Spain",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "Aspira Hills (Phases 3B and 4) in Malaysia",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "Melati Ehsan Group projects in Kuala Lumpur",
+       "first": null,
+       "expected_rank": null
+      }
+     ]
+    },
+    "es": {
+     "n": 50,
+     "pass": 3,
+     "pass_pct": 6,
+     "mrr": 0.06,
+     "kinds": {
+      "name": {
+       "n": 17,
+       "pass": 0
+      },
+      "name_place": {
+       "n": 17,
+       "pass": 3
+      },
+      "developer_place": {
+       "n": 16,
+       "pass": 0
+      }
+     },
+     "fails": [
+      {
+       "q": "proyecto Address the Bay",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "Bayn - Views 3 en Abu Dabi",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "proyectos de RAK Properties en Ras al Jaima",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "proyecto Laguna - Complex 7",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "proyectos de Banyan Group Residences en Phuket",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "proyecto Grand Solaire Pattaya",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "Life Udomsuk Station en Bangkok",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "proyectos de Gefen Global en Koh Samui",
+       "first": null,
+       "expected_rank": null
+      }
+     ]
+    },
+    "fr": {
+     "n": 50,
+     "pass": 8,
+     "pass_pct": 16,
+     "mrr": 0.16,
+     "kinds": {
+      "name": {
+       "n": 17,
+       "pass": 0
+      },
+      "name_place": {
+       "n": 17,
+       "pass": 8
+      },
+      "developer_place": {
+       "n": 16,
+       "pass": 0
+      }
+     },
+     "fails": [
+      {
+       "q": "projet Address the Bay",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "Bayn - Views 3 à Abou Dabi",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "projets de RAK Properties à Ras el Khaïmah",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "projet Laguna - Complex 7",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "projets de Banyan Group Residences à Phuket",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "projet Grand Solaire Pattaya",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "projets de Gefen Global à Koh Samui",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "projet Almazara Views 3",
+       "first": null,
+       "expected_rank": null
+      }
+     ]
+    },
+    "de": {
+     "n": 50,
+     "pass": 6,
+     "pass_pct": 12,
+     "mrr": 0.12,
+     "kinds": {
+      "name": {
+       "n": 17,
+       "pass": 0
+      },
+      "name_place": {
+       "n": 17,
+       "pass": 6
+      },
+      "developer_place": {
+       "n": 16,
+       "pass": 0
+      }
+     },
+     "fails": [
+      {
+       "q": "Projekt Address the Bay",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "Bayn - Views 3 in Abu Dhabi",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "RAK Properties Projekte in Ras al-Chaima",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "Projekt Laguna - Complex 7",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "Banyan Group Residences Projekte in Phuket",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "Projekt Grand Solaire Pattaya",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "Life Udomsuk Station in Bangkok",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "Gefen Global Projekte in Koh Samui",
+       "first": null,
+       "expected_rank": null
+      }
+     ]
+    },
+    "nl": {
+     "n": 50,
+     "pass": 7,
+     "pass_pct": 14,
+     "mrr": 0.14,
+     "kinds": {
+      "name": {
+       "n": 17,
+       "pass": 0
+      },
+      "name_place": {
+       "n": 17,
+       "pass": 7
+      },
+      "developer_place": {
+       "n": 16,
+       "pass": 0
+      }
+     },
+     "fails": [
+      {
+       "q": "project Address the Bay",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "Bayn - Views 3 in Abu Dhabi",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "projecten van RAK Properties in Ras al Khaimah",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "project Laguna - Complex 7",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "projecten van Banyan Group Residences in Phuket",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "project Grand Solaire Pattaya",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "Life Udomsuk Station in Bangkok",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "projecten van Gefen Global in Koh Samui",
+       "first": null,
+       "expected_rank": null
+      }
+     ]
+    },
+    "ru": {
+     "n": 50,
+     "pass": 0,
+     "pass_pct": 0,
+     "mrr": 0,
+     "kinds": {
+      "name": {
+       "n": 17,
+       "pass": 0
+      },
+      "name_place": {
+       "n": 17,
+       "pass": 0
+      },
+      "developer_place": {
+       "n": 16,
+       "pass": 0
+      }
+     },
+     "fails": [
+      {
+       "q": "проект Address the Bay",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "Bayn - Views 3 в Абу-Даби",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "проекты RAK Properties в Рас-эль-Хайма",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "проект Laguna - Complex 7",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "ENADIA Villas SeaView Collection в Ломбок",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "проекты Banyan Group Residences в Пхукет",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "проект Grand Solaire Pattaya",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "Life Udomsuk Station в Бангкок",
+       "first": null,
+       "expected_rank": null
+      }
+     ]
+    },
+    "zh": {
+     "n": 50,
+     "pass": 0,
+     "pass_pct": 0,
+     "mrr": 0,
+     "kinds": {
+      "name": {
+       "n": 17,
+       "pass": 0
+      },
+      "name_place": {
+       "n": 17,
+       "pass": 0
+      },
+      "developer_place": {
+       "n": 16,
+       "pass": 0
+      }
+     },
+     "fails": [
+      {
+       "q": "Address the Bay 项目",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "阿布扎比 的 Bayn - Views 3",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "哈伊马角 RAK Properties 项目",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "Laguna - Complex 7 项目",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "龙目岛 的 ENADIA Villas SeaView Collection",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "普吉岛 Banyan Group Residences 项目",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "Grand Solaire Pattaya 项目",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "曼谷 的 Life Udomsuk Station",
+       "first": null,
+       "expected_rank": null
+      }
+     ]
+    },
+    "ar": {
+     "n": 50,
+     "pass": 0,
+     "pass_pct": 0,
+     "mrr": 0,
+     "kinds": {
+      "name": {
+       "n": 17,
+       "pass": 0
+      },
+      "name_place": {
+       "n": 17,
+       "pass": 0
+      },
+      "developer_place": {
+       "n": 16,
+       "pass": 0
+      }
+     },
+     "fails": [
+      {
+       "q": "مشروع Address the Bay",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "Bayn - Views 3 في أبوظبي",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "مشاريع RAK Properties في رأس الخيمة",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "مشروع Laguna - Complex 7",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "ENADIA Villas SeaView Collection في لومبوك",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "مشاريع Banyan Group Residences في بوكيت",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "مشروع Grand Solaire Pattaya",
+       "first": null,
+       "expected_rank": null
+      },
+      {
+       "q": "Life Udomsuk Station في بانكوك",
+       "first": null,
+       "expected_rank": null
+      }
+     ]
+    }
+   }
+  },
+  {
+   "at": "2026-11-21T08:41:40Z",
+   "label": "multilingual place names and stop words (n34c)",
+   "languages": {
+    "en": {
+     "n": 50,
+     "pass": 47,
+     "pass_pct": 94,
+     "mrr": 0.963,
+     "kinds": {
+      "name": {
+       "n": 17,
+       "pass": 17
+      },
+      "name_place": {
+       "n": 17,
+       "pass": 17
+      },
+      "developer_place": {
+       "n": 16,
+       "pass": 13
+      }
+     },
+     "fails": [
+      {
+       "q": "AEDAS Homes projects in Spain",
+       "first": "australy-aures",
+       "expected_rank": 3
+      },
+      {
+       "q": "Home Tulum projects in Riviera Maya",
+       "first": "aldea-tulum-plus",
+       "expected_rank": 2
+      },
+      {
+       "q": "Masterise Homes projects in Vietnam",
+       "first": "lumiere-midtown",
+       "expected_rank": 3
+      }
+     ]
+    },
+    "es": {
+     "n": 50,
+     "pass": 47,
+     "pass_pct": 94,
+     "mrr": 0.963,
+     "kinds": {
+      "name": {
+       "n": 17,
+       "pass": 17
+      },
+      "name_place": {
+       "n": 17,
+       "pass": 17
+      },
+      "developer_place": {
+       "n": 16,
+       "pass": 13
+      }
+     },
+     "fails": [
+      {
+       "q": "proyectos de AEDAS Homes en España",
+       "first": "australy-aures",
+       "expected_rank": 3
+      },
+      {
+       "q": "proyectos de Home Tulum en Riviera Maya",
+       "first": "aldea-tulum-plus",
+       "expected_rank": 2
+      },
+      {
+       "q": "proyectos de Masterise Homes en Vietnam",
+       "first": "lumiere-midtown",
+       "expected_rank": 3
+      }
+     ]
+    },
+    "fr": {
+     "n": 50,
+     "pass": 47,
+     "pass_pct": 94,
+     "mrr": 0.963,
+     "kinds": {
+      "name": {
+       "n": 17,
+       "pass": 17
+      },
+      "name_place": {
+       "n": 17,
+       "pass": 17
+      },
+      "developer_place": {
+       "n": 16,
+       "pass": 13
+      }
+     },
+     "fails": [
+      {
+       "q": "projets de AEDAS Homes à Espagne",
+       "first": "australy-aures",
+       "expected_rank": 3
+      },
+      {
+       "q": "projets de Home Tulum à Riviera Maya",
+       "first": "aldea-tulum-plus",
+       "expected_rank": 2
+      },
+      {
+       "q": "projets de Masterise Homes à Viêt Nam",
+       "first": "lumiere-midtown",
+       "expected_rank": 3
+      }
+     ]
+    },
+    "de": {
+     "n": 50,
+     "pass": 47,
+     "pass_pct": 94,
+     "mrr": 0.963,
+     "kinds": {
+      "name": {
+       "n": 17,
+       "pass": 17
+      },
+      "name_place": {
+       "n": 17,
+       "pass": 17
+      },
+      "developer_place": {
+       "n": 16,
+       "pass": 13
+      }
+     },
+     "fails": [
+      {
+       "q": "AEDAS Homes Projekte in Spanien",
+       "first": "australy-aures",
+       "expected_rank": 3
+      },
+      {
+       "q": "Home Tulum Projekte in Riviera Maya",
+       "first": "aldea-tulum-plus",
+       "expected_rank": 2
+      },
+      {
+       "q": "Masterise Homes Projekte in Vietnam",
+       "first": "lumiere-midtown",
+       "expected_rank": 3
+      }
+     ]
+    },
+    "nl": {
+     "n": 50,
+     "pass": 47,
+     "pass_pct": 94,
+     "mrr": 0.963,
+     "kinds": {
+      "name": {
+       "n": 17,
+       "pass": 17
+      },
+      "name_place": {
+       "n": 17,
+       "pass": 17
+      },
+      "developer_place": {
+       "n": 16,
+       "pass": 13
+      }
+     },
+     "fails": [
+      {
+       "q": "projecten van AEDAS Homes in Spanje",
+       "first": "australy-aures",
+       "expected_rank": 3
+      },
+      {
+       "q": "projecten van Home Tulum in Riviera Maya",
+       "first": "aldea-tulum-plus",
+       "expected_rank": 2
+      },
+      {
+       "q": "projecten van Masterise Homes in Vietnam",
+       "first": "lumiere-midtown",
+       "expected_rank": 3
+      }
+     ]
+    },
+    "ru": {
+     "n": 50,
+     "pass": 47,
+     "pass_pct": 94,
+     "mrr": 0.963,
+     "kinds": {
+      "name": {
+       "n": 17,
+       "pass": 17
+      },
+      "name_place": {
+       "n": 17,
+       "pass": 17
+      },
+      "developer_place": {
+       "n": 16,
+       "pass": 13
+      }
+     },
+     "fails": [
+      {
+       "q": "проекты AEDAS Homes в Испания",
+       "first": "australy-aures",
+       "expected_rank": 3
+      },
+      {
+       "q": "проекты Home Tulum в Ривьера-Майя",
+       "first": "aldea-tulum-plus",
+       "expected_rank": 2
+      },
+      {
+       "q": "проекты Masterise Homes в Вьетнам",
+       "first": "lumiere-midtown",
+       "expected_rank": 3
+      }
+     ]
+    },
+    "zh": {
+     "n": 50,
+     "pass": 47,
+     "pass_pct": 94,
+     "mrr": 0.963,
+     "kinds": {
+      "name": {
+       "n": 17,
+       "pass": 17
+      },
+      "name_place": {
+       "n": 17,
+       "pass": 17
+      },
+      "developer_place": {
+       "n": 16,
+       "pass": 13
+      }
+     },
+     "fails": [
+      {
+       "q": "西班牙 AEDAS Homes 项目",
+       "first": "australy-aures",
+       "expected_rank": 3
+      },
+      {
+       "q": "玛雅海岸 Home Tulum 项目",
+       "first": "aldea-tulum-plus",
+       "expected_rank": 2
+      },
+      {
+       "q": "越南 Masterise Homes 项目",
+       "first": "lumiere-midtown",
+       "expected_rank": 3
+      }
+     ]
+    },
+    "ar": {
+     "n": 50,
+     "pass": 47,
+     "pass_pct": 94,
+     "mrr": 0.963,
+     "kinds": {
+      "name": {
+       "n": 17,
+       "pass": 17
+      },
+      "name_place": {
+       "n": 17,
+       "pass": 17
+      },
+      "developer_place": {
+       "n": 16,
+       "pass": 13
+      }
+     },
+     "fails": [
+      {
+       "q": "مشاريع AEDAS Homes في إسبانيا",
+       "first": "australy-aures",
+       "expected_rank": 3
+      },
+      {
+       "q": "مشاريع Home Tulum في ريفييرا مايا",
+       "first": "aldea-tulum-plus",
+       "expected_rank": 2
+      },
+      {
+       "q": "مشاريع Masterise Homes في فيتنام",
+       "first": "lumiere-midtown",
+       "expected_rank": 3
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,415 @@
+{
+ "updated": "2026-11-18T13:53:01Z",
+ "target": "https://kolaboro.com",
+ "schedule": "weekly, Wednesday 05:11 UTC",
+ "not_covered": [
+  "database (Supabase) down or slow: needs a fault switch inside rpc() in kolaboro.js",
+  "AI daily budget breaker tripping: needs a test switch in aiAllowed()",
+  "source page that trickles its body for minutes: fetchPage() now has a 15 s deadline covering the body, but no public test server that trickles to Cloudflare was found to drill it",
+  "Cloudflare edge or static assets failing: outside our control, covered by the outside uptime probe",
+  "OpenTimestamps calendars down during evidence stamping"
+ ],
+ "runs": [
+  {
+   "at": "2026-11-18T13:53:01Z",
+   "seconds": 94,
+   "ran": 9,
+   "passed": 4,
+   "scenarios": [
+    {
+     "id": "primary_model_down",
+     "title": "Primary AI reader down",
+     "kind": "ai",
+     "forced": "claude-haiku answers HTTP 529 (overloaded)",
+     "expected": "The second AI reader answers alone: a report comes back, marked single reader (no consensus block), title type still read as leasehold.",
+     "observed_text": "no report; error raised: model 529 {\"type\":\"error\",\"error\":{\"type\":\"overloaded_error\",\"message\":\"chaos drill: forced failure\"}} (2 forced failure(s) served)",
+     "ms": 119,
+     "wall_ms": 461,
+     "pass": false
+    },
+    {
+     "id": "primary_model_down_injection",
+     "title": "Primary AI reader down, page with hidden AI instructions",
+     "kind": "ai",
+     "forced": "claude-haiku answers HTTP 529",
+     "expected": "With only the second reader, hidden instructions aimed at AI reviewers are still caught: ai_manipulation detected, attention high.",
+     "observed_text": "no report; error raised: model 529 {\"type\":\"error\",\"error\":{\"type\":\"overloaded_error\",\"message\":\"chaos drill: forced failure\"}} (2 forced failure(s) served)",
+     "ms": 320,
+     "wall_ms": 581,
+     "pass": false
+    },
+    {
+     "id": "second_model_down",
+     "title": "Second AI reader down",
+     "kind": "ai",
+     "forced": "claude-sonnet answers HTTP 529",
+     "expected": "The primary reader answers alone: a report comes back without a consensus block, title type leasehold.",
+     "observed_text": "no report; error raised: claude-sonnet-5-5 json (stop max_tokens, 2000 tokens): Expected ',' or '}' after property value at position 1758 (line 31 column 3) near \"an: 30% deposit, 40% a (0 forced failure(s) served)",
+     "ms": 15432,
+     "wall_ms": 15607,
+     "pass": false
+    },
+    {
+     "id": "primary_model_slow",
+     "title": "Primary AI reader hangs (never answers)",
+     "kind": "ai",
+     "forced": "claude-haiku request never answers; the 60 s deadline in anthropic() must cut it",
+     "expected": "The primary reader never answers: its call is cut at the 60 s deadline and the second reader answers alone, single reader (no consensus block), title type leasehold.",
+     "observed_text": "no report; error raised: model timeout after 60 s (2 forced failure(s) served)",
+     "ms": 60371,
+     "wall_ms": 60556,
+     "pass": false
+    },
+    {
+     "id": "both_models_down",
+     "title": "Both AI readers down",
+     "kind": "ai",
+     "forced": "claude-haiku and claude-sonnet answer HTTP 529",
+     "expected": "No report is invented: the desk review raises a clean error, which the public endpoint turns into HTTP 503 {\"error\":\"model\"}.",
+     "observed_text": "no report; error raised: model 529 {\"type\":\"error\",\"error\":{\"type\":\"overloaded_error\",\"message\":\"chaos drill: forced failure\"}} (2 forced failure(s) served)",
+     "ms": 340,
+     "wall_ms": 528,
+     "pass": true
+    },
+    {
+     "id": "dead_domain",
+     "title": "Source website gone (domain does not resolve)",
+     "kind": "source",
+     "forced": "URL on a .invalid domain",
+     "expected": "Clean error {\"error\":\"fetch\"} with HTTP 422 in under 15 s, no AI call, nothing invented.",
+     "observed_text": "HTTP 422 {\"error\":\"fetch\",\"status\":530}",
+     "ms": 107,
+     "pass": true
+    },
+    {
+     "id": "page_gone",
+     "title": "Source page removed (HTTP 410)",
+     "kind": "source",
+     "forced": "httpbin.org/status/410",
+     "expected": "Clean error {\"error\":\"fetch\",\"status\":410} with HTTP 422 in under 15 s.",
+     "observed_text": "HTTP 422 {\"error\":\"fetch\",\"status\":410}",
+     "ms": 160,
+     "pass": true
+    },
+    {
+     "id": "unreachable_host",
+     "title": "Source server never answers (timeout path)",
+     "kind": "source",
+     "forced": "blackhole.webpagetest.org drops every packet",
+     "expected": "The request gives up and answers a clean error in under 35 s.",
+     "observed_text": "HTTP 422 {\"error\":\"fetch\"}",
+     "ms": 15221,
+     "pass": true
+    },
+    {
+     "id": "slow_page",
+     "title": "Source page answers slowly (10 s before the first byte)",
+     "kind": "source",
+     "forced": "postman-echo.com/delay/10 waits 10 s, then sends a short non-property answer",
+     "expected": "The desk review waits for the page, then gives a clean answer (here \"empty\": not enough text to review) in under 30 s, no 5xx.",
+     "observed_text": "HTTP 429 {\"error\":\"rate\"} after 0.1 s",
+     "ms": 97,
+     "pass": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-04T13:00:06Z",
+   "seconds": 115,
+   "ran": 9,
+   "passed": 9,
+   "scenarios": [
+    {
+     "id": "primary_model_down",
+     "title": "Primary AI reader down",
+     "kind": "ai",
+     "forced": "claude-haiku answers HTTP 529 (overloaded)",
+     "expected": "The second AI reader answers alone: a report comes back, marked single reader (no consensus block), title type still read as leasehold.",
+     "observed_text": "report returned, single reader (no consensus block), title type leasehold, attention high (1 forced failure(s) served)",
+     "ms": 7844,
+     "wall_ms": 8245,
+     "pass": true
+    },
+    {
+     "id": "primary_model_down_injection",
+     "title": "Primary AI reader down, page with hidden AI instructions",
+     "kind": "ai",
+     "forced": "claude-haiku answers HTTP 529",
+     "expected": "With only the second reader, hidden instructions aimed at AI reviewers are still caught: ai_manipulation detected, attention high.",
+     "observed_text": "report returned, single reader (no consensus block), title type leasehold, attention high, AI manipulation detected (1 forced failure(s) served)",
+     "ms": 5688,
+     "wall_ms": 6576,
+     "pass": true
+    },
+    {
+     "id": "second_model_down",
+     "title": "Second AI reader down",
+     "kind": "ai",
+     "forced": "claude-sonnet answers HTTP 529",
+     "expected": "The primary reader answers alone: a report comes back without a consensus block, title type leasehold.",
+     "observed_text": "report returned, single reader (no consensus block), title type leasehold, attention high (1 forced failure(s) served)",
+     "ms": 10378,
+     "wall_ms": 11303,
+     "pass": true
+    },
+    {
+     "id": "primary_model_slow",
+     "title": "Primary AI reader hangs (never answers)",
+     "kind": "ai",
+     "forced": "claude-haiku request never answers; the 60 s deadline in anthropic() must cut it",
+     "expected": "The primary reader never answers: its call is cut at the 60 s deadline and the second reader answers alone, single reader (no consensus block), title type leasehold.",
+     "observed_text": "report returned, single reader (no consensus block), title type leasehold, attention high (1 forced failure(s) served)",
+     "ms": 60000,
+     "wall_ms": 60065,
+     "pass": true
+    },
+    {
+     "id": "both_models_down",
+     "title": "Both AI readers down",
+     "kind": "ai",
+     "forced": "claude-haiku and claude-sonnet answer HTTP 529",
+     "expected": "No report is invented: the desk review raises a clean error, which the public endpoint turns into HTTP 503 {\"error\":\"model\"}.",
+     "observed_text": "no report; error raised: model 529 {\"type\":\"error\",\"error\":{\"type\":\"overloaded_error\",\"message\":\"chaos drill: forced failure\"}} (2 forced failure(s) served)",
+     "ms": 478,
+     "wall_ms": 1418,
+     "pass": true
+    },
+    {
+     "id": "dead_domain",
+     "title": "Source website gone (domain does not resolve)",
+     "kind": "source",
+     "forced": "URL on a .invalid domain",
+     "expected": "Clean error {\"error\":\"fetch\"} with HTTP 422 in under 15 s, no AI call, nothing invented.",
+     "observed_text": "HTTP 422 {\"error\":\"fetch\",\"status\":530}",
+     "ms": 76,
+     "pass": true
+    },
+    {
+     "id": "page_gone",
+     "title": "Source page removed (HTTP 410)",
+     "kind": "source",
+     "forced": "httpbin.org/status/410",
+     "expected": "Clean error {\"error\":\"fetch\",\"status\":410} with HTTP 422 in under 15 s.",
+     "observed_text": "HTTP 422 {\"error\":\"fetch\",\"status\":410}",
+     "ms": 275,
+     "pass": true
+    },
+    {
+     "id": "unreachable_host",
+     "title": "Source server never answers (timeout path)",
+     "kind": "source",
+     "forced": "blackhole.webpagetest.org drops every packet",
+     "expected": "The request gives up and answers a clean error in under 35 s.",
+     "observed_text": "HTTP 422 {\"error\":\"fetch\"}",
+     "ms": 15805,
+     "pass": true
+    },
+    {
+     "id": "slow_page",
+     "title": "Source page answers slowly (10 s before the first byte)",
+     "kind": "source",
+     "forced": "postman-echo.com/delay/10 waits 10 s, then sends a short non-property answer",
+     "expected": "The desk review waits for the page, then gives a clean answer (here \"empty\": not enough text to review) in under 30 s, no 5xx.",
+     "observed_text": "HTTP 422 {\"error\":\"empty\",\"read_chars\":14,\"pages_found\":[]} after 10.3 s",
+     "ms": 10299,
+     "pass": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-03T21:07:19Z",
+   "seconds": 112,
+   "ran": 9,
+   "passed": 9,
+   "scenarios": [
+    {
+     "id": "primary_model_down",
+     "title": "Primary AI reader down",
+     "kind": "ai",
+     "forced": "claude-haiku answers HTTP 529 (overloaded)",
+     "expected": "The second AI reader answers alone: a report comes back, marked single reader (no consensus block), title type still read as leasehold.",
+     "observed_text": "report returned, single reader (no consensus block), title type leasehold, attention high (1 forced failure(s) served)",
+     "ms": 7154,
+     "wall_ms": 7909,
+     "pass": true
+    },
+    {
+     "id": "primary_model_down_injection",
+     "title": "Primary AI reader down, page with hidden AI instructions",
+     "kind": "ai",
+     "forced": "claude-haiku answers HTTP 529",
+     "expected": "With only the second reader, hidden instructions aimed at AI reviewers are still caught: ai_manipulation detected, attention high.",
+     "observed_text": "report returned, single reader (no consensus block), title type leasehold, attention high, AI manipulation detected (1 forced failure(s) served)",
+     "ms": 5999,
+     "wall_ms": 6331,
+     "pass": true
+    },
+    {
+     "id": "second_model_down",
+     "title": "Second AI reader down",
+     "kind": "ai",
+     "forced": "claude-sonnet answers HTTP 529",
+     "expected": "The primary reader answers alone: a report comes back without a consensus block, title type leasehold.",
+     "observed_text": "report returned, single reader (no consensus block), title type leasehold, attention high (1 forced failure(s) served)",
+     "ms": 9969,
+     "wall_ms": 10127,
+     "pass": true
+    },
+    {
+     "id": "primary_model_slow",
+     "title": "Primary AI reader hangs (never answers)",
+     "kind": "ai",
+     "forced": "claude-haiku request never answers; the 60 s deadline in anthropic() must cut it",
+     "expected": "The primary reader never answers: its call is cut at the 60 s deadline and the second reader answers alone, single reader (no consensus block), title type leasehold.",
+     "observed_text": "report returned, single reader (no consensus block), title type leasehold, attention high (1 forced failure(s) served)",
+     "ms": 60000,
+     "wall_ms": 60145,
+     "pass": true
+    },
+    {
+     "id": "both_models_down",
+     "title": "Both AI readers down",
+     "kind": "ai",
+     "forced": "claude-haiku and claude-sonnet answer HTTP 529",
+     "expected": "No report is invented: the desk review raises a clean error, which the public endpoint turns into HTTP 503 {\"error\":\"model\"}.",
+     "observed_text": "no report; error raised: model 529 {\"type\":\"error\",\"error\":{\"type\":\"overloaded_error\",\"message\":\"chaos drill: forced failure\"}} (2 forced failure(s) served)",
+     "ms": 346,
+     "wall_ms": 489,
+     "pass": true
+    },
+    {
+     "id": "dead_domain",
+     "title": "Source website gone (domain does not resolve)",
+     "kind": "source",
+     "forced": "URL on a .invalid domain",
+     "expected": "Clean error {\"error\":\"fetch\"} with HTTP 422 in under 15 s, no AI call, nothing invented.",
+     "observed_text": "HTTP 422 {\"error\":\"fetch\",\"status\":530}",
+     "ms": 148,
+     "pass": true
+    },
+    {
+     "id": "page_gone",
+     "title": "Source page removed (HTTP 410)",
+     "kind": "source",
+     "forced": "httpbin.org/status/410",
+     "expected": "Clean error {\"error\":\"fetch\",\"status\":410} with HTTP 422 in under 15 s.",
+     "observed_text": "HTTP 422 {\"error\":\"fetch\",\"status\":410}",
+     "ms": 230,
+     "pass": true
+    },
+    {
+     "id": "unreachable_host",
+     "title": "Source server never answers (timeout path)",
+     "kind": "source",
+     "forced": "blackhole.webpagetest.org drops every packet",
+     "expected": "The request gives up and answers a clean error in under 35 s.",
+     "observed_text": "HTTP 422 {\"error\":\"fetch\"}",
+     "ms": 15126,
+     "pass": true
+    },
+    {
+     "id": "slow_page",
+     "title": "Source page answers slowly (10 s before the first byte)",
+     "kind": "source",
+     "forced": "postman-echo.com/delay/10 waits 10 s, then sends a short non-property answer",
+     "expected": "The desk review waits for the page, then gives a clean answer (here \"empty\": not enough text to review) in under 30 s, no 5xx.",
+     "observed_text": "HTTP 422 {\"error\":\"empty\"} after 10.2 s",
+     "ms": 10193,
+     "pass": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-03T13:10:39Z",
+   "seconds": 66,
+   "ran": 8,
+   "passed": 8,
+   "scenarios": [
+    {
+     "id": "primary_model_down",
+     "title": "Primary AI reader down",
+     "kind": "ai",
+     "forced": "claude-haiku answers HTTP 529 (overloaded)",
+     "expected": "The second AI reader answers alone: a report comes back, marked single reader (no consensus block), title type still read as leasehold.",
+     "observed_text": "report returned, single reader (no consensus block), title type leasehold, attention high (1 forced failure(s) served)",
+     "ms": 8449,
+     "wall_ms": 10668,
+     "pass": true
+    },
+    {
+     "id": "primary_model_down_injection",
+     "title": "Primary AI reader down, page with hidden AI instructions",
+     "kind": "ai",
+     "forced": "claude-haiku answers HTTP 529",
+     "expected": "With only the second reader, hidden instructions aimed at AI reviewers are still caught: ai_manipulation detected, attention high.",
+     "observed_text": "report returned, single reader (no consensus block), title type leasehold, attention high, AI manipulation detected (1 forced failure(s) served)",
+     "ms": 5825,
+     "wall_ms": 8142,
+     "pass": true
+    },
+    {
+     "id": "second_model_down",
+     "title": "Second AI reader down",
+     "kind": "ai",
+     "forced": "claude-sonnet answers HTTP 529",
+     "expected": "The primary reader answers alone: a report comes back without a consensus block, title type leasehold.",
+     "observed_text": "report returned, single reader (no consensus block), title type leasehold, attention high (1 forced failure(s) served)",
+     "ms": 10251,
+     "wall_ms": 11420,
+     "pass": true
+    },
+    {
+     "id": "both_models_down",
+     "title": "Both AI readers down",
+     "kind": "ai",
+     "forced": "claude-haiku and claude-sonnet answer HTTP 529",
+     "expected": "No report is invented: the desk review raises a clean error, which the public endpoint turns into HTTP 503 {\"error\":\"model\"}.",
+     "observed_text": "no report; error raised: model 529 {\"type\":\"error\",\"error\":{\"type\":\"overloaded_error\",\"message\":\"chaos drill: forced failure\"}} (2 forced failure(s) served)",
+     "ms": 348,
+     "wall_ms": 3848,
+     "pass": true
+    },
+    {
+     "id": "dead_domain",
+     "title": "Source website gone (domain does not resolve)",
+     "kind": "source",
+     "forced": "URL on a .invalid domain",
+     "expected": "Clean error {\"error\":\"fetch\"} with HTTP 422 in under 15 s, no AI call, nothing invented.",
+     "observed_text": "HTTP 422 {\"error\":\"fetch\",\"status\":530}",
+     "ms": 137,
+     "pass": true
+    },
+    {
+     "id": "page_gone",
+     "title": "Source page removed (HTTP 410)",
+     "kind": "source",
+     "forced": "httpbin.org/status/410",
+     "expected": "Clean error {\"error\":\"fetch\",\"status\":410} with HTTP 422 in under 15 s.",
+     "observed_text": "HTTP 422 {\"error\":\"fetch\",\"status\":410}",
+     "ms": 632,
+     "pass": true
+    },
+    {
+     "id": "unreachable_host",
+     "title": "Source server never answers (timeout path)",
+     "kind": "source",
+     "forced": "blackhole.webpagetest.org drops every packet",
+     "expected": "The request gives up and answers a clean error in under 35 s.",
+     "observed_text": "HTTP 422 {\"error\":\"fetch\",\"status\":522}",
+     "ms": 19871,
+     "pass": true
+    },
+    {
+     "id": "slow_page",
+     "title": "Source page answers slowly (10 s before the first byte)",
+     "kind": "source",
+     "forced": "postman-echo.com/delay/10 waits 10 s, then sends a short non-property answer",
+     "expected": "The desk review waits for the page, then gives a clean answer (here \"empty\": not enough text to review) in under 30 s, no 5xx.",
+     "observed_text": "HTTP 422 {\"error\":\"empty\"} after 10.3 s",
+     "ms": 10349,
+     "pass": true
+    }
+   ]
+  }
+ ]
+}

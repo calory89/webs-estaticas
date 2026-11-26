@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><script>(function(){var _c=window.clarity;try{Object.defineProperty(window,'clarity',{configurable:true,get:function(){return _c},set:function(v){if(typeof v==='function'&&!v.q)v.q=[];_c=v;}})}catch(e){}})();</script><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Confirm email | Kolaboro</title><meta name="robots" content="noindex,nofollow"><link rel="icon" href="/k/favicon.svg" type="image/svg+xml"><meta name="theme-color" content="#17212B">
+<link rel="preload" href="/k/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/k/app.css?v=n19f2">
+
+<meta name="referrer" content="no-referrer"><script type="text/plain" data-analytics="off">/* Private page: analytics intentionally not loaded (clarity.ms/tag and G-FJKJE77K4V are skipped here). */</script></head><body><div class="ap-auth"><div class="ap-auth-r" style="flex:1"><div class="ap-auth-box">
+<a class="ap-brand" href="/" style="color:#17212B;margin-bottom:18px;display:inline-flex">kolaboro</a>
+<h2 id="vh">Confirming your email…</h2><p class="ap-muted" id="vp" style="margin:0">One moment.</p>
+<p style="margin-top:20px"><a class="ap-btn" id="vb" href="/portal/" style="display:none;text-decoration:none">Open my portal</a></p></div></div></div>
+<script>
+(function(){
+  var SB='https://oykcsmextclpdnugixqz.supabase.co/rest/v1/rpc/kolaboro_email_verify', K='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw';
+  var h=document.getElementById('vh'), p=document.getElementById('vp'), b=document.getElementById('vb'), m=location.hash.match(/t=([a-f0-9]{20,80})/);
+  addEventListener('hashchange', function(){ if (/t=[a-f0-9]{20,80}/.test(location.hash)) location.reload(); });
+  var tk=null; try{ tk=localStorage.getItem('kb-token'); }catch(x){}
+  if(!tk){ b.textContent='Log in'; b.href='/login/?next=%2Fportal%2F'; }
+  function done(ok, missing){ h.textContent = ok ? 'Email confirmed' : missing ? 'This link is incomplete' : 'This link has expired or was already used'; p.textContent = ok ? 'Thanks. Payments made with this email now attach to your case automatically.' : (missing ? 'Open the link from the email again, or copy the whole link into your browser. ' : '') + 'You can also log in to your portal and press "Send the link again".'; if (ok && tk) b.textContent='Open my case'; b.style.display = 'inline-flex'; history.replaceState(null,'','/confirm-email/'); }
+  if(!m){ done(false, true); return; }
+  fetch(SB,{method:'POST',headers:{apikey:K,Authorization:'Bearer '+K,'Content-Type':'application/json'},body:JSON.stringify({p_token:m[1]})}).then(function(r){return r.json()}).then(function(d){ done(!!(d&&d.ok)); }).catch(function(){ h.textContent='Could not reach the server'; p.textContent='Check your connection and reload this page to try again.'; });
+})();
+</script></body></html>

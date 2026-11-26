@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+<head><script>(function(d){d.setAttribute('data-kdk','');try{var t=localStorage.getItem('kb-theme')}catch(e){}if(t==='dark'||(t!=='light'&&matchMedia('(prefers-color-scheme: dark)').matches))d.setAttribute('data-theme','dark')})(document.documentElement)</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Live findings: what changed on developer pages this hour | Kolaboro</title>
+<meta name="description" content="Every day Kolaboro re-reads developer pages of tracked off-plan projects with a hosted model and publishes only new or changed facts, each backed by a quote checked word for word in code. Anonymous, with the run log and its cost.">
+
+<link rel="canonical" href="https://kolaboro.com/findings/">
+<link rel="icon" href="/k/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#17212B">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kolaboro">
+<meta property="og:title" content="Live findings: what changed on developer pages this hour | Kolaboro">
+<meta property="og:description" content="Every day Kolaboro re-reads developer pages of tracked off-plan projects with a hosted model and publishes only new or changed facts, each backed by a quote checked word for word in code. Anonymous, with the run log and its cost.">
+<meta property="og:url" content="https://kolaboro.com/findings/">
+<meta property="og:image" content="https://kolaboro.com/k/og.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://kolaboro.com/k/og.png">
+<link rel="preload" href="/k/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/k/site.css?v=4d436e54fe">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://kolaboro.com/#org", "name": "Kolaboro", "url": "https://kolaboro.com/", "logo": "https://kolaboro.com/k/favicon.svg", "description": "Independent checks for people buying off-plan property abroad: developer claims against official registers. Site visits by local buyer's agents are on request: we confirm a local agent for your location before you pay."}</script>
+<script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('consent','default',{analytics_storage:'granted',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',region:["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]});try{if(localStorage.getItem('kb-consent')==='yes')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}</script><script>(window.kbLate||function(f){addEventListener("load",function(){setTimeout(f,1500)})})(function(){var s=document.createElement("script");s.async=1;s.src="https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V";document.head.appendChild(s)})</script><script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-FJKJE77K4V');gtag('config','G-H5TGZJ1KNG');</script>
+
+<link rel="alternate" type="application/rss+xml" title="Kolaboro: what we shipped" href="/feed.xml">
+<style>
+/* Live findings page (/findings/): daily developer page check */
+.fd-hero{padding:clamp(32px,5vw,72px) 0 28px}
+.fd-hero h1{font-size:clamp(2.1rem,5.2vw,4.4rem);line-height:.98;letter-spacing:-.03em;max-width:16ch}
+.fd-hero .lead{margin-top:16px;max-width:66ch}
+.fd-sec{padding:clamp(32px,5vw,60px) 0;border-top:1px solid var(--line)}
+.fd-sec h2{font-size:clamp(1.45rem,3vw,2.1rem);max-width:30ch;margin:0}
+.fd-sec .lead{max-width:66ch;margin-top:12px}
+.fd-n{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-top:24px}
+.fd-n div{background:var(--paper);padding:16px 18px;min-width:0}
+.fd-n b{display:block;font-size:clamp(1.35rem,3vw,2rem);letter-spacing:-.02em;line-height:1.05;font-variant-numeric:tabular-nums}
+.fd-n span{display:block;margin-top:6px;color:var(--muted);font-size:.86rem}
+@media(max-width:760px){.fd-n{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.fd-st{margin-top:12px;font-size:.9rem;color:var(--muted)}
+.fd-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.fd-raw{font-size:.88rem;font-weight:700}
+.fd-filters{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;margin-top:18px}
+.fd-filters label{font-size:.85rem;font-weight:700;color:var(--muted)}
+.fd-filters select{min-height:44px;padding:6px 10px;border:1px solid var(--line-2,#C9CCC6);border-radius:12px;font:inherit;font-size:.95rem;background:var(--card,#fff);color:var(--ink);max-width:100%}
+.fd-filters select:focus-visible{outline:3px solid var(--hivis);outline-offset:1px}
+.fd-count{margin-top:12px;font-size:.9rem;color:var(--muted);min-height:1.2em}
+.fd-l{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:8px}
+.fd-l li{min-width:0}
+.fd-l a{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 14px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--k-sunken,#FAFAF8);color:var(--ink);text-decoration:none}
+.fd-l a:hover{border-color:var(--ink)}
+.fd-l a:focus-visible{outline:3px solid var(--hivis);outline-offset:2px}
+.fd-t{grid-row:span 2;font-size:.8rem;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap;min-width:84px}
+.fd-t b{display:block;color:var(--ink);font-size:.9rem}
+.fd-x{margin:0;font-size:.98rem;line-height:1.4;overflow-wrap:anywhere}
+.fd-m{display:flex;flex-wrap:wrap;gap:6px;font-size:.74rem;color:var(--muted)}
+.fd-m em{font-style:normal;font-weight:700;color:var(--muted,#59626B);border:1px solid var(--line);border-radius:5px;padding:0 5px;letter-spacing:.03em;text-transform:uppercase}
+.fd-m em.k-changed{border-color:#FF5B14;color:#B83A05}.fd-m em.k-removed{border-color:#B83A05;color:#B83A05}.fd-m em.k-missing{border-color:#B83A05;color:#B83A05}.fd-m em.k-new{border-color:#0E9F6E;color:#0B6B4B}
+.fd-m code{font-size:.72rem;overflow-wrap:anywhere}
+.fd-sk{height:64px;border-radius:12px;background:var(--k-sunken,#F2F3F1)}
+.fd-none{padding:16px;border:1px dashed var(--line);border-radius:12px;color:var(--muted);font-size:.95rem}
+.fd-more{margin-top:14px;min-height:44px}
+.fd-scroll{overflow-x:auto;margin-top:16px;-webkit-overflow-scrolling:touch}
+.fd-tbl{width:100%;border-collapse:collapse;font-size:.88rem;font-variant-numeric:tabular-nums;min-width:820px}
+.fd-tbl th,.fd-tbl td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}
+.fd-tbl th{font-size:.76rem;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.fd-tbl .n{text-align:right}
+.fd-small{font-size:.86rem;color:var(--muted);margin-top:14px;max-width:80ch}
+.fd-faq{margin:16px 0 0;max-width:76ch}
+.fd-faq dt{font-weight:800;margin-top:18px}
+.fd-faq dd{margin:6px 0 0;line-height:1.55}
+@media(max-width:600px){.fd-l a{grid-template-columns:minmax(0,1fr)}.fd-t{grid-row:auto;display:flex;gap:8px;align-items:baseline}.fd-t b{display:inline}}
+</style>
+<style id="n35-dk">:root[data-theme=dark] .kd-ok,:root[data-theme=dark] .ok{background:#123A2B;color:#5BD6A2}:root[data-theme=dark] .kd-late{background:#4A1C10;color:#FFC9B8}:root[data-theme=dark] .kd-na{background:var(--k-sunken);color:var(--k-muted)}:root[data-theme=dark] .qa-note{background:#3A2F12;border-color:#5A4A20;color:var(--k-ink)}:root[data-theme=dark] .qa-fig img{background:#fff}:root[data-theme=dark] .sh-c{background:var(--k-sunken)}:root[data-theme=dark] input,:root[data-theme=dark] select,:root[data-theme=dark] textarea{background:var(--k-surface);color:var(--k-ink)}:root[data-theme=dark] .mp-map{background:var(--k-sunken)}:root[data-theme=dark] .no{color:#FF9C8A}:root[data-theme=dark] .ok,:root[data-theme=dark] .kd-ok-t{color:#5BD6A2}:root[data-theme=dark] .qa-mid{color:#F2C35B}:root[data-theme=dark] .kd-late-t{color:#FF9C8A}:root[data-theme=dark] td small,:root[data-theme=dark] .fd-m>*{color:var(--k-muted)}:root[data-theme=dark]{--ti-d:#E8ECEC;--ti-v:#5BD6A2;--ti-f:#FF8A5B;--ti-track:#26333E}:root[data-theme=dark] .act{color:#FF9C70}:root[data-theme=dark] .st-shipped .rm-n{color:#0F161C}</style></head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="ship" role="region" aria-label="Shipping daily"><a class="ship-l" href="/changelog/"><i aria-hidden="true"></i><span>Shipping daily</span></a><div class="ship-v"><div class="ship-t" id="shipT"><div class="ship-g"><span class="si"><b>Nov 1</b><em class="k-data">DATA</em>All 646 projects re-verified: 6,419 developer claims tested against registers, courts and press</span><span class="si"><b>Nov 1</b><em class="k-data">DATA</em>Malaysia TEDUH and Philippines DHSUD licence checks: expired licences and approved delays found</span><span class="si"><b>Nov 1</b><em class="k-data">DATA</em>Thailand ONEP register: 2 condos found selling before environmental approval</span><span class="si"><b>Nov 1</b><em class="k-data">DATA</em>Mexico PROFECO contract register checks: one sales registration belonged to a laundry</span><span class="si"><b>Nov 1</b><em class="k-data">DATA</em>Abu Dhabi ADREC inspections and RAK RERA permit list added: % built straight from the regulator</span><span class="si"><b>Nov 1</b><em class="k-feature">SHIPPED</em>New stage filter: completed but still selling</span><span class="si"><b>Nov 1</b><em class="k-feature">SHIPPED</em>Public database page: verification levels, disclosure distribution, every market</span><span class="si"><b>Nov 1</b><em class="k-data">DATA</em>+212 projects in one day, round 3: USA, Caribbean, Gulf, Africa, Japan, Australia</span><span class="si"><b>Nov 1</b><em class="k-feature">SHIPPED</em>Stage on every case: off-plan or under construction</span><span class="si"><b>Oct 31</b><em class="k-feature">SHIPPED</em>Verification level per check on every case card: registry, independent, developer, contradicted</span></div><div class="ship-g" aria-hidden="true"><span class="si"><b>Nov 1</b><em class="k-data">DATA</em>All 646 projects re-verified: 6,419 developer claims tested against registers, courts and press</span><span class="si"><b>Nov 1</b><em class="k-data">DATA</em>Malaysia TEDUH and Philippines DHSUD licence checks: expired licences and approved delays found</span><span class="si"><b>Nov 1</b><em class="k-data">DATA</em>Thailand ONEP register: 2 condos found selling before environmental approval</span><span class="si"><b>Nov 1</b><em class="k-data">DATA</em>Mexico PROFECO contract register checks: one sales registration belonged to a laundry</span><span class="si"><b>Nov 1</b><em class="k-data">DATA</em>Abu Dhabi ADREC inspections and RAK RERA permit list added: % built straight from the regulator</span><span class="si"><b>Nov 1</b><em class="k-feature">SHIPPED</em>New stage filter: completed but still selling</span><span class="si"><b>Nov 1</b><em class="k-feature">SHIPPED</em>Public database page: verification levels, disclosure distribution, every market</span><span class="si"><b>Nov 1</b><em class="k-data">DATA</em>+212 projects in one day, round 3: USA, Caribbean, Gulf, Africa, Japan, Australia</span><span class="si"><b>Nov 1</b><em class="k-feature">SHIPPED</em>Stage on every case: off-plan or under construction</span><span class="si"><b>Oct 31</b><em class="k-feature">SHIPPED</em>Verification level per check on every case card: registry, independent, developer, contradicted</span></div></div></div><a class="ship-r" href="/changelog/">Changelog &rarr;</a></div>
+<header class="nav" id="top">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="Kolaboro home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 4v24M8 16 23 6.5M8 16l15 9.5" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><circle cx="24" cy="6" r="3.4" fill="currentColor"/><circle cx="24" cy="26" r="3.4" fill="currentColor"/><circle cx="8" cy="16" r="4.2" fill="#FF5B14"/></svg>kolaboro</a>
+    <div class="nav-right">
+      <a class="btn btn-hi btn-sm nav-cta-m" href="/check/" data-ev="cta_nav_mobile_check">Check a project</a>
+      <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu"><svg viewBox="0 0 20 20"><path d="M2 5h16M2 10h16M2 15h16" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></button>
+    </div>
+    <nav class="links" id="menu" aria-label="Main">
+      <a href="/#how">How it works</a><a href="/database/">Database</a><a href="/pricing/">Pricing</a><a href="/cases/">Live cases</a><a href="/about/">About</a>
+      <a class="btn btn-hi btn-sm" href="/check/" data-ev="cta_nav_check">Check a project</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="fd-hero"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / <a href="/database/">Database</a> / Live findings</p>
+<p class="eyebrow">Read every day, checked by code</p>
+<h1>What changed on developer pages this hour</h1>
+<p class="lead">Every day a job re-reads the developer pages of the projects we checked longest ago, asks a hosted model for concrete facts (handover date, starting price, payment plan, permit number, deposit protection, construction progress, units left, rental yield, legal structure) and publishes a finding only when a fact is new or changed. Every fact must come with an exact quote that our software finds word for word on the page.</p>
+<div class="fd-n" id="fdn" aria-live="polite"><div><b>…</b><span>Loading the findings</span></div></div>
+<p class="fd-st" id="fdst"></p>
+</div></section>
+
+<section class="fd-sec" aria-labelledby="h-list"><div class="wrap">
+<div class="fd-head"><h2 id="h-list">Findings, newest first</h2><a class="fd-raw" href="/data/live-findings.json">JSON</a></div>
+<div class="fd-filters" role="group" aria-label="Filter findings">
+<label for="fdm">Market</label><select id="fdm"><option value="">All markets</option></select>
+<label for="fdk">Kind</label><select id="fdk"><option value="">All kinds</option><option value="changed">Changed</option><option value="new">Newly published</option><option value="removed">Removed from the page</option><option value="missing">Permit claimed, no number</option><option value="first">First reading</option></select>
+<label for="fdf">Fact</label><select id="fdf"><option value="">All facts</option></select>
+</div>
+<p class="fd-count" id="fdc" aria-live="polite"></p>
+<ol class="fd-l" id="fdl"><li class="fd-sk"></li><li class="fd-sk"></li><li class="fd-sk"></li></ol>
+<button class="btn btn-sm fd-more" id="fdmore" type="button" hidden>Show more</button>
+</div></section>
+
+<section class="fd-sec" aria-labelledby="h-runs"><div class="wrap">
+<h2 id="h-runs">Run log</h2>
+<p class="lead">One line per run: pages read, findings, facts that did not change, quotes rejected because they were not on the page, tokens and what the run cost at list prices. The budget is 0.25 USD a day for all runs together: a run may spend only what is left of the day, and stops before it can pass that. Until 6 November 2026 the job ran every hour with a budget of 5 USD a day.</p>
+<div class="fd-scroll"><table class="fd-tbl" id="fdr"><thead><tr><th>Run (UTC)</th><th class="n">Projects</th><th class="n">Pages read</th><th class="n">Same page</th><th class="n">Read by model</th><th class="n">Findings</th><th class="n">Unchanged facts</th><th class="n">Rejected quotes</th><th class="n">Tokens in / out</th><th class="n">USD</th></tr></thead><tbody></tbody></table></div>
+<p class="fd-small" id="fdtot"></p>
+</div></section>
+
+<section class="fd-sec" id="method" aria-labelledby="h-how"><div class="wrap">
+<h2 id="h-how">How it works</h2>
+<dl class="fd-faq">
+<dt>Daily, round robin</dt><dd>A GitHub Actions job runs once a day (about 07:34 UTC), never two at a time. It takes the tracked projects whose developer page was read longest ago, by us or by the daily research agent, so every project comes round in turn. It respects robots.txt, sends one request per website every few seconds and identifies itself as KolaboroResearchAgent.</dd>
+<dt>Hosted model, small and capped</dt><dd>claude-haiku-5-5 reads the page text and returns each fact with the exact words that state it. Every call is priced from its real token usage at list prices (0.10 USD per million tokens in, 0.50 out). Before each call the worst case of that call is reserved, so neither a run nor the day can pass its budget (0.25 USD a day). A page whose text has the same SHA-256 fingerprint as at our last read is not sent to the model at all.</dd>
+<dt>Checked in code, not trusted</dt><dd>Software looks for each quote in the page text, ignoring only case, spacing and typographic quote marks, with no skipped words, and checks that the quote contains the value: the year, the percent, the amount or the number. Anything else is rejected and counted in the run log. A changed value is published only when the old value is no longer stated near the same words on the page, and a newly published fact only when its words were not in our previous copy of the page.</dd>
+<dt>Anonymous</dt><dd>Findings name the project id and market only, never the developer, the project name, the web address or the quote, because a quote would identify the project. Each finding carries <code>q</code>, the first 16 hex characters of the SHA-256 of its quote, and <code>fp</code>, the same for the page text. We keep a frozen copy of the page text, so both can be checked later against the original.</dd>
+<dt>Limits</dt><dd>These are what developers advertise, not verified facts. A finding says a page changed, not that the project did. Pages that block automated reading or need JavaScript to show text are counted as failed and tried again on the next round. Prices are shown as bands, and permit numbers are never shown, because both could identify a project.</dd>
+</dl>
+<p class="fd-small">Data: <a href="/data/live-findings.json">/data/live-findings.json</a> (last 500 findings and the run log) and <a href="/data/findings-by-project.json">/data/findings-by-project.json</a> (per project id), CC BY 4.0, credit Kolaboro. Related: <a href="/promises/">promise tracker</a>, <a href="/status/">status</a>, <a href="/log/">public log</a>.</p>
+</div></section>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+/* Live findings page: renders /data/live-findings.json (daily developer page check). No quotes, no names: ids and markets only. */
+(function () {
+  var $ = function (id) { return document.getElementById(id); };
+  var N = $('fdn'), L = $('fdl'), C = $('fdc'), MORE = $('fdmore'), SM = $('fdm'), SK = $('fdk'), SF = $('fdf'), R = $('fdr'), TOT = $('fdtot'), ST = $('fdst');
+  if (!L) return;
+  var all = [], shown = 40;
+  var KIND = { changed: 'Changed', 'new': 'Newly published', removed: 'Removed', missing: 'Permit claimed, no number', first: 'First reading' };
+  function esc(t) { return String(t == null ? '' : t).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  function fmt(n) { return Number(n || 0).toLocaleString('en-US'); }
+  function utc(iso) { return String(iso || '').slice(0, 16).replace('T', ' '); }
+  function dm(iso) { try { return new Date(iso).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', timeZone: 'UTC' }); } catch (e) { return String(iso).slice(0, 10); } }
+  function hm(iso) { return String(iso || '').slice(11, 16) + ' UTC'; }
+  function ago(iso) { var m = Math.floor((Date.now() - Date.parse(iso)) / 60000); if (!(m >= 0)) return ''; if (m < 60) return m + ' min ago'; var h = Math.floor(m / 60); if (h < 48) return h + ' h ago'; return Math.floor(h / 24) + ' days ago'; }
+  var idOk = function (x) { return /^[A-Z]{2,5}-\d{3,4}$/.test(String(x || '')); };
+  function qs(k) { try { return new URLSearchParams(location.search).get(k) || ''; } catch (e) { return ''; } }
+  function setQs() {
+    try { var p = new URLSearchParams(); if (SM.value) p.set('market', SM.value); if (SK.value) p.set('kind', SK.value); if (SF.value) p.set('fact', SF.value);
+      var s = p.toString(); history.replaceState(null, '', location.pathname + (s ? '?' + s : '') + location.hash); } catch (e) {}
+  }
+  function list() {
+    var m = SM.value, k = SK.value, f = SF.value;
+    var rows = all.filter(function (x) { return (!m || x.market === m) && (!k || x.kind === k) && (!f || x.fact === f); });
+    C.textContent = rows.length ? fmt(rows.length) + ' finding' + (rows.length === 1 ? '' : 's') + (m || k || f ? ' match these filters' : ' in the rolling file (last 500)') : '';
+    if (!rows.length) { L.innerHTML = '<li class="fd-none">' + (all.length ? 'No findings match these filters yet. Each daily run adds more.' : 'No findings yet. The first runs are reading pages now; this page shows only real ones.') + '</li>'; MORE.hidden = true; return; }
+    L.innerHTML = rows.slice(0, shown).map(function (x) {
+      var href = idOk(x.project) ? '/p/' + x.project + '/' : '/cases';
+      return '<li><a href="' + href + '"><span class="fd-t"><b>' + esc(dm(x.at)) + '</b>' + esc(hm(x.at)) + '</span><p class="fd-x">' + esc(x.text) + '</p>' +
+        '<span class="fd-m"><em class="k-' + esc(x.kind) + '">' + esc(KIND[x.kind] || x.kind) + '</em><em>' + esc(x.fact) + '</em><span>' + esc(x.market) + '</span>' +
+        (x.q ? '<span>quote <code>' + esc(x.q) + '</code></span>' : '') + (x.fp ? '<span>page <code>' + esc(x.fp) + '</code></span>' : '') + '</span></a></li>';
+    }).join('');
+    MORE.hidden = rows.length <= shown;
+    MORE.textContent = 'Show more (' + fmt(rows.length - shown) + ' left)';
+  }
+  function opts(sel, vals, cur) {
+    vals.forEach(function (v) { var o = document.createElement('option'); o.value = v[0]; o.textContent = v[1]; sel.appendChild(o); });
+    if (cur && vals.some(function (v) { return v[0] === cur; })) sel.value = cur;
+  }
+  function render(j) {
+    all = (j.findings || []).filter(function (x) { return x && x.at && x.text; });
+    var runs = (j.runs || []).slice().reverse(), t = j.totals || {}, last = runs[0];
+    var mk = {}, fa = {};
+    all.forEach(function (x) { mk[x.market] = (mk[x.market] || 0) + 1; fa[x.fact] = (fa[x.fact] || 0) + 1; });
+    opts(SM, Object.keys(mk).sort().map(function (m) { return [m, m + ' (' + mk[m] + ')']; }), qs('market'));
+    opts(SF, Object.keys(fa).sort().map(function (m) { return [m, m.charAt(0).toUpperCase() + m.slice(1) + ' (' + fa[m] + ')']; }), qs('fact'));
+    if (qs('kind')) SK.value = qs('kind');
+    var cov = j.coverage || {};
+    N.innerHTML = '<div><b>' + fmt(t.findings) + '</b><span>findings published since ' + esc(t.since ? dm(t.since) : 'the first run') + '</span></div>' +
+      '<div><b>' + fmt(t.pages_fetched) + '</b><span>developer pages read in ' + fmt(t.runs) + ' run' + (t.runs === 1 ? '' : 's') + '</span></div>' +
+      '<div><b>' + fmt(cov.projects_read_by_hourly_check) + ' of ' + fmt(cov.projects_tracked) + '</b><span>projects read by the page check so far</span></div>' +
+      '<div><b>' + (last ? Number(last.usd || 0).toFixed(3) : '0') + ' USD</b><span>cost of the last run (daily budget 0.25 USD)</span></div>';
+    if (last) ST.textContent = 'Last run ' + utc(last.at) + ' UTC, ' + ago(last.at) + ': ' + fmt(last.pages_fetched) + ' pages read, ' + fmt(last.findings) + ' findings, ' + fmt(last.no_change) + ' facts unchanged, ' + fmt((last.rejected_quote_not_found || 0) + (last.rejected_value_not_in_quote || 0)) + ' quotes rejected. Next run at about 07:34 UTC.';
+    R.querySelector('tbody').innerHTML = runs.slice(0, 48).map(function (r) {
+      return '<tr><td>' + esc(utc(r.at)) + '</td><td class="n">' + fmt(r.projects_read) + '</td><td class="n">' + fmt(r.pages_fetched) + '</td><td class="n">' + fmt(r.unchanged_pages) + '</td><td class="n">' + fmt(r.pages_read_by_model) +
+        '</td><td class="n">' + fmt(r.findings) + '</td><td class="n">' + fmt(r.no_change) + '</td><td class="n">' + fmt((r.rejected_quote_not_found || 0) + (r.rejected_value_not_in_quote || 0)) +
+        '</td><td class="n">' + fmt(r.tokens_in) + ' / ' + fmt(r.tokens_out) + '</td><td class="n">' + Number(r.usd || 0).toFixed(4) + '</td></tr>';
+    }).join('') || '<tr><td colspan="10">No runs yet.</td></tr>';
+    TOT.textContent = 'All runs: ' + fmt(t.runs) + ' runs, ' + fmt(t.pages_read_by_model) + ' pages read by the model, ' + fmt(t.tokens_in) + ' tokens in and ' + fmt(t.tokens_out) + ' out, ' + Number(t.usd || 0).toFixed(3) + ' USD in total. Rejected quote = not found word for word on the page, or not containing the value.';
+    list();
+  }
+  [SM, SK, SF].forEach(function (s) { s.addEventListener('change', function () { shown = 40; setQs(); list(); }); });
+  MORE.addEventListener('click', function () { shown += 60; list(); });
+  fetch('/data/live-findings.json?t=' + Math.floor(Date.now() / 3e5), { cache: 'no-cache' }).then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(render).catch(function () {
+    N.innerHTML = '<div><b>Starting</b><span>The first run has not been published yet</span></div>';
+    L.innerHTML = '<li class="fd-none">The findings file is not published yet. The first runs are reading pages now; this page shows only real findings.</li>';
+    R.querySelector('tbody').innerHTML = '<tr><td colspan="10">No runs published yet.</td></tr>';
+  });
+})();
+});
+</script>
+</main>
+<div class="mcta"><a class="btn btn-hi" href="/#start" data-role="buyer" data-ev="cta_sticky">Protect my purchase</a></div>
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <a class="brand" href="/" aria-label="Kolaboro home" style="font-size:1.15rem"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 4v24M8 16 23 6.5M8 16l15 9.5" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><circle cx="24" cy="6" r="3.4" fill="currentColor"/><circle cx="24" cy="26" r="3.4" fill="currentColor"/><circle cx="8" cy="16" r="4.2" fill="#FF5B14"/></svg>kolaboro</a>
+        <p style="margin-top:12px;max-width:34ch">Independent property checks for people buying abroad. Recruiting our first local agents; desk research in <span data-db="markets">195</span> markets.</p>
+        <form class="news" data-news novalidate><label for="nl-email">Monthly research notes: what developers promise, and what changed.</label>
+          <div class="qform light" style="margin-top:10px"><input id="nl-email" name="email" type="email" placeholder="Your email" autocomplete="email"><button class="btn btn-hi btn-sm" type="submit">Subscribe</button></div>
+          <p class="nmsg" aria-live="polite"></p></form>
+      </div>
+      <div><h2 class="fh">Buyers</h2><ul>
+        <li><a href="/check/">Check a project</a></li>
+        <li><a href="/pricing/">Pricing</a></li>
+        <li><a href="/report/sample/">Sample report</a></li>
+        <li><a href="/tools/market-match/">Market match</a></li>
+        <li><a href="/tools/payment-risk/">Payment plan risk</a></li>
+        <li><a href="/tools/build-cost/">Price below build cost</a></li>
+        <li><a href="/tools/late-handover/">Late handover: contract and law</a></li>
+        <li><a href="/ask-developer/">Ask the developer</a></li>
+        <li><a href="/tools/insolvency-check/">Insolvency check</a></li>
+        <li><a href="/tools/agent-check/">Is this agent licensed?</a></li>
+        <li><a href="/compare/">Compare projects</a></li>
+        <li><a href="/timeline/">Project timeline</a></li>
+        <li><a href="/explain/">Explain a score</a></li>
+        <li><a href="/checklist/">Before-you-sign checklist</a></li>
+        <li><a href="/destinations/">Destinations</a></li>
+      </ul></div>
+      <div><h2 class="fh">Data</h2><ul>
+        <li><a href="/database/">The database</a></li>
+        <li><a href="/cases/">Live cases</a></li>
+        <li><a href="/m/">Markets</a></li>
+        <li><a href="/countries/">Countries</a></li>
+        <li><a href="/rankings/">Rankings</a></li>
+        <li><a href="/map/">World map</a></li>
+        <li><a href="/compare/markets/">Compare markets</a></li>
+        <li><a href="/transparency-index/">Transparency index</a></li>
+        <li><a href="/report/state-of-off-plan-2026/">State of Off-Plan 2026</a></li>
+        <li><a href="/satellite/">Satellite watch</a></li>
+        <li><a href="/registers/">Official registers</a></li>
+        <li><a href="/docs/api/#open">Open data API</a></li>
+        <li><a href="/sql/">SQL in your browser</a></li>
+        <li><a href="/data/">Open data catalog</a></li>
+        <li><a href="/docs/api/explorer/">API explorer</a></li>
+        <li><a href="/tools/">Buyer tools</a></li>
+        <li><a href="/ask/">Ask Kolaboro</a></li>
+        <li><a href="/extension/">Chrome extension</a></li>
+        <li><a href="/graph/">Company graph</a></li>
+        <li><a href="/graph/global/">Global company graph</a></li>
+        <li><a href="/index/prices/">Price index</a></li>
+        <li><a href="/index/delays/">Delay index</a></li>
+        <li><a href="/promises/">Promise tracker</a></li>
+        <li><a href="/digest/">Weekly digest</a></li>
+        <li><a href="/digest/#changes">Change heatmap</a></li>
+        <li><a href="/search-alerts/">Search alerts</a></li>
+        <li><a href="/hazards/">Natural hazards</a></li>
+        <li><a href="/satellite/night/">Night lights and stalled sites</a></li>
+        <li><a href="/visual/">Website changes</a></li>
+      </ul></div>
+      <div><h2 class="fh">Trust</h2><ul>
+        <li><a href="/trust/">Trust center</a></li>
+        <li><a href="/how-we-score/">How we score</a></li>
+        <li><a href="/standard/">Disclosure standard</a></li>
+        <li><a href="/corrections/">Corrections</a></li>
+        <li><a href="/data-policy/">How we collect data</a></li>
+        <li><a href="/verify/">Verify evidence</a></li>
+        <li><a href="/court-file/">Evidence bundle</a></li>
+        <li><a href="/independence/">Independence</a></li>
+        <li><a href="/security/">Security and your data</a></li>
+        <li><a href="/technology/">Technology</a></li>
+        <li><a href="/status/">System status</a></li><li><a href="/log/">Public log</a></li><li><a href="/engineering/">Engineering</a></li>
+<li><a href="/shipping/">Shipping log</a></li>
+<li><a href="/accessibility/">Accessibility</a></li>
+        <li><a href="/metrics/">Open metrics</a></li>
+        <li><a href="/benchmark/">Review benchmark</a></li>
+        <li><a href="/log/witnesses/">Log witnesses</a></li>
+      </ul></div>
+      <div><h2 class="fh">Kolaboro</h2><ul>
+        <li><a href="/developers/">For developers</a></li>
+        <li><a href="/agents/">Become an agent</a></li>
+        <li><a href="/lawyers/">For lawyers</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/investors/">Investors</a></li>
+        <li><a href="/roadmap/">Roadmap</a></li>
+        <li><a href="/changelog/">Changelog</a></li>
+        <li><a href="/api-pilot/">API for partners</a></li>
+        <li><a href="/docs/partners/">Risk feed for banks</a></li>
+        <li><a href="/login/">Client login</a></li>
+        <li><a href="/legal/privacy/">Privacy</a></li>
+        <li><a href="/legal/terms/">Terms</a></li>
+      </ul></div>
+    </div>
+    <p class="fine">© 2026 Kolaboro, operated by Equinox Investment Group LLC, 30 N Gould St Ste N, Sheridan, WY 82801, USA. Kolaboro agents provide independent verification and information, not legal, tax or financial advice. Reports are opinions based on the evidence listed in them.</p>
+  </div>
+</footer>
+<script src="/k/ask.js?v=544be9f9c8" defer></script><script src="/k/pipeline.js?v=e0202822da" defer></script><script src="/k/site.js?v=3222000ecc" defer></script><script src="/k/prov.js?v=85080e1313" defer></script>
+<script>(function(){var _c=window.clarity;try{Object.defineProperty(window,'clarity',{configurable:true,get:function(){return _c},set:function(v){if(typeof v==='function'&&!v.q)v.q=[];_c=v;}})}catch(e){}})();</script>
+<div class="cc" id="cc" role="dialog" aria-label="Cookies" hidden><p>We use analytics cookies to improve Kolaboro. <a href="/legal/privacy/">Privacy</a></p><div><button class="btn btn-line btn-sm" data-cc="no">Only necessary</button><button class="btn btn-hi btn-sm" data-cc="yes">Accept</button></div></div>
+<script>(function(){var EU=["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"];var st=null;try{st=localStorage;}catch(e){}var c=st&&st.getItem('kb-consent');if(c)return;
+fetch('/api/geo').then(function(r){return r.json();}).then(function(g){if(!g||EU.indexOf(g.country)<0)return;var b=document.getElementById('cc');if(!b)return;b.hidden=false;
+b.addEventListener('click',function(e){var v=e.target.getAttribute('data-cc');if(!v)return;try{st&&st.setItem('kb-consent',v);}catch(x){}
+if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted'});if(window.clarity)clarity('consent');}b.hidden=true;});}).catch(function(){});})();</script>
+<script>
+(function(){
+  var els = document.querySelectorAll('.price'); if (!els.length || !window.fetch) return;
+  var C = { US:['USD','US$',1.08], CA:['CAD','C$',1.5], AU:['AUD','A$',1.65], NZ:['NZD','NZ$',1.8], GB:['GBP','£',.86], SG:['SGD','S$',1.45], AE:['AED','AED ',3.97], CH:['CHF','CHF ',.95] };
+  fetch('/api/geo').then(function(r){ return r.json(); }).then(function(g){
+    var c = C[g && g.country]; if (!c) return;
+    els.forEach(function(el){
+      var m = el.textContent.replace(/[,\s]/g,'').match(/€(\d+)/); if (!m || el.querySelector('.fx')) return;
+      var v = +m[1] * c[2], step = v > 1000 ? 50 : 5, n = Math.round(v / step) * step;
+      el.insertAdjacentHTML('beforeend', '<small class="fx">≈ ' + c[1] + n.toLocaleString('en-US') + ' · charged in €</small>');
+    });
+  }).catch(function(){});
+})();
+</script>
+<script>
+addEventListener('load', function(){ setTimeout(function(){   // n27u: read the page height after load, not during parsing (it forced a full layout, the longest task of the page)
+  if (document.body.scrollHeight < window.innerHeight * 3) return;
+  var b = document.createElement('button'); b.className = 'totop'; b.type = 'button'; b.setAttribute('aria-label', 'Back to top'); b.textContent = '↑';
+  document.body.appendChild(b);
+  b.addEventListener('click', function(){ window.scrollTo({ top: 0, behavior: 'smooth' }); });
+  window.addEventListener('scroll', function(){ b.classList.toggle('on', window.scrollY > window.innerHeight * 1.5); }, { passive: true });
+}, 0); });
+</script>
+</body>
+</html>

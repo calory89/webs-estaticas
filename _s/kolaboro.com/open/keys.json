@@ -1,0 +1,21 @@
+{
+ "issuer": "Kolaboro (kolaboro.com), operated by Equinox Investment Group LLC",
+ "purpose": "Signs answers of the open data API (/api/open/*), the public log and evidence receipts.",
+ "signature_format": "Header x-kolaboro-signature = base64 Ed25519 signature of the UTF-8 message 'kolaboro-sig-v1\\n' + SHA-256 hex of the exact response body; header x-kolaboro-key-id names the key.",
+ "keys": [
+  {
+   "kid": "kb-f2e04da5878f8c51",
+   "alg": "Ed25519",
+   "public_key_raw_b64": "rnY6UvDI+L6e8j3a+UPwmddQJFapkfmEXWwHuXzdmzw=",
+   "public_key_spki_b64": "MCowBQYDK2VwAyEArnY6UvDI+L6e8j3a+UPwmddQJFapkfmEXWwHuXzdmzw=",
+   "created": "2026-11-02",
+   "status": "active",
+   "valid_from": "2026-11-02",
+   "valid_until": null,
+   "minisign_key_id": "F2E04DA5878F8C51"
+  }
+ ],
+ "signature_format_checkpoint": "GET /api/open/checkpoint is a C2SP signed note (origin kolaboro.com/log); key hash = first 4 bytes of SHA-256('kolaboro.com/log' || 0x0A || 0x01 || public key).",
+ "signature_format_rekor": "Each daily log head is also signed in minisign format (key id F2E04DA5878F8C51, the same Ed25519 key) and recorded in Sigstore Rekor.",
+ "rotation": "Keys are never reused. A new key is announced here with its valid_from date before it signs anything; the old key gets valid_until and stays listed, so old signatures remain checkable. A compromised key is marked status=revoked with the date from which its signatures must not be trusted."
+}
