@@ -1620,7 +1620,7 @@ export async function ssr(base, u, kind, env) {
   // n22e: on market pages the pre-rendered list (removed by /m/m.js) and the still-empty body pushed the hero and the forecast section
   // around after first paint (layout shift 0.8 to 1.6). With scripting on, the list is not painted and the body keeps its room.
   const cls22 = kind === 'p' ? '' : '<style>@media (scripting:enabled){#ssr.ssr-only{display:none}}#mk-body:empty{min-height:130vh}</style>';
-  const tags = cls22 + '<title>' + hesc(title) + '</title><meta name="description" content="' + hesc(desc) + '"><link rel="canonical" href="' + canon + '"><meta property="og:title" content="' + hesc(title) + '"><meta property="og:description" content="' + hesc(desc) + '"><meta property="og:url" content="' + canon + '"><script' + nonceAttr + ' type="application/ld+json">' + JSON.stringify(ld).replace(/</g, '\\u003c') + '</script>';
+  const tags = cls22 + (kind === 'm' ? '<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">' : '') + '<title>' + hesc(title) + '</title><meta name="description" content="' + hesc(desc) + '"><link rel="canonical" href="' + canon + '"><meta property="og:title" content="' + hesc(title) + '"><meta property="og:description" content="' + hesc(desc) + '"><meta property="og:url" content="' + canon + '"><script' + nonceAttr + ' type="application/ld+json">' + JSON.stringify(ld).replace(/</g, '\\u003c') + '</script>';
   let seenTitle = false;
   const res = new HTMLRewriter()
     .on('title', { element(e) { e.remove(); } })
