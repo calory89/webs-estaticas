@@ -34,7 +34,8 @@
 "/projects/the-landmark-mermaid-beach-aniko/": "The Landmark Mermaid Beach, Gold Coast: 2028, works approved"
 },
 "dt": "Dated public facts: {list}.",
-"dt_i": "{p}, handover {h} as published ({src}, read {d})"
+"dt_i": "{p}, handover {h} as published ({src}, read {d})",
+"fs_mv": "(moved)"
 },
 "es": {
 "t_pn0": "sin licencia publicada",
@@ -61,7 +62,8 @@
 "other": "{n} proyectos"
 },
 "dt": "Datos públicos con fecha: {list}.",
-"dt_i": "{p}, entrega {h} según lo publicado ({src}, leído el {d})"
+"dt_i": "{p}, entrega {h} según lo publicado ({src}, leído el {d})",
+"fs_mv": "(aplazada)"
 },
 "fr": {
 "t_pn0": "permis non publié",
@@ -88,7 +90,8 @@
 "other": "{n} projets"
 },
 "dt": "Faits publics datés : {list}.",
-"dt_i": "{p}, livraison {h} telle que publiée ({src}, lu le {d})"
+"dt_i": "{p}, livraison {h} telle que publiée ({src}, lu le {d})",
+"fs_mv": "(reportée)"
 },
 "de": {
 "t_pn0": "keine Genehmigung veröffentlicht",
@@ -115,7 +118,8 @@
 "other": "{n} Projekte"
 },
 "dt": "Öffentliche Fakten mit Datum: {list}.",
-"dt_i": "{p}, Übergabe {h} wie veröffentlicht ({src}, gelesen am {d})"
+"dt_i": "{p}, Übergabe {h} wie veröffentlicht ({src}, gelesen am {d})",
+"fs_mv": "(verschoben)"
 },
 "nl": {
 "t_pn0": "geen vergunning gepubliceerd",
@@ -142,7 +146,8 @@
 "other": "{n} projecten"
 },
 "dt": "Openbare feiten met datum: {list}.",
-"dt_i": "{p}, oplevering {h} zoals gepubliceerd ({src}, gelezen op {d})"
+"dt_i": "{p}, oplevering {h} zoals gepubliceerd ({src}, gelezen op {d})",
+"fs_mv": "(verschoven)"
 },
 "ru": {
 "t_pn0": "разрешение не опубликовано",
@@ -171,7 +176,8 @@
 "other": "{n} проекта"
 },
 "dt": "Публичные факты с датой: {list}.",
-"dt_i": "{p}: сдача {h}, как опубликовано ({src}, прочитано {d})"
+"dt_i": "{p}: сдача {h}, как опубликовано ({src}, прочитано {d})",
+"fs_mv": "(перенесена)"
 },
 "zh": {
 "t_pn0": "未公布许可证",
@@ -197,7 +203,8 @@
 "other": "{n}个项目"
 },
 "dt": "有日期的公开事实：{list}。",
-"dt_i": "{p}：公布的交付时间为 {h}（{src}，{d} 读取）"
+"dt_i": "{p}：公布的交付时间为 {h}（{src}，{d} 读取）",
+"fs_mv": "（已推迟）"
 },
 "ar": {
 "t_pn0": "الترخيص غير منشور",
@@ -228,7 +235,8 @@
 "other": "{n} مشروع"
 },
 "dt": "حقائق عامة مؤرخة: {list}.",
-"dt_i": "{p}: التسليم {h} كما نُشر ({src}، قُرئ في {d})"
+"dt_i": "{p}: التسليم {h} كما نُشر ({src}، قُرئ في {d})",
+"fs_mv": "(مؤجَّل)"
 }
 }
 }
