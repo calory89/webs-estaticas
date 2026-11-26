@@ -1,4 +1,4 @@
-# Kolaboro: full guide for AI assistants
+# Kolaboro: full plain-text guide
 
 Generated 2026-11-20T23:15:25Z by the Kolaboro data catalog job from https://kolaboro.com/data/catalog.json and https://kolaboro.com/docs/api/openapi.json. The short version is https://kolaboro.com/llms.txt.
 
@@ -69,7 +69,7 @@ Parquet export manifest (id: kolaboro-parquet-manifest)
 
 Live findings from developer pages (id: live-findings)
   URL: https://kolaboro.com/data/live-findings.json
-  Once a day our agent re-reads the developer pages of the tracked projects that were checked longest ago and publishes a finding only when a fact (handover date, price, permit number) is new or changed, with the SHA-256 of the exact quote, checked word for word in code. Anonymous: project id and market only. AI spend is capped at 0.25 USD a day for all runs together (until 6 Nov 2026 the job ran every hour on a larger budget).
+  Once a day a scheduled job re-reads the developer pages of the tracked projects that were checked longest ago and publishes a finding only when a fact (handover date, price, permit number) is new or changed, with the SHA-256 of the exact quote, checked word for word in code. Anonymous: project id and market only. Its running cost is capped at 0.25 USD a day for all runs together (until 6 Nov 2026 the job ran every hour on a larger budget).
   Size 147.7 KB; 500 findings; SHA-256 71a5c45ca56e36f8a27395a98f64b345736948ab41d2dfa8d91d54f6dff2d768; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
   Updates: daily, about 07:34 UTC (hourly until 6 Nov 2026). Last updated: 2026-11-20T16:20:27Z. Freshness target 2 days.
 
@@ -228,14 +228,14 @@ Perceptual image hashes (id: image-hashes)
 
 Render index (id: image-index)
   URL: https://kolaboro.com/data/image-index.json
-  Perceptual hashes of images found on the websites the research agent reads, used to check whether a picture a buyer was sent also appears elsewhere.
+  Perceptual hashes of images found on the websites our checks read, used to check whether a picture a buyer was sent also appears elsewhere.
   Size 635.0 KB; 11,482 images; SHA-256 d665bcb26cec536e641af0d1d81e60b3980d4d0c867d3a7688ac18cfb408e688; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
   Updates: monthly, on the 14th at 04:51 UTC. Last updated: 2026-11-14. Freshness target 34 days.
   Schema: https://kolaboro.com/api/x/data/schema/image-index.json
 
 Similar projects (id: similar)
   URL: https://kolaboro.com/data/similar.json
-  For every public project, the 5 most similar other public projects: ids and rounded scores only (text similarity from an open sentence-embedding model run on the GitHub runner, plus structured similarity). Input is only the public bali-cases.json.
+  For every public project, the 5 most similar other public projects: ids and rounded scores only (text similarity computed on the GitHub runner with open-source code, plus structured similarity). Input is only the public bali-cases.json.
   Size 294.3 KB; 1,745 projects; SHA-256 6c9b8a8c1bafdbbef2f14d69e4d5583ed3bbbe6aa0e1d72988b59af1ba195cb6; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
   Updates: weekly, Tuesday 02:23 UTC, and after each research run. Last updated: 2026-11-17. Freshness target 10 days.
   Schema: https://kolaboro.com/api/x/data/schema/similar.json
@@ -256,9 +256,9 @@ Product roadmap (id: roadmap)
 
 ### How the service checks itself
 
-AI desk review benchmark (id: benchmark)
+Desk review benchmark (id: benchmark)
   URL: https://kolaboro.com/data/benchmark/ (2 files)
-  Results of the desk review benchmark on fixed fictional cases, one file per model (Haiku, Sonnet), each case answer signed with the Kolaboro Ed25519 key.
+  Results of the desk review benchmark on fixed fictional cases, one file per reader configuration, each case answer signed with the Kolaboro Ed25519 key.
   Size 96.9 KB; 36 cases; SHA-256 a94237d9894f0ec53e52ee1283d4962c9464f877b5ceeb6e7fba7bb2cb95b33f; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
   Updates: on demand. Last updated: 2026-11-03T22:59:11Z.
   Schema: https://kolaboro.com/api/x/data/schema/benchmark.json
@@ -300,7 +300,7 @@ Independent verifier run (id: verifiers)
 
 Chaos drills (id: chaos)
   URL: https://kolaboro.com/data/chaos.json
-  Weekly fault-injection drills of the desk review (for example the primary AI reader down): what was forced, what was expected, what happened, and what is not covered.
+  Weekly fault-injection drills of the desk review (for example the primary reader down): what was forced, what was expected, what happened, and what is not covered.
   Size 17.6 KB; 4 runs; SHA-256 3f51a542b35e7d9c3ccc69daafb4e5e751ebc74cc94a0c0a00251af2bd840e9f; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
   Updates: monthly, on the 18th at 05:11 UTC. Last updated: 2026-11-18T13:53:01Z. Freshness target 33 days.
   Schema: https://kolaboro.com/api/x/data/schema/chaos.json
@@ -2196,7 +2196,7 @@ seo-audit.json (id: undescribed-seo-audit-json)
 
 seo-checks.json (id: undescribed-seo-checks-json)
   URL: https://kolaboro.com/data/seo-checks.json
-  Not yet described in the catalog registry. The file describes itself as: kolaboro.com SEO checks (n31s, batch 31): every sitemap URL requested (item 194), raw HTML without JavaScript on the pages added 17 and 18 Nov 2026 (item 206), AI crawler user agents against the edge (item 229). Run by hand; no scheduled job.
+  Not yet described in the catalog registry. The file describes itself as: kolaboro.com SEO checks (n31s, batch 31): every sitemap URL requested (item 194), raw HTML without JavaScript on the pages added 17 and 18 Nov 2026 (item 206), crawler user agents against the edge (item 229). Run by hand; no scheduled job.
   Size 1.3 KB; not a table; SHA-256 f2caf2d44a807b23d21b10acb0067279a715c2b8bec998bda294be5aa537a43e; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
   Updates: unknown. Last updated: 2026-11-18T14:33:37Z.
 
@@ -2433,7 +2433,7 @@ GET /api/open/changes: Recorded changes. Every recorded change to a project fiel
 GET /api/open/freshness: Project re-read freshness. Share of projects re-read from their source in the last 7 days, per market, against the 90% objective.
   Example: https://kolaboro.com/api/open/freshness
 
-GET /api/open/evals: AI desk review evaluation. Daily evaluation of the AI desk review on fixed fictional pages, case by case.
+GET /api/open/evals: desk review evaluation. Daily evaluation of the desk review on fixed fictional pages, case by case.
   Example: https://kolaboro.com/api/open/evals
 
 GET /api/open/uptime: Uptime probes. Uptime probes every 5 minutes from outside Cloudflare.

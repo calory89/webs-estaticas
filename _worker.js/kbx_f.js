@@ -78,7 +78,7 @@ wrapped.__kbxf = true;
 globalThis.fetch = wrapped;
 }
 const SCEN = {
-primary_model_down: { fixture: 'e1-bali-leasehold', faults: { haiku: 'down' }, expect: 'The second AI reader answers alone: a report comes back, marked single reader (no consensus block), title type still read as leasehold.',
+primary_model_down: { fixture: 'e1-bali-leasehold', faults: { haiku: 'down' }, expect: 'The second reader answers alone: a report comes back, marked single reader (no consensus block), title type still read as leasehold.',
 check: (r) => !!(r && r.report && !r.report.consensus && String(r.report.title_type).toLowerCase() === 'leasehold') },
 primary_model_down_injection: { fixture: 'i2-hidden-div', faults: { haiku: 'down' }, expect: 'With only the second reader, hidden instructions aimed at automated reviewers are still caught: ai_manipulation detected, attention high.',
 check: (r) => !!(r && r.report && r.report.ai_manipulation && r.report.ai_manipulation.detected && r.report.attention === 'high') },

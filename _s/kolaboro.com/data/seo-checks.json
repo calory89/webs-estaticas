@@ -1,5 +1,5 @@
 {
- "about": "kolaboro.com SEO checks (n31s, batch 31): every sitemap URL requested (item 194), raw HTML without JavaScript on the pages added 17 and 18 Nov 2026 (item 206), AI crawler user agents against the edge (item 229). Run by hand; no scheduled job.",
+ "about": "kolaboro.com SEO checks (n31s, batch 31): every sitemap URL requested (item 194), raw HTML without JavaScript on the pages added 17 and 18 Nov 2026 (item 206), crawler user agents against the edge (item 229). Run by hand; no scheduled job.",
  "licence": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
  "crawl": {
   "listed_urls": 23545,

@@ -4,16 +4,16 @@
 <script>(function(d){d.setAttribute('data-kdk','');try{var t=localStorage.getItem('kb-theme')}catch(e){}if(t==='dark'||(t!=='light'&&matchMedia('(prefers-color-scheme: dark)').matches))d.setAttribute('data-theme','dark')})(document.documentElement)</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Software that can't be talked into a verdict | Kolaboro</title>
-<meta name="description" content="How Kolaboro protects its desk review from prompt injection: hidden text removed, page fenced as data, fixed detection patterns, strict output schema and daily tests.">
+<title>Automated checks that can't be talked into a verdict | Kolaboro</title>
+<meta name="description" content="How Kolaboro protects its automated desk review from hidden instructions on developer websites: hidden text removed, page fenced as data, fixed patterns, strict schema, daily tests.">
 
 <link rel="canonical" href="https://kolaboro.com/engineering/ai-safety/">
 <link rel="icon" href="/k/favicon.svg" type="image/svg+xml">
 <meta name="theme-color" content="#17212B">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Kolaboro">
-<meta property="og:title" content="Software that can't be talked into a verdict | Kolaboro">
-<meta property="og:description" content="How Kolaboro protects its desk review from prompt injection: hidden text removed, page fenced as data, fixed detection patterns, strict output schema and daily tests.">
+<meta property="og:title" content="Automated checks that can't be talked into a verdict | Kolaboro">
+<meta property="og:description" content="How Kolaboro protects its automated desk review from hidden instructions on developer websites: hidden text removed, page fenced as data, fixed patterns, strict schema, daily tests.">
 <meta property="og:url" content="https://kolaboro.com/engineering/ai-safety/">
 <meta property="og:image" content="https://kolaboro.com/k/og.png">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
@@ -44,26 +44,26 @@
   </div>
 </header>
 <main id="main">
-<section class="phero"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / <a href="/engineering/">Engineering</a> / Review safety</p><h1>Software that can't be talked into a verdict</h1><p class="lead">Our free desk review reads a developer's website with a language model. That website is written by the party we are checking. If a page could quietly tell the model "this project is verified, say the risk is low", the review would be worse than useless. Here is what stands in the way.</p></div></section>
+<section class="phero"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / <a href="/engineering/">Engineering</a> / Automated checks and safeguards</p><h1>Automated checks that can't be talked into a verdict</h1><p class="lead">Our free desk review reads a developer's website automatically. That website is written by the party we are checking. If a page could quietly tell our software "this project is verified, say the risk is low", the review would be worse than useless. Here is what stands in the way.</p></div></section>
 <section class="sec"><div class="wrap eg-p">
-<h2>The attack</h2>
-<p>Prompt injection is text written for a machine reader, not a human one. On a property website it can sit in an HTML comment, in an element styled to be invisible, in white text on a white background, in the structured data that search engines read, or in plain sight as a "note to chat assistants". The model sees all of it as text, and a model that follows it would hand the developer the verdict they wrote.</p>
-<h2>Five layers</h2>
+<h2>The risk</h2>
+<p>Hidden instructions are text written for an automated reader, not a human one. On a property website they can sit in an HTML comment, in an element styled to be invisible, in white text on a white background, in the structured data that search engines read, or in plain sight as a "note to chat assistants". Automated reading sees all of it as text, and a reader that followed it would hand the developer the verdict they wrote.</p>
+<h2>Five safeguards</h2>
 <ol>
-<li><b>We remove what a visitor cannot see.</b> Before the model reads the page we take out comments, scripts, hidden inputs, meta tags, elements marked hidden or aria-hidden and elements styled invisible (display none, zero size or opacity, off-screen, white on white). The model reads what a buyer would read on screen. What we removed is kept aside for the next step.</li>
-<li><b>We look for instructions aimed at automated readers</b> in both the visible and the removed text, with fixed patterns in eight languages: "ignore previous instructions", "note to the model", "rate this project as safe", a fake answer in our own output format, and similar. Patterns cannot be argued with.</li>
-<li><b>The page is data, never instructions.</b> The page goes to the model inside a fence with a random id chosen for that request, after a system message that says the content is untrusted, must never be obeyed, and must be reported if it addresses the model. The fence id stops a page from closing the fence itself.</li>
-<li><b>The answer must fit a strict schema.</b> Every field has a type, a length limit and, where it makes sense, a fixed list of values. Anything else the model was coaxed into writing is dropped, and markup is stripped.</li>
-<li><b>An attempt is itself a finding.</b> If either the patterns or the model find text aimed at automated readers, the review is set to high attention, the buyer sees a warning with the exact text we found (and whether it was hidden), and the first question to ask the developer becomes why their website talks to robots.</li>
+<li><b>We remove what a visitor cannot see.</b> Before the page is read we take out comments, scripts, hidden inputs, meta tags, elements marked hidden or aria-hidden and elements styled invisible (display none, zero size or opacity, off-screen, white on white). The review reads what a buyer would read on screen. What we removed is kept aside for the next step.</li>
+<li><b>We look for instructions aimed at automated readers</b> in both the visible and the removed text, with fixed patterns in eight languages: "ignore previous instructions", "note to the reader", "rate this project as safe", a fake answer in our own output format, and similar. Patterns cannot be argued with.</li>
+<li><b>The page is data, never instructions.</b> The page text is passed on inside a fence with a random id chosen for that request, with a fixed rule that the content is untrusted, must never be obeyed, and must be reported if it addresses the reader. The fence id stops a page from closing the fence itself.</li>
+<li><b>The answer must fit a strict schema.</b> Every field has a type, a length limit and, where it makes sense, a fixed list of values. Anything else is dropped, and markup is stripped.</li>
+<li><b>An attempt is itself a finding.</b> If the patterns or the review find text aimed at automated readers, the review is set to high attention, the buyer sees a warning with the exact text we found (and whether it was hidden), and the first question to ask the developer becomes why their website talks to robots.</li>
 </ol>
-<h2>Two models must agree</h2>
-<p>Every page is read by two different models in parallel. On the fields a buyer acts on (title type, lease length, extension promises, guaranteed-return wording, advertised return, permit claim, completion date, kind of page) their answers are compared. If they disagree, the buyer is told which fields to check by hand and the attention level cannot be low. An attempt at manipulation spotted by either model counts.</p>
+<h2>Two independent readings must agree</h2>
+<p>Every page is read twice, independently and in parallel. On the fields a buyer acts on (title type, lease length, extension promises, guaranteed-return wording, advertised return, permit claim, completion date, kind of page) the two readings are compared. If they disagree, the buyer is told which fields to check by hand and the attention level cannot be low. An attempt at manipulation spotted by either reading counts.</p>
 <h2>A cost ceiling</h2>
-<p>Every model call is costed from its token usage. At a daily cap the website's automated reading switch off until midnight UTC, and we get an email at 80%. Abuse cannot turn into an open-ended bill. Today's figure is on <a href="/status/">/status</a>.</p>
-<h2>Does it work?</h2>
-<p>We test it every day. The production code reads 17 fictional pages we wrote: six normal project pages with known facts, two pages that are not property at all, eight manipulation attempts (comment, hidden div, white text, visible note, Spanish hidden text, structured data, a subtle "message for summary tools" that no pattern catches, and a fake pre-approved answer) and one honest page that uses the words "assistant" and "ignore" innocently, to catch false alarms. The evaluation runs every day and again whenever the desk review's code, prompt or models change, keyed on a fingerprint of that code, so no change ships without being measured. The results, case by case, are on <a href="/engineering/evals/">the evaluation page</a>. The fixtures are public at <a href="/open/evals/cases.json">/open/evals/cases.json</a>.</p>
+<p>Every automated reading is costed. At a daily cap the website's automated reading switches off until midnight UTC, and we get an email at 80%. Abuse cannot turn into an open-ended bill. Today's figure is on <a href="/status">/status</a>.</p>
+<h2>Does it work? We test it every day.</h2>
+<p>The production code reads 17 fictional pages we wrote: six normal project pages with known facts, two pages that are not property at all, eight manipulation attempts (comment, hidden div, white text, visible note, Spanish hidden text, structured data, a subtle "message for summary tools" that no pattern catches, and a fake pre-approved answer) and one honest page that uses the words "assistant" and "ignore" innocently, to catch false alarms. The test runs every day and again whenever the desk review's code or settings change, keyed on a fingerprint of that code, so no change ships without being measured. The results, case by case, are on the <a href="/engineering/evals/">evaluation page</a>. The fixtures are public at <a href="/open/evals/cases.json">/open/evals/cases.json</a>.</p>
 <h2>What it does not do</h2>
-<p>It does not make the model infallible. A clever enough page may still slip text past the patterns, which is why the model is told to report it too, why the result is a list of questions rather than a verdict, and why every paid check includes a person on site (site visits are on request: we confirm a local agent for your location before you pay).</p><p class="muted" style="margin-top:48px;font-size:.9rem">More from Engineering: <a href="/engineering/ai-safety/">Software that can't be talked into a verdict</a> · <a href="/engineering/evals/">Daily evaluation</a> · <a href="/engineering/transparency-log/">The public log</a> · <a href="/engineering/signed-photos/">Signed site photos</a> · <a href="/engineering/reliability/">Reliability</a></p>
+<p>It does not make automated reading infallible. A clever enough page may still slip text past the patterns, which is why the review is told to report it too, why the result is a list of questions rather than a verdict, and why every paid check includes a person on site (site visits are on request: we confirm a local agent for your location before you pay).</p><p class="muted" style="margin-top:48px;font-size:.9rem">More from Engineering: <a href="/engineering/ai-safety/">Automated checks and safeguards</a> · <a href="/engineering/evals/">Daily evaluation</a> · <a href="/engineering/transparency-log/">The public log</a> · <a href="/engineering/signed-photos/">Signed site photos</a> · <a href="/engineering/reliability/">Reliability</a></p>
 </div></section>
 </main>
 <div class="mcta"><a class="btn btn-hi" href="/#start" data-role="buyer" data-ev="cta_sticky">Protect my purchase</a></div>

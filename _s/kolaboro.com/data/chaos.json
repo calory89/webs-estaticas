@@ -18,10 +18,10 @@
    "scenarios": [
     {
      "id": "primary_model_down",
-     "title": "Primary AI reader down",
+     "title": "Primary reader down",
      "kind": "ai",
      "forced": "claude-haiku answers HTTP 529 (overloaded)",
-     "expected": "The second AI reader answers alone: a report comes back, marked single reader (no consensus block), title type still read as leasehold.",
+     "expected": "The second reader answers alone: a report comes back, marked single reader (no consensus block), title type still read as leasehold.",
      "observed_text": "no report; error raised: model 529 {\"type\":\"error\",\"error\":{\"type\":\"overloaded_error\",\"message\":\"chaos drill: forced failure\"}} (2 forced failure(s) served)",
      "ms": 119,
      "wall_ms": 461,
@@ -29,10 +29,10 @@
     },
     {
      "id": "primary_model_down_injection",
-     "title": "Primary AI reader down, page with hidden AI instructions",
+     "title": "Primary reader down, page with hidden instructions",
      "kind": "ai",
      "forced": "claude-haiku answers HTTP 529",
-     "expected": "With only the second reader, hidden instructions aimed at AI reviewers are still caught: ai_manipulation detected, attention high.",
+     "expected": "With only the second reader, hidden instructions aimed at automated readers are still caught: ai_manipulation detected, attention high.",
      "observed_text": "no report; error raised: model 529 {\"type\":\"error\",\"error\":{\"type\":\"overloaded_error\",\"message\":\"chaos drill: forced failure\"}} (2 forced failure(s) served)",
      "ms": 320,
      "wall_ms": 581,
@@ -40,7 +40,7 @@
     },
     {
      "id": "second_model_down",
-     "title": "Second AI reader down",
+     "title": "Second reader down",
      "kind": "ai",
      "forced": "claude-sonnet answers HTTP 529",
      "expected": "The primary reader answers alone: a report comes back without a consensus block, title type leasehold.",
@@ -51,7 +51,7 @@
     },
     {
      "id": "primary_model_slow",
-     "title": "Primary AI reader hangs (never answers)",
+     "title": "Primary reader hangs (never answers)",
      "kind": "ai",
      "forced": "claude-haiku request never answers; the 60 s deadline in anthropic() must cut it",
      "expected": "The primary reader never answers: its call is cut at the 60 s deadline and the second reader answers alone, single reader (no consensus block), title type leasehold.",
@@ -62,7 +62,7 @@
     },
     {
      "id": "both_models_down",
-     "title": "Both AI readers down",
+     "title": "Both readers down",
      "kind": "ai",
      "forced": "claude-haiku and claude-sonnet answer HTTP 529",
      "expected": "No report is invented: the desk review raises a clean error, which the public endpoint turns into HTTP 503 {\"error\":\"model\"}.",
@@ -76,7 +76,7 @@
      "title": "Source website gone (domain does not resolve)",
      "kind": "source",
      "forced": "URL on a .invalid domain",
-     "expected": "Clean error {\"error\":\"fetch\"} with HTTP 422 in under 15 s, no AI call, nothing invented.",
+     "expected": "Clean error {\"error\":\"fetch\"} with HTTP 422 in under 15 s, no automated reading, nothing invented.",
      "observed_text": "HTTP 422 {\"error\":\"fetch\",\"status\":530}",
      "ms": 107,
      "pass": true
@@ -121,10 +121,10 @@
    "scenarios": [
     {
      "id": "primary_model_down",
-     "title": "Primary AI reader down",
+     "title": "Primary reader down",
      "kind": "ai",
      "forced": "claude-haiku answers HTTP 529 (overloaded)",
-     "expected": "The second AI reader answers alone: a report comes back, marked single reader (no consensus block), title type still read as leasehold.",
+     "expected": "The second reader answers alone: a report comes back, marked single reader (no consensus block), title type still read as leasehold.",
      "observed_text": "report returned, single reader (no consensus block), title type leasehold, attention high (1 forced failure(s) served)",
      "ms": 7844,
      "wall_ms": 8245,
@@ -132,18 +132,18 @@
     },
     {
      "id": "primary_model_down_injection",
-     "title": "Primary AI reader down, page with hidden AI instructions",
+     "title": "Primary reader down, page with hidden instructions",
      "kind": "ai",
      "forced": "claude-haiku answers HTTP 529",
-     "expected": "With only the second reader, hidden instructions aimed at AI reviewers are still caught: ai_manipulation detected, attention high.",
-     "observed_text": "report returned, single reader (no consensus block), title type leasehold, attention high, AI manipulation detected (1 forced failure(s) served)",
+     "expected": "With only the second reader, hidden instructions aimed at automated readers are still caught: ai_manipulation detected, attention high.",
+     "observed_text": "report returned, single reader (no consensus block), title type leasehold, attention high, manipulation attempt detected (1 forced failure(s) served)",
      "ms": 5688,
      "wall_ms": 6576,
      "pass": true
     },
     {
      "id": "second_model_down",
-     "title": "Second AI reader down",
+     "title": "Second reader down",
      "kind": "ai",
      "forced": "claude-sonnet answers HTTP 529",
      "expected": "The primary reader answers alone: a report comes back without a consensus block, title type leasehold.",
@@ -154,7 +154,7 @@
     },
     {
      "id": "primary_model_slow",
-     "title": "Primary AI reader hangs (never answers)",
+     "title": "Primary reader hangs (never answers)",
      "kind": "ai",
      "forced": "claude-haiku request never answers; the 60 s deadline in anthropic() must cut it",
      "expected": "The primary reader never answers: its call is cut at the 60 s deadline and the second reader answers alone, single reader (no consensus block), title type leasehold.",
@@ -165,7 +165,7 @@
     },
     {
      "id": "both_models_down",
-     "title": "Both AI readers down",
+     "title": "Both readers down",
      "kind": "ai",
      "forced": "claude-haiku and claude-sonnet answer HTTP 529",
      "expected": "No report is invented: the desk review raises a clean error, which the public endpoint turns into HTTP 503 {\"error\":\"model\"}.",
@@ -179,7 +179,7 @@
      "title": "Source website gone (domain does not resolve)",
      "kind": "source",
      "forced": "URL on a .invalid domain",
-     "expected": "Clean error {\"error\":\"fetch\"} with HTTP 422 in under 15 s, no AI call, nothing invented.",
+     "expected": "Clean error {\"error\":\"fetch\"} with HTTP 422 in under 15 s, no automated reading, nothing invented.",
      "observed_text": "HTTP 422 {\"error\":\"fetch\",\"status\":530}",
      "ms": 76,
      "pass": true
@@ -224,10 +224,10 @@
    "scenarios": [
     {
      "id": "primary_model_down",
-     "title": "Primary AI reader down",
+     "title": "Primary reader down",
      "kind": "ai",
      "forced": "claude-haiku answers HTTP 529 (overloaded)",
-     "expected": "The second AI reader answers alone: a report comes back, marked single reader (no consensus block), title type still read as leasehold.",
+     "expected": "The second reader answers alone: a report comes back, marked single reader (no consensus block), title type still read as leasehold.",
      "observed_text": "report returned, single reader (no consensus block), title type leasehold, attention high (1 forced failure(s) served)",
      "ms": 7154,
      "wall_ms": 7909,
@@ -235,18 +235,18 @@
     },
     {
      "id": "primary_model_down_injection",
-     "title": "Primary AI reader down, page with hidden AI instructions",
+     "title": "Primary reader down, page with hidden instructions",
      "kind": "ai",
      "forced": "claude-haiku answers HTTP 529",
-     "expected": "With only the second reader, hidden instructions aimed at AI reviewers are still caught: ai_manipulation detected, attention high.",
-     "observed_text": "report returned, single reader (no consensus block), title type leasehold, attention high, AI manipulation detected (1 forced failure(s) served)",
+     "expected": "With only the second reader, hidden instructions aimed at automated readers are still caught: ai_manipulation detected, attention high.",
+     "observed_text": "report returned, single reader (no consensus block), title type leasehold, attention high, manipulation attempt detected (1 forced failure(s) served)",
      "ms": 5999,
      "wall_ms": 6331,
      "pass": true
     },
     {
      "id": "second_model_down",
-     "title": "Second AI reader down",
+     "title": "Second reader down",
      "kind": "ai",
      "forced": "claude-sonnet answers HTTP 529",
      "expected": "The primary reader answers alone: a report comes back without a consensus block, title type leasehold.",
@@ -257,7 +257,7 @@
     },
     {
      "id": "primary_model_slow",
-     "title": "Primary AI reader hangs (never answers)",
+     "title": "Primary reader hangs (never answers)",
      "kind": "ai",
      "forced": "claude-haiku request never answers; the 60 s deadline in anthropic() must cut it",
      "expected": "The primary reader never answers: its call is cut at the 60 s deadline and the second reader answers alone, single reader (no consensus block), title type leasehold.",
@@ -268,7 +268,7 @@
     },
     {
      "id": "both_models_down",
-     "title": "Both AI readers down",
+     "title": "Both readers down",
      "kind": "ai",
      "forced": "claude-haiku and claude-sonnet answer HTTP 529",
      "expected": "No report is invented: the desk review raises a clean error, which the public endpoint turns into HTTP 503 {\"error\":\"model\"}.",
@@ -282,7 +282,7 @@
      "title": "Source website gone (domain does not resolve)",
      "kind": "source",
      "forced": "URL on a .invalid domain",
-     "expected": "Clean error {\"error\":\"fetch\"} with HTTP 422 in under 15 s, no AI call, nothing invented.",
+     "expected": "Clean error {\"error\":\"fetch\"} with HTTP 422 in under 15 s, no automated reading, nothing invented.",
      "observed_text": "HTTP 422 {\"error\":\"fetch\",\"status\":530}",
      "ms": 148,
      "pass": true
@@ -327,10 +327,10 @@
    "scenarios": [
     {
      "id": "primary_model_down",
-     "title": "Primary AI reader down",
+     "title": "Primary reader down",
      "kind": "ai",
      "forced": "claude-haiku answers HTTP 529 (overloaded)",
-     "expected": "The second AI reader answers alone: a report comes back, marked single reader (no consensus block), title type still read as leasehold.",
+     "expected": "The second reader answers alone: a report comes back, marked single reader (no consensus block), title type still read as leasehold.",
      "observed_text": "report returned, single reader (no consensus block), title type leasehold, attention high (1 forced failure(s) served)",
      "ms": 8449,
      "wall_ms": 10668,
@@ -338,18 +338,18 @@
     },
     {
      "id": "primary_model_down_injection",
-     "title": "Primary AI reader down, page with hidden AI instructions",
+     "title": "Primary reader down, page with hidden instructions",
      "kind": "ai",
      "forced": "claude-haiku answers HTTP 529",
-     "expected": "With only the second reader, hidden instructions aimed at AI reviewers are still caught: ai_manipulation detected, attention high.",
-     "observed_text": "report returned, single reader (no consensus block), title type leasehold, attention high, AI manipulation detected (1 forced failure(s) served)",
+     "expected": "With only the second reader, hidden instructions aimed at automated readers are still caught: ai_manipulation detected, attention high.",
+     "observed_text": "report returned, single reader (no consensus block), title type leasehold, attention high, manipulation attempt detected (1 forced failure(s) served)",
      "ms": 5825,
      "wall_ms": 8142,
      "pass": true
     },
     {
      "id": "second_model_down",
-     "title": "Second AI reader down",
+     "title": "Second reader down",
      "kind": "ai",
      "forced": "claude-sonnet answers HTTP 529",
      "expected": "The primary reader answers alone: a report comes back without a consensus block, title type leasehold.",
@@ -360,7 +360,7 @@
     },
     {
      "id": "both_models_down",
-     "title": "Both AI readers down",
+     "title": "Both readers down",
      "kind": "ai",
      "forced": "claude-haiku and claude-sonnet answer HTTP 529",
      "expected": "No report is invented: the desk review raises a clean error, which the public endpoint turns into HTTP 503 {\"error\":\"model\"}.",
@@ -374,7 +374,7 @@
      "title": "Source website gone (domain does not resolve)",
      "kind": "source",
      "forced": "URL on a .invalid domain",
-     "expected": "Clean error {\"error\":\"fetch\"} with HTTP 422 in under 15 s, no AI call, nothing invented.",
+     "expected": "Clean error {\"error\":\"fetch\"} with HTTP 422 in under 15 s, no automated reading, nothing invented.",
      "observed_text": "HTTP 422 {\"error\":\"fetch\",\"status\":530}",
      "ms": 137,
      "pass": true

@@ -297,7 +297,7 @@
   {
    "id": "live-findings",
    "title": "Live findings from developer pages",
-   "description": "Once a day our agent re-reads the developer pages of the tracked projects that were checked longest ago and publishes a finding only when a fact (handover date, price, permit number) is new or changed, with the SHA-256 of the exact quote, checked word for word in code. Anonymous: project id and market only. AI spend is capped at 0.25 USD a day for all runs together (until 6 Nov 2026 the job ran every hour on a larger budget).",
+   "description": "Once a day a scheduled job re-reads the developer pages of the tracked projects that were checked longest ago and publishes a finding only when a fact (handover date, price, permit number) is new or changed, with the SHA-256 of the exact quote, checked word for word in code. Anonymous: project id and market only. Its running cost is capped at 0.25 USD a day for all runs together (until 6 Nov 2026 the job ran every hour on a larger budget).",
    "kind": "data",
    "workflow": "kolaboro-live-findings.yml",
    "schedule": "daily, about 07:34 UTC (hourly until 6 Nov 2026)",
@@ -1204,7 +1204,7 @@
   {
    "id": "image-index",
    "title": "Render index",
-   "description": "Perceptual hashes of images found on the websites the research agent reads, used to check whether a picture a buyer was sent also appears elsewhere.",
+   "description": "Perceptual hashes of images found on the websites our checks read, used to check whether a picture a buyer was sent also appears elsewhere.",
    "kind": "data",
    "workflow": "kolaboro-images.yml",
    "schedule": "monthly, on the 14th at 04:51 UTC",
@@ -1243,7 +1243,7 @@
   {
    "id": "similar",
    "title": "Similar projects",
-   "description": "For every public project, the 5 most similar other public projects: ids and rounded scores only (text similarity from an open sentence-embedding model run on the GitHub runner, plus structured similarity). Input is only the public bali-cases.json.",
+   "description": "For every public project, the 5 most similar other public projects: ids and rounded scores only (text similarity computed on the GitHub runner with open-source code, plus structured similarity). Input is only the public bali-cases.json.",
    "kind": "data",
    "workflow": "kolaboro-discovery.yml",
    "schedule": "weekly, Tuesday 02:23 UTC, and after each research run",
@@ -1326,7 +1326,7 @@
    "path": "digest.json",
    "title": "Weekly market digest",
    "kind": "data",
-   "description": "Per ISO week: new projects, changes and alerts by market, built from the public bali-cases, promises, register-checks and stalled-sites files. An AI model may draft only the intro paragraph, and code checks every number in it.",
+   "description": "Per ISO week: new projects, changes and alerts by market, built from the public bali-cases, promises, register-checks and stalled-sites files. Code checks every number in the intro paragraph against these files.",
    "workflow": "kolaboro-digest.yml",
    "schedule": "weekly, Monday 06:23 UTC, and when the digest code changes",
    "interval_hours": 168,
@@ -1690,14 +1690,14 @@
   },
   {
    "id": "benchmark",
-   "title": "AI desk review benchmark",
-   "description": "Results of the desk review benchmark on fixed fictional cases, one file per model (Haiku, Sonnet), each case answer signed with the Kolaboro Ed25519 key.",
+   "title": "Desk review benchmark",
+   "description": "Results of the desk review benchmark on fixed fictional cases, one file per reader configuration, each case answer signed with the Kolaboro Ed25519 key.",
    "kind": "operations",
    "workflow": "kolaboro-benchmark.yml",
    "schedule": "on demand",
    "interval_hours": null,
    "keywords": [
-    "AI",
+    "desk review",
     "benchmark"
    ],
    "licence": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
@@ -1979,7 +1979,7 @@
   {
    "id": "chaos",
    "title": "Chaos drills",
-   "description": "Weekly fault-injection drills of the desk review (for example the primary AI reader down): what was forced, what was expected, what happened, and what is not covered.",
+   "description": "Weekly fault-injection drills of the desk review (for example the primary reader down): what was forced, what was expected, what happened, and what is not covered.",
    "kind": "operations",
    "workflow": "kolaboro-chaos.yml",
    "schedule": "monthly, on the 18th at 05:11 UTC",
@@ -2251,7 +2251,7 @@
   {
    "id": "shipping",
    "title": "Shipping log",
-   "description": "Ships (commits by people, or by Claude working for one) and data updates per UTC day from the git history of the live branch, streaks, engineering metrics and day summaries written by an AI model and checked in code.",
+   "description": "Ships (commits by people, or by software working for one) and data updates per UTC day from the git history of the live branch, streaks, engineering metrics and day summaries taken from the commit subjects and checked in code.",
    "kind": "operations",
    "workflow": "kolaboro-shipping.yml",
    "schedule": "weekly, Friday 12:19 UTC",
@@ -18119,7 +18119,7 @@
   {
    "id": "undescribed-seo-checks-json",
    "title": "seo-checks.json",
-   "description": "Not yet described in the catalog registry. The file describes itself as: kolaboro.com SEO checks (n31s, batch 31): every sitemap URL requested (item 194), raw HTML without JavaScript on the pages added 17 and 18 Nov 2026 (item 206), AI crawler user agents against the edge (item 229). Run by hand; no scheduled job.",
+   "description": "Not yet described in the catalog registry. The file describes itself as: kolaboro.com SEO checks (n31s, batch 31): every sitemap URL requested (item 194), raw HTML without JavaScript on the pages added 17 and 18 Nov 2026 (item 206), crawler user agents against the edge (item 229). Run by hand; no scheduled job.",
    "kind": "undescribed",
    "workflow": null,
    "schedule": "unknown",

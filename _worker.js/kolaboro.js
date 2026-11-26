@@ -218,7 +218,7 @@ async function deskReview(env, urlStr, html, opts) {
     if (second.ai_instructions_found && !out.ai_instructions_found) { out.ai_instructions_found = true; out.ai_instructions_quote = out.ai_instructions_quote || second.ai_instructions_quote; }
     if (cs.disagreements.length && out.page_kind !== 'not_real_estate') {
       if (out.attention === 'low') out.attention = 'medium';
-      out.missing = [T ? T.dis.replace('{x}', cs.disagreements.map(x => T.L[x.field] || x.label).join(lang === 'zh' ? '、' : lang === 'ar' ? '، ' : ', ')) : 'Our two AI readers disagreed on: ' + cs.disagreements.map(x => x.label).join(', ') + '. Check these on the page yourself.'].concat(out.missing).slice(0, 5);
+      out.missing = [T ? T.dis.replace('{x}', cs.disagreements.map(x => T.L[x.field] || x.label).join(lang === 'zh' ? '、' : lang === 'ar' ? '، ' : ', ')) : 'Our two independent readings disagreed on: ' + cs.disagreements.map(x => x.label).join(', ') + '. Check these on the page yourself.'].concat(out.missing).slice(0, 5);
     }
   }
   t = now();

@@ -56,7 +56,9 @@
   }
   function recompute(raw) {
     var u = raw.updated.slice(0, 10).split('-'), NOW = mi(+u[0], +u[1]);
-    var rows = raw.cases.map(function (c) { return derive(c, NOW); });
+    // n40 k22: the published index covers the markets it lists; cases of any market it leaves out are left out here too
+    var keep = {}; DI.markets.forEach(function (m) { keep[m.market] = 1; });
+    var rows = raw.cases.filter(function (c) { return keep[c.market]; }).map(function (c) { return derive(c, NOW); });
     var by = {}; rows.forEach(function (r) { (by[r.market] = by[r.market] || []).push(r); });
     var mk = {}; Object.keys(by).forEach(function (m) { mk[m] = marketRow(m, by[m]); });
     var pool = []; rows.forEach(function (r) { var y = resolved(r, NOW); if (y != null) pool.push([r, y]); });
