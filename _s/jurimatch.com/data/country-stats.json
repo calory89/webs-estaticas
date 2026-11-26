@@ -1,8 +1,8 @@
 {
  "license": "CC BY 4.0",
  "source": "https://jurimatch.com/open-data",
- "firmIndexAt": "2026-11-26T11:12:36.297Z",
- "listingCountsAt": "2026-11-26T11:12:35.627Z",
+ "firmIndexAt": "2026-11-26T11:42:54.164Z",
+ "listingCountsAt": "2026-11-26T11:42:53.482Z",
  "note": "handVerifiedFirms: firms whose fee terms our team read on their own website, by country listed. listedFirms: firms on each case type listing (hand-verified and indexed), from the build snapshot.",
  "countries": [
   {

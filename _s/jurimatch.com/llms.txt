@@ -136,6 +136,7 @@
 - [Getting your tenancy deposit back in England](https://jurimatch.com/tools/tenancy-deposit-return)
 - [Terms of use for the free tools](https://jurimatch.com/tools/terms)
 - [Train delay compensation in the EU](https://jurimatch.com/tools/train-delay-compensation)
+- [What a no win no fee CFA takes from your damages](https://jurimatch.com/tools/uk-cfa-success-fee)
 - [Statutory redundancy pay in the UK](https://jurimatch.com/tools/uk-redundancy-pay)
 - [Which lawyer do I need?](https://jurimatch.com/tools/which-lawyer)
 - [Who pays the costs if you lose?](https://jurimatch.com/tools/who-pays-if-you-lose)
@@ -144,6 +145,7 @@
 - [Abogados que solo cobran si usted gana](https://jurimatch.com/es): home
 - [Cómo reclamar en España, paso a paso](https://jurimatch.com/es/guias): index
 - [Herramientas gratuitas para reclamar](https://jurimatch.com/es/herramientas): index
+- [¿Cuánto le queda tras pagar al abogado?](https://jurimatch.com/es/herramientas/calculadora-cuota-litis)
 - [Calculadora de finiquito](https://jurimatch.com/es/herramientas/calculadora-finiquito)
 - [Modelo de carta de reclamación gratis](https://jurimatch.com/es/herramientas/carta-de-reclamacion)
 - [Carta para reclamar los gastos de hipoteca](https://jurimatch.com/es/herramientas/carta-gastos-hipoteca)
@@ -151,10 +153,13 @@
 - [Desistir de una compra online: su plazo y su carta](https://jurimatch.com/es/herramientas/desistimiento-compra-online)
 - [Devolución de la fianza del alquiler](https://jurimatch.com/es/herramientas/devolucion-fianza-alquiler)
 - [Equipaje perdido, dañado o retrasado: lo que le puede deber la aerolínea](https://jurimatch.com/es/herramientas/equipaje-perdido)
+- [Indemnización por años de servicio en Chile](https://jurimatch.com/es/herramientas/indemnizacion-por-anos-de-servicio-chile)
 - [Indemnización por despido en España](https://jurimatch.com/es/herramientas/indemnizacion-por-despido)
+- [Indemnización por despido en Argentina](https://jurimatch.com/es/herramientas/indemnizacion-por-despido-argentina)
 - [Retraso de tren: lo que le deben](https://jurimatch.com/es/herramientas/indemnizacion-retraso-tren)
 - [¿Vuelo retrasado o cancelado? Calcule lo que le podrían deber](https://jurimatch.com/es/herramientas/indemnizacion-vuelo)
 - [Intereses de demora en facturas entre empresas](https://jurimatch.com/es/herramientas/intereses-de-demora)
+- [Liquidación por despido en México](https://jurimatch.com/es/herramientas/liquidacion-por-despido-mexico)
 - [¿Cuánto tiempo tengo para reclamar?](https://jurimatch.com/es/herramientas/plazo-de-prescripcion)
 - [¿Le debe dinero su banco? Test de reclamaciones bancarias](https://jurimatch.com/es/herramientas/test-reclamaciones-bancarias)
 

@@ -2561,6 +2561,11 @@ URL: https://jurimatch.com/tools/train-delay-compensation
 
 Free calculator for train delay compensation under EU Regulation 2021/782: 25% of the ticket price for 60 to 119 minutes late, 50% for 120 minutes or…
 
+### What a no win no fee CFA takes from your damages
+URL: https://jurimatch.com/tools/uk-cfa-success-fee
+
+Free calculator for a conditional fee agreement in England and Wales: the success fee on base costs (up to 100%), any shortfall in costs, and the 25% cap…
+
 ### Statutory redundancy pay in the UK
 URL: https://jurimatch.com/tools/uk-redundancy-pay
 
