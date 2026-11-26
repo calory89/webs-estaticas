@@ -12,6 +12,7 @@ const SB = 'https://oykcsmextclpdnugixqz.supabase.co/rest/v1/';
 // Public anon key (already shipped in the site's JavaScript). Row-level security applies.
 const ANON = 'sb_publishable_WWMM9pbZfP4hJosLJlTobg_lWFGoJ3X';
 const CURATED = 'curated_2026_10';
+const RESEARCH = 'research_2026_11';
 const OG_IMAGE = ORIGIN + '/og-image.png';
 const MANIFEST_TTL = 10 * 60 * 1000;
 let manifest = null;
@@ -155,7 +156,7 @@ async function dynamicPage(path, m, ctx) {
   if ((mm = path.match(/^\/firms\/([a-z0-9-]+)$/))) {
     const slug = mm[1];
     const words = slug.split('-').filter(Boolean);
-    const look = (re) => sb('lawyers?select=' + FIRM_COLS + '&status=eq.active&verified=is.true&firm_name=ilike.' + encodeURIComponent('*' + words.map((w) => w.replace(re, '_')).join('*') + '*') + '&limit=200', ctx);
+    const look = (re) => sb('lawyers?select=' + FIRM_COLS + '&status=eq.active&or=(verified.is.true,source.eq.' + RESEARCH + ')&firm_name=ilike.' + encodeURIComponent('*' + words.map((w) => w.replace(re, '_')).join('*') + '*') + '&limit=200', ctx);
     let rows = await look(/[aeiou]/g);
     if (rows && !rows.some((r) => slugify(r.firm_name) === slug)) rows = await look(/[aeiouync]/g);
     // Polish, Czech, Turkish... letters with accents on consonants (ś, ź, ż, ł, ř, ş, ğ).
@@ -166,11 +167,16 @@ async function dynamicPage(path, m, ctx) {
     const f = rows.find((r) => slugify(r.firm_name) === slug);
     if (!f) return { t: 'Firm not found | JuriMatch', d: 'This firm profile is not available.', noindex: true, status: 404 };
     const hand = isHand(f);
+    // Firms researched in Nov 2026: their own site says they charge only on a win (quote and page kept).
+    const researched = !hand && f.source === RESEARCH;
+    const quote = researched ? clean(f.typical_model) : '';
     // Item 056: per-firm link preview image, only where the build made one.
     const ogImg = hand && Array.isArray(m && m.ogFirms) && m.ogFirms.includes(slug) ? ORIGIN + '/og/firms/' + slug + '.png' : null;
-    const where = (f.countries_served || []).slice(0, 3).join(', ');
+    const where = (f.countries_served || []).slice(0, 3).map((c) => String(c).replace(/\b[a-z]/g, (x) => x.toUpperCase())).join(', ');
     // Only descriptions our team checked are shown; indexed firms get a factual note.
-    const d = hand ? (clean(f.description) || (f.firm_name + (where ? ', ' + where : '') + '.')) : (f.firm_name + (where ? ' (' + where + ')' : '') + '. ' + INDEXED_NOTE);
+    const d = hand ? (clean(f.description) || (f.firm_name + (where ? ', ' + where : '') + '.'))
+      : researched && clean(f.description) ? clean(f.description).replace(/^Based in [^.]+\.\s*/, '') + (quote ? ' Its website says: "' + quote + '"' : '')
+      : (f.firm_name + (where ? ' (' + where + ')' : '') + '. ' + INDEXED_NOTE);
     return {
       t: (() => { const t = f.firm_name + ': No-Win-No-Fee Firm Profile'; return (t + ' | JuriMatch').length <= 62 ? t + ' | JuriMatch' : t.length <= 62 ? t : f.firm_name + ' | JuriMatch'; })(),
       d: d.length > 300 ? d.slice(0, 297) + '...' : d,
@@ -178,8 +184,9 @@ async function dynamicPage(path, m, ctx) {
       lead: d,
       ...(ogImg ? { image: ogImg } : {}),
       facts: [
-        ['Status', hand ? 'Hand-verified by JuriMatch' + (f.last_verified_at ? ' on ' + String(f.last_verified_at).slice(0, 10) : '') : 'Indexed from public research, not verified by our team'],
-        ['Fee terms read on', hand && f.verification_source_url ? f.verification_source_url : ''],
+        ['Status', hand ? 'Hand-verified by JuriMatch' + (f.last_verified_at ? ' on ' + String(f.last_verified_at).slice(0, 10) : '') : researched ? 'Fee terms read on its own website in November 2026, not yet confirmed with the firm' : 'Indexed from public research, not verified by our team'],
+        ['What its website says about fees', quote ? '"' + quote + '"' : ''],
+        ['Fee terms read on', (hand || researched) && f.verification_source_url ? f.verification_source_url : ''],
         ['Countries', where],
         ['Fee model', hand && f.typical_model ? feeLabel(f.typical_model) : ''],
         ['Case types', (f.case_types || []).slice(0, 6).map((x) => { const t = titleCaseLabel(x).toLowerCase(); return t.charAt(0).toUpperCase() + t.slice(1); }).join(', ').replace(/\bchf\b/gi, 'CHF')],
@@ -217,13 +224,16 @@ export async function route(req, u, env, ctx) {
   if (!m) return null;
   const day = (m.generatedAt || new Date().toISOString()).slice(0, 10);
   const urls = Object.entries(m.pages).filter(([, p]) => !p.noindex).map(([path, p]) => [ORIGIN + path, String(p.modified || day).slice(0, 10)]);
-  const [firms, posts] = await Promise.all([
+  const [firms, posts, rfirms] = await Promise.all([
     // The API returns at most 1,000 rows per request: read the hand-verified firms in pages.
     Promise.all([0, 1000, 2000, 3000, 4000].map((o) => sb('lawyers?select=firm_name,last_verified_at&status=eq.active&verified=is.true&source=eq.' + CURATED + '&quarantine_reason=is.null&domain_resolves=is.true&listing_tier=in.(partner,verified_listing)&order=firm_name&limit=1000&offset=' + o, ctx))).then((pages) => pages.flatMap((x) => x || [])),
     sb('blog_posts?select=slug,published_at,created_at&order=published_at.desc&limit=2000', ctx),
+    // Researched firms with a quote and source page: real profiles, listed too.
+    sb('lawyers?select=firm_name,domain_checked_at&status=eq.active&source=eq.' + RESEARCH + '&quarantine_reason=is.null&domain_resolves=is.true&listing_tier=in.(partner,verified_listing)&order=firm_name&limit=1000', ctx),
   ]);
   const seen = new Set();
   for (const f of firms || []) { const s = slugify(f.firm_name); if (s && !seen.has(s)) { seen.add(s); urls.push([ORIGIN + '/firms/' + s, String(f.last_verified_at || day).slice(0, 10)]); } }
+  for (const f of rfirms || []) { const s = slugify(f.firm_name); if (s && !seen.has(s)) { seen.add(s); urls.push([ORIGIN + '/firms/' + s, String(f.domain_checked_at || day).slice(0, 10)]); } }
   const dupes = m.blogRedirects || {}; const offTopic = new Set(m.blogNoindex || []);
   for (const p of posts || []) if (p.slug && !dupes[p.slug] && !offTopic.has(p.slug)) urls.push([ORIGIN + '/blog/' + p.slug, String(p.published_at || p.created_at || day).slice(0, 10)]);
   const xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
