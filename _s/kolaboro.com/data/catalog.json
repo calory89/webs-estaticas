@@ -17879,7 +17879,7 @@
    "described": false,
    "bytes": 115169,
    "url": "https://kolaboro.com/data/sanctions.json",
-   "sha256": "01b6e781a5bfcf56a83ce3a3dbb60550b8b433272a0025e1449d8a10dd0707b2",
+   "sha256": "ca3f87a7d5d13c18670ab5fb4ee8ee6647e335ef0f47428e33cfe1b9d7d8c84e",
    "http": 200,
    "media_type": "application/json",
    "format": "json",
@@ -17889,17 +17889,17 @@
    "rows_unit": null,
    "freshness": {
     "stamp_key": "updated",
-    "stamp": "2026-11-25",
+    "stamp": "2026-11-26",
     "date_only": true,
     "published_at": "2026-11-25T17:10:14Z",
-    "data_as_of": "2026-11-25T00:00:00Z",
+    "data_as_of": "2026-11-26T00:00:00Z",
     "target_hours": null,
     "age_hours": 35.32,
     "event_driven": false,
     "probe": true,
     "status": "no_target"
    },
-   "last_updated": "2026-11-25T00:00:00Z",
+   "last_updated": "2026-11-26T00:00:00Z",
    "frequency": "IRREG"
   },
   {
@@ -19846,9 +19846,9 @@
   }
  ],
  "refreshed": {
-  "at": "2026-11-26T16:50:41Z",
+  "at": "2026-11-26T16:51:44Z",
   "by": "https://kolaboro.com/open/catalog-refresh.py",
-  "datasets_changed": 0,
+  "datasets_changed": 1,
   "note": "Sizes, hashes, row counts and stamps of files changed since generated_at, read from the published files. Contracts, probes and freshness status are from generated_at."
  }
 }
