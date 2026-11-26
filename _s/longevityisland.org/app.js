@@ -1,4 +1,5 @@
 (function(){
+  window.__li=1;
   var $=function(id){return document.getElementById(id)};
   var LS={get:function(k){try{return localStorage.getItem(k)}catch(e){return null}},set:function(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
   // nav + sticky
