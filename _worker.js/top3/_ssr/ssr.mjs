@@ -33137,7 +33137,7 @@ var C4 = {
 		twoN: (p, d) => `About ${p} for 2 nights (price checked ${d})`,
 		walkC: (m) => `${m} min walk to the centre`,
 		kmC: (k) => `${k} km from the centre`,
-		airport: (k, n, i) => `${k} km to ${n} (${i})`,
+		airport: (k, n, i) => `${k} km (${Math.round(Number(k) * .621371)} mi) to ${n} (${i})`,
 		route: "Route between the 3 hotels on Google Maps",
 		eventsH: (c) => `Events in ${c}`,
 		cur: (eur, x, c, d) => `Local currency: ${c}. ${eur} is about ${x} (ECB reference rate of ${d}).`,
@@ -34238,6 +34238,18 @@ async function filterWinnersTxt() {
 			a: C4DATA.airports[c.id]
 		})).filter((x) => x.a).map(({ c, a }) => `- ${c.city}, ${c.country}: ${a.i} (${a.n}), ${Math.round(hv(c.lat, c.lng, a.la, a.lo))} km in a straight line. Data: ${SITE}/api/airport/${a.i}.json`);
 		out.push(`\n# Main airport per city (${rows.length} cities)\n\n> From OurAirports (public domain): the nearest large airport if it is within 50 km, otherwise the nearest large or medium airport with scheduled flights. Distances are straight lines from the city centre, not travel times.\n\n${rows.join("\n")}`);
+		const fam = [], pet = [];
+		for (const c of [...index].sort((a, b) => a.country.localeCompare(b.country) || a.city.localeCompare(b.city))) {
+			const hs = (await cityData(c.id).catch(() => null))?.hotels ?? [];
+			if (!hs.some((h) => h.extras?.tags?.length)) continue;
+			const f = hs.filter((h) => h.extras?.tags?.includes("family")).map((h) => `${h.name} (${h.category})`);
+			const p = hs.filter((h) => h.extras?.tags?.includes("pets")).map((h) => `${h.name} (${h.category})`);
+			if (f.length) fam.push(`- ${c.city}, ${c.country} (${SITE}/${c.slug}): ${f.join(" · ")}`);
+			if (p.length) pet.push(`- ${c.city}, ${c.country} (${SITE}/${c.slug}): ${p.join(" · ")}`);
+		}
+		const note = "Declared by the hotel on Booking.com, not checked by us. Pet policies can have charges or limits.";
+		out.push(`\n# Picks that list family rooms (${fam.length} cities)\n\n> ${note}\n\n${fam.join("\n")}`);
+		out.push(`\n# Picks that allow pets (${pet.length} cities)\n\n> ${note}\n\n${pet.join("\n")}`);
 	}
 	return out.join("\n") + "\n";
 }
@@ -36083,8 +36095,8 @@ var FL = {
 		also: "Også"
 	}
 };
-/** T6.45: one SVG sprite for the three filter icons (24x24, stroke = currentColor). */
-var ICON_SPRITE = `<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="t3i-spa" viewBox="0 0 24 24"><path d="M12 3c2.2 2.6 3.3 5 3.3 7.2A3.3 3.3 0 0 1 12 13.5a3.3 3.3 0 0 1-3.3-3.3C8.7 8 9.8 5.6 12 3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M3 14c2.5 0 4.6 1.3 6 3.2M21 14c-2.5 0-4.6 1.3-6 3.2M4 20h16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol><symbol id="t3i-pool" viewBox="0 0 24 24"><path d="M8 15V5.5a2 2 0 0 1 4 0M16 15V5.5a2 2 0 0 0-2-2M8 8.5h8M8 12h8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M2.5 18.5c1.6 0 1.6-1 3.2-1s1.6 1 3.2 1 1.6-1 3.1-1 1.6 1 3.2 1 1.6-1 3.2-1 1.6 1 3.1 1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol><symbol id="t3i-gym" viewBox="0 0 24 24"><path d="M7 7v10M17 7v10M4 9.5v5M20 9.5v5M7 12h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol></svg>`;
+/** T6.45/T9.44: one SVG sprite for the filter icons plus plane and train (24x24, stroke = currentColor). */
+var ICON_SPRITE = `<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="t3i-spa" viewBox="0 0 24 24"><path d="M12 3c2.2 2.6 3.3 5 3.3 7.2A3.3 3.3 0 0 1 12 13.5a3.3 3.3 0 0 1-3.3-3.3C8.7 8 9.8 5.6 12 3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M3 14c2.5 0 4.6 1.3 6 3.2M21 14c-2.5 0-4.6 1.3-6 3.2M4 20h16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol><symbol id="t3i-pool" viewBox="0 0 24 24"><path d="M8 15V5.5a2 2 0 0 1 4 0M16 15V5.5a2 2 0 0 0-2-2M8 8.5h8M8 12h8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M2.5 18.5c1.6 0 1.6-1 3.2-1s1.6 1 3.2 1 1.6-1 3.1-1 1.6 1 3.2 1 1.6-1 3.2-1 1.6 1 3.1 1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol><symbol id="t3i-gym" viewBox="0 0 24 24"><path d="M7 7v10M17 7v10M4 9.5v5M20 9.5v5M7 12h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol><symbol id="t3i-plane" viewBox="0 0 24 24"><path d="M10.5 3.5a1.5 1.5 0 0 1 3 0V9l7 4.2v2l-7-2.1v4.4l2 1.5V21L12 20l-3.5 1v-2l2-1.5v-4.4l-7 2.1v-2L10.5 9z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol><symbol id="t3i-train" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M5 10h14M9 14h.01M15 14h.01M8 17l-2.5 4M16 17l2.5 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol></svg>`;
 var icon = (k) => `<svg class="t3i" width="18" height="18" aria-hidden="true" focusable="false"><use href="#t3i-${k}"/></svg>`;
 var CHIP_CSS = `.t3fchips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 4px;padding:0;list-style:none}.t3fchips a{display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:6px 14px;border:1px solid var(--line,#d6dbe3);border-radius:99px;background:var(--card,#fff);color:inherit;text-decoration:none;font-size:15px;font-weight:600}.t3fchips a:hover,.t3fchips a:focus-visible{border-color:currentColor}.t3i{flex:none;vertical-align:-3px}.t3fh{font-size:15px;margin:16px 0 0;color:var(--muted)}`;
 /** T6.12: chips on the city page, only for filter pages that exist. Gym and pool pages are in EN and ES. */
@@ -66857,7 +66869,211 @@ function bestFor$1(L, o) {
 	if (o.station != null && o.station <= .6) out.push("trans");
 	return out.slice(0, 2).map((k) => tx5(L).best[k]);
 }
-var CSS5 = `.hp5-sum{font-size:16px;margin:0 0 14px}.hp5-sum b{font-weight:700}.hp5-fac{display:grid;gap:4px 22px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}.hp5-fac h3{font-size:15px;margin:10px 0 4px}.hp5-fac ul{list-style:none;margin:0;padding:0}.hp5-fac li{padding:3px 0}
+var KPA = [
+	{
+		k: "kids",
+		re: /family rooms?/,
+		tag: "family",
+		lab: {
+			en: "Family rooms",
+			es: "Habitaciones familiares",
+			de: "Familienzimmer",
+			fr: "Chambres familiales",
+			it: "Camere familiari",
+			pt: "Quartos familiares",
+			da: "Familieværelser"
+		}
+	},
+	{
+		k: "kids",
+		re: /kids'? ?club|children'?s club/,
+		lab: {
+			en: "Kids' club",
+			es: "Club infantil",
+			de: "Kinderclub",
+			fr: "Club enfants",
+			it: "Club per bambini",
+			pt: "Clube infantil",
+			da: "Børneklub"
+		}
+	},
+	{
+		k: "kids",
+		re: /\bcots?\b|\bcribs?\b|baby cot/,
+		lab: {
+			en: "Cots",
+			es: "Cunas",
+			de: "Kinderbetten",
+			fr: "Lits bébé",
+			it: "Culle",
+			pt: "Berços",
+			da: "Babysenge"
+		}
+	},
+	{
+		k: "kids",
+		re: /babysitting|child care|childcare/,
+		lab: {
+			en: "Babysitting",
+			es: "Servicio de canguro",
+			de: "Kinderbetreuung",
+			fr: "Baby-sitting",
+			it: "Baby-sitting",
+			pt: "Babysitting",
+			da: "Børnepasning"
+		}
+	},
+	{
+		k: "kids",
+		re: /playground|kids'? pool|children'?s (?:playground|pool|play area)|indoor play area/,
+		lab: {
+			en: "Play area or kids' pool",
+			es: "Zona de juegos o piscina infantil",
+			de: "Spielbereich oder Kinderbecken",
+			fr: "Aire de jeux ou piscine enfants",
+			it: "Area giochi o piscina per bambini",
+			pt: "Parque infantil ou piscina para crianças",
+			da: "Legeområde eller børnepool"
+		}
+	},
+	{
+		k: "pets",
+		re: /pets allowed|pet friendly|pets are allowed/,
+		tag: "pets",
+		lab: {
+			en: "Pets allowed",
+			es: "Se admiten mascotas",
+			de: "Haustiere erlaubt",
+			fr: "Animaux acceptés",
+			it: "Animali ammessi",
+			pt: "Animais permitidos",
+			da: "Kæledyr tilladt"
+		}
+	},
+	{
+		k: "acc",
+		re: /facilities for disabled|disabled guests|accessible rooms?|wheelchair/,
+		lab: {
+			en: "Facilities for disabled guests",
+			es: "Instalaciones para personas con discapacidad",
+			de: "Barrierefreie Einrichtungen",
+			fr: "Équipements pour personnes handicapées",
+			it: "Strutture per ospiti disabili",
+			pt: "Instalações para hóspedes com deficiência",
+			da: "Faciliteter for handicappede"
+		}
+	},
+	{
+		k: "acc",
+		re: /\belevator\b|\blift\b/,
+		lab: {
+			en: "Lift",
+			es: "Ascensor",
+			de: "Aufzug",
+			fr: "Ascenseur",
+			it: "Ascensore",
+			pt: "Elevador",
+			da: "Elevator"
+		}
+	},
+	{
+		k: "acc",
+		re: /walk-in shower|roll-in shower|grab rails|lowered sink|emergency cord/,
+		lab: {
+			en: "Adapted bathroom features",
+			es: "Baño con elementos adaptados",
+			de: "Angepasstes Bad",
+			fr: "Salle de bain adaptée",
+			it: "Bagno con elementi adattati",
+			pt: "Casa de banho adaptada",
+			da: "Tilpasset badeværelse"
+		}
+	}
+];
+var KPA_T = {
+	en: {
+		h: "With kids, pets and accessibility",
+		kids: "Children",
+		pets: "Pets",
+		acc: "Accessibility",
+		petNote: "Pet policies can have charges or limits (size, number, rooms). Check the policy on Booking.com before you book.",
+		accNote: "Declared by the hotel, not checked by us. If you need a specific feature, confirm it with the hotel.",
+		src: "Only what the hotel lists on Booking.com."
+	},
+	es: {
+		h: "Con niños, mascotas y accesibilidad",
+		kids: "Niños",
+		pets: "Mascotas",
+		acc: "Accesibilidad",
+		petNote: "La política de mascotas puede tener cargos o límites (tamaño, número, habitaciones). Confírmala en Booking.com antes de reservar.",
+		accNote: "Datos declarados por el hotel, no verificados por nosotros. Si necesitas algo concreto, confírmalo con el hotel.",
+		src: "Solo lo que el hotel declara en Booking.com."
+	},
+	de: {
+		h: "Mit Kindern, Haustieren und Barrierefreiheit",
+		kids: "Kinder",
+		pets: "Haustiere",
+		acc: "Barrierefreiheit",
+		petNote: "Für Haustiere können Gebühren oder Einschränkungen gelten (Größe, Anzahl, Zimmer). Prüfen Sie die Regeln auf Booking.com vor der Buchung.",
+		accNote: "Angaben des Hotels, nicht von uns geprüft. Wenn Sie etwas Bestimmtes brauchen, fragen Sie beim Hotel nach.",
+		src: "Nur, was das Hotel auf Booking.com angibt."
+	},
+	fr: {
+		h: "Avec enfants, animaux et accessibilité",
+		kids: "Enfants",
+		pets: "Animaux",
+		acc: "Accessibilité",
+		petNote: "L'accueil des animaux peut comporter des frais ou des limites (taille, nombre, chambres). Vérifiez la politique sur Booking.com avant de réserver.",
+		accNote: "Déclaré par l'hôtel, non vérifié par nous. Si vous avez besoin d'un équipement précis, confirmez-le avec l'hôtel.",
+		src: "Uniquement ce que l'hôtel indique sur Booking.com."
+	},
+	it: {
+		h: "Con bambini, animali e accessibilità",
+		kids: "Bambini",
+		pets: "Animali",
+		acc: "Accessibilità",
+		petNote: "Gli animali possono avere costi o limiti (taglia, numero, camere). Controlla le condizioni su Booking.com prima di prenotare.",
+		accNote: "Dichiarato dall'hotel, non verificato da noi. Se ti serve qualcosa di specifico, chiedi conferma all'hotel.",
+		src: "Solo ciò che l'hotel indica su Booking.com."
+	},
+	pt: {
+		h: "Com crianças, animais e acessibilidade",
+		kids: "Crianças",
+		pets: "Animais",
+		acc: "Acessibilidade",
+		petNote: "A política de animais pode ter custos ou limites (tamanho, número, quartos). Confirme-a no Booking.com antes de reservar.",
+		accNote: "Declarado pelo hotel, não verificado por nós. Se precisar de algo específico, confirme com o hotel.",
+		src: "Apenas o que o hotel indica no Booking.com."
+	},
+	da: {
+		h: "Med børn, kæledyr og tilgængelighed",
+		kids: "Børn",
+		pets: "Kæledyr",
+		acc: "Tilgængelighed",
+		petNote: "Kæledyr kan koste ekstra eller have begrænsninger (størrelse, antal, værelser). Tjek reglerne på Booking.com, før du booker.",
+		accNote: "Oplyst af hotellet, ikke kontrolleret af os. Har du brug for noget bestemt, så bekræft det med hotellet.",
+		src: "Kun det, hotellet oplyser på Booking.com."
+	}
+};
+var kpaH = (L) => (KPA_T[L] ?? KPA_T.en).h;
+/** Declared kids/pets/accessibility features of one hotel: facility names first, tags (family, pets) as fallback. */
+function kpaOf(facilities, tags) {
+	const f = facilities.map((x) => String(x).toLowerCase());
+	const hit = KPA.filter((d) => f.some((x) => d.re.test(x)) || (d.tag ? tags.includes(d.tag) : false));
+	return {
+		kids: hit.filter((d) => d.k === "kids"),
+		pets: hit.filter((d) => d.k === "pets"),
+		acc: hit.filter((d) => d.k === "acc")
+	};
+}
+function kpaBlock(L, id, facilities, tags) {
+	const t = KPA_T[L] ?? KPA_T.en;
+	const g = kpaOf(facilities, tags);
+	if (!g.kids.length && !g.pets.length && !g.acc.length) return "";
+	const row = (lab, ico, xs) => xs.length ? `<li><b><span aria-hidden="true">${ico}</span> ${e(lab)}:</b> ${xs.map((d) => e(d.lab[L] ?? d.lab.en)).join(", ")}</li>` : "";
+	return `<h2 id="${id}">${e(t.h)}</h2><ul class="hp5-kpa">${row(t.kids, "👪", g.kids)}${row(t.pets, "🐾", g.pets)}${row(t.acc, "♿", g.acc)}</ul>${g.pets.length ? `<p class="hp-small" style="text-align:left">${e(t.petNote)}</p>` : ""}${g.acc.length ? `<p class="hp-small" style="text-align:left">${e(t.accNote)}</p>` : ""}<p class="hp-small" style="text-align:left">${e(t.src)}</p>`;
+}
+var CSS5 = `.hp5-kpa{list-style:none;padding:0;margin:4px 0 8px}.hp5-kpa li{padding:4px 0}.hp5-sum{font-size:16px;margin:0 0 14px}.hp5-sum b{font-weight:700}.hp5-fac{display:grid;gap:4px 22px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}.hp5-fac h3{font-size:15px;margin:10px 0 4px}.hp5-fac ul{list-style:none;margin:0;padding:0}.hp5-fac li{padding:3px 0}
 .hp5-map{margin:8px 0 16px}.hp5-map svg{max-width:520px;display:block}.hp5-leg{list-style:none;margin:8px 0 4px;padding:0;font-size:14px;display:grid;gap:2px}
 .hp5-th{display:flex;gap:6px;overflow-x:auto;margin:-10px 0 16px;padding:2px}.hp5-th button{flex:0 0 auto;padding:0;border:2px solid transparent;border-radius:8px;background:none;cursor:pointer;line-height:0;min-height:44px}.hp5-th button[aria-current=true]{border-color:#0b3b8c}.hp5-th img{width:96px;height:64px;object-fit:cover;border-radius:6px}.hp5-th button:focus-visible{outline:3px solid #0b3b8c;outline-offset:2px}
 .hp5-chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:6px 0 16px}.hp5-chips li{padding:6px 12px;border-radius:999px;background:var(--pale,#eef3fa);font-size:14px}
@@ -66865,6 +67081,599 @@ var CSS5 = `.hp5-sum{font-size:16px;margin:0 0 14px}.hp5-sum b{font-weight:700}.
 .hp5-toc{display:none}@media (min-width:1240px){.hp5-toc{display:block;position:fixed;top:96px;left:calc(50% + 400px);width:210px;font-size:14px;max-height:70vh;overflow:auto;border-left:2px solid rgba(127,127,127,.25);padding-left:12px}.hp5-toc b{display:block;margin-bottom:6px}.hp5-toc a{display:block;padding:3px 0;text-decoration:none}}
 @media print{header,footer,nav,.hp5-toc,.hp5-th,.hp-cta,.hp-alt,.hp-small,.hp-badgebox,.hp-copy,.hp5-box,.hp-others,script,.hp-faq summary::marker,#cookie,.cookie,.consent,[data-fav],.bar{display:none!important}body{font-size:10.5pt;line-height:1.35;color:#000;background:#fff}.post{max-width:none;margin:0;padding:0}.hp-hero{max-height:6cm;width:auto;aspect-ratio:auto}h1{font-size:18pt;margin:0 0 4pt}h2{font-size:12pt;margin:8pt 0 3pt;break-after:avoid}p{margin:0 0 4pt}.hp-faq details{padding:2pt 0}.hp-faq details>*{display:block}.hp5-map svg{max-width:7cm}a{color:#000;text-decoration:none}@page{size:A4;margin:12mm}}`;
 var JS5 = `<script>(function(){var h=document.querySelector('.hp-hero');document.querySelectorAll('[data-hpth]').forEach(function(b){b.addEventListener('click',function(){if(!h)return;h.src=b.getAttribute('data-hpth');h.removeAttribute('srcset');document.querySelectorAll('[data-hpth]').forEach(function(x){x.setAttribute('aria-current',x===b?'true':'false')})})});var p=document.querySelector('.hp-px b'),s=document.querySelector('[data-hppx]');if(p&&s){s.querySelector('b').textContent=p.textContent;s.hidden=false}})();<\/script>`;
+var airport_web_default = {
+	AAL: "http://www.aal.dk",
+	AAR: "http://www.aar.dk/",
+	ABE: "https://flyabe.com",
+	ABQ: "http://www.abqsunport.com/",
+	ABV: "http://www.faannigeria.org/nigeria-airport.php?airport=3",
+	ABZ: "http://www.aberdeenairport.com/",
+	ACE: "https://www.lanzaroteairport.info/barrier-free-disability-assistance-service/",
+	ACH: "https://www.peoples.ch/lszr",
+	ACY: "https://acairport.com",
+	ADB: "http://www.adnanmenderesairport.com",
+	ADD: "http://www.ethiopianairports.com",
+	ADJ: "https://jac.jo",
+	AEP: "https://www.aeropuertosargentina.com/es/AEP",
+	AES: "https://www.avinor.no/airport/alesund/",
+	AGP: "https://www.aena.es/en/malaga-costa-del-sol.html",
+	AGU: "https://www.aeropuertosgap.com.mx/es/aguascalientes.html",
+	AHO: "https://www.aeroportodialghero.it",
+	AKL: "http://www.auckland-airport.co.nz/",
+	ALC: "https://www.aena.es/en/alicante-elche.html",
+	AMA: "http://airport.amarillo.gov/",
+	AMD: "https://www.adani.com/svpia-ahmedabad-airport",
+	AMS: "https://www.schiphol.nl/",
+	ANR: "http://www.antwerp-airport.be/",
+	AOE: "https://hph.eskisehir.edu.tr/tr/",
+	AOI: "https://ancona-airport.com/en/",
+	AOJ: "https://aomori-airport.co.jp",
+	ARI: "https://aeropuertoarica.cl/",
+	ARN: "http://www.swedavia.se/arlanda/",
+	ASR: "http://www.dhmi.gov.tr/Sayfalar/Havalimani/Kayseri/AnaSayfa.aspx",
+	ASW: "https://aswan-airport.com",
+	ATH: "https://www.aia.gr",
+	ATL: "https://www.atl.com",
+	ATQ: "http://www.aai.aero/allAirports/amritsar_generalinfo.jsp",
+	ATW: "http://atwairport.com/",
+	AUH: "https://www.zayedinternationalairport.ae/",
+	AUS: "https://www.flyaustin.com",
+	AVL: "https://flyavl.com",
+	AVN: "https://avignon.aero/",
+	AVV: "https://www.avalonairport.com.au/",
+	AYT: "http://www.antalya.dhmi.gov.tr/havaalanlari/default.aspx?hv=4",
+	BAH: "https://www.bahrainairport.bh/",
+	BBU: "http://www.baneasa-airport.ro/",
+	BCD: "https://www.bacolod-silayairport.com/",
+	BCN: "https://www.aena.es/en/josep-tarradellas-barcelona-el-prat.html",
+	BDS: "http://www.seap-puglia.it/default.asp?idlingua=2&idcontenuto=29",
+	BEB: "https://www.hial.co.uk/benbecula-airport",
+	BEG: "http://www.beg.aero/",
+	BEL: "http://www.infraero.gov.br/index.php/br/aeroportos/para/aeroporto-internacional-de-belem.html",
+	BER: "https://ber.berlin-airport.de/",
+	BES: "https://www.brest.aeroport.bzh",
+	BEY: "http://www.beirutairport.gov.lb/",
+	BFN: "https://sa-airports.co.za/bram-fischer-airport",
+	BFS: "http://www.belfastairport.com/",
+	BGI: "http://www.gaia.bb/content/about-gaia-inc",
+	BGM: "http://binghamtonairport.com/",
+	BGO: "http://www.avinor.no/en/airport/bergen",
+	BGY: "http://www.sacbo.it/",
+	BHI: "https://www.aeropuertobahiablanca.com/",
+	BHM: "http://www.flybirmingham.com/",
+	BHO: "http://aai.aero/allAirports/bhopal_generalinfo.jsp",
+	BHX: "https://www.birminghamairport.co.uk/",
+	BIA: "https://bastia-aeroport.cci.corsica/",
+	BIO: "https://www.aena.es/en/bilbao.html",
+	BIQ: "https://biarritz.aeroport.fr/en/",
+	BIS: "https://bismarckairport.com/",
+	BJZ: "https://www.aena.es/en/badajoz.html",
+	BKG: "http://flybranson.com/",
+	BLL: "http://www.billund-airport.dk/?sc_lang=en",
+	BLQ: "http://www.bologna-airport.it/?LN=UK",
+	BNA: "https://flynashville.com/",
+	BNX: "http://www.banjaluka-airport.com/",
+	BOD: "https://www.bordeaux.aeroport.fr/",
+	BOG: "https://eldorado.aero/",
+	BOH: "http://www.bournemouthairport.com/",
+	BOI: "http://www.cityofboise.org/departments/airport/",
+	BOS: "http://www.massport.com/logan/",
+	BRC: "http://www.aa2000.com.ar/bariloche",
+	BRE: "https://www.bremen-airport.com",
+	BRI: "http://www.seap-puglia.it/default.asp?idlingua=2&idcontenuto=25",
+	BRN: "https://www.bernairport.ch/de/",
+	BRQ: "http://www.airport-brno.cz/index.php?id=0&lang=en",
+	BRS: "http://www.bristolairport.co.uk/",
+	BRU: "http://www.brusselsairport.be/en/",
+	BSB: "http://www.infraero.gov.br/usa/aero_prev_home.php?ai=146",
+	BSL: "http://www.euroairport.com/",
+	BTV: "http://www.vermontairports.com/btv.html",
+	BUD: "http://www.bud.hu/english",
+	BUF: "https://www.buffaloairport.com/",
+	BUR: "https://www.hollywoodburbankairport.com/",
+	BUS: "https://batumiairport.com/",
+	BVA: "https://www.aeroportparisbeauvais.com/",
+	BVB: "https://www.boavista-airport.com.br/",
+	BVE: "http://www.aeroport-brive-vallee-dordogne.fr",
+	BWI: "https://www.bwiairport.com/",
+	BZG: "http://www.plb.pl/",
+	BZN: "https://bozemanairport.com",
+	BZO: "http://www.abd-airport.it/en/home.htm",
+	BZR: "https://beziers.aeroport.fr/en/",
+	CAE: "https://flycae.com",
+	CAN: "http://www.baiyunairport.com/english/index.jsp",
+	CCF: "https://www.aeroport-carcassonne.com/",
+	CCP: "https://aeropuertocarrielsur.cl",
+	CCS: "http://www.aeropuerto-maiquetia.com.ve/web/",
+	CCU: "https://www.nscbiairport.com/",
+	CDG: "http://www.aeroportsdeparis.fr/",
+	CDT: "https://www.aeroportcastello.com/",
+	CEB: "http://www.mactan-cebuairport.com.ph/",
+	CEI: "https://chiangrai.airportthai.co.th/",
+	CFE: "https://www.clermont-aeroport.com/en",
+	CFR: "https://www.caen.aeroport.fr/",
+	CFU: "https://www.cfu-airport.gr/en",
+	CGB: "https://www.infraero.gov.br/index.php/aeroportos/mato-grosso/aeroporto-internacional-marechal-rondon",
+	CGH: "https://www.aenabrasil.com.br/en/airports/congonhas-airport/index.html",
+	CGN: "http://www.koeln-bonn-airport.de/en/",
+	CHA: "https://www.flycha.com/",
+	CHC: "http://www.christchurchairport.co.nz/",
+	CHS: "https://www.iflychs.com/",
+	CIY: "http://www.aeroportodicomiso.it/",
+	CJB: "http://www.airportsindia.org.in/allAirports/coimbatore_generalinfo.jsp",
+	CJJ: "https://www.airport.co.kr/cheongjueng/index.do",
+	CLE: "http://www.clevelandairport.com/",
+	CLJ: "http://www.airportcluj.ro/",
+	CLL: "https://flyeasterwood.com/",
+	CLO: "https://www.aerocali.com.co/",
+	CLT: "http://www.charlotteairport.com/",
+	CMB: "http://www.airport.lk/",
+	CMF: "https://www.chambery-airport.com/en",
+	CMH: "https://flycolumbus.com/",
+	CMN: "https://www.aeroportcasablanca.ma/en/Our-Airports/Casablanca-Mohammed-V-Airport",
+	CND: "http://www.mk-airport.ro/",
+	CNF: "http://www.infraero.gov.br/usa/aero_prev_home.php?ai=207",
+	CNS: "https://www.cairnsairport.com.au/",
+	COR: "https://www.aeropuertosargentina.com/en/COR",
+	COS: "https://flycos.coloradosprings.gov/",
+	COV: "https://cukurovaairport.aero/",
+	CPH: "http://www.cph.dk/en/",
+	CPT: "https://www.airports.co.za/airports/cape-town-international-airport",
+	CRA: "http://www.aeroportcraiova.ro/",
+	CRL: "http://www.charleroi-airport.com",
+	CSG: "https://flycolumbusga.com",
+	CTA: "http://www.aeroporto.catania.it/",
+	CTS: "https://www.hokkaido-airports.com/en/new-chitose/",
+	CTU: "http://www.cdairport.com/cdairport/en_front/index.jsp",
+	CUF: "http://www.aeroporto.cuneo.it/",
+	CUN: "https://cancunairport.com",
+	CUZ: "http://www.corpac.gob.pe/",
+	CVG: "https://www.cvgairport.com/",
+	CWB: "https://www.ccraeroportos.com.br/curitiba-pr",
+	CWL: "http://www.cwlfly.com/",
+	CXR: "https://camranh.aero",
+	CZM: "http://www.asur.com.mx/",
+	DAL: "http://www.dallas-lovefield.com/",
+	DAR: "https://www.taa.go.tz/services/jnia",
+	DAY: "https://flydayton.com",
+	DBV: "https://www.airport-dubrovnik.hr/en",
+	DCA: "http://www.flyreagan.com/dca/reagan-national-airport",
+	DEB: "http://www.airportdebrecen.hu/",
+	DEL: "https://www.newdelhiairport.in/",
+	DEN: "http://www.flydenver.com/",
+	DFW: "https://www.dfwairport.com/",
+	DGT: "https://dumaguete.com/dumaguete-airport-sibulan/",
+	DJT: "https://flydjt.org/",
+	DLC: "https://dlairport.com",
+	DLE: "https://dole.aeroport.fr/",
+	DLM: "https://www.dalamanairport.aero/",
+	DMK: "http://www.airportthai.co.th/airportnew/bangkok/index.asp?lang=en",
+	DND: "http://www.hial.co.uk/dundee-airport.html",
+	DOH: "http://dohahamadairport.com/",
+	DOL: "https://www.deauville.aeroport.fr/",
+	DPS: "http://www.angkasapura1.co.id/eng/location/bali.htm",
+	DRS: "http://www.dresden-airport.de/en/index.html",
+	DRW: "https://www.darwinairport.com.au/",
+	DSS: "http://www.dakaraeroport.com/",
+	DTM: "https://www.dortmund-airport.com/",
+	DTW: "http://www.metroairport.com/",
+	DUB: "http://www.dublinairport.com/",
+	DUD: "https://www.dnairport.co.nz/",
+	DUS: "http://www.dus.com/dus_en/",
+	DXB: "https://www.dubaiairport.com/",
+	EAS: "https://www.aena.es/en/san-sebastian.html",
+	EDI: "http://www.edinburghairport.com/",
+	EGC: "https://www.bergerac.aeroport.fr/",
+	EIN: "http://www.eindhovenairport.nl/",
+	EMA: "http://www.eastmidlandsairport.com/",
+	ERF: "http://www.airport-erfurt.de/",
+	ESB: "https://esenbogaairport.com/",
+	ETZ: "https://lorraineaeroport.com/",
+	EVN: "http://www.aia-zvartnots.aero/",
+	EXT: "http://www.exeter-airport.co.uk/",
+	FAE: "https://www.fae.fo/",
+	FAO: "http://faroairport.pt",
+	FCO: "http://www.adr.it/portal/portal/adr/Fiumicino/Leonardo_da_vinci/Header_Window?action=2",
+	FDH: "https://www.bodensee-airport.eu",
+	FKB: "http://www.baden-airpark.de/startseite.html",
+	FLL: "http://www.broward.org/airport",
+	FLN: "http://www.infraero.gov.br/usa/aero_prev_home.php?ai=228",
+	FLR: "http://www.aeroporto.firenze.it/",
+	FMO: "https://www.fmo.de/",
+	FNA: "http://www.freetownairport.com/",
+	FNC: "http://www.aeroportomadeira.pt",
+	FNI: "https://www.nimes.aeroport.fr/en",
+	FOR: "https://fortaleza-airport.com.br/en",
+	FRA: "https://www.frankfurt-airport.de/",
+	FRL: "https://www.forliairport.net/",
+	FSC: "https://figari-aeroport.cci.corsica/",
+	FSZ: "https://www.mtfuji-shizuokaairport.jp.e.ajl.hp.transer.com/",
+	FUE: "https://www.aena.es/en/fuerteventura.html",
+	FUK: "http://www.fuk-ab.co.jp/english/frame_index.html",
+	GDL: "https://www.aeropuertosgap.com.mx/es/guadalajara",
+	GDN: "http://www.airport.gdansk.pl/",
+	GEG: "https://spokaneairports.net/",
+	GEO: "http://www.cjairport-gy.com/",
+	GHV: "https://brasovairport.ro/",
+	GIB: "https://www.gibraltarairport.gi/",
+	GLA: "http://www.glasgowairport.com/",
+	GMP: "https://www.airport.co.kr/gimpoeng/index.do",
+	GNB: "https://www.grenoble-airport.com/en",
+	GOA: "http://www.aeroportodigenova.com/en/home/index.php",
+	GOH: "https://www.airports.gl/en/airport/nuuk/",
+	GOT: "https://www.swedavia.com/landvetter/",
+	GRO: "https://www.aena.es/en/girona-costa-brava.html",
+	GRX: "https://www.aena.es/en/f.g.l.-granada-jaen.html",
+	GRZ: "http://www.flughafen-graz.at/",
+	GSO: "https://flyfrompti.com",
+	GUA: "https://theguatemalaairport.com",
+	GUW: "https://guw.aero",
+	GVA: "https://www.gva.ch/",
+	GYD: "https://www.airport-baku.com/",
+	GZP: "http://www.gzpairport.com/",
+	HAJ: "https://www.hannover-airport.de",
+	HAM: "https://www.hamburg-airport.de/en/",
+	HBA: "https://hobartairport.com.au",
+	HDF: "https://www.flughafen-heringsdorf.de/",
+	HEL: "https://www.finavia.fi/en/airports/helsinki-airport",
+	HER: "https://www.heraklion-airport.gr/en/",
+	HGH: "https://www.hzairport.com/",
+	HHN: "https://www.hahn-airport.de/en/home",
+	HIJ: "https://hij.airport.jp",
+	HKD: "https://www.hokkaido-airports.com/ja/hakodate/",
+	HKG: "http://www.hongkongairport.com/",
+	HKT: "https://phuket.airportthai.co.th/",
+	HLP: "https://www.angkasapura2.co.id/cabang/hlp/content.php?menu=8&page_id=1",
+	HND: "http://www.haneda-airport.jp/",
+	HNL: "http://airports.hawaii.gov/hnl/",
+	HOU: "http://www.fly2houston.com/hobbyHome",
+	HSV: "http://www.flyhuntsville.com",
+	HUY: "http://www.humbersideairport.com/",
+	HYD: "http://www.hyderabad.aero/",
+	IAS: "https://www.aeroport-iasi.ro/",
+	IBZ: "https://www.aena.es/en/ibiza.html",
+	ICN: "https://www.airport.kr/ap/en/index.do",
+	IGU: "https://aeroportos.motiva.com.br/foz-do-iguacu-pr/",
+	ILD: "http://www.aeroportlleida.cat/?L=2",
+	ILM: "https://flyilm.com",
+	IND: "http://www.indianapolisairport.com/",
+	INN: "http://www.innsbruck-airport.com/",
+	INV: "http://www.hial.co.uk/inverness-airport.html",
+	ITM: "https://www.osaka-airport.co.jp/en/",
+	IXB: "http://aai.aero/allAirports/bagdogra_generalinfo.jsp",
+	IXU: "http://aai.aero/allAirports/aurangabad_generalinfo.jsp",
+	JAC: "http://jacksonholeairport.com/",
+	JAI: "https://www.jaipurairport.com/",
+	JCL: "https://www.airport-cb.cz/",
+	JED: "https://www.kaia.sa/",
+	JER: "http://www.jerseyairport.com/",
+	JHB: "https://senaiairport.com",
+	JNB: "https://ortambo-airport.com/",
+	JRO: "http://www.kilimanjaroairport.co.tz/",
+	JTC: "http://www.daesp.sp.gov.br/aeroporto-estadual-de-bauru-arealva-moussa-nakhal-tobias/",
+	JTR: "https://www.jtr-airport.gr/",
+	KEF: "https://www.isavia.is/en/keflavik-airport",
+	KGL: "https://www.rac.co.rw/?utm_source=chatgpt.com",
+	KHH: "http://www.kia.gov.tw/english/e_index.asp",
+	KLU: "http://www.klagenfurt-airport.com/",
+	KLV: "http://www.airport-k-vary.cz/indexEN.php",
+	KMI: "https://miyazaki-airport.co.jp",
+	KMJ: "https://kumamoto-airport.co.jp",
+	KMQ: "https://www.komatsuairport.jp/index_en.html",
+	KNO: "http://www.kualanamu-airport.co.id/",
+	KOJ: "https://www.koj-ab.co.jp/en/",
+	KOS: "http://kos.cambodia-airports.aero/",
+	KPO: "http://pohang.airport.co.kr/",
+	KRK: "http://www.krakowairport.pl/en/",
+	KSF: "http://www.flughafenkassel.de/",
+	KTI: "https://www.techoairport.com.kh/",
+	KTM: "https://www.tiairport.com.np/",
+	KTW: "http://katowice.airport.com",
+	KUN: "http://www.kaunasair.lt/index.php?lang=2&m=2&p=210",
+	KYA: "http://www.konya.dhmi.gov.tr/havaalanlari/default.aspx?hv=28",
+	LAP: "https://www.aeropuertosgap.com.mx/en/la-paz-3.html",
+	LAS: "https://www.harryreidairport.com/",
+	LAX: "https://www.flylax.com/",
+	LBA: "http://www.lbia.co.uk/",
+	LBC: "https://www.flughafen-luebeck.de/en/home",
+	LCA: "http://www.cyprusairports.com.cy/showpage.php?PageID=2",
+	LCG: "https://www.aena.es/en/a-coruna.html",
+	LCJ: "https://www.lodz-airport.pl/en",
+	LDE: "https://www.tlp.aeroport.fr/",
+	LDY: "http://www.cityofderryairport.com/",
+	LEI: "https://www.aena.es/en/almeria.html",
+	LEJ: "https://www.mdf-ag.com/",
+	LEN: "https://www.aena.es/en/leon.html",
+	LEU: "http://www10.gencat.net/ptop/AppJava/cat/aerotrans/aerodroms/aerodroms/pirineus.jsp",
+	LGA: "https://www.laguardiaairport.com/",
+	LGB: "http://www.lgb.org/",
+	LGW: "http://www.gatwickairport.com/",
+	LHR: "http://www.heathrow.com/",
+	LIG: "https://www.aeroportlimoges.com/en/",
+	LIL: "https://www.lille.aeroport.fr/home/",
+	LIM: "http://www.lap.com.pe/",
+	LIN: "http://www.sea-aeroportimilano.it/en/",
+	LIS: "https://lisbonairport.pt",
+	LJU: "http://www.lju-airport.si/",
+	LNZ: "http://www.flughafen-linz.at/",
+	LOS: "http://www.faannigeria.org/nigeria-airport.php?airport=1",
+	LPA: "https://www.aena.es/en/gran-canaria.html",
+	LPB: "https://naabol.gob.bo/aeropuerto-internacional-el-alto/",
+	LPL: "http://www.liverpoolairport.com/",
+	LPQ: "https://www.luangprabangairport.com/",
+	LRH: "https://www.larochelle.aeroport.fr/en/",
+	LTN: "http://www.london-luton.co.uk/en/",
+	LUG: "https://www.luganoairport.ch/en/",
+	LUX: "https://www.lux-airport.lu/en/",
+	LYS: "https://www.lyonaeroports.com/",
+	MAD: "https://www.aena.es/en/adolfo-suarez-madrid-barajas.html",
+	MAH: "https://www.aena.es/en/menorca.html",
+	MAN: "http://www.manchesterairport.co.uk/",
+	MBA: "http://www.kenyaairports.co.ke/kaa/airports/moi/",
+	MCO: "http://www.orlandoairports.net/",
+	MCT: "https://www.muscatairport.co.om/",
+	MDW: "https://www.flychicago.com/midway/home/pages/default.aspx",
+	MDZ: "https://www.aeropuertosargentina.com/en/MDZ",
+	MEL: "http://melbourneairport.com.au/",
+	MEM: "https://flymemphis.com/",
+	MEX: "https://www.aicm.com.mx",
+	MFM: "http://www.macau-airport.gov.mo/en/index.php",
+	MHG: "http://www.flugplatz-mannheim.de/",
+	MIA: "https://www.miami-airport.com/",
+	MJT: "https://www.mjt-airport.gr/en/",
+	MKE: "https://www.mitchellairport.com/",
+	MLA: "https://www.maltairport.com/",
+	MLB: "https://www.mlbair.com/",
+	MLE: "https://www.airports.com.mv/",
+	MME: "https://www.teessideinternational.com/",
+	MMJ: "http://www.matsumoto-airport.co.jp/",
+	MMX: "http://www.swedavia.com/malmo/",
+	MNL: "https://newnaia.com.ph/",
+	MPL: "https://www.montpellier.aeroport.fr/",
+	MRS: "https://www.marseille.aeroport.fr/",
+	MRY: "https://montereyairport.com",
+	MSP: "https://www.mspairport.com/",
+	MSY: "https://flymsy.com/",
+	MTT: "http://www.asur.com.mx/asur/ingles/aeropuertos/minatitlan/minatitlan.asp",
+	MTY: "https://aeropuertomonterrey.oma.aero/es/",
+	MUC: "http://www.munich-airport.com/",
+	MXP: "http://www.sea-aeroportimilano.it/en/malpensa/index.phtml",
+	MYJ: "https://www.matsuyama-airport.co.jp/",
+	NAP: "http://www.portal.gesac.it/",
+	NBO: "https://www.kenyaairports.com/jkia/IndexJkia.php",
+	NCE: "https://www.nice.aeroport.fr/en",
+	NCL: "http://www.newcastleairport.com/",
+	NGO: "https://www.centrair.jp/en/index.html",
+	NGS: "https://nagasaki-airport.jp/en/",
+	NQY: "https://www.cornwallairportnewquay.com/",
+	NQZ: "https://www.nn-airport.kz",
+	NRN: "http://www.airport-weeze.de/de",
+	NTE: "https://www.nantes.aeroport.fr/en",
+	NTL: "https://www.newcastleairport.com.au/",
+	NUE: "https://www.airport-nuernberg.de/english",
+	NVT: "https://www.ccraeroportos.com.br/navegantes-sc",
+	NWI: "https://www.norwichairport.co.uk/",
+	OAK: "https://www.iflyoak.com/",
+	ODB: "https://www.aena.es/en/cordoba.html",
+	OHD: "https://ohd.airports.com.mk/",
+	OKA: "http://www.naha-airport.co.jp/",
+	OKC: "https://flyokc.com/",
+	OKJ: "https://okayama-airport.org",
+	OLB: "https://www.geasar.it/en",
+	OMA: "https://www.flyoma.com",
+	OMO: "http://www.mostar-airport.ba/",
+	OPO: "http://www.ana.pt/en-US/Aeroportos/porto/Porto/Pages/Homepage-Porto.aspx",
+	ORK: "http://www.corkairport.com/",
+	ORY: "https://www.parisaeroport.fr/orly",
+	OSL: "https://avinor.no/en/airport/oslo-airport",
+	OSR: "http://www.airport-ostrava.cz/en/",
+	OST: "http://www.ost.aero/",
+	OUL: "https://www.finavia.fi/en/oulu/",
+	OVD: "https://www.aena.es/en/asturias.html",
+	PBC: "http://www.aeropuertopuebla.com/",
+	PDL: "http://www.ana.pt/en-US/Aeroportos/acores/PontaDelgada/Pages/Homepage-PontaDelgada.aspx",
+	PDP: "http://www.puntadeleste.aero/",
+	PDV: "http://www.plovdivairport.com/",
+	PDX: "https://www.flypdx.com/",
+	PED: "http://www.airport-pardubice.cz/?lang=en",
+	PEG: "http://www.airport.umbria.it/",
+	PEK: "https://en.bcia.com.cn/",
+	PFO: "https://www.hermesairports.com/",
+	PGF: "https://www.aeroport-perpignan.com/",
+	PHL: "http://www.phl.org/",
+	PHX: "http://phoenix.gov/skyharborairport/",
+	PIK: "https://www.glasgowprestwick.com/",
+	PIS: "https://www.poitiers.aeroport.fr/",
+	PIT: "https://flypittsburgh.com/",
+	PLQ: "http://www.palanga-airport.lt/",
+	PMI: "https://www.aena.es/en/palma-de-mallorca.html",
+	PMO: "http://www.gesap.it/index.php",
+	PNA: "https://www.aena.es/en/pamplona.html",
+	POZ: "https://poznanairport.pl",
+	PPB: "http://www.daesp.sp.gov.br/aeroporto-detalhe/?id=879",
+	PRG: "http://www.prg.aero",
+	PSA: "http://www.pisa-airport.com/",
+	PSM: "https://flypsmairport.com",
+	PSP: "http://www.palmspringsca.gov/index.aspx?page=270",
+	PSR: "http://www.abruzzo-airport.it/eng/index.php",
+	PTY: "https://www.tocumenpanama.aero/",
+	PUF: "https://www.pau.aeroport.fr/passenger/",
+	PUS: "https://www.airport.co.kr/gimhaeeng/index.do",
+	PUY: "https://airport-pula.hr/en/",
+	PVD: "https://flyri.com/",
+	PVK: "https://www.pvk-airport.gr/en",
+	PVR: "https://thepuertovallartaairport.com/",
+	QRO: "http://www.aiq.com.mx/",
+	QSR: "http://www.aeroportosalerno.it/",
+	RBA: "https://www.onda.ma/en/Our-Airports/Rabat-Sale-Airport",
+	RDO: "http://lotnisko-radom.eu/pl/",
+	RDU: "https://www.rdu.com/",
+	REC: "http://www.infraero.gov.br/usa/aero_prev_home.php?ai=163",
+	REU: "https://www.aena.es/en/reus.html",
+	RGN: "http://www.yangonairportonline.com",
+	RHO: "https://www.rho-airport.gr/el/",
+	RIC: "https://flyrichmond.com/",
+	RIX: "http://www.riga-airport.com/",
+	RJK: "https://www.rijeka-airport.hr/",
+	RJL: "https://www.aena.es/en/logrono-agoncillo.html",
+	RMI: "http://www.riminiairport.com/english/",
+	RML: "https://www.airport.lk/rma/index",
+	RMO: "http://www.airport.md/",
+	RMQ: "http://www.tca.gov.tw/English/Introduction.htm",
+	RMU: "https://www.aena.es/en/internacional-region-de-murcia.html",
+	RNN: "http://www.bornholms-lufthavn.dk/en/",
+	RNO: "https://www.renoairport.com/",
+	RNS: "http://www.rennes.aeroport.fr/",
+	ROA: "http://www.flyroa.com",
+	ROC: "https://rocairport.com/",
+	RSW: "http://www.flylcpa.com/",
+	RTM: "https://www.rotterdamthehagueairport.nl/",
+	RUH: "https://www.kkia.sa/en/Pages/default.aspx",
+	RVN: "http://www.finavia.fi/en/rovaniemi/",
+	RZE: "https://www.rzeszowairport.pl",
+	SAF: "https://flysantafe.com/flights/airlines/",
+	SAI: "http://english.sai-airport.com/",
+	SAN: "http://www.san.org/",
+	SAT: "https://www.sanantonio.gov/aviation",
+	SAV: "https://savannahairport.com/",
+	SAW: "http://www.sgairport.com/",
+	SCL: "http://www.aeropuertosantiago.cl/ingles/index.php",
+	SCN: "http://www.flughafen-saarbruecken.de/",
+	SCQ: "https://www.aena.es/en/santiago-rosalia-de-castro.html",
+	SCR: "https://scandinavianmountains.se/en/home/",
+	SCV: "http://www.aeroportsuceava.ro/index_en.html",
+	SDF: "http://www.flylouisville.com",
+	SDQ: "http://www.aerodom.com/app/do/lasamericas.aspx",
+	SDR: "https://www.aena.es/en/seve-ballesteros-santander.html",
+	SDU: "https://www4.infraero.gov.br/aeroporto-santos-dumont/",
+	SEA: "https://www.portseattle.org/sea-tac",
+	SEN: "http://www.londonsouthendairport.com/",
+	SFB: "https://flysfb.com",
+	SGN: "http://www.tsnairport.hochiminhcity.gov.vn/",
+	SHA: "http://www.shairport.com/enhq/index.html",
+	SHJ: "https://www.sharjahairport.ae/en/",
+	SIN: "http://www.changiairport.com/",
+	SJC: "https://www.flysanjose.com/",
+	SJD: "https://www.loscabosairport.com/",
+	SJJ: "http://www.sarajevo-airport.ba/",
+	SJO: "https://www.sjoairport.com/",
+	SKG: "https://www.skg-airport.gr/en",
+	SKP: "http://skp.airports.com.mk/",
+	SLC: "https://slcairport.com/",
+	SLL: "https://salalahairport.co.om/",
+	SLM: "https://www.aena.es/en/salamanca.html",
+	SMF: "https://sacramento.aero/smf",
+	SNA: "http://www.ocair.com/",
+	SNN: "http://www.shannonairport.com/",
+	SOB: "http://www.flybalaton.com/?null&lang=en",
+	SOC: "https://adisumarmo-airport.com/en",
+	SOF: "http://sofia-airport.bg",
+	SOU: "http://www.southamptonairport.com/",
+	SPU: "https://split-airport.hr",
+	SRG: "https://www.ahmadyani-airport.com/id",
+	SRQ: "https://flysrq.com",
+	SSA: "https://www4.infraero.gov.br/aeroportos/aeroporto-internacional-de-salvador-dep-luis-eduardo-magalhaes/web",
+	STN: "http://www.stanstedairport.com/",
+	STR: "http://www.flughafen-stuttgart.de/",
+	SUB: "http://www.juanda-airport.com/",
+	SVG: "http://www.avinor.no/en/airport/stavanger/",
+	SVQ: "https://www.aena.es/en/seville.html",
+	SXB: "http://www.strasbourg.aeroport.fr/E/index.php",
+	SYD: "http://www.sydneyairport.com.au/",
+	SZF: "http://www.carsamba.dhmi.gov.tr/havaalanlari/default.aspx?hv=32",
+	SZG: "http://www.salzburg-airport.com/",
+	SZX: "https://www.szairport.com/szairporten/index.shtml",
+	SZY: "http://mazuryairport.pl/",
+	SZZ: "http://www.airport.com.pl/en/index.php",
+	TAT: "https://www.popradtatry.aero/",
+	TAY: "https://tartu-airport.ee",
+	TBS: "http://www.tbilisiairport.com/",
+	TER: "http://aerogarelajes.azores.gov.pt",
+	TFN: "https://www.aena.es/en/tenerife-norte-ciudad-de-la-laguna.html",
+	TFS: "https://www.aena.es/en/tenerife-sur.html",
+	TGD: "https://montenegroairports.com/en/podgorica-airport/",
+	TGZ: "http://www.chiapas.aero/index.html",
+	TIA: "http://www.tirana-airport.com/",
+	TIJ: "http://aeropuertosgap.com.mx/english/airports/tijuana-airport",
+	TKU: "https://www.finavia.fi/en/turku/",
+	TLL: "https://airport.ee/",
+	TLN: "http://toulon-hyeres.aeroport.fr/",
+	TLS: "http://www.toulouse.aeroport.fr/",
+	TLV: "http://www.iaa.gov.il/Rashat/en-US/Airports/BenGurion/",
+	TMP: "https://www.finavia.fi/en/tampere-pirkkala/",
+	TNN: "http://www.tna.gov.tw/",
+	TOS: "http://www.avinor.no/en/airport/tromso",
+	TOY: "https://toyama-airport.jp",
+	TPA: "https://www.tampaairport.com/",
+	TQO: "https://aitulum.com/en",
+	TRD: "https://avinor.no/en/airport/trondheim-airport/",
+	TRE: "http://www.hial.co.uk/tiree-airport.html",
+	TRN: "http://www.aeroportoditorino.it/",
+	TRS: "http://www.triesteairport.it",
+	TSA: "http://www.tsa.gov.tw/",
+	TSF: "http://www.trevisoairport.it",
+	TSM: "http://www.taosairport.org/",
+	TSV: "http://www.townsvilleairport.com.au/",
+	TUF: "http://www.tours.aeroport.fr/index_en.php",
+	TUN: "http://www.oaca.nat.tn/english/div_horizontal_tunis_airport_eng.htm",
+	TUS: "https://www.flytucson.com/",
+	TVC: "https://tvcairport.com",
+	UBN: "https://ulaanbaatar-airport.mn/",
+	UDR: "http://www.airportsindia.org.in/allAirports/udaipur_airpo_gi.jsp",
+	UIH: "https://vietnamairport.vn/phucatairport/",
+	UIO: "https://www.aeropuertoquito.aero/?lang=en",
+	UKB: "https://kairport.co.jp",
+	UME: "https://www.swedavia.com/umea/",
+	UST: "http://www.flynf.com/",
+	UTP: "http://www.utapao.com/",
+	VAA: "http://www.finavia.fi/en/vaasa/",
+	VCE: "http://www.veniceairport.com/core/index.jsp?_requestid=37300&language=en",
+	VCP: "https://www.viracopos.com/",
+	VER: "http://www.asur.com.mx/asur/ingles/aeropuertos/veracruz/veracruz.asp",
+	VGO: "https://www.aena.es/en/vigo.html",
+	VIE: "http://www.viennaairport.com/en/",
+	VIT: "https://www.aena.es/en/vitoria.html",
+	VLC: "https://www.aena.es/en/valencia.html",
+	VLL: "https://www.aena.es/en/valladolid.html",
+	VNO: "http://www.vilnius-airport.lt/en/",
+	VNS: "https://www.aai.aero/en/airports/varanasi",
+	VRN: "http://www.aeroportoverona.it/",
+	VTE: "http://www.vientianeairport.com/",
+	WAW: "http://www.lotnisko-chopina.pl/?lang=en",
+	WDH: "http://airports.com.na/",
+	WLG: "http://www.wellingtonairport.co.nz/",
+	WRO: "http://www.airport.wroclaw.pl/en/index.php",
+	WVB: "https://www.airports.com.na/airports/overview/44/",
+	XCR: "https://www.parisvatry.com/",
+	XIY: "https://www.xxia.com/",
+	XNA: "http://www.flyxna.com/",
+	XPL: "https://palmerolaairport.com/",
+	XRY: "https://www.aena.es/en/jerez.html",
+	YHM: "https://www.flyhi.ca/",
+	YHZ: "http://www.hiaa.ca/",
+	YIA: "https://www.yogyakarta-airport.co.id/",
+	YLW: "https://ylw.kelowna.ca/",
+	YNT: "http://www.ytairport.com.cn/",
+	YOW: "https://yow.ca/",
+	YQB: "http://www.aeroportdequebec.com/",
+	YQG: "https://flyyqg.ca/",
+	YUL: "http://www.admtl.com/passager/Home.aspx",
+	YVR: "http://www.yvr.ca/",
+	YWG: "http://www.waa.ca/",
+	YXU: "http://www.londonairport.on.ca/",
+	YXX: "http://www.abbotsfordairport.ca/",
+	YYC: "http://www.calgaryairport.com/",
+	YYJ: "http://www.victoriaairport.com/",
+	YYT: "https://www.stjohnsairport.com/",
+	YYZ: "http://www.torontopearson.com/",
+	ZAD: "https://www.zadar-airport.hr/en",
+	ZAG: "https://www.zagreb-airport.hr/en",
+	ZAZ: "https://www.aena.es/en/zaragoza.html",
+	ZCL: "http://www.oma.aero/es/aeropuertos/zacatecas/",
+	ZQN: "https://www.queenstownairport.co.nz/",
+	ZRH: "http://www.zurich-airport.com/",
+	ZTH: "https://www.zth-airport.gr"
+};
 /**
 * Server-rendered SEO layer for Top3Hotels (v2).
 *
@@ -66875,6 +67684,39 @@ var JS5 = `<script>(function(){var h=document.querySelector('.hp-hero');document
 * No framework: plain HTML + inline CSS, a few lines of JS for the map.
 */
 var BROKEN_PH = new Set(photo_broken_default.urls);
+/** T9.41/T9.36: main airport of each city in a country, grouped by airport (OurAirports, straight-line km). */
+function countryAirports(list, L) {
+	const g = /* @__PURE__ */ new Map();
+	for (const c of list) {
+		const a = C4DATA.airports[c.id];
+		if (!a) continue;
+		if (!g.has(a.i)) g.set(a.i, {
+			n: a.n,
+			cs: []
+		});
+		g.get(a.i).cs.push(c);
+	}
+	if (!g.size) return "";
+	const T = {
+		en: ["Main airports", "Main airport of each city, from OurAirports (public domain). Distances in a straight line from the city centre."],
+		es: ["Aeropuertos principales", "Aeropuerto principal de cada ciudad, según OurAirports (dominio público). Distancias en línea recta desde el centro."],
+		de: ["Wichtigste Flughäfen", "Hauptflughafen jeder Stadt laut OurAirports (gemeinfrei). Entfernungen in Luftlinie vom Zentrum."],
+		fr: ["Principaux aéroports", "Aéroport principal de chaque ville, d'après OurAirports (domaine public). Distances à vol d'oiseau depuis le centre."],
+		it: ["Aeroporti principali", "Aeroporto principale di ogni città, da OurAirports (pubblico dominio). Distanze in linea d'aria dal centro."],
+		pt: ["Principais aeroportos", "Aeroporto principal de cada cidade, segundo o OurAirports (domínio público). Distâncias em linha reta a partir do centro."],
+		da: ["Vigtigste lufthavne", "Hovedlufthavn for hver by ifølge OurAirports (public domain). Afstande i luftlinje fra centrum."]
+	};
+	const [h, note] = T[L] ?? T.en;
+	const hv = (a, b, c, d) => {
+		const r = Math.PI / 180, x = Math.sin((c - a) * r / 2) ** 2 + Math.cos(a * r) * Math.cos(c * r) * Math.sin((d - b) * r / 2) ** 2;
+		return 12742 * Math.asin(Math.sqrt(x));
+	};
+	const rows = [...g.entries()].sort((a, b) => b[1].cs.length - a[1].cs.length || a[0].localeCompare(b[0])).slice(0, 30);
+	return `<section aria-labelledby="ctyap"><h2 id="ctyap"><span aria-hidden="true">✈</span> ${esc(h)}</h2><ul>${rows.map(([i, a]) => `<li><b>${esc(i)}</b> ${esc(a.n)}: ${a.cs.map((c) => {
+		const ap = C4DATA.airports[c.id];
+		return `<a href="${P(L, "/" + c.slug)}">${esc(cityName(c, L))}</a> (${Math.round(hv(c.lat, c.lng, ap.la, ap.lo))} km)`;
+	}).join(", ")}</li>`).join("")}</ul><p class="note">${esc(note)}</p></section>`;
+}
 var SITE = "https://www.top3hotels.com";
 var SNAPSHOT_DATE = "2026-10-08";
 var BRAND = {
@@ -68650,7 +69492,15 @@ ${fw4}${price4}${fac4}${car4}${kids4}
 <section aria-labelledby="maph"><h2 id="maph">${esc(t.map)}</h2><div id="map" role="img" aria-label="${esc(t.mapHint)}"></div><div class="legend"><span><i style="background:#1f7a5a"></i>${esc(t.cat.Budget)}</span><span><i style="background:#d83b51"></i>${esc(t.cat["Best Value"])}</span><span><i style="background:#b8860b"></i>${esc(label(lux, L))}</span>${sights?.length ? `<span><i style="background:#46566a"></i>${esc(sights.map((s) => s.name).join(" · "))}</span>` : ""}</div>${route4}</section>
 <section aria-labelledby="cmp"><h2 id="cmp">${esc(t.compared(city.city))}</h2><div class="tablewrap"><table><thead><tr>${t.cols.map((c) => `<th>${esc(c)}</th>`).join("")}${allD ? `<th>${esc(c4.toCentre)}</th>` : ""}</tr></thead><tbody>
 ${hs.map((h, i) => `<tr><td>${esc(label(h, L))}</td><td>${bks(h, "t3city-t") ? `<a href="${esc(bks(h, "t3city-t"))}" rel="sponsored nofollow noopener" target="_blank" data-t="check_availability" data-city="${esc(city.slug)}" data-cat="${catKey(h)}" data-p="booking-table" aria-label="${esc(ariaH(h))}">${esc(h.name)}<span aria-hidden="true"> ↗</span></a>` : esc(h.name)}</td><td>${esc(h.area ?? "")}</td><td>${h.booking?.stars ?? "–"}</td><td${i === iTop ? " class=\"win\"" : ""}>${h.booking?.score != null ? scoreL(h.booking.score, L) : "–"} (${intL(h.booking?.count, L)})</td><td${i === iCheap ? " class=\"win\"" : ""}>${moneyL(h.offer?.nightly, L)}</td>${allD ? `<td${i === iCentral ? " class=\"win\"" : ""}>${km1(dC[i])} km</td>` : ""}</tr>`).join("")}
-</tbody></table></div><p class="note">${esc(c4.scale)}${ap ? ` ${esc(c4.srcAir)}` : ""}${x4.some((x) => x.dist.includes("🚆")) ? ` ${esc(tx5(L).stNote)}` : ""}</p></section>
+</tbody></table></div><p class="note">${esc(c4.scale)}${ap ? ` ${esc(c4.srcAir)}` : ""}${ap && airport_web_default[ap.i] ? ` <a href="${esc(airport_web_default[ap.i])}" target="_blank" rel="nofollow noopener">${esc({
+			en: "Official website",
+			es: "Web oficial",
+			de: "Offizielle Website",
+			fr: "Site officiel",
+			it: "Sito ufficiale",
+			pt: "Site oficial",
+			da: "Officiel hjemmeside"
+		}[L] ?? "Official website")}: ${esc(ap.n)}<span aria-hidden="true"> ↗</span></a>` : ""}${x4.some((x) => x.dist.includes("🚆")) ? ` ${esc(tx5(L).stNote)}` : ""}</p></section>
 <section aria-labelledby="faq"><h2 id="faq">${esc(t.faqTitle(city.city))}</h2><dl class="faq">${faq.map(([q, a]) => `<dt>${esc(q)}</dt><dd>${esc(a)}</dd>`).join("")}</dl></section>
 ${events4}${sim4}${next4}
 <section aria-labelledby="how"><h2 id="how">${esc(t.howTitle)}</h2><p class="lead">${esc(t.howText)} <a href="/how-we-choose">${esc(t.how)} →</a></p></section>
@@ -68837,7 +69687,7 @@ async function countryPage(cslug, L) {
 <div class="tiles">${tiles.join("")}</div>
 <section><div class="tablewrap"><table><thead><tr><th>${esc(t.allDest)}</th><th>${esc(t.cat.Budget)}</th><th>${esc(t.cat["Best Value"])}</th><th>${esc(t.cat.Luxury)}</th></tr></thead><tbody>
 ${rows.filter((r) => r.d).map(({ c, d }) => `<tr><td><a href="${P(L, "/" + c.slug)}"><strong>${esc(c.city)}</strong></a></td>${d.hotels.map((h) => `<td>${esc(h.name)}<br><small>${h.booking?.score?.toFixed(1) ?? "–"}/10 · ${money(h.offer?.nightly)}</small></td>`).join("")}</tr>`).join("")}
-</tbody></table></div></section>${await countryFilterBlock(cslug, list.map((c) => ({
+</tbody></table></div></section>${countryAirports(list, L)}${await countryFilterBlock(cslug, list.map((c) => ({
 		slug: c.slug,
 		name: cityName(c, L)
 	})), L).catch(() => "")}${GROWTH_LANGS.includes(L) && (await countryValueSlugs()).includes(cslug) ? `<p class="note"><a href="${P(L, `/best-value/${cslug}`)}">${esc(((W) => (W[L] ?? W.en)(cname))({
@@ -70294,6 +71144,9 @@ async function hotelPage(slug, L) {
 	});
 	const bestB = best5.length ? `<p style="margin:0 0 4px"><b>${esc(x5.bestH)}:</b></p><ul class="hp5-chips">${best5.map((b) => `<li>${esc(b)}</li>`).join("")}</ul>` : "";
 	const fac5 = facilitiesBlock(L, facList, "hp-fac");
+	const kpa5 = kpaBlock(L, "hp-kpa", facList, [...tags5 ?? []]);
+	const gd5 = guideFor(d.city_slug, L);
+	const guideB = gd5 ? `<p class="hp5-near"><a href="${P(L, `/guides/${gd5.slug}`)}">📖 ${esc(gd5.h1)}</a></p>` : "";
 	const sights5 = hcd?.extras?.sights ?? [];
 	const map5 = hasGeo ? mapBlock(L, "hp-map", {
 		name: String(f.name),
@@ -70390,6 +71243,7 @@ async function hotelPage(slug, L) {
 	const toc5 = [
 		["hp-key", h5.keyH],
 		...fac5 ? [["hp-fac", x5.facH]] : [],
+		...kpa5 ? [["hp-kpa", kpaH(L)]] : [],
 		...map5 ? [["hp-map", x5.mapH]] : [],
 		...howB ? [["hp-how", x5.howH]] : [],
 		["hp-faq", t.faq],
@@ -70417,7 +71271,8 @@ ${th5}<div class="hp-facts">${facts}</div>${addr5}
 ${bestB}${winB}
 ${key5f()}
 ${fac5}
-${map5}${nearB}
+${kpa5}
+${map5}${nearB}${guideB}
 ${howB}
 ${(c.sections ?? []).map((x) => `<h2>${esc(x.h)}</h2>${(x.p ?? []).map((pp) => `<p>${esc(pp)}</p>`).join("")}`).join("\n")}
 ${cta}
