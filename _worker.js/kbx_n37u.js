@@ -476,6 +476,7 @@ export async function foot(u, env, r) {
   const nc = ((r.headers.get('content-security-policy') || '').match(/'nonce-([^']+)'/) || [])[1], fl = '<script src="/k/fl.js?v=n40k2b" defer' + (nc ? ' nonce="' + nc + '"' : '') + '></script>';   // n40 R02-47: form errors linked to their fields (/k/fl.js)
   const lt = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:check\/)?$/.test(u.pathname) ? lateBox(l, nc) : '', ltSel = /check\/$/.test(u.pathname) ? '#analyze' : '#hp-band';
   return new HTMLRewriter().on('head', { element(e) { if (zh) e.append(zh, { html: true }); } }).on('body', { element(e) { e.append(fl, { html: true }); } }).on(ltSel, { element(e) { if (lt) e.after(lt, { html: true }); } })
+    .on('#n40-meth', { element(e) { e.remove(); } })   // n40 k12: translated rankings arrived with the English box already in them; drop it, the box in the page language is appended below
     .on('main', { element(e) { const cg = cgBox(l, u.pathname); if (cg) e.append(cg, { html: true }); if (/^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?rankings\//.test(u.pathname)) e.append('<section class="wrap" id="n40-meth"' + dir(l) + '><div style="border:1px solid var(--line,#d9d9d9);border-radius:12px;padding:14px 16px;margin:24px 0"><h2 style="font-size:1.05rem;margin:0 0 6px">' + esc(t(l, 'mt_h')) + '</h2><p style="margin:0">' + esc(t(l, 'mt_p')) + ' <a href="' + pre(l) + '/how-we-score/">' + esc(t(l, 'mt_a')) + '</a></p></div></section>', { html: true }); } }).transform(r);   // n40 R02-40: method box on every rankings page
 }
 let STATS = null;
