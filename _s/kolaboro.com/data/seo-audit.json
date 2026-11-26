@@ -1,0 +1,1070 @@
+{
+ "version": "seo-audit-1",
+ "generated_at": "2026-11-14T15:26Z",
+ "base": "https://kolaboro.com",
+ "crawler": "KolaboroSEOAudit/1.0 (+https://kolaboro.com/engineering/seo/)",
+ "sitemaps": [
+  "https://kolaboro.com/sitemaps/pages-en.xml",
+  "https://kolaboro.com/sitemaps/pages-es.xml",
+  "https://kolaboro.com/sitemaps/pages-de.xml",
+  "https://kolaboro.com/sitemaps/pages-fr.xml",
+  "https://kolaboro.com/sitemaps/pages-ru.xml",
+  "https://kolaboro.com/sitemaps/pages-nl.xml",
+  "https://kolaboro.com/sitemaps/pages-ar.xml",
+  "https://kolaboro.com/sitemaps/pages-zh.xml",
+  "https://kolaboro.com/sitemaps/countries.xml",
+  "https://kolaboro.com/sitemaps/guides.xml",
+  "https://kolaboro.com/sitemaps/rankings.xml",
+  "https://kolaboro.com/sitemaps/compare.xml",
+  "https://kolaboro.com/sitemaps/markets.xml",
+  "https://kolaboro.com/sitemaps/projects-en.xml",
+  "https://kolaboro.com/sitemaps/developers-en.xml",
+  "https://kolaboro.com/sitemaps/projects-es.xml",
+  "https://kolaboro.com/sitemaps/developers-es.xml",
+  "https://kolaboro.com/sitemaps/projects-de.xml",
+  "https://kolaboro.com/sitemaps/developers-de.xml",
+  "https://kolaboro.com/sitemaps/projects-fr.xml",
+  "https://kolaboro.com/sitemaps/developers-fr.xml",
+  "https://kolaboro.com/sitemaps/projects-ru.xml",
+  "https://kolaboro.com/sitemaps/developers-ru.xml",
+  "https://kolaboro.com/sitemaps/projects-nl.xml",
+  "https://kolaboro.com/sitemaps/developers-nl.xml",
+  "https://kolaboro.com/sitemaps/projects-ar.xml",
+  "https://kolaboro.com/sitemaps/developers-ar.xml",
+  "https://kolaboro.com/sitemaps/projects-zh.xml",
+  "https://kolaboro.com/sitemaps/developers-zh.xml",
+  "https://kolaboro.com/sitemaps/images.xml",
+  "https://kolaboro.com/stories/sitemap.xml",
+  "https://kolaboro.com/rankings/transparency/sitemap.xml",
+  "https://kolaboro.com/progress/sitemap.xml",
+  "https://kolaboro.com/handover/sitemap.xml",
+  "https://kolaboro.com/weekly/sitemap.xml",
+  "https://kolaboro.com/guides/buying-off-plan/sitemap.xml",
+  "https://kolaboro.com/reports/sitemap.xml",
+  "https://kolaboro.com/m/sitemap.xml"
+ ],
+ "urls_by_sitemap": {
+  "pages-en.xml": 170,
+  "sitemap.xml": 5824,
+  "pages-es.xml": 20,
+  "pages-de.xml": 20,
+  "pages-fr.xml": 20,
+  "pages-ru.xml": 20,
+  "pages-nl.xml": 20,
+  "pages-ar.xml": 20,
+  "pages-zh.xml": 20,
+  "countries.xml": 95,
+  "guides.xml": 144,
+  "rankings.xml": 13,
+  "compare.xml": 1,
+  "markets.xml": 89,
+  "projects-en.xml": 1589,
+  "developers-en.xml": 165,
+  "projects-es.xml": 1589,
+  "developers-es.xml": 165,
+  "projects-de.xml": 1589,
+  "developers-de.xml": 165,
+  "projects-fr.xml": 1589,
+  "developers-fr.xml": 165,
+  "projects-ru.xml": 1589,
+  "developers-ru.xml": 165,
+  "projects-nl.xml": 1589,
+  "developers-nl.xml": 165,
+  "projects-ar.xml": 1589,
+  "developers-ar.xml": 165,
+  "projects-zh.xml": 1589,
+  "developers-zh.xml": 165
+ },
+ "coverage": {
+  "pages-en.xml": {
+   "listed": 170,
+   "crawled": 170,
+   "ok_200": 170,
+   "indexable": 170,
+   "canonical_elsewhere": 0,
+   "noindex": 0,
+   "not_200": 0
+  },
+  "sitemap.xml": {
+   "listed": 5824,
+   "crawled": 5824,
+   "ok_200": 5824,
+   "indexable": 5824,
+   "canonical_elsewhere": 0,
+   "noindex": 0,
+   "not_200": 0
+  },
+  "pages-es.xml": {
+   "listed": 20,
+   "crawled": 20,
+   "ok_200": 20,
+   "indexable": 20,
+   "canonical_elsewhere": 0,
+   "noindex": 0,
+   "not_200": 0
+  },
+  "pages-de.xml": {
+   "listed": 20,
+   "crawled": 20,
+   "ok_200": 20,
+   "indexable": 20,
+   "canonical_elsewhere": 0,
+   "noindex": 0,
+   "not_200": 0
+  },
+  "pages-fr.xml": {
+   "listed": 20,
+   "crawled": 20,
+   "ok_200": 20,
+   "indexable": 20,
+   "canonical_elsewhere": 0,
+   "noindex": 0,
+   "not_200": 0
+  },
+  "pages-ru.xml": {
+   "listed": 20,
+   "crawled": 20,
+   "ok_200": 20,
+   "indexable": 20,
+   "canonical_elsewhere": 0,
+   "noindex": 0,
+   "not_200": 0
+  },
+  "pages-nl.xml": {
+   "listed": 20,
+   "crawled": 20,
+   "ok_200": 20,
+   "indexable": 20,
+   "canonical_elsewhere": 0,
+   "noindex": 0,
+   "not_200": 0
+  },
+  "pages-ar.xml": {
+   "listed": 20,
+   "crawled": 20,
+   "ok_200": 20,
+   "indexable": 20,
+   "canonical_elsewhere": 0,
+   "noindex": 0,
+   "not_200": 0
+  },
+  "pages-zh.xml": {
+   "listed": 20,
+   "crawled": 20,
+   "ok_200": 20,
+   "indexable": 20,
+   "canonical_elsewhere": 0,
+   "noindex": 0,
+   "not_200": 0
+  },
+  "countries.xml": {
+   "listed": 95,
+   "crawled": 95,
+   "ok_200": 95,
+   "indexable": 95,
+   "canonical_elsewhere": 0,
+   "noindex": 0,
+   "not_200": 0
+  },
+  "guides.xml": {
+   "listed": 144,
+   "crawled": 144,
+   "ok_200": 144,
+   "indexable": 144,
+   "canonical_elsewhere": 0,
+   "noindex": 0,
+   "not_200": 0
+  },
+  "rankings.xml": {
+   "listed": 13,
+   "crawled": 13,
+   "ok_200": 13,
+   "indexable": 13,
+   "canonical_elsewhere": 0,
+   "noindex": 0,
+   "not_200": 0
+  },
+  "compare.xml": {
+   "listed": 1,
+   "crawled": 1,
+   "ok_200": 1,
+   "indexable": 1,
+   "canonical_elsewhere": 0,
+   "noindex": 0,
+   "not_200": 0
+  },
+  "markets.xml": {
+   "listed": 89,
+   "crawled": 89,
+   "ok_200": 89,
+   "indexable": 89,
+   "canonical_elsewhere": 0,
+   "noindex": 0,
+   "not_200": 0
+  },
+  "projects-en.xml": {
+   "listed": 1589,
+   "crawled": 1589,
+   "ok_200": 1578,
+   "indexable": 1578,
+   "canonical_elsewhere": 0,
+   "noindex": 0,
+   "not_200": 11
+  },
+  "developers-en.xml": {
+   "listed": 165,
+   "crawled": 165,
+   "ok_200": 157,
+   "indexable": 157,
+   "canonical_elsewhere": 0,
+   "noindex": 0,
+   "not_200": 8
+  },
+  "projects-es.xml": {
+   "listed": 1589,
+   "crawled": 123,
+   "ok_200": 123,
+   "indexable": 123,
+   "canonical_elsewhere": 0,
+   "noindex": 0,
+   "not_200": 0
+  },
+  "developers-es.xml": {
+   "listed": 165,
+   "crawled": 165,
+   "ok_200": 165,
+   "indexable": 165,
+   "canonical_elsewhere": 0,
+   "noindex": 0,
+   "not_200": 0
+  },
+  "projects-de.xml": {
+   "listed": 1589,
+   "crawled": 123,
+   "ok_200": 123,
+   "indexable": 123,
+   "canonical_elsewhere": 0,
+   "noindex": 0,
+   "not_200": 0
+  },
+  "developers-de.xml": {
+   "listed": 165,
+   "crawled": 165,
+   "ok_200": 165,
+   "indexable": 165,
+   "canonical_elsewhere": 0,
+   "noindex": 0,
+   "not_200": 0
+  },
+  "projects-fr.xml": {
+   "listed": 1589,
+   "crawled": 123,
+   "ok_200": 123,
+   "indexable": 123,
+   "canonical_elsewhere": 0,
+   "noindex": 0,
+   "not_200": 0
+  },
+  "developers-fr.xml": {
+   "listed": 165,
+   "crawled": 165,
+   "ok_200": 165,
+   "indexable": 165,
+   "canonical_elsewhere": 0,
+   "noindex": 0,
+   "not_200": 0
+  },
+  "projects-ru.xml": {
+   "listed": 1589,
+   "crawled": 123,
+   "ok_200": 107,
+   "indexable": 107,
+   "canonical_elsewhere": 0,
+   "noindex": 0,
+   "not_200": 16
+  },
+  "developers-ru.xml": {
+   "listed": 165,
+   "crawled": 165,
+   "ok_200": 163,
+   "indexable": 163,
+   "canonical_elsewhere": 0,
+   "noindex": 0,
+   "not_200": 2
+  },
+  "projects-nl.xml": {
+   "listed": 1589,
+   "crawled": 123,
+   "ok_200": 123,
+   "indexable": 123,
+   "canonical_elsewhere": 0,
+   "noindex": 0,
+   "not_200": 0
+  },
+  "developers-nl.xml": {
+   "listed": 165,
+   "crawled": 165,
+   "ok_200": 165,
+   "indexable": 165,
+   "canonical_elsewhere": 0,
+   "noindex": 0,
+   "not_200": 0
+  },
+  "projects-ar.xml": {
+   "listed": 1589,
+   "crawled": 123,
+   "ok_200": 123,
+   "indexable": 123,
+   "canonical_elsewhere": 0,
+   "noindex": 0,
+   "not_200": 0
+  },
+  "developers-ar.xml": {
+   "listed": 165,
+   "crawled": 165,
+   "ok_200": 165,
+   "indexable": 165,
+   "canonical_elsewhere": 0,
+   "noindex": 0,
+   "not_200": 0
+  },
+  "projects-zh.xml": {
+   "listed": 1589,
+   "crawled": 123,
+   "ok_200": 123,
+   "indexable": 123,
+   "canonical_elsewhere": 0,
+   "noindex": 0,
+   "not_200": 0
+  },
+  "developers-zh.xml": {
+   "listed": 165,
+   "crawled": 165,
+   "ok_200": 165,
+   "indexable": 165,
+   "canonical_elsewhere": 0,
+   "noindex": 0,
+   "not_200": 0
+  }
+ },
+ "summary": {
+  "in_sitemaps": 20508,
+  "crawled": 10246,
+  "ok_200": 10209,
+  "indexable": 10209,
+  "schema_valid_pages": 10208,
+  "schema_pages": 10208,
+  "schema_errors": 10,
+  "head_mismatch": 7,
+  "canonical_mismatch": 0,
+  "hreflang_errors": 0,
+  "redirects": 0,
+  "errors_4xx_5xx": 37,
+  "noindex_in_sitemap": 0,
+  "missing_title": 0,
+  "missing_description": 0,
+  "duplicate_titles": 54,
+  "orphans": 3,
+  "weakly_linked": 66,
+  "links_judged": 8211,
+  "image_sitemap_pages": 1911,
+  "image_sitemap_images": 2036,
+  "image_errors": 0,
+  "image_sampled": 61,
+  "lastmod_future": 0
+ },
+ "indexable_estimate_all": 20379,
+ "sampled_note": "Translated named pages are sampled (KB_SAMPLE per sitemap); indexable_estimate_all applies the sample pass rate to the URLs not fetched.",
+ "schema_types": [
+  "AboutPage",
+  "ApartmentComplex",
+  "Article",
+  "BreadcrumbList",
+  "CollectionPage",
+  "ContactPage",
+  "CreativeWork",
+  "DataCatalog",
+  "Dataset",
+  "DefinedTerm",
+  "DefinedTermSet",
+  "FAQPage",
+  "ImageObject",
+  "ItemList",
+  "Organization",
+  "Place",
+  "ProfilePage",
+  "Report",
+  "Residence",
+  "Service",
+  "SoftwareApplication",
+  "TechArticle",
+  "WebApplication",
+  "WebPage",
+  "WebSite"
+ ],
+ "problems": [
+  {
+   "url": "https://kolaboro.com/report/state-of-off-plan-2026/",
+   "issue": "Dataset without license (recommended by Google, not required)"
+  },
+  {
+   "url": "https://kolaboro.com/satellite/",
+   "issue": "Dataset without license (recommended by Google, not required)"
+  },
+  {
+   "url": "https://kolaboro.com/watch/lookalikes/",
+   "issue": "Dataset without license (recommended by Google, not required)"
+  },
+  {
+   "url": "https://kolaboro.com/es/watch/lookalikes/",
+   "issue": "Dataset without license (recommended by Google, not required)"
+  },
+  {
+   "url": "https://kolaboro.com/de/watch/lookalikes/",
+   "issue": "Dataset without license (recommended by Google, not required)"
+  },
+  {
+   "url": "https://kolaboro.com/fr/watch/lookalikes/",
+   "issue": "Dataset without license (recommended by Google, not required)"
+  },
+  {
+   "url": "https://kolaboro.com/ru/watch/lookalikes/",
+   "issue": "Dataset without license (recommended by Google, not required)"
+  },
+  {
+   "url": "https://kolaboro.com/nl/watch/lookalikes/",
+   "issue": "Dataset without license (recommended by Google, not required)"
+  },
+  {
+   "url": "https://kolaboro.com/ar/watch/lookalikes/",
+   "issue": "Dataset without license (recommended by Google, not required)"
+  },
+  {
+   "url": "https://kolaboro.com/zh/watch/lookalikes/",
+   "issue": "Dataset without license (recommended by Google, not required)"
+  },
+  {
+   "url": "https://kolaboro.com/projects/naturandi-huacas-guanacaste/",
+   "issue": "status 500"
+  },
+  {
+   "url": "https://kolaboro.com/projects/waldorf-astoria-residences-tokyo-nihonbashi/",
+   "issue": "status 500"
+  },
+  {
+   "url": "https://kolaboro.com/projects/grand-green-osaka-the-south-residence/",
+   "issue": "status 500"
+  },
+  {
+   "url": "https://kolaboro.com/projects/one-city-osaka/",
+   "issue": "status 500"
+  },
+  {
+   "url": "https://kolaboro.com/projects/premist-tower-senrioka/",
+   "issue": "status 500"
+  },
+  {
+   "url": "https://kolaboro.com/projects/j-gran-tower-kyoto-mukomachi/",
+   "issue": "status 500"
+  },
+  {
+   "url": "https://kolaboro.com/projects/maison-broadbeach/",
+   "issue": "status 500"
+  },
+  {
+   "url": "https://kolaboro.com/projects/the-eveleigh-broadbeach/",
+   "issue": "status 500"
+  },
+  {
+   "url": "https://kolaboro.com/projects/avva-broadbeach/",
+   "issue": "status 500"
+  },
+  {
+   "url": "https://kolaboro.com/projects/tropical-beach-residences-punta-cana/",
+   "issue": "status 500"
+  },
+  {
+   "url": "https://kolaboro.com/projects/origin-place-centre-phuket/",
+   "issue": "status 500"
+  },
+  {
+   "url": "https://kolaboro.com/developers/teus-group/",
+   "issue": "status 500"
+  },
+  {
+   "url": "https://kolaboro.com/developers/anjuna-bay/",
+   "issue": "status 500"
+  },
+  {
+   "url": "https://kolaboro.com/developers/coco-development-group/",
+   "issue": "status 500"
+  },
+  {
+   "url": "https://kolaboro.com/developers/breig-property/",
+   "issue": "status 500"
+  },
+  {
+   "url": "https://kolaboro.com/developers/balitecture/",
+   "issue": "status 500"
+  },
+  {
+   "url": "https://kolaboro.com/developers/urban-escape/",
+   "issue": "status 500"
+  },
+  {
+   "url": "https://kolaboro.com/developers/global-bali-home/",
+   "issue": "status 500"
+  },
+  {
+   "url": "https://kolaboro.com/developers/global-bali-home/",
+   "issue": "HEAD 200 but GET 500"
+  },
+  {
+   "url": "https://kolaboro.com/developers/investland-bali/",
+   "issue": "status 500"
+  },
+  {
+   "url": "https://kolaboro.com/developers/investland-bali/",
+   "issue": "HEAD 200 but GET 500"
+  },
+  {
+   "url": "https://kolaboro.com/developers/avalon/",
+   "issue": "HEAD 0 but GET 200"
+  },
+  {
+   "url": "https://kolaboro.com/ru/projects/terra-mare-beach-villas-maenam/",
+   "issue": "status 500"
+  },
+  {
+   "url": "https://kolaboro.com/ru/projects/armani-residences-masaryk-mira/",
+   "issue": "status 500"
+  },
+  {
+   "url": "https://kolaboro.com/ru/projects/ora-residences-db-group/",
+   "issue": "status 500"
+  },
+  {
+   "url": "https://kolaboro.com/ru/projects/sharjah-sustainable-city-ii-shurooq-see-holding/",
+   "issue": "status 500"
+  },
+  {
+   "url": "https://kolaboro.com/ru/projects/sealine-residence-al-zorah/",
+   "issue": "status 500"
+  },
+  {
+   "url": "https://kolaboro.com/ru/projects/the-welnest-balaclava-valio-sur-mer/",
+   "issue": "status 500"
+  },
+  {
+   "url": "https://kolaboro.com/ru/projects/four-seasons-private-residences-shura-island-red-sea-global/",
+   "issue": "status 500"
+  },
+  {
+   "url": "https://kolaboro.com/ru/projects/azure-michamvi-azure-united-properties/",
+   "issue": "status 500"
+  },
+  {
+   "url": "https://kolaboro.com/ru/projects/ika-mare-constructora-ika/",
+   "issue": "status 500"
+  },
+  {
+   "url": "https://kolaboro.com/ru/projects/obsidian-greengate-salboy-domis/",
+   "issue": "status 500"
+  },
+  {
+   "url": "https://kolaboro.com/ru/projects/hotel-ora-private-residences-tampa-arc/",
+   "issue": "status 500"
+  },
+  {
+   "url": "https://kolaboro.com/ru/projects/hotel-ora-private-residences-tampa-arc/",
+   "issue": "HEAD 404 but GET 500"
+  },
+  {
+   "url": "https://kolaboro.com/ru/projects/norea-square-condominium-ocic/",
+   "issue": "status 500"
+  },
+  {
+   "url": "https://kolaboro.com/ru/projects/central-park-boulevard-port-city-home-lands/",
+   "issue": "status 500"
+  },
+  {
+   "url": "https://kolaboro.com/ru/projects/mireka-seascape-overseas-realty/",
+   "issue": "status 500"
+  },
+  {
+   "url": "https://kolaboro.com/ru/projects/vimae-palm-view-kuta-lombok/",
+   "issue": "status 500"
+  },
+  {
+   "url": "https://kolaboro.com/ru/projects/vistara-residences-imagine-developments/",
+   "issue": "status 0"
+  },
+  {
+   "url": "https://kolaboro.com/ru/projects/vistara-residences-imagine-developments/",
+   "issue": "HEAD 200 but GET 0"
+  },
+  {
+   "url": "https://kolaboro.com/ru/developers/loyo-bondar/",
+   "issue": "status 0"
+  },
+  {
+   "url": "https://kolaboro.com/ru/developers/loyo-bondar/",
+   "issue": "HEAD 200 but GET 0"
+  },
+  {
+   "url": "https://kolaboro.com/ru/developers/tm-grupo-inmobiliario/",
+   "issue": "status 0"
+  },
+  {
+   "url": "https://kolaboro.com/ru/developers/tm-grupo-inmobiliario/",
+   "issue": "HEAD 200 but GET 0"
+  },
+  {
+   "url": "https://kolaboro.com/legal/",
+   "issue": "orphan: in a sitemap, but no crawled page links to it"
+  },
+  {
+   "url": "https://kolaboro.com/m/osaka/",
+   "issue": "orphan: in a sitemap, but no crawled page links to it"
+  },
+  {
+   "url": "https://kolaboro.com/regulators/",
+   "issue": "orphan: in a sitemap, but no crawled page links to it"
+  },
+  {
+   "url": "https://kolaboro.com/de/live/xrays/",
+   "issue": "title shared with 1 other URL(s): R\u00f6ntgenchecks, live | Kolaboro"
+  },
+  {
+   "url": "https://kolaboro.com/projects/eaton-park-thu-duc-hcmc/",
+   "issue": "title shared with 1 other URL(s): Eaton Park reviews 2026: handover date, permit and developer"
+  },
+  {
+   "url": "https://kolaboro.com/projects/pavilion-damansara-heights-phase-2-jendela-mayang/",
+   "issue": "title shared with 1 other URL(s): Pavilion Damansara Heights Phase 2 reviews | Kolaboro"
+  },
+  {
+   "url": "https://kolaboro.com/developers/binghatti-developers-vs-damac-properties/",
+   "issue": "title shared with 1 other URL(s): Binghatti Developers vs DAMAC Properties in Dubai | Kolaboro"
+  },
+  {
+   "url": "https://kolaboro.com/developers/binghatti-developers-vs-danube-properties/",
+   "issue": "title shared with 1 other URL(s): Binghatti Developers vs Danube Properties in Dubai"
+  },
+  {
+   "url": "https://kolaboro.com/developers/binghatti-developers-vs-ellington-properties/",
+   "issue": "title shared with 1 other URL(s): Binghatti Developers vs Ellington Properties in Dubai"
+  },
+  {
+   "url": "https://kolaboro.com/developers/binghatti-developers-vs-emaar-properties/",
+   "issue": "title shared with 1 other URL(s): Binghatti Developers vs Emaar Properties in Dubai | Kolaboro"
+  },
+  {
+   "url": "https://kolaboro.com/developers/binghatti-developers-vs-imtiaz-developments/",
+   "issue": "title shared with 1 other URL(s): Binghatti Developers vs Imtiaz Developments in Dubai"
+  },
+  {
+   "url": "https://kolaboro.com/developers/binghatti-developers-vs-samana-developers/",
+   "issue": "title shared with 1 other URL(s): Binghatti Developers vs Samana Developers in Dubai"
+  },
+  {
+   "url": "https://kolaboro.com/developers/damac-properties-vs-danube-properties/",
+   "issue": "title shared with 1 other URL(s): DAMAC Properties vs Danube Properties in Dubai | Kolaboro"
+  },
+  {
+   "url": "https://kolaboro.com/developers/damac-properties-vs-ellington-properties/",
+   "issue": "title shared with 1 other URL(s): DAMAC Properties vs Ellington Properties in Dubai | Kolaboro"
+  },
+  {
+   "url": "https://kolaboro.com/developers/damac-properties-vs-emaar-properties/",
+   "issue": "title shared with 1 other URL(s): DAMAC Properties vs Emaar Properties in Dubai | Kolaboro"
+  },
+  {
+   "url": "https://kolaboro.com/developers/damac-properties-vs-imtiaz-developments/",
+   "issue": "title shared with 1 other URL(s): DAMAC Properties vs Imtiaz Developments in Dubai | Kolaboro"
+  },
+  {
+   "url": "https://kolaboro.com/developers/damac-properties-vs-samana-developers/",
+   "issue": "title shared with 1 other URL(s): DAMAC Properties vs Samana Developers in Dubai | Kolaboro"
+  },
+  {
+   "url": "https://kolaboro.com/developers/danube-properties-vs-ellington-properties/",
+   "issue": "title shared with 1 other URL(s): Danube Properties vs Ellington Properties in Dubai"
+  },
+  {
+   "url": "https://kolaboro.com/developers/danube-properties-vs-emaar-properties/",
+   "issue": "title shared with 1 other URL(s): Danube Properties vs Emaar Properties in Dubai | Kolaboro"
+  },
+  {
+   "url": "https://kolaboro.com/developers/danube-properties-vs-imtiaz-developments/",
+   "issue": "title shared with 1 other URL(s): Danube Properties vs Imtiaz Developments in Dubai | Kolaboro"
+  },
+  {
+   "url": "https://kolaboro.com/developers/danube-properties-vs-samana-developers/",
+   "issue": "title shared with 1 other URL(s): Danube Properties vs Samana Developers in Dubai | Kolaboro"
+  },
+  {
+   "url": "https://kolaboro.com/developers/ellington-properties-vs-emaar-properties/",
+   "issue": "title shared with 1 other URL(s): Ellington Properties vs Emaar Properties in Dubai | Kolaboro"
+  },
+  {
+   "url": "https://kolaboro.com/developers/ellington-properties-vs-imtiaz-developments/",
+   "issue": "title shared with 1 other URL(s): Ellington Properties vs Imtiaz Developments in Dubai"
+  },
+  {
+   "url": "https://kolaboro.com/developers/ellington-properties-vs-samana-developers/",
+   "issue": "title shared with 1 other URL(s): Ellington Properties vs Samana Developers in Dubai"
+  },
+  {
+   "url": "https://kolaboro.com/developers/emaar-properties-vs-imtiaz-developments/",
+   "issue": "title shared with 1 other URL(s): Emaar Properties vs Imtiaz Developments in Dubai | Kolaboro"
+  },
+  {
+   "url": "https://kolaboro.com/developers/emaar-properties-vs-samana-developers/",
+   "issue": "title shared with 1 other URL(s): Emaar Properties vs Samana Developers in Dubai | Kolaboro"
+  },
+  {
+   "url": "https://kolaboro.com/developers/imtiaz-developments-vs-samana-developers/",
+   "issue": "title shared with 1 other URL(s): Imtiaz Developments vs Samana Developers in Dubai | Kolaboro"
+  },
+  {
+   "url": "https://kolaboro.com/developers/metrovacesa-vs-neinor-homes/",
+   "issue": "title shared with 1 other URL(s): Metrovacesa vs Neinor Homes in Costa del Sol | Kolaboro"
+  },
+  {
+   "url": "https://kolaboro.com/developers/metrovacesa-vs-taylor-wimpey-espana/",
+   "issue": "title shared with 1 other URL(s): Metrovacesa vs Taylor Wimpey Espa\u00f1a in Costa del Sol"
+  },
+  {
+   "url": "https://kolaboro.com/developers/neinor-homes-vs-taylor-wimpey-espana/",
+   "issue": "title shared with 1 other URL(s): Neinor Homes vs Taylor Wimpey Espa\u00f1a in Costa del Sol"
+  }
+ ],
+ "exclude": [],
+ "lastmod": {
+  "/": "2026-11-14",
+  "/check/": "2026-11-14",
+  "/report/sample/": "2026-11-14",
+  "/how-we-score/": "2026-11-14",
+  "/agents/": "2026-11-14",
+  "/developers/": "2026-11-14",
+  "/investors/": "2026-11-14",
+  "/tools/yield-check/": "2026-11-14",
+  "/checklist/": "2026-11-14",
+  "/bali/": "2026-11-14",
+  "/guides/bali-land-titles/": "2026-11-14",
+  "/guides/off-plan-payments/": "2026-11-14",
+  "/legal/privacy/": "2026-11-14",
+  "/legal/terms/": "2026-11-14",
+  "/dubai/": "2026-11-14",
+  "/phuket/": "2026-11-14",
+  "/tulum/": "2026-11-14",
+  "/algarve/": "2026-11-14",
+  "/lombok/": "2026-11-14",
+  "/destinations/": "2026-11-14",
+  "/tools/risk/": "2026-11-14",
+  "/survey/": "2026-11-14",
+  "/academy/": "2026-11-14",
+  "/academy/1/": "2026-11-14",
+  "/academy/3/": "2026-11-14",
+  "/academy/5/": "2026-11-14",
+  "/academy/6/": "2026-11-14",
+  "/academy/7/": "2026-11-14",
+  "/academy/8/": "2026-11-14",
+  "/academy/9/": "2026-11-14",
+  "/academy/10/": "2026-11-14",
+  "/academy/exam/": "2026-11-14",
+  "/demo/": "2026-11-14",
+  "/tools/contract-scan/": "2026-11-14",
+  "/tools/payment-plan/": "2026-11-14",
+  "/developers/self-check/": "2026-11-14",
+  "/about/": "2026-11-14",
+  "/roadmap/": "2026-11-14",
+  "/changelog/2026-11-03/": "2026-11-14",
+  "/changelog/": "2026-11-14",
+  "/press/": "2026-11-14",
+  "/glossary/": "2026-11-14",
+  "/pricing/": "2026-11-14",
+  "/book/": "2026-11-14",
+  "/agents/id/": "2026-11-14",
+  "/guides/questions-to-ask-a-developer/": "2026-11-14",
+  "/guides/contract-clauses/": "2026-11-14",
+  "/research/": "2026-11-14",
+  "/cases/": "2026-11-14",
+  "/agents/visit/": "2026-11-14",
+  "/agents/how-we-choose/": "2026-11-14",
+  "/copilot/": "2026-11-14",
+  "/independence/": "2026-11-14",
+  "/technology/": "2026-11-14",
+  "/verify/": "2026-11-14",
+  "/status/": "2026-11-14",
+  "/docs/api/": "2026-11-14",
+  "/metrics/": "2026-11-14",
+  "/live/": "2026-11-14",
+  "/api-pilot/": "2026-11-14",
+  "/security/": "2026-11-14",
+  "/database/": "2026-11-14",
+  "/compare/": "2026-11-14",
+  "/transparency-index/": "2026-11-14",
+  "/extension/": "2026-11-14",
+  "/report/state-of-off-plan-2026/": "2026-11-14",
+  "/m/": "2026-11-14",
+  "/satellite/": "2026-11-14",
+  "/registers/": "2026-11-14",
+  "/press/data/": "2026-11-14",
+  "/standard/": "2026-11-14",
+  "/developers/templates/": "2026-11-14",
+  "/tools/market-match/": "2026-11-14",
+  "/tools/total-cost/": "2026-11-14",
+  "/tools/payment-risk/": "2026-11-14",
+  "/tools/currency-risk/": "2026-11-14",
+  "/tools/delay-compensation/": "2026-11-14",
+  "/tools/resale-exit/": "2026-11-14",
+  "/tools/deposit-protection/": "2026-11-14",
+  "/tools/my-checklist/": "2026-11-14",
+  "/developers/benchmark/": "2026-11-14",
+  "/developers/reply/": "2026-11-14",
+  "/regulators/": "2026-11-14",
+  "/data/licence/": "2026-11-14",
+  "/lawyers/": "2026-11-14",
+  "/tools/refund-tracker/": "2026-11-14",
+  "/data-policy/": "2026-11-14",
+  "/log/": "2026-11-14",
+  "/engineering/": "2026-11-14",
+  "/engineering/ai-safety/": "2026-11-14",
+  "/engineering/evals/": "2026-11-14",
+  "/engineering/transparency-log/": "2026-11-14",
+  "/engineering/signed-photos/": "2026-11-14",
+  "/engineering/reliability/": "2026-11-14",
+  "/sql/": "2026-11-14",
+  "/docs/mcp/": "2026-11-14",
+  "/docs/sdk/": "2026-11-14",
+  "/ask/": "2026-11-14",
+  "/api-keys/": "2026-11-14",
+  "/trust/": "2026-11-14",
+  "/investors/dossier/": "2026-11-13",
+  "/prices/": "2026-11-14",
+  "/risk/": "2026-11-14",
+  "/registers/checks/": "2026-11-14",
+  "/tools/": "2026-11-14",
+  "/tools/pdf-check/": "2026-11-14",
+  "/tools/image-check/": "2026-11-14",
+  "/check/red-team/": "2026-11-14",
+  "/alerts/": "2026-11-14",
+  "/report/state-of-off-plan-2026/live/": "2026-11-14",
+  "/satellite/plot/": "2026-11-14",
+  "/milestones/": "2026-11-14",
+  "/hazards/": "2026-11-14",
+  "/graph/": "2026-11-14",
+  "/mystery-shopper/": "2026-11-14",
+  "/visual/": "2026-11-14",
+  "/index/prices/": "2026-11-14",
+  "/benchmark/": "2026-11-14",
+  "/log/witnesses/": "2026-11-14",
+  "/buyer-reports/": "2026-11-14",
+  "/visit/": "2026-11-14",
+  "/docs/webhooks/": "2026-11-14",
+  "/tools/contract-check/": "2026-11-14",
+  "/tools/law/": "2026-11-14",
+  "/tools/permit-check/": "2026-11-14",
+  "/changelog/2026-11-04/": "2026-11-14",
+  "/index/delays/": "2026-11-14",
+  "/press/monthly/": "2026-11-14",
+  "/tools/build-cost/": "2026-11-14",
+  "/tools/late-handover/": "2026-11-14",
+  "/court-file/": "2026-11-14",
+  "/docs/partners/": "2026-11-14",
+  "/satellite/night/": "2026-11-14",
+  "/promises/": "2026-11-14",
+  "/search-alerts/": "2026-11-14",
+  "/ask-developer/": "2026-11-14",
+  "/graph/global/": "2026-11-14",
+  "/tools/insolvency-check/": "2026-11-14",
+  "/tools/agent-check/": "2026-11-14",
+  "/legal/": "2026-11-14",
+  "/shipping/": "2026-11-14",
+  "/data/": "2026-11-14",
+  "/docs/api/explorer/": "2026-11-14",
+  "/map/": "2026-11-14",
+  "/compare/markets/": "2026-11-14",
+  "/timeline/": "2026-11-14",
+  "/digest/": "2026-11-14",
+  "/explain/": "2026-11-14",
+  "/engineering/visual-tests/": "2026-11-14",
+  "/engineering/page-weight/": "2026-11-14",
+  "/engineering/speed/": "2026-11-14",
+  "/accessibility/": "2026-11-14",
+  "/tools/account-check/": "2026-11-14",
+  "/tools/site-visit/": "2026-11-14",
+  "/tools/payment-email-check/": "2026-11-14",
+  "/findings/": "2026-11-14",
+  "/room/": "2026-11-14",
+  "/es/": "2026-11-14",
+  "/es/pricing/": "2026-11-14",
+  "/es/database/": "2026-11-14",
+  "/es/check/": "2026-11-14",
+  "/es/how-we-score/": "2026-11-14",
+  "/es/checklist/": "2026-11-14",
+  "/es/about/": "2026-11-14",
+  "/es/cases/": "2026-11-14",
+  "/de/": "2026-11-14",
+  "/de/pricing/": "2026-11-14",
+  "/de/database/": "2026-11-14",
+  "/de/check/": "2026-11-14",
+  "/de/how-we-score/": "2026-11-14",
+  "/de/checklist/": "2026-11-14",
+  "/de/about/": "2026-11-14",
+  "/de/cases/": "2026-11-14",
+  "/fr/": "2026-11-14",
+  "/fr/pricing/": "2026-11-14",
+  "/fr/database/": "2026-11-14",
+  "/fr/check/": "2026-11-14",
+  "/fr/how-we-score/": "2026-11-14",
+  "/fr/checklist/": "2026-11-14",
+  "/fr/about/": "2026-11-14",
+  "/fr/cases/": "2026-11-14",
+  "/ru/": "2026-11-14",
+  "/ru/pricing/": "2026-11-14",
+  "/ru/database/": "2026-11-14",
+  "/ru/check/": "2026-11-14",
+  "/ru/how-we-score/": "2026-11-14",
+  "/ru/checklist/": "2026-11-14",
+  "/ru/about/": "2026-11-14",
+  "/ru/cases/": "2026-11-14",
+  "/nl/": "2026-11-14",
+  "/nl/pricing/": "2026-11-14",
+  "/nl/database/": "2026-11-14",
+  "/nl/check/": "2026-11-14",
+  "/nl/how-we-score/": "2026-11-14",
+  "/nl/checklist/": "2026-11-14",
+  "/nl/about/": "2026-11-14",
+  "/nl/cases/": "2026-11-14",
+  "/ar/": "2026-11-14",
+  "/ar/pricing/": "2026-11-14",
+  "/ar/database/": "2026-11-14",
+  "/ar/check/": "2026-11-14",
+  "/ar/how-we-score/": "2026-11-14",
+  "/ar/checklist/": "2026-11-14",
+  "/ar/about/": "2026-11-14",
+  "/ar/cases/": "2026-11-14",
+  "/zh/": "2026-11-14",
+  "/zh/pricing/": "2026-11-14",
+  "/zh/database/": "2026-11-14",
+  "/zh/check/": "2026-11-14",
+  "/zh/how-we-score/": "2026-11-14",
+  "/zh/checklist/": "2026-11-14",
+  "/zh/about/": "2026-11-14",
+  "/zh/cases/": "2026-11-14"
+ },
+ "history": [
+  {
+   "at": "2026-11-05T15:41Z",
+   "crawled": 4668,
+   "indexable": 4668,
+   "schema_valid_pages": 4668,
+   "problems": 1
+  },
+  {
+   "at": "2026-11-14T15:26Z",
+   "crawled": 10246,
+   "indexable": 10209,
+   "schema_valid_pages": 10208,
+   "problems": 84,
+   "orphans": 3
+  }
+ ],
+ "internal_links": {
+  "judged": 8211,
+  "orphans": [
+   "https://kolaboro.com/legal/",
+   "https://kolaboro.com/m/osaka/",
+   "https://kolaboro.com/regulators/"
+  ],
+  "weakly_linked": [
+   "https://kolaboro.com/academy/1/",
+   "https://kolaboro.com/academy/3/",
+   "https://kolaboro.com/academy/5/",
+   "https://kolaboro.com/agents/id/",
+   "https://kolaboro.com/algarve/",
+   "https://kolaboro.com/copilot/",
+   "https://kolaboro.com/countries/argentina/is-it-safe/",
+   "https://kolaboro.com/countries/australia/is-it-safe/",
+   "https://kolaboro.com/countries/bahrain/is-it-safe/",
+   "https://kolaboro.com/countries/brazil/is-it-safe/",
+   "https://kolaboro.com/countries/bulgaria/is-it-safe/",
+   "https://kolaboro.com/countries/cambodia/is-it-safe/",
+   "https://kolaboro.com/countries/canada/is-it-safe/",
+   "https://kolaboro.com/countries/colombia/is-it-safe/",
+   "https://kolaboro.com/countries/costa-rica/is-it-safe/",
+   "https://kolaboro.com/countries/croatia/is-it-safe/",
+   "https://kolaboro.com/countries/cyprus/is-it-safe/",
+   "https://kolaboro.com/countries/dominican-republic/is-it-safe/",
+   "https://kolaboro.com/countries/egypt/is-it-safe/",
+   "https://kolaboro.com/countries/france/is-it-safe/",
+   "https://kolaboro.com/countries/georgia/is-it-safe/",
+   "https://kolaboro.com/countries/ghana/is-it-safe/",
+   "https://kolaboro.com/countries/greece/is-it-safe/",
+   "https://kolaboro.com/countries/india/is-it-safe/",
+   "https://kolaboro.com/countries/indonesia/is-it-safe/",
+   "https://kolaboro.com/countries/japan/is-it-safe/",
+   "https://kolaboro.com/countries/kenya/is-it-safe/",
+   "https://kolaboro.com/countries/malaysia/is-it-safe/",
+   "https://kolaboro.com/countries/malta/is-it-safe/",
+   "https://kolaboro.com/countries/mauritius/is-it-safe/",
+   "https://kolaboro.com/countries/mexico/is-it-safe/",
+   "https://kolaboro.com/countries/montenegro/is-it-safe/",
+   "https://kolaboro.com/countries/morocco/is-it-safe/",
+   "https://kolaboro.com/countries/nigeria/is-it-safe/",
+   "https://kolaboro.com/countries/northern-cyprus/is-it-safe/",
+   "https://kolaboro.com/countries/oman/is-it-safe/",
+   "https://kolaboro.com/countries/panama/is-it-safe/",
+   "https://kolaboro.com/countries/philippines/is-it-safe/",
+   "https://kolaboro.com/countries/portugal/is-it-safe/",
+   "https://kolaboro.com/countries/qatar/is-it-safe/",
+   "https://kolaboro.com/countries/saudi-arabia/is-it-safe/",
+   "https://kolaboro.com/countries/serbia/is-it-safe/",
+   "https://kolaboro.com/countries/south-africa/is-it-safe/",
+   "https://kolaboro.com/countries/spain/is-it-safe/",
+   "https://kolaboro.com/countries/sri-lanka/is-it-safe/",
+   "https://kolaboro.com/countries/tanzania/is-it-safe/",
+   "https://kolaboro.com/countries/thailand/is-it-safe/",
+   "https://kolaboro.com/countries/turkey/is-it-safe/",
+   "https://kolaboro.com/countries/uae/is-it-safe/",
+   "https://kolaboro.com/countries/united-kingdom/is-it-safe/",
+   "https://kolaboro.com/countries/usa/is-it-safe/",
+   "https://kolaboro.com/countries/vietnam/is-it-safe/",
+   "https://kolaboro.com/data/licence/",
+   "https://kolaboro.com/developers/benchmark/",
+   "https://kolaboro.com/lombok/",
+   "https://kolaboro.com/m/casablanca/",
+   "https://kolaboro.com/m/charleston/",
+   "https://kolaboro.com/m/deer-valley/",
+   "https://kolaboro.com/m/jacksonville/",
+   "https://kolaboro.com/m/san-diego/",
+   "https://kolaboro.com/m/telluride/",
+   "https://kolaboro.com/m/washington-dc/",
+   "https://kolaboro.com/press/delivery-index/2026-11/",
+   "https://kolaboro.com/survey/",
+   "https://kolaboro.com/tools/contract-scan/",
+   "https://kolaboro.com/tools/refund-tracker/"
+  ],
+  "not_judged": [
+   "developers-ar.xml",
+   "developers-de.xml",
+   "developers-es.xml",
+   "developers-fr.xml",
+   "developers-nl.xml",
+   "developers-ru.xml",
+   "developers-zh.xml",
+   "projects-ar.xml",
+   "projects-de.xml",
+   "projects-es.xml",
+   "projects-fr.xml",
+   "projects-nl.xml",
+   "projects-ru.xml",
+   "projects-zh.xml"
+  ],
+  "method": "Inbound links counted from the <body> of every crawled page (header, footer and in-page links; hreflang and canonical tags do not count). Judged only where every page that could link was crawled."
+ },
+ "method": "GET and HEAD on every sitemap URL, redirects not followed. Indexable = 200, exactly one canonical equal to the URL, no noindex. Valid structured data = every JSON-LD block parses, has a schema.org context and @type on every node, required properties present, no Review, AggregateRating or ClaimReview."
+}

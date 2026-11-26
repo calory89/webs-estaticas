@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><script>(function(){var _c=window.clarity;try{Object.defineProperty(window,'clarity',{configurable:true,get:function(){return _c},set:function(v){if(typeof v==='function'&&!v.q)v.q=[];_c=v;}})}catch(e){}})();</script><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>New password | Kolaboro</title><meta name="robots" content="noindex,nofollow"><link rel="icon" href="/k/favicon.svg" type="image/svg+xml"><meta name="theme-color" content="#17212B">
+<link rel="preload" href="/k/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/k/app.css?v=n19f2">
+
+<meta name="referrer" content="no-referrer"><script type="text/plain" data-analytics="off">/* Private page: analytics intentionally not loaded (clarity.ms/tag and G-FJKJE77K4V are skipped here). */</script></head><body><div class="ap-auth"><div class="ap-auth-r" style="flex:1"><div class="ap-auth-box">
+<a class="ap-brand" href="/" style="color:#17212B;margin-bottom:18px;display:inline-flex">kolaboro</a>
+<h2>Choose a new password</h2><p class="ap-muted" style="margin:0">At least 8 characters. After saving you are logged in.</p>
+<form id="rf" novalidate data-fe><label>New password<span class="ap-pw"><input name="password" type="password" autocomplete="new-password" minlength="8" maxlength="200" required data-msg="Use at least 8 characters."><button type="button">Show</button></span></label>
+<div style="height:4px;background:#ECEAE3;border-radius:3px;margin-top:6px;overflow:hidden"><div id="pm" style="height:100%;width:0;transition:width .2s"></div></div>
+<button class="ap-btn" style="width:100%;margin-top:18px;min-height:52px">Save and log in</button><p class="ap-err" id="re" role="alert"></p>
+<p class="ap-small ap-muted">Link expired? <a href="/login/">Ask for a new one</a> from the log-in page.</p></form></div></div></div>
+<script src="/k/fe.js?v=a050305d8d"></script>
+<script>
+(function(){
+  var SB='https://oykcsmextclpdnugixqz.supabase.co/rest/v1/rpc/kolaboro_pw_reset', K='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw';
+  var f=document.getElementById('rf'), e=document.getElementById('re'), m=location.hash.match(/t=([a-f0-9]{20,80})/);
+  addEventListener('hashchange', function(){ if (/t=[a-f0-9]{20,80}/.test(location.hash)) location.reload(); });
+  f.querySelector('.ap-pw button').onclick=function(){ var i=f.password; i.type=i.type==='password'?'text':'password'; this.textContent=i.type==='password'?'Show':'Hide'; };
+  f.password.addEventListener('input',function(){ var v=this.value,s=0; if(v.length>=8)s++; if(v.length>=12)s++; if(/[A-Z]/.test(v)&&/[a-z]/.test(v))s++; if(/\d/.test(v))s++; if(/[^\w]/.test(v))s++; var b=document.getElementById('pm'); b.style.width=(s*20)+'%'; b.style.background=s<2?'#B42318':s<4?'#B7791F':'#0B7A55'; });
+  if(!m){ e.innerHTML='This link is incomplete. <a href="/login/">Ask for a new one</a> from the log-in page.'; f.querySelector('.ap-btn').disabled=true; f.password.disabled=true; return; }
+  f.addEventListener('submit',function(ev){ ev.preventDefault(); e.textContent=''; if(f.password.value.length<8){ e.textContent='Use at least 8 characters.'; return; } var b=f.querySelector('.ap-btn'); if(b.disabled)return; b.disabled=true; b.textContent='Saving…';
+    fetch(SB,{method:'POST',headers:{apikey:K,Authorization:'Bearer '+K,'Content-Type':'application/json'},body:JSON.stringify({p_token:m[1],p_password:f.password.value})}).then(function(r){return r.json()}).then(function(d){ b.disabled=false; b.textContent='Save and log in';
+      if(d&&d.token){ try{ localStorage.removeItem('kb-token-as'); localStorage.setItem('kb-token',d.token); localStorage.setItem('kb-role',d.role||'buyer'); }catch(x){} history.replaceState(null,'','/reset/'); location.href=d.role==='agent'?'/agents/me':'/portal'; return; }
+      e.textContent=d&&d.error==='password'?'Use at least 8 characters.':'This link has expired or was already used. Ask for a new one from the log-in page.'; }).catch(function(){ b.disabled=false; b.textContent='Save and log in'; e.textContent='Could not reach the server. Check your connection and try again.'; }); });
+})();
+</script></body></html>

@@ -1,0 +1,7 @@
+# Security contact for jurimatch.com (operated by Equinox Investment Group LLC)
+Contact: mailto:carlos@equinoxinvestmentgroup.com
+Contact: https://jurimatch.com/contact
+Expires: 2027-10-24T00:00:00.000Z
+Preferred-Languages: en, es
+Canonical: https://jurimatch.com/.well-known/security.txt
+Policy: https://jurimatch.com/security#disclosure

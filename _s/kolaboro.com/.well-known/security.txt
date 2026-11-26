@@ -1,0 +1,7 @@
+# Kolaboro security contact. We read every report and reply within two working days.
+Contact: mailto:hello@kolaboro.com
+Expires: 2027-11-03T00:00:00.000Z
+Preferred-Languages: en, es
+Canonical: https://kolaboro.com/.well-known/security.txt
+Policy: https://kolaboro.com/security
+Acknowledgments: https://kolaboro.com/security#thanks

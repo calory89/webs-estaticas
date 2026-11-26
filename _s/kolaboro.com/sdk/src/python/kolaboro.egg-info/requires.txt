@@ -1,0 +1,3 @@
+
+[fast]
+cryptography>=41

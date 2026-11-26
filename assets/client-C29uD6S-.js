@@ -1,0 +1,1 @@
+import{c as t}from"./vendor-supabase-Dg15yhUf.js";const s="https://jurimatch.com/__sb/jurimatch",o="sb_publishable_WWMM9pbZfP4hJosLJlTobg_lWFGoJ3X",a=t(s,o,{auth:{storage:localStorage,persistSession:!0,autoRefreshToken:!0}});export{a as supabase};

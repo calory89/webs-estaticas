@@ -1,0 +1,512 @@
+{
+ "type": "kolaboro-perf-budget-v1",
+ "measured": "2026-11-21T09:15:33Z",
+ "tool": "open/n34c-build.py perf (urllib, Brotli accepted, one cold-ish fetch per file from a build machine)",
+ "budget_file": "/open/perf-budget.json",
+ "templates": [
+  {
+   "key": "home",
+   "path": "/",
+   "status": 200,
+   "measured": {
+    "html_wire": 28118,
+    "html_raw": 87092,
+    "js_wire": 51418,
+    "js_raw": 147508,
+    "css_wire": 44688,
+    "requests": 5,
+    "ttfb_ms": 250
+   },
+   "budget": {
+    "path": "/",
+    "html_wire": 31744,
+    "js_wire": 56320,
+    "css_wire": 50176,
+    "js_raw": 159744,
+    "requests": 6
+   },
+   "over": [],
+   "assets": [
+    {
+     "path": "/k/prov.js?v=369ff51a4c",
+     "kind": "js",
+     "wire": 7590,
+     "raw": 21170
+    },
+    {
+     "path": "/k/site.js?v=n34b1",
+     "kind": "js",
+     "wire": 43828,
+     "raw": 126338
+    },
+    {
+     "path": "/k/ds-site.css?v=dd003cfe8e",
+     "kind": "css",
+     "wire": 11544,
+     "raw": 48684
+    },
+    {
+     "path": "/k/site.css?v=3a6e94c8e7",
+     "kind": "css",
+     "wire": 33144,
+     "raw": 147796
+    }
+   ]
+  },
+  {
+   "key": "project",
+   "path": "/projects/amani-melasti/",
+   "status": 200,
+   "measured": {
+    "html_wire": 29685,
+    "html_raw": 119981,
+    "js_wire": 79214,
+    "js_raw": 219360,
+    "css_wire": 44688,
+    "requests": 9,
+    "ttfb_ms": 245
+   },
+   "budget": {
+    "path": "/projects/amani-melasti/",
+    "html_wire": 32768,
+    "js_wire": 84992,
+    "css_wire": 50176,
+    "js_raw": 235520,
+    "requests": 9
+   },
+   "over": [],
+   "assets": [
+    {
+     "path": "/k/n31.js?v=a1",
+     "kind": "js",
+     "wire": 4473,
+     "raw": 8927
+    },
+    {
+     "path": "/k/n31b.js?v=2",
+     "kind": "js",
+     "wire": 1486,
+     "raw": 2642
+    },
+    {
+     "path": "/k/n34a/ev.js?v=a1",
+     "kind": "js",
+     "wire": 1214,
+     "raw": 2955
+    },
+    {
+     "path": "/k/prov.js?v=369ff51a4c",
+     "kind": "js",
+     "wire": 7590,
+     "raw": 21170
+    },
+    {
+     "path": "/k/site.js?v=n34b1",
+     "kind": "js",
+     "wire": 43828,
+     "raw": 126338
+    },
+    {
+     "path": "/k/u27.js?v=v115.u27l",
+     "kind": "js",
+     "wire": 20623,
+     "raw": 57328
+    },
+    {
+     "path": "/k/ds-site.css?v=dd003cfe8e",
+     "kind": "css",
+     "wire": 11544,
+     "raw": 48684
+    },
+    {
+     "path": "/k/site.css?v=3a6e94c8e7",
+     "kind": "css",
+     "wire": 33144,
+     "raw": 147796
+    }
+   ]
+  },
+  {
+   "key": "project_ar",
+   "path": "/ar/projects/amani-melasti/",
+   "status": 200,
+   "measured": {
+    "html_wire": 44625,
+    "html_raw": 166122,
+    "js_wire": 79333,
+    "js_raw": 219360,
+    "css_wire": 44688,
+    "requests": 9,
+    "ttfb_ms": 286
+   },
+   "budget": {
+    "path": "/ar/projects/amani-melasti/",
+    "html_wire": 49152,
+    "js_wire": 84992,
+    "css_wire": 50176,
+    "js_raw": 235520,
+    "requests": 9
+   },
+   "over": [],
+   "assets": [
+    {
+     "path": "/k/n31.js?v=a1",
+     "kind": "js",
+     "wire": 4480,
+     "raw": 8927
+    },
+    {
+     "path": "/k/n31b.js?v=2",
+     "kind": "js",
+     "wire": 1486,
+     "raw": 2642
+    },
+    {
+     "path": "/k/n34a/ev.js?v=a1",
+     "kind": "js",
+     "wire": 1214,
+     "raw": 2955
+    },
+    {
+     "path": "/k/prov.js?v=369ff51a4c",
+     "kind": "js",
+     "wire": 7589,
+     "raw": 21170
+    },
+    {
+     "path": "/k/site.js?v=n34b1",
+     "kind": "js",
+     "wire": 43941,
+     "raw": 126338
+    },
+    {
+     "path": "/k/u27.js?v=v115.u27l",
+     "kind": "js",
+     "wire": 20623,
+     "raw": 57328
+    },
+    {
+     "path": "/k/ds-site.css?v=dd003cfe8e",
+     "kind": "css",
+     "wire": 11544,
+     "raw": 48684
+    },
+    {
+     "path": "/k/site.css?v=3a6e94c8e7",
+     "kind": "css",
+     "wire": 33144,
+     "raw": 147796
+    }
+   ]
+  },
+  {
+   "key": "market",
+   "path": "/m/dubai/",
+   "status": 200,
+   "measured": {
+    "html_wire": 27710,
+    "html_raw": 135452,
+    "js_wire": 66809,
+    "js_raw": 188439,
+    "css_wire": 47157,
+    "requests": 10,
+    "ttfb_ms": 344
+   },
+   "budget": {
+    "path": "/m/dubai/",
+    "html_wire": 27648,
+    "js_wire": 72704,
+    "css_wire": 52224,
+    "js_raw": 204800,
+    "requests": 11
+   },
+   "over": [
+    "html_wire"
+   ],
+   "assets": [
+    {
+     "path": "/k/ask.js?v=544be9f9c8",
+     "kind": "js",
+     "wire": 1218,
+     "raw": 2983
+    },
+    {
+     "path": "/k/pipeline.js?v=e0202822da",
+     "kind": "js",
+     "wire": 5601,
+     "raw": 12117
+    },
+    {
+     "path": "/k/prov.js?v=369ff51a4c",
+     "kind": "js",
+     "wire": 7590,
+     "raw": 21170
+    },
+    {
+     "path": "/k/site.js?v=n34b1",
+     "kind": "js",
+     "wire": 43898,
+     "raw": 126338
+    },
+    {
+     "path": "/m/m.js?v=n33a1",
+     "kind": "js",
+     "wire": 7207,
+     "raw": 23108
+    },
+    {
+     "path": "/transparency-index/ti-core.js?v=835cf5a007",
+     "kind": "js",
+     "wire": 1295,
+     "raw": 2723
+    },
+    {
+     "path": "/k/ds-site.css?v=dd003cfe8e",
+     "kind": "css",
+     "wire": 11544,
+     "raw": 48684
+    },
+    {
+     "path": "/k/site.css?v=3a6e94c8e7",
+     "kind": "css",
+     "wire": 33144,
+     "raw": 147796
+    },
+    {
+     "path": "/m/m.css?v=48edb8c4e6",
+     "kind": "css",
+     "wire": 2469,
+     "raw": 9055
+    }
+   ]
+  },
+  {
+   "key": "list",
+   "path": "/projects/",
+   "status": 200,
+   "measured": {
+    "html_wire": 76134,
+    "html_raw": 329664,
+    "js_wire": 74487,
+    "js_raw": 210047,
+    "css_wire": 44688,
+    "requests": 7,
+    "ttfb_ms": 498
+   },
+   "budget": {
+    "path": "/projects/",
+    "html_wire": 78848,
+    "js_wire": 80896,
+    "css_wire": 50176,
+    "js_raw": 228352,
+    "requests": 8
+   },
+   "over": [],
+   "assets": [
+    {
+     "path": "/k/cite29.js?v=2",
+     "kind": "js",
+     "wire": 2333,
+     "raw": 5211
+    },
+    {
+     "path": "/k/prov.js?v=369ff51a4c",
+     "kind": "js",
+     "wire": 7590,
+     "raw": 21170
+    },
+    {
+     "path": "/k/site.js?v=n34b1",
+     "kind": "js",
+     "wire": 43941,
+     "raw": 126338
+    },
+    {
+     "path": "/k/u27.js?v=v115.u27l",
+     "kind": "js",
+     "wire": 20623,
+     "raw": 57328
+    },
+    {
+     "path": "/k/ds-site.css?v=dd003cfe8e",
+     "kind": "css",
+     "wire": 11544,
+     "raw": 48684
+    },
+    {
+     "path": "/k/site.css?v=3a6e94c8e7",
+     "kind": "css",
+     "wire": 33144,
+     "raw": 147796
+    }
+   ]
+  },
+  {
+   "key": "developer",
+   "path": "/developers/emaar-properties/",
+   "status": 200,
+   "measured": {
+    "html_wire": 28062,
+    "html_raw": 157062,
+    "js_wire": 51531,
+    "js_raw": 147508,
+    "css_wire": 44688,
+    "requests": 5,
+    "ttfb_ms": 532
+   },
+   "budget": {
+    "path": "/developers/emaar-properties/",
+    "html_wire": 29696,
+    "js_wire": 56320,
+    "css_wire": 50176,
+    "js_raw": 159744,
+    "requests": 6
+   },
+   "over": [],
+   "assets": [
+    {
+     "path": "/k/prov.js?v=369ff51a4c",
+     "kind": "js",
+     "wire": 7590,
+     "raw": 21170
+    },
+    {
+     "path": "/k/site.js?v=n34b1",
+     "kind": "js",
+     "wire": 43941,
+     "raw": 126338
+    },
+    {
+     "path": "/k/ds-site.css?v=dd003cfe8e",
+     "kind": "css",
+     "wire": 11544,
+     "raw": 48684
+    },
+    {
+     "path": "/k/site.css?v=3a6e94c8e7",
+     "kind": "css",
+     "wire": 33144,
+     "raw": 147796
+    }
+   ]
+  },
+  {
+   "key": "ranking",
+   "path": "/rankings/",
+   "status": 200,
+   "measured": {
+    "html_wire": 19173,
+    "html_raw": 66763,
+    "js_wire": 53751,
+    "js_raw": 152719,
+    "css_wire": 44688,
+    "requests": 6,
+    "ttfb_ms": 522
+   },
+   "budget": {
+    "path": "/rankings/",
+    "html_wire": 21504,
+    "js_wire": 58368,
+    "css_wire": 50176,
+    "js_raw": 164864,
+    "requests": 7
+   },
+   "over": [],
+   "assets": [
+    {
+     "path": "/k/cite29.js?v=2",
+     "kind": "js",
+     "wire": 2333,
+     "raw": 5211
+    },
+    {
+     "path": "/k/prov.js?v=369ff51a4c",
+     "kind": "js",
+     "wire": 7590,
+     "raw": 21170
+    },
+    {
+     "path": "/k/site.js?v=n34b1",
+     "kind": "js",
+     "wire": 43828,
+     "raw": 126338
+    },
+    {
+     "path": "/k/ds-site.css?v=dd003cfe8e",
+     "kind": "css",
+     "wire": 11544,
+     "raw": 48684
+    },
+    {
+     "path": "/k/site.css?v=3a6e94c8e7",
+     "kind": "css",
+     "wire": 33144,
+     "raw": 147796
+    }
+   ]
+  },
+  {
+   "key": "engineering",
+   "path": "/engineering/",
+   "status": 200,
+   "measured": {
+    "html_wire": 13735,
+    "html_raw": 37458,
+    "js_wire": 58237,
+    "js_raw": 162608,
+    "css_wire": 44688,
+    "requests": 7,
+    "ttfb_ms": 829
+   },
+   "budget": {
+    "path": "/engineering/",
+    "html_wire": 14336,
+    "js_wire": 63488,
+    "css_wire": 50176,
+    "js_raw": 176128,
+    "requests": 8
+   },
+   "over": [],
+   "assets": [
+    {
+     "path": "/k/ask.js?v=544be9f9c8",
+     "kind": "js",
+     "wire": 1218,
+     "raw": 2983
+    },
+    {
+     "path": "/k/pipeline.js?v=e0202822da",
+     "kind": "js",
+     "wire": 5601,
+     "raw": 12117
+    },
+    {
+     "path": "/k/prov.js?v=369ff51a4c",
+     "kind": "js",
+     "wire": 7590,
+     "raw": 21170
+    },
+    {
+     "path": "/k/site.js?v=n34b1",
+     "kind": "js",
+     "wire": 43828,
+     "raw": 126338
+    },
+    {
+     "path": "/k/ds-site.css?v=dd003cfe8e",
+     "kind": "css",
+     "wire": 11544,
+     "raw": 48684
+    },
+    {
+     "path": "/k/site.css?v=3a6e94c8e7",
+     "kind": "css",
+     "wire": 33144,
+     "raw": 147796
+    }
+   ]
+  }
+ ],
+ "passed": 7,
+ "total": 8
+}

@@ -1,0 +1,244 @@
+{
+ "name": "Kolaboro open dataset, Parquet",
+ "version": 1,
+ "generated": "2026-11-25T10:40:09Z",
+ "license": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+ "source": {
+  "url": "https://kolaboro.com/data/bali-cases.json",
+  "sha256": "741f20311af818eff0dcb6ccb1a65aa29d5a56e5c53e9fef9ec9926dc5f4bbea",
+  "updated": "2026-11-25",
+  "projects": 4618
+ },
+ "files": [
+  {
+   "path": "/data/kolaboro.parquet",
+   "table": "projects",
+   "description": "one row per tracked project",
+   "rows": 4618,
+   "bytes": 116047,
+   "sha256": "7cd5f2c92022781d2eab2c6755b15f30a390413a4e4cf92236e051949dd466c5",
+   "columns": [
+    {
+     "name": "id",
+     "type": "string"
+    },
+    {
+     "name": "market",
+     "type": "string"
+    },
+    {
+     "name": "country",
+     "type": "string"
+    },
+    {
+     "name": "region",
+     "type": "string"
+    },
+    {
+     "name": "stage",
+     "type": "string"
+    },
+    {
+     "name": "price_band",
+     "type": "string"
+    },
+    {
+     "name": "completion_year",
+     "type": "int32"
+    },
+    {
+     "name": "title",
+     "type": "string"
+    },
+    {
+     "name": "lease_years",
+     "type": "int32"
+    },
+    {
+     "name": "units",
+     "type": "int32"
+    },
+    {
+     "name": "advertised_yield_pct",
+     "type": "double"
+    },
+    {
+     "name": "checks_public",
+     "type": "int8"
+    },
+    {
+     "name": "checks_max",
+     "type": "int8"
+    },
+    {
+     "name": "checks_confirmed",
+     "type": "int8"
+    },
+    {
+     "name": "tier",
+     "type": "string"
+    },
+    {
+     "name": "permit_public",
+     "type": "bool"
+    },
+    {
+     "name": "permit_claimed",
+     "type": "bool"
+    },
+    {
+     "name": "deposit_protection",
+     "type": "bool"
+    },
+    {
+     "name": "progress_public",
+     "type": "bool"
+    },
+    {
+     "name": "plans_public",
+     "type": "bool"
+    },
+    {
+     "name": "track_record_public",
+     "type": "bool"
+    },
+    {
+     "name": "no_guaranteed_returns",
+     "type": "bool"
+    },
+    {
+     "name": "level_permit",
+     "type": "string"
+    },
+    {
+     "name": "level_escrow",
+     "type": "string"
+    },
+    {
+     "name": "level_progress",
+     "type": "string"
+    },
+    {
+     "name": "level_plans",
+     "type": "string"
+    },
+    {
+     "name": "level_record",
+     "type": "string"
+    },
+    {
+     "name": "level_returns_ok",
+     "type": "string"
+    },
+    {
+     "name": "claims_verified",
+     "type": "int32"
+    },
+    {
+     "name": "claims_unverified",
+     "type": "int32"
+    },
+    {
+     "name": "claims_contradicted",
+     "type": "int32"
+    },
+    {
+     "name": "flags",
+     "type": "int32"
+    },
+    {
+     "name": "all_six_public",
+     "type": "bool"
+    },
+    {
+     "name": "delay_months",
+     "type": "double"
+    },
+    {
+     "name": "overdue_months",
+     "type": "int32"
+    },
+    {
+     "name": "changes_recorded",
+     "type": "int32"
+    },
+    {
+     "name": "satellite_status",
+     "type": "string"
+    },
+    {
+     "name": "satellite_changed_pct",
+     "type": "double"
+    },
+    {
+     "name": "register_watched",
+     "type": "bool"
+    },
+    {
+     "name": "page_sha256",
+     "type": "string"
+    },
+    {
+     "name": "checked",
+     "type": "string"
+    },
+    {
+     "name": "url",
+     "type": "string"
+    }
+   ]
+  },
+  {
+   "path": "/data/kolaboro-markets.parquet",
+   "table": "markets",
+   "description": "one row per market, same method as /api/open/markets",
+   "rows": 195,
+   "bytes": 8242,
+   "sha256": "d6e4336c0b74414c5c7aa695d5c225bcd2f806eab4aa2a429d40fd2d68893f5e",
+   "columns": [
+    {
+     "name": "market",
+     "type": "string"
+    },
+    {
+     "name": "country",
+     "type": "string"
+    },
+    {
+     "name": "projects",
+     "type": "int32"
+    },
+    {
+     "name": "avg_checks_public",
+     "type": "double"
+    },
+    {
+     "name": "avg_checks_confirmed",
+     "type": "double"
+    },
+    {
+     "name": "permit_public_pct",
+     "type": "int32"
+    },
+    {
+     "name": "deposit_protection_pct",
+     "type": "int32"
+    },
+    {
+     "name": "all_six_public",
+     "type": "int32"
+    },
+    {
+     "name": "with_flags",
+     "type": "int32"
+    },
+    {
+     "name": "transparency_index",
+     "type": "int32"
+    }
+   ]
+  }
+ ],
+ "signed_manifest": "https://kolaboro.com/api/x/e/parquet-manifest",
+ "note": "Advertised claims and what is public, not verified facts. Each project has a named page with sourced facts, except projects in Sumba. Built daily by a GitHub Actions workflow from the public JSON; the signed manifest is produced by the site worker after it re-hashes these files."
+}

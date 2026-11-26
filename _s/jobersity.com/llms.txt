@@ -1,0 +1,25 @@
+# Jobersity
+
+> Jobersity es un agente de empleo con IA. La persona sube su CV o su LinkedIn; el agente busca cada día ofertas que encajan, prepara un CV a medida para cada una sin inventar nada y, con su permiso, envía la candidatura. Plan gratis (hasta 10 candidaturas al mes) y Pro (65 €/mes, con garantía de al menos 1 entrevista al mes o devolución de ese mes). Empresa: Equinox Investment Group LLC. Contacto: hello@jobersity.com
+
+## Páginas principales
+- [Portada en español](https://jobersity.com/es): qué hace el agente, precios y preguntas frecuentes
+- [Home in English](https://jobersity.com/en)
+- [Ofertas de empleo por puesto y ciudad](https://jobersity.com/empleos): índice de búsquedas con ofertas reales actualizadas cada día
+- [Jobs by role and city](https://jobersity.com/jobs)
+- [Precios y garantía](https://jobersity.com/precios)
+- [Cómo enviamos las candidaturas](https://jobersity.com/como-aplicamos)
+- [Empresas que están contratando](https://jobersity.com/empresas-que-contratan): empresas con 5 o más ofertas recientes; cada una tiene su página /empresa/<nombre>
+- [Metodología de datos](https://jobersity.com/metodologia): de dónde salen las ofertas, cómo se limpian y cómo se calculan sueldos y recuentos
+
+## Guías
+- [Cómo hacer un CV que consiga entrevistas](https://jobersity.com/guias/como-hacer-un-cv)
+- [Preguntas de entrevista de trabajo](https://jobersity.com/guias/preguntas-entrevista-de-trabajo)
+- [Cómo encontrar trabajo en remoto](https://jobersity.com/guias/buscar-trabajo-en-remoto)
+- [Cómo es el CV en cada país](https://jobersity.com/guias/cv-por-pais)
+- [How to write a CV](https://jobersity.com/guides/how-to-write-a-cv)
+- [CV conventions by country](https://jobersity.com/guides/cv-by-country)
+
+## Datos
+- Cada página de empleo (/empleo/<puesto>-en-<ciudad>, /jobs/<role>-in-<city>) lista ofertas publicadas en los últimos 45 días, con el rango de sueldo (percentiles 25 a 75) cuando al menos 5 ofertas lo publican.
+- Las fichas /oferta/<id> llevan datos estructurados JobPosting; las ofertas caducadas responden 410.

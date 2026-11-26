@@ -1,0 +1,727 @@
+﻿url,country,region,price_eur,size_sqm,bedrooms,score,added,airport_km,flood_indicator
+https://realhunt.co/deal/at-neudau-renovated-semi-detached-house-149k,Austria,Styria,149000,150,2,85,2026-11-18,54,low
+https://realhunt.co/deal/at-altruppersdorf-renovated-house-view-weinviertel-197k,Austria,Mistelbach (Lower Austria),197000,81,2,79,2026-11-21,52,
+https://realhunt.co/deal/be-marche-en-famenne-renovated-112m2-flat-energy-a-250k,Belgium,Luxembourg province,249900,112,1,78,2026-11-20,46,low
+https://realhunt.co/deal/bg-byala-58k-fbw62u,Bulgaria,Varna,58900,53,1,92,2026-10-05,40,low
+https://realhunt.co/deal/bg-pomorie-60k-1630398,Bulgaria,Pomorie (Black Sea),59900,81,2,94,2026-10-14,9,medium
+https://realhunt.co/deal/bg-kavarna-66k-89698,Bulgaria,Kavarna (Black Sea),66000,90,2,94,2026-10-14,47,low
+https://realhunt.co/deal/bg-kavarna-66k-89682,Bulgaria,Kavarna (Black Sea),66000,87,2,92,2026-10-14,47,low
+https://realhunt.co/deal/bg-kavarna-hills-69k-1606144,Bulgaria,Kavarna (Black Sea),69000,100,2,93,2026-10-14,47,low
+https://realhunt.co/deal/bg-kavarna-70k-1672825,Bulgaria,Kavarna (Black Sea),70000,99,2,93,2026-10-14,47,low
+https://realhunt.co/deal/bg-sveti-vlas-sea-view-89k-92034,Bulgaria,Burgas,89000,64,1,84,2026-11-18,26,low
+https://realhunt.co/deal/bulyea-55842,Canada,Saskatchewan,55842,62,2,88,2026-09-23,63,low
+https://realhunt.co/deal/avonlea-68327,Canada,Saskatchewan,68327,77,2,88,2026-09-23,54,low
+https://realhunt.co/deal/glace-bay-86962,Canada,Nova Scotia,86962,124,2,94,2026-09-23,8,low
+https://realhunt.co/deal/ca-mulgrave-90k-623450,Canada,Nova Scotia,90400,215,3,92,2026-10-05,121,low
+https://realhunt.co/deal/hughes-brook-92552,Canada,Newfoundland,92552,62,2,81,2026-09-23,49,low
+https://realhunt.co/deal/astle-93111,Canada,New Brunswick,93111,94,2,86,2026-09-23,61,low
+https://realhunt.co/deal/shearstown-99323,Canada,Newfoundland,99323,79,2,85,2026-09-23,40,low
+https://realhunt.co/deal/minto-99323,Canada,New Brunswick,99323,83,2,85,2026-09-23,43,low
+https://realhunt.co/deal/ca-grande-anse-99k-148091,Canada,New Brunswick,99500,107,4,86,2026-10-05,35,low
+https://realhunt.co/deal/ca-twillingate-nl-five-bed-house-each-room-ensuite-194k,Canada,Newfoundland,123400,203,5,90,2026-11-20,77,low
+https://realhunt.co/deal/ca-hillsburn-ns-cottage-house-bay-of-fundy-views-195k,Canada,Nova Scotia,124000,106,3,88,2026-11-20,63,low
+https://realhunt.co/deal/ca-pictou-ns-cottage-new-kitchen-200k,Canada,Nova Scotia,127100,132,3,86,2026-11-18,75,low
+https://realhunt.co/deal/ca-liverpool-ns-updated-character-house-workshop-220k,Canada,Nova Scotia,140000,155,3,85,2026-11-20,135,low
+https://realhunt.co/deal/ca-pictou-ns-1888-house-harbour-views-koi-pond-250k,Canada,Nova Scotia,159000,171,3,87,2026-11-20,75,low
+https://realhunt.co/deal/ca-summerside-pe-heritage-house-tin-ceilings-300k,Canada,Prince Edward Island,190700,156,4,82,2026-11-20,52,low
+https://realhunt.co/deal/ca-saint-andrews-nb-four-bed-house-5-acres-300k,Canada,New Brunswick,190700,150,4,82,2026-11-18,96,low
+https://realhunt.co/deal/co-santa-marta-remodelled-house-pool-rodadero-590m,Colombia,Magdalena,165200,120,3,86,2026-11-20,10,medium
+https://realhunt.co/deal/co-santa-fe-de-antioquia-house-mountain-view-pool-650m,Colombia,Antioquia,176300,150,3,86,2026-11-20,46,low
+https://realhunt.co/deal/co-cartagena-marbella-sea-view-flat-four-bed-750m,Colombia,Bolívar,203500,132,4,85,2026-11-20,2,medium
+https://realhunt.co/deal/cy-mazotos-2-bed-pool-130k-477874,Cyprus,Larnaca,130000,70,2,83,2026-11-18,15,low
+https://realhunt.co/deal/cy-paralimni-renovated-townhouse-title-deeds-187k,Cyprus,Famagusta,187000,74,2,82,2026-11-20,38,low
+https://realhunt.co/deal/cy-paphos-mesa-chorio-pool-flat-195k-502684,Cyprus,Paphos,195000,74,2,78,2026-11-18,10,low
+https://realhunt.co/deal/cy-coral-bay-341k-080655,Cyprus,Paphos,341000,84,2,93,2026-10-12,18,low
+https://realhunt.co/deal/cy-protaras-350k-257111,Cyprus,Famagusta,350000,94,2,92,2026-10-12,42,low
+https://realhunt.co/deal/cy-protaras-470k-585375,Cyprus,Famagusta,470000,85,2,84,2026-10-12,42,medium
+https://realhunt.co/deal/cz-lomnicka-plesna-brick-house-heat-pump-131k,Czech Republic,Karlovy Vary region,130900,120,1,85,2026-11-20,38,low
+https://realhunt.co/deal/cz-castohostice-renovated-four-room-house-big-garden-160k,Czech Republic,Vysočina region,159600,109,3,84,2026-11-21,66,
+https://realhunt.co/deal/cz-litomerice-two-balcony-flat-old-town-view-180k,Czech Republic,Ústí nad Labem region,179700,61,1,77,2026-11-21,50,
+https://realhunt.co/deal/Dc4LcqwjPZX,Denmark,Sønderjylland,35400,,,91,2026-09-23,29,low
+https://realhunt.co/deal/dk-flemlose-59k-076735,Denmark,Funen,59700,81,2,91,2026-10-05,30,low
+https://realhunt.co/deal/dk-vinderup-65k-156f10,Denmark,West Jutland,65000,84,2,91,2026-10-05,29,low
+https://realhunt.co/deal/dk-hurup-66k-a04f4a,Denmark,Thy,66400,115,4,96,2026-10-05,65,low
+https://realhunt.co/deal/dk-asaa-73k-6623fe,Denmark,North Jutland,73500,100,3,93,2026-10-05,34,low
+https://realhunt.co/deal/dk-ranum-79k-6d9fbd,Denmark,North Jutland,79800,198,5,98,2026-10-05,44,low
+https://realhunt.co/deal/dk-broby-79k-431a7e,Denmark,Funen,79800,157,5,92,2026-10-05,30,low
+https://realhunt.co/deal/dk-orehoved-80k-12ff7b,Denmark,Falster,79800,182,5,97,2026-10-11,72,medium
+https://realhunt.co/deal/dk-brenderup-79k-f64a6f,Denmark,Funen,79800,101,2,90,2026-10-05,22,low
+https://realhunt.co/deal/dk-gjerlev-80k-467f3b,Denmark,East Jutland,80200,129,3,92,2026-10-05,44,low
+https://realhunt.co/deal/dk-skelund-80k-e23be1,Denmark,North Jutland,80300,136,4,90,2026-10-05,43,low
+https://realhunt.co/deal/dk-tylstrup-80k-3cfe80,Denmark,North Jutland,80300,70,1,82,2026-10-05,15,low
+https://realhunt.co/deal/DcafB5FFW8n,Denmark,Vejen,82800,,,85,2026-09-23,31,low
+https://realhunt.co/deal/dk-rodby-83k-d8bfeb,Denmark,Lolland,83800,91,2,85,2026-10-05,100,low
+https://realhunt.co/deal/dk-norre-alslev-84k-6c843d,Denmark,Falster,83800,120,3,92,2026-10-11,79,low
+https://realhunt.co/deal/dk-orslev-ringsted-86k-1643,Denmark,near Ringsted (about 50 min from Copenhagen),86300,91,3,89,2026-10-14,26,low
+https://realhunt.co/deal/dk-stoholm-86k-5a0e39,Denmark,West Jutland,86500,70,2,84,2026-10-05,21,low
+https://realhunt.co/deal/dk-ruds-vedby-87k-30051e,Denmark,West Zealand,87000,88,3,87,2026-10-11,49,low
+https://realhunt.co/deal/dk-sjaellands-odde-87k-f42724,Denmark,Sjællands Odde,87100,106,3,90,2026-10-11,60,low
+https://realhunt.co/deal/dk-herborg-89k-d18595,Denmark,West Jutland,89100,79,2,82,2026-10-05,40,low
+https://realhunt.co/deal/dk-hygum-90k-715977,Denmark,West Jutland,90500,157,3,93,2026-10-05,63,low
+https://realhunt.co/deal/dk-munke-bjergby-93k-1947,Denmark,Munke Bjergby (about 60 min from Copenhagen),93000,130,3,93,2026-10-14,39,low
+https://realhunt.co/deal/dk-frederikshavn-93k-b8e556,Denmark,North Jutland,93200,75,1,85,2026-10-05,54,medium
+https://realhunt.co/deal/dk-froslev-93k-c03bb2,Denmark,Mors,93200,211,4,92,2026-10-05,60,low
+https://realhunt.co/deal/dk-oster-jolby-93k-8abcfc,Denmark,Mors,93200,113,4,88,2026-10-05,64,low
+https://realhunt.co/deal/dk-stenum-93k-79ad4a,Denmark,North Jutland,93200,120,2,87,2026-10-05,25,low
+https://realhunt.co/deal/dk-vaarst-93k-925500,Denmark,North Jutland,93200,88,3,87,2026-10-05,22,low
+https://realhunt.co/deal/dk-grindsted-93k-0855d5,Denmark,Grindsted (12 min to Billund),93200,151,4,92,2026-10-11,10,low
+https://realhunt.co/deal/dk-lyderslev-93k-15b047,Denmark,Stevns,93200,87,3,87,2026-10-11,36,low
+https://realhunt.co/deal/dk-klarskov-93k-29261e,Denmark,near Vordingborg,93200,98,4,87,2026-10-11,60,low
+https://realhunt.co/deal/dk-viborg-93k-3c1223,Denmark,Central Jutland,93200,138,3,90,2026-10-05,20,low
+https://realhunt.co/deal/dk-hjerm-93k-04870b,Denmark,West Jutland,93200,177,5,93,2026-10-05,30,low
+https://realhunt.co/deal/dk-stryno-93k-eb6b42,Denmark,Funen,93200,93,2,86,2026-10-05,53,low
+https://realhunt.co/deal/dk-ringe-93k-45e13c,Denmark,Funen,93200,130,4,89,2026-10-05,33,low
+https://realhunt.co/deal/dk-jennum-93k-8c1463,Denmark,East Jutland,93600,88,2,83,2026-10-05,43,low
+https://realhunt.co/deal/dk-doverodde-93k-9ed12a,Denmark,Thy,93600,115,2,87,2026-10-05,62,low
+https://realhunt.co/deal/dk-tystofte-94k-acb84b,Denmark,near Skælskør,93600,141,4,88,2026-10-11,62,low
+https://realhunt.co/deal/dk-brovst-95k-636ed8,Denmark,North Jutland,95200,84,2,84,2026-10-05,20,low
+https://realhunt.co/deal/dk-flade-99k-566f97,Denmark,Mors,99900,186,4,91,2026-10-05,68,low
+https://realhunt.co/deal/dk-kaas-99k-80f932,Denmark,North Jutland,99900,85,1,85,2026-10-05,15,low
+https://realhunt.co/deal/dk-skorpinge-100k-07992d,Denmark,near Slagelse,99900,127,3,85,2026-10-11,55,low
+https://realhunt.co/deal/dk-lundby-100k-ad7c52,Denmark,near Skælskør,99900,125,3,87,2026-10-11,60,low
+https://realhunt.co/deal/dk-kippinge-100k-b3d56b,Denmark,Falster,99900,132,4,86,2026-10-11,79,low
+https://realhunt.co/deal/dk-fjerritslev-99k-69e4a9,Denmark,North Jutland,99900,124,3,85,2026-10-05,32,low
+https://realhunt.co/deal/dk-dybvad-99k-f51461,Denmark,North Jutland,99900,115,3,85,2026-10-05,37,low
+https://realhunt.co/deal/dk-hoeng-saeby-move-in-ready-villa-1195k-dkk,Denmark,near Høng,160000,101,3,82,2026-11-18,52,low
+https://realhunt.co/deal/do-puerto-plata-two-bed-flat-pool-near-playa-dorada-165k,Dominican Republic,Puerto Plata,150000,103,2,84,2026-11-18,9,medium
+https://realhunt.co/deal/dr-juan-dolio-188k-425359,Dominican Republic,San Pedro de Macorís,187800,82,2,89,2026-10-12,27,medium
+https://realhunt.co/deal/dr-las-terrenas-201k-439030,Dominican Republic,Samaná,201200,,2,87,2026-10-12,21,medium
+https://realhunt.co/deal/dr-juan-dolio-224k-441923,Dominican Republic,San Pedro de Macorís,223600,98,3,90,2026-10-12,26,medium
+https://realhunt.co/deal/dr-juan-dolio-224k-447078,Dominican Republic,San Pedro de Macorís,223600,105,2,88,2026-10-12,25,medium
+https://realhunt.co/deal/fr-saint-etienne-39k-705662,France,Saint-Étienne,39000,45,1,84,2026-10-13,63,low
+https://realhunt.co/deal/fr-bussiere-poitevine-39k-088775,France,Haute-Vienne,39950,171,3,92,2026-10-14,47,low
+https://realhunt.co/deal/Dc-ogTBIKeI,France,Nouvelle-Aquitaine,46000,,3,86,2026-09-23,51,low
+https://realhunt.co/deal/fr-saint-etienne-48k-108807,France,Saint-Étienne,48000,45,1,84,2026-10-13,64,low
+https://realhunt.co/deal/fr-thiers-49k-mo1869,France,Puy-de-Dôme,49900,120,3,89,2026-10-14,31,low
+https://realhunt.co/deal/fr-decazeville-49k-900846,France,Aveyron,49980,116,3,90,2026-10-14,25,low
+https://realhunt.co/deal/fr-mulhouse-52k-754748,France,Mulhouse,51800,71,3,90,2026-10-13,24,low
+https://realhunt.co/deal/fr-marseille-54k-r-4563,France,Marseille,54000,28,,80,2026-10-13,17,low
+https://realhunt.co/deal/fr-saint-etienne-54k-729815,France,Saint-Étienne,54000,40,1,80,2026-10-13,64,low
+https://realhunt.co/deal/fr-le-mans-55k-949995,France,Le Mans,55000,51,1,82,2026-10-13,75,low
+https://realhunt.co/deal/fr-bourmont-60k-q27mnf,France,Haute-Marne,55000,,2,84,2026-10-06,100,low
+https://realhunt.co/deal/fr-saint-etienne-56k-284554,France,Saint-Étienne,55500,35,1,79,2026-10-13,63,low
+https://realhunt.co/deal/DdEOA5_llrJ,France,Nouvelle-Aquitaine,56000,,2,79,2026-09-23,39,low
+https://realhunt.co/deal/fr-perpignan-57k-t-9872,France,Perpignan,57000,35,,81,2026-10-13,5,low
+https://realhunt.co/deal/fr-roubaix-57k-230014,France,Roubaix,57000,43,1,80,2026-10-13,15,low
+https://realhunt.co/deal/fr-dijon-57k-969671,France,Dijon,57000,66,1,85,2026-10-13,45,low
+https://realhunt.co/deal/fr-grenoble-59k-973013,France,Grenoble,59000,33,1,76,2026-10-13,36,low
+https://realhunt.co/deal/fr-toulouse-60k-120948,France,Toulouse,59500,30,,78,2026-10-13,6,low
+https://realhunt.co/deal/fr-le-havre-60k-595133,France,Le Havre,59990,70,2,85,2026-10-13,17,low
+https://realhunt.co/deal/fr-saint-etienne-60k-772580,France,Saint-Étienne,60000,52,1,81,2026-10-13,63,low
+https://realhunt.co/deal/fr-perpignan-60k-990769,France,Perpignan,60000,50,1,81,2026-10-13,5,low
+https://realhunt.co/deal/fr-mulhouse-60k-377472,France,Mulhouse,60000,60,2,84,2026-10-13,21,low
+https://realhunt.co/deal/fr-rogny-les-sept-ecluses-65k-2p3e04,France,Yonne,65000,52,2,82,2026-10-06,116,low
+https://realhunt.co/deal/fr-treignac-66k-6l5r27,France,Corrèze,66600,88,2,83,2026-10-05,60,low
+https://realhunt.co/deal/fr-auzances-69k-3pkknx,France,Creuse,69000,,3,83,2026-10-06,58,low
+https://realhunt.co/deal/fr-masseube-gers-renovated-townhouse-70k,France,Gers,69500,70,2,81,2026-11-20,55,low
+https://realhunt.co/deal/fr-limoux-69k-vdt9re,France,Aude,69900,74,2,80,2026-10-05,19,low
+https://realhunt.co/deal/fr-azille-72k-4qkrv1,France,Aude,72000,137,4,87,2026-10-06,29,low
+https://realhunt.co/deal/fr-saint-denis-73k-bk6670,France,Aude,73000,50,2,73,2026-10-06,17,low
+https://realhunt.co/deal/fr-durban-corbieres-80k-ke4gw6,France,Aude,80000,58,2,80,2026-10-06,29,low
+https://realhunt.co/deal/fr-encausse-les-thermes-85k-vjwr3w,France,Haute-Garonne,85000,66,2,75,2026-10-06,62,low
+https://realhunt.co/deal/fr-esperaza-86k-sxd5p3,France,Aude,86400,114,2,79,2026-10-06,32,low
+https://realhunt.co/deal/fr-nieuil-109k-mo5052,France,Charente,109760,116,2,91,2026-11-14,53,low
+https://realhunt.co/deal/fr-la-charite-sur-loire-town-house-patio-119k,France,Burgundy,119500,156,4,81,2026-11-18,156,low
+https://realhunt.co/deal/fr-lencloitre-123k-157528,France,Vienne,123000,102,2,91,2026-11-14,25,low
+https://realhunt.co/deal/fr-villefagnan-125k-152329,France,Charente,125000,153,3,91,2026-11-14,64,low
+https://realhunt.co/deal/fr-frayssinet-lot-stone-village-house-125k,France,Lot,125000,113,3,80,2026-11-18,42,low
+https://realhunt.co/deal/fr-bessac-134k-729283,France,Charente,134375,116,2,91,2026-11-14,79,low
+https://realhunt.co/deal/fr-saint-vaury-136k-559424,France,Creuse,136250,98,2,91,2026-11-14,59,low
+https://realhunt.co/deal/fr-val-au-perche-137k-446720,France,Orne,137900,81,3,91,2026-11-14,96,low
+https://realhunt.co/deal/fr-bergerac-139k-175736,France,Dordogne,139000,77,2,91,2026-11-14,6,low
+https://realhunt.co/deal/fr-bergerac-stone-house-balcony-garden-139k,France,Dordogne,139000,150,4,86,2026-11-18,6,low
+https://realhunt.co/deal/fr-salbris-146k-279709,France,Loir-et-Cher,146990,83,3,91,2026-11-14,99,low
+https://realhunt.co/deal/fr-ohain-148k-150454,France,Nord,148400,106,3,91,2026-11-14,53,low
+https://realhunt.co/deal/fr-la-courtine-149k-115059,France,Creuse,149000,250,5,91,2026-11-14,72,low
+https://realhunt.co/deal/fr-provence-riez-renovated-village-house-dpe-b-159k,France,Provence,159000,91,2,78,2026-11-20,81,low
+https://realhunt.co/deal/fr-plouezoch-stone-house-conservatory-near-terenez-178k,France,Brittany,178500,88,3,78,2026-11-20,48,low
+https://realhunt.co/deal/fr-burgundy-champvert-canal-stone-house-188k,France,Burgundy,188000,160,2,79,2026-11-20,120,low
+https://realhunt.co/deal/fr-yvrac-et-malleyrand-1700s-stone-house-180m2-189k,France,Charente,189000,180,2,84,2026-11-20,58,low
+https://realhunt.co/deal/fr-normandy-vendeuvre-stone-house-river-garden-205k,France,Normandy,205000,100,3,76,2026-11-20,35,low
+https://realhunt.co/deal/fr-provence-saint-martin-de-castillon-village-house-210k,France,Provence,210000,90,2,78,2026-11-20,49,low
+https://realhunt.co/deal/fr-lodeve-top-floor-loft-terrace-285k,France,Occitanie,285000,215,5,85,2026-10-30,45,low
+https://realhunt.co/deal/de-chemnitz-40k-587336,Germany,Chemnitz,40000,41,,80,2026-10-13,66,low
+https://realhunt.co/deal/de-chemnitz-40k-931045,Germany,Chemnitz,40000,54,1,87,2026-10-13,64,low
+https://realhunt.co/deal/de-chemnitz-45k-168857,Germany,Chemnitz,45000,41,,81,2026-10-13,65,low
+https://realhunt.co/deal/de-chemnitz-45k-234628,Germany,Chemnitz,45000,49,1,83,2026-10-13,66,low
+https://realhunt.co/deal/de-wuppertal-50k-248035,Germany,Wuppertal,50000,34,,77,2026-10-13,34,low
+https://realhunt.co/deal/de-chemnitz-50k-950618,Germany,Chemnitz,50000,56,2,82,2026-10-13,67,low
+https://realhunt.co/deal/de-chemnitz-50k-665910,Germany,Chemnitz,50000,72,1,86,2026-10-13,68,low
+https://realhunt.co/deal/de-chemnitz-50k-484380,Germany,Chemnitz,50000,57,2,82,2026-10-13,66,low
+https://realhunt.co/deal/de-krefeld-50k-993543,Germany,Krefeld,50000,30,,78,2026-10-13,17,low
+https://realhunt.co/deal/de-chemnitz-50k-826803,Germany,Chemnitz,50000,41,,78,2026-10-13,69,low
+https://realhunt.co/deal/de-chemnitz-55k-536019,Germany,Chemnitz,55000,38,,75,2026-10-13,69,low
+https://realhunt.co/deal/de-chemnitz-55k-650355,Germany,Chemnitz,55000,57,2,81,2026-10-13,66,low
+https://realhunt.co/deal/de-chemnitz-55k-462680,Germany,Chemnitz,55000,65,1,84,2026-10-13,68,low
+https://realhunt.co/deal/de-quierschied-55k-581809,Germany,Quierschied,55000,71,2,84,2026-10-13,13,low
+https://realhunt.co/deal/de-chemnitz-55k-893563,Germany,Chemnitz,55000,66,1,83,2026-10-13,66,low
+https://realhunt.co/deal/de-chemnitz-55k-074122,Germany,Chemnitz,55000,51,1,77,2026-10-13,69,low
+https://realhunt.co/deal/de-magdeburg-60k-478460,Germany,Magdeburg,60000,39,,72,2026-10-13,88,low
+https://realhunt.co/deal/de-bremen-60k-206993,Germany,Bremen,60000,34,,72,2026-10-13,2,low
+https://realhunt.co/deal/de-chemnitz-60k-885916,Germany,Chemnitz,60000,57,1,76,2026-10-13,64,low
+https://realhunt.co/deal/de-gelsenkirchen-60k-424740,Germany,Gelsenkirchen,60000,30,,71,2026-10-13,33,low
+https://realhunt.co/deal/de-wassersleben-flensburg-fjord-beach-flat-terrace-199k,Germany,Schleswig-Holstein,199000,60,2,77,2026-11-20,28,low
+https://realhunt.co/deal/gr-samos-agia-triada-68k-20601330,Greece,Samos (Greece),68000,80,2,90,2026-10-14,20,low
+https://realhunt.co/deal/gr-agiasos-70k-s5k3nl,Greece,Lesbos,70000,,2,88,2026-10-05,23,low
+https://realhunt.co/deal/gr-crete-viannos-76k-20595936,Greece,Crete (Greece),76000,61,2,88,2026-10-14,43,low
+https://realhunt.co/deal/gr-evia-pefki-80k-19672601,Greece,North Evia (Greece),80000,50,2,85,2026-10-14,31,medium
+https://realhunt.co/deal/gr-samos-marathokampos-80k-19741965,Greece,Samos (Greece),80000,64,2,88,2026-10-14,20,low
+https://realhunt.co/deal/gr-laconia-gytheio-renovated-country-house-85k,Greece,Laconia,85000,82,2,87,2026-11-18,59,medium
+https://realhunt.co/deal/gr-pelion-fairytale-house-95k,Greece,Pelion (near Portaria),95000,68,2,88,2026-10-16,27,low
+https://realhunt.co/deal/gr-messinia-vasilitsi-sea-view-109k,Greece,Messinia,109000,116,3,93,2026-10-16,35,low
+https://realhunt.co/deal/gr-crete-choumeriako-renovated-115k,Greece,Crete,115000,93,2,91,2026-10-16,42,low
+https://realhunt.co/deal/gr-trikeri-sea-terrace-120k,Greece,Pelion,120000,54,2,83,2026-10-16,28,low
+https://realhunt.co/deal/gr-crete-elounda-one-bed-private-yard-125k,Greece,Crete,125000,35,1,79,2026-11-18,35,medium
+https://realhunt.co/deal/gr-crete-neapoli-renovated-stone-house-courtyard-149k,Greece,Crete,149000,93,1,86,2026-11-20,40,low
+https://realhunt.co/deal/gr-skopelos-sea-view-150k,Greece,Skopelos (Sporades),150000,110,2,89,2026-10-16,20,low
+https://realhunt.co/deal/gr-rhodes-paradeisi-modern-155k,Greece,Rhodes,155000,84,2,85,2026-10-16,1,medium
+https://realhunt.co/deal/gr-crete-drapanos-pool-158k,Greece,Crete,158000,76,2,87,2026-10-16,13,low
+https://realhunt.co/deal/gr-gargaliani-garden-sea-158k,Greece,Messinia,158000,62,2,82,2026-10-16,34,low
+https://realhunt.co/deal/gr-halkidiki-new-house-160k,Greece,Halkidiki,159990,72,3,84,2026-10-16,29,low
+https://realhunt.co/deal/gr-ano-volos-pelion-stone-house-gulf-view-167k,Greece,Magnesia,167000,114,3,85,2026-11-18,24,low
+https://realhunt.co/deal/gr-halkidiki-nea-fokea-two-bed-flat-sea-view-170k,Greece,Halkidiki,170000,60,2,80,2026-11-20,56,low
+https://realhunt.co/deal/gr-karpathos-othos-four-bed-sea-view-170k,Greece,Karpathos,170000,165,4,89,2026-11-18,15,low
+https://realhunt.co/deal/gr-crete-karydi-renovated-stone-house-175k,Greece,Crete,175000,160,2,87,2026-11-18,35,low
+https://realhunt.co/deal/gr-chios-volissos-1881-stone-house-175k,Greece,Chios,175000,129,2,85,2026-11-18,24,low
+https://realhunt.co/deal/gr-messinia-andriani-renovated-stone-house-180k,Greece,Messinia,180000,148,2,89,2026-11-20,25,medium
+https://realhunt.co/deal/gr-peloponnese-gytheio-stone-house-sea-view-terrace-195k,Greece,Laconia,195000,85,2,82,2026-11-20,59,low
+https://realhunt.co/deal/gr-mani-milea-1850-stone-house-courtyard-195k,Greece,Messinia,195000,132,1,84,2026-11-20,39,low
+https://realhunt.co/deal/gr-crete-koutsounari-stone-house-libyan-sea-view-195k,Greece,Crete,195000,88,2,83,2026-11-20,33,low
+https://realhunt.co/deal/gr-crete-kritsa-restored-stone-house-roof-terrace-199k,Greece,Crete,199000,105,3,84,2026-11-20,42,low
+https://realhunt.co/deal/hu-balatonlelle-house-sauna-plunge-pool-guest-studio-249k,Hungary,Somogy (Lake Balaton),249000,108,2,84,2026-11-20,43,low
+https://realhunt.co/deal/ie-killala-renovated-village-house-a3-energy-170k,Ireland,County Mayo,170000,95,1,83,2026-11-20,43,low
+https://realhunt.co/deal/ie-tramore-ground-floor-two-bed-flat-near-beach-220k,Ireland,County Waterford,220000,76,2,77,2026-11-20,99,low
+https://realhunt.co/deal/ie-kilkieran-connemara-sea-view-two-bed-house-230k,Ireland,County Galway,230000,102,2,80,2026-11-20,87,low
+https://realhunt.co/deal/ie-leitrim-village-marina-view-apartment-berth-230k,Ireland,County Leitrim,230000,121,3,80,2026-11-20,50,low
+https://realhunt.co/deal/DcoUnwBDDxF,Italy,Lazio,12000,,1,89,2026-09-23,25,low
+https://realhunt.co/deal/grotte-santo-stefano-13000,Italy,Lazio,13000,25,1,81,2026-09-22,70,low
+https://realhunt.co/deal/DdSm-JkiJem,Italy,Tuscany,16000,51,2,82,2026-09-23,75,low
+https://realhunt.co/deal/Dcsm9sZoDMp,Italy,Lazio,16000,40,2,83,2026-09-23,68,low
+https://realhunt.co/deal/Dcxwhq4kRRe,Italy,Lazio,20000,51,1,80,2026-09-23,74,low
+https://realhunt.co/deal/it-sangineto-sea-view-house-22k-129976,Italy,Calabria,22000,108,2,91,2026-11-02,83,low
+https://realhunt.co/deal/Dc6Y4UKDLyc,Italy,Tuscany,24000,76,2,85,2026-09-23,,low
+https://realhunt.co/deal/it-falerna-beachfront-studio-28k-726771,Italy,Calabria,28000,40,1,91,2026-11-02,10,low
+https://realhunt.co/deal/Dc1cyxRDM9Y,Italy,Puglia,28000,,1,88,2026-09-23,21,low
+https://realhunt.co/deal/it-falconara-torremezzo-sea-terrace-29k-942544,Italy,Calabria,29000,55,1,91,2026-11-02,46,low
+https://realhunt.co/deal/it-messina-acqualadrone-seafront-30k-356356,Italy,Sicily,30000,40,1,91,2026-11-02,24,low
+https://realhunt.co/deal/it-pollina-cefalu-sea-view-30k-685163,Italy,Sicily,30000,50,1,91,2026-11-02,94,low
+https://realhunt.co/deal/Dcgta8yjCAR,Italy,Calabria,30000,,1,88,2026-09-23,29,low
+https://realhunt.co/deal/DdUZvbGkTvh,Italy,Umbria,32000,,1,88,2026-09-23,15,low
+https://realhunt.co/deal/Dc8TyIDkexU,Italy,Como area,34000,,5,85,2026-09-23,20,low
+https://realhunt.co/deal/Dcmar6QDXXm,Italy,Sardinia,35000,75,2,84,2026-09-23,87,low
+https://realhunt.co/deal/Dc32k2tDKLf,Italy,Calabria,35000,,2,87,2026-09-23,29,low
+https://realhunt.co/deal/ventimiglia-di-sicilia-35000,Italy,Palermo,35000,48,,77,2026-09-22,50,low
+https://realhunt.co/deal/DcjBmxJjKHY,Italy,Lake Como,38000,,1,84,2026-09-23,27,low
+https://realhunt.co/deal/acquappesa-sea-view-39000,Italy,Calabria,39000,40,1,84,2026-09-20,70,low
+https://realhunt.co/deal/DdVwBL7DVl0,Italy,Piedmont,39000,30,,80,2026-09-23,32,low
+https://realhunt.co/deal/Dcq2xGyDDey,Italy,Sardinia,39000,,2,83,2026-09-23,87,low
+https://realhunt.co/deal/falconara-albanese-41000,Italy,Cosenza,41000,86,,87,2026-09-22,43,low
+https://realhunt.co/deal/it-san-venanzo-48k-knitz9,Italy,Umbria,43500,77,2,81,2026-10-05,32,low
+https://realhunt.co/deal/Dc82VcSjAIe,Italy,Lombardy,45000,82,2,86,2026-09-23,12,low
+https://realhunt.co/deal/DcyzSIdjOz6,Italy,Sicily,45000,,,84,2026-09-23,77,low
+https://realhunt.co/deal/Dc-oopNDU4y,Italy,,45000,,2,77,2026-09-23,,
+https://realhunt.co/deal/DclJGYkDf8l,Italy,Tuscany,45000,65,2,81,2026-09-23,,low
+https://realhunt.co/deal/DcndWlcGwtG,Italy,Umbria,46000,40,1,73,2026-09-23,41,low
+https://realhunt.co/deal/Dclv5CJDdhi,Italy,Sicily,49000,87,2,84,2026-09-23,77,low
+https://realhunt.co/deal/DceAZ_xjMzt,Italy,Puglia,49000,,1,83,2026-09-23,21,low
+https://realhunt.co/deal/acquedolci-49000,Italy,Messina,49000,81,,83,2026-09-22,78,low
+https://realhunt.co/deal/borgorose-49000,Italy,Rieti,49000,71,,74,2026-09-22,69,low
+https://realhunt.co/deal/it-giano-dell-umbria-village-house-garden-view-55k,Italy,Perugia (Umbria),55000,97,2,86,2026-11-21,30,
+https://realhunt.co/deal/DcLIqCsHD3H,Italy,Marche,55000,,3,73,2026-09-23,49,low
+https://realhunt.co/deal/DdOGB56ABXI,Italy,Abruzzo,59000,,,85,2026-09-13,46,low
+https://realhunt.co/deal/Dc_kLRrDKqS,Italy,Abruzzo,59000,119,2,83,2026-09-23,35,low
+https://realhunt.co/deal/Dc26pZMj0VD,Italy,Lazio,64000,,,81,2026-09-23,88,low
+https://realhunt.co/deal/it-cisternino-65k-4hcrku,Italy,Apulia,65000,45,1,75,2026-10-05,45,low
+https://realhunt.co/deal/it-loazzolo-village-cottage-garden-hill-view-68k,Italy,Asti (Piedmont),68000,87,2,82,2026-11-21,52,
+https://realhunt.co/deal/it-locorotondo-75k-3me3r0,Italy,Apulia,75000,45,1,75,2026-10-05,54,low
+https://realhunt.co/deal/Dc8Edq5j8H_,Italy,Tuscany,75000,,,80,2026-09-23,60,low
+https://realhunt.co/deal/DcdKWJrleVQ,Italy,Tuscany,80000,,,77,2026-09-23,,low
+https://realhunt.co/deal/DdDyY8OgGIP,Italy,Tuscany,83000,,,80,2026-09-23,67,low
+https://realhunt.co/deal/lake-como-peglio-85000,Italy,Lake Como,85000,69,2,83,2026-09-29,34,low
+https://realhunt.co/deal/it-calabria-torremezzo-three-bed-courtyard-85k,Italy,Calabria,85000,101,3,84,2026-11-18,46,medium
+https://realhunt.co/deal/DdLhHoAESiS,Italy,Liguria,85000,,3,75,2026-09-23,,low
+https://realhunt.co/deal/lake-como-plesio-89000,Italy,Lake Como,89000,160,3,86,2026-09-24,25,low
+https://realhunt.co/deal/it-san-siro-95k-057133,Italy,Lake Como,95000,60,2,91,2026-10-12,28,low
+https://realhunt.co/deal/it-abruzzo-secinaro-four-bed-guest-flat-95k,Italy,Abruzzo,95000,171,4,83,2026-11-18,51,low
+https://realhunt.co/deal/it-sardinia-luras-stazzo-97k,Italy,Sardinia,97000,70,2,80,2026-10-16,29,low
+https://realhunt.co/deal/it-santa-fiora-renovated-stone-house-monte-amiata-99k,Italy,Santa Fiora (Tuscany),99000,120,3,83,2026-11-21,81,
+https://realhunt.co/deal/it-montecatini-val-di-cecina-stone-townhouse-centre-100k,Italy,Pisa (Tuscany),100000,110,2,80,2026-11-21,43,
+https://realhunt.co/deal/it-lake-iseo-parzanica-beamed-duplex-100k,Italy,Lombardy,100000,80,1,81,2026-11-18,26,low
+https://realhunt.co/deal/DdVz9K2ktYe,Italy,Tuscany,100000,,,79,2026-09-23,67,low
+https://realhunt.co/deal/it-liguria-savignone-garden-flat-mountain-views-104k,Italy,Liguria,104000,75,2,78,2026-11-20,20,low
+https://realhunt.co/deal/it-marche-amandola-restored-brick-house-109k,Italy,Le Marche,109000,85,2,78,2026-11-18,70,low
+https://realhunt.co/deal/it-san-siro-como-lake-view-115k-805633,Italy,Lombardy,115000,85,2,91,2026-11-09,29,low
+https://realhunt.co/deal/it-tuscany-arcidosso-stone-house-terrace-115k,Italy,Tuscany,115000,100,2,80,2026-11-20,83,low
+https://realhunt.co/deal/it-piedmont-castellino-tanaro-renovated-hill-house-115k,Italy,Piedmont,115000,180,2,86,2026-11-20,33,low
+https://realhunt.co/deal/it-sicily-collesano-madonie-four-bed-house-115k,Italy,Sicily,115000,200,4,80,2026-11-18,79,low
+https://realhunt.co/deal/it-marche-san-lorenzo-in-campo-house-garden-garage-120k,Italy,Le Marche,120000,130,2,85,2026-11-20,34,low
+https://realhunt.co/deal/it-umbria-collazzone-castle-stone-house-125k,Italy,Umbria,125000,125,2,82,2026-11-20,23,low
+https://realhunt.co/deal/it-rosignano-marittimo-sea-view-village-flat-125k,Italy,Tuscany,125000,58,1,77,2026-11-18,31,low
+https://realhunt.co/deal/it-tuscany-capannori-ruota-townhouse-garden-130k,Italy,Tuscany,130000,95,2,82,2026-11-20,17,low
+https://realhunt.co/deal/it-umbria-cascia-stone-house-valley-view-130k,Italy,Umbria,130000,84,1,78,2026-11-18,59,low
+https://realhunt.co/deal/it-tuscany-montemerano-saturnia-139k,Italy,Tuscany,139000,76,2,76,2026-10-16,99,low
+https://realhunt.co/deal/it-puglia-francavilla-fontana-country-home-139k,Italy,Puglia,139000,85,1,80,2026-11-18,34,low
+https://realhunt.co/deal/it-piedmont-acqui-terme-vaulted-period-flat-140k,Italy,Piedmont,140000,120,2,82,2026-11-20,42,low
+https://realhunt.co/deal/it-tuscany-montaione-renovated-140k,Italy,Tuscany (between Florence and Pisa),140000,78,2,79,2026-10-16,36,low
+https://realhunt.co/deal/it-umbria-gubbio-stone-farmhouse-3-hectares-148k,Italy,Umbria,148000,110,4,78,2026-11-20,29,low
+https://realhunt.co/deal/it-tuscany-pescia-sea-of-clouds-150k,Italy,Tuscany,150000,148,3,85,2026-10-16,39,low
+https://realhunt.co/deal/it-sardinia-soddi-lake-omodeo-view-house-150k,Italy,Sardinia,150000,150,3,81,2026-11-18,75,low
+https://realhunt.co/deal/it-umbria-spoleto-la-torretta-restored-hamlet-house-155k,Italy,Umbria,155000,73,2,75,2026-11-20,43,low
+https://realhunt.co/deal/it-sardinia-iglesias-three-ensuite-town-house-155k,Italy,Sardinia,155000,104,3,79,2026-11-20,45,low
+https://realhunt.co/deal/it-tuscany-roccastrada-stone-loft-158k,Italy,Tuscany,158000,220,2,85,2026-10-16,81,low
+https://realhunt.co/deal/it-sardinia-budoni-sea-view-158k,Italy,Sardinia,158000,64,2,80,2026-10-16,23,low
+https://realhunt.co/deal/it-tuscany-cutigliano-ski-house-159k,Italy,Tuscany,159000,127,3,82,2026-10-16,48,low
+https://realhunt.co/deal/it-sardinia-vignola-sea-view-160k,Italy,Sardinia,160000,86,2,81,2026-10-16,43,low
+https://realhunt.co/deal/it-umbria-citta-della-pieve-orchard-160k,Italy,Umbria,160000,114,3,81,2026-10-16,45,low
+https://realhunt.co/deal/it-rocchetta-di-fazio-restored-14th-century-stone-house-160k,Italy,Tuscany,160000,118,1,79,2026-11-21,89,
+https://realhunt.co/deal/it-chiusi-della-verna-stone-country-house-garden-165k,Italy,Arezzo (Tuscany),165000,145,2,79,2026-11-21,56,
+https://realhunt.co/deal/it-liguria-cipressa-sea-view-flat-aregai-170k,Italy,Liguria,170000,73,1,77,2026-11-18,61,low
+https://realhunt.co/deal/it-pairola-renovated-flat-sea-view-terrace-175k,Italy,Liguria,175000,80,2,77,2026-11-21,77,
+https://realhunt.co/deal/it-piedmont-acqui-terme-country-house-garden-180k,Italy,Piedmont,180000,200,3,84,2026-11-20,41,low
+https://realhunt.co/deal/it-lazio-arpino-renovated-country-house-olive-grove-180k,Italy,Lazio,180000,147,2,81,2026-11-20,85,low
+https://realhunt.co/deal/it-lake-como-gravedona-lake-view-195k,Italy,Lombardy,195000,80,1,91,2026-10-30,34,low
+https://realhunt.co/deal/it-liguria-castellaro-renovated-sea-view-flat-no-fees-197k,Italy,Liguria,197000,76,2,77,2026-11-20,57,low
+https://realhunt.co/deal/jp-takayama-shokawa-chalet-7k-179056,Japan,Gifu,7400,94,2,91,2026-11-02,57,low
+https://realhunt.co/deal/jp-izu-amagi-cabin-onsen-10k-835694,Japan,Shizuoka,10240,66,2,91,2026-11-02,29,low
+https://realhunt.co/deal/jp-takayama-log-cabin-11k-225929,Japan,Gifu,11380,53,1,91,2026-11-02,57,low
+https://realhunt.co/deal/jp-saku-forest-villa-16k-837899,Japan,Nagano,15930,106,3,91,2026-11-02,55,low
+https://realhunt.co/deal/Dc_EC5LDMeg,Japan,Wakayama,18400,,,88,2026-09-23,27,low
+https://realhunt.co/deal/DZzpJ7UDSZB,Japan,,18400,,,86,2026-09-23,,
+https://realhunt.co/deal/jp-gifu-renovated-house-19k-991953,Japan,Gifu,18770,69,3,91,2026-11-02,24,low
+https://realhunt.co/deal/DbbD15oDKLz,Japan,Oita,19320,,,89,2026-09-23,40,medium
+https://realhunt.co/deal/jp-inami-seaside-villa-20k-503430,Japan,Wakayama,19910,70,2,91,2026-11-02,23,low
+https://realhunt.co/deal/jp-agano-forest-cabin-23k-775004,Japan,Niigata,22750,75,3,91,2026-11-02,18,low
+https://realhunt.co/deal/jp-kitakaruizawa-villa-26k-093770,Japan,Gunma,25600,60,2,91,2026-11-02,68,low
+https://realhunt.co/deal/jp-inami-beach-bungalow-27k-272502,Japan,Wakayama,27300,59,3,91,2026-11-02,23,low
+https://realhunt.co/deal/jp-akagi-villa-28k-082879,Japan,Gunma,27870,70,2,91,2026-11-02,115,low
+https://realhunt.co/deal/DdJ6Zs_DcnX,Japan,Wakayama,34960,,,87,2026-09-23,30,low
+https://realhunt.co/deal/DdZOxZODE98,Japan,Tochigi,38640,,1,85,2026-09-23,36,low
+https://realhunt.co/deal/DcjCuYlkrFY,Japan,Wakayama,39560,,,85,2026-09-23,42,low
+https://realhunt.co/deal/DdWPFmBkdhr,Japan,Kagawa,43240,,,86,2026-09-23,27,low
+https://realhunt.co/deal/DdL76VHCMsm,Japan,Yamanashi,44160,,,75,2026-09-23,93,low
+https://realhunt.co/deal/DcjKIfMDIaB,Japan,Kyoto,49680,,,86,2026-09-23,39,low
+https://realhunt.co/deal/Da7vZIFDIuo,Japan,Kyoto,54280,,,86,2026-09-23,54,low
+https://realhunt.co/deal/Dbk8HHgCAHX,Japan,Hyogo,54280,,,86,2026-09-23,53,low
+https://realhunt.co/deal/jp-awaji-misawa-house-54k-788413,Japan,Hyogo,54300,91,3,82,2026-11-18,35,low
+https://realhunt.co/deal/DcEQh3AjBbN,Japan,Wakayama,56120,,,84,2026-09-23,44,low
+https://realhunt.co/deal/DcTSbXtj9qu,Japan,Niigata,56120,120,5,86,2026-09-23,75,low
+https://realhunt.co/deal/Dc07Tz9DoUf,Japan,Okayama,57040,,,86,2026-09-23,26,low
+https://realhunt.co/deal/Db59YYrjN5h,Japan,Okayama,57040,,2,86,2026-09-23,13,low
+https://realhunt.co/deal/Dc56aI-icMP,Japan,Shiga,62560,,,81,2026-09-23,74,low
+https://realhunt.co/deal/jp-fuji-66k-852751,Japan,Shizuoka,66700,88,3,83,2026-10-05,62,low
+https://realhunt.co/deal/DcbA4gjAVct,Japan,Fukui,78200,230,,85,2026-09-23,59,low
+https://realhunt.co/deal/jp-miura-misaki-four-bed-house-2004-80k,Japan,Kanagawa,79500,83,4,78,2026-11-20,47,low
+https://realhunt.co/deal/jp-shimizu-81k-591487,Japan,Shizuoka,81900,92,4,81,2026-10-05,43,low
+https://realhunt.co/deal/jp-shima-2018-house-large-plot-85k-596606,Japan,Mie,84500,106,2,79,2026-11-18,62,medium
+https://realhunt.co/deal/DbA4_hKEThx,Japan,Kanagawa,91080,,,81,2026-09-23,47,low
+https://realhunt.co/deal/jp-nasushiobara-refreshed-2009-house-105k,Japan,Tochigi,104600,98,3,75,2026-11-20,54,low
+https://realhunt.co/deal/jp-otaru-takashima-2016-four-bed-house-corner-plot-117k,Japan,Hokkaido,116800,132,4,79,2026-11-21,33,
+https://realhunt.co/deal/jp-matsue-yakumo-modern-2015-house-garden-125k,Japan,Shimane,125400,96,3,77,2026-11-20,16,low
+https://realhunt.co/deal/jp-yonago-kaike-2016-one-floor-japanese-house-143k,Japan,Tottori,142500,140,4,81,2026-11-20,13,medium
+https://realhunt.co/deal/jp-matsumoto-azusagawa-house-irori-hearth-old-timbers-160k,Japan,Nagano,159600,167,4,79,2026-11-21,10,
+https://realhunt.co/deal/san-pedro-tlaquepaque-50575,Mexico,Jalisco,50575,49,2,93,2026-09-23,5,low
+https://realhunt.co/deal/cuautlancingo-68984,Mexico,Puebla,68984,78,3,87,2026-09-23,15,low
+https://realhunt.co/deal/tonala-70805,Mexico,Jalisco,70805,65,2,89,2026-09-23,20,low
+https://realhunt.co/deal/mazatlan-80920,Mexico,Sinaloa,80920,71,3,90,2026-09-23,23,low
+https://realhunt.co/deal/mazatlan-83298,Mexico,Sinaloa,83298,60,2,86,2026-09-23,23,low
+https://realhunt.co/deal/mazatlan-83448,Mexico,Sinaloa,83448,60,2,84,2026-09-23,20,medium
+https://realhunt.co/deal/mx-mazatlan-86k-809756,Mexico,Sinaloa,86100,68,2,86,2026-10-05,22,low
+https://realhunt.co/deal/mx-mazatlan-97k-889034,Mexico,Sinaloa,97100,65,2,84,2026-10-05,21,low
+https://realhunt.co/deal/mazatlan-98621,Mexico,Sinaloa,98621,89,2,86,2026-09-23,20,low
+https://realhunt.co/deal/mx-mazatlan-three-bed-house-gated-pool-2-9m,Mexico,Sinaloa,143000,75,3,81,2026-11-18,22,low
+https://realhunt.co/deal/mx-queretaro-el-marques-three-bed-house-pool-tennis-3-1m,Mexico,Querétaro,152100,146,3,85,2026-11-20,13,low
+https://realhunt.co/deal/mx-puerto-vallarta-three-bed-house-pool-condo-3-25m,Mexico,Jalisco,160200,94,3,82,2026-11-18,4,low
+https://realhunt.co/deal/mx-tuxcueca-el-tepehuaje-lake-chapala-view-house-4-08m,Mexico,Jalisco,195300,245,5,88,2026-11-20,43,low
+https://realhunt.co/deal/mx-merida-centro-colonial-house-pool-barrio-santiago-4-45m,Mexico,Yucatán,216600,160,2,86,2026-11-20,5,low
+https://realhunt.co/deal/me-zupci-single-storey-home-mountain-view-175k,Montenegro,Bar,175000,138,2,84,2026-11-20,28,low
+https://realhunt.co/deal/nl-amsterdam-299k-563619,Netherlands,Amsterdam,299000,73,2,94,2026-10-13,14,low
+https://realhunt.co/deal/nl-amsterdam-299k-968188,Netherlands,Amsterdam,299000,72,2,93,2026-10-13,14,low
+https://realhunt.co/deal/nl-amsterdam-300k-930369,Netherlands,Amsterdam,300000,72,2,90,2026-10-13,15,low
+https://realhunt.co/deal/nl-amsterdam-305k-988747,Netherlands,Amsterdam,305000,70,3,89,2026-10-13,14,low
+https://realhunt.co/deal/nl-amsterdam-310k-984361,Netherlands,Amsterdam,310000,70,2,86,2026-10-13,13,low
+https://realhunt.co/deal/nl-amsterdam-310k-950790,Netherlands,Amsterdam,310000,71,2,87,2026-10-13,14,low
+https://realhunt.co/deal/nl-amsterdam-315k-980579,Netherlands,Amsterdam,315000,75,3,88,2026-10-13,13,low
+https://realhunt.co/deal/nl-amsterdam-315k-576658,Netherlands,Amsterdam,315000,70,2,84,2026-10-13,15,low
+https://realhunt.co/deal/nl-amsterdam-325k-505653,Netherlands,Amsterdam,325000,107,3,94,2026-10-13,15,low
+https://realhunt.co/deal/nl-amsterdam-325k-562301,Netherlands,Amsterdam,325000,75,2,88,2026-10-13,15,low
+https://realhunt.co/deal/nl-amsterdam-325k-565328,Netherlands,Amsterdam,325000,72,2,84,2026-10-13,6,low
+https://realhunt.co/deal/nl-amsterdam-325k-982731,Netherlands,Amsterdam,325000,73,2,86,2026-10-13,15,low
+https://realhunt.co/deal/nl-amsterdam-330k-529886,Netherlands,Amsterdam,330000,77,3,85,2026-10-13,15,low
+https://realhunt.co/deal/nl-amsterdam-330k-474793,Netherlands,Amsterdam,330000,74,2,83,2026-10-13,15,low
+https://realhunt.co/deal/nl-amsterdam-330k-999230,Netherlands,Amsterdam,330000,81,3,89,2026-10-13,9,low
+https://realhunt.co/deal/nl-amsterdam-335k-962495,Netherlands,Amsterdam,335000,93,3,90,2026-10-13,13,low
+https://realhunt.co/deal/nl-amsterdam-335k-535568,Netherlands,Amsterdam,335000,79,2,86,2026-10-13,15,low
+https://realhunt.co/deal/nl-amsterdam-340k-564864,Netherlands,Amsterdam,339500,82,4,85,2026-10-13,14,low
+https://realhunt.co/deal/DaYkWXMiFX4,Norway,Telemark,65431,,,81,2026-09-23,142,low
+https://realhunt.co/deal/pl-jedrzejow-54k-977114,Poland,Świętokrzyskie,53693,65,3,93,2026-10-13,72,low
+https://realhunt.co/deal/pl-bielsk-podlaski-56k-483418,Poland,Podlaskie,55978,61,3,88,2026-10-13,88,low
+https://realhunt.co/deal/pl-bytom-57k-186977,Poland,Silesia,57120,127,3,96,2026-10-13,20,low
+https://realhunt.co/deal/pl-sosnowiec-61k-790712,Poland,Silesia,60547,78,3,94,2026-10-13,23,low
+https://realhunt.co/deal/pl-bielsk-podlaski-67k-382768,Poland,Podlaskie,67402,62,3,87,2026-10-13,87,low
+https://realhunt.co/deal/pl-brodnica-67k-064762,Poland,Kuyavia-Pomerania,67402,57,3,87,2026-10-13,97,low
+https://realhunt.co/deal/pl-ostroda-68k-805099,Poland,Warmia-Masuria,68316,60,3,90,2026-10-13,69,low
+https://realhunt.co/deal/pl-radomsko-68k-641050,Poland,Łódź,68316,58,3,86,2026-10-13,70,low
+https://realhunt.co/deal/pl-zabrze-68k-033339,Poland,Zabrze,68316,77,4,92,2026-10-13,28,low
+https://realhunt.co/deal/pl-bytom-68k-687710,Poland,Bytom,68316,74,3,93,2026-10-13,17,low
+https://realhunt.co/deal/pl-suwalki-72k-050290,Poland,Podlaskie,71971,58,3,83,2026-10-13,121,low
+https://realhunt.co/deal/pl-walbrzych-73k-831228,Poland,Wałbrzych,72885,89,3,90,2026-10-13,55,low
+https://realhunt.co/deal/pl-przasnysz-73k-780590,Poland,Masovia,72885,77,3,86,2026-10-13,51,low
+https://realhunt.co/deal/pl-jarocin-73k-877413,Poland,Greater Poland,72885,62,3,84,2026-10-13,68,low
+https://realhunt.co/deal/pl-walcz-73k-787380,Poland,West Pomerania,73114,58,3,82,2026-10-13,98,low
+https://realhunt.co/deal/pl-lubsko-75k-060638,Poland,Lubusz,75170,67,3,83,2026-10-13,69,low
+https://realhunt.co/deal/pl-gniezno-75k-933649,Poland,Gniezno,75398,63,3,87,2026-10-13,55,low
+https://realhunt.co/deal/pl-boguszow-gorce-75k-675678,Poland,Lower Silesia,75398,70,3,83,2026-10-13,61,low
+https://realhunt.co/deal/pl-hajnowka-75k-883552,Poland,Podlaskie,75398,77,3,87,2026-10-13,74,low
+https://realhunt.co/deal/pl-lodz-76k-708515,Poland,Łódź,76084,47,3,84,2026-10-13,6,low
+https://realhunt.co/deal/pl-ostrowiec-swietokrzyski-77k-057950,Poland,Świętokrzyskie,77455,69,3,82,2026-10-13,51,low
+https://realhunt.co/deal/pl-lodz-77k-629717,Poland,Łódź,77455,47,3,84,2026-10-13,6,low
+https://realhunt.co/deal/pl-olecko-78k-864749,Poland,Warmia-Masuria,77683,72,3,84,2026-10-13,119,low
+https://realhunt.co/deal/pl-kwidzyn-80k-100014,Poland,Pomerania,79740,60,3,83,2026-10-13,79,low
+https://realhunt.co/deal/pl-suwalki-80k-028116,Poland,Podlaskie,79740,60,3,81,2026-10-13,125,low
+https://realhunt.co/deal/pl-namyslow-80k-909104,Poland,Opole,79740,56,3,82,2026-10-13,59,low
+https://realhunt.co/deal/pl-kolo-80k-024273,Poland,Greater Poland,79740,58,3,81,2026-10-13,75,low
+https://realhunt.co/deal/pl-walbrzych-80k-970297,Poland,Lower Silesia,79740,57,3,80,2026-10-13,56,low
+https://realhunt.co/deal/pl-lobez-80k-191746,Poland,West Pomerania,79968,56,3,78,2026-10-13,48,low
+https://realhunt.co/deal/pl-debica-80k-628111,Poland,Subcarpathia,79968,75,3,86,2026-10-13,44,low
+https://realhunt.co/deal/pl-szklarska-poreba-garden-flat-91k-543867,Poland,Lower Silesia,90600,71,1,80,2026-11-18,92,low
+https://realhunt.co/deal/pt-mogadouro-48k-19109522,Portugal,Mogadouro,48000,100,3,84,2026-10-14,55,low
+https://realhunt.co/deal/pt-mertola-68k-313027,Portugal,Beja,68500,75,2,91,2026-11-14,71,low
+https://realhunt.co/deal/pt-carregal-do-sal-76k-1bjc5q,Portugal,Viseu,76500,134,2,85,2026-10-05,35,low
+https://realhunt.co/deal/pt-alentejo-alcaria-ruiva-renovated-cottage-95k,Portugal,Beja,95000,46,2,77,2026-11-18,77,low
+https://realhunt.co/deal/pt-douro-lamego-samodaes-river-view-house-99k,Portugal,Viseu,99000,70,2,85,2026-11-18,17,low
+https://realhunt.co/deal/pt-miranda-do-douro-100k-350867,Portugal,Bragança,100000,158,5,91,2026-11-14,44,low
+https://realhunt.co/deal/pt-silvares-110k-271372,Portugal,Castelo Branco,110000,176,5,91,2026-11-14,68,low
+https://realhunt.co/deal/pt-alter-do-chao-115k-285437,Portugal,Portalegre,115000,130,,91,2026-11-14,82,low
+https://realhunt.co/deal/pt-vila-nova-de-paiva-117k-355340,Portugal,Viseu,117500,144,3,91,2026-11-14,24,low
+https://realhunt.co/deal/pt-brunhoso-125k-258088,Portugal,Bragança,125000,170,5,91,2026-11-14,55,low
+https://realhunt.co/deal/pt-algarve-alcoutim-renovated-hill-house-130k,Portugal,Faro,130000,77,2,80,2026-11-18,58,low
+https://realhunt.co/deal/pt-alentejo-marvao-ponte-velha-house-river-view-140k,Portugal,Portalegre,140000,70,2,79,2026-11-20,72,low
+https://realhunt.co/deal/pt-castelo-de-vide-145k-284590,Portugal,Portalegre,145000,126,2,91,2026-11-14,80,low
+https://realhunt.co/deal/pt-macao-145k-270445,Portugal,Santarém,145000,96,,91,2026-11-14,125,low
+https://realhunt.co/deal/pt-estremoz-150k-259126,Portugal,Évora,150000,110,2,91,2026-11-14,67,low
+https://realhunt.co/deal/pt-covilha-peso-150k-280003,Portugal,Castelo Branco,150000,86,2,91,2026-11-14,65,low
+https://realhunt.co/deal/pt-minho-bravaes-restored-stone-house-156k,Portugal,Viana do Castelo,156000,74,2,76,2026-11-18,51,low
+https://realhunt.co/deal/pt-central-tabua-renovated-granite-house-169k,Portugal,Coimbra,169000,125,3,80,2026-11-18,44,low
+https://realhunt.co/deal/pt-azores-pico-silveira-renovated-cottage-big-plot-179k,Portugal,Azores,179000,84,1,78,2026-11-20,21,low
+https://realhunt.co/deal/pt-tavira-183k-300012,Portugal,Tavira (Algarve),183000,68,1,83,2026-10-11,21,low
+https://realhunt.co/deal/pt-centro-penacova-paradela-village-house-views-189k,Portugal,Coimbra,189000,95,3,80,2026-11-20,56,low
+https://realhunt.co/deal/si-ivanjsevci-restored-prekmurje-house-goricko-105k,Slovenia,Moravske Toplice (Goričko),105000,78,1,82,2026-11-21,56,
+https://realhunt.co/deal/si-gornja-radgona-renovated-two-flat-house-vineyard-229k,Slovenia,Pomurska,229000,204,6,87,2026-11-21,30,
+https://realhunt.co/deal/si-kozjak-kungota-renovated-country-house-2ha-245k,Slovenia,Kungota,245000,112,2,83,2026-11-20,10,low
+https://realhunt.co/deal/es-alpujarra-de-la-sierra-38k-35809,Spain,Granada,38000,150,2,94,2026-10-01,60,low
+https://realhunt.co/deal/es-nacimiento-39k-60637,Spain,Almería,39000,100,3,92,2026-10-01,38,low
+https://realhunt.co/deal/es-cumbres-de-san-bartolome-43k-76551,Spain,Huelva,43000,70,2,82,2026-10-01,91,low
+https://realhunt.co/deal/es-nevada-44k-95451,Spain,Granada,44000,49,1,88,2026-10-01,59,low
+https://realhunt.co/deal/es-murtas-49k-185398398,Spain,Alpujarra (Granada),49000,86,2,91,2026-10-14,66,low
+https://realhunt.co/deal/es-arcos-de-la-frontera-52k-51177,Spain,Cádiz,52000,45,1,86,2026-10-01,23,low
+https://realhunt.co/deal/es-marines-54k-94700,Spain,Valencia,54000,50,1,90,2026-10-01,22,low
+https://realhunt.co/deal/es-rossell-55k-187471380,Spain,Baix Maestrat (Castellón),55000,120,5,94,2026-10-14,46,low
+https://realhunt.co/deal/es-illora-55k-41725,Spain,Granada,55000,120,3,89,2026-10-01,14,low
+https://realhunt.co/deal/es-aller-57k-23270,Spain,Asturias,57500,124,2,86,2026-10-01,55,low
+https://realhunt.co/deal/es-montefrio-59k-97906,Spain,Granada,59000,115,2,87,2026-10-01,25,low
+https://realhunt.co/deal/es-sorvilan-59k-76765,Spain,Granada,59000,147,5,94,2026-10-01,61,low
+https://realhunt.co/deal/es-terque-59k-29455,Spain,Almería,59500,52,1,88,2026-10-01,25,low
+https://realhunt.co/deal/es-cehegin-59k-77832,Spain,Murcia,59900,200,5,88,2026-10-01,68,low
+https://realhunt.co/deal/es-los-guajares-60k-37426,Spain,Granada,60000,61,2,88,2026-10-01,43,low
+https://realhunt.co/deal/es-cieza-60k-59837,Spain,Murcia,60000,96,2,85,2026-10-01,55,low
+https://realhunt.co/deal/Dc26I9MkYDj,Spain,Murcia,60000,,,82,2026-09-23,50,low
+https://realhunt.co/deal/es-langreo-61k-38277,Spain,Asturias,61900,58,2,86,2026-10-01,41,low
+https://realhunt.co/deal/es-manresa-61k-18808,Spain,Barcelona,61990,55,2,81,2026-10-01,52,low
+https://realhunt.co/deal/es-torre-los-negros-63k-028057,Spain,Teruel,63000,256,4,91,2026-11-14,90,low
+https://realhunt.co/deal/es-benizalon-63k-44767,Spain,Almería,63500,114,2,92,2026-10-01,43,low
+https://realhunt.co/deal/es-aller-64k-85901,Spain,Asturias,64900,64,2,81,2026-10-01,51,low
+https://realhunt.co/deal/es-carino-65k-186545953,Spain,Cariño (A Coruña),65000,92,3,91,2026-10-14,64,medium
+https://realhunt.co/deal/es-archez-65k-74704,Spain,Málaga,65000,50,2,85,2026-10-01,43,low
+https://realhunt.co/deal/es-bejis-65k-97644,Spain,Castellón,65000,69,2,81,2026-10-01,51,low
+https://realhunt.co/deal/es-ponteceso-corme-68k-189908571,Spain,Ponteceso (A Coruña),68500,80,3,90,2026-10-14,47,low
+https://realhunt.co/deal/es-lijar-69k-658718,Spain,Almería,69000,237,4,91,2026-11-14,52,low
+https://realhunt.co/deal/es-calanas-69k-50943,Spain,Huelva,69000,65,1,81,2026-10-01,91,low
+https://realhunt.co/deal/es-galdar-70k-15615,Spain,Las Palmas,70000,54,3,88,2026-10-01,27,low
+https://realhunt.co/deal/es-colomera-70k-21488,Spain,Granada,70000,133,3,87,2026-10-01,21,low
+https://realhunt.co/deal/es-cartagena-73k-74761,Spain,Murcia,73000,85,2,93,2026-10-01,34,medium
+https://realhunt.co/deal/es-archez-75k-ni4va0,Spain,Málaga,75000,56,2,85,2026-10-05,43,low
+https://realhunt.co/deal/es-mecina-bombaron-75k-riayjs,Spain,Granada,75000,60,2,79,2026-10-05,59,low
+https://realhunt.co/deal/caniles-rooftop-mountains-75000,Spain,Granada,75000,150,4,91,2026-10-02,73,low
+https://realhunt.co/deal/es-puerto-serrano-75k-12088,Spain,Cádiz,75000,110,3,85,2026-10-01,50,low
+https://realhunt.co/deal/es-polaciones-76k-71631,Spain,Cantabria,76000,70,1,83,2026-10-01,60,low
+https://realhunt.co/deal/es-nevada-77k-72929,Spain,Granada,77000,306,5,94,2026-10-01,63,low
+https://realhunt.co/deal/es-villamartin-78k-15617,Spain,Cádiz,78000,100,2,84,2026-10-01,40,low
+https://realhunt.co/deal/es-cartagena-78k-20439,Spain,Murcia,78000,78,3,91,2026-10-01,34,medium
+https://realhunt.co/deal/es-palafrugell-79k-70840,Spain,Girona,79000,55,1,84,2026-10-01,33,low
+https://realhunt.co/deal/terque-stone-terrace-cave-79500,Spain,Almería,79500,81,2,89,2026-10-02,25,low
+https://realhunt.co/deal/es-terque-79k-93348,Spain,Almería,79500,81,2,88,2026-10-01,25,low
+https://realhunt.co/deal/es-cartagena-79k-19964,Spain,Murcia,79900,56,2,87,2026-10-01,29,medium
+https://realhunt.co/deal/es-cehegin-79k-37859,Spain,Murcia,79900,200,4,86,2026-10-01,68,low
+https://realhunt.co/deal/es-lena-79k-45163,Spain,Asturias,79900,172,3,85,2026-10-01,55,low
+https://realhunt.co/deal/es-utrera-renovated-80k-190050590,Spain,Seville (about 25 min from Seville),80000,102,3,88,2026-10-14,28,low
+https://realhunt.co/deal/es-o-savinao-80k-20772,Spain,Lugo,80000,50,1,76,2026-10-01,64,low
+https://realhunt.co/deal/es-flix-80k-33800,Spain,Tarragona,80000,152,4,85,2026-10-01,53,low
+https://realhunt.co/deal/es-murcia-80k-47450,Spain,Murcia,80000,45,1,84,2026-10-01,16,low
+https://realhunt.co/deal/es-ginestar-80k-99389,Spain,Tarragona,80000,69,2,85,2026-10-01,46,low
+https://realhunt.co/deal/es-polaciones-80k-72000,Spain,Cantabria,80000,86,2,85,2026-10-01,59,low
+https://realhunt.co/deal/es-aguilas-80k-19039,Spain,Murcia,80000,79,2,89,2026-10-01,59,low
+https://realhunt.co/deal/es-murcia-82k-15626,Spain,Murcia,82000,56,1,84,2026-10-01,17,low
+https://realhunt.co/deal/es-vicar-82k-27426,Spain,Almería,82900,47,1,84,2026-10-01,22,low
+https://realhunt.co/deal/es-roquetas-de-mar-82k-66798,Spain,Almería,82900,75,3,89,2026-10-01,24,low
+https://realhunt.co/deal/galera-hillside-cave-84000,Spain,Granada,84000,,2,84,2026-10-02,101,low
+https://realhunt.co/deal/es-san-martin-del-rey-aurelio-85k-66374,Spain,Asturias,85000,89,3,86,2026-10-01,44,low
+https://realhunt.co/deal/es-masdenverge-85k-59248,Spain,Tarragona,85000,63,2,83,2026-10-01,68,low
+https://realhunt.co/deal/es-castalla-85k-41639,Spain,Alicante,85000,90,3,88,2026-10-01,36,low
+https://realhunt.co/deal/es-reinosa-85k-84223,Spain,Cantabria,85000,80,3,81,2026-10-01,54,low
+https://realhunt.co/deal/es-biar-85k-66151,Spain,Alicante,85000,63,1,78,2026-10-01,43,low
+https://realhunt.co/deal/es-petrer-85k-17043,Spain,Alicante,85000,97,4,90,2026-10-01,30,low
+https://realhunt.co/deal/es-gualchos-85k-92930,Spain,Granada,85000,93,1,89,2026-10-01,60,low
+https://realhunt.co/deal/es-murcia-85k-23435,Spain,Murcia,85000,46,1,82,2026-10-01,17,low
+https://realhunt.co/deal/es-riba-roja-d-ebre-85k-99837,Spain,Tarragona,85000,91,2,83,2026-10-01,53,low
+https://realhunt.co/deal/es-bimenes-86k-71966,Spain,Asturias,86000,195,3,90,2026-10-01,46,low
+https://realhunt.co/deal/es-mazaricos-88k-64288,Spain,A Coruña,88000,109,2,87,2026-10-01,44,low
+https://realhunt.co/deal/es-cartagena-88k-38250,Spain,Murcia,88000,60,2,85,2026-10-01,34,low
+https://realhunt.co/deal/es-velez-blanco-89k-797484,Spain,Almería,89000,150,4,91,2026-11-14,86,low
+https://realhunt.co/deal/freila-cave-courtyard-89000,Spain,Granada,89000,50,3,81,2026-10-02,85,low
+https://realhunt.co/deal/es-sorbas-89k-70321,Spain,Almería,89000,97,3,90,2026-10-01,36,low
+https://realhunt.co/deal/es-bicorp-90k-04086,Spain,Valencia,90000,173,3,87,2026-10-01,48,low
+https://realhunt.co/deal/es-parres-90k-15042,Spain,Asturias,90000,355,5,90,2026-10-01,69,low
+https://realhunt.co/deal/es-tavernes-de-la-valldigna-90k-27013,Spain,Valencia,90000,89,3,87,2026-10-01,50,low
+https://realhunt.co/deal/es-l-orxa-lorcha-90k-79857,Spain,Alicante,90000,177,2,91,2026-10-01,66,low
+https://realhunt.co/deal/es-alzira-renovated-91k-189401106,Spain,Valencia (about 35 min from Valencia),91000,113,3,87,2026-10-14,37,low
+https://realhunt.co/deal/es-alozaina-91k-40320,Spain,Málaga,91000,175,4,92,2026-10-01,32,low
+https://realhunt.co/deal/es-albunol-91k-41469,Spain,Granada,91000,75,1,85,2026-10-01,67,low
+https://realhunt.co/deal/es-sant-jaume-d-enveja-91k-15282,Spain,Tarragona,91000,68,1,85,2026-10-01,64,low
+https://realhunt.co/deal/es-santa-barbara-93k-60918,Spain,Tarragona,93000,77,3,84,2026-10-01,66,low
+https://realhunt.co/deal/es-el-valle-93k-84294,Spain,Granada,93000,124,4,90,2026-10-01,33,low
+https://realhunt.co/deal/es-quiros-93k-41930,Spain,Asturias,93000,240,3,84,2026-10-01,43,low
+https://realhunt.co/deal/es-roquetas-de-mar-93k-71925,Spain,Almería,93500,67,1,85,2026-10-01,24,low
+https://realhunt.co/deal/es-torrevieja-94k-95673,Spain,Alicante,94900,45,1,84,2026-10-01,35,low
+https://realhunt.co/deal/galera-rooftop-patio-95000,Spain,Granada,95000,82,2,84,2026-10-02,101,low
+https://realhunt.co/deal/es-arroyomolinos-de-leon-95k-99226,Spain,Huelva,95000,162,4,84,2026-10-01,82,low
+https://realhunt.co/deal/es-torrelavega-95k-04565,Spain,Cantabria,95000,64,3,82,2026-10-01,19,low
+https://realhunt.co/deal/es-murcia-95k-36614,Spain,Murcia,95000,157,2,92,2026-10-01,19,low
+https://realhunt.co/deal/es-benicarlo-95k-54979,Spain,Castellón,95000,88,1,88,2026-10-01,38,low
+https://realhunt.co/deal/es-idiazabal-95k-27409,Spain,Gipuzkoa,95000,70,2,82,2026-10-01,42,low
+https://realhunt.co/deal/es-cartagena-95k-46660,Spain,Murcia,95000,71,2,86,2026-10-01,34,medium
+https://realhunt.co/deal/es-xert-95k-90186,Spain,Castellón,95000,69,2,83,2026-10-01,35,low
+https://realhunt.co/deal/es-benamargosa-95k-50868,Spain,Málaga,95995,56,2,81,2026-10-01,32,low
+https://realhunt.co/deal/es-anna-96k-34774,Spain,Valencia,96000,61,2,82,2026-10-01,54,low
+https://realhunt.co/deal/es-torrevieja-97k-10226,Spain,Alicante,97000,52,1,84,2026-10-01,36,low
+https://realhunt.co/deal/es-murcia-97k-60666,Spain,Murcia,97000,60,2,84,2026-10-01,12,low
+https://realhunt.co/deal/es-roses-97k-57061,Spain,Girona,97000,47,,82,2026-10-01,52,low
+https://realhunt.co/deal/es-amposta-97k-10966,Spain,Tarragona,97900,62,2,83,2026-10-01,63,medium
+https://realhunt.co/deal/es-garrucha-98k-95417,Spain,Almería,98000,59,2,82,2026-10-01,62,low
+https://realhunt.co/deal/es-el-perello-98k-73036,Spain,Tarragona,98000,79,2,84,2026-10-01,49,low
+https://realhunt.co/deal/es-el-ejido-98k-28806,Spain,Almería,98000,79,2,85,2026-10-01,48,medium
+https://realhunt.co/deal/es-moguer-98k-75562,Spain,Huelva,98000,48,1,80,2026-10-01,85,low
+https://realhunt.co/deal/es-torrevieja-torresol-studio-pool-99k,Spain,Alicante,99000,29,0,81,2026-10-30,33,low
+https://realhunt.co/deal/DcazSjCjUUx,Spain,Alicante,99000,,1,89,2026-09-23,9,low
+https://realhunt.co/deal/es-torremanzanas-la-torre-de-les-macanes-99k-04350,Spain,Alicante,99000,80,1,87,2026-10-01,38,low
+https://realhunt.co/deal/es-alhama-de-granada-99k-62382,Spain,Granada,99000,111,2,88,2026-10-01,28,low
+https://realhunt.co/deal/es-catral-99k-61991,Spain,Alicante,99000,57,1,83,2026-10-01,26,low
+https://realhunt.co/deal/Dcnr1XjFDfu,Spain,Murcia,99000,,,88,2026-09-23,34,medium
+https://realhunt.co/deal/galdar-mountain-cave-99500,Spain,Gran Canaria,99500,81,2,84,2026-10-02,35,low
+https://realhunt.co/deal/es-torrevieja-99k-92433,Spain,Alicante,99900,48,1,81,2026-10-01,32,low
+https://realhunt.co/deal/es-santa-fe-99k-29934,Spain,Granada,99900,84,3,79,2026-10-01,5,low
+https://realhunt.co/deal/es-murcia-99k-61734,Spain,Murcia,99900,64,2,84,2026-10-01,12,low
+https://realhunt.co/deal/es-torrevieja-99k-86111,Spain,Alicante,99900,47,1,83,2026-10-01,35,low
+https://realhunt.co/deal/es-san-pedro-del-pinatar-99k-91782,Spain,Murcia,99950,57,2,83,2026-10-01,31,medium
+https://realhunt.co/deal/es-tocon-de-quentar-105k-063140,Spain,Granada,105000,72,2,91,2026-11-14,36,low
+https://realhunt.co/deal/es-los-urrutias-beachfront-tourist-licence-116k,Spain,Murcia,116500,70,2,85,2026-10-30,29,medium
+https://realhunt.co/deal/es-coristanco-new-4bed-117k-190697887,Spain,A Coruña (about 35 min from A Coruña),116900,135,4,86,2026-10-14,38,low
+https://realhunt.co/deal/es-colomera-renovated-119k-190020127,Spain,Granada (about 35 min from Granada),119000,228,3,91,2026-10-14,21,low
+https://realhunt.co/deal/es-catalonia-roquetes-renovated-townhouse-no-fees-120k,Spain,Tarragona,120000,82,2,78,2026-11-20,68,low
+https://realhunt.co/deal/es-villar-del-arzobispo-125k-092921,Spain,Valencia,125000,198,2,90,2026-10-07,37,low
+https://realhunt.co/deal/es-condado-alhama-golf-129k-190939296,Spain,Alhama de Murcia (about 35 min from Murcia and Cartagena),129000,106,3,87,2026-10-14,22,low
+https://realhunt.co/deal/es-albatera-pool-new-135k-190471633,Spain,Alicante (about 22 min from Elche),135000,139,3,88,2026-10-14,30,low
+https://realhunt.co/deal/es-velliza-stone-house-138k-189374812,Spain,Valladolid (about 25 min from Valladolid),138000,124,3,87,2026-10-14,16,low
+https://realhunt.co/deal/es-madrigueras-139k-939136,Spain,Albacete,139000,180,2,91,2026-11-14,117,low
+https://realhunt.co/deal/es-gironella-139k-934028,Spain,Barcelona,139000,131,2,87,2026-10-07,52,low
+https://realhunt.co/deal/es-san-isidro-move-in-145k-190990586,Spain,Alicante (about 16 min from Elche),144997,152,3,87,2026-10-14,28,low
+https://realhunt.co/deal/es-nechite-145k-256936,Spain,Granada,145000,210,4,91,2026-11-14,65,low
+https://realhunt.co/deal/es-alzira-145k-482015,Spain,Valencia,145000,227,2,89,2026-10-07,37,low
+https://realhunt.co/deal/es-los-palacios-pool-145k-190022882,Spain,Seville (about 25 min from Seville),145000,120,3,87,2026-10-14,24,low
+https://realhunt.co/deal/es-santomera-penthouse-145k-161987047,Spain,Murcia (about 15 min from Murcia),145000,145,3,86,2026-10-14,30,low
+https://realhunt.co/deal/es-bigastro-150m2-145k-190315743,Spain,Alicante (about 25 min from Murcia),145000,150,3,86,2026-10-14,35,low
+https://realhunt.co/deal/es-jijona-renovated-149k-189102956,Spain,Alicante (about 25 min from Alicante),149000,232,4,88,2026-10-14,29,low
+https://realhunt.co/deal/es-almunecar-los-pinos-sea-view-pool-flat-149k,Spain,Granada,149000,45,1,77,2026-11-18,51,low
+https://realhunt.co/deal/es-hondon-frailes-5bed-150k-188921317,Spain,Alicante (about 25 min from Elche),149950,180,5,88,2026-10-14,32,low
+https://realhunt.co/deal/es-castalla-150k-388079,Spain,Alicante,150000,165,3,91,2026-11-14,36,low
+https://realhunt.co/deal/es-canedo-valdunciel-155k-154146,Spain,Salamanca,155000,151,3,91,2026-11-14,27,low
+https://realhunt.co/deal/es-santa-olalla-del-cala-155k-340784,Spain,Huelva,155000,83,2,91,2026-11-14,62,low
+https://realhunt.co/deal/es-cadalso-de-los-vidrios-155k-995484,Spain,Madrid,155000,116,4,83,2026-10-07,77,low
+https://realhunt.co/deal/es-zarza-de-tajo-155k-531208,Spain,Madrid,155000,136,3,84,2026-10-07,54,low
+https://realhunt.co/deal/es-turis-155k-068943,Spain,Valencia,155000,176,3,89,2026-10-07,20,low
+https://realhunt.co/deal/es-golf-del-sur-158k-368775,Spain,Tenerife,158000,55,,82,2026-10-11,4,low
+https://realhunt.co/deal/es-piles-159k-831466,Spain,Valencia,159900,109,2,91,2026-11-14,68,low
+https://realhunt.co/deal/es-aranjuez-160k-937996,Spain,Madrid,160000,60,2,77,2026-10-07,51,low
+https://realhunt.co/deal/es-costa-blanca-la-marina-townhouse-160k,Spain,Alicante,160000,116,3,83,2026-11-18,17,low
+https://realhunt.co/deal/es-chinchon-165k-004043,Spain,Madrid,165000,134,3,82,2026-10-07,41,low
+https://realhunt.co/deal/es-capellades-165k-203609,Spain,Barcelona,165000,220,4,88,2026-10-07,42,low
+https://realhunt.co/deal/es-sueca-167k-027159,Spain,Valencia,167000,124,3,87,2026-10-07,36,medium
+https://realhunt.co/deal/es-terrassa-169k-923454,Spain,Barcelona,169000,80,2,79,2026-10-07,29,low
+https://realhunt.co/deal/es-casinos-169k-742027,Spain,Valencia,169000,138,3,86,2026-10-07,32,low
+https://realhunt.co/deal/es-villa-del-prado-169k-315730,Spain,Madrid,169000,118,3,83,2026-10-07,66,low
+https://realhunt.co/deal/es-robledondo-169k-614624,Spain,Madrid,169000,96,2,80,2026-10-07,55,low
+https://realhunt.co/deal/es-la-caleta-170k-006586,Spain,Fuerteventura,170000,71,2,84,2026-10-11,16,low
+https://realhunt.co/deal/es-puerto-de-la-cruz-173k-078511,Spain,Tenerife,173000,66,1,81,2026-10-11,22,low
+https://realhunt.co/deal/es-corpa-173k-599473,Spain,Madrid,173000,145,4,83,2026-10-07,27,low
+https://realhunt.co/deal/es-piera-174k-821120,Spain,Barcelona,174000,110,2,82,2026-10-07,36,low
+https://realhunt.co/deal/es-san-martin-de-valdeiglesias-175k-710397,Spain,Madrid,175000,70,1,77,2026-10-07,69,low
+https://realhunt.co/deal/es-teruel-alcala-de-la-selva-duplex-mountain-terrace-177k,Spain,Teruel,177000,112,2,80,2026-11-20,67,low
+https://realhunt.co/deal/es-la-palma-puerto-naos-penthouse-terrace-178k-660889,Spain,La Palma,178000,29,1,91,2026-11-05,16,medium
+https://realhunt.co/deal/es-godelleta-178k-277470,Spain,Valencia,178000,140,4,87,2026-10-07,20,low
+https://realhunt.co/deal/es-fuerteventura-costa-antigua-duplex-pool-180k,Spain,Fuerteventura,178000,61,2,79,2026-11-18,5,low
+https://realhunt.co/deal/es-mediona-179k-850907,Spain,Barcelona,179000,115,3,82,2026-10-07,42,low
+https://realhunt.co/deal/es-lliria-180k-695737,Spain,Valencia,179900,164,3,87,2026-10-07,18,low
+https://realhunt.co/deal/es-la-manga-veneziola-sea-view-pool-180k,Spain,Murcia,179900,104,2,86,2026-10-30,36,medium
+https://realhunt.co/deal/es-estremera-180k-760516,Spain,Madrid,179990,185,4,87,2026-10-07,56,low
+https://realhunt.co/deal/es-caleta-de-fuste-180k-465927,Spain,Fuerteventura,180000,59,2,82,2026-10-11,4,low
+https://realhunt.co/deal/es-asturias-quiros-ricabo-mountain-house-180k,Spain,Asturias,180000,145,5,84,2026-11-18,51,low
+https://realhunt.co/deal/es-la-caleta-185k-063013,Spain,Fuerteventura,185000,72,2,85,2026-10-11,16,low
+https://realhunt.co/deal/es-tenerife-mesa-del-mar-penthouse-ocean-teide-view-186k,Spain,Tenerife,185980,51,1,77,2026-11-20,8,medium
+https://realhunt.co/deal/live-pisos-4ds0f1,Spain,Sevilla,188000,130,4,80,2026-11-08,6,low
+https://realhunt.co/deal/es-costa-del-silencio-190k-930174,Spain,Tenerife,189900,56,1,81,2026-10-11,9,low
+https://realhunt.co/deal/es-cumbre-del-sol-190k-901839,Spain,Benitachell (Jávea),190000,85,2,81,2026-10-11,78,low
+https://realhunt.co/deal/es-cumbre-del-sol-190k-503985,Spain,Benitachell (Jávea),190000,85,2,82,2026-10-11,78,low
+https://realhunt.co/deal/es-benijofar-renovated-village-house-private-pool-195k,Spain,Alicante,195000,66,2,76,2026-11-20,28,low
+https://realhunt.co/deal/es-tenerife-cabo-blanco-top-floor-flat-roof-terrace-196k,Spain,Tenerife,196000,82,2,80,2026-11-20,10,low
+https://realhunt.co/deal/live-pisos-m1zujj,Spain,Sevilla,197000,105,4,83,2026-11-08,6,low
+https://realhunt.co/deal/es-puerto-de-la-cruz-199k-329542,Spain,Tenerife,199000,79,2,82,2026-10-11,24,low
+https://realhunt.co/deal/es-costa-del-silencio-199k-024468,Spain,Tenerife,199000,58,1,79,2026-10-11,8,low
+https://realhunt.co/deal/live-pisos-huy007,Spain,Sevilla,199000,100,3,80,2026-11-08,13,low
+https://realhunt.co/deal/es-corralejo-200k-385108,Spain,Fuerteventura,199950,57,1,80,2026-10-11,31,low
+https://realhunt.co/deal/es-puerto-de-la-cruz-215k-003905,Spain,Tenerife,215000,72,1,83,2026-10-11,21,low
+https://realhunt.co/deal/es-denia-219k-283381,Spain,Dénia,219000,85,2,82,2026-10-11,83,medium
+https://realhunt.co/deal/es-costa-del-silencio-239k-481637,Spain,Tenerife,239000,87,2,83,2026-10-11,8,low
+https://realhunt.co/deal/es-costa-del-silencio-240k-479658,Spain,Tenerife,240000,81,1,85,2026-10-11,8,low
+https://realhunt.co/deal/es-majanicho-245k-645378,Spain,Fuerteventura,245000,76,3,83,2026-10-11,26,low
+https://realhunt.co/deal/es-denia-249k-235125,Spain,Els Poblets (Dénia),249000,80,2,82,2026-10-11,82,medium
+https://realhunt.co/deal/es-golf-del-sur-250k-061726,Spain,Tenerife,250000,91,1,84,2026-10-11,4,low
+https://realhunt.co/deal/es-la-sella-255k-025158,Spain,Pedreguer (Dénia),255000,75,2,82,2026-10-11,79,low
+https://realhunt.co/deal/live-pisos-laeuee,Spain,Madrid,255000,50,2,71,2026-11-08,14,low
+https://realhunt.co/deal/live-pisos-a4dw9a,Spain,Vejer de la Frontera,290000,191,5,82,2026-11-09,55,low
+https://realhunt.co/deal/live-pisos-xpjygk,Spain,Vejer de la Frontera,290000,191,5,81,2026-11-09,55,low
+https://realhunt.co/deal/live-pisos-402uzp,Spain,Madrid,348000,71,2,72,2026-11-08,15,low
+https://realhunt.co/deal/Dc6j54PF6hV,Sweden,Central Sweden,22000,,,90,2026-09-23,,
+https://realhunt.co/deal/DdPBLT2CLlb,Sweden,Norrbotten,25960,,,93,2026-09-23,37,
+https://realhunt.co/deal/DbC0D4RoLzc,Sweden,Värmland,53000,,,84,2026-09-23,48,low
+https://realhunt.co/deal/DclLv7qjKAR,Sweden,Northern Sweden,54000,,,88,2026-09-23,,
+https://realhunt.co/deal/DcNI1r5oM57,Sweden,Blekinge,54000,148,3,93,2026-09-23,20,low
+https://realhunt.co/deal/DdTjQGviJh9,Sweden,Småland,55000,,,79,2026-09-23,,low
+https://realhunt.co/deal/DcaE8pfoH77,Sweden,Medelpad,55000,120,2,92,2026-09-23,53,low
+https://realhunt.co/deal/DdTIMhiioFc,Sweden,Ljusnarsberg,56120,,4,85,2026-09-23,63,low
+https://realhunt.co/deal/Dc-RMNwIPpv,Sweden,Västerbotten,59000,156,4,92,2026-09-23,48,low
+https://realhunt.co/deal/DckAJqaChuR,Sweden,Värmland,60000,50,1,85,2026-09-23,49,low
+https://realhunt.co/deal/se-skivarp-62k-1795989,Sweden,Skåne (about 60 min from Copenhagen),62300,102,3,93,2026-10-14,17,low
+https://realhunt.co/deal/DdP0Csyilzz,Sweden,Västernorrland,64000,36,,83,2026-09-23,17,low
+https://realhunt.co/deal/DcPcCXHgXCK,Sweden,Småland,64000,155,,83,2026-09-23,64,low
+https://realhunt.co/deal/DczrZZlCl9L,Sweden,Medelpad,64000,50,1,84,2026-09-23,53,low
+https://realhunt.co/deal/DcIDShNij6M,Sweden,Dalsland,64000,,,87,2026-09-23,56,low
+https://realhunt.co/deal/se-malmo-rosengard-67k-1678590,Sweden,Malmö (about 40 min from Copenhagen),67200,84,3,90,2026-10-14,21,low
+https://realhunt.co/deal/se-fransta-romback-red-wooden-villa-valley-view-750k-sek,Sweden,Västernorrland,68000,116,2,90,2026-11-20,61,low
+https://realhunt.co/deal/DdFnbsHiEFB,Sweden,Jämtland,68000,100,3,83,2026-09-23,56,low
+https://realhunt.co/deal/DdSVb-ainBZ,Sweden,Kronoberg,71000,,2,80,2026-09-23,43,low
+https://realhunt.co/deal/se-arbra-red-wooden-house-conservatory-795k-sek,Sweden,Gävleborg,72000,108,3,84,2026-11-18,115,low
+https://realhunt.co/deal/DcAr2EbIAqx,Sweden,Gävleborg,73000,50,,77,2026-09-23,117,low
+https://realhunt.co/deal/Db7aSFMoNPo,Sweden,Jönköping,73000,,,79,2026-09-23,44,low
+https://realhunt.co/deal/DbQ_FfViI4l,Sweden,Småland,75440,,,85,2026-09-23,38,low
+https://realhunt.co/deal/Dbr13CDil3R,Sweden,Värmland,76000,,,88,2026-09-23,3,low
+https://realhunt.co/deal/se-vansbro-1920s-villa-geothermal-850k-sek,Sweden,Dalarna,77000,122,3,87,2026-11-18,52,low
+https://realhunt.co/deal/Dce2FjbIxt8,Sweden,Småland,78000,800,2,93,2026-09-23,49,low
+https://realhunt.co/deal/DdC7bBTgSg1,Sweden,Norrbotten,81000,29,3,80,2026-09-23,59,low
+https://realhunt.co/deal/se-gnarp-villa-glazed-porch-82k,Sweden,Gävleborg,82000,117,4,90,2026-10-30,54,low
+https://realhunt.co/deal/Dbt-d51AaH3,Sweden,Skåne,82000,,,81,2026-09-23,63,low
+https://realhunt.co/deal/Db91qMLIG7D,Sweden,Värmland,83000,,,82,2026-09-23,45,low
+https://realhunt.co/deal/Da4VmKMoP1y,Sweden,Dalsland,85000,,,80,2026-09-23,,low
+https://realhunt.co/deal/DcdESzWAY7v,Sweden,Västra Götaland,87400,,,76,2026-09-23,41,low
+https://realhunt.co/deal/DdXqydSo-Hu,Sweden,Värmland,90000,,5,80,2026-09-23,84,low
+https://realhunt.co/deal/DdVLmcvoz1P,Sweden,Värmland,91000,35,4,77,2026-09-23,8,low
+https://realhunt.co/deal/DZ-9LczExWp,Sweden,Skåne,93823,,,77,2026-09-23,73,low
+https://realhunt.co/deal/se-eslov-townhouse-94k-1789899,Sweden,Skåne (about 55 min from Copenhagen),94100,117,3,87,2026-10-14,33,low
+https://realhunt.co/deal/se-eslov-98k-1701202,Sweden,Skåne (about 55 min from Copenhagen),98100,90,3,85,2026-10-14,34,low
+https://realhunt.co/deal/se-landskrona-98k-1673127,Sweden,Skåne (about 50 min from Copenhagen),98100,110,3,86,2026-10-14,31,medium
+https://realhunt.co/deal/DdAqg70oDDj,Sweden,Västerbotten,99000,680,5,85,2026-09-23,62,low
+https://realhunt.co/deal/se-lenhovda-renovated-1920s-villa-glazed-veranda-179k,Sweden,Uppvidinge (Kronoberg),178900,138,4,84,2026-11-21,35,
+https://realhunt.co/deal/se-ingelstad-red-wooden-house-countryside-plot-187k,Sweden,Växjö (Kronoberg),187400,117,3,84,2026-11-21,21,
+https://realhunt.co/deal/ch-lengnau-30k-26130,Switzerland,Bern,32300,70,1,92,2026-10-04,31,low
+https://realhunt.co/deal/ch-raron-40k-76568,Switzerland,Valais,42600,45,2,84,2026-10-04,71,low
+https://realhunt.co/deal/ch-salgesch-49k-76547,Switzerland,Valais,52800,40,1,85,2026-10-04,67,low
+https://realhunt.co/deal/ch-brig-55k-63824,Switzerland,Valais,59300,20,1,74,2026-10-04,76,low
+https://realhunt.co/deal/ch-brig-55k-63831,Switzerland,Valais,59300,25,1,78,2026-10-04,76,low
+https://realhunt.co/deal/ch-lignieres-65k-24005,Switzerland,Neuchâtel,70100,30,1,82,2026-10-04,38,low
+https://realhunt.co/deal/ch-raron-70k-61979,Switzerland,Valais,74900,48,1,81,2026-10-04,72,low
+https://realhunt.co/deal/ch-gommiswald-75k-93656,Switzerland,St. Gallen,80700,50,2,83,2026-10-04,43,low
+https://realhunt.co/deal/ch-raron-80k-63919,Switzerland,Valais,85900,34,1,76,2026-10-04,67,low
+https://realhunt.co/deal/ch-raron-82k-76555,Switzerland,Valais,88400,34,2,70,2026-10-04,71,low
+https://realhunt.co/deal/th-chiang-mai-2-bed-pool-condo-77k-5379536,Thailand,Chiang Mai,76700,62,2,86,2026-11-18,3,low
+https://realhunt.co/deal/th-hua-hin-seacraze-two-bed-pool-view-condo-140k,Thailand,Prachuap Khiri Khan,139500,85,2,84,2026-11-20,14,medium
+https://realhunt.co/deal/uk-shildon-82k-780165,United Kingdom,County Durham,82600,72,2,89,2026-10-06,20,low
+https://realhunt.co/deal/uk-blyth-88k-869241,United Kingdom,Northumberland,88500,,1,88,2026-10-06,15,low
+https://realhunt.co/deal/uk-whithorn-cottage-wood-burner-garden-105k,United Kingdom,Dumfries and Galloway,121000,67,2,81,2026-11-18,73,low
+https://realhunt.co/deal/uk-macduff-furnished-house-sea-views-110k,United Kingdom,Aberdeenshire,126500,70,2,83,2026-11-18,55,low
+https://realhunt.co/deal/uk-enniskillen-three-bed-semi-solar-panels-140k,United Kingdom,County Fermanagh (Northern Ireland),161000,107,3,83,2026-11-20,81,low
+https://realhunt.co/deal/uk-greyabbey-renovated-end-terrace-garage-170k,United Kingdom,Northern Ireland,195400,80,2,82,2026-11-20,22,low
+https://realhunt.co/deal/uk-lack-fermanagh-refurbished-townhouse-double-garage-172k,United Kingdom,Northern Ireland,198400,107,3,83,2026-11-20,61,low
+https://realhunt.co/deal/mckees-rocks-65428,United States,Pennsylvania,65428,106,3,93,2026-09-23,13,low
+https://realhunt.co/deal/cleveland-68917,United States,Oklahoma,68917,98,2,91,2026-09-23,53,low
+https://realhunt.co/deal/us-ashland-89k-672054,United States,Maine,72800,96,3,87,2026-10-05,28,low
+https://realhunt.co/deal/us-madawaska-79k-677888,United States,Maine,77300,124,3,87,2026-10-05,77,low
+https://realhunt.co/deal/huntington-78426,United States,West Virginia,78426,150,3,95,2026-09-23,15,medium
+https://realhunt.co/deal/us-freeport-83k-605154,United States,Illinois,79200,83,2,89,2026-10-05,45,low
+https://realhunt.co/deal/chapmanville-82875,United States,West Virginia,82875,176,2,95,2026-09-23,59,low
+https://realhunt.co/deal/mckeesport-82875,United States,Pennsylvania,82875,95,3,88,2026-09-23,35,low
+https://realhunt.co/deal/clairton-85929,United States,Pennsylvania,85929,116,3,89,2026-09-23,36,low
+https://realhunt.co/deal/us-dora-84k-329130,United States,Missouri,86500,104,2,88,2026-10-05,95,low
+https://realhunt.co/deal/us-oxford-88k-030224,United States,Arkansas,88600,81,2,84,2026-10-05,110,low
+https://realhunt.co/deal/little-river-92471,United States,South Carolina,88800,63,,81,2026-09-23,36,low
+https://realhunt.co/deal/perryville-91599,United States,Arkansas,91599,75,1,83,2026-09-23,56,low
+https://realhunt.co/deal/beeville-95089,United States,Texas,95089,74,2,81,2026-09-23,73,low
+https://realhunt.co/deal/marion-95874,United States,Indiana,95874,78,2,80,2026-09-23,62,low
+https://realhunt.co/deal/marion-87150,United States,Indiana,118300,71,2,81,2026-09-23,63,low
+https://realhunt.co/deal/us-fort-lauderdale-2455-e102-150k,United States,Florida,134400,81,2,86,2026-11-08,14,high
+https://realhunt.co/deal/us-pennsylvania-barn-cabin-155k,United States,Pennsylvania,137700,94,2,85,2026-10-16,53,low
+https://realhunt.co/deal/us-north-carolina-victorian-170k,United States,North Carolina,153900,199,3,91,2026-10-16,55,low
+https://realhunt.co/deal/us-kentucky-new-log-cabin-175k,United States,Kentucky,155500,114,2,83,2026-10-16,84,low
+https://realhunt.co/deal/us-wisconsin-scandi-log-cabin-179k,United States,Wisconsin (Lake Superior region),159100,133,3,85,2026-10-16,122,low
+https://realhunt.co/deal/us-maine-old-town-riverfront-185k,United States,Maine,159400,117,3,87,2026-10-16,20,low
+https://realhunt.co/deal/us-adirondacks-farmhouse-10-acres-179k,United States,New York,163100,147,3,87,2026-10-16,84,low
+https://realhunt.co/deal/us-michigan-a-frame-2-5-acres-160k,United States,Michigan,173100,102,3,85,2026-10-16,85,low
+https://realhunt.co/deal/us-pennsylvania-lake-cabin-200k,United States,Pennsylvania,177700,93,2,82,2026-10-16,40,high
+https://realhunt.co/deal/us-hot-springs-ar-restored-1940s-cottage-porch-200k,United States,Arkansas,182100,117,2,89,2026-11-20,5,low
+https://realhunt.co/deal/us-la-crosse-wi-1886-house-fenced-garden-big-garage-215k,United States,Wisconsin,195800,142,3,90,2026-11-20,5,high
+https://realhunt.co/deal/us-marietta-oh-victorian-oak-woodwork-220k,United States,Ohio,200000,191,3,90,2026-11-18,9,low
+https://realhunt.co/deal/us-red-wing-mn-house-big-fenced-yard-near-mississippi-230k,United States,Minnesota,209600,137,3,89,2026-11-20,66,low
+https://realhunt.co/deal/us-lancaster-pa-renovated-brick-rowhouse-235k,United States,Pennsylvania,213600,127,3,86,2026-11-18,10,low
+https://realhunt.co/deal/us-la-crosse-wi-updated-four-bed-house-235k,United States,Wisconsin,214100,127,4,88,2026-11-20,4,low
+https://realhunt.co/deal/us-sandusky-oh-renovated-four-bed-house-deck-236k,United States,Ohio,214900,139,4,88,2026-11-20,73,low
+https://realhunt.co/deal/us-geneva-ny-finger-lakes-colonial-240k,United States,New York,218100,128,3,87,2026-11-18,60,low
+https://realhunt.co/deal/us-pembroke-pines-8956-245k,United States,Florida,219500,97,2,84,2026-11-07,13,high
+https://realhunt.co/deal/us-doral-8215-502-249k,United States,Florida,223100,111,2,87,2026-11-07,5,low
+https://realhunt.co/deal/us-lynchburg-va-renovated-victorian-carriage-house-245k,United States,Virginia,223300,289,3,93,2026-11-20,10,low
+https://realhunt.co/deal/us-manitowoc-wi-1927-brick-house-pergola-garden-250k,United States,Wisconsin,227700,146,4,87,2026-11-20,56,low
+https://realhunt.co/deal/us-bedford-va-move-in-ready-house-walk-to-downtown-250k,United States,Virginia,227700,109,3,85,2026-11-20,28,low
+https://realhunt.co/deal/us-alpena-mi-cedar-ceiling-house-across-from-lake-huron-250k,United States,Michigan,227700,172,2,90,2026-11-20,19,low
+https://realhunt.co/deal/us-aventura-2750-2404-259k,United States,Florida,232100,100,2,83,2026-11-07,14,high
+https://realhunt.co/deal/us-duluth-mn-renewed-1899-house-double-garage-255k,United States,Minnesota,232400,148,3,88,2026-11-20,10,low
+https://realhunt.co/deal/us-aventura-18041-1201-260k,United States,Florida,233000,145,2,82,2026-11-07,14,medium
+https://realhunt.co/deal/us-pembroke-pines-8982-265k,United States,Florida,237400,97,2,86,2026-11-07,13,medium
+https://realhunt.co/deal/us-tampa-4811-265k,United States,Florida,237400,158,4,87,2026-11-08,11,low
+https://realhunt.co/deal/us-aventura-20335-2302-265k,United States,Florida,237400,106,2,82,2026-11-07,12,high
+https://realhunt.co/deal/us-hollywood-2200-6-270k,United States,Florida,241900,121,2,86,2026-11-07,7,high
+https://realhunt.co/deal/us-aventura-18011-705-275k,United States,Florida,246400,149,2,84,2026-11-07,14,high
+https://realhunt.co/deal/us-plantation-791-214-280k,United States,Florida,250900,122,2,85,2026-11-07,13,medium
+https://realhunt.co/deal/us-doral-8290-236-285k,United States,Florida,255400,96,2,82,2026-11-07,5,low
+https://realhunt.co/deal/us-miramar-3625-23x-285k,United States,Florida,255400,97,3,85,2026-11-07,9,high
+https://realhunt.co/deal/us-hollywood-140-501-290k,United States,Florida,259800,141,3,87,2026-11-07,7,medium
+https://realhunt.co/deal/us-aventura-2750-2208-295k,United States,Florida,264300,118,2,83,2026-11-07,14,high
+https://realhunt.co/deal/us-plantation-485-36-298k,United States,Florida,266600,96,2,79,2026-11-07,12,medium
+https://realhunt.co/deal/us-kendall-6666-301-299k,United States,Florida,267900,124,2,84,2026-11-07,13,high
+https://realhunt.co/deal/us-aventura-20301-523-299k,United States,Florida,267900,122,2,81,2026-11-07,12,high
+https://realhunt.co/deal/us-tampa-8009-312k,United States,Florida,279600,177,3,87,2026-11-08,14,low
+https://realhunt.co/deal/us-tampa-8105-325k,United States,Florida,291200,210,4,88,2026-11-08,17,low
+https://realhunt.co/deal/us-aventura-18011-1904-350k,United States,Florida,313600,149,2,83,2026-11-07,14,high
+https://realhunt.co/deal/us-boca-raton-18102-435k,United States,Florida,389800,158,3,86,2026-11-07,33,low
+https://realhunt.co/deal/us-boca-raton-10308-460k,United States,Florida,412200,147,3,85,2026-11-07,33,low
+https://realhunt.co/deal/us-boca-raton-8315-490k,United States,Florida,439000,102,3,82,2026-11-07,29,low
+https://realhunt.co/deal/us-boca-raton-8353-500k,United States,Florida,447600,150,3,83,2026-11-07,29,low
+https://realhunt.co/deal/uy-la-paloma-new-house-three-blocks-from-beach-165k,Uruguay,Rocha,150300,90,3,82,2026-11-20,85,low
+https://realhunt.co/deal/uy-la-aguada-brick-chalet-one-block-from-beach-165k,Uruguay,Rocha,150300,100,3,85,2026-11-20,89,low
+https://realhunt.co/deal/uy-piriapolis-playa-grande-house-near-sea-198k,Uruguay,Maldonado,180300,115,2,85,2026-11-20,19,low
+https://realhunt.co/deal/uy-colonia-del-sacramento-three-bed-house-near-rambla-205k,Uruguay,Colonia,186300,113,3,82,2026-11-18,54,low

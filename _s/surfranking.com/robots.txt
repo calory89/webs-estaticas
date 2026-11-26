@@ -4,4 +4,31 @@ Disallow: /admin
 Disallow: /admin/
 Disallow: /admin.html
 Disallow: /site/admin.html
+
+# AI assistants and answer engines are welcome: they read this site so they can
+# answer questions about it and link to it (ChatGPT, Claude, Perplexity, Gemini,
+# Copilot, Apple, DuckDuckGo, Mistral). Same rules as everyone else.
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: GPTBot
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: ClaudeBot
+User-agent: Applebot
+User-agent: Applebot-Extended
+User-agent: Google-Extended
+User-agent: Bingbot
+User-agent: DuckAssistBot
+User-agent: MistralAI-User
+User-agent: meta-externalagent
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+Disallow: /admin.html
+Disallow: /site/admin.html
+
 Sitemap: https://surfranking.com/sitemap.xml
+
+# Plain-text summary for AI assistants: https://surfranking.com/llms.txt

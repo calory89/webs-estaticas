@@ -1,0 +1,13 @@
+﻿country,years_of_net_earnings,median_price_eur,annual_net_earnings_eur,earnings_year,homes,small_sample
+Germany,1.5,55000,36535,2025,21,no
+Sweden,1.9,73000,38950,2025,41,no
+Denmark,2.1,93200,45430,2025,46,no
+France,2.2,69900,32346,2025,52,no
+Italy,3.1,85000,27788,2025,88,no
+Spain,3.6,97000,27041,2025,191,no
+Poland,3.9,75170,19086,2025,31,no
+Bulgaria,4.6,66000,14450,2025,7,yes
+Portugal,6.1,130000,21449,2025,21,no
+Greece,7.2,155000,21498,2025,27,no
+Netherlands,8,325000,40793,2025,18,no
+Cyprus,12,341000,28340,2025,6,yes

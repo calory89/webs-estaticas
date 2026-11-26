@@ -1,0 +1,1186 @@
+{
+ "license": "CC BY 4.0",
+ "source": "https://jurimatch.com/open-data",
+ "firmIndexAt": "2026-11-26T14:24:19.052Z",
+ "listingCountsAt": "2026-11-26T14:24:18.392Z",
+ "note": "handVerifiedFirms: firms whose fee terms our team read on their own website, by country listed. listedFirms: firms on each case type listing (hand-verified and indexed), from the build snapshot.",
+ "countries": [
+  {
+   "slug": "united-states",
+   "name": "United States",
+   "region": "North America",
+   "handVerifiedFirms": 241,
+   "handVerifiedOnNoWinNoFeeListings": 143,
+   "citiesWithPages": [
+    "New York",
+    "Albuquerque",
+    "Atlanta",
+    "Boise",
+    "Charleston",
+    "Honolulu",
+    "Jackson",
+    "Las Vegas",
+    "Omaha",
+    "Seattle",
+    "St. Louis"
+   ],
+   "feeModels": {
+    "contingency-fee": 135,
+    "no-win-no-fee": 23,
+    "litigation-funding": 0
+   },
+   "listedFirms": {
+    "contract-dispute": 109,
+    "fraud": 72,
+    "investment-fraud": 108,
+    "crypto-fraud": 49,
+    "unpaid-invoice": 45,
+    "partnership-dispute": 71,
+    "employment": 79,
+    "real-estate": 40,
+    "personal-injury": 177,
+    "medical-negligence": 44,
+    "consumer": 35,
+    "intellectual-property": 43,
+    "professional-negligence": 7,
+    "insurance-claims": 38,
+    "class-actions": 43,
+    "social-security": 12
+   },
+   "contractLimitation": "3–6 years"
+  },
+  {
+   "slug": "united-kingdom",
+   "name": "United Kingdom",
+   "region": "Europe",
+   "handVerifiedFirms": 128,
+   "handVerifiedOnNoWinNoFeeListings": 120,
+   "citiesWithPages": [
+    "London",
+    "Bristol",
+    "Leeds",
+    "Liverpool",
+    "Manchester",
+    "Preston"
+   ],
+   "feeModels": {
+    "contingency-fee": 30,
+    "no-win-no-fee": 104,
+    "litigation-funding": 9
+   },
+   "listedFirms": {
+    "contract-dispute": 94,
+    "fraud": 49,
+    "investment-fraud": 53,
+    "crypto-fraud": 43,
+    "unpaid-invoice": 27,
+    "partnership-dispute": 39,
+    "employment": 36,
+    "real-estate": 32,
+    "personal-injury": 82,
+    "medical-negligence": 28,
+    "consumer": 11,
+    "intellectual-property": 21,
+    "professional-negligence": 37,
+    "insurance-claims": 16,
+    "class-actions": 15
+   },
+   "contractLimitation": "6 years"
+  },
+  {
+   "slug": "spain",
+   "name": "Spain",
+   "region": "Europe",
+   "handVerifiedFirms": 78,
+   "handVerifiedOnNoWinNoFeeListings": 31,
+   "citiesWithPages": [],
+   "feeModels": {
+    "contingency-fee": 18,
+    "no-win-no-fee": 15,
+    "litigation-funding": 4
+   },
+   "listedFirms": {
+    "contract-dispute": 22,
+    "fraud": 7,
+    "investment-fraud": 21,
+    "crypto-fraud": 3,
+    "unpaid-invoice": 9,
+    "partnership-dispute": 4,
+    "employment": 19,
+    "real-estate": 7,
+    "personal-injury": 23,
+    "medical-negligence": 10,
+    "consumer": 22,
+    "intellectual-property": 2,
+    "insurance-claims": 9,
+    "class-actions": 12,
+    "social-security": 7
+   },
+   "contractLimitation": "5 years"
+  },
+  {
+   "slug": "germany",
+   "name": "Germany",
+   "region": "Europe",
+   "handVerifiedFirms": 32,
+   "handVerifiedOnNoWinNoFeeListings": 26,
+   "citiesWithPages": [],
+   "feeModels": {
+    "contingency-fee": 8,
+    "no-win-no-fee": 6,
+    "litigation-funding": 25
+   },
+   "listedFirms": {
+    "contract-dispute": 31,
+    "fraud": 10,
+    "investment-fraud": 14,
+    "crypto-fraud": 9,
+    "unpaid-invoice": 7,
+    "partnership-dispute": 14,
+    "employment": 3,
+    "real-estate": 2,
+    "personal-injury": 2,
+    "medical-negligence": 2,
+    "consumer": 12,
+    "intellectual-property": 9,
+    "insurance-claims": 3,
+    "class-actions": 10
+   },
+   "contractLimitation": "3 years (from knowledge)"
+  },
+  {
+   "slug": "france",
+   "name": "France",
+   "region": "Europe",
+   "handVerifiedFirms": 9,
+   "handVerifiedOnNoWinNoFeeListings": 6,
+   "citiesWithPages": [],
+   "feeModels": {
+    "contingency-fee": 3,
+    "no-win-no-fee": 1,
+    "litigation-funding": 4
+   },
+   "listedFirms": {
+    "contract-dispute": 26,
+    "fraud": 11,
+    "investment-fraud": 8,
+    "crypto-fraud": 9,
+    "unpaid-invoice": 9,
+    "partnership-dispute": 7,
+    "employment": 2,
+    "real-estate": 2,
+    "consumer": 6,
+    "intellectual-property": 8,
+    "insurance-claims": 5,
+    "class-actions": 5
+   },
+   "contractLimitation": "5 years (from knowledge)"
+  },
+  {
+   "slug": "italy",
+   "name": "Italy",
+   "region": "Europe",
+   "handVerifiedFirms": 20,
+   "handVerifiedOnNoWinNoFeeListings": 16,
+   "citiesWithPages": [
+    "Milan"
+   ],
+   "feeModels": {
+    "contingency-fee": 6,
+    "no-win-no-fee": 6,
+    "litigation-funding": 5
+   },
+   "listedFirms": {
+    "contract-dispute": 21,
+    "fraud": 7,
+    "investment-fraud": 20,
+    "crypto-fraud": 5,
+    "unpaid-invoice": 16,
+    "partnership-dispute": 4,
+    "employment": 10,
+    "real-estate": 4,
+    "personal-injury": 11,
+    "medical-negligence": 11,
+    "consumer": 3,
+    "intellectual-property": 3,
+    "professional-negligence": 1,
+    "insurance-claims": 5,
+    "class-actions": 2,
+    "social-security": 1
+   },
+   "contractLimitation": "10 years"
+  },
+  {
+   "slug": "portugal",
+   "name": "Portugal",
+   "region": "Europe",
+   "handVerifiedFirms": 9,
+   "handVerifiedOnNoWinNoFeeListings": 8,
+   "citiesWithPages": [],
+   "feeModels": {
+    "contingency-fee": 2,
+    "no-win-no-fee": 3,
+    "litigation-funding": 4
+   },
+   "listedFirms": {
+    "contract-dispute": 14,
+    "fraud": 4,
+    "investment-fraud": 7,
+    "crypto-fraud": 3,
+    "unpaid-invoice": 3,
+    "partnership-dispute": 5,
+    "employment": 4,
+    "real-estate": 1,
+    "personal-injury": 1,
+    "consumer": 5,
+    "insurance-claims": 2,
+    "class-actions": 5
+   },
+   "contractLimitation": "20 years"
+  },
+  {
+   "slug": "netherlands",
+   "name": "Netherlands",
+   "region": "Europe",
+   "handVerifiedFirms": 19,
+   "handVerifiedOnNoWinNoFeeListings": 16,
+   "citiesWithPages": [],
+   "feeModels": {
+    "contingency-fee": 2,
+    "no-win-no-fee": 10,
+    "litigation-funding": 7
+   },
+   "listedFirms": {
+    "contract-dispute": 23,
+    "fraud": 10,
+    "investment-fraud": 7,
+    "crypto-fraud": 8,
+    "unpaid-invoice": 13,
+    "partnership-dispute": 14,
+    "employment": 3,
+    "real-estate": 11,
+    "personal-injury": 3,
+    "medical-negligence": 1,
+    "consumer": 5,
+    "intellectual-property": 4,
+    "insurance-claims": 5,
+    "class-actions": 10
+   },
+   "contractLimitation": "5 years"
+  },
+  {
+   "slug": "ireland",
+   "name": "Ireland",
+   "region": "Europe",
+   "handVerifiedFirms": 8,
+   "handVerifiedOnNoWinNoFeeListings": 7,
+   "citiesWithPages": [],
+   "feeModels": {
+    "contingency-fee": 4,
+    "no-win-no-fee": 5,
+    "litigation-funding": 1
+   },
+   "listedFirms": {
+    "contract-dispute": 17,
+    "fraud": 1,
+    "investment-fraud": 6,
+    "crypto-fraud": 1,
+    "unpaid-invoice": 5,
+    "partnership-dispute": 7,
+    "employment": 5,
+    "real-estate": 2,
+    "personal-injury": 8,
+    "medical-negligence": 3,
+    "consumer": 2,
+    "intellectual-property": 3,
+    "professional-negligence": 1,
+    "insurance-claims": 3,
+    "class-actions": 1
+   },
+   "contractLimitation": "6 years"
+  },
+  {
+   "slug": "switzerland",
+   "name": "Switzerland",
+   "region": "Europe",
+   "handVerifiedFirms": 11,
+   "handVerifiedOnNoWinNoFeeListings": 9,
+   "citiesWithPages": [],
+   "feeModels": {
+    "contingency-fee": 1,
+    "no-win-no-fee": 1,
+    "litigation-funding": 7
+   },
+   "listedFirms": {
+    "contract-dispute": 20,
+    "fraud": 10,
+    "investment-fraud": 8,
+    "crypto-fraud": 11,
+    "unpaid-invoice": 4,
+    "partnership-dispute": 6,
+    "employment": 3,
+    "real-estate": 3,
+    "medical-negligence": 1,
+    "consumer": 1,
+    "intellectual-property": 3,
+    "class-actions": 2
+   },
+   "contractLimitation": "5–10 years"
+  },
+  {
+   "slug": "belgium",
+   "name": "Belgium",
+   "region": "Europe",
+   "handVerifiedFirms": 15,
+   "handVerifiedOnNoWinNoFeeListings": 15,
+   "citiesWithPages": [],
+   "feeModels": {
+    "contingency-fee": 2,
+    "no-win-no-fee": 12,
+    "litigation-funding": 4
+   },
+   "listedFirms": {
+    "contract-dispute": 16,
+    "fraud": 6,
+    "investment-fraud": 6,
+    "crypto-fraud": 4,
+    "unpaid-invoice": 15,
+    "partnership-dispute": 6,
+    "employment": 8,
+    "real-estate": 8,
+    "consumer": 4,
+    "intellectual-property": 6,
+    "insurance-claims": 2,
+    "class-actions": 4
+   },
+   "contractLimitation": "10 years"
+  },
+  {
+   "slug": "austria",
+   "name": "Austria",
+   "region": "Europe",
+   "handVerifiedFirms": 19,
+   "handVerifiedOnNoWinNoFeeListings": 15,
+   "citiesWithPages": [
+    "Vienna"
+   ],
+   "feeModels": {
+    "contingency-fee": 2,
+    "no-win-no-fee": 0,
+    "litigation-funding": 15
+   },
+   "listedFirms": {
+    "contract-dispute": 15,
+    "fraud": 7,
+    "investment-fraud": 9,
+    "crypto-fraud": 8,
+    "unpaid-invoice": 1,
+    "partnership-dispute": 5,
+    "employment": 7,
+    "real-estate": 9,
+    "personal-injury": 1,
+    "medical-negligence": 3,
+    "consumer": 16,
+    "intellectual-property": 6,
+    "insurance-claims": 4,
+    "class-actions": 10
+   },
+   "contractLimitation": "3–30 years"
+  },
+  {
+   "slug": "luxembourg",
+   "name": "Luxembourg",
+   "region": "Europe",
+   "handVerifiedFirms": 2,
+   "handVerifiedOnNoWinNoFeeListings": 2,
+   "citiesWithPages": [],
+   "feeModels": {
+    "contingency-fee": 1,
+    "no-win-no-fee": 1,
+    "litigation-funding": 1
+   },
+   "listedFirms": {
+    "contract-dispute": 13,
+    "fraud": 2,
+    "investment-fraud": 7,
+    "crypto-fraud": 2,
+    "unpaid-invoice": 2,
+    "partnership-dispute": 11,
+    "employment": 3,
+    "real-estate": 1,
+    "consumer": 1,
+    "intellectual-property": 3,
+    "class-actions": 1
+   },
+   "contractLimitation": "10–30 years"
+  },
+  {
+   "slug": "denmark",
+   "name": "Denmark",
+   "region": "Europe",
+   "handVerifiedFirms": 5,
+   "handVerifiedOnNoWinNoFeeListings": 2,
+   "citiesWithPages": [],
+   "feeModels": {
+    "contingency-fee": 0,
+    "no-win-no-fee": 2,
+    "litigation-funding": 0
+   },
+   "listedFirms": {
+    "contract-dispute": 10,
+    "fraud": 7,
+    "investment-fraud": 9,
+    "crypto-fraud": 6,
+    "unpaid-invoice": 5,
+    "partnership-dispute": 1,
+    "employment": 2,
+    "real-estate": 4,
+    "personal-injury": 3,
+    "medical-negligence": 2,
+    "consumer": 6,
+    "insurance-claims": 5
+   },
+   "contractLimitation": "3 years (from knowledge)"
+  },
+  {
+   "slug": "sweden",
+   "name": "Sweden",
+   "region": "Europe",
+   "handVerifiedFirms": 1,
+   "handVerifiedOnNoWinNoFeeListings": 0,
+   "citiesWithPages": [],
+   "feeModels": {
+    "contingency-fee": 0,
+    "no-win-no-fee": 0,
+    "litigation-funding": 0
+   },
+   "listedFirms": {
+    "contract-dispute": 21,
+    "fraud": 4,
+    "investment-fraud": 10,
+    "crypto-fraud": 4,
+    "unpaid-invoice": 3,
+    "partnership-dispute": 6,
+    "employment": 7,
+    "real-estate": 5,
+    "consumer": 9,
+    "intellectual-property": 4,
+    "insurance-claims": 6,
+    "class-actions": 1
+   },
+   "contractLimitation": "10 years"
+  },
+  {
+   "slug": "norway",
+   "name": "Norway",
+   "region": "Europe",
+   "handVerifiedFirms": 1,
+   "handVerifiedOnNoWinNoFeeListings": 0,
+   "citiesWithPages": [],
+   "feeModels": {
+    "contingency-fee": 0,
+    "no-win-no-fee": 0,
+    "litigation-funding": 0
+   },
+   "listedFirms": {
+    "contract-dispute": 10,
+    "fraud": 2,
+    "investment-fraud": 2,
+    "crypto-fraud": 2,
+    "unpaid-invoice": 7,
+    "partnership-dispute": 3,
+    "employment": 2,
+    "real-estate": 5,
+    "personal-injury": 1,
+    "consumer": 4,
+    "intellectual-property": 4,
+    "insurance-claims": 3
+   },
+   "contractLimitation": "3 years"
+  },
+  {
+   "slug": "finland",
+   "name": "Finland",
+   "region": "Europe",
+   "handVerifiedFirms": 4,
+   "handVerifiedOnNoWinNoFeeListings": 2,
+   "citiesWithPages": [],
+   "feeModels": {
+    "contingency-fee": 2,
+    "no-win-no-fee": 0,
+    "litigation-funding": 0
+   },
+   "listedFirms": {
+    "contract-dispute": 12,
+    "fraud": 5,
+    "investment-fraud": 7,
+    "crypto-fraud": 5,
+    "unpaid-invoice": 6,
+    "partnership-dispute": 4,
+    "employment": 4,
+    "real-estate": 1,
+    "personal-injury": 1,
+    "consumer": 6,
+    "intellectual-property": 9,
+    "insurance-claims": 3
+   },
+   "contractLimitation": "3 years"
+  },
+  {
+   "slug": "poland",
+   "name": "Poland",
+   "region": "Europe",
+   "handVerifiedFirms": 15,
+   "handVerifiedOnNoWinNoFeeListings": 12,
+   "citiesWithPages": [],
+   "feeModels": {
+    "contingency-fee": 12,
+    "no-win-no-fee": 0,
+    "litigation-funding": 1
+   },
+   "listedFirms": {
+    "contract-dispute": 13,
+    "fraud": 6,
+    "investment-fraud": 12,
+    "crypto-fraud": 6,
+    "unpaid-invoice": 10,
+    "partnership-dispute": 5,
+    "employment": 2,
+    "real-estate": 3,
+    "personal-injury": 5,
+    "medical-negligence": 2,
+    "consumer": 8,
+    "intellectual-property": 7,
+    "insurance-claims": 4,
+    "class-actions": 1
+   },
+   "contractLimitation": "3–6 years"
+  },
+  {
+   "slug": "greece",
+   "name": "Greece",
+   "region": "Europe",
+   "handVerifiedFirms": 8,
+   "handVerifiedOnNoWinNoFeeListings": 5,
+   "citiesWithPages": [],
+   "feeModels": {
+    "contingency-fee": 1,
+    "no-win-no-fee": 4,
+    "litigation-funding": 0
+   },
+   "listedFirms": {
+    "contract-dispute": 16,
+    "fraud": 3,
+    "investment-fraud": 11,
+    "crypto-fraud": 3,
+    "unpaid-invoice": 6,
+    "partnership-dispute": 4,
+    "employment": 1,
+    "personal-injury": 4,
+    "medical-negligence": 2,
+    "intellectual-property": 3
+   },
+   "contractLimitation": "5–20 years"
+  },
+  {
+   "slug": "cyprus",
+   "name": "Cyprus",
+   "region": "Europe",
+   "handVerifiedFirms": 3,
+   "handVerifiedOnNoWinNoFeeListings": 3,
+   "citiesWithPages": [],
+   "feeModels": {
+    "contingency-fee": 0,
+    "no-win-no-fee": 3,
+    "litigation-funding": 0
+   },
+   "listedFirms": {
+    "contract-dispute": 15,
+    "fraud": 1,
+    "investment-fraud": 14,
+    "crypto-fraud": 1,
+    "unpaid-invoice": 5,
+    "partnership-dispute": 11,
+    "employment": 4,
+    "real-estate": 4,
+    "personal-injury": 3,
+    "medical-negligence": 3,
+    "consumer": 3,
+    "intellectual-property": 3,
+    "insurance-claims": 2
+   },
+   "contractLimitation": "6 years"
+  },
+  {
+   "slug": "malta",
+   "name": "Malta",
+   "region": "Europe",
+   "handVerifiedFirms": 1,
+   "handVerifiedOnNoWinNoFeeListings": 0,
+   "citiesWithPages": [],
+   "feeModels": {
+    "contingency-fee": 0,
+    "no-win-no-fee": 0,
+    "litigation-funding": 0
+   },
+   "listedFirms": {
+    "contract-dispute": 9,
+    "fraud": 8,
+    "investment-fraud": 12,
+    "crypto-fraud": 8,
+    "unpaid-invoice": 3,
+    "partnership-dispute": 3,
+    "employment": 4,
+    "real-estate": 2,
+    "consumer": 2,
+    "intellectual-property": 3
+   },
+   "contractLimitation": null
+  },
+  {
+   "slug": "turkey",
+   "name": "Turkey",
+   "region": "Europe",
+   "handVerifiedFirms": 8,
+   "handVerifiedOnNoWinNoFeeListings": 6,
+   "citiesWithPages": [
+    "Istanbul"
+   ],
+   "feeModels": {
+    "contingency-fee": 1,
+    "no-win-no-fee": 4,
+    "litigation-funding": 0
+   },
+   "listedFirms": {
+    "contract-dispute": 20,
+    "fraud": 6,
+    "investment-fraud": 9,
+    "crypto-fraud": 6,
+    "unpaid-invoice": 15,
+    "partnership-dispute": 6,
+    "employment": 5,
+    "real-estate": 13,
+    "personal-injury": 2,
+    "medical-negligence": 3,
+    "consumer": 4,
+    "intellectual-property": 11,
+    "insurance-claims": 9
+   },
+   "contractLimitation": "5–10 years"
+  },
+  {
+   "slug": "canada",
+   "name": "Canada",
+   "region": "North America",
+   "handVerifiedFirms": 52,
+   "handVerifiedOnNoWinNoFeeListings": 37,
+   "citiesWithPages": [
+    "Toronto",
+    "Halifax",
+    "Vancouver"
+   ],
+   "feeModels": {
+    "contingency-fee": 29,
+    "no-win-no-fee": 5,
+    "litigation-funding": 0
+   },
+   "listedFirms": {
+    "contract-dispute": 24,
+    "fraud": 5,
+    "investment-fraud": 21,
+    "crypto-fraud": 4,
+    "unpaid-invoice": 9,
+    "partnership-dispute": 10,
+    "employment": 7,
+    "real-estate": 7,
+    "personal-injury": 33,
+    "medical-negligence": 5,
+    "consumer": 6,
+    "intellectual-property": 8,
+    "insurance-claims": 12,
+    "class-actions": 19
+   },
+   "contractLimitation": "2–3 years (from knowledge)"
+  },
+  {
+   "slug": "mexico",
+   "name": "Mexico",
+   "region": "Latin America",
+   "handVerifiedFirms": 16,
+   "handVerifiedOnNoWinNoFeeListings": 13,
+   "citiesWithPages": [
+    "Mexico City"
+   ],
+   "feeModels": {
+    "contingency-fee": 10,
+    "no-win-no-fee": 5,
+    "litigation-funding": 1
+   },
+   "listedFirms": {
+    "contract-dispute": 18,
+    "fraud": 13,
+    "investment-fraud": 7,
+    "crypto-fraud": 11,
+    "unpaid-invoice": 7,
+    "partnership-dispute": 4,
+    "employment": 11,
+    "real-estate": 8,
+    "personal-injury": 1,
+    "consumer": 3,
+    "intellectual-property": 2,
+    "insurance-claims": 5,
+    "class-actions": 2
+   },
+   "contractLimitation": null
+  },
+  {
+   "slug": "brazil",
+   "name": "Brazil",
+   "region": "Latin America",
+   "handVerifiedFirms": 33,
+   "handVerifiedOnNoWinNoFeeListings": 12,
+   "citiesWithPages": [
+    "São Paulo"
+   ],
+   "feeModels": {
+    "contingency-fee": 4,
+    "no-win-no-fee": 2,
+    "litigation-funding": 4
+   },
+   "listedFirms": {
+    "contract-dispute": 13,
+    "fraud": 3,
+    "investment-fraud": 8,
+    "crypto-fraud": 3,
+    "unpaid-invoice": 6,
+    "partnership-dispute": 4,
+    "employment": 16,
+    "real-estate": 1,
+    "personal-injury": 3,
+    "consumer": 6,
+    "intellectual-property": 6,
+    "insurance-claims": 6,
+    "class-actions": 2,
+    "social-security": 7
+   },
+   "contractLimitation": "10 years"
+  },
+  {
+   "slug": "argentina",
+   "name": "Argentina",
+   "region": "Latin America",
+   "handVerifiedFirms": 15,
+   "handVerifiedOnNoWinNoFeeListings": 12,
+   "citiesWithPages": [
+    "Buenos Aires"
+   ],
+   "feeModels": {
+    "contingency-fee": 6,
+    "no-win-no-fee": 1,
+    "litigation-funding": 1
+   },
+   "listedFirms": {
+    "contract-dispute": 5,
+    "fraud": 7,
+    "investment-fraud": 3,
+    "crypto-fraud": 7,
+    "unpaid-invoice": 3,
+    "partnership-dispute": 1,
+    "employment": 17,
+    "real-estate": 2,
+    "personal-injury": 14,
+    "medical-negligence": 1,
+    "consumer": 3,
+    "intellectual-property": 1,
+    "insurance-claims": 1,
+    "class-actions": 1
+   },
+   "contractLimitation": "5 years"
+  },
+  {
+   "slug": "colombia",
+   "name": "Colombia",
+   "region": "Latin America",
+   "handVerifiedFirms": 9,
+   "handVerifiedOnNoWinNoFeeListings": 7,
+   "citiesWithPages": [],
+   "feeModels": {
+    "contingency-fee": 6,
+    "no-win-no-fee": 2,
+    "litigation-funding": 1
+   },
+   "listedFirms": {
+    "contract-dispute": 11,
+    "fraud": 6,
+    "investment-fraud": 7,
+    "crypto-fraud": 6,
+    "unpaid-invoice": 8,
+    "partnership-dispute": 5,
+    "employment": 9,
+    "real-estate": 1,
+    "personal-injury": 9,
+    "medical-negligence": 2,
+    "consumer": 5,
+    "intellectual-property": 2,
+    "insurance-claims": 3,
+    "class-actions": 2,
+    "social-security": 2
+   },
+   "contractLimitation": "10 years"
+  },
+  {
+   "slug": "chile",
+   "name": "Chile",
+   "region": "Latin America",
+   "handVerifiedFirms": 15,
+   "handVerifiedOnNoWinNoFeeListings": 8,
+   "citiesWithPages": [
+    "Santiago"
+   ],
+   "feeModels": {
+    "contingency-fee": 4,
+    "no-win-no-fee": 1,
+    "litigation-funding": 1
+   },
+   "listedFirms": {
+    "contract-dispute": 14,
+    "fraud": 4,
+    "investment-fraud": 6,
+    "crypto-fraud": 4,
+    "unpaid-invoice": 6,
+    "partnership-dispute": 4,
+    "employment": 12,
+    "real-estate": 3,
+    "personal-injury": 5,
+    "consumer": 4,
+    "intellectual-property": 7,
+    "insurance-claims": 3,
+    "class-actions": 2
+   },
+   "contractLimitation": "5 years"
+  },
+  {
+   "slug": "panama",
+   "name": "Panama",
+   "region": "Latin America",
+   "handVerifiedFirms": 2,
+   "handVerifiedOnNoWinNoFeeListings": 2,
+   "citiesWithPages": [],
+   "feeModels": {
+    "contingency-fee": 2,
+    "no-win-no-fee": 0,
+    "litigation-funding": 0
+   },
+   "listedFirms": {
+    "contract-dispute": 8,
+    "fraud": 5,
+    "investment-fraud": 4,
+    "crypto-fraud": 4,
+    "unpaid-invoice": 7,
+    "partnership-dispute": 4,
+    "employment": 5,
+    "real-estate": 1,
+    "personal-injury": 1,
+    "consumer": 4,
+    "intellectual-property": 1,
+    "insurance-claims": 6
+   },
+   "contractLimitation": null
+  },
+  {
+   "slug": "united-arab-emirates",
+   "name": "United Arab Emirates",
+   "region": "Middle East",
+   "handVerifiedFirms": 12,
+   "handVerifiedOnNoWinNoFeeListings": 9,
+   "citiesWithPages": [],
+   "feeModels": {
+    "contingency-fee": 3,
+    "no-win-no-fee": 3,
+    "litigation-funding": 3
+   },
+   "listedFirms": {
+    "contract-dispute": 29,
+    "fraud": 12,
+    "investment-fraud": 5,
+    "crypto-fraud": 11,
+    "unpaid-invoice": 9,
+    "partnership-dispute": 4,
+    "employment": 2,
+    "real-estate": 4,
+    "personal-injury": 2,
+    "medical-negligence": 2,
+    "consumer": 4,
+    "intellectual-property": 4,
+    "insurance-claims": 2,
+    "class-actions": 1
+   },
+   "contractLimitation": "10–15 years"
+  },
+  {
+   "slug": "saudi-arabia",
+   "name": "Saudi Arabia",
+   "region": "Middle East",
+   "handVerifiedFirms": 0,
+   "handVerifiedOnNoWinNoFeeListings": 0,
+   "citiesWithPages": [],
+   "feeModels": {
+    "contingency-fee": 0,
+    "no-win-no-fee": 0,
+    "litigation-funding": 0
+   },
+   "listedFirms": {
+    "contract-dispute": 21,
+    "fraud": 3,
+    "investment-fraud": 8,
+    "crypto-fraud": 3,
+    "unpaid-invoice": 8,
+    "partnership-dispute": 2,
+    "employment": 1,
+    "real-estate": 4,
+    "consumer": 4,
+    "intellectual-property": 8,
+    "insurance-claims": 7
+   },
+   "contractLimitation": "10 years"
+  },
+  {
+   "slug": "israel",
+   "name": "Israel",
+   "region": "Middle East",
+   "handVerifiedFirms": 11,
+   "handVerifiedOnNoWinNoFeeListings": 9,
+   "citiesWithPages": [],
+   "feeModels": {
+    "contingency-fee": 1,
+    "no-win-no-fee": 1,
+    "litigation-funding": 0
+   },
+   "listedFirms": {
+    "contract-dispute": 10,
+    "investment-fraud": 3,
+    "unpaid-invoice": 2,
+    "partnership-dispute": 4,
+    "employment": 4,
+    "real-estate": 5,
+    "personal-injury": 9,
+    "medical-negligence": 5,
+    "consumer": 1,
+    "intellectual-property": 4,
+    "insurance-claims": 6,
+    "class-actions": 5
+   },
+   "contractLimitation": "7 years"
+  },
+  {
+   "slug": "australia",
+   "name": "Australia",
+   "region": "Asia-Pacific",
+   "handVerifiedFirms": 70,
+   "handVerifiedOnNoWinNoFeeListings": 69,
+   "citiesWithPages": [
+    "Melbourne",
+    "Sydney",
+    "Adelaide",
+    "Brisbane",
+    "Cairns",
+    "Gold Coast",
+    "Perth"
+   ],
+   "feeModels": {
+    "contingency-fee": 3,
+    "no-win-no-fee": 64,
+    "litigation-funding": 8
+   },
+   "listedFirms": {
+    "contract-dispute": 39,
+    "fraud": 12,
+    "investment-fraud": 17,
+    "crypto-fraud": 12,
+    "unpaid-invoice": 12,
+    "partnership-dispute": 19,
+    "employment": 7,
+    "real-estate": 5,
+    "personal-injury": 59,
+    "medical-negligence": 20,
+    "consumer": 6,
+    "intellectual-property": 6,
+    "insurance-claims": 33,
+    "class-actions": 20
+   },
+   "contractLimitation": "3–6 years"
+  },
+  {
+   "slug": "new-zealand",
+   "name": "New Zealand",
+   "region": "Asia-Pacific",
+   "handVerifiedFirms": 8,
+   "handVerifiedOnNoWinNoFeeListings": 8,
+   "citiesWithPages": [],
+   "feeModels": {
+    "contingency-fee": 1,
+    "no-win-no-fee": 4,
+    "litigation-funding": 4
+   },
+   "listedFirms": {
+    "contract-dispute": 29,
+    "fraud": 9,
+    "investment-fraud": 13,
+    "crypto-fraud": 9,
+    "unpaid-invoice": 10,
+    "partnership-dispute": 6,
+    "employment": 6,
+    "real-estate": 6,
+    "personal-injury": 1,
+    "consumer": 4,
+    "intellectual-property": 3,
+    "insurance-claims": 7,
+    "class-actions": 10
+   },
+   "contractLimitation": "6 years"
+  },
+  {
+   "slug": "singapore",
+   "name": "Singapore",
+   "region": "Asia-Pacific",
+   "handVerifiedFirms": 10,
+   "handVerifiedOnNoWinNoFeeListings": 9,
+   "citiesWithPages": [],
+   "feeModels": {
+    "contingency-fee": 2,
+    "no-win-no-fee": 3,
+    "litigation-funding": 4
+   },
+   "listedFirms": {
+    "contract-dispute": 24,
+    "fraud": 11,
+    "investment-fraud": 13,
+    "crypto-fraud": 11,
+    "unpaid-invoice": 13,
+    "partnership-dispute": 6,
+    "employment": 2,
+    "real-estate": 3,
+    "personal-injury": 1,
+    "medical-negligence": 1,
+    "consumer": 4,
+    "professional-negligence": 1,
+    "insurance-claims": 4,
+    "class-actions": 2
+   },
+   "contractLimitation": "6 years"
+  },
+  {
+   "slug": "hong-kong",
+   "name": "Hong Kong",
+   "region": "Asia-Pacific",
+   "handVerifiedFirms": 9,
+   "handVerifiedOnNoWinNoFeeListings": 8,
+   "citiesWithPages": [],
+   "feeModels": {
+    "contingency-fee": 2,
+    "no-win-no-fee": 3,
+    "litigation-funding": 2
+   },
+   "listedFirms": {
+    "contract-dispute": 19,
+    "fraud": 15,
+    "investment-fraud": 5,
+    "crypto-fraud": 12,
+    "unpaid-invoice": 10,
+    "partnership-dispute": 2,
+    "employment": 4,
+    "real-estate": 5,
+    "consumer": 4,
+    "intellectual-property": 1,
+    "insurance-claims": 3,
+    "class-actions": 1
+   },
+   "contractLimitation": "6 years"
+  },
+  {
+   "slug": "india",
+   "name": "India",
+   "region": "Asia-Pacific",
+   "handVerifiedFirms": 13,
+   "handVerifiedOnNoWinNoFeeListings": 9,
+   "citiesWithPages": [],
+   "feeModels": {
+    "contingency-fee": 2,
+    "no-win-no-fee": 1,
+    "litigation-funding": 5
+   },
+   "listedFirms": {
+    "contract-dispute": 18,
+    "fraud": 11,
+    "investment-fraud": 11,
+    "crypto-fraud": 8,
+    "unpaid-invoice": 16,
+    "partnership-dispute": 6,
+    "employment": 1,
+    "real-estate": 9,
+    "consumer": 11,
+    "intellectual-property": 12,
+    "insurance-claims": 4
+   },
+   "contractLimitation": "3 years"
+  },
+  {
+   "slug": "malaysia",
+   "name": "Malaysia",
+   "region": "Asia-Pacific",
+   "handVerifiedFirms": 0,
+   "handVerifiedOnNoWinNoFeeListings": 0,
+   "citiesWithPages": [],
+   "feeModels": {
+    "contingency-fee": 0,
+    "no-win-no-fee": 0,
+    "litigation-funding": 0
+   },
+   "listedFirms": {
+    "contract-dispute": 13,
+    "fraud": 7,
+    "investment-fraud": 5,
+    "crypto-fraud": 7,
+    "unpaid-invoice": 6,
+    "partnership-dispute": 8,
+    "employment": 3,
+    "real-estate": 2,
+    "consumer": 2,
+    "intellectual-property": 4,
+    "insurance-claims": 1
+   },
+   "contractLimitation": "6 years"
+  },
+  {
+   "slug": "south-africa",
+   "name": "South Africa",
+   "region": "Africa",
+   "handVerifiedFirms": 18,
+   "handVerifiedOnNoWinNoFeeListings": 18,
+   "citiesWithPages": [],
+   "feeModels": {
+    "contingency-fee": 7,
+    "no-win-no-fee": 13,
+    "litigation-funding": 2
+   },
+   "listedFirms": {
+    "contract-dispute": 33,
+    "fraud": 10,
+    "investment-fraud": 15,
+    "crypto-fraud": 9,
+    "unpaid-invoice": 12,
+    "partnership-dispute": 7,
+    "employment": 7,
+    "real-estate": 6,
+    "personal-injury": 14,
+    "medical-negligence": 9,
+    "consumer": 1,
+    "intellectual-property": 5,
+    "professional-negligence": 2,
+    "insurance-claims": 9,
+    "class-actions": 3
+   },
+   "contractLimitation": "3 years (from knowledge)"
+  }
+ ]
+}

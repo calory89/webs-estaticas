@@ -1,0 +1,1 @@
+import{C as e}from"./claimGuides-BqcCTYhu.js";import{S as t}from"./growthPages-CVu4yI8M.js";const c=r=>[...e.filter(o=>o.caseType===r).sort((o,s)=>+!!o.company-+!!s.company).slice(0,4).map(o=>({to:`/claims/${o.slug}`,label:o.title,body:o.description})),...t[r]||[]].slice(0,4);export{c as g};
