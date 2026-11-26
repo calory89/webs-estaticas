@@ -36,7 +36,8 @@
     "MA": "Morocco",
     "PA": "Panama",
     "AR": "Argentina",
-    "BH": "Bahrain"
+    "BH": "Bahrain",
+    "FR": "France"
   },
   "sources": {
     "id-pp18-2021": {
@@ -279,6 +280,14 @@
       "language": "ar",
       "read": "2026-11-26",
       "note": "This law repealed Law No. 28 of 2014 on real estate development. \"The Foundation\" in the text is the Real Estate Regulatory Authority (RERA). The Arabic text is the official one."
+    },
+    "fr-cch-vefa": {
+      "law": "Construction and Housing Code (Code de la construction et de l'habitation), rules on the sale of buildings to be built",
+      "publisher": "Légifrance (legifrance.gouv.fr), the official French legal information service run by DILA",
+      "url": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006074096/",
+      "language": "fr",
+      "read": "2026-11-26",
+      "note": "Quoted from the consolidated text in force in the official LEGI database that DILA publishes as open data (extract of 8 November 2026). Articles starting with L are in the legislative part of the code and articles starting with R in the regulatory part. VEFA (vente en l'état futur d'achèvement) is the French name for an off-plan sale."
     }
   },
   "rules": [
@@ -1544,6 +1553,83 @@
       "cite": "Article 33(a) of the Real Estate Sector Regulation Law",
       "translation": "If the developer temporarily or permanently stops or falters in carrying out the off-plan sale project for any reason, the Foundation may, after consulting the escrow account trustee, take the measures needed to protect the rights of the depositors and the creditors of the project so as to ensure that the project is completed or the money is returned to its owners, including applying to the competent court for a judgment to have the project carried out by another developer at the developer's expense, or to sell the project and distribute the proceeds of the sale among the depositors and the creditors of the project.",
       "quote": "للمؤسسة في حالة توقُّف أو تعثُّر المطور مؤقتاً أو نهائياً عن تنفيذ مشروع البيع على الخريطة لأيِّ سبب من الأسباب - بعد أخْذ رأي أمين حساب الضمان - اتخاذ التدابير اللازمة لحماية حقوق الموْدعين ودائني المشروع، بما يضمن إكمال المشروع أو إعادة الأموال لأصحابها، بما في ذلك اللجوء إلى المحكمة المختصة للحصول على حكم بتنفيذ المشروع بمعرفة أحد المطوِّرين على حساب المطوِّر أو بيع المشروع وتوزيع حصيلة البيع على الموْدعين ودائني المشروع.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "fr-garantie-achevement",
+      "market": "FR",
+      "topics": [
+        "escrow",
+        "completion"
+      ],
+      "title": "In France, the seller must take out a completion guarantee or a refund guarantee before it signs an off-plan sale",
+      "plain": "Before an off-plan sale contract is signed, the seller must take out a financial guarantee that the building will be completed, or a financial guarantee that your payments will be refunded if the contract is cancelled because the building is not completed. If the seller runs out of the money needed to finish the building, you can call on the completion guarantee.",
+      "source": "fr-cch-vefa",
+      "cite": "Article L261-10-1",
+      "quote": "Avant la conclusion d'un contrat prévu à l'article L. 261-10, le vendeur souscrit une garantie financière de l'achèvement de l'immeuble ou une garantie financière du remboursement des versements effectués en cas de résolution du contrat à défaut d'achèvement. La garantie financière d'achèvement peut être mise en œuvre par l'acquéreur en cas de défaillance financière du vendeur, caractérisée par une absence de disposition des fonds nécessaires à l'achèvement de l'immeuble.",
+      "translation": "Before a contract under article L. 261-10 is concluded, the seller takes out a financial guarantee of the completion of the building or a financial guarantee of the refund of the payments made if the contract is cancelled for lack of completion. The financial completion guarantee may be called on by the buyer in the event of the seller's financial failure, shown by a lack of the funds needed to complete the building.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "fr-acte-authentique",
+      "market": "FR",
+      "topics": [
+        "completion",
+        "price",
+        "law"
+      ],
+      "title": "The off-plan sale must be signed before a notary and state the description, price, payment terms, delivery date and guarantee",
+      "plain": "The sale contract must be a notarial deed. It must describe the home, state its price and how it is paid, the delivery date and, for a standard off-plan sale, prove the financial guarantee, with the guarantor's certificate attached. It must say whether the price can be revised and how. If these rules are not followed the contract is void, but only you as buyer can claim this, and only before the works are finished.",
+      "source": "fr-cch-vefa",
+      "cite": "Article L261-11",
+      "quote": "Le contrat doit être conclu par acte authentique et préciser : a) La description de l'immeuble ou de la partie d'immeuble vendu ; b) Son prix et les modalités de paiement de celui-ci ; c) Le délai de livraison ; d) Lorsqu'il revêt la forme prévue à l'article 1601-3 du code civil, reproduit à l'article L. 261-3 du présent code, la justification de la garantie financière prescrite à l'article L. 261-10-1, l'attestation de la garantie étant établie par le garant et annexée au contrat. [...] Il doit également mentionner si le prix est ou non révisable et, dans l'affirmative, les modalités de sa révision. [...] L'inobservation des dispositions du présent article entraîne la nullité du contrat. Cette nullité ne peut être invoquée que par l'acquéreur et avant l'achèvement des travaux.",
+      "translation": "The contract must be concluded by notarial deed and state: a) the description of the building or part of the building sold; b) its price and the terms of payment; c) the delivery date; d) where it takes the form provided for in article 1601-3 of the Civil Code, reproduced in article L. 261-3 of this code, proof of the financial guarantee required by article L. 261-10-1, the guarantee certificate being issued by the guarantor and attached to the contract. [...] It must also state whether or not the price can be revised and, if so, how it is revised. [...] Failure to comply with this article makes the contract void. This nullity may be claimed only by the buyer and before the works are completed.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "fr-echeancier",
+      "market": "FR",
+      "topics": [
+        "payment",
+        "completion",
+        "delay"
+      ],
+      "title": "Nothing may be paid before the contract is signed, and payments are capped at 35%, 70% and 95% of the price as the works progress",
+      "plain": "In an off-plan sale the seller may not ask for or accept any payment before the contract is signed, or before a payment falls due. In total you can be asked for no more than 35% of the price when the foundations are finished, 70% when the building is weathertight and 95% when it is completed. The balance is due when the home is handed over, and you can have it held aside if you dispute that the home matches the contract. A late payment penalty in the contract cannot exceed 1% a month.",
+      "source": "fr-cch-vefa",
+      "cite": "Articles L261-12 and R261-14",
+      "quote": "Dans le cas de vente en l'état futur d'achèvement, le vendeur ne peut exiger ni accepter aucun versement, aucun dépôt, aucune souscription ou acceptation d'effets de commerce avant la signature du contrat, ni avant la date à laquelle la créance est exigible. [...] Les paiements ou dépôts ne peuvent excéder au total : 35% du prix à l'achèvement des fondations ; 70% à la mise hors d'eau ; 95% à l'achèvement de l'immeuble. Le solde est payable lors de la mise du local à la disposition de l'acquéreur ; toutefois il peut être consigné en cas de contestation sur la conformité avec les prévisions du contrat. [...] Si le contrat prévoit une pénalité de retard dans les paiements ou les versements, le taux de celle-ci ne peut excéder 1% par mois.",
+      "translation": "In an off-plan sale, the seller may not demand or accept any payment, any deposit, or any subscription or acceptance of bills of exchange before the contract is signed, or before the date on which the debt falls due. [...] Payments or deposits may not exceed in total: 35% of the price when the foundations are completed; 70% when the building is weathertight; 95% when the building is completed. The balance is payable when the premises are made available to the buyer; it may however be held in deposit if there is a dispute over conformity with the contract. [...] If the contract provides for a penalty for late payments, its rate may not exceed 1% per month.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "fr-reservation-depot",
+      "market": "FR",
+      "topics": [
+        "escrow",
+        "payment"
+      ],
+      "title": "A reservation deposit goes into a special account, is frozen until the sale, and is capped at 5% or 2% of the price",
+      "plain": "Before the sale, the seller may reserve a home for you under a preliminary contract, in return for a deposit paid into a special account. That money is frozen: it cannot be transferred or seized until the sale contract is signed. The deposit cannot exceed 5% of the expected price if the sale is due within one year, or 2% if it is due within two years, and no deposit at all may be required if the sale is due later than that.",
+      "source": "fr-cch-vefa",
+      "cite": "Articles L261-15 and R261-28",
+      "quote": "La vente prévue à l'article L. 261-10 peut être précédée d'un contrat préliminaire par lequel, en contrepartie d'un dépôt de garantie effectué à un compte spécial, le vendeur s'engage à réserver à un acheteur un immeuble ou une partie d'immeuble. [...] Les fonds déposés en garantie sont indisponibles, incessibles et insaisissables jusqu'à la conclusion du contrat de vente. [...] Le montant du dépôt de garantie ne peut excéder 5% du prix prévisionnel de vente si le délai de réalisation de la vente n'excède pas un an ; ce pourcentage est limité à 2% si ce délai n'excède pas deux ans. Aucun dépôt ne peut être exigé si ce délai excède deux ans.",
+      "translation": "The sale provided for in article L. 261-10 may be preceded by a preliminary contract by which, in return for a security deposit paid into a special account, the seller undertakes to reserve a building or part of a building for a buyer. [...] The funds deposited as security are unavailable, non-transferable and exempt from seizure until the sale contract is concluded. [...] The security deposit may not exceed 5% of the expected sale price if the sale is to take place within one year; this percentage is limited to 2% if that period does not exceed two years. No deposit may be required if that period exceeds two years.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "fr-restitution-depot",
+      "market": "FR",
+      "topics": [
+        "termination",
+        "price"
+      ],
+      "title": "You get the reservation deposit back in full if the seller fails to sign, the price rises over 5%, your loan falls through or the home is worth over 10% less",
+      "plain": "The reservation deposit is returned to you with no deduction or penalty if the seller does not sign the sale in time, if the price is more than 5% above the expected price, if the loans planned in the preliminary contract are not obtained or are over 10% lower, if a planned item of equipment will not be provided, or if the home is worth more than 10% less because of its size or quality. You ask for the refund by registered letter with acknowledgement of receipt, and it must be paid within three months.",
+      "source": "fr-cch-vefa",
+      "cite": "Article R261-31",
+      "quote": "Le dépôt de garantie est restitué, sans retenue ni pénalité au réservataire : a) Si le contrat de vente n'est pas conclu du fait du vendeur dans le délai prévu au contrat préliminaire ; b) Si le prix de vente excède de plus de 5% le prix prévisionnel, revisé le cas échéant conformément aux dispositions du contrat préliminaire. [...] c) Si le ou les prêts prévus au contrat préliminaire ne sont pas obtenus ou transmis ou si leur montant est inférieur de 10% aux prévisions dudit contrat ; d) Si l'un des éléments d'équipement prévus au contrat préliminaire ne doit pas être réalisé ; e) Si l'immeuble ou la partie d'immeuble ayant fait l'objet du contrat présente dans sa consistance ou dans la qualité des ouvrages prévus une réduction de valeur supérieure à 10%. Dans les cas prévus au présent article, le réservataire notifie sa demande de remboursement au vendeur et au dépositaire par lettre recommandée avec demande d'avis de réception. Sous réserve de la justification par le déposant de son droit à restitution, le remboursement intervient dans le délai maximum de trois mois à dater de cette demande.",
+      "translation": "The security deposit is returned to the reserving buyer without deduction or penalty: a) if the sale contract is not concluded because of the seller within the period set in the preliminary contract; b) if the sale price exceeds the expected price, revised where applicable under the preliminary contract, by more than 5%. [...] c) if the loan or loans planned in the preliminary contract are not obtained or passed on, or if their amount is 10% below what that contract planned; d) if one of the items of equipment planned in the preliminary contract is not to be provided; e) if the building or part of the building covered by the contract shows a reduction in value of more than 10% in its size or in the quality of the planned works. In the cases provided for in this article, the reserving buyer notifies the refund request to the seller and to the depositary by registered letter with acknowledgement of receipt. Provided the depositor proves the right to a refund, the refund is made within three months at most of that request.",
       "checked": "2026-11-26"
     }
   ]

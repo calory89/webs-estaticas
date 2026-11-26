@@ -95,7 +95,7 @@ function regsFor(B, country) {   // register cards whose market belongs to this 
   const mk = new Set((B.byCountry.get(country) || []).map(c => c.market));
   return B.regCards.filter(r => ctry(r.name) === country || (r.sub && ctry(r.sub) === country) || mk.has(r.name));
 }
-const LAWC = { ID: 'Indonesia', 'AE-DU': 'UAE', TH: 'Thailand', ES: 'Spain', PT: 'Portugal', 'US-FL': 'USA', 'AU-VIC': 'Australia', MX: 'Mexico', JP: 'Japan', GB: 'United Kingdom', TR: 'Turkey', CR: 'Costa Rica', CY: 'Cyprus', IN: 'India', BR: 'Brazil', SA: 'Saudi Arabia', 'CA-BC': 'Canada', CO: 'Colombia', MA: 'Morocco', PA: 'Panama', AR: 'Argentina', BH: 'Bahrain' };   // n40 L4: Florida, Victoria, Mexico; L5: Japan, UK
+const LAWC = { ID: 'Indonesia', 'AE-DU': 'UAE', TH: 'Thailand', ES: 'Spain', PT: 'Portugal', 'US-FL': 'USA', 'AU-VIC': 'Australia', MX: 'Mexico', JP: 'Japan', GB: 'United Kingdom', TR: 'Turkey', CR: 'Costa Rica', CY: 'Cyprus', IN: 'India', BR: 'Brazil', SA: 'Saudi Arabia', 'CA-BC': 'Canada', CO: 'Colombia', MA: 'Morocco', PA: 'Panama', AR: 'Argentina', BH: 'Bahrain', FR: 'France' };   // n40 L4: Florida, Victoria, Mexico; L5: Japan, UK
 function lawFor(B, country) {
   const rules = [];
   for (const [src, key] of [[B.law, 'law'], [B.lh, 'lh']]) {
