@@ -631,7 +631,7 @@ async function sdLive() {
   if (SDM && Date.now() - SDM.t < 600000) return SDM.v;
   const one = async p => {
     const o = { p, st: 0, blocks: 0, nodes: 0, types: {}, issues: [] };
-    try { const r = await fetch(SITE + p, { headers: { 'user-agent': $q.qg }, redirect: $q.ff }); o.st = r.status; if (r.status !== 200) { o.issues.push('HTTP ' + r.status); try { await r.body.cancel(); } catch (e) {} return o; }
+    try { const r = await fetch(SITE + p, { headers: { 'user-agent': $q.qg }, redirect: $q.ff, signal: AbortSignal.timeout(8000) }); o.st = r.status; if (r.status !== 200) { o.issues.push('HTTP ' + r.status); try { await r.body.cancel(); } catch (e) {} return o; }
       const h = await r.text(), lang = (/<html[^>]*\blang="([a-zA-Z-]+)"/.exec(h) || [])[1] || '', can = (/<link rel="canonical" href="([^"]+)"/.exec(h) || [])[1] || '';
       const B = [...h.matchAll(/<script[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)].map(m => m[1]); o.blocks = B.length; if (!B.length) o.issues.push($q.qh);
       const walk = (x, top) => { if (Array.isArray(x)) return x.forEach(y => walk(y, top)); if (!x || typeof x !== $q.qi) return;
@@ -646,7 +646,11 @@ async function sdLive() {
     } catch (e) { o.issues.push($q.qv); }
     o.issues = [...new Set(o.issues)]; return o;
   };
-  const v = { at: new Date().toISOString(), pages: await Promise.all(SD_PAGES.map(one)) }; SDM = { t: Date.now(), v }; return v;
+  const ek = new Request(SITE + '/__kb/sd-live.json'); try { const hit = await caches.default.match(ek); if (hit) { const v = await hit.json(); if (v && v.pages && Date.now() - Date.parse(v.at) < 3600e3) { SDM = { t: Date.parse(v.at), v }; return v; } } } catch (e) {}
+  const pages = []; for (let i = 0; i < SD_PAGES.length; i += 4) pages.push(...await Promise.all(SD_PAGES.slice(i, i + 4).map(one)));   // n40 k50: 4 self-requests at a time (17 at once could exceed the isolate's limits)
+  const v = { at: new Date().toISOString(), pages }; SDM = { t: Date.now(), v };
+  try { await caches.default.put(ek, new Response(JSON.stringify(v), { headers: { 'content-type': 'application/json', 'cache-control': 'max-age=3600' } })); } catch (e) {}
+  return v;
 }
 export async function sdSection() {
   let d; try { d = await sdLive(); } catch (e) { return ''; }
@@ -654,12 +658,12 @@ export async function sdSection() {
   return h2($q.qw, $q.qx) + $q.qy + esc(longDate(d.at.slice(0, 10))) + ' ' + esc(d.at.slice(11, 16)) + $q.qz + ok + ' of ' + d.pages.length + $q.qA + n + $s.k81 +
     tableWrap(['Page', $q.qB, 'Nodes', $q.qC, $q.qD], d.pages.map(x => $q.aR + esc(x.p) + $q.qE + esc(x.p) + $q.qF + x.blocks + $q.aT + x.nodes + $q.aT + esc(Object.entries(x.types).sort((a, b) => b[1] - a[1]).slice(0, 4).map(e => e[0]).join(', ')) + $q.aT + (x.issues.length ? '<b>' + esc(x.issues.join('; ')) + '</b>' : 'pass') + $q.aU));
 }
-async function pSeo(env, B) {
-  const audit = await file(env, $q.mk), cnt = await sitemaps(env, B, 'stats'), lh = await file(env, $q.qG), inow = await file(env, $q.qH), daily = await file(env, $q.qI);
+async function pSeo(env, B) {   // n40 k50: sitemap counts and the other modules' sitemap sizes kept 10 minutes per isolate (the page rebuilt them on every view)
+  const ck = B.d.updated + '|' + B.N.all.length, cm = MEMO.__seoCnt, audit = await file(env, $q.mk), cnt = cm && cm.k === ck && Date.now() - cm.t < 600000 ? cm.v : (MEMO.__seoCnt = { k: ck, t: Date.now(), v: await sitemaps(env, B, 'stats') }).v, lh = await file(env, $q.qG), inow = await file(env, $q.qH), daily = await file(env, $q.qI);
   const total = Object.values(cnt).reduce((a, b) => a + b, 0);
   let body = $q.he + fmt(total) + $s.k82 + (audit ? $q.qJ + esc(audit.generated_at) + ': ' + fmt(audit.summary.crawled) + $q.qK + (audit.summary.in_sitemaps ? ' of ' + fmt(audit.summary.in_sitemaps) + $q.qL : '') + ', ' + fmt(audit.summary.indexable) + $q.qM + fmt(audit.summary.schema_valid_pages) + $q.qN + (audit.indexable_estimate_all ? $q.qO + fmt(audit.indexable_estimate_all) + $q.qP : '') + '.' : $q.qQ) + $s.k83;
   const extN = await Promise.all(EXT_MAPS.map(async x => { const m = MEMO['__ext' + x]; if (m && m.v) return [x, m.v]; if (!B.inner) return [x, null];
-    try { const v = await Promise.race([B.inner(x).then(r => r && r.ok ? r.text() : '').then(t => t ? { n: (t.match(/<url>/g) || []).length, last: null } : null), new Promise(r => setTimeout(() => r(null), 2500))]); return [x, v]; } catch (e) { return [x, null]; } }));   // n29t (item 50): the sitemaps other modules publish, with their URL counts when read
+    try { const v = await Promise.race([B.inner(x).then(r => r && r.ok ? r.text() : '').then(t => t ? { n: (t.match(/<url>/g) || []).length, last: null } : null), new Promise(r => setTimeout(() => r(null), 2500))]); if (v) MEMO['__ext' + x] = { t: Date.now(), v }; return [x, v]; } catch (e) { return [x, null]; } }));   // n29t (item 50): the sitemaps other modules publish, with their URL counts when read
   body += h2($q.qR, $q.qS) + tableWrap([$q.qT, 'URLs'], Object.entries(cnt).map(([k, v]) => $q.cW + (v ? $q.qU + k + $q.qV + k + '</a>' : k) + $q.aT + v + $q.aU).concat(extN.map(([x, v]) => $q.aR + x + '">' + x.replace(/^\//, '').replace(/\/sitemap\.xml$/, '') + $q.aS + (v && v.n != null ? v.n : $q.qW) + $q.aU)));
   if (audit) {
     const s = audit.summary;
@@ -712,7 +716,7 @@ export async function handle(req, u, env, ctx, shell, inner) {
   if (p === '/' + INDEXNOW_KEY + '.txt') return new Response(INDEXNOW_KEY, { headers: { 'content-type': $q.qe, 'cache-control': $q.tI } });
   if (p === $q.tJ) return lastmodRoute(env);   // batch 15: true lastmod state (published as /data/lastmod.json by the SEO workflow)
   if (/^\/(countries|rankings|vs|new|embed\/(delay|project|widgets)|engineering\/seo|press\/delivery-index)(\/[^?#.]*)?$/.test(p) && !p.endsWith('/')) return new Response(null, { status: 301, headers: { location: p + '/' + u.search } });
-  const ckey = req.method === 'GET' && (!u.search || [...u.searchParams.keys()].every(k => /^(utm_[a-z_]+|gclid|gbraid|wbraid|fbclid|msclkid|mc_[a-z]+|igshid|ref|_ga)$/i.test(k) || (k === 'p' && /^\d{1,3}$/.test(u.searchParams.get('p'))))) && env && env.CF_PAGES_COMMIT_SHA && /^\/(countries|rankings|vs|new|press\/delivery-index|embed\/widgets)\//.test(p) && typeof caches !== $q.tK ? new Request(SITE + $q.tL + env.CF_PAGES_COMMIT_SHA + p + (u.searchParams.get('p') ? '?p=' + u.searchParams.get('p') : '')) : null;
+  const ckey = req.method === 'GET' && (!u.search || [...u.searchParams.keys()].every(k => /^(utm_[a-z_]+|gclid|gbraid|wbraid|fbclid|msclkid|mc_[a-z]+|igshid|ref|_ga)$/i.test(k) || (k === 'p' && /^\d{1,3}$/.test(u.searchParams.get('p'))))) && env && env.CF_PAGES_COMMIT_SHA && /^\/(countries|rankings|vs|new|press\/delivery-index|embed\/widgets|engineering\/seo)\//.test(p) && typeof caches !== $q.tK ? new Request(SITE + $q.tL + env.CF_PAGES_COMMIT_SHA + p + (u.searchParams.get('p') ? '?p=' + u.searchParams.get('p') : '')) : null;
   if (ckey) { try { const hit = await caches.default.match(ckey); if (hit) { const h = new Headers(hit.headers); h.set($q.tM, 'hit'); h.set($q.aJ, $q.tN); return new Response(hit.body, { status: hit.status, headers: h }); } } catch (e) {} }
   let B; try { B = await base(env, inner); } catch (e) { return new Response($q.tO, { status: 503, headers: { 'retry-after': '60', 'content-type': $q.tP } }); }
   if (p === $q.pT) { B.inner = inner; B.ctx = ctx; return sitemaps(env, B, 'index'); }
