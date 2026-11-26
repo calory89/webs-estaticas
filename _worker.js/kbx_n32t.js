@@ -17,12 +17,12 @@ const ORIGIN = 'https://kolaboro.com';
 const L7 = ['es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'], LANGS = ['en'].concat(L7);
 const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar-u-nu-latn' };   // Arabic with Latin digits, as the rest of the site
 export const N32T_V = 'n32t10';   // n32t10: hub styles pruned to the classes used (n40 k43); n32t9: how-to-check titles in the h1 wording (n40 k43); n32t8: rebuilt from the current English page (n40 k39); n32t7: country titles with the permit share, and the translated country page cache key (index.js __seoc/n31b.<v>) follows this version (n40 k39); n32t6: country pages (n40 k35); n32t5: numbers in the page locale on the server (n38 d5)
-export const PATHS = /^\/(?:es|de|fr|nl|ru|zh|ar)\/(?:tools\/[a-z-]{3,30}|new|vs|m|registers|countries\/[a-z0-9-]{2,60}\/(?:how-to-check|is-it-safe|buyer-protection-law)|rankings\/(?:most-delayed(?:\/[a-z0-9-]{2,60})?|changed-promises)|report\/state-of-off-plan-2026|guides\/(?:off-plan-payments|bali-land-titles|contract-clauses|questions-to-ask-a-developer)|courts|developers\/benchmark|transparency-index|index\/(?:delays|prices)|compare\/markets|bali|dubai|phuket|tulum|algarve|lombok)\/?$/;
+export const PATHS = /^\/(?:es|de|fr|nl|ru|zh|ar)\/(?:tools\/[a-z-]{3,30}|new|vs|m|registers|countries\/[a-z0-9-]{2,60}\/(?:how-to-check|is-it-safe|buyer-protection-law|delayed-handover)|rankings\/(?:most-delayed(?:\/[a-z0-9-]{2,60})?|changed-promises)|report\/state-of-off-plan-2026|guides\/(?:off-plan-payments|bali-land-titles|contract-clauses|questions-to-ask-a-developer)|courts|developers\/benchmark|transparency-index|index\/(?:delays|prices)|compare\/markets|bali|dubai|phuket|tulum|algarve|lombok)\/?$/;
 const SOP = 'report/state-of-off-plan-2026';
 export const EN_RX = /^\/(?:tools\/[a-z-]{3,30}|new|vs|m|registers)\/$/;
 // n40 L1: the country guides and the delay rankings (kbx_seo.js) share one dictionary per language, /data/n32t/<lang>/guides.json, on top of the registers one
 // n40 L2: the buyer-protection-law pages: guides.json plus /data/n32t/<lang>/law.json (the rule texts), listed as 'law' in the manifest
-const FAM = k => /^countries\/[a-z0-9-]+\/buyer-protection-law$/.test(k) ? 'law' : /^countries\/[a-z0-9-]+$/.test(k) ? 'country' : /^(?:countries\/[a-z0-9-]+\/(?:how-to-check|is-it-safe)|rankings\/most-delayed(?:\/[a-z0-9-]+)?)$/.test(k) ? 'guides' : k === 'rankings/changed-promises' ? 'changed-promises' : null;
+const FAM = k => /^countries\/[a-z0-9-]+\/(?:buyer-protection-law|delayed-handover)$/.test(k) ? 'law' : /^countries\/[a-z0-9-]+$/.test(k) ? 'country' : /^(?:countries\/[a-z0-9-]+\/(?:how-to-check|is-it-safe)|rankings\/most-delayed(?:\/[a-z0-9-]+)?)$/.test(k) ? 'guides' : k === 'rankings/changed-promises' ? 'changed-promises' : null;
 const pre = l => l === 'en' ? '' : '/' + l;
 const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
@@ -55,7 +55,7 @@ async function placeKeys(env) {
   if (ck) { try { await caches.default.put(ck, new Response(JSON.stringify({ c: v.c, m: v.m }), { headers: { 'content-type': 'application/json', 'cache-control': 'public, max-age=3600' } })); } catch (e) {} }
   return (PK = v);
 }
-const FIXED = /^\/(?:|countries\/[a-z0-9-]+\/(?:how-to-check|is-it-safe|buyer-protection-law)\/|rankings\/most-delayed\/(?:[a-z0-9-]+\/)?|check\/?|pricing\/|how-we-score\/|about\/|checklist\/|database\/|cases\/|apply\/|tools\/|glossary\/|docs\/|projects\/(?:[a-z0-9-]{1,90}\/)?|developers\/(?:[a-z0-9-]{1,90}\/)?|countries\/|rankings\/(?:[a-z0-9-]{2,60}\/)?|guides\/buyers-from\/(?:[a-z]+\/)?|guides\/buying-off-plan\/(?:[a-z0-9-]+\/)?|reports\/month\/|satellite\/monthly\/|watch\/new-websites\/|app\/)$/;
+const FIXED = /^\/(?:|countries\/[a-z0-9-]+\/(?:how-to-check|is-it-safe|buyer-protection-law|delayed-handover)\/|rankings\/most-delayed\/(?:[a-z0-9-]+\/)?|check\/?|pricing\/|how-we-score\/|about\/|checklist\/|database\/|cases\/|apply\/|tools\/|glossary\/|docs\/|projects\/(?:[a-z0-9-]{1,90}\/)?|developers\/(?:[a-z0-9-]{1,90}\/)?|countries\/|rankings\/(?:[a-z0-9-]{2,60}\/)?|guides\/buyers-from\/(?:[a-z]+\/)?|guides\/buying-off-plan\/(?:[a-z0-9-]+\/)?|reports\/month\/|satellite\/monthly\/|watch\/new-websites\/|app\/)$/;
 function locHref(h, lang, LS) {
   if (!/^\/(?!\/)/.test(h) || /^\/(?:es|de|fr|nl|ru|zh|ar)\//.test(h)) return h;
   const i = h.search(/[?#]/), p = i < 0 ? h : h.slice(0, i);
@@ -158,7 +158,7 @@ async function render(env, lang, key, D, body, shTxt, extra) {
     const cr = [...((/<p class="crumb">([\s\S]*?)<\/p>/.exec(body) || [])[1] || '').matchAll(/<a href="([^"]+)">([^<]+)<\/a>/g)].map(m => [dec(m[2]), ORIGIN + m[1]]).concat([[D.h || D.t, canon]]);
     const fq = [...body.matchAll(/<details><summary>([^<]+)<\/summary><p>([^<]+)<\/p><\/details>/g)].map(m => ({ '@type': 'Question', name: dec(m[1]), acceptedAnswer: { '@type': 'Answer', text: dec(m[2]) } }));
     if (extra && extra.il) ld['@graph'][0].mainEntity = extra.il;
-    ld['@graph'] = [Object.assign(ld['@graph'][0], { '@type': /^(?:rankings|countries)\//.test(key) && !/\/(?:how-to-check|is-it-safe|buyer-protection-law)$/.test(key) ? 'CollectionPage' : 'WebPage' }), { '@type': 'BreadcrumbList', itemListElement: cr.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c[0], item: c[1] })) }].concat(fq.length ? [{ '@type': 'FAQPage', mainEntity: fq }] : []);
+    ld['@graph'] = [Object.assign(ld['@graph'][0], { '@type': /^(?:rankings|countries)\//.test(key) && !/\/(?:how-to-check|is-it-safe|buyer-protection-law|delayed-handover)$/.test(key) ? 'CollectionPage' : 'WebPage' }), { '@type': 'BreadcrumbList', itemListElement: cr.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c[0], item: c[1] })) }].concat(fq.length ? [{ '@type': 'FAQPage', mainEntity: fq }] : []);
   }
   const pg = { title: D.t + (q ? ' (' + q.slice(3) + ')' : '') + ([...D.t].length > 49 && FAM(key) ? '' : ' | Kolaboro'), desc: D.d, canon, body, alt, ld, noindex: !!q };
   let html = await N.assemble(pg, lang, new Response(shTxt));
