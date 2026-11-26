@@ -9,7 +9,7 @@ import { TB } from './kbx_strings.js';
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' };
-export const PATHS = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:stories|changes)(?:\/.*)?$|^\/embed\/(?:card|tracker|badge|p)\/.*$|^\/answers\/[a-z0-9-]{1,90}\.md$|^\/llms-projects\.txt$|^\/(?:es|de|fr|nl|ru|zh|ar)\/llms\.txt$|^\/llms\/[a-z0-9-]{2,60}\.txt$|^\/llms-full\/[a-z0-9-]{2,60}\.txt$/;
+export const PATHS = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:stories|changes)(?:\/.*)?$|^\/embed\/(?:card|tracker|badge|p|developer)\/.*$|^\/answers\/[a-z0-9-]{1,90}\.md$|^\/llms-projects\.txt$|^\/(?:es|de|fr|nl|ru|zh|ar)\/llms\.txt$|^\/llms\/[a-z0-9-]{2,60}\.txt$|^\/llms-full\/[a-z0-9-]{2,60}\.txt$/;
 const MIN_STORY = 8;
 const esc = N.esc, pre = N.pre;
 const t = (lang, k, v) => { const s = (S[lang] && S[lang][k]) || S.en[k] || k; return v ? s.replace(/\{(\w+)\}/g, (m, x) => v[x] != null ? v[x] : m) : s; };
@@ -342,6 +342,15 @@ for (const [p, d] of entries) for (const l of LANGS) out.push('<url><loc>' + ORI
 return TB.kbx_cite__s.k13 + out.join('') + '</urlset>';
 }
 const txt = (body, type, extra) => new Response(body, { headers: Object.assign({ 'content-type': type, 'cache-control': 'public, max-age=900', 'access-control-allow-origin': '*', 'x-content-type-options': 'nosniff' }, extra || {}) });
+function eDev(X, d, lang) {   // n40 k45 (R03-18): developer delivery record widget, from the tracked projects (strings dw_* in kbx_cite_i18n.json)
+const L = d.ids.map(i => X.ix.byId.get(i)).filter(x => x && X.rev(x)), cs = x => X.ix.caseBy.get(x.id) || {}, o = x => (X.ontime && X.ontime.projects || {})[x.id] || {};
+const open = L.filter(x => cs(x).stage !== 'completed' && !/^(done_|completed)/.test(o(x).s || '')), lt = open.map(x => ({ x, l: late(X, x) })).filter(e => e.l), past = lt.filter(e => e.l.late > 0).sort((a, b) => b.l.late - a.l.late);
+const of = (a, b) => t(lang, 'dw_of', { a: num(a, lang), b: num(b, lang) }), dUrl = ORIGIN + pre(lang) + '/developers/' + d.s + '/';
+const rows = [[t(lang, 'dw_n'), num(L.length, lang)], [t(lang, 'dw_done'), of(L.filter(x => cs(x).stage === 'completed').length, L.length)], [t(lang, 'dw_late'), of(past.length, lt.length)], [t(lang, 'dw_moved'), of(L.filter(x => o(x).moved > 0).length, L.length)]];
+let b = '<p class="h">' + esc(d.n) + '</p><p class="s">' + esc(t(lang, 'dw_h')) + '</p><dl>' + rows.map(r => '<dt>' + esc(r[0]) + '</dt><dd>' + esc(r[1]) + '</dd>').join('') + '</dl>';
+b += past.length ? '<ol>' + past.slice(0, 5).map(e => '<li><a href="' + pUrl(lang, e.x) + '" target="_blank" rel="noopener">' + esc(e.x.n) + '</a> <span class="s">(' + esc(t(lang, 't_past', { m: e.l.late })) + ')</span></li>').join('') + '</ol>' : lt.length ? '' : '<p class="s">' + esc(t(lang, 'dw_none')) + '</p>';
+return embedPage(lang, d.n + ': ' + t(lang, 'dw_h'), b + '<p class="f">' + esc(t(lang, 'checked', { d: N.fd(X.ix.updated, lang) })) + '. <a href="' + dUrl + '" target="_blank" rel="noopener">' + esc(t(lang, 'dw_open')) + '</a>. ' + esc(t(lang, 'dw_cite')) + '</p>', ORIGIN + '/embed/developer/' + d.s + '/');
+}
 const nf = () => new Response('Not found', { status: 404, headers: { 'content-type': 'text/plain; charset=utf-8', 'cache-control': 'public, max-age=300' } });
 export async function handle(req, u, env, ctx, shell) {
 const p = u.pathname;
@@ -354,6 +363,11 @@ if (!m[3]) return new Response(null, { status: 301, headers: { location: p + '/'
 const x = X.ix.bySlug.get(m[2]); if (!x) return nf();
 const lang = langOf(u), html = m[1] === 'card' ? eCard(X, x, lang) : m[1] === 'tracker' ? eTracker(X, x, lang) : codesPage(X, x, lang, await verifiedReply(x, ctx));
 return new Response(html, { headers: { 'content-type': 'application/xhtml+xml; charset=utf-8', 'cache-control': 'public, max-age=900, no-transform', 'x-robots-tag': 'noindex, follow' } });
+}
+if ((m = /^\/embed\/developer\/([a-z0-9-]{1,90})(\/?)$/.exec(p))) {
+if (!m[2]) return new Response(null, { status: 301, headers: { location: p + '/' + u.search } });
+const d = X.ix.devs.get(m[1]); if (!d || !d.ids.some(i => X.ix.byId.get(i) && X.rev(X.ix.byId.get(i)))) return nf();
+return new Response(eDev(X, d, langOf(u)), { headers: { 'content-type': 'application/xhtml+xml; charset=utf-8', 'cache-control': 'public, max-age=900, no-transform', 'x-robots-tag': 'noindex, follow' } });
 }
 if ((m = /^\/embed\/badge\/([a-z0-9-]{1,90})\.svg$/.exec(p))) {
 const x = X.ix.bySlug.get(m[1]); if (!x) return nf();
