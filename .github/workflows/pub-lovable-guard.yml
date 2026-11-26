@@ -1,0 +1,44 @@
+name: pub-lovable-guard
+# Every 5 minutes: if a publish from a stale checkout dropped any site folder
+# from pub/_lovable (the branch Cloudflare Pages "web-lovable" serves for ~59
+# domains), put the missing folders back from main:sites/_lovable/_s.
+# Added 26-nov-2026 after two stale republishes took 8+ sites offline (16:06 and 16:13 CET).
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: pub-lovable-guard
+  cancel-in-progress: false
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Restore missing site folders
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          git init -q g && cd g
+          git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git config user.name "pub-lovable-guard"
+          git config user.email "actions@github.com"
+          git fetch -q --depth=1 --filter=blob:none origin main pub/_lovable
+          M=$(git rev-parse origin/main)
+          P=$(git rev-parse origin/pub/_lovable)
+          git ls-tree --name-only "$M:sites/_lovable/_s" | sort > want.txt
+          git ls-tree --name-only "$P:_s" | sort > have.txt
+          comm -23 want.txt have.txt > missing.txt
+          if [ ! -s missing.txt ]; then echo "OK: all $(wc -l < want.txt) site folders present"; exit 0; fi
+          echo "Missing from pub/_lovable:"; cat missing.txt
+          git read-tree "$P"
+          while read -r d; do
+            git read-tree --prefix="_s/$d/" "$M:sites/_lovable/_s/$d"
+          done < missing.txt
+          T=$(git write-tree)
+          C=$(echo "pub-lovable-guard: restore $(wc -l < missing.txt) site folder(s) dropped by a stale publish: $(tr '\n' ' ' < missing.txt)" | git commit-tree "$T" -p "$P")
+          git push -q origin "$C:refs/heads/pub/_lovable"
+          echo "Restored: $(tr '\n' ' ' < missing.txt)" >> "$GITHUB_STEP_SUMMARY"
