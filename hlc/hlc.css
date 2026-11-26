@@ -409,3 +409,19 @@ html{scroll-padding-top:84px}
  .h2-lead{font-size:16px;margin-bottom:16px}
  .h2-proof{margin-bottom:12px}
 }
+
+/* ───── 26-nov-2026: zonas de toque de 44 px ──────────────────────────────────
+   Medido con Chromium a 390 px: el indice de las guias tenia enlaces de 28 px
+   de alto, los botones del aviso de cookies 38-40 px y "Configurar", "Mas
+   info" y "Preferencias de cookies" entre 15 y 24 px. 44 px es el minimo que
+   recomiendan Apple y las WCAG (2.5.8). */
+.g-toc a{display:flex;align-items:center;min-height:44px;padding:0}
+.g-toc li{margin:0}
+.hlc-ck .hlc-btn{min-height:44px!important}
+.hlc-ck .ck-cfg,.ck-re{min-height:44px;padding:11px 2px;display:inline-flex;align-items:center}
+.hlc-ck p a{padding-block:11px}
+.fx a{padding-block:11px!important}
+.qf input[type=email]{min-height:44px}
+.consent input,.hlc-ck .ck-opts input,.qf-ok input{min-width:24px;min-height:24px}
+.consent,.qf-ok{min-height:44px}
+@media (max-width:860px){.mapx-reg button{min-height:44px}}

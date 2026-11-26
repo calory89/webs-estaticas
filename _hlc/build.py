@@ -7,7 +7,7 @@ from urllib.parse import unquote
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import bk as BK
 
-V = '51'
+V = '52'
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 files = subprocess.run(['git', 'ls-files', '-co', '--exclude-standard', '-z', '*.html'], capture_output=True).stdout.decode().split('\0')
@@ -422,6 +422,26 @@ def related_block(t):
 _DCI = re.compile(r'<div class="dc-img" style="background-image:url\(\'([^\']+)\'\),(linear-gradient\([^)]*\))">')
 
 
+def hero_preload(t):
+    """La home pedia con preload /hlc/img/cities/lisboa.jpg (339 KB, la descarga
+    mas pesada de la pagina) y esa imagen no se muestra: la home ensena las fotos
+    de los chollos del dia, que son las -800.jpg. 339 KB tirados, y con prioridad
+    alta, por delante de la imagen que si se ve. Se apunta el preload a la
+    primera foto que la pagina usa de verdad; si no hay ninguna, se quita."""
+    m = re.search(r'<link rel="preload" as="image" href="(/hlc/img/cities/[^"]+)">', t)
+    if not m:
+        return t
+    body = t[t.find('<body'):]
+    real = re.search(r'/hlc/img/cities/[a-z0-9-]+-800\.jpg', body)
+    if not real:
+        real = re.search(r'/hlc/img/cities/[a-z0-9-]+\.jpg', body)
+    if not real:
+        return t.replace(m.group(0), '')
+    if real.group(0) == m.group(1):
+        return t
+    return t.replace(m.group(0), f'<link rel="preload" as="image" href="{real.group(0)}" fetchpriority="high">')
+
+
 def lazy_cards(t):
     """Tarjetas de chollo: las 4 primeras con foto inmediata, el resto se cargan al acercarse (hlc.js lazyBg)."""
     n = [0]
@@ -477,6 +497,7 @@ for f in files:
     t = lazy_cards(related_block(legacy_seo(t)))
     t = expired_noindex(t, f)
     t = short_title(t)
+    t = hero_preload(t)
     if '—' in t and not re.search(r'[\u4e00-\u9fff]', t):
         t = dash_all(t)
     # búsquedas de hoteles en Booking con dest_id (solo ?ss= da error a muchos usuarios)
@@ -497,7 +518,7 @@ for f in subprocess.run(['git', 'ls-files', '-co', '--exclude-standard', '-z', '
         s0 = open(f, encoding='utf-8', errors='surrogateescape').read()
         s1 = BK.fix_html(s0) if 'searchresults' in s0 else s0
         s1 = BK.fix_gyg(s1, 'en') if ('17288984' in s1 or '17322565' in s1) else s1
-        s1 = short_title(lazy_cards(s1))
+        s1 = hero_preload(short_title(lazy_cards(s1)))
         if '—' in s1:
             s1 = dash_all(s1)
         if s1 != s0:

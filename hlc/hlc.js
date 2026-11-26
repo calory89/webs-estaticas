@@ -565,3 +565,19 @@ document.documentElement.classList.add('hlc-js');
     try{if(window.dataLayer)window.dataLayer.push({event:'hlc_404_sug',dest:x.s});}catch(e){}
   }).catch(function(){});
 })();
+
+/* ───── Enlace de salto al contenido (26-nov-2026) ───────────────────────────
+   El CSS trae la clase .skip desde hace meses y ninguna pagina la usaba: quien
+   navega con teclado tenia que pasar por la cabecera entera en cada pagina. Se
+   pone aqui, en vez de en cada generador, para que lo tengan todas. */
+(function(){
+  try{
+    var b=document.body; if(!b||document.querySelector('a.skip'))return;
+    var m=document.querySelector('main'); if(!m)return;
+    if(!m.id)m.id='main';
+    var en=/^\/en(\/|$)/.test(location.pathname);
+    var a=document.createElement('a');
+    a.className='skip'; a.href='#'+m.id; a.textContent=en?'Skip to content':'Saltar al contenido';
+    b.insertBefore(a,b.firstChild);
+  }catch(e){}
+})();
