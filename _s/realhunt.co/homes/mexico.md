@@ -9,8 +9,8 @@ List last changed 5 October 2026. Jump to the homes
 
 ### Three picks from this list
 
-- [Best score€50,5752-bed apartment in San Pedro Tlaquepaque, JaliscoSan Pedro Tlaquepaque, Jalisco49 m² · 2 bed · €1,032/m² · 64 days on RealHunt](https://realhunt.co/deal/san-pedro-tlaquepaque-50575)
-- [Cheapest€68,9843-bed apartment in Cuautlancingo, PueblaCuautlancingo, Puebla78 m² · 3 bed · €884/m² · 64 days on RealHunt](https://realhunt.co/deal/cuautlancingo-68984)
+- [Best score€50,5752-bed apartment in San Pedro Tlaquepaque, JaliscoSan Pedro Tlaquepaque, Jalisco49 m² · 2 bed · €1,032/m² · 64 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/san-pedro-tlaquepaque-50575)
+- [Cheapest€68,9843-bed apartment in Cuautlancingo, PueblaCuautlancingo, Puebla78 m² · 3 bed · €884/m² · 64 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/cuautlancingo-68984)
 - [Most space for the money€70,8052-bed house in Tonalá, JaliscoTonalá, Jalisco65 m² · 2 bed · €1,089/m² · 64 days on RealHunt](https://realhunt.co/deal/tonala-70805)
 
 RealHunt lists 9 apartments for sale in Mexico today, priced from €50,575 to €98,621. The cheapest costs €50,575: [2-bed apartment in San Pedro Tlaquepaque, Jalisco](https://realhunt.co/deal/san-pedro-tlaquepaque-50575), in San Pedro Tlaquepaque (49 m², 2 bedrooms). The median price is €83,298 (€1,140/m²), against €93,200 (€1,206/m²) for the 726 homes on RealHunt in 24 countries.
@@ -50,15 +50,15 @@ Data of
 
 Sorted by RealHunt score, best first. For the cheapest first, see the table below: tap a heading such as Price to sort it. [All homes by the sea](https://realhunt.co/homes/mexico/by-the-sea) [See these homes on the map](https://realhunt.co/map?country=Mexico)
 
-- [Score 93€50,5752-bed apartment in San Pedro Tlaquepaque, JaliscoSan Pedro Tlaquepaque, Jalisco49 m² · 2 bed · €1,032/m² · 64 days on RealHunt49 m², 2 bed.](https://realhunt.co/deal/san-pedro-tlaquepaque-50575)
-- [Score 90€80,9203-bed apartment near the beach in Mazatlán, SinaloaMazatlán, Sinaloa71 m² · 3 bed · €1,140/m² · 64 days on RealHunt71 m², 3 bed, 2 bath.](https://realhunt.co/deal/mazatlan-80920)
+- [Score 93€50,5752-bed apartment in San Pedro Tlaquepaque, JaliscoSan Pedro Tlaquepaque, Jalisco49 m² · 2 bed · €1,032/m² · 64 days on RealHuntCommunity fee not stated49 m², 2 bed.](https://realhunt.co/deal/san-pedro-tlaquepaque-50575)
+- [Score 90€80,9203-bed apartment near the beach in Mazatlán, SinaloaMazatlán, Sinaloa71 m² · 3 bed · €1,140/m² · 64 days on RealHuntCommunity fee not stated71 m², 3 bed, 2 bath.](https://realhunt.co/deal/mazatlan-80920)
 - [Score 89€70,8052-bed house in Tonalá, JaliscoTonalá, Jalisco65 m² · 2 bed · €1,089/m² · 64 days on RealHunt65 m², 2 bed.](https://realhunt.co/deal/tonala-70805)
-- [Score 87€68,9843-bed apartment in Cuautlancingo, PueblaCuautlancingo, Puebla78 m² · 3 bed · €884/m² · 64 days on RealHunt78 m², 3 bed, 2 bath.](https://realhunt.co/deal/cuautlancingo-68984)
-- [Score 86€86,100New 2-bed condo with rooftop and terrace in Mazatlán, ready nowMazatlán, Sinaloa68 m² · 2 bed · €1,266/m² · 52 days on RealHuntA 68 m² apartment in La Rocca, a gated complex of eight towers on Av.](https://realhunt.co/deal/mx-mazatlan-86k-809756)
-- [Score 86€98,6212-bed apartment in Mazatlán, SinaloaMazatlán, Sinaloa89 m² · 2 bed · €1,108/m² · 64 days on RealHuntAn 89 m² apartment with two bedrooms and two bathrooms in Mazatlán, Sinaloa.](https://realhunt.co/deal/mazatlan-98621)
-- [Score 86€83,2982-bed apartment in Mazatlán, SinaloaMazatlán, Sinaloa60 m² · 2 bed · €1,388/m² · 64 days on RealHunt60 m², 2 bed.](https://realhunt.co/deal/mazatlan-83298)
-- [Score 84€97,1002-bed, 2-bath apartment with pool in a gated Mazatlán complexMazatlán, Sinaloa65 m² · 2 bed · €1,494/m² · 52 days on RealHuntA 65 m² apartment in Adora Residencial, a private gated community in Mazatlán: two bedrooms, two bathrooms and covered parking, with a pool…](https://realhunt.co/deal/mx-mazatlan-97k-889034)
-- [Score 84€83,4482-bed apartment in Mazatlán, SinaloaMazatlán, Sinaloa60 m² · 2 bed · €1,391/m² · 64 days on RealHuntA 60 m² two-bedroom apartment in Mazatlán, Sinaloa.](https://realhunt.co/deal/mazatlan-83448)
+- [Score 87€68,9843-bed apartment in Cuautlancingo, PueblaCuautlancingo, Puebla78 m² · 3 bed · €884/m² · 64 days on RealHuntCommunity fee not stated78 m², 3 bed, 2 bath.](https://realhunt.co/deal/cuautlancingo-68984)
+- [Score 86€86,100New 2-bed condo with rooftop and terrace in Mazatlán, ready nowMazatlán, Sinaloa68 m² · 2 bed · €1,266/m² · 52 days on RealHuntCommunity fee not statedA 68 m² apartment in La Rocca, a gated complex of eight towers on Av.](https://realhunt.co/deal/mx-mazatlan-86k-809756)
+- [Score 86€98,6212-bed apartment in Mazatlán, SinaloaMazatlán, Sinaloa89 m² · 2 bed · €1,108/m² · 64 days on RealHuntCommunity fee not statedAn 89 m² apartment with two bedrooms and two bathrooms in Mazatlán, Sinaloa.](https://realhunt.co/deal/mazatlan-98621)
+- [Score 86€83,2982-bed apartment in Mazatlán, SinaloaMazatlán, Sinaloa60 m² · 2 bed · €1,388/m² · 64 days on RealHuntCommunity fee not stated60 m², 2 bed.](https://realhunt.co/deal/mazatlan-83298)
+- [Score 84€97,1002-bed, 2-bath apartment with pool in a gated Mazatlán complexMazatlán, Sinaloa65 m² · 2 bed · €1,494/m² · 52 days on RealHuntCommunity fee not statedA 65 m² apartment in Adora Residencial, a private gated community in Mazatlán: two bedrooms, two bathrooms and covered parking, with a pool…](https://realhunt.co/deal/mx-mazatlan-97k-889034)
+- [Score 84€83,4482-bed apartment in Mazatlán, SinaloaMazatlán, Sinaloa60 m² · 2 bed · €1,391/m² · 64 days on RealHuntCommunity fee not statedA 60 m² two-bedroom apartment in Mazatlán, Sinaloa.](https://realhunt.co/deal/mazatlan-83448)
 
 ### Compare the 9 homes, cheapest first
 
@@ -111,6 +111,7 @@ General information, not tax or legal advice. Figures checked in 2026.
 
 ### What to watch out for
 
+- 8 are in a shared building or complex but the listing does not state the community fee: ask for it in writing.
 - 1 of 9 sits where our rough flood check reads medium or high. Each home page links the official flood map.
 - 7 of 9 were added more than 60 days ago. Ask the agent whether they are still for sale before you plan a trip.
 - As a group these homes score lowest on space (35/100 on average) and highest on good-weather days (100/100).
@@ -152,7 +153,7 @@ In pounds and dollars [Under $100,000 7](https://realhunt.co/cheap-houses/under-
 
 Neighbouring countries [United States 61](https://realhunt.co/homes/united-states)
 
-By country [Spain 150](https://realhunt.co/homes/spain) [Italy 87](https://realhunt.co/homes/italy) [United States 61](https://realhunt.co/homes/united-states) [France 48](https://realhunt.co/homes/france) [Denmark 46](https://realhunt.co/homes/denmark) [Sweden 41](https://realhunt.co/homes/sweden) [Japan 36](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 26](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Portugal 8](https://realhunt.co/homes/portugal) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Cyprus 6](https://realhunt.co/homes/cyprus) [United Kingdom 6](https://realhunt.co/homes/united-kingdom) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
+By country [Spain 151](https://realhunt.co/homes/spain) [Italy 87](https://realhunt.co/homes/italy) [United States 61](https://realhunt.co/homes/united-states) [France 47](https://realhunt.co/homes/france) [Denmark 46](https://realhunt.co/homes/denmark) [Sweden 41](https://realhunt.co/homes/sweden) [Japan 36](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 26](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Portugal 8](https://realhunt.co/homes/portugal) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [United Kingdom 6](https://realhunt.co/homes/united-kingdom) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
 
 How we choose these homes: a person reads every listing and checks its price, size, photos and place before it goes up, and the nightly check takes it off when the advert goes. [How we check homes](https://realhunt.co/how-we-check-homes) 0 of these 9 homes were checked against the original listing in the last 30 days.
 

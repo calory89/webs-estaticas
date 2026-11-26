@@ -9,8 +9,8 @@ Lista cambiada por última vez el 5 de octubre de 2026. Ir a las viviendas
 
 ### Tres de esta lista
 
-- [Mejor nota50.575 €Piso de 2 dormitorios en San Pedro Tlaquepaque, JaliscoSan Pedro Tlaquepaque, Jalisco49 m² · 2 dorm. · 1.032 €/m² · 64 días en RealHunt](https://realhunt.co/es/deal/san-pedro-tlaquepaque-50575)
-- [La más barata68.984 €Piso de 3 dormitorios en Cuautlancingo, PueblaCuautlancingo, Puebla78 m² · 3 dorm. · 884 €/m² · 64 días en RealHunt](https://realhunt.co/es/deal/cuautlancingo-68984)
+- [Mejor nota50.575 €Piso de 2 dormitorios en San Pedro Tlaquepaque, JaliscoSan Pedro Tlaquepaque, Jalisco49 m² · 2 dorm. · 1.032 €/m² · 64 días en RealHuntCuota de comunidad no indicada](https://realhunt.co/es/deal/san-pedro-tlaquepaque-50575)
+- [La más barata68.984 €Piso de 3 dormitorios en Cuautlancingo, PueblaCuautlancingo, Puebla78 m² · 3 dorm. · 884 €/m² · 64 días en RealHuntCuota de comunidad no indicada](https://realhunt.co/es/deal/cuautlancingo-68984)
 - [Más metros por el dinero70.805 €Casa de 2 dormitorios en Tonalá, JaliscoTonalá, Jalisco65 m² · 2 dorm. · 1.089 €/m² · 64 días en RealHunt](https://realhunt.co/es/deal/tonala-70805)
 
 RealHunt tiene hoy 9 pisos en venta en México, con precios de 50.575 € a 98.621 €. La más barata cuesta 50.575 €: [Piso de 2 dormitorios en San Pedro Tlaquepaque, Jalisco](https://realhunt.co/es/deal/san-pedro-tlaquepaque-50575), en San Pedro Tlaquepaque (49 m², 2 dormitorios). El precio mediano es de 83.298 € (1.140 €/m²), frente a 93.200 € (1.206 €/m²) de las 726 viviendas de RealHunt en 24 países.
@@ -50,15 +50,15 @@ Datos del
 
 Ordenadas por la nota de RealHunt, de mejor a peor. Para verlas de más barata a más cara, mira la tabla de abajo: toca un encabezado como Precio para ordenarla. [Todas las viviendas junto al mar](https://realhunt.co/es/homes/mexico/by-the-sea) [Ver estas viviendas en el mapa](https://realhunt.co/es/map?country=Mexico)
 
-- [Nota 9350.575 €Piso de 2 dormitorios en San Pedro Tlaquepaque, JaliscoSan Pedro Tlaquepaque, Jalisco49 m² · 2 dorm. · 1.032 €/m² · 64 días en RealHunt49 m², 2 dormitorios.](https://realhunt.co/es/deal/san-pedro-tlaquepaque-50575)
-- [Nota 9080.920 €Piso de 3 dormitorios cerca de la playa en Mazatlán, SinaloaMazatlán, Sinaloa71 m² · 3 dorm. · 1.140 €/m² · 64 días en RealHunt71 m², 3 dormitorios, 2 baños.](https://realhunt.co/es/deal/mazatlan-80920)
+- [Nota 9350.575 €Piso de 2 dormitorios en San Pedro Tlaquepaque, JaliscoSan Pedro Tlaquepaque, Jalisco49 m² · 2 dorm. · 1.032 €/m² · 64 días en RealHuntCuota de comunidad no indicada49 m², 2 dormitorios.](https://realhunt.co/es/deal/san-pedro-tlaquepaque-50575)
+- [Nota 9080.920 €Piso de 3 dormitorios cerca de la playa en Mazatlán, SinaloaMazatlán, Sinaloa71 m² · 3 dorm. · 1.140 €/m² · 64 días en RealHuntCuota de comunidad no indicada71 m², 3 dormitorios, 2 baños.](https://realhunt.co/es/deal/mazatlan-80920)
 - [Nota 8970.805 €Casa de 2 dormitorios en Tonalá, JaliscoTonalá, Jalisco65 m² · 2 dorm. · 1.089 €/m² · 64 días en RealHunt65 m², 2 dormitorios.](https://realhunt.co/es/deal/tonala-70805)
-- [Nota 8768.984 €Piso de 3 dormitorios en Cuautlancingo, PueblaCuautlancingo, Puebla78 m² · 3 dorm. · 884 €/m² · 64 días en RealHunt78 m², 3 dormitorios, 2 baños.](https://realhunt.co/es/deal/cuautlancingo-68984)
-- [Nota 8686.100 €Piso nuevo de 2 dormitorios con azotea y terraza en Mazatlán, entrega inmediataMazatlán, Sinaloa68 m² · 2 dorm. · 1.266 €/m² · 52 días en RealHuntPiso de 68 m² en La Rocca, conjunto cerrado de ocho torres en la Av.](https://realhunt.co/es/deal/mx-mazatlan-86k-809756)
-- [Nota 8698.621 €Piso de 2 dormitorios en Mazatlán, SinaloaMazatlán, Sinaloa89 m² · 2 dorm. · 1.108 €/m² · 64 días en RealHuntApartamento de 89 m² con dos dormitorios y dos baños en Mazatlán, Sinaloa.](https://realhunt.co/es/deal/mazatlan-98621)
-- [Nota 8683.298 €Piso de 2 dormitorios en Mazatlán, SinaloaMazatlán, Sinaloa60 m² · 2 dorm. · 1.388 €/m² · 64 días en RealHunt60 m², 2 dormitorios.](https://realhunt.co/es/deal/mazatlan-83298)
-- [Nota 8497.100 €Piso de 2 dormitorios y 2 baños con piscina en un residencial cerrado de MazatlánMazatlán, Sinaloa65 m² · 2 dorm. · 1.494 €/m² · 52 días en RealHuntPiso de 65 m² en Adora Residencial, urbanización privada y cerrada en Mazatlán: dos dormitorios, dos baños y aparcamiento cubierto, con piscina…](https://realhunt.co/es/deal/mx-mazatlan-97k-889034)
-- [Nota 8483.448 €Piso de 2 dormitorios en Mazatlán, SinaloaMazatlán, Sinaloa60 m² · 2 dorm. · 1.391 €/m² · 64 días en RealHuntApartamento de 60 m² con dos dormitorios en Mazatlán, Sinaloa.](https://realhunt.co/es/deal/mazatlan-83448)
+- [Nota 8768.984 €Piso de 3 dormitorios en Cuautlancingo, PueblaCuautlancingo, Puebla78 m² · 3 dorm. · 884 €/m² · 64 días en RealHuntCuota de comunidad no indicada78 m², 3 dormitorios, 2 baños.](https://realhunt.co/es/deal/cuautlancingo-68984)
+- [Nota 8686.100 €Piso nuevo de 2 dormitorios con azotea y terraza en Mazatlán, entrega inmediataMazatlán, Sinaloa68 m² · 2 dorm. · 1.266 €/m² · 52 días en RealHuntCuota de comunidad no indicadaPiso de 68 m² en La Rocca, conjunto cerrado de ocho torres en la Av.](https://realhunt.co/es/deal/mx-mazatlan-86k-809756)
+- [Nota 8698.621 €Piso de 2 dormitorios en Mazatlán, SinaloaMazatlán, Sinaloa89 m² · 2 dorm. · 1.108 €/m² · 64 días en RealHuntCuota de comunidad no indicadaApartamento de 89 m² con dos dormitorios y dos baños en Mazatlán, Sinaloa.](https://realhunt.co/es/deal/mazatlan-98621)
+- [Nota 8683.298 €Piso de 2 dormitorios en Mazatlán, SinaloaMazatlán, Sinaloa60 m² · 2 dorm. · 1.388 €/m² · 64 días en RealHuntCuota de comunidad no indicada60 m², 2 dormitorios.](https://realhunt.co/es/deal/mazatlan-83298)
+- [Nota 8497.100 €Piso de 2 dormitorios y 2 baños con piscina en un residencial cerrado de MazatlánMazatlán, Sinaloa65 m² · 2 dorm. · 1.494 €/m² · 52 días en RealHuntCuota de comunidad no indicadaPiso de 65 m² en Adora Residencial, urbanización privada y cerrada en Mazatlán: dos dormitorios, dos baños y aparcamiento cubierto, con piscina…](https://realhunt.co/es/deal/mx-mazatlan-97k-889034)
+- [Nota 8483.448 €Piso de 2 dormitorios en Mazatlán, SinaloaMazatlán, Sinaloa60 m² · 2 dorm. · 1.391 €/m² · 64 días en RealHuntCuota de comunidad no indicadaApartamento de 60 m² con dos dormitorios en Mazatlán, Sinaloa.](https://realhunt.co/es/deal/mazatlan-83448)
 
 ### Compara las 9 viviendas, de más barata a más cara
 
@@ -111,6 +111,7 @@ Información general, no asesoramiento fiscal ni legal. Datos revisados en 2026.
 
 ### En qué fijarse antes de comprar
 
+- 8 están en un edificio o una urbanización con gastos comunes, pero el anuncio no dice la cuota: pídela por escrito.
 - 1 de 9 está donde nuestra comprobación orientativa de inundación da riesgo medio o alto. La ficha de cada vivienda enlaza el mapa oficial.
 - 7 de 9 se añadieron hace más de 60 días. Pregunta a la agencia si siguen en venta antes de organizar un viaje.
 - En conjunto, estas viviendas puntúan más bajo en espacio (35/100 de media) y más alto en días de buen tiempo (100/100).
@@ -152,7 +153,7 @@ En libras y en dólares [Menos de 100.000 dólares 7](https://realhunt.co/es/che
 
 Países vecinos [Estados Unidos 61](https://realhunt.co/es/homes/united-states)
 
-Por país [España 150](https://realhunt.co/es/homes/spain) [Italia 87](https://realhunt.co/es/homes/italy) [Estados Unidos 61](https://realhunt.co/es/homes/united-states) [Francia 48](https://realhunt.co/es/homes/france) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Suecia 41](https://realhunt.co/es/homes/sweden) [Japón 36](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 26](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 16](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Portugal 8](https://realhunt.co/es/homes/portugal) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Chipre 6](https://realhunt.co/es/homes/cyprus) [Reino Unido 6](https://realhunt.co/es/homes/united-kingdom) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Uruguay 4](https://realhunt.co/es/homes/uruguay) [Irlanda 4](https://realhunt.co/es/homes/ireland) [Colombia 3](https://realhunt.co/es/homes/colombia) [República Checa 3](https://realhunt.co/es/homes/czech-republic)
+Por país [España 151](https://realhunt.co/es/homes/spain) [Italia 87](https://realhunt.co/es/homes/italy) [Estados Unidos 61](https://realhunt.co/es/homes/united-states) [Francia 47](https://realhunt.co/es/homes/france) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Suecia 41](https://realhunt.co/es/homes/sweden) [Japón 36](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 26](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 16](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Portugal 8](https://realhunt.co/es/homes/portugal) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Reino Unido 6](https://realhunt.co/es/homes/united-kingdom) [Chipre 5](https://realhunt.co/es/homes/cyprus) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Uruguay 4](https://realhunt.co/es/homes/uruguay) [Irlanda 4](https://realhunt.co/es/homes/ireland) [Colombia 3](https://realhunt.co/es/homes/colombia) [República Checa 3](https://realhunt.co/es/homes/czech-republic)
 
 Cómo elegimos estas viviendas: una persona lee cada anuncio y comprueba precio, tamaño, fotos y lugar antes de publicarlo, y la revisión de cada noche lo retira cuando el anuncio desaparece. [Cómo revisamos las casas](https://realhunt.co/es/how-we-check-homes) 0 de estas 9 viviendas se comprobaron con su anuncio original en los últimos 30 días.
 

@@ -2,7 +2,7 @@
  "noindex_copies": 8,
  "written_by_hand": {
   "pages": 838,
-  "words": 1377198,
+  "words": 1388519,
   "english": 35,
   "failed": [
    {
@@ -102,17 +102,17 @@
     ]
    },
    {
-    "url": "https://realhunt.co/es/deal/jp-shimizu-81k-591487",
+    "url": "https://realhunt.co/es/deal/jp-yonago-kaike-2016-one-floor-japanese-house-143k",
     "english": 1,
-    "words": 1852,
+    "words": 1968,
     "hits": [
      "map"
     ]
    },
    {
-    "url": "https://realhunt.co/es/deal/jp-yonago-kaike-2016-one-floor-japanese-house-143k",
+    "url": "https://realhunt.co/es/deal/jp-shimizu-81k-591487",
     "english": 1,
-    "words": 1968,
+    "words": 1852,
     "hits": [
      "map"
     ]
@@ -289,7 +289,7 @@
  },
  "max_english_share": 0.004,
  "max_english_words": 0,
- "twins": 1268,
+ "twins": 1265,
  "groups": {
   "homes": {
    "pages": 726,
@@ -300,24 +300,24 @@
    "spanish_pct": 0
   },
   "places": {
-   "pages": 713,
-   "twins": 713,
-   "words": 1663443,
+   "pages": 710,
+   "twins": 710,
+   "words": 1674146,
    "english": 0,
    "spanish_pct": 100
   },
   "pages": {
    "pages": 41,
    "twins": 8,
-   "words": 2888,
+   "words": 2895,
    "english": 418,
    "by_hand": 2,
-   "spanish_pct": 85.53
+   "spanish_pct": 85.56
   },
   "content": {
    "pages": 592,
    "twins": 591,
-   "words": 458462,
+   "words": 458426,
    "english": 0,
    "by_hand": 42,
    "spanish_pct": 100

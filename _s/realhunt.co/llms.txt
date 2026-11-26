@@ -2,7 +2,7 @@
 
 > RealHunt lists cheap homes for sale around the world (mostly under €100,000), each checked by a person and graded from 70 to 98 against every other home on the site. It is not an estate agent: every home links to its original listing.
 
-Today: 726 homes in 24 countries (a country counts from 3 homes). Updated 2026-11-26 21:55 UTC.
+Today: 726 homes in 24 countries (a country counts from 3 homes). Updated 2026-11-26 22:24 UTC.
 
 ## Key pages
 
@@ -28,10 +28,10 @@ Today: 726 homes in 24 countries (a country counts from 3 homes). Updated 2026-1
 - [New homes on RealHunt, newest first](https://realhunt.co/new)
 - [The best homes on RealHunt, by country](https://realhunt.co/best)
 - [What €100,000 buys in 16 countries](https://realhunt.co/what-100k-buys)
-- [Homes for sale in Spain (150, from €38,000)](https://realhunt.co/homes/spain)
+- [Homes for sale in Spain (151, from €38,000)](https://realhunt.co/homes/spain)
 - [Houses for sale in Italy (87, from €12,000)](https://realhunt.co/homes/italy)
 - [Houses for sale in the United States (61, from €65,428)](https://realhunt.co/homes/united-states)
-- [Houses for sale in France (48, from €39,000)](https://realhunt.co/homes/france)
+- [Houses for sale in France (47, from €39,000)](https://realhunt.co/homes/france)
 - [Houses for sale in Denmark (46, from €35,400)](https://realhunt.co/homes/denmark)
 - [Houses for sale in Sweden (41, from €22,000)](https://realhunt.co/homes/sweden)
 

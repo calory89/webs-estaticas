@@ -10,14 +10,14 @@ Updated 26 November 2026
 
 What | Homes
 Homes on RealHunt today | 726
-Advert confirmed online in the last 30 days | 525
-Last reading: advert online | 433
+Advert confirmed online in the last 30 days | 527
+Last reading: advert online | 436
 Last reading: advert removed | 117
-Last reading: the portal blocked the program | 140
+Last reading: the portal blocked the program | 137
 Last reading: no answer | 1
 Not read by the program yet, or not readable (social posts) | 35
-Marked as no longer for sale | 72
-With the notice "we could not confirm this home is still for sale" | 176
+Marked as no longer for sale | 73
+With the notice "we could not confirm this home is still for sale" | 175
 With a dated check by a person on their page | 6
 
 Computed from the homes on the site on 26 November 2026. "Last reading" is the result of the last time the program opened the advert.

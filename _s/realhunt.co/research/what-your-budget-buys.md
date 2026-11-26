@@ -18,8 +18,8 @@ Updated 26 November 2026. Source: RealHunt, https://realhunt.co/research/what-yo
 | Germany | 10 | 49 m² | €976 | 1 | [Sunny attic flat with a balcony for €40,000 in Chemnitz](https://realhunt.co/deal/de-chemnitz-40k-931045), €40,000, score 87 |
 | France | 6 | 116 m² | €431 | 3 | [171 m² house with a former shop in the centre of Bussière-Poitevine](https://realhunt.co/deal/fr-bussiere-poitevine-39k-088775), €39,950, score 92 |
 | Spain | 5 | 86 m² | €570 | 2 | [2-bedroom house with terrace in Alpujarra de la Sierra](https://realhunt.co/deal/es-alpujarra-de-la-sierra-38k-35809), €38,000, score 94 |
-| Switzerland | 2 | n/a | n/a | 2 | [70 m² modular house with heat pump, to move to your own plot](https://realhunt.co/deal/ch-lengnau-30k-26130), €32,300, score 92 |
 | Sweden | 2 | n/a | n/a | n/a | [Cosy villa with sauna, 100 m from the river](https://realhunt.co/deal/DdPBLT2CLlb), €25,960, score 93 |
+| Switzerland | 2 | n/a | n/a | 2 | [70 m² modular house with heat pump, to move to your own plot](https://realhunt.co/deal/ch-lengnau-30k-26130), €32,300, score 92 |
 | Denmark | 1 | n/a | n/a | n/a | [Thatched cottage from 1800 in open countryside](https://realhunt.co/deal/Dc4LcqwjPZX), €35,400, score 91 |
 | Portugal | 1 | n/a | n/a | 3 | [Freshly painted three-bedroom village house near the Sabor lakes](https://realhunt.co/deal/pt-mogadouro-48k-19109522), €48,000, score 84 |
 
@@ -39,8 +39,8 @@ Updated 26 November 2026. Source: RealHunt, https://realhunt.co/research/what-yo
 | Mexico | 9 | 65 m² | €1,140 | 2 | [2-bed apartment in San Pedro Tlaquepaque, Jalisco](https://realhunt.co/deal/san-pedro-tlaquepaque-50575), €50,575, score 93 |
 | Canada | 9 | 83 m² | €930 | 2 | [Updated 2-bed house in Glace Bay, Nova Scotia](https://realhunt.co/deal/glace-bay-86962), €86,962, score 94 |
 | Switzerland | 8 | 34 m² | €2,372 | 1 | [Holiday cottage with winter garden by a bathing lake in Salgesch](https://realhunt.co/deal/ch-salgesch-49k-76547), €52,800, score 85 |
-| Greece | 7 | 68 m² | €1,250 | 2 | [Two-level stone house with a sea view in Marathokampos, Samos](https://realhunt.co/deal/gr-samos-agia-triada-68k-20601330), €68,000, score 90 |
 | Bulgaria | 7 | 87 m² | €740 | 2 | [Furnished two-bedroom flat with a sea view in a gated complex in Kavarna](https://realhunt.co/deal/bg-kavarna-66k-89698), €66,000, score 94 |
+| Greece | 7 | 68 m² | €1,250 | 2 | [Two-level stone house with a sea view in Marathokampos, Samos](https://realhunt.co/deal/gr-samos-agia-triada-68k-20601330), €68,000, score 90 |
 | Portugal | 5 | 75 m² | €913 | 2 | [Restored single-storey Alentejo house with reed ceilings near Mértola](https://realhunt.co/deal/pt-mertola-68k-313027), €68,500, score 91 |
 | United Kingdom | 2 | n/a | n/a | 2 | [Beautifully styled two-bed home with an open fireplace](https://realhunt.co/deal/uk-shildon-82k-780165), €82,600, score 89 |
 
@@ -55,19 +55,19 @@ Updated 26 November 2026. Source: RealHunt, https://realhunt.co/research/what-yo
 | Portugal | 15 | 96 m² | €1,510 | 2 | [Five-bedroom house with two kitchens, central heating and a new roof in Silvares, Fundão](https://realhunt.co/deal/pt-silvares-110k-271372), €110,000, score 91 |
 | United States | 13 | 117 m² | €1,379 | 3 | [The historic Savage House: a white Victorian with a gingerbread porch](https://realhunt.co/deal/us-north-carolina-victorian-170k), €153,900, score 91 |
 | Canada | 7 | 155 m² | €963 | 3 | [Updated five-bedroom house with a bathroom for every bedroom in Twillingate, Newfoundland](https://realhunt.co/deal/ca-twillingate-nl-five-bed-house-each-room-ensuite-194k), €123,400, score 90 |
-| United Kingdom | 5 | 80 m² | €1,807 | 2 | [Refurbished period townhouse with a double garage in Lack village, County Fermanagh](https://realhunt.co/deal/uk-lack-fermanagh-refurbished-townhouse-double-garage-172k), €198,400, score 83 |
+| United Kingdom | 5 | 80 m² | €1,807 | 2 | [Well-kept three-bed semi-detached house with solar panels in Enniskillen, Fermanagh](https://realhunt.co/deal/uk-enniskillen-three-bed-semi-solar-panels-140k), €161,000, score 83 |
 | Japan | 5 | 132 m² | €1,018 | 4 | [Japanese-style one-floor house from 2016 on a big corner plot near Kaike, Yonago](https://realhunt.co/deal/jp-yonago-kaike-2016-one-floor-japanese-house-143k), €142,500, score 81 |
-| Mexico | 4 | 146 m² | €1,704 | 3 | [Five-bed stone and brick house with a Lake Chapala view terrace in El Tepehuaje](https://realhunt.co/deal/mx-tuxcueca-el-tepehuaje-lake-chapala-view-house-4-08m), €195,300, score 88 |
 | Uruguay | 4 | 113 m² | €1,649 | 3 | [Timber-ceiling house with fireplace and barbecue under 100 m from the sea, Playa Grande](https://realhunt.co/deal/uy-piriapolis-playa-grande-house-near-sea-198k), €180,300, score 85 |
-| Cyprus | 3 | 74 m² | €2,527 | 2 | [Furnished two-bedroom flat with title deeds and a shared pool in Mazotos, Larnaca](https://realhunt.co/deal/cy-mazotos-2-bed-pool-130k-477874), €130,000, score 83 |
+| Mexico | 4 | 146 m² | €1,704 | 3 | [Five-bed stone and brick house with a Lake Chapala view terrace in El Tepehuaje](https://realhunt.co/deal/mx-tuxcueca-el-tepehuaje-lake-chapala-view-house-4-08m), €195,300, score 88 |
 | Czech Republic | 3 | 109 m² | €1,464 | 1 | [Maintained brick house with a heat pump and garden in Lomnička near Plesná, Cheb](https://realhunt.co/deal/cz-lomnicka-plesna-brick-house-heat-pump-131k), €130,900, score 85 |
-| Colombia | 2 | n/a | n/a | 3 | [Fully remodelled three-bedroom house in a gated complex with pool, Santa Marta](https://realhunt.co/deal/co-santa-marta-remodelled-house-pool-rodadero-590m), €165,200, score 86 |
-| Dominican Republic | 2 | n/a | n/a | 2 | [Furnished front-line flat in Juan Dolio with a sea-view balcony](https://realhunt.co/deal/dr-juan-dolio-188k-425359), €187,800, score 89 |
+| Cyprus | 3 | 74 m² | €2,527 | 2 | [Furnished two-bedroom flat with title deeds and a shared pool in Mazotos, Larnaca](https://realhunt.co/deal/cy-mazotos-2-bed-pool-130k-477874), €130,000, score 83 |
 | Sweden | 2 | n/a | n/a | 4 | [Renovated red wooden house on a big countryside plot near Ingelstad, Småland](https://realhunt.co/deal/se-ingelstad-red-wooden-house-countryside-plot-187k), €187,400, score 84 |
+| Dominican Republic | 2 | n/a | n/a | 2 | [Furnished front-line flat in Juan Dolio with a sea-view balcony](https://realhunt.co/deal/dr-juan-dolio-188k-425359), €187,800, score 89 |
+| Colombia | 2 | n/a | n/a | 3 | [Two-storey house with a mountain-view balcony and estate pool in Santa Fe de Antioquia](https://realhunt.co/deal/co-santa-fe-de-antioquia-house-mountain-view-pool-650m), €176,300, score 86 |
 | Denmark | 1 | n/a | n/a | 3 | [Move-in ready villa with modern kitchen, big terrace and open field views near Høng](https://realhunt.co/deal/dk-hoeng-saeby-move-in-ready-villa-1195k-dkk), €160,000, score 82 |
+| Slovenia | 1 | n/a | n/a | 1 | [Restored Prekmurje farmhouse with antique furniture in Ivanjševci, Goričko](https://realhunt.co/deal/si-ivanjsevci-restored-prekmurje-house-goricko-105k), €105,000, score 82 |
 | Ireland | 1 | n/a | n/a | 1 | [Renovated village house with an A3 energy rating near Killala harbour, Mayo](https://realhunt.co/deal/ie-killala-renovated-village-house-a3-energy-170k), €170,000, score 83 |
 | Germany | 1 | n/a | n/a | 2 | [Garden-level flat with a south terrace steps from the beach on the Flensburg Fjord](https://realhunt.co/deal/de-wassersleben-flensburg-fjord-beach-flat-terrace-199k), €199,000, score 77 |
-| Slovenia | 1 | n/a | n/a | 1 | [Restored Prekmurje farmhouse with antique furniture in Ivanjševci, Goričko](https://realhunt.co/deal/si-ivanjsevci-restored-prekmurje-house-goricko-105k), €105,000, score 82 |
 
 ## Method and limits
 

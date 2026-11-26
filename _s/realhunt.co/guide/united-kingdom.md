@@ -31,9 +31,9 @@ Tax on rental income: Non-resident landlords pay UK income tax on rent at 20%, 4
 
 - [€82,600 · Beautifully styled two-bed home with an open fireplace](https://realhunt.co/deal/uk-shildon-82k-780165) · Shildon, County Durham · score 89 · 72 m² · 2 bed
 - [€88,500 · Bright bungalow with a garden near Blyth town and beach](https://realhunt.co/deal/uk-blyth-88k-869241) · Blyth, Northumberland · score 88 · 1 bed
-- [€126,500 · Furnished two-bedroom house with Moray Firth sea views in the harbour town of Macduff](https://realhunt.co/deal/uk-macduff-furnished-house-sea-views-110k) · Macduff, Aberdeenshire · score 83 · 70 m² · 2 bed
-- [€198,400 · Refurbished period townhouse with a double garage in Lack village, County Fermanagh](https://realhunt.co/deal/uk-lack-fermanagh-refurbished-townhouse-double-garage-172k) · Lack, County Fermanagh, Northern Ireland · score 83 · 107 m² · 3 bed
 - [€161,000 · Well-kept three-bed semi-detached house with solar panels in Enniskillen, Fermanagh](https://realhunt.co/deal/uk-enniskillen-three-bed-semi-solar-panels-140k) · Enniskillen, County Fermanagh (Northern Ireland) · score 83 · 107 m² · 3 bed
+- [€198,400 · Refurbished period townhouse with a double garage in Lack village, County Fermanagh](https://realhunt.co/deal/uk-lack-fermanagh-refurbished-townhouse-double-garage-172k) · Lack, County Fermanagh, Northern Ireland · score 83 · 107 m² · 3 bed
+- [€126,500 · Furnished two-bedroom house with Moray Firth sea views in the harbour town of Macduff](https://realhunt.co/deal/uk-macduff-furnished-house-sea-views-110k) · Macduff, Aberdeenshire · score 83 · 70 m² · 2 bed
 - [€195,400 · Renovated two-bedroom end terrace with garage in historic Greyabbey, Northern Ireland](https://realhunt.co/deal/uk-greyabbey-renovated-end-terrace-garage-170k) · Greyabbey, Northern Ireland · score 82 · 80 m² · 2 bed
 
 [All 7 homes in the United Kingdom](https://realhunt.co/homes/united-kingdom)

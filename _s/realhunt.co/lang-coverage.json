@@ -1,5 +1,5 @@
 {
- "total": 2858,
+ "total": 2856,
  "max_total": 3200,
  "langs": {
   "de": {
@@ -9,20 +9,20 @@
     "gband": 5,
     "gfeature": 37,
     "ccyBand": 14,
-    "band": 61,
-    "feature": 222,
-    "setting": 23,
+    "band": 60,
+    "feature": 220,
+    "setting": 22,
     "combo": 55,
     "ptype": 13,
     "beds": 31,
     "area": 22,
     "near": 13,
-    "regionBand": 63,
-    "region": 54,
-    "town": 4
+    "regionBand": 64,
+    "region": 56,
+    "town": 5
    },
    "by_country": {
-    "spain": 95,
+    "spain": 99,
     "italy": 97,
     "united-states": 44,
     "france": 42,
@@ -38,8 +38,8 @@
     "mexico": 9,
     "portugal": 13,
     "bulgaria": 5,
-    "cyprus": 9,
     "united-kingdom": 7,
+    "cyprus": 5,
     "dominican-republic": 6,
     "ireland": 5,
     "uruguay": 4,
@@ -47,26 +47,10 @@
     "czech-republic": 2,
     "all countries": 61
    },
-   "homes": 654,
-   "homes_with_title": 654,
-   "not_published": 20,
+   "homes": 653,
+   "homes_with_title": 653,
+   "not_published": 16,
    "not_published_sample": [
-    {
-     "path": "/homes/spain/almeria/terque",
-     "why": "over the page budget of the language (640)"
-    },
-    {
-     "path": "/homes/spain/cadiz/under-80000",
-     "why": "over the page budget of the language (640)"
-    },
-    {
-     "path": "/homes/spain/cantabria",
-     "why": "over the page budget of the language (640)"
-    },
-    {
-     "path": "/homes/spain/castellon",
-     "why": "over the page budget of the language (640)"
-    },
     {
      "path": "/homes/spain/costa-de-almeria",
      "why": "over the page budget of the language (640)"
@@ -135,13 +119,13 @@
    "sitemap": "sitemap-de.xml"
   },
   "ru": {
-   "pages": 334,
+   "pages": 332,
    "by_kind": {
     "country": 23,
     "gband": 5,
     "ccyBand": 14,
-    "band": 63,
-    "setting": 25,
+    "band": 62,
+    "setting": 24,
     "ptype": 13,
     "beds": 31,
     "area": 23,
@@ -166,8 +150,8 @@
     "mexico": 7,
     "portugal": 5,
     "bulgaria": 3,
-    "cyprus": 4,
     "united-kingdom": 5,
+    "cyprus": 2,
     "dominican-republic": 3,
     "ireland": 3,
     "uruguay": 2,
@@ -175,8 +159,8 @@
     "czech-republic": 2,
     "all countries": 8
    },
-   "homes": 654,
-   "homes_with_title": 654,
+   "homes": 653,
+   "homes_with_title": 653,
    "not_published": 0,
    "not_published_sample": [],
    "sitemap": "sitemap-ru.xml"
@@ -188,20 +172,20 @@
     "gband": 5,
     "gfeature": 37,
     "ccyBand": 14,
-    "band": 61,
-    "feature": 222,
-    "setting": 23,
+    "band": 60,
+    "feature": 220,
+    "setting": 22,
     "combo": 55,
     "ptype": 13,
     "beds": 31,
     "area": 22,
     "near": 13,
-    "regionBand": 63,
-    "region": 54,
-    "town": 4
+    "regionBand": 64,
+    "region": 56,
+    "town": 5
    },
    "by_country": {
-    "spain": 95,
+    "spain": 99,
     "italy": 97,
     "united-states": 44,
     "france": 42,
@@ -217,8 +201,8 @@
     "mexico": 9,
     "portugal": 13,
     "bulgaria": 5,
-    "cyprus": 9,
     "united-kingdom": 7,
+    "cyprus": 5,
     "dominican-republic": 6,
     "ireland": 5,
     "uruguay": 4,
@@ -226,26 +210,10 @@
     "czech-republic": 2,
     "all countries": 61
    },
-   "homes": 654,
-   "homes_with_title": 654,
-   "not_published": 20,
+   "homes": 653,
+   "homes_with_title": 653,
+   "not_published": 16,
    "not_published_sample": [
-    {
-     "path": "/homes/spain/almeria/terque",
-     "why": "over the page budget of the language (640)"
-    },
-    {
-     "path": "/homes/spain/cadiz/under-80000",
-     "why": "over the page budget of the language (640)"
-    },
-    {
-     "path": "/homes/spain/cantabria",
-     "why": "over the page budget of the language (640)"
-    },
-    {
-     "path": "/homes/spain/castellon",
-     "why": "over the page budget of the language (640)"
-    },
     {
      "path": "/homes/spain/costa-de-almeria",
      "why": "over the page budget of the language (640)"
@@ -320,64 +288,48 @@
     "gband": 5,
     "gfeature": 37,
     "ccyBand": 14,
-    "band": 56,
-    "feature": 222,
-    "setting": 22,
+    "band": 55,
+    "feature": 220,
+    "setting": 21,
     "combo": 55,
     "ptype": 13,
     "beds": 31,
     "area": 22,
     "near": 13,
-    "regionBand": 56,
-    "region": 48,
-    "town": 3
+    "regionBand": 58,
+    "region": 49,
+    "town": 4
    },
    "by_country": {
     "spain": 94,
     "italy": 92,
     "united-states": 44,
-    "france": 40,
+    "france": 42,
     "denmark": 34,
     "sweden": 37,
     "japan": 45,
     "poland": 11,
     "greece": 40,
-    "germany": 17,
+    "germany": 18,
     "netherlands": 7,
     "canada": 27,
     "switzerland": 13,
     "mexico": 8,
     "portugal": 12,
     "bulgaria": 5,
-    "cyprus": 9,
     "united-kingdom": 7,
-    "dominican-republic": 5,
+    "cyprus": 5,
+    "dominican-republic": 6,
     "ireland": 4,
     "uruguay": 4,
     "colombia": 2,
     "czech-republic": 2,
     "all countries": 61
    },
-   "homes": 654,
-   "homes_with_title": 654,
-   "not_published": 40,
+   "homes": 653,
+   "homes_with_title": 653,
+   "not_published": 36,
    "not_published_sample": [
-    {
-     "path": "/homes/dominican-republic/san-pedro-de-macoris",
-     "why": "over the page budget of the language (620)"
-    },
-    {
-     "path": "/homes/france/aude/under-80000",
-     "why": "over the page budget of the language (620)"
-    },
-    {
-     "path": "/homes/france/charente/under-150000",
-     "why": "over the page budget of the language (620)"
-    },
-    {
-     "path": "/homes/germany/chemnitz/kassberg",
-     "why": "over the page budget of the language (620)"
-    },
     {
      "path": "/homes/ireland/by-the-sea",
      "why": "over the page budget of the language (620)"
@@ -532,64 +484,48 @@
     "gband": 5,
     "gfeature": 37,
     "ccyBand": 14,
-    "band": 56,
-    "feature": 222,
-    "setting": 22,
+    "band": 55,
+    "feature": 220,
+    "setting": 21,
     "combo": 55,
     "ptype": 13,
     "beds": 31,
     "area": 22,
     "near": 13,
-    "regionBand": 56,
-    "region": 48,
-    "town": 3
+    "regionBand": 58,
+    "region": 49,
+    "town": 4
    },
    "by_country": {
     "spain": 94,
     "italy": 92,
     "united-states": 44,
-    "france": 40,
+    "france": 42,
     "denmark": 34,
     "sweden": 37,
     "japan": 45,
     "poland": 11,
     "greece": 40,
-    "germany": 17,
+    "germany": 18,
     "netherlands": 7,
     "canada": 27,
     "switzerland": 13,
     "mexico": 8,
     "portugal": 12,
     "bulgaria": 5,
-    "cyprus": 9,
     "united-kingdom": 7,
-    "dominican-republic": 5,
+    "cyprus": 5,
+    "dominican-republic": 6,
     "ireland": 4,
     "uruguay": 4,
     "colombia": 2,
     "czech-republic": 2,
     "all countries": 61
    },
-   "homes": 654,
-   "homes_with_title": 654,
-   "not_published": 40,
+   "homes": 653,
+   "homes_with_title": 653,
+   "not_published": 36,
    "not_published_sample": [
-    {
-     "path": "/homes/dominican-republic/san-pedro-de-macoris",
-     "why": "over the page budget of the language (620)"
-    },
-    {
-     "path": "/homes/france/aude/under-80000",
-     "why": "over the page budget of the language (620)"
-    },
-    {
-     "path": "/homes/france/charente/under-150000",
-     "why": "over the page budget of the language (620)"
-    },
-    {
-     "path": "/homes/germany/chemnitz/kassberg",
-     "why": "over the page budget of the language (620)"
-    },
     {
      "path": "/homes/ireland/by-the-sea",
      "why": "over the page budget of the language (620)"
@@ -739,9 +675,9 @@
   }
  },
  "hreflang": {
-  "english_pages_linked": 661,
-  "spanish_pages_linked": 661
+  "english_pages_linked": 657,
+  "spanish_pages_linked": 657
  },
- "home_pages_linked": 1290,
+ "home_pages_linked": 1288,
  "failures": []
 }

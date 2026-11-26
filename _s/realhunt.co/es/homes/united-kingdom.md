@@ -9,9 +9,9 @@ Lista cambiada por última vez el 20 de noviembre de 2026. Ir a las viviendas
 
 ### Tres de esta lista
 
-- [Mejor notaNueva126.500 €Casa de dos dormitorios amueblada con vistas al fiordo de Moray en la ciudad portuaria de MacduffMacduff, Aberdeenshire70 m² · 2 dorm. · 1.807 €/m² · 8 días en RealHunt](https://realhunt.co/es/deal/uk-macduff-furnished-house-sea-views-110k)
+- [Mejor notaNueva161.000 €Casa adosada de tres dormitorios bien mantenida con paneles solares en Enniskillen, FermanaghEnniskillen, Irlanda del Norte107 m² · 3 dorm. · 1.505 €/m² · 6 días en RealHunt](https://realhunt.co/es/deal/uk-enniskillen-three-bed-semi-solar-panels-140k)
 - [La más barata88.500 €Bungalow luminoso con jardín cerca del centro y la playa de BlythBlyth, Northumberland1 dorm. · 51 días en RealHunt](https://realhunt.co/es/deal/uk-blyth-88k-869241)
-- [Más metros por el dineroNueva161.000 €Casa adosada de tres dormitorios bien mantenida con paneles solares en Enniskillen, FermanaghEnniskillen, Irlanda del Norte107 m² · 3 dorm. · 1.505 €/m² · 6 días en RealHunt](https://realhunt.co/es/deal/uk-enniskillen-three-bed-semi-solar-panels-140k)
+- [Más metros por el dineroNueva121.000 €Cottage tradicional de dos dormitorios con estufa de leña y jardín grande en Whithorn, GallowayWhithorn, Dumfries and Galloway67 m² · 2 dorm. · 1.806 €/m² · 8 días en RealHunt](https://realhunt.co/es/deal/uk-whithorn-cottage-wood-burner-garden-105k)
 
 RealHunt tiene hoy 6 casas en venta en el Reino Unido, con precios de 88.500 € a 198.400 €. La más barata cuesta 88.500 €: [Bungalow luminoso con jardín cerca del centro y la playa de Blyth](https://realhunt.co/es/deal/uk-blyth-88k-869241), en Blyth (1 dormitorio). El precio mediano es de 161.000 € (1.807 €/m²), frente a 93.200 € (1.206 €/m²) de las 726 viviendas de RealHunt en 24 países.
 
@@ -46,9 +46,9 @@ Datos del
 
 Ordenadas por la nota de RealHunt, de mejor a peor. Para verlas de más barata a más cara, mira la tabla de abajo: toca un encabezado como Precio para ordenarla. [Ver estas viviendas en el mapa](https://realhunt.co/es/map?country=United+Kingdom)
 
-- [Nota 83Nueva126.500 €Casa de dos dormitorios amueblada con vistas al fiordo de Moray en la ciudad portuaria de MacduffMacduff, Aberdeenshire70 m² · 2 dorm. · 1.807 €/m² · 8 días en RealHuntUna casa adosada bien presentada en el centro de Macduff, una ciudad costera en el fiordo de Moray en el nordeste de Escocia, vendida…](https://realhunt.co/es/deal/uk-macduff-furnished-house-sea-views-110k)
-- [Nota 83Nueva198.400 €Casa adosada de época renovada con garaje doble en el pueblo de Lack, condado de FermanaghLack, Irlanda del Norte107 m² · 3 dorm. · 1.854 €/m² · 6 días en RealHuntSe piden £172.500 (aproximadamente 198.400 €) por una casa adosada de época de 107 m² que ha sido completamente y cuidadosamente renovada…](https://realhunt.co/es/deal/uk-lack-fermanagh-refurbished-townhouse-double-garage-172k)
 - [Nota 83Nueva161.000 €Casa adosada de tres dormitorios bien mantenida con paneles solares en Enniskillen, FermanaghEnniskillen, Irlanda del Norte107 m² · 3 dorm. · 1.505 €/m² · 6 días en RealHuntSe pide £140.000 (unos 161 €).](https://realhunt.co/es/deal/uk-enniskillen-three-bed-semi-solar-panels-140k)
+- [Nota 83Nueva198.400 €Casa adosada de época renovada con garaje doble en el pueblo de Lack, condado de FermanaghLack, Irlanda del Norte107 m² · 3 dorm. · 1.854 €/m² · 6 días en RealHuntSe piden £172.500 (aproximadamente 198.400 €) por una casa adosada de época de 107 m² que ha sido completamente y cuidadosamente renovada…](https://realhunt.co/es/deal/uk-lack-fermanagh-refurbished-townhouse-double-garage-172k)
+- [Nota 83Nueva126.500 €Casa de dos dormitorios amueblada con vistas al fiordo de Moray en la ciudad portuaria de MacduffMacduff, Aberdeenshire70 m² · 2 dorm. · 1.807 €/m² · 8 días en RealHuntUna casa adosada bien presentada en el centro de Macduff, una ciudad costera en el fiordo de Moray en el nordeste de Escocia, vendida…](https://realhunt.co/es/deal/uk-macduff-furnished-house-sea-views-110k)
 - [Nota 82Nueva195.400 €Casa adosada de dos dormitorios renovada con garaje en el histórico Greyabbey, Irlanda del NorteGreyabbey, Irlanda del Norte80 m² · 2 dorm. · 2.443 €/m² · 6 días en RealHuntSe pide £169.950 (aproximadamente 195.400 €) por una casa adosada de 80 m² en el corazón del histórico Greyabbey, completamente renovada en los…](https://realhunt.co/es/deal/uk-greyabbey-renovated-end-terrace-garage-170k)
 - [Nota 81Nueva121.000 €Cottage tradicional de dos dormitorios con estufa de leña y jardín grande en Whithorn, GallowayWhithorn, Dumfries and Galloway67 m² · 2 dorm. · 1.806 €/m² · 8 días en RealHuntUna cottage terraced tradicional en el centro de Whithorn, en el extremo más al suroeste de Escocia.](https://realhunt.co/es/deal/uk-whithorn-cottage-wood-burner-garden-105k)
 - [Nota 8888.500 €Bungalow luminoso con jardín cerca del centro y la playa de BlythBlyth, Northumberland1 dorm. · 51 días en RealHuntUn bungalow pareado encantador de un dormitorio, con cocina moderna, salón luminoso, baño con ducha, aparcamiento propio y jardín con césped…](https://realhunt.co/es/deal/uk-blyth-88k-869241)
@@ -67,14 +67,14 @@ Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 
 ### Las 6 viviendas en cifras
 
-- Tamaño: la mitad tiene 80 m² o más. La más grande tiene 107 m²: [Casa adosada de época renovada con garaje doble en el pueblo de Lack, condado de Fermanagh](https://realhunt.co/es/deal/uk-lack-fermanagh-refurbished-townhouse-double-garage-172k).
+- Tamaño: la mitad tiene 80 m² o más. La más grande tiene 107 m²: [Casa adosada de tres dormitorios bien mantenida con paneles solares en Enniskillen, Fermanagh](https://realhunt.co/es/deal/uk-enniskillen-three-bed-semi-solar-panels-140k).
 - Dormitorios: 1 con 1 dormitorio, 3 con 2, 2 con 3.
 - Tipo: 6 casas.
 - Entorno: 2 junto al mar, 3 en pueblos, 1 en ciudad.
 - Dónde: Irlanda del Norte (3), Aberdeenshire (1), Dumfries and Galloway (1), Northumberland (1).
 - Extras que mencionan los anuncios: 4 con jardín, 4 con terraza, 3 con garaje.
-- Notas: de 81 a 88 sobre 98. La de mejor nota: [Casa de dos dormitorios amueblada con vistas al fiordo de Moray en la ciudad portuaria de Macduff](https://realhunt.co/es/deal/uk-macduff-furnished-house-sea-views-110k).
-- La más reciente, añadida el 20 de noviembre de 2026: [Casa adosada de época renovada con garaje doble en el pueblo de Lack, condado de Fermanagh](https://realhunt.co/es/deal/uk-lack-fermanagh-refurbished-townhouse-double-garage-172k). 5 de estas viviendas se añadieron en los últimos 30 días.
+- Notas: de 81 a 88 sobre 98. La de mejor nota: [Casa adosada de tres dormitorios bien mantenida con paneles solares en Enniskillen, Fermanagh](https://realhunt.co/es/deal/uk-enniskillen-three-bed-semi-solar-panels-140k).
+- La más reciente, añadida el 20 de noviembre de 2026: [Casa adosada de tres dormitorios bien mantenida con paneles solares en Enniskillen, Fermanagh](https://realhunt.co/es/deal/uk-enniskillen-three-bed-semi-solar-panels-140k). 5 de estas viviendas se añadieron en los últimos 30 días.
 
 ### Precio mediano por región en el Reino Unido
 
@@ -137,9 +137,9 @@ Por región [Irlanda del Norte 3](https://realhunt.co/es/homes/united-kingdom/no
 
 Por característica [Con jardín 4](https://realhunt.co/es/cheap-houses/with-garden-in-united-kingdom) [Con terraza 4](https://realhunt.co/es/cheap-houses/with-a-terrace-in-united-kingdom) [Con garaje 3](https://realhunt.co/es/cheap-houses/with-garage-in-united-kingdom) [Nuevas este mes 5](https://realhunt.co/es/cheap-houses/new-this-month-in-united-kingdom) [Zona tranquila 5](https://realhunt.co/es/cheap-houses/quiet-location-in-united-kingdom)
 
-Países vecinos [Irlanda 4](https://realhunt.co/es/homes/ireland) [Francia 48](https://realhunt.co/es/homes/france)
+Países vecinos [Irlanda 4](https://realhunt.co/es/homes/ireland) [Francia 47](https://realhunt.co/es/homes/france)
 
-Por país [España 150](https://realhunt.co/es/homes/spain) [Italia 87](https://realhunt.co/es/homes/italy) [Estados Unidos 61](https://realhunt.co/es/homes/united-states) [Francia 48](https://realhunt.co/es/homes/france) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Suecia 41](https://realhunt.co/es/homes/sweden) [Japón 36](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 26](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 16](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [México 9](https://realhunt.co/es/homes/mexico) [Portugal 8](https://realhunt.co/es/homes/portugal) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Chipre 6](https://realhunt.co/es/homes/cyprus) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Uruguay 4](https://realhunt.co/es/homes/uruguay) [Irlanda 4](https://realhunt.co/es/homes/ireland) [Colombia 3](https://realhunt.co/es/homes/colombia) [República Checa 3](https://realhunt.co/es/homes/czech-republic)
+Por país [España 151](https://realhunt.co/es/homes/spain) [Italia 87](https://realhunt.co/es/homes/italy) [Estados Unidos 61](https://realhunt.co/es/homes/united-states) [Francia 47](https://realhunt.co/es/homes/france) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Suecia 41](https://realhunt.co/es/homes/sweden) [Japón 36](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 26](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 16](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [México 9](https://realhunt.co/es/homes/mexico) [Portugal 8](https://realhunt.co/es/homes/portugal) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Chipre 5](https://realhunt.co/es/homes/cyprus) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Uruguay 4](https://realhunt.co/es/homes/uruguay) [Irlanda 4](https://realhunt.co/es/homes/ireland) [Colombia 3](https://realhunt.co/es/homes/colombia) [República Checa 3](https://realhunt.co/es/homes/czech-republic)
 
 Cómo elegimos estas viviendas: una persona lee cada anuncio y comprueba precio, tamaño, fotos y lugar antes de publicarlo, y la revisión de cada noche lo retira cuando el anuncio desaparece. [Cómo revisamos las casas](https://realhunt.co/es/how-we-check-homes) 5 de estas 6 viviendas se comprobaron con su anuncio original en los últimos 30 días.
 

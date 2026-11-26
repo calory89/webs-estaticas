@@ -1,11 +1,11 @@
 {
  "summary": {
-  "pages": 4838,
-  "indexable": 4296,
+  "pages": 4832,
+  "indexable": 4290,
   "noindex": 542,
   "noindex_by_polish": 450,
   "duplicate_homes": 2,
-  "title_over_60": 553,
+  "title_over_60": 557,
   "desc_over_155": 0,
   "desc_under_120": 70,
   "desc_out_of_range": 70,
@@ -17,13 +17,13 @@
   "orphans": 0,
   "inlinks_under_3": 46,
   "hreflang_problems": 0,
-  "pages_with_hreflang": 4278,
+  "pages_with_hreflang": 4272,
   "thin_under_150_words": 29,
   "mixed_content": 0,
   "no_lang": 0,
-  "with_lastmod": 4243,
-  "redirects": 1885,
-  "moved_stubs": 261
+  "with_lastmod": 4237,
+  "redirects": 1893,
+  "moved_stubs": 273
  },
  "failures": [],
  "groups": {
@@ -67,7 +67,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 421,
+   "median_words": 423,
    "title_over_60": 0,
    "desc_out_of_range": 1,
    "inlinks_under_3": 0
@@ -130,16 +130,16 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 2196,
+   "median_words": 2181,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/cheap-houses/*": {
-   "pages": 356,
-   "indexable": 356,
+   "pages": 354,
+   "indexable": 354,
    "noindex": 0,
-   "median_words": 1890,
+   "median_words": 1914,
    "title_over_60": 10,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -202,8 +202,8 @@
    "pages": 726,
    "indexable": 725,
    "noindex": 1,
-   "median_words": 1550,
-   "title_over_60": 46,
+   "median_words": 1568,
+   "title_over_60": 48,
    "desc_out_of_range": 6,
    "inlinks_under_3": 0
   },
@@ -283,7 +283,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 507,
+   "median_words": 514,
    "title_over_60": 0,
    "desc_out_of_range": 1,
    "inlinks_under_3": 0
@@ -346,16 +346,16 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 2698,
+   "median_words": 2681,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/es/cheap-houses/*": {
-   "pages": 356,
-   "indexable": 356,
+   "pages": 354,
+   "indexable": 354,
    "noindex": 0,
-   "median_words": 2177,
+   "median_words": 2208,
    "title_over_60": 91,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -409,7 +409,7 @@
    "pages": 171,
    "indexable": 171,
    "noindex": 0,
-   "median_words": 563,
+   "median_words": 564,
    "title_over_60": 3,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -418,8 +418,8 @@
    "pages": 726,
    "indexable": 725,
    "noindex": 1,
-   "median_words": 1510,
-   "title_over_60": 182,
+   "median_words": 1522,
+   "title_over_60": 184,
    "desc_out_of_range": 1,
    "inlinks_under_3": 0
   },
@@ -499,16 +499,16 @@
    "pages": 30,
    "indexable": 23,
    "noindex": 7,
-   "median_words": 2730,
+   "median_words": 2832,
    "title_over_60": 0,
    "desc_out_of_range": 13,
    "inlinks_under_3": 0
   },
   "/es/homes/*/*": {
-   "pages": 331,
-   "indexable": 331,
+   "pages": 330,
+   "indexable": 330,
    "noindex": 0,
-   "median_words": 1876,
+   "median_words": 1900,
    "title_over_60": 85,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -784,10 +784,10 @@
    "inlinks_under_3": 0
   },
   "/homes/*/*": {
-   "pages": 331,
-   "indexable": 331,
+   "pages": 330,
+   "indexable": 330,
    "noindex": 0,
-   "median_words": 1618,
+   "median_words": 1634,
    "title_over_60": 19,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -958,7 +958,7 @@
    "pages": 34,
    "indexable": 34,
    "noindex": 0,
-   "median_words": 569,
+   "median_words": 564,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 23
@@ -1092,9 +1092,9 @@
  "healed_links": {},
  "json_ld": {
   "notes": {
-   "pages with JSON-LD changed": 4296,
+   "pages with JSON-LD changed": 4290,
    "ItemList: items removed or renumbered": 12,
-   "RealEstateListing: availability left out (advert not confirmed)": 352,
+   "RealEstateListing: availability left out (advert not confirmed)": 350,
    "Article: author, date, headline or image missing": 52
   },
   "missing": {}
@@ -1303,7 +1303,7 @@
    "/cheap-houses/unusual-buildings-in-italy",
    "/cheap-houses/with-a-terrace-in-dominican-republic",
    "/cheap-houses/with-garden-under-100000-in-united-states",
-   "... 493 more"
+   "... 497 more"
   ],
   "title_under_20": [
    "/contact",
@@ -1311,7 +1311,7 @@
   ]
  },
  "spanish": {
-  "twins": 1268,
+  "twins": 1265,
   "groups": {
    "homes": {
     "pages": 726,
@@ -1322,24 +1322,24 @@
     "spanish_pct": 0
    },
    "places": {
-    "pages": 713,
-    "twins": 713,
-    "words": 1663443,
+    "pages": 710,
+    "twins": 710,
+    "words": 1674146,
     "english": 0,
     "spanish_pct": 100
    },
    "pages": {
     "pages": 41,
     "twins": 8,
-    "words": 2888,
+    "words": 2895,
     "english": 418,
     "by_hand": 2,
-    "spanish_pct": 85.53
+    "spanish_pct": 85.56
    },
    "content": {
     "pages": 592,
     "twins": 591,
-    "words": 458462,
+    "words": 458426,
     "english": 0,
     "by_hand": 42,
     "spanish_pct": 100
@@ -1355,17 +1355,18 @@
  },
  "tech": {
   "summary": {
-   "checked": 4838,
-   "indexable": 4296,
+   "checked": 4832,
+   "indexable": 4290,
    "max_depth": 3,
-   "titles_changed_since_last_build": 2,
+   "titles_changed_since_last_build": 94,
    "external_link_hosts": 335,
    "no_text_without_javascript": 9,
-   "click_handler_instead_of_link": 1418,
+   "click_handler_instead_of_link": 1410,
    "legal_page_without_disclaimer": 3,
    "keyword_stuffing": 8,
    "year_in_title": 2,
-   "near_identical_pages": 541,
+   "near_identical_pages": 542,
+   "title_changed_twice_in_28_days": 77,
    "fixed_here": 2,
    "links_pointed_past_a_redirect": 2
   },
@@ -1423,7 +1424,7 @@
     "/cheap-houses/editors-picks: <button type=\"button\" class=\"ls-seabtn\" aria-pressed=\"false\" data-on=\"Show all\" data-off=\"Show only the 5 by the sea\" onclick=\"var m=this.closest('[data-ls]');v",
     "/cheap-houses/editors-picks-in-france: <button type=\"button\" class=\"ls-csv\" data-file=\"realhunt-cheap-houses-editors-picks-in-france.csv\" onclick=\"var t=this.closest('[data-ls]').querySelector('#comp",
     "/cheap-houses/editors-picks-in-italy: <button type=\"button\" class=\"ls-seabtn\" aria-pressed=\"false\" data-on=\"Show all\" data-off=\"Show only the 3 by the sea\" onclick=\"var m=this.closest('[data-ls]');v",
-    "... 1378 more"
+    "... 1370 more"
    ],
    "legal_page_without_disclaimer": [
     "/es/guide/buying",
@@ -1485,14 +1486,57 @@
     "/can-i-buy/danish-in-cyprus ~ /can-i-buy/swedish-in-cyprus (95%)",
     "/can-i-buy/danish-in-dominican-republic ~ /can-i-buy/dutch-in-dominican-republic (97%)",
     "/can-i-buy/danish-in-dominican-republic ~ /can-i-buy/french-in-dominican-republic (94%)",
-    "... 501 more"
+    "... 502 more"
+   ],
+   "title_changed_twice_in_28_days": [
+    "/cheap-houses/in-the-mountains: Cheap homes in the mountains (40, from €7,400) · RealHunt",
+    "/cheap-houses/near-alicante: Cheap homes for sale within 100 km of Alicante (40)",
+    "/cheap-houses/near-an-airport-in-spain: Homes within 30 km of an airport in Spain (52, from €52,000)",
+    "/cheap-houses/new-this-month: Homes added in the last 30 days (207, from €7,400)",
+    "/cheap-houses/new-this-week: Homes added in the last 7 days (152, from €54,300)",
+    "/cheap-houses/over-120-sqm: Homes over 120 m² (146, from €38,000) · RealHunt",
+    "/cheap-houses/over-120-sqm-in-spain: Homes over 120 m² in Spain (44, from €38,000) · RealHunt",
+    "/cheap-houses/over-80-sqm: Homes over 80 m² (338, from €7,400) · RealHunt",
+    "/cheap-houses/over-80-sqm-in-spain: Cheap homes over 80 m² in Spain (83, from €38,000)",
+    "/cheap-houses/quiet-location: Cheap homes away from motorways and railways (291)",
+    "/cheap-houses/quiet-location-in-france: Houses away from motorways and railways in France (20)",
+    "/cheap-houses/quiet-location-in-spain: Cheap homes away from motorways and railways in Spain (88)",
+    "/cheap-houses/under-100000: Cheap homes for sale under €100,000 (398, from €7,400)",
+    "/cheap-houses/under-100000-dollars: Cheap homes for sale under $100,000 (322, from €7,400)",
+    "/cheap-houses/under-50000-pounds: Cheap homes for sale under £50,000 (127, from €7,400)",
+    "/cheap-houses/village-houses: Cheap village houses (337, from €7,400) · RealHunt",
+    "/cheap-houses/with-a-terrace-in-france: Houses with a terrace or balcony in France (17) · RealHunt",
+    "/cheap-houses/with-a-terrace-in-spain: Cheap homes with a terrace or balcony in Spain (110)",
+    "/cheap-houses/with-garage-in-spain: Homes with a garage in Spain (30, from €57,500) · RealHunt",
+    "/cheap-houses/with-garden: Houses with a garden (216, from €19,320) · RealHunt",
+    "/cheap-houses/with-garden-in-france: Houses with a garden in France (16, from €57,000) · RealHunt",
+    "/cheap-houses/with-garden-in-spain: Homes with a garden in Spain (33, from €60,000) · RealHunt",
+    "/cheap-houses/with-garden-under-100000-in-france: Cheap homes with a garden in France under €100,000 (5)",
+    "/cheap-houses/with-pool-in-spain: Apartments with a pool in Spain (34, from €91,000)",
+    "/deal/cy-paphos-mesa-chorio-pool-flat-195k-502684: Sold or withdrawn: 2-bedroom flat in Mesa Chorio for €195,000",
+    "/deal/dk-broby-79k-431a7e: 5-bedroom villa in Broby, Denmark for €79,800 · RealHunt",
+    "/deal/dk-hjerm-93k-04870b: 5-bedroom villa in Hjerm, Denmark for €93,200 · RealHunt",
+    "/deal/es-albatera-pool-new-135k-190471633: Not confirmed: 3-bedroom flat in Albatera for €135,000",
+    "/deal/fr-encausse-les-thermes-85k-vjwr3w: Sold or withdrawn: 2-bedroom duplex in Encausse-les-Thermes for €85,000",
+    "/es/cheap-houses/in-the-mountains: Viviendas baratas de montaña en venta (40, desde 7.400 €)",
+    "/es/cheap-houses/new-this-month: Viviendas añadidas en los últimos 30 días en venta (207)",
+    "/es/cheap-houses/new-this-week: Viviendas añadidas en los últimos 7 días en venta (152)",
+    "/es/cheap-houses/over-120-sqm: Viviendas de más de 120 m² en venta (146, desde 38.000 €)",
+    "/es/cheap-houses/over-120-sqm-in-spain: Viviendas de más de 120 m² en venta en España (44)",
+    "/es/cheap-houses/over-80-sqm: Viviendas de más de 80 m² en venta (338, desde 7.400 €)",
+    "/es/cheap-houses/over-80-sqm-in-spain: Viviendas baratas de más de 80 m² en venta en España (83)",
+    "/es/cheap-houses/under-100000: Viviendas baratas en venta por menos de 100.000 € (398)",
+    "/es/cheap-houses/under-50000-pounds: Viviendas baratas en venta por menos de 50.000 libras (127)",
+    "/es/cheap-houses/village-houses: Casas de pueblo baratas en venta (337, desde 7.400 €)",
+    "/es/cheap-houses/with-a-terrace-in-france: Casas con terraza o balcón en venta en Francia (17)",
+    "... 37 more"
    ]
   },
   "depth": {
    "0": 2,
    "1": 156,
-   "2": 3737,
-   "3": 401
+   "2": 3727,
+   "3": 405
   },
   "noindex": {
    "app screen": 5,
@@ -1544,7 +1588,7 @@
     "country": {
      "path": "/homes/spain",
      "html_kb": 24.2,
-     "html_raw_kb": 116.9,
+     "html_raw_kb": 117,
      "jsonld_kb": 8.2,
      "blocking_css_kb": 23.3,
      "entry_js_kb": 81,
@@ -1557,8 +1601,8 @@
     },
     "band": {
      "path": "/homes/bulgaria/under-80000",
-     "html_kb": 13.2,
-     "html_raw_kb": 51.8,
+     "html_kb": 13.3,
+     "html_raw_kb": 52.4,
      "jsonld_kb": 4,
      "blocking_css_kb": 23.3,
      "entry_js_kb": 81,
@@ -1614,8 +1658,8 @@
     },
     "listing": {
      "limit_kb": 100,
-     "pages": 1699,
-     "over": 224,
+     "pages": 1705,
+     "over": 227,
      "biggest": [
       {
        "path": "/es/homes/united-states",
@@ -1623,7 +1667,7 @@
       },
       {
        "path": "/es/homes/italy",
-       "kb": 133.7
+       "kb": 133.8
       },
       {
        "path": "/homes/united-states",
@@ -1631,18 +1675,18 @@
       },
       {
        "path": "/homes/italy",
-       "kb": 127.2
+       "kb": 127.3
       },
       {
        "path": "/es/homes/spain",
-       "kb": 122.8
+       "kb": 123
       }
      ]
     },
     "languages": {
      "limit_kb": 100,
-     "pages": 2858,
-     "over": 126,
+     "pages": 2856,
+     "over": 124,
      "biggest": [
       {
        "path": "/ru/homes/united-states",
@@ -1673,7 +1717,7 @@
      "biggest": [
       {
        "path": "/es/deal/us-aventura-2750-2404-259k",
-       "kb": 54.7
+       "kb": 54.8
       },
       {
        "path": "/es/deal/us-aventura-18041-1201-260k",
@@ -1708,8 +1752,8 @@
     "why": "price_size_place",
     "key": "290000|190|vejer de la frontera|spain",
     "slugs": [
-     "live-pisos-a4dw9a",
-     "live-pisos-xpjygk"
+     "live-pisos-xpjygk",
+     "live-pisos-a4dw9a"
     ]
    }
   ]
@@ -1717,8 +1761,8 @@
  "sitemaps": {
   "sitemap-main.xml": 23,
   "sitemap-countries.xml": 292,
-  "sitemap-prices.xml": 63,
-  "sitemap-cheap-houses.xml": 357,
+  "sitemap-prices.xml": 62,
+  "sitemap-cheap-houses.xml": 355,
   "sitemap-guides.xml": 61,
   "sitemap-costs.xml": 56,
   "sitemap-blog.xml": 39,
@@ -1758,8 +1802,8 @@
   "sitemap-more.xml": 92,
   "sitemap-es-main.xml": 20,
   "sitemap-es-countries.xml": 292,
-  "sitemap-es-prices.xml": 63,
-  "sitemap-es-cheap-houses.xml": 357,
+  "sitemap-es-prices.xml": 62,
+  "sitemap-es-cheap-houses.xml": 355,
   "sitemap-es-guides.xml": 61,
   "sitemap-es-costs.xml": 56,
   "sitemap-es-blog.xml": 38,
