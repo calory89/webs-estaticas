@@ -14,7 +14,7 @@ import { t30 } from './kbx_n30a.js';   // n30a (batch 30): contract reader link 
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const COI_RX = /eco\s*beach\s*city|\bequinox\b/i;
-export const U27V = 'u27m';   // u27l: n31t compare checkbox 24 px, href on the compare link; u27k: loads /k/n31d.js on project pages (n31d); u27j: n30a script a5; u27i: n30a script a4; u27h: compare up to 4, loads /k/n30a.js (n30a)
+export const U27V = 'u27n';   // u27l: n31t compare checkbox 24 px, href on the compare link; u27k: loads /k/n31d.js on project pages (n31d); u27j: n30a script a5; u27i: n30a script a4; u27h: compare up to 4, loads /k/n30a.js (n30a)
 const pre = l => l === 'en' ? '' : '/' + l;
 const esc = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const bdi = (lang, s) => lang === 'ar' ? '<bdi>' + esc(s) + '</bdi>' : esc(s);
@@ -510,7 +510,7 @@ function client() {
       if (B.length) map.fitBounds(B, { padding: [24, 24], maxZoom: 12 });
     };
     var rs = el('button', 'kmp-r', f('mpr')); rs.type = 'button'; rs.hidden = true; fm.appendChild(rs);
-    var e0 = el('p', 'kmp-0'); e0.hidden = true; e0.setAttribute('role', 'status'); e0.appendChild(document.createTextNode(f('mp0') + ' ')); var e0b = el('button', 'kmp-r', f('mpr')); e0b.type = 'button'; e0.appendChild(e0b); if (f('mps')) { var e0a = document.createElement('a'); e0a.href = PRE + '/search/'; e0a.textContent = f('mps'); e0.appendChild(document.createTextNode(' ')); e0.appendChild(e0a); } listEl.parentNode.insertBefore(e0, listEl);
+    var e0 = el('p', 'kmp-0'); e0.hidden = true; e0.setAttribute('role', 'status'); e0.appendChild(document.createTextNode(f('mp0') + ' ')); var e0b = el('button', 'kmp-r', f('mpr')); e0b.type = 'button'; e0.appendChild(e0b); var mps = ''; try { mps = JSON.parse(document.querySelector('[data-u27x]').getAttribute('data-u27x')).s.mps || ''; } catch (e) {} if (mps) { var e0a = document.createElement('a'); e0a.href = PRE + '/search/'; e0a.textContent = mps; e0.appendChild(document.createTextNode(' ')); e0.appendChild(e0a); } listEl.parentNode.insertBefore(e0, listEl);
     var reset = function () { ['co', 'yr', 'pm', 'sc'].forEach(function (k) { if (fm.elements[k]) fm.elements[k].value = ''; }); lim = 60; draw(); };
     rs.addEventListener('click', reset); e0b.addEventListener('click', function () { reset(); fm.elements.co && fm.elements.co.focus(); });
     fetch('/api/v1/map?lang=' + LG).then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(function (j) { data = j; var sc2 = fm.elements.co; if (sc2 && sc2.options.length < 3) { j.co.forEach(function (c) { var o = el('option', null, c[1] + ' (' + c[2] + ')'); o.value = c[0]; sc2.appendChild(o); }); if (params.get('co')) sc2.value = params.get('co'); }
