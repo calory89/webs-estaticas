@@ -21,8 +21,9 @@
   function contra(c){ return ((c.claims || {}).contradicted || 0) > 0; }
   function flagged(c){ return (c.flags || []).length > 0; }
   function setMeta(t, d, url){
-    document.title = t;
     var q = function(s){ return document.querySelector(s); };
+    var l0 = q('link[rel="canonical"]'); if (l0 && l0.getAttribute('href') === url) return;   // n40 k20: the server already wrote this market's title and description (the title test in /data/ctr-changes.tsv); keep them
+    document.title = t;
     var md = q('meta[name="description"]'); if (md) md.setAttribute('content', d);
     var a = q('meta[property="og:title"]'); if (a) a.setAttribute('content', t);
     var b = q('meta[property="og:description"]'); if (b) b.setAttribute('content', d);
