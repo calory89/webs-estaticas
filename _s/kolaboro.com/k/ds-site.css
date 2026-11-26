@@ -1,4 +1,4 @@
-/* GENERATED from /k/ds.css (v 20227244e1) for pages that load site.css. The page test :has(link[href*=site.css]) is replaced by
+/* GENERATED from /k/ds.css (v 20d8e6ddc8) for pages that load site.css. The page test :has(link[href*=site.css]) is replaced by
    :not(a[data-ks]), always true with the same weight: :has() on the root made the browser restyle the whole page after every
    DOM change. Do not edit. To rebuild after ds.css changes: replace that test in a copy of ds.css, keep this comment with the
    new version, and set KB_DSS_V to the new KB_DS_V in _worker.js/index.js (while they differ the worker serves plain ds.css).
@@ -88,7 +88,7 @@
 :where(:root:not(a[data-ks])) p,:where(:root:not(a[data-ks])) li{text-wrap:pretty}
 :where(:root:not(a[data-ks])) .lead{font-size:clamp(1.08rem,1rem + .35vw,1.22rem);line-height:1.55;color:var(--k-ink-2);max-width:60ch}
 /* labels above headings: sentence case, quiet, no tracking */
-:where(:root:not(a[data-ks])) .eyebrow,:where(:root:not(a[data-ks])) .prod .eyebrow,:where(:root:not(a[data-ks])) .sec.alt .eyebrow,:where(:root:not(a[data-ks])) .alt .eyebrow,:where(:root:not(a[data-ks])) .phero .eyebrow,:where(:root:not(a[data-ks])) #machine .eyebrow,:where(:root:not(a[data-ks])) .sec-alt .eyebrow{text-transform:none;letter-spacing:0;font-size:var(--k-fs-sm);font-weight:650;color:var(--k-muted)}
+:where(:root:not(a[data-ks])) .eyebrow,:where(:root:not(a[data-ks])) .sec.alt .eyebrow,:where(:root:not(a[data-ks])) .alt .eyebrow,:where(:root:not(a[data-ks])) .phero .eyebrow,:where(:root:not(a[data-ks])) #machine .eyebrow,:where(:root:not(a[data-ks])) .sec-alt .eyebrow{text-transform:none;letter-spacing:0;font-size:var(--k-fs-sm);font-weight:650;color:var(--k-muted)}
 :root[data-theme=dark]:not(a[data-ks]) .eyebrow,:root[data-theme=dark]:not(a[data-ks]) #machine .eyebrow,:root[data-theme=dark]:not(a[data-ks]) .sec-alt .eyebrow{color:var(--k-muted)}
 :where(:root:not(a[data-ks])) .ask .eyebrow{color:var(--k-band-muted)}
 
@@ -362,22 +362,13 @@ a.k-src:hover{color:var(--k-sea);border-bottom-color:currentColor}
 :where(:root:not(a[data-ks])) .hero .hero-alt a{font-weight:650;color:var(--k-ink);text-decoration:underline;text-decoration-color:var(--k-brand);text-decoration-thickness:2px;text-underline-offset:.25em}
 :where(:root:not(a[data-ks])) .hero .launch{margin-top:14px;font-size:var(--k-fs-sm);color:var(--k-muted)}
 :where(:root:not(a[data-ks])) .hero .launch a{color:var(--k-ink-2)}
-:where(:root:not(a[data-ks])) .insp{border-radius:var(--k-r-lg)!important;box-shadow:var(--k-sh-3)!important}
 :where(:root:not(a[data-ks])) .hero .example a{color:var(--k-muted);font-size:var(--k-fs-xs)}
-:where(:root:not(a[data-ks])) .insp-legend b{background:var(--k-ink);color:var(--k-surface)}
 @media (max-width:560px){:where(:root:not(a[data-ks])) .hero h1{font-size:clamp(2.3rem,10.5vw,3rem)}:where(:root:not(a[data-ks])) .hero .lead{font-size:1.05rem}}
 
-/* the numbers strip: light, readable, still one line on desktop */
-:where(:root:not(a[data-ks])) .r28-strip{background:var(--k-surface);border-block:1px solid var(--k-line)}
-:where(:root:not(a[data-ks])) .r28-strip a{color:var(--k-ink-2);font-size:var(--k-fs-sm)}
-:where(:root:not(a[data-ks])) .r28-strip b{color:var(--k-ink)}
-:where(:root:not(a[data-ks])) .r28-strip em{color:var(--k-sea);font-weight:650}
-:where(:root:not(a[data-ks])) .r28-dot{background:var(--k-ok)!important}
+/* the numbers strip: light, readable{background:var(--k-surface);border-block:1px solid var(--k-line)}
 :where(:root:not(a[data-ks])) .trust{background:var(--k-paper);border-bottom:1px solid var(--k-line)}
-:where(:root:not(a[data-ks])) .tr-l{text-transform:none;letter-spacing:0;font-size:var(--k-fs-sm);font-weight:650;color:var(--k-ink)}
 :where(:root:not(a[data-ks])) .trust a{font-size:var(--k-fs-sm);color:var(--k-ink-2)}
 :where(:root:not(a[data-ks])) .lv{background:var(--k-paper)}
-:where(:root:not(a[data-ks])) .lv-h{text-transform:none!important;letter-spacing:0!important;font-size:var(--k-fs-sm)!important;font-weight:650!important}
 :where(:root:not(a[data-ks])) .lv-l>li{border-radius:var(--k-r-md)!important;border-color:var(--k-line)!important;background:var(--k-surface)!important;box-shadow:none!important}
 
 /* how it works: a real sequence, so numbered; quiet nodes */
@@ -393,24 +384,6 @@ a.k-src:hover{color:var(--k-sea);border-bottom-color:currentColor}
 :where(:root:not(a[data-ks])) .fd-m em{text-transform:none!important;letter-spacing:0!important;font-size:var(--k-fs-xs)!important;font-weight:640!important}
 :where(:root:not(a[data-ks])) .fd-t{font-size:var(--k-fs-md);line-height:1.5}
 :where(:root:not(a[data-ks])) .fd-x{color:var(--k-muted);font-size:var(--k-fs-xs)}
-
-/* product + tools */
-:where(:root:not(a[data-ks])) .prod-shot,:where(:root:not(a[data-ks])) .prod-vid{border-radius:var(--k-r-lg)!important}
-:where(:root:not(a[data-ks])) .prod-stack{border-radius:var(--k-r-md)!important;border-color:var(--k-line)!important;background:var(--k-line)!important}
-:where(:root:not(a[data-ks])) .prod-stack a b{font-stretch:var(--k-wdisplay);font-weight:720}
-:where(:root:not(a[data-ks])) .prod-stack a span::after{content:none}
-:where(:root:not(a[data-ks])) .prod-stack a:hover{background:var(--k-sea-soft)}
-:where(:root:not(a[data-ks])) .r21-try a{border-radius:var(--k-r-md);border-color:var(--k-line)}
-:where(:root:not(a[data-ks])) .r21-try a:hover{transform:none;border-color:var(--k-line-2);box-shadow:var(--k-sh-2)}
-:where(:root:not(a[data-ks])) .r21-try a b{font-size:var(--k-fs-md)}
-:where(:root:not(a[data-ks])) .r21-try a .d{color:var(--k-ink-2);font-size:var(--k-fs-sm)}
-:where(:root:not(a[data-ks])) .r21-try a em{font-style:normal;color:var(--k-sea);font-weight:650;font-size:var(--k-fs-sm);margin-top:auto}
-
-/* buying alone vs with Kolaboro */
-:where(:root:not(a[data-ks])) .vs-hk,:where(:root:not(a[data-ks])) .vs-k{background:var(--k-band)!important}
-:where(:root:not(a[data-ks])) .vs-hk{border-radius:var(--k-r-lg) var(--k-r-lg) 0 0!important}
-:where(:root:not(a[data-ks])) .vs-row:last-child .vs-k{border-radius:0 0 var(--k-r-lg) var(--k-r-lg)!important}
-:where(:root:not(a[data-ks])) .vs-k .vs-tag{color:var(--k-band-muted)!important}
 
 /* prices */
 :where(:root:not(a[data-ks])) .tile{border:1px solid var(--k-line)!important;border-radius:var(--k-r-lg)!important;background:var(--k-surface);box-shadow:none!important}
@@ -439,7 +412,7 @@ a.k-src:hover{color:var(--k-sea);border-bottom-color:currentColor}
 :where(:root:not(a[data-ks])) .perk{border-radius:var(--k-r-md)!important;background:var(--k-sunken)!important;border:0!important}
 :where(:root:not(a[data-ks])) .start .f input,:where(:root:not(a[data-ks])) .start .f select,:where(:root:not(a[data-ks])) .start .f textarea,:where(:root:not(a[data-ks])) .start input:not([type=radio]):not([type=checkbox]),:where(:root:not(a[data-ks])) .start textarea,:where(:root:not(a[data-ks])) .start select{border:1px solid var(--k-field)!important;border-radius:var(--k-r-sm)!important;background:var(--k-surface)!important;min-height:48px}
 /* sentence case everywhere: legacy labels that were tracked ALL CAPS */
-:where(:root:not(a[data-ks])) .toast b,:where(:root:not(a[data-ks])) .file span,:where(:root:not(a[data-ks])) .cq-h,:where(:root:not(a[data-ks])) .ptable th,:where(:root:not(a[data-ks])) .pcard span,:where(:root:not(a[data-ks])) .az-k,:where(:root:not(a[data-ks])) .az-facts span,:where(:root:not(a[data-ks])) .cp-status span,:where(:root:not(a[data-ks])) .mk-t th,:where(:root:not(a[data-ks])) .rp-k,:where(:root:not(a[data-ks])) .rp-t th,:where(:root:not(a[data-ks])) .t20-pill,:where(:root:not(a[data-ks])) .r21-try i,:where(:root:not(a[data-ks])) .st-t th,:where(:root:not(a[data-ks])) .ct-f span,:where(:root:not(a[data-ks])) .x-area span,:where(:root:not(a[data-ks])) .f-kpis span,:where(:root:not(a[data-ks])) .kv,:where(:root:not(a[data-ks])) .ship-l,:where(:root:not(a[data-ks])) .rm-i em,:where(:root:not(a[data-ks])) .vs-h,:where(:root:not(a[data-ks])) .vs-tag,:where(:root:not(a[data-ks])) .trust .tr-l,:where(:root:not(a[data-ks])) .cl-feed em,:where(:root:not(a[data-ks])) .kx-sc-h b,:where(:root:not(a[data-ks])) .kx-sc-t th,:where(:root:not(a[data-ks])) .toc-m-l{text-transform:none!important;letter-spacing:0!important}
+:where(:root:not(a[data-ks])) .toast b,:where(:root:not(a[data-ks])) .file span,:where(:root:not(a[data-ks])) .cq-h,:where(:root:not(a[data-ks])) .ptable th,:where(:root:not(a[data-ks])) .pcard span,:where(:root:not(a[data-ks])) .az-k,:where(:root:not(a[data-ks])) .az-facts span,:where(:root:not(a[data-ks])) .cp-status span,:where(:root:not(a[data-ks])) .mk-t th,:where(:root:not(a[data-ks])) .rp-k,:where(:root:not(a[data-ks])) .rp-t th,:where(:root:not(a[data-ks])) .t20-pill,:where(:root:not(a[data-ks])) .st-t th,:where(:root:not(a[data-ks])) .ct-f span,:where(:root:not(a[data-ks])) .x-area span,:where(:root:not(a[data-ks])) .f-kpis span,:where(:root:not(a[data-ks])) .kv,:where(:root:not(a[data-ks])) .ship-l,:where(:root:not(a[data-ks])) .rm-i em,:where(:root:not(a[data-ks])) .cl-feed em,:where(:root:not(a[data-ks])) .kx-sc-h b,:where(:root:not(a[data-ks])) .kx-sc-t th,:where(:root:not(a[data-ks])) .toc-m-l{text-transform:none!important;letter-spacing:0!important}
 :where(:root:not(a[data-ks])) .faq-card a{color:var(--k-sea)!important;font-weight:650!important}
 /* header icon buttons: hairline instead of heavy outlines */
 :where(:root:not(a[data-ks])) .burger,:where(:root:not(a[data-ks])) .kx-sb{border:1px solid var(--k-line-2)!important;border-radius:var(--k-r-sm)!important;background:var(--k-surface)!important;color:var(--k-ink)!important}
@@ -551,8 +524,7 @@ a.k-src:hover{color:var(--k-sea);border-bottom-color:currentColor}
 /* home, first screen: one promise, the search, one short proof line (server-rendered, one line reserved so nothing moves) */
 :root:not(a[data-ks]) .hero .hp-proof{display:flex;align-items:baseline;gap:10px;margin:var(--k-4) 0 0;min-height:1.5em;font-size:var(--k-fs-sm);line-height:1.5;color:var(--k-ink-2);max-width:62ch;font-variant-numeric:tabular-nums}
 :root:not(a[data-ks]) .hero .hp-proof i{flex:none;width:8px;height:8px;border-radius:50%;background:var(--k-ok);box-shadow:0 0 0 3px color-mix(in srgb,var(--k-ok) 22%,transparent);transform:translateY(-1px)}
-/* home, below the hero: the numbers as four figures under a heavy rule, then the quieter links */
-:root:not(a[data-ks]) .hp-band+.r28-strip{border-top:0}
+/* home, below the hero: the numbers as four figures under a heavy rule{border-top:0}
 :root:not(a[data-ks]) .hp-h{font-size:var(--k-fs-xl);font-weight:680;letter-spacing:-.012em;line-height:1.2;margin:0 0 var(--k-5);color:var(--k-ink)}
 :root:not(a[data-ks]) :is(.hp-stats,.n38-t){display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0 var(--k-6);list-style:none;margin:0;padding:0}
 :root:not(a[data-ks]) .hp-stats>li{border-top:1px solid rgba(255,255,255,.28);margin:0}
@@ -576,7 +548,6 @@ a.k-src:hover{color:var(--k-sea);border-bottom-color:currentColor}
 :root:not(a[data-ks]) .hp-band .n33-ms .wrap{padding:0;max-width:none;width:auto;margin:0}
 :root:not(a[data-ks]) .hp-band .n33-ms b{font-weight:600;color:var(--k-ink-2)}
 :root:not(a[data-ks]) .hp-band .n33-ms a{color:var(--k-ink-2)}
-:root:not(a[data-ks]) .k27hs-c{border-color:var(--k-line);border-radius:var(--k-r-lg);background:var(--k-surface)}
 @media (max-width:899px){
   :root:not(a[data-ks]) :is(.hp-stats,.n38-t){grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--k-2) var(--k-5)}
   :root:not(a[data-ks]) .hp-more{justify-content:flex-start}
@@ -673,8 +644,6 @@ a.k-src:hover{color:var(--k-sea);border-bottom-color:currentColor}
 :root:not(a[data-ks]) .hero .hero-check.k-omni input{border:0!important;box-shadow:none!important;background:transparent}
 :root:not(a[data-ks]) .hero .hero-check.k-omni .btn{border-radius:var(--k-r-md)}
 :root:not(a[data-ks]) .hero .hp-proof{color:var(--k-ink-2)}
-:root:not(a[data-ks]) .insp{border-radius:var(--k-r-xl)!important;box-shadow:0 30px 60px -30px rgba(14,26,43,.45)!important}
-:root:not(a[data-ks]) .insp-legend b{background:var(--k-ink)!important;color:var(--k-surface)!important}
 
 /* key numbers band: ink sheet with serif numerals */
 :root:not(a[data-ks]) .hp-band{background:var(--k-band);color:var(--k-band-ink);border:0;margin:0;padding-block:clamp(36px,4.4vw,64px)}
@@ -714,7 +683,6 @@ a.k-src:hover{color:var(--k-sea);border-bottom-color:currentColor}
 :where(:root:not(a[data-ks])) :is(.ship-l,.ship-r){background:var(--k-sunken);box-shadow:12px 0 14px var(--k-sunken);color:var(--k-ink-2);text-transform:none;letter-spacing:0;font-size:12px;font-weight:600}
 :root:not(a[data-ks]) .ship-r{box-shadow:-12px 0 14px var(--k-sunken);color:var(--k-brand-ink)}
 :root:not(a[data-ks]) .ship a:focus-visible{outline-color:var(--k-sea)}
-:where(:root:not(a[data-ks])) :is(.finale,.tag,.tile .tag,.f-ini,.pv-img i,.mm-rank,.look .n,.play){color:var(--k-on-brand)}
 :root:not(a[data-ks]) .mk-ti .big{font-family:var(--k-display);font-weight:600;letter-spacing:-.03em}
 :root:not(a[data-ks]) .mk-ti .rk{background:#FFFFFF;color:#0E1A2B;font-weight:650;border-radius:var(--k-r-sm)}
 :root:not(a[data-ks]) .mk-ti h2{font-size:var(--k-fs-xl)}
@@ -764,5 +732,5 @@ a.k-src:hover{color:var(--k-sea);border-bottom-color:currentColor}
 /* one search on the home page: the hero box already matches project names, so the second box under the numbers is left out there */
 :root:not(a[data-ks]) #hp-band+#n40-late{display:none}
 /* home rhythm: every section gets the same generous spacing and a hairline between plain sections */
-:root:not(a[data-ks]) main>:is(.how,.sec,.founder,.start,.kg27){padding-block:var(--k-sec)}
-:root:not(a[data-ks]) main>:is(.how,.sec:not(.alt),.kg27)+:is(.how,.sec:not(.alt),.kg27){border-top:1px solid var(--k-line)}
+:root:not(a[data-ks]) main:has(>.hero>.hero-grid>.hsr-c)>:is(.how,.sec,.founder,.start,.kg27){padding-block:var(--k-sec)}
+:root:not(a[data-ks]) main:has(>.hero>.hero-grid>.hsr-c)>:is(.how,.sec:not(.alt),.kg27)+:is(.how,.sec:not(.alt),.kg27){border-top:1px solid var(--k-line)}
