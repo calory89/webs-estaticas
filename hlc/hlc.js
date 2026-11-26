@@ -472,7 +472,7 @@ document.documentElement.classList.add('hlc-js');
       var dest=box.getAttribute('data-dest')||'';
       fetch(VAPI+'?action=list'+(dest?'&dest='+encodeURIComponent(dest):'')).then(function(r){return r.json();}).then(function(j){
         var L=(j&&j.videos)||[];var grid=box.querySelector('.vw-grid')||box;
-        if(!L.length){if(box.hasAttribute('data-hide-empty'))return;grid.innerHTML='<p class="vw-empty">'+T('Aún no hay vídeos publicados. ¡El tuyo puede ser el primero!','No videos yet. Yours could be the first!')+'</p>';return;}
+        if(!L.length){var h=box.querySelector('h2'),nm=h?h.textContent.replace(/\s+(en v\u00eddeo|on video)$/i,'').trim():'';grid.innerHTML='<p class="vw-empty">'+(nm?T('\u00bfHas estado en '+nm+'? Comparte tu v\u00eddeo y lo publicamos con tu nombre.','Been to '+nm+'? Share your video and we will publish it with your name.'):T('A\u00fan no hay v\u00eddeos publicados. \u00a1El tuyo puede ser el primero!','No videos yet. Yours could be the first!'))+'</p>';box.hidden=false;return;}
         grid.innerHTML=L.map(vCard).join('');box.hidden=false;
         grid.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('.vw-yt');if(!b)return;var f=d.createElement('iframe');f.src='https://www.youtube-nocookie.com/embed/'+b.getAttribute('data-yt')+'?autoplay=1';f.allow='autoplay; encrypted-media; picture-in-picture';f.allowFullscreen=true;f.title='YouTube';b.replaceWith(f);});
       }).catch(function(){});

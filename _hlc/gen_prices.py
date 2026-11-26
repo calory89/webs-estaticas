@@ -11,6 +11,11 @@ import en_names
 SITE = G.SITE
 CAL = 'https://gmdalfsvtfhzepyrdmjj.supabase.co/functions/v1/hlc-alerts?action=calendar&slug='
 SPAIN = ['Madrid', 'Barcelona', 'Málaga', 'Valencia', 'Sevilla', 'Bilbao', 'Alicante', 'Palma', 'Ibiza', 'Gran Canaria', 'Zaragoza', 'Santiago de Compostela']
+# Ciudades de habla inglesa que vigilamos: la edicion inglesa encabeza con
+# estas. Antes el titulo de /en/flights/to/lisbon/ ponia 38 EUR y el precio
+# salia de Malaga, y la pagina llevaba 304 impresiones y cero clics.
+EN_HOME = ['London', 'Manchester', 'Dublin', 'New York', 'Toronto', 'Sydney', 'Singapore', 'Dubai',
+           'Londres', 'Dublín', 'Nueva York', 'Sídney', 'Singapur', 'Dubái']
 PREF = ['Madrid', 'Barcelona', 'Londres', 'París', 'Nueva York', 'Málaga', 'Valencia', 'Ámsterdam', 'Berlín', 'Milán', 'Roma', 'Lisboa', 'Dublín', 'Toronto', 'Sídney', 'Singapur', 'Dubái']
 MES_ES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre']
 MES_EN = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
@@ -178,11 +183,21 @@ def dest_page(d, lst, meses, en, en_slug, guide):
     url = url_en if en else url_es
     mt, best = months_table(sorted(lst, key=lambda r: PREF.index(r['origin']) if r['origin'] in PREF else 99), meses, en, lambda r: f'{oname(r)} → {name}')
     if en:
-        title = f'Flight deals to {name} from €{r0["price_from"]} ({NOW_EN})'  # así lo buscan: «flight deals to X»
-        lead = (f'The cheapest return flight to {name} we found leaves from {oname(r0)} for {r0["price_from"]} € ({stops(f0.get("escalas_ida"), True)}, {f0.get("aerolinea") or "several airlines"}). '
-                f'The usual price across the {len(lst)} cities we track is about {int(statistics.median(meds))} € (median).') if meds else f'Return flights to {name} from {len(lst)} cities, with the lowest price we found.'
-        qas = [(f'How much is a flight to {name}?', f'The cheapest return flight we found was {r0["price_from"]} € from {oname(r0)} (search on {fd(f0.get("consultado"), True)}). ' + (f'The usual price across the {len(lst)} cities we track is about {int(statistics.median(meds))} € (median).' if meds else '')),
+        # El lector de la edicion inglesa esta en Reino Unido, Irlanda, Estados
+        # Unidos o Canada: un vuelo que sale de Malaga no le sirve. Encabeza la
+        # ciudad de habla inglesa mas barata, y el mas barato de todos se dice
+        # igualmente, con su ciudad, en la misma frase.
+        en_lst = [r for r in lst if r['origin'] in EN_HOME]
+        r1 = en_lst[0] if en_lst else r0
+        f1 = r1.get('facts') or {}
+        title = f'Cheap flights to {name} from {oname(r1)}: €{r1["price_from"]} ({NOW_EN})' if en_lst else f'Flight deals to {name} from €{r0["price_from"]} ({NOW_EN})'
+        lead = (f'The cheapest return flight to {name} from {oname(r1)} we found is {r1["price_from"]} € ({stops(f1.get("escalas_ida"), True)}, {f1.get("aerolinea") or "several airlines"}). '
+                + (f'Cheaper still from {oname(r0)}, at {r0["price_from"]} €. ' if r0 is not r1 else '')
+                + (f'The usual price across the {len(lst)} cities we track is about {int(statistics.median(meds))} € (median).' if meds else ''))
+        qas = [(f'How much is a flight to {name}?', f'From {oname(r1)}, the cheapest return we found was {r1["price_from"]} € (search on {fd(f1.get("consultado"), True)}). ' + (f'Across all {len(lst)} cities we track the cheapest was {r0["price_from"]} € from {oname(r0)}, and the usual price is about {int(statistics.median(meds))} € (median).' if meds else '')),
                (f'Which city has the cheapest flights to {name}?', 'Cheapest departures: ' + ', '.join(f'{oname(r)} ({r["price_from"]} €)' for r in lst[:3]) + '.')]
+        if en_lst:
+            qas.append((f'How much is a flight to {name} from the UK or Ireland?', 'Cheapest from the English-speaking cities we track: ' + ', '.join(f'{oname(r)} ({r["price_from"]} €)' for r in en_lst[:4]) + '.'))
         if direct:
             qas.append((f'Are there direct flights to {name}?', f'Yes, we found direct flights from {len(direct)} of the cities we track: ' + ', '.join(oname(r) for r in direct[:8]) + ('…' if len(direct) > 8 else '.')))
         else:
