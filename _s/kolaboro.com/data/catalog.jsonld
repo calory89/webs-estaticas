@@ -26,7 +26,7 @@
   "@id": "http://publications.europa.eu/resource/authority/language/ENG"
  },
  "dct:modified": {
-  "@value": "2026-11-26T18:47:50Z",
+  "@value": "2026-11-26T18:58:04Z",
   "@type": "xsd:dateTime"
  },
  "dct:license": {
@@ -26596,7 +26596,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "969908",
+      "@value": "972800",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -26610,7 +26610,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "72672c757e6ea232bbea5ef52c20a2778889e4278a8a522760b15529ec002d95"
+      "spdx:checksumValue": "0158d32cbb8926a1729a560c0210bdad8ef868db141731e46e54667f6b4d5336"
      }
     }
    ],
