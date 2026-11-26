@@ -104,7 +104,7 @@
     h += '<a class="btn btn-line" href="/database#ask">Ask about this market</a></div></div></section>';
     var hs = function(k, t, m){ var on = m === k || (k === 'desc' && m === 'asc'); return '<span' + (on ? ' class="on"' : '') + '><button type="button" class="mk-hs" data-s="' + (k === 'desc' && m === 'desc' ? 'asc' : k) + '" aria-label="Sort by ' + t.toLowerCase() + '">' + t + '<i aria-hidden="true">' + (on ? (m === 'asc' ? '↑' : '↓') : '↕') + '</i></button></span>'; };
     var R = [], shown = 0, PAGE = 50;
-    function more(n){ var el = $('mk-list'), add = R.slice(shown, shown + n); if (add.length) el.insertAdjacentHTML('beforeend', add.join('')); shown += add.length; bar(); }
+    function more(n){ var el = $('mk-list'), add = R.slice(shown, shown + n).map(function(c){ return row(c, showMarket); }); if (add.length) el.insertAdjacentHTML('beforeend', add.join('')); shown += add.length; bar(); }
     function bar(){ var mb = $('mk-more'); if (!mb) return; var left = R.length - shown;
       mb.innerHTML = R.length ? '<p class="mk-cnt" role="status">Showing ' + fmt(shown) + ' of ' + fmt(R.length) + ' project' + (R.length === 1 ? '' : 's') + '</p>' + (left > 0 ? '<button type="button" class="btn btn-line" id="mk-mb">Show ' + Math.min(PAGE, left) + ' more</button>' + (left > PAGE ? '<button type="button" class="btn btn-line" id="mk-all">Show all ' + fmt(R.length) + '</button>' : '') : '') : '';
       var b1 = $('mk-mb'), b2 = $('mk-all'); if (b1) b1.onclick = function(){ var f = shown; more(PAGE); focusRow(f); }; if (b2) b2.onclick = function(){ var f = shown; more(R.length); focusRow(f); }; }
@@ -113,7 +113,7 @@
       var s = C.filter(pass).sort(byScore); if (mode === 'asc') s.reverse();
       if (mode === 'conf') s.sort(function(a, b){ return (b.vscore || 0) - (a.vscore || 0) || byScore(a, b); });
       if (mode === 'name') s.sort(function(a, b){ var x = nm(a) || a.id, y = nm(b) || b.id; return x.localeCompare(y, 'en', { sensitivity: 'base' }); });
-      R = s.map(function(c){ return row(c, showMarket); }); shown = 0;
+      R = s; shown = 0;   // n40 d10: rows are built 50 at a time, when shown
       var el = $('mk-list');
       // n40 d9: 50 rows at first and on each "Show more" (Dubai rendered all 1,154 rows, 62,000 px); the header row stays on screen while the list scrolls
       el.innerHTML = '<li class="mk-hd">' + hs('name', 'Project', mode) + '<span>' + (showMarket ? 'Market, stage, price' : 'Stage, price') + '</span>' + hs('desc', 'Published', mode) + hs('conf', 'Confirmed', mode) + '<span>Signals</span></li>' +
@@ -191,7 +191,7 @@
       '<section class="mk-sec"><div class="wrap"><p class="eyebrow">More</p><h2>' + (sibs.length ? 'Other markets in ' + esc(country) : 'Other markets') + '</h2>' +
       (sibs.length ? chips(sibs.map(function(m){ return { name: m, n: sib[m], href: mlink(m) }; })) + '<div class="mk-acts"><a class="btn btn-line" href="' + clink(country) + '">All of ' + esc(country) + '</a>' : '<p class="sub">' + esc(market) + ' is the only market we track in ' + esc(country) + ' so far.</p><div class="mk-acts">') +
       '<a class="btn btn-line" href="/transparency-index/">Transparency index</a><a class="btn btn-line" href="/m/">All markets</a></div></div></section>' + cta();
-    wireSort(L.draw); indices(market);
+    setTimeout(function(){ wireSort(L.draw); indices(market); }, 0);   // n40 d10: the list in its own task (shorter main-thread blocks)
     var t = 'Off-plan in ' + place + ': ' + C.length + ' project' + pl + ' checked | Kolaboro';
     var desc = C.length + ' off-plan project' + pl + ' in ' + market + ': ' + pct(share(C, 'permit')) + ' publish a permit number, ' + pct(share(C, 'escrow')) + ' publish deposit protection' + (r ? ', transparency index ' + r.index.toFixed(1) + ' (rank ' + r.rank + ' of ' + R.rows.length + ')' : '') + '.';
     setMeta(t, desc, BASE + encodeURIComponent(market.toLowerCase().replace(/\s+/g, '-')) + '/');
@@ -232,7 +232,8 @@
   }
 
   var url = (K.dataUrl ? K.dataUrl() : '/data/bali-cases.json?t=' + Math.floor(Date.now() / 6e5));
-  fetch(url).then(function(r){ if (!r.ok) throw new Error('data ' + r.status); return r.json(); }).then(function(d){ return SLP ? SLP.then(function(){ return d; }) : d; }).then(function(d){
+  fetch(url).then(function(r){ if (!r.ok) throw new Error('data ' + r.status); return r.json(); }).then(function(d){ return SLP ? SLP.then(function(){ return d; }) : d; }).then(function(d){ return new Promise(function(ok){ setTimeout(function(){ ok(d); }, 0); }); }).then(function(d){   // n40 d10: render after a yield, not in the parsing task
+
     var C = d.cases || [], p = params(), mk = {}, co = {};
     C.forEach(function(c){ if (c.market) mk[norm(c.market)] = c.market; if (c.country) co[norm(c.country)] = c.country; });
     var R = K.compute ? K.compute(d) : { rows: [] };
