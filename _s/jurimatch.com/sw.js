@@ -14,7 +14,7 @@
  *
  * Emergency off switch: publish a sw.js that only calls self.registration.unregister().
  */
-const VERSION = "bb1ac2a880f5";
+const VERSION = "abc7c9616a08";
 const ASSETS = `jm-assets-${VERSION}`;
 const SHELL = `jm-shell-${VERSION}`;
 // Not code: the list of visited tools survives new versions.
