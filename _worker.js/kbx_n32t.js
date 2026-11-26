@@ -11,14 +11,16 @@
 // otherwise the URL keeps answering 404, so no half-English page is published. Text the tool scripts write later (results) is
 // translated in the browser by /k/n32t.js with the same dictionary. Dates and place names are put in the page language with Intl and
 // kbx_hdate.js. Sumba, Eco Beach City and Equinox: nothing here adds a project; the English pages already leave them out.
-import { mkName, coName } from './kbx_hdate.js';
+import { mkName, coName, ruPlaces } from './kbx_hdate.js';
 
 const ORIGIN = 'https://kolaboro.com';
 const L7 = ['es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'], LANGS = ['en'].concat(L7);
 const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar-u-nu-latn' };   // Arabic with Latin digits, as the rest of the site
 export const N32T_V = 'n32t5';   // n32t5: numbers in the page locale on the server (n38 d5)
-export const PATHS = /^\/(?:es|de|fr|nl|ru|zh|ar)\/(?:tools\/[a-z-]{3,30}|new|vs|m|registers)\/?$/;
+export const PATHS = /^\/(?:es|de|fr|nl|ru|zh|ar)\/(?:tools\/[a-z-]{3,30}|new|vs|m|registers|countries\/[a-z0-9-]{2,60}\/(?:how-to-check|is-it-safe)|rankings\/most-delayed(?:\/[a-z0-9-]{2,60})?)\/?$/;
 export const EN_RX = /^\/(?:tools\/[a-z-]{3,30}|new|vs|m|registers)\/$/;
+// n40 L1: the country guides and the delay rankings (kbx_seo.js) share one dictionary per language, /data/n32t/<lang>/guides.json, on top of the registers one
+const FAM = k => /^(?:countries\/[a-z0-9-]+\/(?:how-to-check|is-it-safe)|rankings\/most-delayed(?:\/[a-z0-9-]+)?)$/.test(k) ? 'guides' : null;
 const pre = l => l === 'en' ? '' : '/' + l;
 const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
@@ -31,7 +33,7 @@ async function asset(env, p, json) {
   MEMO.set(p, { t: Date.now(), v }); return v;
 }
 const manifest = async env => (await asset(env, '/data/n32t/manifest.json', true)) || { pages: {} };
-export async function langsOf(env, key) { const M = await manifest(env); return (M.pages && M.pages[key]) || []; }
+export async function langsOf(env, key) { const M = await manifest(env); return (M.pages && M.pages[FAM(key) || key]) || []; }
 // paths ('/tools/risk/') that exist in this language: ours plus the tool pages other modules already serve in 8 languages
 const OTHER = ['/tools/bulk-check/', '/tools/contract-addendum/', '/tools/contract-reader/', '/tools/permit-photo/', '/tools/widget/', '/tools/find-listing/', '/tools/handover-history/', '/tools/visa-by-investment/', '/tools/compare-countries/', '/tools/on-time/', '/tools/request-documents/', '/tools/inheritance/', '/tools/foreign-mortgages/', '/tools/area-report/', '/tools/translate/', '/tools/receipt-check/', '/tools/payment-vs-progress/'];
 export async function localSet(env, lang) {
@@ -41,7 +43,7 @@ export async function localSet(env, lang) {
   try { const { mdata } = await import('./kbx_n29i.js'), D = await mdata(env); for (const c of D.C.keys()) S.add('/countries/' + c + '/'); for (const k of D.M.keys()) S.add('/m/' + k + '/'); } catch (e) {}
   return S;
 }
-const FIXED = /^\/(?:|check\/?|pricing\/|how-we-score\/|about\/|checklist\/|database\/|cases\/|apply\/|tools\/|glossary\/|docs\/|projects\/(?:[a-z0-9-]{1,90}\/)?|developers\/(?:[a-z0-9-]{1,90}\/)?|countries\/|rankings\/(?:[a-z0-9-]{2,60}\/)?|guides\/buyers-from\/(?:[a-z]+\/)?|reports\/month\/|satellite\/monthly\/|watch\/new-websites\/|app\/)$/;
+const FIXED = /^\/(?:|countries\/[a-z0-9-]+\/(?:how-to-check|is-it-safe)\/|rankings\/most-delayed\/(?:[a-z0-9-]+\/)?|check\/?|pricing\/|how-we-score\/|about\/|checklist\/|database\/|cases\/|apply\/|tools\/|glossary\/|docs\/|projects\/(?:[a-z0-9-]{1,90}\/)?|developers\/(?:[a-z0-9-]{1,90}\/)?|countries\/|rankings\/(?:[a-z0-9-]{2,60}\/)?|guides\/buyers-from\/(?:[a-z]+\/)?|reports\/month\/|satellite\/monthly\/|watch\/new-websites\/|app\/)$/;
 function locHref(h, lang, LS) {
   if (!/^\/(?!\/)/.test(h) || /^\/(?:es|de|fr|nl|ru|zh|ar)\//.test(h)) return h;
   const i = h.search(/[?#]/), p = i < 0 ? h : h.slice(0, i);
@@ -57,13 +59,12 @@ const encA = s => enc(s).replace(/"/g, '&quot;');
 const SEP = /^[\s/·|›>]+/;
 const DCACHE = new Map();
 async function dict(env, lang, key) {
-  const k = lang + ':' + key, c = DCACHE.get(k); if (c && Date.now() - c.t < 600000) return c.v;
-  const f = key.replace(/\//g, '-');
-  const [a, b] = await Promise.all([asset(env, '/data/n32t/' + lang + '/_common.json', true), asset(env, '/data/n32t/' + lang + '/' + f + '.json', true)]);
+  const fm = FAM(key), f = fm || key.replace(/\//g, '-'), k = lang + ':' + f, c = DCACHE.get(k); if (c && Date.now() - c.t < 600000) return c.v;
+  const [a, b, r] = await Promise.all([asset(env, '/data/n32t/' + lang + '/_common.json', true), asset(env, '/data/n32t/' + lang + '/' + f + '.json', true), fm ? asset(env, '/data/n32t/' + lang + '/registers.json', true) : null]);
   let v = null;
   if (b && b.s) {
-    const s = Object.assign({}, (a && a.s) || {}, b.s), P = [], H = [];   // H: patterns that span inline markup ("tracks <b>{n}</b> projects"), applied to the HTML first
-    for (const [src, out] of ((a && a.p) || []).concat(b.p || [])) { const names = [], html = src.includes('<'); const rx = new RegExp((html ? '' : '^') + src.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\\\{(\w+)\\\}/g, (m, n) => { names.push(n); return html ? '([^<>"]*?)' : '(.+?)'; }) + (html ? '' : '$'), html ? 'g' : ''); (html ? H : P).push([rx, out, names]); }
+    const s = Object.assign({}, (a && a.s) || {}, (r && r.s) || {}, b.s), P = [], H = [];   // H: patterns that span inline markup ("tracks <b>{n}</b> projects"), applied to the HTML first
+    for (const [src, out] of ((a && a.p) || []).concat((r && r.p) || [], b.p || [])) { const names = [], html = src.includes('<'); const rx = new RegExp((html ? '' : '^') + src.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\\\{(\w+)\\\}/g, (m, n) => { names.push(n); return html ? '([^<>"]*?)' : '(.+?)'; }) + (html ? '' : '$'), html ? 'g' : ''); (html ? H : P).push([rx, out, names]); }
     v = { s, P, H, t: b.t, d: b.d, h: b.h || null, lang };
   }
   DCACHE.set(k, { t: Date.now(), v }); return v;
@@ -85,9 +86,11 @@ function place(s, lang) {
   const parts = s.split(', '); if (parts.length > 1) { const t = parts.map(p => mkName(p, lang)); if (t.some((x, i) => x !== parts[i])) return t.join(', '); }
   const c = coName(s, lang); return c && c !== s ? c : null;
 }
+// {name} takes the value's own translation, a date or a place name; {name|in} the entry "in:<value>" ("in der Türkei", "aux Émirats arabes unis") (n40 L1)
+const fill = (D, out, names, g, e) => out.replace(/\{(\w+)(?:\|(\w+))?\}/g, (z, k, md) => { const i = names.indexOf(k); if (i < 0) return z; const v = dec(g(i)).trim(), x = md && D.s[md + ':' + v] != null ? D.s[md + ':' + v] : D.s[v] != null ? D.s[v] : v.includes('; ') ? v.split('; ').map(z => D.s[z] != null ? D.s[z] : (auto(z, D.lang) || z)).join('; ') : (auto(v, D.lang) || v); return e ? e(x) : x; });
 function T(D, s) {
   if (D.s[s] != null) return D.s[s];
-  for (const [rx, out, names] of D.P) { const m = rx.exec(s); if (m) return out.replace(/\{(\w+)\}/g, (z, k) => { const i = names.indexOf(k); if (i < 0) return z; const v = m[i + 1]; return D.s[v] != null ? D.s[v] : (auto(v, D.lang) || v); }); }
+  for (const [rx, out, names] of D.P) { const m = rx.exec(s); if (m) return fill(D, out, names, i => m[i + 1]); }
   return auto(s, D.lang);
 }
 function trText(D, raw) {
@@ -99,7 +102,7 @@ function trText(D, raw) {
 const ATTR = /(\s(?:placeholder|aria-label|title|alt|data-l|data-label|data-n32)=")([^"]*)(")/g;
 export function trHtml(html, D, LS) {
   const out = [];
-  for (const [rx, o, names] of D.H || []) html = html.replace(rx, (...m) => o.replace(/\{(\w+)\}/g, (z, k) => { const i = names.indexOf(k); if (i < 0) return z; const v = dec(m[i + 1]).trim(); return enc(D.s[v] != null ? D.s[v] : (auto(v, D.lang) || v)); }));
+  for (const [rx, o, names] of D.H || []) html = html.replace(rx, (...m) => fill(D, o, names, i => m[i + 1], enc));
   for (const tok of html.split(/(<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>|<!--[\s\S]*?-->|<[^>]+>)/)) {
     if (!tok) continue;
     if (tok[0] !== '<' || tok === '<') { out.push(trText(D, tok)); continue; }
@@ -113,7 +116,7 @@ export function trHtml(html, D, LS) {
 
 // ------------------------------------------------------------------------------------------------ page assembly
 async function englishOf(env, key, inner) {
-  if (key === 'new' || key === 'vs') { const r = await inner('/' + key + '/'); return r && r.status === 200 ? await r.text() : null; }
+  if (key === 'new' || key === 'vs' || FAM(key)) { const r = await inner('/' + key + '/'); return r && r.status === 200 ? await r.text() : null; }
   return await asset(env, '/' + key + '/', false);
 }
 function parts(src, shellTxt) {
@@ -134,12 +137,17 @@ async function render(env, lang, key, D, body, shTxt, extra) {
     { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Kolaboro', item: ORIGIN + pre(lang) + '/' }].concat(key.startsWith('tools/') ? [{ '@type': 'ListItem', position: 2, name: T(D, 'Tools') || 'Tools', item: ORIGIN + pre(lang) + '/tools/' }] : []).concat([{ '@type': 'ListItem', position: key.startsWith('tools/') ? 3 : 2, name: D.t, item: canon }]) }] };
   if (key.startsWith('tools/')) Object.assign(ld['@graph'][0], { applicationCategory: 'UtilitiesApplication', operatingSystem: 'Any (runs in the browser)', offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' } });
   if (!shTxt) return null;
-  const pg = { title: D.t + ' | Kolaboro', desc: D.d, canon, body, alt, ld };
+  if (FAM(key)) {   // n40 L1: the guide's own crumbs and questions, in the page language
+    const cr = [...((/<p class="crumb">([\s\S]*?)<\/p>/.exec(body) || [])[1] || '').matchAll(/<a href="([^"]+)">([^<]+)<\/a>/g)].map(m => [dec(m[2]), ORIGIN + m[1]]).concat([[D.h || D.t, canon]]);
+    const fq = [...body.matchAll(/<details><summary>([^<]+)<\/summary><p>([^<]+)<\/p><\/details>/g)].map(m => ({ '@type': 'Question', name: dec(m[1]), acceptedAnswer: { '@type': 'Answer', text: dec(m[2]) } }));
+    ld['@graph'] = [Object.assign(ld['@graph'][0], { '@type': key.startsWith('rankings/') ? 'CollectionPage' : 'WebPage' }), { '@type': 'BreadcrumbList', itemListElement: cr.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c[0], item: c[1] })) }].concat(fq.length ? [{ '@type': 'FAQPage', mainEntity: fq }] : []);
+  }
+  const pg = { title: D.t + ([...D.t].length > 49 && FAM(key) ? '' : ' | Kolaboro'), desc: D.d, canon, body, alt, ld };
   let html = await N.assemble(pg, lang, new Response(shTxt));
   // function replacements: page scripts can hold "$'" or "$&" (e.g. 'US$'), which a replacement string would expand
   // longer words in de/nl/ru can widen a grid track past a 390 px screen: let cards shrink and wrap
   const c = (extra && extra.css ? extra.css : '') + '<style>main .rg-cards>*,main .rgc{min-width:0;overflow-wrap:anywhere}</style></head>'; html = html.replace('</head>', () => c);
-  const tail = (extra && extra.js ? extra.js : '') + '<script src="/k/n32t.js?v=' + N32T_V + '" data-k="' + esc(key.replace(/\//g, '-')) + '" defer></script></body>';
+  const tail = (extra && extra.js ? extra.js : '') + (FAM(key) ? '' : '<script src="/k/n32t.js?v=' + N32T_V + '" data-k="' + esc(key.replace(/\//g, '-')) + '" defer></script>') + '</body>';
   html = html.replace('</body>', () => tail);
   return new Response(html, { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=600' } });
 }
@@ -176,7 +184,13 @@ async function build(env, lang, key, D, shell, inner) {
   if (key === 'm') return render(env, lang, key, D, await marketsBody(env, lang, D), shTxt, null);
   const src = await englishOf(env, key, inner); if (!src) return null;
   const P = parts(src, shTxt); if (!P) return null;
+  if (FAM(key)) P.main = P.main.replace(/<section id="how-to-cite"[\s\S]*?<\/section>/, '').replace(/<div class="wrap"><p class="k-xs n33-by"[\s\S]*?<\/p><\/div>/, '');   // n40 L1: the English credit and citation blocks (other modules add their own)
   let body = trHtml(P.main, D, LS);
+  if (FAM(key)) {   // n40 L1: title, description and h1 of the English page, translated with the same dictionary
+    const g = rx => dec((rx.exec(src) || [])[1] || '').trim(), h1 = g(/<h1[^>]*>([^<]+)<\/h1>/), tt = g(/<title>([^<]+)<\/title>/).replace(/ \| Kolaboro$/, ''), ds = g(/<meta name="description" content="([^"]+)"/);
+    D = Object.assign({}, D, { t: T(D, tt) || T(D, h1) || tt, d: T(D, ds) || ds, h: T(D, h1) || h1 });
+    if (lang === 'ru') body = ruPlaces(body);
+  }
   if (key === 'new' || key === 'vs') body = body.replace(/(<a\s[^>]*href="\/vs\/[a-z0-9-]+-vs-[a-z0-9-]+\/")/g, '$1 hreflang="en"');   // pair pages are English only
   // n38 d5: the shell's inline script rewrites English-format numbers (3,433) in the page locale on DOMContentLoaded, which rewrapped
   // lines after the first paint (layout shift on /es/vs/, /de/vs/). Same rule here, with the same locale the shell's script reads (KBL.num).
