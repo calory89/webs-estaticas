@@ -14,15 +14,16 @@
 // Static fallback: if a data file cannot be read, /corrections/ falls through to the static page.
 import { t31, loadS as loadS31 } from './kbx_n31b_page.js';   // n31b (batch 31): labels of the corrections of recorded facts and of removals (item 69)
 import { t27 } from './kbx_t27_i18n.js';
+import { mkName } from './kbx_hdate.js';
 import { trData } from './kbx_tr.js';
 import { trustRender, head, crumbLd } from './kbx_trust.js';
 
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' };
-export const PAGE_RX = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?(corrections|buyer-cases|cite|contact|transparency-badge)(\/?)$/;
+export const PAGE_RX = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?(corrections|buyer-cases|cite|contact|transparency-badge|faq)(\/?)$/;
 export const FILE_RX = /^\/embed\/transparency\/([a-z0-9-]{1,90})\.svg$|^\/rankings\/transparency(?:\/([a-z0-9-]{2,40}))?\.csv$/;
-export const PAGES = ['/corrections/', '/buyer-cases/', '/cite/', '/contact/', '/transparency-badge/'];
+export const PAGES = ['/corrections/', '/buyer-cases/', '/cite/', '/contact/', '/transparency-badge/', '/faq/'];
 export const REVIEWED = '2026-11-13';
 const BADGE_MIN = 70;
 const MAIL = { hello: 'hello@kolaboro.com', founder: 'carlos@kolaboro.com', press: 'press@kolaboro.com' };
@@ -161,6 +162,23 @@ async function file(u, env, m) {
   return new Response('﻿' + csv(ix, slug), { headers: { 'content-type': 'text/csv; charset=utf-8', 'content-disposition': 'inline; filename="kolaboro-transparency-' + (slug || 'all') + '-' + ix.updated + '.csv"', 'cache-control': 'public, max-age=600', 'access-control-allow-origin': '*', 'x-content-type-options': 'nosniff', link: '<https://creativecommons.org/licenses/by/4.0/>; rel="license"' } });
 }
 
+// n40 R01-08: /faq/, 40 buyer questions answered from /data/n40-faq.json (numbers and strings built by the n40 faq script)
+function faqPage(F, lang) {
+  const S = F.S[lang] || F.S.en, f = (k, v) => fill(esc(S[k]), v), d = tm(F.updated, lang), pc = (k, n) => nf(lang, n ? Math.round(k / n * 100) : 0) + ' %';
+  const src = h => '<p class="k-small k-muted">' + esc(S.src) + ': <a class="k-src" href="' + h + '">' + esc(h.replace(/^\/(?:[a-z]{2}\/)?/, '/')) + '</a> · ' + f('asof', { d }) + '</p>';
+  const st = F.stats, c = F.claims, Q = [], qa = (q, a, h) => Q.push([q, a, h]);
+  const gv = { n: nf(lang, st.n), mk: nf(lang, st.mk), co: nf(lang, st.co), s: nf(lang, st.s), t: nf(lang, c.t), v: nf(lang, c.v), u: nf(lang, c.u), c: nf(lang, c.c) };
+  [['g1', '/api/open/stats'], ['g2', '/standard/'], ['g3', '/developers/benchmark/'], ['g4', '/developers/benchmark/'], ['g5', '/api/open/stats'], ['g6', pre(lang) + '/check/'], ['g7', pre(lang) + '/corrections/'], ['g8', '/data/']].forEach(([k, h]) => qa(f(k + 'q'), f(k + 'a', gv), h));
+  const gen = Q.length;
+  for (const [m, n, kp, ep, ec, ms, mv] of F.mk) { const v = { m: '<bdi>' + esc(mkName(m, lang)) + '</bdi>', n: nf(lang, n) }, h = '/data/bali-cases.json';
+    qa(f('aq', v), f('aa', v), h); qa(f('bq', v), f('ba', Object.assign({ k: nf(lang, kp), p: pc(kp, n) }, v)), h); qa(f('cq', v), f('ca', Object.assign({ k: nf(lang, ep), p: pc(ep, n), v: nf(lang, ec) }, v)), h); qa(f('dq', v), f('da', Object.assign({ s: nf(lang, ms), v: nf(lang, mv) }, v)), h); }
+  const item = ([q, a, h]) => '<details class="kfaq"><summary>' + q + '</summary><p>' + a + '</p>' + src(h) + '</details>';
+  const url = ORIGIN + pre(lang) + '/faq/', strip = x => x.replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/&#39;/g, "'").replace(/&quot;/g, '"');
+  const body = '<div class="kpg">' + head(lang, [[S.h1, pre(lang) + '/faq/']], esc(S.h1), esc(S.lead), '<p class="k-small k-muted">' + f('asof', { d }) + '</p>') + '<div class="k-prose"><h2 id="data">' + esc(S.h_gen) + '</h2>' + Q.slice(0, gen).map(item).join('') +
+    '<h2 id="markets">' + esc(S.h_mk) + '</h2>' + Q.slice(gen).map(item).join('') + links(lang, [[pre(lang) + '/corrections/', 'l_corr'], [pre(lang) + '/cite/', 'l_cite'], [pre(lang) + '/contact/', 'l_contact']]) + '</div></div></section></div>';
+  return { path: '/faq/', title: S.title, desc: S.desc, body, ttl: 3600, ld: [{ '@type': 'FAQPage', '@id': url + '#faq', url, name: S.title, inLanguage: lang, dateModified: F.updated, mainEntity: Q.map(([q, a]) => ({ '@type': 'Question', name: strip(q), acceptedAnswer: { '@type': 'Answer', text: strip(a) } })) }, crumbLd(lang, [[S.h1, pre(lang) + '/faq/']])] };
+}
+
 // ------------------------------------------------------------------------------------------------ entry
 const BODY = new Map();
 export async function handle(req, u, env, ctx, shell) {
@@ -175,6 +193,8 @@ export async function handle(req, u, env, ctx, shell) {
       const [C, NM] = await Promise.all([load(env, 'corrections.json'), load(env, 'named.json').catch(() => null)]), id = String(u.searchParams.get('id') || '').toUpperCase();
       const okId = /^[A-Z]{2,5}-\d{3,4}$/.test(id) ? id : '', pp = String(u.searchParams.get('page') || ''), okPg = /^\/[a-z0-9][a-z0-9\/._-]{0,160}$/i.test(pp) && !pp.includes('..') ? pp : '';   // n40 R01-16: ?page= prefills the request
       const k = lang + '|c|' + okId + '|' + okPg + '|' + (C.updated || '') + '|' + (C.entries || []).length; pg = BODY.get(k); if (!pg) { const SL = {}; if (NM) for (const x of NM.projects || []) if ((C.entries || []).some(e => e.id === x.id)) SL[x.id] = { s: x.s, n: String(x.n || x.id).replace(/\s*\([^)]*\)\s*$/, '') }; pg = corrPage(C, lang, okId, SL, okPg); if (BODY.size > 600) BODY.clear(); BODY.set(k, pg); }
+    } else if (kind === 'faq') {
+      const F = await load(env, 'n40-faq.json'), k = lang + '|faq|' + F.updated; pg = BODY.get(k); if (!pg) { pg = faqPage(F, lang); BODY.set(k, pg); }
     } else if (kind === 'transparency-badge' || kind === 'cite') {
       let ix = null; try { ix = await trData(env); } catch (e) { if (kind === 'transparency-badge') return null; }
       const k = lang + '|' + kind + '|' + (ix ? ix.v : ''); pg = BODY.get(k); if (!pg) { pg = kind === 'cite' ? citePage(lang, ix) : badgePage(lang, ix); if (BODY.size > 600) BODY.clear(); BODY.set(k, pg); }
