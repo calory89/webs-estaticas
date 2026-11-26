@@ -692,6 +692,7 @@ export default {
       const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
       const r = await kxr.handle(req, u, env, ctx, shell); if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r; }
     if (host === 'kolaboro.com' && KCAL.test(u.pathname)) { if (!kcal) kcal = await import('./kbx_cal.js'); const r = await kcal.handle(req, u, env, ctx); if (r) return r; }
+    if (host === 'kolaboro.com' && /^\/(?:projects|developers)\/[a-z0-9-]{1,90}\/feed\.xml$/.test(u.pathname)) return new Response(null, { status: 301, headers: { location: u.pathname.slice(0, -3) + 'atom', 'cache-control': 'public, max-age=86400' } });   // n40 R01-17
     if (host === 'kolaboro.com' && KFW.test(u.pathname)) { if (!kfw) kfw = await import('./kbx_follow.js'); const r = await kfw.handle(req, u, env, ctx); if (r) return r; }
     // kolaboro.com (x11c, batch 11): Project X-ray conversion block API, "X-ray this project" partner button, admin X-rays tab (see kbx_xc.js)
     if (host === 'kolaboro.com' && KXC.test(u.pathname)) { if (!kxc) kxc = await import('./kbx_xc.js'); return kxc.handle(req, u, env, ctx); }

@@ -148,7 +148,7 @@ export async function handle(req, u, env, ctx) {
   const ck = new Request(ORIGIN + '/__cal/v1/' + m[1] + '/' + lang);
   const hit = await caches.default.match(ck); if (hit) return hit;
   let ix; try { if (!NM) NM = await import('./kbx_named.js'); ix = await NM.data(env); } catch (e) { return new Response('temporarily unavailable', { status: 503, headers: { 'retry-after': '60' } }); }
-  const x = ix.bySlug.get(m[1]), items = x ? calItems(x, ix.prom[x.id]) : [];
+  const x = ix.bySlug.get(m[1]) || (/^[a-z]{2,5}-\d{3,4}$/.test(m[1]) && ix.byId.get(m[1].toUpperCase())), items = x ? calItems(x, ix.prom[x.id]) : [];
   if (!x || !items.length) return new Response(x ? 'No dated promise on record for this project.' : 'Not found', { status: 404, headers: { 'content-type': 'text/plain; charset=utf-8', 'cache-control': 'public, max-age=300', 'x-robots-tag': 'noindex' } });
   const stamp = NM.iso(ix.updated) || new Date().toISOString().slice(0, 10);
   const body = icsFor(x, items, lang, { kn: k => NM.tr(lang, 'pk_' + k), fdl: d => NM.fd(d, lang), ps: s => NM.tr(lang, 'ps_' + s), moved: (k, mm) => NM.tr(lang, 'pr_moved', { k, mm }), histLabel: NM.tr(lang, 'pr_hist'), stamp });

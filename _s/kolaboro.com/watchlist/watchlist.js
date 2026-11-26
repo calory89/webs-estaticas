@@ -51,7 +51,7 @@
       '<p class="wl-meta">' + esc(stage(c.stage)) + ', ' + esc(place(c)) + ', ' + esc(c.country) + '. Saved ' + esc(saved) + '.</p>' +
       '<div class="wl-s"><span><b>' + (c.score || 0) + '/' + (c.max || 6) + '</b>published</span><span><b>' + (c.vscore || 0) + '/6</b>confirmed</span><span><b>' + fl + '</b>' + (fl === 1 ? 'problem' : 'problems') + '</span>' + (c.overdue ? '<span><b>' + num(c.overdue) + '</b>months overdue</span>' : '') + '</div>' +
       body +
-      '<div class="wl-b"><a class="btn btn-line btn-sm" href="/p/?id=' + encodeURIComponent(c.id) + '">Open project file</a>' +
+      '<div class="wl-b"><a class="btn btn-line btn-sm" href="/p/?id=' + encodeURIComponent(c.id) + '">Open project file</a>' + (c.done ? '<a class="btn btn-line btn-sm" href="/projects/' + encodeURIComponent(String(c.id).toLowerCase()) + '/calendar.ics" download aria-label="Add the promised dates of ' + esc(c.id) + ' to your calendar">Add dates to calendar (.ics)</a>' : '') +
       (ch.length || !s ? '<button type="button" class="btn btn-line btn-sm" data-seen="' + esc(c.id) + '" aria-label="Mark ' + esc(c.id) + ' as seen and start tracking from today">Mark as seen</button>' : '') + rm + '</div></article>';
   }
 
