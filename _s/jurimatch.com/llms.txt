@@ -2,7 +2,7 @@
 
 > Search engine for no-win-no-fee lawyers and litigation funders. 6,700+ no-win-no-fee firms indexed in 129 countries, 671 hand-verified. JuriMatch is not a law firm and gives no legal advice.
 
-## Facts (as of 2026-11-25)
+## Facts (as of 2026-11-26)
 - Firms indexed from public research that advertise no-win-no-fee, contingency or funded work: 6,755
 - Firms whose fee terms our team checked by hand on their own website: 671
 - Countries with at least 20 indexed firms: 129; countries with a hand-verified firm: 53
@@ -71,14 +71,14 @@
 - [Real estate dispute lawyers in London, United Kingdom](https://jurimatch.com/lawyers/real-estate/united-kingdom/london): 6 hand-verified firms
 
 ## Country guides
-- [No-win-no-fee claims in United States](https://jurimatch.com/guides/united-states)
-- [No-win-no-fee claims in United Kingdom](https://jurimatch.com/guides/united-kingdom)
+- [No-win-no-fee claims in the United States](https://jurimatch.com/guides/united-states)
+- [No-win-no-fee claims in the United Kingdom](https://jurimatch.com/guides/united-kingdom)
 - [No-win-no-fee claims in Spain](https://jurimatch.com/guides/spain)
 - [No-win-no-fee claims in Germany](https://jurimatch.com/guides/germany)
 - [No-win-no-fee claims in France](https://jurimatch.com/guides/france)
 - [No-win-no-fee claims in Italy](https://jurimatch.com/guides/italy)
 - [No-win-no-fee claims in Portugal](https://jurimatch.com/guides/portugal)
-- [No-win-no-fee claims in Netherlands](https://jurimatch.com/guides/netherlands)
+- [No-win-no-fee claims in the Netherlands](https://jurimatch.com/guides/netherlands)
 - [No-win-no-fee claims in Ireland](https://jurimatch.com/guides/ireland)
 - [No-win-no-fee claims in Switzerland](https://jurimatch.com/guides/switzerland)
 - [No-win-no-fee claims in Belgium](https://jurimatch.com/guides/belgium)
@@ -100,7 +100,7 @@
 - [No-win-no-fee claims in Colombia](https://jurimatch.com/guides/colombia)
 - [No-win-no-fee claims in Chile](https://jurimatch.com/guides/chile)
 - [No-win-no-fee claims in Panama](https://jurimatch.com/guides/panama)
-- [No-win-no-fee claims in United Arab Emirates](https://jurimatch.com/guides/united-arab-emirates)
+- [No-win-no-fee claims in the United Arab Emirates](https://jurimatch.com/guides/united-arab-emirates)
 - [No-win-no-fee claims in Saudi Arabia](https://jurimatch.com/guides/saudi-arabia)
 - [No-win-no-fee claims in Israel](https://jurimatch.com/guides/israel)
 - [No-win-no-fee claims in Australia](https://jurimatch.com/guides/australia)

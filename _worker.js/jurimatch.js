@@ -295,6 +295,11 @@ export async function render(req, res, u, env, ctx) {
   const path = normPath(u.pathname);
   let page = m.pages[path];
   let status = 200;
+  // "/FAQ" or "/Lawyers/UK" point to the lower-case page when it exists (one URL per page).
+  if (!page && /[A-Z]/.test(path)) {
+    const lower = path.toLowerCase();
+    if (m.pages[lower] || aliasTarget(lower, m)) return Response.redirect(ORIGIN + encodeURI(lower) + u.search, 301);
+  }
   if (!page && path.startsWith('/community')) page = { ...m.pages['/community'] };
   if (!page) {
     const alias = aliasTarget(path, m);

@@ -2,7 +2,7 @@
 
 > General information about no-win-no-fee claims, contingency fees, litigation funding, deadlines and costs, by country.
 > Not legal advice. JuriMatch is not a law firm. Each section links to the page it comes from; cite that URL.
-> Generated 2026-11-25 from https://jurimatch.com/seo-manifest.json. Short index: https://jurimatch.com/llms.txt
+> Generated 2026-11-26 from https://jurimatch.com/seo-manifest.json. Short index: https://jurimatch.com/llms.txt
 
 ## Guides
 
@@ -510,7 +510,7 @@ Hotel damages claims: Hotels have claimed that parity clauses kept commissions a
 
 Group claims: Associations and funded claim vehicles have organised group claims for hotels in several European countries. Check their terms and the period they cover.
 
-Deadlines: Limitation depends on the country where the claim is brought and on when the hotel knew of the infringement. Clauses differed by country and period (wide and narrow parity), so dates matter. Get the dates of your contract and of any clause changes checked early. Indicative period in Netherlands (non-contractual damages (tort)): 5 years (from knowledge).
+Deadlines: Limitation depends on the country where the claim is brought and on when the hotel knew of the infringement. Clauses differed by country and period (wide and narrow parity), so dates matter. Get the dates of your contract and of any clause changes checked early. Indicative period in the Netherlands (non-contractual damages (tort)): 5 years (from knowledge).
 
 Sources:
 - CJEU, Booking.com, case C-264/23 (parity clauses): https://curia.europa.eu/juris/liste.jsf?num=C-264/23
@@ -533,7 +533,7 @@ Refunds and care: When a flight is cancelled, passengers are entitled to choose 
 
 Baggage: Lost, delayed or damaged luggage is covered by the Montreal Convention, which has short notice periods: report it at the airport and send a written claim to the airline quickly.
 
-Deadlines: There is no single EU deadline for flight compensation: the limitation period is set by the law of the country where you bring the claim, and it varies considerably between countries. Baggage claims under the Montreal Convention have much shorter notice periods (days, not years) and a two-year limit for court action. Use the limitation checker for an indicative deadline in your country, and act early: evidence such as boarding passes and emails is easier to gather now. Indicative period in United Kingdom (contract claims): 6 years.
+Deadlines: There is no single EU deadline for flight compensation: the limitation period is set by the law of the country where you bring the claim, and it varies considerably between countries. Baggage claims under the Montreal Convention have much shorter notice periods (days, not years) and a two-year limit for court action. Use the limitation checker for an indicative deadline in your country, and act early: evidence such as boarding passes and emails is easier to gather now. Indicative period in the United Kingdom (contract claims): 6 years.
 
 Sources:
 - Regulation (EC) No 261/2004 (EUR-Lex): https://eur-lex.europa.eu/eli/reg/2004/261/oj
@@ -637,7 +637,7 @@ Group claims: Many hauliers have joined group claims organised by law firms, ass
 
 How the overcharge is proved: Claims rely on expert economic reports comparing cartel prices with the prices that would have applied without the cartel. Courts in several countries have estimated the damage when the evidence was incomplete.
 
-Deadlines: In Volvo and DAF Trucks (C-267/20, June 2022) the CJEU held that the limitation period for these claims could not start before the Commission's decision was published in the EU Official Journal (April 2017 for the main decision), and applied the rules of the Damages Directive to many claims. Each country's limitation rules then apply, and some claims are already out of time. Check your dates with a lawyer before assuming your claim is open. Indicative period in Netherlands (non-contractual damages (tort)): 5 years (from knowledge).
+Deadlines: In Volvo and DAF Trucks (C-267/20, June 2022) the CJEU held that the limitation period for these claims could not start before the Commission's decision was published in the EU Official Journal (April 2017 for the main decision), and applied the rules of the Damages Directive to many claims. Each country's limitation rules then apply, and some claims are already out of time. Check your dates with a lawyer before assuming your claim is open. Indicative period in the Netherlands (non-contractual damages (tort)): 5 years (from knowledge).
 
 Sources:
 - European Commission: trucks cartel decision, July 2016: https://ec.europa.eu/commission/presscorner/detail/en/IP_16_2582
@@ -713,7 +713,7 @@ Refunds and care: When a flight is cancelled, passengers are entitled to choose 
 
 Baggage: Lost, delayed or damaged luggage is covered by the Montreal Convention, which has short notice periods: report it at the airport and send a written claim to the airline quickly.
 
-Deadlines: There is no single EU deadline for flight compensation: the limitation period is set by the law of the country where you bring the claim, and it varies considerably between countries. Baggage claims under the Montreal Convention have much shorter notice periods (days, not years) and a two-year limit for court action. Use the limitation checker for an indicative deadline in your country, and act early: evidence such as boarding passes and emails is easier to gather now. Indicative period in United Kingdom (contract claims): 6 years.
+Deadlines: There is no single EU deadline for flight compensation: the limitation period is set by the law of the country where you bring the claim, and it varies considerably between countries. Baggage claims under the Montreal Convention have much shorter notice periods (days, not years) and a two-year limit for court action. Use the limitation checker for an indicative deadline in your country, and act early: evidence such as boarding passes and emails is easier to gather now. Indicative period in the United Kingdom (contract claims): 6 years.
 
 Sources:
 - UK261: Regulation 261/2004 as retained in UK law (legislation.gov.uk): https://www.legislation.gov.uk/eur/2004/261/contents
@@ -916,7 +916,7 @@ Refunds and care: When a flight is cancelled, passengers are entitled to choose 
 
 Baggage: Lost, delayed or damaged luggage is covered by the Montreal Convention, which has short notice periods: report it at the airport and send a written claim to the airline quickly.
 
-Deadlines: There is no single EU deadline for flight compensation: the limitation period is set by the law of the country where you bring the claim, and it varies considerably between countries. Baggage claims under the Montreal Convention have much shorter notice periods (days, not years) and a two-year limit for court action. Use the limitation checker for an indicative deadline in your country, and act early: evidence such as boarding passes and emails is easier to gather now. Indicative period in United Kingdom (contract claims): 6 years.
+Deadlines: There is no single EU deadline for flight compensation: the limitation period is set by the law of the country where you bring the claim, and it varies considerably between countries. Baggage claims under the Montreal Convention have much shorter notice periods (days, not years) and a two-year limit for court action. Use the limitation checker for an indicative deadline in your country, and act early: evidence such as boarding passes and emails is easier to gather now. Indicative period in the United Kingdom (contract claims): 6 years.
 
 Sources:
 - Regulation (EC) No 261/2004 (EUR-Lex): https://eur-lex.europa.eu/eli/reg/2004/261/oj
@@ -942,7 +942,7 @@ Refunds and care: When a flight is cancelled, passengers are entitled to choose 
 
 Baggage: Lost, delayed or damaged luggage is covered by the Montreal Convention, which has short notice periods: report it at the airport and send a written claim to the airline quickly.
 
-Deadlines: There is no single EU deadline for flight compensation: the limitation period is set by the law of the country where you bring the claim, and it varies considerably between countries. Baggage claims under the Montreal Convention have much shorter notice periods (days, not years) and a two-year limit for court action. Use the limitation checker for an indicative deadline in your country, and act early: evidence such as boarding passes and emails is easier to gather now. Indicative period in Netherlands (contract claims): 5 years.
+Deadlines: There is no single EU deadline for flight compensation: the limitation period is set by the law of the country where you bring the claim, and it varies considerably between countries. Baggage claims under the Montreal Convention have much shorter notice periods (days, not years) and a two-year limit for court action. Use the limitation checker for an indicative deadline in your country, and act early: evidence such as boarding passes and emails is easier to gather now. Indicative period in the Netherlands (contract claims): 5 years.
 
 Sources:
 - Regulation (EC) No 261/2004 (EUR-Lex): https://eur-lex.europa.eu/eli/reg/2004/261/oj
@@ -1435,7 +1435,7 @@ Refunds and care: When a flight is cancelled, passengers are entitled to choose 
 
 Baggage: Lost, delayed or damaged luggage is covered by the Montreal Convention, which has short notice periods: report it at the airport and send a written claim to the airline quickly.
 
-Deadlines: There is no single EU deadline for flight compensation: the limitation period is set by the law of the country where you bring the claim, and it varies considerably between countries. Baggage claims under the Montreal Convention have much shorter notice periods (days, not years) and a two-year limit for court action. Use the limitation checker for an indicative deadline in your country, and act early: evidence such as boarding passes and emails is easier to gather now. Indicative period in Netherlands (contract claims): 5 years.
+Deadlines: There is no single EU deadline for flight compensation: the limitation period is set by the law of the country where you bring the claim, and it varies considerably between countries. Baggage claims under the Montreal Convention have much shorter notice periods (days, not years) and a two-year limit for court action. Use the limitation checker for an indicative deadline in your country, and act early: evidence such as boarding passes and emails is easier to gather now. Indicative period in the Netherlands (contract claims): 5 years.
 
 Sources:
 - Regulation (EC) No 261/2004 (EUR-Lex): https://eur-lex.europa.eu/eli/reg/2004/261/oj
