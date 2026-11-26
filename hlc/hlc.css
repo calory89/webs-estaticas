@@ -377,3 +377,35 @@ html{scroll-padding-top:84px}
 .g-toc a{display:inline-block;padding:4px 0;color:var(--tinta);text-decoration:none}.g-toc a:hover{color:var(--coral-d);text-decoration:underline}
 @media (max-width:640px){.g-toc ol{columns:1}}
 .guide h2[id]{scroll-margin-top:84px}
+/* ---------- 26-nov-2026: alta en 3 pasos, vídeos de viajeros, aviso de cookies y portada en móvil ---------- */
+.af-next{display:flex;flex-direction:column;gap:8px;padding:16px;background:#F3FBF6;border:1.5px solid #BFE5CF;border-radius:18px}
+.af-next b{font:800 24px var(--fd,inherit);color:var(--tinta)}
+.af-steps{margin:0;padding:0;list-style:none;display:grid;gap:6px;color:var(--tinta);font:15px/1.5 var(--fb,inherit)}
+.af-steps li{position:relative;padding-left:24px}.af-steps li:before{content:"→";position:absolute;left:0;color:var(--coral-d);font-weight:800}.af-steps li.ok:before{content:"✓";color:var(--verde)}
+.af-next .hlc-push{margin:4px 0}
+.af-links{margin:4px 0 0;font:600 15px var(--fb,inherit)}
+.vf-grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:22px;align-items:start;margin:22px 0 34px}
+.vf{background:#fff;border:1.5px solid var(--linea);border-radius:22px;padding:20px;box-shadow:var(--sh)}
+.vf .fld{display:flex;flex-direction:column;gap:6px}.vf label{font:600 14px var(--fb,inherit);color:var(--gris)}
+.vf [hidden],.vf-grid [hidden]{display:none!important}
+.qf input[type=email]{border:0;background:transparent;font:600 17px var(--fb);color:var(--tinta);padding:2px 0;outline:none;width:100%;min-width:0}
+.vf .chip[disabled]{opacity:.45;cursor:not-allowed}
+.vf-tips{background:var(--crema);border:1.5px solid var(--linea);border-radius:22px;padding:20px}
+.vf-tips h2{margin:0 0 10px;font:800 20px var(--fd,inherit)}.vf-tips ul{margin:0;padding-left:20px;display:grid;gap:8px;line-height:1.5}
+.vw .vw-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px;margin-top:14px}
+.vw-card{margin:0;background:#fff;border:1px solid var(--linea);border-radius:18px;overflow:hidden;box-shadow:var(--sh)}
+.vw-card video,.vw-card iframe,.vw-yt,.vw-link{display:block;width:100%;aspect-ratio:9/16;max-height:440px;border:0;background:#14213D}
+.vw-card iframe{aspect-ratio:16/9;max-height:none}
+.vw-yt{background-size:cover;background-position:center;cursor:pointer;position:relative;aspect-ratio:16/9}
+.vw-yt span,.vw-link span{position:absolute;inset:0;margin:auto;width:64px;height:64px;border-radius:50%;background:rgba(255,90,54,.92);color:#fff;font-size:26px;display:flex;align-items:center;justify-content:center}
+.vw-link{position:relative;color:#fff!important;text-decoration:none;font:700 15px var(--fb,inherit);display:flex;align-items:flex-end;justify-content:center;padding-bottom:22px;aspect-ratio:4/5;background:linear-gradient(160deg,#FF5A36,#2E6BF0)}
+.vw-card figcaption{padding:12px 14px;display:grid;gap:4px;font:14px/1.45 var(--fb,inherit)}.vw-card figcaption small{color:var(--gris)}
+.vw-empty{color:var(--gris);margin:0}
+@media (max-width:860px){.vf-grid{grid-template-columns:1fr}}
+@media (max-width:767px){
+ .hlc-ck{padding:8px 10px}.hlc-ck p{font-size:12.5px;margin:0 0 6px}.hlc-ck .hlc-btn{min-height:38px;font-size:13.5px;padding:.4em .8em}
+ body .h2-hero h1{font:800 clamp(30px,8.6vw,38px)/1 var(--fd)!important;margin-bottom:12px}
+ body .h2-hero .h2-lead{font-size:16px;margin-bottom:14px}
+ .h2-lead{font-size:16px;margin-bottom:16px}
+ .h2-proof{margin-bottom:12px}
+}

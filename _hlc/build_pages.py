@@ -105,7 +105,7 @@ AIRPORTS = '<optgroup label="España">' + ''.join(f'<option>{c}</option>' for c 
 def quick_form(idx):
     return f"""<form class="qf" data-hlc-quick novalidate>
 <div class="qf-row"><label class="qf-sel"><span>Vuelo desde</span><select name="origin" aria-label="Tu aeropuerto">{AIRPORTS}</select></label>
-<label class="qf-in"><span>Te aviso en</span><input name="contact" type="text" inputmode="email" autocomplete="email" placeholder="tu email o tu WhatsApp" aria-label="Email o WhatsApp" required></label>
+<label class="qf-in"><span>Te aviso en</span><input name="contact" type="email" inputmode="email" autocomplete="email" placeholder="tu email" aria-label="Tu email" required></label>
 <button type="submit" class="hlc-btn qf-go">Avisarme gratis</button></div>
 <label class="qf-ok"><input type="checkbox" name="consent" required> Acepto recibir chollos de Happy Low Cost (máx. uno al día) y la <a href="/aviso-legal-datos-cookies/">privacidad</a>.</label>
 <div class="qf-msg" data-msg role="status" aria-live="polite"></div></form>"""
@@ -114,7 +114,7 @@ _IDEAS = [('fin-de-semana', '🧳 Escapadas de fin de semana'), ('menos-de-50-eu
           ('directos', '✈️ Solo directos'), ('puente-diciembre-2026', '🗓️ Puente de diciembre'), ('navidad-2026', '🎄 Navidad 2026'), ('semana-santa-2027', '🌸 Semana Santa 2027')]
 IDEAS_CHIPS = ''.join(f'<a class="chip" href="/chollos/ideas/{k}/">{n}</a>' for k, n in _IDEAS) + '<a class="chip" href="/herramientas/">🧰 Herramientas</a>' + '<a class="chip" href="https://www.discovercars.com/es?a_aid=happylowcost&amp;data1=happylowcost-home" target="_blank" rel="sponsored nofollow noopener" data-hlc="home_coche">🚗 Alquiler de coches</a>'
 home = head(title='Happy Low Cost · Vuelos a mitad de precio desde tu aeropuerto',
-            desc='Cazamos errores de tarifa y vuelos baratos desde tu aeropuerto y te avisamos gratis por email o WhatsApp. Más de 420.000 viajeros desde 2012.',
+            desc='Cazamos errores de tarifa y vuelos baratos desde tu aeropuerto y te avisamos gratis por email o en el móvil. Más de 420.000 viajeros desde 2012.',
             canonical='https://www.happylowcost.com/', extra_head=home_extra, body_class='home home2')
 home += f"""
 <main>
@@ -139,7 +139,7 @@ home += f"""
 <section class="sec h2-sec h2-how"><div class="wrap">
 <div class="h2-h"><h2>Cómo funciona</h2></div>
 <ol class="h2-steps">
-<li><b>1</b><h3>Dinos tu aeropuerto</h3><p>Y si prefieres email o WhatsApp.</p></li>
+<li><b>1</b><h3>Dinos tu aeropuerto</h3><p>Y si prefieres el aviso por email o en el móvil.</p></li>
 <li><b>2</b><h3>Cazamos y comprobamos</h3><p>Errores de tarifa y ofertas relámpago, verificados antes de publicarlos.</p></li>
 <li><b>3</b><h3>Te avisamos y reservas</h3><p>Con las fechas exactas. Tú solo haces la maleta.</p></li>
 </ol>
@@ -196,7 +196,7 @@ open('chollos/ver/index.html', 'w', encoding='utf-8').write(vp)
 
 # ---------- /alertas/ ----------
 os.makedirs('alertas', exist_ok=True)
-al = head(title='Crea tu alerta de chollos de vuelos · Happy Low Cost', desc='Te avisamos gratis cuando encontremos un vuelo barato desde tu aeropuerto: en este navegador desde hoy, y por email o WhatsApp. Máximo un aviso al día.',
+al = head(title='Crea tu alerta de chollos de vuelos · Happy Low Cost', desc='Te avisamos gratis cuando encontremos un vuelo barato desde tu aeropuerto: en este navegador o por email. Máximo un aviso al día.',
           canonical='https://www.happylowcost.com/alertas/', extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12">', body_class='alertas')
 al += f'''<main class="sec"><div class="alert-box" style="max-width:1180px;margin:0 auto">
 <div><div class="kicker">Alertas gratis</div><h1 style="font:800 clamp(38px,5.6vw,64px)/.98 'Bricolage Grotesque',sans-serif;letter-spacing:-.03em;margin:10px 0 14px">Que el chollo te encuentre a ti.</h1><p>Elige tu aeropuerto, tu destino soñado y tu precio máximo. Cuando cacemos un vuelo que encaje, te avisamos. Sin spam: máximo un aviso al día y te das de baja con un clic.</p></div>

@@ -99,7 +99,9 @@ def page(r, lang, others):
     mes_en = td.strftime('%B')
     t0 = c.get('title', '')
     if t0 and not re.search(r'20\d\d', t0) and len(t0) <= 58:
-        c['title'] = f"{t0} · {mes_en[:3]} {td.year}" if en else f"{t0} · {mes_es[:3]} {td.year}"
+        # "Vuelos baratos Madrid-Roma desde 44 € (nov 2026) · Happy Low Cost": la fecha va con el precio, la marca al final
+        core = re.sub(r'\s*[|·–-]\s*Happy Low Cost\s*$', '', t0).strip()
+        c['title'] = (f"{core} ({mes_en[:3]} {td.year}) · Happy Low Cost" if en else f"{core} ({mes_es[:3]} {td.year}) · Happy Low Cost") if core != t0 else (f"{t0} ({mes_en[:3]} {td.year})" if en else f"{t0} ({mes_es[:3]} {td.year})")
     if p_:
         if en:
             c['meta'] = (f"Flights {__import__('en_names').city_en(r['origin'])} to {dest} from €{p_} return" + (', nonstop' if stops == 0 else '') + (f' with {air_}' if air_ else '') + '. '

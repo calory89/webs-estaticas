@@ -226,6 +226,48 @@ def extra_pages():
             os.makedirs('guias/errores-de-tarifa', exist_ok=True); open('guias/errores-de-tarifa/index.html', 'w', encoding='utf-8').write(pg)
 
 
+def videos_pages():
+    """/videos/ y /en/videos/: los viajeros comparten el vídeo de su viaje (enlace o archivo) y se ve el muro de vídeos aprobados."""
+    for en in (False, True):
+        L = (lambda a, b: b if en else a)
+        url = f"{SITE}/en/videos/" if en else f"{SITE}/videos/"
+        alt = f'<link rel="alternate" hreflang="es" href="{SITE}/videos/"><link rel="alternate" hreflang="en" href="{SITE}/en/videos/"><link rel="alternate" hreflang="x-default" href="{SITE}/videos/">'
+        inp = 'style="min-height:52px;border-radius:14px;border:1.5px solid #EADCC4;background:#fff;padding:0 16px;font:16px Inter,sans-serif;color:#14213D;width:100%;box-sizing:border-box"'
+        qas = [(L('¿Qué vídeos publicáis?', 'Which videos do you publish?'), L('Vídeos cortos de un viaje real: el destino, un rincón, la comida, el hotel o el vuelo. Mejor en vertical y de 15 a 60 segundos. No publicamos anuncios ni vídeos de otras personas.', 'Short videos of a real trip: the place, a corner, the food, the hotel or the flight. Vertical and 15 to 60 seconds works best. We do not publish ads or other people\'s videos.')),
+               (L('¿Cuándo sale publicado?', 'When does it go live?'), L('Revisamos cada vídeo a mano. Si encaja, sale en la web en uno o dos días, con tu nombre o tu @usuario. Los mejores los compartimos también en nuestra página de Facebook.', 'We review every video by hand. If it fits, it goes live within a day or two, with your name or @handle. We also share the best ones on our Facebook page.')),
+               (L('¿Puedo retirarlo después?', 'Can I take it down later?'), L('Sí. Escríbenos desde la página de contacto con el destino y tu @usuario y lo quitamos.', 'Yes. Write to us from the contact page with the place and your @handle and we will remove it.'))]
+        body = f"""<main class="sec" style="padding-top:26px"><div class="wrap" style="max-width:1100px">
+<div class="kicker">{L("Comunidad", "Community")}</div><h1 class="x-h1">{L("Vídeos de viajeros", "Traveller videos")}</h1>
+<p style="font-size:18px;line-height:1.6;max-width:720px">{L("Viajes reales de gente que vuela barato. Comparte el tuyo: pega el enlace de tu TikTok, Reel o YouTube, o sube el vídeo directamente. Los mejores salen también en nuestra página de Facebook, con más de 420.000 seguidores.", "Real trips from people who fly cheap. Share yours: paste your TikTok, Reel or YouTube link, or upload the video directly. The best ones also go on our Facebook page, followed by more than 420,000 travellers.")}</p>
+<div class="vf-grid">
+<form class="alert-form vf" data-hlc-video novalidate><div class="af" style="display:flex;flex-direction:column;gap:16px">
+<h2 style="margin:0;font:800 24px/1.15 'Bricolage Grotesque',sans-serif">{L("Comparte tu viaje en vídeo", "Share your trip video")}</h2>
+<div class="chips" role="group" aria-label="{L("Cómo lo envías", "How you send it")}"><button type="button" class="chip" data-vk="link" aria-pressed="true">🔗 {L("Pegar enlace", "Paste a link")}</button><button type="button" class="chip" data-vk="file" aria-pressed="false">⬆️ {L("Subir archivo", "Upload a file")}</button></div>
+<div class="fld" data-vpane="link"><label for="vf-url">{L("Enlace de TikTok, Reel de Instagram o YouTube", "TikTok, Instagram Reel or YouTube link")}</label><input id="vf-url" name="url" type="url" inputmode="url" placeholder="https://www.tiktok.com/@tu_usuario/video/…" {inp}></div>
+<div class="fld" data-vpane="file" hidden><label for="vf-file">{L("Tu vídeo (MP4, MOV o WebM, hasta 50 MB)", "Your video (MP4, MOV or WebM, up to 50 MB)")}</label><input id="vf-file" name="file" type="file" accept="video/mp4,video/quicktime,video/webm" style="font:15px Inter,sans-serif"><small data-fname style="color:#4A5468"></small></div>
+<div class="fld"><label for="vf-dest">{L("¿Dónde lo grabaste?", "Where did you film it?")}</label><input id="vf-dest" name="dest" type="text" list="vf-dests" autocomplete="off" placeholder="{L("Lisboa, Bali, Nueva York…", "Lisbon, Bali, New York…")}" required {inp}><datalist id="vf-dests"></datalist></div>
+<div class="fld"><label for="vf-cap">{L("Una frase sobre el viaje (opcional)", "One line about the trip (optional)")}</label><input id="vf-cap" name="caption" type="text" maxlength="300" placeholder="{L("4 días por 120 € con vuelo y hotel", "4 days for €120 with flight and hotel")}" {inp}></div>
+<div class="fld"><label for="vf-h">{L("Tu nombre o @usuario para el crédito", "Your name or @handle for the credit")}</label><input id="vf-h" name="handle" type="text" maxlength="60" placeholder="@{L("tu_usuario", "your_handle")}" {inp}></div>
+<div class="fld"><label for="vf-e">{L("Email (opcional, solo para avisarte cuando se publique)", "Email (optional, only to tell you when it goes live)")}</label><input id="vf-e" name="email" type="email" autocomplete="email" placeholder="{L("tu@email.com", "you@email.com")}" {inp}></div>
+<label class="consent"><input type="checkbox" name="consent" required><span>{L('El vídeo es mío y autorizo a Happy Low Cost a publicarlo en su web y en sus redes con mi crédito. Acepto la <a href="/aviso-legal-datos-cookies/">política de privacidad</a>.', 'The video is mine and I allow Happy Low Cost to publish it on its website and social media with my credit. I accept the <a href="/en/legal/">privacy policy</a>.')}</span></label>
+<button type="submit" class="hlc-btn" style="min-height:56px;font-size:17px">{L("Enviar mi vídeo", "Send my video")}</button>
+<div data-msg role="status" aria-live="polite"></div></div></form>
+<aside class="vf-tips"><h2>{L("Para que salga publicado", "To get it published")}</h2><ul><li>{L("Vertical y corto: de 15 a 60 segundos.", "Vertical and short: 15 to 60 seconds.")}</li><li>{L("Que se vea el sitio: playa, calle, plato, vistas.", "Show the place: beach, street, food, views.")}</li><li>{L("Si fue un chollo, cuéntanos cuánto pagaste.", "If it was a deal, tell us what you paid.")}</li><li>{L("Sin música con derechos si lo subes como archivo.", "No copyrighted music if you upload a file.")}</li></ul></aside>
+</div>
+<section class="vw" data-hlc-videos aria-label="{L("Vídeos publicados", "Published videos")}"><h2 class="x-h2">{L("Los últimos vídeos", "Latest videos")}</h2><div class="vw-grid"><p class="vw-empty">{L("Cargando vídeos…", "Loading videos…")}</p></div></section>
+<article class="txt guide" style="max-width:820px">{"".join(f"<h2>{G.e(q)}</h2><p>{G.e(a)}</p>" for q, a in qas)}</article>
+</div></main>"""
+        title = L('Vídeos de viajeros: comparte tu viaje · Happy Low Cost', 'Traveller videos: share your trip · Happy Low Cost')
+        desc = L('Vídeos reales de viajes baratos. Comparte el tuyo con un enlace de TikTok, Reels o YouTube, o súbelo: los mejores salen en nuestra página de Facebook.', 'Real cheap-trip videos. Share yours with a TikTok, Reels or YouTube link, or upload it: the best go on our Facebook page.')
+        if en:
+            pg = E.head(title, desc, url, f'{SITE}/videos/', ld=[faq_ld(qas, 'en')], body_class='videos') + body + E.FOOTER + '</body></html>'
+            os.makedirs('en/videos', exist_ok=True); open('en/videos/index.html', 'w', encoding='utf-8').write(pg)
+        else:
+            pg = G.head(title=title, desc=desc, canonical=url, og_type='website', og_image=f'{SITE}/hlc/brand/og-default.jpg',
+                        extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12">' + alt + G.ld_script([faq_ld(qas, 'es-ES')]), body_class='videos') + body + '</body></html>'
+            os.makedirs('videos', exist_ok=True); open('videos/index.html', 'w', encoding='utf-8').write(pg)
+
+
 def body(qas, kicker, h1, lead, cta, cta_href):
     items = ''.join(f'<h2>{G.e(q)}</h2><p>{G.e(a)}</p>' for q, a in qas)
     return (f'<main class="sec" style="padding-top:26px"><div class="wrap" style="max-width:820px">'
@@ -325,6 +367,20 @@ document.querySelector('#top tbody').innerHTML=(d.top||[]).map(function(r){retur
 }).catch(function(){try{localStorage.removeItem('hlc_panel_k');}catch(e){}document.querySelector('#t tbody').innerHTML='<tr><td colspan="11">Clave incorrecta. <a href="">Probar otra vez</a></td></tr>';});}
 load();
 })();
+</script>
+<h2 style="margin-top:40px">Vídeos de viajeros por revisar</h2>
+<p style="color:#4A5468">Nada se publica sin tu OK. Aprobar pasa el vídeo a la web (/videos/ y la guía del destino); rechazar lo borra. <span id="vq"></span></p>
+<div id="vids" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px"></div>
+<script>
+(function(){var V='https://gmdalfsvtfhzepyrdmjj.supabase.co/functions/v1/hlc-videos';
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function k(){try{return localStorage.getItem('hlc_panel_k')||'';}catch(e){return '';}}
+function call(b){b.pass=k();return fetch(V,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(b)}).then(function(r){return r.json();});}
+function card(v){var media=v.kind==='file'?(v.preview||v.public_url?'<video src="'+esc(v.preview||v.public_url)+'" controls preload="metadata" style="width:100%;max-height:360px;background:#000;border-radius:10px"></video>':'(archivo no disponible)'):'<a href="'+esc(v.url)+'" target="_blank" rel="noopener">▶ Abrir en '+esc(v.platform)+'</a>';
+return '<div style="background:#fff;border:1px solid #EADCC4;border-radius:14px;padding:12px" data-id="'+v.id+'">'+media+'<p style="margin:8px 0 4px"><b>📍 '+esc(v.dest)+'</b> · '+esc(v.status==='approved'?'publicado':'pendiente')+(v.size?' · '+Math.round(v.size/1048576*10)/10+' MB':'')+'</p><p style="margin:0 0 6px">'+esc(v.caption||'')+'</p><small>'+esc(v.handle||'')+' '+esc(v.email||'')+' · '+esc((v.created_at||'').slice(0,16).replace('T',' '))+'</small><div style="display:flex;gap:8px;margin-top:10px">'+(v.status!=='approved'?'<button class="hlc-btn" data-a="approve">Aprobar</button>':'')+'<button class="hlc-btn o" data-a="reject">'+(v.status==='approved'?'Retirar':'Rechazar')+'</button></div></div>';}
+function load(){if(!k())return;call({action:'admin_list'}).then(function(j){if(j.error){document.getElementById('vids').textContent=j.error;return;}document.getElementById('vq').textContent='Almacén usado: '+j.used_mb+' de '+j.max_mb+' MB.';document.getElementById('vids').innerHTML=(j.videos||[]).map(card).join('')||'<p>No hay vídeos.</p>';});}
+document.getElementById('vids').addEventListener('click',function(e){var b=e.target.closest('[data-a]');if(!b)return;var c=b.closest('[data-id]');b.disabled=true;call({action:b.getAttribute('data-a'),id:c.getAttribute('data-id')}).then(function(j){if(j.ok)load();else{b.disabled=false;c.insertAdjacentHTML('beforeend','<p style="color:#D63B1C">'+esc(j.error||'error')+'</p>');}});});
+setTimeout(load,800);})();
 </script></div></main></body></html>'''.replace('ANONKEY', ANON_KEY)
     os.makedirs('panel', exist_ok=True)
     open('panel/index.html', 'w', encoding='utf-8').write(ph)
@@ -335,9 +391,10 @@ load();
     open('offline/index.html', 'w', encoding='utf-8').write(pg)
     tools_pages()
     extra_pages()
+    videos_pages()
     import gen_blog
     gen_blog.main()
-    pages = ['/como-verificamos/', '/herramientas/', '/herramientas/equipaje/', '/herramientas/es-buen-precio/', '/alertas/', '/destinos/', '/vuelos/',
+    pages = ['/videos/', '/en/videos/', '/como-verificamos/', '/herramientas/', '/herramientas/equipaje/', '/herramientas/es-buen-precio/', '/alertas/', '/destinos/', '/vuelos/',
              '/hoteles/', '/en/hotels/', '/aviso-legal-datos-cookies/', '/publicidad/', '/contacto/', '/en/contact/', '/blog/', '/guias/errores-de-tarifa/', '/en/guides/error-fares/', '/en/how-we-verify/', '/en/legal/', '/en/tools/', '/en/tools/baggage/', '/en/tools/is-it-a-good-price/']
     import datetime as _dt
     today = _dt.date.today().isoformat()

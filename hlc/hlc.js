@@ -198,19 +198,19 @@ document.documentElement.classList.add('hlc-js');
       f.querySelectorAll('[data-chip]').forEach(function(c){c.addEventListener('click',function(){var on=c.getAttribute('aria-pressed')==='true';c.setAttribute('aria-pressed',on?'false':'true');});});
       f.querySelectorAll('[data-pick]').forEach(function(c){c.addEventListener('click',function(){var g=c.getAttribute('data-pick');f.querySelectorAll('[data-pick="'+g+'"]').forEach(function(x){x.setAttribute('aria-pressed','false');});c.setAttribute('aria-pressed','true');var ch=f.querySelector('[name=contact]');if(g==='channel'&&ch){var wa=c.getAttribute('data-v')==='whatsapp';ch.type=wa?'tel':'email';ch.placeholder=wa?'+34 600 000 000':'tu@email.com';var lb=f.querySelector('[data-contact-label]');if(lb)lb.textContent=wa?'Tu número de WhatsApp':'Tu email';}});});
       var ci=f.querySelector('[name=contact]'),cm=f.querySelector('[data-msg]');
-      var valid=function(){var v=(ci.value||'').trim();if(!v)return null;var wa=ci.type==='tel';return wa?/^\+?[0-9 ]{8,16}$/.test(v):/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v);};
-      var check=function(final){if(!ci)return true;var ok=valid();if(ok===false||(final&&ok===null)){ci.setAttribute('aria-invalid','true');if(cm)cm.textContent=ci.type==='tel'?'Revisa el número: con prefijo, por ejemplo +34 600 000 000.':'Revisa el email: debe parecerse a nombre@dominio.com.';return false;}ci.removeAttribute('aria-invalid');if(cm&&/^Revisa/.test(cm.textContent))cm.textContent='';return true;};
+      var valid=function(){var v=(ci.value||'').trim();if(!v)return null;return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v);};
+      var check=function(final){if(!ci)return true;var ok=valid();if(ok===false||(final&&ok===null)){ci.setAttribute('aria-invalid','true');if(cm)cm.textContent=T('Revisa el email: debe parecerse a nombre@dominio.com. Si no quieres dar email, usa «Avísame en este navegador».','Check the email: it should look like name@domain.com.');return false;}ci.removeAttribute('aria-invalid');if(cm&&/^Revisa/.test(cm.textContent))cm.textContent='';return true;};
       if(ci){ci.addEventListener('blur',function(){check(false);});ci.addEventListener('input',function(){if(ci.getAttribute('aria-invalid'))check(false);});}
       f.addEventListener('submit',function(e){
         e.preventDefault();
         if(!check(true))return;
         var msg=f.querySelector('[data-msg]');var btn=f.querySelector('[type=submit]');
         var origins=[].map.call(f.querySelectorAll('[data-chip][aria-pressed=true]'),function(c){return c.getAttribute('data-v');});
-        var pr=f.querySelector('[data-pick=price][aria-pressed=true]');var chn=f.querySelector('[data-pick=channel][aria-pressed=true]');
-        var body={action:'alert',origins:origins,destination:(f.querySelector('[name=destination]')||{}).value||'',max_price:pr?+pr.getAttribute('data-v'):null,channel:chn?chn.getAttribute('data-v'):'email',contact:(f.querySelector('[name=contact]')||{}).value||'',consent:!!(f.querySelector('[name=consent]')||{}).checked};
+        var pr=f.querySelector('[data-pick=price][aria-pressed=true]');
+        var body={action:'alert',origins:origins,destination:(f.querySelector('[name=destination]')||{}).value||'',max_price:pr?+pr.getAttribute('data-v'):null,channel:'email',contact:(f.querySelector('[name=contact]')||{}).value||'',consent:!!(f.querySelector('[name=consent]')||{}).checked};
         btn.disabled=true;msg.textContent='Guardando…';
         fetch(API,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)}).then(function(r){return r.json();}).then(function(j){
-          if(j.ok){f.classList.add('done');msg.textContent='';track('alerta_creada',body.channel);if(origins[0])ls('hlc_origin',origins[0]);var ok=f.querySelector('[data-ok]');if(ok){ok.hidden=false;ok.querySelector('[data-sum]').textContent=(origins.length?origins.join(', '):'cualquier aeropuerto de España')+(body.max_price?' por menos de '+body.max_price+' €':'');}}
+          if(j.ok){f.classList.add('done');msg.textContent='';track('alerta_creada','email');ls('hlc_alert','email');if(origins[0])ls('hlc_origin',origins[0]);var ok=f.querySelector('[data-ok]');if(ok){ok.hidden=false;ok.innerHTML=doneHtml((origins.length?origins.join(', '):T('cualquier aeropuerto de España','any airport in Spain'))+(body.max_price?T(' por menos de ',' under ')+body.max_price+' €':''),true);var pb=f.querySelector('.hlc-push'),al=ok.querySelector('.af-links');if(pb&&al)al.parentNode.insertBefore(pb,al);try{ok.scrollIntoView({behavior:'smooth',block:'center'});}catch(er){}}}
           else{msg.textContent=j.error||'No se ha podido guardar. Prueba otra vez.';btn.disabled=false;}
         }).catch(function(){msg.textContent='Sin conexión. Prueba otra vez.';btn.disabled=false;});
       });
@@ -260,7 +260,19 @@ document.documentElement.classList.add('hlc-js');
     d.body.insertBefore(n,d.body.firstChild);
   }
 
-  /* ---------- Portada: alerta rápida (aeropuerto + email o WhatsApp) ---------- */
+  /* ---------- Portada: alerta rápida (aeropuerto + email) ---------- */
+  /* ---------- Tras crear la alerta: qué pasa ahora (3 pasos) ---------- */
+  var MAIL_LIVE=false; /* pasar a true cuando los emails de alerta salgan de verdad (falta el proveedor de envío) */
+  function doneHtml(origin,mail){
+    var o=esc(origin||T('tu aeropuerto','your airport'));
+    return '<div class="qf-done af-next"><b>'+T('¡Alerta guardada! ✈️','Alert saved! ✈️')+'</b>'+
+      '<ol class="af-steps"><li class="ok">'+T('Vigilamos los vuelos desde <strong>'+o+'</strong>.','We are watching flights from <strong>'+o+'</strong>.')+'</li>'+
+      (mail?'<li>'+(MAIL_LIVE?T('Te escribiremos una vez para que confirmes tu email. Si no lo ves, mira en promociones o spam.','We will email you once to confirm it is yours. If you cannot see it, check promotions or spam.'):T('Guardamos tu email: los avisos por email empiezan muy pronto y te pediremos que lo confirmes.','We saved your email: email alerts start very soon and we will ask you to confirm it.'))+'</li>':'')+
+      '<li>'+T('¿Lo quieres al instante? Activa el aviso en este móvil:','Want it instantly? Turn on alerts on this phone:')+'</li></ol>'+
+      '<input type="hidden" name="origin" value="'+o+'"><div data-msg></div>'+
+      '<p class="af-links"><a href="'+T('/chollos/','/en/deals/')+'">'+T('Ver los chollos de hoy →','See today\'s deals →')+'</a> · <a href="'+T('/videos/','/en/videos/')+'">'+T('Comparte el vídeo de tu viaje','Share your trip video')+'</a></p></div>';
+  }
+
   function quick(){
     d.querySelectorAll('form[data-hlc-quick]').forEach(function(f){
       var sel=f.querySelector('[name=origin]'),o=ls('hlc_origin');
@@ -268,13 +280,13 @@ document.documentElement.classList.add('hlc-js');
       if(sel)sel.addEventListener('change',function(){ls('hlc_origin',sel.value);try{w.dispatchEvent(new CustomEvent('hlc:origin',{detail:sel.value}));}catch(e){}});
       f.addEventListener('submit',function(e){
         e.preventDefault();var msg=f.querySelector('[data-msg]'),btn=f.querySelector('[type=submit]');
-        var c=(f.querySelector('[name=contact]').value||'').trim(),isMail=c.indexOf('@')>0,tel=c.replace(/[^\d+]/g,'');
-        if(!isMail&&tel.replace(/\D/g,'').length<8){msg.textContent=T('Escribe tu email o tu número de WhatsApp (con prefijo).','Enter your email or WhatsApp number (with country code).');return;}
+        var c=(f.querySelector('[name=contact]').value||'').trim();
+        if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(c)){msg.textContent=T('Escribe tu email (nombre@dominio.com). Si no quieres dar email, pulsa «Avísame en este navegador».','Enter your email (name@domain.com). If you prefer not to, tap «Alert me in this browser».');return;}
         if(!f.querySelector('[name=consent]').checked){msg.textContent=T('Marca la casilla para poder avisarte.','Tick the box so we can alert you.');return;}
-        var body={action:'alert',origins:[sel?sel.value:''],destination:'',max_price:null,channel:isMail?'email':'whatsapp',contact:isMail?c:(tel.charAt(0)==='+'?tel:'+'+tel),consent:true};
+        var body={action:'alert',origins:[sel?sel.value:''],destination:'',max_price:null,channel:'email',contact:c,consent:true,lang:EN?'en':'es'};
         btn.disabled=true;msg.textContent=T('Guardando…','Saving…');
         fetch(API,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)}).then(function(r){return r.json();}).then(function(j){
-          if(j.ok){f.classList.add('done');ls('hlc_origin',body.origins[0]);track('alerta_rapida',body.channel);f.innerHTML='<div class="qf-done"><b>'+T('¡Apuntado! ✈️','You are on the list! ✈️')+'</b><span>'+T('Los avisos por '+(isMail?'email':'WhatsApp')+' empiezan en cuanto activemos ese envío. Para recibir desde hoy los chollos desde '+esc(body.origins[0])+', activa los avisos en este navegador:','Alerts by '+(isMail?'email':'WhatsApp')+' start as soon as we switch that channel on. To get deals from '+esc(body.origins[0])+' from today, turn on alerts in this browser:')+'</span><input type="hidden" name="origin" value="'+esc(body.origins[0])+'"><div data-msg></div><a href="'+T('/chollos/','/en/deals/')+'">'+T('Mientras, mira los de hoy →','Meanwhile, see today\'s deals →')+'</a></div>';try{pushUI();}catch(er){}}
+          if(j.ok){f.classList.add('done');ls('hlc_origin',body.origins[0]);ls('hlc_alert','email');track('alerta_rapida','email');f.innerHTML=doneHtml(body.origins[0],true);try{pushUI();}catch(er){}}
           else{msg.textContent=j.error||T('No se ha podido guardar. Prueba otra vez.','Could not save. Try again.');btn.disabled=false;}
         }).catch(function(){msg.textContent=T('Sin conexión. Prueba otra vez.','No connection. Try again.');btn.disabled=false;});
       });
@@ -391,7 +403,7 @@ document.documentElement.classList.add('hlc-js');
       var box=d.createElement('div');box.className='hlc-push';
       if(!ok){return;}
       var already=ls('hlc_push')==='1'&&Notification.permission==='granted';
-      box.innerHTML='<button type="button" class="hlc-btn o" data-hlc-push>'+(already?T('🔔 Avisos activados en este navegador','🔔 Alerts on in this browser'):T('🔔 O avísame aquí, sin dar email','🔔 Or alert me here, no email needed'))+'</button><small data-push-msg role="status" aria-live="polite"></small>';
+      box.innerHTML='<button type="button" class="hlc-btn o" data-hlc-push>'+(already?T('🔔 Avisos activados en este navegador','🔔 Alerts on in this browser'):T('🔔 Avísame en este navegador (sin email)','🔔 Alert me in this browser (no email)'))+'</button><small data-push-msg role="status" aria-live="polite"></small>';
       var anchor=f.querySelector('.qf-ok')||f.querySelector('[data-msg]');if(anchor&&anchor.parentNode)anchor.parentNode.insertBefore(box,anchor.nextSibling);else f.appendChild(box);
       var btn=box.querySelector('button'),msg=box.querySelector('[data-push-msg]');
       btn.addEventListener('click',function(){
@@ -444,8 +456,67 @@ document.documentElement.classList.add('hlc-js');
     var m=c==='ok'?T('✅ Alerta confirmada. Te avisaremos cuando salga un chollo desde tu aeropuerto.','✅ Alert confirmed. We will let you know when a deal leaves from your airport.'):c?T('Ese enlace de confirmación no es válido o ha caducado. Vuelve a crear la alerta.','That confirmation link is not valid. Please create the alert again.'):b==='ok'?T('Te has dado de baja. No recibirás más avisos.','You have unsubscribed. No more alerts.'):T('No hemos podido darte de baja con ese enlace. Escríbenos desde Contacto.','We could not unsubscribe you with that link. Write to us via Contact.');
     var n=d.createElement('div');n.className='hlc-old';n.setAttribute('role','status');n.style.margin='16px auto';n.style.maxWidth='760px';n.textContent=m;var mn=d.querySelector('main')||d.body;mn.insertBefore(n,mn.firstChild);}catch(e){}}
   function lazyBg(){var l=d.querySelectorAll('[data-bg]');if(!l.length)return;var set=function(el){if(!el.getAttribute('data-bg'))return;el.style.backgroundImage='url('+el.getAttribute('data-bg')+')';el.removeAttribute('data-bg');};if(!('IntersectionObserver' in w)){l.forEach(set);return;}var o=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){set(en.target);o.unobserve(en.target);}});},{rootMargin:'300px'});l.forEach(function(el){o.observe(el);});}
+
+  /* ---------- Vídeos de viajeros: enviar (enlace o archivo) y muro ---------- */
+  var VAPI='https://gmdalfsvtfhzepyrdmjj.supabase.co/functions/v1/hlc-videos';
+  function vEmbed(v){
+    if(v.kind==='file'&&v.public_url)return '<video src="'+esc(v.public_url)+'#t=0.5" controls playsinline preload="none"></video>';
+    var u=v.url||'',m;
+    if(v.platform==='youtube'&&(m=u.match(/(?:youtu\.be\/|v=|shorts\/|embed\/)([\w-]{11})/)))return '<button type="button" class="vw-yt" data-yt="'+m[1]+'" style="background-image:url(https://i.ytimg.com/vi/'+m[1]+'/hqdefault.jpg)" aria-label="'+T('Ver vídeo','Play video')+'"><span>▶</span></button>';
+    var lab={tiktok:'TikTok',instagram:'Instagram',youtube:'YouTube'}[v.platform]||T('vídeo','video');
+    return '<a class="vw-link" href="'+esc(u)+'" target="_blank" rel="noopener nofollow ugc"><span>▶</span>'+T('Ver en ','Watch on ')+lab+'</a>';
+  }
+  function vCard(v){return '<figure class="vw-card">'+vEmbed(v)+'<figcaption><b>📍 '+esc(v.dest||'')+'</b>'+(v.caption?'<span>'+esc(v.caption)+'</span>':'')+(v.handle?'<small>'+esc(v.handle)+'</small>':'')+'</figcaption></figure>';}
+  function videoWalls(){
+    d.querySelectorAll('[data-hlc-videos]').forEach(function(box){
+      var dest=box.getAttribute('data-dest')||'';
+      fetch(VAPI+'?action=list'+(dest?'&dest='+encodeURIComponent(dest):'')).then(function(r){return r.json();}).then(function(j){
+        var L=(j&&j.videos)||[];var grid=box.querySelector('.vw-grid')||box;
+        if(!L.length){if(box.hasAttribute('data-hide-empty'))return;grid.innerHTML='<p class="vw-empty">'+T('Aún no hay vídeos publicados. ¡El tuyo puede ser el primero!','No videos yet. Yours could be the first!')+'</p>';return;}
+        grid.innerHTML=L.map(vCard).join('');box.hidden=false;
+        grid.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('.vw-yt');if(!b)return;var f=d.createElement('iframe');f.src='https://www.youtube-nocookie.com/embed/'+b.getAttribute('data-yt')+'?autoplay=1';f.allow='autoplay; encrypted-media; picture-in-picture';f.allowFullscreen=true;f.title='YouTube';b.replaceWith(f);});
+      }).catch(function(){});
+    });
+  }
+  function videoForm(){
+    d.querySelectorAll('form[data-hlc-video]').forEach(function(f){
+      var msg=f.querySelector('[data-msg]'),btn=f.querySelector('[type=submit]'),tabs=f.querySelectorAll('[data-vk]'),kind='link';
+      var setKind=function(k){kind=k;tabs.forEach(function(t){t.setAttribute('aria-pressed',String(t.getAttribute('data-vk')===k));});f.querySelectorAll('[data-vpane]').forEach(function(p){p.hidden=p.getAttribute('data-vpane')!==k;});};
+      tabs.forEach(function(t){t.addEventListener('click',function(){setKind(t.getAttribute('data-vk'));});});
+      fetch(VAPI+'?action=quota').then(function(r){return r.json();}).then(function(q){if(q&&q.file_ok===false){var t=f.querySelector('[data-vk=file]');if(t){t.disabled=true;t.title=T('La subida directa está llena: usa un enlace','Direct upload is full: use a link');}}}).catch(function(){});
+      var fi=f.querySelector('[name=file]'),fn=f.querySelector('[data-fname]');
+      if(fi)fi.addEventListener('change',function(){var x=fi.files&&fi.files[0];if(fn)fn.textContent=x?(x.name+' · '+(x.size/1048576).toFixed(1)+' MB'):'';});
+      var dl=f.querySelector('#vf-dests');if(dl&&!dl.children.length){fetch('/hlc/destinos.json').then(function(r){return r.json();}).then(function(L){dl.innerHTML=L.slice(0,400).map(function(p){return '<option value="'+esc(p.n)+'">';}).join('');}).catch(function(){});}
+      f.addEventListener('submit',function(e){
+        e.preventDefault();
+        var g=function(n){return ((f.querySelector('[name='+n+']')||{}).value||'').trim();};
+        var base={action:'start',kind:kind,dest:g('dest'),caption:g('caption'),handle:g('handle'),email:g('email'),consent:!!(f.querySelector('[name=consent]')||{}).checked,lang:EN?'en':'es'};
+        if(base.dest.length<2){msg.textContent=T('Dinos dónde lo grabaste.','Tell us where you filmed it.');return;}
+        if(!base.consent){msg.textContent=T('Marca la casilla para que podamos publicarlo.','Tick the box so we can publish it.');return;}
+        var file=null;
+        if(kind==='link'){base.url=g('url');if(!/^https:\/\//.test(base.url)){msg.textContent=T('Pega el enlace completo (empieza por https://).','Paste the full link (starting with https://).');return;}}
+        else{file=fi&&fi.files&&fi.files[0];if(!file){msg.textContent=T('Elige el vídeo.','Choose the video.');return;}
+          var mt=file.type||(/\.mov$/i.test(file.name)?'video/quicktime':/\.webm$/i.test(file.name)?'video/webm':'video/mp4');
+          if(!/^video\/(mp4|quicktime|webm)$/.test(mt)){msg.textContent=T('Formato no válido: sube MP4, MOV o WebM.','Invalid format: upload MP4, MOV or WebM.');return;}
+          if(file.size>50*1048576){msg.textContent=T('Pesa más de 50 MB. Recórtalo o pega el enlace de TikTok, Reel o YouTube.','It is over 50 MB. Trim it or paste a TikTok, Reel or YouTube link.');return;}
+          base.size=file.size;base.mime=mt;}
+        btn.disabled=true;msg.textContent=T('Enviando…','Sending…');
+        var fail=function(t){msg.textContent=t||T('No se ha podido enviar. Prueba otra vez.','Could not send. Try again.');btn.disabled=false;};
+        fetch(VAPI,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(base)}).then(function(r){return r.json();}).then(function(j){
+          if(!j.ok)return fail(j.error);
+          if(kind==='link')return finish();
+          return new Promise(function(res,rej){var x=new XMLHttpRequest();x.open('PUT',j.upload);x.setRequestHeader('content-type',base.mime);x.setRequestHeader('x-upsert','false');
+            x.upload.onprogress=function(ev){if(ev.lengthComputable)msg.textContent=T('Subiendo… ','Uploading… ')+Math.round(ev.loaded/ev.total*100)+' %';};
+            x.onload=function(){x.status<300?res():rej();};x.onerror=rej;x.send(file);}).then(function(){
+            return fetch(VAPI,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({action:'done',id:j.id,lang:base.lang})}).then(function(r){return r.json();});
+          }).then(function(k){if(k&&k.ok)finish();else fail(k&&k.error);},function(){fail(T('La subida se ha cortado. Prueba con wifi o pega el enlace.','The upload stopped. Try on wifi or paste a link.'));});
+        }).catch(function(){fail();});
+        function finish(){track('video_enviado',kind);f.innerHTML='<div class="qf-done af-next"><b>'+T('¡Gracias! 🎬','Thanks! 🎬')+'</b><span>'+T('Lo revisamos y, si encaja, lo publicamos en la web con tu nombre en uno o dos días. Los mejores salen también en nuestra página de Facebook.','We will review it and, if it fits, publish it on the site with your name within a day or two. The best ones also go on our Facebook page.')+'</span><p class="af-links"><a href="'+T('/chollos/','/en/deals/')+'">'+T('Ver los chollos de hoy →','See today\'s deals →')+'</a></p></div>';}
+      });
+    });
+  }
   function init(){try{okStamps();}catch(e){}try{lazyBg();}catch(e){}
-    [bkLinks,langSwitch,quick,geoAirport,pushUI,reportUI,routeCal,search,clicks,oldDealNotice,toolsBox,mobileBar,regionChips,origins,tabs,renderDeals,alerts,reveal,cookieBanner,cookieLink,favs,share,dealState,toTop,heroRotate,relTimes,routeAge,buyBar,seen,wideTables,alertNotice].forEach(function(f){try{f();}catch(e){}});
+    [bkLinks,langSwitch,quick,geoAirport,pushUI,reportUI,routeCal,search,clicks,oldDealNotice,toolsBox,mobileBar,regionChips,origins,tabs,renderDeals,alerts,reveal,cookieBanner,cookieLink,favs,share,dealState,toTop,heroRotate,relTimes,routeAge,buyBar,seen,wideTables,alertNotice,videoWalls,videoForm].forEach(function(f){try{f();}catch(e){}});
   }
   if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',init);else init();
 })();

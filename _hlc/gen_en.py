@@ -77,17 +77,18 @@ HEADER = '''<header class="hx" id="hx"><div class="hx-in">
 <a href="/en/deals/">Today's deals</a>
 <a href="/en/flights/">Flight routes</a>
 <a href="/en/destinations/">Destination guides</a>
+<a href="/en/videos/">Videos</a>
 <a class="hx-cta" href="/en/deals/">✈️ Find a deal</a>
 </nav></div></header>'''
 FOOTER = '''<footer class="fx"><div class="fx-in">
 <div><a class="fx-logo" href="/en/" style="display:inline-block;padding:0"><b>happy</b><svg width="104" height="19" viewBox="0 0 250 46" aria-hidden="true" style="display:block"><path d="M8 8 Q120 58 214 14" fill="none" stroke="#FFC531" stroke-width="11" stroke-linecap="round"/></svg><i>low cost</i></a>
 <p>We hunt the cheapest flights in the world and check every price before we publish it. More than 420,000 travellers have followed us since 2012.</p></div>
-<div><h2 class="fx-h">Deals</h2><a href="/en/deals/">Today's deals</a><a href="/en/deals/?orden=precio">Cheapest deals</a><a href="/en/flights/">Flight routes</a><a href="/en/how-we-verify/">How we verify</a><a href="/en/tools/">Tools</a><a href="/en/guides/error-fares/">Error fares</a><a href="/en/contact/">Contact</a></div>
+<div><h2 class="fx-h">Deals</h2><a href="/en/deals/">Today's deals</a><a href="/en/deals/?orden=precio">Cheapest deals</a><a href="/en/flights/">Flight routes</a><a href="/en/how-we-verify/">How we verify</a><a href="/en/videos/">Traveller videos</a><a href="/en/tools/">Tools</a><a href="/en/guides/error-fares/">Error fares</a><a href="/en/contact/">Contact</a></div>
 <div><h2 class="fx-h">Explore</h2><a href="/en/destinations/">Destination guides</a><a href="/en/hotels/">Where to stay</a><a href="/en/deals/?cont=asia">Asia</a><a href="/en/deals/?cont=europa">Europe</a><a href="/en/deals/?cont=norteamerica">North America</a></div>
-<div><h2 class="fx-h">Follow us</h2><a href="https://www.facebook.com/happylowcostofficialpage/" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/happylowcost/" target="_blank" rel="noopener">Instagram</a><a href="https://x.com/happylowcost" target="_blank" rel="noopener">X / Twitter</a><a href="/">🇪🇸 Versión en español</a></div>
+<div><h2 class="fx-h">Follow us</h2><a href="https://www.facebook.com/happylowcostofficialpage/" target="_blank" rel="noopener">Facebook</a><a href="https://x.com/happylowcost" target="_blank" rel="noopener">X / Twitter</a><a href="/">🇪🇸 Versión en español</a></div>
 </div>
 <div class="fx-legal">Some links are affiliate links: if you book through them we may earn a small commission at no extra cost to you. Prices were checked on the date shown on each deal and can change. Destination photos: Wikimedia Commons (credits on each page). <a href="/en/legal/" style="display:inline;color:#D6DCEA!important;text-decoration:underline">Legal notice, privacy &amp; cookies</a> · © 2012-2026 Happy Low Cost</div>
-</footer><script src="/hlc/hlc.js?v=48" defer></script>'''
+</footer><script src="/hlc/hlc.js?v=49" defer></script>'''
 
 
 def head(title, desc, canonical, es_url=None, og_image=None, og_type='website', ld=None, robots='index, follow, max-image-preview:large', body_class=''):
@@ -290,7 +291,7 @@ def main():
 
     # ---------- explorer /en/deals/ and home /en/ ----------
     cheapest = min((x['price'] for x in deals), default=None)
-    intro = (f"{len(deals)} flight deals live right now, departing from {len(origins)} countries to {nconts} continents. "
+    intro = (f"{len(deals)} flight deal{'s' if len(deals) != 1 else ''} live right now, departing from {len(origins)} countr{'ies' if len(origins) != 1 else 'y'} to {nconts} continent{'s' if nconts != 1 else ''}. "
              "We check every price on Kiwi.com before publishing it and again every day; if it rises more than 10%, we pull it.")
     grid = ''.join(card(x) for x in deals) or '<div class="dc-empty"><b>No deals right now.</b><span>Fares move fast: check back in a few hours.</span></div>'
     empty = '<div class="dc-empty" data-x-empty hidden><b>No deals match those filters.</b><span>Try removing a filter.</span></div>'
@@ -392,7 +393,7 @@ def main():
            '</optgroup><optgroup label="Asia &amp; Oceania">' + ''.join(f'<option>{c}</option>' for c in ['Singapore', 'Dubai', 'Hong Kong', 'Seoul', 'Tokyo', 'Bangkok', 'Sydney']) + '</optgroup>')
     def qform():
         return (f'<form class="qf" data-hlc-quick novalidate><div class="qf-row"><label class="qf-sel"><span>Flying from</span><select name="origin" aria-label="Your airport">{AIR}</select></label>'
-                '<label class="qf-in"><span>Alert me at</span><input name="contact" type="text" inputmode="email" autocomplete="email" placeholder="your email or WhatsApp" aria-label="Email or WhatsApp" required></label>'
+                '<label class="qf-in"><span>Alert me at</span><input name="contact" type="email" inputmode="email" autocomplete="email" placeholder="your email" aria-label="Your email" required></label>'
                 '<button type="submit" class="hlc-btn qf-go">Alert me free</button></div>'
                 '<label class="qf-ok"><input type="checkbox" name="consent" required> I agree to receive deal alerts from Happy Low Cost (max one a day) and the <a href="/en/legal/">privacy policy</a>.</label>'
                 '<div class="qf-msg" data-msg role="status" aria-live="polite"></div></form>')
@@ -428,7 +429,7 @@ def main():
 <section class="sec h2-sec h2-how"><div class="wrap">
 <div class="h2-h"><h2>How it works</h2></div>
 <ol class="h2-steps">
-<li><b>1</b><h3>Tell us your airport</h3><p>And whether you prefer email or WhatsApp.</p></li>
+<li><b>1</b><h3>Tell us your airport</h3><p>And whether you want the alert by email or on your phone.</p></li>
 <li><b>2</b><h3>We hunt and verify</h3><p>Error fares and flash sales, checked before we publish them.</p></li>
 <li><b>3</b><h3>We alert you, you book</h3><p>With the exact dates. You just pack your bag.</p></li>
 </ol>
@@ -483,6 +484,7 @@ def main():
 <a class="hlc-btn o" href="/en/deals/">See all deals</a>
 </aside></div>
 <div id="hotels">{T3.block(n, p.get('y'), p.get('x'), [p['s']] + list(p.get('a') or []), (), lang='en')}</div>
+<section class="sec vw" data-hlc-videos data-dest="{p["s"]}" data-hide-empty hidden><div class="sec-h"><div><div class="kicker">Traveller videos</div><h2>{e(n)} on video</h2></div><a class="hlc-btn o" href="/en/videos/">Share yours</a></div><div class="vw-grid"></div></section>
 <section class="sec" style="padding-top:10px"><div class="sec-h"><div><div class="kicker">More inspiration</div><h2>Other destinations</h2></div></div><div class="hub-g">{''.join(f'<a class="hub-l" href="/en/destinations/{G.en_dest_slug(q["s"])}/">{e(NAMES.get(q["s"], q["n"]))}</a>' for q in G.DLIB if q['s'] in dmap and q['s'] != p['s'] and q['r'] == p['r'])}</div></section>
 </div></main>{FOOTER}</body></html>'''
         write(f"en/destinations/{G.en_dest_slug(p['s'])}", page)

@@ -1000,7 +1000,7 @@ def main():
     print('caducados', gone)
 
     # ---------- explorador /chollos/ ----------
-    intro = (f"{len(deals)} chollos de vuelos activos ahora mismo, con salida desde {len(origins)} países y destinos en {nconts} continentes. "
+    intro = (f"{len(deals)} chollo{'s' if len(deals) != 1 else ''} de vuelos activo{'s' if len(deals) != 1 else ''} ahora mismo, con salida desde {len(origins)} país{'es' if len(origins) != 1 else ''} y destinos en {nconts} continente{'s' if nconts != 1 else ''}. "
              f"Cada precio se comprueba en Kiwi.com antes de publicarlo y otra vez cada día; si sube más de un 10 %, lo retiramos.")
     _d = datetime.date.today()
     list_page('chollos', f'Chollos de vuelos de hoy, {_d.day} de {["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"][_d.month - 1]}: verificados · Happy Low Cost', 'Chollos de vuelos de hoy', 'Recién cazados · verificados', intro, deals,
@@ -1042,7 +1042,7 @@ def main():
         pool = sorted(deals, key=lambda x: (_age_bucket(x), 0 if x['facts'].get('origen_cc') == 'ES' else 1, 0 if x['facts'].get('ahorro_pct') else 1, -(datetime.datetime.fromisoformat((x.get('approved_at') or '1970-01-01')[:19]).timestamp())))
         top = pool[:6]
         ix = open('index.html', encoding='utf-8').read()
-        ix = re.sub(r'<!--ssr-count-->.*?<!--/ssr-count-->', f'<!--ssr-count-->{len(deals)} chollos activos ahora, desde {len(origins)} países. Precio comprobado cada día frente a lo que suele costar la ruta.<!--/ssr-count-->', ix, flags=re.S)
+        ix = re.sub(r'<!--ssr-count-->.*?<!--/ssr-count-->', f'<!--ssr-count-->{len(deals)} chollo{"s" if len(deals) != 1 else ""} activo{"s" if len(deals) != 1 else ""} ahora, desde {len(origins)} país{"es" if len(origins) != 1 else ""}. Precio comprobado cada día frente a lo que suele costar la ruta.<!--/ssr-count-->', ix, flags=re.S)
         if '<!--ssr-deals-->' in ix:
             ix = re.sub(r'<!--ssr-deals-->.*?<!--/ssr-deals-->', lambda m: '<!--ssr-deals-->' + (''.join(card(x) for x in top) or EMPTY) + '<!--/ssr-deals-->', ix, flags=re.S)
         def phone(x, cls, attr):
@@ -1057,7 +1057,7 @@ def main():
         il = ld_script([{"@type": "ItemList", "name": "Chollos de vuelos de hoy", "numberOfItems": len(top), "itemListElement": [
             {"@type": "ListItem", "position": i + 1, "url": f"{SITE}/chollos/{x['slug']}/", "name": clean_title(x.get('title') or '')} for i, x in enumerate(top)]}])
         ix = re.sub(r'<!--ssr-ld-->.*?<!--/ssr-ld-->', '', ix, flags=re.S).replace('</head>', '<!--ssr-ld-->' + il + '<!--/ssr-ld--></head>', 1)
-        cnt_desc = f"{len(deals)} chollos de vuelos verificados hoy, desde {min(x['price'] for x in deals)} € ida y vuelta, todos al menos un {MIN_SAVE} % por debajo del precio habitual. Te avisamos gratis por email o WhatsApp." if deals else None
+        cnt_desc = f"{len(deals)} chollos de vuelos verificados hoy, desde {min(x['price'] for x in deals)} € ida y vuelta, todos al menos un {MIN_SAVE} % por debajo del precio habitual. Te avisamos gratis por email o en el móvil." if deals else None
         if cnt_desc:
             ix = re.sub(r'(<meta name="description" content=")[^"]*(")', lambda m: m.group(1) + e(cnt_desc) + m.group(2), ix, count=1)
             ix = re.sub(r'(<meta property="og:description" content=")[^"]*(")', lambda m: m.group(1) + e(cnt_desc) + m.group(2), ix, count=1)
@@ -1179,6 +1179,7 @@ def main():
 <a class="hlc-btn o" href="/chollos/">Ver todos los chollos</a>
 </aside></div>
 <div id="hoteles">{T3.block(p['n'], p.get('y'), p.get('x'), [p['s']] + list(p.get('a') or []), (), lang='es')}</div>
+<section class="sec vw" data-hlc-videos data-dest="{p["s"]}" data-hide-empty hidden><div class="sec-h"><div><div class="kicker">Vídeos de viajeros</div><h2>{e(p["n"])} en vídeo</h2></div><a class="hlc-btn o" href="/videos/">Comparte el tuyo</a></div><div class="vw-grid"></div></section>
 <section class="sec" style="padding-top:10px"><div class="sec-h"><div><div class="kicker">Más inspiración</div><h2>Otros destinos</h2></div></div><div class="hub-g">{''.join(f'<a class="hub-l" href="/destinos/{q["s"]}/">{e(q["n"])}</a>' for q in DLIB if q['s'] in dmap and q['s'] != p['s'] and q['r'] == p['r'])}</div></section>
 </div></main></body></html>'''
         os.makedirs(os.path.join('destinos', p['s']), exist_ok=True)

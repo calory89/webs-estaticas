@@ -6,7 +6,7 @@ import os, re, subprocess, json, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import bk as BK
 
-V = '48'
+V = '49'
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 files = subprocess.run(['git', 'ls-files', '-co', '--exclude-standard', '-z', '*.html'], capture_output=True).stdout.decode().split('\0')
@@ -125,6 +125,27 @@ def old_notice(t):
     return t[:m2.end()] + box + t[m2.end():]
 
 
+
+
+# ---------- chollos caducados de WordPress: fuera del índice si no traen visitas (26-nov-2026) ----------
+# Search Console (ago-2025 a nov-2026): estas URLs antiguas tienen 10+ impresiones o algún clic y se quedan indexadas.
+try:
+    KEEP = set(open(os.path.join(ROOT, '_hlc', 'keep_indexed.txt'), encoding='utf-8').read().split())
+except Exception:
+    KEEP = None
+NOINDEX = "<meta name='robots' content='noindex, follow' />"
+
+
+def expired_noindex(t, f):
+    if KEEP is None or 'id="soledad_wrapper"' not in t or not re.search(r'<body[^>]*class="[^"]*\bsingle\b', t):
+        return t
+    seg = f.split('/')[0]
+    h = re.search(r'<h1[^>]*>(.*?)</h1>', t, re.S)
+    title = _html.unescape(re.sub(r'<[^>]+>', '', h.group(1))) if h else ''
+    is_deal = bool(OFFER_RX.search(title) or re.search(r'\d+e(-|$)|-i-v(-|$)|-iv(-|$)|ida-y-vuelta|trayecto', seg))
+    if not is_deal or seg in KEEP:
+        return t
+    return re.sub(r"<meta name='robots' content='[^']*' />", NOINDEX, t, count=1)
 
 
 # ---------- restos de la plantilla WordPress (Soledad) en los posts antiguos ----------
@@ -258,10 +279,12 @@ def legacy_seo(t):
     tm = re.search(r'<title>(.*?)</title>', t, re.S)
     title = _html.unescape(tm.group(1)).strip() if tm else ''
     short = re.sub(r'\s+[-–|·]\s+Happy Low Cost\s*$', '', title)
-    # título: Google ya añade el nombre del sitio; si es largo, fuera el sufijo
-    if tm and len(title) > 60 and short != title:
-        t = t[:tm.start(1)] + _html.escape(short, quote=False) + t[tm.end(1):]
-        t = re.sub(r'(<meta (?:property|name)="(?:og|twitter):title" content=")([^"]*?)\s+[-–|·]\s+Happy Low Cost(")', r'\1\2\3', t)
+    short = re.sub(r'(?<![.])\.\s*$', '', short).strip()
+    # título: "Castillo de Elda. - Happy Low Cost" -> "Castillo de Elda · Happy Low Cost"; si no cabe, sin la marca (Google ya la añade)
+    if tm and short != title:
+        nt = short + ' · Happy Low Cost' if len(short) <= 42 else short
+        t = t[:tm.start(1)] + _html.escape(nt, quote=False) + t[tm.end(1):]
+        t = re.sub(r'(<meta (?:property|name)="(?:og|twitter):title" content=")([^"]*?)\.?\s+[-–|·]\s+Happy Low Cost(")', r'\1\2\3', t)
     h1 = re.search(r'<h1[^>]*>(.*?)</h1>', t, re.S)
     name = _txt(h1.group(1)) if h1 else short
     # descripción
@@ -427,6 +450,7 @@ for f in files:
         stats['old'] += 1
     t = t2
     t = lazy_cards(related_block(legacy_seo(t)))
+    t = expired_noindex(t, f)
     if '—' in t and not re.search(r'[\u4e00-\u9fff]', t):
         t = dash_all(t)
     # búsquedas de hoteles en Booking con dest_id (solo ?ss= da error a muchos usuarios)
@@ -452,5 +476,31 @@ for f in subprocess.run(['git', 'ls-files', '-co', '--exclude-standard', '-z', '
             s1 = dash_all(s1)
         if s1 != s0:
                 open(f, 'w', encoding='utf-8', errors='surrogateescape').write(s1); stats['bk_en'] = stats.get('bk_en', 0) + 1
+
+# ---------- sitemaps de posts antiguos: solo lo que queremos indexado ----------
+if not ONLY and KEEP is not None:
+    gone = set()
+    for f in files:
+        if f.endswith('/index.html') and f.count('/') == 1:
+            try:
+                h = open(f, encoding='utf-8', errors='surrogateescape').read(30000)
+            except Exception:
+                continue
+            if "content='noindex" in h or 'content="noindex' in h:
+                gone.add(f.split('/')[0])
+    n = 0
+    for sm in ('post-sitemap.xml', 'post-sitemap2.xml', 'post-sitemap3.xml'):
+        if not os.path.exists(sm):
+            continue
+        x = open(sm, encoding='utf-8').read()
+        def keep_url(m):
+            loc = re.search(r'<loc>https?://(?:www\.)?happylowcost\.com/([^/<]+)/?</loc>', m.group(0))
+            return '' if loc and loc.group(1) in gone else m.group(0)
+        y = re.sub(r'\s*<url>.*?</url>', keep_url, x, flags=re.S)
+        n += x.count('<url>') - y.count('<url>')
+        if y != x:
+            open(sm, 'w', encoding='utf-8').write(y)
+    stats['sitemap_out'] = n
+    stats['noindex_old'] = len(gone)
 
 print(json.dumps(stats))

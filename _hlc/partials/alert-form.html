@@ -20,17 +20,12 @@
 <button type="button" class="chip" data-pick="price" data-v="600" aria-pressed="false">600 €</button>
 <button type="button" class="chip" data-pick="price" data-v="1000" aria-pressed="false">1.000 €</button>
 </div></fieldset>
-<fieldset class="fld"><legend>¿Cómo te avisamos?</legend>
-<div class="chips">
-<button type="button" class="chip" data-pick="channel" data-v="email" aria-pressed="true">Email</button>
-<button type="button" class="chip" data-pick="channel" data-v="whatsapp" aria-pressed="false">WhatsApp</button>
-</div>
-<label for="af-contact" data-contact-label style="font:600 14px Inter,sans-serif;color:#4A5468">Tu email</label>
+<div class="fld"><label for="af-contact" data-contact-label>Tu email</label>
 <input id="af-contact" name="contact" type="email" placeholder="tu@email.com" autocomplete="email" required style="min-height:52px;border-radius:14px;border:1.5px solid #EADCC4;background:#fff;padding:0 16px;font:16px Inter,sans-serif;color:#14213D;width:100%;box-sizing:border-box">
-</fieldset>
+<small style="color:#4A5468">¿Prefieres no dar email? Activa el aviso en este navegador con el botón de abajo.</small></div>
 <label class="consent"><input type="checkbox" name="consent" required><span>Acepto recibir avisos de chollos de Happy Low Cost (máximo uno al día) y la <a href="/aviso-legal-datos-cookies/">política de privacidad</a>. Me puedo dar de baja cuando quiera.</span></label>
 <button type="submit" class="hlc-btn" style="min-height:56px;font-size:17px">Activar mi alerta gratis</button>
 <div data-msg role="status" aria-live="polite"></div>
 </div>
-<div class="af-ok" data-ok hidden><b>¡Apuntado! ✈️</b><span>Guardamos tu alerta desde <strong data-sum></strong>. Para recibir los chollos desde hoy, activa los avisos en este navegador con el botón de abajo: llegan al momento y es gratis. Si nos has dejado un email, te escribiremos una vez para que confirmes que es tuyo.</span><a class="hlc-btn t" href="/chollos/">Ver los chollos de hoy</a></div>
+<div class="af-ok" data-ok hidden></div>
 </form>
