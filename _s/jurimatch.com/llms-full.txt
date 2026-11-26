@@ -2606,6 +2606,20 @@ A: Es la propuesta de indemnización que la aseguradora debe hacer en el plazo d
 Q: ¿Cuánto tiempo tengo para reclamar?
 A: Por regla general, un año. En lesiones, el plazo suele contarse desde la curación o la estabilización de las secuelas. La reclamación a la aseguradora interrumpe ese plazo.
 
+### Accidente laboral: indemnización, recargo y cómo reclamar
+URL: https://jurimatch.com/es/guias/accidente-laboral
+
+Un accidente en el trabajo, o yendo o volviendo de él, da derecho a prestaciones de la Seguridad Social y, si la empresa falló en la prevención, a reclamar más dinero. Son tres vías distintas, con plazos distintos, y conviene no confundirlas.
+
+Q: ¿Un accidente yendo al trabajo es accidente laboral?
+A: Sí, si ocurre en el trayecto habitual entre su domicilio y el trabajo, sin desvíos por motivos personales. Es el llamado accidente in itinere.
+
+Q: ¿Qué es el recargo de prestaciones?
+A: Un aumento de entre el 30 % y el 50 % de las prestaciones de la Seguridad Social que paga la empresa cuando el accidente se produjo porque no cumplió las medidas de seguridad. No se puede asegurar.
+
+Q: ¿Cuánto tiempo tengo para reclamar a la empresa?
+A: En general, un año desde que se conoce el alcance definitivo de las lesiones. Consulte cuanto antes, porque cada vía tiene su plazo.
+
 ### Acoso laboral: qué es y qué puede hacer
 URL: https://jurimatch.com/es/guias/acoso-laboral
 
@@ -2631,6 +2645,20 @@ A: Puede servir en algunos casos, porque parte del sobreprecio se traslada al co
 Q: ¿Necesito un perito?
 A: Casi siempre se aporta un informe pericial económico. Algunos despachos y financiadores lo adelantan y lo cobran solo si se gana.
 
+### Cártel de coches: quién puede reclamar y cómo
+URL: https://jurimatch.com/es/guias/cartel-de-coches
+
+En 2015 la Comisión Nacional de los Mercados y la Competencia (CNMC) sancionó a una veintena de marcas de automóviles y a dos consultoras por intercambiar información comercial confidencial. Muchos compradores de coches nuevos de esas marcas reclaman ahora el sobreprecio que pudieron pagar.
+
+Q: ¿Qué coches están afectados por el cártel?
+A: Los coches nuevos de las marcas sancionadas por la CNMC en 2015, comprados en el periodo de la infracción, entre 2006 y 2013. Compruebe la marca y la fecha de su factura.
+
+Q: ¿Cuánto se puede recuperar?
+A: Depende del precio del coche y de lo que estime el informe pericial. Los tribunales han dado resultados distintos, así que desconfíe de cifras garantizadas.
+
+Q: ¿Necesito la factura?
+A: Es casi imprescindible. Si la perdió, pruebe a pedir una copia al concesionario o a la financiera.
+
 ### Cláusula suelo: qué es y cómo reclamar la devolución
 URL: https://jurimatch.com/es/guias/clausula-suelo
 
@@ -2644,6 +2672,20 @@ A: Depende de su hipoteca: la diferencia entre lo que pagó con el suelo y lo qu
 
 Q: ¿Necesito abogado para reclamar al banco?
 A: Para la reclamación previa al banco no es obligatorio. Si hay que ir a juicio, en este tipo de pleitos se necesita abogado y procurador por la cuantía habitual.
+
+### Costas procesales: quién paga si pierde el juicio
+URL: https://jurimatch.com/es/guias/costas-procesales
+
+Que su abogado trabaje a éxito no significa que no pueda pagar nada si pierde: el juez puede condenarle a pagar las costas de la otra parte. Entender esta regla es clave antes de demandar.
+
+Q: Si pierdo el juicio, ¿tengo que pagar al abogado de la otra parte?
+A: En los juicios civiles, normalmente sí, salvo que el caso presentara serias dudas, con un límite general de un tercio de la cuantía para los honorarios de abogado.
+
+Q: ¿Y si gano solo en parte?
+A: Lo normal es que cada parte pague sus costas y las comunes a medias.
+
+Q: ¿En un juicio laboral pago costas si pierdo?
+A: En primera instancia, no, salvo mala fe o temeridad.
 
 ### Cuota litis: cómo funciona el abogado a éxito en España
 URL: https://jurimatch.com/es/guias/cuota-litis
@@ -2672,6 +2714,20 @@ A: 33 días de salario por año trabajado, con un máximo general de 24 mensuali
 
 Q: ¿Necesito abogado para un despido?
 A: En la primera instancia no es obligatorio, pero es recomendable. Muchos laboralistas trabajan con un porcentaje de lo que se obtenga.
+
+### Despido nulo: cuándo lo es y qué consecuencias tiene
+URL: https://jurimatch.com/es/guias/despido-nulo
+
+Un despido nulo es más grave que uno improcedente: la empresa está obligada a readmitirle y a pagarle los salarios que dejó de cobrar. Ocurre cuando el despido vulnera derechos fundamentales o afecta a personas especialmente protegidas.
+
+Q: ¿Qué diferencia hay entre despido nulo e improcedente?
+A: En el improcedente la empresa elige entre readmitirle o indemnizarle. En el nulo debe readmitirle y pagarle los salarios que dejó de cobrar, y puede haber indemnización por daño moral.
+
+Q: ¿Me pueden despedir estando embarazada?
+A: Solo por causas ajenas al embarazo que la empresa pueda probar. Si no lo prueba, el despido es nulo.
+
+Q: ¿Cuánto tiempo tengo para reclamar?
+A: 20 días hábiles desde el día siguiente al despido.
 
 ### Dieselgate: reclamar por un coche con emisiones manipuladas
 URL: https://jurimatch.com/es/guias/dieselgate
@@ -2723,6 +2779,34 @@ A: En general no para hipotecas firmadas antes del cambio legal de finales de 20
 Q: ¿Y si no tengo las facturas?
 A: Puede pedir copia al notario, al registro de la propiedad o a la gestoría. Su abogado también puede ayudarle a obtenerlas.
 
+### Hoja de encargo: qué revisar antes de firmar con un abogado
+URL: https://jurimatch.com/es/guias/hoja-de-encargo
+
+La hoja de encargo es el documento en el que usted y su abogado fijan qué asunto lleva y cómo va a cobrar. Es la mejor protección frente a sorpresas, sobre todo en los acuerdos a éxito.
+
+Q: ¿Es obligatoria la hoja de encargo?
+A: Es la forma recomendada y habitual de dejar por escrito el encargo y los honorarios. Pídala siempre, y más si el abogado cobra un porcentaje.
+
+Q: ¿El porcentaje incluye las costas que paga la otra parte?
+A: Depende de lo pactado. Algunos despachos se quedan las costas además del porcentaje y otros las descuentan: que conste por escrito.
+
+Q: ¿Qué pasa si cambio de abogado?
+A: Lo que diga la hoja de encargo. Muchas prevén un pago por el trabajo hecho hasta ese momento.
+
+### Incapacidad permanente: grados, cuantía y cómo reclamar
+URL: https://jurimatch.com/es/guias/incapacidad-permanente
+
+Si una enfermedad o un accidente le impiden trabajar de forma previsiblemente definitiva, puede tener derecho a una pensión de incapacidad permanente. El INSS la concede o la deniega tras un examen médico, y su decisión se puede recurrir. Estos son los conceptos básicos.
+
+Q: ¿Cuánto se cobra con una incapacidad permanente total?
+A: El 55 % de la base reguladora, que puede aumentar al 75 % a partir de los 55 años en la llamada total cualificada. Se puede compatibilizar con un trabajo distinto de su profesión habitual.
+
+Q: ¿Qué hago si el INSS me deniega la incapacidad?
+A: Presentar una reclamación previa en 30 días hábiles y, si se desestima, demandar ante el Juzgado de lo Social en otros 30 días hábiles.
+
+Q: ¿Necesito abogado?
+A: En la reclamación previa no es obligatorio. En el juicio tampoco lo es en primera instancia, pero un abogado y un buen informe médico pericial suelen marcar la diferencia.
+
 ### IRPH: qué es y qué se puede reclamar hoy
 URL: https://jurimatch.com/es/guias/irph
 
@@ -2733,6 +2817,34 @@ A: No automáticamente. Según la jurisprudencia europea, hay que analizar si se
 
 Q: ¿Merece la pena reclamar el IRPH?
 A: Depende de la documentación y de la diferencia económica. Un abogado puede valorar su caso concreto; es un litigio con resultados desiguales.
+
+### Justicia gratuita: requisitos y cómo solicitarla
+URL: https://jurimatch.com/es/guias/justicia-gratuita
+
+Si sus ingresos son bajos, puede tener derecho a un abogado y un procurador sin coste, y a no pagar otros gastos del juicio. Es un derecho reconocido por la Ley 1/1996 de asistencia jurídica gratuita.
+
+Q: ¿Cuánto tengo que ganar para tener justicia gratuita?
+A: No superar el doble del IPREM si vive solo, dos veces y media en unidades familiares de menos de cuatro miembros o el triple si son cuatro o más, en ingresos brutos anuales.
+
+Q: ¿Puedo elegir abogado con justicia gratuita?
+A: No: se le asigna un abogado del turno de oficio. Puede pedir el cambio en casos justificados.
+
+Q: ¿Dónde se solicita?
+A: En el servicio de orientación jurídica del colegio de abogados o en el juzgado de su domicilio.
+
+### Ley de Segunda Oportunidad: cómo cancelar deudas
+URL: https://jurimatch.com/es/guias/ley-segunda-oportunidad
+
+La llamada Ley de Segunda Oportunidad permite a las personas físicas, también a los autónomos, que no pueden pagar sus deudas quedar liberadas de buena parte de ellas a través del concurso de acreedores. La reforma de 2022 la hizo más accesible.
+
+Q: ¿Puedo conservar mi casa con la Ley de Segunda Oportunidad?
+A: En algunos casos, con el plan de pagos, si sigue pagando la hipoteca. Depende del valor de la vivienda, de la deuda y de su situación.
+
+Q: ¿Se cancelan las deudas con Hacienda?
+A: Solo de forma limitada: la ley fija un tope para las deudas con Hacienda y la Seguridad Social. El resto de esas deudas se mantiene.
+
+Q: ¿Pueden acogerse los autónomos?
+A: Sí. La ley se aplica a todas las personas físicas, consumidores o empresarios.
 
 ### MASC: el intento de acuerdo obligatorio antes de demandar
 URL: https://jurimatch.com/es/guias/masc-requisito-antes-de-demandar
@@ -2751,6 +2863,20 @@ A: Si no responde en el plazo legal, el requisito se considera cumplido y puede 
 Q: ¿Necesito abogado para el intento de acuerdo?
 A: No siempre. Puede negociar usted mismo, aunque con un abogado es más fácil que la propuesta y la prueba del intento sirvan después en el juicio.
 
+### Mordedura de perro: cómo reclamar la indemnización
+URL: https://jurimatch.com/es/guias/mordedura-de-perro
+
+Si un perro le muerde o le hace caer, el dueño responde de los daños casi siempre, aunque no haya tenido culpa. La clave es identificar al dueño, documentar las lesiones y reclamar dentro de plazo.
+
+Q: ¿Quién paga si un perro me muerde?
+A: El poseedor del perro, o su seguro, aunque el perro se le hubiera escapado. Solo se libra si hubo fuerza mayor o culpa de la víctima.
+
+Q: ¿Cuánto tiempo tengo para reclamar?
+A: Un año desde que se conoce el alcance de las lesiones.
+
+Q: ¿Y si el dueño no tiene seguro?
+A: Responde con su patrimonio. Revise si su seguro de hogar le cubre a usted o si el dueño tiene un seguro de hogar que cubra a sus animales.
+
 ### Negligencia médica: cómo reclamar en la sanidad pública y privada
 URL: https://jurimatch.com/es/guias/negligencia-medica
 
@@ -2764,6 +2890,20 @@ A: Un año, que en daños físicos o psíquicos se cuenta desde la curación o d
 
 Q: ¿Necesito un perito médico?
 A: En la gran mayoría de los casos sí. Es la prueba que permite demostrar que la actuación no fue correcta y que causó el daño.
+
+### Plazos para reclamar en España, por tipo de caso
+URL: https://jurimatch.com/es/guias/plazos-de-prescripcion
+
+Casi todas las reclamaciones tienen un plazo. Si pasa, puede perder el derecho aunque tenga toda la razón. Esta es una guía orientativa de los plazos más comunes; confirme siempre el de su caso con un abogado.
+
+Q: ¿Cuánto tiempo tengo para reclamar una deuda?
+A: Cinco años desde que se pudo exigir, salvo que la deuda tenga un plazo especial más corto. Un requerimiento escrito interrumpe el plazo.
+
+Q: ¿Y para un accidente de tráfico?
+A: Un año desde que se conoce el alcance de las lesiones, normalmente el alta médica.
+
+Q: ¿Qué diferencia hay entre prescripción y caducidad?
+A: La prescripción se interrumpe con una reclamación y el plazo vuelve a empezar; la caducidad no se interrumpe, como en el despido.
 
 ### Plusvalía municipal: cuándo se puede reclamar la devolución
 URL: https://jurimatch.com/es/guias/plusvalia-municipal
@@ -2789,6 +2929,20 @@ A: Depende de cuándo pudo conocer el problema y de si firmó alguna renuncia. M
 
 Q: ¿Qué pasa si acepté el arbitraje?
 A: Si el arbitraje terminó con un laudo o firmó un acuerdo con renuncia, en general no se puede volver a reclamar lo mismo.
+
+### Preguntas para la primera consulta con un abogado
+URL: https://jurimatch.com/es/guias/preguntas-primera-consulta-abogado
+
+La primera consulta sirve para que el abogado valore su caso y para que usted valore al abogado. Llevar las preguntas preparadas le ayuda a comparar despachos y a evitar sorpresas.
+
+Q: ¿La primera consulta con un abogado es gratis?
+A: Depende del despacho. Muchos de los que trabajan a éxito valoran el caso sin coste; pregúntelo al pedir la cita.
+
+Q: ¿Qué documentos llevo?
+A: Todo lo relacionado con el caso: contratos, facturas, informes, cartas y mensajes, y una cronología breve de los hechos.
+
+Q: ¿Cómo comparo dos abogados?
+A: Por su experiencia en casos como el suyo, la claridad con la que explican riesgos y costes, y lo que ponen por escrito en la propuesta de honorarios.
 
 ### Reclamación de cantidad: cómo usar el procedimiento monitorio
 URL: https://jurimatch.com/es/guias/reclamacion-de-cantidad-monitorio
@@ -2828,6 +2982,20 @@ A: No para presentar la petición inicial, sea cual sea el importe. Si el deudor
 
 Q: ¿Puedo cobrar intereses por el retraso?
 A: Sí. Entre empresas, la Ley 3/2004 permite reclamar intereses de demora y 40 euros por factura en concepto de costes de cobro, salvo que se pactara otra cosa válida.
+
+### Reclamar a la Administración: responsabilidad patrimonial
+URL: https://jurimatch.com/es/guias/responsabilidad-patrimonial
+
+Si una administración le causa un daño por el funcionamiento de un servicio público, por ejemplo una caída por una baldosa rota, un error en un hospital público o un accidente por el mal estado de una carretera, puede reclamarle una indemnización. El procedimiento tiene reglas y plazos propios.
+
+Q: ¿Puedo reclamar al ayuntamiento por una caída en la calle?
+A: Sí, si la caída se debió al mal estado de la vía o a la falta de señalización de un peligro. Tiene un año para reclamar y conviene documentar el lugar de inmediato.
+
+Q: ¿Cómo reclamo una negligencia en un hospital público?
+A: Mediante una reclamación de responsabilidad patrimonial a la administración sanitaria, en el plazo de un año desde que se conocen las secuelas, normalmente con un informe pericial médico.
+
+Q: ¿Qué pasa si la administración no contesta?
+A: A los seis meses la reclamación se entiende desestimada y puede presentar un recurso contencioso-administrativo.
 
 ### Tarjetas revolving: cómo reclamar si los intereses son abusivos
 URL: https://jurimatch.com/es/guias/tarjetas-revolving
