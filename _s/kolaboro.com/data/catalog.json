@@ -19846,9 +19846,9 @@
   }
  ],
  "refreshed": {
-  "at": "2026-11-26T13:11:02Z",
+  "at": "2026-11-26T13:13:25Z",
   "by": "https://kolaboro.com/open/catalog-refresh.py",
-  "datasets_changed": 1,
+  "datasets_changed": 0,
   "note": "Sizes, hashes, row counts and stamps of files changed since generated_at, read from the published files. Contracts, probes and freshness status are from generated_at."
  }
 }
