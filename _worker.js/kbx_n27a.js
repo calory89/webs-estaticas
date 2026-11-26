@@ -10,7 +10,7 @@
 //   POST /api/open/rv?b=<bucket>                return-visit beacon (no id, no cookie; only "bucket + day -> count")
 //   count(req, u, ctx)                          called for every kolaboro.com request: counts a page view by page type
 //   metricsHtml()                               the block appended to /metrics/
-// Counters: the worker has no durable counter store (no KV or analytics binding), so, like the AI crawler counts of kbx_bots.js,
+// Counters: the worker has no durable counter store (no KV or analytics binding), so, like the answer-engine crawler counts of kbx_bots.js,
 // they live in the edge cache of each Cloudflare location: a lower bound for the location that answers, kept up to 35 days.
 // Rules kept: facts only, each with its source; no verdicts about a named company; Sumba projects never named (not in the named index).
 import * as N from './kbx_named.js';

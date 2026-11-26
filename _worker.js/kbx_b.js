@@ -1,4 +1,4 @@
-// Feature module b for kolaboro.com (see kbx.js): the AI desk review, live.
+// Feature module b for kolaboro.com (see kbx.js): the desk review, live.
 //   POST /api/x/b/review            the same desk review as /api/kb/analyze, streamed as Server-Sent Events: one event per real pipeline step
 //                                   with its measured duration, then the signed result. Cached results say so and replay no timings.
 //   POST /api/x/b/redteam           "try to fool our AI": the visitor's text is placed inside a fixed fictional developer page and the real desk

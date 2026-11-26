@@ -4,16 +4,16 @@
 <script>(function(d){d.setAttribute('data-kdk','');try{var t=localStorage.getItem('kb-theme')}catch(e){}if(t==='dark'||(t!=='light'&&matchMedia('(prefers-color-scheme: dark)').matches))d.setAttribute('data-theme','dark')})(document.documentElement)</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>MCP server for AI agents | Kolaboro</title>
-<meta name="description" content="Kolaboro's public MCP server: give Claude or any AI agent read-only access to every tracked off-plan project, with an Ed25519 signature on every answer. No key needed.">
+<title>MCP server for assistants and agents | Kolaboro</title>
+<meta name="description" content="Kolaboro's public MCP server: give any assistant or agent read-only access to every tracked off-plan project, with an Ed25519 signature on every answer. No key needed.">
 
 <link rel="canonical" href="https://kolaboro.com/docs/mcp/">
 <link rel="icon" href="/k/favicon.svg" type="image/svg+xml">
 <meta name="theme-color" content="#17212B">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Kolaboro">
-<meta property="og:title" content="MCP server for AI agents | Kolaboro">
-<meta property="og:description" content="Kolaboro's public MCP server: give Claude or any AI agent read-only access to every tracked off-plan project, with an Ed25519 signature on every answer. No key needed.">
+<meta property="og:title" content="MCP server for assistants and agents | Kolaboro">
+<meta property="og:description" content="Kolaboro's public MCP server: give any assistant or agent read-only access to every tracked off-plan project, with an Ed25519 signature on every answer. No key needed.">
 <meta property="og:url" content="https://kolaboro.com/docs/mcp/">
 <meta property="og:image" content="https://kolaboro.com/k/og.png">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
@@ -45,13 +45,13 @@
   </div>
 </header>
 <main id="main">
-<section class="phero"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / <a href="/docs/api/">Open data and API</a> / MCP server</p><h1>MCP server for AI agents</h1><p class="lead">Give Claude, or any agent that speaks the Model Context Protocol, read-only access to every tracked off-plan project and market. No key, no sign-up. Every answer carries an Ed25519 signature, so an agent, or you, can prove the numbers came from us unchanged.</p></div></section>
+<section class="phero"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / <a href="/docs/api/">Open data and API</a> / MCP server</p><h1>MCP server for assistants and agents</h1><p class="lead">Give your assistant, or any agent that speaks the Model Context Protocol, read-only access to every tracked off-plan project and market. No key, no sign-up. Every answer carries an Ed25519 signature, so an agent, or you, can prove the numbers came from us unchanged.</p></div></section>
 <section class="sec"><div class="wrap eg-p">
 <div class="eg-code">https://kolaboro.com/mcp</div>
 <p><b>Transport:</b> Streamable HTTP, JSON-RPC 2.0. <b>Auth:</b> none. <b>Access:</b> read-only, public data only. <b>Limit:</b> 60 requests a minute per IP.</p>
 <p id="mcp-live" class="muted" aria-live="polite">Checking the server live from your browser…</p>
 
-<h2>Add it to your AI tool</h2>
+<h2>Add it to your assistant</h2>
 <ul>
 <li><b>Claude (web and desktop):</b> Settings, Connectors, Add custom connector. Name it Kolaboro and paste <code>https://kolaboro.com/mcp</code>. Leave the OAuth fields empty: no sign-in is needed.</li>
 <li><b>Claude Code:</b> run this once in your terminal:</li>

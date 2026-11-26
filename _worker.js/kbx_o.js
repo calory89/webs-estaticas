@@ -232,7 +232,7 @@ async function slo(ctx) {
   }
   res.slos.push(A);
   // desk review success
-  const D = { id: 'desk_review', objective: '95% of AI desk review requests return a report each calendar month', target: 0.95, source: 'API log (every /api/kb/analyze and /api/x/b/review call: success or failure)' };
+  const D = { id: 'desk_review', objective: '95% of desk review requests return a report each calendar month', target: 0.95, source: 'API log (every /api/kb/analyze and /api/x/b/review call: success or failure)' };
   const dd = desk && Array.isArray(desk.days) && !(desk.note && !desk.days.length) ? desk.days.filter(d => String(d.day).slice(0, 7) === month) : null;
   if (!dd) Object.assign(D, { state: 'setup', note: 'The public read of the API log is not switched on yet. Until it is, this objective is defined but not measured here.' });
   else {

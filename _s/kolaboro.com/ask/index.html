@@ -66,12 +66,12 @@
 <h2>How an answer is made</h2>
 <ol>
 <li><b>Retrieve.</b> Your question is matched (BM25 ranking) against a fixed index of passages: the main text of <span id="ix-pg2">our</span> English pages, plus one passage per market and per project generated from the open API. Up to 8 passages are picked. Nothing from the web, nothing from the model's memory.</li>
-<li><b>Write with citations.</b> A small model (Claude Haiku) gets only those passages and your question, fenced as untrusted text. It must give each sentence one source id and a quote copied from that source.</li>
+<li><b>Write with citations.</b> A small hosted model gets only those passages and your question, fenced as untrusted text. It must give each sentence one source id and a quote copied from that source.</li>
 <li><b>Check every sentence on our server.</b> A sentence is removed if its source id is not one of the passages shown, if the quote is not found word for word in that passage, if it contains a number that is not in that passage, or if fewer than 60% of its words appear in the passage.</li>
 <li><b>Show the proof.</b> Each kept sentence links to the exact place on the page (a text fragment link that highlights the quote) or to the raw API record. You also see every passage the model was given, and every sentence the checker removed.</li>
 <li><b>Or say "I don't know".</b> If no passage matches, or no sentence survives the checks, you get "I don't know" and the closest pages, never a guess.</li>
 </ol>
-<p class="mut">Limits: 10 questions an hour per visitor (repeated questions are answered from a 6-hour cache and do not count). The model is paid for by Kolaboro under a daily cap that stops all AI features when reached: <a href="/api/open/ai-spend">today's AI spend</a>. Answers describe what is public, not whether it is genuine, and are not legal or financial advice. We do not store your question.</p>
+<p class="mut">Limits: 10 questions an hour per visitor (repeated questions are answered from a 6-hour cache and do not count). The model is paid for by Kolaboro under a daily cap that stops all automated reading features when reached: <a href="/api/open/ai-spend">today's processing spend</a>. Answers describe what is public, not whether it is genuine, and are not legal or financial advice. We do not store your question.</p>
 
 <h2>Test questions</h2>
 <p>Ten fixed questions, three of which it must refuse, run against the live service. The refusals matter as much as the answers.</p>

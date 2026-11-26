@@ -1,4 +1,4 @@
-// kolaboro.com (n26i, batch 26): visits of AI crawlers and answer-engine fetchers per day, from the requests this site serves.
+// kolaboro.com (n26i, batch 26): visits of answer-engine crawlers and fetchers per day, from the requests this site serves.
 // The worker kept no user-agent log before this batch and has no durable counter store (no KV or analytics binding, no table for
 // it), so the counts live in the edge cache of each Cloudflare location: a lower bound for that one location, kept up to 30 days,
 // and lost if the location evicts them. The page says so. Nothing about the visitor is stored: only "bot name + day -> count".
@@ -6,7 +6,7 @@
 //   GET /api/open/ai-crawlers     the last 14 days for the location that answers, as JSON
 //   html(req, lang)               the block shown on /engineering/
 export const PATH = /^\/api\/open\/ai-crawlers\/?$/;
-const BOTS = [   // [name, test, kind] kind: ai = AI training, AI search or AI assistant fetcher; search = classic search engine
+const BOTS = [   // [name, test, kind] kind: ai = guided training, AI search or AI assistant fetcher; search = classic search engine
   ['GPTBot', /GPTBot/i, 'ai'], ['OAI-SearchBot', /OAI-SearchBot/i, 'ai'], ['ChatGPT-User', /ChatGPT-User/i, 'ai'],
   ['ClaudeBot', /ClaudeBot/i, 'ai'], ['Claude-User', /Claude-User/i, 'ai'], ['Claude-SearchBot', /Claude-SearchBot/i, 'ai'], ['anthropic-ai', /anthropic-ai/i, 'ai'],
   ['PerplexityBot', /PerplexityBot/i, 'ai'], ['Perplexity-User', /Perplexity-User/i, 'ai'], ['Google-CloudVertexBot', /Google-CloudVertexBot/i, 'ai'],
@@ -31,7 +31,7 @@ export function count(req, u, ctx) {
   const d = day();
   ctx.waitUntil(inc(KEY(d, b)));
   if (/^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?llms|^\/answers\/|^\/llms\//.test(u.pathname)) ctx.waitUntil(inc(KEY(d, '_files')));   // llms*.txt and answer files
-  if (KIND.get(b) === 'ai') ctx.waitUntil(inc(KEY(d, '_fam_' + famOf(u.pathname))));   // n31s (item 225): AI crawler requests by page family
+  if (KIND.get(b) === 'ai') ctx.waitUntil(inc(KEY(d, '_fam_' + famOf(u.pathname))));   // n31s (item 225): Answer-engine crawler requests by page family
 }
 // n31s (item 225): page families, in the order shown on /engineering/
 export const FAMS = [['project', 'Project pages'], ['developer', 'Developer pages'], ['place', 'Place and market pages'], ['ranking', 'Rankings'], ['guide', 'Guides and glossary'], ['report', 'Reports and weekly logs'], ['answer', 'llms.txt and answer files'], ['data', 'API, data and MCP'], ['home', 'Home page'], ['other', 'Other pages']];
@@ -76,13 +76,13 @@ function famTable(D) {   // n31s (item 225)
   const nf = n => new Intl.NumberFormat('en-GB').format(n), W = D.days.slice(0, 7), tot = {}; let all = 0;
   for (const d of W) for (const [k, v] of Object.entries(d.ai_by_page_family || {})) { tot[k] = (tot[k] || 0) + v; all += v; }
   const rows = FAMS.filter(f => tot[f[0]]).map(f => '<tr><td>' + esc(f[1]) + '</td><td style="text-align:end">' + nf(tot[f[0]]) + '</td><td style="text-align:end">' + Math.round(tot[f[0]] / all * 100) + '%</td></tr>').join('');
-  return '<h3 style="margin-top:22px">AI crawler requests by page family, last 7 days</h3>' + (all ? '<div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse"><thead><tr><th scope="col" style="text-align:start">Page family</th><th scope="col" style="text-align:end">Requests</th><th scope="col" style="text-align:end">Share</th></tr></thead><tbody>' + rows + '</tbody></table></div>' : '<p>Counted since 18 Nov 2026; none at this location yet.</p>') + '<p class="muted" style="font-size:.9rem">Same counter and limits as above (one Cloudflare location, a lower bound), AI crawlers only, counted by family since 18 Nov 2026.</p>';
+  return '<h3 style="margin-top:22px">Answer-engine crawler requests by page family, last 7 days</h3>' + (all ? '<div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse"><thead><tr><th scope="col" style="text-align:start">Page family</th><th scope="col" style="text-align:end">Requests</th><th scope="col" style="text-align:end">Share</th></tr></thead><tbody>' + rows + '</tbody></table></div>' : '<p>Counted since 18 Nov 2026; none at this location yet.</p>') + '<p class="muted" style="font-size:.9rem">Same counter and limits as above (one Cloudflare location, a lower bound), answer-engine crawlers only, counted by family since 18 Nov 2026.</p>';
 }
 export async function html(req) {
   const D = await data(req), nf = n => new Intl.NumberFormat('en-GB').format(n);
   const seen = NAMES.filter(n => D.days.some(d => d.bots[n]));
   const rows = D.days.slice(0, 7).map(d => '<tr><td>' + d.date + '</td><td>' + nf(d.ai) + '</td><td>' + nf(d.search) + '</td><td>' + nf(d.llms_and_answer_files) + '</td><td>' + (Object.entries(d.bots).sort((a, b) => b[1] - a[1]).slice(0, 5).map(([n, v]) => esc(n) + ' ' + nf(v)).join(', ') || '-') + '</td></tr>').join('');
-  return '<section class="sec" id="ai-crawlers"><div class="wrap"><h2>AI crawler visits per day</h2><p>Requests from AI crawlers and answer-engine fetchers (and, for comparison, classic search crawlers), counted by user agent as the site serves them. Counted since the counter started (' + esc(D.since) + ') at the Cloudflare location that served this page (' + esc(D.location || 'unknown') + '): a lower bound for that location, not a global total. Raw data: <a href="/api/open/ai-crawlers">/api/open/ai-crawlers</a>. The files written for answer engines: <a href="/llms.txt">/llms.txt</a>, one per language and per country, and one answer file per project.</p>' +
-    '<div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse"><thead><tr><th scope="col" style="text-align:start">Day (UTC)</th><th scope="col" style="text-align:start">AI crawlers</th><th scope="col" style="text-align:start">Search crawlers</th><th scope="col" style="text-align:start">llms and answer files</th><th scope="col" style="text-align:start">Top crawlers</th></tr></thead><tbody>' + rows + '</tbody></table></div>' +
+  return '<section class="sec" id="ai-crawlers"><div class="wrap"><h2>Answer-engine crawler visits per day</h2><p>Requests from answer-engine crawlers and fetchers (and, for comparison, classic search crawlers), counted by user agent as the site serves them. Counted since the counter started (' + esc(D.since) + ') at the Cloudflare location that served this page (' + esc(D.location || 'unknown') + '): a lower bound for that location, not a global total. Raw data: <a href="/api/open/ai-crawlers">/api/open/ai-crawlers</a>. The files written for answer engines: <a href="/llms.txt">/llms.txt</a>, one per language and per country, and one answer file per project.</p>' +
+    '<div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse"><thead><tr><th scope="col" style="text-align:start">Day (UTC)</th><th scope="col" style="text-align:start">Answer-engine crawlers</th><th scope="col" style="text-align:start">Search crawlers</th><th scope="col" style="text-align:start">llms and answer files</th><th scope="col" style="text-align:start">Top crawlers</th></tr></thead><tbody>' + rows + '</tbody></table></div>' +
     famTable(D) + '<p class="muted" style="font-size:.9rem">Crawlers we recognise: ' + BOTS.map(b => esc(b[0])).join(', ') + '. ' + (seen.length ? 'Seen at this location in the last 14 days: ' + seen.map(esc).join(', ') + '.' : 'None seen at this location yet.') + ' A user agent can be faked; IP ranges are not verified.</p></div></section>';
 }

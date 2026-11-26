@@ -213,70 +213,70 @@
   },
   {
    "n": 31,
-   "theme": "AI copilots",
+   "theme": "Copilots",
    "title": "Contract copilot",
    "desc": "Reads the sale contract and flags missing buyer protections in plain words.",
    "status": "next"
   },
   {
    "n": 32,
-   "theme": "AI copilots",
+   "theme": "Copilots",
    "title": "Payment plan copilot",
    "desc": "Reads the payment plan and says what is safe and what to change.",
    "status": "next"
   },
   {
    "n": 33,
-   "theme": "AI copilots",
+   "theme": "Copilots",
    "title": "Developer page copilot",
    "desc": "Paste any project page, get what it promises and leaves out.",
    "status": "shipped"
   },
   {
    "n": 34,
-   "theme": "AI copilots",
+   "theme": "Copilots",
    "title": "WhatsApp copilot",
    "desc": "Send a link or a photo, get red flags back.",
    "status": "next"
   },
   {
    "n": 35,
-   "theme": "AI copilots",
+   "theme": "Copilots",
    "title": "Voice notes for agents",
-   "desc": "Agents dictate on site; AI writes the structured report.",
+   "desc": "Agents dictate on site; our software writes the structured report.",
    "status": "next"
   },
   {
    "n": 36,
-   "theme": "AI copilots",
+   "theme": "Copilots",
    "title": "Photo forensics",
-   "desc": "Detects reused, edited or AI-generated site photos.",
+   "desc": "Detects reused, edited or machine-generated site photos.",
    "status": "next"
   },
   {
    "n": 37,
-   "theme": "AI copilots",
+   "theme": "Copilots",
    "title": "Render vs reality",
    "desc": "Compares the sales render with site photos and satellite images.",
    "status": "next"
   },
   {
    "n": 38,
-   "theme": "AI copilots",
+   "theme": "Copilots",
    "title": "Claim tracker",
    "desc": "Every developer promise tracked until it is delivered or broken.",
    "status": "next"
   },
   {
    "n": 39,
-   "theme": "AI copilots",
+   "theme": "Copilots",
    "title": "Translation of documents",
    "desc": "Permits, contracts and certificates explained in 8 languages.",
    "status": "shipped"
   },
   {
    "n": 40,
-   "theme": "AI copilots",
+   "theme": "Copilots",
    "title": "Ask the database",
    "desc": "Plain-language questions answered only from the data.",
    "status": "shipped"
@@ -691,7 +691,7 @@
    "n": 99,
    "theme": "Platform and scale",
    "title": "Cost per check published",
-   "desc": "The AI and agent cost of each check, measured.",
+   "desc": "The processing and agent cost of each check, measured.",
    "status": "next"
   },
   {

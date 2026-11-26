@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Live findings: what changed on developer pages this hour | Kolaboro</title>
-<meta name="description" content="Every day Kolaboro re-reads developer pages of tracked off-plan projects with the Claude API and publishes only new or changed facts, each backed by a quote checked word for word in code. Anonymous, with the run log and its cost.">
+<meta name="description" content="Every day Kolaboro re-reads developer pages of tracked off-plan projects with a hosted model and publishes only new or changed facts, each backed by a quote checked word for word in code. Anonymous, with the run log and its cost.">
 
 <link rel="canonical" href="https://kolaboro.com/findings/">
 <link rel="icon" href="/k/favicon.svg" type="image/svg+xml">
@@ -12,7 +12,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Kolaboro">
 <meta property="og:title" content="Live findings: what changed on developer pages this hour | Kolaboro">
-<meta property="og:description" content="Every day Kolaboro re-reads developer pages of tracked off-plan projects with the Claude API and publishes only new or changed facts, each backed by a quote checked word for word in code. Anonymous, with the run log and its cost.">
+<meta property="og:description" content="Every day Kolaboro re-reads developer pages of tracked off-plan projects with a hosted model and publishes only new or changed facts, each backed by a quote checked word for word in code. Anonymous, with the run log and its cost.">
 <meta property="og:url" content="https://kolaboro.com/findings/">
 <meta property="og:image" content="https://kolaboro.com/k/og.png">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
@@ -92,7 +92,7 @@
 <section class="fd-hero"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / <a href="/database/">Database</a> / Live findings</p>
 <p class="eyebrow">Read every day, checked by code</p>
 <h1>What changed on developer pages this hour</h1>
-<p class="lead">Every day a job re-reads the developer pages of the projects we checked longest ago, asks the Claude API for concrete facts (handover date, starting price, payment plan, permit number, deposit protection, construction progress, units left, rental yield, legal structure) and publishes a finding only when a fact is new or changed. Every fact must come with an exact quote that our software finds word for word on the page.</p>
+<p class="lead">Every day a job re-reads the developer pages of the projects we checked longest ago, asks a hosted model for concrete facts (handover date, starting price, payment plan, permit number, deposit protection, construction progress, units left, rental yield, legal structure) and publishes a finding only when a fact is new or changed. Every fact must come with an exact quote that our software finds word for word on the page.</p>
 <div class="fd-n" id="fdn" aria-live="polite"><div><b>…</b><span>Loading the findings</span></div></div>
 <p class="fd-st" id="fdst"></p>
 </div></section>
@@ -120,7 +120,7 @@
 <h2 id="h-how">How it works</h2>
 <dl class="fd-faq">
 <dt>Daily, round robin</dt><dd>A GitHub Actions job runs once a day (about 07:34 UTC), never two at a time. It takes the tracked projects whose developer page was read longest ago, by us or by the daily research agent, so every project comes round in turn. It respects robots.txt, sends one request per website every few seconds and identifies itself as KolaboroResearchAgent.</dd>
-<dt>Claude API, small and capped</dt><dd>claude-haiku-5-5 reads the page text and returns each fact with the exact words that state it. Every call is priced from its real token usage at list prices (0.10 USD per million tokens in, 0.50 out). Before each call the worst case of that call is reserved, so neither a run nor the day can pass its budget (0.25 USD a day). A page whose text has the same SHA-256 fingerprint as at our last read is not sent to the model at all.</dd>
+<dt>Hosted model, small and capped</dt><dd>claude-haiku-5-5 reads the page text and returns each fact with the exact words that state it. Every call is priced from its real token usage at list prices (0.10 USD per million tokens in, 0.50 out). Before each call the worst case of that call is reserved, so neither a run nor the day can pass its budget (0.25 USD a day). A page whose text has the same SHA-256 fingerprint as at our last read is not sent to the model at all.</dd>
 <dt>Checked in code, not trusted</dt><dd>Software looks for each quote in the page text, ignoring only case, spacing and typographic quote marks, with no skipped words, and checks that the quote contains the value: the year, the percent, the amount or the number. Anything else is rejected and counted in the run log. A changed value is published only when the old value is no longer stated near the same words on the page, and a newly published fact only when its words were not in our previous copy of the page.</dd>
 <dt>Anonymous</dt><dd>Findings name the project id and market only, never the developer, the project name, the web address or the quote, because a quote would identify the project. Each finding carries <code>q</code>, the first 16 hex characters of the SHA-256 of its quote, and <code>fp</code>, the same for the page text. We keep a frozen copy of the page text, so both can be checked later against the original.</dd>
 <dt>Limits</dt><dd>These are what developers advertise, not verified facts. A finding says a page changed, not that the project did. Pages that block automated reading or need JavaScript to show text are counted as failed and tried again on the next round. Prices are shown as bands, and permit numbers are never shown, because both could identify a project.</dd>

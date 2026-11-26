@@ -53,7 +53,7 @@
 <p>We do not read pages behind a login, we do not buy data about people, and we do not collect personal data about private individuals. Company names and public statements of companies are recorded as published.</p>
 <h2>Who reads the pages</h2>
 <ul><li><b>The page reader</b> re-reads each tracked developer page to record what changed. It identifies itself as <code>KolaboroResearchAgent/1.0</code> with a link to this page, <b>follows each site's robots.txt</b> (a page the site asks crawlers not to read is skipped), and reads one page at a time with a pause between pages.</li>
-<li><b>The discovery agent</b> finds new projects and sources with the web search and web fetch tools of Anthropic's Claude API. Those tools are operated by Anthropic.</li>
+<li><b>The discovery agent</b> finds new projects and sources with the web search and web fetch tools of our model provider's API (Anthropic). Those tools are operated by Anthropic.</li>
 <li><b>Researchers</b> open pages and registers by hand to confirm or contradict a claim. Every fact they record has the address of the page it came from.</li></ul>
 <h2>What we keep</h2>
 <p>For each page the reader reads, we keep the extracted claims, the date and a SHA-256 fingerprint of the text. Every day all fingerprints are combined into one seal that is timestamped in Bitcoin, so the record of what a page said cannot be changed later, including by us. You can check a seal at <a href="/verify/">/verify</a>.</p>

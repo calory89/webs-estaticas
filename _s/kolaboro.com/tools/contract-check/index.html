@@ -4,7 +4,7 @@
 <script>(function(d){d.setAttribute('data-kdk','');try{var t=localStorage.getItem('kb-theme')}catch(e){}if(t==='dark'||(t!=='light'&&matchMedia('(prefers-color-scheme: dark)').matches))d.setAttribute('data-theme','dark')})(document.documentElement)</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Contract check with on-device AI: clauses, quotes and the law | Kolaboro</title>
+<title>Contract check on your device: clauses, quotes and the law | Kolaboro</title>
 <meta name="description" content="Drop your off-plan contract. Find price, payments, completion, delay penalty, refund, escrow, title and governing law with exact quotes. Nothing is uploaded.">
 
 <link rel="canonical" href="https://kolaboro.com/tools/contract-check/">
@@ -12,7 +12,7 @@
 <meta name="theme-color" content="#17212B">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Kolaboro">
-<meta property="og:title" content="Contract check with on-device AI: clauses, quotes and the law | Kolaboro">
+<meta property="og:title" content="Contract check on your device: clauses, quotes and the law | Kolaboro">
 <meta property="og:description" content="Drop your off-plan contract. Find price, payments, completion, delay penalty, refund, escrow, title and governing law with exact quotes. Nothing is uploaded.">
 <meta property="og:url" content="https://kolaboro.com/tools/contract-check/">
 <meta property="og:image" content="https://kolaboro.com/k/og.png">
@@ -49,10 +49,10 @@
 <main id="main" data-clarity-mask="True">
 <section class="phero"><div class="wrap">
   <p class="crumb"><a href="/">Kolaboro</a> / <a href="/tools/">Tools</a> / Contract check</p>
-  <h1>Read your contract with an AI that never leaves your device</h1>
+  <h1>Read your contract with a reader that never leaves your device</h1>
   <p class="lead">Drop the purchase agreement as a PDF. We pull out the ten clauses that decide whether an off-plan purchase is safe: parties, price, payment schedule, completion date, delay penalty, termination and refund, escrow, title, governing law and permits. Every clause comes with the exact words from your contract, and with what the law says in Indonesia, Dubai, Thailand, Spain and Portugal.</p>
   <p class="k-small">Other languages, or no model download: the <a href="/tools/contract-reader/">contract and brochure reader</a> marks handover date, penalty, escrow, payments, governing law and cancellation in 13 contract languages, with page numbers, in 8 page languages.</p>
-  <p class="ft-local"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="m8.5 12 2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span><b>Your contract never leaves this device.</b> The text is read in your browser with pdf.js, the clause finder is plain code you can read (<a href="/tools/contract-check/cc.js">cc.js</a>), and the optional AI is an open model that runs on your own graphics card. Site analytics are masked on this tool: they never see the file, its text or the results.</span></p>
+  <p class="ft-local"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="m8.5 12 2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span><b>Your contract never leaves this device.</b> The text is read in your browser with pdf.js, the clause finder is plain code you can read (<a href="/tools/contract-check/cc.js">cc.js</a>), and the optional reader is an open model that runs on your own graphics card. Site analytics are masked on this tool: they never see the file, its text or the results.</span></p>
 </div></section>
 <section class="sec ft-sec"><div class="wrap">
   <label class="ft-drop" id="ccDrop">
@@ -73,12 +73,12 @@
   <p class="eyebrow">How it works</p>
   <h2 class="ft-h">Two readers, one rule: every quote must be in your file</h2>
   <div class="ft-method">
-    <div><h3>1. Keyword finder (always, instant)</h3><p>The text of each page is split into sentences. Each clause has a set of English, Indonesian, Spanish and Portuguese patterns (for example "escrow", "rekening bersama", "aval", "conta caução"). The best scoring sentence is shown exactly as it appears in the file, with its page number. No AI is involved.</p></div>
-    <div><h3>2. On-device AI (optional)</h3><p>If your browser supports WebGPU, you can download an open-weights model (Qwen2.5 Instruct, 1.5B or 0.5B parameters, Apache 2.0) once. For each clause it reads only the passages the keyword step ranked highest, and must answer with a word-for-word quote. We search your file for that quote, ignoring only line breaks and capital letters. If it is not there, the answer is dropped and counted on screen.</p></div>
+    <div><h3>1. Keyword finder (always, instant)</h3><p>The text of each page is split into sentences. Each clause has a set of English, Indonesian, Spanish and Portuguese patterns (for example "escrow", "rekening bersama", "aval", "conta caução"). The best scoring sentence is shown exactly as it appears in the file, with its page number. It runs on fixed rules only.</p></div>
+    <div><h3>2. On-device reader (optional)</h3><p>If your browser supports WebGPU, you can download an open-weights model (Qwen2.5 Instruct, 1.5B or 0.5B parameters, Apache 2.0) once. For each clause it reads only the passages the keyword step ranked highest, and must answer with a word-for-word quote. We search your file for that quote, ignoring only line breaks and capital letters. If it is not there, the answer is dropped and counted on screen.</p></div>
     <div><h3>3. What the law says</h3><p>Each clause links to short notes from our <a href="/tools/law/">law notes</a>: the rule in plain words, the original text quoted, our translation, and a link to the official source. We only include an article after reading it in the official text.</p></div>
-    <div><h3>Honest limits</h3><ul><li>Small models misread and miss things. A dropped or missing answer means "look yourself", not "not in the contract".</li><li>The AI summary line is not checked word for word, only for numbers that are not in the quote; we hide it when it adds one.</li><li>Scanned PDFs (pictures of pages) have no text to read. Tables can come out in a strange order.</li><li>Laws change and contracts are read as a whole. This is information, not legal advice: have a local lawyer read the contract before you pay.</li></ul></div>
+    <div><h3>Honest limits</h3><ul><li>Small models misread and miss things. A dropped or missing answer means "look yourself", not "not in the contract".</li><li>The summary line is not checked word for word, only for numbers that are not in the quote; we hide it when it adds one.</li><li>Scanned PDFs (pictures of pages) have no text to read. Tables can come out in a strange order.</li><li>Laws change and contracts are read as a whole. This is information, not legal advice: have a local lawyer read the contract before you pay.</li></ul></div>
   </div>
-  <p class="tl-hint" style="margin-top:24px">Network: the page, our scripts and the law notes come from kolaboro.com. The AI model files (about 886 MB for 1.5B, 295 MB for 0.5B) come from Hugging Face (huggingface.co and its CDN, hf.co) and the compiled GPU code from raw.githubusercontent.com, and are then kept in your browser's cache. Like every page on kolaboro.com, this one sends page-view analytics (Google Analytics, and Microsoft Clarity with this tool's content masked). No request carries your contract or the results; you can check this in your browser's network panel. Third-party code is a byte-identical copy of the npm packages, listed with hashes in <a href="/tools/contract-check/vendor/README.txt">vendor/README.txt</a>.</p>
+  <p class="tl-hint" style="margin-top:24px">Network: the page, our scripts and the law notes come from kolaboro.com. The model files (about 886 MB for 1.5B, 295 MB for 0.5B) come from Hugging Face (huggingface.co and its CDN, hf.co) and the compiled GPU code from raw.githubusercontent.com, and are then kept in your browser's cache. Like every page on kolaboro.com, this one sends page-view analytics (Google Analytics, and Microsoft Clarity with this tool's content masked). No request carries your contract or the results; you can check this in your browser's network panel. Third-party code is a byte-identical copy of the npm packages, listed with hashes in <a href="/tools/contract-check/vendor/README.txt">vendor/README.txt</a>.</p>
   <div class="pr-links" style="margin-top:22px;display:flex;gap:12px;flex-wrap:wrap"><a class="btn btn-line" href="/tools/pdf-check/">Was the PDF edited?</a><a class="btn btn-line" href="/tools/permit-check/">Check a permit QR code</a><a class="btn btn-line" href="/tools/law/">Law notes</a></div>
 </div></section>
 </main>

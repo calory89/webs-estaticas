@@ -23,7 +23,7 @@ const te = new TextEncoder(), td = new TextDecoder();
 const CORS = { 'access-control-allow-origin': '*', 'access-control-allow-methods': 'GET, POST, OPTIONS', 'access-control-allow-headers': 'content-type' };
 function out(o, s = 200, extra) { return new Response(JSON.stringify(o), { status: s, headers: Object.assign({ 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' }, CORS, extra || {}) }); }
 const ip = req => { const a = req.headers.get('cf-connecting-ip') || 'x'; return a.includes(':') ? a.split(':').slice(0, 4).join(':') + '::/64' : a; };
-async function allow(ctx, key, limit, ttl) {   // fixed-window counter in the edge cache (per data centre: a soft limit, the AI spend cap is the hard one)
+async function allow(ctx, key, limit, ttl) {   // fixed-window counter in the edge cache (per data centre: a soft limit, the processing spend cap is the hard one)
   const k = new Request('https://kolaboro.com/__rlj/' + encodeURIComponent(key));
   const hit = await caches.default.match(k); const n = hit ? (+(await hit.text()) || 0) : 0;
   if (n >= limit) return false;

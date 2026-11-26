@@ -492,8 +492,8 @@ async function run(inp, req, env, ctx, opts) {
       site.fields = { developer: rep.developer, project: rep.project, location: rep.location, country: rep.country, property_type: rep.property_type, completion: rep.completion, permit_claim: rep.permit_claim, title_type: rep.title_type, price_from: rep.price_from };
       site.desk_review = { analysed: review.d.analysed, cached: !!review.d.cached, prompt_sha256: review.d.prompt_sha256 || null, quotes: fq };
       if (rep.permit_claim) idsFrom(rep.permit_claim, 'desk_review').forEach(x => { if (!ids.some(y => y.type === x.type && y.value === x.value)) ids.push(x); });
-    } else if (review && review.skipped) site.desk_review = { status: 'skipped', note: 'The AI desk review runs only for lookups started on kolaboro.com or by API partners (it has a daily spend cap).' };
-    else if (review) site.desk_review = { status: 'unavailable', error: review.d && review.d.error || 'error', note: review.d && review.d.error === 'rate' ? 'Hourly limit for AI desk reviews reached; register checks still ran.' : 'The desk review did not complete; register checks still ran.' };
+    } else if (review && review.skipped) site.desk_review = { status: 'skipped', note: 'The desk review runs only for lookups started on kolaboro.com or by API partners (it has a daily spend cap).' };
+    else if (review) site.desk_review = { status: 'unavailable', error: review.d && review.d.error || 'error', note: review.d && review.d.error === 'rate' ? 'Hourly limit for desk reviews reached; register checks still ran.' : 'The desk review did not complete; register checks still ran.' };
     site.fields = Object.assign(site.fields || {}, { identifiers_found: ids.filter(x => x.from !== 'input').map(x => ({ type: x.type, value: x.value, text: x.text })) });
   }
   if (pageText) brochureFigures(pageText, 'website', pageUrl).forEach(x => brochure.push(x));

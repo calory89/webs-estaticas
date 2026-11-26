@@ -4,16 +4,16 @@
 <script>(function(d){d.setAttribute('data-kdk','');try{var t=localStorage.getItem('kb-theme')}catch(e){}if(t==='dark'||(t!=='light'&&matchMedia('(prefers-color-scheme: dark)').matches))d.setAttribute('data-theme','dark')})(document.documentElement)</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Try to fool our AI | Kolaboro</title>
-<meta name="description" content="Paste text a developer could hide on a page. Our real AI desk review reads it and you see whether the verdict changed and whether the attempt was caught.">
+<title>Try to fool our desk review | Kolaboro</title>
+<meta name="description" content="Paste text a developer could hide on a page. Our real desk review reads it and you see whether the verdict changed and whether the attempt was caught.">
 
 <link rel="canonical" href="https://kolaboro.com/check/red-team/">
 <link rel="icon" href="/k/favicon.svg" type="image/svg+xml">
 <meta name="theme-color" content="#17212B">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Kolaboro">
-<meta property="og:title" content="Try to fool our AI | Kolaboro">
-<meta property="og:description" content="Paste text a developer could hide on a page. Our real AI desk review reads it and you see whether the verdict changed and whether the attempt was caught.">
+<meta property="og:title" content="Try to fool our desk review | Kolaboro">
+<meta property="og:description" content="Paste text a developer could hide on a page. Our real desk review reads it and you see whether the verdict changed and whether the attempt was caught.">
 <meta property="og:url" content="https://kolaboro.com/check/red-team/">
 <meta property="og:image" content="https://kolaboro.com/k/og/check.png">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
@@ -59,7 +59,7 @@
 .rt-t tr.chg td{background:#FFF6E0}.rt-wrap{overflow-x:auto}
 .rt-steps{list-style:none;padding:0;margin:0;font-size:.88rem}.rt-steps li{display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-top:1px solid var(--line)}.rt-steps code{font:600 .84rem ui-monospace,SFMono-Regular,Menlo,monospace}
 .rt-ev{font-size:.88rem}.rt-ev li{overflow-wrap:anywhere}.fe{color:var(--t-bad,#B42318)}</style>
-<section class="phero tight"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / <a href="/check/">Check a project</a> / Try to fool our AI</p><h1>Try to fool our AI.</h1><p class="lead">Developer websites are untrusted input. Paste text a developer could put on a page, hidden or visible. Our real desk review reads it inside a fictional project page, exactly as it reads a real website, and you see whether your text changed the verdict.</p></div></section>
+<section class="phero tight"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / <a href="/check/">Check a project</a> / Try to fool our desk review</p><h1>Try to fool our desk review.</h1><p class="lead">Developer websites are untrusted input. Paste text a developer could put on a page, hidden or visible. Our real desk review reads it inside a fictional project page, exactly as it reads a real website, and you see whether your text changed the verdict.</p></div></section>
 <section class="sec" style="padding-top:12px"><div class="wrap">
 <div class="rt">
   <div class="rt-card">
@@ -212,7 +212,7 @@ addEventListener('load', function(){ setTimeout(function(){   // n27u: read the 
   document.querySelectorAll('[data-ex]').forEach(function(b){ b.addEventListener('click', function(){ x.value = EX[+b.getAttribute('data-ex')]; cnt(); x.focus(); }); });
   var LBL = { attention: 'Attention level', guaranteed_language: 'Guaranteed return wording', page_kind: 'Kind of page', title_type: 'Title type', lease_years: 'Lease length', advertised_return: 'Advertised return', completion: 'Completion date', permit_claim: 'Permit claim', extension_promised: 'Lease extension promised' };
   function val(v){ return v === true ? 'yes' : v === false ? 'no' : v == null || v === '' ? '(none)' : String(v); }
-  var STEP = { strip: 'Strip hidden text', scan: 'Scan for instructions aimed at AI', model_a: 'Model A', model_b: 'Model B', consensus: 'Compare critical fields', quotes: 'Check quotes against the page' };
+  var STEP = { strip: 'Strip hidden text', scan: 'Scan for instructions aimed at automated readers', model_a: 'Model A', model_b: 'Model B', consensus: 'Compare critical fields', quotes: 'Check quotes against the page' };
   function stepTxt(e){
     if (e.step === 'strip') return e.hidden_chars ? e.hidden_chars + ' hidden characters removed' : 'nothing hidden';
     if (e.step === 'scan') return e.hits + ' match' + (e.hits === 1 ? '' : 'es');
@@ -240,7 +240,7 @@ addEventListener('load', function(){ setTimeout(function(){   // n27u: read the 
       '<h3 style="margin-top:14px">Steps, measured on our server</h3><ul class="rt-steps">' + (d.steps || []).map(function(e){ return '<li><span>' + esc(STEP[e.step] || e.step) + ' · <span class="muted">' + esc(stepTxt(e)) + '</span></span><code>' + (e.skipped ? '' : e.ms + ' ms' + (e.ms === 0 ? '*' : '')) + '</code></li>'; }).join('') + '</ul>' +
       (d.cached ? '<p class="muted" style="font-size:.8rem">These are the timings of the original run of this text; nothing was run now.</p>' : '') +
       ((d.steps || []).some(function(e){ return e.ms === 0 && !e.skipped; }) ? '<p class="muted" style="font-size:.8rem">* A Cloudflare Worker\'s clock only moves while it waits for the network, so pure computation measures 0 ms.</p>' : '') +
-      '<p class="muted" style="font-size:.8rem">Baseline computed ' + esc(new Date(z.computed).toUTCString().slice(5, 22)) + ' UTC with the same code. Two AI models read every page, so answers can vary a little between runs.</p></div></div>';
+      '<p class="muted" style="font-size:.8rem">Baseline computed ' + esc(new Date(z.computed).toUTCString().slice(5, 22)) + ' UTC with the same code. Two models read every page, so answers can vary a little between runs.</p></div></div>';
     if (d.outcome === 'fooled') h += '<div class="rt-card" style="margin-top:16px" id="rt-sub"><h3>Hand it in</h3><p>Attacks that work become test cases in our <a href="/engineering/evals/">public evaluation</a>, with credit if you want it.</p><label for="rt-nm">Name for the credit <span class="muted" style="font-weight:500">(optional)</span></label><input type="text" id="rt-nm" maxlength="60" autocomplete="nickname"><div class="rt-row"><span></span><button class="btn btn-hi" type="button" id="rt-sb">Hand in this attack</button></div><p id="rt-sr" style="margin:8px 0 0"></p></div>';
     o.innerHTML = h;
     var sb = $('rt-sb'); if (sb) sb.onclick = function(){

@@ -72,7 +72,7 @@ async function gather(cache, env) {
     if (!hist.length && ev.value.latest) hist.push(Object.assign({ at: ev.value.latest.run_at }, ev.value.latest));
     hist.forEach(r => { const at = iso(r.at || r.run_at); if (!at) return;
       const ok = r.cases_passed === r.cases_total, c = r.consensus;
-      out.push({ id: 'ev-' + at, at, kind: 'eval', ok, text: 'AI desk review evaluation: ' + r.cases_passed + ' of ' + r.cases_total + ' fixed test cases passed' + (c && c.fields_compared ? ', second model agreed on ' + c.fields_agreed + ' of ' + c.fields_compared + ' fields' : ''), href: '/engineering/evals/' }); });
+      out.push({ id: 'ev-' + at, at, kind: 'eval', ok, text: 'Desk review evaluation: ' + r.cases_passed + ' of ' + r.cases_total + ' fixed test cases passed' + (c && c.fields_compared ? ', second model agreed on ' + c.fields_agreed + ' of ' + c.fields_compared + ' fields' : ''), href: '/engineering/evals/' }); });
   } else src.evals = false;
   let heads = [];
   if (lg.status === 'fulfilled' && lg.value) {
@@ -97,7 +97,7 @@ async function snapshot(env, ctx) {
   const cache = caches.default, key = new Request(CK + 'events-v1');
   try { const hit = await cache.match(key); if (hit) return { text: await hit.text(), sig: hit.headers.get('x-sig') }; } catch (e) {}
   const g = await gather(cache, env);
-  const body = { generated_at: new Date().toISOString(), about: 'Real system events from existing public records: findings of the daily developer page check (/data/live-findings.json, quotes checked in code), end-to-end self-tests, AI evaluation runs, public log witnesses in Sigstore Rekor and uptime probes. Times are when each record says it happened; uptime probes carry the time this edge first saw the new count ("seen").', last_event_at: g.events.length ? g.events[0].at : null, events: g.events, uptime: g.uptime, sources: g.sources };
+  const body = { generated_at: new Date().toISOString(), about: 'Real system events from existing public records: findings of the daily developer page check (/data/live-findings.json, quotes checked in code), end-to-end self-tests, daily evaluation runs, public log witnesses in Sigstore Rekor and uptime probes. Times are when each record says it happened; uptime probes carry the time this edge first saw the new count ("seen").', last_event_at: g.events.length ? g.events[0].at : null, events: g.events, uptime: g.uptime, sources: g.sources };
   const text = JSON.stringify(body); let sig = null; try { sig = await signBody(env, text); } catch (e) {}
   const put = cache.put(key, new Response(text, { headers: { 'content-type': 'application/json', 'cache-control': 'public, max-age=20', 'x-sig': sig || '' } })).catch(() => {});
   if (ctx && ctx.waitUntil) ctx.waitUntil(put);

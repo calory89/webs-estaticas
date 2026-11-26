@@ -1,4 +1,4 @@
-// kolaboro.com batch 29 (agent n29i, 14 Nov 2026): international search and AI assistants. No model calls, nothing stored, nothing
+// kolaboro.com batch 29 (agent n29i, 14 Nov 2026): international search and chat assistants. No model calls, nothing stored, nothing
 // estimated: every figure is computed at the edge from the published data files (/data/named.json, bali-cases.json, promises.json and
 // the transparency index of kbx_tr.js), dated with the data date.
 //   item 89  GET /[<lang>/]guides/buyers-from/<russia|china|gulf>/  what changes with the buyer's nationality in Dubai, Bali,

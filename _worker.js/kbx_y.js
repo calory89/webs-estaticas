@@ -42,7 +42,7 @@ const STAGES = ['off-plan', 'under construction', 'completed'];
 
 function out(o, s = 200, extra) { return new Response(JSON.stringify(o), { status: s, headers: Object.assign({ 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' }, extra || {}) }); }
 const ipOf = req => { const a = req.headers.get('cf-connecting-ip') || 'x'; return a.includes(':') ? a.split(':').slice(0, 4).join(':') + '::/64' : a; };
-async function allow(ctx, key, limit, ttl) {   // fixed-window counter in the edge cache (soft, per data centre; the daily AI spend cap is the hard limit)
+async function allow(ctx, key, limit, ttl) {   // fixed-window counter in the edge cache (soft, per data centre; the daily processing spend cap is the hard limit)
   const k = new Request('https://kolaboro.com/__rly/' + encodeURIComponent(key));
   const hit = await caches.default.match(k); const n = hit ? (+(await hit.text()) || 0) : 0;
   if (n >= limit) return false;

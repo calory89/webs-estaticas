@@ -1,7 +1,7 @@
 // Feature module 'ins' for kolaboro.com (see kbx.js): insight: weekly market digest, market page figures, score explainer, project-scoped questions, change heatmap.
 // Batch 6 (5 Nov 2026), block X6. Endpoints live under /api/x/ins/.
 //   GET  /api/x/ins/status                  what is live and which data files answer
-//   GET  /api/x/ins/explain?id=BALI-014     plain-English explanation of one project's score, built by code from its checks (no AI)
+//   GET  /api/x/ins/explain?id=BALI-014     plain-English explanation of one project's score, built by code from its checks (fixed rules only)
 //   GET  /api/x/ins/evidence?id=BALI-014    the public evidence lines the question box may cite (E1, E2, ...)
 //   POST /api/x/ins/ask {id, q}             a question about ONE project, answered by claude() from that project's evidence only;
 //                                           every citation must name an evidence line and quote text found in it, and every number
@@ -193,7 +193,7 @@ async function ask(req, env, ctx) {
     answer: answerable ? answer : (refused ? 'We could not back an answer with this project\'s evidence, so we do not show one. Try asking about its checks, promises, timeline, hazards or register checks.' : answer || 'The evidence for this project does not answer that.'),
     citations: answerable ? good : [], rejected_citations: cites.filter(c => !c.quote_found).map(c => c.e), unbacked_numbers: loose.slice(0, 6),
     model: claude.lastModel || null, evidence_lines: ev.lines.length,
-    note: 'Answered by an AI model from this project\'s public evidence only. Code checked that every citation names a real evidence line and quotes text found in it, and that every number in the answer appears in the cited lines.' };
+    note: 'Answered by a model from this project\'s public evidence only. Code checked that every citation names a real evidence line and quotes text found in it, and that every number in the answer appears in the cited lines.' };
   ctx.waitUntil(caches.default.put(ck, new Response(JSON.stringify(res), { headers: { 'content-type': 'application/json', 'cache-control': 'max-age=86400' } })));
   return out(res);
 }

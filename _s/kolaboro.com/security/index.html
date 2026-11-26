@@ -60,7 +60,7 @@
 <p>Write to <a href="mailto:hello@kolaboro.com">hello@kolaboro.com</a> with "Security" in the subject. We reply within two working days.</p>
 <p>Our contact is also published in the standard machine-readable file <a href="/.well-known/security.txt">/.well-known/security.txt</a> (RFC 9116).</p>
 <p><b>In scope:</b> kolaboro.com, its API (/api/open, /api/kb, /api/v1), the client portal, the agent app and the admin. <b>Please don't:</b> access other people's data beyond what you need to show the problem, run denial-of-service tests, or use social engineering. If you follow these rules and give us reasonable time to fix the issue before you publish, we will not pursue or support legal action against you.</p>
-<p>Things we already do, so you know what to test against: every open API answer is signed (Ed25519), the public log is a Merkle tree with a signed checkpoint and is witnessed in Sigstore Rekor, AI page reviews strip hidden text and flag instructions aimed at AI, third-party scripts load with Subresource Integrity, and a script allowlist is enforced on every page. Details: <a href="/engineering/">Engineering</a>.</p>
+<p>Things we already do, so you know what to test against: every open API answer is signed (Ed25519), the public log is a Merkle tree with a signed checkpoint and is witnessed in Sigstore Rekor, desk reviews strip hidden text and flag instructions aimed at automated readers, third-party scripts load with Subresource Integrity, and a script allowlist is enforced on every page. Details: <a href="/engineering/">Engineering</a>.</p>
 <h2 id="csp">Script allowlist (Content-Security-Policy)</h2>
 <p>Every page is served with a strict Content-Security-Policy. The script rules are <b>enforced</b> since 11 November 2026: a fresh random nonce per response marks the scripts we serve, and the browser refuses any other script, inline handler or eval. Framing rules (which sites may frame a page, and what a page may frame) are enforced too. The rules for images, styles, fonts and connections are still in <b>report-only</b> mode: the browser reports anything outside the list and blocks nothing, so we can find every legitimate source before enforcing them. API answers carry a deny-all policy. Reports go to <code>/api/kb/csp</code>; only the page path, the directive, the blocked origin and the browser family are kept, never IP addresses.</p>
 <div class="bb-box" id="csp-box" aria-live="polite"><p style="margin:0">Loading the violation counts…</p></div>
@@ -73,7 +73,7 @@
 <li>The APIs: <code>/api/open/*</code>, <code>/api/kb/*</code>, <code>/api/v1/*</code>, <code>/api/x/*</code>, <code>/mcp</code></li>
 <li>The client portal, the agent app and the admin</li>
 <li>Our signatures and proofs: forging an Ed25519 signature, a log checkpoint, an inclusion or consistency proof, a witness cosignature or an evidence receipt that our open verifiers accept</li>
-<li>The AI desk review: a page that makes it report a claim the page does not make, or hide manipulation (also try the <a href="/check/">desk review</a> red-team playground)</li>
+<li>The desk review: a page that makes it report a claim the page does not make, or hide manipulation (also try the <a href="/check/">desk review</a> red-team playground)</li>
 <li>Our open-source verifiers in <a href="/open/kolaboro-verify.js">/open/</a>, with their tests in JavaScript, Python and Go at <a href="https://github.com/calory89/kolaboro-open">github.com/calory89/kolaboro-open</a> (MIT)</li>
 </ul></td><td><ul>
 <li>Denial of service, load or rate-limit testing, spam</li>
@@ -86,8 +86,8 @@
 <h3>Severity</h3>
 <div class="bb-scroll" tabindex="0" role="region" aria-label="Severity"><table class="bb-t"><thead><tr><th>Severity</th><th>Examples</th><th>Our target</th></tr></thead><tbody>
 <tr><td><b>Critical</b></td><td>Reading or changing another person's case, documents or payments; taking over an account or the admin; forging a signature or proof our verifiers accept; running code on our servers</td><td>Fix or mitigation within 72 hours</td></tr>
-<tr><td><b>High</b></td><td>Stored cross-site scripting on our pages; bypassing payment confirmation; making the AI review publish a false claim about a real project; leaking personal data at scale</td><td>Fix within 7 days</td></tr>
-<tr><td><b>Medium</b></td><td>Reflected cross-site scripting; cross-site request forgery on a state-changing action; bypassing the AI spend cap or rate limits in a way that costs us money</td><td>Fix within 30 days</td></tr>
+<tr><td><b>High</b></td><td>Stored cross-site scripting on our pages; bypassing payment confirmation; making the desk review publish a false claim about a real project; leaking personal data at scale</td><td>Fix within 7 days</td></tr>
+<tr><td><b>Medium</b></td><td>Reflected cross-site scripting; cross-site request forgery on a state-changing action; bypassing the processing spend cap or rate limits in a way that costs us money</td><td>Fix within 30 days</td></tr>
 <tr><td><b>Low</b></td><td>Information disclosure without personal data; issues that need unlikely user interaction</td><td>Next scheduled release</td></tr>
 </tbody></table></div>
 <p>We confirm receipt and give a first assessment within two working days, tell you when it is fixed, and credit you here if you want. Please give us the time above before publishing.</p>

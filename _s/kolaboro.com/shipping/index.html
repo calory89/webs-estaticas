@@ -71,7 +71,7 @@ button.sh-c{min-width:var(--c)}.sh-c.l1{background:#B9DFCB}.sh-c.l2{background:#
 <p class="sh-src"><b>Source:</b> commits on the live branch (pub/_lovable) that change the site (_s/kolaboro.com/) or its server code (the kolaboro worker modules). A <b>ship</b> is a commit made by a person or by software working for one; commits made by our scheduled workflows are counted separately as <b>data updates</b>, and rollbacks by the deploy guard as <b>rollbacks</b>. Days are UTC. The streak counts consecutive days with at least one ship; today counts once something ships. <b>The full repository is private; the commit ids are shown so changes can be dated.</b> Commit subjects pass a privacy filter first: no project names, web addresses or emails.</p>
 
 <h2 id="days">Day by day</h2>
-<p>Once a day is over, Claude (claude-sonnet-5-5) turns that day's commit subjects into 3 to 6 lines a buyer can read. Code then checks that every line maps to at least one commit of the day (the ids are shown) and contains no number that is not in those commits; otherwise the page falls back to the day's own commit subjects. Days without a page written by a person get an automatic day page in the <a href="/changelog/">changelog</a>, marked as such.</p>
+<p>Once a day is over, a hosted model turns that day's commit subjects into 3 to 6 lines a buyer can read. Code then checks that every line maps to at least one commit of the day (the ids are shown) and contains no number that is not in those commits; otherwise the page falls back to the day's own commit subjects. Days without a page written by a person get an automatic day page in the <a href="/changelog/">changelog</a>, marked as such.</p>
 <div id="sh-list"></div>
 
 <h2 id="engineering">Engineering numbers, live</h2>

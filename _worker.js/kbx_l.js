@@ -120,9 +120,9 @@ async function trust(env) {
       detail: heads ? heads.length + ' daily heads, ' + witnessed + ' recorded in Sigstore Rekor; signed checkpoint tree size ' + (size || 'unreadable') + (size === heads.length ? ' (matches)' : ' (does not match the head count)') + '. Latest head ' + last.day + ', ' + last.projects_count + ' projects fingerprinted.' : 'Log not readable right now.',
       how: 'Merkle tree of daily heads, C2SP signed checkpoint, inclusion and consistency proofs, Bitcoin timestamps and a copy in Rekor.', evidence: ['/api/open/log', '/api/open/checkpoint', '/log/'] })); }
 
-  // 6. AI evaluation
+  // 6. Daily evaluation
   { const l = evals && evals.latest;
-    C.push(control({ id: 'ai-eval', name: 'AI evaluation on fixed test pages', tsc: ['PI1.3', 'CC8.1'], max_age_h: 36,
+    C.push(control({ id: 'ai-eval', name: 'Daily evaluation on fixed test pages', tsc: ['PI1.3', 'CC8.1'], max_age_h: 36,
       status: !l ? 'unknown' : l.cases_passed === l.cases_total ? 'pass' : 'fail', evidence_at: l ? l.run_at : null,
       detail: l ? l.cases_passed + ' of ' + l.cases_total + ' cases and ' + l.checks_passed + ' of ' + l.checks_total + ' checks passed' + (l.by_kind && l.by_kind.injection ? ', including ' + l.by_kind.injection.passed + ' of ' + l.by_kind.injection.total + ' manipulation attempts' : '') + (l.consensus ? '. Second model agreed on ' + l.consensus.fields_agreed + ' of ' + l.consensus.fields_compared + ' fields' : '') + '. Run took ' + l.seconds + ' s.' : 'Evaluation record not readable right now.',
       how: 'The production desk review reads the same fictional pages daily and after every code change; answers are checked against fixed expectations.', evidence: ['/api/open/evals', '/engineering/evals'] })); }
@@ -208,9 +208,9 @@ async function dossier(env) {
   if (fresh) add('freshness', 'Projects re-read within 7 days', fresh.pct_7d, '%', '/api/open/freshness', fresh.updated, fresh.within_7d + ' of ' + fresh.projects);
   if (kb) {
     const r7 = kb.runs_7d || {};
-    add('reviews_7d', 'AI desk reviews run, last 7 days', r7.analyze != null ? r7.analyze : null, 'reviews', '/api/kb/stats', kb.generated_at, 'Counts calls to the review endpoint; only a 7-day window is published, so no longer history yet.');
+    add('reviews_7d', 'Desk reviews run, last 7 days', r7.analyze != null ? r7.analyze : null, 'reviews', '/api/kb/stats', kb.generated_at, 'Counts calls to the review endpoint; only a 7-day window is published, so no longer history yet.');
     add('stamps', 'Bitcoin timestamps issued', kb.stamps, 'stamps', '/api/kb/stats', kb.generated_at, kb.stamps_confirmed != null ? kb.stamps_confirmed + ' confirmed in a block' : null);
-  } else add('reviews_7d', 'AI desk reviews run, last 7 days', null, null, '/api/kb/stats', null, 'source not readable right now');
+  } else add('reviews_7d', 'Desk reviews run, last 7 days', null, null, '/api/kb/stats', null, 'source not readable right now');
   add('signed_answers', 'Signed API answers served', null, null, '/api/open/docs', null, 'Not measured yet: every /api/open answer is signed, but we do not count them.');
   if (heads) {
     add('log_days', 'Days in the public log', heads.length, 'days', '/api/open/log', heads.length ? heads[heads.length - 1].day : null, heads.filter(h => h.rekor_uuid).length + ' witnessed in Sigstore Rekor, first day ' + (heads[0] || {}).day);
@@ -218,9 +218,9 @@ async function dossier(env) {
   }
   if (evals && evals.latest) {
     const l = evals.latest, hist = evals.history || [], passRuns = hist.filter(h => h.cases_passed === h.cases_total).length;
-    add('eval_pass', 'AI evaluation pass rate, latest run', Math.round(1000 * l.cases_passed / l.cases_total) / 10, '%', '/api/open/evals', l.run_at, l.cases_passed + ' of ' + l.cases_total + ' cases; ' + passRuns + ' of ' + hist.length + ' recorded runs passed every case (failed runs are kept in the history).');
+    add('eval_pass', 'Daily evaluation pass rate, latest run', Math.round(1000 * l.cases_passed / l.cases_total) / 10, '%', '/api/open/evals', l.run_at, l.cases_passed + ' of ' + l.cases_total + ' cases; ' + passRuns + ' of ' + hist.length + ' recorded runs passed every case (failed runs are kept in the history).');
     const byDay = {}; for (const h of hist) { const k = h.day || String(h.at).slice(0, 10); (byDay[k] = byDay[k] || { runs: 0, pass: 0 }); byDay[k].runs++; if (h.cases_passed === h.cases_total) byDay[k].pass++; }
-    S.push({ id: 'eval_runs', label: 'AI evaluation runs per day (all cases passed)', source: '/api/open/evals', points: Object.keys(byDay).sort().map(k => ({ d: k, v: byDay[k].runs, pass: byDay[k].pass })) });
+    S.push({ id: 'eval_runs', label: 'Daily evaluation runs per day (all cases passed)', source: '/api/open/evals', points: Object.keys(byDay).sort().map(k => ({ d: k, v: byDay[k].runs, pass: byDay[k].pass })) });
   }
   if (uptime) {
     add('uptime_7d', 'Uptime, last 7 days', uptime.uptime_7d, '%', '/api/open/uptime', (uptime.daily || []).map(x => x.day).sort().pop(), uptime.probes_30d + ' probes since ' + String(uptime.since).slice(0, 10));
@@ -228,14 +228,14 @@ async function dossier(env) {
   }
   if (spend) {
     const days = (spend.days || []).slice().sort((a, b) => a.day < b.day ? -1 : 1), usd = days.reduce((a, x) => a + (+x.usd_estimated || 0), 0), calls = days.reduce((a, x) => a + (+x.calls || 0), 0);
-    add('ai_spend', 'AI spend recorded', Math.round(usd * 100) / 100, 'USD', '/api/open/ai-spend', days.length ? days[days.length - 1].day : null, calls + ' calls over ' + days.length + ' day(s) since ' + (days[0] || {}).day + '; daily cap $' + spend.cap_usd_per_day + '.');
-    add('ai_cost_call', 'AI cost per call', calls ? Math.round(10000 * usd / calls) / 10000 : null, 'USD', '/api/open/ai-spend', days.length ? days[days.length - 1].day : null);
+    add('ai_spend', 'Processing spend recorded', Math.round(usd * 100) / 100, 'USD', '/api/open/ai-spend', days.length ? days[days.length - 1].day : null, calls + ' calls over ' + days.length + ' day(s) since ' + (days[0] || {}).day + '; daily cap $' + spend.cap_usd_per_day + '.');
+    add('ai_cost_call', 'Processing cost per call', calls ? Math.round(10000 * usd / calls) / 10000 : null, 'USD', '/api/open/ai-spend', days.length ? days[days.length - 1].day : null);
     // cost per review needs spend for the same 7 days as the review count; until 7 days of spend exist it is not computed
     const since7 = new Date(Date.now() - 7 * 864e5).toISOString().slice(0, 10), w = days.filter(x => x.day > since7), r7 = kb && kb.runs_7d && kb.runs_7d.analyze;
     const covered = days.length && days[0].day <= since7;
-    add('ai_cost_review', 'AI cost per desk review (upper bound)', covered && r7 ? Math.round(100 * w.reduce((a, x) => a + (+x.usd_estimated || 0), 0) / r7) / 100 : null, 'USD', '/api/open/ai-spend + /api/kb/stats', covered ? today : null,
-      covered && r7 ? 'All AI spend in the last 7 days divided by reviews in the same 7 days; includes evaluation runs, so the true cost per review is lower.' : 'Not measured yet: spend is recorded since ' + ((days[0] || {}).day || 'recently') + ' and needs a full 7 days to match the 7-day review count.');
-    S.push({ id: 'ai_spend_daily', label: 'AI spend per day (USD)', source: '/api/open/ai-spend', points: days.map(x => ({ d: x.day, v: +x.usd_estimated, n: x.calls })) });
+    add('ai_cost_review', 'Processing cost per desk review (upper bound)', covered && r7 ? Math.round(100 * w.reduce((a, x) => a + (+x.usd_estimated || 0), 0) / r7) / 100 : null, 'USD', '/api/open/ai-spend + /api/kb/stats', covered ? today : null,
+      covered && r7 ? 'All processing spend in the last 7 days divided by reviews in the same 7 days; includes evaluation runs, so the true cost per review is lower.' : 'Not measured yet: spend is recorded since ' + ((days[0] || {}).day || 'recently') + ' and needs a full 7 days to match the 7-day review count.');
+    S.push({ id: 'ai_spend_daily', label: 'Processing spend per day (USD)', source: '/api/open/ai-spend', points: days.map(x => ({ d: x.day, v: +x.usd_estimated, n: x.calls })) });
   }
   { const per = changelogDays(clog), keys = Object.keys(per).sort(), start = new Date(Date.now() - 6 * 864e5).toISOString().slice(0, 10);
     const w = keys.filter(k => k >= start).reduce((a, k) => a + per[k], 0), first = keys[0], fullWeek = first && first <= start;

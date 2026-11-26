@@ -4,7 +4,7 @@
 <script>(function(d){d.setAttribute('data-kdk','');try{var t=localStorage.getItem('kb-theme')}catch(e){}if(t==='dark'||(t!=='light'&&matchMedia('(prefers-color-scheme: dark)').matches))d.setAttribute('data-theme','dark')})(document.documentElement)</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Daily AI evaluation | Kolaboro</title>
+<title>Daily evaluation | Kolaboro</title>
 <meta name="description" content="Every day Kolaboro's production desk review reads the same fictional test pages and each answer is checked against fixed expectations. Live results, case by case.">
 
 <link rel="canonical" href="https://kolaboro.com/engineering/evals/">
@@ -12,7 +12,7 @@
 <meta name="theme-color" content="#17212B">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Kolaboro">
-<meta property="og:title" content="Daily AI evaluation | Kolaboro">
+<meta property="og:title" content="Daily evaluation | Kolaboro">
 <meta property="og:description" content="Every day Kolaboro's production desk review reads the same fictional test pages and each answer is checked against fixed expectations. Live results, case by case.">
 <meta property="og:url" content="https://kolaboro.com/engineering/evals/">
 <meta property="og:image" content="https://kolaboro.com/k/og.png">
@@ -44,7 +44,7 @@
   </div>
 </header>
 <main id="main">
-<section class="phero"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / <a href="/engineering/">Engineering</a> / Evaluation</p><h1>Daily AI evaluation</h1><p class="lead">Every morning the same code that serves buyers reads the same fictional test pages, and each answer is checked against fixed expectations. If the model, the prompt or the page parser changes and something breaks, it shows here, and we get an email.</p></div></section>
+<section class="phero"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / <a href="/engineering/">Engineering</a> / Evaluation</p><h1>Daily evaluation</h1><p class="lead">Every morning the same code that serves buyers reads the same fictional test pages, and each answer is checked against fixed expectations. If the model, the prompt or the page parser changes and something breaks, it shows here, and we get an email.</p></div></section>
 <section class="sec"><div class="wrap eg-p">
 <div class="eg-live" id="ev-sum">Loading the latest run…</div>
 <h2>Every case</h2>
@@ -52,7 +52,7 @@
 <h2>History</h2>
 <div class="eg-live" style="overflow-x:auto"><table class="eg-t"><thead><tr><th>Day</th><th>Cases</th><th>Checks</th><th>Model</th><th>Code</th></tr></thead><tbody id="ev-hist"><tr><td colspan="5">Loading…</td></tr></tbody></table></div>
 <h2>How to read it</h2>
-<p>Each case is one fictional page in /open/evals/fixtures/ with checks listed in <a href="/open/evals/cases.json">cases.json</a>: a field of the answer and what it must be. A case passes only when every check passes. The run records the fingerprint (SHA-256) of the prompt and of all fixtures, so a change in either is visible in the history. Raw data: <a href="/api/open/evals">/api/open/evals</a>, signed like every open answer.</p><p class="muted" style="margin-top:48px;font-size:.9rem">More from Engineering: <a href="/engineering/ai-safety/">AI that can't be talked into a verdict</a> · <a href="/engineering/evals/">Daily AI evaluation</a> · <a href="/engineering/transparency-log/">The public log</a> · <a href="/engineering/signed-photos/">Signed site photos</a> · <a href="/engineering/reliability/">Reliability</a></p>
+<p>Each case is one fictional page in /open/evals/fixtures/ with checks listed in <a href="/open/evals/cases.json">cases.json</a>: a field of the answer and what it must be. A case passes only when every check passes. The run records the fingerprint (SHA-256) of the prompt and of all fixtures, so a change in either is visible in the history. Raw data: <a href="/api/open/evals">/api/open/evals</a>, signed like every open answer.</p><p class="muted" style="margin-top:48px;font-size:.9rem">More from Engineering: <a href="/engineering/ai-safety/">Software that can't be talked into a verdict</a> · <a href="/engineering/evals/">Daily evaluation</a> · <a href="/engineering/transparency-log/">The public log</a> · <a href="/engineering/signed-photos/">Signed site photos</a> · <a href="/engineering/reliability/">Reliability</a></p>
 </div></section>
 </main>
 <div class="mcta"><a class="btn btn-hi" href="/#start" data-role="buyer" data-ev="cta_sticky">Protect my purchase</a></div>

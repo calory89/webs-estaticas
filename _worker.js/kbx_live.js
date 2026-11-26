@@ -1,7 +1,7 @@
 // Feature module 'live' for kolaboro.com (see kbx.js). Batch 9 (6 Nov 2026, b9c).
 //   GET /api/x/live/status   server-side checks of the key endpoints, run from the edge (cached 60 s), plus incident history
 //                            built from the deploy guard record (/data/deploys.json). No AI is called: the desk review row only
-//                            reads configuration and the public AI spend figures.
+//                            reads configuration and the public processing spend figures.
 //   GET /api/x/live/csp      counts of Content-Security-Policy (report-only) violations reported to /api/kb/csp, aggregates only,
 //                            read through the public function kolaboro_csp_public (answers available:false until it exists).
 import { rpc } from './kolaboro.js';
