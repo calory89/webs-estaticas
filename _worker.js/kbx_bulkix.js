@@ -14,7 +14,7 @@ const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' };
 const pre = l => l === 'en' ? '' : '/' + l;
 const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-const MAX = 100, V = 'n21d-1';
+const MAX = 100, V = 'n40k11-1';
 
 // ------------------------------------------------------------------------------------------------ index
 const MEMO = {};
@@ -31,8 +31,9 @@ let NM = null, BUILT = null;
 export async function buildIndex(env) {
   if (!NM) NM = await import('./kbx_named.js');
   const ix = await NM.data(env);
-  const [web, look] = await Promise.all([file(env, 'web-health.json').catch(() => null), file(env, 'lookalikes.json').catch(() => null)]);
+  const [web, look, u37] = await Promise.all([file(env, 'web-health.json').catch(() => null), file(env, 'lookalikes.json').catch(() => null), file(env, 'n37u.json').catch(() => null)]);
   if (BUILT && BUILT.ix === ix && BUILT.web === web && BUILT.look === look) return BUILT.v;
+  const rgOf = new Map(); for (const r of (u37 && u37.p) || []) { const g = r[8] && r[8][8]; if (g && g[2] === 'reg') rgOf.set(r[0], [String(g[0]).slice(0, 110), g[3] || '']); }   // n40 k11 (R01-41): register entry per project, for the 'is this project late?' box
   const wd = (web && web.d) || {}, w = {}, l = {};
   for (const it of (look && look.items) || []) { const m = String(it.url || '').match(/^\/developers\/([a-z0-9-]+)\/$/); if (m) l[m[1]] = (l[m[1]] || 0) + 1; }
   const health = h => { const d = wd[h]; if (!d) return false; if (!w[h]) w[h] = [String(d.h || '-').slice(-1), d.s || 0, d.ck || (web && web.updated) || '']; return true; };
@@ -41,7 +42,8 @@ export async function buildIndex(env) {
     const hs = hostsOf(x), ho = NM.handoverOf(ix, x), pr = ix.prom[x.id] || [];
     const dvs = x.dvs && ix.devs.has(x.dvs) ? x.dvs : '';
     return [x.s, x.n, x.id, x.dv || '', dvs, x.mk || '', x.co || '', [...new Set([x.url, x.du].filter(NM.okHttp).map(pathOf).filter(Boolean))], hs,
-      ho ? String(ho.d) : '', pr.reduce((a, q) => a + (q.mv || 0), 0), x.pn ? 1 : 0, hs.find(health) || ''];
+      ho ? String(ho.d) : '', pr.reduce((a, q) => a + (q.mv || 0), 0), x.pn ? 1 : 0, hs.find(health) || '',
+      ((ix.caseBy.get(x.id) || {}).stage || x.st) === 'completed' ? 1 : 0, (NM.overdueOf(ix, x) || {}).m || 0, ho && ho.p && ho.p.ph ? String(ho.p.d0) : '', ...(rgOf.get(x.id) || ['', ''])];
   });
   // a website that carries projects of several developers (a marketplace we do not list as a portal) is not any one developer's website
   const hostDevs = {}; for (const x of ix.P) for (const h of hostsOf(x)) (hostDevs[h] = hostDevs[h] || new Set()).add(x.dvs || x.dv || x.id);
@@ -54,7 +56,7 @@ export async function buildIndex(env) {
   });
   const v = { version: 'bulk-index-1', updated: NM.iso(ix.updated) || ix.updated, licence: 'CC BY 4.0 (credit: Kolaboro, kolaboro.com)', counts: { projects: p.length, developers: d.length },
     sources: { projects: ORIGIN + '/api/v1/projects', promises: ORIGIN + '/data/promises.json', website_health: { url: ORIGIN + '/data/web-health.json', updated: (web && web.updated) || null }, lookalikes: { url: ORIGIN + '/data/lookalikes.json', updated: (look && look.updated) || null, window_days: (look && look.window_days) || null } },
-    fields: { p: ['slug', 'name', 'id', 'developer', 'developer_slug', 'market', 'country', 'tracked_pages (host and path)', 'official_hosts', 'handover_on_record', 'times_dates_moved', 'permit_number_published (1 or 0)', 'health_host'],
+    fields: { p: ['slug', 'name', 'id', 'developer', 'developer_slug', 'market', 'country', 'tracked_pages (host and path)', 'official_hosts', 'handover_on_record', 'times_dates_moved', 'permit_number_published (1 or 0)', 'health_host', 'completed (1 or 0)', 'months past the handover date on record (0: not past)', 'first published handover date when a later one is on record', 'register entry', 'register entry read on'],
       d: ['slug', 'name', 'projects', 'markets', 'official_hosts', 'times_dates_moved', 'projects_with_permit_number', 'health_host'],
       w: 'host -> [last daily check: u answered, b answered with a 4xx status, x server error, 0 no answer, - not checked; HTTP status; date checked]', l: 'developer_slug -> lookalike websites recorded' },
     p, d, w, l };

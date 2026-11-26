@@ -41,7 +41,7 @@ let kb = null, kbx = null, ksat = null, klk = null;
 let kStr = null;
 async function kbStrings(env) { try { if (!kStr) kStr = await import('./kbx_strings.js'); if (!kStr.isReady()) await kStr.ready(env); if (!kStr.isReady()) await kStr.ready(env); } catch (e) {} try { if (!kn33a) kn33a = await import('./kbx_n33a.js'); } catch (e) {} }   // n33a: byline and hub feeds read by kbHeaders (sync)
 async function kScript(env, k) { await kbStrings(env); const o = kStr && kStr.TB && kStr.TB.index_K; return (o && o[k]) || ''; }   // n40 k5: /__k/ script texts from /data/i18n/index.json
-const KXR_V = 'n22e1'; let kxr = null; const KXR = /^\/api\/kb\/xray(?:\/stats)?\/?$|^\/api\/v1\/xray(?:\/openapi\.json)?\/?$|^\/x\/[0-9a-f]{64}(?:\/|\.json|\/vc)?$/;   // b11 x11a: Project X-ray (keep equal to PATHS in kbx_xray.js)
+const KXR_V = 'n40k11a'; let kxr = null; const KXR = /^\/api\/kb\/xray(?:\/stats)?\/?$|^\/api\/v1\/xray(?:\/openapi\.json)?\/?$|^\/x\/[0-9a-f]{64}(?:\/|\.json|\/vc)?$/;   // b11 x11a: Project X-ray (keep equal to PATHS in kbx_xray.js)
 let kfw = null; const KFW = /^\/api\/v1\/(?:projects|developers)(?:\/[a-z0-9-]{1,90})?\/?$|^\/api\/v1\/(?:search-index|watch)$|^\/(?:projects|developers)\/[a-z0-9-]{1,90}\/feed\.(?:atom|json)$/;   // b9a: public named API, feeds, watch (keep equal to PATHS9 in kbx_follow.js)
 let kog = null, kbk = null; const KB10 = /^\/og\/(?:projects|developers|type)\/[a-z0-9-]{1,90}\.png$|^\/bulk-check\/?$|^\/api\/kb\/bulk\/?$/;   // b10c: keep equal to PATHS in kbx_og.js + kbx_bulk.js
 let kxev = null; const KXEV = /^\/api\/xev(?:\/sat\.png)?$/;   // x11b (batch 11): X-ray evidence cards + Sentinel-2 crop, keep equal to PATHS in kbx_xray_ev.js

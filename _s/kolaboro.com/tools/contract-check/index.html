@@ -183,7 +183,7 @@
 fetch('/api/geo').then(function(r){return r.json();}).then(function(g){if(!g||EU.indexOf(g.country)<0)return;var b=document.getElementById('cc');if(!b)return;b.hidden=false;
 b.addEventListener('click',function(e){var v=e.target.getAttribute('data-cc');if(!v)return;try{st&&st.setItem('kb-consent',v);}catch(x){}
 if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted'});if(window.clarity)clarity('consent');}b.hidden=true;});}).catch(function(){});})();</script>
-<script src="/tools/contract-check/cc.js?v=1c18b6fa2d" defer></script>
+<script src="/tools/contract-check/cc.js?v=n40k11a" defer></script>
 <script>
 addEventListener('load', function(){ setTimeout(function(){   // n27u: read the page height after load, not during parsing (it forced a full layout, the longest task of the page)
   if (document.body.scrollHeight < window.innerHeight * 3) return;
