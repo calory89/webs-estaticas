@@ -22754,6 +22754,7 @@ function trCity(c, id, kind, tr, cityLocal) {
 	const V = (s) => tr.v[s] ?? s;
 	out.bestReason_en = T(`${k}r|${id}`, c.bestReason_en);
 	out.luxuryNote = T(`${k}l|${id}`, c.luxuryNote);
+	if (cityLocal) out._cn = cityLocal;
 	for (const [t, p0] of Object.entries(out.tiers)) {
 		const p = p0;
 		if (!p) continue;
@@ -24846,6 +24847,45 @@ function frTypo(h) {
 	if (!/^<!doctype html><html lang="fr/i.test(h)) return h;
 	return h.split(/(<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>|<code[\s\S]*?<\/code>|<textarea[\s\S]*?<\/textarea>|<[^>]+>)/i).map((seg, i) => i % 2 ? seg : seg.replace(/(?<!&#?[\p{L}\p{N}]*)([\p{L}\p{N})»%€]) ?([;!?])(?=\s|$)/gu, "$1 $2").replace(/([\p{L}\p{N})»%€]) ?:(?=\s|$)/gu, "$1\xA0:")).join("");
 }
+/** T7.37: English labels left in the shared client scripts (date picker and photo viewer) in the page language. */
+var UI7 = {
+	es: [
+		"Mes anterior",
+		"Mes siguiente",
+		"Cerrar"
+	],
+	de: [
+		"Vorheriger Monat",
+		"Nächster Monat",
+		"Schließen"
+	],
+	fr: [
+		"Mois précédent",
+		"Mois suivant",
+		"Fermer"
+	],
+	it: [
+		"Mese precedente",
+		"Mese successivo",
+		"Chiudi"
+	],
+	pt: [
+		"Mês anterior",
+		"Mês seguinte",
+		"Fechar"
+	],
+	da: [
+		"Forrige måned",
+		"Næste måned",
+		"Luk"
+	]
+};
+function uiL10n(h) {
+	const m = h.slice(0, 200).match(/<html lang="([a-z]{2})/i);
+	const t = m ? UI7[m[1].toLowerCase()] : void 0;
+	if (!t) return h;
+	return h.replace(/aria-label=(\\?)"Previous month(\\?)"/g, `aria-label=$1"${t[0]}$2"`).replace(/aria-label=(\\?)"Next month(\\?)"/g, `aria-label=$1"${t[1]}$2"`).replace(/aria-label=(\\?)"Close(\\?)"/g, `aria-label=$1"${t[2]}$2"`);
+}
 /**
 * "Best hotel pools" pages: /pools (index) and /pools/<city-slug>, in English and Spanish (/es/...).
 * Data: src/generated/pools.json, built from data/pools/<slug>.json by tools/pools/build.py.
@@ -25119,7 +25159,7 @@ function card$2(t, p, city, L, cityImg, slug, price) {
 	if (g.extras?.length) rows.push(`<dt>${esc(x.extras)}</dt><dd>${esc(g.extras.join(" · "))}</dd>`);
 	if (g.access) rows.push(`<dt>${esc(x.access)}</dt><dd>${esc(g.access)}</dd>`);
 	const stars = p.stars ? `${"★".repeat(p.stars)} · ` : "";
-	return `<article class="gcard ${t}" id="${t}"><div class="ph">${chips}${price ? `<span class="pricetag gprice" data-eur="${price.nightly}" title="${esc(Y[L].priceRef(isoOf$1(price.checked) || "2026"))}"><span class="v">${money(price.nightly)}</span><small> ${esc(x.perNight)}</small></span>` : ""}${img ? `<img src="${ESC_URL$1(img)}"${bsSet(img)} alt="${esc(`${p.hotel}, ${city.city}`)}" width="640" height="480" loading="lazy" referrerpolicy="no-referrer"${fbAttr([...phs.slice(1), cityImg])}><small>${esc(credit)}</small>` : ""}</div>
+	return `<article class="gcard ${t}" id="${t}"><div class="ph">${chips}${price ? `<span class="pricetag gprice" data-eur="${price.nightly}" title="${esc(Y[L].priceRef(isoOf$1(price.checked) || "2026"))}"><span class="v">${money(price.nightly)}</span><small> ${esc(x.perNight)}</small></span>` : ""}${img ? `<img src="${ESC_URL$1(img)}"${bsSet(img)} alt="${esc(`${p.hotel}, ${city._cn ?? city.city}`)}" width="640" height="480" loading="lazy" referrerpolicy="no-referrer"${fbAttr([...phs.slice(1), cityImg])}><small>${esc(credit)}</small>` : ""}</div>
 <div class="bd"><h2>${esc(p.hotel)}</h2><div class="meta">${stars}${esc(p.area ?? city.city)}</div>${((q) => `${q._also ? `<p class="also"><a href="${esc(q._alsoHref ?? "")}">${esc(q._also)}</a></p>` : ""}${q._spaToo ? `<p class="also">${esc(SPATOO$1[L])}</p>` : ""}`)(p)}${price ? `<div class="meta pdate">${esc(Y[L].priceRef(isoOf$1(price.checked) || "2026"))}</div>` : ""}<p>${esc(L === "es" ? p.summary_es : p.summary_en)}</p>${rows.length ? `<dl>${rows.join("")}</dl>` : ""}${p.confidence === "low" ? `<p class="warn">${esc(x.low)}</p>` : ""}
 ${ctasFor$1(p, x, slug, t)}
 <div class="src">${esc(x.sources)}: ${p.sources.map((s) => srcLink$1(s)).join("")}</div></div></article>`;
@@ -25660,7 +25700,7 @@ function card$1(t, p, city, L, cityImg, slug, price) {
 	if (g.extras?.length) rows.push(`<dt>${esc(x.extras)}</dt><dd>${esc(g.extras.join(" · "))}</dd>`);
 	if (g.access) rows.push(`<dt>${esc(x.access)}</dt><dd>${esc(g.access)}</dd>`);
 	const stars = p.stars ? `${"★".repeat(p.stars)} · ` : "";
-	return `<article class="gcard ${t}" id="${t}"><div class="ph">${chips}${price ? `<span class="pricetag gprice" data-eur="${price.nightly}" title="${esc(Y[L].priceRef(isoOf(price.checked) || "2026"))}"><span class="v">${money(price.nightly)}</span><small> ${esc(x.perNight)}</small></span>` : ""}${img ? `<img src="${ESC_URL(img)}"${bsSet(img)} alt="${esc(`${p.hotel}, ${city.city}`)}" width="640" height="480" loading="lazy" referrerpolicy="no-referrer"${fbAttr([...phs.slice(1), cityImg])}><small>${esc(credit)}</small>` : ""}</div>
+	return `<article class="gcard ${t}" id="${t}"><div class="ph">${chips}${price ? `<span class="pricetag gprice" data-eur="${price.nightly}" title="${esc(Y[L].priceRef(isoOf(price.checked) || "2026"))}"><span class="v">${money(price.nightly)}</span><small> ${esc(x.perNight)}</small></span>` : ""}${img ? `<img src="${ESC_URL(img)}"${bsSet(img)} alt="${esc(`${p.hotel}, ${city._cn ?? city.city}`)}" width="640" height="480" loading="lazy" referrerpolicy="no-referrer"${fbAttr([...phs.slice(1), cityImg])}><small>${esc(credit)}</small>` : ""}</div>
 <div class="bd"><h2>${esc(p.hotel)}</h2><div class="meta">${stars}${esc(p.area ?? city.city)}</div>${((q) => `${q._also ? `<p class="also"><a href="${esc(q._alsoHref ?? "")}">${esc(q._also)}</a></p>` : ""}${q._spaToo ? `<p class="also">${esc(SPATOO[L])}</p>` : ""}`)(p)}${price ? `<div class="meta pdate">${esc(Y[L].priceRef(isoOf(price.checked) || "2026"))}</div>` : ""}<p>${esc(L === "es" ? p.summary_es : p.summary_en)}</p>${rows.length ? `<dl>${rows.join("")}</dl>` : ""}${p.confidence === "low" ? `<p class="warn">${esc(x.low)}</p>` : ""}
 ${ctasFor(p, x, slug, t)}
 <div class="src">${esc(x.sources)}: ${p.sources.map((s) => srcLink(s)).join("")}</div></div></article>`;
@@ -57273,7 +57313,7 @@ ${JS_PLUS}
 window.T3V=${json(M[o.L].voice)};${JS_MORE}
 ${REPORT_JS}${INSTALL_JS}${VOTE_JS}<\/script><script>${JS_DP}<\/script><script>${V6_JS}<\/script></body></html>`;
 }
-var html = (body, status = 200, cache = "public, max-age=600, s-maxage=86400") => new Response(frTypo(body), {
+var html = (body, status = 200, cache = "public, max-age=600, s-maxage=86400") => new Response(uiL10n(frTypo(body)), {
 	status,
 	headers: {
 		"content-type": "text/html; charset=utf-8",
