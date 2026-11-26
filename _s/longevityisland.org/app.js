@@ -14,6 +14,8 @@
   var C=['United Kingdom','Australia','Singapore','Netherlands','Germany','Switzerland','Austria','Ireland','United States','Canada','New Zealand','Hong Kong','United Arab Emirates','Saudi Arabia','Qatar','South Korea','Japan','Taiwan','China','Malaysia','Indonesia','Thailand','Philippines','India','France','Belgium','Luxembourg','Denmark','Sweden','Norway','Finland','Spain','Portugal','Italy','Poland','Czechia','Greece','Israel','Turkey','Mexico','Brazil','Argentina','Chile','Colombia','Other'];
   var co=$('co');co.innerHTML='<option value="">Select</option>'+C.map(function(x){return '<option>'+x+'</option>'}).join('');
   try{var lm={'en-gb':'United Kingdom','en-au':'Australia','en-sg':'Singapore','nl':'Netherlands','nl-nl':'Netherlands','de':'Germany','de-de':'Germany','de-ch':'Switzerland','de-at':'Austria','en-ie':'Ireland','en-us':'United States','en-ca':'Canada','en-nz':'New Zealand','es':'Spain','es-es':'Spain','fr':'France','fr-fr':'France','it':'Italy','id':'Indonesia','ja':'Japan','ko':'South Korea','zh-hk':'Hong Kong','zh-tw':'Taiwan'};var g=lm[(navigator.language||'').toLowerCase()];if(g)co.value=g}catch(e){}
+  // email language from browser
+  try{var bl=(navigator.language||'en').slice(0,2).toLowerCase();if(['es','de','nl','fr','it'].indexOf(bl)>-1)$('lg').value=bl}catch(e){}
   // total
   function radio(n){var x=document.querySelector('input[name="'+n+'"]:checked');return x?x.value:''}
   document.querySelectorAll('input[name="wk"]').forEach(function(r){r.addEventListener('change',function(){$('tot').textContent='€'+(6500*+radio('wk')).toLocaleString('en-GB')})});
@@ -25,7 +27,7 @@
   document.querySelectorAll('#rf input[type=radio]').forEach(function(r){r.addEventListener('change',sum)});
   // draft
   var F=['fn','em','co','wa'];try{var d=JSON.parse(LS.get('lik_draft')||'null');if(d)F.forEach(function(k){if(d[k])$(k).value=d[k]})}catch(e){}
-  $('rf').addEventListener('input',function(){var d={};F.forEach(function(k){d[k]=$(k).value});LS.set('lik_draft',JSON.stringify(d))});
+  $('rf').addEventListener('input',function(e){if(e.target&&e.target.classList){e.target.classList.remove('bad');e.target.removeAttribute('aria-invalid')}var d={};F.forEach(function(k){d[k]=$(k).value});LS.set('lik_draft',JSON.stringify(d))});
   // inline validation
   $('em').addEventListener('blur',function(){this.classList.toggle('bad',!!this.value&&!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(this.value))});
   $('fn').addEventListener('blur',function(){this.classList.toggle('bad',!!this.value&&this.value.trim().length<2)});
@@ -45,17 +47,18 @@
   // submit
   var LIVE=/(^|\.)longevityisland\.(org|com)$/.test(location.hostname);
   var SB={url:location.origin+'/__sb/lacliniqueswiss',key:'sb_publishable_WWMM9pbZfP4hJosLJlTobg_lWFGoJ3X'};
-  function err(t){var o=$('out');o.hidden=false;o.className='msg err';o.textContent=t}
+  function err(t,f){var o=$('out');o.hidden=false;o.className='msg err';o.textContent=t;if(f){var el=$(f);el.classList.add('bad');el.setAttribute('aria-invalid','true');el.focus()}}
   $('rf').addEventListener('submit',function(e){
     e.preventDefault();$('out').hidden=true;
     var name=$('fn').value.trim(),em=$('em').value.trim(),c=co.value;
-    if(name.length<2)return err('Please add your full name.');
-    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em))return err('Please check your email, it should look like name@example.com.');
-    if(!c){$('co').classList.add('bad');return err('Please choose your country.')}
-    if(!$('ok').checked)return err('Please tick the box so we can email you about your reservation.');
+    if(name.length<2)return err('Please add your full name.','fn');
+    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em))return err('Please check your email, it should look like name@example.com.','em');
+    if(!c)return err('Please choose your country.','co');
+    var wv=$('wa').value.trim();if(wv&&!/^\+?[0-9][0-9 ()-]{6,18}$/.test(wv))return err('Please check your WhatsApp number, with country code, for example +44 7700 900123. Or leave it empty.','wa');
+    if(!$('ok').checked)return err('Please tick the box so we can email you about your reservation.','ok');
     if($('website').value)return;
     var ref='LI-K-'+Math.random().toString(36).slice(2,6).toUpperCase();
-    var row={name:name,email:em,phone:$('wa').value.trim()||null,consent:true,source:'karimunjawa/reserve',message:JSON.stringify({ref:ref,country:c,weeks:+radio('wk'),season:radio('se'),price_eur:6500*+radio('wk'),attr:a||{}})};
+    var row={name:name,email:em,phone:$('wa').value.trim()||null,consent:true,source:'karimunjawa/reserve',message:JSON.stringify({ref:ref,country:c,weeks:+radio('wk'),season:radio('se'),lang:$('lg').value,price_eur:6500*+radio('wk'),attr:a||{}})};
     var b=$('sb');b.disabled=true;b.textContent='Reserving your week…';
     (LIVE?fetch(SB.url+'/rest/v1/dossier_leads',{method:'POST',headers:{apikey:SB.key,Authorization:'Bearer '+SB.key,'Content-Type':'application/json',Prefer:'return=minimal'},body:JSON.stringify(row)}).then(function(r){if(!r.ok)throw 0}):Promise.resolve()).then(function(){
       $('rf').hidden=true;$('done').hidden=false;$('refno').textContent=ref;LS.set('lik_ref',ref);LS.set('lik_draft','');var ce=new Date(Date.now()+14*864e5);$('coolend').textContent=ce.toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'});
