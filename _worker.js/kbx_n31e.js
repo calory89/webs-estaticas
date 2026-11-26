@@ -489,6 +489,17 @@ export async function handle(req, u, env, ctx, shell) {
   const m = p.match(/^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?(tools\/[a-z-]+|satellite\/monthly|watch\/new-websites|app)(\/?)$/); if (!m) return null;
   if (!m[3]) return new Response(null, { status: 301, headers: { location: p + '/' + u.search, 'cache-control': 'public, max-age=86400' } });
   const lang = m[1] || 'en', k = m[2].replace(/^tools\//, '');
+  // n40 k14: pages that do not depend on the query are kept built at the edge for 15 minutes (per deployment). Under parallel load a cold
+  // isolate that built /satellite/monthly/ read the 16 MB project file for every page at once and went over its memory limit (500s).
+  const ck = !u.search && req.method === 'GET' && STATIC31.has(k) && typeof caches !== 'undefined' ? new Request(ORIGIN + '/__n31e/' + N31V + '.' + String((env && env.CF_PAGES_COMMIT_SHA) || '').slice(0, 10) + p) : null;
+  if (ck) { try { const hit = await caches.default.match(ck); if (hit) return new Response(hit.body, { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=600', 'x-n31e-cache': 'hit' } }); } catch (e) {}
+    const r = await build31(req, u, env, ctx, shell, lang, k);
+    if (r && r.status === 200 && ctx && ctx.waitUntil) { const c = r.clone(); ctx.waitUntil(caches.default.put(ck, new Response(c.body, { headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=900' } })).catch(() => {})); }
+    return r; }
+  return build31(req, u, env, ctx, shell, lang, k);
+}
+const STATIC31 = new Set(['find-listing', 'handover-history', 'visa-by-investment', 'inheritance', 'foreign-mortgages', 'translate', 'receipt-check', 'satellite/monthly', 'watch/new-websites', 'app']);
+async function build31(req, u, env, ctx, shell, lang, k) {
   try {
     if (k === 'find-listing' || k === 'handover-history') return await page(lang, shell, k, '/tools/' + k + '/', findPage(lang, k));
     if (k === 'visa-by-investment') return await page(lang, shell, k, '/tools/' + k + '/', await visaPage(env, lang), { type: 'WebPage' });

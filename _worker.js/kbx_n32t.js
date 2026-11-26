@@ -42,8 +42,19 @@ export async function localSet(env, lang) {
   const M = await manifest(env), S = new Set(OTHER);
   for (const [k, L] of Object.entries(M.pages || {})) if (L.includes(lang)) S.add('/' + k + '/');
   // country and market pages exist in the other languages only with 5+ named projects (kbx_n29i): link those, keep the rest in English
-  try { const { mdata } = await import('./kbx_n29i.js'), D = await mdata(env); for (const c of D.C.keys()) S.add('/countries/' + c + '/'); for (const k of D.M.keys()) S.add('/m/' + k + '/'); } catch (e) {}
+  try { const K = await placeKeys(env); for (const c of K.c) S.add('/countries/' + c + '/'); for (const k of K.m) S.add('/m/' + k + '/'); } catch (e) {}
   return S;
+}
+// n40 k14: the country and market keys (a few KB) are kept per isolate and at the edge for an hour, so a translated tool or registers
+// page no longer parses the 16 MB project file on a cold isolate (parallel crawls of these pages went over the memory limit: 500s).
+let PK = null;
+async function placeKeys(env) {
+  if (PK && Date.now() - PK.t < 3600000) return PK;
+  const ck = typeof caches !== 'undefined' ? new Request(ORIGIN + '/__n32t/place-keys/' + String((env && env.CF_PAGES_COMMIT_SHA) || '').slice(0, 10)) : null;
+  if (ck) { try { const hit = await caches.default.match(ck); if (hit) { const j = await hit.json(); if (j && Array.isArray(j.c) && Array.isArray(j.m)) return (PK = { t: Date.now(), c: j.c, m: j.m }); } } catch (e) {} }
+  const { mdata } = await import('./kbx_n29i.js'), D = await mdata(env), v = { t: Date.now(), c: [...D.C.keys()], m: [...D.M.keys()] };
+  if (ck) { try { await caches.default.put(ck, new Response(JSON.stringify({ c: v.c, m: v.m }), { headers: { 'content-type': 'application/json', 'cache-control': 'public, max-age=3600' } })); } catch (e) {} }
+  return (PK = v);
 }
 const FIXED = /^\/(?:|countries\/[a-z0-9-]+\/(?:how-to-check|is-it-safe|buyer-protection-law)\/|rankings\/most-delayed\/(?:[a-z0-9-]+\/)?|check\/?|pricing\/|how-we-score\/|about\/|checklist\/|database\/|cases\/|apply\/|tools\/|glossary\/|docs\/|projects\/(?:[a-z0-9-]{1,90}\/)?|developers\/(?:[a-z0-9-]{1,90}\/)?|countries\/|rankings\/(?:[a-z0-9-]{2,60}\/)?|guides\/buyers-from\/(?:[a-z]+\/)?|guides\/buying-off-plan\/(?:[a-z0-9-]+\/)?|reports\/month\/|satellite\/monthly\/|watch\/new-websites\/|app\/)$/;
 function locHref(h, lang, LS) {

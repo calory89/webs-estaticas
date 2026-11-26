@@ -21012,7 +21012,7 @@
    "updated": "2026-11-25",
    "market": "Saint Lucia",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 1,
+   "projects": 2,
    "title": {
     "leasehold": 0,
     "known": 1
@@ -21033,23 +21033,23 @@
     "yes": 0,
     "known": 0
    },
-   "guaranteed_language": 0,
+   "guaranteed_language": 1,
    "permit_claims": 1,
    "permit_numbers_published": 0,
    "plans_published": 0,
    "price_usd": {
-    "known": 0,
-    "median": null,
-    "min": null,
-    "max": null
+    "known": 1,
+    "median": 559000.0,
+    "min": 559000.0,
+    "max": 559000.0
    },
    "yield": {
-    "known": 0,
-    "median": null,
-    "max": null
+    "known": 1,
+    "median": 8,
+    "max": 8
    },
    "completion": {
-    "2026": 1
+    "2026": 2
    },
    "runs": [
     {
@@ -22625,136 +22625,6 @@
    },
    "completion": {
     "unknown": 2
-   },
-   "runs": [
-    {
-     "date": "2026-11-04",
-     "mode": "ai",
-     "pages_ok": 678,
-     "pages_failed": 81,
-     "changes": 39
-    },
-    {
-     "date": "2026-11-04",
-     "mode": "ai",
-     "pages_ok": 656,
-     "pages_failed": 78,
-     "changes": 14
-    },
-    {
-     "date": "2026-11-05",
-     "mode": "ai",
-     "pages_ok": 543,
-     "pages_failed": 75,
-     "changes": 54
-    },
-    {
-     "date": "2026-11-05",
-     "mode": "ai",
-     "pages_ok": 645,
-     "pages_failed": 84,
-     "changes": 48
-    },
-    {
-     "date": "2026-11-05",
-     "mode": "ai",
-     "pages_ok": 72,
-     "pages_failed": 4,
-     "changes": 1
-    },
-    {
-     "date": "2026-11-05",
-     "mode": "ai",
-     "pages_ok": 803,
-     "pages_failed": 113,
-     "changes": 38
-    },
-    {
-     "date": "2026-11-05",
-     "mode": "ai",
-     "pages_ok": 8,
-     "pages_failed": 2,
-     "changes": 0
-    },
-    {
-     "date": "2026-11-06",
-     "mode": "ai",
-     "pages_ok": 160,
-     "pages_failed": 91,
-     "changes": 0
-    },
-    {
-     "date": "2026-11-07",
-     "mode": "ai",
-     "pages_ok": 33,
-     "pages_failed": 91,
-     "changes": 0
-    },
-    {
-     "date": "2026-11-15",
-     "mode": "ai",
-     "pages_ok": 36,
-     "pages_failed": 87,
-     "changes": 0
-    },
-    {
-     "date": "2026-11-20",
-     "mode": "ai",
-     "pages_ok": 28,
-     "pages_failed": 87,
-     "changes": 0
-    },
-    {
-     "date": "2026-11-25",
-     "mode": "seed",
-     "pages_ok": 0,
-     "pages_failed": 0,
-     "changes": 0
-    }
-   ]
-  },
-  "St Lucia": {
-   "updated": "2026-11-25",
-   "market": "St Lucia",
-   "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 1,
-   "title": {
-    "leasehold": 0,
-    "known": 0
-   },
-   "lease": {
-    "known": 0,
-    "median": null,
-    "min": null,
-    "max": null,
-    "hist": {
-     "under 30": 0,
-     "30 to 34": 0,
-     "35 to 39": 0,
-     "40 or more": 0
-    }
-   },
-   "extension_promised": {
-    "yes": 0,
-    "known": 0
-   },
-   "guaranteed_language": 1,
-   "permit_claims": 0,
-   "permit_numbers_published": 0,
-   "plans_published": 0,
-   "price_usd": {
-    "known": 1,
-    "median": 559000.0,
-    "min": 559000.0,
-    "max": 559000.0
-   },
-   "yield": {
-    "known": 1,
-    "median": 8,
-    "max": 8
-   },
-   "completion": {
-    "2026": 1
    },
    "runs": [
     {
