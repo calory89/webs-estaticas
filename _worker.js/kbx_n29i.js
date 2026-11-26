@@ -1,6 +1,6 @@
 // comments: _notes/kolaboro-worker-comments.txt
 import { TB } from './kbx_strings.js';
-import { data as namedData, handoverOf, overdueOf, OV_MIN, lastmod, esc, pre, fd } from './kbx_named.js';
+import { data as namedData, handoverOf, overdueOf, movedOf, OV_MIN, lastmod, esc, pre, fd } from './kbx_named.js';
 import { trData } from './kbx_tr.js';
 import { TR_PLACES, inPlace } from './kbx_tr_places.js';
 import { BUY_PLACES } from './kbx_buy_i18n.js';
@@ -21,7 +21,8 @@ const nf = (lang, n) => Number(n).toLocaleString(LOC[lang] || 'en-GB');
 const pct = (a, b) => b ? Math.round(a / b * 100) : 0;
 const med = a => { const s = a.filter(v => v != null).sort((x, y) => x - y); return s.length ? (s.length % 2 ? s[(s.length - 1) / 2] : Math.round((s[s.length / 2 - 1] + s[s.length / 2]) / 2)) : null; };
 const T = TB.kbx_n29i_T ;
-const t = (lang, k, v) => { let s = (T[lang] && T[lang][k] != null) ? T[lang][k] : T.en[k]; if (Array.isArray(s)) return s; if (v) s = String(s).replace(/\{(\w+)\}/g, (m, a) => v[a] != null ? v[a] : m); return s.replace(/\.\.(?=\s|$)/g, '.'); };
+const frIn = p => { const k = String(p).replace(/<[^>]+>/g, ''), q = String((TB.kbx_n29i_CTR.frp || {})[k] || 'à').split('|'); return q[0] + ' ' + (q[1] ? String(p).replace(k, q[1]) : p); };   // n40 k24: en Pologne, au Portugal, aux Philippines, à Dubaï
+const t = (lang, k, v) => { let s = (T[lang] && T[lang][k] != null) ? T[lang][k] : T.en[k]; if (Array.isArray(s)) return s; if (v && lang === 'fr' && v.p != null) s = String(s).replace(/à \{p\}/g, () => frIn(v.p)); if (v) s = String(s).replace(/\{(\w+)\}/g, (m, a) => v[a] != null ? v[a] : m); return s.replace(/\.\.(?=\s|$)/g, '.'); };
 const th = (lang, k, v) => { const e = {}; for (const a in (v || {})) e[a] = v[a] && v[a].__html ? v[a].__html : esc(v[a]); return t(lang, k, e); };
 const H = s => ({ __html: s });
 let MD = null;
@@ -37,7 +38,7 @@ const stats = L => {
     const H = L.map(x => [x, handoverOf(ix, x)]).filter(e => e[1]), ys = new Map();
     for (const [, h] of H) { const y = hyear(h.d); if (y) ys.set(y, (ys.get(y) || 0) + 1); }
     const yTop = [...ys.entries()].sort((a, b) => b[1] - a[1] || a[0] - b[0])[0] || null;
-    const mv = L.filter(x => { const h = (ix.prom[x.id] || []).find(p => p.k === 'handover'); return h && h.mv > 0; }).length;
+    const mv = L.filter(x => movedOf(ix, x)).length;
     const OV = L.map(x => [x, overdueOf(ix, x)]).filter(e => e[1]);
     const lm = L.map(x => lastmod(ix, x)).sort().pop() || String(ix.updated || '').slice(0, 10);
     return { n, devs, dv: devs.size, pn: L.filter(permit).length, permit, h: H.length, ys, yTop, mv, OV, ov: OV.length, med: med(L.map(x => score(x.id))), lm };
@@ -62,8 +63,8 @@ const v = { p, n: nf(lang, st.n), dv: nf(lang, st.dv), d };
 const CT = { en: TB.kbx_n29i__t.k0, es: TB.kbx_n29i__t.k1, fr: TB.kbx_n29i__t.k2, de: TB.kbx_n29i__t.k3, nl: TB.kbx_n29i__t.k4, ru: TB.kbx_n29i__t.k5, zh: '{p}期房项目：按市场与开发商', ar: TB.kbx_n29i__t.k6 };
 let title = isC && (D.M.has(slugM(mk)) || [...D.M.values()].some(o => mkName(o.mk, lang) === p)) ? (CT[lang] || CT.en).replace('{p}', p) : t(lang, 'm_t', v), desc = t(lang, 'm_desc', v);
 const C40 = TB.kbx_n29i_CTR; if (!isC && C40.s && C40.s.includes(slugA(mk))) {
-const w = Object.assign({}, v, { pn: nf(lang, st.pn), pp: nf(lang, pct(st.pn, st.n)), ov: nf(lang, st.ov), y: st.yTop ? st.yTop[0] : '' }), fl = x => String(x).replace(/\{(\w+)\}/g, (q, a) => w[a] != null ? w[a] : q);
-const G = k => C40[k][lang] || C40[k].en, tt = (pct(st.pn, st.n) >= 50 ? G('t') : st.yTop ? G('ty') : []).concat(G('tn')).map(fl).find(x => x.length <= (lang === 'ru' ? 58 : 60));  if (tt) title = tt; desc = fl((C40.d[lang] || C40.d.en)[st.yTop ? 0 : 1]).replace(/\.\.(?=\s|$)/g, '.'); }
+const w = Object.assign({}, v, { pn: nf(lang, st.pn), pp: nf(lang, pct(st.pn, st.n)), ov: nf(lang, st.ov), y: st.yTop ? st.yTop[0] : '' }), fl = x => String(x).replace(/à \{p\}/g, q => lang === 'fr' ? frIn(w.p) : q).replace(/\{(\w+)\}/g, (q, a) => w[a] != null ? w[a] : q);
+const G = k => C40[k][lang] || C40[k].en, tt = (pct(st.pn, st.n) >= 50 ? G('t') : st.yTop ? G('ty') : []).concat(G('tn')).map(fl).find(x => x.length <= (lang === 'ru' ? 58 : 60));  if (tt) title = tt; desc = fl((C40.d[lang] || C40.d.en)[st.yTop ? 0 : 1]).replace(/\.\.(?=\s|$)/g, '.'); if (desc.length > 160) { const D2 = (C40.d[lang] || C40.d.en).map(x => fl(x).replace(/\.\.(?=\s|$)/g, '.')); desc = D2.find(x => x.length <= 160) || D2[D2.length - 1]; let i; while (desc.length > 160 && (i = desc.lastIndexOf('. ', desc.length - 2)) > 0) desc = desc.slice(0, i + 1); } }   // n40 k24: descriptions capped at 160 characters (the variant without the main handover year first, then whole sentences only)
 const TRP = TR_PLACES.filter(P => !P.coi && (isC ? (CO_AL[P.co] || P.co) === m.co : P.m.includes(mk)) && D.tri && D.tri.places.get(P.s) && D.tri.places.get(P.s).n);
 const BUY = BUY_PLACES.filter(P => isC ? (CO_AL[P.c] || P.c) === m.co : (TRP.some(q => q.s === P.s) || slugA(mk) === P.s));
 const rows = L.slice().sort((a, b) => (D.score(b.id) ?? -1) - (D.score(a.id) ?? -1) || a.n.localeCompare(b.n)).map(x => {

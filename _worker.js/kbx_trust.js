@@ -180,10 +180,11 @@ const out = [];
 for (const [s, pl] of ix.places) { if (s === 'sumba' || !pl.P || pl.L.some(r => r.sumba)) continue; out.push(pl); }
 return out.sort((a, b) => b.n - a.n || a.P.n.localeCompare(b.P.n));
 }
+let OTP = null;   // n40 k24: moved and past counts from /data/on-time.json (the file behind /data/delay-index.json), so press, market files and rankings agree
 function placeFigures(pl) {
 const L = pl.L, n = L.length, cnt = k => L.filter(r => r.comp[k] && r.comp[k].st === 'yes').length;
 return { n, dv: new Set(L.map(r => r.dvs || r.dv).filter(Boolean)).size, date: cnt('date'), permit: cnt('permit'), deposit: cnt('deposit'), location: cnt('location'), price: cnt('price'),
-moved: L.filter(r => ['moved', 'late'].includes(r.comp.record && r.comp.record.r)).length, past: L.filter(r => r.comp.record && r.comp.record.r === 'past').length, med: pl.ranked ? pl.med : null };
+moved: OTP ? L.filter(r => (OTP[r.id] || {}).moved > 0).length : L.filter(r => ['moved', 'late'].includes(r.comp.record && r.comp.record.r)).length, past: OTP ? L.filter(r => { const o = OTP[r.id]; return o && o.overdue > 0 && !/^(done_|completed)/.test(o.s || ''); }).length : L.filter(r => r.comp.record && r.comp.record.r === 'past').length, med: pl.ranked ? pl.med : null };
 }
 function pressHub(ix, lang) {
 const P = pressPlaces(ix).filter(pl => pl.n >= MIN_PRESS);
@@ -261,7 +262,8 @@ export async function page(req, u, env, ctx, shell, inner) {
   if (kind === 'moderation' || kind === 'team') { const k = lang + '|' + kind; pg = BODY.get(k); if (!pg) { pg = kind === 'team' ? teamPage(lang) : moderationPage(lang); BODY.set(k, pg); } }
   else if (kind.startsWith('press/places')) {
     let ix; try { ix = await trData(env); } catch (e) { return null; }
-    const slug = kind.split('/')[2] || null, k = lang + '|p|' + (slug || '#') + '|' + ix.v;
+    try { const N = await import('./kbx_named.js'), nx = await N.data(env); if (nx.ot && Object.keys(nx.ot).length) OTP = nx.ot; } catch (e) {}
+    const slug = kind.split('/')[2] || null, k = lang + '|p|' + (slug || '#') + '|' + ix.v + '|' + (OTP ? 1 : 0);
     pg = BODY.get(k); if (!pg) { pg = slug ? pressPlace(ix, slug, lang) : pressHub(ix, lang); if (!pg) return null; if (BODY.size > 900) BODY.clear(); BODY.set(k, pg); }
   } else {
     let D; try { D = await progData(env, inner); } catch (e) { return null; }

@@ -1,5 +1,5 @@
 // comments: _notes/kolaboro-worker-comments.txt
-import { data as namedData, handoverOf, overdueOf, OV_MIN, esc, pre, fd, okHttp, isListing } from './kbx_named.js';
+import { data as namedData, handoverOf, overdueOf, movedOf, OV_MIN, esc, pre, fd, okHttp, isListing } from './kbx_named.js';
 import { trData } from './kbx_tr.js';
 import { mkName, hyear } from './kbx_hdate.js';
 import { TB } from './kbx_strings.js';
@@ -68,7 +68,7 @@ const ix = M.ix, L = M.g.get(mk) || [], n = L.length; if (!n) return '';
 const devs = new Set(L.map(x => x.dvs || x.dv).filter(Boolean)).size, pn = L.filter(x => x.pn).length, H = L.map(x => handoverOf(ix, x)).filter(Boolean), hN = H.length;
 const ys = new Map(); for (const h of H) { const y = hyear(h.d); if (y) ys.set(y, (ys.get(y) || 0) + 1); }
 const yTop = [...ys.entries()].sort((a, b) => b[1] - a[1] || a[0] - b[0])[0];
-const mv = L.filter(x => { const h = (ix.prom[x.id] || []).find(p => p.k === 'handover'); return h && h.mv > 0; }).length, ov = L.filter(x => overdueOf(ix, x)).length;
+const mv = L.filter(x => movedOf(ix, x)).length, ov = L.filter(x => overdueOf(ix, x)).length;
 const pr = L.filter(x => (x.fx || {}).price_min).length, own = L.filter(x => okHttp(x.url) && !isListing(x.url)).length;
 const sc = M.tri ? L.map(x => { const r = M.tri.rows.get(x.id); return r ? r.score : null; }).filter(v => v != null).sort((a, b) => a - b) : [];
 const med = sc.length ? (sc.length % 2 ? sc[(sc.length - 1) / 2] : Math.round((sc[sc.length / 2 - 1] + sc[sc.length / 2]) / 2)) : null;

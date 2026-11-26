@@ -22,7 +22,7 @@ async function file(env, name, ttl) {
 }
 const ymIdx = s => { const m = /^(\d{4})-(\d{2})/.exec(s || ''); return m ? +m[1] * 12 + (+m[2] - 1) : null; };
 function late(ot, x) {
-const p = ot && ot.projects && ot.projects[x.id]; if (!p || !p.first) return null;
+const p = ot && ot.projects && ot.projects[x.id]; if (!p || !p.first || /^(done_|completed)/.test(p.s || '')) return null;
 const now = ymIdx((ot.as_of_month || '') + '-01'), f = ymIdx(p.first + '-01'); if (now == null || f == null) return null;
 return { late: now - f, first: p.first, moved: p.moved || 0 };
 }

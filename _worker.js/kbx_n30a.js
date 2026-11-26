@@ -34,13 +34,13 @@ if (c0 && c0.day === day) return c0;
 const per = new Map(), mk = new Map(), all = { late: [], done: 0, notdue: 0, nodate: 0, k: 0 };
 for (const x of ix.P) {
 if (COI_RX.test(String(x.n || '') + ' ' + String(x.dv || ''))) continue;
-const c = ix.caseBy.get(x.id) || {}, st = c.stage || x.st, f = firstOf(ix, x, handoverOf);
+const c = ix.caseBy.get(x.id) || {}, st = c.stage || x.st, o = ix.ot && ix.ot[x.id];   // n40 k24: first handover date on record from /data/on-time.json, the same rule as /data/delay-index.json (past_first)
 const M = mk.get(x.mk) || { mk: x.mk, co: x.co, late: [], done: 0, notdue: 0, nodate: 0, k: 0 }; mk.set(x.mk, M);
 M.k++; all.k++;
-if (st === 'completed') { M.done++; all.done++; continue; }
-if (!f) { M.nodate++; all.nodate++; continue; }
-const fi = mIdx(f.k); if (fi == null) { M.nodate++; all.nodate++; continue; }
-if (fi < nowI) { const m = nowI - fi; M.late.push(m); all.late.push(m); per.set(x.id, { m, f }); } else { M.notdue++; all.notdue++; }
+if (st === 'completed' || (o && /^(done_|completed)/.test(o.s || ''))) { M.done++; all.done++; continue; }
+if (!o || !o.first) { M.nodate++; all.nodate++; continue; }
+const aq = String(ix.otAsOf || '').split('-').map(Number), fq = o.first.split('-').map(Number), lm = aq.length === 2 ? aq[0] * 12 + aq[1] - (fq[0] * 12 + fq[1]) : 0, fl = lm > 0 ? { m: lm, first: o.first, raw: ['January','February','March','April','May','June','July','August','September','October','November','December'][fq[1] - 1] + ' ' + fq[0] } : null;
+if (fl) { const m = fl.m; M.late.push(m); all.late.push(m); per.set(x.id, { m, f: { k: fl.first, raw: fl.raw, how: 'read' } }); } else { M.notdue++; all.notdue++; }
 }
 const row = M => ({ mk: M.mk, co: M.co, n: M.late.length, med: q7(M.late, .5), p25: q7(M.late, .25), p75: q7(M.late, .75), min: M.late.length ? Math.min(...M.late) : null, max: M.late.length ? Math.max(...M.late) : null, notdue: M.notdue, done: M.done, nodate: M.nodate, tracked: M.k });
 const rows = [...mk.values()].map(row).sort((a, b) => b.n - a.n || String(a.mk).localeCompare(String(b.mk)));

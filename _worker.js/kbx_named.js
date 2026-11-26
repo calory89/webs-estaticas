@@ -42,7 +42,7 @@ import { dldKf, wbLine, wayback as wbData, setLive as aliasLive } from './kbx_n3
 import { TB } from './kbx_strings.js';
 const ORIGIN = 'https://kolaboro.com';
 const RESERVED = new Set(['benchmark', 'reply', 'self-check', 'templates', 'index', 'index.html']);
-const CACHE_V = 'named-v158';
+const CACHE_V = 'named-v159';   // v159: overdue, moved and past-first counts from /data/on-time.json on every page; Mevacity Alanya counted in Alanya (n40 k24);
 export const OPINION_RX = /\b(scam\w*|fraud\w*|ponzi|swindl\w*|rip-?off|avoid\w*|beware|dodgy|shady|crook\w*|estafa\w*|fraude\w*|timo|timador\w*|betrug\w*|betrüg\w*|abzocke\w*|arnaque\w*|escroquer\w*|escroc\w*|oplichting|oplichter\w*|bedrog\w*)\b|мошен|обман|афер|骗局|诈骗|欺诈|احتيال|نصب/i;
 let MEMO = {};
 const SHARED = (globalThis.__kbJson = globalThis.__kbJson || {}), LOADING = {};
@@ -81,7 +81,7 @@ async function data(env) {
 const [named, cases] = await Promise.all([loadJson(env, 'named.json'), loadJson(env, 'bali-cases.json')]);
 if (IDX && IDX.named === named && IDX.cases === cases) return IDX;
 const opt = n => loadJson(env, n).catch(() => ({}));
-const [prom, find, sim, delay] = await Promise.all([opt('promises.json'), opt('findings-by-project.json'), opt('similar.json'), opt('delay-index.json')]);
+const [prom, find, sim, delay, ot] = await Promise.all([opt('promises.json'), opt('findings-by-project.json'), opt('similar.json'), opt('delay-index.json'), opt('on-time.json')]);
 const caseBy = new Map((cases.cases || []).map(c => [c.id, c]));
 const P = (named.projects || []).filter(x => caseBy.has(x.id) && !COI_MARKETS.has(String(x.mk || '').toLowerCase()));
 for (const x of P) if (x.n) { const c = cleanName(x.n); if (c !== x.n) { RAWN.set(x, x.n); x.n = c; } }
@@ -95,7 +95,7 @@ m.k++; if (reviewed(c)) m.rv = (m.rv || 0) + 1; if ((c.checks || {}).permit === 
 for (const d of devs.values()) { const c = new Map(); for (const id of d.ids) { const v = byId.get(id).dv; if (v) c.set(v, (c.get(v) || 0) + 1); } let b = d.n, bn = 0; for (const [v, k] of c) if (k > bn) { b = v; bn = k; } d.n = b; }
 const dmk = new Map(((delay && delay.markets) || []).map(m => [m.market, m]));
 aliasLive(named.aliases);
-IDX = { named, cases, P, byId, bySlug, devs, caseBy, mk, dmk, byAr, sat: null, prom: (prom && prom.projects) || {}, find: (find && find.projects) || {}, sim: (sim && sim.projects) || {}, updated: cases.updated || named.updated };
+IDX = { named, cases, P, byId, bySlug, devs, caseBy, mk, dmk, byAr, sat: null, prom: (prom && prom.projects) || {}, find: (find && find.projects) || {}, sim: (sim && sim.projects) || {}, ot: (ot && ot.projects) || {}, otAsOf: (ot && ot.as_of_month) || '', updated: cases.updated || named.updated };
 return IDX;
 }
 const esc = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -191,14 +191,22 @@ const f = (x.fx || {}).handover_promised; if (f) return { d: f, p: null };
 const c = ix.caseBy.get(x.id); if (c && c.done) return { d: String(c.done), p: null };
 return null;
 }
+// n40 k24: one definition per figure, read from /data/on-time.json (the file behind /data/delay-index.json), so every page agrees:
+// overdueOf = (a) not completed and the currently published handover date has passed; firstLateOf = (b) not completed and past the first handover date on record
+const OT_DONE = /^(done_|completed)/;
 export function overdueOf(ix, x, now) {
-const ho = handoverOf(ix, x); if (!ho) return null;
-const c = ix.caseBy.get(x.id) || {}, st = c.stage || x.st;
-if (st === 'completed' || (ho.p && ho.p.st === 'kept')) return null;
-const k = hkey(ho.d); if (!k) return null;
-const d = now || new Date(), [y, m] = k.split('-').map(Number), n = d.getUTCFullYear() * 12 + d.getUTCMonth() + 1 - (y * 12 + m);
-return n >= 1 ? { m: n, d: ho.d, end: k, st } : null;
+const o = ix.ot && ix.ot[x.id]; if (!o || !(o.overdue > 0) || OT_DONE.test(o.s || '')) return null;
+const c = ix.caseBy.get(x.id) || {}, st = c.stage || x.st; if (st === 'completed') return null;
+const ho = handoverOf(ix, x), k = ho && hkey(ho.d), cur = o.cur || '';
+return { m: o.overdue, d: k && k <= cur ? ho.d : ymTxt(cur), end: cur, st };
 }
+const ymTxt = k => { const q = String(k || '').split('-'); return q.length === 2 ? ['January','February','March','April','May','June','July','August','September','October','November','December'][+q[1] - 1] + ' ' + q[0] : String(k || ''); };
+export function firstLateOf(ix, x) {
+const o = ix.ot && ix.ot[x.id]; if (!o || !o.first || OT_DONE.test(o.s || '') || !ix.otAsOf) return null;
+const [y, m] = ix.otAsOf.split('-').map(Number), [fy, fm] = o.first.split('-').map(Number), n = y * 12 + m - (fy * 12 + fm);
+return n > 0 ? { m: n, first: o.first, raw: ymTxt(o.first), cur: o.cur } : null;
+}
+export const movedOf = (ix, x) => { const o = ix.ot && ix.ot[x.id]; return !!(o && o.moved > 0); };
 const OVM = new WeakMap();
 export function overdueByMarket(ix) { let M = OVM.get(ix); if (!M) { M = new Map(); for (const x of ix.P) if (overdueOf(ix, x)) M.set(x.mk, (M.get(x.mk) || 0) + 1); OVM.set(ix, M); } return M; }
 export const OV_MIN = 2;
