@@ -399,7 +399,9 @@ export async function render(req, res, u, env, ctx) {
   const cssM = html.match(/href="(\/assets\/index-[A-Za-z0-9_-]+\.css)"/);
   if (jsM) pre.push('<' + jsM[1] + '>; rel=modulepreload; crossorigin');
   if (cssM) pre.push('<' + cssM[1] + '>; rel=preload; as=style; crossorigin');
-  if (pre.length && !h.has('link')) h.set('link', pre.join(', '));
+  // T5 (27-nov): prerendered pages are readable before the app runs, so the app's code starts after the page
+  // has loaded (below) and is not preloaded here.
+  if (pre.length && !h.has('link') && !preHtml) h.set('link', pre.join(', '));
   if (page.noindex) h.set('x-robots-tag', 'noindex'); else h.delete('x-robots-tag');
   h.set('content-language', lang);
   // Security headers for every HTML page (no camera/mic/location use on the site; no framing by other sites).
@@ -442,6 +444,16 @@ export async function render(req, res, u, env, ctx) {
     .on('meta[name="twitter:image:alt"]', set('content', page.t))
     .on('head', { element(e) { e.append(headExtra, { html: true }); } })
     .on('div#root', { element(e) { e.setInnerContent(preHtml || body, { html: true }); } })
+    // T5: on prerendered pages, start the app after the load event instead of during parsing: the page is
+    // already drawn, and the code no longer competes with the first paint on slow phones.
+    .on('script[data-jm-route-preload]', { element(e) { if (preHtml) e.remove(); } })
+    .on('link[rel="modulepreload"]', { element(e) { if (preHtml) e.remove(); } })
+    .on('script[type="module"][src]', { element(e) {
+      if (!preHtml) return;
+      const src = e.getAttribute('src') || '';
+      if (!/^\/assets\/index-[A-Za-z0-9_-]+\.js$/.test(src)) return;
+      e.replace('<script>(function(){var go=function(){var s=document.createElement("script");s.type="module";s.crossOrigin="";s.src=' + JSON.stringify(src) + ';document.head.appendChild(s)};if(document.readyState==="complete")setTimeout(go,0);else addEventListener("load",function(){setTimeout(go,0)})})()</script>', { html: true });
+    } })
     .on('noscript', { element(e) { e.remove(); } })
     .transform(new Response(html, { status, headers: h }));
 }
