@@ -7,7 +7,7 @@
  "summary": {
   "datasets": 550,
   "files": 606,
-  "bytes": 167252766,
+  "bytes": 167179534,
   "contracts_pass": 71,
   "contracts_fail": 3,
   "api_operations": 70,
@@ -1875,9 +1875,9 @@
    ],
    "licence": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
    "described": true,
-   "bytes": 105810,
+   "bytes": 32578,
    "url": "https://kolaboro.com/data/journeys.json",
-   "sha256": "a14270fc331c12b2905810c65f0726dede92f8573bb1ba5debaa73f889efd91d",
+   "sha256": "c331e40853d91ad3ac6ad37defae2c57cd2960ae6d04b0764c1e1edbc4ff3b36",
    "http": 200,
    "media_type": "application/json",
    "format": "json",
@@ -1920,21 +1920,21 @@
    ],
    "contract": "pass",
    "schema_url": "https://kolaboro.com/api/x/data/schema/journeys.json",
-   "rows": 13,
+   "rows": 14,
    "rows_unit": "runs",
    "freshness": {
     "stamp_key": "updated",
-    "stamp": "2026-11-19T13:56:58.749Z",
+    "stamp": "2026-11-26T14:29:51.389Z",
     "date_only": false,
     "published_at": "2026-11-19T13:58:07Z",
-    "data_as_of": "2026-11-19T13:56:58Z",
+    "data_as_of": "2026-11-26T14:29:51Z",
     "target_hours": 216,
     "age_hours": 165.37,
     "event_driven": false,
     "probe": true,
     "status": "ok"
    },
-   "last_updated": "2026-11-19T13:56:58Z",
+   "last_updated": "2026-11-26T14:29:51Z",
    "frequency": "WEEKLY"
   },
   {
@@ -19846,9 +19846,9 @@
   }
  ],
  "refreshed": {
-  "at": "2026-11-26T14:26:26Z",
+  "at": "2026-11-26T14:33:41Z",
   "by": "https://kolaboro.com/open/catalog-refresh.py",
-  "datasets_changed": 0,
+  "datasets_changed": 1,
   "note": "Sizes, hashes, row counts and stamps of files changed since generated_at, read from the published files. Contracts, probes and freshness status are from generated_at."
  }
 }
