@@ -18,7 +18,7 @@
 //   register share per developer across markets with KPKT permits, /[l/]data/markets/ (markets compared on key facts and register share)
 // Sumba, Eco Beach City and Equinox are left out by the build.
 import * as N from './kbx_named.js';
-import { coName } from './kbx_hdate.js';
+import { coName, mkName } from './kbx_hdate.js';
 
 const ORIGIN = 'https://kolaboro.com';
 const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' };
@@ -408,6 +408,22 @@ function devSection(l, slug) {
     '<div class="n37-tw" tabindex="0" role="region" aria-label="' + esc(t(l, 'tw_l')) + '"><table><thead><tr><th scope="col">' + esc(t(l, 'th_f')) + '</th><th scope="col">' + esc(t(l, 'th_hold')) + '</th><th scope="col">' + esc(t(l, 'th_regs')) + '</th></tr></thead><tbody>' +
     F.map((f, i) => '<tr><th scope="row">' + fname(l, f) + '</th><td class="n">' + nf(c.h[i], l) + ' / ' + nf(rows.length, l) + '</td><td class="n">' + nf(c.g[i], l) + '</td></tr>').join('') + '</tbody></table></div>' +
     '<h3>' + esc(t(l, 'dv_list')) + '</h3>' + recList(l, thin) + devReg(l, slug) + '</div>';   // r9u: register share across markets, KPKT permits
+}
+// n40 R02-32: other developers in the developer's main market, 8 by number of projects tracked (most projects first)
+function peers(l, slug) {
+  const rows = IX.byDev.get(slug) || []; if (!rows.length) return ''; const c = new Map(); for (const r of rows) c.set(r[3], (c.get(r[3]) || 0) + 1);
+  const mk = [...c.entries()].sort((a, b) => b[1] - a[1])[0][0], n = new Map(); for (const r of IX.byMk.get(mk) || []) if (r[5] && r[5] !== slug) { const o = n.get(r[5]) || { s: r[5], d: r[6] || r[5], k: 0 }; o.k++; n.set(r[5], o); }
+  const L = [...n.values()].sort((a, b) => b.k - a.k || a.d.localeCompare(b.d)).slice(0, 8); if (!L.length) return '';
+  return '<div class="n37" id="n40-peers"' + dir(l) + '><h3>' + esc(tf(l, 'pe_h', { m: mkName(mk, l) })) + '</h3><ul class="n40-pe">' + L.map(o => '<li><a href="' + pre(l) + '/developers/' + o.s + '/">' + bdi(o.d) + '</a> <small>' + esc(tf(l, 'pe_n', { n: nf(o.k, l) })) + '</small></li>').join('') + '</ul></div>';
+}
+// n40 R02-33: the footer links the 8 strongest hubs in the page language (guides, FAQ and new projects added; data, yc, engineering and developers were English only)
+export async function foot(u, env, r) {
+  const l = (/^\/(es|de|fr|nl|ru|zh|ar)\//.exec(u.pathname) || [])[1] || 'en'; if (!T) T = await file(env, '/data/n37u-i18n.json'); if (!T) return r; let has = false;
+  const add = ['guides', 'faq', 'new'].map(k => '<li><a href="' + pre(l) + '/' + k + '/">' + esc(t(l, 'ft_' + k)) + '</a></li>').join('');
+  return new HTMLRewriter().on('footer a[href="/guides/"], footer a[href$="/faq/"]', { element() { has = true; } })
+    .on('footer a[hreflang="en"]', { element(e) { const h = e.getAttribute('href'); if (l !== 'en' && /^\/(?:data|yc|engineering|developers)\/$/.test(h)) { e.setAttribute('href', pre(l) + h); e.removeAttribute('hreflang'); } } })
+    .on('footer .fgrid > div:nth-child(4) > ul', { element(e) { if (!has) e.append(add, { html: true }); } })
+    .on('main', { element(e) { if (/^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?rankings\//.test(u.pathname)) e.append('<section class="wrap" id="n40-meth"' + dir(l) + '><div style="border:1px solid var(--line,#d9d9d9);border-radius:12px;padding:14px 16px;margin:24px 0"><h2 style="font-size:1.05rem;margin:0 0 6px">' + esc(t(l, 'mt_h')) + '</h2><p style="margin:0">' + esc(t(l, 'mt_p')) + ' <a href="' + pre(l) + '/how-we-score/">' + esc(t(l, 'mt_a')) + '</a></p></div></section>', { html: true }); } }).transform(r);   // n40 R02-40: method box on every rankings page
 }
 let STATS = null;
 async function stats(env) {
@@ -1164,7 +1180,7 @@ export async function inject(req, u, env, r) {
     else if (p === '') { const h = await homeBits(l, env); if (h) { add.push(['p.hero-sub', 'after', h[0]]); add.push(['#hp-band > .wrap', 'prepend', h[1]]); } }   // n38 d4: one proof line in the hero, the numbers in a tile band below
     else if (p === 'yc/try/') add.push(['section.k27 .k-prose > ol', 'before', await progBlock(l, env)]);   // r8u
     else if ((mm = /^m\/([^/.]{2,60})\/$/.exec(p))) { const mk = mBySlug(mm[1]); const h = mk ? mkSection(l, mk) + kpMarket(l, mk) + '<div class="n37">' + areaBlock(l, mk) + nextBlock(l, mk) + '</div>' : ''; if (!h) return r; add.push(['#slippage', 'before', h]); }   // r9u: register status summary (Malaysia); n39 t2: areas, next 12 months
-    else if ((mm = /^developers\/([a-z0-9-]{2,90})\/$/.exec(p))) { const h = devSection(l, mm[1]); if (!h) return r; add.push(['#projects', 'append', h + '<p class="n37-in"' + dir(l) + '><a href="' + pre(l) + '/developers/' + mm[1] + '/timeline/">' + esc(t(l, 'v_link')) + '</a></p>']); }   // n39 t2
+    else if ((mm = /^developers\/([a-z0-9-]{2,90})\/$/.exec(p))) { const h = devSection(l, mm[1]); if (!h) return r; add.push(['#projects', 'append', h + peers(l, mm[1]) + '<p class="n37-in"' + dir(l) + '><a href="' + pre(l) + '/developers/' + mm[1] + '/timeline/">' + esc(t(l, 'v_link')) + '</a></p>']); }   // n39 t2
     else if ((mm = /^projects\/([a-z0-9-]{1,90})\/$/.exec(p))) {
       const x = IX.bySlug.get(mm[1]); if (!x) return r;
       const k = cnt(x);
