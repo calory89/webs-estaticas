@@ -238,7 +238,7 @@
     ]
    ],
    "loaded": "on demand",
-   "about": "kolaboro.com (n25e, 12 Nov 2026): what a missing URL answers. No paid AI, no DB. fix(u, env)  -> 301 to the one current page that clearly replaces an old URL, 410 Gone for junk that was never ours, or null (keep 404). Called only after the site answered 404, so normal pages pay nothing. page(r, u, s"
+   "about": "Kolaboro.com (n25e, 12 Nov 2026): What a missing URL answers. No DB. Fix(u, env)  -> 301 to the one current page that clearly replaces an old URL, 410 Gone for junk that was never ours, or null (keep 404). Called only after the site answered 404, so normal pages pay nothing. Page(r, u, s"
   },
   {
    "file": "kbx_a.js",
@@ -307,7 +307,7 @@
     ]
    ],
    "loaded": "static",
-   "about": "kolaboro.com batch 21 (n21b): what living there is really like. No model calls, no keys, nothing fetched at request time. Data (built in tools/kolaboro-agent on main: around.py, climate.py, distance_claims.py; same projects and pins as /data/land-rules.json): /data/around.json           nearest sea,"
+   "about": "Kolaboro.com batch 21 (n21b): What living there is really like. No keys, nothing fetched at request time. Data (built in tools/kolaboro-agent on main: Around.py, climate.py, distance_claims.py; same projects and pins as /data/land-rules.json): /data/around.json           nearest sea,"
   },
   {
    "file": "kbx_b.js",
@@ -325,7 +325,7 @@
     ]
    ],
    "loaded": "static",
-   "about": "Feature module b for kolaboro.com (see kbx.js): the AI desk review, live. POST /api/x/b/review            the same desk review as /api/kb/analyze, streamed as Server-Sent Events: one event per real pipeline step with its measured duration, then the signed result. Cached results say so and replay no "
+   "about": "Feature module b for kolaboro.com (see kbx.js): The desk review, live. POST /api/x/b/review            the same desk review as /api/kb/analyze, streamed as Server-Sent Events: One event per real pipeline step with its measured duration, then the signed result. Cached results say so and replay no "
   },
   {
    "file": "kbx_bots.js",
@@ -341,7 +341,7 @@
     ]
    ],
    "loaded": "on demand",
-   "about": "kolaboro.com (n26i, batch 26): visits of AI crawlers and answer-engine fetchers per day, from the requests this site serves. The worker kept no user-agent log before this batch and has no durable counter store (no KV or analytics binding, no table for it), so the counts live in the edge cache of eac"
+   "about": "Kolaboro.com (n26i, batch 26): Visits of automated crawlers and answer-engine fetchers per day, from the requests this site serves. The worker kept no user-agent log before this batch and has no durable counter store (no KV or analytics binding, no table for it), so the counts live in the edge cache of eac"
   },
   {
    "file": "kbx_bulk.js",
@@ -582,7 +582,7 @@
     ]
    ],
    "loaded": "on demand",
-   "about": "kolaboro.com batch 15 (agent s15c, 7 Nov 2026): assets that earn links and answer-engine citations. No paid AI anywhere here: every word is a template, every number comes from our published data files. GET /embed/card/<slug>/[?lang=xx]        fact card of one named project (iframe), attribution link"
+   "about": "Kolaboro.com batch 15 (agent s15c, 7 Nov 2026): Assets that earn links and answer-engine citations. Every word is a template, every number comes from our published data files. GET /embed/card/<slug>/[?lang=xx]        fact card of one named project (iframe), attribution link"
   },
   {
    "file": "kbx_cite_i18n.js",
@@ -598,7 +598,7 @@
     ]
    ],
    "loaded": "static",
-   "about": "Strings for kbx_cite.js (batch 15, agent s15c): embeds, monthly market data stories, monthly change log, embed codes page. Written by hand for each language (no machine translation service, no paid AI). Facts and source wording stay as the data says. Shared words (promise kinds, statuses, stages, ch"
+   "about": "Strings for kbx_cite.js (batch 15, agent s15c): Embeds, monthly market data stories, monthly change log, embed codes page. Written by hand for each language (no machine translation service). Facts and source wording stay as the data says. Shared words (promise kinds, statuses, stages, ch"
   },
   {
    "file": "kbx_cohort.js",
@@ -625,7 +625,7 @@
     ]
    ],
    "loaded": "static",
-   "about": "kolaboro.com batch 18 (agent n18e, 8 Nov 2026): buyer groups per project (\"meet other buyers of the same project\"). No AI. Buyers who watch a project by email (kolaboro_watch) or saved it in their account (kolaboro_saved) can join its group (double opt-in by email), see the other members only as an "
+   "about": "Kolaboro.com batch 18 (agent n18e, 8 Nov 2026): Buyer groups per project (\"meet other buyers of the same project\"). Buyers who watch a project by email (kolaboro_watch) Or saved it in their account (kolaboro_saved) Can join its group (double opt-in by email), see the other members only as an "
   },
   {
    "file": "kbx_cohort_i18n.js",
@@ -744,7 +744,7 @@
     ]
    ],
    "loaded": "on demand",
-   "about": "kolaboro.com batch 27 (agent n27e, 13 Nov 2026): email and return visits. No paid AI, no database writes, nothing sent, nothing invented. GET /[<lang>/]projects/<slug>/report/        free project report (8 languages, print ready, noindex): the facts we hold, each with its source, the transparency ch"
+   "about": "Kolaboro.com batch 27 (agent n27e, 13 Nov 2026): Email and return visits. No database writes, nothing sent, nothing invented. GET /[<lang>/]projects/<slug>/report/        free project report (8 languages, print ready, noindex): The facts we hold, each with its source, the transparency ch"
   },
   {
    "file": "kbx_e27_i18n.js",
@@ -793,7 +793,7 @@
     ]
    ],
    "loaded": "on demand",
-   "about": "kolaboro.com batch 29 (agent n29e, 14 Nov 2026): trust and link-earning pages. No model calls, nothing stored, nothing estimated: every line comes from a published data file, a guide note already on the site with its official source, or what the team and about pages already state. Routes (8 language"
+   "about": "Kolaboro.com batch 29 (agent n29e, 14 Nov 2026): Trust and link-earning pages. Nothing stored, nothing estimated: Every line comes from a published data file, a guide note already on the site with its official source, or what the team and about pages already state. Routes (8 language"
   },
   {
    "file": "kbx_e29_i18n.js",
@@ -927,7 +927,7 @@
     ]
    ],
    "loaded": "static",
-   "about": "kolaboro.com batch 26 (agent n26s, 13 Nov 2026): per-project SEO pages and new facts from data we already hold. No model calls, nothing estimated, nothing stored. Every line is computed from published data files and links its source. Named project pages (sections built here, placed by kbx_named.js):"
+   "about": "Kolaboro.com batch 26 (agent n26s, 13 Nov 2026): Per-project SEO pages and new facts from data we already hold. Nothing estimated, nothing stored. Every line is computed from published data files and links its source. Named project pages (sections built here, placed by kbx_named.js):"
   },
   {
    "file": "kbx_facets_i18n.js",
@@ -973,7 +973,7 @@
     ]
    ],
    "loaded": "static",
-   "about": "kolaboro.com batch 17 (agent n17c): data you can check. No AI anywhere in this module. Delivery forecast (Kaplan-Meier) from our dated promise history, per market and per developer (10+ projects), with a 95% range: on named project pages (#delivery), market pages (/m/<market>/), method page /methods"
+   "about": "Kolaboro.com batch 17 (agent n17c): Data you can check. Delivery forecast (Kaplan-Meier) From our dated promise history, per market and per developer (10+ projects), with a 95% range: On named project pages (#delivery), market pages (/m/<market>/), method page /methods"
   },
   {
    "file": "kbx_fc_i18n.js",
@@ -1011,7 +1011,7 @@
     ]
    ],
    "loaded": "static",
-   "about": "kolaboro.com batch 21 (agent n21c, 11 Nov 2026): official filings of developers that are listed companies. No model calls. For developers whose published name matches a listed company exactly (legal-form endings such as PJSC, PLC, PCL, S.A., Inc. aside), the developer page shows the exchange, the ti"
+   "about": "Kolaboro.com batch 21 (agent n21c, 11 Nov 2026): Official filings of developers that are listed companies. For developers whose published name matches a listed company exactly (legal-form endings such as PJSC, PLC, PCL, S.A., Inc. Aside), the developer page shows the exchange, the ti"
   },
   {
    "file": "kbx_follow.js",
@@ -1041,7 +1041,7 @@
     ]
    ],
    "loaded": "static",
-   "about": "kolaboro.com batch 9 (agent b9a, 6 Nov 2026): follow and find named projects. No paid AI anywhere in this file. GET  /api/v1/search-index                  compact index of every named project and developer (instant search on /projects/ and in the header search palette, 8 languages); ETag + CORS GET "
+   "about": "Kolaboro.com batch 9 (agent b9a, 6 Nov 2026): Follow and find named projects. GET  /api/v1/search-index                  compact index of every named project and developer (instant search on /projects/ and in the header search palette, 8 languages); ETag + CORS GET "
   },
   {
    "file": "kbx_fraud.js",
@@ -1059,7 +1059,7 @@
     ]
    ],
    "loaded": "static",
-   "about": "kolaboro.com payment-fraud pack (batch 17, n17a). Public, read-only, no model calls, nothing stored or logged. GET /api/x/fraud/domains          the developer websites we hold (from the named project data): registrable domain, developer, its named page, and whether the domain carries the developer's"
+   "about": "Kolaboro.com payment-fraud pack (batch 17, n17a). Public, read-only, nothing stored or logged. GET /api/x/fraud/domains          the developer websites we hold (from the named project data): Registrable domain, developer, its named page, and whether the domain carries the developer's"
   },
   {
    "file": "kbx_g.js",
@@ -1102,7 +1102,7 @@
     ]
    ],
    "loaded": "on demand",
-   "about": "kolaboro.com batch 27 (agent n27g, 13 Nov 2026): Google visibility. No model calls, nothing stored, nothing estimated. - item 2: the 300 projects with the most search demand (list chosen by n27r1 and n27r2, method in their logs) get links from the home page and the hubs (30 on the home page and /cou"
+   "about": "Kolaboro.com batch 27 (agent n27g, 13 Nov 2026): Google visibility. Nothing stored, nothing estimated. - item 2: The 300 projects with the most search demand (list chosen by n27r1 and n27r2, method in their logs) Get links from the home page and the hubs (30 on the home page and /cou"
   },
   {
    "file": "kbx_gaz.js",
@@ -1128,7 +1128,7 @@
     ]
    ],
    "loaded": "static",
-   "about": "kolaboro.com batch 21 (n21a): official warnings and notices on developer pages. No model calls. Facts only, never a verdict. Data (built on main, published to pub/_lovable): /data/sanctions.json \"warnings\"  tools/kolaboro-agent/sanctions_screen.py (workflow kolaboro-sanctions.yml, lists read weekly)"
+   "about": "Kolaboro.com batch 21 (n21a): Official warnings and notices on developer pages. Facts only, never a verdict. Data (built on main, published to pub/_lovable): /data/sanctions.json \"warnings\"  tools/kolaboro-agent/sanctions_screen.py (workflow kolaboro-sanctions.yml, lists read weekly)"
   },
   {
    "file": "kbx_h.js",
@@ -1175,7 +1175,7 @@
     ]
    ],
    "loaded": "on demand",
-   "about": "kolaboro.com batch 29 (agent n29h1, 14 Nov 2026): place pages with data no other page on the site shows (items 16 to 25 of the n29 list). No model calls, nothing estimated, nothing stored. Every figure is computed from the published data files at the edge (named.json through kbx_named.js and kbx_fac"
+   "about": "Kolaboro.com batch 29 (agent n29h1, 14 Nov 2026): Place pages with data no other page on the site shows (items 16 to 25 of the n29 list). Nothing estimated, nothing stored. Every figure is computed from the published data files at the edge (named.json through kbx_named.js and kbx_fac"
   },
   {
    "file": "kbx_h29_i18n.js",
@@ -1306,7 +1306,7 @@
     ]
    ],
    "loaded": "static",
-   "about": "Feature module i for kolaboro.com (see kbx.js): two-sided features.  Developer reply portal (/developers/reply/) GET  /api/x/i/status                      what is live: {reply:{ready}, room:{ready, storage}} GET  /api/x/i/dns?domain=&token=          live DNS TXT check (Cloudflare and Google DNS-over"
+   "about": "Feature module i for kolaboro.com (see kbx.js): Two-sided features.  Developer reply portal (/developers/reply/) GET  /api/x/i/status                      what is live: {reply:{ready}, room:{ready, storage}} GET  /api/x/i/dns?domain=&token=          live DNS TXT check (Cloudflare and Google DNS-over"
   },
   {
    "file": "kbx_ins.js",
@@ -1386,7 +1386,7 @@
     ]
    ],
    "loaded": "static",
-   "about": "Feature module k for kolaboro.com (see kbx.js): API keys and metering, metered open API, Ask Kolaboro (cited answers only). Helpers come from kolaboro.js; nothing here calls a model except through claude() (daily spend cap)."
+   "about": "Feature module k for kolaboro.com (see kbx.js): API keys and metering, metered open API, Ask Kolaboro (cited answers only). Helpers come from kolaboro.js."
   },
   {
    "file": "kbx_l.js",
@@ -1428,7 +1428,7 @@
     ]
    ],
    "loaded": "static",
-   "about": "kolaboro.com batch 19 (n19c): rules on the land. No model calls, no keys. Data (built on main by .github/workflows/kolaboro-land-rules.yml, tools/kolaboro-agent/land_rules.py; same projects and pins as /data/construction-progress.json): /data/land-rules.json   protected and restricted land at and ne"
+   "about": "Kolaboro.com batch 19 (n19c): Rules on the land. No keys. Data (built on main by .github/workflows/kolaboro-land-rules.yml, tools/kolaboro-agent/land_rules.py; same projects and pins as /data/construction-progress.json): /data/land-rules.json   protected and restricted land at and ne"
   },
   {
    "file": "kbx_lastmod.js",
@@ -1466,7 +1466,7 @@
     ]
    ],
    "loaded": "static",
-   "about": "Feature module 'live' for kolaboro.com (see kbx.js). Batch 9 (6 Nov 2026, b9c). GET /api/x/live/status   server-side checks of the key endpoints, run from the edge (cached 60 s), plus incident history built from the deploy guard record (/data/deploys.json). No AI is called: the desk review row only "
+   "about": "Feature module 'live' for kolaboro.com (see kbx.js). Batch 9 (6 Nov 2026, b9c). GET /api/x/live/status   server-side checks of the key endpoints, run from the edge (cached 60 s), plus incident history built from the deploy guard record (/data/deploys.json). The desk review row only "
   },
   {
    "file": "kbx_lookup.js",
@@ -1535,7 +1535,7 @@
     ]
    ],
    "loaded": "static",
-   "about": "kolaboro.com batch 19 (agent n19b, 9 Nov 2026): money reality near the site. No model calls, nothing stored about visitors. (3) Short-let reality check: Inside Airbnb listings (CC BY 4.0) within 1 km of the pin, for the cities Inside Airbnb covers: counts by room type, nightly price quartiles of ent"
+   "about": "Kolaboro.com batch 19 (agent n19b, 9 Nov 2026): Money reality near the site. Nothing stored about visitors. (3) Short-let reality check: Inside Airbnb listings (CC BY 4.0) Within 1 km of the pin, for the cities Inside Airbnb covers: Counts by room type, nightly price quartiles of ent"
   },
   {
    "file": "kbx_n.js",
@@ -1578,7 +1578,7 @@
     ]
    ],
    "loaded": "on demand",
-   "about": "kolaboro.com batch 27 (agent n27a, 13 Nov 2026): answer engines, open data and what Y Combinator sees. No paid AI anywhere: every word is a template, every number comes from our published data files or from counters the site already keeps. GET /answers/place/<slug>.md                one Markdown ans"
+   "about": "Kolaboro.com batch 27 (agent n27a, 13 Nov 2026): Answer engines, open data and what Y Combinator sees. Every word is a template, every number comes from our published data files or from counters the site already keeps. GET /answers/place/<slug>.md                one Markdown ans"
   },
   {
    "file": "kbx_n27lead.js",
@@ -1616,7 +1616,7 @@
     ]
    ],
    "loaded": "on demand",
-   "about": "kolaboro.com batch 29 (agent n29i, 14 Nov 2026): international search and AI assistants. No model calls, nothing stored, nothing estimated: every figure is computed at the edge from the published data files (/data/named.json, bali-cases.json, promises.json and the transparency index of kbx_tr.js), d"
+   "about": "Kolaboro.com batch 29 (agent n29i, 14 Nov 2026): International search and assistants. Nothing stored, nothing estimated: Every figure is computed at the edge from the published data files (/data/named.json, bali-cases.json, promises.json and the transparency index of kbx_tr.js), d"
   },
   {
    "file": "kbx_n30a.js",
@@ -1659,7 +1659,7 @@
     ]
    ],
    "loaded": "static",
-   "about": "kolaboro.com batch 30 (agent n30a, 17 Nov 2026): technology features 1 to 7. No model calls, nothing stored, nothing estimated. GET /k/n30a.js?v=<V>                       client script, loaded only where needed: natural-language search on the home search box and /projects/ (rules in 8 languages, rem"
+   "about": "Kolaboro.com batch 30 (agent n30a, 17 Nov 2026): Technology features 1 to 7. Nothing stored, nothing estimated. GET /k/n30a.js?v=<V>                       client script, loaded only where needed: Natural-language search on the home search box and /projects/ (rules in 8 languages, rem"
   },
   {
    "file": "kbx_n30a_i18n.js",
@@ -1702,7 +1702,7 @@
     ]
    ],
    "loaded": "on demand",
-   "about": "kolaboro.com (n30b, batch 30, 17 Nov 2026): engineering features 8 to 14. No paid AI, no database reads or writes in this file: everything is computed from the published data files (named.json, bali-cases.json, promises.json, web-health.json, ...). 8  GET /[lang/]data/snapshots/                 dail"
+   "about": "Kolaboro.com (n30b, batch 30, 17 Nov 2026): Engineering features 8 to 14. No database reads or writes in this file: Everything is computed from the published data files (named.json, bali-cases.json, promises.json, web-health.json, ...). 8  GET /[lang/]data/snapshots/                 dail"
   },
   {
    "file": "kbx_n30b_i18n.js",
@@ -1749,7 +1749,7 @@
     ]
    ],
    "loaded": "on demand",
-   "about": "kolaboro.com batch 30 (n30c, 17 Nov 2026): items 15 to 20 of the batch. No model calls, no keys, nothing stored. GET /k/n30c-map.js                         item 15: /map/ client: clusters, delay heat layer, filters in the URL (loaded only by /map/) GET /api/v1/pin/<ID>                       item 17:"
+   "about": "Kolaboro.com batch 30 (n30c, 17 Nov 2026): Items 15 to 20 of the batch. No keys, nothing stored. GET /k/n30c-map.js                         item 15: /map/ client: Clusters, delay heat layer, filters in the URL (loaded only by /map/) GET /api/v1/pin/<ID>                       item 17:"
   },
   {
    "file": "kbx_n30c_i18n.js",
@@ -1796,7 +1796,7 @@
     ]
    ],
    "loaded": "static",
-   "about": "kolaboro.com batch 30 (n30c, 17 Nov 2026): pieces of the named project page (kbx_named.js), kept apart from kbx_n30c.js so kbx_named.js does not import the page module. No model calls, no keys, nothing stored. pinHtml(ld, x, lang, fd)   item 17: pin check (on land, protected areas, flood) from /data"
+   "about": "Kolaboro.com batch 30 (n30c, 17 Nov 2026): Pieces of the named project page (kbx_named.js), kept apart from kbx_n30c.js so kbx_named.js does not import the page module. No keys, nothing stored. PinHtml(ld, x, lang, fd)   Item 17: Pin check (on land, protected areas, flood) From /data"
   },
   {
    "file": "kbx_n31a.js",
@@ -1819,7 +1819,7 @@
     ]
    ],
    "loaded": "static",
-   "about": "kolaboro.com (n31a, batch 31, 18 Nov 2026): conversion. No paid AI, no database reads or writes in this file. 2   POST /api/open/fn?s=<step>             one funnel step, sent once per browser session by /k/site.js (no cookie, id or address kept) GET  /[lang/]funnel/                   the funnel: pro"
+   "about": "Kolaboro.com (n31a, batch 31, 18 Nov 2026): Conversion. No database reads or writes in this file. 2   POST /api/open/fn?s=<step>             one funnel step, sent once per browser session by /k/site.js (no cookie, id or address kept) GET  /[lang/]funnel/                   the funnel: Pro"
   },
   {
    "file": "kbx_n31a_i18n.js",
@@ -1856,7 +1856,7 @@
     ]
    ],
    "loaded": "on demand",
-   "about": "kolaboro.com batch 31 (agent n31b, 18 Nov 2026): trust pages. No model calls, nothing stored, nothing estimated: every figure is read from a published data file when the page is built, or is a dated fact with its source. Routes (8 languages, prefix /es /de /fr /nl /ru /zh /ar; page frame of kbx_trus"
+   "about": "Kolaboro.com batch 31 (agent n31b, 18 Nov 2026): Trust pages. Nothing stored, nothing estimated: Every figure is read from a published data file when the page is built, or is a dated fact with its source. Routes (8 languages, prefix /es /de /fr /nl /ru /zh /ar; page frame of kbx_trus"
   },
   {
    "file": "kbx_n31b_cap.js",
@@ -1928,7 +1928,7 @@
     ]
    ],
    "loaded": "static",
-   "about": "kolaboro.com batch 31 (agent n31b, 18 Nov 2026): the trust block of a named project page (kbx_named.js), kept small and apart from the trust pages (kbx_n31b.js). No model calls, nothing stored. Every line comes from fields the page already holds. trustBlock(x, c, lang, o)  one folded block under the"
+   "about": "Kolaboro.com batch 31 (agent n31b, 18 Nov 2026): The trust block of a named project page (kbx_named.js), kept small and apart from the trust pages (kbx_n31b.js). Nothing stored. Every line comes from fields the page already holds. TrustBlock(x, c, lang, o)  One folded block under the"
   },
   {
    "file": "kbx_n31c.js",
@@ -1966,7 +1966,7 @@
     ]
    ],
    "loaded": "static",
-   "about": "kolaboro.com (n31c, batch 31, 18 Nov 2026): data part 2. No paid AI, no database reads or writes: everything comes from the published data files (named.json, bali-cases.json, stalled-sites.json, wayback.json). 12, 117  stable ids with aliases: a developer recorded under two spellings and a project r"
+   "about": "Kolaboro.com (n31c, batch 31, 18 Nov 2026): Data part 2. No database reads or writes: Everything comes from the published data files (named.json, bali-cases.json, stalled-sites.json, wayback.json). 12, 117  stable ids with aliases: A developer recorded under two spellings and a project r"
   },
   {
    "file": "kbx_n31d.js",
@@ -1990,7 +1990,7 @@
     ]
    ],
    "loaded": "static",
-   "about": "kolaboro.com batch 31 (agent n31d, 18 Nov 2026): the project page, items 131 to 155 of the 300 list. Lighter, not heavier: parts that repeat were folded or dropped in kbx_named.js, the new server parts below are short, and everything interactive lives in one lazy client script per language. No model"
+   "about": "Kolaboro.com batch 31 (agent n31d, 18 Nov 2026): The project page, items 131 to 155 of the 300 list. Lighter, not heavier: Parts that repeat were folded or dropped in kbx_named.js, the new server parts below are short, and everything interactive lives in one lazy client script per language."
   },
   {
    "file": "kbx_n31d_i18n.js",
@@ -2092,7 +2092,7 @@
     ]
    ],
    "loaded": "on demand",
-   "about": "kolaboro.com batch 31 (agent n31e, 18 Nov 2026): buyer tools, items 156 to 180 of the 300 list. No model calls, nothing stored about visitors, no database writes. Facts only, each with its source and the date it was read. Pages in 8 languages (Arabic RTL). GET /k/n31e.js?v=<V>                       "
+   "about": "Kolaboro.com batch 31 (agent n31e, 18 Nov 2026): Buyer tools, items 156 to 180 of the 300 list. Nothing stored about visitors, no database writes. Facts only, each with its source and the date it was read. Pages in 8 languages (Arabic RTL). GET /k/n31e.js?v=<V>                       "
   },
   {
    "file": "kbx_n31e_client.js",
@@ -2147,7 +2147,7 @@
     ]
    ],
    "loaded": "on demand",
-   "about": "kolaboro.com batch 31 (n31s, 18 Nov 2026): SEO and AI items of the 300 list. No model calls, no keys, nothing stored. GET /<lang>/tools/                      item 186: the /tools/ hub in 7 more languages (built from the English hub, so a tool added there shows up here at once, in English until it is"
+   "about": "Kolaboro.com batch 31 (n31s, 18 Nov 2026): SEO and answer-engine items of the 300 list. No keys, nothing stored. GET /<lang>/tools/                      item 186: The /tools/ hub in 7 more languages (built from the English hub, so a tool added there shows up here at once, in English until it is"
   },
   {
    "file": "kbx_n31s_i18n.js",
@@ -2185,7 +2185,7 @@
     ]
    ],
    "loaded": "on demand",
-   "about": "kolaboro.com batch 31 (agent n31t, 18 Nov 2026): engineering pages, press pages in 8 languages, live alerts, maintenance mode. No paid AI, no database writes. Every number comes from a published data file, a live public endpoint or a dated test run (/data/engineering-checks.json, written by hand fro"
+   "about": "Kolaboro.com batch 31 (agent n31t, 18 Nov 2026): Engineering pages, press pages in 8 languages, live alerts, maintenance mode. No database writes. Every number comes from a published data file, a live public endpoint or a dated test run (/data/engineering-checks.json, written by hand fro"
   },
   {
    "file": "kbx_named.js",
@@ -2549,7 +2549,7 @@
     ]
    ],
    "loaded": "static",
-   "about": "kolaboro.com named project pages: construction progress from space (batch 14, f14b). No model calls. Data: /data/construction-progress.json, built monthly on main by .github/workflows/kolaboro-progress.yml (tools/kolaboro-landwatch/progress.py): per project with a plot-level pin in our records, a mo"
+   "about": "Kolaboro.com named project pages: Construction progress from space (batch 14, f14b). Data: /data/construction-progress.json, built monthly on main by .github/workflows/kolaboro-progress.yml (tools/kolaboro-landwatch/progress.py): Per project with a plot-level pin in our records, a mo"
   },
   {
    "file": "kbx_net.js",
@@ -2745,7 +2745,7 @@
     ]
    ],
    "loaded": "static",
-   "about": "kolaboro.com batch 29 (agent n29p, 14 Nov 2026): what people search about one project or one developer, answered from data we hold. No model calls, nothing fetched at request time, nothing stored about visitors. Facts only, each with its source and date. Project pages (kbx_named.js projectPage): #pa"
+   "about": "Kolaboro.com batch 29 (agent n29p, 14 Nov 2026): What people search about one project or one developer, answered from data we hold. Nothing fetched at request time, nothing stored about visitors. Facts only, each with its source and date. Project pages (kbx_named.js projectPage): #pa"
   },
   {
    "file": "kbx_p_hz.js",
@@ -2795,7 +2795,7 @@
     ]
    ],
    "loaded": "static",
-   "about": "kolaboro.com batch 18 (agent n18d, 8 Nov 2026): paperwork that protects buyers. No model calls, nothing stored. (2) Prices over time on named project pages: the prices printed on the page we track, from our sealed copies (page-history, the same SHA-256 copies as /projects/<slug>/changes/) and Intern"
+   "about": "Kolaboro.com batch 18 (agent n18d, 8 Nov 2026): Paperwork that protects buyers. Nothing stored. (2) Prices over time on named project pages: The prices printed on the page we track, from our sealed copies (page-history, the same SHA-256 copies as /projects/<slug>/changes/) And Intern"
   },
   {
    "file": "kbx_pay.js",
@@ -2949,7 +2949,7 @@
     ]
    ],
    "loaded": "static",
-   "about": "kolaboro.com batch 21 (agent n21c, 11 Nov 2026): can you legally short-let there? No model calls, nothing stored about visitors. A rules table per jurisdiction: licence or registration, caps or zones, night limits, rules of the building or its owners. Only what the official source we read says, each"
+   "about": "Kolaboro.com batch 21 (agent n21c, 11 Nov 2026): Can you legally short-let there? nothing stored about visitors. A rules table per jurisdiction: Licence or registration, caps or zones, night limits, rules of the building or its owners. Only what the official source we read says, each"
   },
   {
    "file": "kbx_s.js",
@@ -2989,7 +2989,7 @@
     ]
    ],
    "loaded": "static",
-   "about": "kolaboro.com batch 18 (n18c): see the site. Open street-level photos near the pin and a 3D view of the plot. No model calls, no keys. Data (built on main by .github/workflows/kolaboro-see-site.yml, tools/kolaboro-agent/see_site.py; same projects and pins as /data/construction-progress.json): /data/s"
+   "about": "Kolaboro.com batch 18 (n18c): See the site. Open street-level photos near the pin and a 3D view of the plot. No keys. Data (built on main by .github/workflows/kolaboro-see-site.yml, tools/kolaboro-agent/see_site.py; same projects and pins as /data/construction-progress.json): /data/s"
   },
   {
    "file": "kbx_seo.js",
@@ -3065,7 +3065,7 @@
     ]
    ],
    "loaded": "static",
-   "about": "kolaboro.com batch 17 (n17b): radar through the clouds, mapped building footprints and a sealed site-visit record. No model calls. Data (built monthly on main by .github/workflows/kolaboro-space-extra.yml, tools/kolaboro-agent/space_extra.py): /data/satellite-radar.json  Sentinel-1 RTC (Microsoft Pl"
+   "about": "Kolaboro.com batch 17 (n17b): Radar through the clouds, mapped building footprints and a sealed site-visit record. Data (built monthly on main by .github/workflows/kolaboro-space-extra.yml, tools/kolaboro-agent/space_extra.py): /data/satellite-radar.json  Sentinel-1 RTC (Microsoft Pl"
   },
   {
    "file": "kbx_stage.js",
@@ -3092,7 +3092,7 @@
     ]
    ],
    "loaded": "static",
-   "about": "kolaboro.com batch 18 (n18b): construction stage estimate per month from open satellite and map data. Plain rules, no model, no training, no AI calls. Inputs are the public files the \"from space\" section already shows: /data/construction-progress.json  Sentinel-2 L2A monthly change index of the 150 "
+   "about": "Kolaboro.com batch 18 (n18b): Construction stage estimate per month from open satellite and map data. Plain rules, no training. Inputs are the public files the \"from space\" section already shows: /data/construction-progress.json  Sentinel-2 L2A monthly change index of the 150 "
   },
   {
    "file": "kbx_t.js",
@@ -3132,7 +3132,7 @@
     ]
    ],
    "loaded": "on demand",
-   "about": "kolaboro.com batch 27 (agent n27t, 13 Nov 2026): trust pages and files. No model calls, nothing stored, nothing estimated: every line comes from a published data file or from what other pages of the site already state. Routes (8 languages, prefix /es /de /fr /nl /ru /zh /ar; page frame and styles of"
+   "about": "Kolaboro.com batch 27 (agent n27t, 13 Nov 2026): Trust pages and files. Nothing stored, nothing estimated: Every line comes from a published data file or from what other pages of the site already state. Routes (8 languages, prefix /es /de /fr /nl /ru /zh /ar; page frame and styles of"
   },
   {
    "file": "kbx_t27_i18n.js",
@@ -3291,7 +3291,7 @@
     ]
    ],
    "loaded": "static",
-   "about": "kolaboro.com batch 23 (agent n23, 12 Nov 2026): transparency rankings of off-plan projects for 30 islands and 30 cities. No model calls, nothing estimated. The transparency score (0 to 100) counts what is published and checkable about a project, computed at the edge from the published data files, so"
+   "about": "Kolaboro.com batch 23 (agent n23, 12 Nov 2026): Transparency rankings of off-plan projects for 30 islands and 30 cities. Nothing estimated. The transparency score (0 to 100) Counts what is published and checkable about a project, computed at the edge from the published data files, so"
   },
   {
    "file": "kbx_tr_i18n.js",
@@ -3385,7 +3385,7 @@
     ]
    ],
    "loaded": "static",
-   "about": "kolaboro.com batch 26 (agent n26y, 13 Nov 2026): trust and visible daily progress. No model calls, nothing stored about visitors, nothing estimated: every figure is counted from our own published data files. Routes (8 languages, prefix /es /de /fr /nl /ru /zh /ar): GET /progress/                   d"
+   "about": "Kolaboro.com batch 26 (agent n26y, 13 Nov 2026): Trust and visible daily progress. Nothing stored about visitors, nothing estimated: Every figure is counted from our own published data files. Routes (8 languages, prefix /es /de /fr /nl /ru /zh /ar): GET /progress/                   d"
   },
   {
    "file": "kbx_trust_i18n.js",
@@ -3451,7 +3451,7 @@
     ]
    ],
    "loaded": "static",
-   "about": "kolaboro.com batch 26 (agent n26u, 13 Nov 2026): user flow, speed and return visits. No paid AI, no DB writes, nothing invented. GET /[<lang>/]compare/?p=<slug>,<slug>[,<slug>]  two or three named projects side by side (facts as published, transparency score, sources on each project page); noindex, "
+   "about": "Kolaboro.com batch 26 (agent n26u, 13 Nov 2026): User flow, speed and return visits. No DB writes, nothing invented. GET /[<lang>/]compare/?p=<slug>,<slug>[,<slug>]  two or three named projects side by side (facts as published, transparency score, sources on each project page); noindex, "
   },
   {
    "file": "kbx_u27.js",
@@ -3488,7 +3488,7 @@
     ]
    ],
    "loaded": "static",
-   "about": "kolaboro.com batch 27 (agent n27u, 13 Nov 2026): easier to use and faster. No paid AI, no DB writes, nothing invented. Project pages in two levels: the quick answer, a six-check traffic light and the date on top; every section below folded (<details>, all content stays in the HTML for search engines"
+   "about": "Kolaboro.com batch 27 (agent n27u, 13 Nov 2026): Easier to use and faster. No DB writes, nothing invented. Project pages in two levels: The quick answer, a six-check traffic light and the date on top; every section below folded (<details>, all content stays in the HTML for search engines"
   },
   {
    "file": "kbx_v.js",
@@ -3550,7 +3550,7 @@
     ]
    ],
    "loaded": "static",
-   "about": "kolaboro.com batch 19 (n19a): fraud radar. No model calls. Facts only: a resemblance or a screening result, never a verdict. Data (built daily on main, published to pub/_lovable): /data/lookalikes.json  .github/workflows/kolaboro-lookalikes.yml, tools/kolaboro-agent/fake_sites.py: new websites whose"
+   "about": "Kolaboro.com batch 19 (n19a): Fraud radar. Facts only: A resemblance or a screening result, never a verdict. Data (built daily on main, published to pub/_lovable): /data/lookalikes.json  .github/workflows/kolaboro-lookalikes.yml, tools/kolaboro-agent/fake_sites.py: New websites whose"
   },
   {
    "file": "kbx_web.js",
@@ -3585,7 +3585,7 @@
     ]
    ],
    "loaded": "static",
-   "about": "kolaboro.com batch 18 (n18a): what developer websites reveal. No model calls. Data (built daily on main by .github/workflows/kolaboro-devweb.yml, tools/kolaboro-agent/dev_web.py, one homepage request per developer website per day, robots.txt respected): /data/web-health.json  per own developer websi"
+   "about": "Kolaboro.com batch 18 (n18a): What developer websites reveal. Data (built daily on main by .github/workflows/kolaboro-devweb.yml, tools/kolaboro-agent/dev_web.py, one homepage request per developer website per day, robots.txt respected): /data/web-health.json  per own developer websi"
   },
   {
    "file": "kbx_x.js",
@@ -3714,7 +3714,7 @@
     ]
    ],
    "loaded": "static",
-   "about": "Feature module y for kolaboro.com (see kbx.js): AI follow-up. Owned by block Y (batch 4, 4 Nov 2026). Endpoints under /api/x/y/. GET  /api/x/y/status                    what is open: alerts table, email sender, questions table, promise data GET  /api/x/y/promises?id=BALI-014      dated developer pro"
+   "about": "Feature module y for kolaboro.com (see kbx.js): Follow-up questions. Owned by block Y (batch 4, 4 Nov 2026). Endpoints under /api/x/y/. GET  /api/x/y/status                    what is open: Alerts table, email sender, questions table, promise data GET  /api/x/y/promises?id=BALI-014      dated developer pro"
   },
   {
    "file": "kbx_z.js",

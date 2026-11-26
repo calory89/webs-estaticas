@@ -256,13 +256,6 @@ Product roadmap (id: roadmap)
 
 ### How the service checks itself
 
-Desk review benchmark (id: benchmark)
-  URL: https://kolaboro.com/data/benchmark/ (2 files)
-  Results of the desk review benchmark on fixed fictional cases, one file per reader configuration, each case answer signed with the Kolaboro Ed25519 key.
-  Size 96.9 KB; 36 cases; SHA-256 a94237d9894f0ec53e52ee1283d4962c9464f877b5ceeb6e7fba7bb2cb95b33f; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: on demand. Last updated: 2026-11-03T22:59:11Z.
-  Schema: https://kolaboro.com/api/x/data/schema/benchmark.json
-
 Accessibility audit (id: a11y)
   URL: https://kolaboro.com/data/a11y.json
   axe-core audit of every page (WCAG 2.2 AA rules) with counts per rule and page and the run history.
@@ -2442,7 +2435,7 @@ GET /api/open/uptime: Uptime probes. Uptime probes every 5 minutes from outside 
 GET /api/open/build: Serving build. Which code commit is serving this API.
   Example: https://kolaboro.com/api/open/build
 
-GET /api/open/ai-spend: AI spend. Estimated daily spend of the website AI features and the daily cap that stops them.
+GET /api/open/ai-spend: Running cost of automated features. Estimated daily spend of the website's automated reading features and the daily cap that stops them.
   Example: https://kolaboro.com/api/open/ai-spend
 
 GET /api/open/security: Security summary. Latest weekly security scan summary and decoy credentials touched.

@@ -41,7 +41,7 @@ let kb = null, kbx = null, ksat = null, klk = null;
 let kStr = null;
 async function kbStrings(env) { try { if (!kStr) kStr = await import('./kbx_strings.js'); if (!kStr.isReady()) await kStr.ready(env); if (!kStr.isReady()) await kStr.ready(env); } catch (e) {} try { if (!kn33a) kn33a = await import('./kbx_n33a.js'); } catch (e) {} }   // n33a: byline and hub feeds read by kbHeaders (sync)
 async function kScript(env, k) { await kbStrings(env); const o = kStr && kStr.TB && kStr.TB.index_K; return (o && o[k]) || ''; }   // n40 k5: /__k/ script texts from /data/i18n/index.json
-const KXR_V = 'n40k11a'; let kxr = null; const KXR = /^\/api\/kb\/xray(?:\/stats)?\/?$|^\/api\/v1\/xray(?:\/openapi\.json)?\/?$|^\/x\/[0-9a-f]{64}(?:\/|\.json|\/vc)?$/;   // b11 x11a: Project X-ray (keep equal to PATHS in kbx_xray.js)
+const KXR_V = 'n40k40a'; let kxr = null; const KXR = /^\/api\/kb\/xray(?:\/stats)?\/?$|^\/api\/v1\/xray(?:\/openapi\.json)?\/?$|^\/x\/[0-9a-f]{64}(?:\/|\.json|\/vc)?$/;   // b11 x11a: Project X-ray (keep equal to PATHS in kbx_xray.js)
 let kfw = null; const KFW = /^\/api\/v1\/(?:projects|developers)(?:\/[a-z0-9-]{1,90})?\/?$|^\/api\/v1\/(?:search-index|watch)$|^\/(?:projects|developers)\/[a-z0-9-]{1,90}\/feed\.(?:atom|json)$/;   // b9a: public named API, feeds, watch (keep equal to PATHS9 in kbx_follow.js)
 let kog = null, kbk = null; const KB10 = /^\/og\/(?:projects|developers|type)\/[a-z0-9-]{1,90}\.png$|^\/bulk-check\/?$|^\/api\/kb\/bulk\/?$/;   // b10c: keep equal to PATHS in kbx_og.js + kbx_bulk.js
 let kxev = null; const KXEV = /^\/api\/xev(?:\/sat\.png)?$/;   // x11b (batch 11): X-ray evidence cards + Sentinel-2 crop, keep equal to PATHS in kbx_xray_ev.js
@@ -1034,6 +1034,7 @@ export default {
       return h29Inject(req, u, env, sr2);
       });
     }
+    if (host === 'kolaboro.com' && /^\/(?:data\/benchmark(?:\/|$)|benchmark\/[^/]+\.(?:js|mjs|json)$)/.test(u.pathname)) return new Response('Gone', { status: 410, headers: { 'content-type': 'text/plain; charset=utf-8', 'cache-control': 'public, max-age=3600', 'x-robots-tag': 'noindex' } });   // n40 k40: retired review benchmark data (files kept in the repository)
     if (host === 'kolaboro.com') { let kr = kbHeaders(await this.site(req, env, ctx, u, host), u);
       // n25e: a missing page answers a 301 to its one clear replacement, a 410 for junk, or a useful translated 404 (see kbx_404.js)
       if (kr.status === 404 && (req.method === 'GET' || req.method === 'HEAD') && !/^\/api\//.test(u.pathname)) { if (!k404) k404 = await import('./kbx_404.js'); const fx = await k404.fix(u, env); if (fx instanceof Response) return fx; if (/text\/html/.test(kr.headers.get('content-type') || '')) { const pg = await k404.page(kr, u, fx === 'gone' ? 410 : 404, env); return /^\/(es|de|fr|nl|ru|zh|ar)(\/|$)/.test(u.pathname) ? kbHeaders(pg, u) : pg; } }   // n28a: the translated 404 shell is a raw file: it needs this response's script nonce, ds.css and style dedupe

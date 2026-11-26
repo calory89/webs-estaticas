@@ -2402,68 +2402,6 @@
    }
   },
   {
-   "@id": "https://kolaboro.com/data/#benchmark",
-   "@type": "dcat:Dataset",
-   "dct:identifier": "benchmark",
-   "dct:title": "Desk review benchmark",
-   "dct:description": "Results of the desk review benchmark on fixed fictional cases, one file per reader configuration, each case answer signed with the Kolaboro Ed25519 key.",
-   "dcat:keyword": [
-    "desk review",
-    "benchmark"
-   ],
-   "dct:publisher": {
-    "@id": "https://kolaboro.com/#org"
-   },
-   "dct:license": {
-    "@id": "https://creativecommons.org/licenses/by/4.0/"
-   },
-   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
-   "dcat:landingPage": {
-    "@id": "https://kolaboro.com/data/#benchmark"
-   },
-   "dcat:distribution": [
-    {
-     "@id": "https://kolaboro.com/data/#benchmark-dist",
-     "@type": "dcat:Distribution",
-     "dct:title": "Desk review benchmark",
-     "dcat:mediaType": {
-      "@id": "https://www.iana.org/assignments/media-types/application/json"
-     },
-     "dct:license": {
-      "@id": "https://creativecommons.org/licenses/by/4.0/"
-     },
-     "dcat:byteSize": {
-      "@value": "99204",
-      "@type": "xsd:nonNegativeInteger"
-     },
-     "dcat:accessURL": {
-      "@id": "https://kolaboro.com/data/#benchmark"
-     },
-     "dct:description": "2 files under https://kolaboro.com/data/benchmark/. One file per item: benchmark/haiku.json, benchmark/sonnet.json ...",
-     "spdx:checksum": {
-      "@type": "spdx:Checksum",
-      "spdx:algorithm": {
-       "@id": "spdx:checksumAlgorithm_sha256"
-      },
-      "spdx:checksumValue": "a94237d9894f0ec53e52ee1283d4962c9464f877b5ceeb6e7fba7bb2cb95b33f"
-     },
-     "dct:conformsTo": {
-      "@id": "https://kolaboro.com/api/x/data/schema/benchmark.json"
-     }
-    }
-   ],
-   "dct:accrualPeriodicity": {
-    "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
-   },
-   "dct:modified": {
-    "@value": "2026-11-03T22:59:11Z",
-    "@type": "xsd:dateTime"
-   },
-   "dct:conformsTo": {
-    "@id": "https://kolaboro.com/api/x/data/schema/benchmark.json"
-   }
-  },
-  {
    "@id": "https://kolaboro.com/data/#a11y",
    "@type": "dcat:Dataset",
    "dct:identifier": "a11y",

@@ -2468,8 +2468,8 @@
     "tags": [
      "Open data"
     ],
-    "summary": "AI desk review evaluation",
-    "description": "Daily evaluation of the AI desk review on fixed fictional pages, case by case.",
+    "summary": "desk review evaluation",
+    "description": "Daily evaluation of the desk review on fixed fictional pages, case by case.",
     "operationId": "open_evals",
     "parameters": [],
     "responses": {
@@ -3505,7 +3505,7 @@
          "latest": {
           "commit": "code:4a4ef6e14b4acae774579d84a36667d4",
           "models": [
-           "claude-haiku-5-5"
+           "reader-a"
           ],
           "quotes": {
            "checked": 126,
@@ -3589,7 +3589,7 @@
           "seconds": 54,
           "code_key": "code:4a4ef6e14b4acae774579d84a36667d4",
           "consensus": {
-           "second_model": "claude-sonnet-5-5",
+           "second_model": "reader-b",
            "fields_agreed": 140,
            "fields_compared": 144,
            "cases_with_disagreement": [
@@ -3620,10 +3620,10 @@
            "day": "2026-11-04",
            "commit": "code:4a4ef6e14b4acae774579d84a36667d4",
            "models": [
-            "claude-haiku-5-5"
+            "reader-a"
            ],
            "consensus": {
-            "second_model": "claude-sonnet-5-5",
+            "second_model": "reader-b",
             "fields_agreed": 140,
             "fields_compared": 144,
             "cases_with_disagreement": [
@@ -3652,10 +3652,10 @@
            "day": "2026-11-04",
            "commit": "code:ea1e843b9d7a0832affb4ae8510fe7e7",
            "models": [
-            "claude-haiku-5-5"
+            "reader-a"
            ],
            "consensus": {
-            "second_model": "claude-sonnet-5-5",
+            "second_model": "reader-b",
             "fields_agreed": 137,
             "fields_compared": 144,
             "cases_with_disagreement": [
@@ -3920,8 +3920,8 @@
     "tags": [
      "Open data"
     ],
-    "summary": "AI spend",
-    "description": "Estimated daily spend of the website AI features and the daily cap that stops them.",
+    "summary": "Running cost of automated features",
+    "description": "Estimated daily spend of the website's automated reading features and the daily cap that stops them.",
     "operationId": "open_ai_spend",
     "parameters": [],
     "responses": {
@@ -8710,7 +8710,7 @@
          ],
          "paragraph": {
           "text": "Kolaboro data show 896 tracked projects across 144 markets in November 2026. Of these, 755 projects have a handover date that can be used for the delay index. History for the delay index starts this month. Among those 755 projects, 62 are past the first handover date, a share of 8.2%, and 31 are pas...",
-          "by": "claude-sonnet-5-5",
+          "by": "reader-b",
           "check": {
            "numbers_found": [
             "896",
@@ -16504,7 +16504,7 @@
           },
           {
            "id": "desk_review",
-           "objective": "95% of AI desk review requests return a report each calendar month",
+           "objective": "95% of desk review requests return a report each calendar month",
            "target": 0.95,
            "source": "API log (every /api/kb/analyze and /api/x/b/review call: success or failure)",
            "state": "setup",

@@ -2,7 +2,7 @@
 import { fetchPage, okUrl, pageParts, scanInjection, rpc, sha, WKEY, api as kbApi, logApi } from './kolaboro.js';
 import { TB } from './kbx_strings.js';
 export const PATHS = /^\/api\/kb\/xray(?:\/stats)?\/?$|^\/api\/v1\/xray(?:\/openapi\.json)?\/?$|^\/x\/[0-9a-f]{64}(?:\/|\.json|\/vc)?$/;
-const XV = 'n40k11a';
+const XV = 'n40k40a';
 const ORIGIN = 'https://kolaboro.com', VERSION = 'kolaboro-xray-1', PER_IP_HOUR = 30, CARD_MS = 12000;
 const te = new TextEncoder();
 const hexOf = b => [...new Uint8Array(b)].map(x => x.toString(16).padStart(2, '0')).join('');

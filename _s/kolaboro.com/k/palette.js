@@ -8,7 +8,7 @@
   // n31a (18 Nov 2026, item 17): a search with no result offers to ask us for the project (the existing lead form, /request-project/)
   var RQ = { en: 'Not here? Ask us to add this project', es: '¿No está? Pídenos este proyecto', de: 'Nicht dabei? Projekt hinzufügen lassen', fr: 'Absent ? Demandez-nous ce projet', nl: 'Staat het er niet bij? Vraag ons het toe te voegen', ru: 'Нет в списке? Попросите добавить проект', zh: '没有找到？请我们添加这个项目', ar: 'غير موجود؟ اطلب منا إضافة هذا المشروع' };
   var PAGES = [
-    ['Check a project website', '/check', 'desk review ai analyze url link scan free', 'Tool'],
+    ['Check a project website', '/check', 'desk review analyze url link scan free', 'Tool'],
     ['Database of off-plan projects', '/database', 'all projects table filter download data', 'Page'],
     ['Live cases', '/cases', 'projects tracked list', 'Page'],
     ['Pricing', '/pricing', 'price cost fee 490 99 monitoring check', 'Page'],
@@ -20,7 +20,7 @@
     ['Independence', '/independence', 'developers never pay conflict of interest', 'Trust'],
     ['Engineering', '/engineering', 'architecture tech stack how it is built', 'Trust'],
     ['Automated evaluations', '/engineering/evals/', 'evals tests desk review accuracy injection', 'Trust'],
-    ['Technology: the verification engine', '/technology', 'ai contract certificate price images progress', 'Page'],
+    ['Technology: the verification engine', '/technology', 'contract certificate price images progress', 'Page'],
     ['Open data and API', '/docs/api', 'api json csv developers endpoints openapi', 'Developers'],
     ['Open metrics', '/metrics', 'numbers metrics traffic revenue', 'Trust'],
     ['Security and your data', '/security', 'privacy encryption security scan', 'Trust'],
@@ -97,7 +97,7 @@
       st: { 'under construction': 'قيد الإنشاء', 'off-plan': 'على الخارطة', completed: 'مكتمل' }, none: function (q) { return 'لا توجد نتائج لـ «' + q + '». جرّب سوقًا (بالي، دبي) أو رقم مشروع (BALI-014) أو صفحة (الأسعار).'; }, ld: 'جارٍ تحميل فهرس المشاريع…',
       dr: ['مراجعة مكتبية لـ ', 'أداة · تقرأ الصفحة وتسرد ما تعد به وما تغفله'], ft: ['مشروع', 'سوق', 'صفحات', 'صفحات (المشاريع قيد التحميل)', 'البحث استغرق', 'مللي ثانية في متصفحك', 'محفوظ للاستخدام دون اتصال', 'تم التحقق من توقيع الفهرس', 'توقيع الفهرس'], kb: ['تنقّل', 'فتح', 'إغلاق'] }
   }[LG] || null;
-  if (TL) PAGES = [['/check', 'desk review ai analyze url link scan free', 'Tool', 0], ['/database', 'all projects table filter download data', 'Page', 1], ['/cases', 'projects tracked list', 'Page', 2], ['/pricing', 'price cost fee 490 99 monitoring check', 'Page', 3],
+  if (TL) PAGES = [['/check', 'desk review analyze url link scan free', 'Tool', 0], ['/database', 'all projects table filter download data', 'Page', 1], ['/cases', 'projects tracked list', 'Page', 2], ['/pricing', 'price cost fee 490 99 monitoring check', 'Page', 3],
     ['/how-we-score', 'scoring method score six checks methodology', 'Page', 4], ['/checklist', 'checklist before sign contract', 'Page', 5], ['/about', 'about team founders', 'Page', 6], ['', 'home start', 'Page', 7]].map(function (p) { return [TL.pg[p[3]], '/' + LG + p[0] + '/', p[1] + ' ' + norm(TL.pg[p[3]]), TL.ty[p[2]]]; });
   // n28c: plural forms by the page language (Russian has three: 1 проект, 2 проекта, 5 проектов)
   var PR = null; try { PR = new Intl.PluralRules(LG); } catch (e) {}

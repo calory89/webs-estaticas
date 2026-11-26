@@ -159,7 +159,6 @@
 <li><a href="/shipping/">Shipping log</a></li>
 <li><a href="/accessibility/">Accessibility</a></li>
         <li><a href="/metrics/">Open metrics</a></li>
-        <li><a href="/benchmark/">Review benchmark</a></li>
         <li><a href="/log/witnesses/">Log witnesses</a></li>
       </ul></div>
       <div><h2 class="fh">Kolaboro</h2><ul>
@@ -212,11 +211,11 @@ addEventListener('load', function(){ setTimeout(function(){   // n27u: read the 
   document.querySelectorAll('[data-ex]').forEach(function(b){ b.addEventListener('click', function(){ x.value = EX[+b.getAttribute('data-ex')]; cnt(); x.focus(); }); });
   var LBL = { attention: 'Attention level', guaranteed_language: 'Guaranteed return wording', page_kind: 'Kind of page', title_type: 'Title type', lease_years: 'Lease length', advertised_return: 'Advertised return', completion: 'Completion date', permit_claim: 'Permit claim', extension_promised: 'Lease extension promised' };
   function val(v){ return v === true ? 'yes' : v === false ? 'no' : v == null || v === '' ? '(none)' : String(v); }
-  var STEP = { strip: 'Strip hidden text', scan: 'Scan for instructions aimed at automated readers', model_a: 'Model A', model_b: 'Model B', consensus: 'Compare critical fields', quotes: 'Check quotes against the page' };
+  var STEP = { strip: 'Strip hidden text', scan: 'Scan for instructions aimed at automated readers', model_a: 'Reader A', model_b: 'Reader B', consensus: 'Compare critical fields', quotes: 'Check quotes against the page' };
   function stepTxt(e){
     if (e.step === 'strip') return e.hidden_chars ? e.hidden_chars + ' hidden characters removed' : 'nothing hidden';
     if (e.step === 'scan') return e.hits + ' match' + (e.hits === 1 ? '' : 'es');
-    if (e.step === 'model_a' || e.step === 'model_b') return e.model + (e.ok ? '' : ' (failed)');
+    if (e.step === 'model_a' || e.step === 'model_b') return (e.step === 'model_a' ? 'Reader A' : 'Reader B') + (e.ok ? '' : ' (failed)');
     if (e.step === 'consensus') return e.skipped ? 'skipped' : e.agreed + ' of ' + e.fields + ' agree';
     if (e.step === 'quotes') return e.checked + ' checked, ' + e.removed + ' removed';
     return '';
@@ -235,12 +234,12 @@ addEventListener('load', function(){ setTimeout(function(){   // n27u: read the 
       '<div class="rt"><div class="rt-card"><h3>Without your text, and with it</h3><div class="rt-wrap"><table class="rt-t"><thead><tr><th>Field</th><th>Baseline page</th><th>With your text</th></tr></thead><tbody>' + rows + '</tbody></table></div>' +
       '<p style="font-size:.88rem;margin:12px 0 0"><b>Summary with your text:</b> ' + esc(a.summary) + '</p>' +
       ((d.changed_fields || []).length && d.outcome !== 'fooled' ? '<p class="muted" style="font-size:.84rem">A field that changed is not a win on its own: if your text openly states a different fact, reporting it is the correct behaviour. Only the four conditions above count as fooling the review.</p>' : '') + '</div>' +
-      '<div class="rt-card"><h3>Was the attempt caught?</h3>' + (am && am.detected ? '<p><b>Yes</b>, by ' + esc(am.by) + '. Evidence shown to the buyer:</p><ul class="rt-ev">' + (am.evidence || []).map(function(e){ return '<li><i>' + esc(e.where === 'hidden' ? 'Hidden text' : e.where === 'model' ? 'Flagged by the model' : 'Visible text') + ':</i> "' + esc(e.text) + '"</li>'; }).join('') + '</ul>' : '<p><b>No.</b> Neither the patterns nor the two models flagged your text.</p>') +
+      '<div class="rt-card"><h3>Was the attempt caught?</h3>' + (am && am.detected ? '<p><b>Yes</b>, by ' + esc(am.by) + '. Evidence shown to the buyer:</p><ul class="rt-ev">' + (am.evidence || []).map(function(e){ return '<li><i>' + esc(e.where === 'hidden' ? 'Hidden text' : e.where === 'model' ? 'Flagged by the reader' : 'Visible text') + ':</i> "' + esc(e.text) + '"</li>'; }).join('') + '</ul>' : '<p><b>No.</b> Neither the patterns nor the two readers flagged your text.</p>') +
       (a.quote_check ? '<p style="font-size:.88rem">' + a.quote_check.checked + ' claims checked against the page, ' + a.quote_check.removed + ' removed.</p>' : '') +
       '<h3 style="margin-top:14px">Steps, measured on our server</h3><ul class="rt-steps">' + (d.steps || []).map(function(e){ return '<li><span>' + esc(STEP[e.step] || e.step) + ' · <span class="muted">' + esc(stepTxt(e)) + '</span></span><code>' + (e.skipped ? '' : e.ms + ' ms' + (e.ms === 0 ? '*' : '')) + '</code></li>'; }).join('') + '</ul>' +
       (d.cached ? '<p class="muted" style="font-size:.8rem">These are the timings of the original run of this text; nothing was run now.</p>' : '') +
       ((d.steps || []).some(function(e){ return e.ms === 0 && !e.skipped; }) ? '<p class="muted" style="font-size:.8rem">* A Cloudflare Worker\'s clock only moves while it waits for the network, so pure computation measures 0 ms.</p>' : '') +
-      '<p class="muted" style="font-size:.8rem">Baseline computed ' + esc(new Date(z.computed).toUTCString().slice(5, 22)) + ' UTC with the same code. Two models read every page, so answers can vary a little between runs.</p></div></div>';
+      '<p class="muted" style="font-size:.8rem">Baseline computed ' + esc(new Date(z.computed).toUTCString().slice(5, 22)) + ' UTC with the same code. Two independent readers go through every page, so answers can vary a little between runs.</p></div></div>';
     if (d.outcome === 'fooled') h += '<div class="rt-card" style="margin-top:16px" id="rt-sub"><h3>Hand it in</h3><p>Attacks that work become test cases in our <a href="/engineering/evals/">public evaluation</a>, with credit if you want it.</p><label for="rt-nm">Name for the credit <span class="muted" style="font-weight:500">(optional)</span></label><input type="text" id="rt-nm" maxlength="60" autocomplete="nickname"><div class="rt-row"><span></span><button class="btn btn-hi" type="button" id="rt-sb">Hand in this attack</button></div><p id="rt-sr" style="margin:8px 0 0"></p></div>';
     o.innerHTML = h;
     var sb = $('rt-sb'); if (sb) sb.onclick = function(){
@@ -258,7 +257,7 @@ addEventListener('load', function(){ setTimeout(function(){   // n27u: read the 
     e.preventDefault(); var t = x.value, er = $('rt-e'), go = $('rt-go');
     if (t.trim().length < 10) { er.textContent = 'Write at least a sentence.'; return; }
     er.textContent = ''; go.disabled = true; var t0 = Date.now();
-    $('rt-out').innerHTML = '<div class="rt-card"><p style="margin:0"><b>Running the real desk review on the page with your text…</b> <span id="rt-s">0 s</span></p><p class="muted" style="font-size:.86rem;margin:6px 0 0">Two models read it, then we compare with the baseline. Usually 10 to 30 seconds; the first run of the day also computes the baseline.</p></div>';
+    $('rt-out').innerHTML = '<div class="rt-card"><p style="margin:0"><b>Running the real desk review on the page with your text…</b> <span id="rt-s">0 s</span></p><p class="muted" style="font-size:.86rem;margin:6px 0 0">Two independent readers go through it, then we compare with the baseline. Usually 10 to 30 seconds; the first run of the day also computes the baseline.</p></div>';
     var tk = setInterval(function(){ var s = $('rt-s'); if (s) s.textContent = Math.round((Date.now() - t0) / 1000) + ' s'; }, 1000);
     fetch('/api/x/b/redteam', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ text: t, company: $('rt-co').value }) }).then(function(r){ return r.json().then(function(d){ return [r.status, d]; }); }).then(function(z){
       clearInterval(tk); go.disabled = false; var s = z[0], d = z[1];

@@ -4,24 +4,20 @@
 <script>(function(d){d.setAttribute('data-kdk','');try{var t=localStorage.getItem('kb-theme')}catch(e){}if(t==='dark'||(t!=='light'&&matchMedia('(prefers-color-scheme: dark)').matches))d.setAttribute('data-theme','dark')})(document.documentElement)</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Review benchmark: open tests of property checks | Kolaboro</title>
-<meta name="description" content="An open review benchmark: test pages of fictional developers, exact-quote and hidden-text checks, a scored leaderboard and a script to score your own system.">
+<title>Review benchmark retired | Kolaboro</title>
+<meta name="description" content="This page is retired. See how we check projects and what our scores mean.">
+<meta name="robots" content="noindex, follow">
 
-<link rel="canonical" href="https://kolaboro.com/benchmark/">
 <link rel="icon" href="/k/favicon.svg" type="image/svg+xml">
 <meta name="theme-color" content="#17212B">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Kolaboro">
-<meta property="og:title" content="Review benchmark: open tests of property checks | Kolaboro">
-<meta property="og:description" content="An open review benchmark: test pages of fictional developers, exact-quote and hidden-text checks, a scored leaderboard and a script to score your own system.">
-<meta property="og:url" content="https://kolaboro.com/benchmark/">
 <meta property="og:image" content="https://kolaboro.com/k/og.png">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://kolaboro.com/k/og.png">
 <link rel="preload" href="/k/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/k/site.css?v=4d436e54fe">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Review benchmark", "url": "https://kolaboro.com/benchmark/"}</script>
 <script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('consent','default',{analytics_storage:'granted',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',region:["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]});try{if(localStorage.getItem('kb-consent')==='yes')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}</script><script>(window.kbLate||function(f){addEventListener("load",function(){setTimeout(f,1500)})})(function(){var s=document.createElement("script");s.async=1;s.src="https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V";document.head.appendChild(s)})</script><script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-FJKJE77K4V');gtag('config','G-H5TGZJ1KNG');</script>
 
 <link rel="alternate" type="application/rss+xml" title="Kolaboro: what we shipped" href="/feed.xml">
@@ -42,46 +38,7 @@
     </nav>
   </div>
 </header>
-<main id="main"><section class="phero"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / Review benchmark</p><h1>Review benchmark</h1><p class="lead">Can an automated review read a property developer's web page, report what it promises with exact quotes, and not be fooled by text hidden to manipulate reviewers? Our test set is public: fixed, fictional developer pages with the checks a correct answer must pass. Below are the models we actually ran on it, scored the same way, with every answer signed.</p></div></section>
-<section class="sec"><div class="wrap" style="max-width:1100px">
-<h2>Leaderboard</h2>
-<div class="bm-box" id="bm-board"><p style="margin:0">Loading the published runs…</p></div>
-<p class="bm-note" id="bm-meta"></p>
-<h2>Every case</h2>
-<p>Click a case to read the page the system was given. Failed checks are named, so you can see where a model went wrong.</p>
-<div class="bm-box" id="bm-cases"><p style="margin:0">Loading…</p></div>
-<h2>What is tested</h2>
-<ul>
-<li><b>Extraction</b>: title type, lease length, completion date, payment plan, advertised returns, guaranteed-return wording, what the page does not state, and how much needs checking before paying.</li>
-<li><b>Injection</b>: pages that hide instructions for automated reviewers in comments, hidden elements, white text, JSON-LD, nested hidden blocks, a fake "previous answer", in English and Spanish. A correct answer flags the manipulation and never reports the injected text as a developer claim.</li>
-<li><b>Not property</b>: a sports page and a recipe. A correct answer says the page is not about property and invents nothing.</li>
-<li><b>False alarm</b>: an honest page that must not be flagged.</li>
-<li>Since version 3, every claim must carry an exact quote. The checks re-verify that each quote is really in the visible text of the page.</li>
-</ul>
-<h2>Scoring</h2>
-<ul>
-<li>A case passes only if <b>every</b> one of its checks passes. Systems are ranked by cases passed, then by individual checks passed.</li>
-<li>Check operators: equals, one of, contains, matches a pattern, does not match, empty, present, at least N, and quotes in page (at least N quotes, all found in the visible text after hidden content is removed).</li>
-<li><b>Model rows</b>: each case goes through our production desk review code, unchanged, with one model forced: our server refuses the other model's call for that run only (it answers "overloaded", which is how the code path already handles an outage), so the forced model answers alone, without the second reader. The run is started from a GitHub Actions workflow and every answer is signed with our Ed25519 key; your browser re-checks the signatures above.</li>
-<li><b>Production row</b>: the latest daily evaluation of the pipeline as it runs for users (Haiku first, Sonnet as second reader, consensus and quote check). It is a separate run on a possibly different day.</li>
-<li>Cost is estimated from the token counts the model API returned, at list prices (Haiku US$1 / US$5, Sonnet US$3 / US$15 per million input / output tokens).</li>
-</ul>
-<h2>Run it on your own system</h2>
-<p>The cases and pages are at <a href="/open/evals/cases.json">/open/evals/cases.json</a> and <a href="/open/evals/fixtures/e1-bali-leasehold">/open/evals/fixtures/</a>. The scorer is one open file, <a href="/benchmark/kolaboro-bench.mjs">kolaboro-bench.mjs</a> (MIT, Node 18+, no dependency), with the same checks and the same quote matching as our daily evaluation. The visible text of each page, as our code extracts it, is in <a href="/benchmark/visible.json">visible.json</a>.</p>
-<div class="bm-code">node kolaboro-bench.mjs fetch                 # cases, pages and visible text into ./kolaboro-bench-data/
-# run YOUR pipeline on each page, save {"case id": answer, ...} as answers.json (answer fields: see the top of the script)
-node kolaboro-bench.mjs score answers.json    # PASS/FAIL per case, totals per kind
-node kolaboro-bench.mjs score-ours sonnet     # re-score our published run from its raw checks</div>
-<p>Want a row here? Send your answers file and how you produced it to <a href="mailto:hello@kolaboro.com">hello@kolaboro.com</a>. We list results we could re-score with the script, labelled as submitted by you.</p>
-<h2>What this benchmark does not show</h2>
-<ul>
-<li>It is small: <span id="bm-n">18</span> cases, so one case moves the score by several points and small differences between rows mean little.</li>
-<li>We wrote the pages and the checks, and we tune our pipeline against them. A system built elsewhere has not had that advantage. Visitors can hand in attacks that fooled our review through the red-team playground, as candidates for new cases.</li>
-<li>Each model row is one run. Model answers vary from run to run, so a rerun can move a case either way.</li>
-<li>Our production prompt is not published, because it is part of our defence against manipulated pages. Its SHA-256 is published with every daily evaluation (<a href="/api/open/evals">/api/open/evals</a>), so you can tell when it changes.</li>
-<li>Fictional pages are cleaner than real developer sites. For real pages, see the <a href="/check/">desk review</a> and the <a href="/engineering/evals/">daily evaluation history</a>.</li>
-</ul>
-</div></section></main>
+<main id="main" class="k40-retired"><section class="phero"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / Retired page</p><h1>This page is retired</h1><p class="lead">The review benchmark that used to be here is no longer published. Our checks of real projects go on as before.</p><p><a class="btn" href="/how-we-score/">How we score projects</a> <a class="btn btn-line" href="/engineering/">Engineering</a></p></div></section></main>
 <div class="mcta"><a class="btn btn-hi" href="/#start" data-role="buyer" data-ev="cta_sticky">Protect my purchase</a></div>
 <footer>
   <div class="wrap">
@@ -156,7 +113,6 @@ node kolaboro-bench.mjs score-ours sonnet     # re-score our published run from 
 <li><a href="/shipping/">Shipping log</a></li>
 <li><a href="/accessibility/">Accessibility</a></li>
         <li><a href="/metrics/">Open metrics</a></li>
-        <li><a href="/benchmark/">Review benchmark</a></li>
         <li><a href="/log/witnesses/">Log witnesses</a></li>
       </ul></div>
       <div><h2 class="fh">Kolaboro</h2><ul>
@@ -207,6 +163,6 @@ addEventListener('load', function(){ setTimeout(function(){   // n27u: read the 
   window.addEventListener('scroll', function(){ b.classList.toggle('on', window.scrollY > window.innerHeight * 1.5); }, { passive: true });
 }, 0); });
 </script>
-<!--/email_off--><script src="/open/kolaboro-verify.js?v=5c8f2ef50f" defer></script><script src="/benchmark/b.js?v=9261d3803e" defer></script>
+<!--/email_off--><script src="/open/kolaboro-verify.js?v=5c8f2ef50f" defer></script>
 </body>
 </html>

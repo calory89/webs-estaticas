@@ -7,7 +7,7 @@ const MAP = {
 '/score/': '/how-we-score/', '/report/': '/report/sample/', '/docs/': '/docs/api/', '/guides/': '/guides/buying-off-plan/',
 '/data/visual-tests.json': '/data/quality.json', '/data/page-weight.json': '/data/quality.json',
 '/open/evals/': '/engineering/evals/',
-'/data/coast/': '/data/#coast-tiles', '/data/mangroves/': '/data/#mangrove-tiles', '/data/benchmark/': '/data/#benchmark',
+'/data/coast/': '/data/#coast-tiles', '/data/mangroves/': '/data/#mangrove-tiles',
 '/x/': '/check/', '/x': '/check/', '/pay': '/pricing/', '/pay/': '/pricing/', '/k/sat/': '/satellite/', '/k/sat': '/satellite/'
 };
 const GONE = new Set(['/6', '/p/HO', '/k']);

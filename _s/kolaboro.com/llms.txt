@@ -137,7 +137,6 @@
 - [Mystery shopper: the standard questions for developers and how answers will be measured (not started yet)](https://kolaboro.com/mystery-shopper/)
 - [Website change watch: where developer websites visibly changed, as page geometry only](https://kolaboro.com/visual/)
 - [Off-plan asking-price index: chained same-project index of advertised prices per market, history from 28 Oct 2026](https://kolaboro.com/index/prices/)
-- [Open review benchmark for property due diligence: public test pages, signed answers, leaderboard](https://kolaboro.com/benchmark/)
 - [Public log witnesses: open kit to check the log only grows and cosign it](https://kolaboro.com/log/witnesses/)
 - [Signed webhooks for partners: Ed25519-signed events when a project's public record changes](https://kolaboro.com/docs/webhooks/)
 - [Open-source scoring rules](https://kolaboro.com/open/scoring.py)

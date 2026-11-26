@@ -5,9 +5,9 @@
  "base": "https://kolaboro.com",
  "licence_default": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
  "summary": {
-  "datasets": 550,
-  "files": 606,
-  "bytes": 169413235,
+  "datasets": 549,
+  "files": 604,
+  "bytes": 169314031,
   "contracts_pass": 71,
   "contracts_fail": 3,
   "api_operations": 70,
@@ -1687,62 +1687,6 @@
    },
    "last_updated": "2026-11-04T08:57:27Z",
    "frequency": "NEVER"
-  },
-  {
-   "id": "benchmark",
-   "title": "Desk review benchmark",
-   "description": "Results of the desk review benchmark on fixed fictional cases, one file per reader configuration, each case answer signed with the Kolaboro Ed25519 key.",
-   "kind": "operations",
-   "workflow": "kolaboro-benchmark.yml",
-   "schedule": "on demand",
-   "interval_hours": null,
-   "keywords": [
-    "desk review",
-    "benchmark"
-   ],
-   "licence": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
-   "described": true,
-   "bytes": 99204,
-   "url": "https://kolaboro.com/data/benchmark/",
-   "file_count": 2,
-   "sha256": "a94237d9894f0ec53e52ee1283d4962c9464f877b5ceeb6e7fba7bb2cb95b33f",
-   "sha256_of": "the sorted list of \"sha256  path\" lines, one per file (sha256sum format)",
-   "format": "json",
-   "media_type": "application/json",
-   "files": [
-    {
-     "path": "benchmark/haiku.json",
-     "url": "https://kolaboro.com/data/benchmark/haiku.json",
-     "http": 200,
-     "bytes": 52010,
-     "sha256": "312e780ae2236dd4cc087b9018b9e7f5a3df8b9af1901f291b0c27232f9c86d6"
-    },
-    {
-     "path": "benchmark/sonnet.json",
-     "url": "https://kolaboro.com/data/benchmark/sonnet.json",
-     "http": 200,
-     "bytes": 47194,
-     "sha256": "03598df3776484a426208369f4bf517d7fdd7b8585021b7ee2ee7dde6556c138"
-    }
-   ],
-   "download_hint": "One file per item: benchmark/haiku.json, benchmark/sonnet.json ...",
-   "contract": "pass",
-   "schema_url": "https://kolaboro.com/api/x/data/schema/benchmark.json",
-   "rows": 36,
-   "rows_unit": "cases",
-   "freshness": {
-    "stamp_key": "started",
-    "stamp": "2026-11-03T22:59:11Z",
-    "date_only": false,
-    "published_at": "2026-11-03T23:02:30Z",
-    "data_as_of": "2026-11-03T22:59:11Z",
-    "target_hours": null,
-    "age_hours": 540.33,
-    "event_driven": false,
-    "status": "no_target"
-   },
-   "last_updated": "2026-11-03T22:59:11Z",
-   "frequency": "IRREG"
   },
   {
    "id": "a11y",
@@ -19850,5 +19794,22 @@
   "by": "https://kolaboro.com/open/catalog-refresh.py",
   "datasets_changed": 0,
   "note": "Sizes, hashes, row counts and stamps of files changed since generated_at, read from the published files. Contracts, probes and freshness status are from generated_at."
- }
+ },
+ "changes": [
+  {
+   "date": "2026-11-26",
+   "dataset": "benchmark",
+   "change": "retired: the desk review test results and their page are no longer published"
+  },
+  {
+   "date": "2026-11-26",
+   "dataset": "live-findings",
+   "change": "reader name and per-token prices dropped from the method block and the run log"
+  },
+  {
+   "date": "2026-11-26",
+   "dataset": "undescribed-worker-modules-json",
+   "change": "module descriptions shortened to what each module does"
+  }
+ ]
 }

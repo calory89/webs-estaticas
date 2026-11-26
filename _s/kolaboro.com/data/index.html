@@ -48,7 +48,7 @@
 <section class="phero"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / <a href="/docs/api/">Open data and API</a> / Data catalog</p>
 <h1>Open data catalog</h1>
 <p class="lead">Every file we publish under /data/, measured by a job every day: licence, how often it changes, when it last changed, size, rows, SHA-256, its data contract and a download link. Most files use project ids; each project also has its own page with its name and sourced facts.</p>
-<div class="kd-k" id="kdTotals"><div><b>550</b><span>datasets (606 files, 158.6 MB)</span></div><div><b>71/74</b><span>files pass their contract</span></div><div><b id="kdFreshN">39/41</b><span>on time (<span id="kdLateN">2</span> late, 509 without schedule)</span></div><div><b>70/70</b><span>API answers match the OpenAPI description</span></div></div>
+<div class="kd-k" id="kdTotals"><div><b>549</b><span>datasets (604 files, 158.5 MB)</span></div><div><b>71/74</b><span>files pass their contract</span></div><div><b id="kdFreshN">39/41</b><span>on time (<span id="kdLateN">2</span> late, 509 without schedule)</span></div><div><b>70/70</b><span>API answers match the OpenAPI description</span></div></div>
 <p class="kd-meta">Measured 2026-11-26T11:19:10Z by the <a href="#method">catalog job</a>. Ages below update live from <a href="/api/x/data/freshness">/api/x/data/freshness</a>. <span id="kdLive" aria-live="polite"></span></p>
 <p class="kd-jump"><a href="#datasets">Datasets</a> <a href="#contracts">Contracts</a> <a href="#freshness">Freshness</a> <a href="#machine">Machine-readable</a> <a href="#method">Method and limits</a></p>
 </div></section>
@@ -220,12 +220,7 @@
 <p class="kd-sha"><span>SHA-256</span> <code title="abc930436e93e2e54c28ba9ecfc6215065f136a046295747ab4626b3fd4e7544">abc930436e93e2e5...fd4e7544</code> <button type="button" class="kd-copy" data-copy="abc930436e93e2e54c28ba9ecfc6215065f136a046295747ab4626b3fd4e7544" aria-label="Copy SHA-256 of Product roadmap">Copy</button></p>
 <div class="kd-act"><a class="btn btn-hi btn-sm" href="https://kolaboro.com/data/roadmap.json" download aria-label="Download: Product roadmap">Download</a> <span class="kd-links"><a href="https://kolaboro.com/api/x/data/schema/roadmap.json" aria-label="Schema of Product roadmap">schema</a> · <span class="kd-c kd-ok-t">contract passes</span></span></div></article>
 </div>
-<h3 class="kd-h3">How the service checks itself <span>(15)</span></h3><div class="kd-list">
-<article class="kd-d" id="benchmark" data-id="benchmark"><div class="kd-top"><h4>Desk review benchmark</h4><span class="kd-pill kd-na">no schedule</span></div>
-<p class="kd-desc">Results of the desk review benchmark on fixed fictional cases, one file per reader configuration, each case answer signed with the Kolaboro Ed25519 key.</p>
-<dl class="kd-f"><div><dt>Licence</dt><dd>CC BY 4.0 (credit: Kolaboro, kolaboro.com)</dd></div><div><dt>Updates</dt><dd>on demand</dd></div><div><dt>Last updated</dt><dd>2026-11-03T22:59:11Z</dd></div><div><dt>Age</dt><dd><span class="kd-age">22.5 days</span></dd></div><div><dt>Size</dt><dd>96.9 KB</dd></div><div><dt>Rows</dt><dd>36 cases</dd></div></dl>
-<p class="kd-sha"><span>SHA-256</span> <code title="a94237d9894f0ec53e52ee1283d4962c9464f877b5ceeb6e7fba7bb2cb95b33f">a94237d9894f0ec5...cb95b33f</code> <button type="button" class="kd-copy" data-copy="a94237d9894f0ec53e52ee1283d4962c9464f877b5ceeb6e7fba7bb2cb95b33f" aria-label="Copy SHA-256 of Desk review benchmark">Copy</button></p>
-<p class="kd-x">2 files under <code>https://kolaboro.com/data/benchmark/</code>. SHA-256 is over the sorted list of file hashes.</p><div class="kd-act"><a class="btn btn-line btn-sm" href="https://kolaboro.com/data/benchmark/haiku.json" aria-label="First file of Desk review benchmark">First file</a> <span class="kd-links"><a href="https://kolaboro.com/api/x/data/schema/benchmark.json" aria-label="Schema of Desk review benchmark">schema</a> · <span class="kd-c kd-ok-t">contract passes</span></span></div></article>
+<h3 class="kd-h3">How the service checks itself <span>(14)</span></h3><div class="kd-list">
 <article class="kd-d" id="a11y" data-id="a11y"><div class="kd-top"><h4>Accessibility audit</h4><span class="kd-pill kd-ok">on time</span></div>
 <p class="kd-desc">axe-core audit of every page (WCAG 2.2 AA rules) with counts per rule and page and the run history.</p>
 <dl class="kd-f"><div><dt>Licence</dt><dd>CC BY 4.0 (credit: Kolaboro, kolaboro.com)</dd></div><div><dt>Updates</dt><dd>monthly, on the 19th at 02:47 UTC</dd></div><div><dt>Last updated</dt><dd>2026-11-22T05:05:39.806Z</dd></div><div><dt>Age</dt><dd><span class="kd-age">4.3 days</span> of 33 days target</dd></div><div><dt>Size</dt><dd>39.6 KB</dd></div><div><dt>Rows</dt><dd>535 pages</dd></div></dl>
@@ -344,8 +339,6 @@ d.addEventListener('toggle',function(){if(d.open)load()});if(/^#undescribed/.tes
 <tr id="c-a11y"><td><code>a11y.json</code></td><td><span class="kd-ok-t">pass</span></td><td>&nbsp;</td></tr>
 <tr id="c-bali-cases"><td><code>bali-cases.json</code></td><td><span class="kd-ok-t">pass</span></td><td>&nbsp;</td></tr>
 <tr id="c-bali-claims"><td><code>bali-claims.json</code></td><td><span class="kd-ok-t">pass</span></td><td>&nbsp;</td></tr>
-<tr id="c-benchmark"><td><code>benchmark/haiku.json</code></td><td><span class="kd-ok-t">pass</span></td><td>&nbsp;</td></tr>
-<tr><td><code>benchmark/sonnet.json</code></td><td><span class="kd-ok-t">pass</span></td><td>&nbsp;</td></tr>
 <tr id="c-builds"><td><code>builds.json</code></td><td><span class="kd-ok-t">pass</span></td><td>&nbsp;</td></tr>
 <tr id="c-chaos"><td><code>chaos.json</code></td><td><span class="kd-ok-t">pass</span></td><td>&nbsp;</td></tr>
 <tr id="c-coast-tiles"><td><code>coast/ (36 files)</code></td><td><span class="kd-ok-t">pass</span></td><td>&nbsp;</td></tr>
@@ -636,7 +629,6 @@ d.addEventListener('toggle',function(){if(d.open)load()});if(/^#undescribed/.tes
 <li><a href="/shipping/">Shipping log</a></li>
 <li><a href="/accessibility/">Accessibility</a></li>
         <li><a href="/metrics/">Open metrics</a></li>
-        <li><a href="/benchmark/">Benchmark</a></li>
         <li><a href="/log/witnesses/">Log witnesses</a></li>
       </ul></div>
       <div><h2 class="fh">Kolaboro</h2><ul>
