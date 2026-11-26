@@ -245,7 +245,7 @@ function pressPlace(ix, slug, lang) {
   if (f.med != null) q.push(te(lang, 'q_med', { p: P, s: nf(lang, f.med) }));
   const cite = te(lang, 'cite_t', { p: P, d: D, u: '<bdi>' + esc(url) + '</bdi>' });
   const body = '<div class="kpg">' + head(lang, [[t(lang, 'crumb_press'), '/press/'], [t(lang, 'crumb_places'), pre(lang) + PRESS_P], [nm, pre(lang) + path]], te(lang, 'r_h1', { p: P }), te(lang, 'r_lead', { p: P, d: D })) +
-    '<div class="k-grid">' + figs + '</div><p class="k-small">' + src + ' <span class="k-muted">' + esc(tx(lang, 'upd', { d: fdt(d, lang) })) + '</span></p>' +
+    '<div class="k-grid">' + figs + '</div><p class="k-small">' + src + ' <span class="k-muted">' + esc(tx(lang, 'upd', { d: fdt(d, lang) })) + '</span></p>' + '<p class="k-small" id="definition">' + esc(t(lang, 'k18_def')) + ' <a href="' + pre(lang) + '/rankings/most-delayed/">' + esc(t(lang, 'k18_md')) + '</a></p>' +
     '<h2 id="quotes">' + esc(t(lang, 'q_h')) + '</h2><ul class="kpg-q">' + q.map(x => '<li><blockquote>' + x + '</blockquote></li>').join('') + '</ul>' +
     '<h2 id="cite">' + esc(t(lang, 'cite_h')) + '</h2><p class="kpg-cite">' + cite + '</p>' +
     '<h2 id="sources">' + esc(t(lang, 'rs_h')) + '</h2><ul>' + t(lang, 'rs').map(s => '<li>' + esc(fill(s, { d: fdt(d, lang) })) + '</li>').join('') + '</ul>' +

@@ -309,7 +309,7 @@ function pDelayed(B, market) {
   const where = market ? market + ', ' + B.mToC.get(market) : 'all markets';
   let body = '<div class="sx-sum" id="summary"><p><b>' + L.length + ' tracked off-plan project' + (L.length === 1 ? ' is' : 's are') + ' past the first handover date we have on record in ' + esc(where) + '</b>' + (L.length ? '; the furthest by ' + L[0].lm.late + ' months, the median by ' + median(L.map(o => o.lm.late)) + ' months' : '') + '. Month of reference: ' + ymName(B.ontime.as_of_month + '-01') + TB.kbx_seo__s.k37;
   body += tableWrap(DHEAD, delayRows(B, L.slice(0, 200)));
-  body += TB.kbx_seo__s.k38;
+  body += TB.kbx_seo__s.k38 + '<p class="sx-src" id="definition">How this count differs: it includes projects that later moved their date or have since been completed. The press figures by place count only projects not yet completed whose current published date has passed, so their number can be lower. <a href="/press/places/">Press figures by place</a></p>';   // n40 k18 (R08-03, R08-28)
   body += h2('markets', 'By market') + '<ul class="sx-chips">' + (market ? '<li><a href="/rankings/most-delayed/">All markets</a></li>' : '') + mw.filter(([m]) => m !== market).map(([m, n]) => '<li><a href="/rankings/most-delayed/' + slug(m) + '/">' + esc(m) + ' (' + n + ')</a></li>').join('') + '</ul>' + TB.kbx_seo__s.REPLY;
   const path = market ? '/rankings/most-delayed/' + slug(market) + '/' : '/rankings/most-delayed/';
   const cr = [['Kolaboro', '/'], ['Rankings', '/rankings/'], ['Most delayed', '/rankings/most-delayed/']]; if (market) cr.push([market, path]);
