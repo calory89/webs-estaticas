@@ -63,13 +63,15 @@ jobs:
           K=_s/kolaboro.com
           git show FETCH_HEAD:$K/data/bali-cases.json > $I/cases.json
           git show FETCH_HEAD:$K/data/price-index.json > $I/prices.json || true
+          git show FETCH_HEAD:$K/data/named.json > $I/named.json || true      # n40 k27: dated handover records for the current handover month
+          git show FETCH_HEAD:$K/data/promises.json > $I/promises.json || true
           git show FETCH_HEAD:$K/data/delay-index.json > $I/delay.json || true
           git show FETCH_HEAD:$K/data/on-time.json > $I/ontime.json || true
           git show FETCH_HEAD:$K/press/monthly/release.json > $I/release.json || true
           git show FETCH_HEAD:$K/press/monthly/index.html > $I/page.html || true
           F=""
           if [ "${{ github.event_name }}" = "push" ] || [ "${{ github.event.inputs.press }}" = "yes" ]; then F="--force-press"; fi
-          python3 tools/kolaboro-v/delay_index.py --cases $I/cases.json --prices $I/prices.json --prev-delay $I/delay.json --prev-ontime $I/ontime.json \
+          python3 tools/kolaboro-v/delay_index.py --cases $I/cases.json --named $I/named.json --promises $I/promises.json --prices $I/prices.json --prev-delay $I/delay.json --prev-ontime $I/ontime.json \
             --prev-release $I/release.json --template $I/page.html --out $O $F | tee $RUNNER_TEMP/summary.json
           echo "### Delay index" >> $GITHUB_STEP_SUMMARY; cat $RUNNER_TEMP/summary.json >> $GITHUB_STEP_SUMMARY
       - name: Publish to kolaboro.com

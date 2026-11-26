@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Kolaboro delivery-delay index, on-time odds and the monthly press release (block V, 4 Nov 2026).
 
-Inputs are public files only (/data/bali-cases.json, /data/price-index.json) plus the previously published outputs,
+Inputs are public files only (/data/bali-cases.json, /data/named.json, /data/promises.json, /data/price-index.json) plus the previously published outputs,
 so that every figure can be recomputed in a browser. Outputs (written to OUT):
   delay-index.json   per-market share past the first promised handover, median and P90 months late, monthly history
   on-time.json       per project id: status and, where possible, an empirical odds of handover within 6 months
@@ -56,7 +56,156 @@ def pct(a, b):
     return round(100.0 * a / b, 1) if b else None
 
 
-def derive(c, NOW):
+# ---------- handover dates: the same parser and rules as the site (_worker.js kbx_hdate.js hparse/hkey, kbx_named.js handoverOf) ----------
+# n40 k27 (26 Nov 2026): the currently published handover month comes from the best available record, not only from the overdue watcher.
+_MONW = {'jan': 1, 'january': 1, 'feb': 2, 'february': 2, 'mar': 3, 'march': 3, 'apr': 4, 'april': 4, 'may': 5, 'jun': 6, 'june': 6, 'jul': 7, 'july': 7, 'aug': 8, 'august': 8,
+         'sep': 9, 'sept': 9, 'september': 9, 'oct': 10, 'october': 10, 'nov': 11, 'november': 11, 'dec': 12, 'december': 12,
+         'enero': 1, 'febrero': 2, 'marzo': 3, 'abril': 4, 'mayo': 5, 'junio': 6, 'julio': 7, 'agosto': 8, 'septiembre': 9, 'setiembre': 9, 'octubre': 10, 'noviembre': 11, 'diciembre': 12,
+         'janeiro': 1, 'fevereiro': 2, 'março': 3, 'marco': 3, 'maio': 5, 'junho': 6, 'julho': 7, 'setembro': 9, 'outubro': 10, 'novembro': 11, 'dezembro': 12,
+         'janvier': 1, 'février': 2, 'fevrier': 2, 'mars': 3, 'avril': 4, 'mai': 5, 'juin': 6, 'juillet': 7, 'août': 8, 'aout': 8, 'septembre': 9, 'octobre': 10, 'novembre': 11, 'décembre': 12, 'decembre': 12,
+         'januar': 1, 'februar': 2, 'märz': 3, 'maerz': 3, 'juni': 6, 'juli': 7, 'oktober': 10, 'dezember': 12,
+         'januari': 1, 'februari': 2, 'maart': 3, 'mei': 5, 'augustus': 8, 'gennaio': 1, 'febbraio': 2, 'aprile': 4, 'maggio': 5, 'giugno': 6, 'luglio': 7, 'settembre': 9, 'ottobre': 10, 'dicembre': 12}
+_SEASON = {'spring': 'sp', 'summer': 'su', 'fall': 'au', 'autumn': 'au', 'winter': 'wi', 'primavera': 'sp', 'verano': 'su', 'otoño': 'au', 'invierno': 'wi', 'printemps': 'sp', 'été': 'su',
+           'automne': 'au', 'hiver': 'wi', 'frühling': 'sp', 'frühjahr': 'sp', 'sommer': 'su', 'herbst': 'au', 'voorjaar': 'sp', 'zomer': 'su', 'najaar': 'au'}
+_PART = {'early': 'b', 'beginning': 'b', 'start': 'b', 'mid': 'm', 'middle': 'm', 'late': 'l', 'end': 'e', 'principios': 'b', 'inicios': 'b', 'comienzos': 'b', 'mediados': 'm',
+         'finales': 'e', 'fines': 'e', 'début': 'b', 'debut': 'b', 'fin': 'e', 'anfang': 'b', 'mitte': 'm', 'ende': 'e', 'begin': 'b', 'medio': 'm', 'eind': 'e'}
+_W = '[A-Za-zÀ-ÿçñäöüßéèêûôâîœ.]+'
+_Y = '((?:19|20)\\d\\d)(?![\\d])'
+_B = '(?![A-Za-z0-9_])'   # JavaScript \b after a word character (ASCII)
+
+
+def _mon(w):
+    return _MONW.get(re.sub(r'\.$', '', str(w or '').lower()))
+
+
+def _ordq(w):
+    w = re.sub(r'[º°.]|st|nd|rd|th|er', '', w.lower())
+    o = {'first': 1, 'primer': 1, 'second': 2, 'segundo': 2, 'third': 3, 'tercer': 3, 'fourth': 4, 'cuarto': 4}.get(w) or (int(w) if w.isdigit() else 0)
+    return o if 1 <= o <= 4 else None
+
+
+_RX = [
+    (re.compile('^' + _Y + '-Q([1-4])' + _B, re.I), lambda m: {'y': int(m[1]), 'q': int(m[2])}),
+    (re.compile('^' + _Y + '-H([12])' + _B, re.I), lambda m: {'y': int(m[1]), 'h': int(m[2])}),
+    (re.compile('^' + _Y + '-(0[1-9]|1[0-2])-(0[1-9]|[12]\\d|3[01])' + _B), lambda m: {'y': int(m[1]), 'm': int(m[2]), 'd': int(m[3])}),
+    (re.compile('^' + _Y + '-(0[1-9]|1[0-2])(?![\\d-])'), lambda m: {'y': int(m[1]), 'm': int(m[2])}),
+    (re.compile('^(?:Q|T)([1-4])\\s*[/ .-]?\\s*' + _Y, re.I), lambda m: {'y': int(m[2]), 'q': int(m[1])}),
+    (re.compile('^([1-4])\\s*(?:Q|T)\\s*[/ .-]?\\s*' + _Y, re.I), lambda m: {'y': int(m[2]), 'q': int(m[1])}),
+    (re.compile('^H([12])\\s*[/ .-]?\\s*' + _Y, re.I), lambda m: {'y': int(m[2]), 'h': int(m[1])}),
+    (re.compile('^([12])H\\s*[/ .-]?\\s*' + _Y, re.I), lambda m: {'y': int(m[2]), 'h': int(m[1])}),
+    (re.compile('^' + _Y + '\\s*[/ -]\\s*H([12])' + _B, re.I), lambda m: {'y': int(m[1]), 'h': int(m[2])}),
+    (re.compile('^' + _Y + '\\s*[/ -]\\s*Q([1-4])' + _B, re.I), lambda m: {'y': int(m[1]), 'q': int(m[2])}),
+    (re.compile('^(first|second|last|primer|segundo|1er|1º|2º|1°|2°|1st|2nd|1\\.|2\\.)\\s+(?:half|semester|semestre|halbjahr)(?:\\s+(?:of|de|del))?\\s+' + _Y, re.I),
+     lambda m: {'y': int(m[2]), 'h': 1 if re.match('^(first|primer|1)', m[1].lower()) else 2}),
+    (re.compile('^(first|second|third|fourth|primer|segundo|tercer|cuarto|1er|1st|2nd|3rd|4th|[1-4]º|[1-4]°|[1-4]\\.)\\s+(?:quarter|trimestre|quartal)(?:\\s+(?:of|de|del))?\\s+' + _Y, re.I),
+     lambda m: {'y': int(m[2]), 'q': _ordq(m[1])} if _ordq(m[1]) else None),
+    (re.compile('^(early|beginning|start|mid|middle|late|end|principios|inicios|comienzos|mediados|finales|fines|d[ée]but|fin|anfang|mitte|ende|begin|medio|eind)(?:\\s*-\\s*|\\s+(?:of\\s+|de\\s+|del\\s+)?)' + _Y, re.I),
+     lambda m: {'y': int(m[2]), 'p': _PART.get(m[1].lower())}),
+    (re.compile('^mi-' + _Y, re.I), lambda m: {'y': int(m[1]), 'p': 'm'}),
+    (re.compile('^' + _Y + '\\s+(mid|end)-?year' + _B, re.I), lambda m: {'y': int(m[1]), 'p': 'm' if m[2].lower() == 'mid' else 'e'}),
+    (re.compile('^(' + '|'.join(_SEASON) + ')(?:\\s+(?:of|de|del))?\\s+' + _Y, re.I), lambda m: {'y': int(m[2]), 's': _SEASON[m[1].lower()]}),
+    (re.compile('^(\\d{1,2})\\s+(' + _W + ')\\s+(?:de\\s+)?' + _Y, re.I), lambda m: {'y': int(m[3]), 'm': _mon(m[2]), 'd': int(m[1])} if _mon(m[2]) else None),
+    (re.compile('^(' + _W + ')\\s+(\\d{1,2}),?\\s+' + _Y, re.I), lambda m: {'y': int(m[3]), 'm': _mon(m[1]), 'd': int(m[2])} if _mon(m[1]) else None),
+    (re.compile('^(' + _W + ')\\s+(?:de\\s+|del\\s+)?' + _Y, re.I), lambda m: {'y': int(m[2]), 'm': _mon(m[1])} if _mon(m[1]) else None),
+    (re.compile('^' + _Y + '\\s*年\\s*(1[0-2]|[1-9])\\s*月'), lambda m: {'y': int(m[1]), 'm': int(m[2])}),
+    (re.compile('^(0?[1-9]|1[0-2])\\s*/\\s*' + _Y + '(?!\\s*/)'), lambda m: {'y': int(m[2]), 'm': int(m[1])}),
+    (re.compile('^' + _Y + '(?:\\s*年)?(?![./:]\\d|-\\d{1,2}(?!\\d))'), lambda m: {'y': int(m[1])}),
+]
+
+
+def _head(t):
+    for rx, f in _RX:
+        m = rx.match(t)
+        if m:
+            v = f(m)
+            if v and 1990 <= v['y'] <= 2060:
+                return v, len(m.group(0))
+    return None
+
+
+def hparse(s):
+    if s is None:
+        return None
+    raw = str(s).strip()
+    if not raw:
+        return None
+    t = raw
+    th = re.match(r'^(.*?)[,;]?\s+then\s+(.+)$', t, re.I | re.S)
+    if th and _head(th.group(2).strip()):
+        t = th.group(2).strip()
+    mm = re.match(r'^(?:about|around|approx(?:imately|\.)?|ca\.|circa|hacia|vers|etwa|rond)\s+', t, re.I)
+    if mm:
+        t = t[len(mm.group(0)):]
+    mm = re.match(r'^phase\s+(?:1|i|one)(?![A-Za-z0-9_])[:,]?\s*(?:in\s+)?', t, re.I)
+    if mm:
+        t = t[len(mm.group(0)):]
+    a = _head(t)
+    if not a:
+        return None
+    rest, b = t[a[1]:], None
+    rg = re.match(r'^\s*(?:-|–|(?<![A-Za-z0-9_])to(?![A-Za-z0-9_])|(?<![A-Za-z0-9_])al(?![A-Za-z0-9_])|(?<=[A-Za-z0-9_])à(?=[A-Za-z0-9_])|(?<![A-Za-z0-9_])bis(?![A-Za-z0-9_])|(?<![A-Za-z0-9_])to\s+the(?![A-Za-z0-9_]))\s*', rest, re.I)
+    if rg:
+        z = _head(rest[len(rg.group(0)):])
+        if z and z[0]['y'] >= a[0]['y'] and (z[0]['y'] > a[0]['y'] or z[0] != a[0]):
+            b = z[0]
+    return {'a': a[0], 'b': b}
+
+
+def hkey(s):
+    """Last month of the period a handover text names, as 'YYYY-MM' (the site's hkey)."""
+    P = hparse(s)
+    if not P:
+        return None
+    v = P['b'] or P['a']
+    m = v.get('m') or (v['q'] * 3 if v.get('q') else v['h'] * 6 if v.get('h') else {'b': 3, 'm': 6, 'l': 10, 'e': 12}.get(v.get('p')) if v.get('p') else
+                       {'sp': 5, 'su': 8, 'au': 11, 'wi': 12}.get(v.get('s')) if v.get('s') else 12)
+    return '%d-%02d' % (v['y'], m)
+
+
+def hstart(s):
+    P = hparse(s)
+    if not P:
+        return None
+    v = P['a']
+    m = v.get('m') or (v['q'] * 3 - 2 if v.get('q') else v['h'] * 6 - 5 if v.get('h') else {'b': 1, 'm': 4, 'l': 9, 'e': 10}.get(v.get('p')) if v.get('p') else
+                       {'sp': 3, 'su': 6, 'au': 9, 'wi': 12}.get(v.get('s')) if v.get('s') else 1)
+    return '%d-%02d' % (v['y'], m)
+
+
+def kidx(k):
+    y, m = k.split('-')
+    return int(y) * 12 + int(m)
+
+
+def current_handover(pid, prom, named):
+    """The currently published handover date of one project, as the site shows it (kbx_named.js handoverOf):
+    the dated handover promise (promises.json), moved to a later date the same records show; else the handover in the
+    project's research record (named.json fx.handover_promised). Returns (month 'YYYY-MM', text, source, read date) or None."""
+    pr = (prom or {}).get(pid) or []
+    h = next((p for p in pr if p.get('k') == 'handover'), None)
+    x = (named or {}).get(pid) or {}
+    fx = x.get('fx') or {}
+    if h:
+        k0 = hkey(h.get('d'))
+        if k0:
+            best, bk = None, k0
+            seen0 = next((e.get('seen') for e in (h.get('hist') or []) if e and e.get('d') == h.get('d')), None) or ''
+            for d in [e.get('d') for e in (h.get('hist') or []) if e and (e.get('seen') or '') >= seen0] + [h.get('rd'), fx.get('handover_promised')]:
+                k = d and hkey(d)
+                s0 = d and hstart(d)
+                if k and s0 and (kidx(s0) >= kidx(k0) + 3 or (re.match(r'^\d{4}$', str(h.get('d')).strip()) and re.match(r'^\d{4}$', str(d).strip()) and int(d) > int(h['d']))) and k > bk:
+                    bk, best = k, d
+            seen = max([e.get('seen') or '' for e in (h.get('hist') or []) if e] + [h.get('seen') or ''])
+            if best:
+                return bk, best, 'promise', seen
+            return k0, h.get('d'), 'promise', seen
+    f = fx.get('handover_promised')
+    if f and hkey(f):
+        return hkey(f), f, 'record', (x.get('ad') or (x.get('rw') or {}).get('checked') or x.get('sealed') or '')[:10]
+    return None
+
+
+def derive(c, NOW, hc=None):
     """One project's dates in month indexes. cur = currently advertised handover, first = cur minus recorded moves."""
     st = c.get('stage')
     done = c.get('done') if isinstance(c.get('done'), int) else None
@@ -64,13 +213,18 @@ def derive(c, NOW):
     d = c.get('delay') if isinstance(c.get('delay'), (int, float)) and c.get('delay') > 0 else 0
     od, d = int(round(od)), int(round(d))
     completed = st == 'completed'
-    cur = None
+    cur, hs, hr = None, None, None
     if od:
-        cur = NOW - od                     # exact month: the overdue watcher counts from the advertised month
+        cur, hs = NOW - od, 'watcher'      # exact month: the overdue watcher counts from the advertised month
+    elif hc:
+        # n40 k27: the dated handover record the site shows (promises.json, else the research record in named.json), last month of the period it names
+        cur, hs, hr = kidx(hc[0]), hc[2], hc[3]
+        if not completed and cur < NOW:
+            od = NOW - cur                 # not completed and past the currently published month: counts in past_current like a watcher reading
     elif done:
-        cur = mi(done, 12)                 # year only: December assumed, which can only understate lateness
+        cur, hs = mi(done, 12), 'year'     # year only: December assumed, which can only understate lateness
     r = {'id': c['id'], 'market': c.get('market'), 'country': c.get('country'), 'stage': st, 'completed': completed,
-         'cur': cur, 'd': d, 'od': od, 'first': None, 'status': None, 'late': None}
+         'cur': cur, 'd': d, 'od': od, 'first': None, 'status': None, 'late': None, 'hs': hs, 'hr': hr}
     if cur is None:
         r['status'] = 'completed_no_date' if completed else 'no_date'
         return r
@@ -334,6 +488,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--cases', required=True)
     ap.add_argument('--prices')
+    ap.add_argument('--named', help='/data/named.json: research records with the handover date (fx.handover_promised)')
+    ap.add_argument('--promises', help='/data/promises.json: dated handover promises with their history')
     ap.add_argument('--prev-delay')
     ap.add_argument('--prev-ontime')
     ap.add_argument('--prev-release')
@@ -350,8 +506,15 @@ def main():
     NOWd = datetime.date.fromisoformat(upd[:10])
     NOW = mi(NOWd.year, NOWd.month)
     month = ym(NOW)
-    rows = [derive(c, NOW) for c in cases]
     inputs = [{'file': '/data/bali-cases.json', 'sha256': sha_file(a.cases), 'updated': upd, 'projects': len(cases)}]
+    NM, PR = {}, {}
+    if a.named and os.path.exists(a.named):
+        nj = json.load(open(a.named)); NM = {x['id']: x for x in nj.get('projects') or [] if x.get('id')}
+        inputs.append({'file': '/data/named.json', 'sha256': sha_file(a.named), 'updated': nj.get('updated'), 'projects': len(NM)})
+    if a.promises and os.path.exists(a.promises):
+        pj = json.load(open(a.promises)); PR = pj.get('projects') or {}
+        inputs.append({'file': '/data/promises.json', 'sha256': sha_file(a.promises), 'updated': pj.get('updated'), 'projects': len(PR)})
+    rows = [derive(c, NOW, current_handover(c['id'], PR, NM)) for c in cases]
 
     # ---- 1. delay index ----
     bym = {}
@@ -375,7 +538,8 @@ def main():
         'what': 'How far tracked off-plan projects are behind the first handover date we have on record, by market.',
         'rules': {'min_sample': MIN_MARKET, 'quantile': 'linear interpolation between order statistics (type 7, as numpy and spreadsheet PERCENTILE.INC)',
                   'month_now': month,
-                  'current_handover': 'month index of the currently advertised handover: today minus the overdue watcher months when overdue, else December of the advertised year',
+                  'current_handover': 'month of the currently published handover, from the best available record: the overdue watcher reading (today minus its months) when there is one; else the dated handover promise in /data/promises.json (moved to a later date when the same records show one); else the handover in the project research record in /data/named.json; the last month of the period named (a quarter counts as its third month, a year as December); else December of the advertised year in /data/bali-cases.json. on-time.json gives each project its source (hs) and the date the record was read (hr)',
+                  'past_current': 'not completed and the month now is after the current handover month (a watcher reading, or a dated record whose month has passed); a year-only date from /data/bali-cases.json that has passed without a reading stays inconsistent and is left out',
                   'first_handover': 'current handover minus the recorded months the date has moved (delay)',
                   'months_late': 'month now minus first handover, for projects not completed whose first handover has passed',
                   'share_past_first': 'projects past the first handover / projects not completed with a usable handover date',
@@ -393,6 +557,10 @@ def main():
         st = r['status']
         rec = {'s': st, 'm': r['market'], 'cur': ym(r['cur']) if r['cur'] else None, 'first': ym(r['first']) if r['first'] else None,
                'moved': r['d'], 'overdue': r['od']}
+        if r['hs']:
+            rec['hs'] = r['hs']
+        if r['hr']:
+            rec['hr'] = r['hr']
         if st == 'open':
             lvl, key, g = odds_group(pool, r)
             gk = lvl + ':' + key
@@ -449,7 +617,7 @@ def main():
                              'moved': 'not completed and the developer\'s own current date is more than %d months after the first one: no, unless it hands over earlier than it now says' % WINDOW,
                              'done_on_time': 'completed, recorded moves of %d months or less' % WINDOW, 'done_late': 'completed, recorded moves of more than %d months' % WINDOW,
                              'no_date': 'no handover date in the open data', 'completed_no_date': 'completed, no date in the open data',
-                             'inconsistent': 'a past handover year but no overdue reading: left out until its page is read again'}},
+                             'inconsistent': 'a past handover year in /data/bali-cases.json with no overdue reading and no dated handover record: left out until its page is read again'}},
         'why_not_stage': ('The brief for this estimate asked to match on stage and on months to the promised date. The open data has no dated record of what stage each closed project '
                           'was at, or when its delay was announced, so matching on today\'s stage would be circular (a project that handed over is "completed" because of the outcome). '
                           'The monthly snapshot below records stage, advertised date and moves for every project from %s %d, so comparables can be matched on stage and time to handover once those snapshots have closed windows.' % (MON[NOWd.month - 1], NOWd.year)),
@@ -575,7 +743,8 @@ def main():
         rel = prev_rel
 
     # ---- page from template ----
-    if a.template and os.path.exists(a.template) and rel:
+    # n40 k27: the page is only rewritten with a new edition; otherwise the published page (with any later edits to it) stays as it is
+    if a.template and os.path.exists(a.template) and rel and regenerate:
         t = open(a.template).read()
         e = html.escape
         hl = ''.join('<li><b class="pm-v">%s</b><span>%s</span><span class="pm-src">Source: %s</span></li>' % (
