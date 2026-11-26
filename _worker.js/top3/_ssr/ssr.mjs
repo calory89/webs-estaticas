@@ -21526,7 +21526,7 @@ async function cityStats() {
 	}
 	return [...by.values()];
 }
-var TX$2 = {
+var TX$3 = {
 	en: {
 		od_t: "Open data: hotel picks for 1,295 cities",
 		od_d: "Download the Top3Hotels dataset (CSV or JSON): three hotel picks per city with guest scores, review counts and reference prices. Free to reuse under CC BY 4.0.",
@@ -21612,7 +21612,7 @@ var TX$2 = {
 		more: "Ver los tres hoteles"
 	}
 };
-var tx = (L) => TX$2[L] ?? TX$2.en;
+var tx = (L) => TX$3[L] ?? TX$3.en;
 var GROWTH_LANGS = ["en", "es"];
 var fmt = (n) => n == null ? "" : money(n);
 var sc = (n) => n == null ? "" : n.toFixed(1);
@@ -22532,15 +22532,19 @@ var MANIFEST = JSON.stringify({
 });
 var CSS_DP = ".t3dp-btn{all:unset;box-sizing:border-box;display:block;width:100%;min-height:30px;cursor:pointer;font:600 15px/1.3 Inter,system-ui,sans-serif;color:#16202e;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}\n.t3dp-btn.empty{color:#4f5b6b;font-weight:500}\n.t3dp-btn:focus-visible{outline:2px solid #d83b51;outline-offset:3px;border-radius:6px}\n.t3-citybar .t3dp-btn,form .t3dp-btn{font-size:14px;padding:8px 10px;border:1px solid rgba(127,127,127,.3);border-radius:10px;background:rgba(127,127,127,.06);color:inherit;margin-top:4px}\nhtml.t3dp-open,html.t3dp-open body{overflow:hidden}\nhtml.t3dp-open #v2-sticky,html.t3dp-open .sticky3,html.t3dp-open [class*=lang-toast],html.t3dp-open .t3-langbar{display:none!important}\n.t3dp{position:fixed;inset:0;z-index:2147483000;display:flex;align-items:center;justify-content:center;font-family:Inter,system-ui,sans-serif;color:#16202e}\n.t3dp[hidden]{display:none}\n.t3dp-bd{position:absolute;inset:0;background:rgba(10,16,26,.45);backdrop-filter:blur(2px)}\n.t3dp-p{position:relative;background:#fff;border-radius:22px;box-shadow:0 30px 80px rgba(0,0,0,.35);width:min(680px,94vw);max-height:92vh;display:flex;flex-direction:column;padding:16px 18px 14px;animation:t3dpIn .18s ease-out}\n@keyframes t3dpIn{from{transform:translateY(12px);opacity:0}to{transform:none;opacity:1}}\n.t3dp-h{display:flex;align-items:center;gap:8px}\n.t3dp-s{all:unset;cursor:pointer;flex:1;border:1.5px solid #e3e7ee;border-radius:14px;padding:8px 12px;display:flex;flex-direction:column;gap:2px;min-width:0}\n.t3dp-s small{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#7a8594}\n.t3dp-s b{font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}\n.t3dp-s.on{border-color:#d83b51;box-shadow:0 0 0 3px rgba(216,59,81,.12)}\n.t3dp-ar{color:#9aa3af}\n.t3dp-c{all:unset;cursor:pointer;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-size:16px;color:#4a5566;flex:none}\n.t3dp-c:hover{background:#f1f3f6}\n.t3dp-hint{margin:10px 2px 10px;font-size:13px;color:#4a5566;min-height:18px}\n.t3dp-wk{display:none}\n.t3dp-nav{display:flex;justify-content:space-between;position:relative;height:0;z-index:2;pointer-events:none}\n.t3dp-nav[hidden]{display:none}\n.t3dp-nav button{all:unset;pointer-events:auto;cursor:pointer;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-size:22px;color:#16202e;background:#fff;border:1px solid #e3e7ee}\n.t3dp-nav button:disabled{opacity:.3;cursor:default}\n.t3dp-ms{display:grid;grid-template-columns:1fr 1fr;gap:26px;overflow:auto;padding:4px 2px}\n.t3dp-m h4{margin:4px 0 10px!important;padding:0!important;line-height:34px;font-family:inherit!important;text-align:center;font-size:15px;font-weight:700;text-transform:capitalize}\n.t3dp-g{display:grid;grid-template-columns:repeat(7,1fr);row-gap:2px}\n.t3dp-g button{all:unset;box-sizing:border-box;cursor:pointer;height:42px;display:grid;place-items:center;font-size:14px;font-weight:500;border-radius:999px;position:relative;z-index:0}\n.t3dp-g button:hover:not(:disabled){background:#f1f3f6}\n.t3dp-g button:disabled{color:#c3c9d2;cursor:default;text-decoration:line-through;text-decoration-color:#e3e7ee}\n.t3dp-g button.td{font-weight:800;color:#d83b51}\n.t3dp-g button.in,.t3dp-g button.pv{border-radius:0;background:#fde8eb}\n.t3dp-g button.pv{background:#fdf1f3}\n.t3dp-g button.a,.t3dp-g button.b{background:#16202e!important;color:#fff!important;font-weight:700}\n.t3dp-g button.a{border-radius:999px 0 0 999px}.t3dp-g button.b{border-radius:0 999px 999px 0}\n.t3dp-g button.a:not(.b):last-child,.t3dp-g button.a.lone{border-radius:999px}\n.t3dp-f{display:flex;align-items:center;gap:10px;border-top:1px solid #eef1f5;margin-top:10px;padding-top:12px}\n.t3dp-clr{all:unset;cursor:pointer;font-size:14px;font-weight:600;text-decoration:underline;color:#16202e;padding:8px 4px}\n.t3dp-n{flex:1;text-align:center;font-size:14px;font-weight:600;color:#4a5566}\n.t3dp-ok{all:unset;cursor:pointer;background:#d83b51;color:#fff;font-weight:700;font-size:15px;padding:12px 26px;border-radius:12px}\n.t3dp-ok:disabled{background:#e9b9c1;cursor:default}\n@media (max-width:720px){\n.t3dp{align-items:flex-end}\n.t3dp-p{width:100%;max-height:88vh;border-radius:22px 22px 0 0;padding:14px 14px calc(12px + env(safe-area-inset-bottom));animation:t3dpUp .22s ease-out}\n@keyframes t3dpUp{from{transform:translateY(40%)}to{transform:none}}\n.t3dp-wk{display:grid;grid-template-columns:repeat(7,1fr);text-align:center;font-size:11px;font-weight:700;color:#7a8594;padding:4px 0 6px;border-bottom:1px solid #eef1f5}\n.t3dp-ms{grid-template-columns:1fr;gap:18px;flex:1;-webkit-overflow-scrolling:touch}\n.t3dp-g button{height:46px;font-size:15px}\n.t3dp-ok{flex:none}\n}\n@media (prefers-color-scheme:dark){.t3dp-p{background:#141c28;color:#eef2f7}.t3dp-s{border-color:#2a3647}.t3dp-g button:hover:not(:disabled),.t3dp-c:hover{background:#1f2a3a}.t3dp-g button.in,.t3dp-g button.pv{background:#3a2230}.t3dp-g button.a,.t3dp-g button.b{background:#eef2f7!important;color:#141c28!important}.t3dp-nav button{background:#141c28;border-color:#2a3647;color:#eef2f7}.t3dp-f{border-color:#22303f}.t3dp-clr{color:#eef2f7}.t3dp-g button:disabled{color:#4a5566}}\n/* destination suggestions must sit above the date fields */\n.search .field:first-child{z-index:40}\n.search .suggestions{z-index:50!important;box-shadow:0 18px 40px rgba(0,0,0,.18)!important;max-height:min(360px,55vh);overflow:auto;background:#fff!important}\nbody:has(#destination:focus) #v2-sticky,body:has(.cityq:focus) #v2-sticky{display:none!important}\nbody.t3-herovis #v2-sticky{transform:translateY(160%)!important}\n\n.t3-citybar .t3dp-btn{border:0!important;background:none!important;padding:2px 0!important;margin:0!important;font-size:15px!important}\n@media (max-width:720px){.v3-quick{flex-wrap:nowrap!important;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}.v3-quick::-webkit-scrollbar{display:none}.v3-quick button{flex:none}}\n.t3dp-m h4{position:relative}.t3dp-mv{all:unset;cursor:pointer;position:absolute;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-size:22px;line-height:1;border:1px solid #e3e7ee;background:#fff;color:#16202e}.t3dp-mv.l{left:0}.t3dp-mv.r{right:0}.t3dp-mv:disabled{opacity:.3;cursor:default}.t3dp-mv:hover:not(:disabled){background:#f1f3f6}\n@media (prefers-color-scheme:dark){.t3dp-mv{background:#141c28;border-color:#2a3647;color:#eef2f7}}\n";
 var JS_DP = "/* Top3Hotels range date picker: one sheet for check-in + check-out, replaces the native date pickers.\n   The real <input type=date> fields stay in the DOM (hidden) so every existing handler keeps working. */\n(function () {\n  if (window.T3DP) return;\n  var L = (document.documentElement.lang || 'en').slice(0, 2);\n  var TX = {\n    en: { add: 'Add date', ci: 'Check in', co: 'Check out', n1: 'night', n: 'nights', clear: 'Clear', done: 'Done', pickCo: 'Now pick your check-out', pickCi: 'Pick your check-in', max: 'Max. 30 nights' },\n    es: { add: 'Elegir fecha', ci: 'Entrada', co: 'Salida', n1: 'noche', n: 'noches', clear: 'Borrar', done: 'Listo', pickCo: 'Ahora elige la salida', pickCi: 'Elige la entrada', max: 'Máx. 30 noches' },\n    de: { add: 'Datum wählen', ci: 'Anreise', co: 'Abreise', n1: 'Nacht', n: 'Nächte', clear: 'Löschen', done: 'Fertig', pickCo: 'Jetzt Abreise wählen', pickCi: 'Anreise wählen', max: 'Max. 30 Nächte' },\n    fr: { add: 'Choisir', ci: 'Arrivée', co: 'Départ', n1: 'nuit', n: 'nuits', clear: 'Effacer', done: 'OK', pickCo: 'Choisissez le départ', pickCi: \"Choisissez l'arrivée\", max: '30 nuits max.' },\n    it: { add: 'Scegli data', ci: 'Arrivo', co: 'Partenza', n1: 'notte', n: 'notti', clear: 'Cancella', done: 'Fatto', pickCo: 'Ora scegli la partenza', pickCi: \"Scegli l'arrivo\", max: 'Max 30 notti' },\n    pt: { add: 'Escolher', ci: 'Entrada', co: 'Saída', n1: 'noite', n: 'noites', clear: 'Limpar', done: 'Pronto', pickCo: 'Agora escolha a saída', pickCi: 'Escolha a entrada', max: 'Máx. 30 noites' },\n    da: { add: 'Vælg dato', ci: 'Indtjekning', co: 'Udtjekning', n1: 'nat', n: 'nætter', clear: 'Ryd', done: 'Færdig', pickCo: 'Vælg nu udtjekning', pickCi: 'Vælg indtjekning', max: 'Maks. 30 nætter' }\n  };\n  var t = TX[L] || TX.en;\n  var loc = document.documentElement.lang || 'en';\n  var DAY = 864e5;\n  function iso(d) { return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2); }\n  function parse(s) { if (!s || !/^\\d{4}-\\d{2}-\\d{2}$/.test(s)) return null; var p = s.split('-'); return new Date(+p[0], +p[1] - 1, +p[2]); }\n  function today() { var d = new Date(); d.setHours(0, 0, 0, 0); return d; }\n  function nights(a, b) { return Math.round((b - a) / DAY); }\n  var fmtShort = new Intl.DateTimeFormat(loc, { weekday: 'short', day: 'numeric', month: 'short' });\n  var fmtMonth = new Intl.DateTimeFormat(loc, { month: 'long', year: 'numeric' });\n  var wk = []; for (var i = 0; i < 7; i++) wk.push(new Intl.DateTimeFormat(loc, { weekday: 'narrow' }).format(new Date(2024, 0, 1 + i)));\n  function fire(el) { el.dispatchEvent(new Event('input', { bubbles: true })); el.dispatchEvent(new Event('change', { bubbles: true })); }\n\n  /* sheet */\n  var sh, st = {};\n  function build() {\n    sh = document.createElement('div'); sh.className = 't3dp'; sh.hidden = true;\n    sh.innerHTML = '<div class=\"t3dp-bd\" data-x></div><div class=\"t3dp-p\" role=\"dialog\" aria-modal=\"true\" aria-label=\"' + t.ci + ' / ' + t.co + '\">' +\n      '<div class=\"t3dp-h\"><button type=\"button\" class=\"t3dp-s\" data-s=\"0\"><small>' + t.ci + '</small><b></b></button><span class=\"t3dp-ar\">→</span><button type=\"button\" class=\"t3dp-s\" data-s=\"1\"><small>' + t.co + '</small><b></b></button><button type=\"button\" class=\"t3dp-c\" data-x aria-label=\"Close\">✕</button></div>' +\n      '<p class=\"t3dp-hint\" aria-live=\"polite\"></p><div class=\"t3dp-wk\"></div><div class=\"t3dp-nav\"><button type=\"button\" data-m=\"-1\" aria-label=\"Previous month\">‹</button><button type=\"button\" data-m=\"1\" aria-label=\"Next month\">›</button></div><div class=\"t3dp-ms\"></div>' +\n      '<div class=\"t3dp-f\"><button type=\"button\" class=\"t3dp-clr\">' + t.clear + '</button><span class=\"t3dp-n\"></span><button type=\"button\" class=\"t3dp-ok\">' + t.done + '</button></div></div>';\n    document.body.appendChild(sh);\n    sh.querySelector('.t3dp-wk').innerHTML = wk.map(function (w) { return '<span>' + w + '</span>'; }).join('');\n    sh.addEventListener('click', function (e) {\n      var x = e.target.closest('[data-x]'); if (x) return close();\n      var d = e.target.closest('button[data-d]'); if (d && !d.disabled) return pick(parse(d.dataset.d));\n      var m = e.target.closest('[data-m]'); if (m) { st.off = Math.max(0, st.off + (+m.dataset.m)); return render(); }\n      var s = e.target.closest('[data-s]'); if (s) { st.phase = +s.dataset.s; if (st.phase === 0) { } return render(); }\n      if (e.target.closest('.t3dp-clr')) { st.a = st.b = null; st.phase = 0; return render(); }\n      if (e.target.closest('.t3dp-ok')) return apply(true);\n    });\n    sh.addEventListener('mouseover', function (e) { var d = e.target.closest('button[data-d]'); if (d && st.phase === 1 && st.a) { st.hov = parse(d.dataset.d); paint(); } });\n    document.addEventListener('keydown', function (e) { if (!sh.hidden && e.key === 'Escape') close(); });\n  }\n  function monthHTML(y, m) {\n    var first = new Date(y, m, 1), lead = (first.getDay() + 6) % 7, days = new Date(y, m + 1, 0).getDate(), td = today(), h = '';\n    for (var i = 0; i < lead; i++) h += '<span></span>';\n    for (var d = 1; d <= days; d++) {\n      var dt = new Date(y, m, d), k = iso(dt), dis = dt < td || (st.phase === 1 && st.a && dt > st.a && nights(st.a, dt) > 30);\n      h += '<button type=\"button\" data-d=\"' + k + '\"' + (dis ? ' disabled' : '') + (+dt === +td ? ' class=\"td\"' : '') + ' aria-label=\"' + fmtShort.format(dt) + '\">' + d + '</button>';\n    }\n    return '<div class=\"t3dp-m\"><h4>' + fmtMonth.format(first) + '</h4><div class=\"t3dp-g\">' + h + '</div></div>';\n  }\n  function render() {\n    var base = today(), many = matchMedia('(max-width: 720px)').matches, n = many ? 12 : 2, h = '';\n    for (var i = 0; i < n; i++) { var dm = new Date(base.getFullYear(), base.getMonth() + (many ? 0 : st.off) + i, 1); h += monthHTML(dm.getFullYear(), dm.getMonth()); }\n    var ms = sh.querySelector('.t3dp-ms'); ms.innerHTML = h;\n    sh.querySelector('.t3dp-nav').hidden = true;\n    if (!many) {\n      var hs = ms.querySelectorAll('.t3dp-m h4');\n      hs[0].insertAdjacentHTML('afterbegin', '<button type=\"button\" class=\"t3dp-mv l\" data-m=\"-1\" aria-label=\"Previous month\"' + (st.off <= 0 ? ' disabled' : '') + '>‹</button>');\n      hs[hs.length - 1].insertAdjacentHTML('beforeend', '<button type=\"button\" class=\"t3dp-mv r\" data-m=\"1\" aria-label=\"Next month\">›</button>');\n    }\n    paint();\n  }\n  function paint() {\n    var a = st.a, b = st.b || (st.phase === 1 && a && st.hov && st.hov > a ? st.hov : null);\n    sh.querySelectorAll('button[data-d]').forEach(function (el) {\n      var d = parse(el.dataset.d), on = a && +d === +a, off = b && +d === +b;\n      el.classList.toggle('a', !!on); el.classList.toggle('b', !!off); el.classList.toggle('lone', !!(on && !b));\n      el.classList.toggle('in', !!(a && b && d > a && d < b));\n      el.classList.toggle('pv', !!(a && !st.b && b && d > a && d <= b));\n    });\n    var s = sh.querySelectorAll('.t3dp-s');\n    s[0].querySelector('b').textContent = st.a ? fmtShort.format(st.a) : t.add;\n    s[1].querySelector('b').textContent = st.b ? fmtShort.format(st.b) : t.add;\n    s[0].classList.toggle('on', st.phase === 0); s[1].classList.toggle('on', st.phase === 1);\n    var nn = st.a && st.b ? nights(st.a, st.b) : 0;\n    sh.querySelector('.t3dp-n').textContent = nn ? nn + ' ' + (nn === 1 ? t.n1 : t.n) : '';\n    sh.querySelector('.t3dp-hint').textContent = st.phase === 1 && st.a && !st.b ? t.pickCo + ' · ' + t.max : (!st.a ? t.pickCi : '');\n    sh.querySelector('.t3dp-ok').disabled = !(st.a && st.b);\n  }\n  function pick(d) {\n    if (st.phase === 0 || !st.a || d <= st.a) { st.a = d; st.b = null; st.phase = 1; st.hov = null; render(); return; }\n    st.b = d; st.hov = null; paint();\n    apply(false); setTimeout(close, 260);\n  }\n  function apply(andClose) {\n    if (!st.a || !st.b || !st.pair) return;\n    var ci = st.pair.ci, co = st.pair.co;\n    ci.value = iso(st.a); fire(ci);\n    co.value = iso(st.b); fire(co);\n    sync(st.pair);\n    try { document.dispatchEvent(new CustomEvent('t3:dates', { detail: { root: st.pair.root, ci: ci.value, co: co.value } })); } catch (_) {}\n    if (andClose) close();\n  }\n  function open(pair, phase) {\n    if (!sh) build();\n    st.pair = pair; st.a = parse(pair.ci.value); st.b = parse(pair.co.value);\n    if (st.a && st.a < today()) { st.a = st.b = null; }\n    st.phase = phase === 1 && st.a ? 1 : 0; if (st.phase === 0) { } st.off = 0; st.hov = null;\n    if (st.a) { var td = today(); st.off = Math.max(0, (st.a.getFullYear() - td.getFullYear()) * 12 + st.a.getMonth() - td.getMonth()); }\n    sh.hidden = false; document.documentElement.classList.add('t3dp-open');\n    render();\n    if (matchMedia('(max-width: 720px)').matches && st.a) {\n      var el = sh.querySelector('[data-d=\"' + iso(st.a) + '\"]'); if (el) { var m = el.closest('.t3dp-m'); if (m) m.scrollIntoView({ block: 'start' }); }\n    } else sh.querySelector('.t3dp-ms').scrollTop = 0;\n  }\n  function close() { if (!sh) return; sh.hidden = true; document.documentElement.classList.remove('t3dp-open'); }\n\n  /* attach to every check-in/check-out pair */\n  function label(el) { var d = parse(el.value); return d ? fmtShort.format(d) : t.add; }\n  function sync(pair) { pair.bi.textContent = label(pair.ci); pair.bo.textContent = label(pair.co); pair.bi.classList.toggle('empty', !pair.ci.value); pair.bo.classList.toggle('empty', !pair.co.value); }\n  function q(root, k) { return root.querySelector('#' + k + ',[name=' + k + '],[data-sync=' + k + ']'); }\n  function attach(root) {\n    var ci = q(root, 'checkin'), co = q(root, 'checkout');\n    if (!ci || !co || ci.dataset.t3dp || ci.type !== 'date') return;\n    var pair = { ci: ci, co: co, root: root }; root.__t3pair = pair;\n    [ci, co].forEach(function (inp, k) {\n      inp.dataset.t3dp = '1'; inp.classList.add('t3dp-real'); inp.style.display = 'none'; inp.tabIndex = -1; inp.setAttribute('aria-hidden', 'true');\n      var b = document.createElement('button'); b.type = 'button'; b.className = 't3dp-btn';\n      b.setAttribute('aria-haspopup', 'dialog'); b.setAttribute('aria-label', k ? t.co : t.ci);\n      inp.insertAdjacentElement('afterend', b);\n      b.addEventListener('click', function (e) { e.preventDefault(); e.stopPropagation(); open(pair, k); });\n      inp.addEventListener('change', function () { sync(pair); }); inp.addEventListener('input', function () { sync(pair); });\n      if (k) pair.bo = b; else pair.bi = b;\n    });\n    var lab = root.querySelectorAll('label[for=\"checkin\"],label[for=\"checkout\"]');\n    lab.forEach(function (l) { l.addEventListener('click', function (e) { e.preventDefault(); open(pair, l.getAttribute('for') === 'checkout' ? 1 : 0); }); });\n    sync(pair);\n    setInterval(function () { sync(pair); }, 1500);\n  }\n  function scan() { document.querySelectorAll('.search,.t3-citybar,form').forEach(attach); }\n  window.T3DP = { scan: scan, open: open, openFor: function (root, ph) { scan(); if (root && root.__t3pair) open(root.__t3pair, ph || 0); } };\n  var hero = document.querySelector('.hero');\n  if (hero && document.querySelector('.hero .search') && 'IntersectionObserver' in window) new IntersectionObserver(function (es) { document.body.classList.toggle('t3-herovis', es[0].isIntersecting); }, { threshold: 0.15 }).observe(hero);\n  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', scan); else scan();\n  new MutationObserver(function () { clearTimeout(scan.t); scan.t = setTimeout(scan, 120); }).observe(document.documentElement, { childList: true, subtree: true });\n})();\n";
+var gyms_index_default = {
+	file: "/assets/t3d/gyms.a31e866601.json",
+	ids: /* @__PURE__ */ JSON.parse("{\"a-coruna-spain\":\"A Coruña\",\"aachen-germany\":\"Aachen\",\"aalborg-denmark\":\"Aalborg\",\"aalst-belgium\":\"Aalst\",\"aarhus-denmark\":\"Aarhus\",\"abano-terme-italy\":\"Abano Terme\",\"aberdeen-unitedkingdom\":\"Aberdeen\",\"abidjan-ivory-coast\":\"Abidjan\",\"abu-dhabi-unitedarabemirates\":\"Abu Dhabi\",\"abuja-nigeria\":\"Abuja\",\"accra-ghana\":\"Accra\",\"adana-turkiye\":\"Adana\",\"addis-ababa-ethiopia\":\"Addis Ababa\",\"adeje-spain\":\"Adeje\",\"adelaide-australia\":\"Adelaide\",\"agra-india\":\"Agra\",\"agrigento-italy\":\"Agrigento\",\"aguascalientes-mexico\":\"Aguascalientes\",\"ahmedabad-india\":\"Ahmedabad\",\"airdrie-canada\":\"Airdrie\",\"aix-en-provence-france\":\"Aix-en-Provence\",\"aix-les-bains-france\":\"Aix-les-Bains\",\"ajaccio-france\":\"Ajaccio\",\"ajman-united-arab-emirates\":\"Ajman\",\"akita-japan\":\"Akita\",\"akron-united-states\":\"Akron\",\"alajuela-costa-rica\":\"Alajuela\",\"alanya-turkiye\":\"Alanya\",\"alba-italy\":\"Alba\",\"albacete-spain\":\"Albacete\",\"albufeira-portugal\":\"Albufeira\",\"albuquerque-united-states\":\"Albuquerque\",\"alcala-de-henares-spain\":\"Alcalá de Henares\",\"alcobendas-spain\":\"Alcobendas\",\"alesund-norway\":\"Ålesund\",\"alexandria-united-states\":\"Alexandria\",\"algeciras-spain\":\"Algeciras\",\"alghero-italy\":\"Alghero\",\"alicante-spain\":\"Alicante\",\"alkmaar-netherlands\":\"Alkmaar\",\"almaty-kazakhstan\":\"Almaty\",\"almeria-spain\":\"Almería\",\"almunecar-spain\":\"Almuñécar\",\"alpharetta-united-states\":\"Alpharetta\",\"altea-spain\":\"Altea\",\"altoona-united-states\":\"Altoona\",\"amalfi-italy\":\"Amalfi\",\"amarante-portugal\":\"Amarante\",\"amarillo-united-states\":\"Amarillo\",\"amboise-france\":\"Amboise\",\"amersfoort-netherlands\":\"Amersfoort\",\"ames-united-states\":\"Ames\",\"amiens-france\":\"Amiens\",\"amman-jordan\":\"Amman\",\"amritsar-india\":\"Amritsar\",\"amstelveen-the-netherlands\":\"Amstelveen\",\"amsterdam-netherlands\":\"Amsterdam\",\"anaheim-united-states\":\"Anaheim\",\"ancona-italy\":\"Ancona\",\"andorra-la-vella-andorra\":\"Andorra la Vella\",\"angers-france\":\"Angers\",\"angra-do-heroismo-portugal\":\"Angra do Heroísmo\",\"ankara-trkiye\":\"Ankara\",\"ann-arbor-united-states\":\"Ann Arbor\",\"annapolis-united-states\":\"Annapolis\",\"annecy-france\":\"Annecy\",\"antalya-trkiye\":\"Antalya\",\"antequera-spain\":\"Antequera\",\"antibes-france\":\"Antibes\",\"antigua-guatemala-guatemala\":\"Antigua Guatemala\",\"antwerp-belgium\":\"Antwerp\",\"aomori-japan\":\"Aomori\",\"apeldoorn-netherlands\":\"Apeldoorn\",\"apia-samoa\":\"Apia\",\"appleton-united-states\":\"Appleton\",\"aqaba-jordan\":\"Aqaba\",\"aranjuez-spain\":\"Aranjuez\",\"arcachon-france\":\"Arcachon\",\"arcadia-united-states\":\"Arcadia\",\"arequipa-peru\":\"Arequipa\",\"arezzo-italy\":\"Arezzo\",\"arica-chile\":\"Arica\",\"arles-france\":\"Arles\",\"arlington-united-states\":\"Arlington\",\"arnhem-netherlands\":\"Arnhem\",\"arras-france\":\"Arras\",\"arrecife-spain\":\"Arrecife\",\"arusha-tanzania\":\"Arusha\",\"ascona-switzerland\":\"Ascona\",\"asheville-united-states\":\"Asheville\",\"assisi-italy\":\"Assisi\",\"astana-kazakhstan\":\"Astana\",\"asti-italy\":\"Asti\",\"asuncion-paraguay\":\"Asuncion\",\"aswan-egypt\":\"Aswan\",\"athens-greece\":\"Athens\",\"atlanta-united-states\":\"Atlanta\",\"atlantic-city-united-states\":\"Atlantic City\",\"atyrau-kazakhstan\":\"Atyrau\",\"auburn-alabama-united-states\":\"Auburn, Alabama\",\"auckland-newzealand\":\"Auckland\",\"augsburg-germany\":\"Augsburg\",\"augusta-united-states\":\"Augusta\",\"aurangabad-india\":\"Aurangabad\",\"aurora-united-states\":\"Aurora\",\"austin-unitedstates\":\"Austin\",\"aveiro-portugal\":\"Aveiro\",\"avignon-france\":\"Avignon\",\"avila-spain\":\"Ávila\",\"aviles-spain\":\"Avilés\",\"ayr-unitedkingdom\":\"Ayr\",\"bacolod-philippines\":\"Bacolod\",\"bad-hofgastein-austria\":\"Bad Hofgastein\",\"bad-homburg-vor-der-hohe-germany\":\"Bad Homburg vor der Höhe\",\"bad-ischl-austria\":\"Bad Ischl\",\"badajoz-spain\":\"Badajoz\",\"baden-baden-germany\":\"Baden-Baden\",\"baghdad-iraq\":\"Baghdad\",\"bahia-blanca-argentina\":\"Bahia Blanca\",\"bakersfield-united-states\":\"Bakersfield\",\"baku-azerbaijan\":\"Baku\",\"bali-indonesia\":\"Bali\",\"baltimore-united-states\":\"Baltimore\",\"bandung-indonesia\":\"Bandung\",\"banff-canada\":\"Banff\",\"bangkok-thailand\":\"Bangkok\",\"banyuwangi-indonesia\":\"Banyuwangi\",\"barcelona\":\"Barcelona\",\"bari-italy\":\"Bari\",\"barnstaple-unitedkingdom\":\"Barnstaple\",\"barranquilla-colombia\":\"Barranquilla\",\"barueri-brazil\":\"Barueri\",\"basel-switzerland\":\"Basel\",\"basingstoke-united-kingdom\":\"Basingstoke\",\"bath-unitedkingdom\":\"Bath\",\"baton-rouge-united-states\":\"Baton Rouge\",\"battambang-cambodia\":\"Battambang\",\"batumi-georgia\":\"Batumi\",\"bauru-brazil\":\"Bauru\",\"bayreuth-germany\":\"Bayreuth\",\"beaverton-united-states\":\"Beaverton\",\"beijing-china\":\"Beijing\",\"beirut-lebanon\":\"Beirut\",\"bekasi-indonesia\":\"Bekasi\",\"belem-brazil\":\"Belém\",\"belfast-unitedkingdom\":\"Belfast\",\"belgrade-serbia\":\"Belgrade\",\"bellevue-united-states\":\"Bellevue\",\"bellingham-united-states\":\"Bellingham\",\"belo-horizonte-brazil\":\"Belo Horizonte\",\"benalmadena-spain\":\"Benalmádena\",\"bend-united-states\":\"Bend\",\"benevento-italy\":\"Benevento\",\"benicassim-spain\":\"Benicàssim\",\"benidorm-spain\":\"Benidorm\",\"bento-goncalves-brazil\":\"Bento Gonçalves\",\"bentonville-united-states\":\"Bentonville\",\"beppu-japan\":\"Beppu\",\"bergamo-italy\":\"Bergamo\",\"bergen-norway\":\"Bergen\",\"berkeley-united-states\":\"Berkeley\",\"berlin-germany\":\"Berlin\",\"bern-switzerland\":\"Bern\",\"besancon-france\":\"Besançon\",\"bethesda-united-states\":\"Bethesda\",\"bethlehem-united-states\":\"Bethlehem\",\"beziers-france\":\"Béziers\",\"bhopal-india\":\"Bhopal\",\"biarritz-france\":\"Biarritz\",\"biaystok-poland\":\"Białystok\",\"bielefeld-germany\":\"Bielefeld\",\"bielsko-biaa-poland\":\"Bielsko-Biała\",\"bilbao-spain\":\"Bilbao\",\"billings-united-states\":\"Billings\",\"billund-denmark\":\"Billund\",\"biloxi-united-states\":\"Biloxi\",\"binghamton-united-states\":\"Binghamton\",\"binz-germany\":\"Binz\",\"birmingham-alabama-united-states\":\"Birmingham, Alabama\",\"birmingham-united-kingdom\":\"Birmingham\",\"bismarck-united-states\":\"Bismarck\",\"bitola-north-macedonia\":\"Bitola\",\"blackpool-united-kingdom\":\"Blackpool\",\"blacksburg-united-states\":\"Blacksburg\",\"blankenberge-belgium\":\"Blankenberge\",\"bled-slovenia\":\"Bled\",\"bloemfontein-south-africa\":\"Bloemfontein\",\"blois-france\":\"Blois\",\"bloomington-united-states\":\"Bloomington\",\"blumenau-brazil\":\"Blumenau\",\"boa-vista-brazil\":\"Boa Vista\",\"boca-raton-united-states\":\"Boca Raton\",\"bogor-indonesia\":\"Bogor\",\"bogota-colombia\":\"Bogotá\",\"boise-united-states\":\"Boise\",\"bologna-italy\":\"Bologna\",\"bolzano-italy\":\"Bolzano\",\"bonn-germany\":\"Bonn\",\"bordeaux-france\":\"Bordeaux\",\"bossier-city-united-states\":\"Bossier City\",\"boston-unitedstates\":\"Boston\",\"boucherville-canada\":\"Boucherville\",\"boulder-united-states\":\"Boulder\",\"bourges-france\":\"Bourges\",\"bournemouth-united-kingdom\":\"Bournemouth\",\"bowie-united-states\":\"Bowie\",\"bowling-green-united-states\":\"Bowling Green\",\"bozeman-united-states\":\"Bozeman\",\"bradenton-united-states\":\"Bradenton\",\"braga-portugal\":\"Braga\",\"braganca-portugal\":\"Bragança\",\"branson-united-states\":\"Branson\",\"brasilia-brazil\":\"Brasília\",\"brasov-romania\":\"Brașov\",\"bratislava-slovakia\":\"Bratislava\",\"breda-netherlands\":\"Breda\",\"bregenz-austria\":\"Bregenz\",\"bremen-germany\":\"Bremen\",\"bremerhaven-germany\":\"Bremerhaven\",\"brentwood-united-states\":\"Brentwood\",\"brescia-italy\":\"Brescia\",\"brest-france\":\"Brest\",\"bridgetown-barbados\":\"Bridgetown\",\"bridgwater-united-kingdom\":\"Bridgwater\",\"brindisi-italy\":\"Brindisi\",\"brisbane-australia\":\"Brisbane\",\"bristol-unitedkingdom\":\"Bristol\",\"brno-czechia\":\"Brno\",\"brookline-united-states\":\"Brookline\",\"brooklyn-united-states\":\"Brooklyn\",\"brossard-canada\":\"Brossard\",\"bruges-belgium\":\"Bruges\",\"brussels-belgium\":\"Brussels\",\"bryan-united-states\":\"Bryan\",\"bucharest-romania\":\"Bucharest\",\"budapest-hungary\":\"Budapest\",\"budva-montenegro\":\"Budva\",\"buena-park-united-states\":\"Buena Park\",\"buenos-aires-argentina\":\"Buenos Aires\",\"buffalo-united-states\":\"Buffalo\",\"burbank-united-states\":\"Burbank\",\"burgos-spain\":\"Burgos\",\"burlington-united-states\":\"Burlington\",\"burnaby-canada\":\"Burnaby\",\"burnley-united-kingdom\":\"Burnley\",\"bursa-turkiye\":\"Bursa\",\"busan-southkorea\":\"Busan\",\"bydgoszcz-poland\":\"Bydgoszcz\",\"bytom-poland\":\"Bytom\",\"cabo-san-lucas-mexico\":\"Cabo San Lucas\",\"caceres-spain\":\"Cáceres\",\"cadiz-spain\":\"Cádiz\",\"caen-france\":\"Caen\",\"cairns-australia\":\"Cairns\",\"cairo-egypt\":\"Cairo\",\"cajamarca-peru\":\"Cajamarca\",\"caldas-novas-brazil\":\"Caldas Novas\",\"calgary-canada\":\"Calgary\",\"cali-colombia\":\"Cali\",\"calpe-spain\":\"Calpe\",\"cambridge-massachusetts-united-states\":\"Cambridge, Massachusetts\",\"cambridge-unitedkingdom\":\"Cambridge\",\"camden-united-states\":\"Camden\",\"campeche-mexico\":\"Campeche\",\"campinas-brazil\":\"Campinas\",\"campo-grande-brazil\":\"Campo Grande\",\"campos-do-jordao-brazil\":\"Campos do Jordao\",\"can-tho-vietnam\":\"Can Tho\",\"canakkale-turkiye\":\"Çanakkale\",\"canberra-australia\":\"Canberra\",\"cancun-mexico\":\"Cancún\",\"canela-brazil\":\"Canela\",\"canggu-indonesia\":\"Canggu\",\"cannes-france\":\"Cannes\",\"canterbury-united-kingdom\":\"Canterbury\",\"cape-coral-united-states\":\"Cape Coral\",\"cape-town-southafrica\":\"Cape Town\",\"caracas-venezuela\":\"Caracas\",\"caraguatatuba-brazil\":\"Caraguatatuba\",\"cardiff-unitedkingdom\":\"Cardiff\",\"carlisle-united-kingdom\":\"Carlisle\",\"carmel-united-states\":\"Carmel\",\"carpi-italy\":\"Carpi\",\"cartagena-spain\":\"Cartagena\",\"cary-united-states\":\"Cary\",\"casablanca-morocco\":\"Casablanca\",\"cascais-portugal\":\"Cascais\",\"caserta-italy\":\"Caserta\",\"casper-united-states\":\"Casper\",\"castelldefels-spain\":\"Castelldefels\",\"castellon-de-la-plana-spain\":\"Castellón de la Plana\",\"catania-italy\":\"Catania\",\"cattolica-italy\":\"Cattolica\",\"caxias-do-sul-brazil\":\"Caxias do Sul\",\"cayenne-french-guiana\":\"Cayenne\",\"cebu-city-philippines\":\"Cebu City\",\"cedar-rapids-united-states\":\"Cedar Rapids\",\"cefalu-italy\":\"Cefalù\",\"centennial-united-states\":\"Centennial\",\"cesena-italy\":\"Cesena\",\"cesenatico-italy\":\"Cesenatico\",\"ceske-budejovice-czechia\":\"Ceske Budejovice\",\"chalon-sur-saone-france\":\"Chalon-sur-Saône\",\"chandigarh-india\":\"Chandigarh\",\"chandler-united-states\":\"Chandler\",\"chania-greece\":\"Chania\",\"chantilly-france\":\"Chantilly\",\"chapel-hill-united-states\":\"Chapel Hill\",\"charleston-unitedstates\":\"Charleston\",\"charlotte-united-states\":\"Charlotte\",\"charlottesville-united-states\":\"Charlottesville\",\"charlottetown-canada\":\"Charlottetown\",\"chatham-canada\":\"Chatham\",\"chattanooga-united-states\":\"Chattanooga\",\"chaves-portugal\":\"Chaves\",\"cheltenham-unitedkingdom\":\"Cheltenham\",\"chemnitz-germany\":\"Chemnitz\",\"chengdu-china\":\"Chengdu\",\"cherkasy-ukraine\":\"Cherkasy\",\"chester-united-kingdom\":\"Chester\",\"chesterfield-united-kingdom\":\"Chesterfield\",\"cheyenne-united-states\":\"Cheyenne\",\"chianciano-terme-italy\":\"Chianciano Terme\",\"chiang-mai-thailand\":\"Chiang Mai\",\"chiang-rai-thailand\":\"Chiang Rai\",\"chiba-japan\":\"Chiba\",\"chicago-unitedstates\":\"Chicago\",\"chiclana-de-la-frontera-spain\":\"Chiclana de la Frontera\",\"chiclayo-peru\":\"Chiclayo\",\"chico-united-states\":\"Chico\",\"chihuahua-mexico\":\"Chihuahua\",\"chilliwack-canada\":\"Chilliwack\",\"chisinau-moldova\":\"Chisinau\",\"chongqing-china\":\"Chongqing\",\"chorzow-poland\":\"Chorzów\",\"christchurch-newzealand\":\"Christchurch\",\"chula-vista-united-states\":\"Chula Vista\",\"cincinnati-united-states\":\"Cincinnati\",\"cirebon-indonesia\":\"Cirebon\",\"cirencester-united-kingdom\":\"Cirencester\",\"ciudad-real-spain\":\"Ciudad Real\",\"ciudad-victoria-mexico\":\"Ciudad Victoria\",\"clermont-ferrand-france\":\"Clermont-Ferrand\",\"cleveland-united-states\":\"Cleveland\",\"cluj-napoca-romania\":\"Cluj-Napoca\",\"coatzacoalcos-mexico\":\"Coatzacoalcos\",\"cochabamba-bolivia\":\"Cochabamba\",\"coeur-d-alene-united-states\":\"Coeur d'Alene\",\"cognac-france\":\"Cognac\",\"coimbatore-india\":\"Coimbatore\",\"coimbra-portugal\":\"Coimbra\",\"colchester-united-kingdom\":\"Colchester\",\"colima-mexico\":\"Colima\",\"colmar-france\":\"Colmar\",\"cologne-germany\":\"Cologne\",\"colombo-srilanka\":\"Colombo\",\"colorado-springs-united-states\":\"Colorado Springs\",\"columbia-united-states\":\"Columbia\",\"columbus-united-states\":\"Columbus\",\"comitan-mexico\":\"Comitan\",\"como-italy\":\"Como\",\"compiegne-france\":\"Compiègne\",\"concepcion-chile\":\"Concepcion\",\"conil-de-la-frontera-spain\":\"Conil de la Frontera\",\"constanta-romania\":\"Constanta\",\"conwy-united-kingdom\":\"Conwy\",\"copenhagen-denmark\":\"Copenhagen\",\"cordoba-argentina\":\"Córdoba\",\"cordoba-mexico\":\"Cordoba\",\"cordoba-spain\":\"Córdoba\",\"corfu-greece\":\"Corfu\",\"cork-ireland\":\"Cork\",\"corlu-turkiye\":\"Corlu\",\"corpus-christi-united-states\":\"Corpus Christi\",\"corralejo-spain\":\"Corralejo\",\"cosenza-italy\":\"Cosenza\",\"costa-mesa-united-states\":\"Costa Mesa\",\"cotonou-benin\":\"Cotonou\",\"cottbus-germany\":\"Cottbus\",\"coventry-unitedkingdom\":\"Coventry\",\"cozumel-mexico\":\"Cozumel\",\"craiova-romania\":\"Craiova\",\"crawley-united-kingdom\":\"Crawley\",\"cremona-italy\":\"Cremona\",\"cromer-united-kingdom\":\"Cromer\",\"cuenca-ecuador\":\"Cuenca\",\"cuenca-spain\":\"Cuenca\",\"cuernavaca-mexico\":\"Cuernavaca\",\"cuiaba-brazil\":\"Cuiaba\",\"culiacan-mexico\":\"Culiacan\",\"cullera-spain\":\"Cullera\",\"cuneo-italy\":\"Cuneo\",\"cupertino-united-states\":\"Cupertino\",\"curitiba-brazil\":\"Curitiba\",\"cusco-peru\":\"Cusco\",\"czestochowa-poland\":\"Częstochowa\",\"da-nang-vietnam\":\"Da Nang\",\"daegu-south-korea\":\"Daegu\",\"daejeon-south-korea\":\"Daejeon\",\"dakar-senegal\":\"Dakar\",\"dalat-vietnam\":\"Dalat\",\"dalian-china\":\"Dalian\",\"dallas-united-states\":\"Dallas\",\"dambulla-sri-lanka\":\"Dambulla\",\"danville-united-states\":\"Danville\",\"dar-es-salaam-tanzania\":\"Dar es Salaam\",\"darlington-united-kingdom\":\"Darlington\",\"darmstadt-germany\":\"Darmstadt\",\"darwin-australia\":\"Darwin\",\"davenport-united-states\":\"Davenport\",\"davis-united-states\":\"Davis\",\"dax-france\":\"Dax\",\"dayton-united-states\":\"Dayton\",\"daytona-beach-united-states\":\"Daytona Beach\",\"deadwood-united-states\":\"Deadwood\",\"deauville-france\":\"Deauville\",\"debrecen-hungary\":\"Debrecen\",\"delft-netherlands\":\"Delft\",\"delray-beach-united-states\":\"Delray Beach\",\"den-bosch-netherlands\":\"Den Bosch\",\"denia-spain\":\"Dénia\",\"denizli-turkiye\":\"Denizli\",\"denpasar-indonesia\":\"Denpasar\",\"denver-unitedstates\":\"Denver\",\"derby-unitedkingdom\":\"Derby\",\"derry-londonderry-united-kingdom\":\"Derry Londonderry\",\"des-moines-united-states\":\"Des Moines\",\"desenzano-del-garda-italy\":\"Desenzano del Garda\",\"detroit-united-states\":\"Detroit\",\"deventer-netherlands\":\"Deventer\",\"dinan-france\":\"Dinan\",\"dinard-france\":\"Dinard\",\"diyarbakr-turkiye\":\"Diyarbakır\",\"doha-qatar\":\"Doha\",\"doncaster-united-kingdom\":\"Doncaster\",\"dortmund-germany\":\"Dortmund\",\"dresden-germany\":\"Dresden\",\"dubai\":\"Dubai\",\"dublin-ireland\":\"Dublin\",\"dublin-united-states\":\"Dublin\",\"dubrovnik-croatia\":\"Dubrovnik\",\"duisburg-germany\":\"Duisburg\",\"dumaguete-philippines\":\"Dumaguete\",\"dundee-united-kingdom\":\"Dundee\",\"dunedin-newzealand\":\"Dunedin\",\"dunkerque-france\":\"Dunkerque\",\"durban-southafrica\":\"Durban\",\"durham-united-kingdom\":\"Durham\",\"durham-united-states\":\"Durham\",\"dusseldorf-germany\":\"Düsseldorf\",\"eastbourne-unitedkingdom\":\"Eastbourne\",\"edinburgh-unitedkingdom\":\"Edinburgh\",\"edirne-turkiye\":\"Edirne\",\"eindhoven-netherlands\":\"Eindhoven\",\"eisenach-germany\":\"Eisenach\",\"el-puerto-de-santa-maria-spain\":\"El Puerto de Santa María\",\"elche-spain\":\"Elche\",\"emden-germany\":\"Emden\",\"enniskillen-united-kingdom\":\"Enniskillen\",\"epinal-france\":\"Épinal\",\"erfurt-germany\":\"Erfurt\",\"erzurum-turkiye\":\"Erzurum\",\"eskisehir-turkiye\":\"Eskişehir\",\"essaouira-morocco\":\"Essaouira\",\"essen-germany\":\"Essen\",\"estepona-spain\":\"Estepona\",\"estoril-portugal\":\"Estoril\",\"evian-les-bains-france\":\"Évian-les-Bains\",\"evora-portugal\":\"Évora\",\"exeter-united-kingdom\":\"Exeter\",\"falmouth-unitedkingdom\":\"Falmouth\",\"fano-italy\":\"Fano\",\"farnborough-united-kingdom\":\"Farnborough\",\"faro-portugal\":\"Faro\",\"fatima-portugal\":\"Fátima\",\"ferrara-italy\":\"Ferrara\",\"ferrol-spain\":\"Ferrol\",\"figueres-spain\":\"Figueres\",\"flagstaff-united-states\":\"Flagstaff\",\"flensburg-germany\":\"Flensburg\",\"florence-italy\":\"Florence\",\"foggia-italy\":\"Foggia\",\"foligno-italy\":\"Foligno\",\"folkestone-unitedkingdom\":\"Folkestone\",\"forli-italy\":\"Forlì\",\"fort-lauderdale-united-states\":\"Fort Lauderdale\",\"fortaleza-brazil\":\"Fortaleza\",\"forte-dei-marmi-italy\":\"Forte dei Marmi\",\"foz-do-iguacu-brazil\":\"Foz do Iguaçu\",\"frankfurt-germany\":\"Frankfurt\",\"franklin-united-states\":\"Franklin\",\"fredericton-canada\":\"Fredericton\",\"freetown-sierra-leone\":\"Freetown\",\"fribourg-switzerland\":\"Fribourg\",\"friedrichshafen-germany\":\"Friedrichshafen\",\"fuengirola-spain\":\"Fuengirola\",\"fukuoka-japan\":\"Fukuoka\",\"fulda-germany\":\"Fulda\",\"funchal-portugal\":\"Funchal\",\"gaborone-botswana\":\"Gaborone\",\"gaeta-italy\":\"Gaeta\",\"gallipoli-italy\":\"Gallipoli\",\"galway-ireland\":\"Galway\",\"gandia-spain\":\"Gandía\",\"garmisch-partenkirchen-germany\":\"Garmisch-Partenkirchen\",\"gaziantep-turkiye\":\"Gaziantep\",\"gdansk-poland\":\"Gdańsk\",\"gdynia-poland\":\"Gdynia\",\"geelong-australia\":\"Geelong\",\"geneva-switzerland\":\"Geneva\",\"genoa-italy\":\"Genoa\",\"georgetown-guyana\":\"Georgetown\",\"getafe-spain\":\"Getafe\",\"ghent-belgium\":\"Ghent\",\"gijon-spain\":\"Gijón\",\"girona-spain\":\"Girona\",\"glasgow-unitedkingdom\":\"Glasgow\",\"gliwice-poland\":\"Gliwice\",\"gloucester-unitedkingdom\":\"Gloucester\",\"gold-coast-australia\":\"Gold Coast\",\"gothenburg-sweden\":\"Gothenburg\",\"gottingen-germany\":\"Göttingen\",\"granada-nicaragua\":\"Granada\",\"granada-spain\":\"Granada\",\"graz-austria\":\"Graz\",\"great-yarmouth-united-kingdom\":\"Great Yarmouth\",\"grenoble-france\":\"Grenoble\",\"grindelwald-switzerland\":\"Grindelwald\",\"groningen-netherlands\":\"Groningen\",\"grosseto-italy\":\"Grosseto\",\"guadalajara-mexico\":\"Guadalajara\",\"guadalajara-spain\":\"Guadalajara\",\"guanajuato-mexico\":\"Guanajuato\",\"guangzhou-china\":\"Guangzhou\",\"gubbio-italy\":\"Gubbio\",\"guildford-unitedkingdom\":\"Guildford\",\"guilin-china\":\"Guilin\",\"guimaraes-portugal\":\"Guimarães\",\"gyeongju-south-korea\":\"Gyeongju\",\"ha-long-vietnam\":\"Ha Long\",\"haarlem-netherlands\":\"Haarlem\",\"hakodate-japan\":\"Hakodate\",\"hakone-japan\":\"Hakone\",\"halifax-canada\":\"Halifax\",\"hamamatsu-japan\":\"Hamamatsu\",\"hamburg-germany\":\"Hamburg\",\"hamilton-canada\":\"Hamilton\",\"hangzhou-china\":\"Hangzhou\",\"hanoi-vietnam\":\"Hanoi\",\"harbin-china\":\"Harbin\",\"harrogate-united-kingdom\":\"Harrogate\",\"hasselt-belgium\":\"Hasselt\",\"hat-yai-thailand\":\"Hat Yai\",\"heidelberg-germany\":\"Heidelberg\",\"heilbronn-germany\":\"Heilbronn\",\"helsinki-finland\":\"Helsinki\",\"heraklion-greece\":\"Heraklion\",\"heringsdorf-germany\":\"Heringsdorf\",\"hersonissos-greece\":\"Hersonissos\",\"hiroshima-japan\":\"Hiroshima\",\"ho-chi-minh-city-vietnam\":\"Ho Chi Minh City\",\"hobart-australia\":\"Hobart\",\"hoi-an-vietnam\":\"Hoi An\",\"hong-kong-hongkong\":\"Hong Kong\",\"honolulu-unitedstates\":\"Honolulu\",\"horta-portugal\":\"Horta\",\"houston-united-states\":\"Houston\",\"hua-hin-thailand\":\"Hua Hin\",\"huddersfield-united-kingdom\":\"Huddersfield\",\"hue-vietnam\":\"Hue\",\"huelva-spain\":\"Huelva\",\"huesca-spain\":\"Huesca\",\"hull-united-kingdom\":\"Hull\",\"huntsville-united-states\":\"Huntsville\",\"hurghada-egypt\":\"Hurghada\",\"hyderabad-india\":\"Hyderabad\",\"hyeres-france\":\"Hyères\",\"iasi-romania\":\"Iași\",\"ibiza-spain\":\"Ibiza\",\"ierapetra-greece\":\"Ierapetra\",\"ikeja-nigeria\":\"Ikeja\",\"imola-italy\":\"Imola\",\"imperia-italy\":\"Imperia\",\"incheon-south-korea\":\"Incheon\",\"indianapolis-united-states\":\"Indianapolis\",\"ingolstadt-germany\":\"Ingolstadt\",\"innsbruck-austria\":\"Innsbruck\",\"interlaken-switzerland\":\"Interlaken\",\"inverness-unitedkingdom\":\"Inverness\",\"ioannina-greece\":\"Ioannina\",\"ipswich-united-kingdom\":\"Ipswich\",\"iquitos-peru\":\"Iquitos\",\"istanbul-trkiye\":\"Istanbul\",\"izmir-trkiye\":\"Izmir\",\"jaca-spain\":\"Jaca\",\"jackson-wyoming-united-states\":\"Jackson, Wyoming\",\"jaen-spain\":\"Jaén\",\"jaipur-india\":\"Jaipur\",\"jakarta-indonesia\":\"Jakarta\",\"jeddah-saudiarabia\":\"Jeddah\",\"jerez-de-la-frontera-spain\":\"Jerez de la Frontera\",\"jimbaran-indonesia\":\"Jimbaran\",\"jodhpur-india\":\"Jodhpur\",\"johannesburg-southafrica\":\"Johannesburg\",\"johor-bahru-malaysia\":\"Johor Bahru\",\"kagoshima-japan\":\"Kagoshima\",\"kaiserslautern-germany\":\"Kaiserslautern\",\"kanazawa-japan\":\"Kanazawa\",\"kandy-srilanka\":\"Kandy\",\"kaohsiung-taiwan\":\"Kaohsiung\",\"karachi-pakistan\":\"Karachi\",\"karlsruhe-germany\":\"Karlsruhe\",\"karpacz-poland\":\"Karpacz\",\"kathmandu-nepal\":\"Kathmandu\",\"katowice-poland\":\"Katowice\",\"kaunas-lithuania\":\"Kaunas\",\"kayseri-turkiye\":\"Kayseri\",\"kelowna-canada\":\"Kelowna\",\"kemer-turkiye\":\"Kemer\",\"kiel-germany\":\"Kiel\",\"kielce-poland\":\"Kielce\",\"kigali-rwanda\":\"Kigali\",\"kingston-canada\":\"Kingston\",\"kingston-jamaica\":\"Kingston\",\"kitzbuhel-austria\":\"Kitzbühel\",\"klagenfurt-austria\":\"Klagenfurt\",\"knokke-heist-belgium\":\"Knokke-Heist\",\"kobe-japan\":\"Kobe\",\"koblenz-germany\":\"Koblenz\",\"kolkata-india\":\"Kolkata\",\"konstanz-germany\":\"Konstanz\",\"konya-turkiye\":\"Konya\",\"koobrzeg-poland\":\"Kołobrzeg\",\"kortrijk-belgium\":\"Kortrijk\",\"kosice-slovakia\":\"Kosice\",\"kotor-montenegro\":\"Kotor\",\"krakow-poland\":\"Kraków\",\"krynica-zdroj-poland\":\"Krynica Zdrój\",\"kumamoto-japan\":\"Kumamoto\",\"kunming-china\":\"Kunming\",\"kurashiki-japan\":\"Kurashiki\",\"kusadas-turkiye\":\"Kuşadası\",\"kuta-indonesia\":\"Kuta\",\"kyoto-japan\":\"Kyoto\",\"la-baule-france\":\"La Baule\",\"la-paz-bolivia\":\"La Paz\",\"la-paz-mexico\":\"La Paz\",\"la-rochelle-france\":\"La Rochelle\",\"la-spezia-italy\":\"La Spezia\",\"lagos-nigeria\":\"Lagos\",\"lagos-portugal\":\"Lagos\",\"lamego-portugal\":\"Lamego\",\"lamezia-terme-italy\":\"Lamezia Terme\",\"larnaca-cyprus\":\"Larnaca\",\"las-palmas-de-gran-canaria-spain\":\"Las Palmas de Gran Canaria\",\"las-vegas-unitedstates\":\"Las Vegas\",\"latina-italy\":\"Latina\",\"lausanne-switzerland\":\"Lausanne\",\"le-touquet-paris-plage-france\":\"Le Touquet-Paris-Plage\",\"lecce-italy\":\"Lecce\",\"leeds-united-kingdom\":\"Leeds\",\"leeuwarden-netherlands\":\"Leeuwarden\",\"lefkada-greece\":\"Lefkada\",\"legian-indonesia\":\"Legian\",\"leicester-unitedkingdom\":\"Leicester\",\"leipzig-germany\":\"Leipzig\",\"leiria-portugal\":\"Leiria\",\"leon-nicaragua\":\"Leon\",\"leon-spain\":\"León\",\"leuven-belgium\":\"Leuven\",\"liege-belgium\":\"Liège\",\"liepaja-latvia\":\"Liepaja\",\"lille-france\":\"Lille\",\"lima-peru\":\"Lima\",\"limassol-cyprus\":\"Limassol\",\"limoges-france\":\"Limoges\",\"lincoln-unitedkingdom\":\"Lincoln\",\"linz-austria\":\"Linz\",\"lisbon-portugal\":\"Lisbon\",\"livermore-united-states\":\"Livermore\",\"liverpool-unitedkingdom\":\"Liverpool\",\"livorno-italy\":\"Livorno\",\"ljubljana-slovenia\":\"Ljubljana\",\"lleida-spain\":\"Lleida\",\"lloret-de-mar-spain\":\"Lloret de Mar\",\"locarno-switzerland\":\"Locarno\",\"logrono-spain\":\"Logroño\",\"london-canada\":\"London\",\"london\":\"London\",\"louisville-united-states\":\"Louisville\",\"lourdes-france\":\"Lourdes\",\"loutraki-greece\":\"Loutraki\",\"lovina-indonesia\":\"Lovina\",\"luang-prabang-laos\":\"Luang Prabang\",\"lubeck-germany\":\"Lübeck\",\"lublin-poland\":\"Lublin\",\"lucca-italy\":\"Lucca\",\"lucerne-switzerland\":\"Lucerne\",\"ludwigsburg-germany\":\"Ludwigsburg\",\"ludwigshafen-am-rhein-germany\":\"Ludwigshafen am Rhein\",\"lugano-switzerland\":\"Lugano\",\"lugo-spain\":\"Lugo\",\"lund-sweden\":\"Lund\",\"luton-unitedkingdom\":\"Luton\",\"luxembourg-city-luxembourg\":\"Luxembourg City\",\"luxor-egypt\":\"Luxor\",\"lynchburg-united-states\":\"Lynchburg\",\"lyon-france\":\"Lyon\",\"maastricht-netherlands\":\"Maastricht\",\"macao-macao\":\"Macao\",\"madison-united-states\":\"Madison\",\"madrid-spain\":\"Madrid\",\"mahon-spain\":\"Mahón\",\"maidstone-unitedkingdom\":\"Maidstone\",\"mainz-germany\":\"Mainz\",\"makarska-croatia\":\"Makarska\",\"malaga-spain\":\"Málaga\",\"malang-indonesia\":\"Malang\",\"male-maldives\":\"Malé\",\"malmo-sweden\":\"Malmö\",\"manama-bahrain\":\"Manama\",\"manchester-unitedkingdom\":\"Manchester\",\"manila-philippines\":\"Manila\",\"mannheim-germany\":\"Mannheim\",\"marbella-spain\":\"Marbella\",\"marmaris-turkiye\":\"Marmaris\",\"marsala-italy\":\"Marsala\",\"marseille-france\":\"Marseille\",\"maspalomas-spain\":\"Maspalomas\",\"mataro-spain\":\"Mataró\",\"matera-italy\":\"Matera\",\"matsuyama-japan\":\"Matsuyama\",\"mazatlan-mexico\":\"Mazatlan\",\"mechelen-belgium\":\"Mechelen\",\"medan-indonesia\":\"Medan\",\"medellin-colombia\":\"Medellín\",\"melbourne-australia\":\"Melbourne\",\"melbourne-united-states\":\"Melbourne\",\"memphis-united-states\":\"Memphis\",\"mendoza-argentina\":\"Mendoza\",\"merano-italy\":\"Merano\",\"merida-mexico\":\"Mérida\",\"merida-spain\":\"Mérida\",\"messina-italy\":\"Messina\",\"mexico-city-mexico\":\"Mexico City\",\"miami-unitedstates\":\"Miami\",\"middlesbrough-united-kingdom\":\"Middlesbrough\",\"miedzyzdroje-poland\":\"Międzyzdroje\",\"milan-italy\":\"Milan\",\"milton-keynes-unitedkingdom\":\"Milton Keynes\",\"milwaukee-united-states\":\"Milwaukee\",\"minneapolis-united-states\":\"Minneapolis\",\"miskolc-hungary\":\"Miskolc\",\"miyazaki-japan\":\"Miyazaki\",\"modena-italy\":\"Modena\",\"modica-italy\":\"Modica\",\"mombasa-kenya\":\"Mombasa\",\"monopoli-italy\":\"Monopoli\",\"montecatini-terme-italy\":\"Montecatini Terme\",\"monterey-united-states\":\"Monterey\",\"monterrey-mexico\":\"Monterrey\",\"montevideo-uruguay\":\"Montevideo\",\"montpellier-france\":\"Montpellier\",\"montreal-canada\":\"Montreal\",\"montreux-switzerland\":\"Montreux\",\"morelia-mexico\":\"Morelia\",\"motril-spain\":\"Motril\",\"mui-ne-vietnam\":\"Mui Ne\",\"mulhouse-france\":\"Mulhouse\",\"munich-germany\":\"Munich\",\"munster-germany\":\"Münster\",\"murcia-spain\":\"Murcia\",\"muscat-oman\":\"Muscat\",\"nadi-fiji\":\"Nadi\",\"nafplio-greece\":\"Nafplio\",\"nagasaki-japan\":\"Nagasaki\",\"nagoya-japan\":\"Nagoya\",\"naha-japan\":\"Naha\",\"nairobi-kenya\":\"Nairobi\",\"nancy-france\":\"Nancy\",\"nanjing-china\":\"Nanjing\",\"nantes-france\":\"Nantes\",\"naples-florida-united-states\":\"Naples, Florida\",\"naples-italy\":\"Naples\",\"nara-japan\":\"Nara\",\"narbonne-france\":\"Narbonne\",\"nashville-unitedstates\":\"Nashville\",\"naxos-chora-greece\":\"Naxos Chora\",\"nazare-portugal\":\"Nazaré\",\"nerja-spain\":\"Nerja\",\"new-delhi-india\":\"New Delhi\",\"new-orleans-unitedstates\":\"New Orleans\",\"new-york-unitedstates\":\"New York\",\"newcastle-australia\":\"Newcastle\",\"newcastle-south-africa\":\"Newcastle\",\"newcastle-upon-tyne-united-kingdom\":\"Newcastle upon Tyne\",\"newport-rhode-island-united-states\":\"Newport, Rhode Island\",\"newquay-unitedkingdom\":\"Newquay\",\"nha-trang-vietnam\":\"Nha Trang\",\"niagara-falls-canada\":\"Niagara Falls\",\"nice-france\":\"Nice\",\"nicosia-cyprus\":\"Nicosia\",\"nijmegen-netherlands\":\"Nijmegen\",\"nimes-france\":\"Nîmes\",\"north-vancouver-canada\":\"North Vancouver\",\"norwich-united-kingdom\":\"Norwich\",\"nottingham-united-kingdom\":\"Nottingham\",\"novi-sad-serbia\":\"Novi Sad\",\"nuremberg-germany\":\"Nuremberg\",\"nusa-dua-indonesia\":\"Nusa Dua\",\"nusa-lembongan-indonesia\":\"Nusa Lembongan\",\"nusa-penida-indonesia\":\"Nusa Penida\",\"nuuk-greenland\":\"Nuuk\",\"oakland-united-states\":\"Oakland\",\"oberstdorf-germany\":\"Oberstdorf\",\"odense-denmark\":\"Odense\",\"odz-poland\":\"Łódź\",\"offenbach-germany\":\"Offenbach\",\"ohrid-northmacedonia\":\"Ohrid\",\"oia-greece\":\"Oia\",\"okayama-japan\":\"Okayama\",\"oklahoma-city-united-states\":\"Oklahoma City\",\"olbia-italy\":\"Olbia\",\"olhao-portugal\":\"Olhão\",\"olomouc-czechia\":\"Olomouc\",\"olsztyn-poland\":\"Olsztyn\",\"omaha-united-states\":\"Omaha\",\"opatija-croatia\":\"Opatija\",\"opole-poland\":\"Opole\",\"oristano-italy\":\"Oristano\",\"orlando-unitedstates\":\"Orlando\",\"orleans-france\":\"Orléans\",\"orvieto-italy\":\"Orvieto\",\"osaka-japan\":\"Osaka\",\"osijek-croatia\":\"Osijek\",\"oslo-norway\":\"Oslo\",\"osnabruck-germany\":\"Osnabrück\",\"ostuni-italy\":\"Ostuni\",\"ottawa-canada\":\"Ottawa\",\"oulu-finland\":\"Oulu\",\"ourense-spain\":\"Ourense\",\"oviedo-spain\":\"Oviedo\",\"oxford-unitedkingdom\":\"Oxford\",\"paignton-unitedkingdom\":\"Paignton\",\"pakse-laos\":\"Pakse\",\"palenque-mexico\":\"Palenque\",\"palermo-italy\":\"Palermo\",\"palm-springs-united-states\":\"Palm Springs\",\"palma-spain\":\"Palma\",\"pamplona-spain\":\"Pamplona\",\"panama-city-panama\":\"Panama City\",\"paphos-cyprus\":\"Paphos\",\"paris\":\"Paris\",\"parma-italy\":\"Parma\",\"passau-germany\":\"Passau\",\"pattaya-thailand\":\"Pattaya\",\"pau-france\":\"Pau\",\"peniche-portugal\":\"Peniche\",\"perigueux-france\":\"Périgueux\",\"perpignan-france\":\"Perpignan\",\"perth-australia\":\"Perth\",\"perugia-italy\":\"Perugia\",\"pesaro-italy\":\"Pesaro\",\"pescara-italy\":\"Pescara\",\"peterborough-unitedkingdom\":\"Peterborough\",\"philadelphia-unitedstates\":\"Philadelphia\",\"phnom-penh-cambodia\":\"Phnom Penh\",\"phoenix-united-states\":\"Phoenix\",\"phuket-thailand\":\"Phuket\",\"piacenza-italy\":\"Piacenza\",\"pisa-italy\":\"Pisa\",\"pitlochry-unitedkingdom\":\"Pitlochry\",\"pittsburgh-united-states\":\"Pittsburgh\",\"playa-blanca-spain\":\"Playa Blanca\",\"playa-del-carmen-mexico\":\"Playa del Carmen\",\"pleasanton-united-states\":\"Pleasanton\",\"plymouth-united-states\":\"Plymouth\",\"plymouth-unitedkingdom\":\"Plymouth\",\"poitiers-france\":\"Poitiers\",\"pokhara-nepal\":\"Pokhara\",\"polignano-a-mare-italy\":\"Polignano a Mare\",\"pompei-italy\":\"Pompei\",\"ponferrada-spain\":\"Ponferrada\",\"ponta-delgada-portugal\":\"Ponta Delgada\",\"ponte-de-lima-portugal\":\"Ponte de Lima\",\"pontresina-switzerland\":\"Pontresina\",\"pordenone-italy\":\"Pordenone\",\"porec-croatia\":\"Poreč\",\"portimao-portugal\":\"Portimão\",\"portland-unitedstates\":\"Portland\",\"porto-moniz-portugal\":\"Porto Moniz\",\"porto-portugal\":\"Porto\",\"porto-vecchio-france\":\"Porto-Vecchio\",\"portrush-united-kingdom\":\"Portrush\",\"portsmouth-united-kingdom\":\"Portsmouth\",\"portsmouth-united-states\":\"Portsmouth\",\"potenza-italy\":\"Potenza\",\"potsdam-germany\":\"Potsdam\",\"poznan-poland\":\"Poznań\",\"prague-czechia\":\"Prague\",\"preston-united-kingdom\":\"Preston\",\"puebla-mexico\":\"Puebla\",\"puerto-de-la-cruz-spain\":\"Puerto de la Cruz\",\"puerto-del-carmen-spain\":\"Puerto del Carmen\",\"puerto-princesa-philippines\":\"Puerto Princesa\",\"puerto-vallarta-mexico\":\"Puerto Vallarta\",\"puerto-varas-chile\":\"Puerto Varas\",\"pula-croatia\":\"Pula\",\"pune-india\":\"Pune\",\"punta-arenas-chile\":\"Punta Arenas\",\"punta-del-este-uruguay\":\"Punta del Este\",\"qingdao-china\":\"Qingdao\",\"quarteira-portugal\":\"Quarteira\",\"quebec-city-canada\":\"Quebec City\",\"quedlinburg-germany\":\"Quedlinburg\",\"queenstown-newzealand\":\"Queenstown\",\"queretaro-mexico\":\"Querétaro\",\"quimper-france\":\"Quimper\",\"quito-ecuador\":\"Quito\",\"quy-nhon-vietnam\":\"Quy Nhon\",\"rabat-morocco\":\"Rabat\",\"ragusa-italy\":\"Ragusa\",\"raleigh-united-states\":\"Raleigh\",\"rapallo-italy\":\"Rapallo\",\"ravenna-italy\":\"Ravenna\",\"reading-unitedkingdom\":\"Reading\",\"recife-brazil\":\"Recife\",\"regensburg-germany\":\"Regensburg\",\"reggio-emilia-italy\":\"Reggio Emilia\",\"regina-canada\":\"Regina\",\"reims-france\":\"Reims\",\"rennes-france\":\"Rennes\",\"reno-united-states\":\"Reno\",\"rethymno-greece\":\"Rethymno\",\"reykjavik-iceland\":\"Reykjavík\",\"rhodes-greece\":\"Rhodes\",\"riccione-italy\":\"Riccione\",\"richmond-united-states\":\"Richmond\",\"riga-latvia\":\"Riga\",\"rimini-italy\":\"Rimini\",\"rio-de-janeiro-brazil\":\"Rio de Janeiro\",\"riva-del-garda-italy\":\"Riva del Garda\",\"riyadh-saudiarabia\":\"Riyadh\",\"rochester-united-states\":\"Rochester\",\"rock-hill-united-states\":\"Rock Hill\",\"rome\":\"Rome\",\"ronda-spain\":\"Ronda\",\"ronne-denmark\":\"Rønne\",\"roscoff-france\":\"Roscoff\",\"roses-spain\":\"Roses\",\"rostock-germany\":\"Rostock\",\"rotterdam-netherlands\":\"Rotterdam\",\"rouen-france\":\"Rouen\",\"rovaniemi-finland\":\"Rovaniemi\",\"rovinj-croatia\":\"Rovinj\",\"royal-tunbridge-wells-unitedkingdom\":\"Royal Tunbridge Wells\",\"royan-france\":\"Royan\",\"rzeszow-poland\":\"Rzeszów\",\"saarbrucken-germany\":\"Saarbrücken\",\"sabadell-spain\":\"Sabadell\",\"sacramento-united-states\":\"Sacramento\",\"saint-brieuc-france\":\"Saint-Brieuc\",\"saint-jean-de-luz-france\":\"Saint-Jean-de-Luz\",\"saint-malo-france\":\"Saint-Malo\",\"saint-raphael-france\":\"Saint-Raphaël\",\"saint-tropez-france\":\"Saint-Tropez\",\"salalah-oman\":\"Salalah\",\"salamanca-spain\":\"Salamanca\",\"salen-sweden\":\"Sälen\",\"salerno-italy\":\"Salerno\",\"salou-spain\":\"Salou\",\"salt-lake-city-united-states\":\"Salt Lake City\",\"salta-argentina\":\"Salta\",\"salzburg-austria\":\"Salzburg\",\"samsun-turkiye\":\"Samsun\",\"san-antonio-united-states\":\"San Antonio\",\"san-benedetto-del-tronto-italy\":\"San Benedetto del Tronto\",\"san-carlos-de-bariloche-argentina\":\"San Carlos de Bariloche\",\"san-cristobal-de-las-casas-mexico\":\"San Cristóbal de las Casas\",\"san-diego-unitedstates\":\"San Diego\",\"san-francisco-unitedstates\":\"San Francisco\",\"san-jose-united-states\":\"San Jose\",\"san-miguel-de-allende-mexico\":\"San Miguel de Allende\",\"san-sebastian-spain\":\"San Sebastián\",\"sanford-united-states\":\"Sanford\",\"sanlucar-de-barrameda-spain\":\"Sanlúcar de Barrameda\",\"sanremo-italy\":\"Sanremo\",\"santa-barbara-united-states\":\"Santa Barbara\",\"santa-cruz-de-tenerife-spain\":\"Santa Cruz de Tenerife\",\"santa-fe-argentina\":\"Santa Fe\",\"santa-fe-united-states\":\"Santa Fe\",\"santa-margherita-ligure-italy\":\"Santa Margherita Ligure\",\"santander-spain\":\"Santander\",\"santiago-chile\":\"Santiago\",\"santiago-de-compostela-spain\":\"Santiago de Compostela\",\"santo-domingo-dominicanrepublic\":\"Santo Domingo\",\"sanur-indonesia\":\"Sanur\",\"sao-paulo-brazil\":\"São Paulo\",\"sapporo-japan\":\"Sapporo\",\"sarajevo-bosniaandherzegovina\":\"Sarajevo\",\"sarande-albania\":\"Sarandë\",\"sarlat-la-caneda-france\":\"Sarlat-la-Canéda\",\"saskatoon-canada\":\"Saskatoon\",\"savannah-unitedstates\":\"Savannah\",\"scarborough-united-kingdom\":\"Scarborough\",\"schwerin-germany\":\"Schwerin\",\"seattle-unitedstates\":\"Seattle\",\"seefeld-in-tirol-austria\":\"Seefeld in Tirol\",\"segovia-spain\":\"Segovia\",\"semarang-indonesia\":\"Semarang\",\"seminyak-indonesia\":\"Seminyak\",\"sendai-japan\":\"Sendai\",\"senigallia-italy\":\"Senigallia\",\"seoul-southkorea\":\"Seoul\",\"sesimbra-portugal\":\"Sesimbra\",\"sestri-levante-italy\":\"Sestri Levante\",\"setubal-portugal\":\"Setúbal\",\"seville-spain\":\"Seville\",\"shanghai-china\":\"Shanghai\",\"sharjah-unitedarabemirates\":\"Sharjah\",\"sharm-el-sheikh-egypt\":\"Sharm El Sheikh\",\"sheffield-united-kingdom\":\"Sheffield\",\"sheki-azerbaijan\":\"Sheki\",\"shenzhen-china\":\"Shenzhen\",\"shimla-india\":\"Shimla\",\"shizuoka-japan\":\"Shizuoka\",\"sibenik-croatia\":\"Šibenik\",\"side-turkiye\":\"Side\",\"siem-reap-cambodia\":\"Siem Reap\",\"siena-italy\":\"Siena\",\"sierra-vista-united-states\":\"Sierra Vista\",\"sihanoukville-cambodia\":\"Sihanoukville\",\"siliguri-india\":\"Siliguri\",\"singapore-singapore\":\"Singapore\",\"sintra-portugal\":\"Sintra\",\"sirmione-italy\":\"Sirmione\",\"sitges-spain\":\"Sitges\",\"skopje-northmacedonia\":\"Skopje\",\"sliema-malta\":\"Sliema\",\"slough-unitedkingdom\":\"Slough\",\"sofia-bulgaria\":\"Sofia\",\"solo-indonesia\":\"Solo\",\"sopot-poland\":\"Sopot\",\"sopron-hungary\":\"Sopron\",\"soria-spain\":\"Soria\",\"sorrento-italy\":\"Sorrento\",\"southampton-united-kingdom\":\"Southampton\",\"southport-united-kingdom\":\"Southport\",\"split-croatia\":\"Split\",\"spokane-united-states\":\"Spokane\",\"spoleto-italy\":\"Spoleto\",\"st-albans-unitedkingdom\":\"St Albans\",\"st-andrews-united-kingdom\":\"St Andrews\",\"st-augustine-united-states\":\"St. Augustine\",\"st-gallen-switzerland\":\"St. Gallen\",\"st-john-s-canada\":\"St. John's\",\"stamford-united-states\":\"Stamford\",\"stavanger-norway\":\"Stavanger\",\"stellenbosch-southafrica\":\"Stellenbosch\",\"stockholm-sweden\":\"Stockholm\",\"strasbourg-france\":\"Strasbourg\",\"stresa-italy\":\"Stresa\",\"stuttgart-germany\":\"Stuttgart\",\"sunderland-united-kingdom\":\"Sunderland\",\"surabaya-indonesia\":\"Surabaya\",\"suva-fiji\":\"Suva\",\"suwon-south-korea\":\"Suwon\",\"suzhou-china\":\"Suzhou\",\"swakopmund-namibia\":\"Swakopmund\",\"swansea-united-kingdom\":\"Swansea\",\"swinoujscie-poland\":\"Świnoujście\",\"sydney-australia\":\"Sydney\",\"syracuse-italy\":\"Syracuse\",\"szczecin-poland\":\"Szczecin\",\"szczyrk-poland\":\"Szczyrk\",\"szklarska-poreba-poland\":\"Szklarska Poręba\",\"ta-if-saudi-arabia\":\"Ta'if\",\"taichung-taiwan\":\"Taichung\",\"tainan-taiwan\":\"Tainan\",\"taipei-taiwan\":\"Taipei\",\"tallinn-estonia\":\"Tallinn\",\"tampa-united-states\":\"Tampa\",\"tampere-finland\":\"Tampere\",\"tampico-mexico\":\"Tampico\",\"tangier-morocco\":\"Tangier\",\"taormina-italy\":\"Taormina\",\"taos-united-states\":\"Taos\",\"taranto-italy\":\"Taranto\",\"tarifa-spain\":\"Tarifa\",\"tarragona-spain\":\"Tarragona\",\"tartu-estonia\":\"Tartu\",\"tavira-portugal\":\"Tavira\",\"tbilisi-georgia\":\"Tbilisi\",\"tel-aviv-israel\":\"Tel Aviv\",\"terrassa-spain\":\"Terrassa\",\"teruel-spain\":\"Teruel\",\"the-hague-netherlands\":\"The Hague\",\"thessaloniki-greece\":\"Thessaloniki\",\"thun-switzerland\":\"Thun\",\"tilburg-netherlands\":\"Tilburg\",\"timmendorfer-strand-germany\":\"Timmendorfer Strand\",\"tirana-albania\":\"Tirana\",\"titisee-neustadt-germany\":\"Titisee-Neustadt\",\"tokyo\":\"Tokyo\",\"toledo-spain\":\"Toledo\",\"tomar-portugal\":\"Tomar\",\"toronto-canada\":\"Toronto\",\"torquay-unitedkingdom\":\"Torquay\",\"torremolinos-spain\":\"Torremolinos\",\"torrevieja-spain\":\"Torrevieja\",\"torshavn-faroe-islands\":\"Tórshavn\",\"torun-poland\":\"Toruń\",\"toulon-france\":\"Toulon\",\"toulouse-france\":\"Toulouse\",\"tours-france\":\"Tours\",\"townsville-australia\":\"Townsville\",\"toyama-japan\":\"Toyama\",\"trabzon-turkiye\":\"Trabzon\",\"trapani-italy\":\"Trapani\",\"travemunde-germany\":\"Travemünde\",\"traverse-city-united-states\":\"Traverse City\",\"trento-italy\":\"Trento\",\"treviso-italy\":\"Treviso\",\"trieste-italy\":\"Trieste\",\"trogir-croatia\":\"Trogir\",\"troms-norway\":\"Tromsø\",\"trondheim-norway\":\"Trondheim\",\"trouville-sur-mer-france\":\"Trouville-sur-Mer\",\"troyes-france\":\"Troyes\",\"tubingen-germany\":\"Tübingen\",\"tucson-united-states\":\"Tucson\",\"tudela-spain\":\"Tudela\",\"tulum-mexico\":\"Tulum\",\"tunis-tunisia\":\"Tunis\",\"turin-italy\":\"Turin\",\"turku-finland\":\"Turku\",\"ubeda-spain\":\"Úbeda\",\"ubud-indonesia\":\"Ubud\",\"udaipur-india\":\"Udaipur\",\"udine-italy\":\"Udine\",\"ulaanbaatar-mongolia\":\"Ulaanbaatar\",\"ulm-germany\":\"Ulm\",\"umea-sweden\":\"Umeå\",\"uppsala-sweden\":\"Uppsala\",\"ushuaia-argentina\":\"Ushuaia\",\"ustka-poland\":\"Ustka\",\"utrecht-netherlands\":\"Utrecht\",\"vaasa-finland\":\"Vaasa\",\"valdosta-united-states\":\"Valdosta\",\"valence-france\":\"Valence\",\"valencia-spain\":\"Valencia\",\"valencia-united-states\":\"Valencia\",\"valencia-venezuela\":\"Valencia\",\"valkenburg-netherlands\":\"Valkenburg\",\"valladolid-spain\":\"Valladolid\",\"valletta-malta\":\"Valletta\",\"vancouver-canada\":\"Vancouver\",\"vancouver-united-states\":\"Vancouver\",\"vannes-france\":\"Vannes\",\"varanasi-india\":\"Varanasi\",\"varese-italy\":\"Varese\",\"venice-italy\":\"Venice\",\"ventura-united-states\":\"Ventura\",\"verona-italy\":\"Verona\",\"versailles-france\":\"Versailles\",\"vevey-switzerland\":\"Vevey\",\"viana-do-castelo-portugal\":\"Viana do Castelo\",\"viareggio-italy\":\"Viareggio\",\"vicenza-italy\":\"Vicenza\",\"vichy-france\":\"Vichy\",\"victoria-canada\":\"Victoria\",\"vienna-austria\":\"Vienna\",\"vientiane-laos\":\"Vientiane\",\"vigo-spain\":\"Vigo\",\"vila-real-portugal\":\"Vila Real\",\"vilamoura-portugal\":\"Vilamoura\",\"villach-austria\":\"Villach\",\"vilnius-lithuania\":\"Vilnius\",\"viseu-portugal\":\"Viseu\",\"viterbo-italy\":\"Viterbo\",\"vitoria-gasteiz-spain\":\"Vitoria-Gasteiz\",\"vodice-croatia\":\"Vodice\",\"volos-greece\":\"Volos\",\"warsaw-poland\":\"Warsaw\",\"washington-dc-unitedstates\":\"Washington DC\",\"watford-unitedkingdom\":\"Watford\",\"weimar-germany\":\"Weimar\",\"wellington-newzealand\":\"Wellington\",\"wels-austria\":\"Wels\",\"whistler-canada\":\"Whistler\",\"wiesbaden-germany\":\"Wiesbaden\",\"wilmington-north-carolina-united-states\":\"Wilmington, North Carolina\",\"winchester-unitedkingdom\":\"Winchester\",\"windermere-united-kingdom\":\"Windermere\",\"windhoek-namibia\":\"Windhoek\",\"windsor-canada\":\"Windsor\",\"windsor-unitedkingdom\":\"Windsor\",\"winnipeg-canada\":\"Winnipeg\",\"wisa-poland\":\"Wisła\",\"wismar-germany\":\"Wismar\",\"woking-unitedkingdom\":\"Woking\",\"wolfsburg-germany\":\"Wolfsburg\",\"worcester-united-states\":\"Worcester\",\"worcester-unitedkingdom\":\"Worcester\",\"wrocaw-poland\":\"Wrocław\",\"wurzburg-germany\":\"Würzburg\",\"xian-china\":\"Xi’an\",\"yamagata-japan\":\"Yamagata\",\"yangon-myanmar\":\"Yangon\",\"yantai-china\":\"Yantai\",\"yaounde-cameroon\":\"Yaounde\",\"yerevan-armenia\":\"Yerevan\",\"yogyakarta-indonesia\":\"Yogyakarta\",\"yokohama-japan\":\"Yokohama\",\"york-unitedkingdom\":\"York\",\"zaandam-netherlands\":\"Zaandam\",\"zacatecas-mexico\":\"Zacatecas\",\"zadar-croatia\":\"Zadar\",\"zagreb-croatia\":\"Zagreb\",\"zakopane-poland\":\"Zakopane\",\"zalaegerszeg-hungary\":\"Zalaegerszeg\",\"zamora-spain\":\"Zamora\",\"zandvoort-netherlands\":\"Zandvoort\",\"zanzibar-city-tanzania\":\"Zanzibar City\",\"zaragoza-spain\":\"Zaragoza\",\"zell-am-see-austria\":\"Zell am See\",\"zielona-gora-poland\":\"Zielona Góra\",\"zurich-switzerland\":\"Zurich\",\"zwolle-netherlands\":\"Zwolle\"}")
+};
 /**
-* "Best hotel gyms" pages: /gyms (index) and /gyms/<city-slug>, in English and Spanish (/es/...).
-* Data: src/generated/gyms.json, built from data/gyms/<slug>.json by tools/gyms/build.py.
-* One hotel per tier (luxury = 5 stars, standard = 4 stars, budget = 3 stars or less), judged on the gym only.
+* "Best hotel pools" pages: /pools (index) and /pools/<city-slug>, in English and Spanish (/es/...).
+* Data: src/generated/pools.json, built from data/pools/<slug>.json by tools/pools/build.py.
+* One hotel per tier (luxury = 5 stars, standard = 4 stars, budget = 3 stars or less), judged on the pool only.
 */
 /** Full data is a static file fetched on first use (keeps the worker bundle small); IDX has its path and id -> city name. */
 var IX$1 = {
-	file: "/assets/t3d/gyms.a31e866601.json",
-	ids: /* @__PURE__ */ JSON.parse("{\"a-coruna-spain\":\"A Coruña\",\"aachen-germany\":\"Aachen\",\"aalborg-denmark\":\"Aalborg\",\"aalst-belgium\":\"Aalst\",\"aarhus-denmark\":\"Aarhus\",\"abano-terme-italy\":\"Abano Terme\",\"aberdeen-unitedkingdom\":\"Aberdeen\",\"abidjan-ivory-coast\":\"Abidjan\",\"abu-dhabi-unitedarabemirates\":\"Abu Dhabi\",\"abuja-nigeria\":\"Abuja\",\"accra-ghana\":\"Accra\",\"adana-turkiye\":\"Adana\",\"addis-ababa-ethiopia\":\"Addis Ababa\",\"adeje-spain\":\"Adeje\",\"adelaide-australia\":\"Adelaide\",\"agra-india\":\"Agra\",\"agrigento-italy\":\"Agrigento\",\"aguascalientes-mexico\":\"Aguascalientes\",\"ahmedabad-india\":\"Ahmedabad\",\"airdrie-canada\":\"Airdrie\",\"aix-en-provence-france\":\"Aix-en-Provence\",\"aix-les-bains-france\":\"Aix-les-Bains\",\"ajaccio-france\":\"Ajaccio\",\"ajman-united-arab-emirates\":\"Ajman\",\"akita-japan\":\"Akita\",\"akron-united-states\":\"Akron\",\"alajuela-costa-rica\":\"Alajuela\",\"alanya-turkiye\":\"Alanya\",\"alba-italy\":\"Alba\",\"albacete-spain\":\"Albacete\",\"albufeira-portugal\":\"Albufeira\",\"albuquerque-united-states\":\"Albuquerque\",\"alcala-de-henares-spain\":\"Alcalá de Henares\",\"alcobendas-spain\":\"Alcobendas\",\"alesund-norway\":\"Ålesund\",\"alexandria-united-states\":\"Alexandria\",\"algeciras-spain\":\"Algeciras\",\"alghero-italy\":\"Alghero\",\"alicante-spain\":\"Alicante\",\"alkmaar-netherlands\":\"Alkmaar\",\"almaty-kazakhstan\":\"Almaty\",\"almeria-spain\":\"Almería\",\"almunecar-spain\":\"Almuñécar\",\"alpharetta-united-states\":\"Alpharetta\",\"altea-spain\":\"Altea\",\"altoona-united-states\":\"Altoona\",\"amalfi-italy\":\"Amalfi\",\"amarante-portugal\":\"Amarante\",\"amarillo-united-states\":\"Amarillo\",\"amboise-france\":\"Amboise\",\"amersfoort-netherlands\":\"Amersfoort\",\"ames-united-states\":\"Ames\",\"amiens-france\":\"Amiens\",\"amman-jordan\":\"Amman\",\"amritsar-india\":\"Amritsar\",\"amstelveen-the-netherlands\":\"Amstelveen\",\"amsterdam-netherlands\":\"Amsterdam\",\"anaheim-united-states\":\"Anaheim\",\"ancona-italy\":\"Ancona\",\"andorra-la-vella-andorra\":\"Andorra la Vella\",\"angers-france\":\"Angers\",\"angra-do-heroismo-portugal\":\"Angra do Heroísmo\",\"ankara-trkiye\":\"Ankara\",\"ann-arbor-united-states\":\"Ann Arbor\",\"annapolis-united-states\":\"Annapolis\",\"annecy-france\":\"Annecy\",\"antalya-trkiye\":\"Antalya\",\"antequera-spain\":\"Antequera\",\"antibes-france\":\"Antibes\",\"antigua-guatemala-guatemala\":\"Antigua Guatemala\",\"antwerp-belgium\":\"Antwerp\",\"aomori-japan\":\"Aomori\",\"apeldoorn-netherlands\":\"Apeldoorn\",\"apia-samoa\":\"Apia\",\"appleton-united-states\":\"Appleton\",\"aqaba-jordan\":\"Aqaba\",\"aranjuez-spain\":\"Aranjuez\",\"arcachon-france\":\"Arcachon\",\"arcadia-united-states\":\"Arcadia\",\"arequipa-peru\":\"Arequipa\",\"arezzo-italy\":\"Arezzo\",\"arica-chile\":\"Arica\",\"arles-france\":\"Arles\",\"arlington-united-states\":\"Arlington\",\"arnhem-netherlands\":\"Arnhem\",\"arras-france\":\"Arras\",\"arrecife-spain\":\"Arrecife\",\"arusha-tanzania\":\"Arusha\",\"ascona-switzerland\":\"Ascona\",\"asheville-united-states\":\"Asheville\",\"assisi-italy\":\"Assisi\",\"astana-kazakhstan\":\"Astana\",\"asti-italy\":\"Asti\",\"asuncion-paraguay\":\"Asuncion\",\"aswan-egypt\":\"Aswan\",\"athens-greece\":\"Athens\",\"atlanta-united-states\":\"Atlanta\",\"atlantic-city-united-states\":\"Atlantic City\",\"atyrau-kazakhstan\":\"Atyrau\",\"auburn-alabama-united-states\":\"Auburn, Alabama\",\"auckland-newzealand\":\"Auckland\",\"augsburg-germany\":\"Augsburg\",\"augusta-united-states\":\"Augusta\",\"aurangabad-india\":\"Aurangabad\",\"aurora-united-states\":\"Aurora\",\"austin-unitedstates\":\"Austin\",\"aveiro-portugal\":\"Aveiro\",\"avignon-france\":\"Avignon\",\"avila-spain\":\"Ávila\",\"aviles-spain\":\"Avilés\",\"ayr-unitedkingdom\":\"Ayr\",\"bacolod-philippines\":\"Bacolod\",\"bad-hofgastein-austria\":\"Bad Hofgastein\",\"bad-homburg-vor-der-hohe-germany\":\"Bad Homburg vor der Höhe\",\"bad-ischl-austria\":\"Bad Ischl\",\"badajoz-spain\":\"Badajoz\",\"baden-baden-germany\":\"Baden-Baden\",\"baghdad-iraq\":\"Baghdad\",\"bahia-blanca-argentina\":\"Bahia Blanca\",\"bakersfield-united-states\":\"Bakersfield\",\"baku-azerbaijan\":\"Baku\",\"bali-indonesia\":\"Bali\",\"baltimore-united-states\":\"Baltimore\",\"bandung-indonesia\":\"Bandung\",\"banff-canada\":\"Banff\",\"bangkok-thailand\":\"Bangkok\",\"banyuwangi-indonesia\":\"Banyuwangi\",\"barcelona\":\"Barcelona\",\"bari-italy\":\"Bari\",\"barnstaple-unitedkingdom\":\"Barnstaple\",\"barranquilla-colombia\":\"Barranquilla\",\"barueri-brazil\":\"Barueri\",\"basel-switzerland\":\"Basel\",\"basingstoke-united-kingdom\":\"Basingstoke\",\"bath-unitedkingdom\":\"Bath\",\"baton-rouge-united-states\":\"Baton Rouge\",\"battambang-cambodia\":\"Battambang\",\"batumi-georgia\":\"Batumi\",\"bauru-brazil\":\"Bauru\",\"bayreuth-germany\":\"Bayreuth\",\"beaverton-united-states\":\"Beaverton\",\"beijing-china\":\"Beijing\",\"beirut-lebanon\":\"Beirut\",\"bekasi-indonesia\":\"Bekasi\",\"belem-brazil\":\"Belém\",\"belfast-unitedkingdom\":\"Belfast\",\"belgrade-serbia\":\"Belgrade\",\"bellevue-united-states\":\"Bellevue\",\"bellingham-united-states\":\"Bellingham\",\"belo-horizonte-brazil\":\"Belo Horizonte\",\"benalmadena-spain\":\"Benalmádena\",\"bend-united-states\":\"Bend\",\"benevento-italy\":\"Benevento\",\"benicassim-spain\":\"Benicàssim\",\"benidorm-spain\":\"Benidorm\",\"bento-goncalves-brazil\":\"Bento Gonçalves\",\"bentonville-united-states\":\"Bentonville\",\"beppu-japan\":\"Beppu\",\"bergamo-italy\":\"Bergamo\",\"bergen-norway\":\"Bergen\",\"berkeley-united-states\":\"Berkeley\",\"berlin-germany\":\"Berlin\",\"bern-switzerland\":\"Bern\",\"besancon-france\":\"Besançon\",\"bethesda-united-states\":\"Bethesda\",\"bethlehem-united-states\":\"Bethlehem\",\"beziers-france\":\"Béziers\",\"bhopal-india\":\"Bhopal\",\"biarritz-france\":\"Biarritz\",\"biaystok-poland\":\"Białystok\",\"bielefeld-germany\":\"Bielefeld\",\"bielsko-biaa-poland\":\"Bielsko-Biała\",\"bilbao-spain\":\"Bilbao\",\"billings-united-states\":\"Billings\",\"billund-denmark\":\"Billund\",\"biloxi-united-states\":\"Biloxi\",\"binghamton-united-states\":\"Binghamton\",\"binz-germany\":\"Binz\",\"birmingham-alabama-united-states\":\"Birmingham, Alabama\",\"birmingham-united-kingdom\":\"Birmingham\",\"bismarck-united-states\":\"Bismarck\",\"bitola-north-macedonia\":\"Bitola\",\"blackpool-united-kingdom\":\"Blackpool\",\"blacksburg-united-states\":\"Blacksburg\",\"blankenberge-belgium\":\"Blankenberge\",\"bled-slovenia\":\"Bled\",\"bloemfontein-south-africa\":\"Bloemfontein\",\"blois-france\":\"Blois\",\"bloomington-united-states\":\"Bloomington\",\"blumenau-brazil\":\"Blumenau\",\"boa-vista-brazil\":\"Boa Vista\",\"boca-raton-united-states\":\"Boca Raton\",\"bogor-indonesia\":\"Bogor\",\"bogota-colombia\":\"Bogotá\",\"boise-united-states\":\"Boise\",\"bologna-italy\":\"Bologna\",\"bolzano-italy\":\"Bolzano\",\"bonn-germany\":\"Bonn\",\"bordeaux-france\":\"Bordeaux\",\"bossier-city-united-states\":\"Bossier City\",\"boston-unitedstates\":\"Boston\",\"boucherville-canada\":\"Boucherville\",\"boulder-united-states\":\"Boulder\",\"bourges-france\":\"Bourges\",\"bournemouth-united-kingdom\":\"Bournemouth\",\"bowie-united-states\":\"Bowie\",\"bowling-green-united-states\":\"Bowling Green\",\"bozeman-united-states\":\"Bozeman\",\"bradenton-united-states\":\"Bradenton\",\"braga-portugal\":\"Braga\",\"braganca-portugal\":\"Bragança\",\"branson-united-states\":\"Branson\",\"brasilia-brazil\":\"Brasília\",\"brasov-romania\":\"Brașov\",\"bratislava-slovakia\":\"Bratislava\",\"breda-netherlands\":\"Breda\",\"bregenz-austria\":\"Bregenz\",\"bremen-germany\":\"Bremen\",\"bremerhaven-germany\":\"Bremerhaven\",\"brentwood-united-states\":\"Brentwood\",\"brescia-italy\":\"Brescia\",\"brest-france\":\"Brest\",\"bridgetown-barbados\":\"Bridgetown\",\"bridgwater-united-kingdom\":\"Bridgwater\",\"brindisi-italy\":\"Brindisi\",\"brisbane-australia\":\"Brisbane\",\"bristol-unitedkingdom\":\"Bristol\",\"brno-czechia\":\"Brno\",\"brookline-united-states\":\"Brookline\",\"brooklyn-united-states\":\"Brooklyn\",\"brossard-canada\":\"Brossard\",\"bruges-belgium\":\"Bruges\",\"brussels-belgium\":\"Brussels\",\"bryan-united-states\":\"Bryan\",\"bucharest-romania\":\"Bucharest\",\"budapest-hungary\":\"Budapest\",\"budva-montenegro\":\"Budva\",\"buena-park-united-states\":\"Buena Park\",\"buenos-aires-argentina\":\"Buenos Aires\",\"buffalo-united-states\":\"Buffalo\",\"burbank-united-states\":\"Burbank\",\"burgos-spain\":\"Burgos\",\"burlington-united-states\":\"Burlington\",\"burnaby-canada\":\"Burnaby\",\"burnley-united-kingdom\":\"Burnley\",\"bursa-turkiye\":\"Bursa\",\"busan-southkorea\":\"Busan\",\"bydgoszcz-poland\":\"Bydgoszcz\",\"bytom-poland\":\"Bytom\",\"cabo-san-lucas-mexico\":\"Cabo San Lucas\",\"caceres-spain\":\"Cáceres\",\"cadiz-spain\":\"Cádiz\",\"caen-france\":\"Caen\",\"cairns-australia\":\"Cairns\",\"cairo-egypt\":\"Cairo\",\"cajamarca-peru\":\"Cajamarca\",\"caldas-novas-brazil\":\"Caldas Novas\",\"calgary-canada\":\"Calgary\",\"cali-colombia\":\"Cali\",\"calpe-spain\":\"Calpe\",\"cambridge-massachusetts-united-states\":\"Cambridge, Massachusetts\",\"cambridge-unitedkingdom\":\"Cambridge\",\"camden-united-states\":\"Camden\",\"campeche-mexico\":\"Campeche\",\"campinas-brazil\":\"Campinas\",\"campo-grande-brazil\":\"Campo Grande\",\"campos-do-jordao-brazil\":\"Campos do Jordao\",\"can-tho-vietnam\":\"Can Tho\",\"canakkale-turkiye\":\"Çanakkale\",\"canberra-australia\":\"Canberra\",\"cancun-mexico\":\"Cancún\",\"canela-brazil\":\"Canela\",\"canggu-indonesia\":\"Canggu\",\"cannes-france\":\"Cannes\",\"canterbury-united-kingdom\":\"Canterbury\",\"cape-coral-united-states\":\"Cape Coral\",\"cape-town-southafrica\":\"Cape Town\",\"caracas-venezuela\":\"Caracas\",\"caraguatatuba-brazil\":\"Caraguatatuba\",\"cardiff-unitedkingdom\":\"Cardiff\",\"carlisle-united-kingdom\":\"Carlisle\",\"carmel-united-states\":\"Carmel\",\"carpi-italy\":\"Carpi\",\"cartagena-spain\":\"Cartagena\",\"cary-united-states\":\"Cary\",\"casablanca-morocco\":\"Casablanca\",\"cascais-portugal\":\"Cascais\",\"caserta-italy\":\"Caserta\",\"casper-united-states\":\"Casper\",\"castelldefels-spain\":\"Castelldefels\",\"castellon-de-la-plana-spain\":\"Castellón de la Plana\",\"catania-italy\":\"Catania\",\"cattolica-italy\":\"Cattolica\",\"caxias-do-sul-brazil\":\"Caxias do Sul\",\"cayenne-french-guiana\":\"Cayenne\",\"cebu-city-philippines\":\"Cebu City\",\"cedar-rapids-united-states\":\"Cedar Rapids\",\"cefalu-italy\":\"Cefalù\",\"centennial-united-states\":\"Centennial\",\"cesena-italy\":\"Cesena\",\"cesenatico-italy\":\"Cesenatico\",\"ceske-budejovice-czechia\":\"Ceske Budejovice\",\"chalon-sur-saone-france\":\"Chalon-sur-Saône\",\"chandigarh-india\":\"Chandigarh\",\"chandler-united-states\":\"Chandler\",\"chania-greece\":\"Chania\",\"chantilly-france\":\"Chantilly\",\"chapel-hill-united-states\":\"Chapel Hill\",\"charleston-unitedstates\":\"Charleston\",\"charlotte-united-states\":\"Charlotte\",\"charlottesville-united-states\":\"Charlottesville\",\"charlottetown-canada\":\"Charlottetown\",\"chatham-canada\":\"Chatham\",\"chattanooga-united-states\":\"Chattanooga\",\"chaves-portugal\":\"Chaves\",\"cheltenham-unitedkingdom\":\"Cheltenham\",\"chemnitz-germany\":\"Chemnitz\",\"chengdu-china\":\"Chengdu\",\"cherkasy-ukraine\":\"Cherkasy\",\"chester-united-kingdom\":\"Chester\",\"chesterfield-united-kingdom\":\"Chesterfield\",\"cheyenne-united-states\":\"Cheyenne\",\"chianciano-terme-italy\":\"Chianciano Terme\",\"chiang-mai-thailand\":\"Chiang Mai\",\"chiang-rai-thailand\":\"Chiang Rai\",\"chiba-japan\":\"Chiba\",\"chicago-unitedstates\":\"Chicago\",\"chiclana-de-la-frontera-spain\":\"Chiclana de la Frontera\",\"chiclayo-peru\":\"Chiclayo\",\"chico-united-states\":\"Chico\",\"chihuahua-mexico\":\"Chihuahua\",\"chilliwack-canada\":\"Chilliwack\",\"chisinau-moldova\":\"Chisinau\",\"chongqing-china\":\"Chongqing\",\"chorzow-poland\":\"Chorzów\",\"christchurch-newzealand\":\"Christchurch\",\"chula-vista-united-states\":\"Chula Vista\",\"cincinnati-united-states\":\"Cincinnati\",\"cirebon-indonesia\":\"Cirebon\",\"cirencester-united-kingdom\":\"Cirencester\",\"ciudad-real-spain\":\"Ciudad Real\",\"ciudad-victoria-mexico\":\"Ciudad Victoria\",\"clermont-ferrand-france\":\"Clermont-Ferrand\",\"cleveland-united-states\":\"Cleveland\",\"cluj-napoca-romania\":\"Cluj-Napoca\",\"coatzacoalcos-mexico\":\"Coatzacoalcos\",\"cochabamba-bolivia\":\"Cochabamba\",\"coeur-d-alene-united-states\":\"Coeur d'Alene\",\"cognac-france\":\"Cognac\",\"coimbatore-india\":\"Coimbatore\",\"coimbra-portugal\":\"Coimbra\",\"colchester-united-kingdom\":\"Colchester\",\"colima-mexico\":\"Colima\",\"colmar-france\":\"Colmar\",\"cologne-germany\":\"Cologne\",\"colombo-srilanka\":\"Colombo\",\"colorado-springs-united-states\":\"Colorado Springs\",\"columbia-united-states\":\"Columbia\",\"columbus-united-states\":\"Columbus\",\"comitan-mexico\":\"Comitan\",\"como-italy\":\"Como\",\"compiegne-france\":\"Compiègne\",\"concepcion-chile\":\"Concepcion\",\"conil-de-la-frontera-spain\":\"Conil de la Frontera\",\"constanta-romania\":\"Constanta\",\"conwy-united-kingdom\":\"Conwy\",\"copenhagen-denmark\":\"Copenhagen\",\"cordoba-argentina\":\"Córdoba\",\"cordoba-mexico\":\"Cordoba\",\"cordoba-spain\":\"Córdoba\",\"corfu-greece\":\"Corfu\",\"cork-ireland\":\"Cork\",\"corlu-turkiye\":\"Corlu\",\"corpus-christi-united-states\":\"Corpus Christi\",\"corralejo-spain\":\"Corralejo\",\"cosenza-italy\":\"Cosenza\",\"costa-mesa-united-states\":\"Costa Mesa\",\"cotonou-benin\":\"Cotonou\",\"cottbus-germany\":\"Cottbus\",\"coventry-unitedkingdom\":\"Coventry\",\"cozumel-mexico\":\"Cozumel\",\"craiova-romania\":\"Craiova\",\"crawley-united-kingdom\":\"Crawley\",\"cremona-italy\":\"Cremona\",\"cromer-united-kingdom\":\"Cromer\",\"cuenca-ecuador\":\"Cuenca\",\"cuenca-spain\":\"Cuenca\",\"cuernavaca-mexico\":\"Cuernavaca\",\"cuiaba-brazil\":\"Cuiaba\",\"culiacan-mexico\":\"Culiacan\",\"cullera-spain\":\"Cullera\",\"cuneo-italy\":\"Cuneo\",\"cupertino-united-states\":\"Cupertino\",\"curitiba-brazil\":\"Curitiba\",\"cusco-peru\":\"Cusco\",\"czestochowa-poland\":\"Częstochowa\",\"da-nang-vietnam\":\"Da Nang\",\"daegu-south-korea\":\"Daegu\",\"daejeon-south-korea\":\"Daejeon\",\"dakar-senegal\":\"Dakar\",\"dalat-vietnam\":\"Dalat\",\"dalian-china\":\"Dalian\",\"dallas-united-states\":\"Dallas\",\"dambulla-sri-lanka\":\"Dambulla\",\"danville-united-states\":\"Danville\",\"dar-es-salaam-tanzania\":\"Dar es Salaam\",\"darlington-united-kingdom\":\"Darlington\",\"darmstadt-germany\":\"Darmstadt\",\"darwin-australia\":\"Darwin\",\"davenport-united-states\":\"Davenport\",\"davis-united-states\":\"Davis\",\"dax-france\":\"Dax\",\"dayton-united-states\":\"Dayton\",\"daytona-beach-united-states\":\"Daytona Beach\",\"deadwood-united-states\":\"Deadwood\",\"deauville-france\":\"Deauville\",\"debrecen-hungary\":\"Debrecen\",\"delft-netherlands\":\"Delft\",\"delray-beach-united-states\":\"Delray Beach\",\"den-bosch-netherlands\":\"Den Bosch\",\"denia-spain\":\"Dénia\",\"denizli-turkiye\":\"Denizli\",\"denpasar-indonesia\":\"Denpasar\",\"denver-unitedstates\":\"Denver\",\"derby-unitedkingdom\":\"Derby\",\"derry-londonderry-united-kingdom\":\"Derry Londonderry\",\"des-moines-united-states\":\"Des Moines\",\"desenzano-del-garda-italy\":\"Desenzano del Garda\",\"detroit-united-states\":\"Detroit\",\"deventer-netherlands\":\"Deventer\",\"dinan-france\":\"Dinan\",\"dinard-france\":\"Dinard\",\"diyarbakr-turkiye\":\"Diyarbakır\",\"doha-qatar\":\"Doha\",\"doncaster-united-kingdom\":\"Doncaster\",\"dortmund-germany\":\"Dortmund\",\"dresden-germany\":\"Dresden\",\"dubai\":\"Dubai\",\"dublin-ireland\":\"Dublin\",\"dublin-united-states\":\"Dublin\",\"dubrovnik-croatia\":\"Dubrovnik\",\"duisburg-germany\":\"Duisburg\",\"dumaguete-philippines\":\"Dumaguete\",\"dundee-united-kingdom\":\"Dundee\",\"dunedin-newzealand\":\"Dunedin\",\"dunkerque-france\":\"Dunkerque\",\"durban-southafrica\":\"Durban\",\"durham-united-kingdom\":\"Durham\",\"durham-united-states\":\"Durham\",\"dusseldorf-germany\":\"Düsseldorf\",\"eastbourne-unitedkingdom\":\"Eastbourne\",\"edinburgh-unitedkingdom\":\"Edinburgh\",\"edirne-turkiye\":\"Edirne\",\"eindhoven-netherlands\":\"Eindhoven\",\"eisenach-germany\":\"Eisenach\",\"el-puerto-de-santa-maria-spain\":\"El Puerto de Santa María\",\"elche-spain\":\"Elche\",\"emden-germany\":\"Emden\",\"enniskillen-united-kingdom\":\"Enniskillen\",\"epinal-france\":\"Épinal\",\"erfurt-germany\":\"Erfurt\",\"erzurum-turkiye\":\"Erzurum\",\"eskisehir-turkiye\":\"Eskişehir\",\"essaouira-morocco\":\"Essaouira\",\"essen-germany\":\"Essen\",\"estepona-spain\":\"Estepona\",\"estoril-portugal\":\"Estoril\",\"evian-les-bains-france\":\"Évian-les-Bains\",\"evora-portugal\":\"Évora\",\"exeter-united-kingdom\":\"Exeter\",\"falmouth-unitedkingdom\":\"Falmouth\",\"fano-italy\":\"Fano\",\"farnborough-united-kingdom\":\"Farnborough\",\"faro-portugal\":\"Faro\",\"fatima-portugal\":\"Fátima\",\"ferrara-italy\":\"Ferrara\",\"ferrol-spain\":\"Ferrol\",\"figueres-spain\":\"Figueres\",\"flagstaff-united-states\":\"Flagstaff\",\"flensburg-germany\":\"Flensburg\",\"florence-italy\":\"Florence\",\"foggia-italy\":\"Foggia\",\"foligno-italy\":\"Foligno\",\"folkestone-unitedkingdom\":\"Folkestone\",\"forli-italy\":\"Forlì\",\"fort-lauderdale-united-states\":\"Fort Lauderdale\",\"fortaleza-brazil\":\"Fortaleza\",\"forte-dei-marmi-italy\":\"Forte dei Marmi\",\"foz-do-iguacu-brazil\":\"Foz do Iguaçu\",\"frankfurt-germany\":\"Frankfurt\",\"franklin-united-states\":\"Franklin\",\"fredericton-canada\":\"Fredericton\",\"freetown-sierra-leone\":\"Freetown\",\"fribourg-switzerland\":\"Fribourg\",\"friedrichshafen-germany\":\"Friedrichshafen\",\"fuengirola-spain\":\"Fuengirola\",\"fukuoka-japan\":\"Fukuoka\",\"fulda-germany\":\"Fulda\",\"funchal-portugal\":\"Funchal\",\"gaborone-botswana\":\"Gaborone\",\"gaeta-italy\":\"Gaeta\",\"gallipoli-italy\":\"Gallipoli\",\"galway-ireland\":\"Galway\",\"gandia-spain\":\"Gandía\",\"garmisch-partenkirchen-germany\":\"Garmisch-Partenkirchen\",\"gaziantep-turkiye\":\"Gaziantep\",\"gdansk-poland\":\"Gdańsk\",\"gdynia-poland\":\"Gdynia\",\"geelong-australia\":\"Geelong\",\"geneva-switzerland\":\"Geneva\",\"genoa-italy\":\"Genoa\",\"georgetown-guyana\":\"Georgetown\",\"getafe-spain\":\"Getafe\",\"ghent-belgium\":\"Ghent\",\"gijon-spain\":\"Gijón\",\"girona-spain\":\"Girona\",\"glasgow-unitedkingdom\":\"Glasgow\",\"gliwice-poland\":\"Gliwice\",\"gloucester-unitedkingdom\":\"Gloucester\",\"gold-coast-australia\":\"Gold Coast\",\"gothenburg-sweden\":\"Gothenburg\",\"gottingen-germany\":\"Göttingen\",\"granada-nicaragua\":\"Granada\",\"granada-spain\":\"Granada\",\"graz-austria\":\"Graz\",\"great-yarmouth-united-kingdom\":\"Great Yarmouth\",\"grenoble-france\":\"Grenoble\",\"grindelwald-switzerland\":\"Grindelwald\",\"groningen-netherlands\":\"Groningen\",\"grosseto-italy\":\"Grosseto\",\"guadalajara-mexico\":\"Guadalajara\",\"guadalajara-spain\":\"Guadalajara\",\"guanajuato-mexico\":\"Guanajuato\",\"guangzhou-china\":\"Guangzhou\",\"gubbio-italy\":\"Gubbio\",\"guildford-unitedkingdom\":\"Guildford\",\"guilin-china\":\"Guilin\",\"guimaraes-portugal\":\"Guimarães\",\"gyeongju-south-korea\":\"Gyeongju\",\"ha-long-vietnam\":\"Ha Long\",\"haarlem-netherlands\":\"Haarlem\",\"hakodate-japan\":\"Hakodate\",\"hakone-japan\":\"Hakone\",\"halifax-canada\":\"Halifax\",\"hamamatsu-japan\":\"Hamamatsu\",\"hamburg-germany\":\"Hamburg\",\"hamilton-canada\":\"Hamilton\",\"hangzhou-china\":\"Hangzhou\",\"hanoi-vietnam\":\"Hanoi\",\"harbin-china\":\"Harbin\",\"harrogate-united-kingdom\":\"Harrogate\",\"hasselt-belgium\":\"Hasselt\",\"hat-yai-thailand\":\"Hat Yai\",\"heidelberg-germany\":\"Heidelberg\",\"heilbronn-germany\":\"Heilbronn\",\"helsinki-finland\":\"Helsinki\",\"heraklion-greece\":\"Heraklion\",\"heringsdorf-germany\":\"Heringsdorf\",\"hersonissos-greece\":\"Hersonissos\",\"hiroshima-japan\":\"Hiroshima\",\"ho-chi-minh-city-vietnam\":\"Ho Chi Minh City\",\"hobart-australia\":\"Hobart\",\"hoi-an-vietnam\":\"Hoi An\",\"hong-kong-hongkong\":\"Hong Kong\",\"honolulu-unitedstates\":\"Honolulu\",\"horta-portugal\":\"Horta\",\"houston-united-states\":\"Houston\",\"hua-hin-thailand\":\"Hua Hin\",\"huddersfield-united-kingdom\":\"Huddersfield\",\"hue-vietnam\":\"Hue\",\"huelva-spain\":\"Huelva\",\"huesca-spain\":\"Huesca\",\"hull-united-kingdom\":\"Hull\",\"huntsville-united-states\":\"Huntsville\",\"hurghada-egypt\":\"Hurghada\",\"hyderabad-india\":\"Hyderabad\",\"hyeres-france\":\"Hyères\",\"iasi-romania\":\"Iași\",\"ibiza-spain\":\"Ibiza\",\"ierapetra-greece\":\"Ierapetra\",\"ikeja-nigeria\":\"Ikeja\",\"imola-italy\":\"Imola\",\"imperia-italy\":\"Imperia\",\"incheon-south-korea\":\"Incheon\",\"indianapolis-united-states\":\"Indianapolis\",\"ingolstadt-germany\":\"Ingolstadt\",\"innsbruck-austria\":\"Innsbruck\",\"interlaken-switzerland\":\"Interlaken\",\"inverness-unitedkingdom\":\"Inverness\",\"ioannina-greece\":\"Ioannina\",\"ipswich-united-kingdom\":\"Ipswich\",\"iquitos-peru\":\"Iquitos\",\"istanbul-trkiye\":\"Istanbul\",\"izmir-trkiye\":\"Izmir\",\"jaca-spain\":\"Jaca\",\"jackson-wyoming-united-states\":\"Jackson, Wyoming\",\"jaen-spain\":\"Jaén\",\"jaipur-india\":\"Jaipur\",\"jakarta-indonesia\":\"Jakarta\",\"jeddah-saudiarabia\":\"Jeddah\",\"jerez-de-la-frontera-spain\":\"Jerez de la Frontera\",\"jimbaran-indonesia\":\"Jimbaran\",\"jodhpur-india\":\"Jodhpur\",\"johannesburg-southafrica\":\"Johannesburg\",\"johor-bahru-malaysia\":\"Johor Bahru\",\"kagoshima-japan\":\"Kagoshima\",\"kaiserslautern-germany\":\"Kaiserslautern\",\"kanazawa-japan\":\"Kanazawa\",\"kandy-srilanka\":\"Kandy\",\"kaohsiung-taiwan\":\"Kaohsiung\",\"karachi-pakistan\":\"Karachi\",\"karlsruhe-germany\":\"Karlsruhe\",\"karpacz-poland\":\"Karpacz\",\"kathmandu-nepal\":\"Kathmandu\",\"katowice-poland\":\"Katowice\",\"kaunas-lithuania\":\"Kaunas\",\"kayseri-turkiye\":\"Kayseri\",\"kelowna-canada\":\"Kelowna\",\"kemer-turkiye\":\"Kemer\",\"kiel-germany\":\"Kiel\",\"kielce-poland\":\"Kielce\",\"kigali-rwanda\":\"Kigali\",\"kingston-canada\":\"Kingston\",\"kingston-jamaica\":\"Kingston\",\"kitzbuhel-austria\":\"Kitzbühel\",\"klagenfurt-austria\":\"Klagenfurt\",\"knokke-heist-belgium\":\"Knokke-Heist\",\"kobe-japan\":\"Kobe\",\"koblenz-germany\":\"Koblenz\",\"kolkata-india\":\"Kolkata\",\"konstanz-germany\":\"Konstanz\",\"konya-turkiye\":\"Konya\",\"koobrzeg-poland\":\"Kołobrzeg\",\"kortrijk-belgium\":\"Kortrijk\",\"kosice-slovakia\":\"Kosice\",\"kotor-montenegro\":\"Kotor\",\"krakow-poland\":\"Kraków\",\"krynica-zdroj-poland\":\"Krynica Zdrój\",\"kumamoto-japan\":\"Kumamoto\",\"kunming-china\":\"Kunming\",\"kurashiki-japan\":\"Kurashiki\",\"kusadas-turkiye\":\"Kuşadası\",\"kuta-indonesia\":\"Kuta\",\"kyoto-japan\":\"Kyoto\",\"la-baule-france\":\"La Baule\",\"la-paz-bolivia\":\"La Paz\",\"la-paz-mexico\":\"La Paz\",\"la-rochelle-france\":\"La Rochelle\",\"la-spezia-italy\":\"La Spezia\",\"lagos-nigeria\":\"Lagos\",\"lagos-portugal\":\"Lagos\",\"lamego-portugal\":\"Lamego\",\"lamezia-terme-italy\":\"Lamezia Terme\",\"larnaca-cyprus\":\"Larnaca\",\"las-palmas-de-gran-canaria-spain\":\"Las Palmas de Gran Canaria\",\"las-vegas-unitedstates\":\"Las Vegas\",\"latina-italy\":\"Latina\",\"lausanne-switzerland\":\"Lausanne\",\"le-touquet-paris-plage-france\":\"Le Touquet-Paris-Plage\",\"lecce-italy\":\"Lecce\",\"leeds-united-kingdom\":\"Leeds\",\"leeuwarden-netherlands\":\"Leeuwarden\",\"lefkada-greece\":\"Lefkada\",\"legian-indonesia\":\"Legian\",\"leicester-unitedkingdom\":\"Leicester\",\"leipzig-germany\":\"Leipzig\",\"leiria-portugal\":\"Leiria\",\"leon-nicaragua\":\"Leon\",\"leon-spain\":\"León\",\"leuven-belgium\":\"Leuven\",\"liege-belgium\":\"Liège\",\"liepaja-latvia\":\"Liepaja\",\"lille-france\":\"Lille\",\"lima-peru\":\"Lima\",\"limassol-cyprus\":\"Limassol\",\"limoges-france\":\"Limoges\",\"lincoln-unitedkingdom\":\"Lincoln\",\"linz-austria\":\"Linz\",\"lisbon-portugal\":\"Lisbon\",\"livermore-united-states\":\"Livermore\",\"liverpool-unitedkingdom\":\"Liverpool\",\"livorno-italy\":\"Livorno\",\"ljubljana-slovenia\":\"Ljubljana\",\"lleida-spain\":\"Lleida\",\"lloret-de-mar-spain\":\"Lloret de Mar\",\"locarno-switzerland\":\"Locarno\",\"logrono-spain\":\"Logroño\",\"london-canada\":\"London\",\"london\":\"London\",\"louisville-united-states\":\"Louisville\",\"lourdes-france\":\"Lourdes\",\"loutraki-greece\":\"Loutraki\",\"lovina-indonesia\":\"Lovina\",\"luang-prabang-laos\":\"Luang Prabang\",\"lubeck-germany\":\"Lübeck\",\"lublin-poland\":\"Lublin\",\"lucca-italy\":\"Lucca\",\"lucerne-switzerland\":\"Lucerne\",\"ludwigsburg-germany\":\"Ludwigsburg\",\"ludwigshafen-am-rhein-germany\":\"Ludwigshafen am Rhein\",\"lugano-switzerland\":\"Lugano\",\"lugo-spain\":\"Lugo\",\"lund-sweden\":\"Lund\",\"luton-unitedkingdom\":\"Luton\",\"luxembourg-city-luxembourg\":\"Luxembourg City\",\"luxor-egypt\":\"Luxor\",\"lynchburg-united-states\":\"Lynchburg\",\"lyon-france\":\"Lyon\",\"maastricht-netherlands\":\"Maastricht\",\"macao-macao\":\"Macao\",\"madison-united-states\":\"Madison\",\"madrid-spain\":\"Madrid\",\"mahon-spain\":\"Mahón\",\"maidstone-unitedkingdom\":\"Maidstone\",\"mainz-germany\":\"Mainz\",\"makarska-croatia\":\"Makarska\",\"malaga-spain\":\"Málaga\",\"malang-indonesia\":\"Malang\",\"male-maldives\":\"Malé\",\"malmo-sweden\":\"Malmö\",\"manama-bahrain\":\"Manama\",\"manchester-unitedkingdom\":\"Manchester\",\"manila-philippines\":\"Manila\",\"mannheim-germany\":\"Mannheim\",\"marbella-spain\":\"Marbella\",\"marmaris-turkiye\":\"Marmaris\",\"marsala-italy\":\"Marsala\",\"marseille-france\":\"Marseille\",\"maspalomas-spain\":\"Maspalomas\",\"mataro-spain\":\"Mataró\",\"matera-italy\":\"Matera\",\"matsuyama-japan\":\"Matsuyama\",\"mazatlan-mexico\":\"Mazatlan\",\"mechelen-belgium\":\"Mechelen\",\"medan-indonesia\":\"Medan\",\"medellin-colombia\":\"Medellín\",\"melbourne-australia\":\"Melbourne\",\"melbourne-united-states\":\"Melbourne\",\"memphis-united-states\":\"Memphis\",\"mendoza-argentina\":\"Mendoza\",\"merano-italy\":\"Merano\",\"merida-mexico\":\"Mérida\",\"merida-spain\":\"Mérida\",\"messina-italy\":\"Messina\",\"mexico-city-mexico\":\"Mexico City\",\"miami-unitedstates\":\"Miami\",\"middlesbrough-united-kingdom\":\"Middlesbrough\",\"miedzyzdroje-poland\":\"Międzyzdroje\",\"milan-italy\":\"Milan\",\"milton-keynes-unitedkingdom\":\"Milton Keynes\",\"milwaukee-united-states\":\"Milwaukee\",\"minneapolis-united-states\":\"Minneapolis\",\"miskolc-hungary\":\"Miskolc\",\"miyazaki-japan\":\"Miyazaki\",\"modena-italy\":\"Modena\",\"modica-italy\":\"Modica\",\"mombasa-kenya\":\"Mombasa\",\"monopoli-italy\":\"Monopoli\",\"montecatini-terme-italy\":\"Montecatini Terme\",\"monterey-united-states\":\"Monterey\",\"monterrey-mexico\":\"Monterrey\",\"montevideo-uruguay\":\"Montevideo\",\"montpellier-france\":\"Montpellier\",\"montreal-canada\":\"Montreal\",\"montreux-switzerland\":\"Montreux\",\"morelia-mexico\":\"Morelia\",\"motril-spain\":\"Motril\",\"mui-ne-vietnam\":\"Mui Ne\",\"mulhouse-france\":\"Mulhouse\",\"munich-germany\":\"Munich\",\"munster-germany\":\"Münster\",\"murcia-spain\":\"Murcia\",\"muscat-oman\":\"Muscat\",\"nadi-fiji\":\"Nadi\",\"nafplio-greece\":\"Nafplio\",\"nagasaki-japan\":\"Nagasaki\",\"nagoya-japan\":\"Nagoya\",\"naha-japan\":\"Naha\",\"nairobi-kenya\":\"Nairobi\",\"nancy-france\":\"Nancy\",\"nanjing-china\":\"Nanjing\",\"nantes-france\":\"Nantes\",\"naples-florida-united-states\":\"Naples, Florida\",\"naples-italy\":\"Naples\",\"nara-japan\":\"Nara\",\"narbonne-france\":\"Narbonne\",\"nashville-unitedstates\":\"Nashville\",\"naxos-chora-greece\":\"Naxos Chora\",\"nazare-portugal\":\"Nazaré\",\"nerja-spain\":\"Nerja\",\"new-delhi-india\":\"New Delhi\",\"new-orleans-unitedstates\":\"New Orleans\",\"new-york-unitedstates\":\"New York\",\"newcastle-australia\":\"Newcastle\",\"newcastle-south-africa\":\"Newcastle\",\"newcastle-upon-tyne-united-kingdom\":\"Newcastle upon Tyne\",\"newport-rhode-island-united-states\":\"Newport, Rhode Island\",\"newquay-unitedkingdom\":\"Newquay\",\"nha-trang-vietnam\":\"Nha Trang\",\"niagara-falls-canada\":\"Niagara Falls\",\"nice-france\":\"Nice\",\"nicosia-cyprus\":\"Nicosia\",\"nijmegen-netherlands\":\"Nijmegen\",\"nimes-france\":\"Nîmes\",\"north-vancouver-canada\":\"North Vancouver\",\"norwich-united-kingdom\":\"Norwich\",\"nottingham-united-kingdom\":\"Nottingham\",\"novi-sad-serbia\":\"Novi Sad\",\"nuremberg-germany\":\"Nuremberg\",\"nusa-dua-indonesia\":\"Nusa Dua\",\"nusa-lembongan-indonesia\":\"Nusa Lembongan\",\"nusa-penida-indonesia\":\"Nusa Penida\",\"nuuk-greenland\":\"Nuuk\",\"oakland-united-states\":\"Oakland\",\"oberstdorf-germany\":\"Oberstdorf\",\"odense-denmark\":\"Odense\",\"odz-poland\":\"Łódź\",\"offenbach-germany\":\"Offenbach\",\"ohrid-northmacedonia\":\"Ohrid\",\"oia-greece\":\"Oia\",\"okayama-japan\":\"Okayama\",\"oklahoma-city-united-states\":\"Oklahoma City\",\"olbia-italy\":\"Olbia\",\"olhao-portugal\":\"Olhão\",\"olomouc-czechia\":\"Olomouc\",\"olsztyn-poland\":\"Olsztyn\",\"omaha-united-states\":\"Omaha\",\"opatija-croatia\":\"Opatija\",\"opole-poland\":\"Opole\",\"oristano-italy\":\"Oristano\",\"orlando-unitedstates\":\"Orlando\",\"orleans-france\":\"Orléans\",\"orvieto-italy\":\"Orvieto\",\"osaka-japan\":\"Osaka\",\"osijek-croatia\":\"Osijek\",\"oslo-norway\":\"Oslo\",\"osnabruck-germany\":\"Osnabrück\",\"ostuni-italy\":\"Ostuni\",\"ottawa-canada\":\"Ottawa\",\"oulu-finland\":\"Oulu\",\"ourense-spain\":\"Ourense\",\"oviedo-spain\":\"Oviedo\",\"oxford-unitedkingdom\":\"Oxford\",\"paignton-unitedkingdom\":\"Paignton\",\"pakse-laos\":\"Pakse\",\"palenque-mexico\":\"Palenque\",\"palermo-italy\":\"Palermo\",\"palm-springs-united-states\":\"Palm Springs\",\"palma-spain\":\"Palma\",\"pamplona-spain\":\"Pamplona\",\"panama-city-panama\":\"Panama City\",\"paphos-cyprus\":\"Paphos\",\"paris\":\"Paris\",\"parma-italy\":\"Parma\",\"passau-germany\":\"Passau\",\"pattaya-thailand\":\"Pattaya\",\"pau-france\":\"Pau\",\"peniche-portugal\":\"Peniche\",\"perigueux-france\":\"Périgueux\",\"perpignan-france\":\"Perpignan\",\"perth-australia\":\"Perth\",\"perugia-italy\":\"Perugia\",\"pesaro-italy\":\"Pesaro\",\"pescara-italy\":\"Pescara\",\"peterborough-unitedkingdom\":\"Peterborough\",\"philadelphia-unitedstates\":\"Philadelphia\",\"phnom-penh-cambodia\":\"Phnom Penh\",\"phoenix-united-states\":\"Phoenix\",\"phuket-thailand\":\"Phuket\",\"piacenza-italy\":\"Piacenza\",\"pisa-italy\":\"Pisa\",\"pitlochry-unitedkingdom\":\"Pitlochry\",\"pittsburgh-united-states\":\"Pittsburgh\",\"playa-blanca-spain\":\"Playa Blanca\",\"playa-del-carmen-mexico\":\"Playa del Carmen\",\"pleasanton-united-states\":\"Pleasanton\",\"plymouth-united-states\":\"Plymouth\",\"plymouth-unitedkingdom\":\"Plymouth\",\"poitiers-france\":\"Poitiers\",\"pokhara-nepal\":\"Pokhara\",\"polignano-a-mare-italy\":\"Polignano a Mare\",\"pompei-italy\":\"Pompei\",\"ponferrada-spain\":\"Ponferrada\",\"ponta-delgada-portugal\":\"Ponta Delgada\",\"ponte-de-lima-portugal\":\"Ponte de Lima\",\"pontresina-switzerland\":\"Pontresina\",\"pordenone-italy\":\"Pordenone\",\"porec-croatia\":\"Poreč\",\"portimao-portugal\":\"Portimão\",\"portland-unitedstates\":\"Portland\",\"porto-moniz-portugal\":\"Porto Moniz\",\"porto-portugal\":\"Porto\",\"porto-vecchio-france\":\"Porto-Vecchio\",\"portrush-united-kingdom\":\"Portrush\",\"portsmouth-united-kingdom\":\"Portsmouth\",\"portsmouth-united-states\":\"Portsmouth\",\"potenza-italy\":\"Potenza\",\"potsdam-germany\":\"Potsdam\",\"poznan-poland\":\"Poznań\",\"prague-czechia\":\"Prague\",\"preston-united-kingdom\":\"Preston\",\"puebla-mexico\":\"Puebla\",\"puerto-de-la-cruz-spain\":\"Puerto de la Cruz\",\"puerto-del-carmen-spain\":\"Puerto del Carmen\",\"puerto-princesa-philippines\":\"Puerto Princesa\",\"puerto-vallarta-mexico\":\"Puerto Vallarta\",\"puerto-varas-chile\":\"Puerto Varas\",\"pula-croatia\":\"Pula\",\"pune-india\":\"Pune\",\"punta-arenas-chile\":\"Punta Arenas\",\"punta-del-este-uruguay\":\"Punta del Este\",\"qingdao-china\":\"Qingdao\",\"quarteira-portugal\":\"Quarteira\",\"quebec-city-canada\":\"Quebec City\",\"quedlinburg-germany\":\"Quedlinburg\",\"queenstown-newzealand\":\"Queenstown\",\"queretaro-mexico\":\"Querétaro\",\"quimper-france\":\"Quimper\",\"quito-ecuador\":\"Quito\",\"quy-nhon-vietnam\":\"Quy Nhon\",\"rabat-morocco\":\"Rabat\",\"ragusa-italy\":\"Ragusa\",\"raleigh-united-states\":\"Raleigh\",\"rapallo-italy\":\"Rapallo\",\"ravenna-italy\":\"Ravenna\",\"reading-unitedkingdom\":\"Reading\",\"recife-brazil\":\"Recife\",\"regensburg-germany\":\"Regensburg\",\"reggio-emilia-italy\":\"Reggio Emilia\",\"regina-canada\":\"Regina\",\"reims-france\":\"Reims\",\"rennes-france\":\"Rennes\",\"reno-united-states\":\"Reno\",\"rethymno-greece\":\"Rethymno\",\"reykjavik-iceland\":\"Reykjavík\",\"rhodes-greece\":\"Rhodes\",\"riccione-italy\":\"Riccione\",\"richmond-united-states\":\"Richmond\",\"riga-latvia\":\"Riga\",\"rimini-italy\":\"Rimini\",\"rio-de-janeiro-brazil\":\"Rio de Janeiro\",\"riva-del-garda-italy\":\"Riva del Garda\",\"riyadh-saudiarabia\":\"Riyadh\",\"rochester-united-states\":\"Rochester\",\"rock-hill-united-states\":\"Rock Hill\",\"rome\":\"Rome\",\"ronda-spain\":\"Ronda\",\"ronne-denmark\":\"Rønne\",\"roscoff-france\":\"Roscoff\",\"roses-spain\":\"Roses\",\"rostock-germany\":\"Rostock\",\"rotterdam-netherlands\":\"Rotterdam\",\"rouen-france\":\"Rouen\",\"rovaniemi-finland\":\"Rovaniemi\",\"rovinj-croatia\":\"Rovinj\",\"royal-tunbridge-wells-unitedkingdom\":\"Royal Tunbridge Wells\",\"royan-france\":\"Royan\",\"rzeszow-poland\":\"Rzeszów\",\"saarbrucken-germany\":\"Saarbrücken\",\"sabadell-spain\":\"Sabadell\",\"sacramento-united-states\":\"Sacramento\",\"saint-brieuc-france\":\"Saint-Brieuc\",\"saint-jean-de-luz-france\":\"Saint-Jean-de-Luz\",\"saint-malo-france\":\"Saint-Malo\",\"saint-raphael-france\":\"Saint-Raphaël\",\"saint-tropez-france\":\"Saint-Tropez\",\"salalah-oman\":\"Salalah\",\"salamanca-spain\":\"Salamanca\",\"salen-sweden\":\"Sälen\",\"salerno-italy\":\"Salerno\",\"salou-spain\":\"Salou\",\"salt-lake-city-united-states\":\"Salt Lake City\",\"salta-argentina\":\"Salta\",\"salzburg-austria\":\"Salzburg\",\"samsun-turkiye\":\"Samsun\",\"san-antonio-united-states\":\"San Antonio\",\"san-benedetto-del-tronto-italy\":\"San Benedetto del Tronto\",\"san-carlos-de-bariloche-argentina\":\"San Carlos de Bariloche\",\"san-cristobal-de-las-casas-mexico\":\"San Cristóbal de las Casas\",\"san-diego-unitedstates\":\"San Diego\",\"san-francisco-unitedstates\":\"San Francisco\",\"san-jose-united-states\":\"San Jose\",\"san-miguel-de-allende-mexico\":\"San Miguel de Allende\",\"san-sebastian-spain\":\"San Sebastián\",\"sanford-united-states\":\"Sanford\",\"sanlucar-de-barrameda-spain\":\"Sanlúcar de Barrameda\",\"sanremo-italy\":\"Sanremo\",\"santa-barbara-united-states\":\"Santa Barbara\",\"santa-cruz-de-tenerife-spain\":\"Santa Cruz de Tenerife\",\"santa-fe-argentina\":\"Santa Fe\",\"santa-fe-united-states\":\"Santa Fe\",\"santa-margherita-ligure-italy\":\"Santa Margherita Ligure\",\"santander-spain\":\"Santander\",\"santiago-chile\":\"Santiago\",\"santiago-de-compostela-spain\":\"Santiago de Compostela\",\"santo-domingo-dominicanrepublic\":\"Santo Domingo\",\"sanur-indonesia\":\"Sanur\",\"sao-paulo-brazil\":\"São Paulo\",\"sapporo-japan\":\"Sapporo\",\"sarajevo-bosniaandherzegovina\":\"Sarajevo\",\"sarande-albania\":\"Sarandë\",\"sarlat-la-caneda-france\":\"Sarlat-la-Canéda\",\"saskatoon-canada\":\"Saskatoon\",\"savannah-unitedstates\":\"Savannah\",\"scarborough-united-kingdom\":\"Scarborough\",\"schwerin-germany\":\"Schwerin\",\"seattle-unitedstates\":\"Seattle\",\"seefeld-in-tirol-austria\":\"Seefeld in Tirol\",\"segovia-spain\":\"Segovia\",\"semarang-indonesia\":\"Semarang\",\"seminyak-indonesia\":\"Seminyak\",\"sendai-japan\":\"Sendai\",\"senigallia-italy\":\"Senigallia\",\"seoul-southkorea\":\"Seoul\",\"sesimbra-portugal\":\"Sesimbra\",\"sestri-levante-italy\":\"Sestri Levante\",\"setubal-portugal\":\"Setúbal\",\"seville-spain\":\"Seville\",\"shanghai-china\":\"Shanghai\",\"sharjah-unitedarabemirates\":\"Sharjah\",\"sharm-el-sheikh-egypt\":\"Sharm El Sheikh\",\"sheffield-united-kingdom\":\"Sheffield\",\"sheki-azerbaijan\":\"Sheki\",\"shenzhen-china\":\"Shenzhen\",\"shimla-india\":\"Shimla\",\"shizuoka-japan\":\"Shizuoka\",\"sibenik-croatia\":\"Šibenik\",\"side-turkiye\":\"Side\",\"siem-reap-cambodia\":\"Siem Reap\",\"siena-italy\":\"Siena\",\"sierra-vista-united-states\":\"Sierra Vista\",\"sihanoukville-cambodia\":\"Sihanoukville\",\"siliguri-india\":\"Siliguri\",\"singapore-singapore\":\"Singapore\",\"sintra-portugal\":\"Sintra\",\"sirmione-italy\":\"Sirmione\",\"sitges-spain\":\"Sitges\",\"skopje-northmacedonia\":\"Skopje\",\"sliema-malta\":\"Sliema\",\"slough-unitedkingdom\":\"Slough\",\"sofia-bulgaria\":\"Sofia\",\"solo-indonesia\":\"Solo\",\"sopot-poland\":\"Sopot\",\"sopron-hungary\":\"Sopron\",\"soria-spain\":\"Soria\",\"sorrento-italy\":\"Sorrento\",\"southampton-united-kingdom\":\"Southampton\",\"southport-united-kingdom\":\"Southport\",\"split-croatia\":\"Split\",\"spokane-united-states\":\"Spokane\",\"spoleto-italy\":\"Spoleto\",\"st-albans-unitedkingdom\":\"St Albans\",\"st-andrews-united-kingdom\":\"St Andrews\",\"st-augustine-united-states\":\"St. Augustine\",\"st-gallen-switzerland\":\"St. Gallen\",\"st-john-s-canada\":\"St. John's\",\"stamford-united-states\":\"Stamford\",\"stavanger-norway\":\"Stavanger\",\"stellenbosch-southafrica\":\"Stellenbosch\",\"stockholm-sweden\":\"Stockholm\",\"strasbourg-france\":\"Strasbourg\",\"stresa-italy\":\"Stresa\",\"stuttgart-germany\":\"Stuttgart\",\"sunderland-united-kingdom\":\"Sunderland\",\"surabaya-indonesia\":\"Surabaya\",\"suva-fiji\":\"Suva\",\"suwon-south-korea\":\"Suwon\",\"suzhou-china\":\"Suzhou\",\"swakopmund-namibia\":\"Swakopmund\",\"swansea-united-kingdom\":\"Swansea\",\"swinoujscie-poland\":\"Świnoujście\",\"sydney-australia\":\"Sydney\",\"syracuse-italy\":\"Syracuse\",\"szczecin-poland\":\"Szczecin\",\"szczyrk-poland\":\"Szczyrk\",\"szklarska-poreba-poland\":\"Szklarska Poręba\",\"ta-if-saudi-arabia\":\"Ta'if\",\"taichung-taiwan\":\"Taichung\",\"tainan-taiwan\":\"Tainan\",\"taipei-taiwan\":\"Taipei\",\"tallinn-estonia\":\"Tallinn\",\"tampa-united-states\":\"Tampa\",\"tampere-finland\":\"Tampere\",\"tampico-mexico\":\"Tampico\",\"tangier-morocco\":\"Tangier\",\"taormina-italy\":\"Taormina\",\"taos-united-states\":\"Taos\",\"taranto-italy\":\"Taranto\",\"tarifa-spain\":\"Tarifa\",\"tarragona-spain\":\"Tarragona\",\"tartu-estonia\":\"Tartu\",\"tavira-portugal\":\"Tavira\",\"tbilisi-georgia\":\"Tbilisi\",\"tel-aviv-israel\":\"Tel Aviv\",\"terrassa-spain\":\"Terrassa\",\"teruel-spain\":\"Teruel\",\"the-hague-netherlands\":\"The Hague\",\"thessaloniki-greece\":\"Thessaloniki\",\"thun-switzerland\":\"Thun\",\"tilburg-netherlands\":\"Tilburg\",\"timmendorfer-strand-germany\":\"Timmendorfer Strand\",\"tirana-albania\":\"Tirana\",\"titisee-neustadt-germany\":\"Titisee-Neustadt\",\"tokyo\":\"Tokyo\",\"toledo-spain\":\"Toledo\",\"tomar-portugal\":\"Tomar\",\"toronto-canada\":\"Toronto\",\"torquay-unitedkingdom\":\"Torquay\",\"torremolinos-spain\":\"Torremolinos\",\"torrevieja-spain\":\"Torrevieja\",\"torshavn-faroe-islands\":\"Tórshavn\",\"torun-poland\":\"Toruń\",\"toulon-france\":\"Toulon\",\"toulouse-france\":\"Toulouse\",\"tours-france\":\"Tours\",\"townsville-australia\":\"Townsville\",\"toyama-japan\":\"Toyama\",\"trabzon-turkiye\":\"Trabzon\",\"trapani-italy\":\"Trapani\",\"travemunde-germany\":\"Travemünde\",\"traverse-city-united-states\":\"Traverse City\",\"trento-italy\":\"Trento\",\"treviso-italy\":\"Treviso\",\"trieste-italy\":\"Trieste\",\"trogir-croatia\":\"Trogir\",\"troms-norway\":\"Tromsø\",\"trondheim-norway\":\"Trondheim\",\"trouville-sur-mer-france\":\"Trouville-sur-Mer\",\"troyes-france\":\"Troyes\",\"tubingen-germany\":\"Tübingen\",\"tucson-united-states\":\"Tucson\",\"tudela-spain\":\"Tudela\",\"tulum-mexico\":\"Tulum\",\"tunis-tunisia\":\"Tunis\",\"turin-italy\":\"Turin\",\"turku-finland\":\"Turku\",\"ubeda-spain\":\"Úbeda\",\"ubud-indonesia\":\"Ubud\",\"udaipur-india\":\"Udaipur\",\"udine-italy\":\"Udine\",\"ulaanbaatar-mongolia\":\"Ulaanbaatar\",\"ulm-germany\":\"Ulm\",\"umea-sweden\":\"Umeå\",\"uppsala-sweden\":\"Uppsala\",\"ushuaia-argentina\":\"Ushuaia\",\"ustka-poland\":\"Ustka\",\"utrecht-netherlands\":\"Utrecht\",\"vaasa-finland\":\"Vaasa\",\"valdosta-united-states\":\"Valdosta\",\"valence-france\":\"Valence\",\"valencia-spain\":\"Valencia\",\"valencia-united-states\":\"Valencia\",\"valencia-venezuela\":\"Valencia\",\"valkenburg-netherlands\":\"Valkenburg\",\"valladolid-spain\":\"Valladolid\",\"valletta-malta\":\"Valletta\",\"vancouver-canada\":\"Vancouver\",\"vancouver-united-states\":\"Vancouver\",\"vannes-france\":\"Vannes\",\"varanasi-india\":\"Varanasi\",\"varese-italy\":\"Varese\",\"venice-italy\":\"Venice\",\"ventura-united-states\":\"Ventura\",\"verona-italy\":\"Verona\",\"versailles-france\":\"Versailles\",\"vevey-switzerland\":\"Vevey\",\"viana-do-castelo-portugal\":\"Viana do Castelo\",\"viareggio-italy\":\"Viareggio\",\"vicenza-italy\":\"Vicenza\",\"vichy-france\":\"Vichy\",\"victoria-canada\":\"Victoria\",\"vienna-austria\":\"Vienna\",\"vientiane-laos\":\"Vientiane\",\"vigo-spain\":\"Vigo\",\"vila-real-portugal\":\"Vila Real\",\"vilamoura-portugal\":\"Vilamoura\",\"villach-austria\":\"Villach\",\"vilnius-lithuania\":\"Vilnius\",\"viseu-portugal\":\"Viseu\",\"viterbo-italy\":\"Viterbo\",\"vitoria-gasteiz-spain\":\"Vitoria-Gasteiz\",\"vodice-croatia\":\"Vodice\",\"volos-greece\":\"Volos\",\"warsaw-poland\":\"Warsaw\",\"washington-dc-unitedstates\":\"Washington DC\",\"watford-unitedkingdom\":\"Watford\",\"weimar-germany\":\"Weimar\",\"wellington-newzealand\":\"Wellington\",\"wels-austria\":\"Wels\",\"whistler-canada\":\"Whistler\",\"wiesbaden-germany\":\"Wiesbaden\",\"wilmington-north-carolina-united-states\":\"Wilmington, North Carolina\",\"winchester-unitedkingdom\":\"Winchester\",\"windermere-united-kingdom\":\"Windermere\",\"windhoek-namibia\":\"Windhoek\",\"windsor-canada\":\"Windsor\",\"windsor-unitedkingdom\":\"Windsor\",\"winnipeg-canada\":\"Winnipeg\",\"wisa-poland\":\"Wisła\",\"wismar-germany\":\"Wismar\",\"woking-unitedkingdom\":\"Woking\",\"wolfsburg-germany\":\"Wolfsburg\",\"worcester-united-states\":\"Worcester\",\"worcester-unitedkingdom\":\"Worcester\",\"wrocaw-poland\":\"Wrocław\",\"wurzburg-germany\":\"Würzburg\",\"xian-china\":\"Xi’an\",\"yamagata-japan\":\"Yamagata\",\"yangon-myanmar\":\"Yangon\",\"yantai-china\":\"Yantai\",\"yaounde-cameroon\":\"Yaounde\",\"yerevan-armenia\":\"Yerevan\",\"yogyakarta-indonesia\":\"Yogyakarta\",\"yokohama-japan\":\"Yokohama\",\"york-unitedkingdom\":\"York\",\"zaandam-netherlands\":\"Zaandam\",\"zacatecas-mexico\":\"Zacatecas\",\"zadar-croatia\":\"Zadar\",\"zagreb-croatia\":\"Zagreb\",\"zakopane-poland\":\"Zakopane\",\"zalaegerszeg-hungary\":\"Zalaegerszeg\",\"zamora-spain\":\"Zamora\",\"zandvoort-netherlands\":\"Zandvoort\",\"zanzibar-city-tanzania\":\"Zanzibar City\",\"zaragoza-spain\":\"Zaragoza\",\"zell-am-see-austria\":\"Zell am See\",\"zielona-gora-poland\":\"Zielona Góra\",\"zurich-switzerland\":\"Zurich\",\"zwolle-netherlands\":\"Zwolle\"}")
+	file: "/assets/t3d/pools.df88d3bd9e.json",
+	ids: /* @__PURE__ */ JSON.parse("{\"a-coruna-spain\":\"A Coruña\",\"aachen-germany\":\"Aachen\",\"aalborg-denmark\":\"Aalborg\",\"aalst-belgium\":\"Aalst\",\"aarhus-denmark\":\"Aarhus\",\"abano-terme-italy\":\"Abano Terme\",\"aberdeen-unitedkingdom\":\"Aberdeen\",\"abidjan-ivory-coast\":\"Abidjan\",\"abu-dhabi-unitedarabemirates\":\"Abu Dhabi\",\"abuja-nigeria\":\"Abuja\",\"accra-ghana\":\"Accra\",\"adana-turkiye\":\"Adana\",\"addis-ababa-ethiopia\":\"Addis Ababa\",\"adeje-spain\":\"Adeje\",\"adelaide-australia\":\"Adelaide\",\"agra-india\":\"Agra\",\"agrigento-italy\":\"Agrigento\",\"aguascalientes-mexico\":\"Aguascalientes\",\"ahmedabad-india\":\"Ahmedabad\",\"airdrie-canada\":\"Airdrie\",\"aix-en-provence-france\":\"Aix-en-Provence\",\"aix-les-bains-france\":\"Aix-les-Bains\",\"ajaccio-france\":\"Ajaccio\",\"ajman-united-arab-emirates\":\"Ajman\",\"akron-united-states\":\"Akron\",\"alajuela-costa-rica\":\"Alajuela\",\"alanya-turkiye\":\"Alanya\",\"alba-italy\":\"Alba\",\"albacete-spain\":\"Albacete\",\"albufeira-portugal\":\"Albufeira\",\"albuquerque-united-states\":\"Albuquerque\",\"alcala-de-henares-spain\":\"Alcalá de Henares\",\"alcobendas-spain\":\"Alcobendas\",\"alessandria-italy\":\"Alessandria\",\"alesund-norway\":\"Ålesund\",\"alghero-italy\":\"Alghero\",\"alicante-spain\":\"Alicante\",\"alkmaar-netherlands\":\"Alkmaar\",\"almaty-kazakhstan\":\"Almaty\",\"almeria-spain\":\"Almería\",\"almunecar-spain\":\"Almuñécar\",\"alnwick-united-kingdom\":\"Alnwick\",\"alpharetta-united-states\":\"Alpharetta\",\"altea-spain\":\"Altea\",\"altoona-united-states\":\"Altoona\",\"amalfi-italy\":\"Amalfi\",\"amarante-portugal\":\"Amarante\",\"amarillo-united-states\":\"Amarillo\",\"amboise-france\":\"Amboise\",\"ames-united-states\":\"Ames\",\"amiens-france\":\"Amiens\",\"amman-jordan\":\"Amman\",\"amritsar-india\":\"Amritsar\",\"amstelveen-the-netherlands\":\"Amstelveen\",\"amsterdam-netherlands\":\"Amsterdam\",\"anaheim-united-states\":\"Anaheim\",\"ancona-italy\":\"Ancona\",\"andorra-la-vella-andorra\":\"Andorra la Vella\",\"angers-france\":\"Angers\",\"angra-do-heroismo-portugal\":\"Angra do Heroísmo\",\"ankara-trkiye\":\"Ankara\",\"ann-arbor-united-states\":\"Ann Arbor\",\"annapolis-united-states\":\"Annapolis\",\"annecy-france\":\"Annecy\",\"antalya-trkiye\":\"Antalya\",\"antequera-spain\":\"Antequera\",\"antibes-france\":\"Antibes\",\"antigua-guatemala-guatemala\":\"Antigua Guatemala\",\"antwerp-belgium\":\"Antwerp\",\"apeldoorn-netherlands\":\"Apeldoorn\",\"apia-samoa\":\"Apia\",\"appleton-united-states\":\"Appleton\",\"aqaba-jordan\":\"Aqaba\",\"aranjuez-spain\":\"Aranjuez\",\"arcachon-france\":\"Arcachon\",\"arcadia-united-states\":\"Arcadia\",\"arequipa-peru\":\"Arequipa\",\"arezzo-italy\":\"Arezzo\",\"arica-chile\":\"Arica\",\"arles-france\":\"Arles\",\"arlington-united-states\":\"Arlington\",\"arras-france\":\"Arras\",\"arrecife-spain\":\"Arrecife\",\"arusha-tanzania\":\"Arusha\",\"ascona-switzerland\":\"Ascona\",\"asheville-united-states\":\"Asheville\",\"assisi-italy\":\"Assisi\",\"astana-kazakhstan\":\"Astana\",\"asti-italy\":\"Asti\",\"astorga-spain\":\"Astorga\",\"asuncion-paraguay\":\"Asuncion\",\"aswan-egypt\":\"Aswan\",\"athens-greece\":\"Athens\",\"atlanta-united-states\":\"Atlanta\",\"atlantic-city-united-states\":\"Atlantic City\",\"atlixco-mexico\":\"Atlixco\",\"atyrau-kazakhstan\":\"Atyrau\",\"auburn-alabama-united-states\":\"Auburn, Alabama\",\"auckland-newzealand\":\"Auckland\",\"augsburg-germany\":\"Augsburg\",\"augusta-united-states\":\"Augusta\",\"aurangabad-india\":\"Aurangabad\",\"aurora-united-states\":\"Aurora\",\"austin-unitedstates\":\"Austin\",\"aveiro-portugal\":\"Aveiro\",\"avignon-france\":\"Avignon\",\"avila-spain\":\"Ávila\",\"aviles-spain\":\"Avilés\",\"ayr-unitedkingdom\":\"Ayr\",\"bacolod-philippines\":\"Bacolod\",\"bad-hofgastein-austria\":\"Bad Hofgastein\",\"bad-homburg-vor-der-hohe-germany\":\"Bad Homburg vor der Höhe\",\"bad-ischl-austria\":\"Bad Ischl\",\"badajoz-spain\":\"Badajoz\",\"baden-baden-germany\":\"Baden-Baden\",\"baeza-spain\":\"Baeza\",\"baghdad-iraq\":\"Baghdad\",\"bakersfield-united-states\":\"Bakersfield\",\"baku-azerbaijan\":\"Baku\",\"bali-indonesia\":\"Bali\",\"balneario-camboriu-brazil\":\"Balneario Camboriu\",\"baltimore-united-states\":\"Baltimore\",\"bandar-seri-begawan-brunei\":\"Bandar Seri Begawan\",\"bandung-indonesia\":\"Bandung\",\"banff-canada\":\"Banff\",\"bangkok-thailand\":\"Bangkok\",\"banja-luka-bosnia-and-herzegovina\":\"Banja Luka\",\"banyuwangi-indonesia\":\"Banyuwangi\",\"barcelona\":\"Barcelona\",\"bari-italy\":\"Bari\",\"barnstaple-unitedkingdom\":\"Barnstaple\",\"barranquilla-colombia\":\"Barranquilla\",\"barueri-brazil\":\"Barueri\",\"basel-switzerland\":\"Basel\",\"basingstoke-united-kingdom\":\"Basingstoke\",\"bastia-france\":\"Bastia\",\"bath-unitedkingdom\":\"Bath\",\"baton-rouge-united-states\":\"Baton Rouge\",\"battambang-cambodia\":\"Battambang\",\"batumi-georgia\":\"Batumi\",\"bauru-brazil\":\"Bauru\",\"bayeux-france\":\"Bayeux\",\"bayonne-france\":\"Bayonne\",\"bayreuth-germany\":\"Bayreuth\",\"beaune-france\":\"Beaune\",\"beaverton-united-states\":\"Beaverton\",\"beijing-china\":\"Beijing\",\"beirut-lebanon\":\"Beirut\",\"bekasi-indonesia\":\"Bekasi\",\"belem-brazil\":\"Belem\",\"belfast-unitedkingdom\":\"Belfast\",\"belgrade-serbia\":\"Belgrade\",\"bellevue-united-states\":\"Bellevue\",\"bellingham-united-states\":\"Bellingham\",\"belo-horizonte-brazil\":\"Belo Horizonte\",\"benalmadena-spain\":\"Benalmádena\",\"bend-united-states\":\"Bend\",\"benevento-italy\":\"Benevento\",\"benicassim-spain\":\"Benicàssim\",\"benidorm-spain\":\"Benidorm\",\"bento-goncalves-brazil\":\"Bento Gonçalves\",\"bentonville-united-states\":\"Bentonville\",\"beppu-japan\":\"Beppu\",\"bergamo-italy\":\"Bergamo\",\"bergen-norway\":\"Bergen\",\"berkeley-united-states\":\"Berkeley\",\"berlin-germany\":\"Berlin\",\"bern-switzerland\":\"Bern\",\"besancon-france\":\"Besançon\",\"bethesda-united-states\":\"Bethesda\",\"bethlehem-united-states\":\"Bethlehem\",\"beziers-france\":\"Béziers\",\"bhopal-india\":\"Bhopal\",\"biarritz-france\":\"Biarritz\",\"biaystok-poland\":\"Białystok\",\"bielefeld-germany\":\"Bielefeld\",\"bielsko-biaa-poland\":\"Bielsko-Biała\",\"bikaner-india\":\"Bikaner\",\"bilbao-spain\":\"Bilbao\",\"billings-united-states\":\"Billings\",\"billund-denmark\":\"Billund\",\"biloxi-united-states\":\"Biloxi\",\"binghamton-united-states\":\"Binghamton\",\"binz-germany\":\"Binz\",\"birmingham-alabama-united-states\":\"Birmingham, Alabama\",\"birmingham-united-kingdom\":\"Birmingham\",\"bismarck-united-states\":\"Bismarck\",\"bitola-north-macedonia\":\"Bitola\",\"blackpool-united-kingdom\":\"Blackpool\",\"blacksburg-united-states\":\"Blacksburg\",\"blankenberge-belgium\":\"Blankenberge\",\"bled-slovenia\":\"Bled\",\"bloemfontein-south-africa\":\"Bloemfontein\",\"blois-france\":\"Blois\",\"bloomington-united-states\":\"Bloomington\",\"blumenau-brazil\":\"Blumenau\",\"boa-vista-brazil\":\"Boa Vista\",\"boca-raton-united-states\":\"Boca Raton\",\"bogor-indonesia\":\"Bogor\",\"bogota-colombia\":\"Bogotá\",\"boise-united-states\":\"Boise\",\"bologna-italy\":\"Bologna\",\"bolzano-italy\":\"Bolzano\",\"bonn-germany\":\"Bonn\",\"bordeaux-france\":\"Bordeaux\",\"bossier-city-united-states\":\"Bossier City\",\"boston-unitedstates\":\"Boston\",\"boucherville-canada\":\"Boucherville\",\"boulder-united-states\":\"Boulder\",\"bourges-france\":\"Bourges\",\"bournemouth-united-kingdom\":\"Bournemouth\",\"bowie-united-states\":\"Bowie\",\"bowling-green-united-states\":\"Bowling Green\",\"bozeman-united-states\":\"Bozeman\",\"bradenton-united-states\":\"Bradenton\",\"braga-portugal\":\"Braga\",\"braganca-portugal\":\"Bragança\",\"branson-united-states\":\"Branson\",\"brasilia-brazil\":\"Brasília\",\"brasov-romania\":\"Brașov\",\"bratislava-slovakia\":\"Bratislava\",\"breda-netherlands\":\"Breda\",\"bregenz-austria\":\"Bregenz\",\"bremen-germany\":\"Bremen\",\"bremerhaven-germany\":\"Bremerhaven\",\"brentwood-united-states\":\"Brentwood\",\"brescia-italy\":\"Brescia\",\"brest-france\":\"Brest\",\"bridgetown-barbados\":\"Bridgetown\",\"brindisi-italy\":\"Brindisi\",\"brisbane-australia\":\"Brisbane\",\"bristol-unitedkingdom\":\"Bristol\",\"brno-czechia\":\"Brno\",\"brookline-united-states\":\"Brookline\",\"brooklyn-united-states\":\"Brooklyn\",\"brossard-canada\":\"Brossard\",\"bruges-belgium\":\"Bruges\",\"brussels-belgium\":\"Brussels\",\"bryan-united-states\":\"Bryan\",\"bucharest-romania\":\"Bucharest\",\"budapest-hungary\":\"Budapest\",\"budva-montenegro\":\"Budva\",\"buena-park-united-states\":\"Buena Park\",\"buenos-aires-argentina\":\"Buenos Aires\",\"buffalo-united-states\":\"Buffalo\",\"burbank-united-states\":\"Burbank\",\"burgas-bulgaria\":\"Burgas\",\"burgos-spain\":\"Burgos\",\"burlington-united-states\":\"Burlington\",\"burnaby-canada\":\"Burnaby\",\"burnley-united-kingdom\":\"Burnley\",\"bursa-turkiye\":\"Bursa\",\"busan-southkorea\":\"Busan\",\"bydgoszcz-poland\":\"Bydgoszcz\",\"bytom-poland\":\"Bytom\",\"cabo-san-lucas-mexico\":\"Cabo San Lucas\",\"caceres-spain\":\"Cáceres\",\"cadiz-spain\":\"Cádiz\",\"caen-france\":\"Caen\",\"cairns-australia\":\"Cairns\",\"cairo-egypt\":\"Cairo\",\"cajamarca-peru\":\"Cajamarca\",\"caldas-da-rainha-portugal\":\"Caldas da Rainha\",\"caldas-novas-brazil\":\"Caldas Novas\",\"calgary-canada\":\"Calgary\",\"cali-colombia\":\"Cali\",\"calpe-spain\":\"Calpe\",\"cambridge-massachusetts-united-states\":\"Cambridge, Massachusetts\",\"cambridge-unitedkingdom\":\"Cambridge\",\"camden-united-states\":\"Camden\",\"campeche-mexico\":\"Campeche\",\"campinas-brazil\":\"Campinas\",\"campo-grande-brazil\":\"Campo Grande\",\"campos-do-jordao-brazil\":\"Campos do Jordao\",\"can-tho-vietnam\":\"Can Tho\",\"canakkale-turkiye\":\"Çanakkale\",\"canberra-australia\":\"Canberra\",\"cancun-mexico\":\"Cancún\",\"canela-brazil\":\"Canela\",\"canggu-indonesia\":\"Canggu\",\"cannes-france\":\"Cannes\",\"canterbury-united-kingdom\":\"Canterbury\",\"cape-coral-united-states\":\"Cape Coral\",\"cape-town-southafrica\":\"Cape Town\",\"caracas-venezuela\":\"Caracas\",\"caraguatatuba-brazil\":\"Caraguatatuba\",\"carcassonne-france\":\"Carcassonne\",\"cardiff-unitedkingdom\":\"Cardiff\",\"carlisle-united-kingdom\":\"Carlisle\",\"carmel-united-states\":\"Carmel\",\"carpi-italy\":\"Carpi\",\"cartagena-spain\":\"Cartagena\",\"cary-united-states\":\"Cary\",\"casablanca-morocco\":\"Casablanca\",\"cascais-portugal\":\"Cascais\",\"caserta-italy\":\"Caserta\",\"casper-united-states\":\"Casper\",\"cassis-france\":\"Cassis\",\"castelldefels-spain\":\"Castelldefels\",\"castellon-de-la-plana-spain\":\"Castellón de la Plana\",\"catania-italy\":\"Catania\",\"cattolica-italy\":\"Cattolica\",\"caxias-do-sul-brazil\":\"Caxias do Sul\",\"cayenne-french-guiana\":\"Cayenne\",\"cebu-city-philippines\":\"Cebu City\",\"cedar-rapids-united-states\":\"Cedar Rapids\",\"cefalu-italy\":\"Cefalù\",\"centennial-united-states\":\"Centennial\",\"cesena-italy\":\"Cesena\",\"cesenatico-italy\":\"Cesenatico\",\"ceske-budejovice-czechia\":\"Ceske Budejovice\",\"chalon-sur-saone-france\":\"Chalon-sur-Saône\",\"chandigarh-india\":\"Chandigarh\",\"chandler-united-states\":\"Chandler\",\"chania-greece\":\"Chania\",\"chantilly-france\":\"Chantilly\",\"chapel-hill-united-states\":\"Chapel Hill\",\"charleston-unitedstates\":\"Charleston\",\"charlotte-united-states\":\"Charlotte\",\"charlottesville-united-states\":\"Charlottesville\",\"charlottetown-canada\":\"Charlottetown\",\"chartres-france\":\"Chartres\",\"chatham-canada\":\"Chatham\",\"chattanooga-united-states\":\"Chattanooga\",\"chaves-portugal\":\"Chaves\",\"cheltenham-unitedkingdom\":\"Cheltenham\",\"chemnitz-germany\":\"Chemnitz\",\"chengdu-china\":\"Chengdu\",\"cherkasy-ukraine\":\"Cherkasy\",\"chernivtsi-ukraine\":\"Chernivtsi\",\"chester-united-kingdom\":\"Chester\",\"chesterfield-united-kingdom\":\"Chesterfield\",\"cheyenne-united-states\":\"Cheyenne\",\"chianciano-terme-italy\":\"Chianciano Terme\",\"chiang-mai-thailand\":\"Chiang Mai\",\"chiang-rai-thailand\":\"Chiang Rai\",\"chiba-japan\":\"Chiba\",\"chicago-unitedstates\":\"Chicago\",\"chiclana-de-la-frontera-spain\":\"Chiclana de la Frontera\",\"chiclayo-peru\":\"Chiclayo\",\"chico-united-states\":\"Chico\",\"chihuahua-mexico\":\"Chihuahua\",\"chilliwack-canada\":\"Chilliwack\",\"chisinau-moldova\":\"Chisinau\",\"chongqing-china\":\"Chongqing\",\"chorzow-poland\":\"Chorzow\",\"christchurch-newzealand\":\"Christchurch\",\"chula-vista-united-states\":\"Chula Vista\",\"cincinnati-united-states\":\"Cincinnati\",\"cirebon-indonesia\":\"Cirebon\",\"cirencester-united-kingdom\":\"Cirencester\",\"ciudad-real-spain\":\"Ciudad Real\",\"ciudad-victoria-mexico\":\"Ciudad Victoria\",\"clermont-ferrand-france\":\"Clermont-Ferrand\",\"cleveland-united-states\":\"Cleveland\",\"cluj-napoca-romania\":\"Cluj-Napoca\",\"coatzacoalcos-mexico\":\"Coatzacoalcos\",\"cochabamba-bolivia\":\"Cochabamba\",\"coeur-d-alene-united-states\":\"Coeur d'Alene\",\"cognac-france\":\"Cognac\",\"coimbatore-india\":\"Coimbatore\",\"coimbra-portugal\":\"Coimbra\",\"colchester-united-kingdom\":\"Colchester\",\"colima-mexico\":\"Colima\",\"colmar-france\":\"Colmar\",\"cologne-germany\":\"Cologne\",\"colombo-srilanka\":\"Colombo\",\"colorado-springs-united-states\":\"Colorado Springs\",\"columbia-united-states\":\"Columbia\",\"columbus-united-states\":\"Columbus\",\"comayagua-honduras\":\"Comayagua\",\"comitan-mexico\":\"Comitan\",\"como-italy\":\"Como\",\"compiegne-france\":\"Compiègne\",\"concepcion-chile\":\"Concepcion\",\"conil-de-la-frontera-spain\":\"Conil de la Frontera\",\"constanta-romania\":\"Constanta\",\"conwy-united-kingdom\":\"Conwy\",\"copenhagen-denmark\":\"Copenhagen\",\"cordoba-argentina\":\"Córdoba\",\"cordoba-mexico\":\"Cordoba\",\"cordoba-spain\":\"Córdoba\",\"corfu-greece\":\"Corfu\",\"cork-ireland\":\"Cork\",\"corlu-turkiye\":\"Corlu\",\"corpus-christi-united-states\":\"Corpus Christi\",\"corralejo-spain\":\"Corralejo\",\"costa-mesa-united-states\":\"Costa Mesa\",\"cotonou-benin\":\"Cotonou\",\"cottbus-germany\":\"Cottbus\",\"coventry-unitedkingdom\":\"Coventry\",\"cozumel-mexico\":\"Cozumel\",\"craiova-romania\":\"Craiova\",\"crawley-united-kingdom\":\"Crawley\",\"cremona-italy\":\"Cremona\",\"cromer-united-kingdom\":\"Cromer\",\"cuenca-ecuador\":\"Cuenca\",\"cuernavaca-mexico\":\"Cuernavaca\",\"cuiaba-brazil\":\"Cuiaba\",\"culiacan-mexico\":\"Culiacan\",\"cullera-spain\":\"Cullera\",\"cuneo-italy\":\"Cuneo\",\"cupertino-united-states\":\"Cupertino\",\"curitiba-brazil\":\"Curitiba\",\"cusco-peru\":\"Cusco\",\"da-nang-vietnam\":\"Da Nang\",\"daegu-south-korea\":\"Daegu\",\"daejeon-south-korea\":\"Daejeon\",\"dakar-senegal\":\"Dakar\",\"dalat-vietnam\":\"Dalat\",\"dalian-china\":\"Dalian\",\"dallas-united-states\":\"Dallas\",\"dambulla-sri-lanka\":\"Dambulla\",\"danville-united-states\":\"Danville\",\"dar-es-salaam-tanzania\":\"Dar es Salaam\",\"darlington-united-kingdom\":\"Darlington\",\"darmstadt-germany\":\"Darmstadt\",\"darwin-australia\":\"Darwin\",\"davenport-united-states\":\"Davenport\",\"davis-united-states\":\"Davis\",\"dax-france\":\"Dax\",\"dayton-united-states\":\"Dayton\",\"daytona-beach-united-states\":\"Daytona Beach\",\"deadwood-united-states\":\"Deadwood\",\"deauville-france\":\"Deauville\",\"debrecen-hungary\":\"Debrecen\",\"delft-netherlands\":\"Delft\",\"delray-beach-united-states\":\"Delray Beach\",\"denia-spain\":\"Dénia\",\"denizli-turkiye\":\"Denizli\",\"denpasar-indonesia\":\"Denpasar\",\"denver-unitedstates\":\"Denver\",\"derby-unitedkingdom\":\"Derby\",\"derry-londonderry-united-kingdom\":\"Derry Londonderry\",\"des-moines-united-states\":\"Des Moines\",\"desenzano-del-garda-italy\":\"Desenzano del Garda\",\"detroit-united-states\":\"Detroit\",\"deventer-netherlands\":\"Deventer\",\"dijon-france\":\"Dijon\",\"dinan-france\":\"Dinan\",\"dinard-france\":\"Dinard\",\"diyarbakr-turkiye\":\"Diyarbakır\",\"doha-qatar\":\"Doha\",\"doncaster-united-kingdom\":\"Doncaster\",\"dortmund-germany\":\"Dortmund\",\"dresden-germany\":\"Dresden\",\"dubai\":\"Dubai\",\"dublin-ireland\":\"Dublin\",\"dublin-united-states\":\"Dublin\",\"dubrovnik-croatia\":\"Dubrovnik\",\"duisburg-germany\":\"Duisburg\",\"dumaguete-philippines\":\"Dumaguete\",\"dundee-united-kingdom\":\"Dundee\",\"dunkerque-france\":\"Dunkerque\",\"durban-southafrica\":\"Durban\",\"durham-united-kingdom\":\"Durham\",\"durham-united-states\":\"Durham\",\"dusseldorf-germany\":\"Düsseldorf\",\"eastbourne-unitedkingdom\":\"Eastbourne\",\"edinburgh-unitedkingdom\":\"Edinburgh\",\"edirne-turkiye\":\"Edirne\",\"eindhoven-netherlands\":\"Eindhoven\",\"eisenach-germany\":\"Eisenach\",\"el-puerto-de-santa-maria-spain\":\"El Puerto de Santa María\",\"elche-spain\":\"Elche\",\"enniskillen-united-kingdom\":\"Enniskillen\",\"epinal-france\":\"Épinal\",\"erfurt-germany\":\"Erfurt\",\"erzurum-turkiye\":\"Erzurum\",\"eskisehir-turkiye\":\"Eskişehir\",\"essaouira-morocco\":\"Essaouira\",\"essen-germany\":\"Essen\",\"estepona-spain\":\"Estepona\",\"estoril-portugal\":\"Estoril\",\"evian-les-bains-france\":\"Évian-les-Bains\",\"evora-portugal\":\"Évora\",\"exeter-united-kingdom\":\"Exeter\",\"falmouth-unitedkingdom\":\"Falmouth\",\"fano-italy\":\"Fano\",\"farnborough-united-kingdom\":\"Farnborough\",\"faro-portugal\":\"Faro\",\"fatima-portugal\":\"Fátima\",\"ferrara-italy\":\"Ferrara\",\"figueres-spain\":\"Figueres\",\"flagstaff-united-states\":\"Flagstaff\",\"flensburg-germany\":\"Flensburg\",\"florence-italy\":\"Florence\",\"florianopolis-brazil\":\"Florianópolis\",\"foggia-italy\":\"Foggia\",\"foligno-italy\":\"Foligno\",\"folkestone-unitedkingdom\":\"Folkestone\",\"forli-italy\":\"Forlì\",\"fort-lauderdale-united-states\":\"Fort Lauderdale\",\"fortaleza-brazil\":\"Fortaleza\",\"forte-dei-marmi-italy\":\"Forte dei Marmi\",\"foz-do-iguacu-brazil\":\"Foz do Iguaçu\",\"frankfurt-germany\":\"Frankfurt\",\"franklin-united-states\":\"Franklin\",\"fredericton-canada\":\"Fredericton\",\"freetown-sierra-leone\":\"Freetown\",\"friedrichshafen-germany\":\"Friedrichshafen\",\"fuengirola-spain\":\"Fuengirola\",\"fukuoka-japan\":\"Fukuoka\",\"fulda-germany\":\"Fulda\",\"funchal-portugal\":\"Funchal\",\"gaborone-botswana\":\"Gaborone\",\"gaeta-italy\":\"Gaeta\",\"gallipoli-italy\":\"Gallipoli\",\"galway-ireland\":\"Galway\",\"gandia-spain\":\"Gandía\",\"garmisch-partenkirchen-germany\":\"Garmisch-Partenkirchen\",\"gaziantep-turkiye\":\"Gaziantep\",\"gdansk-poland\":\"Gdańsk\",\"gdynia-poland\":\"Gdynia\",\"geelong-australia\":\"Geelong\",\"geneva-switzerland\":\"Geneva\",\"genoa-italy\":\"Genoa\",\"georgetown-guyana\":\"Georgetown\",\"getafe-spain\":\"Getafe\",\"ghent-belgium\":\"Ghent\",\"gijon-spain\":\"Gijón\",\"girona-spain\":\"Girona\",\"glasgow-unitedkingdom\":\"Glasgow\",\"gliwice-poland\":\"Gliwice\",\"gloucester-unitedkingdom\":\"Gloucester\",\"gold-coast-australia\":\"Gold Coast\",\"gothenburg-sweden\":\"Gothenburg\",\"gottingen-germany\":\"Göttingen\",\"granada-nicaragua\":\"Granada\",\"granada-spain\":\"Granada\",\"graz-austria\":\"Graz\",\"great-yarmouth-united-kingdom\":\"Great Yarmouth\",\"grenoble-france\":\"Grenoble\",\"grindelwald-switzerland\":\"Grindelwald\",\"groningen-netherlands\":\"Groningen\",\"grosseto-italy\":\"Grosseto\",\"guadalajara-mexico\":\"Guadalajara\",\"guadalajara-spain\":\"Guadalajara\",\"guanajuato-mexico\":\"Guanajuato\",\"guangzhou-china\":\"Guangzhou\",\"gubbio-italy\":\"Gubbio\",\"guildford-unitedkingdom\":\"Guildford\",\"guilin-china\":\"Guilin\",\"guimaraes-portugal\":\"Guimarães\",\"gyeongju-south-korea\":\"Gyeongju\",\"ha-long-vietnam\":\"Ha Long\",\"hakodate-japan\":\"Hakodate\",\"hakone-japan\":\"Hakone\",\"halifax-canada\":\"Halifax\",\"hamamatsu-japan\":\"Hamamatsu\",\"hamburg-germany\":\"Hamburg\",\"hamilton-canada\":\"Hamilton\",\"hangzhou-china\":\"Hangzhou\",\"hanoi-vietnam\":\"Hanoi\",\"harbin-china\":\"Harbin\",\"harrogate-united-kingdom\":\"Harrogate\",\"hasselt-belgium\":\"Hasselt\",\"hat-yai-thailand\":\"Hat Yai\",\"heidelberg-germany\":\"Heidelberg\",\"heilbronn-germany\":\"Heilbronn\",\"helsinki-finland\":\"Helsinki\",\"heraklion-greece\":\"Heraklion\",\"heringsdorf-germany\":\"Heringsdorf\",\"hersonissos-greece\":\"Hersonissos\",\"hiroshima-japan\":\"Hiroshima\",\"ho-chi-minh-city-vietnam\":\"Ho Chi Minh City\",\"hobart-australia\":\"Hobart\",\"hoi-an-vietnam\":\"Hoi An\",\"hondarribia-spain\":\"Hondarribia\",\"honfleur-france\":\"Honfleur\",\"hong-kong-hongkong\":\"Hong Kong\",\"honolulu-unitedstates\":\"Honolulu\",\"horta-portugal\":\"Horta\",\"houston-united-states\":\"Houston\",\"hua-hin-thailand\":\"Hua Hin\",\"huddersfield-united-kingdom\":\"Huddersfield\",\"hue-vietnam\":\"Hue\",\"huelva-spain\":\"Huelva\",\"huesca-spain\":\"Huesca\",\"hull-united-kingdom\":\"Hull\",\"huntsville-united-states\":\"Huntsville\",\"hurghada-egypt\":\"Hurghada\",\"hyderabad-india\":\"Hyderabad\",\"hyeres-france\":\"Hyères\",\"iasi-romania\":\"Iași\",\"ibiza-spain\":\"Ibiza\",\"ierapetra-greece\":\"Ierapetra\",\"ikeja-nigeria\":\"Ikeja\",\"imola-italy\":\"Imola\",\"imperia-italy\":\"Imperia\",\"incheon-south-korea\":\"Incheon\",\"indianapolis-united-states\":\"Indianapolis\",\"ingolstadt-germany\":\"Ingolstadt\",\"innsbruck-austria\":\"Innsbruck\",\"interlaken-switzerland\":\"Interlaken\",\"inverness-unitedkingdom\":\"Inverness\",\"ioannina-greece\":\"Ioannina\",\"ipswich-united-kingdom\":\"Ipswich\",\"iquitos-peru\":\"Iquitos\",\"istanbul-trkiye\":\"Istanbul\",\"izmir-trkiye\":\"Izmir\",\"jaca-spain\":\"Jaca\",\"jackson-wyoming-united-states\":\"Jackson, Wyoming\",\"jaen-spain\":\"Jaén\",\"jaipur-india\":\"Jaipur\",\"jakarta-indonesia\":\"Jakarta\",\"jeddah-saudiarabia\":\"Jeddah\",\"jerez-de-la-frontera-spain\":\"Jerez de la Frontera\",\"jimbaran-indonesia\":\"Jimbaran\",\"jodhpur-india\":\"Jodhpur\",\"johannesburg-southafrica\":\"Johannesburg\",\"johor-bahru-malaysia\":\"Johor Bahru\",\"kagoshima-japan\":\"Kagoshima\",\"kaiserslautern-germany\":\"Kaiserslautern\",\"kanazawa-japan\":\"Kanazawa\",\"kandy-srilanka\":\"Kandy\",\"kaohsiung-taiwan\":\"Kaohsiung\",\"karachi-pakistan\":\"Karachi\",\"karlsruhe-germany\":\"Karlsruhe\",\"karpacz-poland\":\"Karpacz\",\"kathmandu-nepal\":\"Kathmandu\",\"katowice-poland\":\"Katowice\",\"kaunas-lithuania\":\"Kaunas\",\"kayseri-turkiye\":\"Kayseri\",\"kelowna-canada\":\"Kelowna\",\"kemer-turkiye\":\"Kemer\",\"kiel-germany\":\"Kiel\",\"kielce-poland\":\"Kielce\",\"kigali-rwanda\":\"Kigali\",\"kingston-canada\":\"Kingston\",\"kingston-jamaica\":\"Kingston\",\"kitzbuhel-austria\":\"Kitzbühel\",\"klagenfurt-austria\":\"Klagenfurt\",\"knokke-heist-belgium\":\"Knokke-Heist\",\"kobe-japan\":\"Kobe\",\"koblenz-germany\":\"Koblenz\",\"kolkata-india\":\"Kolkata\",\"konstanz-germany\":\"Konstanz\",\"konya-turkiye\":\"Konya\",\"koobrzeg-poland\":\"Kołobrzeg\",\"kortrijk-belgium\":\"Kortrijk\",\"kosice-slovakia\":\"Kosice\",\"kotor-montenegro\":\"Kotor\",\"krakow-poland\":\"Kraków\",\"krynica-zdroj-poland\":\"Krynica Zdrój\",\"kumamoto-japan\":\"Kumamoto\",\"kunming-china\":\"Kunming\",\"kurashiki-japan\":\"Kurashiki\",\"kusadas-turkiye\":\"Kuşadası\",\"kuta-indonesia\":\"Kuta\",\"kyoto-japan\":\"Kyoto\",\"la-baule-france\":\"La Baule\",\"la-paz-bolivia\":\"La Paz\",\"la-paz-mexico\":\"La Paz\",\"la-rochelle-france\":\"La Rochelle\",\"la-spezia-italy\":\"La Spezia\",\"lagos-nigeria\":\"Lagos\",\"lagos-portugal\":\"Lagos\",\"lamego-portugal\":\"Lamego\",\"lamezia-terme-italy\":\"Lamezia Terme\",\"larnaca-cyprus\":\"Larnaca\",\"las-palmas-de-gran-canaria-spain\":\"Las Palmas de Gran Canaria\",\"las-vegas-unitedstates\":\"Las Vegas\",\"latina-italy\":\"Latina\",\"lausanne-switzerland\":\"Lausanne\",\"le-havre-france\":\"Le Havre\",\"le-mans-france\":\"Le Mans\",\"le-puy-en-velay-france\":\"Le Puy-en-Velay\",\"le-touquet-paris-plage-france\":\"Le Touquet-Paris-Plage\",\"lecce-italy\":\"Lecce\",\"leeds-united-kingdom\":\"Leeds\",\"leeuwarden-netherlands\":\"Leeuwarden\",\"lefkada-greece\":\"Lefkada\",\"legian-indonesia\":\"Legian\",\"leicester-unitedkingdom\":\"Leicester\",\"leipzig-germany\":\"Leipzig\",\"leiria-portugal\":\"Leiria\",\"leon-nicaragua\":\"Leon\",\"les-sables-d-olonne-france\":\"Les Sables-d'Olonne\",\"leuven-belgium\":\"Leuven\",\"liege-belgium\":\"Liège\",\"liepaja-latvia\":\"Liepaja\",\"lijiang-china\":\"Lijiang\",\"lille-france\":\"Lille\",\"lima-peru\":\"Lima\",\"limassol-cyprus\":\"Limassol\",\"limoges-france\":\"Limoges\",\"linz-austria\":\"Linz\",\"lisbon-portugal\":\"Lisbon\",\"livermore-united-states\":\"Livermore\",\"liverpool-unitedkingdom\":\"Liverpool\",\"livorno-italy\":\"Livorno\",\"ljubljana-slovenia\":\"Ljubljana\",\"llanes-spain\":\"Llanes\",\"lleida-spain\":\"Lleida\",\"lloret-de-mar-spain\":\"Lloret de Mar\",\"locarno-switzerland\":\"Locarno\",\"logrono-spain\":\"Logroño\",\"london-canada\":\"London\",\"london\":\"London\",\"los-angeles-unitedstates\":\"Los Angeles\",\"louisville-united-states\":\"Louisville\",\"lourdes-france\":\"Lourdes\",\"loutraki-greece\":\"Loutraki\",\"lovina-indonesia\":\"Lovina\",\"luang-prabang-laos\":\"Luang Prabang\",\"lubeck-germany\":\"Lübeck\",\"lublin-poland\":\"Lublin\",\"lucca-italy\":\"Lucca\",\"lucerne-switzerland\":\"Lucerne\",\"ludwigsburg-germany\":\"Ludwigsburg\",\"ludwigshafen-am-rhein-germany\":\"Ludwigshafen am Rhein\",\"lugano-switzerland\":\"Lugano\",\"lugo-spain\":\"Lugo\",\"lund-sweden\":\"Lund\",\"luxembourg-city-luxembourg\":\"Luxembourg City\",\"luxor-egypt\":\"Luxor\",\"lynchburg-united-states\":\"Lynchburg\",\"lyon-france\":\"Lyon\",\"maastricht-netherlands\":\"Maastricht\",\"macao-macao\":\"Macao\",\"madison-united-states\":\"Madison\",\"madrid-spain\":\"Madrid\",\"mahon-spain\":\"Mahón\",\"maidstone-unitedkingdom\":\"Maidstone\",\"mainz-germany\":\"Mainz\",\"makarska-croatia\":\"Makarska\",\"malaga-spain\":\"Málaga\",\"malang-indonesia\":\"Malang\",\"male-maldives\":\"Malé\",\"malmo-sweden\":\"Malmö\",\"manama-bahrain\":\"Manama\",\"manchester-unitedkingdom\":\"Manchester\",\"manila-philippines\":\"Manila\",\"mannheim-germany\":\"Mannheim\",\"marbella-spain\":\"Marbella\",\"marmaris-turkiye\":\"Marmaris\",\"marsala-italy\":\"Marsala\",\"marseille-france\":\"Marseille\",\"maspalomas-spain\":\"Maspalomas\",\"mataro-spain\":\"Mataró\",\"matera-italy\":\"Matera\",\"matsumoto-japan\":\"Matsumoto\",\"matsuyama-japan\":\"Matsuyama\",\"mazatlan-mexico\":\"Mazatlan\",\"mechelen-belgium\":\"Mechelen\",\"medan-indonesia\":\"Medan\",\"medellin-colombia\":\"Medellín\",\"melbourne-australia\":\"Melbourne\",\"melbourne-united-states\":\"Melbourne\",\"memphis-united-states\":\"Memphis\",\"mendoza-argentina\":\"Mendoza\",\"menton-france\":\"Menton\",\"merano-italy\":\"Merano\",\"merida-mexico\":\"Mérida\",\"merida-spain\":\"Mérida\",\"messina-italy\":\"Messina\",\"metz-france\":\"Metz\",\"mexico-city-mexico\":\"Mexico City\",\"miami-unitedstates\":\"Miami\",\"middlesbrough-united-kingdom\":\"Middlesbrough\",\"miedzyzdroje-poland\":\"Międzyzdroje\",\"milan-italy\":\"Milan\",\"milton-keynes-unitedkingdom\":\"Milton Keynes\",\"milwaukee-united-states\":\"Milwaukee\",\"minneapolis-united-states\":\"Minneapolis\",\"miskolc-hungary\":\"Miskolc\",\"miyazaki-japan\":\"Miyazaki\",\"modena-italy\":\"Modena\",\"modica-italy\":\"Modica\",\"mombasa-kenya\":\"Mombasa\",\"monopoli-italy\":\"Monopoli\",\"montecatini-terme-italy\":\"Montecatini Terme\",\"monterey-united-states\":\"Monterey\",\"monterrey-mexico\":\"Monterrey\",\"montevideo-uruguay\":\"Montevideo\",\"montpellier-france\":\"Montpellier\",\"montreal-canada\":\"Montreal\",\"montreux-switzerland\":\"Montreux\",\"morelia-mexico\":\"Morelia\",\"mostar-bosniaandherzegovina\":\"Mostar\",\"motril-spain\":\"Motril\",\"mui-ne-vietnam\":\"Mui Ne\",\"mulhouse-france\":\"Mulhouse\",\"munduk-indonesia\":\"Munduk\",\"munich-germany\":\"Munich\",\"munster-germany\":\"Münster\",\"murcia-spain\":\"Murcia\",\"muscat-oman\":\"Muscat\",\"mytilene-greece\":\"Mytilene\",\"nadi-fiji\":\"Nadi\",\"nafplio-greece\":\"Nafplio\",\"nagasaki-japan\":\"Nagasaki\",\"nagoya-japan\":\"Nagoya\",\"naha-japan\":\"Naha\",\"nairobi-kenya\":\"Nairobi\",\"namur-belgium\":\"Namur\",\"nancy-france\":\"Nancy\",\"nanjing-china\":\"Nanjing\",\"nantes-france\":\"Nantes\",\"naples-florida-united-states\":\"Naples, Florida\",\"naples-italy\":\"Naples\",\"nara-japan\":\"Nara\",\"narbonne-france\":\"Narbonne\",\"nashville-unitedstates\":\"Nashville\",\"naxos-chora-greece\":\"Naxos Chora\",\"nazare-portugal\":\"Nazaré\",\"nerja-spain\":\"Nerja\",\"new-delhi-india\":\"New Delhi\",\"new-orleans-unitedstates\":\"New Orleans\",\"new-york-unitedstates\":\"New York\",\"newcastle-australia\":\"Newcastle\",\"newcastle-south-africa\":\"Newcastle\",\"newcastle-upon-tyne-united-kingdom\":\"Newcastle upon Tyne\",\"newport-rhode-island-united-states\":\"Newport, Rhode Island\",\"newquay-unitedkingdom\":\"Newquay\",\"nha-trang-vietnam\":\"Nha Trang\",\"niagara-falls-canada\":\"Niagara Falls\",\"nice-france\":\"Nice\",\"nicosia-cyprus\":\"Nicosia\",\"nijmegen-netherlands\":\"Nijmegen\",\"nimes-france\":\"Nîmes\",\"north-vancouver-canada\":\"North Vancouver\",\"norwich-united-kingdom\":\"Norwich\",\"nottingham-united-kingdom\":\"Nottingham\",\"novi-sad-serbia\":\"Novi Sad\",\"nuremberg-germany\":\"Nuremberg\",\"nusa-dua-indonesia\":\"Nusa Dua\",\"nusa-lembongan-indonesia\":\"Nusa Lembongan\",\"nusa-penida-indonesia\":\"Nusa Penida\",\"oban-unitedkingdom\":\"Oban\",\"oberstdorf-germany\":\"Oberstdorf\",\"obidos-portugal\":\"Óbidos\",\"odense-denmark\":\"Odense\",\"odz-poland\":\"Łódź\",\"ohrid-northmacedonia\":\"Ohrid\",\"oia-greece\":\"Oia\",\"okayama-japan\":\"Okayama\",\"oklahoma-city-united-states\":\"Oklahoma City\",\"olbia-italy\":\"Olbia\",\"olhao-portugal\":\"Olhão\",\"olomouc-czechia\":\"Olomouc\",\"olsztyn-poland\":\"Olsztyn\",\"omaha-united-states\":\"Omaha\",\"opatija-croatia\":\"Opatija\",\"opole-poland\":\"Opole\",\"oristano-italy\":\"Oristano\",\"orlando-unitedstates\":\"Orlando\",\"orleans-france\":\"Orléans\",\"orvieto-italy\":\"Orvieto\",\"osaka-japan\":\"Osaka\",\"osijek-croatia\":\"Osijek\",\"oslo-norway\":\"Oslo\",\"osnabruck-germany\":\"Osnabrück\",\"ostend-belgium\":\"Ostend\",\"ostuni-italy\":\"Ostuni\",\"ottawa-canada\":\"Ottawa\",\"oulu-finland\":\"Oulu\",\"ourense-spain\":\"Ourense\",\"ouro-preto-brazil\":\"Ouro Preto\",\"oviedo-spain\":\"Oviedo\",\"oxford-unitedkingdom\":\"Oxford\",\"paignton-unitedkingdom\":\"Paignton\",\"pakse-laos\":\"Pakse\",\"palenque-mexico\":\"Palenque\",\"palermo-italy\":\"Palermo\",\"palm-springs-united-states\":\"Palm Springs\",\"palma-spain\":\"Palma\",\"pamplona-spain\":\"Pamplona\",\"panama-city-panama\":\"Panama City\",\"paphos-cyprus\":\"Paphos\",\"paris\":\"Paris\",\"parma-italy\":\"Parma\",\"pattaya-thailand\":\"Pattaya\",\"pau-france\":\"Pau\",\"peniche-portugal\":\"Peniche\",\"perpignan-france\":\"Perpignan\",\"perth-australia\":\"Perth\",\"perugia-italy\":\"Perugia\",\"pesaro-italy\":\"Pesaro\",\"pescara-italy\":\"Pescara\",\"peterborough-unitedkingdom\":\"Peterborough\",\"philadelphia-unitedstates\":\"Philadelphia\",\"phnom-penh-cambodia\":\"Phnom Penh\",\"phoenix-united-states\":\"Phoenix\",\"phuket-thailand\":\"Phuket\",\"piacenza-italy\":\"Piacenza\",\"pisa-italy\":\"Pisa\",\"pitlochry-unitedkingdom\":\"Pitlochry\",\"pittsburgh-united-states\":\"Pittsburgh\",\"plasencia-spain\":\"Plasencia\",\"playa-blanca-spain\":\"Playa Blanca\",\"playa-del-carmen-mexico\":\"Playa del Carmen\",\"pleasanton-united-states\":\"Pleasanton\",\"plovdiv-bulgaria\":\"Plovdiv\",\"plymouth-united-states\":\"Plymouth\",\"plymouth-unitedkingdom\":\"Plymouth\",\"poitiers-france\":\"Poitiers\",\"pokhara-nepal\":\"Pokhara\",\"polignano-a-mare-italy\":\"Polignano a Mare\",\"pompei-italy\":\"Pompei\",\"ponferrada-spain\":\"Ponferrada\",\"ponta-delgada-portugal\":\"Ponta Delgada\",\"ponte-de-lima-portugal\":\"Ponte de Lima\",\"pontresina-switzerland\":\"Pontresina\",\"porec-croatia\":\"Poreč\",\"portimao-portugal\":\"Portimão\",\"portland-unitedstates\":\"Portland\",\"porto-moniz-portugal\":\"Porto Moniz\",\"porto-portugal\":\"Porto\",\"porto-vecchio-france\":\"Porto-Vecchio\",\"portree-unitedkingdom\":\"Portree\",\"portrush-united-kingdom\":\"Portrush\",\"portsmouth-united-kingdom\":\"Portsmouth\",\"portsmouth-united-states\":\"Portsmouth\",\"potenza-italy\":\"Potenza\",\"potsdam-germany\":\"Potsdam\",\"poznan-poland\":\"Poznań\",\"prague-czechia\":\"Prague\",\"presidente-prudente-brazil\":\"Presidente Prudente\",\"preston-united-kingdom\":\"Preston\",\"puebla-mexico\":\"Puebla\",\"puerto-de-la-cruz-spain\":\"Puerto de la Cruz\",\"puerto-del-carmen-spain\":\"Puerto del Carmen\",\"puerto-princesa-philippines\":\"Puerto Princesa\",\"puerto-vallarta-mexico\":\"Puerto Vallarta\",\"puerto-varas-chile\":\"Puerto Varas\",\"pula-croatia\":\"Pula\",\"pune-india\":\"Pune\",\"punta-arenas-chile\":\"Punta Arenas\",\"punta-del-este-uruguay\":\"Punta del Este\",\"qingdao-china\":\"Qingdao\",\"quarteira-portugal\":\"Quarteira\",\"quebec-city-canada\":\"Quebec City\",\"quedlinburg-germany\":\"Quedlinburg\",\"queenstown-newzealand\":\"Queenstown\",\"queretaro-mexico\":\"Querétaro\",\"quimper-france\":\"Quimper\",\"quito-ecuador\":\"Quito\",\"quy-nhon-vietnam\":\"Quy Nhon\",\"rabat-morocco\":\"Rabat\",\"ragusa-italy\":\"Ragusa\",\"raleigh-united-states\":\"Raleigh\",\"rapallo-italy\":\"Rapallo\",\"ravenna-italy\":\"Ravenna\",\"reading-unitedkingdom\":\"Reading\",\"recife-brazil\":\"Recife\",\"regensburg-germany\":\"Regensburg\",\"reggio-emilia-italy\":\"Reggio Emilia\",\"regina-canada\":\"Regina\",\"reims-france\":\"Reims\",\"rennes-france\":\"Rennes\",\"reno-united-states\":\"Reno\",\"rethymno-greece\":\"Rethymno\",\"reykjavik-iceland\":\"Reykjavík\",\"rhodes-greece\":\"Rhodes\",\"ribadesella-spain\":\"Ribadesella\",\"riccione-italy\":\"Riccione\",\"richmond-united-states\":\"Richmond\",\"riga-latvia\":\"Riga\",\"rimini-italy\":\"Rimini\",\"rio-branco-brazil\":\"Rio Branco\",\"rio-de-janeiro-brazil\":\"Rio de Janeiro\",\"riva-del-garda-italy\":\"Riva del Garda\",\"riyadh-saudiarabia\":\"Riyadh\",\"rochefort-france\":\"Rochefort\",\"rochester-united-states\":\"Rochester\",\"rock-hill-united-states\":\"Rock Hill\",\"rome\":\"Rome\",\"ronda-spain\":\"Ronda\",\"ronne-denmark\":\"Rønne\",\"roscoff-france\":\"Roscoff\",\"roses-spain\":\"Roses\",\"rostock-germany\":\"Rostock\",\"rotterdam-netherlands\":\"Rotterdam\",\"rouen-france\":\"Rouen\",\"rovaniemi-finland\":\"Rovaniemi\",\"rovinj-croatia\":\"Rovinj\",\"royal-tunbridge-wells-unitedkingdom\":\"Royal Tunbridge Wells\",\"royan-france\":\"Royan\",\"rye-unitedkingdom\":\"Rye\",\"rzeszow-poland\":\"Rzeszów\",\"saarbrucken-germany\":\"Saarbrücken\",\"sabadell-spain\":\"Sabadell\",\"sacramento-united-states\":\"Sacramento\",\"saint-brieuc-france\":\"Saint-Brieuc\",\"saint-jean-de-luz-france\":\"Saint-Jean-de-Luz\",\"saint-malo-france\":\"Saint-Malo\",\"saint-raphael-france\":\"Saint-Raphaël\",\"saint-tropez-france\":\"Saint-Tropez\",\"salalah-oman\":\"Salalah\",\"salamanca-spain\":\"Salamanca\",\"salen-sweden\":\"Sälen\",\"salerno-italy\":\"Salerno\",\"salou-spain\":\"Salou\",\"salt-lake-city-united-states\":\"Salt Lake City\",\"salta-argentina\":\"Salta\",\"salvador-brazil\":\"Salvador\",\"salzburg-austria\":\"Salzburg\",\"samsun-turkiye\":\"Samsun\",\"san-antonio-united-states\":\"San Antonio\",\"san-benedetto-del-tronto-italy\":\"San Benedetto del Tronto\",\"san-carlos-de-bariloche-argentina\":\"San Carlos de Bariloche\",\"san-cristobal-de-las-casas-mexico\":\"San Cristóbal de las Casas\",\"san-diego-unitedstates\":\"San Diego\",\"san-francisco-unitedstates\":\"San Francisco\",\"san-jose-costarica\":\"San José\",\"san-jose-united-states\":\"San Jose\",\"san-miguel-de-allende-mexico\":\"San Miguel de Allende\",\"san-sebastian-spain\":\"San Sebastián\",\"sanford-united-states\":\"Sanford\",\"sanlucar-de-barrameda-spain\":\"Sanlúcar de Barrameda\",\"sanremo-italy\":\"Sanremo\",\"santa-barbara-united-states\":\"Santa Barbara\",\"santa-cruz-de-tenerife-spain\":\"Santa Cruz de Tenerife\",\"santa-fe-argentina\":\"Santa Fe\",\"santa-fe-united-states\":\"Santa Fe\",\"santa-margherita-ligure-italy\":\"Santa Margherita Ligure\",\"santa-marta-colombia\":\"Santa Marta\",\"santander-spain\":\"Santander\",\"santiago-chile\":\"Santiago\",\"santiago-de-compostela-spain\":\"Santiago de Compostela\",\"santo-domingo-dominicanrepublic\":\"Santo Domingo\",\"sanur-indonesia\":\"Sanur\",\"sao-paulo-brazil\":\"São Paulo\",\"sapporo-japan\":\"Sapporo\",\"sarajevo-bosniaandherzegovina\":\"Sarajevo\",\"sarande-albania\":\"Sarandë\",\"sarlat-la-caneda-france\":\"Sarlat-la-Canéda\",\"saskatoon-canada\":\"Saskatoon\",\"savannah-unitedstates\":\"Savannah\",\"scarborough-united-kingdom\":\"Scarborough\",\"schwerin-germany\":\"Schwerin\",\"seattle-unitedstates\":\"Seattle\",\"seefeld-in-tirol-austria\":\"Seefeld in Tirol\",\"segovia-spain\":\"Segovia\",\"semarang-indonesia\":\"Semarang\",\"seminyak-indonesia\":\"Seminyak\",\"sendai-japan\":\"Sendai\",\"senigallia-italy\":\"Senigallia\",\"seoul-southkorea\":\"Seoul\",\"sesimbra-portugal\":\"Sesimbra\",\"sestri-levante-italy\":\"Sestri Levante\",\"setubal-portugal\":\"Setúbal\",\"seville-spain\":\"Seville\",\"shanghai-china\":\"Shanghai\",\"sharjah-unitedarabemirates\":\"Sharjah\",\"sharm-el-sheikh-egypt\":\"Sharm El Sheikh\",\"sheffield-united-kingdom\":\"Sheffield\",\"sheki-azerbaijan\":\"Sheki\",\"shenzhen-china\":\"Shenzhen\",\"shimla-india\":\"Shimla\",\"shizuoka-japan\":\"Shizuoka\",\"shrewsbury-unitedkingdom\":\"Shrewsbury\",\"sibenik-croatia\":\"Šibenik\",\"side-turkiye\":\"Side\",\"siem-reap-cambodia\":\"Siem Reap\",\"siena-italy\":\"Siena\",\"sierra-vista-united-states\":\"Sierra Vista\",\"sihanoukville-cambodia\":\"Sihanoukville\",\"siliguri-india\":\"Siliguri\",\"singapore-singapore\":\"Singapore\",\"sintra-portugal\":\"Sintra\",\"sirmione-italy\":\"Sirmione\",\"sitges-spain\":\"Sitges\",\"skopje-northmacedonia\":\"Skopje\",\"sliema-malta\":\"Sliema\",\"sofia-bulgaria\":\"Sofia\",\"solo-indonesia\":\"Solo\",\"sopot-poland\":\"Sopot\",\"sopron-hungary\":\"Sopron\",\"soria-spain\":\"Soria\",\"sorrento-italy\":\"Sorrento\",\"southampton-united-kingdom\":\"Southampton\",\"southport-united-kingdom\":\"Southport\",\"spa-belgium\":\"Spa\",\"split-croatia\":\"Split\",\"spokane-united-states\":\"Spokane\",\"spoleto-italy\":\"Spoleto\",\"st-albans-unitedkingdom\":\"St Albans\",\"st-andrews-united-kingdom\":\"St Andrews\",\"st-augustine-united-states\":\"St. Augustine\",\"st-gallen-switzerland\":\"St. Gallen\",\"st-john-s-canada\":\"St. John's\",\"stamford-united-states\":\"Stamford\",\"stavanger-norway\":\"Stavanger\",\"stellenbosch-southafrica\":\"Stellenbosch\",\"stockholm-sweden\":\"Stockholm\",\"strasbourg-france\":\"Strasbourg\",\"stresa-italy\":\"Stresa\",\"stuttgart-germany\":\"Stuttgart\",\"sucre-bolivia\":\"Sucre\",\"sunderland-united-kingdom\":\"Sunderland\",\"surabaya-indonesia\":\"Surabaya\",\"suva-fiji\":\"Suva\",\"suwon-south-korea\":\"Suwon\",\"suzhou-china\":\"Suzhou\",\"swakopmund-namibia\":\"Swakopmund\",\"swansea-united-kingdom\":\"Swansea\",\"swinoujscie-poland\":\"Świnoujście\",\"sydney-australia\":\"Sydney\",\"syracuse-italy\":\"Syracuse\",\"szczecin-poland\":\"Szczecin\",\"szczyrk-poland\":\"Szczyrk\",\"szklarska-poreba-poland\":\"Szklarska Poręba\",\"ta-if-saudi-arabia\":\"Ta'if\",\"taichung-taiwan\":\"Taichung\",\"tainan-taiwan\":\"Tainan\",\"taipei-taiwan\":\"Taipei\",\"tallinn-estonia\":\"Tallinn\",\"tampa-united-states\":\"Tampa\",\"tampere-finland\":\"Tampere\",\"tampico-mexico\":\"Tampico\",\"tangier-morocco\":\"Tangier\",\"taormina-italy\":\"Taormina\",\"taos-united-states\":\"Taos\",\"taranto-italy\":\"Taranto\",\"tarifa-spain\":\"Tarifa\",\"tarragona-spain\":\"Tarragona\",\"tartu-estonia\":\"Tartu\",\"tavira-portugal\":\"Tavira\",\"tbilisi-georgia\":\"Tbilisi\",\"tel-aviv-israel\":\"Tel Aviv\",\"tenby-united-kingdom\":\"Tenby\",\"terrassa-spain\":\"Terrassa\",\"teruel-spain\":\"Teruel\",\"the-hague-netherlands\":\"The Hague\",\"thessaloniki-greece\":\"Thessaloniki\",\"thun-switzerland\":\"Thun\",\"tilburg-netherlands\":\"Tilburg\",\"timmendorfer-strand-germany\":\"Timmendorfer Strand\",\"tirana-albania\":\"Tirana\",\"titisee-neustadt-germany\":\"Titisee-Neustadt\",\"tokyo\":\"Tokyo\",\"toledo-spain\":\"Toledo\",\"tomar-portugal\":\"Tomar\",\"toronto-canada\":\"Toronto\",\"torquay-unitedkingdom\":\"Torquay\",\"torremolinos-spain\":\"Torremolinos\",\"torrevieja-spain\":\"Torrevieja\",\"torshavn-faroe-islands\":\"Tórshavn\",\"torun-poland\":\"Toruń\",\"toulon-france\":\"Toulon\",\"toulouse-france\":\"Toulouse\",\"tours-france\":\"Tours\",\"townsville-australia\":\"Townsville\",\"trabzon-turkiye\":\"Trabzon\",\"trani-italy\":\"Trani\",\"trapani-italy\":\"Trapani\",\"travemunde-germany\":\"Travemünde\",\"traverse-city-united-states\":\"Traverse City\",\"trento-italy\":\"Trento\",\"treviso-italy\":\"Treviso\",\"trieste-italy\":\"Trieste\",\"trogir-croatia\":\"Trogir\",\"troms-norway\":\"Tromsø\",\"trondheim-norway\":\"Trondheim\",\"trouville-sur-mer-france\":\"Trouville-sur-Mer\",\"troyes-france\":\"Troyes\",\"truro-unitedkingdom\":\"Truro\",\"tubingen-germany\":\"Tübingen\",\"tucson-united-states\":\"Tucson\",\"tudela-spain\":\"Tudela\",\"tulum-mexico\":\"Tulum\",\"tunis-tunisia\":\"Tunis\",\"turin-italy\":\"Turin\",\"turku-finland\":\"Turku\",\"ubeda-spain\":\"Úbeda\",\"ubud-indonesia\":\"Ubud\",\"udaipur-india\":\"Udaipur\",\"udine-italy\":\"Udine\",\"ulaanbaatar-mongolia\":\"Ulaanbaatar\",\"ulm-germany\":\"Ulm\",\"umea-sweden\":\"Umeå\",\"uppsala-sweden\":\"Uppsala\",\"ushuaia-argentina\":\"Ushuaia\",\"ustka-poland\":\"Ustka\",\"utrecht-netherlands\":\"Utrecht\",\"vaasa-finland\":\"Vaasa\",\"valdosta-united-states\":\"Valdosta\",\"valence-france\":\"Valence\",\"valencia-spain\":\"Valencia\",\"valencia-united-states\":\"Valencia\",\"valencia-venezuela\":\"Valencia\",\"valkenburg-netherlands\":\"Valkenburg\",\"valladolid-spain\":\"Valladolid\",\"valletta-malta\":\"Valletta\",\"vancouver-canada\":\"Vancouver\",\"vancouver-united-states\":\"Vancouver\",\"vannes-france\":\"Vannes\",\"varanasi-india\":\"Varanasi\",\"varese-italy\":\"Varese\",\"varna-bulgaria\":\"Varna\",\"venice-italy\":\"Venice\",\"ventura-united-states\":\"Ventura\",\"verona-italy\":\"Verona\",\"versailles-france\":\"Versailles\",\"vevey-switzerland\":\"Vevey\",\"viana-do-castelo-portugal\":\"Viana do Castelo\",\"viareggio-italy\":\"Viareggio\",\"vicenza-italy\":\"Vicenza\",\"vichy-france\":\"Vichy\",\"victoria-canada\":\"Victoria\",\"vienna-austria\":\"Vienna\",\"vientiane-laos\":\"Vientiane\",\"vigo-spain\":\"Vigo\",\"vila-real-portugal\":\"Vila Real\",\"vilamoura-portugal\":\"Vilamoura\",\"villach-austria\":\"Villach\",\"vilnius-lithuania\":\"Vilnius\",\"viseu-portugal\":\"Viseu\",\"viterbo-italy\":\"Viterbo\",\"vitoria-gasteiz-spain\":\"Vitoria-Gasteiz\",\"vodice-croatia\":\"Vodice\",\"volos-greece\":\"Volos\",\"warsaw-poland\":\"Warsaw\",\"washington-dc-unitedstates\":\"Washington DC\",\"watford-unitedkingdom\":\"Watford\",\"weimar-germany\":\"Weimar\",\"wellington-newzealand\":\"Wellington\",\"whistler-canada\":\"Whistler\",\"wiesbaden-germany\":\"Wiesbaden\",\"wilmington-north-carolina-united-states\":\"Wilmington, North Carolina\",\"winchester-unitedkingdom\":\"Winchester\",\"windermere-united-kingdom\":\"Windermere\",\"windhoek-namibia\":\"Windhoek\",\"windsor-canada\":\"Windsor\",\"windsor-unitedkingdom\":\"Windsor\",\"winnipeg-canada\":\"Winnipeg\",\"wisa-poland\":\"Wisła\",\"wismar-germany\":\"Wismar\",\"wolfsburg-germany\":\"Wolfsburg\",\"worcester-united-states\":\"Worcester\",\"worcester-unitedkingdom\":\"Worcester\",\"wrocaw-poland\":\"Wrocław\",\"wurzburg-germany\":\"Würzburg\",\"xian-china\":\"Xi’an\",\"yamagata-japan\":\"Yamagata\",\"yangon-myanmar\":\"Yangon\",\"yangshuo-china\":\"Yangshuo\",\"yantai-china\":\"Yantai\",\"yaounde-cameroon\":\"Yaounde\",\"yerevan-armenia\":\"Yerevan\",\"yogyakarta-indonesia\":\"Yogyakarta\",\"yokohama-japan\":\"Yokohama\",\"york-unitedkingdom\":\"York\",\"zaandam-netherlands\":\"Zaandam\",\"zacatecas-mexico\":\"Zacatecas\",\"zadar-croatia\":\"Zadar\",\"zagreb-croatia\":\"Zagreb\",\"zakopane-poland\":\"Zakopane\",\"zakynthos-greece\":\"Zakynthos\",\"zalaegerszeg-hungary\":\"Zalaegerszeg\",\"zamora-spain\":\"Zamora\",\"zandvoort-netherlands\":\"Zandvoort\",\"zanzibar-city-tanzania\":\"Zanzibar City\",\"zaragoza-spain\":\"Zaragoza\",\"zell-am-see-austria\":\"Zell am See\",\"zielona-gora-poland\":\"Zielona Góra\",\"zurich-switzerland\":\"Zurich\",\"zwolle-netherlands\":\"Zwolle\"}")
 };
 var I$1 = IX$1.ids;
 var G$1 = {};
@@ -22559,7 +22563,7 @@ var TIERS$1 = [
 	"standard",
 	"budget"
 ];
-var GYM_LANGS = ["en", "es"];
+var POOL_LANGS = ["en", "es"];
 /** Gym data is keyed by catalogue id ("madrid-spain"); public URLs use the city slug ("madrid"). */
 async function slugs$1() {
 	const { byId, bySlug } = await data();
@@ -22571,382 +22575,12 @@ async function slugs$1() {
 		byId
 	};
 }
-var gymPaths = async () => {
-	const { pub } = await slugs$1();
-	return ["/gyms", ...Object.keys(I$1).map((id) => `/gyms/${pub(id)}`)];
-};
-var TX$1 = {
-	en: {
-		tier: {
-			luxury: "Luxury",
-			standard: "Mid-range",
-			budget: "Budget"
-		},
-		tierNote: {
-			luxury: "5-star hotels",
-			standard: "4-star hotels",
-			budget: "3 stars or less"
-		},
-		h1: (c) => `The best hotel gyms in ${c}`,
-		title: (c) => `Best hotel gyms in ${c} (2026): luxury, mid-range and budget | Top3Hotels`,
-		desc: (c, n) => `Best hotel gym in ${c} at every budget, judged on the gym only (size, equipment, hours): ${n.join(", ")}.`,
-		lead: "One hotel per budget, picked for its gym, not its lobby. Size, equipment, opening hours and extras, with sources.",
-		best: "Best gym in the city",
-		size: "Size",
-		hours: "Hours",
-		h24: "Open 24 hours",
-		equip: "Equipment",
-		extras: "Extras",
-		access: "Access",
-		perNight: "/ night",
-		book: "See prices on Booking",
-		site: "Hotel website",
-		sources: "Sources",
-		low: "Limited information: confirm the gym with the hotel before booking.",
-		none: "We could not confirm a hotel gym in this category.",
-		photoGym: "Gym photo: Booking.com",
-		photoHotel: "Hotel photo: Booking.com",
-		photoCity: "City photo",
-		how: "How we choose",
-		howBody: "We look only at the gym: size, free weights and machines, opening hours, extras like a pool or sauna, and what guests say about it. Categories follow the official star rating. Every fact comes from a public source listed under each hotel. Links to Booking.com are affiliate links: if you book, we may earn a commission at no cost to you.",
-		checked: "Checked",
-		crumbs: "Hotel gyms",
-		hotels: (c) => `The 3 best hotels in ${c}`,
-		idxTitle: "Best hotel gyms, city by city | Top3Hotels",
-		idxH1: "The best hotel gyms, city by city",
-		idxDesc: "The hotel with the best gym in every city we cover, at three budgets: luxury, mid-range and budget.",
-		cities: "cities"
-	},
-	es: {
-		tier: {
-			luxury: "Lujo",
-			standard: "Estándar",
-			budget: "Económico"
-		},
-		tierNote: {
-			luxury: "Hoteles de 5 estrellas",
-			standard: "Hoteles de 4 estrellas",
-			budget: "3 estrellas o menos"
-		},
-		h1: (c) => `Los mejores gimnasios de hotel en ${c}`,
-		title: (c) => `Mejores gimnasios de hotel en ${c} (2026): lujo, estándar y económico | Top3Hotels`,
-		desc: (c, n) => `El mejor gimnasio de hotel en ${c} en cada presupuesto, valorando solo el gimnasio (tamaño, equipamiento, horario): ${n.join(", ")}.`,
-		lead: "Un hotel por presupuesto, elegido por su gimnasio, no por su recepción. Tamaño, equipamiento, horario y extras, con fuentes.",
-		best: "El mejor gimnasio de la ciudad",
-		size: "Tamaño",
-		hours: "Horario",
-		h24: "Abierto 24 horas",
-		equip: "Equipamiento",
-		extras: "Extras",
-		access: "Acceso",
-		perNight: "/ noche",
-		book: "Ver precios en Booking",
-		site: "Web del hotel",
-		sources: "Fuentes",
-		low: "Información limitada: confirma el gimnasio con el hotel antes de reservar.",
-		none: "No hemos podido confirmar un gimnasio de hotel en esta categoría.",
-		photoGym: "Foto del gimnasio: Booking.com",
-		photoHotel: "Foto del hotel: Booking.com",
-		photoCity: "Foto de la ciudad",
-		how: "Cómo elegimos",
-		howBody: "Miramos solo el gimnasio: tamaño, peso libre y máquinas, horario, extras como piscina o sauna, y lo que dicen los huéspedes. Las categorías siguen la clasificación oficial de estrellas. Cada dato sale de una fuente pública que enlazamos bajo cada hotel. Los enlaces a Booking.com son de afiliado: si reservas, podemos ganar una comisión sin coste para ti.",
-		checked: "Revisado",
-		crumbs: "Gimnasios de hotel",
-		hotels: (c) => `Los 3 mejores hoteles de ${c}`,
-		idxTitle: "Mejores gimnasios de hotel, ciudad por ciudad | Top3Hotels",
-		idxH1: "Los mejores gimnasios de hotel, ciudad por ciudad",
-		idxDesc: "El hotel con el mejor gimnasio de cada ciudad que cubrimos, en tres presupuestos: lujo, estándar y económico.",
-		cities: "ciudades"
-	}
-};
-var CSS_GYM$1 = `.gym{max-width:1100px;margin:0 auto}.gym .crumbs{font-size:13px;color:var(--muted);margin:8px 0 14px}.gym .crumbs a{color:inherit}
-.gym h1{font-size:clamp(30px,5vw,46px);line-height:1.08;margin:0 0 10px}.gym .lead{font-size:18px;line-height:1.5;color:var(--muted);margin:0 0 6px;max-width:760px}.gym .upd{font-size:13px;color:var(--muted);margin:0 0 22px}
-.gcards{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));margin:10px 0 26px}
-.gcard{position:relative;display:flex;flex-direction:column;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--card);box-shadow:var(--shadow)}
-.gcard:before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:var(--c);z-index:2}.gcard.luxury{--c:#b8860b}.gcard.standard{--c:#d83b51}.gcard.budget{--c:#1f7a5a}
-.gcard .ph{position:relative;aspect-ratio:4/3;background:#dfe8f2;overflow:hidden}.gcard .ph img{width:100%;height:100%;object-fit:cover;display:block}
-.gcard .ph small{position:absolute;right:8px;bottom:8px;font-size:10px;background:#000a;color:#fff;border-radius:6px;padding:3px 6px}
-.gcard .gchips{position:absolute;left:12px;top:14px;display:flex;gap:6px;flex-wrap:wrap;z-index:2}.gcard .gchips span{margin:0!important;display:inline-flex;align-items:center;white-space:nowrap;line-height:1.2;width:auto;height:auto;font-size:12px;font-weight:700;letter-spacing:.03em;text-transform:uppercase;padding:5px 10px;border-radius:99px;background:#fff;color:#10213a}
-.gcard .gchips .top{background:#10213a;color:#fff}
-.gcard .gprice{position:absolute;right:12px;bottom:12px;z-index:2;pointer-events:none}
-.gcard .bd{padding:16px 18px 18px;display:flex;flex-direction:column;gap:10px;flex:1}.gcard h2{font-size:22px;line-height:1.2;margin:0}.gcard .meta{font-size:14px;color:var(--muted)}
-.gcard p{margin:0;font-size:15px;line-height:1.55}.gcard dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:14px}.gcard dt{font-weight:600;color:var(--muted)}.gcard dd{margin:0}
-.gcard .warn{font-size:13px;color:#8a5a00;background:rgba(184,134,11,.1);border-radius:8px;padding:8px 10px}
-.gcard .ctas{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto;padding-top:6px}.gcard .btn{min-height:44px}.gcard .lnk{align-self:center;font-size:14px}
-.gcard .src{font-size:12px;opacity:.7}.gcard .src a,.gcard .src .nolink{color:inherit;margin-right:8px}
-.gcard.empty .bd{justify-content:center;text-align:center;color:var(--muted);min-height:180px}
-.gym .best{border-left:3px solid #10213a;background:rgba(127,127,127,.07);padding:12px 16px;border-radius:8px;margin:0 0 16px;font-size:15px}
-.gym .method{border-left:3px solid #d83b51;background:rgba(216,59,81,.06);padding:12px 16px;border-radius:8px;font-size:14px;line-height:1.55;margin:20px 0}
-.gym .clist{columns:3 220px;padding:0;list-style:none}.gym .clist li{margin:3px 0;break-inside:avoid}.gym .clist h2{font-size:18px;margin:16px 0 4px}
-@media(prefers-color-scheme:dark){.gcard .gchips span{background:#e8eef6}.gcard .warn{color:#f0c36b}}`;
-var ESC_URL$1 = (u) => esc(u);
-var host$1 = (u) => {
-	try {
-		return new URL(u).hostname.replace(/^www\./, "");
-	} catch {
-		return u;
-	}
-};
-/** Booking.com no longer resolves free-text searches (searchresults.html?ss=... bounces to the home page),
-*  so only a real hotel page gets a Booking button. Without one we fall back to the hotel's own website,
-*  or show no button at all; never a search link. */
-var BK_HOTEL$1 = /^https:\/\/www\.booking\.com\/hotel\/[a-z]{2}\/[^/?#]+\.html/;
-var bookingFor$1 = (p) => p.bookingUrl && BK_HOTEL$1.test(p.bookingUrl) ? CJ_BOOKING(p.bookingUrl.split("?")[0], "t3gym") : null;
-function ctasFor$1(p, x, slug, t) {
-	const bk = bookingFor$1(p);
-	if (bk) return `<div class="ctas"><a class="btn" href="${esc(bk)}" rel="sponsored nofollow noopener" target="_blank" data-t="gym_booking" data-city="${esc(slug)}" data-cat="${t}" data-p="booking">${esc(x.book)}</a>${p.website ? `<a class="lnk" href="${esc(p.website)}" rel="nofollow noopener" target="_blank">${esc(x.site)} →</a>` : ""}</div>`;
-	if (p.website) return `<div class="ctas"><a class="btn" href="${esc(p.website)}" rel="nofollow noopener" target="_blank" data-t="gym_site" data-city="${esc(slug)}" data-cat="${t}" data-p="website">${esc(x.site)} →</a></div>`;
-	return "";
-}
-var bkKey$1 = (u) => (u ?? "").match(/\/hotel\/[a-z]{2}\/[^.?#/]+/)?.[0] ?? "";
-var nameKey$1 = (n) => (n ?? "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
-async function cityPrices$1(id) {
-	const out = /* @__PURE__ */ new Map();
-	const c = await cityData(id).catch(() => null);
-	for (const h of c?.hotels ?? []) {
-		const n = h.offer?.nightly;
-		if (!n || n <= 0) continue;
-		const v = {
-			nightly: n,
-			checked: h.booking?.checked
-		};
-		const k = bkKey$1(h.booking?.url);
-		if (k) out.set(k, v);
-		if (h.name) out.set(nameKey$1(h.name), v);
-	}
-	return out;
-}
-var priceFor$1 = (prices, p) => prices.get(bkKey$1(p.bookingUrl)) ?? prices.get(nameKey$1(p.hotel));
-var isoOf$1 = (s) => {
-	const d = new Date(s ?? "");
-	return Number.isNaN(d.getTime()) ? "" : d.toISOString().slice(0, 10);
-};
-var OTA_NOAFF$1 = /(^|\.)(expedia|hotels|hoteles|hoteis|priceline|orbitz|travelocity|trip|wotif|agoda|kayak|trivago|tripadvisor|ebookers|lastminute)\.[a-z.]+$/;
-var srcLink$1 = (s) => {
-	let h = "";
-	try {
-		h = new URL(s).hostname;
-	} catch {
-		return "";
-	}
-	if (/(^|\.)booking\.com$/.test(h)) return `<a href="${esc(CJ_BOOKING(s, "t3gymsrc"))}" rel="sponsored nofollow noopener" target="_blank">${esc(host$1(s))}</a>`;
-	if (OTA_NOAFF$1.test(h)) return `<span class="nolink">${esc(host$1(s))}</span>`;
-	return `<a href="${esc(s)}" rel="nofollow noopener" target="_blank">${esc(host$1(s))}</a>`;
-};
-function card$2(t, p, city, L, cityImg, slug, price) {
-	const x = TX$1[L];
-	const top3 = p?._top;
-	const chips = `<div class="gchips"><span>${esc(x.tier[t])}</span>${city.best === t ? `<span class="top">${esc(x.best)}</span>` : ""}${top3 ? `<span class="top3b">${esc(bkx(L).alsoTop(top3))}</span>` : ""}</div>`;
-	if (!p) return `<article class="gcard ${t} empty"><div class="bd">${chips.replace("class=\"gchips\"", "class=\"gchips\" style=\"position:static\"")}<p>${esc(x.none)}</p><small>${esc(x.tierNote[t])}</small></div></article>`;
-	const g = p.gym ?? {};
-	const px = p;
-	const own = p.photo?.url && !isDeadImg(p.photo.url) ? p.photo.url : null;
-	const gx = gymPhotos(px._gk ?? "");
-	const phs = hotelPhotos(p.bookingUrl, [own, ...px._cat ?? []]);
-	for (const [u] of gx) if (!phs.includes(u)) phs.push(u);
-	const img = phs[0] ?? cityImg;
-	const src0 = gx.find(([u]) => u === phs[0]);
-	const credit = !phs[0] ? x.photoCity : phs[0] === own ? p.photo?.gym ? x.photoGym : x.photoHotel : src0 ? (src0[1] === "hotelgyms.com" ? x.photoGym : x.photoHotel).replace("Booking.com", src0[1]) : x.photoHotel;
-	const rows = [];
-	if (g.sizeM2) rows.push(`<dt>${esc(x.size)}</dt><dd>${g.sizeM2.toLocaleString(L === "es" ? "es-ES" : "en-GB")} m²</dd>`);
-	if (g.hours) rows.push(`<dt>${esc(x.hours)}</dt><dd>${esc(/^24/.test(g.hours) ? x.h24 : g.hours)}</dd>`);
-	if (g.equipment?.length) rows.push(`<dt>${esc(x.equip)}</dt><dd>${esc(g.equipment.join(" · "))}</dd>`);
-	if (g.extras?.length) rows.push(`<dt>${esc(x.extras)}</dt><dd>${esc(g.extras.join(" · "))}</dd>`);
-	if (g.access) rows.push(`<dt>${esc(x.access)}</dt><dd>${esc(g.access)}</dd>`);
-	const stars = p.stars ? `${"★".repeat(p.stars)} · ` : "";
-	return `<article class="gcard ${t}" id="${t}"><div class="ph">${chips}${price ? `<span class="pricetag gprice" data-eur="${price.nightly}" title="${esc(Y[L].priceRef(isoOf$1(price.checked) || "2026"))}"><span class="v">${money(price.nightly)}</span><small> ${esc(x.perNight)}</small></span>` : ""}${img ? `<img src="${ESC_URL$1(img)}"${bsSet(img)} alt="${esc(`${p.hotel}, ${city.city}`)}" width="640" height="480" loading="lazy" referrerpolicy="no-referrer"${fbAttr([...phs.slice(1), cityImg])}><small>${esc(credit)}</small>` : ""}</div>
-<div class="bd"><h2>${esc(p.hotel)}</h2><div class="meta">${stars}${esc(p.area ?? city.city)}</div><p>${esc(L === "es" ? p.summary_es : p.summary_en)}</p>${rows.length ? `<dl>${rows.join("")}</dl>` : ""}${p.confidence === "low" ? `<p class="warn">${esc(x.low)}</p>` : ""}
-${ctasFor$1(p, x, slug, t)}
-<div class="src">${esc(x.sources)}: ${p.sources.map((s) => srcLink$1(s)).join("")}</div></div></article>`;
-}
-/** Whole hotel card opens Booking (city cards and gym cards); buttons, links and toggles keep their own action. */
-var CARD_CLICK = `<style>article.card,article.gcard:not(.empty){cursor:pointer}</style><script>document.addEventListener('click',function(e){var c=e.target.closest&&e.target.closest('article.card,article.gcard');if(!c||e.defaultPrevented)return;if(e.target.closest('a,button,summary,details,input,select,label,textarea'))return;try{if(String(getSelection()).length>2)return}catch(_){}var b=c.querySelector('a.btn');if(b)b.click()});<\/script>`;
-async function gymCityPage(urlSlug, Lx) {
-	await load$2();
-	const { pub, toId, byId } = await slugs$1();
-	const id = toId(urlSlug);
-	const city = id ? G$1[id] : void 0;
-	if (!id || !city) return null;
-	const slug = pub(id);
-	if (slug !== urlSlug) return Response.redirect(`${SITE}${P(Lx === "es" ? "es" : "en", `/gyms/${slug}`)}`, 301);
-	const L = Lx === "es" ? "es" : "en";
-	const x = TX$1[L];
-	const ic = byId.get(id);
-	const cn = ic ? cityName(ic, L) : city.city;
-	const cityImg = ic ? `/api/img/${encodeURIComponent(ic.id)}/mid` : void 0;
-	const path = `/gyms/${slug}`;
-	const picks = TIERS$1.map((t) => [t, city.tiers[t]]);
-	const prices = await cityPrices$1(id);
-	{
-		const cd = await cityData(id).catch(() => null);
-		const gal = new Map((cd?.hotels ?? []).map((h) => [bkPath(h.booking?.url), (h.gallery ?? []).map((g) => g.src).filter(Boolean)]));
-		for (const [t, pk] of picks) if (pk) Object.assign(pk, {
-			_gk: `${id}:${t}`,
-			_cat: gal.get(bkPath(pk.bookingUrl)) ?? [],
-			_top: bkPath(pk.bookingUrl) && gal.has(bkPath(pk.bookingUrl)) ? cn : void 0
-		});
-	}
-	const names = picks.filter(([, p]) => p).map(([t, p]) => `${p.hotel} (${x.tier[t].toLowerCase()})`);
-	const bestReason = L === "es" ? city.bestReason_es : city.bestReason_en;
-	const bestPick = city.best ? city.tiers[city.best] : null;
-	const body = `<style>${CSS_GYM$1}</style><div class="gym"><nav class="crumbs"><a href="${P(L, "/")}">Top3Hotels</a> › <a href="${P(L, "/gyms")}">${esc(x.crumbs)}</a> › ${esc(city.city)}</nav>
-<h1>${esc(x.h1(cn))}<em>.</em></h1><p class="lead">${esc(x.lead)}</p>${city.checked ? `<p class="upd">${esc(x.checked)}: ${esc(city.checked)}</p>` : ""}
-${bestPick && bestReason ? `<p class="best"><b>${esc(x.best)}:</b> ${esc(bestPick.hotel)}. ${esc(bestReason)}</p>` : ""}
-<div class="gcards">${picks.map(([t, p]) => card$2(t, p, city, L, cityImg, slug, p ? priceFor$1(prices, p) : void 0)).join("")}</div>
-<div class="method"><b>${esc(x.how)}.</b> ${esc(x.howBody)}</div>
-${ic ? `<p><a href="${P(L, `/${slug}`)}">${esc(x.hotels(city.city))} →</a></p>` : ""}</div>`;
-	const items = picks.filter(([, p]) => p).map(([t, p], i) => ({
-		"@type": "ListItem",
-		position: i + 1,
-		item: {
-			"@type": "Hotel",
-			name: p.hotel,
-			...p.stars ? { starRating: {
-				"@type": "Rating",
-				ratingValue: p.stars
-			} } : {},
-			address: {
-				"@type": "PostalAddress",
-				addressLocality: city.city,
-				addressCountry: city.country
-			},
-			amenityFeature: [{
-				"@type": "LocationFeatureSpecification",
-				name: "Fitness center",
-				value: true
-			}],
-			description: L === "es" ? p.summary_es : p.summary_en,
-			...p.photo?.url ? { image: p.photo.url } : {},
-			...((n) => n ? { priceRange: `from ${money(n)} per night (reference)` } : {})(priceFor$1(prices, p)?.nightly),
-			additionalProperty: {
-				"@type": "PropertyValue",
-				name: "category",
-				value: x.tier[t]
-			}
-		}
-	}));
-	return page({
-		L,
-		title: x.title(Object.values(I$1).filter((o) => o === city.city).length > 1 || Object.entries(I$1).some(([k, o]) => k !== id && byId.get(k) && cityName(byId.get(k), L) === cn) ? `${cn}, ${L === "es" && ic?.cc ? new Intl.DisplayNames(["es"], { type: "region" }).of(ic.cc.toUpperCase()) ?? city.country : city.country}` : cn),
-		description: x.desc(cn, names),
-		path,
-		body,
-		scripts: CARD_CLICK,
-		alts: GYM_LANGS,
-		...(() => {
-			const bp = bestPick;
-			const bi = bp ? [...hotelPhotos(bp.bookingUrl, [bp.photo?.url, ...bp._cat ?? []]), ...gymPhotos(bp._gk ?? "").map(([u]) => u)] : [];
-			return bi[0] || cityImg ? { image: bi[0] || `https://www.top3hotels.com${cityImg}` } : {};
-		})(),
-		ld: [{
-			"@context": "https://schema.org",
-			"@type": "ItemList",
-			name: x.h1(cn),
-			url: `${SITE}${P(L, path)}`,
-			itemListElement: items
-		}, {
-			"@context": "https://schema.org",
-			"@type": "BreadcrumbList",
-			itemListElement: [
-				{
-					"@type": "ListItem",
-					position: 1,
-					name: "Top3Hotels",
-					item: `${SITE}${P(L, "/")}`
-				},
-				{
-					"@type": "ListItem",
-					position: 2,
-					name: x.crumbs,
-					item: `${SITE}${P(L, "/gyms")}`
-				},
-				{
-					"@type": "ListItem",
-					position: 3,
-					name: city.city,
-					item: `${SITE}${P(L, path)}`
-				}
-			]
-		}]
-	});
-}
-async function gymIndexPage(Lx) {
-	await load$2();
-	const { pub } = await slugs$1();
-	const L = Lx === "es" ? "es" : "en";
-	const x = TX$1[L];
-	const byCountry = /* @__PURE__ */ new Map();
-	for (const [slug, c] of Object.entries(G$1)) {
-		const list = byCountry.get(c.country) ?? [];
-		list.push([slug, c]);
-		byCountry.set(c.country, list);
-	}
-	const countries = [...byCountry.keys()].sort((a, b) => a.localeCompare(b));
-	const body = `<style>${CSS_GYM$1}</style><div class="gym"><nav class="crumbs"><a href="${P(L, "/")}">Top3Hotels</a> › ${esc(x.crumbs)}</nav>
-<h1>${esc(x.idxH1)}<em>.</em></h1><p class="lead">${esc(x.idxDesc)}</p><p class="upd">${Object.keys(G$1).length} ${esc(x.cities)}</p>
-${countries.map((c) => `<h2 style="font-size:20px;margin:22px 0 6px">${esc(c)}</h2><ul class="clist">${byCountry.get(c).sort((a, b) => a[1].city.localeCompare(b[1].city)).map(([s, ci]) => `<li><a href="${P(L, `/gyms/${pub(s)}`)}">${esc(ci.city)}</a></li>`).join("")}</ul>`).join("")}
-<div class="method"><b>${esc(x.how)}.</b> ${esc(x.howBody)}</div></div>`;
-	return page({
-		L,
-		title: x.idxTitle,
-		description: x.idxDesc,
-		path: "/gyms",
-		body,
-		alts: GYM_LANGS,
-		ld: [{
-			"@context": "https://schema.org",
-			"@type": "CollectionPage",
-			name: x.idxH1,
-			url: `${SITE}${P(L, "/gyms")}`
-		}]
-	});
-}
-/** Small link for the city page. */
-var gymLink = (id, slug, L, esName) => I$1[id] ? `<p class="note" style="margin:10px 0"><a href="${P(L === "es" ? "es" : "en", `/gyms/${slug}`)}" data-t="gym_link" data-city="${esc(slug)}">🏋️ ${esc(TX$1[L === "es" ? "es" : "en"].h1(L === "es" && esName ? esName : I$1[id]))} →</a></p>` : "";
-/**
-* "Best hotel pools" pages: /pools (index) and /pools/<city-slug>, in English and Spanish (/es/...).
-* Data: src/generated/pools.json, built from data/pools/<slug>.json by tools/pools/build.py.
-* One hotel per tier (luxury = 5 stars, standard = 4 stars, budget = 3 stars or less), judged on the pool only.
-*/
-/** Full data is a static file fetched on first use (keeps the worker bundle small); IDX has its path and id -> city name. */
-var IX = {
-	file: "/assets/t3d/pools.df88d3bd9e.json",
-	ids: /* @__PURE__ */ JSON.parse("{\"a-coruna-spain\":\"A Coruña\",\"aachen-germany\":\"Aachen\",\"aalborg-denmark\":\"Aalborg\",\"aalst-belgium\":\"Aalst\",\"aarhus-denmark\":\"Aarhus\",\"abano-terme-italy\":\"Abano Terme\",\"aberdeen-unitedkingdom\":\"Aberdeen\",\"abidjan-ivory-coast\":\"Abidjan\",\"abu-dhabi-unitedarabemirates\":\"Abu Dhabi\",\"abuja-nigeria\":\"Abuja\",\"accra-ghana\":\"Accra\",\"adana-turkiye\":\"Adana\",\"addis-ababa-ethiopia\":\"Addis Ababa\",\"adeje-spain\":\"Adeje\",\"adelaide-australia\":\"Adelaide\",\"agra-india\":\"Agra\",\"agrigento-italy\":\"Agrigento\",\"aguascalientes-mexico\":\"Aguascalientes\",\"ahmedabad-india\":\"Ahmedabad\",\"airdrie-canada\":\"Airdrie\",\"aix-en-provence-france\":\"Aix-en-Provence\",\"aix-les-bains-france\":\"Aix-les-Bains\",\"ajaccio-france\":\"Ajaccio\",\"ajman-united-arab-emirates\":\"Ajman\",\"akron-united-states\":\"Akron\",\"alajuela-costa-rica\":\"Alajuela\",\"alanya-turkiye\":\"Alanya\",\"alba-italy\":\"Alba\",\"albacete-spain\":\"Albacete\",\"albufeira-portugal\":\"Albufeira\",\"albuquerque-united-states\":\"Albuquerque\",\"alcala-de-henares-spain\":\"Alcalá de Henares\",\"alcobendas-spain\":\"Alcobendas\",\"alessandria-italy\":\"Alessandria\",\"alesund-norway\":\"Ålesund\",\"alghero-italy\":\"Alghero\",\"alicante-spain\":\"Alicante\",\"alkmaar-netherlands\":\"Alkmaar\",\"almaty-kazakhstan\":\"Almaty\",\"almeria-spain\":\"Almería\",\"almunecar-spain\":\"Almuñécar\",\"alnwick-united-kingdom\":\"Alnwick\",\"alpharetta-united-states\":\"Alpharetta\",\"altea-spain\":\"Altea\",\"altoona-united-states\":\"Altoona\",\"amalfi-italy\":\"Amalfi\",\"amarante-portugal\":\"Amarante\",\"amarillo-united-states\":\"Amarillo\",\"amboise-france\":\"Amboise\",\"ames-united-states\":\"Ames\",\"amiens-france\":\"Amiens\",\"amman-jordan\":\"Amman\",\"amritsar-india\":\"Amritsar\",\"amstelveen-the-netherlands\":\"Amstelveen\",\"amsterdam-netherlands\":\"Amsterdam\",\"anaheim-united-states\":\"Anaheim\",\"ancona-italy\":\"Ancona\",\"andorra-la-vella-andorra\":\"Andorra la Vella\",\"angers-france\":\"Angers\",\"angra-do-heroismo-portugal\":\"Angra do Heroísmo\",\"ankara-trkiye\":\"Ankara\",\"ann-arbor-united-states\":\"Ann Arbor\",\"annapolis-united-states\":\"Annapolis\",\"annecy-france\":\"Annecy\",\"antalya-trkiye\":\"Antalya\",\"antequera-spain\":\"Antequera\",\"antibes-france\":\"Antibes\",\"antigua-guatemala-guatemala\":\"Antigua Guatemala\",\"antwerp-belgium\":\"Antwerp\",\"apeldoorn-netherlands\":\"Apeldoorn\",\"apia-samoa\":\"Apia\",\"appleton-united-states\":\"Appleton\",\"aqaba-jordan\":\"Aqaba\",\"aranjuez-spain\":\"Aranjuez\",\"arcachon-france\":\"Arcachon\",\"arcadia-united-states\":\"Arcadia\",\"arequipa-peru\":\"Arequipa\",\"arezzo-italy\":\"Arezzo\",\"arica-chile\":\"Arica\",\"arles-france\":\"Arles\",\"arlington-united-states\":\"Arlington\",\"arras-france\":\"Arras\",\"arrecife-spain\":\"Arrecife\",\"arusha-tanzania\":\"Arusha\",\"ascona-switzerland\":\"Ascona\",\"asheville-united-states\":\"Asheville\",\"assisi-italy\":\"Assisi\",\"astana-kazakhstan\":\"Astana\",\"asti-italy\":\"Asti\",\"astorga-spain\":\"Astorga\",\"asuncion-paraguay\":\"Asuncion\",\"aswan-egypt\":\"Aswan\",\"athens-greece\":\"Athens\",\"atlanta-united-states\":\"Atlanta\",\"atlantic-city-united-states\":\"Atlantic City\",\"atlixco-mexico\":\"Atlixco\",\"atyrau-kazakhstan\":\"Atyrau\",\"auburn-alabama-united-states\":\"Auburn, Alabama\",\"auckland-newzealand\":\"Auckland\",\"augsburg-germany\":\"Augsburg\",\"augusta-united-states\":\"Augusta\",\"aurangabad-india\":\"Aurangabad\",\"aurora-united-states\":\"Aurora\",\"austin-unitedstates\":\"Austin\",\"aveiro-portugal\":\"Aveiro\",\"avignon-france\":\"Avignon\",\"avila-spain\":\"Ávila\",\"aviles-spain\":\"Avilés\",\"ayr-unitedkingdom\":\"Ayr\",\"bacolod-philippines\":\"Bacolod\",\"bad-hofgastein-austria\":\"Bad Hofgastein\",\"bad-homburg-vor-der-hohe-germany\":\"Bad Homburg vor der Höhe\",\"bad-ischl-austria\":\"Bad Ischl\",\"badajoz-spain\":\"Badajoz\",\"baden-baden-germany\":\"Baden-Baden\",\"baeza-spain\":\"Baeza\",\"baghdad-iraq\":\"Baghdad\",\"bakersfield-united-states\":\"Bakersfield\",\"baku-azerbaijan\":\"Baku\",\"bali-indonesia\":\"Bali\",\"balneario-camboriu-brazil\":\"Balneario Camboriu\",\"baltimore-united-states\":\"Baltimore\",\"bandar-seri-begawan-brunei\":\"Bandar Seri Begawan\",\"bandung-indonesia\":\"Bandung\",\"banff-canada\":\"Banff\",\"bangkok-thailand\":\"Bangkok\",\"banja-luka-bosnia-and-herzegovina\":\"Banja Luka\",\"banyuwangi-indonesia\":\"Banyuwangi\",\"barcelona\":\"Barcelona\",\"bari-italy\":\"Bari\",\"barnstaple-unitedkingdom\":\"Barnstaple\",\"barranquilla-colombia\":\"Barranquilla\",\"barueri-brazil\":\"Barueri\",\"basel-switzerland\":\"Basel\",\"basingstoke-united-kingdom\":\"Basingstoke\",\"bastia-france\":\"Bastia\",\"bath-unitedkingdom\":\"Bath\",\"baton-rouge-united-states\":\"Baton Rouge\",\"battambang-cambodia\":\"Battambang\",\"batumi-georgia\":\"Batumi\",\"bauru-brazil\":\"Bauru\",\"bayeux-france\":\"Bayeux\",\"bayonne-france\":\"Bayonne\",\"bayreuth-germany\":\"Bayreuth\",\"beaune-france\":\"Beaune\",\"beaverton-united-states\":\"Beaverton\",\"beijing-china\":\"Beijing\",\"beirut-lebanon\":\"Beirut\",\"bekasi-indonesia\":\"Bekasi\",\"belem-brazil\":\"Belem\",\"belfast-unitedkingdom\":\"Belfast\",\"belgrade-serbia\":\"Belgrade\",\"bellevue-united-states\":\"Bellevue\",\"bellingham-united-states\":\"Bellingham\",\"belo-horizonte-brazil\":\"Belo Horizonte\",\"benalmadena-spain\":\"Benalmádena\",\"bend-united-states\":\"Bend\",\"benevento-italy\":\"Benevento\",\"benicassim-spain\":\"Benicàssim\",\"benidorm-spain\":\"Benidorm\",\"bento-goncalves-brazil\":\"Bento Gonçalves\",\"bentonville-united-states\":\"Bentonville\",\"beppu-japan\":\"Beppu\",\"bergamo-italy\":\"Bergamo\",\"bergen-norway\":\"Bergen\",\"berkeley-united-states\":\"Berkeley\",\"berlin-germany\":\"Berlin\",\"bern-switzerland\":\"Bern\",\"besancon-france\":\"Besançon\",\"bethesda-united-states\":\"Bethesda\",\"bethlehem-united-states\":\"Bethlehem\",\"beziers-france\":\"Béziers\",\"bhopal-india\":\"Bhopal\",\"biarritz-france\":\"Biarritz\",\"biaystok-poland\":\"Białystok\",\"bielefeld-germany\":\"Bielefeld\",\"bielsko-biaa-poland\":\"Bielsko-Biała\",\"bikaner-india\":\"Bikaner\",\"bilbao-spain\":\"Bilbao\",\"billings-united-states\":\"Billings\",\"billund-denmark\":\"Billund\",\"biloxi-united-states\":\"Biloxi\",\"binghamton-united-states\":\"Binghamton\",\"binz-germany\":\"Binz\",\"birmingham-alabama-united-states\":\"Birmingham, Alabama\",\"birmingham-united-kingdom\":\"Birmingham\",\"bismarck-united-states\":\"Bismarck\",\"bitola-north-macedonia\":\"Bitola\",\"blackpool-united-kingdom\":\"Blackpool\",\"blacksburg-united-states\":\"Blacksburg\",\"blankenberge-belgium\":\"Blankenberge\",\"bled-slovenia\":\"Bled\",\"bloemfontein-south-africa\":\"Bloemfontein\",\"blois-france\":\"Blois\",\"bloomington-united-states\":\"Bloomington\",\"blumenau-brazil\":\"Blumenau\",\"boa-vista-brazil\":\"Boa Vista\",\"boca-raton-united-states\":\"Boca Raton\",\"bogor-indonesia\":\"Bogor\",\"bogota-colombia\":\"Bogotá\",\"boise-united-states\":\"Boise\",\"bologna-italy\":\"Bologna\",\"bolzano-italy\":\"Bolzano\",\"bonn-germany\":\"Bonn\",\"bordeaux-france\":\"Bordeaux\",\"bossier-city-united-states\":\"Bossier City\",\"boston-unitedstates\":\"Boston\",\"boucherville-canada\":\"Boucherville\",\"boulder-united-states\":\"Boulder\",\"bourges-france\":\"Bourges\",\"bournemouth-united-kingdom\":\"Bournemouth\",\"bowie-united-states\":\"Bowie\",\"bowling-green-united-states\":\"Bowling Green\",\"bozeman-united-states\":\"Bozeman\",\"bradenton-united-states\":\"Bradenton\",\"braga-portugal\":\"Braga\",\"braganca-portugal\":\"Bragança\",\"branson-united-states\":\"Branson\",\"brasilia-brazil\":\"Brasília\",\"brasov-romania\":\"Brașov\",\"bratislava-slovakia\":\"Bratislava\",\"breda-netherlands\":\"Breda\",\"bregenz-austria\":\"Bregenz\",\"bremen-germany\":\"Bremen\",\"bremerhaven-germany\":\"Bremerhaven\",\"brentwood-united-states\":\"Brentwood\",\"brescia-italy\":\"Brescia\",\"brest-france\":\"Brest\",\"bridgetown-barbados\":\"Bridgetown\",\"brindisi-italy\":\"Brindisi\",\"brisbane-australia\":\"Brisbane\",\"bristol-unitedkingdom\":\"Bristol\",\"brno-czechia\":\"Brno\",\"brookline-united-states\":\"Brookline\",\"brooklyn-united-states\":\"Brooklyn\",\"brossard-canada\":\"Brossard\",\"bruges-belgium\":\"Bruges\",\"brussels-belgium\":\"Brussels\",\"bryan-united-states\":\"Bryan\",\"bucharest-romania\":\"Bucharest\",\"budapest-hungary\":\"Budapest\",\"budva-montenegro\":\"Budva\",\"buena-park-united-states\":\"Buena Park\",\"buenos-aires-argentina\":\"Buenos Aires\",\"buffalo-united-states\":\"Buffalo\",\"burbank-united-states\":\"Burbank\",\"burgas-bulgaria\":\"Burgas\",\"burgos-spain\":\"Burgos\",\"burlington-united-states\":\"Burlington\",\"burnaby-canada\":\"Burnaby\",\"burnley-united-kingdom\":\"Burnley\",\"bursa-turkiye\":\"Bursa\",\"busan-southkorea\":\"Busan\",\"bydgoszcz-poland\":\"Bydgoszcz\",\"bytom-poland\":\"Bytom\",\"cabo-san-lucas-mexico\":\"Cabo San Lucas\",\"caceres-spain\":\"Cáceres\",\"cadiz-spain\":\"Cádiz\",\"caen-france\":\"Caen\",\"cairns-australia\":\"Cairns\",\"cairo-egypt\":\"Cairo\",\"cajamarca-peru\":\"Cajamarca\",\"caldas-da-rainha-portugal\":\"Caldas da Rainha\",\"caldas-novas-brazil\":\"Caldas Novas\",\"calgary-canada\":\"Calgary\",\"cali-colombia\":\"Cali\",\"calpe-spain\":\"Calpe\",\"cambridge-massachusetts-united-states\":\"Cambridge, Massachusetts\",\"cambridge-unitedkingdom\":\"Cambridge\",\"camden-united-states\":\"Camden\",\"campeche-mexico\":\"Campeche\",\"campinas-brazil\":\"Campinas\",\"campo-grande-brazil\":\"Campo Grande\",\"campos-do-jordao-brazil\":\"Campos do Jordao\",\"can-tho-vietnam\":\"Can Tho\",\"canakkale-turkiye\":\"Çanakkale\",\"canberra-australia\":\"Canberra\",\"cancun-mexico\":\"Cancún\",\"canela-brazil\":\"Canela\",\"canggu-indonesia\":\"Canggu\",\"cannes-france\":\"Cannes\",\"canterbury-united-kingdom\":\"Canterbury\",\"cape-coral-united-states\":\"Cape Coral\",\"cape-town-southafrica\":\"Cape Town\",\"caracas-venezuela\":\"Caracas\",\"caraguatatuba-brazil\":\"Caraguatatuba\",\"carcassonne-france\":\"Carcassonne\",\"cardiff-unitedkingdom\":\"Cardiff\",\"carlisle-united-kingdom\":\"Carlisle\",\"carmel-united-states\":\"Carmel\",\"carpi-italy\":\"Carpi\",\"cartagena-spain\":\"Cartagena\",\"cary-united-states\":\"Cary\",\"casablanca-morocco\":\"Casablanca\",\"cascais-portugal\":\"Cascais\",\"caserta-italy\":\"Caserta\",\"casper-united-states\":\"Casper\",\"cassis-france\":\"Cassis\",\"castelldefels-spain\":\"Castelldefels\",\"castellon-de-la-plana-spain\":\"Castellón de la Plana\",\"catania-italy\":\"Catania\",\"cattolica-italy\":\"Cattolica\",\"caxias-do-sul-brazil\":\"Caxias do Sul\",\"cayenne-french-guiana\":\"Cayenne\",\"cebu-city-philippines\":\"Cebu City\",\"cedar-rapids-united-states\":\"Cedar Rapids\",\"cefalu-italy\":\"Cefalù\",\"centennial-united-states\":\"Centennial\",\"cesena-italy\":\"Cesena\",\"cesenatico-italy\":\"Cesenatico\",\"ceske-budejovice-czechia\":\"Ceske Budejovice\",\"chalon-sur-saone-france\":\"Chalon-sur-Saône\",\"chandigarh-india\":\"Chandigarh\",\"chandler-united-states\":\"Chandler\",\"chania-greece\":\"Chania\",\"chantilly-france\":\"Chantilly\",\"chapel-hill-united-states\":\"Chapel Hill\",\"charleston-unitedstates\":\"Charleston\",\"charlotte-united-states\":\"Charlotte\",\"charlottesville-united-states\":\"Charlottesville\",\"charlottetown-canada\":\"Charlottetown\",\"chartres-france\":\"Chartres\",\"chatham-canada\":\"Chatham\",\"chattanooga-united-states\":\"Chattanooga\",\"chaves-portugal\":\"Chaves\",\"cheltenham-unitedkingdom\":\"Cheltenham\",\"chemnitz-germany\":\"Chemnitz\",\"chengdu-china\":\"Chengdu\",\"cherkasy-ukraine\":\"Cherkasy\",\"chernivtsi-ukraine\":\"Chernivtsi\",\"chester-united-kingdom\":\"Chester\",\"chesterfield-united-kingdom\":\"Chesterfield\",\"cheyenne-united-states\":\"Cheyenne\",\"chianciano-terme-italy\":\"Chianciano Terme\",\"chiang-mai-thailand\":\"Chiang Mai\",\"chiang-rai-thailand\":\"Chiang Rai\",\"chiba-japan\":\"Chiba\",\"chicago-unitedstates\":\"Chicago\",\"chiclana-de-la-frontera-spain\":\"Chiclana de la Frontera\",\"chiclayo-peru\":\"Chiclayo\",\"chico-united-states\":\"Chico\",\"chihuahua-mexico\":\"Chihuahua\",\"chilliwack-canada\":\"Chilliwack\",\"chisinau-moldova\":\"Chisinau\",\"chongqing-china\":\"Chongqing\",\"chorzow-poland\":\"Chorzow\",\"christchurch-newzealand\":\"Christchurch\",\"chula-vista-united-states\":\"Chula Vista\",\"cincinnati-united-states\":\"Cincinnati\",\"cirebon-indonesia\":\"Cirebon\",\"cirencester-united-kingdom\":\"Cirencester\",\"ciudad-real-spain\":\"Ciudad Real\",\"ciudad-victoria-mexico\":\"Ciudad Victoria\",\"clermont-ferrand-france\":\"Clermont-Ferrand\",\"cleveland-united-states\":\"Cleveland\",\"cluj-napoca-romania\":\"Cluj-Napoca\",\"coatzacoalcos-mexico\":\"Coatzacoalcos\",\"cochabamba-bolivia\":\"Cochabamba\",\"coeur-d-alene-united-states\":\"Coeur d'Alene\",\"cognac-france\":\"Cognac\",\"coimbatore-india\":\"Coimbatore\",\"coimbra-portugal\":\"Coimbra\",\"colchester-united-kingdom\":\"Colchester\",\"colima-mexico\":\"Colima\",\"colmar-france\":\"Colmar\",\"cologne-germany\":\"Cologne\",\"colombo-srilanka\":\"Colombo\",\"colorado-springs-united-states\":\"Colorado Springs\",\"columbia-united-states\":\"Columbia\",\"columbus-united-states\":\"Columbus\",\"comayagua-honduras\":\"Comayagua\",\"comitan-mexico\":\"Comitan\",\"como-italy\":\"Como\",\"compiegne-france\":\"Compiègne\",\"concepcion-chile\":\"Concepcion\",\"conil-de-la-frontera-spain\":\"Conil de la Frontera\",\"constanta-romania\":\"Constanta\",\"conwy-united-kingdom\":\"Conwy\",\"copenhagen-denmark\":\"Copenhagen\",\"cordoba-argentina\":\"Córdoba\",\"cordoba-mexico\":\"Cordoba\",\"cordoba-spain\":\"Córdoba\",\"corfu-greece\":\"Corfu\",\"cork-ireland\":\"Cork\",\"corlu-turkiye\":\"Corlu\",\"corpus-christi-united-states\":\"Corpus Christi\",\"corralejo-spain\":\"Corralejo\",\"costa-mesa-united-states\":\"Costa Mesa\",\"cotonou-benin\":\"Cotonou\",\"cottbus-germany\":\"Cottbus\",\"coventry-unitedkingdom\":\"Coventry\",\"cozumel-mexico\":\"Cozumel\",\"craiova-romania\":\"Craiova\",\"crawley-united-kingdom\":\"Crawley\",\"cremona-italy\":\"Cremona\",\"cromer-united-kingdom\":\"Cromer\",\"cuenca-ecuador\":\"Cuenca\",\"cuernavaca-mexico\":\"Cuernavaca\",\"cuiaba-brazil\":\"Cuiaba\",\"culiacan-mexico\":\"Culiacan\",\"cullera-spain\":\"Cullera\",\"cuneo-italy\":\"Cuneo\",\"cupertino-united-states\":\"Cupertino\",\"curitiba-brazil\":\"Curitiba\",\"cusco-peru\":\"Cusco\",\"da-nang-vietnam\":\"Da Nang\",\"daegu-south-korea\":\"Daegu\",\"daejeon-south-korea\":\"Daejeon\",\"dakar-senegal\":\"Dakar\",\"dalat-vietnam\":\"Dalat\",\"dalian-china\":\"Dalian\",\"dallas-united-states\":\"Dallas\",\"dambulla-sri-lanka\":\"Dambulla\",\"danville-united-states\":\"Danville\",\"dar-es-salaam-tanzania\":\"Dar es Salaam\",\"darlington-united-kingdom\":\"Darlington\",\"darmstadt-germany\":\"Darmstadt\",\"darwin-australia\":\"Darwin\",\"davenport-united-states\":\"Davenport\",\"davis-united-states\":\"Davis\",\"dax-france\":\"Dax\",\"dayton-united-states\":\"Dayton\",\"daytona-beach-united-states\":\"Daytona Beach\",\"deadwood-united-states\":\"Deadwood\",\"deauville-france\":\"Deauville\",\"debrecen-hungary\":\"Debrecen\",\"delft-netherlands\":\"Delft\",\"delray-beach-united-states\":\"Delray Beach\",\"denia-spain\":\"Dénia\",\"denizli-turkiye\":\"Denizli\",\"denpasar-indonesia\":\"Denpasar\",\"denver-unitedstates\":\"Denver\",\"derby-unitedkingdom\":\"Derby\",\"derry-londonderry-united-kingdom\":\"Derry Londonderry\",\"des-moines-united-states\":\"Des Moines\",\"desenzano-del-garda-italy\":\"Desenzano del Garda\",\"detroit-united-states\":\"Detroit\",\"deventer-netherlands\":\"Deventer\",\"dijon-france\":\"Dijon\",\"dinan-france\":\"Dinan\",\"dinard-france\":\"Dinard\",\"diyarbakr-turkiye\":\"Diyarbakır\",\"doha-qatar\":\"Doha\",\"doncaster-united-kingdom\":\"Doncaster\",\"dortmund-germany\":\"Dortmund\",\"dresden-germany\":\"Dresden\",\"dubai\":\"Dubai\",\"dublin-ireland\":\"Dublin\",\"dublin-united-states\":\"Dublin\",\"dubrovnik-croatia\":\"Dubrovnik\",\"duisburg-germany\":\"Duisburg\",\"dumaguete-philippines\":\"Dumaguete\",\"dundee-united-kingdom\":\"Dundee\",\"dunkerque-france\":\"Dunkerque\",\"durban-southafrica\":\"Durban\",\"durham-united-kingdom\":\"Durham\",\"durham-united-states\":\"Durham\",\"dusseldorf-germany\":\"Düsseldorf\",\"eastbourne-unitedkingdom\":\"Eastbourne\",\"edinburgh-unitedkingdom\":\"Edinburgh\",\"edirne-turkiye\":\"Edirne\",\"eindhoven-netherlands\":\"Eindhoven\",\"eisenach-germany\":\"Eisenach\",\"el-puerto-de-santa-maria-spain\":\"El Puerto de Santa María\",\"elche-spain\":\"Elche\",\"enniskillen-united-kingdom\":\"Enniskillen\",\"epinal-france\":\"Épinal\",\"erfurt-germany\":\"Erfurt\",\"erzurum-turkiye\":\"Erzurum\",\"eskisehir-turkiye\":\"Eskişehir\",\"essaouira-morocco\":\"Essaouira\",\"essen-germany\":\"Essen\",\"estepona-spain\":\"Estepona\",\"estoril-portugal\":\"Estoril\",\"evian-les-bains-france\":\"Évian-les-Bains\",\"evora-portugal\":\"Évora\",\"exeter-united-kingdom\":\"Exeter\",\"falmouth-unitedkingdom\":\"Falmouth\",\"fano-italy\":\"Fano\",\"farnborough-united-kingdom\":\"Farnborough\",\"faro-portugal\":\"Faro\",\"fatima-portugal\":\"Fátima\",\"ferrara-italy\":\"Ferrara\",\"figueres-spain\":\"Figueres\",\"flagstaff-united-states\":\"Flagstaff\",\"flensburg-germany\":\"Flensburg\",\"florence-italy\":\"Florence\",\"florianopolis-brazil\":\"Florianópolis\",\"foggia-italy\":\"Foggia\",\"foligno-italy\":\"Foligno\",\"folkestone-unitedkingdom\":\"Folkestone\",\"forli-italy\":\"Forlì\",\"fort-lauderdale-united-states\":\"Fort Lauderdale\",\"fortaleza-brazil\":\"Fortaleza\",\"forte-dei-marmi-italy\":\"Forte dei Marmi\",\"foz-do-iguacu-brazil\":\"Foz do Iguaçu\",\"frankfurt-germany\":\"Frankfurt\",\"franklin-united-states\":\"Franklin\",\"fredericton-canada\":\"Fredericton\",\"freetown-sierra-leone\":\"Freetown\",\"friedrichshafen-germany\":\"Friedrichshafen\",\"fuengirola-spain\":\"Fuengirola\",\"fukuoka-japan\":\"Fukuoka\",\"fulda-germany\":\"Fulda\",\"funchal-portugal\":\"Funchal\",\"gaborone-botswana\":\"Gaborone\",\"gaeta-italy\":\"Gaeta\",\"gallipoli-italy\":\"Gallipoli\",\"galway-ireland\":\"Galway\",\"gandia-spain\":\"Gandía\",\"garmisch-partenkirchen-germany\":\"Garmisch-Partenkirchen\",\"gaziantep-turkiye\":\"Gaziantep\",\"gdansk-poland\":\"Gdańsk\",\"gdynia-poland\":\"Gdynia\",\"geelong-australia\":\"Geelong\",\"geneva-switzerland\":\"Geneva\",\"genoa-italy\":\"Genoa\",\"georgetown-guyana\":\"Georgetown\",\"getafe-spain\":\"Getafe\",\"ghent-belgium\":\"Ghent\",\"gijon-spain\":\"Gijón\",\"girona-spain\":\"Girona\",\"glasgow-unitedkingdom\":\"Glasgow\",\"gliwice-poland\":\"Gliwice\",\"gloucester-unitedkingdom\":\"Gloucester\",\"gold-coast-australia\":\"Gold Coast\",\"gothenburg-sweden\":\"Gothenburg\",\"gottingen-germany\":\"Göttingen\",\"granada-nicaragua\":\"Granada\",\"granada-spain\":\"Granada\",\"graz-austria\":\"Graz\",\"great-yarmouth-united-kingdom\":\"Great Yarmouth\",\"grenoble-france\":\"Grenoble\",\"grindelwald-switzerland\":\"Grindelwald\",\"groningen-netherlands\":\"Groningen\",\"grosseto-italy\":\"Grosseto\",\"guadalajara-mexico\":\"Guadalajara\",\"guadalajara-spain\":\"Guadalajara\",\"guanajuato-mexico\":\"Guanajuato\",\"guangzhou-china\":\"Guangzhou\",\"gubbio-italy\":\"Gubbio\",\"guildford-unitedkingdom\":\"Guildford\",\"guilin-china\":\"Guilin\",\"guimaraes-portugal\":\"Guimarães\",\"gyeongju-south-korea\":\"Gyeongju\",\"ha-long-vietnam\":\"Ha Long\",\"hakodate-japan\":\"Hakodate\",\"hakone-japan\":\"Hakone\",\"halifax-canada\":\"Halifax\",\"hamamatsu-japan\":\"Hamamatsu\",\"hamburg-germany\":\"Hamburg\",\"hamilton-canada\":\"Hamilton\",\"hangzhou-china\":\"Hangzhou\",\"hanoi-vietnam\":\"Hanoi\",\"harbin-china\":\"Harbin\",\"harrogate-united-kingdom\":\"Harrogate\",\"hasselt-belgium\":\"Hasselt\",\"hat-yai-thailand\":\"Hat Yai\",\"heidelberg-germany\":\"Heidelberg\",\"heilbronn-germany\":\"Heilbronn\",\"helsinki-finland\":\"Helsinki\",\"heraklion-greece\":\"Heraklion\",\"heringsdorf-germany\":\"Heringsdorf\",\"hersonissos-greece\":\"Hersonissos\",\"hiroshima-japan\":\"Hiroshima\",\"ho-chi-minh-city-vietnam\":\"Ho Chi Minh City\",\"hobart-australia\":\"Hobart\",\"hoi-an-vietnam\":\"Hoi An\",\"hondarribia-spain\":\"Hondarribia\",\"honfleur-france\":\"Honfleur\",\"hong-kong-hongkong\":\"Hong Kong\",\"honolulu-unitedstates\":\"Honolulu\",\"horta-portugal\":\"Horta\",\"houston-united-states\":\"Houston\",\"hua-hin-thailand\":\"Hua Hin\",\"huddersfield-united-kingdom\":\"Huddersfield\",\"hue-vietnam\":\"Hue\",\"huelva-spain\":\"Huelva\",\"huesca-spain\":\"Huesca\",\"hull-united-kingdom\":\"Hull\",\"huntsville-united-states\":\"Huntsville\",\"hurghada-egypt\":\"Hurghada\",\"hyderabad-india\":\"Hyderabad\",\"hyeres-france\":\"Hyères\",\"iasi-romania\":\"Iași\",\"ibiza-spain\":\"Ibiza\",\"ierapetra-greece\":\"Ierapetra\",\"ikeja-nigeria\":\"Ikeja\",\"imola-italy\":\"Imola\",\"imperia-italy\":\"Imperia\",\"incheon-south-korea\":\"Incheon\",\"indianapolis-united-states\":\"Indianapolis\",\"ingolstadt-germany\":\"Ingolstadt\",\"innsbruck-austria\":\"Innsbruck\",\"interlaken-switzerland\":\"Interlaken\",\"inverness-unitedkingdom\":\"Inverness\",\"ioannina-greece\":\"Ioannina\",\"ipswich-united-kingdom\":\"Ipswich\",\"iquitos-peru\":\"Iquitos\",\"istanbul-trkiye\":\"Istanbul\",\"izmir-trkiye\":\"Izmir\",\"jaca-spain\":\"Jaca\",\"jackson-wyoming-united-states\":\"Jackson, Wyoming\",\"jaen-spain\":\"Jaén\",\"jaipur-india\":\"Jaipur\",\"jakarta-indonesia\":\"Jakarta\",\"jeddah-saudiarabia\":\"Jeddah\",\"jerez-de-la-frontera-spain\":\"Jerez de la Frontera\",\"jimbaran-indonesia\":\"Jimbaran\",\"jodhpur-india\":\"Jodhpur\",\"johannesburg-southafrica\":\"Johannesburg\",\"johor-bahru-malaysia\":\"Johor Bahru\",\"kagoshima-japan\":\"Kagoshima\",\"kaiserslautern-germany\":\"Kaiserslautern\",\"kanazawa-japan\":\"Kanazawa\",\"kandy-srilanka\":\"Kandy\",\"kaohsiung-taiwan\":\"Kaohsiung\",\"karachi-pakistan\":\"Karachi\",\"karlsruhe-germany\":\"Karlsruhe\",\"karpacz-poland\":\"Karpacz\",\"kathmandu-nepal\":\"Kathmandu\",\"katowice-poland\":\"Katowice\",\"kaunas-lithuania\":\"Kaunas\",\"kayseri-turkiye\":\"Kayseri\",\"kelowna-canada\":\"Kelowna\",\"kemer-turkiye\":\"Kemer\",\"kiel-germany\":\"Kiel\",\"kielce-poland\":\"Kielce\",\"kigali-rwanda\":\"Kigali\",\"kingston-canada\":\"Kingston\",\"kingston-jamaica\":\"Kingston\",\"kitzbuhel-austria\":\"Kitzbühel\",\"klagenfurt-austria\":\"Klagenfurt\",\"knokke-heist-belgium\":\"Knokke-Heist\",\"kobe-japan\":\"Kobe\",\"koblenz-germany\":\"Koblenz\",\"kolkata-india\":\"Kolkata\",\"konstanz-germany\":\"Konstanz\",\"konya-turkiye\":\"Konya\",\"koobrzeg-poland\":\"Kołobrzeg\",\"kortrijk-belgium\":\"Kortrijk\",\"kosice-slovakia\":\"Kosice\",\"kotor-montenegro\":\"Kotor\",\"krakow-poland\":\"Kraków\",\"krynica-zdroj-poland\":\"Krynica Zdrój\",\"kumamoto-japan\":\"Kumamoto\",\"kunming-china\":\"Kunming\",\"kurashiki-japan\":\"Kurashiki\",\"kusadas-turkiye\":\"Kuşadası\",\"kuta-indonesia\":\"Kuta\",\"kyoto-japan\":\"Kyoto\",\"la-baule-france\":\"La Baule\",\"la-paz-bolivia\":\"La Paz\",\"la-paz-mexico\":\"La Paz\",\"la-rochelle-france\":\"La Rochelle\",\"la-spezia-italy\":\"La Spezia\",\"lagos-nigeria\":\"Lagos\",\"lagos-portugal\":\"Lagos\",\"lamego-portugal\":\"Lamego\",\"lamezia-terme-italy\":\"Lamezia Terme\",\"larnaca-cyprus\":\"Larnaca\",\"las-palmas-de-gran-canaria-spain\":\"Las Palmas de Gran Canaria\",\"las-vegas-unitedstates\":\"Las Vegas\",\"latina-italy\":\"Latina\",\"lausanne-switzerland\":\"Lausanne\",\"le-havre-france\":\"Le Havre\",\"le-mans-france\":\"Le Mans\",\"le-puy-en-velay-france\":\"Le Puy-en-Velay\",\"le-touquet-paris-plage-france\":\"Le Touquet-Paris-Plage\",\"lecce-italy\":\"Lecce\",\"leeds-united-kingdom\":\"Leeds\",\"leeuwarden-netherlands\":\"Leeuwarden\",\"lefkada-greece\":\"Lefkada\",\"legian-indonesia\":\"Legian\",\"leicester-unitedkingdom\":\"Leicester\",\"leipzig-germany\":\"Leipzig\",\"leiria-portugal\":\"Leiria\",\"leon-nicaragua\":\"Leon\",\"les-sables-d-olonne-france\":\"Les Sables-d'Olonne\",\"leuven-belgium\":\"Leuven\",\"liege-belgium\":\"Liège\",\"liepaja-latvia\":\"Liepaja\",\"lijiang-china\":\"Lijiang\",\"lille-france\":\"Lille\",\"lima-peru\":\"Lima\",\"limassol-cyprus\":\"Limassol\",\"limoges-france\":\"Limoges\",\"linz-austria\":\"Linz\",\"lisbon-portugal\":\"Lisbon\",\"livermore-united-states\":\"Livermore\",\"liverpool-unitedkingdom\":\"Liverpool\",\"livorno-italy\":\"Livorno\",\"ljubljana-slovenia\":\"Ljubljana\",\"llanes-spain\":\"Llanes\",\"lleida-spain\":\"Lleida\",\"lloret-de-mar-spain\":\"Lloret de Mar\",\"locarno-switzerland\":\"Locarno\",\"logrono-spain\":\"Logroño\",\"london-canada\":\"London\",\"london\":\"London\",\"los-angeles-unitedstates\":\"Los Angeles\",\"louisville-united-states\":\"Louisville\",\"lourdes-france\":\"Lourdes\",\"loutraki-greece\":\"Loutraki\",\"lovina-indonesia\":\"Lovina\",\"luang-prabang-laos\":\"Luang Prabang\",\"lubeck-germany\":\"Lübeck\",\"lublin-poland\":\"Lublin\",\"lucca-italy\":\"Lucca\",\"lucerne-switzerland\":\"Lucerne\",\"ludwigsburg-germany\":\"Ludwigsburg\",\"ludwigshafen-am-rhein-germany\":\"Ludwigshafen am Rhein\",\"lugano-switzerland\":\"Lugano\",\"lugo-spain\":\"Lugo\",\"lund-sweden\":\"Lund\",\"luxembourg-city-luxembourg\":\"Luxembourg City\",\"luxor-egypt\":\"Luxor\",\"lynchburg-united-states\":\"Lynchburg\",\"lyon-france\":\"Lyon\",\"maastricht-netherlands\":\"Maastricht\",\"macao-macao\":\"Macao\",\"madison-united-states\":\"Madison\",\"madrid-spain\":\"Madrid\",\"mahon-spain\":\"Mahón\",\"maidstone-unitedkingdom\":\"Maidstone\",\"mainz-germany\":\"Mainz\",\"makarska-croatia\":\"Makarska\",\"malaga-spain\":\"Málaga\",\"malang-indonesia\":\"Malang\",\"male-maldives\":\"Malé\",\"malmo-sweden\":\"Malmö\",\"manama-bahrain\":\"Manama\",\"manchester-unitedkingdom\":\"Manchester\",\"manila-philippines\":\"Manila\",\"mannheim-germany\":\"Mannheim\",\"marbella-spain\":\"Marbella\",\"marmaris-turkiye\":\"Marmaris\",\"marsala-italy\":\"Marsala\",\"marseille-france\":\"Marseille\",\"maspalomas-spain\":\"Maspalomas\",\"mataro-spain\":\"Mataró\",\"matera-italy\":\"Matera\",\"matsumoto-japan\":\"Matsumoto\",\"matsuyama-japan\":\"Matsuyama\",\"mazatlan-mexico\":\"Mazatlan\",\"mechelen-belgium\":\"Mechelen\",\"medan-indonesia\":\"Medan\",\"medellin-colombia\":\"Medellín\",\"melbourne-australia\":\"Melbourne\",\"melbourne-united-states\":\"Melbourne\",\"memphis-united-states\":\"Memphis\",\"mendoza-argentina\":\"Mendoza\",\"menton-france\":\"Menton\",\"merano-italy\":\"Merano\",\"merida-mexico\":\"Mérida\",\"merida-spain\":\"Mérida\",\"messina-italy\":\"Messina\",\"metz-france\":\"Metz\",\"mexico-city-mexico\":\"Mexico City\",\"miami-unitedstates\":\"Miami\",\"middlesbrough-united-kingdom\":\"Middlesbrough\",\"miedzyzdroje-poland\":\"Międzyzdroje\",\"milan-italy\":\"Milan\",\"milton-keynes-unitedkingdom\":\"Milton Keynes\",\"milwaukee-united-states\":\"Milwaukee\",\"minneapolis-united-states\":\"Minneapolis\",\"miskolc-hungary\":\"Miskolc\",\"miyazaki-japan\":\"Miyazaki\",\"modena-italy\":\"Modena\",\"modica-italy\":\"Modica\",\"mombasa-kenya\":\"Mombasa\",\"monopoli-italy\":\"Monopoli\",\"montecatini-terme-italy\":\"Montecatini Terme\",\"monterey-united-states\":\"Monterey\",\"monterrey-mexico\":\"Monterrey\",\"montevideo-uruguay\":\"Montevideo\",\"montpellier-france\":\"Montpellier\",\"montreal-canada\":\"Montreal\",\"montreux-switzerland\":\"Montreux\",\"morelia-mexico\":\"Morelia\",\"mostar-bosniaandherzegovina\":\"Mostar\",\"motril-spain\":\"Motril\",\"mui-ne-vietnam\":\"Mui Ne\",\"mulhouse-france\":\"Mulhouse\",\"munduk-indonesia\":\"Munduk\",\"munich-germany\":\"Munich\",\"munster-germany\":\"Münster\",\"murcia-spain\":\"Murcia\",\"muscat-oman\":\"Muscat\",\"mytilene-greece\":\"Mytilene\",\"nadi-fiji\":\"Nadi\",\"nafplio-greece\":\"Nafplio\",\"nagasaki-japan\":\"Nagasaki\",\"nagoya-japan\":\"Nagoya\",\"naha-japan\":\"Naha\",\"nairobi-kenya\":\"Nairobi\",\"namur-belgium\":\"Namur\",\"nancy-france\":\"Nancy\",\"nanjing-china\":\"Nanjing\",\"nantes-france\":\"Nantes\",\"naples-florida-united-states\":\"Naples, Florida\",\"naples-italy\":\"Naples\",\"nara-japan\":\"Nara\",\"narbonne-france\":\"Narbonne\",\"nashville-unitedstates\":\"Nashville\",\"naxos-chora-greece\":\"Naxos Chora\",\"nazare-portugal\":\"Nazaré\",\"nerja-spain\":\"Nerja\",\"new-delhi-india\":\"New Delhi\",\"new-orleans-unitedstates\":\"New Orleans\",\"new-york-unitedstates\":\"New York\",\"newcastle-australia\":\"Newcastle\",\"newcastle-south-africa\":\"Newcastle\",\"newcastle-upon-tyne-united-kingdom\":\"Newcastle upon Tyne\",\"newport-rhode-island-united-states\":\"Newport, Rhode Island\",\"newquay-unitedkingdom\":\"Newquay\",\"nha-trang-vietnam\":\"Nha Trang\",\"niagara-falls-canada\":\"Niagara Falls\",\"nice-france\":\"Nice\",\"nicosia-cyprus\":\"Nicosia\",\"nijmegen-netherlands\":\"Nijmegen\",\"nimes-france\":\"Nîmes\",\"north-vancouver-canada\":\"North Vancouver\",\"norwich-united-kingdom\":\"Norwich\",\"nottingham-united-kingdom\":\"Nottingham\",\"novi-sad-serbia\":\"Novi Sad\",\"nuremberg-germany\":\"Nuremberg\",\"nusa-dua-indonesia\":\"Nusa Dua\",\"nusa-lembongan-indonesia\":\"Nusa Lembongan\",\"nusa-penida-indonesia\":\"Nusa Penida\",\"oban-unitedkingdom\":\"Oban\",\"oberstdorf-germany\":\"Oberstdorf\",\"obidos-portugal\":\"Óbidos\",\"odense-denmark\":\"Odense\",\"odz-poland\":\"Łódź\",\"ohrid-northmacedonia\":\"Ohrid\",\"oia-greece\":\"Oia\",\"okayama-japan\":\"Okayama\",\"oklahoma-city-united-states\":\"Oklahoma City\",\"olbia-italy\":\"Olbia\",\"olhao-portugal\":\"Olhão\",\"olomouc-czechia\":\"Olomouc\",\"olsztyn-poland\":\"Olsztyn\",\"omaha-united-states\":\"Omaha\",\"opatija-croatia\":\"Opatija\",\"opole-poland\":\"Opole\",\"oristano-italy\":\"Oristano\",\"orlando-unitedstates\":\"Orlando\",\"orleans-france\":\"Orléans\",\"orvieto-italy\":\"Orvieto\",\"osaka-japan\":\"Osaka\",\"osijek-croatia\":\"Osijek\",\"oslo-norway\":\"Oslo\",\"osnabruck-germany\":\"Osnabrück\",\"ostend-belgium\":\"Ostend\",\"ostuni-italy\":\"Ostuni\",\"ottawa-canada\":\"Ottawa\",\"oulu-finland\":\"Oulu\",\"ourense-spain\":\"Ourense\",\"ouro-preto-brazil\":\"Ouro Preto\",\"oviedo-spain\":\"Oviedo\",\"oxford-unitedkingdom\":\"Oxford\",\"paignton-unitedkingdom\":\"Paignton\",\"pakse-laos\":\"Pakse\",\"palenque-mexico\":\"Palenque\",\"palermo-italy\":\"Palermo\",\"palm-springs-united-states\":\"Palm Springs\",\"palma-spain\":\"Palma\",\"pamplona-spain\":\"Pamplona\",\"panama-city-panama\":\"Panama City\",\"paphos-cyprus\":\"Paphos\",\"paris\":\"Paris\",\"parma-italy\":\"Parma\",\"pattaya-thailand\":\"Pattaya\",\"pau-france\":\"Pau\",\"peniche-portugal\":\"Peniche\",\"perpignan-france\":\"Perpignan\",\"perth-australia\":\"Perth\",\"perugia-italy\":\"Perugia\",\"pesaro-italy\":\"Pesaro\",\"pescara-italy\":\"Pescara\",\"peterborough-unitedkingdom\":\"Peterborough\",\"philadelphia-unitedstates\":\"Philadelphia\",\"phnom-penh-cambodia\":\"Phnom Penh\",\"phoenix-united-states\":\"Phoenix\",\"phuket-thailand\":\"Phuket\",\"piacenza-italy\":\"Piacenza\",\"pisa-italy\":\"Pisa\",\"pitlochry-unitedkingdom\":\"Pitlochry\",\"pittsburgh-united-states\":\"Pittsburgh\",\"plasencia-spain\":\"Plasencia\",\"playa-blanca-spain\":\"Playa Blanca\",\"playa-del-carmen-mexico\":\"Playa del Carmen\",\"pleasanton-united-states\":\"Pleasanton\",\"plovdiv-bulgaria\":\"Plovdiv\",\"plymouth-united-states\":\"Plymouth\",\"plymouth-unitedkingdom\":\"Plymouth\",\"poitiers-france\":\"Poitiers\",\"pokhara-nepal\":\"Pokhara\",\"polignano-a-mare-italy\":\"Polignano a Mare\",\"pompei-italy\":\"Pompei\",\"ponferrada-spain\":\"Ponferrada\",\"ponta-delgada-portugal\":\"Ponta Delgada\",\"ponte-de-lima-portugal\":\"Ponte de Lima\",\"pontresina-switzerland\":\"Pontresina\",\"porec-croatia\":\"Poreč\",\"portimao-portugal\":\"Portimão\",\"portland-unitedstates\":\"Portland\",\"porto-moniz-portugal\":\"Porto Moniz\",\"porto-portugal\":\"Porto\",\"porto-vecchio-france\":\"Porto-Vecchio\",\"portree-unitedkingdom\":\"Portree\",\"portrush-united-kingdom\":\"Portrush\",\"portsmouth-united-kingdom\":\"Portsmouth\",\"portsmouth-united-states\":\"Portsmouth\",\"potenza-italy\":\"Potenza\",\"potsdam-germany\":\"Potsdam\",\"poznan-poland\":\"Poznań\",\"prague-czechia\":\"Prague\",\"presidente-prudente-brazil\":\"Presidente Prudente\",\"preston-united-kingdom\":\"Preston\",\"puebla-mexico\":\"Puebla\",\"puerto-de-la-cruz-spain\":\"Puerto de la Cruz\",\"puerto-del-carmen-spain\":\"Puerto del Carmen\",\"puerto-princesa-philippines\":\"Puerto Princesa\",\"puerto-vallarta-mexico\":\"Puerto Vallarta\",\"puerto-varas-chile\":\"Puerto Varas\",\"pula-croatia\":\"Pula\",\"pune-india\":\"Pune\",\"punta-arenas-chile\":\"Punta Arenas\",\"punta-del-este-uruguay\":\"Punta del Este\",\"qingdao-china\":\"Qingdao\",\"quarteira-portugal\":\"Quarteira\",\"quebec-city-canada\":\"Quebec City\",\"quedlinburg-germany\":\"Quedlinburg\",\"queenstown-newzealand\":\"Queenstown\",\"queretaro-mexico\":\"Querétaro\",\"quimper-france\":\"Quimper\",\"quito-ecuador\":\"Quito\",\"quy-nhon-vietnam\":\"Quy Nhon\",\"rabat-morocco\":\"Rabat\",\"ragusa-italy\":\"Ragusa\",\"raleigh-united-states\":\"Raleigh\",\"rapallo-italy\":\"Rapallo\",\"ravenna-italy\":\"Ravenna\",\"reading-unitedkingdom\":\"Reading\",\"recife-brazil\":\"Recife\",\"regensburg-germany\":\"Regensburg\",\"reggio-emilia-italy\":\"Reggio Emilia\",\"regina-canada\":\"Regina\",\"reims-france\":\"Reims\",\"rennes-france\":\"Rennes\",\"reno-united-states\":\"Reno\",\"rethymno-greece\":\"Rethymno\",\"reykjavik-iceland\":\"Reykjavík\",\"rhodes-greece\":\"Rhodes\",\"ribadesella-spain\":\"Ribadesella\",\"riccione-italy\":\"Riccione\",\"richmond-united-states\":\"Richmond\",\"riga-latvia\":\"Riga\",\"rimini-italy\":\"Rimini\",\"rio-branco-brazil\":\"Rio Branco\",\"rio-de-janeiro-brazil\":\"Rio de Janeiro\",\"riva-del-garda-italy\":\"Riva del Garda\",\"riyadh-saudiarabia\":\"Riyadh\",\"rochefort-france\":\"Rochefort\",\"rochester-united-states\":\"Rochester\",\"rock-hill-united-states\":\"Rock Hill\",\"rome\":\"Rome\",\"ronda-spain\":\"Ronda\",\"ronne-denmark\":\"Rønne\",\"roscoff-france\":\"Roscoff\",\"roses-spain\":\"Roses\",\"rostock-germany\":\"Rostock\",\"rotterdam-netherlands\":\"Rotterdam\",\"rouen-france\":\"Rouen\",\"rovaniemi-finland\":\"Rovaniemi\",\"rovinj-croatia\":\"Rovinj\",\"royal-tunbridge-wells-unitedkingdom\":\"Royal Tunbridge Wells\",\"royan-france\":\"Royan\",\"rye-unitedkingdom\":\"Rye\",\"rzeszow-poland\":\"Rzeszów\",\"saarbrucken-germany\":\"Saarbrücken\",\"sabadell-spain\":\"Sabadell\",\"sacramento-united-states\":\"Sacramento\",\"saint-brieuc-france\":\"Saint-Brieuc\",\"saint-jean-de-luz-france\":\"Saint-Jean-de-Luz\",\"saint-malo-france\":\"Saint-Malo\",\"saint-raphael-france\":\"Saint-Raphaël\",\"saint-tropez-france\":\"Saint-Tropez\",\"salalah-oman\":\"Salalah\",\"salamanca-spain\":\"Salamanca\",\"salen-sweden\":\"Sälen\",\"salerno-italy\":\"Salerno\",\"salou-spain\":\"Salou\",\"salt-lake-city-united-states\":\"Salt Lake City\",\"salta-argentina\":\"Salta\",\"salvador-brazil\":\"Salvador\",\"salzburg-austria\":\"Salzburg\",\"samsun-turkiye\":\"Samsun\",\"san-antonio-united-states\":\"San Antonio\",\"san-benedetto-del-tronto-italy\":\"San Benedetto del Tronto\",\"san-carlos-de-bariloche-argentina\":\"San Carlos de Bariloche\",\"san-cristobal-de-las-casas-mexico\":\"San Cristóbal de las Casas\",\"san-diego-unitedstates\":\"San Diego\",\"san-francisco-unitedstates\":\"San Francisco\",\"san-jose-costarica\":\"San José\",\"san-jose-united-states\":\"San Jose\",\"san-miguel-de-allende-mexico\":\"San Miguel de Allende\",\"san-sebastian-spain\":\"San Sebastián\",\"sanford-united-states\":\"Sanford\",\"sanlucar-de-barrameda-spain\":\"Sanlúcar de Barrameda\",\"sanremo-italy\":\"Sanremo\",\"santa-barbara-united-states\":\"Santa Barbara\",\"santa-cruz-de-tenerife-spain\":\"Santa Cruz de Tenerife\",\"santa-fe-argentina\":\"Santa Fe\",\"santa-fe-united-states\":\"Santa Fe\",\"santa-margherita-ligure-italy\":\"Santa Margherita Ligure\",\"santa-marta-colombia\":\"Santa Marta\",\"santander-spain\":\"Santander\",\"santiago-chile\":\"Santiago\",\"santiago-de-compostela-spain\":\"Santiago de Compostela\",\"santo-domingo-dominicanrepublic\":\"Santo Domingo\",\"sanur-indonesia\":\"Sanur\",\"sao-paulo-brazil\":\"São Paulo\",\"sapporo-japan\":\"Sapporo\",\"sarajevo-bosniaandherzegovina\":\"Sarajevo\",\"sarande-albania\":\"Sarandë\",\"sarlat-la-caneda-france\":\"Sarlat-la-Canéda\",\"saskatoon-canada\":\"Saskatoon\",\"savannah-unitedstates\":\"Savannah\",\"scarborough-united-kingdom\":\"Scarborough\",\"schwerin-germany\":\"Schwerin\",\"seattle-unitedstates\":\"Seattle\",\"seefeld-in-tirol-austria\":\"Seefeld in Tirol\",\"segovia-spain\":\"Segovia\",\"semarang-indonesia\":\"Semarang\",\"seminyak-indonesia\":\"Seminyak\",\"sendai-japan\":\"Sendai\",\"senigallia-italy\":\"Senigallia\",\"seoul-southkorea\":\"Seoul\",\"sesimbra-portugal\":\"Sesimbra\",\"sestri-levante-italy\":\"Sestri Levante\",\"setubal-portugal\":\"Setúbal\",\"seville-spain\":\"Seville\",\"shanghai-china\":\"Shanghai\",\"sharjah-unitedarabemirates\":\"Sharjah\",\"sharm-el-sheikh-egypt\":\"Sharm El Sheikh\",\"sheffield-united-kingdom\":\"Sheffield\",\"sheki-azerbaijan\":\"Sheki\",\"shenzhen-china\":\"Shenzhen\",\"shimla-india\":\"Shimla\",\"shizuoka-japan\":\"Shizuoka\",\"shrewsbury-unitedkingdom\":\"Shrewsbury\",\"sibenik-croatia\":\"Šibenik\",\"side-turkiye\":\"Side\",\"siem-reap-cambodia\":\"Siem Reap\",\"siena-italy\":\"Siena\",\"sierra-vista-united-states\":\"Sierra Vista\",\"sihanoukville-cambodia\":\"Sihanoukville\",\"siliguri-india\":\"Siliguri\",\"singapore-singapore\":\"Singapore\",\"sintra-portugal\":\"Sintra\",\"sirmione-italy\":\"Sirmione\",\"sitges-spain\":\"Sitges\",\"skopje-northmacedonia\":\"Skopje\",\"sliema-malta\":\"Sliema\",\"sofia-bulgaria\":\"Sofia\",\"solo-indonesia\":\"Solo\",\"sopot-poland\":\"Sopot\",\"sopron-hungary\":\"Sopron\",\"soria-spain\":\"Soria\",\"sorrento-italy\":\"Sorrento\",\"southampton-united-kingdom\":\"Southampton\",\"southport-united-kingdom\":\"Southport\",\"spa-belgium\":\"Spa\",\"split-croatia\":\"Split\",\"spokane-united-states\":\"Spokane\",\"spoleto-italy\":\"Spoleto\",\"st-albans-unitedkingdom\":\"St Albans\",\"st-andrews-united-kingdom\":\"St Andrews\",\"st-augustine-united-states\":\"St. Augustine\",\"st-gallen-switzerland\":\"St. Gallen\",\"st-john-s-canada\":\"St. John's\",\"stamford-united-states\":\"Stamford\",\"stavanger-norway\":\"Stavanger\",\"stellenbosch-southafrica\":\"Stellenbosch\",\"stockholm-sweden\":\"Stockholm\",\"strasbourg-france\":\"Strasbourg\",\"stresa-italy\":\"Stresa\",\"stuttgart-germany\":\"Stuttgart\",\"sucre-bolivia\":\"Sucre\",\"sunderland-united-kingdom\":\"Sunderland\",\"surabaya-indonesia\":\"Surabaya\",\"suva-fiji\":\"Suva\",\"suwon-south-korea\":\"Suwon\",\"suzhou-china\":\"Suzhou\",\"swakopmund-namibia\":\"Swakopmund\",\"swansea-united-kingdom\":\"Swansea\",\"swinoujscie-poland\":\"Świnoujście\",\"sydney-australia\":\"Sydney\",\"syracuse-italy\":\"Syracuse\",\"szczecin-poland\":\"Szczecin\",\"szczyrk-poland\":\"Szczyrk\",\"szklarska-poreba-poland\":\"Szklarska Poręba\",\"ta-if-saudi-arabia\":\"Ta'if\",\"taichung-taiwan\":\"Taichung\",\"tainan-taiwan\":\"Tainan\",\"taipei-taiwan\":\"Taipei\",\"tallinn-estonia\":\"Tallinn\",\"tampa-united-states\":\"Tampa\",\"tampere-finland\":\"Tampere\",\"tampico-mexico\":\"Tampico\",\"tangier-morocco\":\"Tangier\",\"taormina-italy\":\"Taormina\",\"taos-united-states\":\"Taos\",\"taranto-italy\":\"Taranto\",\"tarifa-spain\":\"Tarifa\",\"tarragona-spain\":\"Tarragona\",\"tartu-estonia\":\"Tartu\",\"tavira-portugal\":\"Tavira\",\"tbilisi-georgia\":\"Tbilisi\",\"tel-aviv-israel\":\"Tel Aviv\",\"tenby-united-kingdom\":\"Tenby\",\"terrassa-spain\":\"Terrassa\",\"teruel-spain\":\"Teruel\",\"the-hague-netherlands\":\"The Hague\",\"thessaloniki-greece\":\"Thessaloniki\",\"thun-switzerland\":\"Thun\",\"tilburg-netherlands\":\"Tilburg\",\"timmendorfer-strand-germany\":\"Timmendorfer Strand\",\"tirana-albania\":\"Tirana\",\"titisee-neustadt-germany\":\"Titisee-Neustadt\",\"tokyo\":\"Tokyo\",\"toledo-spain\":\"Toledo\",\"tomar-portugal\":\"Tomar\",\"toronto-canada\":\"Toronto\",\"torquay-unitedkingdom\":\"Torquay\",\"torremolinos-spain\":\"Torremolinos\",\"torrevieja-spain\":\"Torrevieja\",\"torshavn-faroe-islands\":\"Tórshavn\",\"torun-poland\":\"Toruń\",\"toulon-france\":\"Toulon\",\"toulouse-france\":\"Toulouse\",\"tours-france\":\"Tours\",\"townsville-australia\":\"Townsville\",\"trabzon-turkiye\":\"Trabzon\",\"trani-italy\":\"Trani\",\"trapani-italy\":\"Trapani\",\"travemunde-germany\":\"Travemünde\",\"traverse-city-united-states\":\"Traverse City\",\"trento-italy\":\"Trento\",\"treviso-italy\":\"Treviso\",\"trieste-italy\":\"Trieste\",\"trogir-croatia\":\"Trogir\",\"troms-norway\":\"Tromsø\",\"trondheim-norway\":\"Trondheim\",\"trouville-sur-mer-france\":\"Trouville-sur-Mer\",\"troyes-france\":\"Troyes\",\"truro-unitedkingdom\":\"Truro\",\"tubingen-germany\":\"Tübingen\",\"tucson-united-states\":\"Tucson\",\"tudela-spain\":\"Tudela\",\"tulum-mexico\":\"Tulum\",\"tunis-tunisia\":\"Tunis\",\"turin-italy\":\"Turin\",\"turku-finland\":\"Turku\",\"ubeda-spain\":\"Úbeda\",\"ubud-indonesia\":\"Ubud\",\"udaipur-india\":\"Udaipur\",\"udine-italy\":\"Udine\",\"ulaanbaatar-mongolia\":\"Ulaanbaatar\",\"ulm-germany\":\"Ulm\",\"umea-sweden\":\"Umeå\",\"uppsala-sweden\":\"Uppsala\",\"ushuaia-argentina\":\"Ushuaia\",\"ustka-poland\":\"Ustka\",\"utrecht-netherlands\":\"Utrecht\",\"vaasa-finland\":\"Vaasa\",\"valdosta-united-states\":\"Valdosta\",\"valence-france\":\"Valence\",\"valencia-spain\":\"Valencia\",\"valencia-united-states\":\"Valencia\",\"valencia-venezuela\":\"Valencia\",\"valkenburg-netherlands\":\"Valkenburg\",\"valladolid-spain\":\"Valladolid\",\"valletta-malta\":\"Valletta\",\"vancouver-canada\":\"Vancouver\",\"vancouver-united-states\":\"Vancouver\",\"vannes-france\":\"Vannes\",\"varanasi-india\":\"Varanasi\",\"varese-italy\":\"Varese\",\"varna-bulgaria\":\"Varna\",\"venice-italy\":\"Venice\",\"ventura-united-states\":\"Ventura\",\"verona-italy\":\"Verona\",\"versailles-france\":\"Versailles\",\"vevey-switzerland\":\"Vevey\",\"viana-do-castelo-portugal\":\"Viana do Castelo\",\"viareggio-italy\":\"Viareggio\",\"vicenza-italy\":\"Vicenza\",\"vichy-france\":\"Vichy\",\"victoria-canada\":\"Victoria\",\"vienna-austria\":\"Vienna\",\"vientiane-laos\":\"Vientiane\",\"vigo-spain\":\"Vigo\",\"vila-real-portugal\":\"Vila Real\",\"vilamoura-portugal\":\"Vilamoura\",\"villach-austria\":\"Villach\",\"vilnius-lithuania\":\"Vilnius\",\"viseu-portugal\":\"Viseu\",\"viterbo-italy\":\"Viterbo\",\"vitoria-gasteiz-spain\":\"Vitoria-Gasteiz\",\"vodice-croatia\":\"Vodice\",\"volos-greece\":\"Volos\",\"warsaw-poland\":\"Warsaw\",\"washington-dc-unitedstates\":\"Washington DC\",\"watford-unitedkingdom\":\"Watford\",\"weimar-germany\":\"Weimar\",\"wellington-newzealand\":\"Wellington\",\"whistler-canada\":\"Whistler\",\"wiesbaden-germany\":\"Wiesbaden\",\"wilmington-north-carolina-united-states\":\"Wilmington, North Carolina\",\"winchester-unitedkingdom\":\"Winchester\",\"windermere-united-kingdom\":\"Windermere\",\"windhoek-namibia\":\"Windhoek\",\"windsor-canada\":\"Windsor\",\"windsor-unitedkingdom\":\"Windsor\",\"winnipeg-canada\":\"Winnipeg\",\"wisa-poland\":\"Wisła\",\"wismar-germany\":\"Wismar\",\"wolfsburg-germany\":\"Wolfsburg\",\"worcester-united-states\":\"Worcester\",\"worcester-unitedkingdom\":\"Worcester\",\"wrocaw-poland\":\"Wrocław\",\"wurzburg-germany\":\"Würzburg\",\"xian-china\":\"Xi’an\",\"yamagata-japan\":\"Yamagata\",\"yangon-myanmar\":\"Yangon\",\"yangshuo-china\":\"Yangshuo\",\"yantai-china\":\"Yantai\",\"yaounde-cameroon\":\"Yaounde\",\"yerevan-armenia\":\"Yerevan\",\"yogyakarta-indonesia\":\"Yogyakarta\",\"yokohama-japan\":\"Yokohama\",\"york-unitedkingdom\":\"York\",\"zaandam-netherlands\":\"Zaandam\",\"zacatecas-mexico\":\"Zacatecas\",\"zadar-croatia\":\"Zadar\",\"zagreb-croatia\":\"Zagreb\",\"zakopane-poland\":\"Zakopane\",\"zakynthos-greece\":\"Zakynthos\",\"zalaegerszeg-hungary\":\"Zalaegerszeg\",\"zamora-spain\":\"Zamora\",\"zandvoort-netherlands\":\"Zandvoort\",\"zanzibar-city-tanzania\":\"Zanzibar City\",\"zaragoza-spain\":\"Zaragoza\",\"zell-am-see-austria\":\"Zell am See\",\"zielona-gora-poland\":\"Zielona Góra\",\"zurich-switzerland\":\"Zurich\",\"zwolle-netherlands\":\"Zwolle\"}")
-};
-var I = IX.ids;
-var G = {};
-var loaded$1 = null;
-var load$1 = () => loaded$1 ??= fetch(`${SITE}${IX.file}`).then((r) => {
-	if (!r.ok) throw new Error(`data ${r.status}`);
-	return r.json();
-}).then((j) => {
-	G = j;
-}).catch((e) => {
-	loaded$1 = null;
-	throw e;
-});
-var TIERS = [
-	"luxury",
-	"standard",
-	"budget"
-];
-var POOL_LANGS = ["en", "es"];
-/** Gym data is keyed by catalogue id ("madrid-spain"); public URLs use the city slug ("madrid"). */
-async function slugs() {
-	const { byId, bySlug } = await data();
-	const pub = (id) => byId.get(id)?.slug ?? id;
-	const toId = (s) => I[s] ? s : bySlug.get(s)?.id;
-	return {
-		pub,
-		toId,
-		byId
-	};
-}
 var poolPaths = async () => {
-	const { pub } = await slugs();
-	return ["/pools", ...Object.keys(I).map((id) => `/pools/${pub(id)}`)];
+	const { pub } = await slugs$1();
+	await load$2().catch(() => void 0);
+	return ["/pools", ...Object.keys(I$1).filter((id) => !G$1[id] || Object.values(G$1[id].tiers ?? {}).filter(Boolean).length >= 2).map((id) => `/pools/${pub(id)}`)];
 };
-var TX = {
+var TX$2 = {
 	en: {
 		tier: {
 			luxury: "Luxury",
@@ -23054,7 +22688,7 @@ var TX = {
 		cities: "ciudades"
 	}
 };
-var CSS_GYM = `.gym{max-width:1100px;margin:0 auto}.gym .crumbs{font-size:13px;color:var(--muted);margin:8px 0 14px}.gym .crumbs a{color:inherit}
+var CSS_GYM$1 = `.t3box{display:block;margin:10px 0 14px;padding:12px 14px;border:1px solid var(--line,#ddd);border-radius:12px;background:var(--pale,#f4f6fa);font-size:15px;line-height:1.5}.gym{max-width:1100px;margin:0 auto}.gym .crumbs{font-size:13px;color:var(--muted);margin:8px 0 14px}.gym .crumbs a{color:inherit}
 .gym h1{font-size:clamp(30px,5vw,46px);line-height:1.08;margin:0 0 10px}.gym .lead{font-size:18px;line-height:1.5;color:var(--muted);margin:0 0 6px;max-width:760px}.gym .upd{font-size:13px;color:var(--muted);margin:0 0 22px}
 .gcards{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));margin:10px 0 26px}
 .gcard{position:relative;display:flex;flex-direction:column;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--card);box-shadow:var(--shadow)}
@@ -23074,8 +22708,8 @@ var CSS_GYM = `.gym{max-width:1100px;margin:0 auto}.gym .crumbs{font-size:13px;c
 .gym .method{border-left:3px solid #d83b51;background:rgba(216,59,81,.06);padding:12px 16px;border-radius:8px;font-size:14px;line-height:1.55;margin:20px 0}
 .gym .clist{columns:3 220px;padding:0;list-style:none}.gym .clist li{margin:3px 0;break-inside:avoid}.gym .clist h2{font-size:18px;margin:16px 0 4px}
 @media(prefers-color-scheme:dark){.gcard .gchips span{background:#e8eef6}.gcard .warn{color:#f0c36b}}`;
-var ESC_URL = (u) => esc(u);
-var host = (u) => {
+var ESC_URL$1 = (u) => esc(u);
+var host$1 = (u) => {
 	try {
 		return new URL(u).hostname.replace(/^www\./, "");
 	} catch {
@@ -23085,17 +22719,17 @@ var host = (u) => {
 /** Booking.com no longer resolves free-text searches (searchresults.html?ss=... bounces to the home page),
 *  so only a real hotel page gets a Booking button. Without one we fall back to the hotel's own website,
 *  or show no button at all; never a search link. */
-var BK_HOTEL = /^https:\/\/www\.booking\.com\/hotel\/[a-z]{2}\/[^/?#]+\.html/;
-var bookingFor = (p) => p.bookingUrl && BK_HOTEL.test(p.bookingUrl) ? CJ_BOOKING(p.bookingUrl.split("?")[0], "t3pool") : null;
-function ctasFor(p, x, slug, t) {
-	const bk = bookingFor(p);
+var BK_HOTEL$1 = /^https:\/\/www\.booking\.com\/hotel\/[a-z]{2}\/[^/?#]+\.html/;
+var bookingFor$1 = (p) => p.bookingUrl && BK_HOTEL$1.test(p.bookingUrl) ? CJ_BOOKING(p.bookingUrl.split("?")[0], "t3pool") : null;
+function ctasFor$1(p, x, slug, t) {
+	const bk = bookingFor$1(p);
 	if (bk) return `<div class="ctas"><a class="btn" href="${esc(bk)}" rel="sponsored nofollow noopener" target="_blank" data-t="pool_booking" data-city="${esc(slug)}" data-cat="${t}" data-p="booking">${esc(x.book)}</a>${p.website ? `<a class="lnk" href="${esc(p.website)}" rel="nofollow noopener" target="_blank">${esc(x.site)} →</a>` : ""}</div>`;
 	if (p.website) return `<div class="ctas"><a class="btn" href="${esc(p.website)}" rel="nofollow noopener" target="_blank" data-t="pool_site" data-city="${esc(slug)}" data-cat="${t}" data-p="website">${esc(x.site)} →</a></div>`;
 	return "";
 }
-var bkKey = (u) => (u ?? "").match(/\/hotel\/[a-z]{2}\/[^.?#/]+/)?.[0] ?? "";
-var nameKey = (n) => (n ?? "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
-async function cityPrices(id) {
+var bkKey$1 = (u) => (u ?? "").match(/\/hotel\/[a-z]{2}\/[^.?#/]+/)?.[0] ?? "";
+var nameKey$1 = (n) => (n ?? "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+async function cityPrices$1(id) {
 	const out = /* @__PURE__ */ new Map();
 	const c = await cityData(id).catch(() => null);
 	for (const h of c?.hotels ?? []) {
@@ -23105,31 +22739,31 @@ async function cityPrices(id) {
 			nightly: n,
 			checked: h.booking?.checked
 		};
-		const k = bkKey(h.booking?.url);
+		const k = bkKey$1(h.booking?.url);
 		if (k) out.set(k, v);
-		if (h.name) out.set(nameKey(h.name), v);
+		if (h.name) out.set(nameKey$1(h.name), v);
 	}
 	return out;
 }
-var priceFor = (prices, p) => prices.get(bkKey(p.bookingUrl)) ?? prices.get(nameKey(p.hotel));
-var isoOf = (s) => {
+var priceFor$1 = (prices, p) => prices.get(bkKey$1(p.bookingUrl)) ?? prices.get(nameKey$1(p.hotel));
+var isoOf$1 = (s) => {
 	const d = new Date(s ?? "");
 	return Number.isNaN(d.getTime()) ? "" : d.toISOString().slice(0, 10);
 };
-var OTA_NOAFF = /(^|\.)(expedia|hotels|hoteles|hoteis|priceline|orbitz|travelocity|trip|wotif|agoda|kayak|trivago|tripadvisor|ebookers|lastminute)\.[a-z.]+$/;
-var srcLink = (s) => {
+var OTA_NOAFF$1 = /(^|\.)(expedia|hotels|hoteles|hoteis|priceline|orbitz|travelocity|trip|wotif|agoda|kayak|trivago|tripadvisor|ebookers|lastminute)\.[a-z.]+$/;
+var srcLink$1 = (s) => {
 	let h = "";
 	try {
 		h = new URL(s).hostname;
 	} catch {
 		return "";
 	}
-	if (/(^|\.)booking\.com$/.test(h)) return `<a href="${esc(CJ_BOOKING(s, "t3poolsrc"))}" rel="sponsored nofollow noopener" target="_blank">${esc(host(s))}</a>`;
-	if (OTA_NOAFF.test(h)) return `<span class="nolink">${esc(host(s))}</span>`;
-	return `<a href="${esc(s)}" rel="nofollow noopener" target="_blank">${esc(host(s))}</a>`;
+	if (/(^|\.)booking\.com$/.test(h)) return `<a href="${esc(CJ_BOOKING(s, "t3poolsrc"))}" rel="sponsored nofollow noopener" target="_blank">${esc(host$1(s))}</a>`;
+	if (OTA_NOAFF$1.test(h)) return `<span class="nolink">${esc(host$1(s))}</span>`;
+	return `<a href="${esc(s)}" rel="nofollow noopener" target="_blank">${esc(host$1(s))}</a>`;
 };
-function card$1(t, p, city, L, cityImg, slug, price) {
-	const x = TX[L];
+function card$2(t, p, city, L, cityImg, slug, price) {
+	const x = TX$2[L];
 	const top3 = p?._top;
 	const chips = `<div class="gchips"><span>${esc(x.tier[t])}</span>${city.best === t ? `<span class="top">${esc(x.best)}</span>` : ""}${top3 ? `<span class="top3b">${esc(bkx(L).alsoTop(top3))}</span>` : ""}</div>`;
 	if (!p) return `<article class="gcard ${t} empty"><div class="bd">${chips.replace("class=\"gchips\"", "class=\"gchips\" style=\"position:static\"")}<p>${esc(x.none)}</p><small>${esc(x.tierNote[t])}</small></div></article>`;
@@ -23152,44 +22786,49 @@ function card$1(t, p, city, L, cityImg, slug, price) {
 	if (g.extras?.length) rows.push(`<dt>${esc(x.extras)}</dt><dd>${esc(g.extras.join(" · "))}</dd>`);
 	if (g.access) rows.push(`<dt>${esc(x.access)}</dt><dd>${esc(g.access)}</dd>`);
 	const stars = p.stars ? `${"★".repeat(p.stars)} · ` : "";
-	return `<article class="gcard ${t}" id="${t}"><div class="ph">${chips}${price ? `<span class="pricetag gprice" data-eur="${price.nightly}" title="${esc(Y[L].priceRef(isoOf(price.checked) || "2026"))}"><span class="v">${money(price.nightly)}</span><small> ${esc(x.perNight)}</small></span>` : ""}${img ? `<img src="${ESC_URL(img)}"${bsSet(img)} alt="${esc(`${p.hotel}, ${city.city}`)}" width="640" height="480" loading="lazy" referrerpolicy="no-referrer"${fbAttr([...phs.slice(1), cityImg])}><small>${esc(credit)}</small>` : ""}</div>
+	return `<article class="gcard ${t}" id="${t}"><div class="ph">${chips}${price ? `<span class="pricetag gprice" data-eur="${price.nightly}" title="${esc(Y[L].priceRef(isoOf$1(price.checked) || "2026"))}"><span class="v">${money(price.nightly)}</span><small> ${esc(x.perNight)}</small></span>` : ""}${img ? `<img src="${ESC_URL$1(img)}"${bsSet(img)} alt="${esc(`${p.hotel}, ${city.city}`)}" width="640" height="480" loading="lazy" referrerpolicy="no-referrer"${fbAttr([...phs.slice(1), cityImg])}><small>${esc(credit)}</small>` : ""}</div>
 <div class="bd"><h2>${esc(p.hotel)}</h2><div class="meta">${stars}${esc(p.area ?? city.city)}</div><p>${esc(L === "es" ? p.summary_es : p.summary_en)}</p>${rows.length ? `<dl>${rows.join("")}</dl>` : ""}${p.confidence === "low" ? `<p class="warn">${esc(x.low)}</p>` : ""}
-${ctasFor(p, x, slug, t)}
-<div class="src">${esc(x.sources)}: ${p.sources.map((s) => srcLink(s)).join("")}</div></div></article>`;
+${ctasFor$1(p, x, slug, t)}
+<div class="src">${esc(x.sources)}: ${p.sources.map((s) => srcLink$1(s)).join("")}</div></div></article>`;
 }
 async function poolCityPage(urlSlug, Lx) {
-	await load$1();
-	const { pub, toId, byId } = await slugs();
+	await load$2();
+	const { pub, toId, byId } = await slugs$1();
 	const id = toId(urlSlug);
-	const city = id ? G[id] : void 0;
+	const city = id ? G$1[id] : void 0;
 	if (!id || !city) return null;
 	const slug = pub(id);
 	if (slug !== urlSlug) return Response.redirect(`${SITE}${P(Lx === "es" ? "es" : "en", `/pools/${slug}`)}`, 301);
 	const L = Lx === "es" ? "es" : "en";
-	const x = TX[L];
+	const x = TX$2[L];
 	const ic = byId.get(id);
 	const cn = ic ? cityName(ic, L) : city.city;
 	const cityImg = ic ? `/api/img/${encodeURIComponent(ic.id)}/mid` : void 0;
 	const path = `/pools/${slug}`;
-	const picks = TIERS.map((t) => [t, city.tiers[t]]);
-	const prices = await cityPrices(id);
+	const picks = TIERS$1.map((t) => [t, city.tiers[t]]);
+	const prices = await cityPrices$1(id);
+	let top3Box = "";
 	{
 		const cd = await cityData(id).catch(() => null);
 		const gal = new Map((cd?.hotels ?? []).map((h) => [bkPath(h.booking?.url), (h.gallery ?? []).map((g) => g.src).filter(Boolean)]));
+		const catOf = new Map((cd?.hotels ?? []).map((h) => [bkPath(h.booking?.url), h.category]));
+		top3Box = cd?.hotels?.length ? `<aside class="t3box"><b>${esc(TOP3H$1[L](cn))}</b> ${cd.hotels.map((h) => `${esc(h.name)} <small>(${esc(CATN$1[L][h.category] ?? h.category)})</small>`).join(" · ")} <a href="${P(L, `/${slug}`)}">${esc(TOP3L$1[L])} →</a></aside>` : "";
 		for (const [t, pk] of picks) if (pk) Object.assign(pk, {
 			_gk: `${id}:${t}`,
 			_cat: gal.get(bkPath(pk.bookingUrl)) ?? [],
-			_top: bkPath(pk.bookingUrl) && gal.has(bkPath(pk.bookingUrl)) ? cn : void 0
+			_top: bkPath(pk.bookingUrl) && gal.has(bkPath(pk.bookingUrl)) ? `${cn} · ${CATN$1[L][catOf.get(bkPath(pk.bookingUrl)) ?? ""] ?? ""}`.replace(/ · $/, "") : void 0
 		});
 	}
 	const names = picks.filter(([, p]) => p).map(([t, p]) => `${p.hotel} (${x.tier[t].toLowerCase()})`);
 	const bestReason = L === "es" ? city.bestReason_es : city.bestReason_en;
 	const bestPick = city.best ? city.tiers[city.best] : null;
-	const body = `<style>${CSS_GYM}</style><div class="gym"><nav class="crumbs"><a href="${P(L, "/")}">Top3Hotels</a> › <a href="${P(L, "/pools")}">${esc(x.crumbs)}</a> › ${esc(city.city)}</nav>
+	const body = `<style>${CSS_GYM$1}</style><div class="gym"><nav class="crumbs"><a href="${P(L, "/")}">Top3Hotels</a> › <a href="${P(L, "/pools")}">${esc(x.crumbs)}</a> › ${esc(city.city)}</nav>
 <h1>${esc(x.h1(cn))}<em>.</em></h1><p class="lead">${esc(x.lead)}</p>${city.checked ? `<p class="upd">${esc(x.checked)}: ${esc(city.checked)}</p>` : ""}
+${top3Box}
 ${bestPick && bestReason ? `<p class="best"><b>${esc(x.best)}:</b> ${esc(bestPick.hotel)}. ${esc(bestReason)}</p>` : ""}
-<div class="gcards">${picks.map(([t, p]) => card$1(t, p, city, L, cityImg, slug, p ? priceFor(prices, p) : void 0)).join("")}</div>
-<div class="method"><b>${esc(x.how)}.</b> ${esc(x.howBody)}</div>
+<div class="gcards">${picks.map(([t, p]) => card$2(t, p, city, L, cityImg, slug, p ? priceFor$1(prices, p) : void 0)).join("")}</div>
+<div class="method"><b>${esc(x.how)}.</b> ${esc(x.howBody)} <a href="/how-we-choose#filters">${esc(HOWF$1[L])} →</a></div>
+${gymLink(id, slug, L, cn)}
 ${ic ? `<p><a href="${P(L, `/${slug}`)}">${esc(x.hotels(city.city))} →</a></p>` : ""}</div>`;
 	const items = picks.filter(([, p]) => p).map(([t, p], i) => ({
 		"@type": "ListItem",
@@ -23213,7 +22852,7 @@ ${ic ? `<p><a href="${P(L, `/${slug}`)}">${esc(x.hotels(city.city))} →</a></p>
 			}],
 			description: L === "es" ? p.summary_es : p.summary_en,
 			...p.photo?.url ? { image: p.photo.url } : {},
-			...((n) => n ? { priceRange: `from ${money(n)} per night (reference)` } : {})(priceFor(prices, p)?.nightly),
+			...((n) => n ? { priceRange: `from ${money(n)} per night (reference)` } : {})(priceFor$1(prices, p)?.nightly),
 			additionalProperty: {
 				"@type": "PropertyValue",
 				name: "category",
@@ -23223,12 +22862,13 @@ ${ic ? `<p><a href="${P(L, `/${slug}`)}">${esc(x.hotels(city.city))} →</a></p>
 	}));
 	return page({
 		L,
-		title: x.title(Object.values(I).filter((o) => o === city.city).length > 1 || Object.entries(I).some(([k, o]) => k !== id && byId.get(k) && cityName(byId.get(k), L) === cn) ? `${cn}, ${L === "es" && ic?.cc ? new Intl.DisplayNames(["es"], { type: "region" }).of(ic.cc.toUpperCase()) ?? city.country : city.country}` : cn),
+		title: x.title(Object.values(I$1).filter((o) => o === city.city).length > 1 || Object.entries(I$1).some(([k, o]) => k !== id && byId.get(k) && cityName(byId.get(k), L) === cn) ? `${cn}, ${L === "es" && ic?.cc ? new Intl.DisplayNames(["es"], { type: "region" }).of(ic.cc.toUpperCase()) ?? city.country : city.country}` : cn),
 		description: x.desc(cn, names),
 		path,
 		body,
 		scripts: CARD_CLICK,
 		alts: POOL_LANGS,
+		...picks.filter(([, p]) => p).length < 2 ? { noindex: true } : {},
 		...(() => {
 			const bp = bestPick;
 			const bi = bp ? [...hotelPhotos(bp.bookingUrl, [bp.photo?.url, ...bp._cat ?? []])] : [];
@@ -23267,19 +22907,19 @@ ${ic ? `<p><a href="${P(L, `/${slug}`)}">${esc(x.hotels(city.city))} →</a></p>
 	});
 }
 async function poolIndexPage(Lx) {
-	await load$1();
-	const { pub } = await slugs();
+	await load$2();
+	const { pub } = await slugs$1();
 	const L = Lx === "es" ? "es" : "en";
-	const x = TX[L];
+	const x = TX$2[L];
 	const byCountry = /* @__PURE__ */ new Map();
-	for (const [slug, c] of Object.entries(G)) {
+	for (const [slug, c] of Object.entries(G$1)) {
 		const list = byCountry.get(c.country) ?? [];
 		list.push([slug, c]);
 		byCountry.set(c.country, list);
 	}
 	const countries = [...byCountry.keys()].sort((a, b) => a.localeCompare(b));
-	const body = `<style>${CSS_GYM}</style><div class="gym"><nav class="crumbs"><a href="${P(L, "/")}">Top3Hotels</a> › ${esc(x.crumbs)}</nav>
-<h1>${esc(x.idxH1)}<em>.</em></h1><p class="lead">${esc(x.idxDesc)}</p><p class="upd">${Object.keys(G).length} ${esc(x.cities)}</p>
+	const body = `<style>${CSS_GYM$1}</style><div class="gym"><nav class="crumbs"><a href="${P(L, "/")}">Top3Hotels</a> › ${esc(x.crumbs)}</nav>
+<h1>${esc(x.idxH1)}<em>.</em></h1><p class="lead">${esc(x.idxDesc)}</p><p class="upd">${Object.keys(G$1).length} ${esc(x.cities)}</p>
 ${countries.map((c) => `<h2 style="font-size:20px;margin:22px 0 6px">${esc(c)}</h2><ul class="clist">${byCountry.get(c).sort((a, b) => a[1].city.localeCompare(b[1].city)).map(([s, ci]) => `<li><a href="${P(L, `/pools/${pub(s)}`)}">${esc(ci.city)}</a></li>`).join("")}</ul>`).join("")}
 <div class="method"><b>${esc(x.how)}.</b> ${esc(x.howBody)}</div></div>`;
 	return page({
@@ -23298,7 +22938,476 @@ ${countries.map((c) => `<h2 style="font-size:20px;margin:22px 0 6px">${esc(c)}</
 	});
 }
 /** Small link for the city page. */
-var poolLink = (id, slug, L, esName) => I[id] ? `<p class="note" style="margin:10px 0"><a href="${P(L === "es" ? "es" : "en", `/pools/${slug}`)}" data-t="pool_link" data-city="${esc(slug)}">🏊 ${esc(TX[L === "es" ? "es" : "en"].h1(L === "es" && esName ? esName : I[id]))} →</a></p>` : "";
+var poolLink = (id, slug, L, esName) => I$1[id] ? `<p class="note" style="margin:10px 0"><a href="${P(L === "es" ? "es" : "en", `/pools/${slug}`)}" data-t="pool_link" data-city="${esc(slug)}">🏊 ${esc(TX$2[L === "es" ? "es" : "en"].h1(L === "es" && esName ? esName : I$1[id]))} →</a></p>` : "";
+/** T5.5 / T5.21: winners of this filter in a city, for the hotel page ("Also a winner in" and alternatives). */
+async function poolWinners(id, slug, L, cn) {
+	if (!I$1[id]) return [];
+	try {
+		await load$2();
+	} catch {
+		return [];
+	}
+	const c = G$1[id];
+	if (!c) return [];
+	const Lx = L === "es" ? "es" : "en";
+	return TIERS$1.flatMap((t) => {
+		const p = c.tiers?.[t];
+		return p ? [{
+			hotel: p.hotel,
+			stars: p.stars,
+			bk: bkPath(p.bookingUrl ?? "") ?? "",
+			tier: TX$2[Lx].tier[t],
+			href: P(Lx, `/pools/${slug}`),
+			name: TX$2[Lx].h1(cn || c.city)
+		}] : [];
+	});
+}
+var CATN$1 = {
+	en: {
+		Budget: "Budget",
+		"Best Value": "Best Value",
+		Luxury: "Luxury"
+	},
+	es: {
+		Budget: "Económico",
+		"Best Value": "Calidad-precio",
+		Luxury: "Lujo"
+	}
+};
+var TOP3H$1 = {
+	en: (c) => `Our top 3 in ${c}:`,
+	es: (c) => `Nuestro top 3 de ${c}:`
+};
+var TOP3L$1 = {
+	en: "The main answer for the city",
+	es: "La respuesta principal para la ciudad"
+};
+var HOWF$1 = {
+	en: "How we choose filter pages",
+	es: "Cómo elegimos las páginas de filtro"
+};
+/**
+* "Best hotel gyms" pages: /gyms (index) and /gyms/<city-slug>, in English and Spanish (/es/...).
+* Data: src/generated/gyms.json, built from data/gyms/<slug>.json by tools/gyms/build.py.
+* One hotel per tier (luxury = 5 stars, standard = 4 stars, budget = 3 stars or less), judged on the gym only.
+*/
+/** Full data is a static file fetched on first use (keeps the worker bundle small); IDX has its path and id -> city name. */
+var IX = gyms_index_default;
+var I = IX.ids;
+var G = {};
+var loaded$1 = null;
+var load$1 = () => loaded$1 ??= fetch(`${SITE}${IX.file}`).then((r) => {
+	if (!r.ok) throw new Error(`data ${r.status}`);
+	return r.json();
+}).then((j) => {
+	G = j;
+}).catch((e) => {
+	loaded$1 = null;
+	throw e;
+});
+var TIERS = [
+	"luxury",
+	"standard",
+	"budget"
+];
+var GYM_LANGS = ["en", "es"];
+/** Gym data is keyed by catalogue id ("madrid-spain"); public URLs use the city slug ("madrid"). */
+async function slugs() {
+	const { byId, bySlug } = await data();
+	const pub = (id) => byId.get(id)?.slug ?? id;
+	const toId = (s) => I[s] ? s : bySlug.get(s)?.id;
+	return {
+		pub,
+		toId,
+		byId
+	};
+}
+var gymPaths = async () => {
+	const { pub } = await slugs();
+	await load$1().catch(() => void 0);
+	return ["/gyms", ...Object.keys(I).filter((id) => !G[id] || Object.values(G[id].tiers ?? {}).filter(Boolean).length >= 2).map((id) => `/gyms/${pub(id)}`)];
+};
+var TX$1 = {
+	en: {
+		tier: {
+			luxury: "Luxury",
+			standard: "Mid-range",
+			budget: "Budget"
+		},
+		tierNote: {
+			luxury: "5-star hotels",
+			standard: "4-star hotels",
+			budget: "3 stars or less"
+		},
+		h1: (c) => `The best hotel gyms in ${c}`,
+		title: (c) => `Best hotel gyms in ${c} (2026): luxury, mid-range and budget | Top3Hotels`,
+		desc: (c, n) => `Best hotel gym in ${c} at every budget, judged on the gym only (size, equipment, hours): ${n.join(", ")}.`,
+		lead: "One hotel per budget, picked for its gym, not its lobby. Size, equipment, opening hours and extras, with sources.",
+		best: "Best gym in the city",
+		size: "Size",
+		hours: "Hours",
+		h24: "Open 24 hours",
+		equip: "Equipment",
+		extras: "Extras",
+		access: "Access",
+		perNight: "/ night",
+		book: "See prices on Booking",
+		site: "Hotel website",
+		sources: "Sources",
+		low: "Limited information: confirm the gym with the hotel before booking.",
+		none: "We could not confirm a hotel gym in this category.",
+		photoGym: "Gym photo: Booking.com",
+		photoHotel: "Hotel photo: Booking.com",
+		photoCity: "City photo",
+		how: "How we choose",
+		howBody: "We look only at the gym: size, free weights and machines, opening hours, extras like a pool or sauna, and what guests say about it. Categories follow the official star rating. Every fact comes from a public source listed under each hotel. Links to Booking.com are affiliate links: if you book, we may earn a commission at no cost to you.",
+		checked: "Checked",
+		crumbs: "Hotel gyms",
+		hotels: (c) => `The 3 best hotels in ${c}`,
+		idxTitle: "Best hotel gyms, city by city | Top3Hotels",
+		idxH1: "The best hotel gyms, city by city",
+		idxDesc: "The hotel with the best gym in every city we cover, at three budgets: luxury, mid-range and budget.",
+		cities: "cities"
+	},
+	es: {
+		tier: {
+			luxury: "Lujo",
+			standard: "Estándar",
+			budget: "Económico"
+		},
+		tierNote: {
+			luxury: "Hoteles de 5 estrellas",
+			standard: "Hoteles de 4 estrellas",
+			budget: "3 estrellas o menos"
+		},
+		h1: (c) => `Los mejores gimnasios de hotel en ${c}`,
+		title: (c) => `Mejores gimnasios de hotel en ${c} (2026): lujo, estándar y económico | Top3Hotels`,
+		desc: (c, n) => `El mejor gimnasio de hotel en ${c} en cada presupuesto, valorando solo el gimnasio (tamaño, equipamiento, horario): ${n.join(", ")}.`,
+		lead: "Un hotel por presupuesto, elegido por su gimnasio, no por su recepción. Tamaño, equipamiento, horario y extras, con fuentes.",
+		best: "El mejor gimnasio de la ciudad",
+		size: "Tamaño",
+		hours: "Horario",
+		h24: "Abierto 24 horas",
+		equip: "Equipamiento",
+		extras: "Extras",
+		access: "Acceso",
+		perNight: "/ noche",
+		book: "Ver precios en Booking",
+		site: "Web del hotel",
+		sources: "Fuentes",
+		low: "Información limitada: confirma el gimnasio con el hotel antes de reservar.",
+		none: "No hemos podido confirmar un gimnasio de hotel en esta categoría.",
+		photoGym: "Foto del gimnasio: Booking.com",
+		photoHotel: "Foto del hotel: Booking.com",
+		photoCity: "Foto de la ciudad",
+		how: "Cómo elegimos",
+		howBody: "Miramos solo el gimnasio: tamaño, peso libre y máquinas, horario, extras como piscina o sauna, y lo que dicen los huéspedes. Las categorías siguen la clasificación oficial de estrellas. Cada dato sale de una fuente pública que enlazamos bajo cada hotel. Los enlaces a Booking.com son de afiliado: si reservas, podemos ganar una comisión sin coste para ti.",
+		checked: "Revisado",
+		crumbs: "Gimnasios de hotel",
+		hotels: (c) => `Los 3 mejores hoteles de ${c}`,
+		idxTitle: "Mejores gimnasios de hotel, ciudad por ciudad | Top3Hotels",
+		idxH1: "Los mejores gimnasios de hotel, ciudad por ciudad",
+		idxDesc: "El hotel con el mejor gimnasio de cada ciudad que cubrimos, en tres presupuestos: lujo, estándar y económico.",
+		cities: "ciudades"
+	}
+};
+var CSS_GYM = `.t3box{display:block;margin:10px 0 14px;padding:12px 14px;border:1px solid var(--line,#ddd);border-radius:12px;background:var(--pale,#f4f6fa);font-size:15px;line-height:1.5}.gym{max-width:1100px;margin:0 auto}.gym .crumbs{font-size:13px;color:var(--muted);margin:8px 0 14px}.gym .crumbs a{color:inherit}
+.gym h1{font-size:clamp(30px,5vw,46px);line-height:1.08;margin:0 0 10px}.gym .lead{font-size:18px;line-height:1.5;color:var(--muted);margin:0 0 6px;max-width:760px}.gym .upd{font-size:13px;color:var(--muted);margin:0 0 22px}
+.gcards{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));margin:10px 0 26px}
+.gcard{position:relative;display:flex;flex-direction:column;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--card);box-shadow:var(--shadow)}
+.gcard:before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:var(--c);z-index:2}.gcard.luxury{--c:#b8860b}.gcard.standard{--c:#d83b51}.gcard.budget{--c:#1f7a5a}
+.gcard .ph{position:relative;aspect-ratio:4/3;background:#dfe8f2;overflow:hidden}.gcard .ph img{width:100%;height:100%;object-fit:cover;display:block}
+.gcard .ph small{position:absolute;right:8px;bottom:8px;font-size:10px;background:#000a;color:#fff;border-radius:6px;padding:3px 6px}
+.gcard .gchips{position:absolute;left:12px;top:14px;display:flex;gap:6px;flex-wrap:wrap;z-index:2}.gcard .gchips span{margin:0!important;display:inline-flex;align-items:center;white-space:nowrap;line-height:1.2;width:auto;height:auto;font-size:12px;font-weight:700;letter-spacing:.03em;text-transform:uppercase;padding:5px 10px;border-radius:99px;background:#fff;color:#10213a}
+.gcard .gchips .top{background:#10213a;color:#fff}
+.gcard .gprice{position:absolute;right:12px;bottom:12px;z-index:2;pointer-events:none}
+.gcard .bd{padding:16px 18px 18px;display:flex;flex-direction:column;gap:10px;flex:1}.gcard h2{font-size:22px;line-height:1.2;margin:0}.gcard .meta{font-size:14px;color:var(--muted)}
+.gcard p{margin:0;font-size:15px;line-height:1.55}.gcard dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:14px}.gcard dt{font-weight:600;color:var(--muted)}.gcard dd{margin:0}
+.gcard .warn{font-size:13px;color:#8a5a00;background:rgba(184,134,11,.1);border-radius:8px;padding:8px 10px}
+.gcard .ctas{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto;padding-top:6px}.gcard .btn{min-height:44px}.gcard .lnk{align-self:center;font-size:14px}
+.gcard .src{font-size:12px;opacity:.7}.gcard .src a,.gcard .src .nolink{color:inherit;margin-right:8px}
+.gcard.empty .bd{justify-content:center;text-align:center;color:var(--muted);min-height:180px}
+.gym .best{border-left:3px solid #10213a;background:rgba(127,127,127,.07);padding:12px 16px;border-radius:8px;margin:0 0 16px;font-size:15px}
+.gym .method{border-left:3px solid #d83b51;background:rgba(216,59,81,.06);padding:12px 16px;border-radius:8px;font-size:14px;line-height:1.55;margin:20px 0}
+.gym .clist{columns:3 220px;padding:0;list-style:none}.gym .clist li{margin:3px 0;break-inside:avoid}.gym .clist h2{font-size:18px;margin:16px 0 4px}
+@media(prefers-color-scheme:dark){.gcard .gchips span{background:#e8eef6}.gcard .warn{color:#f0c36b}}`;
+var ESC_URL = (u) => esc(u);
+var host = (u) => {
+	try {
+		return new URL(u).hostname.replace(/^www\./, "");
+	} catch {
+		return u;
+	}
+};
+/** Booking.com no longer resolves free-text searches (searchresults.html?ss=... bounces to the home page),
+*  so only a real hotel page gets a Booking button. Without one we fall back to the hotel's own website,
+*  or show no button at all; never a search link. */
+var BK_HOTEL = /^https:\/\/www\.booking\.com\/hotel\/[a-z]{2}\/[^/?#]+\.html/;
+var bookingFor = (p) => p.bookingUrl && BK_HOTEL.test(p.bookingUrl) ? CJ_BOOKING(p.bookingUrl.split("?")[0], "t3gym") : null;
+function ctasFor(p, x, slug, t) {
+	const bk = bookingFor(p);
+	if (bk) return `<div class="ctas"><a class="btn" href="${esc(bk)}" rel="sponsored nofollow noopener" target="_blank" data-t="gym_booking" data-city="${esc(slug)}" data-cat="${t}" data-p="booking">${esc(x.book)}</a>${p.website ? `<a class="lnk" href="${esc(p.website)}" rel="nofollow noopener" target="_blank">${esc(x.site)} →</a>` : ""}</div>`;
+	if (p.website) return `<div class="ctas"><a class="btn" href="${esc(p.website)}" rel="nofollow noopener" target="_blank" data-t="gym_site" data-city="${esc(slug)}" data-cat="${t}" data-p="website">${esc(x.site)} →</a></div>`;
+	return "";
+}
+var bkKey = (u) => (u ?? "").match(/\/hotel\/[a-z]{2}\/[^.?#/]+/)?.[0] ?? "";
+var nameKey = (n) => (n ?? "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+async function cityPrices(id) {
+	const out = /* @__PURE__ */ new Map();
+	const c = await cityData(id).catch(() => null);
+	for (const h of c?.hotels ?? []) {
+		const n = h.offer?.nightly;
+		if (!n || n <= 0) continue;
+		const v = {
+			nightly: n,
+			checked: h.booking?.checked
+		};
+		const k = bkKey(h.booking?.url);
+		if (k) out.set(k, v);
+		if (h.name) out.set(nameKey(h.name), v);
+	}
+	return out;
+}
+var priceFor = (prices, p) => prices.get(bkKey(p.bookingUrl)) ?? prices.get(nameKey(p.hotel));
+var isoOf = (s) => {
+	const d = new Date(s ?? "");
+	return Number.isNaN(d.getTime()) ? "" : d.toISOString().slice(0, 10);
+};
+var OTA_NOAFF = /(^|\.)(expedia|hotels|hoteles|hoteis|priceline|orbitz|travelocity|trip|wotif|agoda|kayak|trivago|tripadvisor|ebookers|lastminute)\.[a-z.]+$/;
+var srcLink = (s) => {
+	let h = "";
+	try {
+		h = new URL(s).hostname;
+	} catch {
+		return "";
+	}
+	if (/(^|\.)booking\.com$/.test(h)) return `<a href="${esc(CJ_BOOKING(s, "t3gymsrc"))}" rel="sponsored nofollow noopener" target="_blank">${esc(host(s))}</a>`;
+	if (OTA_NOAFF.test(h)) return `<span class="nolink">${esc(host(s))}</span>`;
+	return `<a href="${esc(s)}" rel="nofollow noopener" target="_blank">${esc(host(s))}</a>`;
+};
+function card$1(t, p, city, L, cityImg, slug, price) {
+	const x = TX$1[L];
+	const top3 = p?._top;
+	const chips = `<div class="gchips"><span>${esc(x.tier[t])}</span>${city.best === t ? `<span class="top">${esc(x.best)}</span>` : ""}${top3 ? `<span class="top3b">${esc(bkx(L).alsoTop(top3))}</span>` : ""}</div>`;
+	if (!p) return `<article class="gcard ${t} empty"><div class="bd">${chips.replace("class=\"gchips\"", "class=\"gchips\" style=\"position:static\"")}<p>${esc(x.none)}</p><small>${esc(x.tierNote[t])}</small></div></article>`;
+	const g = p.gym ?? {};
+	const px = p;
+	const own = p.photo?.url && !isDeadImg(p.photo.url) ? p.photo.url : null;
+	const gx = gymPhotos(px._gk ?? "");
+	const phs = hotelPhotos(p.bookingUrl, [own, ...px._cat ?? []]);
+	for (const [u] of gx) if (!phs.includes(u)) phs.push(u);
+	const img = phs[0] ?? cityImg;
+	const src0 = gx.find(([u]) => u === phs[0]);
+	const credit = !phs[0] ? x.photoCity : phs[0] === own ? p.photo?.gym ? x.photoGym : x.photoHotel : src0 ? (src0[1] === "hotelgyms.com" ? x.photoGym : x.photoHotel).replace("Booking.com", src0[1]) : x.photoHotel;
+	const rows = [];
+	if (g.sizeM2) rows.push(`<dt>${esc(x.size)}</dt><dd>${g.sizeM2.toLocaleString(L === "es" ? "es-ES" : "en-GB")} m²</dd>`);
+	if (g.hours) rows.push(`<dt>${esc(x.hours)}</dt><dd>${esc(/^24/.test(g.hours) ? x.h24 : g.hours)}</dd>`);
+	if (g.equipment?.length) rows.push(`<dt>${esc(x.equip)}</dt><dd>${esc(g.equipment.join(" · "))}</dd>`);
+	if (g.extras?.length) rows.push(`<dt>${esc(x.extras)}</dt><dd>${esc(g.extras.join(" · "))}</dd>`);
+	if (g.access) rows.push(`<dt>${esc(x.access)}</dt><dd>${esc(g.access)}</dd>`);
+	const stars = p.stars ? `${"★".repeat(p.stars)} · ` : "";
+	return `<article class="gcard ${t}" id="${t}"><div class="ph">${chips}${price ? `<span class="pricetag gprice" data-eur="${price.nightly}" title="${esc(Y[L].priceRef(isoOf(price.checked) || "2026"))}"><span class="v">${money(price.nightly)}</span><small> ${esc(x.perNight)}</small></span>` : ""}${img ? `<img src="${ESC_URL(img)}"${bsSet(img)} alt="${esc(`${p.hotel}, ${city.city}`)}" width="640" height="480" loading="lazy" referrerpolicy="no-referrer"${fbAttr([...phs.slice(1), cityImg])}><small>${esc(credit)}</small>` : ""}</div>
+<div class="bd"><h2>${esc(p.hotel)}</h2><div class="meta">${stars}${esc(p.area ?? city.city)}</div><p>${esc(L === "es" ? p.summary_es : p.summary_en)}</p>${rows.length ? `<dl>${rows.join("")}</dl>` : ""}${p.confidence === "low" ? `<p class="warn">${esc(x.low)}</p>` : ""}
+${ctasFor(p, x, slug, t)}
+<div class="src">${esc(x.sources)}: ${p.sources.map((s) => srcLink(s)).join("")}</div></div></article>`;
+}
+/** Whole hotel card opens Booking (city cards and gym cards); buttons, links and toggles keep their own action. */
+var CARD_CLICK = `<style>article.card,article.gcard:not(.empty){cursor:pointer}</style><script>document.addEventListener('click',function(e){var c=e.target.closest&&e.target.closest('article.card,article.gcard');if(!c||e.defaultPrevented)return;if(e.target.closest('a,button,summary,details,input,select,label,textarea'))return;try{if(String(getSelection()).length>2)return}catch(_){}var b=c.querySelector('a.btn');if(b)b.click()});<\/script>`;
+async function gymCityPage(urlSlug, Lx) {
+	await load$1();
+	const { pub, toId, byId } = await slugs();
+	const id = toId(urlSlug);
+	const city = id ? G[id] : void 0;
+	if (!id || !city) return null;
+	const slug = pub(id);
+	if (slug !== urlSlug) return Response.redirect(`${SITE}${P(Lx === "es" ? "es" : "en", `/gyms/${slug}`)}`, 301);
+	const L = Lx === "es" ? "es" : "en";
+	const x = TX$1[L];
+	const ic = byId.get(id);
+	const cn = ic ? cityName(ic, L) : city.city;
+	const cityImg = ic ? `/api/img/${encodeURIComponent(ic.id)}/mid` : void 0;
+	const path = `/gyms/${slug}`;
+	const picks = TIERS.map((t) => [t, city.tiers[t]]);
+	const prices = await cityPrices(id);
+	let top3Box = "";
+	{
+		const cd = await cityData(id).catch(() => null);
+		const gal = new Map((cd?.hotels ?? []).map((h) => [bkPath(h.booking?.url), (h.gallery ?? []).map((g) => g.src).filter(Boolean)]));
+		const catOf = new Map((cd?.hotels ?? []).map((h) => [bkPath(h.booking?.url), h.category]));
+		top3Box = cd?.hotels?.length ? `<aside class="t3box"><b>${esc(TOP3H[L](cn))}</b> ${cd.hotels.map((h) => `${esc(h.name)} <small>(${esc(CATN[L][h.category] ?? h.category)})</small>`).join(" · ")} <a href="${P(L, `/${slug}`)}">${esc(TOP3L[L])} →</a></aside>` : "";
+		for (const [t, pk] of picks) if (pk) Object.assign(pk, {
+			_gk: `${id}:${t}`,
+			_cat: gal.get(bkPath(pk.bookingUrl)) ?? [],
+			_top: bkPath(pk.bookingUrl) && gal.has(bkPath(pk.bookingUrl)) ? `${cn} · ${CATN[L][catOf.get(bkPath(pk.bookingUrl)) ?? ""] ?? ""}`.replace(/ · $/, "") : void 0
+		});
+	}
+	const names = picks.filter(([, p]) => p).map(([t, p]) => `${p.hotel} (${x.tier[t].toLowerCase()})`);
+	const bestReason = L === "es" ? city.bestReason_es : city.bestReason_en;
+	const bestPick = city.best ? city.tiers[city.best] : null;
+	const body = `<style>${CSS_GYM}</style><div class="gym"><nav class="crumbs"><a href="${P(L, "/")}">Top3Hotels</a> › <a href="${P(L, "/gyms")}">${esc(x.crumbs)}</a> › ${esc(city.city)}</nav>
+<h1>${esc(x.h1(cn))}<em>.</em></h1><p class="lead">${esc(x.lead)}</p>${city.checked ? `<p class="upd">${esc(x.checked)}: ${esc(city.checked)}</p>` : ""}
+${top3Box}
+${bestPick && bestReason ? `<p class="best"><b>${esc(x.best)}:</b> ${esc(bestPick.hotel)}. ${esc(bestReason)}</p>` : ""}
+<div class="gcards">${picks.map(([t, p]) => card$1(t, p, city, L, cityImg, slug, p ? priceFor(prices, p) : void 0)).join("")}</div>
+<div class="method"><b>${esc(x.how)}.</b> ${esc(x.howBody)} <a href="/how-we-choose#filters">${esc(HOWF[L])} →</a></div>
+${poolLink(id, slug, L, cn)}
+${ic ? `<p><a href="${P(L, `/${slug}`)}">${esc(x.hotels(city.city))} →</a></p>` : ""}</div>`;
+	const items = picks.filter(([, p]) => p).map(([t, p], i) => ({
+		"@type": "ListItem",
+		position: i + 1,
+		item: {
+			"@type": "Hotel",
+			name: p.hotel,
+			...p.stars ? { starRating: {
+				"@type": "Rating",
+				ratingValue: p.stars
+			} } : {},
+			address: {
+				"@type": "PostalAddress",
+				addressLocality: city.city,
+				addressCountry: city.country
+			},
+			amenityFeature: [{
+				"@type": "LocationFeatureSpecification",
+				name: "Fitness center",
+				value: true
+			}],
+			description: L === "es" ? p.summary_es : p.summary_en,
+			...p.photo?.url ? { image: p.photo.url } : {},
+			...((n) => n ? { priceRange: `from ${money(n)} per night (reference)` } : {})(priceFor(prices, p)?.nightly),
+			additionalProperty: {
+				"@type": "PropertyValue",
+				name: "category",
+				value: x.tier[t]
+			}
+		}
+	}));
+	return page({
+		L,
+		title: x.title(Object.values(I).filter((o) => o === city.city).length > 1 || Object.entries(I).some(([k, o]) => k !== id && byId.get(k) && cityName(byId.get(k), L) === cn) ? `${cn}, ${L === "es" && ic?.cc ? new Intl.DisplayNames(["es"], { type: "region" }).of(ic.cc.toUpperCase()) ?? city.country : city.country}` : cn),
+		description: x.desc(cn, names),
+		path,
+		body,
+		scripts: CARD_CLICK,
+		alts: GYM_LANGS,
+		...picks.filter(([, p]) => p).length < 2 ? { noindex: true } : {},
+		...(() => {
+			const bp = bestPick;
+			const bi = bp ? [...hotelPhotos(bp.bookingUrl, [bp.photo?.url, ...bp._cat ?? []]), ...gymPhotos(bp._gk ?? "").map(([u]) => u)] : [];
+			return bi[0] || cityImg ? { image: bi[0] || `https://www.top3hotels.com${cityImg}` } : {};
+		})(),
+		ld: [{
+			"@context": "https://schema.org",
+			"@type": "ItemList",
+			name: x.h1(cn),
+			url: `${SITE}${P(L, path)}`,
+			itemListElement: items
+		}, {
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			itemListElement: [
+				{
+					"@type": "ListItem",
+					position: 1,
+					name: "Top3Hotels",
+					item: `${SITE}${P(L, "/")}`
+				},
+				{
+					"@type": "ListItem",
+					position: 2,
+					name: x.crumbs,
+					item: `${SITE}${P(L, "/gyms")}`
+				},
+				{
+					"@type": "ListItem",
+					position: 3,
+					name: city.city,
+					item: `${SITE}${P(L, path)}`
+				}
+			]
+		}]
+	});
+}
+async function gymIndexPage(Lx) {
+	await load$1();
+	const { pub } = await slugs();
+	const L = Lx === "es" ? "es" : "en";
+	const x = TX$1[L];
+	const byCountry = /* @__PURE__ */ new Map();
+	for (const [slug, c] of Object.entries(G)) {
+		const list = byCountry.get(c.country) ?? [];
+		list.push([slug, c]);
+		byCountry.set(c.country, list);
+	}
+	const countries = [...byCountry.keys()].sort((a, b) => a.localeCompare(b));
+	const body = `<style>${CSS_GYM}</style><div class="gym"><nav class="crumbs"><a href="${P(L, "/")}">Top3Hotels</a> › ${esc(x.crumbs)}</nav>
+<h1>${esc(x.idxH1)}<em>.</em></h1><p class="lead">${esc(x.idxDesc)}</p><p class="upd">${Object.keys(G).length} ${esc(x.cities)}</p>
+${countries.map((c) => `<h2 style="font-size:20px;margin:22px 0 6px">${esc(c)}</h2><ul class="clist">${byCountry.get(c).sort((a, b) => a[1].city.localeCompare(b[1].city)).map(([s, ci]) => `<li><a href="${P(L, `/gyms/${pub(s)}`)}">${esc(ci.city)}</a></li>`).join("")}</ul>`).join("")}
+<div class="method"><b>${esc(x.how)}.</b> ${esc(x.howBody)}</div></div>`;
+	return page({
+		L,
+		title: x.idxTitle,
+		description: x.idxDesc,
+		path: "/gyms",
+		body,
+		alts: GYM_LANGS,
+		ld: [{
+			"@context": "https://schema.org",
+			"@type": "CollectionPage",
+			name: x.idxH1,
+			url: `${SITE}${P(L, "/gyms")}`
+		}]
+	});
+}
+/** Small link for the city page. */
+var gymLink = (id, slug, L, esName) => I[id] ? `<p class="note" style="margin:10px 0"><a href="${P(L === "es" ? "es" : "en", `/gyms/${slug}`)}" data-t="gym_link" data-city="${esc(slug)}">🏋️ ${esc(TX$1[L === "es" ? "es" : "en"].h1(L === "es" && esName ? esName : I[id]))} →</a></p>` : "";
+/** T5.5 / T5.21: winners of this filter in a city, for the hotel page ("Also a winner in" and alternatives). */
+async function gymWinners(id, slug, L, cn) {
+	if (!I[id]) return [];
+	try {
+		await load$1();
+	} catch {
+		return [];
+	}
+	const c = G[id];
+	if (!c) return [];
+	const Lx = L === "es" ? "es" : "en";
+	return TIERS.flatMap((t) => {
+		const p = c.tiers?.[t];
+		return p ? [{
+			hotel: p.hotel,
+			stars: p.stars,
+			bk: bkPath(p.bookingUrl ?? "") ?? "",
+			tier: TX$1[Lx].tier[t],
+			href: P(Lx, `/gyms/${slug}`),
+			name: TX$1[Lx].h1(cn || c.city)
+		}] : [];
+	});
+}
+var CATN = {
+	en: {
+		Budget: "Budget",
+		"Best Value": "Best Value",
+		Luxury: "Luxury"
+	},
+	es: {
+		Budget: "Económico",
+		"Best Value": "Calidad-precio",
+		Luxury: "Lujo"
+	}
+};
+var TOP3H = {
+	en: (c) => `Our top 3 in ${c}:`,
+	es: (c) => `Nuestro top 3 de ${c}:`
+};
+var TOP3L = {
+	en: "The main answer for the city",
+	es: "La respuesta principal para la ciudad"
+};
+var HOWF = {
+	en: "How we choose filter pages",
+	es: "Cómo elegimos las páginas de filtro"
+};
 var C4DATA = {
 	airports: /* @__PURE__ */ JSON.parse("{\"rome\":{\"i\":\"CIA\",\"n\":\"Ciampino–G. B. Pastine International Airport\",\"la\":41.79877,\"lo\":12.59533},\"paris\":{\"i\":\"ORY\",\"n\":\"Paris-Orly Airport\",\"la\":48.7295,\"lo\":2.35896},\"london-canada\":{\"i\":\"YHM\",\"n\":\"John C. Munro Hamilton International Airport\",\"la\":43.17131,\"lo\":-79.92942},\"london\":{\"i\":\"LHR\",\"n\":\"London Heathrow Airport\",\"la\":51.47075,\"lo\":-0.45991},\"barcelona\":{\"i\":\"BCN\",\"n\":\"Josep Tarradellas Barcelona-El Prat Airport\",\"la\":41.2971,\"lo\":2.07846},\"tokyo\":{\"i\":\"HND\",\"n\":\"Tokyo Haneda International Airport\",\"la\":35.54968,\"lo\":139.78696},\"dubai\":{\"i\":\"DXB\",\"n\":\"Dubai International Airport\",\"la\":25.24979,\"lo\":55.37099},\"sarande-albania\":{\"i\":\"CFU\",\"n\":\"Corfu Ioannis Kapodistrias International Airport\",\"la\":39.60145,\"lo\":19.91218},\"tirana-albania\":{\"i\":\"TIA\",\"n\":\"Tirana International Airport Mother Teresa\",\"la\":41.4147,\"lo\":19.7206},\"buenos-aires-argentina\":{\"i\":\"AEP\",\"n\":\"Aeroparque Jorge Newbery\",\"la\":-34.55942,\"lo\":-58.41554},\"cordoba-argentina\":{\"i\":\"COR\",\"n\":\"Ingeniero Aeronáutico Ambrosio L.V. Taravella International Airport\",\"la\":-31.31235,\"lo\":-64.20833},\"mendoza-argentina\":{\"i\":\"MDZ\",\"n\":\"Governor Francisco Gabrielli International Airport\",\"la\":-32.8317,\"lo\":-68.7929},\"salta-argentina\":{\"i\":\"SLA\",\"n\":\"Martín Miguel de Güemes International Airport\",\"la\":-24.856,\"lo\":-65.4862},\"san-carlos-de-bariloche-argentina\":{\"i\":\"BRC\",\"n\":\"Teniente Luis Candelaria International Airport\",\"la\":-41.1512,\"lo\":-71.1575},\"yerevan-armenia\":{\"i\":\"EVN\",\"n\":\"Zvartnots International Airport\",\"la\":40.14894,\"lo\":44.39789},\"adelaide-australia\":{\"i\":\"ADL\",\"n\":\"Adelaide International Airport\",\"la\":-34.94751,\"lo\":138.53339},\"brisbane-australia\":{\"i\":\"BNE\",\"n\":\"Brisbane International Airport\",\"la\":-27.3842,\"lo\":153.117},\"cairns-australia\":{\"i\":\"CNS\",\"n\":\"Cairns International Airport\",\"la\":-16.87892,\"lo\":145.74948},\"darwin-australia\":{\"i\":\"DRW\",\"n\":\"Darwin International Airport / RAAF Darwin\",\"la\":-12.41497,\"lo\":130.88185},\"geelong-australia\":{\"i\":\"AVV\",\"n\":\"Melbourne Avalon International Airport\",\"la\":-38.04027,\"lo\":144.4672},\"gold-coast-australia\":{\"i\":\"OOL\",\"n\":\"Gold Coast Airport\",\"la\":-28.16596,\"lo\":153.50664},\"hobart-australia\":{\"i\":\"HBA\",\"n\":\"Hobart International Airport\",\"la\":-42.83703,\"lo\":147.51302},\"melbourne-australia\":{\"i\":\"MEL\",\"n\":\"Melbourne Airport\",\"la\":-37.67073,\"lo\":144.8379},\"newcastle-australia\":{\"i\":\"NTL\",\"n\":\"Newcastle Airport\",\"la\":-32.79611,\"lo\":151.83503},\"perth-australia\":{\"i\":\"PER\",\"n\":\"Perth International Airport\",\"la\":-31.9403,\"lo\":115.967},\"sydney-australia\":{\"i\":\"SYD\",\"n\":\"Sydney Kingsford Smith International Airport\",\"la\":-33.9461,\"lo\":151.177},\"bad-hofgastein-austria\":{\"i\":\"SZG\",\"n\":\"Salzburg Airport\",\"la\":47.7933,\"lo\":13.0043},\"bad-ischl-austria\":{\"i\":\"SZG\",\"n\":\"Salzburg Airport\",\"la\":47.7933,\"lo\":13.0043},\"bregenz-austria\":{\"i\":\"FDH\",\"n\":\"Bodensee Airport Friedrichshafen\",\"la\":47.6713,\"lo\":9.51149},\"graz-austria\":{\"i\":\"GRZ\",\"n\":\"Graz Airport\",\"la\":46.9911,\"lo\":15.4396},\"innsbruck-austria\":{\"i\":\"INN\",\"n\":\"Innsbruck Airport\",\"la\":47.26028,\"lo\":11.34389},\"kitzbuhel-austria\":{\"i\":\"SZG\",\"n\":\"Salzburg Airport\",\"la\":47.7933,\"lo\":13.0043},\"klagenfurt-austria\":{\"i\":\"KLU\",\"n\":\"Klagenfurt Airport\",\"la\":46.6425,\"lo\":14.3377},\"linz-austria\":{\"i\":\"LNZ\",\"n\":\"Linz-Hörsching Airport\",\"la\":48.23536,\"lo\":14.18813},\"salzburg-austria\":{\"i\":\"SZG\",\"n\":\"Salzburg Airport\",\"la\":47.7933,\"lo\":13.0043},\"seefeld-in-tirol-austria\":{\"i\":\"INN\",\"n\":\"Innsbruck Airport\",\"la\":47.26028,\"lo\":11.34389},\"vienna-austria\":{\"i\":\"VIE\",\"n\":\"Vienna International Airport\",\"la\":48.1103,\"lo\":16.5697},\"villach-austria\":{\"i\":\"KLU\",\"n\":\"Klagenfurt Airport\",\"la\":46.6425,\"lo\":14.3377},\"wels-austria\":{\"i\":\"LNZ\",\"n\":\"Linz-Hörsching Airport\",\"la\":48.23536,\"lo\":14.18813},\"zell-am-see-austria\":{\"i\":\"SZG\",\"n\":\"Salzburg Airport\",\"la\":47.7933,\"lo\":13.0043},\"baku-azerbaijan\":{\"i\":\"GYD\",\"n\":\"Heydar Aliyev International Airport\",\"la\":40.47278,\"lo\":50.05093},\"sheki-azerbaijan\":{\"i\":\"GNJ\",\"n\":\"Ganja International Airport\",\"la\":40.73869,\"lo\":46.32038},\"manama-bahrain\":{\"i\":\"BAH\",\"n\":\"Bahrain International Airport\",\"la\":26.2673,\"lo\":50.63764},\"bridgetown-barbados\":{\"i\":\"BGI\",\"n\":\"Grantley Adams International Airport\",\"la\":13.07467,\"lo\":-59.49103},\"aalst-belgium\":{\"i\":\"BRU\",\"n\":\"Brussels Airport\",\"la\":50.9014,\"lo\":4.48444},\"antwerp-belgium\":{\"i\":\"BRU\",\"n\":\"Brussels Airport\",\"la\":50.9014,\"lo\":4.48444},\"blankenberge-belgium\":{\"i\":\"OST\",\"n\":\"Ostend-Bruges International Airport\",\"la\":51.1998,\"lo\":2.87467},\"bruges-belgium\":{\"i\":\"OST\",\"n\":\"Ostend-Bruges International Airport\",\"la\":51.1998,\"lo\":2.87467},\"brussels-belgium\":{\"i\":\"BRU\",\"n\":\"Brussels Airport\",\"la\":50.9014,\"lo\":4.48444},\"ghent-belgium\":{\"i\":\"BRU\",\"n\":\"Brussels Airport\",\"la\":50.9014,\"lo\":4.48444},\"hasselt-belgium\":{\"i\":\"MST\",\"n\":\"Maastricht Aachen Airport\",\"la\":50.91109,\"lo\":5.7694},\"knokke-heist-belgium\":{\"i\":\"OST\",\"n\":\"Ostend-Bruges International Airport\",\"la\":51.1998,\"lo\":2.87467},\"kortrijk-belgium\":{\"i\":\"LIL\",\"n\":\"Lille Airport\",\"la\":50.56656,\"lo\":3.10243},\"leuven-belgium\":{\"i\":\"BRU\",\"n\":\"Brussels Airport\",\"la\":50.9014,\"lo\":4.48444},\"liege-belgium\":{\"i\":\"MST\",\"n\":\"Maastricht Aachen Airport\",\"la\":50.91109,\"lo\":5.7694},\"mechelen-belgium\":{\"i\":\"BRU\",\"n\":\"Brussels Airport\",\"la\":50.9014,\"lo\":4.48444},\"namur-belgium\":{\"i\":\"CRL\",\"n\":\"Brussels South Charleroi Airport\",\"la\":50.46196,\"lo\":4.45956},\"ostend-belgium\":{\"i\":\"OST\",\"n\":\"Ostend-Bruges International Airport\",\"la\":51.1998,\"lo\":2.87467},\"spa-belgium\":{\"i\":\"MST\",\"n\":\"Maastricht Aachen Airport\",\"la\":50.91109,\"lo\":5.7694},\"cotonou-benin\":{\"i\":\"COO\",\"n\":\"Cotonou Cadjehoun International Airport\",\"la\":6.35723,\"lo\":2.38435},\"cochabamba-bolivia\":{\"i\":\"CBB\",\"n\":\"Jorge Wilsterman International Airport\",\"la\":-17.42111,\"lo\":-66.1771},\"la-paz-bolivia\":{\"i\":\"LPB\",\"n\":\"El Alto International Airport\",\"la\":-16.51027,\"lo\":-68.18942},\"sucre-bolivia\":{\"i\":\"SRE\",\"n\":\"Alcantarí International Airport\",\"la\":-19.24684,\"lo\":-65.14961},\"banja-luka-bosnia-and-herzegovina\":{\"i\":\"BNX\",\"n\":\"Banja Luka International Airport\",\"la\":44.9414,\"lo\":17.2975},\"mostar-bosniaandherzegovina\":{\"i\":\"OMO\",\"n\":\"Mostar International Airport\",\"la\":43.28249,\"lo\":17.8461},\"sarajevo-bosniaandherzegovina\":{\"i\":\"SJJ\",\"n\":\"Sarajevo International Airport\",\"la\":43.8246,\"lo\":18.3315},\"gaborone-botswana\":{\"i\":\"GBE\",\"n\":\"Sir Seretse Khama International Airport\",\"la\":-24.5552,\"lo\":25.9182},\"balneario-camboriu-brazil\":{\"i\":\"NVT\",\"n\":\"Ministro Victor Konder International Airport\",\"la\":-26.87943,\"lo\":-48.65098},\"barueri-brazil\":{\"i\":\"CGH\",\"n\":\"Congonhas–Deputado Freitas Nobre Airport\",\"la\":-23.62766,\"lo\":-46.6546},\"belem-brazil\":{\"i\":\"BEL\",\"n\":\"Val de Cans/Júlio Cezar Ribeiro International Airport\",\"la\":-1.37928,\"lo\":-48.47621},\"belo-horizonte-brazil\":{\"i\":\"CNF\",\"n\":\"Tancredo Neves International Airport\",\"la\":-19.63571,\"lo\":-43.96693},\"bento-goncalves-brazil\":{\"i\":\"POA\",\"n\":\"Porto Alegre-Salgado Filho International Airport\",\"la\":-29.99398,\"lo\":-51.16748},\"blumenau-brazil\":{\"i\":\"NVT\",\"n\":\"Ministro Victor Konder International Airport\",\"la\":-26.87943,\"lo\":-48.65098},\"boa-vista-brazil\":{\"i\":\"BVB\",\"n\":\"Atlas Brasil Cantanhede International Airport\",\"la\":2.84615,\"lo\":-60.69065},\"brasilia-brazil\":{\"i\":\"BSB\",\"n\":\"Presidente Juscelino Kubitschek International Airport\",\"la\":-15.86917,\"lo\":-47.92083},\"campinas-brazil\":{\"i\":\"VCP\",\"n\":\"Viracopos International Airport\",\"la\":-23.0074,\"lo\":-47.1345},\"canela-brazil\":{\"i\":\"POA\",\"n\":\"Porto Alegre-Salgado Filho International Airport\",\"la\":-29.99398,\"lo\":-51.16748},\"caraguatatuba-brazil\":{\"i\":\"GRU\",\"n\":\"São Paulo/Guarulhos–Governor André Franco Montoro International Airport\",\"la\":-23.43127,\"lo\":-46.46995},\"caxias-do-sul-brazil\":{\"i\":\"POA\",\"n\":\"Porto Alegre-Salgado Filho International Airport\",\"la\":-29.99398,\"lo\":-51.16748},\"cuiaba-brazil\":{\"i\":\"CGB\",\"n\":\"Várzea Grande–Marechal Rondon International Airport\",\"la\":-15.6529,\"lo\":-56.1167},\"curitiba-brazil\":{\"i\":\"CWB\",\"n\":\"Curitiba-Afonso Pena International Airport\",\"la\":-25.5285,\"lo\":-49.1758},\"florianopolis-brazil\":{\"i\":\"FLN\",\"n\":\"Hercílio Luz International Airport\",\"la\":-27.67028,\"lo\":-48.5525},\"fortaleza-brazil\":{\"i\":\"FOR\",\"n\":\"Pinto Martins International Airport\",\"la\":-3.77583,\"lo\":-38.53222},\"foz-do-iguacu-brazil\":{\"i\":\"IGU\",\"n\":\"Cataratas International Airport\",\"la\":-25.59417,\"lo\":-54.48944},\"ouro-preto-brazil\":{\"i\":\"CNF\",\"n\":\"Tancredo Neves International Airport\",\"la\":-19.63571,\"lo\":-43.96693},\"recife-brazil\":{\"i\":\"REC\",\"n\":\"Recife/Guararapes - Gilberto Freyre International Airport\",\"la\":-8.12747,\"lo\":-34.92296},\"rio-branco-brazil\":{\"i\":\"RBR\",\"n\":\"Rio Branco-Plácido de Castro International Airport\",\"la\":-9.86903,\"lo\":-67.89398},\"rio-de-janeiro-brazil\":{\"i\":\"SDU\",\"n\":\"Santos Dumont Airport\",\"la\":-22.9104,\"lo\":-43.16282},\"salvador-brazil\":{\"i\":\"SSA\",\"n\":\"Deputado Luiz Eduardo Magalhães International Airport\",\"la\":-12.90861,\"lo\":-38.3225},\"sao-paulo-brazil\":{\"i\":\"CGH\",\"n\":\"Congonhas–Deputado Freitas Nobre Airport\",\"la\":-23.62766,\"lo\":-46.6546},\"bandar-seri-begawan-brunei\":{\"i\":\"BWN\",\"n\":\"Brunei International Airport\",\"la\":4.9442,\"lo\":114.928},\"burgas-bulgaria\":{\"i\":\"BOJ\",\"n\":\"Burgas Airport\",\"la\":42.56992,\"lo\":27.51517},\"plovdiv-bulgaria\":{\"i\":\"PDV\",\"n\":\"Plovdiv International Airport\",\"la\":42.0678,\"lo\":24.8508},\"sofia-bulgaria\":{\"i\":\"SOF\",\"n\":\"Sofia Airport\",\"la\":42.69636,\"lo\":23.41767},\"varna-bulgaria\":{\"i\":\"VAR\",\"n\":\"Varna Airport\",\"la\":43.2321,\"lo\":27.8251},\"battambang-cambodia\":{\"i\":\"SAI\",\"n\":\"Siem Reap-Angkor International Airport\",\"la\":13.36974,\"lo\":104.22383},\"phnom-penh-cambodia\":{\"i\":\"KTI\",\"n\":\"Techo International Airport\",\"la\":11.35999,\"lo\":104.92127},\"siem-reap-cambodia\":{\"i\":\"SAI\",\"n\":\"Siem Reap-Angkor International Airport\",\"la\":13.36974,\"lo\":104.22383},\"sihanoukville-cambodia\":{\"i\":\"KOS\",\"n\":\"Sihanouk International Airport\",\"la\":10.57056,\"lo\":103.63207},\"yaounde-cameroon\":{\"i\":\"NSI\",\"n\":\"Yaoundé Nsimalen International Airport\",\"la\":3.72256,\"lo\":11.5533},\"airdrie-canada\":{\"i\":\"YYC\",\"n\":\"Calgary International Airport\",\"la\":51.11882,\"lo\":-114.00993},\"banff-canada\":{\"i\":\"YYC\",\"n\":\"Calgary International Airport\",\"la\":51.11882,\"lo\":-114.00993},\"boucherville-canada\":{\"i\":\"YUL\",\"n\":\"Montreal / Pierre Elliott Trudeau International Airport\",\"la\":45.46784,\"lo\":-73.74229},\"brossard-canada\":{\"i\":\"YUL\",\"n\":\"Montreal / Pierre Elliott Trudeau International Airport\",\"la\":45.46784,\"lo\":-73.74229},\"burnaby-canada\":{\"i\":\"YVR\",\"n\":\"Vancouver International Airport\",\"la\":49.1939,\"lo\":-123.184},\"calgary-canada\":{\"i\":\"YYC\",\"n\":\"Calgary International Airport\",\"la\":51.11882,\"lo\":-114.00993},\"chatham-canada\":{\"i\":\"YQG\",\"n\":\"Windsor International Airport\",\"la\":42.2756,\"lo\":-82.9556},\"chilliwack-canada\":{\"i\":\"YVR\",\"n\":\"Vancouver International Airport\",\"la\":49.1939,\"lo\":-123.184},\"halifax-canada\":{\"i\":\"YHZ\",\"n\":\"Halifax / Stanfield International Airport\",\"la\":44.8808,\"lo\":-63.5086},\"hamilton-canada\":{\"i\":\"YHM\",\"n\":\"John C. Munro Hamilton International Airport\",\"la\":43.17131,\"lo\":-79.92942},\"kelowna-canada\":{\"i\":\"YLW\",\"n\":\"Kelowna International Airport\",\"la\":49.9561,\"lo\":-119.378},\"montreal-canada\":{\"i\":\"YUL\",\"n\":\"Montreal / Pierre Elliott Trudeau International Airport\",\"la\":45.46784,\"lo\":-73.74229},\"niagara-falls-canada\":{\"i\":\"BUF\",\"n\":\"Buffalo Niagara International Airport\",\"la\":42.9405,\"lo\":-78.7322},\"north-vancouver-canada\":{\"i\":\"YVR\",\"n\":\"Vancouver International Airport\",\"la\":49.1939,\"lo\":-123.184},\"ottawa-canada\":{\"i\":\"YOW\",\"n\":\"Ottawa Macdonald-Cartier International Airport\",\"la\":45.3225,\"lo\":-75.6692},\"quebec-city-canada\":{\"i\":\"YQB\",\"n\":\"Quebec Jean Lesage International Airport\",\"la\":46.7911,\"lo\":-71.3933},\"saskatoon-canada\":{\"i\":\"YXE\",\"n\":\"Saskatoon John G. Diefenbaker International Airport\",\"la\":52.17072,\"lo\":-106.70079},\"st-john-s-canada\":{\"i\":\"YYT\",\"n\":\"St. John's International Airport\",\"la\":47.6186,\"lo\":-52.7519},\"toronto-canada\":{\"i\":\"YYZ\",\"n\":\"Toronto Pearson International Airport\",\"la\":43.67594,\"lo\":-79.62942},\"vancouver-canada\":{\"i\":\"YVR\",\"n\":\"Vancouver International Airport\",\"la\":49.1939,\"lo\":-123.184},\"victoria-canada\":{\"i\":\"YYJ\",\"n\":\"Victoria International Airport\",\"la\":48.6472,\"lo\":-123.42779},\"whistler-canada\":{\"i\":\"YVR\",\"n\":\"Vancouver International Airport\",\"la\":49.1939,\"lo\":-123.184},\"windsor-canada\":{\"i\":\"YQG\",\"n\":\"Windsor International Airport\",\"la\":42.2756,\"lo\":-82.9556},\"winnipeg-canada\":{\"i\":\"YWG\",\"n\":\"Winnipeg / James Armstrong Richardson International Airport\",\"la\":49.91,\"lo\":-97.2399},\"concepcion-chile\":{\"i\":\"CCP\",\"n\":\"Carriel Sur International Airport\",\"la\":-36.77235,\"lo\":-73.06283},\"puerto-varas-chile\":{\"i\":\"PMC\",\"n\":\"El Tepual International Airport\",\"la\":-41.44309,\"lo\":-73.09407},\"punta-arenas-chile\":{\"i\":\"PUQ\",\"n\":\"President Carlos Ibáñez International Airport\",\"la\":-53.0026,\"lo\":-70.8546},\"santiago-chile\":{\"i\":\"SCL\",\"n\":\"Comodoro Arturo Merino Benítez International Airport\",\"la\":-33.39025,\"lo\":-70.7947},\"beijing-china\":{\"i\":\"PEK\",\"n\":\"Beijing Capital International Airport\",\"la\":40.07735,\"lo\":116.5967},\"chengdu-china\":{\"i\":\"CTU\",\"n\":\"Chengdu Shuangliu International Airport\",\"la\":30.55826,\"lo\":103.94597},\"chongqing-china\":{\"i\":\"CKG\",\"n\":\"Chongqing Jiangbei International Airport\",\"la\":29.71225,\"lo\":106.65189},\"dalian-china\":{\"i\":\"DLC\",\"n\":\"Dalian Zhoushuizi International Airport\",\"la\":38.96572,\"lo\":121.53848},\"guangzhou-china\":{\"i\":\"CAN\",\"n\":\"Guangzhou Baiyun International Airport\",\"la\":23.3924,\"lo\":113.299},\"guilin-china\":{\"i\":\"KWL\",\"n\":\"Guilin Liangjiang International Airport\",\"la\":25.21983,\"lo\":110.03955},\"hangzhou-china\":{\"i\":\"HGH\",\"n\":\"Hangzhou Xiaoshan International Airport\",\"la\":30.23609,\"lo\":120.42887},\"harbin-china\":{\"i\":\"HRB\",\"n\":\"Harbin Taiping International Airport\",\"la\":45.6234,\"lo\":126.25},\"kunming-china\":{\"i\":\"KMG\",\"n\":\"Kunming Changshui International Airport\",\"la\":25.11031,\"lo\":102.93674},\"lijiang-china\":{\"i\":\"LJG\",\"n\":\"Lijiang Sanyi International Airport\",\"la\":26.67748,\"lo\":100.24494},\"nanjing-china\":{\"i\":\"NKG\",\"n\":\"Nanjing Lukou International Airport\",\"la\":31.73503,\"lo\":118.86595},\"qingdao-china\":{\"i\":\"TAO\",\"n\":\"Qingdao Jiaodong International Airport\",\"la\":36.36195,\"lo\":120.08817},\"shanghai-china\":{\"i\":\"SHA\",\"n\":\"Shanghai Hongqiao International Airport\",\"la\":31.1981,\"lo\":121.33426},\"shenzhen-china\":{\"i\":\"SZX\",\"n\":\"Shenzhen Bao'an International Airport\",\"la\":22.63947,\"lo\":113.80326},\"suzhou-china\":{\"i\":\"WUX\",\"n\":\"Sunan Shuofang International Airport\",\"la\":31.49695,\"lo\":120.43038},\"xian-china\":{\"i\":\"XIY\",\"n\":\"Xi'an Xianyang International Airport\",\"la\":34.44221,\"lo\":108.76238},\"yangshuo-china\":{\"i\":\"KWL\",\"n\":\"Guilin Liangjiang International Airport\",\"la\":25.21983,\"lo\":110.03955},\"yantai-china\":{\"i\":\"YNT\",\"n\":\"Yantai Penglai International Airport\",\"la\":37.65972,\"lo\":120.97812},\"barranquilla-colombia\":{\"i\":\"BAQ\",\"n\":\"Ernesto Cortissoz International Airport\",\"la\":10.8896,\"lo\":-74.7808},\"bogota-colombia\":{\"i\":\"BOG\",\"n\":\"El Dorado International Airport\",\"la\":4.70159,\"lo\":-74.1469},\"cali-colombia\":{\"i\":\"CLO\",\"n\":\"Alfonso Bonilla Aragon International Airport\",\"la\":3.54272,\"lo\":-76.3819},\"medellin-colombia\":{\"i\":\"MDE\",\"n\":\"Jose Maria Córdova International Airport\",\"la\":6.16454,\"lo\":-75.4231},\"santa-marta-colombia\":{\"i\":\"BAQ\",\"n\":\"Ernesto Cortissoz International Airport\",\"la\":10.8896,\"lo\":-74.7808},\"alajuela-costa-rica\":{\"i\":\"SJO\",\"n\":\"Juan Santamaría International Airport\",\"la\":9.99386,\"lo\":-84.2088},\"san-jose-costarica\":{\"i\":\"SJO\",\"n\":\"Juan Santamaría International Airport\",\"la\":9.99386,\"lo\":-84.2088},\"dubrovnik-croatia\":{\"i\":\"DBV\",\"n\":\"Dubrovnik Ruđer Bošković Airport\",\"la\":42.56225,\"lo\":18.26554},\"makarska-croatia\":{\"i\":\"SPU\",\"n\":\"Split Saint Jerome Airport\",\"la\":43.5389,\"lo\":16.298},\"opatija-croatia\":{\"i\":\"RJK\",\"n\":\"Rijeka Airport\",\"la\":45.21638,\"lo\":14.57085},\"osijek-croatia\":{\"i\":\"PEV\",\"n\":\"Pécs-Pogány International Airport\",\"la\":45.98889,\"lo\":18.24204},\"porec-croatia\":{\"i\":\"PUY\",\"n\":\"Pula Airport\",\"la\":44.8935,\"lo\":13.9222},\"pula-croatia\":{\"i\":\"PUY\",\"n\":\"Pula Airport\",\"la\":44.8935,\"lo\":13.9222},\"rovinj-croatia\":{\"i\":\"PUY\",\"n\":\"Pula Airport\",\"la\":44.8935,\"lo\":13.9222},\"split-croatia\":{\"i\":\"SPU\",\"n\":\"Split Saint Jerome Airport\",\"la\":43.5389,\"lo\":16.298},\"trogir-croatia\":{\"i\":\"SPU\",\"n\":\"Split Saint Jerome Airport\",\"la\":43.5389,\"lo\":16.298},\"vodice-croatia\":{\"i\":\"SPU\",\"n\":\"Split Saint Jerome Airport\",\"la\":43.5389,\"lo\":16.298},\"zadar-croatia\":{\"i\":\"ZAD\",\"n\":\"Zadar Airport\",\"la\":44.09699,\"lo\":15.35356},\"zagreb-croatia\":{\"i\":\"ZAG\",\"n\":\"Zagreb Franjo Tuđman International Airport\",\"la\":45.7429,\"lo\":16.0688},\"sibenik-croatia\":{\"i\":\"SPU\",\"n\":\"Split Saint Jerome Airport\",\"la\":43.5389,\"lo\":16.298},\"larnaca-cyprus\":{\"i\":\"LCA\",\"n\":\"Larnaca International Airport\",\"la\":34.8751,\"lo\":33.6249},\"limassol-cyprus\":{\"i\":\"LCA\",\"n\":\"Larnaca International Airport\",\"la\":34.8751,\"lo\":33.6249},\"nicosia-cyprus\":{\"i\":\"ECN\",\"n\":\"Ercan International Airport\",\"la\":35.15306,\"lo\":33.50735},\"paphos-cyprus\":{\"i\":\"PFO\",\"n\":\"Paphos International Airport\",\"la\":34.718,\"lo\":32.4857},\"brno-czechia\":{\"i\":\"PED\",\"n\":\"Pardubice Airport\",\"la\":50.01505,\"lo\":15.73981},\"ceske-budejovice-czechia\":{\"i\":\"JCL\",\"n\":\"České Budějovice South Bohemian Airport\",\"la\":48.94817,\"lo\":14.42832},\"olomouc-czechia\":{\"i\":\"OSR\",\"n\":\"Leoš Janáček Airport Ostrava\",\"la\":49.6963,\"lo\":18.1111},\"prague-czechia\":{\"i\":\"PRG\",\"n\":\"Václav Havel Airport Prague\",\"la\":50.10087,\"lo\":14.25991},\"aalborg-denmark\":{\"i\":\"AAL\",\"n\":\"Aalborg Airport\",\"la\":57.09476,\"lo\":9.84993},\"aarhus-denmark\":{\"i\":\"AAR\",\"n\":\"Aarhus Airport\",\"la\":56.30333,\"lo\":10.61829},\"copenhagen-denmark\":{\"i\":\"CPH\",\"n\":\"Copenhagen Kastrup Airport\",\"la\":55.6179,\"lo\":12.656},\"odense-denmark\":{\"i\":\"ODE\",\"n\":\"Odense Hans Christian Andersen Airport\",\"la\":55.47531,\"lo\":10.32721},\"santo-domingo-dominicanrepublic\":{\"i\":\"SDQ\",\"n\":\"Las Américas International Airport\",\"la\":18.4297,\"lo\":-69.6689},\"quito-ecuador\":{\"i\":\"UIO\",\"n\":\"Mariscal Sucre International Airport\",\"la\":-0.1254,\"lo\":-78.35431},\"aswan-egypt\":{\"i\":\"ASW\",\"n\":\"Aswan International Airport\",\"la\":23.96108,\"lo\":32.82038},\"cairo-egypt\":{\"i\":\"CAI\",\"n\":\"Cairo International Airport\",\"la\":30.11153,\"lo\":31.39669},\"hurghada-egypt\":{\"i\":\"HRG\",\"n\":\"Hurghada International Airport\",\"la\":27.17678,\"lo\":33.79669},\"luxor-egypt\":{\"i\":\"LXR\",\"n\":\"Luxor International Airport\",\"la\":25.67102,\"lo\":32.70645},\"sharm-el-sheikh-egypt\":{\"i\":\"SSH\",\"n\":\"Sharm El Sheikh International Airport\",\"la\":27.97727,\"lo\":34.39472},\"tallinn-estonia\":{\"i\":\"TLL\",\"n\":\"Lennart Meri Tallinn Airport\",\"la\":59.41325,\"lo\":24.83264},\"addis-ababa-ethiopia\":{\"i\":\"ADD\",\"n\":\"Addis Ababa Bole International Airport\",\"la\":8.97789,\"lo\":38.7993},\"nadi-fiji\":{\"i\":\"NAN\",\"n\":\"Nadi International Airport\",\"la\":-17.76182,\"lo\":177.43784},\"suva-fiji\":{\"i\":\"SUV\",\"n\":\"Nausori International Airport\",\"la\":-18.04423,\"lo\":178.56149},\"helsinki-finland\":{\"i\":\"HEL\",\"n\":\"Helsinki Vantaa Airport\",\"la\":60.31836,\"lo\":24.96334},\"oulu-finland\":{\"i\":\"OUL\",\"n\":\"Oulu Airport\",\"la\":64.9301,\"lo\":25.3546},\"rovaniemi-finland\":{\"i\":\"RVN\",\"n\":\"Rovaniemi Airport\",\"la\":66.56333,\"lo\":25.82975},\"tampere-finland\":{\"i\":\"TMP\",\"n\":\"Tampere-Pirkkala Airport\",\"la\":61.4141,\"lo\":23.6044},\"turku-finland\":{\"i\":\"TKU\",\"n\":\"Turku Airport\",\"la\":60.5141,\"lo\":22.2628},\"vaasa-finland\":{\"i\":\"VAA\",\"n\":\"Vaasa Airport\",\"la\":63.05023,\"lo\":21.76254},\"aix-en-provence-france\":{\"i\":\"MRS\",\"n\":\"Marseille Provence Airport\",\"la\":43.43809,\"lo\":5.2125},\"aix-les-bains-france\":{\"i\":\"GVA\",\"n\":\"Geneva International Airport\",\"la\":46.2381,\"lo\":6.10895},\"ajaccio-france\":{\"i\":\"FSC\",\"n\":\"Figari Sud-Corse Airport\",\"la\":41.50185,\"lo\":9.09709},\"amiens-france\":{\"i\":\"BVA\",\"n\":\"Beauvais-Tillé airport\",\"la\":49.4544,\"lo\":2.11278},\"angers-france\":{\"i\":\"NTE\",\"n\":\"Nantes Atlantique Airport\",\"la\":47.1532,\"lo\":-1.61073},\"annecy-france\":{\"i\":\"GVA\",\"n\":\"Geneva International Airport\",\"la\":46.2381,\"lo\":6.10895},\"antibes-france\":{\"i\":\"NCE\",\"n\":\"Nice-Côte d'Azur Airport\",\"la\":43.6584,\"lo\":7.21587},\"arcachon-france\":{\"i\":\"BOD\",\"n\":\"Bordeaux–Mérignac Airport\",\"la\":44.82865,\"lo\":-0.71536},\"arles-france\":{\"i\":\"MRS\",\"n\":\"Marseille Provence Airport\",\"la\":43.43809,\"lo\":5.2125},\"arras-france\":{\"i\":\"LIL\",\"n\":\"Lille Airport\",\"la\":50.56656,\"lo\":3.10243},\"avignon-france\":{\"i\":\"MRS\",\"n\":\"Marseille Provence Airport\",\"la\":43.43809,\"lo\":5.2125},\"bastia-france\":{\"i\":\"BIA\",\"n\":\"Bastia-Poretta International airport\",\"la\":42.5527,\"lo\":9.48373},\"bayonne-france\":{\"i\":\"BIO\",\"n\":\"Bilbao Airport\",\"la\":43.3011,\"lo\":-2.91061},\"besancon-france\":{\"i\":\"GVA\",\"n\":\"Geneva International Airport\",\"la\":46.2381,\"lo\":6.10895},\"biarritz-france\":{\"i\":\"BIO\",\"n\":\"Bilbao Airport\",\"la\":43.3011,\"lo\":-2.91061},\"bordeaux-france\":{\"i\":\"BOD\",\"n\":\"Bordeaux–Mérignac Airport\",\"la\":44.82865,\"lo\":-0.71536},\"brest-france\":{\"i\":\"BES\",\"n\":\"Brest Bretagne airport\",\"la\":48.4479,\"lo\":-4.41854},\"beziers-france\":{\"i\":\"MPL\",\"n\":\"Montpellier-Méditerranée Airport\",\"la\":43.5762,\"lo\":3.96301},\"cannes-france\":{\"i\":\"NCE\",\"n\":\"Nice-Côte d'Azur Airport\",\"la\":43.6584,\"lo\":7.21587},\"carcassonne-france\":{\"i\":\"TLS\",\"n\":\"Toulouse-Blagnac Airport\",\"la\":43.6291,\"lo\":1.36382},\"cassis-france\":{\"i\":\"MRS\",\"n\":\"Marseille Provence Airport\",\"la\":43.43809,\"lo\":5.2125},\"chalon-sur-saone-france\":{\"i\":\"GVA\",\"n\":\"Geneva International Airport\",\"la\":46.2381,\"lo\":6.10895},\"chantilly-france\":{\"i\":\"CDG\",\"n\":\"Charles de Gaulle International Airport\",\"la\":49.00896,\"lo\":2.55412},\"chartres-france\":{\"i\":\"ORY\",\"n\":\"Paris-Orly Airport\",\"la\":48.7295,\"lo\":2.35896},\"clermont-ferrand-france\":{\"i\":\"CFE\",\"n\":\"Clermont-Ferrand Auvergne airport\",\"la\":45.7867,\"lo\":3.16917},\"cognac-france\":{\"i\":\"BOD\",\"n\":\"Bordeaux–Mérignac Airport\",\"la\":44.82865,\"lo\":-0.71536},\"colmar-france\":{\"i\":\"BSL\",\"n\":\"EuroAirport Basel–Mulhouse–Freiburg\",\"la\":47.60068,\"lo\":7.52112},\"compiegne-france\":{\"i\":\"CDG\",\"n\":\"Charles de Gaulle International Airport\",\"la\":49.00896,\"lo\":2.55412},\"dunkerque-france\":{\"i\":\"OST\",\"n\":\"Ostend-Bruges International Airport\",\"la\":51.1998,\"lo\":2.87467},\"grenoble-france\":{\"i\":\"LYS\",\"n\":\"Lyon Saint-Exupéry Airport\",\"la\":45.726,\"lo\":5.09014},\"hyeres-france\":{\"i\":\"MRS\",\"n\":\"Marseille Provence Airport\",\"la\":43.43809,\"lo\":5.2125},\"la-baule-france\":{\"i\":\"NTE\",\"n\":\"Nantes Atlantique Airport\",\"la\":47.1532,\"lo\":-1.61073},\"la-rochelle-france\":{\"i\":\"NTE\",\"n\":\"Nantes Atlantique Airport\",\"la\":47.1532,\"lo\":-1.61073},\"le-puy-en-velay-france\":{\"i\":\"CFE\",\"n\":\"Clermont-Ferrand Auvergne airport\",\"la\":45.7867,\"lo\":3.16917},\"le-touquet-paris-plage-france\":{\"i\":\"LIL\",\"n\":\"Lille Airport\",\"la\":50.56656,\"lo\":3.10243},\"les-sables-d-olonne-france\":{\"i\":\"NTE\",\"n\":\"Nantes Atlantique Airport\",\"la\":47.1532,\"lo\":-1.61073},\"lille-france\":{\"i\":\"LIL\",\"n\":\"Lille Airport\",\"la\":50.56656,\"lo\":3.10243},\"lyon-france\":{\"i\":\"LYS\",\"n\":\"Lyon Saint-Exupéry Airport\",\"la\":45.726,\"lo\":5.09014},\"marseille-france\":{\"i\":\"MRS\",\"n\":\"Marseille Provence Airport\",\"la\":43.43809,\"lo\":5.2125},\"menton-france\":{\"i\":\"NCE\",\"n\":\"Nice-Côte d'Azur Airport\",\"la\":43.6584,\"lo\":7.21587},\"metz-france\":{\"i\":\"LUX\",\"n\":\"Luxembourg-Findel International Airport\",\"la\":49.62685,\"lo\":6.21213},\"montpellier-france\":{\"i\":\"MPL\",\"n\":\"Montpellier-Méditerranée Airport\",\"la\":43.5762,\"lo\":3.96301},\"mulhouse-france\":{\"i\":\"BSL\",\"n\":\"EuroAirport Basel–Mulhouse–Freiburg\",\"la\":47.60068,\"lo\":7.52112},\"nancy-france\":{\"i\":\"LUX\",\"n\":\"Luxembourg-Findel International Airport\",\"la\":49.62685,\"lo\":6.21213},\"nantes-france\":{\"i\":\"NTE\",\"n\":\"Nantes Atlantique Airport\",\"la\":47.1532,\"lo\":-1.61073},\"narbonne-france\":{\"i\":\"MPL\",\"n\":\"Montpellier-Méditerranée Airport\",\"la\":43.5762,\"lo\":3.96301},\"nice-france\":{\"i\":\"NCE\",\"n\":\"Nice-Côte d'Azur Airport\",\"la\":43.6584,\"lo\":7.21587},\"nimes-france\":{\"i\":\"MPL\",\"n\":\"Montpellier-Méditerranée Airport\",\"la\":43.5762,\"lo\":3.96301},\"orleans-france\":{\"i\":\"ORY\",\"n\":\"Paris-Orly Airport\",\"la\":48.7295,\"lo\":2.35896},\"perpignan-france\":{\"i\":\"GRO\",\"n\":\"Girona-Costa Brava Airport\",\"la\":41.90464,\"lo\":2.76177},\"porto-vecchio-france\":{\"i\":\"FSC\",\"n\":\"Figari Sud-Corse Airport\",\"la\":41.50185,\"lo\":9.09709},\"perigueux-france\":{\"i\":\"BOD\",\"n\":\"Bordeaux–Mérignac Airport\",\"la\":44.82865,\"lo\":-0.71536},\"quimper-france\":{\"i\":\"BES\",\"n\":\"Brest Bretagne airport\",\"la\":48.4479,\"lo\":-4.41854},\"reims-france\":{\"i\":\"CDG\",\"n\":\"Charles de Gaulle International Airport\",\"la\":49.00896,\"lo\":2.55412},\"rennes-france\":{\"i\":\"NTE\",\"n\":\"Nantes Atlantique Airport\",\"la\":47.1532,\"lo\":-1.61073},\"roscoff-france\":{\"i\":\"BES\",\"n\":\"Brest Bretagne airport\",\"la\":48.4479,\"lo\":-4.41854},\"rouen-france\":{\"i\":\"BVA\",\"n\":\"Beauvais-Tillé airport\",\"la\":49.4544,\"lo\":2.11278},\"royan-france\":{\"i\":\"BOD\",\"n\":\"Bordeaux–Mérignac Airport\",\"la\":44.82865,\"lo\":-0.71536},\"saint-jean-de-luz-france\":{\"i\":\"BIO\",\"n\":\"Bilbao Airport\",\"la\":43.3011,\"lo\":-2.91061},\"saint-raphael-france\":{\"i\":\"NCE\",\"n\":\"Nice-Côte d'Azur Airport\",\"la\":43.6584,\"lo\":7.21587},\"saint-tropez-france\":{\"i\":\"NCE\",\"n\":\"Nice-Côte d'Azur Airport\",\"la\":43.6584,\"lo\":7.21587},\"strasbourg-france\":{\"i\":\"SXB\",\"n\":\"Strasbourg Airport\",\"la\":48.5383,\"lo\":7.62823},\"toulon-france\":{\"i\":\"MRS\",\"n\":\"Marseille Provence Airport\",\"la\":43.43809,\"lo\":5.2125},\"toulouse-france\":{\"i\":\"TLS\",\"n\":\"Toulouse-Blagnac Airport\",\"la\":43.6291,\"lo\":1.36382},\"valence-france\":{\"i\":\"LYS\",\"n\":\"Lyon Saint-Exupéry Airport\",\"la\":45.726,\"lo\":5.09014},\"vannes-france\":{\"i\":\"NTE\",\"n\":\"Nantes Atlantique Airport\",\"la\":47.1532,\"lo\":-1.61073},\"versailles-france\":{\"i\":\"ORY\",\"n\":\"Paris-Orly Airport\",\"la\":48.7295,\"lo\":2.35896},\"vichy-france\":{\"i\":\"CFE\",\"n\":\"Clermont-Ferrand Auvergne airport\",\"la\":45.7867,\"lo\":3.16917},\"epinal-france\":{\"i\":\"SXB\",\"n\":\"Strasbourg Airport\",\"la\":48.5383,\"lo\":7.62823},\"evian-les-bains-france\":{\"i\":\"GVA\",\"n\":\"Geneva International Airport\",\"la\":46.2381,\"lo\":6.10895},\"cayenne-french-guiana\":{\"i\":\"CAY\",\"n\":\"Cayenne – Félix Eboué Airport\",\"la\":4.81996,\"lo\":-52.36133},\"batumi-georgia\":{\"i\":\"BUS\",\"n\":\"Alexander Kartveli Batumi International Airport\",\"la\":41.60939,\"lo\":41.60032},\"tbilisi-georgia\":{\"i\":\"TBS\",\"n\":\"Tbilisi International Airport\",\"la\":41.6692,\"lo\":44.9547},\"aachen-germany\":{\"i\":\"MST\",\"n\":\"Maastricht Aachen Airport\",\"la\":50.91109,\"lo\":5.7694},\"augsburg-germany\":{\"i\":\"FMM\",\"n\":\"Memmingen Allgau Airport\",\"la\":47.98809,\"lo\":10.23825},\"bad-homburg-vor-der-hohe-germany\":{\"i\":\"FRA\",\"n\":\"Frankfurt Main Airport\",\"la\":50.02671,\"lo\":8.55835},\"baden-baden-germany\":{\"i\":\"FKB\",\"n\":\"Karlsruhe Baden-Baden Airport\",\"la\":48.7794,\"lo\":8.0805},\"bayreuth-germany\":{\"i\":\"NUE\",\"n\":\"Nuremberg Airport\",\"la\":49.4987,\"lo\":11.07806},\"berlin-germany\":{\"i\":\"BER\",\"n\":\"Berlin Brandenburg Airport\",\"la\":52.36174,\"lo\":13.50234},\"bielefeld-germany\":{\"i\":\"PAD\",\"n\":\"Paderborn Lippstadt Airport\",\"la\":51.61253,\"lo\":8.61746},\"bonn-germany\":{\"i\":\"CGN\",\"n\":\"Cologne Bonn Airport\",\"la\":50.8659,\"lo\":7.14274},\"bremen-germany\":{\"i\":\"BRE\",\"n\":\"Bremen Airport\",\"la\":53.04679,\"lo\":8.78932},\"bremerhaven-germany\":{\"i\":\"BRE\",\"n\":\"Bremen Airport\",\"la\":53.04679,\"lo\":8.78932},\"chemnitz-germany\":{\"i\":\"DRS\",\"n\":\"Dresden Airport\",\"la\":51.13412,\"lo\":13.76783},\"cologne-germany\":{\"i\":\"CGN\",\"n\":\"Cologne Bonn Airport\",\"la\":50.8659,\"lo\":7.14274},\"cottbus-germany\":{\"i\":\"DRS\",\"n\":\"Dresden Airport\",\"la\":51.13412,\"lo\":13.76783},\"darmstadt-germany\":{\"i\":\"FRA\",\"n\":\"Frankfurt Main Airport\",\"la\":50.02671,\"lo\":8.55835},\"dortmund-germany\":{\"i\":\"DTM\",\"n\":\"Dortmund Airport\",\"la\":51.5183,\"lo\":7.61224},\"dresden-germany\":{\"i\":\"DRS\",\"n\":\"Dresden Airport\",\"la\":51.13412,\"lo\":13.76783},\"duisburg-germany\":{\"i\":\"DUS\",\"n\":\"Düsseldorf Airport\",\"la\":51.2895,\"lo\":6.76678},\"dusseldorf-germany\":{\"i\":\"DUS\",\"n\":\"Düsseldorf Airport\",\"la\":51.2895,\"lo\":6.76678},\"eisenach-germany\":{\"i\":\"ERF\",\"n\":\"Erfurt-Weimar Airport\",\"la\":50.97828,\"lo\":10.96071},\"emden-germany\":{\"i\":\"GRQ\",\"n\":\"Groningen Airport Eelde\",\"la\":53.11911,\"lo\":6.57765},\"erfurt-germany\":{\"i\":\"ERF\",\"n\":\"Erfurt-Weimar Airport\",\"la\":50.97828,\"lo\":10.96071},\"essen-germany\":{\"i\":\"DUS\",\"n\":\"Düsseldorf Airport\",\"la\":51.2895,\"lo\":6.76678},\"flensburg-germany\":{\"i\":\"ODE\",\"n\":\"Odense Hans Christian Andersen Airport\",\"la\":55.47531,\"lo\":10.32721},\"frankfurt-germany\":{\"i\":\"FRA\",\"n\":\"Frankfurt Main Airport\",\"la\":50.02671,\"lo\":8.55835},\"friedrichshafen-germany\":{\"i\":\"FDH\",\"n\":\"Bodensee Airport Friedrichshafen\",\"la\":47.6713,\"lo\":9.51149},\"fulda-germany\":{\"i\":\"KSF\",\"n\":\"Kassel Airport\",\"la\":51.41839,\"lo\":9.39164},\"garmisch-partenkirchen-germany\":{\"i\":\"INN\",\"n\":\"Innsbruck Airport\",\"la\":47.26028,\"lo\":11.34389},\"gottingen-germany\":{\"i\":\"KSF\",\"n\":\"Kassel Airport\",\"la\":51.41839,\"lo\":9.39164},\"hamburg-germany\":{\"i\":\"HAM\",\"n\":\"Hamburg Helmut Schmidt Airport\",\"la\":53.6304,\"lo\":9.98823},\"heidelberg-germany\":{\"i\":\"FRA\",\"n\":\"Frankfurt Main Airport\",\"la\":50.02671,\"lo\":8.55835},\"heilbronn-germany\":{\"i\":\"STR\",\"n\":\"Stuttgart Airport\",\"la\":48.6899,\"lo\":9.22196},\"heringsdorf-germany\":{\"i\":\"SZZ\",\"n\":\"Solidarity Szczecin–Goleniów Airport\",\"la\":53.5847,\"lo\":14.9022},\"ingolstadt-germany\":{\"i\":\"MUC\",\"n\":\"Munich Airport\",\"la\":48.3538,\"lo\":11.7861},\"kaiserslautern-germany\":{\"i\":\"HHN\",\"n\":\"Frankfurt-Hahn Airport\",\"la\":49.94635,\"lo\":7.26173},\"karlsruhe-germany\":{\"i\":\"FKB\",\"n\":\"Karlsruhe Baden-Baden Airport\",\"la\":48.7794,\"lo\":8.0805},\"kiel-germany\":{\"i\":\"HAM\",\"n\":\"Hamburg Helmut Schmidt Airport\",\"la\":53.6304,\"lo\":9.98823},\"koblenz-germany\":{\"i\":\"HHN\",\"n\":\"Frankfurt-Hahn Airport\",\"la\":49.94635,\"lo\":7.26173},\"konstanz-germany\":{\"i\":\"FDH\",\"n\":\"Bodensee Airport Friedrichshafen\",\"la\":47.6713,\"lo\":9.51149},\"leipzig-germany\":{\"i\":\"LEJ\",\"n\":\"Leipzig/Halle Airport\",\"la\":51.42066,\"lo\":12.2327},\"ludwigsburg-germany\":{\"i\":\"STR\",\"n\":\"Stuttgart Airport\",\"la\":48.6899,\"lo\":9.22196},\"ludwigshafen-am-rhein-germany\":{\"i\":\"FRA\",\"n\":\"Frankfurt Main Airport\",\"la\":50.02671,\"lo\":8.55835},\"lubeck-germany\":{\"i\":\"HAM\",\"n\":\"Hamburg Helmut Schmidt Airport\",\"la\":53.6304,\"lo\":9.98823},\"mainz-germany\":{\"i\":\"FRA\",\"n\":\"Frankfurt Main Airport\",\"la\":50.02671,\"lo\":8.55835},\"mannheim-germany\":{\"i\":\"FRA\",\"n\":\"Frankfurt Main Airport\",\"la\":50.02671,\"lo\":8.55835},\"munich-germany\":{\"i\":\"MUC\",\"n\":\"Munich Airport\",\"la\":48.3538,\"lo\":11.7861},\"munster-germany\":{\"i\":\"FMO\",\"n\":\"Münster Osnabrück Airport\",\"la\":52.13382,\"lo\":7.68848},\"nuremberg-germany\":{\"i\":\"NUE\",\"n\":\"Nuremberg Airport\",\"la\":49.4987,\"lo\":11.07806},\"oberstdorf-germany\":{\"i\":\"FDH\",\"n\":\"Bodensee Airport Friedrichshafen\",\"la\":47.6713,\"lo\":9.51149},\"offenbach-germany\":{\"i\":\"FRA\",\"n\":\"Frankfurt Main Airport\",\"la\":50.02671,\"lo\":8.55835},\"osnabruck-germany\":{\"i\":\"FMO\",\"n\":\"Münster Osnabrück Airport\",\"la\":52.13382,\"lo\":7.68848},\"passau-germany\":{\"i\":\"LNZ\",\"n\":\"Linz-Hörsching Airport\",\"la\":48.23536,\"lo\":14.18813},\"potsdam-germany\":{\"i\":\"BER\",\"n\":\"Berlin Brandenburg Airport\",\"la\":52.36174,\"lo\":13.50234},\"quedlinburg-germany\":{\"i\":\"LEJ\",\"n\":\"Leipzig/Halle Airport\",\"la\":51.42066,\"lo\":12.2327},\"regensburg-germany\":{\"i\":\"MUC\",\"n\":\"Munich Airport\",\"la\":48.3538,\"lo\":11.7861},\"saarbrucken-germany\":{\"i\":\"LUX\",\"n\":\"Luxembourg-Findel International Airport\",\"la\":49.62685,\"lo\":6.21213},\"schwerin-germany\":{\"i\":\"HAM\",\"n\":\"Hamburg Helmut Schmidt Airport\",\"la\":53.6304,\"lo\":9.98823},\"stuttgart-germany\":{\"i\":\"STR\",\"n\":\"Stuttgart Airport\",\"la\":48.6899,\"lo\":9.22196},\"timmendorfer-strand-germany\":{\"i\":\"HAM\",\"n\":\"Hamburg Helmut Schmidt Airport\",\"la\":53.6304,\"lo\":9.98823},\"titisee-neustadt-germany\":{\"i\":\"ZRH\",\"n\":\"Zürich Airport\",\"la\":47.45806,\"lo\":8.54806},\"travemunde-germany\":{\"i\":\"HAM\",\"n\":\"Hamburg Helmut Schmidt Airport\",\"la\":53.6304,\"lo\":9.98823},\"tubingen-germany\":{\"i\":\"STR\",\"n\":\"Stuttgart Airport\",\"la\":48.6899,\"lo\":9.22196},\"ulm-germany\":{\"i\":\"FMM\",\"n\":\"Memmingen Allgau Airport\",\"la\":47.98809,\"lo\":10.23825},\"weimar-germany\":{\"i\":\"ERF\",\"n\":\"Erfurt-Weimar Airport\",\"la\":50.97828,\"lo\":10.96071},\"wiesbaden-germany\":{\"i\":\"FRA\",\"n\":\"Frankfurt Main Airport\",\"la\":50.02671,\"lo\":8.55835},\"wismar-germany\":{\"i\":\"HAM\",\"n\":\"Hamburg Helmut Schmidt Airport\",\"la\":53.6304,\"lo\":9.98823},\"wolfsburg-germany\":{\"i\":\"HAJ\",\"n\":\"Hannover Airport\",\"la\":52.4611,\"lo\":9.68508},\"wurzburg-germany\":{\"i\":\"NUE\",\"n\":\"Nuremberg Airport\",\"la\":49.4987,\"lo\":11.07806},\"accra-ghana\":{\"i\":\"ACC\",\"n\":\"Kotoka International Airport\",\"la\":5.60519,\"lo\":-0.16679},\"athens-greece\":{\"i\":\"ATH\",\"n\":\"Athens Eleftherios Venizelos International Airport\",\"la\":37.9364,\"lo\":23.9445},\"heraklion-greece\":{\"i\":\"HER\",\"n\":\"Heraklion International Nikos Kazantzakis Airport\",\"la\":35.3397,\"lo\":25.1803},\"hersonissos-greece\":{\"i\":\"HER\",\"n\":\"Heraklion International Nikos Kazantzakis Airport\",\"la\":35.3397,\"lo\":25.1803},\"ierapetra-greece\":{\"i\":\"HER\",\"n\":\"Heraklion International Nikos Kazantzakis Airport\",\"la\":35.3397,\"lo\":25.1803},\"loutraki-greece\":{\"i\":\"ATH\",\"n\":\"Athens Eleftherios Venizelos International Airport\",\"la\":37.9364,\"lo\":23.9445},\"nafplio-greece\":{\"i\":\"ATH\",\"n\":\"Athens Eleftherios Venizelos International Airport\",\"la\":37.9364,\"lo\":23.9445},\"naxos-chora-greece\":{\"i\":\"JTR\",\"n\":\"Santorini International Airport\",\"la\":36.40004,\"lo\":25.47864},\"oia-greece\":{\"i\":\"JTR\",\"n\":\"Santorini International Airport\",\"la\":36.40004,\"lo\":25.47864},\"rethymno-greece\":{\"i\":\"CHQ\",\"n\":\"Chania International Airport\",\"la\":35.53121,\"lo\":24.15067},\"rhodes-greece\":{\"i\":\"RHO\",\"n\":\"Rhodes International Airport \\\"Diagoras\\\"\",\"la\":36.4054,\"lo\":28.0862},\"thessaloniki-greece\":{\"i\":\"SKG\",\"n\":\"Thessaloniki Macedonia International Airport\",\"la\":40.51928,\"lo\":22.97001},\"antigua-guatemala-guatemala\":{\"i\":\"GUA\",\"n\":\"La Aurora International Airport\",\"la\":14.5829,\"lo\":-90.52751},\"georgetown-guyana\":{\"i\":\"GEO\",\"n\":\"Cheddi Jagan International Airport\",\"la\":6.49855,\"lo\":-58.2541},\"comayagua-honduras\":{\"i\":\"XPL\",\"n\":\"Palmerola International Airport\",\"la\":14.3824,\"lo\":-87.6212},\"hong-kong-hongkong\":{\"i\":\"HKG\",\"n\":\"Hong Kong International Airport\",\"la\":22.31184,\"lo\":113.91486},\"budapest-hungary\":{\"i\":\"BUD\",\"n\":\"Budapest Liszt Ferenc International Airport\",\"la\":47.43018,\"lo\":19.26239},\"debrecen-hungary\":{\"i\":\"DEB\",\"n\":\"Debrecen International Airport\",\"la\":47.48947,\"lo\":21.61628},\"miskolc-hungary\":{\"i\":\"DEB\",\"n\":\"Debrecen International Airport\",\"la\":47.48947,\"lo\":21.61628},\"sopron-hungary\":{\"i\":\"VIE\",\"n\":\"Vienna International Airport\",\"la\":48.1103,\"lo\":16.5697},\"zalaegerszeg-hungary\":{\"i\":\"GRZ\",\"n\":\"Graz Airport\",\"la\":46.9911,\"lo\":15.4396},\"reykjavik-iceland\":{\"i\":\"KEF\",\"n\":\"Keflavik International Airport\",\"la\":63.985,\"lo\":-22.6056},\"ahmedabad-india\":{\"i\":\"AMD\",\"n\":\"Sardar Vallabh Patel International Airport\",\"la\":23.0772,\"lo\":72.6347},\"amritsar-india\":{\"i\":\"ATQ\",\"n\":\"Sri Guru Ram Das Ji International Airport\",\"la\":31.7096,\"lo\":74.7973},\"aurangabad-india\":{\"i\":\"SAG\",\"n\":\"Shirdi International Airport\",\"la\":19.68921,\"lo\":74.37365},\"bhopal-india\":{\"i\":\"BHO\",\"n\":\"Raja Bhoj International Airport\",\"la\":23.2875,\"lo\":77.3374},\"chandigarh-india\":{\"i\":\"IXC\",\"n\":\"Shaheed Bhagat Singh International Airport\",\"la\":30.6735,\"lo\":76.7885},\"coimbatore-india\":{\"i\":\"CJB\",\"n\":\"Coimbatore International Airport\",\"la\":11.03,\"lo\":77.0434},\"hyderabad-india\":{\"i\":\"HYD\",\"n\":\"Rajiv Gandhi International Airport\",\"la\":17.23132,\"lo\":78.42986},\"jaipur-india\":{\"i\":\"JAI\",\"n\":\"Jaipur International Airport\",\"la\":26.8242,\"lo\":75.8122},\"kolkata-india\":{\"i\":\"CCU\",\"n\":\"Netaji Subhash Chandra Bose International Airport\",\"la\":22.65401,\"lo\":88.44765},\"new-delhi-india\":{\"i\":\"DEL\",\"n\":\"Indira Gandhi International Airport\",\"la\":28.55563,\"lo\":77.09519},\"pune-india\":{\"i\":\"PNQ\",\"n\":\"Pune International Airport\",\"la\":18.5821,\"lo\":73.9197},\"shimla-india\":{\"i\":\"IXC\",\"n\":\"Shaheed Bhagat Singh International Airport\",\"la\":30.6735,\"lo\":76.7885},\"siliguri-india\":{\"i\":\"IXB\",\"n\":\"Bagdogra Airport\",\"la\":26.6812,\"lo\":88.3286},\"varanasi-india\":{\"i\":\"VNS\",\"n\":\"Lal Bahadur Shastri International Airport\",\"la\":25.45217,\"lo\":82.86255},\"bali-indonesia\":{\"i\":\"DPS\",\"n\":\"Denpasar I Gusti Ngurah Rai International Airport\",\"la\":-8.74841,\"lo\":115.16712},\"bandung-indonesia\":{\"i\":\"HLP\",\"n\":\"Halim Perdanakusuma International Airport\",\"la\":-6.26699,\"lo\":106.89032},\"banyuwangi-indonesia\":{\"i\":\"DPS\",\"n\":\"Denpasar I Gusti Ngurah Rai International Airport\",\"la\":-8.74841,\"lo\":115.16712},\"bekasi-indonesia\":{\"i\":\"HLP\",\"n\":\"Halim Perdanakusuma International Airport\",\"la\":-6.26699,\"lo\":106.89032},\"bogor-indonesia\":{\"i\":\"HLP\",\"n\":\"Halim Perdanakusuma International Airport\",\"la\":-6.26699,\"lo\":106.89032},\"canggu-indonesia\":{\"i\":\"DPS\",\"n\":\"Denpasar I Gusti Ngurah Rai International Airport\",\"la\":-8.74841,\"lo\":115.16712},\"denpasar-indonesia\":{\"i\":\"DPS\",\"n\":\"Denpasar I Gusti Ngurah Rai International Airport\",\"la\":-8.74841,\"lo\":115.16712},\"jakarta-indonesia\":{\"i\":\"HLP\",\"n\":\"Halim Perdanakusuma International Airport\",\"la\":-6.26699,\"lo\":106.89032},\"jimbaran-indonesia\":{\"i\":\"DPS\",\"n\":\"Denpasar I Gusti Ngurah Rai International Airport\",\"la\":-8.74841,\"lo\":115.16712},\"kuta-indonesia\":{\"i\":\"DPS\",\"n\":\"Denpasar I Gusti Ngurah Rai International Airport\",\"la\":-8.74841,\"lo\":115.16712},\"legian-indonesia\":{\"i\":\"DPS\",\"n\":\"Denpasar I Gusti Ngurah Rai International Airport\",\"la\":-8.74841,\"lo\":115.16712},\"lovina-indonesia\":{\"i\":\"DPS\",\"n\":\"Denpasar I Gusti Ngurah Rai International Airport\",\"la\":-8.74841,\"lo\":115.16712},\"malang-indonesia\":{\"i\":\"SUB\",\"n\":\"Juanda International Airport\",\"la\":-7.37983,\"lo\":112.787},\"medan-indonesia\":{\"i\":\"KNO\",\"n\":\"Kualanamu International Airport\",\"la\":3.63785,\"lo\":98.87057},\"munduk-indonesia\":{\"i\":\"DPS\",\"n\":\"Denpasar I Gusti Ngurah Rai International Airport\",\"la\":-8.74841,\"lo\":115.16712},\"nusa-dua-indonesia\":{\"i\":\"DPS\",\"n\":\"Denpasar I Gusti Ngurah Rai International Airport\",\"la\":-8.74841,\"lo\":115.16712},\"nusa-lembongan-indonesia\":{\"i\":\"DPS\",\"n\":\"Denpasar I Gusti Ngurah Rai International Airport\",\"la\":-8.74841,\"lo\":115.16712},\"nusa-penida-indonesia\":{\"i\":\"DPS\",\"n\":\"Denpasar I Gusti Ngurah Rai International Airport\",\"la\":-8.74841,\"lo\":115.16712},\"sanur-indonesia\":{\"i\":\"DPS\",\"n\":\"Denpasar I Gusti Ngurah Rai International Airport\",\"la\":-8.74841,\"lo\":115.16712},\"semarang-indonesia\":{\"i\":\"SRG\",\"n\":\"Jenderal Ahmad Yani Airport\",\"la\":-6.97073,\"lo\":110.37324},\"seminyak-indonesia\":{\"i\":\"DPS\",\"n\":\"Denpasar I Gusti Ngurah Rai International Airport\",\"la\":-8.74841,\"lo\":115.16712},\"solo-indonesia\":{\"i\":\"SOC\",\"n\":\"Adisoemarmo International Airport\",\"la\":-7.51604,\"lo\":110.75749},\"surabaya-indonesia\":{\"i\":\"SUB\",\"n\":\"Juanda International Airport\",\"la\":-7.37983,\"lo\":112.787},\"ubud-indonesia\":{\"i\":\"DPS\",\"n\":\"Denpasar I Gusti Ngurah Rai International Airport\",\"la\":-8.74841,\"lo\":115.16712},\"yogyakarta-indonesia\":{\"i\":\"YIA\",\"n\":\"Yogyakarta International Airport\",\"la\":-7.90534,\"lo\":110.05726},\"baghdad-iraq\":{\"i\":\"BGW\",\"n\":\"Baghdad International Airport / New Al Muthana Air Base\",\"la\":33.2625,\"lo\":44.2346},\"cork-ireland\":{\"i\":\"ORK\",\"n\":\"Cork International Airport\",\"la\":51.8413,\"lo\":-8.49111},\"dublin-ireland\":{\"i\":\"DUB\",\"n\":\"Dublin Airport\",\"la\":53.42871,\"lo\":-6.26212},\"galway-ireland\":{\"i\":\"SNN\",\"n\":\"Shannon Airport\",\"la\":52.702,\"lo\":-8.92482},\"tel-aviv-israel\":{\"i\":\"TLV\",\"n\":\"Ben Gurion International Airport\",\"la\":32.0114,\"lo\":34.8867},\"abano-terme-italy\":{\"i\":\"TSF\",\"n\":\"Treviso Airport\",\"la\":45.6484,\"lo\":12.1944},\"agrigento-italy\":{\"i\":\"PMO\",\"n\":\"Falcone–Borsellino Airport\",\"la\":38.176,\"lo\":13.091},\"alba-italy\":{\"i\":\"TRN\",\"n\":\"Turin Airport\",\"la\":45.2008,\"lo\":7.64963},\"alessandria-italy\":{\"i\":\"GOA\",\"n\":\"Genoa Cristoforo Colombo Airport\",\"la\":44.41204,\"lo\":8.84073},\"alghero-italy\":{\"i\":\"OLB\",\"n\":\"Olbia Costa Smeralda Airport\",\"la\":40.89895,\"lo\":9.51846},\"amalfi-italy\":{\"i\":\"NAP\",\"n\":\"Naples International Airport\",\"la\":40.886,\"lo\":14.2908},\"ancona-italy\":{\"i\":\"RMI\",\"n\":\"Federico Fellini International Airport\",\"la\":44.02002,\"lo\":12.6122},\"arezzo-italy\":{\"i\":\"FLR\",\"n\":\"Florence Airport, Peretola\",\"la\":43.80856,\"lo\":11.20282},\"assisi-italy\":{\"i\":\"PEG\",\"n\":\"Perugia San Francesco d'Assisi – Umbria International Airport\",\"la\":43.0959,\"lo\":12.5132},\"asti-italy\":{\"i\":\"TRN\",\"n\":\"Turin Airport\",\"la\":45.2008,\"lo\":7.64963},\"bari-italy\":{\"i\":\"BRI\",\"n\":\"Bari Karol Wojtyła International Airport\",\"la\":41.1389,\"lo\":16.7606},\"benevento-italy\":{\"i\":\"NAP\",\"n\":\"Naples International Airport\",\"la\":40.886,\"lo\":14.2908},\"bergamo-italy\":{\"i\":\"BGY\",\"n\":\"Il Caravaggio International Airport\",\"la\":45.66936,\"lo\":9.70885},\"bologna-italy\":{\"i\":\"BLQ\",\"n\":\"Bologna Guglielmo Marconi Airport\",\"la\":44.5354,\"lo\":11.2887},\"bolzano-italy\":{\"i\":\"INN\",\"n\":\"Innsbruck Airport\",\"la\":47.26028,\"lo\":11.34389},\"brescia-italy\":{\"i\":\"BGY\",\"n\":\"Il Caravaggio International Airport\",\"la\":45.66936,\"lo\":9.70885},\"brindisi-italy\":{\"i\":\"BDS\",\"n\":\"Brindisi Airport\",\"la\":40.6576,\"lo\":17.947},\"carpi-italy\":{\"i\":\"BLQ\",\"n\":\"Bologna Guglielmo Marconi Airport\",\"la\":44.5354,\"lo\":11.2887},\"caserta-italy\":{\"i\":\"NAP\",\"n\":\"Naples International Airport\",\"la\":40.886,\"lo\":14.2908},\"catania-italy\":{\"i\":\"CTA\",\"n\":\"Catania-Fontanarossa Airport\",\"la\":37.4668,\"lo\":15.0664},\"cattolica-italy\":{\"i\":\"RMI\",\"n\":\"Federico Fellini International Airport\",\"la\":44.02002,\"lo\":12.6122},\"cefalu-italy\":{\"i\":\"PMO\",\"n\":\"Falcone–Borsellino Airport\",\"la\":38.176,\"lo\":13.091},\"cesena-italy\":{\"i\":\"RMI\",\"n\":\"Federico Fellini International Airport\",\"la\":44.02002,\"lo\":12.6122},\"cesenatico-italy\":{\"i\":\"RMI\",\"n\":\"Federico Fellini International Airport\",\"la\":44.02002,\"lo\":12.6122},\"chianciano-terme-italy\":{\"i\":\"PEG\",\"n\":\"Perugia San Francesco d'Assisi – Umbria International Airport\",\"la\":43.0959,\"lo\":12.5132},\"como-italy\":{\"i\":\"MXP\",\"n\":\"Milan Malpensa International Airport\",\"la\":45.6306,\"lo\":8.72811},\"cosenza-italy\":{\"i\":\"SUF\",\"n\":\"Lamezia Terme Sant'Eufemia International Airport\",\"la\":38.90621,\"lo\":16.24601},\"cremona-italy\":{\"i\":\"BGY\",\"n\":\"Il Caravaggio International Airport\",\"la\":45.66936,\"lo\":9.70885},\"cuneo-italy\":{\"i\":\"NCE\",\"n\":\"Nice-Côte d'Azur Airport\",\"la\":43.6584,\"lo\":7.21587},\"desenzano-del-garda-italy\":{\"i\":\"VRN\",\"n\":\"Verona Villafranca Valerio Catullo Airport\",\"la\":45.39496,\"lo\":10.8873},\"fano-italy\":{\"i\":\"RMI\",\"n\":\"Federico Fellini International Airport\",\"la\":44.02002,\"lo\":12.6122},\"ferrara-italy\":{\"i\":\"BLQ\",\"n\":\"Bologna Guglielmo Marconi Airport\",\"la\":44.5354,\"lo\":11.2887},\"florence-italy\":{\"i\":\"FLR\",\"n\":\"Florence Airport, Peretola\",\"la\":43.80856,\"lo\":11.20282},\"foggia-italy\":{\"i\":\"BRI\",\"n\":\"Bari Karol Wojtyła International Airport\",\"la\":41.1389,\"lo\":16.7606},\"foligno-italy\":{\"i\":\"PEG\",\"n\":\"Perugia San Francesco d'Assisi – Umbria International Airport\",\"la\":43.0959,\"lo\":12.5132},\"forli-italy\":{\"i\":\"RMI\",\"n\":\"Federico Fellini International Airport\",\"la\":44.02002,\"lo\":12.6122},\"forte-dei-marmi-italy\":{\"i\":\"PSA\",\"n\":\"Pisa International Airport\",\"la\":43.6839,\"lo\":10.3927},\"gaeta-italy\":{\"i\":\"NAP\",\"n\":\"Naples International Airport\",\"la\":40.886,\"lo\":14.2908},\"gallipoli-italy\":{\"i\":\"BDS\",\"n\":\"Brindisi Airport\",\"la\":40.6576,\"lo\":17.947},\"genoa-italy\":{\"i\":\"GOA\",\"n\":\"Genoa Cristoforo Colombo Airport\",\"la\":44.41204,\"lo\":8.84073},\"grosseto-italy\":{\"i\":\"FLR\",\"n\":\"Florence Airport, Peretola\",\"la\":43.80856,\"lo\":11.20282},\"gubbio-italy\":{\"i\":\"PEG\",\"n\":\"Perugia San Francesco d'Assisi – Umbria International Airport\",\"la\":43.0959,\"lo\":12.5132},\"imola-italy\":{\"i\":\"BLQ\",\"n\":\"Bologna Guglielmo Marconi Airport\",\"la\":44.5354,\"lo\":11.2887},\"imperia-italy\":{\"i\":\"NCE\",\"n\":\"Nice-Côte d'Azur Airport\",\"la\":43.6584,\"lo\":7.21587},\"la-spezia-italy\":{\"i\":\"PSA\",\"n\":\"Pisa International Airport\",\"la\":43.6839,\"lo\":10.3927},\"lamezia-terme-italy\":{\"i\":\"SUF\",\"n\":\"Lamezia Terme Sant'Eufemia International Airport\",\"la\":38.90621,\"lo\":16.24601},\"latina-italy\":{\"i\":\"CIA\",\"n\":\"Ciampino–G. B. Pastine International Airport\",\"la\":41.79877,\"lo\":12.59533},\"lecce-italy\":{\"i\":\"BDS\",\"n\":\"Brindisi Airport\",\"la\":40.6576,\"lo\":17.947},\"livorno-italy\":{\"i\":\"PSA\",\"n\":\"Pisa International Airport\",\"la\":43.6839,\"lo\":10.3927},\"lucca-italy\":{\"i\":\"PSA\",\"n\":\"Pisa International Airport\",\"la\":43.6839,\"lo\":10.3927},\"marsala-italy\":{\"i\":\"PMO\",\"n\":\"Falcone–Borsellino Airport\",\"la\":38.176,\"lo\":13.091},\"matera-italy\":{\"i\":\"BRI\",\"n\":\"Bari Karol Wojtyła International Airport\",\"la\":41.1389,\"lo\":16.7606},\"merano-italy\":{\"i\":\"INN\",\"n\":\"Innsbruck Airport\",\"la\":47.26028,\"lo\":11.34389},\"messina-italy\":{\"i\":\"CTA\",\"n\":\"Catania-Fontanarossa Airport\",\"la\":37.4668,\"lo\":15.0664},\"milan-italy\":{\"i\":\"LIN\",\"n\":\"Milano Linate Airport\",\"la\":45.4451,\"lo\":9.27674},\"modena-italy\":{\"i\":\"BLQ\",\"n\":\"Bologna Guglielmo Marconi Airport\",\"la\":44.5354,\"lo\":11.2887},\"modica-italy\":{\"i\":\"CTA\",\"n\":\"Catania-Fontanarossa Airport\",\"la\":37.4668,\"lo\":15.0664},\"monopoli-italy\":{\"i\":\"BRI\",\"n\":\"Bari Karol Wojtyła International Airport\",\"la\":41.1389,\"lo\":16.7606},\"montecatini-terme-italy\":{\"i\":\"FLR\",\"n\":\"Florence Airport, Peretola\",\"la\":43.80856,\"lo\":11.20282},\"naples-italy\":{\"i\":\"NAP\",\"n\":\"Naples International Airport\",\"la\":40.886,\"lo\":14.2908},\"olbia-italy\":{\"i\":\"OLB\",\"n\":\"Olbia Costa Smeralda Airport\",\"la\":40.89895,\"lo\":9.51846},\"oristano-italy\":{\"i\":\"CAG\",\"n\":\"Cagliari Elmas Airport\",\"la\":39.2515,\"lo\":9.05428},\"orvieto-italy\":{\"i\":\"PEG\",\"n\":\"Perugia San Francesco d'Assisi – Umbria International Airport\",\"la\":43.0959,\"lo\":12.5132},\"ostuni-italy\":{\"i\":\"BDS\",\"n\":\"Brindisi Airport\",\"la\":40.6576,\"lo\":17.947},\"palermo-italy\":{\"i\":\"PMO\",\"n\":\"Falcone–Borsellino Airport\",\"la\":38.176,\"lo\":13.091},\"parma-italy\":{\"i\":\"VRN\",\"n\":\"Verona Villafranca Valerio Catullo Airport\",\"la\":45.39496,\"lo\":10.8873},\"perugia-italy\":{\"i\":\"PEG\",\"n\":\"Perugia San Francesco d'Assisi – Umbria International Airport\",\"la\":43.0959,\"lo\":12.5132},\"pesaro-italy\":{\"i\":\"RMI\",\"n\":\"Federico Fellini International Airport\",\"la\":44.02002,\"lo\":12.6122},\"pescara-italy\":{\"i\":\"PSR\",\"n\":\"Abruzzo Airport\",\"la\":42.43108,\"lo\":14.18298},\"piacenza-italy\":{\"i\":\"LIN\",\"n\":\"Milano Linate Airport\",\"la\":45.4451,\"lo\":9.27674},\"pisa-italy\":{\"i\":\"PSA\",\"n\":\"Pisa International Airport\",\"la\":43.6839,\"lo\":10.3927},\"polignano-a-mare-italy\":{\"i\":\"BRI\",\"n\":\"Bari Karol Wojtyła International Airport\",\"la\":41.1389,\"lo\":16.7606},\"pompei-italy\":{\"i\":\"NAP\",\"n\":\"Naples International Airport\",\"la\":40.886,\"lo\":14.2908},\"pordenone-italy\":{\"i\":\"TSF\",\"n\":\"Treviso Airport\",\"la\":45.6484,\"lo\":12.1944},\"potenza-italy\":{\"i\":\"BRI\",\"n\":\"Bari Karol Wojtyła International Airport\",\"la\":41.1389,\"lo\":16.7606},\"ragusa-italy\":{\"i\":\"CTA\",\"n\":\"Catania-Fontanarossa Airport\",\"la\":37.4668,\"lo\":15.0664},\"rapallo-italy\":{\"i\":\"GOA\",\"n\":\"Genoa Cristoforo Colombo Airport\",\"la\":44.41204,\"lo\":8.84073},\"ravenna-italy\":{\"i\":\"RMI\",\"n\":\"Federico Fellini International Airport\",\"la\":44.02002,\"lo\":12.6122},\"reggio-emilia-italy\":{\"i\":\"BLQ\",\"n\":\"Bologna Guglielmo Marconi Airport\",\"la\":44.5354,\"lo\":11.2887},\"riccione-italy\":{\"i\":\"RMI\",\"n\":\"Federico Fellini International Airport\",\"la\":44.02002,\"lo\":12.6122},\"rimini-italy\":{\"i\":\"RMI\",\"n\":\"Federico Fellini International Airport\",\"la\":44.02002,\"lo\":12.6122},\"riva-del-garda-italy\":{\"i\":\"VRN\",\"n\":\"Verona Villafranca Valerio Catullo Airport\",\"la\":45.39496,\"lo\":10.8873},\"salerno-italy\":{\"i\":\"NAP\",\"n\":\"Naples International Airport\",\"la\":40.886,\"lo\":14.2908},\"san-benedetto-del-tronto-italy\":{\"i\":\"PSR\",\"n\":\"Abruzzo Airport\",\"la\":42.43108,\"lo\":14.18298},\"sanremo-italy\":{\"i\":\"NCE\",\"n\":\"Nice-Côte d'Azur Airport\",\"la\":43.6584,\"lo\":7.21587},\"santa-margherita-ligure-italy\":{\"i\":\"GOA\",\"n\":\"Genoa Cristoforo Colombo Airport\",\"la\":44.41204,\"lo\":8.84073},\"senigallia-italy\":{\"i\":\"RMI\",\"n\":\"Federico Fellini International Airport\",\"la\":44.02002,\"lo\":12.6122},\"sestri-levante-italy\":{\"i\":\"GOA\",\"n\":\"Genoa Cristoforo Colombo Airport\",\"la\":44.41204,\"lo\":8.84073},\"siena-italy\":{\"i\":\"FLR\",\"n\":\"Florence Airport, Peretola\",\"la\":43.80856,\"lo\":11.20282},\"sirmione-italy\":{\"i\":\"VRN\",\"n\":\"Verona Villafranca Valerio Catullo Airport\",\"la\":45.39496,\"lo\":10.8873},\"sorrento-italy\":{\"i\":\"NAP\",\"n\":\"Naples International Airport\",\"la\":40.886,\"lo\":14.2908},\"spoleto-italy\":{\"i\":\"PEG\",\"n\":\"Perugia San Francesco d'Assisi – Umbria International Airport\",\"la\":43.0959,\"lo\":12.5132},\"stresa-italy\":{\"i\":\"MXP\",\"n\":\"Milan Malpensa International Airport\",\"la\":45.6306,\"lo\":8.72811},\"syracuse-italy\":{\"i\":\"CTA\",\"n\":\"Catania-Fontanarossa Airport\",\"la\":37.4668,\"lo\":15.0664},\"taormina-italy\":{\"i\":\"CTA\",\"n\":\"Catania-Fontanarossa Airport\",\"la\":37.4668,\"lo\":15.0664},\"taranto-italy\":{\"i\":\"BDS\",\"n\":\"Brindisi Airport\",\"la\":40.6576,\"lo\":17.947},\"trani-italy\":{\"i\":\"BRI\",\"n\":\"Bari Karol Wojtyła International Airport\",\"la\":41.1389,\"lo\":16.7606},\"trapani-italy\":{\"i\":\"PMO\",\"n\":\"Falcone–Borsellino Airport\",\"la\":38.176,\"lo\":13.091},\"trento-italy\":{\"i\":\"VRN\",\"n\":\"Verona Villafranca Valerio Catullo Airport\",\"la\":45.39496,\"lo\":10.8873},\"treviso-italy\":{\"i\":\"TSF\",\"n\":\"Treviso Airport\",\"la\":45.6484,\"lo\":12.1944},\"trieste-italy\":{\"i\":\"TRS\",\"n\":\"Trieste Airport\",\"la\":45.82786,\"lo\":13.46667},\"turin-italy\":{\"i\":\"TRN\",\"n\":\"Turin Airport\",\"la\":45.2008,\"lo\":7.64963},\"udine-italy\":{\"i\":\"TRS\",\"n\":\"Trieste Airport\",\"la\":45.82786,\"lo\":13.46667},\"varese-italy\":{\"i\":\"MXP\",\"n\":\"Milan Malpensa International Airport\",\"la\":45.6306,\"lo\":8.72811},\"venice-italy\":{\"i\":\"VCE\",\"n\":\"Venice Marco Polo Airport\",\"la\":45.5053,\"lo\":12.3519},\"verona-italy\":{\"i\":\"VRN\",\"n\":\"Verona Villafranca Valerio Catullo Airport\",\"la\":45.39496,\"lo\":10.8873},\"viareggio-italy\":{\"i\":\"PSA\",\"n\":\"Pisa International Airport\",\"la\":43.6839,\"lo\":10.3927},\"vicenza-italy\":{\"i\":\"TSF\",\"n\":\"Treviso Airport\",\"la\":45.6484,\"lo\":12.1944},\"viterbo-italy\":{\"i\":\"FCO\",\"n\":\"Rome–Fiumicino Leonardo da Vinci International Airport\",\"la\":41.80453,\"lo\":12.252},\"abidjan-ivory-coast\":{\"i\":\"ABJ\",\"n\":\"Félix-Houphouët-Boigny International Airport\",\"la\":5.26139,\"lo\":-3.92629},\"kingston-jamaica\":{\"i\":\"KIN\",\"n\":\"Norman Manley International Airport\",\"la\":17.9357,\"lo\":-76.7875},\"aomori-japan\":{\"i\":\"AOJ\",\"n\":\"Aomori Airport\",\"la\":40.73378,\"lo\":140.68948},\"beppu-japan\":{\"i\":\"KKJ\",\"n\":\"Kitakyushu Airport\",\"la\":33.8459,\"lo\":131.035},\"chiba-japan\":{\"i\":\"HND\",\"n\":\"Tokyo Haneda International Airport\",\"la\":35.54968,\"lo\":139.78696},\"fukuoka-japan\":{\"i\":\"FUK\",\"n\":\"Fukuoka Airport\",\"la\":33.5859,\"lo\":130.451},\"hakodate-japan\":{\"i\":\"HKD\",\"n\":\"Hakodate Airport\",\"la\":41.77,\"lo\":140.82201},\"hakone-japan\":{\"i\":\"HND\",\"n\":\"Tokyo Haneda International Airport\",\"la\":35.54968,\"lo\":139.78696},\"hamamatsu-japan\":{\"i\":\"FSZ\",\"n\":\"Mount Fuji Shizuoka Airport\",\"la\":34.79502,\"lo\":138.19098},\"hiroshima-japan\":{\"i\":\"HIJ\",\"n\":\"Hiroshima Airport\",\"la\":34.4361,\"lo\":132.91901},\"kagoshima-japan\":{\"i\":\"KOJ\",\"n\":\"Kagoshima Airport\",\"la\":31.8034,\"lo\":130.71899},\"kanazawa-japan\":{\"i\":\"KMQ\",\"n\":\"Komatsu Airport / JASDF Komatsu Air Base\",\"la\":36.39341,\"lo\":136.40689},\"kobe-japan\":{\"i\":\"UKB\",\"n\":\"Kobe Airport\",\"la\":34.6328,\"lo\":135.224},\"kumamoto-japan\":{\"i\":\"KMJ\",\"n\":\"Kumamoto Airport\",\"la\":32.8373,\"lo\":130.855},\"kurashiki-japan\":{\"i\":\"OKJ\",\"n\":\"Okayama Momotaro Airport\",\"la\":34.7569,\"lo\":133.855},\"kyoto-japan\":{\"i\":\"ITM\",\"n\":\"Osaka Itami International Airport\",\"la\":34.78085,\"lo\":135.44083},\"matsue-japan\":{\"i\":\"OKJ\",\"n\":\"Okayama Momotaro Airport\",\"la\":34.7569,\"lo\":133.855},\"matsuyama-japan\":{\"i\":\"MYJ\",\"n\":\"Matsuyama Airport\",\"la\":33.82689,\"lo\":132.70011},\"miyazaki-japan\":{\"i\":\"KMI\",\"n\":\"Miyazaki Airport\",\"la\":31.8772,\"lo\":131.449},\"nagasaki-japan\":{\"i\":\"NGS\",\"n\":\"Nagasaki Airport\",\"la\":32.9169,\"lo\":129.914},\"nagoya-japan\":{\"i\":\"NGO\",\"n\":\"Chubu Centrair International Airport\",\"la\":34.8584,\"lo\":136.80499},\"naha-japan\":{\"i\":\"OKA\",\"n\":\"Naha International Airport\",\"la\":26.19244,\"lo\":127.6398},\"nara-japan\":{\"i\":\"ITM\",\"n\":\"Osaka Itami International Airport\",\"la\":34.78085,\"lo\":135.44083},\"okayama-japan\":{\"i\":\"OKJ\",\"n\":\"Okayama Momotaro Airport\",\"la\":34.7569,\"lo\":133.855},\"osaka-japan\":{\"i\":\"ITM\",\"n\":\"Osaka Itami International Airport\",\"la\":34.78085,\"lo\":135.44083},\"sapporo-japan\":{\"i\":\"CTS\",\"n\":\"New Chitose Airport\",\"la\":42.77475,\"lo\":141.69041},\"sendai-japan\":{\"i\":\"SDJ\",\"n\":\"Sendai Airport\",\"la\":38.1397,\"lo\":140.91701},\"shizuoka-japan\":{\"i\":\"FSZ\",\"n\":\"Mount Fuji Shizuoka Airport\",\"la\":34.79502,\"lo\":138.19098},\"toyama-japan\":{\"i\":\"KMQ\",\"n\":\"Komatsu Airport / JASDF Komatsu Air Base\",\"la\":36.39341,\"lo\":136.40689},\"yamagata-japan\":{\"i\":\"SDJ\",\"n\":\"Sendai Airport\",\"la\":38.1397,\"lo\":140.91701},\"yokohama-japan\":{\"i\":\"HND\",\"n\":\"Tokyo Haneda International Airport\",\"la\":35.54968,\"lo\":139.78696},\"amman-jordan\":{\"i\":\"ADJ\",\"n\":\"Marka International (Amman Civil) Airport\",\"la\":31.9727,\"lo\":35.9916},\"aqaba-jordan\":{\"i\":\"AQJ\",\"n\":\"King Hussein International Airport\",\"la\":29.6116,\"lo\":35.0181},\"almaty-kazakhstan\":{\"i\":\"ALA\",\"n\":\"Almaty International Airport\",\"la\":43.35427,\"lo\":77.04283},\"astana-kazakhstan\":{\"i\":\"NQZ\",\"n\":\"Nursultan Nazarbayev International Airport\",\"la\":51.02703,\"lo\":71.46709},\"atyrau-kazakhstan\":{\"i\":\"GUW\",\"n\":\"Atyrau International Airport\",\"la\":47.12132,\"lo\":51.82034},\"mombasa-kenya\":{\"i\":\"MBA\",\"n\":\"Moi International Airport\",\"la\":-4.03483,\"lo\":39.5942},\"nairobi-kenya\":{\"i\":\"NBO\",\"n\":\"Jomo Kenyatta International Airport\",\"la\":-1.31889,\"lo\":36.92823},\"luang-prabang-laos\":{\"i\":\"LPQ\",\"n\":\"Luang Phabang International Airport\",\"la\":19.90427,\"lo\":102.16719},\"pakse-laos\":{\"i\":\"PKZ\",\"n\":\"Pakse International Airport\",\"la\":15.13397,\"lo\":105.77987},\"vientiane-laos\":{\"i\":\"VTE\",\"n\":\"Wattay International Airport\",\"la\":17.98505,\"lo\":102.56669},\"liepaja-latvia\":{\"i\":\"PLQ\",\"n\":\"Palanga International Airport\",\"la\":55.9732,\"lo\":21.0939},\"riga-latvia\":{\"i\":\"RIX\",\"n\":\"Riga International Airport\",\"la\":56.92075,\"lo\":23.97071},\"beirut-lebanon\":{\"i\":\"BEY\",\"n\":\"Beirut Rafic Hariri International Airport\",\"la\":33.81983,\"lo\":35.48744},\"kaunas-lithuania\":{\"i\":\"KUN\",\"n\":\"Kaunas International Airport\",\"la\":54.96397,\"lo\":24.08582},\"vilnius-lithuania\":{\"i\":\"VNO\",\"n\":\"Vilnius International Airport\",\"la\":54.6341,\"lo\":25.2858},\"luxembourg-city-luxembourg\":{\"i\":\"LUX\",\"n\":\"Luxembourg-Findel International Airport\",\"la\":49.62685,\"lo\":6.21213},\"macao-macao\":{\"i\":\"MFM\",\"n\":\"Macau International Airport\",\"la\":22.1496,\"lo\":113.592},\"johor-bahru-malaysia\":{\"i\":\"JHB\",\"n\":\"Senai International Airport\",\"la\":1.64131,\"lo\":103.67},\"male-maldives\":{\"i\":\"MLE\",\"n\":\"Velana International Airport\",\"la\":4.19183,\"lo\":73.5291},\"sliema-malta\":{\"i\":\"MLA\",\"n\":\"Malta International Airport\",\"la\":35.84593,\"lo\":14.49155},\"valletta-malta\":{\"i\":\"MLA\",\"n\":\"Malta International Airport\",\"la\":35.84593,\"lo\":14.49155},\"aguascalientes-mexico\":{\"i\":\"AGU\",\"n\":\"Aguascalientes International Airport\",\"la\":21.69959,\"lo\":-102.31837},\"atlixco-mexico\":{\"i\":\"PBC\",\"n\":\"Hermanos Serdán International Airport\",\"la\":19.15846,\"lo\":-98.37158},\"cabo-san-lucas-mexico\":{\"i\":\"SJD\",\"n\":\"Los Cabos International Airport\",\"la\":23.15192,\"lo\":-109.72073},\"cancun-mexico\":{\"i\":\"CUN\",\"n\":\"Cancún International Airport\",\"la\":21.04082,\"lo\":-86.87347},\"chihuahua-mexico\":{\"i\":\"CUU\",\"n\":\"General Roberto Fierro Villalobos International Airport\",\"la\":28.70265,\"lo\":-105.96376},\"coatepec-mexico\":{\"i\":\"VER\",\"n\":\"General Heriberto Jara International Airport\",\"la\":19.13959,\"lo\":-96.1886},\"cordoba-mexico\":{\"i\":\"VER\",\"n\":\"General Heriberto Jara International Airport\",\"la\":19.13959,\"lo\":-96.1886},\"cozumel-mexico\":{\"i\":\"CZM\",\"n\":\"Cozumel International Airport\",\"la\":20.51492,\"lo\":-86.92854},\"cuernavaca-mexico\":{\"i\":\"TLC\",\"n\":\"Adolfo López Mateos International Airport\",\"la\":19.3369,\"lo\":-99.56583},\"culiacan-mexico\":{\"i\":\"CUL\",\"n\":\"Bachigualato Federal International Airport\",\"la\":24.76504,\"lo\":-107.47523},\"guadalajara-mexico\":{\"i\":\"GDL\",\"n\":\"Guadalajara International Airport\",\"la\":20.52334,\"lo\":-103.31011},\"guanajuato-mexico\":{\"i\":\"BJX\",\"n\":\"Guanajuato International Airport\",\"la\":20.9927,\"lo\":-101.48028},\"mazatlan-mexico\":{\"i\":\"MZT\",\"n\":\"General Rafael Buelna International Airport\",\"la\":23.16282,\"lo\":-106.26452},\"mexico-city-mexico\":{\"i\":\"MEX\",\"n\":\"Mexico City Benito Juárez International Airport\",\"la\":19.43582,\"lo\":-99.07033},\"monterrey-mexico\":{\"i\":\"MTY\",\"n\":\"Monterrey International Airport\",\"la\":25.77852,\"lo\":-100.10699},\"morelia-mexico\":{\"i\":\"MLM\",\"n\":\"General Francisco J. Mujica International Airport\",\"la\":19.8499,\"lo\":-101.025},\"merida-mexico\":{\"i\":\"MID\",\"n\":\"Manuel Crescencio Rejón International Airport\",\"la\":20.93049,\"lo\":-89.64546},\"palenque-mexico\":{\"i\":\"VSA\",\"n\":\"Carlos Rovirosa Pérez International Airport\",\"la\":17.99428,\"lo\":-92.8182},\"playa-del-carmen-mexico\":{\"i\":\"CZM\",\"n\":\"Cozumel International Airport\",\"la\":20.51492,\"lo\":-86.92854},\"puebla-mexico\":{\"i\":\"PBC\",\"n\":\"Hermanos Serdán International Airport\",\"la\":19.15846,\"lo\":-98.37158},\"puerto-vallarta-mexico\":{\"i\":\"PVR\",\"n\":\"Puerto Vallarta International Airport\",\"la\":20.67991,\"lo\":-105.25439},\"queretaro-mexico\":{\"i\":\"QRO\",\"n\":\"Querétaro Intercontinental Airport\",\"la\":20.61878,\"lo\":-100.18645},\"san-miguel-de-allende-mexico\":{\"i\":\"QRO\",\"n\":\"Querétaro Intercontinental Airport\",\"la\":20.61878,\"lo\":-100.18645},\"tulum-mexico\":{\"i\":\"TQO\",\"n\":\"Felipe Carrillo Puerto International Airport Tulum\",\"la\":20.1721,\"lo\":-87.66027},\"chisinau-moldova\":{\"i\":\"RMO\",\"n\":\"Chişinău International Airport\",\"la\":46.92774,\"lo\":28.9317},\"ulaanbaatar-mongolia\":{\"i\":\"UBN\",\"n\":\"Ulaanbaatar Chinggis Khaan International Airport\",\"la\":47.64692,\"lo\":106.81983},\"budva-montenegro\":{\"i\":\"TGD\",\"n\":\"Podgorica Airport / Podgorica Golubovci Airbase\",\"la\":42.3594,\"lo\":19.2519},\"kotor-montenegro\":{\"i\":\"DBV\",\"n\":\"Dubrovnik Ruđer Bošković Airport\",\"la\":42.56225,\"lo\":18.26554},\"casablanca-morocco\":{\"i\":\"CMN\",\"n\":\"Mohammed V International Airport\",\"la\":33.3675,\"lo\":-7.58997},\"rabat-morocco\":{\"i\":\"RBA\",\"n\":\"Rabat-Salé Airport\",\"la\":34.0515,\"lo\":-6.75152},\"tangier-morocco\":{\"i\":\"TNG\",\"n\":\"Tangier Ibn Battuta Airport\",\"la\":35.73174,\"lo\":-5.92146},\"yangon-myanmar\":{\"i\":\"RGN\",\"n\":\"Yangon International Airport\",\"la\":16.9073,\"lo\":96.1332},\"swakopmund-namibia\":{\"i\":\"WVB\",\"n\":\"Walvis Bay International Airport\",\"la\":-22.97933,\"lo\":14.6471},\"windhoek-namibia\":{\"i\":\"WDH\",\"n\":\"Hosea Kutako International Airport\",\"la\":-22.4799,\"lo\":17.4709},\"kathmandu-nepal\":{\"i\":\"KTM\",\"n\":\"Tribhuvan International Airport\",\"la\":27.6966,\"lo\":85.3591},\"pokhara-nepal\":{\"i\":\"PHH\",\"n\":\"Pokhara International Airport\",\"la\":28.1838,\"lo\":84.0147},\"alkmaar-netherlands\":{\"i\":\"AMS\",\"n\":\"Amsterdam Airport Schiphol\",\"la\":52.3086,\"lo\":4.76389},\"amersfoort-netherlands\":{\"i\":\"AMS\",\"n\":\"Amsterdam Airport Schiphol\",\"la\":52.3086,\"lo\":4.76389},\"amstelveen-the-netherlands\":{\"i\":\"AMS\",\"n\":\"Amsterdam Airport Schiphol\",\"la\":52.3086,\"lo\":4.76389},\"amsterdam-netherlands\":{\"i\":\"AMS\",\"n\":\"Amsterdam Airport Schiphol\",\"la\":52.3086,\"lo\":4.76389},\"apeldoorn-netherlands\":{\"i\":\"NRN\",\"n\":\"Weeze (Niederrhein) Airport\",\"la\":51.60136,\"lo\":6.14123},\"arnhem-netherlands\":{\"i\":\"NRN\",\"n\":\"Weeze (Niederrhein) Airport\",\"la\":51.60136,\"lo\":6.14123},\"breda-netherlands\":{\"i\":\"EIN\",\"n\":\"Eindhoven Airport\",\"la\":51.4501,\"lo\":5.37453},\"delft-netherlands\":{\"i\":\"RTM\",\"n\":\"Rotterdam The Hague Airport\",\"la\":51.9569,\"lo\":4.43722},\"den-bosch-netherlands\":{\"i\":\"EIN\",\"n\":\"Eindhoven Airport\",\"la\":51.4501,\"lo\":5.37453},\"deventer-netherlands\":{\"i\":\"NRN\",\"n\":\"Weeze (Niederrhein) Airport\",\"la\":51.60136,\"lo\":6.14123},\"eindhoven-netherlands\":{\"i\":\"EIN\",\"n\":\"Eindhoven Airport\",\"la\":51.4501,\"lo\":5.37453},\"groningen-netherlands\":{\"i\":\"GRQ\",\"n\":\"Groningen Airport Eelde\",\"la\":53.11911,\"lo\":6.57765},\"haarlem-netherlands\":{\"i\":\"AMS\",\"n\":\"Amsterdam Airport Schiphol\",\"la\":52.3086,\"lo\":4.76389},\"leeuwarden-netherlands\":{\"i\":\"GRQ\",\"n\":\"Groningen Airport Eelde\",\"la\":53.11911,\"lo\":6.57765},\"maastricht-netherlands\":{\"i\":\"MST\",\"n\":\"Maastricht Aachen Airport\",\"la\":50.91109,\"lo\":5.7694},\"nijmegen-netherlands\":{\"i\":\"NRN\",\"n\":\"Weeze (Niederrhein) Airport\",\"la\":51.60136,\"lo\":6.14123},\"rotterdam-netherlands\":{\"i\":\"RTM\",\"n\":\"Rotterdam The Hague Airport\",\"la\":51.9569,\"lo\":4.43722},\"the-hague-netherlands\":{\"i\":\"RTM\",\"n\":\"Rotterdam The Hague Airport\",\"la\":51.9569,\"lo\":4.43722},\"tilburg-netherlands\":{\"i\":\"EIN\",\"n\":\"Eindhoven Airport\",\"la\":51.4501,\"lo\":5.37453},\"utrecht-netherlands\":{\"i\":\"AMS\",\"n\":\"Amsterdam Airport Schiphol\",\"la\":52.3086,\"lo\":4.76389},\"valkenburg-netherlands\":{\"i\":\"MST\",\"n\":\"Maastricht Aachen Airport\",\"la\":50.91109,\"lo\":5.7694},\"zaandam-netherlands\":{\"i\":\"AMS\",\"n\":\"Amsterdam Airport Schiphol\",\"la\":52.3086,\"lo\":4.76389},\"zandvoort-netherlands\":{\"i\":\"AMS\",\"n\":\"Amsterdam Airport Schiphol\",\"la\":52.3086,\"lo\":4.76389},\"zwolle-netherlands\":{\"i\":\"GRQ\",\"n\":\"Groningen Airport Eelde\",\"la\":53.11911,\"lo\":6.57765},\"auckland-newzealand\":{\"i\":\"AKL\",\"n\":\"Auckland International Airport\",\"la\":-37.01199,\"lo\":174.78633},\"christchurch-newzealand\":{\"i\":\"CHC\",\"n\":\"Christchurch International Airport\",\"la\":-43.48903,\"lo\":172.53206},\"queenstown-newzealand\":{\"i\":\"ZQN\",\"n\":\"Queenstown Airport\",\"la\":-45.0192,\"lo\":168.74638},\"wellington-newzealand\":{\"i\":\"WLG\",\"n\":\"Wellington International Airport\",\"la\":-41.32684,\"lo\":174.80686},\"granada-nicaragua\":{\"i\":\"MGA\",\"n\":\"Augusto C. Sandino (Managua) International Airport\",\"la\":12.1415,\"lo\":-86.1682},\"leon-nicaragua\":{\"i\":\"MGA\",\"n\":\"Augusto C. Sandino (Managua) International Airport\",\"la\":12.1415,\"lo\":-86.1682},\"abuja-nigeria\":{\"i\":\"ABV\",\"n\":\"Nnamdi Azikiwe International Airport\",\"la\":9.00679,\"lo\":7.26317},\"ikeja-nigeria\":{\"i\":\"LOS\",\"n\":\"Murtala Muhammed International Airport\",\"la\":6.57737,\"lo\":3.32116},\"lagos-nigeria\":{\"i\":\"LOS\",\"n\":\"Murtala Muhammed International Airport\",\"la\":6.57737,\"lo\":3.32116},\"bitola-north-macedonia\":{\"i\":\"OHD\",\"n\":\"Ohrid St. Paul the Apostle Airport\",\"la\":41.18,\"lo\":20.7423},\"ohrid-northmacedonia\":{\"i\":\"OHD\",\"n\":\"Ohrid St. Paul the Apostle Airport\",\"la\":41.18,\"lo\":20.7423},\"skopje-northmacedonia\":{\"i\":\"SKP\",\"n\":\"Skopje International Airport\",\"la\":41.95809,\"lo\":21.62258},\"bergen-norway\":{\"i\":\"BGO\",\"n\":\"Bergen Airport, Flesland\",\"la\":60.2934,\"lo\":5.21814},\"oslo-norway\":{\"i\":\"OSL\",\"n\":\"Oslo-Gardermoen International Airport\",\"la\":60.1939,\"lo\":11.1004},\"stavanger-norway\":{\"i\":\"SVG\",\"n\":\"Stavanger Airport, Sola\",\"la\":58.8767,\"lo\":5.63778},\"troms-norway\":{\"i\":\"TOS\",\"n\":\"Tromsø Airport\",\"la\":69.6833,\"lo\":18.9189},\"trondheim-norway\":{\"i\":\"TRD\",\"n\":\"Trondheim Airport, Værnes\",\"la\":63.4578,\"lo\":10.924},\"alesund-norway\":{\"i\":\"AES\",\"n\":\"Ålesund Airport\",\"la\":62.56044,\"lo\":6.11085},\"muscat-oman\":{\"i\":\"MCT\",\"n\":\"Muscat International Airport\",\"la\":23.60022,\"lo\":58.28527},\"salalah-oman\":{\"i\":\"SLL\",\"n\":\"Salalah International Airport\",\"la\":17.0387,\"lo\":54.0913},\"karachi-pakistan\":{\"i\":\"KHI\",\"n\":\"Jinnah International Airport\",\"la\":24.9065,\"lo\":67.1608},\"panama-city-panama\":{\"i\":\"PTY\",\"n\":\"Tocumen International Airport\",\"la\":9.07136,\"lo\":-79.3835},\"asuncion-paraguay\":{\"i\":\"ASU\",\"n\":\"Silvio Pettirossi International Airport\",\"la\":-25.24016,\"lo\":-57.51923},\"arequipa-peru\":{\"i\":\"AQP\",\"n\":\"Rodríguez Ballón International Airport\",\"la\":-16.34079,\"lo\":-71.56949},\"chiclayo-peru\":{\"i\":\"CIX\",\"n\":\"Capitán FAP José A. Quiñones González International Airport\",\"la\":-6.78922,\"lo\":-79.82825},\"cusco-peru\":{\"i\":\"CUZ\",\"n\":\"Alejandro Velasco Astete International Airport\",\"la\":-13.5357,\"lo\":-71.9388},\"iquitos-peru\":{\"i\":\"IQT\",\"n\":\"Coronel FAP Francisco Secada Vignetta International Airport\",\"la\":-3.78474,\"lo\":-73.3088},\"lima-peru\":{\"i\":\"LIM\",\"n\":\"Jorge Chávez International Airport\",\"la\":-12.0219,\"lo\":-77.11431},\"bacolod-philippines\":{\"i\":\"BCD\",\"n\":\"Bacolod-Silay International Airport\",\"la\":10.77624,\"lo\":123.01888},\"cebu-city-philippines\":{\"i\":\"CEB\",\"n\":\"Mactan Cebu International Airport\",\"la\":10.30926,\"lo\":123.97974},\"dumaguete-philippines\":{\"i\":\"TAG\",\"n\":\"Bohol-Panglao International Airport\",\"la\":9.57305,\"lo\":123.77014},\"manila-philippines\":{\"i\":\"MNL\",\"n\":\"Ninoy Aquino International Airport\",\"la\":14.5086,\"lo\":121.02},\"puerto-princesa-philippines\":{\"i\":\"PPS\",\"n\":\"Puerto Princesa International Airport / PAF Antonio Bautista Air Base\",\"la\":9.74204,\"lo\":118.75911},\"bielsko-biaa-poland\":{\"i\":\"KRK\",\"n\":\"Kraków John Paul II International Airport\",\"la\":50.0777,\"lo\":19.7848},\"bydgoszcz-poland\":{\"i\":\"POZ\",\"n\":\"Poznań-Ławica Airport\",\"la\":52.4216,\"lo\":16.82336},\"bytom-poland\":{\"i\":\"KTW\",\"n\":\"Katowice Wojciech Korfanty International Airport\",\"la\":50.47601,\"lo\":19.0807},\"chorzow-poland\":{\"i\":\"KTW\",\"n\":\"Katowice Wojciech Korfanty International Airport\",\"la\":50.47601,\"lo\":19.0807},\"czestochowa-poland\":{\"i\":\"KTW\",\"n\":\"Katowice Wojciech Korfanty International Airport\",\"la\":50.47601,\"lo\":19.0807},\"gdansk-poland\":{\"i\":\"GDN\",\"n\":\"Gdańsk Lech Wałęsa Airport\",\"la\":54.3776,\"lo\":18.4662},\"gdynia-poland\":{\"i\":\"GDN\",\"n\":\"Gdańsk Lech Wałęsa Airport\",\"la\":54.3776,\"lo\":18.4662},\"gliwice-poland\":{\"i\":\"KTW\",\"n\":\"Katowice Wojciech Korfanty International Airport\",\"la\":50.47601,\"lo\":19.0807},\"karpacz-poland\":{\"i\":\"PED\",\"n\":\"Pardubice Airport\",\"la\":50.01505,\"lo\":15.73981},\"katowice-poland\":{\"i\":\"KTW\",\"n\":\"Katowice Wojciech Korfanty International Airport\",\"la\":50.47601,\"lo\":19.0807},\"kielce-poland\":{\"i\":\"KRK\",\"n\":\"Kraków John Paul II International Airport\",\"la\":50.0777,\"lo\":19.7848},\"koobrzeg-poland\":{\"i\":\"SZZ\",\"n\":\"Solidarity Szczecin–Goleniów Airport\",\"la\":53.5847,\"lo\":14.9022},\"krakow-poland\":{\"i\":\"KRK\",\"n\":\"Kraków John Paul II International Airport\",\"la\":50.0777,\"lo\":19.7848},\"krynica-zdroj-poland\":{\"i\":\"RZE\",\"n\":\"Rzeszów-Jasionka Airport\",\"la\":50.10979,\"lo\":22.02416},\"lublin-poland\":{\"i\":\"LUZ\",\"n\":\"Lublin Airport\",\"la\":51.24016,\"lo\":22.71346},\"miedzyzdroje-poland\":{\"i\":\"SZZ\",\"n\":\"Solidarity Szczecin–Goleniów Airport\",\"la\":53.5847,\"lo\":14.9022},\"opole-poland\":{\"i\":\"KTW\",\"n\":\"Katowice Wojciech Korfanty International Airport\",\"la\":50.47601,\"lo\":19.0807},\"poznan-poland\":{\"i\":\"POZ\",\"n\":\"Poznań-Ławica Airport\",\"la\":52.4216,\"lo\":16.82336},\"rzeszow-poland\":{\"i\":\"RZE\",\"n\":\"Rzeszów-Jasionka Airport\",\"la\":50.10979,\"lo\":22.02416},\"sopot-poland\":{\"i\":\"GDN\",\"n\":\"Gdańsk Lech Wałęsa Airport\",\"la\":54.3776,\"lo\":18.4662},\"szczecin-poland\":{\"i\":\"SZZ\",\"n\":\"Solidarity Szczecin–Goleniów Airport\",\"la\":53.5847,\"lo\":14.9022},\"szczyrk-poland\":{\"i\":\"OSR\",\"n\":\"Leoš Janáček Airport Ostrava\",\"la\":49.6963,\"lo\":18.1111},\"szklarska-poreba-poland\":{\"i\":\"PED\",\"n\":\"Pardubice Airport\",\"la\":50.01505,\"lo\":15.73981},\"ustka-poland\":{\"i\":\"GDN\",\"n\":\"Gdańsk Lech Wałęsa Airport\",\"la\":54.3776,\"lo\":18.4662},\"warsaw-poland\":{\"i\":\"WAW\",\"n\":\"Warsaw Chopin Airport\",\"la\":52.1657,\"lo\":20.9671},\"wisa-poland\":{\"i\":\"OSR\",\"n\":\"Leoš Janáček Airport Ostrava\",\"la\":49.6963,\"lo\":18.1111},\"wrocaw-poland\":{\"i\":\"WRO\",\"n\":\"Copernicus Wrocław Airport\",\"la\":51.10372,\"lo\":16.8821},\"zakopane-poland\":{\"i\":\"KRK\",\"n\":\"Kraków John Paul II International Airport\",\"la\":50.0777,\"lo\":19.7848},\"zielona-gora-poland\":{\"i\":\"POZ\",\"n\":\"Poznań-Ławica Airport\",\"la\":52.4216,\"lo\":16.82336},\"odz-poland\":{\"i\":\"LCJ\",\"n\":\"Łódź Władysław Reymont Airport\",\"la\":51.7219,\"lo\":19.3981},\"swinoujscie-poland\":{\"i\":\"SZZ\",\"n\":\"Solidarity Szczecin–Goleniów Airport\",\"la\":53.5847,\"lo\":14.9022},\"albufeira-portugal\":{\"i\":\"FAO\",\"n\":\"Faro - Gago Coutinho International Airport\",\"la\":37.01591,\"lo\":-7.97094},\"amarante-portugal\":{\"i\":\"OPO\",\"n\":\"Francisco de Sá Carneiro Airport\",\"la\":41.2481,\"lo\":-8.68139},\"aveiro-portugal\":{\"i\":\"OPO\",\"n\":\"Francisco de Sá Carneiro Airport\",\"la\":41.2481,\"lo\":-8.68139},\"braga-portugal\":{\"i\":\"OPO\",\"n\":\"Francisco de Sá Carneiro Airport\",\"la\":41.2481,\"lo\":-8.68139},\"caldas-da-rainha-portugal\":{\"i\":\"LIS\",\"n\":\"Lisbon Humberto Delgado Airport\",\"la\":38.7813,\"lo\":-9.13592},\"cascais-portugal\":{\"i\":\"LIS\",\"n\":\"Lisbon Humberto Delgado Airport\",\"la\":38.7813,\"lo\":-9.13592},\"chaves-portugal\":{\"i\":\"OPO\",\"n\":\"Francisco de Sá Carneiro Airport\",\"la\":41.2481,\"lo\":-8.68139},\"coimbra-portugal\":{\"i\":\"OPO\",\"n\":\"Francisco de Sá Carneiro Airport\",\"la\":41.2481,\"lo\":-8.68139},\"estoril-portugal\":{\"i\":\"LIS\",\"n\":\"Lisbon Humberto Delgado Airport\",\"la\":38.7813,\"lo\":-9.13592},\"faro-portugal\":{\"i\":\"FAO\",\"n\":\"Faro - Gago Coutinho International Airport\",\"la\":37.01591,\"lo\":-7.97094},\"funchal-portugal\":{\"i\":\"FNC\",\"n\":\"Cristiano Ronaldo International Airport\",\"la\":32.69781,\"lo\":-16.77461},\"fatima-portugal\":{\"i\":\"LIS\",\"n\":\"Lisbon Humberto Delgado Airport\",\"la\":38.7813,\"lo\":-9.13592},\"guimaraes-portugal\":{\"i\":\"OPO\",\"n\":\"Francisco de Sá Carneiro Airport\",\"la\":41.2481,\"lo\":-8.68139},\"lagos-portugal\":{\"i\":\"FAO\",\"n\":\"Faro - Gago Coutinho International Airport\",\"la\":37.01591,\"lo\":-7.97094},\"lamego-portugal\":{\"i\":\"OPO\",\"n\":\"Francisco de Sá Carneiro Airport\",\"la\":41.2481,\"lo\":-8.68139},\"leiria-portugal\":{\"i\":\"LIS\",\"n\":\"Lisbon Humberto Delgado Airport\",\"la\":38.7813,\"lo\":-9.13592},\"lisbon-portugal\":{\"i\":\"LIS\",\"n\":\"Lisbon Humberto Delgado Airport\",\"la\":38.7813,\"lo\":-9.13592},\"nazare-portugal\":{\"i\":\"LIS\",\"n\":\"Lisbon Humberto Delgado Airport\",\"la\":38.7813,\"lo\":-9.13592},\"olhao-portugal\":{\"i\":\"FAO\",\"n\":\"Faro - Gago Coutinho International Airport\",\"la\":37.01591,\"lo\":-7.97094},\"peniche-portugal\":{\"i\":\"LIS\",\"n\":\"Lisbon Humberto Delgado Airport\",\"la\":38.7813,\"lo\":-9.13592},\"ponta-delgada-portugal\":{\"i\":\"PDL\",\"n\":\"João Paulo II Airport\",\"la\":37.7412,\"lo\":-25.6979},\"ponte-de-lima-portugal\":{\"i\":\"OPO\",\"n\":\"Francisco de Sá Carneiro Airport\",\"la\":41.2481,\"lo\":-8.68139},\"portimao-portugal\":{\"i\":\"FAO\",\"n\":\"Faro - Gago Coutinho International Airport\",\"la\":37.01591,\"lo\":-7.97094},\"porto-portugal\":{\"i\":\"OPO\",\"n\":\"Francisco de Sá Carneiro Airport\",\"la\":41.2481,\"lo\":-8.68139},\"porto-moniz-portugal\":{\"i\":\"FNC\",\"n\":\"Cristiano Ronaldo International Airport\",\"la\":32.69781,\"lo\":-16.77461},\"quarteira-portugal\":{\"i\":\"FAO\",\"n\":\"Faro - Gago Coutinho International Airport\",\"la\":37.01591,\"lo\":-7.97094},\"sesimbra-portugal\":{\"i\":\"LIS\",\"n\":\"Lisbon Humberto Delgado Airport\",\"la\":38.7813,\"lo\":-9.13592},\"setubal-portugal\":{\"i\":\"LIS\",\"n\":\"Lisbon Humberto Delgado Airport\",\"la\":38.7813,\"lo\":-9.13592},\"sintra-portugal\":{\"i\":\"LIS\",\"n\":\"Lisbon Humberto Delgado Airport\",\"la\":38.7813,\"lo\":-9.13592},\"tavira-portugal\":{\"i\":\"FAO\",\"n\":\"Faro - Gago Coutinho International Airport\",\"la\":37.01591,\"lo\":-7.97094},\"tomar-portugal\":{\"i\":\"LIS\",\"n\":\"Lisbon Humberto Delgado Airport\",\"la\":38.7813,\"lo\":-9.13592},\"viana-do-castelo-portugal\":{\"i\":\"OPO\",\"n\":\"Francisco de Sá Carneiro Airport\",\"la\":41.2481,\"lo\":-8.68139},\"vila-real-portugal\":{\"i\":\"OPO\",\"n\":\"Francisco de Sá Carneiro Airport\",\"la\":41.2481,\"lo\":-8.68139},\"vilamoura-portugal\":{\"i\":\"FAO\",\"n\":\"Faro - Gago Coutinho International Airport\",\"la\":37.01591,\"lo\":-7.97094},\"viseu-portugal\":{\"i\":\"OPO\",\"n\":\"Francisco de Sá Carneiro Airport\",\"la\":41.2481,\"lo\":-8.68139},\"evora-portugal\":{\"i\":\"LIS\",\"n\":\"Lisbon Humberto Delgado Airport\",\"la\":38.7813,\"lo\":-9.13592},\"obidos-portugal\":{\"i\":\"LIS\",\"n\":\"Lisbon Humberto Delgado Airport\",\"la\":38.7813,\"lo\":-9.13592},\"doha-qatar\":{\"i\":\"DOH\",\"n\":\"Hamad International Airport\",\"la\":25.27306,\"lo\":51.60806},\"brasov-romania\":{\"i\":\"GHV\",\"n\":\"Brașov-Ghimbav International Airport\",\"la\":45.70558,\"lo\":25.52287},\"bucharest-romania\":{\"i\":\"BBU\",\"n\":\"Bucharest Băneasa Aurel Vlaicu International Airport\",\"la\":44.50313,\"lo\":26.10294},\"cluj-napoca-romania\":{\"i\":\"CLJ\",\"n\":\"Avram Iancu Cluj International Airport\",\"la\":46.78604,\"lo\":23.68573},\"constanta-romania\":{\"i\":\"CND\",\"n\":\"Mihail Kogălniceanu International Airport\",\"la\":44.3622,\"lo\":28.4883},\"craiova-romania\":{\"i\":\"CRA\",\"n\":\"Craiova International Airport\",\"la\":44.3181,\"lo\":23.8886},\"kigali-rwanda\":{\"i\":\"KGL\",\"n\":\"Kigali International Airport\",\"la\":-1.96863,\"lo\":30.1395},\"apia-samoa\":{\"i\":\"APW\",\"n\":\"Faleolo International Airport\",\"la\":-13.83,\"lo\":-172.008},\"jeddah-saudiarabia\":{\"i\":\"JED\",\"n\":\"King Abdulaziz International Airport\",\"la\":21.68024,\"lo\":39.15744},\"riyadh-saudiarabia\":{\"i\":\"RUH\",\"n\":\"King Khalid International Airport\",\"la\":24.9576,\"lo\":46.6988},\"ta-if-saudi-arabia\":{\"i\":\"TIF\",\"n\":\"Taif International Airport\",\"la\":21.48474,\"lo\":40.54407},\"dakar-senegal\":{\"i\":\"DSS\",\"n\":\"Blaise Diagne International Airport\",\"la\":14.67088,\"lo\":-17.07283},\"belgrade-serbia\":{\"i\":\"BEG\",\"n\":\"Belgrade Nikola Tesla Airport\",\"la\":44.8184,\"lo\":20.3091},\"novi-sad-serbia\":{\"i\":\"BEG\",\"n\":\"Belgrade Nikola Tesla Airport\",\"la\":44.8184,\"lo\":20.3091},\"freetown-sierra-leone\":{\"i\":\"FNA\",\"n\":\"Lungi International Airport\",\"la\":8.61644,\"lo\":-13.1955},\"singapore-singapore\":{\"i\":\"SIN\",\"n\":\"Singapore Changi Airport\",\"la\":1.35019,\"lo\":103.994},\"bratislava-slovakia\":{\"i\":\"BTS\",\"n\":\"M. R. Štefánik Airport\",\"la\":48.1702,\"lo\":17.2127},\"bled-slovenia\":{\"i\":\"LJU\",\"n\":\"Ljubljana Jože Pučnik Airport\",\"la\":46.2237,\"lo\":14.4576},\"ljubljana-slovenia\":{\"i\":\"LJU\",\"n\":\"Ljubljana Jože Pučnik Airport\",\"la\":46.2237,\"lo\":14.4576},\"bloemfontein-south-africa\":{\"i\":\"BFN\",\"n\":\"Bram Fischer International Airport\",\"la\":-29.0927,\"lo\":26.3024},\"cape-town-southafrica\":{\"i\":\"CPT\",\"n\":\"Cape Town International Airport\",\"la\":-33.97403,\"lo\":18.60433},\"durban-southafrica\":{\"i\":\"DUR\",\"n\":\"King Shaka International Airport\",\"la\":-29.61338,\"lo\":31.11794},\"johannesburg-southafrica\":{\"i\":\"JNB\",\"n\":\"O.R. Tambo International Airport\",\"la\":-26.14008,\"lo\":28.2468},\"stellenbosch-southafrica\":{\"i\":\"CPT\",\"n\":\"Cape Town International Airport\",\"la\":-33.97403,\"lo\":18.60433},\"busan-southkorea\":{\"i\":\"PUS\",\"n\":\"Gimhae International Airport\",\"la\":35.1795,\"lo\":128.938},\"daegu-south-korea\":{\"i\":\"TAE\",\"n\":\"Daegu International Airport\",\"la\":35.89439,\"lo\":128.65699},\"daejeon-south-korea\":{\"i\":\"CJJ\",\"n\":\"Cheongju International Airport\",\"la\":36.71556,\"lo\":127.50029},\"gyeongju-south-korea\":{\"i\":\"TAE\",\"n\":\"Daegu International Airport\",\"la\":35.89439,\"lo\":128.65699},\"incheon-south-korea\":{\"i\":\"ICN\",\"n\":\"Incheon International Airport\",\"la\":37.4691,\"lo\":126.451},\"seoul-southkorea\":{\"i\":\"GMP\",\"n\":\"Seoul Gimpo International Airport\",\"la\":37.5583,\"lo\":126.791},\"suwon-south-korea\":{\"i\":\"GMP\",\"n\":\"Seoul Gimpo International Airport\",\"la\":37.5583,\"lo\":126.791},\"a-coruna-spain\":{\"i\":\"SCQ\",\"n\":\"Santiago-Rosalía de Castro Airport\",\"la\":42.8963,\"lo\":-8.41514},\"adeje-spain\":{\"i\":\"TFS\",\"n\":\"Tenerife Sur Airport\",\"la\":28.0445,\"lo\":-16.5725},\"alcala-de-henares-spain\":{\"i\":\"MAD\",\"n\":\"Adolfo Suárez Madrid–Barajas Airport\",\"la\":40.49341,\"lo\":-3.57225},\"alcobendas-spain\":{\"i\":\"MAD\",\"n\":\"Adolfo Suárez Madrid–Barajas Airport\",\"la\":40.49341,\"lo\":-3.57225},\"algeciras-spain\":{\"i\":\"GIB\",\"n\":\"Gibraltar Airport\",\"la\":36.15168,\"lo\":-5.34978},\"alicante-spain\":{\"i\":\"ALC\",\"n\":\"Alicante-Elche Miguel Hernández Airport\",\"la\":38.2822,\"lo\":-0.55816},\"almunecar-spain\":{\"i\":\"AGP\",\"n\":\"Málaga-Costa del Sol Airport\",\"la\":36.67823,\"lo\":-4.50021},\"altea-spain\":{\"i\":\"ALC\",\"n\":\"Alicante-Elche Miguel Hernández Airport\",\"la\":38.2822,\"lo\":-0.55816},\"antequera-spain\":{\"i\":\"AGP\",\"n\":\"Málaga-Costa del Sol Airport\",\"la\":36.67823,\"lo\":-4.50021},\"aranjuez-spain\":{\"i\":\"MAD\",\"n\":\"Adolfo Suárez Madrid–Barajas Airport\",\"la\":40.49341,\"lo\":-3.57225},\"arrecife-spain\":{\"i\":\"ACE\",\"n\":\"César Manrique-Lanzarote Airport\",\"la\":28.9455,\"lo\":-13.6052},\"aviles-spain\":{\"i\":\"OVD\",\"n\":\"Asturias Airport\",\"la\":43.5636,\"lo\":-6.03462},\"benalmadena-spain\":{\"i\":\"AGP\",\"n\":\"Málaga-Costa del Sol Airport\",\"la\":36.67823,\"lo\":-4.50021},\"benicassim-spain\":{\"i\":\"VLC\",\"n\":\"Valencia Airport\",\"la\":39.48916,\"lo\":-0.48096},\"benidorm-spain\":{\"i\":\"ALC\",\"n\":\"Alicante-Elche Miguel Hernández Airport\",\"la\":38.2822,\"lo\":-0.55816},\"bilbao-spain\":{\"i\":\"BIO\",\"n\":\"Bilbao Airport\",\"la\":43.3011,\"lo\":-2.91061},\"calpe-spain\":{\"i\":\"ALC\",\"n\":\"Alicante-Elche Miguel Hernández Airport\",\"la\":38.2822,\"lo\":-0.55816},\"cartagena-spain\":{\"i\":\"RMU\",\"n\":\"Region of Murcia International Airport\",\"la\":37.80285,\"lo\":-1.12488},\"castelldefels-spain\":{\"i\":\"BCN\",\"n\":\"Josep Tarradellas Barcelona-El Prat Airport\",\"la\":41.2971,\"lo\":2.07846},\"castellon-de-la-plana-spain\":{\"i\":\"VLC\",\"n\":\"Valencia Airport\",\"la\":39.48916,\"lo\":-0.48096},\"chiclana-de-la-frontera-spain\":{\"i\":\"TNG\",\"n\":\"Tangier Ibn Battuta Airport\",\"la\":35.73174,\"lo\":-5.92146},\"conil-de-la-frontera-spain\":{\"i\":\"TNG\",\"n\":\"Tangier Ibn Battuta Airport\",\"la\":35.73174,\"lo\":-5.92146},\"corralejo-spain\":{\"i\":\"FUE\",\"n\":\"Fuerteventura Airport\",\"la\":28.4527,\"lo\":-13.8638},\"cullera-spain\":{\"i\":\"VLC\",\"n\":\"Valencia Airport\",\"la\":39.48916,\"lo\":-0.48096},\"cadiz-spain\":{\"i\":\"GIB\",\"n\":\"Gibraltar Airport\",\"la\":36.15168,\"lo\":-5.34978},\"cordoba-spain\":{\"i\":\"SVQ\",\"n\":\"Seville Airport\",\"la\":37.418,\"lo\":-5.89311},\"denia-spain\":{\"i\":\"ALC\",\"n\":\"Alicante-Elche Miguel Hernández Airport\",\"la\":38.2822,\"lo\":-0.55816},\"el-puerto-de-santa-maria-spain\":{\"i\":\"GIB\",\"n\":\"Gibraltar Airport\",\"la\":36.15168,\"lo\":-5.34978},\"elche-spain\":{\"i\":\"ALC\",\"n\":\"Alicante-Elche Miguel Hernández Airport\",\"la\":38.2822,\"lo\":-0.55816},\"estepona-spain\":{\"i\":\"GIB\",\"n\":\"Gibraltar Airport\",\"la\":36.15168,\"lo\":-5.34978},\"ferrol-spain\":{\"i\":\"SCQ\",\"n\":\"Santiago-Rosalía de Castro Airport\",\"la\":42.8963,\"lo\":-8.41514},\"figueres-spain\":{\"i\":\"GRO\",\"n\":\"Girona-Costa Brava Airport\",\"la\":41.90464,\"lo\":2.76177},\"fuengirola-spain\":{\"i\":\"AGP\",\"n\":\"Málaga-Costa del Sol Airport\",\"la\":36.67823,\"lo\":-4.50021},\"gandia-spain\":{\"i\":\"VLC\",\"n\":\"Valencia Airport\",\"la\":39.48916,\"lo\":-0.48096},\"getafe-spain\":{\"i\":\"MAD\",\"n\":\"Adolfo Suárez Madrid–Barajas Airport\",\"la\":40.49341,\"lo\":-3.57225},\"gijon-spain\":{\"i\":\"OVD\",\"n\":\"Asturias Airport\",\"la\":43.5636,\"lo\":-6.03462},\"girona-spain\":{\"i\":\"GRO\",\"n\":\"Girona-Costa Brava Airport\",\"la\":41.90464,\"lo\":2.76177},\"granada-spain\":{\"i\":\"AGP\",\"n\":\"Málaga-Costa del Sol Airport\",\"la\":36.67823,\"lo\":-4.50021},\"guadalajara-spain\":{\"i\":\"MAD\",\"n\":\"Adolfo Suárez Madrid–Barajas Airport\",\"la\":40.49341,\"lo\":-3.57225},\"hondarribia-spain\":{\"i\":\"BIO\",\"n\":\"Bilbao Airport\",\"la\":43.3011,\"lo\":-2.91061},\"huelva-spain\":{\"i\":\"SVQ\",\"n\":\"Seville Airport\",\"la\":37.418,\"lo\":-5.89311},\"huesca-spain\":{\"i\":\"ZAZ\",\"n\":\"Zaragoza Airport\",\"la\":41.6662,\"lo\":-1.04155},\"ibiza-spain\":{\"i\":\"IBZ\",\"n\":\"Ibiza Airport\",\"la\":38.8729,\"lo\":1.37312},\"jaca-spain\":{\"i\":\"ZAZ\",\"n\":\"Zaragoza Airport\",\"la\":41.6662,\"lo\":-1.04155},\"jerez-de-la-frontera-spain\":{\"i\":\"SVQ\",\"n\":\"Seville Airport\",\"la\":37.418,\"lo\":-5.89311},\"las-palmas-de-gran-canaria-spain\":{\"i\":\"LPA\",\"n\":\"Gran Canaria Airport\",\"la\":27.9319,\"lo\":-15.3866},\"leon-spain\":{\"i\":\"OVD\",\"n\":\"Asturias Airport\",\"la\":43.5636,\"lo\":-6.03462},\"llanes-spain\":{\"i\":\"OVD\",\"n\":\"Asturias Airport\",\"la\":43.5636,\"lo\":-6.03462},\"lleida-spain\":{\"i\":\"REU\",\"n\":\"Reus Airport\",\"la\":41.14751,\"lo\":1.16835},\"lloret-de-mar-spain\":{\"i\":\"GRO\",\"n\":\"Girona-Costa Brava Airport\",\"la\":41.90464,\"lo\":2.76177},\"logrono-spain\":{\"i\":\"BIO\",\"n\":\"Bilbao Airport\",\"la\":43.3011,\"lo\":-2.91061},\"lugo-spain\":{\"i\":\"SCQ\",\"n\":\"Santiago-Rosalía de Castro Airport\",\"la\":42.8963,\"lo\":-8.41514},\"madrid-spain\":{\"i\":\"MAD\",\"n\":\"Adolfo Suárez Madrid–Barajas Airport\",\"la\":40.49341,\"lo\":-3.57225},\"mahon-spain\":{\"i\":\"MAH\",\"n\":\"Menorca Airport\",\"la\":39.8626,\"lo\":4.21865},\"marbella-spain\":{\"i\":\"AGP\",\"n\":\"Málaga-Costa del Sol Airport\",\"la\":36.67823,\"lo\":-4.50021},\"maspalomas-spain\":{\"i\":\"LPA\",\"n\":\"Gran Canaria Airport\",\"la\":27.9319,\"lo\":-15.3866},\"mataro-spain\":{\"i\":\"BCN\",\"n\":\"Josep Tarradellas Barcelona-El Prat Airport\",\"la\":41.2971,\"lo\":2.07846},\"motril-spain\":{\"i\":\"AGP\",\"n\":\"Málaga-Costa del Sol Airport\",\"la\":36.67823,\"lo\":-4.50021},\"murcia-spain\":{\"i\":\"RMU\",\"n\":\"Region of Murcia International Airport\",\"la\":37.80285,\"lo\":-1.12488},\"malaga-spain\":{\"i\":\"AGP\",\"n\":\"Málaga-Costa del Sol Airport\",\"la\":36.67823,\"lo\":-4.50021},\"nerja-spain\":{\"i\":\"AGP\",\"n\":\"Málaga-Costa del Sol Airport\",\"la\":36.67823,\"lo\":-4.50021},\"ourense-spain\":{\"i\":\"SCQ\",\"n\":\"Santiago-Rosalía de Castro Airport\",\"la\":42.8963,\"lo\":-8.41514},\"oviedo-spain\":{\"i\":\"OVD\",\"n\":\"Asturias Airport\",\"la\":43.5636,\"lo\":-6.03462},\"palma-spain\":{\"i\":\"PMI\",\"n\":\"Palma de Mallorca Airport\",\"la\":39.5517,\"lo\":2.73881},\"pamplona-spain\":{\"i\":\"BIO\",\"n\":\"Bilbao Airport\",\"la\":43.3011,\"lo\":-2.91061},\"playa-blanca-spain\":{\"i\":\"ACE\",\"n\":\"César Manrique-Lanzarote Airport\",\"la\":28.9455,\"lo\":-13.6052},\"puerto-de-la-cruz-spain\":{\"i\":\"TFN\",\"n\":\"Tenerife Norte-Ciudad de La Laguna Airport\",\"la\":28.48275,\"lo\":-16.34171},\"puerto-del-carmen-spain\":{\"i\":\"ACE\",\"n\":\"César Manrique-Lanzarote Airport\",\"la\":28.9455,\"lo\":-13.6052},\"ribadesella-spain\":{\"i\":\"OVD\",\"n\":\"Asturias Airport\",\"la\":43.5636,\"lo\":-6.03462},\"ronda-spain\":{\"i\":\"AGP\",\"n\":\"Málaga-Costa del Sol Airport\",\"la\":36.67823,\"lo\":-4.50021},\"roses-spain\":{\"i\":\"GRO\",\"n\":\"Girona-Costa Brava Airport\",\"la\":41.90464,\"lo\":2.76177},\"sabadell-spain\":{\"i\":\"BCN\",\"n\":\"Josep Tarradellas Barcelona-El Prat Airport\",\"la\":41.2971,\"lo\":2.07846},\"salou-spain\":{\"i\":\"REU\",\"n\":\"Reus Airport\",\"la\":41.14751,\"lo\":1.16835},\"san-sebastian-spain\":{\"i\":\"BIO\",\"n\":\"Bilbao Airport\",\"la\":43.3011,\"lo\":-2.91061},\"sanlucar-de-barrameda-spain\":{\"i\":\"SVQ\",\"n\":\"Seville Airport\",\"la\":37.418,\"lo\":-5.89311},\"santa-cruz-de-tenerife-spain\":{\"i\":\"TFN\",\"n\":\"Tenerife Norte-Ciudad de La Laguna Airport\",\"la\":28.48275,\"lo\":-16.34171},\"santander-spain\":{\"i\":\"BIO\",\"n\":\"Bilbao Airport\",\"la\":43.3011,\"lo\":-2.91061},\"santiago-de-compostela-spain\":{\"i\":\"SCQ\",\"n\":\"Santiago-Rosalía de Castro Airport\",\"la\":42.8963,\"lo\":-8.41514},\"segovia-spain\":{\"i\":\"MAD\",\"n\":\"Adolfo Suárez Madrid–Barajas Airport\",\"la\":40.49341,\"lo\":-3.57225},\"seville-spain\":{\"i\":\"SVQ\",\"n\":\"Seville Airport\",\"la\":37.418,\"lo\":-5.89311},\"sitges-spain\":{\"i\":\"BCN\",\"n\":\"Josep Tarradellas Barcelona-El Prat Airport\",\"la\":41.2971,\"lo\":2.07846},\"soria-spain\":{\"i\":\"ZAZ\",\"n\":\"Zaragoza Airport\",\"la\":41.6662,\"lo\":-1.04155},\"tarifa-spain\":{\"i\":\"GIB\",\"n\":\"Gibraltar Airport\",\"la\":36.15168,\"lo\":-5.34978},\"tarragona-spain\":{\"i\":\"REU\",\"n\":\"Reus Airport\",\"la\":41.14751,\"lo\":1.16835},\"terrassa-spain\":{\"i\":\"BCN\",\"n\":\"Josep Tarradellas Barcelona-El Prat Airport\",\"la\":41.2971,\"lo\":2.07846},\"teruel-spain\":{\"i\":\"VLC\",\"n\":\"Valencia Airport\",\"la\":39.48916,\"lo\":-0.48096},\"toledo-spain\":{\"i\":\"MAD\",\"n\":\"Adolfo Suárez Madrid–Barajas Airport\",\"la\":40.49341,\"lo\":-3.57225},\"torremolinos-spain\":{\"i\":\"AGP\",\"n\":\"Málaga-Costa del Sol Airport\",\"la\":36.67823,\"lo\":-4.50021},\"torrevieja-spain\":{\"i\":\"ALC\",\"n\":\"Alicante-Elche Miguel Hernández Airport\",\"la\":38.2822,\"lo\":-0.55816},\"tudela-spain\":{\"i\":\"ZAZ\",\"n\":\"Zaragoza Airport\",\"la\":41.6662,\"lo\":-1.04155},\"valencia-spain\":{\"i\":\"VLC\",\"n\":\"Valencia Airport\",\"la\":39.48916,\"lo\":-0.48096},\"vigo-spain\":{\"i\":\"SCQ\",\"n\":\"Santiago-Rosalía de Castro Airport\",\"la\":42.8963,\"lo\":-8.41514},\"vitoria-gasteiz-spain\":{\"i\":\"BIO\",\"n\":\"Bilbao Airport\",\"la\":43.3011,\"lo\":-2.91061},\"zaragoza-spain\":{\"i\":\"ZAZ\",\"n\":\"Zaragoza Airport\",\"la\":41.6662,\"lo\":-1.04155},\"avila-spain\":{\"i\":\"MAD\",\"n\":\"Adolfo Suárez Madrid–Barajas Airport\",\"la\":40.49341,\"lo\":-3.57225},\"colombo-srilanka\":{\"i\":\"RML\",\"n\":\"Colombo Ratmalana International Airport\",\"la\":6.82164,\"lo\":79.88586},\"dambulla-sri-lanka\":{\"i\":\"CMB\",\"n\":\"Bandaranaike International Colombo Airport\",\"la\":7.18076,\"lo\":79.8841},\"kandy-srilanka\":{\"i\":\"CMB\",\"n\":\"Bandaranaike International Colombo Airport\",\"la\":7.18076,\"lo\":79.8841},\"gothenburg-sweden\":{\"i\":\"GOT\",\"n\":\"Göteborg Landvetter Airport\",\"la\":57.6628,\"lo\":12.2798},\"lund-sweden\":{\"i\":\"MMX\",\"n\":\"Malmö Sturup Airport\",\"la\":55.53556,\"lo\":13.37633},\"malmo-sweden\":{\"i\":\"CPH\",\"n\":\"Copenhagen Kastrup Airport\",\"la\":55.6179,\"lo\":12.656},\"stockholm-sweden\":{\"i\":\"ARN\",\"n\":\"Stockholm-Arlanda Airport\",\"la\":59.64849,\"lo\":17.92883},\"umea-sweden\":{\"i\":\"UME\",\"n\":\"Umeå Airport\",\"la\":63.7918,\"lo\":20.2828},\"uppsala-sweden\":{\"i\":\"ARN\",\"n\":\"Stockholm-Arlanda Airport\",\"la\":59.64849,\"lo\":17.92883},\"ascona-switzerland\":{\"i\":\"MXP\",\"n\":\"Milan Malpensa International Airport\",\"la\":45.6306,\"lo\":8.72811},\"basel-switzerland\":{\"i\":\"BSL\",\"n\":\"EuroAirport Basel–Mulhouse–Freiburg\",\"la\":47.60068,\"lo\":7.52112},\"bern-switzerland\":{\"i\":\"BSL\",\"n\":\"EuroAirport Basel–Mulhouse–Freiburg\",\"la\":47.60068,\"lo\":7.52112},\"fribourg-switzerland\":{\"i\":\"BSL\",\"n\":\"EuroAirport Basel–Mulhouse–Freiburg\",\"la\":47.60068,\"lo\":7.52112},\"geneva-switzerland\":{\"i\":\"GVA\",\"n\":\"Geneva International Airport\",\"la\":46.2381,\"lo\":6.10895},\"grindelwald-switzerland\":{\"i\":\"ZRH\",\"n\":\"Zürich Airport\",\"la\":47.45806,\"lo\":8.54806},\"interlaken-switzerland\":{\"i\":\"ZRH\",\"n\":\"Zürich Airport\",\"la\":47.45806,\"lo\":8.54806},\"lausanne-switzerland\":{\"i\":\"GVA\",\"n\":\"Geneva International Airport\",\"la\":46.2381,\"lo\":6.10895},\"locarno-switzerland\":{\"i\":\"MXP\",\"n\":\"Milan Malpensa International Airport\",\"la\":45.6306,\"lo\":8.72811},\"lucerne-switzerland\":{\"i\":\"ZRH\",\"n\":\"Zürich Airport\",\"la\":47.45806,\"lo\":8.54806},\"lugano-switzerland\":{\"i\":\"MXP\",\"n\":\"Milan Malpensa International Airport\",\"la\":45.6306,\"lo\":8.72811},\"montreux-switzerland\":{\"i\":\"GVA\",\"n\":\"Geneva International Airport\",\"la\":46.2381,\"lo\":6.10895},\"pontresina-switzerland\":{\"i\":\"BGY\",\"n\":\"Il Caravaggio International Airport\",\"la\":45.66936,\"lo\":9.70885},\"st-gallen-switzerland\":{\"i\":\"FDH\",\"n\":\"Bodensee Airport Friedrichshafen\",\"la\":47.6713,\"lo\":9.51149},\"thun-switzerland\":{\"i\":\"BSL\",\"n\":\"EuroAirport Basel–Mulhouse–Freiburg\",\"la\":47.60068,\"lo\":7.52112},\"vevey-switzerland\":{\"i\":\"GVA\",\"n\":\"Geneva International Airport\",\"la\":46.2381,\"lo\":6.10895},\"zurich-switzerland\":{\"i\":\"ZRH\",\"n\":\"Zürich Airport\",\"la\":47.45806,\"lo\":8.54806},\"kaohsiung-taiwan\":{\"i\":\"KHH\",\"n\":\"Kaohsiung International Airport\",\"la\":22.5771,\"lo\":120.35},\"taichung-taiwan\":{\"i\":\"RMQ\",\"n\":\"Taichung International Airport / Ching Chuang Kang Air Base\",\"la\":24.2647,\"lo\":120.621},\"tainan-taiwan\":{\"i\":\"TNN\",\"n\":\"Tainan International Airport / Tainan Air Base\",\"la\":22.9504,\"lo\":120.206},\"taipei-taiwan\":{\"i\":\"TSA\",\"n\":\"Taipei Songshan International Airport\",\"la\":25.06724,\"lo\":121.55282},\"arusha-tanzania\":{\"i\":\"JRO\",\"n\":\"Kilimanjaro International Airport\",\"la\":-3.42705,\"lo\":37.07353},\"dar-es-salaam-tanzania\":{\"i\":\"DAR\",\"n\":\"Julius Nyerere International Airport\",\"la\":-6.8735,\"lo\":39.20729},\"zanzibar-city-tanzania\":{\"i\":\"ZNZ\",\"n\":\"Abeid Amani Karume International Airport\",\"la\":-6.22202,\"lo\":39.2249},\"bangkok-thailand\":{\"i\":\"DMK\",\"n\":\"Don Mueang International Airport\",\"la\":13.9126,\"lo\":100.607},\"chiang-mai-thailand\":{\"i\":\"CNX\",\"n\":\"Chiang Mai International Airport\",\"la\":18.7668,\"lo\":98.9626},\"chiang-rai-thailand\":{\"i\":\"CEI\",\"n\":\"Mae Fah Luang - Chiang Rai International Airport\",\"la\":19.9523,\"lo\":99.8829},\"hat-yai-thailand\":{\"i\":\"HDY\",\"n\":\"Hat Yai International Airport\",\"la\":6.93321,\"lo\":100.393},\"hua-hin-thailand\":{\"i\":\"UTP\",\"n\":\"U-Tapao–Rayong–Pattaya International Airport\",\"la\":12.6799,\"lo\":101.005},\"pattaya-thailand\":{\"i\":\"UTP\",\"n\":\"U-Tapao–Rayong–Pattaya International Airport\",\"la\":12.6799,\"lo\":101.005},\"phuket-thailand\":{\"i\":\"HKT\",\"n\":\"Phuket International Airport\",\"la\":8.11326,\"lo\":98.3174},\"tunis-tunisia\":{\"i\":\"TUN\",\"n\":\"Tunis Carthage International Airport\",\"la\":36.851,\"lo\":10.2272},\"adana-turkiye\":{\"i\":\"COV\",\"n\":\"Çukurova International Airport\",\"la\":36.89148,\"lo\":35.07124},\"alanya-turkiye\":{\"i\":\"AYT\",\"n\":\"Antalya International Airport\",\"la\":36.8987,\"lo\":30.8005},\"ankara-trkiye\":{\"i\":\"ESB\",\"n\":\"Esenboğa International Airport\",\"la\":40.1281,\"lo\":32.9951},\"antalya-trkiye\":{\"i\":\"AYT\",\"n\":\"Antalya International Airport\",\"la\":36.8987,\"lo\":30.8005},\"bursa-turkiye\":{\"i\":\"SAW\",\"n\":\"Istanbul Sabiha Gökçen International Airport\",\"la\":40.8986,\"lo\":29.3092},\"corlu-turkiye\":{\"i\":\"IST\",\"n\":\"İstanbul Airport\",\"la\":41.27487,\"lo\":28.73214},\"eskisehir-turkiye\":{\"i\":\"AOE\",\"n\":\"Hasan Polatkan Airport\",\"la\":39.81164,\"lo\":30.51927},\"gaziantep-turkiye\":{\"i\":\"GZT\",\"n\":\"Gaziantep Oğuzeli International Airport\",\"la\":36.9472,\"lo\":37.4787},\"istanbul-trkiye\":{\"i\":\"SAW\",\"n\":\"Istanbul Sabiha Gökçen International Airport\",\"la\":40.8986,\"lo\":29.3092},\"izmir-trkiye\":{\"i\":\"ADB\",\"n\":\"Adnan Menderes International Airport\",\"la\":38.2924,\"lo\":27.157},\"kayseri-turkiye\":{\"i\":\"ASR\",\"n\":\"Kayseri Erkilet International Airport\",\"la\":38.7704,\"lo\":35.4954},\"kemer-turkiye\":{\"i\":\"AYT\",\"n\":\"Antalya International Airport\",\"la\":36.8987,\"lo\":30.8005},\"konya-turkiye\":{\"i\":\"KYA\",\"n\":\"Konya Airport\",\"la\":37.979,\"lo\":32.5619},\"kusadas-turkiye\":{\"i\":\"ADB\",\"n\":\"Adnan Menderes International Airport\",\"la\":38.2924,\"lo\":27.157},\"marmaris-turkiye\":{\"i\":\"DLM\",\"n\":\"Dalaman International Airport\",\"la\":36.7131,\"lo\":28.7925},\"side-turkiye\":{\"i\":\"AYT\",\"n\":\"Antalya International Airport\",\"la\":36.8987,\"lo\":30.8005},\"canakkale-turkiye\":{\"i\":\"EDO\",\"n\":\"Balıkesir Koca Seyit Airport\",\"la\":39.55253,\"lo\":27.01019},\"chernivtsi-ukraine\":{\"i\":\"SCV\",\"n\":\"Suceava Ștefan cel Mare International Airport\",\"la\":47.6875,\"lo\":26.3541},\"abu-dhabi-unitedarabemirates\":{\"i\":\"AUH\",\"n\":\"Zayed International Airport\",\"la\":24.44097,\"lo\":54.64924},\"ajman-united-arab-emirates\":{\"i\":\"SHJ\",\"n\":\"Sharjah International Airport\",\"la\":25.3286,\"lo\":55.5172},\"sharjah-unitedarabemirates\":{\"i\":\"DXB\",\"n\":\"Dubai International Airport\",\"la\":25.24979,\"lo\":55.37099},\"aberdeen-unitedkingdom\":{\"i\":\"ABZ\",\"n\":\"Aberdeen International Airport\",\"la\":57.2019,\"lo\":-2.19778},\"alnwick-united-kingdom\":{\"i\":\"NCL\",\"n\":\"Newcastle International Airport\",\"la\":55.03796,\"lo\":-1.68958},\"ayr-unitedkingdom\":{\"i\":\"PIK\",\"n\":\"Glasgow Prestwick Airport\",\"la\":55.5015,\"lo\":-4.57718},\"barnstaple-unitedkingdom\":{\"i\":\"CWL\",\"n\":\"Cardiff International Airport\",\"la\":51.3967,\"lo\":-3.34333},\"basingstoke-united-kingdom\":{\"i\":\"LHR\",\"n\":\"London Heathrow Airport\",\"la\":51.47075,\"lo\":-0.45991},\"bath-unitedkingdom\":{\"i\":\"BRS\",\"n\":\"Bristol Airport\",\"la\":51.38233,\"lo\":-2.71645},\"belfast-unitedkingdom\":{\"i\":\"BFS\",\"n\":\"Belfast International Airport\",\"la\":54.6575,\"lo\":-6.21583},\"birmingham-united-kingdom\":{\"i\":\"BHX\",\"n\":\"Birmingham Airport\",\"la\":52.4539,\"lo\":-1.74803},\"blackpool-united-kingdom\":{\"i\":\"LPL\",\"n\":\"Liverpool John Lennon Airport\",\"la\":53.33486,\"lo\":-2.84964},\"bournemouth-united-kingdom\":{\"i\":\"BRS\",\"n\":\"Bristol Airport\",\"la\":51.38233,\"lo\":-2.71645},\"bridgwater-united-kingdom\":{\"i\":\"BRS\",\"n\":\"Bristol Airport\",\"la\":51.38233,\"lo\":-2.71645},\"bristol-unitedkingdom\":{\"i\":\"BRS\",\"n\":\"Bristol Airport\",\"la\":51.38233,\"lo\":-2.71645},\"burnley-united-kingdom\":{\"i\":\"LBA\",\"n\":\"Leeds Bradford Airport\",\"la\":53.8659,\"lo\":-1.66057},\"cambridge-unitedkingdom\":{\"i\":\"STN\",\"n\":\"London Stansted Airport\",\"la\":51.885,\"lo\":0.235},\"canterbury-united-kingdom\":{\"i\":\"LGW\",\"n\":\"London Gatwick Airport\",\"la\":51.14874,\"lo\":-0.18574},\"cardiff-unitedkingdom\":{\"i\":\"CWL\",\"n\":\"Cardiff International Airport\",\"la\":51.3967,\"lo\":-3.34333},\"carlisle-united-kingdom\":{\"i\":\"NCL\",\"n\":\"Newcastle International Airport\",\"la\":55.03796,\"lo\":-1.68958},\"cheltenham-unitedkingdom\":{\"i\":\"BHX\",\"n\":\"Birmingham Airport\",\"la\":52.4539,\"lo\":-1.74803},\"chester-united-kingdom\":{\"i\":\"LPL\",\"n\":\"Liverpool John Lennon Airport\",\"la\":53.33486,\"lo\":-2.84964},\"chesterfield-united-kingdom\":{\"i\":\"EMA\",\"n\":\"East Midlands Airport\",\"la\":52.8311,\"lo\":-1.32806},\"cirencester-united-kingdom\":{\"i\":\"BRS\",\"n\":\"Bristol Airport\",\"la\":51.38233,\"lo\":-2.71645},\"colchester-united-kingdom\":{\"i\":\"STN\",\"n\":\"London Stansted Airport\",\"la\":51.885,\"lo\":0.235},\"conwy-united-kingdom\":{\"i\":\"LPL\",\"n\":\"Liverpool John Lennon Airport\",\"la\":53.33486,\"lo\":-2.84964},\"coventry-unitedkingdom\":{\"i\":\"BHX\",\"n\":\"Birmingham Airport\",\"la\":52.4539,\"lo\":-1.74803},\"crawley-united-kingdom\":{\"i\":\"LGW\",\"n\":\"London Gatwick Airport\",\"la\":51.14874,\"lo\":-0.18574},\"darlington-united-kingdom\":{\"i\":\"NCL\",\"n\":\"Newcastle International Airport\",\"la\":55.03796,\"lo\":-1.68958},\"derby-unitedkingdom\":{\"i\":\"EMA\",\"n\":\"East Midlands Airport\",\"la\":52.8311,\"lo\":-1.32806},\"derry-londonderry-united-kingdom\":{\"i\":\"BFS\",\"n\":\"Belfast International Airport\",\"la\":54.6575,\"lo\":-6.21583},\"doncaster-united-kingdom\":{\"i\":\"LBA\",\"n\":\"Leeds Bradford Airport\",\"la\":53.8659,\"lo\":-1.66057},\"dundee-united-kingdom\":{\"i\":\"EDI\",\"n\":\"Edinburgh Airport\",\"la\":55.95014,\"lo\":-3.37229},\"durham-united-kingdom\":{\"i\":\"NCL\",\"n\":\"Newcastle International Airport\",\"la\":55.03796,\"lo\":-1.68958},\"eastbourne-unitedkingdom\":{\"i\":\"LGW\",\"n\":\"London Gatwick Airport\",\"la\":51.14874,\"lo\":-0.18574},\"edinburgh-unitedkingdom\":{\"i\":\"EDI\",\"n\":\"Edinburgh Airport\",\"la\":55.95014,\"lo\":-3.37229},\"enniskillen-united-kingdom\":{\"i\":\"NOC\",\"n\":\"Ireland West Airport Knock\",\"la\":53.91044,\"lo\":-8.817},\"exeter-united-kingdom\":{\"i\":\"CWL\",\"n\":\"Cardiff International Airport\",\"la\":51.3967,\"lo\":-3.34333},\"farnborough-united-kingdom\":{\"i\":\"LHR\",\"n\":\"London Heathrow Airport\",\"la\":51.47075,\"lo\":-0.45991},\"folkestone-unitedkingdom\":{\"i\":\"LGW\",\"n\":\"London Gatwick Airport\",\"la\":51.14874,\"lo\":-0.18574},\"glasgow-unitedkingdom\":{\"i\":\"GLA\",\"n\":\"Glasgow Airport\",\"la\":55.8719,\"lo\":-4.43306},\"gloucester-unitedkingdom\":{\"i\":\"BRS\",\"n\":\"Bristol Airport\",\"la\":51.38233,\"lo\":-2.71645},\"guildford-unitedkingdom\":{\"i\":\"LHR\",\"n\":\"London Heathrow Airport\",\"la\":51.47075,\"lo\":-0.45991},\"harrogate-united-kingdom\":{\"i\":\"LBA\",\"n\":\"Leeds Bradford Airport\",\"la\":53.8659,\"lo\":-1.66057},\"huddersfield-united-kingdom\":{\"i\":\"LBA\",\"n\":\"Leeds Bradford Airport\",\"la\":53.8659,\"lo\":-1.66057},\"hull-united-kingdom\":{\"i\":\"LBA\",\"n\":\"Leeds Bradford Airport\",\"la\":53.8659,\"lo\":-1.66057},\"ipswich-united-kingdom\":{\"i\":\"STN\",\"n\":\"London Stansted Airport\",\"la\":51.885,\"lo\":0.235},\"leeds-united-kingdom\":{\"i\":\"LBA\",\"n\":\"Leeds Bradford Airport\",\"la\":53.8659,\"lo\":-1.66057},\"leicester-unitedkingdom\":{\"i\":\"EMA\",\"n\":\"East Midlands Airport\",\"la\":52.8311,\"lo\":-1.32806},\"lincoln-unitedkingdom\":{\"i\":\"EMA\",\"n\":\"East Midlands Airport\",\"la\":52.8311,\"lo\":-1.32806},\"liverpool-unitedkingdom\":{\"i\":\"LPL\",\"n\":\"Liverpool John Lennon Airport\",\"la\":53.33486,\"lo\":-2.84964},\"luton-unitedkingdom\":{\"i\":\"LTN\",\"n\":\"London Luton Airport\",\"la\":51.8747,\"lo\":-0.36833},\"maidstone-unitedkingdom\":{\"i\":\"LGW\",\"n\":\"London Gatwick Airport\",\"la\":51.14874,\"lo\":-0.18574},\"manchester-unitedkingdom\":{\"i\":\"MAN\",\"n\":\"Manchester Airport\",\"la\":53.34938,\"lo\":-2.27952},\"middlesbrough-united-kingdom\":{\"i\":\"NCL\",\"n\":\"Newcastle International Airport\",\"la\":55.03796,\"lo\":-1.68958},\"milton-keynes-unitedkingdom\":{\"i\":\"LTN\",\"n\":\"London Luton Airport\",\"la\":51.8747,\"lo\":-0.36833},\"newcastle-upon-tyne-united-kingdom\":{\"i\":\"NCL\",\"n\":\"Newcastle International Airport\",\"la\":55.03796,\"lo\":-1.68958},\"norwich-united-kingdom\":{\"i\":\"STN\",\"n\":\"London Stansted Airport\",\"la\":51.885,\"lo\":0.235},\"nottingham-united-kingdom\":{\"i\":\"EMA\",\"n\":\"East Midlands Airport\",\"la\":52.8311,\"lo\":-1.32806},\"oban-unitedkingdom\":{\"i\":\"GLA\",\"n\":\"Glasgow Airport\",\"la\":55.8719,\"lo\":-4.43306},\"oxford-unitedkingdom\":{\"i\":\"LTN\",\"n\":\"London Luton Airport\",\"la\":51.8747,\"lo\":-0.36833},\"paignton-unitedkingdom\":{\"i\":\"CWL\",\"n\":\"Cardiff International Airport\",\"la\":51.3967,\"lo\":-3.34333},\"peterborough-unitedkingdom\":{\"i\":\"LTN\",\"n\":\"London Luton Airport\",\"la\":51.8747,\"lo\":-0.36833},\"pitlochry-unitedkingdom\":{\"i\":\"EDI\",\"n\":\"Edinburgh Airport\",\"la\":55.95014,\"lo\":-3.37229},\"portrush-united-kingdom\":{\"i\":\"BFS\",\"n\":\"Belfast International Airport\",\"la\":54.6575,\"lo\":-6.21583},\"portsmouth-united-kingdom\":{\"i\":\"LGW\",\"n\":\"London Gatwick Airport\",\"la\":51.14874,\"lo\":-0.18574},\"preston-united-kingdom\":{\"i\":\"LPL\",\"n\":\"Liverpool John Lennon Airport\",\"la\":53.33486,\"lo\":-2.84964},\"reading-unitedkingdom\":{\"i\":\"LHR\",\"n\":\"London Heathrow Airport\",\"la\":51.47075,\"lo\":-0.45991},\"royal-tunbridge-wells-unitedkingdom\":{\"i\":\"LGW\",\"n\":\"London Gatwick Airport\",\"la\":51.14874,\"lo\":-0.18574},\"rye-unitedkingdom\":{\"i\":\"LGW\",\"n\":\"London Gatwick Airport\",\"la\":51.14874,\"lo\":-0.18574},\"salisbury-united-kingdom\":{\"i\":\"BRS\",\"n\":\"Bristol Airport\",\"la\":51.38233,\"lo\":-2.71645},\"scarborough-united-kingdom\":{\"i\":\"LBA\",\"n\":\"Leeds Bradford Airport\",\"la\":53.8659,\"lo\":-1.66057},\"sheffield-united-kingdom\":{\"i\":\"LBA\",\"n\":\"Leeds Bradford Airport\",\"la\":53.8659,\"lo\":-1.66057},\"shrewsbury-unitedkingdom\":{\"i\":\"LPL\",\"n\":\"Liverpool John Lennon Airport\",\"la\":53.33486,\"lo\":-2.84964},\"slough-unitedkingdom\":{\"i\":\"LHR\",\"n\":\"London Heathrow Airport\",\"la\":51.47075,\"lo\":-0.45991},\"southampton-united-kingdom\":{\"i\":\"LGW\",\"n\":\"London Gatwick Airport\",\"la\":51.14874,\"lo\":-0.18574},\"southport-united-kingdom\":{\"i\":\"LPL\",\"n\":\"Liverpool John Lennon Airport\",\"la\":53.33486,\"lo\":-2.84964},\"st-albans-unitedkingdom\":{\"i\":\"LTN\",\"n\":\"London Luton Airport\",\"la\":51.8747,\"lo\":-0.36833},\"st-andrews-united-kingdom\":{\"i\":\"EDI\",\"n\":\"Edinburgh Airport\",\"la\":55.95014,\"lo\":-3.37229},\"sunderland-united-kingdom\":{\"i\":\"NCL\",\"n\":\"Newcastle International Airport\",\"la\":55.03796,\"lo\":-1.68958},\"swansea-united-kingdom\":{\"i\":\"CWL\",\"n\":\"Cardiff International Airport\",\"la\":51.3967,\"lo\":-3.34333},\"tenby-united-kingdom\":{\"i\":\"CWL\",\"n\":\"Cardiff International Airport\",\"la\":51.3967,\"lo\":-3.34333},\"torquay-unitedkingdom\":{\"i\":\"CWL\",\"n\":\"Cardiff International Airport\",\"la\":51.3967,\"lo\":-3.34333},\"watford-unitedkingdom\":{\"i\":\"LHR\",\"n\":\"London Heathrow Airport\",\"la\":51.47075,\"lo\":-0.45991},\"whitstable-united-kingdom\":{\"i\":\"STN\",\"n\":\"London Stansted Airport\",\"la\":51.885,\"lo\":0.235},\"winchester-unitedkingdom\":{\"i\":\"LHR\",\"n\":\"London Heathrow Airport\",\"la\":51.47075,\"lo\":-0.45991},\"windermere-united-kingdom\":{\"i\":\"LBA\",\"n\":\"Leeds Bradford Airport\",\"la\":53.8659,\"lo\":-1.66057},\"windsor-unitedkingdom\":{\"i\":\"LHR\",\"n\":\"London Heathrow Airport\",\"la\":51.47075,\"lo\":-0.45991},\"woking-unitedkingdom\":{\"i\":\"LHR\",\"n\":\"London Heathrow Airport\",\"la\":51.47075,\"lo\":-0.45991},\"worcester-unitedkingdom\":{\"i\":\"BHX\",\"n\":\"Birmingham Airport\",\"la\":52.4539,\"lo\":-1.74803},\"york-unitedkingdom\":{\"i\":\"LBA\",\"n\":\"Leeds Bradford Airport\",\"la\":53.8659,\"lo\":-1.66057},\"akron-united-states\":{\"i\":\"CLE\",\"n\":\"Cleveland Hopkins International Airport\",\"la\":41.4117,\"lo\":-81.8498},\"albuquerque-united-states\":{\"i\":\"ABQ\",\"n\":\"Albuquerque International Sunport\",\"la\":35.03998,\"lo\":-106.60892},\"alexandria-united-states\":{\"i\":\"DCA\",\"n\":\"Ronald Reagan Washington National Airport\",\"la\":38.8521,\"lo\":-77.0377},\"alpharetta-united-states\":{\"i\":\"ATL\",\"n\":\"Hartsfield Jackson Atlanta International Airport\",\"la\":33.6367,\"lo\":-84.4281},\"ames-united-states\":{\"i\":\"DSM\",\"n\":\"Des Moines International Airport\",\"la\":41.53403,\"lo\":-93.65672},\"anaheim-united-states\":{\"i\":\"SNA\",\"n\":\"John Wayne Orange County International Airport\",\"la\":33.67506,\"lo\":-117.86928},\"ann-arbor-united-states\":{\"i\":\"DTW\",\"n\":\"Detroit Metropolitan Wayne County Airport\",\"la\":42.21377,\"lo\":-83.35379},\"annapolis-united-states\":{\"i\":\"BWI\",\"n\":\"Baltimore/Washington International Thurgood Marshall Airport\",\"la\":39.1754,\"lo\":-76.6683},\"arcadia-united-states\":{\"i\":\"BUR\",\"n\":\"Hollywood Burbank/Bob Hope Airport\",\"la\":34.20283,\"lo\":-118.35805},\"arlington-united-states\":{\"i\":\"DFW\",\"n\":\"Dallas Fort Worth International Airport\",\"la\":32.8968,\"lo\":-97.038},\"atlanta-united-states\":{\"i\":\"ATL\",\"n\":\"Hartsfield Jackson Atlanta International Airport\",\"la\":33.6367,\"lo\":-84.4281},\"atlantic-city-united-states\":{\"i\":\"PHL\",\"n\":\"Philadelphia International Airport\",\"la\":39.8719,\"lo\":-75.2411},\"aurora-united-states\":{\"i\":\"DEN\",\"n\":\"Denver International Airport\",\"la\":39.86003,\"lo\":-104.67379},\"austin-unitedstates\":{\"i\":\"AUS\",\"n\":\"Austin Bergstrom International Airport\",\"la\":30.19753,\"lo\":-97.66201},\"baltimore-united-states\":{\"i\":\"BWI\",\"n\":\"Baltimore/Washington International Thurgood Marshall Airport\",\"la\":39.1754,\"lo\":-76.6683},\"baton-rouge-united-states\":{\"i\":\"MSY\",\"n\":\"Louis Armstrong New Orleans International Airport\",\"la\":29.9934,\"lo\":-90.26467},\"beaverton-united-states\":{\"i\":\"PDX\",\"n\":\"Portland International Airport\",\"la\":45.5887,\"lo\":-122.598},\"bellevue-united-states\":{\"i\":\"SEA\",\"n\":\"Seattle–Tacoma International Airport\",\"la\":47.44794,\"lo\":-122.31028},\"bellingham-united-states\":{\"i\":\"YVR\",\"n\":\"Vancouver International Airport\",\"la\":49.1939,\"lo\":-123.184},\"berkeley-united-states\":{\"i\":\"OAK\",\"n\":\"Oakland San Francisco Bay Airport\",\"la\":37.72008,\"lo\":-122.22118},\"bethesda-united-states\":{\"i\":\"DCA\",\"n\":\"Ronald Reagan Washington National Airport\",\"la\":38.8521,\"lo\":-77.0377},\"bethlehem-united-states\":{\"i\":\"PHL\",\"n\":\"Philadelphia International Airport\",\"la\":39.8719,\"lo\":-75.2411},\"binghamton-united-states\":{\"i\":\"SYR\",\"n\":\"Syracuse Hancock International Airport\",\"la\":43.1112,\"lo\":-76.1063},\"birmingham-alabama-united-states\":{\"i\":\"BHM\",\"n\":\"Birmingham-Shuttlesworth International Airport\",\"la\":33.56288,\"lo\":-86.75071},\"bloomington-united-states\":{\"i\":\"IND\",\"n\":\"Indianapolis International Airport\",\"la\":39.7173,\"lo\":-86.2944},\"boca-raton-united-states\":{\"i\":\"DJT\",\"n\":\"President Donald J. Trump International Airport\",\"la\":26.6832,\"lo\":-80.0956},\"boise-united-states\":{\"i\":\"BOI\",\"n\":\"Boise Air Terminal/Gowen Field\",\"la\":43.5644,\"lo\":-116.223},\"boston-unitedstates\":{\"i\":\"BOS\",\"n\":\"Boston Logan International Airport\",\"la\":42.36197,\"lo\":-71.0079},\"boulder-united-states\":{\"i\":\"DEN\",\"n\":\"Denver International Airport\",\"la\":39.86003,\"lo\":-104.67379},\"bowie-united-states\":{\"i\":\"BWI\",\"n\":\"Baltimore/Washington International Thurgood Marshall Airport\",\"la\":39.1754,\"lo\":-76.6683},\"bowling-green-united-states\":{\"i\":\"BNA\",\"n\":\"Nashville International Airport\",\"la\":36.1245,\"lo\":-86.6782},\"bradenton-united-states\":{\"i\":\"SRQ\",\"n\":\"Sarasota Bradenton International Airport\",\"la\":27.39463,\"lo\":-82.55436},\"brentwood-united-states\":{\"i\":\"BNA\",\"n\":\"Nashville International Airport\",\"la\":36.1245,\"lo\":-86.6782},\"brookline-united-states\":{\"i\":\"BOS\",\"n\":\"Boston Logan International Airport\",\"la\":42.36197,\"lo\":-71.0079},\"brooklyn-united-states\":{\"i\":\"LGA\",\"n\":\"LaGuardia Airport\",\"la\":40.7772,\"lo\":-73.8726},\"buena-park-united-states\":{\"i\":\"LGB\",\"n\":\"Long Beach International Airport\",\"la\":33.81652,\"lo\":-118.14989},\"buffalo-united-states\":{\"i\":\"BUF\",\"n\":\"Buffalo Niagara International Airport\",\"la\":42.9405,\"lo\":-78.7322},\"burbank-united-states\":{\"i\":\"BUR\",\"n\":\"Hollywood Burbank/Bob Hope Airport\",\"la\":34.20283,\"lo\":-118.35805},\"cambridge-massachusetts-united-states\":{\"i\":\"BOS\",\"n\":\"Boston Logan International Airport\",\"la\":42.36197,\"lo\":-71.0079},\"camden-united-states\":{\"i\":\"PWM\",\"n\":\"Portland International Jetport\",\"la\":43.6462,\"lo\":-70.3093},\"cape-coral-united-states\":{\"i\":\"RSW\",\"n\":\"Southwest Florida International Airport\",\"la\":26.53468,\"lo\":-81.75282},\"carmel-united-states\":{\"i\":\"SJC\",\"n\":\"Mineta San Jose International Airport\",\"la\":37.36245,\"lo\":-121.92919},\"cary-united-states\":{\"i\":\"RDU\",\"n\":\"Raleigh-Durham International Airport\",\"la\":35.87866,\"lo\":-78.7873},\"centennial-united-states\":{\"i\":\"DEN\",\"n\":\"Denver International Airport\",\"la\":39.86003,\"lo\":-104.67379},\"chandler-united-states\":{\"i\":\"PHX\",\"n\":\"Phoenix Sky Harbor International Airport\",\"la\":33.4353,\"lo\":-112.0059},\"chapel-hill-united-states\":{\"i\":\"RDU\",\"n\":\"Raleigh-Durham International Airport\",\"la\":35.87866,\"lo\":-78.7873},\"charleston-unitedstates\":{\"i\":\"CHS\",\"n\":\"Charleston International Airport\",\"la\":32.89616,\"lo\":-80.03815},\"charlotte-united-states\":{\"i\":\"CLT\",\"n\":\"Charlotte Douglas International Airport\",\"la\":35.214,\"lo\":-80.9431},\"chicago-unitedstates\":{\"i\":\"MDW\",\"n\":\"Chicago Midway International Airport\",\"la\":41.786,\"lo\":-87.7524},\"chico-united-states\":{\"i\":\"SMF\",\"n\":\"Sacramento International Airport\",\"la\":38.6954,\"lo\":-121.591},\"chula-vista-united-states\":{\"i\":\"TIJ\",\"n\":\"General Abelardo L. Rodriguez International Airport\",\"la\":32.54104,\"lo\":-116.96998},\"cincinnati-united-states\":{\"i\":\"CVG\",\"n\":\"Cincinnati Northern Kentucky International Airport\",\"la\":39.0488,\"lo\":-84.6678},\"cleveland-united-states\":{\"i\":\"CLE\",\"n\":\"Cleveland Hopkins International Airport\",\"la\":41.4117,\"lo\":-81.8498},\"coeur-d-alene-united-states\":{\"i\":\"GEG\",\"n\":\"Spokane International Airport\",\"la\":47.6199,\"lo\":-117.534},\"colorado-springs-united-states\":{\"i\":\"COS\",\"n\":\"City of Colorado Springs Municipal Airport\",\"la\":38.8058,\"lo\":-104.701},\"columbus-united-states\":{\"i\":\"CMH\",\"n\":\"John Glenn Columbus International Airport\",\"la\":39.998,\"lo\":-82.8919},\"costa-mesa-united-states\":{\"i\":\"SNA\",\"n\":\"John Wayne Orange County International Airport\",\"la\":33.67506,\"lo\":-117.86928},\"cupertino-united-states\":{\"i\":\"SJC\",\"n\":\"Mineta San Jose International Airport\",\"la\":37.36245,\"lo\":-121.92919},\"dallas-united-states\":{\"i\":\"DAL\",\"n\":\"Dallas Love Field\",\"la\":32.84478,\"lo\":-96.84765},\"danville-united-states\":{\"i\":\"GSO\",\"n\":\"Piedmont Triad International Airport\",\"la\":36.09937,\"lo\":-79.93726},\"davenport-united-states\":{\"i\":\"MCO\",\"n\":\"Orlando International Airport\",\"la\":28.4294,\"lo\":-81.309},\"davis-united-states\":{\"i\":\"SMF\",\"n\":\"Sacramento International Airport\",\"la\":38.6954,\"lo\":-121.591},\"dayton-united-states\":{\"i\":\"CVG\",\"n\":\"Cincinnati Northern Kentucky International Airport\",\"la\":39.0488,\"lo\":-84.6678},\"daytona-beach-united-states\":{\"i\":\"SFB\",\"n\":\"Orlando Sanford International Airport\",\"la\":28.77428,\"lo\":-81.23463},\"delray-beach-united-states\":{\"i\":\"DJT\",\"n\":\"President Donald J. Trump International Airport\",\"la\":26.6832,\"lo\":-80.0956},\"denver-unitedstates\":{\"i\":\"DEN\",\"n\":\"Denver International Airport\",\"la\":39.86003,\"lo\":-104.67379},\"des-moines-united-states\":{\"i\":\"DSM\",\"n\":\"Des Moines International Airport\",\"la\":41.53403,\"lo\":-93.65672},\"detroit-united-states\":{\"i\":\"YQG\",\"n\":\"Windsor International Airport\",\"la\":42.2756,\"lo\":-82.9556},\"dublin-united-states\":{\"i\":\"CMH\",\"n\":\"John Glenn Columbus International Airport\",\"la\":39.998,\"lo\":-82.8919},\"durham-united-states\":{\"i\":\"RDU\",\"n\":\"Raleigh-Durham International Airport\",\"la\":35.87866,\"lo\":-78.7873},\"fort-lauderdale-united-states\":{\"i\":\"FLL\",\"n\":\"Fort Lauderdale Hollywood International Airport\",\"la\":26.0726,\"lo\":-80.1527},\"franklin-united-states\":{\"i\":\"BNA\",\"n\":\"Nashville International Airport\",\"la\":36.1245,\"lo\":-86.6782},\"honolulu-unitedstates\":{\"i\":\"HNL\",\"n\":\"Daniel K. Inouye International Airport\",\"la\":21.31839,\"lo\":-157.92567},\"houston-united-states\":{\"i\":\"HOU\",\"n\":\"William P. Hobby Airport\",\"la\":29.64534,\"lo\":-95.27681},\"indianapolis-united-states\":{\"i\":\"IND\",\"n\":\"Indianapolis International Airport\",\"la\":39.7173,\"lo\":-86.2944},\"las-vegas-unitedstates\":{\"i\":\"LAS\",\"n\":\"Harry Reid International Airport\",\"la\":36.08336,\"lo\":-115.15182},\"livermore-united-states\":{\"i\":\"OAK\",\"n\":\"Oakland San Francisco Bay Airport\",\"la\":37.72008,\"lo\":-122.22118},\"los-angeles-unitedstates\":{\"i\":\"LAX\",\"n\":\"Los Angeles International Airport\",\"la\":33.9425,\"lo\":-118.408},\"louisville-united-states\":{\"i\":\"SDF\",\"n\":\"Louisville Muhammad Ali International Airport\",\"la\":38.1706,\"lo\":-85.73508},\"melbourne-united-states\":{\"i\":\"MCO\",\"n\":\"Orlando International Airport\",\"la\":28.4294,\"lo\":-81.309},\"memphis-united-states\":{\"i\":\"MEM\",\"n\":\"Frederick W. Smith International Airport\",\"la\":35.04384,\"lo\":-89.97634},\"miami-unitedstates\":{\"i\":\"MIA\",\"n\":\"Miami International Airport\",\"la\":25.79601,\"lo\":-80.28975},\"milwaukee-united-states\":{\"i\":\"MKE\",\"n\":\"General Mitchell International Airport\",\"la\":42.9472,\"lo\":-87.8966},\"minneapolis-united-states\":{\"i\":\"MSP\",\"n\":\"Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field\",\"la\":44.88008,\"lo\":-93.22174},\"monterey-united-states\":{\"i\":\"SJC\",\"n\":\"Mineta San Jose International Airport\",\"la\":37.36245,\"lo\":-121.92919},\"naples-florida-united-states\":{\"i\":\"RSW\",\"n\":\"Southwest Florida International Airport\",\"la\":26.53468,\"lo\":-81.75282},\"nashville-unitedstates\":{\"i\":\"BNA\",\"n\":\"Nashville International Airport\",\"la\":36.1245,\"lo\":-86.6782},\"new-orleans-unitedstates\":{\"i\":\"MSY\",\"n\":\"Louis Armstrong New Orleans International Airport\",\"la\":29.9934,\"lo\":-90.26467},\"new-york-unitedstates\":{\"i\":\"LGA\",\"n\":\"LaGuardia Airport\",\"la\":40.7772,\"lo\":-73.8726},\"newport-rhode-island-united-states\":{\"i\":\"PVD\",\"n\":\"Rhode Island T. F. Green International Airport\",\"la\":41.72504,\"lo\":-71.42567},\"oakland-united-states\":{\"i\":\"OAK\",\"n\":\"Oakland San Francisco Bay Airport\",\"la\":37.72008,\"lo\":-122.22118},\"oklahoma-city-united-states\":{\"i\":\"OKC\",\"n\":\"OKC Will Rogers World Airport\",\"la\":35.39339,\"lo\":-97.59825},\"omaha-united-states\":{\"i\":\"OMA\",\"n\":\"Eppley Airfield\",\"la\":41.3032,\"lo\":-95.8941},\"orlando-unitedstates\":{\"i\":\"MCO\",\"n\":\"Orlando International Airport\",\"la\":28.4294,\"lo\":-81.309},\"palm-springs-united-states\":{\"i\":\"PSP\",\"n\":\"Palm Springs International Airport\",\"la\":33.8297,\"lo\":-116.507},\"philadelphia-unitedstates\":{\"i\":\"PHL\",\"n\":\"Philadelphia International Airport\",\"la\":39.8719,\"lo\":-75.2411},\"phoenix-united-states\":{\"i\":\"PHX\",\"n\":\"Phoenix Sky Harbor International Airport\",\"la\":33.4353,\"lo\":-112.0059},\"pittsburgh-united-states\":{\"i\":\"PIT\",\"n\":\"Pittsburgh International Airport\",\"la\":40.4915,\"lo\":-80.2329},\"pleasanton-united-states\":{\"i\":\"OAK\",\"n\":\"Oakland San Francisco Bay Airport\",\"la\":37.72008,\"lo\":-122.22118},\"plymouth-united-states\":{\"i\":\"BOS\",\"n\":\"Boston Logan International Airport\",\"la\":42.36197,\"lo\":-71.0079},\"portland-unitedstates\":{\"i\":\"PDX\",\"n\":\"Portland International Airport\",\"la\":45.5887,\"lo\":-122.598},\"portsmouth-united-states\":{\"i\":\"PWM\",\"n\":\"Portland International Jetport\",\"la\":43.6462,\"lo\":-70.3093},\"raleigh-united-states\":{\"i\":\"RDU\",\"n\":\"Raleigh-Durham International Airport\",\"la\":35.87866,\"lo\":-78.7873},\"reno-united-states\":{\"i\":\"RNO\",\"n\":\"Reno Tahoe International Airport\",\"la\":39.4991,\"lo\":-119.768},\"richmond-united-states\":{\"i\":\"RIC\",\"n\":\"Richmond International Airport\",\"la\":37.5052,\"lo\":-77.3197},\"rochester-united-states\":{\"i\":\"ROC\",\"n\":\"Frederick Douglass Greater Rochester International Airport\",\"la\":43.1189,\"lo\":-77.6724},\"rock-hill-united-states\":{\"i\":\"CLT\",\"n\":\"Charlotte Douglas International Airport\",\"la\":35.214,\"lo\":-80.9431},\"sacramento-united-states\":{\"i\":\"SMF\",\"n\":\"Sacramento International Airport\",\"la\":38.6954,\"lo\":-121.591},\"salt-lake-city-united-states\":{\"i\":\"SLC\",\"n\":\"Salt Lake City International Airport\",\"la\":40.78886,\"lo\":-111.97987},\"san-antonio-united-states\":{\"i\":\"SAT\",\"n\":\"San Antonio International Airport\",\"la\":29.5337,\"lo\":-98.4698},\"san-diego-unitedstates\":{\"i\":\"SAN\",\"n\":\"San Diego International Airport\",\"la\":32.7336,\"lo\":-117.19},\"san-francisco-unitedstates\":{\"i\":\"OAK\",\"n\":\"Oakland San Francisco Bay Airport\",\"la\":37.72008,\"lo\":-122.22118},\"san-jose-united-states\":{\"i\":\"SJC\",\"n\":\"Mineta San Jose International Airport\",\"la\":37.36245,\"lo\":-121.92919},\"sanford-united-states\":{\"i\":\"SFB\",\"n\":\"Orlando Sanford International Airport\",\"la\":28.77428,\"lo\":-81.23463},\"santa-fe-united-states\":{\"i\":\"ABQ\",\"n\":\"Albuquerque International Sunport\",\"la\":35.03998,\"lo\":-106.60892},\"savannah-unitedstates\":{\"i\":\"SAV\",\"n\":\"Savannah Hilton Head International Airport\",\"la\":32.12659,\"lo\":-81.19998},\"seattle-unitedstates\":{\"i\":\"SEA\",\"n\":\"Seattle–Tacoma International Airport\",\"la\":47.44794,\"lo\":-122.31028},\"sierra-vista-united-states\":{\"i\":\"TUS\",\"n\":\"Tucson International Airport\",\"la\":32.115,\"lo\":-110.93805},\"spokane-united-states\":{\"i\":\"GEG\",\"n\":\"Spokane International Airport\",\"la\":47.6199,\"lo\":-117.534},\"st-augustine-united-states\":{\"i\":\"JAX\",\"n\":\"Jacksonville International Airport\",\"la\":30.49247,\"lo\":-81.68781},\"stamford-united-states\":{\"i\":\"LGA\",\"n\":\"LaGuardia Airport\",\"la\":40.7772,\"lo\":-73.8726},\"tampa-united-states\":{\"i\":\"TPA\",\"n\":\"Tampa International Airport\",\"la\":27.9755,\"lo\":-82.5332},\"tucson-united-states\":{\"i\":\"TUS\",\"n\":\"Tucson International Airport\",\"la\":32.115,\"lo\":-110.93805},\"valencia-united-states\":{\"i\":\"BUR\",\"n\":\"Hollywood Burbank/Bob Hope Airport\",\"la\":34.20283,\"lo\":-118.35805},\"vancouver-united-states\":{\"i\":\"PDX\",\"n\":\"Portland International Airport\",\"la\":45.5887,\"lo\":-122.598},\"ventura-united-states\":{\"i\":\"BUR\",\"n\":\"Hollywood Burbank/Bob Hope Airport\",\"la\":34.20283,\"lo\":-118.35805},\"washington-dc-unitedstates\":{\"i\":\"DCA\",\"n\":\"Ronald Reagan Washington National Airport\",\"la\":38.8521,\"lo\":-77.0377},\"wilmington-north-carolina-united-states\":{\"i\":\"MYR\",\"n\":\"Myrtle Beach International Airport\",\"la\":33.6797,\"lo\":-78.9283},\"worcester-united-states\":{\"i\":\"BOS\",\"n\":\"Boston Logan International Airport\",\"la\":42.36197,\"lo\":-71.0079},\"montevideo-uruguay\":{\"i\":\"MVD\",\"n\":\"Carrasco General Cesáreo L. Berisso International Airport\",\"la\":-34.83565,\"lo\":-56.0265},\"punta-del-este-uruguay\":{\"i\":\"MVD\",\"n\":\"Carrasco General Cesáreo L. Berisso International Airport\",\"la\":-34.83565,\"lo\":-56.0265},\"caracas-venezuela\":{\"i\":\"CCS\",\"n\":\"Maiquetía Simón Bolívar International Airport\",\"la\":10.60221,\"lo\":-66.99117},\"valencia-venezuela\":{\"i\":\"VLN\",\"n\":\"Arturo Michelena International Airport\",\"la\":10.14973,\"lo\":-67.9284},\"can-tho-vietnam\":{\"i\":\"VCA\",\"n\":\"Can Tho International Airport\",\"la\":10.0834,\"lo\":105.70937},\"da-nang-vietnam\":{\"i\":\"DAD\",\"n\":\"Da Nang International Airport\",\"la\":16.0439,\"lo\":108.199},\"dalat-vietnam\":{\"i\":\"CXR\",\"n\":\"Cam Ranh International Airport / Cam Ranh Air Base\",\"la\":11.9982,\"lo\":109.219},\"ha-long-vietnam\":{\"i\":\"HPH\",\"n\":\"Cat Bi International Airport\",\"la\":20.81743,\"lo\":106.72432},\"hanoi-vietnam\":{\"i\":\"HAN\",\"n\":\"Noi Bai International Airport\",\"la\":21.2212,\"lo\":105.807},\"ho-chi-minh-city-vietnam\":{\"i\":\"SGN\",\"n\":\"Tan Son Nhat International Airport\",\"la\":10.8188,\"lo\":106.652},\"hoi-an-vietnam\":{\"i\":\"DAD\",\"n\":\"Da Nang International Airport\",\"la\":16.0439,\"lo\":108.199},\"hue-vietnam\":{\"i\":\"HUI\",\"n\":\"Phu Bai International Airport\",\"la\":16.40058,\"lo\":107.70409},\"nha-trang-vietnam\":{\"i\":\"CXR\",\"n\":\"Cam Ranh International Airport / Cam Ranh Air Base\",\"la\":11.9982,\"lo\":109.219},\"ronne-denmark\":{\"i\":\"MMX\",\"n\":\"Malmö Sturup Airport\",\"la\":55.53556,\"lo\":13.37633},\"chania-greece\":{\"i\":\"CHQ\",\"n\":\"Chania International Airport\",\"la\":35.53121,\"lo\":24.15067},\"corfu-greece\":{\"i\":\"CFU\",\"n\":\"Corfu Ioannis Kapodistrias International Airport\",\"la\":39.60145,\"lo\":19.91218},\"nuuk-greenland\":{\"i\":\"GOH\",\"n\":\"Nuuk International Airport\",\"la\":64.19107,\"lo\":-51.67914},\"ioannina-greece\":{\"i\":\"CFU\",\"n\":\"Corfu Ioannis Kapodistrias International Airport\",\"la\":39.60145,\"lo\":19.91218},\"zakynthos-greece\":{\"i\":\"ZTH\",\"n\":\"Zakynthos International Airport \\\"Dionysios Solomos\\\"\",\"la\":37.7509,\"lo\":20.8843},\"billund-denmark\":{\"i\":\"BLL\",\"n\":\"Billund Airport\",\"la\":55.74034,\"lo\":9.15702},\"torshavn-faroe-islands\":{\"i\":\"FAE\",\"n\":\"Vágar Airport\",\"la\":62.06326,\"lo\":-7.27578},\"iasi-romania\":{\"i\":\"IAS\",\"n\":\"Iaşi International Airport\",\"la\":47.17963,\"lo\":27.62143},\"lefkada-greece\":{\"i\":\"EFL\",\"n\":\"Kefalonia International Airport \\\"Anna Pollatou\\\"\",\"la\":38.1201,\"lo\":20.5005},\"salen-sweden\":{\"i\":\"SCR\",\"n\":\"Scandinavian Mountains Airport\",\"la\":61.16508,\"lo\":12.83352},\"mytilene-greece\":{\"i\":\"EDO\",\"n\":\"Balıkesir Koca Seyit Airport\",\"la\":39.55253,\"lo\":27.01019}}"),
 	ecb: {
@@ -24057,6 +24166,29057 @@ var H4 = {
 	}
 };
 var flag = (cc) => cc && /^[A-Z]{2}$/.test(cc) ? String.fromCodePoint(...[...cc].map((c) => 127397 + c.charCodeAt(0))) : "";
+var stations_default = {
+	rome: [
+		[
+			"Roma Termini railway station",
+			41.90065,
+			12.50175
+		],
+		[
+			"Roma Laziali train station",
+			41.89703,
+			12.50633
+		],
+		[
+			"Porta Maggiore STEFER stop",
+			41.89203,
+			12.51517
+		],
+		[
+			"Porta Maggiore railway station",
+			41.89089,
+			12.51532
+		],
+		[
+			"Roma San Lorenzo railway station",
+			41.8945,
+			12.5237
+		],
+		[
+			"Roma Porta Portese",
+			41.88342,
+			12.4731
+		],
+		[
+			"Roma Pigneto railway station",
+			41.88878,
+			12.52748
+		],
+		[
+			"Roma Porta San Paolo railway station",
+			41.87597,
+			12.48177
+		],
+		[
+			"Roma Ostiense railway station",
+			41.87269,
+			12.48446
+		],
+		[
+			"Roma Tuscolana railway station",
+			41.87944,
+			12.52333
+		],
+		[
+			"Roma Tiburtina railway station",
+			41.91028,
+			12.53083
+		],
+		[
+			"Roma San Pietro railway station",
+			41.89639,
+			12.45444
+		],
+		[
+			"Piazza Euclide railway station",
+			41.9276,
+			12.4808
+		],
+		[
+			"Roma Trastevere railway station",
+			41.87222,
+			12.46639
+		]
+	],
+	dubai: [],
+	"durban-southafrica": [
+		[
+			"Umgeni",
+			-29.81631,
+			31.02732
+		],
+		[
+			"Moses Mabhida Railway Station",
+			-29.82657,
+			31.02835
+		],
+		[
+			"Moses Mabhida Station",
+			-29.82668,
+			31.02828
+		],
+		[
+			"Greenwood Park",
+			-29.78907,
+			31.01989
+		],
+		[
+			"Briardene",
+			-29.79685,
+			31.01403
+		],
+		[
+			"Red Hill",
+			-29.77861,
+			31.02277
+		],
+		[
+			"Temple",
+			-29.80391,
+			31.00618
+		],
+		[
+			"Durban railway station",
+			-29.84472,
+			31.0225
+		],
+		[
+			"Kenville",
+			-29.79136,
+			31.00103
+		],
+		[
+			"Effingham",
+			-29.77378,
+			31.002
+		],
+		[
+			"Avoca",
+			-29.75914,
+			31.0194
+		],
+		[
+			"Berea Road",
+			-29.85732,
+			31.01245
+		]
+	],
+	"new-york-unitedstates": [
+		[
+			"59th Street",
+			40.76294,
+			-73.96975
+		],
+		[
+			"Long Island City",
+			40.74139,
+			-73.95694
+		],
+		[
+			"Hunterspoint Avenue station",
+			40.74222,
+			-73.94722
+		],
+		[
+			"Hoboken Terminal",
+			40.735,
+			-74.0275
+		],
+		[
+			"110th Street station (New York Central Railroad)",
+			40.7955,
+			-73.94606
+		],
+		[
+			"69th Street station",
+			40.80187,
+			-74.0268
+		],
+		[
+			"Harlem–125th Street station",
+			40.8052,
+			-73.939
+		]
+	],
+	"bristol-unitedkingdom": [
+		[
+			"SS Great Britain",
+			51.44807,
+			-2.60551
+		],
+		[
+			"Redland railway station",
+			51.4683,
+			-2.5994
+		],
+		[
+			"Clifton Down railway station",
+			51.46458,
+			-2.61134
+		],
+		[
+			"Bristol St Philip's railway station",
+			51.4546,
+			-2.57851
+		],
+		[
+			"Montpelier railway station",
+			51.4684,
+			-2.5887
+		],
+		[
+			"Bristol Temple Meads railway station",
+			51.449,
+			-2.58
+		],
+		[
+			"Bedminster railway station",
+			51.4403,
+			-2.5944
+		],
+		[
+			"Hotwells railway station",
+			51.4559,
+			-2.6272
+		],
+		[
+			"Hotwells Halt railway station",
+			51.46,
+			-2.629
+		],
+		[
+			"Clifton Bridge railway station",
+			51.4468,
+			-2.62573
+		],
+		[
+			"Nightingale Valley Halt railway station",
+			51.4562,
+			-2.6306
+		],
+		[
+			"Lawrence Hill railway station",
+			51.4582,
+			-2.5644
+		],
+		[
+			"Stapleton Road railway station",
+			51.4675,
+			-2.5661
+		],
+		[
+			"Ashley Hill railway station",
+			51.4783,
+			-2.5767
+		]
+	],
+	"geneva-switzerland": [
+		[
+			"Genève-Cornavin railway station",
+			46.21022,
+			6.14245
+		],
+		[
+			"Genève-Sécheron railway station",
+			46.22245,
+			6.14455
+		],
+		[
+			"Vernier railway station",
+			46.22072,
+			6.09389
+		],
+		[
+			"Lancy-Pont-Rouge railway station",
+			46.18595,
+			6.12495
+		],
+		[
+			"Genève-Champel railway station",
+			46.19219,
+			6.1535
+		],
+		[
+			"Meyrin railway station",
+			46.22234,
+			6.0769
+		],
+		[
+			"Chambésy railway station",
+			46.24094,
+			6.1473
+		],
+		[
+			"Genève-Eaux-Vives railway station",
+			46.20145,
+			6.16657
+		],
+		[
+			"Genève-Stade Station",
+			46.17672,
+			6.12608
+		],
+		[
+			"Zimeysa railway station",
+			46.22124,
+			6.06599
+		],
+		[
+			"Lancy-Bachet railway station",
+			46.17433,
+			6.12936
+		],
+		[
+			"Les Tuileries railway station",
+			46.24995,
+			6.14734
+		],
+		[
+			"Genthod-Bellevue railway station",
+			46.25675,
+			6.15396
+		],
+		[
+			"Chêne-Bourg railway station",
+			46.1966,
+			6.19733
+		]
+	],
+	"dusseldorf-germany": [
+		[
+			"Düsseldorf Central Station",
+			51.22028,
+			6.79278
+		],
+		[
+			"Düsseldorf-Friedrichstadt station",
+			51.2119,
+			6.78912
+		],
+		[
+			"Düsseldorf Volksgarten station",
+			51.21,
+			6.792
+		],
+		[
+			"Düsseldorf-Bilk station",
+			51.208,
+			6.77631
+		],
+		[
+			"Düsseldorf Wehrhahn station",
+			51.2296,
+			6.79772
+		],
+		[
+			"Düsseldorf Völklinger Straße station",
+			51.21014,
+			6.76039
+		],
+		[
+			"Düsseldorf-Flingern station",
+			51.2261,
+			6.81
+		],
+		[
+			"Düsseldorf-Oberbilk station",
+			51.208,
+			6.80917
+		],
+		[
+			"Oberkassel railway station",
+			51.23153,
+			6.74684
+		],
+		[
+			"Düsseldorf-Hamm station",
+			51.2105,
+			6.73964
+		],
+		[
+			"Düsseldorf-Derendorf station",
+			51.2481,
+			6.79343
+		],
+		[
+			"Düsseldorf-Eller Süd station",
+			51.1979,
+			6.83633
+		],
+		[
+			"Düsseldorf-Eller Mitte station",
+			51.20249,
+			6.84116
+		],
+		[
+			"Neuss Rheinpark-Center station",
+			51.2061,
+			6.71811
+		]
+	],
+	"colombo-srilanka": [
+		[
+			"Slave Island Railway Station",
+			6.92361,
+			79.84944
+		],
+		[
+			"Fort Railway Station",
+			6.93361,
+			79.85083
+		],
+		[
+			"Maradana Railway Station",
+			6.92917,
+			79.86556
+		],
+		[
+			"Dematagoda Railway Station",
+			6.93751,
+			79.87914
+		]
+	],
+	"bratislava-slovakia": [
+		[
+			"Bratislava hlavná stanica",
+			48.15833,
+			17.10694
+		],
+		[
+			"Bratislava filiálka railway station",
+			48.16111,
+			17.12583
+		],
+		[
+			"Bratislava-Petržalka railway station",
+			48.12222,
+			17.09861
+		],
+		[
+			"Bratislava-Nové Mesto railway station",
+			48.1717,
+			17.1466
+		],
+		[
+			"Bratislava predmestie railway station",
+			48.1846,
+			17.1345
+		],
+		[
+			"Bratislava ÚNS",
+			48.1418,
+			17.17264
+		],
+		[
+			"Bratislava Lamač railway station",
+			48.18583,
+			17.04861
+		]
+	],
+	"poznan-poland": [
+		[
+			"Dworzec Letni w Poznaniu",
+			52.405,
+			16.9122
+		],
+		[
+			"Poznań Główny",
+			52.40169,
+			16.91158
+		],
+		[
+			"Dworzec Marchijski w Poznaniu",
+			52.408,
+			16.933
+		],
+		[
+			"Poznań Garbary",
+			52.41583,
+			16.93833
+		],
+		[
+			"Maltanka",
+			52.4083,
+			16.9569
+		],
+		[
+			"Poznań Brama Warszawska",
+			52.4094,
+			16.9636
+		],
+		[
+			"Poznań Żegrze",
+			52.3892,
+			16.9647
+		],
+		[
+			"Poznań Górczyn",
+			52.38,
+			16.87833
+		],
+		[
+			"Poznań Wschód",
+			52.41889,
+			16.97472
+		],
+		[
+			"Poznań Starołęka",
+			52.36722,
+			16.93139
+		],
+		[
+			"Zwierzyniec",
+			52.3999,
+			16.9926
+		],
+		[
+			"Poznań Podolany train station",
+			52.4475,
+			16.8806
+		],
+		[
+			"Poznań Wola",
+			52.43351,
+			16.85044
+		],
+		[
+			"Kobylepole train station",
+			52.3905,
+			17.0052
+		]
+	],
+	"newcastle-upon-tyne-united-kingdom": [
+		[
+			"Carliol Square railway station",
+			54.9723,
+			-1.6071
+		],
+		[
+			"Manors railway station",
+			54.973,
+			-1.605
+		],
+		[
+			"Newcastle New Bridge Street railway station",
+			54.9749,
+			-1.6065
+		],
+		[
+			"Gateshead railway station",
+			54.9659,
+			-1.6071
+		],
+		[
+			"Newcastle railway station",
+			54.9686,
+			-1.6171
+		],
+		[
+			"Oakwellgate railway station",
+			54.9665,
+			-1.601
+		],
+		[
+			"Redheugh railway station",
+			54.9614,
+			-1.6173
+		],
+		[
+			"Jesmond railway station",
+			54.98195,
+			-1.60484
+		],
+		[
+			"Newcastle",
+			54.9633,
+			-1.6287
+		],
+		[
+			"Byker railway station",
+			54.9777,
+			-1.5861
+		],
+		[
+			"Heaton railway station",
+			54.9799,
+			-1.5817
+		],
+		[
+			"Bensham railway station",
+			54.9524,
+			-1.61946
+		],
+		[
+			"St Peter's railway station",
+			54.96722,
+			-1.57348
+		],
+		[
+			"West Jesmond metro station",
+			54.9936,
+			-1.6098
+		]
+	],
+	"antwerp-belgium": [
+		[
+			"Antwerp-Central railway station",
+			51.21694,
+			4.42111
+		],
+		[
+			"Antwerpen-Stuyvenberg railway station",
+			51.22907,
+			4.42729
+		],
+		[
+			"Antwerp-Berchem railway station",
+			51.19972,
+			4.43222
+		],
+		[
+			"Borgerhout railway station",
+			51.2162,
+			4.4459
+		],
+		[
+			"Antwerpen-Schijnpoort station",
+			51.22278,
+			4.44389
+		],
+		[
+			"Antwerp-South railway station",
+			51.1978,
+			4.39045
+		],
+		[
+			"Antwerpen-Luchtbal railway station",
+			51.24444,
+			4.42444
+		],
+		[
+			"Antwerpen-Kiel railway station",
+			51.19444,
+			4.36611
+		],
+		[
+			"Mortsel railway station",
+			51.18306,
+			4.44889
+		],
+		[
+			"Mortsel-Deurnesteenweg railway station",
+			51.18222,
+			4.44694
+		],
+		[
+			"Zwijndrecht (OW4) railway station",
+			51.21484,
+			4.33976
+		],
+		[
+			"Fort 4 railway station",
+			51.17692,
+			4.45604
+		],
+		[
+			"Antwerpen-Noorderdokken railway station",
+			51.26139,
+			4.42778
+		],
+		[
+			"Hoboken-Polder railway station",
+			51.18278,
+			4.34833
+		]
+	],
+	"singapore-singapore": [
+		[
+			"Tank Road railway station",
+			1.29703,
+			103.84411
+		],
+		[
+			"City Hall MRT station",
+			1.29324,
+			103.85222
+		],
+		[
+			"Nicoll Highway MRT station",
+			1.2997,
+			103.86361
+		],
+		[
+			"Farrer Park MRT station",
+			1.31231,
+			103.85403
+		],
+		[
+			"Lavender MRT station",
+			1.30717,
+			103.86301
+		],
+		[
+			"Outram Park MRT station",
+			1.28056,
+			103.84
+		],
+		[
+			"Marina Bay station",
+			1.27528,
+			103.85472
+		],
+		[
+			"Toa Payoh MRT station",
+			1.33278,
+			103.8475
+		],
+		[
+			"Commonwealth MRT station",
+			1.3025,
+			103.79819
+		]
+	],
+	"dresden-germany": [
+		[
+			"Dresden Mitte railway station",
+			51.05613,
+			13.72424
+		],
+		[
+			"Albertbahnhof Dresden",
+			51.0486,
+			13.7153
+		],
+		[
+			"Dresden Central Station",
+			51.04028,
+			13.73167
+		],
+		[
+			"Leipziger Bahnhof",
+			51.0658,
+			13.7378
+		],
+		[
+			"Dresden-Neustadt railway station",
+			51.06556,
+			13.74083
+		],
+		[
+			"Berliner Bahnhof",
+			51.05677,
+			13.70818
+		],
+		[
+			"Hauptbahnhof an der Gläsernen Manufaktur",
+			51.04337,
+			13.75428
+		],
+		[
+			"Dresden-Altstadt railway station",
+			51.04075,
+			13.71194
+		],
+		[
+			"Dresden-Friedrichstadt railway station",
+			51.0556,
+			13.7042
+		],
+		[
+			"Bahnhof Zoo",
+			51.03734,
+			13.7575
+		],
+		[
+			"Dresden-Neustadt Gbf",
+			51.07434,
+			13.73231
+		],
+		[
+			"Königlicher Bahnhof Strehlen",
+			51.03214,
+			13.75664
+		],
+		[
+			"Bahnhof Carolasee",
+			51.03381,
+			13.76303
+		],
+		[
+			"Bahnhof Palaisteich",
+			51.036,
+			13.76717
+		]
+	],
+	"warsaw-poland": [
+		[
+			"Vienna Station in Warsaw",
+			52.22972,
+			21.00944
+		],
+		[
+			"Warszawa Śródmieście PKP railway station",
+			52.22944,
+			21.00778
+		],
+		[
+			"Warsaw Central railway station",
+			52.22861,
+			21.00306
+		],
+		[
+			"Warszawa Główna Wąskotorowa",
+			52.22742,
+			21.00186
+		],
+		[
+			"Warszawa Powiśle railway station",
+			52.23361,
+			21.02778
+		],
+		[
+			"Warszawa Główna railway station",
+			52.2258,
+			20.9858
+		],
+		[
+			"Warszawa Mokotów railway station",
+			52.21278,
+			21.02
+		],
+		[
+			"Warszawa Most",
+			52.25,
+			21.025
+		],
+		[
+			"Warszawa Stadion railway station",
+			52.24444,
+			21.04389
+		],
+		[
+			"Warszawa Zachodnia train station",
+			52.22028,
+			20.96528
+		],
+		[
+			"Warszawa Gdańska station",
+			52.25861,
+			20.99472
+		],
+		[
+			"Warszawa Wileńska station",
+			52.2553,
+			21.0375
+		],
+		[
+			"Saint-Pétersbourg",
+			52.25713,
+			21.03825
+		],
+		[
+			"Warszawa Wola railway station",
+			52.22972,
+			20.95778
+		]
+	],
+	"hamburg-germany": [
+		[
+			"Hamburg Dammtor station",
+			53.56083,
+			9.98944
+		],
+		[
+			"Stadthausbrücke station",
+			53.54917,
+			9.98639
+		],
+		[
+			"Hamburg Hauptbahnhof",
+			53.55278,
+			10.00639
+		],
+		[
+			"Hannoverscher Bahnhof",
+			53.54308,
+			10.00472
+		],
+		[
+			"Schulterblatt station",
+			53.56214,
+			9.95857
+		],
+		[
+			"Hamburg Lübecker Bahnhof",
+			53.5503,
+			10.0186
+		],
+		[
+			"Reeperbahn station",
+			53.5495,
+			9.9558
+		],
+		[
+			"Berliner Tor",
+			53.55278,
+			10.02444
+		],
+		[
+			"Holstenstrasse station",
+			53.56194,
+			9.95028
+		],
+		[
+			"Königstrasse station",
+			53.54833,
+			9.94556
+		],
+		[
+			"Hamburg Elbbrücken station",
+			53.5345,
+			10.0245
+		],
+		[
+			"Hamburg Süd",
+			53.525,
+			9.99167
+		],
+		[
+			"S-Bahnhof Hamburg-Altona station",
+			53.55194,
+			9.935
+		],
+		[
+			"Hamburg-Altona station",
+			53.55194,
+			9.935
+		]
+	],
+	"melbourne-australia": [
+		[
+			"Southern Cross",
+			-37.81836,
+			144.95242
+		],
+		[
+			"Flinders Street",
+			-37.81808,
+			144.96681
+		],
+		[
+			"North Melbourne",
+			-37.8063,
+			144.9411
+		],
+		[
+			"Jolimont",
+			-37.81638,
+			144.9829
+		],
+		[
+			"Richmond",
+			-37.82361,
+			144.98889
+		],
+		[
+			"West Richmond",
+			-37.815,
+			144.9914
+		],
+		[
+			"North Richmond",
+			-37.8104,
+			144.9925
+		],
+		[
+			"Macaulay",
+			-37.7946,
+			144.9362
+		],
+		[
+			"South Kensington",
+			-37.7997,
+			144.9258
+		],
+		[
+			"Cremorne",
+			-37.83,
+			144.994
+		],
+		[
+			"Collingwood",
+			-37.8044,
+			144.9936
+		],
+		[
+			"East Richmond",
+			-37.82636,
+			144.99636
+		],
+		[
+			"Kensington",
+			-37.7939,
+			144.9307
+		],
+		[
+			"Flemington Bridge",
+			-37.7882,
+			144.9394
+		]
+	],
+	"liverpool-unitedkingdom": [
+		[
+			"Liverpool Central High Level railway station",
+			53.4046,
+			-2.9802
+		],
+		[
+			"Liverpool Central railway station",
+			53.4045,
+			-2.9797
+		],
+		[
+			"Liverpool Lime Street railway station",
+			53.40716,
+			-2.97732
+		],
+		[
+			"Moorfields railway station",
+			53.4086,
+			-2.9892
+		],
+		[
+			"Canning railway station",
+			53.40221,
+			-2.9897
+		],
+		[
+			"Liverpool James Street railway station",
+			53.4048,
+			-2.9919
+		],
+		[
+			"Liverpool Exchange railway station",
+			53.4093,
+			-2.9907
+		],
+		[
+			"Pier Head railway station",
+			53.406,
+			-2.9951
+		],
+		[
+			"Park Lane railway goods station",
+			53.39778,
+			-2.98556
+		],
+		[
+			"Wapping Dock railway station",
+			53.396,
+			-2.985
+		],
+		[
+			"Liverpool Riverside railway station",
+			53.4075,
+			-2.9988
+		],
+		[
+			"Liverpool St James railway station",
+			53.3943,
+			-2.9764
+		],
+		[
+			"Princes Dock railway station",
+			53.4119,
+			-2.9993
+		],
+		[
+			"Liverpool Baltic railway station",
+			53.3939,
+			-2.976
+		]
+	],
+	"milton-keynes-unitedkingdom": [
+		[
+			"Milton Keynes Central railway station",
+			52.035,
+			-.773
+		],
+		[
+			"Denbigh Hall railway station",
+			52.01,
+			-.744
+		],
+		[
+			"Fenny Stratford railway station",
+			52,
+			-.718
+		],
+		[
+			"Bletchley railway station",
+			51.995,
+			-.736
+		],
+		[
+			"Bradwell railway station",
+			52.0637,
+			-.78648
+		],
+		[
+			"Bow Brickhill railway station",
+			52.004,
+			-.696
+		],
+		[
+			"Great Linford railway station",
+			52.0757,
+			-.7546
+		],
+		[
+			"Wolverton railway station",
+			52.0653,
+			-.80357
+		],
+		[
+			"Newport Pagnell railway station",
+			52.0834,
+			-.7305
+		],
+		[
+			"Woburn Sands railway station",
+			52.018,
+			-.654
+		]
+	],
+	"york-unitedkingdom": [
+		[
+			"York railway station (1839-1877)",
+			53.9583,
+			-1.0894
+		],
+		[
+			"York railway station",
+			53.9583,
+			-1.093
+		],
+		[
+			"York Racecourse railway station",
+			53.9533,
+			-1.1001
+		],
+		[
+			"York Layerthorpe railway station",
+			53.9612,
+			-1.0687
+		],
+		[
+			"Rowntree Halt railway station",
+			53.9736,
+			-1.07993
+		],
+		[
+			"Osbaldwick railway station",
+			53.9623,
+			-1.0295
+		],
+		[
+			"Earswick railway station",
+			53.9897,
+			-1.06687
+		],
+		[
+			"Poppleton railway station",
+			53.97595,
+			-1.14816
+		],
+		[
+			"Murton Lane railway station",
+			53.9618,
+			-1.0093
+		],
+		[
+			"Naburn railway station",
+			53.9089,
+			-1.08593
+		],
+		[
+			"Copmanthorpe railway station",
+			53.9117,
+			-1.1385
+		],
+		[
+			"Dunnington Halt railway station",
+			53.9625,
+			-.9894
+		],
+		[
+			"Haxby railway station",
+			54.01574,
+			-1.06519
+		]
+	],
+	"kaohsiung-taiwan": [
+		[
+			"Sankuaicuo Station",
+			22.6389,
+			120.294
+		],
+		[
+			"Sankuaicuo Station (1908-1986)",
+			22.63889,
+			120.29375
+		],
+		[
+			"Kaohsiung main station",
+			22.64,
+			120.30278
+		],
+		[
+			"Minzu Station",
+			22.63879,
+			120.31504
+		],
+		[
+			"Gushan Station",
+			22.6428,
+			120.281
+		],
+		[
+			"Railway Workshop Station",
+			22.61597,
+			120.32712
+		],
+		[
+			"Makadao station",
+			22.64706,
+			120.28139
+		],
+		[
+			"St. Joseph Hospital Station",
+			22.63285,
+			120.32561
+		],
+		[
+			"Science and Technology Museum Station",
+			22.63705,
+			120.32619
+		],
+		[
+			"Longhua Elementary School Station",
+			22.65444,
+			120.2951
+		],
+		[
+			"Kaohsiung Municipal United Hospital Station",
+			22.65483,
+			120.29119
+		],
+		[
+			"Museum of Fine Arts Station",
+			22.6526,
+			120.28148
+		],
+		[
+			"Kaohsiung Museum of Fine Arts Station",
+			22.65508,
+			120.28719
+		],
+		[
+			"Heart of Love River Station",
+			22.65616,
+			120.30325
+		]
+	],
+	"bath-unitedkingdom": [
+		[
+			"Westmoreland Station",
+			51.3781,
+			-2.3672
+		],
+		[
+			"Bath Spa railway station",
+			51.3775,
+			-2.3564
+		],
+		[
+			"Oldfield Park railway station",
+			51.3792,
+			-2.3807
+		],
+		[
+			"Hampton Row Halt railway station",
+			51.3906,
+			-2.3458
+		],
+		[
+			"Weston (Bath) railway station",
+			51.3835,
+			-2.3864
+		],
+		[
+			"Twerton-on-Avon railway station",
+			51.3803,
+			-2.3908
+		],
+		[
+			"Bath Riverside railway station",
+			51.387,
+			-2.404
+		],
+		[
+			"Bathampton railway station",
+			51.3983,
+			-2.3208
+		],
+		[
+			"Monkton Combe Halt railway station",
+			51.35595,
+			-2.32595
+		],
+		[
+			"Midford Halt railway station",
+			51.3456,
+			-2.3426
+		],
+		[
+			"Midford railway station",
+			51.3449,
+			-2.3452
+		],
+		[
+			"Limpley Stoke railway station",
+			51.3486,
+			-2.31473
+		],
+		[
+			"Combe Hay Halt railway station",
+			51.3384,
+			-2.389
+		],
+		[
+			"Freshford railway station",
+			51.342,
+			-2.301
+		]
+	],
+	"augsburg-germany": [
+		[
+			"Augsburg Central Station",
+			48.36555,
+			10.88637
+		],
+		[
+			"Augsburg Haunstetter Straße station",
+			48.3553,
+			10.9011
+		],
+		[
+			"BRB Betriebswerk",
+			48.34694,
+			10.89394
+		],
+		[
+			"Augsburg Hbf Abstellung Süd",
+			48.34563,
+			10.89019
+		],
+		[
+			"Augsburg-Oberhausen",
+			48.38083,
+			10.8725
+		],
+		[
+			"Augsburg-Hochzoll",
+			48.3531,
+			10.9442
+		],
+		[
+			"Augsburg Hirblinger Straße",
+			48.3981,
+			10.8578
+		],
+		[
+			"Neusäß",
+			48.39439,
+			10.83352
+		],
+		[
+			"Westheim (Schwab)",
+			48.38599,
+			10.81823
+		],
+		[
+			"Inningen station",
+			48.31134,
+			10.86888
+		],
+		[
+			"Lohwald railway station",
+			48.39539,
+			10.81697
+		],
+		[
+			"Gersthofen station",
+			48.42315,
+			10.86123
+		]
+	],
+	"chicago-unitedstates": [
+		[
+			"Millennium Station",
+			41.88594,
+			-87.62345
+		],
+		[
+			"Van Buren Street",
+			41.87733,
+			-87.62284
+		],
+		[
+			"Ogilvie Transportation Center",
+			41.88269,
+			-87.64029
+		],
+		[
+			"LaSalle Street Station",
+			41.87553,
+			-87.63239
+		],
+		[
+			"Chicago Union Station",
+			41.87864,
+			-87.64025
+		],
+		[
+			"Museum Campus/11th Street",
+			41.86839,
+			-87.62119
+		],
+		[
+			"Nickel Plate Depot",
+			41.8678,
+			-87.6311
+		],
+		[
+			"18th Street",
+			41.8579,
+			-87.61792
+		],
+		[
+			"Halsted Street",
+			41.8604,
+			-87.6473
+		],
+		[
+			"Marshfield station",
+			41.87574,
+			-87.66825
+		],
+		[
+			"Chicago station",
+			41.89611,
+			-87.67028
+		],
+		[
+			"McCormick Place",
+			41.8516,
+			-87.61616
+		],
+		[
+			"27th Street station",
+			41.84602,
+			-87.61412
+		],
+		[
+			"Clybourn",
+			41.91716,
+			-87.66824
+		]
+	],
+	"faro-portugal": [
+		[
+			"Faro train station",
+			37.01846,
+			-7.93977
+		],
+		[
+			"Portas do Mar Halt",
+			37.01345,
+			-7.93642
+		],
+		[
+			"Marchil Halt",
+			37.03351,
+			-7.95199
+		],
+		[
+			"Bom João halt",
+			37.01401,
+			-7.92109
+		],
+		[
+			"Patacão Halt",
+			37.04667,
+			-7.95752
+		],
+		[
+			"Rio Seco Halt",
+			37.02135,
+			-7.90782
+		],
+		[
+			"Borgal Halt",
+			37.0549,
+			-7.96396
+		],
+		[
+			"Garganta Halt",
+			37.02381,
+			-7.89742
+		],
+		[
+			"Meia Légua Halt",
+			37.02717,
+			-7.87381
+		],
+		[
+			"São João da Venda Halt",
+			37.07621,
+			-7.98141
+		]
+	],
+	"fukuoka-japan": [
+		[
+			"Nishitetsu Fukuoka (Tenjin) Station",
+			33.58833,
+			130.40028
+		],
+		[
+			"Yakuin Station",
+			33.5819,
+			130.402
+		],
+		[
+			"Hakata Station",
+			33.5898,
+			130.42068
+		],
+		[
+			"Nishitetsu Hirao Station",
+			33.5736,
+			130.40628
+		],
+		[
+			"Yoshizuka Station",
+			33.6072,
+			130.424
+		],
+		[
+			"Takamiya Station",
+			33.5668,
+			130.415
+		],
+		[
+			"Takeshita Station",
+			33.56868,
+			130.43142
+		],
+		[
+			"Hakozaki Station",
+			33.61811,
+			130.42701
+		],
+		[
+			"Ōhashi Station",
+			33.5592,
+			130.42634
+		],
+		[
+			"Yusu Station",
+			33.6133,
+			130.445
+		],
+		[
+			"Kaizuka Station",
+			33.63222,
+			130.42556
+		],
+		[
+			"JR Kaizuka Station",
+			33.63264,
+			130.42671
+		],
+		[
+			"Ijiri Station",
+			33.55197,
+			130.44339
+		],
+		[
+			"Sasabaru Station",
+			33.55327,
+			130.44861
+		]
+	],
+	"tarragona-spain": [[
+		"Tarragona railway station",
+		41.1115,
+		1.25319
+	]],
+	"malmo-sweden": [
+		[
+			"Malmö Central Station",
+			55.60889,
+			12.99965
+		],
+		[
+			"Malmö Västra station",
+			55.60819,
+			12.99333
+		],
+		[
+			"Malmö MLJ",
+			55.60733,
+			12.98442
+		],
+		[
+			"Södervärns station",
+			55.58833,
+			13.00792
+		],
+		[
+			"Östervärn railway station",
+			55.60747,
+			13.03258
+		],
+		[
+			"Rosengård railway station",
+			55.58873,
+			13.03082
+		],
+		[
+			"Persborg railway station",
+			55.58028,
+			13.02917
+		],
+		[
+			"Kulladals station",
+			55.57339,
+			13.00017
+		],
+		[
+			"Hindby",
+			55.57417,
+			13.04444
+		],
+		[
+			"Arlöv railway station",
+			55.63216,
+			13.06545
+		],
+		[
+			"Hyllie railway station",
+			55.56269,
+			12.97583
+		],
+		[
+			"Fosieby railway station",
+			55.56222,
+			13.03111
+		],
+		[
+			"Sege",
+			55.61713,
+			13.08468
+		],
+		[
+			"Burlöv railway station",
+			55.64076,
+			13.08001
+		]
+	],
+	"glasgow-unitedkingdom": [
+		[
+			"Glasgow Central railway station",
+			55.86028,
+			-4.25806
+		],
+		[
+			"Glasgow Queen Street railway station",
+			55.8622,
+			-4.2512
+		],
+		[
+			"St Enoch railway station",
+			55.8573,
+			-4.2537
+		],
+		[
+			"Anderston railway station",
+			55.8598,
+			-4.2703
+		],
+		[
+			"Argyle Street railway station",
+			55.857,
+			-4.251
+		],
+		[
+			"Charing Cross railway station",
+			55.8647,
+			-4.27
+		],
+		[
+			"College railway station",
+			55.85938,
+			-4.24012
+		],
+		[
+			"High Street railway station",
+			55.8594,
+			-4.24
+		],
+		[
+			"Gallowgate railway station",
+			55.8564,
+			-4.2416
+		],
+		[
+			"Main Street railway station",
+			55.8489,
+			-4.2542
+		],
+		[
+			"Exhibition Centre railway station",
+			55.8611,
+			-4.2828
+		],
+		[
+			"St Rollox railway station",
+			55.8697,
+			-4.2415
+		],
+		[
+			"Cumberland Street railway station",
+			55.8483,
+			-4.2568
+		],
+		[
+			"Finnieston railway station",
+			55.864,
+			-4.2828
+		]
+	],
+	"colmar-france": [
+		[
+			"Gare de Colmar",
+			48.07251,
+			7.34657
+		],
+		[
+			"Gare de Colmar-Saint-Joseph",
+			48.0817,
+			7.34531
+		],
+		[
+			"Colmar-Nord",
+			48.08338,
+			7.35445
+		],
+		[
+			"Train stations in Colmar",
+			48.08593,
+			7.33385
+		],
+		[
+			"Gare de Colmar-Sud",
+			48.05617,
+			7.36493
+		],
+		[
+			"Gare de Logelbach",
+			48.08732,
+			7.32118
+		],
+		[
+			"Gare d'Eguisheim",
+			48.03915,
+			7.32383
+		],
+		[
+			"Ingersheim",
+			48.08892,
+			7.29756
+		],
+		[
+			"Gare de Turckheim",
+			48.08576,
+			7.27942
+		],
+		[
+			"Gare de Sundhoffen",
+			48.04639,
+			7.42083
+		],
+		[
+			"Gare de Herrlisheim-près-Colmar",
+			48.01661,
+			7.32075
+		]
+	],
+	"valencia-spain": [
+		[
+			"Alameda station",
+			39.47315,
+			-.36531
+		],
+		[
+			"Valencia-Alameda train station",
+			39.47414,
+			-.35681
+		],
+		[
+			"Facultats station",
+			39.47806,
+			-.36174
+		],
+		[
+			"Amistat station",
+			39.47017,
+			-.34985
+		],
+		[
+			"Estació del Nord",
+			39.46699,
+			-.37712
+		],
+		[
+			"Gare centrale de Valence",
+			39.46713,
+			-.37718
+		],
+		[
+			"Xàtiva",
+			39.4672,
+			-.3774
+		],
+		[
+			"Pont de Fusta",
+			39.48219,
+			-.37289
+		],
+		[
+			"Ayora station",
+			39.4664,
+			-.34278
+		],
+		[
+			"Valencia-Joaquín Sorolla railway station",
+			39.4605,
+			-.38231
+		],
+		[
+			"Estación de Primat Reig",
+			39.48628,
+			-.36778
+		],
+		[
+			"Estación de Sagunt (MetroValencia)",
+			39.48646,
+			-.37553
+		],
+		[
+			"Alfauir station",
+			39.48968,
+			-.36544
+		],
+		[
+			"Reus station",
+			39.48594,
+			-.38172
+		]
+	],
+	"leipzig-germany": [
+		[
+			"Thüringer Bahnhof",
+			51.34786,
+			12.38004
+		],
+		[
+			"Leipzig Eilenburger Bahnhof",
+			51.33516,
+			12.39537
+		],
+		[
+			"Leipzig Berliner Bahnhof",
+			51.35569,
+			12.39311
+		],
+		[
+			"Leipzig Bayerischer Bahnhof",
+			51.33012,
+			12.38113
+		],
+		[
+			"Leipzig-Dresdener Güterbahnhof",
+			51.35021,
+			12.40146
+		],
+		[
+			"Leipzig-Stötteritz railway station",
+			51.32374,
+			12.41076
+		],
+		[
+			"Leipzig Anger-Crottendorf railway station",
+			51.33258,
+			12.42148
+		],
+		[
+			"Leipzig-Schönefeld station",
+			51.35315,
+			12.43889
+		],
+		[
+			"Leipzig-Plagwitz railway station",
+			51.32806,
+			12.32206
+		],
+		[
+			"Leipzig-Connewitz railway station",
+			51.30093,
+			12.38652
+		],
+		[
+			"Leipzig-Leutzsch railway station",
+			51.35402,
+			12.30428
+		],
+		[
+			"Leipzig-Wahren railway station",
+			51.38052,
+			12.32256
+		]
+	],
+	"harrogate-united-kingdom": [
+		[
+			"Harrogate railway station",
+			53.99331,
+			-1.53737
+		],
+		[
+			"Nidd Bridge railway station",
+			54.03426,
+			-1.54338
+		],
+		[
+			"Starbeck railway station",
+			53.999,
+			-1.50065
+		],
+		[
+			"Hornbeam Park railway station",
+			53.9799,
+			-1.52695
+		],
+		[
+			"Hampsthwaite railway station",
+			54.029,
+			-1.599
+		],
+		[
+			"Crimple railway station",
+			53.9699,
+			-1.509
+		],
+		[
+			"Knaresborough railway station",
+			54.009,
+			-1.4703
+		],
+		[
+			"Birstwith railway station",
+			54.0337,
+			-1.6267
+		],
+		[
+			"Pannal railway station",
+			53.95845,
+			-1.53274
+		],
+		[
+			"Knaresborough Hay Park Lane railway station",
+			54.0123,
+			-1.4537
+		]
+	],
+	"linz-austria": [
+		[
+			"Bahnhof Linz Urfahr",
+			48.3117,
+			14.2797
+		],
+		[
+			"Linz Hauptbahnhof",
+			48.29056,
+			14.29111
+		],
+		[
+			"Linz Stadthafen",
+			48.30198,
+			14.31583
+		],
+		[
+			"Untergaumberg railway station",
+			48.28014,
+			14.28017
+		],
+		[
+			"Bahnhof Linz Franckstraße",
+			48.28593,
+			14.32354
+		],
+		[
+			"Puchenau",
+			48.31164,
+			14.23839
+		],
+		[
+			"Leonding Lokalbahn railway station",
+			48.27449,
+			14.25457
+		],
+		[
+			"Leonding railway station",
+			48.27403,
+			14.25395
+		],
+		[
+			"Linz Oed railway station",
+			48.26468,
+			14.27654
+		],
+		[
+			"Leonding Straßfeld railway station",
+			48.27464,
+			14.24579
+		],
+		[
+			"Bahnhof Puchenau West",
+			48.31253,
+			14.22244
+		],
+		[
+			"Bergham railway station",
+			48.27394,
+			14.23987
+		],
+		[
+			"Bahnhof Steyregg",
+			48.28447,
+			14.36229
+		],
+		[
+			"Am Dürrweg railway station",
+			48.2741,
+			14.23115
+		]
+	],
+	"vitoria-gasteiz-spain": [
+		[
+			"Vitoria-Gasteiz railway station",
+			42.84153,
+			-2.67261
+		],
+		[
+			"estación de Olárizu",
+			42.82939,
+			-2.65183
+		],
+		[
+			"estación de Azucarera Alavesa",
+			42.85422,
+			-2.71889
+		],
+		[
+			"estación de Durana",
+			42.89325,
+			-2.64497
+		],
+		[
+			"Otazu train station",
+			42.82955,
+			-2.6245
+		],
+		[
+			"Jundiz",
+			42.85139,
+			-2.74331
+		],
+		[
+			"estación de Retana",
+			42.90989,
+			-2.64164
+		]
+	],
+	"cordoba-spain": [
+		[
+			"Córdoba-Julio Anguita railway station",
+			37.88848,
+			-4.78958
+		],
+		[
+			"Mirabueno train station",
+			37.91489,
+			-4.77327
+		],
+		[
+			"Córdoba-Mercancías train station",
+			37.8739,
+			-4.83225
+		],
+		[
+			"Campus Universitario de Rabanales train station",
+			37.91256,
+			-4.72072
+		],
+		[
+			"El Higuerón train station",
+			37.86722,
+			-4.85034
+		],
+		[
+			"Valchillón train station",
+			37.83659,
+			-4.83253
+		]
+	],
+	"sesimbra-portugal": [],
+	"dublin-ireland": [
+		[
+			"Tara Street railway station",
+			53.3468,
+			-6.25414
+		],
+		[
+			"Dublin Connolly railway station",
+			53.35139,
+			-6.24972
+		],
+		[
+			"Christchurch railway station, Dublin",
+			53.34444,
+			-6.27139
+		],
+		[
+			"Dublin Pearse railway station",
+			53.34333,
+			-6.24846
+		],
+		[
+			"Drumcondra railway station",
+			53.3631,
+			-6.2585
+		],
+		[
+			"Docklands railway station",
+			53.35063,
+			-6.23935
+		],
+		[
+			"Spencer Dock railway station",
+			53.34908,
+			-6.23704
+		],
+		[
+			"North Wall railway station",
+			53.347,
+			-6.237
+		],
+		[
+			"Glasnevin railway station",
+			53.3649,
+			-6.271
+		],
+		[
+			"Grand Canal Dock railway station",
+			53.33961,
+			-6.23771
+		],
+		[
+			"Dublin Heuston railway station",
+			53.34645,
+			-6.29266
+		],
+		[
+			"Clontarf Road railway station",
+			53.3631,
+			-6.227
+		],
+		[
+			"Lansdowne Road railway station",
+			53.33382,
+			-6.22914
+		],
+		[
+			"Liffey Junction",
+			53.37104,
+			-6.2919
+		]
+	],
+	"zaragoza-spain": [
+		[
+			"Zaragoza-Portillo train station",
+			41.65274,
+			-.89598
+		],
+		[
+			"Zaragoza-Goya train station",
+			41.64387,
+			-.89105
+		],
+		[
+			"Utrillas railway station",
+			41.64028,
+			-.86769
+		],
+		[
+			"Antigua estación de Caminreal",
+			41.65742,
+			-.90936
+		],
+		[
+			"Zaragoza-Delicias railway station",
+			41.65866,
+			-.9112
+		],
+		[
+			"Miraflores railway station",
+			41.63339,
+			-.86822
+		]
+	],
+	"nottingham-united-kingdom": [
+		[
+			"Nottingham Carrington Street railway station",
+			52.9476,
+			-1.148
+		],
+		[
+			"Nottingham railway station",
+			52.947,
+			-1.146
+		],
+		[
+			"Nottingham Arkwright Street railway station",
+			52.9445,
+			-1.1469
+		],
+		[
+			"Nottingham Victoria railway station",
+			52.9572,
+			-1.1477
+		],
+		[
+			"Lenton railway station",
+			52.9493,
+			-1.17922
+		],
+		[
+			"Carrington railway station",
+			52.9697,
+			-1.15569
+		],
+		[
+			"Radford railway station",
+			52.9563,
+			-1.1845
+		],
+		[
+			"Thorneywood railway station",
+			52.9623,
+			-1.1211
+		],
+		[
+			"Nottingham Racecourse railway station",
+			52.9498,
+			-1.1141
+		],
+		[
+			"St Ann's Well railway station",
+			52.973,
+			-1.1251
+		],
+		[
+			"New Basford railway station",
+			52.9782,
+			-1.1635
+		],
+		[
+			"Sherwood railway station",
+			52.9819,
+			-1.1368
+		],
+		[
+			"Basford Vernon railway station",
+			52.9806,
+			-1.17782
+		],
+		[
+			"Beeston railway station",
+			52.92074,
+			-1.20765
+		]
+	],
+	"folkestone-unitedkingdom": [
+		[
+			"Folkestone West railway station",
+			51.085,
+			1.154
+		],
+		[
+			"Cheriton Halt railway station",
+			51.0865,
+			1.14139
+		],
+		[
+			"Folkestone Central railway station",
+			51.0827,
+			1.1697
+		],
+		[
+			"Eurotunnel Folkestone Terminal",
+			51.096,
+			1.135
+		],
+		[
+			"Sandgate railway station",
+			51.0724,
+			1.1224
+		],
+		[
+			"Folkestone Harbour railway station",
+			51.0781,
+			1.1874
+		],
+		[
+			"Folkestone East railway station",
+			51.0874,
+			1.18904
+		],
+		[
+			"Dollands Moor Freight Yard",
+			51.0919,
+			1.10194
+		],
+		[
+			"Folkestone Warren Halt railway station",
+			51.0962,
+			1.2107
+		],
+		[
+			"Hythe railway station",
+			51.0713,
+			1.0725
+		],
+		[
+			"Sandling railway station",
+			51.09,
+			1.066
+		],
+		[
+			"Lyminge railway station",
+			51.12649,
+			1.09122
+		]
+	],
+	"ottawa-canada": [
+		[
+			"Rideau station",
+			45.42611,
+			-75.69194
+		],
+		[
+			"Ottawa station",
+			45.4164,
+			-75.6517
+		],
+		[
+			"Pimisi station",
+			45.41389,
+			-75.71333
+		],
+		[
+			"Dow's Lake station",
+			45.39739,
+			-75.70947
+		],
+		[
+			"Carleton Station",
+			45.38558,
+			-75.69589
+		],
+		[
+			"Mooney's Bay station",
+			45.37686,
+			-75.68492
+		],
+		[
+			"Laman",
+			45.45917,
+			-75.73055
+		],
+		[
+			"Hull",
+			45.46119,
+			-75.73877
+		]
+	],
+	"kaunas-lithuania": [
+		[
+			"Daukanto Gatvė train station",
+			54.894,
+			23.9139
+		],
+		[
+			"Maironio Gatvė train station",
+			54.8947,
+			23.909
+		],
+		[
+			"Karmelitai train station",
+			54.89,
+			23.92
+		],
+		[
+			"Kanto Gatvė train station",
+			54.8946,
+			23.9028
+		],
+		[
+			"Kariškių Malūnas train station",
+			54.888,
+			23.908
+		],
+		[
+			"Birštono Gatvė train station",
+			54.895,
+			23.896
+		],
+		[
+			"Čiurlionio Gatvė train station",
+			54.8854,
+			23.9265
+		],
+		[
+			"Senamiestis train station",
+			54.8949,
+			23.8929
+		],
+		[
+			"Kaunas train station",
+			54.886,
+			23.932
+		],
+		[
+			"Siaurojo Geležinkelio Depas train station",
+			54.88,
+			23.924
+		],
+		[
+			"Aero train station",
+			54.889,
+			23.884
+		],
+		[
+			"Geležinkelio Dirbtuvės train station",
+			54.8787,
+			23.9334
+		],
+		[
+			"Aleksotas train station",
+			54.874,
+			23.924
+		],
+		[
+			"Šmito Dirbtuvės train station",
+			54.8729,
+			23.9356
+		]
+	],
+	"kiel-germany": [
+		[
+			"Kiel Central station",
+			54.3148,
+			10.1318
+		],
+		[
+			"Kiel Schulen am Langsee station",
+			54.30729,
+			10.1571
+		],
+		[
+			"Kiel-Ellerbek  station",
+			54.31408,
+			10.17004
+		],
+		[
+			"Kiel-Hassee CITTI-PARK station",
+			54.31125,
+			10.09797
+		],
+		[
+			"Kronshagen station",
+			54.33105,
+			10.08325
+		],
+		[
+			"Kiel-Russee",
+			54.31003,
+			10.07029
+		],
+		[
+			"Suchsdorf station",
+			54.34918,
+			10.09094
+		],
+		[
+			"Kiel-Elmschenhagen station",
+			54.28665,
+			10.18172
+		],
+		[
+			"Kiel-Oppendorf railway station",
+			54.32607,
+			10.20841
+		],
+		[
+			"Schoenkirchen railway station",
+			54.33271,
+			10.22887
+		],
+		[
+			"Melsdorf station",
+			54.31279,
+			10.03072
+		]
+	],
+	"livorno-italy": [
+		[
+			"Barriera Margherita",
+			43.5279,
+			10.3099
+		],
+		[
+			"Livorno Centrale railway station",
+			43.55417,
+			10.33583
+		],
+		[
+			"Livorno Porto Vecchio",
+			43.55568,
+			10.30408
+		],
+		[
+			"Livorno San Marco railway station",
+			43.5608,
+			10.3144
+		]
+	],
+	"birmingham-united-kingdom": [
+		[
+			"Birmingham New Street railway station",
+			52.47777,
+			-1.89885
+		],
+		[
+			"Birmingham Moor Street railway station",
+			52.47829,
+			-1.891
+		],
+		[
+			"Central Goods railway station",
+			52.4765,
+			-1.90501
+		],
+		[
+			"Birmingham Snow Hill station",
+			52.4837,
+			-1.8996
+		],
+		[
+			"Granville Street railway station",
+			52.4744,
+			-1.90889
+		],
+		[
+			"Curzon Street railway station",
+			52.4816,
+			-1.88637
+		],
+		[
+			"Five Ways railway station",
+			52.47,
+			-1.913
+		],
+		[
+			"Lawley Street railway station",
+			52.4821,
+			-1.8778
+		],
+		[
+			"Bordesley railway station",
+			52.471,
+			-1.877
+		],
+		[
+			"Jewellery Quarter railway station",
+			52.4897,
+			-1.9136
+		],
+		[
+			"Monument Lane railway station",
+			52.4823,
+			-1.9246
+		],
+		[
+			"Hockley (GWR) railway station",
+			52.4904,
+			-1.9169
+		],
+		[
+			"Camp Hill railway station",
+			52.4613,
+			-1.88354
+		],
+		[
+			"Church Road railway station",
+			52.4653,
+			-1.92139
+		]
+	],
+	"bali-indonesia": [],
+	"lubeck-germany": [
+		[
+			"Lübeck railway station",
+			53.8672,
+			10.6692
+		],
+		[
+			"Lübeck Hochschulstadtteil station",
+			53.83049,
+			10.68896
+		],
+		[
+			"Schwartau-Waldhalle station",
+			53.9117,
+			10.7007
+		],
+		[
+			"Bad Schwartau station",
+			53.91587,
+			10.70228
+		],
+		[
+			"Herrnburg railway station",
+			53.8377,
+			10.76
+		],
+		[
+			"Lübeck-Dänischburg IKEA station",
+			53.91109,
+			10.73475
+		]
+	],
+	"alicante-spain": [
+		[
+			"Luceros",
+			38.34601,
+			-.49068
+		],
+		[
+			"Alicante railway station",
+			38.34444,
+			-.49497
+		],
+		[
+			"Estación de Alicante-Benalúa",
+			38.33788,
+			-.4935
+		],
+		[
+			"Estación de MARQ (TRAM Alicante)",
+			38.35213,
+			-.47561
+		],
+		[
+			"Sangueta",
+			38.35192,
+			-.46785
+		],
+		[
+			"Parada de La Goteta-Plaza Mar 2",
+			38.35467,
+			-.46928
+		],
+		[
+			"Parada de Garbinet",
+			38.36243,
+			-.47829
+		],
+		[
+			"Parada de Hospital",
+			38.36432,
+			-.48392
+		],
+		[
+			"Parada de Bulevar del Pla",
+			38.36004,
+			-.47229
+		],
+		[
+			"Parada de Maestro Alonso",
+			38.36827,
+			-.48579
+		],
+		[
+			"Sant Gabriel railway station",
+			38.32906,
+			-.50869
+		],
+		[
+			"Parada de Pintor Gastón Castelló",
+			38.37386,
+			-.48711
+		],
+		[
+			"Parada de Ciudad Jardín",
+			38.37579,
+			-.49779
+		],
+		[
+			"Santa Isabel (TRAM Alacant)",
+			38.38179,
+			-.50444
+		]
+	],
+	"rotterdam-netherlands": [
+		[
+			"Rotterdam Blaak railway station",
+			51.92,
+			4.48917
+		],
+		[
+			"Rotterdam Centraal railway station",
+			51.925,
+			4.46944
+		],
+		[
+			"Hofplein (RandstadRail station)",
+			51.92705,
+			4.47914
+		],
+		[
+			"Rotterdam Feijenoord",
+			51.9123,
+			4.50053
+		],
+		[
+			"Station Rotterdam Bergweg (1908)",
+			51.93222,
+			4.47083
+		],
+		[
+			"Halte Beukelsdijk",
+			51.92273,
+			4.44657
+		],
+		[
+			"Rotterdam Zuid railway station",
+			51.90528,
+			4.50944
+		],
+		[
+			"Rotterdam Noord railway station",
+			51.94222,
+			4.48139
+		],
+		[
+			"Mallegat station",
+			51.90184,
+			4.51255
+		],
+		[
+			"Rotterdam Stadion railway station",
+			51.89389,
+			4.51972
+		],
+		[
+			"IJsselmonde railway station",
+			51.88984,
+			4.52268
+		],
+		[
+			"Schiedam Centrum railway station",
+			51.92194,
+			4.41
+		],
+		[
+			"Rotterdam Lombardijen railway station",
+			51.87972,
+			4.53111
+		],
+		[
+			"Rotterdam Alexander railway station",
+			51.95194,
+			4.55278
+		]
+	],
+	"wrocaw-poland": [
+		[
+			"Wrocław Main Railway Station",
+			51.0988,
+			17.0365
+		],
+		[
+			"Brandenburg Station in Wrocław",
+			51.1092,
+			17.0178
+		],
+		[
+			"Dworzec Miejski Prawego Brzegu Odry we Wrocławiu",
+			51.11001,
+			17.01639
+		],
+		[
+			"Wrocław Wąskotorowy",
+			51.12289,
+			17.02976
+		],
+		[
+			"Wrocław Nadodrze",
+			51.12556,
+			17.0325
+		],
+		[
+			"Wrocław Mikołajów",
+			51.11528,
+			16.99806
+		],
+		[
+			"Wrocław Popowice",
+			51.12715,
+			17.00138
+		],
+		[
+			"Wrocław Gądów",
+			51.11583,
+			16.97779
+		],
+		[
+			"Wrocław Muchobór",
+			51.11056,
+			16.975
+		],
+		[
+			"Wrocław Wojszyce",
+			51.0695,
+			17.0366
+		],
+		[
+			"Wrocław Sołtysowice",
+			51.1419,
+			17.0822
+		],
+		[
+			"Wrocław Kowale",
+			51.135,
+			17.1003
+		],
+		[
+			"Wrocław Partynice",
+			51.0641,
+			17.0107
+		],
+		[
+			"Wrocław Swojczyce",
+			51.1157,
+			17.122
+		]
+	],
+	"las-vegas-unitedstates": [[
+		"Las Vegas Depot",
+		36.17216,
+		-115.14745
+	]],
+	"brno-czechia": [
+		[
+			"Brno hlavní nádraží",
+			49.19083,
+			16.61278
+		],
+		[
+			"Brno dolní nádraží",
+			49.18307,
+			16.61597
+		],
+		[
+			"Brno-Horní Heršpice",
+			49.16746,
+			16.60689
+		],
+		[
+			"Brno-Královo Pole",
+			49.23056,
+			16.59639
+		],
+		[
+			"Brno-Slatina",
+			49.16959,
+			16.68202
+		],
+		[
+			"Modřice",
+			49.13378,
+			16.60617
+		]
+	],
+	"rostock-germany": [
+		[
+			"Rostock Central Station",
+			54.0781,
+			12.1308
+		],
+		[
+			"Groß Schwaß railway station",
+			54.077,
+			12.0463
+		],
+		[
+			"Bentwisch railway station",
+			54.1174,
+			12.2106
+		]
+	],
+	"cairns-australia": [[
+		"Cairns railway station",
+		-16.9257,
+		145.7712
+	]],
+	"ajman-united-arab-emirates": [],
+	"bruges-belgium": [
+		[
+			"Brugge railway station",
+			51.19762,
+			3.21792
+		],
+		[
+			"Brugge-Sint-Pieters railway station",
+			51.2231,
+			3.20182
+		],
+		[
+			"Oostkamp railway station",
+			51.15433,
+			3.2574
+		]
+	],
+	"gandia-spain": [
+		[
+			"Platja i Grau de Gandia Station",
+			38.9901,
+			-.1626
+		],
+		[
+			"estación de Puerto de Gandía",
+			38.99231,
+			-.15933
+		],
+		[
+			"Gandía-Mercancías train station",
+			38.9841,
+			-.1809
+		],
+		[
+			"estación de Gandía (ferrocarril Alcoy-Gandía)",
+			38.97011,
+			-.17903
+		],
+		[
+			"Gandia train station",
+			38.9704,
+			-.1803
+		],
+		[
+			"Almoines train station",
+			38.94258,
+			-.17889
+		],
+		[
+			"Xeraco Station",
+			39.0262,
+			-.21481
+		],
+		[
+			"estación de Beniarjó",
+			38.93236,
+			-.18478
+		]
+	],
+	"ljubljana-slovenia": [
+		[
+			"Ljubljana-Šiška railway station",
+			46.06064,
+			14.50069
+		],
+		[
+			"Ljubljana railway station",
+			46.05889,
+			14.51306
+		],
+		[
+			"Ljubljana Rakovnik railway station",
+			46.0371,
+			14.51899
+		],
+		[
+			"Ljubljana Moste railway station",
+			46.05969,
+			14.54085
+		],
+		[
+			"Ljubljana Črnuče train station",
+			46.10119,
+			14.52626
+		],
+		[
+			"Ljubljana Vižmarje train station",
+			46.10052,
+			14.46434
+		]
+	],
+	"saarbrucken-germany": [
+		[
+			"Saarbrücken Central Station",
+			49.2414,
+			6.99056
+		],
+		[
+			"Saarbrücken-Burbach station",
+			49.24194,
+			6.95667
+		],
+		[
+			"Burbach Mitte",
+			49.24358,
+			6.94494
+		],
+		[
+			"Saarbrücken Ost station",
+			49.2303,
+			7.01861
+		],
+		[
+			"Jägersfreude station",
+			49.26528,
+			7.00444
+		],
+		[
+			"Brebach",
+			49.21639,
+			7.02889
+		],
+		[
+			"Schafbrücke station",
+			49.22778,
+			7.04917
+		],
+		[
+			"Luisenthal station",
+			49.2494,
+			6.90389
+		],
+		[
+			"Scheidt (Saar) station",
+			49.24356,
+			7.05695
+		],
+		[
+			"Dudweiler",
+			49.27729,
+			7.02722
+		]
+	],
+	"szczecin-poland": [
+		[
+			"Szczecin Główny",
+			53.41861,
+			14.54972
+		],
+		[
+			"Szczecin Łasztownia",
+			53.41834,
+			14.55964
+		],
+		[
+			"Szczecin Port Centralny",
+			53.41242,
+			14.56937
+		],
+		[
+			"Szczecin Dworzec Wrocławski",
+			53.41753,
+			14.576
+		],
+		[
+			"Szczecin Turzyn",
+			53.4292,
+			14.5283
+		],
+		[
+			"Szczecin Pomorzany",
+			53.4136,
+			14.5306
+		],
+		[
+			"Szczecin Pogodno",
+			53.4383,
+			14.5231
+		],
+		[
+			"Szczecin Wzgórze Hetmańskie railway station",
+			53.4065,
+			14.5209
+		],
+		[
+			"Wstowo Wąskotorowe",
+			53.3914,
+			14.5175
+		],
+		[
+			"Gumieńce Wąskotorowe",
+			53.3978,
+			14.4981
+		],
+		[
+			"Szczecin Gumieńce railway station",
+			53.39778,
+			14.49556
+		],
+		[
+			"Szczecin Dziewoklicz",
+			53.3783,
+			14.5475
+		],
+		[
+			"Szczecin Lotnisko",
+			53.3867,
+			14.6311
+		],
+		[
+			"Warzymice Wąskotorowe",
+			53.3875,
+			14.4722
+		]
+	],
+	"tartu-estonia": [[
+		"Tartu railway station",
+		58.37382,
+		26.70684
+	]],
+	"dundee-united-kingdom": [
+		[
+			"Dundee East railway station",
+			56.46221,
+			-2.96248
+		],
+		[
+			"Dundee railway station",
+			56.4566,
+			-2.971
+		],
+		[
+			"Dundee Esplanade railway station",
+			56.4519,
+			-2.988
+		],
+		[
+			"Maryfield station",
+			56.47788,
+			-2.96006
+		],
+		[
+			"Back of Law railway station",
+			56.474,
+			-2.9856
+		],
+		[
+			"Cross Roads railway station",
+			56.47832,
+			-2.98837
+		],
+		[
+			"Newport-on-Tay West railway station",
+			56.4339,
+			-2.9459
+		],
+		[
+			"Baldovan railway station",
+			56.49193,
+			-2.99724
+		],
+		[
+			"Baldragon railway station",
+			56.503,
+			-3.01311
+		],
+		[
+			"Broughty Ferry railway station",
+			56.46743,
+			-2.87327
+		],
+		[
+			"Invergowrie railway station",
+			56.4563,
+			-3.0578
+		]
+	],
+	"bilbao-spain": [
+		[
+			"Bilbao-Abando",
+			43.26051,
+			-2.92765
+		],
+		[
+			"Bilbao-Concordia",
+			43.26017,
+			-2.92625
+		],
+		[
+			"Zazpikaleak/Casco Viejo Station",
+			43.26,
+			-2.92194
+		],
+		[
+			"Estación de Matiko",
+			43.2689,
+			-2.92513
+		],
+		[
+			"Estación de Zumalakarregi",
+			43.2654,
+			-2.92015
+		],
+		[
+			"Loruri-Ciudad Jardín",
+			43.26973,
+			-2.92553
+		],
+		[
+			"Uribarri station",
+			43.2669,
+			-2.92015
+		],
+		[
+			"Estación De Las Calzadas De Mallona",
+			43.25867,
+			-2.92097
+		],
+		[
+			"Zabalburu station (Adif)",
+			43.25603,
+			-2.93272
+		],
+		[
+			"Zurbaranbarri",
+			43.26394,
+			-2.91353
+		],
+		[
+			"Miribilla",
+			43.2504,
+			-2.93043
+		],
+		[
+			"Autonomía train station",
+			43.25819,
+			-2.94604
+		],
+		[
+			"Ametzola",
+			43.25467,
+			-2.94367
+		],
+		[
+			"San Mames Station",
+			43.26178,
+			-2.94908
+		]
+	],
+	"yokohama-japan": [
+		[
+			"Kanagawa Station",
+			35.47102,
+			139.62709
+		],
+		[
+			"Tammachi Station",
+			35.4741,
+			139.625
+		],
+		[
+			"Yokohama Station",
+			35.46583,
+			139.62278
+		],
+		[
+			"Higashi-Kanagawa Station",
+			35.47806,
+			139.63333
+		],
+		[
+			"Shin-Takashima Station",
+			35.4619,
+			139.62688
+		],
+		[
+			"Keikyū Higashi‐kanagawa Station",
+			35.4776,
+			139.6346
+		],
+		[
+			"Mitsuzawa-shimochō Station",
+			35.47651,
+			139.61479
+		],
+		[
+			"Higashi-Hakuraku Station",
+			35.48327,
+			139.62977
+		],
+		[
+			"Minatomirai Station",
+			35.45793,
+			139.63231
+		],
+		[
+			"Hiranumabashi Station",
+			35.46031,
+			139.61694
+		],
+		[
+			"Kanagawa-Shimmachi Station",
+			35.4814,
+			139.64
+		],
+		[
+			"Tobe Station",
+			35.45694,
+			139.61944
+		],
+		[
+			"Hakuraku Station",
+			35.48965,
+			139.62789
+		],
+		[
+			"Koyasu Station",
+			35.4846,
+			139.6448
+		]
+	],
+	"puerto-de-la-cruz-spain": [],
+	"aveiro-portugal": [
+		[
+			"Aveiro railway station",
+			40.64346,
+			-8.6405
+		],
+		[
+			"Apeadero de Quintãs",
+			40.591,
+			-8.61267
+		],
+		[
+			"Cacia train station",
+			40.6847,
+			-8.59848
+		]
+	],
+	"graz-austria": [
+		[
+			"Graz Hauptbahnhof",
+			47.07222,
+			15.41722
+		],
+		[
+			"Graz Köflacherbahnhof",
+			47.06833,
+			15.41389
+		],
+		[
+			"Graz Don Bosco railway station",
+			47.05803,
+			15.41913
+		],
+		[
+			"Graz Ostbahnhof-Messe",
+			47.0538,
+			15.4484
+		],
+		[
+			"Graz Stadion Liebenau railway station",
+			47.04453,
+			15.45483
+		],
+		[
+			"Graz Wetzelsdorf railway station",
+			47.05139,
+			15.40139
+		],
+		[
+			"Graz Liebenau Murpark railway station",
+			47.03987,
+			15.46308
+		],
+		[
+			"Graz Puntigam railway station",
+			47.03076,
+			15.42928
+		],
+		[
+			"Graz Webling railway station",
+			47.03222,
+			15.40583
+		],
+		[
+			"Graz Straßgang railway station",
+			47.02083,
+			15.40556
+		],
+		[
+			"Hart bei Graz railway station",
+			47.04184,
+			15.50748
+		],
+		[
+			"Raaba railway station",
+			47.03013,
+			15.49601
+		],
+		[
+			"Feldkirchen-Seiersberg railway station",
+			47.0126,
+			15.44048
+		]
+	],
+	"nazare-portugal": [
+		[
+			"Valado train station",
+			39.58512,
+			-9.0167
+		],
+		[
+			"Cela halt",
+			39.55343,
+			-9.05531
+		],
+		[
+			"Fanhais halt",
+			39.62546,
+			-8.99924
+		]
+	],
+	"odz-poland": [
+		[
+			"Łódź Fabryczna railway station",
+			51.76889,
+			19.46778
+		],
+		[
+			"Łódź Kaliska railway station",
+			51.75806,
+			19.42972
+		],
+		[
+			"Łódź Kaliska Towarowa",
+			51.74818,
+			19.43528
+		],
+		[
+			"Łódź Uniwersytet",
+			51.7842,
+			19.5014
+		],
+		[
+			"Łódź Niciarniana railway station",
+			51.76667,
+			19.50756
+		],
+		[
+			"Łódź Stoki railway station",
+			51.77658,
+			19.51058
+		],
+		[
+			"Radegast railway station",
+			51.80175,
+			19.48054
+		],
+		[
+			"Łódź Żabieniec railway station",
+			51.79356,
+			19.40686
+		],
+		[
+			"Łódź Retkinia railway station",
+			51.74031,
+			19.40639
+		],
+		[
+			"Łódź Dąbrowa PODG",
+			51.7428,
+			19.5122
+		],
+		[
+			"Łódź Arturówek railway station",
+			51.81547,
+			19.45663
+		],
+		[
+			"Łódź Chojny railway station",
+			51.7264,
+			19.4844
+		],
+		[
+			"Łódź Widzew railway station",
+			51.76306,
+			19.54444
+		],
+		[
+			"Łódź Dąbrowa Przemysłowa",
+			51.7446,
+			19.5368
+		]
+	],
+	"seville-spain": [
+		[
+			"Estación de San Bernardo",
+			37.38297,
+			-5.98415
+		],
+		[
+			"Estación de Cristo de Burgos",
+			37.3919,
+			-5.98975
+		],
+		[
+			"Sevilla-Santa Justa railway station",
+			37.39247,
+			-5.97481
+		],
+		[
+			"Sevilla-La Enramadilla train station",
+			37.37866,
+			-5.97868
+		],
+		[
+			"Seville-Plaza de Armas railway station",
+			37.39167,
+			-6.00259
+		],
+		[
+			"Triana train station",
+			37.39028,
+			-6.01119
+		],
+		[
+			"Virgen del Rocío train station",
+			37.36281,
+			-5.97594
+		],
+		[
+			"Cartuja train station",
+			37.4083,
+			-6.00977
+		],
+		[
+			"Estación de Estadio Olímpico",
+			37.417,
+			-6.00757
+		],
+		[
+			"Estación de Sevilla-La Negrilla",
+			37.37564,
+			-5.93704
+		],
+		[
+			"Padre Pío-Palmete",
+			37.3708,
+			-5.93943
+		],
+		[
+			"Sevilla-San Jerónimo train station",
+			37.42767,
+			-5.97857
+		],
+		[
+			"Palacio de Congresos railway station",
+			37.40361,
+			-5.93639
+		],
+		[
+			"Guadaíra railway station",
+			37.35833,
+			-5.94722
+		]
+	],
+	"girona-spain": [
+		[
+			"Girona railway station",
+			41.97906,
+			2.81578
+		],
+		[
+			"Quart station",
+			41.93825,
+			2.8393
+		],
+		[
+			"Fornells de la Selva station",
+			41.93503,
+			2.80975
+		],
+		[
+			"Estació de Celrà",
+			42.02717,
+			2.87494
+		]
+	],
+	"figueres-spain": [
+		[
+			"Figueres railway station",
+			42.26509,
+			2.96879
+		],
+		[
+			"Figueres–Vilafant railway station",
+			42.26556,
+			2.94222
+		],
+		[
+			"Vilamalla station",
+			42.21639,
+			2.97775
+		],
+		[
+			"Peralada station",
+			42.29517,
+			3.02836
+		]
+	],
+	"cardiff-unitedkingdom": [
+		[
+			"Cardiff Bay railway station",
+			51.4671,
+			-3.1665
+		],
+		[
+			"Cardiff Riverside Branch",
+			51.4646,
+			-3.1713
+		],
+		[
+			"Cardiff Central railway station",
+			51.47566,
+			-3.17919
+		],
+		[
+			"Cardiff Queen Street railway station",
+			51.4819,
+			-3.1703
+		],
+		[
+			"Grangetown railway station",
+			51.4675,
+			-3.1897
+		],
+		[
+			"Roath railway station",
+			51.4848,
+			-3.1537
+		],
+		[
+			"Cathays railway station",
+			51.4891,
+			-3.1793
+		],
+		[
+			"Ninian Park railway station",
+			51.47639,
+			-3.20111
+		],
+		[
+			"Llandough Platform railway station",
+			51.4508,
+			-3.1928
+		],
+		[
+			"Crwys Road railway station",
+			51.49426,
+			-3.17444
+		],
+		[
+			"Penarth Dock railway station",
+			51.44601,
+			-3.1875
+		],
+		[
+			"Cogan railway station",
+			51.4461,
+			-3.1891
+		],
+		[
+			"Dingle Road railway station",
+			51.44,
+			-3.1801
+		],
+		[
+			"Penarth railway station",
+			51.4355,
+			-3.1745
+		]
+	],
+	"potsdam-germany": [
+		[
+			"Potsdam central station",
+			52.3917,
+			13.0667
+		],
+		[
+			"Potsdam Park Sanssouci railway station",
+			52.3944,
+			13.0139
+		],
+		[
+			"Potsdam-Babelsberg station",
+			52.3914,
+			13.0928
+		],
+		[
+			"Potsdam-Rehbrücke railway station",
+			52.35827,
+			13.098
+		],
+		[
+			"Golm railway station",
+			52.4098,
+			12.9719
+		],
+		[
+			"Potsdam Medienstadt Babelsberg railway station",
+			52.3819,
+			13.1217
+		]
+	],
+	"huesca-spain": [[
+		"Huesca railway station",
+		42.1333,
+		-.4095
+	]],
+	"sharjah-unitedarabemirates": [],
+	"klagenfurt-austria": [
+		[
+			"Klagenfurt-Lend",
+			46.62153,
+			14.284
+		],
+		[
+			"Klagenfurt Süd",
+			46.6103,
+			14.30236
+		],
+		[
+			"Klagenfurt Hauptbahnhof",
+			46.61583,
+			14.31333
+		],
+		[
+			"Bahnhof Viktring",
+			46.60445,
+			14.29965
+		],
+		[
+			"Klagenfurt West railway station",
+			46.62295,
+			14.26687
+		],
+		[
+			"Klagenfurt-Est",
+			46.62162,
+			14.32198
+		],
+		[
+			"Klagenfurt Ebenthal",
+			46.61663,
+			14.33347
+		],
+		[
+			"Klagenfurt-Annabichl",
+			46.65059,
+			14.31496
+		],
+		[
+			"Lambichl",
+			46.58005,
+			14.28284
+		],
+		[
+			"Krumpendorf station",
+			46.62632,
+			14.22144
+		],
+		[
+			"Maria Rain railway station",
+			46.56371,
+			14.28464
+		]
+	],
+	"vancouver-canada": [
+		[
+			"Pacific Central Station",
+			49.2737,
+			-123.098
+		],
+		[
+			"Rocky Mountaineer Station",
+			49.26861,
+			-123.08592
+		],
+		[
+			"North Vancouver railway station",
+			49.31556,
+			-123.11444
+		]
+	],
+	"annecy-france": [[
+		"Annecy railway station",
+		45.90222,
+		6.12167
+	], [
+		"Gare de Lovagny-Gorges-du-Fier",
+		45.89833,
+		6.04778
+	]],
+	"ronda-spain": [
+		[
+			"Ronda train station",
+			36.74844,
+			-5.16194
+		],
+		[
+			"La Indiana train station",
+			36.76086,
+			-5.19658
+		],
+		[
+			"Arriate train station",
+			36.7907,
+			-5.14076
+		]
+	],
+	"tallinn-estonia": [
+		[
+			"Tallinn Baltic Station",
+			59.44027,
+			24.73692
+		],
+		[
+			"Tallinn-Sadama railway station",
+			59.43989,
+			24.7748
+		],
+		[
+			"Lilleküla railway station",
+			59.42554,
+			24.72748
+		],
+		[
+			"Ülemiste railway station",
+			59.42336,
+			24.79506
+		],
+		[
+			"Tallinn-Väike railway station",
+			59.41272,
+			24.7459
+		],
+		[
+			"Tondi railway station",
+			59.41135,
+			24.73374
+		],
+		[
+			"Järve railway station",
+			59.40056,
+			24.72439
+		],
+		[
+			"Liiva railway station",
+			59.38755,
+			24.7231
+		],
+		[
+			"Rahumäe railway station",
+			59.3909,
+			24.6952
+		]
+	],
+	"gdansk-poland": [
+		[
+			"Gdańsk Główny railway station",
+			54.35556,
+			18.64472
+		],
+		[
+			"Gdańsk Śródmieście railway station",
+			54.34726,
+			18.64363
+		],
+		[
+			"Gdańsk Olszynka railway station",
+			54.3375,
+			18.6789
+		],
+		[
+			"Gdańsk Kanał Kaszubski",
+			54.3719,
+			18.6706
+		],
+		[
+			"Gdańsk Port Północny railway station",
+			54.36778,
+			18.68306
+		],
+		[
+			"Gdańsk Południowy railway station",
+			54.3317,
+			18.6371
+		],
+		[
+			"Gdańsk Politechnika railway station",
+			54.3743,
+			18.6272
+		],
+		[
+			"Gdańsk Orunia railway station",
+			54.32472,
+			18.63472
+		],
+		[
+			"Gdańsk Stadion Expo train stop",
+			54.39001,
+			18.63478
+		],
+		[
+			"Gdańsk Wrzeszcz railway station",
+			54.382,
+			18.6053
+		],
+		[
+			"Dobrowo Gdańskie",
+			54.3394,
+			18.7336
+		],
+		[
+			"Gdańsk Lipce railway station",
+			54.30167,
+			18.63556
+		],
+		[
+			"Gdańsk Zaspa railway station",
+			54.3899,
+			18.5913
+		],
+		[
+			"Odrzygość",
+			54.3231,
+			18.7478
+		]
+	],
+	"zakopane-poland": [
+		[
+			"Zakopane",
+			49.3011,
+			19.9628
+		],
+		[
+			"Poronin Misiagi",
+			49.33139,
+			20
+		],
+		[
+			"Poronin train station",
+			49.3433,
+			20.0031
+		]
+	],
+	"lisbon-portugal": [
+		[
+			"Rossio railway station",
+			38.71472,
+			-9.14222
+		],
+		[
+			"Rego train station",
+			38.74139,
+			-9.15454
+		],
+		[
+			"Campolide train station",
+			38.73253,
+			-9.16821
+		],
+		[
+			"Entrecampos Poente train station",
+			38.74248,
+			-9.15282
+		],
+		[
+			"Campo Pequeno",
+			38.74329,
+			-9.15165
+		],
+		[
+			"Estación de 5 de Outubro",
+			38.74359,
+			-9.15005
+		],
+		[
+			"Cais do Sodré railway station",
+			38.70596,
+			-9.14431
+		],
+		[
+			"Santos railway station",
+			38.7062,
+			-9.15536
+		],
+		[
+			"Entrecampos train station",
+			38.74459,
+			-9.14856
+		],
+		[
+			"Sete Rios train station",
+			38.74025,
+			-9.16667
+		],
+		[
+			"Santa Apolónia Station",
+			38.71402,
+			-9.12274
+		],
+		[
+			"Roma-Areeiro train station",
+			38.74565,
+			-9.13551
+		],
+		[
+			"Estação Ferroviária de Alcântara-Terra",
+			38.70747,
+			-9.17326
+		],
+		[
+			"Alvito-A train station",
+			38.71048,
+			-9.17675
+		]
+	],
+	"manama-bahrain": [],
+	"hiroshima-japan": [
+		[
+			"Hiroshima Station",
+			34.39833,
+			132.47583
+		],
+		[
+			"Shin-Hakushima Station",
+			34.40836,
+			132.46153
+		],
+		[
+			"Hakushima Station",
+			34.41111,
+			132.46278
+		],
+		[
+			"Yokogawa Station",
+			34.4097,
+			132.451
+		],
+		[
+			"Ushita Station",
+			34.4175,
+			132.46472
+		],
+		[
+			"Yaga Station",
+			34.399,
+			132.49747
+		],
+		[
+			"Mitaki Station",
+			34.41718,
+			132.4473
+		],
+		[
+			"Tenjingawa Station",
+			34.3898,
+			132.498
+		],
+		[
+			"Nishi-Hiroshima Station",
+			34.39839,
+			132.42798
+		],
+		[
+			"Fudōin-mae Station",
+			34.427,
+			132.4692
+		],
+		[
+			"Aki-Nagatsuka Station",
+			34.42877,
+			132.45614
+		],
+		[
+			"Mukainada Station",
+			34.37686,
+			132.50601
+		],
+		[
+			"Gion-shinbashi-kita Station",
+			34.435,
+			132.4708
+		],
+		[
+			"Shimo-Gion Station",
+			34.43954,
+			132.46273
+		]
+	],
+	"bangkok-thailand": [
+		[
+			"Makkasan Railway Station",
+			13.7537,
+			100.5474
+		],
+		[
+			"Ratchaprarop Station",
+			13.7548,
+			100.543
+		],
+		[
+			"Phaya Thai railway halt",
+			13.75672,
+			100.53484
+		],
+		[
+			"Makkasan station",
+			13.751,
+			100.5613
+		],
+		[
+			"Lumphini MRT Station",
+			13.7256,
+			100.546
+		],
+		[
+			"Yommarat Halt",
+			13.75917,
+			100.52167
+		],
+		[
+			"Chit Lada Station",
+			13.7665,
+			100.525
+		],
+		[
+			"Hua Lamphong railway station",
+			13.7389,
+			100.5167
+		],
+		[
+			"Ramathibodi Hospital Railway Halt",
+			13.76778,
+			100.52528
+		],
+		[
+			"Ratchawithi Station",
+			13.77023,
+			100.52634
+		],
+		[
+			"Mae Nam railway station",
+			13.71396,
+			100.55361
+		],
+		[
+			"Sam Sen Railway Station",
+			13.77944,
+			100.52972
+		],
+		[
+			"Sam Sen Station",
+			13.7796,
+			100.53
+		],
+		[
+			"Khlong Tan",
+			13.74428,
+			100.58975
+		]
+	],
+	"arnhem-netherlands": [
+		[
+			"Arnhem Centraal railway station",
+			51.98472,
+			5.90083
+		],
+		[
+			"Arnhem Velperpoort railway station",
+			51.985,
+			5.91944
+		],
+		[
+			"Plattenburg",
+			51.98739,
+			5.94249
+		],
+		[
+			"Arnhem Pley",
+			51.97888,
+			5.94391
+		],
+		[
+			"Arnhem Presikhaaf railway station",
+			51.98806,
+			5.94361
+		],
+		[
+			"Café Unie",
+			51.99392,
+			5.96674
+		],
+		[
+			"Arnhem Zuid railway station",
+			51.95472,
+			5.85167
+		],
+		[
+			"Oosterbeek railway station",
+			51.995,
+			5.83944
+		],
+		[
+			"Westervoort railway station",
+			51.96245,
+			5.97042
+		],
+		[
+			"Hotel Naeff",
+			51.99368,
+			5.97643
+		],
+		[
+			"Velp railway station",
+			51.99472,
+			5.98
+		]
+	],
+	"getafe-spain": [
+		[
+			"Getafe Industrial",
+			40.3055,
+			-3.70766
+		],
+		[
+			"estación de Getafe-Badajoz",
+			40.31,
+			-3.73342
+		],
+		[
+			"Getafe Central railway station",
+			40.3097,
+			-3.73389
+		],
+		[
+			"Getafe Sector 3 train station",
+			40.28824,
+			-3.73734
+		],
+		[
+			"estación de El Casar (Cercanías Madrid)",
+			40.3186,
+			-3.70981
+		],
+		[
+			"Las Margaritas-Universidad railway station",
+			40.323,
+			-3.72742
+		],
+		[
+			"San Cristóbal Industrial",
+			40.3319,
+			-3.69867
+		],
+		[
+			"Villaverde Alto railway station",
+			40.34139,
+			-3.71139
+		],
+		[
+			"estación de Villaverde Alto",
+			40.34156,
+			-3.71158
+		],
+		[
+			"Estación de Zarzaquemada",
+			40.3406,
+			-3.74821
+		],
+		[
+			"Estación de La Tenería",
+			40.25787,
+			-3.70373
+		],
+		[
+			"Leganés",
+			40.3293,
+			-3.77109
+		],
+		[
+			"Parque Polvoranca",
+			40.3125,
+			-3.78351
+		],
+		[
+			"San Cristóbal de los Ángeles",
+			40.34236,
+			-3.68397
+		]
+	],
+	"amman-jordan": [[
+		"Amman Hejaz Railway Station",
+		31.96861,
+		35.96861
+	]],
+	"konstanz-germany": [
+		[
+			"Konstanz-Petershausen station",
+			47.67409,
+			9.17347
+		],
+		[
+			"Konstanz station",
+			47.65875,
+			9.17731
+		],
+		[
+			"Konstanz Fürstenberg station",
+			47.67748,
+			9.16285
+		],
+		[
+			"Kreuzlingen railway station",
+			47.65257,
+			9.16905
+		],
+		[
+			"Kreuzlingen Hafen Station",
+			47.64917,
+			9.18196
+		],
+		[
+			"Konstanz-Wollmatingen station",
+			47.68245,
+			9.14733
+		],
+		[
+			"Kreuzlingen Bernrain railway station",
+			47.64212,
+			9.16319
+		],
+		[
+			"Tägerwilen Dorf railway station",
+			47.65372,
+			9.13955
+		],
+		[
+			"Tägerwilen-Gottlieben Station",
+			47.65962,
+			9.13296
+		],
+		[
+			"Kurzrickenbach Seepark station",
+			47.64309,
+			9.19635
+		],
+		[
+			"Bottighofen Station",
+			47.64071,
+			9.21308
+		],
+		[
+			"Reichenau (Baden) station",
+			47.68935,
+			9.12596
+		],
+		[
+			"Lengwil railway station",
+			47.6256,
+			9.19026
+		],
+		[
+			"Triboltingen Station",
+			47.6629,
+			9.10875
+		]
+	],
+	"antalya-trkiye": [],
+	"murcia-spain": [
+		[
+			"Murcia-Zaraiche train station",
+			37.99311,
+			-1.13136
+		],
+		[
+			"Murcia del Carmen",
+			37.97481,
+			-1.13153
+		],
+		[
+			"estación de Espinardo-Churra",
+			38.01119,
+			-1.14925
+		],
+		[
+			"Estación de Murcia-Mercancías",
+			37.96961,
+			-1.19496
+		],
+		[
+			"estación de Beniaján",
+			37.97636,
+			-1.06875
+		]
+	],
+	"segovia-spain": [
+		[
+			"Segovia railway station",
+			40.9341,
+			-4.11366
+		],
+		[
+			"Hontoria railway station",
+			40.90547,
+			-4.12782
+		],
+		[
+			"Segovia-Guiomar railway station",
+			40.9101,
+			-4.09492
+		]
+	],
+	"aachen-germany": [
+		[
+			"Aachen Central Station",
+			50.76777,
+			6.09138
+		],
+		[
+			"Aachen Schanz station",
+			50.76998,
+			6.07372
+		],
+		[
+			"Aachen-Rothe Erde station",
+			50.7703,
+			6.1163
+		],
+		[
+			"Aachen Süd railway station",
+			50.74911,
+			6.07081
+		],
+		[
+			"Richterich railway station",
+			50.805,
+			6.06167
+		],
+		[
+			"Aachen-Richterich",
+			50.81036,
+			6.05964
+		],
+		[
+			"Vaals station",
+			50.77611,
+			6.01836
+		],
+		[
+			"Vetschau railway station",
+			50.81253,
+			6.04233
+		],
+		[
+			"Kohlscheid railway station",
+			50.83192,
+			6.07461
+		],
+		[
+			"Weiden (b Aachen) railway station",
+			50.81455,
+			6.15479
+		],
+		[
+			"Botzelaer railway station",
+			50.74717,
+			6.0103
+		],
+		[
+			"Würselen railway station",
+			50.82359,
+			6.13939
+		],
+		[
+			"Würselen Nord railway station",
+			50.83223,
+			6.12092
+		]
+	],
+	"fortaleza-brazil": [
+		[
+			"Papicu",
+			-3.73863,
+			-38.4865
+		],
+		[
+			"Antônio Sales",
+			-3.74889,
+			-38.49361
+		],
+		[
+			"Pontes Vieira",
+			-3.75194,
+			-38.50056
+		],
+		[
+			"Estação Ferroviária João Felipe",
+			-3.72172,
+			-38.52976
+		],
+		[
+			"José de Alencar",
+			-3.72611,
+			-38.53289
+		],
+		[
+			"São João do Tauape",
+			-3.76077,
+			-38.51252
+		],
+		[
+			"Chico da Silva",
+			-3.71989,
+			-38.5356
+		],
+		[
+			"Tirol-Moura Brasil",
+			-3.71932,
+			-38.53688
+		],
+		[
+			"Benfica",
+			-3.73916,
+			-38.53967
+		]
+	],
+	"innsbruck-austria": [
+		[
+			"Innsbruck Hauptbahnhof",
+			47.26389,
+			11.40083
+		],
+		[
+			"Innsbruck Messe railway station",
+			47.2728,
+			11.407
+		],
+		[
+			"Innsbruck Westbahnhof",
+			47.2558,
+			11.3918
+		],
+		[
+			"Hötting railway station",
+			47.26154,
+			11.37396
+		],
+		[
+			"Innsbruck Stubaital station",
+			47.2533,
+			11.3979
+		],
+		[
+			"Natters Hölltal railway station",
+			47.23856,
+			11.38468
+		],
+		[
+			"Rum railway station",
+			47.278,
+			11.45606
+		],
+		[
+			"Völs railway statoon",
+			47.25576,
+			11.32118
+		],
+		[
+			"Hall in Tirol-Thaur railway station",
+			47.2771,
+			11.47445
+		],
+		[
+			"Unterberg-Stefansbrücke railway station",
+			47.21412,
+			11.39184
+		]
+	],
+	"menton-france": [
+		[
+			"Gare de Menton",
+			43.77478,
+			7.49314
+		],
+		[
+			"Gare de Carnolès",
+			43.76234,
+			7.48189
+		],
+		[
+			"Gare de Menton-Garavan",
+			43.785,
+			7.51694
+		],
+		[
+			"Gare de Roquebrune-Cap-Martin",
+			43.76068,
+			7.45762
+		]
+	],
+	"luxembourg-city-luxembourg": [
+		[
+			"Cents-Hamm railway station",
+			49.61483,
+			6.1654
+		],
+		[
+			"Luxembourg railway station",
+			49.60013,
+			6.13416
+		],
+		[
+			"Dommeldange railway station",
+			49.63384,
+			6.13668
+		],
+		[
+			"Hollerich railway station",
+			49.5954,
+			6.12088
+		],
+		[
+			"Howald railway station",
+			49.58044,
+			6.13205
+		],
+		[
+			"Sandweiler-Contern railway station",
+			49.59908,
+			6.21175
+		],
+		[
+			"Le Findel",
+			49.6347,
+			6.2155
+		],
+		[
+			"Walferdange railway station",
+			49.66188,
+			6.13624
+		],
+		[
+			"Heisdorf railway station",
+			49.67518,
+			6.13949
+		],
+		[
+			"Bertrange-Strassen railway station",
+			49.61306,
+			6.05982
+		]
+	],
+	"brussels-belgium": [
+		[
+			"Brussels-Central railway station",
+			50.84556,
+			4.35722
+		],
+		[
+			"Brussels-Chapel Station",
+			50.84122,
+			4.34853
+		],
+		[
+			"Brussels-North railway station",
+			50.86028,
+			4.36083
+		],
+		[
+			"Brussels-South international railway station",
+			50.8361,
+			4.33583
+		],
+		[
+			"Brussels-South railway station",
+			50.83528,
+			4.33583
+		],
+		[
+			"Brussels-Luxembourg railway station",
+			50.83889,
+			4.37333
+		],
+		[
+			"Brussels-West railway station",
+			50.84904,
+			4.32134
+		],
+		[
+			"Simonis railway station",
+			50.86353,
+			4.33108
+		],
+		[
+			"Tour and Taxis railway station",
+			50.873,
+			4.3425
+		],
+		[
+			"Germoir railway station",
+			50.82992,
+			4.37955
+		],
+		[
+			"Meiser railway station",
+			50.855,
+			4.39417
+		],
+		[
+			"Bockstael railway station",
+			50.8795,
+			4.3484
+		],
+		[
+			"Merode railway station",
+			50.8391,
+			4.39987
+		],
+		[
+			"Schaarbeek railway station",
+			50.87807,
+			4.37968
+		]
+	],
+	"leeds-united-kingdom": [
+		[
+			"Leeds Central railway station",
+			53.7958,
+			-1.5547
+		],
+		[
+			"Leeds railway station",
+			53.794,
+			-1.547
+		],
+		[
+			"Leeds Whitehall railway station",
+			53.7894,
+			-1.55723
+		],
+		[
+			"Leeds Hunslet Lane railway station",
+			53.78888,
+			-1.54028
+		],
+		[
+			"Leeds Marsh Lane railway station",
+			53.7967,
+			-1.52918
+		],
+		[
+			"Burley Park railway station",
+			53.812,
+			-1.578
+		],
+		[
+			"Hunslet railway station",
+			53.77889,
+			-1.53639
+		],
+		[
+			"Farnley and Wortley railway station",
+			53.78251,
+			-1.58403
+		],
+		[
+			"Moor Road (Leeds) railway station",
+			53.7751,
+			-1.5386
+		],
+		[
+			"Armley Moor railway station",
+			53.795,
+			-1.5958
+		],
+		[
+			"Beeston railway station",
+			53.76915,
+			-1.5728
+		],
+		[
+			"Headingley railway station",
+			53.81792,
+			-1.59432
+		],
+		[
+			"Cottingley railway station",
+			53.7679,
+			-1.5876
+		],
+		[
+			"Kirkstall railway station",
+			53.8151,
+			-1.6073
+		]
+	],
+	"zurich-switzerland": [
+		[
+			"Zürich Hauptbahnhof",
+			47.37817,
+			8.54018
+		],
+		[
+			"Zürich HB SZU",
+			47.37743,
+			8.53917
+		],
+		[
+			"Zürich Stadelhofen railway station",
+			47.36667,
+			8.54861
+		],
+		[
+			"Zürich Stadelhofen FB railway station",
+			47.36635,
+			8.54813
+		],
+		[
+			"Zürich, Römerhof station",
+			47.36809,
+			8.56028
+		],
+		[
+			"Zürich, Titlisstrasse station",
+			47.37098,
+			8.56495
+		],
+		[
+			"Zürich Kreuzplatz railway station",
+			47.36487,
+			8.55408
+		],
+		[
+			"Zürich, Waldhaus Dolder station",
+			47.37324,
+			8.56855
+		],
+		[
+			"Zürich Selnau railway station",
+			47.37224,
+			8.53172
+		],
+		[
+			"Zürich Hegibachplatz railway station",
+			47.36169,
+			8.56062
+		],
+		[
+			"Zürich, Dolder station",
+			47.3732,
+			8.57453
+		],
+		[
+			"Zürich Enge railway station",
+			47.3641,
+			8.53079
+		],
+		[
+			"Zurich Wiedikon railway station",
+			47.37147,
+			8.52345
+		],
+		[
+			"Zurich Wipkingen railway station",
+			47.39222,
+			8.52917
+		]
+	],
+	"exeter-united-kingdom": [
+		[
+			"Exeter Central railway station",
+			50.72614,
+			-3.53339
+		],
+		[
+			"Exeter St Thomas railway station",
+			50.71713,
+			-3.53858
+		],
+		[
+			"St James Park railway station",
+			50.73097,
+			-3.52259
+		],
+		[
+			"Exeter St Davids railway station",
+			50.7296,
+			-3.54354
+		],
+		[
+			"Marsh Barton railway station",
+			50.70439,
+			-3.52149
+		],
+		[
+			"Polsloe Bridge railway station",
+			50.73119,
+			-3.50169
+		],
+		[
+			"Alphington Halt railway station",
+			50.7037,
+			-3.5379
+		],
+		[
+			"Monkerton railway station",
+			50.7259,
+			-3.4822
+		],
+		[
+			"Ide Halt railway station",
+			50.7012,
+			-3.5624
+		],
+		[
+			"Digby and Sowton railway station",
+			50.71406,
+			-3.47354
+		],
+		[
+			"Pinhoe railway station",
+			50.7377,
+			-3.4698
+		],
+		[
+			"Newcourt railway station",
+			50.7023,
+			-3.472
+		],
+		[
+			"Topsham railway station",
+			50.68564,
+			-3.46377
+		]
+	],
+	"gottingen-germany": [[
+		"Rosdorf railway station",
+		51.49976,
+		9.90985
+	], [
+		"Lenglern station",
+		51.58778,
+		9.87083
+	]],
+	"hobart-australia": [[
+		"Hobart railway station",
+		-42.87761,
+		147.33259
+	]],
+	"eindhoven-netherlands": [
+		[
+			"Eindhoven Central railway station",
+			51.44278,
+			5.47972
+		],
+		[
+			"Eindhoven Stadion railway station",
+			51.44278,
+			5.46722
+		],
+		[
+			"Philipsdorp Zuid",
+			51.43698,
+			5.46757
+		],
+		[
+			"Eindhoven Strijp-S railway station",
+			51.45083,
+			5.45611
+		],
+		[
+			"Woensel Station",
+			51.45628,
+			5.44878
+		],
+		[
+			"Geldrop railway station",
+			51.42,
+			5.55028
+		],
+		[
+			"Aalst-Waalre",
+			51.39216,
+			5.46094
+		]
+	],
+	"berlin-germany": [
+		[
+			"Berlin Brandenburger Tor station",
+			52.51639,
+			13.38083
+		],
+		[
+			"Berlin-Friedrichstraße railway station",
+			52.52028,
+			13.38694
+		],
+		[
+			"Kemperplatz station",
+			52.51058,
+			13.37182
+		],
+		[
+			"Bernburger Straße station",
+			52.50533,
+			13.37577
+		],
+		[
+			"Berlin Hauptbahnhof (Stadtbahn)",
+			52.52508,
+			13.36939
+		],
+		[
+			"Berlin Central Station",
+			52.52508,
+			13.36939
+		],
+		[
+			"Berlin Jannowitzbrücke station",
+			52.51482,
+			13.41795
+		],
+		[
+			"Berlin Perleberger Brücke S-Bahn station",
+			52.53548,
+			13.3599
+		],
+		[
+			"Postbahnhof am Ostbahnhof",
+			52.50863,
+			13.43639
+		],
+		[
+			"Berlin-Wedding station",
+			52.5425,
+			13.3661
+		],
+		[
+			"Berlin Warschauer Straße station",
+			52.50642,
+			13.45096
+		],
+		[
+			"Boddinstraße",
+			52.48,
+			13.42528
+		],
+		[
+			"Berlin-Charlottenburg railway station",
+			52.50472,
+			13.30333
+		],
+		[
+			"Berlin Wollankstraße station",
+			52.56515,
+			13.39236
+		]
+	],
+	"wurzburg-germany": [
+		[
+			"Würzburg Central Station",
+			49.80268,
+			9.93607
+		],
+		[
+			"Würzburg-Heidingsfeld Ost",
+			49.76114,
+			9.95332
+		],
+		[
+			"Würzburg-Zell",
+			49.80492,
+			9.88463
+		],
+		[
+			"Rottendorf station",
+			49.79203,
+			10.02931
+		],
+		[
+			"Veitshöchheim",
+			49.83145,
+			9.87605
+		]
+	],
+	"clermont-ferrand-france": [
+		[
+			"Gare de Clermont-Ferrand",
+			45.77861,
+			3.10083
+		],
+		[
+			"Gare de Clermont-La Rotonde",
+			45.76797,
+			3.09062
+		],
+		[
+			"Gare de Clermont-La Pardieu",
+			45.76699,
+			3.13415
+		],
+		[
+			"Gare de Royat - Chamalières",
+			45.7675,
+			3.06139
+		],
+		[
+			"Gare d'Aulnat-Aéroport",
+			45.79206,
+			3.16155
+		],
+		[
+			"Gare de Durtol - Nohanent",
+			45.79483,
+			3.04876
+		],
+		[
+			"Gare de Sarliève - Cournon",
+			45.7383,
+			3.16843
+		]
+	],
+	"sao-paulo-brazil": [
+		[
+			"Luz Station",
+			-23.53509,
+			-46.63528
+		],
+		[
+			"Brás",
+			-23.54504,
+			-46.61634
+		],
+		[
+			"Palmeiras-Barra Funda",
+			-23.52556,
+			-46.66722
+		],
+		[
+			"Palmeiras-Barra Funda Intermodal Terminal",
+			-23.5255,
+			-46.66736
+		],
+		[
+			"Mooca Station",
+			-23.55716,
+			-46.60883
+		],
+		[
+			"Cidade Jardim (CPTM)",
+			-23.58534,
+			-46.69104
+		],
+		[
+			"Estação Hebraica-Rebouças",
+			-23.57368,
+			-46.69859
+		],
+		[
+			"Pinheiros train station",
+			-23.56649,
+			-46.70304
+		],
+		[
+			"Água Branca (CPTM)",
+			-23.5213,
+			-46.6893
+		],
+		[
+			"Vila Olímpia (CPTM)",
+			-23.59348,
+			-46.69271
+		],
+		[
+			"Cidade Universitária (CPTM)",
+			-23.55764,
+			-46.71176
+		],
+		[
+			"Ipiranga (CPTM, São Paulo Metro)",
+			-23.5825,
+			-46.59658
+		],
+		[
+			"Lapa (Line 8) (CPTM)",
+			-23.52011,
+			-46.69892
+		],
+		[
+			"Estação Berrini",
+			-23.60469,
+			-46.69678
+		]
+	],
+	"dortmund-germany": [
+		[
+			"Bahnhof Dortmund Süd",
+			51.5086,
+			7.47472
+		],
+		[
+			"Dortmund Central Station",
+			51.5175,
+			7.45889
+		],
+		[
+			"U-Bahnhof Märkische Straße",
+			51.5007,
+			7.48347
+		],
+		[
+			"Dortmund-Körne West station",
+			51.51,
+			7.50241
+		],
+		[
+			"Dortmund Möllerbrücke station",
+			51.5071,
+			7.45169
+		],
+		[
+			"Dortmund West railway station",
+			51.5097,
+			7.43883
+		],
+		[
+			"Dortmund-Körne station",
+			51.5134,
+			7.51534
+		],
+		[
+			"Hörde-Hacheney",
+			51.48877,
+			7.48173
+		],
+		[
+			"Dortmund Signal-Iduna-Park station",
+			51.4907,
+			7.45758
+		],
+		[
+			"Dortmund-Hörde station",
+			51.4878,
+			7.49972
+		],
+		[
+			"Dortmund-Kirchderne station",
+			51.54705,
+			7.51023
+		],
+		[
+			"Dortmund Knappschaftskrankenhaus station",
+			51.5187,
+			7.53743
+		],
+		[
+			"Dortmund-Dorstfeld Süd station",
+			51.50006,
+			7.41993
+		],
+		[
+			"Dortmund Tierpark station",
+			51.47802,
+			7.46199
+		]
+	],
+	"frankfurt-germany": [
+		[
+			"Frankfurt Lokalbahnhof",
+			50.1029,
+			8.6915
+		],
+		[
+			"Main-Neckar-Bahnhof",
+			50.1083,
+			8.67222
+		],
+		[
+			"Taunusbahnhof (Frankfurt)",
+			50.1092,
+			8.67167
+		],
+		[
+			"Main-Weser-Bahnhof",
+			50.11,
+			8.67111
+		],
+		[
+			"Frankfurt (Main) Ost station",
+			50.11246,
+			8.70838
+		],
+		[
+			"Frankfurt Mühlberg station",
+			50.1017,
+			8.70028
+		],
+		[
+			"Frankfurt (Main) Süd",
+			50.0992,
+			8.68616
+		],
+		[
+			"Frankfurt (Main) Hbf",
+			50.10726,
+			8.66262
+		],
+		[
+			"Mainspitze",
+			50.0996,
+			8.66822
+		],
+		[
+			"Frankfurt (Main) Stresemannallee",
+			50.095,
+			8.671
+		],
+		[
+			"Frankfurt Messe station",
+			50.1119,
+			8.64333
+		],
+		[
+			"Frankfurt-Louisa",
+			50.0832,
+			8.67034
+		],
+		[
+			"Frankfurt West station",
+			50.1192,
+			8.63944
+		],
+		[
+			"Frankfurt (Main) Außenbahnhof",
+			50.09906,
+			8.64031
+		]
+	],
+	"biloxi-united-states": [[
+		"Biloxi station",
+		30.3989,
+		-88.8915
+	]],
+	"heidelberg-germany": [
+		[
+			"Heidelberg Central Station (Old)",
+			49.40738,
+			8.69027
+		],
+		[
+			"Heidelberg-Weststadt/Südstadt",
+			49.3983,
+			8.6886
+		],
+		[
+			"Heidelberg Central Station",
+			49.40361,
+			8.67528
+		],
+		[
+			"Heidelberg Rbf",
+			49.405,
+			8.6702
+		],
+		[
+			"Heidelberg-Altstadt station",
+			49.4147,
+			8.72
+		],
+		[
+			"Heidelberg-Kirchheim/Rohrbach station",
+			49.3799,
+			8.67521
+		],
+		[
+			"Heidelberg-Pfaffengrund/Wieblingen",
+			49.412,
+			8.64136
+		],
+		[
+			"Eppelheim railway station",
+			49.39165,
+			8.63003
+		],
+		[
+			"Heidelberg-Schlierbach/Ziegelhausen",
+			49.41521,
+			8.76095
+		]
+	],
+	"weimar-germany": [
+		[
+			"Weimar Berkaer Bf railway station",
+			50.98056,
+			11.31389
+		],
+		[
+			"Weimar railway station",
+			50.9917,
+			11.3269
+		],
+		[
+			"Weimar Nord railway station",
+			50.99416,
+			11.33027
+		],
+		[
+			"Schöndorf railway station",
+			51.01253,
+			11.35418
+		],
+		[
+			"Holzdorf (b Weimar) railway station",
+			50.94203,
+			11.27655
+		]
+	],
+	"udine-italy": [[
+		"Udine railway station",
+		46.056,
+		13.2419
+	], [
+		"Remanzacco railway station",
+		46.0825,
+		13.3203
+	]],
+	"the-hague-netherlands": [
+		[
+			"Den Haag Centraal railway station",
+			52.08111,
+			4.32389
+		],
+		[
+			"Den Haag HS railway station",
+			52.06972,
+			4.32167
+		],
+		[
+			"Den Haag Laan van NOI railway station",
+			52.07889,
+			4.34306
+		],
+		[
+			"Den Haag Moerwijk railway station",
+			52.05333,
+			4.30861
+		],
+		[
+			"Voorburg railway station",
+			52.06652,
+			4.35869
+		],
+		[
+			"Den Haag Mariahoeve railway station",
+			52.09056,
+			4.36972
+		],
+		[
+			"Rijswijk railway station",
+			52.03944,
+			4.31972
+		],
+		[
+			"Kleiweg",
+			52.03759,
+			4.32214
+		],
+		[
+			"Den Haag Ypenburg railway station",
+			52.05611,
+			4.38972
+		],
+		[
+			"Veenweg",
+			52.06293,
+			4.40261
+		]
+	],
+	"timmendorfer-strand-germany": [
+		[
+			"Timmendorfer Strand station",
+			53.9944,
+			10.7623
+		],
+		[
+			"Scharbeutz station",
+			54.01878,
+			10.74576
+		],
+		[
+			"Pansdorf station",
+			53.98084,
+			10.70335
+		],
+		[
+			"Haffkrug station",
+			54.0541,
+			10.7427
+		]
+	],
+	"turin-italy": [
+		[
+			"Torino Porta Susa railway station",
+			45.0727,
+			7.66601
+		],
+		[
+			"Torino Porta Nuova railway station",
+			45.0625,
+			7.67889
+		],
+		[
+			"Torino Rebaudengo Fossata railway station",
+			45.0995,
+			7.68634
+		],
+		[
+			"Torino Zappata railway station",
+			45.05057,
+			7.65989
+		],
+		[
+			"Torino Stura railway station",
+			45.1219,
+			7.71281
+		],
+		[
+			"Torino Lingotto railway station",
+			45.02672,
+			7.65706
+		],
+		[
+			"Pian Gambino railway station",
+			45.07864,
+			7.76082
+		],
+		[
+			"Venaria Reale railway station",
+			45.1323,
+			7.63488
+		]
+	],
+	"nagoya-japan": [
+		[
+			"Sakaemachi Station",
+			35.1706,
+			136.909
+		],
+		[
+			"Kintetsu Nagoya Station",
+			35.16914,
+			136.88431
+		],
+		[
+			"Meitetsu-Nagoya Station",
+			35.16955,
+			136.88388
+		],
+		[
+			"Nagoya Station",
+			35.17077,
+			136.8816
+		],
+		[
+			"Nagoya Station (Tōkaidō Shinkansen)",
+			35.17042,
+			136.88106
+		],
+		[
+			"Shimizu Station",
+			35.1872,
+			136.914
+		],
+		[
+			"Sasashima-raibu Station",
+			35.16194,
+			136.88194
+		],
+		[
+			"Tsurumai Station",
+			35.1564,
+			136.917
+		],
+		[
+			"Komeno Station",
+			35.16163,
+			136.88001
+		],
+		[
+			"Kamejima Station",
+			35.1774,
+			136.8769
+		],
+		[
+			"Sannō Station",
+			35.1525,
+			136.889
+		],
+		[
+			"Amagasaka Station",
+			35.1881,
+			136.9195
+		],
+		[
+			"Chikusa Station",
+			35.17014,
+			136.9307
+		],
+		[
+			"Otōbashi Station",
+			35.14704,
+			136.891
+		]
+	],
+	"regensburg-germany": [[
+		"Regensburg Central Station",
+		49.01177,
+		12.09969
+	], [
+		"Regensburg-Prüfening",
+		49.01174,
+		12.04935
+	]],
+	"tbilisi-georgia": [[
+		"Tbilisi Central Station",
+		41.72333,
+		44.79778
+	], [
+		"Navtlughi",
+		41.686,
+		44.854
+	]],
+	"durham-united-kingdom": [
+		[
+			"Durham Elvet railway station",
+			54.77377,
+			-1.56561
+		],
+		[
+			"Durham Gilesgate railway station",
+			54.7793,
+			-1.5626
+		],
+		[
+			"Sherburn House railway station",
+			54.7697,
+			-1.5283
+		],
+		[
+			"Durham railway station",
+			54.7798,
+			-1.5815
+		],
+		[
+			"Sherburn Colliery railway station",
+			54.7765,
+			-1.5133
+		],
+		[
+			"Croxdale railway station",
+			54.7318,
+			-1.5885
+		],
+		[
+			"Frankland railway station",
+			54.8012,
+			-1.5519
+		],
+		[
+			"Belmont Junction railway station",
+			54.79725,
+			-1.52062
+		],
+		[
+			"Brandon Colliery railway station",
+			54.7504,
+			-1.6284
+		],
+		[
+			"Coxhoe railway station",
+			54.7198,
+			-1.5084
+		],
+		[
+			"Pittington railway station",
+			54.7984,
+			-1.4967
+		],
+		[
+			"Ushaw Moor railway station",
+			54.774,
+			-1.648
+		],
+		[
+			"Leamside railway station",
+			54.8119,
+			-1.5137
+		],
+		[
+			"West Cornforth railway station",
+			54.7033,
+			-1.5273
+		]
+	],
+	"beijing-china": [
+		[
+			"Beijing railway station",
+			39.90222,
+			116.42111
+		],
+		[
+			"Guangqumennei station",
+			39.89229,
+			116.42772
+		],
+		[
+			"Hufangqiao station",
+			39.8884,
+			116.37748
+		],
+		[
+			"Beijing East railway station",
+			39.90139,
+			116.47861
+		],
+		[
+			"Beijingnan railway station",
+			39.86355,
+			116.37257
+		]
+	],
+	"dijon-france": [
+		[
+			"Dijon-Ville railway station",
+			47.32337,
+			5.02721
+		],
+		[
+			"Dijon-Porte-Neuve railway station",
+			47.32281,
+			5.05495
+		],
+		[
+			"Gare de Ruffey",
+			47.37083,
+			5.07833
+		]
+	],
+	"doha-qatar": [],
+	"duisburg-germany": [
+		[
+			"Duisburg Central Station",
+			51.43,
+			6.77611
+		],
+		[
+			"Duisburg Güterbahnhof",
+			51.42373,
+			6.7724
+		],
+		[
+			"Duisburg-Hochfeld Süd station",
+			51.4089,
+			6.75306
+		],
+		[
+			"Duisburg-Ruhrort railway halt",
+			51.45722,
+			6.73611
+		],
+		[
+			"Bahnhof Duisburg-Ruhrort Hafen",
+			51.46,
+			6.79039
+		],
+		[
+			"Duisburg Schlenk station",
+			51.40241,
+			6.77341
+		],
+		[
+			"Duisburg-Meiderich Süd station",
+			51.46861,
+			6.78083
+		],
+		[
+			"Rheinhausen Ost station",
+			51.40177,
+			6.72387
+		],
+		[
+			"Duisburg-Meiderich Ost railway station",
+			51.46861,
+			6.80083
+		],
+		[
+			"Duisburg-Wedau station",
+			51.3992,
+			6.80361
+		],
+		[
+			"Duisburg-Obermeiderich railway station",
+			51.46861,
+			6.82056
+		],
+		[
+			"Duisburg-Bissingheim station",
+			51.39203,
+			6.80819
+		],
+		[
+			"Duisburg-Buchholz station",
+			51.38317,
+			6.77556
+		],
+		[
+			"Rheinhausen station",
+			51.3936,
+			6.70667
+		]
+	],
+	"merida-spain": [
+		[
+			"Mérida railway station",
+			38.92139,
+			-6.34314
+		],
+		[
+			"Estación de Calamonte",
+			38.8869,
+			-6.38298
+		],
+		[
+			"estación de Aljucén",
+			38.93642,
+			-6.40789
+		]
+	],
+	"luton-unitedkingdom": [
+		[
+			"Luton Airport Parkway railway station",
+			51.873,
+			-.396
+		],
+		[
+			"Luton Bute Street railway station",
+			51.8817,
+			-.4139
+		],
+		[
+			"Luton railway station",
+			51.88227,
+			-.41432
+		],
+		[
+			"Chiltern Green railway station",
+			51.8503,
+			-.36944
+		],
+		[
+			"Chaul End railway station",
+			51.888,
+			-.4564
+		],
+		[
+			"Leagrave railway station",
+			51.90521,
+			-.45863
+		],
+		[
+			"Roundwood Halt railway station",
+			51.8197,
+			-.3706
+		]
+	],
+	"gijon-spain": [
+		[
+			"Estación de Plaza Europa",
+			43.53816,
+			-5.66519
+		],
+		[
+			"Gijón Railway Station",
+			43.53775,
+			-5.67567
+		],
+		[
+			"Nueva Estación Intermodal",
+			43.53794,
+			-5.67676
+		],
+		[
+			"Estación de El Bibio",
+			43.53503,
+			-5.64594
+		],
+		[
+			"Tremañes-Llangréu train station",
+			43.52725,
+			-5.69047
+		],
+		[
+			"Calzada de Asturias train station",
+			43.53536,
+			-5.69722
+		],
+		[
+			"Tremañes - Carreño",
+			43.52858,
+			-5.69478
+		],
+		[
+			"Centro de Transportes train station",
+			43.53114,
+			-5.70672
+		],
+		[
+			"Estación del Campus Universitario",
+			43.52361,
+			-5.62753
+		],
+		[
+			"Veriña train station",
+			43.54153,
+			-5.72278
+		],
+		[
+			"Aboño train station",
+			43.55512,
+			-5.72356
+		],
+		[
+			"Estación del Hospital de Cabueñes",
+			43.52595,
+			-5.609
+		],
+		[
+			"Xivares train station",
+			43.56599,
+			-5.72876
+		],
+		[
+			"Sotiello train station",
+			43.50728,
+			-5.72656
+		]
+	],
+	"southport-united-kingdom": [
+		[
+			"Southport railway station",
+			53.647,
+			-3.002
+		],
+		[
+			"Southport London Street railway station",
+			53.6454,
+			-2.9999
+		],
+		[
+			"Southport Central railway station",
+			53.6461,
+			-2.9972
+		],
+		[
+			"Southport Lord Street railway station",
+			53.6452,
+			-3.01196
+		],
+		[
+			"Southport Eastbank Street railway station",
+			53.6418,
+			-3.0031
+		],
+		[
+			"Southport Ash Street railway station",
+			53.6436,
+			-2.9898
+		],
+		[
+			"Hesketh Park railway station",
+			53.6551,
+			-2.97885
+		],
+		[
+			"Birkdale railway station",
+			53.634,
+			-3.0145
+		],
+		[
+			"Birkdale Palace railway station",
+			53.6388,
+			-3.02694
+		],
+		[
+			"Meols Cop railway station",
+			53.646,
+			-2.975
+		],
+		[
+			"Blowick railway station",
+			53.6385,
+			-2.97151
+		],
+		[
+			"Butts Lane Halt railway station",
+			53.6393,
+			-2.96947
+		],
+		[
+			"Churchtown railway station",
+			53.662,
+			-2.96538
+		],
+		[
+			"Kew Gardens railway station",
+			53.6329,
+			-2.9687
+		]
+	],
+	"canterbury-united-kingdom": [
+		[
+			"Canterbury East railway station",
+			51.27424,
+			1.07593
+		],
+		[
+			"Canterbury West railway station",
+			51.28406,
+			1.07538
+		],
+		[
+			"Canterbury South railway station",
+			51.26607,
+			1.08481
+		],
+		[
+			"Canterbury North Lane railway station",
+			51.28609,
+			1.07611
+		],
+		[
+			"Bridge railway station",
+			51.2465,
+			1.11073
+		],
+		[
+			"Sturry railway station",
+			51.30106,
+			1.12222
+		],
+		[
+			"Bekesbourne railway station",
+			51.261,
+			1.137
+		],
+		[
+			"Blean and Tyler Hill Halt railway station",
+			51.31453,
+			1.05505
+		],
+		[
+			"Chartham railway station",
+			51.257,
+			1.018
+		],
+		[
+			"Chislet Colliery Halt railway station",
+			51.30655,
+			1.1521
+		],
+		[
+			"Bishopsbourne railway station",
+			51.22894,
+			1.12817
+		]
+	],
+	"edinburgh-unitedkingdom": [
+		[
+			"Edinburgh Waverley railway station",
+			55.952,
+			-3.189
+		],
+		[
+			"St Leonards (Edinburgh) railway station",
+			55.9431,
+			-3.17768
+		],
+		[
+			"Haymarket railway station",
+			55.94563,
+			-3.21832
+		],
+		[
+			"Meadowbank Stadium railway station",
+			55.9579,
+			-3.1577
+		],
+		[
+			"Dalry Road railway station",
+			55.94098,
+			-3.22102
+		],
+		[
+			"Newington (Edinburgh) railway station",
+			55.931,
+			-3.1727
+		],
+		[
+			"Granton Road railway station",
+			55.97234,
+			-3.21361
+		],
+		[
+			"Murrayfield railway station",
+			55.94583,
+			-3.23228
+		],
+		[
+			"Blackford Hill railway station",
+			55.9273,
+			-3.18752
+		],
+		[
+			"Newhaven railway station",
+			55.97644,
+			-3.1967
+		],
+		[
+			"Leith North railway station",
+			55.9785,
+			-3.18121
+		],
+		[
+			"Merchiston railway station",
+			55.9346,
+			-3.22875
+		],
+		[
+			"South Leith railway station",
+			55.9765,
+			-3.1654
+		],
+		[
+			"Morningside Road railway station",
+			55.9255,
+			-3.2104
+		]
+	],
+	"andorra-la-vella-andorra": [],
+	"portimao-portugal": [
+		[
+			"Ferragudo railway station",
+			37.13868,
+			-8.51898
+		],
+		[
+			"Portimão railway station",
+			37.1446,
+			-8.5375
+		],
+		[
+			"Mexilhoeira halt",
+			37.1373,
+			-8.4966
+		],
+		[
+			"Alvor Halt",
+			37.15924,
+			-8.56263
+		],
+		[
+			"Estômbar-Lagoa railway station",
+			37.1435,
+			-8.48554
+		]
+	],
+	"vilnius-lithuania": [
+		[
+			"Vilnius train station",
+			54.67,
+			25.285
+		],
+		[
+			"Vilnius Cargo train station",
+			54.667,
+			25.264
+		],
+		[
+			"Pavilnys train station",
+			54.679,
+			25.355
+		],
+		[
+			"Oro uostas",
+			54.643,
+			25.276
+		],
+		[
+			"Kirtimai train station",
+			54.633,
+			25.274
+		]
+	],
+	"darmstadt-germany": [
+		[
+			"Darmstadt Nord station",
+			49.8922,
+			8.65389
+		],
+		[
+			"Darmstadt Ludwigsbahnhof",
+			49.873,
+			8.64225
+		],
+		[
+			"Darmstadt Main-Neckar-Bahnhof",
+			49.8721,
+			8.64062
+		],
+		[
+			"Hauptbahnhof Empfangsgebäude Ehemaliges Empfangsgebäude der Großherzoglichen Familie",
+			49.87257,
+			8.63253
+		],
+		[
+			"Darmstadt Central Station",
+			49.8725,
+			8.62889
+		],
+		[
+			"Darmstadt-Arheilgen station",
+			49.91373,
+			8.64559
+		],
+		[
+			"Darmstadt Ost station",
+			49.8747,
+			8.67361
+		],
+		[
+			"Darmstadt-Kranichstein station",
+			49.90679,
+			8.67942
+		],
+		[
+			"Darmstadt Süd station",
+			49.8556,
+			8.63672
+		],
+		[
+			"Bahnhof Weiterstadt",
+			49.9094,
+			8.5791
+		]
+	],
+	"orlando-unitedstates": [],
+	"leicester-unitedkingdom": [
+		[
+			"Leicester Campbell Street railway station",
+			52.6323,
+			-1.1246
+		],
+		[
+			"Leicester railway station",
+			52.632,
+			-1.124
+		],
+		[
+			"Leicester West Bridge railway station",
+			52.6349,
+			-1.1461
+		],
+		[
+			"Leicester Central railway station",
+			52.6396,
+			-1.14432
+		],
+		[
+			"Welford Road railway station",
+			52.6197,
+			-1.1306
+		],
+		[
+			"Humberstone Road railway station",
+			52.6406,
+			-1.114
+		],
+		[
+			"Leicester Belgrave Road railway station",
+			52.6453,
+			-1.125
+		],
+		[
+			"Humberstone railway station",
+			52.6425,
+			-1.0971
+		],
+		[
+			"Belgrave and Birstall railway station",
+			52.6687,
+			-1.13298
+		],
+		[
+			"South Wigston railway station",
+			52.5824,
+			-1.1339
+		],
+		[
+			"Glen Parva railway station",
+			52.58195,
+			-1.13819
+		],
+		[
+			"Thurnby and Scraptoft railway station",
+			52.6344,
+			-1.0483
+		],
+		[
+			"Wigston Magna railway station",
+			52.5802,
+			-1.1233
+		],
+		[
+			"Wigston South railway station",
+			52.5793,
+			-1.1307
+		]
+	],
+	"toyama-japan": [
+		[
+			"Toyama Station",
+			36.7012,
+			137.213
+		],
+		[
+			"Inarimachi Station",
+			36.6968,
+			137.2316
+		],
+		[
+			"Sakaemachi Station",
+			36.69139,
+			137.23333
+		],
+		[
+			"Fujikoshi Station",
+			36.6879,
+			137.2326
+		],
+		[
+			"Toyama Kamotsu Station",
+			36.7102,
+			137.237
+		],
+		[
+			"Shinjō-Tanaka Station",
+			36.69797,
+			137.24142
+		],
+		[
+			"Ōizumi Station",
+			36.6781,
+			137.229
+		],
+		[
+			"Nishi-Toyama Station",
+			36.69965,
+			137.17756
+		],
+		[
+			"Shin-Toyamaguchi Station",
+			36.71917,
+			137.24024
+		],
+		[
+			"Minami-Toyama Station",
+			36.6705,
+			137.2206
+		],
+		[
+			"Higashi-Shinjō Station",
+			36.6987,
+			137.2532
+		],
+		[
+			"Asanamachi Station",
+			36.6607,
+			137.2246
+		],
+		[
+			"Fuchū-Usaka Station",
+			36.67823,
+			137.16895
+		],
+		[
+			"Kureha Station",
+			36.7189,
+			137.1648
+		]
+	],
+	"ghent-belgium": [
+		[
+			"Gent-Dampoort railway station",
+			51.05611,
+			3.74057
+		],
+		[
+			"Gent-Heirnis railway station",
+			51.0494,
+			3.74402
+		],
+		[
+			"Gent-Rabot railway station",
+			51.06227,
+			3.71338
+		],
+		[
+			"Gent-Sint-Pieters railway station",
+			51.03556,
+			3.71056
+		],
+		[
+			"Gent-Zeehaven railway station",
+			51.06583,
+			3.74306
+		],
+		[
+			"Gentbrugge-Noord railway station",
+			51.04088,
+			3.75363
+		],
+		[
+			"Gentbrugge railway station",
+			51.0383,
+			3.75665
+		],
+		[
+			"Gentbrugge-Zuid railway station",
+			51.03343,
+			3.75663
+		],
+		[
+			"Maaltebrugge railway halt",
+			51.02185,
+			3.70954
+		],
+		[
+			"Oostakker railway station",
+			51.07761,
+			3.75419
+		],
+		[
+			"Merelbeke railway station",
+			51.02013,
+			3.76454
+		],
+		[
+			"Westveld railway station",
+			51.07068,
+			3.77497
+		],
+		[
+			"Wondelgem railway station",
+			51.08897,
+			3.71959
+		],
+		[
+			"Hemelrijk railway station",
+			51.00873,
+			3.67036
+		]
+	],
+	"salamanca-spain": [
+		[
+			"La Alamedilla, train station",
+			40.96681,
+			-5.65625
+		],
+		[
+			"Salamanca train station",
+			40.9721,
+			-5.64853
+		],
+		[
+			"Tejares-Chamberí train station",
+			40.95353,
+			-5.69092
+		]
+	],
+	"atlantic-city-united-states": [[
+		"Atlantic City Rail Terminal",
+		39.3635,
+		-74.442
+	]],
+	"fulda-germany": [[
+		"Götzenhof railway station",
+		50.57764,
+		9.71404
+	], [
+		"Eichenzell station",
+		50.49403,
+		9.69461
+	]],
+	"wiesbaden-germany": [
+		[
+			"Wiesbaden Rheinbahnhof",
+			50.0769,
+			8.24425
+		],
+		[
+			"Wiesbaden Ludwigsbahnhof",
+			50.0775,
+			8.24583
+		],
+		[
+			"Wiesbaden Central Station",
+			50.0708,
+			8.24389
+		],
+		[
+			"Wiesbaden Waldstraße station",
+			50.0607,
+			8.23213
+		],
+		[
+			"Wiesbaden-Dotzheim station",
+			50.0765,
+			8.20368
+		],
+		[
+			"Wiesbaden-Biebrich station",
+			50.0487,
+			8.23637
+		],
+		[
+			"Wiesbaden Ost station",
+			50.0411,
+			8.25659
+		],
+		[
+			"Wiesbaden-Schierstein station",
+			50.0475,
+			8.19472
+		],
+		[
+			"Haltepunkt Chausseehaus",
+			50.09663,
+			8.1716
+		],
+		[
+			"Wiesbaden-Igstadt station",
+			50.0822,
+			8.32556
+		],
+		[
+			"Mainz-Mombach station",
+			50.02278,
+			8.22972
+		],
+		[
+			"Mainz Nord station",
+			50.0203,
+			8.2471
+		]
+	],
+	"bayreuth-germany": [[
+		"Bayreuth Central Station",
+		49.94983,
+		11.57982
+	], [
+		"Bindlach",
+		49.98044,
+		11.60337
+	]],
+	"evora-portugal": [
+		[
+			"Leões",
+			38.58083,
+			-7.90669
+		],
+		[
+			"Comenda Halt",
+			38.57346,
+			-7.89319
+		],
+		[
+			"Évora train station",
+			38.56047,
+			-7.90711
+		],
+		[
+			"Louredo",
+			38.60601,
+			-7.92931
+		],
+		[
+			"Apeadero de Garraia",
+			38.60611,
+			-7.87729
+		],
+		[
+			"Senhor dos Aflitos",
+			38.61896,
+			-7.93941
+		]
+	],
+	"bled-slovenia": [
+		[
+			"Bled Jezero railway station",
+			46.36833,
+			14.0825
+		],
+		[
+			"Lesce - Bled train station",
+			46.36028,
+			14.15778
+		],
+		[
+			"Radovljica train station",
+			46.34052,
+			14.17384
+		]
+	],
+	"blumenau-brazil": [],
+	"kumamoto-japan": [
+		[
+			"Kumamoto Station",
+			32.78934,
+			130.68869
+		],
+		[
+			"Heisei Station",
+			32.78144,
+			130.70325
+		],
+		[
+			"Minami-Kumamoto Station",
+			32.78513,
+			130.71159
+		],
+		[
+			"Fujisakigumae Station",
+			32.80933,
+			130.71328
+		],
+		[
+			"Shin-Suizenji Station",
+			32.7936,
+			130.726
+		],
+		[
+			"Kami-Kumamoto Station",
+			32.81806,
+			130.69944
+		],
+		[
+			"Suizenji Station",
+			32.79682,
+			130.72962
+		],
+		[
+			"Nishi-Kumamoto Station",
+			32.76286,
+			130.68306
+		],
+		[
+			"Kurokamimachi Station",
+			32.81829,
+			130.71723
+		],
+		[
+			"Kankanzaka Station",
+			32.8242,
+			130.70192
+		],
+		[
+			"Tsuboigawakoen Station",
+			32.8214,
+			130.71867
+		],
+		[
+			"Uchigoshi Station",
+			32.82379,
+			130.71387
+		],
+		[
+			"Ikeda Station",
+			32.82708,
+			130.70748
+		],
+		[
+			"Sōjōdaigakumae Station",
+			32.83108,
+			130.69489
+		]
+	],
+	"brasilia-brazil": [],
+	"sydney-australia": [
+		[
+			"St James railway station",
+			-33.8704,
+			151.2112
+		],
+		[
+			"Martin Place railway station",
+			-33.86785,
+			151.21014
+		],
+		[
+			"Hunter Street railway station",
+			-33.86566,
+			151.20965
+		],
+		[
+			"Town Hall railway station",
+			-33.8734,
+			151.20678
+		],
+		[
+			"Kings Cross railway station",
+			-33.87468,
+			151.22242
+		],
+		[
+			"Museum railway station",
+			-33.8762,
+			151.2097
+		],
+		[
+			"Wynyard railway station",
+			-33.86587,
+			151.20555
+		],
+		[
+			"Circular Quay railway station",
+			-33.86133,
+			151.21078
+		],
+		[
+			"Central railway station",
+			-33.8825,
+			151.20667
+		],
+		[
+			"Edgecliff railway station",
+			-33.87911,
+			151.2362
+		],
+		[
+			"Regent Street railway station",
+			-33.8868,
+			151.2024
+		],
+		[
+			"Milsons Point railway station",
+			-33.8461,
+			151.2118
+		],
+		[
+			"Milsons Point (Lavender Bay sites) railway stations",
+			-33.84509,
+			151.20958
+		],
+		[
+			"Redfern railway station",
+			-33.89202,
+			151.19873
+		]
+	],
+	"troms-norway": [],
+	"curitiba-brazil": [[
+		"Rodoferroviária de Curitiba",
+		-25.43667,
+		-49.25722
+	]],
+	"offenbach-germany": [
+		[
+			"Frankfurt (Main) Ost station",
+			50.11246,
+			8.70838
+		],
+		[
+			"Offenbach Central Station",
+			50.0994,
+			8.76083
+		],
+		[
+			"Frankfurt Mühlberg station",
+			50.1017,
+			8.70028
+		],
+		[
+			"Frankfurt Lokalbahnhof",
+			50.1029,
+			8.6915
+		],
+		[
+			"Frankfurt (Main) Süd",
+			50.0992,
+			8.68616
+		],
+		[
+			"Offenbach (Main) Ost",
+			50.1027,
+			8.78444
+		],
+		[
+			"Frankfurt-Mainkur",
+			50.13444,
+			8.76695
+		],
+		[
+			"Main-Neckar-Bahnhof",
+			50.1083,
+			8.67222
+		],
+		[
+			"Taunusbahnhof (Frankfurt)",
+			50.1092,
+			8.67167
+		],
+		[
+			"Main-Weser-Bahnhof",
+			50.11,
+			8.67111
+		],
+		[
+			"Frankfurt (Main) Stresemannallee",
+			50.095,
+			8.671
+		],
+		[
+			"Mainspitze",
+			50.0996,
+			8.66822
+		],
+		[
+			"Frankfurt (Main) Hbf",
+			50.10726,
+			8.66262
+		],
+		[
+			"Frankfurt-Louisa",
+			50.0832,
+			8.67034
+		]
+	],
+	"mainz-germany": [
+		[
+			"Gartenfeld railway station",
+			50.01006,
+			8.26588
+		],
+		[
+			"Mainz Central Station",
+			50.0013,
+			8.25865
+		],
+		[
+			"Mainz-Kastel station",
+			50.0071,
+			8.28251
+		],
+		[
+			"Mainz Nord station",
+			50.0203,
+			8.2471
+		],
+		[
+			"Bahnhof Mainz der Hessischen Ludwigsbahn",
+			49.9967,
+			8.28088
+		],
+		[
+			"Mainz Römisches Theater station",
+			49.9933,
+			8.27778
+		],
+		[
+			"Mainz-Mombach station",
+			50.02278,
+			8.22972
+		],
+		[
+			"Mainz-Gonsenheim station",
+			49.99781,
+			8.21446
+		],
+		[
+			"Wiesbaden Ost station",
+			50.0411,
+			8.25659
+		],
+		[
+			"Mainz-Gustavsburg station",
+			49.9944,
+			8.31404
+		],
+		[
+			"Wiesbaden-Biebrich station",
+			50.0487,
+			8.23637
+		],
+		[
+			"Mainz-Marienborn station",
+			49.9605,
+			8.2228
+		],
+		[
+			"Mainz-Laubenheim stop",
+			49.9612,
+			8.3141
+		],
+		[
+			"Wiesbaden Waldstraße station",
+			50.0607,
+			8.23213
+		]
+	],
+	"panama-city-panama": [],
+	"namur-belgium": [
+		[
+			"Jambes railway station",
+			50.45464,
+			4.87595
+		],
+		[
+			"Namur railway station",
+			50.46913,
+			4.86247
+		],
+		[
+			"Jambes-Est railway station",
+			50.45488,
+			4.8803
+		],
+		[
+			"Saint-Servais (Namur) railway station",
+			50.47533,
+			4.84763
+		],
+		[
+			"Velaine railway station",
+			50.43571,
+			4.86579
+		],
+		[
+			"Ronet railway station",
+			50.45417,
+			4.82583
+		],
+		[
+			"Dave-Saint-Martin railway station",
+			50.4282,
+			4.88564
+		],
+		[
+			"Flawinne railway station",
+			50.45623,
+			4.80729
+		],
+		[
+			"Naninne railway station",
+			50.41963,
+			4.92981
+		]
+	],
+	"benidorm-spain": [
+		[
+			"Benidorm railway station",
+			38.54815,
+			-.13492
+		],
+		[
+			"Parada de Disco Benidorm",
+			38.54999,
+			-.11736
+		],
+		[
+			"Parada de Camí Coves",
+			38.55954,
+			-.10403
+		],
+		[
+			"Estación de Hiper Finestrat",
+			38.54058,
+			-.17507
+		],
+		[
+			"Parada de Hospital Vila",
+			38.53081,
+			-.19896
+		],
+		[
+			"Parada de El Albir",
+			38.57639,
+			-.0796
+		]
+	],
+	"newcastle-australia": [
+		[
+			"Newcastle Interchange",
+			-32.9248,
+			151.761
+		],
+		[
+			"Hamilton railway station",
+			-32.9184,
+			151.7485
+		],
+		[
+			"Broadmeadow railway station",
+			-32.923,
+			151.7343
+		],
+		[
+			"Waratah railway station",
+			-32.9029,
+			151.7319
+		],
+		[
+			"Adamstown railway station",
+			-32.9338,
+			151.72
+		],
+		[
+			"Kotara railway station",
+			-32.9416,
+			151.6979
+		],
+		[
+			"Warabrook railway station",
+			-32.8874,
+			151.71
+		]
+	],
+	"blankenberge-belgium": [
+		[
+			"Blankenberge railway station",
+			51.31218,
+			3.13387
+		],
+		[
+			"Zeebrugge-Strand railway station",
+			51.33026,
+			3.18431
+		],
+		[
+			"Zeebrugge-Dorp railway station",
+			51.32638,
+			3.19514
+		],
+		[
+			"Zeebrugge-Kaai railway station",
+			51.33828,
+			3.18694
+		],
+		[
+			"Lissewege railway station",
+			51.29469,
+			3.19445
+		]
+	],
+	"perth-australia": [
+		[
+			"Perth railway station",
+			-31.95139,
+			115.86028
+		],
+		[
+			"Perth Underground railway station",
+			-31.95194,
+			115.858
+		],
+		[
+			"Elizabeth Quay railway station",
+			-31.95692,
+			115.8553
+		],
+		[
+			"McIver railway station",
+			-31.95174,
+			115.86654
+		],
+		[
+			"Claisebrook railway station",
+			-31.9495,
+			115.873
+		],
+		[
+			"City West railway station",
+			-31.9448,
+			115.845
+		],
+		[
+			"East Perth railway station",
+			-31.9439,
+			115.877
+		],
+		[
+			"Leederville railway station",
+			-31.9389,
+			115.84
+		],
+		[
+			"West Leederville railway station",
+			-31.9427,
+			115.833
+		],
+		[
+			"Mount Lawley railway station",
+			-31.93474,
+			115.88089
+		],
+		[
+			"Perth Stadium railway station",
+			-31.95028,
+			115.8929
+		],
+		[
+			"Subiaco railway station",
+			-31.9447,
+			115.824
+		],
+		[
+			"Burswood railway station",
+			-31.96,
+			115.9
+		],
+		[
+			"Maylands railway station",
+			-31.9283,
+			115.892
+		]
+	],
+	"trieste-italy": [
+		[
+			"Trieste Centrale railway station",
+			45.65747,
+			13.7721
+		],
+		[
+			"Trieste Campo Marzio Smistamento",
+			45.64061,
+			13.75454
+		],
+		[
+			"Guardiella railway station",
+			45.65328,
+			13.8149
+		],
+		[
+			"Villa Opicina railway station",
+			45.6942,
+			13.7913
+		],
+		[
+			"Trieste Servola",
+			45.6223,
+			13.78036
+		],
+		[
+			"Trieste Scalo Legnami",
+			45.6223,
+			13.78036
+		],
+		[
+			"Trieste Aquilinia railway station",
+			45.61806,
+			13.81057
+		]
+	],
+	"almunecar-spain": [],
+	"larnaca-cyprus": [],
+	"amiens-france": [
+		[
+			"Amiens railway station",
+			49.89056,
+			2.30833
+		],
+		[
+			"Gare de Saint-Roch",
+			49.89316,
+			2.28355
+		],
+		[
+			"Longueau station",
+			49.86368,
+			2.35242
+		],
+		[
+			"Gare de Dreuil-lès-Amiens",
+			49.91472,
+			2.23028
+		]
+	],
+	"cirencester-united-kingdom": [
+		[
+			"Cirencester Watermoor railway station",
+			51.7077,
+			-1.95943
+		],
+		[
+			"Chesterton Lane Halt railway station",
+			51.708,
+			-1.965
+		],
+		[
+			"Cirencester Town railway station",
+			51.71522,
+			-1.97173
+		],
+		[
+			"Park Leaze Halt railway station",
+			51.6875,
+			-1.9906
+		],
+		[
+			"South Cerney railway station",
+			51.6731,
+			-1.919
+		],
+		[
+			"Kemble railway station",
+			51.676,
+			-2.023
+		]
+	],
+	"gold-coast-australia": [],
+	"nusa-dua-indonesia": [],
+	"ciudad-real-spain": [
+		[
+			"Estación Nueva",
+			38.98174,
+			-3.935
+		],
+		[
+			"Ciudad Real train station",
+			38.9853,
+			-3.9135
+		],
+		[
+			"Ciudad Real-Miguelturra train station",
+			38.97164,
+			-3.89551
+		],
+		[
+			"estación de Miguelturra",
+			38.96886,
+			-3.8845
+		],
+		[
+			"estación de Poblete",
+			38.93189,
+			-3.95003
+		]
+	],
+	"bordeaux-france": [
+		[
+			"Bordeaux-Saint-Jean railway station",
+			44.82581,
+			-.55573
+		],
+		[
+			"Ravezies station",
+			44.86646,
+			-.57682
+		],
+		[
+			"Gare de Talence-Médoquine",
+			44.8162,
+			-.60115
+		],
+		[
+			"gare de Caudéran - Mérignac",
+			44.84263,
+			-.62767
+		],
+		[
+			"Cenon station",
+			44.85633,
+			-.53363
+		],
+		[
+			"Mérignac-Arlac railway station",
+			44.82718,
+			-.62606
+		],
+		[
+			"Gare de Bègles",
+			44.79935,
+			-.55514
+		],
+		[
+			"Lormont",
+			44.87722,
+			-.53357
+		],
+		[
+			"gare de Bruges",
+			44.88662,
+			-.60924
+		],
+		[
+			"Gare de Pessac",
+			44.80442,
+			-.63175
+		]
+	],
+	"ostend-belgium": [[
+		"Oostende-Stad railway station",
+		51.22664,
+		2.92239
+	], [
+		"Oostende railway station",
+		51.22889,
+		2.92583
+	]],
+	"altea-spain": [
+		[
+			"Baixador de Cap Negret",
+			38.61053,
+			-.04107
+		],
+		[
+			"Parada de Garganes",
+			38.60217,
+			-.04797
+		],
+		[
+			"Train station Altea",
+			38.59594,
+			-.05221
+		],
+		[
+			"Parada de El Albir",
+			38.57639,
+			-.0796
+		]
+	],
+	"lincoln-unitedkingdom": [
+		[
+			"Lincoln Central railway station",
+			53.22601,
+			-.53992
+		],
+		[
+			"Bracebridge railway station",
+			53.1992,
+			-.54903
+		],
+		[
+			"Skellingthorpe railway station",
+			53.2337,
+			-.61309
+		],
+		[
+			"Hykeham railway station",
+			53.19519,
+			-.59985
+		],
+		[
+			"Washingborough railway station",
+			53.2257,
+			-.48042
+		],
+		[
+			"Waddington railway station",
+			53.1753,
+			-.556
+		]
+	],
+	"cambridge-unitedkingdom": [
+		[
+			"Cambridge railway station",
+			52.19417,
+			.1375
+		],
+		[
+			"Cambridge North railway station",
+			52.2233,
+			.15778
+		],
+		[
+			"Cambridge South railway station",
+			52.1744,
+			.131
+		],
+		[
+			"Shelford railway station",
+			52.149,
+			.14
+		]
+	],
+	"jaen-spain": [[
+		"Jaén railway station",
+		37.78009,
+		-3.79098
+	], [
+		"Grañena train station",
+		37.83883,
+		-3.76533
+	]],
+	"alcobendas-spain": [
+		[
+			"Alcobendas-San Sebastián de los Reyes train station",
+			40.5467,
+			-3.63504
+		],
+		[
+			"Valdelasfuentes railway station",
+			40.5474,
+			-3.65436
+		],
+		[
+			"Universidad P. Comillas station",
+			40.5541,
+			-3.68349
+		],
+		[
+			"estación de Diputación",
+			40.52419,
+			-3.68919
+		],
+		[
+			"Fuencarral station",
+			40.5015,
+			-3.68247
+		],
+		[
+			"Cantoblanco station",
+			40.5438,
+			-3.70037
+		],
+		[
+			"estación de Valdelatas",
+			40.5383,
+			-3.70361
+		],
+		[
+			"Valdebebas",
+			40.48228,
+			-3.61629
+		],
+		[
+			"Fuente de la Mora",
+			40.48489,
+			-3.66275
+		]
+	],
+	"sofia-bulgaria": [
+		[
+			"Sofia",
+			42.71213,
+			23.32112
+		],
+		[
+			"Zaharna fabrika",
+			42.71295,
+			23.29146
+		],
+		[
+			"Podujane Passenger",
+			42.69752,
+			23.35459
+		],
+		[
+			"Podujane",
+			42.69791,
+			23.35474
+		],
+		[
+			"Pioner",
+			42.66733,
+			23.33957
+		],
+		[
+			"Sofia-Sever",
+			42.72634,
+			23.31648
+		],
+		[
+			"Poduyane Razpr.sr.r.",
+			42.69498,
+			23.36672
+		],
+		[
+			"Smirnenski",
+			42.68499,
+			23.38012
+		],
+		[
+			"Gorna Banja railway station",
+			42.67557,
+			23.24246
+		],
+		[
+			"Iliyantsi",
+			42.7513,
+			23.32656
+		]
+	],
+	"elche-spain": [
+		[
+			"estación de Elche-Carrús",
+			38.2689,
+			-.70667
+		],
+		[
+			"Elx Parc train station",
+			38.2719,
+			-.695
+		],
+		[
+			"estación de Elche-Mercancías",
+			38.27836,
+			-.65483
+		],
+		[
+			"Elche AV station",
+			38.24609,
+			-.76684
+		]
+	],
+	"liege-belgium": [
+		[
+			"Liège-Carré railway station",
+			50.64083,
+			5.56194
+		],
+		[
+			"Liège-Guillemins railway station",
+			50.6247,
+			5.56697
+		],
+		[
+			"Liège-Saint-Lambert railway station",
+			50.64639,
+			5.57039
+		],
+		[
+			"Val-Benoît railway station",
+			50.61432,
+			5.57257
+		],
+		[
+			"Sclessin railway station",
+			50.61076,
+			5.55559
+		],
+		[
+			"Angleur railway station",
+			50.61292,
+			5.59952
+		],
+		[
+			"Bressoux railway station",
+			50.64445,
+			5.61314
+		],
+		[
+			"Montegnée railway station",
+			50.65573,
+			5.52895
+		],
+		[
+			"Bois-de-Breux railway station",
+			50.62972,
+			5.62389
+		],
+		[
+			"Ougrée railway station",
+			50.60556,
+			5.535
+		],
+		[
+			"Thier-de-Chênée railway station",
+			50.61723,
+			5.62214
+		],
+		[
+			"Pont-de-Seraing railway station",
+			50.61972,
+			5.50972
+		],
+		[
+			"Chênée railway station",
+			50.60773,
+			5.61673
+		],
+		[
+			"Ans-Est railway station",
+			50.66444,
+			5.525
+		]
+	],
+	"canberra-australia": [[
+		"Canberra railway station",
+		-35.31919,
+		149.14923
+	]],
+	"amstelveen-the-netherlands": [
+		[
+			"Karselaan railway halt",
+			52.31155,
+			4.85065
+		],
+		[
+			"Amsterdamseweg",
+			52.3155,
+			4.85532
+		],
+		[
+			"Schinkeldijk",
+			52.29112,
+			4.82676
+		],
+		[
+			"Kalfjeslaan",
+			52.32162,
+			4.85643
+		],
+		[
+			"Amsterdam Koenenkade",
+			52.33104,
+			4.85596
+		],
+		[
+			"Station Legmeerpolder",
+			52.27155,
+			4.82868
+		],
+		[
+			"Kerkweg",
+			52.28265,
+			4.80384
+		],
+		[
+			"Amsterdam Zuid",
+			52.33889,
+			4.87306
+		],
+		[
+			"Station RAI",
+			52.33667,
+			4.89056
+		],
+		[
+			"Amsterdam Aletta Jacobslaan railway station",
+			52.34693,
+			4.83441
+		],
+		[
+			"Kanaalweg",
+			52.25521,
+			4.81628
+		],
+		[
+			"Duivendrecht railway station",
+			52.32333,
+			4.93639
+		],
+		[
+			"Halte Amsterdam ArenA",
+			52.31611,
+			4.94278
+		],
+		[
+			"Amsterdam Bijlmer ArenA",
+			52.31306,
+			4.94611
+		]
+	],
+	"bern-switzerland": [
+		[
+			"Bern railway station",
+			46.94882,
+			7.43912
+		],
+		[
+			"Bern Weissenbühl railway station",
+			46.93577,
+			7.43002
+		],
+		[
+			"Wabern bei Bern railway station",
+			46.92866,
+			7.44588
+		],
+		[
+			"Bern Fischermätteli",
+			46.94194,
+			7.41207
+		],
+		[
+			"Bern Felsenau railway station",
+			46.9685,
+			7.44424
+		],
+		[
+			"Bern Europaplatz BLS station",
+			46.94344,
+			7.40747
+		],
+		[
+			"Liebefeld railway station",
+			46.93034,
+			7.4192
+		],
+		[
+			"Bern Europaplatz SBB station",
+			46.94421,
+			7.40612
+		],
+		[
+			"Bern Tiefenau railway station",
+			46.97274,
+			7.4502
+		],
+		[
+			"Bern Wankdorf railway station",
+			46.96782,
+			7.46546
+		],
+		[
+			"Bern Stöckacker railway station",
+			46.94636,
+			7.40118
+		],
+		[
+			"Köniz railway station",
+			46.92488,
+			7.41516
+		],
+		[
+			"Ostermundigen railway station",
+			46.9568,
+			7.48149
+		],
+		[
+			"Bern Bümpliz Süd railway station",
+			46.93747,
+			7.39523
+		]
+	],
+	"logrono-spain": [[
+		"Logroño railway station",
+		42.45778,
+		-2.44083
+	]],
+	"almeria-spain": [
+		[
+			"edificio de la estación de ferrocarril de Almería",
+			36.83466,
+			-2.45616
+		],
+		[
+			"Almería Intermodal Station",
+			36.83521,
+			-2.45519
+		],
+		[
+			"Huercal-Viator",
+			36.88347,
+			-2.43622
+		]
+	],
+	"malaga-spain": [
+		[
+			"Málaga Centro-Alameda railway station",
+			36.71528,
+			-4.42683
+		],
+		[
+			"Estación antigua de Málaga",
+			36.71205,
+			-4.4311
+		],
+		[
+			"Málaga-María Zambrano Railway Station",
+			36.71167,
+			-4.43194
+		],
+		[
+			"Universidad",
+			36.71704,
+			-4.47223
+		],
+		[
+			"Estación de Clínico",
+			36.71656,
+			-4.47861
+		],
+		[
+			"Estación de El Cónsul",
+			36.71733,
+			-4.48402
+		],
+		[
+			"Los Prados train station",
+			36.69861,
+			-4.47742
+		],
+		[
+			"Paraninfo",
+			36.71799,
+			-4.48874
+		],
+		[
+			"Guadalhorce train station",
+			36.69203,
+			-4.48375
+		],
+		[
+			"Andalucía Tech",
+			36.71879,
+			-4.49442
+		]
+	],
+	"albufeira-portugal": [
+		[
+			"Fontainhas Halt",
+			37.12345,
+			-8.21821
+		],
+		[
+			"Albufeira-Ferreiras railway station",
+			37.1287,
+			-8.23307
+		],
+		[
+			"Patã Halt",
+			37.11346,
+			-8.18776
+		]
+	],
+	"nashville-unitedstates": [[
+		"Riverfront station",
+		36.162,
+		-86.774
+	], [
+		"Donelson station",
+		36.16704,
+		-86.66655
+	]],
+	"nara-japan": [
+		[
+			"Nara Station",
+			34.68066,
+			135.81902
+		],
+		[
+			"Shin-Ōmiya Station",
+			34.68545,
+			135.81151
+		],
+		[
+			"Kintetsu Nara Station",
+			34.68444,
+			135.82742
+		],
+		[
+			"Kyōbate Station",
+			34.66986,
+			135.82883
+		],
+		[
+			"Narayama Station",
+			34.7107,
+			135.81049
+		],
+		[
+			"Amagatsuji Station",
+			34.68148,
+			135.78363
+		],
+		[
+			"Yamato-Saidaiji Station",
+			34.69389,
+			135.78278
+		],
+		[
+			"Nishinokyō Station",
+			34.67022,
+			135.78325
+		],
+		[
+			"Heijō Station",
+			34.70158,
+			135.78504
+		],
+		[
+			"Kujō Station",
+			34.65943,
+			135.78297
+		],
+		[
+			"Obitoke Station",
+			34.64343,
+			135.82638
+		],
+		[
+			"Kōriyama Station",
+			34.64808,
+			135.79039
+		],
+		[
+			"Takanohara Station",
+			34.72375,
+			135.79185
+		],
+		[
+			"Kintetsu-Kōriyama Station",
+			34.64606,
+			135.78072
+		]
+	],
+	"montpellier-france": [
+		[
+			"Montpellier-Saint-Roch railway station",
+			43.60464,
+			3.88104
+		],
+		[
+			"Montpellier-Chaptal",
+			43.6033,
+			3.86699
+		],
+		[
+			"Montpellier Sud de France station",
+			43.5961,
+			3.92629
+		],
+		[
+			"Gare de Saint-Aunès",
+			43.63543,
+			3.96332
+		]
+	],
+	"tainan-taiwan": [[
+		"Tainan TR station",
+		22.9969,
+		120.213
+	], [
+		"Daqiao railway station",
+		23.0189,
+		120.224
+	]],
+	"benalmadena-spain": [
+		[
+			"Benalmádena-Arroyo de la Miel railway station",
+			36.59908,
+			-4.53631
+		],
+		[
+			"Torremuelle Station",
+			36.58225,
+			-4.56708
+		],
+		[
+			"El Pinillo train station",
+			36.60986,
+			-4.51536
+		],
+		[
+			"Montemar Alto train station",
+			36.61369,
+			-4.50939
+		],
+		[
+			"Torremolinos train station",
+			36.62258,
+			-4.49956
+		],
+		[
+			"estación de Carvajal",
+			36.57025,
+			-4.59406
+		],
+		[
+			"Torreblanca train station",
+			36.56497,
+			-4.60656
+		],
+		[
+			"La Colina train station, Spain",
+			36.64192,
+			-4.49264
+		]
+	],
+	"cologne-germany": [
+		[
+			"Cologne Central Station",
+			50.9425,
+			6.95806
+		],
+		[
+			"Köln Hansaring station",
+			50.9491,
+			6.95263
+		],
+		[
+			"Köln West station",
+			50.9436,
+			6.93393
+		],
+		[
+			"Köln Süd station",
+			50.9275,
+			6.93777
+		],
+		[
+			"Köln Messe/Deutz station",
+			50.94083,
+			6.975
+		],
+		[
+			"Köln-Nippes station",
+			50.9588,
+			6.9418
+		],
+		[
+			"Bahnbetriebswerk Köln-Deutzerfeld",
+			50.9417,
+			6.98973
+		],
+		[
+			"Köln-Ehrenfeld station",
+			50.9516,
+			6.9177
+		],
+		[
+			"Köln-Trimbornstraße station",
+			50.93565,
+			6.99728
+		],
+		[
+			"Köln-Braunsfeld railway station",
+			50.93858,
+			6.89391
+		],
+		[
+			"Köln-Müngersdorf Technologiepark station",
+			50.94825,
+			6.88819
+		],
+		[
+			"Köln-Mülheim station",
+			50.9587,
+			7.0137
+		],
+		[
+			"Köln-Bickendorf railway station",
+			50.9571,
+			6.88862
+		],
+		[
+			"Köln-Niehl railway station",
+			50.98772,
+			6.95544
+		]
+	],
+	"jerez-de-la-frontera-spain": [
+		[
+			"Jerez de la Frontera train station",
+			36.67996,
+			-6.12641
+		],
+		[
+			"Estación de La Pepa",
+			36.70331,
+			-6.11188
+		],
+		[
+			"Estación de Jerez de la Frontera-Mercancías",
+			36.72098,
+			-6.09337
+		],
+		[
+			"El Portal train station",
+			36.63786,
+			-6.13203
+		]
+	],
+	"casablanca-morocco": [
+		[
+			"Casa-Port railway station",
+			33.59918,
+			-7.61188
+		],
+		[
+			"Casablanca Voyageurs",
+			33.5895,
+			-7.5908
+		],
+		[
+			"Mers Sultan train station",
+			33.5698,
+			-7.60868
+		],
+		[
+			"Oasis railway station",
+			33.55453,
+			-7.63151
+		],
+		[
+			"Faculties train station",
+			33.5412,
+			-7.64991
+		]
+	],
+	"ravenna-italy": [[
+		"Ravenna railway station",
+		44.41916,
+		12.20806
+	], [
+		"Classe railway station",
+		44.382,
+		12.2349
+	]],
+	"galway-ireland": [],
+	"hoi-an-vietnam": [],
+	"carlisle-united-kingdom": [
+		[
+			"Scotby railway station",
+			54.8891,
+			-2.8778
+		],
+		[
+			"Carlisle Crown Street railway station",
+			54.887,
+			-2.9299
+		],
+		[
+			"Carlisle Bogfield railway station",
+			54.8864,
+			-2.9315
+		],
+		[
+			"Carlisle railway station",
+			54.891,
+			-2.934
+		],
+		[
+			"Carlisle Canal railway station",
+			54.8949,
+			-2.9519
+		],
+		[
+			"Cumwhinton railway station",
+			54.8698,
+			-2.852
+		],
+		[
+			"Cummersdale railway station",
+			54.8642,
+			-2.9445
+		],
+		[
+			"Brisco railway station",
+			54.8528,
+			-2.8872
+		],
+		[
+			"Wetheral railway station",
+			54.8839,
+			-2.833
+		],
+		[
+			"Parkhouse Halt railway station",
+			54.9318,
+			-2.959
+		],
+		[
+			"Harker railway station",
+			54.939,
+			-2.9603
+		],
+		[
+			"Wreay railway station",
+			54.8303,
+			-2.8766
+		]
+	],
+	"ajaccio-france": [
+		[
+			"Gare des Salines",
+			41.934,
+			8.74991
+		],
+		[
+			"train stop Ricanto / Ricantu",
+			41.92884,
+			8.77609
+		],
+		[
+			"Cavone",
+			41.92806,
+			8.79571
+		],
+		[
+			"Effrico",
+			41.96385,
+			8.81473
+		]
+	],
+	"treviso-italy": [
+		[
+			"Treviso Centrale railway station",
+			45.6601,
+			12.2452
+		],
+		[
+			"Lancenigo railway station",
+			45.7102,
+			12.2656
+		],
+		[
+			"Preganziol railway station",
+			45.6036,
+			12.2317
+		],
+		[
+			"Paese railway station",
+			45.6692,
+			12.1617
+		],
+		[
+			"Olmi-Spercenigo railway station",
+			45.67788,
+			12.32959
+		]
+	],
+	"torun-poland": [
+		[
+			"Toruń Miasto",
+			53.0119,
+			18.6198
+		],
+		[
+			"Toruń Główny railway station",
+			53,
+			18.61417
+		],
+		[
+			"Toruń Mokre",
+			53.02889,
+			18.62417
+		],
+		[
+			"Toruń Wschodni",
+			53.0272,
+			18.6347
+		],
+		[
+			"Toruń Kluczyki",
+			52.9897,
+			18.5775
+		],
+		[
+			"Toruń Podgórz",
+			52.9856,
+			18.5631
+		],
+		[
+			"Toruń Czerniewice",
+			52.9753,
+			18.6736
+		],
+		[
+			"Grębocin train stop",
+			53.0456,
+			18.6908
+		]
+	],
+	"la-rochelle-france": [
+		[
+			"gare de La Rochelle",
+			46.15278,
+			-1.14556
+		],
+		[
+			"La Rochelle-Porte Dauphine",
+			46.1676,
+			-1.1521
+		],
+		[
+			"Aytré-Plage",
+			46.12753,
+			-1.12815
+		],
+		[
+			"Gare d'Aytré",
+			46.1337,
+			-1.1115
+		],
+		[
+			"La Jarne - Saint-Rogatien",
+			46.1342,
+			-1.0803
+		],
+		[
+			"Gare d'Angoulins-sur-Mer",
+			46.10806,
+			-1.11561
+		]
+	],
+	"tavira-portugal": [
+		[
+			"Porta Nova railway station",
+			37.13308,
+			-7.64819
+		],
+		[
+			"Tavira train station",
+			37.1209,
+			-7.65574
+		],
+		[
+			"Conceição Halt",
+			37.14437,
+			-7.60564
+		],
+		[
+			"Varanda Halt",
+			37.10459,
+			-7.67409
+		],
+		[
+			"Pedras d'El-Rei Halt",
+			37.09697,
+			-7.68399
+		],
+		[
+			"Pinheiro Halt",
+			37.15337,
+			-7.58808
+		],
+		[
+			"Santa Rita halt",
+			37.16128,
+			-7.57794
+		],
+		[
+			"Luz halt, Luz de Tavira",
+			37.08883,
+			-7.70006
+		]
+	],
+	"cuenca-spain": [[
+		"Cuenca–Fernando Zóbel railway station",
+		40.03547,
+		-2.14609
+	], [
+		"La Melgosa train station",
+		40.02858,
+		-2.09125
+	]],
+	"guadalajara-mexico": [
+		[
+			"Juárez railway station",
+			20.67472,
+			-103.35472
+		],
+		[
+			"Refugio",
+			20.682,
+			-103.354
+		],
+		[
+			"Guadalajara Centro railway station",
+			20.67619,
+			-103.34739
+		],
+		[
+			"San Juan de Dios",
+			20.6753,
+			-103.341
+		],
+		[
+			"Santa Filomena",
+			20.6542,
+			-103.364
+		],
+		[
+			"Unidad Deportiva",
+			20.6474,
+			-103.369
+		],
+		[
+			"Urdaneta railway station",
+			20.6431,
+			-103.373
+		],
+		[
+			"Oblatos",
+			20.6704,
+			-103.323
+		],
+		[
+			"CUCEI railway station",
+			20.65964,
+			-103.32403
+		],
+		[
+			"18 de Marzo",
+			20.6381,
+			-103.377
+		],
+		[
+			"Plaza Patria railway station",
+			20.71214,
+			-103.37487
+		],
+		[
+			"Cristóbal de Oñate",
+			20.6676,
+			-103.313
+		],
+		[
+			"Atemajac",
+			20.7161,
+			-103.354
+		],
+		[
+			"Isla Raza",
+			20.6327,
+			-103.381
+		]
+	],
+	"caceres-spain": [[
+		"Cáceres Railway Station",
+		39.46028,
+		-6.38556
+	]],
+	"trento-italy": [
+		[
+			"Trento railway station",
+			46.07261,
+			11.11909
+		],
+		[
+			"Povo-Mesiano train station",
+			46.06504,
+			11.1427
+		],
+		[
+			"Villazzano railway station",
+			46.0459,
+			11.1391
+		],
+		[
+			"Gardolo railway station",
+			46.1081,
+			11.1044
+		],
+		[
+			"Trento Roncafort railway station",
+			46.10703,
+			11.09775
+		]
+	],
+	"bielefeld-germany": [
+		[
+			"Bielefeld Central Station",
+			52.02833,
+			8.53167
+		],
+		[
+			"Bielefeld Ost railway station",
+			52.0239,
+			8.5594
+		],
+		[
+			"Brackwede station",
+			51.9964,
+			8.49806
+		],
+		[
+			"Oldentrup railway station",
+			52.01029,
+			8.5909
+		],
+		[
+			"Quelle station",
+			52.00028,
+			8.46083
+		],
+		[
+			"Bielefeld-Senne station",
+			51.96485,
+			8.52066
+		]
+	],
+	"nantes-france": [
+		[
+			"Nantes station",
+			47.21667,
+			-1.54167
+		],
+		[
+			"Gare de l'État",
+			47.20421,
+			-1.55945
+		],
+		[
+			"Gare de Rezé-Pont-Rousseau",
+			47.19322,
+			-1.54938
+		],
+		[
+			"Gare de Saint-Sébastien-Pas-Enchantés",
+			47.20667,
+			-1.51083
+		],
+		[
+			"Chantenay Station",
+			47.19722,
+			-1.59434
+		],
+		[
+			"Haluchère-Batignolles",
+			47.249,
+			-1.52259
+		],
+		[
+			"Babinière",
+			47.2589,
+			-1.54534
+		],
+		[
+			"Gare de Saint-Sébastien-Frêne-Rond",
+			47.19028,
+			-1.49611
+		],
+		[
+			"Gare de Vertou",
+			47.18611,
+			-1.47806
+		]
+	],
+	"belo-horizonte-brazil": [
+		[
+			"Belo Horizonte Central Station",
+			-19.91833,
+			-43.93365
+		],
+		[
+			"Complexe architectural et paysager de la place Rui Barbosa - l’Ancien Ouest de Minas",
+			-19.91707,
+			-43.93288
+		],
+		[
+			"Museu de Artes e Ofícios",
+			-19.91692,
+			-43.9335
+		],
+		[
+			"Lagoinha Station",
+			-19.91297,
+			-43.94258
+		],
+		[
+			"Santa Tereza Station",
+			-19.91806,
+			-43.91278
+		],
+		[
+			"Calafate Station",
+			-19.92239,
+			-43.97031
+		],
+		[
+			"Horto Florestal Station",
+			-19.90608,
+			-43.91311
+		],
+		[
+			"Gameleira Station",
+			-19.92778,
+			-43.98806
+		],
+		[
+			"José Cândido da Silveira Station",
+			-19.88308,
+			-43.91314
+		],
+		[
+			"Vila Oeste Station",
+			-19.93861,
+			-44.00269
+		]
+	],
+	"blackpool-united-kingdom": [
+		[
+			"Blackpool Central railway station",
+			53.8141,
+			-3.0542
+		],
+		[
+			"Blackpool South railway station",
+			53.7983,
+			-3.0488
+		],
+		[
+			"Blackpool North railway station",
+			53.8218,
+			-3.0493
+		],
+		[
+			"South Shore railway station",
+			53.7957,
+			-3.0493
+		],
+		[
+			"Blackpool Pleasure Beach railway station",
+			53.7879,
+			-3.054
+		],
+		[
+			"Layton railway station",
+			53.835,
+			-3.0306
+		],
+		[
+			"Squires Gate railway station",
+			53.7773,
+			-3.0503
+		],
+		[
+			"Gillett's Crossing Halt railway station",
+			53.7623,
+			-3.0404
+		],
+		[
+			"Poulton Curve Halt railway station",
+			53.8499,
+			-2.9974
+		],
+		[
+			"Poulton-le-Fylde railway station",
+			53.8484,
+			-2.9906
+		],
+		[
+			"Singleton railway station",
+			53.8242,
+			-2.9607
+		],
+		[
+			"St Annes-on-the-Sea railway station",
+			53.7531,
+			-3.029
+		]
+	],
+	"abu-dhabi-unitedarabemirates": [],
+	"riga-latvia": [
+		[
+			"Dreiliņi",
+			56.95,
+			24.1
+		],
+		[
+			"Rīga Pasažieru",
+			56.94628,
+			24.12183
+		],
+		[
+			"Riga Krasta rail station",
+			56.96556,
+			24.09694
+		],
+		[
+			"Torņakalns",
+			56.93249,
+			24.08948
+		],
+		[
+			"Kalpaka postenis",
+			56.94593,
+			24.14549
+		],
+		[
+			"Vagonu Parks",
+			56.94402,
+			24.15695
+		],
+		[
+			"Zemitāni train station",
+			56.9655,
+			24.15631
+		],
+		[
+			"Bieriņi / Bērnu slimnīca",
+			56.92194,
+			24.08161
+		],
+		[
+			"Zasulauks",
+			56.94175,
+			24.05155
+		],
+		[
+			"Nordeķi",
+			56.96083,
+			24.04556
+		],
+		[
+			"Atgāzene",
+			56.9175,
+			24.07917
+		],
+		[
+			"Depo",
+			56.94662,
+			24.04005
+		],
+		[
+			"Lāčupe railway station",
+			56.9697,
+			24.0459
+		],
+		[
+			"Čiekurkalns",
+			56.98028,
+			24.16861
+		]
+	],
+	"norwich-united-kingdom": [
+		[
+			"Norwich Victoria railway station",
+			52.6232,
+			1.2911
+		],
+		[
+			"Norwich City railway station",
+			52.6344,
+			1.28768
+		],
+		[
+			"Hellesdon railway station",
+			52.644,
+			1.2468
+		],
+		[
+			"Norwich railway station",
+			52.627,
+			1.307
+		],
+		[
+			"Trowse railway station",
+			52.6154,
+			1.3128
+		],
+		[
+			"Hethersett railway station",
+			52.5917,
+			1.2031
+		],
+		[
+			"Swainsthorpe railway station",
+			52.5627,
+			1.2706
+		],
+		[
+			"Whitlingham railway station",
+			52.6254,
+			1.3477
+		]
+	],
+	barcelona: [
+		[
+			"Barcelona-Plaça de Catalunya",
+			41.38689,
+			2.17
+		],
+		[
+			"Plaça de Catalunya station",
+			41.38694,
+			2.17
+		],
+		[
+			"Passeig de Gràcia station",
+			41.39319,
+			2.16624
+		],
+		[
+			"Arc de Triomf station",
+			41.39244,
+			2.18061
+		],
+		[
+			"Barcelona Estació de França",
+			41.384,
+			2.186
+		],
+		[
+			"Estación de Barcelona 1",
+			41.38242,
+			2.18673
+		],
+		[
+			"Bifurcació Vilanova station",
+			41.39807,
+			2.18693
+		],
+		[
+			"Parc de Montjuïc (Barcelona Metro)",
+			41.36861,
+			2.16306
+		],
+		[
+			"Espanya",
+			41.37504,
+			2.14916
+		],
+		[
+			"Sant Gervasi",
+			41.40083,
+			2.14694
+		],
+		[
+			"Barcelona Sants railway station",
+			41.37889,
+			2.14
+		],
+		[
+			"El Clot-Aragó railway station",
+			41.40897,
+			2.18722
+		],
+		[
+			"Muntanya station",
+			41.4097,
+			2.15494
+		],
+		[
+			"Bogatell station",
+			41.39591,
+			2.20525
+		]
+	],
+	"adelaide-australia": [
+		[
+			"Adelaide railway station",
+			-34.92111,
+			138.59556
+		],
+		[
+			"Mile End railway station",
+			-34.925,
+			138.58
+		],
+		[
+			"Torrens Bridge railway station",
+			-34.91218,
+			138.58216
+		],
+		[
+			"North Adelaide railway station",
+			-34.9061,
+			138.582
+		],
+		[
+			"Adelaide Parklands Terminal",
+			-34.9375,
+			138.58111
+		],
+		[
+			"Bowden railway station",
+			-34.90718,
+			138.5771
+		],
+		[
+			"Adelaide Showground railway station",
+			-34.9414,
+			138.583
+		],
+		[
+			"Ovingham railway station",
+			-34.8961,
+			138.584
+		],
+		[
+			"Goodwood railway station",
+			-34.9516,
+			138.585
+		],
+		[
+			"Croydon railway station",
+			-34.8971,
+			138.564
+		],
+		[
+			"Millswood railway station",
+			-34.9589,
+			138.59
+		],
+		[
+			"Dudley Park railway station",
+			-34.885,
+			138.583
+		],
+		[
+			"Clarence Park railway station",
+			-34.9615,
+			138.58
+		],
+		[
+			"Unley Park railway station",
+			-34.9665,
+			138.598
+		]
+	],
+	"crawley-united-kingdom": [
+		[
+			"Three Bridges railway station",
+			51.117,
+			-.161
+		],
+		[
+			"Crawley railway station",
+			51.112,
+			-.187
+		],
+		[
+			"Gatwick Airport railway station",
+			51.1565,
+			-.1609
+		],
+		[
+			"Ifield railway station",
+			51.116,
+			-.215
+		],
+		[
+			"Rowfant railway station",
+			51.1152,
+			-.1097
+		],
+		[
+			"Horley railway station",
+			51.169,
+			-.161
+		],
+		[
+			"Grange Road railway station",
+			51.1206,
+			-.0776
+		]
+	],
+	"bonn-germany": [
+		[
+			"Bonn UN Campus",
+			50.71456,
+			7.11802
+		],
+		[
+			"Bonn-Oberkassel station",
+			50.715,
+			7.15925
+		],
+		[
+			"Bonn-Beuel station",
+			50.7384,
+			7.12742
+		],
+		[
+			"Bonn Hauptbahnhof",
+			50.73194,
+			7.09694
+		],
+		[
+			"Rheinuferbahnhof",
+			50.7333,
+			7.09394
+		],
+		[
+			"Bonn-Vilich station",
+			50.75153,
+			7.13256
+		],
+		[
+			"Bonn-Bad Godesberg station",
+			50.68377,
+			7.1597
+		],
+		[
+			"Niederdollendorf station",
+			50.6953,
+			7.18111
+		],
+		[
+			"Hangelar railway station",
+			50.75689,
+			7.16903
+		],
+		[
+			"Bahnhof Bonn-Duisdorf",
+			50.7165,
+			7.04231
+		],
+		[
+			"Königswinter station",
+			50.67883,
+			7.19335
+		],
+		[
+			"Bonn-Mehlem station",
+			50.6692,
+			7.18161
+		]
+	],
+	"nha-trang-vietnam": [[
+		"Nha Trang Railway Station",
+		12.24833,
+		109.18417
+	]],
+	"essen-germany": [
+		[
+			"Essen Stadtwald station",
+			51.4226,
+			7.02332
+		],
+		[
+			"Essen-Hügel station",
+			51.4044,
+			7.00854
+		],
+		[
+			"Essen Süd station",
+			51.4399,
+			7.02314
+		],
+		[
+			"Essen-Frohnhausen station",
+			51.455,
+			6.96528
+		],
+		[
+			"Essen-Werden station",
+			51.38682,
+			6.99796
+		],
+		[
+			"Essen Nord railway station",
+			51.46201,
+			7.00902
+		],
+		[
+			"Essen-Borbeck Süd station",
+			51.4625,
+			6.95361
+		],
+		[
+			"Essen-Borbeck station",
+			51.47285,
+			6.94911
+		],
+		[
+			"Essen-Überruhr station",
+			51.42923,
+			7.06913
+		],
+		[
+			"Essen-Bergeborbeck station",
+			51.48022,
+			6.97693
+		],
+		[
+			"Mülheim (Ruhr) Hauptbahnhof",
+			51.43139,
+			6.88639
+		],
+		[
+			"Essen-Altenessen station",
+			51.4843,
+			7.00684
+		],
+		[
+			"Essen-Gerschede station",
+			51.48278,
+			6.94361
+		],
+		[
+			"Essen-Steele station",
+			51.4503,
+			7.0752
+		]
+	],
+	"rovinj-croatia": [],
+	"mexico-city-mexico": [[
+		"Buenavista Station",
+		19.4478,
+		-99.1522
+	]],
+	"burgos-spain": [
+		[
+			"Burgos-San Zoles train station",
+			42.33421,
+			-3.70772
+		],
+		[
+			"Estación del Norte",
+			42.3345,
+			-3.70771
+		],
+		[
+			"estación de Cardeñadijo",
+			42.30233,
+			-3.67078
+		],
+		[
+			"estación de Villagonzalo Pedernales",
+			42.29753,
+			-3.73019
+		],
+		[
+			"Burgos Rosa Manzano railway station",
+			42.37121,
+			-3.66635
+		],
+		[
+			"estación de Villarmero",
+			42.391,
+			-3.71292
+		]
+	],
+	"toledo-spain": [[
+		"Toledo railway station",
+		39.8624,
+		-4.01125
+	]],
+	"venice-italy": [[
+		"Venezia Porto Marghera railway station",
+		45.4725,
+		12.2561
+	]],
+	"heraklion-greece": [],
+	"badajoz-spain": [[
+		"Badajoz Railway Station",
+		38.89064,
+		-6.98178
+	]],
+	"zagreb-croatia": [
+		[
+			"Zagreb Main station",
+			45.80444,
+			15.9787
+		],
+		[
+			"Zagreb Zapadni kolodvor",
+			45.8092,
+			15.9539
+		],
+		[
+			"Zagreb Borongaj",
+			45.81647,
+			16.03774
+		],
+		[
+			"Zagreb Klara",
+			45.75793,
+			15.97832
+		]
+	],
+	"hue-vietnam": [[
+		"An Cựu",
+		16.45236,
+		107.59963
+	], [
+		"Hue Railway Station",
+		16.4565,
+		107.578
+	]],
+	"a-coruna-spain": [
+		[
+			"A Coruña railway station",
+			43.3526,
+			-8.40977
+		],
+		[
+			"estación de Elviña-Universidad",
+			43.33522,
+			-8.413
+		],
+		[
+			"estación de El Burgo-Santiago",
+			43.3179,
+			-8.36868
+		]
+	],
+	"seminyak-indonesia": [],
+	"lyon-france": [
+		[
+			"Lyon-Saint-Paul station",
+			45.76602,
+			4.82695
+		],
+		[
+			"Gare de Lyon-Jean Macé",
+			45.7451,
+			4.8416
+		],
+		[
+			"Gare de Lyon-Perrache",
+			45.74833,
+			4.82556
+		],
+		[
+			"Gare de Lyon-Part-Dieu",
+			45.76056,
+			4.85944
+		],
+		[
+			"Gare des Brotteaux",
+			45.7672,
+			4.8598
+		],
+		[
+			"Gare de Lyon-Gorge-de-Loup",
+			45.76609,
+			4.80479
+		],
+		[
+			"Gare de Lyon-Vaise",
+			45.78014,
+			4.80378
+		],
+		[
+			"Gare de Villeurbanne",
+			45.75597,
+			4.89171
+		],
+		[
+			"railway station of Écully-la-Demi-Lune",
+			45.76572,
+			4.77952
+		],
+		[
+			"Gare d'Oullins",
+			45.71742,
+			4.8132
+		],
+		[
+			"Gare d'Alaï",
+			45.75197,
+			4.77182
+		],
+		[
+			"Gare de Pierre-Bénite",
+			45.70685,
+			4.82435
+		],
+		[
+			"Gare de Saint-Fons",
+			45.70581,
+			4.85252
+		],
+		[
+			"Gare de Francheville",
+			45.73365,
+			4.76967
+		]
+	],
+	"motril-spain": [],
+	"edirne-turkiye": [
+		[
+			"Edirne Şehir railway station",
+			41.66905,
+			26.55509
+		],
+		[
+			"Edirne railway station",
+			41.65528,
+			26.58
+		],
+		[
+			"Former Edirne railway station",
+			41.66188,
+			26.54999
+		]
+	],
+	"leon-spain": [
+		[
+			"León-Matallana train station",
+			42.6024,
+			-5.57494
+		],
+		[
+			"León railway station",
+			42.5951,
+			-5.58204
+		],
+		[
+			"Ventas-San Mamés tram stop",
+			42.60989,
+			-5.57117
+		],
+		[
+			"Hospitales tram stop",
+			42.61308,
+			-5.56939
+		],
+		[
+			"Villa Romana train station",
+			42.62911,
+			-5.56133
+		],
+		[
+			"La Raya train station",
+			42.63811,
+			-5.557
+		],
+		[
+			"estación de Villaquilambre",
+			42.64689,
+			-5.55403
+		],
+		[
+			"Villaquilambre train station",
+			42.64689,
+			-5.55403
+		],
+		[
+			"estación de Villasinta",
+			42.65756,
+			-5.54931
+		]
+	],
+	"cartagena-spain": [
+		[
+			"Cartagena railway station",
+			37.60503,
+			-.975
+		],
+		[
+			"Cartagena-Plaza Bastarreche railway station",
+			37.60358,
+			-.97703
+		],
+		[
+			"Hospital Station",
+			37.60527,
+			-.96062
+		],
+		[
+			"Media Legua Station",
+			37.60786,
+			-.95367
+		],
+		[
+			"Vista Alegre",
+			37.60931,
+			-.94372
+		],
+		[
+			"Abrevadero",
+			37.60972,
+			-.93181
+		],
+		[
+			"estación de Alumbres",
+			37.60994,
+			-.91489
+		],
+		[
+			"Escombreras train station",
+			37.57489,
+			-.92558
+		]
+	],
+	"salzburg-austria": [
+		[
+			"Salzburg Lokalbahnhof",
+			47.81294,
+			13.04462
+		],
+		[
+			"Salzburg Mülln/Altstadt station",
+			47.80833,
+			13.03444
+		],
+		[
+			"Salzburg Hauptbahnhof",
+			47.81306,
+			13.04667
+		],
+		[
+			"Salzburg Itzling railway station",
+			47.81875,
+			13.04141
+		],
+		[
+			"Ischlerbahnstraße",
+			47.81858,
+			13.04703
+		],
+		[
+			"Salzburg Gnigl railway station",
+			47.81172,
+			13.06638
+		],
+		[
+			"Salzburg Maria Plain-Plainbrücke railway station",
+			47.82661,
+			13.03682
+		],
+		[
+			"Salzburg Parsch railway station",
+			47.79934,
+			13.073
+		],
+		[
+			"Hagenau railway station",
+			47.83237,
+			13.02937
+		],
+		[
+			"Salzburg-Aigen railway station",
+			47.7888,
+			13.0786
+		],
+		[
+			"Bahnhof Salzburg Liefering",
+			47.82421,
+			13.00059
+		],
+		[
+			"Bergheim bei Salzburg railway station",
+			47.83905,
+			13.02117
+		],
+		[
+			"Salzburg Kasern railway station",
+			47.83914,
+			13.06521
+		],
+		[
+			"Bergheim bei Salzburg Schlachthof railway station",
+			47.84623,
+			13.01229
+		]
+	],
+	"mostar-bosniaandherzegovina": [
+		[
+			"Mostar narrow gauge railway station",
+			43.34583,
+			17.8075
+		],
+		[
+			"Mostar railway station",
+			43.34861,
+			17.81389
+		],
+		[
+			"Raštani railway station",
+			43.37096,
+			17.82822
+		]
+	],
+	"pula-croatia": [[
+		"Pula railway station",
+		44.8798,
+		13.8475
+	]],
+	"lublin-poland": [
+		[
+			"Lublin Główny",
+			51.2316,
+			22.5686
+		],
+		[
+			"Lublin Północ railway station",
+			51.2428,
+			22.6003
+		],
+		[
+			"Lublin Tatary",
+			51.2376,
+			22.6193
+		],
+		[
+			"Lublin Zachodni",
+			51.21833,
+			22.50528
+		],
+		[
+			"Rudnik",
+			51.2881,
+			22.6247
+		]
+	],
+	"limoges-france": [[
+		"Gare de Limoges-Bénédictins",
+		45.83611,
+		1.2675
+	], [
+		"Gare de Limoges-Montjovis",
+		45.83838,
+		1.25148
+	]],
+	"cullera-spain": [[
+		"Cullera train station",
+		39.1778,
+		-.26324
+	], [
+		"Sueca train station",
+		39.2056,
+		-.30781
+	]],
+	"kobe-japan": [
+		[
+			"Motomachi Station",
+			34.68956,
+			135.18739
+		],
+		[
+			"Tachibana Station",
+			34.6896,
+			135.187
+		],
+		[
+			"Kobe-Sannomiya Station",
+			34.69444,
+			135.19528
+		],
+		[
+			"Sannomiya Station",
+			34.69472,
+			135.195
+		],
+		[
+			"Hanakuma Station",
+			34.68612,
+			135.18153
+		],
+		[
+			"Nishi-Motomachi Station",
+			34.6839,
+			135.17959
+		],
+		[
+			"Kōbe Station",
+			34.67944,
+			135.17806
+		],
+		[
+			"Kasuganomichi Station",
+			34.703,
+			135.2053
+		],
+		[
+			"Shin‐Kobe Station",
+			34.70667,
+			135.19583
+		],
+		[
+			"Kōsoku Kōbe Station",
+			34.67936,
+			135.17444
+		],
+		[
+			"JR West Shin‐Kobe Station",
+			34.70732,
+			135.19703
+		],
+		[
+			"Shinkaichi Station",
+			34.67598,
+			135.16929
+		],
+		[
+			"Higashi-Kobe",
+			34.7025,
+			135.217
+		],
+		[
+			"Minatogawa Station",
+			34.67879,
+			135.16662
+		]
+	],
+	"eisenach-germany": [
+		[
+			"Eisenach Central Station",
+			50.97678,
+			10.33201
+		],
+		[
+			"Förtha (Kr Eisenach) railway station",
+			50.93886,
+			10.26201
+		],
+		[
+			"Hörschel railway stop",
+			51.00778,
+			10.23313
+		],
+		[
+			"Wutha railway station",
+			50.9571,
+			10.3966
+		]
+	],
+	"stuttgart-germany": [
+		[
+			"Stuttgart Nord station",
+			48.8036,
+			9.18778
+		],
+		[
+			"Stuttgart Central Station",
+			48.78389,
+			9.18167
+		],
+		[
+			"New Stuttgart Central Station",
+			48.784,
+			9.183
+		],
+		[
+			"Stuttgart Hbf - Abstellbahnhof",
+			48.79969,
+			9.19838
+		],
+		[
+			"Stuttgart-Feuerbach station",
+			48.8136,
+			9.16889
+		],
+		[
+			"Stadtbahnhof Stuttgart-Feuerbach",
+			48.8141,
+			9.1681
+		],
+		[
+			"Stuttgart-Bad Cannstatt",
+			48.8017,
+			9.21778
+		],
+		[
+			"Stuttgart-Zuffenhausen station",
+			48.8292,
+			9.16667
+		],
+		[
+			"Stuttgart-Münster station",
+			48.8206,
+			9.21597
+		],
+		[
+			"Stuttgart Neuwirtshaus station",
+			48.8339,
+			9.15251
+		],
+		[
+			"Stuttgart Nürnberger Straße station",
+			48.8061,
+			9.23472
+		],
+		[
+			"Stuttgart-Zazenhausen station",
+			48.83604,
+			9.1995
+		],
+		[
+			"Stuttgart Neckarpark station",
+			48.7922,
+			9.24083
+		],
+		[
+			"Korntal station",
+			48.8261,
+			9.12111
+		]
+	],
+	"sabadell-spain": [
+		[
+			"Sabadell Plaça Major station",
+			41.54745,
+			2.10881
+		],
+		[
+			"La Creu Alta station",
+			41.555,
+			2.10049
+		],
+		[
+			"Sabadell Centre Train Station",
+			41.5464,
+			2.11562
+		],
+		[
+			"Sabadell Nord railway station (Adif)",
+			41.56194,
+			2.09619
+		],
+		[
+			"Sabadell Nord station (FGC)",
+			41.56231,
+			2.09592
+		],
+		[
+			"Sant Quirze station",
+			41.53005,
+			2.08863
+		],
+		[
+			"Sabadell Sud station",
+			41.5287,
+			2.10541
+		],
+		[
+			"Sabadell Can Llong station",
+			41.5634,
+			2.08173
+		],
+		[
+			"estación de Castellarnau",
+			41.56378,
+			2.07553
+		],
+		[
+			"Sabadell Parc del Nord railway station",
+			41.57093,
+			2.09054
+		],
+		[
+			"Can Llobet station",
+			41.5234,
+			2.12484
+		],
+		[
+			"Barberà del Vallès station",
+			41.51357,
+			2.11847
+		],
+		[
+			"Autonomous University railway station",
+			41.50297,
+			2.10245
+		],
+		[
+			"Santiga station",
+			41.5237,
+			2.14725
+		]
+	],
+	"ulm-germany": [
+		[
+			"Ulm Ost",
+			48.40708,
+			9.99461
+		],
+		[
+			"Ulm Hauptbahnhof",
+			48.4,
+			9.98333
+		],
+		[
+			"Ulm Rangierbahnhof",
+			48.4041,
+			9.96958
+		],
+		[
+			"Ulm-Söflingen station",
+			48.4029,
+			9.9588
+		],
+		[
+			"Thalfingen (b Ulm) station",
+			48.43299,
+			10.04787
+		],
+		[
+			"Bahnhof Burlafingen",
+			48.40949,
+			10.06792
+		],
+		[
+			"Gerlenhofen",
+			48.35128,
+			10.03726
+		]
+	],
+	"munster-germany": [
+		[
+			"Münster Central Station",
+			51.95667,
+			7.635
+		],
+		[
+			"Münster Ost railway station",
+			51.95252,
+			7.63591
+		],
+		[
+			"Münster-Zentrum Nord railway station",
+			51.98417,
+			7.63861
+		],
+		[
+			"Münster-Roxel station",
+			51.94625,
+			7.52643
+		],
+		[
+			"Roxel railway station",
+			51.94748,
+			7.52358
+		]
+	],
+	"nadi-fiji": [],
+	"lausanne-switzerland": [
+		[
+			"Montétan railway station",
+			46.53034,
+			6.61318
+		],
+		[
+			"Lausanne-Chauderon railway station",
+			46.52322,
+			6.62607
+		],
+		[
+			"Prilly-Malley railway station",
+			46.52669,
+			6.60262
+		],
+		[
+			"Union-Prilly railway station",
+			46.53472,
+			6.60985
+		],
+		[
+			"Lausanne-Flon railway station",
+			46.5208,
+			6.63034
+		],
+		[
+			"Lausanne railway station",
+			46.51678,
+			6.6291
+		],
+		[
+			"Prilly-Chasseur railway station",
+			46.53965,
+			6.60743
+		],
+		[
+			"Cery-Fleur-de-Lys railway station",
+			46.54458,
+			6.60501
+		],
+		[
+			"Jouxtens-Mézery railway station",
+			46.54834,
+			6.60169
+		],
+		[
+			"Railway station SBB",
+			46.53704,
+			6.57894
+		],
+		[
+			"Pully-Nord railway station",
+			46.51467,
+			6.65799
+		],
+		[
+			"Pully railway station",
+			46.51093,
+			6.65947
+		],
+		[
+			"Romanel-sur-Lausanne railway station",
+			46.56247,
+			6.60317
+		],
+		[
+			"Vernand-Camarès railway station",
+			46.57094,
+			6.6048
+		]
+	],
+	"jeddah-saudiarabia": [],
+	"bregenz-austria": [
+		[
+			"Bahnhof Bregenz",
+			47.50288,
+			9.73958
+		],
+		[
+			"Bahnhof Bregenz-Hafen",
+			47.50616,
+			9.74839
+		],
+		[
+			"Haltestelle Bregenz-Riedenburg",
+			47.49357,
+			9.72124
+		],
+		[
+			"Lauterach Unterfeld railway station",
+			47.48095,
+			9.71561
+		],
+		[
+			"Bahnhof Lauterach",
+			47.47625,
+			9.7246
+		],
+		[
+			"Bahnhof Lochau-Hörbranz",
+			47.52911,
+			9.74287
+		],
+		[
+			"Hard-Fussach railway station",
+			47.47952,
+			9.68795
+		],
+		[
+			"Wolfurt railway station",
+			47.45704,
+			9.74099
+		],
+		[
+			"Bahnhof Schwarzach",
+			47.44611,
+			9.75426
+		],
+		[
+			"Lindau-Insel",
+			47.54407,
+			9.68121
+		]
+	],
+	"montevideo-uruguay": [
+		[
+			"Estación Cordón",
+			-34.89995,
+			-56.17861
+		],
+		[
+			"Estación Central",
+			-34.89404,
+			-56.19491
+		],
+		[
+			"Estación Lorenzo Carnelli",
+			-34.87861,
+			-56.20222
+		]
+	],
+	"playa-blanca-spain": [],
+	"teruel-spain": [
+		[
+			"Teruel train station",
+			40.34106,
+			-1.11022
+		],
+		[
+			"estación de Concud",
+			40.37914,
+			-1.14814
+		],
+		[
+			"estación de Caparrates",
+			40.33144,
+			-1.03372
+		]
+	],
+	"breda-netherlands": [
+		[
+			"Breda railway station",
+			51.595,
+			4.78
+		],
+		[
+			"Breda-Prinsenbeek railway station",
+			51.60583,
+			4.72111
+		],
+		[
+			"Beek railway station",
+			51.61509,
+			4.71451
+		],
+		[
+			"Liesbosch",
+			51.58926,
+			4.6939
+		],
+		[
+			"Dorst",
+			51.59339,
+			4.86103
+		]
+	],
+	"nancy-france": [
+		[
+			"Gare de Nancy-Ville",
+			48.68972,
+			6.17361
+		],
+		[
+			"Gare de Jarville-la-Malgrange",
+			48.67009,
+			6.20256
+		],
+		[
+			"Gare de Champigneulles",
+			48.73526,
+			6.16904
+		],
+		[
+			"Gare d'Houdemont",
+			48.64547,
+			6.17974
+		],
+		[
+			"Gare de Laneuveville-devant-Nancy",
+			48.6555,
+			6.22803
+		]
+	],
+	"lund-sweden": [
+		[
+			"Lund Central Station",
+			55.7067,
+			13.1863
+		],
+		[
+			"Lund V railway station",
+			55.70396,
+			13.1847
+		],
+		[
+			"Lund S railway station",
+			55.69599,
+			13.19185
+		],
+		[
+			"Klostergården railway station",
+			55.6945,
+			13.1715
+		],
+		[
+			"Stångby station",
+			55.75115,
+			13.2002
+		],
+		[
+			"Hardeberga railway station",
+			55.71295,
+			13.29242
+		],
+		[
+			"Vallkärra railway station",
+			55.74418,
+			13.15018
+		],
+		[
+			"Uppåkra railway station",
+			55.67411,
+			13.13661
+		],
+		[
+			"Hjärup railway station",
+			55.67358,
+			13.13641
+		],
+		[
+			"Fjälie railway station",
+			55.72548,
+			13.10797
+		]
+	],
+	"sapporo-japan": [
+		[
+			"Sapporo Station",
+			43.06861,
+			141.35078
+		],
+		[
+			"Naebo Station",
+			43.06858,
+			141.37331
+		],
+		[
+			"Sōen Station",
+			43.0708,
+			141.332
+		],
+		[
+			"Hachiken Station",
+			43.08596,
+			141.31908
+		],
+		[
+			"Kotoni Station",
+			43.08139,
+			141.3075
+		],
+		[
+			"Shiroishi Station",
+			43.05472,
+			141.41361
+		],
+		[
+			"Shinkawa Station",
+			43.0982,
+			141.3234
+		],
+		[
+			"Hassamu-Chūō Station",
+			43.0889,
+			141.2946
+		],
+		[
+			"Shin-Kotoni Station",
+			43.113,
+			141.3352
+		],
+		[
+			"Heiwa Station",
+			43.0467,
+			141.4384
+		]
+	],
+	"karlsruhe-germany": [
+		[
+			"Karlsruhe Hbf Westgruppe",
+			48.98599,
+			8.38564
+		],
+		[
+			"Karlsruhe Central Station",
+			48.99389,
+			8.40056
+		],
+		[
+			"Alter Bahnhof Karlsruhe",
+			49.005,
+			8.406
+		]
+	],
+	"riva-del-garda-italy": [],
+	"ferrara-italy": [
+		[
+			"Ferrara railway station",
+			44.84278,
+			11.60389
+		],
+		[
+			"Ferrara Porta Reno train station",
+			44.825,
+			11.6056
+		],
+		[
+			"Ferrara Aleotti railway station",
+			44.8275,
+			11.6001
+		],
+		[
+			"Ferrara Città del Ragazzo railway station",
+			44.81559,
+			11.66023
+		],
+		[
+			"Porotto railway station",
+			44.84632,
+			11.54634
+		],
+		[
+			"Occhiobello train station",
+			44.8993,
+			11.6212
+		]
+	],
+	"swinoujscie-poland": [
+		[
+			"Świnoujście railway station",
+			53.9047,
+			14.2667
+		],
+		[
+			"Świnoujście Port railway station",
+			53.90122,
+			14.26022
+		],
+		[
+			"Świnoujście Warszów railway station",
+			53.9014,
+			14.2861
+		],
+		[
+			"Seebad Ahlbeck railway station",
+			53.9355,
+			14.18781
+		],
+		[
+			"Świnoujście Przytór",
+			53.8972,
+			14.3372
+		],
+		[
+			"Seebad Heringsdorf railway station",
+			53.9492,
+			14.17
+		]
+	],
+	"chester-united-kingdom": [
+		[
+			"Chester railway station",
+			53.1968,
+			-2.8798
+		],
+		[
+			"Bache railway station",
+			53.208,
+			-2.8914
+		],
+		[
+			"Black Dog railway station",
+			53.1625,
+			-2.8164
+		]
+	],
+	"aranjuez-spain": [
+		[
+			"Aranjuez",
+			40.03487,
+			-3.61828
+		],
+		[
+			"Ontígola Station",
+			40.00172,
+			-3.57378
+		],
+		[
+			"Seseña train station",
+			40.09596,
+			-3.62878
+		]
+	],
+	"boston-unitedstates": [
+		[
+			"South Station",
+			42.35194,
+			-71.05528
+		],
+		[
+			"Back Bay station",
+			42.3476,
+			-71.0753
+		],
+		[
+			"North Union Station",
+			42.3657,
+			-71.061
+		],
+		[
+			"Eastern Railroad Depot (Boston)",
+			42.36536,
+			-71.06258
+		],
+		[
+			"North Station",
+			42.3663,
+			-71.06222
+		],
+		[
+			"Newmarket station",
+			42.32811,
+			-71.06526
+		],
+		[
+			"Ruggles station",
+			42.3366,
+			-71.0892
+		],
+		[
+			"JFK/UMass station",
+			42.32056,
+			-71.05222
+		],
+		[
+			"MBTA Commuter Rail Maintenance Facility",
+			42.375,
+			-71.0758
+		],
+		[
+			"Uphams Corner station",
+			42.3191,
+			-71.0686
+		],
+		[
+			"Lansdowne station",
+			42.3476,
+			-71.1006
+		],
+		[
+			"Chelsea station",
+			42.39676,
+			-71.04042
+		],
+		[
+			"Four Corners/Geneva station",
+			42.30328,
+			-71.07835
+		],
+		[
+			"West Station",
+			42.3548,
+			-71.1216
+		]
+	],
+	"incheon-south-korea": [[
+		"Unseo Station",
+		37.49278,
+		126.49361
+	], [
+		"Yongyu Station",
+		37.425,
+		126.425
+	]],
+	"chaves-portugal": [[
+		"Chaves train station",
+		41.7458,
+		-7.46929
+	], [
+		"Parada de Fonte Nova",
+		41.73633,
+		-7.47841
+	]],
+	"chemnitz-germany": [
+		[
+			"Chemnitz Süd railway station",
+			50.8237,
+			12.9268
+		],
+		[
+			"Chemnitz Hauptbahnhof",
+			50.84016,
+			12.93059
+		],
+		[
+			"Chemnitz Küchwald railway station",
+			50.85568,
+			12.91238
+		],
+		[
+			"Chemnitz-Siegmar railway station",
+			50.8156,
+			12.843
+		],
+		[
+			"Einsiedel railway station",
+			50.77294,
+			12.97281
+		]
+	],
+	"szklarska-poreba-poland": [
+		[
+			"Szklarska Poręba Górna",
+			50.8325,
+			15.5189
+		],
+		[
+			"Szklarska Poręba Huta (train station)",
+			50.8308,
+			15.5017
+		],
+		[
+			"Szklarska Poręba Średnia train station",
+			50.8381,
+			15.5403
+		],
+		[
+			"Szklarska Poręba Dolna train station",
+			50.8489,
+			15.5575
+		],
+		[
+			"Górzyniec",
+			50.8594,
+			15.5697
+		],
+		[
+			"Piechowice",
+			50.8514,
+			15.5917
+		],
+		[
+			"Polana Jakuszycka",
+			50.81474,
+			15.42975
+		]
+	],
+	"le-touquet-paris-plage-france": [[
+		"Gare d'Étaples-Le Touquet",
+		50.51709,
+		1.64251
+	], [
+		"Dannes - Camiers",
+		50.57597,
+		1.61487
+	]],
+	"flensburg-germany": [
+		[
+			"Flensburg station",
+			54.77466,
+			9.43678
+		],
+		[
+			"Flensburg Weiche station",
+			54.75834,
+			9.39897
+		],
+		[
+			"Padborg Station",
+			54.82418,
+			9.35842
+		]
+	],
+	"albacete-spain": [[
+		"Albacete-Los Llanos Railway Station",
+		38.99981,
+		-1.84839
+	], [
+		"Albacete train station",
+		38.99967,
+		-1.84786
+	]],
+	"brisbane-australia": [
+		[
+			"Central railway station",
+			-27.4659,
+			153.026
+		],
+		[
+			"Albert Street railway station",
+			-27.47186,
+			153.02748
+		],
+		[
+			"Roma Street railway station",
+			-27.4652,
+			153.0191
+		],
+		[
+			"Fortitude Valley railway station",
+			-27.456,
+			153.0337
+		],
+		[
+			"South Brisbane railway station",
+			-27.475,
+			153.0186
+		],
+		[
+			"Normanby railway station",
+			-27.45901,
+			153.0152
+		],
+		[
+			"Exhibition railway station",
+			-27.45022,
+			153.03083
+		],
+		[
+			"South Bank railway station",
+			-27.482,
+			153.023
+		],
+		[
+			"Woolloongabba railway station",
+			-27.48557,
+			153.0355
+		],
+		[
+			"Bowen Hills railway station",
+			-27.4454,
+			153.0376
+		],
+		[
+			"Milton railway station",
+			-27.4689,
+			153.0052
+		],
+		[
+			"Boggo Road railway station",
+			-27.4934,
+			153.0302
+		],
+		[
+			"Park Road railway station",
+			-27.49365,
+			153.03074
+		],
+		[
+			"Windsor railway station",
+			-27.43528,
+			153.02917
+		]
+	],
+	"manchester-unitedkingdom": [
+		[
+			"Manchester Piccadilly station",
+			53.477,
+			-2.23
+		],
+		[
+			"Manchester Mayfield railway station",
+			53.4758,
+			-2.22806
+		],
+		[
+			"Manchester Oxford Road railway station",
+			53.474,
+			-2.24225
+		],
+		[
+			"Ancoats railway station",
+			53.4781,
+			-2.22176
+		],
+		[
+			"Manchester Oldham Road railway station",
+			53.4872,
+			-2.22885
+		],
+		[
+			"Manchester Exchange railway station",
+			53.4861,
+			-2.2463
+		],
+		[
+			"Deansgate railway station",
+			53.4742,
+			-2.2508
+		],
+		[
+			"Manchester Victoria station",
+			53.48742,
+			-2.24453
+		],
+		[
+			"Manchester Victoria Reversing Sidings",
+			53.4896,
+			-2.237
+		],
+		[
+			"Salford Central railway station",
+			53.4828,
+			-2.2558
+		],
+		[
+			"Ardwick railway station",
+			53.4711,
+			-2.2131
+		],
+		[
+			"Ordsall Lane railway station",
+			53.4785,
+			-2.2635
+		],
+		[
+			"Oldfield Road railway station",
+			53.4816,
+			-2.2659
+		],
+		[
+			"Cornbrook railway station",
+			53.4693,
+			-2.2686
+		]
+	],
+	"osnabruck-germany": [
+		[
+			"Osnabrück Central Station",
+			52.2728,
+			8.06111
+		],
+		[
+			"Osnabrück Altstadt station",
+			52.2811,
+			8.04561
+		],
+		[
+			"Osnabrück-Rosenplatz station",
+			52.2637,
+			8.0514
+		],
+		[
+			"Bahnhof Osnabrück-Eversburg",
+			52.30167,
+			8.00399
+		],
+		[
+			"Osnabrück-Sutthausen railway station",
+			52.23194,
+			8.02139
+		]
+	],
+	"da-nang-vietnam": [[
+		"Da Nang Railway Station",
+		16.0716,
+		108.2092
+	], [
+		"Thanh Khe Railway Station",
+		16.06636,
+		108.18238
+	]],
+	"mechelen-belgium": [
+		[
+			"Mechelen-Nekkerspoel railway station",
+			51.03,
+			4.49028
+		],
+		[
+			"Mechelen railway station",
+			51.0175,
+			4.48361
+		],
+		[
+			"Muizen railway station",
+			51.00861,
+			4.51333
+		],
+		[
+			"Hofstade railway station",
+			50.9896,
+			4.5009
+		],
+		[
+			"Sint-Katelijne-Waver railway station",
+			51.07,
+			4.49639
+		],
+		[
+			"Hever railway station",
+			50.99769,
+			4.5377
+		],
+		[
+			"Weerde railway station",
+			50.97806,
+			4.47194
+		]
+	],
+	"hasselt-belgium": [
+		[
+			"Hasselt railway station",
+			50.93056,
+			5.32778
+		],
+		[
+			"Alken railway station",
+			50.88694,
+			5.29222
+		],
+		[
+			"Diepenbeek railway station",
+			50.91056,
+			5.42056
+		],
+		[
+			"Zonhoven railway station",
+			50.98962,
+			5.34892
+		]
+	],
+	"troyes-france": [[
+		"Gare de Troyes",
+		48.29589,
+		4.06479
+	]],
+	"conwy-united-kingdom": [
+		[
+			"Glan Conwy railway station",
+			53.267,
+			-3.798
+		],
+		[
+			"Conwy railway station",
+			53.28,
+			-3.831
+		],
+		[
+			"Tal-y-Cafn railway station",
+			53.228,
+			-3.818
+		],
+		[
+			"Llandudno Junction railway station",
+			53.284,
+			-3.809
+		],
+		[
+			"Deganwy railway station",
+			53.2946,
+			-3.8333
+		],
+		[
+			"Penmaenmawr railway station",
+			53.27042,
+			-3.92354
+		]
+	],
+	"torrevieja-spain": [[
+		"Las Moreras",
+		38.03428,
+		-.72923
+	]],
+	"johannesburg-southafrica": [
+		[
+			"Doornfontein",
+			-26.1971,
+			28.05472
+		],
+		[
+			"Ellis Park Station",
+			-26.19845,
+			28.05862
+		],
+		[
+			"Jeppe",
+			-26.20283,
+			28.06224
+		],
+		[
+			"Johannesburg Park Station",
+			-26.19722,
+			28.04194
+		]
+	],
+	"maastricht-netherlands": [
+		[
+			"Maastricht railway station",
+			50.84972,
+			5.70556
+		],
+		[
+			"Maastricht Randwyck railway station",
+			50.83778,
+			5.7175
+		],
+		[
+			"Maastricht Noord railway station",
+			50.87083,
+			5.71778
+		],
+		[
+			"Meerssen railway station",
+			50.88278,
+			5.75056
+		],
+		[
+			"Bunde railway station",
+			50.89694,
+			5.73639
+		]
+	],
+	"dubrovnik-croatia": [],
+	"viana-do-castelo-portugal": [
+		[
+			"Viana do Castelo train station",
+			41.6952,
+			-8.83133
+		],
+		[
+			"Povoença",
+			41.70172,
+			-8.84744
+		],
+		[
+			"Areia-Darque",
+			41.68406,
+			-8.79929
+		],
+		[
+			"Areosa",
+			41.72117,
+			-8.85561
+		],
+		[
+			"Darque train station",
+			41.6802,
+			-8.78185
+		],
+		[
+			"Troviscoso",
+			41.73438,
+			-8.86023
+		]
+	],
+	"wismar-germany": [
+		[
+			"Wismar railway station",
+			53.8967,
+			11.4692
+		],
+		[
+			"Dorf Mecklenburg railway station",
+			53.8429,
+			11.4714
+		],
+		[
+			"Hornstorf railway station",
+			53.90866,
+			11.54335
+		]
+	],
+	"athens-greece": [
+		[
+			"Athens railway station",
+			37.99294,
+			23.72006
+		],
+		[
+			"Rouf railway station",
+			37.9738,
+			23.7041
+		],
+		[
+			"Tavros railway station",
+			37.96884,
+			23.6936
+		],
+		[
+			"Agioi Anargyroi railway station",
+			38.02186,
+			23.71843
+		],
+		[
+			"Rentis railway station",
+			37.96246,
+			23.66851
+		],
+		[
+			"Pyrgos Vasilissis railway station",
+			38.0396,
+			23.7274
+		],
+		[
+			"Lefka railway station",
+			37.9554,
+			23.654
+		]
+	],
+	"binz-germany": [
+		[
+			"Ostseebad Binz railway station",
+			54.405,
+			13.60028
+		],
+		[
+			"Binz LB railway station",
+			54.3923,
+			13.611
+		],
+		[
+			"Garftitz railway station",
+			54.3777,
+			13.6387
+		],
+		[
+			"Seelvitz railway station",
+			54.3675,
+			13.5612
+		],
+		[
+			"Prora railway station",
+			54.44389,
+			13.56472
+		],
+		[
+			"Sellin (Rügen) Ost railway station",
+			54.3713,
+			13.6985
+		]
+	],
+	"nimes-france": [
+		[
+			"Gare de Nîmes",
+			43.8325,
+			4.36639
+		],
+		[
+			"Saint-Césaire station",
+			43.81364,
+			4.32781
+		],
+		[
+			"Gare de Milhaud",
+			43.78855,
+			4.30323
+		]
+	],
+	"matsumoto-japan": [
+		[
+			"Matsumoto Station",
+			36.2305,
+			137.9639
+		],
+		[
+			"Nishi-Matsumoto Station",
+			36.22713,
+			137.96344
+		],
+		[
+			"Kita-Matsumoto Station",
+			36.2368,
+			137.9608
+		],
+		[
+			"Nagisa Station",
+			36.22713,
+			137.95626
+		],
+		[
+			"Shinano-Arai Station",
+			36.22892,
+			137.94902
+		],
+		[
+			"Ōniwa Station",
+			36.22706,
+			137.94165
+		],
+		[
+			"Minami-Matsumoto Station",
+			36.20979,
+			137.96895
+		],
+		[
+			"Shimauchi Station",
+			36.2468,
+			137.9448
+		],
+		[
+			"Shimatakamatsu Station",
+			36.2462,
+			137.9318
+		],
+		[
+			"Shimonii Station",
+			36.22513,
+			137.92225
+		],
+		[
+			"Hirata Station",
+			36.19167,
+			137.96278
+		],
+		[
+			"Azusabashi Station",
+			36.25062,
+			137.91805
+		],
+		[
+			"Kitanii-Matsumotodaigakumae Station",
+			36.21976,
+			137.91391
+		],
+		[
+			"Niimura Station",
+			36.21626,
+			137.90506
+		]
+	],
+	"darwin-australia": [[
+		"Darwin railway station",
+		-12.4725,
+		130.904
+	]],
+	"cannes-france": [
+		[
+			"Gare de Cannes",
+			43.55389,
+			7.01944
+		],
+		[
+			"Gare de Cannes-La Bocca",
+			43.54889,
+			6.98667
+		],
+		[
+			"Gare du Bosquet",
+			43.5514,
+			6.9816
+		],
+		[
+			"Gare de La Frayère",
+			43.55809,
+			6.97211
+		],
+		[
+			"Gare de Golfe-Juan-Vallauris",
+			43.56641,
+			7.07373
+		],
+		[
+			"Gare de Ranguin",
+			43.56915,
+			6.9693
+		]
+	],
+	"niagara-falls-canada": [
+		[
+			"Niagara Falls railway station",
+			43.1088,
+			-79.0634
+		],
+		[
+			"Niagara Falls Station and Customhouse Interpretive Center",
+			43.10972,
+			-79.05583
+		],
+		[
+			"Old Niagara Falls, NY Station",
+			43.1135,
+			-79.0318
+		]
+	],
+	"guildford-unitedkingdom": [
+		[
+			"London Road (Guildford) railway station",
+			51.2408,
+			-.56528
+		],
+		[
+			"Guildford railway station",
+			51.237,
+			-.58
+		],
+		[
+			"Shalford railway station",
+			51.214,
+			-.567
+		],
+		[
+			"Chilworth railway station",
+			51.215,
+			-.525
+		],
+		[
+			"Bramley & Wonersh railway station",
+			51.1962,
+			-.55592
+		],
+		[
+			"Farncombe railway station",
+			51.19716,
+			-.60453
+		],
+		[
+			"Clandon railway station",
+			51.264,
+			-.503
+		],
+		[
+			"Worplesdon railway station",
+			51.289,
+			-.583
+		],
+		[
+			"Godalming railway station",
+			51.18652,
+			-.61885
+		],
+		[
+			"Wanborough railway station",
+			51.245,
+			-.668
+		]
+	],
+	"metz-france": [
+		[
+			"Gare de Metz-Ville",
+			49.1098,
+			6.1775
+		],
+		[
+			"Gare de Metz-Nord",
+			49.13693,
+			6.16795
+		],
+		[
+			"Gare de Woippy",
+			49.14887,
+			6.15596
+		],
+		[
+			"Gare de Peltre",
+			49.07359,
+			6.22245
+		]
+	],
+	"monterrey-mexico": [],
+	"siem-reap-cambodia": [],
+	london: [
+		[
+			"Charing Cross railway station",
+			51.5075,
+			-.12361
+		],
+		[
+			"Tottenham Court Road",
+			51.51611,
+			-.13083
+		],
+		[
+			"London Waterloo station",
+			51.5031,
+			-.1132
+		],
+		[
+			"Bond Street station",
+			51.51344,
+			-.14843
+		],
+		[
+			"London Waterloo East railway station",
+			51.50426,
+			-.10822
+		],
+		[
+			"Blackfriars Bridge railway station",
+			51.5083,
+			-.10306
+		],
+		[
+			"Blackfriars station",
+			51.51167,
+			-.10306
+		],
+		[
+			"London Victoria station",
+			51.495,
+			-.14358
+		],
+		[
+			"City Thameslink railway station",
+			51.5163,
+			-.1037
+		],
+		[
+			"Holborn Viaduct railway station",
+			51.5162,
+			-.1036
+		],
+		[
+			"Farringdon station",
+			51.52056,
+			-.105
+		],
+		[
+			"Euston Station",
+			51.5284,
+			-.1331
+		],
+		[
+			"Clerkenwell tube station",
+			51.5254,
+			-.1107
+		],
+		[
+			"Borough Road railway station",
+			51.499,
+			-.09974
+		]
+	],
+	"tangier-morocco": [[
+		"Tanger-Ville railway station",
+		35.77161,
+		-5.7862
+	], [
+		"Tanger-Morora",
+		35.7527,
+		-5.7872
+	]],
+	"shanghai-china": [
+		[
+			"Shanghai railway station",
+			31.25155,
+			121.45045
+		],
+		[
+			"South Yanggao Road station",
+			31.19,
+			121.51861
+		],
+		[
+			"Guangxinlu Railway Station",
+			31.26096,
+			121.4173
+		],
+		[
+			"Yangsi station",
+			31.16306,
+			121.48889
+		]
+	],
+	"bydgoszcz-poland": [
+		[
+			"Bydgoszcz Główna railway station",
+			53.13528,
+			17.99139
+		],
+		[
+			"Bydgoszcz Leśna",
+			53.1439,
+			18.0322
+		],
+		[
+			"Rynkowo Wiadukt train station",
+			53.1522,
+			18.0053
+		],
+		[
+			"Bydgoszcz Bielawy",
+			53.1319,
+			18.0533
+		],
+		[
+			"Bydgoszcz Zachód",
+			53.1356,
+			17.9506
+		],
+		[
+			"Bydgoszcz Wschód",
+			53.1281,
+			18.0839
+		],
+		[
+			"Trzciniec train station",
+			53.0853,
+			17.9485
+		],
+		[
+			"Opławiec",
+			53.1672,
+			17.9514
+		],
+		[
+			"Bydgoszcz Osowa Góra",
+			53.1481,
+			17.9125
+		]
+	],
+	"sanur-indonesia": [],
+	"jaca-spain": [[
+		"Estación de Jaca",
+		42.5776,
+		-.53857
+	], [
+		"Castiello-Pueblo",
+		42.6271,
+		-.54521
+	]],
+	"sirmione-italy": [[
+		"Desenzano del Garda-Sirmione railway station",
+		45.46278,
+		10.53639
+	]],
+	"aviles-spain": [
+		[
+			"Avilés railway station",
+			43.5612,
+			-5.9228
+		],
+		[
+			"Avilés Apeadero train station",
+			43.55466,
+			-5.91749
+		],
+		[
+			"La Rocica train station",
+			43.5471,
+			-5.90468
+		],
+		[
+			"Cristalería train station",
+			43.57558,
+			-5.92949
+		],
+		[
+			"Llaranes train station",
+			43.55427,
+			-5.89666
+		],
+		[
+			"Raíces train station",
+			43.57637,
+			-5.93992
+		],
+		[
+			"Villalegre railway station",
+			43.5402,
+			-5.90219
+		],
+		[
+			"Salinas train station",
+			43.57039,
+			-5.95663
+		],
+		[
+			"Oficinas train station",
+			43.55439,
+			-5.88264
+		],
+		[
+			"San Juan de Nieva railway station",
+			43.5879,
+			-5.93131
+		],
+		[
+			"Los Campos train station",
+			43.5368,
+			-5.88512
+		],
+		[
+			"Trasona train station",
+			43.55181,
+			-5.87442
+		],
+		[
+			"Piedrasblancas train station",
+			43.55658,
+			-5.97552
+		],
+		[
+			"Gudín Laminación train station",
+			43.55231,
+			-5.8654
+		]
+	],
+	"naha-japan": [],
+	"ubeda-spain": [[
+		"Úbeda train station",
+		37.99882,
+		-3.37334
+	], [
+		"Tribiño train station",
+		38.00728,
+		-3.31244
+	]],
+	"olhao-portugal": [
+		[
+			"São Bartolomeu Halt",
+			37.02873,
+			-7.84422
+		],
+		[
+			"Olhão train station",
+			37.0303,
+			-7.83984
+		],
+		[
+			"Meia Légua Halt",
+			37.02717,
+			-7.87381
+		],
+		[
+			"Marim Halt",
+			37.03969,
+			-7.80164
+		],
+		[
+			"Garganta Halt",
+			37.02381,
+			-7.89742
+		],
+		[
+			"Rio Seco Halt",
+			37.02135,
+			-7.90782
+		],
+		[
+			"Bias halt",
+			37.0422,
+			-7.77775
+		]
+	],
+	"passau-germany": [
+		[
+			"Passau Hauptbahnhof",
+			48.57371,
+			13.4508
+		],
+		[
+			"Passau-Rosenau",
+			48.57126,
+			13.48103
+		],
+		[
+			"Passau-Lindau station",
+			48.58673,
+			13.50143
+		]
+	],
+	"aberdeen-unitedkingdom": [
+		[
+			"Holburn Street railway station",
+			57.1309,
+			-2.1159
+		],
+		[
+			"Schoolhill railway station",
+			57.148,
+			-2.105
+		],
+		[
+			"Aberdeen railway station",
+			57.1439,
+			-2.09827
+		],
+		[
+			"Aberdeen Ferryhill railway station",
+			57.1344,
+			-2.0978
+		],
+		[
+			"Aberdeen Guild Street railway station",
+			57.1449,
+			-2.0965
+		],
+		[
+			"Hutcheon Street railway station",
+			57.1537,
+			-2.1109
+		],
+		[
+			"Aberdeen Waterloo railway station",
+			57.147,
+			-2.087
+		],
+		[
+			"Aberdeen Kittybrewster railway station",
+			57.1603,
+			-2.1136
+		],
+		[
+			"Kittybrewster railway station",
+			57.1603,
+			-2.1136
+		],
+		[
+			"Pitfodels railway station",
+			57.1205,
+			-2.1561
+		],
+		[
+			"Don Street railway station",
+			57.1709,
+			-2.1209
+		],
+		[
+			"Woodside (Aberdeen) railway station",
+			57.1729,
+			-2.1311
+		],
+		[
+			"Persley railway station",
+			57.1739,
+			-2.1479
+		],
+		[
+			"West Cults railway station",
+			57.11418,
+			-2.18368
+		]
+	],
+	"santander-spain": [
+		[
+			"Santander railway station (C1)",
+			43.4591,
+			-3.81135
+		],
+		[
+			"Santander railway station (C2 and C3)",
+			43.45819,
+			-3.81117
+		],
+		[
+			"estación de Valdecilla",
+			43.454,
+			-3.82794
+		],
+		[
+			"estación de Nueva Montaña",
+			43.4449,
+			-3.84692
+		],
+		[
+			"estación de Adarzo",
+			43.45347,
+			-3.85579
+		],
+		[
+			"estación de Valle Real",
+			43.42742,
+			-3.84039
+		],
+		[
+			"estación de Muriedas",
+			43.42786,
+			-3.84756
+		],
+		[
+			"estación de Muriedas-Bahía",
+			43.4217,
+			-3.84414
+		],
+		[
+			"estación de Maliaño",
+			43.4174,
+			-3.84205
+		],
+		[
+			"estación de Maliaño-La Vidriera",
+			43.41606,
+			-3.84106
+		]
+	],
+	"puebla-mexico": [],
+	"le-havre-france": [
+		[
+			"Gare du Havre",
+			49.49278,
+			.12528
+		],
+		[
+			"Gare du Havre-Graville",
+			49.49972,
+			.16083
+		],
+		[
+			"Gare d'Harfleur-Halte",
+			49.506,
+			.1921
+		],
+		[
+			"Gare d'Harfleur",
+			49.51361,
+			.19917
+		],
+		[
+			"Jacques-Monod-la-Demi-Lieue station",
+			49.53246,
+			.18394
+		]
+	],
+	"zamora-spain": [[
+		"Zamora railway station",
+		41.51592,
+		-5.73978
+	]],
+	"perpignan-france": [[
+		"Perpignan railway station",
+		42.69626,
+		2.87973
+	]],
+	"brescia-italy": [
+		[
+			"Brescia Borgo San Giovanni railway station",
+			45.5432,
+			10.1909
+		],
+		[
+			"Brescia railway station",
+			45.53241,
+			10.21278
+		],
+		[
+			"San Zeno-Folzano railway station",
+			45.4915,
+			10.2118
+		],
+		[
+			"Castegnato railway station",
+			45.566,
+			10.1185
+		]
+	],
+	"wels-austria": [
+		[
+			"Wels Lokalbahn railway station",
+			48.15664,
+			14.01731
+		],
+		[
+			"Bahnhof Wels Messe",
+			48.15246,
+			14.01962
+		],
+		[
+			"Wels Hauptbahnhof",
+			48.16556,
+			14.02667
+		],
+		[
+			"Schauersberg railway station",
+			48.13593,
+			14.00868
+		],
+		[
+			"Steinhaus bei Wels railway station",
+			48.11933,
+			14.01789
+		],
+		[
+			"Oberhart bei Steinhaus railway station",
+			48.10399,
+			14.03918
+		],
+		[
+			"Gunskirchen railway station",
+			48.13213,
+			13.94542
+		],
+		[
+			"Haiding railway station",
+			48.20982,
+			13.97476
+		]
+	],
+	"eastbourne-unitedkingdom": [
+		[
+			"Hampden Park railway station",
+			50.796,
+			.279
+		],
+		[
+			"Stone Cross Halt railway station",
+			50.813,
+			.2949
+		],
+		[
+			"Pevensey & Westham railway station",
+			50.81583,
+			.32475
+		]
+	],
+	"garmisch-partenkirchen-germany": [
+		[
+			"Obergrainau",
+			47.47539,
+			11.04902
+		],
+		[
+			"Untergrainau train station",
+			47.481,
+			11.043
+		],
+		[
+			"Farchant station",
+			47.53097,
+			11.11486
+		],
+		[
+			"Grainau station",
+			47.47184,
+			11.02385
+		]
+	],
+	"brooklyn-united-states": [
+		[
+			"Long Island City",
+			40.74139,
+			-73.95694
+		],
+		[
+			"Hunterspoint Avenue station",
+			40.74222,
+			-73.94722
+		],
+		[
+			"Atlantic Terminal",
+			40.68423,
+			-73.97723
+		],
+		[
+			"Nostrand Avenue",
+			40.67845,
+			-73.9494
+		],
+		[
+			"59th Street",
+			40.76294,
+			-73.96975
+		],
+		[
+			"Woodside",
+			40.74607,
+			-73.9032
+		],
+		[
+			"East New York",
+			40.67605,
+			-73.90592
+		],
+		[
+			"Hoboken Terminal",
+			40.735,
+			-74.0275
+		]
+	],
+	"pamplona-spain": [
+		[
+			"Pamplona train station",
+			42.82499,
+			-1.66148
+		],
+		[
+			"estación de Cizur Mayor",
+			42.79742,
+			-1.67742
+		],
+		[
+			"Iruña/Pamplona–Etxabakoitz railway station",
+			42.79493,
+			-1.67933
+		],
+		[
+			"estación de Landaben",
+			42.81038,
+			-1.69859
+		],
+		[
+			"Uharte",
+			42.83186,
+			-1.58919
+		],
+		[
+			"Aitzoain",
+			42.84567,
+			-1.68451
+		],
+		[
+			"Noáin train station",
+			42.75481,
+			-1.63603
+		],
+		[
+			"Berriogoiti",
+			42.85928,
+			-1.68927
+		]
+	],
+	"mataro-spain": [
+		[
+			"Mataró station",
+			41.53337,
+			2.44546
+		],
+		[
+			"Mataró Oest",
+			41.5331,
+			2.43123
+		],
+		[
+			"Mataró Centre",
+			41.5434,
+			2.43803
+		],
+		[
+			"Mataró Nord",
+			41.5399,
+			2.42798
+		],
+		[
+			"Mataró Est",
+			41.5475,
+			2.45125
+		],
+		[
+			"Argentona",
+			41.5551,
+			2.40652
+		],
+		[
+			"Cabrera de Mar - Vilassar de Mar station",
+			41.50678,
+			2.40156
+		],
+		[
+			"Sant Andreu de Llavaneres station",
+			41.55548,
+			2.49837
+		],
+		[
+			"Vilassar de Mar train station",
+			41.50047,
+			2.38959
+		]
+	],
+	"mulhouse-france": [
+		[
+			"Gare de Mulhouse",
+			47.7426,
+			7.3433
+		],
+		[
+			"Gare de Mulhouse-Hasenrain",
+			47.73628,
+			7.33125
+		],
+		[
+			"Gare de Mulhouse-Dornach",
+			47.747,
+			7.3085
+		],
+		[
+			"Mulhouse-Île-Napoléon",
+			47.7675,
+			7.3907
+		],
+		[
+			"Rixheim station",
+			47.74874,
+			7.40618
+		],
+		[
+			"Gare de Lutterbach",
+			47.75824,
+			7.27704
+		],
+		[
+			"Gare de Habsheim",
+			47.73775,
+			7.4182
+		],
+		[
+			"Flaxlanden",
+			47.69886,
+			7.30474
+		]
+	],
+	"taichung-taiwan": [
+		[
+			"Wuquan Station",
+			24.12914,
+			120.66736
+		],
+		[
+			"TRA Taichung Station",
+			24.1369,
+			120.685
+		],
+		[
+			"Jingwu railway station",
+			24.14961,
+			120.69772
+		],
+		[
+			"Toujiacuo railway station",
+			24.16425,
+			120.69983
+		],
+		[
+			"Taiyuan railway station",
+			24.1667,
+			120.7
+		],
+		[
+			"Daqing railway station",
+			24.11883,
+			120.64783
+		],
+		[
+			"Songzhu railway station",
+			24.18028,
+			120.70111
+		],
+		[
+			"Wuri railway station",
+			24.1089,
+			120.622
+		],
+		[
+			"Taichung HSR station",
+			24.1117,
+			120.616
+		]
+	],
+	"baden-baden-germany": [],
+	"algeciras-spain": [[
+		"Algeciras train station",
+		36.1265,
+		-5.449
+	], [
+		"Los Barrios train station",
+		36.1738,
+		-5.46075
+	]],
+	"lleida-spain": [
+		[
+			"Lleida Pirineus railway station",
+			41.62083,
+			.63278
+		],
+		[
+			"Polígon industrial del Segre station",
+			41.62288,
+			.65294
+		],
+		[
+			"Pla de Vilanoveta train station",
+			41.61761,
+			.65839
+		]
+	],
+	"castelldefels-spain": [
+		[
+			"Castelldefels railway station",
+			41.27889,
+			1.97924
+		],
+		[
+			"Platja de Castelldefels railway station",
+			41.26695,
+			1.95711
+		],
+		[
+			"Estació de Gavà",
+			41.30336,
+			2.01047
+		],
+		[
+			"Viladecans railway station",
+			41.30942,
+			2.02742
+		]
+	],
+	"cadiz-spain": [
+		[
+			"Estación de ferrocarril de la Renfe",
+			36.52903,
+			-6.28824
+		],
+		[
+			"Cádiz railway station",
+			36.52889,
+			-6.28806
+		],
+		[
+			"San Severiano",
+			36.52139,
+			-6.28062
+		],
+		[
+			"Segunda Aguada",
+			36.5135,
+			-6.27696
+		],
+		[
+			"Estadio",
+			36.50292,
+			-6.27205
+		],
+		[
+			"Cortadura",
+			36.49436,
+			-6.26825
+		]
+	],
+	"calgary-canada": [
+		[
+			"McKnight–Westwinds station",
+			51.10917,
+			-113.97572
+		],
+		[
+			"Whitehorn station",
+			51.08667,
+			-113.98167
+		],
+		[
+			"SAIT/AUArts/Jubilee station",
+			51.06278,
+			-114.09083
+		],
+		[
+			"University station",
+			51.08028,
+			-114.12306
+		],
+		[
+			"Rundle station",
+			51.075,
+			-113.98167
+		],
+		[
+			"Brentwood station",
+			51.0875,
+			-114.132
+		],
+		[
+			"Lions Park station",
+			51.065,
+			-114.10333
+		],
+		[
+			"Martindale station",
+			51.1197,
+			-113.961
+		],
+		[
+			"Banff Trail station",
+			51.07094,
+			-114.11556
+		],
+		[
+			"Bridgeland/Memorial station",
+			51.04908,
+			-114.04056
+		]
+	],
+	"castellon-de-la-plana-spain": [[
+		"Castelló de la Plana railway station",
+		39.98833,
+		-.0525
+	], [
+		"estación de Las Palmas",
+		40.02358,
+		-.00164
+	]],
+	"sendai-japan": [
+		[
+			"JR East Sendai Station",
+			38.26009,
+			140.88254
+		],
+		[
+			"Sendai Station",
+			38.26028,
+			140.88194
+		],
+		[
+			"Aoba-dōri Station",
+			38.2608,
+			140.8786
+		],
+		[
+			"Tsutsujigaoka Station",
+			38.25881,
+			140.89375
+		],
+		[
+			"Miyaginohara Station",
+			38.2611,
+			140.9052
+		],
+		[
+			"Tōshōgū Station",
+			38.27731,
+			140.8866
+		],
+		[
+			"Rikuzen-Haranomachi Station",
+			38.26611,
+			140.91111
+		],
+		[
+			"Tōri-chō",
+			38.28022,
+			140.86617
+		],
+		[
+			"Nigatake Station",
+			38.2685,
+			140.9187
+		],
+		[
+			"Nagamachi Station",
+			38.22639,
+			140.88556
+		],
+		[
+			"Higashi-Sendai Station",
+			38.2763,
+			140.9202
+		],
+		[
+			"Kitayama Station",
+			38.28499,
+			140.85057
+		],
+		[
+			"Tōhoku-Fukushi-dai-mae Station",
+			38.28039,
+			140.84287
+		],
+		[
+			"Taishidō Station",
+			38.21785,
+			140.88333
+		]
+	],
+	"mannheim-germany": [
+		[
+			"Mannheim railway station",
+			49.48138,
+			8.47286
+		],
+		[
+			"Mannheim Central Station",
+			49.47972,
+			8.46972
+		],
+		[
+			"Ludwigshafen (Rhein) Mitte station",
+			49.4792,
+			8.45306
+		],
+		[
+			"Mannheim-Handelshafen station",
+			49.4933,
+			8.4541
+		],
+		[
+			"Ludwigshafen Central Station",
+			49.4778,
+			8.43417
+		],
+		[
+			"Mannheim-Käfertal station",
+			49.5016,
+			8.5037
+		],
+		[
+			"Ludwigshafen-Mundenheim station",
+			49.46169,
+			8.42117
+		],
+		[
+			"Bahnhof Mannheim-Käfertal OEG",
+			49.50972,
+			8.51806
+		],
+		[
+			"Mannheim-Waldhof station",
+			49.52567,
+			8.48261
+		],
+		[
+			"Mannheim-Seckenheim",
+			49.4513,
+			8.538
+		],
+		[
+			"Ludwigshafen-Rheingönheim station",
+			49.44696,
+			8.40912
+		]
+	],
+	"bremen-germany": [
+		[
+			"Bremen Hauptbahnhof",
+			53.0831,
+			8.81361
+		],
+		[
+			"Bremen Parkbahnhof",
+			53.08641,
+			8.81798
+		],
+		[
+			"Findorff local station",
+			53.09494,
+			8.80833
+		],
+		[
+			"Bremen-Neustadt railway station",
+			53.0759,
+			8.7858
+		],
+		[
+			"Bremen-Sebaldsbrück",
+			53.06098,
+			8.88791
+		],
+		[
+			"Bremen-Hemelingen",
+			53.054,
+			8.8871
+		],
+		[
+			"Lehesterdeich station",
+			53.12101,
+			8.88343
+		]
+	],
+	"lucerne-switzerland": [
+		[
+			"Brünigbahnhof",
+			47.04929,
+			8.31325
+		],
+		[
+			"Lucerne Allmend/Messe railway station",
+			47.03508,
+			8.3033
+		],
+		[
+			"Kriens Mattenhof railway station",
+			47.02661,
+			8.30236
+		],
+		[
+			"Luzern Verkehrshaus railway station",
+			47.05392,
+			8.33727
+		],
+		[
+			"Horw railway station",
+			47.01747,
+			8.30696
+		],
+		[
+			"Emmenbrücke railway station",
+			47.07059,
+			8.28254
+		],
+		[
+			"Luzern Littau railway station",
+			47.05306,
+			8.2571
+		],
+		[
+			"Emmenbrücke Gersag railway station",
+			47.07831,
+			8.27679
+		],
+		[
+			"Meggen Zentrum railway station",
+			47.04504,
+			8.37411
+		],
+		[
+			"Ebikon railway station",
+			47.08426,
+			8.34236
+		],
+		[
+			"Hergiswil Matt railway station",
+			46.99407,
+			8.31258
+		],
+		[
+			"Meggen railway station",
+			47.05015,
+			8.38306
+		],
+		[
+			"Rothenburg Station railway station",
+			47.08819,
+			8.24917
+		],
+		[
+			"Buchrain railway station",
+			47.09365,
+			8.35666
+		]
+	],
+	"manila-philippines": [
+		[
+			"Dela Rosa railway station",
+			14.55621,
+			121.00868
+		],
+		[
+			"Gil Puyat LRT Station",
+			14.55413,
+			120.99718
+		],
+		[
+			"Vito Cruz railway station",
+			14.5671,
+			121.00282
+		],
+		[
+			"Vito Cruz station",
+			14.56348,
+			120.99468
+		],
+		[
+			"Libertad LRT Station",
+			14.54778,
+			120.99863
+		],
+		[
+			"Pasay Road railway station",
+			14.54963,
+			121.01228
+		],
+		[
+			"San Andres railway station",
+			14.57294,
+			120.99962
+		],
+		[
+			"Quirino station",
+			14.57022,
+			120.99168
+		],
+		[
+			"EDSA station",
+			14.53882,
+			121.00068
+		],
+		[
+			"EDSA railway station",
+			14.54176,
+			121.0165
+		],
+		[
+			"Paco railway station",
+			14.57917,
+			120.99917
+		],
+		[
+			"Magallanes station",
+			14.54179,
+			121.01923
+		],
+		[
+			"Pedro Gil LRT Station",
+			14.57663,
+			120.98799
+		],
+		[
+			"Baclaran LRT Station",
+			14.53431,
+			120.99836
+		]
+	],
+	"bourges-france": [[
+		"Gare de Bourges",
+		47.09437,
+		2.39428
+	], [
+		"La Chapelle-Saint-Ursin-Bourg",
+		47.06144,
+		2.31388
+	]],
+	"porto-moniz-portugal": [],
+	"cape-town-southafrica": [
+		[
+			"Cape Town railway station",
+			-33.92222,
+			18.42639
+		],
+		[
+			"Esplanade",
+			-33.92366,
+			18.44597
+		],
+		[
+			"Woodstock railway station",
+			-33.92528,
+			18.44611
+		],
+		[
+			"Salt River railway station",
+			-33.92722,
+			18.46528
+		],
+		[
+			"Observatory railway station",
+			-33.93806,
+			18.47139
+		],
+		[
+			"Ysterplaat",
+			-33.92001,
+			18.47671
+		],
+		[
+			"Koeberg Road",
+			-33.92583,
+			18.47854
+		],
+		[
+			"Mowbray railway station",
+			-33.94667,
+			18.47389
+		],
+		[
+			"Rosebank railway station",
+			-33.9547,
+			18.4731
+		]
+	],
+	"uppsala-sweden": [[
+		"Uppsala eastern station",
+		59.85833,
+		17.64861
+	], [
+		"Uppsala Central Station",
+		59.8574,
+		17.6488
+	]],
+	"montreal-canada": [
+		[
+			"McGill",
+			45.50389,
+			-73.57167
+		],
+		[
+			"Lucien-L'Allier",
+			45.49528,
+			-73.56972
+		],
+		[
+			"Montreal Central Station",
+			45.4996,
+			-73.5668
+		],
+		[
+			"Bonaventure Station",
+			45.4964,
+			-73.5647
+		],
+		[
+			"Vendôme",
+			45.47389,
+			-73.60306
+		],
+		[
+			"Dalhousie Station",
+			45.5115,
+			-73.5518
+		],
+		[
+			"Canora",
+			45.51389,
+			-73.63444
+		],
+		[
+			"Parc station",
+			45.53139,
+			-73.62333
+		],
+		[
+			"Ville-de-Mont-Royal",
+			45.51694,
+			-73.645
+		],
+		[
+			"Côte-de-Liesse",
+			45.5216,
+			-73.6609
+		],
+		[
+			"Montréal-Ouest station",
+			45.45361,
+			-73.64167
+		],
+		[
+			"Chabanel",
+			45.53694,
+			-73.65778
+		],
+		[
+			"Ahuntsic",
+			45.53528,
+			-73.6625
+		],
+		[
+			"Montpellier",
+			45.52472,
+			-73.67194
+		]
+	],
+	"valladolid-spain": [
+		[
+			"Valladolid-Campo Grande railway station",
+			41.64204,
+			-4.72694
+		],
+		[
+			"estación de Valladolid-San Bartolomé",
+			41.66075,
+			-4.73406
+		],
+		[
+			"estación de Valladolid-Universidad",
+			41.66031,
+			-4.70422
+		],
+		[
+			"Zaratán train station",
+			41.66314,
+			-4.78483
+		],
+		[
+			"estación de Tres Hermanos",
+			41.67797,
+			-4.69219
+		],
+		[
+			"cargadero de La Carrera",
+			41.59867,
+			-4.70844
+		],
+		[
+			"estación de Pinar de Antequera",
+			41.58747,
+			-4.75478
+		]
+	],
+	"lima-peru": [],
+	"kyoto-japan": [
+		[
+			"Kiyomizu-Gojō Station",
+			34.99611,
+			135.76853
+		],
+		[
+			"Karasuma Station",
+			35.00361,
+			135.76028
+		],
+		[
+			"Shichijō Station",
+			34.98932,
+			135.76785
+		],
+		[
+			"Kyōto Station",
+			34.98556,
+			135.75861
+		],
+		[
+			"Kyoto-Kawaramachi Station",
+			35.00375,
+			135.76931
+		],
+		[
+			"Ōmiya Station",
+			35.0038,
+			135.749
+		],
+		[
+			"Gion-shijo Station",
+			35.00381,
+			135.77203
+		],
+		[
+			"Tambaguchi Station",
+			34.9954,
+			135.742
+		],
+		[
+			"Umekōji-Kyōtonishi Station",
+			34.98878,
+			135.74317
+		],
+		[
+			"Tōji Station",
+			34.9799,
+			135.753
+		],
+		[
+			"Tōfukuji Station",
+			34.98119,
+			135.77017
+		],
+		[
+			"Sanjo Station",
+			35.00911,
+			135.77228
+		],
+		[
+			"Nijō Station",
+			35.01103,
+			135.74174
+		],
+		[
+			"Jūjō Station",
+			34.974,
+			135.75245
+		]
+	],
+	"hakodate-japan": [
+		[
+			"Kikyō Station",
+			41.84674,
+			140.72304
+		],
+		[
+			"Ōnakayama Station",
+			41.86474,
+			140.71348
+		],
+		[
+			"Nanaehama Station",
+			41.81717,
+			140.709
+		],
+		[
+			"Higashi-Kunebetsu Station",
+			41.82606,
+			140.67997
+		],
+		[
+			"Kunebetsu Station",
+			41.8268,
+			140.6663
+		],
+		[
+			"Goryōkaku Station",
+			41.80342,
+			140.73383
+		],
+		[
+			"Kiyokawaguchi Station",
+			41.8245,
+			140.65261
+		],
+		[
+			"Nanae Station",
+			41.88768,
+			140.68821
+		],
+		[
+			"Kamiiso Station",
+			41.81986,
+			140.64161
+		]
+	],
+	"matsuyama-japan": [
+		[
+			"Matsuyama City Station",
+			33.83556,
+			132.76222
+		],
+		[
+			"Ishitegawa Park Station",
+			33.8311,
+			132.769
+		],
+		[
+			"Ōtemachi Station",
+			33.8397,
+			132.755
+		],
+		[
+			"Iyo-Tachibana Station",
+			33.8276,
+			132.773
+		],
+		[
+			"Dobashi Station",
+			33.8328,
+			132.756
+		],
+		[
+			"Komachi Station",
+			33.8471,
+			132.755
+		],
+		[
+			"Dogo Onsen Station",
+			33.85042,
+			132.785
+		],
+		[
+			"Matsuyama Station",
+			33.83967,
+			132.75078
+		],
+		[
+			"Fukuonji Station",
+			33.8226,
+			132.789
+		],
+		[
+			"Kinuyama Station",
+			33.8523,
+			132.744
+		],
+		[
+			"Doida Station",
+			33.8239,
+			132.744
+		],
+		[
+			"Nishikinuyama",
+			33.8502,
+			132.734
+		],
+		[
+			"Kita-Kume Station",
+			33.8193,
+			132.799
+		],
+		[
+			"Ichitsubo Station",
+			33.809,
+			132.7493
+		]
+	],
+	"trondheim-norway": [
+		[
+			"Marienborg Station",
+			63.42,
+			10.38194
+		],
+		[
+			"Trondheim Central Station",
+			63.43639,
+			10.39889
+		],
+		[
+			"Leangen station",
+			63.43667,
+			10.46417
+		],
+		[
+			"Selsbakk station",
+			63.39194,
+			10.37778
+		],
+		[
+			"Ranheim station",
+			63.42799,
+			10.53427
+		]
+	],
+	"leiria-portugal": [[
+		"Leiria train station",
+		39.7566,
+		-8.82781
+	], [
+		"Regueira de Pontes halt",
+		39.79759,
+		-8.83772
+	]],
+	"travemunde-germany": [
+		[
+			"Lübeck-Travemünde Strand station",
+			53.965,
+			10.8761
+		],
+		[
+			"Lübeck-Travemünde Hafen station",
+			53.9589,
+			10.8665
+		],
+		[
+			"Pöppendorf",
+			53.93459,
+			10.83954
+		],
+		[
+			"Lübeck-Kücknitz station",
+			53.92496,
+			10.8192
+		]
+	],
+	"ingolstadt-germany": [
+		[
+			"Ingolstadt Central Station",
+			48.74444,
+			11.43694
+		],
+		[
+			"Ingolstadt Nord station",
+			48.77309,
+			11.43319
+		],
+		[
+			"Oberhaunstadt railway station",
+			48.79365,
+			11.44278
+		],
+		[
+			"Ingolstadt Audi",
+			48.79054,
+			11.40762
+		],
+		[
+			"Lenting railway station",
+			48.80734,
+			11.46788
+		]
+	],
+	"guadalajara-spain": [[
+		"Guadalajara",
+		40.64411,
+		-3.18217
+	], [
+		"Guadalajara-Yebes railway station",
+		40.5875,
+		-3.125
+	]],
+	"fuengirola-spain": [
+		[
+			"Los Boliches train station",
+			36.5546,
+			-4.61459
+		],
+		[
+			"Fuengirola train station",
+			36.54181,
+			-4.62397
+		],
+		[
+			"Torreblanca train station",
+			36.56497,
+			-4.60656
+		],
+		[
+			"estación de Carvajal",
+			36.57025,
+			-4.59406
+		],
+		[
+			"Torremuelle Station",
+			36.58225,
+			-4.56708
+		]
+	],
+	"santiago-de-compostela-spain": [
+		[
+			"Santiago de Compostela railway station",
+			42.87078,
+			-8.54472
+		],
+		[
+			"Estación de Cornes",
+			42.86983,
+			-8.55231
+		],
+		[
+			"O Casal train station",
+			42.86167,
+			-8.58764
+		],
+		[
+			"Sionlla",
+			42.91924,
+			-8.48563
+		]
+	],
+	"stockholm-sweden": [
+		[
+			"Stockholm Central Station",
+			59.33,
+			18.05611
+		],
+		[
+			"Stockholm Östra station",
+			59.34639,
+			18.07083
+		],
+		[
+			"Stockholm Södra station",
+			59.31369,
+			18.06245
+		],
+		[
+			"Stockholm N",
+			59.3491,
+			18.03678
+		],
+		[
+			"Värtan railway station",
+			59.34875,
+			18.1063
+		],
+		[
+			"Henriksdal railway station",
+			59.31231,
+			18.10806
+		],
+		[
+			"Universitetet railway station",
+			59.3651,
+			18.0508
+		],
+		[
+			"Sickla railway station",
+			59.30681,
+			18.12125
+		],
+		[
+			"Årstaberg station",
+			59.30004,
+			18.02909
+		],
+		[
+			"Nacka railway station",
+			59.30658,
+			18.13042
+		],
+		[
+			"Solna railway station",
+			59.365,
+			18.01028
+		],
+		[
+			"Saltsjö-Järla railway station",
+			59.30689,
+			18.14972
+		],
+		[
+			"Lillängen railway station",
+			59.30518,
+			18.16102
+		],
+		[
+			"Stocksund railway station",
+			59.38483,
+			18.04377
+		]
+	],
+	"groningen-netherlands": [
+		[
+			"Groningen railway station",
+			53.21056,
+			6.56389
+		],
+		[
+			"Groningen Noord railway station",
+			53.23,
+			6.55639
+		],
+		[
+			"Groningen Europapark railway station",
+			53.205,
+			6.58444
+		],
+		[
+			"Stopplaats Kostverloren",
+			53.21985,
+			6.54074
+		],
+		[
+			"Haren railway station",
+			53.17528,
+			6.6175
+		],
+		[
+			"Adorp",
+			53.27413,
+			6.54136
+		]
+	],
+	"cheltenham-unitedkingdom": [
+		[
+			"Cheltenham High Street Halt railway station",
+			51.9049,
+			-2.08443
+		],
+		[
+			"Cheltenham Spa St. James railway station",
+			51.9019,
+			-2.08347
+		],
+		[
+			"Cheltenham Racecourse railway station",
+			51.924,
+			-2.06833
+		],
+		[
+			"Cheltenham High Street railway station",
+			51.9096,
+			-2.0937
+		],
+		[
+			"Cheltenham Spa Malvern Road railway station",
+			51.8993,
+			-2.09337
+		],
+		[
+			"Cheltenham Spa railway station",
+			51.897,
+			-2.1
+		],
+		[
+			"Cheltenham Leckhampton railway station",
+			51.8831,
+			-2.07777
+		],
+		[
+			"Charlton Kings railway station",
+			51.8759,
+			-2.0548
+		],
+		[
+			"Bishops Cleeve railway station",
+			51.9474,
+			-2.0504
+		],
+		[
+			"Cleeve railway station",
+			51.95,
+			-2.099
+		],
+		[
+			"Badgworth railway station",
+			51.8843,
+			-2.1425
+		],
+		[
+			"Gotherington railway station",
+			51.9672,
+			-2.0378
+		]
+	],
+	"pisa-italy": [
+		[
+			"Pisa Centrale railway station",
+			43.70833,
+			10.39833
+		],
+		[
+			"stazione Leopolda",
+			43.709,
+			10.40576
+		],
+		[
+			"San Giuliano Terme railway station",
+			43.7649,
+			10.43699
+		]
+	],
+	"san-jose-costarica": [
+		[
+			"Pavas Centro",
+			9.93998,
+			-84.13353
+		],
+		[
+			"Jacks (Santa Bárbara)",
+			9.9403,
+			-84.1237
+		],
+		[
+			"Tubo Tico",
+			9.93797,
+			-84.11947
+		],
+		[
+			"Pecosa",
+			9.94633,
+			-84.13804
+		],
+		[
+			"Demasa (Pueblo Nuevo)",
+			9.94935,
+			-84.14379
+		],
+		[
+			"La Salle",
+			9.9335,
+			-84.10987
+		],
+		[
+			"Metrópoli",
+			9.95579,
+			-84.14989
+		],
+		[
+			"Contraloría",
+			9.93265,
+			-84.10142
+		],
+		[
+			"Cuba",
+			9.92698,
+			-84.09176
+		],
+		[
+			"Pacífico railway station",
+			9.9255,
+			-84.0806
+		],
+		[
+			"Colima Railway Station",
+			9.95548,
+			-84.08657
+		],
+		[
+			"Santa RosaRailway Station",
+			9.97213,
+			-84.09815
+		],
+		[
+			"Plaza Cleto González Víquez",
+			9.92505,
+			-84.07431
+		],
+		[
+			"La Corte",
+			9.93135,
+			-84.07248
+		]
+	],
+	"arrecife-spain": [],
+	"los-angeles-unitedstates": [[
+		"Beverly Hills station",
+		34.07217,
+		-118.40245
+	]],
+	"legian-indonesia": [],
+	"coimbra-portugal": [
+		[
+			"Apeadero de São José",
+			40.20103,
+			-8.40713
+		],
+		[
+			"Bencanta halt",
+			40.21452,
+			-8.4562
+		],
+		[
+			"Coimbra B train station",
+			40.22521,
+			-8.4407
+		],
+		[
+			"Espadaneira halt",
+			40.20898,
+			-8.47098
+		],
+		[
+			"Apeadero de Quinta da Ponte",
+			40.18081,
+			-8.39236
+		],
+		[
+			"Casais halt",
+			40.20478,
+			-8.48416
+		],
+		[
+			"Adémia halt",
+			40.25093,
+			-8.45033
+		],
+		[
+			"Estación de Ceira",
+			40.16491,
+			-8.38815
+		],
+		[
+			"Taveiro train station",
+			40.2059,
+			-8.50029
+		],
+		[
+			"Vilela-Fornos halt",
+			40.26316,
+			-8.44135
+		]
+	],
+	"torremolinos-spain": [
+		[
+			"Torremolinos train station",
+			36.62258,
+			-4.49956
+		],
+		[
+			"La Colina train station, Spain",
+			36.64192,
+			-4.49264
+		],
+		[
+			"Montemar Alto train station",
+			36.61369,
+			-4.50939
+		],
+		[
+			"Los Álamos train station",
+			36.645,
+			-4.48519
+		],
+		[
+			"El Pinillo train station",
+			36.60986,
+			-4.51536
+		],
+		[
+			"San Julián train station",
+			36.6641,
+			-4.47908
+		],
+		[
+			"Benalmádena-Arroyo de la Miel railway station",
+			36.59908,
+			-4.53631
+		],
+		[
+			"Malaga Airport train station",
+			36.6777,
+			-4.49019
+		]
+	],
+	"flagstaff-united-states": [[
+		"Flagstaff station",
+		35.1974,
+		-111.649
+	]],
+	"ludwigsburg-germany": [
+		[
+			"Ludwigsburg station",
+			48.8922,
+			9.18528
+		],
+		[
+			"Asperg station",
+			48.9069,
+			9.14806
+		],
+		[
+			"Kornwestheim station",
+			48.8783,
+			9.17972
+		],
+		[
+			"Freiberg (Neckar) station",
+			48.9297,
+			9.1975
+		],
+		[
+			"Tamm (Württemberg) station",
+			48.9217,
+			9.12528
+		],
+		[
+			"Markgröningen station",
+			48.90374,
+			9.09312
+		]
+	],
+	"chisinau-moldova": [
+		[
+			"Chișinău",
+			47.0125,
+			28.85972
+		],
+		[
+			"Visterniceni",
+			47.04042,
+			28.84189
+		],
+		[
+			"Chișinău III railway station",
+			46.97954,
+			28.90633
+		]
+	],
+	"bergamo-italy": [
+		[
+			"Bergamo railway station",
+			45.69056,
+			9.675
+		],
+		[
+			"Seriate railway station",
+			45.6833,
+			9.7246
+		],
+		[
+			"Paladina railway station",
+			45.73462,
+			9.61012
+		],
+		[
+			"Ponte San Pietro railway station",
+			45.6991,
+			9.5844
+		]
+	],
+	"sopot-poland": [
+		[
+			"Sopot railway station",
+			54.44,
+			18.5625
+		],
+		[
+			"Sopot Wyścigi",
+			54.4313,
+			18.5652
+		],
+		[
+			"Sopot Kamienny Potok railway station",
+			54.45778,
+			18.55353
+		],
+		[
+			"Gdańsk Żabianka-AWFiS",
+			54.42056,
+			18.56861
+		],
+		[
+			"Gdynia Orłowo railway station",
+			54.47667,
+			18.54889
+		],
+		[
+			"Gdańsk Oliwa railway station",
+			54.4101,
+			18.5713
+		],
+		[
+			"Gdynia Wielki Kack railway station",
+			54.4653,
+			18.5031
+		],
+		[
+			"Gdańsk Przymorze-Uniwersytet railway station",
+			54.4006,
+			18.5767
+		],
+		[
+			"Gdynia Redłowo railway station",
+			54.4915,
+			18.5384
+		],
+		[
+			"Gdańsk Zaspa railway station",
+			54.3899,
+			18.5913
+		]
+	],
+	"madrid-spain": [
+		[
+			"Atocha-Cercanías",
+			40.40596,
+			-3.68876
+		],
+		[
+			"Madrid Atocha railway station",
+			40.4075,
+			-3.69167
+		],
+		[
+			"Atocha's Greenhouse",
+			40.40705,
+			-3.69142
+		],
+		[
+			"Méndez Álvaro railway station",
+			40.39572,
+			-3.67781
+		],
+		[
+			"Delicias railway station",
+			40.40047,
+			-3.69299
+		],
+		[
+			"Sol railway station",
+			40.41667,
+			-3.70333
+		],
+		[
+			"Embajadores",
+			40.4051,
+			-3.70269
+		],
+		[
+			"Abroñigal train station",
+			40.38854,
+			-3.67741
+		],
+		[
+			"Pirámides railway station",
+			40.4025,
+			-3.71139
+		],
+		[
+			"Asamblea de Madrid-Entrevías",
+			40.3816,
+			-3.66797
+		],
+		[
+			"Príncipe Pío",
+			40.4214,
+			-3.71889
+		],
+		[
+			"Estación de Goya (línea Madrid-Almorox)",
+			40.4117,
+			-3.72448
+		],
+		[
+			"Nuevos Ministerios",
+			40.44628,
+			-3.69181
+		],
+		[
+			"Doce de Octubre",
+			40.37892,
+			-3.69861
+		]
+	],
+	"inverness-unitedkingdom": [
+		[
+			"Inverness railway station",
+			57.48,
+			-4.223
+		],
+		[
+			"Clachnaharry railway station",
+			57.4889,
+			-4.2576
+		],
+		[
+			"Bunchrew railway station",
+			57.4783,
+			-4.3089
+		]
+	],
+	"chartres-france": [
+		[
+			"Chartres station",
+			48.44831,
+			1.48113
+		],
+		[
+			"Lucé railway station",
+			48.43685,
+			1.45305
+		],
+		[
+			"Gare de La Villette-Saint-Prest",
+			48.48259,
+			1.52352
+		],
+		[
+			"Gare d'Amilly-Ouerray",
+			48.43823,
+			1.3892
+		]
+	],
+	"koobrzeg-poland": [
+		[
+			"Kołobrzeg Amfiteatr",
+			54.18109,
+			15.59558
+		],
+		[
+			"Kołobrzeg Ogrody",
+			54.17649,
+			15.59713
+		],
+		[
+			"Train station in Kołobrzeg",
+			54.1822,
+			15.5697
+		],
+		[
+			"Kołobrzeg Wąskotorowy",
+			54.1819,
+			15.5697
+		],
+		[
+			"Kołobrzeg Kostrzewno Wąskotorowe",
+			54.1731,
+			15.5583
+		],
+		[
+			"Kołobrzeg Stadion",
+			54.1733,
+			15.5567
+		],
+		[
+			"Żółczyce",
+			54.185,
+			15.6383
+		],
+		[
+			"Radzikowo",
+			54.1608,
+			15.5503
+		],
+		[
+			"Kołobrzeg Radzikowo",
+			54.16239,
+			15.54378
+		],
+		[
+			"Zieleniewo",
+			54.1467,
+			15.5622
+		],
+		[
+			"Stramnica",
+			54.1556,
+			15.6514
+		],
+		[
+			"Kołobrzeg Lasy Miejskie",
+			54.1867,
+			15.6733
+		],
+		[
+			"Bezpraw",
+			54.1303,
+			15.5639
+		],
+		[
+			"Korzystno",
+			54.1453,
+			15.5081
+		]
+	],
+	"salou-spain": [[
+		"Port Aventura",
+		41.08845,
+		1.14601
+	], [
+		"Vila-seca",
+		41.11283,
+		1.15033
+	]],
+	"blois-france": [[
+		"Gare de Blois",
+		47.58541,
+		1.32353
+	], [
+		"Gare de La Chaussée-Saint-Victor",
+		47.61305,
+		1.35417
+	]],
+	"johor-bahru-malaysia": [[
+		"Johor Bahru Sentral station",
+		1.4625,
+		103.76472
+	], [
+		"Woodlands Train Checkpoint",
+		1.44389,
+		103.76917
+	]],
+	"vigo-spain": [
+		[
+			"Vigo-Urzaiz railway station",
+			42.23426,
+			-8.71361
+		],
+		[
+			"Vigo-Guixar railway station",
+			42.23922,
+			-8.71207
+		],
+		[
+			"Chapela",
+			42.26861,
+			-8.67028
+		]
+	],
+	"quedlinburg-germany": [
+		[
+			"Quedlinburg railway station",
+			51.7853,
+			11.1527
+		],
+		[
+			"Bad Suderode railway stop",
+			51.73367,
+			11.12563
+		],
+		[
+			"Gernrode (Harz) railway station",
+			51.72985,
+			11.14935
+		]
+	],
+	"derby-unitedkingdom": [
+		[
+			"Derby railway station",
+			52.9161,
+			-1.4633
+		],
+		[
+			"Derby Nottingham Road railway station",
+			52.9268,
+			-1.46796
+		],
+		[
+			"Ramsline Halt railway station",
+			52.9049,
+			-1.4654
+		],
+		[
+			"Derby Friargate railway station",
+			52.9235,
+			-1.4862
+		],
+		[
+			"Peartree railway station",
+			52.89728,
+			-1.47285
+		],
+		[
+			"Sinfin North railway station",
+			52.8928,
+			-1.47583
+		],
+		[
+			"Sinfin Central railway station",
+			52.8875,
+			-1.46962
+		],
+		[
+			"Spondon railway station",
+			52.91194,
+			-1.41056
+		],
+		[
+			"Breadsall railway station",
+			52.95101,
+			-1.4529
+		],
+		[
+			"Mickleover railway station",
+			52.9192,
+			-1.5445
+		],
+		[
+			"Little Eaton railway station",
+			52.9675,
+			-1.4624
+		],
+		[
+			"Borrowash railway station",
+			52.904,
+			-1.38438
+		],
+		[
+			"Chellaston and Swarkestone railway station",
+			52.8666,
+			-1.4436
+		]
+	],
+	"titisee-neustadt-germany": [
+		[
+			"Titisee railway station",
+			47.90346,
+			8.15512
+		],
+		[
+			"Hinterzarten railway station",
+			47.90632,
+			8.10606
+		],
+		[
+			"Neustadt (Schwarzwald) station",
+			47.9102,
+			8.21088
+		],
+		[
+			"Feldberg-Bärental railway station",
+			47.8716,
+			8.09867
+		],
+		[
+			"Lenzkirch railway station",
+			47.86736,
+			8.20526
+		]
+	],
+	"baeza-spain": [[
+		"Tres Fuentes train station",
+		37.96839,
+		-3.46403
+	], [
+		"Baeza-Begíjar train station",
+		37.97461,
+		-3.51906
+	]],
+	"alkmaar-netherlands": [
+		[
+			"Alkmaar railway station",
+			52.63778,
+			4.74056
+		],
+		[
+			"Alkmaar Noord railway station",
+			52.64389,
+			4.76472
+		],
+		[
+			"Heiloo railway station",
+			52.6,
+			4.70083
+		]
+	],
+	"bogota-colombia": [[
+		"Usaquen station",
+		4.69081,
+		-74.03777
+	]],
+	"nuremberg-germany": [
+		[
+			"Nuremberg Central Station",
+			49.44639,
+			11.08194
+		],
+		[
+			"Nürnberg Abstellung Ost",
+			49.45053,
+			11.11192
+		],
+		[
+			"Nürnberg-Schweinau",
+			49.43429,
+			11.04529
+		],
+		[
+			"Nürnberg Nordost",
+			49.47389,
+			11.10613
+		],
+		[
+			"Nürnberg Ost",
+			49.46379,
+			11.12072
+		],
+		[
+			"Nürnberg-Mögeldorf",
+			49.45919,
+			11.13378
+		],
+		[
+			"Nürnberg Frankenstadion",
+			49.43092,
+			11.12985
+		],
+		[
+			"Nürnberg-Eibach",
+			49.41015,
+			11.048
+		],
+		[
+			"Nürnberg-Stein",
+			49.42542,
+			11.01787
+		],
+		[
+			"Fürth Central Station",
+			49.46995,
+			10.99012
+		]
+	],
+	"roses-spain": [],
+	"opatija-croatia": [[
+		"Opatija-Matulji railway station",
+		45.36477,
+		14.32092
+	], [
+		"Jurdani train station",
+		45.39239,
+		14.30861
+	]],
+	"fatima-portugal": [],
+	"santiago-chile": [],
+	"schwerin-germany": [[
+		"Schwerin Central Station",
+		53.6344,
+		11.4081
+	]],
+	"tarifa-spain": [],
+	"le-mans-france": [[
+		"Gare du Mans",
+		47.9953,
+		.192
+	], [
+		"Le Mans Hôpital-Université",
+		48.01408,
+		.1746
+	]],
+	"spa-belgium": [
+		[
+			"Spa-Géronstère railway station",
+			50.48917,
+			5.86722
+		],
+		[
+			"Spa railway station",
+			50.49028,
+			5.85556
+		],
+		[
+			"Nivezé railway station",
+			50.49996,
+			5.90361
+		],
+		[
+			"Marteau railway station",
+			50.49235,
+			5.83091
+		],
+		[
+			"La Reid railway station",
+			50.51027,
+			5.82575
+		],
+		[
+			"Franchimont railway station",
+			50.52522,
+			5.82259
+		],
+		[
+			"Theux-Centre railway station",
+			50.5288,
+			5.81873
+		],
+		[
+			"Theux-Marie-Louise railway station",
+			50.53962,
+			5.81286
+		],
+		[
+			"Juslenville railway station",
+			50.54472,
+			5.81
+		]
+	],
+	"delft-netherlands": [
+		[
+			"Delft railway station",
+			52.00667,
+			4.35667
+		],
+		[
+			"Singelweg railway halt",
+			52.01137,
+			4.35369
+		],
+		[
+			"Delft Campus railway station",
+			51.99056,
+			4.365
+		],
+		[
+			"Kleiweg",
+			52.03759,
+			4.32214
+		],
+		[
+			"Rijswijk railway station",
+			52.03944,
+			4.31972
+		],
+		[
+			"Den Haag Ypenburg railway station",
+			52.05611,
+			4.38972
+		],
+		[
+			"Den Haag Moerwijk railway station",
+			52.05333,
+			4.30861
+		],
+		[
+			"Voorburg railway station",
+			52.06652,
+			4.35869
+		],
+		[
+			"Veenweg",
+			52.06293,
+			4.40261
+		]
+	],
+	"portsmouth-united-kingdom": [
+		[
+			"Fratton railway station",
+			50.7964,
+			-1.074
+		],
+		[
+			"Jessie Road Bridge Halt railway station",
+			50.7927,
+			-1.06852
+		],
+		[
+			"Portsmouth and Southsea railway station",
+			50.79845,
+			-1.09039
+		],
+		[
+			"East Southsea railway station",
+			50.78108,
+			-1.07726
+		],
+		[
+			"Hilsea railway station",
+			50.82817,
+			-1.05882
+		],
+		[
+			"Farlington Halt railway station",
+			50.8381,
+			-1.0461
+		],
+		[
+			"Cosham railway station",
+			50.84194,
+			-1.0675
+		],
+		[
+			"Gosport Road and Alverstoke railway station",
+			50.7919,
+			-1.1402
+		],
+		[
+			"Hayling Island railway station",
+			50.7933,
+			-.9952
+		],
+		[
+			"Paulsgrove Halt railway station",
+			50.8479,
+			-1.0953
+		],
+		[
+			"Fort Brockhurst railway station",
+			50.8074,
+			-1.1567
+		],
+		[
+			"Stokes Bay railway station",
+			50.7767,
+			-1.1504
+		],
+		[
+			"North Hayling railway station",
+			50.8219,
+			-.9831
+		],
+		[
+			"Fort Gomer Halt railway station",
+			50.7939,
+			-1.1642
+		]
+	],
+	"taormina-italy": [
+		[
+			"Taormina-Giardini railway station",
+			37.8455,
+			15.2825
+		],
+		[
+			"Letojanni railway station",
+			37.87743,
+			15.30312
+		],
+		[
+			"Alcantara railway station",
+			37.8214,
+			15.2513
+		]
+	],
+	"besancon-france": [
+		[
+			"Gare de Besançon Rivotte",
+			47.23349,
+			6.0347
+		],
+		[
+			"Besançon-la Mouillère station",
+			47.24043,
+			6.03415
+		],
+		[
+			"Besançon-Viotte station",
+			47.24703,
+			6.02196
+		],
+		[
+			"Morre station",
+			47.22616,
+			6.0666
+		],
+		[
+			"Gare d'École-Valentin",
+			47.27477,
+			5.99465
+		],
+		[
+			"Saône station",
+			47.20957,
+			6.10238
+		],
+		[
+			"Gare de Franois",
+			47.22744,
+			5.93753
+		]
+	],
+	"ludwigshafen-am-rhein-germany": [
+		[
+			"Ludwigshafen Central Station",
+			49.4778,
+			8.43417
+		],
+		[
+			"Mannheim-Handelshafen station",
+			49.4933,
+			8.4541
+		],
+		[
+			"Ludwigshafen (Rhein) Mitte station",
+			49.4792,
+			8.45306
+		],
+		[
+			"Ludwigshafen-Mundenheim station",
+			49.46169,
+			8.42117
+		],
+		[
+			"Mannheim Central Station",
+			49.47972,
+			8.46972
+		],
+		[
+			"Mannheim railway station",
+			49.48138,
+			8.47286
+		],
+		[
+			"Ludwigshafen-Rheingönheim station",
+			49.44696,
+			8.40912
+		],
+		[
+			"Mannheim-Käfertal station",
+			49.5016,
+			8.5037
+		],
+		[
+			"Mannheim-Waldhof station",
+			49.52567,
+			8.48261
+		],
+		[
+			"Frankenthal Süd",
+			49.52256,
+			8.34959
+		],
+		[
+			"Bahnhof Mannheim-Käfertal OEG",
+			49.50972,
+			8.51806
+		]
+	],
+	"merano-italy": [
+		[
+			"Merano/Meran railway station",
+			46.673,
+			11.1491
+		],
+		[
+			"Merano-Maia Bassa/Meran-Untermais railway station",
+			46.65646,
+			11.14813
+		],
+		[
+			"Töll/Tel railway station",
+			46.67293,
+			11.08146
+		],
+		[
+			"Lana-Postal/Lana-Burgstall railway station",
+			46.6083,
+			11.18238
+		]
+	],
+	"pesaro-italy": [[
+		"Pesaro railway station",
+		43.90611,
+		12.90611
+	]],
+	"colchester-united-kingdom": [
+		[
+			"Hythe railway station",
+			51.886,
+			.927
+		],
+		[
+			"Colchester Town railway station",
+			51.8865,
+			.9046
+		],
+		[
+			"Colchester railway station",
+			51.9006,
+			.8929
+		],
+		[
+			"Ardleigh railway station",
+			51.9214,
+			.9844
+		],
+		[
+			"Wivenhoe railway station",
+			51.857,
+			.956
+		],
+		[
+			"Alresford railway station",
+			51.8539,
+			.99694
+		]
+	],
+	"leuven-belgium": [
+		[
+			"Heverlee railway station",
+			50.8625,
+			4.69528
+		],
+		[
+			"Leuven railway station",
+			50.88083,
+			4.71611
+		],
+		[
+			"Herent railway station",
+			50.90361,
+			4.675
+		],
+		[
+			"Oud-Heverlee railway station",
+			50.83583,
+			4.65361
+		],
+		[
+			"Zoetwater railway station",
+			50.82907,
+			4.64957
+		],
+		[
+			"Veltem railway station",
+			50.90028,
+			4.63278
+		],
+		[
+			"Wijgmaal railway station",
+			50.92262,
+			4.70164
+		],
+		[
+			"Wakkerzeelsesteenweg railway station",
+			50.92925,
+			4.69013
+		],
+		[
+			"Hambos railway station",
+			50.93111,
+			4.68639
+		]
+	],
+	"amsterdam-netherlands": [
+		[
+			"Amsterdam Central station",
+			52.37895,
+			4.90016
+		],
+		[
+			"Amsterdam Museumplein",
+			52.3577,
+			4.88857
+		],
+		[
+			"Amsterdam Muiderpoort railway station",
+			52.36083,
+			4.93111
+		],
+		[
+			"Amsterdam Amstel",
+			52.34639,
+			4.91778
+		],
+		[
+			"Amsterdam Sloterdijk",
+			52.38917,
+			4.83806
+		],
+		[
+			"Amsterdam Zuid",
+			52.33889,
+			4.87306
+		],
+		[
+			"Station RAI",
+			52.33667,
+			4.89056
+		],
+		[
+			"Amsterdam Lelylaan",
+			52.35722,
+			4.83389
+		],
+		[
+			"Amsterdam Science Park railway station",
+			52.35306,
+			4.94944
+		],
+		[
+			"Amsterdam Aletta Jacobslaan railway station",
+			52.34693,
+			4.83441
+		],
+		[
+			"Amsterdam Koenenkade",
+			52.33104,
+			4.85596
+		],
+		[
+			"Diemen railway station",
+			52.34528,
+			4.96694
+		],
+		[
+			"Kalfjeslaan",
+			52.32162,
+			4.85643
+		],
+		[
+			"Duivendrecht railway station",
+			52.32333,
+			4.93639
+		]
+	],
+	"nerja-spain": [],
+	"campos-do-jordao-brazil": [],
+	"basel-switzerland": [
+		[
+			"Basel SNCF railway station",
+			47.5482,
+			7.58783
+		],
+		[
+			"Basel Dreispitz railway station",
+			47.53786,
+			7.60894
+		],
+		[
+			"Basel Badischer Bahnhof railway station",
+			47.56731,
+			7.60692
+		],
+		[
+			"Basel St. Jakob railway station",
+			47.5426,
+			7.61952
+		],
+		[
+			"Basel St. Johann railway station",
+			47.57029,
+			7.57252
+		],
+		[
+			"Muttenz railway station",
+			47.53359,
+			7.64789
+		],
+		[
+			"Münchenstein railway station",
+			47.51324,
+			7.61727
+		],
+		[
+			"Weil am Rhein railway station",
+			47.59397,
+			7.60842
+		],
+		[
+			"Grenzach railway station",
+			47.5509,
+			7.65951
+		],
+		[
+			"Saint-Louis station",
+			47.59054,
+			7.55586
+		],
+		[
+			"Riehen railway station",
+			47.58351,
+			7.65221
+		],
+		[
+			"Haltingen railway station",
+			47.61284,
+			7.61168
+		],
+		[
+			"EuroAirport railway station",
+			47.60013,
+			7.53451
+		]
+	],
+	"caserta-italy": [
+		[
+			"Caserta railway station",
+			41.06889,
+			14.32778
+		],
+		[
+			"Maddaloni Inferiore railway station",
+			41.0362,
+			14.3801
+		],
+		[
+			"Curti",
+			41.0772,
+			14.26472
+		],
+		[
+			"Maddaloni Superiore railway station",
+			41.0486,
+			14.3959
+		],
+		[
+			"Santa Maria Città-San Pietro",
+			41.08211,
+			14.26393
+		],
+		[
+			"Sant'Andrea dei Lagni",
+			41.07014,
+			14.25751
+		],
+		[
+			"Santa Maria Capua Vetere railway station",
+			41.07349,
+			14.2541
+		]
+	],
+	"rzeszow-poland": [
+		[
+			"Rzeszów Główny",
+			50.0428,
+			22.0069
+		],
+		[
+			"Rzeszów Centrum train stop",
+			50.04308,
+			21.99847
+		],
+		[
+			"Rzeszów Staroniwa",
+			50.0383,
+			21.9894
+		],
+		[
+			"Rzeszów Zachodni",
+			50.05379,
+			21.99421
+		],
+		[
+			"Rzeszów Politechnika train stop",
+			50.02716,
+			21.98365
+		],
+		[
+			"Rzeszów Pobitno",
+			50.0525,
+			22.02917
+		],
+		[
+			"Rzeszów Osiedle",
+			50.02257,
+			21.97776
+		],
+		[
+			"Rzeszów Baranówka",
+			50.06264,
+			21.99097
+		],
+		[
+			"Rzeszów Staromieście train stop",
+			50.06314,
+			21.99242
+		],
+		[
+			"Miłocin",
+			50.074,
+			21.9878
+		],
+		[
+			"Rzeszów Załęże",
+			50.0583,
+			22.0692
+		],
+		[
+			"Rzeszów Zwięczyca",
+			50.0058,
+			21.9572
+		],
+		[
+			"Rzeszów Dworzysko",
+			50.08694,
+			21.97333
+		],
+		[
+			"Rudna Wielka",
+			50.0808,
+			21.9422
+		]
+	],
+	"bournemouth-united-kingdom": [
+		[
+			"Bournemouth West railway station",
+			50.7222,
+			-1.8937
+		],
+		[
+			"Meyrick Park Halt railway station",
+			50.7326,
+			-1.8789
+		],
+		[
+			"Bournemouth railway station",
+			50.72742,
+			-1.86436
+		],
+		[
+			"Bournemouth East original railway station",
+			50.7269,
+			-1.8603
+		],
+		[
+			"Branksome railway station",
+			50.728,
+			-1.919
+		],
+		[
+			"Boscombe railway station",
+			50.7308,
+			-1.83961
+		],
+		[
+			"Pokesdown railway station",
+			50.731,
+			-1.825
+		],
+		[
+			"Parkstone railway station",
+			50.723,
+			-1.949
+		],
+		[
+			"Poole railway station",
+			50.719,
+			-1.983
+		]
+	],
+	"sheffield-united-kingdom": [
+		[
+			"Attercliffe Road railway station",
+			53.3891,
+			-1.45011
+		],
+		[
+			"Attercliffe railway station",
+			53.3935,
+			-1.42544
+		],
+		[
+			"City Goods station",
+			53.3838,
+			-1.4595
+		],
+		[
+			"Darnall railway station",
+			53.3845,
+			-1.4123
+		],
+		[
+			"Sheffield Victoria railway station",
+			53.3875,
+			-1.45876
+		],
+		[
+			"Sheffield station",
+			53.37778,
+			-1.46222
+		],
+		[
+			"Sheffield Wicker railway station",
+			53.3897,
+			-1.45834
+		],
+		[
+			"Bridgehouses railway station",
+			53.3897,
+			-1.4664
+		],
+		[
+			"Broughton Lane railway station",
+			53.3997,
+			-1.41612
+		],
+		[
+			"Grimesthorpe Bridge railway station",
+			53.4061,
+			-1.4303
+		],
+		[
+			"Brightside railway station",
+			53.4122,
+			-1.42112
+		],
+		[
+			"West Tinsley railway station",
+			53.4094,
+			-1.40946
+		],
+		[
+			"Neepsend railway station",
+			53.398,
+			-1.48278
+		],
+		[
+			"Meadowhall (Tivoli Gardens) railway station",
+			53.4097,
+			-1.4099
+		]
+	],
+	"friedrichshafen-germany": [
+		[
+			"Friedrichshafen Landratsamt",
+			47.6573,
+			9.4516
+		],
+		[
+			"Friedrichshafen Stadt",
+			47.65328,
+			9.47334
+		],
+		[
+			"Friedrichshafen-Manzell",
+			47.6643,
+			9.4291
+		],
+		[
+			"Löwental station",
+			47.6615,
+			9.4993
+		],
+		[
+			"Friedrichshafen-Fischbach",
+			47.6726,
+			9.4173
+		],
+		[
+			"Friedrichshafen Ost station",
+			47.6521,
+			9.5019
+		],
+		[
+			"Friedrichshafen-Kluftern",
+			47.6883,
+			9.4095
+		],
+		[
+			"Friedrichshafen Flughafen station",
+			47.6723,
+			9.5239
+		],
+		[
+			"Kehlen station",
+			47.6828,
+			9.54806
+		],
+		[
+			"Eriskirch station",
+			47.6284,
+			9.5267
+		]
+	],
+	"miedzyzdroje-poland": [
+		[
+			"Train station in Międzyzdroje",
+			53.9239,
+			14.4544
+		],
+		[
+			"Lubiewo",
+			53.9156,
+			14.4158
+		],
+		[
+			"Warnowo",
+			53.9281,
+			14.5347
+		]
+	],
+	"san-carlos-de-bariloche-argentina": [[
+		"San Carlos de Bariloche train station",
+		-41.1303,
+		-71.2742
+	]],
+	"poitiers-france": [
+		[
+			"Gare de Poitiers",
+			46.58222,
+			.33306
+		],
+		[
+			"Gare de Saint-Benoît",
+			46.5462,
+			.33542
+		],
+		[
+			"Gare de Ligugé",
+			46.52032,
+			.33329
+		],
+		[
+			"Mignaloux-Beauvoir railway station",
+			46.52626,
+			.41151
+		]
+	],
+	"jimbaran-indonesia": [],
+	"belfast-unitedkingdom": [
+		[
+			"Botanic railway station",
+			54.5884,
+			-5.9328
+		],
+		[
+			"City Hospital railway station",
+			54.5887,
+			-5.9402
+		],
+		[
+			"Belfast Grand Central station",
+			54.59477,
+			-5.93979
+		],
+		[
+			"Lanyon Place railway station",
+			54.5953,
+			-5.9172
+		],
+		[
+			"Queen's Bridge railway station, Belfast",
+			54.5985,
+			-5.9213
+		],
+		[
+			"Queen's Quay railway station",
+			54.6016,
+			-5.9174
+		],
+		[
+			"Queen's Quay, Belfast",
+			54.602,
+			-5.914
+		],
+		[
+			"Adelaide and Windsor railway station",
+			54.5784,
+			-5.955
+		],
+		[
+			"Titanic Quarter railway station",
+			54.6019,
+			-5.9064
+		],
+		[
+			"Fraser Street Halt",
+			54.60212,
+			-5.90482
+		],
+		[
+			"York Street railway station, Belfast",
+			54.61108,
+			-5.92184
+		],
+		[
+			"Ballymacarrett railway station",
+			54.6028,
+			-5.89559
+		],
+		[
+			"Balmoral railway station",
+			54.5688,
+			-5.9682
+		],
+		[
+			"Victoria Park railway station",
+			54.6052,
+			-5.88634
+		]
+	],
+	"braga-portugal": [
+		[
+			"Braga train station",
+			41.54867,
+			-8.43417
+		],
+		[
+			"Apeadero de Ferreiros",
+			41.53093,
+			-8.44127
+		],
+		[
+			"Apeadero de Mazagão",
+			41.52699,
+			-8.45769
+		],
+		[
+			"Apeadero de Aveleda",
+			41.52029,
+			-8.46821
+		]
+	],
+	"oviedo-spain": [
+		[
+			"Oviedo railway station",
+			43.3663,
+			-5.85497
+		],
+		[
+			"Llamaquique railway station",
+			43.35883,
+			-5.85733
+		],
+		[
+			"Vallobín train station",
+			43.36522,
+			-5.8648
+		],
+		[
+			"La Argañosa-Lavapiés train station",
+			43.36583,
+			-5.87003
+		],
+		[
+			"Las Campas train station",
+			43.36386,
+			-5.88339
+		],
+		[
+			"La Corredoria train station",
+			43.38796,
+			-5.82725
+		],
+		[
+			"estación de La Manjoya",
+			43.33394,
+			-5.8685
+		],
+		[
+			"Las Mazas train station",
+			43.35867,
+			-5.89764
+		],
+		[
+			"Parque Principado train station",
+			43.38655,
+			-5.80879
+		],
+		[
+			"El Caleyo train station",
+			43.3293,
+			-5.87266
+		],
+		[
+			"Colloto railway station",
+			43.37955,
+			-5.79235
+		],
+		[
+			"Lugones train station",
+			43.4042,
+			-5.81186
+		],
+		[
+			"San Claudio train station",
+			43.35533,
+			-5.91781
+		],
+		[
+			"Las Segadas train station",
+			43.3132,
+			-5.86921
+		]
+	],
+	"bolzano-italy": [
+		[
+			"Bolzano/Bozen railway station",
+			46.49662,
+			11.35844
+		],
+		[
+			"Bolzano Sud/Bozen Süd railway station",
+			46.4736,
+			11.3262
+		],
+		[
+			"Ponte d'Adige/Sigmundskron railway station",
+			46.48587,
+			11.29669
+		],
+		[
+			"Maria Himmelfahrt railway station",
+			46.5244,
+			11.39398
+		],
+		[
+			"Oberbozen railway station",
+			46.52816,
+			11.40588
+		],
+		[
+			"Settequerce/Siebeneich railway station",
+			46.50853,
+			11.26496
+		],
+		[
+			"Laives/Leifers railway station",
+			46.4345,
+			11.3236
+		]
+	],
+	"siena-italy": [
+		[
+			"Siena railway station",
+			43.33164,
+			11.32297
+		],
+		[
+			"Arbia railway station",
+			43.29442,
+			11.40628
+		],
+		[
+			"Siena Zona Industriale",
+			43.2652,
+			11.3767
+		]
+	],
+	"matsue-japan": [
+		[
+			"Matsue Station",
+			35.46405,
+			133.06368
+		],
+		[
+			"Matsue Shinjiko-Onsen Station",
+			35.46733,
+			133.04604
+		],
+		[
+			"Nogi Station",
+			35.44593,
+			133.04871
+		],
+		[
+			"Matsue English Garden Mae Station",
+			35.47734,
+			133.004
+		],
+		[
+			"Tamatsukuri-Onsen Station",
+			35.43086,
+			133.01176
+		],
+		[
+			"Higashi-Matsue Station",
+			35.4454,
+			133.12841
+		],
+		[
+			"Asahigaoka Station",
+			35.48089,
+			132.98781
+		]
+	],
+	"caxias-do-sul-brazil": [
+		[
+			"Sítio Ferroviário de Caxias do Sul",
+			-29.17182,
+			-51.18711
+		],
+		[
+			"Caxias do Sul",
+			-29.17181,
+			-51.18707
+		],
+		[
+			"Devio Rizzo",
+			-29.19176,
+			-51.23582
+		]
+	],
+	"ourense-spain": [[
+		"Ourense-San Fransisco train station",
+		42.33264,
+		-7.86092
+	], [
+		"Ourense-Empalme Railway Station",
+		42.35037,
+		-7.87257
+	]],
+	"vienna-austria": [
+		[
+			"Wien Franz-Josefs-Bahnhof",
+			48.2261,
+			16.3611
+		],
+		[
+			"Wien Gersthof",
+			48.2313,
+			16.329
+		],
+		[
+			"Ostbahnhof",
+			48.2,
+			16.37
+		],
+		[
+			"Wien Krottenbachstraße railway station",
+			48.2401,
+			16.3411
+		],
+		[
+			"Nordbahnhof, Vienna",
+			48.22026,
+			16.39178
+		],
+		[
+			"Vienna West railway station",
+			48.19667,
+			16.33778
+		],
+		[
+			"Wien Unterdöbling",
+			48.24444,
+			16.35561
+		],
+		[
+			"Wien Oberdöbling railway station",
+			48.2444,
+			16.3443
+		],
+		[
+			"Wien Hernals railway station",
+			48.22315,
+			16.31491
+		],
+		[
+			"Prater Hauptbahnhof",
+			48.2154,
+			16.39668
+		],
+		[
+			"Wien Prater (Liliputbahn/Ankunft)",
+			48.21573,
+			16.3975
+		],
+		[
+			"Ottakring railway station",
+			48.21185,
+			16.31101
+		],
+		[
+			"Wien Handelskai railway station",
+			48.24189,
+			16.3855
+		],
+		[
+			"Wien Heiligenstadt railway station",
+			48.24917,
+			16.365
+		]
+	],
+	"avignon-france": [
+		[
+			"Gare d'Avignon-Centre",
+			43.94167,
+			4.805
+		],
+		[
+			"Avignon Sud",
+			43.93446,
+			4.84108
+		],
+		[
+			"Gare d'Avignon TGV",
+			43.92167,
+			4.78583
+		],
+		[
+			"Gare de Montfavet",
+			43.9325,
+			4.87399
+		]
+	],
+	"haarlem-netherlands": [
+		[
+			"Haarlem railway station",
+			52.38778,
+			4.63889
+		],
+		[
+			"Haarlem Spaarnwoude railway station",
+			52.38291,
+			4.67134
+		],
+		[
+			"Overveen railway station",
+			52.39083,
+			4.60778
+		],
+		[
+			"Bloemendaal railway station",
+			52.40417,
+			4.6275
+		],
+		[
+			"Heemstede-Aerdenhout railway station",
+			52.35972,
+			4.60722
+		],
+		[
+			"Santpoort Zuid railway station",
+			52.41944,
+			4.63167
+		],
+		[
+			"Santpoort Noord railway station",
+			52.43389,
+			4.63278
+		],
+		[
+			"Zandvoort Dorp",
+			52.37439,
+			4.53974
+		]
+	],
+	"phuket-thailand": [],
+	"denia-spain": [
+		[
+			"Pedrera-Vessanes",
+			38.83165,
+			.10018
+		],
+		[
+			"Parada de Bosc de Diana",
+			38.83463,
+			.10723
+		],
+		[
+			"Train station of Dénia",
+			38.83964,
+			.11258
+		],
+		[
+			"La Xara train halt",
+			38.82299,
+			.06382
+		],
+		[
+			"Train station of Gata de Gorgos",
+			38.77531,
+			.08735
+		]
+	],
+	"gothenburg-sweden": [
+		[
+			"Göteborg Västgöta",
+			57.71151,
+			11.96823
+		],
+		[
+			"Centralen station",
+			57.71117,
+			11.97172
+		],
+		[
+			"Gothenburg Central Station",
+			57.70889,
+			11.97333
+		],
+		[
+			"Haga station",
+			57.6994,
+			11.9615
+		],
+		[
+			"Korsvägen station",
+			57.69608,
+			11.98714
+		],
+		[
+			"Linnéplatsen train station of the Särö railway line",
+			57.68958,
+			11.95253
+		],
+		[
+			"Olskroken railway station",
+			57.71852,
+			11.99879
+		],
+		[
+			"Karlsroplatsen train station of the Särö railway line",
+			57.68844,
+			11.95278
+		],
+		[
+			"Gamlestaden station",
+			57.72724,
+			12.00415
+		],
+		[
+			"Almedal railway station",
+			57.68734,
+			12.00168
+		],
+		[
+			"Sävenäs",
+			57.7247,
+			12.025
+		],
+		[
+			"Lärje",
+			57.75275,
+			12.00962
+		],
+		[
+			"Mölndal railway station",
+			57.65569,
+			12.01889
+		]
+	],
+	"quebec-city-canada": [[
+		"Gare du Palais",
+		46.8174,
+		-71.2139
+	]],
+	"pescara-italy": [
+		[
+			"Pescara railway station",
+			42.46778,
+			14.20417
+		],
+		[
+			"Pescara Porta Nuova railway station",
+			42.45779,
+			14.21178
+		],
+		[
+			"Montesilvano railway station",
+			42.5165,
+			14.1514
+		]
+	],
+	"plasencia-spain": [[
+		"Plasencia train station",
+		40.0222,
+		-6.09947
+	]],
+	"bielsko-biaa-poland": [
+		[
+			"Bielsko-Biała Lipnik train stop",
+			49.8142,
+			19.0496
+		],
+		[
+			"Bielsko-Biała Wapienica train station",
+			49.8112,
+			18.98
+		],
+		[
+			"Bielsko-Biała Leszczyny train stop",
+			49.7972,
+			19.0661
+		],
+		[
+			"Main Train Station in Bielsko-Biała",
+			49.82987,
+			19.04486
+		],
+		[
+			"Bielsko-Biała Mikuszowice train stop",
+			49.7836,
+			19.0736
+		],
+		[
+			"Bielsko-Biała Wschód",
+			49.8346,
+			19.0572
+		],
+		[
+			"Jaworze Jasienica train station",
+			49.8067,
+			18.9328
+		],
+		[
+			"Wilkowice Bystra train station",
+			49.7614,
+			19.0872
+		]
+	],
+	"varese-italy": [
+		[
+			"Varese Casbeno railway station",
+			45.815,
+			8.8114
+		],
+		[
+			"Varese Nord railway station",
+			45.81833,
+			8.83333
+		],
+		[
+			"Varese railway station",
+			45.81611,
+			8.83306
+		],
+		[
+			"Barasso-Comerio railway station",
+			45.8353,
+			8.75107
+		],
+		[
+			"Malnate railway station",
+			45.7955,
+			8.87821
+		]
+	],
+	"compiegne-france": [
+		[
+			"Gare de Jaux",
+			49.38658,
+			2.77721
+		],
+		[
+			"Gare de Compiègne",
+			49.42282,
+			2.82529
+		],
+		[
+			"Gare du Meux - La Croix-Saint-Ouen",
+			49.35948,
+			2.75329
+		],
+		[
+			"Gare de Choisy-au-Bac",
+			49.44224,
+			2.86224
+		]
+	],
+	"geelong-australia": [
+		[
+			"Geelong",
+			-38.1439,
+			144.3548
+		],
+		[
+			"South Geelong",
+			-38.1585,
+			144.3589
+		],
+		[
+			"North Geelong",
+			-38.1222,
+			144.3524
+		],
+		[
+			"North Shore",
+			-38.0981,
+			144.3655
+		],
+		[
+			"Marshall",
+			-38.19889,
+			144.355
+		]
+	],
+	"bremerhaven-germany": [
+		[
+			"Geestemünde station",
+			53.53094,
+			8.58711
+		],
+		[
+			"Bremerhaven Hauptbahnhof",
+			53.53487,
+			8.59886
+		],
+		[
+			"Bremerhaven-Lehe railway station",
+			53.56625,
+			8.59992
+		],
+		[
+			"Bremerhaven-Wulsdorf station",
+			53.50854,
+			8.61213
+		],
+		[
+			"Wulsdorf Klbf",
+			53.50493,
+			8.61715
+		],
+		[
+			"Bremerhaven-Speckenbüttel station",
+			53.58884,
+			8.59419
+		],
+		[
+			"Langen (Han) railway station",
+			53.60178,
+			8.59689
+		]
+	],
+	"chiang-mai-thailand": [[
+		"Chiang Mai Railway Station",
+		18.78365,
+		99.01688
+	]],
+	"antibes-france": [
+		[
+			"Gare d'Antibes",
+			43.58583,
+			7.11944
+		],
+		[
+			"Gare de Juan-les-Pins",
+			43.57099,
+			7.11141
+		],
+		[
+			"Gare de Biot",
+			43.61087,
+			7.12633
+		],
+		[
+			"Gare de Golfe-Juan-Vallauris",
+			43.56641,
+			7.07373
+		],
+		[
+			"Gare de Villeneuve-Loubet-plage",
+			43.62976,
+			7.13443
+		]
+	],
+	"tampere-finland": [
+		[
+			"Tampere railway station",
+			61.49861,
+			23.77306
+		],
+		[
+			"Messukylä",
+			61.4873,
+			23.8484
+		],
+		[
+			"Lielahti railway station",
+			61.50964,
+			23.67947
+		]
+	],
+	"honolulu-unitedstates": [],
+	"savannah-unitedstates": [[
+		"Savannah train station",
+		32.0836,
+		-81.1486
+	]],
+	"bastia-france": [
+		[
+			"Bastia railway station",
+			42.70203,
+			9.44766
+		],
+		[
+			"Lupino station",
+			42.68773,
+			9.44463
+		],
+		[
+			"Rivoli",
+			42.68325,
+			9.44535
+		],
+		[
+			"Bassanese",
+			42.68104,
+			9.44536
+		],
+		[
+			"L'Arinella",
+			42.67797,
+			9.44538
+		],
+		[
+			"Montesoru",
+			42.67315,
+			9.44459
+		],
+		[
+			"Bastia-Sole-Meo",
+			42.67075,
+			9.44395
+		],
+		[
+			"Bastia-Erbajolo",
+			42.66382,
+			9.44326
+		],
+		[
+			"Sansonetti-Puliclinica",
+			42.65971,
+			9.44444
+		],
+		[
+			"La Rocade",
+			42.65382,
+			9.44146
+		],
+		[
+			"Gare de Furiani",
+			42.65153,
+			9.44129
+		],
+		[
+			"Saltatoghju",
+			42.6411,
+			9.4412
+		]
+	],
+	"alghero-italy": [
+		[
+			"Alghero railway station",
+			40.575,
+			8.32222
+		],
+		[
+			"Punta Moro railway station",
+			40.5913,
+			8.34341
+		],
+		[
+			"Mamuntanas railway station",
+			40.60705,
+			8.35519
+		]
+	],
+	"shenzhen-china": [[
+		"Shenzhen North station",
+		22.61194,
+		114.02389
+	], [
+		"Shenzhen Xili railway station",
+		22.5656,
+		113.943
+	]],
+	"cascais-portugal": [
+		[
+			"Cascais railway station",
+			38.70077,
+			-9.41844
+		],
+		[
+			"Monte Estoril railway station",
+			38.70359,
+			-9.40657
+		],
+		[
+			"Estoril railway station",
+			38.70329,
+			-9.39875
+		],
+		[
+			"São João do Estoril railway station",
+			38.70137,
+			-9.38611
+		],
+		[
+			"São Pedro do Estoril train station",
+			38.6954,
+			-9.37195
+		],
+		[
+			"Parede railway station",
+			38.6897,
+			-9.35614
+		]
+	],
+	"lloret-de-mar-spain": [],
+	"ayr-unitedkingdom": [
+		[
+			"Ayr railway station",
+			55.4583,
+			-4.6258
+		],
+		[
+			"Newton-on-Ayr railway station",
+			55.4743,
+			-4.6262
+		],
+		[
+			"Auchincruive railway station",
+			55.483,
+			-4.57656
+		],
+		[
+			"Prestwick Town railway station",
+			55.50135,
+			-4.61425
+		],
+		[
+			"Heads of Ayr Holiday Camp railway station",
+			55.42811,
+			-4.6865
+		],
+		[
+			"Maybole Junction railway station",
+			55.4174,
+			-4.5969
+		],
+		[
+			"Prestwick International Airport railway station",
+			55.509,
+			-4.6141
+		],
+		[
+			"Dalrymple railway station",
+			55.4069,
+			-4.6101
+		],
+		[
+			"Monkton railway station",
+			55.5146,
+			-4.6173
+		],
+		[
+			"Heads of Ayr railway station",
+			55.4263,
+			-4.7114
+		]
+	],
+	"opole-poland": [
+		[
+			"Opole Zachodnie railway station",
+			50.6603,
+			17.8933
+		],
+		[
+			"Opole Główne",
+			50.6623,
+			17.9267
+		],
+		[
+			"Opole Port",
+			50.6811,
+			17.9103
+		],
+		[
+			"Opole Wschodnie",
+			50.6739,
+			17.9361
+		],
+		[
+			"Opole Chmielowice railway halt",
+			50.64486,
+			17.86706
+		],
+		[
+			"Opole Groszowice",
+			50.6361,
+			17.9553
+		],
+		[
+			"Opole Gosławice",
+			50.6761,
+			17.9892
+		],
+		[
+			"Opole Czarnowąsy railway station",
+			50.7153,
+			17.905
+		],
+		[
+			"Chróścina Opolska",
+			50.66974,
+			17.81778
+		],
+		[
+			"Komprachcice train station",
+			50.63141,
+			17.82139
+		]
+	],
+	"olbia-italy": [[
+		"Olbia railway station",
+		40.92472,
+		9.49861
+	], [
+		"Olbia Terranova railway station",
+		40.9225,
+		9.49444
+	]],
+	"san-sebastian-spain": [
+		[
+			"Estación de Centro-La Concha",
+			43.31713,
+			-1.98367
+		],
+		[
+			"Donostia/San Sebastián train station",
+			43.31774,
+			-1.97674
+		],
+		[
+			"Gros railway station",
+			43.32192,
+			-1.97361
+		],
+		[
+			"Amara-Donostia train station",
+			43.31311,
+			-1.98163
+		],
+		[
+			"Loiola station (Euskotren Trena)",
+			43.31073,
+			-1.96759
+		],
+		[
+			"Ategorrieta",
+			43.32042,
+			-1.95983
+		],
+		[
+			"Loiolako Erriberak",
+			43.30648,
+			-1.96937
+		],
+		[
+			"Estación de Loyola",
+			43.30464,
+			-1.96361
+		],
+		[
+			"Bentaberri station",
+			43.31035,
+			-2.00476
+		],
+		[
+			"Intxaurrondo",
+			43.32001,
+			-1.95177
+		],
+		[
+			"Martutene",
+			43.29906,
+			-1.95618
+		],
+		[
+			"Herrera",
+			43.31936,
+			-1.93704
+		],
+		[
+			"Astigarraga",
+			43.2834,
+			-1.95601
+		],
+		[
+			"Errekalde station",
+			43.27887,
+			-2.0072
+		]
+	],
+	"monterey-united-states": [[
+		"Monterey Transit Plaza",
+		36.59758,
+		-121.89425
+	]],
+	"el-puerto-de-santa-maria-spain": [
+		[
+			"El Puerto de Santa María Station",
+			36.60406,
+			-6.21781
+		],
+		[
+			"estación de Valdelagrana",
+			36.58464,
+			-6.21622
+		],
+		[
+			"Estación de empalme del Trocadero",
+			36.54989,
+			-6.20208
+		]
+	],
+	"sanlucar-de-barrameda-spain": [],
+	"arles-france": [[
+		"Gare d'Arles",
+		43.68472,
+		4.63194
+	]],
+	"avila-spain": [
+		[
+			"Ávila Railway Station",
+			40.65721,
+			-4.68333
+		],
+		[
+			"estación de Pedrosillo",
+			40.70258,
+			-4.66958
+		],
+		[
+			"estación de Guimorcondo",
+			40.6491,
+			-4.61474
+		]
+	],
+	"concepcion-chile": [
+		[
+			"Estación Lorenzo Arenas",
+			-36.80832,
+			-73.07093
+		],
+		[
+			"Estación Tucapel",
+			-36.81386,
+			-73.05312
+		],
+		[
+			"Estación Andalién",
+			-36.81776,
+			-73.06012
+		],
+		[
+			"Estación Concepción",
+			-36.83017,
+			-73.06107
+		],
+		[
+			"Estación Universidad Técnica Federico Santa María",
+			-36.78386,
+			-73.08563
+		],
+		[
+			"Estación Biobío",
+			-36.83853,
+			-73.09063
+		],
+		[
+			"Estación Juan Pablo II",
+			-36.83844,
+			-73.09782
+		],
+		[
+			"Estación Los Cóndores",
+			-36.75667,
+			-73.09168
+		],
+		[
+			"Estación Diagonal Biobío",
+			-36.83739,
+			-73.11804
+		]
+	],
+	"marbella-spain": [],
+	"windsor-unitedkingdom": [
+		[
+			"Windsor & Eton Riverside railway station",
+			51.48583,
+			-.60615
+		],
+		[
+			"Windsor & Eton Central railway station",
+			51.483,
+			-.61
+		],
+		[
+			"Slough railway station",
+			51.512,
+			-.592
+		],
+		[
+			"Datchet railway station",
+			51.48312,
+			-.57975
+		],
+		[
+			"Burnham railway station",
+			51.524,
+			-.646
+		],
+		[
+			"Sunnymeads railway station",
+			51.47,
+			-.559
+		],
+		[
+			"Langley railway station",
+			51.508,
+			-.542
+		],
+		[
+			"Taplow railway station",
+			51.524,
+			-.681
+		],
+		[
+			"Wraysbury railway station",
+			51.458,
+			-.542
+		]
+	],
+	"oulu-finland": [
+		[
+			"Oulu railway station",
+			65.01142,
+			25.48398
+		],
+		[
+			"Tuira railway station",
+			65.02858,
+			25.47698
+		],
+		[
+			"Oritkari",
+			64.98925,
+			25.45245
+		]
+	],
+	"banja-luka-bosnia-and-herzegovina": [[
+		"Banja Luka",
+		44.7887,
+		17.2124
+	], [
+		"Vrbanja railway station",
+		44.76306,
+		17.24889
+	]],
+	"billund-denmark": [],
+	"reggio-emilia-italy": [
+		[
+			"Reggio Santo Stefano railway station",
+			44.70546,
+			10.62393
+		],
+		[
+			"Reggio Santa Croce railway station",
+			44.70799,
+			10.64257
+		],
+		[
+			"Reggio Emilia AV Mediopadana railway station",
+			44.72437,
+			10.65519
+		],
+		[
+			"Reggio Mediopadana railway station",
+			44.72503,
+			10.65617
+		],
+		[
+			"Reggio Emilia railway station",
+			44.69778,
+			10.64306
+		],
+		[
+			"Reggio San Lazzaro railway station",
+			44.69,
+			10.66704
+		],
+		[
+			"Bagnolo in Piano railway station",
+			44.76083,
+			10.67556
+		]
+	],
+	"beziers-france": [[
+		"Béziers railway station",
+		43.33611,
+		3.21867
+	]],
+	"heilbronn-germany": [
+		[
+			"Heilbronn Central Station",
+			49.1428,
+			9.20794
+		],
+		[
+			"Heilbronn Sülmertor",
+			49.15158,
+			9.22057
+		],
+		[
+			"Neckarsulm South",
+			49.1805,
+			9.22047
+		],
+		[
+			"Weinsberg West",
+			49.15121,
+			9.27357
+		],
+		[
+			"Neckarsulm station",
+			49.18872,
+			9.21998
+		],
+		[
+			"Weinsberg",
+			49.14821,
+			9.28621
+		],
+		[
+			"Neckarsulm Mitte",
+			49.19341,
+			9.22294
+		],
+		[
+			"Neckarsulm Nord",
+			49.2019,
+			9.2287
+		],
+		[
+			"Nordheim (Württ) station",
+			49.10927,
+			9.14871
+		],
+		[
+			"Weinsberg/Ellhofen Gewerbegebiet",
+			49.14873,
+			9.30548
+		],
+		[
+			"Leingarten",
+			49.14506,
+			9.12178
+		],
+		[
+			"Talheim railway station",
+			49.08578,
+			9.1918
+		]
+	],
+	"stavanger-norway": [[
+		"Stavanger station",
+		58.96694,
+		5.73194
+	], [
+		"Mariero station",
+		58.93455,
+		5.75331
+	]],
+	"punta-del-este-uruguay": [],
+	"ponferrada-spain": [
+		[
+			"Ponferrada train station",
+			42.54542,
+			-6.60233
+		],
+		[
+			"estación de Columbrianos",
+			42.57856,
+			-6.61114
+		],
+		[
+			"estación de San Andrés de Montejos",
+			42.58572,
+			-6.60492
+		]
+	],
+	"belem-brazil": [],
+	"calpe-spain": [[
+		"Estación de Ferrandet",
+		38.66903,
+		.02701
+	]],
+	"phoenix-united-states": [],
+	"st-gallen-switzerland": [
+		[
+			"St. Gallen St. Fiden railway station",
+			47.43454,
+			9.39343
+		],
+		[
+			"St. Gallen Birnbäumen station",
+			47.42594,
+			9.39343
+		],
+		[
+			"St. Gallen Notkersegg station",
+			47.42534,
+			9.40323
+		],
+		[
+			"St. Gallen Schülerhaus station",
+			47.42491,
+			9.38753
+		],
+		[
+			"St. Gallen Spisertor railway station",
+			47.42464,
+			9.37971
+		],
+		[
+			"St. Gallen Marktplatz railway station",
+			47.42639,
+			9.37638
+		],
+		[
+			"Schwarzer Bären station",
+			47.42242,
+			9.41544
+		],
+		[
+			"St. Gallen AB railway station",
+			47.42341,
+			9.37059
+		],
+		[
+			"St. Gallen railway station",
+			47.42318,
+			9.36987
+		],
+		[
+			"Rank station",
+			47.42016,
+			9.4238
+		],
+		[
+			"Wittenbach railway station",
+			47.4631,
+			9.38861
+		],
+		[
+			"St. Gallen Güterbahnhof",
+			47.4173,
+			9.36247
+		],
+		[
+			"St. Gallen Riethüsli station",
+			47.41155,
+			9.36721
+		],
+		[
+			"Vögelinsegg station",
+			47.41607,
+			9.43604
+		]
+	],
+	"middlesbrough-united-kingdom": [
+		[
+			"Middlesbrough railway station",
+			54.5791,
+			-1.23472
+		],
+		[
+			"Cargo Fleet railway station",
+			54.577,
+			-1.2094
+		],
+		[
+			"Newport railway station",
+			54.571,
+			-1.259
+		],
+		[
+			"James Cook University Hospital railway station",
+			54.5515,
+			-1.2076
+		],
+		[
+			"Belasis Lane railway station",
+			54.6,
+			-1.274
+		],
+		[
+			"South Bank railway station",
+			54.584,
+			-1.177
+		],
+		[
+			"Marton railway station",
+			54.5443,
+			-1.1985
+		],
+		[
+			"Billingham railway station",
+			54.606,
+			-1.279
+		],
+		[
+			"Thornaby railway station",
+			54.55927,
+			-1.301
+		],
+		[
+			"Stockton Norton Road railway station",
+			54.57194,
+			-1.31056
+		],
+		[
+			"Stockton (S&D) railway station",
+			54.5585,
+			-1.31
+		],
+		[
+			"Stockton railway station",
+			54.5697,
+			-1.3183
+		],
+		[
+			"Gypsy Lane railway station",
+			54.53333,
+			-1.18036
+		],
+		[
+			"Norton-on-Tees railway station",
+			54.598,
+			-1.3216
+		]
+	],
+	"victoria-canada": [[
+		"Esquimalt railway station",
+		48.43731,
+		-123.41843
+	]],
+	"chalon-sur-saone-france": [[
+		"Gare de Chalon-sur-Saône",
+		46.78144,
+		4.84289
+	]],
+	"rimini-italy": [
+		[
+			"Rimini railway station",
+			44.06389,
+			12.574
+		],
+		[
+			"Rimini Miramare railway halt",
+			44.03,
+			12.6181
+		],
+		[
+			"Rimini Viserba railway station",
+			44.0883,
+			12.5337
+		]
+	],
+	"coventry-unitedkingdom": [
+		[
+			"Canley railway station",
+			52.399,
+			-1.548
+		],
+		[
+			"Coundon Road railway station",
+			52.4139,
+			-1.5223
+		],
+		[
+			"Coventry railway station",
+			52.40087,
+			-1.51405
+		],
+		[
+			"Daimler Halt railway station",
+			52.41875,
+			-1.51445
+		],
+		[
+			"Tile Hill railway station",
+			52.3951,
+			-1.597
+		],
+		[
+			"Foleshill railway station",
+			52.4332,
+			-1.5049
+		],
+		[
+			"Coventry Arena railway station",
+			52.4469,
+			-1.4948
+		],
+		[
+			"Berkswell railway station",
+			52.396,
+			-1.643
+		],
+		[
+			"Longford and Exhall railway station",
+			52.4533,
+			-1.48937
+		],
+		[
+			"Kenilworth railway station",
+			52.3422,
+			-1.5724
+		]
+	],
+	"alcala-de-henares-spain": [
+		[
+			"Alcalá de Henares",
+			40.48894,
+			-3.36625
+		],
+		[
+			"La Garena",
+			40.4805,
+			-3.39303
+		],
+		[
+			"Alcalá de Henares-Universidad",
+			40.50539,
+			-3.33533
+		],
+		[
+			"Soto del Henares",
+			40.46378,
+			-3.44142
+		]
+	],
+	"matera-italy": [
+		[
+			"Matera Centrale railway station",
+			40.6665,
+			16.6013
+		],
+		[
+			"Matera Sud railway station",
+			40.6604,
+			16.6043
+		],
+		[
+			"Matera Villa Longo railway station",
+			40.67946,
+			16.59
+		],
+		[
+			"Matera Serra Rifusa railway station",
+			40.6849,
+			16.5883
+		],
+		[
+			"Matera La Martella railway station",
+			40.6542,
+			16.5635
+		]
+	],
+	"tubingen-germany": [
+		[
+			"Tübingen Hbf",
+			48.5158,
+			9.05585
+		],
+		[
+			"Tübingen West station",
+			48.52,
+			9.0385
+		],
+		[
+			"Kirchentellinsfurt",
+			48.52874,
+			9.13949
+		],
+		[
+			"Wannweil",
+			48.51227,
+			9.15064
+		]
+	],
+	"aix-les-bains-france": [
+		[
+			"Gare d'Aix-les-Bains-Le Revard",
+			45.68806,
+			5.90944
+		],
+		[
+			"Viviers-du-Lac",
+			45.64853,
+			5.90332
+		],
+		[
+			"Grésy-sur-Aix train station",
+			45.72469,
+			5.92198
+		]
+	],
+	"portrush-united-kingdom": [[
+		"Portrush railway station",
+		55.20255,
+		-6.6537
+	], [
+		"Cromore railway station",
+		55.1782,
+		-6.68776
+	]],
+	"ipswich-united-kingdom": [
+		[
+			"Derby Road railway station",
+			52.051,
+			1.183
+		],
+		[
+			"Ipswich Stoke Hill railway station",
+			52.0465,
+			1.1534
+		],
+		[
+			"Westerfield railway station",
+			52.081,
+			1.166
+		],
+		[
+			"Ipswich railway station",
+			52.051,
+			1.144
+		],
+		[
+			"Bealings railway station",
+			52.08,
+			1.254
+		],
+		[
+			"Orwell railway station",
+			52.0229,
+			1.2414
+		],
+		[
+			"Bramford railway station",
+			52.076,
+			1.1048
+		]
+	],
+	"hanoi-vietnam": [
+		[
+			"Hanoi railway station",
+			21.02417,
+			105.84083
+		],
+		[
+			"Long Biên railway station",
+			21.03972,
+			105.85028
+		],
+		[
+			"Gia Lâm railway station",
+			21.0525,
+			105.88111
+		],
+		[
+			"Giáp Bát Station",
+			20.97861,
+			105.84
+		]
+	],
+	"karpacz-poland": [
+		[
+			"Karpacz train station",
+			50.78243,
+			15.76184
+		],
+		[
+			"Kowary Ścięgny",
+			50.7909,
+			15.809
+		],
+		[
+			"Kowary Zdrój",
+			50.78834,
+			15.82779
+		],
+		[
+			"Kowary",
+			50.7975,
+			15.8278
+		],
+		[
+			"Kowary Średnie",
+			50.78585,
+			15.84196
+		]
+	],
+	"den-bosch-netherlands": [
+		[
+			"'s-Hertogenbosch railway station",
+			51.69028,
+			5.29333
+		],
+		[
+			"'s-Hertogenbosch Oost railway station",
+			51.70056,
+			5.31778
+		],
+		[
+			"Vught railway station",
+			51.65472,
+			5.29194
+		],
+		[
+			"Orthen",
+			51.70197,
+			5.30462
+		],
+		[
+			"Vught-IJzeren Man",
+			51.6519,
+			5.26772
+		],
+		[
+			"Rosmalen railway station",
+			51.715,
+			5.36889
+		],
+		[
+			"Sprokkelbosch railway station",
+			51.71943,
+			5.38451
+		]
+	],
+	"oristano-italy": [[
+		"Oristano railway station",
+		39.9019,
+		8.60417
+	]],
+	"san-diego-unitedstates": [[
+		"Old Town Transit Center",
+		32.75478,
+		-117.19954
+	]],
+	"pau-france": [[
+		"Gare de Pau",
+		43.2915,
+		-.36948
+	], [
+		"Gare de La Croix du Prince",
+		43.28561,
+		-.37918
+	]],
+	"paphos-cyprus": [],
+	"soria-spain": [
+		[
+			"Estación de Soria-San Francisco",
+			41.76234,
+			-2.47013
+		],
+		[
+			"Soria railway station",
+			41.75525,
+			-2.47547
+		],
+		[
+			"estación de Valcorba",
+			41.76103,
+			-2.42289
+		],
+		[
+			"estación de Velilla de la Sierra",
+			41.78461,
+			-2.39489
+		]
+	],
+	"caldas-da-rainha-portugal": [
+		[
+			"Estação Ferroviária de Caldas da Rainha",
+			39.4065,
+			-9.14059
+		],
+		[
+			"Óbidos halt",
+			39.36486,
+			-9.15908
+		],
+		[
+			"Campo - Serra",
+			39.45335,
+			-9.15133
+		]
+	],
+	"peniche-portugal": [],
+	"shizuoka-japan": [
+		[
+			"Shizuoka Station",
+			34.97167,
+			138.38889
+		],
+		[
+			"Shin-Shizuoka Station",
+			34.97581,
+			138.38742
+		],
+		[
+			"Hiyoshichō Station",
+			34.97717,
+			138.39152
+		],
+		[
+			"Otowachō Station",
+			34.97836,
+			138.39601
+		],
+		[
+			"Kasugachō Station",
+			34.97843,
+			138.40086
+		],
+		[
+			"Yunoki Station",
+			34.9818,
+			138.406
+		],
+		[
+			"Higashi-Shizuoka Station",
+			34.98464,
+			138.41369
+		],
+		[
+			"Naganuma Station",
+			34.98889,
+			138.41258
+		],
+		[
+			"Furushō Station",
+			34.99271,
+			138.41929
+		],
+		[
+			"Abekawa Station",
+			34.94112,
+			138.36415
+		],
+		[
+			"Ken-Sōgō Undōjō Station",
+			34.99339,
+			138.4299
+		],
+		[
+			"Kenritsu Bijutsukanmae Station",
+			34.99741,
+			138.43794
+		],
+		[
+			"Mochimune Station",
+			34.92261,
+			138.3601
+		],
+		[
+			"Kusanagi Station",
+			35.00282,
+			138.44188
+		]
+	],
+	"alajuela-costa-rica": [
+		[
+			"Alajuela Railway Station",
+			10.00852,
+			-84.20901
+		],
+		[
+			"Fátima Railway Station",
+			10.00166,
+			-84.19535
+		],
+		[
+			"Río Segundo Railway Station",
+			10.00276,
+			-84.18413
+		],
+		[
+			"Belén railway station",
+			9.97845,
+			-84.18501
+		]
+	],
+	"brasov-romania": [
+		[
+			"Bartolomeu railway station",
+			45.6626,
+			25.5745
+		],
+		[
+			"Brașov railway station",
+			45.66116,
+			25.61351
+		],
+		[
+			"Dârste railway station",
+			45.6189,
+			25.65357
+		],
+		[
+			"Brașov Triaj railway station",
+			45.67049,
+			25.65719
+		],
+		[
+			"Stupini railway station",
+			45.69977,
+			25.59594
+		]
+	],
+	"balneario-camboriu-brazil": [],
+	"chesterfield-united-kingdom": [
+		[
+			"Clay Cross railway station",
+			53.1815,
+			-1.40143
+		],
+		[
+			"Chesterfield Road railway station",
+			53.17814,
+			-1.4179
+		],
+		[
+			"Grassmoor railway station",
+			53.2116,
+			-1.3911
+		],
+		[
+			"Clay Cross and Egstow railway station",
+			53.17254,
+			-1.40784
+		],
+		[
+			"Holmgate railway station",
+			53.16818,
+			-1.42311
+		],
+		[
+			"Springfield, ALR railway station",
+			53.16207,
+			-1.41881
+		],
+		[
+			"Clay Lane railway station",
+			53.16207,
+			-1.41881
+		],
+		[
+			"Chesterfield Market Place railway station",
+			53.2348,
+			-1.43208
+		],
+		[
+			"Heath railway station",
+			53.1908,
+			-1.34972
+		],
+		[
+			"Chesterfield railway station",
+			53.23822,
+			-1.41972
+		],
+		[
+			"Chesterfield Central railway station",
+			53.2389,
+			-1.42356
+		],
+		[
+			"Stretton railway station",
+			53.148,
+			-1.423
+		],
+		[
+			"Arkwright Town railway station",
+			53.2306,
+			-1.35953
+		],
+		[
+			"Salter Lane railway station",
+			53.1612,
+			-1.4808
+		]
+	],
+	"biaystok-poland": [
+		[
+			"Białystok Fabryczny train station",
+			53.1403,
+			23.1839
+		],
+		[
+			"Białystok railway station",
+			53.13444,
+			23.13556
+		],
+		[
+			"Białystok Stadion train station",
+			53.098,
+			23.129
+		],
+		[
+			"Białystok Starosielce train station",
+			53.1226,
+			23.0851
+		],
+		[
+			"Klepacze",
+			53.1075,
+			23.0884
+		],
+		[
+			"Białystok Bacieczki train station",
+			53.1511,
+			23.0717
+		],
+		[
+			"Wasilków",
+			53.1981,
+			23.1769
+		]
+	],
+	"kanazawa-japan": [
+		[
+			"Kanazawa Station",
+			36.57827,
+			136.64776
+		],
+		[
+			"Nanatsuya Station",
+			36.58311,
+			136.65175
+		],
+		[
+			"Kamimoroe Station",
+			36.59078,
+			136.6489
+		],
+		[
+			"Isobe Station",
+			36.59654,
+			136.64825
+		],
+		[
+			"Nomachi Station",
+			36.55396,
+			136.64441
+		],
+		[
+			"Higashi-Kanazawa Station",
+			36.5937,
+			136.6697
+		],
+		[
+			"Waridashi Station",
+			36.60263,
+			136.64843
+		],
+		[
+			"Nishiizumi Station",
+			36.55343,
+			136.63361
+		],
+		[
+			"Mitsukuchi Station",
+			36.60659,
+			136.64759
+		],
+		[
+			"Shin-Nishi-Kanazawa Station",
+			36.55307,
+			136.62281
+		],
+		[
+			"Nishi-Kanazawa Station",
+			36.55321,
+			136.62164
+		],
+		[
+			"Mitsuya Station",
+			36.61195,
+			136.6456
+		],
+		[
+			"Okobata Station",
+			36.61681,
+			136.64336
+		],
+		[
+			"Oshino Station",
+			36.54191,
+			136.62209
+		]
+	],
+	"villach-austria": [
+		[
+			"Villach Westbahnhof",
+			46.60869,
+			13.83834
+		],
+		[
+			"Villach Hbf",
+			46.61833,
+			13.84833
+		],
+		[
+			"Villach Warmbad railway station",
+			46.58872,
+			13.82876
+		],
+		[
+			"Villach Seebach railway station",
+			46.62089,
+			13.87453
+		],
+		[
+			"Villach-Landskron railway station",
+			46.63012,
+			13.87566
+		],
+		[
+			"Gödersdorf bei Villach",
+			46.56839,
+			13.84687
+		],
+		[
+			"Villach Sankt Ruprecht",
+			46.64096,
+			13.87635
+		],
+		[
+			"Finkenstein",
+			46.56883,
+			13.86788
+		],
+		[
+			"Fürnitz railway station",
+			46.56317,
+			13.81364
+		]
+	],
+	"kagoshima-japan": [
+		[
+			"Kagoshima‐Chūō Station",
+			31.58367,
+			130.54172
+		],
+		[
+			"Kagoshima Station",
+			31.60213,
+			130.5642
+		],
+		[
+			"Kōrimoto Station",
+			31.56544,
+			130.54212
+		],
+		[
+			"Sengan-en Station",
+			31.61661,
+			130.57669
+		],
+		[
+			"Minami-Kagoshima Station",
+			31.5545,
+			130.5434
+		],
+		[
+			"Hiroki Station",
+			31.57687,
+			130.50384
+		],
+		[
+			"Usuki Station",
+			31.5442,
+			130.536
+		]
+	],
+	"burgas-bulgaria": [
+		[
+			"Burgas Railway Station",
+			42.49099,
+			27.47274
+		],
+		[
+			"Vladimir Pavlov",
+			42.50111,
+			27.45767
+		],
+		[
+			"Bourgas-Tovarna",
+			42.51306,
+			27.43889
+		],
+		[
+			"Bourgas-Razpredelitelna-halte",
+			42.51743,
+			27.42442
+		],
+		[
+			"Bourgas-Razpredelitelna",
+			42.51723,
+			27.42338
+		],
+		[
+			"Lozovo-halte",
+			42.51993,
+			27.40755
+		]
+	],
+	"huelva-spain": [
+		[
+			"Train Station of Huelva",
+			37.25244,
+			-6.94486
+		],
+		[
+			"Huelva-Mercancías train station",
+			37.26396,
+			-6.91615
+		],
+		[
+			"Puntal de la Cruz train station",
+			37.2649,
+			-6.97433
+		],
+		[
+			"Corrales railway station",
+			37.27796,
+			-6.98774
+		]
+	],
+	"limassol-cyprus": [],
+	"salerno-italy": [
+		[
+			"Mercatello railway station",
+			40.65887,
+			14.80472
+		],
+		[
+			"Salerno railway station",
+			40.67539,
+			14.77242
+		],
+		[
+			"Salerno Irno railway station",
+			40.6829,
+			14.7757
+		],
+		[
+			"Arechi train station",
+			40.6483,
+			14.82445
+		],
+		[
+			"Fratte railway station",
+			40.6994,
+			14.7756
+		],
+		[
+			"Vietri sul Mare-Amalfi railway station",
+			40.6742,
+			14.72781
+		]
+	],
+	"agrigento-italy": [
+		[
+			"Tempio di Vulcano",
+			37.29279,
+			13.57947
+		],
+		[
+			"Agrigento Centrale railway station",
+			37.3091,
+			13.5847
+		],
+		[
+			"Agrigento Bassa railway station",
+			37.3192,
+			13.588
+		],
+		[
+			"Porto Empedocle railway station",
+			37.2917,
+			13.5379
+		],
+		[
+			"Favara railway station",
+			37.30528,
+			13.65448
+		],
+		[
+			"Porto Empedocle Cannelle train station",
+			37.2873,
+			13.52413
+		]
+	],
+	"katowice-poland": [
+		[
+			"Katowice Akademia",
+			50.25643,
+			19.02933
+		],
+		[
+			"Katowice Zawodzie",
+			50.2572,
+			19.0581
+		],
+		[
+			"Katowice railway station",
+			50.25833,
+			19.0175
+		],
+		[
+			"Katowice Dąbrówka Mała train station",
+			50.2756,
+			19.0667
+		],
+		[
+			"Siemianowice Śląskie Wąskotorowe",
+			50.2942,
+			19.0325
+		],
+		[
+			"Katowice Załęże train station",
+			50.2636,
+			18.9904
+		],
+		[
+			"Katowice Szopienice Północne",
+			50.2642,
+			19.0914
+		],
+		[
+			"Siemianowice Śląskie train station",
+			50.2989,
+			19.0343
+		],
+		[
+			"Katowice Muchowiec",
+			50.2253,
+			19.01028
+		],
+		[
+			"Siemianowice Bytków",
+			50.31081,
+			19.00408
+		],
+		[
+			"Katowice Ligota",
+			50.2261,
+			18.9781
+		],
+		[
+			"Katowice Kostuchna",
+			50.2261,
+			18.9781
+		],
+		[
+			"Katowice Ochojec",
+			50.2261,
+			18.9781
+		],
+		[
+			"Sosnowiec Południowy",
+			50.2694,
+			19.1253
+		]
+	],
+	"cromer-united-kingdom": [
+		[
+			"Cromer railway station",
+			52.9305,
+			1.2926
+		],
+		[
+			"Roughton Road railway station",
+			52.91792,
+			1.29973
+		],
+		[
+			"Cromer High railway station",
+			52.9199,
+			1.3055
+		],
+		[
+			"West Runton railway station",
+			52.9355,
+			1.2457
+		],
+		[
+			"Overstrand railway station",
+			52.9149,
+			1.3357
+		],
+		[
+			"Sidestrand Halt railway station",
+			52.9067,
+			1.3562
+		],
+		[
+			"Sheringham railway station",
+			52.941,
+			1.211
+		],
+		[
+			"Sheringham railway station (North Norfolk Railway)",
+			52.9418,
+			1.208
+		]
+	],
+	"florence-italy": [
+		[
+			"Firenze Santa Maria Novella railway station",
+			43.77634,
+			11.24753
+		],
+		[
+			"Firenze Campo di Marte railway station",
+			43.77759,
+			11.27629
+		],
+		[
+			"Le Cure train station",
+			43.7867,
+			11.2683
+		],
+		[
+			"Firenze Statuto railway station",
+			43.7874,
+			11.2503
+		],
+		[
+			"Florence Belfiore railway station",
+			43.7845,
+			11.2427
+		],
+		[
+			"Firenze San Marco Vecchio train station",
+			43.791,
+			11.2677
+		],
+		[
+			"Firenze Rifredi railway station",
+			43.80028,
+			11.23667
+		],
+		[
+			"Firenze Castello railway station",
+			43.8194,
+			11.2183
+		]
+	],
+	"canggu-indonesia": [],
+	"granada-spain": [[
+		"Granada train station",
+		37.18401,
+		-3.60915
+	], [
+		"Sur station",
+		37.1887,
+		-3.61519
+	]],
+	"umea-sweden": [[
+		"Umeå Central Station",
+		63.83,
+		20.267
+	], [
+		"Umeå Östra station",
+		63.8175,
+		20.29306
+	]],
+	"presidente-prudente-brazil": [[
+		"Presidente Prudente",
+		-22.1232,
+		-51.3822
+	]],
+	"arras-france": [[
+		"Arras railway station",
+		50.2869,
+		2.78139
+	], [
+		"Gare de Bailleul-Sir-Berthoult",
+		50.3352,
+		2.8411
+	]],
+	"pattaya-thailand": [[
+		"Pattaya Railway Station",
+		12.9402,
+		100.9093
+	]],
+	"makarska-croatia": [],
+	"honfleur-france": [[
+		"Gare de La Rivière-Saint-Sauveur",
+		49.40589,
+		.27396
+	]],
+	"anaheim-united-states": [[
+		"Anaheim Regional Transportation Intermodal Center",
+		33.80333,
+		-117.8775
+	], [
+		"Orange",
+		33.7888,
+		-117.8573
+	]],
+	"washington-dc-unitedstates": [
+		[
+			"Washington Union Station",
+			38.89731,
+			-77.00626
+		],
+		[
+			"L'Enfant",
+			38.88554,
+			-77.02092
+		],
+		[
+			"Crystal City station",
+			38.8594,
+			-77.0483
+		]
+	],
+	"amersfoort-netherlands": [
+		[
+			"Amersfoort Schothorst railway station",
+			52.17472,
+			5.40361
+		],
+		[
+			"Amersfoort Central railway station",
+			52.15389,
+			5.37417
+		],
+		[
+			"Amersfoort Vathorst railway station",
+			52.1925,
+			5.43361
+		],
+		[
+			"Hoevelaken railway station",
+			52.16639,
+			5.45833
+		],
+		[
+			"Soest railway station",
+			52.17306,
+			5.31
+		],
+		[
+			"Soest Zuid railway station",
+			52.16528,
+			5.30306
+		],
+		[
+			"Groote Melmweg",
+			52.19054,
+			5.30726
+		],
+		[
+			"Soestdijk railway station",
+			52.18361,
+			5.29944
+		]
+	],
+	"miyazaki-japan": [
+		[
+			"Miyazaki-Jingū Station",
+			31.93833,
+			131.43056
+		],
+		[
+			"Miyazaki Station",
+			31.91583,
+			131.43201
+		],
+		[
+			"Hasugaike Station",
+			31.96028,
+			131.44278
+		],
+		[
+			"Minami-Miyazaki Station",
+			31.895,
+			131.42222
+		],
+		[
+			"Tayoshi Station",
+			31.8792,
+			131.43
+		],
+		[
+			"Miyazaki Airport Station",
+			31.87247,
+			131.43956
+		],
+		[
+			"Kanō Station",
+			31.87583,
+			131.40611
+		]
+	],
+	"krynica-zdroj-poland": [
+		[
+			"Krynica-Zdrój railway station",
+			49.41,
+			20.9575
+		],
+		[
+			"Krynica Wieś",
+			49.3986,
+			20.9597
+		],
+		[
+			"Powroźnik train station",
+			49.36779,
+			20.93972
+		]
+	],
+	"kosice-slovakia": [
+		[
+			"Košice railway station",
+			48.7225,
+			21.26806
+		],
+		[
+			"Košice-Predmestie railway station",
+			48.7085,
+			21.2659
+		],
+		[
+			"Ťahanovce",
+			48.7558,
+			21.2531
+		],
+		[
+			"Barca",
+			48.67926,
+			21.27634
+		]
+	],
+	"tilburg-netherlands": [
+		[
+			"Tilburg Universiteit railway station",
+			51.56528,
+			5.05139
+		],
+		[
+			"Tilburg railway station",
+			51.56028,
+			5.08361
+		],
+		[
+			"Tilburg Reeshof railway station",
+			51.57389,
+			4.99278
+		]
+	],
+	"arcachon-france": [
+		[
+			"Arcachon",
+			44.65884,
+			-1.16544
+		],
+		[
+			"La Teste railway station",
+			44.63705,
+			-1.14273
+		],
+		[
+			"La Hume",
+			44.63998,
+			-1.11607
+		]
+	],
+	"erfurt-germany": [
+		[
+			"Schmira railway station",
+			50.9632,
+			10.97157
+		],
+		[
+			"Bindersleben railway station",
+			50.9726,
+			10.94362
+		],
+		[
+			"Erfurt-Bischleben railway station",
+			50.9342,
+			10.9886
+		],
+		[
+			"Erfurt West railway station",
+			50.97341,
+			11.00193
+		],
+		[
+			"Alach railway station",
+			50.98468,
+			10.92659
+		],
+		[
+			"Erfurt Central Station",
+			50.97252,
+			11.03799
+		],
+		[
+			"Neudietendorf railway station",
+			50.91423,
+			10.91056
+		],
+		[
+			"Zimmernsupra-Töttelstädt railway station",
+			50.99221,
+			10.89117
+		],
+		[
+			"Erfurt Nord railway station",
+			51.0033,
+			11.0293
+		]
+	],
+	"leeuwarden-netherlands": [
+		[
+			"Leeuwarden railway station",
+			53.19649,
+			5.79324
+		],
+		[
+			"Leeuwarden Halte railway station",
+			53.21169,
+			5.77563
+		],
+		[
+			"Leeuwarden Camminghaburen railway station",
+			53.20194,
+			5.84167
+		],
+		[
+			"Jellum-Boxum",
+			53.17194,
+			5.73722
+		],
+		[
+			"Deinum railway station",
+			53.18861,
+			5.72833
+		],
+		[
+			"Jelsum",
+			53.23222,
+			5.77744
+		],
+		[
+			"Beers",
+			53.15591,
+			5.7277
+		],
+		[
+			"Cornjum",
+			53.24437,
+			5.77694
+		]
+	],
+	"obidos-portugal": [
+		[
+			"Óbidos halt",
+			39.36486,
+			-9.15908
+		],
+		[
+			"Dagorda-Peniche halt",
+			39.3445,
+			-9.17243
+		],
+		[
+			"São Mamede halt",
+			39.32195,
+			-9.17935
+		],
+		[
+			"Estação Ferroviária de Caldas da Rainha",
+			39.4065,
+			-9.14059
+		]
+	],
+	"campinas-brazil": [[
+		"Campinas train station",
+		-22.90864,
+		-47.06704
+	]],
+	"asuncion-paraguay": [],
+	"astorga-spain": [
+		[
+			"Train station of Astorga",
+			42.45942,
+			-6.04722
+		],
+		[
+			"Astorga-Clasificación train station",
+			42.44778,
+			-6.04375
+		],
+		[
+			"estación de Nistal",
+			42.42444,
+			-6.008
+		],
+		[
+			"Valderrey train station",
+			42.40939,
+			-6.00722
+		],
+		[
+			"estación de Otero de Escarpizo",
+			42.51381,
+			-6.05517
+		]
+	],
+	"okayama-japan": [
+		[
+			"Okayama Station",
+			34.66637,
+			133.91859
+		],
+		[
+			"Bizen-Mikado Station",
+			34.66781,
+			133.90043
+		],
+		[
+			"Ōmoto Station",
+			34.64742,
+			133.91075
+		],
+		[
+			"Nishigawara Station",
+			34.67896,
+			133.93772
+		],
+		[
+			"Hōkaiin Station",
+			34.6851,
+			133.9265
+		],
+		[
+			"Daianji Station",
+			34.66302,
+			133.88705
+		],
+		[
+			"Kitanagase Station",
+			34.65303,
+			133.88552
+		],
+		[
+			"Bizen-Nishiichi Station",
+			34.63182,
+			133.90018
+		],
+		[
+			"Takashima Station",
+			34.68318,
+			133.9581
+		],
+		[
+			"Bizen-Hara Station",
+			34.705,
+			133.945
+		],
+		[
+			"Bizen-Ichinomiya Station",
+			34.6789,
+			133.86412
+		],
+		[
+			"Niwase Station",
+			34.64284,
+			133.85387
+		],
+		[
+			"Higashi-Okayama Station",
+			34.68564,
+			133.9881
+		],
+		[
+			"Kibitsu Station",
+			34.67434,
+			133.84603
+		]
+	],
+	"osaka-japan": [
+		[
+			"Matsuyamachi Station",
+			34.67548,
+			135.51247
+		],
+		[
+			"Naniwabashi Station",
+			34.69297,
+			135.50594
+		],
+		[
+			"Temmabashi Station",
+			34.6902,
+			135.51663
+		],
+		[
+			"Yodoyabashi Station",
+			34.6923,
+			135.501
+		],
+		[
+			"Ōebashi Station",
+			34.69436,
+			135.49996
+		],
+		[
+			"Ōsakatemmangū Station",
+			34.6973,
+			135.513
+		],
+		[
+			"Watanabebashi Station",
+			34.6938,
+			135.495
+		],
+		[
+			"Kintetsu Nippombashi Station",
+			34.66695,
+			135.50582
+		],
+		[
+			"Kitashinchi Station",
+			34.69832,
+			135.49704
+		],
+		[
+			"Ōsaka Namba Station",
+			34.66711,
+			135.49914
+		],
+		[
+			"Ōsakajō-kitazume Station",
+			34.6939,
+			135.526
+		],
+		[
+			"Nakanoshima Station",
+			34.69091,
+			135.48686
+		],
+		[
+			"Nankai Shin-Namba  Station",
+			34.66575,
+			135.4989
+		],
+		[
+			"JR Namba Station",
+			34.66642,
+			135.49533
+		]
+	],
+	"memphis-united-states": [[
+		"Central Station",
+		35.1323,
+		-90.0594
+	]],
+	"ancona-italy": [
+		[
+			"Ancona railway station",
+			43.60743,
+			13.49777
+		],
+		[
+			"Varano railway station",
+			43.57478,
+			13.52316
+		],
+		[
+			"Ancona Stadio railway station",
+			43.56642,
+			13.52081
+		]
+	],
+	"puerto-varas-chile": [[
+		"Estación Puerto Varas",
+		-41.31324,
+		-72.98384
+	]],
+	"krakow-poland": [
+		[
+			"Kraków Główny railway station",
+			50.06556,
+			19.94722
+		],
+		[
+			"Kraków Grzegórzki",
+			50.0528,
+			19.958
+		],
+		[
+			"Kraków Zabłocie",
+			50.0472,
+			19.9581
+		],
+		[
+			"Kraków Dąbie",
+			50.0634,
+			19.972
+		],
+		[
+			"Kraków Olsza train station",
+			50.0775,
+			19.9653
+		],
+		[
+			"Kraków Łobzów railway station",
+			50.082,
+			19.9176
+		],
+		[
+			"Kraków Podgórze train station",
+			50.04167,
+			19.96044
+		],
+		[
+			"Kraków Wieczysta",
+			50.0711,
+			19.9825
+		],
+		[
+			"Kraków Bonarka train station",
+			50.0292,
+			19.9459
+		],
+		[
+			"Kraków Płaszów train station",
+			50.035,
+			19.9747
+		],
+		[
+			"Kraków Łagiewniki train station",
+			50.0223,
+			19.9335
+		],
+		[
+			"Kraków Sanktuarium train station",
+			50.0127,
+			19.9341
+		],
+		[
+			"Czyżyny",
+			50.0739,
+			20.0147
+		],
+		[
+			"apeadero Kraków Prokocim",
+			50.0264,
+			20.0008
+		]
+	],
+	"ubud-indonesia": [],
+	"viseu-portugal": [
+		[
+			"Apeadeiro de Vildemoinhos",
+			40.66032,
+			-7.93221
+		],
+		[
+			"estación de Abraveses",
+			40.67815,
+			-7.92593
+		],
+		[
+			"Travassós de Orgens halt",
+			40.66521,
+			-7.95528
+		],
+		[
+			"Figueiró train station",
+			40.65687,
+			-7.97098
+		],
+		[
+			"Campo",
+			40.70047,
+			-7.93224
+		],
+		[
+			"Mozelos",
+			40.70034,
+			-7.94546
+		],
+		[
+			"Travanca - Bodiosa",
+			40.71379,
+			-7.96074
+		]
+	],
+	"chiba-japan": [
+		[
+			"Kemigawahama Station",
+			35.63703,
+			140.05917
+		],
+		[
+			"Inage-Kaigan Station",
+			35.6295,
+			140.07389
+		],
+		[
+			"Keisei Inage Station",
+			35.6376,
+			140.0857
+		],
+		[
+			"Shin-Kemigawa Station",
+			35.6514,
+			140.0731
+		],
+		[
+			"Kemigawa Station",
+			35.6523,
+			140.0666
+		],
+		[
+			"Inage Station",
+			35.63708,
+			140.09263
+		],
+		[
+			"Kaihimmakuhari Station",
+			35.64833,
+			140.04186
+		],
+		[
+			"Midori-dai Station",
+			35.625,
+			140.0976
+		],
+		[
+			"Makuhari Station",
+			35.6594,
+			140.0577
+		],
+		[
+			"Keisei Makuhari Station",
+			35.6607,
+			140.0557
+		],
+		[
+			"Nishi-Chiba Station",
+			35.62258,
+			140.10328
+		],
+		[
+			"Nishi-Nobuto Station",
+			35.6174,
+			140.1027
+		],
+		[
+			"Makuhari-Toyosuna Station",
+			35.6579,
+			140.0272
+		],
+		[
+			"Shin-Chiba Station",
+			35.6122,
+			140.1083
+		]
+	],
+	"cuneo-italy": [[
+		"Cuneo Gesso railway station",
+		44.3942,
+		7.55587
+	], [
+		"Cuneo railway station",
+		44.38778,
+		7.53639
+	]],
+	"phnom-penh-cambodia": [[
+		"Phnom Penh railway station",
+		11.5725,
+		104.9167
+	]],
+	"quarteira-portugal": [
+		[
+			"Várzea da Mão Halt",
+			37.11095,
+			-8.08863
+		],
+		[
+			"Loulé train station",
+			37.1044,
+			-8.05835
+		],
+		[
+			"Vale Judeu Halt",
+			37.1135,
+			-8.0997
+		],
+		[
+			"Vale de Éguas Halt",
+			37.09805,
+			-8.04397
+		],
+		[
+			"Benfarras Halt",
+			37.11702,
+			-8.12092
+		],
+		[
+			"Almancil halt",
+			37.09506,
+			-8.02399
+		]
+	],
+	"tomar-portugal": [
+		[
+			"Tomar train station",
+			39.59845,
+			-8.41263
+		],
+		[
+			"Carvalhos de Figueiredo railway station",
+			39.57067,
+			-8.39508
+		],
+		[
+			"Paialvo train station",
+			39.57961,
+			-8.47377
+		],
+		[
+			"Estación de Santa Cita",
+			39.55285,
+			-8.3931
+		],
+		[
+			"Curvaceiras halt",
+			39.54789,
+			-8.42993
+		]
+	],
+	"parma-italy": [[
+		"Parma railway station",
+		44.81027,
+		10.32839
+	], [
+		"Vicofertile railway station",
+		44.7787,
+		10.2581
+	]],
+	"carcassonne-france": [[
+		"Gare de Carcassonne",
+		43.21806,
+		2.35194
+	], [
+		"Gare de Couffoulens-Leuc",
+		43.15555,
+		2.31622
+	]],
+	"lugano-switzerland": [
+		[
+			"Lugano railway station",
+			46.00551,
+			8.94688
+		],
+		[
+			"Lugano-Paradiso railway station",
+			45.98896,
+			8.94628
+		],
+		[
+			"Sorengo railway station",
+			46.0004,
+			8.93483
+		],
+		[
+			"Sorengo Laghetto railway station",
+			45.99682,
+			8.93334
+		],
+		[
+			"Cappella-Agnuzzo railway station",
+			45.99327,
+			8.92445
+		],
+		[
+			"Bioggio Molinazzo railway station",
+			46.01237,
+			8.91401
+		],
+		[
+			"Bioggio railway station",
+			46.01212,
+			8.90889
+		],
+		[
+			"Serocca railway station",
+			46.00853,
+			8.90457
+		],
+		[
+			"Agno railway station",
+			45.99594,
+			8.90092
+		],
+		[
+			"Lamone-Cadempino railway station",
+			46.03973,
+			8.93212
+		],
+		[
+			"Melide railway station",
+			45.95571,
+			8.94836
+		],
+		[
+			"Magliaso Paese railway station",
+			45.98341,
+			8.89058
+		],
+		[
+			"Magliaso railway station",
+			45.98165,
+			8.88412
+		],
+		[
+			"Taverne-Torricella railway station",
+			46.05669,
+			8.93033
+		]
+	],
+	"biarritz-france": [[
+		"Gare de Biarritz",
+		43.45924,
+		-1.5459
+	]],
+	"kuta-indonesia": [],
+	"le-puy-en-velay-france": [[
+		"Le Puy-en-Velay railway station",
+		45.04278,
+		3.89257
+	]],
+	"viareggio-italy": [
+		[
+			"Viareggio railway station",
+			43.874,
+			10.2529
+		],
+		[
+			"Camaiore Lido-Capezzano",
+			43.9122,
+			10.2477
+		],
+		[
+			"Torre del Lago Puccini railway station",
+			43.8264,
+			10.2902
+		]
+	],
+	"hull-united-kingdom": [
+		[
+			"Hull Botanic Gardens railway station",
+			53.7519,
+			-.3606
+		],
+		[
+			"Boothferry Park Halt railway station",
+			53.7416,
+			-.387
+		],
+		[
+			"Manor House Street railway station",
+			53.7388,
+			-.3408
+		],
+		[
+			"Stepney railway station",
+			53.757,
+			-.349
+		],
+		[
+			"Hull Cannon Street railway station",
+			53.7519,
+			-.33799
+		],
+		[
+			"Sculcoates railway station",
+			53.7587,
+			-.3366
+		],
+		[
+			"Beverley Road railway station",
+			53.7629,
+			-.347
+		],
+		[
+			"Hull Victoria Dock railway station",
+			53.7449,
+			-.3175
+		],
+		[
+			"Wilmington railway station",
+			53.7596,
+			-.33
+		],
+		[
+			"New Holland Pier railway station",
+			53.7086,
+			-.3662
+		],
+		[
+			"Southcoates railway station",
+			53.751,
+			-.315
+		],
+		[
+			"New Holland Town railway station",
+			53.7045,
+			-.3635
+		],
+		[
+			"New Holland railway station",
+			53.702,
+			-.36
+		],
+		[
+			"Springhead Halt railway station",
+			53.7492,
+			-.4275
+		]
+	],
+	"windhoek-namibia": [[
+		"Windhoek railway station",
+		-22.55943,
+		17.08095
+	]],
+	"gliwice-poland": [
+		[
+			"Gliwice railway station",
+			50.30139,
+			18.67722
+		],
+		[
+			"Gliwice Trynek train station",
+			50.2828,
+			18.6786
+		],
+		[
+			"Gliwice Lokomotywownia",
+			50.29599,
+			18.69012
+		],
+		[
+			"Gliwice Wąskotorowe",
+			50.2908,
+			18.6953
+		],
+		[
+			"Sośnica",
+			50.2957,
+			18.7372
+		],
+		[
+			"Zabrze Makoszowy Kopalnia train station",
+			50.2814,
+			18.7631
+		],
+		[
+			"Gliwice Łabędy train station",
+			50.3403,
+			18.6217
+		]
+	],
+	"alessandria-italy": [[
+		"Alessandria railway station",
+		44.90917,
+		8.60639
+	], [
+		"Valmadonna railway station",
+		44.9726,
+		8.61087
+	]],
+	"ha-long-vietnam": [[
+		"Cái Lân railway station",
+		20.97167,
+		107.04028
+	], [
+		"Ha Long Railway Station",
+		20.97444,
+		107.01083
+	]],
+	"worcester-unitedkingdom": [
+		[
+			"Rushwick Halt railway station",
+			52.1829,
+			-2.2602
+		],
+		[
+			"Bransford Road railway station",
+			52.1686,
+			-2.2866
+		],
+		[
+			"Boughton Halt railway station",
+			52.1874,
+			-2.2494
+		],
+		[
+			"Henwick railway station",
+			52.191,
+			-2.2354
+		],
+		[
+			"Newland Halt railway station",
+			52.147,
+			-2.3013
+		],
+		[
+			"Worcester Foregate Street railway station",
+			52.195,
+			-2.222
+		],
+		[
+			"Worcester Shrub Hill railway station",
+			52.19478,
+			-2.20943
+		],
+		[
+			"Leigh Court railway station",
+			52.181,
+			-2.3207
+		],
+		[
+			"Norton Halt railway station",
+			52.1576,
+			-2.174
+		],
+		[
+			"Malvern Link railway station",
+			52.12515,
+			-2.3194
+		],
+		[
+			"Worcestershire Parkway railway station",
+			52.1556,
+			-2.16087
+		],
+		[
+			"Blackpole Halt railway station",
+			52.2182,
+			-2.199
+		]
+	],
+	"funchal-portugal": [[
+		"Estação Ferroviária do Monte",
+		32.67678,
+		-16.90318
+	]],
+	"newquay-unitedkingdom": [
+		[
+			"Newquay railway station",
+			50.4145,
+			-5.07529
+		],
+		[
+			"Quintrell Downs railway station",
+			50.4044,
+			-5.02846
+		],
+		[
+			"Benny Halt railway station",
+			50.3757,
+			-5.0411
+		]
+	],
+	"alnwick-united-kingdom": [
+		[
+			"Little Mill railway station",
+			55.4526,
+			-1.6426
+		],
+		[
+			"Alnwick railway station",
+			55.41,
+			-1.699
+		],
+		[
+			"Alnwick Lionheart railway station",
+			55.4022,
+			-1.6864
+		],
+		[
+			"Longhoughton railway station",
+			55.42746,
+			-1.62226
+		],
+		[
+			"Lesbury railway station",
+			55.4063,
+			-1.6375
+		],
+		[
+			"Greenrigg Halt railway station",
+			55.3964,
+			-1.66043
+		],
+		[
+			"Christon Bank Station",
+			55.5012,
+			-1.6644
+		]
+	],
+	"busan-southkorea": [
+		[
+			"Motgol Station",
+			35.1348,
+			129.0848
+		],
+		[
+			"Jigegol Station",
+			35.1357,
+			129.0742
+		],
+		[
+			"Daeyeon Station",
+			35.1351,
+			129.092
+		],
+		[
+			"Munhyeon Station",
+			35.1391,
+			129.0674
+		],
+		[
+			"Kyungsung University–Pukyong National University Station",
+			35.1376,
+			129.101
+		],
+		[
+			"Busan International Finance Center–Busan Bank Station",
+			35.1457,
+			129.0668
+		],
+		[
+			"Jwacheon Station",
+			35.1341,
+			129.054
+		],
+		[
+			"Namcheon Station",
+			35.1421,
+			129.108
+		],
+		[
+			"Busanjin Station",
+			35.12918,
+			129.0505
+		],
+		[
+			"Beomil Station",
+			35.1451,
+			129.057
+		],
+		[
+			"Jeonpo Station",
+			35.1529,
+			129.0654
+		],
+		[
+			"Geumnyeonsan Station",
+			35.1498,
+			129.111
+		],
+		[
+			"Choryang Station",
+			35.1211,
+			129.043
+		],
+		[
+			"Busan station",
+			35.11472,
+			129.04194
+		]
+	],
+	"arica-chile": [[
+		"Arica",
+		-18.47358,
+		-70.31747
+	], [
+		"Estación de Pasajeros y Administración de Arica",
+		-18.47695,
+		-70.32004
+	]],
+	"riccione-italy": [
+		[
+			"Riccione railway station",
+			43.99898,
+			12.65834
+		],
+		[
+			"Misano Adriatico railway station",
+			43.97745,
+			12.6973
+		],
+		[
+			"Rimini Miramare railway halt",
+			44.03,
+			12.6181
+		]
+	],
+	"lugo-spain": [[
+		"Lugo train station",
+		43.01508,
+		-7.55214
+	], [
+		"estación de Lugo-Mercancías",
+		43.05014,
+		-7.55578
+	]],
+	"sliema-malta": [],
+	"bytom-poland": [
+		[
+			"Bytom",
+			50.3434,
+			18.9151
+		],
+		[
+			"Bytom Wąskotorowy train station",
+			50.3425,
+			18.9128
+		],
+		[
+			"Bytom Rozbark",
+			50.3425,
+			18.93223
+		],
+		[
+			"Bytom Karb Wąskotorowy rail yard",
+			50.3503,
+			18.8839
+		],
+		[
+			"Bytom Karb train station",
+			50.3518,
+			18.8821
+		],
+		[
+			"Piekary Śląskie",
+			50.3635,
+			18.937
+		],
+		[
+			"Piekary Śląskie Szarlej",
+			50.3723,
+			18.9178
+		],
+		[
+			"Bytom Bobrek train station",
+			50.3442,
+			18.8769
+		],
+		[
+			"Pole Północne",
+			50.33389,
+			18.94891
+		],
+		[
+			"Kopalnia Śląsk",
+			50.31806,
+			18.91474
+		],
+		[
+			"Buchacz",
+			50.38139,
+			18.90584
+		],
+		[
+			"Bytom Północny train station",
+			50.3772,
+			18.8803
+		],
+		[
+			"Brzeziny Śląskie Wąskotorowe",
+			50.33946,
+			18.96808
+		],
+		[
+			"Bytom Stroszek",
+			50.38449,
+			18.8842
+		]
+	],
+	"vannes-france": [[
+		"Gare de Vannes",
+		47.66528,
+		-2.7525
+	]],
+	"chattanooga-united-states": [],
+	"stresa-italy": [
+		[
+			"Stresa railway station",
+			45.8846,
+			8.53172
+		],
+		[
+			"Belgirate railway station",
+			45.84335,
+			8.57108
+		],
+		[
+			"Intra",
+			45.9358,
+			8.57542
+		],
+		[
+			"Laveno-Mombello Lago railway station",
+			45.9084,
+			8.61864
+		]
+	],
+	"lucca-italy": [
+		[
+			"Lucca railway station",
+			43.8375,
+			10.50611
+		],
+		[
+			"Ripafratta railway station",
+			43.8217,
+			10.416
+		],
+		[
+			"Nozzano railway station",
+			43.82997,
+			10.40717
+		],
+		[
+			"Rigoli railway station",
+			43.7896,
+			10.4199
+		],
+		[
+			"Toringo-Parezzana railway station",
+			43.82456,
+			10.53805
+		],
+		[
+			"San Pietro a Vico train station",
+			43.8751,
+			10.5312
+		]
+	],
+	"bauru-brazil": [[
+		"Companhia Paulista Railway Station",
+		-22.31876,
+		-49.07406
+	], [
+		"Northwestern Brazil Central Station",
+		-22.32353,
+		-49.07857
+	]],
+	"vodice-croatia": [],
+	"southampton-united-kingdom": [
+		[
+			"Sholing railway station",
+			50.897,
+			-1.364
+		],
+		[
+			"Woolston railway station",
+			50.89893,
+			-1.37699
+		],
+		[
+			"Southampton Terminus railway station",
+			50.8978,
+			-1.39639
+		],
+		[
+			"Northam railway station",
+			50.9068,
+			-1.3923
+		],
+		[
+			"Netley railway station",
+			50.875,
+			-1.342
+		],
+		[
+			"Bitterne railway station",
+			50.918,
+			-1.377
+		],
+		[
+			"St Denys railway station",
+			50.922,
+			-1.388
+		],
+		[
+			"Southampton West End railway station",
+			50.9076,
+			-1.4119
+		],
+		[
+			"Hamble railway station",
+			50.871,
+			-1.329
+		],
+		[
+			"Southampton Central railway station",
+			50.9075,
+			-1.4141
+		],
+		[
+			"Hythe railway station",
+			50.8661,
+			-1.3955
+		],
+		[
+			"Bursledon railway station",
+			50.884,
+			-1.305
+		],
+		[
+			"Hardley Halt railway station",
+			50.8511,
+			-1.3729
+		],
+		[
+			"Millbrook railway station",
+			50.9116,
+			-1.4343
+		]
+	],
+	"salta-argentina": [[
+		"Salta railway station",
+		-24.77694,
+		-65.41139
+	], [
+		"Batalla de Salta",
+		-24.74111,
+		-65.39597
+	]],
+	"bento-goncalves-brazil": [[
+		"Bento Gonçalves",
+		-29.17367,
+		-51.51755
+	]],
+	"jaipur-india": [[
+		"Jaipur Junction railway station",
+		26.9202,
+		75.78692
+	]],
+	"deventer-netherlands": [
+		[
+			"Colmschate",
+			52.24507,
+			6.20543
+		],
+		[
+			"Deventer Colmschate railway station",
+			52.25,
+			6.21528
+		],
+		[
+			"Deventer node and railway station",
+			52.25697,
+			6.16108
+		],
+		[
+			"Epse",
+			52.21397,
+			6.22427
+		],
+		[
+			"Gorssel railway station",
+			52.20722,
+			6.22833
+		],
+		[
+			"Twello railway station",
+			52.23806,
+			6.1
+		],
+		[
+			"Hoek",
+			52.29905,
+			6.16613
+		]
+	],
+	"caldas-novas-brazil": [],
+	"milan-italy": [
+		[
+			"Milano Cadorna railway station",
+			45.46862,
+			9.1752
+		],
+		[
+			"Milano-Monza",
+			45.48101,
+			9.18997
+		],
+		[
+			"Milano Porta Genova railway station",
+			45.45333,
+			9.16944
+		],
+		[
+			"Milano Porta Garibaldi railway station",
+			45.4846,
+			9.1876
+		],
+		[
+			"Milano Centrale railway station",
+			45.48566,
+			9.20399
+		],
+		[
+			"Milano Lancetti railway station",
+			45.495,
+			9.17611
+		],
+		[
+			"Milano Greco Pirelli railway station",
+			45.51291,
+			9.21419
+		],
+		[
+			"Milano Certosa railway station",
+			45.50667,
+			9.13639
+		]
+	],
+	"iasi-romania": [
+		[
+			"Iași Railway Station",
+			47.16576,
+			27.56986
+		],
+		[
+			"Nicolina railway station",
+			47.14927,
+			27.57709
+		],
+		[
+			"Socola railway station",
+			47.13889,
+			27.60611
+		],
+		[
+			"Remiza T Socola railway station",
+			47.14045,
+			27.64627
+		]
+	],
+	"guimaraes-portugal": [
+		[
+			"Estação Ferroviária de Guimarães",
+			41.43529,
+			-8.29506
+		],
+		[
+			"Apeadero de Aldão-São Torcato",
+			41.45665,
+			-8.26649
+		],
+		[
+			"Apeadero de Penha",
+			41.45117,
+			-8.26084
+		],
+		[
+			"Estación de Paçô Vieira",
+			41.43906,
+			-8.24756
+		],
+		[
+			"Apeadero de Nespereira",
+			41.40314,
+			-8.31953
+		]
+	],
+	"aomori-japan": [
+		[
+			"Aomori Station",
+			40.82941,
+			140.73469
+		],
+		[
+			"Shin-Aomori Station",
+			40.8275,
+			140.69347
+		],
+		[
+			"Tsutsui Station",
+			40.80567,
+			140.76969
+		],
+		[
+			"Higashi-Aomori Station",
+			40.81033,
+			140.78292
+		],
+		[
+			"Aburakawa Station",
+			40.85703,
+			140.69044
+		],
+		[
+			"Koyanagi Station",
+			40.81822,
+			140.79814
+		],
+		[
+			"Tsugaru-Shinjō Station",
+			40.82802,
+			140.67207
+		],
+		[
+			"Yadamae Station",
+			40.83394,
+			140.80728
+		]
+	],
+	"whistler-canada": [[
+		"Whistler railway station",
+		50.09583,
+		-122.99722
+	]],
+	"branson-united-states": [],
+	"barueri-brazil": [
+		[
+			"Santa Terezinha",
+			-23.51662,
+			-46.84803
+		],
+		[
+			"Carapicuíba train station",
+			-23.51854,
+			-46.83531
+		],
+		[
+			"Antônio João train station",
+			-23.51688,
+			-46.85872
+		],
+		[
+			"Barueri railway station",
+			-23.51259,
+			-46.87508
+		],
+		[
+			"General Miguel Costa train station",
+			-23.5235,
+			-46.81564
+		],
+		[
+			"Quitaúna train station",
+			-23.52275,
+			-46.80714
+		],
+		[
+			"Jardim Belval train station",
+			-23.51402,
+			-46.88929
+		],
+		[
+			"Jardim Silveira train station",
+			-23.52357,
+			-46.89354
+		],
+		[
+			"Comandante Sampaio train station",
+			-23.52572,
+			-46.79569
+		],
+		[
+			"Jandira train station",
+			-23.52776,
+			-46.9026
+		]
+	],
+	"tel-aviv-israel": [
+		[
+			"Tel Aviv South train station (1920–1970)",
+			32.06359,
+			34.77754
+		],
+		[
+			"Tel Aviv – HaShalom railway station",
+			32.07349,
+			34.79316
+		],
+		[
+			"Tel Aviv – HaHagana railway station",
+			32.05417,
+			34.78472
+		],
+		[
+			"Tel Aviv – Savidor Central railway station",
+			32.08382,
+			34.79825
+		],
+		[
+			"Holon Junction Railway Station",
+			32.03722,
+			34.77639
+		],
+		[
+			"Holon – Wolfson Railway Station",
+			32.03528,
+			34.75972
+		],
+		[
+			"Tel Aviv – University railway station",
+			32.10362,
+			34.80458
+		],
+		[
+			"Bat Yam-Yoseftal Railway Station",
+			32.015,
+			34.76194
+		]
+	],
+	"catania-italy": [
+		[
+			"Catania Marittima",
+			37.50088,
+			15.09334
+		],
+		[
+			"Catania Centrale railway station",
+			37.50667,
+			15.1
+		],
+		[
+			"Catania Acquicella railway station",
+			37.4928,
+			15.0747
+		],
+		[
+			"Cannizzaro railway station",
+			37.547,
+			15.1298
+		],
+		[
+			"Bicocca railway station",
+			37.4609,
+			15.0448
+		]
+	],
+	"tucson-united-states": [[
+		"Tucson station",
+		32.223,
+		-110.967
+	], [
+		"El Paso and Southwestern Railroad Depot",
+		32.22019,
+		-110.97789
+	]],
+	"valence-france": [[
+		"Valence-Ville railway station",
+		44.92806,
+		4.89278
+	], [
+		"Saint-Péray",
+		44.94776,
+		4.85045
+	]],
+	"cottbus-germany": [
+		[
+			"Stadion der Freundschaft",
+			51.752,
+			14.34672
+		],
+		[
+			"Sandower Dreieck",
+			51.75465,
+			14.35371
+		],
+		[
+			"Spreewaldbahnhof Cottbus",
+			51.75382,
+			14.32388
+		],
+		[
+			"Cottbus central station",
+			51.7508,
+			14.3264
+		],
+		[
+			"Zoo",
+			51.74524,
+			14.35346
+		],
+		[
+			"Park & Schloss Branitz",
+			51.73633,
+			14.35901
+		],
+		[
+			"Merzdorf (b Cottbus) railway station",
+			51.77226,
+			14.38458
+		],
+		[
+			"Willmersdorf (Kr Cottbus) railway station",
+			51.80682,
+			14.37688
+		]
+	],
+	"plovdiv-bulgaria": [
+		[
+			"Plovdiv Central railway station",
+			42.13436,
+			24.7414
+		],
+		[
+			"Vr.depo Plovdiv - halte",
+			42.13027,
+			24.75881
+		],
+		[
+			"Filipovo railway station",
+			42.16669,
+			24.73682
+		],
+		[
+			"Trakiya",
+			42.13327,
+			24.80087
+		],
+		[
+			"Proslav",
+			42.12499,
+			24.686
+		]
+	],
+	"arezzo-italy": [
+		[
+			"Arezzo Casello 1 railway station",
+			43.47028,
+			11.86744
+		],
+		[
+			"Arezzo Pescaiola train station",
+			43.46322,
+			11.85836
+		],
+		[
+			"Arezzo railway station",
+			43.46111,
+			11.87556
+		],
+		[
+			"Puglia-Ceciliano railway station",
+			43.4943,
+			11.87255
+		],
+		[
+			"Arezzo Via Chiari railway station",
+			43.45707,
+			11.82694
+		],
+		[
+			"Indicatore railway station",
+			43.48,
+			11.8033
+		],
+		[
+			"Olmo railway station",
+			43.42074,
+			11.84107
+		],
+		[
+			"Giovi railway station",
+			43.52683,
+			11.86467
+		]
+	],
+	"locarno-switzerland": [
+		[
+			"Minusio railway station",
+			46.17388,
+			8.81927
+		],
+		[
+			"Solduno railway station",
+			46.1695,
+			8.77759
+		],
+		[
+			"San Martino train station",
+			46.17198,
+			8.77037
+		],
+		[
+			"Tenero railway station",
+			46.17747,
+			8.85022
+		],
+		[
+			"Ponte Brolla train station",
+			46.18564,
+			8.75331
+		],
+		[
+			"San Nazzaro railway station",
+			46.13516,
+			8.80706
+		],
+		[
+			"Tegna train station",
+			46.18606,
+			8.74278
+		],
+		[
+			"Magadino-Vira railway station",
+			46.14532,
+			8.85019
+		],
+		[
+			"Gordola railway station",
+			46.17905,
+			8.86577
+		],
+		[
+			"Verscio train station",
+			46.18464,
+			8.72987
+		],
+		[
+			"Gerra (Gambarogno) railway station",
+			46.12204,
+			8.78497
+		],
+		[
+			"Cavigliano train station",
+			46.18375,
+			8.72123
+		],
+		[
+			"Ranzo-Sant'Abbondio railway station",
+			46.117,
+			8.77654
+		],
+		[
+			"Riazzino railway station",
+			46.17534,
+			8.8864
+		]
+	],
+	"canela-brazil": [],
+	"belgrade-serbia": [
+		[
+			"Belgrade Dunav station",
+			44.81949,
+			20.48011
+		],
+		[
+			"Vukov Spomenik railway station",
+			44.80522,
+			20.47734
+		],
+		[
+			"Pančevački most railway station",
+			44.8195,
+			20.4895
+		],
+		[
+			"Karađorđe's Park railway station",
+			44.7931,
+			20.4653
+		],
+		[
+			"Belgrade Centre railway station",
+			44.7936,
+			20.4539
+		],
+		[
+			"Krnjača Bridge railway station",
+			44.84,
+			20.497
+		],
+		[
+			"New Belgrade railway station",
+			44.8067,
+			20.418
+		],
+		[
+			"Krnjača railway station",
+			44.84889,
+			20.50639
+		],
+		[
+			"Topčider railway station",
+			44.777,
+			20.4359
+		],
+		[
+			"Tošin Bunar railway station",
+			44.8178,
+			20.3944
+		],
+		[
+			"Sebeš railway station",
+			44.8612,
+			20.5194
+		]
+	],
+	"nijmegen-netherlands": [
+		[
+			"Nijmegen Goffert railway station",
+			51.82778,
+			5.82361
+		],
+		[
+			"Nijmegen railway station",
+			51.84333,
+			5.8525
+		],
+		[
+			"Nijmegen Heyendaal railway station",
+			51.82667,
+			5.86833
+		],
+		[
+			"Nijmegen Dukenburg railway station",
+			51.82361,
+			5.79472
+		],
+		[
+			"Nijmegen Lent railway station",
+			51.86444,
+			5.85944
+		],
+		[
+			"Lent Thermion",
+			51.87167,
+			5.85872
+		]
+	],
+	"bayonne-france": [
+		[
+			"Bayonne railway station",
+			43.49716,
+			-1.47
+		],
+		[
+			"Gare de Boucau",
+			43.52354,
+			-1.49076
+		],
+		[
+			"Lahonce",
+			43.49084,
+			-1.38346
+		],
+		[
+			"Milafranga/Villefranque station",
+			43.43136,
+			-1.45641
+		]
+	],
+	"nice-france": [
+		[
+			"Nice-Ville railway station",
+			43.70444,
+			7.26194
+		],
+		[
+			"Nice CP Station",
+			43.70889,
+			7.25944
+		],
+		[
+			"Parc Impérial",
+			43.70602,
+			7.25077
+		],
+		[
+			"Gambetta",
+			43.71031,
+			7.25563
+		],
+		[
+			"Nice-Riquier",
+			43.70555,
+			7.29022
+		],
+		[
+			"Saint-Philippe",
+			43.703,
+			7.24514
+		],
+		[
+			"La Madeleine",
+			43.70841,
+			7.23184
+		],
+		[
+			"Gare de Nice-Pont-Michel",
+			43.72222,
+			7.29143
+		],
+		[
+			"Villefranche-sur-Mer railway station",
+			43.70696,
+			7.31428
+		],
+		[
+			"Gare de l'Ariane - La Trinité",
+			43.73473,
+			7.30176
+		],
+		[
+			"Beaulieu-sur-Mer railway station",
+			43.70677,
+			7.33177
+		],
+		[
+			"Crémat–PAL",
+			43.71008,
+			7.20727
+		],
+		[
+			"Nice-Saint-Augustin",
+			43.67076,
+			7.21642
+		],
+		[
+			"Saint-Isidore",
+			43.71186,
+			7.19727
+		]
+	],
+	"aix-en-provence-france": [
+		[
+			"Gare d'Aix-en-Provence",
+			43.52317,
+			5.44512
+		],
+		[
+			"Gare des Milles",
+			43.50276,
+			5.38274
+		],
+		[
+			"La Calade-Éguilles",
+			43.56891,
+			5.39942
+		]
+	],
+	"rapallo-italy": [
+		[
+			"Santa Margherita Ligure-Portofino railway station",
+			44.3366,
+			9.21669
+		],
+		[
+			"Camogli-San Fruttuoso railway stop",
+			44.348,
+			9.15654
+		],
+		[
+			"Recco railway station",
+			44.36113,
+			9.14669
+		]
+	],
+	"spoleto-italy": [
+		[
+			"Spoleto railway station",
+			42.748,
+			12.7363
+		],
+		[
+			"San Giacomo di Spoleto railway station",
+			42.7896,
+			12.7554
+		],
+		[
+			"Baiano di Spoleto railway station",
+			42.7262,
+			12.6637
+		]
+	],
+	"emden-germany": [[
+		"Emden Central Station",
+		53.3689,
+		7.19556
+	], [
+		"Emden Außenhafen",
+		53.3442,
+		7.18611
+	]],
+	"lamego-portugal": [
+		[
+			"Caldas de Moledo Train Stop",
+			41.15301,
+			-7.82676
+		],
+		[
+			"Régua train station",
+			41.1585,
+			-7.78356
+		],
+		[
+			"Estação Ferroviária de Godim",
+			41.1664,
+			-7.7983
+		],
+		[
+			"Rede Train Station",
+			41.1607,
+			-7.86585
+		],
+		[
+			"Bagaúste halt",
+			41.1467,
+			-7.73275
+		],
+		[
+			"Barqueiros railway station",
+			41.14068,
+			-7.88757
+		]
+	],
+	"brindisi-italy": [[
+		"Brindisi Marittima railway station",
+		40.63922,
+		17.94901
+	], [
+		"Brindisi railway station",
+		40.63444,
+		17.93889
+	]],
+	"koblenz-germany": [
+		[
+			"Koblenz Stadtmitte station",
+			50.3575,
+			7.59
+		],
+		[
+			"Koblenz Central Station",
+			50.3506,
+			7.58917
+		],
+		[
+			"Koblenz-Lützel station",
+			50.3677,
+			7.5916
+		],
+		[
+			"Koblenz-Moselweiß",
+			50.34926,
+			7.56043
+		],
+		[
+			"Koblenz-Ehrenbreitstein station",
+			50.3619,
+			7.61028
+		],
+		[
+			"Koblenz-Metternich railway station",
+			50.37062,
+			7.55741
+		],
+		[
+			"Koblenz-Güls",
+			50.34058,
+			7.54909
+		],
+		[
+			"Niederlahnstein station",
+			50.3169,
+			7.59972
+		],
+		[
+			"Vallendar station",
+			50.3996,
+			7.60997
+		],
+		[
+			"Winningen (Mosel)",
+			50.31558,
+			7.52334
+		],
+		[
+			"Oberlahnstein station",
+			50.2998,
+			7.60389
+		]
+	],
+	"doncaster-united-kingdom": [
+		[
+			"Doncaster railway station",
+			53.5225,
+			-1.1395
+		],
+		[
+			"Doncaster (St. James' Bridge) railway station",
+			53.5177,
+			-1.14061
+		],
+		[
+			"Doncaster (York Road) railway station",
+			53.5299,
+			-1.1456
+		],
+		[
+			"Doncaster (Cherry Tree Lane) railway station",
+			53.5171,
+			-1.14266
+		],
+		[
+			"Spike Island railway station",
+			53.5029,
+			-1.11875
+		],
+		[
+			"Arksey railway station",
+			53.5516,
+			-1.13315
+		],
+		[
+			"Bentley Crossing Halt",
+			53.5426,
+			-1.14965
+		],
+		[
+			"Bentley railway station",
+			53.544,
+			-1.151
+		],
+		[
+			"Hexthorpe railway platform",
+			53.5119,
+			-1.1537
+		],
+		[
+			"Bessacarr railway halt",
+			53.4959,
+			-1.07461
+		],
+		[
+			"Kirk Sandall railway station",
+			53.56313,
+			-1.07548
+		],
+		[
+			"Sandall railway station",
+			53.5659,
+			-1.082
+		],
+		[
+			"Barnby Dun railway station",
+			53.568,
+			-1.0658
+		],
+		[
+			"Sprotborough (SYR) railway station",
+			53.5023,
+			-1.18459
+		]
+	],
+	"batumi-georgia": [[
+		"Batumi railway station",
+		41.65861,
+		41.6775
+	], [
+		"Makhinjauri railway station",
+		41.6774,
+		41.6964
+	]],
+	"sintra-portugal": [
+		[
+			"Sintra train station",
+			38.79922,
+			-9.38538
+		],
+		[
+			"Portela de Sintra train station",
+			38.8023,
+			-9.3764
+		],
+		[
+			"Estación de Algueirão-Parque",
+			38.8004,
+			-9.35684
+		],
+		[
+			"Algueirão - Mem Martins train station",
+			38.7976,
+			-9.34144
+		],
+		[
+			"Mercês railway station",
+			38.793,
+			-9.33059
+		],
+		[
+			"Rio de Mouro railway station",
+			38.78447,
+			-9.32162
+		],
+		[
+			"Mira Sintra-Meleças train station",
+			38.78958,
+			-9.31268
+		]
+	],
+	"terrassa-spain": [
+		[
+			"Terrassa Rambla station",
+			41.56056,
+			2.0075
+		],
+		[
+			"Vallparadís Universitat station",
+			41.5637,
+			2.01923
+		],
+		[
+			"Terrassa railway station",
+			41.56978,
+			2.01428
+		],
+		[
+			"Terrassa-Estació del Nord station",
+			41.56984,
+			2.01423
+		],
+		[
+			"Estación de Tarrasa - Can Boada",
+			41.5661,
+			1.99699
+		],
+		[
+			"Terrassa Est station",
+			41.5675,
+			2.03959
+		],
+		[
+			"Terrassa Nacions Unides station",
+			41.5819,
+			2.01321
+		],
+		[
+			"Les Fonts station",
+			41.52833,
+			2.03333
+		],
+		[
+			"Sant Miquel de Gonteres - Viladecavalls station",
+			41.56906,
+			1.97392
+		],
+		[
+			"Viladecavalls Sud station",
+			41.5579,
+			1.95964
+		],
+		[
+			"Viladecavalls station",
+			41.5638,
+			1.95713
+		],
+		[
+			"estación de Castellarnau",
+			41.56378,
+			2.07553
+		],
+		[
+			"Sabadell Can Llong station",
+			41.5634,
+			2.08173
+		],
+		[
+			"Sabadell Parc del Nord railway station",
+			41.57093,
+			2.09054
+		]
+	],
+	"tudela-spain": [[
+		"Tudela de Navarra/Tutera railway and bus station",
+		42.05944,
+		-1.59785
+	]],
+	"helsinki-finland": [
+		[
+			"Helsinki Central Railway Station",
+			60.17105,
+			24.94145
+		],
+		[
+			"Pasila railway station",
+			60.19861,
+			24.93361
+		],
+		[
+			"Pasila car-carrier station",
+			60.204,
+			24.93026
+		],
+		[
+			"Ilmala railway station",
+			60.20778,
+			24.92111
+		],
+		[
+			"Helsinki Kivihaka",
+			60.20981,
+			24.91719
+		],
+		[
+			"Käpylä railway station",
+			60.22056,
+			24.9475
+		],
+		[
+			"Huopalahti railway station",
+			60.21808,
+			24.89376
+		],
+		[
+			"Oulunkylä railway station",
+			60.22806,
+			24.96667
+		]
+	],
+	"braganca-portugal": [
+		[
+			"Mosca",
+			41.76287,
+			-6.79799
+		],
+		[
+			"Rebordãos",
+			41.74182,
+			-6.81444
+		],
+		[
+			"Remisquedo",
+			41.72377,
+			-6.81663
+		]
+	],
+	"taranto-italy": [
+		[
+			"Taranto railway station",
+			40.4835,
+			17.2242
+		],
+		[
+			"Taranto Galese railway station",
+			40.4946,
+			17.2353
+		],
+		[
+			"Nasisi railway station",
+			40.50821,
+			17.25772
+		]
+	],
+	"porec-croatia": [],
+	"apeldoorn-netherlands": [
+		[
+			"Het Loo railway station",
+			52.22989,
+			5.9502
+		],
+		[
+			"Apeldoorn railway station",
+			52.20917,
+			5.9675
+		],
+		[
+			"Assel",
+			52.20091,
+			5.83665
+		],
+		[
+			"Wenum",
+			52.25529,
+			5.96628
+		],
+		[
+			"Apeldoorn De Maten railway station",
+			52.205,
+			6.00028
+		],
+		[
+			"Apeldoorn Osseveld railway station",
+			52.21472,
+			6.00333
+		]
+	],
+	"kotor-montenegro": [],
+	"chiclana-de-la-frontera-spain": [],
+	"lille-france": [
+		[
+			"Lille-Europe railway station",
+			50.63944,
+			3.07528
+		],
+		[
+			"Lille-Flandres station",
+			50.63639,
+			3.07083
+		],
+		[
+			"Fives",
+			50.6252,
+			3.08823
+		],
+		[
+			"Lezennes",
+			50.62052,
+			3.09917
+		],
+		[
+			"Mont-de-Terre",
+			50.61771,
+			3.09647
+		],
+		[
+			"La Madeleine",
+			50.66077,
+			3.07247
+		],
+		[
+			"Gare de Lille-Sud",
+			50.61639,
+			3.05528
+		],
+		[
+			"Gare de Lille-Porte-de-Douai",
+			50.61205,
+			3.0754
+		],
+		[
+			"Saint-André",
+			50.65444,
+			3.04744
+		],
+		[
+			"Hellemmes",
+			50.62279,
+			3.11561
+		],
+		[
+			"Ronchin",
+			50.60438,
+			3.07822
+		],
+		[
+			"Gare de Lille-CHR",
+			50.61454,
+			3.03469
+		],
+		[
+			"Gare de Champ-du-Chêne",
+			50.60602,
+			3.10595
+		],
+		[
+			"Pont-de-Bois",
+			50.62392,
+			3.13059
+		]
+	],
+	"sitges-spain": [
+		[
+			"Sitges railway station",
+			41.23907,
+			1.80967
+		],
+		[
+			"Sitges Llevant",
+			41.2429,
+			1.81766
+		],
+		[
+			"El Garraf Park and Ride station",
+			41.2418,
+			1.77207
+		],
+		[
+			"Sant Pere de Ribes-Hospital de Sant Camil station",
+			41.2535,
+			1.76833
+		],
+		[
+			"Vallcarca train station",
+			41.24058,
+			1.86122
+		],
+		[
+			"Vilanova Est",
+			41.2317,
+			1.74163
+		],
+		[
+			"Vilanova i la Geltrú railway station",
+			41.22028,
+			1.73078
+		]
+	],
+	"interlaken-switzerland": [
+		[
+			"Interlaken West railway station",
+			46.68263,
+			7.85145
+		],
+		[
+			"Interlaken Ost railway station",
+			46.6905,
+			7.869
+		],
+		[
+			"Matten bei Interlaken railway station",
+			46.67398,
+			7.87262
+		],
+		[
+			"Wilderswil railway station",
+			46.6657,
+			7.86947
+		],
+		[
+			"Ringgenberg railway station",
+			46.70386,
+			7.89981
+		],
+		[
+			"Därligen railway station",
+			46.65976,
+			7.81473
+		],
+		[
+			"Breitlauenen railway station",
+			46.65952,
+			7.896
+		],
+		[
+			"Schynige Platte railway station",
+			46.65228,
+			7.91104
+		],
+		[
+			"Niederried railway station",
+			46.71642,
+			7.92867
+		],
+		[
+			"Zweilütschinen railway station",
+			46.6327,
+			7.8997
+		],
+		[
+			"Leissigen railway station",
+			46.65511,
+			7.77501
+		]
+	],
+	"dax-france": [[
+		"Dax railway station",
+		43.72084,
+		-1.05038
+	]],
+	"nagasaki-japan": [
+		[
+			"Nagasaki Station",
+			32.75275,
+			129.86908
+		],
+		[
+			"Urakami Station",
+			32.76545,
+			129.86329
+		],
+		[
+			"Nishi-Urakami Station",
+			32.79047,
+			129.85901
+		],
+		[
+			"Michinoo Station",
+			32.8044,
+			129.85284
+		],
+		[
+			"Utsutsugawa Station",
+			32.7911,
+			129.926
+		]
+	],
+	"valdosta-united-states": [],
+	"banff-canada": [[
+		"Banff railway station",
+		51.1819,
+		-115.576
+	]],
+	"ta-if-saudi-arabia": [],
+	"puerto-princesa-philippines": [],
+	"cork-ireland": [
+		[
+			"Cork Capwell railway station",
+			51.891,
+			-8.468
+		],
+		[
+			"Cork Albert Street railway station",
+			51.89779,
+			-8.4645
+		],
+		[
+			"Cork Albert Quay railway station",
+			51.89827,
+			-8.46211
+		],
+		[
+			"Cork Kent railway station",
+			51.90179,
+			-8.45883
+		],
+		[
+			"Cork Western Road railway station",
+			51.8961,
+			-8.4836
+		],
+		[
+			"Tivoli railway station",
+			51.90271,
+			-8.43043
+		],
+		[
+			"Blackrock (CBPR) railway station",
+			51.89617,
+			-8.41945
+		],
+		[
+			"Victoria (CMLR) railway station",
+			51.8928,
+			-8.5053
+		],
+		[
+			"Rochestown railway station",
+			51.87739,
+			-8.39168
+		],
+		[
+			"Dunkettle railway station",
+			51.906,
+			-8.395
+		]
+	],
+	"sacramento-united-states": [
+		[
+			"Sacramento Valley Station",
+			38.5848,
+			-121.501
+		],
+		[
+			"Sacramento Union Traction Depot",
+			38.5815,
+			-121.4908
+		],
+		[
+			"Dos Rios station",
+			38.59306,
+			-121.48075
+		],
+		[
+			"Midtown Sacramento station",
+			38.56909,
+			-121.48384
+		],
+		[
+			"Old North Sacramento station",
+			38.60396,
+			-121.46859
+		]
+	],
+	"jakarta-indonesia": [
+		[
+			"Monas MRT station",
+			-6.17726,
+			106.82341
+		],
+		[
+			"Harmoni MRT station",
+			-6.16572,
+			106.82028
+		],
+		[
+			"Thamrin MRT station",
+			-6.18335,
+			106.82305
+		],
+		[
+			"Tanah Abang railway station",
+			-6.18556,
+			106.811
+		],
+		[
+			"Gambir railway station",
+			-6.17672,
+			106.83051
+		],
+		[
+			"Juanda railway station",
+			-6.16672,
+			106.83047
+		],
+		[
+			"Bundaran HI Bank Jakarta MRT station",
+			-6.19186,
+			106.82294
+		],
+		[
+			"Sawah Besar railway station",
+			-6.16067,
+			106.82764
+		],
+		[
+			"Gondangdia railway station",
+			-6.18556,
+			106.83222
+		],
+		[
+			"Mangga Besar MRT station",
+			-6.15122,
+			106.81731
+		],
+		[
+			"Duri railway station",
+			-6.1563,
+			106.80106
+		],
+		[
+			"Dukuh Atas BNI MRT station",
+			-6.20079,
+			106.82275
+		],
+		[
+			"BNI City railway station",
+			-6.20166,
+			106.81985
+		],
+		[
+			"Pasar Senen railway station",
+			-6.17361,
+			106.84417
+		]
+	],
+	"enniskillen-united-kingdom": [[
+		"Enniskillen railway station",
+		54.3449,
+		-7.62751
+	]],
+	"liepaja-latvia": [
+		[
+			"Liepāja train station",
+			56.52414,
+			21.01693
+		],
+		[
+			"Krustojums railway station",
+			56.53578,
+			21.09016
+		],
+		[
+			"Ālande railway station",
+			56.525,
+			21.1136
+		]
+	],
+	"macao-macao": [
+		[
+			"Hengqin North Railway Station",
+			22.16403,
+			113.52842
+		],
+		[
+			"Wanzaibei Railway Station",
+			22.1978,
+			113.52916
+		],
+		[
+			"Wanzai Railway Station",
+			22.18459,
+			113.52228
+		],
+		[
+			"Shizimen Railway Station",
+			22.17564,
+			113.51574
+		],
+		[
+			"Hengqin Railway Station",
+			22.14058,
+			113.5396
+		],
+		[
+			"Zhuhai railway station",
+			22.21796,
+			113.54388
+		]
+	],
+	"ankara-trkiye": [
+		[
+			"Ankara high-speed railway station",
+			39.93481,
+			32.84354
+		],
+		[
+			"Ankara railway station",
+			39.936,
+			32.84352
+		],
+		[
+			"İlk Ankara Garı",
+			39.93618,
+			32.84323
+		],
+		[
+			"Yenişehir railway station",
+			39.92911,
+			32.8574
+		],
+		[
+			"Hipodrom railway station",
+			39.94504,
+			32.82612
+		],
+		[
+			"Kurtuluş railway station",
+			39.92887,
+			32.86813
+		],
+		[
+			"Gazi Mahallesi railway station",
+			39.94397,
+			32.81232
+		],
+		[
+			"Cebeci railway station",
+			39.93347,
+			32.87637
+		],
+		[
+			"Gazi railway station",
+			39.94022,
+			32.79596
+		],
+		[
+			"Demirlibahçe railway station",
+			39.93981,
+			32.88288
+		],
+		[
+			"Motor Durağı railway station",
+			39.9343,
+			32.77866
+		],
+		[
+			"Saimekadın railway station",
+			39.93762,
+			32.89474
+		],
+		[
+			"Mamak railway station",
+			39.93149,
+			32.91128
+		]
+	],
+	"vicenza-italy": [
+		[
+			"Vicenza railway station",
+			45.5411,
+			11.5404
+		],
+		[
+			"Anconetta railway station",
+			45.5648,
+			11.5678
+		],
+		[
+			"Cavazzale railway station",
+			45.5963,
+			11.5702
+		],
+		[
+			"Lisiera railway station",
+			45.5787,
+			11.6105
+		]
+	],
+	"ragusa-italy": [[
+		"Ragusa railway station",
+		36.9192,
+		14.7256
+	], [
+		"Ragusa Ibla railway station",
+		36.9313,
+		14.7505
+	]],
+	"viterbo-italy": [
+		[
+			"Viterbo Porta Romana railway station",
+			42.412,
+			12.1103
+		],
+		[
+			"Viterbo railway station",
+			42.42408,
+			12.10832
+		],
+		[
+			"Viterbo Porta Fiorentina railway station",
+			42.42532,
+			12.10625
+		],
+		[
+			"San Martino al Cimino railway station",
+			42.382,
+			12.10824
+		],
+		[
+			"Bagnaia railway station",
+			42.42759,
+			12.15333
+		]
+	],
+	"trapani-italy": [
+		[
+			"Trapani railway station",
+			38.01694,
+			12.51861
+		],
+		[
+			"Paceco railway station",
+			37.99145,
+			12.55089
+		],
+		[
+			"Milo railway station",
+			37.99657,
+			12.57832
+		]
+	],
+	"olsztyn-poland": [
+		[
+			"Olsztyn Zachodni train station",
+			53.77806,
+			20.4675
+		],
+		[
+			"Olsztyn Główny railway station",
+			53.7875,
+			20.5075
+		],
+		[
+			"Gutkowo",
+			53.8086,
+			20.4006
+		],
+		[
+			"Nikielkowo",
+			53.80311,
+			20.56611
+		]
+	],
+	"bloemfontein-south-africa": [[
+		"Bloemfontein railway station",
+		-29.11861,
+		26.22639
+	]],
+	"oklahoma-city-united-states": [[
+		"Santa Fe Depot",
+		35.4653,
+		-97.5128
+	]],
+	"grindelwald-switzerland": [
+		[
+			"Grindelwald railway station",
+			46.62436,
+			8.03331
+		],
+		[
+			"Grindelwald Grund railway station",
+			46.62278,
+			8.02333
+		],
+		[
+			"Rohr (Grindelwald) station",
+			46.61391,
+			8.01694
+		],
+		[
+			"Schwendi railway station",
+			46.63047,
+			8.00307
+		],
+		[
+			"Brandegg railway station",
+			46.60639,
+			8.01028
+		],
+		[
+			"Burglauenen railway station",
+			46.63591,
+			7.97533
+		],
+		[
+			"Alpiglen railway station",
+			46.5925,
+			7.99139
+		],
+		[
+			"Salzegg station",
+			46.58427,
+			7.97553
+		],
+		[
+			"Lütschental railway station",
+			46.6371,
+			7.94899
+		]
+	],
+	"thun-switzerland": [
+		[
+			"Thun railway station",
+			46.75485,
+			7.62961
+		],
+		[
+			"Schwäbis railway station",
+			46.76267,
+			7.61928
+		],
+		[
+			"Steffisburg railway station",
+			46.773,
+			7.61516
+		],
+		[
+			"Uetendorf Allmend railway station",
+			46.77312,
+			7.59488
+		],
+		[
+			"Lädeli railway station",
+			46.78161,
+			7.60903
+		],
+		[
+			"Lattigen bei Spiez railway station",
+			46.69118,
+			7.65059
+		],
+		[
+			"Uetendorf railway station",
+			46.77492,
+			7.57284
+		],
+		[
+			"Heimberg railway station",
+			46.79087,
+			7.60613
+		],
+		[
+			"Eifeld station",
+			46.68392,
+			7.64227
+		]
+	],
+	"munich-germany": [
+		[
+			"Munich Central Station",
+			48.14083,
+			11.555
+		],
+		[
+			"München Hbf - Hinterstellung West (Hw-Gleise)",
+			48.14202,
+			11.53969
+		],
+		[
+			"Vorstellgruppe Süd",
+			48.14128,
+			11.53946
+		],
+		[
+			"Vorstellgruppe Nord",
+			48.14376,
+			11.52498
+		],
+		[
+			"Bahnbetriebswerk München Hbf",
+			48.14254,
+			11.52323
+		],
+		[
+			"München Laim ICE Wende und Abstellanlage (WuA)",
+			48.14487,
+			11.50792
+		],
+		[
+			"München Laim Rbf",
+			48.14453,
+			11.50764
+		],
+		[
+			"Munich Harras station",
+			48.11775,
+			11.53631
+		],
+		[
+			"Ostbahnhof Wendeanlage",
+			48.13036,
+			11.60906
+		],
+		[
+			"München Nord Rangierbahnhof",
+			48.1947,
+			11.5011
+		]
+	],
+	"conil-de-la-frontera-spain": [],
+	"new-delhi-india": [
+		[
+			"Chanakyapuri railway station",
+			28.59167,
+			77.17139
+		],
+		[
+			"Delhi Safdarjung railway station",
+			28.58212,
+			77.18697
+		],
+		[
+			"Sardar Patel Road railway station",
+			28.59581,
+			77.16711
+		],
+		[
+			"Sarojini Nagar railway station",
+			28.58111,
+			77.19611
+		],
+		[
+			"Lodhi Colony railway station",
+			28.57945,
+			77.21655
+		],
+		[
+			"Sewa Nagar railway station",
+			28.57861,
+			77.22778
+		],
+		[
+			"Brar Square railway station",
+			28.61361,
+			77.14028
+		],
+		[
+			"Minto Road railway station",
+			28.63333,
+			77.22583
+		],
+		[
+			"Shivaji Bridge railway station",
+			28.6341,
+			77.22661
+		],
+		[
+			"Indrapuri railway station",
+			28.62834,
+			77.14359
+		],
+		[
+			"New Delhi railway station",
+			28.64231,
+			77.22
+		],
+		[
+			"Tilak Bridge railway station",
+			28.62763,
+			77.23799
+		],
+		[
+			"Lajpat Nagar railway station",
+			28.57927,
+			77.24414
+		],
+		[
+			"Pragati Maidan railway station",
+			28.61527,
+			77.24728
+		]
+	],
+	"abano-terme-italy": [
+		[
+			"Abano",
+			45.3553,
+			11.8115
+		],
+		[
+			"Terme Euganee-Abano-Montegrotto railway station",
+			45.3274,
+			11.7965
+		],
+		[
+			"Battaglia Terme",
+			45.29148,
+			11.77839
+		]
+	],
+	"forli-italy": [[
+		"Forlì railway station",
+		44.22389,
+		12.05472
+	], [
+		"Villa Selva railway station",
+		44.20181,
+		12.10967
+	]],
+	"farnborough-united-kingdom": [
+		[
+			"Bramshot Halt railway station",
+			51.2917,
+			-.8139
+		],
+		[
+			"Fleet station",
+			51.29072,
+			-.83014
+		],
+		[
+			"Fleet Station",
+			51.29044,
+			-.83362
+		],
+		[
+			"Farnborough (Main) railway station",
+			51.297,
+			-.756
+		],
+		[
+			"Farnborough North railway station",
+			51.302,
+			-.743
+		],
+		[
+			"Frimley railway station",
+			51.3118,
+			-.7471
+		],
+		[
+			"Blackwater railway station",
+			51.332,
+			-.777
+		],
+		[
+			"North Camp railway station",
+			51.276,
+			-.731
+		],
+		[
+			"Aldershot railway station",
+			51.24639,
+			-.76
+		],
+		[
+			"Ash Vale railway station",
+			51.272,
+			-.722
+		],
+		[
+			"Sandhurst railway station",
+			51.346,
+			-.804
+		],
+		[
+			"Camberley railway station",
+			51.336,
+			-.745
+		]
+	],
+	"woking-unitedkingdom": [
+		[
+			"Woking railway station",
+			51.318,
+			-.557
+		],
+		[
+			"Worplesdon railway station",
+			51.289,
+			-.583
+		],
+		[
+			"Brookwood railway station",
+			51.304,
+			-.636
+		],
+		[
+			"West Byfleet railway station",
+			51.3395,
+			-.5054
+		],
+		[
+			"Bisley Camp railway station",
+			51.31066,
+			-.65511
+		]
+	],
+	"porto-portugal": [
+		[
+			"São Bento railway station",
+			41.14542,
+			-8.6104
+		],
+		[
+			"General Torres train station",
+			41.1331,
+			-8.60917
+		],
+		[
+			"Porto-Boavista railway station",
+			41.1591,
+			-8.62938
+		],
+		[
+			"Avenida da França",
+			41.1607,
+			-8.62887
+		],
+		[
+			"Campanhã railway station",
+			41.14881,
+			-8.5854
+		],
+		[
+			"Vila Nova de Gaia train station",
+			41.1299,
+			-8.62036
+		],
+		[
+			"Coimbrões Halt",
+			41.1242,
+			-8.63389
+		],
+		[
+			"Estação de Vila Nova de Gaia-Santo Ovídio",
+			41.1179,
+			-8.60491
+		],
+		[
+			"Ramalde railway station",
+			41.17303,
+			-8.64186
+		],
+		[
+			"Contumil train station",
+			41.169,
+			-8.57452
+		],
+		[
+			"Estación Hospital de São João",
+			41.18514,
+			-8.59828
+		],
+		[
+			"São Mamede de Infesta train station",
+			41.1904,
+			-8.6133
+		],
+		[
+			"Apeadero de Vila Cova",
+			41.17893,
+			-8.57156
+		],
+		[
+			"Madalena Halt",
+			41.1114,
+			-8.6375
+		]
+	],
+	"cebu-city-philippines": [],
+	"hondarribia-spain": [
+		[
+			"Hondarribia",
+			43.36796,
+			-1.79343
+		],
+		[
+			"Aireportua",
+			43.35671,
+			-1.79418
+		],
+		[
+			"Hendaye station",
+			43.35314,
+			-1.78197
+		],
+		[
+			"Irun Ficoba railway station",
+			43.34928,
+			-1.78647
+		],
+		[
+			"Gare des Deux-Jumeaux",
+			43.37,
+			-1.76435
+		],
+		[
+			"Irun–Muga",
+			43.34418,
+			-1.79378
+		],
+		[
+			"Irun–Bidasoa",
+			43.34335,
+			-1.78605
+		],
+		[
+			"Irun Colon railway station",
+			43.34083,
+			-1.796
+		],
+		[
+			"Artiga",
+			43.34108,
+			-1.7775
+		],
+		[
+			"Irun railway station",
+			43.33948,
+			-1.80124
+		],
+		[
+			"Anaka",
+			43.34107,
+			-1.80965
+		],
+		[
+			"Konpantzia",
+			43.3423,
+			-1.76515
+		],
+		[
+			"Belaskoenea train station",
+			43.33659,
+			-1.80334
+		],
+		[
+			"Behobia",
+			43.34076,
+			-1.75865
+		]
+	],
+	"szczyrk-poland": [],
+	"nairobi-kenya": [
+		[
+			"Nairobi railway station",
+			-1.29166,
+			36.82862
+		],
+		[
+			"Kibera Station",
+			-1.30575,
+			36.76971
+		],
+		[
+			"Makadara Station",
+			-1.29813,
+			36.87109
+		]
+	],
+	"chengdu-china": [
+		[
+			"Chengdu railway station",
+			30.69917,
+			104.07083
+		],
+		[
+			"Chengdu South railway station",
+			30.60899,
+			104.06607
+		],
+		[
+			"Hongpailou Railway Station",
+			30.61928,
+			104.0285
+		],
+		[
+			"Bali Railway Station",
+			30.69974,
+			104.1089
+		]
+	],
+	"angers-france": [[
+		"Gare d'Angers-Saint-Laud",
+		47.46472,
+		-.55694
+	], [
+		"Gare d'Angers-Maître-École",
+		47.46695,
+		-.53234
+	]],
+	"seoul-southkorea": [
+		[
+			"Hangangjin Station",
+			37.53944,
+			127.00167
+		],
+		[
+			"Noksapyeong Station",
+			37.53472,
+			126.98667
+		],
+		[
+			"Hannam Station",
+			37.52913,
+			127.0081
+		],
+		[
+			"Oksu Station",
+			37.54061,
+			127.01888
+		],
+		[
+			"Dongguk University Station",
+			37.55903,
+			127.00557
+		],
+		[
+			"Namyeong Station",
+			37.54056,
+			126.97139
+		],
+		[
+			"Sucheol-ri Station",
+			37.54335,
+			127.02298
+		],
+		[
+			"Seobinggo Station",
+			37.51957,
+			126.98856
+		],
+		[
+			"Seoul Station",
+			37.55472,
+			126.97083
+		],
+		[
+			"Euljiro 3-ga Station",
+			37.56629,
+			126.99278
+		],
+		[
+			"Euljiro 4-ga Station",
+			37.56667,
+			126.99806
+		],
+		[
+			"Euljiro 1-ga Station",
+			37.56611,
+			126.9825
+		],
+		[
+			"Yongsan Station",
+			37.53,
+			126.96472
+		],
+		[
+			"City Hall Station",
+			37.56472,
+			126.97694
+		]
+	],
+	"brest-france": [[
+		"Brest railway station",
+		48.38778,
+		-4.48046
+	]],
+	"halifax-canada": [],
+	"ho-chi-minh-city-vietnam": [
+		[
+			"Saigon railway station",
+			10.78222,
+			106.67722
+		],
+		[
+			"Gò Vấp railway station",
+			10.81585,
+			106.68468
+		],
+		[
+			"Bình Triệu railway station",
+			10.82731,
+			106.71596
+		]
+	],
+	"montreux-switzerland": [
+		[
+			"Vuarennes railway station",
+			46.43912,
+			6.91097
+		],
+		[
+			"Montreux railway station",
+			46.43588,
+			6.91043
+		],
+		[
+			"Belmont-sur-Montreux railway station",
+			46.44204,
+			6.90612
+		],
+		[
+			"Montreux-Collège railway station",
+			46.4361,
+			6.91271
+		],
+		[
+			"Chernex railway station",
+			46.44592,
+			6.91008
+		],
+		[
+			"Clarens railway station",
+			46.44274,
+			6.89577
+		],
+		[
+			"Châtelard VD railway station",
+			46.44678,
+			6.90114
+		],
+		[
+			"Sonzier railway station",
+			46.43905,
+			6.92121
+		],
+		[
+			"Chamby railway station",
+			46.44918,
+			6.9135
+		],
+		[
+			"Planchamp railway station",
+			46.45118,
+			6.901
+		],
+		[
+			"Glion station",
+			46.43194,
+			6.92408
+		],
+		[
+			"Glion-Alpes railway station",
+			46.43381,
+			6.92575
+		],
+		[
+			"Glion-Collège station",
+			46.43385,
+			6.92621
+		],
+		[
+			"Fontanivent railway station",
+			46.45273,
+			6.90233
+		]
+	],
+	"beaune-france": [[
+		"Gare de Beaune",
+		47.023,
+		4.84852
+	]],
+	"estepona-spain": [],
+	"dinan-france": [[
+		"Dinan station",
+		48.45685,
+		-2.05353
+	], [
+		"Gare de La Hisse",
+		48.49602,
+		-2.00314
+	]],
+	"atlanta-united-states": [[
+		"Peachtree Station",
+		33.79917,
+		-84.3925
+	], [
+		"Atlanta Multi-Modal Passenger Terminal",
+		33.755,
+		-84.39667
+	]],
+	"czestochowa-poland": [
+		[
+			"Częstochowa railway station",
+			50.8087,
+			19.1193
+		],
+		[
+			"Częstochowa I",
+			50.8038,
+			19.1148
+		],
+		[
+			"Częstochowa Stradom train station",
+			50.7976,
+			19.1073
+		],
+		[
+			"Częstochowa Warta train station",
+			50.8094,
+			19.1322
+		],
+		[
+			"Częstochowa Raków train station",
+			50.7878,
+			19.1554
+		],
+		[
+			"Częstochowa Gnaszyn train station",
+			50.7917,
+			19.0287
+		]
+	],
+	"kathmandu-nepal": [],
+	"santa-barbara-united-states": [[
+		"Santa Barbara",
+		34.41361,
+		-119.69167
+	]],
+	"buena-park-united-states": [[
+		"Buena Park station",
+		33.8762,
+		-117.988
+	]],
+	"bad-homburg-vor-der-hohe-germany": [
+		[
+			"Imperial station Bad Homburg",
+			50.2206,
+			8.6199
+		],
+		[
+			"Bad Homburg station",
+			50.2199,
+			8.62111
+		],
+		[
+			"Seulberg station",
+			50.24214,
+			8.64561
+		],
+		[
+			"Friedrichsdorf station",
+			50.2522,
+			8.64433
+		],
+		[
+			"Oberursel (Taunus) station",
+			50.1989,
+			8.58828
+		],
+		[
+			"Köppern railway station",
+			50.27014,
+			8.64641
+		],
+		[
+			"Burgholzhausen vor der Höhe station",
+			50.2578,
+			8.6768
+		],
+		[
+			"Saalburg (Taunus) railway station",
+			50.28331,
+			8.58681
+		]
+	],
+	"campo-grande-brazil": [],
+	"ponta-delgada-portugal": [],
+	"burlington-united-states": [
+		[
+			"Burlington Union Station",
+			44.47569,
+			-73.2195
+		],
+		[
+			"South Burlington",
+			44.42911,
+			-73.21417
+		],
+		[
+			"Essex Junction station",
+			44.4926,
+			-73.1102
+		]
+	],
+	"kitzbuhel-austria": [
+		[
+			"Kitzbühel-Hahnenkamm railway station",
+			47.4433,
+			12.38999
+		],
+		[
+			"Kitzbühel railway station",
+			47.45401,
+			12.39109
+		],
+		[
+			"Schwarzsee railway station",
+			47.45353,
+			12.37054
+		],
+		[
+			"Oberndorf in Tirol railway station",
+			47.49733,
+			12.39079
+		],
+		[
+			"Kirchberg in Tirol railway station",
+			47.44874,
+			12.30881
+		]
+	],
+	"sarande-albania": [],
+	"taipei-taiwan": [
+		[
+			"Shuanglian Station",
+			25.05757,
+			121.52073
+		],
+		[
+			"Taipei Main Station",
+			25.04778,
+			121.51722
+		],
+		[
+			"Simen Emergency Halt Station",
+			25.0439,
+			121.509
+		],
+		[
+			"Wanhua railway station",
+			25.0334,
+			121.5
+		],
+		[
+			"Songshan station",
+			25.04889,
+			121.57778
+		]
+	],
+	"istanbul-trkiye": [
+		[
+			"Sirkeci railway station",
+			41.01497,
+			28.97646
+		],
+		[
+			"Cankurtaran railway station",
+			41.00532,
+			28.98264
+		],
+		[
+			"Tünel",
+			41.03361,
+			28.9775
+		],
+		[
+			"Kumkapı railway station",
+			41.00335,
+			28.96307
+		],
+		[
+			"Üsküdar railway station",
+			41.0258,
+			29.01405
+		],
+		[
+			"Yenikapı railway station",
+			41.00478,
+			28.95249
+		],
+		[
+			"Haydarpaşa railway station",
+			40.99614,
+			29.0186
+		],
+		[
+			"Cerrahpaşa railway station",
+			41.00277,
+			28.93997
+		],
+		[
+			"Ayrılık Çeşmesi railway station",
+			41.00019,
+			29.03012
+		],
+		[
+			"Kocamustafapaşa railway station",
+			40.99991,
+			28.93313
+		],
+		[
+			"Söğütlüçeşme railway station",
+			40.991,
+			29.03765
+		],
+		[
+			"Yedikule railway station",
+			40.99345,
+			28.92669
+		],
+		[
+			"Kazlıçeşme railway station",
+			40.99268,
+			28.91689
+		],
+		[
+			"Feneryolu railway station",
+			40.97884,
+			29.04864
+		]
+	],
+	"preston-united-kingdom": [
+		[
+			"Todd Lane Junction railway station",
+			53.7323,
+			-2.6821
+		],
+		[
+			"Lostock Hall railway station",
+			53.724,
+			-2.687
+		],
+		[
+			"Bamber Bridge railway station",
+			53.727,
+			-2.661
+		],
+		[
+			"Farington railway station",
+			53.7217,
+			-2.6972
+		],
+		[
+			"Penwortham Cop Lane railway station",
+			53.7394,
+			-2.7267
+		],
+		[
+			"Preston railway station",
+			53.756,
+			-2.7072
+		],
+		[
+			"Preston Fishergate Hill railway station",
+			53.7539,
+			-2.7146
+		],
+		[
+			"Maxwell House railway station",
+			53.758,
+			-2.7077
+		],
+		[
+			"Leyland railway station",
+			53.699,
+			-2.687
+		],
+		[
+			"Strand Road Crossing",
+			53.7558,
+			-2.7175
+		],
+		[
+			"Deepdale Street railway station",
+			53.7643,
+			-2.69
+		],
+		[
+			"Maudlands railway station",
+			53.7619,
+			-2.7112
+		],
+		[
+			"Maudland Bridge railway station",
+			53.7626,
+			-2.7103
+		],
+		[
+			"Deepdale railway station",
+			53.7669,
+			-2.6912
+		]
+	],
+	"bridgwater-united-kingdom": [[
+		"Bridgwater railway station",
+		51.1278,
+		-2.99036
+	]],
+	"benicassim-spain": [[
+		"Benicàssim railway station",
+		40.05808,
+		.05781
+	]],
+	"pokhara-nepal": [],
+	"kaiserslautern-germany": [
+		[
+			"Kaiserslautern-Nord",
+			49.44967,
+			7.78356
+		],
+		[
+			"Kaiserslautern Hauptbahnhof",
+			49.4359,
+			7.76882
+		],
+		[
+			"Lampertsmühle-Otterbach station",
+			49.4838,
+			7.72949
+		]
+	],
+	"marseille-france": [
+		[
+			"gare de Noailles",
+			43.29631,
+			5.38051
+		],
+		[
+			"Marseille-Saint-Charles station",
+			43.30306,
+			5.38111
+		],
+		[
+			"Marseille-Joliette",
+			43.30502,
+			5.36634
+		],
+		[
+			"Gare d'Arenc-Euroméditerranée",
+			43.3134,
+			5.3675
+		],
+		[
+			"Marseille-Blancarde",
+			43.29615,
+			5.40647
+		],
+		[
+			"Picon-Busserine",
+			43.3307,
+			5.3929
+		],
+		[
+			"Gare de Sainte-Marthe-en-Provence",
+			43.33915,
+			5.3904
+		],
+		[
+			"Gare de La Pomme",
+			43.29047,
+			5.44124
+		],
+		[
+			"Gare de Saint-Joseph-le-Castellas",
+			43.3516,
+			5.37868
+		]
+	],
+	"cuiaba-brazil": [],
+	"chorzow-poland": [
+		[
+			"Chorzów Batory train station",
+			50.2778,
+			18.9444
+		],
+		[
+			"Chorzów Miasto train station",
+			50.2983,
+			18.9497
+		],
+		[
+			"Świętochłowice",
+			50.2891,
+			18.9181
+		],
+		[
+			"Zgoda",
+			50.2844,
+			18.9064
+		],
+		[
+			"Katowice Załęże train station",
+			50.2636,
+			18.9904
+		],
+		[
+			"Ruda Nowy Wirek",
+			50.2717,
+			18.9025
+		],
+		[
+			"Chorzów Stary train station",
+			50.3161,
+			18.9572
+		],
+		[
+			"Lipiny Wąskotorowe",
+			50.3,
+			18.9
+		],
+		[
+			"Ruda Kochłowice train station",
+			50.2567,
+			18.9053
+		],
+		[
+			"Ruda Czarny Las",
+			50.275,
+			18.8878
+		],
+		[
+			"Kopalnia Śląsk",
+			50.31806,
+			18.91474
+		],
+		[
+			"Siemianowice Bytków",
+			50.31081,
+			19.00408
+		],
+		[
+			"Katowice railway station",
+			50.25833,
+			19.0175
+		],
+		[
+			"Ruda Wschodnia",
+			50.2989,
+			18.8778
+		]
+	],
+	"san-benedetto-del-tronto-italy": [
+		[
+			"Porto d'Ascoli train station",
+			42.91274,
+			13.89679
+		],
+		[
+			"San Benedetto del Tronto railway station",
+			42.9544,
+			13.8822
+		],
+		[
+			"Martinsicuro railway station",
+			42.88611,
+			13.90411
+		],
+		[
+			"Monteprandone railway station",
+			42.89417,
+			13.84993
+		]
+	],
+	"lourdes-france": [[
+		"Gare de Lourdes",
+		43.10058,
+		-.04213
+	]],
+	"barnstaple-unitedkingdom": [
+		[
+			"Barnstaple Town railway station",
+			51.07999,
+			-4.06349
+		],
+		[
+			"Pilton railway station",
+			51.08353,
+			-4.0607
+		],
+		[
+			"Barnstaple railway station",
+			51.074,
+			-4.063
+		],
+		[
+			"Barnstaple Victoria Road railway station",
+			51.0763,
+			-4.04759
+		],
+		[
+			"Fremington railway station",
+			51.0791,
+			-4.1205
+		],
+		[
+			"Chelfham railway station",
+			51.1039,
+			-3.9869
+		]
+	],
+	"sopron-hungary": [
+		[
+			"Sopron-Déli railway station",
+			47.68506,
+			16.57367
+		],
+		[
+			"Sopron railway station",
+			47.67778,
+			16.58778
+		],
+		[
+			"Sopron-Rendező",
+			47.66898,
+			16.59936
+		],
+		[
+			"Harka train station",
+			47.64156,
+			16.61911
+		],
+		[
+			"Bahnhof Loipersbach-Schattendorf",
+			47.70072,
+			16.49186
+		],
+		[
+			"Bahnhof Baumgarten-Schattendorf",
+			47.72778,
+			16.51787
+		]
+	],
+	"boucherville-canada": [[
+		"Longueuil–Saint-Hubert",
+		45.50802,
+		-73.43515
+	]],
+	"gloucester-unitedkingdom": [
+		[
+			"Gloucester Eastgate railway station",
+			51.8632,
+			-2.2367
+		],
+		[
+			"Gloucestershire Parkway railway station",
+			51.8728,
+			-2.19472
+		],
+		[
+			"Gloucester railway station",
+			51.865,
+			-2.239
+		],
+		[
+			"Churchdown railway station",
+			51.8807,
+			-2.16714
+		],
+		[
+			"Badgworth railway station",
+			51.8843,
+			-2.1425
+		]
+	],
+	"sarajevo-bosniaandherzegovina": [
+		[
+			"Bistrik train station",
+			43.85257,
+			18.43221
+		],
+		[
+			"Sarajevo",
+			43.8604,
+			18.3991
+		],
+		[
+			"Alipašin Most narrow gauge train station",
+			43.84,
+			18.37
+		],
+		[
+			"Alipašin Most railway station",
+			43.85139,
+			18.34639
+		],
+		[
+			"Dovlići railway station",
+			43.83147,
+			18.49545
+		]
+	],
+	"wisa-poland": [[
+		"Wisła Głębce train station",
+		49.6217,
+		18.8758
+	], [
+		"Wisła Uzdrowisko",
+		49.6586,
+		18.8553
+	]],
+	"deauville-france": [
+		[
+			"Gare de Trouville-Deauville",
+			49.36,
+			.08417
+		],
+		[
+			"Gare de Blonville-sur-Mer-Benerville",
+			49.33146,
+			.03615
+		],
+		[
+			"Gare de Villers-sur-Mer",
+			49.31611,
+			.00972
+		]
+	],
+	"milwaukee-united-states": [[
+		"Milwaukee Intermodal Station",
+		43.03433,
+		-87.91741
+	]],
+	"santa-marta-colombia": [],
+	"varna-bulgaria": [[
+		"Varna railway station",
+		43.19839,
+		27.91226
+	]],
+	"basingstoke-united-kingdom": [
+		[
+			"Cliddesden railway station",
+			51.2372,
+			-1.0874
+		],
+		[
+			"Basingstoke railway station",
+			51.2683,
+			-1.0878
+		],
+		[
+			"Oakley (Hampshire) railway station",
+			51.255,
+			-1.188
+		]
+	],
+	"rovaniemi-finland": [[
+		"Vaarala rail yard",
+		66.5189,
+		25.8744
+	], [
+		"Rovaniemi railway station",
+		66.49803,
+		25.70731
+	]],
+	"chernivtsi-ukraine": [
+		[
+			"Chernivtsi railway station",
+			48.30139,
+			25.93028
+		],
+		[
+			"Chernivtsi-Pivdenna",
+			48.265,
+			25.95806
+		],
+		[
+			"Chernivtsi-Pivnichna",
+			48.31628,
+			25.91931
+		],
+		[
+			"Sadhora railway station",
+			48.33103,
+			25.95068
+		]
+	],
+	paris: [
+		[
+			"Gare de Châtelet – Les Halles",
+			48.86139,
+			2.34667
+		],
+		[
+			"Saint-Michel–Notre-Dame",
+			48.85361,
+			2.34417
+		],
+		[
+			"Gare du Luxembourg",
+			48.84667,
+			2.34028
+		],
+		[
+			"Musée d'Orsay",
+			48.86056,
+			2.32556
+		],
+		[
+			"Gare d'Austerlitz",
+			48.84222,
+			2.36583
+		],
+		[
+			"Gare de Port-Royal",
+			48.83944,
+			2.33722
+		],
+		[
+			"Paris-Gare-de-Lyon",
+			48.84472,
+			2.37361
+		],
+		[
+			"Gare de Paris-Est",
+			48.87694,
+			2.35917
+		],
+		[
+			"Auber",
+			48.873,
+			2.329
+		],
+		[
+			"la Madeleine",
+			48.8722,
+			2.326
+		],
+		[
+			"Haussmann – Saint-Lazare",
+			48.875,
+			2.32861
+		],
+		[
+			"Magenta railway station",
+			48.88,
+			2.35806
+		],
+		[
+			"Gare du Nord",
+			48.88111,
+			2.35528
+		],
+		[
+			"Invalides",
+			48.86283,
+			2.31384
+		]
+	],
+	"buenos-aires-argentina": [
+		[
+			"Retiro Mitre train station",
+			-34.59106,
+			-58.37492
+		],
+		[
+			"Retiro railway station",
+			-34.59139,
+			-58.37472
+		],
+		[
+			"Retiro Belgrano train station",
+			-34.59015,
+			-58.37386
+		],
+		[
+			"Retiro San Martín train station",
+			-34.5894,
+			-58.37318
+		],
+		[
+			"Saldías train station",
+			-34.5757,
+			-58.3994
+		],
+		[
+			"Once train station",
+			-34.60861,
+			-58.40889
+		],
+		[
+			"Palermo train station",
+			-34.5788,
+			-58.4267
+		],
+		[
+			"Constitución train station",
+			-34.62778,
+			-58.38131
+		],
+		[
+			"3 de Febrero train station",
+			-34.5719,
+			-58.4252
+		],
+		[
+			"Ministro Carranza train station",
+			-34.5754,
+			-58.434
+		],
+		[
+			"Villa Crespo train station",
+			-34.5925,
+			-58.4465
+		],
+		[
+			"Caballito train station",
+			-34.6194,
+			-58.4438
+		],
+		[
+			"Colegiales train station",
+			-34.573,
+			-58.4482
+		],
+		[
+			"Federico Lacroze train station",
+			-34.58694,
+			-58.45528
+		]
+	],
+	"queretaro-mexico": [[
+		"La Corregidora (Estación)",
+		20.6008,
+		-100.40179
+	]],
+	"ronne-denmark": [],
+	"akita-japan": [
+		[
+			"Akita Station",
+			39.71684,
+			140.12975
+		],
+		[
+			"Ugo-Ushijima Station",
+			39.69616,
+			140.11623
+		],
+		[
+			"Izumi-Sotoasahikawa Station",
+			39.73835,
+			140.11218
+		],
+		[
+			"Araya Station",
+			39.67708,
+			140.08735
+		],
+		[
+			"Tsuchizaki Station",
+			39.75844,
+			140.07361
+		],
+		[
+			"Yotsugoya Station",
+			39.66078,
+			140.14481
+		]
+	],
+	"turku-finland": [
+		[
+			"Turku Central railway station",
+			60.45389,
+			22.25278
+		],
+		[
+			"Kupittaa railway station",
+			60.45056,
+			22.29694
+		],
+		[
+			"Turku Harbour railway station",
+			60.4348,
+			22.223
+		],
+		[
+			"Ihala",
+			60.4646,
+			22.1752
+		]
+	],
+	"knokke-heist-belgium": [
+		[
+			"Knokke railway station",
+			51.33991,
+			3.2852
+		],
+		[
+			"Duinbergen railway station",
+			51.33834,
+			3.26362
+		],
+		[
+			"Heist railway station",
+			51.33389,
+			3.23913
+		],
+		[
+			"Zeebrugge-Dorp railway station",
+			51.32638,
+			3.19514
+		],
+		[
+			"Zeebrugge-Kaai railway station",
+			51.33828,
+			3.18694
+		]
+	],
+	"reykjavik-iceland": [],
+	"ferrol-spain": [
+		[
+			"Ferrol railway station",
+			43.4881,
+			-8.23106
+		],
+		[
+			"estación de Virxe do Mar",
+			43.49657,
+			-8.20483
+		],
+		[
+			"estación de O Alto do Castiñeiro",
+			43.50319,
+			-8.19556
+		],
+		[
+			"Piñeiros",
+			43.50956,
+			-8.18392
+		],
+		[
+			"Barallobre Station",
+			43.4628,
+			-8.18858
+		],
+		[
+			"estación de Perlío",
+			43.4724,
+			-8.17473
+		],
+		[
+			"estación de O Ponto",
+			43.51481,
+			-8.17775
+		],
+		[
+			"Neda train station",
+			43.4954,
+			-8.161
+		],
+		[
+			"Xuvia",
+			43.51714,
+			-8.16133
+		],
+		[
+			"Franza Station",
+			43.4385,
+			-8.19748
+		]
+	],
+	"heringsdorf-germany": [
+		[
+			"Seebad Heringsdorf railway station",
+			53.9492,
+			14.17
+		],
+		[
+			"Seebad Ahlbeck railway station",
+			53.9355,
+			14.18781
+		],
+		[
+			"Bansin Seebad railway station",
+			53.96417,
+			14.12889
+		]
+	],
+	"falmouth-unitedkingdom": [
+		[
+			"Penmere railway station",
+			50.1504,
+			-5.083
+		],
+		[
+			"Falmouth Town railway station",
+			50.1484,
+			-5.0642
+		],
+		[
+			"Falmouth Docks railway station",
+			50.15041,
+			-5.05581
+		],
+		[
+			"Penryn railway station",
+			50.1708,
+			-5.11155
+		]
+	],
+	"hamilton-canada": [
+		[
+			"Hamilton GO Centre",
+			43.2532,
+			-79.8692
+		],
+		[
+			"West Harbour GO Station",
+			43.2664,
+			-79.8653
+		],
+		[
+			"Aldershot GO Station",
+			43.3133,
+			-79.8556
+		]
+	],
+	"baku-azerbaijan": [
+		[
+			"Baku railway station",
+			40.3802,
+			49.85039
+		],
+		[
+			"Keşlə railway station",
+			40.39785,
+			49.89269
+		],
+		[
+			"Abchéron",
+			40.33691,
+			49.77478
+		]
+	],
+	"la-baule-france": [
+		[
+			"La Baule-Escoublac train station",
+			47.28861,
+			-2.38944
+		],
+		[
+			"Le Pouliguen train station",
+			47.28264,
+			-2.43267
+		],
+		[
+			"Gare de La Baule-Les Pins",
+			47.28373,
+			-2.36464
+		],
+		[
+			"Pornichet train station",
+			47.2706,
+			-2.34489
+		],
+		[
+			"Batz-sur-Mer train station",
+			47.28097,
+			-2.4789
+		]
+	],
+	"bethesda-united-states": [
+		[
+			"Kensington",
+			39.0268,
+			-77.0718
+		],
+		[
+			"Garrett Park",
+			39.0389,
+			-77.0936
+		],
+		[
+			"Silver Spring",
+			38.9938,
+			-77.0313
+		]
+	],
+	"split-croatia": [
+		[
+			"Split",
+			43.50465,
+			16.44275
+		],
+		[
+			"Split Predgrađe",
+			43.52187,
+			16.45548
+		],
+		[
+			"Solin railway station",
+			43.5373,
+			16.47106
+		],
+		[
+			"Kaštel Sućurac train station",
+			43.54892,
+			16.43002
+		]
+	],
+	"puerto-vallarta-mexico": [],
+	"miami-unitedstates": [
+		[
+			"Miami Intermodal Center",
+			25.79791,
+			-80.25867
+		],
+		[
+			"Hialeah Market",
+			25.81167,
+			-80.25889
+		],
+		[
+			"Hialeah Seaboard Air Line Railway Station",
+			25.81167,
+			-80.25889
+		]
+	],
+	"aqaba-jordan": [[
+		"Port d'Eilat",
+		29.53224,
+		34.94043
+	]],
+	"alba-italy": [[
+		"Alba railway station",
+		44.69778,
+		8.03083
+	]],
+	"antequera-spain": [
+		[
+			"Antequera train station",
+			37.02817,
+			-4.56087
+		],
+		[
+			"Antequera Railway Station",
+			37.02948,
+			-4.56261
+		],
+		[
+			"La Peña train station",
+			37.05759,
+			-4.49174
+		]
+	],
+	"kurashiki-japan": [
+		[
+			"Kurashiki Station",
+			34.6018,
+			133.7657
+		],
+		[
+			"Kurashikishi Station",
+			34.601,
+			133.76507
+		],
+		[
+			"Kyūjōmae Station",
+			34.59129,
+			133.74748
+		],
+		[
+			"Nishitomii Station",
+			34.57793,
+			133.74328
+		],
+		[
+			"Fukui Station",
+			34.57002,
+			133.74444
+		],
+		[
+			"Nishiachi Station",
+			34.58594,
+			133.72769
+		],
+		[
+			"Nakashō Station",
+			34.62631,
+			133.80783
+		],
+		[
+			"Urada Station",
+			34.56124,
+			133.74985
+		],
+		[
+			"Kuguhara Station",
+			34.59216,
+			133.82792
+		],
+		[
+			"Chayamachi Station",
+			34.57665,
+			133.82584
+		],
+		[
+			"Hayashima Station",
+			34.60224,
+			133.83327
+		],
+		[
+			"Kiyone Station",
+			34.6436,
+			133.7333
+		],
+		[
+			"Kawabejuku Station",
+			34.6325,
+			133.7149
+		],
+		[
+			"Yayoi Station",
+			34.54407,
+			133.74744
+		]
+	],
+	"gdynia-poland": [
+		[
+			"Gdynia Wzgórze św. Maksymiliana railway station",
+			54.50778,
+			18.5355
+		],
+		[
+			"Gdynia Redłowo railway station",
+			54.4915,
+			18.5384
+		],
+		[
+			"Suburban railway station in Gdynia",
+			54.52047,
+			18.53165
+		],
+		[
+			"Main Railway Station in Gdynia",
+			54.52131,
+			18.52995
+		],
+		[
+			"Gdynia Główna railway station",
+			54.5212,
+			18.5286
+		],
+		[
+			"Gdynia Orłowo railway station",
+			54.47667,
+			18.54889
+		],
+		[
+			"Gdynia Wielki Kack railway station",
+			54.4653,
+			18.5031
+		],
+		[
+			"Sopot Kamienny Potok railway station",
+			54.45778,
+			18.55353
+		],
+		[
+			"Gdynia Obłuże Leśne railway station",
+			54.55014,
+			18.5025
+		],
+		[
+			"Gdynia Chylonia railway station",
+			54.5455,
+			18.4645
+		]
+	],
+	"barranquilla-colombia": [],
+	"ascona-switzerland": [
+		[
+			"Solduno railway station",
+			46.1695,
+			8.77759
+		],
+		[
+			"San Martino train station",
+			46.17198,
+			8.77037
+		],
+		[
+			"Ponte Brolla train station",
+			46.18564,
+			8.75331
+		],
+		[
+			"Minusio railway station",
+			46.17388,
+			8.81927
+		],
+		[
+			"San Nazzaro railway station",
+			46.13516,
+			8.80706
+		],
+		[
+			"Tegna train station",
+			46.18606,
+			8.74278
+		],
+		[
+			"Gerra (Gambarogno) railway station",
+			46.12204,
+			8.78497
+		],
+		[
+			"Verscio train station",
+			46.18464,
+			8.72987
+		],
+		[
+			"Ranzo-Sant'Abbondio railway station",
+			46.117,
+			8.77654
+		],
+		[
+			"Cavigliano train station",
+			46.18375,
+			8.72123
+		],
+		[
+			"Magadino-Vira railway station",
+			46.14532,
+			8.85019
+		],
+		[
+			"Tenero railway station",
+			46.17747,
+			8.85022
+		],
+		[
+			"Intragna train station",
+			46.17755,
+			8.70222
+		]
+	],
+	"san-francisco-unitedstates": [
+		[
+			"San Francisco Transbay Terminal",
+			37.7894,
+			-122.396
+		],
+		[
+			"San Francisco",
+			37.77639,
+			-122.39444
+		],
+		[
+			"22nd Street",
+			37.7572,
+			-122.393
+		],
+		[
+			"Valencia Street station",
+			37.7503,
+			-122.421
+		]
+	],
+	"vila-real-portugal": [
+		[
+			"Estação Ferroviária de Abambres",
+			41.31212,
+			-7.71892
+		],
+		[
+			"Parada de Cigarrosa",
+			41.33248,
+			-7.70275
+		],
+		[
+			"Apeadero de Cruzeiro",
+			41.24979,
+			-7.74728
+		],
+		[
+			"Apeadero de Fortunho",
+			41.34871,
+			-7.69992
+		]
+	],
+	"puerto-del-carmen-spain": [],
+	"syracuse-italy": [
+		[
+			"Syracuse railway station",
+			37.06889,
+			15.28056
+		],
+		[
+			"Siracusa Nuova railway station",
+			37.06881,
+			15.27874
+		],
+		[
+			"Santa Panagia railway station",
+			37.10585,
+			15.27731
+		],
+		[
+			"Targia railway station",
+			37.1095,
+			15.2457
+		]
+	],
+	"reno-united-states": [[
+		"Reno",
+		39.5287,
+		-119.8116
+	], [
+		"Nevada-California-Oregon Railroad Depot",
+		39.53111,
+		-119.80944
+	]],
+	"foligno-italy": [
+		[
+			"Foligno railway station",
+			42.95444,
+			12.71111
+		],
+		[
+			"Spello railway station",
+			42.98441,
+			12.66882
+		],
+		[
+			"Scanzano-Belfiore railway halt",
+			42.98392,
+			12.73769
+		]
+	],
+	"grenoble-france": [
+		[
+			"Grenoble railway station",
+			45.1908,
+			5.7147
+		],
+		[
+			"Gare d'Échirolles",
+			45.15279,
+			5.71992
+		],
+		[
+			"Grenoble-Olympique",
+			45.1532,
+			5.74113
+		],
+		[
+			"Gare de Grenoble-Universités-Gières",
+			45.18472,
+			5.78444
+		],
+		[
+			"Pont-de-Claix l'Étoile railway station",
+			45.1376,
+			5.7029
+		],
+		[
+			"Saint-Égrève-Saint-Robert railway station",
+			45.23508,
+			5.67114
+		]
+	],
+	"lovina-indonesia": [],
+	"santa-cruz-de-tenerife-spain": [],
+	"zadar-croatia": [[
+		"Zadar station",
+		44.106,
+		15.24246
+	], [
+		"Bibinje",
+		44.08136,
+		15.27774
+	]],
+	"perugia-italy": [
+		[
+			"Perugia Sant’Anna train station",
+			43.1064,
+			12.39
+		],
+		[
+			"Perugia railway station",
+			43.10389,
+			12.37556
+		],
+		[
+			"Perugia Pallotta train station",
+			43.0958,
+			12.3945
+		],
+		[
+			"Piscille train station",
+			43.09514,
+			12.41023
+		],
+		[
+			"Perugia Capitini railway station",
+			43.10243,
+			12.3559
+		],
+		[
+			"Perugia Ponte San Giovanni railway station",
+			43.0916,
+			12.4383
+		],
+		[
+			"Ponte Valleceppi railway station",
+			43.10521,
+			12.44712
+		],
+		[
+			"Ellera-Corciano railway station",
+			43.09474,
+			12.31854
+		]
+	],
+	"kielce-poland": [
+		[
+			"Kielce train station",
+			50.8742,
+			20.6178
+		],
+		[
+			"Kielce Piaski train station",
+			50.8894,
+			20.6252
+		],
+		[
+			"Kielce Herbskie train station",
+			50.8858,
+			20.6037
+		],
+		[
+			"Kielce Ślichowice",
+			50.8886,
+			20.5846
+		],
+		[
+			"Kielce Białogon train station",
+			50.8552,
+			20.5743
+		],
+		[
+			"Kostomłoty",
+			50.9214,
+			20.6161
+		]
+	],
+	"vichy-france": [[
+		"Gare de Vichy",
+		46.12645,
+		3.43064
+	]],
+	"cassis-france": [[
+		"Cassis",
+		43.23448,
+		5.55271
+	]],
+	"townsville-australia": [[
+		"Townsville railway station",
+		-19.2693,
+		146.808
+	]],
+	"philadelphia-unitedstates": [
+		[
+			"Jefferson Station",
+			39.95263,
+			-75.15811
+		],
+		[
+			"Suburban Station",
+			39.9542,
+			-75.1674
+		],
+		[
+			"30th Street Station",
+			39.95582,
+			-75.1824
+		],
+		[
+			"Aquarium",
+			39.94556,
+			-75.12861
+		],
+		[
+			"Penn Medicine station",
+			39.94784,
+			-75.19034
+		],
+		[
+			"Entertainment Center",
+			39.94083,
+			-75.12861
+		],
+		[
+			"Cooper Street–Rutgers University",
+			39.94778,
+			-75.12472
+		],
+		[
+			"Walter Rand Transportation Center",
+			39.94306,
+			-75.11972
+		],
+		[
+			"Temple University",
+			39.9816,
+			-75.1495
+		],
+		[
+			"North Broad",
+			39.99236,
+			-75.15444
+		],
+		[
+			"49th Street",
+			39.94363,
+			-75.21651
+		],
+		[
+			"North Philadelphia station",
+			39.9975,
+			-75.15444
+		],
+		[
+			"Allegheny",
+			40.0037,
+			-75.165
+		],
+		[
+			"Angora",
+			39.94479,
+			-75.23867
+		]
+	],
+	"wolfsburg-germany": [
+		[
+			"Wolfsburg Central Station",
+			52.4292,
+			10.7878
+		],
+		[
+			"Fallersleben BLE railway station",
+			52.42335,
+			10.72802
+		],
+		[
+			"Fallersleben railway station",
+			52.42333,
+			10.71722
+		],
+		[
+			"Ehmen railway station",
+			52.39217,
+			10.71172
+		]
+	],
+	"muscat-oman": [],
+	"burnley-united-kingdom": [
+		[
+			"Reedley Hallows Halt railway station",
+			53.8094,
+			-2.2426
+		],
+		[
+			"New Hall Bridge Halt railway station",
+			53.803,
+			-2.2452
+		],
+		[
+			"Burnley Central railway station",
+			53.794,
+			-2.245
+		],
+		[
+			"Burnley Barracks railway station",
+			53.791,
+			-2.258
+		],
+		[
+			"Brierfield railway station",
+			53.825,
+			-2.237
+		],
+		[
+			"Burnley Manchester Road railway station",
+			53.785,
+			-2.249
+		],
+		[
+			"Rose Grove railway station",
+			53.787,
+			-2.282
+		],
+		[
+			"Towneley railway station",
+			53.7791,
+			-2.2365
+		],
+		[
+			"Padiham railway station",
+			53.7987,
+			-2.3166
+		],
+		[
+			"Nelson railway station",
+			53.835,
+			-2.214
+		],
+		[
+			"Hapton railway station",
+			53.782,
+			-2.317
+		],
+		[
+			"Simonstone railway station",
+			53.7984,
+			-2.343
+		],
+		[
+			"Bott Lane Halt railway station",
+			53.8454,
+			-2.1935
+		],
+		[
+			"Huncoat railway station",
+			53.772,
+			-2.346
+		]
+	],
+	"modica-italy": [[
+		"Modica railway station",
+		36.853,
+		14.7541
+	]],
+	"mazatlan-mexico": [],
+	"riyadh-saudiarabia": [[
+		"Riyadh railway station",
+		24.6504,
+		46.7406
+	]],
+	"trabzon-turkiye": [],
+	"maidstone-unitedkingdom": [
+		[
+			"Maidstone West railway station",
+			51.27069,
+			.51569
+		],
+		[
+			"Maidstone East railway station",
+			51.278,
+			.521
+		],
+		[
+			"Tovil railway station",
+			51.2665,
+			.5096
+		],
+		[
+			"Bearsted railway station",
+			51.276,
+			.578
+		],
+		[
+			"Maidstone Barracks railway station",
+			51.27731,
+			.51409
+		],
+		[
+			"East Farleigh railway station",
+			51.255,
+			.485
+		],
+		[
+			"Barming railway station",
+			51.285,
+			.479
+		],
+		[
+			"Hollingbourne railway station",
+			51.265,
+			.628
+		],
+		[
+			"Teston Crossing Halt railway station",
+			51.2541,
+			.44717
+		]
+	],
+	"dinard-france": [
+		[
+			"Dinard railway station",
+			48.62978,
+			-2.06381
+		],
+		[
+			"Gare de Saint-Malo",
+			48.64658,
+			-2.004
+		],
+		[
+			"Pleurtuit railway station",
+			48.58001,
+			-2.06362
+		]
+	],
+	"kelowna-canada": [[
+		"Kelowna railway station",
+		49.894,
+		-119.493
+	]],
+	"hamamatsu-japan": [
+		[
+			"Hamamatsu Station",
+			34.70361,
+			137.73444
+		],
+		[
+			"Shin-Hamamatsu Station",
+			34.70372,
+			137.73238
+		],
+		[
+			"Dai-Ichi-dōri Station",
+			34.70724,
+			137.73267
+		],
+		[
+			"Enshū-Byōin Station",
+			34.71063,
+			137.7333
+		],
+		[
+			"Hachiman Station",
+			34.717,
+			137.73592
+		],
+		[
+			"Sukenobu Station",
+			34.7243,
+			137.739
+		],
+		[
+			"Hikuma Station",
+			34.73329,
+			137.7414
+		],
+		[
+			"Kamijima Station",
+			34.74129,
+			137.7454
+		],
+		[
+			"Tenryūgawa Station",
+			34.7172,
+			137.779
+		],
+		[
+			"Jidōsha-Gakkō-Mae Station",
+			34.74765,
+			137.7518
+		],
+		[
+			"Takatsuka Station",
+			34.6903,
+			137.682
+		],
+		[
+			"Saginomiya Station",
+			34.75746,
+			137.75745
+		]
+	],
+	"bursa-turkiye": [
+		[
+			"Merinos Train Station",
+			40.20204,
+			29.04884
+		],
+		[
+			"Çekirge Train Station",
+			40.21034,
+			29.02266
+		],
+		[
+			"Beşevler Train Station",
+			40.20865,
+			28.98498
+		]
+	],
+	"arlington-united-states": [],
+	"baltimore-united-states": [
+		[
+			"Calvert Street Station",
+			39.2955,
+			-76.61233
+		],
+		[
+			"President Street Station",
+			39.2844,
+			-76.6025
+		],
+		[
+			"Camden Station",
+			39.2835,
+			-76.6196
+		],
+		[
+			"Stadium-Federal Hill station",
+			39.2787,
+			-76.6202
+		],
+		[
+			"Baltimore Penn Station",
+			39.3074,
+			-76.6156
+		],
+		[
+			"Mount Royal Station",
+			39.3056,
+			-76.6206
+		],
+		[
+			"West Baltimore",
+			39.2934,
+			-76.6532
+		]
+	],
+	"amboise-france": [
+		[
+			"Gare d'Amboise",
+			47.4216,
+			.98118
+		],
+		[
+			"Gare de Limeray",
+			47.45011,
+			1.04957
+		],
+		[
+			"Estacion de Noizay",
+			47.40978,
+			.89626
+		]
+	],
+	"ponte-de-lima-portugal": [],
+	"budva-montenegro": [],
+	"vaasa-finland": [
+		[
+			"Vaasa railway station",
+			63.09754,
+			21.62175
+		],
+		[
+			"Wasalandia",
+			63.0894,
+			21.5808
+		],
+		[
+			"Vaskiluoto yard",
+			63.088,
+			21.56383
+		]
+	],
+	"sanremo-italy": [],
+	"tunis-tunisia": [
+		[
+			"Tunis Gare Centrale",
+			36.79524,
+			10.18058
+		],
+		[
+			"Mellassine",
+			36.79651,
+			10.15584
+		],
+		[
+			"Saïda Mannoubia",
+			36.78704,
+			10.16541
+		],
+		[
+			"Ennajah",
+			36.79321,
+			10.15473
+		],
+		[
+			"Tunis Marine",
+			36.80069,
+			10.19208
+		],
+		[
+			"Raoudha",
+			36.80186,
+			10.14778
+		],
+		[
+			"Ettayaran-Ezzouhour 1",
+			36.79209,
+			10.13892
+		],
+		[
+			"Le Bardo",
+			36.80722,
+			10.13525
+		],
+		[
+			"Ezzouhour 2",
+			36.7877,
+			10.12771
+		],
+		[
+			"Djebel Jelloud",
+			36.77271,
+			10.20815
+		],
+		[
+			"Bortal",
+			36.81191,
+			10.11597
+		],
+		[
+			"El Hraïria",
+			36.7838,
+			10.11555
+		],
+		[
+			"Mégrine Riadh",
+			36.77032,
+			10.22297
+		],
+		[
+			"Manouba",
+			36.81607,
+			10.10113
+		]
+	],
+	"alesund-norway": [],
+	"orleans-france": [
+		[
+			"Gare d'Orléans",
+			47.90784,
+			1.90461
+		],
+		[
+			"Gare des Aubrais-Orléans",
+			47.92667,
+			1.90667
+		],
+		[
+			"Gare de Saint-Jean-de-Braye",
+			47.90987,
+			1.97783
+		],
+		[
+			"Estacion de La Chapelle-Saint-Mesmin",
+			47.89296,
+			1.82684
+		]
+	],
+	"cefalu-italy": [[
+		"Cefalù railway station",
+		38.03298,
+		14.01952
+	]],
+	"windsor-canada": [[
+		"Windsor, Ontario railway station",
+		42.3254,
+		-83.0092
+	]],
+	"bayeux-france": [[
+		"Gare de Bayeux",
+		49.26972,
+		-.69806
+	]],
+	"toronto-canada": [
+		[
+			"North Toronto station",
+			43.68083,
+			-79.39056
+		],
+		[
+			"Gerrard–Carlaw GO Station",
+			43.668,
+			-79.342
+		],
+		[
+			"King–Liberty GO Station",
+			43.64915,
+			-79.37783
+		],
+		[
+			"Union Station",
+			43.64528,
+			-79.38056
+		],
+		[
+			"Toronto Union Station (1858)",
+			43.64472,
+			-79.38361
+		],
+		[
+			"Union Station airport train terminal",
+			43.64431,
+			-79.38336
+		],
+		[
+			"Spadina–Front GO Station",
+			43.64194,
+			-79.395
+		],
+		[
+			"Danforth GO Station",
+			43.6867,
+			-79.2992
+		],
+		[
+			"Parkdale railway station",
+			43.6419,
+			-79.4275
+		],
+		[
+			"Davenport railway station",
+			43.6723,
+			-79.4525
+		],
+		[
+			"Bloor–Lansdowne GO Station",
+			43.6575,
+			-79.445
+		],
+		[
+			"Exhibition GO Station",
+			43.6358,
+			-79.4189
+		],
+		[
+			"Bloor GO Station",
+			43.65778,
+			-79.45083
+		]
+	],
+	"kortrijk-belgium": [
+		[
+			"Kortrijk railway station",
+			50.8242,
+			3.26417
+		],
+		[
+			"Stasegem railway station",
+			50.83728,
+			3.31207
+		],
+		[
+			"Zwevegem-Blokken railway station",
+			50.82028,
+			3.32645
+		],
+		[
+			"Beveren-Leie railway station",
+			50.86631,
+			3.34211
+		]
+	],
+	"cosenza-italy": [
+		[
+			"Cosenza Monaco railway station",
+			39.3118,
+			16.26073
+		],
+		[
+			"Cosenza Centro railway station",
+			39.2948,
+			16.258
+		],
+		[
+			"Cosenza railway station",
+			39.3189,
+			16.26
+		],
+		[
+			"Cosenza Casali railway station",
+			39.28795,
+			16.26612
+		],
+		[
+			"Castiglione Cosentino railway station",
+			39.35571,
+			16.24415
+		],
+		[
+			"Rende railway station",
+			39.3445,
+			16.1949
+		],
+		[
+			"Rovito railway station",
+			39.31052,
+			16.32566
+		],
+		[
+			"San Pietro in Guarano railway station",
+			39.34022,
+			16.31437
+		]
+	],
+	"dunkerque-france": [
+		[
+			"Dunkirk railway station",
+			51.03038,
+			2.36876
+		],
+		[
+			"Coudekerque-Branche",
+			51.01746,
+			2.37508
+		],
+		[
+			"Gare de Grande-Synthe",
+			51.00222,
+			2.31194
+		]
+	],
+	"merida-mexico": [],
+	"arequipa-peru": [[
+		"Estación Arequipa",
+		-16.40959,
+		-71.54142
+	]],
+	"kusadas-turkiye": [],
+	"piacenza-italy": [[
+		"Piacenza railway station",
+		45.05202,
+		9.70634
+	], [
+		"San Bonico railway station",
+		45.01296,
+		9.6872
+	]],
+	"tulum-mexico": [[
+		"Estación Tulum",
+		20.2468,
+		-87.45339
+	]],
+	"bologna-italy": [
+		[
+			"Bologna Centrale railway station",
+			44.50583,
+			11.34167
+		],
+		[
+			"Bologna Centrale AV railway station",
+			44.50726,
+			11.34291
+		],
+		[
+			"Bologna Libia railway station",
+			44.4933,
+			11.3653
+		],
+		[
+			"Bologna Arcoveggio railway station",
+			44.5112,
+			11.3362
+		],
+		[
+			"Bologna Rimesse railway station",
+			44.494,
+			11.3735
+		],
+		[
+			"Bologna Fiere railway station",
+			44.51248,
+			11.36913
+		],
+		[
+			"Bologna Prati di Caprara railway station",
+			44.5121,
+			11.314
+		],
+		[
+			"Bologna Santa Rita railway station",
+			44.4957,
+			11.3835
+		],
+		[
+			"Bologna Via Larga railway station",
+			44.4967,
+			11.3925
+		],
+		[
+			"Bologna San Ruffillo railway station",
+			44.4627,
+			11.3728
+		],
+		[
+			"former Borgo Panigale scala railway station",
+			44.51736,
+			11.29376
+		],
+		[
+			"Bologna Roveri railway station",
+			44.4982,
+			11.4095
+		],
+		[
+			"Casteldebole railway halt",
+			44.504,
+			11.2749
+		],
+		[
+			"Bologna Borgo Panigale Scala railway station",
+			44.5212,
+			11.2803
+		]
+	],
+	"pompei-italy": [
+		[
+			"Pompei railway station",
+			40.7459,
+			14.5013
+		],
+		[
+			"Pompei Santuario railway station",
+			40.7512,
+			14.5016
+		],
+		[
+			"Scavi di Pompei railway station",
+			40.74586,
+			14.48349
+		],
+		[
+			"Pompei Scavi-Villa dei Misteri railway station",
+			40.7486,
+			14.4812
+		],
+		[
+			"Moregine railway station",
+			40.7382,
+			14.4852
+		],
+		[
+			"Rovigliano railway station",
+			40.73426,
+			14.47197
+		],
+		[
+			"Scafati railway station",
+			40.7461,
+			14.523
+		],
+		[
+			"Torre Annunziata Centrale station",
+			40.7472,
+			14.464
+		],
+		[
+			"Castellammare Cantieri station",
+			40.72691,
+			14.47354
+		],
+		[
+			"Boscoreale railway station",
+			40.77157,
+			14.48024
+		],
+		[
+			"Pioppaino railway station",
+			40.7189,
+			14.4917
+		],
+		[
+			"Boscotrecase railway station",
+			40.76864,
+			14.46137
+		],
+		[
+			"Torre Annunziata Marittima railway station",
+			40.75188,
+			14.45084
+		],
+		[
+			"San Pietro",
+			40.7606,
+			14.5344
+		]
+	],
+	"punta-arenas-chile": [],
+	"fredericton-canada": [],
+	"asheville-united-states": [[
+		"Southern Railway Passenger Depot",
+		35.5675,
+		-82.5428
+	]],
+	"cordoba-argentina": [
+		[
+			"Alta Córdoba train station",
+			-31.3983,
+			-64.1803
+		],
+		[
+			"Córdoba Mitre train station",
+			-31.4203,
+			-64.1749
+		],
+		[
+			"Hospital Neonatal",
+			-31.36917,
+			-64.21111
+		],
+		[
+			"D. V. Sársfield",
+			-31.44389,
+			-64.1975
+		],
+		[
+			"Arturo M. Bass",
+			-31.44111,
+			-64.17389
+		],
+		[
+			"Rodríguez del Busto train station",
+			-31.36389,
+			-64.22028
+		],
+		[
+			"Kilómetro 5",
+			-31.44028,
+			-64.15972
+		],
+		[
+			"La Tablada",
+			-31.3525,
+			-64.2369
+		]
+	],
+	"tirana-albania": [],
+	"cesena-italy": [[
+		"Cesena railway station",
+		44.14528,
+		12.24917
+	]],
+	"adeje-spain": [],
+	"estoril-portugal": [
+		[
+			"Estoril railway station",
+			38.70329,
+			-9.39875
+		],
+		[
+			"Monte Estoril railway station",
+			38.70359,
+			-9.40657
+		],
+		[
+			"São João do Estoril railway station",
+			38.70137,
+			-9.38611
+		],
+		[
+			"Cascais railway station",
+			38.70077,
+			-9.41844
+		],
+		[
+			"São Pedro do Estoril train station",
+			38.6954,
+			-9.37195
+		],
+		[
+			"Parede railway station",
+			38.6897,
+			-9.35614
+		],
+		[
+			"Carcavelos train station",
+			38.6878,
+			-9.33703
+		]
+	],
+	"epinal-france": [[
+		"Épinal railway station",
+		48.17802,
+		6.4414
+	], [
+		"Dinozé",
+		48.14136,
+		6.47208
+	]],
+	"osijek-croatia": [
+		[
+			"Osijek railway station",
+			45.5529,
+			18.6835
+		],
+		[
+			"Osijek Donji Grad",
+			45.55225,
+			18.72129
+		],
+		[
+			"Josipovac",
+			45.5742,
+			18.59006
+		],
+		[
+			"Darda",
+			45.63396,
+			18.6992
+		]
+	],
+	"san-antonio-united-states": [
+		[
+			"San Antonio Station",
+			29.42033,
+			-98.47811
+		],
+		[
+			"Sunset Station",
+			29.42154,
+			-98.47802
+		],
+		[
+			"International and Great Northern Railway Passenger Station",
+			29.42701,
+			-98.50499
+		],
+		[
+			"International & Great Northern Railroad Passenger Station",
+			29.42705,
+			-98.50538
+		]
+	],
+	"salt-lake-city-united-states": [[
+		"Salt Lake City Intermodal Hub",
+		40.76278,
+		-111.90833
+	], [
+		"North Temple station",
+		40.7725,
+		-111.905
+	]],
+	"essaouira-morocco": [],
+	"daegu-south-korea": [
+		[
+			"Chilseong Market Station",
+			35.87611,
+			128.605
+		],
+		[
+			"Daegu Station",
+			35.8765,
+			128.597
+		],
+		[
+			"Banwoldang Station",
+			35.86472,
+			128.59333
+		],
+		[
+			"Cheongna Hill Station",
+			35.865,
+			128.58306
+		],
+		[
+			"Beomeo Station",
+			35.85917,
+			128.62611
+		],
+		[
+			"Seomun Market Station",
+			35.8697,
+			128.582
+		],
+		[
+			"Dongdaegu Station",
+			35.87972,
+			128.62922
+		],
+		[
+			"National University of Education Station",
+			35.85111,
+			128.59056
+		],
+		[
+			"Namsan Station",
+			35.8567,
+			128.583
+		],
+		[
+			"Suseong-gu Office Station",
+			35.85889,
+			128.63556
+		],
+		[
+			"Bangogae Station",
+			35.8625,
+			128.57361
+		],
+		[
+			"Yeungnam University Hospital Station",
+			35.8442,
+			128.588
+		],
+		[
+			"Ayanggyo Station",
+			35.88722,
+			128.63972
+		],
+		[
+			"Manchon Station",
+			35.85889,
+			128.64472
+		]
+	],
+	"derry-londonderry-united-kingdom": [
+		[
+			"Londonderry Foyle Road railway station",
+			54.9907,
+			-7.3208
+		],
+		[
+			"Londonderry Cow Market railway station",
+			54.98754,
+			-7.33307
+		],
+		[
+			"Londonderry Victoria Road railway station",
+			54.9893,
+			-7.3167
+		],
+		[
+			"Londonderry Graving Dock railway station",
+			55.00885,
+			-7.31863
+		],
+		[
+			"New Buildings railway station",
+			54.95939,
+			-7.35438
+		],
+		[
+			"Gallagh Road railway station",
+			55.02874,
+			-7.34588
+		],
+		[
+			"Desertone Halt railway station",
+			54.93266,
+			-7.3517
+		],
+		[
+			"Bridge End railway station",
+			55.04327,
+			-7.38171
+		]
+	],
+	"cheyenne-united-states": [],
+	"bad-ischl-austria": [
+		[
+			"Bad Ischl railway station",
+			47.7122,
+			13.6273
+		],
+		[
+			"Lauffen railway station",
+			47.67412,
+			13.61628
+		],
+		[
+			"Mitterweißenbach railway station",
+			47.7388,
+			13.66333
+		]
+	],
+	"pittsburgh-united-states": [[
+		"Pittsburgh & Lake Erie Railroad Station",
+		40.43361,
+		-80.00389
+	], [
+		"Union Station",
+		40.44444,
+		-79.99167
+	]],
+	"florianopolis-brazil": [],
+	"assisi-italy": [[
+		"Assisi railway station",
+		43.05917,
+		12.58528
+	], [
+		"Bastia railway station",
+		43.07123,
+		12.54783
+	]],
+	"cali-colombia": [],
+	"sorrento-italy": [
+		[
+			"Sorrento railway station",
+			40.6258,
+			14.3798
+		],
+		[
+			"Sant'Agnello station",
+			40.6311,
+			14.3979
+		],
+		[
+			"Piano di Sorrento railway station",
+			40.635,
+			14.4104
+		],
+		[
+			"Meta railway station",
+			40.6404,
+			14.4163
+		],
+		[
+			"Seiano train station",
+			40.656,
+			14.4268
+		],
+		[
+			"Vico Equense railway station",
+			40.6629,
+			14.4298
+		]
+	],
+	"charlottesville-united-states": [[
+		"Charlottesville Union Station",
+		38.0314,
+		-78.4921
+	]],
+	"las-palmas-de-gran-canaria-spain": [],
+	"hyeres-france": [
+		[
+			"Gare d'Hyères",
+			43.10878,
+			6.12413
+		],
+		[
+			"Hyères Sud-France",
+			43.11639,
+			6.13167
+		],
+		[
+			"Hyères San Salvadour train station",
+			43.0845,
+			6.1109
+		],
+		[
+			"Carqueiranne train station",
+			43.093,
+			6.0742
+		],
+		[
+			"Hyères Saint-Nicolas-Mauvanne",
+			43.1256,
+			6.1949
+		]
+	],
+	"lagos-portugal": [
+		[
+			"Lagos railway station",
+			37.10854,
+			-8.67167
+		],
+		[
+			"Meia Praia",
+			37.11856,
+			-8.64754
+		],
+		[
+			"Odiáxere halt",
+			37.13917,
+			-8.62562
+		]
+	],
+	tokyo: [
+		[
+			"Iidabashi Station",
+			35.70206,
+			139.745
+		],
+		[
+			"Kōrakuen Station",
+			35.70734,
+			139.7513
+		],
+		[
+			"Ushigome-kagurazaka Station",
+			35.70086,
+			139.73578
+		],
+		[
+			"Suidōbashi Station",
+			35.702,
+			139.754
+		],
+		[
+			"Ushigome-yanagichō Station",
+			35.69952,
+			139.72503
+		],
+		[
+			"Waseda Stop",
+			35.71183,
+			139.71903
+		],
+		[
+			"Ichigaya Station",
+			35.691,
+			139.73558
+		],
+		[
+			"JR East Ichigaya Station",
+			35.691,
+			139.73558
+		],
+		[
+			"Jimbocho Station",
+			35.6959,
+			139.7577
+		],
+		[
+			"Hon-komagome Station",
+			35.72454,
+			139.75376
+		],
+		[
+			"Wakamatsu-kawada Station",
+			35.69925,
+			139.71819
+		],
+		[
+			"Ochanomizu Station",
+			35.69972,
+			139.76389
+		],
+		[
+			"JR East Ochanomizu Station",
+			35.6996,
+			139.76503
+		],
+		[
+			"Omokagebashi Station",
+			35.71292,
+			139.71453
+		]
+	],
+	"ceske-budejovice-czechia": [
+		[
+			"České Budějovice railway station",
+			48.97428,
+			14.48814
+		],
+		[
+			"Boršov nad Vltavou railway station",
+			48.9269,
+			14.4442
+		],
+		[
+			"Včelná",
+			48.9242,
+			14.4494
+		]
+	],
+	"st-augustine-united-states": [],
+	"seattle-unitedstates": [
+		[
+			"Symphony",
+			47.60778,
+			-122.33611
+		],
+		[
+			"King Street Station",
+			47.59833,
+			-122.32972
+		],
+		[
+			"Stadium",
+			47.59133,
+			-122.32717
+		],
+		[
+			"SODO",
+			47.58128,
+			-122.32739
+		],
+		[
+			"Beacon Hill",
+			47.57944,
+			-122.31139
+		],
+		[
+			"Mount Baker",
+			47.57658,
+			-122.29769
+		],
+		[
+			"Columbia City",
+			47.55975,
+			-122.29269
+		]
+	],
+	"izmir-trkiye": [
+		[
+			"Basmane railway station",
+			38.42247,
+			27.14363
+		],
+		[
+			"Hilal railway station",
+			38.42613,
+			27.15418
+		],
+		[
+			"Kemer railway station",
+			38.42194,
+			27.15615
+		],
+		[
+			"Alsancak railway station",
+			38.43901,
+			27.14799
+		],
+		[
+			"Gürçeşme railway station",
+			38.40886,
+			27.15609
+		],
+		[
+			"Halkapınar railway station",
+			38.43505,
+			27.16859
+		],
+		[
+			"Şirinyer railway station",
+			38.39205,
+			27.14717
+		],
+		[
+			"Karşıyaka railway station",
+			38.45789,
+			27.11517
+		],
+		[
+			"Alaybey railway station",
+			38.4606,
+			27.12141
+		],
+		[
+			"Nergiz railway station",
+			38.45958,
+			27.10476
+		],
+		[
+			"Naldöken railway station",
+			38.46458,
+			27.12845
+		],
+		[
+			"Koşu railway station",
+			38.38337,
+			27.14743
+		],
+		[
+			"Salhane railway station",
+			38.45077,
+			27.17222
+		],
+		[
+			"Turan railway station",
+			38.46688,
+			27.14943
+		]
+	],
+	"guilin-china": [[
+		"Guilin Railway Station",
+		25.26361,
+		110.27806
+	], [
+		"Guilinbei Railway Station",
+		25.3294,
+		110.301
+	]],
+	"seefeld-in-tirol-austria": [
+		[
+			"Bahnhof Seefeld in Tirol",
+			47.32887,
+			11.18933
+		],
+		[
+			"Bahnhof Reith",
+			47.30083,
+			11.20067
+		],
+		[
+			"Leithen railway station",
+			47.29078,
+			11.22167
+		],
+		[
+			"Bahnhof Gießenbach",
+			47.37524,
+			11.23689
+		],
+		[
+			"Hatting in Tirol",
+			47.28128,
+			11.17071
+		],
+		[
+			"Flaurling",
+			47.28898,
+			11.14307
+		],
+		[
+			"Inzing",
+			47.27797,
+			11.19868
+		]
+	],
+	"xian-china": [
+		[
+			"Sajinqiao station",
+			34.27132,
+			108.92884
+		],
+		[
+			"Nanshaomen station",
+			34.24268,
+			108.94223
+		],
+		[
+			"Sanqiao Railway Station",
+			34.27556,
+			108.96285
+		],
+		[
+			"Xi'an railway station",
+			34.2786,
+			108.958
+		],
+		[
+			"Tiyuchang station",
+			34.23389,
+			108.94218
+		],
+		[
+			"Kangfu Lu station",
+			34.27101,
+			108.97978
+		],
+		[
+			"Longshouyuan station",
+			34.29369,
+			108.94259
+		],
+		[
+			"Lianhu railway station",
+			34.27889,
+			108.91167
+		],
+		[
+			"Wei 1-jie station",
+			34.21405,
+			108.94215
+		],
+		[
+			"Kaiyuanmen station",
+			34.27096,
+			108.88835
+		],
+		[
+			"Chanba Railway Station",
+			34.29222,
+			109.00528
+		]
+	],
+	"ahmedabad-india": [
+		[
+			"Gandhigram railway station",
+			23.02676,
+			72.56883
+		],
+		[
+			"Ahmedabad Junction railway station",
+			23.02572,
+			72.60172
+		],
+		[
+			"Ahmedabad high-speed railway station",
+			23.025,
+			72.6027
+		],
+		[
+			"Shahibag railway station",
+			23.03555,
+			72.60095
+		],
+		[
+			"Kankaria railway station",
+			23.00882,
+			72.6071
+		],
+		[
+			"Asarva Junction railway station",
+			23.04398,
+			72.61294
+		],
+		[
+			"Maninagar railway station",
+			22.99865,
+			72.61139
+		],
+		[
+			"Sabarmati Bridge railway station",
+			23.06709,
+			72.58876
+		],
+		[
+			"Sabarmati Junction railway station",
+			23.07138,
+			72.58727
+		],
+		[
+			"Sabarmati high-speed railway station",
+			23.0756,
+			72.5879
+		],
+		[
+			"Vastrapur railway station",
+			23.00802,
+			72.51798
+		],
+		[
+			"Sahijpur railway station",
+			23.06137,
+			72.63163
+		],
+		[
+			"Chandlodiya railway station",
+			23.07481,
+			72.54283
+		],
+		[
+			"Sabarmati South railway station",
+			23.08345,
+			72.56376
+		]
+	],
+	"caraguatatuba-brazil": [],
+	"huddersfield-united-kingdom": [
+		[
+			"Longwood and Milnsbridge railway station",
+			53.6423,
+			-1.82138
+		],
+		[
+			"Huddersfield railway station",
+			53.648,
+			-1.785
+		],
+		[
+			"Lockwood railway station",
+			53.63479,
+			-1.8008
+		],
+		[
+			"Woodfield railway station",
+			53.6264,
+			-1.8085
+		],
+		[
+			"Stainland and Holywell Green railway station",
+			53.6733,
+			-1.86427
+		],
+		[
+			"Elland railway station",
+			53.6906,
+			-1.8386
+		],
+		[
+			"Deighton railway station",
+			53.66834,
+			-1.7524
+		],
+		[
+			"West Vale railway station",
+			53.6835,
+			-1.8593
+		],
+		[
+			"Berry Brow railway station",
+			53.621,
+			-1.7935
+		],
+		[
+			"Rochdale Road Halt railway station",
+			53.6889,
+			-1.8557
+		],
+		[
+			"Brighouse railway station",
+			53.698,
+			-1.779
+		],
+		[
+			"Greetland railway station",
+			53.6935,
+			-1.85678
+		],
+		[
+			"Bradley railway station",
+			53.6762,
+			-1.7409
+		],
+		[
+			"Kirkheaton railway station",
+			53.6516,
+			-1.7346
+		]
+	],
+	"ustka-poland": [
+		[
+			"Ustka railway station",
+			54.5787,
+			16.8612
+		],
+		[
+			"Wodnica Ustka",
+			54.5714,
+			16.8422
+		],
+		[
+			"Przewłoka train stop",
+			54.5864,
+			16.9083
+		],
+		[
+			"Duninowo",
+			54.5369,
+			16.8297
+		],
+		[
+			"Charnowo Słupskie",
+			54.5322,
+			16.9194
+		]
+	],
+	"sibenik-croatia": [[
+		"Šibenik railway station",
+		43.73028,
+		15.89972
+	], [
+		"Ražine",
+		43.70543,
+		15.92319
+	]],
+	"zielona-gora-poland": [
+		[
+			"Zielona Góra Górne Miasto",
+			51.94,
+			15.4878
+		],
+		[
+			"Zielona Góra Dworzec Szprotawski",
+			51.9469,
+			15.5106
+		],
+		[
+			"Zielona Góra railway station",
+			51.9475,
+			15.51444
+		],
+		[
+			"Zielona Góra Jędrzychów",
+			51.9086,
+			15.5058
+		],
+		[
+			"Stary Kisielin",
+			51.93611,
+			15.59056
+		]
+	],
+	"desenzano-del-garda-italy": [[
+		"Desenzano del Garda-Sirmione railway station",
+		45.46278,
+		10.53639
+	], [
+		"Lonato railway station",
+		45.45748,
+		10.48724
+	]],
+	"montecatini-terme-italy": [
+		[
+			"Montecatini Centro railway station",
+			43.8814,
+			10.7706
+		],
+		[
+			"Montecatini Terme-Monsummano railway station",
+			43.87961,
+			10.78088
+		],
+		[
+			"Stazione di Borgo a Buggiano",
+			43.8806,
+			10.73
+		]
+	],
+	"rabat-morocco": [
+		[
+			"Rabat-Agdal",
+			34.002,
+			-6.85625
+		],
+		[
+			"Rabat-City train station",
+			34.01653,
+			-6.83557
+		],
+		[
+			"Salé-City train station",
+			34.0379,
+			-6.81568
+		]
+	],
+	"mendoza-argentina": [[
+		"Mendoza train station",
+		-32.88286,
+		-68.84808
+	], [
+		"Mendoza train station Belgrano",
+		-32.8875,
+		-68.80917
+	]],
+	"verona-italy": [[
+		"Verona Porta Nuova railway station",
+		45.42917,
+		10.98222
+	], [
+		"Verona Porta Vescovo railway station",
+		45.4358,
+		11.0197
+	]],
+	"cusco-peru": [[
+		"Estación Wánchaq",
+		-13.52521,
+		-71.97136
+	], [
+		"Estación San Pedro",
+		-13.52119,
+		-71.98309
+	]],
+	"hakone-japan": [
+		[
+			"Ōwakudani Station",
+			35.24431,
+			139.01994
+		],
+		[
+			"Sōunzan Station",
+			35.2464,
+			139.036
+		],
+		[
+			"Kami-Gōra Station",
+			35.24729,
+			139.03812
+		],
+		[
+			"Naka-Gōra Station",
+			35.24818,
+			139.04066
+		],
+		[
+			"Kōen-Kami Station",
+			35.24906,
+			139.04317
+		],
+		[
+			"Ubako Station",
+			35.24453,
+			139.00603
+		],
+		[
+			"Kōen-Shimo Station",
+			35.24993,
+			139.04565
+		],
+		[
+			"Gōra Station",
+			35.25077,
+			139.04819
+		],
+		[
+			"Chōkoku-no-Mori Station",
+			35.24647,
+			139.05083
+		],
+		[
+			"Kowakidani Station",
+			35.24046,
+			139.0527
+		],
+		[
+			"Tōgendai Station",
+			35.2379,
+			138.995
+		],
+		[
+			"Miyanoshita Station",
+			35.24218,
+			139.06292
+		],
+		[
+			"Ōhiradai Station",
+			35.23885,
+			139.07388
+		]
+	],
+	"albuquerque-united-states": [
+		[
+			"Santa Fe Depot (Albuquerque, New Mexico)",
+			35.08222,
+			-106.64778
+		],
+		[
+			"Alvarado Transportation Center",
+			35.08341,
+			-106.64778
+		],
+		[
+			"Bernalillo County/International Sunport",
+			35.03028,
+			-106.65722
+		],
+		[
+			"Montaño",
+			35.1369,
+			-106.632
+		]
+	],
+	"charlottetown-canada": [],
+	"santa-margherita-ligure-italy": [
+		[
+			"Santa Margherita Ligure-Portofino railway station",
+			44.3366,
+			9.21669
+		],
+		[
+			"Camogli-San Fruttuoso railway stop",
+			44.348,
+			9.15654
+		],
+		[
+			"Recco railway station",
+			44.36113,
+			9.14669
+		]
+	],
+	"tampico-mexico": [],
+	"kandy-srilanka": [[
+		"Peradeniya Junction Railway Station",
+		7.25727,
+		80.5902
+	], [
+		"Kandy railway station",
+		7.2888,
+		80.63151
+	]],
+	"amalfi-italy": [],
+	"fano-italy": [[
+		"Fano railway station",
+		43.8429,
+		13.0246
+	]],
+	"north-vancouver-canada": [
+		[
+			"North Vancouver railway station",
+			49.31556,
+			-123.11444
+		],
+		[
+			"Pacific Central Station",
+			49.2737,
+			-123.098
+		],
+		[
+			"Rocky Mountaineer Station",
+			49.26861,
+			-123.08592
+		]
+	],
+	"chantilly-france": [
+		[
+			"Gare de Chantilly-Gouvieux",
+			49.18722,
+			2.45972
+		],
+		[
+			"Gare de Saint-Leu-d'Esserent",
+			49.21424,
+			2.418
+		],
+		[
+			"Gare d'Orry-la-Ville-Coye",
+			49.138,
+			2.49
+		],
+		[
+			"Gare de Précy-sur-Oise",
+			49.20343,
+			2.37679
+		],
+		[
+			"Gare de Montataire",
+			49.2511,
+			2.436
+		]
+	],
+	"medan-indonesia": [
+		[
+			"Medan Pasar railway station",
+			3.58691,
+			98.69164
+		],
+		[
+			"Bandar Khalipah railway station",
+			3.59409,
+			98.75713
+		],
+		[
+			"Medan railway station",
+			3.59088,
+			98.67974
+		],
+		[
+			"Kampung Baru (Medan)",
+			3.55248,
+			98.68942
+		],
+		[
+			"Pulu Brayan railway station",
+			3.63167,
+			98.6706
+		]
+	],
+	"new-orleans-unitedstates": [
+		[
+			"L&N Station",
+			29.9506,
+			-90.0639
+		],
+		[
+			"Southern RailwayTerminal",
+			29.9565,
+			-90.0731
+		],
+		[
+			"Texas Pacific - Missouri Pacific Station",
+			29.9371,
+			-90.0684
+		],
+		[
+			"New Orleans Union Passenger Terminal",
+			29.9462,
+			-90.0786
+		]
+	],
+	"ribadesella-spain": [
+		[
+			"Ribadesella Station",
+			43.45947,
+			-5.05468
+		],
+		[
+			"Llovio train station",
+			43.44054,
+			-5.05573
+		],
+		[
+			"Cuevas, Ribadesella FEVE station",
+			43.4312,
+			-5.07336
+		],
+		[
+			"estación de Camango",
+			43.44831,
+			-5.019
+		],
+		[
+			"Toraño train station",
+			43.41228,
+			-5.118
+		]
+	],
+	"cambridge-massachusetts-united-states": [
+		[
+			"Somerville Junction station",
+			42.3906,
+			-71.1028
+		],
+		[
+			"West Station",
+			42.3548,
+			-71.1216
+		],
+		[
+			"MBTA Commuter Rail Maintenance Facility",
+			42.375,
+			-71.0758
+		],
+		[
+			"Boston Landing station",
+			42.3572,
+			-71.1393
+		],
+		[
+			"Lansdowne station",
+			42.3476,
+			-71.1006
+		],
+		[
+			"Eastern Railroad Depot (Boston)",
+			42.36536,
+			-71.06258
+		],
+		[
+			"North Station",
+			42.3663,
+			-71.06222
+		],
+		[
+			"Back Bay station",
+			42.3476,
+			-71.0753
+		],
+		[
+			"North Union Station",
+			42.3657,
+			-71.061
+		],
+		[
+			"Lake Street station",
+			42.40482,
+			-71.14726
+		],
+		[
+			"Ruggles station",
+			42.3366,
+			-71.0892
+		],
+		[
+			"Mystic Valley Parkway station",
+			42.4169,
+			-71.12753
+		],
+		[
+			"South Station",
+			42.35194,
+			-71.05528
+		],
+		[
+			"West Medford station",
+			42.4218,
+			-71.13332
+		]
+	],
+	"zell-am-see-austria": [
+		[
+			"Zell am See Lokalbahn railway station",
+			47.3201,
+			12.79561
+		],
+		[
+			"Zell am See railway station",
+			47.32051,
+			12.79652
+		],
+		[
+			"Bahnhof Tischlerhäusl",
+			47.30799,
+			12.79402
+		],
+		[
+			"Bruck-Fusch railway station",
+			47.28461,
+			12.82887
+		],
+		[
+			"Maishofen-Saalbach railway station",
+			47.35867,
+			12.81025
+		],
+		[
+			"Bahnhof Fürth-Kaprun",
+			47.28804,
+			12.74482
+		]
+	],
+	"stellenbosch-southafrica": [[
+		"Stellenbosch",
+		-33.93879,
+		18.84963
+	], [
+		"Du Toit",
+		-33.92384,
+		18.8541
+	]],
+	"cremona-italy": [
+		[
+			"Cremona railway station",
+			45.14323,
+			10.018
+		],
+		[
+			"Castelvetro railway station",
+			45.1002,
+			9.98237
+		],
+		[
+			"Cava Tigozzi railway station",
+			45.1567,
+			9.95567
+		],
+		[
+			"Villetta Malagnino railway station",
+			45.1369,
+			10.1119
+		]
+	],
+	"senigallia-italy": [[
+		"Senigallia train station",
+		43.7161,
+		13.2216
+	]],
+	"indianapolis-united-states": [[
+		"Union Station",
+		39.76306,
+		-86.15944
+	]],
+	"brossard-canada": [
+		[
+			"Brosseau",
+			45.43333,
+			-73.46667
+		],
+		[
+			"Longueuil–Saint-Hubert",
+			45.50802,
+			-73.43515
+		],
+		[
+			"Saint-Lambert",
+			45.4992,
+			-73.5072
+		]
+	],
+	"cattolica-italy": [[
+		"Cattolica-San Giovanni-Gabicce train station",
+		43.9594,
+		12.7468
+	], [
+		"Misano Adriatico railway station",
+		43.97745,
+		12.6973
+	]],
+	"raleigh-united-states": [[
+		"North Carolina State Fair station",
+		35.7942,
+		-78.7061
+	], [
+		"Raleigh Union Station",
+		35.7772,
+		-78.6472
+	]],
+	"palm-springs-united-states": [],
+	"beppu-japan": [
+		[
+			"Beppu Station",
+			33.27954,
+			131.50026
+		],
+		[
+			"Beppu Daigaku Station",
+			33.31306,
+			131.49944
+		],
+		[
+			"Higashi-Beppu Station",
+			33.26778,
+			131.51056
+		],
+		[
+			"Kamegawa Station",
+			33.33139,
+			131.49306
+		]
+	],
+	"baton-rouge-united-states": [],
+	"foggia-italy": [[
+		"Foggia railway station",
+		41.46556,
+		15.55611
+	]],
+	"jackson-wyoming-united-states": [],
+	"blacksburg-united-states": [],
+	"surabaya-indonesia": [
+		[
+			"Surabaya Gubeng railway station",
+			-7.26532,
+			112.75269
+		],
+		[
+			"Surabaya Pasar Turi railway station",
+			-7.24806,
+			112.731
+		],
+		[
+			"Surabaya Kota railway station",
+			-7.243,
+			112.741
+		],
+		[
+			"Mesigit railway station",
+			-7.24116,
+			112.7269
+		],
+		[
+			"Sidotopo railway station",
+			-7.23639,
+			112.756
+		],
+		[
+			"Ngagel railway station",
+			-7.28895,
+			112.74776
+		],
+		[
+			"Wonokromo Kota railway station",
+			-7.29819,
+			112.73589
+		],
+		[
+			"Kalimas railway station",
+			-7.22169,
+			112.7344
+		],
+		[
+			"Benteng railway station",
+			-7.22113,
+			112.74386
+		],
+		[
+			"Wonokromo railway station",
+			-7.30188,
+			112.7391
+		],
+		[
+			"Tandes railway station",
+			-7.25886,
+			112.687
+		],
+		[
+			"Margorejo railway station",
+			-7.31483,
+			112.73446
+		],
+		[
+			"Ujung",
+			-7.20261,
+			112.73656
+		]
+	],
+	"messina-italy": [
+		[
+			"Messina Centrale railway station",
+			38.18513,
+			15.56093
+		],
+		[
+			"Messina Marittima railway station",
+			38.18778,
+			15.56361
+		],
+		[
+			"Contesse",
+			38.15027,
+			15.53565
+		],
+		[
+			"Tremestieri",
+			38.13812,
+			15.52693
+		]
+	],
+	"fort-lauderdale-united-states": [
+		[
+			"Fort Lauderdale",
+			26.12366,
+			-80.14611
+		],
+		[
+			"Fort Lauderdale station",
+			26.11947,
+			-80.16987
+		],
+		[
+			"Cypress Creek",
+			26.1972,
+			-80.1507
+		]
+	],
+	"casper-united-states": [],
+	"cognac-france": [
+		[
+			"Gare de Cognac",
+			45.68444,
+			-.32597
+		],
+		[
+			"Crouin",
+			45.68938,
+			-.34431
+		],
+		[
+			"Gare de Cognac - Saint-Jacques",
+			45.70156,
+			-.33906
+		],
+		[
+			"Fontenille",
+			45.72144,
+			-.33396
+		],
+		[
+			"Gare de Merpins",
+			45.67126,
+			-.36136
+		],
+		[
+			"Cherves",
+			45.74347,
+			-.34715
+		]
+	],
+	"chiang-rai-thailand": [],
+	"cancun-mexico": [[
+		"Estación de Cancún Aeropuerto",
+		21.02841,
+		-86.8716
+	]],
+	"fribourg-switzerland": [
+		[
+			"Fribourg/Freiburg Poya railway station",
+			46.81558,
+			7.15649
+		],
+		[
+			"Fribourg railway station",
+			46.80327,
+			7.15103
+		],
+		[
+			"Givisiez railway station",
+			46.81676,
+			7.12996
+		],
+		[
+			"Villars-sur-Glâne railway station",
+			46.78983,
+			7.11639
+		],
+		[
+			"Belfaux-Village railway station",
+			46.8227,
+			7.11023
+		],
+		[
+			"Pensier railway station",
+			46.84161,
+			7.13529
+		],
+		[
+			"Belfaux CFF railway station",
+			46.81692,
+			7.10623
+		],
+		[
+			"Matran railway station",
+			46.78894,
+			7.09633
+		],
+		[
+			"Düdingen railway station",
+			46.85104,
+			7.18975
+		],
+		[
+			"Avry-Matran railway station",
+			46.78603,
+			7.08043
+		]
+	],
+	"canakkale-turkiye": [],
+	"ioannina-greece": [],
+	"franklin-united-states": [],
+	"nusa-lembongan-indonesia": [],
+	"foz-do-iguacu-brazil": [],
+	"narbonne-france": [[
+		"Gare de Narbonne",
+		43.19061,
+		3.00566
+	], [
+		"Coursan",
+		43.23374,
+		3.05092
+	]],
+	"medellin-colombia": [],
+	"novi-sad-serbia": [[
+		"Novi Sad railway station",
+		45.26556,
+		19.82944
+	], [
+		"Petrovaradin railway station",
+		45.24056,
+		19.88778
+	]],
+	"battambang-cambodia": [[
+		"Battambang railway station",
+		13.09787,
+		103.19454
+	]],
+	"campeche-mexico": [],
+	"suzhou-china": [[
+		"Suzhou railway station",
+		31.3306,
+		120.606
+	]],
+	"chianciano-terme-italy": [],
+	"carmel-united-states": [[
+		"Monterey Transit Plaza",
+		36.59758,
+		-121.89425
+	]],
+	"ventura-united-states": [[
+		"Ventura station",
+		34.277,
+		-119.2999
+	]],
+	"charlotte-united-states": [[
+		"Seaboard Air Line Railroad Passenger Station",
+		35.2339,
+		-80.8331
+	], [
+		"Charlotte",
+		35.24122,
+		-80.82264
+	]],
+	"vilamoura-portugal": [
+		[
+			"Benfarras Halt",
+			37.11702,
+			-8.12092
+		],
+		[
+			"Vale Judeu Halt",
+			37.1135,
+			-8.0997
+		],
+		[
+			"Várzea da Mão Halt",
+			37.11095,
+			-8.08863
+		],
+		[
+			"Boliqueime train station",
+			37.1227,
+			-8.15276
+		],
+		[
+			"Loulé train station",
+			37.1044,
+			-8.05835
+		],
+		[
+			"Patã Halt",
+			37.11346,
+			-8.18776
+		],
+		[
+			"Vale de Éguas Halt",
+			37.09805,
+			-8.04397
+		]
+	],
+	"monopoli-italy": [[
+		"Monopoli railway station",
+		40.9521,
+		17.2925
+	]],
+	"hat-yai-thailand": [[
+		"Hat Yai Junction railway station",
+		7.00389,
+		100.4675
+	], [
+		"Ban Din Lan Railway Station",
+		7.0476,
+		100.4326
+	]],
+	"palermo-italy": [
+		[
+			"Palermo Politeama railway station",
+			38.12433,
+			13.35576
+		],
+		[
+			"Palermo Marittima railway station",
+			38.127,
+			13.36629
+		],
+		[
+			"Palermo Papireto train station",
+			38.11396,
+			13.35047
+		],
+		[
+			"Sant'Erasmo Exhibition Centre (Palermo)",
+			38.11062,
+			13.37899
+		],
+		[
+			"Palermo Notarbartolo railway station",
+			38.1325,
+			13.34194
+		],
+		[
+			"Palermo Fiera railway station",
+			38.1411,
+			13.3537
+		],
+		[
+			"Palermo Brancaccio railway station",
+			38.0933,
+			13.3927
+		],
+		[
+			"Palermo San Lorenzo railway station",
+			38.1631,
+			13.3166
+		]
+	],
+	"ibiza-spain": [],
+	"darlington-united-kingdom": [
+		[
+			"North Road railway station",
+			54.53567,
+			-1.55375
+		],
+		[
+			"Darlington railway station",
+			54.5212,
+			-1.54653
+		],
+		[
+			"Heighington railway station",
+			54.5972,
+			-1.5818
+		],
+		[
+			"Aycliffe railway station",
+			54.596,
+			-1.559
+		]
+	],
+	"bismarck-united-states": [],
+	"corralejo-spain": [],
+	"burbank-united-states": [
+		[
+			"Burbank Airport-HSR station",
+			34.20227,
+			-118.35288
+		],
+		[
+			"Burbank Airport–North station",
+			34.20639,
+			-118.35
+		],
+		[
+			"Downtown Burbank station",
+			34.1786,
+			-118.312
+		],
+		[
+			"Sun Valley",
+			34.2225,
+			-118.37389
+		]
+	],
+	"setubal-portugal": [
+		[
+			"Fontaínhas - Sado",
+			38.52221,
+			-8.88468
+		],
+		[
+			"Setúbal train station",
+			38.53054,
+			-8.88498
+		],
+		[
+			"Cachofarra halt",
+			38.51286,
+			-8.8587
+		],
+		[
+			"Palmela Station",
+			38.57156,
+			-8.87313
+		],
+		[
+			"estación Palmela-A",
+			38.57157,
+			-8.87279
+		],
+		[
+			"Praias do Sado train station",
+			38.51388,
+			-8.84231
+		],
+		[
+			"Praias do Sado-A halt",
+			38.51738,
+			-8.83817
+		]
+	],
+	"beirut-lebanon": [],
+	"trouville-sur-mer-france": [[
+		"Gare de Trouville-Deauville",
+		49.36,
+		.08417
+	], [
+		"Gare de Blonville-sur-Mer-Benerville",
+		49.33146,
+		.03615
+	]],
+	"kingston-jamaica": [],
+	"bossier-city-united-states": [],
+	"portland-unitedstates": [[
+		"North Bank Depot Buildings",
+		45.52758,
+		-122.68231
+	], [
+		"Union Station",
+		45.52917,
+		-122.67694
+	]],
+	"munduk-indonesia": [],
+	"cesenatico-italy": [[
+		"Cesenatico railway station",
+		44.2007,
+		12.3914
+	], [
+		"Bellaria railway station",
+		44.1502,
+		12.4609
+	]],
+	"marsala-italy": [[
+		"Marsala railway station",
+		37.79316,
+		12.44317
+	]],
+	"horta-portugal": [],
+	"caen-france": [[
+		"Gare de Caen Saint-Martin",
+		49.18583,
+		-.37222
+	], [
+		"Gare de Caen",
+		49.1764,
+		-.3477
+	]],
+	"bari-italy": [
+		[
+			"Bari Centrale railway station (FAL)",
+			41.1185,
+			16.869
+		],
+		[
+			"Bari Centrale railway station (FT)",
+			41.1183,
+			16.8691
+		],
+		[
+			"Bari Centrale railway station",
+			41.11806,
+			16.87
+		],
+		[
+			"Bari Sud Est railway station",
+			41.1176,
+			16.8797
+		],
+		[
+			"Bari Scalo railway station",
+			41.1149,
+			16.8541
+		],
+		[
+			"Bari Parco Sud railway station",
+			41.1143,
+			16.8981
+		],
+		[
+			"Bari Zona Industriale railway station",
+			41.128,
+			16.8263
+		],
+		[
+			"Fesca-San Girolamo railway station",
+			41.1299,
+			16.8237
+		],
+		[
+			"Bari Santa Rita railway station",
+			41.07307,
+			16.85154
+		]
+	],
+	"dar-es-salaam-tanzania": [],
+	"versailles-france": [
+		[
+			"Versailles Château–Rive-Gauche",
+			48.8,
+			2.12917
+		],
+		[
+			"Gare de Versailles-Rive-Droite",
+			48.80972,
+			2.13472
+		],
+		[
+			"Gare de Versailles-Chantiers",
+			48.79528,
+			2.13528
+		],
+		[
+			"Gare de Montreuil",
+			48.80652,
+			2.15107
+		],
+		[
+			"gare de Porchefontaine",
+			48.79639,
+			2.15361
+		],
+		[
+			"Viroflay-Rive-Droite station",
+			48.80549,
+			2.1683
+		],
+		[
+			"Les Portes de Saint-Cyr",
+			48.80738,
+			2.07749
+		],
+		[
+			"Gare de Saint-Cyr-Grande-Ceinture",
+			48.8025,
+			2.07693
+		],
+		[
+			"Allée Royale",
+			48.81452,
+			2.0786
+		],
+		[
+			"Viroflay-Rive-Gauche station",
+			48.80068,
+			2.17145
+		],
+		[
+			"gare de Saint-Cyr",
+			48.799,
+			2.07356
+		],
+		[
+			"Petit Jouy - Les Loges",
+			48.77083,
+			2.14667
+		],
+		[
+			"Gare de Vaucresson",
+			48.83685,
+			2.15247
+		],
+		[
+			"Gare de La Celle-Saint-Cloud",
+			48.84266,
+			2.13817
+		]
+	],
+	"cherkasy-ukraine": [[
+		"Cherkasy",
+		49.4261,
+		32.0503
+	], [
+		"882 km",
+		49.48447,
+		32.04673
+	]],
+	"santa-fe-united-states": [
+		[
+			"South Capitol",
+			35.67306,
+			-105.95722
+		],
+		[
+			"Santa Fe Depot",
+			35.68417,
+			-105.94667
+		],
+		[
+			"Zia Road",
+			35.6464,
+			-105.957
+		]
+	],
+	"alexandria-united-states": [[
+		"Union Station",
+		38.8063,
+		-77.0621
+	], [
+		"Crystal City station",
+		38.8594,
+		-77.0483
+	]],
+	"cincinnati-united-states": [],
+	"playa-del-carmen-mexico": [],
+	"palma-spain": [[
+		"Palma Intermodal Station",
+		39.57639,
+		2.65425
+	], [
+		"Palma railway station (Ferrocarril de Sóller)",
+		39.57667,
+		2.65389
+	]],
+	"san-jose-united-states": [
+		[
+			"College Park",
+			37.34278,
+			-121.91556
+		],
+		[
+			"San Jose Diridon",
+			37.32993,
+			-121.90249
+		],
+		[
+			"Santa Clara Transit Center",
+			37.35306,
+			-121.93639
+		],
+		[
+			"Downtown San José",
+			37.33635,
+			-121.89002
+		],
+		[
+			"Tamien",
+			37.3127,
+			-121.885
+		]
+	],
+	"llanes-spain": [
+		[
+			"Llanes train station",
+			43.42103,
+			-4.759
+		],
+		[
+			"San Roque del Acebal train station",
+			43.39481,
+			-4.72992
+		],
+		[
+			"estación de Vidiago",
+			43.39656,
+			-4.67281
+		],
+		[
+			"Celorio train station",
+			43.42486,
+			-4.81133
+		]
+	],
+	"great-yarmouth-united-kingdom": [
+		[
+			"Newtown Halt railway station",
+			52.6201,
+			1.7348
+		],
+		[
+			"Great Yarmouth railway station",
+			52.6118,
+			1.7207
+		],
+		[
+			"Yarmouth South Town railway station",
+			52.605,
+			1.7197
+		],
+		[
+			"Gorleston North railway station",
+			52.5878,
+			1.7193
+		],
+		[
+			"Caister-on-Sea railway station",
+			52.6476,
+			1.7332
+		],
+		[
+			"Gorleston-on-Sea railway station",
+			52.5699,
+			1.7251
+		],
+		[
+			"Caister Camp Halt railway station",
+			52.6596,
+			1.72788
+		],
+		[
+			"Gorleston Links railway station",
+			52.5566,
+			1.7256
+		],
+		[
+			"California Halt railway station",
+			52.6716,
+			1.71707
+		]
+	],
+	"konya-turkiye": [
+		[
+			"Selçuklu YHT railway station",
+			37.8984,
+			32.49809
+		],
+		[
+			"Konya railway station",
+			37.86634,
+			32.47636
+		],
+		[
+			"Horozluhan railway station",
+			37.93956,
+			32.53998
+		]
+	],
+	"polignano-a-mare-italy": [[
+		"Polignano a Mare railway station",
+		40.991,
+		17.2188
+	]],
+	"billings-united-states": [],
+	"valletta-malta": [],
+	"les-sables-d-olonne-france": [[
+		"Les Sables-d'Olonne",
+		46.49981,
+		-1.78134
+	], [
+		"Olonne-sur-Mer",
+		46.5484,
+		-1.76751
+	]],
+	"apia-samoa": [],
+	"torshavn-faroe-islands": [],
+	"cozumel-mexico": [],
+	"corfu-greece": [],
+	"bad-hofgastein-austria": [[
+		"Bad Hofgastein railway station",
+		47.19522,
+		13.10073
+	], [
+		"Bad Gastein railway station",
+		47.11175,
+		13.13193
+	]],
+	"pordenone-italy": [[
+		"Pordenone railway station",
+		45.95667,
+		12.65444
+	]],
+	"birmingham-alabama-united-states": [],
+	"bradenton-united-states": [],
+	"sestri-levante-italy": [
+		[
+			"Sestri Levante railway station",
+			44.2762,
+			9.39752
+		],
+		[
+			"Riva Trigoso railway station",
+			44.264,
+			9.42954
+		],
+		[
+			"Lavagna railway stop",
+			44.3056,
+			9.34639
+		]
+	],
+	"sharm-el-sheikh-egypt": [],
+	"chongqing-china": [[
+		"Chongqing North railway station",
+		29.61042,
+		106.54708
+	]],
+	"iquitos-peru": [],
+	"kingston-canada": [
+		[
+			"Grand Trunk Railway (Old Railway Station)",
+			44.254,
+			-76.485
+		],
+		[
+			"Kingston station",
+			44.2572,
+			-76.5369
+		],
+		[
+			"209 Ontario Street",
+			44.22931,
+			-76.48019
+		],
+		[
+			"Grand Trunk Railway Station",
+			44.22817,
+			-76.48142
+		]
+	],
+	"vevey-switzerland": [
+		[
+			"Hauteville railway station",
+			46.46625,
+			6.8609
+		],
+		[
+			"Vevey railway station",
+			46.463,
+			6.84345
+		],
+		[
+			"La Tour-de-Peilz railway station",
+			46.45545,
+			6.85952
+		],
+		[
+			"Gilamont railway station",
+			46.47141,
+			6.85264
+		],
+		[
+			"Château-d'Hauteville railway station",
+			46.46846,
+			6.8653
+		],
+		[
+			"Vevey-Funi railway station",
+			46.46828,
+			6.83544
+		],
+		[
+			"St-Légier-Gare railway station",
+			46.47053,
+			6.87193
+		],
+		[
+			"St-Légier-Village railway station",
+			46.47101,
+			6.87657
+		],
+		[
+			"La Chiésaz railway station",
+			46.46951,
+			6.88214
+		],
+		[
+			"Burier railway station",
+			46.44788,
+			6.87711
+		],
+		[
+			"Corseaux-Cornalles railway station",
+			46.47045,
+			6.82477
+		],
+		[
+			"Château-de-Blonay railway station",
+			46.46834,
+			6.89176
+		],
+		[
+			"Blonay railway station",
+			46.46569,
+			6.89595
+		],
+		[
+			"Prélaz-sur-Blonay railway station",
+			46.46882,
+			6.89794
+		]
+	],
+	"chula-vista-united-states": [],
+	"malang-indonesia": [
+		[
+			"Malang railway station",
+			-7.9778,
+			112.63728
+		],
+		[
+			"Blimbing railway station",
+			-7.94,
+			112.645
+		],
+		[
+			"Malang Kotalama railway station",
+			-7.99477,
+			112.63301
+		],
+		[
+			"Sumberpucung railway station",
+			-7.9949,
+			112.633
+		],
+		[
+			"Malang Jagalan",
+			-7.9949,
+			112.63254
+		]
+	],
+	"udaipur-india": [[
+		"Udaipur City railway station",
+		24.56686,
+		73.69963
+	], [
+		"Rana Pratap Nagar Railway Station",
+		24.58242,
+		73.72806
+	]],
+	"denpasar-indonesia": [],
+	"ostuni-italy": [[
+		"Ostuni railway station",
+		40.7522,
+		17.5808
+	]],
+	"melbourne-united-states": [],
+	"airdrie-canada": [],
+	"houston-united-states": [[
+		"Union Station",
+		29.75727,
+		-95.35698
+	], [
+		"Houston station",
+		29.7673,
+		-95.3675
+	]],
+	"lynchburg-united-states": [],
+	"vientiane-laos": [],
+	"nusa-penida-indonesia": [],
+	"newcastle-south-africa": [],
+	"boise-united-states": [],
+	"amarante-portugal": [
+		[
+			"Fregim Halt",
+			41.25069,
+			-8.10452
+		],
+		[
+			"Fregim-A Stop",
+			41.24563,
+			-8.10895
+		],
+		[
+			"Vila Caiz Train Station",
+			41.22968,
+			-8.12421
+		]
+	],
+	"chiclayo-peru": [],
+	"binghamton-united-states": [],
+	"guangzhou-china": [],
+	"ushuaia-argentina": [],
+	"ciudad-victoria-mexico": [],
+	"can-tho-vietnam": [],
+	"chico-united-states": [[
+		"Chico station",
+		39.70667,
+		-121.83556
+	]],
+	"rochester-united-states": [[
+		"Clinton (RIRTR station)",
+		43.1493,
+		-77.6042
+	], [
+		"Louise M. Slaughter Rochester Station",
+		43.1635,
+		-77.6082
+	]],
+	"madison-united-states": [],
+	"como-italy": [
+		[
+			"Como Borghi railway station",
+			45.8049,
+			9.09084
+		],
+		[
+			"Como San Giovanni railway station",
+			45.80895,
+			9.07233
+		],
+		[
+			"Como Nord Lago railway station",
+			45.81417,
+			9.0842
+		],
+		[
+			"Como Camerlata railway station",
+			45.7846,
+			9.07941
+		],
+		[
+			"Grandate-Breccia railway station",
+			45.7815,
+			9.05572
+		],
+		[
+			"Chiasso railway station",
+			45.83219,
+			9.03145
+		],
+		[
+			"Cantù railway station",
+			45.75242,
+			9.13027
+		]
+	],
+	"caracas-venezuela": [],
+	"cajamarca-peru": [],
+	"huntsville-united-states": [[
+		"Huntsville Depot",
+		34.7344,
+		-86.5908
+	]],
+	"bellevue-united-states": [],
+	"chandler-united-states": [],
+	"kayseri-turkiye": [[
+		"Kayseri railway station",
+		38.73056,
+		35.4775
+	]],
+	"aguascalientes-mexico": [],
+	"hyderabad-india": [
+		[
+			"Borabanda railway station",
+			17.45923,
+			78.40786
+		],
+		[
+			"Bharatnagar railway station",
+			17.4621,
+			78.4294
+		],
+		[
+			"Sanathnagar railway station",
+			17.46161,
+			78.43595
+		],
+		[
+			"Nature Cure Hospital railway station",
+			17.44586,
+			78.45289
+		],
+		[
+			"Fatehnagar railway station",
+			17.4565,
+			78.4501
+		],
+		[
+			"Begumpet railway station",
+			17.43887,
+			78.45863
+		],
+		[
+			"Hussain Sagar Junction",
+			17.42569,
+			78.46221
+		],
+		[
+			"Necklace Road railway station",
+			17.42334,
+			78.46287
+		],
+		[
+			"Khairatabad railway station",
+			17.4132,
+			78.461
+		],
+		[
+			"HITEC City railway station",
+			17.4694,
+			78.38486
+		],
+		[
+			"Sanjeevaiah Park railway station",
+			17.43595,
+			78.47569
+		],
+		[
+			"Lakdikapool railway station",
+			17.40405,
+			78.46353
+		],
+		[
+			"Hyderabad Deccan railway station",
+			17.39336,
+			78.46738
+		],
+		[
+			"James Street railway station",
+			17.43313,
+			78.48691
+		]
+	],
+	"yerevan-armenia": [
+		[
+			"Yerevan",
+			40.15539,
+			44.50854
+		],
+		[
+			"Almast",
+			40.2054,
+			44.5505
+		],
+		[
+			"Kanaker",
+			40.22978,
+			44.55306
+		]
+	],
+	"coatzacoalcos-mexico": [[
+		"Coatzacoalcos railway station",
+		18.1265,
+		-94.4401
+	]],
+	"charleston-unitedstates": [],
+	"orvieto-italy": [[
+		"Orvieto railway station",
+		42.7239,
+		12.1265
+	]],
+	"marmaris-turkiye": [],
+	"tampa-united-states": [],
+	"agra-india": [
+		[
+			"Yamuna Bridge railway station",
+			27.19151,
+			78.03813
+		],
+		[
+			"Agra Fort railway station",
+			27.18331,
+			78.0191
+		],
+		[
+			"Agra City railway station",
+			27.19457,
+			78.01578
+		],
+		[
+			"Idgah railway station",
+			27.17265,
+			77.99781
+		],
+		[
+			"Chhalesar railway station",
+			27.21208,
+			78.08414
+		],
+		[
+			"Agra Cantt railway station",
+			27.15799,
+			77.99015
+		],
+		[
+			"Raja ki Mandi railway station",
+			27.19381,
+			77.99661
+		]
+	],
+	"ann-arbor-united-states": [[
+		"Ann Arbor station",
+		42.28778,
+		-83.74306
+	]],
+	"hangzhou-china": [
+		[
+			"Hangzhou railway station",
+			30.246,
+			120.1784
+		],
+		[
+			"Nanxingqiao Railway Station",
+			30.21944,
+			120.16694
+		],
+		[
+			"Genshanmen Railway Station",
+			30.285,
+			120.18083
+		],
+		[
+			"Chengxing Road station",
+			30.24185,
+			120.20219
+		],
+		[
+			"Jiangjin Road station",
+			30.25213,
+			120.21096
+		],
+		[
+			"Hangzhou East railway station",
+			30.29329,
+			120.20838
+		]
+	],
+	"hua-hin-thailand": [
+		[
+			"Hua Hin Railway Station",
+			12.56526,
+			99.95493
+		],
+		[
+			"Nong Kae Railway Station",
+			12.5327,
+			99.9644
+		],
+		[
+			"Suan Son Pradiphat Railway Station",
+			12.49855,
+			99.97244
+		]
+	],
+	"minneapolis-united-states": [
+		[
+			"Chicago, Milwaukee, St. Paul and Pacific Depot Freight House and Train Shed",
+			44.9797,
+			-93.2622
+		],
+		[
+			"Target Field",
+			44.98333,
+			-93.27722
+		],
+		[
+			"Northtown Yard",
+			45.02528,
+			-93.26444
+		]
+	],
+	"plymouth-united-states": [],
+	"cleveland-united-states": [
+		[
+			"Tower City Center",
+			41.49778,
+			-81.69417
+		],
+		[
+			"Cleveland Lakefront station",
+			41.5057,
+			-81.6965
+		],
+		[
+			"Cleveland station (Baltimore and Ohio Railroad)",
+			41.49547,
+			-81.69861
+		]
+	],
+	"santa-fe-argentina": [[
+		"Guadalupe",
+		-31.60416,
+		-60.67684
+	]],
+	"valencia-united-states": [[
+		"Santa Clarita",
+		34.4147,
+		-118.524
+	]],
+	"cordoba-mexico": [],
+	"aurangabad-india": [
+		[
+			"Mukundwadi Halt railway station",
+			19.85954,
+			75.36755
+		],
+		[
+			"Chhatrapati Sambhaji Nagar railway station",
+			19.85928,
+			75.31065
+		],
+		[
+			"Chikalthana railway station",
+			19.85956,
+			75.40285
+		]
+	],
+	"bandar-seri-begawan-brunei": [],
+	"bellingham-united-states": [[
+		"Great Northern Passenger Station",
+		48.75389,
+		-122.48528
+	], [
+		"Bellingham station",
+		48.7205,
+		-122.511
+	]],
+	"pakse-laos": [],
+	"wilmington-north-carolina-united-states": [],
+	"san-miguel-de-allende-mexico": [],
+	"varanasi-india": [
+		[
+			"Banaras railway station",
+			25.3,
+			82.97208
+		],
+		[
+			"Varanasi Junction railway station",
+			25.32728,
+			82.98647
+		],
+		[
+			"Bhulanpur railway station",
+			25.28788,
+			82.95752
+		],
+		[
+			"Varanasi City railway station",
+			25.33412,
+			83.01411
+		],
+		[
+			"Kashi Railway station",
+			25.32656,
+			83.03194
+		],
+		[
+			"Baba Bhagwan Ram Halt railway station",
+			25.31589,
+			83.03841
+		],
+		[
+			"Lohra railway station",
+			25.3156,
+			82.93066
+		]
+	],
+	"naples-florida-united-states": [[
+		"Seaboard Coast Line Railroad Depot",
+		26.1428,
+		-81.793
+	]],
+	"spokane-united-states": [[
+		"Spokane Intermodal Center",
+		47.6563,
+		-117.415
+	]],
+	"aalst-belgium": [
+		[
+			"Aalst railway station",
+			50.94278,
+			4.03944
+		],
+		[
+			"Aalst-Oost railway station",
+			50.93806,
+			4.04722
+		],
+		[
+			"Aalst-Kerrebroek railway station",
+			50.94833,
+			4.02472
+		],
+		[
+			"Aalst-Hofstade railway station",
+			50.96244,
+			4.03036
+		],
+		[
+			"Erembodegem railway station",
+			50.91927,
+			4.05568
+		],
+		[
+			"Mijlbeke railway station",
+			50.94538,
+			4.07336
+		],
+		[
+			"Vijfhuizen railway station",
+			50.9433,
+			3.98333
+		],
+		[
+			"Haaltert railway station",
+			50.90667,
+			4.02361
+		],
+		[
+			"Welle railway station",
+			50.9031,
+			4.05083
+		],
+		[
+			"Ede railway station",
+			50.91098,
+			3.98693
+		],
+		[
+			"Lede railway station",
+			50.97056,
+			3.98556
+		],
+		[
+			"Moorsel railway station",
+			50.95232,
+			4.10306
+		],
+		[
+			"Erpe-Mere railway station",
+			50.92949,
+			3.96283
+		],
+		[
+			"Gijzegem railway station",
+			50.98817,
+			4.04346
+		]
+	],
+	"salalah-oman": [],
+	"evian-les-bains-france": [[
+		"Évian-les-Bains railway station",
+		46.39789,
+		6.57753
+	]],
+	"naples-italy": [
+		[
+			"Montesanto railway station",
+			40.8472,
+			14.2457
+		],
+		[
+			"Napoli Porta Nolana railway station",
+			40.8492,
+			14.2693
+		],
+		[
+			"Napoli Piazza Garibaldi railway halt",
+			40.85243,
+			14.27043
+		],
+		[
+			"Napoli Garibaldi railway station",
+			40.8509,
+			14.2734
+		],
+		[
+			"Napoli Centrale railway station",
+			40.8523,
+			14.27209
+		],
+		[
+			"Napoli Mergellina railway halt",
+			40.83139,
+			14.21917
+		],
+		[
+			"Napoli Gianturco railway station",
+			40.8537,
+			14.2878
+		],
+		[
+			"Napoli Scalo Merci",
+			40.86882,
+			14.27516
+		],
+		[
+			"Napoli Galileo Ferraris railway halt",
+			40.84799,
+			14.2963
+		],
+		[
+			"San Giovanni a Teduccio railway station",
+			40.8417,
+			14.3002
+		],
+		[
+			"Piave railway station",
+			40.8429,
+			14.2065
+		],
+		[
+			"Poggioreale railway station",
+			40.8666,
+			14.2934
+		],
+		[
+			"Soccavo railway station",
+			40.844,
+			14.2008
+		],
+		[
+			"Fuorigrotta railway station",
+			40.828,
+			14.2018
+		]
+	],
+	"st-john-s-canada": [],
+	"palenque-mexico": [
+		[
+			"Palenque railway station",
+			17.53326,
+			-91.97951
+		],
+		[
+			"Palenque",
+			17.54304,
+			-91.98956
+		],
+		[
+			"Pakal Ná railway station",
+			17.54314,
+			-91.98934
+		]
+	],
+	"dambulla-sri-lanka": [],
+	"yangshuo-china": [],
+	"chilliwack-canada": [[
+		"Chilliwack railway station",
+		49.1645,
+		-121.9493
+	]],
+	"carpi-italy": [[
+		"Carpi railway station",
+		44.7828,
+		10.8916
+	], [
+		"Soliera Modenese railway station",
+		44.7227,
+		10.9061
+	]],
+	"saskatoon-canada": [[
+		"Saskatoon railway station",
+		52.1052,
+		-106.738
+	]],
+	"karachi-pakistan": [
+		[
+			"Karachi Cantonment Railway Station",
+			24.84441,
+			67.04256
+		],
+		[
+			"Chanesar railway station",
+			24.8573,
+			67.0671
+		],
+		[
+			"D.C.O.S. Halt railway station",
+			24.84511,
+			67.02328
+		],
+		[
+			"Departure Yard railway station",
+			24.86613,
+			67.08324
+		],
+		[
+			"Karachi City Station",
+			24.8482,
+			67.0064
+		],
+		[
+			"Karsaz railway station",
+			24.87453,
+			67.09907
+		],
+		[
+			"Karachi Port Trust Halt railway station",
+			24.84702,
+			66.9907
+		],
+		[
+			"Wazir Mansion railway station",
+			24.8568,
+			66.9868
+		],
+		[
+			"Layari railway station",
+			24.8603,
+			66.9864
+		]
+	],
+	"male-maldives": [],
+	"portsmouth-united-states": [[
+		"Newington Railroad Depot",
+		43.1172,
+		-70.8217
+	]],
+	"regina-canada": [],
+	"boulder-united-states": [],
+	"daejeon-south-korea": [
+		[
+			"Government Complex Daejeon Station",
+			36.3577,
+			127.381
+		],
+		[
+			"Galma Station",
+			36.3575,
+			127.373
+		],
+		[
+			"Gapcheon Station",
+			36.3542,
+			127.355
+		],
+		[
+			"Oryong Station",
+			36.3283,
+			127.405
+		],
+		[
+			"Seodaejeon Station",
+			36.32247,
+			127.40329
+		],
+		[
+			"Noeun Station",
+			36.3741,
+			127.318
+		],
+		[
+			"Seodaejeonnegeori Station",
+			36.3224,
+			127.413
+		],
+		[
+			"Jung-gu Office Station",
+			36.3249,
+			127.42
+		],
+		[
+			"Hoedeok Station",
+			36.4025,
+			127.42167
+		],
+		[
+			"Daejeon Station",
+			36.33189,
+			127.43452
+		],
+		[
+			"Banseok station",
+			36.3921,
+			127.315
+		]
+	],
+	"suva-fiji": [],
+	"cape-coral-united-states": [],
+	"colima-mexico": [],
+	"san-cristobal-de-las-casas-mexico": [],
+	"aurora-united-states": [[
+		"40th Ave & Airport Blvd–Gateway Park station",
+		39.76989,
+		-104.78769
+	], [
+		"Peoria station",
+		39.76756,
+		-104.85042
+	]],
+	"bethlehem-united-states": [[
+		"Bethlehem station",
+		40.61653,
+		-75.38242
+	]],
+	"swakopmund-namibia": [],
+	"winnipeg-canada": [[
+		"Union Station",
+		49.88889,
+		-97.13417
+	], [
+		"Winnipeg Canadian Pacific railway station",
+		49.90465,
+		-97.13176
+	]],
+	"bend-united-states": [],
+	"asti-italy": [
+		[
+			"Asti railway station",
+			44.895,
+			8.20778
+		],
+		[
+			"San Damiano d’Asti railway halt",
+			44.8789,
+			8.12608
+		],
+		[
+			"Baldichieri-Tigliole railway halt",
+			44.8992,
+			8.09122
+		]
+	],
+	"la-paz-bolivia": [[
+		"Estación ENFE",
+		-16.49131,
+		-68.14418
+	]],
+	"quy-nhon-vietnam": [[
+		"Quy Nhơn railway station",
+		13.77833,
+		109.22333
+	]],
+	"abidjan-ivory-coast": [[
+		"Gare ferroviaire Treichville",
+		5.30093,
+		-4.01449
+	]],
+	"bakersfield-united-states": [[
+		"Bakersfield",
+		35.37219,
+		-119.00786
+	], [
+		"Bakersfield statiob",
+		35.3769,
+		-118.992
+	]],
+	"corlu-turkiye": [[
+		"Çorlu railway station",
+		41.17773,
+		27.77846
+	]],
+	"bandung-indonesia": [
+		[
+			"Bandung railway station",
+			-6.91417,
+			107.6025
+		],
+		[
+			"Bandung Gudang railway station",
+			-6.91389,
+			107.59202
+		],
+		[
+			"Ciroyom railway station",
+			-6.91401,
+			107.59029
+		],
+		[
+			"Dayeuhkolot Station",
+			-6.91885,
+			107.62592
+		],
+		[
+			"Cikudapateuh railway station",
+			-6.91885,
+			107.626
+		],
+		[
+			"Andir railway station",
+			-6.90811,
+			107.57938
+		],
+		[
+			"Cibangkonglor",
+			-6.92109,
+			107.63527
+		],
+		[
+			"Cibangkong",
+			-6.92835,
+			107.63659
+		],
+		[
+			"Kiaracondong railway station",
+			-6.92477,
+			107.64628
+		],
+		[
+			"Cimindi railway station",
+			-6.89618,
+			107.56112
+		]
+	],
+	"annapolis-united-states": [],
+	"amarillo-united-states": [[
+		"Atchison Topeka and Santa Fe Railroad Station and Harvey House Restaurant",
+		35.20947,
+		-101.82758
+	]],
+	"luang-prabang-laos": [],
+	"traverse-city-united-states": [],
+	"jodhpur-india": [
+		[
+			"Jodhpur railway station",
+			26.28376,
+			73.02319
+		],
+		[
+			"Raikabag Palace Junction railway station",
+			26.29163,
+			73.03974
+		],
+		[
+			"Mahamandir railway station",
+			26.30874,
+			73.03794
+		],
+		[
+			"Bhagat Ki Kothi railway station",
+			26.2485,
+			73.01334
+		],
+		[
+			"Basni railway station",
+			26.22296,
+			73.01064
+		]
+	],
+	"nicosia-cyprus": [],
+	"arusha-tanzania": [[
+		"Arusha Central Train Station",
+		-3.37656,
+		36.68095
+	]],
+	"oakland-united-states": [
+		[
+			"Central Pacific Railroad Depot",
+			37.79986,
+			-122.27469
+		],
+		[
+			"Oakland–Jack London Square station",
+			37.79382,
+			-122.27157
+		],
+		[
+			"Oakland station (Atchison, Topeka and Santa Fe Railway)",
+			37.8302,
+			-122.2816
+		],
+		[
+			"Alameda Terminal",
+			37.77578,
+			-122.30477
+		],
+		[
+			"Emeryville station",
+			37.84068,
+			-122.29248
+		]
+	],
+	"kigali-rwanda": [],
+	"cayenne-french-guiana": [],
+	"pune-india": [
+		[
+			"Shivajinagar railway station",
+			18.53174,
+			73.85115
+		],
+		[
+			"Khadki railway station",
+			18.56301,
+			73.84051
+		],
+		[
+			"Pune Junction railway station",
+			18.52938,
+			73.87309
+		],
+		[
+			"Dapodi railway station",
+			18.58005,
+			73.8328
+		],
+		[
+			"Ghorpuri West railway station",
+			18.53169,
+			73.89179
+		],
+		[
+			"Ghorpuri railway station",
+			18.52782,
+			73.89345
+		]
+	],
+	"cuernavaca-mexico": [],
+	"chihuahua-mexico": [[
+		"Antigua Estación Ferroviaria de Chihuahua",
+		28.6352,
+		-106.0889
+	], [
+		"Estación Chihuahua",
+		28.62207,
+		-106.07069
+	]],
+	"zakynthos-greece": [],
+	"sheki-azerbaijan": [],
+	"trani-italy": [[
+		"Trani railway station",
+		41.2725,
+		16.41778
+	]],
+	"cabo-san-lucas-mexico": [],
+	"louisville-united-states": [[
+		"Spring Street Freight House",
+		38.28014,
+		-85.74653
+	]],
+	"vancouver-united-states": [[
+		"Vancouver station",
+		45.6287,
+		-122.6866
+	]],
+	"guanajuato-mexico": [],
+	"modena-italy": [
+		[
+			"Modena railway station",
+			44.65389,
+			10.93056
+		],
+		[
+			"Modena Piazza Manzoni railway station",
+			44.63454,
+			10.93118
+		],
+		[
+			"Quattro Ville railway halt",
+			44.6913,
+			10.9119
+		]
+	],
+	"nuuk-greenland": [],
+	"zacatecas-mexico": [],
+	"eskisehir-turkiye": [[
+		"Eskişehir railway station",
+		39.77944,
+		30.50774
+	]],
+	"cary-united-states": [[
+		"Cary station",
+		35.7886,
+		-78.7813
+	], [
+		"North Carolina State Fair station",
+		35.7942,
+		-78.7061
+	]],
+	"burnaby-canada": [[
+		"Rocky Mountaineer Station",
+		49.26861,
+		-123.08592
+	]],
+	"la-paz-mexico": [],
+	"centennial-united-states": [],
+	"trogir-croatia": [],
+	"bloomington-united-states": [[
+		"Illinois Central Railroad Freight Depot",
+		39.1686,
+		-86.5364
+	]],
+	"richmond-united-states": [[
+		"Richmond Staples Mill Road station",
+		37.6178,
+		-77.4969
+	], [
+		"Westham Station",
+		37.574,
+		-77.4629
+	]],
+	"alanya-turkiye": [],
+	"amritsar-india": [[
+		"Amritsar railway station",
+		31.63151,
+		74.85802
+	], [
+		"Bhagtanwala railway station",
+		31.60894,
+		74.86434
+	]],
+	"addis-ababa-ethiopia": [],
+	"bowie-united-states": [],
+	"london-canada": [[
+		"London station (Ontario)",
+		42.9813,
+		-81.2467
+	]],
+	"benevento-italy": [
+		[
+			"Benevento railway station",
+			41.14194,
+			14.76972
+		],
+		[
+			"Benevento Appia railway station",
+			41.1332,
+			14.7664
+		],
+		[
+			"Benevento Rione Libertà railway station",
+			41.125,
+			14.7657
+		],
+		[
+			"Benevento Porta Rufina railway station",
+			41.1235,
+			14.7843
+		],
+		[
+			"Benevento Pontecorvo-Castelpoto railway station",
+			41.10861,
+			14.74667
+		]
+	],
+	"bahia-blanca-argentina": [
+		[
+			"Coronel Maldonado",
+			-38.71361,
+			-62.31278
+		],
+		[
+			"Spurr train station",
+			-38.75483,
+			-62.25481
+		],
+		[
+			"Villa Bordeau",
+			-38.6983,
+			-62.3481
+		]
+	],
+	"nanjing-china": [
+		[
+			"Changfujie station",
+			32.03561,
+			118.78707
+		],
+		[
+			"Guanghuamen Railway Station",
+			32.01727,
+			118.823
+		],
+		[
+			"Zhonghuamen Railway Station",
+			32.0083,
+			118.773
+		],
+		[
+			"Kazimen station",
+			31.99742,
+			118.79024
+		],
+		[
+			"Nanjing railway station",
+			32.08858,
+			118.79219
+		],
+		[
+			"Nanjing South railway station",
+			31.97056,
+			118.7925
+		],
+		[
+			"Xiaoshi station",
+			32.095,
+			118.78574
+		]
+	],
+	"sanford-united-states": [[
+		"Sanford station",
+		28.8088,
+		-81.2914
+	], [
+		"Lake Mary station",
+		28.75856,
+		-81.31842
+	]],
+	"zalaegerszeg-hungary": [
+		[
+			"Zalaegerszeg railway station",
+			46.8318,
+			16.8475
+		],
+		[
+			"Andráshida railway station",
+			46.86258,
+			16.77936
+		],
+		[
+			"Nagykapornak railway station",
+			46.83216,
+			16.93504
+		],
+		[
+			"Zalaszentiván railway station",
+			46.88754,
+			16.90873
+		]
+	],
+	"side-turkiye": [],
+	"bowling-green-united-states": [[
+		"The Historic Railpark and Train Museum",
+		37,
+		-86.43806
+	]],
+	"chapel-hill-united-states": [],
+	"zanzibar-city-tanzania": [],
+	"mui-ne-vietnam": [],
+	"sihanoukville-cambodia": [],
+	"gaborone-botswana": [],
+	"salen-sweden": [],
+	"banyuwangi-indonesia": [
+		[
+			"Banyuwangi Kota railway station",
+			-8.22291,
+			114.341
+		],
+		[
+			"Bluluk",
+			-8.21718,
+			114.37572
+		],
+		[
+			"Kambangan",
+			-8.21718,
+			114.37572
+		],
+		[
+			"Kedungpring",
+			-8.21718,
+			114.37572
+		],
+		[
+			"Ngimbang",
+			-8.21718,
+			114.37572
+		],
+		[
+			"Ploso station",
+			-8.21718,
+			114.37572
+		],
+		[
+			"Argopuro railway station",
+			-8.18352,
+			114.36939
+		],
+		[
+			"Kabat railway station",
+			-8.27608,
+			114.31599
+		]
+	],
+	"yogyakarta-indonesia": [
+		[
+			"Lempuyangan Station",
+			-7.78995,
+			110.37484
+		],
+		[
+			"Yogyakarta railway station",
+			-7.78925,
+			110.36347
+		],
+		[
+			"Yogyakarta-Palbapang railway line",
+			-7.80265,
+			110.35625
+		],
+		[
+			"Dongkelan",
+			-7.82529,
+			110.35433
+		],
+		[
+			"Kutu",
+			-7.75994,
+			110.36171
+		],
+		[
+			"Maguwo railway station",
+			-7.78497,
+			110.43677
+		],
+		[
+			"Winongo Station",
+			-7.84029,
+			110.34699
+		]
+	],
+	"adana-turkiye": [[
+		"Kiremithane railway station (Adana)",
+		37.00028,
+		35.36361
+	], [
+		"Şakirpaşa railway station",
+		36.99611,
+		35.28889
+	]],
+	"austin-unitedstates": [
+		[
+			"MLK Jr. station",
+			30.27974,
+			-97.70891
+		],
+		[
+			"Highland",
+			30.329,
+			-97.7158
+		],
+		[
+			"Crestview",
+			30.33833,
+			-97.71917
+		],
+		[
+			"Downtown",
+			30.26501,
+			-97.7395
+		],
+		[
+			"Plaza Saltillo",
+			30.2622,
+			-97.7276
+		],
+		[
+			"Austin",
+			30.2696,
+			-97.757
+		]
+	],
+	"qingdao-china": [[
+		"Qingdao railway station",
+		36.06417,
+		120.3075
+	], [
+		"Sifang Railway Station",
+		36.10589,
+		120.34123
+	]],
+	"pontresina-switzerland": [
+		[
+			"Pontresina railway station",
+			46.49065,
+			9.89607
+		],
+		[
+			"Surovas railway station",
+			46.48563,
+			9.90568
+		],
+		[
+			"Punt Muragl Staz railway station",
+			46.50735,
+			9.88041
+		],
+		[
+			"Punt Muragl railway station",
+			46.50968,
+			9.88119
+		],
+		[
+			"Celerina Staz railway station",
+			46.50965,
+			9.86512
+		],
+		[
+			"Celerina railway station",
+			46.51398,
+			9.85844
+		],
+		[
+			"St. Moritz railway station",
+			46.49797,
+			9.84639
+		],
+		[
+			"Samedan railway station",
+			46.53376,
+			9.87363
+		],
+		[
+			"Morteratsch railway station",
+			46.45072,
+			9.94041
+		],
+		[
+			"Bever railway station",
+			46.54991,
+			9.88847
+		]
+	],
+	"bogor-indonesia": [
+		[
+			"Sukaresmi railway station",
+			-6.559,
+			106.80237
+		],
+		[
+			"Bogor railway station",
+			-6.59408,
+			106.79082
+		],
+		[
+			"Bogor Paledang railway station",
+			-6.59789,
+			106.79054
+		],
+		[
+			"Batutulis railway station",
+			-6.62593,
+			106.80954
+		]
+	],
+	"brookline-united-states": [
+		[
+			"Lansdowne station",
+			42.3476,
+			-71.1006
+		],
+		[
+			"West Station",
+			42.3548,
+			-71.1216
+		],
+		[
+			"Ruggles station",
+			42.3366,
+			-71.0892
+		],
+		[
+			"Boston Landing station",
+			42.3572,
+			-71.1393
+		],
+		[
+			"Forest Hills station",
+			42.30069,
+			-71.114
+		],
+		[
+			"Back Bay station",
+			42.3476,
+			-71.0753
+		],
+		[
+			"Newmarket station",
+			42.32811,
+			-71.06526
+		],
+		[
+			"Uphams Corner station",
+			42.3191,
+			-71.0686
+		],
+		[
+			"Four Corners/Geneva station",
+			42.30328,
+			-71.07835
+		],
+		[
+			"Roslindale Village station",
+			42.2874,
+			-71.1304
+		],
+		[
+			"South Station",
+			42.35194,
+			-71.05528
+		],
+		[
+			"Talbot Avenue station",
+			42.2932,
+			-71.0784
+		],
+		[
+			"MBTA Commuter Rail Maintenance Facility",
+			42.375,
+			-71.0758
+		],
+		[
+			"JFK/UMass station",
+			42.32056,
+			-71.05222
+		]
+	],
+	"dakar-senegal": [],
+	"denizli-turkiye": [[
+		"Denizli railway station",
+		37.78685,
+		29.09086
+	]],
+	"alpharetta-united-states": [],
+	"newport-rhode-island-united-states": [],
+	"rock-hill-united-states": [],
+	"oberstdorf-germany": [[
+		"Oberstdorf station",
+		47.4104,
+		10.277
+	], [
+		"Fischen station",
+		47.457,
+		10.2717
+	]],
+	"buffalo-united-states": [[
+		"Buffalo–Exchange Street",
+		42.8783,
+		-78.8738
+	]],
+	"angra-do-heroismo-portugal": [],
+	"auburn-alabama-united-states": [],
+	"boca-raton-united-states": [[
+		"Boca Raton station",
+		26.3925,
+		-80.09917
+	], [
+		"Boca Raton Florida East Coast Railway Station",
+		26.34276,
+		-80.08899
+	]],
+	"akron-united-states": [[
+		"Akron Northside station",
+		41.0895,
+		-81.515
+	]],
+	"chania-greece": [],
+	"arcadia-united-states": [],
+	"chandigarh-india": [[
+		"Chandigarh Junction railway station",
+		30.70198,
+		76.82208
+	], [
+		"SAS Nagar Mohali railway station",
+		30.66613,
+		76.73995
+	]],
+	"kemer-turkiye": [],
+	"suwon-south-korea": [
+		[
+			"Suwon City Hall Station",
+			37.2619,
+			127.031
+		],
+		[
+			"Maetan–Gwonseon Station",
+			37.253,
+			127.04
+		],
+		[
+			"Suwon Station",
+			37.26611,
+			126.99972
+		],
+		[
+			"Seryu Station",
+			37.24417,
+			127.01417
+		],
+		[
+			"Hwaseo station",
+			37.285,
+			126.98889
+		],
+		[
+			"Yeongtong Station",
+			37.2515,
+			127.071
+		],
+		[
+			"Gwanggyo Station",
+			37.30183,
+			127.04488
+		],
+		[
+			"Cheongmyeong Station",
+			37.25948,
+			127.07895
+		],
+		[
+			"Sanghyeon Station",
+			37.29703,
+			127.06915
+		],
+		[
+			"Sungkyunkwan University Station",
+			37.30028,
+			126.97222
+		],
+		[
+			"Byeongjeom Station",
+			37.20667,
+			127.03306
+		]
+	],
+	"sucre-bolivia": [[
+		"Estación El Tejar",
+		-19.05973,
+		-65.27298
+	]],
+	"pleasanton-united-states": [[
+		"Pleasanton station",
+		37.6584,
+		-121.882
+	]],
+	"taos-united-states": [],
+	"coimbatore-india": [
+		[
+			"Peelamedu railway station",
+			11.03324,
+			76.99957
+		],
+		[
+			"Coimbatore Junction",
+			10.99764,
+			76.9663
+		],
+		[
+			"Coimbatore North Junction",
+			11.01994,
+			76.9543
+		],
+		[
+			"Podanur Junction railway station",
+			10.96542,
+			76.99013
+		],
+		[
+			"Singanallur railway station",
+			11.01292,
+			77.03946
+		]
+	],
+	"siliguri-india": [
+		[
+			"Matigara railway station",
+			26.71783,
+			88.38478
+		],
+		[
+			"Siliguri Junction railway station",
+			26.72357,
+			88.41403
+		],
+		[
+			"Siliguri Town railway station",
+			26.7071,
+			88.4292
+		],
+		[
+			"Pashwashraya railway station",
+			26.76344,
+			88.40378
+		],
+		[
+			"New Jalpaiguri Junction railway station",
+			26.68236,
+			88.44272
+		],
+		[
+			"Rangapani railway station",
+			26.66426,
+			88.37439
+		]
+	],
+	"augusta-united-states": [],
+	"atlixco-mexico": [],
+	"berkeley-united-states": [
+		[
+			"Berkeley Station",
+			37.8712,
+			-122.268
+		],
+		[
+			"Berkeley station",
+			37.86724,
+			-122.30075
+		],
+		[
+			"Emeryville station",
+			37.84068,
+			-122.29248
+		],
+		[
+			"Oakland station (Atchison, Topeka and Santa Fe Railway)",
+			37.8302,
+			-122.2816
+		]
+	],
+	"kolkata-india": [
+		[
+			"Kankurgachhi Road railway station",
+			22.5726,
+			88.38508
+		],
+		[
+			"Sir Gurudas Banerjee Halt railway station",
+			22.57418,
+			88.38505
+		],
+		[
+			"Bidhannagar Road railway station",
+			22.59243,
+			88.39105
+		],
+		[
+			"Kolkata railway station",
+			22.60128,
+			88.38415
+		],
+		[
+			"Park Circus railway station",
+			22.54057,
+			88.37386
+		],
+		[
+			"Patipukur railway station",
+			22.60655,
+			88.39525
+		],
+		[
+			"Tala railway station",
+			22.6061,
+			88.3789
+		],
+		[
+			"Bagbazar railway station",
+			22.60494,
+			88.36511
+		],
+		[
+			"Burra Bazar railway station",
+			22.59019,
+			88.35124
+		],
+		[
+			"B.B.D Bag railway station",
+			22.57684,
+			88.34663
+		],
+		[
+			"Sovabazar Ahiritola railway station",
+			22.59753,
+			88.35493
+		],
+		[
+			"Howrah railway station",
+			22.58287,
+			88.34281
+		],
+		[
+			"Dum Dum Junction railway station",
+			22.6209,
+			88.3933
+		],
+		[
+			"Eden Gardens railway station",
+			22.5639,
+			88.3383
+		]
+	],
+	"morelia-mexico": [],
+	"luxor-egypt": [[
+		"Luxor Railway Station",
+		25.6965,
+		32.6449
+	]],
+	"gaziantep-turkiye": [
+		[
+			"Mücahitler railway station",
+			37.07421,
+			37.37054
+		],
+		[
+			"Gaziantep railway station",
+			37.0736,
+			37.38276
+		],
+		[
+			"Topraklık railway station",
+			37.07619,
+			37.36151
+		],
+		[
+			"Adliye railway station",
+			37.08773,
+			37.35864
+		],
+		[
+			"Göllüce railway station",
+			37.07392,
+			37.40546
+		],
+		[
+			"Selimiye railway station",
+			37.09937,
+			37.37248
+		],
+		[
+			"Seyrantepe railway station",
+			37.07638,
+			37.42484
+		],
+		[
+			"Fıstıklık railway station",
+			37.11221,
+			37.38075
+		],
+		[
+			"Mustafa Yavuz railway station",
+			37.07087,
+			37.43064
+		],
+		[
+			"Beylerbeyi railway station",
+			37.11987,
+			37.38485
+		],
+		[
+			"Stadyum railway station",
+			37.12693,
+			37.38137
+		],
+		[
+			"Taşlıca railway station",
+			37.05835,
+			37.4489
+		]
+	],
+	"culiacan-mexico": [],
+	"samsun-turkiye": [],
+	"altoona-united-states": [[
+		"Altoona Transportation Center",
+		40.5156,
+		-78.4011
+	]],
+	"livermore-united-states": [[
+		"Isabel station",
+		37.7008,
+		-121.8003
+	], [
+		"Livermore station",
+		37.6851,
+		-121.768
+	]],
+	"brentwood-united-states": [],
+	"sierra-vista-united-states": [],
+	"ulaanbaatar-mongolia": [[
+		"Ulaanbaatar railway station",
+		47.9083,
+		106.884
+	], [
+		"Tolgoyt railway station",
+		47.90832,
+		106.77864
+	]],
+	"worcester-united-states": [[
+		"Union Station",
+		42.2612,
+		-71.7949
+	]],
+	"freetown-sierra-leone": [],
+	"cochabamba-bolivia": [],
+	"solo-indonesia": [
+		[
+			"Purwosari railway station",
+			-7.5617,
+			110.7965
+		],
+		[
+			"Solo Balapan railway station",
+			-7.55675,
+			110.8214
+		],
+		[
+			"Kadipiro railway station",
+			-7.53079,
+			110.81802
+		],
+		[
+			"Solo Kota railway station",
+			-7.57562,
+			110.83634
+		],
+		[
+			"Solo Jebres railway station",
+			-7.56194,
+			110.839
+		],
+		[
+			"Kronelan",
+			-7.59604,
+			110.85333
+		],
+		[
+			"Kartasura",
+			-7.55175,
+			110.7414
+		]
+	],
+	"boa-vista-brazil": [],
+	"potenza-italy": [
+		[
+			"Potenza Città railway station",
+			40.6387,
+			15.8098
+		],
+		[
+			"Potenza Inferiore train station",
+			40.6301,
+			15.8066
+		],
+		[
+			"Potenza Centrale railway station",
+			40.62944,
+			15.80639
+		],
+		[
+			"Potenza Inferiore Scalo railway station",
+			40.6282,
+			15.8027
+		],
+		[
+			"Potenza Superiore railway station",
+			40.646,
+			15.8012
+		],
+		[
+			"Potenza Santa Maria railway station",
+			40.6457,
+			15.8006
+		],
+		[
+			"Terminal Gallitello railway station",
+			40.62795,
+			15.79734
+		],
+		[
+			"Vaglio Basilicata",
+			40.65647,
+			15.87991
+		]
+	],
+	"shimla-india": [
+		[
+			"Shimla railway station",
+			31.10279,
+			77.15993
+		],
+		[
+			"Summer Hill railway station",
+			31.10747,
+			77.13817
+		],
+		[
+			"Taradevi railway station",
+			31.0758,
+			77.13925
+		],
+		[
+			"Jutogh railway station",
+			31.10073,
+			77.12204
+		]
+	],
+	"bhopal-india": [
+		[
+			"Rani Kamalapati railway station",
+			23.22198,
+			77.43943
+		],
+		[
+			"Bhopal Junction railway station",
+			23.26688,
+			77.41314
+		],
+		[
+			"Bhopal Nishatpura railway station",
+			23.28772,
+			77.42533
+		]
+	],
+	"camden-united-states": [],
+	"bikaner-india": [[
+		"Lalgarh Junction railway station",
+		28.04364,
+		73.31391
+	], [
+		"Bikaner Junction railway station",
+		28.01414,
+		73.3166
+	]],
+	"appleton-united-states": [],
+	"cotonou-benin": [],
+	"accra-ghana": [
+		[
+			"Shangri La",
+			5.61848,
+			-.17555
+		],
+		[
+			"Dzorwulu",
+			5.6069,
+			-.20618
+		],
+		[
+			"Achimoto",
+			5.60753,
+			-.22385
+		],
+		[
+			"Odaw",
+			5.56781,
+			-.21892
+		],
+		[
+			"Addogonno",
+			5.61972,
+			-.11967
+		],
+		[
+			"Accra Central Station",
+			5.5487,
+			-.2109
+		]
+	],
+	"chatham-canada": [[
+		"Chatham station",
+		42.3972,
+		-82.1797
+	]],
+	"stamford-united-states": [
+		[
+			"Stamford Transportation Center",
+			41.0469,
+			-73.5415
+		],
+		[
+			"Glenbrook station",
+			41.0705,
+			-73.5199
+		],
+		[
+			"Old Greenwich station",
+			41.03333,
+			-73.56778
+		],
+		[
+			"Noroton Heights station",
+			41.06902,
+			-73.49752
+		],
+		[
+			"Springdale station",
+			41.0888,
+			-73.5178
+		],
+		[
+			"Riverside station",
+			41.03175,
+			-73.5872
+		],
+		[
+			"Cos Cob station",
+			41.03111,
+			-73.59833
+		],
+		[
+			"Darien station",
+			41.0782,
+			-73.473
+		]
+	],
+	"bacolod-philippines": [],
+	"ames-united-states": [],
+	"bridgetown-barbados": [],
+	"dumaguete-philippines": [],
+	"omaha-united-states": [
+		[
+			"Omaha Union Station",
+			41.25153,
+			-95.92828
+		],
+		[
+			"Burlington Station",
+			41.24981,
+			-95.92827
+		],
+		[
+			"Omaha",
+			41.2498,
+			-95.9272
+		]
+	],
+	"gyeongju-south-korea": [
+		[
+			"Seogyeongju Signal Box",
+			35.84813,
+			129.1956
+		],
+		[
+			"Nawon Station",
+			35.88538,
+			129.21519
+		],
+		[
+			"Seogyeongju Station",
+			35.88495,
+			129.18001
+		],
+		[
+			"Yuldong Station",
+			35.81345,
+			129.17152
+		]
+	],
+	"bentonville-united-states": [[
+		"Bentonville Train Station",
+		36.36694,
+		-94.20917
+	]],
+	"dalian-china": [
+		[
+			"Dalian railway station",
+			38.9215,
+			121.6277
+		],
+		[
+			"Daliandong Railway Station",
+			38.92738,
+			121.62068
+		],
+		[
+			"Ganjingzi Station",
+			38.96916,
+			121.62754
+		],
+		[
+			"Shahekou Railway Station",
+			38.925,
+			121.5872
+		]
+	],
+	"harbin-china": [
+		[
+			"Harbin railway station",
+			45.75846,
+			126.6239
+		],
+		[
+			"Binjiang Railway Station",
+			45.77393,
+			126.65006
+		],
+		[
+			"Wangzhaotun Railway Station",
+			45.7284,
+			126.6442
+		],
+		[
+			"Taipingqiao Railway Station",
+			45.79246,
+			126.68157
+		],
+		[
+			"Xiangfang Railway Station",
+			45.71949,
+			126.67318
+		],
+		[
+			"Harbin East railway station",
+			45.78667,
+			126.70556
+		]
+	],
+	"kunming-china": [
+		[
+			"Kunming North (Kunmingbei) Station",
+			25.05621,
+			102.72088
+		],
+		[
+			"Kunming North railway station",
+			25.06,
+			102.71944
+		],
+		[
+			"Kunming railway station",
+			25.01521,
+			102.72151
+		],
+		[
+			"Heituao Railway Station",
+			25.02867,
+			102.74627
+		],
+		[
+			"Mayuan Railway Station",
+			25.05545,
+			102.68418
+		],
+		[
+			"Kunmingdong Railway Station",
+			25.02028,
+			102.75917
+		]
+	],
+	"valencia-venezuela": [],
+	"cirebon-indonesia": [
+		[
+			"Kejaksaan Cirebon",
+			-6.7053,
+			108.55543
+		],
+		[
+			"Cirebon railway station",
+			-6.70527,
+			108.55544
+		],
+		[
+			"Cirebon Prujakan railway station",
+			-6.71934,
+			108.55881
+		],
+		[
+			"Cangkring railway station",
+			-6.67957,
+			108.501
+		]
+	],
+	"bozeman-united-states": [],
+	"yangon-myanmar": [
+		[
+			"Pyay Road Railway Station",
+			16.78333,
+			96.14389
+		],
+		[
+			"Pagoda Road Railway Station",
+			16.78132,
+			96.15447
+		],
+		[
+			"Yangon Central railway station",
+			16.7817,
+			96.1611
+		],
+		[
+			"Shan Road Railway Station",
+			16.78648,
+			96.13466
+		],
+		[
+			"Ahlone Road Railway Station",
+			16.79133,
+			96.13069
+		],
+		[
+			"Panhlaing Road Railway Station",
+			16.79806,
+			96.1275
+		],
+		[
+			"Pazundaung Railway Station",
+			16.78623,
+			96.17496
+		],
+		[
+			"Kemmendine Railway Station",
+			16.8061,
+			96.12649
+		],
+		[
+			"Mahlwagon Railway Station",
+			16.80277,
+			96.18155
+		],
+		[
+			"Hanthawaddy Railway Station",
+			16.81682,
+			96.12619
+		],
+		[
+			"Myitta Nyunt Railway Station",
+			16.81274,
+			96.18206
+		],
+		[
+			"Tamwe Railway Station",
+			16.82107,
+			96.1791
+		],
+		[
+			"Hletaw Railway Station",
+			16.82479,
+			96.12479
+		],
+		[
+			"Bauktaw Railway Station",
+			16.82964,
+			96.17603
+		]
+	],
+	"beaverton-united-states": [[
+		"Beaverton Transit Center",
+		45.49111,
+		-122.80111
+	]],
+	"bekasi-indonesia": [
+		[
+			"Bekasi Barat LRT station",
+			-6.25293,
+			106.99008
+		],
+		[
+			"Bekasi railway station",
+			-6.2359,
+			106.999
+		],
+		[
+			"Kranji railway station",
+			-6.22451,
+			106.97985
+		],
+		[
+			"Rawabebek",
+			-6.2242,
+			106.979
+		],
+		[
+			"Cikunir 2 LRT station",
+			-6.25472,
+			106.96325
+		],
+		[
+			"Cikunir 1 LRT station",
+			-6.25662,
+			106.95175
+		],
+		[
+			"Bekasi Timur railway station",
+			-6.24689,
+			107.01811
+		],
+		[
+			"Cakung railway station",
+			-6.21903,
+			106.95243
+		],
+		[
+			"Jati Mulya LRT station",
+			-6.26395,
+			107.02143
+		],
+		[
+			"Klender Baru railway station",
+			-6.21765,
+			106.94012
+		],
+		[
+			"Jati Bening Baru LRT station",
+			-6.25777,
+			106.92768
+		]
+	],
+	"comitan-mexico": [],
+	"coatepec-mexico": [],
+	"yaounde-cameroon": [[
+		"Yaoundé train station",
+		3.87063,
+		11.5258
+	]],
+	"cedar-rapids-united-states": [],
+	"lijiang-china": [[
+		"Lijiangdong Railway Station",
+		26.86744,
+		100.29271
+	], [
+		"Lijiang Railway Station",
+		26.8143,
+		100.25118
+	]],
+	"baghdad-iraq": [[
+		"Baghdad railway station",
+		33.32361,
+		44.38028
+	]],
+	"dalat-vietnam": [[
+		"Da Lat Railway Station",
+		11.942,
+		108.455
+	], [
+		"Trại Mát railway station",
+		11.94611,
+		108.50139
+	]],
+	"erzurum-turkiye": [[
+		"Erzurum railway station",
+		39.91547,
+		41.26861
+	]],
+	"hersonissos-greece": [],
+	"bryan-united-states": [],
+	"semarang-indonesia": [
+		[
+			"Samarang S.J.S.",
+			-6.97043,
+			110.43086
+		],
+		[
+			"Semarang Poncol railway station",
+			-6.97282,
+			110.41479
+		],
+		[
+			"Semarang Tawang railway station",
+			-6.96444,
+			110.42778
+		],
+		[
+			"Samarang railway station",
+			-6.95562,
+			110.43171
+		],
+		[
+			"Alastua railway station",
+			-6.98444,
+			110.476
+		],
+		[
+			"Semarang Tanjung Emas railway station",
+			-6.94475,
+			110.42695
+		]
+	],
+	"diyarbakr-turkiye": [[
+		"Diyarbakır railway station",
+		37.91358,
+		40.21599
+	]],
+	"yantai-china": [[
+		"Yantai Railway Station",
+		37.5475,
+		121.3775
+	], [
+		"Yantaibei Railway Station",
+		37.59409,
+		121.38764
+	]]
+};
+/**
+* Tanda 5 (26-nov, retoma de T4): blocks for the hotel page (/hotel/*), all from stored data only.
+* Summary line, confirmed facilities, own SVG map, gallery thumbnails, nearest railway station (Wikidata, CC0),
+* "Best for" labels, also-a-winner-in, alternatives and "no rooms on your dates", similar hotels elsewhere,
+* "On this page" navigation and print styles. Rules: docs/hotel-page.md.
+*/
+var e = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({
+	"&": "&amp;",
+	"<": "&lt;",
+	">": "&gt;",
+	"\"": "&quot;",
+	"'": "&#39;"
+})[c]);
+var R = (d) => d * Math.PI / 180;
+var km2 = (a, b) => {
+	const x = Math.sin(R(b.lat - a.lat) / 2) ** 2 + Math.cos(R(a.lat)) * Math.cos(R(b.lat)) * Math.sin(R(b.lng - a.lng) / 2) ** 2;
+	return 12742 * Math.asin(Math.sqrt(x));
+};
+var NL = {
+	en: "en-GB",
+	es: "es-ES",
+	de: "de-DE",
+	fr: "fr-FR",
+	it: "it-IT",
+	pt: "pt-PT",
+	da: "da-DK"
+};
+var TX = {
+	en: {
+		sum: "In short",
+		toc: "On this page",
+		facH: "Confirmed facilities",
+		facNote: "As listed by the property on Booking.com. Opening times and fees can vary: check for your dates.",
+		room: "In the room",
+		building: "In the building",
+		transport: "Getting there and parking",
+		mapH: "Where it is",
+		mapAria: (h) => `Map of ${h}, the city centre and three nearby sights`,
+		you: "Hotel",
+		centre: "City centre",
+		mapNote: "Positions from map coordinates; not to scale for streets.",
+		thumbs: "Photos",
+		photo: (i, n) => `Photo ${i} of ${n}`,
+		station: "Nearest railway station",
+		stNote: "Stations: Wikidata (CC0). Straight-line distances; real routes are longer.",
+		howH: "Getting there",
+		howLine: (w, n, d, m) => `${w}: ${n}, ${d} in a straight line${m}.`,
+		walk: (m) => ` (about ${m} min on foot)`,
+		straight: "Straight-line distances from map coordinates; we do not list bus or metro lines we have not checked.",
+		bestH: "Best for",
+		best: {
+			walk: "Seeing the sights on foot",
+			car: "Travelling by car",
+			family: "Families",
+			pet: "Travelling with a pet",
+			relax: "Pool or spa time",
+			trans: "Early trains"
+		},
+		winH: "Also a winner in",
+		win: (t, p) => `${t} pick on “${p}”`,
+		altH: (c) => `Alternatives in ${c}`,
+		altGym: "Best hotel gym",
+		altPool: "Best hotel pool",
+		noDatesH: "If this hotel has no rooms on your dates",
+		noDates: "Availability changes by date. These are the other hotels we chose in the same city:",
+		noDatesSearch: "Search hotels with free rooms in the same area on Booking.com",
+		simH: (c) => `Similar picks in other cities of ${c}`,
+		orphan: (c) => `This hotel is no longer one of our three current picks in ${c}. The page stays as a record; see the current picks:`,
+		sumTxt: (o) => `${o.cat}${o.stars ? ` (${o.stars})` : ""}${o.area ? ` in ${o.area}` : ""}${o.score ? `, ${o.score}/10 from ${o.n} guests on Booking.com` : ""}${o.d ? `, ${o.d} from the centre` : ""}`,
+		pxTail: "a night (reference)"
+	},
+	es: {
+		sum: "En resumen",
+		toc: "En esta página",
+		facH: "Servicios confirmados",
+		facNote: "Según lo que indica el alojamiento en Booking.com. Horarios y cargos pueden variar: compruébalo para tus fechas.",
+		room: "En la habitación",
+		building: "En el edificio",
+		transport: "Llegada y aparcamiento",
+		mapH: "Dónde está",
+		mapAria: (h) => `Mapa de ${h}, el centro de la ciudad y tres lugares cercanos`,
+		you: "Hotel",
+		centre: "Centro",
+		mapNote: "Posiciones según coordenadas; no es un plano de calles.",
+		thumbs: "Fotos",
+		photo: (i, n) => `Foto ${i} de ${n}`,
+		station: "Estación de tren más cercana",
+		stNote: "Estaciones: Wikidata (CC0). Distancias en línea recta; el camino real es más largo.",
+		howH: "Cómo llegar",
+		howLine: (w, n, d, m) => `${w}: ${n}, a ${d} en línea recta${m}.`,
+		walk: (m) => ` (unos ${m} min a pie)`,
+		straight: "Distancias en línea recta según coordenadas; no indicamos líneas de autobús o metro que no hemos comprobado.",
+		bestH: "Mejor para",
+		best: {
+			walk: "Ver la ciudad a pie",
+			car: "Viajar en coche",
+			family: "Familias",
+			pet: "Viajar con mascota",
+			relax: "Piscina o spa",
+			trans: "Trenes a primera hora"
+		},
+		winH: "También gana en",
+		win: (t, p) => `Elección ${t.toLowerCase()} en «${p}»`,
+		altH: (c) => `Alternativas en ${c}`,
+		altGym: "Mejor gimnasio de hotel",
+		altPool: "Mejor piscina de hotel",
+		noDatesH: "Si este hotel no tiene habitaciones en tus fechas",
+		noDates: "La disponibilidad cambia según la fecha. Estos son los otros hoteles que elegimos en la misma ciudad:",
+		noDatesSearch: "Buscar hoteles con habitaciones libres en la misma zona en Booking.com",
+		simH: (c) => `Elecciones parecidas en otras ciudades de ${c}`,
+		orphan: (c) => `Este hotel ya no es una de nuestras tres elecciones actuales en ${c}. La página se mantiene como registro; mira las elecciones actuales:`,
+		sumTxt: (o) => `${o.cat}${o.stars ? ` (${o.stars.toLowerCase()})` : ""}${o.area ? ` en ${o.area}` : ""}${o.score ? `, ${o.score}/10 con ${o.n} opiniones en Booking.com` : ""}${o.d ? `, a ${o.d} del centro` : ""}`,
+		pxTail: "por noche (referencia)"
+	},
+	de: {
+		sum: "Kurz gesagt",
+		toc: "Auf dieser Seite",
+		facH: "Bestätigte Ausstattung",
+		facNote: "Laut Angaben der Unterkunft auf Booking.com. Öffnungszeiten und Gebühren können abweichen: für Ihre Daten prüfen.",
+		room: "Im Zimmer",
+		building: "Im Haus",
+		transport: "Anreise und Parken",
+		mapH: "Lage",
+		mapAria: (h) => `Karte von ${h}, dem Stadtzentrum und drei Sehenswürdigkeiten`,
+		you: "Hotel",
+		centre: "Zentrum",
+		mapNote: "Positionen nach Koordinaten; kein Straßenplan.",
+		thumbs: "Fotos",
+		photo: (i, n) => `Foto ${i} von ${n}`,
+		station: "Nächster Bahnhof",
+		stNote: "Bahnhöfe: Wikidata (CC0). Luftlinie; echte Wege sind länger.",
+		howH: "Anreise",
+		howLine: (w, n, d, m) => `${w}: ${n}, ${d} Luftlinie${m}.`,
+		walk: (m) => ` (etwa ${m} Min. zu Fuß)`,
+		straight: "Luftlinie nach Koordinaten; Bus- oder U-Bahn-Linien, die wir nicht geprüft haben, nennen wir nicht.",
+		bestH: "Ideal für",
+		best: {
+			walk: "Sightseeing zu Fuß",
+			car: "Anreise mit dem Auto",
+			family: "Familien",
+			pet: "Reisen mit Haustier",
+			relax: "Pool oder Spa",
+			trans: "Frühe Züge"
+		},
+		winH: "Auch ausgezeichnet in",
+		win: (t, p) => `${t}: „${p}“`,
+		altH: (c) => `Alternativen in ${c}`,
+		altGym: "Bestes Hotel-Fitnessstudio",
+		altPool: "Bester Hotelpool",
+		noDatesH: "Wenn dieses Hotel an Ihren Daten ausgebucht ist",
+		noDates: "Die Verfügbarkeit ändert sich je nach Datum. Das sind unsere anderen Hotels in derselben Stadt:",
+		noDatesSearch: "Hotels mit freien Zimmern in derselben Gegend auf Booking.com suchen",
+		simH: (c) => `Ähnliche Empfehlungen in anderen Städten in ${c}`,
+		orphan: (c) => `Dieses Hotel gehört nicht mehr zu unseren drei aktuellen Empfehlungen in ${c}. Die Seite bleibt als Archiv; hier die aktuellen Empfehlungen:`,
+		sumTxt: (o) => `${o.cat}${o.stars ? ` (${o.stars})` : ""}${o.area ? ` in ${o.area}` : ""}${o.score ? `, ${o.score}/10 aus ${o.n} Bewertungen auf Booking.com` : ""}${o.d ? `, ${o.d} vom Zentrum` : ""}`,
+		pxTail: "pro Nacht (Referenz)"
+	},
+	fr: {
+		sum: "En bref",
+		toc: "Sur cette page",
+		facH: "Équipements confirmés",
+		facNote: "Selon l'établissement sur Booking.com. Horaires et frais peuvent varier : vérifiez pour vos dates.",
+		room: "Dans la chambre",
+		building: "Dans l'établissement",
+		transport: "Accès et parking",
+		mapH: "Où il se trouve",
+		mapAria: (h) => `Carte de ${h}, du centre-ville et de trois lieux proches`,
+		you: "Hôtel",
+		centre: "Centre",
+		mapNote: "Positions d'après les coordonnées ; ce n'est pas un plan des rues.",
+		thumbs: "Photos",
+		photo: (i, n) => `Photo ${i} sur ${n}`,
+		station: "Gare la plus proche",
+		stNote: "Gares : Wikidata (CC0). Distances à vol d'oiseau ; le trajet réel est plus long.",
+		howH: "Comment y aller",
+		howLine: (w, n, d, m) => `${w} : ${n}, à ${d} à vol d'oiseau${m}.`,
+		walk: (m) => ` (environ ${m} min à pied)`,
+		straight: "Distances à vol d'oiseau d'après les coordonnées ; nous n'indiquons pas de lignes de bus ou de métro non vérifiées.",
+		bestH: "Idéal pour",
+		best: {
+			walk: "Visiter à pied",
+			car: "Voyager en voiture",
+			family: "Les familles",
+			pet: "Voyager avec un animal",
+			relax: "Piscine ou spa",
+			trans: "Les trains matinaux"
+		},
+		winH: "Également gagnant dans",
+		win: (t, p) => `${t} : « ${p} »`,
+		altH: (c) => `Alternatives à ${c}`,
+		altGym: "Meilleure salle de sport d'hôtel",
+		altPool: "Meilleure piscine d'hôtel",
+		noDatesH: "Si cet hôtel est complet à vos dates",
+		noDates: "La disponibilité change selon les dates. Voici les autres hôtels que nous avons choisis dans la même ville :",
+		noDatesSearch: "Chercher des hôtels avec des chambres libres dans le même quartier sur Booking.com",
+		simH: (c) => `Choix similaires dans d'autres villes (${c})`,
+		orphan: (c) => `Cet hôtel ne fait plus partie de nos trois choix actuels à ${c}. La page reste en archive ; voici les choix actuels :`,
+		sumTxt: (o) => `${o.cat}${o.stars ? ` (${o.stars})` : ""}${o.area ? `, quartier ${o.area}` : ""}${o.score ? `, ${o.score}/10 sur ${o.n} avis Booking.com` : ""}${o.d ? `, à ${o.d} du centre` : ""}`,
+		pxTail: "par nuit (référence)"
+	},
+	it: {
+		sum: "In breve",
+		toc: "In questa pagina",
+		facH: "Servizi confermati",
+		facNote: "Come indicato dalla struttura su Booking.com. Orari e costi possono variare: verifica per le tue date.",
+		room: "In camera",
+		building: "Nella struttura",
+		transport: "Arrivo e parcheggio",
+		mapH: "Dove si trova",
+		mapAria: (h) => `Mappa di ${h}, del centro e di tre luoghi vicini`,
+		you: "Hotel",
+		centre: "Centro",
+		mapNote: "Posizioni da coordinate; non è una mappa stradale.",
+		thumbs: "Foto",
+		photo: (i, n) => `Foto ${i} di ${n}`,
+		station: "Stazione ferroviaria più vicina",
+		stNote: "Stazioni: Wikidata (CC0). Distanze in linea d'aria; il percorso reale è più lungo.",
+		howH: "Come arrivare",
+		howLine: (w, n, d, m) => `${w}: ${n}, a ${d} in linea d'aria${m}.`,
+		walk: (m) => ` (circa ${m} min a piedi)`,
+		straight: "Distanze in linea d'aria da coordinate; non indichiamo linee di bus o metro che non abbiamo verificato.",
+		bestH: "Ideale per",
+		best: {
+			walk: "Visitare a piedi",
+			car: "Viaggiare in auto",
+			family: "Famiglie",
+			pet: "Viaggiare con un animale",
+			relax: "Piscina o spa",
+			trans: "Treni al mattino presto"
+		},
+		winH: "Vincitore anche in",
+		win: (t, p) => `${t}: «${p}»`,
+		altH: (c) => `Alternative a ${c}`,
+		altGym: "Migliore palestra d'hotel",
+		altPool: "Migliore piscina d'hotel",
+		noDatesH: "Se questo hotel non ha camere nelle tue date",
+		noDates: "La disponibilità cambia in base alle date. Questi sono gli altri hotel che abbiamo scelto nella stessa città:",
+		noDatesSearch: "Cerca hotel con camere libere nella stessa zona su Booking.com",
+		simH: (c) => `Scelte simili in altre città (${c})`,
+		orphan: (c) => `Questo hotel non è più una delle nostre tre scelte attuali a ${c}. La pagina resta come archivio; ecco le scelte attuali:`,
+		sumTxt: (o) => `${o.cat}${o.stars ? ` (${o.stars})` : ""}${o.area ? ` a ${o.area}` : ""}${o.score ? `, ${o.score}/10 da ${o.n} recensioni su Booking.com` : ""}${o.d ? `, a ${o.d} dal centro` : ""}`,
+		pxTail: "a notte (riferimento)"
+	},
+	pt: {
+		sum: "Em resumo",
+		toc: "Nesta página",
+		facH: "Serviços confirmados",
+		facNote: "Conforme indicado pelo alojamento no Booking.com. Horários e taxas podem variar: confirme para as suas datas.",
+		room: "No quarto",
+		building: "No edifício",
+		transport: "Chegada e estacionamento",
+		mapH: "Onde fica",
+		mapAria: (h) => `Mapa de ${h}, do centro e de três locais próximos`,
+		you: "Hotel",
+		centre: "Centro",
+		mapNote: "Posições a partir de coordenadas; não é um mapa de ruas.",
+		thumbs: "Fotos",
+		photo: (i, n) => `Foto ${i} de ${n}`,
+		station: "Estação de comboios mais próxima",
+		stNote: "Estações: Wikidata (CC0). Distâncias em linha reta; o caminho real é mais longo.",
+		howH: "Como chegar",
+		howLine: (w, n, d, m) => `${w}: ${n}, a ${d} em linha reta${m}.`,
+		walk: (m) => ` (cerca de ${m} min a pé)`,
+		straight: "Distâncias em linha reta a partir de coordenadas; não indicamos linhas de autocarro ou metro que não verificámos.",
+		bestH: "Ideal para",
+		best: {
+			walk: "Ver a cidade a pé",
+			car: "Viajar de carro",
+			family: "Famílias",
+			pet: "Viajar com animal",
+			relax: "Piscina ou spa",
+			trans: "Comboios cedo"
+		},
+		winH: "Também vencedor em",
+		win: (t, p) => `${t}: «${p}»`,
+		altH: (c) => `Alternativas em ${c}`,
+		altGym: "Melhor ginásio de hotel",
+		altPool: "Melhor piscina de hotel",
+		noDatesH: "Se este hotel não tiver quartos nas suas datas",
+		noDates: "A disponibilidade muda consoante as datas. Estes são os outros hotéis que escolhemos na mesma cidade:",
+		noDatesSearch: "Procurar hotéis com quartos livres na mesma zona no Booking.com",
+		simH: (c) => `Escolhas semelhantes noutras cidades (${c})`,
+		orphan: (c) => `Este hotel já não é uma das nossas três escolhas atuais em ${c}. A página fica como registo; veja as escolhas atuais:`,
+		sumTxt: (o) => `${o.cat}${o.stars ? ` (${o.stars})` : ""}${o.area ? ` em ${o.area}` : ""}${o.score ? `, ${o.score}/10 com ${o.n} comentários no Booking.com` : ""}${o.d ? `, a ${o.d} do centro` : ""}`,
+		pxTail: "por noite (referência)"
+	},
+	da: {
+		sum: "Kort fortalt",
+		toc: "På denne side",
+		facH: "Bekræftede faciliteter",
+		facNote: "Som oplyst af stedet på Booking.com. Åbningstider og gebyrer kan variere: tjek for dine datoer.",
+		room: "På værelset",
+		building: "I bygningen",
+		transport: "Ankomst og parkering",
+		mapH: "Beliggenhed",
+		mapAria: (h) => `Kort over ${h}, centrum og tre seværdigheder i nærheden`,
+		you: "Hotel",
+		centre: "Centrum",
+		mapNote: "Placeringer ud fra koordinater; ikke et gadekort.",
+		thumbs: "Fotos",
+		photo: (i, n) => `Foto ${i} af ${n}`,
+		station: "Nærmeste togstation",
+		stNote: "Stationer: Wikidata (CC0). Afstande i fugleflugt; den rigtige rute er længere.",
+		howH: "Sådan kommer du dertil",
+		howLine: (w, n, d, m) => `${w}: ${n}, ${d} i fugleflugt${m}.`,
+		walk: (m) => ` (ca. ${m} min. til fods)`,
+		straight: "Afstande i fugleflugt ud fra koordinater; vi nævner ikke bus- eller metrolinjer, vi ikke har tjekket.",
+		bestH: "Bedst til",
+		best: {
+			walk: "Seværdigheder til fods",
+			car: "Rejser i bil",
+			family: "Familier",
+			pet: "Rejser med kæledyr",
+			relax: "Pool eller spa",
+			trans: "Tidlige tog"
+		},
+		winH: "Også vinder i",
+		win: (t, p) => `${t}: “${p}”`,
+		altH: (c) => `Alternativer i ${c}`,
+		altGym: "Bedste hotelfitness",
+		altPool: "Bedste hotelpool",
+		noDatesH: "Hvis hotellet er udsolgt på dine datoer",
+		noDates: "Ledigheden ændrer sig efter dato. Det er vores andre valg i samme by:",
+		noDatesSearch: "Søg hoteller med ledige værelser i samme område på Booking.com",
+		simH: (c) => `Lignende valg i andre byer i ${c}`,
+		orphan: (c) => `Hotellet er ikke længere et af vores tre aktuelle valg i ${c}. Siden bevares som arkiv; se de aktuelle valg:`,
+		sumTxt: (o) => `${o.cat}${o.stars ? ` (${o.stars})` : ""}${o.area ? ` i ${o.area}` : ""}${o.score ? `, ${o.score}/10 fra ${o.n} anmeldelser på Booking.com` : ""}${o.d ? `, ${o.d} fra centrum` : ""}`,
+		pxTail: "pr. nat (reference)"
+	}
+};
+var tx5 = (L) => TX[L] ?? TX.en;
+var FAC = {
+	"free wifi": {
+		es: "Wifi gratis",
+		de: "Kostenloses WLAN",
+		fr: "Wi-Fi gratuit",
+		it: "Wi-Fi gratuito",
+		pt: "Wi-Fi grátis",
+		da: "Gratis wi-fi"
+	},
+	"air conditioning": {
+		es: "Aire acondicionado",
+		de: "Klimaanlage",
+		fr: "Climatisation",
+		it: "Aria condizionata",
+		pt: "Ar condicionado",
+		da: "Aircondition"
+	},
+	"24-hour front desk": {
+		es: "Recepción 24 horas",
+		de: "24-Stunden-Rezeption",
+		fr: "Réception 24h/24",
+		it: "Reception 24 ore su 24",
+		pt: "Receção 24 horas",
+		da: "Døgnåben reception"
+	},
+	"family rooms": {
+		es: "Habitaciones familiares",
+		de: "Familienzimmer",
+		fr: "Chambres familiales",
+		it: "Camere familiari",
+		pt: "Quartos familiares",
+		da: "Familieværelser"
+	},
+	"non-smoking rooms": {
+		es: "Habitaciones sin humo",
+		de: "Nichtraucherzimmer",
+		fr: "Chambres non-fumeurs",
+		it: "Camere non fumatori",
+		pt: "Quartos para não fumadores",
+		da: "Røgfri værelser"
+	},
+	"room service": {
+		es: "Servicio de habitaciones",
+		de: "Zimmerservice",
+		fr: "Service d'étage",
+		it: "Servizio in camera",
+		pt: "Serviço de quartos",
+		da: "Roomservice"
+	},
+	restaurant: {
+		es: "Restaurante",
+		de: "Restaurant",
+		fr: "Restaurant",
+		it: "Ristorante",
+		pt: "Restaurante",
+		da: "Restaurant"
+	},
+	bar: {
+		es: "Bar",
+		de: "Bar",
+		fr: "Bar",
+		it: "Bar",
+		pt: "Bar",
+		da: "Bar"
+	},
+	"fitness centre": {
+		es: "Gimnasio",
+		de: "Fitnesscenter",
+		fr: "Salle de sport",
+		it: "Centro fitness",
+		pt: "Ginásio",
+		da: "Fitnesscenter"
+	},
+	"fitness center": {
+		es: "Gimnasio",
+		de: "Fitnesscenter",
+		fr: "Salle de sport",
+		it: "Centro fitness",
+		pt: "Ginásio",
+		da: "Fitnesscenter"
+	},
+	"spa and wellness centre": {
+		es: "Spa y centro de bienestar",
+		de: "Spa und Wellnesscenter",
+		fr: "Spa et centre de bien-être",
+		it: "Spa e centro benessere",
+		pt: "Spa e centro de bem-estar",
+		da: "Spa og wellnesscenter"
+	},
+	spa: {
+		es: "Spa",
+		de: "Spa",
+		fr: "Spa",
+		it: "Spa",
+		pt: "Spa",
+		da: "Spa"
+	},
+	"free parking": {
+		es: "Parking gratis",
+		de: "Kostenlose Parkplätze",
+		fr: "Parking gratuit",
+		it: "Parcheggio gratuito",
+		pt: "Estacionamento gratuito",
+		da: "Gratis parkering"
+	},
+	parking: {
+		es: "Parking",
+		de: "Parkplätze",
+		fr: "Parking",
+		it: "Parcheggio",
+		pt: "Estacionamento",
+		da: "Parkering"
+	},
+	"private parking": {
+		es: "Parking privado",
+		de: "Privatparkplatz",
+		fr: "Parking privé",
+		it: "Parcheggio privato",
+		pt: "Estacionamento privado",
+		da: "Privat parkering"
+	},
+	"airport shuttle": {
+		es: "Traslado al aeropuerto",
+		de: "Flughafentransfer",
+		fr: "Navette aéroport",
+		it: "Navetta aeroportuale",
+		pt: "Transfer aeroporto",
+		da: "Lufthavnsshuttle"
+	},
+	"outdoor swimming pool": {
+		es: "Piscina al aire libre",
+		de: "Außenpool",
+		fr: "Piscine extérieure",
+		it: "Piscina all'aperto",
+		pt: "Piscina exterior",
+		da: "Udendørs pool"
+	},
+	"indoor swimming pool": {
+		es: "Piscina cubierta",
+		de: "Hallenbad",
+		fr: "Piscine intérieure",
+		it: "Piscina coperta",
+		pt: "Piscina interior",
+		da: "Indendørs pool"
+	},
+	"swimming pool": {
+		es: "Piscina",
+		de: "Pool",
+		fr: "Piscine",
+		it: "Piscina",
+		pt: "Piscina",
+		da: "Pool"
+	},
+	"pets allowed": {
+		es: "Se admiten mascotas",
+		de: "Haustiere erlaubt",
+		fr: "Animaux acceptés",
+		it: "Animali ammessi",
+		pt: "Animais permitidos",
+		da: "Kæledyr tilladt"
+	},
+	"facilities for disabled guests": {
+		es: "Instalaciones para personas con discapacidad",
+		de: "Barrierefreie Einrichtungen",
+		fr: "Équipements pour personnes handicapées",
+		it: "Strutture per ospiti disabili",
+		pt: "Instalações para hóspedes com deficiência",
+		da: "Faciliteter for handicappede"
+	},
+	elevator: {
+		es: "Ascensor",
+		de: "Aufzug",
+		fr: "Ascenseur",
+		it: "Ascensore",
+		pt: "Elevador",
+		da: "Elevator"
+	},
+	lift: {
+		es: "Ascensor",
+		de: "Aufzug",
+		fr: "Ascenseur",
+		it: "Ascensore",
+		pt: "Elevador",
+		da: "Elevator"
+	},
+	"tea/coffee maker in all rooms": {
+		es: "Cafetera o tetera en todas las habitaciones",
+		de: "Tee-/Kaffeemaschine in allen Zimmern",
+		fr: "Plateau/bouilloire dans toutes les chambres",
+		it: "Macchina per tè/caffè in tutte le camere",
+		pt: "Máquina de chá/café em todos os quartos",
+		da: "Te-/kaffefaciliteter på alle værelser"
+	},
+	"very good breakfast": {
+		es: "Desayuno muy bueno (según huéspedes)",
+		de: "Sehr gutes Frühstück (laut Gästen)",
+		fr: "Très bon petit-déjeuner (selon les clients)",
+		it: "Colazione molto buona (secondo gli ospiti)",
+		pt: "Pequeno-almoço muito bom (segundo os hóspedes)",
+		da: "Meget god morgenmad (ifølge gæster)"
+	},
+	"good breakfast": {
+		es: "Buen desayuno (según huéspedes)",
+		de: "Gutes Frühstück (laut Gästen)",
+		fr: "Bon petit-déjeuner (selon les clients)",
+		it: "Buona colazione (secondo gli ospiti)",
+		pt: "Bom pequeno-almoço (segundo os hóspedes)",
+		da: "God morgenmad (ifølge gæster)"
+	},
+	"electric vehicle charging station": {
+		es: "Punto de carga para coches eléctricos",
+		de: "Ladestation für E-Autos",
+		fr: "Borne de recharge",
+		it: "Stazione di ricarica per auto elettriche",
+		pt: "Posto de carregamento para veículos elétricos",
+		da: "Ladestation til elbiler"
+	},
+	terrace: {
+		es: "Terraza",
+		de: "Terrasse",
+		fr: "Terrasse",
+		it: "Terrazza",
+		pt: "Terraço",
+		da: "Terrasse"
+	},
+	garden: {
+		es: "Jardín",
+		de: "Garten",
+		fr: "Jardin",
+		it: "Giardino",
+		pt: "Jardim",
+		da: "Have"
+	}
+};
+var ICO = [
+	[/wifi|wi-fi|internet/i, "📶"],
+	[/air ?con/i, "❄️"],
+	[/parking/i, "🅿️"],
+	[/pool/i, "🏊"],
+	[/fitness|gym/i, "🏋️"],
+	[/spa|wellness|sauna/i, "💆"],
+	[/restaurant/i, "🍽️"],
+	[/bar\b/i, "🍸"],
+	[/front desk|reception/i, "🛎️"],
+	[/family/i, "👪"],
+	[/pet/i, "🐾"],
+	[/non-smoking/i, "🚭"],
+	[/shuttle|airport/i, "🚐"],
+	[/elevator|lift/i, "🛗"],
+	[/breakfast/i, "🥐"],
+	[/disabled|accessib/i, "♿"],
+	[/charging/i, "🔌"],
+	[/tea|coffee/i, "☕"],
+	[/room service/i, "🛏️"],
+	[/garden|terrace/i, "🌿"]
+];
+var GROUP = (s) => /parking|shuttle|airport|car hire|charging|bicycle|bike/i.test(s) ? "transport" : /air ?con|family room|non-smoking|tea|coffee|kitchen|minibar|balcony|bath|room service|soundproof|heating|\btv\b|flat-screen/i.test(s) ? "room" : "building";
+function facilitiesBlock(L, list, id) {
+	const t = tx5(L);
+	const uniq = [...new Set(list.map((x) => String(x).trim()).filter(Boolean))];
+	if (!uniq.length) return "";
+	const g = {
+		room: [],
+		building: [],
+		transport: []
+	};
+	for (const f of uniq) {
+		const tr = FAC[f.toLowerCase()]?.[L];
+		const ico = ICO.find(([r]) => r.test(f))?.[1] ?? "✓";
+		g[GROUP(f)].push(`<li><span aria-hidden="true">${ico}</span> ${tr || L === "en" ? e(tr || f) : `<span lang="en">${e(f)}</span>`}</li>`);
+	}
+	const col = (k, h) => g[k].length ? `<div><h3>${e(h)}</h3><ul>${g[k].join("")}</ul></div>` : "";
+	return `<h2 id="${id}">${e(t.facH)}</h2><div class="hp5-fac">${col("room", t.room)}${col("building", t.building)}${col("transport", t.transport)}</div><p class="hp-small" style="text-align:left">${e(t.facNote)}</p>`;
+}
+/** Own SVG map: hotel, city centre and the three closest sights, positions from coordinates (no tiles, no library). */
+function mapBlock(L, id, hotel, centre, sights) {
+	const t = tx5(L);
+	const near = sights.filter((s) => typeof s.lat === "number").map((s) => ({
+		...s,
+		d: km2(hotel, s)
+	})).filter((s) => s.d <= 6).sort((a, b) => a.d - b.d).slice(0, 3);
+	const pts = [
+		{
+			k: "h",
+			name: hotel.name,
+			lat: hotel.lat,
+			lng: hotel.lng
+		},
+		...centre ? [{
+			k: "c",
+			name: t.centre,
+			lat: centre.lat,
+			lng: centre.lng
+		}] : [],
+		...near.map((s, i) => ({
+			k: String(i + 1),
+			name: s.name,
+			lat: s.lat,
+			lng: s.lng
+		}))
+	];
+	if (pts.length < 3) return "";
+	const cos = Math.cos(R(hotel.lat));
+	const xs = pts.map((p) => p.lng * cos), ys = pts.map((p) => -p.lat);
+	const [x0, x1, y0, y1] = [
+		Math.min(...xs),
+		Math.max(...xs),
+		Math.min(...ys),
+		Math.max(...ys)
+	], W = 340, H = 220;
+	const s = Math.min(284 / Math.max(x1 - x0, 1e-4), 164 / Math.max(y1 - y0, 1e-4));
+	const ox = (W - (x1 - x0) * s) / 2, oy = (H - (y1 - y0) * s) / 2;
+	const P = pts.map((p, i) => ({
+		...p,
+		x: Math.round(ox + (xs[i] - x0) * s),
+		y: Math.round(oy + (ys[i] - y0) * s)
+	}));
+	const mk = (p) => p.k === "h" ? `<g><circle cx="${p.x}" cy="${p.y}" r="10" fill="#0b3b8c" stroke="#fff" stroke-width="2"/><text x="${p.x}" y="${p.y + 4}" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">H</text></g>` : p.k === "c" ? `<g><rect x="${p.x - 8}" y="${p.y - 8}" width="16" height="16" rx="3" fill="#b5462a" stroke="#fff" stroke-width="2"/><text x="${p.x}" y="${p.y + 4}" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">C</text></g>` : `<g><circle cx="${p.x}" cy="${p.y}" r="9" fill="#2f6f4f" stroke="#fff" stroke-width="2"/><text x="${p.x}" y="${p.y + 4}" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">${p.k}</text></g>`;
+	const nl = NL[L] ?? "en-GB";
+	const legend = P.map((p) => `<li><b>${p.k === "h" ? "H" : p.k === "c" ? "C" : p.k}</b> ${e(p.k === "h" ? `${t.you}: ${p.name}` : p.name)}${p.k !== "h" ? ` · ${km2(hotel, p).toLocaleString(nl, {
+		maximumFractionDigits: 1,
+		minimumFractionDigits: 1
+	})} km` : ""}</li>`).join("");
+	return `<h2 id="${id}">${e(t.mapH)}</h2><figure class="hp5-map"><svg viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="${e(t.mapAria(hotel.name))}"><rect width="${W}" height="${H}" rx="12" fill="#eef3f7"/>${P.filter((p) => p.k !== "h").map((p) => `<line x1="${P[0].x}" y1="${P[0].y}" x2="${p.x}" y2="${p.y}" stroke="#9bb0c4" stroke-dasharray="4 4"/>`).join("")}${P.slice(1).map(mk).join("")}${mk(P[0])}</svg><figcaption><ol class="hp5-leg">${legend}</ol><p class="hp-small" style="text-align:left">${e(t.mapNote)}</p></figcaption></figure>`;
+}
+function thumbsBlock(L, photos, name) {
+	const ph = [...new Set(photos.filter(Boolean))].slice(0, 8);
+	if (ph.length < 2) return "";
+	const t = tx5(L);
+	return `<div class="hp5-th" role="group" aria-label="${e(t.thumbs)}">${ph.map((p, i) => `<button type="button" data-hpth="${e(p)}" aria-label="${e(t.photo(i + 1, ph.length))}: ${e(name)}"${i === 0 ? " aria-current=\"true\"" : ""}><img src="${e(p.replace(/max1024x768|max1280x900/, "max300"))}" width="96" height="64" alt="" loading="lazy" referrerpolicy="no-referrer"></button>`).join("")}</div>`;
+}
+/** Nearest railway station to a point, from the Wikidata extract (src/generated/stations.json). */
+function nearestStation(cityId, p) {
+	const st = cityId ? stations_default[cityId] : void 0;
+	if (!st?.length) return null;
+	const best = st.map(([n, la, lo]) => ({
+		n: n.replace(/\s+(?:railway|train) station$/i, "").replace(/\s+station$/i, ""),
+		d: km2(p, {
+			lat: la,
+			lng: lo
+		})
+	})).sort((a, b) => a.d - b.d)[0];
+	return best.d <= 5 ? best : null;
+}
+function walkMin(d) {
+	return d * 1.25 <= 3 ? Math.max(1, Math.round(d * 1.25 / 4.8 * 60)) : 0;
+}
+/** "Best for": at most two labels, each from one data rule (docs/hotel-page.md). */
+function bestFor$1(L, o) {
+	const f = o.facilities.join(" | ").toLowerCase();
+	const out = [];
+	if (o.dCentre != null && o.dCentre <= 1.2) out.push("walk");
+	if (/parking/.test(f) || o.tags.includes("parking")) out.push("car");
+	if (/family room/.test(f) || o.tags.includes("family")) out.push("family");
+	if (/pets allowed/.test(f) || o.tags.includes("pets")) out.push("pet");
+	if (/pool|spa|wellness/.test(f)) out.push("relax");
+	if (o.station != null && o.station <= .6) out.push("trans");
+	return out.slice(0, 2).map((k) => tx5(L).best[k]);
+}
+var CSS5 = `.hp5-sum{font-size:16px;margin:0 0 14px}.hp5-sum b{font-weight:700}.hp5-fac{display:grid;gap:4px 22px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}.hp5-fac h3{font-size:15px;margin:10px 0 4px}.hp5-fac ul{list-style:none;margin:0;padding:0}.hp5-fac li{padding:3px 0}
+.hp5-map{margin:8px 0 16px}.hp5-map svg{max-width:520px;display:block}.hp5-leg{list-style:none;margin:8px 0 4px;padding:0;font-size:14px;display:grid;gap:2px}
+.hp5-th{display:flex;gap:6px;overflow-x:auto;margin:-10px 0 16px;padding:2px}.hp5-th button{flex:0 0 auto;padding:0;border:2px solid transparent;border-radius:8px;background:none;cursor:pointer;line-height:0;min-height:44px}.hp5-th button[aria-current=true]{border-color:#0b3b8c}.hp5-th img{width:96px;height:64px;object-fit:cover;border-radius:6px}.hp5-th button:focus-visible{outline:3px solid #0b3b8c;outline-offset:2px}
+.hp5-chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:6px 0 16px}.hp5-chips li{padding:6px 12px;border-radius:999px;background:var(--pale,#eef3fa);font-size:14px}
+.hp5-box{margin:18px 0;padding:14px 16px;border:1px solid rgba(127,127,127,.3);border-radius:12px}.hp5-box h2{margin-top:0;font-size:19px}.hp5-box ul{margin:6px 0 0;padding-left:18px}.hp5-orph{background:#fff6e5;border-color:#e3b55a}
+.hp5-toc{display:none}@media (min-width:1240px){.hp5-toc{display:block;position:fixed;top:96px;left:calc(50% + 400px);width:210px;font-size:14px;max-height:70vh;overflow:auto;border-left:2px solid rgba(127,127,127,.25);padding-left:12px}.hp5-toc b{display:block;margin-bottom:6px}.hp5-toc a{display:block;padding:3px 0;text-decoration:none}}
+@media print{header,footer,nav,.hp5-toc,.hp5-th,.hp-cta,.hp-alt,.hp-small,.hp-badgebox,.hp-copy,.hp5-box,.hp-others,script,.hp-faq summary::marker,#cookie,.cookie,.consent,[data-fav],.bar{display:none!important}body{font-size:10.5pt;line-height:1.35;color:#000;background:#fff}.post{max-width:none;margin:0;padding:0}.hp-hero{max-height:6cm;width:auto;aspect-ratio:auto}h1{font-size:18pt;margin:0 0 4pt}h2{font-size:12pt;margin:8pt 0 3pt;break-after:avoid}p{margin:0 0 4pt}.hp-faq details{padding:2pt 0}.hp-faq details>*{display:block}.hp5-map svg{max-width:7cm}a{color:#000;text-decoration:none}@page{size:A4;margin:12mm}}`;
+var JS5 = `<script>(function(){var h=document.querySelector('.hp-hero');document.querySelectorAll('[data-hpth]').forEach(function(b){b.addEventListener('click',function(){if(!h)return;h.src=b.getAttribute('data-hpth');h.removeAttribute('srcset');document.querySelectorAll('[data-hpth]').forEach(function(x){x.setAttribute('aria-current',x===b?'true':'false')})})});var p=document.querySelector('.hp-px b'),s=document.querySelector('[data-hppx]');if(p&&s){s.querySelector('b').textContent=p.textContent;s.hidden=false}})();<\/script>`;
 /**
 * Server-rendered SEO layer for Top3Hotels (v2).
 *
@@ -25162,7 +54322,7 @@ ${tags.length ? `<ul class="chips">${tags.map((x) => `<li>${esc(t.tags[x] ?? x)}
 ${o.nightly ? `<div class="price"><span>${esc(t.refRate)}</span><span class="total" data-total="${o.nightly}" hidden></span></div>` : ""}
 ${o.checkout && dayMs(o.checkout) < Date.now() ? `<p class="cnote">${esc(NOTE[L].past(range(o.checkin, o.checkout, L)))}</p>` : ""}${isHostel(h) ? `<p class="cnote">${esc(NOTE[L].hostel)}</p>` : ""}${h.category === "Luxury" && b.stars != null && b.stars < 5 ? `<p class="cnote">${esc(NO5[L] ?? NO5["en"] ?? "")}</p>` : ""}${h.sameAs ? `<p class="cnote">${esc(NOTE[L].same(h.sameAs))}</p>` : ""}
 ${link ? `<a class="btn" href="${esc(link)}" rel="sponsored nofollow noopener" target="_blank" data-t="check_availability" data-city="${esc(city.slug)}" data-cat="${k}" data-p="booking" aria-label="${esc(aria)}">${esc(o.nightly ? t.checkPrice : bx.avail)}<span aria-hidden="true"> ↗</span></a><p class="disc">${esc(Z[L].disc)}</p>${((a) => a ? `<a class="alt" href="${esc(a)}" rel="sponsored nofollow noopener" target="_blank" data-t="alt_click" data-city="${esc(city.slug)}" data-cat="${k}" data-p="booking-alt">${esc(ALT_TXT[L])} →</a>` : "")(altSearch(k, o.nightly, b.stars, city))}` : ""}
-${review ? `<a class="alt" href="${esc(review)}" data-t="review_click" data-city="${esc(city.slug)}" data-cat="${k}">${esc(L === "es" ? "Leer el análisis completo" : L === "en" ? "Read the full review" : "Full review (English)")} →</a>` : ""}
+${review ? `<a class="alt" href="${esc(review)}" data-t="review_click" data-city="${esc(city.slug)}" data-cat="${k}">${esc(L === "es" ? `Ficha completa de ${h.name}` : L === "en" ? `Full guide to ${h.name}` : `${h.name}: full guide (English)`)} →</a>` : ""}
 <div class="cmp">${cmp.map(([n, u]) => `<a href="${esc(u)}" rel="nofollow noopener" target="_blank" data-t="compare_click" data-city="${esc(city.slug)}" data-cat="${k}" data-p="${esc(n)}">${esc(n)}</a>`).join("")}<a href="${esc(mapLink(h, city))}" rel="noopener nofollow" target="_blank">${esc(t.map)}<span aria-hidden="true"> ↗</span></a>${h.coordinates ? `<button type="button" class="mapgo" data-mapgo="${esc(h.name)}">${esc(bx.map)}</button>` : ""}</div><details class="rep"><summary>${esc(M[L].report)}</summary><form data-report="${esc(JSON.stringify({
 		city: city.slug,
 		hotel: h.name,
@@ -25312,6 +54472,11 @@ async function cityPage(city0, L) {
 			lat: h.coordinates.latitude,
 			lng: h.coordinates.longitude
 		}))), ap.n, ap.i));
+		const st4 = h.coordinates ? nearestStation(city.id, {
+			lat: h.coordinates.latitude,
+			lng: h.coordinates.longitude
+		}) : null;
+		if (st4) parts.push(`🚆 ${tx5(L).station}: ${st4.n}, ${km1(st4.d)} km`);
 		const two = h.offer?.nightly ? `<p class="c4dist">${esc(c4.twoN("§", fmtDate(isoDay(h.booking?.checked), L))).replace("§", `<span data-eur="${h.offer.nightly * 2}"><span class="v">${moneyL(h.offer.nightly * 2, L)}</span></span>`)}</p>` : "";
 		return {
 			lbl,
@@ -25568,7 +54733,7 @@ ${fw4}${price4}${fac4}${car4}${kids4}
 <section aria-labelledby="maph"><h2 id="maph">${esc(t.map)}</h2><div id="map" role="img" aria-label="${esc(t.mapHint)}"></div><div class="legend"><span><i style="background:#1f7a5a"></i>${esc(t.cat.Budget)}</span><span><i style="background:#d83b51"></i>${esc(t.cat["Best Value"])}</span><span><i style="background:#b8860b"></i>${esc(label(lux, L))}</span>${sights?.length ? `<span><i style="background:#46566a"></i>${esc(sights.map((s) => s.name).join(" · "))}</span>` : ""}</div>${route4}</section>
 <section aria-labelledby="cmp"><h2 id="cmp">${esc(t.compared(city.city))}</h2><div class="tablewrap"><table><thead><tr>${t.cols.map((c) => `<th>${esc(c)}</th>`).join("")}${allD ? `<th>${esc(c4.toCentre)}</th>` : ""}</tr></thead><tbody>
 ${hs.map((h, i) => `<tr><td>${esc(label(h, L))}</td><td>${bks(h, "t3city-t") ? `<a href="${esc(bks(h, "t3city-t"))}" rel="sponsored nofollow noopener" target="_blank" data-t="check_availability" data-city="${esc(city.slug)}" data-cat="${catKey(h)}" data-p="booking-table" aria-label="${esc(ariaH(h))}">${esc(h.name)}<span aria-hidden="true"> ↗</span></a>` : esc(h.name)}</td><td>${esc(h.area ?? "")}</td><td>${h.booking?.stars ?? "–"}</td><td${i === iTop ? " class=\"win\"" : ""}>${h.booking?.score != null ? scoreL(h.booking.score, L) : "–"} (${intL(h.booking?.count, L)})</td><td${i === iCheap ? " class=\"win\"" : ""}>${moneyL(h.offer?.nightly, L)}</td>${allD ? `<td${i === iCentral ? " class=\"win\"" : ""}>${km1(dC[i])} km</td>` : ""}</tr>`).join("")}
-</tbody></table></div><p class="note">${esc(c4.scale)}${ap ? ` ${esc(c4.srcAir)}` : ""}</p></section>
+</tbody></table></div><p class="note">${esc(c4.scale)}${ap ? ` ${esc(c4.srcAir)}` : ""}${x4.some((x) => x.dist.includes("🚆")) ? ` ${esc(tx5(L).stNote)}` : ""}</p></section>
 <section aria-labelledby="faq"><h2 id="faq">${esc(t.faqTitle(city.city))}</h2><dl class="faq">${faq.map(([q, a]) => `<dt>${esc(q)}</dt><dd>${esc(a)}</dd>`).join("")}</dl></section>
 ${events4}${sim4}${next4}
 <section aria-labelledby="how"><h2 id="how">${esc(t.howTitle)}</h2><p class="lead">${esc(t.howText)} <a href="/how-we-choose">${esc(t.how)} →</a></p></section>
@@ -26168,6 +55333,7 @@ async function methodPage() {
 <h2>3. The three picks</h2><ul><li><b>Budget</b>: the lowest eligible reference price.</li><li><b>Best Value</b>: the strongest review-confidence score at or near the sample's median price. Review confidence weighs the score by the number of reviews, so a 9.4 from 4,000 guests beats a 9.8 from 12.</li><li><b>Luxury</b>: the best-reviewed five-star hotel. If no five-star qualifies, a four-star rated 8.5+ is shown and clearly labelled as an upscale alternative.</li></ul>
 <h2>4. What we show for each hotel</h2><p>Guest score and review count, reference price, star classification, location score, what guests praise and criticise, facilities, walking time to the best-known sights (straight-line estimate) and who the hotel suits best.</p>
 <h2>5. Freshness and corrections</h2><p>Every page shows when prices were checked. Prices are reference rates, not live quotes; the booking link always shows the current price for your dates. Spotted something wrong? ${mail("Correction request")}. We aim to review corrections within a few working days.</p>
+<h2 id="filters">Filter pages: gyms, pools and spas</h2><p>The three picks of a city are always the main answer. Gym, pool and spa pages are filters on top of them: one hotel per budget (luxury = 5 stars, mid-range = 4 stars, budget = 3 stars or less), judged on that facility only, from what the hotel and booking sites publish, with sources on each card. When a filter winner is also one of the city's three picks, the card says so and names its category. A filter page with a single qualifying hotel is kept out of search results (noindex) because it does not compare anything.</p>
 <h2>6. Independence</h2><p>Some links earn us a commission. That never changes the selection, the order or the text. Hotels cannot buy a place in the three picks, our scores or reviews. A hotel can appear as a clearly labelled <em>Featured partner</em> (for example after a filmed stay); those features are always marked and kept separate from the picks. Read our <a href="/affiliate-disclosure">affiliate disclosure</a>.</p>
 <h2>Sources</h2><p class="muted">Booking.com (scores, reviews, prices, hotel photos) · Wikimedia Commons (city photos) · Wikipedia (sights) · OpenStreetMap / OpenFreeMap (maps).</p></div>`
 	});
@@ -27075,7 +56241,8 @@ async function hotelPage(slug, L) {
 	const h5 = H4[L];
 	const nl5 = NLOC[L] ?? "en-GB";
 	const cityL = city ? cityName(city, L) : d.city;
-	const tags5 = (hcd?.hotels ?? []).find((h) => bkPath(h.booking?.url) && bkPath(h.booking?.url) === bkPath(f.booking_url))?.extras?.tags;
+	const hh = (hcd?.hotels ?? []).find((h) => bkPath(h.booking?.url) && bkPath(h.booking?.url) === bkPath(f.booking_url)) ?? (hcd?.hotels ?? []).find((h) => hotelSlug(h.name, d.city_slug) === slug);
+	const tags5 = hh?.extras?.tags;
 	const la = Number(f.lat), lo = Number(f.lng);
 	const hasGeo = Number.isFinite(la) && Number.isFinite(lo) && (la !== 0 || lo !== 0);
 	const dC5 = city && hasGeo ? km({
@@ -27110,7 +56277,7 @@ async function hotelPage(slug, L) {
 		...dTxt ? [[h5.centre, dTxt]] : [],
 		...apTxt ? [[h5.airport, apTxt]] : []
 	];
-	const key5 = `<h2>${esc(h5.keyH)}</h2><div style="overflow-x:auto"><table class="hp-key" style="width:100%;border-collapse:collapse;font-size:15px"><tbody>${keyRows.map(([k, v]) => `<tr><th scope="row" style="text-align:left;padding:8px;border-bottom:1px solid #eee;width:42%">${esc(k)}</th><td style="padding:8px;border-bottom:1px solid #eee">${esc(v)}</td></tr>`).join("")}</tbody></table></div>${apTxt || dTxt ? `<p class="hp-small" style="text-align:left">${esc(h5.dataNote)}</p>` : ""}`;
+	const key5f = () => `<h2 id="hp-key">${esc(h5.keyH)}</h2><div style="overflow-x:auto"><table class="hp-key" style="width:100%;border-collapse:collapse;font-size:15px"><tbody>${keyRows.map(([k, v]) => `<tr><th scope="row" style="text-align:left;padding:8px;border-bottom:1px solid #eee;width:42%">${esc(k)}</th><td style="padding:8px;border-bottom:1px solid #eee">${esc(v)}</td></tr>`).join("")}</tbody></table></div>${apTxt || dTxt ? `<p class="hp-small" style="text-align:left">${esc(h5.dataNote)}</p>` : ""}`;
 	const addr5 = f.address || hasGeo ? `<p class="hp-addr">${f.address ? `${esc(f.address)} <button type="button" class="hp-copy" data-copy="${esc(`${f.address}, ${d.city}`)}" data-done="${esc(h5.copied)}">📋 ${esc(h5.copyAddr)}</button>` : ""}${hasGeo ? ` <a href="https://www.google.com/maps/search/?api=1&amp;query=${la},${lo}" target="_blank" rel="noopener nofollow">📍 ${esc(h5.mapOpen)}<span aria-hidden="true"> ↗</span></a>` : ""}</p>` : "";
 	const fq0 = (c.faq ?? []).map((q) => q.q).join(" ");
 	const faq5 = [];
@@ -27142,6 +56309,135 @@ async function hotelPage(slug, L) {
 	}[d.cat] ?? "";
 	const badge5 = city && catK ? `<aside class="hp-badgebox" style="margin:26px 0 0;padding:16px;border:1px dashed rgba(127,127,127,.4);border-radius:12px"><h2 style="margin-top:0">${esc(h5.badgeH)}</h2><p>${esc(h5.badge)}</p><a href="/partners"><img src="/badge/${esc(city.slug)}/${catK}.svg" width="180" height="60" alt="Top 3 ${esc(t[`cat_${d.cat}`] ?? "")} · ${esc(d.city)} · Top3Hotels" loading="lazy"></a></aside>` : "";
 	const rep5 = `<p class="hp-small" style="text-align:left;margin-top:18px"><a href="/contact?hotel=${esc(slug)}">⚑ ${esc(h5.report)}</a></p>`;
+	const x5 = tx5(L);
+	const facList = Array.isArray(f.facilities) ? f.facilities : [];
+	const st5 = hasGeo ? nearestStation(city?.id, {
+		lat: la,
+		lng: lo
+	}) : null;
+	const nf = (v) => v.toLocaleString(nl5, {
+		minimumFractionDigits: 1,
+		maximumFractionDigits: 1
+	});
+	if (st5) keyRows.push([x5.station, `${st5.n}, ${nf(st5.d)} km`]);
+	const sum5 = `<p class="hp5-sum"><b>${esc(x5.sum)}:</b> ${esc(x5.sumTxt({
+		stars: f.stars ? h5.starsChip(Number(f.stars)) : "",
+		cat: t[`cat_${d.cat}`] ?? d.cat,
+		area: f.area ? String(f.area) : "",
+		score: sc5,
+		n: f.reviews ? Number(f.reviews).toLocaleString(nl5) : "",
+		d: dTxt
+	}))}<span data-hppx hidden>, <b></b> ${esc(x5.pxTail)}</span>.</p>`;
+	const best5 = bestFor$1(L, {
+		dCentre: dC5,
+		facilities: facList,
+		tags: [...tags5 ?? [], ...f.tags ?? []],
+		station: st5?.d ?? null
+	});
+	const bestB = best5.length ? `<p style="margin:0 0 4px"><b>${esc(x5.bestH)}:</b></p><ul class="hp5-chips">${best5.map((b) => `<li>${esc(b)}</li>`).join("")}</ul>` : "";
+	const fac5 = facilitiesBlock(L, facList, "hp-fac");
+	const sights5 = hcd?.extras?.sights ?? [];
+	const map5 = hasGeo ? mapBlock(L, "hp-map", {
+		name: String(f.name),
+		lat: la,
+		lng: lo
+	}, city ? {
+		lat: city.lat,
+		lng: city.lng
+	} : null, sights5) : "";
+	const th5 = thumbsBlock(L, hphotos, String(f.name));
+	const how5 = [
+		st5 ? x5.howLine(x5.station, st5.n, `${nf(st5.d)} km`, walkMin(st5.d) ? x5.walk(walkMin(st5.d)) : "") : "",
+		apTxt && ap5 ? x5.howLine(h5.airport, `${ap5.n} (${ap5.i})`, `${Math.round(km({
+			lat: ap5.la,
+			lng: ap5.lo
+		}, {
+			lat: la,
+			lng: lo
+		}))} km`, "") : "",
+		dC5 != null ? x5.howLine(h5.centre, cityL, `${nf(dC5)} km`, walkMin(dC5) ? x5.walk(walkMin(dC5)) : "") : ""
+	].filter(Boolean);
+	const howB = how5.length ? `<h2 id="hp-how">${esc(x5.howH)}</h2><ul>${how5.map((x) => `<li>${esc(x)}</li>`).join("")}</ul><p class="hp-small" style="text-align:left">${esc(x5.straight)}${st5 ? ` ${esc(x5.stNote)}` : ""}</p>` : "";
+	const slg = (s) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/&/g, " and ").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+	const picksGeo = (hcd?.hotels ?? []).filter((h) => h.coordinates).map((h) => ({
+		lat: h.coordinates.latitude,
+		lng: h.coordinates.longitude
+	}));
+	const near5 = hasGeo && city ? sights5.filter((s) => typeof s.lat === "number" && km2({
+		lat: la,
+		lng: lo
+	}, s) <= 1.5 && picksGeo.some((p) => km2(p, s) <= 2.5)).slice(0, 6) : [];
+	const nearL = GROWTH_LANGS.includes(L) ? L : "en";
+	const NEARH = {
+		en: "Hotels near",
+		es: "Hoteles cerca de",
+		de: "Hotels in der Nähe von",
+		fr: "Hôtels près de",
+		it: "Hotel vicino a",
+		pt: "Hotéis perto de",
+		da: "Hoteller nær"
+	};
+	const nearB = near5.length ? `<p class="hp5-near">${near5.map((s) => `<a href="${P(nearL, `/near/${city.slug}/${slg(s.name)}`)}">${esc(NEARH[nearL] ?? NEARH["en"])} ${esc(s.name)}</a>`).join(" · ")}</p>` : "";
+	const [gw5, pw5] = city ? await Promise.all([gymWinners(city.id, city.slug, L, cityL), poolWinners(city.id, city.slug, L, cityL)]) : [[], []];
+	const myBk = bkPath(f.booking_url) ?? "";
+	const nrm = (s) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "");
+	const isMe = (w) => w.bk && myBk && w.bk === myBk || nrm(w.hotel) === nrm(String(f.name));
+	const wins5 = [...gw5.map((w) => ({
+		...w,
+		k: "gym"
+	})), ...pw5.map((w) => ({
+		...w,
+		k: "pool"
+	}))].filter(isMe);
+	const winB = wins5.length ? `<aside class="hp5-box"><h2>${esc(x5.winH)}</h2><ul>${wins5.map((w) => `<li><a href="${esc(w.href)}">${w.k === "gym" ? "🏋️" : "🏊"} ${esc(x5.win(w.tier, w.name))}</a></li>`).join("")}</ul></aside>` : "";
+	const altW = [...gw5.map((w) => ({
+		...w,
+		k: x5.altGym
+	})), ...pw5.map((w) => ({
+		...w,
+		k: x5.altPool
+	}))].filter((w) => !isMe(w));
+	const seenAlt = /* @__PURE__ */ new Set();
+	const altB = altW.length ? `<h3>${esc(x5.altH(cityL))}</h3><ul class="hp-others">${altW.filter((w) => seenAlt.has(w.hotel + w.k) ? false : (seenAlt.add(w.hotel + w.k), true)).slice(0, 4).map((w) => `<li><a href="${esc(w.href)}"><b>${esc(w.hotel)}</b> · ${esc(w.k)} (${esc(w.tier)})</a></li>`).join("")}</ul>` : "";
+	const noDatesB = op.length ? `<section class="hp5-box"><h2>${esc(x5.noDatesH)}</h2><p>${esc(x5.noDates)}</p><ul>${op.map((o) => {
+		const s2 = hotelSlug(o.name, d.city_slug);
+		return `<li><a href="${esc(live.has(s2) ? P(L, `/hotel/${s2}`) : P(L, `/${d.city_slug}`))}">${esc(o.name)}</a></li>`;
+	}).join("")}${alt ? `<li><a href="${esc(alt)}" rel="sponsored nofollow noopener" target="_blank" data-t="alt_click" data-city="${esc(d.city_slug)}" data-cat="${esc(d.cat)}" data-p="hotel-page-nodates">${esc(x5.noDatesSearch)}<span aria-hidden="true"> ↗</span></a></li>` : ""}</ul></section>` : "";
+	let simB = "";
+	if (city && Number(f.nightly_eur) > 0) {
+		const cands = list.filter((r) => r.cat === d.cat && r.city_slug !== d.city_slug && bySlug.get(r.city_slug)?.cslug === city.cslug);
+		const byCity = /* @__PURE__ */ new Map();
+		for (const r of cands) byCity.set(r.city_slug, [...byCity.get(r.city_slug) ?? [], r]);
+		const cs = [...byCity.keys()].map((s) => bySlug.get(s)).filter(Boolean).sort((a, b) => (b.pop ?? 0) - (a.pop ?? 0)).slice(0, 12);
+		const found = [];
+		for (const c2 of cs) {
+			const cd2 = await cityData(c2.id).catch(() => null);
+			for (const h of cd2?.hotels ?? []) {
+				const s2 = hotelSlug(h.name, c2.slug);
+				if (h.offer?.nightly && (byCity.get(c2.slug) ?? []).some((r) => r.slug === s2)) found.push({
+					name: h.name,
+					city: cityName(c2, L),
+					href: P(hpLangs((byCity.get(c2.slug) ?? []).find((r) => r.slug === s2)).includes(L) ? L : "en", `/hotel/${s2}`),
+					px: h.offer.nightly,
+					sc: h.booking?.score
+				});
+			}
+		}
+		const me = Number(hh?.offer?.nightly ?? f.nightly_eur);
+		const top = found.sort((a, b) => Math.abs(a.px - me) - Math.abs(b.px - me)).slice(0, 4);
+		if (top.length) simB = `<h2 id="hp-sim">${esc(x5.simH(countryName(city, L)))}</h2><ul class="hp-others">${top.map((x) => `<li><a href="${esc(x.href)}"><b>${esc(x.name)}</b> · ${esc(x.city)}${x.sc ? ` · ${sc1(x.sc)}` : ""} · ${moneyL(x.px, L)}</a></li>`).join("")}</ul>`;
+	}
+	const orphan = !!(hcd?.hotels?.length && !hh);
+	const orphB = orphan ? `<aside class="hp5-box hp5-orph" role="note"><p style="margin:0">${esc(x5.orphan(cityL))} <a href="${P(L, `/${d.city_slug}`)}">${esc(t.all)} ${esc(cityL)} →</a></p></aside>` : "";
+	const toc5 = [
+		["hp-key", h5.keyH],
+		...fac5 ? [["hp-fac", x5.facH]] : [],
+		...map5 ? [["hp-map", x5.mapH]] : [],
+		...howB ? [["hp-how", x5.howH]] : [],
+		["hp-faq", t.faq],
+		...simB ? [["hp-sim", x5.simH(city ? countryName(city, L) : "")]] : []
+	];
+	const tocB = `<nav class="hp5-toc" aria-label="${esc(x5.toc)}"><b>${esc(x5.toc)}</b>${toc5.map(([i, h]) => `<a href="#${i}">${esc(h)}</a>`).join("")}</nav>`;
 	const facts = [
 		f.score ? `<span>${esc(t.score)} <b>${Number(f.score).toFixed(1)}</b>/10${f.reviews ? ` · ${fmtInt(f.reviews)} ${esc(t.reviews)}` : ""}</span>` : "",
 		f.stars ? `<span><span aria-hidden="true">${"★".repeat(Number(f.stars))}</span> ${esc(H4[L].starsChip(Number(f.stars)))}</span>` : "",
@@ -27150,23 +56446,29 @@ async function hotelPage(slug, L) {
 		Number(f.candidates_compared) > 1 ? `<span>${esc(t.from)} ${fmtInt(f.candidates_compared)} ${esc(t.hotels)}</span>` : ""
 	].filter(Boolean).join("");
 	const cta = bk ? `<a class="hp-cta" href="${esc(bk)}" rel="sponsored nofollow noopener" target="_blank" data-t="check_availability" data-city="${esc(d.city_slug)}" data-cat="${esc(d.cat)}" data-p="hotel-page" aria-label="${esc(bkx(L).aria(f.name, [f.stars ? bkx(L).stars(Number(f.stars)) : "", t[`cat_${d.cat}`] ?? ""].filter(Boolean).join(", ")))}" title="${esc(bkx(L).shortcut)}" aria-keyshortcuts="B">${esc(t.book)}<span aria-hidden="true"> ↗</span></a><p class="hp-small">${esc(t.disc)}</p>${alt ? `<a class="hp-alt" href="${esc(alt)}" rel="sponsored nofollow noopener" target="_blank" data-t="alt_click" data-city="${esc(d.city_slug)}" data-cat="${esc(d.cat)}" data-p="hotel-page-alt">${esc(t.altl)} →</a>` : ""}` : "";
-	const body = `<style>${CSS_BLOG}${CSS_HP}</style><article class="post">
+	const body = `<style>${CSS_BLOG}${CSS_HP}${CSS5}</style>${tocB}<article class="post">
 <nav class="crumbs"><a href="${P(L, "/")}">${esc(t.home)}</a> › ${city ? `<a href="${P(L, `/country/${city.cslug}`)}">${esc(countryName(city, L))}</a> › ` : ""}<a href="${P(L, `/${d.city_slug}`)}">${esc(d.city)}</a> › ${esc(f.name)}</nav>
 <span class="hp-badge">${esc(t[`cat_${d.cat}`] ?? d.cat)} · ${esc(d.city)}</span>
 <h1>${esc(f.name)}<span class="hp-h1c">, ${esc(cityL)}</span></h1>
 <p class="by">${esc(t.by)} ${esc(t.updated)} ${esc(upd)}.</p>
+${orphB}${sum5}
 ${cta}
 ${hphotos[0] || hfb ? `<img class="hp-hero" width="1280" height="720" fetchpriority="high" src="${esc(hphotos[0] || hfb)}" alt="${esc(f.name)}, ${esc(d.city)}" loading="eager" referrerpolicy="no-referrer"${fbAttr([...hphotos.slice(1), hfb])}>` : ""}
-<div class="hp-facts">${facts}</div>${addr5}
+${th5}<div class="hp-facts">${facts}</div>${addr5}
 <p class="hp-verdict">${esc(c.verdict)}</p>
-${key5}
+${bestB}${winB}
+${key5f()}
+${fac5}
+${map5}${nearB}
+${howB}
 ${(c.sections ?? []).map((x) => `<h2>${esc(x.h)}</h2>${(x.p ?? []).map((pp) => `<p>${esc(pp)}</p>`).join("")}`).join("\n")}
 ${cta}
-<h2>${esc(t.faq)}</h2><div class="hp-faq">${faqAll.map((q) => `<details><summary>${esc(q.q)}</summary><p>${esc(q.a)}</p></details>`).join("")}</div>
+<h2 id="hp-faq">${esc(t.faq)}</h2><div class="hp-faq">${faqAll.map((q) => `<details><summary>${esc(q.q)}</summary><p>${esc(q.a)}</p></details>`).join("")}</div>
 ${cmpTable}
 <h2>${esc(t.others)} ${esc(d.city)}</h2><ul class="hp-others">${others.join("")}<li><a href="${P(L, `/${d.city_slug}`)}">${esc(t.all)} ${esc(d.city)} →</a></li></ul>
+${altB}${noDatesB}${simB}
 ${badge5}${rep5}
-</article><script type="speculationrules">${JSON.stringify({ prefetch: [{
+</article>${JS5}<script type="speculationrules">${JSON.stringify({ prefetch: [{
 		source: "list",
 		urls: [P(L, `/${d.city_slug}`)]
 	}] })}<\/script><script>document.addEventListener('keydown',function(e){if(e.key!=='b'&&e.key!=='B')return;if(e.ctrlKey||e.metaKey||e.altKey)return;var g=e.target||{};if(/INPUT|TEXTAREA|SELECT/.test(g.tagName||'')||g.isContentEditable)return;var a=document.querySelector('a.hp-cta');if(!a)return;e.preventDefault();a.scrollIntoView({block:'center'});a.focus()})<\/script>`;
@@ -27191,6 +56493,18 @@ ${badge5}${rep5}
 			...f.stars ? { starRating: {
 				"@type": "Rating",
 				ratingValue: f.stars
+			} } : {},
+			...facList.length ? { amenityFeature: [...new Set(facList)].map((x) => ({
+				"@type": "LocationFeatureSpecification",
+				name: x,
+				value: true
+			})) } : {},
+			...f.checkin_time ? { checkinTime: f.checkin_time } : {},
+			...f.checkout_time ? { checkoutTime: f.checkout_time } : {},
+			...city ? { containedInPlace: {
+				"@type": "City",
+				name: cityL,
+				url: SITE + P(L, `/${d.city_slug}`)
 			} } : {}
 		},
 		...upd ? [{
@@ -27244,19 +56558,44 @@ ${badge5}${rep5}
 			]
 		}
 	];
+	const catT = String(t[`cat_${d.cat}`] ?? d.cat);
+	const t16 = sc5 ? `${f.name}, ${cityL}: ${L === "de" ? catT : catT.toLowerCase()}, ${sc5}/10` : "";
 	return page({
 		L,
-		title: `${c.title} | Top3Hotels`,
-		description: c.meta,
+		title: t16 && (t16 + " | Top3Hotels").length <= 65 ? `${t16} | Top3Hotels` : t16 && t16.length <= 65 ? t16 : `${c.title} | Top3Hotels`,
+		description: `${f.name}, ${cityL}: ${x5.sumTxt({
+			stars: f.stars ? h5.starsChip(Number(f.stars)) : "",
+			cat: catT,
+			area: f.area ? String(f.area) : "",
+			score: sc5,
+			n: f.reviews ? Number(f.reviews).toLocaleString(nl5) : "",
+			d: dTxt
+		})}. ${c.meta ?? ""}`.trim(),
 		path,
 		body,
 		ld,
+		...orphan ? { noindex: true } : {},
 		alts: Object.keys(d.content ?? {}).filter((l) => HP_LANGS.includes(l)),
 		image: hphotos[0] || void 0
 	});
 }
 async function hotelSitemap() {
-	return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${(await hotelPagesList()).flatMap((r) => hpLangs(r).map((L) => `<url><loc>${SITE}${P(L, `/hotel/${r.slug}`)}</loc><lastmod>${(r.published_at ?? "").slice(0, 10)}</lastmod>${hpLangs(r).map((l) => `<xhtml:link rel="alternate" hreflang="${l}" href="${SITE}${P(l, `/hotel/${r.slug}`)}"/>`).join("")}</url>`)).join("\n")}\n</urlset>\n`;
+	const { bySlug } = await data();
+	const cur = /* @__PURE__ */ new Map();
+	const pickSlugs = async (cs) => {
+		if (!cur.has(cs)) {
+			const c = bySlug.get(cs);
+			const cd = c ? await cityData(c.id).catch(() => null) : null;
+			cur.set(cs, new Set((cd?.hotels ?? []).map((h) => hotelSlug(h.name, cs))));
+		}
+		return cur.get(cs);
+	};
+	const rows = [];
+	for (const r of await hotelPagesList()) {
+		const s = await pickSlugs(r.city_slug);
+		if (!s.size || s.has(r.slug)) rows.push(r);
+	}
+	return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${rows.flatMap((r) => hpLangs(r).map((L) => `<url><loc>${SITE}${P(L, `/hotel/${r.slug}`)}</loc><lastmod>${(r.published_at ?? "").slice(0, 10)}</lastmod>${hpLangs(r).map((l) => `<xhtml:link rel="alternate" hreflang="${l}" href="${SITE}${P(l, `/hotel/${r.slug}`)}"/>`).join("")}</url>`)).join("\n")}\n</urlset>\n`;
 }
 async function sitemapFor(L) {
 	const { index, byCountry } = await data();
