@@ -1242,7 +1242,7 @@ export async function inject(req, u, env, r) {
     else if (p === '') { const h = await homeBits(l, env); if (h) { add.push(['p.hero-sub', 'after', h[0]]); add.push(['#hp-band > .wrap', 'prepend', h[1]]); } }   // n38 d4: one proof line in the hero, the numbers in a tile band below
     else if (p === 'yc/try/') add.push(['section.k27 .k-prose > ol', 'before', await progBlock(l, env)]);   // r8u
     else if ((mm = /^m\/([^/.]{2,60})\/$/.exec(p))) { const mk = mBySlug(mm[1]); const dh = mk ? mkDash(l, mk) : ''; if (dh) add.push(l === 'en' ? ['#in-short', 'after', dh] : ['.k29-kv', 'after', dh]); const h = mk ? mkSection(l, mk) + kpMarket(l, mk) + '<div class="n37">' + areaBlock(l, mk) + nextBlock(l, mk) + '</div>' : ''; if (!h) return r; add.push(['#slippage', 'before', h]); }   // r9u: register status summary (Malaysia); n39 t2: areas, next 12 months
-    else if ((mm = /^developers\/([a-z0-9-]{2,90})\/$/.exec(p))) { const h = devSection(l, mm[1]); if (!h) return r; add.push(['#projects', 'append', h + peers(l, mm[1]) + '<p class="n37-in"' + dir(l) + '><a href="' + pre(l) + '/developers/' + mm[1] + '/timeline/">' + esc(t(l, 'v_link')) + '</a></p>']); }   // n39 t2
+    else if ((mm = /^developers\/([a-z0-9-]{2,90})\/$/.exec(p))) { const h = devSection(l, mm[1]); if (!h) return r; add.push(['#projects', 'append', h + peers(l, mm[1]) + '<p class="n37-in"' + dir(l) + '><a href="' + pre(l) + '/developers/' + mm[1] + '/timeline/">' + esc(t(l, 'b_v_link')) + '</a></p>']); }   // n39 t2
     else if ((mm = /^projects\/([a-z0-9-]{1,90})\/$/.exec(p))) {
       const x = IX.bySlug.get(mm[1]); if (!x) return r;
       const k = cnt(x);
