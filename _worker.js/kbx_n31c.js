@@ -23,7 +23,7 @@ return TP;
 }
 export const DEV_ALIAS = {
 'aldar-properties-pjsc': 'aldar-properties', 'arada-developments-l-l-c-s-o-c': 'arada', 'azizi-developments-l-l-c': 'azizi-developments', 'berjaya-land-bhd': 'berjaya-land-berhad',
-'breig-property-development': 'breig-property', 'danube-properties-development-l-l-c': 'danube-properties', 'dar-global-plc': 'dar-global', emaar: 'emaar-properties',
+'breig-property-development': 'breig-property', 'danube-properties-development-l-l-c': 'danube-properties', 'dar-global-plc': 'dar-global', emaar: 'emaar-properties', danube: 'danube-properties', aldar: 'aldar-properties', sobha: 'sobha-realty', damac: 'damac-properties', azizi: 'azizi-developments', binghatti: 'binghatti-developers', ellington: 'ellington-properties', samana: 'samana-developers', imtiaz: 'imtiaz-developments',
 'investland-bali-properties': 'investland-bali', 'lamda-development-s-a': 'lamda-development', 'magnum-estate-international': 'magnum-estate', 'metrovacesa-s-a': 'metrovacesa',
 'modon-properties-pjsc': 'modon', 'rak-properties-pjsc': 'rak-properties', 'range-developments-group': 'range-developments', 'sansiri-pcl': 'sansiri',
 'sansiri-public-company-limited': 'sansiri', 'sumitomo-realty-development-co-ltd': 'sumitomo-realty-development', 'taraf-development-l-l-c': 'taraf', cyrela: 'cyrela-brazil-realty',
