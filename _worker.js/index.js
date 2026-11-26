@@ -474,7 +474,7 @@ async function kbFinGet(req, u, env, ctx, self) {
   return new Response(t, { status: 200, headers: h });
 }
 async function kbFinPut(req, u, env, ctx, r) {
-  if (req.method !== 'GET' || !r || r.status !== 200 || !kbClean(u) || u.search || typeof caches === 'undefined' || !KB_FIN.test(u.pathname) || KB_BOT_UA.test(req.headers.get('user-agent') || '') || r.headers.has('set-cookie') || !/text\/html/.test(r.headers.get('content-type') || '') || kbStrBad()) return r;
+  if (req.method !== 'GET' || !r || r.status !== 200 || !kbClean(u) || u.search || typeof caches === 'undefined' || !KB_FIN.test(u.pathname) || KB_BOT_UA.test(req.headers.get('user-agent') || '') || r.headers.has('set-cookie') || r.headers.get('x-edge-cache') === 'stale' || !/text\/html/.test(r.headers.get('content-type') || '') || kbStrBad()) return r;
   const t = await r.text(), h = new Headers(r.headers); h.delete('content-length'); if (KB_UNDEF.test(t)) return new Response(t, { status: 200, headers: h });
   const hc = new Headers(h); hc.set('x-built', String(Date.now())); hc.set('x-sha', String((env && env.CF_PAGES_COMMIT_SHA) || '')); hc.set('x-cc', h.get('cache-control') || 'no-cache'); hc.set('cache-control', 'public, max-age=86400'); hc.delete('server-timing');
   const put = caches.default.put(kbFinKey(u), new Response(t, { headers: hc })).catch(() => {}); if (ctx && ctx.waitUntil) ctx.waitUntil(put); else await put;
