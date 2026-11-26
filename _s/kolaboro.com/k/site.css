@@ -1498,3 +1498,6 @@ main details>summary{min-height:44px!important}
 .n33-ms .wrap a{display:inline-block;padding-block:2px}
 /* phones: form fields under 16 px make iOS Safari zoom the page on focus (search box 14.4 px, map filters 13.4 px) */
 @media (max-width:640px){main :is(input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=color]):not([type=file]),select,textarea){font-size:16px!important}}
+
+/* n40 R01-23: focus rings keep 3:1 contrast: light ring on the dark shipping bar, darker orange on light headers */
+.ship a:focus-visible{outline:3px solid #FF8A55;outline-offset:-3px}:root:not([data-theme=dark]) nav.links .lsw summary:focus-visible,:root:not([data-theme=dark]) nav.links .lsw a:focus-visible,:root:not([data-theme=dark]) .db-sb:focus-visible{outline-color:#C2410C}
