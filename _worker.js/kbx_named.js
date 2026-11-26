@@ -42,7 +42,7 @@ import { dldKf, wbLine, wayback as wbData, setLive as aliasLive } from './kbx_n3
 import { TB } from './kbx_strings.js';
 const ORIGIN = 'https://kolaboro.com';
 const RESERVED = new Set(['benchmark', 'reply', 'self-check', 'templates', 'index', 'index.html']);
-const CACHE_V = 'named-v159';   // v159: overdue, moved and past-first counts from /data/on-time.json on every page; Mevacity Alanya counted in Alanya (n40 k24);
+const CACHE_V = 'named-v160';   // v160: site.css link marked for site-p.css (n40 d8); v159: overdue, moved and past-first counts from /data/on-time.json on every page; Mevacity Alanya counted in Alanya (n40 k24);
 export const OPINION_RX = /\b(scam\w*|fraud\w*|ponzi|swindl\w*|rip-?off|avoid\w*|beware|dodgy|shady|crook\w*|estafa\w*|fraude\w*|timo|timador\w*|betrug\w*|betrüg\w*|abzocke\w*|arnaque\w*|escroquer\w*|escroc\w*|oplichting|oplichter\w*|bedrog\w*)\b|мошен|обман|афер|骗局|诈骗|欺诈|احتيال|نصب/i;
 let MEMO = {};
 const SHARED = (globalThis.__kbJson = globalThis.__kbJson || {}), LOADING = {};
@@ -669,7 +669,7 @@ return TB.kbx_named__t.k49 + hr + '</tr></thead><tbody>' + out + '</tbody></tabl
 });
 }
 const D12CSS = '';
-const KP_CSS = '<link rel="stylesheet" href="/k/kp.css?v=b936559790">';
+const KP_CSS = '<link rel="stylesheet" href="/k/kp.css?v=8b60bd12d0">';
 const CV = '<script>if(location.hash)document.documentElement.classList.add("kb-h")</script><style id="kcv-css">html:not(.kb-h) .kwrap section.ks{content-visibility:auto;contain-intrinsic-size:auto 700px}html:not(.kb-h) .kwrap section.kz{content-visibility:visible}@media print{html:not(.kb-h) .kwrap section.ks{content-visibility:visible}}</style>';
 function head(pg, lang) {
   const alts = LANGS.map(l => '<link rel="alternate" hreflang="' + l + '" href="' + pg.alt(l) + '">').join('') + '<link rel="alternate" hreflang="x-default" href="' + pg.alt('en') + '">';
