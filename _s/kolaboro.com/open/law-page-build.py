@@ -66,7 +66,6 @@ p = sub(r'(<div class="lw-list" id="lwList">).*?</article></div>', lambda m: m.g
 p = sub(r'(<p class="lead">)\d+( short notes)', lambda m: m.group(1) + str(n) + m.group(2), p)
 for pat in (r'(<meta name="description" content=")[^"]*(")', r'(<meta property="og:description" content=")[^"]*(")'):
     p = sub(pat, lambda m: m.group(1) + e(desc) + m.group(2), p)
-for v in re.findall(r'"description": "[^"]*"', p)[:0]: pass
 assert '—' not in lst and '–' not in lst
 if p != o:
     open(PG, 'w', encoding='utf-8').write(p)
