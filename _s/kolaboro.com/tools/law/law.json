@@ -28,7 +28,9 @@
     "TR": "Turkey",
     "CR": "Costa Rica",
     "CY": "Cyprus",
-    "IN": "India"
+    "IN": "India",
+    "BR": "Brazil",
+    "SA": "Saudi Arabia"
   },
   "sources": {
     "id-pp18-2021": {
@@ -200,6 +202,22 @@
       "language": "en",
       "read": "2026-11-26",
       "note": "Central Act. Each state notifies its own rules (interest rate, forms) and runs its own Real Estate Regulatory Authority."
+    },
+    "br-4591-1964": {
+      "law": "Law No. 4,591 of 16 December 1964 (condominiums in buildings and real estate developments), as amended",
+      "publisher": "Planalto (planalto.gov.br), Presidency of the Republic of Brazil, compiled text",
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/l4591compilado.htm",
+      "language": "pt",
+      "read": "2026-11-26",
+      "note": "Articles 31-A, 35-A, 43-A and 67-A were added by Laws 10,931/2004 and 13,786/2018; article 32 was reworded by Law 14,382/2022."
+    },
+    "sa-offplan-1445": {
+      "law": "Law on the Sale and Lease of Off-Plan Real Estate Projects, Royal Decree No. (M/44) of 10/3/1445 AH",
+      "publisher": "Real Estate General Authority (rega.gov.sa), Kingdom of Saudi Arabia",
+      "url": "https://rega.gov.sa/%D8%A7%D9%84%D8%A3%D9%86%D8%B8%D9%85%D8%A9-%D9%88%D8%A7%D9%84%D9%82%D8%B1%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A7%D9%84%D8%A3%D9%86%D8%B8%D9%85%D8%A9-%D9%88%D8%A7%D9%84%D9%84%D9%88%D8%A7%D8%A6%D8%AD-%D9%88%D8%A7%D9%84%D8%A3%D8%AF%D9%84%D8%A9/%D8%A7%D9%84%D8%A3%D9%86%D8%B8%D9%85%D8%A9/%D9%86%D8%B8%D8%A7%D9%85-%D8%A8%D9%8A%D8%B9-%D9%88%D8%AA%D8%A3%D8%AC%D9%8A%D8%B1-%D9%85%D8%B4%D8%B1%D9%88%D8%B9%D8%A7%D8%AA-%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%AE%D8%A7%D8%B1%D8%B7%D8%A9/",
+      "language": "ar",
+      "read": "2026-11-26",
+      "note": "Official Arabic text. The Implementing Regulations of the law add the detailed procedures."
     }
   },
   "rules": [
@@ -1065,6 +1083,125 @@
       "source": "in-rera-2016",
       "cite": "Section 18(1)",
       "quote": "[...] he shall be liable on demand to the allottees, in case the allottee wishes to withdraw from the project, without prejudice to any other remedy available, to return the amount received by him in respect of that apartment, plot, building, as the case may be, with interest at such rate as may be prescribed in this behalf including compensation in the manner as provided under this Act: Provided that where an allottee does not intend to withdraw from the project, he shall be paid, by the promoter, interest for every month of delay, till the handing over of the possession, at such rate as may be prescribed.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "br-registro-incorporacao",
+      "market": "BR",
+      "topics": [
+        "permit",
+        "title"
+      ],
+      "title": "In Brazil, a developer may sell units only after the development has been registered at the property registry",
+      "plain": "A developer may sell or pledge the future units of a building only after the development memorial (memorial de incorporação) has been registered at the competent real estate registry, with the land title, tax and lawsuit certificates, the approved construction project and the cost estimate. Ask for the registration number and check it with the registry before you pay.",
+      "source": "br-4591-1964",
+      "cite": "Article 32",
+      "quote": "O incorporador somente poderá alienar ou onerar as frações ideais de terrenos e acessões que corresponderão às futuras unidades autônomas após o registro, no registro de imóveis competente, do memorial de incorporação composto pelos seguintes documentos: [...]",
+      "translation": "The developer may sell or encumber the ideal fractions of land and buildings that will correspond to the future units only after the registration, at the competent real estate registry, of the development memorial made up of the following documents: [...]",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "br-patrimonio-afetacao",
+      "market": "BR",
+      "topics": [
+        "escrow"
+      ],
+      "title": "A project can be ring-fenced from the developer (patrimônio de afetação), but only if the developer chooses it",
+      "plain": "The developer may place a project under the segregated estate regime. The land, the building and the rights linked to it then stay apart from the developer's own assets, serve only to finish that project and deliver the units, and answer only for the debts of that project. It is optional, so ask in writing whether your project has it.",
+      "source": "br-4591-1964",
+      "cite": "Article 31-A, caput and paragraph 1",
+      "quote": "A critério do incorporador, a incorporação poderá ser submetida ao regime da afetação, pelo qual o terreno e as acessões objeto de incorporação imobiliária, bem como os demais bens e direitos a ela vinculados, manter-se-ão apartados do patrimônio do incorporador e constituirão patrimônio de afetação, destinado à consecução da incorporação correspondente e à entrega das unidades imobiliárias aos respectivos adquirentes. [...] O patrimônio de afetação não se comunica com os demais bens, direitos e obrigações do patrimônio geral do incorporador ou de outros patrimônios de afetação por ele constituídos e só responde por dívidas e obrigações vinculadas à incorporação respectiva.",
+      "translation": "At the developer's discretion, the development may be placed under the segregation regime, under which the land and the buildings of the real estate development, as well as the other assets and rights linked to it, are kept apart from the developer's assets and form a segregated estate, intended to carry out the corresponding development and to deliver the units to their buyers. [...] The segregated estate does not mix with the other assets, rights and obligations of the developer's general estate or of other segregated estates it has set up, and answers only for the debts and obligations linked to the respective development.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "br-atraso-180-dias",
+      "market": "BR",
+      "topics": [
+        "delay",
+        "termination"
+      ],
+      "title": "Past a 180-day grace period, you can cancel with a full refund, or stay and receive 1% a month",
+      "plain": "A contract may give the developer up to 180 calendar days after the agreed completion date with no penalty, but only if the clause is clear and highlighted. After that, if you did not cause the delay, you can end the contract and get back everything you paid plus the contract penalty within 60 days. If you keep the contract, you are owed 1% of what you paid for each month of delay, paid at handover. The two cannot be added together.",
+      "source": "br-4591-1964",
+      "cite": "Article 43-A, caput and paragraphs 1 to 3",
+      "quote": "A entrega do imóvel em até 180 (cento e oitenta) dias corridos da data estipulada contratualmente como data prevista para conclusão do empreendimento, desde que expressamente pactuado, de forma clara e destacada, não dará causa à resolução do contrato por parte do adquirente nem ensejará o pagamento de qualquer penalidade pelo incorporador. § 1º Se a entrega do imóvel ultrapassar o prazo estabelecido no caput deste artigo, desde que o adquirente não tenha dado causa ao atraso, poderá ser promovida por este a resolução do contrato, sem prejuízo da devolução da integralidade de todos os valores pagos e da multa estabelecida, em até 60 (sessenta) dias corridos contados da resolução, corrigidos nos termos do § 8º do art. 67-A desta Lei. § 2º Na hipótese de a entrega do imóvel estender-se por prazo superior àquele previsto no caput deste artigo, e não se tratar de resolução do contrato, será devida ao adquirente adimplente, por ocasião da entrega da unidade, indenização de 1% (um por cento) do valor efetivamente pago à incorporadora, para cada mês de atraso, pro rata die , corrigido monetariamente conforme índice estipulado em contrato. § 3º A multa prevista no § 2º deste artigo, referente a mora no cumprimento da obrigação, em hipótese alguma poderá ser cumulada com a multa estabelecida no § 1º [...]",
+      "translation": "Delivery of the property up to 180 (one hundred and eighty) calendar days after the date set in the contract as the expected completion date of the development, provided this is expressly agreed in a clear and highlighted way, will not give the buyer grounds to terminate the contract nor require the developer to pay any penalty. Paragraph 1. If delivery goes beyond the period in the caput of this article, provided the buyer did not cause the delay, the buyer may terminate the contract, without prejudice to the return of all amounts paid and of the agreed penalty, within 60 (sixty) calendar days of the termination, updated under paragraph 8 of article 67-A of this Law. Paragraph 2. If delivery extends beyond the period in the caput of this article and the contract is not terminated, the buyer who is up to date with payments is owed, on delivery of the unit, compensation of 1% (one per cent) of the amount actually paid to the developer for each month of delay, pro rata die, adjusted by the index set in the contract. Paragraph 3. The penalty in paragraph 2 of this article, for late performance, may in no case be added to the penalty in paragraph 1 [...]",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "br-distrato-25",
+      "market": "BR",
+      "topics": [
+        "termination",
+        "payment"
+      ],
+      "title": "If you cancel, the developer may keep the brokerage fee and at most 25% of what you paid (50% in a ring-fenced project)",
+      "plain": "If the contract with the developer ends by mutual cancellation or because you failed to pay, you get back what you paid directly to the developer, updated by the contract index, minus the full brokerage commission and a penalty of no more than 25% of the amount paid. In a project under the segregated estate regime, the penalty may go up to 50% and the refund is due within 30 days after the occupancy permit (habite-se).",
+      "source": "br-4591-1964",
+      "cite": "Article 67-A, caput and paragraph 5",
+      "quote": "Em caso de desfazimento do contrato celebrado exclusivamente com o incorporador, mediante distrato ou resolução por inadimplemento absoluto de obrigação do adquirente, este fará jus à restituição das quantias que houver pago diretamente ao incorporador, atualizadas com base no índice contratualmente estabelecido para a correção monetária das parcelas do preço do imóvel, delas deduzidas, cumulativamente: I - a integralidade da comissão de corretagem; II - a pena convencional, que não poderá exceder a 25% (vinte e cinco por cento) da quantia paga. [...] § 5º Quando a incorporação estiver submetida ao regime do patrimônio de afetação, de que tratam os arts. 31-A a 31-F desta Lei, o incorporador restituirá os valores pagos pelo adquirente, deduzidos os valores descritos neste artigo e atualizados com base no índice contratualmente estabelecido para a correção monetária das parcelas do preço do imóvel, no prazo máximo de 30 (trinta) dias após o habite-se ou documento equivalente expedido pelo órgão público municipal competente, [...] que a pena referida no inciso II do caput deste artigo seja estabelecida até o limite de 50% (cinquenta por cento) da quantia paga.",
+      "translation": "If a contract made only with the developer is undone, by mutual cancellation or by termination for the buyer's absolute failure to perform, the buyer is entitled to the return of the amounts paid directly to the developer, updated by the index set in the contract for adjusting the price instalments, minus, cumulatively: I. the whole brokerage commission; II. the contractual penalty, which may not exceed 25% (twenty-five per cent) of the amount paid. [...] Paragraph 5. When the development is under the segregated estate regime of articles 31-A to 31-F of this Law, the developer will return the amounts paid by the buyer, minus the amounts described in this article and updated by the index set in the contract for adjusting the price instalments, within no more than 30 (thirty) days after the occupancy permit (habite-se) or equivalent document issued by the competent municipal body, [...] the penalty in item II of the caput of this article being allowed up to 50% (fifty per cent) of the amount paid.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "sa-offplan-licence",
+      "market": "SA",
+      "topics": [
+        "permit",
+        "escrow"
+      ],
+      "title": "In Saudi Arabia, a developer needs a licence for each off-plan project, and an escrow account agreement with a licensed bank",
+      "plain": "A developer that wants to sell or lease units off-plan must first be entered in the register of developers and then apply for a licence for that specific project. The application must include, among other documents, a valid building permit, the title deed, a model sale contract with delivery dates fixed to the day, and an agreement with a bank licensed in the Kingdom to open an escrow account. Ask for the project licence before you pay.",
+      "source": "sa-offplan-1445",
+      "cite": "Article 6(1)",
+      "quote": "يجب على المطور الراغب في بيع أو تأجير مشروعات عقارية على الخارطة -بعد قيد اسمه في سجل قيد المطورين- أن يقدم طلبًا إلى الجهة المختصة للحصول على الترخيص الخاص للمشروع العقاري مشفوعًا بما يلي: [...] د- رخصة بناء للمشروع العقاري سارية المفعول. هـ- صك تسجيل الملكية (ساري المفعول) للعقار المراد تطويره. [...] م- نموذج عقد بيع بينه وبين المشتري ومواعيد تسليم المبيع محددة باليوم بما يتفق مع أحكام النظام واللائحة وغير متعارضة مع أحكام الشريعة الإسلامية. ن- اتفاقية فتح حساب ضمان بينه وبين بنك مرخص له في المملكة، بما يتفق مع أحكام النظام واللائحة.",
+      "translation": "A developer wishing to sell or lease real estate projects off-plan must, after its name has been entered in the register of developers, apply to the competent authority for the licence of the real estate project, together with the following: [...] (d) a valid building permit for the real estate project. (e) a valid title deed for the property to be developed. [...] (m) a model sale contract between the developer and the buyer, with delivery dates for the unit fixed to the day, consistent with the Law and the Regulations and not contrary to the provisions of Islamic Sharia. (n) an agreement to open an escrow account between the developer and a bank licensed in the Kingdom, consistent with the Law and the Regulations.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "sa-escrow-project",
+      "market": "SA",
+      "topics": [
+        "escrow",
+        "payment"
+      ],
+      "title": "Each project has its own escrow account, used only for that project and protected from the developer's creditors",
+      "plain": "An independent escrow account is opened in the name of each project and is activated only after the project licence is issued and the title deed is annotated. The account may be used only to pay for that licensed project, and the developer's creditors cannot seize the money in it. Pay only into the escrow account of the project named in your contract.",
+      "source": "sa-offplan-1445",
+      "cite": "Articles 9 and 10(1)",
+      "quote": "ينشأ حساب ضمان مستقل باسم كل مشروع عقاري، ولا يُفعَّل إلا بعد الحصول على الترخيص الخاص للمشروع العقاري والتأشير على صك تسجيل الملكية للعقار المراد تطويره. [...] يكون حساب الضمان مخصصًا لأغراض الصرف على المشروع العقاري المرخص له فقط، ولا يجوز الحجز على المبالغ المودعة فيه لمصلحة دائني المطور.",
+      "translation": "An independent escrow account is established in the name of each real estate project, and it is activated only after the licence for the real estate project has been obtained and the title deed of the property to be developed has been annotated. [...] The escrow account is dedicated to spending on the licensed real estate project only, and the amounts deposited in it may not be seized for the benefit of the developer's creditors.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "sa-escrow-20pc",
+      "market": "SA",
+      "topics": [
+        "escrow",
+        "payment"
+      ],
+      "title": "No more than 20% of the price of sold units may leave escrow for marketing, admin and other non-construction costs",
+      "plain": "The developer may draw on the escrow account for administrative, marketing and other non-construction costs only up to 20% of the value of each unit sold, and the project's chartered accountant must check that the total for these costs never exceeds 20% of the value of all units sold. The rest pays for building.",
+      "source": "sa-offplan-1445",
+      "cite": "Article 12",
+      "quote": "يجوز للمطور طلب الصرف من حساب الضمان للمصاريف الإدارية والتسويقية -والمصاريف الأخرى غير الإنشائية للمشروع العقاري المرخص له- بنسبة لا تتجاوز (20%) من قيمة الوحدة العقارية المبيعة. وعلى المحاسب القانوني التأكد من ألا يتجاوز مجموع ما يصرف من حساب الضمان للمصاريف غير الإنشائية ما نسبته (20%) من إجمالي قيمة الوحدات العقارية المبيعة.",
+      "translation": "The developer may request payment from the escrow account for administrative and marketing expenses, and other non-construction expenses of the licensed real estate project, at a rate not exceeding (20%) of the value of the unit sold. The chartered accountant must ensure that the total paid from the escrow account for non-construction expenses does not exceed (20%) of the total value of the units sold.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "sa-delay-compensation",
+      "market": "SA",
+      "topics": [
+        "delay",
+        "completion"
+      ],
+      "title": "If handover is late for a reason within the developer's control, the buyer is owed compensation",
+      "plain": "The developer must finish the project by the date set for completion. If the land or unit is handed over late for a reason that was not beyond the developer's control, the buyer is entitled to compensation: an amount fixed in advance for serviced land, or the fair rent of a similar home for a residential unit.",
+      "source": "sa-offplan-1445",
+      "cite": "Article 20(1)",
+      "quote": "يلتزم المطور بإنهاء المشروع العقاري في الموعد المحدد لإنجازه. وفي حال التأخر عن تسليم الأرض أو الوحدة العقارية دون سبب خارج عن إرادته؛ فيستحق المشتري تعويضاً ماديًّا يحدد مسبقاً إن كانت أرضاً مطورة، أو أجرة مثلٍ إن كانت وحدة سكنية.",
+      "translation": "The developer is bound to finish the real estate project by the date set for its completion. If delivery of the land or the unit is delayed without a reason beyond the developer's control, the buyer is entitled to financial compensation fixed in advance if it is developed land, or the equivalent rent if it is a residential unit.",
       "checked": "2026-11-26"
     }
   ]
