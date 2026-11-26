@@ -17,10 +17,11 @@ const ORIGIN = 'https://kolaboro.com';
 const L7 = ['es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'], LANGS = ['en'].concat(L7);
 const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar-u-nu-latn' };   // Arabic with Latin digits, as the rest of the site
 export const N32T_V = 'n32t5';   // n32t5: numbers in the page locale on the server (n38 d5)
-export const PATHS = /^\/(?:es|de|fr|nl|ru|zh|ar)\/(?:tools\/[a-z-]{3,30}|new|vs|m|registers|countries\/[a-z0-9-]{2,60}\/(?:how-to-check|is-it-safe)|rankings\/most-delayed(?:\/[a-z0-9-]{2,60})?)\/?$/;
+export const PATHS = /^\/(?:es|de|fr|nl|ru|zh|ar)\/(?:tools\/[a-z-]{3,30}|new|vs|m|registers|countries\/[a-z0-9-]{2,60}\/(?:how-to-check|is-it-safe|buyer-protection-law)|rankings\/most-delayed(?:\/[a-z0-9-]{2,60})?)\/?$/;
 export const EN_RX = /^\/(?:tools\/[a-z-]{3,30}|new|vs|m|registers)\/$/;
 // n40 L1: the country guides and the delay rankings (kbx_seo.js) share one dictionary per language, /data/n32t/<lang>/guides.json, on top of the registers one
-const FAM = k => /^(?:countries\/[a-z0-9-]+\/(?:how-to-check|is-it-safe)|rankings\/most-delayed(?:\/[a-z0-9-]+)?)$/.test(k) ? 'guides' : null;
+// n40 L2: the buyer-protection-law pages: guides.json plus /data/n32t/<lang>/law.json (the rule texts), listed as 'law' in the manifest
+const FAM = k => /^countries\/[a-z0-9-]+\/buyer-protection-law$/.test(k) ? 'law' : /^(?:countries\/[a-z0-9-]+\/(?:how-to-check|is-it-safe)|rankings\/most-delayed(?:\/[a-z0-9-]+)?)$/.test(k) ? 'guides' : null;
 const pre = l => l === 'en' ? '' : '/' + l;
 const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
@@ -43,7 +44,7 @@ export async function localSet(env, lang) {
   try { const { mdata } = await import('./kbx_n29i.js'), D = await mdata(env); for (const c of D.C.keys()) S.add('/countries/' + c + '/'); for (const k of D.M.keys()) S.add('/m/' + k + '/'); } catch (e) {}
   return S;
 }
-const FIXED = /^\/(?:|countries\/[a-z0-9-]+\/(?:how-to-check|is-it-safe)\/|rankings\/most-delayed\/(?:[a-z0-9-]+\/)?|check\/?|pricing\/|how-we-score\/|about\/|checklist\/|database\/|cases\/|apply\/|tools\/|glossary\/|docs\/|projects\/(?:[a-z0-9-]{1,90}\/)?|developers\/(?:[a-z0-9-]{1,90}\/)?|countries\/|rankings\/(?:[a-z0-9-]{2,60}\/)?|guides\/buyers-from\/(?:[a-z]+\/)?|reports\/month\/|satellite\/monthly\/|watch\/new-websites\/|app\/)$/;
+const FIXED = /^\/(?:|countries\/[a-z0-9-]+\/(?:how-to-check|is-it-safe|buyer-protection-law)\/|rankings\/most-delayed\/(?:[a-z0-9-]+\/)?|check\/?|pricing\/|how-we-score\/|about\/|checklist\/|database\/|cases\/|apply\/|tools\/|glossary\/|docs\/|projects\/(?:[a-z0-9-]{1,90}\/)?|developers\/(?:[a-z0-9-]{1,90}\/)?|countries\/|rankings\/(?:[a-z0-9-]{2,60}\/)?|guides\/buyers-from\/(?:[a-z]+\/)?|reports\/month\/|satellite\/monthly\/|watch\/new-websites\/|app\/)$/;
 function locHref(h, lang, LS) {
   if (!/^\/(?!\/)/.test(h) || /^\/(?:es|de|fr|nl|ru|zh|ar)\//.test(h)) return h;
   const i = h.search(/[?#]/), p = i < 0 ? h : h.slice(0, i);
@@ -59,12 +60,12 @@ const encA = s => enc(s).replace(/"/g, '&quot;');
 const SEP = /^[\s/·|›>]+/;
 const DCACHE = new Map();
 async function dict(env, lang, key) {
-  const fm = FAM(key), f = fm || key.replace(/\//g, '-'), k = lang + ':' + f, c = DCACHE.get(k); if (c && Date.now() - c.t < 600000) return c.v;
-  const [a, b, r] = await Promise.all([asset(env, '/data/n32t/' + lang + '/_common.json', true), asset(env, '/data/n32t/' + lang + '/' + f + '.json', true), fm ? asset(env, '/data/n32t/' + lang + '/registers.json', true) : null]);
+  const fm = FAM(key), f = fm === 'law' ? 'guides' : fm || key.replace(/\//g, '-'), k = lang + ':' + (fm || f), c = DCACHE.get(k); if (c && Date.now() - c.t < 600000) return c.v;
+  const [a, b, r, x] = await Promise.all([asset(env, '/data/n32t/' + lang + '/_common.json', true), asset(env, '/data/n32t/' + lang + '/' + f + '.json', true), fm ? asset(env, '/data/n32t/' + lang + '/registers.json', true) : null, fm === 'law' ? asset(env, '/data/n32t/' + lang + '/law.json', true) : null]);
   let v = null;
-  if (b && b.s) {
-    const s = Object.assign({}, (a && a.s) || {}, (r && r.s) || {}, b.s), P = [], H = [];   // H: patterns that span inline markup ("tracks <b>{n}</b> projects"), applied to the HTML first
-    for (const [src, out] of ((a && a.p) || []).concat((r && r.p) || [], b.p || [])) { const names = [], html = src.includes('<'); const rx = new RegExp((html ? '' : '^') + src.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\\\{(\w+)\\\}/g, (m, n) => { names.push(n); return html ? '([^<>"]*?)' : '(.+?)'; }) + (html ? '' : '$'), html ? 'g' : ''); (html ? H : P).push([rx, out, names]); }
+  if (b && b.s && (fm !== 'law' || (x && x.s))) {
+    const s = Object.assign({}, (a && a.s) || {}, (r && r.s) || {}, b.s, (x && x.s) || {}), P = [], H = [];   // H: patterns that span inline markup ("tracks <b>{n}</b> projects"), applied to the HTML first
+    for (const [src, out] of ((x && x.p) || []).concat((a && a.p) || [], (r && r.p) || [], b.p || [])) { const names = [], html = src.includes('<'); const rx = new RegExp((html ? '' : '^') + src.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\\\{(\w+)\\\}/g, (m, n) => { names.push(n); return html ? '([^<>"]*?)' : '(.+?)'; }) + (html ? '' : '$'), html ? 'g' : ''); (html ? H : P).push([rx, out, names]); }
     v = { s, P, H, t: b.t, d: b.d, h: b.h || null, lang };
   }
   DCACHE.set(k, { t: Date.now(), v }); return v;

@@ -497,8 +497,8 @@ async function sitemaps(env, B, name) {
   const NP = namedUrls(B, 'index').concat(namedUrls(B, 'project')), ND = namedUrls(B, 'developer'), lg = i => (/^https:\/\/kolaboro\.com\/(es|de|fr|ru|nl|ar|zh)\//.exec(i.loc) || [0, 'en'])[1];
   for (const l of LANGS) { S['projects-' + l] = NP.filter(i => lg(i) === l); S['developers-' + l] = ND.filter(i => lg(i) === l); }
   S.images = await imageUrls(env, B, NP, ND, pages);
-  try { const GL = (((await file(env, '/data/n32t/manifest.json')) || {}).pages || {}).guides || [];   // n40 L1: the guides and delay rankings in 7 more languages (kbx_n32t.js), with hreflang
-    for (const h of hubs) { const p = h.loc.replace(SITE, ''); if (!GL.length || !/^\/(?:countries\/[^/]+\/(?:how-to-check|is-it-safe)|rankings\/most-delayed(?:\/[^/]+)?)\/$/.test(p)) continue; h.alt = [['en', h.loc]].concat(GL.map(l => [l, SITE + '/' + l + p]), [['x-default', h.loc]]); for (const l of GL) S['pages-' + l].push({ loc: SITE + '/' + l + p, lastmod: h.lastmod, alt: h.alt }); } } catch (e) {}
+  try { const MP = ((await file(env, '/data/n32t/manifest.json')) || {}).pages || {}, GL = MP.guides || [], LL = MP.law || [];   // n40 L1: the guides and delay rankings in 7 more languages (kbx_n32t.js), with hreflang
+    for (const h of hubs) { const p = h.loc.replace(SITE, ''), G = /^\/countries\/[^/]+\/buyer-protection-law\/$/.test(p) ? LL : GL; if (!G.length || !/^\/(?:countries\/[^/]+\/(?:how-to-check|is-it-safe|buyer-protection-law)|rankings\/most-delayed(?:\/[^/]+)?)\/$/.test(p)) continue; h.alt = [['en', h.loc]].concat(G.map(l => [l, SITE + '/' + l + p]), [['x-default', h.loc]]); for (const l of G) S['pages-' + l].push({ loc: SITE + '/' + l + p, lastmod: h.lastmod, alt: h.alt }); } } catch (e) {}
   for (const k of Object.keys(S)) if (k !== 'images') { const seen = new Set(); S[k] = S[k].filter(i => i && i.loc && !seen.has(i.loc) && seen.add(i.loc)); }   // n20f: one URL once per sitemap (/report/sample/ was listed twice)
   try {
     const pr = await file(env, '/data/seo-priority.json'), rk = new Map(), base = x => x.replace(SITE, '').replace(/^\/(es|de|fr|ru|nl|ar|zh)\//, '/');

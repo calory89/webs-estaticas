@@ -1,5 +1,5 @@
 {
- "v": "1moql0w-ckfj-g1",
+ "v": "1moql0w-ckfj-g1-l2",
  "built": "2026-11-20",
  "pages": {
   "m": [
@@ -228,6 +228,15 @@
    "ar"
   ],
   "guides": [
+   "es",
+   "de",
+   "fr",
+   "nl",
+   "ru",
+   "zh",
+   "ar"
+  ],
+  "law": [
    "es",
    "de",
    "fr",
