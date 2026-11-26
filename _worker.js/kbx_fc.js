@@ -16,6 +16,7 @@ import { FT } from './kbx_fc_i18n.js';
 import { LOCALE } from './kbx_named_i18n.js';
 import { placeName } from './kbx_hdate.js';   // n28a: market and country names in the page language
 import { rpc } from './kolaboro.js';
+import { TB } from './kbx_strings.js';
 
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
@@ -25,16 +26,7 @@ const COI = /^sumba$/i;
 const VERSION = 'fc-km-1';
 
 // n18e (batch 18) strings: live answer counts, partial weeks, paying-customer count (8 languages)
-const FT2 = {
-  en: { rs_few: 'No project of {dev} has {k} or more reported questions yet. We break a project out from {k}.', rs_live: 'Counted live, {d}', o_partial: '(to {d})', o_s_cust: 'Paying customers', c_cust: 'paid checks', c_cust_s: 'Payments recorded for a paid pre-purchase check, all time', c_cust_n: 'A count only, read live from our payment records. Revenue amounts are not published.', o_auto: 'Weeks after the weekly history are counted live from the public X-ray function.' },
-  es: { rs_few: 'Ningún proyecto de {dev} tiene aún {k} o más preguntas informadas. Mostramos un proyecto a partir de {k}.', rs_live: 'Contado en directo, {d}', o_partial: '(hasta {d})', o_s_cust: 'Clientes que pagan', c_cust: 'revisiones pagadas', c_cust_s: 'Pagos registrados por una revisión previa a la compra, desde el inicio', c_cust_n: 'Solo un recuento, leído en directo de nuestros registros de pago. No publicamos importes.', o_auto: 'Las semanas posteriores al histórico semanal se cuentan en directo con la función pública de radiografías.' },
-  fr: { rs_few: 'Aucun projet de {dev} n’a encore {k} questions signalées ou plus. Nous détaillons un projet à partir de {k}.', rs_live: 'Compté en direct, {d}', o_partial: '(jusqu’au {d})', o_s_cust: 'Clients payants', c_cust: 'vérifications payées', c_cust_s: 'Paiements enregistrés pour une vérification avant achat, depuis le début', c_cust_n: 'Un simple comptage, lu en direct dans nos enregistrements de paiement. Les montants ne sont pas publiés.', o_auto: 'Les semaines après l’historique hebdomadaire sont comptées en direct avec la fonction publique des radiographies.' },
-  de: { rs_few: 'Noch kein Projekt von {dev} hat {k} oder mehr gemeldete Fragen. Wir zeigen ein Projekt ab {k} einzeln.', rs_live: 'Live gezählt, {d}', o_partial: '(bis {d})', o_s_cust: 'Zahlende Kunden', c_cust: 'bezahlte Prüfungen', c_cust_s: 'Erfasste Zahlungen für eine Prüfung vor dem Kauf, seit Beginn', c_cust_n: 'Nur eine Anzahl, live aus unseren Zahlungsdaten gelesen. Beträge veröffentlichen wir nicht.', o_auto: 'Wochen nach dem Wochenverlauf werden live über die öffentliche Röntgen-Funktion gezählt.' },
-  nl: { rs_few: 'Nog geen project van {dev} heeft {k} of meer gemelde vragen. We tonen een project apart vanaf {k}.', rs_live: 'Live geteld, {d}', o_partial: '(tot {d})', o_s_cust: 'Betalende klanten', c_cust: 'betaalde checks', c_cust_s: 'Geregistreerde betalingen voor een check vóór aankoop, sinds het begin', c_cust_n: 'Alleen een aantal, live gelezen uit onze betaalgegevens. Bedragen publiceren we niet.', o_auto: 'Weken na de weekgeschiedenis worden live geteld met de openbare röntgenfunctie.' },
-  ru: { rs_few: 'Ни у одного проекта {dev} пока нет {k} или больше сообщённых вопросов. Проект показывается отдельно от {k}.', rs_live: 'Подсчитано в реальном времени, {d}', o_partial: '(до {d})', o_s_cust: 'Платящие клиенты', c_cust: 'оплаченных проверок', c_cust_s: 'Зарегистрированные платежи за проверку перед покупкой, за всё время', c_cust_n: 'Только количество, в реальном времени из наших записей о платежах. Суммы не публикуются.', o_auto: 'Недели после недельной истории считаются в реальном времени через публичную функцию рентген-отчётов.' },
-  zh: { rs_few: '{dev} 的项目目前都还没有 {k} 个或以上的已报告问题。项目达到 {k} 个后单独显示。', rs_live: '实时统计,{d}', o_partial: '(截至 {d})', o_s_cust: '付费客户', c_cust: '已付费核查', c_cust_s: '自开始以来记录的购房前核查付款笔数', c_cust_n: '仅为数量,实时读取自我们的付款记录。不公布金额。', o_auto: '每周历史之后的各周通过公开的透视报告函数实时统计。' },
-  ar: { rs_few: 'لا يوجد بعد مشروع لـ {dev} لديه {k} أسئلة مُبلغ عنها أو أكثر. نعرض المشروع منفصلًا ابتداءً من {k}.', rs_live: 'محسوب مباشرة، {d}', o_partial: '(حتى {d})', o_s_cust: 'العملاء الدافعون', c_cust: 'فحوص مدفوعة', c_cust_s: 'مدفوعات مسجلة لفحص ما قبل الشراء، منذ البداية', c_cust_n: 'عدد فقط، يُقرأ مباشرة من سجلات الدفع لدينا. لا ننشر المبالغ.', o_auto: 'الأسابيع التي تلي السجل الأسبوعي تُحسب مباشرة من دالة الأشعة العامة.' }
-};
+const FT2 = TB.kbx_fc_FT2 /* n40 k5: in /data/i18n/kbx_fc.json */;
 
 // ------------------------------------------------------------------------------------------------ helpers
 const esc = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));

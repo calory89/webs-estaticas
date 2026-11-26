@@ -13,7 +13,8 @@
 //    page already matched, cached at the edge for a week per LEI, plus the developer's other projects we track, drawn as a small graph.
 // Every sentence is a template in kbx_named_i18n.js (keys ppm_* and net_*), so the sections read in the page language (fin11).
 import { T, LOCALE } from './kbx_named_i18n.js';
-import { regSale, rsText } from './kbx_n31d_rs.js';   // n31d: DLD registered sale prices are not asking prices
+import { regSale, rsText } from './kbx_n31d_rs.js';
+import { TB } from './kbx_strings.js';   // n31d: DLD registered sale prices are not asking prices
 const ORIGIN = 'https://kolaboro.com';
 const tl = (lang, k, v) => { const s = (T[lang] && T[lang][k]) || T.en[k] || k; return v ? s.replace(/\{(\w+)\}/g, (m, x) => v[x] != null ? v[x] : m) : s; };
 let DLD = null, ES = null, PPM_T = 0;   // n40 r1d: official price references live in /data/ppm-official.json (were inline here)
@@ -196,32 +197,7 @@ export function famNet(fam, s) {
   return { m: { lei: o.lei, legal: o.legal, country: o.country, jur: o.jur || o.country, st: o.st, ls: o.reg, reg: o.since || '' },
     net: { ok: true, at, parent: o.parent, ultimate: o.ultimate, children: o.children || [], children_total: o.children_total || 0, exception: o.parent ? null : o.parent_x } };
 }
-const FT = {
-  en: { h: 'Developers we track in the same corporate family', none: 'None of the other developers we track is in this company\'s GLEIF family (weekly copy of {d}).',
-    parent: '{a} is the direct parent of {b}.', ultimate: '{a} is the ultimate parent of {b}.', same_parent: '{a} and {b} report the same direct parent: {p}.', same_ultimate: '{a} and {b} report the same ultimate parent: {p}.',
-    note: 'Parent and child here mean accounting consolidation as reported to GLEIF. It does not say who builds, sells or manages a project.', src: 'GLEIF level 2, CC0' },
-  es: { h: 'Promotores que seguimos en el mismo grupo empresarial', none: 'Ninguno de los otros promotores que seguimos está en el grupo GLEIF de esta empresa (copia semanal del {d}).',
-    parent: '{a} es la matriz directa de {b}.', ultimate: '{a} es la matriz última de {b}.', same_parent: '{a} y {b} declaran la misma matriz directa: {p}.', same_ultimate: '{a} y {b} declaran la misma matriz última: {p}.',
-    note: 'Matriz y filial significan aquí consolidación contable declarada a GLEIF. No indica quién construye, vende o gestiona un proyecto.', src: 'GLEIF nivel 2, CC0' },
-  de: { h: 'Bauträger in unserer Liste aus demselben Konzern', none: 'Keiner der anderen Bauträger, die wir verfolgen, gehört laut GLEIF zum Konzern dieses Unternehmens (Wochenkopie vom {d}).',
-    parent: '{a} ist die direkte Muttergesellschaft von {b}.', ultimate: '{a} ist die oberste Muttergesellschaft von {b}.', same_parent: '{a} und {b} melden dieselbe direkte Muttergesellschaft: {p}.', same_ultimate: '{a} und {b} melden dieselbe oberste Muttergesellschaft: {p}.',
-    note: 'Mutter und Tochter bedeuten hier bilanzielle Konsolidierung, wie an GLEIF gemeldet. Das sagt nicht, wer ein Projekt baut, verkauft oder verwaltet.', src: 'GLEIF Level 2, CC0' },
-  fr: { h: 'Promoteurs suivis dans le même groupe de sociétés', none: 'Aucun des autres promoteurs que nous suivons n\'appartient au groupe GLEIF de cette société (copie hebdomadaire du {d}).',
-    parent: '{a} est la société mère directe de {b}.', ultimate: '{a} est la société mère ultime de {b}.', same_parent: '{a} et {b} déclarent la même société mère directe : {p}.', same_ultimate: '{a} et {b} déclarent la même société mère ultime : {p}.',
-    note: 'Mère et filiale désignent ici la consolidation comptable déclarée à GLEIF. Cela ne dit pas qui construit, vend ou gère un projet.', src: 'GLEIF niveau 2, CC0' },
-  nl: { h: 'Ontwikkelaars die we volgen in hetzelfde concern', none: 'Geen van de andere ontwikkelaars die we volgen hoort volgens GLEIF bij het concern van dit bedrijf (wekelijkse kopie van {d}).',
-    parent: '{a} is de directe moedermaatschappij van {b}.', ultimate: '{a} is de uiteindelijke moedermaatschappij van {b}.', same_parent: '{a} en {b} melden dezelfde directe moedermaatschappij: {p}.', same_ultimate: '{a} en {b} melden dezelfde uiteindelijke moedermaatschappij: {p}.',
-    note: 'Moeder en dochter betekenen hier boekhoudkundige consolidatie zoals gemeld aan GLEIF. Het zegt niet wie een project bouwt, verkoopt of beheert.', src: 'GLEIF niveau 2, CC0' },
-  ru: { h: 'Застройщики из нашего списка в той же группе компаний', none: 'Ни один из других застройщиков, которых мы отслеживаем, не входит в группу этой компании по данным GLEIF (еженедельная копия от {d}).',
-    parent: '{a} является прямой материнской компанией {b}.', ultimate: '{a} является конечной материнской компанией {b}.', same_parent: '{a} и {b} указывают одну и ту же прямую материнскую компанию: {p}.', same_ultimate: '{a} и {b} указывают одну и ту же конечную материнскую компанию: {p}.',
-    note: 'Материнская и дочерняя компания здесь означают бухгалтерскую консолидацию по данным, переданным в GLEIF. Это не говорит о том, кто строит, продаёт или управляет проектом.', src: 'GLEIF, уровень 2, CC0' },
-  zh: { h: '我们追踪的同一企业集团内的开发商', none: '根据 GLEIF，我们追踪的其他开发商都不属于该公司的集团（{d} 的每周副本）。',
-    parent: '{a} 是 {b} 的直接母公司。', ultimate: '{a} 是 {b} 的最终母公司。', same_parent: '{a} 和 {b} 申报了同一家直接母公司：{p}。', same_ultimate: '{a} 和 {b} 申报了同一家最终母公司：{p}。',
-    note: '这里的母公司和子公司指向 GLEIF 申报的会计合并关系，并不说明由谁建造、销售或管理项目。', src: 'GLEIF 二级数据，CC0' },
-  ar: { h: 'مطورون نتابعهم ضمن المجموعة نفسها', none: 'لا ينتمي أي من المطورين الآخرين الذين نتابعهم إلى مجموعة هذه الشركة وفق GLEIF (نسخة أسبوعية بتاريخ {d}).',
-    parent: '{a} هي الشركة الأم المباشرة لـ {b}.', ultimate: '{a} هي الشركة الأم النهائية لـ {b}.', same_parent: '{a} و{b} تصرّحان بالشركة الأم المباشرة نفسها: {p}.', same_ultimate: '{a} و{b} تصرّحان بالشركة الأم النهائية نفسها: {p}.',
-    note: 'الشركة الأم والتابعة هنا تعني التوحيد المحاسبي كما صُرّح به لدى GLEIF، ولا تحدد من يبني المشروع أو يبيعه أو يديره.', src: 'GLEIF المستوى 2، رخصة CC0' },
-};
+const FT = TB.kbx_named_plus_FT /* n40 k5: in /data/i18n/kbx_named_plus.json */;
 // s: this developer's slug; pre: language prefix. Empty when the developer has no LEI in the file.
 export function familyHtml(fam, s, lang, pre) {
   const o = fam && fam.devs && fam.devs[s]; if (!o) return '';

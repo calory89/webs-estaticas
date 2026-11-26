@@ -224,38 +224,7 @@ export async function handle(req, u, env, ctx) {
 
 // ================================================================================================ (9) contract addendum builder
 // Official texts not in /tools/law/law.json, read in the official source on 8 Nov 2026. Short quotes only.
-const EXTRA = {
-  'es-loe-17': { law: 'Law 38/1999 on Building Regulation (Ley de Ordenación de la Edificación)', cite: 'Article 17(1)', url: 'https://www.boe.es/buscar/act.php?id=BOE-A-1999-21567#a17', lang: 'es',
-    quote: 'El constructor también responderá de los daños materiales por vicios o defectos de ejecución que afecten a elementos de terminación o acabado de las obras dentro del plazo de un año.',
-    tr: 'The builder is also liable for material damage from defects of execution affecting finishing elements of the works within one year (structural defects 10 years, habitability defects 3 years, from acceptance of the works).' },
-  'mx-73bis-v': { law: 'Federal Consumer Protection Law (Ley Federal de Protección al Consumidor), last reform DOF 12-12-2025', cite: 'Article 73 Bis, section V', url: 'https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf', lang: 'es',
-    quote: 'Para el caso de inmuebles nuevos o preventas, las autorizaciones, licencias o permisos expedidos por las autoridades correspondientes para la construcción', tr: 'For new properties or pre-sales [the seller must make available] the authorisations, licences or permits issued by the competent authorities for the construction.' },
-  'mx-73bis-xiii': { law: 'Federal Consumer Protection Law (Ley Federal de Protección al Consumidor), last reform DOF 12-12-2025', cite: 'Article 73 Bis, section XIII', url: 'https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf', lang: 'es',
-    quote: 'Se deberá indicar al consumidor sobre la existencia y constitución de garantía hipotecaria, fiduciaria o de cualquier otro tipo, así como su instrumentación.', tr: 'The consumer must be told whether a mortgage, trust or any other guarantee exists and how it is set up.' },
-  'mx-73ter-ix': { law: 'Federal Consumer Protection Law (Ley Federal de Protección al Consumidor), last reform DOF 12-12-2025', cite: 'Article 73 Ter, section IX', url: 'https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf', lang: 'es',
-    quote: 'Las penas convencionales que se apliquen tanto al proveedor como al consumidor por el incumplimiento de las obligaciones contraídas, las cuales deberán ser recíprocas y equivalentes', tr: 'The contractual penalties for breach that apply to both the seller and the consumer, which must be reciprocal and equivalent.' },
-  'mx-73ter-xi': { law: 'Federal Consumer Protection Law (Ley Federal de Protección al Consumidor), last reform DOF 12-12-2025', cite: 'Article 73 Ter, section XI', url: 'https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf', lang: 'es',
-    quote: 'El procedimiento para la cancelación del contrato de adhesión y las implicaciones que se deriven para el proveedor y el consumidor', tr: 'The procedure to cancel the standard contract and what follows from it for the seller and the consumer.' },
-  'mx-73ter-xii': { law: 'Federal Consumer Protection Law (Ley Federal de Protección al Consumidor), last reform DOF 12-12-2025', cite: 'Article 73 Ter, section XII', url: 'https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf', lang: 'es',
-    quote: 'Fecha de inicio y término de ejecución de la actividad o servicio contratado, así como la de entrega del bien objeto del contrato', tr: 'Start and end dates of the work contracted, and the date the property is handed over.' },
-  'uk-cra-62': { law: 'Consumer Rights Act 2015', cite: 'Section 62(1) and (4)', url: 'https://www.legislation.gov.uk/ukpga/2015/15/section/62', lang: 'en',
-    quote: 'An unfair term of a consumer contract is not binding on the consumer. ... A term is unfair if, contrary to the requirement of good faith, it causes a significant imbalance in the parties\' rights and obligations under the contract to the detriment of the consumer.' },
-  'uk-dpa-1': { law: 'Defective Premises Act 1972 (England and Wales)', cite: 'Section 1(1)', url: 'https://www.legislation.gov.uk/ukpga/1972/35/section/1', lang: 'en',
-    quote: 'to see that the work which he takes on is done in a workmanlike or, as the case may be, professional manner, with proper materials and so that as regards that work the dwelling will be fit for habitation when completed.' },
-  'fl-501-1375': { law: 'Florida Statutes, section 501.1375 (one- and two-family homes)', cite: 's. 501.1375(2)', url: 'https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0500-0599/0501/Sections/0501.1375.html', lang: 'en',
-    quote: 'any deposit (up to 10 percent of the purchase price) made by the buyer to the building contractor or developer shall, unless waived in writing by the buyer, be deposited in an escrow account' },
-  'fl-718-202-1': { law: 'Florida Statutes, section 718.202 (condominiums)', cite: 's. 718.202(1) and (1)(a)', url: 'https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0718/Sections/0718.202.html', lang: 'en',
-    quote: 'the developer shall pay into an escrow account all payments up to 10 percent of the sale price received by the developer from the buyer towards the sale price. ... If a buyer properly terminates the contract pursuant to its terms or pursuant to this chapter, the funds shall be paid to the buyer together with any interest earned.' },
-  'fl-718-202-2': { law: 'Florida Statutes, section 718.202 (condominiums)', cite: 's. 718.202(2) and (3)', url: 'https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0718/Sections/0718.202.html', lang: 'en',
-    quote: 'shall be held in a special escrow account ... and may not be used by the developer prior to closing the transaction, except as provided in subsection (3) or except for refund to the buyer.',
-    note: 'Subsection (3) lets the developer use amounts above 10 percent for construction if the contract so provides. The clause asks the developer to give up that option.' },
-  'ny-352h': { law: 'New York General Business Law, section 352-h', cite: 'GBL s. 352-h', url: 'https://www.nysenate.gov/legislation/laws/GBS/352-H', lang: 'en',
-    quote: 'all moneys received in connection therewith, including deposits or advances therefor, shall continue to be the money of the person making such purchase, deposit or advance, and shall be held in trust',
-    note: 'Applies to offerings under section 352-e, which covers real estate offerings including cooperative interests; new condominium and co-op offering plans in New York are filed under it.' },
-  'ny-777a': { law: 'New York General Business Law, section 777-a (housing merchant implied warranty)', cite: 'GBL s. 777-a(1)', url: 'https://www.nysenate.gov/legislation/laws/GBS/777-A', lang: 'en',
-    quote: 'one year from and after the warranty date the home will be free from defects due to a failure to have been constructed in a skillful manner',
-    note: 'A "new home" under section 777(5) is a single-family house or a for-sale unit in a condominium or co-op building of five stories or less.' }
-};
+const EXTRA = TB.kbx_paper_EXTRA /* n40 k5: in /data/i18n/kbx_paper.json */;
 // which law notes each clause relies on, per country (ids from law.json or EXTRA); [] = no statutory rule in our notes
 const BASIS = {
   ES: { escrow: ['es-deposit-guarantee'], delay: ['es-deposit-guarantee'], refund: ['es-deposit-guarantee'], complete: [], permits: ['es-deposit-guarantee'], snag: ['es-loe-17'], reg: [] },

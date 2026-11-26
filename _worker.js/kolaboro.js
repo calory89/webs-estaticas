@@ -1,6 +1,7 @@
 // kolaboro.com API (loaded by _worker.js/index.js for host kolaboro.com, paths /api/kb/*).
 // POST /api/kb/analyze {url, email} -> desk review of a project's own website (advertised claims + questions to verify).
-import { placesForMarket } from './kbx_tr_places.js';   // batch 23 (n23): market pages link to the transparency rankings of their islands and cities
+import { placesForMarket } from './kbx_tr_places.js';
+import { TB } from './kbx_strings.js';   // batch 23 (n23): market pages link to the transparency rankings of their islands and cities
 
 const MODELS = ['claude-haiku-5-5', 'claude-sonnet-5-5'];
 const MAX_TEXT = 14000;
@@ -148,22 +149,7 @@ const deskLang = v => { const l = String(v || '').toLowerCase().slice(0, 2); ret
 const deskLangRule = l => l === 'en' ? '' : '\n\nLanguage of the report: the buyer reads it in ' + DESK_LANGS[l] + '. Write "site_about", "property_type", "location", "price_from", "lease_years", "completion", "advertised_return", "permit_claim", "payment_plan", every "claim" in "promises", every item of "questions" and "missing", and "summary" in ' + DESK_LANGS[l] + '. Write numbers with the digits 0-9.' +
   ' Do NOT translate any quote: every "quote", every value in "quotes", every "summary_quotes" item and "ai_instructions_quote" stay copied character for character from the page, in the language the page is written in. Keep names of projects, developers and companies as the page writes them. Keep the JSON keys and the fixed values of "page_kind", "title_type" and "attention" exactly as listed above, in English.';
 // the two sentences deskReview adds itself, in the report language; field labels for the second-reader disagreement note
-const DESK_T = {
-  es: { dis: 'Nuestros dos lectores de IA no coincidieron en: {x}. Compruébelo usted mismo en la página.', why: '¿Por qué la web contiene texto dirigido a revisores automáticos{h}?', hid: ', oculto a los visitantes',
-    L: { page_kind: 'tipo de página', title_type: 'tipo de título', lease_years: 'duración del arrendamiento', extension_promised: 'prórroga del arrendamiento prometida', guaranteed_language: 'rentabilidad "garantizada"', advertised_return: 'rentabilidad anunciada', permit_claim: 'licencia declarada', completion: 'fecha de entrega' } },
-  de: { dis: 'Unsere zwei KI-Leser waren sich nicht einig bei: {x}. Prüfen Sie diese Punkte selbst auf der Seite.', why: 'Warum enthält die Website Text, der sich an automatische Prüfer richtet{h}?', hid: ' und vor Besuchern verborgen ist',
-    L: { page_kind: 'Art der Seite', title_type: 'Art des Eigentumstitels', lease_years: 'Pachtdauer', extension_promised: 'versprochene Pachtverlängerung', guaranteed_language: 'Wortlaut "garantierte" Rendite', advertised_return: 'beworbene Rendite', permit_claim: 'angegebene Genehmigung', completion: 'Fertigstellungstermin' } },
-  fr: { dis: 'Nos deux lecteurs IA ne sont pas d’accord sur : {x}. Vérifiez ces points vous-même sur la page.', why: 'Pourquoi le site contient-il un texte adressé aux relecteurs automatiques{h} ?', hid: ', caché aux visiteurs',
-    L: { page_kind: 'type de page', title_type: 'type de titre', lease_years: 'durée du bail', extension_promised: 'prolongation du bail promise', guaranteed_language: 'rendement dit "garanti"', advertised_return: 'rendement annoncé', permit_claim: 'permis déclaré', completion: 'date de livraison' } },
-  nl: { dis: 'Onze twee AI-lezers waren het niet eens over: {x}. Controleer dit zelf op de pagina.', why: 'Waarom staat er op de website tekst die gericht is aan geautomatiseerde beoordelaars{h}?', hid: ', verborgen voor bezoekers',
-    L: { page_kind: 'soort pagina', title_type: 'soort eigendomstitel', lease_years: 'looptijd van de pacht', extension_promised: 'beloofde verlenging van de pacht', guaranteed_language: 'woorden "gegarandeerd" rendement', advertised_return: 'geadverteerd rendement', permit_claim: 'genoemde vergunning', completion: 'opleverdatum' } },
-  ru: { dis: 'Два наших ИИ-читателя разошлись в оценке: {x}. Проверьте это на странице сами.', why: 'Почему на сайте есть текст, обращённый к автоматическим проверяющим{h}?', hid: ' и скрытый от посетителей',
-    L: { page_kind: 'тип страницы', title_type: 'тип права собственности', lease_years: 'срок аренды', extension_promised: 'обещанное продление аренды', guaranteed_language: 'формулировка о «гарантированном» доходе', advertised_return: 'заявленная доходность', permit_claim: 'заявленное разрешение', completion: 'срок сдачи' } },
-  zh: { dis: '我们的两个 AI 阅读器在以下方面意见不一致：{x}。请自行在页面上核实。', why: '为什么该网站含有针对自动审查程序{h}的文字？', hid: '且对访客隐藏',
-    L: { page_kind: '页面类型', title_type: '产权类型', lease_years: '租期', extension_promised: '承诺续租', guaranteed_language: '“保证”回报的措辞', advertised_return: '宣传的回报率', permit_claim: '声称的许可证', completion: '交付日期' } },
-  ar: { dis: 'اختلف قارئا الذكاء الاصطناعي لدينا حول: {x}. تحقق من ذلك بنفسك على الصفحة.', why: 'لماذا يحتوي الموقع على نص موجّه إلى المراجعين الآليين{h}؟', hid: '، مخفي عن الزوار',
-    L: { page_kind: 'نوع الصفحة', title_type: 'نوع سند الملكية', lease_years: 'مدة الإيجار', extension_promised: 'تمديد الإيجار الموعود', guaranteed_language: 'عبارة العائد "المضمون"', advertised_return: 'العائد المعلن', permit_claim: 'الترخيص المذكور', completion: 'تاريخ التسليم' } }
-};
+const DESK_T = TB.kolaboro_DESK_T /* n40 k5: in /data/i18n/kolaboro.json */;
 const _psha = {}; const promptSha = l => _psha[l || 'en'] || (_psha[l || 'en'] = sha(DESK_SYSTEM + '\n' + PROMPT + deskLangRule(l || 'en')));
 // one desk review of already-fetched HTML: used by the public endpoint and by the daily evaluation
 // two models read the same page; the fields a buyer acts on must agree, otherwise the disagreement is shown
@@ -1361,39 +1347,7 @@ function marketStats(cases) {
   }).sort((x, y) => (y.transparency_index ?? -1) - (x.transparency_index ?? -1) || y.projects - x.projects);
 }
 const csvCell = v => { v = v === null || v === undefined ? '' : typeof v === 'object' ? JSON.stringify(v) : String(v); if (/^[=+\-@\t\r]/.test(v) && !/^-?\d+(\.\d+)?$/.test(v)) v = "'" + v; return /[",\n\r]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; };   // sec13: no spreadsheet formulas from text cells
-const OPEN_DOC = {
-  name: 'Kolaboro open data API', version: '1.0', license: 'CC BY 4.0 (credit: Kolaboro, kolaboro.com)', auth: 'none', rate: 'cached 10 minutes at the edge',
-  note: 'Records use project ids; each project has its own page with its name and sourced facts at /projects/{slug}/, except projects in Sumba (conflict of interest). Scores describe what is public, not whether it is genuine.',
-  endpoints: {
-    'GET /api/open/stats': 'database totals (projects, markets, countries, claims tested, verification levels)',
-    'GET /api/open/summary': 'small summary used by the site: totals, latest seal and shipping log',
-    'GET /api/open/projects': 'projects; filters: market, country, stage (off-plan|under construction|completed), min_public (0-6), min_confirmed (0-6), all_six (1), flags (1|0), limit (max 1000), offset',
-    'GET /api/open/projects.csv': 'same filters, CSV',
-    'GET /api/open/projects/{id}': 'one project, e.g. /api/open/projects/BALI-014',
-    'GET /api/open/projects/{id}/at/{YYYY-MM-DD}': 'time travel: the project as published that day, from a daily snapshot checked against the public log',
-    'GET /api/open/checkpoint': 'signed checkpoint of the public log (C2SP signed note): tree size and Merkle root of all daily heads',
-    'GET /api/open/log-proof?day=YYYY-MM-DD': 'inclusion proof of one daily head in the checkpoint tree',
-    'GET /api/open/log-consistency?first=M&second=N': 'RFC 9162 consistency proof: the tree of size N extends the tree of size M unchanged',
-    'GET /api/open/evals': 'daily evaluation of the AI desk review on fixed fictional pages, case by case',
-    'GET /api/open/uptime': 'uptime probes every 5 minutes from outside Cloudflare',
-    'GET /api/open/build': 'which code commit is serving this API',
-    'GET /api/open/pdf/{sha256}': 'is this case-file PDF exactly as Kolaboro created it? (registered SHA-256)',
-    'GET /api/open/freshness': 'data freshness objective: share of projects re-read from their source in the last 7 days, per market',
-    'GET /api/open/ai-spend': 'estimated daily spend of the website AI features and the daily cap that stops them',
-    'GET /api/open/security': 'latest weekly security scan summary and decoy credentials touched',
-    'GET /api/open/proof/{id}': 'Merkle inclusion proof that a project page fingerprint is in the daily root recorded in the public log (kolaboro.com/log)',
-    'GET /api/open/changes?since=YYYY-MM-DD': 'every recorded change to a project field since a date, newest first',
-    'GET /api/open/log': 'the public append-only log: one hash-chained head per day, each timestamped in Bitcoin',
-    'GET /api/open/log-input': 'what goes into today\'s log head: dataset SHA-256 and the Merkle root of page fingerprints',
-    'GET /api/open/receipt/{evidence_id}': 'signed receipt for one piece of site evidence: its SHA-256, position in the case hash chain and times',
-    'Signatures': 'every answer is signed: x-kolaboro-signature = base64 Ed25519 over \'kolaboro-sig-v1\\n\' + SHA-256 hex of the body; key id in x-kolaboro-key-id; public keys at /.well-known/kolaboro-keys.json',
-    'Headers': 'every answer carries x-kolaboro-dataset-sha256 (fingerprint of the dataset file it came from) and an ETag; send If-None-Match to get 304 when nothing changed',
-    'GET /api/open/markets': 'per-market statistics and the transparency index (0-100)',
-    'GET /api/open/markets.csv': 'same, CSV',
-    'GET /api/open/openapi.json': 'OpenAPI 3.1 description',
-    'GET /feed.json, /feed.xml': 'shipping log and new data, JSON Feed and RSS', 'GET /feed.xml?market=Bali': 'changes and alerts for one market or country', 'GET /feed/alerts.xml': 'overdue, stalled and unapproved projects across all markets', 'GET /api/open/badge/{id}.svg': 'live badge for a project, for portals and listings'
-  }
-};
+const OPEN_DOC = TB.kolaboro_OPEN_DOC /* n40 k5: in /data/i18n/kolaboro.json */;
 function openapiSpec() {
   const p = (summary, params) => ({ get: { summary, parameters: (params || []).map(n => ({ name: n, in: 'query', required: false, schema: { type: 'string' } })), responses: { 200: { description: 'OK' } } } });
   const f = ['market', 'country', 'stage', 'min_public', 'min_confirmed', 'all_six', 'flags', 'limit', 'offset'];

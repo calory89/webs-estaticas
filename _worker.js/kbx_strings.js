@@ -24,6 +24,7 @@ import { NT } from './kbx_buy_notes.js';
 import { CS } from './kbx_cohort_i18n.js';
 import { C as n31dC, S as n31dS } from './kbx_n31d_i18n.js';
 import { E } from './kbx_e27_i18n.js';
+import { C as kbx_n30a_i18n_C } from './kbx_n30a_i18n.js';
 
 // module-level tables of code modules (n32w step 2): each module reads TB.<module>_<name>, filled here
 export const TB = { kbx_stage_S: {}, kbx_n29i_T: {}, kbx_n29i_BT: {}, kbx_plot_T: {}, kbx_land_S: {}, kbx_pp_S: {}, kbx_around_S: {},
@@ -40,6 +41,31 @@ export const FILES = {
   kbx_n33a: { S: TB.kbx_n33a_S },   // n33a (batch 33): /delays/, report byline, hub feed titles
   kbx_n33c: { S: TB.kbx_n33c_S },   // n33c (20 Nov 2026): search titles and descriptions from the page data
 };
+// n40 k5 (26 Nov 2026): more tables of code modules moved to /data/i18n/<module>.json (worker size limit)
+TB.kbx_j_map_MAP = {}; (FILES.kbx_j_map || (FILES.kbx_j_map = {}))["MAP"] = TB.kbx_j_map_MAP;
+TB.kbx_u27_S = {}; (FILES.kbx_u27 || (FILES.kbx_u27 = {}))["S"] = TB.kbx_u27_S;
+TB.kbx_named_qa_S = {}; (FILES.kbx_named_qa || (FILES.kbx_named_qa = {}))["S"] = TB.kbx_named_qa_S;
+TB.kbx_g27_TOP_EMB = []; (FILES.kbx_g27 || (FILES.kbx_g27 = {}))["TOP_EMB"] = TB.kbx_g27_TOP_EMB;
+TB.kbx_u26_S = {}; (FILES.kbx_u26 || (FILES.kbx_u26 = {}))["S"] = TB.kbx_u26_S;
+TB.kbx_named_diff_TT = {}; (FILES.kbx_named_diff || (FILES.kbx_named_diff = {}))["TT"] = TB.kbx_named_diff_TT;
+TB.kbx_gaz_S = {}; (FILES.kbx_gaz || (FILES.kbx_gaz = {}))["S"] = TB.kbx_gaz_S;
+TB.kbx_p29_S = {}; (FILES.kbx_p29 || (FILES.kbx_p29 = {}))["S"] = TB.kbx_p29_S;
+TB.kbx_net_LT = {}; (FILES.kbx_net || (FILES.kbx_net = {}))["LT"] = TB.kbx_net_LT;
+(FILES.kbx_n30a_i18n || (FILES.kbx_n30a_i18n = {}))["C"] = kbx_n30a_i18n_C;
+TB.kbx_numbers_T = {}; (FILES.kbx_numbers || (FILES.kbx_numbers = {}))["T"] = TB.kbx_numbers_T;
+TB.kbx_cal_T = {}; (FILES.kbx_cal || (FILES.kbx_cal = {}))["T"] = TB.kbx_cal_T;
+TB.kbx_n27a_D = {}; (FILES.kbx_n27a || (FILES.kbx_n27a = {}))["D"] = TB.kbx_n27a_D;
+TB.kbx_filings_S = {}; (FILES.kbx_filings || (FILES.kbx_filings = {}))["S"] = TB.kbx_filings_S;
+TB.kbx_paper_EXTRA = {}; (FILES.kbx_paper || (FILES.kbx_paper = {}))["EXTRA"] = TB.kbx_paper_EXTRA;
+TB.kbx_xray_XP = {}; (FILES.kbx_xray || (FILES.kbx_xray = {}))["XP"] = TB.kbx_xray_XP;
+TB.kbx_n27lead_T = {}; (FILES.kbx_n27lead || (FILES.kbx_n27lead = {}))["T"] = TB.kbx_n27lead_T;
+TB.kbx_named_plus_FT = {}; (FILES.kbx_named_plus || (FILES.kbx_named_plus = {}))["FT"] = TB.kbx_named_plus_FT;
+TB.kbx_fc_FT2 = {}; (FILES.kbx_fc || (FILES.kbx_fc = {}))["FT2"] = TB.kbx_fc_FT2;
+TB.kbx_n31b_cap_CAP = {}; (FILES.kbx_n31b_cap || (FILES.kbx_n31b_cap = {}))["CAP"] = TB.kbx_n31b_cap_CAP;
+TB.kolaboro_OPEN_DOC = {}; (FILES.kolaboro || (FILES.kolaboro = {}))["OPEN_DOC"] = TB.kolaboro_OPEN_DOC;
+TB.kolaboro_DESK_T = {}; (FILES.kolaboro || (FILES.kolaboro = {}))["DESK_T"] = TB.kolaboro_DESK_T;
+TB.index_K = {}; FILES.index = { K: TB.index_K };   // /__k/kcheck.js and /__k/ktraffic.js (index.js kScript)
+// n40 k5 end
 const done = new Set();
 let pend = null;
 export const stat = { loaded: 0, files: Object.keys(FILES).length, ms: 0, errors: 0, at: null };
