@@ -12181,7 +12181,7 @@
   },
   "shipping": {
    "title": "Shipping log",
-   "description": "Contract of https://kolaboro.com/data/shipping.json. Ships (commits by people, or by Claude working for one) and data updates per UTC day from the git history of the live branch, streaks, engineering metrics and day summaries written by an AI model and checked in code.",
+   "description": "Contract of https://kolaboro.com/data/shipping.json. Ships (commits) and data updates per UTC day from the git history of the live branch, streaks, engineering metrics and day summaries checked in code.",
    "type": "object",
    "properties": {
     "about": {

@@ -359,10 +359,11 @@ def day_page(template, day, prev_page, next_page):
     for ln in sm['lines']:
         ids = ', '.join('<code>%s</code>' % esc(x) for x in ln['commits'])
         li.append('<li>%s <span class="muted" style="font-size:.82rem">(from commit %s)</span></li>' % (esc(ln['text']), ids))
-    meth = ('Written by Claude (%s) from the day\'s commit subjects, then checked by code: every line maps to at least one commit of the day, '
-            'and contains no number that is not in those commits.' % esc(sm.get('model') or MODEL)) if sm['method'] == 'ai-checked' else \
+    # n40 k1 (26 Nov 2026): public copy never names a tool or AI; the method stays in summary.method
+    meth = ('Summary of the day\'s commits, checked by code: every line maps to at least one commit of the day, '
+            'and contains no number that is not in those commits.') if sm['method'] == 'ai-checked' else \
            ('Taken directly from the day\'s commit subjects (the most descriptive ones), shortened where needed.%s' % (
-               ' An AI summary was tried and rejected by the code check: %s.' % esc(sm.get('fallback_reason')) if sm.get('fallback_reason') else ''))
+               ' A summary draft was tried and rejected by the code check: %s.' % esc(sm.get('fallback_reason')) if sm.get('fallback_reason') else ''))
     commits = ''.join('<li><code>%s</code> <span class="muted">%s UTC</span> %s</li>' % (esc(c['id']), esc(c['time']), esc(c['s'])) for c in day['commits'])
     du = day.get('data_updates', 0)
     nav = []
@@ -396,7 +397,7 @@ def feeds(days):
     upd = iso(now_utc())
     def link(d): return ORIGIN + (d['page'] or '/shipping/#d-%s' % d['date'])
     def text(d):
-        m = {'ai-checked': 'Summary written by AI from the day\'s commits and checked by code.', 'deterministic': 'Summary taken from the day\'s commit subjects.',
+        m = {'ai-checked': 'Summary of the day\'s commits, checked by code.', 'deterministic': 'Summary taken from the day\'s commit subjects.',
              'so-far': 'Day in progress: summary taken from the commit subjects so far.'}[d['summary']['method']]
         return '\n'.join('- ' + l['text'] for l in d['summary']['lines']) + '\n\n' + m
     def htm(d):
@@ -488,7 +489,7 @@ def main():
         complete = pdate(d) < today
         p = prev_days.get(d)
         if p and p.get('digest') == digest and p.get('summary', {}).get('method') in ('ai-checked',) and complete:
-            x['summary'] = p['summary']; continue
+            x['summary'] = p['summary']; x['summary'].pop('model', None); continue
         if p and p.get('digest') == digest and p.get('summary', {}).get('method') == 'deterministic' and p['summary'].get('fallback_reason') and p['summary'].get('v') == CHECK_V and complete:
             x['summary'] = p['summary']; continue      # AI already tried and rejected for exactly these commits: do not pay again
         if not complete:
@@ -500,7 +501,7 @@ def main():
                 except (ValueError, json.JSONDecodeError): lines, model = ai_summary(d, x['commits'], key)   # one retry on an unreadable answer
                 ok, reasons, checked = check_ai(lines, x['commits'], privacy)
                 if ok:
-                    x['summary'] = {'lines': checked, 'method': 'ai-checked', 'model': model, 'checks': reasons, 'written_at': iso(now_utc())}
+                    x['summary'] = {'lines': checked, 'method': 'ai-checked', 'checks': reasons, 'written_at': iso(now_utc())}
                 else:
                     x['summary'] = deterministic(x['commits']); x['summary']['fallback_reason'] = '; '.join(reasons)[:300]; x['summary']['v'] = CHECK_V
                     x['summary']['rejected_ai'] = lines if isinstance(lines, list) else None
@@ -508,7 +509,7 @@ def main():
             except Exception as e:
                 print('%s: AI not used (%s)' % (d, str(e)[:160]))
                 x['summary'] = deterministic(x['commits'])
-                if isinstance(e, (ValueError, json.JSONDecodeError)): x['summary'].update(fallback_reason='the AI answer could not be read twice', v=CHECK_V)
+                if isinstance(e, (ValueError, json.JSONDecodeError)): x['summary'].update(fallback_reason='the draft could not be read twice', v=CHECK_V)
         else:
             x['summary'] = deterministic(x['commits'])
 
@@ -618,7 +619,7 @@ def main():
                   'last_run': {'at': iso(now_utc()), 'calls': AI['calls'], 'input_tokens': AI['in'], 'output_tokens': AI['out'], 'usd_estimate': round(AI['in'] * PRICE_IN + AI['out'] * PRICE_OUT, 4)}}
     by_day[day_key] = round(float(by_day.get(day_key) or 0) + AI['in'] * PRICE_IN + AI['out'] * PRICE_OUT, 4)
     ai_log['by_day'] = {k: by_day[k] for k in sorted(by_day)[-14:]}
-    ai_log['model'] = MODEL; ai_log['price_used'] = 'USD 3 per million input tokens, 15 per million output tokens (estimate)'
+    ai_log.pop('model', None); ai_log['price_used'] = 'USD 3 per million input tokens, 15 per million output tokens (estimate)'
     total_ships = sum(x['ships'] for x in days.values())
     data = {
         'about': 'Kolaboro shipping log. Every UTC day since the first commit of kolaboro.com, from the git history of the live branch (pub/_lovable), '
@@ -632,10 +633,10 @@ def main():
                    'ships_today': ships_by.get(today.isoformat(), 0), 'ships_last_7_days': sum(ships_by[d] for d in cal[-7:])},
         'streak': {'current': cur, 'current_from': cur_from, 'counts_today': counts_today, 'longest': longest[0], 'longest_from': longest[1], 'longest_to': longest[2],
                    'rule': 'Consecutive UTC days with at least one ship. A day with no ship yet today does not end the current streak until the day is over.'},
-        'definitions': {'ship': 'A commit by a person (or Claude working for one) that changes files under _s/kolaboro.com/ or _worker.js/kolaboro.js / kbx*.js on the live branch.',
+        'definitions': {'ship': 'A commit by a person (or by software working for one) that changes files under _s/kolaboro.com/ or _worker.js/kolaboro.js / kbx*.js on the live branch.',
                         'data_update': 'A commit by one of our scheduled workflows (author address @kolaboro.com), for example research data or deploy-guard records.',
                         'rollback': 'A commit by the deploy guard restoring files after failed smoke checks.',
-                        'summary_methods': {'ai-checked': 'written by Claude from the filtered subjects, every line mapped to commits and number-checked in code',
+                        'summary_methods': {'ai-checked': 'summary of the filtered subjects, every line mapped to commits and number-checked in code',
                                             'deterministic': 'the most descriptive commit subjects of the day', 'so-far': 'day in progress, commit subjects so far'}},
         'privacy_filter': 'URLs, email addresses, @handles, domains other than kolaboro.com, names and developers of tracked projects and people\'s names are replaced by [link], [email], [site] or [name].',
         'metrics': metrics, 'roadmap': {'linked': rm.get('linked', 0), 'verified_live': rm.get('verified_live', 0), 'file': '/data/roadmap-sync.json'},
