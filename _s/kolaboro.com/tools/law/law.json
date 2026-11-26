@@ -27,7 +27,8 @@
     "GB": "United Kingdom",
     "TR": "Turkey",
     "CR": "Costa Rica",
-    "CY": "Cyprus"
+    "CY": "Cyprus",
+    "IN": "India"
   },
   "sources": {
     "id-pp18-2021": {
@@ -191,6 +192,14 @@
       "language": "el",
       "read": "2026-11-26",
       "note": "Quoted from amending Law 132(I)/2023, in force since 12 December 2023 according to the Department of Lands and Surveys; section numbers are those of the base law 81(I)/2011."
+    },
+    "in-rera-2016": {
+      "law": "Real Estate (Regulation and Development) Act, 2016 (Act No. 16 of 2016)",
+      "publisher": "India Code (indiacode.nic.in), Legislative Department, Ministry of Law and Justice, Government of India",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/19012/1/reraact.pdf",
+      "language": "en",
+      "read": "2026-11-26",
+      "note": "Central Act. Each state notifies its own rules (interest rate, forms) and runs its own Real Estate Regulatory Authority."
     }
   },
   "rules": [
@@ -1000,6 +1009,62 @@
       "cite": "Section 5(8) and (9)",
       "quote": "(8) Ανεξάρτητα από τις διατάξεις του περί Μεταβιβάσεως και Υποθηκεύσεως Ακινήτων Νόμου, σε περίπτωση μεταβίβασης ακίνητης ιδιοκτησίας η οποία αποτελεί το αντικείμενο σύμβασης η οποία κατατέθηκε στο αρμόδιο Επαρχιακό Κτηματολογικό Γραφείο μετά από την ημερομηνία έναρξης της ισχύος του περί Πώλησης Ακινήτων (Ειδική Εκτέλεση) (Τροποποιητικού) Νόμου του 2023 και συνοδεύεται από τον Τύπο Α του Παραρτήματος, και νοουμένου ότι έχει εκδοθεί ο Τύπος Β του Παραρτήματος, η δήλωση μεταβίβασης γίνεται αποδεκτή σε οποιοδήποτε αρμόδιο Επαρχιακό Κτηματολογικό Γραφείο και η ακίνητη ιδιοκτησία μεταβιβάζεται ανεξάρτητα από οποιαδήποτε εμπράγματα βάρη ή απαγορεύσεις τα οποία τυχόν βαρύνουν την ακίνητη ιδιοκτησία ή τον ιδιοκτήτη της και τα οποία ακολουθούν κατά προτεραιότητα τη σύμβαση [...] (9) Σε περίπτωση κατά την οποία ο ενυπόθηκος δανειστής παραλείψει να ενεργήσει σύμφωνα με τις διατάξεις του παρόντος άρθρου, και νοουμένου ότι ο αγοραστής έχει προσκομίσει τη βεβαίωση πληρωμής, κατά τον Τύπο Β του Παραρτήματος, δεόντως υπογραμμένη και σφραγισμένη από τον ενυπόθηκο δανειστή, ο Διευθυντής μεταβιβάζει επ’ ονόματι του αγοραστή την ακίνητη ιδιοκτησία, ανεξάρτητα από οποιαδήποτε εμπράγματα βάρη ή απαγορεύσεις τα οποία τυχόν βαρύνουν την ακίνητη ιδιοκτησία ή τον ιδιοκτήτη της και τα οποία ακολουθούν κατά προτεραιότητα τη σύμβαση.",
       "translation": "(8) Notwithstanding the provisions of the Immovable Property (Transfer and Mortgage) Law, in a transfer of immovable property that is the subject of a contract deposited at the competent District Land Registry after the Sale of Immovable Property (Specific Performance) (Amending) Law of 2023 comes into force and accompanied by Form A of the Annex, and provided that Form B of the Annex has been issued, the declaration of transfer is accepted at any competent District Land Registry and the property is transferred regardless of any real charges or prohibitions that may burden the property or its owner and that rank after the contract [...] (9) Where the mortgage lender fails to act under this section, and provided that the buyer has produced the payment confirmation in Form B of the Annex, duly signed and stamped by the mortgage lender, the Director transfers the property into the name of the buyer, regardless of any real charges or prohibitions that may burden the property or its owner and that rank after the contract.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "in-rera-registration",
+      "market": "IN",
+      "topics": [
+        "permit",
+        "law"
+      ],
+      "title": "In India, a project must be registered with the state RERA before any unit is advertised or sold",
+      "plain": "A developer may not advertise, book or sell any apartment or plot in a project in a planning area until the project is registered with the Real Estate Regulatory Authority of the state. Ask for the RERA registration number and look it up on the state authority website before you pay.",
+      "source": "in-rera-2016",
+      "cite": "Section 3(1)",
+      "quote": "No promoter shall advertise, market, book, sell or offer for sale, or invite persons to purchase in any manner any plot, apartment or building, as the case may be, in any real estate project or part of it, in any planning area, without registering the real estate project with the Real Estate Regulatory Authority established under this Act",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "in-rera-70pc-account",
+      "market": "IN",
+      "topics": [
+        "escrow",
+        "payment"
+      ],
+      "title": "70% of what buyers pay must go into a separate bank account for that project",
+      "plain": "The developer must put 70% of the money received from buyers into a separate account at a scheduled bank, to be used only for the construction and land cost of that project. Money can leave the account only in proportion to construction progress, certified by an engineer, an architect and a chartered accountant, and the accounts are audited every year.",
+      "source": "in-rera-2016",
+      "cite": "Section 4(2)(l)(D)",
+      "quote": "(D) that seventy per cent. of the amounts realised for the real estate project from the allottees, from time to time, shall be deposited in a separate account to be maintained in a scheduled bank to cover the cost of construction and the land cost and shall be used only for that purpose: Provided that the promoter shall withdraw the amounts from the separate account, to cover the cost of the project, in proportion to the percentage of completion of the project: Provided further that the amounts from the separate account shall be withdrawn by the promoter after it is certified by an engineer, an architect and a chartered accountant in practice that the withdrawal is in proportion to the percentage of completion of the project",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "in-rera-10pc-advance",
+      "market": "IN",
+      "topics": [
+        "payment",
+        "parties"
+      ],
+      "title": "No more than 10% of the price before a registered written agreement for sale",
+      "plain": "A developer may not take more than 10% of the price as an advance or application fee until it has signed a written agreement for sale with you and registered it. If you are asked for more before that, stop.",
+      "source": "in-rera-2016",
+      "cite": "Section 13(1)",
+      "quote": "A promoter shall not accept a sum more than ten per cent of the cost of the apartment, plot, or building as the case may be, as an advance payment or an application fee, from a person without first entering into a written agreement for sale with such person and register the said agreement for sale, under any law for the time being in force.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "in-rera-delay-refund",
+      "market": "IN",
+      "topics": [
+        "delay",
+        "termination"
+      ],
+      "title": "If the home is not handed over on time, you can take your money back with interest, or stay and be paid interest each month",
+      "plain": "If the developer does not complete or hand over the home by the date in the agreement for sale, or stops business, you can withdraw and claim back everything you paid with interest at the rate set by the state rules, plus compensation. If you stay in the project, the developer must pay you interest for every month of delay until handover.",
+      "source": "in-rera-2016",
+      "cite": "Section 18(1)",
+      "quote": "[...] he shall be liable on demand to the allottees, in case the allottee wishes to withdraw from the project, without prejudice to any other remedy available, to return the amount received by him in respect of that apartment, plot, building, as the case may be, with interest at such rate as may be prescribed in this behalf including compensation in the manner as provided under this Act: Provided that where an allottee does not intend to withdraw from the project, he shall be paid, by the promoter, interest for every month of delay, till the handing over of the possession, at such rate as may be prescribed.",
       "checked": "2026-11-26"
     }
   ]
