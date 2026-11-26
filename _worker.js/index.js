@@ -259,8 +259,8 @@ let KB_CSP_SCRIPTS = true;   // n21e: strict script policy enforced site-wide; f
 const KB_GA = 'G-FJKJE77K4V';
 const KB_GA_JS = '(window.kbLate||function(f){addEventListener("load",function(){setTimeout(f,1500)})})(function(){var s=document.createElement("script");s.async=1;s.src="https://www.googletagmanager.com/gtag/js?id=' + KB_GA + '";document.head.appendChild(s)});' +
   "window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','" + KB_GA + "');";
-const KB_DS_V = '0ec05a949d';   // bump with ds.css (scratchpad d12a/dsv.sh does it)
-const KB_DSS_V = '0ec05a949d';   // the ds.css version /k/ds-site.css was generated from; when it differs from KB_DS_V every page gets plain ds.css
+const KB_DS_V = '3f7c1c4682';   // bump with ds.css (scratchpad d12a/dsv.sh does it)
+const KB_DSS_V = '3f7c1c4682';   // the ds.css version /k/ds-site.css was generated from; when it differs from KB_DS_V every page gets plain ds.css
 // kolaboro.com mobile speed (b9c, 6 Nov 2026): third-party tags wait for the first interaction (tap, key, scroll, mouse move)
 // or 8 s after load, whichever comes first. window.kbLate(fn) queues work for that moment (the static pages load gtag through it);
 // Cloudflare Zaraz (Clarity) is held the same way by deferring its zaraz.init call. Events queued before that are kept.
