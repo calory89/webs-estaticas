@@ -26,7 +26,7 @@
   "@id": "http://publications.europa.eu/resource/authority/language/ENG"
  },
  "dct:modified": {
-  "@value": "2026-11-26T15:49:35Z",
+  "@value": "2026-11-26T15:54:36Z",
   "@type": "xsd:dateTime"
  },
  "dct:license": {
@@ -26926,7 +26926,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "6855110",
+      "@value": "6925346",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -26940,7 +26940,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "0199889bb1a0a1328974119a711dd0fee9224ee3d1e0fc5975154dc1a2e20bd1"
+      "spdx:checksumValue": "adac22e099bc19dfd24801b466c694e3bc7b2a79c61fcf3115d7bc01a9adde00"
      }
     }
    ],
@@ -26948,7 +26948,7 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
    },
    "dct:modified": {
-    "@value": "2026-11-25T16:12:06Z",
+    "@value": "2026-11-26T15:51:11Z",
     "@type": "xsd:dateTime"
    }
   },
@@ -26981,7 +26981,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "6497208",
+      "@value": "6612049",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -26995,7 +26995,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "003ad9ca7709f2fe7587439c8a98d9b4b43f607c7cfb3b3ac0bb1e187fdf3679"
+      "spdx:checksumValue": "6e0392a1d696d39f36f180e86a20dc314abd1495f645a21c1f5bd7f06c6d2291"
      }
     }
    ],
@@ -27003,7 +27003,7 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
    },
    "dct:modified": {
-    "@value": "2026-11-25T16:12:06Z",
+    "@value": "2026-11-26T15:51:11Z",
     "@type": "xsd:dateTime"
    }
   },
@@ -27036,7 +27036,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "6983025",
+      "@value": "6989908",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -27050,7 +27050,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "697735b337f6bc818b1243d33539663bc720f6dd407bdf7a522cc7759eac0453"
+      "spdx:checksumValue": "bcc3420055a24860770b9f7580192ef67acff3b12654117facb7026e6fafef01"
      }
     }
    ],
@@ -27058,7 +27058,7 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
    },
    "dct:modified": {
-    "@value": "2026-11-25T16:12:06Z",
+    "@value": "2026-11-26T15:51:11Z",
     "@type": "xsd:dateTime"
    }
   },
