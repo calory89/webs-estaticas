@@ -1,8 +1,8 @@
 {
  "license": "CC BY 4.0",
  "source": "https://jurimatch.com/open-data",
- "firmIndexAt": "2026-11-26T09:44:20.611Z",
- "listingCountsAt": "2026-11-26T09:44:19.971Z",
+ "firmIndexAt": "2026-11-26T10:03:17.881Z",
+ "listingCountsAt": "2026-11-26T10:03:17.207Z",
  "note": "handVerifiedFirms: firms whose fee terms our team read on their own website, by country listed. listedFirms: firms on each case type listing (hand-verified and indexed), from the build snapshot.",
  "countries": [
   {
@@ -38,14 +38,14 @@
     "partnership-dispute": 71,
     "employment": 79,
     "real-estate": 40,
-    "personal-injury": 176,
-    "medical-negligence": 43,
+    "personal-injury": 177,
+    "medical-negligence": 44,
     "consumer": 35,
     "intellectual-property": 43,
     "professional-negligence": 7,
-    "insurance-claims": 36,
+    "insurance-claims": 38,
     "class-actions": 43,
-    "social-security": 10
+    "social-security": 12
    },
    "contractLimitation": "3–6 years"
   },
@@ -69,21 +69,21 @@
     "litigation-funding": 9
    },
    "listedFirms": {
-    "contract-dispute": 93,
+    "contract-dispute": 94,
     "fraud": 49,
     "investment-fraud": 53,
     "crypto-fraud": 43,
     "unpaid-invoice": 27,
     "partnership-dispute": 39,
-    "employment": 35,
-    "real-estate": 31,
-    "personal-injury": 79,
+    "employment": 36,
+    "real-estate": 32,
+    "personal-injury": 82,
     "medical-negligence": 28,
-    "consumer": 9,
+    "consumer": 11,
     "intellectual-property": 21,
     "professional-negligence": 37,
     "insurance-claims": 16,
-    "class-actions": 14
+    "class-actions": 15
    },
    "contractLimitation": "6 years"
   },
@@ -100,21 +100,21 @@
     "litigation-funding": 4
    },
    "listedFirms": {
-    "contract-dispute": 21,
+    "contract-dispute": 22,
     "fraud": 7,
     "investment-fraud": 21,
     "crypto-fraud": 3,
     "unpaid-invoice": 9,
     "partnership-dispute": 4,
-    "employment": 15,
+    "employment": 19,
     "real-estate": 7,
-    "personal-injury": 19,
-    "medical-negligence": 9,
-    "consumer": 21,
+    "personal-injury": 23,
+    "medical-negligence": 10,
+    "consumer": 22,
     "intellectual-property": 2,
     "insurance-claims": 9,
-    "class-actions": 11,
-    "social-security": 6
+    "class-actions": 12,
+    "social-security": 7
    },
    "contractLimitation": "5 years"
   },
@@ -197,10 +197,10 @@
     "crypto-fraud": 5,
     "unpaid-invoice": 16,
     "partnership-dispute": 4,
-    "employment": 8,
+    "employment": 10,
     "real-estate": 4,
-    "personal-injury": 9,
-    "medical-negligence": 10,
+    "personal-injury": 11,
+    "medical-negligence": 11,
     "consumer": 3,
     "intellectual-property": 3,
     "professional-negligence": 1,
@@ -287,10 +287,10 @@
     "crypto-fraud": 1,
     "unpaid-invoice": 5,
     "partnership-dispute": 7,
-    "employment": 4,
+    "employment": 5,
     "real-estate": 2,
-    "personal-injury": 7,
-    "medical-negligence": 2,
+    "personal-injury": 8,
+    "medical-negligence": 3,
     "consumer": 2,
     "intellectual-property": 3,
     "professional-negligence": 1,
@@ -370,7 +370,7 @@
     "litigation-funding": 15
    },
    "listedFirms": {
-    "contract-dispute": 14,
+    "contract-dispute": 15,
     "fraud": 7,
     "investment-fraud": 9,
     "crypto-fraud": 8,
@@ -379,11 +379,11 @@
     "employment": 7,
     "real-estate": 9,
     "personal-injury": 1,
-    "medical-negligence": 2,
-    "consumer": 15,
+    "medical-negligence": 3,
+    "consumer": 16,
     "intellectual-property": 6,
     "insurance-claims": 4,
-    "class-actions": 9
+    "class-actions": 10
    },
    "contractLimitation": "3–30 years"
   },
@@ -723,7 +723,7 @@
     "crypto-fraud": 11,
     "unpaid-invoice": 7,
     "partnership-dispute": 4,
-    "employment": 10,
+    "employment": 11,
     "real-estate": 8,
     "personal-injury": 1,
     "consumer": 3,
