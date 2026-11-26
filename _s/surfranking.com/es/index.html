@@ -733,7 +733,7 @@ p.langrow{display:block;border:0;padding:0;margin-top:10px}
 .alertbox .arow select{min-width:0;max-width:100%}
 @media(max-width:560px){.alertbox .arow{grid-template-columns:1fr}.alertbox .arow .btn{min-height:44px}}
 </style>
-<script>try{var t=JSON.parse(localStorage.getItem("sr_theme")||"null");if(t==="dark"||(!t&&matchMedia("(prefers-color-scheme: dark)").matches))document.documentElement.setAttribute("data-theme","dark");}catch(e){}</script><script>document.addEventListener("click",function(e){if(window.__srBooted)return;var c=e.target.closest&&e.target.closest("[data-s]");if(c){e.preventDefault();window.__srPending=c.getAttribute("data-s");c.style.opacity=".6";}},true);</script></head>
+<script>try{var t=JSON.parse(localStorage.getItem("sr_theme")||"null");if(t==="dark"||(!t&&matchMedia("(prefers-color-scheme: dark)").matches))document.documentElement.setAttribute("data-theme","dark");}catch(e){}</script><script>document.addEventListener("click",function(e){if(window.__srBooted)return;var c=e.target.closest&&e.target.closest("[data-s]");if(c){e.preventDefault();window.__srPending=c.getAttribute("data-s");c.style.opacity=".6";}},true);</script><script defer src="/~flock.js" data-proxy-url="/~api/analytics"></script><script defer src="/__l5e/events.4d3abd1f6b7321c2.js" data-artifact-kind="dwl_content_hash" data-artifact-id="d63d6e2a5c855d8e205fc88db0dcb3860fb8bf737da53044b736b0116ccc6b4a" data-commit-sha="d06bb90509700e77a1322c0c5b255d94f3cb5693" data-context-token="v1.eyJwcm9qZWN0X2lkIjoibG92cF80cjZiaHlyMTByODl6YTkzZzZuM2tzcWp6eSIsImFydGlmYWN0X2tpbmQiOiJkd2xfY29udGVudF9oYXNoIiwiYXJ0aWZhY3RfaWQiOiJkNjNkNmUyYTVjODU1ZDhlMjA1ZmM4OGRiMGRjYjM4NjBmYjhiZjczN2RhNTMwNDRiNzM2YjAxMTZjY2M2YjRhIiwiY29tbWl0X3NoYSI6ImQwNmJiOTA1MDk3MDBlNzdhMTMyMmMwYzViMjU1ZDk0ZjNjYjU2OTMiLCJleHAiOjE3OTUwMzY1ODZ9.Wk1S5bCEoz6RYLnj1v2b5Xn1HOW3lmHYGWBUnrXSX28"></script></head>
 <body>
 <style>
 /* lo que hay debajo, y la alerta de swell */
@@ -894,8 +894,8 @@ var SR={
     zoom:15
   },
   data:{                   // ALMACEN PRINCIPAL DE EVENTOS
-    supabaseUrl:"https://surfranking.com/__sb/surfranking",   // Lovable Cloud del proyecto
-    anonKey:"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw",   // clave publica (solo INSERT por RLS)
+    supabaseUrl:"https://ixkilrcelljcyrtwxwde.supabase.co",   // Lovable Cloud del proyecto
+    anonKey:"sb_publishable_lA4msmtP4iQStBucZ68NFg_jbFcwGRm",   // clave publica (solo INSERT por RLS)
     table:"sr_events"
   },
   ab:{
