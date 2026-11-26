@@ -181,6 +181,18 @@ for (const [s, pl] of ix.places) { if (s === 'sumba' || !pl.P || pl.L.some(r => 
 return out.sort((a, b) => b.n - a.n || a.P.n.localeCompare(b.P.n));
 }
 let OTP = null;   // n40 k24: moved and past counts from /data/on-time.json (the file behind /data/delay-index.json), so press, market files and rankings agree
+let PMX = null, NXB = null;   // n40 k47: monthly note from the change feed (/data/changes.json, kbx_n37u) and the added date in named.json
+function pmBlock(pl, lang) {
+const X = PMX, b = X && NXB && X.built(); if (!b) return '';
+const mo = b.slice(0, 7) + '-01', c0 = X.from() > mo ? X.from() : mo, S = new Set(pl.L.map(r => r.s)), P = pl.P;
+const add = pl.L.filter(r => { const x = NXB.get(r.s); return x && x.ad && x.ad >= mo && x.ad <= b; }).length;
+const C = X.allChanges().filter(([r, x]) => S.has(r[1]) && x.d >= c0).map(X.chRow), ho = C.filter(o => o.field === 'ho');
+const R = (k, v) => esc(X.t(lang, k)).replace(/\{(\w+)\}/g, (m, x) => v[x] != null ? v[x] : m);
+let ml = b.slice(0, 7); try { ml = new Intl.DateTimeFormat(LOC[lang] || 'en-GB', { month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(mo + 'T00:00:00Z')); } catch (e) {}
+const v = { m: bdi(placeName(P.n, lang)), mo: esc(ml), d: esc(fdt(b, lang)), f: esc(fdt(mo, lang)), c: esc(fdt(c0, lang)), n: nf(lang, add), t: nf(lang, pl.n), h: nf(lang, ho.length), p: nf(lang, new Set(ho.map(o => o.slug)).size), a: nf(lang, ho.filter(o => o.months_moved > 0).length), e: nf(lang, ho.filter(o => o.months_moved < 0).length), o: nf(lang, C.length - ho.length) };
+const one = P.m.length === 1 && !P.a, href = '/data/changes.json?since=' + c0 + (one ? '&m=' + encodeURIComponent(P.m[0]) : '');
+return '<h2 id="monthly">' + R('k47m_h', v) + '</h2><p class="k-small k-muted">' + R('k47m_p', v) + '</p><ul><li>' + R('k47m_a', v) + '</li><li>' + R('k47m_c', v) + '</li><li>' + R('k47m_o', v) + '</li></ul><p class="k-small">' + srcA(one ? href : '/data/changes/', X.t(lang, 'k47m_l')) + '</p>';
+}
 function placeFigures(pl) {
 const L = pl.L, n = L.length, cnt = k => L.filter(r => r.comp[k] && r.comp[k].st === 'yes').length;
 return { n, dv: new Set(L.map(r => r.dvs || r.dv).filter(Boolean)).size, date: cnt('date'), permit: cnt('permit'), deposit: cnt('deposit'), location: cnt('location'), price: cnt('price'),
@@ -210,7 +222,7 @@ if (f.med != null) q.push(te(lang, 'q_med', { p: P, s: nf(lang, f.med) }));
 const cite = te(lang, 'cite_t', { p: P, d: D, u: '<bdi>' + esc(url) + '</bdi>' });
 const body = '<div class="kpg">' + head(lang, [[t(lang, 'crumb_press'), '/press/'], [t(lang, 'crumb_places'), pre(lang) + PRESS_P], [nm, pre(lang) + path]], te(lang, 'r_h1', { p: P }), te(lang, 'r_lead', { p: P, d: D })) +
 '<div class="k-grid">' + figs + '</div><p class="k-small">' + src + ' <span class="k-muted">' + esc(tx(lang, 'upd', { d: fdt(d, lang) })) + '</span></p>' + '<p class="k-small" id="definition">' + esc(t(lang, 'k18_def')) + ' <a href="' + pre(lang) + '/rankings/most-delayed/">' + esc(t(lang, 'k18_md')) + '</a></p>' +
-'<h2 id="quotes">' + esc(t(lang, 'q_h')) + '</h2><ul class="kpg-q">' + q.map(x => '<li><blockquote>' + x + '</blockquote></li>').join('') + '</ul>' +
+(PMX ? pmBlock(pl, lang) : '') + '<h2 id="quotes">' + esc(t(lang, 'q_h')) + '</h2><ul class="kpg-q">' + q.map(x => '<li><blockquote>' + x + '</blockquote></li>').join('') + '</ul>' +
 '<h2 id="cite">' + esc(t(lang, 'cite_h')) + '</h2><p class="kpg-cite">' + cite + '</p>' +
 '<h2 id="sources">' + esc(t(lang, 'rs_h')) + '</h2><ul>' + t(lang, 'rs').map(s => '<li>' + esc(fill(s, { d: fdt(d, lang) })) + '</li>').join('') + '</ul>' +
 '<ul><li><a href="' + pre(lang) + '/rankings/transparency/' + slug + '/">' + te(lang, 'l_rank', { p: P }) + '</a></li><li><a href="' + pre(lang) + '/methods/transparency-score/">' + esc(t(lang, 'l_method')) + TB.kbx_trust__t.k8 + slug + '">' + esc(t(lang, 'json')) + '</a></li><li><a href="' + pre(lang) + PRESS_P + '">' + esc(t(lang, 'l_all')) + '</a></li><li><a href="/press/">' + esc(t(lang, 'l_kit')) + '</a></li></ul>' +
@@ -262,8 +274,9 @@ export async function page(req, u, env, ctx, shell, inner) {
   if (kind === 'moderation' || kind === 'team') { const k = lang + '|' + kind; pg = BODY.get(k); if (!pg) { pg = kind === 'team' ? teamPage(lang) : moderationPage(lang); BODY.set(k, pg); } }
   else if (kind.startsWith('press/places')) {
     let ix; try { ix = await trData(env); } catch (e) { return null; }
-    try { const N = await import('./kbx_named.js'), nx = await N.data(env); if (nx.ot && Object.keys(nx.ot).length) OTP = nx.ot; } catch (e) {}
-    const slug = kind.split('/')[2] || null, k = lang + '|p|' + (slug || '#') + '|' + ix.v + '|' + (OTP ? 1 : 0);
+    try { const N = await import('./kbx_named.js'), nx = await N.data(env); if (nx.ot && Object.keys(nx.ot).length) OTP = nx.ot; NXB = nx.bySlug; } catch (e) {}
+    try { const N37 = await import('./kbx_n37u.js'); PMX = (await N37._r8u.load(env)) ? N37._r8u : null; } catch (e) { PMX = null; }
+    const slug = kind.split('/')[2] || null, k = lang + '|p|' + (slug || '#') + '|' + ix.v + '|' + (OTP ? 1 : 0) + (PMX ? PMX.built() + PMX.allChanges().length : '');
     pg = BODY.get(k); if (!pg) { pg = slug ? pressPlace(ix, slug, lang) : pressHub(ix, lang); if (!pg) return null; if (BODY.size > 900) BODY.clear(); BODY.set(k, pg); }
   } else {
     let D; try { D = await progData(env, inner); } catch (e) { return null; }

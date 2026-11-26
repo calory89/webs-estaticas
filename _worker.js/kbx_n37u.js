@@ -1266,4 +1266,4 @@ const desc = lead.length > 155 ? lead.slice(0, 152).replace(/\s+\S*$/, '') + 'â€
 const html = await N.assemble({ title: h1 + ' | Kolaboro', desc, canon, body: html0, ld, alt: x => ORIGIN + pre(x) + '/guides/' }, l, await shell(P + '/how-we-score/'));
 return new Response(html, { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=900', 'content-language': l } });
 }
-export const _r8u = { progLine, progBlock, mkSection, load, kpBlock, kpMarket, devSection, kpPage, mcPage, recPage, supplyLine, savedBox, IX: () => IX };
+export const _r8u = { progLine, progBlock, mkSection, load, kpBlock, kpMarket, devSection, kpPage, mcPage, recPage, supplyLine, savedBox, IX: () => IX, t, allChanges, chRow, built: () => D && D.built, from: () => TL && TL.days && TL.days[0] && TL.days[0][0] };
