@@ -28,13 +28,17 @@ const ymIdx = s => { const m = /^(\d{4})-(\d{2})/.exec(s || ''); return m ? +m[1
 const ymName = s => { const m = /^(\d{4})-(\d{2})/.exec(s || ''); return m ? MONTHS[+m[2] - 1] + ' ' + m[1] : ''; };
 
 const MEMO = {};
-async function file(env, name, ttl) {
+function file(e, p, t) { return FQ[p] || (FQ[p] = file0(e, p, t).finally(() => { delete FQ[p]; })); }   // n40 k21: one shared read per file, failed reads retried after 15 s
+const FQ = {};
+async function file0(env, name, ttl) {
   const m = MEMO[name]; if (m && Date.now() - m.t < (ttl || 300000)) return m.v;
   let v = null;
   try { const r = await env.ASSETS.fetch(new Request(SITE + '/_s/kolaboro.com' + name)); if (r.ok) v = /\.json$/.test(name) ? await r.json() : await r.text(); } catch (e) { v = null; }
-  MEMO[name] = { t: Date.now(), v }; return v;
+  if (v == null && m) v = m.v; MEMO[name] = { t: v == null ? Date.now() - (ttl || 300000) + 15000 : Date.now(), v }; return v;
 }
-async function named(inner) {
+const named = inner => NQ || (NQ = named0(inner).finally(() => { NQ = null; }));
+let NQ = null;
+async function named0(inner) {
   const m = MEMO.__named; if (m && Date.now() - m.t < 300000) return m.v;
   let v = { projects: new Map(), developers: [], all: [] };
   try {

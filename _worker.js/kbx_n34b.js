@@ -17,7 +17,9 @@ export async function ready(env) { return loadT(env); }
 export const tx = (l, k, v) => fill(t(l, k), v || {});
 export const QCSS = '<style>.n34-q{list-style:none;padding:0;margin:0 0 16px;counter-reset:q}.n34-q>li{counter-increment:q;padding:10px 0 10px 2.2em;border-bottom:1px solid var(--line,#d5d3cc);position:relative}.n34-q>li::before{content:counter(q);position:absolute;inset-inline-start:0;top:10px;width:1.7em;height:1.7em;border-radius:50%;border:1px solid var(--line,#d5d3cc);display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:700}[dir=rtl] .n34-q>li{padding:10px 2.2em 10px 0}.n34-q b{display:block;font-weight:600}.n34-q small{display:block;color:var(--muted,#59626B);margin-top:4px}</style>';
 const MEMO = {};
-async function file(env, p, ttl) {
+function file(e, p, t) { return FQ[p] || (FQ[p] = file0(e, p, t).finally(() => { delete FQ[p]; })); }   // n40 k21: one shared read per file
+const FQ = {};
+async function file0(env, p, ttl) {
   const m = MEMO[p]; if (m && m.v && Date.now() - m.t < (ttl || 600000)) return m.v;
   let v = null;
   try { const r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com' + p)); if (r.ok) v = await r.json(); } catch (e) { v = null; }

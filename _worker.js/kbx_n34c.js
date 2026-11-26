@@ -12,7 +12,9 @@ try { const r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/da
 return T;
 }
 const MEMO = {};
-async function file(env, p, ttl) {
+function file(e, p, t) { return FQ[p] || (FQ[p] = file0(e, p, t).finally(() => { delete FQ[p]; })); }   // n40 k21: one shared read per file
+const FQ = {};
+async function file0(env, p, ttl) {
   const m = MEMO[p]; if (m && Date.now() - m.t < (ttl || 600000)) return m.v;
   let v = null;
   try { const r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com' + p)); if (r.ok) v = await r.json(); } catch (e) { v = null; }

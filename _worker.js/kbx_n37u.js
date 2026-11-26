@@ -5,7 +5,9 @@ import { TB } from './kbx_strings.js';
 const ORIGIN = 'https://kolaboro.com';
 const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' };
 const MEMO = {};
-async function file(env, p) {
+function file(e, p, t) { return FQ[p] || (FQ[p] = file0(e, p, t).finally(() => { delete FQ[p]; })); }   // n40 k21: one shared read per file
+const FQ = {};
+async function file0(env, p) {
   const m = MEMO[p]; if (m && m.v && Date.now() - m.t < 600000) return m.v;
   let v = null;
   try { const r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com' + p)); if (r.ok) v = await r.json(); } catch (e) { v = null; }
@@ -508,9 +510,9 @@ return new Response(JSON.stringify(o), { status: 200, headers: { 'content-type':
 export async function errPage(u) {
 const m = /^\/(es|de|fr|nl|ru|zh|ar)\//.exec(u.pathname), l = m ? m[1] : 'en';
 const g = k => (T && T[l] && T[l][k]) || ({ err_h: 'This page did not load', err_p: 'Our server could not build it just now. It usually works again within seconds.', err_a: 'Try again', home: 'Home' })[k];
-const html = '<!doctype html><html lang="' + l + '"' + dir(l) + TB.kbx_n37u__s.k18 + esc(g('err_h')) + ' | Kolaboro</title>' +
-TB.kbx_n37u__s.k19 +
-'<body><main><h1>' + esc(g('err_h')) + '</h1><p>' + esc(g('err_p')) + '</p><p><a href="' + esc(u.pathname) + '">' + esc(g('err_a')) + TB.kbx_n37u__t.k76 + pre(l) + '/">' + esc(g('home')) + TB.kbx_n37u__s.k20;
+const html = '<!doctype html><html lang="' + l + '"' + dir(l) + '><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>' + esc(g('err_h')) + ' | Kolaboro</title>' +
+'<style>body{margin:0;font:16px/1.6 system-ui,sans-serif;background:#F6F4EF;color:#17212B}main{max-width:560px;margin:12vh auto;padding:0 16px}a{color:#155C75;font-weight:700}@media (prefers-color-scheme:dark){body{background:#11181F;color:#E8ECEF}a{color:#7CC7E0}}</style></head>' +
+'<body><main><h1>' + esc(g('err_h')) + '</h1><p>' + esc(g('err_p')) + '</p><p><a href="' + esc(u.pathname) + '">' + esc(g('err_a')) + '</a><span class="n37-dot" aria-hidden="true"> · </span><a href="' + pre(l) + '/">' + esc(g('home')) + '</a><span class="n37-dot" aria-hidden="true"> · </span><a href="/engineering/status/">/engineering/status/</a></p></main></body></html>';
 return new Response(html, { status: 503, headers: { 'content-type': 'text/html; charset=utf-8', 'retry-after': '5', 'cache-control': 'no-store', 'x-kb-fallback': '1' } });
 }
 const VG = { reg: 'r', sat: 'r', dev: 'c', portal: 'c', web: 'c', rec: 'c' };

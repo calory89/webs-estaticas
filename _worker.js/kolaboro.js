@@ -1114,12 +1114,13 @@ const msg = te.encode('kolaboro-sig-v1\n' + await sha(text));
 const sig = new Uint8Array(await crypto.subtle.sign(k._alg || { name: 'Ed25519' }, k, msg));
 let b = ''; sig.forEach(x => { b += String.fromCharCode(x); }); return btoa(b);
 }
-let OPEN_MEMO = { t: 0, v: null };
+let OPEN_MEMO = { t: 0, v: null }, OPEN_P = null;
 async function openLoad() {
 if (OPEN_MEMO.v && Date.now() - OPEN_MEMO.t < 60000) return OPEN_MEMO.v;
-const r = await fetch(TB.kolaboro__t.k26, { cf: { cacheTtl: 600, cacheEverything: true } });
+OPEN_P = OPEN_P || (async () => { let r; for (let i = 0; i < 2; i++) { r = await fetch(TB.kolaboro__t.k26, { cf: { cacheTtl: 600, cacheEverything: true } }); if (r.ok) break; } if (!r.ok) throw new Error('open ' + r.status);
 const txt = await r.text(), v = { d: JSON.parse(txt), sha: await sha(txt), bytes: txt.length };
-OPEN_MEMO = { t: Date.now(), v }; return v;
+OPEN_MEMO = { t: Date.now(), v }; return v; })().finally(() => { OPEN_P = null; });
+try { return await OPEN_P; } catch (e) { if (OPEN_MEMO.v) return OPEN_MEMO.v; throw e; }
 }
 async function openData() { return (await openLoad()).d; }
 const te = new TextEncoder();

@@ -8,7 +8,9 @@ import { TB } from './kbx_strings.js';
 const S = TB.kbx_ticker_S;
 export const SHIP_N = 3;
 const SITE_V = 'n40k10a';
-async function file(env, n) {
+function file(e, n) { return TF[n] || (TF[n] = file0(e, n).then(v => { if (v == null) delete TF[n]; return v; })); }   // n40 k21: read once
+const TF = {};
+async function file0(env, n) {
   try { const r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/' + n)); if (r.ok) return await r.json(); } catch (e) {}
   return null;
 }
