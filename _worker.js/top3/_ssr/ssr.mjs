@@ -1455,6 +1455,459 @@ if(mq&&mq.addEventListener)mq.addEventListener('change',all);
 /* external links opened in a new tab never get access to this page */
 document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e.target.closest('a[target=_blank]'):null;if(a){var r=(a.getAttribute('rel')||'');if(!/noopener/.test(r))a.setAttribute('rel',(r+' noopener').trim())}},true);
 })();`;
+/** T16.1: hex colours of the shared CSS, as tokens. Same value in light and dark (the dark theme keeps redefining --ink, --paper...). Generated from the CSS of /rome, 26-nov-2026; near-identical tints merged. */
+var HEX16 = {
+	"#fff": "c-white",
+	"#10213a": "c-navy",
+	"#d83b51": "c-coral",
+	"#eef2f8": "c-gray-95",
+	"#16202e": "c-blue-13",
+	"#0003": "c-black-a20",
+	"#ff6b7f": "c-red-71",
+	"#eef2f7": "c-gray-95",
+	"#dfe7f1": "c-blue-91",
+	"#1f7a5a": "c-green",
+	"#0004": "c-black-a27",
+	"#e3e7ee": "c-gray-91",
+	"#4a5566": "c-blue-35",
+	"#141c28": "c-blue-12",
+	"#13417a": "c-blue",
+	"#000": "c-black",
+	"#f1f3f6": "c-gray-95-3",
+	"#2a3647": "c-blue-22",
+	"#0b1220": "c-blue-8",
+	"#e8eef6": "c-gray-94",
+	"#fffffff2": "c-white-a95",
+	"#b8860b": "c-amber-38",
+	"#e3c26a": "c-amber-65",
+	"#9a6b00": "c-gold",
+	"#ffffffe6": "c-white-a90",
+	"#9a6f0a": "c-gold",
+	"#ddd": "c-gray-87",
+	"#7a8594": "c-gray-53",
+	"#eef1f5": "c-gray-95",
+	"#ff4d64": "c-red-65",
+	"#233041": "c-blue-20",
+	"#08111e99": "c-blue-7-a60",
+	"#08111ea6": "c-blue-7-a65",
+	"#08111ee0": "c-blue-7-a88",
+	"#0006": "c-black-a40",
+	"#10213a12": "c-navy-a7",
+	"#10213a1f": "c-navy-a12",
+	"#525d6b": "c-slate",
+	"#000a": "c-black-a67",
+	"#b87737": "c-amber-47",
+	"#05090fe6": "c-gray-4-a90",
+	"#05090fb3": "c-gray-4-a70",
+	"#0007": "c-black-a47",
+	"#fffffff0": "c-white-a94",
+	"#ffffff40": "c-white-a25",
+	"#ff8a9a": "c-red-77",
+	"#c9971c": "c-amber-45",
+	"#167a4a": "c-green-28",
+	"#1fa463": "c-green-38",
+	"#1fa46333": "c-green-38-a20",
+	"#fff3e0": "c-amber-94",
+	"#9a4a00": "c-amber-30",
+	"#fff3": "c-white-a20",
+	"#eee": "c-gray-93",
+	"#1877f2": "c-blue-52",
+	"#1259c3": "c-blue-42",
+	"#4f5b6b": "c-blue-36",
+	"#9aa3af": "c-gray-65",
+	"#c3c9d2": "c-gray-79",
+	"#fde8eb": "c-red-95",
+	"#fdf1f3": "c-gray-97",
+	"#e9b9c1": "c-red-82",
+	"#1f2a3a": "c-blue-17",
+	"#3a2230": "c-violet-18",
+	"#22303f": "c-blue-19",
+	"#111": "c-gray-7",
+	"#555": "c-gray-33",
+	"#6a4c93": "c-violet-44",
+	"#c6a8ff": "c-violet-83",
+	"#0b112299": "c-blue-9-a60",
+	"#e8344d": "c-red-56",
+	"#a8b3c1": "c-blue-71",
+	"#8fb8ff": "c-blue-78",
+	"#131b27": "c-blue-12",
+	"#cfd8e6": "c-blue-86",
+	"#3a4a63": "c-blue-31",
+	"#0b1122": "c-blue-8",
+	"#ff4d6433": "c-red-65-a20",
+	"#f5f3ef": "c-gray-95-warm",
+	"#0f3d2e": "c-green-15",
+	"#7a3d00": "c-amber-24",
+	"#ffd27a": "c-amber-74",
+	"#ccc": "c-gray-80",
+	"#666": "c-gray-40",
+	"#d6dbe3": "c-gray-86",
+	"#15603f": "c-green-23",
+	"#a8213a": "c-red-39",
+	"#e3b55a": "c-amber-62",
+	"#e5e8ee": "c-gray-91",
+	"#fff6e5": "c-amber-95",
+	"#eef3fa": "c-gray-95"
+};
+var TOK16 = ":root{--c-coral-aa:#c3304a;--c-gold-lt:#f3dc96;--c-gold-md:#d9b350;--c-amber-24:#7a3d00;--c-amber-30:#9a4a00;--c-amber-38:#b8860b;--c-amber-45:#c9971c;--c-amber-47:#b87737;--c-amber-62:#e3b55a;--c-amber-65:#e3c26a;--c-amber-74:#ffd27a;--c-amber-94:#fff3e0;--c-amber-95:#fff6e5;--c-black:#000;--c-black-a20:#0003;--c-black-a27:#0004;--c-black-a40:#0006;--c-black-a47:#0007;--c-black-a67:#000a;--c-blue:#13417a;--c-blue-12:#141c28;--c-blue-13:#16202e;--c-blue-17:#1f2a3a;--c-blue-19:#22303f;--c-blue-20:#233041;--c-blue-22:#2a3647;--c-blue-31:#3a4a63;--c-blue-35:#4a5566;--c-blue-36:#4f5b6b;--c-blue-42:#1259c3;--c-blue-52:#1877f2;--c-blue-7-a60:#08111e99;--c-blue-7-a65:#08111ea6;--c-blue-7-a88:#08111ee0;--c-blue-71:#a8b3c1;--c-blue-78:#8fb8ff;--c-blue-8:#0b1220;--c-blue-86:#cfd8e6;--c-blue-9-a60:#0b112299;--c-blue-91:#dfe7f1;--c-coral:#d83b51;--c-gold:#9a6b00;--c-gray-33:#555;--c-gray-4-a70:#05090fb3;--c-gray-4-a90:#05090fe6;--c-gray-40:#666;--c-gray-53:#7a8594;--c-gray-65:#9aa3af;--c-gray-7:#111;--c-gray-79:#c3c9d2;--c-gray-80:#ccc;--c-gray-86:#d6dbe3;--c-gray-87:#ddd;--c-gray-91:#e3e7ee;--c-gray-93:#eee;--c-gray-94:#e8eef6;--c-gray-95:#eef2f8;--c-gray-95-3:#f1f3f6;--c-gray-95-warm:#f5f3ef;--c-gray-97:#fdf1f3;--c-green:#1f7a5a;--c-green-15:#0f3d2e;--c-green-23:#15603f;--c-green-28:#167a4a;--c-green-38:#1fa463;--c-green-38-a20:#1fa46333;--c-navy:#10213a;--c-navy-a12:#10213a1f;--c-navy-a7:#10213a12;--c-red-39:#a8213a;--c-red-56:#e8344d;--c-red-65:#ff4d64;--c-red-65-a20:#ff4d6433;--c-red-71:#ff6b7f;--c-red-77:#ff8a9a;--c-red-82:#e9b9c1;--c-red-95:#fde8eb;--c-slate:#525d6b;--c-violet-18:#3a2230;--c-violet-44:#6a4c93;--c-violet-83:#c6a8ff;--c-white:#fff;--c-white-a20:#fff3;--c-white-a25:#ffffff40;--c-white-a90:#ffffffe6;--c-white-a94:#fffffff0;--c-white-a95:#fffffff2;}";
+/** T16.42: every border-radius of the shared CSS (12 values in the T15 inventory) as a token. */
+var RAD16 = {
+	"3px": "r-1",
+	"5px": "r-2",
+	"6px": "r-2b",
+	"9px": "r-3",
+	"10px": "r-4",
+	"12px": "r-5",
+	"14px": "r-6",
+	"16px": "r-7",
+	"18px": "r-8",
+	"20px": "r-9",
+	"22px": "r-10",
+	"26px": "r-11",
+	"999px": "r-pill"
+};
+/** T16.41: spacing scale of 4 and 8. */
+var SP16 = {
+	"4px": "s-1",
+	"8px": "s-2",
+	"12px": "s-3",
+	"16px": "s-4",
+	"24px": "s-6",
+	"32px": "s-8"
+};
+/** T16.35: 11 near-duplicate shadows folded into 4 elevations. */
+var SH16 = {
+	"0 2px 10px var(--c-black-a20)": "sh-1",
+	"0 3px 12px var(--c-black-a20)": "sh-1",
+	"0 4px 14px var(--c-black-a20)": "sh-1",
+	"0 4px 14px var(--c-black-a27)": "sh-2",
+	"0 8px 24px var(--c-black-a27)": "sh-2",
+	"0 10px 30px var(--c-black-a20)": "sh-3",
+	"0 12px 32px rgba(0,0,0,.14)": "sh-3",
+	"0 18px 40px rgba(0,0,0,.18)": "sh-3",
+	"0 18px 50px var(--c-black-a27)": "sh-3",
+	"0 30px 80px var(--c-black-a47)": "sh-4",
+	"0 30px 80px rgba(0,0,0,.35)": "sh-4"
+};
+var ROOT16 = TOK16.slice(0, -1) + Object.entries(RAD16).map(([v, k]) => `--${k}:${v};`).join("") + Object.entries(SP16).map(([v, k]) => `--${k}:${v};`).join("") + "--sh-1:0 3px 12px #0003;--sh-2:0 6px 20px #0004;--sh-3:0 14px 40px #0000002e;--sh-4:0 30px 80px #0000005a}";
+var memo16 = /* @__PURE__ */ new Map();
+/** Rewrites a block of CSS so colours, radii and gaps point at the tokens. Values stay the same, so nothing moves. */
+function tok16(css) {
+	const hit = memo16.get(css);
+	if (hit != null) return hit;
+	const out = css.split(/(:root\s*\{[^}]*\})/).map((p, i) => i % 2 ? p : p.replace(/(?<=[:\s,(])#([0-9a-fA-F]{3,8})(?=[;\s,)}!])/g, (m) => HEX16[m.toLowerCase()] ? `var(--${HEX16[m.toLowerCase()]})` : m).replace(/border-radius:(\d+px)(?=[;}!])/g, (m, v) => RAD16[v] ? `border-radius:var(--${RAD16[v]})` : m).replace(/box-shadow:([^;}!]+)/g, (m, v) => SH16[v.trim()] ? `box-shadow:var(--${SH16[v.trim()]})` : m).replace(/([;{]gap:)(\d+px)(?=[;}!])/g, (m, a, v) => SP16[v] ? `${a}var(--${SP16[v]})` : m)).join("");
+	if (memo16.size < 64) memo16.set(css, out);
+	return out;
+}
+var I16 = {
+	"map": "<path d=\"M9 3 3 6v15l6-3 6 3 6-3V3l-6 3-6-3z\"/><path d=\"M9 3v15M15 6v15\"/>",
+	"search": "<circle cx=\"11\" cy=\"11\" r=\"7\"/><path d=\"m20 20-3.5-3.5\"/>",
+	"heart": "<path d=\"M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 12 5a5.5 5.5 0 0 0-10 3.5c0 2.3 1.5 4 3 5.5l7 7z\"/>",
+	"shuffle": "<path d=\"M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5\"/>",
+	"sun": "<circle cx=\"12\" cy=\"12\" r=\"4\"/><path d=\"M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4\"/>",
+	"waves": "<path d=\"M2 7c2 0 2-2 4-2s2 2 4 2 2-2 4-2 2 2 4 2 2-2 4-2M2 13c2 0 2-2 4-2s2 2 4 2 2-2 4-2 2 2 4 2 2-2 4-2M2 19c2 0 2-2 4-2s2 2 4 2 2-2 4-2 2 2 4 2 2-2 4-2\"/>",
+	"paw": "<circle cx=\"11\" cy=\"4.5\" r=\"2\"/><circle cx=\"18\" cy=\"8\" r=\"2\"/><circle cx=\"4\" cy=\"8\" r=\"2\"/><path d=\"M8 14a4 4 0 0 1 7 0l2 3a3 3 0 0 1-3 4H9a3 3 0 0 1-3-4z\"/>",
+	"users": "<path d=\"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2\"/><circle cx=\"9\" cy=\"7\" r=\"4\"/><path d=\"M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8\"/>",
+	"sparkles": "<path d=\"M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z\"/><path d=\"M19 16v4M17 18h4\"/>",
+	"up": "<path d=\"M7 10v11M15 5.9 14 10h5.8a2 2 0 0 1 2 2.3l-1.4 7a2 2 0 0 1-2 1.7H7V10l4.3-7.4A2 2 0 0 1 15 4z\"/>",
+	"down": "<g transform=\"rotate(180 12 12)\"><path d=\"M7 10v11M15 5.9 14 10h5.8a2 2 0 0 1 2 2.3l-1.4 7a2 2 0 0 1-2 1.7H7V10l4.3-7.4A2 2 0 0 1 15 4z\"/></g>",
+	"camera": "<path d=\"M14.5 4h-5L7.5 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3.5z\"/><circle cx=\"12\" cy=\"13\" r=\"3\"/>",
+	"mail": "<rect x=\"2\" y=\"4\" width=\"20\" height=\"16\" rx=\"2\"/><path d=\"m22 7-10 6L2 7\"/>",
+	"crown": "<path d=\"M2 19h20M3 7l5 5 4-7 4 7 5-5-2 11H5z\"/>",
+	"globe": "<circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20\"/>",
+	"coffee": "<path d=\"M17 8h1a4 4 0 0 1 0 8h-1M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4z\"/><path d=\"M6 2v2M10 2v2M14 2v2\"/>",
+	"flame": "<path d=\"M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.4-.5-2-1-3-1-2.1-.2-4 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.2.4-2.3 1-3.1.1 1.6 1.2 2.6 2.5 2.6z\"/>",
+	"plane": "<path d=\"M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z\"/>",
+	"mic": "<rect x=\"9\" y=\"2\" width=\"6\" height=\"12\" rx=\"3\"/><path d=\"M19 10a7 7 0 0 1-14 0M12 17v5\"/>",
+	"pin": "<path d=\"M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21z\"/><circle cx=\"12\" cy=\"9.5\" r=\"2.5\"/>",
+	"train": "<rect x=\"5\" y=\"3\" width=\"14\" height=\"14\" rx=\"3\"/><path d=\"M5 11h14M9 21l1.5-4M15 21l-1.5-4\"/>",
+	"clipboard": "<rect x=\"5\" y=\"4\" width=\"14\" height=\"17\" rx=\"2\"/><path d=\"M9 4V3h6v1M9 10h6M9 14h6M9 18h3\"/>",
+	"flag": "<path d=\"M5 21V4h11l-2 4 2 4H5\"/>",
+	"wifi": "<path d=\"M2 9a15 15 0 0 1 20 0M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0M12 19h.01\"/>",
+	"snow": "<path d=\"M12 2v20M3.3 7l17.4 10M3.3 17 20.7 7M9 3.5l3 2 3-2M9 20.5l3-2 3 2\"/>",
+	"bell": "<path d=\"M3 19h18M12 7a7 7 0 0 0-7 7v5h14v-5a7 7 0 0 0-7-7zM12 4v3\"/>",
+	"print": "<path d=\"M6 9V3h12v6M6 18H4v-7h16v7h-2\"/><rect x=\"6\" y=\"14\" width=\"12\" height=\"7\"/>"
+};
+var E16 = {
+	"🗺": "map",
+	"🔍": "search",
+	"♡": "heart",
+	"♥": "heart*",
+	"🎲": "shuffle",
+	"🏖": "sun",
+	"🏊": "waves",
+	"🐾": "paw",
+	"👨": "users",
+	"💆": "sparkles",
+	"👍": "up",
+	"👎": "down",
+	"📸": "camera",
+	"✉": "mail",
+	"♛": "crown",
+	"🌐": "globe",
+	"🍳": "coffee",
+	"🔥": "flame",
+	"✈": "plane",
+	"🎤": "mic",
+	"📷": "camera",
+	"📍": "pin",
+	"🚆": "train",
+	"📋": "clipboard",
+	"⚑": "flag",
+	"📶": "wifi",
+	"❄": "snow",
+	"🛎": "bell",
+	"🖨": "print",
+	"👧": "users",
+	"👩": "users"
+};
+var RE16 = /(\u{1F468}(?:\u200D[\u{1F466}-\u{1F469}])+|[\u{1F5FA}\u{1F50D}\u2661\u2665\u{1F3B2}\u{1F3D6}\u{1F3CA}\u{1F43E}\u{1F486}\u{1F44D}\u{1F44E}\u{1F4F8}\u2709\u265B\u{1F310}\u{1F373}\u{1F525}\u2708\u{1F3A4}\u{1F4F7}\u{1F4CD}\u{1F686}\u{1F4CB}\u2691\u{1F4F6}\u2744\u{1F6CE}\u{1F5A8}\u{1F467}\u{1F469}])\uFE0F?[ \u00A0]?/gu;
+var SKIP16 = /^(script|style|textarea|option|title|noscript|svg)$/i;
+/** T16.10/T16.45: emojis in the page text become <svg><use> icons from one sprite at the top of <body>. */
+function icons16(doc) {
+	const b = doc.indexOf("<body");
+	if (b < 0) return doc;
+	const used = /* @__PURE__ */ new Set();
+	let skip = 0;
+	let skipTag = "";
+	const body = doc.slice(b).replace(/(<[^>]*>)|([^<]+)/g, (m, tag, text) => {
+		if (tag) {
+			const t = /^<(\/?)([a-zA-Z0-9]+)/.exec(tag);
+			if (t) {
+				const name = t[2].toLowerCase();
+				if (!skip && !t[1] && SKIP16.test(name) && !tag.endsWith("/>")) {
+					skip = 1;
+					skipTag = name;
+				} else if (skip && t[1] && name === skipTag) {
+					skip = 0;
+					skipTag = "";
+				}
+			}
+			if (!skip && tag.startsWith("<img")) {
+				let g = tag;
+				if (!/\bdecoding=/.test(g)) g = g.replace("<img", "<img decoding=\"async\"");
+				if (/\bloading="lazy"/.test(g) && !/\bfetchpriority=/.test(g)) g = g.replace("<img", "<img fetchpriority=\"low\"");
+				return g;
+			}
+			return tag;
+		}
+		if (skip || !text) return m;
+		RE16.lastIndex = 0;
+		if (!RE16.test(text)) return text;
+		RE16.lastIndex = 0;
+		return text.replace(RE16, (_s, ch) => {
+			let k = E16[ch.codePointAt(0) === 128104 ? "👨" : ch] ?? "";
+			const f = k.endsWith("*");
+			k = k.replace("*", "");
+			if (!I16[k]) return _s;
+			used.add(k);
+			return `<span class="t3i-w${f ? " f" : ""}" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#t3i-${k}"/></svg></span>`;
+		});
+	});
+	if (!used.size) return doc.slice(0, b) + body;
+	const sprite = `<svg class="t16sp" width="0" height="0" aria-hidden="true" focusable="false"><defs>${[...used].map((k) => `<symbol id="t3i-${k}" viewBox="0 0 24 24">${I16[k]}</symbol>`).join("")}</defs></svg>`;
+	return doc.slice(0, b) + body.replace(/(<body[^>]*>)/, `$1${sprite}`);
+}
+/** Shared CSS of tanda 16. */
+var CSS16 = `
+.t16sp{position:absolute;width:0;height:0;overflow:hidden}
+.t3i-w{display:inline-flex;vertical-align:-.16em;margin-right:.4em}
+.t3i-w svg{width:1.05em;height:1.05em;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.t3i-w.f svg{fill:currentColor}
+.t3i-w:only-child,a.tbtn>.t3i-w:first-child{margin-right:0}
+:where(main) :where(p,li,dd){font-size:clamp(16px,15.4px + .2vw,17.5px)}
+:where(h3){font-size:clamp(17px,16px + .35vw,20px);line-height:1.25}
+:where(main) :where(h1){font-size:clamp(30px,22px + 2.6vw,58px)}
+:where(main) :where(h2){font-size:clamp(23px,19px + 1.2vw,36px)}
+h3.serif,.faq dt{font-family:var(--sans);letter-spacing:-.01em}
+:where(a.btn,.btn,a.cta,button.btn,.bk,a.go){transition:filter .15s,transform .15s,box-shadow .15s}
+:where(a.btn,.btn,a.cta,button.btn,.bk,a.go):hover{filter:brightness(1.06)}
+:where(a.btn,.btn,a.cta,button.btn,.bk,a.go,.tbtn,.chip):active{transform:translateY(1px);filter:brightness(.96)}
+:where(.card,.hcard):hover{box-shadow:var(--shadow)}
+.card.value .badge span:first-child{background:var(--c-coral-aa)}.badge .pick{color:var(--c-coral-aa)}
+.card.lux .badge span:first-child{background:linear-gradient(135deg,var(--c-amber-65),var(--c-gold-lt) 50%,var(--c-gold-md))}
+td.t16t{background:linear-gradient(90deg,hsl(var(--h) 85% 55% / .28) var(--t),transparent var(--t));font-variant-numeric:tabular-nums}
+.t16chs{display:flex;flex-wrap:wrap;gap:10px 28px;margin:14px 0 0}.t16chs .note{flex:1 1 100%;margin:0}.t16ch{margin:0;flex:1 1 300px;max-width:470px}.t16ch figcaption{font-size:13px;font-weight:600;color:var(--muted);margin:0 0 4px}.t16ch svg{width:100%;height:auto;overflow:visible}.t16ch text{font:12.5px var(--sans);fill:var(--ink)}.t16ch .v{font-weight:700}
+html body header.top nav{gap:clamp(8px,1.2vw,18px)!important}
+.t16map{margin:16px 0;padding:10px;border:1px solid var(--line);border-radius:var(--r-7);background:var(--soft)}.t16map svg{width:100%;height:auto;max-height:420px;overflow:visible}.t16map circle{fill:var(--value);stroke:var(--card);stroke-width:1.5}.t16map a:hover circle,.t16map a:focus circle{fill:var(--ink)}.t16map text{font:600 12px var(--sans);fill:var(--ink);paint-order:stroke;stroke:var(--soft);stroke-width:3px}.t16map figcaption{font-size:13px;color:var(--muted);margin-top:4px}
+.t16clr{flex:1 1 100%;margin:8px 0 0}
+@media (min-width:981px){footer .cols{grid-template-columns:1.6fr repeat(5,1fr)}}@media (min-width:621px) and (max-width:980px){footer .cols{grid-template-columns:repeat(3,1fr)}footer .cols>div:first-child{grid-column:1/-1}}
+@media (max-width:1600px){html:is([lang^=fr],[lang^=it],[lang^=pt],[lang^=da],[lang^=de]) header nav>a.hide-md{display:none!important}}
+@media (max-width:1180px){html:is([lang^=fr],[lang^=it],[lang^=pt]) header nav>a[href$="/guides"]{display:none!important}}
+.t16empty{margin:14px 0;padding:14px 16px;border:1px dashed var(--line);border-radius:var(--r-5);color:var(--muted);background:var(--soft)}
+@media (min-width:900px){.tablewrap{max-height:78vh;overflow:auto}.tablewrap thead th,.tablewrap tr:first-child>th{position:sticky;top:0;z-index:1;background:var(--card)}}
+@media print{.tablewrap{max-height:none!important;overflow:visible!important}}
+`;
+/** T16.25: footer column titles (Destinations, Filters, Data) and two filter hubs. */
+var FT16 = {
+	en: [
+		"Destinations",
+		"Filters",
+		"Data",
+		"Hotels by price",
+		"Coastal cities"
+	],
+	es: [
+		"Destinos",
+		"Filtros",
+		"Datos",
+		"Hoteles por precio",
+		"Ciudades de costa"
+	],
+	de: [
+		"Reiseziele",
+		"Filter",
+		"Daten",
+		"Hotels nach Preis",
+		"Städte an der Küste"
+	],
+	fr: [
+		"Destinations",
+		"Filtres",
+		"Données",
+		"Hôtels par prix",
+		"Villes côtières"
+	],
+	it: [
+		"Destinazioni",
+		"Filtri",
+		"Dati",
+		"Hotel per prezzo",
+		"Città costiere"
+	],
+	pt: [
+		"Destinos",
+		"Filtros",
+		"Dados",
+		"Hotéis por preço",
+		"Cidades costeiras"
+	],
+	da: [
+		"Destinationer",
+		"Filtre",
+		"Data",
+		"Hoteller efter pris",
+		"Kystbyer"
+	]
+};
+var CH16 = {
+	en: [
+		"Guest score on Booking.com (out of 10)",
+		"Distance to the centre (km)",
+		"Same figures as the table above."
+	],
+	es: [
+		"Nota de los huéspedes en Booking.com (sobre 10)",
+		"Distancia al centro (km)",
+		"Las mismas cifras que la tabla de arriba."
+	],
+	de: [
+		"Gästebewertung auf Booking.com (von 10)",
+		"Entfernung zum Zentrum (km)",
+		"Dieselben Zahlen wie in der Tabelle oben."
+	],
+	fr: [
+		"Note des clients sur Booking.com (sur 10)",
+		"Distance du centre (km)",
+		"Les mêmes chiffres que le tableau ci-dessus."
+	],
+	it: [
+		"Voto degli ospiti su Booking.com (su 10)",
+		"Distanza dal centro (km)",
+		"Gli stessi dati della tabella qui sopra."
+	],
+	pt: [
+		"Nota dos hóspedes no Booking.com (de 10)",
+		"Distância ao centro (km)",
+		"Os mesmos números da tabela acima."
+	],
+	da: [
+		"Gæstebedømmelse på Booking.com (ud af 10)",
+		"Afstand til centrum (km)",
+		"De samme tal som i tabellen ovenfor."
+	]
+};
+var LOC16 = {
+	en: "en-GB",
+	es: "es-ES",
+	de: "de-DE",
+	fr: "fr-FR",
+	it: "it-IT",
+	pt: "pt-PT",
+	da: "da-DK"
+};
+var COL16 = {
+	budget: "var(--budget)",
+	value: "var(--value)",
+	lux: "var(--lux)"
+};
+/** T16.13: two small SVG bar charts (guest score and distance) under the comparison table. Drawn from the same numbers. */
+function chart16(rows, dist, L) {
+	const t = CH16[L] ?? CH16.en;
+	const f1 = (n) => n.toLocaleString(LOC16[L] ?? "en-GB", {
+		minimumFractionDigits: 1,
+		maximumFractionDigits: 1
+	});
+	const one = (title, vals, max) => {
+		if (vals.filter((v) => v != null && isFinite(v)).length < 2) return "";
+		const H = rows.length * 30 + 4;
+		return `<figure class="t16ch"><figcaption>${title}</figcaption><svg viewBox="0 0 460 ${H}" width="460" height="${H}" aria-hidden="true" focusable="false">${rows.map(([lab, k], i) => {
+			const v = vals[i];
+			const w = v == null || !isFinite(v) ? 0 : Math.max(2, Math.round(v / max * 300));
+			return `<text x="0" y="${i * 30 + 19}" class="l">${lab.replace(/&/g, "&amp;").replace(/</g, "&lt;")}</text><rect x="110" y="${i * 30 + 6}" width="${w}" height="18" rx="4" style="fill:${COL16[k] ?? "var(--ink)"}"/><text x="${116 + w}" y="${i * 30 + 19}" class="v">${v == null ? "–" : f1(v)}</text>`;
+		}).join("")}</svg></figure>`;
+	};
+	const a = one(t[0], rows.map((r) => r[2]), 10);
+	const b = dist ? one(t[1], dist, Math.max(...dist, 1)) : "";
+	return a || b ? `<div class="t16chs">${a}${b}<p class="note">${t[2]}</p></div>` : "";
+}
+var MP16 = {
+	en: (c, n) => `Map of the ${n} cities in ${c} with a top 3`,
+	es: (c, n) => `Mapa de las ${n} ciudades de ${c} con top 3`,
+	de: (c, n) => `Karte der ${n} Städte in ${c} mit Top 3`,
+	fr: (c, n) => `Carte des ${n} villes de ${c} avec un top 3`,
+	it: (c, n) => `Mappa delle ${n} città di ${c} con una top 3`,
+	pt: (c, n) => `Mapa das ${n} cidades de ${c} com top 3`,
+	da: (c, n) => `Kort over de ${n} byer i ${c} med top 3`
+};
+var ex16 = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
+/** T16.16: country header map. One dot per city from its coordinates (equirectangular, scaled by latitude); each dot links to the city. */
+function countryMap16(cities, cname, L) {
+	const pts = cities.filter((c) => isFinite(c.lat) && isFinite(c.lng));
+	if (pts.length < 2) return "";
+	const lat0 = pts.reduce((a, c) => a + c.lat, 0) / pts.length;
+	const k = Math.cos(lat0 * Math.PI / 180);
+	const xs = pts.map((c) => c.lng * k), ys = pts.map((c) => -c.lat);
+	const x0 = Math.min(...xs), x1 = Math.max(...xs), y0 = Math.min(...ys), y1 = Math.max(...ys);
+	const span = Math.max(x1 - x0, y1 - y0, .5);
+	const W = 640, pad = 24;
+	const sc = 592 / span;
+	const w = Math.round((x1 - x0) * sc + 48), h = Math.max(120, Math.round((y1 - y0) * sc + 48));
+	const cx = (i) => Math.round(((xs[i] - x0) * sc + pad + (W - w) / 2) * 10) / 10;
+	const cy = (i) => Math.round(((ys[i] - y0) * sc + pad) * 10) / 10;
+	const order = pts.map((_c, i) => i).sort((a, b) => (pts[b].w ?? 0) - (pts[a].w ?? 0));
+	const lab = /* @__PURE__ */ new Set();
+	const placed = [];
+	for (const i of order) {
+		if (lab.size >= 10) break;
+		if (placed.some(([x, y]) => Math.abs(x - cx(i)) < 90 && Math.abs(y - cy(i)) < 18)) continue;
+		placed.push([cx(i), cy(i)]);
+		lab.add(pts[i].slug);
+	}
+	const dots = pts.map((c, i) => `<a href="${ex16(c.href)}"><title>${ex16(c.name)}</title><circle cx="${cx(i)}" cy="${cy(i)}" r="${lab.has(c.slug) ? 5 : 3.5}"/>${lab.has(c.slug) ? `<text x="${cx(i) + 8}" y="${cy(i) + 4}">${ex16(c.name)}</text>` : ""}</a>`).join("");
+	const t = (MP16[L] ?? MP16.en)(cname, pts.length);
+	return `<figure class="t16map"><svg viewBox="0 0 ${W} ${h}" width="${W}" height="${h}" role="img" aria-label="${ex16(t)}">${dots}</svg><figcaption>${ex16(t)}</figcaption></figure>`;
+}
+/** T16.29: "clear all" on /saved. */
+var CLR16 = {
+	en: "Clear all",
+	es: "Vaciar todo",
+	de: "Alle entfernen",
+	fr: "Tout effacer",
+	it: "Svuota tutto",
+	pt: "Limpar tudo",
+	da: "Ryd alle"
+};
 var city_names_default = {
 	"a-coruna-spain": {
 		"da": "La Coruña",
@@ -4013,7 +4466,7 @@ document.addEventListener('click',function(e){var b=e.target.closest('[data-shar
 var me=document.querySelector('[data-track]');if(me){var r=ls('t3-recent')||[],d=JSON.parse(me.getAttribute('data-track'));r=r.filter(function(x){return x.s!==d.s});r.unshift(d);ls('t3-recent',r.slice(0,10))}
 document.querySelectorAll('[data-recent]').forEach(function(box){var r=(ls('t3-recent')||[]).filter(function(x){return !me||x.s!==JSON.parse(me.getAttribute('data-track')).s}).slice(0,8);if(!r.length)return;box.hidden=false;box.querySelector('.chipsrow').innerHTML=r.map(function(x){return '<a href="'+pre+'/'+x.s+'">'+esc(x.c)+'</a>'}).join('')});
 /* saved page */
-var sv=document.querySelector('[data-savedpage]');if(sv){var draw=function(){var f=favs();sv.innerHTML=f.length?f.map(function(x,i){return '<div class="it '+esc(x.cat)+'">'+(x.img?'<img src="'+esc(x.img)+'" alt="" loading="lazy" referrerpolicy="no-referrer">':'')+'<div><small>'+esc(x.lbl)+' · '+esc(x.c)+'</small><b>'+esc(x.n)+'</b><small>'+esc(x.p||'')+'</small></div>'+((x.u||'').indexOf('https://www.anrdoezrs.net/')===0||(x.u||'').indexOf('https://www.booking.com/')===0?'<a class="bkb" href="'+esc(x.u)+'" rel="sponsored nofollow noopener" target="_blank" data-t="check_availability" data-city="'+esc(x.s)+'" data-cat="'+esc(x.cat)+'" data-p="booking-saved">'+esc(sv.getAttribute('data-bk')||'Booking.com')+'<span aria-hidden="true"> ↗</span></a>':'')+'<a class="btn ghost" href="'+pre+'/'+esc(x.s)+'#'+esc(x.cat)+'">'+esc(S.open)+'</a><button class="tbtn" data-rm="'+i+'" aria-label="'+esc(S.remove)+'">✕</button></div>'}).join(''):'<p class="lead">'+esc(S.empty)+'</p>'};draw();sv.addEventListener('click',function(e){var b=e.target.closest('[data-rm]');if(!b)return;var f=favs();f.splice(+b.getAttribute('data-rm'),1);ls('t3-fav',f);draw();savedCount()})}
+var sv=document.querySelector('[data-savedpage]');if(sv){var draw=function(){var f=favs();sv.innerHTML=f.length?f.map(function(x,i){return '<div class="it '+esc(x.cat)+'">'+(x.img?'<img src="'+esc(x.img)+'" alt="" loading="lazy" referrerpolicy="no-referrer">':'')+'<div><small>'+esc(x.lbl)+' · '+esc(x.c)+'</small><b>'+esc(x.n)+'</b><small>'+esc(x.p||'')+'</small></div>'+((x.u||'').indexOf('https://www.anrdoezrs.net/')===0||(x.u||'').indexOf('https://www.booking.com/')===0?'<a class="bkb" href="'+esc(x.u)+'" rel="sponsored nofollow noopener" target="_blank" data-t="check_availability" data-city="'+esc(x.s)+'" data-cat="'+esc(x.cat)+'" data-p="booking-saved">'+esc(sv.getAttribute('data-bk')||'Booking.com')+'<span aria-hidden="true"> ↗</span></a>':'')+'<a class="btn ghost" href="'+pre+'/'+esc(x.s)+'#'+esc(x.cat)+'">'+esc(S.open)+'</a><button class="tbtn" data-rm="'+i+'" aria-label="'+esc(S.remove)+'">✕</button></div>'}).join('')+(f.length>1&&sv.getAttribute('data-clear')?'<p class="t16clr"><button type="button" class="btn ghost" data-clearall>'+esc(sv.getAttribute('data-clear'))+'</button></p>':''):'<p class="lead t16empty">'+esc(S.empty)+'</p>'};draw();sv.addEventListener('click',function(e){if(e.target.closest('[data-clearall]')){ls('t3-fav',[]);draw();savedCount();return}var b=e.target.closest('[data-rm]');if(!b)return;var f=favs();f.splice(+b.getAttribute('data-rm'),1);ls('t3-fav',f);draw();savedCount()})}
 /* currency */
 var CUR={EUR:1,GBP:.86,USD:1.08,DKK:7.46,SEK:11.4,NOK:11.6,CHF:.94};var cr=ls('t3-rates');if(cr&&Date.now()-cr.t<864e5)Object.assign(CUR,cr.r);else fetch('/api/rates').then(function(r){return r.json()}).then(function(j){if(j&&j.rates){Object.assign(CUR,j.rates);ls('t3-rates',{t:Date.now(),r:j.rates});paint()}}).catch(function(){});
 function guessCur(){var l=(navigator.language||'').toLowerCase();if(/-gb$/.test(l))return'GBP';if(/-us$/.test(l))return'USD';if(/^da/.test(l))return'DKK';if(/^sv/.test(l))return'SEK';if(/^(nb|nn|no)/.test(l))return'NOK';if(/-ch$/.test(l))return'CHF';return'EUR'}
@@ -96512,7 +96965,6 @@ var MANIFEST = JSON.stringify({
 		}
 	]
 });
-var CSS_DP = ".t3dp-btn{all:unset;box-sizing:border-box;display:block;width:100%;min-height:30px;cursor:pointer;font:600 15px/1.3 Inter,system-ui,sans-serif;color:#16202e;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}\n.t3dp-btn.empty{color:#4f5b6b;font-weight:500}\n.t3dp-btn:focus-visible{outline:2px solid #d83b51;outline-offset:3px;border-radius:6px}\n.t3-citybar .t3dp-btn,form .t3dp-btn{font-size:14px;padding:8px 10px;border:1px solid rgba(127,127,127,.3);border-radius:10px;background:rgba(127,127,127,.06);color:inherit;margin-top:4px}\nhtml.t3dp-open,html.t3dp-open body{overflow:hidden}\nhtml.t3dp-open #v2-sticky,html.t3dp-open .sticky3,html.t3dp-open [class*=lang-toast],html.t3dp-open .t3-langbar{display:none!important}\n.t3dp{position:fixed;inset:0;z-index:2147483000;display:flex;align-items:center;justify-content:center;font-family:Inter,system-ui,sans-serif;color:#16202e}\n.t3dp[hidden]{display:none}\n.t3dp-bd{position:absolute;inset:0;background:rgba(10,16,26,.45);backdrop-filter:blur(2px)}\n.t3dp-p{position:relative;background:#fff;border-radius:22px;box-shadow:0 30px 80px rgba(0,0,0,.35);width:min(680px,94vw);max-height:92vh;display:flex;flex-direction:column;padding:16px 18px 14px;animation:t3dpIn .18s ease-out}\n@keyframes t3dpIn{from{transform:translateY(12px);opacity:0}to{transform:none;opacity:1}}\n.t3dp-h{display:flex;align-items:center;gap:8px}\n.t3dp-s{all:unset;cursor:pointer;flex:1;border:1.5px solid #e3e7ee;border-radius:14px;padding:8px 12px;display:flex;flex-direction:column;gap:2px;min-width:0}\n.t3dp-s small{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#7a8594}\n.t3dp-s b{font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}\n.t3dp-s.on{border-color:#d83b51;box-shadow:0 0 0 3px rgba(216,59,81,.12)}\n.t3dp-ar{color:#9aa3af}\n.t3dp-c{all:unset;cursor:pointer;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-size:16px;color:#4a5566;flex:none}\n.t3dp-c:hover{background:#f1f3f6}\n.t3dp-hint{margin:10px 2px 10px;font-size:13px;color:#4a5566;min-height:18px}\n.t3dp-wk{display:none}\n.t3dp-nav{display:flex;justify-content:space-between;position:relative;height:0;z-index:2;pointer-events:none}\n.t3dp-nav[hidden]{display:none}\n.t3dp-nav button{all:unset;pointer-events:auto;cursor:pointer;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-size:22px;color:#16202e;background:#fff;border:1px solid #e3e7ee}\n.t3dp-nav button:disabled{opacity:.3;cursor:default}\n.t3dp-ms{display:grid;grid-template-columns:1fr 1fr;gap:26px;overflow:auto;padding:4px 2px}\n.t3dp-m h4{margin:4px 0 10px!important;padding:0!important;line-height:34px;font-family:inherit!important;text-align:center;font-size:15px;font-weight:700;text-transform:capitalize}\n.t3dp-g{display:grid;grid-template-columns:repeat(7,1fr);row-gap:2px}\n.t3dp-g button{all:unset;box-sizing:border-box;cursor:pointer;height:42px;display:grid;place-items:center;font-size:14px;font-weight:500;border-radius:999px;position:relative;z-index:0}\n.t3dp-g button:hover:not(:disabled){background:#f1f3f6}\n.t3dp-g button:disabled{color:#c3c9d2;cursor:default;text-decoration:line-through;text-decoration-color:#e3e7ee}\n.t3dp-g button.td{font-weight:800;color:#d83b51}\n.t3dp-g button.in,.t3dp-g button.pv{border-radius:0;background:#fde8eb}\n.t3dp-g button.pv{background:#fdf1f3}\n.t3dp-g button.a,.t3dp-g button.b{background:#16202e!important;color:#fff!important;font-weight:700}\n.t3dp-g button.a{border-radius:999px 0 0 999px}.t3dp-g button.b{border-radius:0 999px 999px 0}\n.t3dp-g button.a:not(.b):last-child,.t3dp-g button.a.lone{border-radius:999px}\n.t3dp-f{display:flex;align-items:center;gap:10px;border-top:1px solid #eef1f5;margin-top:10px;padding-top:12px}\n.t3dp-clr{all:unset;cursor:pointer;font-size:14px;font-weight:600;text-decoration:underline;color:#16202e;padding:8px 4px}\n.t3dp-n{flex:1;text-align:center;font-size:14px;font-weight:600;color:#4a5566}\n.t3dp-ok{all:unset;cursor:pointer;background:#d83b51;color:#fff;font-weight:700;font-size:15px;padding:12px 26px;border-radius:12px}\n.t3dp-ok:disabled{background:#e9b9c1;cursor:default}\n@media (max-width:720px){\n.t3dp{align-items:flex-end}\n.t3dp-p{width:100%;max-height:88vh;border-radius:22px 22px 0 0;padding:14px 14px calc(12px + env(safe-area-inset-bottom));animation:t3dpUp .22s ease-out}\n@keyframes t3dpUp{from{transform:translateY(40%)}to{transform:none}}\n.t3dp-wk{display:grid;grid-template-columns:repeat(7,1fr);text-align:center;font-size:11px;font-weight:700;color:#7a8594;padding:4px 0 6px;border-bottom:1px solid #eef1f5}\n.t3dp-ms{grid-template-columns:1fr;gap:18px;flex:1;-webkit-overflow-scrolling:touch}\n.t3dp-g button{height:46px;font-size:15px}\n.t3dp-ok{flex:none}\n}\n@media (prefers-color-scheme:dark){.t3dp-p{background:#141c28;color:#eef2f7}.t3dp-s{border-color:#2a3647}.t3dp-g button:hover:not(:disabled),.t3dp-c:hover{background:#1f2a3a}.t3dp-g button.in,.t3dp-g button.pv{background:#3a2230}.t3dp-g button.a,.t3dp-g button.b{background:#eef2f7!important;color:#141c28!important}.t3dp-nav button{background:#141c28;border-color:#2a3647;color:#eef2f7}.t3dp-f{border-color:#22303f}.t3dp-clr{color:#eef2f7}.t3dp-g button:disabled{color:#4a5566}}\n/* destination suggestions must sit above the date fields */\n.search .field:first-child{z-index:40}\n.search .suggestions{z-index:50!important;box-shadow:0 18px 40px rgba(0,0,0,.18)!important;max-height:min(360px,55vh);overflow:auto;background:#fff!important}\nbody:has(#destination:focus) #v2-sticky,body:has(.cityq:focus) #v2-sticky{display:none!important}\nbody.t3-herovis #v2-sticky{transform:translateY(160%)!important}\n\n.t3-citybar .t3dp-btn{border:0!important;background:none!important;padding:2px 0!important;margin:0!important;font-size:15px!important}\n@media (max-width:720px){.v3-quick{flex-wrap:nowrap!important;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}.v3-quick::-webkit-scrollbar{display:none}.v3-quick button{flex:none}}\n.t3dp-m h4{position:relative}.t3dp-mv{all:unset;cursor:pointer;position:absolute;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-size:22px;line-height:1;border:1px solid #e3e7ee;background:#fff;color:#16202e}.t3dp-mv.l{left:0}.t3dp-mv.r{right:0}.t3dp-mv:disabled{opacity:.3;cursor:default}.t3dp-mv:hover:not(:disabled){background:#f1f3f6}\n@media (prefers-color-scheme:dark){.t3dp-mv{background:#141c28;border-color:#2a3647;color:#eef2f7}}\n";
 var JS_DP = "/* Top3Hotels range date picker: one sheet for check-in + check-out, replaces the native date pickers.\n   The real <input type=date> fields stay in the DOM (hidden) so every existing handler keeps working. */\n(function () {\n  if (window.T3DP) return;\n  var L = (document.documentElement.lang || 'en').slice(0, 2);\n  var TX = {\n    en: { add: 'Add date', ci: 'Check in', co: 'Check out', n1: 'night', n: 'nights', clear: 'Clear', done: 'Done', pickCo: 'Now pick your check-out', pickCi: 'Pick your check-in', max: 'Max. 30 nights' },\n    es: { add: 'Elegir fecha', ci: 'Entrada', co: 'Salida', n1: 'noche', n: 'noches', clear: 'Borrar', done: 'Listo', pickCo: 'Ahora elige la salida', pickCi: 'Elige la entrada', max: 'Máx. 30 noches' },\n    de: { add: 'Datum wählen', ci: 'Anreise', co: 'Abreise', n1: 'Nacht', n: 'Nächte', clear: 'Löschen', done: 'Fertig', pickCo: 'Jetzt Abreise wählen', pickCi: 'Anreise wählen', max: 'Max. 30 Nächte' },\n    fr: { add: 'Choisir', ci: 'Arrivée', co: 'Départ', n1: 'nuit', n: 'nuits', clear: 'Effacer', done: 'OK', pickCo: 'Choisissez le départ', pickCi: \"Choisissez l'arrivée\", max: '30 nuits max.' },\n    it: { add: 'Scegli data', ci: 'Arrivo', co: 'Partenza', n1: 'notte', n: 'notti', clear: 'Cancella', done: 'Fatto', pickCo: 'Ora scegli la partenza', pickCi: \"Scegli l'arrivo\", max: 'Max 30 notti' },\n    pt: { add: 'Escolher', ci: 'Entrada', co: 'Saída', n1: 'noite', n: 'noites', clear: 'Limpar', done: 'Pronto', pickCo: 'Agora escolha a saída', pickCi: 'Escolha a entrada', max: 'Máx. 30 noites' },\n    da: { add: 'Vælg dato', ci: 'Indtjekning', co: 'Udtjekning', n1: 'nat', n: 'nætter', clear: 'Ryd', done: 'Færdig', pickCo: 'Vælg nu udtjekning', pickCi: 'Vælg indtjekning', max: 'Maks. 30 nætter' }\n  };\n  var t = TX[L] || TX.en;\n  var loc = document.documentElement.lang || 'en';\n  var DAY = 864e5;\n  function iso(d) { return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2); }\n  function parse(s) { if (!s || !/^\\d{4}-\\d{2}-\\d{2}$/.test(s)) return null; var p = s.split('-'); return new Date(+p[0], +p[1] - 1, +p[2]); }\n  function today() { var d = new Date(); d.setHours(0, 0, 0, 0); return d; }\n  function nights(a, b) { return Math.round((b - a) / DAY); }\n  var fmtShort = new Intl.DateTimeFormat(loc, { weekday: 'short', day: 'numeric', month: 'short' });\n  var fmtMonth = new Intl.DateTimeFormat(loc, { month: 'long', year: 'numeric' });\n  var wk = []; for (var i = 0; i < 7; i++) wk.push(new Intl.DateTimeFormat(loc, { weekday: 'narrow' }).format(new Date(2024, 0, 1 + i)));\n  function fire(el) { el.dispatchEvent(new Event('input', { bubbles: true })); el.dispatchEvent(new Event('change', { bubbles: true })); }\n\n  /* sheet */\n  var sh, st = {};\n  function build() {\n    sh = document.createElement('div'); sh.className = 't3dp'; sh.hidden = true;\n    sh.innerHTML = '<div class=\"t3dp-bd\" data-x></div><div class=\"t3dp-p\" role=\"dialog\" aria-modal=\"true\" aria-label=\"' + t.ci + ' / ' + t.co + '\">' +\n      '<div class=\"t3dp-h\"><button type=\"button\" class=\"t3dp-s\" data-s=\"0\"><small>' + t.ci + '</small><b></b></button><span class=\"t3dp-ar\">→</span><button type=\"button\" class=\"t3dp-s\" data-s=\"1\"><small>' + t.co + '</small><b></b></button><button type=\"button\" class=\"t3dp-c\" data-x aria-label=\"Close\">✕</button></div>' +\n      '<p class=\"t3dp-hint\" aria-live=\"polite\"></p><div class=\"t3dp-wk\"></div><div class=\"t3dp-nav\"><button type=\"button\" data-m=\"-1\" aria-label=\"Previous month\">‹</button><button type=\"button\" data-m=\"1\" aria-label=\"Next month\">›</button></div><div class=\"t3dp-ms\"></div>' +\n      '<div class=\"t3dp-f\"><button type=\"button\" class=\"t3dp-clr\">' + t.clear + '</button><span class=\"t3dp-n\"></span><button type=\"button\" class=\"t3dp-ok\">' + t.done + '</button></div></div>';\n    document.body.appendChild(sh);\n    sh.querySelector('.t3dp-wk').innerHTML = wk.map(function (w) { return '<span>' + w + '</span>'; }).join('');\n    sh.addEventListener('click', function (e) {\n      var x = e.target.closest('[data-x]'); if (x) return close();\n      var d = e.target.closest('button[data-d]'); if (d && !d.disabled) return pick(parse(d.dataset.d));\n      var m = e.target.closest('[data-m]'); if (m) { st.off = Math.max(0, st.off + (+m.dataset.m)); return render(); }\n      var s = e.target.closest('[data-s]'); if (s) { st.phase = +s.dataset.s; if (st.phase === 0) { } return render(); }\n      if (e.target.closest('.t3dp-clr')) { st.a = st.b = null; st.phase = 0; return render(); }\n      if (e.target.closest('.t3dp-ok')) return apply(true);\n    });\n    sh.addEventListener('mouseover', function (e) { var d = e.target.closest('button[data-d]'); if (d && st.phase === 1 && st.a) { st.hov = parse(d.dataset.d); paint(); } });\n    document.addEventListener('keydown', function (e) { if (!sh.hidden && e.key === 'Escape') close(); });\n  }\n  function monthHTML(y, m) {\n    var first = new Date(y, m, 1), lead = (first.getDay() + 6) % 7, days = new Date(y, m + 1, 0).getDate(), td = today(), h = '';\n    for (var i = 0; i < lead; i++) h += '<span></span>';\n    for (var d = 1; d <= days; d++) {\n      var dt = new Date(y, m, d), k = iso(dt), dis = dt < td || (st.phase === 1 && st.a && dt > st.a && nights(st.a, dt) > 30);\n      h += '<button type=\"button\" data-d=\"' + k + '\"' + (dis ? ' disabled' : '') + (+dt === +td ? ' class=\"td\"' : '') + ' aria-label=\"' + fmtShort.format(dt) + '\">' + d + '</button>';\n    }\n    return '<div class=\"t3dp-m\"><h4>' + fmtMonth.format(first) + '</h4><div class=\"t3dp-g\">' + h + '</div></div>';\n  }\n  function render() {\n    var base = today(), many = matchMedia('(max-width: 720px)').matches, n = many ? 12 : 2, h = '';\n    for (var i = 0; i < n; i++) { var dm = new Date(base.getFullYear(), base.getMonth() + (many ? 0 : st.off) + i, 1); h += monthHTML(dm.getFullYear(), dm.getMonth()); }\n    var ms = sh.querySelector('.t3dp-ms'); ms.innerHTML = h;\n    sh.querySelector('.t3dp-nav').hidden = true;\n    if (!many) {\n      var hs = ms.querySelectorAll('.t3dp-m h4');\n      hs[0].insertAdjacentHTML('afterbegin', '<button type=\"button\" class=\"t3dp-mv l\" data-m=\"-1\" aria-label=\"Previous month\"' + (st.off <= 0 ? ' disabled' : '') + '>‹</button>');\n      hs[hs.length - 1].insertAdjacentHTML('beforeend', '<button type=\"button\" class=\"t3dp-mv r\" data-m=\"1\" aria-label=\"Next month\">›</button>');\n    }\n    paint();\n  }\n  function paint() {\n    var a = st.a, b = st.b || (st.phase === 1 && a && st.hov && st.hov > a ? st.hov : null);\n    sh.querySelectorAll('button[data-d]').forEach(function (el) {\n      var d = parse(el.dataset.d), on = a && +d === +a, off = b && +d === +b;\n      el.classList.toggle('a', !!on); el.classList.toggle('b', !!off); el.classList.toggle('lone', !!(on && !b));\n      el.classList.toggle('in', !!(a && b && d > a && d < b));\n      el.classList.toggle('pv', !!(a && !st.b && b && d > a && d <= b));\n    });\n    var s = sh.querySelectorAll('.t3dp-s');\n    s[0].querySelector('b').textContent = st.a ? fmtShort.format(st.a) : t.add;\n    s[1].querySelector('b').textContent = st.b ? fmtShort.format(st.b) : t.add;\n    s[0].classList.toggle('on', st.phase === 0); s[1].classList.toggle('on', st.phase === 1);\n    var nn = st.a && st.b ? nights(st.a, st.b) : 0;\n    sh.querySelector('.t3dp-n').textContent = nn ? nn + ' ' + (nn === 1 ? t.n1 : t.n) : '';\n    sh.querySelector('.t3dp-hint').textContent = st.phase === 1 && st.a && !st.b ? t.pickCo + ' · ' + t.max : (!st.a ? t.pickCi : '');\n    sh.querySelector('.t3dp-ok').disabled = !(st.a && st.b);\n  }\n  function pick(d) {\n    if (st.phase === 0 || !st.a || d <= st.a) { st.a = d; st.b = null; st.phase = 1; st.hov = null; render(); return; }\n    st.b = d; st.hov = null; paint();\n    apply(false); setTimeout(close, 260);\n  }\n  function apply(andClose) {\n    if (!st.a || !st.b || !st.pair) return;\n    var ci = st.pair.ci, co = st.pair.co;\n    ci.value = iso(st.a); fire(ci);\n    co.value = iso(st.b); fire(co);\n    sync(st.pair);\n    try { document.dispatchEvent(new CustomEvent('t3:dates', { detail: { root: st.pair.root, ci: ci.value, co: co.value } })); } catch (_) {}\n    if (andClose) close();\n  }\n  function open(pair, phase) {\n    if (!sh) build();\n    st.pair = pair; st.a = parse(pair.ci.value); st.b = parse(pair.co.value);\n    if (st.a && st.a < today()) { st.a = st.b = null; }\n    st.phase = phase === 1 && st.a ? 1 : 0; if (st.phase === 0) { } st.off = 0; st.hov = null;\n    if (st.a) { var td = today(); st.off = Math.max(0, (st.a.getFullYear() - td.getFullYear()) * 12 + st.a.getMonth() - td.getMonth()); }\n    sh.hidden = false; document.documentElement.classList.add('t3dp-open');\n    render();\n    if (matchMedia('(max-width: 720px)').matches && st.a) {\n      var el = sh.querySelector('[data-d=\"' + iso(st.a) + '\"]'); if (el) { var m = el.closest('.t3dp-m'); if (m) m.scrollIntoView({ block: 'start' }); }\n    } else sh.querySelector('.t3dp-ms').scrollTop = 0;\n  }\n  function close() { if (!sh) return; sh.hidden = true; document.documentElement.classList.remove('t3dp-open'); }\n\n  /* attach to every check-in/check-out pair */\n  function label(el) { var d = parse(el.value); return d ? fmtShort.format(d) : t.add; }\n  function sync(pair) { pair.bi.textContent = label(pair.ci); pair.bo.textContent = label(pair.co); pair.bi.classList.toggle('empty', !pair.ci.value); pair.bo.classList.toggle('empty', !pair.co.value); }\n  function q(root, k) { return root.querySelector('#' + k + ',[name=' + k + '],[data-sync=' + k + ']'); }\n  function attach(root) {\n    var ci = q(root, 'checkin'), co = q(root, 'checkout');\n    if (!ci || !co || ci.dataset.t3dp || ci.type !== 'date') return;\n    var pair = { ci: ci, co: co, root: root }; root.__t3pair = pair;\n    [ci, co].forEach(function (inp, k) {\n      inp.dataset.t3dp = '1'; inp.classList.add('t3dp-real'); inp.style.display = 'none'; inp.tabIndex = -1; inp.setAttribute('aria-hidden', 'true');\n      var b = document.createElement('button'); b.type = 'button'; b.className = 't3dp-btn';\n      b.setAttribute('aria-haspopup', 'dialog'); b.setAttribute('aria-label', k ? t.co : t.ci);\n      inp.insertAdjacentElement('afterend', b);\n      b.addEventListener('click', function (e) { e.preventDefault(); e.stopPropagation(); open(pair, k); });\n      inp.addEventListener('change', function () { sync(pair); }); inp.addEventListener('input', function () { sync(pair); });\n      if (k) pair.bo = b; else pair.bi = b;\n    });\n    var lab = root.querySelectorAll('label[for=\"checkin\"],label[for=\"checkout\"]');\n    lab.forEach(function (l) { l.addEventListener('click', function (e) { e.preventDefault(); open(pair, l.getAttribute('for') === 'checkout' ? 1 : 0); }); });\n    sync(pair);\n    setInterval(function () { sync(pair); }, 1500);\n  }\n  function scan() { document.querySelectorAll('.search,.t3-citybar,form').forEach(attach); }\n  window.T3DP = { scan: scan, open: open, openFor: function (root, ph) { scan(); if (root && root.__t3pair) open(root.__t3pair, ph || 0); } };\n  var hero = document.querySelector('.hero');\n  if (hero && document.querySelector('.hero .search') && 'IntersectionObserver' in window) new IntersectionObserver(function (es) { document.body.classList.toggle('t3-herovis', es[0].isIntersecting); }, { threshold: 0.15 }).observe(hero);\n  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', scan); else scan();\n  new MutationObserver(function () { clearTimeout(scan.t); scan.t = setTimeout(scan, 120); }).observe(document.documentElement, { childList: true, subtree: true });\n})();\n";
 var gyms_index_default = {
 	file: "/assets/t3d/gyms.a31e866601.json",
@@ -99004,7 +99456,7 @@ var MORE = {
 		"Tilgængelighed"
 	]
 };
-var footMore15 = (L) => `<li><a href="${P(L === "es" ? "es" : "en", "/faq")}">${esc(MORE[L][0])}</a></li><li><a href="${P(L, "/photo-policy")}">${esc(MORE[L][1])}</a></li><li><a href="${P(L, "/accessibility")}">${esc(MORE[L][2])}</a></li><li><a href="/status">Status</a></li>`;
+var footMore15 = (L) => `<li><a href="${P(L === "es" ? "es" : "en", "/faq")}">${esc(MORE[L][0])}</a></li><li><a href="${P(L, "/photo-policy")}">${esc(MORE[L][1])}</a></li><li><a href="${P(L, "/accessibility")}">${esc(MORE[L][2])}</a></li>`;
 var SITE_UPDATED15 = "2026-11-26";
 function footLine15(L, path, date = SITE_UPDATED15) {
 	const pg = P(L, path);
@@ -157753,6 +158205,12 @@ var icsResp = (body, name) => new Response(body, { headers: {
 	"content-disposition": `attachment; filename=${name}`,
 	"cache-control": "public, max-age=3600, s-maxage=21600"
 } });
+/** T16.23: a colour bar behind each temperature (blue cold, red hot); the number stays as text. */
+var tbar16 = (t) => {
+	if (t == null || !isFinite(t)) return "";
+	const f = Math.max(0, Math.min(1, (t + 10) / 50));
+	return ` class="t16t" style="--t:${Math.round(f * 100)}%;--h:${Math.round(220 - f * 220)}"`;
+};
 var CT = {
 	en: {
 		"winter-sun": {
@@ -157854,7 +158312,7 @@ async function climatePage(k, L) {
 	})).sort((a, b) => b.c.lat - a.c.lat);
 	rows = rows.slice(0, 120);
 	const mon = k === "cool-summer" ? s.jul : s.jan;
-	const table = rows.length ? `<div style="overflow-x:auto"><table class="cltab"><thead><tr><th scope="col">${L === "es" ? "Ciudad" : "City"}</th>${k === "northern-lights" ? `<th scope="col">${s.lat}</th>` : ""}<th scope="col">${s.hi} (${mon})</th><th scope="col">${s.lo} (${mon})</th><th scope="col">${s.mm} (${mon})</th></tr></thead><tbody>${rows.map(({ c, v }) => `<tr><th scope="row"><a href="${P(L, "/" + c.slug)}">${esc(cityName(c, L))}</a>, ${esc(ctry(c))}</th>${k === "northern-lights" ? `<td>${c.lat.toFixed(1)}° N</td>` : ""}<td>${v.hi.length ? n1(v.hi[mi]) + " °C" : "–"}</td><td>${v.lo.length ? n1(v.lo[mi]) + " °C" : "–"}</td><td>${v.mm.length ? v.mm[mi] + " mm" : "–"}</td></tr>`).join("")}</tbody></table></div>` : `<p>${esc(s.none)}</p>`;
+	const table = rows.length ? `<div style="overflow-x:auto"><table class="cltab"><thead><tr><th scope="col">${L === "es" ? "Ciudad" : "City"}</th>${k === "northern-lights" ? `<th scope="col">${s.lat}</th>` : ""}<th scope="col">${s.hi} (${mon})</th><th scope="col">${s.lo} (${mon})</th><th scope="col">${s.mm} (${mon})</th></tr></thead><tbody>${rows.map(({ c, v }) => `<tr><th scope="row"><a href="${P(L, "/" + c.slug)}">${esc(cityName(c, L))}</a>, ${esc(ctry(c))}</th>${k === "northern-lights" ? `<td>${c.lat.toFixed(1)}° N</td>` : ""}<td${tbar16(v.hi[mi])}>${v.hi.length ? n1(v.hi[mi]) + " °C" : "–"}</td><td${tbar16(v.lo[mi])}>${v.lo.length ? n1(v.lo[mi]) + " °C" : "–"}</td><td>${v.mm.length ? v.mm[mi] + " mm" : "–"}</td></tr>`).join("")}</tbody></table></div>` : `<p>${esc(s.none)}</p>`;
 	const aur = k === "northern-lights" ? `<p><a href="/lists/northern-lights-tromso">${L === "es" ? "Temporada de auroras en Tromsø" : "Northern lights season in Tromsø"} →</a></p>` : "";
 	const body = `<p class="crumbs"><a href="${P(L, "/")}">${esc(s.home)}</a> › <a href="${P(L, "/lists")}">${esc(s.lists)}</a> › ${esc(t.h1)}</p><h1>${esc(t.h1)}<em>.</em></h1><p class="lead">${esc(t.lead)}</p><p class="note"><b>${esc(t.rule)}</b></p>${table}${aur}
 <p class="note">${esc(s.src)} ${esc(CL._fetched)}. ${L === "es" ? "Los valores locales pueden variar algo (costa, altitud)." : "Local values can differ slightly (coast, altitude)."}</p>
@@ -158684,7 +159142,7 @@ function hotelPhotos(bookingUrl, have = []) {
 	return out;
 }
 var FB_ON = "var f=(this.dataset.fb||'').split('|').filter(Boolean);this.removeAttribute('srcset');if(f.length){this.dataset.fb=f.slice(1).join('|');this.src=f[0]}else{this.onerror=null}";
-var bsSet = (u, sizes = "(max-width: 700px) 92vw, 400px") => /^https:\/\/cf\.bstatic\.com\/xdata\/images\/hotel\/max1024x768\//.test(String(u ?? "")) ? ` srcset="${esc(String(u).replace("/max1024x768/", "/max500/"))} 500w, ${esc(String(u).replace("/max1024x768/", "/max750/"))} 750w, ${esc(String(u))} 1024w" sizes="${sizes}"` : "";
+var bsSet = (u, sizes = "(max-width: 700px) 92vw, 400px") => /^https:\/\/cf\.bstatic\.com\/xdata\/images\/hotel\/max1024x768\//.test(String(u ?? "")) ? ` srcset="${esc(String(u).replace("/max1024x768/", "/max500/"))} 500w, ${esc(String(u).replace("/max1024x768/", "/max750/"))} 750w, ${esc(String(u))} 1024w, ${esc(String(u).replace("/max1024x768/", "/max1280x900/"))} 1280w" sizes="${sizes}"` : "";
 var fbAttr = (list) => ` data-fb="${esc(list.filter(Boolean).join("|"))}" onerror="${FB_ON}"`;
 var hotelKey = (h) => {
 	try {
@@ -159700,7 +160158,7 @@ function page(o) {
 	const alt = o.altLinks ? o.altLinks.map(([l, h]) => `<link rel="alternate" hreflang="${l}" href="${SITE}${h}">`).join("") + (o.altLinks.find(([l]) => l === "en") ? `<link rel="alternate" hreflang="x-default" href="${SITE}${o.altLinks.find(([l]) => l === "en")[1]}">` : "") : o.langs ? LANGS.map((l) => `<link rel="alternate" hreflang="${l}" href="${SITE}${P(l, o.path)}">`).join("") + `<link rel="alternate" hreflang="x-default" href="${SITE}${o.path}">` : o.alts ? o.alts.map((l) => `<link rel="alternate" hreflang="${l}" href="${SITE}${P(l, o.path)}">`).join("") + `<link rel="alternate" hreflang="x-default" href="${SITE}${o.path}">` : "";
 	const selL = o.langs ? LANGS : o.alts && o.alts.length > 1 && o.alts.includes(o.L) ? o.alts : null;
 	const langSel = selL ? `<label class="lang"><span class="sr" hidden>Language</span><select aria-label="Language" onchange="location.href=this.value">${selL.map((l) => `<option value="${P(l, o.path)}"${l === o.L ? " selected" : ""}>${T$1[l].name}</option>`).join("")}</select></label>` : "";
-	return `<!doctype html><html lang="${t.htmlLang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+	return icons16(`<!doctype html><html lang="${t.htmlLang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(o.title)}</title><meta name="description" content="${esc(o.description)}">
 ${o.noindex ? "<meta name=\"robots\" content=\"noindex,follow\">" : `<link rel="canonical" href="${esc(url)}"><meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">`}<link rel="alternate" type="application/feed+json" title="Top3Hotels" href="/feed.json">${alt}
 <meta property="og:site_name" content="Top3Hotels"><meta property="og:type" content="website"><meta property="og:url" content="${esc(url)}"><meta property="og:title" content="${esc(o.title)}"><meta property="og:description" content="${esc(o.description)}"><meta property="og:image" content="${esc(image)}">${image.includes("/og/") || image.endsWith("/og.png") ? "<meta property=\"og:image:width\" content=\"1200\"><meta property=\"og:image:height\" content=\"630\"><meta property=\"og:image:type\" content=\"image/png\">" : ""}<meta property="og:image:alt" content="${esc(o.title)}"><meta property="og:locale" content="${{
@@ -159714,19 +160172,14 @@ ${o.noindex ? "<meta name=\"robots\" content=\"noindex,follow\">" : `<link rel="
 	}[o.L] ?? "en_GB"}">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@mrstartups"><meta name="twitter:creator" content="@mrstartups"><meta name="twitter:title" content="${esc(o.title)}"><meta name="twitter:description" content="${esc(o.description)}"><meta name="twitter:image" content="${esc(image)}"><meta name="twitter:image:alt" content="${esc(o.title)}">
 <meta name="theme-color" content="#f7f8fa" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#0e1520" media="(prefers-color-scheme: dark)"><meta name="color-scheme" content="light dark"><meta name="application-name" content="Top3Hotels"><meta name="apple-mobile-web-app-title" content="Top3Hotels"><meta name="format-detection" content="telephone=no">${ICON_LINKS}<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin>
-<style>${CSS}
-${CSS_PLUS}
-${CSS_TRUST}${CSS_ALT}${BK_CSS}
-${CSS_MORE}
-${CSS_SOCIAL}
-${CSS_DP}${MEGA_CSS}${CSS15}</style><link rel="preconnect" href="https://cf.bstatic.com"><link rel="manifest" href="/manifest.webmanifest">
+<style>${HEAD_CSS16()}</style><link rel="preconnect" href="https://cf.bstatic.com"><link rel="manifest" href="/manifest.webmanifest">
 ${(o.ld ?? []).map((x) => `<script type="application/ld+json">${json(x)}<\/script>`).join("")}
 <script>window.t3track=function(e,p){try{(window.dataLayer=window.dataLayer||[]).push(Object.assign({event:e},p||{}));if(window.gtag)gtag('event',e,p||{});if(window.plausible)plausible(e,{props:p||{}})}catch(_){}};document.addEventListener('click',function(ev){var a=ev.target.closest&&ev.target.closest('[data-t]');if(a)t3track(a.dataset.t,{city:a.dataset.city,category:a.dataset.cat,provider:a.dataset.p})});<\/script>
-${consentScript(Z[o.L])}</head><body><style id="t3-v6">${V6_CSS}</style><a class="skip" href="#main">${o.L === "es" ? "Ir al contenido" : o.L === "de" ? "Zum Inhalt" : o.L === "fr" ? "Aller au contenu" : o.L === "it" ? "Vai al contenuto" : o.L === "pt" ? "Ir para o conteúdo" : o.L === "da" ? "Gå til indhold" : "Skip to content"}</a><div class="wrap">
+${consentScript(Z[o.L])}</head><body><style id="t3-v6">${tok16(V6_CSS)}</style><a class="skip" href="#main">${o.L === "es" ? "Ir al contenido" : o.L === "de" ? "Zum Inhalt" : o.L === "fr" ? "Aller au contenu" : o.L === "it" ? "Vai al contenuto" : o.L === "pt" ? "Ir para o conteúdo" : o.L === "da" ? "Gå til indhold" : "Skip to content"}</a><div class="wrap">
 <header class="top">${BRAND_LINK(P(o.L, "/"))}<nav aria-label="Main"><a href="${P(o.L, "/destinations")}">${t.allDest}</a><a class="hide-sm" href="${P(o.L, "/lists")}">${t.lists}</a>${megaMenu(o.L)}<a class="hide-sm" href="${P(o.L, "/guides")}">${esc((GT[o.L] ?? GT.en).guides)}</a><a class="hide-sm" href="${P(o.L, "/how-we-choose")}">${t.how}</a><a class="hide-sm hide-md" href="${P(o.L, "/map")}"><span aria-hidden="true">🗺</span> ${esc(M$1[o.L].map)}</a><a class="hide-sm hide-md" href="${P(o.L, "/affiliate-disclosure")}">${esc(M$1[o.L].money)}</a><a class="cta" href="/partners">${X[o.L].forHotels}</a><button type="button" class="tbtn" data-pal aria-label="${esc(Y[o.L].js["search"])}"><span aria-hidden="true">🔍</span> <span class="lbl">${esc(Y[o.L].js["search"])}</span> <kbd>/</kbd></button><a class="tbtn" href="${P(o.L, "/saved")}" aria-label="${esc(Y[o.L].js["saved"])}">♡<span class="n" data-savedn hidden></span></a>${langSel}</nav></header>
-${socialPill(o.L)}<main id="main" tabindex="-1">${o.body.replace(/<img(?![^>]*\bdecoding=)/g, "<img decoding=\"async\"")}</main>
+${socialPill(o.L)}<main id="main" tabindex="-1">${o.body.replace(/<img(?![^>]*\bdecoding=)/g, "<img decoding=\"async\"").replace(/<style>([\s\S]*?)<\/style>/g, (_m, c) => `<style>${tok16(c)}</style>`)}</main>
 <footer><div class="cols"><div>${BRAND_LINK(P(o.L, "/"), "Top3Hotels", 30)}<p style="max-width:340px;margin:12px 0 0">${t.footer} ${X[o.L].independent} · ${X[o.L].noPaid}.</p></div>
-<div><h3>${X[o.L].explore}</h3><ul><li><a href="${P(o.L, "/destinations")}">${t.allDest}</a></li><li><a href="${P(o.L, "/regions")}">${esc({
+<div><h3>${FT16[o.L][0]}</h3><ul><li><a href="${P(o.L, "/destinations")}">${t.allDest}</a></li><li><a href="${P(o.L, "/regions")}">${esc({
 		en: "Regions",
 		es: "Regiones",
 		de: "Regionen",
@@ -159734,7 +160187,9 @@ ${socialPill(o.L)}<main id="main" tabindex="-1">${o.body.replace(/<img(?![^>]*\b
 		it: "Regioni",
 		pt: "Regiões",
 		da: "Regioner"
-	}[o.L] ?? "Regions")}</a></li><li><a href="${P(o.L, "/lists")}">${t.lists}</a></li><li><a href="${P(GROWTH_LANGS.includes(o.L) ? o.L : "en", "/hotel-price-index")}">${{
+	}[o.L] ?? "Regions")}</a></li>${FOOT_COUNTRIES.map(([s, cc]) => `<li><a href="${P(o.L, "/country/" + s)}">${esc(new Intl.DisplayNames([o.L], { type: "region" }).of(cc) ?? s)}</a></li>`).join("")}<li><a href="${P(o.L, "/cheap-cities")}">${esc(Y[o.L].cheapNav)}</a></li><li><a href="${P(o.L, "/map")}"><span aria-hidden="true">🗺</span> ${esc(M$1[o.L].map)}</a></li><li><a href="/random"><span aria-hidden="true">🎲</span> ${esc(Y[o.L].js["surprise"])}</a></li>${o.L === "da" ? `<li><a href="${P(o.L, "/from/billund")}"><span aria-hidden="true">✈</span> Billund</a></li><li><a href="${P(o.L, "/from/aalborg")}"><span aria-hidden="true">✈</span> Aalborg</a></li><li><a href="${P(o.L, "/from/aarhus")}"><span aria-hidden="true">✈</span> Aarhus</a></li>` : ""}</ul></div>
+<div><h3>${FT16[o.L][1]}</h3><ul><li><a href="${P(o.L, "/lists")}">${t.lists}</a></li><li><a href="${P(o.L, "/hotels-by-price")}">${FT16[o.L][3]}</a></li><li><a href="${P(o.L, "/coastal-cities")}">${FT16[o.L][4]}</a></li><li><a href="${P(o.L, "/gyms")}">${o.L === "es" ? "Hoteles con gimnasio" : FL[o.L].gym}</a></li><li><a href="${P(o.L, "/pools")}">${o.L === "es" ? "Hoteles con piscina" : FL[o.L].pool}</a></li><li><a href="${P(o.L, "/guides")}">${esc((GT[o.L] ?? GT.en).guides)}</a></li></ul></div>
+<div><h3>${FT16[o.L][2]}</h3><ul><li><a href="${P(GROWTH_LANGS.includes(o.L) ? o.L : "en", "/hotel-price-index")}">${{
 		en: "Hotel Price Index",
 		es: "Índice de precios",
 		de: "Hotelpreisindex",
@@ -159750,7 +160205,7 @@ ${socialPill(o.L)}<main id="main" tabindex="-1">${o.body.replace(/<img(?![^>]*\b
 		it: "Dati aperti",
 		pt: "Dados abertos",
 		da: "Åbne data"
-	}[o.L]}</a></li>${o.L === "da" ? `<li><a href="${P(o.L, "/from/billund")}"><span aria-hidden="true">✈</span> Billund</a></li><li><a href="${P(o.L, "/from/aalborg")}"><span aria-hidden="true">✈</span> Aalborg</a></li><li><a href="${P(o.L, "/from/aarhus")}"><span aria-hidden="true">✈</span> Aarhus</a></li>` : ""}<li><a href="${P(o.L, "/cheap-cities")}">${esc(Y[o.L].cheapNav)}</a></li><li><a href="${P(o.L, "/map")}"><span aria-hidden="true">🗺</span> ${esc(M$1[o.L].map)}</a></li><li><a href="/random"><span aria-hidden="true">🎲</span> ${esc(Y[o.L].js["surprise"])}</a></li><li><a href="${P(o.L, "/gyms")}">${o.L === "es" ? "Hoteles con gimnasio" : FL[o.L].gym}</a></li><li><a href="${P(o.L, "/pools")}">${o.L === "es" ? "Hoteles con piscina" : FL[o.L].pool}</a></li>${FOOT_COUNTRIES.map(([s, cc]) => `<li><a href="${P(o.L, "/country/" + s)}">${esc(new Intl.DisplayNames([o.L], { type: "region" }).of(cc) ?? s)}</a></li>`).join("")}<li><a href="${P(o.L, "/press")}">${esc(INFO[o.L].press.title)}</a></li><li><a href="${P(o.L, "/guides")}">${esc((GT[o.L] ?? GT.en).guides)}</a></li></ul></div>
+	}[o.L]}</a></li><li><a href="${P(o.L, "/press")}">${esc(INFO[o.L].press.title)}</a></li><li><a href="/status">Status</a></li></ul></div>
 <div><h3>${X[o.L].company}</h3><ul><li><a href="/about">${X[o.L].about}</a></li><li><a href="${P(o.L, "/how-we-choose")}">${t.how}</a></li><li><a href="/partners">${X[o.L].forHotels}</a></li><li><a href="${P(o.L, "/contact")}">${X[o.L].contact}</a></li>${footMore15(o.L)}</ul></div>
 <div><h3>${X[o.L].legal}</h3><ul><li><a href="/privacy">${X[o.L].privacy}</a></li><li><a href="/cookies">${X[o.L].cookies}</a></li><li><a href="/terms">${X[o.L].terms}</a></li><li><a href="${P(o.L, "/imprint")}">${X[o.L].imprint}</a></li><li><a href="${P(o.L, "/affiliate-disclosure")}">${{
 		en: "Affiliate disclosure",
@@ -159765,13 +160220,82 @@ ${socialPill(o.L)}<main id="main" tabindex="-1">${o.body.replace(/<img(?![^>]*\b
 </div>${o.scripts ?? ""}<script>window.T3L=${json(o.L)};window.T3S=${json(Y[o.L].js)};${GLOBAL_JS}
 ${JS_PLUS}
 window.T3V=${json(M$1[o.L].voice)};${JS_MORE}
-${REPORT_JS}${INSTALL_JS}${VOTE_JS}<\/script><script>${JS_DP}<\/script><script>${V6_JS}<\/script></body></html>`;
+${REPORT_JS}${INSTALL_JS}${VOTE_JS}<\/script><script>${JS_DP}<\/script><script>${V6_JS}<\/script></body></html>`);
 }
+var headCss16 = "";
+var HEAD_CSS16 = () => headCss16 || (headCss16 = ROOT16 + "\n" + tok16(`${CSS}
+${CSS_PLUS}
+${CSS_TRUST}${CSS_ALT}${BK_CSS}
+${CSS_MORE}
+${CSS_SOCIAL}
+.t3dp-btn{all:unset;box-sizing:border-box;display:block;width:100%;min-height:30px;cursor:pointer;font:600 15px/1.3 Inter,system-ui,sans-serif;color:#16202e;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.t3dp-btn.empty{color:#4f5b6b;font-weight:500}
+.t3dp-btn:focus-visible{outline:2px solid #d83b51;outline-offset:3px;border-radius:6px}
+.t3-citybar .t3dp-btn,form .t3dp-btn{font-size:14px;padding:8px 10px;border:1px solid rgba(127,127,127,.3);border-radius:10px;background:rgba(127,127,127,.06);color:inherit;margin-top:4px}
+html.t3dp-open,html.t3dp-open body{overflow:hidden}
+html.t3dp-open #v2-sticky,html.t3dp-open .sticky3,html.t3dp-open [class*=lang-toast],html.t3dp-open .t3-langbar{display:none!important}
+.t3dp{position:fixed;inset:0;z-index:2147483000;display:flex;align-items:center;justify-content:center;font-family:Inter,system-ui,sans-serif;color:#16202e}
+.t3dp[hidden]{display:none}
+.t3dp-bd{position:absolute;inset:0;background:rgba(10,16,26,.45);backdrop-filter:blur(2px)}
+.t3dp-p{position:relative;background:#fff;border-radius:22px;box-shadow:0 30px 80px rgba(0,0,0,.35);width:min(680px,94vw);max-height:92vh;display:flex;flex-direction:column;padding:16px 18px 14px;animation:t3dpIn .18s ease-out}
+@keyframes t3dpIn{from{transform:translateY(12px);opacity:0}to{transform:none;opacity:1}}
+.t3dp-h{display:flex;align-items:center;gap:8px}
+.t3dp-s{all:unset;cursor:pointer;flex:1;border:1.5px solid #e3e7ee;border-radius:14px;padding:8px 12px;display:flex;flex-direction:column;gap:2px;min-width:0}
+.t3dp-s small{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#7a8594}
+.t3dp-s b{font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.t3dp-s.on{border-color:#d83b51;box-shadow:0 0 0 3px rgba(216,59,81,.12)}
+.t3dp-ar{color:#9aa3af}
+.t3dp-c{all:unset;cursor:pointer;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-size:16px;color:#4a5566;flex:none}
+.t3dp-c:hover{background:#f1f3f6}
+.t3dp-hint{margin:10px 2px 10px;font-size:13px;color:#4a5566;min-height:18px}
+.t3dp-wk{display:none}
+.t3dp-nav{display:flex;justify-content:space-between;position:relative;height:0;z-index:2;pointer-events:none}
+.t3dp-nav[hidden]{display:none}
+.t3dp-nav button{all:unset;pointer-events:auto;cursor:pointer;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-size:22px;color:#16202e;background:#fff;border:1px solid #e3e7ee}
+.t3dp-nav button:disabled{opacity:.3;cursor:default}
+.t3dp-ms{display:grid;grid-template-columns:1fr 1fr;gap:26px;overflow:auto;padding:4px 2px}
+.t3dp-m h4{margin:4px 0 10px!important;padding:0!important;line-height:34px;font-family:inherit!important;text-align:center;font-size:15px;font-weight:700;text-transform:capitalize}
+.t3dp-g{display:grid;grid-template-columns:repeat(7,1fr);row-gap:2px}
+.t3dp-g button{all:unset;box-sizing:border-box;cursor:pointer;height:42px;display:grid;place-items:center;font-size:14px;font-weight:500;border-radius:999px;position:relative;z-index:0}
+.t3dp-g button:hover:not(:disabled){background:#f1f3f6}
+.t3dp-g button:disabled{color:#c3c9d2;cursor:default;text-decoration:line-through;text-decoration-color:#e3e7ee}
+.t3dp-g button.td{font-weight:800;color:#d83b51}
+.t3dp-g button.in,.t3dp-g button.pv{border-radius:0;background:#fde8eb}
+.t3dp-g button.pv{background:#fdf1f3}
+.t3dp-g button.a,.t3dp-g button.b{background:#16202e!important;color:#fff!important;font-weight:700}
+.t3dp-g button.a{border-radius:999px 0 0 999px}.t3dp-g button.b{border-radius:0 999px 999px 0}
+.t3dp-g button.a:not(.b):last-child,.t3dp-g button.a.lone{border-radius:999px}
+.t3dp-f{display:flex;align-items:center;gap:10px;border-top:1px solid #eef1f5;margin-top:10px;padding-top:12px}
+.t3dp-clr{all:unset;cursor:pointer;font-size:14px;font-weight:600;text-decoration:underline;color:#16202e;padding:8px 4px}
+.t3dp-n{flex:1;text-align:center;font-size:14px;font-weight:600;color:#4a5566}
+.t3dp-ok{all:unset;cursor:pointer;background:#d83b51;color:#fff;font-weight:700;font-size:15px;padding:12px 26px;border-radius:12px}
+.t3dp-ok:disabled{background:#e9b9c1;cursor:default}
+@media (max-width:720px){
+.t3dp{align-items:flex-end}
+.t3dp-p{width:100%;max-height:88vh;border-radius:22px 22px 0 0;padding:14px 14px calc(12px + env(safe-area-inset-bottom));animation:t3dpUp .22s ease-out}
+@keyframes t3dpUp{from{transform:translateY(40%)}to{transform:none}}
+.t3dp-wk{display:grid;grid-template-columns:repeat(7,1fr);text-align:center;font-size:11px;font-weight:700;color:#7a8594;padding:4px 0 6px;border-bottom:1px solid #eef1f5}
+.t3dp-ms{grid-template-columns:1fr;gap:18px;flex:1;-webkit-overflow-scrolling:touch}
+.t3dp-g button{height:46px;font-size:15px}
+.t3dp-ok{flex:none}
+}
+@media (prefers-color-scheme:dark){.t3dp-p{background:#141c28;color:#eef2f7}.t3dp-s{border-color:#2a3647}.t3dp-g button:hover:not(:disabled),.t3dp-c:hover{background:#1f2a3a}.t3dp-g button.in,.t3dp-g button.pv{background:#3a2230}.t3dp-g button.a,.t3dp-g button.b{background:#eef2f7!important;color:#141c28!important}.t3dp-nav button{background:#141c28;border-color:#2a3647;color:#eef2f7}.t3dp-f{border-color:#22303f}.t3dp-clr{color:#eef2f7}.t3dp-g button:disabled{color:#4a5566}}
+/* destination suggestions must sit above the date fields */
+.search .field:first-child{z-index:40}
+.search .suggestions{z-index:50!important;box-shadow:0 18px 40px rgba(0,0,0,.18)!important;max-height:min(360px,55vh);overflow:auto;background:#fff!important}
+body:has(#destination:focus) #v2-sticky,body:has(.cityq:focus) #v2-sticky{display:none!important}
+body.t3-herovis #v2-sticky{transform:translateY(160%)!important}
+
+.t3-citybar .t3dp-btn{border:0!important;background:none!important;padding:2px 0!important;margin:0!important;font-size:15px!important}
+@media (max-width:720px){.v3-quick{flex-wrap:nowrap!important;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}.v3-quick::-webkit-scrollbar{display:none}.v3-quick button{flex:none}}
+.t3dp-m h4{position:relative}.t3dp-mv{all:unset;cursor:pointer;position:absolute;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-size:22px;line-height:1;border:1px solid #e3e7ee;background:#fff;color:#16202e}.t3dp-mv.l{left:0}.t3dp-mv.r{right:0}.t3dp-mv:disabled{opacity:.3;cursor:default}.t3dp-mv:hover:not(:disabled){background:#f1f3f6}
+@media (prefers-color-scheme:dark){.t3dp-mv{background:#141c28;border-color:#2a3647;color:#eef2f7}}
+${MEGA_CSS}${CSS15}`) + CSS16);
 var html = (body, status = 200, cache = "public, max-age=600, s-maxage=86400") => new Response(uiL10n(frTypo(body)), {
 	status,
 	headers: {
 		"content-type": "text/html; charset=utf-8",
-		"cache-control": cache
+		"cache-control": /s-maxage=/.test(cache) && !/stale-while-revalidate/.test(cache) ? cache + ", stale-while-revalidate=86400" : cache
 	}
 });
 var ALT_TXT = {
@@ -160412,7 +160936,7 @@ async function cityPage(city0, L) {
 		description,
 		path,
 		body: `<style>${C4_CSS}</style><span hidden data-c4live data-s="${esc(c4.saved)}" data-r="${esc(c4.removed)}"></span><p class="crumbs"><a href="${P(L, "/")}">${esc(t.home)}</a> › <a href="${P(L, `/country/${city.cslug}`)}">${flag(city.cc) ? `<span class="c4flag" aria-hidden="true">${flag(city.cc)}</span>` : ""}${esc(cname)}</a> › ${reg12 ? `<a href="${P(L, `/regions/${reg12.slug}`)}">${esc(reg12.name)}</a> › ` : ""}${esc(city.city)}</p>${hom4}
-<div class="hero${hero?.img ? "" : " noimg"}">${hero?.img ? `<img src="/api/img/${esc(city.id)}/big" srcset="/api/img/${esc(city.id)}/small 500w, /api/img/${esc(city.id)}/mid 960w, /api/img/${esc(city.id)}/big 1280w" sizes="(max-width: 960px) 100vw, 1180px" alt="${esc(city.city)}" fetchpriority="high" onerror="this.onerror=null;this.src='/api/img/${esc(city.id)}/orig'">` : ""}
+<div class="hero${hero?.img ? "" : " noimg"}">${hero?.img ? `<img src="/api/img/${esc(city.id)}/big" srcset="/api/img/${esc(city.id)}/small 500w, /api/img/${esc(city.id)}/mid 960w, /api/img/${esc(city.id)}/big 1280w" sizes="(max-width: 960px) 100vw, 1180px" alt="${esc(city.city)}" width="1280" height="850" loading="eager" fetchpriority="high" onerror="this.onerror=null;this.src='/api/img/${esc(city.id)}/orig'">` : ""}
 <div class="in"><p class="eyebrow">${esc(cname)} · Top 3</p><h1>${esc(t.h1(city.city))}<em>.</em></h1><p class="lead">${esc(t.lead(sample))}</p><p class="lead answer">${esc(description)}</p></div>${hero?.page ? `<small>${esc(t.photo)}: <a href="${esc(hero.page)}" rel="nofollow noopener" target="_blank">Wikimedia Commons</a></small>` : ""}</div>
 ${await nearIntro(city.slug, L).catch(() => "")}${localLangLink(city.cc, city.slug, L)}<p class="byline"><span class="ok">${esc(xt.reviewed(updated))}</span><span class="ok">${esc(xt.independent)}</span><span class="ok">${esc(xt.noPaid)}</span><a class="ok t15meth" href="${P(L, "/how-we-choose")}">${esc({
 			en: "Public method",
@@ -160479,7 +161003,11 @@ ${fw4}${price4}${fac4}${car4}${kids4}
 <section aria-labelledby="maph"><h2 id="maph">${esc(t.map)}</h2><div id="map" role="img" aria-label="${esc(t.mapHint)}"></div><div class="legend"><span><i style="background:#1f7a5a"></i>${esc(t.cat.Budget)}</span><span><i style="background:#d83b51"></i>${esc(t.cat["Best Value"])}</span><span><i style="background:#b8860b"></i>${esc(label(lux, L))}</span>${sights?.length ? `<span><i style="background:#46566a"></i>${esc(sights.map((s) => s.name).join(" · "))}</span>` : ""}</div>${route4}</section>
 <section aria-labelledby="cmp"><h2 id="cmp">${esc(t.compared(city.city))}</h2><div class="tablewrap"><table><thead><tr>${t.cols.map((c) => `<th>${esc(c)}</th>`).join("")}${allD ? `<th>${esc(c4.toCentre)}</th>` : ""}</tr></thead><tbody>
 ${hs.map((h, i) => `<tr><td>${esc(label(h, L))}</td><td>${bks(h, "t3city-t") ? `<a href="${esc(bks(h, "t3city-t"))}" rel="sponsored nofollow noopener" target="_blank" data-t="check_availability" data-city="${esc(city.slug)}" data-cat="${catKey(h)}" data-p="booking-table" aria-label="${esc(ariaH(h))}">${esc(h.name)}<span aria-hidden="true"> ↗</span></a>` : esc(h.name)}</td><td>${esc(h.area ?? "")}</td><td>${h.booking?.stars ?? "–"}</td><td${i === iTop ? " class=\"win\"" : ""}>${h.booking?.score != null ? scoreL(h.booking.score, L) : "–"} (${intL(h.booking?.count, L)})</td><td${i === iCheap ? " class=\"win\"" : ""}>${moneyL(h.offer?.nightly, L)}</td>${allD ? `<td${i === iCentral ? " class=\"win\"" : ""}>${km1(dC[i])} km</td>` : ""}</tr>`).join("")}
-</tbody></table></div><p class="note">${esc(c4.scale)}${ap ? ` ${esc(c4.srcAir)}` : ""}${ap && airport_web_default[ap.i] ? ` <a href="${esc(airport_web_default[ap.i])}" target="_blank" rel="nofollow noopener">${esc({
+</tbody></table></div>${chart16(hs.map((h) => [
+			label(h, L).slice(0, 16),
+			catKey(h),
+			h.booking?.score
+		]), allD ? dC.map((d) => Math.round(d * 10) / 10) : null, L)}<p class="note">${esc(c4.scale)}${ap ? ` ${esc(c4.srcAir)}` : ""}${ap && airport_web_default[ap.i] ? ` <a href="${esc(airport_web_default[ap.i])}" target="_blank" rel="nofollow noopener">${esc({
 			en: "Official website",
 			es: "Web oficial",
 			de: "Offizielle Website",
@@ -160684,6 +161212,14 @@ async function countryPage(cslug, L) {
 			...lx?.booking?.stars ? { luxStars: lx.booking.stars } : {}
 		};
 	}))}${countryIntro(rows, cname, L)}
+${countryMap16(rows.filter((r) => r.d).map(({ c, d }) => ({
+		slug: c.slug,
+		name: c.city,
+		lat: c.lat,
+		lng: c.lng,
+		href: P(L, "/" + c.slug),
+		w: Math.max(0, ...d.hotels.map((h) => h.candidateCount ?? 0))
+	})), cname, L)}
 <div class="tiles">${tiles.join("")}</div>
 <section><div class="tablewrap"><table><thead><tr><th>${esc(t.allDest)}</th><th>${esc(t.cat.Budget)}</th><th>${esc(t.cat["Best Value"])}</th><th>${esc(t.cat.Luxury)}</th></tr></thead><tbody>
 ${rows.filter((r) => r.d).map(({ c, d }) => `<tr><td><a href="${P(L, "/" + c.slug)}"><strong>${esc(c.city)}</strong></a></td>${d.hotels.map((h) => `<td>${hh.get(c.slug + "|" + h.name) ? `<a href="${hh.get(c.slug + "|" + h.name)}">${esc(h.name)}</a>` : esc(h.name)}<br><small>${h.booking?.score?.toFixed(1) ?? "–"}/10 · ${money(h.offer?.nightly)}</small></td>`).join("")}</tr>`).join("")}
@@ -161495,7 +162031,7 @@ function savedPage(L) {
 		path: "/saved",
 		noindex: true,
 		langs: true,
-		body: `<p class="crumbs"><a href="${P(L, "/")}">${esc(T$1[L].home)}</a> › ${esc(y.js["saved"])}</p><h1>${esc(y.savedTitle)}<em>.</em></h1><p class="lead">${esc(y.savedLead)}</p><section style="margin-top:26px"><div class="saved" data-savedpage data-bk="${esc(bkx(L).btn)}"></div></section><section hidden data-recent><h2>${esc(y.js["recent"])}</h2><div class="chipsrow"></div></section>`
+		body: `<p class="crumbs"><a href="${P(L, "/")}">${esc(T$1[L].home)}</a> › ${esc(y.js["saved"])}</p><h1>${esc(y.savedTitle)}<em>.</em></h1><p class="lead">${esc(y.savedLead)}</p><section style="margin-top:26px"><div class="saved" data-savedpage data-bk="${esc(bkx(L).btn)}" data-clear="${esc(CLR16[L] ?? CLR16.en)}"></div></section><section hidden data-recent><h2>${esc(y.js["recent"])}</h2><div class="chipsrow"></div></section>`
 	});
 }
 async function citiesJson() {
