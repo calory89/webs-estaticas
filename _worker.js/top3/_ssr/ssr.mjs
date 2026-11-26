@@ -98718,10 +98718,10 @@ function imprintL15(L) {
 }
 async function faqItems(L) {
 	const { index, byCountry } = await data();
-	const n = index.length, c = byCountry.size;
+	const n = Math.floor(index.length / 1e3) * 1e3, c = byCountry.size;
 	const ni = (x) => x.toLocaleString(L === "en" ? "en-US" : "es-ES");
 	if (L === "es") return [
-		["¿Qué es Top3Hotels?", `Una guía que muestra tres hoteles por ciudad: uno económico, uno calidad-precio y uno de lujo, elegidos con las mismas reglas públicas en ${ni(n)} destinos de ${c} países.`],
+		["¿Qué es Top3Hotels?", `Una guía que muestra tres hoteles por ciudad: uno económico, uno calidad-precio y uno de lujo, elegidos con las mismas reglas públicas en más de ${ni(n)} destinos de ${c} países.`],
 		["¿Cómo se eligen los tres hoteles?", "Con reglas fijas sobre la muestra de Booking.com para una estancia de referencia: nota y número mínimo de reseñas, precio más bajo para el económico, confianza en las reseñas cerca del precio mediano para calidad-precio y el cinco estrellas con mejor nota para lujo."],
 		["¿Puede un hotel pagar por aparecer?", "No. Ningún hotel puede pagar por entrar, subir o quedarse entre los tres."],
 		["¿Cómo gana dinero Top3Hotels?", "Algunos enlaces de reserva nos dan una comisión sin coste extra para ti. La comisión no cambia la elección, el orden ni el texto."],
@@ -98743,7 +98743,7 @@ async function faqItems(L) {
 		["Soy un hotel elegido, ¿qué puedo hacer?", "Puedes usar gratis la insignia Top 3 y pedirnos que corrijamos datos o fotos de tu hotel. Ver la página para hoteles."]
 	];
 	return [
-		["What is Top3Hotels?", `A guide that shows three hotels per city: one Budget, one Best Value and one Luxury pick, chosen by the same public rules in ${ni(n)} destinations in ${c} countries.`],
+		["What is Top3Hotels?", `A guide that shows three hotels per city: one Budget, one Best Value and one Luxury pick, chosen by the same public rules in more than ${ni(n)} destinations in ${c} countries.`],
 		["How are the three hotels chosen?", "By fixed rules on the Booking.com sample for one reference stay: a minimum score and review count, the lowest price for Budget, the strongest review confidence near the median price for Best Value and the best-reviewed five-star hotel for Luxury."],
 		["Can a hotel pay to be included?", "No. No hotel can pay to be included, moved up or kept among the three."],
 		["How does Top3Hotels make money?", "Some booking links earn us a commission at no extra cost to you. Commissions never change the picks, their order or the text."],
@@ -98808,8 +98808,8 @@ async function statusPage15() {
 	const hp = (await hotelPagesList()).length;
 	const per = (a, b) => b ? `${Math.round(a / b * 1e3) / 10} %` : "–";
 	const rows = [
-		["City pages", index.length.toLocaleString("en-US")],
-		["Countries", String(byCountry.size)],
+		["City pages in the stored catalogue", index.length.toLocaleString("en-US")],
+		["Countries in the stored catalogue", String(byCountry.size)],
 		["Picks (three per city)", picks.toLocaleString("en-US")],
 		["Hotel pages", hp.toLocaleString("en-US")],
 		["Picks with a Booking.com check date", `${days.length.toLocaleString("en-US")} (${per(days.length, picks)})`],
@@ -98823,7 +98823,7 @@ async function statusPage15() {
 		title: "Data status | Top3Hotels",
 		description: "How many cities, picks and hotel pages Top3Hotels has and when the stored Booking.com data was checked.",
 		path: "/status",
-		body: `${crumbs("en", "Status")}<h1>Data status<em>.</em></h1><p class="lead">Figures computed from the stored catalogue when this page is generated. Prices shown on city cards can be newer: our edge service refreshes them weekly, and every card shows its own check date.</p><div class="tablewrap"><table class="ix"><tbody>${rows.map(([k, v]) => `<tr><th scope="row">${esc(k)}</th><td>${esc(v)}</td></tr>`).join("")}</tbody></table></div><p class="note">Generated ${(/* @__PURE__ */ new Date()).toISOString().slice(0, 16).replace("T", " ")} UTC · <a href="/changelog">Changelog</a> · <a href="/sources">Sources</a> · <a href="/corrections">Corrections</a></p>`
+		body: `${crumbs("en", "Status")}<h1>Data status<em>.</em></h1><p class="lead">Figures computed from the stored catalogue when this page is generated. Our edge service adds newer destinations on top of it (the <a href="/">home page</a> counts all of them) and refreshes prices weekly; every card shows its own check date.</p><div class="tablewrap"><table class="ix"><tbody>${rows.map(([k, v]) => `<tr><th scope="row">${esc(k)}</th><td>${esc(v)}</td></tr>`).join("")}</tbody></table></div><p class="note">Generated ${(/* @__PURE__ */ new Date()).toISOString().slice(0, 16).replace("T", " ")} UTC · <a href="/changelog">Changelog</a> · <a href="/sources">Sources</a> · <a href="/corrections">Corrections</a></p>`
 	});
 }
 function forHotels15() {
