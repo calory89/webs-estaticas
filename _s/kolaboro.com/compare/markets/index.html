@@ -173,24 +173,34 @@
   var D = {}, MK = [], sel = [], TI = {}, TIN = 0;
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   function norm(s) { return String(s || '').toLowerCase().normalize ? String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '') : String(s || '').toLowerCase(); }
-  function pct(x, d) { return x == null ? null : (Math.round(x * Math.pow(10, d || 0)) / Math.pow(10, d || 0)) + '%'; }
+  function pct(x, d) { if (x == null) return null; var v = Math.round(x * Math.pow(10, d || 0)) / Math.pow(10, d || 0); return S ? fx(v) + (LG === 'fr' || LG === 'de' ? '\u00a0%' : '%') : v + '%'; }
   function a(href, txt) { return '<a href="' + esc(href) + '">' + txt + '</a>'; }
   function na(t) { return { na: true, h: esc(t) }; }
-  function nv(x) { return x == null ? 'n/a ' : x; }
+  function nv(x) { return x == null ? t('na', 'n/a') + ' ' : fx(x); }
+  // n40 L8: on the translated pages the strings come from /compare/markets/cm-tx.js (per language, chosen by <html lang>); English by default.
+  // Market names stay English in the address (?m=) and in data; pl() shows them in the page language, and typed names match in both.
+  var LG = String(document.documentElement.lang || 'en').slice(0, 2).toLowerCase(), S = null, LOC = null;
+  function t(k, en, o) { var v = S && S[k] != null ? S[k] : en; return o ? v.replace(/\{(\w+)\}/g, function (z, x) { return o[x] != null ? o[x] : z; }) : v; }
+  function pl(m) { return S && S.pl && S.pl[m] ? S.pl[m] : m; }
+  function plp(l) { return S ? String(l || '').split(', ').map(pl).join(', ') : l; }
+  function fx(x) { return S && typeof x === 'number' && isFinite(x) ? x.toLocaleString(LOC, { maximumFractionDigits: 3 }) : x; }
+  function f1(x) { return S ? x.toLocaleString(LOC, { minimumFractionDigits: 1, maximumFractionDigits: 1 }) : x.toFixed(1); }
+  function dL(x) { x = String(x == null ? '' : x); if (!S || !/^\d{4}-\d\d-\d\d/.test(x)) return x; try { var q = x.slice(0, 10).split('-'); return new Intl.DateTimeFormat(LOC, { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' }).format(new Date(Date.UTC(+q[0], +q[1] - 1, +q[2], 12))); } catch (e) { return x; } }
+  function en(map, v) { return S && S[map] && S[map][v] != null ? S[map][v] : v; }
   function med(xs) { xs = xs.filter(function (x) { return typeof x === 'number'; }).sort(function (a, b) { return a - b; }); if (!xs.length) return null; var m = xs.length >> 1; return xs.length % 2 ? xs[m] : (xs[m - 1] + xs[m]) / 2; }
   var CK = [['permit', 'permit number'], ['escrow', 'deposit protection'], ['progress', 'progress'], ['plans', 'plans'], ['record', 'track record'], ['returns_ok', 'no guaranteed returns']];
   function pub(c, k) { var v = (c.checks || {})[k]; if (k === 'permit') return v === 2; if (k === 'escrow') return v === true; if (k === 'progress') return v != null; return !!v; }
 
   function readSel() { try { var s = new URLSearchParams(location.search).get('m') || ''; return s.split(',').map(function (x) { return x.trim(); }).filter(Boolean); } catch (e) { return []; } }
-  function canon(name) { var n = norm(name); for (var i = 0; i < MK.length; i++) if (norm(MK[i]) === n) return MK[i]; return null; }
+  function canon(name) { var n = norm(name); for (var i = 0; i < MK.length; i++) if (norm(MK[i]) === n || norm(pl(MK[i])) === n) return MK[i]; return null; }
   function writeSel() {
     var q = sel.length ? '?m=' + sel.map(encodeURIComponent).join(',') : '';
     try { history.replaceState(null, '', location.pathname + q); } catch (e) {}
     $('cm-url').value = location.origin + location.pathname + q;
-    document.title = (sel.length ? 'Compare ' + sel.join(', ') : 'Compare off-plan markets side by side') + ' | Kolaboro';
+    document.title = (sel.length ? t('dt', 'Compare {l}', { l: sel.map(pl).join(t('sep', ', ')) }) : t('dt0', 'Compare off-plan markets side by side')) + ' | Kolaboro';
   }
   function chips() {
-    $('cm-pick').innerHTML = sel.map(function (m) { return '<span class="cm-chip">' + esc(m) + '<button type="button" data-rm="' + esc(m) + '" aria-label="Remove ' + esc(m) + '">×</button></span>'; }).join('') || '<span class="dc-note">No market picked yet. Try ' + ['Bali', 'Dubai', 'Phuket', 'Costa del Sol'].filter(canon).map(function (m) { return '<button type="button" class="dc-btn" data-add="' + esc(m) + '" style="min-height:34px;margin:2px">' + esc(m) + '</button>'; }).join(' ') + '</span>';
+    $('cm-pick').innerHTML = sel.map(function (m) { return '<span class="cm-chip">' + esc(pl(m)) + '<button type="button" data-rm="' + esc(m) + '" aria-label="' + esc(t('rm', 'Remove {m}', { m: pl(m) })) + '">×</button></span>'; }).join('') || '<span class="dc-note">' + t('none', 'No market picked yet. Try ') + ['Bali', 'Dubai', 'Phuket', 'Costa del Sol'].filter(canon).map(function (m) { return '<button type="button" class="dc-btn" data-add="' + esc(m) + '" style="min-height:34px;margin:2px">' + esc(pl(m)) + '</button>'; }).join(' ') + '</span>';
   }
 
   // ---------- figures per market ----------
@@ -201,41 +211,41 @@
     // projects and checks
     var n = C.length, sum = 0, mx = 0, conf = 0, perCk = {};
     C.forEach(function (c) { sum += c.score || 0; mx += c.max || 6; conf += c.vscore || 0; CK.forEach(function (k) { if (pub(c, k[0])) perCk[k[0]] = (perCk[k[0]] || 0) + 1; }); });
-    F.projects = { h: '<span class="big">' + n + '</span><small>' + esc(country) + ' · ' + a('/cases?market=' + encodeURIComponent(m), 'see them on Live cases') + '</small>' };
-    F.checks = n ? { h: '<span class="big">' + (sum / n).toFixed(1) + '</span> of 6 on average<small>' + sum + ' checks published in total, ' + conf + ' confirmed by a registry or independent source. ' + a('/how-we-score', 'How we score') + '</small>' } : na('No projects');
-    F.ckmix = n ? { h: CK.map(function (k) { return esc(k[1]) + ': ' + Math.round(100 * (perCk[k[0]] || 0) / n) + '%'; }).join('<br>') } : na('No projects');
+    F.projects = { h: '<span class="big">' + fx(n) + '</span><small>' + esc(pl(country)) + ' · ' + a('/cases?market=' + encodeURIComponent(m), t('seel', 'see them on Live cases')) + '</small>' };
+    F.checks = n ? { h: t('avg', '<span class="big">{v}</span> of 6 on average', { v: f1(sum / n) }) + '<small>' + t('cks', '{s} checks published in total, {c} confirmed by a registry or independent source. ', { s: fx(sum), c: fx(conf) }) + a('/how-we-score', t('hws', 'How we score')) + '</small>' } : na(t('noproj', 'No projects'));
+    F.ckmix = n ? { h: CK.map(function (k) { return esc(en('ck', k[1])) + ': ' + pct(100 * (perCk[k[0]] || 0) / n); }).join('<br>') } : na(t('noproj', 'No projects'));
     // transparency index
-    var t = TI[m];
-    F.ti = t ? { h: '<span class="big">' + t.index.toFixed(1) + '</span> / 100<small>Rank ' + t.rank + ' of ' + TIN + ' markets · disclosure ' + pct(100 * t.disclosure) + ', confirmed ' + pct(100 * t.confirmed) + ' · ' + a('/transparency-index/?m=' + encodeURIComponent(m), 'index page') + '</small>' }
-      : na('Not ranked: fewer than ' + window.KTI.MIN + ' projects');
+    var ti = TI[m];
+    F.ti = ti ? { h: '<span class="big">' + f1(ti.index) + '</span> / 100<small>' + t('rank', 'Rank {r} of {n} markets · disclosure {d}, confirmed {c} · ', { r: ti.rank, n: TIN, d: pct(100 * ti.disclosure), c: pct(100 * ti.confirmed) }) + a('/transparency-index/?m=' + encodeURIComponent(m), t('ipage', 'index page')) + '</small>' }
+      : na(t('notr', 'Not ranked: fewer than {n} projects', { n: window.KTI.MIN }));
     // delay index
     var dl = (D.delay.markets || []).filter(function (x) { return x.market === m; })[0];
-    F.delay = dl ? (dl.share_past_first == null ? { na: true, h: 'Too few dated projects (' + dl.with_date + ', minimum ' + D.delay.rules.min_sample + ')<small>' + a('/index/delays/', 'delay index') + '</small>' }
-      : { h: '<span class="big">' + dl.share_past_first + '%</span> past the first handover<small>' + dl.past_first + ' of ' + (dl.with_date - dl.completed) + ' dated projects not completed. Median ' + (dl.median_late == null ? 'n/a' : dl.median_late + ' months') + ' late, 90th percentile ' + (dl.p90_late == null ? 'n/a' : dl.p90_late + ' months') + '. ' + dl.moved + ' moved their date · ' + a('/index/delays/', 'delay index') + '</small>' }) : na('Not in the delay index');
+    F.delay = dl ? (dl.share_past_first == null ? { na: true, h: esc(t('dfew', 'Too few dated projects ({n}, minimum {m})', { n: dl.with_date, m: D.delay.rules.min_sample })) + '<small>' + a('/index/delays/', t('dix', 'delay index')) + '</small>' }
+      : { h: t('dpast', '<span class="big">{p}</span> past the first handover', { p: S ? pct(dl.share_past_first, 1) : dl.share_past_first + '%' }) + '<small>' + t('dsm', '{a} of {b} dated projects not completed. Median {m} late, 90th percentile {q}. {v} moved their date · ', { a: dl.past_first, b: dl.with_date - dl.completed, m: dl.median_late == null ? t('na', 'n/a') : t('mo', '{n} months', { n: fx(dl.median_late) }), q: dl.p90_late == null ? t('na', 'n/a') : t('mo', '{n} months', { n: fx(dl.p90_late) }), v: dl.moved }) + a('/index/delays/', t('dix', 'delay index')) + '</small>' }) : na(t('ndix', 'Not in the delay index'));
     // price index
     var pi = (D.price.markets || []).filter(function (x) { return x.market === m; })[0], last = pi && pi.index && pi.index[pi.index.length - 1], first = pi && pi.index && pi.index[0];
-    F.price = last ? { h: '<span class="big">' + last.index.toFixed(1) + '</span> on ' + esc(last.date) + '<small>Base 100 on ' + esc(first.date) + ', ' + pi.pairs_total + ' price pairs, ' + pi.changes_total + ' changes seen, ' + pi.projects_last + ' projects in the last snapshot. A few days of history only · ' + a('/index/prices/?market=' + encodeURIComponent(m), 'price index') + '</small>' } : na('No price series for this market yet');
+    F.price = last ? { h: t('pon', '<span class="big">{v}</span> on {d}', { v: f1(last.index), d: esc(dL(last.date)) }) + '<small>' + t('psm', 'Base 100 on {d}, {p} price pairs, {c} changes seen, {n} projects in the last snapshot. A few days of history only · ', { d: esc(dL(first.date)), p: pi.pairs_total, c: pi.changes_total, n: pi.projects_last }) + a('/index/prices/?market=' + encodeURIComponent(m), t('pix', 'price index')) + '</small>' } : na(t('nopi', 'No price series for this market yet'));
     // hazards
     var areas = (D.haz.areas || []).filter(function (x) { var parts = String(x.label).split(',').map(function (t) { return norm(t.trim()); }), tail = parts.slice(1); return tail.indexOf(norm(m)) >= 0 || (country && parts.length > 1 && parts[parts.length - 1] === norm(country)); });
     var hp = Object.keys(D.haz.projects || {}).filter(function (id) { var c = BY[id]; return c && c.market === m; }).map(function (id) { return D.haz.projects[id]; });
     var hh = [];
     areas.forEach(function (x) {
-      hh.push('<b>' + esc(x.label) + '</b>: height ' + nv(x.elev_m) + ' m, 100-year flood ' + nv(x.flood_river_m) + ' m river / ' + nv(x.flood_coast_m) + ' m coast, ' + (x.quakes ? x.quakes.m6 + ' quakes M6+ within 100 km since 1900' : 'quakes n/a') + ', ' + (x.tsunami ? x.tsunami.runups + ' tsunami run-ups within 50 km' : 'tsunami n/a') + (x.volcano && x.volcano.name ? ', volcano ' + esc(x.volcano.name) + ' at ' + x.volcano.dist_km + ' km' : ', no Holocene volcano within 100 km') + ' · ' + a('/hazards/?lat=' + x.lat + '&lng=' + x.lng, 'open'));
+      hh.push('<b>' + esc(plp(x.label)) + '</b>: ' + t('hz', 'height {e} m, 100-year flood {r} m river / {c} m coast, ', { e: nv(x.elev_m), r: nv(x.flood_river_m), c: nv(x.flood_coast_m) }) + (x.quakes ? t('hq', '{n} quakes M6+ within 100 km since 1900', { n: x.quakes.m6 }) : t('hqn', 'quakes n/a')) + t('sep', ', ') + (x.tsunami ? t('ht', '{n} tsunami run-ups within 50 km', { n: x.tsunami.runups }) : t('htn', 'tsunami n/a')) + (x.volcano && x.volcano.name ? t('hv', ', volcano {v} at {d} km', { v: esc(x.volcano.name), d: fx(x.volcano.dist_km) }) : t('hvn', ', no Holocene volcano within 100 km')) + ' · ' + a('/hazards/?lat=' + x.lat + '&lng=' + x.lng, t('hopen', 'open')));
     });
     if (hp.length) {
       var fl = hp.filter(function (h) { return (h.flood_river_m || 0) > 0 || (h.flood_coast_m || 0) > 0; }).length;
-      hh.push(hp.length + ' tracked project' + (hp.length === 1 ? '' : 's') + ' read at the site: median height ' + med(hp.map(function (h) { return h.elev_m; })) + ' m, ' + fl + ' with a 100-year flood depth above 0 m, median ' + med(hp.map(function (h) { return h.quakes && h.quakes.m6; })) + ' quakes M6+ nearby');
+      hh.push(t(hp.length === 1 ? 'hp1' : 'hp', hp.length === 1 ? '{n} tracked project read at the site: median height {e} m, {f} with a 100-year flood depth above 0 m, median {q} quakes M6+ nearby' : '{n} tracked projects read at the site: median height {e} m, {f} with a 100-year flood depth above 0 m, median {q} quakes M6+ nearby', { n: hp.length, e: fx(med(hp.map(function (h) { return h.elev_m; }))), f: fl, q: fx(med(hp.map(function (h) { return h.quakes && h.quakes.m6; }))) }));
     }
-    F.haz = hh.length ? { h: hh.join('<br>') + '<small>' + a('/data/hazards.json', 'hazards.json') + ', read ' + esc(D.haz.updated) + '</small>' } : na('No hazard survey area or project reading for this market yet');
+    F.haz = hh.length ? { h: hh.join('<br>') + '<small>' + a('/data/hazards.json', 'hazards.json') + esc(t('hread', ', read {d}', { d: dL(D.haz.updated) })) + '</small>' } : na(t('nohz', 'No hazard survey area or project reading for this market yet'));
     // promises
     var pr = (D.prom.markets || []).filter(function (x) { return x.market === m; })[0];
-    F.prom = pr ? { h: '<span class="big">' + pr.kept + '</span> kept, <span class="big">' + pr.broken + '</span> broken<small>' + pr.promises + ' dated promises from ' + pr.projects + ' projects: ' + pr.moved + ' moved, ' + pr.pending + ' pending, ' + pr.unknown + ' unknown' + (pr.months_moved_median != null ? '. Median move ' + pr.months_moved_median + ' months' : '') + ' · ' + a('/promises/', 'promise tracker') + '</small>' } : na('No dated promises read yet');
+    F.prom = pr ? { h: t('pkb', '<span class="big">{k}</span> kept, <span class="big">{b}</span> broken', { k: pr.kept, b: pr.broken }) + '<small>' + t('psm2', '{p} dated promises from {n} projects: {m} moved, {e} pending, {u} unknown', { p: pr.promises, n: pr.projects, m: pr.moved, e: pr.pending, u: pr.unknown }) + (pr.months_moved_median != null ? t('pmm', '. Median move {n} months', { n: fx(pr.months_moved_median) }) : '') + ' · ' + a('/promises/', t('ptr', 'promise tracker')) + '</small>' } : na(t('nopr', 'No dated promises read yet'));
     // registers
     var rg = (D.reg.registers || []).filter(function (r) { return r.market === m; });
     var how = 'market';
     if (!rg.length) { var rc = { 'USA': 'United States' }[country] || country; rg = (D.reg.registers || []).filter(function (r) { return rc && r.market === rc; }); how = 'country'; }
     var rp = Object.keys(D.reg.projects || {}).filter(function (id) { return D.reg.projects[id].market === m; }).length;
-    F.reg = rg.length ? { h: rg.map(function (r) { return '<b>' + esc(r.register) + '</b>: ' + esc(r.result) + ' (' + esc(r.automation) + ', checked ' + esc(String(r.probed_at || '').slice(0, 10)) + ')'; }).join('<br>') + '<small>' + (how === 'country' ? 'Registers for ' + esc(country) + '. ' : '') + rp + ' project' + (rp === 1 ? '' : 's') + ' in this market with a register result · ' + a('/registers/checks/', 'register checks') + '</small>' } : na('No official register listed for this market or country yet');
+    F.reg = rg.length ? { h: rg.map(function (r) { return '<b>' + esc(r.register) + '</b>: ' + esc(en('res', r.result)) + ' (' + esc(t('rchk', '{a}, checked {d}', { a: en('aut', r.automation), d: dL(String(r.probed_at || '').slice(0, 10)) })) + ')'; }).join('<br>') + '<small>' + (how === 'country' ? esc(t('rfor', 'Registers for {c}. ', { c: pl(country) })) : '') + t(rp === 1 ? 'rp1' : 'rp', rp === 1 ? '{n} project in this market with a register result · ' : '{n} projects in this market with a register result · ', { n: rp }) + a('/registers/checks/', t('rck', 'register checks')) + '</small>' } : na(t('noreg', 'No official register listed for this market or country yet'));
     return F;
   }
   var BY = {};
@@ -246,21 +256,21 @@
   ];
   function render() {
     chips(); writeSel();
-    if (!sel.length) { $('cm-out').innerHTML = '<p class="muted">Pick at least one market above. Two to four make a comparison.</p>'; return; }
+    if (!sel.length) { $('cm-out').innerHTML = '<p class="muted">' + t('pick', 'Pick at least one market above. Two to four make a comparison.') + '</p>'; return; }
     var F = sel.map(figures);
-    var h = '<div class="dc-tw"><table class="cm-t"><caption class="sr-only">Markets compared</caption><thead><tr><th scope="col"><span class="sr-only">Figure</span></th>' + sel.map(function (m) { return '<th scope="col">' + esc(m) + '</th>'; }).join('') + '</tr></thead><tbody>';
+    var h = '<div class="dc-tw"><table class="cm-t"><caption class="sr-only">' + t('cap', 'Markets compared') + '</caption><thead><tr><th scope="col"><span class="sr-only">' + t('fig', 'Figure') + '</span></th>' + sel.map(function (m) { return '<th scope="col">' + esc(pl(m)) + '</th>'; }).join('') + '</tr></thead><tbody>';
     ROWS.forEach(function (r) {
-      if (r[0] === 'g') { h += '<tr class="g"><th scope="rowgroup" colspan="' + (sel.length + 1) + '">' + esc(r[1]) + '</th></tr>'; return; }
-      h += '<tr><th scope="row">' + esc(r[1]) + '</th>' + F.map(function (f) { var c = f[r[0]]; return '<td' + (c.na ? ' class="na"' : '') + '>' + c.h + '</td>'; }).join('') + '</tr>';
+      if (r[0] === 'g') { h += '<tr class="g"><th scope="rowgroup" colspan="' + (sel.length + 1) + '">' + esc(en('rows', r[1])) + '</th></tr>'; return; }
+      h += '<tr><th scope="row">' + esc(en('rows', r[1])) + '</th>' + F.map(function (f) { var c = f[r[0]]; return '<td' + (c.na ? ' class="na"' : '') + '>' + c.h + '</td>'; }).join('') + '</tr>';
     });
-    h += '</tbody></table></div><p class="dc-note" style="margin-top:10px">Data as of: dataset ' + esc(D.cases.updated) + ', delay index ' + esc(D.delay.generated) + ', price index ' + esc(D.price.generated) + ', hazards ' + esc(D.haz.updated) + ', promises ' + esc(D.prom.updated) + ', registers ' + esc(D.reg.updated) + '. Tracked projects are the ones being marketed now, not every project in a market.</p>';
+    h += '</tbody></table></div><p class="dc-note" style="margin-top:10px">' + esc(t('asof', 'Data as of: dataset {a}, delay index {b}, price index {c}, hazards {d}, promises {e}, registers {f}. Tracked projects are the ones being marketed now, not every project in a market.', { a: dL(D.cases.updated), b: dL(D.delay.generated), c: dL(D.price.generated), d: dL(D.haz.updated), e: dL(D.prom.updated), f: dL(D.reg.updated) })) + '</p>';
     $('cm-out').innerHTML = h;
   }
   function add(name) {
     var m = canon(name);
-    if (!m) { $('cm-msg').textContent = name ? 'No tracked market called "' + name + '". Pick one from the list.' : 'Type a market name.'; return false; }
-    if (sel.indexOf(m) >= 0) { $('cm-msg').textContent = m + ' is already in the comparison.'; return false; }
-    if (sel.length >= MAX) { $('cm-msg').textContent = 'Up to ' + MAX + ' markets. Remove one first.'; return false; }
+    if (!m) { $('cm-msg').textContent = name ? t('nom', 'No tracked market called "{n}". Pick one from the list.', { n: name }) : t('typ', 'Type a market name.'); return false; }
+    if (sel.indexOf(m) >= 0) { $('cm-msg').textContent = t('alr', '{m} is already in the comparison.', { m: pl(m) }); return false; }
+    if (sel.length >= MAX) { $('cm-msg').textContent = t('max', 'Up to {n} markets. Remove one first.', { n: MAX }); return false; }
     sel.push(m); $('cm-msg').textContent = ''; render(); return true;
   }
   function bind() {
@@ -272,26 +282,31 @@
     });
     $('cm-copy').addEventListener('click', function () {
       var i = $('cm-url'), b = this; i.select();
-      var done = function () { b.textContent = 'Copied'; setTimeout(function () { b.textContent = 'Copy link'; }, 1600); };
+      var done = function () { b.textContent = t('cpd', 'Copied'); setTimeout(function () { b.textContent = t('cpl', 'Copy link'); }, 1600); };
       if (navigator.clipboard) navigator.clipboard.writeText(i.value).then(done, function () { try { document.execCommand('copy'); done(); } catch (e) {} });
       else { try { document.execCommand('copy'); done(); } catch (e) {} }
     });
   }
   var keys = Object.keys(FILES);
+  function start() {
+  S = (window.KCM_TX || {})[LG] || null; LOC = S ? S.loc : null;
   Promise.all(keys.map(function (k) { return fetch(FILES[k] + (k === 'cases' ? '?t=' + Math.floor(Date.now() / 6e5) : '')).then(function (r) { if (!r.ok) throw new Error(FILES[k]); return r.json(); }); })).then(function (L) {
     keys.forEach(function (k, i) { D[k] = L[i]; });
     D.cases.cases.forEach(function (c) { BY[c.id] = c; });
     var cnt = {}; D.cases.cases.forEach(function (c) { cnt[c.market] = (cnt[c.market] || 0) + 1; });
     MK = Object.keys(cnt).sort();
-    $('cm-dl').innerHTML = MK.map(function (m) { return '<option value="' + esc(m) + '">' + cnt[m] + ' projects</option>'; }).join('');
+    $('cm-dl').innerHTML = MK.map(function (m) { return '<option value="' + esc(pl(m)) + '">' + esc(t('np', '{n} projects', { n: cnt[m] })) + '</option>'; }).join('');
     var T = window.KTI.compute(D.cases); TIN = T.rows.length; T.rows.forEach(function (r) { TI[r.market] = r; });
     var want = readSel(), bad = [];
     want.forEach(function (w) { var m = canon(w); if (m && sel.indexOf(m) < 0 && sel.length < MAX) sel.push(m); else if (!m) bad.push(w); });
-    if (bad.length) $('cm-msg').textContent = 'Not a tracked market: ' + bad.join(', ') + '.';
+    if (bad.length) $('cm-msg').textContent = t('ntm', 'Not a tracked market: {l}.', { l: bad.join(', ') });
     bind(); render();
   }).catch(function (e) {
-    $('cm-out').innerHTML = '<p>A public data file could not load (' + esc(e && e.message || 'network') + '). Try again in a moment.</p>';
+    $('cm-out').innerHTML = '<p>' + t('err', 'A public data file could not load ({e}). Try again in a moment.', { e: esc(e && e.message || 'network') }) + '</p>';
   });
+  }
+  if (LG !== 'en' && /^(es|fr|de|nl|ru|zh|ar)$/.test(LG) && !window.KCM_TX) { var sc = document.createElement('script'); sc.src = '/compare/markets/cm-tx.js?v=l8a'; sc.onload = sc.onerror = start; document.head.appendChild(sc); }
+  else start();
 })();
 });</script>
 </main>
