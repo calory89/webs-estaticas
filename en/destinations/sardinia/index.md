@@ -101,6 +101,10 @@ It can be in July and August, especially on the coast. Outside peak season, and 
 
 No. Swimming and landing are not allowed, to protect the sand. Boat tours pass nearby so you can see it from the water.
 
+### How much is a cheap flight to Sardinia?
+
+Today the cheapest deal we have to Sardinia is €43 return from Barcelona. Fares change by the hour: check the live price on the deal page.
+
 ## Flights and deals
 
 - Flight deals to Sardinia: https://www.happylowcost.com/en/destinations/sardinia/#deals

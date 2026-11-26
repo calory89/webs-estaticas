@@ -704,6 +704,17 @@ def guide_image_ld(slug, name, lang='es'):
     return im
 
 
+def hero_preload(hero, lib=None):
+    """Precarga de la foto de cabecera (LCP); con foto de la biblioteca, la de 800 px en móvil."""
+    if not hero:
+        return ''
+    if lib and os.path.exists(os.path.join(LIB, f'{lib}-800.jpg')):
+        return (f'<link rel="preload" as="image" href="/hlc/img/cities/{lib}-800.jpg" media="(max-width: 800px)" fetchpriority="high">'
+                f'<link rel="preload" as="image" href="{hero}" media="(min-width: 801px)" fetchpriority="high">'
+                f'<style>@media (max-width:800px){{.deal-hero{{background-image:url(/hlc/img/cities/{lib}-800.jpg)!important}}}}</style>')
+    return f'<link rel="preload" as="image" href="{hero}" fetchpriority="high">'
+
+
 def guide_md(title, url, gh, name, days, updated_iso, lang='es', extra=''):
     """Versión Markdown de la guía (index.md) para asistentes de IA: mismo contenido, sin plantilla."""
     t = gh or ''
@@ -1074,7 +1085,7 @@ def main():
         rel_html = ''.join(card(y) for y in rel)
         guide_link = f'<a class="hlc-btn o" href="/destinos/{dls}/">📖 Guía completa de {e(dmap[dls]["name"])}</a>' if dls and dls in dmap else ''
         page = head(title=e(seo_t), desc=e(excerpt), canonical=url, og_image=url + 'og.jpg', og_title=e(title),
-                    extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12">' + ('<link rel="alternate" hreflang="es" href="' + url + '"><link rel="alternate" hreflang="en" href="' + f'{SITE}/en/deals/{en_deal_slug(x)}/' + '"><link rel="alternate" hreflang="x-default" href="' + url + '">' if x.get('en') else '') + ld_script([art, cld, offer, faq_ld(qa, 'es-ES')]), body_class='deal')
+                    extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12">' + hero_preload(hero, dls if lp else None) + ('<link rel="alternate" hreflang="es" href="' + url + '"><link rel="alternate" hreflang="en" href="' + f'{SITE}/en/deals/{en_deal_slug(x)}/' + '"><link rel="alternate" hreflang="x-default" href="' + url + '">' if x.get('en') else '') + ld_script([art, cld, offer, faq_ld(qa, 'es-ES')] + ([guide_image_ld(dls, f.get('destino') or '', 'es')] if lp and dls else [])), body_class='deal')
         page += f'''<main data-deal-slug="{e(slug)}" data-deal-ida="{e(f.get('ida', ''))}" data-deal-pub="{e((x.get('approved_at') or '')[:19])}Z">
 <section class="deal-hero" style="{f'background-image:url({hero})' if hero else ''}"{photos_attr(lib_slug(f)) if lp else ''}><div class="wrap">
 {ch.replace('class="crumbs"', 'class="crumbs crumbs-l"')}
@@ -1412,11 +1423,11 @@ def main():
     def u(loc, lm=None):
         return f'<url><loc>{loc}</loc>' + (f'<lastmod>{lm[:10]}</lastmod>' if lm else '') + '</url>'
     lm0 = deals[0]['approved_at'] if deals else today
-    urls = [u(f'{SITE}/chollos/', lm0)] + [u(f"{SITE}/chollos/{x['slug']}/", checked(x) or x.get('approved_at')) for x in deals]
+    urls = [u(f'{SITE}/chollos/', lm0)] + [u(f"{SITE}/chollos/{x['slug']}/", checked(x) or x.get('approved_at')).replace('</url>', (f"<image:image><image:loc>{SITE}/chollos/{x['slug']}/og.jpg</image:loc></image:image>" if os.path.exists(f"chollos/{x['slug']}/og.jpg") else '') + '</url>') for x in deals]
     urls += [u(f'{SITE}/chollos/{k}/', lm0) for k in sorted(gen) if (k.startswith('desde/') and k[6:] in origins) or (k.startswith('a/') and k[2:] in conts)]
     _live = {f'desde/{slugify(x["facts"].get("origen_pais") or "")}/{slugify(x["facts"].get("origen") or "")}' for x in deals} | {f'ideas/{k}' for k, h, n in ideas_links if n}
     urls += [u(f'{SITE}/chollos/{k}/', lm0) for k in sorted(gen) if k in _live]
-    open('chollos-sitemap.xml', 'w', encoding='utf-8').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + ''.join(urls) + '</urlset>\n')
+    open('chollos-sitemap.xml', 'w', encoding='utf-8').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">' + ''.join(urls) + '</urlset>\n')
     # con la foto de cada guía (sitemap de imágenes: Google Imágenes y Discover)
     durls = [u(f'{SITE}/destinos/')] + [u(f"{SITE}/destinos/{p['s']}/", g.get('updated_at')).replace('</url>', f"<image:image><image:loc>{SITE}/hlc/img/cities/{p['s']}.jpg</image:loc></image:image></url>") for p, g in dlinks]
     open('destinos-sitemap.xml', 'w', encoding='utf-8').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">' + ''.join(durls) + '</urlset>\n')

@@ -250,7 +250,8 @@ def main():
         guide = f'<a class="hlc-btn o" href="/en/destinations/{G.en_dest_slug(ls_)}/">📖 Full {e(NAMES.get(ls_, d))} travel guide</a>' if ls_ and ls_ in dmap else ''
         fl, ht = to_en_link(x.get('cta_flight')), G.BK.with_dates(hotels(d), f.get('ida'), f.get('vuelta'))
         share = quote(f'{title} {url}')
-        page = head(seo_t, desc, url, es_url, og, 'article', [art, cld, offer, G.faq_ld(qa, 'en')], body_class='deal')
+        _img = [G.guide_image_ld(ls_, d, 'en')] if ls_ else []
+        page = head(seo_t, desc, url, es_url, og, 'article', [art, cld, offer, G.faq_ld(qa, 'en')] + _img, body_class='deal', extra_head=G.hero_preload(hero, ls_))
         page += f'''<main data-deal-slug="{e(slug)}" data-deal-ida="{e(f.get('ida', ''))}" data-deal-pub="{e((x.get('approved_at') or '')[:19])}Z">
 <section class="deal-hero" style="{f'background-image:url({hero})' if hero else ''}"{G.photos_attr(ls_) if ls_ else ''}><div class="wrap">
 {ch.replace('class="crumbs"', 'class="crumbs crumbs-l"')}
@@ -624,11 +625,14 @@ def main():
     open('en/deals/feed.xml', 'w', encoding='utf-8').write(rss)
     urls = [f'{SITE}/en/', f'{SITE}/en/deals/', f'{SITE}/en/destinations/'] + [f'{SITE}/en/deals/ideas/{k}/' for k, n, c in ideas_en if c] + [f'{SITE}/en/deals/from/{k}/' for k, n, c in city_links] + [f'{SITE}/en/deals/{s}/' for s in sorted(hechos)] + [f"{SITE}/en/destinations/{G.en_dest_slug(p['s'])}/" for p, g in dl]
     # guías con su fecha real y su foto (sitemap de imágenes)
-    gextra = {f"{SITE}/en/destinations/{G.en_dest_slug(p['s'])}/": (((g.get('updated_en') or g.get('updated_at') or '')[:10]), p['s']) for p, g in dl}
+    gextra = {f"{SITE}/en/destinations/{G.en_dest_slug(p['s'])}/": (((g.get('updated_en') or g.get('updated_at') or '')[:10]), f"{SITE}/hlc/img/cities/{p['s']}.jpg") for p, g in dl}
+    # chollos EN vivos: lastmod = última comprobación y su imagen 1200x630 (sitemap de imágenes)
+    for x in deals:
+        gextra[f'{SITE}/en/deals/{G.en_deal_slug(x)}/'] = ((G.checked(x) or x.get('approved_at') or '')[:10], f"{SITE}/chollos/{x['slug']}/og.jpg" if os.path.exists(f"chollos/{x['slug']}/og.jpg") else '')
     def _u(u):
         if u in gextra:
-            lm, sl = gextra[u]
-            return f'<url><loc>{u}</loc>' + (f'<lastmod>{lm}</lastmod>' if lm else '') + f'<image:image><image:loc>{SITE}/hlc/img/cities/{sl}.jpg</image:loc></image:image></url>'
+            lm, im = gextra[u]
+            return f'<url><loc>{u}</loc>' + (f'<lastmod>{lm}</lastmod>' if lm else '') + (f'<image:image><image:loc>{im}</image:loc></image:image>' if im else '') + '</url>'
         return f'<url><loc>{u}</loc></url>'
     open('en-sitemap.xml', 'w', encoding='utf-8').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">' + ''.join(_u(u) for u in urls) + '</urlset>\n')
     si = open('sitemap_index.xml', encoding='utf-8').read()

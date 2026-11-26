@@ -329,6 +329,104 @@ def videos_pages():
             os.makedirs('videos', exist_ok=True); open('videos/index.html', 'w', encoding='utf-8').write(pg)
 
 
+# Fundador y responsable editorial: entidad Person para Google y los asistentes (quién está detrás de los datos)
+PERSON = {"@type": "Person", "@id": SITE + "/#carlos-de-ory", "name": "Carlos de Ory", "url": "https://www.carlosdeory.com", "sameAs": ["https://www.carlosdeory.com"],
+          "jobTitle": "Fundador de Happy Low Cost", "worksFor": {"@id": SITE + "/#org"}, "knowsAbout": ["vuelos baratos", "errores de tarifa", "viajes low cost"]}
+
+GLOSS = [
+    ('chollo', 'Chollo', 'Deal',
+     'Vuelo que publicamos porque cuesta al menos un 40 % menos que su precio habitual, comprobado en Kiwi.com en el momento de publicarlo.',
+     'A flight we publish because it costs at least 40% less than its usual price, checked on Kiwi.com when we publish it.'),
+    ('error-de-tarifa', 'Error de tarifa', 'Fare error',
+     'Precio publicado por error por una aerolínea o agencia, muy por debajo de lo normal (por ejemplo, un vuelo de 500 € a 100 €). Suele durar horas y a veces la aerolínea no lo respeta.',
+     'A price published by mistake by an airline or agency, far below normal (for example, a 500 € flight for 100 €). It usually lasts hours and the airline sometimes cancels it.'),
+    ('precio-habitual', 'Precio habitual', 'Usual price',
+     'La mediana del precio de la misma ruta y duración en tres fechas, 3, 6 y 9 semanas después del chollo, redondeada a 10 €. Es la referencia con la que calculamos el descuento.',
+     'The median price of the same route and trip length on three dates, 3, 6 and 9 weeks after the deal, rounded to 10 €. It is the reference we use to work out the discount.'),
+    ('mediana', 'Mediana', 'Median',
+     'El valor del medio cuando se ordenan los precios de menor a mayor. La usamos en vez de la media para que un precio raro, muy alto o muy bajo, no desvíe la referencia.',
+     'The middle value when prices are sorted from lowest to highest. We use it instead of the average so that one odd price, very high or very low, does not skew the reference.'),
+    ('ida-y-vuelta', 'Ida y vuelta', 'Return flight',
+     'Billete que incluye el viaje de ida y el de regreso. Todos los precios de Happy Low Cost son de ida y vuelta salvo errores de tarifa claros.',
+     'A ticket that includes the outbound and the return journey. All Happy Low Cost prices are return fares except clear fare errors.'),
+    ('vuelo-directo', 'Vuelo directo', 'Nonstop flight',
+     'Vuelo sin escalas entre el aeropuerto de salida y el de destino. En nuestras rutas indicamos si la opción más barata que encontramos es directa o cuántas escalas hace.',
+     'A flight with no stops between departure and arrival airports. On our routes we say whether the cheapest option we found is nonstop or how many stops it makes.'),
+    ('escala', 'Escala', 'Stopover',
+     'Parada en un aeropuerto intermedio, con o sin cambio de avión. Más escalas suelen abaratar el billete y alargar el viaje.',
+     'A stop at an intermediate airport, with or without a change of plane. More stops usually make the ticket cheaper and the trip longer.'),
+    ('low-cost', 'Aerolínea low cost', 'Low-cost airline',
+     'Aerolínea de bajo coste que vende la tarifa básica barata y cobra aparte equipaje, asiento y otros extras.',
+     'A budget airline that sells a cheap basic fare and charges separately for bags, seats and other extras.'),
+    ('alerta-de-precio', 'Alerta de precio', 'Price alert',
+     'Aviso gratis por email o notificación cuando publicamos un chollo al destino o desde la ciudad que eliges.',
+     'A free email or push notification when we publish a deal to the destination or from the city you choose.'),
+    ('mes-mas-barato', 'Mes más barato', 'Cheapest month',
+     'El mes de los próximos seis con el vuelo de ida y vuelta más barato que encontramos para una ruta, según nuestro calendario de precios.',
+     'The month in the next six with the cheapest return flight we found for a route, according to our price calendar.'),
+]
+
+
+def seo_pages():
+    """Glosario (DefinedTermSet) y preguntas sobre Happy Low Cost (FAQPage), en español y en inglés."""
+    for en in (False, True):
+        L = (lambda a, b: b if en else a)
+        url_es, url_en = f'{SITE}/glosario/', f'{SITE}/en/glossary/'
+        url = url_en if en else url_es
+        title = L('Glosario de vuelos baratos: chollo, error de tarifa, mediana · Happy Low Cost', 'Cheap flights glossary: deal, fare error, median · Happy Low Cost')
+        lead = L('Qué queremos decir exactamente con cada palabra que usamos en los chollos y en las páginas de precios.', 'What we mean exactly by each word we use on deals and price pages.')
+        dts = {"@type": "DefinedTermSet", "@id": url + "#set", "name": L('Glosario de Happy Low Cost', 'Happy Low Cost glossary'), "url": url, "inLanguage": "en" if en else "es-ES", "publisher": {"@id": SITE + "/#org"},
+               "hasDefinedTerm": [{"@type": "DefinedTerm", "@id": url + "#" + k, "name": L(n_es, n_en), "description": L(d_es, d_en), "inDefinedTermSet": url + "#set", "url": url + "#" + k} for k, n_es, n_en, d_es, d_en in GLOSS]}
+        items = ''.join(f'<h2 id="{k}">{G.e(L(n_es, n_en))}</h2><p>{G.e(L(d_es, d_en))}</p>' for k, n_es, n_en, d_es, d_en in GLOSS)
+        bod = (f'<main class="sec" style="padding-top:26px"><div class="wrap" style="max-width:820px"><div class="kicker">{L("Glosario", "Glossary")}</div>'
+               f'<h1 class="x-h1">{L("Glosario de vuelos baratos", "Cheap flights glossary")}</h1><p style="font-size:18px;line-height:1.6">{G.e(lead)}</p><article class="txt guide">{items}</article>'
+               f'<p style="margin-top:28px"><a class="hlc-btn" href="{L("/como-verificamos/", "/en/how-we-verify/")}">{L("Cómo verificamos los chollos", "How we verify deals")}</a> '
+               f'<a class="hlc-btn o" href="{L("/sobre-happy-low-cost/", "/en/about/")}">{L("Preguntas sobre Happy Low Cost", "About Happy Low Cost")}</a></p></div></main>')
+        _write(en, url, url_es, url_en, title, lead, [dts], bod, 'glosario', L('glosario', 'en/glossary'))
+        # ---- preguntas sobre Happy Low Cost ----
+        url_es, url_en = f'{SITE}/sobre-happy-low-cost/', f'{SITE}/en/about/'
+        url = url_en if en else url_es
+        qas = [
+            (L('¿Qué es Happy Low Cost?', 'What is Happy Low Cost?'),
+             L('Una web de chollos de vuelos fundada en 2012 por Carlos de Ory. Publicamos vuelos de ida y vuelta que cuestan al menos un 40 % menos de lo habitual, comprobados en Kiwi.com, y guías de viaje de destino.',
+               'A flight deals website founded in 2012 by Carlos de Ory. We publish return flights that cost at least 40% less than usual, checked on Kiwi.com, plus destination travel guides.')),
+            (L('¿Quién está detrás?', 'Who is behind it?'),
+             L('Carlos de Ory, fundador (carlosdeory.com). Nos siguen más de 420.000 viajeros en Facebook.', 'Carlos de Ory, founder (carlosdeory.com). More than 420,000 travellers follow us on Facebook.')),
+            (L('¿Cómo gana dinero Happy Low Cost?', 'How does Happy Low Cost make money?'),
+             L('Con enlaces de afiliado: si reservas a través de ellos podemos recibir una pequeña comisión, sin coste extra para ti. También publicamos artículos patrocinados, siempre marcados como tales. Que un chollo tenga comisión no influye en si lo publicamos.',
+               'Through affiliate links: if you book through them we may earn a small commission at no extra cost to you. We also publish sponsored articles, always labelled as such. Whether a deal pays a commission does not affect whether we publish it.')),
+            (L('¿Vendéis vuelos?', 'Do you sell flights?'),
+             L('No. Encontramos y comprobamos el precio; la reserva se hace en la web de la aerolínea o de la agencia a la que enlazamos.', 'No. We find and check the price; you book on the airline or agency website we link to.')),
+            (L('¿De dónde salen los precios de las rutas?', 'Where do the route prices come from?'),
+             L('De nuestras propias consultas en Kiwi.com: precio más bajo de ida y vuelta, el habitual (mediana) y el mes más barato. Cada página dice la fecha de la consulta. Los datos se pueden reutilizar citando a Happy Low Cost (CC BY 4.0).',
+               'From our own searches on Kiwi.com: lowest return fare, usual fare (median) and cheapest month. Each page shows the date of the search. The data can be reused crediting Happy Low Cost (CC BY 4.0).')),
+            (L('¿Cuánto dura un chollo?', 'How long does a deal last?'),
+             L('Por defecto, una semana desde que se publica. Lo volvemos a comprobar cada día y lo retiramos si sube más de un 10 % o desaparece.', 'By default, one week from publication. We re-check it every day and remove it if it rises more than 10% or disappears.')),
+            (L('¿Cómo me entero de los chollos?', 'How do I hear about deals?'),
+             L('Con una alerta gratis por email o notificación en el móvil, eligiendo destino o ciudad de salida.', 'With a free email or push alert, choosing a destination or departure city.')),
+        ]
+        org = {"@type": "Organization", "@id": SITE + "/#org", "name": "Happy Low Cost", "url": SITE + "/", "foundingDate": "2012", "founder": {"@id": SITE + "/#carlos-de-ory"}}
+        title = L('Preguntas sobre Happy Low Cost: quiénes somos y cómo ganamos dinero', 'About Happy Low Cost: who we are and how we make money')
+        lead = L('Respuestas cortas a lo que más nos preguntan sobre la web, quién la hace y de dónde salen los precios.', 'Short answers to what people ask most about the site, who runs it and where the prices come from.')
+        items = ''.join(f'<h2>{G.e(q)}</h2><p>{G.e(a)}</p>' for q, a in qas)
+        bod = (f'<main class="sec" style="padding-top:26px"><div class="wrap" style="max-width:820px"><div class="kicker">{L("Sobre nosotros", "About us")}</div>'
+               f'<h1 class="x-h1">{L("Preguntas sobre Happy Low Cost", "About Happy Low Cost")}</h1><p style="font-size:18px;line-height:1.6">{G.e(lead)}</p><article class="txt guide">{items}</article>'
+               f'<p style="margin-top:28px"><a class="hlc-btn" href="{L("/chollos/", "/en/deals/")}">{L("Ver los chollos de hoy", "See today’s deals")}</a> '
+               f'<a class="hlc-btn o" href="{L("/glosario/", "/en/glossary/")}">{L("Glosario", "Glossary")}</a> <a class="hlc-btn o" href="{L("/vuelos/datos/", "/en/flights/data/")}">{L("Nuestros datos de precios", "Our price data")}</a></p></div></main>')
+        _write(en, url, url_es, url_en, title, lead, [faq_ld(qas, 'en' if en else 'es-ES'), org, PERSON], bod, 'metodo', L('sobre-happy-low-cost', 'en/about'))
+
+
+def _write(en, url, url_es, url_en, title, lead, ld, bod, cls, path):
+    if en:
+        pg = E.head(title, G.smart_desc(lead), url, url_es, ld=ld, og_type='article', body_class=cls) + bod + E.FOOTER + '</body></html>'
+    else:
+        alt = f'<link rel="alternate" hreflang="es" href="{url_es}"><link rel="alternate" hreflang="en" href="{url_en}"><link rel="alternate" hreflang="x-default" href="{url_es}">'
+        pg = G.head(title=G.e(title), desc=G.e(G.smart_desc(lead)), canonical=url, og_type='article', og_image=f'{SITE}/hlc/brand/og-default.jpg',
+                    extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12">' + alt + G.ld_script(ld), body_class=cls) + bod + '</body></html>'
+    os.makedirs(path, exist_ok=True)
+    open(os.path.join(path, 'index.html'), 'w', encoding='utf-8').write(pg)
+
+
 def body(qas, kicker, h1, lead, cta, cta_href):
     items = ''.join(f'<h2>{G.e(q)}</h2><p>{G.e(a)}</p>' for q, a in qas)
     return (f'<main class="sec" style="padding-top:26px"><div class="wrap" style="max-width:820px">'
@@ -343,14 +441,14 @@ def main():
     t = 'Cómo verificamos cada chollo de vuelo · Happy Low Cost'
     lead = 'Un chollo solo se publica si el precio existe de verdad en el momento de publicarlo y está muy por debajo de lo que suele costar esa ruta. Así lo comprobamos, sin letra pequeña.'
     page = G.head(title=G.e(t), desc=G.e(G.smart_desc(lead)), canonical=es_url, og_type='article', og_image=f'{SITE}/hlc/brand/og-default.jpg',
-                  extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12">' + alt + G.ld_script([faq_ld(ES_QA, 'es-ES')]), body_class='metodo')
-    page += body(ES_QA, 'Metodología', 'Cómo verificamos cada chollo', lead, 'Ver los chollos de hoy', '/chollos/') + '</body></html>'
+                  extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12">' + alt + G.ld_script([faq_ld(ES_QA, 'es-ES'), PERSON]), body_class='metodo')
+    page += body(ES_QA, 'Metodología', 'Cómo verificamos cada chollo', lead, 'Ver los chollos de hoy', '/chollos/').replace('</div></main>', '<p style="margin-top:18px;color:#4A5468">Responsable: <a href="https://www.carlosdeory.com" rel="author">Carlos de Ory</a>, fundador. Más: <a href="/glosario/">glosario</a> · <a href="/sobre-happy-low-cost/">preguntas sobre Happy Low Cost</a> · <a href="/vuelos/datos/">nuestros datos de precios</a></p></div></main>', 1) + '</body></html>'
     os.makedirs('como-verificamos', exist_ok=True)
     open('como-verificamos/index.html', 'w', encoding='utf-8').write(page)
 
     lead_en = 'A deal is only published if the price really exists at the moment we publish it and is well below what that route usually costs. This is how we check, with no small print.'
-    page = E.head('How we verify every flight deal · Happy Low Cost', G.smart_desc(lead_en), en_url, es_url, ld=[faq_ld(EN_QA, 'en')], og_type='article')
-    page += body(EN_QA, 'Methodology', 'How we verify every deal', lead_en, "See today's deals", '/en/deals/') + E.FOOTER + '</body></html>'
+    page = E.head('How we verify every flight deal · Happy Low Cost', G.smart_desc(lead_en), en_url, es_url, ld=[faq_ld(EN_QA, 'en'), PERSON], og_type='article')
+    page += body(EN_QA, 'Methodology', 'How we verify every deal', lead_en, "See today's deals", '/en/deals/').replace('</div></main>', '<p style="margin-top:18px;color:#4A5468">Editor: <a href="https://www.carlosdeory.com" rel="author">Carlos de Ory</a>, founder. More: <a href="/en/glossary/">glossary</a> · <a href="/en/about/">about Happy Low Cost</a> · <a href="/en/flights/data/">our price data</a></p></div></main>', 1) + E.FOOTER + '</body></html>'
     os.makedirs('en/how-we-verify', exist_ok=True)
     open('en/how-we-verify/index.html', 'w', encoding='utf-8').write(page)
     url = f'{SITE}/en/legal/'
@@ -450,6 +548,7 @@ setTimeout(load,800);})();
            'Los chollos que ya abriste siguen guardados en este móvil; vuelve a intentarlo en un momento para ver los de hoy.</p><p><a class="hlc-btn" href="/chollos/">Reintentar</a></p></div></main></body></html>')
     os.makedirs('offline', exist_ok=True)
     open('offline/index.html', 'w', encoding='utf-8').write(pg)
+    seo_pages()
     tools_pages()
     extra_pages()
     videos_pages()
@@ -457,7 +556,7 @@ setTimeout(load,800);})();
     import gen_blog
     gen_blog.main()
     pages = ['/videos/', '/en/videos/', '/en/alerts/', '/como-verificamos/', '/herramientas/', '/herramientas/equipaje/', '/herramientas/es-buen-precio/', '/alertas/', '/destinos/', '/vuelos/',
-             '/hoteles/', '/en/hotels/', '/aviso-legal-datos-cookies/', '/publicidad/', '/contacto/', '/en/contact/', '/blog/', '/guias/errores-de-tarifa/', '/en/guides/error-fares/', '/en/how-we-verify/', '/en/legal/', '/en/tools/', '/en/tools/baggage/', '/en/tools/is-it-a-good-price/']
+             '/hoteles/', '/en/hotels/', '/aviso-legal-datos-cookies/', '/publicidad/', '/contacto/', '/en/contact/', '/blog/', '/guias/errores-de-tarifa/', '/en/guides/error-fares/', '/en/how-we-verify/', '/en/legal/', '/en/tools/', '/en/tools/baggage/', '/en/tools/is-it-a-good-price/', '/glosario/', '/en/glossary/', '/sobre-happy-low-cost/', '/en/about/']
     import datetime as _dt
     today = _dt.date.today().isoformat()
     open('paginas-sitemap.xml', 'w', encoding='utf-8').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + ''.join(f'<url><loc>{SITE}{p}</loc><lastmod>{today}</lastmod></url>' for p in pages) + '</urlset>\n')

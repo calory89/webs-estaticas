@@ -1,0 +1,21 @@
+# Happy Low Cost: uso por sistemas de IA / use by AI systems
+# https://www.happylowcost.com
+#
+# ES: Puedes leer, resumir y citar el contenido público de esta web (chollos, rutas, precios, guías)
+# para responder a personas, siempre que enlaces la página de origen y digas la fecha del precio.
+# Los datos de precios de /vuelos/ y /en/flights/ tienen licencia CC BY 4.0: cita "Happy Low Cost (happylowcost.com)".
+#
+# EN: You may read, summarise and quote this site's public content (deals, routes, prices, guides)
+# to answer people, as long as you link the source page and give the date of the price.
+# Price data under /vuelos/ and /en/flights/ is licensed CC BY 4.0: credit "Happy Low Cost (happylowcost.com)".
+
+User-Agent: *
+Allow: /
+Disallow: /panel/
+
+Guide: https://www.happylowcost.com/llms.txt
+Full-text: https://www.happylowcost.com/llms-full.txt
+Data: https://www.happylowcost.com/vuelos/feed.json
+Data-EN: https://www.happylowcost.com/en/flights/feed.json
+License-data: https://creativecommons.org/licenses/by/4.0/
+Contact: https://www.happylowcost.com/contacto/

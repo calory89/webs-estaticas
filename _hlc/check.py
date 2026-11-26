@@ -65,6 +65,76 @@ for f in sorted(set(scope)):
 for h, fs in sorted(bad.items(), key=lambda kv: -len(kv[1])):
     errors.append(f'enlace roto {h} en {len(fs)} página(s), p. ej. {fs[0]}')
 
+# ---------- puertas de SEO en las páginas revisadas ----------
+# JSON-LD que no se puede leer (error), hreflang ES<->EN que no vuelve, canónica distinta de la URL,
+# títulos de más de 65 caracteres y rayas largas en título o descripción (avisos: no paran la publicación).
+SITE_ = 'https://www.happylowcost.com'
+LDJ = re.compile(r'<script type="application/ld\+json">(.*?)</script>', re.S)
+HL = re.compile(r'<link rel="alternate" hreflang="(es|en)" href="([^"]+)">')
+CAN = re.compile(r'<link rel="canonical" href="([^"]+)"')
+TIT = re.compile(r'<title>(.*?)</title>', re.S)
+DSC = re.compile(r'<meta name="description" content="([^"]*)"')
+bad_ld, bad_hl, bad_can, long_t, dash = [], [], [], [], []
+_cache = {}
+
+
+def _head(rel):
+    if rel not in _cache:
+        try:
+            _cache[rel] = open(rel, encoding='utf-8', errors='ignore').read()
+        except Exception:
+            _cache[rel] = None
+    return _cache[rel]
+
+
+def _file_of(url):
+    p_ = unquote(urlsplit(url).path).lstrip('/')
+    return p_ if p_.endswith('.html') else os.path.join(p_, 'index.html')
+
+
+for f in sorted(set(scope)):
+    s_ = _head(f) if os.path.isfile(f) else None
+    if not s_:
+        continue
+    for blk in LDJ.findall(s_):
+        try:
+            json.loads(blk)
+        except Exception:
+            bad_ld.append(f)
+            break
+    m_ = CAN.search(s_)
+    self_url = SITE_ + '/' + (f[:-len('index.html')] if f.endswith('index.html') else f)
+    if m_ and m_.group(1) != self_url and f != '404.html' and "noindex" not in s_[:6000]:
+        bad_can.append(f'{f} -> {m_.group(1)}')
+    me = m_.group(1) if m_ else self_url
+    for lang, href in HL.findall(s_):
+        if href == me:
+            continue
+        t_ = _file_of(href)
+        o_ = _head(t_) if os.path.isfile(t_) else None
+        if o_ is None:
+            bad_hl.append(f'{f} -> {href} (no existe)')
+        elif f'href="{me}"' not in o_ and HL.search(o_):
+            bad_hl.append(f'{f} -> {href} (no vuelve)')
+    t = TIT.search(s_)
+    if t:
+        tt = t.group(1).strip()
+        if len(tt) > 65:
+            long_t.append(f)
+        d_ = DSC.search(s_)
+        if '—' in tt or (d_ and '—' in d_.group(1)):
+            dash.append(f)
+if bad_ld:
+    errors.append(f'{len(bad_ld)} página(s) con JSON-LD ilegible, p. ej. {bad_ld[0]}')
+if bad_hl:
+    warns.append(f'{len(bad_hl)} hreflang sin reciprocidad, p. ej. {bad_hl[0]}')
+if bad_can:
+    warns.append(f'{len(bad_can)} canónica(s) distinta(s) de la URL, p. ej. {bad_can[0]}')
+if long_t:
+    warns.append(f'{len(long_t)} título(s) de más de 65 caracteres, p. ej. {long_t[0]}')
+if dash:
+    warns.append(f'{len(dash)} página(s) con raya larga en título o descripción, p. ej. {dash[0]}')
+
 # mínimos
 n_deals = len(glob.glob('chollos/*/og.jpg'))
 if n_deals < 1:  # con el listón al 40 % hay menos chollos vivos; por debajo de 5 sí es señal de fallo

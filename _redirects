@@ -653,3 +653,4 @@
 # ---- 2. comodines ----
 /vuelosofertas-de-vuelos/* /chollos/ 301
 /guias-ciudades/* /destinos/ 301
+/en/flights/new-york-luxemburgo/ /en/flights/new-york-luxembourg/ 301
