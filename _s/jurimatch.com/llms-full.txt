@@ -2634,6 +2634,20 @@ A: Sí, a la administración titular de la vía, en el plazo de un año, si el b
 Q: ¿Qué cubre la indemnización?
 A: Días de curación, secuelas, perjuicio estético, gastos médicos, daños en la moto y el equipo y la pérdida de ingresos, según el baremo de tráfico.
 
+### Accidente de trabajo en México: el IMSS y sus derechos
+URL: https://jurimatch.com/es/guias/accidente-de-trabajo-imss
+
+Si se lesiona trabajando o en el trayecto entre su casa y el trabajo, el IMSS cubre la atención médica y le paga su salario mientras se recupera. Lo importante es que el accidente se califique como riesgo de trabajo.
+
+Q: ¿Cuánto paga el IMSS si me accidento en el trabajo?
+A: Un subsidio del 100 % de su salario de cotización mientras dure la incapacidad, además de la atención médica.
+
+Q: ¿Un accidente camino al trabajo cuenta?
+A: Sí, si ocurre en el trayecto directo entre su domicilio y el trabajo.
+
+Q: ¿Y si mi patrón no me tenía en el IMSS?
+A: Acuda igualmente. El IMSS puede cobrar al patrón y usted puede reclamarle sus derechos.
+
 ### Accidente de tráfico: cómo reclamar la indemnización
 URL: https://jurimatch.com/es/guias/accidente-de-trafico
 
@@ -2648,6 +2662,20 @@ A: Es la propuesta de indemnización que la aseguradora debe hacer en el plazo d
 Q: ¿Cuánto tiempo tengo para reclamar?
 A: Por regla general, un año. En lesiones, el plazo suele contarse desde la curación o la estabilización de las secuelas. La reclamación a la aseguradora interrumpe ese plazo.
 
+### Accidente de tránsito en Colombia: SOAT, ADRES y cómo reclamar
+URL: https://jurimatch.com/es/guias/accidente-de-transito-soat-colombia
+
+En Colombia, el Seguro Obligatorio de Accidentes de Tránsito (SOAT) atiende a cualquier víctima, sin importar quién tuvo la culpa. Pero sus coberturas tienen topes: los demás daños se reclaman al responsable.
+
+Q: ¿El SOAT paga aunque yo tuviera la culpa?
+A: Sí. El SOAT cubre a las víctimas con independencia de quién tuvo la culpa.
+
+Q: ¿Y si el carro no tenía SOAT?
+A: La ADRES asume las coberturas del SOAT para las víctimas.
+
+Q: ¿El SOAT cubre todos los daños?
+A: No. Tiene topes. Los demás daños se reclaman al responsable y a su aseguradora.
+
 ### Accidente laboral: indemnización, recargo y cómo reclamar
 URL: https://jurimatch.com/es/guias/accidente-laboral
 
@@ -2661,6 +2689,34 @@ A: Un aumento de entre el 30 % y el 50 % de las prestaciones de la Seguridad Soc
 
 Q: ¿Cuánto tiempo tengo para reclamar a la empresa?
 A: En general, un año desde que se conoce el alcance definitivo de las lesiones. Consulte cuanto antes, porque cada vía tiene su plazo.
+
+### Accidente laboral en Argentina: la ART y cómo reclamar
+URL: https://jurimatch.com/es/guias/accidente-laboral-art-argentina
+
+En Argentina, los accidentes de trabajo y de trayecto los cubre la Aseguradora de Riesgos del Trabajo (ART) del empleador. Si no está de acuerdo con lo que decide la ART, hay un procedimiento previo antes de ir a juicio.
+
+Q: ¿Qué paga la ART si me accidento?
+A: La atención médica, los salarios mientras dure la incapacidad temporal y una indemnización si queda una incapacidad permanente.
+
+Q: ¿Puedo ir directo a juicio?
+A: En las provincias adheridas a la Ley 27.348, primero hay que pasar por las comisiones médicas.
+
+Q: ¿Necesito abogado en la comisión médica?
+A: Sí, la ley exige asistencia letrada.
+
+### Accidente laboral en Chile: la mutual y sus derechos
+URL: https://jurimatch.com/es/guias/accidente-laboral-chile
+
+En Chile, todos los trabajadores dependientes están cubiertos por el seguro de accidentes del trabajo y enfermedades profesionales de la Ley 16.744, que gestionan las mutuales o el Instituto de Seguridad Laboral.
+
+Q: ¿Qué cubre la mutual en un accidente laboral?
+A: La atención médica gratuita, un subsidio mientras no pueda trabajar y, si hay secuelas, una indemnización o pensión.
+
+Q: ¿Un accidente de trayecto está cubierto?
+A: Sí, los accidentes en el trayecto directo entre la casa y el trabajo están cubiertos.
+
+Q: ¿Puedo demandar a mi empleador?
+A: Sí, si el accidente se debió a su culpa, por los daños que el seguro no cubre, como el daño moral.
 
 ### Accidente con Uber o Lyft en EE. UU.: quién paga
 URL: https://jurimatch.com/es/guias/accidente-uber-lyft
@@ -2813,6 +2869,20 @@ A: No hay un porcentaje fijo: depende del tipo de caso, el riesgo y la parte fij
 Q: Si pierdo con un abogado a éxito, ¿pago algo?
 A: Normalmente no paga el porcentaje, pero puede deber la parte fija pactada y, si el juez le condena en costas, las de la otra parte.
 
+### Despido arbitrario en Perú: indemnización y plazos
+URL: https://jurimatch.com/es/guias/despido-arbitrario-peru
+
+En Perú, si le despiden sin una causa justa prevista en la ley o sin seguir el procedimiento, el despido es arbitrario y da derecho a una indemnización. El plazo para reclamar es muy corto.
+
+Q: ¿Cuánto es la indemnización por despido arbitrario en Perú?
+A: Una remuneración y media por año completo de servicios, con un tope de 12 remuneraciones, en el régimen general.
+
+Q: ¿Cuánto tiempo tengo para demandar?
+A: 30 días hábiles desde el despido.
+
+Q: ¿Qué diferencia hay con el despido nulo?
+A: El nulo se debe a un motivo prohibido, como el embarazo o la afiliación sindical, y permite pedir la reposición.
+
 ### Despido improcedente: plazos, indemnización y cómo reclamar
 URL: https://jurimatch.com/es/guias/despido-improcedente
 
@@ -2827,6 +2897,34 @@ A: 33 días de salario por año trabajado, con un máximo general de 24 mensuali
 Q: ¿Necesito abogado para un despido?
 A: En la primera instancia no es obligatorio, pero es recomendable. Muchos laboralistas trabajan con un porcentaje de lo que se obtenga.
 
+### Despido injustificado en Chile: indemnización, recargos y plazos
+URL: https://jurimatch.com/es/guias/despido-injustificado-chile
+
+En Chile, si el despido no tiene una causa legal o la causa no se prueba, el trabajador puede demandar para que el juez lo declare injustificado y aumente la indemnización con un recargo.
+
+Q: ¿Cuánto es la indemnización por años de servicio en Chile?
+A: 30 días de la última remuneración por año trabajado, con un máximo de 11 años, más la sustitutiva del aviso previo si no le avisaron con 30 días.
+
+Q: ¿Cuánto tiempo tengo para demandar?
+A: 60 días hábiles desde el despido, ampliable hasta 90 si reclama antes en la Inspección del Trabajo.
+
+Q: ¿Qué es la Ley Bustos?
+A: Una regla por la que el despido no produce efecto si el empleador no ha pagado las cotizaciones previsionales, y debe seguir pagando las remuneraciones hasta regularizarlas.
+
+### Despido injustificado en México: indemnización y cómo reclamar
+URL: https://jurimatch.com/es/guias/despido-injustificado-mexico
+
+Si su patrón le despidió sin una causa justificada, la Ley Federal del Trabajo le permite elegir entre volver a su puesto o cobrar una indemnización. El plazo para reclamar es corto y, antes de demandar, hay que pasar por la conciliación.
+
+Q: ¿Cuánto me corresponde por despido injustificado en México?
+A: Tres meses de salario, la prima de antigüedad y los salarios caídos, más las prestaciones pendientes. Si el patrón se niega a reinstalarle, 20 días por año además.
+
+Q: ¿Cuánto tiempo tengo para demandar?
+A: Dos meses desde el día siguiente al despido. Antes hay que pasar por la conciliación.
+
+Q: ¿Necesito abogado?
+A: No es obligatorio, pero es recomendable. La Procuraduría de la Defensa del Trabajo asesora gratis.
+
 ### Despido nulo: cuándo lo es y qué consecuencias tiene
 URL: https://jurimatch.com/es/guias/despido-nulo
 
@@ -2840,6 +2938,34 @@ A: Solo por causas ajenas al embarazo que la empresa pueda probar. Si no lo prue
 
 Q: ¿Cuánto tiempo tengo para reclamar?
 A: 20 días hábiles desde el día siguiente al despido.
+
+### Despido sin causa en Argentina: indemnización del artículo 245
+URL: https://jurimatch.com/es/guias/despido-sin-causa-argentina
+
+Si su empleador le despide sin causa, la Ley de Contrato de Trabajo le obliga a pagar una indemnización por antigüedad, más el preaviso y otros conceptos. Estos son los rubros básicos.
+
+Q: ¿Cuánto es la indemnización por despido sin causa?
+A: Un mes de la mejor remuneración por año o fracción mayor a tres meses, con un tope, más el preaviso, la integración del mes y la liquidación final.
+
+Q: ¿Cuánto tiempo tengo para reclamar?
+A: Los créditos laborales prescriben a los dos años.
+
+Q: ¿Necesito abogado para la conciliación?
+A: En la conciliación laboral obligatoria de CABA, el trabajador debe ir asistido por un abogado.
+
+### Despido sin justa causa en Colombia: indemnización y cómo reclamar
+URL: https://jurimatch.com/es/guias/despido-sin-justa-causa-colombia
+
+En Colombia, el empleador puede terminar el contrato sin justa causa, pero debe pagar una indemnización fijada por la ley. Además, algunas personas tienen una protección especial que impide despedirlas sin autorización.
+
+Q: ¿Cuánto me pagan por despido sin justa causa en Colombia?
+A: En un contrato indefinido con salario menor a 10 mínimos, 30 días de salario por el primer año y 20 por cada año adicional, más la liquidación.
+
+Q: ¿Y si mi contrato era a término fijo?
+A: Los salarios que faltaban hasta el final del contrato.
+
+Q: ¿Cuánto tiempo tengo para reclamar?
+A: En general, tres años desde que se hizo exigible la obligación.
 
 ### Dieselgate: reclamar por un coche con emisiones manipuladas
 URL: https://jurimatch.com/es/guias/dieselgate
@@ -2949,6 +3075,20 @@ A: Normalmente el financiador pierde lo invertido y no le reclama nada. Revise e
 
 Q: ¿Financian casos pequeños?
 A: Rara vez. El coste de analizar y seguir un caso hace que los financiadores se centren en reclamaciones de importe elevado o en grupos de afectados.
+
+### Finiquito y liquidación en México: qué diferencia hay
+URL: https://jurimatch.com/es/guias/finiquito-y-liquidacion-mexico
+
+Al terminar un trabajo en México siempre le corresponde un finiquito. La liquidación, en cambio, solo cuando le despiden sin causa justificada. Saber la diferencia evita firmar por menos de lo que le toca.
+
+Q: ¿Me toca finiquito si renuncio?
+A: Sí. El finiquito incluye las prestaciones ya generadas y se debe siempre.
+
+Q: ¿Qué incluye la liquidación?
+A: El finiquito más la indemnización por despido injustificado: tres meses de salario, la prima de antigüedad y, en su caso, 20 días por año.
+
+Q: ¿Debo firmar si no estoy de acuerdo?
+A: No firme sin revisar el desglose. Puede consultar gratis en la PROFEDET.
 
 ### Gastos de hipoteca: qué se puede recuperar y cómo
 URL: https://jurimatch.com/es/guias/gastos-hipoteca
@@ -3142,6 +3282,20 @@ A: Un año, que en daños físicos o psíquicos se cuenta desde la curación o d
 
 Q: ¿Necesito un perito médico?
 A: En la gran mayoría de los casos sí. Es la prueba que permite demostrar que la actuación no fue correcta y que causó el daño.
+
+### Pensión de invalidez en Colombia: requisitos y cómo reclamarla
+URL: https://jurimatch.com/es/guias/pension-de-invalidez-colombia
+
+Si una enfermedad o un accidente le dejan una pérdida de capacidad laboral importante, puede tener derecho a una pensión de invalidez. La clave está en la calificación y en las semanas cotizadas.
+
+Q: ¿Qué porcentaje de pérdida de capacidad laboral necesito?
+A: El 50 % o más.
+
+Q: ¿Cuántas semanas debo haber cotizado?
+A: Para la invalidez de origen común, 50 semanas en los tres años anteriores a la fecha de estructuración.
+
+Q: ¿Quién califica la invalidez?
+A: La EPS, el fondo de pensiones o la ARL en primera oportunidad, y las juntas de calificación de invalidez si hay desacuerdo.
 
 ### Plazos para reclamar en España, por tipo de caso
 URL: https://jurimatch.com/es/guias/plazos-de-prescripcion
