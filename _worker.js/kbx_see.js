@@ -24,96 +24,17 @@ async function loadOne(env, name) {
   MEMO[name] = { t: Date.now(), v, a: a && v != null }; return v;
 }
 export async function seeData(env) {
-  const [ph, d3] = await Promise.all([loadOne(env, 'street-photos.json'), loadOne(env, 'site-3d.json')]);
+  const [ph, d3, si] = await Promise.all([loadOne(env, 'street-photos.json'), loadOne(env, 'site-3d.json'), loadOne(env, 'media-i18n.json')]);
+  if (si && si.see) S = si.see;   // n40 k4
   return { ph, d3, v: ((ph && ph.updated) || '') + '/' + ((d3 && d3.updated) || '') };
 }
 // pin accuracy ring: the pin comes from public sources; given to 3 decimals we draw about 100 m (as the satellite sections say)
 export const accM = dec => dec >= 5 ? 15 : dec === 4 ? 30 : 100;
 
 // ------------------------------------------------------------------------------------------------ strings (8 languages)
-const S = {
-  en: { h: 'The site at street level and in 3D', toc: 'Street level and 3D', ph: 'Street-level photos near the pin', phn: '{n} open street-level photos within 200 m of the pin, newest first, one per drive or walk.',
-    ph0: 'No open street-level photo within 200 m of the pin in {s} (checked {d}).', cap: 'Taken {d}, {m} m from the pin', nod: 'Date not recorded, {m} m from the pin',
-    face: 'camera facing the pin', pano: '360° photo', lic: 'Licence {l}. Author and full credit on the photo\'s page.', open: 'Open at {s}', commons: 'imported from Mapillary',
-    phlim: 'These photos are by volunteers and the public, not by the developer or by us. A photo can be years old, so check its date. The pin is about {a} m accurate, so a photo may show a neighbouring plot.',
-    other: 'Mapillary and Google Street View need an account or a key, so we do not search them. You can open the place there yourself:', gsv: 'Google Street View', mpl: 'Mapillary',
-    d3: '3D view', d3i: 'Terrain, the buildings mapped within 250 m ({n}, of which {k} touch the 150 m circle), the 150 m circle used by the satellite sections and how accurate the pin is.', d3i0: 'Terrain, the 150 m circle used by the satellite sections and how accurate the pin is. No building is mapped within 250 m of the pin in Overture release {rel}.',
-    d3b: 'Show the site in 3D', d3s: 'Loads only when you ask, about 1 MB of map data.', d3l: 'Loading the 3D view', d3e: 'The 3D view could not load in this browser. It needs WebGL.', d3help: 'Drag to move. Right-drag or two fingers to tilt and turn. Pinch or Ctrl and scroll to zoom.',
-    lgk: 'Building, height mapped', lgu: 'Building, height not mapped (drawn at 3 m)', lgc: '150 m circle', lga: 'Pin accuracy, about {a} m (pin given to {dec} decimals)', lgp: 'Pin',
-    d3lim: 'Footprints come from volunteers (OpenStreetMap) and from machine learning on satellite imagery. They can be years behind the ground, and most heights are not mapped. Terrain is a public elevation model with cells of about 30 m in most places, so small slopes and cuts do not show.',
-    method: 'method and data', upd: 'updated {d}', reset: 'Reset view' },
-  es: { h: 'La obra a pie de calle y en 3D', toc: 'A pie de calle y 3D', ph: 'Fotos a pie de calle cerca del punto', phn: '{n} fotos abiertas a pie de calle a menos de 200 m del punto, de la más reciente a la más antigua, una por recorrido.',
-    ph0: 'No hay ninguna foto abierta a pie de calle a menos de 200 m del punto en {s} (comprobado el {d}).', cap: 'Tomada el {d}, a {m} m del punto', nod: 'Fecha no registrada, a {m} m del punto',
-    face: 'cámara orientada hacia el punto', pano: 'foto de 360°', lic: 'Licencia {l}. Autor y créditos completos en la página de la foto.', open: 'Abrir en {s}', commons: 'importada de Mapillary',
-    phlim: 'Estas fotos son de voluntarios y del público, no del promotor ni nuestras. Una foto puede tener años, así que mire su fecha. El punto tiene unos {a} m de precisión, así que una foto puede mostrar una parcela vecina.',
-    other: 'Mapillary y Google Street View piden una cuenta o una clave, así que no los consultamos. Puede abrir el lugar allí usted mismo:', gsv: 'Google Street View', mpl: 'Mapillary',
-    d3: 'Vista 3D', d3i: 'El terreno, los edificios cartografiados a menos de 250 m ({n}, de los que {k} tocan el círculo de 150 m), el círculo de 150 m de las secciones de satélite y la precisión del punto.', d3i0: 'El terreno, el círculo de 150 m de las secciones de satélite y la precisión del punto. No hay ningún edificio cartografiado a menos de 250 m del punto en la versión {rel} de Overture.',
-    d3b: 'Ver la obra en 3D', d3s: 'Se carga solo si lo pide, cerca de 1 MB de datos de mapa.', d3l: 'Cargando la vista 3D', d3e: 'La vista 3D no ha podido cargarse en este navegador. Necesita WebGL.', d3help: 'Arrastre para mover. Clic derecho o dos dedos para inclinar y girar. Pellizque o Ctrl y rueda para acercar.',
-    lgk: 'Edificio con altura cartografiada', lgu: 'Edificio sin altura cartografiada (dibujado a 3 m)', lgc: 'Círculo de 150 m', lga: 'Precisión del punto, unos {a} m (punto con {dec} decimales)', lgp: 'Punto',
-    d3lim: 'Las huellas vienen de voluntarios (OpenStreetMap) y de aprendizaje automático sobre imágenes de satélite. Pueden ir años por detrás del terreno y la mayoría de las alturas no están cartografiadas. El terreno es un modelo de elevación público con celdas de unos 30 m en casi todas partes, así que no se ven pendientes ni desmontes pequeños.',
-    method: 'método y datos', upd: 'actualizado {d}', reset: 'Restablecer vista' },
-  fr: { h: 'Le site au niveau de la rue et en 3D', toc: 'Rue et 3D', ph: 'Photos au niveau de la rue près du point', phn: '{n} photos libres au niveau de la rue à moins de 200 m du point, de la plus récente à la plus ancienne, une par parcours.',
-    ph0: 'Aucune photo libre au niveau de la rue à moins de 200 m du point dans {s} (vérifié le {d}).', cap: 'Prise le {d}, à {m} m du point', nod: 'Date non enregistrée, à {m} m du point',
-    face: 'appareil tourné vers le point', pano: 'photo à 360°', lic: 'Licence {l}. Auteur et crédits complets sur la page de la photo.', open: 'Ouvrir sur {s}', commons: 'importée de Mapillary',
-    phlim: 'Ces photos sont de bénévoles et du public, pas du promoteur ni de nous. Une photo peut dater de plusieurs années : regardez sa date. Le point est précis à environ {a} m, une photo peut donc montrer une parcelle voisine.',
-    other: 'Mapillary et Google Street View demandent un compte ou une clé, nous ne les interrogeons donc pas. Vous pouvez y ouvrir le lieu vous-même :', gsv: 'Google Street View', mpl: 'Mapillary',
-    d3: 'Vue 3D', d3i: 'Le relief, les bâtiments cartographiés à moins de 250 m ({n}, dont {k} touchent le cercle de 150 m), le cercle de 150 m des sections satellite et la précision du point.', d3i0: 'Le relief, le cercle de 150 m des sections satellite et la précision du point. Aucun bâtiment n\'est cartographié à moins de 250 m du point dans la version {rel} d\'Overture.',
-    d3b: 'Voir le site en 3D', d3s: 'Chargé seulement à votre demande, environ 1 Mo de données cartographiques.', d3l: 'Chargement de la vue 3D', d3e: 'La vue 3D n\'a pas pu se charger dans ce navigateur. Elle a besoin de WebGL.', d3help: 'Glissez pour déplacer. Clic droit ou deux doigts pour incliner et tourner. Pincez ou Ctrl et molette pour zoomer.',
-    lgk: 'Bâtiment, hauteur cartographiée', lgu: 'Bâtiment, hauteur non cartographiée (dessiné à 3 m)', lgc: 'Cercle de 150 m', lga: 'Précision du point, environ {a} m (point à {dec} décimales)', lgp: 'Point',
-    d3lim: 'Les emprises viennent de bénévoles (OpenStreetMap) et d\'apprentissage automatique sur images satellite. Elles peuvent avoir des années de retard sur le terrain, et la plupart des hauteurs ne sont pas cartographiées. Le relief est un modèle d\'élévation public à mailles d\'environ 30 m presque partout : les petites pentes et les terrassements ne se voient pas.',
-    method: 'méthode et données', upd: 'mis à jour le {d}', reset: 'Réinitialiser la vue' },
-  de: { h: 'Das Grundstück auf Straßenhöhe und in 3D', toc: 'Straße und 3D', ph: 'Straßenfotos nahe dem Punkt', phn: '{n} freie Straßenfotos im Umkreis von 200 m um den Punkt, die neuesten zuerst, eines pro Fahrt oder Gang.',
-    ph0: 'Kein freies Straßenfoto im Umkreis von 200 m um den Punkt in {s} (geprüft am {d}).', cap: 'Aufgenommen am {d}, {m} m vom Punkt', nod: 'Datum nicht erfasst, {m} m vom Punkt',
-    face: 'Kamera zeigt zum Punkt', pano: '360°-Foto', lic: 'Lizenz {l}. Urheber und vollständige Angaben auf der Seite des Fotos.', open: 'Bei {s} öffnen', commons: 'aus Mapillary importiert',
-    phlim: 'Diese Fotos stammen von Freiwilligen und der Öffentlichkeit, nicht vom Bauträger und nicht von uns. Ein Foto kann Jahre alt sein, prüfen Sie das Datum. Der Punkt ist etwa {a} m genau, ein Foto kann also ein Nachbargrundstück zeigen.',
-    other: 'Mapillary und Google Street View verlangen ein Konto oder einen Schlüssel, deshalb fragen wir sie nicht ab. Sie können den Ort dort selbst öffnen:', gsv: 'Google Street View', mpl: 'Mapillary',
-    d3: '3D-Ansicht', d3i: 'Gelände, die im Umkreis von 250 m kartierten Gebäude ({n}, davon {k} am 150-m-Kreis), der 150-m-Kreis der Satellitenabschnitte und die Genauigkeit des Punkts.', d3i0: 'Gelände, der 150-m-Kreis der Satellitenabschnitte und die Genauigkeit des Punkts. In der Overture-Version {rel} ist im Umkreis von 250 m um den Punkt kein Gebäude kartiert.',
-    d3b: 'Grundstück in 3D zeigen', d3s: 'Wird nur auf Wunsch geladen, etwa 1 MB Kartendaten.', d3l: '3D-Ansicht wird geladen', d3e: 'Die 3D-Ansicht konnte in diesem Browser nicht geladen werden. Sie braucht WebGL.', d3help: 'Ziehen zum Verschieben. Rechtsklick-Ziehen oder zwei Finger zum Neigen und Drehen. Zwei Finger spreizen oder Strg und Mausrad zum Zoomen.',
-    lgk: 'Gebäude, Höhe kartiert', lgu: 'Gebäude, Höhe nicht kartiert (mit 3 m gezeichnet)', lgc: '150-m-Kreis', lga: 'Genauigkeit des Punkts, etwa {a} m (Punkt mit {dec} Dezimalstellen)', lgp: 'Punkt',
-    d3lim: 'Grundrisse stammen von Freiwilligen (OpenStreetMap) und aus maschinellem Lernen auf Satellitenbildern. Sie können Jahre hinter der Wirklichkeit liegen, und die meisten Höhen sind nicht kartiert. Das Gelände ist ein öffentliches Höhenmodell mit meist etwa 30 m großen Zellen, kleine Hänge und Abgrabungen sind daher nicht zu sehen.',
-    method: 'Methode und Daten', upd: 'aktualisiert {d}', reset: 'Ansicht zurücksetzen' },
-  nl: { h: 'Het terrein op straatniveau en in 3D', toc: 'Straat en 3D', ph: 'Straatfoto\'s bij het punt', phn: '{n} open straatfoto\'s binnen 200 m van het punt, nieuwste eerst, één per rit of wandeling.',
-    ph0: 'Geen open straatfoto binnen 200 m van het punt in {s} (gecontroleerd op {d}).', cap: 'Genomen op {d}, {m} m van het punt', nod: 'Datum niet vastgelegd, {m} m van het punt',
-    face: 'camera gericht op het punt', pano: '360°-foto', lic: 'Licentie {l}. Maker en volledige vermelding op de pagina van de foto.', open: 'Openen op {s}', commons: 'geïmporteerd uit Mapillary',
-    phlim: 'Deze foto\'s zijn van vrijwilligers en het publiek, niet van de ontwikkelaar of van ons. Een foto kan jaren oud zijn, kijk dus naar de datum. Het punt is ongeveer {a} m nauwkeurig, dus een foto kan een buurperceel tonen.',
-    other: 'Mapillary en Google Street View vragen een account of sleutel, dus doorzoeken wij ze niet. Je kunt de plek daar zelf openen:', gsv: 'Google Street View', mpl: 'Mapillary',
-    d3: '3D-weergave', d3i: 'Het terrein, de gebouwen gekarteerd binnen 250 m ({n}, waarvan {k} de cirkel van 150 m raken), de cirkel van 150 m uit de satellietdelen en hoe nauwkeurig het punt is.', d3i0: 'Het terrein, de cirkel van 150 m uit de satellietdelen en hoe nauwkeurig het punt is. In Overture-versie {rel} is binnen 250 m van het punt geen gebouw gekarteerd.',
-    d3b: 'Toon het terrein in 3D', d3s: 'Laadt alleen als je erom vraagt, ongeveer 1 MB kaartgegevens.', d3l: '3D-weergave laden', d3e: 'De 3D-weergave kon in deze browser niet laden. Ze heeft WebGL nodig.', d3help: 'Sleep om te verplaatsen. Rechts slepen of twee vingers om te kantelen en draaien. Knijp of Ctrl en scroll om te zoomen.',
-    lgk: 'Gebouw, hoogte gekarteerd', lgu: 'Gebouw, hoogte niet gekarteerd (getekend op 3 m)', lgc: 'Cirkel van 150 m', lga: 'Nauwkeurigheid van het punt, ongeveer {a} m (punt met {dec} decimalen)', lgp: 'Punt',
-    d3lim: 'Contouren komen van vrijwilligers (OpenStreetMap) en van machine learning op satellietbeelden. Ze kunnen jaren achterlopen en de meeste hoogtes zijn niet gekarteerd. Het terrein is een openbaar hoogtemodel met cellen van meestal ongeveer 30 m, dus kleine hellingen en afgravingen zijn niet te zien.',
-    method: 'methode en gegevens', upd: 'bijgewerkt {d}', reset: 'Weergave herstellen' },
-  ru: { h: 'Участок с уровня улицы и в 3D', toc: 'Улица и 3D', ph: 'Уличные фото рядом с точкой', phn: '{n} открытых уличных фото в пределах 200 м от точки, сначала новые, по одному на поездку или прогулку.',
-    ph0: 'В {s} нет открытых уличных фото в пределах 200 м от точки (проверено {d}).', cap: 'Снято {d}, {m} м от точки', nod: 'Дата не записана, {m} м от точки',
-    face: 'камера направлена на точку', pano: 'фото 360°', lic: 'Лицензия {l}. Автор и полная атрибуция на странице фото.', open: 'Открыть на {s}', commons: 'импортировано из Mapillary',
-    phlim: 'Эти фото сделаны волонтёрами и обычными людьми, а не застройщиком и не нами. Фото может быть многолетней давности, смотрите дату. Точность точки около {a} м, поэтому на фото может быть соседний участок.',
-    other: 'Mapillary и Google Street View требуют аккаунт или ключ, поэтому мы их не опрашиваем. Вы можете открыть место там сами:', gsv: 'Google Street View', mpl: 'Mapillary',
-    d3: 'Вид в 3D', d3i: 'Рельеф, здания на карте в пределах 250 м ({n}, из них {k} касаются круга 150 м), круг 150 м из спутниковых разделов и точность точки.', d3i0: 'Рельеф, круг 150 м из спутниковых разделов и точность точки. В выпуске Overture {rel} в пределах 250 м от точки нет ни одного здания на карте.',
-    d3b: 'Показать участок в 3D', d3s: 'Загружается только по вашему запросу, около 1 МБ картографических данных.', d3l: 'Загрузка 3D-вида', d3e: 'Не удалось загрузить 3D-вид в этом браузере. Нужен WebGL.', d3help: 'Перетаскивайте, чтобы двигать. Правой кнопкой или двумя пальцами наклон и поворот. Щипок или Ctrl и колесо для масштаба.',
-    lgk: 'Здание, высота на карте', lgu: 'Здание, высота не указана (нарисовано 3 м)', lgc: 'Круг 150 м', lga: 'Точность точки, около {a} м (точка с {dec} знаками после запятой)', lgp: 'Точка',
-    d3lim: 'Контуры зданий от волонтёров (OpenStreetMap) и из машинного обучения по спутниковым снимкам. Они могут отставать от реальности на годы, а высота у большинства не указана. Рельеф взят из открытой модели высот с ячейкой около 30 м почти везде, поэтому небольшие склоны и выемки не видны.',
-    method: 'метод и данные', upd: 'обновлено {d}', reset: 'Сбросить вид' },
-  zh: { h: '街景与三维中的项目地块', toc: '街景与三维', ph: '定位点附近的街景照片', phn: '定位点 200 米内的 {n} 张开放街景照片，按时间从新到旧，每次拍摄行程一张。',
-    ph0: '{s} 中，定位点 200 米内没有开放的街景照片（核查于 {d}）。', cap: '拍摄于 {d}，距定位点 {m} 米', nod: '未记录日期，距定位点 {m} 米',
-    face: '镜头朝向定位点', pano: '360° 照片', lic: '许可 {l}。作者和完整署名见照片页面。', open: '在 {s} 打开', commons: '从 Mapillary 导入',
-    phlim: '这些照片来自志愿者和公众，不是开发商拍摄，也不是我们拍摄。照片可能已有多年，请看拍摄日期。定位点精度约 {a} 米，照片可能拍到相邻地块。',
-    other: 'Mapillary 和 Google 街景需要账户或密钥，所以我们不查询它们。您可以自己在那里打开这个地点：', gsv: 'Google 街景', mpl: 'Mapillary',
-    d3: '三维视图', d3i: '地形、250 米内已绘制的建筑（{n} 栋，其中 {k} 栋触及 150 米圆圈）、卫星部分使用的 150 米圆圈，以及定位点的精度。', d3i0: '地形、卫星部分使用的 150 米圆圈，以及定位点的精度。在 Overture {rel} 版本中，定位点 250 米内没有已绘制的建筑。',
-    d3b: '以三维查看地块', d3s: '仅在您点击时加载，约 1 MB 地图数据。', d3l: '正在加载三维视图', d3e: '此浏览器无法加载三维视图，需要 WebGL。', d3help: '拖动可移动。右键拖动或双指可倾斜和旋转。双指缩放或按住 Ctrl 滚动可缩放。',
-    lgk: '建筑，已绘制高度', lgu: '建筑，未绘制高度（按 3 米绘制）', lgc: '150 米圆圈', lga: '定位点精度，约 {a} 米（定位点有 {dec} 位小数）', lgp: '定位点',
-    d3lim: '建筑轮廓来自志愿者（OpenStreetMap）和基于卫星影像的机器学习，可能比实际情况晚数年，大多数建筑没有高度数据。地形来自公开的高程模型，多数地方网格约 30 米，因此看不到小的坡度和开挖。',
-    method: '方法与数据', upd: '更新于 {d}', reset: '重置视图' },
-  ar: { h: 'الموقع على مستوى الشارع وبالأبعاد الثلاثة', toc: 'الشارع والأبعاد الثلاثة', ph: 'صور على مستوى الشارع قرب النقطة', phn: '{n} صور مفتوحة على مستوى الشارع ضمن 200 م من النقطة، الأحدث أولًا، صورة واحدة لكل جولة تصوير.',
-    ph0: 'لا توجد صورة مفتوحة على مستوى الشارع ضمن 200 م من النقطة في {s} (تم التحقق في {d}).', cap: 'التُقطت في {d}، على بعد {m} م من النقطة', nod: 'التاريخ غير مسجّل، على بعد {m} م من النقطة',
-    face: 'الكاميرا موجّهة نحو النقطة', pano: 'صورة 360°', lic: 'الترخيص {l}. اسم المؤلف والإسناد الكامل في صفحة الصورة.', open: 'افتح في {s}', commons: 'مستوردة من Mapillary',
-    phlim: 'هذه الصور من متطوعين ومن الجمهور، لا من المطوّر ولا منّا. قد تكون الصورة قديمة بسنوات، فانظر إلى تاريخها. دقة النقطة نحو {a} م، لذا قد تُظهر الصورة قطعة مجاورة.',
-    other: 'يتطلب Mapillary وGoogle Street View حسابًا أو مفتاحًا، لذا لا نبحث فيهما. يمكنك فتح المكان هناك بنفسك:', gsv: 'Google Street View', mpl: 'Mapillary',
-    d3: 'عرض ثلاثي الأبعاد', d3i: 'التضاريس، والمباني المرسومة ضمن 250 م ({n}، منها {k} تلامس دائرة 150 م)، ودائرة 150 م المستخدمة في أقسام الأقمار الصناعية، ومدى دقة النقطة.', d3i0: 'التضاريس، ودائرة 150 م المستخدمة في أقسام الأقمار الصناعية، ومدى دقة النقطة. لا يوجد مبنى مرسوم ضمن 250 م من النقطة في إصدار Overture ‏{rel}.',
-    d3b: 'اعرض الموقع بالأبعاد الثلاثة', d3s: 'يُحمَّل فقط عند طلبك، نحو 1 ميغابايت من بيانات الخريطة.', d3l: 'جارٍ تحميل العرض ثلاثي الأبعاد', d3e: 'تعذّر تحميل العرض ثلاثي الأبعاد في هذا المتصفح. يحتاج إلى WebGL.', d3help: 'اسحب للتحريك. اسحب بالزر الأيمن أو بإصبعين للإمالة والتدوير. باعد إصبعين أو استخدم Ctrl مع العجلة للتكبير.',
-    lgk: 'مبنى، ارتفاعه مرسوم', lgu: 'مبنى، ارتفاعه غير مرسوم (مرسوم بارتفاع 3 م)', lgc: 'دائرة 150 م', lga: 'دقة النقطة، نحو {a} م (النقطة بـ {dec} منازل عشرية)', lgp: 'النقطة',
-    d3lim: 'تأتي حدود المباني من متطوعين (OpenStreetMap) ومن التعلم الآلي على صور الأقمار الصناعية. قد تتأخر عن الواقع سنوات، ومعظم الارتفاعات غير مرسومة. التضاريس من نموذج ارتفاعات عام بخلايا نحو 30 م في معظم الأماكن، لذا لا تظهر المنحدرات والحفريات الصغيرة.',
-    method: 'المنهجية والبيانات', upd: 'حُدّث في {d}', reset: 'إعادة ضبط العرض' },
-};
-const t = (lang, k, v) => { const s = (S[lang] && S[lang][k]) || S.en[k]; return v && typeof s === 'string' ? s.replace(/\{(\w+)\}/g, (m, x) => v[x] != null ? v[x] : m) : s; };
+let S = { en: {} };   // n40 k4: strings in 8 languages live in /data/media-i18n.json (see)
+
+const t = (lang, k, v) => { const s = (S[lang] && S[lang][k]) || S.en[k] || ''; return v && typeof s === 'string' ? s.replace(/\{(\w+)\}/g, (m, x) => v[x] != null ? v[x] : m) : s; };
 const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 export const seeToc = lang => t(lang, 'toc');
 export const seeHeading = lang => t(lang, 'h');
