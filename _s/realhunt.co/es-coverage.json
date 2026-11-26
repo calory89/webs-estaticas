@@ -289,7 +289,7 @@
  },
  "max_english_share": 0.004,
  "max_english_words": 0,
- "twins": 1267,
+ "twins": 1268,
  "groups": {
   "homes": {
    "pages": 726,
@@ -300,9 +300,9 @@
    "spanish_pct": 0
   },
   "places": {
-   "pages": 712,
-   "twins": 712,
-   "words": 1662795,
+   "pages": 713,
+   "twins": 713,
+   "words": 1663443,
    "english": 0,
    "spanish_pct": 100
   },
@@ -317,7 +317,7 @@
   "content": {
    "pages": 592,
    "twins": 591,
-   "words": 458459,
+   "words": 458462,
    "english": 0,
    "by_hand": 42,
    "spanish_pct": 100

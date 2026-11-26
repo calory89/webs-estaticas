@@ -1,11 +1,11 @@
 {
  "summary": {
-  "pages": 4836,
-  "indexable": 4294,
+  "pages": 4838,
+  "indexable": 4296,
   "noindex": 542,
   "noindex_by_polish": 450,
   "duplicate_homes": 2,
-  "title_over_60": 552,
+  "title_over_60": 553,
   "desc_over_155": 0,
   "desc_under_120": 70,
   "desc_out_of_range": 70,
@@ -15,13 +15,13 @@
   "broken_links": 0,
   "healed_links": 0,
   "orphans": 0,
-  "inlinks_under_3": 48,
+  "inlinks_under_3": 46,
   "hreflang_problems": 0,
-  "pages_with_hreflang": 4276,
+  "pages_with_hreflang": 4278,
   "thin_under_150_words": 29,
   "mixed_content": 0,
   "no_lang": 0,
-  "with_lastmod": 4241,
+  "with_lastmod": 4243,
   "redirects": 1885,
   "moved_stubs": 261
  },
@@ -77,7 +77,7 @@
    "indexable": 1,
    "noindex": 0,
    "median_words": 665,
-   "title_over_60": 0,
+   "title_over_60": 1,
    "desc_out_of_range": 1,
    "inlinks_under_3": 0
   },
@@ -130,7 +130,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 2190,
+   "median_words": 2196,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -346,7 +346,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 2691,
+   "median_words": 2698,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -490,10 +490,10 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 524,
+   "median_words": 528,
    "title_over_60": 0,
    "desc_out_of_range": 0,
-   "inlinks_under_3": 1
+   "inlinks_under_3": 0
   },
   "/es/homes/*": {
    "pages": 30,
@@ -576,6 +576,15 @@
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
+  "/es/regions": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 857,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
   "/es/research": {
    "pages": 1,
    "indexable": 1,
@@ -598,7 +607,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 320,
+   "median_words": 325,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -760,10 +769,10 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 424,
+   "median_words": 427,
    "title_over_60": 0,
    "desc_out_of_range": 0,
-   "inlinks_under_3": 1
+   "inlinks_under_3": 0
   },
   "/homes/*": {
    "pages": 30,
@@ -909,6 +918,15 @@
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
+  "/regions": {
+   "pages": 1,
+   "indexable": 1,
+   "noindex": 0,
+   "median_words": 730,
+   "title_over_60": 0,
+   "desc_out_of_range": 0,
+   "inlinks_under_3": 0
+  },
   "/research": {
    "pages": 1,
    "indexable": 1,
@@ -931,7 +949,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 346,
+   "median_words": 351,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -1074,7 +1092,7 @@
  "healed_links": {},
  "json_ld": {
   "notes": {
-   "pages with JSON-LD changed": 4294,
+   "pages with JSON-LD changed": 4296,
    "ItemList: items removed or renumbered": 12,
    "RealEstateListing: availability left out (advert not confirmed)": 352,
    "Article: author, date, headline or image missing": 52
@@ -1083,8 +1101,6 @@
  },
  "lists": {
   "inlinks_under_3": [
-   "/es/homes (1)",
-   "/homes (1)",
    "/sitemap/bulgaria (2)",
    "/sitemap/canada (2)",
    "/sitemap/colombia (2)",
@@ -1232,6 +1248,7 @@
    "/blog/best-new-builds-batumi-scored-2026",
    "/blog/best-new-builds-phuket-scored-2026",
    "/blog/best-new-builds-tulum-scored-2026",
+   "/blog",
    "/blog/italy-houses-by-the-sea-under-50000",
    "/blog/top-10-deals-near-miami-under-300000",
    "/blog/viewing-checklist-cheap-house",
@@ -1286,8 +1303,7 @@
    "/cheap-houses/unusual-buildings-in-italy",
    "/cheap-houses/with-a-terrace-in-dominican-republic",
    "/cheap-houses/with-garden-under-100000-in-united-states",
-   "/cheap-houses/with-olive-trees-or-vines-in-sweden",
-   "... 492 more"
+   "... 493 more"
   ],
   "title_under_20": [
    "/contact",
@@ -1295,7 +1311,7 @@
   ]
  },
  "spanish": {
-  "twins": 1267,
+  "twins": 1268,
   "groups": {
    "homes": {
     "pages": 726,
@@ -1306,9 +1322,9 @@
     "spanish_pct": 0
    },
    "places": {
-    "pages": 712,
-    "twins": 712,
-    "words": 1662795,
+    "pages": 713,
+    "twins": 713,
+    "words": 1663443,
     "english": 0,
     "spanish_pct": 100
    },
@@ -1323,7 +1339,7 @@
    "content": {
     "pages": 592,
     "twins": 591,
-    "words": 458459,
+    "words": 458462,
     "english": 0,
     "by_hand": 42,
     "spanish_pct": 100
@@ -1339,10 +1355,10 @@
  },
  "tech": {
   "summary": {
-   "checked": 4836,
-   "indexable": 4294,
+   "checked": 4838,
+   "indexable": 4296,
    "max_depth": 3,
-   "titles_changed_since_last_build": 0,
+   "titles_changed_since_last_build": 2,
    "external_link_hosts": 335,
    "no_text_without_javascript": 9,
    "click_handler_instead_of_link": 1418,
@@ -1475,8 +1491,8 @@
   "depth": {
    "0": 2,
    "1": 156,
-   "2": 3733,
-   "3": 403
+   "2": 3737,
+   "3": 401
   },
   "noindex": {
    "app screen": 5,
@@ -1571,7 +1587,7 @@
    "sizes": {
     "other": {
      "limit_kb": 100,
-     "pages": 1947,
+     "pages": 1949,
      "over": 2,
      "biggest": [
       {
@@ -1699,7 +1715,7 @@
   ]
  },
  "sitemaps": {
-  "sitemap-main.xml": 22,
+  "sitemap-main.xml": 23,
   "sitemap-countries.xml": 292,
   "sitemap-prices.xml": 63,
   "sitemap-cheap-houses.xml": 357,
@@ -1740,7 +1756,7 @@
   "sitemap-homes-uruguay.xml": 4,
   "sitemap-new-builds.xml": 8,
   "sitemap-more.xml": 92,
-  "sitemap-es-main.xml": 19,
+  "sitemap-es-main.xml": 20,
   "sitemap-es-countries.xml": 292,
   "sitemap-es-prices.xml": 63,
   "sitemap-es-cheap-houses.xml": 357,

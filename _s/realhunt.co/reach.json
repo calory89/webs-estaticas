@@ -1,7 +1,7 @@
 {
  "built": "2026-11-26",
- "indexable": 7152,
- "pages_given_a_date": 6853,
+ "indexable": 7154,
+ "pages_given_a_date": 6855,
  "video_pages": 0,
  "listing_markdown": 46,
  "answers": {
@@ -29,11 +29,11 @@
  "robots_lines_added": 1,
  "indexnow": {
   "compared": true,
-  "added": 0,
-  "changed": 0,
+  "added": 2,
+  "changed": 6,
   "removed": 0
  },
- "changed_today": 1605,
+ "changed_today": 8,
  "press_pdf": [
   "press/realhunt-in-figures.pdf",
   "press/realhunt-in-figures-2026-11.pdf"
@@ -92,8 +92,8 @@
   ]
  },
  "llms_full": {
-  "bytes": 1799945,
-  "gz": 344608,
+  "bytes": 1799067,
+  "gz": 344357,
   "over": false
  },
  "wrong_language_lines": {
@@ -112,7 +112,7 @@
   "data/glossary.json": 37489,
   "data/realhunt-homes.geojson": 210596,
   "data/realhunt-best-homes.kml": 60517,
-  "data/changed-today.txt": 84331,
+  "data/changed-today.txt": 242,
   "research/homes.csv": 76169,
   "research/removed-homes.json": 40527,
   "research/removed-by-month.json": 447,
@@ -122,7 +122,7 @@
   "feeds/removed.json": 44109,
   "press/realhunt-in-figures.pdf": 3975,
   "llms.txt": 22427,
-  "llms-full.txt": 1799945
+  "llms-full.txt": 1799067
  },
  "files": [
   "openapi.json",
