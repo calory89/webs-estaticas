@@ -621,7 +621,7 @@ def main():
     order = sorted(P, key=lambda p: (last_read(p), h16(p['slug'] + STAMP[:13])))[:MAX_PAGES]
     run = {'at': STAMP, 'projects_read': 0, 'pages_fetched': 0, 'fetch_failed': 0, 'robots_blocked': 0, 'unchanged_pages': 0, 'pages_read_by_model': 0,
            'findings': 0, 'no_change': 0, 'ambiguous': 0, 'rejected_quote_not_found': 0, 'rejected_value_not_in_quote': 0, 'model_errors': 0,
-           'skipped_budget_or_time': 0, 'tokens_in': 0, 'tokens_out': 0, 'usd': 0.0, 'budget_usd': BUDGET, 'model': HAIKU, 'stopped_by': None,
+           'skipped_budget_or_time': 0, 'tokens_in': 0, 'tokens_out': 0, 'usd': 0.0, 'budget_usd': BUDGET, 'stopped_by': None,
            'oldest_read_before': None}
     if order:
         run['oldest_read_before'] = last_read(order[0]) or 'never'
@@ -695,6 +695,8 @@ def finish(run, new_findings, state, feed, byp, od, spath, fpath, bpath, tracked
         if f['id'] not in seen:
             seen.add(f['id']); keep.append(f)
     runs = ((feed.get('runs') or []) + [run])[-240:]
+    for r in runs:   # public file: no model name or per-token prices (wording rule, 26 Nov 2026); usd stays, the daily budget reads it
+        r.pop('model', None)
     tot = feed.get('totals') or {}
     for k in ('projects_read', 'pages_fetched', 'pages_read_by_model', 'findings', 'no_change', 'rejected_quote_not_found', 'rejected_value_not_in_quote', 'tokens_in', 'tokens_out'):
         tot[k] = (tot.get(k) or 0) + (run.get(k) or 0)
@@ -704,17 +706,16 @@ def finish(run, new_findings, state, feed, byp, od, spath, fpath, bpath, tracked
     pubd = {
         'updated': run['at'],
         'about': ('Every day a GitHub Actions job re-reads the developer pages of the tracked projects that were checked longest ago '
-                  '(round robin over all %d projects with a public id), asks our agent for concrete facts with an exact quote each, '
+                  '(round robin over all %d projects with a public id), pulls out concrete facts with an exact quote each, '
                   'and publishes a finding only when a fact is new or changed compared with what we stored for that project.' % tracked),
         'method': {
             'schedule': 'daily (about 07:34 UTC, hourly until 6 Nov 2026), GitHub Actions, one run at a time',
-            'model': HAIKU, 'prices_usd_per_million_tokens': {HAIKU: list(PRICE[HAIKU]), SONNET: list(PRICE[SONNET])},
             'budget_usd_per_run': BUDGET, 'budget_usd_per_day': DAY_USD,
-            'budget_rule': 'daily budget of %g USD for all runs together (5 USD until 6 Nov 2026): a run may spend only what is left of today; spend is computed from the real token usage of every call at list prices, and before each call its worst case is reserved, so neither the run nor the day can pass its budget' % DAY_USD,
+            'budget_rule': 'daily budget of %g USD for all runs together (5 USD until 6 Nov 2026): a run may spend only what is left of today, and before each step its worst case is reserved, so neither the run nor the day can pass its budget' % DAY_USD,
             'checked_in_code': ['the quote is found word for word in the fetched page text (case, spacing and typographic quotes ignored, no skipping)',
                                 'the quote contains the value (year, percent, amount or number)',
                                 'a changed value is published only if the old value is no longer stated near the same words on the page',
-                                'a page with the same SHA-256 as at our last read is not sent to the model and counts as no change'],
+                                'a page with the same SHA-256 as at our last read is not read again and counts as no change'],
             'politeness': 'robots.txt respected, one request per host every %g seconds, User-Agent %s' % (GAP, agent.UA),
             'anonymity': 'project id and market only: never the developer, the project name, the URL or the quote. q is the first 16 hex characters of the SHA-256 of the quote, fp of the page text; we keep a frozen copy of the page text so both can be checked later.',
             'kinds': {'changed': 'a value differs from our last read and the old value is no longer on the page', 'new': 'stated now, not stated at our last read',

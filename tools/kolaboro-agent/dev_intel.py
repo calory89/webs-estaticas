@@ -323,7 +323,7 @@ def promise_drift(P, ids):
                   'and lists every change: the field, the old and new value, and the first and last day each value was seen. Prices are '
                   'shown as a percentage change, converted to US dollars at a fixed rate, and moves under 1% are ignored as rounding. Permit '
                   'numbers and deposit protection text are shown only as stated or not stated, because the text would identify the project. '
-                  'Values are read by an AI model from the page text, so a change can also be a reading difference: a value that flips back '
+                  'Values are pulled out of the page text by software, so a change can also be a reading difference: a value that flips back '
                   'is marked as such. sha_from and sha_to are the first 16 characters of the page fingerprints before and after.',
         'counts': {'projects': len(out), 'with_changes': sum(1 for v in out.values() if v['changes']), 'changes': sum(len(v['changes']) for v in out.values())},
         'projects': out,

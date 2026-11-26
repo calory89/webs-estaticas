@@ -612,7 +612,7 @@ def main():
         'updated': TODAY,
         'version': PV,
         'method': ('Every dated promise a developer made about a project (handover, construction start, structure, other milestones, permits, '
-                   'rental programme) is read by claude-haiku-5-5 from two stores the research agent already keeps: the research record of '
+                   'rental programme) is pulled out of two stores the research agent already keeps: the research record of '
                    'each project and the copy of the developer or listing page on every day the agent read it. Each item must carry an exact '
                    'quote: software checks the quote word for word against the stored text and checks that it contains the year, and rejects '
                    'it otherwise. A promise is kept when the event is shown done no later than the promised date; broken only when the date has '
@@ -620,7 +620,7 @@ def main():
                    'in our research record); moved when the same source later shows a later date (an earlier copy of the same page, or a research '
                    'record that states the original date), with how many times and by how many months; pending when the date is still ahead; '
                    'unknown when the date has passed and we hold no dated evidence either way, or the event happened but we cannot show it was on '
-                   'time. When the newest copy states two dates for the same promise, claude-sonnet-5-5 decides which is current. Projects are '
+                   'time. When the newest copy states two dates for the same promise, a second reading of both quotes decides which is current. Projects are '
                    'anonymous: quotes are not published (they would identify the project); each promise carries the first 16 hex characters of '
                    'the SHA-256 of its quote and, for page copies, of the page text, which is the fingerprint already sealed in the daily log.'),
         'statuses': {'kept': 'done no later than the promised date', 'broken': 'date passed, and a later observation shows it had not happened',
@@ -632,7 +632,7 @@ def main():
                     'days': sorted({d for v in pv.values() for d, _ in v})},
         'checks': {'rejected': dict(rejected), 'date_conflicts': stats['date_conflicts']},
         'spend': {'this_run_usd': spend['usd'], 'total_usd': slog['total_usd'], 'cap_usd': MAX_TOTAL, 'runs': len(slog['runs']),
-                  'models': [HAIKU, SONNET], 'note': 'Computed from token usage at list prices: 0.10 / 0.50 USD (haiku) and 2 / 10 USD (sonnet) per million tokens in / out. The first run (4 Nov 2026 08:38 UTC, logged as 0.26 USD) used a 10 times higher estimate.'},
+                  'note': 'Running cost of the reading step, in USD. The first run (4 Nov 2026 08:38 UTC, logged as 0.26 USD) used a 10 times higher estimate.'},   # 26 Nov 2026: public file names no model and no per-token price
         'counts': dict(tally(allp), projects=len(out), projects_tracked=len(P)),
         'kinds_totals': kinds,
         'markets': mk,

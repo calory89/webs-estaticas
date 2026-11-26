@@ -519,12 +519,13 @@ def main():
     json.dump(changes, open(os.path.join(DATA, 'changes.json'), 'w'), ensure_ascii=False, indent=1)
     json.dump(runs, open(os.path.join(DATA, 'runs.json'), 'w'), ensure_ascii=False, indent=1)
     json.dump({"run": run, "latest": latest}, open(os.path.join(DATA, 'runs', TODAY + '.json'), 'w'), ensure_ascii=False, indent=1)
-    agg = aggregates(latest, [{k: r[k] for k in ('date', 'mode', 'pages_ok', 'pages_failed', 'changes')} for r in runs])
+    pubrun = lambda r: dict({k: r[k] for k in ('date', 'mode', 'pages_ok', 'pages_failed', 'changes')}, mode='read' if r.get('mode') == 'ai' else r.get('mode'))   # 26 Nov 2026: public files say read, not ai
+    agg = aggregates(latest, [pubrun(r) for r in runs])
     os.makedirs(os.path.dirname(os.path.abspath(public_out)), exist_ok=True)
     json.dump(agg, open(public_out, 'w'), ensure_ascii=False, indent=1)
     for slug, rec in latest.items(): rec.setdefault('market', next((p.get('market', 'Bali') for p in projects if p['slug'] == slug), 'Bali'))
     markets = sorted({p.get('market', 'Bali') for p in projects})
-    runs_pub = [{k: r[k] for k in ('date', 'mode', 'pages_ok', 'pages_failed', 'changes')} for r in runs]
+    runs_pub = [pubrun(r) for r in runs]
     json.dump({"updated": TODAY, "projects": sum(1 for p in projects if not p.get('merged_into')), "markets": {m: aggregates(latest, runs_pub, m) for m in markets}}, open(os.path.join(os.path.dirname(os.path.abspath(public_out)), 'world-claims.json'), 'w'), ensure_ascii=False, indent=1)
     json.dump(duplicates(projects), open(os.path.join(DATA, 'duplicates.json'), 'w'), ensure_ascii=False, indent=1)
     pc = public_cases(projects, latest)
