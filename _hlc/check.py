@@ -110,12 +110,39 @@ for sm in sorted(glob.glob('*-sitemap*.xml') + glob.glob('sitemap*.xml')):
                 sm_noidx.append((sm, p))
             continue
         sm_dead.append((sm, p))
+# Se arregla, no se protesta: el paso de check.py del workflow no lleva
+# "|| true", asi que un error aqui deja la web sin actualizar. Y como esto corre
+# despues de generar y antes del git add, basta con sacar la URL del sitemap.
+def _drop_locs(sm, paths):
+    try:
+        x = open(sm, encoding='utf-8', errors='ignore').read()
+    except Exception:
+        return 0
+    want = set(paths)
+
+    def one(m):
+        loc = re.search(r'<loc>\s*(.*?)\s*</loc>', m.group(0))
+        if loc and unquote(urlsplit(loc.group(1)).path) in want:
+            return ''
+        return m.group(0)
+    y = re.sub(r'\s*<url>.*?</url>', one, x, flags=re.S)
+    if y != x:
+        open(sm, 'w', encoding='utf-8').write(y)
+        return x.count('<url>') - y.count('<url>')
+    return 0
+
+
+_fixed = 0
+for _sm in sorted({sm for sm, _ in sm_dead} | {sm for sm, _ in sm_noidx}):
+    _fixed += _drop_locs(_sm, [p for s_, p in sm_dead if s_ == _sm] + [p for s_, p in sm_noidx if s_ == _sm])
 if sm_dead:
     ex = ', '.join(p for _, p in sm_dead[:5])
-    errors.append(f'{len(sm_dead)} URL(s) en los sitemaps sin pagina en la rama: {ex}')
+    warns.append(f'{len(sm_dead)} URL(s) sin pagina fuera de los sitemaps: {ex}')
 if sm_noidx:
     ex = ', '.join(p for _, p in sm_noidx[:5])
-    errors.append(f'{len(sm_noidx)} URL(s) en los sitemaps con noindex: {ex}')
+    warns.append(f'{len(sm_noidx)} URL(s) con noindex fuera de los sitemaps: {ex}')
+if _fixed:
+    warns.append(f'{_fixed} <url> quitadas de los sitemaps por check.py')
 
 # ---------- una redireccion no puede llevar a un 404 ----------
 red_dead = []
