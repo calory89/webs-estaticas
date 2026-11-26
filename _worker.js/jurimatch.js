@@ -71,6 +71,9 @@ async function sb(path, ctx) {
 }
 
 const FIRM_COLS = 'id,firm_name,description,category,typical_model,countries_served,case_types,source,website,last_verified_at,verification_source_url';
+// T3 (27-nov): the profile page gets the same public columns the app reads (useFirmProfile.ts FIRM_PROFILE_FULL_COLS),
+// handed to the app in window.__JM_FIRM so the profile renders without waiting for its own database read.
+const PROFILE_COLS = FIRM_COLS + ',jurisdictions,specialties,fee_models,verified,fee_model_verified,logo_url,min_claim_size,min_claim_threshold,domain_checked_at,domain_resolves,listing_tier';
 // Hand-verified = fee terms confirmed by our team on the firm's own site, less than 12 months ago.
 const isHand = (f) => f.source === CURATED && !!f.last_verified_at && Date.now() - Date.parse(f.last_verified_at) < 365 * 864e5;
 const pgArr = (vals) => '{' + vals.map((v) => '"' + String(v).replace(/(["\\])/g, '\\$1') + '"').join(',') + '}';
@@ -156,13 +159,13 @@ async function dynamicPage(path, m, ctx) {
   if ((mm = path.match(/^\/firms\/([a-z0-9-]+)$/))) {
     const slug = mm[1];
     const words = slug.split('-').filter(Boolean);
-    const look = (re) => sb('lawyers?select=' + FIRM_COLS + '&status=eq.active&or=(verified.is.true,source.eq.' + RESEARCH + ')&firm_name=ilike.' + encodeURIComponent('*' + words.map((w) => w.replace(re, '_')).join('*') + '*') + '&limit=200', ctx);
+    const look = (re) => sb('lawyers?select=' + PROFILE_COLS + '&status=eq.active&or=(verified.is.true,source.eq.' + RESEARCH + ')&firm_name=ilike.' + encodeURIComponent('*' + words.map((w) => w.replace(re, '_')).join('*') + '*') + '&limit=200', ctx);
     let rows = await look(/[aeiou]/g);
     if (rows && !rows.some((r) => slugify(r.firm_name) === slug)) rows = await look(/[aeiouync]/g);
     // Polish, Czech, Turkish... letters with accents on consonants (ś, ź, ż, ł, ř, ş, ğ).
     if (rows && !rows.some((r) => slugify(r.firm_name) === slug)) rows = await look(/[aeiouyncszlrtdgk]/g);
     // The wide pattern can match more than 200 names: fall back to the hand-verified firms with the same initial.
-    if (rows && !rows.some((r) => slugify(r.firm_name) === slug)) rows = await sb('lawyers?select=' + FIRM_COLS + '&status=eq.active&verified=is.true&source=eq.' + CURATED + '&firm_name=ilike.' + encodeURIComponent(words[0][0] + '*') + '&limit=1000', ctx);
+    if (rows && !rows.some((r) => slugify(r.firm_name) === slug)) rows = await sb('lawyers?select=' + PROFILE_COLS + '&status=eq.active&verified=is.true&source=eq.' + CURATED + '&firm_name=ilike.' + encodeURIComponent(words[0][0] + '*') + '&limit=1000', ctx);
     if (!rows) return null; // database unreachable: serve the page unchanged
     const f = rows.find((r) => slugify(r.firm_name) === slug);
     if (!f) return { t: 'Firm not found | JuriMatch', d: 'This firm profile is not available.', noindex: true, status: 404 };
@@ -193,6 +196,7 @@ async function dynamicPage(path, m, ctx) {
       ].filter((x) => x[1]),
       links: firmLinks(f, m),
       crumbs: [['Home', '/'], ['Firms', '/firms'], [f.firm_name, path]],
+      boot: { slug, firm: f },
       extraLd: [{ '@context': 'https://schema.org', '@type': 'LegalService', name: f.firm_name, url: ORIGIN + path, ...(f.website ? { sameAs: [f.website] } : {}), ...(where ? { areaServed: (f.countries_served || []).slice(0, 5) } : {}), description: d.slice(0, 300) }],
     };
   }
@@ -376,7 +380,8 @@ export async function render(req, res, u, env, ctx) {
 
   const headExtra = lds.map(ld).join('')
     + (page.alt || []).map((a) => '<link rel="alternate" hreflang="' + esc(a.hreflang) + '" href="' + esc(a.href) + '" />').join('')
-    + (page.article && page.published ? '<meta property="article:published_time" content="' + esc(page.published) + '" />' : '');
+    + (page.article && page.published ? '<meta property="article:published_time" content="' + esc(page.published) + '" />' : '')
+    + (page.boot ? '<script>window.__JM_FIRM=' + JSON.stringify(page.boot).replace(/</g, '\\u003c').replace(/\u2028/g, '\\u2028').replace(/\u2029/g, '\\u2029') + '</script>' : '');
 
   const html = await res.text();
   const h = new Headers(res.headers);
