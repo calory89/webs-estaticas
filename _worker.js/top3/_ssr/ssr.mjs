@@ -21601,7 +21601,7 @@ var TX$5 = {
 		city: "Ciudad",
 		country: "País",
 		budget: "Económico",
-		value: "Calidad-precio",
+		value: "Mejor calidad-precio",
 		lux: "Lujo",
 		score: "Nota",
 		night: "por noche",
@@ -22074,7 +22074,7 @@ var TD = {
 var td = (L) => TD[L] ?? TD.en;
 var CATL = (L, c) => L === "es" ? {
 	Budget: "Económico",
-	"Best Value": "Calidad-precio",
+	"Best Value": "Mejor calidad-precio",
 	Luxury: "Lujo"
 }[c] ?? c : c;
 async function cityFull(slug) {
@@ -22850,6 +22850,12 @@ function filterChips(o) {
 }
 /** T6.28: link to the spa page from the gym and pool pages (only if it exists). */
 var spaLink = (slug, L, cityName) => hasSpaPage(slug) ? `<p class="note" style="margin:10px 0"><a href="${spaHref(slug, L)}" data-t="spa_link" data-city="${esc$1(slug)}">${icon("spa")} ${esc$1(FL[L].spaCity(cityName))} →</a></p>` : "";
+/** T7.48: French typography in the visible text of /fr pages: narrow no-break space before ; ! ? and
+*  no-break space before ":" (only text nodes; scripts, styles, tags and attributes are left alone). */
+function frTypo(h) {
+	if (!/^<!doctype html><html lang="fr/i.test(h)) return h;
+	return h.split(/(<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>|<code[\s\S]*?<\/code>|<textarea[\s\S]*?<\/textarea>|<[^>]+>)/i).map((seg, i) => i % 2 ? seg : seg.replace(/(?<!&#?[\p{L}\p{N}]*)([\p{L}\p{N})»%€]) ?([;!?])(?=\s|$)/gu, "$1 $2").replace(/([\p{L}\p{N})»%€]) ?:(?=\s|$)/gu, "$1\xA0:")).join("");
+}
 /**
 * "Best hotel pools" pages: /pools (index) and /pools/<city-slug>, in English and Spanish (/es/...).
 * Data: src/generated/pools.json, built from data/pools/<slug>.json by tools/pools/build.py.
@@ -23347,7 +23353,7 @@ var CATN$1 = {
 	},
 	es: {
 		Budget: "Económico",
-		"Best Value": "Calidad-precio",
+		"Best Value": "Mejor calidad-precio",
 		Luxury: "Lujo"
 	}
 };
@@ -23853,7 +23859,7 @@ var CATN = {
 	},
 	es: {
 		Budget: "Económico",
-		"Best Value": "Calidad-precio",
+		"Best Value": "Mejor calidad-precio",
 		Luxury: "Lujo"
 	}
 };
@@ -54910,7 +54916,7 @@ ${JS_PLUS}
 window.T3V=${json(M[o.L].voice)};${JS_MORE}
 ${REPORT_JS}${INSTALL_JS}${VOTE_JS}<\/script><script>${JS_DP}<\/script><script>${V6_JS}<\/script></body></html>`;
 }
-var html = (body, status = 200, cache = "public, max-age=600, s-maxage=86400") => new Response(body, {
+var html = (body, status = 200, cache = "public, max-age=600, s-maxage=86400") => new Response(frTypo(body), {
 	status,
 	headers: {
 		"content-type": "text/html; charset=utf-8",
