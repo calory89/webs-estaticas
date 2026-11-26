@@ -66,14 +66,17 @@ function asset(env, req, path) {
    Up to 24 bundles stay in memory for 2 minutes. A page that is not in its bundle falls back to its own file.
    /__pk/<path> serves a page only from the bundles (noindex), to compare them with the files. */
 /* rh-pack-2 (20 Nov 2026): on for every home page, after all 1,366 pages compared equal with their files */
-const RH_PK_SERVE = true, RH_PK = new Map(), RH_PK_RE = /^\/(?:es\/)?deal\/[\w.~-]+$/;
-function packShard(k) { let h = 0x811c9dc5; for (let i = 0; i < k.length; i++) { h ^= k.charCodeAt(i); h = Math.imul(h, 0x01000193) >>> 0; } return h % 256; }
+/* rh-pack-3 (26 Nov 2026): the pages of /de /fr /nl /pl /ru come from /_pk/l1/<n>.json (512 bundles, keyed by the decoded path,
+   seo/langs/pack.ts of score-insight-rank), the same way as the home pages */
+const RH_PK_SERVE = true, RH_PK = new Map(), RH_PK_RE = /^\/(?:es\/)?deal\/[\w.~-]+$/, RH_PKL_RE = /^\/(?:de|fr|nl|pl|ru)(?:\/[^/]+)*$/;
+function packShard(k, s) { let h = 0x811c9dc5; for (let i = 0; i < k.length; i++) { h ^= k.charCodeAt(i); h = Math.imul(h, 0x01000193) >>> 0; } return h % (s || 256); }
 async function packPage(env, req, path) {
-  if (!RH_PK_RE.test(path)) return null;
-  const n = packShard(path); let c = RH_PK.get(n);
+  const home = RH_PK_RE.test(path);
+  if (!home) { if (!RH_PKL_RE.test(path) || /\.(xml|txt|json|md)$/.test(path)) return null; try { path = decodeURIComponent(path); } catch (e) { return null; } }
+  const n = home ? 'v1/' + packShard(path) : 'l1/' + packShard(path, 512); let c = RH_PK.get(n);
   if (!c || Date.now() - c.at > 120000) {
     try {
-      const r = await env.ASSETS.fetch(new Request(new URL('/_pk/v1/' + n + '.json', req.url)));
+      const r = await env.ASSETS.fetch(new Request(new URL('/_pk/' + n + '.json', req.url)));
       if (r.status === 200) c = { at: Date.now(), m: await r.json() };
       else if (r.status === 404) c = { at: Date.now(), m: {} };
     } catch (e) { /* keep the old copy, if any */ }
