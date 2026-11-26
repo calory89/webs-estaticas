@@ -15,7 +15,7 @@ import { TB } from './kbx_strings.js';   // n30a (batch 30): contract reader lin
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const COI_RX = /eco\s*beach\s*city|\bequinox\b/i;
-export const U27V = 'u27n';   // u27l: n31t compare checkbox 24 px, href on the compare link; u27k: loads /k/n31d.js on project pages (n31d); u27j: n30a script a5; u27i: n30a script a4; u27h: compare up to 4, loads /k/n30a.js (n30a)
+export const U27V = 'u27o';   // u27o: singular '1 project' in suggestions and map count (n40 k9); u27l: n31t compare checkbox 24 px, href on the compare link; u27k: loads /k/n31d.js on project pages (n31d); u27j: n30a script a5; u27i: n30a script a4; u27h: compare up to 4, loads /k/n30a.js (n30a)
 const pre = l => l === 'en' ? '' : '/' + l;
 const esc = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const bdi = (lang, s) => lang === 'ar' ? '<bdi>' + esc(s) + '</bdi>' : esc(s);
