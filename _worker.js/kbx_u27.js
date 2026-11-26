@@ -440,8 +440,7 @@ async function mapPage(req, u, env, ctx, shell, lang) {
     TB.kbx_u27__s.k2 + esc(N30.t30(lang, 'mh_k1')) + '</span> <span class="kmp-k"><i style="background:#E8772E"></i>' + esc(N30.t30(lang, 'mh_k6')) + '</span> <span class="kmp-k"><i style="background:#C2341B"></i>' + esc(N30.t30(lang, 'mh_k12')) + '</span> <a href="/data/on-time.json">on-time.json</a></p>' + '<p class="kmp-n" role="status" aria-live="polite">' + esc(t27(lang, 'mp_load')) + '</p><div class="kmp-m" role="region" aria-label="' + esc(t27(lang, 'mp_h1')) + '">' + esc(t27(lang, 'mp_load')) + '</div>' +
     '<p class="k-small k-muted">' + esc(t27(lang, 'mp_src')) + '</p><h2>' + esc(t27(lang, 'mp_list')) + '</h2><ul class="kmp-l lk">' + pre47 + '</ul><button type="button" class="kmp-more" hidden>' + esc(W_MORE[lang] || W_MORE.en) + '</button>' +
     '<p><a href="/api/v1/map' + (lang === 'en' ? '' : '?lang=' + lang) + '" rel="nofollow">/api/v1/map</a> · <a href="' + P + '/projects/">' + esc(N.tr(lang, 'h1_i')) + '</a></p></div>' +
-    TB.kbx_u27__s.k3 +
-    TB.kbx_u27__s.k4 + MAP3_V + '" defer></script>';
+    '<link rel="stylesheet" href="/k/n35b/map.css?v=1ac6f0d5b"><script src="/k/n35b/map.js?v=' + MAP3_V + '" defer></script>';
   const pg = { title: t27(lang, 'mp_t') + ' | Kolaboro', desc: t27(lang, 'mp_d'), canon, body, alt: l => ORIGIN + pre(l) + '/map/',
     ld: { '@context': 'https://schema.org', '@graph': [{ '@type': 'WebPage', name: t27(lang, 'mp_t'), url: canon, inLanguage: lang, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' } },
       { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Kolaboro', item: ORIGIN + P + '/' }, { '@type': 'ListItem', position: 2, name: N.tr(lang, 'h1_i'), item: ORIGIN + P + '/projects/' }, { '@type': 'ListItem', position: 3, name: t27(lang, 'mp_h1'), item: canon }] }] } };   // n29t (item 53): the same path as the visible breadcrumb

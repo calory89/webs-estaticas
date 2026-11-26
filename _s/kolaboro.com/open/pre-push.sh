@@ -44,6 +44,11 @@ fi
 if [ -f "$top/_s/kolaboro.com/open/search-quality.mjs" ] && [ -f "$top/_worker.js/kbx_n31e.js" ]; then
   (cd "$top" && timeout 120 node _s/kolaboro.com/open/search-quality.mjs . | tail -n 9) || echo "kolaboro push check: WARNING search ranking regression (see above, /engineering/search-quality/)"
 fi
+# 6. canonical and hreflang build check (n40 k16, 26 Nov 2026, R03-30): no page given as its own alternate in another language,
+#    no canonical or alternate pointing to a missing page (static files offline, worker pages and targets with --live)
+if [ -f "$top/_s/kolaboro.com/open/alternates-check.py" ]; then
+  (cd "$top" && timeout 300 python3 _s/kolaboro.com/open/alternates-check.py . --live | tail -n 12) || echo "kolaboro push check: FAILED canonical/hreflang check (see above): fix it before the next push"
+fi
 if [ "$code" = 0 ]; then echo "kolaboro push check: bundle OK (exit=0). After the deploy see https://kolaboro.com/status/#keypages"
 else echo "kolaboro push check: BUNDLE FAILED (exit=$code). The push goes ahead (report only); fix it now: a broken bundle breaks every site on this branch."; fi
 log="$(git rev-parse --git-common-dir)/kolaboro-push-checks.log"
