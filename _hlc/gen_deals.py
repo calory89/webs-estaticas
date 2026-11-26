@@ -501,7 +501,7 @@ def ago_iso(s):
 
 
 def head(**k):
-    d = dict(robots='index, follow, max-image-preview:large', og_type='article', extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12">', body_class='')
+    d = dict(robots=ROBOTS_IDX, og_type='article', extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12">', body_class='')
     d.update(k)
     d.setdefault('og_title', d['title'])
     d.setdefault('og_alt', d['title'])
@@ -579,6 +579,156 @@ def guide_extras(gh, lang='es'):
                + ''.join(f'<li><a href="#{k}">{e(t)}</a></li>' for k, t in toc) + '</ol></details></nav>')
         gh = nav + gh
     return gh, faq_ld, words
+
+
+# ---------- SEO para buscadores e IA en las guías (ronda SEO 1, 26-nov-2026) ----------
+# Robots: permitir fragmentos completos (AI Overviews, modo IA de Google y Bing/Copilot citan mejor
+# cuando pueden usar el texto entero) además de la imagen grande.
+ROBOTS_IDX = 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'
+ORG_ID = SITE + '/#org'
+ORG_LD = {"@type": "Organization", "@id": ORG_ID, "name": "Happy Low Cost", "url": SITE + "/", "foundingDate": "2012",
+          "logo": {"@type": "ImageObject", "url": SITE + "/hlc/brand/icon-512.png"},
+          "sameAs": ["https://www.facebook.com/happylowcostofficialpage/"],
+          "founder": {"@type": "Person", "name": "Carlos de Ory", "url": "https://www.carlosdeory.com"}}
+
+
+def guide_days(title, gh):
+    """Días del itinerario: los que dice el título ("en 3 días", "in 3 days") o el mayor "Día N"/"Day N" del texto."""
+    m = re.search(r'\b(?:en|in)\s+(\d{1,2})\s+(?:d[ií]as|days)\b', title or '', re.I)
+    if m and 1 <= int(m.group(1)) <= 21:
+        return int(m.group(1))
+    nd = 0
+    for m_ in re.finditer(r'\b(?:d[ií]a|day)\s*(\d{1,2})\b', gh or '', re.I):
+        nd = max(nd, int(m_.group(1)))
+    return nd if 2 <= nd <= 21 else 0
+
+
+def _first_sentence(txt, n=230):
+    txt = html.unescape(re.sub(r'<[^>]+>', ' ', txt or ''))
+    txt = re.sub(r'\s+', ' ', txt).strip()
+    m = re.match(r'(.{40,}?[.!?])(\s|$)', txt)
+    s = m.group(1) if m else txt
+    if len(s) > n:
+        s = s[:n].rsplit(' ', 1)[0].rstrip(',;:') + '…'
+    return s.replace(' — ', ', ').replace('—', ', ')
+
+
+def section_text(gh, rx, prefer=None, fallback=True):
+    """Frase de la sección h2 cuyo título encaja con rx (texto de la propia guía, sin inventar nada).
+    Con prefer, la primera frase de la sección que lo cumple (p. ej. que tenga una cifra en €)."""
+    for m in re.finditer(r'<h2[^>]*>(.*?)</h2>(.*?)(?=<h2|$)', gh or '', re.S):
+        if re.search(rx, re.sub('<[^>]+>', '', m.group(1)), re.I):
+            if prefer:
+                txt = html.unescape(re.sub(r'<[^>]+>', ' ', ' '.join(re.findall(r'<(?:p|li)>(.*?)</(?:p|li)>', m.group(2), re.S))))
+                snts = re.split(r'(?<=[.!?])\s+', re.sub(r'\s+', ' ', txt))
+                for pf in (prefer if isinstance(prefer, tuple) else (prefer,)):
+                    for snt in snts:
+                        if 30 <= len(snt) and re.search(pf, snt, re.I):
+                            return _first_sentence(snt)
+                if not fallback:
+                    return ''
+            p = re.search(r'<p>(.*?)</p>', m.group(2), re.S)
+            if p:
+                return _first_sentence(p.group(1))
+            li = re.findall(r'<li>(.*?)</li>', m.group(2), re.S)
+            if li:
+                return _first_sentence('; '.join(li[:3]))
+    return ''
+
+
+def guide_summary(gh, name, days, sub, updated_iso, lang='es', deal_href=None):
+    """Caja "En resumen" arriba de la guía: respuestas directas y citables sacadas de la propia guía y de los chollos vivos."""
+    es = lang == 'es'
+    rows = []
+    if days:
+        rows.append((('Cuántos días' if es else 'How many days'), (f'{days} días para ver lo esencial de {name}; abajo tienes la ruta día a día.' if es else f'{days} days to see the essentials of {name}; the day-by-day route is below.')))
+    MON = r'enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre|primavera|otoño|verano|invierno|January|February|March|April|May|June|July|August|September|October|November|December|spring|autumn|summer|winter'
+    for lab_es, lab_en, rx, pref in (('Cuándo ir', 'When to go', r'cu[aá]ndo ir|mejor [eé]poca|when to go|best time', (rf'\b(mejor|ideal|best)\b.*\b({MON})\b|\b({MON})\b.*\b(mejor|ideal|best)\b', rf'^(?!(Es|Hace|It|This|That|Esta|Este)\b).*\b({MON})\b')),
+                                     ('Presupuesto', 'Budget', r'presupuesto|cu[aá]nto cuesta|budget|cost', r'\d+\s?(€|euros?|EUR)|€\s?\d+|\d+\s?(\$|USD|£)'),
+                                     ('Desde el aeropuerto', 'From the airport', r'aeropuerto|c[oó]mo llegar|airport|getting', r'aeropuerto|airport')):
+        t = section_text(gh, rx, pref, fallback=False)
+        if t:
+            rows.append((lab_es if es else lab_en, t))
+    if sub:
+        x = min(sub, key=lambda x_: x_.get('price') or 99999)
+        f = x.get('facts') or {}
+        o = f.get('origen') or ''
+        href = deal_href(x) if deal_href else f"/chollos/{x['slug']}/"
+        rows.append((('Vuelo más barato hoy' if es else 'Cheapest flight today'),
+                     (f'<a href="{href}">{x["price"]} € ida y vuelta' + (f' desde {e(o)}' if o else '') + '</a>, comprobado por Happy Low Cost.' if es else
+                      f'<a href="{href}">€{x["price"]} return' + (f' from {e(o)}' if o else '') + '</a>, checked by Happy Low Cost.')))
+    if len(rows) < 2:
+        return ''
+    upd = (updated_iso or '')[:10]
+    lab = ('En resumen' if es else 'In short')
+    when = (f'<time datetime="{upd}">{fecha(updated_iso) if es else upd}</time>' if upd else '')
+    return (f'<section class="g-sum" aria-label="{lab}"><div class="kicker">{lab}' + (f' · {"actualizado" if es else "updated"} {when}' if when else '') + '</div><dl>'
+            + ''.join(f'<div><dt>{e(k)}</dt><dd>{v if "<a " in v else e(v)}</dd></div>' for k, v in rows) + '</dl></section>')
+
+
+def guide_extra_faq(gh, name, days, sub, lang='es'):
+    """Preguntas que la gente hace a Google y a los asistentes y que la guía aún no responde, con datos reales."""
+    es = lang == 'es'
+    have = ' '.join(re.findall(r'<h3>(.*?)</h3>', gh or '')).lower()
+    out = []
+    if days and not re.search(r'cu[aá]ntos d[ií]as|how many days|enough', have):
+        out.append(((f'¿Cuántos días hacen falta para ver {name}?' if es else f'How many days do you need in {name}?'),
+                    (f'Con {days} días ves lo esencial de {name} sin prisas. La ruta de esta guía está organizada día a día.' if es else f'{days} days are enough to see the essentials of {name} without rushing. The route in this guide is organised day by day.')))
+    if sub:
+        x = min(sub, key=lambda x_: x_.get('price') or 99999)
+        o = (x.get('facts') or {}).get('origen') or ''
+        out.append(((f'¿Cuánto cuesta un vuelo barato a {name}?' if es else f'How much is a cheap flight to {name}?'),
+                    (f'Hoy el chollo más barato que tenemos a {name} cuesta {x["price"]} € ida y vuelta' + (f' desde {o}' if o else '') + '. Los precios cambian cada hora: compruébalo en la página del chollo.' if es else
+                     f'Today the cheapest deal we have to {name} is €{x["price"]} return' + (f' from {o}' if o else '') + '. Fares change by the hour: check the live price on the deal page.')))
+    return out
+
+
+def guide_image_ld(slug, name, lang='es'):
+    """ImageObject con autor y licencia de Wikimedia Commons: Google Imágenes muestra la licencia y el crédito."""
+    c = CR.get(slug) or {}
+    im = {"@type": "ImageObject", "@id": f"{SITE}/hlc/img/cities/{slug}.jpg#img", "url": f"{SITE}/hlc/img/cities/{slug}.jpg", "contentUrl": f"{SITE}/hlc/img/cities/{slug}.jpg",
+          "caption": (f'Foto de {name}' if lang == 'es' else f'Photo of {name}')}
+    if c.get('author'):
+        im["creator"] = {"@type": "Person", "name": c['author']}
+        im["creditText"] = f"{c['author']} / Wikimedia Commons"
+    if c.get('license'):
+        lic = c['license']
+        mm = re.match(r'CC (BY(?:-SA)?|BY-NC(?:-SA)?) ?(\d\.\d)', lic)
+        if mm:
+            im["license"] = f"https://creativecommons.org/licenses/{mm.group(1).lower()}/{mm.group(2)}/"
+        elif 'CC0' in lic or 'ublic domain' in lic:
+            im["license"] = "https://creativecommons.org/publicdomain/zero/1.0/"
+        im["copyrightNotice"] = lic
+    if c.get('page'):
+        im["acquireLicensePage"] = c['page']
+    return im
+
+
+def guide_md(title, url, gh, name, days, updated_iso, lang='es', extra=''):
+    """Versión Markdown de la guía (index.md) para asistentes de IA: mismo contenido, sin plantilla."""
+    t = gh or ''
+    t = re.sub(r'<nav class="g-toc".*?</nav>', '', t, flags=re.S)
+    t = re.sub(r'<h2[^>]*>(.*?)</h2>', lambda m: '\n\n## ' + re.sub('<[^>]+>', '', m.group(1)).strip() + '\n\n', t, flags=re.S)
+    t = re.sub(r'<h3[^>]*>(.*?)</h3>', lambda m: '\n\n### ' + re.sub('<[^>]+>', '', m.group(1)).strip() + '\n\n', t, flags=re.S)
+    t = re.sub(r'<li>(.*?)</li>', lambda m: '\n- ' + re.sub(r'\s+', ' ', m.group(1)).strip(), t, flags=re.S)
+    t = re.sub(r'</?strong>', '**', t)
+    t = re.sub(r'</p>', '\n\n', t)
+    t = html.unescape(re.sub(r'<[^>]+>', '', t))
+    t = re.sub(r'[ \t]+', ' ', t)
+    t = re.sub(r'\n{3,}', '\n\n', t).strip()
+    head_ = (f'# {title}\n\n> Guía de viaje de {name} de Happy Low Cost' + (f', itinerario de {days} días' if days else '') + f'. Página original: {url}\n> Actualizada: {(updated_iso or "")[:10]}\n\n'
+             if lang == 'es' else
+             f'# {title}\n\n> {name} travel guide by Happy Low Cost' + (f', {days}-day itinerary' if days else '') + f'. Original page: {url}\n> Updated: {(updated_iso or "")[:10]}\n\n')
+    return head_ + t.replace(' — ', ', ').replace('—', ', ') + '\n\n' + extra
+
+
+def guide_head_extra(slug, md_url, updated_iso, lang='es', has_alt=True):
+    """Metadatos de cabecera de las guías: versión Markdown, fecha de modificación, locale alterno y precarga de la foto principal (LCP)."""
+    loc_alt = ('en_GB' if lang == 'es' else 'es_ES')
+    return (f'<link rel="alternate" type="text/markdown" href="{md_url}" title="Markdown">'
+            + (f'<meta property="article:modified_time" content="{e(updated_iso)}">' if updated_iso else '')
+            + (f'<meta property="og:locale:alternate" content="{loc_alt}">' if has_alt else '')
+            + f'<link rel="preload" as="image" href="/hlc/img/cities/{slug}.jpg" fetchpriority="high">')
 
 
 def dia_sem(iso, en=False):
@@ -767,7 +917,7 @@ def list_page(path, title, h1, kicker, intro, deals, canonical, crumb_items, ext
     items = [{"@type": "ListItem", "position": i + 1, "url": f"{SITE}/chollos/{x['slug']}/", "name": clean_title(x.get('title') or '')} for i, x in enumerate(deals[:50])]
     graph = [cld, {"@type": "CollectionPage", "name": h1, "url": canonical, "inLanguage": "es-ES", "description": intro, "mainEntity": {"@type": "ItemList", "numberOfItems": len(deals), "itemListElement": items}}]
     desc = smart_desc(intro)
-    page = head(title=e(title), desc=e(desc), canonical=canonical, og_type='website', og_image=f'{SITE}/hlc/brand/og-default.jpg', robots='noindex, follow' if noindex else 'index, follow, max-image-preview:large',
+    page = head(title=e(title), desc=e(desc), canonical=canonical, og_type='website', og_image=f'{SITE}/hlc/brand/og-default.jpg', robots='noindex, follow' if noindex else ROBOTS_IDX,
                 extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12"><link rel="alternate" type="application/rss+xml" title="Chollos Happy Low Cost" href="/chollos/feed.xml">' + ('<link rel="alternate" hreflang="es" href="' + canonical + '"><link rel="alternate" hreflang="en" href="' + SITE + EN_ALT[path] + '"><link rel="alternate" hreflang="x-default" href="' + canonical + '">' if path in EN_ALT and os.path.isdir(EN_ALT[path].strip('/')) else '') + ld_script(graph), body_class='chollos')
     cards = ''.join(card(x) for x in deals) or EMPTY
     page += f'''<main class="sec" style="padding-top:26px"><div class="wrap">
@@ -1148,28 +1298,51 @@ def main():
         url = f"{SITE}/destinos/{p['s']}/"
         gh = re.sub(r'<(?!/?(h2|h3|p|ul|li|strong)\b)[^>]*>', '', g['guide_html'])
         gh = re.sub(r'<(h2|h3|p|ul|li|strong)\b[^>]*>', r'<\1>', gh)
+        ttl0 = g.get('seo_title') or f"Qué ver en {p['n']}"
+        nd = guide_days(ttl0, gh)
+        xq = guide_extra_faq(gh, p['n'], nd, sub, 'es')
+        if xq:
+            add = ''.join(f'<h3>{e(q)}</h3><p>{e(a)}</p>' for q, a in xq)
+            mfaq = re.search(r'(<h2>[^<]*(?:Preguntas frecuentes|FAQ)[^<]*</h2>.*?)(?=<h2|$)', gh, re.S | re.I)
+            gh = (gh[:mfaq.end()] + add + gh[mfaq.end():]) if mfaq else gh + '<h2>Preguntas frecuentes</h2>' + add
         gh, g_faq, words = guide_extras(gh, 'es')
         ch, cld = crumbs([('Inicio', '/'), ('Destinos', '/destinos/'), (p['n'], None)])
+        # título con el año (las consultas que ya posicionan son "qué ver en X en 3 días": la cifra y el año suben el CTR)
+        yr = str(datetime.date.today().year)
+        ttl = ttl0 if yr in ttl0 else re.sub(r'(\ben \d{1,2} d[ií]as)', r'\1 (' + yr + ')', ttl0, count=1)
+        if ttl == ttl0 and yr not in ttl0 and len(ttl0) <= 52:
+            ttl = ttl0 + f' ({yr})'
+        dsc = g.get('meta_description') or f"Guía de {p['n']}: qué ver, dónde dormir, qué comer y chollos de vuelos."
+        if nd and not re.search(r'd[ií]a a d[ií]a|\d+ d[ií]as', dsc, re.I):
+            dsc = f"{nd} días en {p['n']}, día a día: " + dsc[:1].lower() + dsc[1:]
+        summ = guide_summary(gh, p['n'], nd, sub, g.get('updated_at'), 'es')
+        img_ld = guide_image_ld(p['s'], p['n'], 'es')
+        hub_es = f"/vuelos/a/{p['s']}/" if os.path.isfile(os.path.join('vuelos', 'a', p['s'], 'index.html')) else ''
+        en_url_ = f"{SITE}/en/destinations/{en_dest_slug(p['s'])}/" 
         cr = CR.get(p['s']) or {}
         dest_ld = {"@type": "TouristDestination", "name": p['n'], "url": url, "image": f"{SITE}/hlc/img/cities/{p['s']}.jpg", "geo": {"@type": "GeoCoordinates", "latitude": p['y'], "longitude": p['x']},
                    "containedInPlace": {"@type": "Country", "name": p['c']}}
         art = {"@type": "Article", "headline": (g.get('seo_title') or f"Qué ver en {p['n']}")[:110], "description": g.get('meta_description') or '', "image": f"{SITE}/hlc/img/cities/{p['s']}.jpg",
                "dateModified": g.get('updated_at'), "datePublished": g.get('updated_at'), "wordCount": words, "inLanguage": "es-ES", "about": {"@id": url + '#destino'},
-               "author": {"@type": "Organization", "name": "Happy Low Cost"}, "publisher": {"@type": "Organization", "name": "Happy Low Cost", "logo": {"@type": "ImageObject", "url": f"{SITE}/hlc/brand/icon-512.png"}}, "mainEntityOfPage": url}
+               "author": {"@id": ORG_ID}, "publisher": {"@id": ORG_ID}, "mainEntityOfPage": url, "isAccessibleForFree": True,
+               "speakable": {"@type": "SpeakableSpecification", "cssSelector": [".g-sum", "h1"]}}
+        art["headline"] = ttl[:110]
+        art["image"] = {"@id": img_ld["@id"]}
+        dest_ld["image"] = {"@id": img_ld["@id"]}
         dest_ld["@id"] = url + '#destino'
         side = ''.join(card(x) for x in sub[:3])
-        page = head(title=e((g.get('seo_title') or f"Qué ver en {p['n']}") + ' · Happy Low Cost'), desc=e(g.get('meta_description') or f"Guía de {p['n']}: qué ver, dónde dormir, qué comer y chollos de vuelos."),
-                    canonical=url, og_image=f"{SITE}/hlc/img/cities/{p['s']}.jpg", og_title=e(g.get('seo_title') or p['n']),
-                    extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12">' + ('<link rel="alternate" hreflang="es" href="' + url + '"><link rel="alternate" hreflang="en" href="' + f"{SITE}/en/destinations/{en_dest_slug(p['s'])}/" + '"><link rel="alternate" hreflang="x-default" href="' + url + '">' if g.get('guide_html_en') else '') + ld_script([dest_ld, art, cld] + ([g_faq] if g_faq else [])), body_class='destino')
+        page = head(title=e(ttl + (' · Happy Low Cost' if len(ttl) <= 46 else '')), desc=e(dsc[:300]),
+                    canonical=url, og_image=f"{SITE}/hlc/img/cities/{p['s']}.jpg", og_title=e(ttl), og_alt=e(f"Foto de {p['n']} ({p['c']})"),
+                    extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12">' + guide_head_extra(p['s'], url + 'index.md', g.get('updated_at'), 'es', bool(g.get('guide_html_en'))) + ('<link rel="alternate" hreflang="es" href="' + url + '"><link rel="alternate" hreflang="en" href="' + en_url_ + '"><link rel="alternate" hreflang="x-default" href="' + url + '">' if g.get('guide_html_en') else '') + ld_script([ORG_LD, img_ld, dest_ld, art, cld] + ([g_faq] if g_faq else [])), body_class='destino')
         page += f'''<main>
 <section class="deal-hero" style="background-image:url(/hlc/img/cities/{p['s']}.jpg)"{photos_attr(p['s'])}><div class="wrap">
 {ch.replace('class="crumbs"', 'class="crumbs crumbs-l"')}
 <div class="kicker" style="color:#FFC531">Guía de viaje · {e(p['c'])}</div>
-<h1>{e(g.get('seo_title') or 'Qué ver en ' + p['n'])}</h1>
-<div class="deal-cta">{f'<a class="hlc-btn" href="#chollos">🔥 {len(sub)} chollo{"s" if len(sub) != 1 else ""} a {e(p["n"])}</a>' if sub else ''}<a class="hlc-btn t" href="{CJ_H(p['n'])}" target="_blank" rel="sponsored nofollow noopener">🏨 Hoteles en {e(p['n'])}</a><a class="hlc-btn o" href="/destinos/#destinos" style="background:#fff">🗺️ Ver en el mapa</a></div>
+<h1>{e(ttl0)}</h1>
+<div class="deal-cta">{f'<a class="hlc-btn" href="#chollos">🔥 {len(sub)} chollo{"s" if len(sub) != 1 else ""} a {e(p["n"])}</a>' if sub else ''}<a class="hlc-btn t" href="{CJ_H(p['n'])}" target="_blank" rel="sponsored nofollow noopener">🏨 Hoteles en {e(p['n'])}</a>{f'<a class="hlc-btn o" href="{hub_es}" style="background:#fff">✈️ Vuelos baratos a {e(p["n"])}</a>' if hub_es else ''}<a class="hlc-btn o" href="/destinos/#destinos" style="background:#fff">🗺️ Ver en el mapa</a></div>
 </div></section>
 <div class="wrap"><div class="deal-body">
-<article class="txt guide">{gh}
+<article class="txt guide">{summ}{gh}
 <p class="credit">Foto: {e(cr.get('author') or 'Wikimedia Commons')} · {e(cr.get('license', ''))} · Wikimedia Commons · Guía actualizada el {e(fecha(g.get('updated_at') or ''))}</p></article>
 <aside class="deal-card" id="chollos">
 <div class="kicker">Chollos a {e(p['n'])}</div>
@@ -1184,6 +1357,8 @@ def main():
 </div></main></body></html>'''
         os.makedirs(os.path.join('destinos', p['s']), exist_ok=True)
         open(os.path.join('destinos', p['s'], 'index.html'), 'w', encoding='utf-8').write(page)
+        open(os.path.join('destinos', p['s'], 'index.md'), 'w', encoding='utf-8').write(guide_md(ttl0, url, re.sub(r'<section class="g-sum".*?</section>', '', gh, flags=re.S), p['n'], nd, g.get('updated_at'), 'es',
+             (f"## Vuelos y chollos\n\n- Chollos de vuelos a {p['n']}: {SITE}/destinos/{p['s']}/#chollos\n" + (f"- Precios de vuelos a {p['n']} desde varias ciudades: {SITE}{hub_es}\n" if hub_es else '') + f"- Alerta gratis de chollos: {SITE}/alertas/\n")))
         dlinks.append((p, g))
     # ---------- /hoteles/: los 3 hoteles de cada destino con guía ----------
     hl = []
@@ -1194,7 +1369,7 @@ def main():
     tiles = ''.join(f'<a class="dc" href="/destinos/{p["s"]}/#hoteles"><div class="dc-img" ' + (f'style="background-image:url(/hlc/img/cities/{p["s"]}-800.jpg)"' if i_ < 6 else f'data-bg="/hlc/img/cities/{p["s"]}-800.jpg"') + f'><span class="dc-city">{e(p["n"])}</span></div><div class="dc-b"><div><div class="dc-r">3 hoteles en {e(p["n"])}</div><div class="dc-m">Económico · calidad-precio · lujo</div></div></div></a>' for i_, (p, c_) in enumerate(hl))
     hp = head(title='Dónde dormir barato: los 3 mejores hoteles de cada destino · Happy Low Cost', desc=f'Un hotel económico, uno con la mejor calidad-precio y uno de lujo en {len(hl)} destinos, elegidos por nota real de huéspedes.',
               canonical=f'{SITE}/hoteles/', og_type='website', og_image=f'{SITE}/hlc/brand/og-default.jpg',
-              extra_head=f'<link rel="stylesheet" href="/hlc/home.css?v=12"><link rel="alternate" hreflang="es" href="{SITE}/hoteles/"><link rel="alternate" hreflang="en" href="{SITE}/en/hotels/">', body_class='chollos')
+              extra_head=f'<link rel="stylesheet" href="/hlc/home.css?v=12"><link rel="alternate" hreflang="es" href="{SITE}/hoteles/"><link rel="alternate" hreflang="en" href="{SITE}/en/hotels/"><link rel="alternate" hreflang="x-default" href="{SITE}/hoteles/">', body_class='chollos')
     hp += f'''<main class="sec" style="padding-top:26px"><div class="wrap"><div class="sec-h"><div><div class="kicker">Hoteles</div><h1 class="x-h1">Dónde dormir en cada destino</h1><p>Para cada destino, 3 hoteles: el económico, el de mejor calidad-precio y uno de lujo, elegidos por top3hotels.com según la nota real de los huéspedes. {len(hl)} destinos.</p></div></div>
 <div class="dc-grid">{tiles}</div></div></main></body></html>'''
     os.makedirs('hoteles', exist_ok=True)
@@ -1204,9 +1379,22 @@ def main():
     # índice de guías dentro de /destinos/
     if os.path.exists('destinos/index.html'):
         di = open('destinos/index.html', encoding='utf-8').read()
-        block = '<!--guias--><section class="hub"><h2>Guías de viaje por destino</h2><div class="hub-g">' + ''.join(f'<a class="hub-l" href="/destinos/{p["s"]}/">{e(p["n"])} <small>{e(p["c"])}</small></a>' for p, g in dlinks) + '</div></section><!--/guias-->'
+        il = {"@type": "ItemList", "name": "Guías de viaje por destino", "numberOfItems": len(dlinks), "itemListElement": [{"@type": "ListItem", "position": i + 1, "url": f"{SITE}/destinos/{p['s']}/", "name": p['n']} for i, (p, g) in enumerate(dlinks)]}
+        block = '<!--guias--><section class="hub"><h2>Guías de viaje por destino</h2><div class="hub-g">' + ''.join(f'<a class="hub-l" href="/destinos/{p["s"]}/">{e(p["n"])} <small>{e(p["c"])}</small></a>' for p, g in dlinks) + '</div></section>' + ld_script([il]) + '<!--/guias-->'
         di = re.sub(r'<!--guias-->.*?<!--/guias-->', block, di, flags=re.S) if '<!--guias-->' in di else di.replace('</main>', block + '</main>', 1)
         open('destinos/index.html', 'w', encoding='utf-8').write(di)
+
+    # llms-full.txt: además de los chollos, todas las guías con su versión Markdown (lo leen ChatGPT, Claude, Perplexity...)
+    try:
+        lg = ['', f'# Guías de viaje ({len(dlinks)} destinos)', '',
+              'Cada guía tiene qué ver, ruta por días, cuándo ir, dónde dormir, qué comer y presupuesto. Versión Markdown en index.md; versión inglesa en /en/destinations/.', '']
+        for p, g in dlinks:
+            why = section_text(g.get('guide_html') or '', r'por qu[eé] ir|por qu[eé] visitar')
+            lg.append(f"- [{g.get('seo_title') or 'Qué ver en ' + p['n']}]({SITE}/destinos/{p['s']}/) ({p['c']}). Markdown: {SITE}/destinos/{p['s']}/index.md" + (f". English: {SITE}/en/destinations/{en_dest_slug(p['s'])}/" if g.get('guide_html_en') else '') + (f". {why}" if why else ''))
+        with open(os.path.join('chollos', 'llms-full.txt'), 'a', encoding='utf-8') as fh:
+            fh.write('\n'.join(lg) + '\n')
+    except Exception as ex:
+        print('llms-full guías', ex)
 
     # ---------- RSS ----------
     def rfc(s):
@@ -1229,8 +1417,9 @@ def main():
     _live = {f'desde/{slugify(x["facts"].get("origen_pais") or "")}/{slugify(x["facts"].get("origen") or "")}' for x in deals} | {f'ideas/{k}' for k, h, n in ideas_links if n}
     urls += [u(f'{SITE}/chollos/{k}/', lm0) for k in sorted(gen) if k in _live]
     open('chollos-sitemap.xml', 'w', encoding='utf-8').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + ''.join(urls) + '</urlset>\n')
-    durls = [u(f'{SITE}/destinos/')] + [u(f"{SITE}/destinos/{p['s']}/", g.get('updated_at')) for p, g in dlinks]
-    open('destinos-sitemap.xml', 'w', encoding='utf-8').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + ''.join(durls) + '</urlset>\n')
+    # con la foto de cada guía (sitemap de imágenes: Google Imágenes y Discover)
+    durls = [u(f'{SITE}/destinos/')] + [u(f"{SITE}/destinos/{p['s']}/", g.get('updated_at')).replace('</url>', f"<image:image><image:loc>{SITE}/hlc/img/cities/{p['s']}.jpg</image:loc></image:image></url>") for p, g in dlinks]
+    open('destinos-sitemap.xml', 'w', encoding='utf-8').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">' + ''.join(durls) + '</urlset>\n')
     si = open('sitemap_index.xml', encoding='utf-8').read()
     for sm in ('chollos-sitemap.xml', 'destinos-sitemap.xml'):
         if sm not in si:

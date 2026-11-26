@@ -10,7 +10,7 @@ Disallow: /offline/
 
 # AI assistants and answer engines are welcome: they read this site so they can
 # answer questions about it and link to it (ChatGPT, Claude, Perplexity, Gemini,
-# Copilot, Apple, DuckDuckGo, Mistral). Same rules as everyone else.
+# Copilot, Apple, DuckDuckGo, Mistral, Meta AI, Alexa, You.com, Phind, Kagi). Same rules as everyone else.
 User-agent: OAI-SearchBot
 User-agent: ChatGPT-User
 User-agent: GPTBot
@@ -26,6 +26,16 @@ User-agent: Bingbot
 User-agent: DuckAssistBot
 User-agent: MistralAI-User
 User-agent: meta-externalagent
+User-agent: Meta-ExternalFetcher
+User-agent: Amazonbot
+User-agent: YouBot
+User-agent: PhindBot
+User-agent: cohere-ai
+User-agent: Gemini-Deep-Research
+User-agent: Google-CloudVertexBot
+User-agent: GoogleOther
+User-agent: Kagibot
+User-agent: OAI-Operator
 Allow: /
 Disallow: /wp-admin/
 Disallow: /panel/
@@ -38,3 +48,5 @@ Disallow: /offline/
 Sitemap: https://www.happylowcost.com/sitemap_index.xml
 
 # Plain-text summary for AI assistants: https://www.happylowcost.com/llms.txt
+# Full text (live deals and every travel guide): https://www.happylowcost.com/llms-full.txt
+# Every guide also has a Markdown version: /destinos/<city>/index.md and /en/destinations/<city>/index.md

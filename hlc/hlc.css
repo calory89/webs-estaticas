@@ -425,3 +425,12 @@ html{scroll-padding-top:84px}
 .consent input,.hlc-ck .ck-opts input,.qf-ok input{min-width:24px;min-height:24px}
 .consent,.qf-ok{min-height:44px}
 @media (max-width:860px){.mapx-reg button{min-height:44px}}
+/* caja "En resumen" de las guías (ronda SEO 1) */
+.g-sum{margin:0 0 22px;background:#FFF3D6;border:1.5px solid #F2D9A0;border-radius:16px;padding:14px 18px}
+.g-sum .kicker{margin:0 0 8px;color:#8A2E0E}
+.g-sum dl{margin:0;display:grid;gap:10px}
+.g-sum dl>div{display:grid;grid-template-columns:150px 1fr;gap:10px;font:15px/1.5 var(--fb)}
+.g-sum dt{font-weight:800;color:var(--tinta,#14213D)}
+.g-sum dd{margin:0;color:#2B3550}
+.g-sum a{color:#B8321A;font-weight:700;text-decoration:underline;display:inline-block;padding-block:4px}
+@media (max-width:560px){.g-sum dl>div{grid-template-columns:1fr;gap:2px}}

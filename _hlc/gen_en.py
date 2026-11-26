@@ -91,7 +91,7 @@ FOOTER = '''<footer class="fx"><div class="fx-in">
 </footer><script src="/hlc/hlc.js?v=52" defer></script>'''
 
 
-def head(title, desc, canonical, es_url=None, og_image=None, og_type='website', ld=None, robots='index, follow, max-image-preview:large', body_class=''):
+def head(title, desc, canonical, es_url=None, og_image=None, og_type='website', ld=None, robots=None, body_class='', extra_head='', og_alt=None):
     h = G.HEAD
     h = h.replace('<html lang="es">', '<html lang="en">').replace('content="es_ES"', 'content="en_GB"')
     h = re.sub(r'<!--hlc-header-->.*?<!--/hlc-header-->', '<!--hlc-header-->' + HEADER + '<!--/hlc-header-->', h, flags=re.S)
@@ -99,8 +99,9 @@ def head(title, desc, canonical, es_url=None, og_image=None, og_type='website', 
     alt = f'<link rel="alternate" hreflang="en" href="{canonical}">'
     if es_url:
         alt += f'<link rel="alternate" hreflang="es" href="{es_url}"><link rel="alternate" hreflang="x-default" href="{es_url}">'
-    extra = '<link rel="stylesheet" href="/hlc/home.css?v=12">' + alt + (G.ld_script(ld) if ld else '')
-    for k, v in dict(title=e(title), desc=e(desc), canonical=canonical, robots=robots, og_type=og_type, og_title=e(title), og_alt=e(title),
+    robots = robots or G.ROBOTS_IDX
+    extra = '<link rel="stylesheet" href="/hlc/home.css?v=12">' + extra_head + alt + (G.ld_script(ld) if ld else '')
+    for k, v in dict(title=e(title), desc=e(desc), canonical=canonical, robots=robots, og_type=og_type, og_title=e(title), og_alt=e(og_alt or title),
                      og_image=og_image or f'{SITE}/hlc/brand/og-default.jpg', extra_head=extra, body_class=body_class).items():
         h = h.replace('{' + k + '}', v)
     return h
@@ -429,7 +430,7 @@ def main():
         ch_, cld_ = crumbs([('Home', '/en/'), ('Deals', '/en/deals/'), (h1_, None)])
         es_k = {v: k for k, v in G.IDEAS_EN.items()}.get(k_)
         pg = head(f'{h1_}: cheap flight deals · Happy Low Cost', G.smart_desc(intro_), f'{SITE}/en/deals/ideas/{k_}/', (f'{SITE}/chollos/ideas/{es_k}/' if es_k and os.path.isdir(f'chollos/ideas/{es_k}') else None), ld=[cld_], body_class='chollos',
-                  robots='index, follow, max-image-preview:large' if sub else 'noindex, follow')
+                  robots=G.ROBOTS_IDX if sub else 'noindex, follow')
         pg += f'''<main class="sec" style="padding-top:26px"><div class="wrap">
 {ch_}
 <div class="sec-h"><div><div class="kicker">Ideas for cheap travel</div><h1 class="x-h1">{e(h1_)}</h1><p>{e(intro_)}</p></div></div>
@@ -528,14 +529,25 @@ def main():
         url = f"{SITE}/en/destinations/{G.en_dest_slug(p['s'])}/"
         gh = re.sub(r'<(?!/?(h2|h3|p|ul|li|strong)\b)[^>]*>', '', g['guide_html_en'])
         gh = re.sub(r'<(h2|h3|p|ul|li|strong)\b[^>]*>', r'<\1>', gh)
-        gh, faq_ld, _w = G.guide_extras(gh, 'en')
         sub = [x for x in deals if G.lib_slug(x['facts']) == p['s']]
+        nd_ = G.guide_days(g.get('seo_title_en') or '', gh)
+        xq = G.guide_extra_faq(gh, n, nd_, sub, 'en')
+        if xq:
+            add = ''.join(f'<h3>{e(q)}</h3><p>{e(a)}</p>' for q, a in xq)
+            mfaq = re.search(r'(<h2>[^<]*(?:Preguntas frecuentes|FAQ)[^<]*</h2>.*?)(?=<h2|$)', gh, re.S | re.I)
+            gh = (gh[:mfaq.end()] + add + gh[mfaq.end():]) if mfaq else gh + '<h2>FAQs</h2>' + add
+        gh, faq_ld, _w = G.guide_extras(gh, 'en')
+        upd_en = g.get('updated_en') or g.get('updated_at')
+        summ = G.guide_summary(gh, n, nd_, sub, upd_en, 'en', deal_href=lambda x_: f'/en/deals/{G.en_deal_slug(x_)}/' if G.en_deal_slug(x_) in hechos else '/en/deals/')
+        img_ld = G.guide_image_ld(p['s'], n, 'en')
+        hub_en = f"/en/flights/to/{G.en_dest_slug(p['s'])}/" if os.path.isfile(f"en/flights/to/{G.en_dest_slug(p['s'])}/index.html") else ''
         ch, cld = crumbs([('Home', '/en/'), ('Destinations', '/en/destinations/'), (n, None)])
-        dest_ld = {"@type": "TouristDestination", "@id": url + '#dest', "name": n, "url": url, "image": f"{SITE}/hlc/img/cities/{p['s']}.jpg",
+        dest_ld = {"@type": "TouristDestination", "@id": url + '#dest', "name": n, "url": url, "image": {"@id": img_ld["@id"]},
                    **({"geo": {"@type": "GeoCoordinates", "latitude": p['y'], "longitude": p['x']}} if p.get('y') is not None else {})}
         art = {"@type": "Article", "headline": (g.get('seo_title_en') or f'What to see in {n}')[:110], "description": g.get('meta_description_en') or '', "image": f"{SITE}/hlc/img/cities/{p['s']}.jpg",
-               "dateModified": g.get('updated_at'), "inLanguage": "en", "about": {"@id": url + '#dest'}, "author": {"@type": "Organization", "name": "Happy Low Cost"},
-               "publisher": {"@type": "Organization", "name": "Happy Low Cost", "logo": {"@type": "ImageObject", "url": f"{SITE}/hlc/brand/icon-512.png"}}, "mainEntityOfPage": url}
+               "dateModified": upd_en, "datePublished": g.get('updated_at') or upd_en, "inLanguage": "en", "about": {"@id": url + '#dest'}, "author": {"@id": G.ORG_ID},
+               "publisher": {"@id": G.ORG_ID}, "mainEntityOfPage": url, "isAccessibleForFree": True, "speakable": {"@type": "SpeakableSpecification", "cssSelector": [".g-sum", "h1"]}}
+        art["image"] = {"@id": img_ld["@id"]}
         es = f"{SITE}/destinos/{p['s']}/" if os.path.exists(f"destinos/{p['s']}/index.html") else None
         # Estas paginas ya estan arriba y no reciben clics: 1.995 paginas del sitio
         # estan en el top 15 y entre todas suman 157 clics (0,84% de CTR). Las
@@ -550,25 +562,28 @@ def main():
         ttl_ = g.get('seo_title_en') or f'What to see in {n}'
         dsc_ = g.get('meta_description_en') or f'{n} travel guide: what to see, where to stay, what to eat and cheap flights.'
         if 2 <= nd_ <= 21:
-            ttl_ = f'{n} itinerary: what to see in {nd_} days'
-            if 'itinerar' not in dsc_.lower():
+            ttl_ = f'{n} itinerary: what to see in {nd_} days ({datetime.date.today().year})'
+            if 'itinerar' not in dsc_.lower() and 'day by day' not in dsc_.lower() and not re.search(r'\b\d+[ -]days?\b|\b(three|four|five|seven)[ -]days?\b', dsc_, re.I):
                 dsc_ = f'{nd_} days in {n}, day by day: ' + dsc_[:1].lower() + dsc_[1:]
-        page = head(ttl_ + ' · Happy Low Cost', dsc_[:300],
-                    url, es, f"{SITE}/hlc/img/cities/{p['s']}.jpg", 'article', [dest_ld, art, cld] + ([faq_ld] if faq_ld else []), body_class='destino')
+        art["headline"] = ttl_[:110]
+        page = head(ttl_ + (' · Happy Low Cost' if len(ttl_) <= 46 else ''), dsc_[:300],
+                    url, es, f"{SITE}/hlc/img/cities/{p['s']}.jpg", 'article', [G.ORG_LD, img_ld, dest_ld, art, cld] + ([faq_ld] if faq_ld else []), body_class='destino',
+                    extra_head=G.guide_head_extra(p['s'], url + 'index.md', upd_en, 'en', bool(es)), og_alt=f'Photo of {n}')
         cr = G.CR.get(p['s']) or {}
         page += f'''<main>
 <section class="deal-hero" style="background-image:url(/hlc/img/cities/{p['s']}.jpg)"{G.photos_attr(p['s'])}><div class="wrap">
 {ch.replace('class="crumbs"', 'class="crumbs crumbs-l"')}
 <div class="kicker" style="color:#FFC531">Travel guide</div>
-<h1>{e(g.get('seo_title_en') or 'What to see in ' + n)}</h1>
-<div class="deal-cta">{f'<a class="hlc-btn" href="#deals">🔥 {len(sub)} deal{"s" if len(sub) != 1 else ""} to {e(n)}</a>' if sub else ''}<a class="hlc-btn t" href="{hotels(n)}" target="_blank" rel="sponsored nofollow noopener">🏨 Hotels in {e(n)}</a></div>
+<h1>{e(ttl_.rsplit(' (', 1)[0] if 2 <= nd_ <= 21 else (g.get('seo_title_en') or 'What to see in ' + n))}</h1>
+<div class="deal-cta">{f'<a class="hlc-btn" href="#deals">🔥 {len(sub)} deal{"s" if len(sub) != 1 else ""} to {e(n)}</a>' if sub else ''}<a class="hlc-btn t" href="{hotels(n)}" target="_blank" rel="sponsored nofollow noopener">🏨 Hotels in {e(n)}</a>{f'<a class="hlc-btn o" href="{hub_en}" style="background:#fff">✈️ Cheap flights to {e(n)}</a>' if hub_en else ''}</div>
 </div></section>
 <div class="wrap"><div class="deal-body">
-<article class="txt guide">{gh}
+<article class="txt guide">{summ}{gh}
 <p class="credit">Photo: {e(cr.get('author') or 'Wikimedia Commons')} · {e(cr.get('license', ''))} · Wikimedia Commons · Guide updated {e(date_en(g.get('updated_en') or g.get('updated_at') or ''))}</p></article>
 <aside class="deal-card" id="deals">
 <div class="kicker">Deals to {e(n)}</div>
 {''.join(card(x) for x in sub[:3]) or f'<p style="margin:0;color:#4A5468">No deal to {e(n)} today. New fares land every hour.</p>'}
+<a class="hlc-btn s" href="/en/alerts/?d={quote(n)}">🔔 Deal alert for {e(n)}</a>
 <a class="hlc-btn t" href="{hotels(n)}" target="_blank" rel="sponsored nofollow noopener">🏨 Hotels in {e(n)}</a>
 <a class="hlc-btn o" href="/en/deals/">See all deals</a>
 </aside></div>
@@ -577,6 +592,8 @@ def main():
 <section class="sec" style="padding-top:10px"><div class="sec-h"><div><div class="kicker">More inspiration</div><h2>Other destinations</h2></div></div><div class="hub-g">{''.join(f'<a class="hub-l" href="/en/destinations/{G.en_dest_slug(q["s"])}/">{e(NAMES.get(q["s"], q["n"]))}</a>' for q in G.DLIB if q['s'] in dmap and q['s'] != p['s'] and q['r'] == p['r'])}</div></section>
 </div></main>{FOOTER}</body></html>'''
         write(f"en/destinations/{G.en_dest_slug(p['s'])}", page)
+        open(f"en/destinations/{G.en_dest_slug(p['s'])}/index.md", 'w', encoding='utf-8').write(G.guide_md(g.get('seo_title_en') or f'What to see in {n}', url, gh, n, nd_, upd_en, 'en',
+             f"## Flights and deals\n\n- Flight deals to {n}: {url}#deals\n" + (f"- Flight prices to {n} from several cities: {SITE}{hub_en}\n" if hub_en else '') + f"- Free deal alert: {SITE}/en/alerts/\n"))
         if G.en_dest_slug(p['s']) != p['s']:
             moved[f"/en/destinations/{p['s']}/"] = f"/en/destinations/{G.en_dest_slug(p['s'])}/"
             if os.path.isdir(f"en/destinations/{p['s']}"):
@@ -592,8 +609,9 @@ def main():
     # index of guides
     ch, cld = crumbs([('Home', '/en/'), ('Destinations', None)])
     tiles = ''.join(f'<a class="dc" href="/en/destinations/{G.en_dest_slug(p["s"])}/"><div class="dc-img" style="background-image:url(/hlc/img/cities/{p["s"]}-800.jpg)"><span class="dc-city">{e(NAMES.get(p["s"], p["n"]))}</span></div></a>' for p, g in dl)
-    page = head('Travel guides: what to see, where to stay and what to eat · Happy Low Cost', 'Honest travel guides written by people who know each place: what to see, how many days, where to stay, what to eat and the cheapest flights.',
-                f'{SITE}/en/destinations/', f'{SITE}/destinos/', ld=[cld])
+    il = {"@type": "ItemList", "name": "Destination guides", "numberOfItems": len(dl), "itemListElement": [{"@type": "ListItem", "position": i + 1, "url": f"{SITE}/en/destinations/{G.en_dest_slug(p['s'])}/", "name": NAMES.get(p['s'], p['n'])} for i, (p, g) in enumerate(dl)]}
+    page = head(f'Travel itineraries and guides: {len(dl)} destinations ({datetime.date.today().year})', 'Day-by-day itineraries and honest travel guides: what to see, how many days, where to stay, what to eat and the cheapest flights to each place.',
+                f'{SITE}/en/destinations/', f'{SITE}/destinos/', ld=[cld, il])
     page += f'''<main class="sec" style="padding-top:26px"><div class="wrap">{ch}
 <div class="sec-h"><div><div class="kicker">Travel guides</div><h1 class="x-h1">Destination guides</h1><p>{len(dl)} guides and growing every day. Each one pairs with the live flight deals to that place.</p></div><a class="hlc-btn s" href="/en/deals/">✈️ Today's deals</a></div>
 <div class="dc-grid">{tiles or '<div class="dc-empty"><b>Guides are on their way.</b><span>We are writing them right now.</span></div>'}</div>
@@ -605,7 +623,14 @@ def main():
            ''.join(f'<item><title>{e(x["en"].get("title"))}</title><link>{SITE}/en/deals/{G.en_deal_slug(x)}/</link><guid>{SITE}/en/deals/{G.en_deal_slug(x)}/</guid><description>{e(x["en"].get("excerpt") or "")}</description></item>' for x in deals[:50]) + '</channel></rss>\n')
     open('en/deals/feed.xml', 'w', encoding='utf-8').write(rss)
     urls = [f'{SITE}/en/', f'{SITE}/en/deals/', f'{SITE}/en/destinations/'] + [f'{SITE}/en/deals/ideas/{k}/' for k, n, c in ideas_en if c] + [f'{SITE}/en/deals/from/{k}/' for k, n, c in city_links] + [f'{SITE}/en/deals/{s}/' for s in sorted(hechos)] + [f"{SITE}/en/destinations/{G.en_dest_slug(p['s'])}/" for p, g in dl]
-    open('en-sitemap.xml', 'w', encoding='utf-8').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + ''.join(f'<url><loc>{u}</loc></url>' for u in urls) + '</urlset>\n')
+    # guías con su fecha real y su foto (sitemap de imágenes)
+    gextra = {f"{SITE}/en/destinations/{G.en_dest_slug(p['s'])}/": (((g.get('updated_en') or g.get('updated_at') or '')[:10]), p['s']) for p, g in dl}
+    def _u(u):
+        if u in gextra:
+            lm, sl = gextra[u]
+            return f'<url><loc>{u}</loc>' + (f'<lastmod>{lm}</lastmod>' if lm else '') + f'<image:image><image:loc>{SITE}/hlc/img/cities/{sl}.jpg</image:loc></image:image></url>'
+        return f'<url><loc>{u}</loc></url>'
+    open('en-sitemap.xml', 'w', encoding='utf-8').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">' + ''.join(_u(u) for u in urls) + '</urlset>\n')
     si = open('sitemap_index.xml', encoding='utf-8').read()
     if 'en-sitemap.xml' not in si:
         si = si.replace('</sitemapindex>', f'\t<sitemap>\n\t\t<loc>{SITE}/en-sitemap.xml</loc>\n\t</sitemap>\n</sitemapindex>')

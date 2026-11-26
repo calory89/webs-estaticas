@@ -32,6 +32,7 @@ def _keep_routes():
 
 KEEP_ROUTES = _keep_routes()
 CHEAP_SLUGS = set()   # lo rellena main(): las dos mas baratas por destino y por origen
+BY_PAIR = {}          # (origen, destino) -> ruta, para enlazar cada ruta con su inversa
 
 
 def route_indexed(lang, sl, r):
@@ -79,10 +80,33 @@ def fdate(iso, en=False):
         return ''
 
 
-def ld(c, url, crumbs):
+def ld(c, url, crumbs, checked=None, lang='es'):
     faq = {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q.get('q', ''), "acceptedAnswer": {"@type": "Answer", "text": q.get('a', '')}} for q in c.get('faq', [])]}
     bc = {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": n, **({"item": SITE + u} if u else {})} for i, (n, u) in enumerate(crumbs)]}
-    return [faq, bc]
+    # fecha real de la consulta de precios: frescura para Google y para los asistentes que citan precios
+    wp = {"@type": "WebPage", "@id": url, "url": url, "name": c.get('h1', ''), "inLanguage": "en" if lang == 'en' else "es-ES", "publisher": {"@id": G.ORG_ID},
+          "speakable": {"@type": "SpeakableSpecification", "cssSelector": ["h1", ".txt > p:first-child"]}}
+    if checked:
+        wp["dateModified"] = checked
+    return [wp, faq, bc]
+
+
+def route_links(r, en):
+    """Enlaces internos de cada ruta: la inversa y los hubs "a destino" y "desde ciudad"."""
+    import en_names
+    out = []
+    inv = BY_PAIR.get((r['dest'], r['origin']))
+    ds, o = r['dest_slug'], r['origin']
+    dest = E.NAMES.get(ds, r['dest']) if en else r['dest']
+    if inv:
+        out.append((f"/en/flights/{en_slug(inv)}/" if en else f"/vuelos/{inv['slug']}/", (f"Return route: {en_names.city_en(inv['origin'])} → {E.NAMES.get(inv['dest_slug'], inv['dest'])}" if en else f"Ruta inversa: {inv['origin']} → {inv['dest']}")))
+    hub_to = f"en/flights/to/{G.en_dest_slug(ds)}" if en else f"vuelos/a/{ds}"
+    if os.path.isfile(os.path.join(hub_to, 'index.html')):
+        out.append((f'/{hub_to}/', (f'Cheap flights to {dest} from every city' if en else f'Vuelos baratos a {dest} desde todas las ciudades')))
+    hub_from = f"en/flights/from/{G.slugify(en_names.city_en(o))}" if en else f"vuelos/desde/{G.slugify(o)}"
+    if os.path.isfile(os.path.join(hub_from, 'index.html')):
+        out.append((f'/{hub_from}/', (f'Cheap flights from {en_names.city_en(o)}' if en else f'Vuelos baratos desde {o}')))
+    return out
 
 
 def en_slug(r):
@@ -113,7 +137,7 @@ def page(r, lang, others):
     slug = r['slug']
     url = f"{SITE}/en/flights/{en_slug(r)}/" if en else f"{SITE}/vuelos/{slug}/"
     es_url, en_url = f"{SITE}/vuelos/{slug}/", f"{SITE}/en/flights/{en_slug(r)}/"
-    rob = 'index, follow, max-image-preview:large' if route_indexed(lang, en_slug(r) if en else slug, r) else 'noindex, follow'
+    rob = G.ROBOTS_IDX if route_indexed(lang, en_slug(r) if en else slug, r) else 'noindex, follow'
     ds = r['dest_slug']
     hero = f'/hlc/img/cities/{ds}.jpg'
     dest = E.NAMES.get(ds, r['dest']) if en else r['dest']
@@ -139,11 +163,13 @@ def page(r, lang, others):
         else:
             c['meta'] = (f"Vuelos {r['origin']}-{dest} desde {p_} € ida y vuelta" + (', directo' if stops == 0 else '') + (f' con {air_}' if air_ else '') + '. '
                          + (f"Lo normal son unos {med_} €. " if med_ and med_ > p_ else '') + f"Mes más barato, calendario de precios y tarifas consultadas el {fdate(f.get('consultado'))}.")
+    chk_ = (f.get('consultado') or '')[:10]
+    mt_ = f'<meta property="article:modified_time" content="{e(chk_)}">' if chk_ else ''
     if en:
-        h = E.head(c.get('title', ''), c.get('meta', ''), url, es_url, og_image=f'{SITE}{hero}', ld=ld(c, url, crumbs), robots=rob, body_class='deal')
+        h = E.head(c.get('title', ''), c.get('meta', ''), url, es_url, og_image=f'{SITE}{hero}', ld=ld(c, url, crumbs, chk_, 'en'), robots=rob, body_class='deal', extra_head=mt_, og_alt=f'Photo of {dest}')
     else:
-        h = G.head(title=e(c.get('title', '')), desc=e(c.get('meta', '')), canonical=url, og_image=f'{SITE}{hero}', og_type='article', robots=rob,
-                   extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12">' + alt + G.ld_script(ld(c, url, crumbs)), body_class='deal')
+        h = G.head(title=e(c.get('title', '')), desc=e(c.get('meta', '')), canonical=url, og_image=f'{SITE}{hero}', og_type='article', robots=rob, og_alt=e(f'Foto de {dest}'),
+                   extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12">' + mt_ + alt + G.ld_script(ld(c, url, crumbs, chk_, 'es')), body_class='deal')
     rel = ''.join(f'<a class="hub-l" href="{"/en/flights/" + en_slug(o) if en else "/vuelos/" + o["slug"]}/">{e(o["origin"])} → {e(E.NAMES.get(o["dest_slug"], o["dest"]) if en else o["dest"])} · {o["price_from"]} €</a>' for o in others[:12])
     L = (lambda es_, en_: en_ if en else es_)
     gpath = f"en/destinations/{G.en_dest_slug(ds)}" if en else f"destinos/{ds}"
@@ -175,6 +201,7 @@ def page(r, lang, others):
 </div>
 <section class="sec rcal" id="calendario" data-route-cal data-slug="{e(slug)}" data-o="{e(r["origin_iata"])}" data-d="{e(r["dest_iata"])}"><div class="sec-h"><div><div class="kicker">{L("Calendario de precios", "Price calendar")}</div><h2>{L("El mes más barato para volar de", "The cheapest month to fly from")} {e(r["origin"])} {L("a", "to")} {e(dest)}</h2><p>{L("Vuelo de ida y vuelta más barato que encontramos en cada mes, consultado en Kiwi.com (se actualiza cada 3 días). Toca un mes para ver esas fechas.", "Cheapest return flight we found in each month, checked on Kiwi.com (refreshed every 3 days). Tap a month to see those dates.")}</p></div></div><div class="rcal-bars" data-rcal-bars><div class="dc-empty"><b>{L("Consultando precios…", "Checking prices…")}</b></div></div><div data-rcal-hist></div></section>
 {G.T3.block(dest, *G.dest_ll({"destino": r["dest"], "destino_iata": r["dest_iata"]}), lang="en" if en else "es", checkin=f.get("ejemplo_ida"), checkout=f.get("ejemplo_vuelta"))}
+{(lambda rl: f'<section class="hub"><h2>{L("Seguir buscando", "Keep looking")}</h2><div class="hub-g">' + ''.join(f'<a class="hub-l" href="{u_}">{e(t_)}</a>' for u_, t_ in rl) + '</div></section>' if rl else '')(route_links(r, en))}
 {f'<section class="hub"><h2>{L("Más rutas baratas", "More cheap routes")}</h2><div class="hub-g">{rel}</div></section>' if rel else ''}
 </div></main>{E.FOOTER if en else ""}</body></html>'''
     return out
@@ -257,6 +284,8 @@ def main():
     # una ruta nueva, aunque Search Console no la conozca todavia, se indexa si es
     # una de las dos mas baratas a su destino o desde su ciudad: ahi si aporta algo
     # que no esta en otra pagina.
+    for r in rows:
+        BY_PAIR[(r['origin'], r['dest'])] = r
     for _l in list(by_dest.values()) + list(by_orig.values()):
         for _r in sorted(_l, key=lambda x: x['price_from'])[:2]:
             CHEAP_SLUGS.add(_r['slug'])
@@ -270,7 +299,7 @@ def main():
             os.makedirs(d, exist_ok=True)
             open(os.path.join(d, 'index.html'), 'w', encoding='utf-8').write(page(r, lang, others))
             if route_indexed(lang, sl, r):
-                urls.append(f"{SITE}/{base}/{sl}/")
+                urls.append((f"{SITE}/{base}/{sl}/", ((r.get('facts') or {}).get('consultado') or '')[:10]))
             if lang == 'en' and sl != r['slug']:
                 moved[f"/en/flights/{r['slug']}/"] = f"/en/flights/{sl}/"
                 if os.path.isdir(os.path.join(base, r['slug'])):
@@ -286,7 +315,8 @@ def main():
     import en_names
     json.dump([[r['slug'], en_slug(r), r['origin'], r['dest'], E.NAMES.get(r['dest_slug'], r['dest']), r['dest_slug'], r['price_from'], (r.get('facts') or {}).get('mediana_ida_y_vuelta_eur')] for r in rows], open('vuelos/rutas-idx.json', 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
     for name, urls in (('vuelos-sitemap.xml', urls_es), ('flights-sitemap.xml', urls_en)):
-        open(name, 'w', encoding='utf-8').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + ''.join(f'<url><loc>{u}</loc></url>' for u in urls) + '</urlset>\n')
+        # lastmod = fecha real en que se consultaron los precios de cada ruta (Google y Bing recrawlean antes lo que cambia)
+        open(name, 'w', encoding='utf-8').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + ''.join((f'<url><loc>{u[0]}</loc>' + (f'<lastmod>{u[1]}</lastmod>' if u[1] else '') + '</url>') if isinstance(u, tuple) else f'<url><loc>{u}</loc></url>' for u in urls) + '</urlset>\n')
     si = open('sitemap_index.xml', encoding='utf-8').read()
     for sm in ('vuelos-sitemap.xml', 'flights-sitemap.xml'):
         if sm not in si:
