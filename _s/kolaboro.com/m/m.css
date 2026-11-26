@@ -145,3 +145,4 @@
 @media(min-width:761px){.mk-sorts{display:none}}
 /* score hero: the three parts stay in one row on phones */
 @media(max-width:640px){.mk-parts{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}.mk-parts div{padding:8px;font-size:.76rem;line-height:1.3}.mk-parts b{font-size:1.05rem}}
+.mk-hp{display:block;margin-top:2px;font-size:.86em;color:var(--k-muted,#4A5A5C)}.mk-hp i{font-style:normal}

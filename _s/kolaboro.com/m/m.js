@@ -87,12 +87,12 @@
     var meta = [showMarket ? c.market : '', c.band || 'Price not stated'].filter(Boolean).join(', ');
     var pub = c.score || 0, mx = c.max || 6, cf = c.vscore || 0;
     return '<li><a class="mk-row" href="' + (SLUGS[c.id] ? '/projects/' + SLUGS[c.id] + '/' : '/p/' + encodeURIComponent(c.id) + '/') + '"><span class="id">' + (n ? '<span class="nm">' + esc(n[0]) + '</span><span class="dv">' + esc(n[1] ? n[1] + ', ' : '') + esc(c.id) + '</span>' : esc(c.id)) + '</span>' +
-      '<span class="meta"><span class="mk-st ' + sg[1] + '">' + sg[0] + '</span> ' + esc(meta) + '</span>' +
+      '<span class="meta"><span class="mk-st ' + sg[1] + '">' + sg[0] + '</span> ' + esc(meta) + '<span class="mk-hp">' + (c.done ? 'Handover ' + esc(c.done) : 'Handover not stated') + (c.delay > 0 ? ', moved ' + c.delay + ' mo' : '') + ' · ' + (ok(c, 'permit') ? '<i aria-hidden="true">●</i> Permit number public' : '<i aria-hidden="true">○</i> No permit number') + '</span></span>' +
       '<span class="sc"><span class="mk-col">Published </span><b>' + pub + '</b>/' + mx + '<i class="mk-m" aria-hidden="true"><i style="width:' + Math.round(100 * pub / mx) + '%"></i></i></span>' +
       '<span class="cf"><span class="mk-col">Confirmed </span><b>' + cf + '</b>/' + mx + '<i class="mk-m cf" aria-hidden="true"><i style="width:' + Math.round(100 * cf / mx) + '%"></i></i></span>' +
       '<span class="bd">' + bd.join('') + '</span></a></li>';
   }
-  var SORTS = [['desc', 'Published, high to low'], ['asc', 'Published, low to high'], ['conf', 'Confirmed, high to low'], ['name', 'Name, A to Z']];
+  var SORTS = [['desc', 'Published, high to low'], ['asc', 'Published, low to high'], ['conf', 'Confirmed, high to low'], ['name', 'Name, A to Z'], ['moved', 'Date moved, most first']];   // n40 k42: handover year, months moved and permit status as text plus shape on each row
   function listSec(C, label, showMarket){
     var top = C.slice().sort(byScore).slice(0, 4).map(function(c){ return c.id; });
     var h = '<section class="mk-sec" id="projects"><div class="wrap"><p class="eyebrow">Projects</p><h2>All ' + fmt(C.length) + ' project' + (C.length === 1 ? '' : 's') + ' tracked in ' + esc(label) + '</h2>' +
@@ -112,6 +112,7 @@
     return { html: h, draw: function(mode){
       var s = C.filter(pass).sort(byScore); if (mode === 'asc') s.reverse();
       if (mode === 'conf') s.sort(function(a, b){ return (b.vscore || 0) - (a.vscore || 0) || byScore(a, b); });
+      if (mode === 'moved') s.sort(function(a, b){ return (b.delay || 0) - (a.delay || 0) || (b.overdue || 0) - (a.overdue || 0) || byScore(a, b); });
       if (mode === 'name') s.sort(function(a, b){ var x = nm(a) || a.id, y = nm(b) || b.id; return x.localeCompare(y, 'en', { sensitivity: 'base' }); });
       R = s; shown = 0;   // n40 d10: rows are built 50 at a time, when shown
       var el = $('mk-list');
