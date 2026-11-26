@@ -3,48 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
-    <meta name="theme-color" content="#1e3a2f" />
-    <title>JuriMatch — Find No-Win-No-Fee Lawyers Instantly</title>
-    <meta name="description" data-rh="true" content="Search your legal issue and get matched with no-win-no-fee lawyers and litigation funders in 50+ countries. No lawyer fees unless you win." />
+    <meta name="theme-color" content="#1e3a2f" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0b1411" media="(prefers-color-scheme: dark)" />
+    <title>JuriMatch | Find No-Win-No-Fee Lawyers and Litigation Funders</title>
+    <link rel="preload" href="/assets/public-sans-latin-wght-normal-DdeTHZLK-r2.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/bricolage-grotesque-latin-opsz-normal-Cre6nC2_-r2.woff2" as="font" type="font/woff2" crossorigin>
+    <meta name="description" data-rh="true" content="Search your legal issue and find no-win-no-fee lawyers and litigation funders. No lawyer fees unless you win." />
     <meta name="author" content="JuriMatch" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
 
     <!-- Open Graph -->
     <meta property="og:site_name" content="JuriMatch" />
-    <meta property="og:title" data-rh="true" content="JuriMatch — Find No-Win-No-Fee Lawyers Instantly" />
+    <meta property="og:title" data-rh="true" content="JuriMatch: Find No-Win-No-Fee Lawyers Instantly" />
     <meta property="og:description" data-rh="true" content="Describe your legal issue and get matched with no-win-no-fee lawyers and litigation funders. You pay the lawyer nothing unless you win." />
     <meta property="og:type" data-rh="true" content="website" />
     <meta property="og:url" data-rh="true" content="https://jurimatch.com/" />
     <meta property="og:image" data-rh="true" content="https://jurimatch.com/og-image.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="JuriMatch — Find No-Win-No-Fee Lawyers Instantly" />
-    <meta property="og:locale" content="en_US" />
+    <meta property="og:image:alt" content="JuriMatch, Find No-Win-No-Fee Lawyers Instantly" />
+    <meta property="og:locale" data-rh="true" content="en_US" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" data-rh="true" content="summary_large_image" />
-    <meta name="twitter:title" data-rh="true" content="JuriMatch — Find No-Win-No-Fee Lawyers" />
+    <meta name="twitter:title" data-rh="true" content="JuriMatch: Find No-Win-No-Fee Lawyers" />
     <meta name="twitter:description" data-rh="true" content="Describe your legal issue and get matched with no-win-no-fee lawyers. You pay the lawyer nothing unless you win." />
     <meta name="twitter:image" data-rh="true" content="https://jurimatch.com/og-image.png" />
-    <meta name="twitter:image:alt" content="JuriMatch — Find No-Win-No-Fee Lawyers Instantly" />
+    <meta name="twitter:image:alt" content="JuriMatch, Find No-Win-No-Fee Lawyers Instantly" />
 
-    <link rel="icon" href="/favicon.png" type="image/png" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
     <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="apple-touch-icon" href="/icon-180.png" />
     <link rel="canonical" data-rh="true" href="https://jurimatch.com/" />
+    <link rel="alternate" type="application/rss+xml" title="JuriMatch blog" href="https://jurimatch.com/blog/rss.xml" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://ldmevkznlgptcinfweru.supabase.co" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
-    <script type="module" crossorigin src="/assets/index-CM2TliXr.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/vendor-react-B7x7-rgV.js">
-    <link rel="modulepreload" crossorigin href="/assets/vendor-motion-CEgsGefi.js">
-    <link rel="modulepreload" crossorigin href="/assets/vendor-radix-CObCpCr0.js">
-    <link rel="modulepreload" crossorigin href="/assets/vendor-query-BN3FmwOY.js">
-    <link rel="modulepreload" crossorigin href="/assets/vendor-supabase-DUmxvHEB.js">
-    <link rel="stylesheet" crossorigin href="/assets/index-B9nr7JbQ.css">
-  <script defer src="/~flock.js" data-proxy-url="/~api/analytics"></script><script defer src="/__l5e/events.4d3abd1f6b7321c2.js" data-artifact-kind="dwl_content_hash" data-artifact-id="d1c7f801f867fad2f863589689fd5e96f3d4aad35330c950510ae76b215a8f40" data-commit-sha="3c5a4a6c08b8fecfb35ef9b33c264b093df7ecfc" data-context-token="v1.eyJwcm9qZWN0X2lkIjoibG92cF8xaHhkYTIydjRoODhuOWt0ZHhndGRhZGRyMiIsImFydGlmYWN0X2tpbmQiOiJkd2xfY29udGVudF9oYXNoIiwiYXJ0aWZhY3RfaWQiOiJkMWM3ZjgwMWY4NjdmYWQyZjg2MzU4OTY4OWZkNWU5NmYzZDRhYWQzNTMzMGM5NTA1MTBhZTc2YjIxNWE4ZjQwIiwiY29tbWl0X3NoYSI6IjNjNWE0YTZjMDhiOGZlY2ZiMzVlZjliMzNjMjY0YjA5M2RmN2VjZmMiLCJleHAiOjE3OTUwMzMwNjd9.V86HpRhRQ_I2T5Id6wifD3BhZORZDxPMQBvH2vLeTq0"></script></head>
+    <script data-jm-route-preload>(function(){try{var F=["client-DK8AK8ss-r2","vendor-supabase-Dg15yhUf-r2","Index-B_Ws8ed9-r2","Footer-BQFX25J1-r2","button-BFUzaZ2o-r2","index-7BVXkWpn-r2","index-eGhgRCJ2-r2","sun-DKSpvenJ-r2","LanguageSwitch-DN0upXO7-r2","globe-DrjdjlYD-r2","user-Cx5px5iL-r2","bookmark-B8gP9a81-r2","stats-l_Cnjx7E-r2","shield-check-D6cvcyBE-r2","lock-CpzN-6Am-r2","chevron-down-3IHGiVR4-r2","SEOHead-ytm_hY9m-r2","input-D2BBPsWi-r2","circle-alert-DhcmlhJH-r2","circle-check-BA8HP95v-r2","use-toast-BKZl8TvB-r2","experiments-BWqdIXLh-r2","utm-DBsNMbe_-r2","index-_ld1wQge-r2","heroMemory-CgqCWI2H-r2","db-C0c3g0CC-r2","labels-MiChSJcW-r2","publicRead-zpqt44Rw-r2","types-zrS5qent-r2","vendor-motion-YC7fLFlc-r2","search-Bt5fuPZv-r2","history-hZGBlfy0-r2","map-pin-BQ0FZRR4-r2","scale-CvQpYZKm-r2","x-DBbwW0-s-r2","circle-check-big-B6B3qEDY-r2","loader-circle-DyfJ_AYu-r2","mail-CSxVZShH-r2","clipboard-check-CqQg8he7-r2","refresh-cw-byKt4EEC-r2","arrow-right-CNkR_zzd-r2","shield-CE74piW2-r2","users-Cd5ScoXr-r2","SectionHeader-Cja11K7r-r2","FirmProfile-NWUljgPr-r2","FirmNotFoundHelp-D0E8GnSr-r2","SeoBlocks-CKxZmjPM-r2","accordion-CDgGPEjU-r2","firms-BJFaFoOa-r2","taxonomy-B_iI7feY-r2","es-CYP0yNgx-r2","listingHelpers-D8ICKiQ--r2","listing-counts.generated-CSAnjmlF-r2","costsAndSources-BMjsgpvy-r2","glossary-C9uiedt6-r2","feeComparisons-CejdH2VH-r2","useFirmProfile-CGPd4P8I-r2","lawyerPortal-CVl9LOoD-r2","FirmFitCheck-CS1j46nV-r2","index-xxL5mLqR-r2","Combination-BJjZs3gQ-r2","countries-BD9HWMum-r2","pseoSummary-Do-ukexF-r2","Firms-BuhhFDMV-r2","LawyersHub-D37DowsC-r2","claimGuides-BqcCTYhu-r2","LawyersByType-heYGbedi-r2","drawer-B6kK3_Pr-r2","countryProfiles-lLiSE3LU-r2","WhatIfILose-D4OFg0g7-r2","ReadingAids-B7al_Qvz-r2","GuideEnd-DK83IHWF-r2","growthPages-p63Getkk-r2","SearchFromHere-DkUDWUux-r2","SmallClaims-BBfoO9Vh-r2","CountryGuide-Cu0X8c-x-r2","ukTopics-BVtMgjze-r2","ClaimGuide-N6I72BKJ-r2","Funders-CpdkvHaD-r2","FundersShare-D8CW0_Jf-r2","FundersCountry-DllTEdYh-r2","ToolsHub-B6QwtUMe-r2","toolkitPages-BCDoHLLf-r2","ToolFinder-D-bfsvqP-r2","LimitationChecker-DujfrsWz-r2","ToolShell-DVuAJkWn-r2","CaseValue-B9n2GAXk-r2","slider-D29HuTJz-r2","ClaimLetter-BLFxhv6Y-r2","ContingencyFeeCalculator-Dz-NJlSn-r2","FlightCompensation-DeXy4NxS-r2","AirportDistance-TAU7z81g-r2","DocumentChecklist-Dn2IMulX-r2","FundingFit-DzGTRjpJ-r2","HowItWorks-B9c--U33-r2","Wizard-DEZsV-WR-r2","select-CUVJ0jV4-r2","index-DiJOj2xk-r2","tooltip-BiGy_I_C-r2","Pricing-B84Jb0Qb-r2","FAQ-HDS9P6wW-r2","Blog-RYEOCWG_-r2","format-CtbFL2Tf-r2","en-US-BddybvhD-r2","BlogPost-DVPM3IdC-r2","index-ceTiRwH4-r2","index-BxKwfp_8-r2","ForLawyers-CgtdpZMX-r2","copy-B1ORtZTB-r2","SampleCaseBrief-CA4h5x9_-r2","lawyerDemo-B3hWUQTL-r2","About-zLZcezO6-r2","Contact-DN8aq0qg-r2","schemas-DJ8BVhLe-r2","Auth-BkzdaFFH-r2","Dashboard-CBMM9afE-r2","confetti.module-bits9m5W-r2","caseUtils-DElYLdJM-r2","SavedFirms-BxHTt8qN-r2","Glossary-BWXYMLGW-r2","GlossaryTerm-BNskEytg-r2","EsHome-BT8Epxeq-r2","matchFirms-BeEOKAKp-r2","esGuides-M3J9FbaD-r2","toolHubs-B5GzIjxz-r2","AbogadosAExito-Of8CyB0W-r2","EsGuias-ewLsY5-s-r2","guideTools-BD7sABxl-r2","LangToolsHub-BYkqX2NS-r2","DeHome-Bva8ABm0-r2","de-CAB_GVm_-r2","IntlGuides-CdeL7XyJ-r2","frGuides-fxmKTzxu-r2","itGuides-C11-QbU6-r2","index-DFD-Xbhm-r2","pt-CC0bBHvg-r2","FrHome-CUjoLti--r2","IntlHome-CAVE8th6-r2","ItHome-CObd38Bn-r2","PlHome-Ck1mbEnF-r2","PtBrHome-BpQ0tE0N-r2"],R=[["^\\/$",[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43]],["^\\/firms\\/[^/]+$",[44,45,3,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62]],["^\\/firms$",[63,3,46,47,48,49,50,56,61,53]],["^\\/lawyers$",[64,3,46,47,48,49,50,65,51,52,53,61]],["^\\/lawyers\\/[^/]+(\\/[^/]+)?$",[66,3,67,59,60,46,47,48,49,50,51,52,53,56,68,65,62]],["^\\/guides\\/what-if-i-lose$",[69,3,46,47,48,49,50,54,70,23,71,72,73]],["^\\/guides\\/first-call-questions$",[3,46,47,48,49,50,54,70,23,71,72,73]],["^\\/guides\\/small-claims$",[74,3,46,47,48,49,50,54,70,23,71,72,73]],["^\\/guides\\/[^/]+$",[75,3,54,46,47,48,49,50,68,53,70,23,71,72,73,76]],["^\\/claims\\/[^/]+$",[77,3,54,46,47,48,49,50,65,68,51,52,53,70,23,71,72,73]],["^\\/funders$",[78,3,46,47,48,49,50,79]],["^\\/funders\\/[^/]+$",[80,3,46,47,48,49,50,79]],["^\\/tools$",[81,3,82,46,47,48,49,50,83]],["^\\/tools\\/limitation-checker(\\/[^/]+)?$",[84,3,46,47,48,49,50,53,68,82,71,23,72,73,85]],["^\\/tools\\/case-value$",[86,3,87,46,47,48,49,50,71,23,72,73]],["^\\/tools\\/claim-letter$",[88,3,46,47,48,49,50,54,70,23,71,72,73,82]],["^\\/tools\\/contingency-fee-calculator$",[89,3,46,47,48,49,50]],["^\\/tools\\/flight-compensation$",[90,91,3,46,47,48,49,50,82,71,23,72,73,85]],["^\\/tools\\/which-lawyer$",[3,49,46,47,48,50]],["^\\/tools\\/document-checklist$",[92,3,46,47,48,49,50,65]],["^\\/tools\\/funding-fit$",[93,3,46,47,48,49,50]],["^\\/how-it-works$",[94,3,50,29]],["^\\/qualify$",[95,61,96,60,97,98,65,49,68,29]],["^\\/pricing$",[99,23,47,3,50,29]],["^\\/faq$",[100,3,50,47]],["^\\/blog$",[101,3,49,51,52,53,72,102,103]],["^\\/blog\\/[^/]+$",[104,3,73,49,51,52,53,72,65,105,106,102,103]],["^\\/for-lawyers$",[107,3,47,108,109,61,23,110,57]],["^\\/about$",[111,3,46,47,48,49,50,54,70,23,71,72,73]],["^\\/contact$",[112,3,23,113]],["^\\/auth$",[114,23,29,113]],["^\\/dashboard$",[115,116,23,3,29,117]],["^\\/saved$",[118,23,3,59,60,51,52,53,49]],["^\\/glossary$",[119,3,46,47,48,49,50,54,55,70,23,71,72,73]],["^\\/glossary\\/[^/]+$",[120,3,46,47,48,49,50,54]],["^\\/es$",[121,3,46,47,48,49,50,23,61,122,52,123,124]],["^\\/es\\/abogados-a-exito(\\/.*)?$",[125,3,46,47,48,49,50,53,51,52]],["^\\/es\\/guias(\\/[^/]+)?$",[126,3,46,47,48,49,50,123,70,23,71,72,73,127]],["^\\/es\\/herramientas$",[128,3,46,47,48,49,50,82,124,83]],["^\\/de$",[129,130,3,46,47,48,49,50,53,52,124]],["^\\/de\\/ratgeber(\\/[^/]+)?$",[131,3,46,47,48,49,50,132,133,53,52,127,71,23,72,73,70,134,130,135]],["^\\/de\\/werkzeuge$",[128,3,46,47,48,49,50,82,124,83]],["^\\/fr$",[136,137,134,130,135,3,46,47,48,49,50,53,52,132]],["^\\/it$",[138,137,134,130,135,3,46,47,48,49,50,53,52,133]],["^\\/pl$",[139,137,134,130,135,3,46,47,48,49,50,53,52]],["^\\/pt-br$",[140,135,3,46,47,48,49,50,53,52]]],A=[0,1],p=location.pathname.replace(/\/+$/,"").toLowerCase()||"/",L=function(n){var l=document.createElement("link");l.rel="modulepreload";l.crossOrigin="";l.href="/assets/"+F[n]+".js";document.head.appendChild(l)};A.forEach(L);for(var i=0;i<R.length;i++){if(new RegExp(R[i][0]).test(p)){R[i][1].forEach(L);break}}}catch(e){}})()</script>
+    <script type="module" crossorigin src="/assets/index-Dve0nnIA-r2.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/vendor-react-CtrgGfNe-r2.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-query-Cu4Pu7rP-r2.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-CK6-Gm3T-r2.css">
+  </head>
   <body>
     <div id="root"></div>
     <noscript>JuriMatch finds no-win-no-fee lawyers and litigation funders for your case. Please enable JavaScript to search.</noscript>

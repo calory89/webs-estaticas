@@ -1,0 +1,439 @@
+{
+ "version": "kolaboro-engineering-checks-1",
+ "updated": "2026-11-18",
+ "about": "Results of the engineering checks run on the live site on the date of each block, shown on https://kolaboro.com/engineering/checks/. Written from the tool outputs; the commit that changes this file lists the runs.",
+ "unit": {
+  "at": "2026-11-18",
+  "pass": 17,
+  "total": 17,
+  "file": "/open/tests/parsers.test.mjs",
+  "covers": [
+   "plain-language search parser, 8 languages",
+   "contract reader, English and Spanish, escaping"
+  ]
+ },
+ "ttfb": {
+  "at": "2026-11-18",
+  "runs": 5,
+  "from": "a cloud container behind an HTTPS proxy (adds latency)",
+  "rows": [
+   {
+    "path": "/",
+    "ttfb_ms_median": 495,
+    "after_tls_ms_median": 271,
+    "cache": ""
+   },
+   {
+    "path": "/projects/",
+    "ttfb_ms_median": 659,
+    "after_tls_ms_median": 280,
+    "cache": "cache hit"
+   },
+   {
+    "path": "/projects/lb-pandawa-hills/",
+    "ttfb_ms_median": 246,
+    "after_tls_ms_median": 123,
+    "cache": "cache hit"
+   },
+   {
+    "path": "/es/projects/elements-cyprus/",
+    "ttfb_ms_median": 739,
+    "after_tls_ms_median": 596,
+    "cache": "cache hit"
+   },
+   {
+    "path": "/m/dubai/",
+    "ttfb_ms_median": 633,
+    "after_tls_ms_median": 507,
+    "cache": ""
+   },
+   {
+    "path": "/countries/spain/",
+    "ttfb_ms_median": 342,
+    "after_tls_ms_median": 98,
+    "cache": ""
+   },
+   {
+    "path": "/rankings/transparency/",
+    "ttfb_ms_median": 406,
+    "after_tls_ms_median": 237,
+    "cache": ""
+   },
+   {
+    "path": "/developers/emaar-properties/",
+    "ttfb_ms_median": 225,
+    "after_tls_ms_median": 101,
+    "cache": "cache hit"
+   },
+   {
+    "path": "/check/",
+    "ttfb_ms_median": 265,
+    "after_tls_ms_median": 132,
+    "cache": ""
+   },
+   {
+    "path": "/pricing/",
+    "ttfb_ms_median": 271,
+    "after_tls_ms_median": 149,
+    "cache": ""
+   },
+   {
+    "path": "/api/open/stats",
+    "ttfb_ms_median": 279,
+    "after_tls_ms_median": 144,
+    "cache": ""
+   },
+   {
+    "path": "/api/v1/projects/amani-melasti",
+    "ttfb_ms_median": 440,
+    "after_tls_ms_median": 101,
+    "cache": ""
+   }
+  ]
+ },
+ "lighthouse": {
+  "at": "2026-11-18",
+  "version": "13.6.0",
+  "form": "mobile",
+  "runs_per_page": 2,
+  "rows": [
+   {
+    "path": "/",
+    "performance": 99,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+   },
+   {
+    "path": "/projects/",
+    "performance": 98,
+    "accessibility": 96,
+    "best-practices": 100,
+    "seo": 92
+   },
+   {
+    "path": "/projects/lb-pandawa-hills/",
+    "performance": 100,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+   },
+   {
+    "path": "/projects/emaar-golf-vale/",
+    "performance": 99,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+   },
+   {
+    "path": "/projects/tw-solana-village-mijas/",
+    "performance": 100,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+   },
+   {
+    "path": "/es/projects/elements-cyprus/",
+    "performance": 91,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+   },
+   {
+    "path": "/m/dubai/",
+    "performance": 89,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+   },
+   {
+    "path": "/ar/m/bali/",
+    "performance": 88,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+   },
+   {
+    "path": "/countries/spain/",
+    "performance": 99,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+   },
+   {
+    "path": "/rankings/transparency/",
+    "performance": 99,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+   },
+   {
+    "path": "/developers/emaar-properties/",
+    "performance": 100,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+   },
+   {
+    "path": "/check/",
+    "performance": 94,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+   },
+   {
+    "path": "/pricing/",
+    "performance": 100,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+   },
+   {
+    "path": "/tools/",
+    "performance": 99,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+   },
+   {
+    "path": "/compare/",
+    "performance": 99,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+   },
+   {
+    "path": "/guides/",
+    "performance": 100,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+   },
+   {
+    "path": "/map/",
+    "performance": 81,
+    "accessibility": 97,
+    "best-practices": 96,
+    "seo": 100
+   },
+   {
+    "path": "/engineering/status/",
+    "performance": 89,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+   }
+  ]
+ },
+ "axe": {
+  "at": "2026-11-18",
+  "version": "4.10.2",
+  "rules": "wcag2a, wcag2aa, wcag21a, wcag21aa; serious and critical only",
+  "viewports": [
+   390,
+   1440
+  ],
+  "rows": [
+   {
+    "path": "/",
+    "light": 0,
+    "light_rules": [],
+    "dark": 29,
+    "dark_rules": [
+     "color-contrast"
+    ]
+   },
+   {
+    "path": "/projects/lb-pandawa-hills/",
+    "light": 0,
+    "light_rules": [],
+    "dark": 0,
+    "dark_rules": []
+   },
+   {
+    "path": "/projects/",
+    "light": 0,
+    "light_rules": [],
+    "dark": 1,
+    "dark_rules": [
+     "color-contrast"
+    ]
+   },
+   {
+    "path": "/m/dubai/",
+    "light": 0,
+    "light_rules": [],
+    "dark": 0,
+    "dark_rules": []
+   },
+   {
+    "path": "/countries/spain/",
+    "light": 0,
+    "light_rules": [],
+    "dark": 0,
+    "dark_rules": []
+   },
+   {
+    "path": "/rankings/transparency/",
+    "light": 0,
+    "light_rules": [],
+    "dark": 0,
+    "dark_rules": []
+   },
+   {
+    "path": "/check/",
+    "light": 0,
+    "light_rules": [],
+    "dark": 0,
+    "dark_rules": []
+   },
+   {
+    "path": "/pricing/",
+    "light": 0,
+    "light_rules": [],
+    "dark": 0,
+    "dark_rules": []
+   },
+   {
+    "path": "/ar/m/bali/",
+    "light": 0,
+    "light_rules": [],
+    "dark": 0,
+    "dark_rules": []
+   },
+   {
+    "path": "/tools/contract-reader/",
+    "light": 0,
+    "light_rules": [],
+    "dark": 0,
+    "dark_rules": []
+   },
+   {
+    "path": "/methods/handover-slippage/",
+    "light": 0,
+    "light_rules": [],
+    "dark": 0,
+    "dark_rules": []
+   },
+   {
+    "path": "/data/snapshots/",
+    "light": 0,
+    "light_rules": [],
+    "dark": 0,
+    "dark_rules": []
+   },
+   {
+    "path": "/engineering/status/",
+    "light": 0,
+    "light_rules": [],
+    "dark": 0,
+    "dark_rules": []
+   },
+   {
+    "path": "/tools/widget/",
+    "light": 2,
+    "light_rules": [
+     "label"
+    ],
+    "dark": 2,
+    "dark_rules": [
+     "label"
+    ]
+   },
+   {
+    "path": "/prices/history/",
+    "light": 0,
+    "light_rules": [],
+    "dark": 0,
+    "dark_rules": []
+   }
+  ]
+ },
+ "load": {
+  "at": "2026-11-18T13:12:20.132Z",
+  "rps": 100,
+  "seconds": 10,
+  "requests": 1000,
+  "ok": 1000,
+  "errors": 0,
+  "p50": 76,
+  "p95": 541,
+  "paths": [
+   "/",
+   "/projects/lb-pandawa-hills/",
+   "/projects/emaar-golf-vale/",
+   "/es/projects/elements-cyprus/",
+   "/api/open/stats",
+   "/api/v1/projects/amani-melasti",
+   "/pricing/",
+   "/rankings/transparency/"
+  ],
+  "from": "cloud container through an HTTPS proxy"
+ },
+ "headers": {
+  "at": "2026-11-18",
+  "rows": [
+   {
+    "h": "Strict-Transport-Security",
+    "what": "HTTPS only for a year, subdomains included",
+    "st": "set"
+   },
+   {
+    "h": "Content-Security-Policy",
+    "what": "scripts only with a per-response nonce (strict-dynamic); no inline handlers, no plugins, no foreign base URL or framing",
+    "st": "set"
+   },
+   {
+    "h": "Content-Security-Policy-Report-Only",
+    "what": "the same for styles, images, connections and frames: reported, not yet enforced",
+    "st": "report"
+   },
+   {
+    "h": "X-Frame-Options",
+    "what": "pages cannot be framed by other sites (embeds excepted)",
+    "st": "set"
+   },
+   {
+    "h": "X-Content-Type-Options",
+    "what": "browsers do not guess file types",
+    "st": "set"
+   },
+   {
+    "h": "Referrer-Policy",
+    "what": "other sites see only our domain, not the page address",
+    "st": "set"
+   },
+   {
+    "h": "Permissions-Policy",
+    "what": "camera, microphone and location only for our own tools; payment API and USB off",
+    "st": "set"
+   },
+   {
+    "h": "Cross-Origin-Opener-Policy",
+    "what": "windows we open cannot script this page back",
+    "st": "set"
+   },
+   {
+    "h": "Reporting-Endpoints",
+    "what": "policy violations are reported to /api/kb/csp",
+    "st": "set"
+   }
+  ]
+ },
+ "rollback": {
+  "drill": {
+   "at": "2026-11-18T12:54:39.054Z",
+   "real_passed": 22,
+   "real_total": 22,
+   "injected_caught": true,
+   "exit": 1
+  },
+  "revert": {
+   "at": "2026-11-18",
+   "files": 32,
+   "bundle_exit": 0,
+   "seconds": 4.3,
+   "pushed": false
+  }
+ }
+}

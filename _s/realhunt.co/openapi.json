@@ -1,0 +1,573 @@
+{
+ "openapi": "3.1.0",
+ "info": {
+  "title": "RealHunt open data",
+  "version": "2026-11-26",
+  "summary": "Cheap homes for sale around the world, each checked by a person and scored, with buying rules and costs by country.",
+  "description": "Read-only static files, rebuilt with every update of the site (at least daily). No key is needed. Text and figures are licensed CC BY 4.0: quote them with a link to the page they come from. Photos belong to the original listings and are not part of these files. Rules, taxes and costs are general information, not legal or tax advice. Human-readable documentation: https://realhunt.co/research/open-data",
+  "license": {
+   "name": "CC BY 4.0",
+   "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "contact": {
+   "name": "RealHunt",
+   "email": "carlos@equinoxinvestmentgroup.com",
+   "url": "https://realhunt.co/research/open-data"
+  }
+ },
+ "servers": [
+  {
+   "url": "https://realhunt.co"
+  }
+ ],
+ "externalDocs": {
+  "description": "For AI assistants: what to quote and how to attribute",
+  "url": "https://realhunt.co/for-ai"
+ },
+ "paths": {
+  "/data/countries/index.json": {
+   "get": {
+    "operationId": "listCountries",
+    "summary": "Countries with homes, their key figures and the address of each country file",
+    "responses": {
+     "200": {
+      "description": "The index",
+      "content": {
+       "application/json": {}
+      }
+     }
+    }
+   }
+  },
+  "/data/countries/{country}.json": {
+   "get": {
+    "operationId": "getCountry",
+    "summary": "Key facts, buying rules and every home of one country",
+    "description": "To search, read this file and filter `homes` by price_eur, size_sqm, bedrooms or score. Example: homes in Bulgaria up to 30,000 euros = getCountry(bulgaria), then price_eur <= 30000.",
+    "parameters": [
+     {
+      "name": "country",
+      "in": "path",
+      "required": true,
+      "description": "Country key: lower case, words joined with a hyphen.",
+      "schema": {
+       "type": "string",
+       "enum": [
+        "spain",
+        "italy",
+        "united-states",
+        "france",
+        "denmark",
+        "sweden",
+        "japan",
+        "poland",
+        "greece",
+        "germany",
+        "portugal",
+        "netherlands",
+        "canada",
+        "mexico",
+        "switzerland",
+        "bulgaria",
+        "united-kingdom",
+        "cyprus",
+        "dominican-republic",
+        "ireland",
+        "uruguay",
+        "colombia",
+        "czech-republic",
+        "slovenia"
+       ]
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "The country",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "country": {
+           "type": "string"
+          },
+          "updated": {
+           "type": "string",
+           "format": "date"
+          },
+          "sentences": {
+           "type": "array",
+           "items": {
+            "type": "string"
+           },
+           "description": "Dated sentences that can be quoted on their own."
+          },
+          "summary": {
+           "type": "object"
+          },
+          "buying": {
+           "type": "object"
+          },
+          "pages": {
+           "type": "object"
+          },
+          "homes": {
+           "type": "array",
+           "items": {
+            "$ref": "#/components/schemas/Home"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/data/countries/{country}.md": {
+   "get": {
+    "operationId": "getCountryText",
+    "summary": "The same country as clean text (Markdown), each home with its description. Spanish: {country}.es.md",
+    "parameters": [
+     {
+      "name": "country",
+      "in": "path",
+      "required": true,
+      "description": "Country key: lower case, words joined with a hyphen.",
+      "schema": {
+       "type": "string",
+       "enum": [
+        "spain",
+        "italy",
+        "united-states",
+        "france",
+        "denmark",
+        "sweden",
+        "japan",
+        "poland",
+        "greece",
+        "germany",
+        "portugal",
+        "netherlands",
+        "canada",
+        "mexico",
+        "switzerland",
+        "bulgaria",
+        "united-kingdom",
+        "cyprus",
+        "dominican-republic",
+        "ireland",
+        "uruguay",
+        "colombia",
+        "czech-republic",
+        "slovenia"
+       ]
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Markdown",
+      "content": {
+       "text/markdown": {}
+      }
+     }
+    }
+   }
+  },
+  "/data/countries/{country}.pdf": {
+   "get": {
+    "operationId": "getCountrySheet",
+    "summary": "One-page fact sheet of the country with its sources. Spanish: {country}.es.pdf",
+    "parameters": [
+     {
+      "name": "country",
+      "in": "path",
+      "required": true,
+      "description": "Country key: lower case, words joined with a hyphen.",
+      "schema": {
+       "type": "string",
+       "enum": [
+        "spain",
+        "italy",
+        "united-states",
+        "france",
+        "denmark",
+        "sweden",
+        "japan",
+        "poland",
+        "greece",
+        "germany",
+        "portugal",
+        "netherlands",
+        "canada",
+        "mexico",
+        "switzerland",
+        "bulgaria",
+        "united-kingdom",
+        "cyprus",
+        "dominican-republic",
+        "ireland",
+        "uruguay",
+        "colombia",
+        "czech-republic",
+        "slovenia"
+       ]
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "PDF",
+      "content": {
+       "application/pdf": {}
+      }
+     }
+    }
+   }
+  },
+  "/research/homes.csv": {
+   "get": {
+    "operationId": "getHomesCsv",
+    "summary": "Every home, one row each: url, country, region, price_eur, size_sqm, bedrooms, score, added, airport_km, flood_indicator",
+    "responses": {
+     "200": {
+      "description": "CSV (UTF-8 with BOM)",
+      "content": {
+       "text/csv": {}
+      }
+     }
+    }
+   }
+  },
+  "/research/monthly-series.json": {
+   "get": {
+    "operationId": "getMonthlySeries",
+    "summary": "One reading per month: homes, countries, median price and median price per m²",
+    "responses": {
+     "200": {
+      "description": "The series",
+      "content": {
+       "application/json": {}
+      }
+     }
+    }
+   }
+  },
+  "/research/property-portals.json": {
+   "get": {
+    "operationId": "getPropertyPortals",
+    "summary": "Property portals by country: name, domain and link",
+    "responses": {
+     "200": {
+      "description": "The directory",
+      "content": {
+       "application/json": {}
+      }
+     }
+    }
+   }
+  },
+  "/data/realhunt-homes.geojson": {
+   "get": {
+    "operationId": "getHomesGeoJson",
+    "summary": "Every home with coordinates, as GeoJSON points",
+    "responses": {
+     "200": {
+      "description": "GeoJSON",
+      "content": {
+       "application/geo+json": {}
+      }
+     }
+    }
+   }
+  },
+  "/data/realhunt-best-homes.kml": {
+   "get": {
+    "operationId": "getBestHomesKml",
+    "summary": "The ten best-scored homes of each country, as KML",
+    "responses": {
+     "200": {
+      "description": "KML",
+      "content": {
+       "application/vnd.google-earth.kml+xml": {}
+      }
+     }
+    }
+   }
+  },
+  "/llms.txt": {
+   "get": {
+    "operationId": "getIndexForAssistants",
+    "summary": "Short index of the site for AI assistants. Spanish: /es/llms.txt",
+    "responses": {
+     "200": {
+      "description": "Text",
+      "content": {
+       "text/plain": {}
+      }
+     }
+    }
+   }
+  },
+  "/llms-full.txt": {
+   "get": {
+    "operationId": "getFullText",
+    "summary": "Method, data, costs, guides and every home in one text file",
+    "responses": {
+     "200": {
+      "description": "Text",
+      "content": {
+       "text/plain": {}
+      }
+     }
+    }
+   }
+  },
+  "/feed.json": {
+   "get": {
+    "operationId": "getNewHomesFeed",
+    "summary": "The newest homes (JSON Feed 1.1). Also /feed.xml (RSS) and /feed.atom (Atom)",
+    "responses": {
+     "200": {
+      "description": "JSON Feed",
+      "content": {
+       "application/feed+json": {}
+      }
+     }
+    }
+   }
+  },
+  "/homes/{country}": {
+   "get": {
+    "operationId": "getCountryPage",
+    "summary": "The page of a country: every home, prices, rules and questions (HTML, readable without JavaScript)",
+    "parameters": [
+     {
+      "name": "country",
+      "in": "path",
+      "required": true,
+      "description": "Country key: lower case, words joined with a hyphen.",
+      "schema": {
+       "type": "string",
+       "enum": [
+        "spain",
+        "italy",
+        "united-states",
+        "france",
+        "denmark",
+        "sweden",
+        "japan",
+        "poland",
+        "greece",
+        "germany",
+        "portugal",
+        "netherlands",
+        "canada",
+        "mexico",
+        "switzerland",
+        "bulgaria",
+        "united-kingdom",
+        "cyprus",
+        "dominican-republic",
+        "ireland",
+        "uruguay",
+        "colombia",
+        "czech-republic",
+        "slovenia"
+       ]
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "HTML",
+      "content": {
+       "text/html": {}
+      }
+     }
+    }
+   }
+  },
+  "/research/find-homes": {
+   "get": {
+    "operationId": "findHomes",
+    "summary": "Search page for people and agents with a browser: filters the homes of a country by price, size and bedrooms",
+    "description": "Needs JavaScript. Without it, use getCountry and filter the list yourself; the page says so and links the files.",
+    "parameters": [
+     {
+      "name": "country",
+      "in": "query",
+      "schema": {
+       "type": "string",
+       "enum": [
+        "spain",
+        "italy",
+        "united-states",
+        "france",
+        "denmark",
+        "sweden",
+        "japan",
+        "poland",
+        "greece",
+        "germany",
+        "portugal",
+        "netherlands",
+        "canada",
+        "mexico",
+        "switzerland",
+        "bulgaria",
+        "united-kingdom",
+        "cyprus",
+        "dominican-republic",
+        "ireland",
+        "uruguay",
+        "colombia",
+        "czech-republic",
+        "slovenia"
+       ]
+      }
+     },
+     {
+      "name": "max",
+      "in": "query",
+      "description": "Highest price in euros",
+      "schema": {
+       "type": "integer"
+      }
+     },
+     {
+      "name": "min",
+      "in": "query",
+      "description": "Lowest price in euros",
+      "schema": {
+       "type": "integer"
+      }
+     },
+     {
+      "name": "beds",
+      "in": "query",
+      "description": "Fewest bedrooms",
+      "schema": {
+       "type": "integer"
+      }
+     },
+     {
+      "name": "sqm",
+      "in": "query",
+      "description": "Smallest size in m²",
+      "schema": {
+       "type": "integer"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "HTML",
+      "content": {
+       "text/html": {}
+      }
+     }
+    }
+   }
+  }
+ },
+ "components": {
+  "schemas": {
+   "Home": {
+    "type": "object",
+    "properties": {
+     "url": {
+      "type": "string",
+      "format": "uri"
+     },
+     "title": {
+      "type": "string"
+     },
+     "title_es": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "description": "The title in Spanish, when there is one."
+     },
+     "country": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "region": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "place": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "price_eur": {
+      "type": "number",
+      "description": "Asking price in euros from the original listing."
+     },
+     "size_sqm": {
+      "type": [
+       "number",
+       "null"
+      ]
+     },
+     "bedrooms": {
+      "type": [
+       "number",
+       "null"
+      ]
+     },
+     "score": {
+      "type": [
+       "number",
+       "null"
+      ],
+      "description": "RealHunt score, 70 to 98. RealHunt's own grade, not a valuation."
+     },
+     "added": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "format": "date"
+     },
+     "lat": {
+      "type": [
+       "number",
+       "null"
+      ]
+     },
+     "lng": {
+      "type": [
+       "number",
+       "null"
+      ]
+     },
+     "listed_on": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "description": "Domain of the original listing."
+     },
+     "summary": {
+      "type": [
+       "string",
+       "null"
+      ]
+     }
+    }
+   }
+  }
+ }
+}

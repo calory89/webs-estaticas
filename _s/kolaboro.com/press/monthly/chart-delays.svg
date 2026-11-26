@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 554" width="760" height="554" role="img" aria-labelledby="t d">
+<title id="t">Share of projects past the first promised handover</title><desc id="d">Markets with 5 or more dated projects, not completed (n = projects). November 2026.. Kolaboro, kolaboro.com. CC BY 4.0. Data: kolaboro.com/data/delay-index.json, November 2026.</desc>
+<rect width="100%" height="100%" fill="#FFFFFF"/>
+<g font-family="Archivo, 'Helvetica Neue', Arial, sans-serif">
+<text x="24" y="34" font-size="20" font-weight="700" fill="#17212B">Share of projects past the first promised handover</text>
+<text x="24" y="56" font-size="13" fill="#5B6670">Markets with 5 or more dated projects, not completed (n = projects). November 2026.</text>
+<line x1="190.0" x2="190.0" y1="72" y2="504" stroke="#E3E2DD"/>
+<text x="190.0" y="518" font-size="11" text-anchor="middle" fill="#5B6670">0%</text>
+<line x1="302.5" x2="302.5" y1="72" y2="504" stroke="#E3E2DD"/>
+<text x="302.5" y="518" font-size="11" text-anchor="middle" fill="#5B6670">25%</text>
+<line x1="415.0" x2="415.0" y1="72" y2="504" stroke="#E3E2DD"/>
+<text x="415.0" y="518" font-size="11" text-anchor="middle" fill="#5B6670">50%</text>
+<line x1="527.5" x2="527.5" y1="72" y2="504" stroke="#E3E2DD"/>
+<text x="527.5" y="518" font-size="11" text-anchor="middle" fill="#5B6670">75%</text>
+<line x1="640.0" x2="640.0" y1="72" y2="504" stroke="#E3E2DD"/>
+<text x="640.0" y="518" font-size="11" text-anchor="middle" fill="#5B6670">100%</text>
+<text x="180" y="93" font-size="13" text-anchor="end" fill="#17212B">Vietnam</text>
+<path d="M190 78 h164.8 a4 4 0 0 1 4 4 v12 a4 4 0 0 1 -4 4 h-164.8 z" fill="#FF5B14"><title>Vietnam: 37.5% n=8</title></path>
+<text x="366.8" y="93" font-size="12" fill="#5B6670"><tspan font-weight="700" fill="#17212B">37.5%</tspan> n=8</text>
+<text x="180" y="121" font-size="13" text-anchor="end" fill="#17212B">Istanbul</text>
+<path d="M190 106 h131.0 a4 4 0 0 1 4 4 v12 a4 4 0 0 1 -4 4 h-131.0 z" fill="#FF5B14"><title>Istanbul: 30% n=10</title></path>
+<text x="333.0" y="121" font-size="12" fill="#5B6670"><tspan font-weight="700" fill="#17212B">30%</tspan> n=10</text>
+<text x="180" y="149" font-size="13" text-anchor="end" fill="#17212B">Northern Cyprus</text>
+<path d="M190 134 h108.5 a4 4 0 0 1 4 4 v12 a4 4 0 0 1 -4 4 h-108.5 z" fill="#FF5B14"><title>Northern Cyprus: 25% n=8</title></path>
+<text x="310.5" y="149" font-size="12" fill="#5B6670"><tspan font-weight="700" fill="#17212B">25%</tspan> n=8</text>
+<text x="180" y="177" font-size="13" text-anchor="end" fill="#17212B">Cambodia</text>
+<path d="M190 162 h95.9 a4 4 0 0 1 4 4 v12 a4 4 0 0 1 -4 4 h-95.9 z" fill="#FF5B14"><title>Cambodia: 22.2% n=9</title></path>
+<text x="297.9" y="177" font-size="12" fill="#5B6670"><tspan font-weight="700" fill="#17212B">22.2%</tspan> n=9</text>
+<text x="180" y="205" font-size="13" text-anchor="end" fill="#17212B">Los Cabos</text>
+<path d="M190 190 h95.9 a4 4 0 0 1 4 4 v12 a4 4 0 0 1 -4 4 h-95.9 z" fill="#FF5B14"><title>Los Cabos: 22.2% n=9</title></path>
+<text x="297.9" y="205" font-size="12" fill="#5B6670"><tspan font-weight="700" fill="#17212B">22.2%</tspan> n=9</text>
+<text x="180" y="233" font-size="13" text-anchor="end" fill="#17212B">Algarve</text>
+<path d="M190 218 h71.1 a4 4 0 0 1 4 4 v12 a4 4 0 0 1 -4 4 h-71.1 z" fill="#FF5B14"><title>Algarve: 16.7% n=6</title></path>
+<text x="273.1" y="233" font-size="12" fill="#5B6670"><tspan font-weight="700" fill="#17212B">16.7%</tspan> n=6</text>
+<text x="180" y="261" font-size="13" text-anchor="end" fill="#17212B">Cape Verde</text>
+<path d="M190 246 h71.1 a4 4 0 0 1 4 4 v12 a4 4 0 0 1 -4 4 h-71.1 z" fill="#FF5B14"><title>Cape Verde: 16.7% n=6</title></path>
+<text x="273.1" y="261" font-size="12" fill="#5B6670"><tspan font-weight="700" fill="#17212B">16.7%</tspan> n=6</text>
+<text x="180" y="289" font-size="13" text-anchor="end" fill="#17212B">Costa Blanca</text>
+<path d="M190 274 h71.1 a4 4 0 0 1 4 4 v12 a4 4 0 0 1 -4 4 h-71.1 z" fill="#FF5B14"><title>Costa Blanca: 16.7% n=6</title></path>
+<text x="273.1" y="289" font-size="12" fill="#5B6670"><tspan font-weight="700" fill="#17212B">16.7%</tspan> n=6</text>
+<text x="180" y="317" font-size="13" text-anchor="end" fill="#17212B">Mauritius</text>
+<path d="M190 302 h71.1 a4 4 0 0 1 4 4 v12 a4 4 0 0 1 -4 4 h-71.1 z" fill="#FF5B14"><title>Mauritius: 16.7% n=6</title></path>
+<text x="273.1" y="317" font-size="12" fill="#5B6670"><tspan font-weight="700" fill="#17212B">16.7%</tspan> n=6</text>
+<text x="180" y="345" font-size="13" text-anchor="end" fill="#17212B">Portugal</text>
+<path d="M190 330 h71.1 a4 4 0 0 1 4 4 v12 a4 4 0 0 1 -4 4 h-71.1 z" fill="#FF5B14"><title>Portugal: 16.7% n=6</title></path>
+<text x="273.1" y="345" font-size="12" fill="#5B6670"><tspan font-weight="700" fill="#17212B">16.7%</tspan> n=6</text>
+<text x="180" y="373" font-size="13" text-anchor="end" fill="#17212B">Sri Lanka</text>
+<path d="M190 358 h71.1 a4 4 0 0 1 4 4 v12 a4 4 0 0 1 -4 4 h-71.1 z" fill="#FF5B14"><title>Sri Lanka: 16.7% n=6</title></path>
+<text x="273.1" y="373" font-size="12" fill="#5B6670"><tspan font-weight="700" fill="#17212B">16.7%</tspan> n=6</text>
+<text x="180" y="401" font-size="13" text-anchor="end" fill="#17212B">Antalya</text>
+<path d="M190 386 h60.3 a4 4 0 0 1 4 4 v12 a4 4 0 0 1 -4 4 h-60.3 z" fill="#FF5B14"><title>Antalya: 14.3% n=7</title></path>
+<text x="262.4" y="401" font-size="12" fill="#5B6670"><tspan font-weight="700" fill="#17212B">14.3%</tspan> n=7</text>
+<text x="180" y="429" font-size="13" text-anchor="end" fill="#17212B">Costa Rica</text>
+<path d="M190 414 h60.3 a4 4 0 0 1 4 4 v12 a4 4 0 0 1 -4 4 h-60.3 z" fill="#FF5B14"><title>Costa Rica: 14.3% n=7</title></path>
+<text x="262.4" y="429" font-size="12" fill="#5B6670"><tspan font-weight="700" fill="#17212B">14.3%</tspan> n=7</text>
+<text x="180" y="457" font-size="13" text-anchor="end" fill="#17212B">Manchester</text>
+<path d="M190 442 h60.3 a4 4 0 0 1 4 4 v12 a4 4 0 0 1 -4 4 h-60.3 z" fill="#FF5B14"><title>Manchester: 14.3% n=7</title></path>
+<text x="262.4" y="457" font-size="12" fill="#5B6670"><tspan font-weight="700" fill="#17212B">14.3%</tspan> n=7</text>
+<text x="180" y="485" font-size="13" text-anchor="end" fill="#17212B">Bali</text>
+<path d="M190 470 h59.4 a4 4 0 0 1 4 4 v12 a4 4 0 0 1 -4 4 h-59.4 z" fill="#FF5B14"><title>Bali: 14.1% n=64</title></path>
+<text x="261.4" y="485" font-size="12" fill="#5B6670"><tspan font-weight="700" fill="#17212B">14.1%</tspan> n=64</text>
+<text x="24" y="542" font-size="11" fill="#5B6670">Kolaboro, kolaboro.com. CC BY 4.0. Data: kolaboro.com/data/delay-index.json, November 2026.</text>
+</g></svg>

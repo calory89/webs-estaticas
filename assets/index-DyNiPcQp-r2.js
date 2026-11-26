@@ -1,0 +1,1 @@
+import{r as o,k as s}from"./vendor-react-CtrgGfNe-r2.js";import{u}from"./index-DpDuMN7b-r2.js";var i=s[" useId ".trim().toString()]||(()=>{}),c=0;function f(r){const[t,e]=o.useState(i());return u(()=>{e(a=>a??String(c++))},[r]),t?`radix-${t}`:""}export{f as u};

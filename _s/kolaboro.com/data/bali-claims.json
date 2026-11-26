@@ -1,0 +1,135 @@
+{
+ "updated": "2026-11-23",
+ "market": "Bali",
+ "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
+ "projects": 136,
+ "title": {
+  "leasehold": 45,
+  "known": 50
+ },
+ "lease": {
+  "known": 32,
+  "median": 30.0,
+  "min": 25,
+  "max": 50,
+  "hist": {
+   "under 30": 11,
+   "30 to 34": 17,
+   "35 to 39": 2,
+   "40 or more": 2
+  }
+ },
+ "extension_promised": {
+  "yes": 32,
+  "known": 35
+ },
+ "guaranteed_language": 12,
+ "permit_claims": 12,
+ "permit_numbers_published": 0,
+ "plans_published": 32,
+ "price_usd": {
+  "known": 112,
+  "median": 162000.0,
+  "min": 11000.0,
+  "max": 1050000.0
+ },
+ "yield": {
+  "known": 44,
+  "median": 12.0,
+  "max": 40
+ },
+ "completion": {
+  "2024": 1,
+  "2026": 48,
+  "2027": 42,
+  "2028": 9,
+  "2029": 1,
+  "unknown": 35
+ },
+ "runs": [
+  {
+   "date": "2026-11-04",
+   "mode": "ai",
+   "pages_ok": 678,
+   "pages_failed": 81,
+   "changes": 39
+  },
+  {
+   "date": "2026-11-04",
+   "mode": "ai",
+   "pages_ok": 656,
+   "pages_failed": 78,
+   "changes": 14
+  },
+  {
+   "date": "2026-11-05",
+   "mode": "ai",
+   "pages_ok": 543,
+   "pages_failed": 75,
+   "changes": 54
+  },
+  {
+   "date": "2026-11-05",
+   "mode": "ai",
+   "pages_ok": 645,
+   "pages_failed": 84,
+   "changes": 48
+  },
+  {
+   "date": "2026-11-05",
+   "mode": "ai",
+   "pages_ok": 72,
+   "pages_failed": 4,
+   "changes": 1
+  },
+  {
+   "date": "2026-11-05",
+   "mode": "ai",
+   "pages_ok": 803,
+   "pages_failed": 113,
+   "changes": 38
+  },
+  {
+   "date": "2026-11-05",
+   "mode": "ai",
+   "pages_ok": 8,
+   "pages_failed": 2,
+   "changes": 0
+  },
+  {
+   "date": "2026-11-06",
+   "mode": "ai",
+   "pages_ok": 160,
+   "pages_failed": 91,
+   "changes": 0
+  },
+  {
+   "date": "2026-11-07",
+   "mode": "ai",
+   "pages_ok": 33,
+   "pages_failed": 91,
+   "changes": 0
+  },
+  {
+   "date": "2026-11-15",
+   "mode": "ai",
+   "pages_ok": 36,
+   "pages_failed": 87,
+   "changes": 0
+  },
+  {
+   "date": "2026-11-20",
+   "mode": "ai",
+   "pages_ok": 28,
+   "pages_failed": 87,
+   "changes": 0
+  },
+  {
+   "date": "2026-11-23",
+   "mode": "seed",
+   "pages_ok": 0,
+   "pages_failed": 0,
+   "changes": 0
+  }
+ ]
+}

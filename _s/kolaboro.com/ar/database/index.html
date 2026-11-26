@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<script>(function(d){d.setAttribute('data-kdk','');try{var t=localStorage.getItem('kb-theme')}catch(e){}if(t==='dark'||(t!=='light'&&matchMedia('(prefers-color-scheme: dark)').matches))d.setAttribute('data-theme','dark')})(document.documentElement)</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>قاعدة بيانات Kolaboro: مشاريع على الخريطة حول العالم | Kolaboro</title>
+<meta name="description" content="كل مشروع على الخريطة تتابعه Kolaboro: ما ينشره المطوّر، وما يؤكده سجل رسمي أو مصدر مستقل، وما يتعارض معه. تُحدَّث كل أسبوع.">
+
+<link rel="canonical" href="https://kolaboro.com/ar/database/">
+<link rel="alternate" hreflang="en" href="https://kolaboro.com/database/">
+<link rel="alternate" hreflang="es" href="https://kolaboro.com/es/database/">
+<link rel="alternate" hreflang="de" href="https://kolaboro.com/de/database/">
+<link rel="alternate" hreflang="fr" href="https://kolaboro.com/fr/database/">
+<link rel="alternate" hreflang="ru" href="https://kolaboro.com/ru/database/">
+<link rel="alternate" hreflang="nl" href="https://kolaboro.com/nl/database/">
+<link rel="alternate" hreflang="ar" href="https://kolaboro.com/ar/database/">
+<link rel="alternate" hreflang="zh" href="https://kolaboro.com/zh/database/">
+<link rel="alternate" hreflang="x-default" href="https://kolaboro.com/database/"><style id="lsw-css">nav.links .lsw{position:relative}nav.links .lsw summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 6px;border-radius:8px;font-weight:700;color:var(--ink-2)}nav.links .lsw summary::-webkit-details-marker{display:none}nav.links .lsw summary svg{width:16px;height:16px;flex:none}nav.links .lsw summary::after{content:"";width:6px;height:6px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:translateY(-2px) rotate(45deg);margin-inline-start:2px}nav.links .lsw[open] summary::after{transform:translateY(2px) rotate(-135deg)}nav.links .lsw summary:hover{color:var(--ink)}nav.links .lsw summary:focus-visible,nav.links .lsw a:focus-visible{outline:3px solid var(--hivis);outline-offset:2px}nav.links .lsw .lsw-w{display:none}nav.links .lsw ul{position:absolute;top:100%;inset-inline-end:0;z-index:60;list-style:none;margin:6px 0 0;padding:6px;background:var(--card,#fff);border:1px solid var(--line);border-radius:12px;box-shadow:0 12px 30px rgba(23,33,43,.14);min-width:200px;display:grid;gap:2px}nav.links .lsw li{margin:0;padding:0}nav.links .lsw a{display:flex;justify-content:space-between;align-items:center;gap:14px;min-height:44px;padding:8px 12px;border:0;border-radius:8px;font-size:.92rem;font-weight:700;color:var(--ink);text-decoration:none}nav.links .lsw a:hover{background:var(--concrete);text-decoration:none}nav.links .lsw a span{color:var(--muted);font-weight:500}nav.links .lsw a[aria-current]{background:var(--concrete);box-shadow:inset 3px 0 0 var(--hivis)}@media (max-width:900px){nav.links .lsw{border-bottom:1px solid var(--line)}nav.links .lsw summary{display:flex;width:100%;padding:14px 0;font-size:1.05rem;border-radius:0}nav.links .lsw summary::after{margin-inline-start:auto}nav.links .lsw .lsw-w{display:inline}nav.links .lsw ul{position:static;margin:0 0 14px;padding:0;border:0;box-shadow:none;background:none;min-width:0;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}nav.links .lsw a{display:flex;justify-content:center;padding:8px 0;border:1px solid var(--line);background:var(--card,#fff);font-size:.95rem}nav.links .lsw a span{display:none}}@media (min-width:901px) and (max-width:1100px){nav.links .lsw summary svg{display:none}nav.links .lsw summary{padding:0 2px}}</style>
+<link rel="icon" href="/k/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#17212B">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kolaboro">
+<meta property="og:title" content="قاعدة بيانات Kolaboro: مشاريع على الخريطة حول العالم | Kolaboro">
+<meta property="og:description" content="كل مشروع على الخريطة تتابعه Kolaboro: ما ينشره المطوّر، وما يؤكده سجل رسمي أو مصدر مستقل، وما يتعارض معه. تُحدَّث كل أسبوع.">
+<meta property="og:locale" content="ar_AR">
+<meta property="og:url" content="https://kolaboro.com/ar/database/">
+<meta property="og:image" content="https://kolaboro.com/k/og.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://kolaboro.com/k/og.png">
+<link rel="preload" href="/k/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/k/site.css?v=4d436e54fe">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Organization", "@id": "https://kolaboro.com/#org", "name": "Kolaboro", "url": "https://kolaboro.com/", "logo": "https://kolaboro.com/k/favicon.svg", "description": "فحوص مستقلة لمن يشتري عقارًا على المخطط في الخارج: ادعاءات المطوّرين مقارنةً بالسجلات الرسمية. الزيارات الميدانية من وكلاء المشترين المحليين متاحة عند الطلب: نؤكد وكيلًا محليًا في موقعك قبل أن تدفع."}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "من يدفع لـ Kolaboro؟", "acceptedAnswer": {"@type": "Answer", "text": "يدفع المشترون مقابل الفحوصات والمتابعة. المطوّرون لا يدفعون لـ Kolaboro أبدًا: الأدلة وحدها تحدد كل Score. والوكلاء لا يأخذون أموالًا من المطوّرين أبدًا."}}, {"@type": "Question", "name": "هل Kolaboro محامٍ أو كاتب عدل؟", "acceptedAnswer": {"@type": "Answer", "text": "لا. يتحقق Kolaboro من الحقائق في المستندات والسجلات الرسمية ويخبرك بما وجده؛ أما الفحص في الموقع عبر وكلاء محليين فهو متاح عند الطلب: نؤكد وكيلًا محليًا في موقعك قبل أن تدفع. للاستشارة القانونية والتوقيع، استعن بمحامٍ أو كاتب عدل مستقل؛ ويمكننا أن نخبرك بما تسألهم عنه."}}, {"@type": "Question", "name": "هل تحتفظون بأموالي؟", "acceptedAnswer": {"@type": "Answer", "text": "ليس بعد: لا نقدّم حساب ضمان اليوم، وحساب الضمان المرتبط بالمراحل مع شركاء مرخَّصين ضمن خطتنا. الخطة أن يؤكد وكيل محلي كل مرحلة في الموقع قبل أن تدفع؛ هذه الزيارات متاحة عند الطلب: نؤكد وكيلًا محليًا في موقعك قبل أن تدفع."}}, {"@type": "Question", "name": "أين تعملون؟", "acceptedAnswer": {"@type": "Answer", "text": "في أي بلد. تتم المراجعة المكتبية والاستعلام في السجلات الرسمية عبر الإنترنت لمشاريع البيع على المخطط في أي مكان. أما الزيارات الميدانية من وكيل محلي في بلد المشروع فهي متاحة عند الطلب: عند الحجز نؤكد وكيلًا لموقعك قبل بدء أي عمل، وإذا لم نتمكن من قبول حالتك نعيد إليك المبلغ كاملًا."}}, {"@type": "Question", "name": "كيف تقررون بين «ادفع» و«انتظر»؟", "acceptedAnswer": {"@type": "Answer", "text": "تسعة فحوصات، من سند ملكية الأرض إلى واقعية الوعود. أي مؤشر خطر في سند الملكية أو التصاريح أو سير البناء يعني «انتظر» حتى تتم معالجته، وكل نتيجة مرتبطة بدليلها. المنهجية كاملة منشورة للعموم."}}, {"@type": "Question", "name": "هل يستطيع مطوّر التأثير في تقرير؟", "acceptedAnswer": {"@type": "Answer", "text": "بالأدلة فقط. يمكن للمطوّرين إرسال المستندات والرد، لكنهم لا يدفعون لنا أبدًا. وحين يتعذر التحقق من أمر ما، يذكر التقرير ذلك بدلًا من التخمين."}}, {"@type": "Question", "name": "وماذا لو كنت قد اشتريت بالفعل؟", "acceptedAnswer": {"@type": "Answer", "text": "حينها تكون المتابعة أهم ما يكون. يمكننا اليوم التحقق من السجلات والتصاريح وسجل المطوّر قبل دفعتك التالية؛ أما فحص سير البناء في الموقع فهو متاح عند الطلب: نؤكد وكيلًا محليًا في موقعك قبل أن تدفع."}}], "inLanguage": "ar"}]</script>
+<script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('consent','default',{analytics_storage:'granted',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',region:["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]});try{if(localStorage.getItem('kb-consent')==='yes')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}</script><script>(window.kbLate||function(f){addEventListener("load",function(){setTimeout(f,1500)})})(function(){var s=document.createElement("script");s.async=1;s.src="https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V";document.head.appendChild(s)})</script><script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-FJKJE77K4V');gtag('config','G-H5TGZJ1KNG');</script>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset","license":"https://creativecommons.org/licenses/by/4.0/", "name": "قاعدة بيانات Kolaboro للإفصاح عن المشاريع على الخريطة", "description": "كل مشروع على الخريطة تتابعه Kolaboro: ما ينشره المطوّر، وما يؤكده سجل رسمي أو مصدر مستقل، وما يتعارض معه. تُحدَّث كل أسبوع.", "url": "https://kolaboro.com/database/", "creator": {"@type": "Organization", "@id": "https://kolaboro.com/#org", "name": "Kolaboro", "url": "https://kolaboro.com/"}, "isAccessibleForFree": true, "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://kolaboro.com/data/bali-cases.json"}], "temporalCoverage": "2026", "spatialCoverage": "Worldwide", "inLanguage": "ar"}</script>
+<link rel="alternate" type="application/rss+xml" title="Kolaboro: ما أطلقناه" href="/feed.xml">
+<style>h1,h2,h3,.lead{overflow-wrap:break-word}@media (max-width:820px){.fgrid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}footer li a{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto}@media (min-width:1041px){.links a:not(.btn){white-space:nowrap}}@media (min-width:901px) and (max-width:1100px){.links{gap:14px}}@media (min-width:901px) and (max-width:1040px){.links a:not(.btn){font-size:.82rem;line-height:1.25}}body{font-family:Archivo,"Noto Sans Arabic","Noto Naskh Arabic","Segoe UI",Tahoma,"Geeza Pro",system-ui,sans-serif}*{letter-spacing:0!important}h1,h2,h3,h4{line-height:1.3!important}.hero h1{font-size:clamp(2.3rem,4.6vw,4.4rem)}.lead,p,li{line-height:1.75}input[type=email],input[name=email],input[inputmode=url],#hero-url{direction:ltr;text-align:right}input[type=email]::placeholder,#hero-url::placeholder{direction:rtl}@media (min-width:521px){.seg span{border-right:0;border-left:2px solid var(--ink)}.seg label:last-child span{border-left:0}}.asks li{border-left:0;border-right:4px solid var(--hi,#FF5A1F);padding:6px 16px 6px 0;font-style:normal}.prod-bar span{margin-left:0;margin-right:10px}.r28-strip em{margin-left:0;margin-right:6px}.r28-dot{margin-right:0;margin-left:8px}em,i,.fd-x{font-style:normal}.prose th,.prose td{text-align:right}.ask-chip{text-align:right}.db-t th,.db-t td{text-align:left}.db-t th:first-child,.db-t td:first-child{text-align:right}.db-leg span::before{margin-right:0;margin-left:6px}.db-bar b{text-align:left}.tile li::before{transform:translateY(-2px)}</style>
+<script src="/k/kbl-b6181e15.js?v=b6181e15"></script>
+
+
+
+
+
+
+
+
+
+<style data-l10n-nav>@media (min-width:901px) and (max-width:1500px){.links{gap:16px}.links>a:not(.btn){font-size:.88rem}}@media (min-width:901px) and (max-width:1240px){.links>a[href$="/about/"]{display:none}}@media (min-width:901px) and (max-width:1100px){.links>a[href$="/cases/"]{display:none}.links{gap:12px}}[dir=rtl] .hp{left:auto!important;right:-5000px!important}</style>
+</head>
+<body>
+<a class="skip" href="#main">انتقل إلى المحتوى</a>
+<div class="ship" dir="ltr" role="region" aria-label="تحديثات يومية"><a class="ship-l" href="/changelog/"><i aria-hidden="true"></i><span>تحديثات يومية</span></a><div class="ship-v" lang="en" dir="ltr"><div class="ship-t" id="shipT"><div class="ship-g"><span class="si"><em class="k-live">مباشر</em>قاعدة بيانات مفتوحة، تُحدَّث كل يوم</span></div><div class="ship-g" aria-hidden="true"><span class="si"><b>Nov 1</b><em class="k-data">DATA</em>All 646 projects re-verified: 6,419 developer claims tested against registers, courts and press</span><span class="si"><b>Nov 1</b><em class="k-data">DATA</em>Malaysia TEDUH and Philippines DHSUD licence checks: expired licences and approved delays found</span><span class="si"><b>Nov 1</b><em class="k-data">DATA</em>Thailand ONEP register: 2 condos found selling before environmental approval</span><span class="si"><b>Nov 1</b><em class="k-data">DATA</em>Mexico PROFECO contract register checks: one sales registration belonged to a laundry</span><span class="si"><b>Nov 1</b><em class="k-data">DATA</em>Abu Dhabi ADREC inspections and RAK RERA permit list added: % built straight from the regulator</span><span class="si"><b>Nov 1</b><em class="k-feature">SHIPPED</em>New stage filter: completed but still selling</span><span class="si"><b>Nov 1</b><em class="k-feature">SHIPPED</em>Public database page: verification levels, disclosure distribution, every market</span><span class="si"><b>Nov 1</b><em class="k-data">DATA</em>+212 projects in one day, round 3: USA, Caribbean, Gulf, Africa, Japan, Australia</span><span class="si"><b>Nov 1</b><em class="k-feature">SHIPPED</em>Stage on every case: off-plan or under construction</span><span class="si"><b>Oct 31</b><em class="k-feature">SHIPPED</em>Verification level per check on every case card: registry, independent, developer, contradicted</span></div></div></div><a class="ship-r" href="/changelog/">التحديثات &larr;</a></div>
+<header class="nav" id="top">
+  <div class="wrap nav-in">
+    <a class="brand" href="/ar/" aria-label="الصفحة الرئيسية لـ Kolaboro"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 4v24M8 16 23 6.5M8 16l15 9.5" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><circle cx="24" cy="6" r="3.4" fill="currentColor"/><circle cx="24" cy="26" r="3.4" fill="currentColor"/><circle cx="8" cy="16" r="4.2" fill="#FF5B14"/></svg>kolaboro</a>
+    <div class="nav-right">
+      <a class="btn btn-hi btn-sm nav-cta-m" href="/ar/check/" data-ev="cta_nav_mobile_check">افحص مشروعًا</a>
+      <button class="burger" aria-label="القائمة" aria-expanded="false" aria-controls="menu"><svg viewBox="0 0 20 20"><path d="M2 5h16M2 10h16M2 15h16" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></button>
+    </div>
+    <nav class="links" id="menu" aria-label="القائمة الرئيسية">
+      <form class="nsr" role="search" action="/ar/search/" method="get" data-hs><label class="k-vh" for="nsr-q">ابحث عن مشاريع ومطورين وأسواق</label><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="m13 13 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><input id="nsr-q" name="q" type="search" placeholder="ابحث عن مشاريع ومطورين وأسواق" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search"></form><a href="/ar/#how">كيف نعمل</a><a href="/ar/database/">قاعدة البيانات</a><a href="/ar/pricing/">الأسعار</a><a href="/ar/cases/">حالات مباشرة</a><a href="/ar/about/">من نحن</a><details class="lsw"><summary aria-label="اللغة: AR (العربية)"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="8" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M2 10h16M10 2c2.4 2.3 3.4 5 3.4 8s-1 5.7-3.4 8M10 2C7.6 4.3 6.6 7 6.6 10s1 5.7 3.4 8" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span class="lsw-w">اللغة:</span> AR</summary><ul><li><a href="/database/" hreflang="en" lang="en" dir="ltr">EN <span>English</span></a></li><li><a href="/es/database/" hreflang="es" lang="es" dir="ltr">ES <span>Español</span></a></li><li><a href="/de/database/" hreflang="de" lang="de" dir="ltr">DE <span>Deutsch</span></a></li><li><a href="/fr/database/" hreflang="fr" lang="fr" dir="ltr">FR <span>Français</span></a></li><li><a href="/ru/database/" hreflang="ru" lang="ru" dir="ltr">RU <span>Русский</span></a></li><li><a href="/nl/database/" hreflang="nl" lang="nl" dir="ltr">NL <span>Nederlands</span></a></li><li><a href="/ar/database/" hreflang="ar" lang="ar" aria-current="page" dir="ltr">AR <span dir="rtl">العربية</span></a></li><li><a href="/zh/database/" hreflang="zh" lang="zh" dir="ltr">ZH <span>简体中文</span></a></li></ul></details>
+      <a class="btn btn-hi btn-sm" href="/ar/check/" data-ev="cta_nav_check">افحص مشروعًا</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<style>
+.db-hero{padding:clamp(32px,5vw,72px) 0 20px}.db-hero h1{font-size:clamp(2.2rem,5.4vw,4.6rem);line-height:.98;letter-spacing:-.03em;max-width:16ch}
+.db-n{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line,#D5D3CC);border:1px solid var(--line,#D5D3CC);border-radius:16px;overflow:hidden;margin-top:26px}
+.db-n div{background:var(--paper,#fff);padding:18px}.db-n b{display:block;font-size:clamp(1.6rem,3.4vw,2.4rem);letter-spacing:-.02em;line-height:1}.db-n span{display:block;margin-top:6px;color:var(--t-mut,#4A5560);font-size:.88rem}
+@media(max-width:760px){.db-n{grid-template-columns:repeat(2,1fr)}}
+.db-sec{padding:clamp(36px,5vw,64px) 0;border-top:1px solid var(--line,#D5D3CC)}.db-sec h2{font-size:clamp(1.5rem,3vw,2.2rem);max-width:28ch}.db-sec .lead{max-width:62ch}
+.db-stack{display:flex;height:44px;border-radius:10px;overflow:hidden;margin:18px 0 10px;background:var(--t-bg,#ECEAE4)}.db-stack i{display:block;height:100%}
+.db-leg{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.88rem;color:var(--t-ink2,#3D4852)}.db-leg span::before{content:"";display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px;background:var(--c)}
+.db-bars{display:grid;gap:10px;margin-top:18px}.db-bar{display:grid;grid-template-columns:minmax(150px,240px) 1fr 64px;gap:12px;align-items:center;font-size:.92rem}.db-bar .t{height:14px;background:var(--t-bg,#ECEAE4);border-radius:7px;overflow:hidden}.db-bar .t i{display:block;height:100%;background:#17212B;border-radius:7px}.db-bar b{text-align:right}
+@media(max-width:560px){.db-bar{grid-template-columns:1fr 54px}.db-bar .t{grid-column:1/-1;order:3}}
+.db-dist{display:flex;align-items:flex-end;gap:10px;height:160px;margin-top:20px}.db-dist div{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;height:100%;font-size:.82rem;color:var(--t-ink2,#3D4852)}.db-dist i{display:block;width:100%;background:#FF5B14;border-radius:6px 6px 0 0;min-height:2px}.db-dist div.full i{background:#1E8A5A}.db-dist b{font-size:.9rem;color:var(--t-ink,#17212B);margin-bottom:4px}
+.db-t{width:100%;border-collapse:collapse;margin-top:18px;font-size:.9rem}.db-t th,.db-t td{padding:9px 8px;border-bottom:1px solid var(--line,#D5D3CC);text-align:right}.db-t th:first-child,.db-t td:first-child{text-align:left}.db-t th{font-size:.78rem;text-transform:uppercase;letter-spacing:.04em;color:var(--t-mut,#4A5560);cursor:pointer}
+.db-tw{overflow-x:auto}
+.db-def{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:18px}.db-def div{background:var(--paper,#fff);border:1px solid var(--line,#D5D3CC);border-radius:12px;padding:14px}.db-def b{display:block;margin-bottom:4px}
+</style>
+<section class="db-hero"><div class="wrap"><p class="crumb"><a href="/ar/">Kolaboro</a> / قاعدة البيانات</p>
+<h1>قاعدة بيانات المشاريع على الخريطة التي لم يمتلكها المشترون من قبل</h1>
+<p class="lead" style="margin-top:16px;max-width:60ch">كل مشروع يتابعه وكيل البحث لدينا، مفحوص وفق النقاط الست نفسها: ما ينشره المطوّر، وما يؤكده سجل رسمي أو مصدر مستقل، وما يتعارض معه. تُحدَّث كل أسبوع. لكل مشروع صفحته الخاصة باسمه وبحقائق موثّقة المصدر فقط. يمكن للمطوّر الرد على تلك الصفحة، وننشر الردود الموثّقة بعد مراجعتها. تبقى مشاريع سومبا مجهولة الاسم لأن أحد المؤسسين يطوّر مشروعًا هناك (<a href="/independence/">الاستقلالية</a>).</p>
+<div class="db-n" id="dbn">
+ <div><b id="n-projects">4,618</b><span>مشروع على الخريطة قيد المتابعة</span></div>
+ <div><b id="n-geo">195 · 94</b><span>سوق · دولة</span></div>
+ <div><b id="n-points">112,755</b><span>نقطة بيانات مسجّلة</span></div>
+ <div><b id="n-sources">11,021</b><span>صفحة مصدر فُتحت واستُشهد بها</span></div>
+ <div><b id="n-claims">28,909</b><span>ادعاء من المطوّرين خضع للفحص</span></div>
+ <div><b id="n-contra">1,370</b><span>ادعاء يتعارض معه مصدر آخر</span></div>
+ <div><b id="n-full">70</b><span>تنشر الأمور الست التي يحتاجها المشتري</span></div>
+ <div><b id="n-flags">78</b><span>لديها مشكلات في الأخبار أو المحاكم أو لدى الجهات الرقابية</span></div>
+</div>
+<p style="margin-top:18px"><a class="btn btn-hi" href="/ar/cases/">تصفّح المشاريع</a> <a class="btn btn-line" href="/ar/check/#analyze">افحص مشروعك</a><a class="btn btn-line" href="/report/state-of-off-plan-2026/">اقرأ تقرير 2026</a><a class="btn btn-line" href="/transparency-index/">مؤشر الشفافية</a></p>
+</div></section>
+
+<section class="db-sec ask" id="ask"><div class="wrap"><p class="eyebrow">جديد</p><h2>اسأل قاعدة البيانات</h2><p class="lead" style="max-width:640px">اسأل بكلمات بسيطة. تأتي الإجابات من البيانات المنشورة فقط وتضع روابط المشاريع التي استندت إليها.</p>
+<form id="askf" class="ask-form" role="search"><label for="askq" class="sr-only">سؤالك</label><input id="askq" name="q" maxlength="300" placeholder="ما الأسواق التي تحمي عربون المشترين أكثر من غيرها؟" autocomplete="off"><button class="btn btn-hi" type="submit">اسأل</button></form>
+<p class="ask-ex"><button type="button" class="ask-chip">ما الأسواق التي تحمي عربون المشترين أكثر من غيرها؟</button><button type="button" class="ask-chip">كم تتأخر المشاريع في بالي؟</button><button type="button" class="ask-chip">مشاريع قيد الإنشاء في دبي مع تأكيد 4 نقاط أو أكثر</button><button type="button" class="ask-chip">أين تتعارض المصادر مع الادعاءات أكثر من غيرها؟</button></p>
+<div id="asko" lang="en" dir="ltr" class="ask-out" aria-live="polite" hidden></div></div></section>
+<section class="db-sec"><div class="wrap">
+<h2>كم مما يقوله المطوّرون مؤكَّد</h2>
+<p class="lead">كل نقطة من النقاط الست في <span id="n-deep">4,618</span> ملفات معمّقة، حسب أقوى مصدر وجدناه.</p>
+<div class="db-stack" id="dbstack" role="img" aria-label="نسبة النقاط حسب مستوى التحقق"></div>
+<div class="db-leg" id="dbleg"></div>
+</div></section>
+
+<section class="db-sec"><div class="wrap">
+<h2>ما ينشره المطوّرون</h2>
+<p class="lead">نسبة المشاريع المتابَعة التي تنشر كل أمر يحتاجه المشتري الحريص.</p>
+<div class="db-bars" id="dbbars"></div>
+</div></section>
+
+<section class="db-sec"><div class="wrap">
+<h2>كم من النقاط الست ينشر كل مشروع</h2>
+<p class="lead">تنشر معظم المشاريع نقطتين أو ثلاثاً. بالأخضر: النقاط الست كلها ولا مشكلات في التقارير العامة.</p>
+<div class="db-dist" id="dbdist" role="img" aria-label="المشاريع حسب عدد النقاط المنشورة"></div>
+</div></section>
+
+<section class="db-sec"><div class="wrap">
+<h2>حسب السوق</h2>
+<p class="lead">اضغط على عمود للترتيب.</p>
+<div class="db-tw" tabindex="0" role="region" aria-label="جدول الأسواق"><table class="db-t" id="dbt"><thead><tr><th data-k="m">السوق</th><th data-k="n">المشاريع</th><th data-k="avg">متوسط النقاط</th><th data-k="permit">رقم الترخيص</th><th data-k="escrow">العربون محمي</th><th data-k="conf">متوسط المؤكَّد</th><th data-k="full">100%</th></tr></thead><tbody></tbody></table></div><p><button type="button" class="btn btn-line" id="dbmore" hidden>اعرض كل الأسواق</button></p>
+</div></section>
+
+<section class="db-sec"><div class="wrap">
+<h2>كيف تقرأ البيانات</h2>
+<div class="db-def">
+ <div><b>سجل رسمي</b>مؤكَّد من مصدر رسمي: دائرة أراضٍ أو سجل تراخيص أو قائمة رخص أو سجل شركات.</div>
+ <div><b>مؤكَّد</b>مؤكَّد من مصدر مستقل مثل إشعار من جهة رقابية أو سجل محكمة أو إفصاح في البورصة أو صحيفة كبرى.</div>
+ <div><b>غير مؤكَّد</b>لا يقول ذلك إلا المطوّر أو وكلاء مبيعاته أو مواقع الإعلانات.</div>
+ <div><b>متعارض</b>المصادر لا تتفق، أو يقول مصدر رسمي شيئاً مختلفاً عمّا يقوله المطوّر.</div>
+</div>
+<p class="muted" style="margin-top:16px;font-size:.88rem">نشر مستند لا يثبت أنه أصلي؛ ولهذا يلزم التحقق في السجل، إلى جانب الفحص في الموقع عبر وكلاء محليين، وهو متاح عند الطلب: نؤكد وكيلًا محليًا في موقعك قبل أن تدفع. لا تُدرج المشكلات إلا من الأخبار والمحاكم والجهات الرقابية. يمكن للمطوّرين الرد على أي مشروع. البيانات: <a href="/data/bali-cases.json">JSON</a> · <a href="/docs/api/">API</a> · <a href="/ar/how-we-score/">المنهجية</a> · <a href="/corrections/">التصحيحات</a>.</p>
+</div></section>
+<section class="db-sec" id="machine"><div class="wrap"><p class="eyebrow">مباشر</p><h2>الآلة التي تقف خلف البيانات</h2><p class="lead" style="max-width:640px">البرمجيات تقرأ وتفحص وتراقب كل يوم. والبشر يقررون ما يُنشر عن أي مشروع.</p><ol class="pl" id="pipe-live" lang="en" dir="ltr"></ol><p class="muted" style="font-size:.85rem">كل ما تطلقه موجود في <a href="/changelog/">سجل التحديثات</a> و<a href="/feed.xml">خلاصة RSS</a>. البيانات متاحة لإعادة الاستخدام مجاناً عبر <a href="/docs/api/#open">واجهة API المفتوحة</a>.</p></div></section>
+
+<script>
+(function(){
+  var $ = function(i){ return document.getElementById(i); }, fmt = function(n){ return (n || 0).toLocaleString('en'); };
+  var LV = [['registry',KBL.lv[0],'#17212B'],['independent',KBL.lv[1],'#1E8A5A'],['developer',KBL.lv[2],'#B9B4A8'],['contradicted',KBL.lv[3],'#C9461A'],['none',KBL.lv[4],'#E7E4DC']];
+  var CK = [['permit',KBL.ck[0]],['escrow',KBL.ck[1]],['progress',KBL.ck[2]],['plans',KBL.ck[3]],['record',KBL.ck[4]],['returns_ok',KBL.ck[5]]];
+  function ok(c, k){ var x = c.checks || {}; return k === 'permit' ? x.permit === 2 : k === 'escrow' ? x.escrow === true : k === 'progress' ? x.progress != null : !!x[k]; }
+  function full(c){ return c.max === 6 && c.score === 6 && !(c.flags || []).length; }
+  fetch('/data/bali-cases.json?t=' + Math.floor(Date.now() / 6e5)).then(function(r){ return r.json(); }).then(function(d){
+    var C = d.cases || [], db = d.db || {};
+    if (db.projects) { $('n-projects').textContent = fmt(db.projects); $('n-geo').textContent = db.markets + ' · ' + db.countries; $('n-points').textContent = fmt(db.data_points); $('n-sources').textContent = fmt(db.sources);
+      $('n-claims').textContent = fmt(db.claims_total); $('n-contra').textContent = fmt((db.claims || {}).contradicted); $('n-full').textContent = fmt(db.all_six_public); $('n-flags').textContent = fmt(db.with_flags); $('n-deep').textContent = fmt(db.deep_profiles); }
+    var lv = db.checks_by_level || {}, tot = 0; LV.forEach(function(l){ tot += lv[l[0]] || 0; });
+    if (tot) { $('dbstack').innerHTML = LV.map(function(l){ return '<i style="width:' + ((lv[l[0]] || 0) / tot * 100) + '%;background:' + l[2] + '" title="' + l[1] + ': ' + (lv[l[0]] || 0) + '"></i>'; }).join('');
+      $('dbleg').innerHTML = LV.map(function(l){ return '<span style="--c:' + l[2] + '">' + l[1] + ' <b>' + Math.round((lv[l[0]] || 0) / tot * 100) + '%</b></span>'; }).join(''); }
+    $('dbbars').innerHTML = CK.map(function(k){ var n = C.filter(function(c){ return ok(c, k[0]); }).length, p = C.length ? Math.round(n / C.length * 100) : 0; return '<div class="db-bar"><span>' + k[1] + '</span><span class="t"><i style="width:' + p + '%"></i></span><b>' + p + '%</b></div>'; }).join('');
+    var dist = [0,0,0,0,0,0,0], fl = 0; C.forEach(function(c){ if (c.max === 6) dist[c.score || 0]++; if (full(c)) fl++; }); var mx = Math.max.apply(null, dist) || 1;
+    $('dbdist').innerHTML = dist.map(function(n, i){ return '<div class="' + (i === 6 ? 'full' : '') + '"><b>' + n + '</b><i style="height:' + (n / mx * 100) + '%"></i>' + KBL.of6(i) + '</div>'; }).join('');
+    var M = {}; C.forEach(function(c){ var m = M[c.market] = M[c.market] || { m: c.market, n: 0, s: 0, permit: 0, escrow: 0, cs: 0, cn: 0, full: 0 }; m.n++; m.s += c.score || 0; if (ok(c, 'permit')) m.permit++; if (ok(c, 'escrow')) m.escrow++; if (c.vscore != null) { m.cs += c.vscore; m.cn++; } if (full(c)) m.full++; });
+    var lim = 12; var rows = Object.keys(M).map(function(k){ var m = M[k]; m.avg = m.s / m.n; m.conf = m.cn ? m.cs / m.cn : -1; m.permitP = m.permit / m.n; m.escrowP = m.escrow / m.n; return m; }), key = 'n', dir = -1;
+    function draw(){ rows.sort(function(a, b){ var x = key === 'permit' ? a.permitP - b.permitP : key === 'escrow' ? a.escrowP - b.escrowP : key === 'm' ? (a.m < b.m ? -1 : 1) : a[key] - b[key]; return x * dir; });
+      $('dbt').querySelector('tbody').innerHTML = rows.slice(0, lim).map(function(m){ return '<tr><td>' + m.m + '</td><td>' + m.n + '</td><td>' + m.avg.toFixed(1) + '</td><td>' + Math.round(m.permitP * 100) + '%</td><td>' + Math.round(m.escrowP * 100) + '%</td><td>' + (m.conf < 0 ? '-' : m.conf.toFixed(1)) + '</td><td>' + (m.full || '') + '</td></tr>'; }).join(''); var mb = $('dbmore'); if (mb) { mb.hidden = rows.length <= lim; mb.textContent = KBL.more(rows.length); } }
+    $('dbt').querySelector('thead').onclick = function(e){ var th = e.target.closest('th'); if (!th) return; var k = th.dataset.k; dir = key === k ? -dir : (k === 'm' ? 1 : -1); key = k; draw(); };
+    $('dbmore').onclick = function(){ lim = 1000; draw(); };
+    draw();
+  }).catch(function(){});
+})();
+</script>
+<section class="sec l10n-note" data-l10n style="padding:18px 0 28px"><div class="wrap"><p class="muted" style="font-size:.86rem;margin:0;max-width:72ch">هذه الصفحة ترجمة <a href="/database/" hreflang="en">للصفحة الإنجليزية</a>. عند وجود اختلاف، تكون الصفحة الإنجليزية هي المرجع. الروابط إلى الصفحات التي لم تُترجم بعد تفتح النسخة الإنجليزية.</p></div></section>
+</main>
+<div class="mcta"><a class="btn btn-hi" href="/ar/#start" data-role="buyer" data-ev="cta_sticky">احمِ عملية شرائك</a></div>
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <a class="brand" href="/ar/" aria-label="الصفحة الرئيسية لـ Kolaboro" style="font-size:1.15rem"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 4v24M8 16 23 6.5M8 16l15 9.5" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><circle cx="24" cy="6" r="3.4" fill="currentColor"/><circle cx="24" cy="26" r="3.4" fill="currentColor"/><circle cx="8" cy="16" r="4.2" fill="#FF5B14"/></svg>kolaboro</a>
+        <p style="margin-top:12px;max-width:34ch">فحوصات عقارية مستقلة لمن يشترون في الخارج. نستقطب أول وكلائنا المحليين؛ وبحث مكتبي في <span data-db="markets">195</span> سوقًا.</p>
+        <form class="news" data-news novalidate><label for="nl-email">ملاحظات بحثية شهرية: ما يعد به المطوّرون، وما الذي تغيّر.</label>
+          <div class="qform light" style="margin-top:10px"><input id="nl-email" name="email" type="email" placeholder="بريدك الإلكتروني" autocomplete="email"><button class="btn btn-hi btn-sm" type="submit">اشترك</button></div>
+          <p class="nmsg" aria-live="polite"></p></form>
+      </div>
+      <div><h2 class="fh">المشترون</h2><ul>
+        <li><a href="/ar/check/">افحص مشروعاً</a></li>
+        <li><a href="/ar/pricing/">الأسعار</a></li>
+        <li><a href="/report/sample/">نموذج تقرير</a></li>
+        <li><a href="/tools/market-match/">السوق المناسب</a></li>
+        <li><a href="/tools/payment-risk/">مخاطر خطة الدفع</a></li>
+        <li><a href="/tools/build-cost/">سعر أقل من تكلفة البناء</a></li>
+        <li><a href="/tools/late-handover/">التسليم المتأخر: العقد والقانون</a></li>
+        <li><a href="/ask-developer/">اسأل المطوّر</a></li>
+        <li><a href="/tools/insolvency-check/">فحص الإعسار</a></li>
+        <li><a href="/tools/agent-check/">هل هذا الوكيل مرخّص؟</a></li>
+        <li><a href="/compare/">قارن المشاريع</a></li>
+        <li><a href="/ar/checklist/">قائمة التحقق قبل التوقيع</a></li>
+        <li><a href="/destinations/">الوجهات</a></li>
+      </ul></div>
+      <div><h2 class="fh">البيانات</h2><ul>
+        <li><a href="/ar/database/">قاعدة البيانات</a></li>
+        <li><a href="/ar/cases/">الحالات الجارية</a></li>
+        <li><a href="/m/">الأسواق</a></li>
+        <li><a href="/transparency-index/">مؤشر الشفافية</a></li>
+        <li><a href="/report/state-of-off-plan-2026/">تقرير المشاريع على الخريطة 2026</a></li>
+        <li><a href="/satellite/">المراقبة بالأقمار الصناعية</a></li>
+        <li><a href="/registers/">السجلات الرسمية</a></li>
+        <li><a href="/docs/api/#open">واجهة برمجة البيانات المفتوحة</a></li>
+        <li><a href="/sql/">SQL في متصفحك</a></li>
+        <li><a href="/tools/">أدوات المشترين</a></li>
+        <li><a href="/ask/">اسأل Kolaboro</a></li>
+        <li><a href="/extension/">إضافة Chrome</a></li>
+        <li><a href="/graph/">شبكة الشركات</a></li>
+        <li><a href="/graph/global/">شبكة الشركات العالمية</a></li>
+        <li><a href="/index/prices/">مؤشر الأسعار</a></li>
+        <li><a href="/index/delays/">مؤشر التأخير</a></li>
+        <li><a href="/promises/">متتبّع الوعود</a></li>
+        <li><a href="/search-alerts/">تنبيهات البحث</a></li>
+        <li><a href="/hazards/">المخاطر الطبيعية</a></li>
+        <li><a href="/satellite/night/">أضواء الليل والمواقع المتوقفة</a></li>
+        <li><a href="/visual/">تغييرات المواقع</a></li>
+      </ul></div>
+      <div><h2 class="fh">الثقة</h2><ul>
+        <li><a href="/trust/">مركز الثقة</a></li>
+        <li><a href="/ar/how-we-score/">كيف نقيّم</a></li>
+        <li><a href="/standard/">معيار الإفصاح</a></li>
+        <li><a href="/corrections/">التصحيحات</a></li>
+        <li><a href="/data-policy/">كيف نجمع البيانات</a></li>
+        <li><a href="/verify/">تحقق من الأدلة</a></li>
+        <li><a href="/court-file/">حزمة الأدلة</a></li>
+        <li><a href="/independence/">الاستقلالية</a></li>
+        <li><a href="/security/">الأمان وبياناتك</a></li>
+        <li><a href="/technology/">التقنية</a></li>
+        <li><a href="/status/">حالة النظام</a></li><li><a href="/log/">السجل العام</a></li><li><a href="/engineering/">الهندسة</a></li>
+        <li><a href="/metrics/">مؤشرات مفتوحة</a></li>
+        <li><a href="/benchmark/">اختبار جودة المراجعة</a></li>
+        <li><a href="/log/witnesses/">شهود السجل</a></li>
+      </ul></div>
+      <div><h2 class="fh">Kolaboro</h2><ul>
+        <li><a href="/developers/">للمطوّرين</a></li>
+        <li><a href="/agents/">كن وكيلًا</a></li>
+        <li><a href="/lawyers/">للمحامين</a></li>
+        <li><a href="/ar/about/">من نحن</a></li>
+        <li><a href="/investors/">المستثمرون</a></li>
+        <li><a href="/roadmap/">خطة العمل</a></li>
+        <li><a href="/changelog/">سجل التحديثات</a></li>
+        <li><a href="/api-pilot/">واجهة برمجة للشركاء</a></li>
+        <li><a href="/docs/partners/">بيانات المخاطر للبنوك</a></li>
+        <li><a href="/login/">دخول العملاء</a></li>
+        <li><a href="/legal/privacy/">الخصوصية</a></li>
+        <li><a href="/legal/terms/">الشروط</a></li>
+      </ul></div>
+    </div>
+    <p class="fine">© 2026 Kolaboro، تديرها Equinox Investment Group LLC، 30 N Gould St Ste N, Sheridan, WY 82801, USA. يقدّم وكلاء Kolaboro تحققًا ومعلومات مستقلة، وليس استشارات قانونية أو ضريبية أو مالية. التقارير آراء مبنية على الأدلة المذكورة فيها.</p>
+  </div>
+</footer>
+<script src="/k/ask.js?v=544be9f9c8" defer></script><script src="/k/pipeline.js?v=e0202822da" defer></script><script src="/k/site.js?v=3222000ecc" defer></script>
+<script src="/k/kbl-obs.js?v=97b04ffe"></script>
+<script>(function(){var _c=window.clarity;try{Object.defineProperty(window,'clarity',{configurable:true,get:function(){return _c},set:function(v){if(typeof v==='function'&&!v.q)v.q=[];_c=v;}})}catch(e){}})();</script>
+<div class="cc" id="cc" role="dialog" aria-label="ملفات تعريف الارتباط" hidden><p>نستخدم ملفات تعريف ارتباط تحليلية لتحسين Kolaboro. <a href="/legal/privacy/">الخصوصية</a></p><div><button class="btn btn-line btn-sm" data-cc="no">الضرورية فقط</button><button class="btn btn-hi btn-sm" data-cc="yes">موافق</button></div></div>
+<script>(function(){var EU=["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"];var st=null;try{st=localStorage;}catch(e){}var c=st&&st.getItem('kb-consent');if(c)return;
+fetch('/api/geo').then(function(r){return r.json();}).then(function(g){if(!g||EU.indexOf(g.country)<0)return;var b=document.getElementById('cc');if(!b)return;b.hidden=false;
+b.addEventListener('click',function(e){var v=e.target.getAttribute('data-cc');if(!v)return;try{st&&st.setItem('kb-consent',v);}catch(x){}
+if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted'});if(window.clarity)clarity('consent');}b.hidden=true;});}).catch(function(){});})();</script>
+<script>
+(function(){
+  var els = document.querySelectorAll('.price'); if (!els.length || !window.fetch) return;
+  var C = { US:['USD','US$',1.08], CA:['CAD','C$',1.5], AU:['AUD','A$',1.65], NZ:['NZD','NZ$',1.8], GB:['GBP','£',.86], SG:['SGD','S$',1.45], AE:['AED','AED ',3.97], CH:['CHF','CHF ',.95] };
+  fetch('/api/geo').then(function(r){ return r.json(); }).then(function(g){
+    var c = C[g && g.country]; if (!c) return;
+    els.forEach(function(el){
+      if (!/€|EUR|يورو|欧元/.test(el.textContent)) return; var m = el.textContent.replace(/[.,\s\u00a0\u202f]/g,'').match(/(\d+)/); if (!m || el.querySelector('.fx')) return;
+      var v = +m[1] * c[2], step = v > 1000 ? 50 : 5, n = Math.round(v / step) * step;
+      el.insertAdjacentHTML('beforeend', '<small class="fx">≈ ' + c[1] + n.toLocaleString('en-US') + ' · ' + KBL.fx + '</small>');
+    });
+  }).catch(function(){});
+})();
+</script>
+<script>
+addEventListener('load', function(){ setTimeout(function(){   // n27u: read the page height after load, not during parsing (it forced a full layout, the longest task of the page)
+  if (document.body.scrollHeight < window.innerHeight * 3) return;
+  var b = document.createElement('button'); b.className = 'totop'; b.type = 'button'; b.setAttribute('aria-label', KBL.totop); b.textContent = '↑';
+  document.body.appendChild(b);
+  b.addEventListener('click', function(){ window.scrollTo({ top: 0, behavior: 'smooth' }); });
+  window.addEventListener('scroll', function(){ b.classList.toggle('on', window.scrollY > window.innerHeight * 1.5); }, { passive: true });
+}, 0); });
+</script>
+</body>
+</html>

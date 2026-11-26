@@ -216,6 +216,12 @@ var createParseClassName = (config) => {
 			else if (currentCharacter === "]") bracketDepth--;
 			else if (currentCharacter === "(") parenDepth++;
 			else if (currentCharacter === ")") parenDepth--;
+			else if (currentCharacter === "\\") index++;
+			else if (currentCharacter === "\"" || currentCharacter === "'") while (++index < len) {
+				const quotedCharacter = className[index];
+				if (quotedCharacter === "\\") index++;
+				else if (quotedCharacter === currentCharacter) break;
+			}
 		}
 		const baseClassNameWithImportantModifier = modifiers.length === 0 ? className : className.slice(modifierStart);
 		let baseClassName = baseClassNameWithImportantModifier;
@@ -227,7 +233,8 @@ var createParseClassName = (config) => {
 			baseClassName = baseClassNameWithImportantModifier.slice(1);
 			hasImportantModifier = true;
 		}
-		const maybePostfixModifierPosition = postfixModifierPosition && postfixModifierPosition > modifierStart ? postfixModifierPosition - modifierStart : void 0;
+		const importantModifierOffset = hasImportantModifier && baseClassNameWithImportantModifier.startsWith(IMPORTANT_MODIFIER) ? 1 : 0;
+		const maybePostfixModifierPosition = postfixModifierPosition && postfixModifierPosition > modifierStart ? postfixModifierPosition - modifierStart - importantModifierOffset : void 0;
 		return createResultObject(modifiers, hasImportantModifier, baseClassName, maybePostfixModifierPosition);
 	};
 	if (prefix) {
@@ -413,8 +420,9 @@ var arbitraryValueRegex = /^\[(?:(\w[\w-]*):)?(.+)\]$/i;
 var arbitraryVariableRegex = /^\((?:(\w[\w-]*):)?(.+)\)$/i;
 var fractionRegex = /^\d+(?:\.\d+)?\/\d+(?:\.\d+)?$/;
 var tshirtUnitRegex = /^(\d+(\.\d+)?)?(xs|sm|md|lg|xl)$/;
-var lengthUnitRegex = /\d+(%|px|r?em|[sdl]?v([hwib]|min|max)|pt|pc|in|cm|mm|cap|ch|ex|r?lh|cq(w|h|i|b|min|max))|\b(calc|min|max|clamp)\(.+\)|^0$/;
-var colorFunctionRegex = /^(rgba?|hsla?|hwb|(ok)?(lab|lch)|color-mix|color|light-dark)\(.+\)$/;
+var lengthUnitRegex = /\d+(%|px|r?em|[sdl]?v([hwib]|min|max)|pt|pc|in|cm|mm|Q|cap|ch|ex|r?lh|cq(w|h|i|b|min|max))|\b(calc|min|max|clamp)\(.+\)|^--spacing\(.+\)|^0$/;
+var colorFunctionRegex = /^(rgba?|hsla?|hwb|(ok)?(lab|lch)|color-mix|color|light-dark|contrast-color|device-cmyk|--alpha)\(.+\)$/i;
+var maskPositionRegex = /^(?:_*[+-]?(?:\d|\.\d)|[\w-]+\(|_*(?:inherit|initial|revert(?:-layer)?|unset)_*$)/i;
 var shadowRegex = /^(inset_)?-?((\d+)?\.?(\d+)[a-z]+|0)_-?((\d+)?\.?(\d+)[a-z]+|0)/;
 var imageRegex = /^(url|image|image-set|cross-fade|element|(repeating-)?(linear|radial|conic)-gradient)\(.+\)$/;
 var isFraction = (value) => fractionRegex.test(value);
@@ -424,6 +432,7 @@ var isPercent = (value) => value.endsWith("%") && isNumber(value.slice(0, -1));
 var isTshirtSize = (value) => tshirtUnitRegex.test(value);
 var isAny = () => true;
 var isLengthOnly = (value) => lengthUnitRegex.test(value) && !colorFunctionRegex.test(value);
+var isMaskPosition = (value) => maskPositionRegex.test(value) && !colorFunctionRegex.test(value);
 var isNever = () => false;
 var isShadow = (value) => shadowRegex.test(value);
 var isImage = (value) => imageRegex.test(value);
@@ -432,6 +441,7 @@ var isNamedContainerQuery = (value) => value.startsWith("@container") && (value[
 var isArbitrarySize = (value) => getIsArbitraryValue(value, isLabelSize, isNever);
 var isArbitraryValue = (value) => arbitraryValueRegex.test(value);
 var isArbitraryLength = (value) => getIsArbitraryValue(value, isLabelLength, isLengthOnly);
+var isArbitraryMaskPosition = (value) => getIsArbitraryValue(value, isLabelMaskPosition, isMaskPosition);
 var isArbitraryNumber = (value) => getIsArbitraryValue(value, isLabelNumber, isNumber);
 var isArbitraryWeight = (value) => getIsArbitraryValue(value, isLabelWeight, isAny);
 var isArbitraryFamilyName = (value) => getIsArbitraryValue(value, isLabelFamilyName, isNever);
@@ -440,6 +450,7 @@ var isArbitraryImage = (value) => getIsArbitraryValue(value, isLabelImage, isIma
 var isArbitraryShadow = (value) => getIsArbitraryValue(value, isLabelShadow, isShadow);
 var isArbitraryVariable = (value) => arbitraryVariableRegex.test(value);
 var isArbitraryVariableLength = (value) => getIsArbitraryVariable(value, isLabelLength);
+var isArbitraryVariableMaskPosition = (value) => getIsArbitraryVariable(value, isLabelMaskPosition, true);
 var isArbitraryVariableFamilyName = (value) => getIsArbitraryVariable(value, isLabelFamilyName);
 var isArbitraryVariablePosition = (value) => getIsArbitraryVariable(value, isLabelPosition);
 var isArbitraryVariableSize = (value) => getIsArbitraryVariable(value, isLabelSize);
@@ -466,6 +477,7 @@ var isLabelPosition = (label) => label === "position" || label === "percentage";
 var isLabelImage = (label) => label === "image" || label === "url";
 var isLabelSize = (label) => label === "length" || label === "size" || label === "bg-size";
 var isLabelLength = (label) => label === "length";
+var isLabelMaskPosition = (label) => label !== "color";
 var isLabelNumber = (label) => label === "number";
 var isLabelFamilyName = (label) => label === "family-name";
 var isLabelWeight = (label) => label === "number" || label === "weight";
@@ -720,8 +732,8 @@ var getDefaultConfig = () => {
 	const scaleMaskImagePosition = () => [
 		isNumber,
 		isPercent,
-		isArbitraryVariablePosition,
-		isArbitraryPosition
+		isArbitraryVariableMaskPosition,
+		isArbitraryMaskPosition
 	];
 	const scaleBlur = () => [
 		"",
@@ -922,7 +934,12 @@ var getDefaultConfig = () => {
 			* Screen Reader Only
 			* @see https://tailwindcss.com/docs/display#screen-reader-only
 			*/
-			sr: ["sr-only", "not-sr-only"],
+			sr: ["sr-only"],
+			/**
+			* Not Screen Reader Only
+			* @see https://tailwindcss.com/docs/display#screen-reader-only
+			*/
+			"not-sr": ["not-sr-only"],
 			/**
 			* Floats
 			* @see https://tailwindcss.com/docs/float
@@ -1138,6 +1155,7 @@ var getDefaultConfig = () => {
 				"auto",
 				"initial",
 				"none",
+				isArbitraryVariable,
 				isArbitraryValue
 			] }],
 			/**
@@ -1629,7 +1647,7 @@ var getDefaultConfig = () => {
 				isNumber,
 				"none",
 				isArbitraryVariable,
-				isArbitraryNumber
+				isArbitraryValue
 			] }],
 			/**
 			* Line Height
@@ -1711,7 +1729,8 @@ var getDefaultConfig = () => {
 				isNumber,
 				"from-font",
 				"auto",
-				isArbitraryVariable,
+				isArbitraryVariableLength,
+				isArbitraryVariablePosition,
 				isArbitraryLength
 			] }],
 			/**
@@ -2384,7 +2403,7 @@ var getDefaultConfig = () => {
 			"mask-image-radial-to-pos": [{ "mask-radial-to": scaleMaskImagePosition() }],
 			"mask-image-radial-from-color": [{ "mask-radial-from": scaleColor() }],
 			"mask-image-radial-to-color": [{ "mask-radial-to": scaleColor() }],
-			"mask-image-radial-shape": [{ "mask-radial": ["circle", "ellipse"] }],
+			"mask-image-radial-shape": [{ mask: ["circle", "ellipse"] }],
 			"mask-image-radial-size": [{ "mask-radial": [{
 				closest: ["side", "corner"],
 				farthest: ["side", "corner"]
@@ -3235,6 +3254,9 @@ var getDefaultConfig = () => {
 				"shrink"
 			],
 			gap: ["gap-x", "gap-y"],
+			"place-content": ["align-content", "justify-content"],
+			"place-items": ["align-items", "justify-items"],
+			"place-self": ["align-self", "justify-self"],
 			p: [
 				"px",
 				"py",
@@ -3284,7 +3306,6 @@ var getDefaultConfig = () => {
 				"mb"
 			],
 			size: ["w", "h"],
-			"font-size": ["leading"],
 			"fvn-normal": [
 				"fvn-ordinal",
 				"fvn-slashed-zero",
@@ -3298,6 +3319,40 @@ var getDefaultConfig = () => {
 			"fvn-spacing": ["fvn-normal"],
 			"fvn-fraction": ["fvn-normal"],
 			"line-clamp": ["display", "overflow"],
+			sr: [
+				"not-sr",
+				"position",
+				"size",
+				"w",
+				"h",
+				"p",
+				"px",
+				"py",
+				"ps",
+				"pe",
+				"pbs",
+				"pbe",
+				"pt",
+				"pr",
+				"pb",
+				"pl",
+				"m",
+				"mx",
+				"my",
+				"ms",
+				"me",
+				"mbs",
+				"mbe",
+				"mt",
+				"mr",
+				"mb",
+				"ml",
+				"overflow",
+				"overflow-x",
+				"overflow-y",
+				"whitespace"
+			],
+			"not-sr": ["sr"],
 			rounded: [
 				"rounded-s",
 				"rounded-e",
@@ -3369,6 +3424,14 @@ var getDefaultConfig = () => {
 				"border-color-t",
 				"border-color-b"
 			],
+			"mask-image-x-from-pos": ["mask-image-r-from-pos", "mask-image-l-from-pos"],
+			"mask-image-x-to-pos": ["mask-image-r-to-pos", "mask-image-l-to-pos"],
+			"mask-image-x-from-color": ["mask-image-r-from-color", "mask-image-l-from-color"],
+			"mask-image-x-to-color": ["mask-image-r-to-color", "mask-image-l-to-color"],
+			"mask-image-y-from-pos": ["mask-image-t-from-pos", "mask-image-b-from-pos"],
+			"mask-image-y-to-pos": ["mask-image-t-to-pos", "mask-image-b-to-pos"],
+			"mask-image-y-from-color": ["mask-image-t-from-color", "mask-image-b-from-color"],
+			"mask-image-y-to-color": ["mask-image-t-to-color", "mask-image-b-to-color"],
 			translate: [
 				"translate-x",
 				"translate-y",

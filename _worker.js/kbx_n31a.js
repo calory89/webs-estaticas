@@ -1,0 +1,231 @@
+// comments: _notes/kolaboro-worker-comments.txt
+import { TB } from './kbx_strings.js';
+let T = null;
+async function loadT(env) {
+if (T) return T;
+try { const r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/n31a-i18n.json')); if (r.ok) T = await r.json(); } catch (e) {}
+if (!T) { try { const r = await fetch(ORIGIN + '/data/n31a-i18n.json', { cf: { cacheTtl: 300 } }); if (r.ok) T = await r.json(); } catch (e) {} }
+return T;
+}
+const CTA = {"en":["Check this project","€490 · written report usually within 7 days"],"es":["Comprobar este proyecto","490 € · informe escrito, normalmente en 7 días"],"de":["Dieses Projekt prüfen","490 € · schriftlicher Bericht meist innerhalb von 7 Tagen"],"fr":["Vérifier ce projet","490 € · rapport écrit, en général sous 7 jours"],"nl":["Dit project controleren","€ 490 · schriftelijk rapport meestal binnen 7 dagen"],"ru":["Проверить этот проект","490 € · письменный отчёт обычно за 7 дней"],"zh":["核查这个项目","490 欧元 · 书面报告通常 7 天内完成"],"ar":["افحص هذا المشروع","490 يورو · تقرير مكتوب عادةً خلال 7 أيام"]};
+const ORIGIN = 'https://kolaboro.com';
+const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
+const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' };
+const LP = '(?:(es|de|fr|nl|ru|zh|ar)\\/)?';
+const SR_SLUGS = new Set(['crown-penang']);
+const RX = {
+fn: new RegExp('^\\/' + LP + 'funnel\\/?$'), rq: new RegExp('^\\/' + LP + 'request-project\\/?$'), bz: new RegExp('^\\/' + LP + 'business\\/?$'),
+mo: new RegExp('^\\/' + LP + 'money\\/?$'), as: new RegExp('^\\/' + LP + 'already-signed\\/?$'), sr: new RegExp('^\\/' + LP + 'report\\/sample\\/([a-z0-9-]{1,90})\\/?$')
+};
+export const PATHS = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:funnel|request-project|business|money|already-signed|report\/sample\/[a-z0-9-]{1,90})\/?$|^\/api\/open\/(?:fn|funnel|sv)$/;
+const pre = l => l === 'en' ? '' : '/' + l;
+const LOCAL_PATHS = new Set(['/projects/', '/tools/bulk-check/', '/tools/widget/', '/tools/contract-reader/', '/api/docs/', '/pricing/', '/buyer-protection-law/', '/check/']);
+const lk = (l, p) => (LOCAL_PATHS.has(p) ? pre(l) : '') + p;
+const esc = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const fill = (s, v) => String(s).replace(/\{(\w+)\}/g, (m, k) => v[k] != null ? v[k] : m);
+const nf = (n, l) => { try { return new Intl.NumberFormat(LOC[l] || 'en-GB', { numberingSystem: 'latn' }).format(n); } catch (e) { return String(n); } };
+const fdt = (d, l) => { if (!d) return ''; try { return new Intl.DateTimeFormat(LOC[l] || 'en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC', numberingSystem: 'latn' }).format(new Date(String(d).slice(0, 10) + 'T12:00:00Z')); } catch (e) { return d; } };
+const day = o => new Date(Date.now() - (o || 0) * 864e5).toISOString().slice(0, 10);
+const dirA = l => l === 'ar' ? ' dir="rtl"' : '';
+const bdi = (l, h) => l === 'ar' ? '<bdi>' + h + '</bdi>' : h;
+export const STEPS = ['project_cta', 'check_start', 'check_done', 'lead', 'book', 'pay_click', 'pay_return', 'request'];
+export const MISS = ['permit', 'date', 'price', 'dev', 'site', 'nothing'];
+const OK_STEP = new Set(STEPS.concat(MISS.map(m => 'miss_' + m)));
+const CK = (d, k) => ORIGIN + '/__n31/v1/' + d + '/' + k;
+const PV = (d, k) => ORIGIN + '/__usage/v1/' + d + '/' + k;
+const SVK = id => ORIGIN + '/__n31/sv/' + id;
+const BOT = /bot|crawl|spider|slurp|lighthouse|headless|preview|fetch|curl|wget|python|httpclient|axios|GPT|Claude|anthropic|Perplexity|Bytespider|facebookexternalhit|meta-extern/i;
+async function get(k) { try { const r = await caches.default.match(k); return r ? (+(await r.text()) || 0) : 0; } catch (e) { return 0; } }
+async function inc(k) { try { const n = await get(k); await caches.default.put(k, new Response(String(n + 1), { headers: { 'cache-control': 'max-age=3024000', 'content-type': 'text/plain' } })); } catch (e) {} }
+const RL = new Map();
+function allow(req, max) {
+const ip = req.headers.get('cf-connecting-ip') || 'x', m = Math.floor(Date.now() / 60000), k = ip + '|' + m, n = (RL.get(k) || 0) + 1;
+RL.set(k, n); if (RL.size > 4000) for (const key of RL.keys()) if (!key.endsWith('|' + m)) RL.delete(key);
+return n <= max;
+}
+const jout = (o, st, extra) => new Response(JSON.stringify(o, null, 1), { status: st || 200, headers: Object.assign({ 'content-type': 'application/json; charset=utf-8', 'access-control-allow-origin': '*', 'cache-control': 'no-store', 'x-content-type-options': 'nosniff' }, extra || {}) });
+function ourOrigin(req) { const o = req.headers.get('origin') || req.headers.get('referer') || ''; return !o || /^https:\/\/(www\.)?kolaboro\.com(\/|$)/.test(o); }
+async function funnel(days) {
+days = days || 28;
+const ds = Array.from({ length: days }, (_, i) => day(i));
+const sum = async (key, names) => { const o = {}; await Promise.all(names.map(async n => { const v = await Promise.all(ds.map(d => get(key(d, n)))); o[n] = v.reduce((a, b) => a + b, 0); })); return o; };
+const [pv, st] = await Promise.all([sum(PV, ['project', 'check', 'pricing']), sum(CK, [...OK_STEP])]);
+const order = [['project', pv.project], ['project_cta', st.project_cta], ['check', pv.check], ['check_start', st.check_start], ['check_done', st.check_done], ['lead', st.lead], ['book', st.book], ['pay_click', st.pay_click], ['pay_return', st.pay_return]];
+return { page: ORIGIN + '/funnel/', at: new Date().toISOString(), days, licence: TB.kbx_n31a__t.k0,
+note: TB.kbx_n31a__s.k0,
+steps: order.map(([k, n]) => ({ step: k, count: n })), pricing_page_views: pv.pricing, project_requests: st.request,
+missing_answers: Object.fromEntries(MISS.map(m => [m, st['miss_' + m] || 0])) };
+}
+const page = (html, lang, extra) => new Response(html, { headers: Object.assign({ 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=300', 'content-language': lang }, extra || {}) });
+const hero = (lang, h1, lead, crumb) => '<section class="phero"' + dirA(lang) + TB.kbx_n31a__t.k1 + (pre(lang) || '') + '/">Kolaboro</a> / ' + esc(crumb || h1) + '</p><h1>' + esc(h1) + '</h1><p class="lead">' + esc(lead) + '</p></div></section>';
+async function build(pg, lang, shell, shellPath) {
+const n = await import('./kbx_named.js');
+return n.assemble(pg, lang, await shell(pre(lang) + shellPath));
+}
+const ld = (name, url, desc) => ({ '@context': 'https://schema.org', '@type': 'WebPage', name, url, description: desc, inLanguage: LOC.en, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' }, publisher: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' } });
+function pgObj(lang, path, title, desc, body, lastmod) {
+const canon = ORIGIN + pre(lang) + path, o = ld(title, canon, desc); o.inLanguage = lang;
+return { title: title + ' | Kolaboro', desc: String(desc).slice(0, 155), canon, body: TB.kbx_n31a__s.CSS + body, ld: o, lastmod: lastmod || '2026-11-18', alt: l => ORIGIN + pre(l) + path };
+}
+async function fnPage(lang, shell) {
+const L = T[lang], f = await funnel(28);
+let prev = null;
+const rows = f.steps.map(s => { const pct = prev ? Math.round(s.count / prev * 1000) / 10 : null; const r = '<tr><td>' + esc(L.fn_steps[s.step]) + '</td><td class="n">' + nf(s.count, lang) + '</td><td class="n">' + (pct == null || !prev ? '' : nf(pct, lang) + ' %') + '</td></tr>'; prev = s.count || null; return r; }).join('');
+const sv = MISS.map(m => '<tr><td>' + esc(L.sv_o[m]) + '</td><td class="n">' + nf(f.missing_answers[m], lang) + '</td></tr>').join('');
+const body = hero(lang, L.fn_h1, L.fn_lead, L.fn_title) + '<div class="wrap n31"' + dirA(lang) + '>' +
+TB.kbx_n31a__t.k2 + L.fn_th.map((h, i) => '<th scope="col"' + (i ? ' style="text-align:end"' : '') + '>' + esc(h) + '</th>').join('') + '</tr></thead><tbody>' + rows + '</tbody></table></div>' +
+'<p class="n31-note">' + esc(L.fn_note) + '</p>' +
+'<h2>' + esc(L.fn_sv_h) + TB.kbx_n31a__t.k3 + esc(L.fn_sv_th[0]) + TB.kbx_n31a__t.k4 + esc(L.fn_sv_th[1]) + '</th></tr></thead><tbody>' + sv + '</tbody></table></div>' +
+'<p>' + esc(fill(L.fn_rq, { n: nf(f.project_requests, lang) })) + ' <a href="' + pre(lang) + '/request-project/">' + esc(L.rq_title) + '</a></p>' +
+TB.kbx_n31a__t.k5 + esc(L.fn_json) + '</a> · <a href="/metrics/">' + esc(L.more) + ': /metrics/</a></p></div>';
+return page(await build(pgObj(lang, '/funnel/', L.fn_title, L.fn_lead, body, day()), lang, shell, '/about/'), lang, { 'cache-control': 'public, max-age=120' });
+}
+async function rqPage(lang, shell) {
+const L = T[lang];
+const msg = { q: L.rq_e_q, em: L.rq_e_em, ok: L.rq_e_ok, dup: L.rq_e_dup, net: L.rq_e_net, sending: L.rq_sending, alt: L.rq_alt, ck: lk(lang, '/check/') };
+const body = hero(lang, L.rq_h1, L.rq_lead, L.rq_title) + '<div class="wrap n31"' + dirA(lang) + '>' +
+TB.kbx_n31a__t.k6 + esc(JSON.stringify(msg)) + '">' +
+'<label>' + esc(L.rq_q) + TB.kbx_n31a__t.k7 +
+'<label>' + esc(L.rq_pl) + TB.kbx_n31a__t.k8 + esc(L.rq_pl_ph) + '"></label>' +
+'<label>' + esc(L.rq_em) + TB.kbx_n31a__t.k9 +
+TB.kbx_n31a__s.k1 +
+TB.kbx_n31a__t.k10 + esc(L.rq_ok) + ' <a href="/legal/privacy/">' + esc(L.rq_priv) + '</a>.</span></label>' +
+TB.kbx_n31a__t.k11 + esc(L.rq_send) + '</button></p></form>' +
+TB.kbx_n31a__t.k12 + esc(L.rq_done) + TB.kbx_n31a__t.k13 +
+TB.kbx_n31a__s.k2 +
+TB.kbx_n31a__s.k3 +
+TB.kbx_n31a__s.k4 +
+TB.kbx_n31a__t.k14 +
+"fetch('" + TB.kbx_n31a__t.SB + "',{method:'POST',headers:{apikey:'" + TB.kbx_n31a__s.AK + "',Authorization:'Bearer " + TB.kbx_n31a__s.AK + TB.kbx_n31a__s.k5 +
+TB.kbx_n31a__s.k6 +
+TB.kbx_n31a__s.k7 +
+TB.kbx_n31a__s.k8;
+return page(await build(pgObj(lang, '/request-project/', L.rq_title, L.rq_lead, body), lang, shell, '/about/'), lang, { 'x-robots-tag': 'noindex, follow' });
+}
+function bzPage(lang, shell, env) {
+const L = T[lang], vol = offers(env).filter(o => o.k === 'volume' || o.k === 'datalicence');
+const body = hero(lang, L.bz_h1, L.bz_lead, L.bz_title) + '<div class="wrap n31"' + dirA(lang) + '>' +
+'<h2>' + esc(L.bz_free_h) + ' <span class="n31-k ok">' + esc(L.today) + '</span></h2><ul class="n31-l">' + L.bz_free.map(([p, t, d]) => '<li><b><a href="' + lk(lang, p) + '">' + esc(t) + '</a></b>' + esc(d) + '</li>').join('') + '</ul>' +
+'<h2>' + esc(L.bz_paid_h) + '</h2><p>' + esc(L.bz_paid) + '</p>' + (vol.length ? offerCards(vol, lang) : '') +
+TB.kbx_n31a__t.k15 + encodeURIComponent('Several checks') + '">' + esc(L.bz_cta) + '</a> <a class="btn btn-line" href="' + lk(lang, '/pricing/') + '">' + esc(L.mo_links.split(':')[0]) + '</a></p>' +
+'<h2>' + esc(L.bz_how_h) + '</h2><ul>' + L.bz_how.map(x => '<li>' + esc(x) + '</li>').join('') + '</ul>' +
+TB.kbx_n31a__s.k9 + lk(lang, '/api/docs/') + '">API</a></p></div>';
+return build(pgObj(lang, '/business/', L.bz_title, L.bz_lead, body), lang, shell, '/pricing/').then(h => page(h, lang));
+}
+function moPage(lang, shell) {
+const L = T[lang], lnk = L.mo_links.split(' · ');
+const a = (h, t) => '<a href="' + h + '">' + esc(t) + '</a>';
+const lines = lnk.map((s, i) => { const k = s.indexOf(':'); return esc(s.slice(0, k + 1)) + ' ' + a(i ? lk(lang, '/buyer-protection-law/') : lk(lang, '/pricing/'), s.slice(k + 1).trim()); }).join(' · ');
+const body = hero(lang, L.mo_h1, L.mo_lead, L.mo_title) + '<div class="wrap n31"' + dirA(lang) + '><ul class="n31-l">' + L.mo_items.map(([t, d]) => '<li><b>' + esc(t) + '</b>' + esc(d) + '</li>').join('') + '</ul><p>' + lines + '</p>' +
+TB.kbx_n31a__t.k16 + esc(L.rq_priv) + '</a></p></div>';
+return build(pgObj(lang, '/money/', L.mo_title, L.mo_lead, body), lang, shell, '/pricing/').then(h => page(h, lang));
+}
+function asPage(lang, shell) {
+const L = T[lang];
+const body = hero(lang, L.as_h1, L.as_lead, L.as_title) + '<div class="wrap n31"' + dirA(lang) + '><ol class="n31-l">' + L.as_steps.map(([p, t, d]) => '<li><b><a href="' + lk(lang, p) + '">' + esc(t) + '</a></b>' + esc(d) + '</li>').join('') + '</ol>' +
+'<h2>' + esc(L.as_law_h) + '</h2><p>' + esc(L.as_law) + '</p><p class="n31-note">' + esc(L.as_mon) + ' <a href="' + lk(lang, '/pricing/') + '">' + esc(L.more) + '</a></p></div>';
+return build(pgObj(lang, '/already-signed/', L.as_title, L.as_lead, body), lang, shell, '/about/').then(h => page(h, lang));
+}
+const ST_CLS = { verified: 'ok', contradicted: 'bad', unverified: 'no' };
+async function srPage(lang, shell, env, slug) {
+if (!SR_SLUGS.has(slug)) return null;
+const n = await import('./kbx_named.js'), ix = await n.data(env), x = ix.bySlug.get(slug);
+if (!x) return null;
+const L = T[lang], host = u => { try { return new URL(u).hostname.replace(/^www\./, ''); } catch (e) { return ''; } };
+const src = u => /^https?:\/\//.test(u || '') ? '<a href="' + esc(u) + '" rel="noopener nofollow" target="_blank"><bdi>' + esc(host(u)) + '</bdi></a>' : '';
+const cl = Array.isArray(x.cl) ? x.cl : [], ev = x.ev || {}, rv = x.rvw || {}, rw = x.rw || {};
+const grp = [['returns_ok', /return|yield|rental|short-term|short-let/i], ['land', /freehold|leasehold|land title|land (is )?charged|title deed|\bland\b/i], ['record', /delivered|completed projects|track record|\bJV\b|joint venture|listed on|subsidiary/i],
+['permit', /permit|licen|APDL|RERA|DLD|PBG|IMB/i], ['handover', /possession|completion|handover|extension/i], ['progress', /progress|built|construction/i], ['escrow', /escrow|account|HDA|deposit/i], ['plans', /unit|size|sq ft|m2|floor plan|floors/i]];
+const by = {}; for (const c of cl) { const g = grp.find(z => z[1].test(c[0])); const k = g ? g[0] : 'record'; (by[k] = by[k] || []).push(c); }
+const order = ['permit', 'record', 'handover', 'progress', 'escrow', 'plans', 'returns_ok'];
+const sec = k => {
+    const items = (by[k] || []).map(c => '<li>' + bdi(lang, esc(c[0])) + ' <span class="n31-k ' + (ST_CLS[c[1]] || 'no') + '">' + esc(L.sr_st[c[1]] || c[1]) + '</span> <span class="n31-src">' + esc(L.src) + ': ' + src(c[3]) + '</span></li>').join('');
+    const e = ev[k] ? '<p>' + bdi(lang, esc(ev[k])) + '</p>' : '';
+    if (!items && !e) return '';
+    return '<div class="n31-ck"><h3>' + esc(L.sr_checks[k]) + '</h3>' + e + (items ? '<ul>' + items + '</ul>' : '') + '</div>';
+  };
+const not = (k, t) => { const items = (by[k] || []).map(c => '<li>' + bdi(lang, esc(c[0])) + ' <span class="n31-k ' + (ST_CLS[c[1]] || 'no') + '">' + esc(L.sr_st[c[1]] || c[1]) + '</span> <span class="n31-src">' + esc(L.src) + ': ' + src(c[3]) + '</span></li>').join('');
+return '<div class="n31-ck"><h3>' + esc(L.sr_checks[k]) + '</h3>' + (items ? '<ul>' + items + '</ul>' : '') + '<p><span class="n31-k no">' + esc(L.sr_st.unverified) + '</span> ' + esc(t) + '</p></div>'; };
+const lastRead = rv.d || rw.checked || x.ad;
+const body = hero(lang, fill(L.sr_h1, { n: x.n }), L.sr_lead, fill(L.sr_title, { n: x.n })) + '<div class="wrap n31"' + dirA(lang) + '>' +
+'<p class="n31-note">' + esc(fill(L.sr_meta, { id: x.id, dv: x.dv, ar: x.ar || x.mk, d: fdt(lastRead, lang) })) + '</p>' +
+(rw.register ? '<p>' + esc(fill(L.sr_rv, { d: fdt(rv.d || rw.checked, lang), r: rw.register })) + (rw.detail ? ' ' + bdi(lang, esc(rw.detail)) : '') + '</p>' : '') +
+order.map(sec).join('') + not('land', L.sr_land) + not('contract', L.sr_contract) + not('site', L.sr_site) +
+TB.kbx_n31a__t.k17 + (lang === 'en' ? '/book/' : lk(lang, '/pricing/')) + '" data-ev="sr_book">' + esc(L.sr_cta) + '</a> <a class="btn btn-line" href="' + pre(lang) + '/projects/' + x.s + '/">' + esc(L.sr_pdf) + '</a></p>' +
+TB.kbx_n31a__t.k18 + esc(L.sr_fict) + '</a></p></div>';
+const pg = pgObj(lang, '/report/sample/' + x.s + '/', fill(L.sr_title, { n: x.n }), L.sr_lead, body, lastRead);
+pg.ld.about = { '@type': 'Place', name: x.n, url: ORIGIN + pre(lang) + '/projects/' + x.s + '/' };
+pg.ld.isBasedOn = (x.src || []).slice(0, 12);
+return page(await build(pg, lang, shell, '/about/'), lang);
+}
+export function ctaHtml(lang, slug) {
+const L = CTA[lang] || CTA.en, href = (lang === 'en' ? '/book/' : pre(lang) + '/pricing/') + '?p=' + slug + '#kreq';
+return TB.kbx_n31a__t.k19 + href + '" data-ev="n31_cta"><span>' + esc(L[0]) + '</span><small>' + esc(L[1]) + '</small></a></div>' +
+TB.kbx_n31a__s.k10 +
+'<script src="/k/n31.js?v=' + N31V + '" defer></script>';
+}
+export const N31V = 'a3';
+const OFFERS = [
+{ k: 'report', item: 7, price: '€29', t: 'Paid PDF report of one project', d: 'Every fact we hold, its source and date, what is missing, and what to ask the developer. Desk research only.' },
+{ k: 'guarantee', item: 23, price: null, t: 'Refund for what we cannot check', d: 'If one of the nine checks cannot be done, that part of the price is refunded.' },
+{ k: 'ab', item: 39, price: '€290 / €490 / €690', t: 'Check price test', d: 'Three prices shown at random to new visitors; every visitor sees one price for 30 days.' },
+{ k: 'ask', item: 40, price: '€49', t: 'Ask the developer through us', d: 'We send your questions to the developer and publish the dated reply, or the dated absence of one.' },
+{ k: 'gift', item: 43, price: '€490', t: 'Gift a check', d: 'A check for a family member who is buying abroad.' },
+{ k: 'compare3', item: 44, price: '€1,190', t: 'Check 3 projects', d: 'Three projects checked side by side before you choose.' },
+{ k: 'overdue', item: 45, price: '€9 a month', t: 'Overdue handover alert for buyers', d: 'Dated notice when the handover date on record passes, with what the law and contract say.' },
+{ k: 'mybuild', item: 46, price: '€19 a month', t: '"Is my build on track?"', d: 'Monthly satellite comparison of the plot for buyers who already signed.' },
+{ k: 'volume', item: 34, price: '5 checks €2,200 · 10 checks €3,900', t: 'Volume checks for agencies and lawyers', d: 'Monthly invoice; the same nine checks.' },
+{ k: 'datalicence', item: 53, price: 'from €4,900 a year', t: 'Commercial data licence', d: 'Full dataset with history and an update feed for funds and banks.' },
+{ k: 'dubai', item: 58, price: '€590', t: 'Dubai pack', d: 'Check with the DLD project status, the Oqood registration and the escrow account.' }
+];
+function offers(env) {
+const on = new Set(String((env && env.KB_N31_OFFERS) || '').split(',').map(s => s.trim()).filter(Boolean));
+return OFFERS.filter(o => on.has(o.k)).map(o => Object.assign({}, o, { pay: env['KB_N31_PAY_' + o.k.toUpperCase()] || null }));
+}
+function offerCards(list, lang) {
+return '<ul class="n31-l">' + list.map(o => '<li><b>' + esc(o.t) + (o.price ? ' · ' + esc(o.price) : '') + '</b>' + esc(o.d) + (o.pay ? ' <a href="' + esc(o.pay) + '" rel="noopener">' + esc(T[lang].more) + '</a>' : '') + '</li>').join('') + '</ul>';
+}
+export async function pricingOffers(res, lang, env) {
+if (!(await loadT(env))) return res;
+const list = offers(env).filter(o => !['volume', 'datalicence'].includes(o.k));
+if (!list.length) return res;
+const add = TB.kbx_n31a__t.k20 + dirA(lang) + '>' + TB.kbx_n31a__s.CSS + '<h2>' + esc(T[lang].of_h) + '</h2>' + offerCards(list, lang) + '</div></section>';
+return new HTMLRewriter().on('main > section:first-of-type', { element(e) { e.after(add, { html: true }); } }).transform(res);
+}
+export async function handle(req, u, env, ctx, shell) {
+const p = u.pathname;
+if (!PATHS.test(p)) return null;
+if (p.startsWith('/api/open/')) {
+if (req.method === 'OPTIONS') return new Response(null, { status: 204, headers: { 'access-control-allow-origin': ORIGIN, 'access-control-allow-methods': 'GET, POST', 'access-control-max-age': '86400' } });
+if (p === '/api/open/funnel') return jout(await funnel(Math.min(35, Math.max(1, +u.searchParams.get('days') || 28))), 200, { 'cache-control': 'public, max-age=60' });
+const bot = BOT.test(req.headers.get('user-agent') || '');
+if (p === '/api/open/fn') {
+if (req.method !== 'POST') return jout({ error: 'method', use: 'POST /api/open/fn?s=<step>' }, 405);
+const s = String(u.searchParams.get('s') || '');
+if (!OK_STEP.has(s)) return jout({ error: 'step' }, 400);
+if (bot || !ourOrigin(req) || !allow(req, 40)) return jout({ ok: false }, 202);
+ctx.waitUntil(inc(CK(day(), s)));
+return jout({ ok: true }, 202);
+}
+if (p === '/api/open/sv') {
+const id = String(u.searchParams.get('id') || '').toUpperCase();
+if (!/^[A-Z0-9-]{3,20}$/.test(id)) return jout({ error: 'id' }, 400);
+if (req.method === 'POST') { if (bot || !ourOrigin(req) || !allow(req, 20)) return jout({ ok: false }, 202); ctx.waitUntil(inc(SVK(id))); return jout({ ok: true }, 202); }
+const n = await get(SVK(id));
+return jout({ id, saves_at_least: n, shown: n >= 3, since: '2026-11-18', note: TB.kbx_n31a__s.k11 }, 200, { 'cache-control': 'public, max-age=300' });
+}
+return null;
+}
+if (req.method !== 'GET' && req.method !== 'HEAD') return null;
+if (!p.endsWith('/')) return new Response(null, { status: 301, headers: { location: p + '/' + u.search } });
+if (!(await loadT(env))) return null;
+let m;
+if ((m = RX.fn.exec(p))) return fnPage(m[1] || 'en', shell);
+if ((m = RX.rq.exec(p))) return rqPage(m[1] || 'en', shell);
+if ((m = RX.bz.exec(p))) return bzPage(m[1] || 'en', shell, env);
+if ((m = RX.mo.exec(p))) return moPage(m[1] || 'en', shell);
+if ((m = RX.as.exec(p))) return asPage(m[1] || 'en', shell);
+if ((m = RX.sr.exec(p))) return srPage(m[1] || 'en', shell, env, m[2]);
+return null;
+}
+export { funnel, offers, OFFERS };

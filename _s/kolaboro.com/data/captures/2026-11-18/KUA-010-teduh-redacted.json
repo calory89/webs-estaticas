@@ -1,0 +1,112 @@
+{
+ "id": "30834-1",
+ "nama": "RESIDENSI M AZURA",
+ "pemaju": {
+  "kod_pemaju": "30834",
+  "nama": "M AZURA SDN. BHD.",
+  "telefon": "[removed: personal contact]",
+  "telefon2": null,
+  "emel": "[removed: personal contact]",
+  "alamat_web": "www.mahsing.com.my",
+  "alamat_daftar": "Penthouse Suite 1 , Wisma Mah Sing, No.163,jalan Sungai Besi, 57100, Kuala Lumpur, Wp Kuala Lumpur",
+  "alamat_perniagaan": "Penthouse Suite 2, Wisma Mah Sing, No. 163, Jalan Sungai Besi, 57100, Kuala Lumpur, Wp Kuala Lumpur",
+  "statusPemaju": "Aktif",
+  "mempunyaiKesalahan": null,
+  "bilanganProjek": 1,
+  "latest_lesen": {
+   "no_lesenpermit": "30834/08-2029/0176(A)",
+   "tarikh_mula": "2024-08-14",
+   "tarikh_luput": "2029-08-13"
+  }
+ },
+ "projek": {
+  "permitNo": "30834-1/08-2027/0769(A)-(S)",
+  "nama": "Residensi M Azura",
+  "kod_projek": "30834-1",
+  "daerah": "Kuala Lumpur",
+  "negeri": "Wp Kuala Lumpur",
+  "permitMula": "2024-08-27",
+  "permitTamat": "2027-08-26"
+ },
+ "unitSummary": {
+  "unit": 1140,
+  "keluasan": "0 mps",
+  "bilik": "1, 2, 3, 4",
+  "bilikAir": "1, 2, 3"
+ },
+ "pjb": {
+  "jenis": "Jadual H",
+  "tempohAsal": "36 Bulan",
+  "tarikhPjbPertama": "14 Nov 2024",
+  "serahKosongIkutPjb": "14 Nov 2027",
+  "pindaanTempohSerahKosong": "Ya",
+  "tempohTambahanDiluluskan": "12 Bulan",
+  "tempohPembinaanBaharu": "48 Bulan",
+  "serahKosongBaharuIkutPjbPertama": "14 Nov 2028"
+ },
+ "status": {
+  "maklumatPembangunan": "Berfasa",
+  "keseluruhan": "Lewat",
+  "nota": "Status komponen adalah berdasarkan laporan 7(f) terkini di HIMS.",
+  "rows": [
+   {
+    "jenis": "Pangsapuri Servis",
+    "tingkat": "30",
+    "bilik": "1, 2, 3, 4",
+    "tandas": "1, 2",
+    "keluasan": "0",
+    "unit": 570,
+    "hargaMin": "534,960.00",
+    "hargaMax": "800,160.00",
+    "peratus": "24.00",
+    "komponen": "Lewat",
+    "ccc": "-",
+    "vp": "-"
+   },
+   {
+    "jenis": "Pangsapuri Servis",
+    "tingkat": "30",
+    "bilik": "1, 2, 3, 4",
+    "tandas": "1, 2, 3",
+    "keluasan": "0",
+    "unit": 570,
+    "hargaMin": "534,960.00",
+    "hargaMax": "800,160.00",
+    "peratus": "23.50",
+    "komponen": "Lewat",
+    "ccc": "-",
+    "vp": "-"
+   }
+  ]
+ },
+ "lesen_records": [
+  {
+   "no": "30834-1/08-2027/0769(A)-(S)",
+   "mula": "27 Aug 2024",
+   "tamat": "26 Aug 2027",
+   "tempoh": "36 bulan",
+   "is_latest": false,
+   "status": "Aktif"
+  },
+  {
+   "no": "30834-1/08-2027/0769(N)-(S)",
+   "mula": "27 Aug 2024",
+   "tamat": "26 Aug 2027",
+   "tempoh": "36 bulan",
+   "is_latest": false,
+   "status": "Tidak Aktif"
+  }
+ ],
+ "brochure": {
+  "dokumen_url": "https://hims.kpkt.gov.my/files/30834/P45/P45-20260925-00020565/IKLAN_BROSUR_01.pdf"
+ },
+ "iklan": [
+  {
+   "src": "https://hims.kpkt.gov.my/files/30834/P45/P45-20260925-00020565/IKLAN_BROSUR_01.pdf",
+   "caption": "Iklan Projek"
+  }
+ ],
+ "lokasi": "Kuala Lumpur, WP Kuala Lumpur",
+ "lat": "3.186907",
+ "lng": "101.734000"
+}
