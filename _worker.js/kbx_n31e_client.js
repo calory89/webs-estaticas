@@ -5,6 +5,7 @@ function n31() {
   var PRE = LG === 'en' ? '' : '/' + LG;
   function $(id) { return document.getElementById(id); }
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+  function upUrl(o) { try { var q = new URLSearchParams(location.search), u = new URLSearchParams(); if (q.get('project')) u.set('project', q.get('project')); for (var k in o) if (o[k]) u.set(k, o[k]); history.replaceState(null, '', location.pathname + (u.toString() ? '?' + u : '') + location.hash); } catch (e) {} }   // n40 k25: the address keeps the inputs
   function f(s, v) { s = String(s); for (var k in v) s = s.split('{' + k + '}').join(v[k]); return s; }
   function nf(n, o) { try { return Number(n).toLocaleString(LOC, o || { maximumFractionDigits: 1 }); } catch (e) { return String(n); } }
   function ymLabel(k, long) { try { return new Intl.DateTimeFormat(LOC, { month: long ? 'long' : 'short', year: 'numeric', timeZone: 'UTC' }).format(new Date(k + '-15T12:00:00Z')); } catch (e) { return k; } }
@@ -148,6 +149,8 @@ function n31() {
       document.querySelectorAll('[data-min-usd]').forEach(function (s) { var m = +s.getAttribute('data-min-usd'); s.style.outline = ''; if (m && usd >= m) { ok.push(s.querySelector('h3').textContent.split(':')[0]); s.style.outline = '3px solid var(--k-sea,#155C75)'; } });
       say(ok.length ? f(M.msg.ok, { k: ok.join(', ') }) : M.msg.no);
     });
+    form.addEventListener('submit', function () { upUrl({ b: $('n31-b').value, c: $('n31-bc').value }); });
+    if (+$('n31-b').value > 0) form.dispatchEvent(new Event('submit', { cancelable: true }));
   })();
 
   // ------------------------------------------------------------------ 163: at most four countries
@@ -172,6 +175,8 @@ function n31() {
       if (dv) { var i = mi(dv); if (i == null) h += '<p>' + esc(M.msg.bad) + '</p>'; else h += '<p><b>' + esc(f(M.msg.est, { med: nf(r.med), date: ymLabel(dv, true), to: ymLabel(ik(i + Math.round(r.med)), true) })) + '</b></p>'; }
       out.innerHTML = h + '</section>'; say('');
     });
+    form.addEventListener('submit', function () { upUrl({ mk: $('n31-mk').value, d: $('n31-d').value }); });
+    if ($('n31-mk').value || $('n31-d').value) form.dispatchEvent(new Event('submit', { cancelable: true }));
   })();
 
   // ------------------------------------------------------------------ 169: request documents

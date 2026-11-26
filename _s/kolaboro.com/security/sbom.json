@@ -10161,24 +10161,24 @@
    "type": "file",
    "name": "/tools/refund-tracker/rt.js",
    "group": "kolaboro.com",
-   "version": "1",
+   "version": "2",
    "supplier": {
     "name": "Kolaboro"
    },
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "78960126b42e41036e167fb2b56cd96124ee33e339be280ab33d269b348c08d0cb90e396745e0b78045a9817d3319eb3"
+     "content": "b87c144d1bfc272b081462c5996be498df3fbbf961eeed76e4ad93d4ac8e8cbb79f8437639a3494c11465aadf5c8f7be"
     },
     {
      "alg": "SHA-256",
-     "content": "ca5df1f00bd31b3abe7e68d2da1366d7d22849cd16909c8ff1783cab5bf2e53d"
+     "content": "4f5d75495427c79b9cb6a692ae0206563676a2654be1df6a88beebcdf123bbc8"
     }
    ],
    "externalReferences": [
     {
      "type": "distribution",
-     "url": "https://kolaboro.com/tools/refund-tracker/rt.js?v=1"
+     "url": "https://kolaboro.com/tools/refund-tracker/rt.js?v=2"
     }
    ],
    "properties": [

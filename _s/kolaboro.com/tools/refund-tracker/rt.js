@@ -171,5 +171,39 @@
     r.readAsText(file);
   });
 
+  /* n40 k25: ?project=<slug> fills the developer, project and currency from the public record. The unsaved form is kept
+     after # in the address (that part is never sent to a server), so a saved or shared link restores it. */
+  (function () {
+    var q, h; try { q = new URLSearchParams(location.search); h = new URLSearchParams(location.hash.slice(1)); } catch (e) { return; }
+    var slug = String(q.get('project') || ''); if (!/^[a-z0-9-]{1,120}$/.test(slug)) slug = '';
+    var K = ['dev', 'proj', 'amount', 'cur', 'req', 'deadline', 'status', 'paid'], el = F.elements, had = 0, tm;
+    K.forEach(function (k) { if (h.has(k) && el[k]) { var v = str(h.get(k), 200); if (k === 'status') { if (SL[v]) el[k].value = v; } else el[k].value = v; had++; } });
+    function write() { clearTimeout(tm); tm = setTimeout(function () { try { var u = new URLSearchParams(); K.forEach(function (k) { if (el[k] && el[k].value !== '') u.set(k, el[k].value); }); history.replaceState(null, '', location.pathname + location.search + '#' + u.toString()); } catch (e) {} }, 250); }
+    F.addEventListener('input', write); F.addEventListener('change', write);
+    F.addEventListener('submit', function () { setTimeout(function () { try { history.replaceState(null, '', location.pathname + location.search); } catch (e) {} }, 400); });
+    var LG = (document.documentElement.lang || 'en').slice(0, 2), PRE = LG === 'en' ? '' : '/' + LG, W = {
+      en: ['Form restored from this link. It is not saved until you press the button.', 'Filled from the public record of', 'developer', 'project', 'currency', 'Add the amount you are claiming and the date you asked for it.', 'The record of this project did not load, so nothing was filled in.'],
+      es: ['Formulario recuperado de este enlace. No se guarda hasta que pulse el botón.', 'Rellenado con el registro público de', 'promotor', 'proyecto', 'moneda', 'Añada el importe que reclama y la fecha en que lo pidió.', 'El registro de este proyecto no se cargó, así que no se rellenó nada.'],
+      fr: ['Formulaire repris de ce lien. Il n’est enregistré que lorsque vous appuyez sur le bouton.', 'Rempli à partir de la fiche publique de', 'promoteur', 'projet', 'devise', 'Ajoutez le montant réclamé et la date de votre demande.', 'La fiche de ce projet ne s’est pas chargée, rien n’a été rempli.'],
+      de: ['Formular aus diesem Link wiederhergestellt. Gespeichert wird erst, wenn Sie auf die Schaltfläche drücken.', 'Ausgefüllt aus dem öffentlichen Datensatz von', 'Bauträger', 'Projekt', 'Währung', 'Tragen Sie den geforderten Betrag und das Datum Ihrer Anfrage ein.', 'Der Datensatz dieses Projekts wurde nicht geladen, daher wurde nichts ausgefüllt.'],
+      nl: ['Formulier hersteld uit deze link. Het wordt pas bewaard als u op de knop drukt.', 'Ingevuld vanuit het openbare dossier van', 'ontwikkelaar', 'project', 'valuta', 'Vul het bedrag in dat u terugvraagt en de datum van uw verzoek.', 'Het dossier van dit project is niet geladen, dus er is niets ingevuld.'],
+      ru: ['Форма восстановлена из этой ссылки. Она сохранится, только когда вы нажмёте кнопку.', 'Заполнено по открытой записи проекта', 'застройщик', 'проект', 'валюта', 'Укажите сумму требования и дату, когда вы его отправили.', 'Запись этого проекта не загрузилась, поэтому ничего не заполнено.'],
+      zh: ['已从此链接恢复表单。按下按钮后才会保存。', '已根据以下项目的公开记录填写：', '开发商', '项目', '币种', '请填写您索回的金额和提出要求的日期。', '该项目的记录未能加载，因此没有填写任何内容。'],
+      ar: ['تمت استعادة النموذج من هذا الرابط. لا يُحفظ حتى تضغط الزر.', 'تمت التعبئة من السجل العام لمشروع', 'المطوّر', 'المشروع', 'العملة', 'أضف المبلغ الذي تطالب به وتاريخ طلبك.', 'لم يُحمَّل سجل هذا المشروع، لذلك لم تتم تعبئة أي شيء.']
+    }[LG];
+    W = W || ['Form restored from this link. It is not saved until you press the button.', 'Filled from the public record of', 'developer', 'project', 'currency', 'Add the amount you are claiming and the date you asked for it.', 'The record of this project did not load, so nothing was filled in.'];
+    function note(t, bad) { var p = document.createElement('p'); p.className = 'kup-note'; p.setAttribute('role', 'status'); p.style.cssText = 'margin:0 0 12px;padding:10px 12px;border-radius:10px;border:1px solid ' + (bad ? '#B3261E' : 'var(--line,#D8DEDB)'); p.innerHTML = t; F.parentNode.insertBefore(p, F); }
+    if (had) { note(esc(W[0])); }
+    if (!slug || (had && el.dev.value)) return;
+    fetch('/projects/' + slug + '/record.json').then(function (x) { if (!x.ok) throw 0; return x.json(); }).then(function (r) {
+      var pr = ''; (r.facts || []).forEach(function (f) { if (f.field === 'pr') pr = String(f.value || ''); });
+      var m = /^([A-Z]{3})\s/.exec(pr), bits = [];
+      if (r.developer) { el.dev.value = str(r.developer, 120); bits.push(W[2]); }
+      if (r.name) { el.proj.value = str(r.name, 120); bits.push(W[3]); }
+      if (m) { el.cur.value = m[1]; bits.push(W[4] + ' ' + m[1]); }
+      note(esc(W[1]) + ' <a href="' + PRE + '/projects/' + esc(slug) + '/">' + esc(r.name || slug) + '</a>' + (bits.length ? ': ' + esc(bits.join(', ')) : '') + '. ' + esc(W[5]));
+      write();
+    }).catch(function () { note(esc(W[6]), true); });
+  })();
   load(); if (!okStore) save(); render();
 })();

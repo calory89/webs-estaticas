@@ -12,7 +12,7 @@ if (!d || !d.S) { LD31 = null; throw new Error('n31e strings unavailable'); }
 })();
 return LD31;
 }
-export const N31V = 'e1';
+export const N31V = 'e2';
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const COI_RX = /eco\s*beach\s*city|\bequinox\b/i;
@@ -31,6 +31,12 @@ const srcA = s => s ? '<a class="n31src" href="' + esc(s.u) + '" rel="noopener" 
 const readOn = (lang, d) => d ? ' <small class="n31m">' + esc(t31(lang, 'read_on', { d: fdate(d, lang) })) + '</small>' : '';
 const nameOf = x => String(x.n || x.id);
 const clean = x => !COI_RX.test(String(x.n || '') + ' ' + String(x.dv || ''));
+// n40 k25: ?project=<slug> on worker tools (visa, on time, area report, inheritance, mortgages): fills from the record, a note says what was filled, the address keeps the inputs
+async function upPrj(env, u) { const s = String((u && u.searchParams.get('project')) || '').toLowerCase(); if (!/^[a-z0-9-]{1,120}$/.test(s)) return null; try { const N = await import('./kbx_named.js'), ix = await N.data(env), x = ix.bySlug.get(s); const H = await import('./kbx_hdate.js'); return x && clean(x) ? { x, ix, N, s, H } : { s, miss: true }; } catch (e) { return null; } }
+function upNote(lang, U, bits, extra) { if (!U) return ''; const st = 'margin:0 0 12px;padding:10px 12px;border-radius:10px;border:1px solid '; if (U.miss) return '<p class="kup-note" role="status" style="' + st + '#B3261E">' + esc(t31(lang, 'up_nf')) + '</p>'; const x = U.x, a = '<a href="' + pre(lang) + '/projects/' + esc(x.s) + '/">' + bdi(nameOf(x)) + '</a>';
+return '<p class="kup-note" role="status" style="' + st + 'var(--line,#D8DEDB)">' + esc(t31(lang, 'up_from')).replace('{p}', a).replace('{m}', esc(U.H.mkName(x.mk || '', lang))) + (bits && bits.length ? ': ' + bits.join('; ') : '') + '.' + (extra ? ' ' + extra : '') + ' ' + esc(t31(lang, 'up_chk')) + '</p>'; }
+const upHid = U => U && U.s ? '<input type="hidden" name="project" value="' + esc(U.s) + '">' : '';
+const upV = (k, lang, v) => esc(t31(lang, k)).replace('{v}', '<bdi dir="ltr">' + esc(v) + '</bdi>');
 const ym = (k, lang) => { try { return new Intl.DateTimeFormat(LOC[lang] || 'en-GB', { month: 'short', year: 'numeric', timeZone: 'UTC' }).format(new Date(k + '-15T12:00:00Z')); } catch (e) { return k; } };
 const kindOf = st => st === 'completed' ? 'done' : st === 'under construction' ? 'uc' : 'op';
 let ECBR = null;
@@ -146,11 +152,15 @@ return o;
 });
 return { rows, fx: fx ? fx.d : null, N, ix };
 }
-async function visaPage(env, lang) {
-const { rows, fx } = await visaData(env), w = (k, v) => t31(lang, k, v), P = pre(lang);
+async function visaPage(env, lang, u) {
+const { rows, fx } = await visaData(env), w = (k, v) => t31(lang, k, v), P = pre(lang), U = await upPrj(env, u), F = (U && U.x && U.x.fx) || {};
+const CU = ['USD', 'EUR', 'GBP', 'AED', 'TRY'], q = u ? u.searchParams : new URLSearchParams(); let bv = +String(q.get('b') || '').replace(/[^\d.]/g, '') || 0, bc = String(q.get('c') || '').toUpperCase(), bits = [];
+if (!bv && F.price_min > 0) { bv = Math.round(F.price_min); bc = String(F.currency || 'USD').toUpperCase(); bits.push(upV('up_pr', lang, bc + ' ' + nf(bv, 'en', { maximumFractionDigits: 0 }))); }
+if (bc && !CU.includes(bc) && fx && fx.r[bc]) CU.push(bc); if (!CU.includes(bc)) bc = '';
+const ucc = U && U.x ? CC[U.x.co] : null;
 const card = r => {
 const cls = r.st === 'open' ? 'is-ok' : r.st === 'closed' ? 'is-no' : 'is-mid';
-let h = '<section class="n31c ' + cls + '" id="v-' + r.k + '" data-min-usd="' + (r.min_usd || '') + '"><h3>' + esc(country(r.cc, lang)) + ': ' + esc(w('vs_' + r.st)) + '</h3><p>' + esc((VISA.find(v => v.k === r.k).t[lang]) || VISA.find(v => v.k === r.k).t.en) + '</p>' +
+let h = '<section class="n31c ' + cls + '" id="v-' + r.k + '" data-min-usd="' + (r.min_usd || '') + '"' + (ucc && r.cc === ucc ? ' aria-current="true" style="border-width:3px"' : '') + '><h3>' + esc(country(r.cc, lang)) + ': ' + esc(w('vs_' + r.st)) + '</h3><p>' + esc((VISA.find(v => v.k === r.k).t[lang]) || VISA.find(v => v.k === r.k).t.en) + '</p>' +
 '<p class="n31q" lang="' + (r.src.ql || 'en') + '" dir="ltr">“' + esc(r.q) + '”</p><p>' + esc(w('source')) + ': ' + srcA(r.src) + readOn(lang, r.src.d) + '</p>';
 if (r.st === 'open') {
 h += '<p><b>' + esc(w('v_proj', { k: nf(r.projects.length, lang), n: nf(r.priced, lang), t: nf(r.tracked, lang) })) + '</b></p>';
@@ -158,7 +168,7 @@ if (r.projects.length) h += '<details><summary>' + esc(w('v_list')) + '</summary
 }
 return h + '</section>';
 };
-const inner = TB.kbx_n31e__t.k10 + esc(w('v_budget')) + TB.kbx_n31e__s.k4 + esc(w('currency')) + '" style="max-width:120px">' + ['USD', 'EUR', 'GBP', 'AED', 'TRY'].map(c => '<option>' + c + '</option>').join('') + TB.kbx_n31e__t.k11 + esc(w('v_go')) + TB.kbx_n31e__t.k12 +
+const inner = upNote(lang, U, bits) + (TB.kbx_n31e__t.k10 + esc(w('v_budget')) + TB.kbx_n31e__s.k4).replace('id="n31-b"', 'id="n31-b" name="b"' + (bv > 0 ? ' value="' + bv + '"' : '')).replace('id="n31-bc"', 'id="n31-bc" name="c"') + esc(w('currency')) + '" style="max-width:120px">' + CU.map(c => '<option' + (c === bc ? ' selected' : '') + '>' + c + '</option>').join('') + TB.kbx_n31e__t.k11 + esc(w('v_go')) + TB.kbx_n31e__t.k12 +
 rows.map(card).join('') + '<p class="n31m">' + esc(w('v_note', { d: fx ? fdate(fx, lang) : '?' })) + '</p><p class="n31m">' + esc(w('not_advice')) + '</p>';
 const M = { fx: (await perUsd()) ? (await perUsd()).r : null, msg: { ok: w('v_ok'), no: w('v_no') } };
 return frame(lang, '/tools/visa-by-investment/', 'visa-by-investment', inner, { m: M, me: 'visa-by-investment' });
@@ -218,11 +228,14 @@ return frame(lang, '/tools/compare-countries/', 'compare-countries', inner, { me
 async function onTimePage(env, lang, u) {
 const N = await import('./kbx_named.js'), ix = await N.data(env), A = await import('./kbx_n30a.js'), S0 = A.slipStats(ix, N.handoverOf), w = (k, v) => t31(lang, k, v), P = pre(lang), H = await import('./kbx_hdate.js');
 const R = S0.rows.filter(r => r.tracked >= 5).sort((a, b) => String(H.mkName(a.mk, lang)).localeCompare(String(H.mkName(b.mk, lang))));
-const opts = R.map(r => '<option value="' + esc(r.mk) + '">' + esc(H.mkName(r.mk, lang)) + ' (' + nf(r.tracked, lang) + ')</option>').join('');
+const U = await upPrj(env, u), q = u ? u.searchParams : new URLSearchParams(), bits = []; let omk = String(q.get('mk') || ''), od = /^20\d\d-\d\d$/.test(q.get('d') || '') ? q.get('d') : '';
+if (U && U.x) { if (!q.has('mk') && R.some(r => r.mk === U.x.mk)) { omk = U.x.mk; bits.push(upV('up_mk', lang, H.mkName(omk, lang))); } const ho = N.handoverOf(ix, U.x); if (!od && ho) { const k = H.hkey ? H.hkey(ho.d) : null; if (k && k >= '2024-01' && k <= '2035-12') { od = k; bits.push(upV('up_ho', lang, String(ho.d))); } } }
+if (!R.some(r => r.mk === omk)) omk = '';
+const opts = R.map(r => '<option value="' + esc(r.mk) + '"' + (r.mk === omk ? ' selected' : '') + '>' + esc(H.mkName(r.mk, lang)) + ' (' + nf(r.tracked, lang) + ')</option>').join('');
 const M = { rows: Object.fromEntries(R.map(r => [r.mk, { n: r.n, med: r.med, p25: r.p25, p75: r.p75, min: r.min, max: r.max, done: r.done, notdue: r.notdue, k: r.tracked }])), all: { n: S0.all.n, med: S0.all.med, p25: S0.all.p25, p75: S0.all.p75 },
 msg: { res: w('ot_res'), few: w('ot_few'), est: w('ot_est'), bad: w('ot_bad'), none: w('ot_none'), pick: w('ot_pick') }, LOC: LOC[lang], day: S0.day };
-const inner = TB.kbx_n31e__t.k18 + esc(w('ot_mk')) + TB.kbx_n31e__t.k19 + esc(w('ot_all')) + '</option>' + opts + '</select>' +
-'<label for="n31-d">' + esc(w('ot_date')) + TB.kbx_n31e__t.k20 +
+const inner = upNote(lang, U, bits) + TB.kbx_n31e__t.k18 + esc(w('ot_mk')) + TB.kbx_n31e__t.k19 + esc(w('ot_all')) + '</option>' + opts + '</select>' +
+'<label for="n31-d">' + esc(w('ot_date')) + TB.kbx_n31e__t.k20.replace('id="n31-d"', 'id="n31-d"' + (od ? ' value="' + od + '"' : '')) +
 TB.kbx_n31e__t.k21 + esc(w('ot_go')) + TB.kbx_n31e__s.k6 +
 '<h2>' + esc(w('ot_m_h')) + '</h2><ul class="n31p">' + w('ot_m').map(s => '<li>' + esc(s) + '</li>').join('') + '</ul><p><a href="' + P + '/methods/handover-slippage/">' + esc(w('ot_full')) + '</a></p>';
 return frame(lang, '/tools/on-time/', 'on-time', inner, { m: M, me: 'on-time' });
@@ -245,9 +258,10 @@ TB.kbx_n31e__t.k32 + esc(w('rd_copy')) + TB.kbx_n31e__t.k33 + esc(w('rd_mail')) 
 '<p class="n31p">' + esc(w('rd_why')) + '</p><p class="n31m">' + esc(w('rd_priv')) + '</p>';
 return frame(lang, '/tools/request-documents/', 'request-documents', inner, { m: M, me: 'request-documents' });
 }
-function factPage(lang, key, list, idp) {
-const w = (k, v) => t31(lang, k, v);
-const inner = list.map(v => '<section class="n31c" id="' + idp + v.k + '"><h3>' + esc(v.cc === 'EU' ? w('eu') : country(v.cc, lang)) + (v.h ? ': ' + esc(v.h[lang] || v.h.en) : '') + '</h3><p>' + esc(v.t[lang] || v.t.en) + '</p>' +
+function factPage(lang, key, list, idp, U) {
+const w = (k, v) => t31(lang, k, v), ucc = U && U.x ? CC[U.x.co] : null, hit = ucc ? list.filter(v => v.cc === ucc) : [];
+const un = U ? upNote(lang, U, [], U.x ? (hit.length ? esc(w('up_sec')).replace('{c}', esc(country(ucc, lang))).replace('{a}', hit.map(v => '<a href="#' + idp + v.k + '">' + esc(v.h ? (v.h[lang] || v.h.en) : country(v.cc, lang)) + '</a>').join(', ')) : esc(w('up_nosec')).replace('{c}', esc(ucc ? country(ucc, lang) : U.x.co || ''))) : '') : '';
+const inner = un + list.map(v => '<section class="n31c" id="' + idp + v.k + '"' + (ucc && v.cc === ucc ? ' aria-current="true" style="border-width:3px"' : '') + '><h3>' + esc(v.cc === 'EU' ? w('eu') : country(v.cc, lang)) + (v.h ? ': ' + esc(v.h[lang] || v.h.en) : '') + '</h3><p>' + esc(v.t[lang] || v.t.en) + '</p>' +
 (v.q ? '<p class="n31q" lang="' + (v.src.ql || 'en') + '" dir="ltr">“' + esc(v.q) + '”</p>' : '') + '<p>' + esc(w(v.src.kind === 'press' ? 'source_press' : v.src.kind === 'bank' ? 'source_bank' : 'source')) + ': ' + srcA(v.src) + readOn(lang, v.src.d) + (v.src.pd ? ' <small class="n31m">' + esc(w('page_date', { d: fdate(v.src.pd, lang) })) + '</small>' : '') + '</p></section>').join('') +
 '<h2>' + esc(w(key + '_lim_h')) + '</h2><ul class="n31p">' + w(key + '_lim').map(s => '<li>' + esc(s) + '</li>').join('') + '</ul><p class="n31m">' + esc(w('not_advice')) + '</p>';
 return frame(lang, '/tools/' + key + '/', key, inner, { me: key, noscript: true });
@@ -255,7 +269,7 @@ return frame(lang, '/tools/' + key + '/', key, inner, { me: key, noscript: true 
 async function areaPage(env, lang, u) {
 const N = await import('./kbx_named.js'), ix = await N.data(env), H = await import('./kbx_hdate.js'), w = (k, v) => t31(lang, k, v), P = pre(lang);
 const mks = [...ix.mk.entries()].filter(([m, o]) => o.k >= 5 && !COI_RX.test(m)).sort((a, b) => b[1].k - a[1].k);
-const sel = String(u.searchParams.get('m') || '');
+const U = await upPrj(env, u); let sel = String(u.searchParams.get('m') || ''); const fromP = !sel && U && U.x && U.x.mk; if (fromP) sel = U.x.mk;
 const m = mks.find(([k]) => k.toLowerCase() === sel.toLowerCase()) ? mks.find(([k]) => k.toLowerCase() === sel.toLowerCase())[0] : null;
 let rep = '';
 if (m) {
@@ -273,10 +287,10 @@ li(w('cc_r_late'), sr && sr.n >= 5 ? esc(w('cc_med', { m: nf(sr.med, lang) })) +
 (top.length ? '<h3>' + esc(w('ar_top')) + '</h3><ol>' + top.map(r => '<li><a href="' + ORIGIN + P + '/projects/' + r.s + '/">' + bdi(r.n) + '</a> <small class="n31m">' + nf(r.score, lang) + '/100' + (r.dv ? ' · ' + esc(r.dv) : '') + '</small></li>').join('') + '</ol>' : '') +
 '<p class="n31m">' + esc(w('ar_src')) + ' ' + ORIGIN + P + '/m/' + encodeURIComponent(m.toLowerCase().replace(/\s+/g, '-')) + '/ · ' + ORIGIN + TB.kbx_n31e__t.k36 + esc(w('ar_rules')) + '</p></article>';
 }
-const inner = TB.kbx_n31e__t.k37 + esc(w('ar_m')) + '</label><select id="n31-m" name="m">' + mks.map(([k, o]) => '<option value="' + esc(k) + '"' + (k === m ? ' selected' : '') + '>' + esc(H.mkName(k, lang)) + ' (' + nf(o.k, lang) + ')</option>').join('') + '</select>' +
+const inner = upNote(lang, U, fromP && m ? [upV('up_mk', lang, H.mkName(m, lang))] : (U && U.x && !m ? [esc(w('up_nomk'))] : [])) + TB.kbx_n31e__t.k37 + esc(w('ar_m')) + '</label><select id="n31-m" name="m">' + mks.map(([k, o]) => '<option value="' + esc(k) + '"' + (k === m ? ' selected' : '') + '>' + esc(H.mkName(k, lang)) + ' (' + nf(o.k, lang) + ')</option>').join('') + '</select>' +
 TB.kbx_n31e__t.k38 + esc(w('ar_go')) + '</button></div>' +
 '<label for="n31-an">' + esc(w('ar_an')) + TB.kbx_n31e__t.k39 + esc(w('ar_al')) + TB.kbx_n31e__t.k40 +
-'<p class="n31m">' + esc(w('ar_priv')) + '</p>' + (m ? TB.kbx_n31e__t.k41 + esc(w('ar_print')) + '</button></div>' : '') + '</form>' + rep +
+upHid(U) + '<p class="n31m">' + esc(w('ar_priv')) + '</p>' + (m ? TB.kbx_n31e__t.k41 + esc(w('ar_print')) + '</button></div>' : '') + '</form>' + rep +
 TB.kbx_n31e__s.k9 +
 TB.kbx_n31e__s.k10;
 return frame(lang, '/tools/area-report/', 'area-report', inner, { me: 'area-report', m: {} });
@@ -428,13 +442,13 @@ const STATIC31 = new Set(['find-listing', 'handover-history', 'visa-by-investmen
 async function build31(req, u, env, ctx, shell, lang, k) {
 try {
 if (k === 'find-listing' || k === 'handover-history') return await page(lang, shell, k, '/tools/' + k + '/', findPage(lang, k));
-if (k === 'visa-by-investment') return await page(lang, shell, k, '/tools/' + k + '/', await visaPage(env, lang), { type: 'WebPage' });
+if (k === 'visa-by-investment') return await page(lang, shell, k, '/tools/' + k + '/', await visaPage(env, lang, u), { type: 'WebPage', noindex: u.searchParams.has('project') || u.searchParams.has('b') });
 if (k === 'compare-countries') return await page(lang, shell, k, '/tools/' + k + '/', await comparePage(env, lang, u), { type: 'WebPage', noindex: u.searchParams.has('c') || u.searchParams.has('cc') });
-if (k === 'on-time') return await page(lang, shell, k, '/tools/' + k + '/', await onTimePage(env, lang, u));
+if (k === 'on-time') return await page(lang, shell, k, '/tools/' + k + '/', await onTimePage(env, lang, u), { noindex: u.searchParams.has('project') || u.searchParams.has('mk') || u.searchParams.has('d') });
 if (k === 'request-documents') return await page(lang, shell, k, '/tools/' + k + '/', await reqDocPage(env, lang, u), { noindex: u.searchParams.has('p') });
-if (k === 'inheritance') return await page(lang, shell, k, '/tools/' + k + '/', factPage(lang, k, INH, 'i-'), { type: 'WebPage' });
-if (k === 'foreign-mortgages') return await page(lang, shell, k, '/tools/' + k + '/', factPage(lang, k, MORT, 'b-'), { type: 'WebPage' });
-if (k === 'area-report') return await page(lang, shell, k, '/tools/' + k + '/', await areaPage(env, lang, u), { noindex: u.searchParams.has('m') });
+if (k === 'inheritance') return await page(lang, shell, k, '/tools/' + k + '/', factPage(lang, k, INH, 'i-', await upPrj(env, u)), { type: 'WebPage', noindex: u.searchParams.has('project') });
+if (k === 'foreign-mortgages') return await page(lang, shell, k, '/tools/' + k + '/', factPage(lang, k, MORT, 'b-', await upPrj(env, u)), { type: 'WebPage', noindex: u.searchParams.has('project') });
+if (k === 'area-report') return await page(lang, shell, k, '/tools/' + k + '/', await areaPage(env, lang, u), { noindex: u.searchParams.has('m') || u.searchParams.has('project') });
 if (k === 'translate') return await page(lang, shell, k, '/tools/' + k + '/', translatePage(lang));
 if (k === 'receipt-check') return await page(lang, shell, k, '/tools/' + k + '/', receiptPage(lang));
 if (k === 'payment-vs-progress') return await page(lang, shell, k, '/tools/' + k + '/', await pvpPage(env, lang, u), { noindex: u.searchParams.has('p') });

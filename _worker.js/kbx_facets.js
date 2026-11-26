@@ -149,7 +149,7 @@ const rt = (r, lang) => typeof r.r === 'function' ? r.r(lang) : r.r;
 function useLine(x, lang) {
 if (!x.s) return '';
 const q = '?project=' + encodeURIComponent(x.s), P = pre(lang) + '/tools/';
-return '<p class="ki kup">' + te(lang, 'co_use') + ': ' + [['late-handover', 'tl_lh', '&co=' + encodeURIComponent(x.co || '')], ['delay-compensation', 'tl_dc', ''], ['resale-exit', 'tl_rx', ''], ['deposit-protection', 'tl_dp', '&market=' + encodeURIComponent(x.mk || '')], ['yield-check', 'tl_yc', ''], ['currency-risk', 'tl_cr', ''], ['payment-risk', 'tl_pr', ''], ['payment-plan', 'tl_pp', ''], ['build-cost', 'tl_bc', '']].map(r => '<a href="' + P + r[0] + '/' + q + esc(r[2]) + '" rel="nofollow">' + te(lang, r[1]) + '</a>').join(' · ') + '</p>';
+return '<p class="ki kup">' + te(lang, 'co_use') + ': ' + [['late-handover', 'tl_lh', '&co=' + encodeURIComponent(x.co || '')], ['delay-compensation', 'tl_dc', ''], ['resale-exit', 'tl_rx', ''], ['deposit-protection', 'tl_dp', '&market=' + encodeURIComponent(x.mk || '')], ['yield-check', 'tl_yc', ''], ['currency-risk', 'tl_cr', ''], ['payment-risk', 'tl_pr', ''], ['payment-plan', 'tl_pp', ''], ['build-cost', 'tl_bc', ''], ['on-time', 'tl_ot', ''], ['visa-by-investment', 'tl_vi', ''], ['inheritance', 'tl_ih', ''], ['foreign-mortgages', 'tl_fm', ''], ['refund-tracker', 'tl_rt', '']].map(r => '<a href="' + P + r[0] + '/' + q + esc(r[2]) + '" rel="nofollow">' + te(lang, r[1]) + '</a>').join(' · ') + '</p>';
 }
 function costHtml(F, x, lang) {
 const T = tcFor(x), co = coName(x.co, lang) || x.co, fx = x.fx || {};
