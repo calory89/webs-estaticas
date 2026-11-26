@@ -36095,8 +36095,8 @@ var FL = {
 		also: "Også"
 	}
 };
-/** T6.45/T9.44: one SVG sprite for the filter icons plus plane and train (24x24, stroke = currentColor). */
-var ICON_SPRITE = `<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="t3i-spa" viewBox="0 0 24 24"><path d="M12 3c2.2 2.6 3.3 5 3.3 7.2A3.3 3.3 0 0 1 12 13.5a3.3 3.3 0 0 1-3.3-3.3C8.7 8 9.8 5.6 12 3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M3 14c2.5 0 4.6 1.3 6 3.2M21 14c-2.5 0-4.6 1.3-6 3.2M4 20h16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol><symbol id="t3i-pool" viewBox="0 0 24 24"><path d="M8 15V5.5a2 2 0 0 1 4 0M16 15V5.5a2 2 0 0 0-2-2M8 8.5h8M8 12h8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M2.5 18.5c1.6 0 1.6-1 3.2-1s1.6 1 3.2 1 1.6-1 3.1-1 1.6 1 3.2 1 1.6-1 3.2-1 1.6 1 3.1 1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol><symbol id="t3i-gym" viewBox="0 0 24 24"><path d="M7 7v10M17 7v10M4 9.5v5M20 9.5v5M7 12h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol><symbol id="t3i-plane" viewBox="0 0 24 24"><path d="M10.5 3.5a1.5 1.5 0 0 1 3 0V9l7 4.2v2l-7-2.1v4.4l2 1.5V21L12 20l-3.5 1v-2l2-1.5v-4.4l-7 2.1v-2L10.5 9z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol><symbol id="t3i-train" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M5 10h14M9 14h.01M15 14h.01M8 17l-2.5 4M16 17l2.5 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol></svg>`;
+/** T6.45/T9.44: one SVG sprite for the filter icons plus plane, train (T9.44) and calendar (T11.44) (24x24, stroke = currentColor). */
+var ICON_SPRITE = `<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="t3i-spa" viewBox="0 0 24 24"><path d="M12 3c2.2 2.6 3.3 5 3.3 7.2A3.3 3.3 0 0 1 12 13.5a3.3 3.3 0 0 1-3.3-3.3C8.7 8 9.8 5.6 12 3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M3 14c2.5 0 4.6 1.3 6 3.2M21 14c-2.5 0-4.6 1.3-6 3.2M4 20h16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol><symbol id="t3i-pool" viewBox="0 0 24 24"><path d="M8 15V5.5a2 2 0 0 1 4 0M16 15V5.5a2 2 0 0 0-2-2M8 8.5h8M8 12h8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M2.5 18.5c1.6 0 1.6-1 3.2-1s1.6 1 3.2 1 1.6-1 3.1-1 1.6 1 3.2 1 1.6-1 3.2-1 1.6 1 3.1 1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol><symbol id="t3i-gym" viewBox="0 0 24 24"><path d="M7 7v10M17 7v10M4 9.5v5M20 9.5v5M7 12h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol><symbol id="t3i-plane" viewBox="0 0 24 24"><path d="M10.5 3.5a1.5 1.5 0 0 1 3 0V9l7 4.2v2l-7-2.1v4.4l2 1.5V21L12 20l-3.5 1v-2l2-1.5v-4.4l-7 2.1v-2L10.5 9z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol><symbol id="t3i-train" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M5 10h14M9 14h.01M15 14h.01M8 17l-2.5 4M16 17l2.5 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol><symbol id="t3i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 10h17M8 3v4M16 3v4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol></svg>`;
 var icon = (k) => `<svg class="t3i" width="18" height="18" aria-hidden="true" focusable="false"><use href="#t3i-${k}"/></svg>`;
 var CHIP_CSS = `.t3fchips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 4px;padding:0;list-style:none}.t3fchips a{display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:6px 14px;border:1px solid var(--line,#d6dbe3);border-radius:99px;background:var(--card,#fff);color:inherit;text-decoration:none;font-size:15px;font-weight:600}.t3fchips a:hover,.t3fchips a:focus-visible{border-color:currentColor}.t3i{flex:none;vertical-align:-3px}.t3fh{font-size:15px;margin:16px 0 0;color:var(--muted)}`;
 /** T6.12: chips on the city page, only for filter pages that exist. Gym and pool pages are in EN and ES. */
@@ -69275,7 +69275,7 @@ async function cityPage(city0, L) {
 	const co = hs.filter((h) => h.coordinates).map((h) => `${h.coordinates.latitude},${h.coordinates.longitude}`);
 	const route4 = co.length === 3 ? `<p class="note"><a href="https://www.google.com/maps/dir/?api=1&amp;origin=${co[0]}&amp;destination=${co[2]}&amp;waypoints=${co[1]}" target="_blank" rel="noopener nofollow">🗺 ${esc(c4.route)}<span aria-hidden="true"> ↗</span></a></p>` : "";
 	const ev4 = EVENTS.filter((e) => e.city === city.slug);
-	const events4 = ev4.length ? `<section aria-labelledby="c4ev"><h2 id="c4ev">${esc(c4.eventsH(city.city))}</h2><ul class="grid">${ev4.map((e) => `<li><a href="/lists/${e.slug}">${esc(e.name)} <span>${esc(e.when)}</span></a></li>`).join("")}</ul></section>` : "";
+	const events4 = ev4.length ? `<section aria-labelledby="c4ev"><h2 id="c4ev">${esc(c4.eventsH(city.city))}</h2><ul class="grid">${ev4.map((e) => `<li><a href="/lists/${e.slug}">${esc(e.name)} <span>${esc(EVENT_DATES[e.slug] ? `${evDate(EVENT_DATES[e.slug].start, L)} – ${evDate(EVENT_DATES[e.slug].end, L)}` : e.when)}</span></a></li>`).join("")}</ul></section>` : "";
 	const lc = localCurrency(city.cc);
 	const cur4 = lc ? ` ${c4.cur(moneyL(100, L), new Intl.NumberFormat(nl, {
 		style: "currency",
@@ -69760,6 +69760,31 @@ var THEMES = [
 	"budget",
 	"luxury"
 ];
+var EVENT_DATES = {
+	"christmas-markets-vienna": {
+		start: "2026-11-13",
+		end: "2026-12-26",
+		src: "https://www.christkindlmarkt.at/",
+		place: "Rathausplatz, Vienna"
+	},
+	"christmas-markets-strasbourg": {
+		start: "2026-11-27",
+		end: "2026-12-24",
+		src: "https://noel.strasbourg.eu/",
+		place: "Strasbourg city centre"
+	},
+	"christkindlesmarkt-nuremberg": {
+		start: "2026-11-27",
+		end: "2026-12-24",
+		src: "https://www.nuernberg.de/internet/stadtportal/christkindlesmarkt.html",
+		place: "Hauptmarkt, Nuremberg"
+	}
+};
+var evDate = (s, L = "en") => (/* @__PURE__ */ new Date(s + "T12:00:00Z")).toLocaleDateString(NLOC[L] ?? "en-GB", {
+	day: "numeric",
+	month: "long",
+	year: "numeric"
+});
 var EVENTS = [
 	{
 		slug: "oktoberfest",
@@ -70025,48 +70050,73 @@ async function eventPage(slug, L) {
 	if (!d) return null;
 	const t = T$1[L];
 	const title = `Best hotels for ${ev.name} (2026): the 3 to book | Top3Hotels`;
+	const evd = EVENT_DATES[slug];
 	const tiles = await Promise.all(d.hotels.map((h) => tileFor(c, h, L)));
 	const body = `<p class="crumbs"><a href="${P(L, "/")}">${esc(t.home)}</a> › <a href="${P(L, "/lists")}">${esc(t.lists)}</a> › ${esc(ev.name)}</p>
 <div class="hero${d.extras?.hero?.img ? "" : " noimg"}">${d.extras?.hero?.img ? `<img src="/api/img/${esc(c.id)}/big" alt="${esc(c.city)}">` : ""}<div class="in"><p class="eyebrow">${esc(ev.when)}</p><h1>Best hotels for ${esc(ev.name)}<em>.</em></h1><p class="lead">Three hotels in ${esc(c.city)}: one Budget, one Best Value, one Luxury. Book early: prices rise fast around ${esc(ev.name)}.</p></div></div>
 <div class="tiles">${tiles.join("")}</div>
 <section><h2>Where to stay in ${esc(c.city)} for ${esc(ev.name)}</h2><ul>${d.hotels.map((h) => `<li><b>${esc(h.name)}</b> (${esc(t.cat[h.category] ?? h.category)})${h.area ? `, ${esc(h.area)}` : ""}${h.booking?.score ? `: guest score ${h.booking.score.toFixed(1)}/10` : ""}${h.offer?.nightly ? `, reference ${money(h.offer.nightly)} a night` : ""}.</li>`).join("")}</ul>
 <p>${esc(ev.name)} runs ${esc(ev.when)}. Hotels in ${esc(c.city)} fill up and get more expensive around it, so compare the three early and book the one with free cancellation if your dates may move.</p>
+${evd ? `<p><b>2026 dates:</b> ${esc(evDate(evd.start))} to ${esc(evDate(evd.end))}, ${esc(evd.place)}. Source: <a href="${esc(evd.src)}" target="_blank" rel="nofollow noopener">official website<span aria-hidden="true"> ↗</span></a> (checked 26 November 2026).</p>` : ""}
+<p class="note">Prices rise on event dates. The prices shown are reference prices for other dates (10 to 12 November 2026, 2 adults), not for ${esc(ev.name)}: check the price for your dates on Booking.com.</p>
 <h2>Other events</h2><p>${EVENTS.filter((e) => e.slug !== slug).slice(0, 8).map((e) => `<a href="/lists/${e.slug}">${esc(e.name)}</a>`).join(" · ")}</p></section>
 <p style="margin-top:22px"><a class="btn" href="${P(L, "/" + c.slug)}">${esc(t.h1(c.city))} →</a></p>`;
-	const ld = [{
-		"@context": "https://schema.org",
-		"@type": "BreadcrumbList",
-		itemListElement: [
-			{
-				"@type": "ListItem",
-				position: 1,
-				name: "Top3Hotels",
-				item: "https://www.top3hotels.com/"
-			},
-			{
-				"@type": "ListItem",
-				position: 2,
-				name: t.lists,
-				item: "https://www.top3hotels.com/lists"
-			},
-			{
-				"@type": "ListItem",
-				position: 3,
-				name: ev.name,
-				item: `${SITE}/lists/${slug}`
+	const ld = [
+		{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			itemListElement: [
+				{
+					"@type": "ListItem",
+					position: 1,
+					name: "Top3Hotels",
+					item: "https://www.top3hotels.com/"
+				},
+				{
+					"@type": "ListItem",
+					position: 2,
+					name: t.lists,
+					item: "https://www.top3hotels.com/lists"
+				},
+				{
+					"@type": "ListItem",
+					position: 3,
+					name: ev.name,
+					item: `${SITE}/lists/${slug}`
+				}
+			]
+		},
+		...evd ? [{
+			"@context": "https://schema.org",
+			"@type": "Event",
+			name: `${ev.name} 2026`,
+			startDate: evd.start,
+			endDate: evd.end,
+			eventStatus: "https://schema.org/EventScheduled",
+			eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+			url: evd.src,
+			location: {
+				"@type": "Place",
+				name: evd.place,
+				address: {
+					"@type": "PostalAddress",
+					addressLocality: c.city,
+					addressCountry: c.cc ?? c.country
+				}
 			}
-		]
-	}, {
-		"@context": "https://schema.org",
-		"@type": "ItemList",
-		name: `Best hotels for ${ev.name}`,
-		itemListElement: d.hotels.map((h, i) => ({
-			"@type": "ListItem",
-			position: i + 1,
-			name: `${h.name}, ${c.city}`,
-			url: `${SITE}/${c.slug}`
-		}))
-	}];
+		}] : [],
+		{
+			"@context": "https://schema.org",
+			"@type": "ItemList",
+			name: `Best hotels for ${ev.name}`,
+			itemListElement: d.hotels.map((h, i) => ({
+				"@type": "ListItem",
+				position: i + 1,
+				name: `${h.name}, ${c.city}`,
+				url: `${SITE}/${c.slug}`
+			}))
+		}
+	];
 	return page({
 		L,
 		title,
