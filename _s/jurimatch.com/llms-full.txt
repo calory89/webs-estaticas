@@ -2592,6 +2592,34 @@ A: No. Normalmente paga al final un porcentaje de lo que se recupere, y puede ha
 Q: ¿Y si pierdo el juicio?
 A: Lo habitual es que no pague honorarios a su abogado, pero el juez puede condenarle a pagar las costas de la otra parte. Revise la hoja de encargo y su seguro de defensa jurídica.
 
+### Accidente de auto en EE. UU.: qué hacer los primeros días
+URL: https://jurimatch.com/es/guias/accidente-de-auto-estados-unidos
+
+Lo que haga en los primeros días después de un choque puede decidir cuánto recibe después. Estos son los pasos básicos para proteger su salud y su reclamación, estén o no en orden sus papeles.
+
+Q: ¿Debo hablar con el seguro del otro conductor?
+A: Puede darle sus datos básicos, pero evite dar una declaración grabada o firmar documentos sin consultar antes con un abogado.
+
+Q: ¿Qué es un estado no-fault?
+A: Un estado en el que su propio seguro PIP paga primero sus gastos médicos, sea quien sea el culpable. Solo puede demandar al otro conductor si sus lesiones superan un umbral legal.
+
+Q: ¿Cuánto tiempo tengo para demandar?
+A: Depende del estado, con frecuencia dos o tres años desde el accidente, y mucho menos si el responsable es un organismo público.
+
+### Accidente con camión de 18 ruedas en EE. UU.: cómo reclamar
+URL: https://jurimatch.com/es/guias/accidente-de-camion-estados-unidos
+
+Los choques con camiones de carga suelen causar lesiones graves. También son reclamaciones distintas a un choque entre autos: hay más responsables posibles, más seguro disponible y pruebas que la empresa puede borrar si no se pide conservarlas a tiempo.
+
+Q: ¿A quién se reclama en un accidente de camión?
+A: Al conductor y, según el caso, a la empresa de transporte, al dueño del remolque, a quien cargó la mercancía o al fabricante de una pieza defectuosa.
+
+Q: ¿Qué es la caja negra del camión?
+A: Un registro electrónico de datos como la velocidad o el frenado. Junto con el registro de horas de conducción, puede probar qué pasó.
+
+Q: ¿Por qué hay que actuar rápido?
+A: Porque esos registros pueden borrarse. Un abogado puede pedir por escrito que se conserven.
+
 ### Accidente de moto: indemnización y cómo reclamar
 URL: https://jurimatch.com/es/guias/accidente-de-moto
 
@@ -2633,6 +2661,20 @@ A: Un aumento de entre el 30 % y el 50 % de las prestaciones de la Seguridad Soc
 
 Q: ¿Cuánto tiempo tengo para reclamar a la empresa?
 A: En general, un año desde que se conoce el alcance definitivo de las lesiones. Consulte cuanto antes, porque cada vía tiene su plazo.
+
+### Accidente con Uber o Lyft en EE. UU.: quién paga
+URL: https://jurimatch.com/es/guias/accidente-uber-lyft
+
+Si se lesiona en un accidente con un vehículo de Uber o Lyft, el seguro que paga depende de qué estaba haciendo el conductor en ese momento: llevando a un pasajero, esperando un viaje o con la aplicación apagada.
+
+Q: Si soy pasajero de un Uber y hay un choque, ¿quién paga?
+A: Normalmente el seguro comercial de la plataforma, con coberturas altas mientras dura el viaje, o el seguro del otro conductor si él tuvo la culpa.
+
+Q: ¿Y si el conductor tenía la aplicación apagada?
+A: Responde en principio su seguro personal.
+
+Q: ¿Qué pruebas guardo?
+A: Capturas del viaje en la aplicación, el recibo, el reporte policial, fotos y los informes médicos.
 
 ### Acoso laboral: qué es y qué puede hacer
 URL: https://jurimatch.com/es/guias/acoso-laboral
@@ -2715,6 +2757,34 @@ A: Muchos cobran un porcentaje de la indemnización, sin adelanto. Pregunte sobr
 Q: ¿Debo aceptar la oferta de la aseguradora?
 A: No sin revisarla. Un abogado o un perito pueden comprobar si se ajusta al baremo y a sus lesiones reales.
 
+### Compensación laboral (workers' comp) en EE. UU.: guía en español
+URL: https://jurimatch.com/es/guias/compensacion-laboral-estados-unidos
+
+Si se lesiona trabajando, la compensación de trabajadores (workers' compensation) paga sus gastos médicos y parte de su salario aunque nadie tenga la culpa. Cada estado tiene su propio sistema, con plazos cortos para avisar.
+
+Q: ¿Puedo demandar a mi empleador por un accidente de trabajo?
+A: En general no, porque la compensación de trabajadores sustituye esa demanda. En Texas sí, si el empleador no tiene ese seguro. Y puede demandar a terceros responsables.
+
+Q: ¿Cuánto tiempo tengo para avisar?
+A: Depende del estado, a menudo un plazo corto como 30 días. Avise por escrito cuanto antes.
+
+Q: ¿Cuánto cobra un abogado de compensación laboral?
+A: Sus honorarios suelen estar limitados por la ley estatal y aprobados por la agencia o el juez.
+
+### Me chocó un conductor sin seguro en EE. UU.: qué hacer
+URL: https://jurimatch.com/es/guias/conductor-sin-seguro-estados-unidos
+
+Una parte importante de los conductores en Estados Unidos circula sin seguro. Si uno de ellos le choca, o el responsable huye, su propia póliza puede ser la que pague.
+
+Q: ¿Qué es la cobertura UM?
+A: La de motorista sin seguro de su propia póliza, que paga sus daños si el culpable no tiene seguro o no se le identifica.
+
+Q: ¿Y si el culpable tiene un seguro muy bajo?
+A: La cobertura UIM de su póliza puede pagar la diferencia hasta su límite.
+
+Q: ¿Me subirán la prima por reclamar?
+A: Depende del estado y de la aseguradora; en muchos estados no pueden subirla por un accidente del que usted no tuvo la culpa.
+
 ### Costas procesales: quién paga si pierde el juicio
 URL: https://jurimatch.com/es/guias/costas-procesales
 
@@ -2781,6 +2851,20 @@ A: Hace falta probar que el vehículo lleva un dispositivo de desactivación pro
 
 Q: ¿Puedo reclamar si ya vendí el coche?
 A: Puede ser posible, según la vía y el plazo. Consulte con su documentación de compra y de venta.
+
+### Discapacidad del Seguro Social (SSDI y SSI): cómo solicitarla y apelar
+URL: https://jurimatch.com/es/guias/discapacidad-seguro-social-ssdi-ssi
+
+Si una condición médica le impide trabajar durante al menos un año, puede tener derecho a beneficios por incapacidad del Seguro Social. Muchas solicitudes se niegan al principio, y la apelación tiene un plazo corto.
+
+Q: ¿Qué diferencia hay entre SSDI y SSI?
+A: El SSDI depende de lo que ha cotizado al Seguro Social; el SSI es para personas con pocos ingresos y recursos.
+
+Q: ¿Cuánto tiempo tengo para apelar si me niegan la incapacidad?
+A: 60 días desde que recibe la carta de negación, que se presume recibida cinco días después de su fecha.
+
+Q: ¿Cuánto cobra un abogado de discapacidad?
+A: Como máximo el 25 % de los beneficios atrasados, con un tope en dólares que fija el Seguro Social. Si no gana, no cobra honorarios.
 
 ### Enfermedad profesional por amianto: derechos y cómo reclamar
 URL: https://jurimatch.com/es/guias/enfermedad-profesional-amianto
@@ -2891,6 +2975,20 @@ A: Depende de lo pactado. Algunos despachos se quedan las costas además del por
 Q: ¿Qué pasa si cambio de abogado?
 A: Lo que diga la hoja de encargo. Muchas prevén un pago por el trabajo hecho hasta ese momento.
 
+### Honorarios de contingencia en EE. UU.: qué son y cuánto cobran
+URL: https://jurimatch.com/es/guias/honorarios-de-contingencia-estados-unidos
+
+En Estados Unidos, la mayoría de abogados de lesiones y accidentes cobran por contingencia: no le cobran nada al principio y se quedan un porcentaje de lo que recupere. Si no gana, no paga honorarios. Esto es lo que conviene saber antes de firmar.
+
+Q: ¿Cuánto cobra un abogado de accidentes en EE. UU.?
+A: Suele cobrar alrededor de un tercio de lo que se recupere si no hay demanda, y más, a menudo el 40 %, si hay que demandar. Depende del contrato y del estado.
+
+Q: ¿Si pierdo, tengo que pagar al abogado?
+A: Con un acuerdo de contingencia no paga honorarios si no recupera nada. Revise qué dice el contrato sobre los gastos del caso.
+
+Q: ¿El contrato tiene que estar por escrito?
+A: Sí. Las normas de la abogacía exigen que el acuerdo de contingencia sea por escrito y firmado por el cliente.
+
 ### Incapacidad permanente: grados, cuantía y cómo reclamar
 URL: https://jurimatch.com/es/guias/incapacidad-permanente
 
@@ -2944,6 +3042,20 @@ A: Un año desde el alta médica o la estabilización de las lesiones.
 Q: ¿Se indemnizan las secuelas?
 A: Sí, si un informe médico concluyente las acredita después del periodo de curación.
 
+### Accidente de construcción en Nueva York: la Ley de Andamios
+URL: https://jurimatch.com/es/guias/ley-de-andamios-nueva-york
+
+Nueva York tiene una de las leyes más protectoras del país para los trabajadores de la construcción: la llamada Ley de Andamios (Scaffold Law). Si cayó desde altura o le cayó un objeto en una obra, puede tener una reclamación fuerte contra el dueño y el contratista.
+
+Q: ¿Qué cubre la Ley de Andamios de Nueva York?
+A: Las lesiones por caídas desde altura o por objetos que caen en obras, cuando el dueño o el contratista no dieron la protección adecuada.
+
+Q: ¿Puedo reclamar si yo también tuve parte de la culpa?
+A: Bajo la sección 240(1), la culpa parcial del trabajador no impide reclamar si faltó la protección adecuada.
+
+Q: ¿Es lo mismo que la compensación de trabajadores?
+A: No. Es una demanda distinta contra el dueño y el contratista, que se suma a la compensación de trabajadores.
+
 ### Ley de Segunda Oportunidad: cómo cancelar deudas
 URL: https://jurimatch.com/es/guias/ley-segunda-oportunidad
 
@@ -2989,6 +3101,20 @@ A: Un año desde que se conoce el alcance de las lesiones.
 Q: ¿Y si el dueño no tiene seguro?
 A: Responde con su patrimonio. Revise si su seguro de hogar le cubre a usted o si el dueño tiene un seguro de hogar que cubra a sus animales.
 
+### Muerte por negligencia (wrongful death) en EE. UU.
+URL: https://jurimatch.com/es/guias/muerte-por-negligencia-estados-unidos
+
+Si un familiar murió por la negligencia de otra persona o empresa, en un accidente, en un hospital o en el trabajo, la ley permite a la familia reclamar. Nada compensa la pérdida, pero la demanda puede cubrir los gastos y el sustento perdido.
+
+Q: ¿Quién puede demandar por muerte injusta?
+A: Depende del estado: normalmente el cónyuge, los hijos y a veces los padres, o el representante de la herencia en nombre de ellos.
+
+Q: ¿Qué se puede reclamar?
+A: Gastos del funeral, los ingresos y el apoyo perdidos y, en muchos estados, la pérdida de compañía.
+
+Q: ¿Cuánto tiempo hay para demandar?
+A: En general dos o tres años desde la muerte, según el estado.
+
 ### Negligencia en el parto: cómo reclamar
 URL: https://jurimatch.com/es/guias/negligencia-en-el-parto
 
@@ -3031,6 +3157,20 @@ A: Un año desde que se conoce el alcance de las lesiones, normalmente el alta m
 Q: ¿Qué diferencia hay entre prescripción y caducidad?
 A: La prescripción se interrumpe con una reclamación y el plazo vuelve a empezar; la caducidad no se interrumpe, como en el despido.
 
+### Plazos para demandar por lesiones en EE. UU., por estado
+URL: https://jurimatch.com/es/guias/plazos-para-demandar-estados-unidos
+
+Cada estado fija su propio plazo para demandar por lesiones personales. Si pasa, el tribunal rechazará el caso aunque tenga toda la razón. Esta tabla es orientativa: confirme siempre el plazo de su caso con un abogado del estado.
+
+Q: ¿Cuánto tiempo tengo para demandar por un accidente en Texas?
+A: En general, dos años desde el accidente.
+
+Q: ¿Y en Florida?
+A: Dos años para casos de negligencia ocurridos desde la reforma de marzo de 2023; antes el plazo era de cuatro años.
+
+Q: ¿Y si el responsable es el gobierno?
+A: Hay que presentar un aviso de reclamación en un plazo mucho más corto, como seis meses en California o 90 días en Nueva York.
+
 ### Plusvalía municipal: cuándo se puede reclamar la devolución
 URL: https://jurimatch.com/es/guias/plusvalia-municipal
 
@@ -3069,6 +3209,20 @@ A: Todo lo relacionado con el caso: contratos, facturas, informes, cartas y mens
 
 Q: ¿Cómo comparo dos abogados?
 A: Por su experiencia en casos como el suyo, la claridad con la que explican riesgos y costes, y lo que ponen por escrito en la propuesta de honorarios.
+
+### Si pierdo el caso en EE. UU., ¿qué tengo que pagar?
+URL: https://jurimatch.com/es/guias/que-pago-si-pierdo-estados-unidos
+
+Con un abogado por contingencia no paga honorarios si pierde. Pero los honorarios no son lo único que cuesta un caso. Esto es lo que conviene aclarar antes de firmar.
+
+Q: ¿Si pierdo, pago al abogado de la otra parte?
+A: En general no: en Estados Unidos cada parte paga su propio abogado, salvo que una ley o un contrato digan otra cosa.
+
+Q: ¿Qué son los costs?
+A: Los gastos del caso, distintos de los honorarios: tasas, peritos, informes y transcripciones.
+
+Q: ¿Tengo que devolver los gastos si pierdo?
+A: Depende de su contrato. Muchos despachos los asumen, pero pregúntelo y que conste por escrito.
 
 ### Reclamación de cantidad: cómo usar el procedimiento monitorio
 URL: https://jurimatch.com/es/guias/reclamacion-de-cantidad-monitorio
@@ -3136,6 +3290,20 @@ A: Mediante una reclamación de responsabilidad patrimonial a la administración
 
 Q: ¿Qué pasa si la administración no contesta?
 A: A los seis meses la reclamación se entiende desestimada y puede presentar un recurso contencioso-administrativo.
+
+### Salarios no pagados y horas extra en EE. UU.: cómo reclamar
+URL: https://jurimatch.com/es/guias/salarios-no-pagados-y-horas-extra
+
+Si su empleador no le paga todas las horas, no le paga las horas extra o le paga por debajo del mínimo, puede reclamar. La ley federal protege a los trabajadores y, en muchos casos, el empleador debe pagar también los honorarios de su abogado.
+
+Q: ¿Cuándo me deben pagar horas extra?
+A: Si es empleado no exento, por las horas que pase de 40 a la semana, a tiempo y medio.
+
+Q: ¿Cuánto tiempo tengo para reclamar?
+A: Dos años, o tres si el empleador actuó de forma intencionada.
+
+Q: ¿Puedo reclamar si no tengo papeles?
+A: El Departamento de Trabajo aplica la ley de salarios sin tener en cuenta la situación migratoria del trabajador.
 
 ### Tarjetas revolving: cómo reclamar si los intereses son abusivos
 URL: https://jurimatch.com/es/guias/tarjetas-revolving
