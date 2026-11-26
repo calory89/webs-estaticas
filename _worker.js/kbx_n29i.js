@@ -88,9 +88,9 @@ function marketPage(D, m, lang) {
   const BUY = BUY_PLACES.filter(P => isC ? (CO_AL[P.c] || P.c) === m.co : (TRP.some(q => q.s === P.s) || slugA(mk) === P.s));
   const rows = L.slice().sort((a, b) => (D.score(b.id) ?? -1) - (D.score(a.id) ?? -1) || a.n.localeCompare(b.n)).map(x => {
     const h = handoverOf(ix, x), s = D.score(x.id);
-    return '<tr><td data-label="' + esc(t(lang, 'c_p')) + '"><a href="' + pre(lang) + '/projects/' + x.s + '/">' + bdi(x.n) + '</a></td><td data-label="' + esc(t(lang, 'c_dv')) + '">' +
-      (x.dv ? (x.dvs && ix.devs.has(x.dvs) ? '<a href="' + pre(lang) + '/developers/' + x.dvs + '/">' + bdi(x.dv) + '</a>' : bdi(x.dv)) : esc(t(lang, 'np'))) + '</td><td data-label="' + esc(t(lang, 'c_ar')) + '">' + (x.ar && x.ar !== x.mk ? bdi(placeName(x.ar, lang)) : '') +
-      '</td><td data-label="' + esc(t(lang, 'c_h')) + '">' + (h ? bdi(hdisp(h.d, lang)) : esc(t(lang, 'np'))) + '</td><td data-label="' + esc(t(lang, 'c_pn')) + '">' + esc(st.permit(x) ? t(lang, 'yes') : t(lang, 'no')) + '</td><td data-label="' + esc(t(lang, 'c_s')) + '">' + (s == null ? '-' : nf(lang, s)) + '</td></tr>';
+    return '<tr><td><a href="' + pre(lang) + '/projects/' + x.s + '/">' + bdi(x.n) + '</a></td><td>' +
+      (x.dv ? (x.dvs && ix.devs.has(x.dvs) ? '<a href="' + pre(lang) + '/developers/' + x.dvs + '/">' + bdi(x.dv) + '</a>' : bdi(x.dv)) : esc(t(lang, 'np'))) + '</td><td>' + (x.ar && x.ar !== x.mk ? bdi(placeName(x.ar, lang)) : '') +
+      '</td><td>' + (h ? bdi(hdisp(h.d, lang)) : esc(t(lang, 'np'))) + '</td><td>' + esc(st.permit(x) ? t(lang, 'yes') : t(lang, 'no')) + '</td><td>' + (s == null ? '-' : nf(lang, s)) + '</td></tr>';
   }).join('');
   const Q = [[t(lang, 'q1', v), t(lang, 'a1', v)], [t(lang, 'q2', v), t(lang, 'a2', Object.assign({}, v, { pn: nf(lang, st.pn), pp: nf(lang, pct(st.pn, st.n)) }))],
     [t(lang, 'q3', v), st.h && st.yTop ? t(lang, 'a3', Object.assign({}, v, { h: nf(lang, st.h), y: st.yTop[0], k: nf(lang, st.yTop[1]) })) : t(lang, 'a3n', v)],
@@ -109,7 +109,7 @@ function marketPage(D, m, lang) {
     '<h1>' + th(lang, 'm_h1', { p: H(bdi(p)) }) + '</h1><p class="lead">' + th(lang, 'm_lead', { p: H(bdi(p)), d }) + '</p></div>' +
     kvHtml([[nf(lang, st.n), t(lang, 'k_n')], [nf(lang, st.dv), t(lang, 'k_dv')], [nf(lang, st.pn) + ' (' + nf(lang, pct(st.pn, st.n)) + '%)', t(lang, 'k_pn')], [nf(lang, st.h) + ' (' + nf(lang, pct(st.h, st.n)) + '%)', t(lang, 'k_h')],
       [nf(lang, st.mv), t(lang, 'k_mv')], [nf(lang, st.ov), t(lang, 'k_ov')], [st.med == null ? '-' : nf(lang, st.med), t(lang, 'k_med')], [esc(d), t(lang, 'k_d')]]) +
-    '<h2 id="projects">' + esc(t(lang, 'tb')) + '</h2><div class="k-table-wrap"><table class="k-table k-table--dense k-table--stack"><thead><tr>' + ['c_p', 'c_dv', 'c_ar', 'c_h', 'c_pn', 'c_s'].map(k => '<th scope="col">' + esc(t(lang, k)) + '</th>').join('') + '</tr></thead><tbody>' + rows + '</tbody></table></div>' +
+    '<h2 id="projects">' + esc(t(lang, 'tb')) + '</h2><style>@media (max-width:640px){' + ['c_p', 'c_dv', 'c_ar', 'c_h', 'c_pn', 'c_s'].map((k, i) => '.k40m td:nth-child(' + (i + 1) + ')::before{content:"' + String(t(lang, k)).replace(/[\\"<>]/g, '') + '"}').join('') + '}</style><div class="k-table-wrap"><table class="k-table k-table--dense k-table--stack k40m"><thead><tr>' + ['c_p', 'c_dv', 'c_ar', 'c_h', 'c_pn', 'c_s'].map(k => '<th scope="col">' + esc(t(lang, k)) + '</th>').join('') + '</tr></thead><tbody>' + rows + '</tbody></table></div>' +
     (isC && TR_PLACES.some(P => P.coi && (CO_AL[P.co] || P.co) === m.co) ? '<p class="k-small k-muted">' + esc(t(lang, 'coi_n')) + ' <a href="/independence/" hreflang="en">' + esc(t(lang, 'coi_l')) + '</a></p>' : '') +   // n40 k4 (R04-02): neutral conflict-of-interest line, no place named
     faqHtml(t(lang, 'faq', { p }), Q) + (BPL.some(P => P.mk === mk) ? buyerLinks(lang, mk).replace('<section class="k29-q"><div class="k-wrap wrap">', '').replace('</div></section>', '') : '') + '<h2 id="more">' + th(lang, 'more', { p: H(bdi(p)) }) + '</h2><ul class="k29-l">' + links.map(a => '<li>' + a + '</li>').join('') + '</ul><p class="k-small k-muted">' + esc(t(lang, 'src')) + ' <a href="/data/named.json">named.json</a> · <a href="/data/promises.json">promises.json</a></p></div></section></div>';
   const url = ORIGIN + pre(lang) + path;
