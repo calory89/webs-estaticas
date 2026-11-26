@@ -19,6 +19,30 @@
   // total
   function radio(n){var x=document.querySelector('input[name="'+n+'"]:checked');return x?x.value:''}
   document.querySelectorAll('input[name="wk"]').forEach(function(r){r.addEventListener('change',function(){$('tot').textContent='€'+(6500*+radio('wk')).toLocaleString('en-GB')})});
+  // calculator
+  var yr=$('yrs');function calc(){var y=+yr.value,n=y*6,p=Math.round(6500/n);$('yrsn').textContent=y;$('nights').textContent=n;$('ppn').textContent='€'+p;$('pppn').textContent='€'+Math.round(p/2)}
+  if(yr){yr.addEventListener('input',calc);calc()}
+  // summary
+  function sum(){var w=+radio('wk'),se=radio('se');$('sum').textContent=w+(w>1?' weeks':' week')+' a year · '+(se==='Flexible'?'flexible season':se.replace('-','–'))+' · for 2 people'}
+  document.querySelectorAll('#rf input[type=radio]').forEach(function(r){r.addEventListener('change',sum)});
+  // draft
+  var F=['fn','em','co','wa'];try{var d=JSON.parse(LS.get('lik_draft')||'null');if(d)F.forEach(function(k){if(d[k])$(k).value=d[k]})}catch(e){}
+  $('rf').addEventListener('input',function(){var d={};F.forEach(function(k){d[k]=$(k).value});LS.set('lik_draft',JSON.stringify(d))});
+  // inline validation
+  $('em').addEventListener('blur',function(){this.classList.toggle('bad',!!this.value&&!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(this.value))});
+  $('fn').addEventListener('blur',function(){this.classList.toggle('bad',!!this.value&&this.value.trim().length<2)});
+  // lightbox
+  var lb=$('lb');document.querySelectorAll('#gal img,img.zoom').forEach(function(i){i.addEventListener('click',function(){lb.querySelector('img').src=i.src;lb.querySelector('img').alt=i.alt;lb.hidden=false})});
+  lb.addEventListener('click',function(){lb.hidden=true});addEventListener('keydown',function(e){if(e.key==='Escape'){lb.hidden=true;$('exit').hidden=true}});
+  // exit intent (desktop, once per session)
+  var shown=false;try{shown=sessionStorage.getItem('lik_exit')}catch(e){}
+  document.addEventListener('mouseout',function(e){if(shown||e.relatedTarget||e.clientY>10||LS.get('lik_ref'))return;shown=true;try{sessionStorage.setItem('lik_exit','1')}catch(x){}$('exit').hidden=false});
+  $('exitx').addEventListener('click',function(){$('exit').hidden=true});$('exitgo').addEventListener('click',function(){$('exit').hidden=true});
+  // active nav
+  var links=[].slice.call(document.querySelectorAll('.nav ul a'));var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'))});
+  addEventListener('scroll',function(){var y=scrollY+120,cur=-1;secs.forEach(function(s,i){if(s&&s.offsetTop<=y)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})},{passive:true});
+  // copy ref
+  $('copy').addEventListener('click',function(){try{navigator.clipboard.writeText($('refno').textContent);this.textContent='Copied'}catch(e){}});
   // submit
   var LIVE=/(^|\.)longevityisland\.(org|com)$/.test(location.hostname);
   var SB={url:location.origin+'/__sb/lacliniqueswiss',key:'sb_publishable_WWMM9pbZfP4hJosLJlTobg_lWFGoJ3X'};
@@ -28,14 +52,14 @@
     var name=$('fn').value.trim(),em=$('em').value.trim(),c=co.value;
     if(name.length<2)return err('Please add your full name.');
     if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em))return err('Please check your email, it should look like name@example.com.');
-    if(!c)return err('Please choose your country.');
+    if(!c){$('co').classList.add('bad');return err('Please choose your country.')}
     if(!$('ok').checked)return err('Please tick the box so we can email you about your reservation.');
     if($('website').value)return;
     var ref='LI-K-'+Math.random().toString(36).slice(2,6).toUpperCase();
     var row={name:name,email:em,phone:$('wa').value.trim()||null,consent:true,source:'karimunjawa/reserve',message:JSON.stringify({ref:ref,country:c,weeks:+radio('wk'),season:radio('se'),price_eur:6500*+radio('wk'),attr:a||{}})};
-    var b=$('sb');b.disabled=true;b.textContent='Reserving…';
+    var b=$('sb');b.disabled=true;b.textContent='Reserving your week…';
     (LIVE?fetch(SB.url+'/rest/v1/dossier_leads',{method:'POST',headers:{apikey:SB.key,Authorization:'Bearer '+SB.key,'Content-Type':'application/json',Prefer:'return=minimal'},body:JSON.stringify(row)}).then(function(r){if(!r.ok)throw 0}):Promise.resolve()).then(function(){
-      $('rf').hidden=true;$('done').hidden=false;$('refno').textContent=ref;LS.set('lik_ref',ref);
+      $('rf').hidden=true;$('done').hidden=false;$('refno').textContent=ref;LS.set('lik_ref',ref);LS.set('lik_draft','');var ce=new Date(Date.now()+14*864e5);$('coolend').textContent=ce.toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'});
       $('share').href='https://wa.me/?text='+encodeURIComponent('I just reserved a week at Longevity Island in Karimunjawa: one week a year for 50 years, €6,500 for two. Take a look: '+location.origin+location.pathname);
       try{if(window.fbq)fbq('track','Lead')}catch(e){}
     }).catch(function(){b.disabled=false;b.textContent='Reserve my week, free →';err('Something went wrong. Please try again in a minute.')});
