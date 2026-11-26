@@ -22,7 +22,7 @@
   var slug = String(q.get('project') || ''); if (!/^[a-z0-9-]{1,120}$/.test(slug)) slug = '';
   var esc = function(s){ return String(s == null ? '' : s).replace(/[&<>"]/g, function(c){ return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]; }); };
   var $ = function(i){ return i ? (document.getElementById(i) || (F.elements[i] && F.elements[i].tagName ? F.elements[i] : null)) : null; };
-  function fire(){ try { F.dispatchEvent(new Event('input', { bubbles: true })); F.dispatchEvent(new Event('change', { bubbles: true })); } catch (e) {} }
+  function fire(){ try { if (cfg.fire === 'each') { [cfg.p, cfg.d, cfg.c].forEach(function(i){ var e = $(i); if (e) e.dispatchEvent(new Event('input', { bubbles: true })); }); return; } F.dispatchEvent(new Event('input', { bubbles: true })); F.dispatchEvent(new Event('change', { bubbles: true })); } catch (e) {} }   // n40 k14: data-fire="each" for tools that listen on each field (payment risk)
   function setSel(el, v){ if (el && Array.prototype.some.call(el.options, function(o){ return o.value === v; })) { el.value = v; return true; } return false; }
   // a handover written as 2029-05 or 2025-Q3 is taken as the last day of that month or quarter
   function hoDate(v){

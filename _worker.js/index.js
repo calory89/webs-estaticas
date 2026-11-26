@@ -449,7 +449,7 @@ async function h29Inject(req, u, env, r) {
 // clean URL (before, any query string skipped them and rebuilt the page); functional queries (?q=, ?p=, ?m= ...) still render fresh
 const KB_TRACKQ = /^(utm_[a-z_]+|gclid|gbraid|wbraid|fbclid|msclkid|mc_[a-z]+|igshid|ref|_ga)$/i;
 const kbClean = u => !u.search || [...u.searchParams.keys()].every(k => KB_TRACKQ.test(k));
-const KB_EDGE = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:m\/[^/.]{2,60}|engineering\/status|yc|new)\/$/, KB_EDGE_BUSY = new Set();
+const KB_EDGE = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:m\/[^/.]{2,60}|engineering\/status|yc|new)\/$/, KB_EDGE_BUSY = (() => { const M = new Map(); return { has: k => M.has(k) && Date.now() - M.get(k) < 60000, add: k => M.set(k, Date.now()), delete: k => M.delete(k) }; })()   /* n40 k14: a rebuild cut off by the platform no longer blocks every later one in the isolate (the sitemaps stayed hours old) */;
 async function kbEdge(req, u, env, ctx, make) {
   if (req.method !== 'GET' || !kbClean(u) || typeof caches === 'undefined' || !KB_EDGE.test(u.pathname)) return make();
   const ck = new Request('https://kolaboro.com/__edge/v1' + u.pathname), sha = String((env && env.CF_PAGES_COMMIT_SHA) || '');
