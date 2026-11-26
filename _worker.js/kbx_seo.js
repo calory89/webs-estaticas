@@ -352,22 +352,34 @@ function pairs(B) {
   for (const L of groups.values()) { L.sort((a, b) => a.id.localeCompare(b.id)); for (let i = 0; i < L.length; i++) for (let j = i + 1; j < L.length; j++) { const a = L[i], b = L[j]; if ((used.get(a.id) || 0) >= 2 || (used.get(b.id) || 0) >= 2) continue; out.push([a, b]); used.set(a.id, (used.get(a.id) || 0) + 1); used.set(b.id, (used.get(b.id) || 0) + 1); } }
   MEMO.__pairs = { k: B.d.updated + B.N.projects.size, v: out }; return out;
 }
-const pairPath = (a, b) => '/vs/' + a.id.toLowerCase() + '-vs-' + b.id.toLowerCase() + '/';
-function pVs(B, key) {
+const pslug = (B, c) => { const e = B.N.projects.get(c.id), m = e && /\/projects\/([a-z0-9-]+)\/$/.exec(e.loc); return m ? m[1] : c.id.toLowerCase(); };   // n40 R03-01: /vs/ pairs by project slug, the id form 301s
+const pairPath = (B, a, b) => { const x = pslug(B, a), y = pslug(B, b); return '/vs/' + (x < y ? x + '-vs-' + y : y + '-vs-' + x) + '/'; };
+const VS_PER = 150;
+function pVs(B, key, u) {
   const P = pairs(B), up = B.d.updated;
   if (!key) {
     const by = new Map(); for (const [a, b] of P) { if (!by.has(a.market)) by.set(a.market, []); by.get(a.market).push([a, b]); }
-    let body = '<div class="sx-sum"><p><b>' + P.length + ' side-by-side comparisons of off-plan projects in the same market, at the same stage and in the same price band.</b> Facts only, from the open dataset.</p></div>' + (P.length ? [...by.entries()].map(([m, l]) => h2(slug(m), m) + '<ul class="sx-l">' + l.map(([a, b]) => '<li><a href="' + pairPath(a, b) + '">' + esc(pname(B, a)) + ' vs ' + esc(pname(B, b)) + '</a></li>').join('') + '</ul>').join('') : '<p>Comparisons appear once projects have public pages with their names.</p>');
-    return render({ path: '/vs/', title: 'Off-plan project comparisons: facts side by side | Kolaboro', h1: 'Compare off-plan projects', desc: P.length + ' comparisons of off-plan projects in the same market, stage and price band: permits, deposit protection, handover dates, delays.', updated: up, type: 'CollectionPage', crumbs: [['Kolaboro', '/'], ['Comparisons', '/vs/']], body, noindex: !P.length });
+    // n40 R03-26: 150 pairs per page (?p=2 ...), market chips jump to the page holding the market
+    const flat = []; for (const [m, l] of by) for (const pr of l) flat.push([m, pr]);
+    const NP = Math.max(1, Math.ceil(flat.length / VS_PER)), pg = Math.min(NP, Math.max(1, parseInt((u && u.searchParams.get('p')) || '1', 10) || 1)), lo = (pg - 1) * VS_PER, hi = lo + VS_PER;
+    const pU = n => '/vs/' + (n > 1 ? '?p=' + n : ''), start = new Map(); flat.forEach(([m], i) => { if (!start.has(m)) start.set(m, Math.floor(i / VS_PER) + 1); });
+    const pager = NP < 2 ? '' : '<nav class="sx-pg" aria-label="Pages"><p><span>' + (lo + 1) + '-' + Math.min(hi, flat.length) + ' / ' + flat.length + '</span> ' + Array.from({ length: NP }, (_, i) => i + 1).map(n => n === pg ? '<b aria-current="page">' + n + '</b>' : '<a href="' + pU(n) + '"' + (n === pg - 1 ? ' rel="prev"' : n === pg + 1 ? ' rel="next"' : '') + '>' + n + '</a>').join(' ') + '</p></nav>';
+    const G = new Map(); for (const [m, pr] of flat.slice(lo, hi)) { if (!G.has(m)) G.set(m, []); G.get(m).push(pr); }
+    let body = '<div class="sx-sum"><p><b>' + P.length + ' side-by-side comparisons of off-plan projects in the same market, at the same stage and in the same price band.</b> Facts only, from the open dataset.</p></div>' + (P.length ? (NP > 1 ? '<ul class="sx-chips">' + [...by.entries()].map(([m, l]) => '<li><a href="' + (start.get(m) === pg ? '' : pU(start.get(m))) + '#' + slug(m) + '">' + esc(m) + ' (' + l.length + ')</a></li>').join('') + '</ul>' : '') + pager + [...G.entries()].map(([m, l]) => { const cont = start.get(m) < pg; return h2(cont ? slug(m) + '-' + pg : slug(m), m + (cont ? ' (continued)' : '')) + '<ul class="sx-l">' + l.map(([a, b]) => '<li><a href="' + pairPath(B, a, b) + '">' + esc(pname(B, a)) + ' vs ' + esc(pname(B, b)) + '</a></li>').join('') + '</ul>'; }).join('') + pager : '<p>Comparisons appear once projects have public pages with their names.</p>');
+    return render({ path: pU(pg), title: 'Off-plan project comparisons: facts side by side' + (pg > 1 ? ', page ' + pg : '') + ' | Kolaboro', h1: 'Compare off-plan projects', desc: P.length + ' comparisons of off-plan projects in the same market, stage and price band: permits, deposit protection, handover dates, delays.', updated: up, type: 'CollectionPage', crumbs: [['Kolaboro', '/'], ['Comparisons', '/vs/']], body, noindex: !P.length || pg > 1 });
   }
-  let pr = P.find(([a, b]) => pairPath(a, b) === '/vs/' + key + '/');
-  if (!pr) { const mk = /^([a-z0-9]+-[0-9]+)-vs-([a-z0-9]+-[0-9]+)$/.exec(key); if (!mk || mk[1] === mk[2]) return null; const f = id => B.cases.find(c => c.id.toLowerCase() === id && B.N.projects.has(c.id)); const a = f(mk[1]), b = f(mk[2]); if (!a || !b || a.market !== b.market || !a.stage || a.stage !== b.stage || !a.band || a.band !== b.band) return null; pr = [a, b]; }
+  let pr = P.find(([a, b]) => pairPath(B, a, b) === '/vs/' + key + '/');
+  if (!pr) { const mk = /^([a-z0-9]+-[0-9]+)-vs-([a-z0-9]+-[0-9]+)$/.exec(key); let a, b;
+    if (mk) { const f = id => B.cases.find(c => c.id.toLowerCase() === id && B.N.projects.has(c.id)); a = f(mk[1]); b = f(mk[2]); }
+    else { const bs = new Map(); for (const c of B.cases) if (B.N.projects.has(c.id)) bs.set(pslug(B, c), c);
+      for (let i = key.indexOf('-vs-'); i > 0 && !(a && b); i = key.indexOf('-vs-', i + 1)) { a = bs.get(key.slice(0, i)); b = bs.get(key.slice(i + 4)); } }
+    if (!a || !b || a === b) return null; if (!a || !b || a.market !== b.market || !a.stage || a.stage !== b.stage || !a.band || a.band !== b.band) return null; if ('/vs/' + key + '/' !== pairPath(B, a, b)) return { redirect: pairPath(B, a, b) }; pr = [a, b]; }
   const [a, b] = pr, la = lateMonths(B, a), lb = lateMonths(B, b), na = pname(B, a), nb = pname(B, b);
   const row = (k, f) => '<tr><th scope="row">' + k + '</th><td>' + f(a, la) + '</td><td>' + f(b, lb) + '</td></tr>';
   const rows = [row('Where', c => esc(place(c)) + ', ' + esc(c.country)), row('Stage', c => esc(c.stage)), row('Price band', c => esc(c.band)), row('Handover year advertised', c => c.done || 'not published'), row('First handover date on record', (c, l) => l ? ymName(l.first + '-01') : 'not published'), row('Months past first handover date', (c, l) => l ? (l.late > 0 ? l.late : 'not past') : 'no date'), row('Title', c => esc(c.title || 'not published') + (c.lease ? ' (' + c.lease + ' years)' : ''))]
     .concat(CHECKS.map(k => row(CKN[k], c => (isPub(c, k) ? 'public' : 'not public') + (isConf(c, k) ? ', confirmed' : '')))).concat([row('Checks public', c => c.score + '/6'), row('Confirmed by register or independent source', c => (c.vscore || 0) + '/6'), row('Developer claims contradicted', c => (c.claims || {}).contradicted || 0), row('Last checked', c => esc(c.checked))]);
   const body = '<div class="sx-sum" id="summary"><p><b>' + esc(na) + ' and ' + esc(nb) + ' are both ' + esc(a.stage) + ' projects in ' + esc(a.market) + ' in the ' + esc(a.band) + ' band.</b> ' + esc(na) + ' makes ' + a.score + ' of 6 buyer checks public (' + (a.vscore || 0) + ' confirmed); ' + esc(nb) + ' makes ' + b.score + ' public (' + (b.vscore || 0) + ' confirmed).</p></div><div class="sx-tw"><table class="ptable"><thead><tr><th scope="col">Fact</th><th scope="col"><a href="' + plink(B, a) + '">' + esc(na) + '</a></th><th scope="col"><a href="' + plink(B, b) + '">' + esc(nb) + '</a></th></tr></thead><tbody>' + rows.join('') + '</tbody></table></div><p>More in <a href="/m/' + slugM(a.market) + '/">' + esc(a.market) + '</a> · <a href="/countries/' + slug(a.country) + '/">' + esc(a.country) + '</a> · <a href="/vs/">all comparisons</a></p>' + REPLY;
-  return render({ path: pairPath(a, b), title: na + ' vs ' + nb + ': permits, delivery dates, facts compared | Kolaboro', h1: na + ' vs ' + nb, lead: 'Two off-plan projects in ' + esc(a.market) + ', compared on the same public facts.', desc: na + ' vs ' + nb + ' (' + a.market + '): ' + a.score + '/6 vs ' + b.score + '/6 buyer checks public, handover ' + (a.done || 'n/a') + ' vs ' + (b.done || 'n/a') + ', permits and deposit protection side by side.', updated: up, crumbs: [['Kolaboro', '/'], ['Comparisons', '/vs/'], [na + ' vs ' + nb, pairPath(a, b)]], body });
+  return render({ path: pairPath(B, a, b), title: na + ' vs ' + nb + ': permits, delivery dates, facts compared | Kolaboro', h1: na + ' vs ' + nb, lead: 'Two off-plan projects in ' + esc(a.market) + ', compared on the same public facts.', desc: na + ' vs ' + nb + ' (' + a.market + '): ' + a.score + '/6 vs ' + b.score + '/6 buyer checks public, handover ' + (a.done || 'n/a') + ' vs ' + (b.done || 'n/a') + ', permits and deposit protection side by side.', updated: up, crumbs: [['Kolaboro', '/'], ['Comparisons', '/vs/'], [na + ' vs ' + nb, pairPath(B, a, b)]], body });
 }
 function pRankings(B) {
   const mw = marketsWithDelays(B);
@@ -470,7 +482,7 @@ async function hubUrls(B) {
   out.push({ loc: SITE + '/rankings/', lastmod: maxLm(B, B.cases, [asOf]), t: 'rankings' }, { loc: SITE + '/rankings/most-delayed/', lastmod: maxLm(B, dl, [asOf]), t: 'rankings' }, { loc: SITE + '/rankings/changed-promises/', lastmod: maxLm(B, B.cases.filter(c => drift[c.id])), t: 'rankings' }, { loc: SITE + '/new/', lastmod: maxLm(B, B.all.filter(c => !reviewed(c) || (A.get(c.id) || '').slice(0, 7) === m0.slice(0, 7)), [m0]), t: 'rankings' }, { loc: SITE + '/embed/widgets/', lastmod: maxLm(B, B.all), t: 'rankings' });
   out.push({ loc: SITE + '/press/delivery-index/', lastmod: (diMonths(B)[0] || {}).taken || up, t: 'rankings' }); for (const h of diMonths(B)) out.push({ loc: SITE + '/press/delivery-index/' + h.month + '/', lastmod: h.taken, t: 'rankings' });
   for (const [m] of marketsWithDelays(B)) out.push({ loc: SITE + '/rankings/most-delayed/' + slug(m) + '/', lastmod: maxLm(B, dl.filter(c => c.market === m), [asOf]), t: 'rankings' });
-  const P = pairs(B); if (P.length) { out.push({ loc: SITE + '/vs/', lastmod: maxLm(B, P.flat()), t: 'compare' }); for (const [a, b] of P) out.push({ loc: SITE + pairPath(a, b), lastmod: maxLm(B, [a, b]), t: 'compare' }); }
+  const P = pairs(B); if (P.length) { out.push({ loc: SITE + '/vs/', lastmod: maxLm(B, P.flat()), t: 'compare' }); for (const [a, b] of P) out.push({ loc: SITE + pairPath(B, a, b), lastmod: maxLm(B, [a, b]), t: 'compare' }); }
   for (const o of out) if (o.lastmod) o.lastmod = String(o.lastmod).slice(0, 10);
   return out;
 }
@@ -654,7 +666,7 @@ export async function handle(req, u, env, ctx, shell, inner) {
   if (p === '/' + INDEXNOW_KEY + '.txt') return new Response(INDEXNOW_KEY, { headers: { 'content-type': 'text/plain; charset=utf-8', 'cache-control': 'public, max-age=86400' } });
   if (p === '/api/seo/lastmod') return lastmodRoute(env);   // batch 15: true lastmod state (published as /data/lastmod.json by the SEO workflow)
   if (/^\/(countries|rankings|vs|new|embed\/(delay|project|widgets)|engineering\/seo|press\/delivery-index)(\/[^?#.]*)?$/.test(p) && !p.endsWith('/')) return new Response(null, { status: 301, headers: { location: p + '/' + u.search } });
-  const ckey = req.method === 'GET' && (!u.search || [...u.searchParams.keys()].every(k => /^(utm_[a-z_]+|gclid|gbraid|wbraid|fbclid|msclkid|mc_[a-z]+|igshid|ref|_ga)$/i.test(k))) && env && env.CF_PAGES_COMMIT_SHA && /^\/(countries|rankings|vs|new|press\/delivery-index|embed\/widgets)\//.test(p) && typeof caches !== 'undefined' ? new Request(SITE + '/__seo_html/v2/' + env.CF_PAGES_COMMIT_SHA + p) : null;
+  const ckey = req.method === 'GET' && (!u.search || [...u.searchParams.keys()].every(k => /^(utm_[a-z_]+|gclid|gbraid|wbraid|fbclid|msclkid|mc_[a-z]+|igshid|ref|_ga)$/i.test(k) || (k === 'p' && /^\d{1,3}$/.test(u.searchParams.get('p'))))) && env && env.CF_PAGES_COMMIT_SHA && /^\/(countries|rankings|vs|new|press\/delivery-index|embed\/widgets)\//.test(p) && typeof caches !== 'undefined' ? new Request(SITE + '/__seo_html/v2/' + env.CF_PAGES_COMMIT_SHA + p + (u.searchParams.get('p') ? '?p=' + u.searchParams.get('p') : '')) : null;
   if (ckey) { try { const hit = await caches.default.match(ckey); if (hit) { const h = new Headers(hit.headers); h.set('x-seo-cache', 'hit'); h.set('cache-control', 'no-cache'); return new Response(hit.body, { status: hit.status, headers: h }); } } catch (e) {} }
   let B; try { B = await base(env, inner); } catch (e) { return new Response('Data temporarily unavailable', { status: 503, headers: { 'retry-after': '60', 'content-type': 'text/plain' } }); }
   if (p === '/sitemap_index.xml') { B.inner = inner; B.ctx = ctx; return sitemaps(env, B, 'index'); }
@@ -677,13 +689,14 @@ export async function handle(req, u, env, ctx, shell, inner) {
   else if ((m = /^\/rankings\/most-delayed\/([a-z0-9-]+)\/$/.exec(p))) { const mk = marketsWithDelays(B).find(([x]) => slug(x) === m[1]); R = mk ? pDelayed(B, mk[0]) : null; }
   else if (p === '/rankings/changed-promises/') R = pChanged(B);
   else if (p === '/new/') R = pNew(B, u);
-  else if (p === '/vs/') R = pVs(B, null);
+  else if (p === '/vs/') R = pVs(B, null, u);
   else if ((m = /^\/vs\/([a-z0-9-]+)\/$/.exec(p))) R = pVs(B, m[1]);
   else if (p === '/embed/widgets/') R = pWidgets(B);
   else if (p === '/engineering/seo/') { B.inner = inner; R = await pSeo(env, B); }
   else if (p === '/press/delivery-index/') R = pDeliveryIndex(B, null);
   else if ((m = /^\/press\/delivery-index\/(\d{4}-\d{2})\/$/.exec(p))) R = pDeliveryIndex(B, m[1]);
   if (!R) return nf();
+  if (R.redirect) return new Response(null, { status: 301, headers: { location: R.redirect } });
   const res = await shellOut(shell, R);
   if (!ckey || res.status !== 200) return res;
   const html = await res.text(), h = new Headers(res.headers); h.set('cache-control', 'max-age=3600');
