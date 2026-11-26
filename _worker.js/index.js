@@ -57,6 +57,7 @@ let kn30 = null; const KN30 = /^\/k\/n30a(?:-cr)?\.js$|^\/api\/v1\/slippage(?:\.
 let ku26 = null; const KU26 = /^\/api\/v1\/(?:facets|followers)$|^\/api\/x\/status\/pages\/?$|^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?compare\/?$/;   // n26u (batch 26): named compare ?p=, facets for /projects/ filters, follower counts, key-page sweep (keep equal to PATHS in kbx_u26.js)
 let ktr = null; const KTR = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:rankings\/transparency(?:\/[a-z0-9-]{2,40})?|methods\/transparency-score)\/?$|^\/rankings\/transparency\/sitemap\.xml$/;   // n23 (batch 23): transparency rankings, 30 islands and 30 cities, 8 languages (keep equal to PAGE_RX + SITEMAP in kbx_tr.js)
 let k29i = null; const K29I = /^\/(?:es|de|fr|nl|ru|zh|ar)\/(?:countries|rankings)(?:\/[a-z0-9-]{2,60})?\/?$|^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?guides\/buyers-from(?:\/(?:russia|china|gulf))?\/?$|^\/(?:es|de|fr|nl|ru|zh|ar)\/m\/[^/.]{2,60}\/?$|^\/m\/sitemap\.xml$|^\/answers\/questions\.(?:md|json)$/;   // n29i (batch 29): translated market files, their sitemap, questions answered from data (keep equal to PATHS in kbx_n29i.js)
+const ORIGIN_KB_GH = 'https://kolaboro.com';   // n40 r1d
 let kbuy = null; const KBUY = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?guides\/buying-off-plan(?:\/[a-z-]{2,30})?\/?$|^\/guides\/buying-off-plan\/sitemap\.xml$|^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?glossary\/(?:escrow|leasehold|payment-plan)\/?$|^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?tools\/total-cost\/(?:dubai|costa-del-sol|portugal|thailand|indonesia|england|turkey)\/?$/;   // n27c (batch 27): buying off-plan guides by place (see kbx_buy.js)
 let krul = null; const KRUL = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?guides\/short-let-rules\/?$/;   // n21c (batch 21): short-let rules by city (see kbx_rules.js)
 let kstg = null; const KSTG = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?methods\/construction-stage\/?$/;   // n18b (batch 18): construction stage method page (see kbx_stage.js)
@@ -596,7 +597,9 @@ export default {
       if (!kn37u) kn37u = await import('./kbx_n37u.js'); if (!kseo) kseo = await import('./kbx_seo.js');
       const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
       const inner = p => this.fetch(new Request(new URL(p, u), { headers: { accept: 'application/json' } }), env, ctx);
-      try { const r = await kn37u.guidesHub(req, u, env, shell, () => kseo.guideIndex(env, inner)); if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r; } catch (e) {}
+      try { const ck = new Request(ORIGIN_KB_GH + u.pathname + '?kb_gh=2'); let r = req.method === 'GET' && u.pathname.endsWith('/') ? await caches.default.match(ck) : null;   // built from the whole dataset (4-6 s), so kept at the edge for an hour
+        if (!r) { r = await kn37u.guidesHub(req, u, env, shell, () => kseo.guideIndex(env, inner)); if (r && r.status === 200) { const c = new Response(r.clone().body, r); c.headers.set('cache-control', 'public, max-age=3600'); ctx.waitUntil(caches.default.put(ck, c)); } }
+        if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r; } catch (e) {}
     }
     // kolaboro.com (r1u, batch 37): /[lang/]projects/<slug>/record/, /[lang/]data/gaps/ (see kbx_n37u.js)
     if (host === 'kolaboro.com' && (KN37U.test(u.pathname) || KN39T1.test(u.pathname))) {   // n39 t1: + KN39T1
