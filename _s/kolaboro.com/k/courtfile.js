@@ -96,7 +96,7 @@
       var pr = JSON.parse(g.text);
       return Promise.all([sha(g.text), sigOk(g, key), KV.verifyProof(pr), stampOf_(g)]).then(function (v) {
         ex.push({ ref: 'proof', title: 'Developer page fingerprint and Merkle proof', kind: 'signed API answer', g: g, sha256: v[0], sig_ok: v[1], proof_ok: v[2], ots: v[3], projects_root: pr.projects_root,
-          origin: 'Kolaboro research agent: SHA-256 of the developer page text it read on ' + (pr.page_fingerprint_date || 'the date shown'),
+          origin: 'Kolaboro crawler: SHA-256 of the developer page text it read on ' + (pr.page_fingerprint_date || 'the date shown'),
           summary: ['Page fingerprint ' + pr.line.split(' ')[1] + ' read ' + (pr.page_fingerprint_date || '-') + '.', 'Leaf ' + (pr.index + 1) + ' of ' + pr.leaves + '; ' + pr.path.length + ' hashes lead to root ' + pr.projects_root + '. Recomputed in this browser: ' + (v[2] ? 'matches' : 'DOES NOT MATCH') + '.'] });
       });
     }).then(function () {

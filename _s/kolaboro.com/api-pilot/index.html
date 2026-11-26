@@ -47,7 +47,7 @@
 <div class="hero-cta"><a class="btn btn-hi" href="#key">Get a pilot key</a><a class="btn btn-line" href="/api/v1" target="_blank" rel="noopener">See the JSON index</a></div></div></section>
 <section class="sec alt"><div class="wrap"><h2>Endpoints</h2><table class="ap-t"><tr><th>Call</th><th>What it does</th></tr>
 <tr><td><code>GET /api/v1/markets</code></td><td>What developers advertise in the <span data-db="markets">195</span> markets we track: title types, lease terms, extension promises, guaranteed-return language, permit numbers published, price bands. Advertised claims, not verified facts.</td></tr>
-<tr><td><code>GET /api/v1/cases</code></td><td>Anonymised Bali projects the research agent follows, with the questions a buyer must get answered.</td></tr>
+<tr><td><code>GET /api/v1/cases</code></td><td>Anonymised Bali projects the crawler follows, with the questions a buyer must get answered.</td></tr>
 <tr><td><code>POST /api/v1/projects/check</code><br><small>{"url": "…"}</small></td><td>Desk review of a project page: promises, what it leaves out, what to ask before paying.</td></tr>
 <tr><td><code>POST /api/v1/documents/read</code><br><small>{"type","files","claim","lang"}</small></td><td>Reads a land certificate, sale contract, permit, company deed or invoice (photos or PDF, 8 answer languages) and compares it with what the seller claimed.</td></tr>
 <tr><td><code>GET /api/v1/verify/{sha256}</code></td><td>Whether a file's fingerprint has an OpenTimestamps proof, and the Bitcoin block once confirmed.</td></tr>

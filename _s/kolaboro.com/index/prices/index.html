@@ -69,14 +69,14 @@
 <div id="piOff"></div>
 <h2>How it is computed</h2>
 <ol class="pi-m">
-<li><b>Observation.</b> A project counts on a given day only if our research agent re-read its page that day and found a positive advertised "from" price with a currency. A value carried over from an earlier day is not an observation.</li>
+<li><b>Observation.</b> A project counts on a given day only if our crawler re-read its page that day and found a positive advertised "from" price with a currency. A value carried over from an earlier day is not an observation.</li>
 <li><b>Pair.</b> The same project, observed on two consecutive snapshots, in the same currency. Projects that changed currency between the two are left out and counted.</li>
 <li><b>Jumps left out.</b> A step of more than 25 percent up or down is left out and counted. In our data such jumps are nearly always a different unit type, a currency mix-up or a misread page, not a price change. We do not correct them.</li>
 <li><b>Step.</b> The geometric mean of new price divided by old price over the kept pairs (a chained Jevons index). Unchanged prices count as no change. A step needs at least 5 pairs.</li>
 <li><b>Chain.</b> The index starts at 100 on the market's base date and multiplies the steps since then. If a step is too thin, the chain is not bridged across it: the base moves to after the gap.</li>
 </ol>
 <p>Limits: an advertised "from" price is the cheapest unit on offer, so it moves when that unit sells out as well as when a developer reprices. Prices are read from web pages automatically and can be misread. Snapshots are not evenly spaced. Per-project amounts and names are not published, only percentage changes and counts.</p>
-<p class="pi-fine">Data: <a href="/data/price-index.json">/data/price-index.json</a> (CC BY 4.0), rebuilt every day after the research agent's run. Inputs and their SHA-256: <span id="piIn">&hellip;</span>. Related: <a href="/prices/">advertised prices versus registered sales</a>, <a href="/database/">the database</a>.</p>
+<p class="pi-fine">Data: <a href="/data/price-index.json">/data/price-index.json</a> (CC BY 4.0), rebuilt every day after the crawler's run. Inputs and their SHA-256: <span id="piIn">&hellip;</span>. Related: <a href="/prices/">advertised prices versus registered sales</a>, <a href="/database/">the database</a>.</p>
 </div></section>
 </main>
 <div class="mcta"><a class="btn btn-hi" href="/#start" data-role="buyer" data-ev="cta_sticky">Protect my purchase</a></div>

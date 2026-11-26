@@ -48,7 +48,7 @@
     "expr": "claims_total"
    },
    "recompute": "sum(db.claims.verified, db.claims.unverified, db.claims.contradicted)",
-   "formula": "Every developer claim the research agent rated: verified + unverified + contradicted."
+   "formula": "Every developer claim the crawler rated: verified + unverified + contradicted."
   },
   "sum.contradicted": {
    "label": "Claims contradicted by another source",
@@ -90,7 +90,7 @@
    "src": "/data/bali-cases.json",
    "time": "updated",
    "dataset": true,
-   "made_by": "Published by the research agent's GitHub Actions job; the same file every page and the open API read.",
+   "made_by": "Published by the crawler's GitHub Actions job; the same file every page and the open API read.",
    "twin": {
     "src": "/api/open/stats",
     "expr": "projects"
@@ -107,7 +107,7 @@
    "src": "/data/bali-cases.json",
    "time": "updated",
    "dataset": true,
-   "made_by": "Published by the research agent's GitHub Actions job; the same file every page and the open API read.",
+   "made_by": "Published by the crawler's GitHub Actions job; the same file every page and the open API read.",
    "join": " · ",
    "formula": "Distinct markets and countries among the tracked projects."
   },
@@ -117,7 +117,7 @@
    "src": "/data/bali-cases.json",
    "time": "updated",
    "dataset": true,
-   "made_by": "Published by the research agent's GitHub Actions job; the same file every page and the open API read.",
+   "made_by": "Published by the crawler's GitHub Actions job; the same file every page and the open API read.",
    "twin": {
     "src": "/api/open/stats",
     "expr": "data_points"
@@ -129,7 +129,7 @@
    "src": "/data/bali-cases.json",
    "time": "updated",
    "dataset": true,
-   "made_by": "Published by the research agent's GitHub Actions job; the same file every page and the open API read.",
+   "made_by": "Published by the crawler's GitHub Actions job; the same file every page and the open API read.",
    "twin": {
     "src": "/api/open/stats",
     "expr": "sources"
@@ -141,7 +141,7 @@
    "src": "/data/bali-cases.json",
    "time": "updated",
    "dataset": true,
-   "made_by": "Published by the research agent's GitHub Actions job; the same file every page and the open API read.",
+   "made_by": "Published by the crawler's GitHub Actions job; the same file every page and the open API read.",
    "twin": {
     "src": "/api/open/stats",
     "expr": "claims_total"
@@ -154,7 +154,7 @@
    "src": "/data/bali-cases.json",
    "time": "updated",
    "dataset": true,
-   "made_by": "Published by the research agent's GitHub Actions job; the same file every page and the open API read.",
+   "made_by": "Published by the crawler's GitHub Actions job; the same file every page and the open API read.",
    "twin": {
     "src": "/api/open/stats",
     "expr": "claims.contradicted"
@@ -166,7 +166,7 @@
    "src": "/data/bali-cases.json",
    "time": "updated",
    "dataset": true,
-   "made_by": "Published by the research agent's GitHub Actions job; the same file every page and the open API read.",
+   "made_by": "Published by the crawler's GitHub Actions job; the same file every page and the open API read.",
    "twin": {
     "src": "/api/open/stats",
     "expr": "all_six_public"
@@ -179,7 +179,7 @@
    "src": "/data/bali-cases.json",
    "time": "updated",
    "dataset": true,
-   "made_by": "Published by the research agent's GitHub Actions job; the same file every page and the open API read.",
+   "made_by": "Published by the crawler's GitHub Actions job; the same file every page and the open API read.",
    "twin": {
     "src": "/api/open/stats",
     "expr": "with_flags"
@@ -191,7 +191,7 @@
    "src": "/data/bali-cases.json",
    "time": "updated",
    "dataset": true,
-   "made_by": "Published by the research agent's GitHub Actions job; the same file every page and the open API read.",
+   "made_by": "Published by the crawler's GitHub Actions job; the same file every page and the open API read.",
    "twin": {
     "src": "/api/open/stats",
     "expr": "deep_profiles"
@@ -302,7 +302,7 @@
    }
   },
   "status.evals": {
-   "label": "AI evaluation, latest run",
+   "label": "Automated evaluation, latest run",
    "src": "/api/open/evals",
    "expr": [
     "latest.cases_passed",

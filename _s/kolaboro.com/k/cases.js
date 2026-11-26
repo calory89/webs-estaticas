@@ -154,7 +154,7 @@
     var l = document.createElement('link'); l.rel = 'stylesheet'; l.href = 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css'; l.integrity = 'sha384-c6Rcwz4e4CITMbu/NBmnNS8yN2sC3cUElMEMfP3vqqKFp7GOYaaBBCqmaWBjmkjb'; l.crossOrigin = 'anonymous'; document.head.appendChild(l);
   }
   start();
-  // the research agent republishes the data every week: use the newest copy if it has the scorecard
+  // the crawler republishes the data every week: use the newest copy if it has the scorecard
   fetch('/data/bali-cases.json?t=' + Math.floor(Date.now() / 6e5), { cache: 'no-store' }).then(function(r){ return r.ok ? r.json() : null; }).then(function(d){
     if (!d || !d.cases || !d.cases.length || !d.cases[0].checks || d.cases.length < C.length) return; D = d; C = d.cases; stat();
     // the market list was rebuilt: keep the chosen market, or take the one in the address if the first copy did not have it

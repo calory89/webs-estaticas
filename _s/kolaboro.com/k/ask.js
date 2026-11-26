@@ -16,7 +16,7 @@
         if ((d.numbers || []).length) h += '<div class="ask-n">' + d.numbers.map(function (n) { return '<div><b>' + esc(n.value) + '</b><span>' + esc(n.label) + '</span></div>'; }).join('') + '</div>';
         if ((d.projects || []).length) h += '<p class="ask-p">Open: ' + d.projects.map(function (id) { return '<a href="/p/?id=' + encodeURIComponent(id) + '">' + esc(id) + '</a>'; }).join(' ') + (d.projects.length > 1 ? ' · <a href="/compare/?ids=' + encodeURIComponent(d.projects.slice(0, 4).join(',')) + '">compare</a>' : '') + '</p>';
         if ((d.follow_up || []).length) h += '<p class="ask-f">' + d.follow_up.map(function (x) { return '<button type="button" class="ask-chip">' + esc(x) + '</button>'; }).join('') + '</p>';
-        h += '<p class="ask-src">Answered by AI from the published database (updated ' + esc(d.updated) + '). Check the numbers on the project files; not financial or legal advice.</p>';
+        h += '<p class="ask-src">Answered from the published database (updated ' + esc(d.updated) + '). Check the numbers on the project files; not financial or legal advice.</p>';
         out.innerHTML = h;
         try { window.gtag && gtag('event', 'ask_db', { q: text.slice(0, 80) }); } catch (e) {}
       }).catch(function () { btn.disabled = false; out.innerHTML = '<p>Could not reach the service. Try again.</p>'; });

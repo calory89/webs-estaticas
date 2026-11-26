@@ -87,7 +87,7 @@
  "attempt": 1,
  "timestamp": 1793786222        // reject if more than 5 minutes from your clock
 }</div>
-<p>Events are computed once a day after the research agent's run, with the same change detection as the <a href="/alerts/">push alerts</a>: public checks, deposit protection and permit status, stage, reported delay, independent confirmations, satellite and register status, and changes on the developer's own page. The first time we see a project we only record its state, so your first event comes on its first real change. A <code>ping</code> event is sent when you register and whenever you press "Send a ping".</p>
+<p>Events are computed once a day after the crawler's run, with the same change detection as the <a href="/alerts/">push alerts</a>: public checks, deposit protection and permit status, stage, reported delay, independent confirmations, satellite and register status, and changes on the developer's own page. The first time we see a project we only record its state, so your first event comes on its first real change. A <code>ping</code> event is sent when you register and whenever you press "Send a ping".</p>
 
 <h2 id="verify">Verify every delivery</h2>
 <p>Four checks, in this order: the signature over the raw body, the timestamp within 5 minutes, the <code>webhook_id</code> is yours, and the event id is new to you. Read the raw body before parsing JSON: re-serialising changes the bytes and breaks the signature.</p>
