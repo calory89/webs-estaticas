@@ -14,6 +14,7 @@
 #   3) splats
 
 # ---- 1. reglas ASCII ----
+/zzz-test-26nov /chollos/ 302
 /sitemap.xml /sitemap_index.xml 301
 /wp-sitemap.xml /sitemap_index.xml 301
 /feed /chollos/feed.xml 301
