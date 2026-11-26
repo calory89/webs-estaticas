@@ -307,7 +307,7 @@ export async function page(req, u, env, ctx, shell) {
     return render(req, lang, pg, await shell(pre(lang) + '/how-we-score/'));
   }
   const m = PAGE_RX.exec(p); if (!m || !shell) return null;
-  const lang = m[1], mm = findMk(D, m[2]); if (!mm) return null;   // smaller markets: kbx_404.js keeps the 301 to the English file
+  const lang = m[1], mm = findMk(D, m[2]); if (!mm) { if (!D.eS) D.eS = new Set([...D.g.keys()].map(slugM)); let k = ''; try { k = slugM(decodeURIComponent(m[2])); } catch (e) {} return D.eS.has(k) || D.eS.has(String(m[2]).toLowerCase()) ? new Response(null, { status: 301, headers: { location: '/m/' + m[2] + '/' + u.search, 'cache-control': 'public, max-age=86400' } }) : null; }   // smaller markets (under 5 named projects) have no translated file: n40 k41 answers the 301 to the English file here (was about 3 s through the 404 path)
   if (!m[3]) return new Response(null, { status: 301, headers: { location: p + '/' + u.search, 'cache-control': 'public, max-age=86400' } });
   const key = 'm|' + lang + '|' + mm.mk; let pg = D.body.get(key); if (!pg) { pg = marketPage(D, mm, lang); D.body.set(key, pg); }
   return render(req, lang, pg, await shell(pre(lang) + '/how-we-score/'));
