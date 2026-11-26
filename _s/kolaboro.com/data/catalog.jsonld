@@ -26,7 +26,7 @@
   "@id": "http://publications.europa.eu/resource/authority/language/ENG"
  },
  "dct:modified": {
-  "@value": "2026-11-26T15:46:20Z",
+  "@value": "2026-11-26T15:48:22Z",
   "@type": "xsd:dateTime"
  },
  "dct:license": {
@@ -777,7 +777,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "44002",
+      "@value": "49874",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -791,7 +791,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "564d2b0ad899e01671c859572f2894416ee52f3d5a96e5cd9dcbc96ecd2baa72"
+      "spdx:checksumValue": "adab6682c4336b0e26f2da98f1dc17842d89bdb67d064e68ae4ecb223e7681eb"
      },
      "dct:conformsTo": {
       "@id": "https://kolaboro.com/api/x/data/schema/delay-index.json"
@@ -802,7 +802,7 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/WEEKLY"
    },
    "dct:modified": {
-    "@value": "2026-11-05T00:00:00Z",
+    "@value": "2026-11-25T00:00:00Z",
     "@type": "xsd:dateTime"
    },
    "dct:conformsTo": {
@@ -841,7 +841,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "158264",
+      "@value": "579574",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -855,7 +855,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "54c613395960d284fdcca461cb17ff5663c380aedf56589035765438bb9ac79a"
+      "spdx:checksumValue": "e21e51aac8a286553324dd3a117b49c08debe9b0caa2dd1354283c2e45407826"
      },
      "dct:conformsTo": {
       "@id": "https://kolaboro.com/api/x/data/schema/on-time.json"
@@ -866,7 +866,7 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/WEEKLY"
    },
    "dct:modified": {
-    "@value": "2026-11-05T00:00:00Z",
+    "@value": "2026-11-25T00:00:00Z",
     "@type": "xsd:dateTime"
    },
    "dct:conformsTo": {
@@ -2815,7 +2815,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "18030",
+      "@value": "18024",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -2829,7 +2829,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "3f51a542b35e7d9c3ccc69daafb4e5e751ebc74cc94a0c0a00251af2bd840e9f"
+      "spdx:checksumValue": "cdfa472c710713733e626838d8409f73ab26f6545dc0eb30e56ba1296ddabe8a"
      },
      "dct:conformsTo": {
       "@id": "https://kolaboro.com/api/x/data/schema/chaos.json"
@@ -10591,7 +10591,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "7888",
+      "@value": "7887",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -10605,7 +10605,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "61b219d190c4ef27db2f5844aa2eabea69fe0e082f75ea7ac2857736b653ad3b"
+      "spdx:checksumValue": "7fed8c6cacf098911098570054ac24b7cfdce7be594baf73ffaf032bc2e16225"
      }
     }
    ],
@@ -11691,7 +11691,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "155913",
+      "@value": "155918",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -11705,7 +11705,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "47ea14b24ea35c60f4f4df4f9d23b1b3f30fa256831784de79ceee691a524323"
+      "spdx:checksumValue": "e69acf2886fe769c3218940fbbd6841c0b86e132265196e97bc7e34578eb75e3"
      }
     }
    ],
@@ -28081,7 +28081,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "1339",
+      "@value": "1336",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -28095,7 +28095,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "f2caf2d44a807b23d21b10acb0067279a715c2b8bec998bda294be5aa537a43e"
+      "spdx:checksumValue": "e39ec80fecda09071c71b606bfb51302b9161ea738e22a840b04f58893357b5e"
      }
     }
    ],
