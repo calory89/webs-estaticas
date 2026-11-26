@@ -45,6 +45,7 @@
 <main id="main">
 <section class="phero"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / Tools</p><h1>Is your payment plan safe?</h1><p class="lead">Enter the payments in your contract. We flag the patterns that put most buyers at risk.</p></div></section><section class="sec"><div class="wrap calc">
   <div>
+    <form id="ppU" hidden><input id="ppHo" type="date" aria-hidden="true" tabindex="-1"></form>
     <div id="pp" style="display:grid;gap:10px"></div>
     <div style="display:flex;gap:10px;margin-top:14px;flex-wrap:wrap"><button class="btn btn-line" id="ppadd" type="button">Add a payment</button><button class="btn btn-line" id="ppics" type="button">Add to my calendar (.ics)</button></div><p class="muted" id="ppicsm" aria-live="polite" style="font-size:.85rem;margin-top:8px"></p>
   </div>
@@ -147,7 +148,7 @@
     <p class="fine">© 2026 Kolaboro, operated by Equinox Investment Group LLC, 30 N Gould St Ste N, Sheridan, WY 82801, USA. Kolaboro agents provide independent verification and information, not legal, tax or financial advice. Reports are opinions based on the evidence listed in them.</p>
   </div>
 </footer>
-<script src="/k/site.js?v=3222000ecc" defer></script><script src="/k/prov.js?v=85080e1313" defer></script>
+<script src="/tools/use-project.js?v=4" data-form="ppU" data-d="ppHo" data-url="0" defer></script><script src="/k/site.js?v=3222000ecc" defer></script><script src="/k/prov.js?v=85080e1313" defer></script>
 <script>(function(){var _c=window.clarity;try{Object.defineProperty(window,'clarity',{configurable:true,get:function(){return _c},set:function(v){if(typeof v==='function'&&!v.q)v.q=[];_c=v;}})}catch(e){}})();</script><script>
 (function(){
   var box = document.getElementById('pp'), rows = [
@@ -179,10 +180,18 @@
     document.getElementById('pps').textContent = bad ? bad + (bad > 1 ? ' risks' : ' risk') : 'Looks safe';
     document.getElementById('ppl').innerHTML = out.map(function(x){ return '<li><span class="st s-' + x[0] + '">' + (x[0] === 'ok' ? 'OK' : 'Risk') + '</span> ' + x[1] + '</li>'; }).join('');
   }
-  box.addEventListener('input', function(e){ var i = e.target.dataset.i; if (i === undefined) return; rows[i][e.target.dataset.k] = e.target.value; calc(); });
-  box.addEventListener('change', function(e){ var i = e.target.dataset.i; if (i === undefined) return; rows[i][e.target.dataset.k] = e.target.value; calc(); });
-  box.addEventListener('click', function(e){ var d = e.target.dataset.del; if (d === undefined) return; rows.splice(+d, 1); draw(); });
-  document.getElementById('ppadd').addEventListener('click', function(){ rows.push({l:'New payment', p:0, t:'milestone'}); draw(); });
+  // n40 k16 (R07-43): the plan stays in the address (?r=payment~percent~due~date|...), so a shared link restores it;
+  // ?project=<slug> sets the date of the last payment (handover) from the project's public record (use-project.js)
+  var qs = null; try { qs = new URLSearchParams(location.search); } catch (e) {}
+  var rq = qs && qs.get('r'), tw;
+  if (rq) { var rr = String(rq).slice(0, 3000).split('|').slice(0, 30).map(function(x){ var a = x.split('~'); return { l: String(a[0] || '').slice(0, 80), p: String(parseFloat(a[1]) || 0), t: /^(signing|date|milestone)$/.test(a[2]) ? a[2] : 'milestone', d: /^\d{4}-\d{2}-\d{2}$/.test(a[3] || '') ? a[3] : '' }; }); if (rr.length) rows = rr; }
+  function keep(){ clearTimeout(tw); tw = setTimeout(function(){ try { var u = new URLSearchParams(location.search); u.set('r', rows.map(function(r){ return [String(r.l).replace(/[~|]/g, ' '), parseFloat(r.p) || 0, r.t, r.d || ''].join('~'); }).join('|')); history.replaceState(null, '', location.pathname + '?' + u.toString() + location.hash); } catch (e) {} }, 300); }
+  var uf = document.getElementById('ppU'), ho = document.getElementById('ppHo');
+  if (uf) uf.addEventListener('input', function(){ if (rq || !ho.value || !rows.length) return; rows[rows.length - 1].d = ho.value; draw(); keep(); });
+  box.addEventListener('input', function(e){ var i = e.target.dataset.i; if (i === undefined) return; rows[i][e.target.dataset.k] = e.target.value; calc(); keep(); });
+  box.addEventListener('change', function(e){ var i = e.target.dataset.i; if (i === undefined) return; rows[i][e.target.dataset.k] = e.target.value; calc(); keep(); });
+  box.addEventListener('click', function(e){ var d = e.target.dataset.del; if (d === undefined) return; rows.splice(+d, 1); draw(); keep(); });
+  document.getElementById('ppadd').addEventListener('click', function(){ rows.push({l:'New payment', p:0, t:'milestone'}); draw(); keep(); });
   function ics(){
     var ev = rows.filter(function(r){ return r.d; }), pad = function(n){ return (n < 10 ? '0' : '') + n; }, now = new Date();
     var stamp = now.getUTCFullYear() + pad(now.getUTCMonth() + 1) + pad(now.getUTCDate()) + 'T' + pad(now.getUTCHours()) + pad(now.getUTCMinutes()) + '00Z';
