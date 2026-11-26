@@ -78,17 +78,17 @@ HEADER = '''<header class="hx" id="hx"><div class="hx-in">
 <a href="/en/flights/">Flight routes</a>
 <a href="/en/destinations/">Destination guides</a>
 <a href="/en/videos/">Videos</a>
-<a class="hx-cta" href="/en/deals/">✈️ Find a deal</a>
+<a class="hx-cta" href="/en/alerts/">🔔 Free alert</a>
 </nav></div></header>'''
 FOOTER = '''<footer class="fx"><div class="fx-in">
 <div><a class="fx-logo" href="/en/" style="display:inline-block;padding:0"><b>happy</b><svg width="104" height="19" viewBox="0 0 250 46" aria-hidden="true" style="display:block"><path d="M8 8 Q120 58 214 14" fill="none" stroke="#FFC531" stroke-width="11" stroke-linecap="round"/></svg><i>low cost</i></a>
 <p>We hunt the cheapest flights in the world and check every price before we publish it. More than 420,000 travellers have followed us since 2012.</p></div>
-<div><h2 class="fx-h">Deals</h2><a href="/en/deals/">Today's deals</a><a href="/en/deals/?orden=precio">Cheapest deals</a><a href="/en/flights/">Flight routes</a><a href="/en/how-we-verify/">How we verify</a><a href="/en/videos/">Traveller videos</a><a href="/en/tools/">Tools</a><a href="/en/guides/error-fares/">Error fares</a><a href="/en/contact/">Contact</a></div>
+<div><h2 class="fx-h">Deals</h2><a href="/en/deals/">Today's deals</a><a href="/en/deals/?orden=precio">Cheapest deals</a><a href="/en/flights/">Flight routes</a><a href="/en/alerts/">Free deal alerts</a><a href="/en/how-we-verify/">How we verify</a><a href="/en/videos/">Traveller videos</a><a href="/en/tools/">Tools</a><a href="/en/guides/error-fares/">Error fares</a><a href="/en/contact/">Contact</a></div>
 <div><h2 class="fx-h">Explore</h2><a href="/en/destinations/">Destination guides</a><a href="/en/hotels/">Where to stay</a><a href="/en/deals/?cont=asia">Asia</a><a href="/en/deals/?cont=europa">Europe</a><a href="/en/deals/?cont=norteamerica">North America</a></div>
 <div><h2 class="fx-h">Follow us</h2><a href="https://www.facebook.com/happylowcostofficialpage/" target="_blank" rel="noopener">Facebook</a><a href="https://x.com/happylowcost" target="_blank" rel="noopener">X / Twitter</a><a href="/">🇪🇸 Versión en español</a></div>
 </div>
 <div class="fx-legal">Some links are affiliate links: if you book through them we may earn a small commission at no extra cost to you. Prices were checked on the date shown on each deal and can change. Destination photos: Wikimedia Commons (credits on each page). <a href="/en/legal/" style="display:inline;color:#D6DCEA!important;text-decoration:underline">Legal notice, privacy &amp; cookies</a> · © 2012-2026 Happy Low Cost</div>
-</footer><script src="/hlc/hlc.js?v=50" defer></script>'''
+</footer><script src="/hlc/hlc.js?v=51" defer></script>'''
 
 
 def head(title, desc, canonical, es_url=None, og_image=None, og_type='website', ld=None, robots='index, follow, max-image-preview:large', body_class=''):
@@ -358,7 +358,8 @@ def main():
                     f'{e(cn_)} clears our bar right now. New ones turn up most days.</p>'
                     f'<div style="display:flex;gap:10px;flex-wrap:wrap">{fl_}'
                     f'<a class="hlc-btn{" o" if fl_ else ""}" href="/en/deals/">Today\'s deals</a>'
-                    f'<a class="hlc-btn o" href="/en/flights/">All flight routes</a></div>'
+                    f'<a class="hlc-btn o" href="/en/flights/">All flight routes</a>'
+                    f'<a class="hlc-btn o" href="/en/alerts/">Tell me when there is one</a></div>'
                     f'</div></main>{FOOTER}</body></html>')
             open(p_, 'w', encoding='utf-8').write(pg_)
             for fn_ in ('og.jpg', 'foto.jpg'):
@@ -395,7 +396,8 @@ def main():
                     f'<p style="font-size:18px">This price is no longer there: either the date has passed or it '
                     f'went up when we checked it again. Deals fly, and new ones land every day.</p>'
                     f'<div style="display:flex;gap:10px;flex-wrap:wrap">{rl_}'
-                    f'<a class="hlc-btn{" o" if rl_ else ""}" href="/en/deals/">Today\'s deals</a></div>'
+                    f'<a class="hlc-btn{" o" if rl_ else ""}" href="/en/deals/">Today\'s deals</a>'
+                    f'<a class="hlc-btn o" href="/en/alerts/">Get an alert</a></div>'
                     f'</div></main>{FOOTER}</body></html>')
             open(p_, 'w', encoding='utf-8').write(pg_)
             for fn_ in ('og.jpg', 'foto.jpg', 'credito.txt'):

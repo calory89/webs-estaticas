@@ -7,7 +7,7 @@ from urllib.parse import unquote
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import bk as BK
 
-V = '50'
+V = '51'
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 files = subprocess.run(['git', 'ls-files', '-co', '--exclude-standard', '-z', '*.html'], capture_output=True).stdout.decode().split('\0')
@@ -194,6 +194,30 @@ def tidy_title(t):
     t = re.sub(r'\s{2,}', ' ', t).strip(' -–·')
     t = re.sub(r'^(Chollo|Chollazo|Ganga|Wow|Planazo|De lujo|Correee|Cuba linda)\s+(?![:-])', r'\1: ', t, flags=re.I)
     return t or t0
+
+
+BRAND_SUF = (' · Happy Low Cost', ' - Happy Low Cost', ' | Happy Low Cost')
+
+
+def short_title(t):
+    """El titulo de la pestana lleva la marca; el de Google, solo si cabe.
+
+    Google corta el titulo sobre los 60 caracteres. "Que ver en Hamburgo en 3
+    dias: guia de un viajero low cost - Happy Low Cost" son 75 y en el
+    resultado se lee "...guia de un viajero low". La marca sale igual en el
+    dominio, asi que cuando el titulo pasa de 62 caracteres se quita el
+    sufijo y se quedan las palabras por las que entra la gente. 92 paginas de
+    este sitio estan entre el puesto 1 y el 15 con un 0,7 % de clics.
+    """
+    def one(m):
+        s = m.group(2).strip()
+        if len(s) > 62:
+            for suf in BRAND_SUF:
+                if s.endswith(suf):
+                    s = s[:-len(suf)].rstrip(' ·-|')
+                    break
+        return m.group(1) + s + m.group(3)
+    return re.sub(r'(<title>)(.*?)(</title>)', one, t, count=1, flags=re.S)
 
 
 def _fix_titles(t):
@@ -452,6 +476,7 @@ for f in files:
     t = t2
     t = lazy_cards(related_block(legacy_seo(t)))
     t = expired_noindex(t, f)
+    t = short_title(t)
     if '—' in t and not re.search(r'[\u4e00-\u9fff]', t):
         t = dash_all(t)
     # búsquedas de hoteles en Booking con dest_id (solo ?ss= da error a muchos usuarios)
@@ -472,7 +497,7 @@ for f in subprocess.run(['git', 'ls-files', '-co', '--exclude-standard', '-z', '
         s0 = open(f, encoding='utf-8', errors='surrogateescape').read()
         s1 = BK.fix_html(s0) if 'searchresults' in s0 else s0
         s1 = BK.fix_gyg(s1, 'en') if ('17288984' in s1 or '17322565' in s1) else s1
-        s1 = lazy_cards(s1)
+        s1 = short_title(lazy_cards(s1))
         if '—' in s1:
             s1 = dash_all(s1)
         if s1 != s0:

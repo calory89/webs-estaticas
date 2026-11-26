@@ -291,7 +291,19 @@
     BOX.scrollIntoView({ behavior: 'smooth', block: w.innerWidth < 700 ? 'start' : 'center' });
     if (API.pick) API.pick(b.getAttribute('data-s')); else { API.pending = b.getAttribute('data-s'); start(); }
   });
-  if ('IntersectionObserver' in w) {
+  /* En el movil el mapa cuesta 1,9 MB de DOM (d3, topojson y el mundo en
+     topojson) y se montaba sin que nadie lo pidiera, nada mas asomar la
+     seccion. Ahora en pantallas pequenas hay un boton: quien quiere el mapa lo
+     abre, y quien viene a la lista de destinos no paga el viaje. */
+  if (w.innerWidth < 700 && !/[?&]mapa=1/.test(location.search)) {
+    var ph = BOX.querySelector('.mapx-load') || BOX;
+    var go = d.createElement('button');
+    go.type = 'button'; go.className = 'hlc-btn mapx-open';
+    go.style.cssText = 'margin:10px auto;display:block';
+    go.textContent = (d.documentElement.lang === 'en') ? 'Open the destination map' : 'Ver el mapa de destinos';
+    go.addEventListener('click', function () { go.disabled = true; go.textContent = (d.documentElement.lang === 'en') ? 'Loading the map…' : 'Cargando el mapa…'; start(); setTimeout(function () { if (go.parentNode) go.parentNode.removeChild(go); }, 1200); });
+    ph.appendChild(go);
+  } else if ('IntersectionObserver' in w) {
     var io = new IntersectionObserver(function (es) { if (es.some(function (e) { return e.isIntersecting; })) { io.disconnect(); start(); } }, { rootMargin: '600px' });
     io.observe(BOX);
   } else start();

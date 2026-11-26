@@ -226,6 +226,67 @@ def extra_pages():
             os.makedirs('guias/errores-de-tarifa', exist_ok=True); open('guias/errores-de-tarifa/index.html', 'w', encoding='utf-8').write(pg)
 
 
+def alerts_pages():
+    """/en/alerts/: la mitad inglesa del sitio no tenia donde pedir un aviso.
+
+    /en/ se llevo 49.892 de las 104.935 impresiones del ultimo mes y la unica
+    pagina de alertas estaba en espanol, asi que un ingles que llegaba a una
+    ruta no tenia ninguna forma de dejar su correo. Los aeropuertos de salida
+    que se ofrecen salen del feed de hoy, no de una lista inventada: si no
+    publicamos chollos desde Londres, Londres no sale como si lo hicieramos.
+    """
+    inp = 'style="min-height:52px;border-radius:14px;border:1.5px solid #EADCC4;background:#fff;padding:0 16px;font:16px Inter,sans-serif;color:#14213D;width:100%;box-sizing:border-box"'
+    tops = []
+    try:
+        import urllib.request
+        import en_names
+        feed = json.loads(urllib.request.urlopen(urllib.request.Request(G.API, headers=G.UA), timeout=45).read())
+        cnt = {}
+        for x in feed:
+            c = ((x.get('facts') or {}).get('origen') or '').strip()
+            if c:
+                cnt[en_names.city_en(c)] = cnt.get(en_names.city_en(c), 0) + 1
+        tops = [c for c, _ in sorted(cnt.items(), key=lambda kv: -kv[1])[:9]]
+    except Exception as err:
+        print('alerts: feed no disponible', str(err)[:60])
+    if not tops:
+        tops = ['Madrid', 'Barcelona', 'London', 'Dublin', 'New York', 'Paris', 'Rome', 'Lisbon', 'Milan']
+    chips = ''.join(f'<button type="button" class="chip" data-chip data-v="{G.e(c)}" aria-pressed="{"true" if i == 0 else "false"}">{G.e(c)}</button>' for i, c in enumerate(tops))
+    qas = [('Is it free?', 'Yes. We send at most one email a day and you unsubscribe with one click.'),
+           ('Where do your deals leave from?', 'Most of them from Spain, and a growing number from the United States, Canada, Australia and the rest of Europe. The airports above are the ones in today\'s deals, so you can see what we actually cover before you leave your email.'),
+           ('What counts as a deal?', 'A return flight at least 40 % below the usual price for that route, with the price checked again before it is published and every day after that.')]
+    form = f'''<form class="alert-form" data-hlc-alert novalidate><div class="af" style="display:flex;flex-direction:column;gap:20px">
+<fieldset class="fld"><legend>Where do you fly from?</legend><div class="chips">{chips}</div></fieldset>
+<div class="fld"><label for="af-dest">Where do you dream of going?</label><input id="af-dest" name="destination" type="text" placeholder="Japan, New York, Bali… or anywhere" autocomplete="off" {inp}></div>
+<fieldset class="fld"><legend>Highest price (return)</legend><div class="chips">
+<button type="button" class="chip" data-pick="price" data-v="100" aria-pressed="false">€100</button>
+<button type="button" class="chip" data-pick="price" data-v="300" aria-pressed="true">€300</button>
+<button type="button" class="chip" data-pick="price" data-v="600" aria-pressed="false">€600</button>
+<button type="button" class="chip" data-pick="price" data-v="1000" aria-pressed="false">€1,000</button>
+</div></fieldset>
+<div class="fld"><label for="af-contact" data-contact-label>Your email</label>
+<input id="af-contact" name="contact" type="email" placeholder="you@email.com" autocomplete="email" required {inp}>
+<small style="color:#4A5468">Rather not give an email? Turn on the alert in this browser with the button below.</small></div>
+<label class="consent"><input type="checkbox" name="consent" required><span>I agree to receive Happy Low Cost deal alerts (one a day at most) and I accept the <a href="/en/legal/">privacy policy</a>. I can unsubscribe whenever I want.</span></label>
+<button type="submit" class="hlc-btn" style="min-height:56px;font-size:17px">Turn on my free alert</button>
+<div data-msg role="status" aria-live="polite"></div>
+</div><div class="af-ok" data-ok hidden></div></form>'''
+    body = ('<main class="sec"><div class="alert-box" style="max-width:1180px;margin:0 auto">'
+            '<div><div class="kicker">Free alerts</div>'
+            '<h1 style="font:800 clamp(38px,5.6vw,64px)/.98 \'Bricolage Grotesque\',sans-serif;letter-spacing:-.03em;margin:10px 0 14px">Let the deal find you.</h1>'
+            '<p>Pick your airport, the place you dream of and the most you want to pay. When we hunt down a flight that fits, we tell you. '
+            'No spam: one alert a day at most, and you leave with one click.</p>'
+            f'<article class="txt guide" style="margin-top:26px">{"".join(f"<h2>{G.e(q)}</h2><p>{G.e(a)}</p>" for q, a in qas)}</article></div>'
+            f'{form}</div></main>')
+    url = f'{SITE}/en/alerts/'
+    pg = E.head('Free flight deal alerts: let the deal find you · Happy Low Cost',
+                'Tell us your airport, your dream destination and your top price. We check every price before we send it, one alert a day at most, free and one click to leave.',
+                url, f'{SITE}/alertas/', ld=[faq_ld(qas, 'en')], body_class='alertas') + body + E.FOOTER + '</body></html>'
+    os.makedirs('en/alerts', exist_ok=True)
+    open('en/alerts/index.html', 'w', encoding='utf-8').write(pg)
+    print('en/alerts', len(tops), 'aeropuertos del feed')
+
+
 def videos_pages():
     """/videos/ y /en/videos/: los viajeros comparten el vídeo de su viaje (enlace o archivo) y se ve el muro de vídeos aprobados."""
     for en in (False, True):
@@ -392,9 +453,10 @@ setTimeout(load,800);})();
     tools_pages()
     extra_pages()
     videos_pages()
+    alerts_pages()
     import gen_blog
     gen_blog.main()
-    pages = ['/videos/', '/en/videos/', '/como-verificamos/', '/herramientas/', '/herramientas/equipaje/', '/herramientas/es-buen-precio/', '/alertas/', '/destinos/', '/vuelos/',
+    pages = ['/videos/', '/en/videos/', '/en/alerts/', '/como-verificamos/', '/herramientas/', '/herramientas/equipaje/', '/herramientas/es-buen-precio/', '/alertas/', '/destinos/', '/vuelos/',
              '/hoteles/', '/en/hotels/', '/aviso-legal-datos-cookies/', '/publicidad/', '/contacto/', '/en/contact/', '/blog/', '/guias/errores-de-tarifa/', '/en/guides/error-fares/', '/en/how-we-verify/', '/en/legal/', '/en/tools/', '/en/tools/baggage/', '/en/tools/is-it-a-good-price/']
     import datetime as _dt
     today = _dt.date.today().isoformat()

@@ -80,7 +80,7 @@ def map_block(full=False):
             f'<div class="mapx-load"><span class="sk" aria-hidden="true"></span><span class="hlc-sr">Cargando el mapa</span></div></div>'
             f'<div class="chips mapx-f" data-map-filters role="group" aria-label="Filtrar destinos">{fl}</div>'
             f'<div class="mapx-strip" data-map-strip>{cards}</div>'
-            '<script src="/hlc/map.js?v=7" defer></script>')
+            '<script src="/hlc/map.js?v=8" defer></script>')
 MAP = map_block()
 TABS = '<button type="button" class="chip" data-tab="" aria-pressed="true">🌐 Todo <small></small></button>' + ''.join(f'<button type="button" class="chip" data-tab="{k}" aria-pressed="false">{em} {n} <small></small></button>' for k, em, n in [('europa', '🇪🇺', 'Europa'), ('asia', '🌏', 'Asia'), ('norteamerica', '🗽', 'Norteamérica'), ('caribe', '🏝️', 'Caribe'), ('sudamerica', '🌎', 'Sudamérica'), ('africa', '🌍', 'África'), ('oceania', '🦘', 'Oceanía'), ('oriente-medio', '🕌', 'Oriente Medio')])
 
@@ -197,7 +197,11 @@ open('chollos/ver/index.html', 'w', encoding='utf-8').write(vp)
 # ---------- /alertas/ ----------
 os.makedirs('alertas', exist_ok=True)
 al = head(title='Crea tu alerta de chollos de vuelos · Happy Low Cost', desc='Te avisamos gratis cuando encontremos un vuelo barato desde tu aeropuerto: en este navegador o por email. Máximo un aviso al día.',
-          canonical='https://www.happylowcost.com/alertas/', extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12">', body_class='alertas')
+          canonical='https://www.happylowcost.com/alertas/',
+          extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12">'
+                     '<link rel="alternate" hreflang="es" href="https://www.happylowcost.com/alertas/">'
+                     '<link rel="alternate" hreflang="en" href="https://www.happylowcost.com/en/alerts/">'
+                     '<link rel="alternate" hreflang="x-default" href="https://www.happylowcost.com/alertas/">', body_class='alertas')
 al += f'''<main class="sec"><div class="alert-box" style="max-width:1180px;margin:0 auto">
 <div><div class="kicker">Alertas gratis</div><h1 style="font:800 clamp(38px,5.6vw,64px)/.98 'Bricolage Grotesque',sans-serif;letter-spacing:-.03em;margin:10px 0 14px">Que el chollo te encuentre a ti.</h1><p>Elige tu aeropuerto, tu destino soñado y tu precio máximo. Cuando cacemos un vuelo que encaje, te avisamos. Sin spam: máximo un aviso al día y te das de baja con un clic.</p></div>
 {ALERT}
