@@ -26,7 +26,7 @@
   "@id": "http://publications.europa.eu/resource/authority/language/ENG"
  },
  "dct:modified": {
-  "@value": "2026-11-26T16:28:07Z",
+  "@value": "2026-11-26T16:28:42Z",
   "@type": "xsd:dateTime"
  },
  "dct:license": {
@@ -3085,7 +3085,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "28d92defcbdfcdfe8b6be40b67776de671de9acede588574b6b0c8843737b613"
+      "spdx:checksumValue": "3ee0d4664db8f32058646deaddf761640093d525740a2f8146835831e28b5c8b"
      },
      "dct:conformsTo": {
       "@id": "https://kolaboro.com/api/x/data/schema/site-manifest.json"
@@ -8336,7 +8336,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "136297",
+      "@value": "137626",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -8350,7 +8350,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "3de5bbfe0aa62c1d2c72af8bd901930b8340d7285b4356202ef7ce9ce0b7249e"
+      "spdx:checksumValue": "1bd06169d7123d91ce9b77bebf1b22d42be008d1fccc6cb935d34f16a0bf3fd9"
      }
     }
    ],
@@ -11581,7 +11581,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "268185",
+      "@value": "272814",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -11595,7 +11595,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "500722a362627866d3f08ffe7143c1ddefae31137119a8974205b14d85ea81d3"
+      "spdx:checksumValue": "3f86b5bbfe6ce9dad8bea0655760f061e0570ef4b07fed4ef1621accbf0623e2"
      }
     }
    ],
@@ -26596,7 +26596,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "889184",
+      "@value": "895983",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -26610,7 +26610,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "82d5f6ba041a07fa152d7f212bbbfcd831b3f2dad6cd67cdc911affddf963cbe"
+      "spdx:checksumValue": "6b3ac9684cb3bfc99c5f1c6895fff6a44e274badd0cde28bdf69e2222fba9891"
      }
     }
    ],
