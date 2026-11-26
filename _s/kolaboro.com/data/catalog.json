@@ -7,7 +7,7 @@
  "summary": {
   "datasets": 385,
   "files": 441,
-  "bytes": 104051578,
+  "bytes": 104051301,
   "contracts_pass": 71,
   "contracts_fail": 3,
   "api_operations": 65,
@@ -5188,9 +5188,9 @@
    "keywords": [],
    "licence": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
    "described": false,
-   "bytes": 115045,
+   "bytes": 114768,
    "url": "https://kolaboro.com/data/i18n/kbx_trust_i18n.json",
-   "sha256": "f54750b0a6629ccd6a3b1e8655feb866effb2b43e24babcffa264d1a4f5aac44",
+   "sha256": "f2f9180be4898a9b1aa6ef96708c74181985d60c4495f77a2587d5685c5ed5aa",
    "http": 200,
    "media_type": "application/json",
    "format": "json",
@@ -14065,9 +14065,9 @@
   }
  ],
  "refreshed": {
-  "at": "2026-11-26T08:19:16Z",
+  "at": "2026-11-26T08:24:00Z",
   "by": "https://kolaboro.com/open/catalog-refresh.py",
-  "datasets_changed": 36,
+  "datasets_changed": 1,
   "note": "Sizes, hashes, row counts and stamps of files changed since generated_at, read from the published files. Contracts, probes and freshness status are from generated_at."
  }
 }
