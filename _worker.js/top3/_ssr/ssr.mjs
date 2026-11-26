@@ -243,7 +243,7 @@ var en$1 = {
 	photo: "Photo",
 	mapHint: "The three picks and the city's best-known sights."
 };
-var T = {
+var T$1 = {
 	en: en$1,
 	es: {
 		...en$1,
@@ -21443,6 +21443,1951 @@ var BK_CSS = `.sr{position:absolute!important;width:1px;height:1px;padding:0;mar
 .bkb.budget{background:var(--budget,#1f7a5a)}.bkb.value{background:var(--value,#d83b51)}.bkb.lux{background:var(--lux,#9a6f0a)}
 @media (prefers-color-scheme:dark){.bkb.budget,.bkb.value,.bkb.lux{color:#fff!important}}
 .mapgo{background:none;border:0;padding:0;font:inherit;color:inherit;text-decoration:underline;text-underline-offset:3px;cursor:pointer}`;
+var TX5 = {
+	de: {
+		od_t: "Offene Daten: Hotelempfehlungen für 1.295 Städte",
+		od_d: "Laden Sie den Top3Hotels-Datensatz herunter (CSV oder JSON): drei Hotelempfehlungen pro Stadt mit Gästebewertung, Anzahl der Bewertungen und Referenzpreis. Frei nutzbar unter CC BY 4.0.",
+		od_h: "Offene Daten",
+		od_p1: "Jede Empfehlung von Top3Hotels steckt in einer kostenlosen Datei: das Hotel der Kategorien Günstig, Bestes Preis-Leistungs-Verhältnis und Luxus für jede Stadt, mit Sternen, Gästebewertung, Anzahl der Bewertungen und Referenzpreis pro Nacht.",
+		od_p2: "Sie können die Daten in Artikeln, Studien, Apps oder im Unterricht verwenden. Die einzige Bedingung ist eine Quellenangabe mit Link: „Daten: Top3Hotels (top3hotels.com)“, Lizenz CC BY 4.0.",
+		od_p3: "Die Preise sind Referenzpreise für einen Aufenthalt von 2 Nächten für 2 Erwachsene (10. bis 12. November 2026), keine Live-Preise. Bewertungen und Anzahl der Bewertungen sind Momentaufnahmen von Booking.com vom September 2026. Prüfen Sie immer den aktuellen Preis, bevor Sie ihn als heutigen Preis nennen.",
+		fields: "Felder",
+		dl: "Herunterladen",
+		rows: "Zeilen",
+		idx_t: "Top3Hotels-Hotelpreisindex",
+		idx_d: "Was eine gute Hotelnacht in 1.295 Städten kostet: die günstigsten und teuersten Städte für ein gut bewertetes Budget-, Mittelklasse- und Luxushotel.",
+		idx_h: "Hotelpreisindex",
+		idx_lead: "Was eine Nacht in einem gut bewerteten Hotel kostet, Stadt für Stadt. Basierend auf unseren drei Empfehlungen pro Stadt (Gästebewertung ab 8).",
+		cheapest: "Günstigste Städte für ein gutes Budgethotel",
+		priciest: "Teuerste Städte für ein gutes Budgethotel",
+		luxcheap: "Günstigste Fünf-Sterne-Aufenthalte",
+		luxdear: "Teuerste Luxusempfehlungen",
+		capitals: "Hauptstädte im Vergleich",
+		city: "Stadt",
+		country: "Land",
+		budget: "Günstig",
+		value: "Bestes Preis-Leistungs-Verhältnis",
+		lux: "Luxus",
+		score: "Bewertung",
+		night: "pro Nacht",
+		method: "So funktioniert der Index",
+		method_p: "Für jede Stadt nehmen wir unsere drei Empfehlungen: das günstigste gut bewertete Zimmer (Günstig), die beste Balance aus Bewertung und Preis (Bestes Preis-Leistungs-Verhältnis) und das am besten bewertete Fünf-Sterne- oder gehobene Hotel (Luxus). Die Preise sind Referenzpreise pro Nacht für den 10. bis 12. November 2026, 2 Erwachsene. Eine Stadt erscheint nur, wenn mindestens eine Empfehlung einen Preis hat.",
+		cite: "Journalisten: Nutzen Sie diese Zahlen gern mit einem Link auf top3hotels.com. Sie brauchen Daten für eine bestimmte Stadt oder ein Land? Schreiben Sie an press@top3hotels.com.",
+		press_more: "Daten für Journalisten",
+		nine_t: "Hotels mit 9+ für weniger als eine Taxifahrt",
+		nine_d: "Jedes Hotel unserer Empfehlungen mit einer Gästebewertung von 9 oder mehr und einem Referenzpreis unter 60 Euro pro Nacht.",
+		nine_h: "Bewertung 9 oder höher, unter 60 Euro pro Nacht",
+		nine_lead: "Hotels mit einer Gästebewertung von 9/10 oder höher und einem Referenzpreis unter 60 Euro pro Nacht, aus unseren Empfehlungen in 1.295 Städten.",
+		country_t: (c) => `Bestes Preis-Leistungs-Verhältnis bei Hotels in ${c}: Stadt für Stadt`,
+		country_d: (c) => `Wo eine gute Hotelnacht in ${c} am wenigsten kostet: unsere Empfehlungen in den Kategorien Günstig, Bestes Preis-Leistungs-Verhältnis und Luxus für jede Stadt, die wir abdecken, mit Referenzpreisen.`,
+		country_h: (c) => `${c}: wo ein gutes Hotel am wenigsten kostet`,
+		country_lead: (c, n) => `${n} Städte in ${c}, sortiert nach dem Preis unserer Empfehlung mit dem besten Preis-Leistungs-Verhältnis.`,
+		reviews: "Bewertungen",
+		stars5: "5 Sterne",
+		more: "Die drei Empfehlungen ansehen"
+	},
+	fr: {
+		od_t: "Données ouvertes : les hôtels sélectionnés dans 1\xA0295 villes",
+		od_d: "Téléchargez le jeu de données Top3Hotels (CSV ou JSON) : trois hôtels par ville avec note des clients, nombre d'avis et prix de référence. Réutilisation libre sous licence CC BY 4.0.",
+		od_h: "Données ouvertes",
+		od_p1: "Toutes les sélections de Top3Hotels figurent dans un seul fichier gratuit : l'hôtel Petit budget, Meilleur rapport qualité-prix et Luxe de chaque ville, avec étoiles, note des clients, nombre d'avis et prix de référence par nuit.",
+		od_p2: "Vous pouvez les utiliser dans des articles, des études, des applications ou en classe. La seule condition est de citer la source avec un lien : « Données : Top3Hotels (top3hotels.com) », licence CC BY 4.0.",
+		od_p3: "Les prix sont des tarifs de référence pour un séjour de 2 nuits pour 2 adultes (du 10 au 12 novembre 2026), et non des tarifs en direct. Les notes et le nombre d'avis sont des relevés Booking.com de septembre 2026. Vérifiez toujours le prix actuel avant de le présenter comme celui d'aujourd'hui.",
+		fields: "Champs",
+		dl: "Télécharger",
+		rows: "lignes",
+		idx_t: "Indice des prix hôteliers Top3Hotels",
+		idx_d: "Le prix d'une bonne nuit d'hôtel dans 1\xA0295 villes : les villes les moins chères et les plus chères pour un hôtel bien noté, économique, de milieu de gamme ou de luxe.",
+		idx_h: "Indice des prix hôteliers",
+		idx_lead: "Le prix d'une nuit dans un hôtel bien noté, ville par ville. D'après nos trois sélections par ville (note des clients de 8 ou plus).",
+		cheapest: "Villes les moins chères pour un bon hôtel économique",
+		priciest: "Villes les plus chères pour un bon hôtel économique",
+		luxcheap: "Séjours cinq étoiles les moins chers",
+		luxdear: "Sélections de luxe les plus chères",
+		capitals: "Comparatif des capitales",
+		city: "Ville",
+		country: "Pays",
+		budget: "Petit budget",
+		value: "Meilleur rapport qualité-prix",
+		lux: "Luxe",
+		score: "Note",
+		night: "par nuit",
+		method: "Comment fonctionne l'indice",
+		method_p: "Pour chaque ville, nous retenons nos trois sélections : la chambre bien notée la moins chère (Petit budget), le meilleur équilibre entre note et prix (Meilleur rapport qualité-prix) et l'hôtel cinq étoiles ou haut de gamme le mieux noté (Luxe). Les prix sont des tarifs de référence par nuit pour le 10 au 12 novembre 2026, 2 adultes. Une ville n'apparaît que si au moins une sélection a un prix.",
+		cite: "Journalistes : utilisez librement ces chiffres avec un lien vers top3hotels.com. Besoin des données d'une ville ou d'un pays ? Écrivez à press@top3hotels.com.",
+		press_more: "Données pour les journalistes",
+		nine_t: "Des hôtels notés 9+ pour moins cher qu'un trajet en taxi",
+		nine_d: "Tous les hôtels de nos sélections avec une note des clients de 9 ou plus et un prix de référence inférieur à 60 euros la nuit.",
+		nine_h: "Notés 9 ou plus, à moins de 60 euros la nuit",
+		nine_lead: "Des hôtels avec une note des clients de 9/10 ou plus et un prix de référence inférieur à 60 euros la nuit, parmi nos sélections dans 1\xA0295 villes.",
+		country_t: (c) => `Meilleur rapport qualité-prix pour l'hôtel : ${c}, ville par ville`,
+		country_d: (c) => `Où une bonne nuit d'hôtel coûte le moins cher : nos sélections Petit budget, Meilleur rapport qualité-prix et Luxe pour chaque ville couverte (${c}), avec prix de référence.`,
+		country_h: (c) => `${c} : où un bon hôtel coûte le moins cher`,
+		country_lead: (c, n) => `${n} villes (${c}), classées selon le prix de notre sélection Meilleur rapport qualité-prix.`,
+		reviews: "avis",
+		stars5: "5 étoiles",
+		more: "Voir les trois sélections"
+	},
+	it: {
+		od_t: "Dati aperti: gli hotel selezionati in 1.295 città",
+		od_d: "Scarica il dataset di Top3Hotels (CSV o JSON): tre hotel per città con voto degli ospiti, numero di recensioni e prezzo di riferimento. Riutilizzo libero con licenza CC BY 4.0.",
+		od_h: "Dati aperti",
+		od_p1: "Tutte le selezioni di Top3Hotels sono in un unico file gratuito: l'hotel Economico, quello con il Miglior rapporto qualità-prezzo e quello di Lusso di ogni città, con stelle, voto degli ospiti, numero di recensioni e prezzo di riferimento a notte.",
+		od_p2: "Puoi usarli in articoli, ricerche, app o lezioni. L'unica condizione è citare la fonte con un link: «Dati: Top3Hotels (top3hotels.com)», licenza CC BY 4.0.",
+		od_p3: "I prezzi sono tariffe di riferimento per un soggiorno di 2 notti per 2 adulti (dal 10 al 12 novembre 2026), non prezzi in tempo reale. Voti e numero di recensioni sono rilevazioni di Booking.com di settembre 2026. Controlla sempre il prezzo attuale prima di indicarlo come quello di oggi.",
+		fields: "Campi",
+		dl: "Scarica",
+		rows: "righe",
+		idx_t: "Indice dei prezzi degli hotel di Top3Hotels",
+		idx_d: "Quanto costa una buona notte in hotel in 1.295 città: le città più economiche e più care per un hotel ben valutato, economico, di fascia media e di lusso.",
+		idx_h: "Indice dei prezzi degli hotel",
+		idx_lead: "Quanto costa una notte in un hotel ben valutato, città per città. Sulla base delle nostre tre selezioni per città (voto degli ospiti pari o superiore a 8).",
+		cheapest: "Le città più economiche per un buon hotel economico",
+		priciest: "Le città più care per un buon hotel economico",
+		luxcheap: "I soggiorni a cinque stelle più economici",
+		luxdear: "Le selezioni di lusso più care",
+		capitals: "Confronto tra capitali",
+		city: "Città",
+		country: "Paese",
+		budget: "Economico",
+		value: "Miglior rapporto qualità-prezzo",
+		lux: "Lusso",
+		score: "Voto",
+		night: "a notte",
+		method: "Come funziona l'indice",
+		method_p: "Per ogni città prendiamo le nostre tre selezioni: la camera ben valutata più economica (Economico), il miglior equilibrio tra voto e prezzo (Miglior rapporto qualità-prezzo) e l'hotel a cinque stelle o di fascia alta con le recensioni migliori (Lusso). I prezzi sono tariffe di riferimento a notte per il 10-12 novembre 2026, 2 adulti. Una città compare solo se almeno una selezione ha un prezzo.",
+		cite: "Giornalisti: usate pure questi numeri con un link a top3hotels.com. Vi serve un estratto per città o per paese? Scrivete a press@top3hotels.com.",
+		press_more: "Dati per i giornalisti",
+		nine_t: "Hotel con voto 9+ a meno di una corsa in taxi",
+		nine_d: "Tutti gli hotel delle nostre selezioni con voto degli ospiti pari o superiore a 9 e prezzo di riferimento sotto i 60 euro a notte.",
+		nine_h: "Voto 9 o più, sotto i 60 euro a notte",
+		nine_lead: "Hotel con voto degli ospiti pari o superiore a 9/10 e prezzo di riferimento inferiore a 60 euro a notte, tra le nostre selezioni in 1.295 città.",
+		country_t: (c) => `Hotel con il miglior rapporto qualità-prezzo in ${c}: città per città`,
+		country_d: (c) => `Dove una buona notte in hotel costa meno in ${c}: le nostre selezioni Economico, Miglior rapporto qualità-prezzo e Lusso per ogni città che copriamo, con prezzi di riferimento.`,
+		country_h: (c) => `${c}: dove un buon hotel costa meno`,
+		country_lead: (c, n) => `${n} città in ${c}, ordinate in base al prezzo della nostra selezione con il miglior rapporto qualità-prezzo.`,
+		reviews: "recensioni",
+		stars5: "5 stelle",
+		more: "Vedi le tre selezioni"
+	},
+	pt: {
+		od_t: "Dados abertos: hotéis escolhidos em 1.295 cidades",
+		od_d: "Descarregue o conjunto de dados do Top3Hotels (CSV ou JSON): três hotéis por cidade com classificação dos hóspedes, número de avaliações e preço de referência. Reutilização livre ao abrigo da licença CC BY 4.0.",
+		od_h: "Dados abertos",
+		od_p1: "Todas as escolhas do Top3Hotels estão num único ficheiro gratuito: o hotel Económico, o de Melhor qualidade-preço e o de Luxo de cada cidade, com estrelas, classificação dos hóspedes, número de avaliações e preço de referência por noite.",
+		od_p2: "Pode usá-los em artigos, estudos, aplicações ou aulas. A única condição é indicar a fonte com uma ligação: «Dados: Top3Hotels (top3hotels.com)», licença CC BY 4.0.",
+		od_p3: "Os preços são tarifas de referência para uma estadia de 2 noites para 2 adultos (10 a 12 de novembro de 2026), e não preços em tempo real. As classificações e o número de avaliações são registos do Booking.com de setembro de 2026. Confirme sempre o preço atual antes de o apresentar como o de hoje.",
+		fields: "Campos",
+		dl: "Descarregar",
+		rows: "linhas",
+		idx_t: "Índice de preços de hotéis do Top3Hotels",
+		idx_d: "Quanto custa uma boa noite de hotel em 1.295 cidades: as cidades mais baratas e mais caras para um hotel bem avaliado, económico, de gama média e de luxo.",
+		idx_h: "Índice de preços de hotéis",
+		idx_lead: "Quanto custa uma noite num hotel bem avaliado, cidade a cidade. Com base nas nossas três escolhas por cidade (classificação dos hóspedes de 8 ou mais).",
+		cheapest: "Cidades mais baratas para um bom hotel económico",
+		priciest: "Cidades mais caras para um bom hotel económico",
+		luxcheap: "Estadias de cinco estrelas mais baratas",
+		luxdear: "Escolhas de luxo mais caras",
+		capitals: "Comparação de capitais",
+		city: "Cidade",
+		country: "País",
+		budget: "Económico",
+		value: "Melhor qualidade-preço",
+		lux: "Luxo",
+		score: "Nota",
+		night: "por noite",
+		method: "Como funciona o índice",
+		method_p: "Em cada cidade tomamos as nossas três escolhas: o quarto bem avaliado mais barato (Económico), o melhor equilíbrio entre nota e preço (Melhor qualidade-preço) e o hotel de cinco estrelas ou de gama alta com melhores avaliações (Luxo). Os preços são tarifas de referência por noite para 10 a 12 de novembro de 2026, 2 adultos. Só aparecem cidades com pelo menos uma escolha com preço.",
+		cite: "Jornalistas: usem estes números livremente com uma ligação para top3hotels.com. Precisam de dados de uma cidade ou de um país? Escrevam para press@top3hotels.com.",
+		press_more: "Dados para jornalistas",
+		nine_t: "Hotéis com nota 9+ por menos do que uma viagem de táxi",
+		nine_d: "Todos os hotéis das nossas escolhas com classificação dos hóspedes de 9 ou mais e preço de referência abaixo de 60 euros por noite.",
+		nine_h: "Nota de 9 ou mais, por menos de 60 euros por noite",
+		nine_lead: "Hotéis com classificação dos hóspedes de 9/10 ou mais e preço de referência abaixo de 60 euros por noite, das nossas escolhas em 1.295 cidades.",
+		country_t: (c) => `Hotéis com a melhor qualidade-preço em ${c}: cidade a cidade`,
+		country_d: (c) => `Onde uma boa noite de hotel custa menos em ${c}: as nossas escolhas Económico, Melhor qualidade-preço e Luxo em cada cidade que cobrimos, com preços de referência.`,
+		country_h: (c) => `${c}: onde um bom hotel custa menos`,
+		country_lead: (c, n) => `${n} cidades em ${c}, ordenadas pelo preço da nossa escolha de Melhor qualidade-preço.`,
+		reviews: "avaliações",
+		stars5: "5 estrelas",
+		more: "Ver as três escolhas"
+	},
+	da: {
+		od_t: "Åbne data: hotelvalg i 1.295 byer",
+		od_d: "Download Top3Hotels' datasæt (CSV eller JSON): tre hoteller pr. by med gæstescore, antal anmeldelser og vejledende pris. Må frit genbruges under CC BY 4.0.",
+		od_h: "Åbne data",
+		od_p1: "Alle valg på Top3Hotels ligger i én gratis fil: hotellet i kategorierne Budget, Mest for pengene og Luksus for hver by, med stjerner, gæstescore, antal anmeldelser og vejledende pris pr. nat.",
+		od_p2: "Du kan bruge dem i artikler, undersøgelser, apps eller undervisning. Den eneste betingelse er en kildehenvisning med link: „Data: Top3Hotels (top3hotels.com)“, licens CC BY 4.0.",
+		od_p3: "Priserne er vejledende priser for et ophold på 2 nætter for 2 voksne (10. til 12. november 2026), ikke live-priser. Score og antal anmeldelser er øjebliksbilleder fra Booking.com fra september 2026. Tjek altid den aktuelle pris, før du angiver den som dagens pris.",
+		fields: "Felter",
+		dl: "Download",
+		rows: "rækker",
+		idx_t: "Top3Hotels' hotelprisindeks",
+		idx_d: "Hvad en god hotelnat koster i 1.295 byer: de billigste og dyreste byer for et velbedømt budgethotel, mellemklassehotel og luksushotel.",
+		idx_h: "Hotelprisindeks",
+		idx_lead: "Hvad en nat på et velbedømt hotel koster, by for by. Baseret på vores tre valg pr. by (gæstescore på 8 eller derover).",
+		cheapest: "Billigste byer for et godt budgethotel",
+		priciest: "Dyreste byer for et godt budgethotel",
+		luxcheap: "Billigste fem-stjernede ophold",
+		luxdear: "Dyreste luksusvalg",
+		capitals: "Hovedstæder sammenlignet",
+		city: "By",
+		country: "Land",
+		budget: "Budget",
+		value: "Mest for pengene",
+		lux: "Luksus",
+		score: "Score",
+		night: "pr. nat",
+		method: "Sådan virker indekset",
+		method_p: "For hver by tager vi vores tre valg: det billigste velbedømte værelse (Budget), den bedste balance mellem score og pris (Mest for pengene) og det bedst bedømte femstjernede eller eksklusive hotel (Luksus). Priserne er vejledende priser pr. nat for 10. til 12. november 2026, 2 voksne. En by vises kun, hvis mindst ét valg har en pris.",
+		cite: "Journalister: Brug gerne tallene frit med et link til top3hotels.com. Har du brug for et udtræk for en by eller et land? Skriv til press@top3hotels.com.",
+		press_more: "Data til journalister",
+		nine_t: "Hoteller med 9+ for mindre end en taxatur",
+		nine_d: "Alle hoteller i vores valg med en gæstescore på 9 eller derover og en vejledende pris under 60 euro pr. nat.",
+		nine_h: "Score på 9 eller derover, under 60 euro pr. nat",
+		nine_lead: "Hoteller med en gæstescore på 9/10 eller derover og en vejledende pris under 60 euro pr. nat, fra vores valg i 1.295 byer.",
+		country_t: (c) => `Mest for pengene på hoteller i ${c}: by for by`,
+		country_d: (c) => `Hvor en god hotelnat koster mindst i ${c}: vores valg i Budget, Mest for pengene og Luksus for hver by, vi dækker, med vejledende priser.`,
+		country_h: (c) => `${c}: hvor et godt hotel koster mindst`,
+		country_lead: (c, n) => `${n} byer i ${c}, sorteret efter prisen på vores valg i kategorien Mest for pengene.`,
+		reviews: "anmeldelser",
+		stars5: "5 stjerner",
+		more: "Se de tre valg"
+	}
+};
+var TT5 = {
+	de: {
+		b_t: "Die besten Hotels für Ihr Budget",
+		b_d: "Wählen Sie ein Budget pro Nacht und erhalten Sie die am besten bewerteten Hotels aus unseren Empfehlungen, die dazu passen, weltweit.",
+		b_h: "Was bekommen Sie für Ihr Budget?",
+		b_lead: "Legen Sie ein Budget pro Nacht fest. Wir listen die am besten bewerteten Hotels aus unseren Empfehlungen in 1.295 Städten auf, die weniger kosten, mit der höchsten Gästebewertung zuerst.",
+		max: "Maximal pro Nacht",
+		cat: "Art",
+		any: "Alle",
+		go: "Hotels anzeigen",
+		share: "Teilen",
+		found: (n, m) => `${n} Hotels mit Bewertung 8+ unter ${m} € pro Nacht`,
+		e_t: "Ausbrechen: eine zufällige Stadt mit einem tollen Hotel in Ihrem Budget",
+		e_d: "Drehen Sie und erhalten Sie ein zufälliges Reiseziel mit einem gut bewerteten Hotel innerhalb Ihres Budgets.",
+		e_h: "Wohin soll die Reise gehen?",
+		e_lead: "Ein Klick, eine zufällige Stadt, ein gut bewertetes Hotel, das zu Ihrem Budget passt.",
+		spin: "Nochmal drehen",
+		see: "Die drei Empfehlungen ansehen",
+		s_t: "Hotelrechnung teilen",
+		s_d: "Teilen Sie einen Hotelaufenthalt unter Freunden auf: Preis pro Person und pro Nacht.",
+		s_h: "Hotelrechnung teilen",
+		price: "Preis pro Nacht (€)",
+		nights: "Nächte",
+		people: "Personen",
+		pp: "pro Person insgesamt",
+		ppn: "pro Person und Nacht",
+		a_t: "Top3Hotels-Pick-Siegel für Hotels",
+		a_d: "Hotels, die als eines der drei besten ihrer Stadt ausgewählt wurden, dürfen das offizielle Top3Hotels-Pick-Siegel kostenlos zeigen.",
+		a_h: "Für Hotels: Zeigen Sie Ihr Top3Hotels-Pick-Siegel",
+		a_lead: "Wenn Ihr Hotel eine unserer drei Empfehlungen in seiner Stadt ist, können Sie das offizielle Siegel auf Ihrer Website, Ihren Buchungsseiten und in Ihren sozialen Kanälen zeigen. Es ist kostenlos und verlinkt auf Ihre Stadtseite.",
+		a_how: "So erhalten Sie Ihren Code",
+		a_how_p: "Öffnen Sie Ihre Stadtseite, scrollen Sie nach unten und kopieren Sie den Siegel-Code für Ihre Kategorie (Günstig, Bestes Preis-Leistungs-Verhältnis oder Luxus). Oder fügen Sie den untenstehenden Code ein und ändern Sie Stadt und Kategorie.",
+		a_find: "Ihre Stadt finden"
+	},
+	fr: {
+		b_t: "Les meilleurs hôtels selon votre budget",
+		b_d: "Choisissez un budget par nuit et obtenez les hôtels les mieux notés de nos sélections qui y correspondent, dans le monde entier.",
+		b_h: "Que peut-on avoir pour votre budget ?",
+		b_lead: "Fixez un budget par nuit. Nous listons les hôtels les mieux notés de nos sélections dans 1\xA0295 villes qui coûtent moins, en commençant par la meilleure note des clients.",
+		max: "Maximum par nuit",
+		cat: "Type",
+		any: "Tous",
+		go: "Afficher les hôtels",
+		share: "Partager",
+		found: (n, m) => `${n} hôtels notés 8+ à moins de ${m}\u00A0€ la nuit`,
+		e_t: "Évasion : une ville au hasard avec un super hôtel dans votre budget",
+		e_d: "Lancez la roue et obtenez une destination au hasard avec un hôtel bien noté dans votre budget.",
+		e_h: "Où partir ?",
+		e_lead: "Un clic, une ville au hasard, un hôtel bien noté qui rentre dans votre budget.",
+		spin: "Relancer",
+		see: "Voir les trois sélections",
+		s_t: "Partager la note d'hôtel",
+		s_d: "Partagez un séjour à l'hôtel entre amis : prix par personne et par nuit.",
+		s_h: "Partager la note d'hôtel",
+		price: "Prix par nuit (€)",
+		nights: "Nuits",
+		people: "Personnes",
+		pp: "par personne au total",
+		ppn: "par personne et par nuit",
+		a_t: "Badge Top3Hotels Pick pour les hôtels",
+		a_d: "Les hôtels choisis parmi les trois meilleurs de leur ville peuvent afficher gratuitement le badge officiel Top3Hotels Pick.",
+		a_h: "Pour les hôtels : affichez votre badge Top3Hotels Pick",
+		a_lead: "Si votre hôtel fait partie de nos trois sélections dans sa ville, vous pouvez afficher le badge officiel sur votre site, vos pages de réservation et vos réseaux sociaux. C'est gratuit et il renvoie vers la page de votre ville.",
+		a_how: "Comment obtenir votre code",
+		a_how_p: "Ouvrez la page de votre ville, faites défiler jusqu'en bas et copiez le code du badge de votre catégorie (Petit budget, Meilleur rapport qualité-prix ou Luxe). Ou collez le code ci-dessous et modifiez la ville et la catégorie.",
+		a_find: "Trouver votre ville"
+	},
+	it: {
+		b_t: "I migliori hotel per il tuo budget",
+		b_d: "Scegli un budget a notte e ottieni gli hotel meglio valutati delle nostre selezioni che rientrano nel tuo budget, in tutto il mondo.",
+		b_h: "Cosa ottieni con il tuo budget?",
+		b_lead: "Imposta un budget a notte. Elenchiamo gli hotel meglio valutati delle nostre selezioni in 1.295 città che costano meno, con il voto più alto in cima.",
+		max: "Massimo a notte",
+		cat: "Tipo",
+		any: "Qualsiasi",
+		go: "Mostra gli hotel",
+		share: "Condividi",
+		found: (n, m) => `${n} hotel con voto 8+ sotto i ${m} € a notte`,
+		e_t: "Evasione: una città a caso con un ottimo hotel nel tuo budget",
+		e_d: "Gira la ruota e ottieni una destinazione a caso con un hotel ben valutato nel tuo budget.",
+		e_h: "Dove scappare?",
+		e_lead: "Un clic, una città a caso, un hotel ben valutato che rientra nel tuo budget.",
+		spin: "Gira ancora",
+		see: "Vedi le tre selezioni",
+		s_t: "Dividi il conto dell'hotel",
+		s_d: "Dividi un soggiorno in hotel tra amici: prezzo a persona e a notte.",
+		s_h: "Dividi il conto dell'hotel",
+		price: "Prezzo a notte (€)",
+		nights: "Notti",
+		people: "Persone",
+		pp: "a persona in totale",
+		ppn: "a persona a notte",
+		a_t: "Badge Top3Hotels Pick per gli hotel",
+		a_d: "Gli hotel scelti tra i tre migliori della loro città possono mostrare gratuitamente il badge ufficiale Top3Hotels Pick.",
+		a_h: "Per gli hotel: mostra il tuo badge Top3Hotels Pick",
+		a_lead: "Se il tuo hotel è una delle nostre tre selezioni nella sua città, puoi mostrare il badge ufficiale sul tuo sito, sulle pagine di prenotazione e sui social. È gratuito e rimanda alla pagina della tua città.",
+		a_how: "Come ottenere il tuo codice",
+		a_how_p: "Apri la pagina della tua città, scorri fino in fondo e copia il codice del badge per la tua categoria (Economico, Miglior rapporto qualità-prezzo o Lusso). Oppure incolla il codice qui sotto e cambia città e categoria.",
+		a_find: "Trova la tua città"
+	},
+	pt: {
+		b_t: "Os melhores hotéis para o seu orçamento",
+		b_d: "Escolha um orçamento por noite e veja os hotéis mais bem avaliados das nossas escolhas que cabem nele, em todo o mundo.",
+		b_h: "O que consegue com o seu orçamento?",
+		b_lead: "Defina um orçamento por noite. Listamos os hotéis mais bem avaliados das nossas escolhas em 1.295 cidades que custam menos, primeiro os de melhor classificação dos hóspedes.",
+		max: "Máximo por noite",
+		cat: "Tipo",
+		any: "Qualquer",
+		go: "Ver hotéis",
+		share: "Partilhar",
+		found: (n, m) => `${n} hotéis com nota 8+ por menos de ${m} € a noite`,
+		e_t: "Escapadinha: uma cidade ao acaso com um ótimo hotel dentro do seu orçamento",
+		e_d: "Gire a roleta e receba um destino ao acaso com um hotel bem avaliado dentro do seu orçamento.",
+		e_h: "Para onde fugir?",
+		e_lead: "Um clique, uma cidade ao acaso, um hotel bem avaliado que cabe no seu orçamento.",
+		spin: "Girar outra vez",
+		see: "Ver as três escolhas",
+		s_t: "Dividir a conta do hotel",
+		s_d: "Divida uma estadia de hotel entre amigos: preço por pessoa e por noite.",
+		s_h: "Dividir a conta do hotel",
+		price: "Preço por noite (€)",
+		nights: "Noites",
+		people: "Pessoas",
+		pp: "por pessoa no total",
+		ppn: "por pessoa por noite",
+		a_t: "Selo Top3Hotels Pick para hotéis",
+		a_d: "Os hotéis escolhidos entre os três melhores da sua cidade podem mostrar gratuitamente o selo oficial Top3Hotels Pick.",
+		a_h: "Para hotéis: mostre o seu selo Top3Hotels Pick",
+		a_lead: "Se o seu hotel é uma das nossas três escolhas na sua cidade, pode mostrar o selo oficial no seu site, nas páginas de reserva e nas redes sociais. É gratuito e ligado à página da sua cidade.",
+		a_how: "Como obter o seu código",
+		a_how_p: "Abra a página da sua cidade, desça até ao fim e copie o código do selo da sua categoria (Económico, Melhor qualidade-preço ou Luxo). Ou cole o código abaixo e altere a cidade e a categoria.",
+		a_find: "Encontre a sua cidade"
+	},
+	da: {
+		b_t: "De bedste hoteller til dit budget",
+		b_d: "Vælg et budget pr. nat og få de bedst bedømte hoteller fra vores valg, som passer til det, over hele verden.",
+		b_h: "Hvad får du for dit budget?",
+		b_lead: "Angiv et budget pr. nat. Vi viser de bedst bedømte hoteller fra vores valg i 1.295 byer, som koster mindre, med den højeste gæstescore først.",
+		max: "Maks. pr. nat",
+		cat: "Type",
+		any: "Alle",
+		go: "Vis hoteller",
+		share: "Del",
+		found: (n, m) => `${n} hoteller med score 8+ under ${m} € pr. nat`,
+		e_t: "Stik af: en tilfældig by med et fantastisk hotel inden for dit budget",
+		e_d: "Drej hjulet og få en tilfældig destination med et velbedømt hotel inden for dit budget.",
+		e_h: "Hvor skal du flygte hen?",
+		e_lead: "Ét klik, én tilfældig by, ét velbedømt hotel, der passer til dit budget.",
+		spin: "Drej igen",
+		see: "Se de tre valg",
+		s_t: "Del hotelregningen",
+		s_d: "Del et hotelophold mellem venner: pris pr. person og pr. nat.",
+		s_h: "Del hotelregningen",
+		price: "Pris pr. nat (€)",
+		nights: "Nætter",
+		people: "Personer",
+		pp: "pr. person i alt",
+		ppn: "pr. person pr. nat",
+		a_t: "Top3Hotels Pick-mærke til hoteller",
+		a_d: "Hoteller, der er valgt som et af de tre bedste i deres by, kan vise det officielle Top3Hotels Pick-mærke gratis.",
+		a_h: "Til hoteller: vis dit Top3Hotels Pick-mærke",
+		a_lead: "Hvis dit hotel er et af vores tre valg i sin by, kan du vise det officielle mærke på din hjemmeside, dine bookingsider og dine sociale kanaler. Det er gratis og linker til din bysside.",
+		a_how: "Sådan får du din kode",
+		a_how_p: "Åbn din bysside, scroll ned til bunden og kopiér mærkets kode for din kategori (Budget, Mest for pengene eller Luksus). Eller indsæt koden nedenfor og ret by og kategori.",
+		a_find: "Find din by"
+	}
+};
+var TD5 = {
+	de: {
+		cmp_t: (c) => `Hotels in ${c}: Günstig, Mittelklasse und Luxus im Vergleich`,
+		cmp_d: (c) => `Unsere drei Hotelempfehlungen in ${c} nebeneinander: Gästebewertung, Bewertungen, Sterne, Lage und Referenzpreis pro Nacht.`,
+		cmp_h: (c) => `${c}: unsere drei Hotels im Vergleich`,
+		row_score: "Gästebewertung",
+		row_rev: "Bewertungen",
+		row_stars: "Sterne",
+		row_area: "Lage",
+		row_price: "Referenzpreis pro Nacht",
+		row_pros: "Gästen gefällt",
+		row_cons: "Gäste erwähnen",
+		row_tags: "Geeignet für",
+		pick: "Welches passt zu Ihnen?",
+		pick_p: (b, v, l) => `Wählen Sie ${b}, wenn der Preis am wichtigsten ist, ${v} für die beste Balance aus Bewertung und Preis und ${l}, wenn Sie den am besten bewerteten gehobenen Aufenthalt möchten.`,
+		near_t: (s, c) => s.toLowerCase().includes(c.toLowerCase()) ? `Hotels in der Nähe von ${s}: Entfernungen zu Fuß` : `Hotels in der Nähe von ${s}, ${c}: Entfernungen zu Fuß`,
+		near_d: (s, c) => `Wie weit unsere drei Hotelempfehlungen in ${c} von ${s} entfernt sind, mit Luftlinie und geschätztem Fußweg.`,
+		near_d2: (s, h, d, w, c) => `Von unseren Empfehlungen am nächsten zu ${s}: ${h}, ${d}${w ? ` (etwa ${w} zu Fuß)` : ""}. Günstige Hotels, Hotels mit dem besten Preis-Leistungs-Verhältnis und Luxushotels in ${c} mit Gästebewertungen und Preisen.`,
+		cmp_city: (c) => `Hotels in ${c}`,
+		near_h: (s) => `Hotels in der Nähe von ${s}`,
+		near_lead: (s, c) => `Unsere drei Empfehlungen in ${c}, sortiert nach Entfernung zu ${s}. Die Entfernungen sind Luftlinie nach Kartenkoordinaten; die tatsächlichen Fußwege sind länger.`,
+		dist: "Entfernung",
+		walk: "Fußweg (geschätzt)",
+		min: "Min.",
+		closest: "Von unseren Empfehlungen am nächsten",
+		far: "Zu Fuß weit: Planen Sie öffentliche Verkehrsmittel oder ein Taxi ein.",
+		nearby: "Weitere Sehenswürdigkeiten",
+		all: "Alle drei Empfehlungen ansehen"
+	},
+	fr: {
+		cmp_t: (c) => `Hôtels à ${c} : petit budget, milieu de gamme et luxe comparés`,
+		cmp_d: (c) => `Nos trois hôtels sélectionnés à ${c} côte à côte : note des clients, avis, étoiles, quartier et prix de référence par nuit.`,
+		cmp_h: (c) => `${c} : nos trois hôtels côte à côte`,
+		row_score: "Note des clients",
+		row_rev: "Avis",
+		row_stars: "Étoiles",
+		row_area: "Quartier",
+		row_price: "Prix de référence par nuit",
+		row_pros: "Ce que les clients apprécient",
+		row_cons: "Ce que les clients signalent",
+		row_tags: "Idéal pour",
+		pick: "Lequel choisir ?",
+		pick_p: (b, v, l) => `Choisissez ${b} si le prix compte avant tout, ${v} pour le meilleur équilibre entre note et prix, et ${l} si vous voulez le séjour haut de gamme le mieux noté.`,
+		near_t: (s, c) => s.toLowerCase().includes(c.toLowerCase()) ? `Hôtels près de ${s}\u00A0: distances à pied` : `Hôtels près de ${s}, ${c}\u00A0: distances à pied`,
+		near_d: (s, c) => `À quelle distance de ${s} se trouvent nos trois hôtels sélectionnés à ${c}, en ligne droite et avec une durée de marche estimée.`,
+		near_d2: (s, h, d, w, c) => `Le plus proche de ${s} parmi nos sélections\u00A0: ${h}, ${d}${w ? ` (environ ${w} à pied)` : ""}. Hôtels petit budget, meilleur rapport qualité-prix et de luxe à ${c} avec notes des clients et prix.`,
+		cmp_city: (c) => `Hôtels à ${c}`,
+		near_h: (s) => `Hôtels près de ${s}`,
+		near_lead: (s, c) => `Nos trois sélections à ${c}, classées par distance de ${s}. Les distances sont à vol d'oiseau, d'après les coordonnées cartographiques\u00A0; à pied, le trajet réel est plus long.`,
+		dist: "Distance",
+		walk: "À pied (estimation)",
+		min: "min",
+		closest: "Le plus proche de nos sélections",
+		far: "Loin à pied\xA0: prévoyez les transports en commun ou un taxi.",
+		nearby: "Autres sites",
+		all: "Voir les trois sélections"
+	},
+	it: {
+		cmp_t: (c) => `Hotel a ${c}: economico, di fascia media e di lusso a confronto`,
+		cmp_d: (c) => `Le nostre tre selezioni di hotel a ${c} affiancate: voto degli ospiti, recensioni, stelle, zona e prezzo di riferimento a notte.`,
+		cmp_h: (c) => `${c}: i nostri tre hotel a confronto`,
+		row_score: "Voto degli ospiti",
+		row_rev: "Recensioni",
+		row_stars: "Stelle",
+		row_area: "Zona",
+		row_price: "Prezzo di riferimento a notte",
+		row_pros: "Agli ospiti piace",
+		row_cons: "Gli ospiti segnalano",
+		row_tags: "Ideale per",
+		pick: "Quale scegliere?",
+		pick_p: (b, v, l) => `Scegli ${b} se conta soprattutto il prezzo, ${v} per il miglior equilibrio tra voto e prezzo, e ${l} se vuoi il soggiorno di fascia alta con le recensioni migliori.`,
+		near_t: (s, c) => s.toLowerCase().includes(c.toLowerCase()) ? `Hotel vicino a ${s}: distanze a piedi` : `Hotel vicino a ${s}, ${c}: distanze a piedi`,
+		near_d: (s, c) => `A che distanza da ${s} si trovano le nostre tre selezioni di hotel a ${c}, in linea d'aria e con un tragitto a piedi stimato.`,
+		near_d2: (s, h, d, w, c) => `Il più vicino a ${s} tra le nostre selezioni: ${h}, ${d}${w ? ` (circa ${w} a piedi)` : ""}. Hotel economico, con il miglior rapporto qualità-prezzo e di lusso a ${c} con voti degli ospiti e prezzi.`,
+		cmp_city: (c) => `Hotel a ${c}`,
+		near_h: (s) => `Hotel vicino a ${s}`,
+		near_lead: (s, c) => `Le nostre tre selezioni a ${c}, ordinate per distanza da ${s}. Le distanze sono in linea d'aria, calcolate dalle coordinate della mappa; i percorsi a piedi reali sono più lunghi.`,
+		dist: "Distanza",
+		walk: "A piedi (stima)",
+		min: "min",
+		closest: "Il più vicino tra le nostre selezioni",
+		far: "Lontano a piedi: conviene prevedere i mezzi pubblici o un taxi.",
+		nearby: "Altri luoghi",
+		all: "Vedi tutte e tre le selezioni"
+	},
+	pt: {
+		cmp_t: (c) => `Hotéis em ${c}: económico, gama média e luxo comparados`,
+		cmp_d: (c) => `As nossas três escolhas de hotéis em ${c} lado a lado: classificação dos hóspedes, avaliações, estrelas, zona e preço de referência por noite.`,
+		cmp_h: (c) => `${c}: os nossos três hotéis lado a lado`,
+		row_score: "Classificação dos hóspedes",
+		row_rev: "Avaliações",
+		row_stars: "Estrelas",
+		row_area: "Zona",
+		row_price: "Preço de referência por noite",
+		row_pros: "Os hóspedes gostam",
+		row_cons: "Os hóspedes referem",
+		row_tags: "Bom para",
+		pick: "Qual escolher?",
+		pick_p: (b, v, l) => `Escolha ${b} se o preço for o mais importante, ${v} para o melhor equilíbrio entre nota e preço, e ${l} se quiser a estadia de gama alta mais bem avaliada.`,
+		near_t: (s, c) => s.toLowerCase().includes(c.toLowerCase()) ? `Hotéis perto de ${s}: distâncias a pé` : `Hotéis perto de ${s}, ${c}: distâncias a pé`,
+		near_d: (s, c) => `A que distância de ${s} ficam as nossas três escolhas de hotéis em ${c}, em linha reta e com uma caminhada estimada.`,
+		near_d2: (s, h, d, w, c) => `O mais próximo de ${s} entre as nossas escolhas: ${h}, ${d}${w ? ` (cerca de ${w} a pé)` : ""}. Hotéis económico, de melhor qualidade-preço e de luxo em ${c} com classificações dos hóspedes e preços.`,
+		cmp_city: (c) => `Hotéis em ${c}`,
+		near_h: (s) => `Hotéis perto de ${s}`,
+		near_lead: (s, c) => `As nossas três escolhas em ${c}, ordenadas por distância a ${s}. As distâncias são em linha reta, a partir de coordenadas de mapa; os percursos reais a pé são mais longos.`,
+		dist: "Distância",
+		walk: "A pé (estimativa)",
+		min: "min",
+		closest: "O mais próximo das nossas escolhas",
+		far: "Longe a pé: planeie usar transportes públicos ou um táxi.",
+		nearby: "Outros locais",
+		all: "Ver as três escolhas"
+	},
+	da: {
+		cmp_t: (c) => `Hoteller i ${c}: budget, mellemklasse og luksus sammenlignet`,
+		cmp_d: (c) => `Vores tre hotelvalg i ${c} side om side: gæstescore, anmeldelser, stjerner, område og vejledende pris pr. nat.`,
+		cmp_h: (c) => `${c}: vores tre hoteller side om side`,
+		row_score: "Gæstescore",
+		row_rev: "Anmeldelser",
+		row_stars: "Stjerner",
+		row_area: "Område",
+		row_price: "Vejledende pris pr. nat",
+		row_pros: "Gæsterne kan lide",
+		row_cons: "Gæsterne nævner",
+		row_tags: "Velegnet til",
+		pick: "Hvilket skal du vælge?",
+		pick_p: (b, v, l) => `Vælg ${b}, hvis prisen betyder mest, ${v} for den bedste balance mellem score og pris, og ${l}, hvis du vil have det bedst bedømte eksklusive ophold.`,
+		near_t: (s, c) => s.toLowerCase().includes(c.toLowerCase()) ? `Hoteller nær ${s}: afstande til fods` : `Hoteller nær ${s}, ${c}: afstande til fods`,
+		near_d: (s, c) => `Hvor langt vores tre hotelvalg i ${c} ligger fra ${s}, med afstand i luftlinje og en anslået gåtur.`,
+		near_d2: (s, h, d, w, c) => `Tættest på ${s} af vores valg: ${h}, ${d}${w ? ` (ca. ${w} til fods)` : ""}. Budgethoteller, hoteller med mest for pengene og luksushoteller i ${c} med gæstescore og priser.`,
+		cmp_city: (c) => `Hoteller i ${c}`,
+		near_h: (s) => `Hoteller nær ${s}`,
+		near_lead: (s, c) => `Vores tre valg i ${c}, sorteret efter afstand til ${s}. Afstandene er i luftlinje ud fra kortkoordinater; de faktiske gåruter er længere.`,
+		dist: "Afstand",
+		walk: "Gåtur (anslået)",
+		min: "min.",
+		closest: "Tættest på af vores valg",
+		far: "Langt til fods: planlæg offentlig transport eller en taxa.",
+		nearby: "Andre seværdigheder",
+		all: "Se alle tre valg"
+	}
+};
+var TF5 = {
+	de: {
+		nm_t: "Die besten Hotels in meiner Nähe",
+		nm_d: "Finden Sie die drei besten Hotels der Stadt, die Ihnen am nächsten liegt, anhand Ihres Standorts (er verlässt nie Ihren Browser).",
+		nm_h: "Die drei besten Hotels in Ihrer Nähe",
+		nm_lead: "Tippen Sie auf die Schaltfläche. Ihr Browser teilt uns ungefähr mit, wo Sie sind, und wir öffnen die nächstgelegene Stadt, die wir abdecken. Ihr Standort wird weder gespeichert noch an uns gesendet.",
+		nm_btn: "Meinen Standort verwenden",
+		nm_err: "Standort nicht verfügbar. Wählen Sie stattdessen eine Stadt:",
+		b100_t: "Die 100 Hotels mit dem besten Preis-Leistungs-Verhältnis weltweit (2026)",
+		b100_d: "Unsere 100 Hotels mit dem besten Preis-Leistungs-Verhältnis weltweit: die höchsten Gästebewertungen zu den niedrigsten Referenzpreisen, aus unseren Empfehlungen in 1.295 Städten.",
+		b100_h: "Die 100 Hotels mit dem besten Preis-Leistungs-Verhältnis weltweit, 2026",
+		b100_lead: "Gereiht nach Gästebewertung, angepasst an die Anzahl der Bewertungen, geteilt durch den Referenzpreis. Jedes Hotel hier ist eine unserer drei Empfehlungen in seiner Stadt.",
+		vote_q: "Stimmen Sie unseren drei Empfehlungen zu?",
+		yes: "Ja",
+		no: "Eher nicht",
+		thanks: "Danke, vermerkt."
+	},
+	fr: {
+		nm_t: "Les meilleurs hôtels près de chez moi",
+		nm_d: "Trouvez les trois meilleurs hôtels de la ville la plus proche grâce à votre position (elle ne quitte jamais votre navigateur).",
+		nm_h: "Les trois meilleurs hôtels près de chez vous",
+		nm_lead: "Appuyez sur le bouton. Votre navigateur nous indique approximativement où vous êtes et nous ouvrons la ville la plus proche que nous couvrons. Votre position n'est ni enregistrée ni envoyée chez nous.",
+		nm_btn: "Utiliser ma position",
+		nm_err: "Position indisponible. Choisissez plutôt une ville\xA0:",
+		b100_t: "Les 100 hôtels au meilleur rapport qualité-prix du monde (2026)",
+		b100_d: "Nos 100 hôtels au meilleur rapport qualité-prix dans le monde : les meilleures notes aux prix de référence les plus bas, parmi nos sélections dans 1\xA0295 villes.",
+		b100_h: "Les 100 hôtels au meilleur rapport qualité-prix du monde, 2026",
+		b100_lead: "Classés selon la note des clients pondérée par le nombre d'avis, divisée par le prix de référence. Chaque hôtel présenté ici fait partie de nos trois sélections dans sa ville.",
+		vote_q: "Êtes-vous d'accord avec nos trois sélections ?",
+		yes: "Oui",
+		no: "Pas vraiment",
+		thanks: "Merci, c'est noté."
+	},
+	it: {
+		nm_t: "I migliori hotel vicino a me",
+		nm_d: "Trova i tre migliori hotel della città più vicina a te, usando la tua posizione (non lascia mai il tuo browser).",
+		nm_h: "I tre migliori hotel vicino a te",
+		nm_lead: "Tocca il pulsante. Il tuo browser ci dice più o meno dove sei e apriamo la città più vicina tra quelle che copriamo. La tua posizione non viene salvata né inviata a noi.",
+		nm_btn: "Usa la mia posizione",
+		nm_err: "Posizione non disponibile. Scegli invece una città:",
+		b100_t: "I 100 hotel con il miglior rapporto qualità-prezzo al mondo (2026)",
+		b100_d: "I nostri 100 hotel con il miglior rapporto qualità-prezzo al mondo: i voti più alti ai prezzi di riferimento più bassi, tra le nostre selezioni in 1.295 città.",
+		b100_h: "I 100 hotel con il miglior rapporto qualità-prezzo al mondo, 2026",
+		b100_lead: "In classifica in base al voto degli ospiti corretto per il numero di recensioni, diviso per il prezzo di riferimento. Ogni hotel qui è una delle nostre tre selezioni nella sua città.",
+		vote_q: "Sei d'accordo con le nostre tre selezioni?",
+		yes: "Sì",
+		no: "Non proprio",
+		thanks: "Grazie, annotato."
+	},
+	pt: {
+		nm_t: "Os melhores hotéis perto de mim",
+		nm_d: "Encontre os três melhores hotéis da cidade mais próxima de si, usando a sua localização (nunca sai do seu navegador).",
+		nm_h: "Os três melhores hotéis perto de si",
+		nm_lead: "Toque no botão. O seu navegador diz-nos aproximadamente onde está e abrimos a cidade mais próxima que cobrimos. A sua localização não é guardada nem enviada para nós.",
+		nm_btn: "Usar a minha localização",
+		nm_err: "Localização indisponível. Escolha antes uma cidade:",
+		b100_t: "Os 100 hotéis com melhor qualidade-preço do mundo (2026)",
+		b100_d: "Os nossos 100 hotéis com melhor qualidade-preço do mundo: as classificações mais altas pelos preços de referência mais baixos, das nossas escolhas em 1.295 cidades.",
+		b100_h: "Os 100 hotéis com melhor qualidade-preço do mundo, 2026",
+		b100_lead: "Ordenados pela classificação dos hóspedes ajustada ao número de avaliações, a dividir pelo preço de referência. Todos os hotéis aqui são uma das nossas três escolhas na respetiva cidade.",
+		vote_q: "Concorda com as nossas três escolhas?",
+		yes: "Sim",
+		no: "Nem por isso",
+		thanks: "Obrigado, ficou registado."
+	},
+	da: {
+		nm_t: "De bedste hoteller i nærheden af mig",
+		nm_d: "Find de tre bedste hoteller i den by, der ligger tættest på dig, ved hjælp af din position (den forlader aldrig din browser).",
+		nm_h: "De tre bedste hoteller tæt på dig",
+		nm_lead: "Tryk på knappen. Din browser fortæller os omtrent, hvor du er, og vi åbner den nærmeste by, vi dækker. Din position bliver hverken gemt eller sendt til os.",
+		nm_btn: "Brug min position",
+		nm_err: "Position ikke tilgængelig. Vælg i stedet en by:",
+		b100_t: "Verdens 100 hoteller med mest for pengene (2026)",
+		b100_d: "Vores 100 hoteller med mest for pengene i hele verden: de højeste gæstescorer til de laveste vejledende priser, fra vores valg i 1.295 byer.",
+		b100_h: "Verdens 100 hoteller med mest for pengene, 2026",
+		b100_lead: "Rangeret efter gæstescore justeret for antal anmeldelser, divideret med den vejledende pris. Hvert hotel her er et af vores tre valg i sin by.",
+		vote_q: "Er du enig i vores tre valg?",
+		yes: "Ja",
+		no: "Ikke rigtigt",
+		thanks: "Tak, det er noteret."
+	}
+};
+var filters_i18n_index_default = {
+	files: {
+		"de": "/assets/t3d/filters-de.2ef1804cbe.json",
+		"fr": "/assets/t3d/filters-fr.41a8175010.json",
+		"it": "/assets/t3d/filters-it.a10d8a6bd2.json",
+		"pt": "/assets/t3d/filters-pt.b6388aed9f.json",
+		"da": "/assets/t3d/filters-da.dc0e3d9bdb.json"
+	},
+	gyms: [
+		"a-coruna-spain",
+		"aachen-germany",
+		"aalborg-denmark",
+		"aarhus-denmark",
+		"aberdeen-unitedkingdom",
+		"abu-dhabi-unitedarabemirates",
+		"ajaccio-france",
+		"ajman-united-arab-emirates",
+		"albufeira-portugal",
+		"alcobendas-spain",
+		"algeciras-spain",
+		"alicante-spain",
+		"almunecar-spain",
+		"altea-spain",
+		"amiens-france",
+		"amman-jordan",
+		"amstelveen-the-netherlands",
+		"amsterdam-netherlands",
+		"andorra-la-vella-andorra",
+		"annecy-france",
+		"antalya-trkiye",
+		"antequera-spain",
+		"aranjuez-spain",
+		"athens-greece",
+		"atlantic-city-united-states",
+		"auckland-newzealand",
+		"augsburg-germany",
+		"aveiro-portugal",
+		"aviles-spain",
+		"baden-baden-germany",
+		"bali-indonesia",
+		"bangkok-thailand",
+		"barcelona",
+		"bath-unitedkingdom",
+		"bayreuth-germany",
+		"beijing-china",
+		"benalmadena-spain",
+		"benidorm-spain",
+		"bergen-norway",
+		"berlin-germany",
+		"bern-switzerland",
+		"bielefeld-germany",
+		"bilbao-spain",
+		"biloxi-united-states",
+		"birmingham-united-kingdom",
+		"blackpool-united-kingdom",
+		"blankenberge-belgium",
+		"bled-slovenia",
+		"blumenau-brazil",
+		"bologna-italy",
+		"bonn-germany",
+		"boston-unitedstates",
+		"braga-portugal",
+		"bratislava-slovakia",
+		"brescia-italy",
+		"bristol-unitedkingdom",
+		"brno-czechia",
+		"brooklyn-united-states",
+		"bruges-belgium",
+		"brussels-belgium",
+		"budapest-hungary",
+		"buenos-aires-argentina",
+		"burgos-spain",
+		"bydgoszcz-poland",
+		"caceres-spain",
+		"cadiz-spain",
+		"cairns-australia",
+		"cambridge-unitedkingdom",
+		"cancun-mexico",
+		"cape-town-southafrica",
+		"cardiff-unitedkingdom",
+		"cartagena-spain",
+		"casablanca-morocco",
+		"castelldefels-spain",
+		"castellon-de-la-plana-spain",
+		"chaves-portugal",
+		"chemnitz-germany",
+		"chester-united-kingdom",
+		"chicago-unitedstates",
+		"christchurch-newzealand",
+		"ciudad-real-spain",
+		"colmar-france",
+		"cologne-germany",
+		"colombo-srilanka",
+		"cordoba-spain",
+		"cuenca-spain",
+		"cullera-spain",
+		"curitiba-brazil",
+		"da-nang-vietnam",
+		"darmstadt-germany",
+		"darwin-australia",
+		"dortmund-germany",
+		"dresden-germany",
+		"dubai",
+		"dublin-ireland",
+		"duisburg-germany",
+		"dundee-united-kingdom",
+		"durban-southafrica",
+		"durham-united-kingdom",
+		"dusseldorf-germany",
+		"edinburgh-unitedkingdom",
+		"eindhoven-netherlands",
+		"eisenach-germany",
+		"elche-spain",
+		"essen-germany",
+		"evora-portugal",
+		"exeter-united-kingdom",
+		"faro-portugal",
+		"flensburg-germany",
+		"florence-italy",
+		"frankfurt-germany",
+		"fukuoka-japan",
+		"fulda-germany",
+		"funchal-portugal",
+		"galway-ireland",
+		"gandia-spain",
+		"garmisch-partenkirchen-germany",
+		"gdansk-poland",
+		"geelong-australia",
+		"geneva-switzerland",
+		"genoa-italy",
+		"gijon-spain",
+		"girona-spain",
+		"glasgow-unitedkingdom",
+		"gottingen-germany",
+		"graz-austria",
+		"guadalajara-mexico",
+		"guildford-unitedkingdom",
+		"hamburg-germany",
+		"hanoi-vietnam",
+		"harrogate-united-kingdom",
+		"heidelberg-germany",
+		"heraklion-greece",
+		"hiroshima-japan",
+		"hobart-australia",
+		"hong-kong-hongkong",
+		"hue-vietnam",
+		"huesca-spain",
+		"innsbruck-austria",
+		"jaen-spain",
+		"jerez-de-la-frontera-spain",
+		"kaohsiung-taiwan",
+		"karlsruhe-germany",
+		"kaunas-lithuania",
+		"kiel-germany",
+		"kobe-japan",
+		"konstanz-germany",
+		"krakow-poland",
+		"kyoto-japan",
+		"larnaca-cyprus",
+		"las-vegas-unitedstates",
+		"lausanne-switzerland",
+		"leeds-united-kingdom",
+		"legian-indonesia",
+		"leicester-unitedkingdom",
+		"leipzig-germany",
+		"leon-spain",
+		"liepaja-latvia",
+		"lille-france",
+		"lincoln-unitedkingdom",
+		"lisbon-portugal",
+		"liverpool-unitedkingdom",
+		"livorno-italy",
+		"ljubljana-slovenia",
+		"lleida-spain",
+		"logrono-spain",
+		"london",
+		"lubeck-germany",
+		"lublin-poland",
+		"lund-sweden",
+		"luton-unitedkingdom",
+		"luxembourg-city-luxembourg",
+		"lyon-france",
+		"maastricht-netherlands",
+		"madrid-spain",
+		"maidstone-unitedkingdom",
+		"mainz-germany",
+		"malaga-spain",
+		"malmo-sweden",
+		"manchester-unitedkingdom",
+		"manila-philippines",
+		"mannheim-germany",
+		"mataro-spain",
+		"merida-spain",
+		"mexico-city-mexico",
+		"miami-unitedstates",
+		"milan-italy",
+		"milton-keynes-unitedkingdom",
+		"monterrey-mexico",
+		"montevideo-uruguay",
+		"motril-spain",
+		"munich-germany",
+		"munster-germany",
+		"murcia-spain",
+		"muscat-oman",
+		"nadi-fiji",
+		"nagoya-japan",
+		"naha-japan",
+		"nancy-france",
+		"nantes-france",
+		"naples-italy",
+		"nashville-unitedstates",
+		"nazare-portugal",
+		"new-york-unitedstates",
+		"newcastle-australia",
+		"newcastle-upon-tyne-united-kingdom",
+		"niagara-falls-canada",
+		"norwich-united-kingdom",
+		"nottingham-united-kingdom",
+		"odense-denmark",
+		"odz-poland",
+		"offenbach-germany",
+		"orlando-unitedstates",
+		"osaka-japan",
+		"oslo-norway",
+		"osnabruck-germany",
+		"ottawa-canada",
+		"paignton-unitedkingdom",
+		"pamplona-spain",
+		"panama-city-panama",
+		"paris",
+		"parma-italy",
+		"passau-germany",
+		"perpignan-france",
+		"peterborough-unitedkingdom",
+		"pitlochry-unitedkingdom",
+		"playa-blanca-spain",
+		"plymouth-unitedkingdom",
+		"portimao-portugal",
+		"porto-moniz-portugal",
+		"porto-portugal",
+		"portsmouth-united-kingdom",
+		"potsdam-germany",
+		"poznan-poland",
+		"prague-czechia",
+		"puebla-mexico",
+		"puerto-de-la-cruz-spain",
+		"pula-croatia",
+		"reading-unitedkingdom",
+		"regensburg-germany",
+		"reims-france",
+		"riga-latvia",
+		"riva-del-garda-italy",
+		"rome",
+		"ronda-spain",
+		"roses-spain",
+		"rostock-germany",
+		"rotterdam-netherlands",
+		"rouen-france",
+		"saarbrucken-germany",
+		"sabadell-spain",
+		"salamanca-spain",
+		"salou-spain",
+		"salzburg-austria",
+		"san-francisco-unitedstates",
+		"santander-spain",
+		"santiago-chile",
+		"sanur-indonesia",
+		"sapporo-japan",
+		"segovia-spain",
+		"seminyak-indonesia",
+		"sendai-japan",
+		"seoul-southkorea",
+		"sesimbra-portugal",
+		"seville-spain",
+		"sharjah-unitedarabemirates",
+		"singapore-singapore",
+		"slough-unitedkingdom",
+		"southport-united-kingdom",
+		"stockholm-sweden",
+		"strasbourg-france",
+		"stuttgart-germany",
+		"sunderland-united-kingdom",
+		"swinoujscie-poland",
+		"szczecin-poland",
+		"szklarska-poreba-poland",
+		"taichung-taiwan",
+		"tainan-taiwan",
+		"tallinn-estonia",
+		"tangier-morocco",
+		"tarragona-spain",
+		"tartu-estonia",
+		"tavira-portugal",
+		"tbilisi-georgia",
+		"teruel-spain",
+		"the-hague-netherlands",
+		"thessaloniki-greece",
+		"timmendorfer-strand-germany",
+		"tokyo",
+		"toledo-spain",
+		"toronto-canada",
+		"torrevieja-spain",
+		"torun-poland",
+		"trento-italy",
+		"treviso-italy",
+		"trieste-italy",
+		"troms-norway",
+		"troyes-france",
+		"turin-italy",
+		"udine-italy",
+		"ulm-germany",
+		"utrecht-netherlands",
+		"valencia-spain",
+		"vancouver-canada",
+		"venice-italy",
+		"verona-italy",
+		"viana-do-castelo-portugal",
+		"vienna-austria",
+		"vilnius-lithuania",
+		"vitoria-gasteiz-spain",
+		"warsaw-poland",
+		"watford-unitedkingdom",
+		"weimar-germany",
+		"wellington-newzealand",
+		"wiesbaden-germany",
+		"wismar-germany",
+		"wrocaw-poland",
+		"wurzburg-germany",
+		"yokohama-japan",
+		"york-unitedkingdom",
+		"zaandam-netherlands",
+		"zagreb-croatia",
+		"zakopane-poland",
+		"zaragoza-spain",
+		"zurich-switzerland"
+	],
+	pools: [
+		"a-coruna-spain",
+		"aachen-germany",
+		"aarhus-denmark",
+		"abu-dhabi-unitedarabemirates",
+		"adelaide-australia",
+		"ajaccio-france",
+		"ajman-united-arab-emirates",
+		"alcobendas-spain",
+		"alicante-spain",
+		"almeria-spain",
+		"almunecar-spain",
+		"altea-spain",
+		"amiens-france",
+		"amman-jordan",
+		"amsterdam-netherlands",
+		"andorra-la-vella-andorra",
+		"annecy-france",
+		"antalya-trkiye",
+		"antequera-spain",
+		"antwerp-belgium",
+		"aranjuez-spain",
+		"athens-greece",
+		"atlantic-city-united-states",
+		"auckland-newzealand",
+		"augsburg-germany",
+		"aveiro-portugal",
+		"bali-indonesia",
+		"bangkok-thailand",
+		"barcelona",
+		"bath-unitedkingdom",
+		"beijing-china",
+		"belem-brazil",
+		"belo-horizonte-brazil",
+		"benalmadena-spain",
+		"benidorm-spain",
+		"berlin-germany",
+		"bern-switzerland",
+		"bielefeld-germany",
+		"bilbao-spain",
+		"biloxi-united-states",
+		"birmingham-united-kingdom",
+		"blackpool-united-kingdom",
+		"blankenberge-belgium",
+		"bled-slovenia",
+		"blumenau-brazil",
+		"bologna-italy",
+		"bonn-germany",
+		"bordeaux-france",
+		"boston-unitedstates",
+		"braga-portugal",
+		"brasilia-brazil",
+		"bratislava-slovakia",
+		"breda-netherlands",
+		"brescia-italy",
+		"brisbane-australia",
+		"bristol-unitedkingdom",
+		"brno-czechia",
+		"bruges-belgium",
+		"brussels-belgium",
+		"budapest-hungary",
+		"buenos-aires-argentina",
+		"burgos-spain",
+		"bydgoszcz-poland",
+		"caceres-spain",
+		"cairns-australia",
+		"cairo-egypt",
+		"cambridge-unitedkingdom",
+		"canberra-australia",
+		"cancun-mexico",
+		"cannes-france",
+		"canterbury-united-kingdom",
+		"cape-town-southafrica",
+		"cardiff-unitedkingdom",
+		"cartagena-spain",
+		"casablanca-morocco",
+		"castelldefels-spain",
+		"chaves-portugal",
+		"chemnitz-germany",
+		"chester-united-kingdom",
+		"chicago-unitedstates",
+		"ciudad-real-spain",
+		"clermont-ferrand-france",
+		"colmar-france",
+		"cologne-germany",
+		"colombo-srilanka",
+		"copenhagen-denmark",
+		"cordoba-spain",
+		"cullera-spain",
+		"curitiba-brazil",
+		"da-nang-vietnam",
+		"darwin-australia",
+		"dijon-france",
+		"dortmund-germany",
+		"dresden-germany",
+		"dubai",
+		"dublin-ireland",
+		"dubrovnik-croatia",
+		"duisburg-germany",
+		"dundee-united-kingdom",
+		"durham-united-kingdom",
+		"dusseldorf-germany",
+		"edinburgh-unitedkingdom",
+		"eindhoven-netherlands",
+		"eisenach-germany",
+		"elche-spain",
+		"essen-germany",
+		"evora-portugal",
+		"exeter-united-kingdom",
+		"faro-portugal",
+		"figueres-spain",
+		"florence-italy",
+		"florianopolis-brazil",
+		"fortaleza-brazil",
+		"frankfurt-germany",
+		"fukuoka-japan",
+		"fulda-germany",
+		"funchal-portugal",
+		"galway-ireland",
+		"gandia-spain",
+		"gdansk-poland",
+		"geneva-switzerland",
+		"genoa-italy",
+		"ghent-belgium",
+		"gijon-spain",
+		"girona-spain",
+		"glasgow-unitedkingdom",
+		"gold-coast-australia",
+		"gottingen-germany",
+		"graz-austria",
+		"guadalajara-mexico",
+		"guildford-unitedkingdom",
+		"hakodate-japan",
+		"hamburg-germany",
+		"hanoi-vietnam",
+		"harrogate-united-kingdom",
+		"hasselt-belgium",
+		"heraklion-greece",
+		"hiroshima-japan",
+		"hobart-australia",
+		"hoi-an-vietnam",
+		"hong-kong-hongkong",
+		"hue-vietnam",
+		"huesca-spain",
+		"innsbruck-austria",
+		"istanbul-trkiye",
+		"jaca-spain",
+		"jaen-spain",
+		"jerez-de-la-frontera-spain",
+		"kaohsiung-taiwan",
+		"karlsruhe-germany",
+		"kaunas-lithuania",
+		"kiel-germany",
+		"klagenfurt-austria",
+		"kobe-japan",
+		"konstanz-germany",
+		"krakow-poland",
+		"kyoto-japan",
+		"la-rochelle-france",
+		"larnaca-cyprus",
+		"las-vegas-unitedstates",
+		"lausanne-switzerland",
+		"le-touquet-paris-plage-france",
+		"leeds-united-kingdom",
+		"legian-indonesia",
+		"leipzig-germany",
+		"liege-belgium",
+		"lille-france",
+		"limoges-france",
+		"linz-austria",
+		"lisbon-portugal",
+		"liverpool-unitedkingdom",
+		"livorno-italy",
+		"ljubljana-slovenia",
+		"lleida-spain",
+		"logrono-spain",
+		"london",
+		"los-angeles-unitedstates",
+		"lubeck-germany",
+		"lublin-poland",
+		"luxembourg-city-luxembourg",
+		"lyon-france",
+		"maastricht-netherlands",
+		"madrid-spain",
+		"maidstone-unitedkingdom",
+		"mainz-germany",
+		"malaga-spain",
+		"manama-bahrain",
+		"manchester-unitedkingdom",
+		"marseille-france",
+		"mechelen-belgium",
+		"melbourne-australia",
+		"menton-france",
+		"merida-spain",
+		"metz-france",
+		"mexico-city-mexico",
+		"miami-unitedstates",
+		"milan-italy",
+		"milton-keynes-unitedkingdom",
+		"monterrey-mexico",
+		"montevideo-uruguay",
+		"mostar-bosniaandherzegovina",
+		"motril-spain",
+		"munich-germany",
+		"munster-germany",
+		"murcia-spain",
+		"muscat-oman",
+		"nadi-fiji",
+		"nagoya-japan",
+		"namur-belgium",
+		"nancy-france",
+		"nantes-france",
+		"naples-italy",
+		"nara-japan",
+		"nashville-unitedstates",
+		"nazare-portugal",
+		"new-york-unitedstates",
+		"newcastle-australia",
+		"newcastle-upon-tyne-united-kingdom",
+		"niagara-falls-canada",
+		"nice-france",
+		"norwich-united-kingdom",
+		"nottingham-united-kingdom",
+		"nusa-dua-indonesia",
+		"odense-denmark",
+		"odz-poland",
+		"olhao-portugal",
+		"orlando-unitedstates",
+		"osaka-japan",
+		"oslo-norway",
+		"ostend-belgium",
+		"ottawa-canada",
+		"paignton-unitedkingdom",
+		"panama-city-panama",
+		"paris",
+		"parma-italy",
+		"perth-australia",
+		"peterborough-unitedkingdom",
+		"playa-blanca-spain",
+		"plymouth-unitedkingdom",
+		"portimao-portugal",
+		"porto-portugal",
+		"portsmouth-united-kingdom",
+		"potsdam-germany",
+		"poznan-poland",
+		"prague-czechia",
+		"puerto-de-la-cruz-spain",
+		"pula-croatia",
+		"ravenna-italy",
+		"reading-unitedkingdom",
+		"recife-brazil",
+		"regensburg-germany",
+		"reims-france",
+		"riga-latvia",
+		"rio-de-janeiro-brazil",
+		"riva-del-garda-italy",
+		"rome",
+		"ronda-spain",
+		"roses-spain",
+		"rostock-germany",
+		"rotterdam-netherlands",
+		"rouen-france",
+		"rovinj-croatia",
+		"saarbrucken-germany",
+		"salamanca-spain",
+		"salzburg-austria",
+		"san-francisco-unitedstates",
+		"san-jose-costarica",
+		"santiago-chile",
+		"sanur-indonesia",
+		"sapporo-japan",
+		"segovia-spain",
+		"seminyak-indonesia",
+		"seoul-southkorea",
+		"sesimbra-portugal",
+		"seville-spain",
+		"sharjah-unitedarabemirates",
+		"siem-reap-cambodia",
+		"singapore-singapore",
+		"sirmione-italy",
+		"sofia-bulgaria",
+		"stockholm-sweden",
+		"strasbourg-france",
+		"stuttgart-germany",
+		"swinoujscie-poland",
+		"sydney-australia",
+		"szczecin-poland",
+		"szklarska-poreba-poland",
+		"tainan-taiwan",
+		"tallinn-estonia",
+		"tangier-morocco",
+		"tarragona-spain",
+		"tartu-estonia",
+		"tavira-portugal",
+		"tbilisi-georgia",
+		"teruel-spain",
+		"the-hague-netherlands",
+		"timmendorfer-strand-germany",
+		"tokyo",
+		"toledo-spain",
+		"toronto-canada",
+		"torrevieja-spain",
+		"torun-poland",
+		"trento-italy",
+		"treviso-italy",
+		"trieste-italy",
+		"troyes-france",
+		"turin-italy",
+		"udine-italy",
+		"ulm-germany",
+		"utrecht-netherlands",
+		"valencia-spain",
+		"vancouver-canada",
+		"venice-italy",
+		"verona-italy",
+		"viana-do-castelo-portugal",
+		"vienna-austria",
+		"vilnius-lithuania",
+		"vitoria-gasteiz-spain",
+		"warsaw-poland",
+		"weimar-germany",
+		"wellington-newzealand",
+		"wiesbaden-germany",
+		"wrocaw-poland",
+		"wurzburg-germany",
+		"yokohama-japan",
+		"york-unitedkingdom",
+		"zagreb-croatia",
+		"zakopane-poland",
+		"zaragoza-spain",
+		"zurich-switzerland"
+	]
+};
+/**
+* T7.2-T7.5 (26-nov): gym and pool pages in de, fr, it, pt and da.
+* UI strings live here; the hotel texts (summaries, "why it wins", equipment and extras) are faithful
+* translations of the stored English texts, kept in one static file per language
+* (public/assets/t3d/filters-<lang>.<hash>.json, built by tools/filters_i18n/build.py) and only for the
+* 300 most visited cities of each filter. Other cities keep the 301 to English.
+*/
+var L5S = [
+	"de",
+	"fr",
+	"it",
+	"pt",
+	"da"
+];
+var IX$2 = filters_i18n_index_default;
+var TR_GYMS = new Set(IX$2.gyms);
+var TR_POOLS = new Set(IX$2.pools);
+var isL5 = (L) => L5S.includes(L);
+/** Languages a gym or pool city page exists in. */
+var filterLangs = (kind, id) => (kind === "gym" ? TR_GYMS : TR_POOLS).has(id) ? [
+	"en",
+	"es",
+	...L5S
+] : ["en", "es"];
+var cache = {};
+var trLoad = (L, site) => cache[L] ??= fetch(`${site}${IX$2.files[L]}`).then((r) => {
+	if (!r.ok) throw new Error(`tr ${r.status}`);
+	return r.json();
+}).catch((e) => {
+	delete cache[L];
+	throw e;
+});
+/** Returns a copy of a gym/pool city with the English fields replaced by the translation (English kept where a text is missing). */
+function trCity(c, id, kind, tr, cityLocal) {
+	const k = kind === "gym" ? "g" : "p";
+	const out = JSON.parse(JSON.stringify(c));
+	const T = (key, en) => en ? tr.t[key] ?? en : en;
+	const V = (s) => tr.v[s] ?? s;
+	out.bestReason_en = T(`${k}r|${id}`, c.bestReason_en);
+	out.luxuryNote = T(`${k}l|${id}`, c.luxuryNote);
+	for (const [t, p0] of Object.entries(out.tiers)) {
+		const p = p0;
+		if (!p) continue;
+		p.summary_en = T(`${k}s|${id}|${t}`, p.summary_en) ?? "";
+		const ar = p.area;
+		if (ar && /\b(near|close|location|overlooking|the|of|and|with|in|on|by|centre|center|district|area|old|town|city|walk|minutes?|from|next|opposite|beach|view|views|downtown|historic|central)\b/i.test(ar)) p.area = cityLocal ?? null;
+		const f = kind === "gym" ? p.gym : p.pool;
+		if (!f) continue;
+		for (const a of ["equipment", "extras"]) if (Array.isArray(f[a])) f[a] = f[a].map(V);
+		for (const a of [
+			"access",
+			"hours",
+			"seasonal"
+		]) if (typeof f[a] === "string") f[a] = V(f[a]);
+	}
+	return out;
+}
+var LOC$1 = {
+	en: "en-GB",
+	es: "es-ES",
+	de: "de-DE",
+	fr: "fr-FR",
+	it: "it-IT",
+	pt: "pt-PT",
+	da: "da-DK"
+};
+var T3 = (a, b, c) => ({
+	luxury: a,
+	standard: b,
+	budget: c
+});
+/** Gym page strings, same keys as TX.en in gyms.ts. */
+var GYM5 = {
+	de: {
+		tier: T3("Luxus", "Mittelklasse", "Günstig"),
+		tierNote: T3("5-Sterne-Hotels", "4-Sterne-Hotels", "3 Sterne oder weniger"),
+		h1: (c) => `Die besten Hotel-Fitnessräume in ${c}`,
+		title: (c) => `Beste Hotels mit Fitnessraum in ${c} (2026): Luxus, Mittelklasse, günstig | Top3Hotels`,
+		desc: (c, n) => `Der beste Hotel-Fitnessraum in ${c} in jeder Preisklasse, bewertet nur nach dem Fitnessraum (Größe, Geräte, Öffnungszeiten): ${n.join(", ")}.`,
+		lead: "Ein Hotel pro Preisklasse, ausgewählt nach seinem Fitnessraum, nicht nach seiner Lobby. Größe, Geräte, Öffnungszeiten und Extras, mit Quellen.",
+		best: "Bester Fitnessraum der Stadt",
+		size: "Größe",
+		hours: "Öffnungszeiten",
+		h24: "24 Stunden geöffnet",
+		equip: "Geräte",
+		extras: "Extras",
+		access: "Zugang",
+		perNight: "/ Nacht",
+		book: "Preise auf Booking ansehen",
+		site: "Website des Hotels",
+		sources: "Quellen",
+		low: "Wenige Informationen: Bitte den Fitnessraum vor der Buchung beim Hotel bestätigen lassen.",
+		none: "In dieser Kategorie konnten wir keinen Hotel-Fitnessraum bestätigen.",
+		photoGym: "Foto des Fitnessraums: Booking.com",
+		photoHotel: "Foto des Hotels: Booking.com",
+		photoCity: "Foto der Stadt",
+		how: "So wählen wir aus",
+		howBody: "Wir bewerten nur den Fitnessraum: Größe, freie Gewichte und Geräte, Öffnungszeiten, Extras wie Pool oder Sauna und was Gäste darüber sagen. Die Kategorien folgen der offiziellen Sterneklassifizierung. Jede Angabe stammt aus einer öffentlichen Quelle, die unter jedem Hotel steht. Links zu Booking.com sind Partnerlinks: Wenn Sie buchen, erhalten wir eventuell eine Provision, ohne Mehrkosten für Sie.",
+		checked: "Geprüft",
+		crumbs: "Hotel-Fitnessräume",
+		hotels: (c) => `Die 3 besten Hotels in ${c}`,
+		idxTitle: "Die besten Hotel-Fitnessräume, Stadt für Stadt | Top3Hotels",
+		idxH1: "Die besten Hotel-Fitnessräume, Stadt für Stadt",
+		idxDesc: "Das Hotel mit dem besten Fitnessraum in den meistbesuchten Städten, in drei Preisklassen: Luxus, Mittelklasse und günstig.",
+		cities: "Städte"
+	},
+	fr: {
+		tier: T3("Luxe", "Milieu de gamme", "Petit budget"),
+		tierNote: T3("Hôtels 5 étoiles", "Hôtels 4 étoiles", "3 étoiles ou moins"),
+		h1: (c) => `Les meilleures salles de sport d'hôtel à ${c}`,
+		title: (c) => `Meilleurs hôtels avec salle de sport à ${c} (2026) : luxe, milieu de gamme, pas cher | Top3Hotels`,
+		desc: (c, n) => `La meilleure salle de sport d'hôtel à ${c} pour chaque budget, jugée uniquement sur la salle (taille, équipements, horaires) : ${n.join(", ")}.`,
+		lead: "Un hôtel par budget, choisi pour sa salle de sport, pas pour son hall. Taille, équipements, horaires et extras, avec les sources.",
+		best: "Meilleure salle de sport de la ville",
+		size: "Taille",
+		hours: "Horaires",
+		h24: "Ouvert 24 h/24",
+		equip: "Équipements",
+		extras: "Extras",
+		access: "Accès",
+		perNight: "/ nuit",
+		book: "Voir les prix sur Booking",
+		site: "Site de l'hôtel",
+		sources: "Sources",
+		low: "Informations limitées : confirmez la salle de sport auprès de l'hôtel avant de réserver.",
+		none: "Nous n'avons pas pu confirmer de salle de sport d'hôtel dans cette catégorie.",
+		photoGym: "Photo de la salle de sport : Booking.com",
+		photoHotel: "Photo de l'hôtel : Booking.com",
+		photoCity: "Photo de la ville",
+		how: "Comment nous choisissons",
+		howBody: "Nous regardons seulement la salle de sport : taille, poids libres et machines, horaires, extras comme une piscine ou un sauna, et l'avis des clients. Les catégories suivent le classement officiel par étoiles. Chaque information vient d'une source publique indiquée sous chaque hôtel. Les liens vers Booking.com sont des liens d'affiliation : si vous réservez, nous pouvons toucher une commission, sans frais pour vous.",
+		checked: "Vérifié",
+		crumbs: "Salles de sport d'hôtel",
+		hotels: (c) => `Les 3 meilleurs hôtels de ${c}`,
+		idxTitle: "Les meilleures salles de sport d'hôtel, ville par ville | Top3Hotels",
+		idxH1: "Les meilleures salles de sport d'hôtel, ville par ville",
+		idxDesc: "L'hôtel avec la meilleure salle de sport dans les villes les plus visitées, pour trois budgets : luxe, milieu de gamme et petit budget.",
+		cities: "villes"
+	},
+	it: {
+		tier: T3("Lusso", "Fascia media", "Economico"),
+		tierNote: T3("Hotel 5 stelle", "Hotel 4 stelle", "3 stelle o meno"),
+		h1: (c) => `Le migliori palestre d'hotel a ${c}`,
+		title: (c) => `Migliori hotel con palestra a ${c} (2026): lusso, fascia media, economico | Top3Hotels`,
+		desc: (c, n) => `La migliore palestra d'hotel a ${c} per ogni budget, valutata solo sulla palestra (dimensioni, attrezzature, orari): ${n.join(", ")}.`,
+		lead: "Un hotel per budget, scelto per la sua palestra, non per la hall. Dimensioni, attrezzature, orari ed extra, con le fonti.",
+		best: "La migliore palestra della città",
+		size: "Dimensioni",
+		hours: "Orari",
+		h24: "Aperta 24 ore",
+		equip: "Attrezzature",
+		extras: "Extra",
+		access: "Accesso",
+		perNight: "/ notte",
+		book: "Vedi i prezzi su Booking",
+		site: "Sito dell'hotel",
+		sources: "Fonti",
+		low: "Informazioni limitate: conferma la palestra con l'hotel prima di prenotare.",
+		none: "Non abbiamo potuto confermare una palestra d'hotel in questa categoria.",
+		photoGym: "Foto della palestra: Booking.com",
+		photoHotel: "Foto dell'hotel: Booking.com",
+		photoCity: "Foto della città",
+		how: "Come scegliamo",
+		howBody: "Guardiamo solo la palestra: dimensioni, pesi liberi e macchine, orari, extra come piscina o sauna e cosa ne dicono gli ospiti. Le categorie seguono la classificazione ufficiale a stelle. Ogni dato viene da una fonte pubblica indicata sotto ogni hotel. I link a Booking.com sono link di affiliazione: se prenoti, possiamo ricevere una commissione senza costi per te.",
+		checked: "Verificato",
+		crumbs: "Palestre d'hotel",
+		hotels: (c) => `I 3 migliori hotel di ${c}`,
+		idxTitle: "Le migliori palestre d'hotel, città per città | Top3Hotels",
+		idxH1: "Le migliori palestre d'hotel, città per città",
+		idxDesc: "L'hotel con la migliore palestra nelle città più visitate, in tre fasce: lusso, fascia media ed economico.",
+		cities: "città"
+	},
+	pt: {
+		tier: T3("Luxo", "Gama média", "Económico"),
+		tierNote: T3("Hotéis de 5 estrelas", "Hotéis de 4 estrelas", "3 estrelas ou menos"),
+		h1: (c) => `Os melhores ginásios de hotel em ${c}`,
+		title: (c) => `Melhores hotéis com ginásio em ${c} (2026): luxo, gama média, barato | Top3Hotels`,
+		desc: (c, n) => `O melhor ginásio de hotel em ${c} em cada orçamento, avaliado só pelo ginásio (tamanho, equipamento, horário): ${n.join(", ")}.`,
+		lead: "Um hotel por orçamento, escolhido pelo ginásio, não pela receção. Tamanho, equipamento, horário e extras, com fontes.",
+		best: "O melhor ginásio da cidade",
+		size: "Tamanho",
+		hours: "Horário",
+		h24: "Aberto 24 horas",
+		equip: "Equipamento",
+		extras: "Extras",
+		access: "Acesso",
+		perNight: "/ noite",
+		book: "Ver preços no Booking",
+		site: "Site do hotel",
+		sources: "Fontes",
+		low: "Informação limitada: confirme o ginásio com o hotel antes de reservar.",
+		none: "Não conseguimos confirmar um ginásio de hotel nesta categoria.",
+		photoGym: "Foto do ginásio: Booking.com",
+		photoHotel: "Foto do hotel: Booking.com",
+		photoCity: "Foto da cidade",
+		how: "Como escolhemos",
+		howBody: "Olhamos só para o ginásio: tamanho, pesos livres e máquinas, horário, extras como piscina ou sauna e o que dizem os hóspedes. As categorias seguem a classificação oficial por estrelas. Cada dado vem de uma fonte pública indicada em cada hotel. Os links para o Booking.com são de afiliado: se reservar, podemos receber uma comissão sem custo para si.",
+		checked: "Verificado",
+		crumbs: "Ginásios de hotel",
+		hotels: (c) => `Os 3 melhores hotéis de ${c}`,
+		idxTitle: "Os melhores ginásios de hotel, cidade a cidade | Top3Hotels",
+		idxH1: "Os melhores ginásios de hotel, cidade a cidade",
+		idxDesc: "O hotel com o melhor ginásio nas cidades mais visitadas, em três orçamentos: luxo, gama média e económico.",
+		cities: "cidades"
+	},
+	da: {
+		tier: T3("Luksus", "Mellemklasse", "Budget"),
+		tierNote: T3("5-stjernede hoteller", "4-stjernede hoteller", "3 stjerner eller færre"),
+		h1: (c) => `De bedste hotelfitnesscentre i ${c}`,
+		title: (c) => `Bedste hoteller med fitness i ${c} (2026): luksus, mellemklasse, billig | Top3Hotels`,
+		desc: (c, n) => `Det bedste hotelfitnesscenter i ${c} i hver prisklasse, vurderet kun på fitnesscentret (størrelse, udstyr, åbningstider): ${n.join(", ")}.`,
+		lead: "Ét hotel pr. prisklasse, valgt for sit fitnesscenter, ikke sin lobby. Størrelse, udstyr, åbningstider og ekstra, med kilder.",
+		best: "Byens bedste fitnesscenter",
+		size: "Størrelse",
+		hours: "Åbningstider",
+		h24: "Åbent døgnet rundt",
+		equip: "Udstyr",
+		extras: "Ekstra",
+		access: "Adgang",
+		perNight: "/ nat",
+		book: "Se priser på Booking",
+		site: "Hotellets hjemmeside",
+		sources: "Kilder",
+		low: "Begrænsede oplysninger: bekræft fitnesscentret med hotellet før booking.",
+		none: "Vi kunne ikke bekræfte et hotelfitnesscenter i denne kategori.",
+		photoGym: "Foto af fitnesscentret: Booking.com",
+		photoHotel: "Foto af hotellet: Booking.com",
+		photoCity: "Foto af byen",
+		how: "Sådan vælger vi",
+		howBody: "Vi ser kun på fitnesscentret: størrelse, frie vægte og maskiner, åbningstider, ekstra som pool eller sauna, og hvad gæsterne siger om det. Kategorierne følger den officielle stjerneklassificering. Hver oplysning kommer fra en offentlig kilde, som står under hvert hotel. Links til Booking.com er affiliate-links: hvis du booker, kan vi få en provision uden ekstra omkostninger for dig.",
+		checked: "Tjekket",
+		crumbs: "Hotelfitness",
+		hotels: (c) => `De 3 bedste hoteller i ${c}`,
+		idxTitle: "De bedste hotelfitnesscentre, by for by | Top3Hotels",
+		idxH1: "De bedste hotelfitnesscentre, by for by",
+		idxDesc: "Hotellet med det bedste fitnesscenter i de mest besøgte byer, i tre prisklasser: luksus, mellemklasse og budget.",
+		cities: "byer"
+	}
+};
+var KINDS = {
+	de: {
+		outdoor: "Außenpool",
+		indoor: "Innenpool",
+		rooftop: "Auf dem Dach",
+		infinity: "Infinity-Pool",
+		lap: "Sportbecken",
+		beach: "Am Strand",
+		plunge: "Tauchbecken"
+	},
+	fr: {
+		outdoor: "Extérieure",
+		indoor: "Intérieure",
+		rooftop: "Sur le toit",
+		infinity: "À débordement",
+		lap: "Couloir de nage",
+		beach: "Au bord de la plage",
+		plunge: "Bassin de plongée"
+	},
+	it: {
+		outdoor: "All'aperto",
+		indoor: "Coperta",
+		rooftop: "Sul tetto",
+		infinity: "A sfioro",
+		lap: "Per nuotare",
+		beach: "Sulla spiaggia",
+		plunge: "Vasca piccola"
+	},
+	pt: {
+		outdoor: "Exterior",
+		indoor: "Interior",
+		rooftop: "No terraço",
+		infinity: "Infinita",
+		lap: "Para nadar",
+		beach: "Junto à praia",
+		plunge: "Pequena"
+	},
+	da: {
+		outdoor: "Udendørs",
+		indoor: "Indendørs",
+		rooftop: "På taget",
+		infinity: "Infinitypool",
+		lap: "Motionsbassin",
+		beach: "Ved stranden",
+		plunge: "Lille bassin"
+	}
+};
+/** Pool page strings, same keys as TX.en in pools.ts. */
+var POOL5 = {
+	de: {
+		...GYM5.de,
+		h1: (c) => `Die besten Hotelpools in ${c}`,
+		title: (c) => `Beste Hotels mit Pool in ${c} (2026): Luxus, Mittelklasse, günstig | Top3Hotels`,
+		desc: (c, n) => `Der beste Hotelpool in ${c} in jeder Preisklasse, bewertet nur nach dem Pool (Art, Größe, Beheizung, Aussicht): ${n.join(", ")}.`,
+		lead: "Ein Hotel pro Preisklasse, ausgewählt nach seinem Pool. Dach-, Innen- oder Sportbecken, Beheizung, Saison und Extras, mit Quellen.",
+		best: "Bester Pool der Stadt",
+		type: "Pool",
+		length: "Länge",
+		heatedT: "Beheizt",
+		yes: "Ja",
+		season: "Saison",
+		kinds: KINDS.de,
+		low: "Wenige Informationen: Bitte den Pool vor der Buchung beim Hotel bestätigen lassen.",
+		none: "In dieser Kategorie konnten wir keinen Hotelpool bestätigen.",
+		photoGym: "Foto des Pools: Booking.com",
+		howBody: "Wir bewerten nur den Pool: Dach-, Infinity-, Innen- oder Sportbecken, Größe, Beheizung und Saison, Aussicht, Extras wie Whirlpool oder Poolbar und was Gäste darüber sagen. Die Kategorien folgen der offiziellen Sterneklassifizierung. Jede Angabe stammt aus einer öffentlichen Quelle, die unter jedem Hotel steht. Links zu Booking.com sind Partnerlinks: Wenn Sie buchen, erhalten wir eventuell eine Provision, ohne Mehrkosten für Sie.",
+		crumbs: "Hotelpools",
+		idxTitle: "Die besten Hotelpools, Stadt für Stadt | Top3Hotels",
+		idxH1: "Die besten Hotelpools, Stadt für Stadt",
+		idxDesc: "Das Hotel mit dem besten Pool in den meistbesuchten Städten, in drei Preisklassen: Luxus, Mittelklasse und günstig."
+	},
+	fr: {
+		...GYM5.fr,
+		h1: (c) => `Les meilleures piscines d'hôtel à ${c}`,
+		title: (c) => `Meilleurs hôtels avec piscine à ${c} (2026) : luxe, milieu de gamme, pas cher | Top3Hotels`,
+		desc: (c, n) => `La meilleure piscine d'hôtel à ${c} pour chaque budget, jugée uniquement sur la piscine (type, taille, chauffage, vue) : ${n.join(", ")}.`,
+		lead: "Un hôtel par budget, choisi pour sa piscine. Sur le toit, intérieure ou couloir de nage, chauffage, saison et extras, avec les sources.",
+		best: "Meilleure piscine de la ville",
+		type: "Piscine",
+		length: "Longueur",
+		heatedT: "Chauffée",
+		yes: "Oui",
+		season: "Saison",
+		kinds: KINDS.fr,
+		h24: "Ouverte 24 h/24",
+		low: "Informations limitées : confirmez la piscine auprès de l'hôtel avant de réserver.",
+		none: "Nous n'avons pas pu confirmer de piscine d'hôtel dans cette catégorie.",
+		photoGym: "Photo de la piscine : Booking.com",
+		howBody: "Nous regardons seulement la piscine : sur le toit, à débordement, intérieure ou couloir de nage, taille, chauffage et saison, vue, extras comme un jacuzzi ou un bar, et l'avis des clients. Les catégories suivent le classement officiel par étoiles. Chaque information vient d'une source publique indiquée sous chaque hôtel. Les liens vers Booking.com sont des liens d'affiliation : si vous réservez, nous pouvons toucher une commission, sans frais pour vous.",
+		crumbs: "Piscines d'hôtel",
+		idxTitle: "Les meilleures piscines d'hôtel, ville par ville | Top3Hotels",
+		idxH1: "Les meilleures piscines d'hôtel, ville par ville",
+		idxDesc: "L'hôtel avec la meilleure piscine dans les villes les plus visitées, pour trois budgets : luxe, milieu de gamme et petit budget."
+	},
+	it: {
+		...GYM5.it,
+		h1: (c) => `Le migliori piscine d'hotel a ${c}`,
+		title: (c) => `Migliori hotel con piscina a ${c} (2026): lusso, fascia media, economico | Top3Hotels`,
+		desc: (c, n) => `La migliore piscina d'hotel a ${c} per ogni budget, valutata solo sulla piscina (tipo, dimensioni, riscaldamento, vista): ${n.join(", ")}.`,
+		lead: "Un hotel per budget, scelto per la sua piscina. Sul tetto, coperta o per nuotare, riscaldamento, stagione ed extra, con le fonti.",
+		best: "La migliore piscina della città",
+		type: "Piscina",
+		length: "Lunghezza",
+		heatedT: "Riscaldata",
+		yes: "Sì",
+		season: "Stagione",
+		kinds: KINDS.it,
+		low: "Informazioni limitate: conferma la piscina con l'hotel prima di prenotare.",
+		none: "Non abbiamo potuto confermare una piscina d'hotel in questa categoria.",
+		photoGym: "Foto della piscina: Booking.com",
+		howBody: "Guardiamo solo la piscina: sul tetto, a sfioro, coperta o per nuotare, dimensioni, riscaldamento e stagione, vista, extra come idromassaggio o bar e cosa ne dicono gli ospiti. Le categorie seguono la classificazione ufficiale a stelle. Ogni dato viene da una fonte pubblica indicata sotto ogni hotel. I link a Booking.com sono link di affiliazione: se prenoti, possiamo ricevere una commissione senza costi per te.",
+		crumbs: "Piscine d'hotel",
+		idxTitle: "Le migliori piscine d'hotel, città per città | Top3Hotels",
+		idxH1: "Le migliori piscine d'hotel, città per città",
+		idxDesc: "L'hotel con la migliore piscina nelle città più visitate, in tre fasce: lusso, fascia media ed economico."
+	},
+	pt: {
+		...GYM5.pt,
+		h1: (c) => `As melhores piscinas de hotel em ${c}`,
+		title: (c) => `Melhores hotéis com piscina em ${c} (2026): luxo, gama média, barato | Top3Hotels`,
+		desc: (c, n) => `A melhor piscina de hotel em ${c} em cada orçamento, avaliada só pela piscina (tipo, tamanho, aquecimento, vista): ${n.join(", ")}.`,
+		lead: "Um hotel por orçamento, escolhido pela piscina. No terraço, interior ou para nadar, aquecimento, época e extras, com fontes.",
+		best: "A melhor piscina da cidade",
+		type: "Piscina",
+		length: "Comprimento",
+		heatedT: "Aquecida",
+		yes: "Sim",
+		season: "Época",
+		kinds: KINDS.pt,
+		h24: "Aberta 24 horas",
+		low: "Informação limitada: confirme a piscina com o hotel antes de reservar.",
+		none: "Não conseguimos confirmar uma piscina de hotel nesta categoria.",
+		photoGym: "Foto da piscina: Booking.com",
+		howBody: "Olhamos só para a piscina: no terraço, infinita, interior ou para nadar, tamanho, aquecimento e época, vista, extras como jacuzzi ou bar e o que dizem os hóspedes. As categorias seguem a classificação oficial por estrelas. Cada dado vem de uma fonte pública indicada em cada hotel. Os links para o Booking.com são de afiliado: se reservar, podemos receber uma comissão sem custo para si.",
+		crumbs: "Piscinas de hotel",
+		idxTitle: "As melhores piscinas de hotel, cidade a cidade | Top3Hotels",
+		idxH1: "As melhores piscinas de hotel, cidade a cidade",
+		idxDesc: "O hotel com a melhor piscina nas cidades mais visitadas, em três orçamentos: luxo, gama média e económico."
+	},
+	da: {
+		...GYM5.da,
+		h1: (c) => `De bedste hotelpools i ${c}`,
+		title: (c) => `Bedste hoteller med pool i ${c} (2026): luksus, mellemklasse, billig | Top3Hotels`,
+		desc: (c, n) => `Den bedste hotelpool i ${c} i hver prisklasse, vurderet kun på poolen (type, størrelse, opvarmning, udsigt): ${n.join(", ")}.`,
+		lead: "Ét hotel pr. prisklasse, valgt for sin pool. Tagterrasse, indendørs eller motionsbassin, opvarmning, sæson og ekstra, med kilder.",
+		best: "Byens bedste pool",
+		type: "Pool",
+		length: "Længde",
+		heatedT: "Opvarmet",
+		yes: "Ja",
+		season: "Sæson",
+		kinds: KINDS.da,
+		low: "Begrænsede oplysninger: bekræft poolen med hotellet før booking.",
+		none: "Vi kunne ikke bekræfte en hotelpool i denne kategori.",
+		photoGym: "Foto af poolen: Booking.com",
+		howBody: "Vi ser kun på poolen: tagterrasse, infinity, indendørs eller motionsbassin, størrelse, opvarmning og sæson, udsigt, ekstra som boblebad eller poolbar, og hvad gæsterne siger om den. Kategorierne følger den officielle stjerneklassificering. Hver oplysning kommer fra en offentlig kilde, som står under hvert hotel. Links til Booking.com er affiliate-links: hvis du booker, kan vi få en provision uden ekstra omkostninger for dig.",
+		crumbs: "Hotelpools",
+		idxTitle: "De bedste hotelpools, by for by | Top3Hotels",
+		idxH1: "De bedste hotelpools, by for by",
+		idxDesc: "Hotellet med den bedste pool i de mest besøgte byer, i tre prisklasser: luksus, mellemklasse og budget."
+	}
+};
+/** Small labels shared by both pages. */
+var SMALL5 = {
+	de: {
+		cat: {
+			Budget: "Günstig",
+			"Best Value": "Bestes Preis-Leistungs-Verhältnis",
+			Luxury: "Luxus"
+		},
+		top3h: (c) => `Unsere Top 3 in ${c}:`,
+		top3l: "Die Hauptantwort für die Stadt",
+		howf: "So wählen wir die Filterseiten aus",
+		alsow: "Auch Sieger bei",
+		spatoo: "Spa und Pool im selben Hotel",
+		equipN: "Gerätearten",
+		allEn: "Alle Städte (auf Englisch)",
+		sightsN: ""
+	},
+	fr: {
+		cat: {
+			Budget: "Petit budget",
+			"Best Value": "Meilleur rapport qualité-prix",
+			Luxury: "Luxe"
+		},
+		top3h: (c) => `Notre top 3 à ${c} :`,
+		top3l: "La réponse principale pour la ville",
+		howf: "Comment nous choisissons les pages de filtres",
+		alsow: "Gagne aussi dans",
+		spatoo: "Spa et piscine dans le même hôtel",
+		equipN: "types d'équipement",
+		allEn: "Toutes les villes (en anglais)",
+		sightsN: ""
+	},
+	it: {
+		cat: {
+			Budget: "Economico",
+			"Best Value": "Miglior rapporto qualità-prezzo",
+			Luxury: "Lusso"
+		},
+		top3h: (c) => `La nostra top 3 a ${c}:`,
+		top3l: "La risposta principale per la città",
+		howf: "Come scegliamo le pagine dei filtri",
+		alsow: "Vince anche in",
+		spatoo: "Spa e piscina nello stesso hotel",
+		equipN: "tipi di attrezzatura",
+		allEn: "Tutte le città (in inglese)",
+		sightsN: ""
+	},
+	pt: {
+		cat: {
+			Budget: "Económico",
+			"Best Value": "Melhor qualidade-preço",
+			Luxury: "Luxo"
+		},
+		top3h: (c) => `O nosso top 3 em ${c}:`,
+		top3l: "A resposta principal para a cidade",
+		howf: "Como escolhemos as páginas de filtros",
+		alsow: "Também ganha em",
+		spatoo: "Spa e piscina no mesmo hotel",
+		equipN: "tipos de equipamento",
+		allEn: "Todas as cidades (em inglês)",
+		sightsN: ""
+	},
+	da: {
+		cat: {
+			Budget: "Budget",
+			"Best Value": "Mest for pengene",
+			Luxury: "Luksus"
+		},
+		top3h: (c) => `Vores top 3 i ${c}:`,
+		top3l: "Hovedsvaret for byen",
+		howf: "Sådan vælger vi filtersiderne",
+		alsow: "Vinder også i",
+		spatoo: "Spa og pool på samme hotel",
+		equipN: "typer udstyr",
+		allEn: "Alle byer (på engelsk)",
+		sightsN: ""
+	}
+};
+/** Comparison table and FAQ strings, same keys as TX.en in filterx.ts. */
+var FX5 = {
+	de: {
+		home: "Top3Hotels",
+		cmpH: (c, k) => k === "gym" ? `Die Hotel-Fitnessräume in ${c} im Vergleich` : `Die Hotelpools in ${c} im Vergleich`,
+		cols: (k) => [
+			"Preisklasse",
+			"Hotel",
+			"Sterne",
+			"Referenzpreis",
+			k === "gym" ? "Fitnessraum" : "Pool",
+			"Zum Zentrum",
+			"In unseren Top 3"
+		],
+		yes: "Ja",
+		no: "Nein",
+		faqH: (c) => `Fragen zu ${c}`,
+		cheapQ: (c, k) => `Welches ist das günstigste Hotel mit ${k === "gym" ? "Fitnessraum" : "Pool"} unter unseren Empfehlungen in ${c}?`,
+		cheapA: (h, p, d) => `${h}, ab ${p} pro Nacht (Referenzpreis für 2 Erwachsene, geprüft am ${d}). Die Preise ändern sich je nach Datum: Prüfen Sie Ihre auf Booking.com.`,
+		topQ: (c, k) => `Ist ein Hotel aus unseren Top 3 in ${c} auch eines der besten für ${k === "gym" ? "seinen Fitnessraum" : "seinen Pool"}?`,
+		topYes: (l) => `Ja: ${l.join("; ")}.`,
+		topNo: (c, n) => `Nein. Keines unserer drei Haupthotels in ${c} ist darunter; hier gewinnen ${n}.`,
+		bestQ: (c, k) => `Welches Hotel hat ${k === "gym" ? "den besten Fitnessraum" : "den besten Pool"} in ${c}?`,
+		nearQ: (c) => `Welches dieser Hotels liegt dem Zentrum von ${c} am nächsten?`,
+		nearA: (h, km) => `${h}, etwa ${km} km Luftlinie vom Zentrum.`,
+		priceNote: "Referenzpreis pro Nacht für 2 Erwachsene auf Booking.com, mit dem Datum der Prüfung; leer, wenn das Hotel nicht in unseren Preisdaten ist."
+	},
+	fr: {
+		home: "Top3Hotels",
+		cmpH: (c, k) => k === "gym" ? `Les salles de sport d'hôtel de ${c} comparées` : `Les piscines d'hôtel de ${c} comparées`,
+		cols: (k) => [
+			"Budget",
+			"Hôtel",
+			"Étoiles",
+			"Prix de référence",
+			k === "gym" ? "Salle de sport" : "Piscine",
+			"Jusqu'au centre",
+			"Dans notre top 3"
+		],
+		yes: "Oui",
+		no: "Non",
+		faqH: (c) => `Questions sur ${c}`,
+		cheapQ: (c, k) => `Quel est l'hôtel le moins cher avec ${k === "gym" ? "salle de sport" : "piscine"} parmi nos choix à ${c} ?`,
+		cheapA: (h, p, d) => `${h}, à partir de ${p} la nuit (prix de référence pour 2 adultes, vérifié le ${d}). Les prix changent selon la date : vérifiez les vôtres sur Booking.com.`,
+		topQ: (c, k) => `Un hôtel de notre top 3 à ${c} fait-il aussi partie des meilleurs pour ${k === "gym" ? "sa salle de sport" : "sa piscine"} ?`,
+		topYes: (l) => `Oui : ${l.join(" ; ")}.`,
+		topNo: (c, n) => `Non. Aucun de nos trois hôtels principaux à ${c} n'en fait partie ; ici, les gagnants sont ${n}.`,
+		bestQ: (c, k) => `Quel hôtel a ${k === "gym" ? "la meilleure salle de sport" : "la meilleure piscine"} de ${c} ?`,
+		nearQ: (c) => `Lequel de ces hôtels est le plus proche du centre de ${c} ?`,
+		nearA: (h, km) => `${h}, à environ ${km} km du centre à vol d'oiseau.`,
+		priceNote: "Prix de référence par nuit pour 2 adultes sur Booking.com, avec la date de vérification ; vide quand l'hôtel n'est pas dans nos données de prix."
+	},
+	it: {
+		home: "Top3Hotels",
+		cmpH: (c, k) => k === "gym" ? `Le palestre d'hotel di ${c} a confronto` : `Le piscine d'hotel di ${c} a confronto`,
+		cols: (k) => [
+			"Fascia",
+			"Hotel",
+			"Stelle",
+			"Prezzo di riferimento",
+			k === "gym" ? "Palestra" : "Piscina",
+			"Dal centro",
+			"Nella nostra top 3"
+		],
+		yes: "Sì",
+		no: "No",
+		faqH: (c) => `Domande su ${c}`,
+		cheapQ: (c, k) => `Qual è l'hotel più economico con ${k === "gym" ? "palestra" : "piscina"} tra quelli scelti a ${c}?`,
+		cheapA: (h, p, d) => `${h}, da ${p} a notte (prezzo di riferimento per 2 adulti, verificato il ${d}). I prezzi cambiano in base alla data: controlla i tuoi su Booking.com.`,
+		topQ: (c, k) => `Un hotel della nostra top 3 di ${c} è anche tra i migliori per ${k === "gym" ? "la palestra" : "la piscina"}?`,
+		topYes: (l) => `Sì: ${l.join("; ")}.`,
+		topNo: (c, n) => `No. Nessuno dei nostri tre hotel principali di ${c} è tra questi; qui vincono ${n}.`,
+		bestQ: (c, k) => `Quale hotel ha ${k === "gym" ? "la migliore palestra" : "la migliore piscina"} di ${c}?`,
+		nearQ: (c) => `Quale di questi hotel è più vicino al centro di ${c}?`,
+		nearA: (h, km) => `${h}, a circa ${km} km dal centro in linea d'aria.`,
+		priceNote: "Prezzo di riferimento a notte per 2 adulti su Booking.com, con la data della verifica; vuoto quando l'hotel non è nei nostri dati sui prezzi."
+	},
+	pt: {
+		home: "Top3Hotels",
+		cmpH: (c, k) => k === "gym" ? `Os ginásios de hotel de ${c} comparados` : `As piscinas de hotel de ${c} comparadas`,
+		cols: (k) => [
+			"Orçamento",
+			"Hotel",
+			"Estrelas",
+			"Preço de referência",
+			k === "gym" ? "Ginásio" : "Piscina",
+			"Ao centro",
+			"No nosso top 3"
+		],
+		yes: "Sim",
+		no: "Não",
+		faqH: (c) => `Perguntas sobre ${c}`,
+		cheapQ: (c, k) => `Qual é o hotel mais barato com ${k === "gym" ? "ginásio" : "piscina"} entre os escolhidos em ${c}?`,
+		cheapA: (h, p, d) => `${h}, desde ${p} por noite (preço de referência para 2 adultos, verificado a ${d}). Os preços mudam com a data: consulte os seus no Booking.com.`,
+		topQ: (c, k) => `Algum hotel do nosso top 3 de ${c} está também entre os melhores pelo ${k === "gym" ? "ginásio" : "piscina"}?`.replace("pelo piscina", "pela piscina"),
+		topYes: (l) => `Sim: ${l.join("; ")}.`,
+		topNo: (c, n) => `Não. Nenhum dos nossos três hotéis principais de ${c} está entre eles; aqui ganham ${n}.`,
+		bestQ: (c, k) => `Que hotel tem ${k === "gym" ? "o melhor ginásio" : "a melhor piscina"} de ${c}?`,
+		nearQ: (c) => `Qual destes hotéis está mais perto do centro de ${c}?`,
+		nearA: (h, km) => `${h}, a cerca de ${km} km do centro em linha reta.`,
+		priceNote: "Preço de referência por noite para 2 adultos no Booking.com, com a data em que foi verificado; vazio quando o hotel não está nos nossos dados de preços."
+	},
+	da: {
+		home: "Top3Hotels",
+		cmpH: (c, k) => k === "gym" ? `Hotelfitnesscentrene i ${c} sammenlignet` : `Hotelpoolerne i ${c} sammenlignet`,
+		cols: (k) => [
+			"Prisklasse",
+			"Hotel",
+			"Stjerner",
+			"Referencepris",
+			k === "gym" ? "Fitness" : "Pool",
+			"Til centrum",
+			"I vores top 3"
+		],
+		yes: "Ja",
+		no: "Nej",
+		faqH: (c) => `Spørgsmål om ${c}`,
+		cheapQ: (c, k) => `Hvilket er det billigste hotel med ${k === "gym" ? "fitnesscenter" : "pool"} blandt vores valg i ${c}?`,
+		cheapA: (h, p, d) => `${h}, fra ${p} pr. nat (referencepris for 2 voksne, tjekket ${d}). Priserne ændrer sig efter dato: tjek dine på Booking.com.`,
+		topQ: (c, k) => `Er et af hotellerne i vores top 3 i ${c} også blandt de bedste for ${k === "gym" ? "sit fitnesscenter" : "sin pool"}?`,
+		topYes: (l) => `Ja: ${l.join("; ")}.`,
+		topNo: (c, n) => `Nej. Ingen af vores tre hovedhoteller i ${c} er blandt dem; her vinder ${n}.`,
+		bestQ: (c, k) => `Hvilket hotel har ${k === "gym" ? "det bedste fitnesscenter" : "den bedste pool"} i ${c}?`,
+		nearQ: (c) => `Hvilket af disse hoteller ligger tættest på centrum af ${c}?`,
+		nearA: (h, km) => `${h}, ca. ${km} km fra centrum i luftlinje.`,
+		priceNote: "Referencepris pr. nat for 2 voksne på Booking.com, med datoen for tjekket; tom, når hotellet ikke er i vores prisdata."
+	}
+};
+/** T7.8/T7.12/T7.13/T7.32-T7.34: inline labels in every language. */
+var G5 = {
+	en: {
+		cities: "cities",
+		median: "median budget pick",
+		dlAll: "Download all the data",
+		allIn: (c) => `All our cities in ${c}`,
+		cheapest: "Cheapest",
+		hotels: "hotels",
+		esc: (c, n, s, p) => `Escaping to ${c}: ${n}, rated ${s}, ${p} a night`
+	},
+	es: {
+		cities: "ciudades",
+		median: "mediana del hotel económico",
+		dlAll: "Descargar todos los datos",
+		allIn: (c) => `Todas las ciudades de ${c}`,
+		cheapest: "Más barato",
+		hotels: "hoteles",
+		esc: (c, n, s, p) => `Me escapo a ${c}: ${n}, nota ${s}, ${p} la noche`
+	},
+	de: {
+		cities: "Städte",
+		median: "Median des günstigen Hotels",
+		dlAll: "Alle Daten herunterladen",
+		allIn: (c) => `Alle unsere Städte in ${c}`,
+		cheapest: "Am günstigsten",
+		hotels: "Hotels",
+		esc: (c, n, s, p) => `Ich fahre nach ${c}: ${n}, Bewertung ${s}, ${p} pro Nacht`
+	},
+	fr: {
+		cities: "villes",
+		median: "médiane de l'hôtel petit budget",
+		dlAll: "Télécharger toutes les données",
+		allIn: (c) => `Toutes nos villes : ${c}`,
+		cheapest: "Le moins cher",
+		hotels: "hôtels",
+		esc: (c, n, s, p) => `Je pars à ${c} : ${n}, note ${s}, ${p} la nuit`
+	},
+	it: {
+		cities: "città",
+		median: "mediana dell'hotel economico",
+		dlAll: "Scarica tutti i dati",
+		allIn: (c) => `Tutte le nostre città: ${c}`,
+		cheapest: "Il più economico",
+		hotels: "hotel",
+		esc: (c, n, s, p) => `Scappo a ${c}: ${n}, voto ${s}, ${p} a notte`
+	},
+	pt: {
+		cities: "cidades",
+		median: "mediana do hotel económico",
+		dlAll: "Descarregar todos os dados",
+		allIn: (c) => `Todas as nossas cidades: ${c}`,
+		cheapest: "O mais barato",
+		hotels: "hotéis",
+		esc: (c, n, s, p) => `Vou fugir para ${c}: ${n}, nota ${s}, ${p} por noite`
+	},
+	da: {
+		cities: "byer",
+		median: "median for budgethotellet",
+		dlAll: "Download alle data",
+		allIn: (c) => `Alle vores byer i ${c}`,
+		cheapest: "Billigst",
+		hotels: "hoteller",
+		esc: (c, n, s, p) => `Jeg tager til ${c}: ${n}, karakter ${s}, ${p} pr. nat`
+	}
+};
+var g5 = (L) => G5[L] ?? G5.en;
 var PICKS;
 function allPicks() {
 	if (!PICKS) PICKS = (async () => {
@@ -21536,7 +23481,7 @@ async function cityStats() {
 	}
 	return [...by.values()];
 }
-var TX$5 = {
+var TX$4 = {
 	en: {
 		od_t: "Open data: hotel picks for 1,295 cities",
 		od_d: "Download the Top3Hotels dataset (CSV or JSON): three hotel picks per city with guest scores, review counts and reference prices. Free to reuse under CC BY 4.0.",
@@ -21622,15 +23567,26 @@ var TX$5 = {
 		more: "Ver los tres hoteles"
 	}
 };
-var tx = (L) => TX$5[L] ?? TX$5.en;
-var GROWTH_LANGS = ["en", "es"];
+Object.assign(TX$4, TX5);
+var tx = (L) => TX$4[L] ?? TX$4.en;
+var GROWTH_LANGS = [
+	"en",
+	"es",
+	"de",
+	"fr",
+	"it",
+	"pt",
+	"da"
+];
+/** /near and /compare-picks stay in EN and ES (sight names and FAQ texts only exist there). */
+var NEAR_LANGS = ["en", "es"];
 var fmt = (n) => n == null ? "" : money(n);
 var sc = (n) => n == null ? "" : n.toFixed(1);
 function table(L, rows, cols) {
 	const t = tx(L);
 	return `<div style="overflow-x:auto"><table class="ix"><thead><tr><th>#</th><th>${t.city}</th>${cols.map((c) => `<th>${t[c]}</th>`).join("")}</tr></thead><tbody>${rows.map((r, i) => `<tr><td>${i + 1}</td><td><a href="${P(L, "/" + r.slug)}">${esc(r.city)}</a> <small>${esc(r.country)}</small></td>${cols.map((c) => {
 		const p = r[c];
-		return `<td>${p?.nightly ? `<b>${fmt(p.nightly)}</b> <small>${esc(p.name)}${p.score ? ` · ${sc(p.score)}` : ""}${p.reviews ? ` (${p.reviews.toLocaleString(L === "en" ? "en-GB" : "es-ES")})` : ""}</small> ${bkBtn(p.booking, "t3bv", L, `${p.name}, ${r.city}`)}` : ""}</td>`;
+		return `<td>${p?.nightly ? `<b>${fmt(p.nightly)}</b> <small>${esc(p.name)}${p.score ? ` · ${sc(p.score)}` : ""}${p.reviews ? ` (${p.reviews.toLocaleString(LOC$1[L])})` : ""}</small> ${bkBtn(p.booking, "t3bv", L, `${p.name}, ${r.city}`)}` : ""}</td>`;
 	}).join("")}</tr>`).join("")}</tbody></table></div>`;
 }
 var CSS$2 = `<style>.ix{width:100%;border-collapse:collapse;font-size:15px;margin:10px 0 26px}.ix th,.ix td{padding:9px 8px;border-bottom:1px solid rgba(127,127,127,.22);text-align:left;vertical-align:top}.ix th{font-size:12px;text-transform:uppercase;letter-spacing:.05em;opacity:.7}.ix small{opacity:.7}.ix b{white-space:nowrap}.gw{max-width:980px;margin:0 auto;padding:28px 16px 40px}.gw h1{font-size:clamp(28px,5vw,44px);line-height:1.1;margin:0 0 12px}.gw .lead{font-size:19px;color:var(--muted);max-width:720px}.gw h2{margin:34px 0 8px}.dl{display:inline-block;margin:6px 10px 6px 0;padding:12px 18px;border-radius:12px;background:#0b3b8c;color:#fff!important;text-decoration:none;font-weight:700}.note{font-size:14px;color:var(--muted)}</style>`;
@@ -21638,7 +23594,7 @@ async function openDataPage(L) {
 	const t = tx(L);
 	const n = (await allPicks()).length;
 	const body = `${CSS$2}<main class="gw"><h1>${t.od_h}</h1><p class="lead">${esc(t.od_p1)}</p>
-<p><a class="dl" href="/data/top3hotels.csv" download>${t.dl} CSV</a><a class="dl" href="/data/top3hotels.json">${t.dl} JSON</a> <span class="note">${n.toLocaleString(L === "en" ? "en-GB" : "es-ES")} ${t.rows}</span></p>
+<p><a class="dl" href="/data/top3hotels.csv" download>${t.dl} CSV</a><a class="dl" href="/data/top3hotels.json">${t.dl} JSON</a> <span class="note">${n.toLocaleString(LOC$1[L])} ${t.rows}</span></p>
 <p>${esc(t.od_p2)}</p><p class="note">${esc(t.od_p3)}</p>
 <h2>${t.fields}</h2><p class="note">city, country, category (Budget, Best Value, Luxury), hotel, stars, guest_score, reviews, reference_eur_per_night, checked, top3hotels_url, booking_url</p>
 <h2>${t.press_more}</h2><ul><li><a href="${P(L, "/hotel-price-index")}">${t.idx_h}</a></li><li><a href="${P(L, "/rated-9-under-60")}">${t.nine_h}</a></li><li><a href="${P(L, "/how-we-choose")}">How we choose</a></li></ul></main>`;
@@ -21721,7 +23677,7 @@ async function priceIndexPage(L) {
 	caps.sort((a, b) => (a.value?.nightly ?? 1e9) - (b.value?.nightly ?? 1e9));
 	const med = byBudget[Math.floor(byBudget.length / 2)]?.budget?.nightly;
 	const body = `${CSS$2}<main class="gw"><h1>${t.idx_h}</h1><p class="lead">${esc(t.idx_lead)}</p>
-<p class="note">${st.length.toLocaleString(L === "es" ? "es-ES" : "en-GB")} ${L === "es" ? "ciudades" : "cities"} · ${L === "es" ? "mediana del hotel económico" : "median budget pick"}: <b>${fmt(med)}</b> ${t.night}</p>
+<p class="note">${st.length.toLocaleString(LOC$1[L])} ${g5(L).cities} · ${g5(L).median}: <b>${fmt(med)}</b> ${t.night}</p>
 <h2>${t.cheapest}</h2>${table(L, cheap, ["budget", "value"])}
 <h2>${t.priciest}</h2>${table(L, dear, ["budget", "value"])}
 <h2>${t.luxcheap}</h2>${table(L, five, ["lux"])}
@@ -21732,7 +23688,7 @@ async function priceIndexPage(L) {
 		"lux"
 	])}
 <h2>${t.method}</h2><p>${esc(t.method_p)}</p><p class="note">${esc(t.cite)}</p>
-<p><a class="dl" href="${P(L, "/open-data")}">${L === "es" ? "Descargar todos los datos" : "Download all the data"}</a></p></main>`;
+<p><a class="dl" href="${P(L, "/open-data")}">${g5(L).dlAll}</a></p></main>`;
 	return page({
 		L,
 		title: `${t.idx_t} | Top3Hotels`,
@@ -21745,8 +23701,8 @@ async function priceIndexPage(L) {
 async function ninePage(L) {
 	const t = tx(L);
 	const rows = (await allPicks()).filter((r) => (r.score ?? 0) >= 9 && r.nightly && r.nightly < 60).sort((a, b) => a.nightly - b.nightly);
-	const body = `${CSS$2}<main class="gw"><h1>${t.nine_h}</h1><p class="lead">${esc(t.nine_lead)}</p><p class="note">${rows.length} hotels</p>
-<div style="overflow-x:auto"><table class="ix"><thead><tr><th>#</th><th>Hotel</th><th>${t.city}</th><th>${t.score}</th><th>${t.night}</th><th></th></tr></thead><tbody>${rows.map((r, i) => `<tr><td>${i + 1}</td><td>${esc(r.name)} <small>${esc(r.cat)}</small></td><td><a href="${P(L, "/" + r.slug)}">${esc(r.city)}</a> <small>${esc(r.country)}</small></td><td>${sc(r.score)} <small>${(r.reviews ?? 0).toLocaleString("en-GB")} ${t.reviews}</small></td><td><b>${fmt(r.nightly)}</b></td><td>${bkBtn(r.booking, "t3nine", L, `${r.name}, ${r.city}`)}</td></tr>`).join("")}</tbody></table></div><p class="note">${esc(t.od_p3)}</p></main>`;
+	const body = `${CSS$2}<main class="gw"><h1>${t.nine_h}</h1><p class="lead">${esc(t.nine_lead)}</p><p class="note">${rows.length} ${g5(L).hotels}</p>
+<div style="overflow-x:auto"><table class="ix"><thead><tr><th>#</th><th>Hotel</th><th>${t.city}</th><th>${t.score}</th><th>${t.night}</th><th></th></tr></thead><tbody>${rows.map((r, i) => `<tr><td>${i + 1}</td><td>${esc(r.name)} <small>${esc(r.cat)}</small></td><td><a href="${P(L, "/" + r.slug)}">${esc(r.city)}</a> <small>${esc(r.country)}</small></td><td>${sc(r.score)} <small>${(r.reviews ?? 0).toLocaleString(LOC$1[L])} ${t.reviews}</small></td><td><b>${fmt(r.nightly)}</b></td><td>${bkBtn(r.booking, "t3nine", L, `${r.name}, ${r.city}`)}</td></tr>`).join("")}</tbody></table></div><p class="note">${esc(t.od_p3)}</p></main>`;
 	return page({
 		L,
 		title: `${t.nine_t} | Top3Hotels`,
@@ -21766,7 +23722,7 @@ async function countryValuePage(L, cslug) {
 		"budget",
 		"value",
 		"lux"
-	])}<p><a class="dl" href="${P(L, `/country/${cslug}`)}">${esc(L === "es" ? `Todas las ciudades de ${c}` : `All our cities in ${c}`)}</a></p><p class="note">${esc(t.od_p3)}</p></main>`;
+	])}<p><a class="dl" href="${P(L, `/country/${cslug}`)}">${esc(g5(L).allIn(c))}</a></p><p class="note">${esc(t.od_p3)}</p></main>`;
 	const ld = [{
 		"@context": "https://schema.org",
 		"@type": "ItemList",
@@ -21782,7 +23738,7 @@ async function countryValuePage(L, cslug) {
 	return page({
 		L,
 		title: `${t.country_t(c)} (2026)`,
-		description: `${t.country_d(c)} ${L === "es" ? "Más barato" : "Cheapest"}: ${cheapest.city}, ${fmt(cheapest.value.nightly)}.`,
+		description: `${t.country_d(c)} ${g5(L).cheapest}: ${cheapest.city}, ${fmt(cheapest.value.nightly)}.`,
 		path: `/best-value/${cslug}`,
 		body,
 		ld,
@@ -21925,6 +23881,7 @@ var TT = {
 		a_find: "Busca tu ciudad"
 	}
 };
+Object.assign(TT, TT5);
 var tt = (L) => TT[L] ?? TT.en;
 var CATS = [
 	["budget", "Budget"],
@@ -21941,7 +23898,7 @@ async function budgetPage(L, q) {
 	const url = `${SITE}${P(L, path)}?max=${max}${cat ? `&cat=${q.get("cat")}` : ""}`;
 	const form = `<form method="get" action="${P(L, path)}" class="plan" style="display:flex;gap:10px;flex-wrap:wrap;align-items:end;margin:14px 0 6px"><label>${t.max}<br><input name="max" type="number" min="10" max="1000" step="5" value="${max}" style="width:110px"></label><label>${t.cat}<br><select name="cat"><option value="">${t.any}</option>${CATS.map(([k]) => `<option value="${k}"${q.get("cat") === k ? " selected" : ""}>${tx(L)[k]}</option>`).join("")}</select></label><button class="dl" type="submit">${t.go}</button></form>`;
 	const body = `${CSS$2}<main class="gw"><h1>${t.b_h}</h1><p class="lead">${esc(t.b_lead)}</p>${form}<p><b>${esc(t.found(rows.length === 100 ? 100 : rows.length, max))}</b></p>${shareBar(url, t.found(rows.length, max), t.share)}
-<div style="overflow-x:auto"><table class="ix"><thead><tr><th>#</th><th>Hotel</th><th>${tx(L).city}</th><th>${tx(L).score}</th><th>${tx(L).night}</th><th></th></tr></thead><tbody>${rows.map((r, i) => `<tr><td>${i + 1}</td><td>${esc(r.name)} <small>${esc(r.cat)}${r.stars ? ` · ${r.stars}★` : ""}</small></td><td><a href="${P(L, "/" + r.slug)}">${esc(r.city)}</a> <small>${esc(r.country)}</small></td><td>${sc(r.score)} <small>${(r.reviews ?? 0).toLocaleString("en-GB")}</small></td><td><b>${fmt(r.nightly)}</b></td><td>${bkBtn(r.booking, "t3rank", L, `${r.name}, ${r.city}`)}</td></tr>`).join("")}</tbody></table></div><p class="note">${esc(tx(L).od_p3)}</p></main>`;
+<div style="overflow-x:auto"><table class="ix"><thead><tr><th>#</th><th>Hotel</th><th>${tx(L).city}</th><th>${tx(L).score}</th><th>${tx(L).night}</th><th></th></tr></thead><tbody>${rows.map((r, i) => `<tr><td>${i + 1}</td><td>${esc(r.name)} <small>${esc(r.cat)}${r.stars ? ` · ${r.stars}★` : ""}</small></td><td><a href="${P(L, "/" + r.slug)}">${esc(r.city)}</a> <small>${esc(r.country)}</small></td><td>${sc(r.score)} <small>${(r.reviews ?? 0).toLocaleString(LOC$1[L])}</small></td><td><b>${fmt(r.nightly)}</b></td><td>${bkBtn(r.booking, "t3rank", L, `${r.name}, ${r.city}`)}</td></tr>`).join("")}</tbody></table></div><p class="note">${esc(tx(L).od_p3)}</p></main>`;
 	return page({
 		L,
 		title: `${t.b_t} | Top3Hotels`,
@@ -21959,10 +23916,10 @@ async function escapePage(L, q) {
 	const r = pool[Math.floor(Math.random() * pool.length)];
 	const path = "/escape";
 	const url = r ? `${SITE}${P(L, "/" + r.slug)}` : `${SITE}${P(L, path)}`;
-	const txt = r ? L === "es" ? `Me escapo a ${r.city}: ${r.name}, nota ${sc(r.score)}, ${fmt(r.nightly)} la noche` : `Escaping to ${r.city}: ${r.name}, rated ${sc(r.score)}, ${fmt(r.nightly)} a night` : "";
+	const txt = r ? g5(L).esc(r.city, r.name, sc(r.score), fmt(r.nightly)) : "";
 	const body = `${CSS$2}<main class="gw" style="text-align:center"><h1>${t.e_h}</h1><p class="lead" style="margin:0 auto">${esc(t.e_lead)}</p>
 <form method="get" action="${P(L, path)}" style="margin:18px 0"><label>${t.max} <input name="max" type="number" min="20" max="1000" step="5" value="${max}" style="width:110px"></label> <button class="dl" type="submit">${t.spin}</button></form>
-${r ? `<div style="border:1px solid rgba(127,127,127,.25);border-radius:18px;padding:26px 18px;max-width:560px;margin:10px auto"><p style="font-size:14px;text-transform:uppercase;letter-spacing:.08em;opacity:.7;margin:0">${esc(r.country)}</p><p style="font-size:42px;font-weight:800;margin:4px 0 10px">${esc(r.city)}</p><p style="font-size:18px;margin:0 0 6px"><b>${esc(r.name)}</b></p><p style="margin:0 0 16px">${sc(r.score)}/10 · ${(r.reviews ?? 0).toLocaleString("en-GB")} ${tx(L).reviews} · <b>${fmt(r.nightly)}</b> ${tx(L).night}</p><a class="dl" href="${P(L, "/" + r.slug)}">${t.see}</a></div>${shareBar(url, txt, t.share)}` : ""}
+${r ? `<div style="border:1px solid rgba(127,127,127,.25);border-radius:18px;padding:26px 18px;max-width:560px;margin:10px auto"><p style="font-size:14px;text-transform:uppercase;letter-spacing:.08em;opacity:.7;margin:0">${esc(r.country)}</p><p style="font-size:42px;font-weight:800;margin:4px 0 10px">${esc(r.city)}</p><p style="font-size:18px;margin:0 0 6px"><b>${esc(r.name)}</b></p><p style="margin:0 0 16px">${sc(r.score)}/10 · ${(r.reviews ?? 0).toLocaleString(LOC$1[L])} ${tx(L).reviews} · <b>${fmt(r.nightly)}</b> ${tx(L).night}</p><a class="dl" href="${P(L, "/" + r.slug)}">${t.see}</a></div>${shareBar(url, txt, t.share)}` : ""}
 <p class="note">${esc(tx(L).od_p3)}</p></main>`;
 	return page({
 		L,
@@ -21979,7 +23936,7 @@ function splitPage(L) {
 	const body = `${CSS$2}<main class="gw"><h1>${t.s_h}</h1><p class="lead">${esc(t.s_d)}</p>
 <form id="spl" style="display:flex;gap:12px;flex-wrap:wrap;align-items:end;margin:16px 0"><label>${t.price}<br><input name="p" type="number" min="0" step="1" value="120" style="width:130px"></label><label>${t.nights}<br><input name="n" type="number" min="1" step="1" value="2" style="width:90px"></label><label>${t.people}<br><input name="k" type="number" min="1" step="1" value="2" style="width:90px"></label></form>
 <p style="font-size:30px;font-weight:800;margin:6px 0" id="splA"></p><p style="font-size:18px;margin:0" id="splB"></p>
-<script>(function(){var f=document.getElementById('spl');function u(){var p=+f.p.value||0,n=Math.max(1,+f.n.value||1),k=Math.max(1,+f.k.value||1);var tot=p*n/k;document.getElementById('splA').textContent=tot.toFixed(2).replace('.',${L === "es" ? "','" : "'.'"})+' € ${t.pp}';document.getElementById('splB').textContent=(p/k).toFixed(2).replace('.',${L === "es" ? "','" : "'.'"})+' € ${t.ppn}'}f.addEventListener('input',u);u()})();<\/script></main>`;
+<script>(function(){var f=document.getElementById('spl');function u(){var p=+f.p.value||0,n=Math.max(1,+f.n.value||1),k=Math.max(1,+f.k.value||1);var tot=p*n/k;document.getElementById('splA').textContent=tot.toFixed(2).replace('.',${L === "en" ? "'.'" : "','"})+' € ${t.pp}';document.getElementById('splB').textContent=(p/k).toFixed(2).replace('.',${L === "en" ? "'.'" : "','"})+' € ${t.ppn}'}f.addEventListener('input',u);u()})();<\/script></main>`;
 	return page({
 		L,
 		title: `${t.s_t} | Top3Hotels`,
@@ -22071,12 +24028,41 @@ var TD = {
 		all: "Ver los tres hoteles"
 	}
 };
+Object.assign(TD, TD5);
 var td = (L) => TD[L] ?? TD.en;
-var CATL = (L, c) => L === "es" ? {
-	Budget: "Económico",
-	"Best Value": "Mejor calidad-precio",
-	Luxury: "Lujo"
-}[c] ?? c : c;
+var CAT7 = {
+	es: {
+		Budget: "Económico",
+		"Best Value": "Mejor calidad-precio",
+		Luxury: "Lujo"
+	},
+	de: {
+		Budget: "Günstig",
+		"Best Value": "Bestes Preis-Leistungs-Verhältnis",
+		Luxury: "Luxus"
+	},
+	fr: {
+		Budget: "Petit budget",
+		"Best Value": "Meilleur rapport qualité-prix",
+		Luxury: "Luxe"
+	},
+	it: {
+		Budget: "Economico",
+		"Best Value": "Miglior rapporto qualità-prezzo",
+		Luxury: "Lusso"
+	},
+	pt: {
+		Budget: "Económico",
+		"Best Value": "Melhor qualidade-preço",
+		Luxury: "Luxo"
+	},
+	da: {
+		Budget: "Budget",
+		"Best Value": "Mest for pengene",
+		Luxury: "Luksus"
+	}
+};
+var CATL = (L, c) => CAT7[L]?.[c] ?? c;
 async function cityFull(slug) {
 	const { bySlug } = await data();
 	const ix = bySlug.get(slug);
@@ -22128,7 +24114,7 @@ ${row("Booking.com", (h) => bkBtn(h.booking?.url, "t3cmp", L, h.name))}
 		description: t.cmp_d(c),
 		path: `/compare-picks/${slug}`,
 		body,
-		alts: GROWTH_LANGS,
+		alts: NEAR_LANGS,
 		noindex: true
 	});
 }
@@ -22240,7 +24226,7 @@ ${others.length ? `<h2>${t.nearby}</h2><p>${others.map((x) => `<a href="${P(L, `
 		path: `/near/${slug}/${sight}`,
 		body,
 		ld,
-		alts: GROWTH_LANGS,
+		alts: NEAR_LANGS,
 		noindex: !nearOk(rows)
 	});
 }
@@ -22288,6 +24274,7 @@ var TF = {
 		thanks: "Gracias, lo tenemos en cuenta."
 	}
 };
+Object.assign(TF, TF5);
 var tf = (L) => TF[L] ?? TF.en;
 function nearMePage(L) {
 	const t = tf(L);
@@ -22310,7 +24297,7 @@ async function best100Page(L) {
 		v: adj(r) / Math.log(r.nightly + 20)
 	})).sort((a, b) => b.v - a.v).slice(0, 100).map((x) => x.r);
 	const body = `${CSS$2}<main class="gw"><h1>${t.b100_h}</h1><p class="lead">${esc(t.b100_lead)}</p>
-<div style="overflow-x:auto"><table class="ix"><thead><tr><th>#</th><th>Hotel</th><th>${tx(L).city}</th><th>${tx(L).score}</th><th>${tx(L).night}</th><th></th></tr></thead><tbody>${rows.map((r, i) => `<tr><td>${i + 1}</td><td><b>${esc(r.name)}</b> <small>${esc(CATL(L, r.cat))}${r.stars ? ` · ${r.stars}★` : ""}</small></td><td><a href="${P(L, "/" + r.slug)}">${esc(r.city)}</a> <small>${esc(r.country)}</small></td><td>${sc(r.score)} <small>${(r.reviews ?? 0).toLocaleString("en-GB")}</small></td><td><b>${fmt(r.nightly)}</b></td><td>${bkBtn(r.booking, "t3rank", L, `${r.name}, ${r.city}`)}</td></tr>`).join("")}</tbody></table></div><p class="note">${esc(tx(L).od_p3)}</p><p class="note">${esc(tx(L).cite)}</p></main>`;
+<div style="overflow-x:auto"><table class="ix"><thead><tr><th>#</th><th>Hotel</th><th>${tx(L).city}</th><th>${tx(L).score}</th><th>${tx(L).night}</th><th></th></tr></thead><tbody>${rows.map((r, i) => `<tr><td>${i + 1}</td><td><b>${esc(r.name)}</b> <small>${esc(CATL(L, r.cat))}${r.stars ? ` · ${r.stars}★` : ""}</small></td><td><a href="${P(L, "/" + r.slug)}">${esc(r.city)}</a> <small>${esc(r.country)}</small></td><td>${sc(r.score)} <small>${(r.reviews ?? 0).toLocaleString(LOC$1[L])}</small></td><td><b>${fmt(r.nightly)}</b></td><td>${bkBtn(r.booking, "t3rank", L, `${r.name}, ${r.city}`)}</td></tr>`).join("")}</tbody></table></div><p class="note">${esc(tx(L).od_p3)}</p><p class="note">${esc(tx(L).cite)}</p></main>`;
 	const ld = [{
 		"@context": "https://schema.org",
 		"@type": "ItemList",
@@ -22600,7 +24587,7 @@ var W = {
 		}
 	}
 };
-var TX$4 = {
+var TXA$2 = {
 	en: {
 		home: "Top3Hotels",
 		cmpH: (c, k) => `The ${W.en[k].whatPl} in ${c} compared`,
@@ -22650,24 +24637,25 @@ var TX$4 = {
 		nearQ: (c) => `¿Cuál de estos hoteles está más cerca del centro de ${c}?`,
 		nearA: (h, km) => `${h}, a unos ${km} km del centro en línea recta.`,
 		priceNote: "Precio de referencia por noche para 2 adultos en Booking.com, con la fecha en que se revisó; vacío cuando el hotel no está en nuestros datos de precios."
-	}
+	},
+	...FX5
 };
 var fmtDay = (iso, L) => {
 	if (!iso) return "";
 	const d = /* @__PURE__ */ new Date(`${iso}T12:00:00Z`);
-	return Number.isNaN(d.getTime()) ? iso : new Intl.DateTimeFormat(L === "es" ? "es-ES" : "en-GB", {
+	return Number.isNaN(d.getTime()) ? iso : new Intl.DateTimeFormat(LOC$1[L], {
 		day: "numeric",
 		month: "long",
 		year: "numeric",
 		timeZone: "UTC"
 	}).format(d);
 };
-var eur = (n, L) => new Intl.NumberFormat(L === "es" ? "es-ES" : "en-GB", {
+var eur = (n, L) => new Intl.NumberFormat(LOC$1[L], {
 	style: "currency",
 	currency: "EUR",
 	maximumFractionDigits: 0
 }).format(n);
-var km1 = (n, L) => n.toLocaleString(L === "es" ? "es-ES" : "en-GB", {
+var km1 = (n, L) => n.toLocaleString(LOC$1[L], {
 	maximumFractionDigits: 1,
 	minimumFractionDigits: 1
 });
@@ -22720,7 +24708,7 @@ function fxCrumbs(o) {
 /** Comparison table and data FAQ. */
 function fxBlocks(o) {
 	const { kind, L, city, picks } = o;
-	const x = TX$4[L];
+	const x = TXA$2[L];
 	const anyKm = picks.some((p) => p.km != null);
 	const cols = x.cols(kind).filter((_, i) => i !== 5 || anyKm);
 	const table = picks.length >= 2 ? `<h2 class="fxh" id="compare">${esc$2(x.cmpH(city, kind))}</h2><div class="fxwrap"><table class="fxt"><thead><tr>${cols.map((c) => `<th scope="col">${esc$2(c)}</th>`).join("")}</tr></thead><tbody>${picks.map((p) => `<tr><td>${esc$2(p.tier)}</td><td><b>${esc$2(p.hotel)}</b></td><td>${p.stars ? `${p.stars} ★` : "–"}</td><td>${p.nightly ? `${esc$2(eur(p.nightly, L))}${p.checked ? `<br><small>${esc$2(fmtDay(p.checked, L))}</small>` : ""}` : "–"}</td><td>${esc$2(p.detail || "–")}</td>${anyKm ? `<td>${p.km != null ? `${esc$2(km1(p.km, L))} km` : "–"}</td>` : ""}<td>${p.top ? esc$2(x.yes) : esc$2(x.no)}</td></tr>`).join("")}</tbody></table></div><p class="note" style="font-size:13px">${esc$2(x.priceNote)}</p>` : "";
@@ -22843,8 +24831,10 @@ function filterChips(o) {
 	const gp = L === "es" ? "es" : "en";
 	const items = [];
 	if (hasSpaPage(slug)) items.push(`<li><a href="${spaHref(slug, L)}" data-t="filter_chip" data-p="spa">${icon("spa")}${esc$1(f.spa)}</a></li>`);
-	if (o.pool) items.push(`<li><a href="${P$1(gp, `/pools/${slug}`)}" data-t="filter_chip" data-p="pool"${gp !== L ? ` hreflang="${gp}"` : ""}>${icon("pool")}${esc$1(f.pool)}</a></li>`);
-	if (o.gym) items.push(`<li><a href="${P$1(gp, `/gyms/${slug}`)}" data-t="filter_chip" data-p="gym"${gp !== L ? ` hreflang="${gp}"` : ""}>${icon("gym")}${esc$1(f.gym)}</a></li>`);
+	const pp = isL5(L) && o.id && TR_POOLS.has(o.id) ? L : gp;
+	const gg = isL5(L) && o.id && TR_GYMS.has(o.id) ? L : gp;
+	if (o.pool) items.push(`<li><a href="${P$1(pp, `/pools/${slug}`)}" data-t="filter_chip" data-p="pool"${pp !== L ? ` hreflang="${pp}"` : ""}>${icon("pool")}${esc$1(f.pool)}</a></li>`);
+	if (o.gym) items.push(`<li><a href="${P$1(gg, `/gyms/${slug}`)}" data-t="filter_chip" data-p="gym"${gg !== L ? ` hreflang="${gg}"` : ""}>${icon("gym")}${esc$1(f.gym)}</a></li>`);
 	if (!items.length) return "";
 	return `<style>${CHIP_CSS}</style>${ICON_SPRITE}<p class="t3fh" id="filters">${esc$1(f.h)}</p><ul class="t3fchips">${items.join("")}</ul>`;
 }
@@ -22868,6 +24858,7 @@ var pools_exports = /* @__PURE__ */ __exportAll({
 	poolIndexPage: () => poolIndexPage,
 	poolLink: () => poolLink,
 	poolPaths: () => poolPaths,
+	poolPathsTr: () => poolPathsTr,
 	poolWinners: () => poolWinners
 });
 /** Full data is a static file fetched on first use (keeps the worker bundle small); IDX has its path and id -> city name. */
@@ -23025,6 +25016,11 @@ var TX$3 = {
 		cities: "ciudades"
 	}
 };
+/** T7.2-T7.5: same strings in de, fr, it, pt and da (src/seo/filter-i18n.ts). */
+var TXA$1 = {
+	...TX$3,
+	...POOL5
+};
 var CSS_GYM$1 = `.t3box{display:block;margin:10px 0 14px;padding:12px 14px;border:1px solid var(--line,#ddd);border-radius:12px;background:var(--pale,#f4f6fa);font-size:15px;line-height:1.5}.gym{max-width:1100px;margin:0 auto}.gym .crumbs{font-size:13px;color:var(--muted);margin:8px 0 14px}.gym .crumbs a{color:inherit}
 .gym h1{font-size:clamp(30px,5vw,46px);line-height:1.08;margin:0 0 10px}.gym .lead{font-size:18px;line-height:1.5;color:var(--muted);margin:0 0 6px;max-width:760px}.gym .upd{font-size:13px;color:var(--muted);margin:0 0 22px}
 .gcards{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));margin:10px 0 26px}
@@ -23100,7 +25096,7 @@ var srcLink$1 = (s) => {
 	return `<a href="${esc(s)}" rel="nofollow noopener" target="_blank">${esc(host$1(s))}</a>`;
 };
 function card$2(t, p, city, L, cityImg, slug, price) {
-	const x = TX$3[L];
+	const x = TXA$1[L];
 	const top3 = p?._top;
 	const chips = `<div class="gchips"><span>${esc(x.tier[t])}</span>${city.best === t ? `<span class="top">${esc(x.best)}</span>` : ""}${top3 ? `<span class="top3b">${esc(bkx(L).alsoTop(top3))}</span>` : ""}</div>`;
 	if (!p) return `<article class="gcard ${t} empty"><div class="bd">${chips.replace("class=\"gchips\"", "class=\"gchips\" style=\"position:static\"")}<p>${esc(x.none)}</p><small>${esc(x.tierNote[t])}</small></div></article>`;
@@ -23132,12 +25128,14 @@ async function poolCityPage(urlSlug, Lx) {
 	await load$2();
 	const { pub, toId, byId } = await slugs$1();
 	const id = toId(urlSlug);
-	const city = id ? G$1[id] : void 0;
-	if (!id || !city) return null;
+	const city0 = id ? G$1[id] : void 0;
+	if (!id || !city0) return null;
 	const slug = pub(id);
-	if (slug !== urlSlug) return Response.redirect(`${SITE}${P(Lx === "es" ? "es" : "en", `/pools/${slug}`)}`, 301);
-	const L = Lx === "es" ? "es" : "en";
-	const x = TX$3[L];
+	if (isL5(Lx) && !TR_POOLS.has(id)) return Response.redirect(`${SITE}/pools/${slug}`, 301);
+	if (slug !== urlSlug) return Response.redirect(`${SITE}${P(Lx, `/pools/${slug}`)}`, 301);
+	const L = Lx;
+	const city = isL5(L) ? trCity(city0, id, "pool", await trLoad(L, SITE), byId.get(id) ? cityName(byId.get(id), L) : city0.city) : city0;
+	const x = TXA$1[L];
 	const ic = byId.get(id);
 	const cn = ic ? cityName(ic, L) : city.city;
 	const cityImg = ic ? `/api/img/${encodeURIComponent(ic.id)}/mid` : void 0;
@@ -23190,7 +25188,7 @@ async function poolCityPage(urlSlug, Lx) {
 			}) * 10) / 10 : void 0
 		}];
 	});
-	const cname = ic ? L === "es" && ic.cc ? new Intl.DisplayNames(["es"], { type: "region" }).of(ic.cc.toUpperCase()) ?? ic.country : ic.country : void 0;
+	const cname = ic ? L !== "en" && ic.cc ? new Intl.DisplayNames([L], { type: "region" }).of(ic.cc.toUpperCase()) ?? ic.country : ic.country : void 0;
 	const cr = fxCrumbs({
 		L,
 		country: ic && cname ? {
@@ -23223,14 +25221,19 @@ async function poolCityPage(urlSlug, Lx) {
 	const bestReason = L === "es" ? city.bestReason_es : city.bestReason_en;
 	const bestPick = city.best ? city.tiers[city.best] : null;
 	const body = `<style>${CSS_GYM$1}</style><div class="gym">${ICON_SPRITE}${cr.html}
-<h1>${esc(x.h1(cn))}<em>.</em></h1><p class="lead">${esc(x.lead)}</p>${city.checked ? `<p class="upd">${esc(x.checked)}: ${esc(city.checked)}</p>` : ""}
+<h1>${esc(x.h1(cn))}<em>.</em></h1><p class="lead">${esc(x.lead)}</p>${city.checked ? `<p class="upd">${esc(x.checked)}: ${esc(((d) => Number.isNaN(d.getTime()) ? city.checked : new Intl.DateTimeFormat(LOC$1[L], {
+		day: "numeric",
+		month: "long",
+		year: "numeric",
+		timeZone: "UTC"
+	}).format(d))(/* @__PURE__ */ new Date(`${city.checked}T12:00:00Z`)))}</p>` : ""}
 ${top3Box}
 ${bestPick && bestReason ? `<p class="best"><b>${esc(x.best)}:</b> ${esc(bestPick.hotel)}. ${esc(bestReason)}</p>` : ""}
 <div class="gcards">${picks.map(([t, p]) => card$2(t, p, city, L, cityImg, slug, p ? priceFor$1(prices, p) : void 0)).join("")}</div>
 ${fx.html}
 <div class="method"><b>${esc(x.how)}.</b> ${esc(x.howBody)} <a href="/how-we-choose#filters">${esc(HOWF$1[L])} →</a></div>
 ${gymLink(id, slug, L, cn)}${spaLink(slug, L, cn)}
-${ic ? `<p><a href="${P(L, `/${slug}`)}">${esc(x.hotels(city.city))} →</a></p>` : ""}</div>`;
+${ic ? `<p><a href="${P(L, `/${slug}`)}">${esc(x.hotels(cn))} →</a></p>` : ""}</div>`;
 	const items = picks.filter(([, p]) => p).map(([t, p], i) => ({
 		"@type": "ListItem",
 		position: i + 1,
@@ -23263,12 +25266,12 @@ ${ic ? `<p><a href="${P(L, `/${slug}`)}">${esc(x.hotels(city.city))} →</a></p>
 	}));
 	return page({
 		L,
-		title: x.title(Object.values(I$1).filter((o) => o === city.city).length > 1 || Object.entries(I$1).some(([k, o]) => k !== id && byId.get(k) && cityName(byId.get(k), L) === cn) ? `${cn}, ${L === "es" && ic?.cc ? new Intl.DisplayNames(["es"], { type: "region" }).of(ic.cc.toUpperCase()) ?? city.country : city.country}` : cn),
+		title: x.title(Object.values(I$1).filter((o) => o === city.city).length > 1 || Object.entries(I$1).some(([k, o]) => k !== id && byId.get(k) && cityName(byId.get(k), L) === cn) ? `${cn}, ${L !== "en" && ic?.cc ? new Intl.DisplayNames([L], { type: "region" }).of(ic.cc.toUpperCase()) ?? city.country : city.country}` : cn),
 		description: x.desc(cn, names),
 		path,
 		body,
 		scripts: CARD_CLICK,
-		alts: POOL_LANGS,
+		alts: filterLangs("pool", id),
 		...picks.filter(([, p]) => p).length < 2 || dup ? { noindex: true } : {},
 		...(() => {
 			const bp = bestPick;
@@ -23291,19 +25294,30 @@ ${ic ? `<p><a href="${P(L, `/${slug}`)}">${esc(x.hotels(city.city))} →</a></p>
 async function poolIndexPage(Lx) {
 	await load$2();
 	const { pub } = await slugs$1();
-	const L = Lx === "es" ? "es" : "en";
-	const x = TX$3[L];
+	const L = Lx;
+	const x = TXA$1[L];
+	const { byId: bid } = await data();
+	const cnOf = (s, c) => isL5(L) && bid.get(s) ? cityName(bid.get(s), L) : c.city;
+	const coOf = (s, c) => {
+		const cc = bid.get(s)?.cc;
+		try {
+			return isL5(L) && cc ? new Intl.DisplayNames([L], { type: "region" }).of(cc.toUpperCase()) ?? c.country : c.country;
+		} catch {
+			return c.country;
+		}
+	};
 	const byCountry = /* @__PURE__ */ new Map();
-	for (const [slug, c] of Object.entries(G$1)) {
-		const list = byCountry.get(c.country) ?? [];
+	for (const [slug, c] of Object.entries(G$1).filter(([s]) => !isL5(L) || TR_POOLS.has(s))) {
+		const k = coOf(slug, c);
+		const list = byCountry.get(k) ?? [];
 		list.push([slug, c]);
-		byCountry.set(c.country, list);
+		byCountry.set(k, list);
 	}
-	const countries = [...byCountry.keys()].sort((a, b) => a.localeCompare(b));
+	const countries = [...byCountry.keys()].sort((a, b) => a.localeCompare(b, L));
 	const body = `<style>${CSS_GYM$1}</style><div class="gym"><nav class="crumbs"><a href="${P(L, "/")}">Top3Hotels</a> › ${esc(x.crumbs)}</nav>
-<h1>${esc(x.idxH1)}<em>.</em></h1><p class="lead">${esc(x.idxDesc)}</p><p class="upd">${Object.keys(G$1).length} ${esc(x.cities)}</p>
-${await Promise.resolve().then(() => filterpages_exports).then((m) => m.filterIndexExtras("pool", L)).catch(() => "")}
-${countries.map((c) => `<h2 style="font-size:20px;margin:22px 0 6px">${esc(c)}</h2><ul class="clist">${byCountry.get(c).sort((a, b) => a[1].city.localeCompare(b[1].city)).map(([s, ci]) => `<li><a href="${P(L, `/pools/${pub(s)}`)}">${esc(ci.city)}</a></li>`).join("")}</ul>`).join("")}
+<h1>${esc(x.idxH1)}<em>.</em></h1><p class="lead">${esc(x.idxDesc)}</p><p class="upd">${isL5(L) ? TR_POOLS.size : Object.keys(G$1).length} ${esc(x.cities)}${isL5(L) ? ` · <a href="/pools" hreflang="en">${esc(SMALL5[L].allEn)}</a>` : ""}</p>
+${isL5(L) ? "" : await Promise.resolve().then(() => filterpages_exports).then((m) => m.filterIndexExtras("pool", L)).catch(() => "")}
+${countries.map((c) => `<h2 style="font-size:20px;margin:22px 0 6px">${esc(c)}</h2><ul class="clist">${byCountry.get(c).sort((a, b) => cnOf(a[0], a[1]).localeCompare(cnOf(b[0], b[1]), L)).map(([s, ci]) => `<li><a href="${P(L, `/pools/${pub(s)}`)}">${esc(cnOf(s, ci))}</a></li>`).join("")}</ul>`).join("")}
 <div class="method"><b>${esc(x.how)}.</b> ${esc(x.howBody)}</div></div>`;
 	return page({
 		L,
@@ -23311,7 +25325,7 @@ ${countries.map((c) => `<h2 style="font-size:20px;margin:22px 0 6px">${esc(c)}</
 		description: x.idxDesc,
 		path: "/pools",
 		body,
-		alts: POOL_LANGS,
+		alts: [...POOL_LANGS, ...L5S],
 		ld: [{
 			"@context": "https://schema.org",
 			"@type": "CollectionPage",
@@ -23321,7 +25335,7 @@ ${countries.map((c) => `<h2 style="font-size:20px;margin:22px 0 6px">${esc(c)}</
 	});
 }
 /** Small link for the city page. */
-var poolLink = (id, slug, L, esName) => I$1[id] ? `<p class="note" style="margin:10px 0"><a href="${P(L === "es" ? "es" : "en", `/pools/${slug}`)}" data-t="pool_link" data-city="${esc(slug)}">${icon("pool")} ${esc(L === "en" || L === "es" ? TX$3[L].h1(L === "es" && esName ? esName : I$1[id]) : `${FL[L].pool}: ${esName ?? I$1[id]}`)} →</a></p>` : "";
+var poolLink = (id, slug, L, esName) => I$1[id] ? `<p class="note" style="margin:10px 0"><a href="${P(L === "es" || isL5(L) && TR_POOLS.has(id) ? L : "en", `/pools/${slug}`)}" data-t="pool_link" data-city="${esc(slug)}">${icon("pool")} ${esc(L === "en" || L === "es" || isL5(L) && TR_POOLS.has(id) ? TXA$1[L].h1(L !== "en" && esName ? esName : I$1[id]) : `${FL[L].pool}: ${esName ?? I$1[id]}`)} →</a></p>` : "";
 /** T5.5 / T5.21: winners of this filter in a city, for the hotel page ("Also a winner in" and alternatives). */
 async function poolWinners(id, slug, L, cn) {
 	if (!I$1[id]) return [];
@@ -23332,16 +25346,16 @@ async function poolWinners(id, slug, L, cn) {
 	}
 	const c = G$1[id];
 	if (!c) return [];
-	const Lx = L === "es" ? "es" : "en";
+	const Lx = L === "es" || isL5(L) && TR_POOLS.has(id) ? L : "en";
 	return TIERS$1.flatMap((t) => {
 		const p = c.tiers?.[t];
 		return p ? [{
 			hotel: p.hotel,
 			stars: p.stars,
 			bk: bkPath(p.bookingUrl ?? "") ?? "",
-			tier: TX$3[Lx].tier[t],
+			tier: TXA$1[Lx].tier[t],
 			href: P(Lx, `/pools/${slug}`),
-			name: TX$3[Lx].h1(cn || c.city)
+			name: TXA$1[Lx].h1(cn || c.city)
 		}] : [];
 	});
 }
@@ -23355,27 +25369,33 @@ var CATN$1 = {
 		Budget: "Económico",
 		"Best Value": "Mejor calidad-precio",
 		Luxury: "Lujo"
-	}
+	},
+	...Object.fromEntries(L5S.map((l) => [l, SMALL5[l].cat]))
 };
 var TOP3H$1 = {
 	en: (c) => `Our top 3 in ${c}:`,
-	es: (c) => `Nuestro top 3 de ${c}:`
+	es: (c) => `Nuestro top 3 de ${c}:`,
+	...Object.fromEntries(L5S.map((l) => [l, SMALL5[l].top3h]))
 };
 var TOP3L$1 = {
 	en: "The main answer for the city",
-	es: "La respuesta principal para la ciudad"
+	es: "La respuesta principal para la ciudad",
+	...Object.fromEntries(L5S.map((l) => [l, SMALL5[l].top3l]))
 };
 var HOWF$1 = {
 	en: "How we choose filter pages",
-	es: "Cómo elegimos las páginas de filtro"
+	es: "Cómo elegimos las páginas de filtro",
+	...Object.fromEntries(L5S.map((l) => [l, SMALL5[l].howf]))
 };
 var ALSOW$1 = {
 	en: "Also a winner in",
-	es: "También gana en"
+	es: "También gana en",
+	...Object.fromEntries(L5S.map((l) => [l, SMALL5[l].alsow]))
 };
 var SPATOO$1 = {
 	en: "Spa and pool in the same hotel",
-	es: "Spa y piscina en el mismo hotel"
+	es: "Spa y piscina en el mismo hotel",
+	...Object.fromEntries(L5S.map((l) => [l, SMALL5[l].spatoo]))
 };
 /** T6.18/19/24: all pool data for the country and pool-type pages (src/seo/filterpages.ts). */
 async function poolAll() {
@@ -23386,6 +25406,12 @@ async function poolAll() {
 		TX: TX$3,
 		TIERS: TIERS$1
 	};
+}
+/** T7.17: sitemap paths for de, fr, it, pt and da (translated cities that are indexable). */
+async function poolPathsTr() {
+	const { pub } = await slugs$1();
+	const ok = new Set(await poolPaths());
+	return ["/pools", ...[...TR_POOLS].map((id) => `/pools/${pub(id)}`).filter((p) => ok.has(p))];
 }
 /**
 * "Best hotel gyms" pages: /gyms (index) and /gyms/<city-slug>, in English and Spanish (/es/...).
@@ -23400,6 +25426,7 @@ var gyms_exports = /* @__PURE__ */ __exportAll({
 	gymIndexPage: () => gymIndexPage,
 	gymLink: () => gymLink,
 	gymPaths: () => gymPaths,
+	gymPathsTr: () => gymPathsTr,
 	gymWinners: () => gymWinners
 });
 /** Full data is a static file fetched on first use (keeps the worker bundle small); IDX has its path and id -> city name. */
@@ -23533,6 +25560,11 @@ var TX$2 = {
 		cities: "ciudades"
 	}
 };
+/** T7.2-T7.5: same strings in de, fr, it, pt and da (src/seo/filter-i18n.ts). */
+var TXA = {
+	...TX$2,
+	...GYM5
+};
 var CSS_GYM = `.t3box{display:block;margin:10px 0 14px;padding:12px 14px;border:1px solid var(--line,#ddd);border-radius:12px;background:var(--pale,#f4f6fa);font-size:15px;line-height:1.5}.gym{max-width:1100px;margin:0 auto}.gym .crumbs{font-size:13px;color:var(--muted);margin:8px 0 14px}.gym .crumbs a{color:inherit}
 .gym h1{font-size:clamp(30px,5vw,46px);line-height:1.08;margin:0 0 10px}.gym .lead{font-size:18px;line-height:1.5;color:var(--muted);margin:0 0 6px;max-width:760px}.gym .upd{font-size:13px;color:var(--muted);margin:0 0 22px}
 .gcards{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));margin:10px 0 26px}
@@ -23608,7 +25640,7 @@ var srcLink = (s) => {
 	return `<a href="${esc(s)}" rel="nofollow noopener" target="_blank">${esc(host(s))}</a>`;
 };
 function card$1(t, p, city, L, cityImg, slug, price) {
-	const x = TX$2[L];
+	const x = TXA[L];
 	const top3 = p?._top;
 	const chips = `<div class="gchips"><span>${esc(x.tier[t])}</span>${city.best === t ? `<span class="top">${esc(x.best)}</span>` : ""}${top3 ? `<span class="top3b">${esc(bkx(L).alsoTop(top3))}</span>` : ""}</div>`;
 	if (!p) return `<article class="gcard ${t} empty"><div class="bd">${chips.replace("class=\"gchips\"", "class=\"gchips\" style=\"position:static\"")}<p>${esc(x.none)}</p><small>${esc(x.tierNote[t])}</small></div></article>`;
@@ -23622,7 +25654,7 @@ function card$1(t, p, city, L, cityImg, slug, price) {
 	const src0 = gx.find(([u]) => u === phs[0]);
 	const credit = !phs[0] ? x.photoCity : phs[0] === own ? p.photo?.gym ? x.photoGym : x.photoHotel : src0 ? (src0[1] === "hotelgyms.com" ? x.photoGym : x.photoHotel).replace("Booking.com", src0[1]) : x.photoHotel;
 	const rows = [];
-	if (g.sizeM2) rows.push(`<dt>${esc(x.size)}</dt><dd>${g.sizeM2.toLocaleString(L === "es" ? "es-ES" : "en-GB")} m²</dd>`);
+	if (g.sizeM2) rows.push(`<dt>${esc(x.size)}</dt><dd>${g.sizeM2.toLocaleString(LOC$1[L])} m²</dd>`);
 	if (g.hours) rows.push(`<dt>${esc(x.hours)}</dt><dd>${esc(/^24/.test(g.hours) ? x.h24 : g.hours)}</dd>`);
 	if (g.equipment?.length) rows.push(`<dt>${esc(x.equip)}</dt><dd>${esc(g.equipment.join(" · "))}</dd>`);
 	if (g.extras?.length) rows.push(`<dt>${esc(x.extras)}</dt><dd>${esc(g.extras.join(" · "))}</dd>`);
@@ -23639,12 +25671,14 @@ async function gymCityPage(urlSlug, Lx) {
 	await load$1();
 	const { pub, toId, byId } = await slugs();
 	const id = toId(urlSlug);
-	const city = id ? G[id] : void 0;
-	if (!id || !city) return null;
+	const city0 = id ? G[id] : void 0;
+	if (!id || !city0) return null;
 	const slug = pub(id);
-	if (slug !== urlSlug) return Response.redirect(`${SITE}${P(Lx === "es" ? "es" : "en", `/gyms/${slug}`)}`, 301);
-	const L = Lx === "es" ? "es" : "en";
-	const x = TX$2[L];
+	if (isL5(Lx) && !TR_GYMS.has(id)) return Response.redirect(`${SITE}/gyms/${slug}`, 301);
+	if (slug !== urlSlug) return Response.redirect(`${SITE}${P(Lx, `/gyms/${slug}`)}`, 301);
+	const L = Lx;
+	const city = isL5(L) ? trCity(city0, id, "gym", await trLoad(L, SITE), byId.get(id) ? cityName(byId.get(id), L) : city0.city) : city0;
+	const x = TXA[L];
 	const ic = byId.get(id);
 	const cn = ic ? cityName(ic, L) : city.city;
 	const cityImg = ic ? `/api/img/${encodeURIComponent(ic.id)}/mid` : void 0;
@@ -23683,9 +25717,9 @@ async function gymCityPage(urlSlug, Lx) {
 			checked: isoOf(pr?.checked) || void 0,
 			top: p._top,
 			detail: [
-				p.gym?.sizeM2 ? `${p.gym.sizeM2.toLocaleString(L === "es" ? "es-ES" : "en-GB")} m²` : "",
+				p.gym?.sizeM2 ? `${p.gym.sizeM2.toLocaleString(LOC$1[L])} m²` : "",
 				p.gym?.hours ? /^24/.test(p.gym.hours) ? x.h24 : p.gym.hours : "",
-				p.gym?.equipment?.length ? `${p.gym.equipment.length} ${L === "es" ? "tipos de equipo" : "kinds of equipment"}` : ""
+				p.gym?.equipment?.length ? `${p.gym.equipment.length} ${L === "es" ? "tipos de equipo" : isL5(L) ? SMALL5[L].equipN : "kinds of equipment"}` : ""
 			].filter(Boolean).join(" · "),
 			km: co?.latitude != null && co?.longitude != null && ic ? Math.round(kmBetween({
 				lat: co.latitude,
@@ -23696,7 +25730,7 @@ async function gymCityPage(urlSlug, Lx) {
 			}) * 10) / 10 : void 0
 		}];
 	});
-	const cname = ic ? L === "es" && ic.cc ? new Intl.DisplayNames(["es"], { type: "region" }).of(ic.cc.toUpperCase()) ?? ic.country : ic.country : void 0;
+	const cname = ic ? L !== "en" && ic.cc ? new Intl.DisplayNames([L], { type: "region" }).of(ic.cc.toUpperCase()) ?? ic.country : ic.country : void 0;
 	const cr = fxCrumbs({
 		L,
 		country: ic && cname ? {
@@ -23729,14 +25763,19 @@ async function gymCityPage(urlSlug, Lx) {
 	const bestReason = L === "es" ? city.bestReason_es : city.bestReason_en;
 	const bestPick = city.best ? city.tiers[city.best] : null;
 	const body = `<style>${CSS_GYM}</style><div class="gym">${ICON_SPRITE}${cr.html}
-<h1>${esc(x.h1(cn))}<em>.</em></h1><p class="lead">${esc(x.lead)}</p>${city.checked ? `<p class="upd">${esc(x.checked)}: ${esc(city.checked)}</p>` : ""}
+<h1>${esc(x.h1(cn))}<em>.</em></h1><p class="lead">${esc(x.lead)}</p>${city.checked ? `<p class="upd">${esc(x.checked)}: ${esc(((d) => Number.isNaN(d.getTime()) ? city.checked : new Intl.DateTimeFormat(LOC$1[L], {
+		day: "numeric",
+		month: "long",
+		year: "numeric",
+		timeZone: "UTC"
+	}).format(d))(/* @__PURE__ */ new Date(`${city.checked}T12:00:00Z`)))}</p>` : ""}
 ${top3Box}
 ${bestPick && bestReason ? `<p class="best"><b>${esc(x.best)}:</b> ${esc(bestPick.hotel)}. ${esc(bestReason)}</p>` : ""}
 <div class="gcards">${picks.map(([t, p]) => card$1(t, p, city, L, cityImg, slug, p ? priceFor(prices, p) : void 0)).join("")}</div>
 ${fx.html}
 <div class="method"><b>${esc(x.how)}.</b> ${esc(x.howBody)} <a href="/how-we-choose#filters">${esc(HOWF[L])} →</a></div>
 ${poolLink(id, slug, L, cn)}${spaLink(slug, L, cn)}
-${ic ? `<p><a href="${P(L, `/${slug}`)}">${esc(x.hotels(city.city))} →</a></p>` : ""}</div>`;
+${ic ? `<p><a href="${P(L, `/${slug}`)}">${esc(x.hotels(cn))} →</a></p>` : ""}</div>`;
 	const items = picks.filter(([, p]) => p).map(([t, p], i) => ({
 		"@type": "ListItem",
 		position: i + 1,
@@ -23769,12 +25808,12 @@ ${ic ? `<p><a href="${P(L, `/${slug}`)}">${esc(x.hotels(city.city))} →</a></p>
 	}));
 	return page({
 		L,
-		title: x.title(Object.values(I).filter((o) => o === city.city).length > 1 || Object.entries(I).some(([k, o]) => k !== id && byId.get(k) && cityName(byId.get(k), L) === cn) ? `${cn}, ${L === "es" && ic?.cc ? new Intl.DisplayNames(["es"], { type: "region" }).of(ic.cc.toUpperCase()) ?? city.country : city.country}` : cn),
+		title: x.title(Object.values(I).filter((o) => o === city.city).length > 1 || Object.entries(I).some(([k, o]) => k !== id && byId.get(k) && cityName(byId.get(k), L) === cn) ? `${cn}, ${L !== "en" && ic?.cc ? new Intl.DisplayNames([L], { type: "region" }).of(ic.cc.toUpperCase()) ?? city.country : city.country}` : cn),
 		description: x.desc(cn, names),
 		path,
 		body,
 		scripts: CARD_CLICK,
-		alts: GYM_LANGS,
+		alts: filterLangs("gym", id),
 		...picks.filter(([, p]) => p).length < 2 || dup ? { noindex: true } : {},
 		...(() => {
 			const bp = bestPick;
@@ -23797,19 +25836,30 @@ ${ic ? `<p><a href="${P(L, `/${slug}`)}">${esc(x.hotels(city.city))} →</a></p>
 async function gymIndexPage(Lx) {
 	await load$1();
 	const { pub } = await slugs();
-	const L = Lx === "es" ? "es" : "en";
-	const x = TX$2[L];
+	const L = Lx;
+	const x = TXA[L];
+	const { byId: bid } = await data();
+	const cnOf = (s, c) => isL5(L) && bid.get(s) ? cityName(bid.get(s), L) : c.city;
+	const coOf = (s, c) => {
+		const cc = bid.get(s)?.cc;
+		try {
+			return isL5(L) && cc ? new Intl.DisplayNames([L], { type: "region" }).of(cc.toUpperCase()) ?? c.country : c.country;
+		} catch {
+			return c.country;
+		}
+	};
 	const byCountry = /* @__PURE__ */ new Map();
-	for (const [slug, c] of Object.entries(G)) {
-		const list = byCountry.get(c.country) ?? [];
+	for (const [slug, c] of Object.entries(G).filter(([s]) => !isL5(L) || TR_GYMS.has(s))) {
+		const k = coOf(slug, c);
+		const list = byCountry.get(k) ?? [];
 		list.push([slug, c]);
-		byCountry.set(c.country, list);
+		byCountry.set(k, list);
 	}
-	const countries = [...byCountry.keys()].sort((a, b) => a.localeCompare(b));
+	const countries = [...byCountry.keys()].sort((a, b) => a.localeCompare(b, L));
 	const body = `<style>${CSS_GYM}</style><div class="gym"><nav class="crumbs"><a href="${P(L, "/")}">Top3Hotels</a> › ${esc(x.crumbs)}</nav>
-<h1>${esc(x.idxH1)}<em>.</em></h1><p class="lead">${esc(x.idxDesc)}</p><p class="upd">${Object.keys(G).length} ${esc(x.cities)}</p>
-${await Promise.resolve().then(() => filterpages_exports).then((m) => m.filterIndexExtras("gym", L)).catch(() => "")}
-${countries.map((c) => `<h2 style="font-size:20px;margin:22px 0 6px">${esc(c)}</h2><ul class="clist">${byCountry.get(c).sort((a, b) => a[1].city.localeCompare(b[1].city)).map(([s, ci]) => `<li><a href="${P(L, `/gyms/${pub(s)}`)}">${esc(ci.city)}</a></li>`).join("")}</ul>`).join("")}
+<h1>${esc(x.idxH1)}<em>.</em></h1><p class="lead">${esc(x.idxDesc)}</p><p class="upd">${isL5(L) ? TR_GYMS.size : Object.keys(G).length} ${esc(x.cities)}${isL5(L) ? ` · <a href="/gyms" hreflang="en">${esc(SMALL5[L].allEn)}</a>` : ""}</p>
+${isL5(L) ? "" : await Promise.resolve().then(() => filterpages_exports).then((m) => m.filterIndexExtras("gym", L)).catch(() => "")}
+${countries.map((c) => `<h2 style="font-size:20px;margin:22px 0 6px">${esc(c)}</h2><ul class="clist">${byCountry.get(c).sort((a, b) => cnOf(a[0], a[1]).localeCompare(cnOf(b[0], b[1]), L)).map(([s, ci]) => `<li><a href="${P(L, `/gyms/${pub(s)}`)}">${esc(cnOf(s, ci))}</a></li>`).join("")}</ul>`).join("")}
 <div class="method"><b>${esc(x.how)}.</b> ${esc(x.howBody)}</div></div>`;
 	return page({
 		L,
@@ -23817,7 +25867,7 @@ ${countries.map((c) => `<h2 style="font-size:20px;margin:22px 0 6px">${esc(c)}</
 		description: x.idxDesc,
 		path: "/gyms",
 		body,
-		alts: GYM_LANGS,
+		alts: [...GYM_LANGS, ...L5S],
 		ld: [{
 			"@context": "https://schema.org",
 			"@type": "CollectionPage",
@@ -23827,7 +25877,7 @@ ${countries.map((c) => `<h2 style="font-size:20px;margin:22px 0 6px">${esc(c)}</
 	});
 }
 /** Small link for the city page. */
-var gymLink = (id, slug, L, esName) => I[id] ? `<p class="note" style="margin:10px 0"><a href="${P(L === "es" ? "es" : "en", `/gyms/${slug}`)}" data-t="gym_link" data-city="${esc(slug)}">${icon("gym")} ${esc(L === "en" || L === "es" ? TX$2[L].h1(L === "es" && esName ? esName : I[id]) : `${FL[L].gym}: ${esName ?? I[id]}`)} →</a></p>` : "";
+var gymLink = (id, slug, L, esName) => I[id] ? `<p class="note" style="margin:10px 0"><a href="${P(L === "es" || isL5(L) && TR_GYMS.has(id) ? L : "en", `/gyms/${slug}`)}" data-t="gym_link" data-city="${esc(slug)}">${icon("gym")} ${esc(L === "en" || L === "es" || isL5(L) && TR_GYMS.has(id) ? TXA[L].h1(L !== "en" && esName ? esName : I[id]) : `${FL[L].gym}: ${esName ?? I[id]}`)} →</a></p>` : "";
 /** T5.5 / T5.21: winners of this filter in a city, for the hotel page ("Also a winner in" and alternatives). */
 async function gymWinners(id, slug, L, cn) {
 	if (!I[id]) return [];
@@ -23838,16 +25888,16 @@ async function gymWinners(id, slug, L, cn) {
 	}
 	const c = G[id];
 	if (!c) return [];
-	const Lx = L === "es" ? "es" : "en";
+	const Lx = L === "es" || isL5(L) && TR_GYMS.has(id) ? L : "en";
 	return TIERS.flatMap((t) => {
 		const p = c.tiers?.[t];
 		return p ? [{
 			hotel: p.hotel,
 			stars: p.stars,
 			bk: bkPath(p.bookingUrl ?? "") ?? "",
-			tier: TX$2[Lx].tier[t],
+			tier: TXA[Lx].tier[t],
 			href: P(Lx, `/gyms/${slug}`),
-			name: TX$2[Lx].h1(cn || c.city)
+			name: TXA[Lx].h1(cn || c.city)
 		}] : [];
 	});
 }
@@ -23861,27 +25911,33 @@ var CATN = {
 		Budget: "Económico",
 		"Best Value": "Mejor calidad-precio",
 		Luxury: "Lujo"
-	}
+	},
+	...Object.fromEntries(L5S.map((l) => [l, SMALL5[l].cat]))
 };
 var TOP3H = {
 	en: (c) => `Our top 3 in ${c}:`,
-	es: (c) => `Nuestro top 3 de ${c}:`
+	es: (c) => `Nuestro top 3 de ${c}:`,
+	...Object.fromEntries(L5S.map((l) => [l, SMALL5[l].top3h]))
 };
 var TOP3L = {
 	en: "The main answer for the city",
-	es: "La respuesta principal para la ciudad"
+	es: "La respuesta principal para la ciudad",
+	...Object.fromEntries(L5S.map((l) => [l, SMALL5[l].top3l]))
 };
 var HOWF = {
 	en: "How we choose filter pages",
-	es: "Cómo elegimos las páginas de filtro"
+	es: "Cómo elegimos las páginas de filtro",
+	...Object.fromEntries(L5S.map((l) => [l, SMALL5[l].howf]))
 };
 var ALSOW = {
 	en: "Also a winner in",
-	es: "También gana en"
+	es: "También gana en",
+	...Object.fromEntries(L5S.map((l) => [l, SMALL5[l].alsow]))
 };
 var SPATOO = {
 	en: "Spa and pool in the same hotel",
-	es: "Spa y piscina en el mismo hotel"
+	es: "Spa y piscina en el mismo hotel",
+	...Object.fromEntries(L5S.map((l) => [l, SMALL5[l].spatoo]))
 };
 /** T6.23-25: all gym data for the country pages (src/seo/filterpages.ts). */
 async function gymAll() {
@@ -23892,6 +25948,271 @@ async function gymAll() {
 		TX: TX$2,
 		TIERS
 	};
+}
+/** T7.17: sitemap paths for de, fr, it, pt and da (translated cities that are indexable). */
+async function gymPathsTr() {
+	const { pub } = await slugs();
+	const ok = new Set(await gymPaths());
+	return ["/gyms", ...[...TR_GYMS].map((id) => `/gyms/${pub(id)}`).filter((p) => ok.has(p))];
+}
+var LOC = {
+	es: "es-ES",
+	de: "de-DE",
+	fr: "fr-FR",
+	it: "it-IT",
+	pt: "pt-PT",
+	da: "da-DK"
+};
+var num = (s, L) => {
+	const n = Number(s.replace(/,/g, ""));
+	return Number.isFinite(n) ? n.toLocaleString(LOC[L], { maximumFractionDigits: 2 }) : s;
+};
+var dec = (s, L) => L === "en" ? s : s.replace(".", ",");
+var FAC$1 = {
+	"Free Wi-Fi": {
+		es: "Wi-Fi gratis",
+		de: "Kostenloses WLAN",
+		fr: "Wi-Fi gratuit",
+		it: "Wi-Fi gratuito",
+		pt: "Wi-Fi grátis",
+		da: "Gratis wi-fi"
+	},
+	"Air conditioning": {
+		es: "Aire acondicionado",
+		de: "Klimaanlage",
+		fr: "Climatisation",
+		it: "Aria condizionata",
+		pt: "Ar condicionado",
+		da: "Aircondition"
+	},
+	"Family rooms": {
+		es: "Habitaciones familiares",
+		de: "Familienzimmer",
+		fr: "Chambres familiales",
+		it: "Camere familiari",
+		pt: "Quartos familiares",
+		da: "Familieværelser"
+	},
+	Restaurant: {
+		es: "Restaurante",
+		de: "Restaurant",
+		fr: "Restaurant",
+		it: "Ristorante",
+		pt: "Restaurante",
+		da: "Restaurant"
+	},
+	Terrace: {
+		es: "Terraza",
+		de: "Terrasse",
+		fr: "Terrasse",
+		it: "Terrazza",
+		pt: "Terraço",
+		da: "Terrasse"
+	},
+	Gym: {
+		es: "Gimnasio",
+		de: "Fitnessraum",
+		fr: "Salle de sport",
+		it: "Palestra",
+		pt: "Ginásio",
+		da: "Fitnesscenter"
+	},
+	Pool: {
+		es: "Piscina",
+		de: "Pool",
+		fr: "Piscine",
+		it: "Piscina",
+		pt: "Piscina",
+		da: "Pool"
+	},
+	"Swimming pool": {
+		es: "Piscina",
+		de: "Schwimmbad",
+		fr: "Piscine",
+		it: "Piscina",
+		pt: "Piscina",
+		da: "Swimmingpool"
+	},
+	"Free parking": {
+		es: "Parking gratis",
+		de: "Kostenlose Parkplätze",
+		fr: "Parking gratuit",
+		it: "Parcheggio gratuito",
+		pt: "Estacionamento grátis",
+		da: "Gratis parkering"
+	},
+	Garden: {
+		es: "Jardín",
+		de: "Garten",
+		fr: "Jardin",
+		it: "Giardino",
+		pt: "Jardim",
+		da: "Have"
+	},
+	Spa: {
+		es: "Spa",
+		de: "Spa",
+		fr: "Spa",
+		it: "Spa",
+		pt: "Spa",
+		da: "Spa"
+	},
+	Beachfront: {
+		es: "Primera línea de playa",
+		de: "Direkt am Strand",
+		fr: "En bord de plage",
+		it: "Fronte mare",
+		pt: "Em frente à praia",
+		da: "Ved stranden"
+	},
+	"Free airport shuttle": {
+		es: "Traslado gratis al aeropuerto",
+		de: "Kostenloser Flughafentransfer",
+		fr: "Navette aéroport gratuite",
+		it: "Navetta aeroportuale gratuita",
+		pt: "Transfer gratuito para o aeroporto",
+		da: "Gratis lufthavnstransfer"
+	},
+	"Airport shuttle": {
+		es: "Traslado al aeropuerto",
+		de: "Flughafentransfer",
+		fr: "Navette aéroport",
+		it: "Navetta aeroportuale",
+		pt: "Transfer para o aeroporto",
+		da: "Lufthavnstransfer"
+	},
+	"Pets allowed": {
+		es: "Se admiten mascotas",
+		de: "Haustiere erlaubt",
+		fr: "Animaux acceptés",
+		it: "Animali ammessi",
+		pt: "Animais permitidos",
+		da: "Kæledyr tilladt"
+	}
+};
+var T = {
+	es: {
+		feedback: (s, n, p, m) => `Opiniones: ${s}/10 de ${n} reseñas de huéspedes; puesto ${p} de ${m} hoteles de la muestra por nota (empatado).`,
+		feedbackOf: (s, n, p, e, c) => `Opiniones: ${s}/10 de ${n} reseñas de huéspedes; puesto ${p} de ${e} hoteles elegibles por nota (de ${c} en la muestra).`,
+		score: (s, n) => `Nota de los huéspedes ${s}/10 en ${n} reseñas de Booking.com.`,
+		loc: (l, a) => `Ubicación: ${l}. Dirección: ${a}. Los tiempos a pie son estimaciones por distancia en el mapa.`,
+		fac: (f) => `Servicios útiles indicados por el alojamiento: ${f}. Comprueba disponibilidad, horarios y posibles cargos para tus fechas.`,
+		budget: "Elección económica: tenía el precio de referencia elegible más bajo tras reservar la opción de gama alta.",
+		value: "Elección calidad-precio: equilibra la nota, el número de reseñas y el precio de referencia; no es necesariamente el hotel más barato.",
+		valueMed: (p) => `Elección calidad-precio: la mejor nota ponderada por reseñas en torno al precio mediano de la muestra (${p}/noche).`,
+		lux: (n, how) => `Elección de lujo: ${n} estrellas (${how}). Damos prioridad a los cinco estrellas; un cuatro estrellas alternativo necesita al menos un 8,5.`,
+		luxStay: "Elección de lujo: un 5 estrellas con la nota más fiable entre las opciones de gama alta elegibles.",
+		how: {
+			official: "oficial",
+			"estimated by accommodation": "estimación del alojamiento",
+			"estimated by booking": "estimación de Booking"
+		}
+	},
+	de: {
+		feedback: (s, n, p, m) => `Gästebewertung: ${s}/10 aus ${n} Bewertungen; Platz ${p} (geteilt) von ${m} Hotels der Stichprobe.`,
+		feedbackOf: (s, n, p, e, c) => `Gästebewertung: ${s}/10 aus ${n} Bewertungen; Platz ${p} von ${e} infrage kommenden Hotels (von ${c} in der Stichprobe).`,
+		score: (s, n) => `Gästebewertung ${s}/10 aus ${n} Booking.com-Bewertungen.`,
+		loc: (l, a) => `Lage: ${l}. Adresse: ${a}. Gehzeiten sind Schätzungen nach Kartenentfernung.`,
+		fac: (f) => `Vom Hotel angegebene Ausstattung: ${f}. Verfügbarkeit, Öffnungszeiten und eventuelle Gebühren für Ihre Daten bitte prüfen.`,
+		budget: "Günstige Wahl: niedrigster infrage kommender Referenzpreis, nachdem die gehobene Wahl feststand.",
+		value: "Wahl mit bestem Preis-Leistungs-Verhältnis: wägt Bewertung, Anzahl der Bewertungen und Referenzpreis ab; nicht unbedingt das günstigste Hotel.",
+		valueMed: (p) => `Wahl mit bestem Preis-Leistungs-Verhältnis: die verlässlichste Bewertung beim oder nahe dem mittleren Preis der Stichprobe (${p}/Nacht).`,
+		lux: (n, how) => `Luxuswahl: ${n} Sterne (${how}). Fünf-Sterne-Hotels haben Vorrang; ein Vier-Sterne-Ersatz braucht mindestens 8,5.`,
+		luxStay: "Luxuswahl: ein 5-Sterne-Hotel mit der verlässlichsten Bewertung unter den infrage kommenden gehobenen Hotels.",
+		how: {
+			official: "offiziell",
+			"estimated by accommodation": "Angabe der Unterkunft",
+			"estimated by booking": "Schätzung von Booking"
+		}
+	},
+	fr: {
+		feedback: (s, n, p, m) => `Avis des clients : ${s}/10 sur ${n} avis ; ${p}e ex aequo sur ${m} hôtels de l'échantillon.`,
+		feedbackOf: (s, n, p, e, c) => `Avis des clients : ${s}/10 sur ${n} avis ; ${p}e sur ${e} hôtels éligibles (sur ${c} dans l'échantillon).`,
+		score: (s, n) => `Note des clients ${s}/10 sur ${n} avis Booking.com.`,
+		loc: (l, a) => `Emplacement : ${l}. Adresse : ${a}. Les temps de marche sont estimés d'après la distance sur la carte.`,
+		fac: (f) => `Équipements indiqués par l'établissement : ${f}. Vérifiez disponibilité, horaires et frais éventuels pour vos dates.`,
+		budget: "Choix petit budget : le prix de référence éligible le plus bas, une fois le choix haut de gamme réservé.",
+		value: "Choix meilleur rapport qualité-prix : équilibre la note, le nombre d'avis et le prix de référence ; ce n'est pas forcément l'hôtel le moins cher.",
+		valueMed: (p) => `Choix meilleur rapport qualité-prix : la note la plus fiable au prix médian de l'échantillon ou à peu près (${p}/nuit).`,
+		lux: (n, how) => `Choix luxe : ${n} étoiles (${how}). Les cinq étoiles sont prioritaires ; un quatre étoiles de repli doit avoir au moins 8,5.`,
+		luxStay: "Choix luxe : un 5 étoiles avec la note la plus fiable parmi les options haut de gamme éligibles.",
+		how: {
+			official: "officiel",
+			"estimated by accommodation": "selon l'établissement",
+			"estimated by booking": "estimation de Booking"
+		}
+	},
+	it: {
+		feedback: (s, n, p, m) => `Giudizio degli ospiti: ${s}/10 su ${n} recensioni; ${p}° posto a pari merito su ${m} hotel del campione.`,
+		feedbackOf: (s, n, p, e, c) => `Giudizio degli ospiti: ${s}/10 su ${n} recensioni; ${p}° posto su ${e} hotel idonei (su ${c} nel campione).`,
+		score: (s, n) => `Voto degli ospiti ${s}/10 su ${n} recensioni Booking.com.`,
+		loc: (l, a) => `Posizione: ${l}. Indirizzo: ${a}. I tempi a piedi sono stime basate sulla distanza sulla mappa.`,
+		fac: (f) => `Servizi indicati dalla struttura: ${f}. Verifica disponibilità, orari ed eventuali costi per le tue date.`,
+		budget: "Scelta economica: aveva il prezzo di riferimento idoneo più basso dopo aver fissato la scelta di fascia alta.",
+		value: "Scelta miglior rapporto qualità-prezzo: bilancia voto, numero di recensioni e prezzo di riferimento; non è per forza l'hotel più economico.",
+		valueMed: (p) => `Scelta miglior rapporto qualità-prezzo: il voto più affidabile al prezzo mediano del campione o vicino (${p}/notte).`,
+		lux: (n, how) => `Scelta di lusso: ${n} stelle (${how}). Gli hotel a cinque stelle hanno la priorità; un quattro stelle alternativo deve avere almeno 8,5.`,
+		luxStay: "Scelta di lusso: un 5 stelle con il voto più affidabile tra le opzioni di fascia alta idonee.",
+		how: {
+			official: "ufficiale",
+			"estimated by accommodation": "stima della struttura",
+			"estimated by booking": "stima di Booking"
+		}
+	},
+	pt: {
+		feedback: (s, n, p, m) => `Avaliação dos hóspedes: ${s}/10 em ${n} avaliações; ${p}.º lugar (empatado) entre ${m} hotéis da amostra.`,
+		feedbackOf: (s, n, p, e, c) => `Avaliação dos hóspedes: ${s}/10 em ${n} avaliações; ${p}.º lugar entre ${e} hotéis elegíveis (de ${c} na amostra).`,
+		score: (s, n) => `Nota dos hóspedes ${s}/10 em ${n} avaliações do Booking.com.`,
+		loc: (l, a) => `Localização: ${l}. Morada: ${a}. Os tempos a pé são estimativas pela distância no mapa.`,
+		fac: (f) => `Serviços indicados pelo alojamento: ${f}. Confirme disponibilidade, horários e eventuais custos para as suas datas.`,
+		budget: "Escolha económica: tinha o preço de referência elegível mais baixo depois de reservada a opção de gama alta.",
+		value: "Escolha melhor qualidade-preço: equilibra a nota, o número de avaliações e o preço de referência; não é necessariamente o hotel mais barato.",
+		valueMed: (p) => `Escolha melhor qualidade-preço: a nota mais fiável no preço mediano da amostra ou perto dele (${p}/noite).`,
+		lux: (n, how) => `Escolha de luxo: ${n} estrelas (${how}). Os hotéis de cinco estrelas têm prioridade; um quatro estrelas alternativo precisa de pelo menos 8,5.`,
+		luxStay: "Escolha de luxo: um 5 estrelas com a nota mais fiável entre as opções de gama alta elegíveis.",
+		how: {
+			official: "oficial",
+			"estimated by accommodation": "estimativa do alojamento",
+			"estimated by booking": "estimativa do Booking"
+		}
+	},
+	da: {
+		feedback: (s, n, p, m) => `Gæsternes vurdering: ${s}/10 fra ${n} anmeldelser; delt nr. ${p} af ${m} hoteller i udvalget.`,
+		feedbackOf: (s, n, p, e, c) => `Gæsternes vurdering: ${s}/10 fra ${n} anmeldelser; nr. ${p} af ${e} egnede hoteller (ud af ${c} i udvalget).`,
+		score: (s, n) => `Gæstekarakter ${s}/10 fra ${n} anmeldelser på Booking.com.`,
+		loc: (l, a) => `Beliggenhed: ${l}. Adresse: ${a}. Gåtider er skøn ud fra afstanden på kortet.`,
+		fac: (f) => `Faciliteter oplyst af stedet: ${f}. Tjek tilgængelighed, åbningstider og eventuelle gebyrer for dine datoer.`,
+		budget: "Budgetvalg: havde den laveste egnede referencepris, efter at luksusvalget var fastlagt.",
+		value: "Valget med mest for pengene: vejer karakter, antal anmeldelser og referencepris; ikke nødvendigvis det billigste hotel.",
+		valueMed: (p) => `Valget med mest for pengene: den mest pålidelige karakter ved eller nær udvalgets medianpris (${p}/nat).`,
+		lux: (n, how) => `Luksusvalg: ${n} stjerner (${how}). Femstjernede hoteller prioriteres; et firestjernet alternativ skal have mindst 8,5.`,
+		luxStay: "Luksusvalg: et 5-stjernet hotel med den mest pålidelige karakter blandt de egnede luksusmuligheder.",
+		how: {
+			official: "officiel",
+			"estimated by accommodation": "stedets egen angivelse",
+			"estimated by booking": "Bookings skøn"
+		}
+	}
+};
+function reasonL(r, L) {
+	const t = T[L];
+	if (!t) return r;
+	let m;
+	if (m = r.match(/^Guest feedback: ([\d.]+)\/10 from ([\d,]+) guest reviews; joint review-score position (\d+) of (\d+) hotels in the sample\.$/)) return t.feedback(dec(m[1], L), num(m[2], L), m[3], m[4]);
+	if (m = r.match(/^Guest feedback: ([\d.]+)\/10 from ([\d,]+) guest reviews; joint review-score position (\d+) of (\d+) eligible hotels \(out of (\d+) in the sample\)\.$/)) return t.feedbackOf(dec(m[1], L), num(m[2], L), m[3], m[4], m[5]);
+	if (m = r.match(/^Guest score ([\d.]+)\/10 from ([\d,]+) Booking\.com reviews\.$/)) return t.score(dec(m[1], L), num(m[2], L));
+	if (m = r.match(/^Location: (.+?)\. Address: (.+)\. Walking times are estimates from map distance\.$/)) return t.loc(m[1], m[2]);
+	if (m = r.match(/^Useful facilities listed by the property: (.+?)\. Availability, opening times and any fees must be checked for your dates\.$/)) {
+		const fs = m[1].split(", ");
+		if (fs.every((f) => FAC$1[f]?.[L])) return t.fac(fs.map((f) => FAC$1[f][L]).join(", "));
+		return r;
+	}
+	if (r === "Budget choice: it had the lowest eligible reference price after reserving the upscale choice.") return t.budget;
+	if (r === "Best Value choice: balances the guest score, the number of reviews and the reference price; it is not necessarily the cheapest hotel.") return t.value;
+	if (m = r.match(/^Best Value choice: the strongest review-confidence score at or near the sample median price \(€([\d.,]+)\/night\)\.$/)) return t.valueMed(`${num(m[1], L)} €`);
+	if (m = r.match(/^Luxury choice: (\d) stars \((official|estimated by accommodation|estimated by booking)\)\. Five-star hotels are prioritized; a four-star fallback must score at least 8\.5\.$/)) return t.lux(m[1], t.how[m[2]] ?? m[2]);
+	if (r === "Luxury choice: A 5-star stay with the strongest review-confidence score among the eligible upscale options.") return t.luxStay;
+	return r;
 }
 /**
 * T6 (26-nov): pages built on top of the gym and pool data, EN and ES only (like the city filter pages):
@@ -54591,7 +56912,7 @@ var range = (a, b, L = "en") => {
 };
 var json = (o) => JSON.stringify(o).replace(/</g, "\\u003c");
 var catKey = (h) => h.category === "Budget" ? "budget" : h.category === "Best Value" ? "value" : "lux";
-var label = (h, L) => h.category === "Luxury" && (h.booking?.stars ?? 5) < 5 ? T[L].cat.Upscale : T[L].cat[h.category];
+var label = (h, L) => h.category === "Luxury" && (h.booking?.stars ?? 5) < 5 ? T$1[L].cat.Upscale : T$1[L].cat[h.category];
 var km = (a, b) => {
 	const r = (x) => x * Math.PI / 180;
 	const x = Math.sin(r(b.lat - a.lat) / 2) ** 2 + Math.cos(r(a.lat)) * Math.cos(r(b.lat)) * Math.sin(r(b.lng - a.lng) / 2) ** 2;
@@ -54608,8 +56929,8 @@ function walkText(h, sights, L) {
 		d: km(pos, s)
 	})).sort((a, b) => a.d - b.d)[0];
 	const walkKm = best.d * 1.25;
-	if (walkKm <= 3) return T[L].walk(Math.max(1, Math.round(walkKm / 4.8 * 60)), best.s.name);
-	return T[L].km(best.d.toFixed(1), best.s.name);
+	if (walkKm <= 3) return T$1[L].walk(Math.max(1, Math.round(walkKm / 4.8 * 60)), best.s.name);
+	return T$1[L].km(best.d.toFixed(1), best.s.name);
 }
 function walkMinutes(h, sights) {
 	if (!h.coordinates || !sights?.length) return null;
@@ -54823,6 +57144,17 @@ function seoNorm(o) {
 			...x.author,
 			url: `${SITE}/about`
 		} : x.author
+	} : x).map((x) => x && !x.inLanguage && [
+		"ItemList",
+		"CollectionPage",
+		"Dataset",
+		"WebPage",
+		"Article",
+		"FAQPage",
+		"Collection"
+	].includes(x["@type"]) ? {
+		...x,
+		inLanguage: o.L
 	} : x);
 	const has = JSON.stringify(ld);
 	if (o.path === "/") {
@@ -54876,11 +57208,12 @@ function page(o) {
 		...o,
 		...seoNorm(o)
 	};
-	const t = T[o.L];
+	const t = T$1[o.L];
 	const url = SITE + P(o.L, o.path);
 	const image = (o.image ?? ogImage(o.L)).replace(/^(https:\/\/cf\.bstatic\.com\/xdata\/images\/hotel\/)max1024x768\//, "$1max1280x900/");
 	const alt = o.altLinks ? o.altLinks.map(([l, h]) => `<link rel="alternate" hreflang="${l}" href="${SITE}${h}">`).join("") + (o.altLinks.find(([l]) => l === "en") ? `<link rel="alternate" hreflang="x-default" href="${SITE}${o.altLinks.find(([l]) => l === "en")[1]}">` : "") : o.langs ? LANGS.map((l) => `<link rel="alternate" hreflang="${l}" href="${SITE}${P(l, o.path)}">`).join("") + `<link rel="alternate" hreflang="x-default" href="${SITE}${o.path}">` : o.alts ? o.alts.map((l) => `<link rel="alternate" hreflang="${l}" href="${SITE}${P(l, o.path)}">`).join("") + `<link rel="alternate" hreflang="x-default" href="${SITE}${o.path}">` : "";
-	const langSel = o.langs ? `<label class="lang"><span class="sr" hidden>Language</span><select aria-label="Language" onchange="location.href=this.value">${LANGS.map((l) => `<option value="${P(l, o.path)}"${l === o.L ? " selected" : ""}>${T[l].name}</option>`).join("")}</select></label>` : "";
+	const selL = o.langs ? LANGS : o.alts && o.alts.length > 1 && o.alts.includes(o.L) ? o.alts : null;
+	const langSel = selL ? `<label class="lang"><span class="sr" hidden>Language</span><select aria-label="Language" onchange="location.href=this.value">${selL.map((l) => `<option value="${P(l, o.path)}"${l === o.L ? " selected" : ""}>${T$1[l].name}</option>`).join("")}</select></label>` : "";
 	return `<!doctype html><html lang="${t.htmlLang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(o.title)}</title><meta name="description" content="${esc(o.description)}">
 ${o.noindex ? "<meta name=\"robots\" content=\"noindex,follow\">" : `<link rel="canonical" href="${esc(url)}"><meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">`}<link rel="alternate" type="application/feed+json" title="Top3Hotels" href="/feed.json">${alt}
@@ -54907,9 +57240,33 @@ ${consentScript(Z[o.L])}</head><body><style id="t3-v6">${V6_CSS}</style><a class
 <header class="top">${BRAND_LINK(P(o.L, "/"))}<nav aria-label="Main"><a href="${P(o.L, "/destinations")}">${t.allDest}</a><a class="hide-sm" href="${P(o.L, "/lists")}">${t.lists}</a><a class="hide-sm" href="${o.L === "es" ? "/es/guides" : "/guides"}">${o.L === "es" ? "Guías" : "Guides"}</a><a class="hide-sm" href="/how-we-choose">${t.how}</a><a class="hide-sm hide-md" href="${P(o.L, "/map")}"><span aria-hidden="true">🗺</span> ${esc(M[o.L].map)}</a><a class="hide-sm hide-md" href="/affiliate-disclosure">${esc(M[o.L].money)}</a><a class="cta" href="/partners">${X[o.L].forHotels}</a><button type="button" class="tbtn" data-pal aria-label="${esc(Y[o.L].js["search"])}"><span aria-hidden="true">🔍</span> <span class="lbl">${esc(Y[o.L].js["search"])}</span> <kbd>/</kbd></button><a class="tbtn" href="${P(o.L, "/saved")}" aria-label="${esc(Y[o.L].js["saved"])}">♡<span class="n" data-savedn hidden></span></a>${langSel}</nav></header>
 ${socialPill(o.L)}<main id="main" tabindex="-1">${o.body.replace(/<img(?![^>]*\bdecoding=)/g, "<img decoding=\"async\"")}</main>
 <footer><div class="cols"><div>${BRAND_LINK(P(o.L, "/"), "Top3Hotels", 30)}<p style="max-width:340px;margin:12px 0 0">${t.footer} ${X[o.L].independent} · ${X[o.L].noPaid}.</p></div>
-<div><h3>${X[o.L].explore}</h3><ul><li><a href="${P(o.L, "/destinations")}">${t.allDest}</a></li><li><a href="${P(o.L, "/lists")}">${t.lists}</a></li><li><a href="${P(GROWTH_LANGS.includes(o.L) ? o.L : "en", "/hotel-price-index")}">${o.L === "es" ? "Índice de precios" : "Hotel Price Index"}</a></li><li><a href="${P(GROWTH_LANGS.includes(o.L) ? o.L : "en", "/open-data")}">${o.L === "es" ? "Datos abiertos" : "Open data"}</a></li>${o.L === "da" ? `<li><a href="${P(o.L, "/from/billund")}"><span aria-hidden="true">✈</span> Billund</a></li><li><a href="${P(o.L, "/from/aalborg")}"><span aria-hidden="true">✈</span> Aalborg</a></li><li><a href="${P(o.L, "/from/aarhus")}"><span aria-hidden="true">✈</span> Aarhus</a></li>` : ""}<li><a href="${P(o.L, "/cheap-cities")}">${esc(Y[o.L].cheapNav)}</a></li><li><a href="${P(o.L, "/map")}"><span aria-hidden="true">🗺</span> ${esc(M[o.L].map)}</a></li><li><a href="/random"><span aria-hidden="true">🎲</span> ${esc(Y[o.L].js["surprise"])}</a></li>${o.L === "en" || o.L === "es" ? `<li><a href="${P(o.L, "/gyms")}">${o.L === "es" ? "Hoteles con gimnasio" : "Hotel gyms"}</a></li><li><a href="${P(o.L, "/pools")}">${o.L === "es" ? "Hoteles con piscina" : "Hotel pools"}</a></li>` : ""}${FOOT_COUNTRIES.map(([s, cc]) => `<li><a href="${P(o.L, "/country/" + s)}">${esc(new Intl.DisplayNames([o.L], { type: "region" }).of(cc) ?? s)}</a></li>`).join("")}<li><a href="/press">Press &amp; data</a></li><li><a href="${o.L === "es" ? "/es/guides" : "/guides"}">${o.L === "es" ? "Guías" : "Guides"}</a></li></ul></div>
+<div><h3>${X[o.L].explore}</h3><ul><li><a href="${P(o.L, "/destinations")}">${t.allDest}</a></li><li><a href="${P(o.L, "/lists")}">${t.lists}</a></li><li><a href="${P(GROWTH_LANGS.includes(o.L) ? o.L : "en", "/hotel-price-index")}">${{
+		en: "Hotel Price Index",
+		es: "Índice de precios",
+		de: "Hotelpreisindex",
+		fr: "Indice des prix des hôtels",
+		it: "Indice dei prezzi degli hotel",
+		pt: "Índice de preços de hotel",
+		da: "Hotelprisindeks"
+	}[o.L]}</a></li><li><a href="${P(GROWTH_LANGS.includes(o.L) ? o.L : "en", "/open-data")}">${{
+		en: "Open data",
+		es: "Datos abiertos",
+		de: "Offene Daten",
+		fr: "Données ouvertes",
+		it: "Dati aperti",
+		pt: "Dados abertos",
+		da: "Åbne data"
+	}[o.L]}</a></li>${o.L === "da" ? `<li><a href="${P(o.L, "/from/billund")}"><span aria-hidden="true">✈</span> Billund</a></li><li><a href="${P(o.L, "/from/aalborg")}"><span aria-hidden="true">✈</span> Aalborg</a></li><li><a href="${P(o.L, "/from/aarhus")}"><span aria-hidden="true">✈</span> Aarhus</a></li>` : ""}<li><a href="${P(o.L, "/cheap-cities")}">${esc(Y[o.L].cheapNav)}</a></li><li><a href="${P(o.L, "/map")}"><span aria-hidden="true">🗺</span> ${esc(M[o.L].map)}</a></li><li><a href="/random"><span aria-hidden="true">🎲</span> ${esc(Y[o.L].js["surprise"])}</a></li><li><a href="${P(o.L, "/gyms")}">${o.L === "es" ? "Hoteles con gimnasio" : FL[o.L].gym}</a></li><li><a href="${P(o.L, "/pools")}">${o.L === "es" ? "Hoteles con piscina" : FL[o.L].pool}</a></li>${FOOT_COUNTRIES.map(([s, cc]) => `<li><a href="${P(o.L, "/country/" + s)}">${esc(new Intl.DisplayNames([o.L], { type: "region" }).of(cc) ?? s)}</a></li>`).join("")}<li><a href="/press">Press &amp; data</a></li><li><a href="${o.L === "es" ? "/es/guides" : "/guides"}">${o.L === "es" ? "Guías" : "Guides"}</a></li></ul></div>
 <div><h3>${X[o.L].company}</h3><ul><li><a href="/about">${X[o.L].about}</a></li><li><a href="/how-we-choose">${t.how}</a></li><li><a href="/partners">${X[o.L].forHotels}</a></li><li><a href="/contact">${X[o.L].contact}</a></li></ul></div>
-<div><h3>${X[o.L].legal}</h3><ul><li><a href="/privacy">${X[o.L].privacy}</a></li><li><a href="/cookies">${X[o.L].cookies}</a></li><li><a href="/terms">${X[o.L].terms}</a></li><li><a href="/imprint">${X[o.L].imprint}</a></li><li><a href="/affiliate-disclosure">Affiliate disclosure</a></li><li><a href="/sitemap.xml">Sitemap</a></li></ul></div></div>
+<div><h3>${X[o.L].legal}</h3><ul><li><a href="/privacy">${X[o.L].privacy}</a></li><li><a href="/cookies">${X[o.L].cookies}</a></li><li><a href="/terms">${X[o.L].terms}</a></li><li><a href="/imprint">${X[o.L].imprint}</a></li><li><a href="/affiliate-disclosure"${o.L !== "en" ? " hreflang=\"en\"" : ""}>${{
+		en: "Affiliate disclosure",
+		es: "Aviso de afiliados",
+		de: "Hinweis zu Partnerlinks",
+		fr: "Liens d'affiliation",
+		it: "Link di affiliazione",
+		pt: "Aviso de afiliados",
+		da: "Om affiliate-links"
+	}[o.L]}</a></li><li><a href="/sitemap.xml">Sitemap</a></li></ul></div></div>
 <div class="fine"><span>© 2026 Top3Hotels · ${BRAND.entity} (${BRAND.place})</span><span>${t.disclaimer}</span></div></footer>
 </div>${o.scripts ?? ""}<script>window.T3L=${json(o.L)};window.T3S=${json(Y[o.L].js)};${GLOBAL_JS}
 ${JS_PLUS}
@@ -55063,7 +57420,7 @@ var NO5 = {
 	da: "Der er intet egnet 5-stjernet hotel i vores udvalg for denne by, så luksusvalget er et 4-stjernet hotel."
 };
 function card(h, city, i, L, sights, cityImg, review, extra = "", x4 = {}) {
-	const t = T[L];
+	const t = T$1[L];
 	const b = h.booking ?? {}, o = h.offer ?? {}, ex = h.extras ?? {};
 	const img = h.gallery?.find((g) => g.src && !BROKEN_PH.has(g.src))?.src;
 	const k = catKey(h);
@@ -55112,7 +57469,7 @@ ${review ? `<a class="alt" href="${esc(review)}" data-t="review_click" data-city
 		category: k,
 		lang: L
 	}))}"><textarea name="message" required minlength="3" maxlength="2000" rows="3" aria-label="${esc(M[L].report)}" placeholder="${esc(REP[L].ph)}"></textarea><input name="email" type="email" maxlength="200" autocomplete="email" placeholder="${esc(REP[L].mail)}" aria-label="${esc(REP[L].mail)}"><button class="btn ghost" type="submit">${esc(REP[L].send)}</button><p class="repmsg" role="status" data-ok="${esc(REP[L].ok)}" data-err="${esc(REP[L].err)}"></p></form></details>
-${h.evidence?.reasons?.length ? `<details><summary>${esc(t.why(label(h, L)))}</summary><ul>${h.evidence.reasons.slice(0, 4).map((r) => `<li>${esc(r)}</li>`).join("")}</ul></details>` : ""}
+${h.evidence?.reasons?.length ? `<details><summary>${esc(t.why(label(h, L)))}</summary><ul>${h.evidence.reasons.slice(0, 4).map((r) => `<li>${esc(reasonL(r, L))}</li>`).join("")}</ul></details>` : ""}
 </div></article>`;
 }
 function mapScript(hs, sights) {
@@ -55145,7 +57502,7 @@ async function cityPage(city0, L) {
 	const hpL = new Map(hpRows.map((x) => [x.slug, hpLangs(x)]));
 	const cd = await cityData(city.id);
 	if (!cd || cd.hotels?.length !== 3) return null;
-	const t = T[L];
+	const t = T$1[L];
 	const hs = cd.hotels;
 	const [budget, value, lux] = hs;
 	if ((value.offer?.nightly ?? 0) > (lux.offer?.nightly ?? Infinity)) lux.deal = true;
@@ -55504,6 +57861,7 @@ async function cityPage(city0, L) {
 		}[L] ?? "Hotels near"}:${(sights ?? []).slice(0, 6).map((x) => `<a href="${P(GROWTH_LANGS.includes(L) ? L : "en", `/near/${city.slug}/${x.name.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/&/g, " and ").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}`)}">${esc(x.name)}</a>`).join(", ")}` : ""}</p>${GROWTH_LANGS.includes(L) ? voteWidget(L, city.slug) : ""}
 ${filterChips({
 			slug: city.slug,
+			id: city.id,
 			L,
 			gym: Boolean(gymLink(city.id, city.slug, L)),
 			pool: Boolean(poolLink(city.id, city.slug, L))
@@ -55563,7 +57921,7 @@ async function tileFor(c, h, L, extra = "") {
 	const bkT = bookingLink(h, void 0, void 0, "t3list", L);
 	const bx = bkx(L);
 	const tile = `<a class="tile ${catKey(h)}" href="${P(L, hasHp ? `/hotel/${hs}` : "/" + c.slug)}">${img ? `<img src="${esc(img)}" alt="${esc(h.name)}, ${esc(cityName(c, L))}" width="480" height="300" loading="lazy" referrerpolicy="no-referrer"${fbAttr([...(h.gallery ?? []).map((g) => g.src).filter((s) => s && s !== img).slice(0, 3), `/api/img/${c.id}/small`])}>` : ""}<div><strong>${esc(h.name)}</strong>${esc(cityName(c, L))}, ${esc(countryName(c, L))} · ${esc(label(h, L))} · ${scoreL(h.booking?.score, L)}/10${h.booking?.count ? ` (${intL(h.booking.count, L)})` : ""} · ${moneyL(h.offer?.nightly, L)}${extra}</div></a>`;
-	return bkT ? `<div class="tilew">${tile}<a class="bkb" href="${esc(bkT)}" rel="sponsored nofollow noopener" target="_blank" data-t="check_availability" data-city="${esc(c.slug)}" data-cat="${catKey(h)}" data-p="booking-list" aria-label="${esc(bx.aria(h.name, [h.booking?.stars ? bx.stars(h.booking.stars) : "", label(h, L)].filter(Boolean).join(", ")))}">${esc(h.offer?.nightly ? T[L].checkPrice : bx.avail)}<span aria-hidden="true"> ↗</span></a></div>` : tile;
+	return bkT ? `<div class="tilew">${tile}<a class="bkb" href="${esc(bkT)}" rel="sponsored nofollow noopener" target="_blank" data-t="check_availability" data-city="${esc(c.slug)}" data-cat="${catKey(h)}" data-p="booking-list" aria-label="${esc(bx.aria(h.name, [h.booking?.stars ? bx.stars(h.booking.stars) : "", label(h, L)].filter(Boolean).join(", ")))}">${esc(h.offer?.nightly ? T$1[L].checkPrice : bx.avail)}<span aria-hidden="true"> ↗</span></a></div>` : tile;
 }
 function countryIntro(rows, cname, L) {
 	if (L !== "en" && L !== "es") return "";
@@ -55672,7 +58030,7 @@ async function countryPage(cslug, L) {
 	const { byCountry } = await data();
 	const list = byCountry.get(cslug);
 	if (!list?.length) return null;
-	const t = T[L];
+	const t = T$1[L];
 	const cname = countryName(list[0], L);
 	const rows = await Promise.all(list.map(async (c) => ({
 		c: {
@@ -55725,7 +58083,15 @@ ${rows.filter((r) => r.d).map(({ c, d }) => `<tr><td><a href="${P(L, "/" + c.slu
 </tbody></table></div></section>${await countryFilterBlock(cslug, list.map((c) => ({
 		slug: c.slug,
 		name: cityName(c, L)
-	})), L).catch(() => "")}${GROWTH_LANGS.includes(L) && (await countryValueSlugs()).includes(cslug) ? `<p class="note"><a href="${P(L, `/best-value/${cslug}`)}">${esc(L === "es" ? `Dónde cuesta menos un buen hotel en ${cname} →` : `Where a good hotel costs least in ${cname} →`)}</a></p>` : ""}`;
+	})), L).catch(() => "")}${GROWTH_LANGS.includes(L) && (await countryValueSlugs()).includes(cslug) ? `<p class="note"><a href="${P(L, `/best-value/${cslug}`)}">${esc(((W) => (W[L] ?? W.en)(cname))({
+		en: (c) => `Where a good hotel costs least in ${c} →`,
+		es: (c) => `Dónde cuesta menos un buen hotel en ${c} →`,
+		de: (c) => `Wo ein gutes Hotel in ${c} am wenigsten kostet →`,
+		fr: (c) => `Où un bon hôtel coûte le moins cher : ${c} →`,
+		it: (c) => `Dove un buon hotel costa meno: ${c} →`,
+		pt: (c) => `Onde um bom hotel custa menos: ${c} →`,
+		da: (c) => `Hvor et godt hotel koster mindst i ${c} →`
+	}))}</a></p>` : ""}`;
 	const img = rows.find((r) => r.d?.extras?.hero?.img)?.d?.extras?.hero?.img;
 	const faq = countryFaq(L, cname, rows);
 	if (faq.length) ld.push({
@@ -55753,7 +58119,7 @@ ${rows.filter((r) => r.d).map(({ c, d }) => `<tr><td><a href="${P(L, "/" + c.slu
 }
 async function destinationsPage(L) {
 	const { byCountry, index } = await data();
-	const t = T[L];
+	const t = T$1[L];
 	const countries = [...byCountry.entries()].sort((a, b) => countryName(a[1][0], L).localeCompare(countryName(b[1][0], L), L));
 	const first = /* @__PURE__ */ new Map();
 	const seen = /* @__PURE__ */ new Set();
@@ -55948,7 +58314,7 @@ async function themeRows(theme) {
 	return out;
 }
 async function listsIndex(L) {
-	const t = T[L];
+	const t = T$1[L];
 	const body = `<p class="crumbs"><a href="${P(L, "/")}">${esc(t.home)}</a> › ${esc(t.lists)}</p><h1>${esc(t.listsTitle)}<em>.</em></h1><p class="lead">${esc(t.listsLead)}</p>
 <section><ul class="grid">${THEMES.map((th) => `<li><a href="${P(L, `/lists/${th}`)}">${esc(t.themes[th].title)}</a></li>`).join("")}</ul></section>
 ${await filterCounts(L).catch(() => "")}
@@ -55990,7 +58356,7 @@ function spaCityLinks(cs, L) {
 	return `<section><h2>${esc(h)}</h2><ul class="grid">${ok.map((c) => `<li><a href="${spaHref(c.slug, L)}">${esc(cityName(c, L))}</a></li>`).join("")}</ul><p class="note"><a href="${P(L, "/spa-hotels")}">${esc(all)} →</a></p></section>`;
 }
 async function themePage(theme, L) {
-	const t = T[L];
+	const t = T$1[L];
 	const th = t.themes[theme];
 	const rows = (await themeRows(theme)).slice(0, 60);
 	const tiles = await Promise.all(rows.map(({ c, h }) => tileFor(c, h, L)));
@@ -56050,7 +58416,7 @@ async function eventPage(slug, L) {
 	if (!c) return null;
 	const d = await cityData(c.id);
 	if (!d) return null;
-	const t = T[L];
+	const t = T$1[L];
 	const title = `Best hotels for ${ev.name} (2026): the 3 to book | Top3Hotels`;
 	const tiles = await Promise.all(d.hotels.map((h) => tileFor(c, h, L)));
 	const body = `<p class="crumbs"><a href="${P(L, "/")}">${esc(t.home)}</a> › <a href="${P(L, "/lists")}">${esc(t.lists)}</a> › ${esc(ev.name)}</p>
@@ -56106,7 +58472,7 @@ async function eventPage(slug, L) {
 	});
 }
 function notFoundPage(path, L, sug = []) {
-	const t = T[L];
+	const t = T$1[L];
 	const dym = sug.length ? `<p style="text-align:center;margin:18px 0 0;font-size:18px">${L === "es" ? "¿Quizás buscabas" : "Did you mean"} ${sug.map((c) => `<a href="${P(L, "/" + c.slug)}"><b>${esc(c.city)}</b></a>`).join(", ")}?</p>` : "";
 	return page({
 		L,
@@ -56416,7 +58782,7 @@ async function fromPage(key, L) {
 	const ap = (await airports())[key];
 	if (!ap) return null;
 	const { byId } = await data();
-	const t = T[L];
+	const t = T$1[L];
 	const rows = (await Promise.all(ap.dest.map(async ([id, code]) => {
 		const c = byId.get(id);
 		const d = c ? await cityData(id) : null;
@@ -56480,14 +58846,14 @@ async function homeExtra(L) {
 	const { index, byCountry } = await data();
 	const top = [...index].sort((a, b) => (b.pop ?? 0) - (a.pop ?? 0)).slice(0, 36);
 	const cs = [...byCountry.entries()].sort((a, b) => b[1].length - a[1].length).slice(0, 24);
-	return `<section><h2>${esc(hx.cities)}</h2><ul class="grid">${top.map((c) => `<li><a href="${P(L, "/" + c.slug)}">${esc(T[L].h1(cityName(c, L)))}</a></li>`).join("")}</ul></section>
+	return `<section><h2>${esc(hx.cities)}</h2><ul class="grid">${top.map((c) => `<li><a href="${P(L, "/" + c.slug)}">${esc(T$1[L].h1(cityName(c, L)))}</a></li>`).join("")}</ul></section>
 <section><h2>${esc(hx.countries)}</h2><ul class="grid">${cs.map(([k, v]) => `<li><a href="${P(L, "/country/" + k)}">${esc(countryName(v[0], L))} <span>${v.length}</span></a></li>`).join("")}</ul></section>
 <section><h2>${esc(hx.how)}</h2><ol>${hx.steps.map((x) => `<li>${esc(x)}</li>`).join("")}</ol><p><a href="/how-we-choose">→</a></p></section>
 <section><h2>${esc(hx.faqH)}</h2>${hx.faq.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("")}</section>`;
 }
 async function landingPage(L) {
 	const { bySlug, byCountry } = await data();
-	const t = T[L];
+	const t = T$1[L];
 	const tiles = await Promise.all(POPULAR.map(async (s) => {
 		const c = bySlug.get(s);
 		const d = c ? await cityData(c.id) : null;
@@ -56578,7 +58944,7 @@ function savedPage(L) {
 		path: "/saved",
 		noindex: true,
 		langs: true,
-		body: `<p class="crumbs"><a href="${P(L, "/")}">${esc(T[L].home)}</a> › ${esc(y.js["saved"])}</p><h1>${esc(y.savedTitle)}<em>.</em></h1><p class="lead">${esc(y.savedLead)}</p><section style="margin-top:26px"><div class="saved" data-savedpage data-bk="${esc(bkx(L).btn)}"></div></section><section hidden data-recent><h2>${esc(y.js["recent"])}</h2><div class="chipsrow"></div></section>`
+		body: `<p class="crumbs"><a href="${P(L, "/")}">${esc(T$1[L].home)}</a> › ${esc(y.js["saved"])}</p><h1>${esc(y.savedTitle)}<em>.</em></h1><p class="lead">${esc(y.savedLead)}</p><section style="margin-top:26px"><div class="saved" data-savedpage data-bk="${esc(bkx(L).btn)}"></div></section><section hidden data-recent><h2>${esc(y.js["recent"])}</h2><div class="chipsrow"></div></section>`
 	});
 }
 async function citiesJson() {
@@ -56625,7 +58991,7 @@ async function cheapRows() {
 	return out;
 }
 async function cheapPage(L) {
-	const y = Y[L], t = T[L];
+	const y = Y[L], t = T$1[L];
 	const rows = (await cheapRows()).slice(0, 250);
 	const body = `<p class="crumbs"><a href="${P(L, "/")}">${esc(t.home)}</a> › ${esc(y.cheapNav)}</p><h1>${esc(y.cheapTitle)}<em>.</em></h1><p class="lead">${esc(y.cheapLead(rows.length))}</p>
 <div class="filters" role="group"><button type="button" data-max="0" aria-pressed="true">${esc(y.all)}</button>${[
@@ -56664,7 +59030,7 @@ async function comparePage(a, b, L) {
 	if (!ca || !cb || a === b) return null;
 	const [da, db] = await Promise.all([cityData(ca.id), cityData(cb.id)]);
 	if (!da || !db) return null;
-	const y = Y[L], t = T[L];
+	const y = Y[L], t = T$1[L];
 	const col = (c, d) => `<div><p class="eyebrow">${esc(countryName(c, L))}</p><h2><a href="${P(L, "/" + c.slug)}" style="color:inherit;text-decoration:none">${esc(c.city)}</a></h2>${d.hotels.map((h) => `<div class="row"><div><small>${esc(label(h, L))}</small><b>${esc(h.name)}</b><small>${esc(h.area ?? "")}</small></div><div class="pr"><b data-eur="${h.offer?.nightly ?? ""}"><span class="v">${money(h.offer?.nightly)}</span></b><small>${h.booking?.score?.toFixed(1) ?? "–"}/10 · ${fmtInt(h.booking?.count)}</small></div></div>`).join("")}<a class="btn ghost" style="width:100%;margin-top:10px" href="${P(L, "/" + c.slug)}">${esc(t.h1(c.city))} →</a></div>`;
 	const body = `<p class="crumbs"><a href="${P(L, "/")}">${esc(t.home)}</a> › ${esc(y.jCompare)}</p><h1>${esc(y.vsTitle(ca.city, cb.city))}<em>.</em></h1><p class="lead">${esc(y.vsLead(ca.city, cb.city))}</p><section style="margin-top:26px"><div class="vs">${col(ca, da)}${col(cb, db)}</div></section>`;
 	return page({
@@ -56682,7 +59048,7 @@ async function embedPage(slug) {
 	const c = bySlug.get(slug);
 	const d = c ? await cityData(c.id) : null;
 	if (!c || !d) return null;
-	const t = T.en;
+	const t = T$1.en;
 	const items = d.hotels.map((h) => {
 		const img = h.gallery?.find((g) => g.src)?.src;
 		return `<a class="h ${catKey(h)}" href="${SITE}/${c.slug}#${catKey(h)}" target="_blank" rel="noopener">${img ? `<img src="${esc(img)}" alt="" loading="lazy" referrerpolicy="no-referrer"${fbAttr((h.gallery ?? []).map((g) => g.src).filter((s) => s && s !== img).slice(0, 3))}>` : ""}<span class="t">${esc(label(h, "en"))}</span><strong>${esc(h.name)}</strong><small>${h.booking?.score?.toFixed(1) ?? "–"}/10 · ${money(h.offer?.nightly)} ${esc(t.perNight)}</small></a>`;
@@ -57124,11 +59490,11 @@ async function hotelPage(slug, L) {
 	});
 	if (tags5?.length && !/park/i.test(fq0)) faq5.push({
 		q: h5.qPark(f.name),
-		a: tags5.includes("parking") ? h5.yes((T[L].tags["parking"] ?? "parking").toLowerCase()) : h5.no
+		a: tags5.includes("parking") ? h5.yes((T$1[L].tags["parking"] ?? "parking").toLowerCase()) : h5.no
 	});
 	if (tags5?.length && !/pet|mascot|haustier|animal|kæledyr/i.test(fq0)) faq5.push({
 		q: h5.qPets(f.name),
-		a: tags5.includes("pets") ? h5.yes((T[L].tags["pets"] ?? "pets").toLowerCase()) : h5.no
+		a: tags5.includes("pets") ? h5.yes((T$1[L].tags["pets"] ?? "pets").toLowerCase()) : h5.no
 	});
 	const faqAll = [...c.faq ?? [], ...faq5];
 	const catK = {
@@ -57196,7 +59562,7 @@ async function hotelPage(slug, L) {
 		lat: la,
 		lng: lo
 	}, s) <= 1.5 && picksGeo.some((p) => km2(p, s) <= 2.5)).slice(0, 6) : [];
-	const nearL = GROWTH_LANGS.includes(L) ? L : "en";
+	const nearL = NEAR_LANGS.includes(L) ? L : "en";
 	const NEARH = {
 		en: "Hotels near",
 		es: "Hoteles cerca de",
@@ -57448,11 +59814,13 @@ async function sitemapFor(L) {
 		"/guides",
 		...POSTS.map((x) => `/guides/${x.slug}`)
 	].map((p) => `<url><loc>${SITE}${p}</loc><lastmod>${CONTENT_DATE}</lastmod></url>`).join("\n") + "\n" : L === "es" ? ["/guides", ...POSTS_ES.map((x) => `/guides/${x.slug}`)].map((x) => `<url><loc>${SITE}/es${x}</loc><lastmod>${CONTENT_DATE}</lastmod></url>`).join("\n") + "\n" : "";
-	const enes = L === "en" || L === "es" ? [
+	const trSet = /* @__PURE__ */ new Set([...await gymPathsTr(), ...await poolPathsTr()]);
+	const fAlts = (x) => trSet.has(x) ? LANGS : ["en", "es"];
+	const enes = (L === "en" || L === "es" ? [
 		...await gymPaths(),
 		...await poolPaths(),
 		...await filterExtraPaths()
-	].map((x) => `<url><loc>${SITE}${P(L, x)}</loc><lastmod>${CONTENT_DATE}</lastmod><xhtml:link rel="alternate" hreflang="en" href="${SITE}${x}"/><xhtml:link rel="alternate" hreflang="es" href="${SITE}/es${x}"/><xhtml:link rel="alternate" hreflang="x-default" href="${SITE}${x}"/></url>`).join("\n") + "\n" : "";
+	] : [...trSet]).map((x) => `<url><loc>${SITE}${P(L, x)}</loc><lastmod>${CONTENT_DATE}</lastmod>${fAlts(x).map((l) => `<xhtml:link rel="alternate" hreflang="${l}" href="${SITE}${P(l, x)}"/>`).join("")}<xhtml:link rel="alternate" hreflang="x-default" href="${SITE}${x}"/></url>`).join("\n") + "\n";
 	const growth = GROWTH_LANGS.includes(L) ? [
 		"/open-data",
 		"/hotel-price-index",
@@ -57461,9 +59829,9 @@ async function sitemapFor(L) {
 		"/awards",
 		"/near-me",
 		"/best-value-hotels-2026",
-		...await seoPaths(),
+		...NEAR_LANGS.includes(L) ? await seoPaths() : [],
 		...(await countryValueSlugs()).map((c) => `/best-value/${c}`)
-	].map((x) => `<url><loc>${SITE}${P(L, x)}</loc><lastmod>${CONTENT_DATE}</lastmod>${GROWTH_LANGS.map((l) => `<xhtml:link rel="alternate" hreflang="${l}" href="${SITE}${P(l, x)}"/>`).join("")}<xhtml:link rel="alternate" hreflang="x-default" href="${SITE}${x}"/></url>`).join("\n") + "\n" : "";
+	].map((x) => `<url><loc>${SITE}${P(L, x)}</loc><lastmod>${CONTENT_DATE}</lastmod>${(x.startsWith("/near/") ? NEAR_LANGS : GROWTH_LANGS).map((l) => `<xhtml:link rel="alternate" hreflang="${l}" href="${SITE}${P(l, x)}"/>`).join("")}<xhtml:link rel="alternate" hreflang="x-default" href="${SITE}${x}"/></url>`).join("\n") + "\n" : "";
 	const heroImg = /* @__PURE__ */ new Map();
 	for (const c of index) if ((await cityData(c.id))?.extras?.hero?.img) heroImg.set("/" + c.slug, `${SITE}/api/img/${c.id}/big`);
 	return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n${paths.map((p) => `<url><loc>${SITE}${P(L, p)}</loc><lastmod>${CONTENT_DATE}</lastmod>${LANGS.map((l) => `<xhtml:link rel="alternate" hreflang="${l}" href="${SITE}${P(l, p)}"/>`).join("")}<xhtml:link rel="alternate" hreflang="x-default" href="${SITE}${p}"/>${heroImg.has(p) ? `<image:image><image:loc>${heroImg.get(p)}</image:loc></image:image>` : ""}</url>`).join("\n")}\n${extra}${enes}${growth}</urlset>\n`;
@@ -57727,25 +60095,23 @@ Policy: https://www.top3hotels.com/terms
 			const out = guidePage(gde[1], "es");
 			return out ? html(out) : null;
 		}
-		if (L === "es" && p === "/gyms") return html(await gymIndexPage("es"));
+		if (p === "/gyms") return html(await gymIndexPage(L));
 		const gye = p.match(/^\/gyms\/([a-z0-9-]+)\/?$/);
 		if (gye) {
-			if (L !== "es") return Response.redirect(`${SITE}${p}`, 301);
-			const out = await gymCityPage(gye[1], "es");
+			const out = await gymCityPage(gye[1], L);
 			return out instanceof Response ? out : out ? html(out) : null;
 		}
-		if (L === "es" && p === "/pools") return html(await poolIndexPage("es"));
+		if (p === "/pools") return html(await poolIndexPage(L));
 		const poe = p.match(/^\/pools\/([a-z0-9-]+)\/?$/);
 		if (poe) {
-			if (L !== "es") return Response.redirect(`${SITE}${p}`, 301);
-			const out = await poolCityPage(poe[1], "es");
+			const out = await poolCityPage(poe[1], L);
 			return out instanceof Response ? out : out ? html(out) : null;
 		}
 	}
 	{
 		const gp = p === "/open-data" ? "od" : p === "/hotel-price-index" ? "idx" : p === "/rated-9-under-60" ? "nine" : p.startsWith("/best-value/") ? "bv" : p === "/budget" ? "bud" : p === "/escape" ? "esc" : p === "/split" ? "spl" : p === "/awards" ? "aw" : p === "/near-me" ? "nm" : p === "/best-value-hotels-2026" ? "b100" : /^\/compare-picks\/[a-z0-9-]+\/?$/.test(p) ? "cmp" : /^\/near\/[a-z0-9-]+\/[a-z0-9-]+\/?$/.test(p) ? "near" : "";
 		if (gp) {
-			if (!GROWTH_LANGS.includes(L)) return Response.redirect(`${SITE}${p}`, 301);
+			if (!GROWTH_LANGS.includes(L) || (gp === "near" || gp === "cmp") && !NEAR_LANGS.includes(L)) return Response.redirect(`${SITE}${p}`, 301);
 			if (gp === "od") return html(await openDataPage(L));
 			if (gp === "idx") return html(await priceIndexPage(L));
 			if (gp === "nine") return html(await ninePage(L));
