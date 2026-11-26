@@ -33,7 +33,9 @@
     "SA": "Saudi Arabia",
     "CA-BC": "British Columbia (Canada)",
     "CO": "Colombia",
-    "MA": "Morocco"
+    "MA": "Morocco",
+    "PA": "Panama",
+    "AR": "Argentina"
   },
   "sources": {
     "id-pp18-2021": {
@@ -252,6 +254,22 @@
       "language": "fr",
       "read": "2026-11-26",
       "note": "Quoted from the French version published by the Ministry of Justice; the Arabic text in the Bulletin officiel is the official one. Law 107-12 was published in Bulletin officiel No. 6518 of 17 November 2016."
+    },
+    "pa-ley-45-2007": {
+      "law": "Law 45 of 31 October 2007 on consumer protection and competition",
+      "publisher": "Gaceta Oficial de la República de Panamá (gacetaoficial.gob.pa), No. 25914 of 7 November 2007",
+      "url": "https://www.gacetaoficial.gob.pa/pdfTemp/25914/GacetaNo_25914_20071107.pdf",
+      "language": "es",
+      "read": "2026-11-26",
+      "note": "Quoted from the text as published in the Official Gazette in 2007; check the Gazette for any later amendment. The Authority named in the article is the consumer protection authority set up by this law."
+    },
+    "ar-ccyc-26994": {
+      "law": "Civil and Commercial Code of the Nation, approved by Law 26,994",
+      "publisher": "InfoLEG (infoleg.gob.ar), legislative information database of the Government of Argentina, updated text",
+      "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/235975/texact.htm",
+      "language": "es",
+      "read": "2026-11-26",
+      "note": "Article 2071 was replaced by article 14 of Decree 1017/2024 (Boletín Oficial of 13 November 2024): the insurance that used to be compulsory is now optional."
     }
   },
   "rules": [
@@ -1366,6 +1384,97 @@
       "cite": "Article 618-9",
       "quote": "Le vendeur doit, après la signature du contrat préliminaire de vente, constituer au profit de l’acquéreur soit une garantie d’achévement des travaux soit une garantie de remboursement des échéances payées en cas de non-exécution du contrat. [...] La partie qui a dressé le contrat ne peut débloquer les échéances qui sont déposées auprès d’elle au profit du vendeur qu’après l’obtention de ce dernier d’une garantie couvrant toutes les échéances payées par l’acquéreur.",
       "translation": "After the preliminary sale contract is signed, the seller must set up in favour of the buyer either a guarantee of completion of the works or a guarantee of refund of the instalments paid if the contract is not performed. [...] The party who drew up the contract may release to the seller the instalments deposited with it only after the seller has obtained a guarantee covering all the instalments paid by the buyer.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "pa-entrega-terminacion",
+      "market": "PA",
+      "topics": [
+        "completion",
+        "delay",
+        "termination"
+      ],
+      "title": "In Panama, a promise to sell a new home must state the delivery date, and if it is missed you can cancel and get all your money back",
+      "plain": "The promise of sale of a new home must state a fixed or determinable delivery date. If the seller misses it for a reason it says is not its fault, it must put the reasons in writing. If the delivery date is missed, you may end the contract and get back everything you paid, with no penalty of any kind.",
+      "source": "pa-ley-45-2007",
+      "cite": "Article 79",
+      "quote": "En los contratos de promesa de compraventa de construcciones nuevas debe constar la fecha cierta o determinable de entrega. En caso de incumplimiento por causa no imputable al proveedor, deberán dejarse por escrito las causas por las cuales no se hizo la entrega del inmueble en el plazo establecido. En caso de incumplimiento del plazo de entrega, el consumidor tendrá la opción de dar por terminado el contrato, con la correspondiente devolución total de las sumas abonadas y sin ningún tipo de penalización.",
+      "translation": "Promise-of-sale contracts for new buildings must state the fixed or determinable delivery date. In case of non-performance for a cause not attributable to the supplier, the causes for which the property was not delivered within the set period must be put in writing. In case of failure to meet the delivery date, the consumer will have the option to terminate the contract, with the corresponding full refund of the sums paid and without any kind of penalty.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "pa-publicidad-garantia",
+      "market": "PA",
+      "topics": [
+        "law",
+        "completion"
+      ],
+      "title": "The developer's advertising is part of your contract, and the building warranty must be in writing",
+      "plain": "The seller of a new home must set out the terms and conditions of the building warranty clearly and in writing, with each type of cover detailed. Its advertising forms part of the sale contract: flyers, brochures, books or any other material it hands out bind the seller, and you can demand what they promise. Keep copies of every brochure.",
+      "source": "pa-ley-45-2007",
+      "cite": "Article 79",
+      "quote": "El proveedor de construcciones residenciales nuevas deberá establecer, de manera clara y por escrito, los términos y las condiciones de la garantía de la obra. En caso de que existan diferentes coberturas en la garantía, estas deberán estar debidamente detalladas. La publicidad de las construcciones residenciales nuevas formará parte integral del contrato de compraventa suscrito entre el proveedor y el consumidor. Los anuncios que se publiciten en volantes, panfletos, libros o por cualquier otro medio que el proveedor distribuya son vinculantes para este y exigibles por el consumidor.",
+      "translation": "The supplier of new residential buildings must set out, clearly and in writing, the terms and conditions of the building warranty. Where the warranty has different types of cover, they must be properly detailed. The advertising of new residential buildings will form an integral part of the sale contract signed between the supplier and the consumer. Advertisements published in flyers, pamphlets, books or by any other means the supplier distributes are binding on it and enforceable by the consumer.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "pa-precio-rebaja",
+      "market": "PA",
+      "topics": [
+        "price",
+        "payment"
+      ],
+      "title": "The contract must state the total price and when it can change, and you can ask for a lower price if the home differs from the contract",
+      "plain": "The contract must state the total amount you will pay and the cases in which the price may be adjusted. If building material costs rise, the consumer protection authority sets how such adjustments are checked. If the finished home's features or specifications differ substantially from those in the contract, you may demand a proportional price reduction.",
+      "source": "pa-ley-45-2007",
+      "cite": "Article 79",
+      "quote": "Los contratos deberán expresar el total de las sumas a pagar, así como los casos en que se podrán adoptar ajustes en el precio. En caso de aumento de los costos de materiales de construcción, la Autoridad establecerá los parámetros y los procedimientos técnicos para verificar dichos ajustes. El consumidor podrá exigir rebajas proporcionales en el precio de las construcciones nuevas, cuando sus condiciones o especificaciones finales hayan variado sustancialmente de las establecidas previamente en el contrato.",
+      "translation": "Contracts must state the total of the sums to be paid, and the cases in which price adjustments may be made. If the costs of building materials rise, the Authority will set the parameters and technical procedures for checking such adjustments. The consumer may demand proportional reductions in the price of new buildings when their final conditions or specifications have varied substantially from those previously set in the contract.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "ar-prehorizontalidad-seguro",
+      "market": "AR",
+      "topics": [
+        "escrow",
+        "termination"
+      ],
+      "title": "In Argentina, insurance against the failure of an off-plan sale is now optional, so ask the developer for it",
+      "plain": "Contracts for units sold before the building is set up under horizontal property (off-plan) fall under the Code's pre-horizontal-property chapter. Since Decree 1017/2024, the owner of the land may, but no longer must, take out insurance in your favour against the risk that the operation fails. Ask whether such a policy exists and get a copy before you pay.",
+      "source": "ar-ccyc-26994",
+      "cite": "Articles 2070 and 2071",
+      "quote": "Los contratos sobre unidades funcionales celebrados antes de la constitución de la propiedad horizontal están incluidos en las disposiciones de este Capítulo. [...] Al celebrar contratos sobre unidades construidas o proyectadas bajo el régimen de propiedad horizontal, el titular del dominio del inmueble podrá constituir un seguro a favor del adquirente, para el riesgo del fracaso de la operación de acuerdo a lo convenido por las partes.",
+      "translation": "Contracts on functional units concluded before the horizontal property is set up are covered by the provisions of this Chapter. [...] When concluding contracts on units built or planned under the horizontal property regime, the owner of the property may take out insurance in favour of the buyer, for the risk of failure of the operation as agreed by the parties.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "ar-boleto-cautelares",
+      "market": "AR",
+      "topics": [
+        "payment",
+        "title"
+      ],
+      "title": "A buyer who has paid at least 25% under a dated sale agreement ranks ahead of later creditors' attachments",
+      "plain": "Your right as a good-faith buyer under a sale agreement (boleto) has priority over third parties who later attach the property if: you contracted with the registered owner (or can trace an unbroken chain back to them), you paid at least 25% of the price before the attachment, the agreement has a certain date, and the purchase has enough publicity, either by registration or by possession. Get the boleto dated (for example, certified) and registered or take possession.",
+      "source": "ar-ccyc-26994",
+      "cite": "Article 1170",
+      "quote": "El derecho del comprador de buena fe tiene prioridad sobre el de terceros que hayan trabado cautelares sobre el inmueble vendido si: a) el comprador contrató con el titular registral, o puede subrogarse en la posición jurídica de quien lo hizo mediante un perfecto eslabonamiento con los adquirentes sucesivos; b) el comprador pagó como mínimo el veinticinco por ciento del precio con anterioridad a la traba de la cautelar; c) el boleto tiene fecha cierta; d) la adquisición tiene publicidad suficiente, sea registral, sea posesoria.",
+      "translation": "The right of the good-faith buyer has priority over that of third parties who have placed attachments on the property sold if: a) the buyer contracted with the registered owner, or can take over the legal position of whoever did so through a perfect chain of successive buyers; b) the buyer paid at least twenty-five per cent of the price before the attachment was placed; c) the sale agreement has a certain date; d) the purchase has sufficient publicity, whether by registration or by possession.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "ar-boleto-quiebra",
+      "market": "AR",
+      "topics": [
+        "payment",
+        "termination"
+      ],
+      "title": "If the seller goes bankrupt, a dated sale agreement with at least 25% paid still binds the estate, and the judge orders the deed",
+      "plain": "Dated sale agreements in favour of good-faith buyers bind the seller's insolvency or bankruptcy estate if at least 25% of the price has been paid. The judge must order the title deed to be granted, and you may pay the rest on the agreed schedule; if you still owe instalments, a first-ranking mortgage on the property secures the balance.",
+      "source": "ar-ccyc-26994",
+      "cite": "Article 1171",
+      "quote": "Los boletos de compraventa de inmuebles de fecha cierta otorgados a favor de adquirentes de buena fe son oponibles al concurso o quiebra del vendedor si se hubiera abonado como mínimo el veinticinco por ciento del precio. El juez debe disponer que se otorgue la respectiva escritura pública. El comprador puede cumplir sus obligaciones en el plazo convenido. En caso de que la prestación a cargo del comprador sea a plazo, debe constituirse hipoteca en primer grado sobre el bien, en garantía del saldo de precio.",
+      "translation": "Property sale agreements with a certain date granted in favour of good-faith buyers are enforceable against the seller's insolvency proceedings or bankruptcy if at least twenty-five per cent of the price has been paid. The judge must order the corresponding public deed to be granted. The buyer may perform its obligations within the agreed period. Where the buyer's payment is in instalments, a first-ranking mortgage must be created on the property to secure the balance of the price.",
       "checked": "2026-11-26"
     }
   ]
