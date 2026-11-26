@@ -99,5 +99,6 @@
   // once every deferred script has run, and for late handover once its data has built the selects
   var tries = 0;
   function wait(){ var ready = !cfg.wait || ($(cfg.wait) && $(cfg.wait).options.length > 0); if (ready || tries++ > 80) start(); else setTimeout(wait, 100); }
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', function(){ setTimeout(wait, 0); }); else setTimeout(wait, 0);
+  // deferred scripts run while readyState is already 'interactive', before DOMContentLoaded, so wait for that event
+  if (document.readyState !== 'complete') document.addEventListener('DOMContentLoaded', function(){ setTimeout(wait, 0); }); else setTimeout(wait, 0);
 })();
