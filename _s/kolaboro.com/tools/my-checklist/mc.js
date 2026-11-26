@@ -237,6 +237,6 @@
     $('mcUpd').textContent = _('Live data unavailable right now: the checklist works without market links.');
   });
   }
-  if (LG0 !== 'en' && /^(es|fr|de|nl|ru|zh|ar)$/.test(LG0) && !window.KMC_TX) { var sc = document.createElement('script'); sc.src = '/tools/my-checklist/mc-tx.js?v=l11b'; sc.onload = sc.onerror = start; document.head.appendChild(sc); }
+  if (LG0 !== 'en' && /^(es|fr|de|nl|ru|zh|ar)$/.test(LG0) && !window.KMC_TX) { var sc = document.createElement('script'); sc.src = '/tools/my-checklist/mc-tx.js?v=l11c'; sc.onload = sc.onerror = start; document.head.appendChild(sc); }
   else start();
 })();
