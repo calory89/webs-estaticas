@@ -460,13 +460,13 @@ async function kbSafe(req, u, r) {
   return new Response(t, { status: 200, headers: h });
 }
 // n40 d10: finished-page edge copies (see _notes): served at once, rebuilt in the background when stale (x-kb-ot)
-const KB_FIN = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:m\/[^/.]{2,60}|projects\/[a-z0-9-]{1,90}|developers\/[a-z0-9-]{2,90})\/$/, KB_OT = crypto.randomUUID();
+const KB_FIN = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:m\/[^/.]{2,60}|projects\/[a-z0-9-]{1,90}|developers\/[a-z0-9-]{2,90})\/$/; let KB_OT = null; const kbOt = () => KB_OT || (KB_OT = crypto.randomUUID());
 const kbFinKey = u => new Request('https://kolaboro.com/__edge/fin1' + u.pathname);
 async function kbFinGet(req, u, env, ctx, self) {
-  if (req.method !== 'GET' || !kbClean(u) || typeof caches === 'undefined' || !KB_FIN.test(u.pathname) || KB_BOT_UA.test(req.headers.get('user-agent') || '') || req.headers.get('x-kb-ot') === KB_OT) return null;
+  if (req.method !== 'GET' || !kbClean(u) || typeof caches === 'undefined' || !KB_FIN.test(u.pathname) || KB_BOT_UA.test(req.headers.get('user-agent') || '') || req.headers.get('x-kb-ot') === kbOt()) return null;
   const hit = await caches.default.match(kbFinKey(u)); if (!hit) return null;
   const sha = String((env && env.CF_PAGES_COMMIT_SHA) || ''), age = Date.now() - (+hit.headers.get('x-built') || 0), stale = age > 900e3 || (!!sha && hit.headers.get('x-sha') !== sha);
-  if (stale && ctx && ctx.waitUntil && !KB_EDGE_BUSY.has('fin' + u.pathname)) { KB_EDGE_BUSY.add('fin' + u.pathname); const h0 = new Headers(req.headers); h0.set('x-kb-ot', KB_OT); ctx.waitUntil(Promise.resolve().then(() => self.fetch(new Request(req.url, { headers: h0 }), env, ctx)).then(r => r && r.body && r.body.cancel && r.body.cancel()).catch(() => {}).then(() => { KB_EDGE_BUSY.delete('fin' + u.pathname); })); }
+  if (stale && ctx && ctx.waitUntil && !KB_EDGE_BUSY.has('fin' + u.pathname)) { KB_EDGE_BUSY.add('fin' + u.pathname); const h0 = new Headers(req.headers); h0.set('x-kb-ot', kbOt()); ctx.waitUntil(Promise.resolve().then(() => self.fetch(new Request(req.url, { headers: h0 }), env, ctx)).then(r => r && r.body && r.body.cancel && r.body.cancel()).catch(() => {}).then(() => { KB_EDGE_BUSY.delete('fin' + u.pathname); })); }
   const h = new Headers(hit.headers), old = ((h.get('content-security-policy') || '') + ' ' + (h.get('content-security-policy-report-only') || '')).match(/'nonce-([A-Za-z0-9+/=]{8,})'/);
   let t = await hit.text();
   if (old) { const nw = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(16)))); t = t.split(old[1]).join(nw); for (const k of ['content-security-policy', 'content-security-policy-report-only']) if (h.has(k)) h.set(k, h.get(k).split(old[1]).join(nw)); }
@@ -518,7 +518,7 @@ export default {
     if (/^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) await kbStrings(env);   // n32w: string tables first (see kbStrings)
     if (kn33a && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) { try { await kn33a.prep(env, new URL(req.url)); } catch (e) {} }   // n33a (item 79): data card for the /data/ Dataset node
     if (env && env.KB_CSP_STRICT === '0') KB_CSP_SCRIPTS = false;   // n21e: rollback switch for the strict script policy on kolaboro.com
-    const kbRe = req.headers.get('x-kb-ot') === KB_OT;
+    const kbRe = req.headers.get('x-kb-ot') === kbOt();
     if (!kbRe && req.method === 'GET' && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname) && /bot|crawl|spider|GPT|Claude|anthropic|Perplexity|Bytespider|meta-extern|cohere|Mistral|Diffbot/i.test(req.headers.get('user-agent') || '')) { try { if (!kbots) kbots = await import('./kbx_bots.js'); kbots.count(req, new URL(req.url), ctx); } catch (e) {} }   // n26i: AI crawler visits per day (kbx_bots.js)
     if (!kbRe && (req.method === 'GET' || (req.method === 'POST' && /^\/mcp\/?$/.test(new URL(req.url).pathname))) && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) { try { if (!k27a) k27a = await import('./kbx_n27a.js'); k27a.count(req, new URL(req.url), ctx); } catch (e) {} }   // n27a: page views by page type and searches started (edge counters, kbx_n27a.js)
     const kas = kbAslug(req); if (kas && kas.loc) return new Response(null, { status: 301, headers: { location: kas.loc, 'cache-control': 'public, max-age=86400' } }); if (kas) req = kas.req; if (/^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) { try { const fh = await kbFinGet(req, new URL(req.url), env, ctx, this); if (fh) { fh.headers.set('server-timing', 'fin;dur=' + (Date.now() - t0) + ';desc="finished copy"'); return fh; } } catch (e) {} }   // n40 R02-28
