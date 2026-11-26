@@ -669,7 +669,7 @@ return TB.kbx_named__t.k49 + hr + '</tr></thead><tbody>' + out + '</tbody></tabl
 });
 }
 const D12CSS = '';
-const KP_CSS = '<link rel="stylesheet" href="/k/kp.css?v=5127b23b2b">';
+const KP_CSS = '<link rel="stylesheet" href="/k/kp.css?v=b936559790">';
 const CV = '<script>if(location.hash)document.documentElement.classList.add("kb-h")</script><style id="kcv-css">html:not(.kb-h) .kwrap section.ks{content-visibility:auto;contain-intrinsic-size:auto 700px}html:not(.kb-h) .kwrap section.kz{content-visibility:visible}@media print{html:not(.kb-h) .kwrap section.ks{content-visibility:visible}}</style>';
 function head(pg, lang) {
   const alts = LANGS.map(l => '<link rel="alternate" hreflang="' + l + '" href="' + pg.alt(l) + '">').join('') + '<link rel="alternate" hreflang="x-default" href="' + pg.alt('en') + '">';

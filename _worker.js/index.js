@@ -252,13 +252,13 @@ const KB_U1 = { en: { months: 'month', days: 'day', weeks: 'week', years: 'year'
   de: { Monaten: 'Monat', Monate: 'Monat', Tagen: 'Tag', Tage: 'Tag', Wochen: 'Woche', Jahren: 'Jahr', Jahre: 'Jahr' }, nl: { maanden: 'maand', dagen: 'dag', weken: 'week', jaren: 'jaar' } };
 const KB_U1_RE = {}; for (const [l, m] of Object.entries(KB_U1)) KB_U1_RE[l] = new RegExp('(^|[\\s(>:;\u00a0])1([ \u00a0])(' + Object.keys(m).join('|') + ')(?![\\p{L}])', 'gu');
 function kbOne(html, m) { const re = KB_U1_RE[Object.keys(KB_U1).find(l => KB_U1[l] === m)]; return html.replace(re, (x, a, g, n) => a + '1' + g + m[n]); }
-const KB_SITE_CSS_V = '5a812745b6', KB_PROV_V = '369ff51a4c';   // n21e: bump when /k/site.css or /k/prov.js change (sha1 of the file, 10 chars); pages keep their old ?v= in the HTML
+const KB_SITE_CSS_V = '0e01ffc296', KB_PROV_V = '369ff51a4c';   // n21e: bump when /k/site.css or /k/prov.js change (sha1 of the file, 10 chars); pages keep their old ?v= in the HTML
 let KB_CSP_SCRIPTS = true;   // n21e: strict script policy enforced site-wide; false = report-only again (as before 11 Nov 2026)
 const KB_GA = 'G-FJKJE77K4V';
 const KB_GA_JS = '(window.kbLate||function(f){addEventListener("load",function(){setTimeout(f,1500)})})(function(){var s=document.createElement("script");s.async=1;s.src="https://www.googletagmanager.com/gtag/js?id=' + KB_GA + '";document.head.appendChild(s)});' +
   "window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','" + KB_GA + "');";
-const KB_DS_V = '20d8e6ddc8';   // bump with ds.css (scratchpad d12a/dsv.sh does it)
-const KB_DSS_V = '20d8e6ddc8';   // the ds.css version /k/ds-site.css was generated from; when it differs from KB_DS_V every page gets plain ds.css
+const KB_DS_V = '618404f78c';   // bump with ds.css (scratchpad d12a/dsv.sh does it)
+const KB_DSS_V = '618404f78c';   // the ds.css version /k/ds-site.css was generated from; when it differs from KB_DS_V every page gets plain ds.css
 // kolaboro.com mobile speed (b9c, 6 Nov 2026): third-party tags wait for the first interaction (tap, key, scroll, mouse move)
 // or 8 s after load, whichever comes first. window.kbLate(fn) queues work for that moment (the static pages load gtag through it);
 // Cloudflare Zaraz (Clarity) is held the same way by deferring its zaraz.init call. Events queued before that are kept.
