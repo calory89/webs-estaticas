@@ -1,79 +1,5 @@
-@font-face{font-family:'Archivo';font-style:normal;font-weight:100 900;font-stretch:62% 125%;font-display:swap;src:url(/k/fonts/archivo-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}
-@font-face{font-family:'Archivo';font-style:normal;font-weight:100 900;font-stretch:62% 125%;font-display:swap;src:url(/k/fonts/archivo-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-
-/* Metric-matched fallback for Archivo, per weight band and stretch band (n38 d5): letters sized to the width of Archivo on page text in 5 Latin-script languages, and the space from a second face sized to the Archivo space, so the swap to the web font does not rewrap lines (layout shift). */
-@font-face{font-family:'Archivo Fallback';font-weight:100 549;font-stretch:62% 102%;src:local(Arial),local('Liberation Sans'),local(Arimo),local(Roboto);size-adjust:100.8%;ascent-override:87.3%;descent-override:20.8%;line-gap-override:0;unicode-range:U+0-1F,U+21-9F,U+A1-24F,U+1E00-1EFF,U+2000-206F,U+20A0-20C4,U+2100-2215}
-@font-face{font-family:'Archivo Fallback';font-weight:100 549;font-stretch:62% 102%;src:local(Arial),local('Liberation Sans'),local(Arimo),local(Roboto);size-adjust:75.2%;ascent-override:117.0%;descent-override:27.9%;line-gap-override:0;unicode-range:U+20,U+A0}
-@font-face{font-family:'Archivo Fallback';font-weight:100 549;font-stretch:103% 105%;src:local(Arial),local('Liberation Sans'),local(Arimo),local(Roboto);size-adjust:104.8%;ascent-override:83.9%;descent-override:20.0%;line-gap-override:0;unicode-range:U+0-1F,U+21-9F,U+A1-24F,U+1E00-1EFF,U+2000-206F,U+20A0-20C4,U+2100-2215}
-@font-face{font-family:'Archivo Fallback';font-weight:100 549;font-stretch:103% 105%;src:local(Arial),local('Liberation Sans'),local(Arimo),local(Roboto);size-adjust:82.4%;ascent-override:106.8%;descent-override:25.5%;line-gap-override:0;unicode-range:U+20,U+A0}
-@font-face{font-family:'Archivo Fallback';font-weight:100 549;font-stretch:106% 111%;src:local(Arial),local('Liberation Sans'),local(Arimo),local(Roboto);size-adjust:109.0%;ascent-override:80.8%;descent-override:19.3%;line-gap-override:0;unicode-range:U+0-1F,U+21-9F,U+A1-24F,U+1E00-1EFF,U+2000-206F,U+20A0-20C4,U+2100-2215}
-@font-face{font-family:'Archivo Fallback';font-weight:100 549;font-stretch:106% 111%;src:local(Arial),local('Liberation Sans'),local(Arimo),local(Roboto);size-adjust:89.6%;ascent-override:98.2%;descent-override:23.4%;line-gap-override:0;unicode-range:U+20,U+A0}
-@font-face{font-family:'Archivo Fallback';font-weight:100 549;font-stretch:112% 125%;src:local(Arial),local('Liberation Sans'),local(Arimo),local(Roboto);size-adjust:116.1%;ascent-override:75.8%;descent-override:18.1%;line-gap-override:0;unicode-range:U+0-1F,U+21-9F,U+A1-24F,U+1E00-1EFF,U+2000-206F,U+20A0-20C4,U+2100-2215}
-@font-face{font-family:'Archivo Fallback';font-weight:100 549;font-stretch:112% 125%;src:local(Arial),local('Liberation Sans'),local(Arimo),local(Roboto);size-adjust:102.2%;ascent-override:86.1%;descent-override:20.5%;line-gap-override:0;unicode-range:U+20,U+A0}
-@font-face{font-family:'Archivo Fallback';font-weight:550 579;font-stretch:62% 102%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:96.7%;ascent-override:91.0%;descent-override:21.7%;line-gap-override:0;unicode-range:U+0-1F,U+21-9F,U+A1-24F,U+1E00-1EFF,U+2000-206F,U+20A0-20C4,U+2100-2215}
-@font-face{font-family:'Archivo Fallback';font-weight:550 579;font-stretch:62% 102%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:72.7%;ascent-override:121.0%;descent-override:28.9%;line-gap-override:0;unicode-range:U+20,U+A0}
-@font-face{font-family:'Archivo Fallback';font-weight:550 579;font-stretch:103% 105%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:100.7%;ascent-override:87.4%;descent-override:20.8%;line-gap-override:0;unicode-range:U+0-1F,U+21-9F,U+A1-24F,U+1E00-1EFF,U+2000-206F,U+20A0-20C4,U+2100-2215}
-@font-face{font-family:'Archivo Fallback';font-weight:550 579;font-stretch:103% 105%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:79.6%;ascent-override:110.6%;descent-override:26.4%;line-gap-override:0;unicode-range:U+20,U+A0}
-@font-face{font-family:'Archivo Fallback';font-weight:550 579;font-stretch:106% 111%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:104.8%;ascent-override:84.0%;descent-override:20.0%;line-gap-override:0;unicode-range:U+0-1F,U+21-9F,U+A1-24F,U+1E00-1EFF,U+2000-206F,U+20A0-20C4,U+2100-2215}
-@font-face{font-family:'Archivo Fallback';font-weight:550 579;font-stretch:106% 111%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:86.8%;ascent-override:101.4%;descent-override:24.2%;line-gap-override:0;unicode-range:U+20,U+A0}
-@font-face{font-family:'Archivo Fallback';font-weight:550 579;font-stretch:112% 125%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:111.9%;ascent-override:78.6%;descent-override:18.8%;line-gap-override:0;unicode-range:U+0-1F,U+21-9F,U+A1-24F,U+1E00-1EFF,U+2000-206F,U+20A0-20C4,U+2100-2215}
-@font-face{font-family:'Archivo Fallback';font-weight:550 579;font-stretch:112% 125%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:99.0%;ascent-override:88.9%;descent-override:21.2%;line-gap-override:0;unicode-range:U+20,U+A0}
-@font-face{font-family:'Archivo Fallback';font-weight:580 624;font-stretch:62% 102%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:97.5%;ascent-override:90.3%;descent-override:21.5%;line-gap-override:0;unicode-range:U+0-1F,U+21-9F,U+A1-24F,U+1E00-1EFF,U+2000-206F,U+20A0-20C4,U+2100-2215}
-@font-face{font-family:'Archivo Fallback';font-weight:580 624;font-stretch:62% 102%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:72.0%;ascent-override:122.2%;descent-override:29.2%;line-gap-override:0;unicode-range:U+20,U+A0}
-@font-face{font-family:'Archivo Fallback';font-weight:580 624;font-stretch:103% 105%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:101.6%;ascent-override:86.6%;descent-override:20.7%;line-gap-override:0;unicode-range:U+0-1F,U+21-9F,U+A1-24F,U+1E00-1EFF,U+2000-206F,U+20A0-20C4,U+2100-2215}
-@font-face{font-family:'Archivo Fallback';font-weight:580 624;font-stretch:103% 105%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:78.8%;ascent-override:111.6%;descent-override:26.6%;line-gap-override:0;unicode-range:U+20,U+A0}
-@font-face{font-family:'Archivo Fallback';font-weight:580 624;font-stretch:106% 111%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:105.8%;ascent-override:83.2%;descent-override:19.9%;line-gap-override:0;unicode-range:U+0-1F,U+21-9F,U+A1-24F,U+1E00-1EFF,U+2000-206F,U+20A0-20C4,U+2100-2215}
-@font-face{font-family:'Archivo Fallback';font-weight:580 624;font-stretch:106% 111%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:85.7%;ascent-override:102.7%;descent-override:24.5%;line-gap-override:0;unicode-range:U+20,U+A0}
-@font-face{font-family:'Archivo Fallback';font-weight:580 624;font-stretch:112% 125%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:113.0%;ascent-override:77.9%;descent-override:18.6%;line-gap-override:0;unicode-range:U+0-1F,U+21-9F,U+A1-24F,U+1E00-1EFF,U+2000-206F,U+20A0-20C4,U+2100-2215}
-@font-face{font-family:'Archivo Fallback';font-weight:580 624;font-stretch:112% 125%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:97.9%;ascent-override:89.9%;descent-override:21.4%;line-gap-override:0;unicode-range:U+20,U+A0}
-@font-face{font-family:'Archivo Fallback';font-weight:625 664;font-stretch:62% 102%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:99.3%;ascent-override:88.6%;descent-override:21.1%;line-gap-override:0;unicode-range:U+0-1F,U+21-9F,U+A1-24F,U+1E00-1EFF,U+2000-206F,U+20A0-20C4,U+2100-2215}
-@font-face{font-family:'Archivo Fallback';font-weight:625 664;font-stretch:62% 102%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:71.3%;ascent-override:123.5%;descent-override:29.5%;line-gap-override:0;unicode-range:U+20,U+A0}
-@font-face{font-family:'Archivo Fallback';font-weight:625 664;font-stretch:103% 105%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:103.4%;ascent-override:85.1%;descent-override:20.3%;line-gap-override:0;unicode-range:U+0-1F,U+21-9F,U+A1-24F,U+1E00-1EFF,U+2000-206F,U+20A0-20C4,U+2100-2215}
-@font-face{font-family:'Archivo Fallback';font-weight:625 664;font-stretch:103% 105%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:78.1%;ascent-override:112.7%;descent-override:26.9%;line-gap-override:0;unicode-range:U+20,U+A0}
-@font-face{font-family:'Archivo Fallback';font-weight:625 664;font-stretch:106% 111%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:107.5%;ascent-override:81.9%;descent-override:19.5%;line-gap-override:0;unicode-range:U+0-1F,U+21-9F,U+A1-24F,U+1E00-1EFF,U+2000-206F,U+20A0-20C4,U+2100-2215}
-@font-face{font-family:'Archivo Fallback';font-weight:625 664;font-stretch:106% 111%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:85.0%;ascent-override:103.6%;descent-override:24.7%;line-gap-override:0;unicode-range:U+20,U+A0}
-@font-face{font-family:'Archivo Fallback';font-weight:625 664;font-stretch:112% 125%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:114.6%;ascent-override:76.8%;descent-override:18.3%;line-gap-override:0;unicode-range:U+0-1F,U+21-9F,U+A1-24F,U+1E00-1EFF,U+2000-206F,U+20A0-20C4,U+2100-2215}
-@font-face{font-family:'Archivo Fallback';font-weight:625 664;font-stretch:112% 125%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:96.8%;ascent-override:90.9%;descent-override:21.7%;line-gap-override:0;unicode-range:U+20,U+A0}
-@font-face{font-family:'Archivo Fallback';font-weight:665 689;font-stretch:62% 102%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:100.4%;ascent-override:87.7%;descent-override:20.9%;line-gap-override:0;unicode-range:U+0-1F,U+21-9F,U+A1-24F,U+1E00-1EFF,U+2000-206F,U+20A0-20C4,U+2100-2215}
-@font-face{font-family:'Archivo Fallback';font-weight:665 689;font-stretch:62% 102%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:70.9%;ascent-override:124.1%;descent-override:29.6%;line-gap-override:0;unicode-range:U+20,U+A0}
-@font-face{font-family:'Archivo Fallback';font-weight:665 689;font-stretch:103% 105%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:104.4%;ascent-override:84.3%;descent-override:20.1%;line-gap-override:0;unicode-range:U+0-1F,U+21-9F,U+A1-24F,U+1E00-1EFF,U+2000-206F,U+20A0-20C4,U+2100-2215}
-@font-face{font-family:'Archivo Fallback';font-weight:665 689;font-stretch:103% 105%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:77.4%;ascent-override:113.7%;descent-override:27.1%;line-gap-override:0;unicode-range:U+20,U+A0}
-@font-face{font-family:'Archivo Fallback';font-weight:665 689;font-stretch:106% 111%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:108.5%;ascent-override:81.1%;descent-override:19.4%;line-gap-override:0;unicode-range:U+0-1F,U+21-9F,U+A1-24F,U+1E00-1EFF,U+2000-206F,U+20A0-20C4,U+2100-2215}
-@font-face{font-family:'Archivo Fallback';font-weight:665 689;font-stretch:106% 111%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:84.2%;ascent-override:104.5%;descent-override:24.9%;line-gap-override:0;unicode-range:U+20,U+A0}
-@font-face{font-family:'Archivo Fallback';font-weight:665 689;font-stretch:112% 125%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:115.5%;ascent-override:76.2%;descent-override:18.2%;line-gap-override:0;unicode-range:U+0-1F,U+21-9F,U+A1-24F,U+1E00-1EFF,U+2000-206F,U+20A0-20C4,U+2100-2215}
-@font-face{font-family:'Archivo Fallback';font-weight:665 689;font-stretch:112% 125%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:96.1%;ascent-override:91.6%;descent-override:21.8%;line-gap-override:0;unicode-range:U+20,U+A0}
-@font-face{font-family:'Archivo Fallback';font-weight:690 709;font-stretch:62% 102%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:101.1%;ascent-override:87.0%;descent-override:20.8%;line-gap-override:0;unicode-range:U+0-1F,U+21-9F,U+A1-24F,U+1E00-1EFF,U+2000-206F,U+20A0-20C4,U+2100-2215}
-@font-face{font-family:'Archivo Fallback';font-weight:690 709;font-stretch:62% 102%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:70.6%;ascent-override:124.7%;descent-override:29.8%;line-gap-override:0;unicode-range:U+20,U+A0}
-@font-face{font-family:'Archivo Fallback';font-weight:690 709;font-stretch:103% 105%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:105.2%;ascent-override:83.7%;descent-override:20.0%;line-gap-override:0;unicode-range:U+0-1F,U+21-9F,U+A1-24F,U+1E00-1EFF,U+2000-206F,U+20A0-20C4,U+2100-2215}
-@font-face{font-family:'Archivo Fallback';font-weight:690 709;font-stretch:103% 105%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:77.4%;ascent-override:113.7%;descent-override:27.1%;line-gap-override:0;unicode-range:U+20,U+A0}
-@font-face{font-family:'Archivo Fallback';font-weight:690 709;font-stretch:106% 111%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:109.2%;ascent-override:80.6%;descent-override:19.2%;line-gap-override:0;unicode-range:U+0-1F,U+21-9F,U+A1-24F,U+1E00-1EFF,U+2000-206F,U+20A0-20C4,U+2100-2215}
-@font-face{font-family:'Archivo Fallback';font-weight:690 709;font-stretch:106% 111%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:83.9%;ascent-override:104.9%;descent-override:25.0%;line-gap-override:0;unicode-range:U+20,U+A0}
-@font-face{font-family:'Archivo Fallback';font-weight:690 709;font-stretch:112% 125%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:116.2%;ascent-override:75.7%;descent-override:18.1%;line-gap-override:0;unicode-range:U+0-1F,U+21-9F,U+A1-24F,U+1E00-1EFF,U+2000-206F,U+20A0-20C4,U+2100-2215}
-@font-face{font-family:'Archivo Fallback';font-weight:690 709;font-stretch:112% 125%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:95.8%;ascent-override:91.9%;descent-override:21.9%;line-gap-override:0;unicode-range:U+20,U+A0}
-@font-face{font-family:'Archivo Fallback';font-weight:710 729;font-stretch:62% 102%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:102.2%;ascent-override:86.1%;descent-override:20.5%;line-gap-override:0;unicode-range:U+0-1F,U+21-9F,U+A1-24F,U+1E00-1EFF,U+2000-206F,U+20A0-20C4,U+2100-2215}
-@font-face{font-family:'Archivo Fallback';font-weight:710 729;font-stretch:62% 102%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:69.8%;ascent-override:126.0%;descent-override:30.1%;line-gap-override:0;unicode-range:U+20,U+A0}
-@font-face{font-family:'Archivo Fallback';font-weight:710 729;font-stretch:103% 105%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:106.2%;ascent-override:82.9%;descent-override:19.8%;line-gap-override:0;unicode-range:U+0-1F,U+21-9F,U+A1-24F,U+1E00-1EFF,U+2000-206F,U+20A0-20C4,U+2100-2215}
-@font-face{font-family:'Archivo Fallback';font-weight:710 729;font-stretch:103% 105%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:76.7%;ascent-override:114.8%;descent-override:27.4%;line-gap-override:0;unicode-range:U+20,U+A0}
-@font-face{font-family:'Archivo Fallback';font-weight:710 729;font-stretch:106% 111%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:110.2%;ascent-override:79.9%;descent-override:19.1%;line-gap-override:0;unicode-range:U+0-1F,U+21-9F,U+A1-24F,U+1E00-1EFF,U+2000-206F,U+20A0-20C4,U+2100-2215}
-@font-face{font-family:'Archivo Fallback';font-weight:710 729;font-stretch:106% 111%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:83.5%;ascent-override:105.4%;descent-override:25.1%;line-gap-override:0;unicode-range:U+20,U+A0}
-@font-face{font-family:'Archivo Fallback';font-weight:710 729;font-stretch:112% 125%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:117.1%;ascent-override:75.1%;descent-override:17.9%;line-gap-override:0;unicode-range:U+0-1F,U+21-9F,U+A1-24F,U+1E00-1EFF,U+2000-206F,U+20A0-20C4,U+2100-2215}
-@font-face{font-family:'Archivo Fallback';font-weight:710 729;font-stretch:112% 125%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:95.4%;ascent-override:92.3%;descent-override:22.0%;line-gap-override:0;unicode-range:U+20,U+A0}
-@font-face{font-family:'Archivo Fallback';font-weight:730 769;font-stretch:62% 102%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:103.3%;ascent-override:85.2%;descent-override:20.3%;line-gap-override:0;unicode-range:U+0-1F,U+21-9F,U+A1-24F,U+1E00-1EFF,U+2000-206F,U+20A0-20C4,U+2100-2215}
-@font-face{font-family:'Archivo Fallback';font-weight:730 769;font-stretch:62% 102%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:69.5%;ascent-override:126.7%;descent-override:30.2%;line-gap-override:0;unicode-range:U+20,U+A0}
-@font-face{font-family:'Archivo Fallback';font-weight:730 769;font-stretch:103% 105%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:107.2%;ascent-override:82.1%;descent-override:19.6%;line-gap-override:0;unicode-range:U+0-1F,U+21-9F,U+A1-24F,U+1E00-1EFF,U+2000-206F,U+20A0-20C4,U+2100-2215}
-@font-face{font-family:'Archivo Fallback';font-weight:730 769;font-stretch:103% 105%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:76.3%;ascent-override:115.3%;descent-override:27.5%;line-gap-override:0;unicode-range:U+20,U+A0}
-@font-face{font-family:'Archivo Fallback';font-weight:730 769;font-stretch:106% 111%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:111.2%;ascent-override:79.2%;descent-override:18.9%;line-gap-override:0;unicode-range:U+0-1F,U+21-9F,U+A1-24F,U+1E00-1EFF,U+2000-206F,U+20A0-20C4,U+2100-2215}
-@font-face{font-family:'Archivo Fallback';font-weight:730 769;font-stretch:106% 111%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:82.8%;ascent-override:106.3%;descent-override:25.4%;line-gap-override:0;unicode-range:U+20,U+A0}
-@font-face{font-family:'Archivo Fallback';font-weight:730 769;font-stretch:112% 125%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:118.1%;ascent-override:74.5%;descent-override:17.8%;line-gap-override:0;unicode-range:U+0-1F,U+21-9F,U+A1-24F,U+1E00-1EFF,U+2000-206F,U+20A0-20C4,U+2100-2215}
-@font-face{font-family:'Archivo Fallback';font-weight:730 769;font-stretch:112% 125%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:94.7%;ascent-override:93.0%;descent-override:22.2%;line-gap-override:0;unicode-range:U+20,U+A0}
-@font-face{font-family:'Archivo Fallback';font-weight:770 900;font-stretch:62% 102%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:106.5%;ascent-override:82.6%;descent-override:19.7%;line-gap-override:0;unicode-range:U+0-1F,U+21-9F,U+A1-24F,U+1E00-1EFF,U+2000-206F,U+20A0-20C4,U+2100-2215}
-@font-face{font-family:'Archivo Fallback';font-weight:770 900;font-stretch:62% 102%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:68.0%;ascent-override:129.3%;descent-override:30.9%;line-gap-override:0;unicode-range:U+20,U+A0}
-@font-face{font-family:'Archivo Fallback';font-weight:770 900;font-stretch:103% 105%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:110.4%;ascent-override:79.7%;descent-override:19.0%;line-gap-override:0;unicode-range:U+0-1F,U+21-9F,U+A1-24F,U+1E00-1EFF,U+2000-206F,U+20A0-20C4,U+2100-2215}
-@font-face{font-family:'Archivo Fallback';font-weight:770 900;font-stretch:103% 105%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:74.5%;ascent-override:118.1%;descent-override:28.2%;line-gap-override:0;unicode-range:U+20,U+A0}
-@font-face{font-family:'Archivo Fallback';font-weight:770 900;font-stretch:106% 111%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:114.2%;ascent-override:77.1%;descent-override:18.4%;line-gap-override:0;unicode-range:U+0-1F,U+21-9F,U+A1-24F,U+1E00-1EFF,U+2000-206F,U+20A0-20C4,U+2100-2215}
-@font-face{font-family:'Archivo Fallback';font-weight:770 900;font-stretch:106% 111%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:81.4%;ascent-override:108.2%;descent-override:25.8%;line-gap-override:0;unicode-range:U+20,U+A0}
-@font-face{font-family:'Archivo Fallback';font-weight:770 900;font-stretch:112% 125%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:121.0%;ascent-override:72.7%;descent-override:17.4%;line-gap-override:0;unicode-range:U+0-1F,U+21-9F,U+A1-24F,U+1E00-1EFF,U+2000-206F,U+20A0-20C4,U+2100-2215}
-@font-face{font-family:'Archivo Fallback';font-weight:770 900;font-stretch:112% 125%;src:local('Arial Bold'),local('Liberation Sans Bold'),local('Arimo Bold'),local('Roboto Bold');size-adjust:92.9%;ascent-override:94.8%;descent-override:22.6%;line-gap-override:0;unicode-range:U+20,U+A0}
+/* n40 d6: the old Archivo name now resolves to IBM Plex Sans, so inline styles that still name Archivo match the site type */
+@font-face{font-family:'Archivo';font-style:normal;font-weight:400 700;font-display:swap;src:url(/k/fonts/plexsans-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 :root{
   --concrete:#E3E2DD; --paper:#F6F6F3; --ink:#17212B; --ink-2:#2A3541; --muted:#59626B;
   --hivis:#FF5B14; --hivis-ink:#B03705; --ok:#0A704E; --ok-bg:#DDEFE7; --line:rgba(23,33,43,.16);
@@ -97,7 +23,7 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{background:var(--concrete);color:var(--ink);font-family:Archivo,'Archivo Fallback',system-ui,sans-serif;font-stretch:100%;font-size:18px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body{background:var(--concrete);color:var(--ink);font-family:'IBM Plex Sans','Plex Fallback',system-ui,sans-serif;font-stretch:100%;font-size:18px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 img,svg{display:block;max-width:100%}
 a{color:inherit}
 :focus-visible{outline:3px solid var(--hivis);outline-offset:3px;border-radius:4px}
@@ -203,17 +129,17 @@ p{max-width:62ch}
 
 /* score */
 .score{padding:clamp(72px,10vw,140px) 0}
-.score-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,90px);align-items:center}
-@media (max-width:900px){.score-grid{grid-template-columns:1fr}}
+
+
 .score .lead{margin-top:24px}
 .score .quote{margin-top:28px;font-stretch:118%;font-weight:700;font-size:1.25rem;line-height:1.3;max-width:28ch;padding-left:18px;border-left:4px solid var(--hivis)}
 .card{background:var(--paper);border:2px solid var(--ink);border-radius:24px;padding:clamp(22px,3vw,34px);position:relative}
-.card-h{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
-.card-h h3{font-size:1.15rem}
-.card-h p{font-size:.9rem;color:var(--muted);margin-top:4px}
-.dial{flex:none;width:96px;height:96px;position:relative}
-.dial svg{width:96px;height:96px;transform:rotate(-90deg)}
-.dial b{position:absolute;inset:0;display:grid;place-items:center;font-stretch:125%;font-weight:850;font-size:1.7rem;font-variant-numeric:tabular-nums}
+
+
+
+
+
+
 .rows{margin-top:24px;display:grid;gap:14px}
 .row{display:grid;grid-template-columns:1fr auto;gap:6px 14px;font-size:.95rem}
 .bar{grid-column:1/-1;height:10px;border-radius:6px;background:#DCDAD3;overflow:hidden}
@@ -241,23 +167,23 @@ p{max-width:62ch}
 .rung p{color:#B9C1C8;margin-top:12px;font-size:1rem}
 .step-up{height:var(--h);}
 @media (max-width:820px){.ladder{grid-template-columns:1fr;gap:28px}.ladder .rung{padding-top:24px!important}}
-.agents .manifesto{margin-top:clamp(56px,7vw,90px);font-size:clamp(1.8rem,3.6vw,3.1rem);font-stretch:125%;font-weight:800;letter-spacing:-.03em;line-height:1.05;max-width:22ch}
+
 .agents .btn-line{border-color:var(--paper);color:var(--paper);margin-top:36px}
 .agents .btn-line:hover{background:var(--paper);color:var(--ink)}
 
 /* developers */
 .devs{padding:clamp(72px,9vw,120px) 0;border-bottom:1px solid var(--line)}
-.devs-in{display:grid;grid-template-columns:1.3fr .7fr;gap:40px;align-items:end}
+
 .devs .lead{margin-top:22px}
 .devs .act{justify-self:end}
-@media (max-width:820px){.devs-in{grid-template-columns:1fr}.devs .act{justify-self:start}}
+@media (max-width:820px){.devs .act{justify-self:start}}
 
 /* founder */
 .founder{padding:clamp(72px,10vw,140px) 0}
 .f-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(32px,6vw,90px)}
 @media (max-width:860px){.f-grid{grid-template-columns:1fr}}
 .figure{font-stretch:125%;font-weight:850;font-size:clamp(4rem,8.6vw,8rem);letter-spacing:-.05em;line-height:.85}
-.figure-cap{margin-top:16px;color:var(--muted);max-width:26ch}
+
 .founder ol{list-style:none;counter-reset:l;display:grid;gap:18px;margin:26px 0}
 .founder ol li{counter-increment:l;display:grid;grid-template-columns:40px 1fr;gap:12px;font-size:1.1rem}
 .founder ol li::before{content:counter(l);width:32px;height:32px;border-radius:50%;border:2px solid var(--ink);display:grid;place-items:center;font-weight:800;font-size:.9rem}
@@ -373,10 +299,10 @@ footer{padding:40px 0 48px;font-size:.9rem;color:var(--muted)}
 
 /* check bar */
 .checkbar{background:var(--band);color:var(--band-ink);padding:clamp(28px,4vw,44px) 0}
-.checkbar-in{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px;align-items:center}
-@media (max-width:900px){.checkbar-in{grid-template-columns:1fr}}
-.checkbar h2{font-size:clamp(1.6rem,2.8vw,2.3rem)}
-.checkbar p{color:#AEB6BE;margin-top:8px;font-size:1rem}
+
+
+
+
 .qform{display:flex;gap:10px;flex-wrap:wrap}
 .qform input{flex:1 1 260px;font:inherit;font-size:1.05rem;padding:15px 18px;border-radius:999px;border:2px solid #3A4652;background:#222E3A;color:var(--paper)}
 .qform input::placeholder{color:#8A949E}
@@ -445,10 +371,10 @@ footer{padding:56px 0 40px;font-size:.92rem;color:var(--muted);border-top:1px so
 
 /* report */
 .report{background:var(--card);border:2px solid var(--ink);border-radius:22px;padding:clamp(20px,4vw,48px);max-width:900px}
-.rmeta{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:22px 0;font-size:.92rem}
-.rmeta div{border-top:2px solid var(--ink);padding-top:8px}
-.rmeta span{display:block;color:var(--muted);font-size:.82rem}
-@media (max-width:700px){.rmeta{grid-template-columns:1fr 1fr}}
+
+
+
+
 .photos{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0}
 .photos figure{border-radius:12px;overflow:hidden;background:linear-gradient(180deg,#8FA3B3 0%,#C9C7BE 58%,#A99C86 58.2%,#8E8169 100%);aspect-ratio:4/3;position:relative}
 .photos figcaption{position:absolute;left:8px;bottom:6px;right:8px;font-size:.72rem;color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.6);font-variant-numeric:tabular-nums}
@@ -620,16 +546,16 @@ pre.mail{white-space:pre-wrap;font-family:inherit;font-size:1rem;background:var(
 @media (prefers-reduced-motion:reduce){.site2 .st,.site2 .st3 .rfill,.site2 .st3 .rafters path,.focus,.tag,.toast{transition:none}}
 
 .risk{background:var(--paper)}
-.risk-head{max-width:760px}
-.risk-box{margin-top:36px;background:var(--band);color:var(--band-ink);border-radius:28px;padding:clamp(18px,3vw,32px)}
-.risk-ctl{display:grid;grid-template-columns:1fr auto;gap:18px 28px;align-items:center}
-.risk-ctl label{font-weight:700;display:flex;justify-content:space-between;gap:12px;grid-column:1}
-.risk-ctl label b{font-variant-numeric:tabular-nums;color:#FFB48F}
-.risk-ctl input[type=range]{grid-column:1;width:100%;accent-color:var(--hivis);height:28px}
+
+
+
+
+
+
 .risk-tog{grid-column:2;grid-row:1/3;display:flex;background:#222E3A;border-radius:999px;padding:4px;gap:4px}
 .risk-tog button{font:inherit;font-size:.9rem;font-weight:700;border:0;border-radius:999px;padding:.7rem 1rem;background:transparent;color:#C9D0D6;cursor:pointer;min-height:44px}
 .risk-tog button.on{background:var(--paper);color:var(--ink)}
-.risk-chart{margin-top:26px;display:grid;grid-template-columns:repeat(6,1fr);gap:10px;align-items:end;height:220px}
+
 .rk-col{display:flex;flex-direction:column;justify-content:flex-end;height:100%;gap:6px;text-align:center}
 .rk-bars{position:relative;flex:1;display:flex;align-items:flex-end;justify-content:center;gap:4px}
 .rk-paid,.rk-built{width:42%;border-radius:8px 8px 3px 3px;transition:height .5s cubic-bezier(.3,.9,.3,1)}
@@ -638,15 +564,15 @@ pre.mail{white-space:pre-wrap;font-family:inherit;font-size:1rem;background:var(
 .rk-col small{font-size:.75rem;color:#AEB6BE;line-height:1.2}
 .rk-col small b{display:block;color:var(--paper);font-size:.8rem}
 .rk-gap{position:absolute;left:4px;right:4px;font-size:.68rem;font-weight:800;color:#FFB48F;transition:bottom .5s}
-.risk-sum{display:flex;gap:24px;align-items:center;margin-top:22px;padding-top:18px;border-top:1px solid #2E3A46;flex-wrap:wrap}
-.risk-sum span{display:block;font-size:.85rem;color:#AEB6BE}
-.risk-sum strong{font-size:clamp(1.8rem,4vw,2.6rem);font-stretch:118%;font-variant-numeric:tabular-nums;color:#FFB48F;transition:color .3s}
-.risk-sum strong.good{color:#7FE0B6}
-.risk-sum p{flex:1;min-width:240px;color:#C9D0D6}
-.risk-note{font-size:.8rem;color:#8A949E;margin-top:14px;max-width:none}
+
+
+
+
+
+
 .rk-legend{display:flex;gap:16px;font-size:.8rem;color:#AEB6BE;margin-top:14px}
 .rk-legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px}
-@media (max-width:720px){.risk-ctl{grid-template-columns:1fr}.risk-tog{grid-column:1;grid-row:auto}.risk-tog button{flex:1;font-size:.82rem;padding:.6rem .5rem}.risk-chart{height:180px;gap:5px}.rk-col small{font-size:.66rem}}
+@media (max-width:720px){.risk-tog{grid-column:1;grid-row:auto}.risk-tog button{flex:1;font-size:.82rem;padding:.6rem .5rem}.rk-col small{font-size:.66rem}}
 
 .balimap{margin:0}
 .balimap svg{width:100%;height:auto;border-radius:18px}
@@ -681,8 +607,8 @@ pre.mail{white-space:pre-wrap;font-family:inherit;font-size:1rem;background:var(
 .case{background:var(--paper);border-radius:20px;padding:18px;border:1px solid var(--line)}
 .case header{display:flex;justify-content:space-between;align-items:center;gap:8px}
 .cid{font-size:.78rem;font-weight:800;letter-spacing:.04em;color:var(--muted);font-variant-numeric:tabular-nums}
-.cstat{font-size:.74rem;font-weight:800;padding:4px 9px;border-radius:999px;background:var(--concrete,#E3E2DD);color:var(--ink)}
-.cstat.inv{background:#FFE3D4;color:#8A2D04}
+
+
 .case h3{font-size:1.08rem;margin-top:12px}
 .cmeta{font-size:.88rem;color:var(--muted);margin-top:4px}
 .cbar{height:6px;border-radius:6px;background:var(--concrete,#E3E2DD);margin-top:14px;overflow:hidden}
@@ -734,22 +660,22 @@ pre.mail{white-space:pre-wrap;font-family:inherit;font-size:1rem;background:var(
 .ptable th,.ptable td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);font-size:.95rem}
 .ptable th{font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
 
-.yc-video{border-radius:24px;overflow:hidden;background:#000;box-shadow:0 30px 60px -30px rgba(0,0,0,.5)}
-.yc-video video{display:block;width:100%;height:auto}
-.yc-live{margin-top:22px}
-.yc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin-top:26px}
-.yc-card{display:block;text-decoration:none;background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:18px;position:relative;transition:transform .15s,box-shadow .15s}
-.yc-card:hover{transform:translateY(-2px);box-shadow:0 14px 30px -18px rgba(0,0,0,.4)}
-.yc-n{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--band);color:var(--band-ink);font-weight:800;font-size:.85rem}
-.yc-card b{display:block;font-size:1.1rem;margin-top:10px}
-.yc-card small{display:block;font-size:.9rem;color:var(--ink-2);margin-top:6px;line-height:1.4}
-.yc-card em{position:absolute;top:18px;right:18px;font-style:normal;font-size:.72rem;font-weight:800;padding:3px 9px;border-radius:999px;background:var(--t-ok-bg,#DDEFE7);color:var(--t-ok,#0B5A40)}
-.demo-flag{display:inline-block;font-size:.8rem;font-weight:800;background:var(--t-amb-bg,#FFF0C7);color:var(--t-amb,#7A5300);padding:5px 11px;border-radius:999px;margin-bottom:10px}
-.ptabs{display:flex;gap:6px;flex-wrap:wrap;border-bottom:2px solid var(--line);padding-bottom:10px}
-.ptabs button{font:inherit;font-weight:700;border:0;background:transparent;padding:.65rem 1rem;border-radius:999px;cursor:pointer;min-height:44px;color:var(--ink-2)}
-.ptabs button[aria-selected=true]{background:var(--band);color:var(--band-ink)}
-.ppanel{margin-top:22px}
-.pgrid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:12px}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .pcard{background:var(--paper);border-radius:18px;padding:16px;border:1px solid var(--line)}
 .pcard span{display:block;font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
 .pcard b{display:block;font-size:1.5rem;font-stretch:115%;margin-top:6px;font-variant-numeric:tabular-nums}
@@ -757,35 +683,35 @@ pre.mail{white-space:pre-wrap;font-family:inherit;font-size:1rem;background:var(
 .pcard.big span{color:#AEB6BE}
 .pcard small{display:block;font-size:.86rem;margin-top:6px;color:inherit;opacity:.85}
 .pcard .pill{display:inline-block;margin-top:10px}
-.pbars{display:grid;gap:10px;margin-top:22px;max-width:760px}
-.pbars div{display:grid;grid-template-columns:130px 1fr 52px;gap:12px;align-items:center;font-weight:700;font-size:.9rem}
-.pbars i{height:14px;border-radius:8px;background:var(--concrete,#E3E2DD);overflow:hidden;display:block}
-.pbars b{display:block;height:100%;border-radius:8px}
-.pbars .b1{background:var(--hivis)}.pbars .b2{background:#2FB27E}
-.pbars em{font-style:normal;font-variant-numeric:tabular-nums}
-.plist{list-style:none;padding:0;display:grid;gap:10px}
-.plist li{display:grid;grid-template-columns:36px 1fr auto auto;gap:14px;align-items:center;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:12px 16px}
-.plist .pn{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;font-weight:800;background:var(--concrete,#E3E2DD)}
-.plist small{display:block;color:var(--muted);font-size:.84rem}
-.plist .pr{text-align:right;font-variant-numeric:tabular-nums}
+
+
+
+
+
+
+
+
+
+
+
 .plist li.pp-lock{opacity:.7}
 .pill.pp-paid{background:var(--concrete,#E3E2DD);color:var(--ink)}.pill.pp-safe{background:#2FB27E;color:#06261A}.pill.pp-lock{background:#3A4652;color:#E3E6EA}
-.pvis{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
-.pvis article{background:var(--paper);border-radius:18px;overflow:hidden;border:1px solid var(--line)}
-.pimg{height:170px;background-size:cover;background-position:center;position:relative}
-.pimg span{position:absolute;left:8px;bottom:8px;font-size:.7rem;color:#fff;background:rgba(0,0,0,.5);padding:2px 7px;border-radius:6px}
-.pvb{padding:14px}.pvb small{color:var(--muted)}.pvb b{display:block;margin-top:2px}.pvb p{font-size:.86rem;color:var(--ink-2);margin:6px 0 8px}
+
+
+
+
+
 .prep{list-style:none;padding:0;display:grid;gap:10px}
 .prep li{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:14px 16px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 .prep a{font-weight:700}
 .prep small{color:var(--muted)}
-.pchat{display:grid;gap:12px;max-width:720px}
+
 .msg{padding:12px 14px;border-radius:16px;max-width:85%}
 .msg small{display:block;font-size:.75rem;color:var(--muted);margin-bottom:4px}
 .msg.agent{background:var(--paper);border:1px solid var(--line)}
 .msg.you{background:#17212B;color:var(--paper);justify-self:end}
 .msg.you small{color:#AEB6BE}
-@media (max-width:820px){.pgrid{grid-template-columns:1fr 1fr}.pcard.big{grid-column:1/-1}.plist li{grid-template-columns:32px 1fr;}.plist .pr,.plist .pill{grid-column:2;justify-self:start}.plist .pr{text-align:left}}
+@media (max-width:820px){.pcard.big{grid-column:1/-1}}
 
 .az{background:var(--paper);border-radius:28px;padding:clamp(18px,3vw,36px);border:1px solid var(--line);box-shadow:0 30px 60px -40px rgba(0,0,0,.35)}
 .az-step{display:none}.az-step.on{display:block}
@@ -825,7 +751,7 @@ pre.mail{white-space:pre-wrap;font-family:inherit;font-size:1rem;background:var(
 .prod-bar{display:flex;align-items:center;gap:6px;padding:10px 14px;background:#0F171F}.prod-bar i{width:10px;height:10px;border-radius:50%;background:#3A4652}.prod-bar i:first-child{background:#FF5B14}
 .prod-bar span{margin-left:10px;background:#1F2A35;color:#9FB0BF;border-radius:8px;padding:3px 12px;font-size:.78rem}
 .prod-shot figcaption{background:#0F171F;color:#7E8D9A;font-size:.78rem;padding:8px 14px}
-.prod-list{list-style:none;padding:0;margin:0;display:grid;gap:18px}.prod-list b{display:block;font-size:1.08rem}.prod-list span{color:var(--muted)}
+
 .prod-cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:34px}
 .prod-stack{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin-top:40px}
 .prod-stack div{background:var(--card);padding:20px}.prod-stack b{display:block;font-size:2rem;letter-spacing:-.02em}.prod-stack span{color:var(--muted);font-size:.92rem}
@@ -851,16 +777,16 @@ pre.mail{white-space:pre-wrap;font-family:inherit;font-size:1rem;background:var(
 .cp-steps{list-style:none;padding:0;margin:26px 0 0;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.cp-steps li{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px}.cp-steps b{display:block;font-size:1.1rem;margin-bottom:6px}.cp-steps span{color:var(--muted)}
 .cp-table{width:100%;border-collapse:collapse;background:var(--card);border-radius:18px;overflow:hidden;border:1px solid var(--line)}.cp-table td{padding:12px 16px;border-bottom:1px solid var(--line)}.cp-table td:last-child{text-align:right;font-weight:700}.cp-table .tot td{background:var(--band);color:#fff;font-size:1.1rem}
 .cp-ul{display:grid;gap:10px}
-.cobanner{background:var(--band);color:#fff}.cobanner .wrap{display:grid;grid-template-columns:1.1fr 1.4fr;gap:28px;align-items:center;padding-top:48px;padding-bottom:48px}
-.cobanner h2{color:#fff;font-size:clamp(1.7rem,3.2vw,2.6rem);line-height:1.05;margin:0 0 10px}.cobanner p{color:#C9D0D6}
-.cobanner ol{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.cobanner li{background:#22303C;border-radius:16px;padding:14px}.cobanner li b{display:block;color:#fff}.cobanner li span{color:#AEB9C2;font-size:.88rem}
+
+
+
 .indep{display:inline-flex;gap:6px;align-items:center;font-weight:700;font-size:.85rem;margin-left:10px}
 @media (max-width:900px){.cp-grid,.cobanner .wrap{grid-template-columns:1fr}.cp-out{position:static}.cp-steps,.cobanner ol{grid-template-columns:1fr 1fr}.cp-ab{grid-template-columns:1fr}}
 
 .mk-kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin-top:22px}
 .mk-kpis div{background:var(--card);padding:18px}.mk-kpis b{display:block;font-size:2rem;letter-spacing:-.02em}.mk-kpis span{color:var(--muted);font-size:.9rem}
 .mk-t{width:100%;border-collapse:collapse;background:var(--card);border-radius:16px;overflow:hidden}.mk-t th,.mk-t td{padding:10px 14px;border-bottom:1px solid var(--line);text-align:left}.mk-t th{font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
-.cmk{display:inline-block;font-size:.72rem;font-weight:800;border-radius:999px;padding:2px 8px;background:#E3E8FF;margin-left:6px}.cdoc{display:inline-block;font-size:.72rem;font-weight:800;border-radius:999px;padding:2px 8px;background:var(--t-ok-bg,#DDEFE7);color:var(--t-ok,#0B5A40);margin-left:6px}
+
 .scale-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}.scale-grid>div{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px}
 .scale-bars{display:grid;gap:8px;margin-top:12px}.scale-bars div{display:grid;grid-template-columns:110px 1fr 52px;gap:10px;align-items:center;font-size:.9rem}.scale-bars i{display:block;height:12px;border-radius:6px;background:var(--hivis)}
 .verts{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.verts span{border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-weight:600;font-size:.9rem;background:var(--t-bg,#F6F6F3)}.verts span.on{background:var(--band);color:#fff;border-color:var(--band)}
@@ -915,7 +841,7 @@ pre.mail{white-space:pre-wrap;font-family:inherit;font-size:1rem;background:var(
 .t20-c h3{margin:0;font-size:1.05rem}.t20-c p{margin:0;color:var(--muted);font-size:.92rem}.t20-c a{font-weight:700;font-size:.88rem;margin-top:auto}
 .t20-pill{align-self:flex-start;font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em;border-radius:999px;padding:3px 9px}
 .t20-pill.live{background:var(--t-ok-bg,#DDEFE7);color:var(--t-ok,#0B5A40)}.t20-pill.beta{background:var(--t-warn-bg,#FFE7D6);color:var(--t-warn,#9A3A00)}.t20-pill.build{background:#E3E8FF;color:#2A3A8F}.t20-pill.next{background:#EEE;color:#555}
-.t20-moat{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:22px}.t20-moat div{background:var(--band);color:#fff;border-radius:18px;padding:18px}.t20-moat b{display:block;margin-bottom:6px}.t20-moat span{color:#C9D0D6;font-size:.9rem}
+
 .pg-drop{border:2px dashed var(--line);border-radius:16px;padding:12px;margin-bottom:12px;background:var(--card)}.pg-drop label{display:block;cursor:pointer}.pg-drop b{display:block}.pg-drop span{color:var(--muted);font-size:.85rem}.pg-drop input{margin-top:8px;max-width:100%}
 .pg-thumbs{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}.pg-thumbs img{width:76px;height:76px;object-fit:cover;border-radius:10px}
 .pg-l{display:block;margin-bottom:12px}.pg-l span{display:block;font-weight:800;font-size:.85rem;margin-bottom:6px}.pg-l textarea{width:100%;font:inherit;font-size:.92rem;border:2px solid var(--line);border-radius:14px;padding:12px;background:var(--card)}
@@ -927,7 +853,7 @@ pre.mail{white-space:pre-wrap;font-family:inherit;font-size:1rem;background:var(
 .vf-box .row{display:flex;gap:10px;flex-wrap:wrap}.vf-box #vfhash{flex:1;min-width:220px;font:inherit;font-family:ui-monospace,monospace;font-size:.85rem;border:2px solid var(--line);border-radius:14px;padding:10px}
 .vf-out{margin-top:14px}.vf-ok,.vf-no{border-radius:16px;padding:14px 16px}.vf-ok{background:var(--t-ok-bg,#DDEFE7)}.vf-no{background:var(--t-bad-bg,#FDECEA)}.vf-ok p,.vf-no p{margin:6px 0 10px}.vf-out .cp-load p{color:var(--ink)}
 .rp-anch{display:block;font-size:.72rem;margin-top:4px;color:var(--t-ok,#0B5A40);font-weight:700}
-@media (max-width:900px){.t20-grid{grid-template-columns:1fr 1fr}.t20-moat{grid-template-columns:1fr 1fr}}
+@media (max-width:900px){.t20-grid{grid-template-columns:1fr 1fr}}
 @media (max-width:560px){.t20-grid,.t20-moat{grid-template-columns:1fr}}
 
 .r21-try{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:20px}.r21-try a{display:flex;flex-direction:column;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;text-decoration:none;color:inherit;transition:transform .15s,border-color .15s}
@@ -945,12 +871,12 @@ pre.mail{white-space:pre-wrap;font-family:inherit;font-size:1rem;background:var(
 .az-reqf{display:grid;gap:10px;width:100%}.az-reqf b{font-size:1.15rem;color:#fff}.az-reqf label{display:grid;gap:4px;font-weight:700;font-size:.9rem;color:#E6EAED}.az-reqf small{font-weight:400;color:#AEB9C2}
 .az-reqf input,.az-reqf textarea{font:inherit;border:2px solid #2B3743;background:var(--card,#fff);color:var(--t-ink,#17212B);border-radius:12px;padding:10px}.az-cta.open{grid-template-columns:1fr}
 .az-done b{display:block;color:#fff;font-size:1.2rem}.az-done ol{color:#D7DDE2;margin:10px 0 14px 1.1em;padding:0;display:grid;gap:6px}.az-done .row{display:flex;gap:10px;flex-wrap:wrap}.az-done .az-k{color:#FF8A57}
-.f-ph{width:200px;height:200px;object-fit:cover;border-radius:28px;display:block}.f-ini{display:grid;place-items:center;background:var(--hivis);color:#111;font-size:6rem;font-weight:800}
+.f-ini{display:grid;place-items:center;background:var(--hivis);color:#111;font-size:6rem;font-weight:800}
 .r21-try a{min-height:170px}
 
 .ct-f{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:12px 0}.ct-f div{background:#22303C;border-radius:10px;padding:8px 10px}.ct-f span{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:#8D9BA7}.ct-f b{color:#fff;font-size:.92rem}
 .vf-no ul{margin:6px 0 8px 1.1em;padding:0}
-.pipe li.nx b{font-size:1.1rem}.csearch{display:block;margin:22px 0 10px}.csearch input{width:100%;max-width:560px;padding:12px 14px;border:1px solid var(--t-line,#D5D9D3);border-radius:12px;font:inherit;background:var(--card)}.cmore{grid-column:1/-1;justify-self:center;margin-top:8px}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.pipe li.nx b{font-size:1.1rem}.cmore{grid-column:1/-1;justify-self:center;margin-top:8px}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 
 /* r25: portal, field tool, ops, follow, price */
 .x-head{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}.x-head h2{margin:0}
