@@ -206,7 +206,7 @@ export function ctaHtml(lang, slug) {
     '<style>.kn31c .btn{display:flex;flex-direction:column;align-items:center;gap:0;line-height:1.2;padding-block:8px}.kn31c small{font-weight:500;font-size:.78rem;opacity:.92}@media (min-width:761px){.mcta.kn31c{display:block;left:auto;right:20px;bottom:20px;width:auto}.mcta.kn31c .btn{width:auto;padding-inline:20px}[dir=rtl] .mcta.kn31c{right:auto;left:20px}}@media print{.kn31c{display:none!important}}</style>' +
     '<script src="/k/n31.js?v=' + N31V + '" defer></script>';
 }
-export const N31V = 'a1';
+export const N31V = 'a2';
 
 // ------------------------------------------------------------------------------------------------ offers behind flags (all OFF)
 // Each one changes money or a promise, so it is shown only when the owner sets env KB_N31_OFFERS to a comma list of keys

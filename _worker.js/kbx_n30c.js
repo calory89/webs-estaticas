@@ -268,7 +268,7 @@ async function engStatus(u, env, ctx, shell, lang) {
 
 // item 15 map client: moved to the static file /k/n35b/map.js (n35b, batch 35, map v3); /k/n30c-map.js now redirects there for pages cached before
 // strings the map page passes to the client (kbx_u27.js mapPage)
-export const mapStrings = lang => { const o = {}; ['mh_cl', 'mh_late', 'mh_leg', 'mpk', 'mpa', 'mpo', 'mpe', 'mpr', 'mp0'].forEach(k => { o[k] = t(lang, k); }); return o; };
+export const mapStrings = lang => { const o = {}; ['mh_cl', 'mh_late', 'mh_leg', 'mpk', 'mpa', 'mpo', 'mpe', 'mpr', 'mp0', 'mps'].forEach(k => { o[k] = t(lang, k); }); return o; };
 export { t as t30 };
 
 // ------------------------------------------------------------------------------------------------ routes

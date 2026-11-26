@@ -65,3 +65,27 @@
     io.observe(sv);
   }
 })();
+/* n40 k1 (26 Nov 2026, R01-42): "Copy as a message" under "Questions to ask the developer": copies the questions shown on the page,
+   in the page language, as a short message to the developer. Nothing is sent or stored. */
+(function () { try {
+  var ol = document.querySelector('#ask ol'); if (!ol || document.getElementById('k40cq')) return;
+  var T = { en: ['Copy as a message', 'Copied', 'Hello, I am interested in {n}. Before I decide, could you please answer these questions?', 'Thank you.'],
+    es: ['Copiar como mensaje', 'Copiado', 'Hola, me interesa {n}. Antes de decidir, ¿podrían responder a estas preguntas?', 'Gracias.'],
+    fr: ['Copier comme message', 'Copié', 'Bonjour, {n} m’intéresse. Avant de décider, pourriez-vous répondre à ces questions ?', 'Merci.'],
+    de: ['Als Nachricht kopieren', 'Kopiert', 'Guten Tag, ich interessiere mich für {n}. Bevor ich entscheide, könnten Sie bitte diese Fragen beantworten?', 'Vielen Dank.'],
+    nl: ['Kopiëren als bericht', 'Gekopieerd', 'Hallo, ik ben geïnteresseerd in {n}. Kunt u, voordat ik beslis, deze vragen beantwoorden?', 'Dank u.'],
+    ru: ['Скопировать как сообщение', 'Скопировано', 'Здравствуйте, меня интересует {n}. Прежде чем принять решение, не могли бы вы ответить на эти вопросы?', 'Спасибо.'],
+    zh: ['复制为消息', '已复制', '您好，我对{n}感兴趣。在做决定之前，能否请您回答以下问题？', '谢谢。'],
+    ar: ['انسخ كرسالة', 'تم النسخ', 'مرحبًا، أنا مهتم بـ {n}. قبل أن أقرر، هل يمكنكم الإجابة عن هذه الأسئلة؟', 'شكرًا لكم.'] };
+  var L = T[(document.documentElement.lang || 'en').slice(0, 2)] || T.en, h1 = document.querySelector('h1'), n = h1 ? h1.textContent.trim() : '';
+  var b = document.createElement('button'); b.type = 'button'; b.id = 'k40cq'; b.className = 'btn btn-line kbtn'; b.textContent = L[0];
+  var st = document.createElement('span'); st.setAttribute('role', 'status'); st.className = 'ksmall'; st.style.marginInlineStart = '8px';
+  var p = document.createElement('p'); p.appendChild(b); p.appendChild(st); ol.parentNode.insertBefore(p, ol.nextSibling);
+  b.addEventListener('click', function () {
+    var q = [].map.call(ol.querySelectorAll('li'), function (li, i) { return (i + 1) + '. ' + li.textContent.trim(); });
+    var s = L[2].replace('{n}', n) + '\n\n' + q.join('\n') + '\n\n' + L[3];
+    var ok = function () { st.textContent = L[1]; setTimeout(function () { st.textContent = ''; }, 3000); };
+    var fb = function () { var ta = document.createElement('textarea'); ta.value = s; ta.setAttribute('readonly', ''); ta.style.position = 'fixed'; ta.style.opacity = '0'; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); ok(); } catch (e) {} document.body.removeChild(ta); };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(s).then(ok, fb); else fb();
+  });
+} catch (e) {} })();

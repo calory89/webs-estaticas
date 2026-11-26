@@ -250,7 +250,7 @@
         '<small>' + esc((c.area ? c.area + ', ' : '') + c.market + ', ' + c.country) + '</small>' +
         '<small>' + esc(STAGE[c.stage] || STAGE['']) + ' · ' + esc(c.band) + ' · ' + c.score + ' of ' + c.max + ' checks published</small>' +
         '<span class="lk"><a href="/p/?id=' + encodeURIComponent(c.id) + '">Project file</a><a href="/timeline/?id=' + encodeURIComponent(c.id) + '">Timeline</a><a href="/compare/?ids=' + encodeURIComponent(c.id) + '">Compare</a></span></li>';
-    }).join('') + (L0.length > LIM ? '<li class="more"><button type="button" class="dc-btn" id="mp-more">Show more (' + (L0.length - LIM) + ' left)</button></li>' : '') : '<li>No project matches these filters. <button type="button" class="dc-btn" id="mp-clear">Clear filters</button></li>';
+    }).join('') + (L0.length > LIM ? '<li class="more"><button type="button" class="dc-btn" id="mp-more">Show more (' + (L0.length - LIM) + ' left)</button></li>' : '') : '<li>No project matches these filters. <button type="button" class="dc-btn" id="mp-clear">Clear filters</button> <a href="/search/">Search all projects</a></li>';
     if ($('mp-more')) $('mp-more').onclick = function () { LIM += 120; list(); };
     if ($('mp-clear')) $('mp-clear').onclick = function () { $('f-reset').click(); };
     $('mp-n').textContent = L0.length + ' of ' + R.length + ' projects shown';
