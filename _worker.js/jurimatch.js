@@ -380,9 +380,9 @@ export async function render(req, res, u, env, ctx) {
 
   // T4 (27-nov): a few pages have the markup the app draws, prerendered at build time (scripts/prerender.mjs),
   // so the largest element is painted with the first HTML. Falls back to the summary if the file is missing.
-  let pre = '';
+  let preHtml = '';
   if (page.pre && /^[a-z0-9_]+\.html$/.test(page.pre)) {
-    try { const pr = await env.ASSETS.fetch(new Request(new URL('/_s/jurimatch.com/_pre/' + page.pre, u))); if (pr.ok) { const x = await pr.text(); if (x.includes('<h1')) pre = x; } } catch (e) { pre = ''; }
+    try { const pr = await env.ASSETS.fetch(new Request(new URL('/_s/jurimatch.com/_pre/' + page.pre, u))); if (pr.ok) { const x = await pr.text(); if (x.includes('<h1')) preHtml = x; } } catch (e) { preHtml = ''; }
   }
   const headExtra = lds.map(ld).join('')
     + (page.alt || []).map((a) => '<link rel="alternate" hreflang="' + esc(a.hreflang) + '" href="' + esc(a.href) + '" />').join('')
@@ -441,7 +441,7 @@ export async function render(req, res, u, env, ctx) {
     .on('meta[name="twitter:image"]', set('content', image))
     .on('meta[name="twitter:image:alt"]', set('content', page.t))
     .on('head', { element(e) { e.append(headExtra, { html: true }); } })
-    .on('div#root', { element(e) { e.setInnerContent(pre || body, { html: true }); } })
+    .on('div#root', { element(e) { e.setInnerContent(preHtml || body, { html: true }); } })
     .on('noscript', { element(e) { e.remove(); } })
     .transform(new Response(html, { status, headers: h }));
 }
