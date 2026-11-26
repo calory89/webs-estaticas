@@ -16,7 +16,7 @@ import { mkName, coName, ruPlaces } from './kbx_hdate.js';
 const ORIGIN = 'https://kolaboro.com';
 const L7 = ['es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'], LANGS = ['en'].concat(L7);
 const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar-u-nu-latn' };   // Arabic with Latin digits, as the rest of the site
-export const N32T_V = 'n32t5';   // n32t5: numbers in the page locale on the server (n38 d5)
+export const N32T_V = 'n32t6';   // n32t6: country pages (n40 k35); n32t5: numbers in the page locale on the server (n38 d5)
 export const PATHS = /^\/(?:es|de|fr|nl|ru|zh|ar)\/(?:tools\/[a-z-]{3,30}|new|vs|m|registers|countries\/[a-z0-9-]{2,60}\/(?:how-to-check|is-it-safe|buyer-protection-law)|rankings\/(?:most-delayed(?:\/[a-z0-9-]{2,60})?|changed-promises)|report\/state-of-off-plan-2026|guides\/(?:off-plan-payments|bali-land-titles|contract-clauses|questions-to-ask-a-developer)|courts|developers\/benchmark|transparency-index|index\/(?:delays|prices)|compare\/markets|bali|dubai|phuket|tulum|algarve|lombok)\/?$/;
 const SOP = 'report/state-of-off-plan-2026';
 export const EN_RX = /^\/(?:tools\/[a-z-]{3,30}|new|vs|m|registers)\/$/;
