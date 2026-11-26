@@ -87,3 +87,13 @@ if os.path.isfile(PL):
     print('jsonld distributions updated', n)
 print('rule reproduces', len(ok_rule), 'unchanged files; changed', len(log))
 for x in log: print(' ', x)
+# 3. n40 k49: the per-market slices of /data/bali-cases.json (/data/m/, open/market-slices.py) follow the file when a hand-made
+#    data commit changed it; nothing is written when they are current. Messages go to stderr, so the last stdout line stays the same.
+try:
+    MS = os.path.join(ROOT, 'data', 'm', 'index.json'); BC = os.path.join(ROOT, 'data', 'bali-cases.json')
+    if os.path.isfile(MS) and os.path.isfile(BC) and json.load(open(MS)).get('sha') != hashlib.sha256(open(BC, 'rb').read()).hexdigest()[:16]:
+        import subprocess
+        r = subprocess.run([sys.executable, os.path.join(ROOT, 'open', 'market-slices.py'), BC], capture_output=True, text=True, timeout=120)
+        sys.stderr.write((r.stdout or r.stderr).strip()[-300:] + '\n')
+except Exception as e:
+    sys.stderr.write('market slices not refreshed: %s\n' % e)

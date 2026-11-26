@@ -1,4 +1,4 @@
-/* Kolaboro market file: /m/?market=Bali or /m/?market=Indonesia (country). Everything computed from /data/bali-cases.json */
+/* Kolaboro market file: /m/?market=Bali or /m/?market=Indonesia (country). Everything computed from /data/bali-cases.json; a market page reads its own slice, /data/m/<market>.json (open/market-slices.py), and falls back to the full file */
 (function(){
   var CK = [['permit','Permit or licence number'],['escrow','Deposit protection'],['progress','Construction progress'],['plans','Site or floor plans'],['record','Developer track record'],['returns_ok','No guaranteed returns']];
   var LV = [['registry','Registry','var(--k-viz-reg,#155C75)'],['independent','Confirmed','var(--k-viz-ok,#2F8A5B)'],['developer','Not confirmed','var(--k-viz-dev,#AEB8BC)'],['contradicted','Contradicted','var(--k-viz-bad,#C2410C)'],['none','Not published','var(--k-viz-track,#E3E8E7)']];
@@ -55,13 +55,13 @@
     ];
     return '<div class="mk-kpi">' + tiles.map(function(t){ return '<div' + (t[2] ? ' class="' + t[2] + '"' : '') + '><b>' + t[0] + '</b><span>' + t[1] + '</span></div>'; }).join('') + '</div>';
   }
-  function bars(C, ALL, label){
+  function bars(C, AS, AN, label){   // n40 k49: AS(k) is the share of every project, AN their number (from the slice or the full file)
     return '<div class="mk-bars">' + CK.map(function(k){
-      var a = share(C, k[0]), b = share(ALL, k[0]);
+      var a = share(C, k[0]), b = AS(k[0]);
       return '<div class="mk-bar"><span class="nm">' + k[1] + '</span><div class="tr">' +
         '<div class="ln"><span class="t" role="img" aria-label="' + esc(label) + ': ' + pct(a) + '"><i style="width:' + (a * 100) + '%"></i></span><span>' + pct(a) + ' here</span></div>' +
         '<div class="ln all"><span class="t" role="img" aria-label="All markets: ' + pct(b) + '"><i style="width:' + (b * 100) + '%"></i></span><span>' + pct(b) + ' all</span></div></div></div>';
-    }).join('') + '</div><div class="mk-leg"><span style="--c:var(--k-viz-reg,#155C75)">' + esc(label) + '</span><span style="--c:var(--k-viz-ref,#8A949C)">All ' + fmt(ALL.length) + ' projects, every market</span></div>';
+    }).join('') + '</div><div class="mk-leg"><span style="--c:var(--k-viz-reg,#155C75)">' + esc(label) + '</span><span style="--c:var(--k-viz-ref,#8A949C)">All ' + fmt(AN) + ' projects, every market</span></div>';
   }
   function levels(C){
     var n = {}, tot = 0; C.forEach(function(c){ var v = c.verified || {}; CK.forEach(function(k){ var l = v[k[0]] || 'none'; n[l] = (n[l] || 0) + 1; tot++; }); });
@@ -172,20 +172,21 @@
       'Disclosure, verification and transparency index for every off-plan property market Kolaboro tracks: ' + fmt(C.length) + ' projects in ' + nm + ' markets.', BASE);
   }
 
-  function renderMarket(d, market, R){
+  function renderMarket(d, market, R, S){   // n40 k49: S is the market slice (aggregates of every market precomputed), absent with the full file
     var ALL = d.cases || [], C = ALL.filter(function(c){ return c.market === market; }), country = C[0].country;
-    var r = R.rows.filter(function(x){ return x.market === market; })[0], place = market === country ? market : market + ', ' + country, pl = C.length === 1 ? '' : 's';
-    var sib = {}; ALL.forEach(function(c){ if (c.country === country && c.market !== market) sib[c.market] = (sib[c.market] || 0) + 1; });
+    var RN = S ? S.tiN : R.rows.length, AN = S ? S.all[0] : ALL.length, AS = S ? function(k){ return AN ? S.all[1 + CKI[k]] / AN : 0; } : function(k){ return share(ALL, k); };
+    var r = S ? (S.ti ? { index: S.ti[0], rank: S.ti[1], disclosure: S.ti[2], confirmed: S.ti[3], noflags: S.ti[4] } : undefined) : R.rows.filter(function(x){ return x.market === market; })[0], place = market === country ? market : market + ', ' + country, pl = C.length === 1 ? '' : 's';
+    var sib = {}; if (S) sib = S.sib || {}; else ALL.forEach(function(c){ if (c.country === country && c.market !== market) sib[c.market] = (sib[c.market] || 0) + 1; });
     var sibs = Object.keys(sib).sort();
     var ssr = $('mk-root').hasAttribute('data-ssr');   // n40 d10: the server already wrote this hero (kolaboro.js mkHero, same markup); rewriting it would paint it twice
     if (!ssr) $('mk-crumb').innerHTML = ' / ' + esc(market);
     if (!ssr) $('mk-root').innerHTML = '<p class="eyebrow">Market file · ' + esc(country) + '</p><h1 id="mk-h1">Off-plan in ' + esc(market) + '</h1>' +
       '<p class="lead">' + fmt(C.length) + ' project' + (C.length === 1 ? '' : 's') + ' tracked in ' + esc(place) + '. What developers publish, what an official or independent source confirms, and what is contradicted. Data updated ' + esc(K.fmtDate ? K.fmtDate(d.updated) : d.updated) + '.</p>' +
-      '<div class="mk-tags"><span class="mk-tag">' + esc(country) + '</span><span class="mk-tag"><b>' + fmt(C.length) + '</b> project' + (C.length === 1 ? '' : 's') + ' tracked</span>' + stageTags(C) + '</div>' + tiBlock(r, K.MIN || 3, R.rows.length);
+      '<div class="mk-tags"><span class="mk-tag">' + esc(country) + '</span><span class="mk-tag"><b>' + fmt(C.length) + '</b> project' + (C.length === 1 ? '' : 's') + ' tracked</span>' + stageTags(C) + '</div>' + tiBlock(r, K.MIN || 3, RN);
     var L = listSec(C, market, false);
     $('mk-body').innerHTML =
       '<section class="mk-sec"><div class="wrap"><p class="eyebrow">Key numbers</p><h2>What ' + esc(market) + ' developers publish</h2>' + kpis(C) + '</div></section>' +
-      '<section class="mk-sec"><div class="wrap"><p class="eyebrow">The six checks</p><h2>' + esc(market) + ' against every market</h2><p class="sub">Share of projects that publish each thing a buyer needs, here and across all ' + fmt(ALL.length) + ' projects.</p>' + bars(C, ALL, market) + '</div></section>' +
+      '<section class="mk-sec"><div class="wrap"><p class="eyebrow">The six checks</p><h2>' + esc(market) + ' against every market</h2><p class="sub">Share of projects that publish each thing a buyer needs, here and across all ' + fmt(AN) + ' projects.</p>' + bars(C, AS, AN, market) + '</div></section>' +
       '<section class="mk-sec"><div class="wrap"><p class="eyebrow">Verification</p><h2>Who backs what developers say</h2><p class="sub">Every check on every ' + esc(market) + ' project, by the strongest source we found.</p>' + levels(C) + '</div></section>' +
       '<section class="mk-sec" id="indices"><div class="wrap"><p class="eyebrow">Indices</p><h2>' + esc(market) + ' on our six indices</h2><p class="sub">Delay, promises, hazards, company records, insolvency notices and asking prices for this market, each from the public file behind its page.</p><div id="mk-ind" class="mk-ind" aria-live="polite"><p class="sub">Loading the indices.</p></div></div></section>' +
       L.html +
@@ -194,7 +195,7 @@
       '<a class="btn btn-line" href="/transparency-index/">Transparency index</a><a class="btn btn-line" href="/m/">All markets</a></div></div></section>' + cta();
     setTimeout(function(){ wireSort(L.draw); indices(market); }, 0);   // n40 d10: the list in its own task (shorter main-thread blocks)
     var t = 'Off-plan in ' + place + ': ' + C.length + ' project' + pl + ' checked | Kolaboro';
-    var desc = C.length + ' off-plan project' + pl + ' in ' + market + ': ' + pct(share(C, 'permit')) + ' publish a permit number, ' + pct(share(C, 'escrow')) + ' publish deposit protection' + (r ? ', transparency index ' + r.index.toFixed(1) + ' (rank ' + r.rank + ' of ' + R.rows.length + ')' : '') + '.';
+    var desc = C.length + ' off-plan project' + pl + ' in ' + market + ': ' + pct(share(C, 'permit')) + ' publish a permit number, ' + pct(share(C, 'escrow')) + ' publish deposit protection' + (r ? ', transparency index ' + r.index.toFixed(1) + ' (rank ' + r.rank + ' of ' + RN + ')' : '') + '.';
     setMeta(t, desc, BASE + encodeURIComponent(market.toLowerCase().replace(/\s+/g, '-')) + '/');
   }
 
@@ -223,7 +224,7 @@
         var r = RI[m]; return '<a class="mk-card" href="' + mlink(m) + '"><b>' + esc(m) + '</b><span>' + M[m] + ' project' + (M[m] === 1 ? '' : 's') + '</span><strong>' + (r ? r.index.toFixed(1) : 'n/a') + '</strong><span>' + (r ? 'Index, rank ' + r.rank + ' of ' + R.rows.length : 'Not ranked yet') + '</span></a>';
       }).join('') + '</div></div></section>' +
       '<section class="mk-sec"><div class="wrap"><p class="eyebrow">Key numbers</p><h2>What developers in ' + esc(country) + ' publish</h2>' + kpis(C) + '</div></section>' +
-      '<section class="mk-sec"><div class="wrap"><p class="eyebrow">The six checks</p><h2>' + esc(country) + ' against every market</h2>' + bars(C, ALL, country) + '</div></section>' +
+      '<section class="mk-sec"><div class="wrap"><p class="eyebrow">The six checks</p><h2>' + esc(country) + ' against every market</h2>' + bars(C, function(k){ return share(ALL, k); }, ALL.length, country) + '</div></section>' +
       '<section class="mk-sec"><div class="wrap"><p class="eyebrow">Verification</p><h2>Who backs what developers say</h2>' + levels(C) + '</div></section>' +
       L.html +
       '<section class="mk-sec"><div class="wrap"><div class="mk-acts" style="margin-top:0"><a class="btn btn-line" href="/transparency-index/">Transparency index</a><a class="btn btn-line" href="/m/">All markets</a></div></div></section>' + cta();
@@ -233,7 +234,22 @@
   }
 
   var url = (K.dataUrl ? K.dataUrl() : '/data/bali-cases.json?t=' + Math.floor(Date.now() / 6e5));
-  fetch(url).then(function(r){ if (!r.ok) throw new Error('data ' + r.status); return r.json(); }).then(function(d){ return SLP ? SLP.then(function(){ return d; }) : d; }).then(function(d){ return new Promise(function(ok){ setTimeout(function(){ ok(d); }, 0); }); }).then(function(d){   // n40 d10: render after a yield, not in the parsing task
+  // n40 k49 (R11-25): a market page fetches only its slice, /data/m/<key>.json (about 1 to 105 KB instead of 6.8 MB), built from the same
+  // file by open/market-slices.py. Missing, for another market, or older than the data this page was built from (its JSON-LD dateModified): full file.
+  var CKI = {}; CK.forEach(function(k, i){ CKI[k[0]] = i; });
+  var LVN = { r: 'registry', i: 'independent', d: 'developer', c: 'contradicted', n: 'none' };
+  function pageDate(){ var t = ''; document.querySelectorAll('script[type="application/ld+json"]').forEach(function(x){ var m = /"dateModified":"(\d{4}-\d{2}-\d{2}[^"]*)"/.exec(x.textContent || ''); if (m && m[1] > t) t = m[1]; }); return t; }
+  function unslice(s){ return { updated: s.updated, cases: s.c.map(function(a){ var b = a[8] || '', v = {}; CK.forEach(function(k, i){ v[k[0]] = LVN[b.charAt(i)] || 'none'; });
+    return { id: a[0], market: s.market, country: s.country, stage: a[1], band: a[2], done: a[3], score: a[4], max: a[5], vscore: a[6],
+      checks: { permit: a[7] & 1 ? 2 : 0, escrow: !!(a[7] & 2), progress: a[7] & 4 ? 1 : null, plans: !!(a[7] & 8), record: !!(a[7] & 16), returns_ok: !!(a[7] & 32) },
+      verified: v, claims: { verified: a[9][0], unverified: a[9][1], contradicted: a[9][2] }, overdue: a[10], delay: a[11], flags: new Array(a[12] || 0) }; }) }; }
+  var P0 = params(), Q0 = norm(P0.m), SK = (!P0.c && Q0) ? Q0.replace(/ /g, '-') : '';
+  var later = function(d){ return new Promise(function(ok){ setTimeout(function(){ ok(d); }, 0); }); };
+  var slice = (SK && /^[a-z0-9-]{1,80}$/.test(SK) && window.fetch && window.Promise) ? fetch('/data/m/' + SK + '.json?t=' + Math.floor(Date.now() / 6e5)).then(function(r){ if (!r.ok) throw new Error('slice ' + r.status); return r.json(); }).then(function(s){
+    if (!s || s.v !== 1 || !s.c || !s.c.length || norm(s.market) !== Q0 || !s.updated || s.updated < pageDate()) throw new Error('slice stale');
+    return SLP ? SLP.then(function(){ return s; }) : s; }).then(later).then(function(s){ renderMarket(unslice(s), s.market, null, s); return true; }) : Promise.resolve(false);
+  slice.catch(function(){ return false; }).then(function(done){ if (done) return;
+  fetch(url).then(function(r){ if (!r.ok) throw new Error('data ' + r.status); return r.json(); }).then(function(d){ return SLP ? SLP.then(function(){ return d; }) : d; }).then(later).then(function(d){   // n40 d10: render after a yield, not in the parsing task
 
     var C = d.cases || [], p = params(), mk = {}, co = {};
     C.forEach(function(c){ if (c.market) mk[norm(c.market)] = c.market; if (c.country) co[norm(c.country)] = c.country; });
@@ -246,5 +262,6 @@
   }).catch(function(){
     var mr = $('mk-root'); if (mr && mr.hasAttribute('data-ssr')) { $('mk-body').innerHTML = '<section class="mk-sec"><div class="wrap"><p class="sub">The full project list could not load right now. Try again in a minute, or open the <a href="/database">database</a>.</p></div></section>'; return; }
     $('mk-root').innerHTML = '<p class="eyebrow">Market file</p><h1 id="mk-h1">Off-plan market file</h1><p class="lead">The data could not load right now. Try again in a minute, or open the <a href="/database">database</a>.</p>';
+  });
   });
 })();
