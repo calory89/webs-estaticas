@@ -22,7 +22,7 @@ const words = [...idx.keys()].sort((a, b) => b.length - a.length).join('|');
 const num = lang === 'ar' ? '[0-9٠-٩]{1,3}(?:[,٬][0-9٠-٩]{3})+|[0-9٠-٩]+' : '[0-9]{1,3}(?:[\\u00a0\\u202f ][0-9]{3})+|[0-9]+';
 const gap = '(?:\\s|&nbsp;|&#160;|</?(?:b|strong|span|bdi|em|small)\\b[^<>]*>)*';
 const pre = lang === 'ru' ? '(?:(^|[\\s>(«"])([а-яёА-ЯЁ-]+)[\\s\\u00a0]+)?' : '()()';
-const tail = lang === 'ar' ? '(?![\\u0600-\\u06FF])' : '(?![а-яёА-ЯЁ])';
+const tail = lang === 'ar' ? '(?![\\u0600-\\u06FF])' : lang === 'ru' ? '(?![а-яёА-ЯЁ])' : '(?![A-Za-zÀ-ÿ-])';   // n40 k27: Latin-script languages stop at a letter or hyphen
 return (RX[lang] = { re: new RegExp(pre + '(?<![0-9٠-٩.,:/\\-#$])(' + num + ')(?![0-9٠-٩]|[.,][0-9])(' + gap + ')(' + words + ')' + tail, 'g'), idx });
 }
 export function fix(lang, html) {

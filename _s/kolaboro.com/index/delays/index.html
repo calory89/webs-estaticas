@@ -86,10 +86,10 @@
 <h2>How it is computed</h2>
 <ol class="pi-m">
 <li><b>Now.</b> The month of the open data file (<span id="dlM1">&hellip;</span>), counted as a month index: year &times; 12 + month.</li>
-<li><b>Today's handover date.</b> If the overdue watcher says a project is <i>k</i> months past its advertised handover, that date is now &minus; <i>k</i>. Otherwise it is December of the advertised year. December is the latest month the year allows, so this can only understate lateness.</li>
+<li><b>Today's handover date.</b> If the overdue watcher has read a project, its reading counts: now minus its months. Otherwise the dated handover promise in /data/promises.json, else the handover in the project research record in /data/named.json, taken as the last month of the period it names (a quarter counts as its third month). Otherwise December of the advertised year, the latest month the year allows, which can only understate lateness. /data/on-time.json gives each project the source used (hs) and the date it was read (hr). A project not completed whose month has passed counts as past the published date.</li>
 <li><b>First handover date on record.</b> Today's date minus the recorded months the date has moved (<code>delay</code>). With no recorded move we assume none, which can only understate lateness.</li>
 <li><b>Months late.</b> <code>now &minus; first</code>, for projects not marked completed whose first date has passed.</li>
-<li><b>Share.</b> <code>projects past the first date / projects not completed with a usable date</code>. Projects with no date, and the few with a past year but no overdue reading, are left out and counted.</li>
+<li><b>Share.</b> <code>projects past the first date / projects not completed with a usable date</code>. Projects with no date, and the few with only a past year and neither an overdue reading nor a dated record, are left out and counted.</li>
 <li><b>Median and 90th percentile.</b> Linear interpolation between ordered values: position <code>h = (n &minus; 1) &times; p</code>, value <code>x&#8970;h&#8971; + (h &minus; &#8970;h&#8971;) &times; (x&#8970;h&#8971;+1 &minus; x&#8970;h&#8971;)</code>, the same rule as numpy and PERCENTILE.INC.</li>
 <li><b>Minimum sample.</b> A market figure needs at least 5 projects behind it.</li>
 <li><b>Odds.</b> A project's window is closed when its first date is more than 6 months ago. It counts as on time if it is marked completed and its recorded moves add up to 6 months or less. Comparables are closed projects in the same market (at least 10), else the same country (at least 10). The interval is the Wilson score interval at 95%: <code>(p + z&sup2;/2n &plusmn; z&radic;(p(1&minus;p)/n + z&sup2;/4n&sup2;)) / (1 + z&sup2;/n)</code>, z = 1.96. No model is trained; this is a count.</li>
@@ -207,6 +207,6 @@ addEventListener('load', function(){ setTimeout(function(){   // n27u: read the 
   window.addEventListener('scroll', function(){ b.classList.toggle('on', window.scrollY > window.innerHeight * 1.5); }, { passive: true });
 }, 0); });
 </script>
-<script src="/index/delays/dl.js?v=k22a" defer></script>
+<script src="/index/delays/dl.js?v=k27a" defer></script>
 </body>
 </html>

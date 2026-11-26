@@ -31,7 +31,9 @@
   function num(v) { return typeof v === 'number' && isFinite(v) && v > 0 ? Math.round(v) : 0; }
   function derive(c, NOW) {
     var st = c.stage, done = Number.isInteger(c.done) ? c.done : null, od = num(c.overdue), d = num(c.delay), completed = st === 'completed', cu = null;
-    if (od) cu = NOW - od; else if (done) cu = mi(done, 12);
+    // n40 k27: with no watcher reading, the current month comes from the dated handover record named in /data/on-time.json (hs promise or record, read on hr), as the builder does
+    var o = OT && OT.projects && OT.projects[c.id], hc = o && (o.hs === 'promise' || o.hs === 'record') && o.cur ? o.cur.split('-') : null;
+    if (od) cu = NOW - od; else if (hc) { cu = mi(+hc[0], +hc[1]); if (!completed && cu < NOW) od = NOW - cu; } else if (done) cu = mi(done, 12);
     var r = { id: c.id, market: c.market, country: c.country, completed: completed, cur: cu, d: d, od: od, first: null, status: null, late: null };
     if (cu == null) { r.status = completed ? 'completed_no_date' : 'no_date'; return r; }
     if (!completed && !od && cu < NOW) { r.status = 'inconsistent'; return r; }

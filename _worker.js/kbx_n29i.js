@@ -5,6 +5,7 @@ import { trData } from './kbx_tr.js';
 import { TR_PLACES, inPlace } from './kbx_tr_places.js';
 import { BUY_PLACES } from './kbx_buy_i18n.js';
 import { mkName, placeName, coName, hdisp, hyear } from './kbx_hdate.js';
+import { ready as pluReady, fix as pluFix } from './kbx_plural.js';   // n40 k27: count words follow the number in market titles, descriptions and answers
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' };
@@ -27,7 +28,7 @@ const th = (lang, k, v) => { const e = {}; for (const a in (v || {})) e[a] = v[a
 const H = s => ({ __html: s });
 let MD = null;
 async function mdata(env) {
-const [ix, tri] = await Promise.all([namedData(env), trData(env).catch(() => null)]);
+const [ix, tri] = await Promise.all([namedData(env), trData(env).catch(() => null), pluReady(env).catch(() => null)]);
 if (MD && MD.ix === ix && MD.tri === tri && MD.day === new Date().toISOString().slice(0, 10)) return MD;
 const g = new Map();
 for (const x of ix.P) { if (!g.has(x.mk)) g.set(x.mk, []); g.get(x.mk).push(x); }
@@ -65,6 +66,7 @@ let title = isC && (D.M.has(slugM(mk)) || [...D.M.values()].some(o => mkName(o.m
 const C40 = TB.kbx_n29i_CTR; if (!isC && C40.s && C40.s.includes(slugA(mk))) {
 const w = Object.assign({}, v, { pn: nf(lang, st.pn), pp: nf(lang, pct(st.pn, st.n)), ov: nf(lang, st.ov), y: st.yTop ? st.yTop[0] : '' }), fl = x => String(x).replace(/à \{p\}/g, q => lang === 'fr' ? frIn(w.p) : q).replace(/\{(\w+)\}/g, (q, a) => w[a] != null ? w[a] : q);
 const G = k => C40[k][lang] || C40[k].en, tt = (pct(st.pn, st.n) >= 50 ? G('t') : st.yTop ? G('ty') : []).concat(G('tn')).map(fl).find(x => x.length <= (lang === 'ru' ? 58 : 60));  if (tt) title = tt; desc = fl((C40.d[lang] || C40.d.en)[st.yTop ? 0 : 1]).replace(/\.\.(?=\s|$)/g, '.'); if (desc.length > 160) { const D2 = (C40.d[lang] || C40.d.en).map(x => fl(x).replace(/\.\.(?=\s|$)/g, '.')); desc = D2.find(x => x.length <= 160) || D2[D2.length - 1]; let i; while (desc.length > 160 && (i = desc.lastIndexOf('. ', desc.length - 2)) > 0) desc = desc.slice(0, i + 1); } }   // n40 k24: descriptions capped at 160 characters (the variant without the main handover year first, then whole sentences only)
+title = pluFix(lang, title); desc = pluFix(lang, desc);   // n40 k27: "de 1 promoteur", "von 1 Bauträger" (Intl.PluralRules)
 const TRP = TR_PLACES.filter(P => !P.coi && (isC ? (CO_AL[P.co] || P.co) === m.co : P.m.includes(mk)) && D.tri && D.tri.places.get(P.s) && D.tri.places.get(P.s).n);
 const BUY = BUY_PLACES.filter(P => isC ? (CO_AL[P.c] || P.c) === m.co : (TRP.some(q => q.s === P.s) || slugA(mk) === P.s));
 const rows = L.slice().sort((a, b) => (D.score(b.id) ?? -1) - (D.score(a.id) ?? -1) || a.n.localeCompare(b.n)).map(x => {
@@ -76,7 +78,7 @@ return '<tr><td><a href="' + pre(lang) + '/projects/' + x.s + '/">' + bdi(x.n) +
 const Q = [[t(lang, 'q1', v), t(lang, 'a1', v)], [t(lang, 'q2', v), t(lang, 'a2', Object.assign({}, v, { pn: nf(lang, st.pn), pp: nf(lang, pct(st.pn, st.n)) }))],
 [t(lang, 'q3', v), st.h && st.yTop ? t(lang, 'a3', Object.assign({}, v, { h: nf(lang, st.h), y: st.yTop[0], k: nf(lang, st.yTop[1]) })) : t(lang, 'a3n', v)],
 [t(lang, 'q4', v), t(lang, st.ov === 1 ? 'a4_1' : 'a4', Object.assign({}, v, { ov: nf(lang, st.ov), mv: nf(lang, st.mv) }))]];
-{ const D3 = [...st.devs.values()].sort((a, b) => b.k - a.k || String(a.n).localeCompare(String(b.n))).slice(0, 3); if (T.en.q5 && D3.length > 1) Q.push([t(lang, 'q5', v), t(lang, 'a5', Object.assign({}, v, { l: list(lang, D3.map(x => x.n + ' (' + nf(lang, x.k) + ')')) }))]); if (T.en.dof) for (const q of Q) if (q[1].indexOf(d) < 0) q[1] += ' ' + t(lang, 'dof', v); }   // n40 k26: fifth question (developers with the most projects) and the data date on every answer
+{ const D3 = [...st.devs.values()].sort((a, b) => b.k - a.k || String(a.n).localeCompare(String(b.n))).slice(0, 3); if (T.en.q5 && D3.length > 1) Q.push([t(lang, 'q5', v), t(lang, 'a5', Object.assign({}, v, { l: list(lang, D3.map(x => x.n + ' (' + nf(lang, x.k) + ')')) }))]); if (T.en.dof) for (const q of Q) if (q[1].indexOf(d) < 0) q[1] += ' ' + t(lang, 'dof', v); } for (const q of Q) { q[0] = pluFix(lang, q[0]); q[1] = pluFix(lang, q[1]); }   // n40 k26: fifth question (developers with the most projects) and the data date on every answer
 const links = [];
 for (const P of TRP) links.push('<a href="' + pre(lang) + '/rankings/transparency/' + P.s + '/">' + th(lang, 'l_tr', { p: mkName(P.n, lang) }) + '</a>');
 if (isC) for (const g of [...new Set(L.map(x => x.mk))].map(k => D.M.get(slugM(k))).filter(Boolean).sort((a, b) => b.L.length - a.L.length)) links.push('<a href="' + pre(lang) + '/m/' + slugM(g.mk) + '/">' + bdi(mkName(g.mk, lang)) + ' (' + nf(lang, g.L.length) + ')</a>');
