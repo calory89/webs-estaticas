@@ -26,7 +26,7 @@
   "@id": "http://publications.europa.eu/resource/authority/language/ENG"
  },
  "dct:modified": {
-  "@value": "2026-11-26T08:51:01Z",
+  "@value": "2026-11-26T08:54:44Z",
   "@type": "xsd:dateTime"
  },
  "dct:license": {
@@ -3262,7 +3262,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "227317",
+      "@value": "236233",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -3276,7 +3276,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "a70d304294bf9215833c4df6ff2182a4bc11dd6ec38f54f6f8e4f8668951e6c3"
+      "spdx:checksumValue": "7a3f8d311bbe5460b8c04c93df5bfdec66f68f7883cd37ceaf102c048e73ebbb"
      },
      "dct:conformsTo": {
       "@id": "https://kolaboro.com/api/x/data/schema/shipping.json"
@@ -3287,7 +3287,7 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/WEEKLY"
    },
    "dct:modified": {
-    "@value": "2026-11-25T09:06:35Z",
+    "@value": "2026-11-26T08:53:28Z",
     "@type": "xsd:dateTime"
    },
    "dct:conformsTo": {
@@ -3339,7 +3339,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "08f3c475fcd3583c34ae98a23ab8cfb80329ec0ed2c8327cdac5840db4a891e2"
+      "spdx:checksumValue": "cdcdc9f5577f7e79a7a9893656e26701f4747de6a4f8d1810f43906a7de10e04"
      },
      "dct:conformsTo": {
       "@id": "https://kolaboro.com/api/x/data/schema/roadmap-sync.json"
@@ -3350,7 +3350,7 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/WEEKLY"
    },
    "dct:modified": {
-    "@value": "2026-11-25T09:06:35Z",
+    "@value": "2026-11-26T08:53:28Z",
     "@type": "xsd:dateTime"
    },
    "dct:conformsTo": {
@@ -19391,7 +19391,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "46812",
+      "@value": "46983",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -19405,7 +19405,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "1bd99942aa9e57ea4d9c2ee0e8f931d44e3aee1bf810cba7c4978103c8f0c40c"
+      "spdx:checksumValue": "efcb5d93e93abdde4c9cb714fcbc34175d980cd0df14dc3c9ad936bb1237dc30"
      }
     }
    ],
