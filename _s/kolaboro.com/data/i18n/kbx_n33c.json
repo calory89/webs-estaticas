@@ -30,8 +30,11 @@
 "/ar/graph/developers/": "شبكة المطورين: الروابط بين الشركات والمشاريع | Kolaboro",
 "/ar/tools/contract-addendum/": "منشئ ملحق العقد لشراء العقارات على الخارطة | Kolaboro",
 "/ar/tools/insolvency-check/": "فحص إعسار المطور في السجلات الرسمية | Kolaboro",
-"/ar/tools/permit-photo/": "قارئ صور التصاريح على لافتات المشاريع | Kolaboro"
-}
+"/ar/tools/permit-photo/": "قارئ صور التصاريح على لافتات المشاريع | Kolaboro",
+"/projects/the-landmark-mermaid-beach-aniko/": "The Landmark Mermaid Beach, Gold Coast: 2027, works approved"
+},
+"dt": "Dated public facts: {list}.",
+"dt_i": "{p}, handover {h} as published ({src}, read {d})"
 },
 "es": {
 "t_pn0": "sin licencia publicada",
@@ -56,7 +59,9 @@
 "pj": {
 "one": "{n} proyecto",
 "other": "{n} proyectos"
-}
+},
+"dt": "Datos públicos con fecha: {list}.",
+"dt_i": "{p}, entrega {h} según lo publicado ({src}, leído el {d})"
 },
 "fr": {
 "t_pn0": "permis non publié",
@@ -81,7 +86,9 @@
 "pj": {
 "one": "{n} projet",
 "other": "{n} projets"
-}
+},
+"dt": "Faits publics datés : {list}.",
+"dt_i": "{p}, livraison {h} telle que publiée ({src}, lu le {d})"
 },
 "de": {
 "t_pn0": "keine Genehmigung veröffentlicht",
@@ -106,7 +113,9 @@
 "pj": {
 "one": "{n} Projekt",
 "other": "{n} Projekte"
-}
+},
+"dt": "Öffentliche Fakten mit Datum: {list}.",
+"dt_i": "{p}, Übergabe {h} wie veröffentlicht ({src}, gelesen am {d})"
 },
 "nl": {
 "t_pn0": "geen vergunning gepubliceerd",
@@ -131,7 +140,9 @@
 "pj": {
 "one": "{n} project",
 "other": "{n} projecten"
-}
+},
+"dt": "Openbare feiten met datum: {list}.",
+"dt_i": "{p}, oplevering {h} zoals gepubliceerd ({src}, gelezen op {d})"
 },
 "ru": {
 "t_pn0": "разрешение не опубликовано",
@@ -158,7 +169,9 @@
 "few": "{n} проекта",
 "many": "{n} проектов",
 "other": "{n} проекта"
-}
+},
+"dt": "Публичные факты с датой: {list}.",
+"dt_i": "{p}: сдача {h}, как опубликовано ({src}, прочитано {d})"
 },
 "zh": {
 "t_pn0": "未公布许可证",
@@ -182,7 +195,9 @@
 "id_l": "Kolaboro 编号",
 "pj": {
 "other": "{n}个项目"
-}
+},
+"dt": "有日期的公开事实：{list}。",
+"dt_i": "{p}：公布的交付时间为 {h}（{src}，{d} 读取）"
 },
 "ar": {
 "t_pn0": "الترخيص غير منشور",
@@ -211,7 +226,9 @@
 "few": "{n} مشاريع",
 "many": "{n} مشروعًا",
 "other": "{n} مشروع"
-}
+},
+"dt": "حقائق عامة مؤرخة: {list}.",
+"dt_i": "{p}: التسليم {h} كما نُشر ({src}، قُرئ في {d})"
 }
 }
 }
