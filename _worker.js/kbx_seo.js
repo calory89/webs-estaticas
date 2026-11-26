@@ -321,9 +321,10 @@ function pDelayed(B, market) {
   if (market && L.length < 3) return null;
   const where = market ? market + ', ' + B.mToC.get(market) : 'all markets';
   let body = '<div class="sx-sum" id="summary"><p><b>' + L.length + ' tracked off-plan project' + (L.length === 1 ? ' is' : 's are') + ' past the first handover date we have on record in ' + esc(where) + '</b>' + (L.length ? '; the furthest by ' + L[0].lm.late + ' months, the median by ' + median(L.map(o => o.lm.late)) + ' months' : '') + '. Month of reference: ' + ymName(B.ontime.as_of_month + '-01') + TB.kbx_seo__s.k37;
+  body += '<nav class="sx-fl" aria-label="Market"><ul class="sx-chips"><li><a href="/rankings/most-delayed/"' + (market ? '' : ' aria-current="page"') + '>All markets <small>' + fmt(delayedList(B, () => true).length) + '</small></a></li>' + mw.map(([m, n]) => '<li><a href="/rankings/most-delayed/' + slug(m) + '/"' + (m === market ? ' aria-current="page"' : '') + '>' + esc(m) + ' <small>' + n + '</small></a></li>').join('') + '</ul></nav>';   // n40 d9: the market filter above the table
   body += tableWrap(DHEAD, delayRows(B, L.slice(0, 200)));
   body += TB.kbx_seo__s.k38 + TB.kbx_seo__s.k24def + ' <a href="/press/places/">' + TB.kbx_seo__s.k24pp + '</a></p>';   // n40 k18 (R08-03, R08-28)
-  body += h2('markets', 'By market') + '<ul class="sx-chips">' + (market ? '<li><a href="/rankings/most-delayed/">All markets</a></li>' : '') + mw.filter(([m]) => m !== market).map(([m, n]) => '<li><a href="/rankings/most-delayed/' + slug(m) + '/">' + esc(m) + ' (' + n + ')</a></li>').join('') + '</ul>' + TB.kbx_seo__s.REPLY;
+  body += TB.kbx_seo__s.REPLY;
   const path = market ? '/rankings/most-delayed/' + slug(market) + '/' : '/rankings/most-delayed/';
   const cr = [['Kolaboro', '/'], ['Rankings', '/rankings/'], ['Most delayed', '/rankings/most-delayed/']]; if (market) cr.push([market, path]);
   return render({ path, title: 'Most delayed off-plan projects' + (market ? ' in ' + market : '') + ': ' + L.length + ' past handover date | Kolaboro', h1: 'Most delayed off-plan projects' + (market ? ' in ' + market : ''), lead: TB.kbx_seo__s.k39, desc: L.length + ' off-plan projects' + (market ? ' in ' + market : '') + ' are past the first handover date on record' + (L.length ? ', up to ' + L[0].lm.late + ' months' : '') + '. Dates, sources and method. Data of ' + longDate(up) + '.', updated: up, type: 'CollectionPage', crumbs: cr, body,
@@ -403,7 +404,9 @@ function pVs(B, key, u) {
 }
 function pRankings(B) {
   const mw = marketsWithDelays(B);
-  const body = TB.kbx_seo__s.k49 + mw.map(([m, n]) => '<li><a href="/rankings/most-delayed/' + slug(m) + '/">Most delayed in ' + esc(m) + '</a> (' + n + ')</li>').join('') + TB.kbx_seo__s.k50;
+  const RK = TB.kbx_seo__s.d9rk, nd = delayedList(B, () => true).length;   // n40 d9: the rankings as cards (title, what it ranks), then the delay ranking by market as chips
+  const body = RK ? '<ul class="rk9">' + RK.map(r => '<li><a href="' + r[0] + '"><b>' + esc(r[1]) + '</b><span>' + esc(r[2].replace('{n}', fmt(nd))) + '</span></a></li>').join('') + '</ul>' + h2('by-market', 'Most delayed, by market') + '<ul class="sx-chips">' + mw.map(([m, n]) => '<li><a href="/rankings/most-delayed/' + slug(m) + '/">' + esc(m) + ' <small>' + n + '</small></a></li>').join('') + '</ul>'
+    : TB.kbx_seo__s.k49 + mw.map(([m, n]) => '<li><a href="/rankings/most-delayed/' + slug(m) + '/">Most delayed in ' + esc(m) + '</a> (' + n + ')</li>').join('') + TB.kbx_seo__s.k50;
   return render({ path: '/rankings/', title: 'Off-plan rankings: delays, changed promises, transparency', h1: 'Off-plan rankings', desc: TB.kbx_seo__s.k51, updated: B.d.updated, type: 'CollectionPage', crumbs: [['Kolaboro', '/'], ['Rankings', '/rankings/']], body });
 }
 

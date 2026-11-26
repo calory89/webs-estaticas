@@ -630,7 +630,16 @@ a.k-src:hover{color:var(--k-sea);border-bottom-color:currentColor}
 :root:has(link[href*="/k/site.css"]) .ktr :is(.k-table-wrap){border:1px solid var(--k-line);border-radius:var(--k-r-lg);background:var(--k-surface)}
 :root:has(link[href*="/k/site.css"]) .ktr h2{font-size:var(--k-fs-3xl);letter-spacing:-.02em}
 
-:root:has(link[href*="/k/site.css"]) p[data-cite]:not(:has(.k29c))::after{content:"";display:inline-block;width:0;height:32px;vertical-align:middle}   /* room for the Cite button added after load: no layout shift */
+/* room for the Cite button added after load (cite29.js): an invisible copy of the button, same word, same box, so nothing moves when it arrives (n40 d9: the 23 px shift on /rankings/transparency/) */
+:root:has(link[href*="/k/site.css"]) :is(p[data-cite],:is(.ktr-kv,.kfa-kv,.k29-kv,.n3-kv)>div:has(>b):has(>span)):not(:has(.k29c))::after{content:"Cite";visibility:hidden;display:inline-block;box-sizing:border-box;margin-inline-start:8px;min-height:32px;padding:2px 10px;border:1px solid;border-radius:999px;font-size:12px;vertical-align:middle}
+:root:has(link[href*="/k/site.css"]) :is(p[data-cite],:is(.ktr-kv,.kfa-kv,.k29-kv,.n3-kv)>div:has(>b):has(>span)):lang(es):not(:has(.k29c))::after{content:"Citar"}
+:root:has(link[href*="/k/site.css"]) :is(p[data-cite],:is(.ktr-kv,.kfa-kv,.k29-kv,.n3-kv)>div:has(>b):has(>span)):lang(fr):not(:has(.k29c))::after{content:"Citer"}
+:root:has(link[href*="/k/site.css"]) :is(p[data-cite],:is(.ktr-kv,.kfa-kv,.k29-kv,.n3-kv)>div:has(>b):has(>span)):lang(de):not(:has(.k29c))::after{content:"Zitieren"}
+:root:has(link[href*="/k/site.css"]) :is(p[data-cite],:is(.ktr-kv,.kfa-kv,.k29-kv,.n3-kv)>div:has(>b):has(>span)):lang(nl):not(:has(.k29c))::after{content:"Citeren"}
+:root:has(link[href*="/k/site.css"]) :is(p[data-cite],:is(.ktr-kv,.kfa-kv,.k29-kv,.n3-kv)>div:has(>b):has(>span)):lang(ru):not(:has(.k29c))::after{content:"Цитировать"}
+:root:has(link[href*="/k/site.css"]) :is(p[data-cite],:is(.ktr-kv,.kfa-kv,.k29-kv,.n3-kv)>div:has(>b):has(>span)):lang(zh):not(:has(.k29c))::after{content:"引用"}
+:root:has(link[href*="/k/site.css"]) :is(p[data-cite],:is(.ktr-kv,.kfa-kv,.k29-kv,.n3-kv)>div:has(>b):has(>span)):lang(ar):not(:has(.k29c))::after{content:"اقتباس"}
+
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
@@ -841,3 +850,63 @@ a.k-src:hover{color:var(--k-sea);border-bottom-color:currentColor}
 :root:has(link[href*="/k/site.css"]) footer ul a:hover{color:var(--k-ink);text-decoration:underline;text-underline-offset:3px}
 :root:has(link[href*="/k/site.css"]) footer .fine{margin-top:40px;padding-top:20px;border-top:1px solid var(--k-line)}
 :root:has(link[href*="/k/site.css"]) footer .news .qform{max-width:360px}
+/* n40 d9: market key figures (#dash.d40): the two named delay counts carry a warm edge; translated pages open with the median score */
+.d40 .d40-t.d9-w{border-inline-start:4px solid var(--k-warn);background:color-mix(in srgb,var(--k-warn-bg) 55%,var(--k-surface))}
+.d40 .d40-t .d40-v{font-size:clamp(1.6rem,3.2vw,2rem);letter-spacing:-.01em}
+.d40 .d40-t .d40-l{font-weight:650;color:var(--k-ink-2)}
+.d40 .d40-s a{font-weight:650}
+.d40 .d9-sc{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 8px;margin:0 0 10px;font-size:var(--k-fs-sm);color:var(--k-ink-2)}
+.d40 .d9-sc b{font-size:clamp(2.2rem,5vw,3rem);line-height:1;letter-spacing:-.02em;color:var(--k-ink);font-variant-numeric:tabular-nums}
+.d40 .d9-sc span{font-weight:650;color:var(--k-muted);margin-inline-end:6px}
+/* the full figure grid of translated market pages becomes the quieter detail under the key figures */
+.k29 .k29-kv{grid-template-columns:repeat(auto-fit,minmax(140px,1fr));background:var(--k-sunken)}
+.k29 .k29-kv div{padding:10px 14px}
+.k29 .k29-kv b{font-size:var(--k-fs-lg,18px)}
+/* project tables of market pages: header stays under the site header on wide screens, sortable columns, badges */
+@media (min-width:900px){main .k29 .k-table-wrap:has(.k40m){overflow:visible;overflow:clip}.k29 .k40m thead th{top:73px;z-index:2}}
+.k40m .tsort-b{display:inline-flex;align-items:center;gap:6px;min-height:32px;padding:0 6px;margin:0 -6px;border:0;border-radius:6px;background:none;font:inherit;color:inherit;cursor:pointer;text-align:start}
+.k40m .tsort-b:hover{background:var(--k-surface);color:var(--k-ink)}
+.k40m .tsort-b:focus-visible{outline:2px solid var(--k-focus,var(--k-brand));outline-offset:1px}
+.k40m .tsort-i::after{content:"\2195";opacity:.5}
+.k40m th[aria-sort=ascending] .tsort-i::after{content:"\2191";opacity:1}
+.k40m th[aria-sort=descending] .tsort-i::after{content:"\2193";opacity:1}
+.k40m th[aria-sort]{color:var(--k-ink)}
+.k9b{display:inline-block;font-size:var(--k-fs-xs,13px);font-weight:650;line-height:1.2;border-radius:6px;padding:2px 8px;white-space:nowrap}
+.k9b-y{background:var(--k-ok-bg);color:var(--k-ok)}
+.k9b-n{background:var(--k-sunken);color:var(--k-muted);border:1px solid var(--k-line)}
+.k40m .k9s{font-weight:700;font-size:var(--k-fs-md,16px)}
+@media (max-width:640px){
+  .k40m tbody tr{border-radius:var(--k-r-md);margin:10px;border:1px solid var(--k-line);background:var(--k-surface)}
+  .k29 .k-table-wrap:has(.k40m){border:0;background:none}
+  .k40m td:first-child{display:block;text-align:start;font-weight:700;font-size:var(--k-fs-md,16px);padding-bottom:6px}
+  .k40m td:first-child::before{content:none!important}
+}
+/* n40 d9: rankings hubs. Each ranking is a card with what it ranks; market chips carry their count */
+.rk9{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,280px),1fr));gap:12px;list-style:none;padding:0!important;margin:16px 0 28px}
+.rk9>li{margin:0!important;padding:0;display:flex}
+.rk9>li::before{content:none!important}
+.rk9 a{position:relative;display:flex;flex-direction:column;gap:4px;width:100%;min-height:88px;padding:16px 40px 16px 18px;border:1px solid var(--k-line);border-radius:var(--k-r-lg,14px);background:var(--k-surface);color:var(--k-ink);text-decoration:none;font-weight:650;line-height:1.35;transition:border-color var(--k-t1,.12s),box-shadow var(--k-t1,.12s)}
+.rk9 a::after{content:"\203A";position:absolute;inset-inline-end:16px;top:50%;transform:translateY(-50%);font-size:1.5rem;line-height:1;color:var(--k-muted)}
+[dir=rtl] .rk9 a::after{content:"\2039"}
+.rk9 a:hover{border-color:var(--k-ink-2);box-shadow:var(--k-sh-1,0 1px 2px rgba(0,0,0,.06))}
+.rk9 a:focus-visible{outline:3px solid var(--k-focus,var(--k-brand));outline-offset:2px}
+.rk9 b{font-size:var(--k-fs-md,16px);font-weight:700}
+.rk9 span{font-size:var(--k-fs-sm,14px);font-weight:400;color:var(--k-muted)}
+.sx-chips a small{margin-inline-start:6px;font-size:.8em;font-weight:700;color:var(--k-muted);font-variant-numeric:tabular-nums}
+@media (prefers-reduced-motion:reduce){.rk9 a{transition:none}}
+/* long ranking tables on phones: rows below the first screen are laid out only when they come near */
+@media (max-width:640px){.sx-tw tbody tr:nth-child(n+6){content-visibility:auto;contain-intrinsic-size:auto 236px}}
+.rk9 a{justify-content:center}
+@media (max-width:640px){.rk9 a{min-height:64px}}
+.sx-fl .sx-chips{margin:14px 0 12px}
+.sx-chips a[aria-current=page]{background:var(--k-ink);border-color:var(--k-ink);color:var(--k-surface);font-weight:700}
+.sx-chips a[aria-current=page] small{color:inherit;opacity:.8}
+@media (max-width:640px){.sx-fl .sx-chips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-16px;padding-inline:16px;-webkit-mask-image:linear-gradient(90deg,#000 85%,transparent)}.sx-fl .sx-chips a{white-space:nowrap}}
+[dir=rtl] .sx-fl .sx-chips{-webkit-mask-image:linear-gradient(270deg,#000 85%,transparent)}
+.sx-fl li:has(a[aria-current=page]){order:-1}
+@media (max-width:640px){
+  .sx-tw td[data-l="#"]{display:inline-block;vertical-align:top;min-width:2.4em;padding:0 6px 8px 0;color:var(--k-muted);font-weight:700}
+  .sx-tw td[data-l="#"]::before{content:"#"}
+  .sx-tw td[data-l="#"]+td{display:inline-block;width:calc(100% - 2.8em);text-align:start!important;font-weight:700;font-size:var(--k-fs-md,16px);padding:0 0 8px}
+  .sx-tw td[data-l="#"]+td::before{content:none!important}
+}

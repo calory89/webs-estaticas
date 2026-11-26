@@ -4,7 +4,7 @@ import { data as namedData, handoverOf, overdueOf, movedOf, OV_MIN, lastmod, esc
 import { trData } from './kbx_tr.js';
 import { TR_PLACES, inPlace } from './kbx_tr_places.js';
 import { BUY_PLACES } from './kbx_buy_i18n.js';
-import { mkName, placeName, coName, hdisp, hyear } from './kbx_hdate.js';
+import { mkName, placeName, coName, hdisp, hyear, hkey } from './kbx_hdate.js';
 import { ready as pluReady, fix as pluFix } from './kbx_plural.js';   // n40 k27: count words follow the number in market titles, descriptions and answers
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
@@ -73,7 +73,7 @@ const rows = L.slice().sort((a, b) => (D.score(b.id) ?? -1) - (D.score(a.id) ?? 
 const h = handoverOf(ix, x), s = D.score(x.id);
 return '<tr><td><a href="' + pre(lang) + '/projects/' + x.s + '/">' + bdi(x.n) + '</a></td><td>' +
 (x.dv ? (x.dvs && ix.devs.has(x.dvs) ? '<a href="' + pre(lang) + '/developers/' + x.dvs + '/">' + bdi(x.dv) + '</a>' : bdi(x.dv)) : esc(t(lang, 'np'))) + '</td><td>' + (x.ar && x.ar !== x.mk ? arCell(x.ar, lang) : '') +
-'</td><td>' + (h ? bdi(hdisp(h.d, lang)) : esc(t(lang, 'np'))) + '</td><td>' + esc(st.permit(x) ? t(lang, 'yes') : t(lang, 'no')) + '</td><td>' + (s == null ? '-' : nf(lang, s)) + '</td></tr>';
+'</td><td' + (h ? ' data-v="' + esc(hkey(h.d) || '') + '">' + bdi(hdisp(h.d, lang)) : '>' + esc(t(lang, 'np'))) + '</td><td data-v="' + (st.permit(x) ? 1 : 0) + '"><span class="k9b k9b-' + (st.permit(x) ? 'y">' + esc(t(lang, 'yes')) : 'n">' + esc(t(lang, 'no'))) + '</span></td><td class="k-n"' + (s == null ? '>-' : ' data-v="' + s + '"><b class="k9s">' + nf(lang, s) + '</b>') + '</td></tr>';   // n40 d9: sort keys (data-v, /k/tsort.js), permit as a badge
 }).join('');
 const Q = [[t(lang, 'q1', v), t(lang, 'a1', v)], [t(lang, 'q2', v), t(lang, 'a2', Object.assign({}, v, { pn: nf(lang, st.pn), pp: nf(lang, pct(st.pn, st.n)) }))],
 [t(lang, 'q3', v), st.h && st.yTop ? t(lang, 'a3', Object.assign({}, v, { h: nf(lang, st.h), y: st.yTop[0], k: nf(lang, st.yTop[1]) })) : t(lang, 'a3n', v)],
@@ -92,9 +92,9 @@ const body = TB.kbx_n29i__s.k0 + cr.map((c, i) => i < cr.length - 1 ? '<a href="
 '<h1>' + th(lang, 'm_h1', { p: H(bdi(p)) }) + '</h1><p class="lead">' + th(lang, 'm_lead', { p: H(bdi(p)), d }) + '</p></div>' +
 kvHtml([[nf(lang, st.n), t(lang, 'k_n')], [nf(lang, st.dv), t(lang, 'k_dv')], [nf(lang, st.pn) + ' (' + nf(lang, pct(st.pn, st.n)) + '%)', t(lang, 'k_pn')], [nf(lang, st.h) + ' (' + nf(lang, pct(st.h, st.n)) + '%)', t(lang, 'k_h')],
 [nf(lang, st.mv), t(lang, 'k_mv')], [nf(lang, st.ov), t(lang, 'k_ov')], [st.med == null ? '-' : nf(lang, st.med), t(lang, 'k_med')], [esc(d), t(lang, 'k_d')]]) +
-'<h2 id="projects">' + esc(t(lang, 'tb')) + '</h2><style>@media (max-width:640px){' + ['c_p', 'c_dv', 'c_ar', 'c_h', 'c_pn', 'c_s'].map((k, i) => '.k40m td:nth-child(' + (i + 1) + ')::before{content:"' + String(t(lang, k)).replace(/[\\"<>]/g, '') + '"}').join('') + TB.kbx_n29i__s.k1 + ['c_p', 'c_dv', 'c_ar', 'c_h', 'c_pn', 'c_s'].map(k => '<th scope="col">' + esc(t(lang, k)) + '</th>').join('') + '</tr></thead><tbody>' + rows + '</tbody></table></div>' +
+'<h2 id="projects">' + esc(t(lang, 'tb')) + '</h2><style>@media (max-width:640px){' + ['c_p', 'c_dv', 'c_ar', 'c_h', 'c_pn', 'c_s'].map((k, i) => '.k40m td:nth-child(' + (i + 1) + ')::before{content:"' + String(t(lang, k)).replace(/[\\"<>]/g, '') + '"}').join('') + TB.kbx_n29i__s.k1 + ['c_p', 'c_dv', 'c_ar', 'c_h', 'c_pn', 'c_s'].map(k => '<th scope="col"' + (k === 'c_s' ? ' class="k-n" aria-sort="descending" data-desc' : k === 'c_pn' ? ' data-desc' : '') + '>' + esc(t(lang, k)) + '</th>').join('') + '</tr></thead><tbody>' + rows + '</tbody></table></div>' +
 (isC && TR_PLACES.some(P => P.coi && (CO_AL[P.co] || P.co) === m.co) ? '<p class="k-small k-muted">' + esc(t(lang, 'coi_n')) + TB.kbx_n29i__t.k7 + esc(t(lang, 'coi_l')) + '</a></p>' : '') +
-faqHtml(t(lang, 'faq', { p }), Q) + (TB.kbx_n29i__t.o_BPL.some(P => P.mk === mk) ? buyerLinks(lang, mk).replace(TB.kbx_n29i__t.k8, '').replace('</div></section>', '') : '') + '<h2 id="more">' + th(lang, 'more', { p: H(bdi(p)) }) + '</h2><ul class="k29-l">' + links.map(a => '<li>' + a + '</li>').join('') + '</ul><p class="k-small k-muted">' + esc(t(lang, 'src')) + TB.kbx_n29i__s.k2;
+faqHtml(t(lang, 'faq', { p }), Q) + (TB.kbx_n29i__t.o_BPL.some(P => P.mk === mk) ? buyerLinks(lang, mk).replace(TB.kbx_n29i__t.k8, '').replace('</div></section>', '') : '') + '<h2 id="more">' + th(lang, 'more', { p: H(bdi(p)) }) + '</h2><ul class="k29-l">' + links.map(a => '<li>' + a + '</li>').join('') + '</ul><p class="k-small k-muted">' + esc(t(lang, 'src')) + TB.kbx_n29i__s.k2 + '<script src="/k/tsort.js?v=d9a" defer></script>';
 const url = ORIGIN + pre(lang) + path;
 const ld = [{ '@type': 'CollectionPage', '@id': url + '#page', url, name: title, description: desc, inLanguage: lang, dateModified: st.lm, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' },
 about: isC ? { '@type': 'Country', name: p, alternateName: p !== m.co ? m.co : undefined } : { '@id': url + '#place' }, mainEntity: { '@type': 'ItemList', numberOfItems: L.length, itemListElement: L.slice(0, 50).map((x, i) => ({ '@type': 'ListItem', position: i + 1, url: ORIGIN + pre(lang) + '/projects/' + x.s + '/', name: x.n })) } },
@@ -272,7 +272,7 @@ return { path, title, desc, body, lm, ld: [{ '@type': 'CollectionPage', '@id': u
 function rankingsHub(D, lang) {
 const path = '/rankings/', title = t(lang, 'rk_t'), desc = t(lang, 'rk_lead'), L = t(lang, 'rk'), d = fd(D.d, lang);
 const body = TB.kbx_n29i__s.k15 + pre(lang) + '/">Kolaboro</a> / <span>' + esc(title) + '</span></p><h1>' + esc(title) + '</h1><p class="lead">' + esc(desc) + '</p></div>' +
-'<ul class="k-list">' + TB.kbx_n29i__t.o_RK.map((r, i) => '<li><a href="' + pre(lang) + r + '">' + esc(L[i]) + '</a></li>').join('') + '</ul>' +
+'<ul class="k-list rk9">' + TB.kbx_n29i__t.o_RK.map((r, i) => '<li><a href="' + pre(lang) + r + '">' + esc(L[i]) + '</a></li>').join('') + '</ul>' +
 '<ul class="k29-l"><li><a href="' + pre(lang) + '/countries/">' + esc(t(lang, 'ch_h')) + TB.kbx_n29i__t.k36 + esc(t(lang, 'k_d')) + ': ' + esc(d) + '</p></div></section></div>';
 const url = ORIGIN + pre(lang) + path;
 return { path, title, desc, body, lm: D.d, ld: [{ '@type': 'CollectionPage', '@id': url + '#page', url, name: title, description: desc, inLanguage: lang, dateModified: D.d, mainEntity: { '@type': 'ItemList', numberOfItems: TB.kbx_n29i__t.o_RK.length, itemListElement: TB.kbx_n29i__t.o_RK.map((r, i) => ({ '@type': 'ListItem', position: i + 1, name: L[i], url: ORIGIN + pre(lang) + r })) } }] };
@@ -329,4 +329,5 @@ const res = new HTMLRewriter()
 return new Response(req.method === 'HEAD' ? null : await res.text(), { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=600', 'last-modified': new Date(pg.lm + 'T00:00:00Z').toUTCString() } });
 }
 export { marketPage, mdata, questions, hubParts, buyerPage };
+export async function mkKey(env, key, lang) { try { const D = await mdata(env), m = findMk(D, key); if (!m) return null; const s = m.st; return { n: s.n, h: s.h, mv: s.mv, ov: s.ov, med: s.med, ml: String(t(lang, 'k_med')).replace(/\s*\(0-100\)/, ''), od: s.ov >= OV_MIN ? '/handover/overdue/' + slugA(m.mk) + '/' : '' }; } catch (e) { return null; } }   // n40 d9: the two named delay counts for the market key figures (kbx_n37u mkDash)
 export async function mFaq(env, key) { let D; try { D = await mdata(env); } catch (e) { return null; } const m = findMk(D, key); if (!m) return null; const r = marketPage(D, m, 'en'), i = r.body.indexOf('<h2 id="questions">'), j = i < 0 ? -1 : r.body.indexOf('</div>', i); if (j < 0) return null; return { html: '<section aria-labelledby="questions" style="padding:28px 0;border-top:1px solid var(--k-line,#d5d3cc)">' + r.body.slice(i, j + 6) + '</section>', fq: r.ld.find(x => x['@type'] === 'FAQPage') }; }   // n40 k26: the market questions on the English /m/<market>/ page

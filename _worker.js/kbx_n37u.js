@@ -359,19 +359,21 @@ if ((m = /\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\s+20\d\d/i.e
 if (/early/i.test(s)) return Y * 12 + 4; if (/mid|summer/i.test(s)) return Y * 12 + 9;
 return Y * 12 + 12;
 }
-function mkDash(l, m) { const k = 'd|' + l + '|' + m; if (!IX.mkm) IX.mkm = new Map(); if (!IX.mkm.has(k)) IX.mkm.set(k, mkDash0(l, m)); return IX.mkm.get(k); }
-function mkDash0(l, m) {
+function mkDash(l, m, kk) { const k = 'd|' + l + '|' + m + '|' + (kk ? kk.mv + '.' + kk.ov + '.' + kk.med : ''); if (!IX.mkm) IX.mkm = new Map(); if (!IX.mkm.has(k)) IX.mkm.set(k, mkDash0(l, m, kk)); return IX.mkm.get(k); }
+function mkDash0(l, m, kk) {
 const rows = IX.byMk.get(m) || [], n = rows.length; if (n < 5) return '';
 const b = /^(\d{4})-(\d{2})/.exec(D.built || ''), now = b ? +b[1] * 12 + +b[2] : 0, Y0 = b ? +b[1] : 2026;
 let dated = 0, past = 0, pn = 0, rg = 0; const yr = new Map();
 for (const r of rows) { const c = r[8]; if (c[1]) pn++; if (c[8]) rg++; const e = c[0] ? hoEnd(c[0][0]) : null; if (e == null) continue; dated++; if (e < now) past++; else { const y = Math.floor((e - 1) / 12); const key = y > Y0 + 2 ? 'l' : String(y); yr.set(key, (yr.get(key) || 0) + 1); } }
 const fut = [...yr.values()].reduce((a, x) => a + x, 0), keys = [String(Y0), String(Y0 + 1), String(Y0 + 2), 'l'], mx = Math.max(1, ...keys.map(x => yr.get(x) || 0));
 const pc = (a, z) => z ? bdi(nf(share(a, z), l) + '%') : '-';
-const tile = (h, v, sub) => '<div class="d40-t"><p class="d40-l">' + esc(h) + '</p><p class="d40-v">' + v + '</p><p class="d40-s">' + sub + '</p></div>';
-return TB.kbx_n37u__s.k10 + dir(l) + TB.kbx_n37u__t.k52 + esc(tf(l, 'd40_h', { m: mkName(m, l) })) + '</h2><div class="d40-g">' +
+const tile = (h, v, sub, w) => '<div class="d40-t' + (w ? ' d9-w' : '') + '"><p class="d40-l">' + esc(h) + '</p><p class="d40-v">' + v + '</p><p class="d40-s">' + sub + '</p></div>';
+return TB.kbx_n37u__s.k10 + dir(l) + TB.kbx_n37u__t.k52 + esc(tf(l, 'd40_h', { m: mkName(m, l) })) + '</h2>' + (kk && l !== 'en' && kk.med != null ? '<p class="d9-sc"><b>' + bdi(nf(kk.med, l)) + '</b><span>/100</span> ' + esc(kk.ml) + '</p>' : '') + '<div class="d40-g">' +
+(kk ? tile(t(l, 'd40_pl'), pc(pn, n), esc(tf(l, 'd40_ps', { a: nf(pn, l), n: nf(n, l) })) + '<br>' + esc(tf(l, 'd9_rg', { p: share(rg, n) + '%' }))) +
+tile(t(l, 'd9_mvl'), bdi(nf(kk.mv, l)), esc(tf(l, 'd9_mvs', { h: nf(kk.h, l) })), 1) + tile(t(l, 'd9_ovl'), bdi(nf(kk.ov, l)), esc(t(l, 'd9_ovs')) + (kk.od ? ' <a href="' + pre(l) + kk.od + '">' + esc(t(l, 'd9_ovk')) + '</a>' : ''), 1) :
 tile(t(l, 'd40_dl'), pc(past, dated), esc(tf(l, 'd40_ds', { a: nf(past, l), n: nf(dated, l) }))) +
 tile(t(l, 'd40_pl'), pc(pn, n), esc(tf(l, 'd40_ps', { a: nf(pn, l), n: nf(n, l) }))) +
-tile(t(l, 'd40_rl'), pc(rg, n), esc(tf(l, 'd40_rs', { a: nf(rg, l), n: nf(n, l) }))) +
+tile(t(l, 'd40_rl'), pc(rg, n), esc(tf(l, 'd40_rs', { a: nf(rg, l), n: nf(n, l) })))) +
 '<div class="d40-t"><p class="d40-l">' + esc(t(l, 'd40_hl')) + '</p><p class="d40-v">' + bdi(nf(fut, l)) + '</p><ul class="d40-b">' + keys.map(x => { const v = yr.get(x) || 0; return '<li><span>' + esc(x === 'l' ? t(l, 'd40_later') : x) + '</span><i style="width:' + Math.max(v ? 3 : 0, Math.round(100 * v / mx)) + '%" aria-hidden="true"></i><span>' + nf(v, l) + '</span></li>'; }).join('') + '</ul><p class="d40-s">' + esc(tf(l, 'd40_hs', { n: nf(fut, l) })) + '</p></div>' +
 '</div><p class="d40-f">' + esc(tf(l, 'd40_ft', { n: nf(n, l), d: fd(D.built, l) })) + TB.kbx_n37u__t.k53 + pre(l) + '/data/dictionary/">' + esc(t(l, 'd40_dic')) + '</a></p></section>';
 }
@@ -502,7 +504,7 @@ return page(shell, l, Object.assign(o, { path: '/' + k + '/', body: b }));
 }
 async function slugsJson(env, ms) {
 const ix = await N.data(env), o = {};
-for (const [id, x] of ix.byId) if (x.s && x.mk && encodeURIComponent(String(x.mk).toLowerCase().replace(/\s+/g, '-')) === ms) o[id] = x.s;
+const nm = {}; for (const [id, x] of ix.byId) if (x.s && x.mk && encodeURIComponent(String(x.mk).toLowerCase().replace(/\s+/g, '-')) === ms) { o[id] = x.s; if (x.n) nm[id] = [x.n, x.dv || '']; } o._n = nm;   // n40 d9: names and developers for the market list rows
 return new Response(JSON.stringify(o), { status: 200, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'public, max-age=600', 'access-control-allow-origin': '*' } });
 }
 export async function errPage(u) {
@@ -1144,7 +1146,7 @@ return new HTMLRewriter().on('#n34-out', { element(e) { e.setAttribute('data-n37
 }
 else if (p === '') { const h = await homeBits(l, env); if (h) { add.push(['p.hero-sub', 'after', h[0]]); add.push(['#hp-band > .wrap', 'prepend', h[1]]); } }
 else if (p === 'yc/try/') add.push(['section.k27 .k-prose > ol', 'before', await progBlock(l, env)]);
-else if ((mm = /^m\/([^/.]{2,60})\/$/.exec(p))) { const mk = mBySlug(mm[1]); const dh = mk ? mkDash(l, mk) : ''; if (dh) add.push(l === 'en' ? ['#in-short', 'after', dh] : ['.k29-kv', 'after', dh]); const h = mk ? mkSection(l, mk) + kpMarket(l, mk) + '<div class="n37">' + areaBlock(l, mk) + nextBlock(l, mk) + '</div>' : ''; if (!h) return r; add.push(['#slippage', 'before', h]); }
+else if ((mm = /^m\/([^/.]{2,60})\/$/.exec(p))) { const mk = mBySlug(mm[1]); let kk = null; if (mk) try { kk = await (await import('./kbx_n29i.js')).mkKey(env, mm[1], l); } catch (e) {} const dh = mk ? mkDash(l, mk, kk) : ''; if (dh) add.push(l === 'en' ? ['#in-short', 'before', dh] : ['.k29-kv', 'before', dh]); const h = mk ? mkSection(l, mk) + kpMarket(l, mk) + '<div class="n37">' + areaBlock(l, mk) + nextBlock(l, mk) + '</div>' : ''; if (!h) return r; add.push(['#slippage', 'before', h]); }
 else if ((mm = /^developers\/([a-z0-9-]{2,90})\/$/.exec(p))) { const h = devSection(l, mm[1]); if (!h) return r; const dc = devCard(l, mm[1]); if (dc) add.push(['.phero .lead', 'after', dc]); add.push(['#projects', 'append', h + peers(l, mm[1]) + '<p class="n37-in"' + dir(l) + '><a href="' + pre(l) + '/developers/' + mm[1] + '/timeline/">' + esc(t(l, 'b_v_link')) + '</a></p>']); }
 else if ((mm = /^projects\/([a-z0-9-]{1,90})\/$/.exec(p))) {
 const x = IX.bySlug.get(mm[1]); if (!x) return r;

@@ -34,7 +34,7 @@
 
   function stageTags(C){
     var n = {}; C.forEach(function(c){ n[c.stage] = (n[c.stage] || 0) + 1; });
-    var t = ST.filter(function(s){ return n[s[0]]; }).map(function(s){ return '<span class="mk-tag"><b>' + n[s[0]] + '</b> ' + s[1] + '</span>'; });
+    var t = ST.filter(function(s){ return n[s[0]]; }).map(function(s){ return '<span class="mk-tag"><b>' + fmt(n[s[0]]) + '</b> ' + s[1] + '</span>'; });
     var other = C.length - ST.reduce(function(s, x){ return s + (n[x[0]] || 0); }, 0);
     if (other > 0) t.push('<span class="mk-tag"><b>' + other + '</b> stage not stated</span>');
     return t.join('');
@@ -49,7 +49,7 @@
       [pct(share(C, 'escrow')), 'publish deposit protection'],
       [pct(c4 / n), 'have 4 or more checks confirmed (' + c4 + ')'],
       [fmt(cl.verified) + ' / ' + fmt(cl.unverified) + ' / <em>' + fmt(cl.contradicted) + '</em>', 'developer claims verified / unverified / contradicted', 'cl'],
-      [fmt(C.filter(overdue).length), 'projects past their advertised completion'],
+      [pct(share(C, 'progress')), 'publish construction progress'],   // n40 d9: the delay counts now sit in the key figures at the top (named.json definitions)
       [fmt(C.filter(flagged).length), 'projects with problems in news, courts or regulators'],
       [fmt(C.filter(contra).length), 'projects with at least one contradicted claim']
     ];
@@ -76,33 +76,52 @@
   // r4u: the map is fetched next to the project data (data-src), so it no longer weighs on every market page
   var SLE = document.getElementById('kb-slugs'), SLP = (SLE && SLE.getAttribute('data-src') && window.fetch) ? fetch(SLE.getAttribute('data-src')).then(function(r){ return r.ok ? r.json() : {}; }).then(function(o){ for (var k in o) SLUGS[k] = o[k]; }).catch(function(){}) : null;
   function byScore(a, b){ return (b.score || 0) / (b.max || 6) - (a.score || 0) / (a.max || 6) || (b.vscore || 0) - (a.vscore || 0) || (a.id < b.id ? -1 : 1); }
+  var STB = { 'off-plan': ['Off-plan', 'op'], 'under construction': ['Under construction', 'uc'], 'completed': ['Completed, still selling', 'cp'] };
+  function nm(c){ var n = SLUGS._n && SLUGS._n[c.id]; return n ? n[0] : ''; }
   function row(c, showMarket){
     var bd = [];
     if (overdue(c)) bd.push((c.overdue ? '<span class="mk-b od">Overdue ' + c.overdue + ' mo</span>' : '<span class="mk-b od">Delayed ' + c.delay + ' mo</span>'));
     if (contra(c)) bd.push('<span class="mk-b ct">Contradicted</span>');
     if (flagged(c)) bd.push('<span class="mk-b fl">' + (c.flags.length === 1 ? '1 flag' : c.flags.length + ' flags') + '</span>');
-    var meta = [showMarket ? c.market : '', c.stage ? c.stage.charAt(0).toUpperCase() + c.stage.slice(1) : 'Stage not stated', c.band || 'Price not stated'].filter(Boolean).join(' · ');
-    return '<li><a class="mk-row" href="' + (SLUGS[c.id] ? '/projects/' + SLUGS[c.id] + '/' : '/p/' + encodeURIComponent(c.id) + '/') + '"><span class="id">' + esc(c.id) + '</span><span class="meta">' + esc(meta) + '</span>' +
-      '<span class="sc"><span class="mk-col">Published </span><b>' + (c.score || 0) + '</b>/' + (c.max || 6) + '</span>' +
-      '<span class="cf"><span class="mk-col">Confirmed </span><b>' + (c.vscore || 0) + '</b>/' + (c.max || 6) + '</span>' +
+    var n = SLUGS._n && SLUGS._n[c.id], sg = STB[c.stage] || ['Stage not stated', 'ns'];
+    var meta = [showMarket ? c.market : '', c.band || 'Price not stated'].filter(Boolean).join(', ');
+    var pub = c.score || 0, mx = c.max || 6, cf = c.vscore || 0;
+    return '<li><a class="mk-row" href="' + (SLUGS[c.id] ? '/projects/' + SLUGS[c.id] + '/' : '/p/' + encodeURIComponent(c.id) + '/') + '"><span class="id">' + (n ? '<span class="nm">' + esc(n[0]) + '</span><span class="dv">' + esc(n[1] ? n[1] + ', ' : '') + esc(c.id) + '</span>' : esc(c.id)) + '</span>' +
+      '<span class="meta"><span class="mk-st ' + sg[1] + '">' + sg[0] + '</span> ' + esc(meta) + '</span>' +
+      '<span class="sc"><span class="mk-col">Published </span><b>' + pub + '</b>/' + mx + '<i class="mk-m" aria-hidden="true"><i style="width:' + Math.round(100 * pub / mx) + '%"></i></i></span>' +
+      '<span class="cf"><span class="mk-col">Confirmed </span><b>' + cf + '</b>/' + mx + '<i class="mk-m cf" aria-hidden="true"><i style="width:' + Math.round(100 * cf / mx) + '%"></i></i></span>' +
       '<span class="bd">' + bd.join('') + '</span></a></li>';
   }
+  var SORTS = [['desc', 'Published, high to low'], ['asc', 'Published, low to high'], ['conf', 'Confirmed, high to low'], ['name', 'Name, A to Z']];
   function listSec(C, label, showMarket){
     var top = C.slice().sort(byScore).slice(0, 4).map(function(c){ return c.id; });
-    var h = '<section class="mk-sec" id="projects"><div class="wrap"><p class="eyebrow">Projects</p><h2>All ' + C.length + ' project' + (C.length === 1 ? '' : 's') + ' tracked in ' + esc(label) + '</h2>' +
-      '<p class="sub">Each project also has its own page with its name and sourced facts. Published is how many of the 6 checks the developer makes public; confirmed is how many an official or independent source backs.</p>' +
-      '<div class="mk-tools" role="group" aria-label="Sort projects"><span class="lbl">Sort</span>' +
-      '<button type="button" class="mk-sort" data-s="desc" aria-pressed="true">Score, high to low</button><button type="button" class="mk-sort" data-s="asc" aria-pressed="false">Score, low to high</button><button type="button" class="mk-sort" data-s="id" aria-pressed="false">ID</button></div>' + filt(C) +
-      '<ol class="mk-list" id="mk-list"></ol><div class="mk-acts">';
+    var h = '<section class="mk-sec" id="projects"><div class="wrap"><p class="eyebrow">Projects</p><h2>All ' + fmt(C.length) + ' project' + (C.length === 1 ? '' : 's') + ' tracked in ' + esc(label) + '</h2>' +
+      '<p class="sub">Published is how many of the 6 buyer checks the developer makes public; confirmed is how many an official or independent source backs. Open a project for its sourced facts.</p>' +
+      '<div class="mk-tools mk-sorts" role="group" aria-label="Sort projects"><span class="lbl">Sort</span>' +
+      SORTS.map(function(x, i){ return '<button type="button" class="mk-sort" data-s="' + x[0] + '" aria-pressed="' + (i ? 'false' : 'true') + '">' + x[1] + '</button>'; }).join('') + '</div>' + filt(C) +
+      '<ol class="mk-list" id="mk-list"></ol><div class="mk-more" id="mk-more"></div><div class="mk-acts">';
     if (top.length >= 2) h += '<a class="btn btn-hi" href="/compare/?ids=' + top.map(encodeURIComponent).join(',') + '">Compare the top ' + top.length + '</a>';
     h += '<a class="btn btn-line" href="/database#ask">Ask about this market</a></div></div></section>';
+    var hs = function(k, t, m){ var on = m === k || (k === 'desc' && m === 'asc'); return '<span' + (on ? ' class="on"' : '') + '><button type="button" class="mk-hs" data-s="' + (k === 'desc' && m === 'desc' ? 'asc' : k) + '" aria-label="Sort by ' + t.toLowerCase() + '">' + t + '<i aria-hidden="true">' + (on ? (m === 'asc' ? '↑' : '↓') : '↕') + '</i></button></span>'; };
+    var R = [], shown = 0, PAGE = 50;
+    function more(n){ var el = $('mk-list'), add = R.slice(shown, shown + n); if (add.length) el.insertAdjacentHTML('beforeend', add.join('')); shown += add.length; bar(); }
+    function bar(){ var mb = $('mk-more'); if (!mb) return; var left = R.length - shown;
+      mb.innerHTML = R.length ? '<p class="mk-cnt" role="status">Showing ' + fmt(shown) + ' of ' + fmt(R.length) + ' project' + (R.length === 1 ? '' : 's') + '</p>' + (left > 0 ? '<button type="button" class="btn btn-line" id="mk-mb">Show ' + Math.min(PAGE, left) + ' more</button>' + (left > PAGE ? '<button type="button" class="btn btn-line" id="mk-all">Show all ' + fmt(R.length) + '</button>' : '') : '') : '';
+      var b1 = $('mk-mb'), b2 = $('mk-all'); if (b1) b1.onclick = function(){ var f = shown; more(PAGE); focusRow(f); }; if (b2) b2.onclick = function(){ var f = shown; more(R.length); focusRow(f); }; }
+    function focusRow(i){ var a = document.querySelectorAll('#mk-list .mk-row')[i]; if (a) a.focus({ preventScroll: false }); }
     return { html: h, draw: function(mode){
-      var s = C.filter(pass).sort(byScore); if (mode === 'asc') s.reverse(); if (mode === 'id') s.sort(function(a, b){ return a.id < b.id ? -1 : 1; });
-      // n32s (item 259): the first 40 rows at once, the rest in slices of 80 between frames (482 rows for Dubai were one 300 ms task on a phone)
-      var R = s.map(function(c){ return row(c, showMarket); }), el = $('mk-list'), tok = (el._kt = (el._kt || 0) + 1), i = 40;
-      el.innerHTML = '<li class="mk-hd" aria-hidden="true"><span>Project</span><span>' + (showMarket ? 'Market, stage, price' : 'Stage, price') + '</span><span>Published</span><span>Confirmed</span><span>Signals</span></li>' + (R.length ? R.slice(0, i).join('') : '<li class="mk-none">No projects match these filters. <a href="?">Show all</a></li>');
-      var st = $('mk-fn'); if (st) st.textContent = (FIL.hy || FIL.pn) ? 'Showing ' + R.length + ' of ' + C.length + ' projects' : '';
-      (function more(){ if (el._kt !== tok || i >= R.length) return; el.insertAdjacentHTML('beforeend', R.slice(i, i + 80).join('')); i += 80; setTimeout(more, 30); })();
+      var s = C.filter(pass).sort(byScore); if (mode === 'asc') s.reverse();
+      if (mode === 'conf') s.sort(function(a, b){ return (b.vscore || 0) - (a.vscore || 0) || byScore(a, b); });
+      if (mode === 'name') s.sort(function(a, b){ var x = nm(a) || a.id, y = nm(b) || b.id; return x.localeCompare(y, 'en', { sensitivity: 'base' }); });
+      R = s.map(function(c){ return row(c, showMarket); }); shown = 0;
+      var el = $('mk-list');
+      // n40 d9: 50 rows at first and on each "Show more" (Dubai rendered all 1,154 rows, 62,000 px); the header row stays on screen while the list scrolls
+      el.innerHTML = '<li class="mk-hd">' + hs('name', 'Project', mode) + '<span>' + (showMarket ? 'Market, stage, price' : 'Stage, price') + '</span>' + hs('desc', 'Published', mode) + hs('conf', 'Confirmed', mode) + '<span>Signals</span></li>' +
+        (R.length ? '' : '<li class="mk-none"><p><b>No project matches these filters.</b> ' + fmt(C.length) + ' projects are tracked here; try another handover year or permit option.</p><button type="button" class="btn btn-line" id="mk-clr">Clear filters</button></li>');
+      more(PAGE);
+      var st = $('mk-fn'); if (st) st.textContent = (FIL.hy || FIL.pn) ? fmt(R.length) + ' of ' + fmt(C.length) + ' projects match' : '';
+      var clr = $('mk-clr'); if (clr) clr.onclick = function(){ ['mk-hy', 'mk-pn'].forEach(function(id){ var x = $(id); if (x) { x.value = ''; x.dispatchEvent(new Event('change')); } }); };
+      el.querySelectorAll('.mk-hs').forEach(function(b){ b.onclick = function(){ setMode(b.dataset.s); }; });
     } };
   }
   // n40 k4 (R02-41): filter by handover year and permit number without a reload; the state lives in the URL (?hy=2027&pn=yes), so a filtered list can be shared
@@ -116,8 +135,10 @@
       '<label>Permit number <select id="mk-pn">' + o('', 'Any', FIL.pn) + o('yes', 'Published', FIL.pn) + o('no', 'Not published', FIL.pn) + '</select></label>' +
       '<span class="mk-fn" id="mk-fn" role="status" aria-live="polite"></span></div>';
   }
+  var setMode = function(){};
   function wireSort(draw){
     var mode = 'desc';
+    setMode = function(m){ mode = m; document.querySelectorAll('.mk-sort').forEach(function(x){ x.setAttribute('aria-pressed', x.dataset.s === m ? 'true' : 'false'); }); draw(mode); };
     draw(mode);
     ['mk-hy', 'mk-pn'].forEach(function(id){ var el = $(id); if (el) el.addEventListener('change', function(){
       FIL[id === 'mk-hy' ? 'hy' : 'pn'] = el.value;
@@ -125,9 +146,7 @@
       try { history.replaceState(null, '', location.pathname + (q.toString() ? '?' + q : '') + location.hash); } catch (e) {}
       draw(mode);
     }); });
-    document.querySelectorAll('.mk-sort').forEach(function(b){ b.addEventListener('click', function(){
-      document.querySelectorAll('.mk-sort').forEach(function(x){ x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); }); mode = b.dataset.s; draw(mode);
-    }); });
+    document.querySelectorAll('.mk-sort').forEach(function(b){ b.addEventListener('click', function(){ setMode(b.dataset.s); }); });
   }
   function chips(list, cur){ return '<ul class="mk-mk">' + list.map(function(x){ return '<li><a href="' + x.href + '"' + (x.name === cur ? ' aria-current="page"' : '') + '>' + esc(x.name) + ' <small>' + x.n + '</small></a></li>'; }).join('') + '</ul>'; }
   function cta(){ return '<section class="mk-sec mk-cta"><div class="wrap"><p class="eyebrow">Buying here?</p><h2>Check the project you are looking at</h2><p class="sub">Paste a listing and see what the developer publishes and what nobody has confirmed yet.</p><div class="mk-acts"><a class="btn btn-hi" href="/check">Check a project</a><a class="btn btn-line" href="/transparency-index/">Transparency index</a></div></div></section>'; }
@@ -159,8 +178,8 @@
     var sibs = Object.keys(sib).sort();
     $('mk-crumb').innerHTML = ' / ' + esc(market);
     $('mk-root').innerHTML = '<p class="eyebrow">Market file · ' + esc(country) + '</p><h1 id="mk-h1">Off-plan in ' + esc(market) + '</h1>' +
-      '<p class="lead">' + C.length + ' project' + (C.length === 1 ? '' : 's') + ' tracked in ' + esc(place) + '. What developers publish, what an official or independent source confirms, and what is contradicted. Data updated ' + esc(K.fmtDate ? K.fmtDate(d.updated) : d.updated) + '.</p>' +
-      '<div class="mk-tags"><span class="mk-tag">' + esc(country) + '</span><span class="mk-tag"><b>' + C.length + '</b> project' + (C.length === 1 ? '' : 's') + ' tracked</span>' + stageTags(C) + '</div>' + tiBlock(r, K.MIN || 3, R.rows.length);
+      '<p class="lead">' + fmt(C.length) + ' project' + (C.length === 1 ? '' : 's') + ' tracked in ' + esc(place) + '. What developers publish, what an official or independent source confirms, and what is contradicted. Data updated ' + esc(K.fmtDate ? K.fmtDate(d.updated) : d.updated) + '.</p>' +
+      '<div class="mk-tags"><span class="mk-tag">' + esc(country) + '</span><span class="mk-tag"><b>' + fmt(C.length) + '</b> project' + (C.length === 1 ? '' : 's') + ' tracked</span>' + stageTags(C) + '</div>' + tiBlock(r, K.MIN || 3, R.rows.length);
     var L = listSec(C, market, false);
     $('mk-body').innerHTML =
       '<section class="mk-sec"><div class="wrap"><p class="eyebrow">Key numbers</p><h2>What ' + esc(market) + ' developers publish</h2>' + kpis(C) + '</div></section>' +
@@ -195,7 +214,7 @@
     $('mk-crumb').innerHTML = ' / ' + esc(country);
     $('mk-root').innerHTML = '<p class="eyebrow">Country file</p><h1 id="mk-h1">Off-plan in ' + esc(country) + '</h1>' +
       '<p class="lead">' + C.length + ' projects tracked across ' + ms.length + ' market' + (ms.length === 1 ? '' : 's') + ' in ' + esc(country) + '. Data updated ' + esc(K.fmtDate ? K.fmtDate(d.updated) : d.updated) + '.</p>' +
-      '<div class="mk-tags"><span class="mk-tag"><b>' + ms.length + '</b> market' + (ms.length === 1 ? '' : 's') + '</span><span class="mk-tag"><b>' + C.length + '</b> project' + (C.length === 1 ? '' : 's') + ' tracked</span>' + stageTags(C) + '</div>';
+      '<div class="mk-tags"><span class="mk-tag"><b>' + ms.length + '</b> market' + (ms.length === 1 ? '' : 's') + '</span><span class="mk-tag"><b>' + fmt(C.length) + '</b> project' + (C.length === 1 ? '' : 's') + ' tracked</span>' + stageTags(C) + '</div>';
     var L = listSec(C, country, true);
     $('mk-body').innerHTML =
       '<section class="mk-sec"><div class="wrap"><p class="eyebrow">Markets</p><h2>Markets in ' + esc(country) + '</h2><p class="sub">Transparency index and rank of ' + R.rows.length + ' where a market has at least ' + (K.MIN || 3) + ' projects.</p><div class="mk-cards">' + ms.map(function(m){
