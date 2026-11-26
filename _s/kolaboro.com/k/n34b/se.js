@@ -21,8 +21,11 @@
     }).catch(function () { busy = null; return null; });
     return busy;
   }
-  function match(rows, q) {
-    var qa = window.kbAlias ? window.kbAlias(q) : null; if (qa) q = qa;   // n35a: alias table (/data/aliases/)
+  function match(rows, q) {   // n40 k38: alias hits first, then everything else that matches the words typed (searching Emaar also finds Emaar Misr)
+    var qa = window.kbAlias ? window.kbAlias(q) : null; if (qa && qa !== q) { var A = match0(rows, qa), S = new Set(A); return A.concat(match0(rows, q).filter(function (r) { return !S.has(r); })); }
+    return match0(rows, q);
+  }
+  function match0(rows, q) {
     var qs = norm(q).split(' ').filter(Boolean); if (!qs.length) return rows.slice();
     var out = [];
     rows.forEach(function (r) { var s = 0; for (var i = 0; i < qs.length; i++) { var w = qs[i], k = r.h.indexOf(w); if (k < 0) return; s += (r.hn.indexOf(w) === 0 ? 6 : r.hn.indexOf(w) >= 0 ? 4 : 1) + (k === 0 || r.h[k - 1] === ' ' ? 1 : 0); } out.push([s, r]); });
