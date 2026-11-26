@@ -26,7 +26,8 @@
     "JP": "Japan",
     "GB": "United Kingdom",
     "TR": "Turkey",
-    "CR": "Costa Rica"
+    "CR": "Costa Rica",
+    "CY": "Cyprus"
   },
   "sources": {
     "id-pp18-2021": {
@@ -182,6 +183,14 @@
       "language": "es",
       "read": "2026-11-26",
       "note": "Current version as served by SCIJ (version 2 of 2) of the decree dated 9 April 2021; some definitions in article 2 were amended by Decree 43673 of 26 July 2022."
+    },
+    "cy-81-2011": {
+      "law": "Sale of Immovable Property (Specific Performance) Law 81(I)/2011, as amended by Law 132(I)/2023",
+      "publisher": "Official Gazette of the Republic of Cyprus, No. 4971, Annex I, Part I, 12 December 2023 (Government Printing Office, mof.gov.cy)",
+      "url": "https://www.mof.gov.cy/mof/gpo/gazette.nsf/E927BDD380ADE5ACC2258A83005025A9/$file/4971%2012%2012%202023%20PARARTIMA%201o%20MEROS%20I.pdf",
+      "language": "el",
+      "read": "2026-11-26",
+      "note": "Quoted from amending Law 132(I)/2023, in force since 12 December 2023 according to the Department of Lands and Surveys; section numbers are those of the base law 81(I)/2011."
     }
   },
   "rules": [
@@ -931,6 +940,66 @@
       "cite": "Article 26",
       "quote": "Artículo 26.-Sobre la responsabilidad de devolución del 100% de los aportes. En caso de incumplimiento de contrato por parte del comerciante o responsable del plan, el consumidor o promitente comprador tiene derecho a la devolución del 100% de los aportes o sumas pagadas por concepto de primas, pagos extraordinarios o abonos adicionales. Para tales efectos el comerciante o responsable del plan deberá devolver la diferencia entre el dinero registrado en la subcuenta individual a nombre del consumidor que tenga el fiduciario en su poder y el total del aporte entregado por el consumidor o promitente comprador; lo anterior de conformidad con lo establecido en los artículos 32 inciso b), 34 incisos a) y b); 53 y 57 de la Ley N° 7472.",
       "translation": "If the trader or person responsible for the plan breaches the contract, the consumer or promissory buyer has the right to the return of 100% of the contributions or sums paid as down payments, extraordinary payments or additional instalments. For this purpose the trader or person responsible for the plan must return the difference between the money recorded in the consumer's individual sub-account held by the trustee and the total contribution delivered by the consumer or promissory buyer, in accordance with articles 32(b), 34(a) and (b), 53 and 57 of Law No. 7472.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "cy-search-certificate",
+      "market": "CY",
+      "topics": [
+        "title",
+        "parties"
+      ],
+      "title": "In Cyprus, the seller must attach a recent land search certificate to the sale contract",
+      "plain": "For contracts signed since the 2023 amendment took effect, the seller must attach to the contract a search certificate of the property, dated no more than five working days from the day the contract is signed. The certificate shows the mortgages and other charges on the property. A seller who does not attach it can be fined up to EUR 10,000 by the Director of the Department of Lands and Surveys. Read the certificate before you pay.",
+      "source": "cy-81-2011",
+      "cite": "Section 4(1A) and (1B)",
+      "quote": "(1Α) Ανεξάρτητα από τις διατάξεις του περί Συμβάσεων Νόμου, ο πωλητής περιλαμβάνει ως αναπόσπαστο μέρος της σύμβασης, η οποία συνομολογείται μετά από την ημερομηνία έναρξης της ισχύος του περί Πώλησης Ακινήτων (Ειδική Εκτέλεση) (Τροποποιητικού) Νόμου του 2023, πιστοποιητικό έρευνας της ακίνητης ιδιοκτησίας η οποία αποτελεί αντικείμενο της σύμβασης, το οποίο φέρει ημερομηνία που δεν διαφέρει από την ημερομηνία υπογραφής της σύμβασης πέραν των πέντε (5) εργάσιμων ημερών. (1Β) Ανεξάρτητα από το εάν συντρέχει περίπτωση ποινικής ευθύνης δυνάμει των διατάξεων του παρόντος Νόμου, σε περίπτωση κατά την οποία πωλητής παραλείπει να συμμορφωθεί με την προβλεπόμενη στις διατάξεις του εδαφίου (1Α) υποχρέωση, ο Διευθυντής δύναται να επιβάλει σε αυτόν διοικητικό πρόστιμο το οποίο δεν υπερβαίνει τις δέκα χιλιάδες ευρώ (€10.000) [...]",
+      "translation": "(1A) Notwithstanding the provisions of the Contract Law, the seller includes as an integral part of the contract, concluded after the date on which the Sale of Immovable Property (Specific Performance) (Amending) Law of 2023 comes into force, a search certificate of the immovable property that is the subject of the contract, bearing a date that does not differ from the date the contract is signed by more than five (5) working days. (1B) Regardless of any criminal liability under this Law, where a seller fails to comply with the obligation in subsection (1A), the Director may impose on the seller an administrative fine not exceeding ten thousand euro (EUR 10,000) [...]",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "cy-mortgage-declaration",
+      "market": "CY",
+      "topics": [
+        "title",
+        "payment"
+      ],
+      "title": "If the property is already mortgaged, your contract is deposited only with a written declaration",
+      "plain": "When the only charges on the property are an existing mortgage or an earlier deposited contract, the Land Registry accepts your sale contract for deposit only together with a written declaration: either one by each mortgage lender and the seller (Form A), which you have signed to show you know it, or one by you as the buyer (Form C). Form A is what later lets you pay off the lender and take the property free of the mortgage.",
+      "source": "cy-81-2011",
+      "cite": "Section 3A",
+      "quote": "3A. Τηρουμένων των διατάξεων των παραγράφων (α), (β) και (γ) του εδαφίου (1) του άρθρου 3, σε περίπτωση κατά την οποία τα μοναδικά εμπράγματα βάρη στα οποία υπόκειται η ακίνητη ιδιοκτησία η οποία αποτελεί αντικείμενο της σύμβασης, είναι ήδη κατατεθειμένη υποθήκη ή κατατεθειμένη σύμβαση και ο εγγεγραμμένος ιδιοκτήτης αυτής δεν τελεί υπό απαγόρευση, η κατάθεση της σύμβασης από οποιοδήποτε από τα συμβαλλόμενα μέρη γίνεται αποδεκτή μόνο εάν συνοδεύεται από έγγραφη δήλωση: (α) εκάστου ενυπόθηκου δανειστή και πωλητή για την οποία ο αγοραστής ενυπογράφως έλαβε γνώση, κατά τον Τύπο Α του Παραρτήματος· ή (β) του αγοραστή κατά τον Τύπο Γ του Παραρτήματος.",
+      "translation": "3A. Subject to paragraphs (a), (b) and (c) of subsection (1) of section 3, where the only real charges on the immovable property that is the subject of the contract are an already deposited mortgage or an already deposited contract, and its registered owner is not under a prohibition, the deposit of the contract by any of the contracting parties is accepted only if it is accompanied by a written declaration: (a) of each mortgage lender and the seller, of which the buyer has taken notice by signing, in Form A of the Annex; or (b) of the buyer, in Form C of the Annex.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "cy-pay-named-account",
+      "market": "CY",
+      "topics": [
+        "payment",
+        "escrow"
+      ],
+      "title": "With a mortgage on the property, you pay into the seller account named in Form A and the lender must release it",
+      "plain": "If a mortgage was already registered when your contract was deposited with Form A, you pay the amount set in Form A into the seller bank account named in the declaration, and the lender must accept it. Every amount paid into that account, including a deposit paid at signing, counts as payment of the price. The lender must then give you a payment confirmation (Form B) and release the property from the mortgage. A lender that wilfully fails to do so can be fined up to EUR 100,000.",
+      "source": "cy-81-2011",
+      "cite": "Section 5(2A)",
+      "quote": "(2Α)(α) Ανεξάρτητα από τις διατάξεις του περί Μεταβιβάσεως και Υποθηκεύσεως Ακινήτων Νόμου, σε περίπτωση κατά την οποία πριν από την κατάθεση σύμβασης, η οποία συνοδεύεται από τον Τύπο Α του Παραρτήματος, σύμφωνα με τις διατάξεις του άρθρου 3Α, υπάρχει ήδη κατατεθειμένη υποθήκη η οποία επιβαρύνει την ακίνητη ιδιοκτησία η οποία αποτελεί το αντικείμενο της σύμβασης, ο αγοραστής και/ή ο πωλητής, σε περίπτωση κατά την οποία ο τελευταίος έλαβε προκαταβολή από τον αγοραστή κατά την υπογραφή της σύμβασης, καταθέτει σε τραπεζικό λογαριασμό του πωλητή, ο οποίος καθορίζεται στην έγγραφη δήλωση, το ποσό το οποίο καθορίζεται στον Τύπο Α του Παραρτήματος και ο ενυπόθηκος δανειστής υποχρεούται να το αποδεχθεί. [...] (γ) Ο ενυπόθηκος δανειστής με την αποδοχή του ποσού το οποίο καθορίζεται στον Τύπο Α του Παραρτήματος δίδει στον αγοραστή γραπτή βεβαίωση πληρωμής κατά τον Τύπο Β του Παραρτήματος και απαλλάσσει ή εξαλείφει την ακίνητη ιδιοκτησία η οποία αποτελεί αντικείμενο της σύμβασης από την εν λόγω υποθήκη [...]",
+      "translation": "(2A)(a) Notwithstanding the provisions of the Immovable Property (Transfer and Mortgage) Law, where, before the deposit of a contract accompanied by Form A of the Annex under section 3A, there is already a deposited mortgage on the immovable property that is the subject of the contract, the buyer and/or the seller, where the latter received a deposit from the buyer when the contract was signed, pays into the seller bank account named in the written declaration the amount set in Form A of the Annex, and the mortgage lender is obliged to accept it. [...] (c) On accepting the amount set in Form A of the Annex, the mortgage lender gives the buyer a written payment confirmation in Form B of the Annex and releases or discharges the immovable property that is the subject of the contract from that mortgage [...]",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "cy-transfer-free",
+      "market": "CY",
+      "topics": [
+        "title",
+        "completion"
+      ],
+      "title": "Once the lender confirms payment, the property is transferred to you free of later charges",
+      "plain": "For a contract deposited with Form A after the amendment took effect, once the payment confirmation (Form B) has been issued, any district Land Registry office accepts the transfer, and the property passes to you regardless of charges or prohibitions on the property or its owner that rank after your contract. If the lender does not act, the Director of the Department of Lands and Surveys transfers the property into your name when you bring Form B signed and stamped by the lender.",
+      "source": "cy-81-2011",
+      "cite": "Section 5(8) and (9)",
+      "quote": "(8) Ανεξάρτητα από τις διατάξεις του περί Μεταβιβάσεως και Υποθηκεύσεως Ακινήτων Νόμου, σε περίπτωση μεταβίβασης ακίνητης ιδιοκτησίας η οποία αποτελεί το αντικείμενο σύμβασης η οποία κατατέθηκε στο αρμόδιο Επαρχιακό Κτηματολογικό Γραφείο μετά από την ημερομηνία έναρξης της ισχύος του περί Πώλησης Ακινήτων (Ειδική Εκτέλεση) (Τροποποιητικού) Νόμου του 2023 και συνοδεύεται από τον Τύπο Α του Παραρτήματος, και νοουμένου ότι έχει εκδοθεί ο Τύπος Β του Παραρτήματος, η δήλωση μεταβίβασης γίνεται αποδεκτή σε οποιοδήποτε αρμόδιο Επαρχιακό Κτηματολογικό Γραφείο και η ακίνητη ιδιοκτησία μεταβιβάζεται ανεξάρτητα από οποιαδήποτε εμπράγματα βάρη ή απαγορεύσεις τα οποία τυχόν βαρύνουν την ακίνητη ιδιοκτησία ή τον ιδιοκτήτη της και τα οποία ακολουθούν κατά προτεραιότητα τη σύμβαση [...] (9) Σε περίπτωση κατά την οποία ο ενυπόθηκος δανειστής παραλείψει να ενεργήσει σύμφωνα με τις διατάξεις του παρόντος άρθρου, και νοουμένου ότι ο αγοραστής έχει προσκομίσει τη βεβαίωση πληρωμής, κατά τον Τύπο Β του Παραρτήματος, δεόντως υπογραμμένη και σφραγισμένη από τον ενυπόθηκο δανειστή, ο Διευθυντής μεταβιβάζει επ’ ονόματι του αγοραστή την ακίνητη ιδιοκτησία, ανεξάρτητα από οποιαδήποτε εμπράγματα βάρη ή απαγορεύσεις τα οποία τυχόν βαρύνουν την ακίνητη ιδιοκτησία ή τον ιδιοκτήτη της και τα οποία ακολουθούν κατά προτεραιότητα τη σύμβαση.",
+      "translation": "(8) Notwithstanding the provisions of the Immovable Property (Transfer and Mortgage) Law, in a transfer of immovable property that is the subject of a contract deposited at the competent District Land Registry after the Sale of Immovable Property (Specific Performance) (Amending) Law of 2023 comes into force and accompanied by Form A of the Annex, and provided that Form B of the Annex has been issued, the declaration of transfer is accepted at any competent District Land Registry and the property is transferred regardless of any real charges or prohibitions that may burden the property or its owner and that rank after the contract [...] (9) Where the mortgage lender fails to act under this section, and provided that the buyer has produced the payment confirmation in Form B of the Annex, duly signed and stamped by the mortgage lender, the Director transfers the property into the name of the buyer, regardless of any real charges or prohibitions that may burden the property or its owner and that rank after the contract.",
       "checked": "2026-11-26"
     }
   ]
