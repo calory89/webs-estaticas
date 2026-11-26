@@ -121,7 +121,7 @@ function marketPage(D, m, lang) {
 }
 // English /m/<market>/: hreflang alternates when the market has translated files (index.js appends them to <head>)
 export async function mAlternates(env, key) {
-  let D; try { D = await mdata(env); } catch (e) { return ''; } const m = findMk(D, key); if (!m) return '';
+  let D; try { D = await mdata(env); } catch (e) { return ''; } const m = findMk(D, key); if (!m) return /^[a-z0-9-]{2,80}$/.test(key || '') ? '<link rel="alternate" hreflang="x-default" href="' + ORIGIN + '/m/' + key + '/">' : '';   // n40 k11 (R05-01): a market with no translated file says so with one x-default (its /xx/ URLs answer 301)
   const p = '/m/' + slugM(m.mk) + '/'; return LANGS.map(l => '<link rel="alternate" hreflang="' + l + '" href="' + ORIGIN + pre(l) + p + '">').join('') + '<link rel="alternate" hreflang="x-default" href="' + ORIGIN + p + '">';
 }
 // is there a translated market file? (for links from other pages)

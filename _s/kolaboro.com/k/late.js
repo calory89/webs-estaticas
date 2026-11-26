@@ -50,7 +50,7 @@
     if (mv > 0) L.push(th('mvn', { n: nf(mv) }));
     L.push(p[16] ? th('rg', { r: p[16], d: fd(p[17]) }) : th('nrg'));
     L.push(th('pn', { v: p[11] ? S.y : S.n }));
-    var meta = [p[3], p[5], p[6]].filter(Boolean).map(esc).join(', ');
+    var meta = [p[3], p[5], p[6]].filter(function (x, i, a) { return x && a.indexOf(x) === i; }).map(esc).join(', ');
     return '<p><b><bdi>' + esc(p[1]) + '</bdi></b>' + (meta ? ' <small>' + meta + '</small>' : '') + '</p>' + (v[1] ? '<p class="v ' + v[0] + '">' + esc(v[1]) + '</p>' : '') +
       '<ul>' + L.map(function (x) { return '<li>' + x + '</li>'; }).join('') + '</ul><p><a href="' + S.pre + '/projects/' + encodeURIComponent(p[0]) + '/">' + esc(S.open) + '</a></p><p><small>' + esc(tf('src', { d: fd(IX.updated) })) + '</small></p>';
   }
