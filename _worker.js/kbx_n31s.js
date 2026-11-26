@@ -128,7 +128,7 @@ async function glossaryExamples(env) {
   }
   GX = { ix, M }; return M;
 }
-const exHtml = (L, lang) => L && L.length ? '<ul class="n31-ex" aria-label="' + esc(t(lang, 'gl_ex')) + '"><li><b>' + esc(t(lang, 'gl_ex')) + '</b></li>' + L.map(e => '<li><a href="' + pre(lang) + '/projects/' + e.s + '/"><bdi>' + esc(e.n) + '</bdi></a> (<bdi>' + esc(mkName(e.mk, lang)) + '</bdi>): <q lang="en">' + esc(e.q) + '</q></li>').join('') + '</ul>' : '';
+const exHtml = (L, lang) => L && L.length ? '<ul class="n31-ex" aria-label="' + esc(t(lang, 'gl_ex')) + '"><li><b>' + esc(t(lang, 'gl_ex')) + '</b></li>' + L.map(e => '<li><a href="' + pre(lang) + '/projects/' + e.s + '/"><bdi>' + esc(e.n) + '</bdi></a> (<bdi>' + esc(mkName(e.mk, lang)) + '</bdi>): <q lang="' + ((e.q.match(/[\u0400-\u04FF]/g) || []).length > (e.q.match(/[A-Za-z]/g) || []).length ? 'ru' : 'en') + '">' + esc(e.q) + '</q></li>').join('') + '</ul>' : '';
 const GL_MORE = { escrow: ['/glossary/escrow/', 'gl_m_escrow'], freehold: ['/glossary/leasehold/', 'gl_m_lease'], leasehold: ['/glossary/leasehold/', 'gl_m_lease'], 'milestone-payment': ['/glossary/payment-plan/', 'gl_m_plan'] };
 async function glossaryPage(u, env, shell, lang) {
   const src = await asset(env, '/glossary/', 'text'); if (!src) return null;

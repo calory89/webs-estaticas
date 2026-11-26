@@ -134,7 +134,7 @@ function trChart(l, d) {
   const W = 640, Hh = 190, L0 = 34, B0 = 26, n = d.days.length, mx = Math.max(1, ...d.days.map(r => r[1]));
   const x = i => L0 + (n === 1 ? (W - L0 - 10) / 2 : i * (W - L0 - 10) / (n - 1)), y = v => Hh - B0 - v / mx * (Hh - B0 - 12);
   const lab = t(l, 'tr_s');
-  let s = '<svg viewBox="0 0 ' + W + ' ' + Hh + '" width="' + W + '" height="' + Hh + '" role="img" aria-label="' + esc(fill(t(l, 'tr_alt'), { n: d.n })) + '"><g font-size="11" fill="currentColor">';
+  let s = '<svg viewBox="0 0 ' + W + ' ' + Hh + '" width="' + W + '" height="' + Hh + '" role="img" aria-label="' + esc(fill(t(l, 'tr_alt'), { n: d.n })) + '" direction="ltr" style="direction:ltr"><g font-size="11" fill="currentColor">';
   s += '<line x1="' + L0 + '" y1="' + y(0) + '" x2="' + (W - 10) + '" y2="' + y(0) + '" stroke="currentColor" stroke-opacity=".3"/><text x="' + (L0 - 4) + '" y="' + (y(mx) + 4) + '" text-anchor="end">' + mx + '</text><text x="' + (L0 - 4) + '" y="' + (y(0) + 4) + '" text-anchor="end">0</text>';
   [0, n - 1].forEach(i => { s += '<text x="' + x(i) + '" y="' + (Hh - 8) + '" text-anchor="' + (i ? 'end' : 'start') + '">' + esc(fd(d.days[i][0], l)) + '</text>'; });
   for (const [k, j] of TR_COLS) s += '<polyline fill="none" stroke="' + TR_COL[k] + '" stroke-width="2" points="' + d.days.map((r, i) => x(i).toFixed(1) + ',' + y(r[j] || 0).toFixed(1)).join(' ') + '"/>';

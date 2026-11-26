@@ -10,7 +10,7 @@
   var el = function (t, c, x) { var e = document.createElement(t); if (c) e.className = c; if (x != null) e.textContent = x; return e; };
   var esc2 = function (s) { var x = document.createElement('i'); x.textContent = s; return x.innerHTML; };
   var mapEl = MP.querySelector('.kmp-m'), listEl = MP.querySelector('.kmp-l'), cnt = MP.querySelector('.kmp-n'), fm = MP.querySelector('form'), leg = MP.querySelector('.kmp-leg'), data = null, map = null, layer = null, heat = null, lim = 60, Lf = null, fit = true;
-  var KEYS = ['co', 'yr', 'pm', 'sc', 'dl', 'rg', 'hm'];   // r10u (batch 37): rg = at least N key facts read in an official register
+  var KEYS = ['co', 'yr', 'pm', 'sc', 'dl', 'rg', 'hm', 'rk'];   // n40 (R03-41): rk = register layer (square pins: at least 1 key fact read in an official register)   // r10u (batch 37): rg = at least N key facts read in an official register
   var A3 = { en: ['Draw an area', 'Stop drawing', 'Use this view as the area', 'Clear the area', 'Drag on the map to draw a rectangle. Press Escape to stop.', '{k} projects inside the area', '{k} projects in this group'],
     es: ['Dibujar una zona', 'Dejar de dibujar', 'Usar esta vista como zona', 'Borrar la zona', 'Arrastre sobre el mapa para dibujar un rectángulo. Pulse Escape para parar.', '{k} proyectos dentro de la zona', '{k} proyectos en este grupo'],
     fr: ['Dessiner une zone', 'Arrêter de dessiner', 'Utiliser cette vue comme zone', 'Effacer la zone', 'Faites glisser sur la carte pour dessiner un rectangle. Échap pour arrêter.', '{k} projets dans la zone', '{k} projets dans ce groupe'],
@@ -23,6 +23,21 @@
   var area = null, rect = null, drawing = false;   // area = [south, west, north, east]
   (function () { var a = (new URLSearchParams(location.search).get('a') || '').split(',').map(Number); if (a.length === 4 && a.every(isFinite) && a[0] < a[2] && a[1] < a[3]) area = a; })();
   var inA = function (la, ln) { return !area || (la >= area[0] && la <= area[2] && ln >= area[1] && ln <= area[3]); };
+  var A4 = { en: ['Register layer', 'Square: at least 1 key fact read in an official register. Circle: none found in a register.', 'Register-confirmed', 'Not found in a register'],
+    es: ['Capa de registro', 'Cuadrado: al menos 1 dato clave leído en un registro oficial. Círculo: ninguno encontrado en un registro.', 'Confirmado en registro', 'No hallado en un registro'],
+    fr: ['Couche registre', 'Carré : au moins 1 donnée clé lue dans un registre officiel. Rond : aucune trouvée dans un registre.', 'Confirmé par un registre', 'Absent des registres'],
+    de: ['Register-Ebene', 'Quadrat: mindestens 1 Kernangabe in einem amtlichen Register gelesen. Kreis: keine in einem Register gefunden.', 'Im Register bestätigt', 'In keinem Register gefunden'],
+    nl: ['Registerlaag', 'Vierkant: minstens 1 kerngegeven gelezen in een officieel register. Cirkel: geen gevonden in een register.', 'Bevestigd in register', 'Niet gevonden in een register'],
+    ru: ['Слой реестра', 'Квадрат: хотя бы 1 ключевой факт прочитан в официальном реестре. Круг: в реестрах ничего не найдено.', 'Подтверждено реестром', 'В реестрах не найдено'],
+    zh: ['登记图层', '方形：至少 1 项关键信息见于官方登记。圆形：登记中未找到。', '登记已确认', '登记中未找到'],
+    ar: ['طبقة السجل', 'مربع: معلومة أساسية واحدة على الأقل قرأناها في سجل رسمي. دائرة: لم نجد أيًّا منها في سجل.', 'مؤكَّد في سجل رسمي', 'غير موجود في سجل'] };
+  var T4 = A4[LG] || A4.en, RKC = ['#0B7A55', '#6B7680'];
+  (function () { if (fm.elements.rk) return; var hm = fm.querySelector('.kmp-hm'), lb = el('label', 'kmp-hm'), cb = el('input'); cb.type = 'checkbox'; cb.id = 'kmp-rk'; cb.name = 'rk'; cb.value = '1'; lb.htmlFor = 'kmp-rk'; lb.appendChild(cb); lb.appendChild(document.createTextNode(' ')); lb.appendChild(el('span', null, T4[0]));
+    if (hm && hm.parentNode) hm.parentNode.insertBefore(lb, hm.nextSibling); else fm.appendChild(lb);
+    var lg = el('p', 'kmp-rleg'); lg.hidden = true; lg.innerHTML = '<span class="kmp-k"><i class="kmp-sq" style="background:' + RKC[0] + '"></i>' + esc2(T4[2]) + '</span> <span class="kmp-k"><i class="kmp-ci" style="background:' + RKC[1] + '"></i>' + esc2(T4[3]) + '</span> <small>' + esc2(T4[1]) + '</small>';
+    var at = leg || mapEl; at.parentNode.insertBefore(lg, at);
+    var st = el('style'); st.textContent = '#kmp-rk{width:24px;height:24px}.kmp-rleg{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin:0 0 8px;font-size:.88rem}.kmp-rleg small{flex-basis:100%;color:var(--k-muted,#56636F)}.kmp-rleg i{display:inline-block;width:12px;height:12px;margin-inline-end:6px;vertical-align:-1px;border:1.5px solid #fff;box-shadow:0 0 0 1px #0004}.kmp-rleg .kmp-ci{border-radius:50%}.kmp-rk{display:block;border:2px solid #fff;box-shadow:0 0 0 1px #0006}.kmp-rk.c{border-radius:50%}.kmp-rt{font-weight:600}';
+    document.head.appendChild(st); })();
   var q = function (n) { var e = fm.elements[n]; return !e ? '' : e.type === 'checkbox' ? (e.checked ? '1' : '') : e.value; };
   var params = new URLSearchParams(location.search); KEYS.forEach(function (k) { var e = fm.elements[k], v = params.get(k); if (!e || !v) return; if (e.type === 'checkbox') e.checked = v === '1'; else e.value = v; });
   var col = function (m) { return m >= 12 ? '#C2341B' : m >= 6 ? '#E8772E' : '#F2B544'; };
@@ -42,10 +57,10 @@
       grp = grp.filter(Boolean); }
     cells = {}; grp.forEach(function (g, i) { cells[i] = g.L; });
     Object.keys(cells).forEach(function (k) { var L = cells[k];
-      if (L.length === 1 || z >= 15) { L.forEach(function (p) { var m = Lf.circleMarker([p[4], p[5]], { radius: 6, weight: 1.5, color: '#fff', fillColor: p[9] > 0 ? col(p[9]) : '#155C75', fillOpacity: .92 });
-        m.bindPopup('<b>' + esc2(p[1]) + '</b><br>' + esc2(p[2]) + (p[6] ? ' · ' + p[6] : '') + (p[9] > 0 ? '<br>' + esc2(f('mh_late', { m: p[9] })) : '') + '<br><a href="' + PRE + '/projects/' + p[0] + '/">' + esc2(f('mpo')) + '</a>'); m.addTo(layer); }); return; }
+      if (L.length === 1 || z >= 15) { L.forEach(function (p) { var ok = (p[10] || 0) > 0, m = q('rk') === '1' ? Lf.marker([p[4], p[5]], { icon: Lf.divIcon({ className: '', html: '<i class="kmp-rk' + (ok ? '' : ' c') + '" style="width:14px;height:14px;background:' + RKC[ok ? 0 : 1] + '"></i>', iconSize: [14, 14] }), title: p[1] + ': ' + T4[ok ? 2 : 3], alt: p[1] + ': ' + T4[ok ? 2 : 3] }) : Lf.circleMarker([p[4], p[5]], { radius: 6, weight: 1.5, color: '#fff', fillColor: p[9] > 0 ? col(p[9]) : '#155C75', fillOpacity: .92 });
+        m.bindPopup('<b>' + esc2(p[1]) + '</b><br>' + esc2(p[2]) + (p[6] ? ' · ' + p[6] : '') + (p[9] > 0 ? '<br>' + esc2(f('mh_late', { m: p[9] })) : '') + (q('rk') === '1' ? '<br>' + esc2(T4[ok ? 2 : 3]) : '') + '<br><a href="' + PRE + '/projects/' + p[0] + '/">' + esc2(f('mpo')) + '</a>'); m.addTo(layer); }); return; }
       var la = 0, ln = 0, lt = L.filter(function (p) { return p[9] > 0; }).length; L.forEach(function (p) { la += p[4]; ln += p[5]; }); la /= L.length; ln /= L.length;
-      var sz = Math.min(54, 26 + Math.sqrt(L.length) * 4), ic = Lf.divIcon({ className: 'kmp-cl', html: '<span style="width:' + sz + 'px;height:' + sz + 'px;line-height:' + sz + 'px' + (lt ? ';box-shadow:0 0 0 4px ' + col(12) + '55' : '') + '">' + nf(L.length) + '</span>', iconSize: [sz, sz] });
+      var sz = Math.min(54, 26 + Math.sqrt(L.length) * 4), ic = Lf.divIcon({ className: 'kmp-cl', html: '<span style="width:' + sz + 'px;height:' + sz + 'px;line-height:' + sz + 'px' + (q('rk') === '1' ? ';color:#fff;background:conic-gradient(' + RKC[0] + ' ' + Math.round(100 * L.filter(function (p) { return p[10] > 0; }).length / L.length) + '%,' + RKC[1] + ' 0)' : lt ? ';box-shadow:0 0 0 4px ' + col(12) + '55' : '') + '">' + nf(L.length) + '</span>', iconSize: [sz, sz] });
       var m = Lf.marker([la, ln], { icon: ic, keyboard: true, title: f('mh_cl', { k: L.length }), alt: f3(6, nf(L.length)) });
       m.on('add', function () { var e = m.getElement && m.getElement(); if (e) { e.setAttribute('role', 'button'); e.setAttribute('aria-label', f3(6, nf(L.length)) + '. ' + f('mh_cl', { k: L.length })); } });
       m.on('keypress', function (ev) { var k = ev.originalEvent && ev.originalEvent.key; if (k === 'Enter' || k === ' ') m.fire('click'); });
@@ -65,9 +80,10 @@
     if (!data) return; R = data.p.filter(pass).filter(function (p) { if (!area) return true; var ll = p[4] != null ? [p[4], p[5]] : data.mk[p[2]]; return !!ll && inA(ll[0], ll[1]); }); if (q('rg')) R = R.map(function (p, i) { return [p[10] || 0, i, p]; }).sort(function (a, b) { return b[0] - a[0] || a[1] - b[1]; }).map(function (x) { return x[2]; }); pins = R.filter(function (p) { return p[4] != null; }); byMk = {};
     R.forEach(function (p) { if (p[4] == null && data.mk[p[2]]) { (byMk[p[2]] = byMk[p[2]] || []).push(p); } });
     cnt.textContent = area ? f3(5, nf(R.length)) : f('mpk', { k: nf(R.length) }); e0.hidden = R.length > 0; rs.hidden = !area && !KEYS.some(function (k) { return q(k); }); if (ab) ab.clr.hidden = !area;
-    var h = ''; R.slice(0, lim).forEach(function (p) { h += '<li><a href="' + PRE + '/projects/' + p[0] + '/">' + esc2(p[1]) + '</a> <small>' + esc2([p[2], p[3]].filter(function (v, i, a) { return v && a.indexOf(v) === i; }).join(', ')) + (p[6] ? ' · ' + p[6] : '') + (p[8] != null ? ' · ' + p[8] + '/100' : '') + (p[9] > 0 ? ' · ' + esc2(f('mh_late', { m: p[9] })) : '') + (p[10] > 0 && S.rg_b ? ' · ' + esc2(f('rg_b', { n: nf(p[10]) })) : '') + '</small></li>'; });
+    var h = ''; R.slice(0, lim).forEach(function (p) { h += '<li><a href="' + PRE + '/projects/' + p[0] + '/">' + esc2(p[1]) + '</a> <small>' + esc2([p[2], p[3]].filter(function (v, i, a) { return v && a.indexOf(v) === i; }).join(', ')) + (p[6] ? ' · ' + p[6] : '') + (p[8] != null ? ' · ' + p[8] + '/100' : '') + (p[9] > 0 ? ' · ' + esc2(f('mh_late', { m: p[9] })) : '') + (p[10] > 0 && S.rg_b ? ' · ' + esc2(f('rg_b', { n: nf(p[10]) })) : '') + (q('rk') === '1' ? ' · <span class="kmp-rt"><span aria-hidden="true" style="color:' + RKC[p[10] > 0 ? 0 : 1] + '">' + (p[10] > 0 ? '&#9632;' : '&#9679;') + '</span> ' + esc2(T4[p[10] > 0 ? 2 : 3]) + '</span>' : '') + '</small></li>'; });
     listEl.innerHTML = h; var more = MP.querySelector('.kmp-more'); if (more) more.hidden = R.length <= lim;
     var u = new URL(location.href); KEYS.forEach(function (k) { if (q(k)) u.searchParams.set(k, q(k)); else u.searchParams.delete(k); }); if (area) u.searchParams.set('a', area.map(function (v) { return v.toFixed(4); }).join(',')); else u.searchParams.delete('a'); try { history.replaceState(null, '', u.pathname + u.search); } catch (e) {}
+    var rl = MP.querySelector('.kmp-rleg') || document.querySelector('.kmp-rleg'); if (rl) rl.hidden = q('rk') !== '1';
     if (!map || !Lf) return; cluster(); drawHeat(); drawRect();
     if (fit && area && !rect0) { map.fitBounds([[area[0], area[1]], [area[2], area[3]]], { padding: [16, 16] }); fit = false; rect0 = true; }
     if (fit) { var B = pins.map(function (p) { return [p[4], p[5]]; }).concat(Object.keys(byMk).map(function (k) { return data.mk[k]; })); if (B.length) map.fitBounds(B, { padding: [24, 24], maxZoom: 12, animate: !mapEl.classList.contains('kmp-ld') }); fit = false; }
