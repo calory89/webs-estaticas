@@ -1,3 +1,4 @@
+import { TB } from './kbx_strings.js';
 // kolaboro.com bulk register check for agencies and lenders (batch 10, b10c).
 //   GET  /bulk-check/        page: paste or upload a CSV (up to 200 rows: Spanish cadastral references, NYC addresses, NYC or
 //                            Miami-Dade permit numbers, UK company numbers or company names), results table and a CSV back
@@ -49,7 +50,7 @@ async function bulk(req, env, ctx, lookupHandle) {
     results.push(row(q, d, res.ok ? 'done' : 'error'));
   }
   return out({ version: 'kolaboro-bulk-1', mode: key ? 'api_key' : 'public', limit: key ? 'metered on your API key' : '20 lookups an hour per visitor (cached rows free)', rows: results, ms: Date.now() - t0,
-    disclaimer: 'Each row is what the named official registers returned at that time. not_found or not_published is not proof of a problem; found is not proof a project is sound.' });
+    disclaimer: TB.kbx_bulk__s.k0 });
 }
 
 // ---------------------------------------------------------------- page

@@ -8,6 +8,7 @@
 //   GET /[l/]search/?q=&co=&st=&pm=&hy=&pg=    search results with facets from a static index (/data/n34b-search.json), URL synced
 // Strings in 8 languages: /data/n34b-i18n.json (static asset, read once per isolate). Sumba, Eco Beach City and Equinox never appear.
 import * as N from './kbx_named.js';
+import { TB } from './kbx_strings.js';
 
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
@@ -138,7 +139,7 @@ async function qPage(env, shell, l, x) {
     questionsHtml(l, R) + '<textarea id="n34-qtxt" hidden readonly>' + esc(txt) + '</textarea>' +
     '<p><a href="' + P + '/projects/' + x.s + '/">' + esc(tf(l, 'back', { n: x.n })) + '</a> · <a href="' + P + '/projects/' + x.s + '/report/">' + esc(t(l, 'report')) + '</a> · <a href="/ask-developer/?id=' + esc(x.id) + '" rel="nofollow">' + esc(t(l, 'did_answer')) + '</a> · <a href="/api/v1/projects/' + x.s + '/questions?lang=' + l + '">JSON</a></p>' +
     '<h2>' + esc(t(l, 'method')) + '</h2>' + (t(l, 'q_meth') || []).map(p => '<p>' + esc(p) + '</p>').join('') +
-    '<script>(function(){var b=document.querySelector("#n34-qa [data-copy]"),o=document.querySelector("#n34-qa [data-copied]");if(!b)return;b.addEventListener("click",function(){var s=document.getElementById("n34-qtxt").value;(navigator.clipboard?navigator.clipboard.writeText(s):Promise.reject()).then(function(){o.textContent=' + JSON.stringify(t(l, 'copied')) + '},function(){var a=document.getElementById("n34-qtxt");a.hidden=false;a.select();try{document.execCommand("copy");o.textContent=' + JSON.stringify(t(l, 'copied')) + '}catch(e){}a.hidden=true})})})()</script>';
+    TB.kbx_n34b__s.k0 + JSON.stringify(t(l, 'copied')) + TB.kbx_n34b__s.k1 + JSON.stringify(t(l, 'copied')) + '}catch(e){}a.hidden=true})})})()</script>';
   return page(shell, l, { k: 'q', path: '/projects/' + x.s + '/questions/', h1: tf(l, 'q_h1', { n: x.n }), title: tf(l, 'q_title', { n: x.n }), lead: tf(l, 'q_lead', { n: x.n }), body: b, updated: R.built, noindex: true, crumb: [[t(l, 'projects'), P + '/projects/'], [x.n, P + '/projects/' + x.s + '/']] });
 }
 
@@ -209,7 +210,7 @@ async function sePage(env, shell, l, u) {
   const item = r => '<li><a href="' + P + '/projects/' + esc(r.s) + '/">' + bdi(l, esc(r.n)) + '</a> <span class="k-xs">' + bdi(l, esc([r.dv, r.ar && r.ar !== r.mk ? r.ar : '', r.mk, r.co].filter(Boolean).join(' · '))) + '</span><br><span class="k-xs">' + [stName[r.st] || '', r.hy ? tf(l, 'r_hy', { y: r.hy }) : t(l, 'hy_none'), r.ov > 0 ? tf(l, 'r_ov', { m: nf(r.ov, l) }) : '', r.pm ? t(l, 'pm_1') : t(l, 'pm_0')].filter(Boolean).map(esc).join(' · ') + '</span></li>';
   const out = '<div id="n34-out" aria-live="polite"><p class="k-xs" id="n34-n">' + esc(tf(l, 'se_n', { k: nf(res.length, l), t: nf(X.rows.length, l) })) + '</p>' + (slice.length ? '<ol class="n34-res" start="' + ((cur - 1) * PER + 1) + '">' + slice.map(item).join('') + '</ol>' : '<p class="mut">' + esc(t(l, 'se_empty')) + ' <a href="' + P + '/request-project/?q=' + encodeURIComponent(q) + '">' + esc(t(l, 'se_req')) + '</a></p>') +
     (pages > 1 ? '<nav class="n34-pg" aria-label="' + esc(t(l, 'pages')) + '">' + (cur > 1 ? '<a href="' + esc(qs({ pg: cur - 1 })) + '" rel="prev">‹</a>' : '') + '<span>' + nf(cur, l) + ' / ' + nf(pages, l) + '</span>' + (cur < pages ? '<a href="' + esc(qs({ pg: cur + 1 })) + '" rel="next">›</a>' : '') + '</nav>' : '') + '</div>';
-  const b = form + out + '<p class="k-xs">' + esc(tf(l, 'src_line', { n: nf(X.rows.length, l), d: fd(X.d.built, l), h: String(X.d.source.sha256).slice(0, 16) })) + ' <a href="/data/n34b-search.json">n34b-search.json</a> · <a href="/open/n34b-build.py">n34b-build.py</a></p>' +
+  const b = form + out + '<p class="k-xs">' + esc(tf(l, 'src_line', { n: nf(X.rows.length, l), d: fd(X.d.built, l), h: String(X.d.source.sha256).slice(0, 16) })) + TB.kbx_n34b__s.k2 +
     '<p class="k-xs">' + esc(t(l, 'se_tip')) + '</p>' + clientT(l, 'se', ['se_n', 'se_empty', 'se_req', 'st_o', 'st_u', 'st_c', 'pm_1', 'pm_0', 'r_hy', 'r_ov', 'hy_none', 'hy_past', 'all', 'pages']);
   const any = q || f.co || f.st || f.pm != null || f.hy || rg || so || cur > 1;
   return page(shell, l, { k: 'se', path: '/search/', h1: t(l, 'se_t'), lead: t(l, 'se_l'), body: b, updated: X.d.built, noindex: !!any, maxAge: 600, type: 'SearchResultsPage' });
@@ -252,7 +253,7 @@ async function mcPage(env, shell, l, u) {
   };
   const charts = bars('ti', m => m.disclosure ? m.disclosure.transparency_index : null, 100, t(l, 'mc_ti')) + bars('permit', m => m.projects ? Math.round(m.permit_published * 100 / m.projects) : null, 100, t(l, 'mc_permit')) + bars('past', m => m.with_date ? Math.round(m.past_date.n * 100 / m.with_date) : null, Math.max(10, ...M.map(m => m.with_date ? Math.round(m.past_date.n * 100 / m.with_date) : 0)), t(l, 'mc_pastsh'));
   const b = form + '<p class="k-xs">' + esc(t(l, 'mc_hist')) + '</p>' + tbl + charts + '<h2>' + esc(t(l, 'method')) + '</h2>' + (t(l, 'mc_p') || []).map(p => '<p>' + esc(p) + '</p>').join('') +
-    '<p class="k-xs">' + esc(tf(l, 'mc_src', { d: fd(D.built, l), e: D.disclosure_source.edition, h: String(D.source.sha256).slice(0, 16) })) + ' <a href="/data/n34b-markets.json">n34b-markets.json</a> · <a href="/open/n34b-build.py">n34b-build.py</a> · <a href="' + P + '/reports/transparency/">' + esc(t(l, 'mc_trep')) + '</a> · <a href="' + P + '/delays/">' + esc(t(l, 'mc_delays')) + '</a> · <a href="/registers/">' + esc(t(l, 'mc_regpage')) + '</a></p>';
+    '<p class="k-xs">' + esc(tf(l, 'mc_src', { d: fd(D.built, l), e: D.disclosure_source.edition, h: String(D.source.sha256).slice(0, 16) })) + TB.kbx_n34b__s.k3 + P + '/reports/transparency/">' + esc(t(l, 'mc_trep')) + '</a> · <a href="' + P + '/delays/">' + esc(t(l, 'mc_delays')) + '</a> · <a href="/registers/">' + esc(t(l, 'mc_regpage')) + '</a></p>';
   const names = M.map(m => m.market).join(', ');
   return page(shell, l, { k: 'mc', path: '/markets/compare/', h1: custom ? tf(l, 'mc_h1x', { m: names }) : t(l, 'mc_t'), title: custom ? tf(l, 'mc_h1x', { m: names }) : t(l, 'mc_t'), lead: t(l, 'mc_l'), body: b, updated: D.built, noindex: custom, crumb: [[t(l, 'markets'), P + '/m/']], type: 'WebPage' });
 }
@@ -268,7 +269,7 @@ export async function handle(req, u, env, ctx, shell) {
     if (!x || !okName(x)) return new Response(JSON.stringify({ error: 'not_found' }), { status: 404, headers: { 'content-type': 'application/json; charset=utf-8', 'access-control-allow-origin': '*' } });
     const l = LANGS.includes(u.searchParams.get('lang')) ? u.searchParams.get('lang') : 'en';
     const R = await questionsFor(env, x, l);
-    const body = Object.assign({ api: 'kolaboro-questions-v1', licence: 'CC BY 4.0 (credit: Kolaboro, kolaboro.com)', rules: 'Each question comes from one gap in the public record (a fact not published, not confirmed in a register, a handover date that moved or passed, a claim another source contradicts). Rules only; the same record gives the same questions.', page: ORIGIN + pre(l) + '/projects/' + x.s + '/questions/' }, R);
+    const body = Object.assign({ api: 'kolaboro-questions-v1', licence: 'CC BY 4.0 (credit: Kolaboro, kolaboro.com)', rules: TB.kbx_n34b__s.k4, page: ORIGIN + pre(l) + '/projects/' + x.s + '/questions/' }, R);
     return new Response(JSON.stringify(body), { headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'public, max-age=900', 'access-control-allow-origin': '*' } });
   }
   if ((m = p.match(RX.q))) {

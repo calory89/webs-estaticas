@@ -1,3 +1,4 @@
+import { TB } from './kbx_strings.js';
 // kolaboro.com batch 35 (agent n35a, 22 Nov 2026): intelligence from our own data. The worker renders page shells and small blocks on
 // existing pages; the data are static files built by /open/n35a-build.py (published files only); browser code is static under /k/n35a/.
 //   /[l/]construction-pace/                         Dubai: DLD % built against time elapsed to the registered completion date, projected range
@@ -229,7 +230,7 @@ const strings = (l, ks) => { const o = { _loc: LOC[l] || 'en-GB', _l: l }; ks.fo
 async function difPage(env, shell, l, nonce) {
   const ix = await file(env, '/data/delta/index.json'); if (!ix) return null;
   const days = [ix.entries[0].from].concat(ix.entries.map(e => e.to));
-  const b = '<p>' + esc(t(l, 'f_intro')) + '</p><div id="n35-df"><form><label>' + esc(t(l, 'f_from')) + ' <select id="n35-dfa">' + days.map((d, i) => '<option value="' + d + '"' + (i === days.length - 2 ? ' selected' : '') + '>' + esc(fd(d, l)) + '</option>').join('') + '</select></label> <label>' + esc(t(l, 'f_to')) + ' <select id="n35-dfb">' + days.map((d, i) => '<option value="' + d + '"' + (i === days.length - 1 ? ' selected' : '') + '>' + esc(fd(d, l)) + '</option>').join('') + '</select></label> <button type="button" class="btn" id="n35-dfg">' + esc(t(l, 'f_go')) + '</button></form><p id="n35-dfs" role="status" aria-live="polite" class="k-xs"></p><div id="n35-dfo"></div></div>' +
+  const b = '<p>' + esc(t(l, 'f_intro')) + '</p><div id="n35-df"><form><label>' + esc(t(l, 'f_from')) + ' <select id="n35-dfa">' + days.map((d, i) => '<option value="' + d + '"' + (i === days.length - 2 ? ' selected' : '') + '>' + esc(fd(d, l)) + '</option>').join('') + '</select></label> <label>' + esc(t(l, 'f_to')) + ' <select id="n35-dfb">' + days.map((d, i) => '<option value="' + d + '"' + (i === days.length - 1 ? ' selected' : '') + '>' + esc(fd(d, l)) + '</option>').join('') + '</select></label> <button type="button" class="btn" id="n35-dfg">' + esc(t(l, 'f_go')) + TB.kbx_n35a__s.k0 +
     '<script type="application/json" id="n35-dft">' + strings(l, ['f_load', 'f_res', 'f_add', 'f_rem', 'f_chg', 'f_fields', 'f_rec', 'f_th', 'f_fth', 'f_none', 'f_err', 'f_same', 'f_more', 'f_hist', 'f_seal']) + '</script><script' + nonceOf(nonce) + ' src="/k/n35a/diff.js?v=' + V + '" defer></script>' +
     sec(t(l, 'method'), paras(l, 'f_m')) + files(l, ['/data/delta/index.json', '/data/snapshots/', '/api/v1/delta/' + days[days.length - 1]]);
   return page(shell, l, Object.assign(H(l, 'dif'), { path: '/data/diff/', body: b, updated: days[days.length - 1], crumb: [DS(l)] }));
@@ -237,7 +238,7 @@ async function difPage(env, shell, l, nonce) {
 async function qaPage(env, shell, l, nonce) {
   const b = '<p>' + esc(t(l, 'q_intro')) + '</p><div id="n35-qa"><form role="search"><label for="n35-qaq" class="k-xs">' + esc(t(l, 'q_lab')) + '</label><input id="n35-qaq" type="search" style="flex:1 1 320px" autocomplete="off" placeholder="' + esc((t(l, 'q_ex') || [''])[0]) + '"> <button type="button" class="btn" id="n35-qag">' + esc(t(l, 'q_go')) + '</button></form>' +
     '<p class="k-xs">' + esc(t(l, 'q_try')) + '</p><ul class="n35-rel" id="n35-qax">' + [].concat(t(l, 'q_ex') || []).map(x => '<li><button type="button" class="kbtn" data-q="' + esc(x) + '">' + esc(x) + '</button></li>').join('') + '</ul>' +
-    '<p id="n35-qas" role="status" aria-live="polite" class="k-xs"></p><div id="n35-qao"></div></div><script type="application/json" id="n35-qat">' + strings(l, ['q_sql', 'q_none', 'q_load', 'q_rows', 'q_err', 'q_hash', 'q_parsed', 'q_open', 'q_run', 'q_c']) + '</script><script' + nonceOf(nonce) + ' src="/k/n35a/ask.js?v=' + V + '" defer></script>' +
+    TB.kbx_n35a__s.k1 + strings(l, ['q_sql', 'q_none', 'q_load', 'q_rows', 'q_err', 'q_hash', 'q_parsed', 'q_open', 'q_run', 'q_c']) + '</script><script' + nonceOf(nonce) + ' src="/k/n35a/ask.js?v=' + V + '" defer></script>' +
     sec(t(l, 'method'), paras(l, 'q_m')) + '<p><a href="' + pre(l) + '/data/sql/">' + esc(t(l, 'q_sqlp')) + '</a> · <a href="' + pre(l) + '/data/dictionary/">' + esc(t(l, 'dic_t')) + '</a></p>' + files(l, ['/k/n35a/ask.js', '/open/n35a-ask-tests.json', '/data/sql/datacard.json']);
   return page(shell, l, Object.assign(H(l, 'qa'), { path: '/data/ask/', body: b, crumb: [DS(l)] }));
 }
@@ -263,7 +264,7 @@ async function projBlock(env, l, slug) {
   const r = pc && pc.rows.find(x => x.s === slug); if (r) h += paceLine(l, r);
   const c = cd && cd.items.filter(x => x.s === slug);
   if (c && c.length) h += '<p class="n35-con"><b>' + esc(t(l, 'cb_h')) + '</b> ' + c.map(x => esc(t(l, 'cf_' + x.f)) + ': ' + esc(x.a.src) + ' / ' + esc(x.b.src)).join('; ') + '. <a href="' + pre(l) + '/data/contradictions/?p=' + slug + '" rel="nofollow">' + esc(t(l, 'cb_m')) + '</a></p>';
-  return h ? '<div class="n35-pb"' + (l === 'ar' ? ' dir="rtl"' : '') + '><style>.n35-pb{margin:18px 0 0;padding:14px 18px;border:1px solid var(--k-line,var(--line,#d5d3cc));border-radius:14px}.n35-pb h3{margin:0 0 6px;font-size:1.05rem}.n35-pb p{margin:6px 0;max-width:72ch;line-height:1.55}</style>' + h + '</div>' : '';
+  return h ? '<div class="n35-pb"' + (l === 'ar' ? ' dir="rtl"' : '') + TB.kbx_n35a__s.k2 + h + '</div>' : '';
 }
 async function devBlock(env, l, dv) {
   const ix = await file(env, '/data/n35a/signals-index.json'), x = ix && ix.developers[dv]; if (!x) return '';

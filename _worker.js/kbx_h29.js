@@ -28,7 +28,8 @@ import { handoverOf, overdueOf, fd, esc, pre, lastmod, okHttp, host } from './kb
 import { mkName, placeName, coName } from './kbx_hdate.js';
 import { NT } from './kbx_buy_notes.js';
 import { H } from './kbx_h29_i18n.js';
-import { regSale, rsText } from './kbx_n31d_rs.js';   // n31d: DLD registered sale prices are not asking prices
+import { regSale, rsText } from './kbx_n31d_rs.js';
+import { TB } from './kbx_strings.js';   // n31d: DLD registered sale prices are not asking prices
 
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
@@ -306,7 +307,7 @@ function vsPage(D, k, lang) {
   const done = v => { const s = D.F.dev.get(v.dvs); return s ? nf(lang, s.done) : '-'; };
   const R = t(lang, 'vs_rows'), vals = v => [nf(lang, v.k), v.med == null ? '-' : '<b>' + nf(lang, v.med) + '</b>', v.bestS == null ? '-' : nf(lang, v.bestS), nf(lang, v.pn), nf(lang, v.hd), nf(lang, v.mv), nf(lang, v.ov), medP(v), done(v)];
   const va = vals(a), vb = vals(b);
-  const tbl = '<div class="k-table-wrap"><table class="k-table kfa-vs"><thead><tr><th scope="col"></th><th scope="col">' + dLinkS(D, lang, a.dvs, a.dv) + '</th><th scope="col">' + dLinkS(D, lang, b.dvs, b.dv) + '</th></tr></thead><tbody>' +
+  const tbl = TB.kbx_h29__s.k0 + dLinkS(D, lang, a.dvs, a.dv) + '</th><th scope="col">' + dLinkS(D, lang, b.dvs, b.dv) + '</th></tr></thead><tbody>' +
     R.map((r, i) => '<tr><th scope="row">' + esc(r.replace('{p}', p)) + '</th><td>' + va[i] + '</td><td>' + vb[i] + '</td></tr>').join('') + '</tbody></table></div>';
   const cols = [t(lang, 'c_proj'), t(lang, 'c_place'), t(lang, 'c_ho'), t(lang, 'c_from'), t(lang, 'c_sc')];
   const lst = v => '<h2 id="p-' + esc(v.dvs) + '">' + th(lang, 'vs_proj_h', { a: bdi(v.dv), p: bdi(p) }) + '</h2>' + table(cols, v.L.map(x => [pLink(lang, x), esc(placeName(x.ar || x.mk, lang)), hoCell(D, lang, x), pc(lang, x), scCell(D, lang, x)]), [4]);
@@ -456,7 +457,7 @@ function apPage(D, s, lang) {
   const b = (D.AR && D.AR.osm_build) || '';
   const body = wrap(head(lang, cr, th(lang, 'ap_t', { a: bdi(g.n), i: '<bdi dir="ltr">' + esc(g.i) + '</bdi>' }), te(lang, 'ap_lead'), today()) +
     kv([[nf(lang, k), t(lang, 'kv_tr')], [kmT(lang, n.km), t(lang, 'aph_cols')[2]], [kmT(lang, median(g.L.map(r => r.km))), t(lang, 'rp_pr_cols')[2] + ' (km)']]) +
-    '<h2 id="projects">' + esc(title) + '</h2>' + table(cols, rows, [3, 5]) + '<p class="k-small k-muted">' + te(lang, 'ap_src', { b }) + ' <a href="https://www.openstreetmap.org/copyright" rel="nofollow noopener" target="_blank">openstreetmap.org/copyright</a></p>' +
+    '<h2 id="projects">' + esc(title) + '</h2>' + table(cols, rows, [3, 5]) + '<p class="k-small k-muted">' + te(lang, 'ap_src', { b }) + TB.kbx_h29__s.k1 +
     dataLine(D, lang, g.lm, ['named.json', 'around.json']) + method(lang) + citeBox(lang, title, url, d) + faqHtml(lang, Q) +
     linksBlock(lang, t(lang, 'aph_t'), mks.filter(mk => D.RP.has(slugA(mk))).map(mk => [t(lang, 'l_rp') + ': ' + mkName(mk, lang), '/reports/' + slugA(mk) + '/']).concat([...D.AP.values()].filter(o => o !== g).map(o => [o.n + ' (' + o.i + ')', '/airports/' + o.s + '/']))) + replyBox(lang));
   const ld = [webLd(lang, url, title, desc, g.lm), dataLd(url, title, desc, g.lm, g.n, ['named.json', 'around.json']), listLd(lang, title, g.L.map(r => r.x)), crumbLd(cr), faqLd(Q)];
@@ -560,7 +561,7 @@ async function sitemap(env) {
   let D; try { D = await h29Data(env); } catch (e) { return new Response('Not ready', { status: 503 }); }
   const xe = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;');
   const urls = allPaths(D).flatMap(([p, lm]) => LANGS.map(l => '<url><loc>' + xe(PUB(l, p)) + '</loc><lastmod>' + (lm || D.updated) + '</lastmod>' + LANGS.map(a => '<xhtml:link rel="alternate" hreflang="' + a + '" href="' + xe(PUB(a, p)) + '"/>').join('') + '<xhtml:link rel="alternate" hreflang="x-default" href="' + xe(ORIGIN + p) + '"/></url>'));
-  return new Response('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n' + urls.join('\n') + '\n</urlset>\n', { headers: { 'content-type': 'application/xml; charset=utf-8', 'cache-control': 'public, max-age=3600' } });
+  return new Response(TB.kbx_h29__s.k2 + urls.join('\n') + '\n</urlset>\n', { headers: { 'content-type': 'application/xml; charset=utf-8', 'cache-control': 'public, max-age=3600' } });
 }
 
 // ------------------------------------------------------------------------------------------------ links from existing pages
@@ -568,7 +569,7 @@ async function sitemap(env) {
 //   /m/<market>/ (English market file), /handover/<year>/<place>/ and /handover/, /rankings/transparency/[<place>/], /developers/<slug>/,
 //   /guides/buying-off-plan/<place>/, /new/ and /rankings/. Returns '' when there is nothing to link.
 const GUIDE = { bali: ['Bali'], dubai: ['Dubai'], phuket: ['Phuket'], 'costa-del-sol': ['Costa del Sol'], lisbon: ['Portugal'], cyprus: ['Cyprus'], miami: ['Miami'], tulum: ['Riviera Maya'] };
-const box = (lang, title, L) => L.length ? '<section class="k-sec kh29-more"><div class="k-wrap"><h2>' + esc(title) + '</h2><ul class="kfa-l" style="display:flex;flex-wrap:wrap;gap:8px 16px;padding:0;list-style:none">' + L.map(([l, p]) => '<li><a href="' + pre(lang) + p + '">' + esc(l) + '</a></li>').join('') + '</ul></div></section>' : '';
+const box = (lang, title, L) => L.length ? '<section class="k-sec kh29-more"><div class="k-wrap"><h2>' + esc(title) + TB.kbx_h29__s.k3 + L.map(([l, p]) => '<li><a href="' + pre(lang) + p + '">' + esc(l) + '</a></li>').join('') + '</ul></div></section>' : '';
 export async function linksFor(env, pathname) {
   const m = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?(.*)$/.exec(pathname); if (!m) return '';
   const lang = m[1] || 'en', p = '/' + m[2].replace(/\/?$/, '/');

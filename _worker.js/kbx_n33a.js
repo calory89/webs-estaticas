@@ -51,7 +51,7 @@ function moves(ix) {
   L.sort((p, q) => q.d.localeCompare(p.d) || q.m - p.m);
   MV = { ix, L }; return L;
 }
-const CSS = '<style id="n33a-css">.n33 h2{margin:28px 0 8px}.n33 h3{margin:22px 0 6px;font-size:1.05rem}.n33-l{padding-inline-start:18px;margin:0 0 14px}.n33-l li{margin:0 0 6px}.n33-l small,.n33 .k-xs{color:var(--muted,#56636F)}.n33-tw{overflow-x:auto}.n33 table{width:100%;border-collapse:collapse;margin:6px 0 16px}.n33 th,.n33 td{text-align:start;padding:8px;border-bottom:1px solid var(--line,#d5d3cc)}.n33 td.n{font-variant-numeric:tabular-nums;white-space:nowrap}</style>';
+/* CSS: n40 k17, in /data/i18n/k17s.json */
 
 function mvList(l, L, N, cap) {
   if (!L.length) return '<p>' + esc(t(l, 'dl_mv_none')) + '</p>';
@@ -89,7 +89,7 @@ async function delaysPage(env, shell, l) {
   let desc = t(l, 'dl_desc', { m: nf(later.length, l), w: W, k: nf(OV.length, l) }); if ([...desc].length > 160) desc = [...desc].slice(0, 157).join('').replace(/\s+\S*$/, '') + '...';
   let title = h1; if ([...title].length + 11 <= 60) title += ' | Kolaboro';
   const crumbs = [['Kolaboro', ORIGIN + pre(l) + '/'], [t(l, 'dl_t'), canon]];
-  const body = '<section class="phero"' + (l === 'ar' ? ' dir="rtl"' : '') + '><div class="wrap"><p class="crumb"><a href="' + pre(l) + '/">Kolaboro</a></p><h1>' + esc(h1) + '</h1><p class="lead">' + esc(lead) + '</p><p class="k-xs"><time datetime="' + today + '">' + esc(N.fd(today, l)) + '</time></p></div></section><div class="wrap n33"' + (l === 'ar' ? ' dir="rtl"' : '') + '>' + CSS + b + '</div>';
+  const body = '<section class="phero"' + (l === 'ar' ? ' dir="rtl"' : '') + '><div class="wrap"><p class="crumb"><a href="' + pre(l) + '/">Kolaboro</a></p><h1>' + esc(h1) + '</h1><p class="lead">' + esc(lead) + '</p><p class="k-xs"><time datetime="' + today + '">' + esc(N.fd(today, l)) + '</time></p></div></section><div class="wrap n33"' + (l === 'ar' ? ' dir="rtl"' : '') + '>' + TB.kbx_n33a__s.CSS + b + '</div>';
   const ld = { '@context': 'https://schema.org', '@graph': [
     { '@type': 'WebPage', '@id': canon + '#page', url: canon, name: h1, description: desc, inLanguage: l, dateModified: today, isPartOf: { '@id': ORIGIN + '/#website' }, publisher: { '@id': ORIGIN + '/#org' }, author: { '@id': ORIGIN + '/#org' }, publishingPrinciples: ORIGIN + '/editorial-policy/', breadcrumb: { '@id': canon + '#bc' }, mainEntity: { '@id': canon + '#data' } },
     { '@type': 'Dataset', '@id': canon + '#data', name: h1, description: lead, url: canon, license: 'https://creativecommons.org/licenses/by/4.0/', isAccessibleForFree: true, creator: { '@id': ORIGIN + '/#org' }, dateModified: today, temporalCoverage: first + '/' + today, distribution: [{ '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: ORIGIN + '/data/promises.json' }] },
@@ -146,7 +146,7 @@ export async function mIndex(env, r) {
     const G = {}; let n = 0;
     for (const c of CS) { if (!c.market || !c.country || COI.test(c.market + ' ' + (c.name || ''))) continue; n++; const g = G[c.country] = G[c.country] || {}; g[c.market] = (g[c.market] || 0) + 1; }
     const cs = Object.keys(G).sort(), nm = cs.reduce((a, c) => a + Object.keys(G[c]).length, 0);
-    const root = '<p class="eyebrow">Market files</p><h1 id="mk-h1">Every off-plan market we track</h1><p class="lead">' + nf(n, 'en') + ' projects in ' + nm + ' markets and ' + cs.length + ' countries. Pick a market for its disclosure numbers, transparency index and project list.</p>';
+    const root = TB.kbx_n33a__s.k0 + nf(n, 'en') + ' projects in ' + nm + ' markets and ' + cs.length + ' countries. Pick a market for its disclosure numbers, transparency index and project list.</p>';
     const body = '<section class="mk-sec"><div class="wrap"><h2>Markets by country</h2><div class="mk-grp">' + cs.map(c => { const ms = Object.keys(G[c]).sort(), tot = ms.reduce((s, m) => s + G[c][m], 0);
       return '<section><h3>' + esc(c) + ' <small style="color:var(--muted);font-weight:600">' + tot + '</small></h3><ul class="mk-mk">' + ms.map(m => '<li><a href="/m/' + slugM(m) + '/">' + esc(m) + ' <small>' + G[c][m] + '</small></a></li>').join('') + '</ul></section>'; }).join('') + '</div></div></section>';
     return new HTMLRewriter().on('#mk-root', { element(e) { e.setInnerContent(root, { html: true }); } }).on('#mk-body', { element(e) { e.setInnerContent(body, { html: true }); } }).transform(r);

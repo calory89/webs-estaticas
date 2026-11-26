@@ -1,3 +1,4 @@
+import { TB } from './kbx_strings.js';
 // kolaboro.com batch 18 (n18c): see the site. Open street-level photos near the pin and a 3D view of the plot. No model calls, no keys.
 // Data (built on main by .github/workflows/kolaboro-see-site.yml, tools/kolaboro-agent/see_site.py; same projects and pins as
 // /data/construction-progress.json):
@@ -42,16 +43,7 @@ export const seeHeading = lang => t(lang, 'h');
 const SRCN = { panoramax: 'Panoramax', kartaview: 'KartaView', commons: 'Wikimedia Commons' };
 const adiff = (a, b) => { const d = Math.abs(a - b) % 360; return d > 180 ? 360 - d : d; };
 
-const CSS = '<style id="ksee-css">.ksee h3{margin:20px 0 6px;font-size:var(--k-fs-lg,1.2rem)}.ksee-ph{list-style:none;margin:12px 0;padding:0;display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(min(100%,150px),1fr))}@media (min-width:700px){.ksee-ph{grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}}' +
-  '.ksee-ph li{margin:0;border:1px solid var(--k-line,var(--line));border-radius:var(--k-r-md,10px);overflow:hidden;background:var(--k-surface,#fff);display:flex;flex-direction:column}' +
-  '.ksee-ph a.im{display:block;aspect-ratio:4/3;background:var(--k-sunken,#E8ECEA)}.ksee-ph img{display:block;width:100%;height:100%;object-fit:cover}.ksee-ph .tx{padding:10px 12px 12px;font-size:var(--k-fs-xs,.82rem);color:var(--k-ink-2,inherit);display:flex;flex-direction:column;gap:4px}' +
-  '.ksee-ph .tx b{font-size:var(--k-fs-sm,.92rem);color:var(--k-ink,inherit)}.ksee-ph .tx a{color:var(--k-sea,#155C75)}.ksee-lnk{display:flex;flex-wrap:wrap;gap:8px 16px;margin:6px 0 0;padding:0;list-style:none}.ksee-lnk a{color:var(--k-sea,#155C75);display:inline-block;min-height:24px;line-height:24px}.ksee a.src,.ksee .k-xs a,.ksat-lim a{display:inline-block;min-height:24px;line-height:24px}' +
-  '.ksee-3d{margin:10px 0 0}.ksee-map{position:relative;width:100%;height:min(72vh,560px);min-height:340px;border:1px solid var(--k-line,var(--line));border-radius:var(--k-r-md,10px);overflow:hidden;background:var(--k-sunken,#E8ECEA)}' +
-  '.ksee-map[hidden]{display:none}.ksee-map .msg{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:16px;text-align:center;color:var(--k-muted,#56636F)}' +
-  '.ksee-lg{list-style:none;margin:10px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:6px 18px;font-size:var(--k-fs-xs,.82rem);color:var(--k-ink-2,inherit)}.ksee-lg li{display:flex;align-items:center;gap:6px}' +
-  '.ksee-lg i{display:inline-block;width:16px;height:12px;border-radius:2px;flex:none}.ksee-lg .k{background:#155C75}.ksee-lg .u{background:#9FB4BF}.ksee-lg .c{border:2px solid #FF5B14;border-radius:50%;width:12px}.ksee-lg .a{border:2px dashed #13222E;border-radius:50%;width:12px}' +
-  '.ksee-lg .p{background:#FF5B14;border:2px solid #fff;border-radius:50%;width:10px;height:10px;box-shadow:0 0 0 1px #13222E}.ksee .k-btn{min-height:44px}.ksee-bar{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin:8px 0}' +
-  ':root[data-theme=dark] .ksee-lg .a{border-color:#E6ECEF}.ksee-map summary{list-style:none}.ksee-map summary::-webkit-details-marker{display:none}.ksee-map summary::after,.ksee-map summary::before{content:none!important;display:none!important}</style>';
+/* CSS: n40 k17, in /data/i18n/k17s.json */
 
 // n20p: one formatter per locale and options for the life of the isolate (building one per call cost most of the render time)
 const dtf = (L, o) => { const c = (globalThis.__kbFmt = globalThis.__kbFmt || {}), k = 'd' + L + JSON.stringify(o || 0); return c[k] || (c[k] = new Intl.DateTimeFormat(L, o)); };
@@ -63,7 +55,7 @@ export function seeHtml(sd, id, lang, fd, name) {
   if (!php && !d3) return '';
   const num = v => { try { return nmf(lang === 'en' ? 'en-GB' : lang).format(v); } catch (e) { return String(v); } };
   const lat = d3 ? d3.lat : null, lng = d3 ? d3.lng : null, dec = d3 ? d3.dec : 3, acc = accM(dec);
-  let h = CSS + '<div class="ksee">';
+  let h = TB.kbx_see__s.CSS + '<div class="ksee">';
   if (php) {
     h += '<h3>' + esc(t(lang, 'ph')) + '</h3>';
     const L = php.ph || [];
@@ -79,7 +71,7 @@ export function seeHtml(sd, id, lang, fd, name) {
       }).join('') + '</ul>';
     }
     h += '<p class="ksat-lim">' + esc(t(lang, 'phlim', { a: acc })) + '</p>';
-    if (lat != null) h += '<p class="ksat-lim">' + esc(t(lang, 'other')) + '</p><ul class="ksee-lnk"><li><a href="https://www.google.com/maps/@?api=1&amp;map_action=pano&amp;viewpoint=' + lat + ',' + lng + '" rel="noopener nofollow" target="_blank">' + esc(t(lang, 'gsv')) + '</a></li><li><a href="https://www.mapillary.com/app/?lat=' + lat + '&amp;lng=' + lng + '&amp;z=17" rel="noopener nofollow" target="_blank">' + esc(t(lang, 'mpl')) + '</a></li></ul>';
+    if (lat != null) h += '<p class="ksat-lim">' + esc(t(lang, 'other')) + TB.kbx_see__s.k0 + lat + ',' + lng + '" rel="noopener nofollow" target="_blank">' + esc(t(lang, 'gsv')) + '</a></li><li><a href="https://www.mapillary.com/app/?lat=' + lat + '&amp;lng=' + lng + '&amp;z=17" rel="noopener nofollow" target="_blank">' + esc(t(lang, 'mpl')) + '</a></li></ul>';
     h += '<p class="ksat-src">' + ['panoramax', 'kartaview', 'commons'].map(k => { const s = sd.ph.sources[k]; return '<a class="src" href="' + esc(s.url) + '" rel="noopener" target="_blank">' + esc(s.name) + '</a>'; }).join(' ') +
       ' <a class="src" href="/data/street-photos.json">' + esc(t(lang, 'method')) + ', ' + esc(t(lang, 'upd', { d: fd(php.checked || sd.ph.updated) })) + '</a></p>';
   }
@@ -93,12 +85,12 @@ export function seeHtml(sd, id, lang, fd, name) {
       (d3.n ? '<li><i class="k"></i>' + esc(t(lang, 'lgk')) + '</li><li><i class="u"></i>' + esc(t(lang, 'lgu')) + '</li>' : '') + '</ul></div>' +
       '<p class="ksat-lim">' + esc(t(lang, 'd3lim')) + '</p>' +
       '<p class="ksat-src">' + esc(sd.d3.source.attribution) + '. <a class="src" href="' + esc(sd.d3.source.url) + '" rel="noopener" target="_blank">Overture Maps buildings, ' + esc(sd.d3.release) + '</a> <a class="src" href="' + esc(sd.d3.source.licence_url) + '" rel="noopener" target="_blank">ODbL 1.0</a>' +
-      ' <a class="src" href="https://registry.opendata.aws/terrain-tiles/" rel="noopener" target="_blank">Terrain Tiles, AWS Open Data (Mapzen)</a> <a class="src" href="https://github.com/tilezen/joerd/blob/master/docs/attribution.md" rel="noopener" target="_blank">terrain attribution</a>' +
-      ' <a class="src" href="https://www.openstreetmap.org/copyright" rel="noopener" target="_blank">© OpenStreetMap contributors</a> <a class="src" href="https://maplibre.org/" rel="noopener" target="_blank">MapLibre GL JS ' + ML + '</a>' +
+      TB.kbx_see__s.k1 +
+      TB.kbx_see__s.k2 + ML + '</a>' +
       ' <a class="src" href="/data/site-3d.json">' + esc(t(lang, 'method')) + ', ' + esc(t(lang, 'upd', { d: fd(sd.d3.updated) })) + '</a></p>' +
-      '<script>(function(){var b=document.querySelectorAll(".ksee-go");b.forEach(function(x){x.addEventListener("click",function(){var r=x.closest(".ksee-3d");if(!r||r.dataset.on)return;r.dataset.on="1";x.setAttribute("aria-expanded","true");x.disabled=true;' +
-      'var m=r.querySelector(".ksee-map");m.hidden=false;m.innerHTML="<div class=\\"msg\\" role=\\"status\\"><span class=\\"k-spin\\"></span>&nbsp;"+r.dataset.l.replace(/</g,"&lt;")+"</div>";' +
-      'if(window.kSee3D){window.kSee3D(r);return;}var s=document.createElement("script");s.src="/api/x/see/3d.js?v=' + ML + '-4";s.onload=function(){window.kSee3D(r)};s.onerror=function(){m.innerHTML="<div class=\\"msg\\">"+r.dataset.e.replace(/</g,"&lt;")+"</div>"};document.head.appendChild(s);});});})();</script>';
+      TB.kbx_see__s.k3 +
+      TB.kbx_see__s.k4 +
+      TB.kbx_see__s.k5 + ML + TB.kbx_see__s.k6;
   }
   return h + '</div>';
 }
@@ -169,7 +161,7 @@ async function thumb(req, sd, id, n, ctx) {
   }
   if (!buf) {
     try { const st = await caches.default.match(sk); if (st) { const h = new Headers(st.headers); h.set('x-kb-fallback', 'stale'); h.set('cache-control', 'public, max-age=600'); return new Response(st.body, { status: 200, headers: h }); } } catch (e) {}
-    return new Response('<svg xmlns="http://www.w3.org/2000/svg" width="500" height="375" viewBox="0 0 500 375"><rect width="500" height="375" fill="#E3E2DD"/></svg>', { status: 200, headers: { 'content-type': 'image/svg+xml', 'cache-control': 'no-store', 'x-kb-fallback': 'placeholder', 'x-content-type-options': 'nosniff', 'content-security-policy': "default-src 'none'; style-src 'unsafe-inline'" } });
+    return new Response(TB.kbx_see__s.k7, { status: 200, headers: { 'content-type': 'image/svg+xml', 'cache-control': 'no-store', 'x-kb-fallback': 'placeholder', 'x-content-type-options': 'nosniff', 'content-security-policy': "default-src 'none'; style-src 'unsafe-inline'" } });
   }
   const res = new Response(buf, { status: 200, headers: { 'content-type': ct.split(';')[0], 'cache-control': 'public, max-age=604800', 'x-content-type-options': 'nosniff', 'access-control-allow-origin': '*',
     'x-photo-source': x.page, 'x-photo-licence': x.lic, 'content-security-policy': "default-src 'none'" } });

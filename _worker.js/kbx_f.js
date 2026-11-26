@@ -3,6 +3,7 @@
 //   GET  /api/x/f/vitals   p75 per day and page type (state "setup" until the table in m10/f.sql exists)
 //   POST /api/x/f/chaos    weekly chaos drill of the desk review, callable only by .github/workflows/kolaboro-chaos.yml (GitHub OIDC)
 import * as K from './kolaboro.js';
+import { TB } from './kbx_strings.js';
 const { json, rpc, deskReview } = K;
 
 export const PATHS = /^\/api\/x\/f\//;
@@ -48,7 +49,7 @@ async function vitalsGet(ctx) {
     out = Object.assign({ state: wkey() ? 'collecting' : 'setup', note: wkey() ? null : 'The worker is not yet allowed to write samples.' }, d || {});
   } catch (e) { out = { state: 'setup', note: 'Collecting starts after setup: the storage table is not created yet.' }; }
   out.thresholds = { LCP: [2500, 4000], INP: [200, 500], CLS: [0.1, 0.25], TTFB: [800, 1800] };
-  out.method = 'Measured in real visitors\' browsers with PerformanceObserver (no third-party library), 75th percentile per day and page type, bots and our own test browsers excluded. No IP, cookie or user id is stored with a sample.';
+  out.method = TB.kbx_f__s.k0;
   const body = JSON.stringify(out);
   ctx.waitUntil(caches.default.put(ck, new Response(body, { headers: { 'content-type': 'application/json', 'cache-control': 'max-age=300' } })));
   return new Response(body, { headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'public, max-age=300' } });

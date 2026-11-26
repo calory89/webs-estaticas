@@ -1,3 +1,4 @@
+import { TB } from './kbx_strings.js';
 // kolaboro.com (n31c, batch 31, 18 Nov 2026): data part 2. No paid AI, no database reads or writes: everything comes from the
 // published data files (named.json, bali-cases.json, stalled-sites.json, wayback.json).
 //   12, 117  stable ids with aliases: a developer recorded under two spellings and a project recorded twice answer with a 301 to the
@@ -120,7 +121,7 @@ export function gaps(ix) {   // [{ market, country, projects, missing: {field: n
 export function dqJson(ix) {
   const qa = (ix.named && ix.named.qa) || null, al = (ix.named && ix.named.aliases) || { developers: DEV_ALIAS, projects: PROJ_ALIAS };
   return {
-    gaps: { method: 'Places with 10 or more projects. missing = projects without the fact on their published record. next = up to three facts ranked by missing count x weight (pin 3, permit number 3, registered company 2, payment plan 2, construction status 2, price 1, handover 1).', weights: GW, places: gaps(ix).map(m => ({ market: m.market, country: m.country, projects: m.projects, missing: m.missing, next: m.next.map(a => a[0]) })) },
+    gaps: { method: TB.kbx_n31c__s.k0, weights: GW, places: gaps(ix).map(m => ({ market: m.market, country: m.country, projects: m.projects, missing: m.missing, next: m.next.map(a => a[0]) })) },
     validation: qa ? { checked: qa.checked, records: qa.records, held: qa.held, counts: qa.counts || {}, rules: qa.rules, issues: (qa.issues || []).slice(0, 500).map(i => ({ id: i[0], rule: i[1], field: i[2], value: i[3] })) } : null,
     aliases: { developers: al.developers || {}, projects: al.projects || {}, rule: 'Old addresses answer with a 301 to the stable page in every language and in /api/v1.' }
   };
@@ -187,7 +188,7 @@ async function stalledPage(env, shell, lang) {
   const C = R.C.map(r => li(r.x, esc(fill(L.lc, { h: n.fd(r.ho.d, lang), m: nf(r.ov.m, lang), n: nf(r.sp.no_visible_change_months, lang), d: fdt((r.sp.newest_clear_dates || []).slice(-1)[0], lang) })), null));
   const canonU = ORIGIN + P + '/stalled/', dir = lang === 'ar' ? ' dir="rtl"' : '';
   const body = '<section class="phero"' + dir + '><div class="wrap"><p class="crumb"><a href="' + P + '/">Kolaboro</a> / ' + esc(L.h1) + '</p><h1>' + esc(L.h1) + '</h1><p class="lead">' + esc(L.lead) + '</p></div></section>' +
-    '<div class="wrap n31"' + dir + '><style>.n31{padding-bottom:40px}.n31 h2{margin-top:28px}.n31s{padding-inline-start:18px}.n31s li{margin:0 0 12px}.n31 .src{font-size:.85em}</style>' +
+    '<div class="wrap n31"' + dir + TB.kbx_n31c__s.k1 +
     '<p class="k-xs">' + esc(fill(L.upd, { d: fdt(R.updated, lang) })) + ' <a href="/api/v1/stalled">JSON</a></p>' +
     grp('reported', L.a, A) + grp('register', L.b, B) + grp('space', L.c, C) +
     '<h2>' + esc(L.m_h) + '</h2><p class="k-xs">' + esc(L.method) + '</p><p>' + esc(L.more) + ': <a href="' + P + '/handover/overdue/">' + esc(L.ov) + '</a> · <a href="/satellite/">' + esc(L.sat) + '</a> · <a href="' + P + '/engineering/data-quality/">' + esc(L.dq) + '</a></p></div>';

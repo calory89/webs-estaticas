@@ -19,6 +19,7 @@
 import { data as named } from './kbx_named.js';
 import { ppmData, ppmLoad } from './kbx_named_plus.js';
 import decodeJpeg from './kbx_xray_jpeg.js';
+import { TB } from './kbx_strings.js';
 
 export const PATHS = /^\/api\/xev(?:\/sat\.png)?$/;
 export const EV_IDS = ['location', 'satellite', 'images', 'ppm', 'market', 'developer', 'law', 'similar'];
@@ -266,7 +267,7 @@ async function evLocation(S, env, ctx) {
     c.items.push({ label: 'Pin', value: pin.lat.toFixed(5) + ', ' + pin.lng.toFixed(5) + (pin.precision_m ? ' (about ' + fmt(pin.precision_m) + ' m accuracy: ' + (geo.addresstype || geo.type || 'place') + ' level)' : pin.how === 'geocode' ? (pin.from === 'our_record' ? ' (area level, not the plot)' : '') : ' (as published on the page)'), url: 'https://www.openstreetmap.org/?mlat=' + pin.lat.toFixed(5) + '&mlon=' + pin.lng.toFixed(5) + '#map=16/' + pin.lat.toFixed(5) + '/' + pin.lng.toFixed(5), kind: 'link' });
     if (pin.from === 'our_record') c.items.push({ label: 'Note', value: 'The pin is the area in our record of this project (' + R.ar + '), not a plot.', kind: 'warn' });
   }
-  if (coi) c.items.push({ label: 'Market', value: 'Not published: we do not publish market data for this area (conflict of interest, see our independence policy).', url: ORIGIN + '/independence/', kind: 'warn' });
+  if (coi) c.items.push({ label: 'Market', value: TB.kbx_xray_ev__s.k0, url: ORIGIN + '/independence/', kind: 'warn' });
   else if (market) c.items.push({ label: 'Market', value: market + (S.country ? ', ' + S.country : ''), url: ORIGIN + '/m/' + slugM(market) + '/', kind: 'link' });
   if (pin && mpt && !coi) {
     const d = km(pin, mpt); c.data.market_point = mpt; c.data.km_to_market = Math.round(d * 10) / 10;
@@ -277,7 +278,7 @@ async function evLocation(S, env, ctx) {
   c.status = pin ? 'found' : (L.addrs.length || L.coords.length) ? 'not_found' : 'not_published';
   c.summary = pin ? (pin.how === 'geocode' ? (pin.from === 'our_record' ? (L.addrs.length ? 'The address on the page looks like an office; pinned at the project area in our record.' : 'No address on the page; pinned at the project area in our record.') : 'Address found on the page and placed on the map with OpenStreetMap.') : 'The page publishes coordinates (' + (pin.how === 'map_embed' ? 'map embed' : 'page data') + ').') + (market && !coi ? ' Market: ' + market + '.' : '')
     : L.addrs.length ? 'An address is on the page, but OpenStreetMap could not place it.' : 'The page publishes no address, map or coordinates.';
-  c.limits = ['A page address can be a sales office, and a map pin is placed by the developer: neither proves where the plot is.', 'OpenStreetMap places addresses at street or area level, not at the plot boundary.'];
+  c.limits = [TB.kbx_xray_ev__s.k1, 'OpenStreetMap places addresses at street or area level, not at the plot boundary.'];
   return c._done();
 }
 
@@ -397,10 +398,10 @@ async function satRender(f, lat, lng, stat) {
   return encodePng(rgb, SAT_PX, SAT_PX, String((f.properties || {}).datetime || '').slice(0, 4));
 }
 const satKey = (id, lat, lng) => ORIGIN + '/api/xev/sat.png?s=' + encodeURIComponent(id) + '&lat=' + lat.toFixed(5) + '&lng=' + lng.toFixed(5);
-const satCredit = y => 'Contains modified Copernicus Sentinel data ' + y + ' (Copernicus Sentinel-2 L2A, via AWS Open Data / Element 84 Earth Search), processed by Kolaboro. White bar: 1 km; orange ring: the pin.';
+const satCredit = y => 'Contains modified Copernicus Sentinel data ' + y + TB.kbx_xray_ev__s.k2;
 async function evSatellite(S, env, ctx) {
   const c = card('satellite', 12), pin = S.pin;
-  c.limits = ['Each pixel is 10 x 10 m: you can see cleared land, roads, roofs and large slabs, not floors, workers or quality.', 'The image is the latest clear pass over this point, not a live view; the date is shown.', 'The pin comes from the page (card 11), so the image shows the place the page points to, which may not be the plot.'];
+  c.limits = [TB.kbx_xray_ev__s.k3, 'The image is the latest clear pass over this point, not a live view; the date is shown.', TB.kbx_xray_ev__s.k4];
   if (!pin) { c.status = 'not_applicable'; c.summary = 'No pin, so no satellite image (the page publishes no usable address or map).'; return c._done(); }
   if (S.coi) { c.status = 'not_applicable'; c.summary = 'Not published for this area (conflict of interest, see our independence policy).'; return c._done(); }
   const skey = new Request(ORIGIN + '/__xev/satcard/' + pin.lat.toFixed(4) + ',' + pin.lng.toFixed(4));
@@ -417,14 +418,14 @@ async function evSatellite(S, env, ctx) {
   c.data.scene = { id: f.id, date, cloud_pct: Math.round(p['eo:cloud_cover'] * 10) / 10, local_cloud_pct: pick.local_cloud_pct, centre_cloud_pct: pick.centre_cloud_pct, partly_cloudy: !!partly, mgrs: p['s2:mgrs_tile'] || [p['mgrs:utm_zone'], p['mgrs:latitude_band'], p['mgrs:grid_square']].filter(Boolean).join(''), stac: sceneUrl, tci: f.assets.visual.href };
   c.data.png = key.replace(ORIGIN, ''); c.data.png_sha256 = digest;
   c.img = { src: c.data.png, alt: 'Sentinel-2 true-colour image of ' + (SAT_PX * 10 / 1000) + ' km around the pin, ' + date, w: SAT_PX, h: SAT_PX, credit: satCredit(date.slice(0, 4)), scale: '100 px = 1 km' };
-  c._src({ name: 'Copernicus Sentinel-2 L2A true colour (TCI) and scene classification (SCL), Cloud-Optimised GeoTIFF', url: f.assets.visual.href, licence: 'Copernicus Sentinel data, free, full and open (Copernicus legal notice); credit: "Contains modified Copernicus Sentinel data ' + date.slice(0, 4) + '"', fetched: now(), bytes: stat.bytes, sha256: digest, note: stat.tiles + ' tiles read with HTTP range requests; sha256 is of the PNG we made' }, stat.bytes);
+  c._src({ name: TB.kbx_xray_ev__s.k5, url: f.assets.visual.href, licence: TB.kbx_xray_ev__s.k6 + date.slice(0, 4) + '"', fetched: now(), bytes: stat.bytes, sha256: digest, note: stat.tiles + ' tiles read with HTTP range requests; sha256 is of the PNG we made' }, stat.bytes);
   c.status = 'found';
   c.summary = (partly ? 'Partly cloudy' : 'Clear') + ' Sentinel-2 view of the pin from ' + date + ' (' + (days <= 0 ? 'today' : days === 1 ? '1 day ago' : days + ' days ago') + '), ' + pick.centre_cloud_pct + '% cloud within 300 m of the pin' + (partly ? ', ' + pick.local_cloud_pct + '% over the whole image' : '') + '.';
   c.items = [
     { label: 'Image date', value: date + ' (' + (days <= 0 ? 'today' : days === 1 ? '1 day ago' : days + ' days ago') + '), tile ' + c.data.scene.mgrs, url: sceneUrl, kind: 'link' },
     { label: 'Clouds', value: pick.centre_cloud_pct + '% within 300 m of the pin, ' + c.data.scene.local_cloud_pct + '% over the 2.56 km image (scene classification), ' + c.data.scene.cloud_pct + '% over the whole 110 km tile', kind: 'num' },
-    { label: 'What you can tell', value: 'Whether the area is built up, cleared, farmland or forest; roads and the coastline; large roofs or slabs if the project is big enough.', kind: 'text' },
-    { label: 'What you cannot tell', value: 'Floors, finishes, workers on site, permits, or who owns the land. A small villa project may be only a few pixels.', kind: 'text' },
+    { label: 'What you can tell', value: TB.kbx_xray_ev__s.k7, kind: 'text' },
+    { label: 'What you cannot tell', value: TB.kbx_xray_ev__s.k8, kind: 'text' },
   ];
   const newer = tried.filter(t => t.date > date || (t.date === date && t.id !== f.id && t.centre_cloud_pct > pick.centre_cloud_pct));
   if (newer.length) c.items.push({ label: 'Newer passes skipped', value: newer.slice(0, 5).map(t => t.date + ' (' + t.centre_cloud_pct + '% cloud within 300 m of the pin, ' + t.local_cloud_pct + '% over the image)').join('; ') + (newer.length > 5 ? '; ...' : ''), kind: 'text' });
@@ -532,7 +533,7 @@ async function evImages(S, env, ctx) {
   const rankX = u => /\.(jpe?g|png)(\?|$)/i.test(u) ? 0 : /\.(webp|avif)(\?|$)/i.test(u) ? 2 : 1;
   const pick = list.map((x, i) => [x, i]).sort((a, b) => rankX(a[0].url) - rankX(b[0].url) || a[1] - b[1]).slice(0, 12).sort((a, b) => a[1] - b[1]).map(a => a[0]), skipped = [], hashed = [];
   c.data = { found: list.length, checked: pick.length, decoded: 0, skipped, reuse: [], stock: stock.map(s => ({ img: s.img, host: s.host, source: s.source })), index_images: (B.imgs && B.imgs.images) || 0, index_generated: B.imgs && B.imgs.generated };
-  c.limits = ['A match means the same picture (or a near copy) is on another tracked project: it can be the same developer, a shared agency render, or a stock image. It is not proof of anything by itself.', 'Pages that serve only WebP or AVIF images, or block downloads, cannot be checked here; the browser tool /tools/image-check/ can check any image you save.'];
+  c.limits = [TB.kbx_xray_ev__s.k9, TB.kbx_xray_ev__s.k10];
   if (!list.length) { c.status = 'not_published'; c.summary = S.html ? 'No photos or renders found in the page HTML (they may load with JavaScript).' : 'The page could not be read.'; return c._done(); }
   const t0 = Date.now(); let bytes = 0;
   // three at a time: a Worker invocation has six outgoing connections, shared with the other X-ray cards
@@ -593,7 +594,7 @@ export function priceSizeOnPage(text) {
   const T = String(text || ''), prices = [], sizes = [];
   const curRx = '(US\\$|USD|€|EUR|AED|Dhs?|£|GBP|IDR|Rp\\.?|THB|฿|MXN|MYR|RM|\\$)';
   const reA = new RegExp(curRx + '\\s?(\\d[\\d.,\\s]{0,14}\\d|\\d)\\s?(million|mio|mn|m|k|juta|jt|miliar|billion|bn)?\\b', 'gi');
-  const reB = new RegExp('(\\d[\\d.,]{0,14}\\d|\\d)\\s?(million|mio|mn|k|juta|jt|miliar)?\\s?(USD|EUR|euros?|AED|GBP|IDR|THB|baht|MXN|MYR)\\b', 'gi');
+  const reB = new RegExp(TB.kbx_xray_ev__s.k11, 'gi');
   const add = (cs, num, mult, i, len) => { const cur = (CUR.find(([re]) => re.test(cs)) || [])[1]; const v = numOf(num, mult); if (!cur || !v) return; const min = { IDR: 5e7, THB: 3e5, VND: 2e8, MXN: 2e5, PHP: 5e5, TRY: 3e5 }[cur] || 2e4; if (v < min || v > 5e10) return; const q = snippet(T, i, len); prices.push({ v, cur, from: /\b(from|starting|start at|desde|ab|à partir|mulai|vanaf|от|起)\b/i.test(T.slice(Math.max(0, i - 30), i)), quote: q }); };
   for (const m of T.matchAll(reA)) add(m[1], m[2], m[3], m.index, m[0].length);
   for (const m of T.matchAll(reB)) add(m[3], m[1], m[2], m.index, m[0].length);
@@ -624,7 +625,7 @@ const bandOf = usd => usd == null ? null : usd < 1e5 ? BANDS[0] : usd < 2e5 ? BA
 async function evPpm(S, env, ctx) {
   await ppmLoad(env);
   const c = card('ppm', 14), R = S.rec && S.rec.x;
-  c.limits = ['A starting price is for the cheapest unit and the smallest size may be a different unit, so the figure per m2 is indicative only.', 'Official figures are registered sales (Dubai) or official appraisals (Spain), not the price of this unit.'];
+  c.limits = [TB.kbx_xray_ev__s.k12, TB.kbx_xray_ev__s.k13];
   let x, from;
   const ps = S.ps;
   if (R && R.fx && R.fx.price_min && R.fx.size_min_m2) { x = R; from = 'our_record'; }
@@ -653,8 +654,8 @@ async function evPpm(S, env, ctx) {
 const MIN_N = 5;
 async function evMarket(S, env, ctx) {
   const c = card('market', 15), B = S.B;
-  c.limits = ['Base rates describe the projects we track in this market, not this project.', 'Advertised facts from developer pages; "publishes a permit number" means the number is on the page, not that we confirmed it.'];
-  if (S.coi) { c.status = 'not_applicable'; c.summary = 'We do not publish market statistics for this area (conflict of interest, see our independence policy).'; c.items.push({ label: 'Why', value: 'A Kolaboro founder develops a project in this area.', url: ORIGIN + '/independence/', kind: 'text' }); return c._done(); }
+  c.limits = ['Base rates describe the projects we track in this market, not this project.', TB.kbx_xray_ev__s.k14];
+  if (S.coi) { c.status = 'not_applicable'; c.summary = TB.kbx_xray_ev__s.k15; c.items.push({ label: 'Why', value: 'A Kolaboro founder develops a project in this area.', url: ORIGIN + '/independence/', kind: 'text' }); return c._done(); }
   const M = S.market;
   if (!M) { c.status = 'not_found'; c.summary = 'We could not place this project in one of the markets we track, so there are no base rates.'; return c._done(); }
   const all = [...B.N.caseBy.values()].filter(x => x.market === M);
@@ -683,7 +684,7 @@ async function evMarket(S, env, ctx) {
 // ------------------------------------------------------------------------------------------------ (16) developer track record
 async function evDeveloper(S, env, ctx) {
   const c = card('developer', 16), B = S.B, N = B.N;
-  c.limits = ['Only the projects we track; a developer can have others.', 'A moved date is what the developer itself now says; a broken promise is a date that passed with later evidence that it had not happened.'];
+  c.limits = ['Only the projects we track; a developer can have others.', TB.kbx_xray_ev__s.k16];
   let dv = null, how = null;
   const R = S.rec;
   if (R && R.x && R.x.dvs && N.devs.has(R.x.dvs)) { dv = N.devs.get(R.x.dvs); how = 'project record'; }
@@ -719,7 +720,7 @@ const LAWC = { ID: 'Indonesia', 'AE-DU': 'UAE', TH: 'Thailand', ES: 'Spain', PT:
 const COVC = { Spain: 'ES', USA: 'US', UAE: 'AE', Indonesia: 'ID', 'United Kingdom': 'GB' };
 async function evLaw(S, env, ctx) {
   const c = card('law', 17), B = S.B, C = S.country;
-  c.limits = ['General information quoted from the official text, not legal advice.', 'A law only protects you if your contract and the project use it (for example a registered escrow account).'];
+  c.limits = ['General information quoted from the official text, not legal advice.', TB.kbx_xray_ev__s.k17];
   if (!C) { c.status = 'not_found'; c.summary = 'We could not tell which country the project is in.'; return c._done(); }
   const rules = [];
   for (const src of [B.law, B.lh]) { if (!src || !src.rules) continue; for (const r of src.rules) if (LAWC[r.market] === C) { const s = (src.sources || {})[r.source] || ((B.law && B.law.sources) || {})[r.source]; if (s && s.url && !rules.some(x => x.id === r.id)) rules.push({ id: r.id, title: r.title, cite: r.cite || null, law: s.law, url: s.url, quote: String(r.quote || '').slice(0, 300), topics: r.topics || [] }); } }
@@ -736,7 +737,7 @@ async function evLaw(S, env, ctx) {
   }
   c.status = rules.length ? 'found' : 'not_published';
   c.summary = rules.length ? rules.length + ' rules of ' + C + ' law for off-plan buyers, quoted from the official text' + (cov && cov.code !== 'ANY' ? '; ' + ((cov.online || []).length ? (cov.online || []).length + ' registers we query live, ' : 'no register with open online access, ') + (cov.manual || []).length + ' checked by hand.' : '.')
-    : 'We have not quoted the buyer protection law of ' + C + ' yet (we cover Indonesia, UAE, Thailand, Spain, Portugal, Mexico, Florida (USA) and Victoria (Australia)).' + (cov ? ' Registers: ' + (cov.code === 'ANY' ? 'general checks for any country.' : (cov.online || []).length + ' live, ' + (cov.manual || []).length + ' by hand.') : '');
+    : 'We have not quoted the buyer protection law of ' + C + TB.kbx_xray_ev__s.k18 + (cov ? ' Registers: ' + (cov.code === 'ANY' ? 'general checks for any country.' : (cov.online || []).length + ' live, ' + (cov.manual || []).length + ' by hand.') : '');
   return c._done();
 }
 
@@ -788,7 +789,7 @@ export async function evRun(page, hint, env, ctx, onCard, opts) {
   hint = hint || {}; page = page || {};
   const only = new Set((opts && opts.only && opts.only.length ? opts.only : EV_IDS).filter(id => RUN[id]));
   const emit = c => { try { onCard && onCard(c); } catch (e) {} return c; };
-  const fail = (id, e) => emit({ id, n: NUM[id], title: TITLES[id], status: 'error', summary: (/timed out/.test(String((e && e.message) || e)) ? 'The source did not answer in time, so this check could not run. The other checks are not affected; run the X-ray again in a few minutes.' : 'This check could not run: ' + String((e && e.message) || e).slice(0, 160)), error: String((e && e.message) || e).slice(0, 160), items: [], limits: [], paid: PAID[id] || null, sources: [], proof: { ms: 0, bytes: 0, edge: true, contacted: [] }, data: {} });
+  const fail = (id, e) => emit({ id, n: NUM[id], title: TITLES[id], status: 'error', summary: (/timed out/.test(String((e && e.message) || e)) ? TB.kbx_xray_ev__s.k19 : 'This check could not run: ' + String((e && e.message) || e).slice(0, 160)), error: String((e && e.message) || e).slice(0, 160), items: [], limits: [], paid: PAID[id] || null, sources: [], proof: { ms: 0, bytes: 0, edge: true, contacted: [] }, data: {} });
   let B; try { B = await base(env); } catch (e) { return [...only].map(id => fail(id, e)); }
   const html = String(page.html || '');
   const S = { B, html, url: page.final_url || page.url || '', fetched: page.fetched || null, page_sha: page.sha256 || null, hint, market: null, country: null, coi: false, pin: null, place: null };
@@ -821,7 +822,7 @@ export async function handle(req, u, env, ctx) {
   if (req.method !== 'GET') return J({ error: 'GET only' }, 405);
   if (u.pathname === '/api/xev/sat.png') { try { return await satRoute(u, env, ctx); } catch (e) { return new Response('satellite image unavailable: ' + String(e.message || e).slice(0, 120), { status: 502 }); } }
   const target = u.searchParams.get('url');
-  if (!target) return J({ about: 'Project X-ray evidence cards (items 11 to 18). GET /api/xev?url=<project page>[&only=' + EV_IDS.join(',') + ']', cards: EV_IDS.map(id => ({ id, n: NUM[id], title: TITLES[id] })), contract: 'Card fields: id, n, title, status (found|not_found|not_published|not_applicable|error), summary, items[], img, limits[], paid, sources[], proof{ms,bytes,edge,contacted}, data{}' });
+  if (!target) return J({ about: 'Project X-ray evidence cards (items 11 to 18). GET /api/xev?url=<project page>[&only=' + EV_IDS.join(',') + ']', cards: EV_IDS.map(id => ({ id, n: NUM[id], title: TITLES[id] })), contract: TB.kbx_xray_ev__s.k20 });
   if (!publicUrl(target)) return J({ error: 'url must be a public http(s) URL' }, 400);
   const only = (u.searchParams.get('only') || '').split(',').filter(x => EV_IDS.includes(x));
   const pid = u.searchParams.get('project_id') || '';

@@ -6,6 +6,7 @@
 // GET /api/x/n/registry    the number provenance registry (/k/prov.json), signed
 // The signature covers the exact body: 'kolaboro-sig-v1\n' + SHA-256 hex of the body, Ed25519, keys at /.well-known/kolaboro-keys.json.
 import { signBody } from './kolaboro.js';
+import { TB } from './kbx_strings.js';
 
 export const PATHS = /^\/api\/x\/n(\/|$)/;
 const ORIGIN = 'https://kolaboro.com';
@@ -32,18 +33,18 @@ export async function handle(req, u, env, ctx) {
   if (req.method !== 'GET' && req.method !== 'HEAD') return plain(env, { error: 'method_not_allowed' }, 405, 0);
   const p = u.pathname.replace(/\/+$/, '');
   if (p === '/api/x/n') return plain(env, {
-    about: 'Provenance for kolaboro.com: where each published number comes from, whether the page you got is the page we published, and how the worker bundle was built.',
+    about: TB.kbx_n__s.k0,
     endpoints: {
-      '/api/x/n/manifest': 'SHA-256 of every published file of the site outside /data/, computed by a GitHub Actions job from the git commit that was live. The body is the file ' + FILES.manifest + ' byte for byte, signed.',
-      '/api/x/n/builds': 'SHA-256 of a deterministic esbuild bundle of the worker, one entry per worker source tree. The body is ' + FILES.builds + ' byte for byte, signed.',
+      '/api/x/n/manifest': TB.kbx_n__s.k1 + FILES.manifest + ' byte for byte, signed.',
+      '/api/x/n/builds': TB.kbx_n__s.k2 + FILES.builds + ' byte for byte, signed.',
       '/api/x/n/registry': 'The number provenance registry ' + FILES.registry + ', signed.'
     },
-    signature: "Headers x-kolaboro-signature and x-kolaboro-key-id: Ed25519 over 'kolaboro-sig-v1\\n' + SHA-256 hex of the body. Public keys: /.well-known/kolaboro-keys.json",
+    signature: TB.kbx_n__s.k3,
     check_in_browser: ['/verify#page', '/verify#builds', '/verify#numbers']
   }, 200, 300);
   const k = p.slice('/api/x/n/'.length);
   if (!FILES[k]) return plain(env, { error: 'not_found', see: '/api/x/n/' }, 404, 60);
   const body = await asset(env, FILES[k]);
-  if (body == null) return plain(env, { state: 'starting', error: 'not_published_yet', file: FILES[k], note: 'The GitHub Actions job that writes this file has not published it to this deploy yet. Nothing is invented in its place.' }, 200, 30);
+  if (body == null) return plain(env, { state: 'starting', error: 'not_published_yet', file: FILES[k], note: TB.kbx_n__s.k4 }, 200, 30);
   return signedText(env, body, k === 'registry' ? 300 : 60, FILES[k]);
 }

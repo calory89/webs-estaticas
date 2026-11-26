@@ -10,6 +10,7 @@
 // cite(): appends a "How to cite this page" block (text with link, BibTeX, licence) to report pages that have none (item 93)
 import { trData } from './kbx_tr.js';
 import { trustRender, head, crumbLd } from './kbx_trust.js';
+import { TB } from './kbx_strings.js';
 
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
@@ -60,7 +61,7 @@ function withChange(E, ed) {   // index points against the edition before it
 }
 
 // ------------------------------------------------------------------------------------------------ item 97: monthly report
-const CSS = '<style id="n33b-css">.n3t-w{overflow-x:auto;border:1px solid var(--k-line);border-radius:var(--k-r-md,10px);background:var(--k-surface);margin:16px 0}.n3t-w table{width:100%;min-width:640px;border-collapse:collapse}.n3t-w th,.n3t-w td{padding:9px 10px;text-align:start;vertical-align:top;border-bottom:1px solid var(--k-line)}.n3t-w th{font-size:var(--k-fs-xs,13px)}.n3t-w td.n{font-variant-numeric:tabular-nums;white-space:nowrap}.n3t-up{color:var(--k-ok,#0B7A55)}.n3t-dn{color:var(--k-bad,#B4321B)}.n3t-k{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:16px 0}.n3t-k div{border:1px solid var(--k-line);border-radius:10px;padding:12px;background:var(--k-surface)}.n3t-k b{display:block;font-size:1.5rem}.n3t-code{display:block;white-space:pre-wrap;overflow-wrap:anywhere;background:var(--k-sunken);border-radius:6px;padding:12px;font-size:13px}.n3t-l a{display:inline-block;padding:10px 0;min-height:44px}@media (max-width:640px){.n3t-w table{min-width:0}.n3t-w thead{display:none}.n3t-w tr{display:block;border-bottom:1px solid var(--k-line);padding:6px 0}.n3t-w td{display:block;border:0;padding:3px 12px}.n3t-w td[data-l]::before{content:attr(data-l) ": ";color:var(--k-muted)}}</style>';
+/* CSS: n40 k17, in /data/i18n/k17s.json */
 const med = a => { const s = a.slice().sort((x, y) => x - y), n = s.length; return n ? (n % 2 ? s[(n - 1) / 2] : (s[n / 2 - 1] + s[n / 2]) / 2) : null; };
 const BASE = '/reports/transparency/';
 
@@ -116,7 +117,7 @@ function devSvg(n, date) {
   const L = 'Kolaboro public checks', R = n == null ? 'not issued' : '6 of 6 · ' + n + (n === 1 ? ' project' : ' projects'), lw = 150, rw = n == null ? 92 : 132, w = lw + rw, col = n == null ? '#56636F' : '#0B6E4F';
   return '<svg xmlns="http://www.w3.org/2000/svg" width="' + w + '" height="44" viewBox="0 0 ' + w + ' 44" role="img" aria-label="' + esc(L + ': ' + R) + '"><title>' + esc(L + ': ' + R + (n == null ? '' : ', data ' + date)) + '</title>' +
     '<rect width="' + w + '" height="44" rx="8" fill="#17212B"/><rect x="' + lw + '" width="' + rw + '" height="44" rx="8" fill="' + col + '"/><rect x="' + lw + '" width="10" height="44" fill="' + col + '"/>' +
-    '<g font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif" fill="#fff"><text x="12" y="19" font-size="12" font-weight="700">Kolaboro</text><text x="12" y="34" font-size="11" opacity=".85">buyer checks public</text>' +
+    TB.kbx_n33b__s.k0 +
     '<text x="' + (lw + 10) + '" y="' + (n == null ? 27 : 21) + '" font-size="' + (n == null ? 12 : 14) + '" font-weight="700">' + (n == null ? 'not issued' : esc(R)) + '</text>' + (n == null ? '' : '<text x="' + (lw + 10) + '" y="36" font-size="10" opacity=".85">data ' + esc(date) + '</text>') + '</g></svg>';
 }
 const codeOf = d => '<a href="' + ORIGIN + '/developers/' + d.s + '/"><img src="' + ORIGIN + '/embed/transparency/developer/' + d.s + '.svg" height="44" alt="Kolaboro: ' + String(d.n).replace(/["<>&]/g, '') + ', 6 of 6 buyer checks public"></a>';
@@ -163,15 +164,15 @@ export async function handle(req, u, env, ctx, shell) {
     }
   } catch (e) { return null; }
   if (BODY.size > 400) BODY.clear();
-  return trustRender(lang, Object.assign({}, pg, { body: pg.body.replace('<div class="kpg">', CSS + '<div class="kpg">') }), shell);
+  return trustRender(lang, Object.assign({}, pg, { body: pg.body.replace('<div class="kpg">', TB.kbx_n33b__s.CSS + '<div class="kpg">') }), shell);
 }
 
 // n40 k6 (R04-17): copy buttons for the plain credit line and an APA reference (date in the page language)
 const apa40 = (lang, ti, url, d) => { let ds = d; try { ds = d.slice(0, 4) + ', ' + new Intl.DateTimeFormat(lang === 'en' ? 'en-US' : LOC[lang] || 'en-GB', { month: 'long', day: 'numeric', timeZone: 'UTC' }).format(new Date(d + 'T12:00:00Z')); } catch (e) {} return 'Kolaboro. (' + ds + '). ' + ti + '. ' + url; };
-const CB40JS = "document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('[data-c40]');if(!b)return;var x=b.getAttribute('data-c40'),o=b.parentNode.querySelector('.c40-ok'),f=function(){if(o)o.textContent=b.getAttribute('data-ok')};if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(x).then(f,function(){prompt('',x)});else prompt('',x)});";
-const cb40 = (lang, plain, apa, nc) => { const bs = 'min-height:44px;padding:8px 14px;margin:0 8px 8px 0;border:1px solid var(--line,#c9c9c9);border-radius:8px;background:transparent;color:inherit;font:inherit;cursor:pointer';
+/* CB40JS: n40 k17, in /data/i18n/k17s.json */
+const cb40 = (lang, plain, apa, nc) => { const bs = TB.kbx_n33b__s.k1;
   return '<p class="c40" style="display:flex;flex-wrap:wrap;align-items:center;margin:8px 0">' + (plain ? '<button type="button" style="' + bs + '" data-c40="' + esc(plain) + '" data-ok="' + esc(t(lang, 'c_ok')) + '">' + esc(t(lang, 'c_cp')) + '</button>' : '') +
-    '<button type="button" style="' + bs + '" data-c40="' + esc(apa) + '" data-ok="' + esc(t(lang, 'c_ok')) + '">' + esc(t(lang, 'c_apa')) + '</button><span class="c40-ok" role="status" aria-live="polite"></span></p><script nonce="' + esc(nc) + '">' + CB40JS + '</script>'; };
+    '<button type="button" style="' + bs + '" data-c40="' + esc(apa) + '" data-ok="' + esc(t(lang, 'c_ok')) + '">' + esc(t(lang, 'c_apa')) + '</button><span class="c40-ok" role="status" aria-live="polite"></span></p><script nonce="' + esc(nc) + '">' + TB.kbx_n33b__s.CB40JS + '</script>'; };
 
 // ------------------------------------------------------------------------------------------------ item 93: "How to cite this page" on report pages
 export async function cite(req, r, env, u) {

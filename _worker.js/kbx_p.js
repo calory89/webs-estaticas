@@ -2,6 +2,7 @@
 // Hazard figures come only from open sources read live (see kbx_p_hz.js); nothing is estimated. The pin is rounded to
 // about 10 m, the answer is cached at the edge for 30 days, and the coordinates are not stored or logged anywhere else.
 import * as HZ from './kbx_p_hz.js';
+import { TB } from './kbx_strings.js';
 export const PATHS = /^\/api\/x\/p\//;
 
 const CORS = { 'access-control-allow-origin': '*', 'access-control-allow-methods': 'GET, OPTIONS' };
@@ -31,9 +32,9 @@ async function hazards(req, u, ctx, env) {
   const cache = caches.default;
   const hit = await cache.match(key);
   if (hit) { const r = new Response(hit.body, hit); r.headers.set('x-cache', 'hit'); return r; }
-  if (!(await allow(ctx, 'hz/' + ipOf(req), 12, 600))) return out({ error: 'rate_limited', note: 'At most 12 new pins per 10 minutes from one address, so the free public sources behind this page are not overloaded. Pins already looked up by anyone stay instant.' }, 429);
+  if (!(await allow(ctx, 'hz/' + ipOf(req), 12, 600))) return out({ error: 'rate_limited', note: TB.kbx_p__s.k0 }, 429);
   const body = await HZ.all(rl, rg, env && env.ASSETS ? { asset: p => env.ASSETS.fetch(new Request('https://kolaboro.com/_s/kolaboro.com' + p)) } : {});
-  body.note = 'Each figure is read live from the public source named next to it. A source that did not answer is shown as unavailable, never estimated.';
+  body.note = TB.kbx_p__s.k1;
   body.rounded_to = '4 decimals (about 10 m)';
   const failed = HZ.SOURCES.filter(k => !body[k] || !body[k].ok).length;
   const res = out(body, 200, failed ? 300 : 86400);
@@ -74,7 +75,7 @@ async function zoning(req, u, ctx) {
   if (!(await allow(ctx, 'hzz/' + ipOf(req), 10, 600))) return out({ error: 'rate_limited' }, 429);
   const res = await Promise.all(ZPROBE.map(probe));
   const body = { checked: new Date().toISOString(), from: 'Cloudflare worker (kolaboro.com)', automated_lookup: false,
-    reason: 'Kolaboro does not show a zone class: no official Indonesian spatial plan service answered a machine point query from our servers (results below), and we will not show a zone from an unofficial copy or a guess.',
+    reason: TB.kbx_p__s.k2,
     probes: res };
   const c = out(body, 200, 3600);
   ctx.waitUntil(caches.default.put(key, c.clone()).catch(() => {}));

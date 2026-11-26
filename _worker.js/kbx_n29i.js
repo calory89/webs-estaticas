@@ -111,13 +111,13 @@ function marketPage(D, m, lang) {
   // n29q: market files use the same trail as the English /m/ page (Countries / <country> / <market>), the country page in this language when it exists
   const coS = co ? slugA(co) : null, coU = coS ? (D.C.has(coS) ? pre(lang) : '') + '/countries/' + coS + '/' : null;
   const cr = isC ? [['Kolaboro', pre(lang) + '/'], [t(lang, 'crumb_c'), pre(lang) + '/countries/'], [p, pre(lang) + path]] : [['Kolaboro', pre(lang) + '/'], [t(lang, 'crumb_c'), pre(lang) + '/countries/']].concat(coU && co !== mk ? [[coName(co, lang), coU]] : []).concat([[p, pre(lang) + path]]);
-  const body = '<div class="k29"><section class="k-sec"><div class="k-wrap"><div class="k-phead"><p class="k-crumb">' + cr.map((c, i) => i < cr.length - 1 ? '<a href="' + c[1] + '">' + esc(c[0]) + '</a>' : '<span>' + bdi(c[0]) + '</span>').join(' / ') + '</p>' +
+  const body = TB.kbx_n29i__s.k0 + cr.map((c, i) => i < cr.length - 1 ? '<a href="' + c[1] + '">' + esc(c[0]) + '</a>' : '<span>' + bdi(c[0]) + '</span>').join(' / ') + '</p>' +
     '<h1>' + th(lang, 'm_h1', { p: H(bdi(p)) }) + '</h1><p class="lead">' + th(lang, 'm_lead', { p: H(bdi(p)), d }) + '</p></div>' +
     kvHtml([[nf(lang, st.n), t(lang, 'k_n')], [nf(lang, st.dv), t(lang, 'k_dv')], [nf(lang, st.pn) + ' (' + nf(lang, pct(st.pn, st.n)) + '%)', t(lang, 'k_pn')], [nf(lang, st.h) + ' (' + nf(lang, pct(st.h, st.n)) + '%)', t(lang, 'k_h')],
       [nf(lang, st.mv), t(lang, 'k_mv')], [nf(lang, st.ov), t(lang, 'k_ov')], [st.med == null ? '-' : nf(lang, st.med), t(lang, 'k_med')], [esc(d), t(lang, 'k_d')]]) +
-    '<h2 id="projects">' + esc(t(lang, 'tb')) + '</h2><style>@media (max-width:640px){' + ['c_p', 'c_dv', 'c_ar', 'c_h', 'c_pn', 'c_s'].map((k, i) => '.k40m td:nth-child(' + (i + 1) + ')::before{content:"' + String(t(lang, k)).replace(/[\\"<>]/g, '') + '"}').join('') + '}</style><div class="k-table-wrap"><table class="k-table k-table--dense k-table--stack k40m"><thead><tr>' + ['c_p', 'c_dv', 'c_ar', 'c_h', 'c_pn', 'c_s'].map(k => '<th scope="col">' + esc(t(lang, k)) + '</th>').join('') + '</tr></thead><tbody>' + rows + '</tbody></table></div>' +
+    '<h2 id="projects">' + esc(t(lang, 'tb')) + '</h2><style>@media (max-width:640px){' + ['c_p', 'c_dv', 'c_ar', 'c_h', 'c_pn', 'c_s'].map((k, i) => '.k40m td:nth-child(' + (i + 1) + ')::before{content:"' + String(t(lang, k)).replace(/[\\"<>]/g, '') + '"}').join('') + TB.kbx_n29i__s.k1 + ['c_p', 'c_dv', 'c_ar', 'c_h', 'c_pn', 'c_s'].map(k => '<th scope="col">' + esc(t(lang, k)) + '</th>').join('') + '</tr></thead><tbody>' + rows + '</tbody></table></div>' +
     (isC && TR_PLACES.some(P => P.coi && (CO_AL[P.co] || P.co) === m.co) ? '<p class="k-small k-muted">' + esc(t(lang, 'coi_n')) + ' <a href="/independence/" hreflang="en">' + esc(t(lang, 'coi_l')) + '</a></p>' : '') +   // n40 k4 (R04-02): neutral conflict-of-interest line, no place named
-    faqHtml(t(lang, 'faq', { p }), Q) + (BPL.some(P => P.mk === mk) ? buyerLinks(lang, mk).replace('<section class="k29-q"><div class="k-wrap wrap">', '').replace('</div></section>', '') : '') + '<h2 id="more">' + th(lang, 'more', { p: H(bdi(p)) }) + '</h2><ul class="k29-l">' + links.map(a => '<li>' + a + '</li>').join('') + '</ul><p class="k-small k-muted">' + esc(t(lang, 'src')) + ' <a href="/data/named.json">named.json</a> · <a href="/data/promises.json">promises.json</a></p></div></section></div>';
+    faqHtml(t(lang, 'faq', { p }), Q) + (BPL.some(P => P.mk === mk) ? buyerLinks(lang, mk).replace('<section class="k29-q"><div class="k-wrap wrap">', '').replace('</div></section>', '') : '') + '<h2 id="more">' + th(lang, 'more', { p: H(bdi(p)) }) + '</h2><ul class="k29-l">' + links.map(a => '<li>' + a + '</li>').join('') + '</ul><p class="k-small k-muted">' + esc(t(lang, 'src')) + TB.kbx_n29i__s.k2;
   const url = ORIGIN + pre(lang) + path;
   const ld = [{ '@type': 'CollectionPage', '@id': url + '#page', url, name: title, description: desc, inLanguage: lang, dateModified: st.lm, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' },
       about: isC ? { '@type': 'Country', name: p, alternateName: p !== m.co ? m.co : undefined } : { '@id': url + '#place' }, mainEntity: { '@type': 'ItemList', numberOfItems: L.length, itemListElement: L.slice(0, 50).map((x, i) => ({ '@type': 'ListItem', position: i + 1, url: ORIGIN + pre(lang) + '/projects/' + x.s + '/', name: x.n })) } },
@@ -136,7 +136,7 @@ function mSitemap(D) {
   const urls = [...D.M.values()].flatMap(m => { const p = '/m/' + slugM(m.mk) + '/'; return LANGS.map(l => '<url><loc>' + xe(ORIGIN + pre(l) + p) + '</loc><lastmod>' + m.st.lm + '</lastmod>' + LANGS.map(a => '<xhtml:link rel="alternate" hreflang="' + a + '" href="' + xe(ORIGIN + pre(a) + p) + '"/>').join('') + '<xhtml:link rel="alternate" hreflang="x-default" href="' + xe(ORIGIN + p) + '"/></url>'); });
   for (const p of ['/countries/', '/rankings/'].concat([...D.C.values()].map(c => '/countries/' + c.s + '/'))) { const c = D.C.get(p.split('/')[2]), lm = c ? c.st.lm : D.d; for (const l of LANGS) urls.push('<url><loc>' + ORIGIN + pre(l) + p + '</loc><lastmod>' + lm + '</lastmod>' + LANGS.map(a => '<xhtml:link rel="alternate" hreflang="' + a + '" href="' + ORIGIN + pre(a) + p + '"/>').join('') + '<xhtml:link rel="alternate" hreflang="x-default" href="' + ORIGIN + p + '"/></url>'); }
   for (const g of GROUPS) { const p = '/guides/buyers-from/' + g + '/', lm = BPL.map(P => (D.M.get(slugM(P.mk)) || { st: { lm: '' } }).st.lm).concat(['2026-11-14']).sort().pop(); for (const l of LANGS) urls.push('<url><loc>' + ORIGIN + pre(l) + p + '</loc><lastmod>' + lm + '</lastmod>' + LANGS.map(a => '<xhtml:link rel="alternate" hreflang="' + a + '" href="' + ORIGIN + pre(a) + p + '"/>').join('') + '<xhtml:link rel="alternate" hreflang="x-default" href="' + ORIGIN + p + '"/></url>'); }
-  return '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n' + urls.join('\n') + '\n</urlset>\n';
+  return TB.kbx_n29i__s.k3 + urls.join('\n') + '\n</urlset>\n';
 }
 
 // ------------------------------------------------------------------------------------------------ items 93 and 95: hub figures and Q&A
@@ -173,14 +173,14 @@ function hubParts(D, kind, lang) {
     const top = [...byMk.entries()].sort((a, b) => b[1] - a[1]).slice(0, 5);
     const k = [[N(A.ov), t(lang, 'k_ov')], [N([...byMk.values()].filter(v => v >= OV_MIN).length), t(lang, 'k_ovp')], [N(med(ms)), t(lang, 'k_ovm')], [N(mx[1].m), t(lang, 'k_ovx')], [esc(d), t(lang, 'k_d')]];
     // n29q: /numbers/ and /api/open/stats show a smaller overdue count (first date in the data file); say why the two differ
-    const HON = { en: '{a}Kolaboro in numbers{b} counts projects past the first handover date in the data file; this page uses the handover date shown on each project page and the current month, so the two counts differ.',
-      es: '{a}Kolaboro en cifras{b} cuenta los proyectos que pasaron la primera fecha de entrega del archivo de datos; esta página usa la fecha de entrega que muestra cada ficha y el mes actual, por eso las dos cifras difieren.',
-      fr: '{a}Kolaboro en chiffres{b} compte les projets qui ont dépassé la première date de livraison du fichier de données ; cette page utilise la date de livraison affichée sur chaque fiche et le mois en cours, d’où l’écart entre les deux chiffres.',
-      de: '{a}Kolaboro in Zahlen{b} zählt Projekte nach dem ersten Übergabetermin in der Datendatei; diese Seite nutzt den Übergabetermin, den jede Projektseite zeigt, und den aktuellen Monat. Daher weichen die Zahlen ab.',
-      nl: '{a}Kolaboro in cijfers{b} telt projecten voorbij de eerste opleverdatum in het gegevensbestand; deze pagina gebruikt de opleverdatum op elke projectpagina en de huidige maand, daarom verschillen de twee aantallen.',
-      ru: '{a}Kolaboro в цифрах{b} считает проекты, у которых прошла первая дата сдачи в файле данных; эта страница берёт дату сдачи со страницы каждого проекта и текущий месяц, поэтому числа различаются.',
+    const HON = { en: TB.kbx_n29i__s.k4,
+      es: TB.kbx_n29i__s.k5,
+      fr: TB.kbx_n29i__s.k6,
+      de: TB.kbx_n29i__s.k7,
+      nl: TB.kbx_n29i__s.k8,
+      ru: TB.kbx_n29i__s.k9,
       zh: '{a}Kolaboro 数据一览{b}统计的是已超过数据文件中首个交付日期的项目；本页使用每个项目页显示的交付日期和当前月份，因此两个数字不同。',
-      ar: 'تحسب صفحة {a}Kolaboro بالأرقام{b} المشاريع التي تجاوزت أول موعد تسليم في ملف البيانات؛ أما هذه الصفحة فتستخدم موعد التسليم الظاهر في صفحة كل مشروع والشهر الحالي، لذلك يختلف العددان.' };
+      ar: TB.kbx_n29i__s.k10 };
     const note = esc(HON[lang] || HON.en).replace('{a}', '<a href="' + pre(lang) + '/numbers/">').replace('{b}', '</a>');
     const Q = [[t(lang, 'ho_q1'), t(lang, 'ho_a1', { ov: N(A.ov), m: N(med(ms)), d })], [t(lang, 'ho_q2'), t(lang, 'ho_a2', { l: list(lang, top.map(([m, n]) => mkName(m, lang) + ' (' + N(n) + ')')) })], [t(lang, 'ho_q3'), t(lang, 'ho_a3')]];
     return { k, Q, note };
@@ -247,12 +247,12 @@ function questions(D) {
   for (const v of [...ix.devs.values()].filter(v => v.ids.length >= MIN_MK).sort((a, b) => b.ids.length - a.ids.length)) {
     const L = v.ids.map(id => ix.byId.get(id)).filter(Boolean), st = D.stats(L), url = ORIGIN + '/developers/' + v.s + '/';
     add('Which off-plan projects does ' + v.n + ' have?', L.length + ' tracked: ' + lstP(L, x => { const h = handoverOf(ix, x); return x.n + ' (' + x.mk + (h ? ', handover ' + hdisp(h.d, 'en') : '') + ')'; }) + '.', url, v.n);
-    add('Does ' + v.n + ' deliver on time?', 'Of ' + st.h + ' projects with a handover date on record, ' + st.ov + ' are past it without a recorded completion and ' + st.mv + ' saw the date move later at least once. The developer page lists promised against actual dates where a completion is on record.', url, v.n);
+    add('Does ' + v.n + ' deliver on time?', 'Of ' + st.h + ' projects with a handover date on record, ' + st.ov + ' are past it without a recorded completion and ' + st.mv + TB.kbx_n29i__s.k11, url, v.n);
   }
   QC = { D, q: Q }; return Q;
 }
 function questionsMd(D) {
-  const Q = questions(D), L = ['# Kolaboro: questions about off-plan projects, answered from our data', '', '> ' + Q.length + ' questions about markets, countries and developers with at least ' + MIN_MK + ' named projects. Each answer is computed from the published data (no estimates) and links the page that shows the facts with their sources. Data of ' + D.d + '. CC BY 4.0, attribute "Kolaboro". JSON: ' + ORIGIN + '/answers/questions.json', ''];
+  const Q = questions(D), L = ['# Kolaboro: questions about off-plan projects, answered from our data', '', '> ' + Q.length + ' questions about markets, countries and developers with at least ' + MIN_MK + TB.kbx_n29i__s.k12 + D.d + '. CC BY 4.0, attribute "Kolaboro". JSON: ' + ORIGIN + '/answers/questions.json', ''];
   let scope = null; for (const q of Q) { if (q.scope !== scope) { scope = q.scope; L.push('## ' + scope, ''); } L.push('### ' + q.q, '', q.a + ' Source: ' + q.url + ' (data of ' + q.date + ')', ''); }
   return L.join('\n');
 }
@@ -283,7 +283,7 @@ const bt = (lang, k, v) => { let s = (BT[lang] && BT[lang][k] != null) ? BT[lang
 function buyerPage(D, g, lang) {
   const G = bt(lang, 'g_' + g), d = fd(D.d, lang), path = '/guides/buyers-from/' + g + '/', R = BRULE[g], N = n => nf(lang, n);
   const srcP = k => { const S = BSRC[k]; return '<p class="k-small k-muted">' + esc(bt(lang, 'src', { s: S.n, d: fd(S.d, lang) })).replace(esc(S.n), '<a href="' + esc(S.u) + '" rel="noopener">' + esc(S.n) + '</a>') + '</p>'; };
-  let body = '<div class="k29"><section class="k-sec"><div class="k-wrap"><div class="k-phead"><p class="k-crumb"><a href="' + pre(lang) + '/">Kolaboro</a> / <a href="' + pre(lang) + '/guides/buying-off-plan/">' + esc(bt(lang, 'hub')) + '</a> / <span>' + esc(G) + '</span></p>' +
+  let body = TB.kbx_n29i__s.k13 + pre(lang) + '/">Kolaboro</a> / <a href="' + pre(lang) + '/guides/buying-off-plan/">' + esc(bt(lang, 'hub')) + '</a> / <span>' + esc(G) + '</span></p>' +
     '<h1>' + esc(bt(lang, 'h1', { g: G })) + '</h1><p class="lead">' + esc(bt(lang, 'lead', { g: G })) + '</p></div>';
   if (R.home) body += '<h2 id="home">' + esc(bt(lang, 'home')) + '</h2><p>' + esc(bt(lang, R.home[0])) + '</p>' + srcP(R.home[1]);
   body += '<h2 id="rules">' + esc(bt(lang, 'rules')) + '</h2>';
@@ -319,7 +319,7 @@ function countriesHub(D, lang) {
   const n = C.reduce((a, c) => a + c.L.length, 0), title = t(lang, 'ch_t', { c: N(C.length), n: N(n) }), desc = t(lang, 'ch_lead', { k: MIN_MK, d });
   const rows = C.map(c => '<tr><td data-label="' + esc(t(lang, 'c_co')) + '"><a href="' + pre(lang) + '/countries/' + c.s + '/">' + bdi(coName(c.co, lang)) + '</a></td><td data-label="' + esc(t(lang, 'k_n')) + '">' + N(c.st.n) + '</td><td data-label="' + esc(t(lang, 'k_pn')) + '">' + N(c.st.pn) + ' (' + N(pct(c.st.pn, c.st.n)) + '%)</td><td data-label="' + esc(t(lang, 'k_ov')) + '">' + N(c.st.ov) + '</td><td data-label="' + esc(t(lang, 'k_med')) + '">' + (c.st.med == null ? '-' : N(c.st.med)) + '</td></tr>').join('');
   const cr = [['Kolaboro', pre(lang) + '/'], [t(lang, 'crumb_c'), pre(lang) + path]];
-  const body = '<div class="k29"><section class="k-sec"><div class="k-wrap"><div class="k-phead"><p class="k-crumb"><a href="' + pre(lang) + '/">Kolaboro</a> / <span>' + esc(t(lang, 'crumb_c')) + '</span></p><h1>' + esc(t(lang, 'ch_h')) + '</h1><p class="lead">' + esc(desc) + '</p></div>' +
+  const body = TB.kbx_n29i__s.k14 + pre(lang) + '/">Kolaboro</a> / <span>' + esc(t(lang, 'crumb_c')) + '</span></p><h1>' + esc(t(lang, 'ch_h')) + '</h1><p class="lead">' + esc(desc) + '</p></div>' +
     kvHtml([[N(C.length), t(lang, 'k_co')], [N(n), t(lang, 'k_n')], [esc(d), t(lang, 'k_d')]]) +
     '<div class="k-table-wrap"><table class="k-table k-table--dense k-table--stack"><thead><tr>' + ['c_co', 'k_n', 'k_pn', 'k_ov', 'k_med'].map(k => '<th scope="col">' + esc(t(lang, k)) + '</th>').join('') + '</tr></thead><tbody>' + rows + '</tbody></table></div>' +
     '<ul class="k29-l"><li><a href="/countries/" hreflang="en">' + esc(t(lang, 'l_enc')) + '</a></li><li><a href="' + pre(lang) + '/rankings/">' + esc(t(lang, 'rk_t')) + '</a></li></ul><p class="k-small k-muted">' + esc(t(lang, 'src')) + '</p></div></section></div>';
@@ -328,7 +328,7 @@ function countriesHub(D, lang) {
 }
 function rankingsHub(D, lang) {
   const path = '/rankings/', title = t(lang, 'rk_t'), desc = t(lang, 'rk_lead'), L = t(lang, 'rk'), d = fd(D.d, lang);
-  const body = '<div class="k29"><section class="k-sec"><div class="k-wrap"><div class="k-phead"><p class="k-crumb"><a href="' + pre(lang) + '/">Kolaboro</a> / <span>' + esc(title) + '</span></p><h1>' + esc(title) + '</h1><p class="lead">' + esc(desc) + '</p></div>' +
+  const body = TB.kbx_n29i__s.k15 + pre(lang) + '/">Kolaboro</a> / <span>' + esc(title) + '</span></p><h1>' + esc(title) + '</h1><p class="lead">' + esc(desc) + '</p></div>' +
     '<ul class="k-list">' + RK.map((r, i) => '<li><a href="' + pre(lang) + r + '">' + esc(L[i]) + '</a></li>').join('') + '</ul>' +
     '<ul class="k29-l"><li><a href="' + pre(lang) + '/countries/">' + esc(t(lang, 'ch_h')) + '</a></li><li><a href="/rankings/" hreflang="en">English</a></li></ul><p class="k-small k-muted">' + esc(t(lang, 'k_d')) + ': ' + esc(d) + '</p></div></section></div>';
   const url = ORIGIN + pre(lang) + path;
@@ -374,12 +374,12 @@ export async function page(req, u, env, ctx, shell) {
 async function render(req, lang, pg, sh) {
   const url = ORIGIN + pre(lang) + pg.path, alts = LANGS.map(l => '<link rel="alternate" hreflang="' + l + '" href="' + ORIGIN + pre(l) + pg.path + '">').join('') + '<link rel="alternate" hreflang="x-default" href="' + ORIGIN + pg.path + '">';
   const tags = '<title>' + esc(pg.title) + ([...pg.title].length + 11 <= 60 ? ' | Kolaboro' : '') + '</title><meta name="description" content="' + esc(pg.desc) + '"><link rel="canonical" href="' + url + '">' + alts + '<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">' +
-    '<meta property="og:type" content="website"><meta property="og:site_name" content="Kolaboro"><meta property="og:title" content="' + esc(pg.title) + '"><meta property="og:description" content="' + esc(pg.desc) + '"><meta property="og:url" content="' + url + '"><meta property="og:image" content="' + ORIGIN + '/og.png"><meta name="twitter:card" content="summary_large_image">' +
+    TB.kbx_n29i__s.k16 + esc(pg.title) + '"><meta property="og:description" content="' + esc(pg.desc) + '"><meta property="og:url" content="' + url + '"><meta property="og:image" content="' + ORIGIN + '/og.png"><meta name="twitter:card" content="summary_large_image">' +
     '<script type="application/ld+json">' + JSON.stringify({ '@context': 'https://schema.org', '@graph': pg.ld }).replace(/</g, '\\u003c') + '</script>' + CSS;
   const res = new HTMLRewriter()
     .on('html', { element(e) { e.setAttribute('lang', lang); if (lang === 'ar') e.setAttribute('dir', 'rtl'); else e.removeAttribute('dir'); } })
     .on('title', { element(e) { e.remove(); } })
-    .on('meta[name="description"],meta[name="robots"],meta[property^="og:"],meta[name^="twitter:"],link[rel="canonical"],link[rel="alternate"][hreflang]', { element(e) { e.remove(); } })
+    .on(TB.kbx_n29i__s.k17, { element(e) { e.remove(); } })
     .on('script[type="application/ld+json"]', { element(e) { e.remove(); } })
     .on('head', { element(e) { e.append(tags, { html: true }); } })
     .on('main', { element(e) { e.setInnerContent(pg.body, { html: true }); } })

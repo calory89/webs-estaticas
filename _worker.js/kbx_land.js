@@ -38,13 +38,7 @@ export const landHeading = lang => t(lang, 'h');
 export const histToc = lang => t(lang, 'mtoc');
 export const histHeading = lang => t(lang, 'mh');
 
-const CSS = '<style id="kland-css">.kland h3{margin:20px 0 6px;font-size:var(--k-fs-lg,1.2rem)}.kland .kl-led{display:grid;grid-template-columns:minmax(0,1fr);margin:10px 0;border-top:1px solid var(--k-line,#ccd)}.kl-led>dt{margin:0;padding:12px 0 2px;font-weight:640;color:var(--k-ink,inherit)}.kl-led>dd{margin:0;padding:0 0 12px;border-bottom:1px solid var(--k-line,#ccd);text-align:start;line-height:1.55}@media (min-width:760px){.kl-led{grid-template-columns:220px minmax(0,1fr)}.kl-led>dt{padding:12px 16px 12px 0;padding-inline:0 16px;border-bottom:1px solid var(--k-line,#ccd)}.kl-led>dd{padding:12px 0}}.kl-led .k-src{display:inline-flex;margin-inline-start:4px}.kl-led ul.kl{margin:6px 0}.kland ul.kl{margin:4px 0 0;padding-inline-start:20px}.kland ul.kl li{margin:2px 0}' +
-  '.kland .lim{font-size:var(--k-fs-xs,.82rem);color:var(--k-muted,#56636F);margin:8px 0}.kland .srcl{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:var(--k-fs-xs,.82rem);margin:8px 0 0}.kland .srcl a{color:var(--k-sea,#155C75)}' +
-  '.kland code{font-size:.85em;background:var(--k-sunken,#E8ECEA);padding:1px 4px;border-radius:4px;overflow-wrap:anywhere}.kland dd{overflow-wrap:anywhere}' +
-  '.klh-yr{display:flex;align-items:flex-end;gap:3px;height:76px;margin:8px 0 2px;padding:0;list-style:none;max-width:560px}.klh-yr li{flex:1 1 0;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;font-size:11px;color:var(--k-muted,#56636F)}' +
-  '.klh-yr li i{display:block;width:100%;max-width:26px;background:var(--k-sea,#155C75);border-radius:2px 2px 0 0;min-height:1px}.klh-yr li.z i{background:var(--k-line,#ccd);}.klh-yr li span{line-height:1.3;white-space:nowrap}.klh-yr li b{font-weight:600;font-size:11px;color:var(--k-ink-2,inherit)}' +
-  '.klh-tl{list-style:none;margin:8px 0;padding:0;border-inline-start:2px solid var(--k-line,#ccd)}.klh-tl li{position:relative;margin:0 0 8px;padding-inline-start:16px}.klh-tl li::before{content:"";position:absolute;inset-inline-start:-6px;top:.45em;width:10px;height:10px;border-radius:50%;background:var(--k-surface,#fff);border:2px solid var(--k-sea,#155C75)}' +
-  '.klh-tl time{font-variant-numeric:tabular-nums;font-weight:600;margin-inline-end:6px}</style>';
+/* CSS: n40 k17, in /data/i18n/k17s.json */
 
 // n20p: one formatter per locale and options for the life of the isolate (building one per call cost most of the render time)
 const dtf = (L, o) => { const c = (globalThis.__kbFmt = globalThis.__kbFmt || {}), k = 'd' + L + JSON.stringify(o || 0); return c[k] || (c[k] = new Intl.DateTimeFormat(L, o)); };
@@ -102,7 +96,7 @@ export function landHtml(ld, x, lang, fd) {
   }
   if (!rows.length) return '';
   const q = lat != null ? '?lat=' + (+lat).toFixed(4) + '&lng=' + (+lng).toFixed(4) : '';
-  return CSS + '<div class="kland"><p class="ki">' + esc(t(lang, 'intro', { d: ck, a: num(acc, lang) })) + '</p>' +
+  return TB.kbx_land__s.CSS + '<div class="kland"><p class="ki">' + esc(t(lang, 'intro', { d: ck, a: num(acc, lang) })) + '</p>' +
     '<dl class="kl-led">' + rows.map(([a, b]) => '<dt>' + esc(a) + '</dt><dd>' + b + '</dd>').join('') + '</dl>' +
     '<p class="lim">' + esc(t(lang, 'lim')) + '</p><p class="srcl"><a href="/hazards/' + esc(q) + '#protected">' + esc(t(lang, 'live')) + '</a><a href="/api/x/land/' + encodeURIComponent(x.id) + '">' + esc(t(lang, 'method')) + cm(lang) + esc(t(lang, 'upd', { d: fd(lr.updated) })) + '</a></p></div>';
 }
@@ -120,7 +114,7 @@ export function histHtml(ld, x, lang, fd) {
   const mh = ld && ld.mh, r = mh && mh.projects && mh.projects[x.id];
   if (!r) return '';
   const acc = r.acc || 100, s = mh.source || {};
-  if (!r.ok) return CSS + '<div class="kland"><p class="k-muted">' + esc(t(lang, 'unav', { d: fd(r.checked || mh.updated) })) + '</p></div>';
+  if (!r.ok) return TB.kbx_land__s.CSS + '<div class="kland"><p class="k-muted">' + esc(t(lang, 'unav', { d: fd(r.checked || mh.updated) })) + '</p></div>';
   const b = r.b || {}, rd = r.r || {}, l = r.l || {};
   const line = o => o && o.n ? esc(t(lang, 'mn', { n: num(o.n, lang), a: fd(o.first), b: fd(o.last) })) : '<span class="k-muted">' + esc(t(lang, 'm0')) + '</span>';
   const tagHtml = tag => { const lb = tagLabel(lang, tag); return lb ? esc(lb) + ' <bdi><code>' + esc(tag) + '</code></bdi>' : '<bdi><code>' + esc(tag) + '</code></bdi>'; };
@@ -134,7 +128,7 @@ export function histHtml(ld, x, lang, fd) {
   rows.push([t(lang, 'ml'), land.length ? '<ul class="kl">' + land.map(a => '<li>' + tagHtml(a.tag) + (a.name ? ' <bdi>"' + esc(a.name) + '"</bdi>' : '') + (a.k > 1 ? ' (' + num(a.k, lang) + ')' : '') + ': ' + '<bdi>' + esc(fd(a.first)) + (a.last && a.last !== a.first ? ', ' + esc(fd(a.last)) : '') + '</bdi>' + ' ' + src(osmU(a.t, a.id), t(lang, 'hist')) + '</li>').join('') + '</ul>' : '<span class="k-muted">' + esc(t(lang, 'm0')) + '</span>']);
   const cons = (r.cons || []).filter(c => c.first);
   if (cons.length) rows.push([t(lang, 'mcons'), esc(t(lang, 'mcn', { n: num(cons.length, lang), a: fd(cons[0].first) })) + ' ' + src(osmU(cons[0].t, cons[0].id), t(lang, 'hist'))]);
-  if (!b.n && !rd.n && !l.n) return CSS + '<div class="kland"><p class="ki">' + esc(t(lang, 'mintro')) + '</p><p>' + esc(t(lang, 'none')) + '</p><p class="srcl">' + src(s.url, t(lang, 'msrc')) + '</p></div>';
+  if (!b.n && !rd.n && !l.n) return TB.kbx_land__s.CSS + '<div class="kland"><p class="ki">' + esc(t(lang, 'mintro')) + '</p><p>' + esc(t(lang, 'none')) + '</p><p class="srcl">' + src(s.url, t(lang, 'msrc')) + '</p></div>';
   // buildings by year first mapped: every year from the first to the year of the check, so gaps show
   let yr = '';
   const by = b.by_year || {}, ys = Object.keys(by).map(Number).filter(Boolean);
@@ -158,7 +152,7 @@ export function histHtml(ld, x, lang, fd) {
   if (rc && rc.last) ev.push([rc.last, t(lang, 't_last', { k: tagLabel(lang, rc.tag) || rc.tag }), null, osmU(rc.t, rc.id)]);
   ev.sort((p, q) => p[0].localeCompare(q[0]));
   const tl = ev.length ? '<h3>' + esc(t(lang, 'tl')) + '</h3><ol class="klh-tl">' + ev.map(([d, txt, y, u]) => '<li><time datetime="' + esc(y || d) + '">' + esc(y || fd(d)) + '</time>' + esc(txt) + (u ? ' ' + src(u, t(lang, 'hist')) : '') + '</li>').join('') + '</ol>' : '';
-  return CSS + '<div class="kland"><p class="ki">' + esc(t(lang, 'mintro')) + '</p><dl class="kl-led">' + rows.map(([a, c]) => '<dt>' + esc(a) + '</dt><dd>' + c + '</dd>').join('') + '</dl>' + yr + tl +
+  return TB.kbx_land__s.CSS + '<div class="kland"><p class="ki">' + esc(t(lang, 'mintro')) + '</p><dl class="kl-led">' + rows.map(([a, c]) => '<dt>' + esc(a) + '</dt><dd>' + c + '</dd>').join('') + '</dl>' + yr + tl +
     '<p class="lim">' + esc(t(lang, 'mlim', { a: num(acc, lang) })) + '</p><p class="srcl">' + src(s.url, t(lang, 'msrc')) + '<a href="/api/x/land/' + encodeURIComponent(x.id) + '">' + esc(t(lang, 'method')) + cm(lang) + esc(t(lang, 'upd', { d: fd(mh.updated) })) + '</a></p></div>';
 }
 
@@ -170,7 +164,7 @@ export async function handle(req, u, env) {
   const ld = await landData(env).catch(() => null);
   if (!ld || (!ld.lr && !ld.mh)) return J({ error: 'data not published yet' }, 503);
   const pick = f => f ? Object.fromEntries(Object.entries(f).filter(([k]) => k !== 'projects')) : null;
-  if (!id || id === 'about') return J({ about: 'Protected and restricted land near each pinned project and the OpenStreetMap history within 150 m. Shown in #land and #maphist on named project pages.',
+  if (!id || id === 'about') return J({ about: TB.kbx_land__s.k0,
     land_rules: pick(ld.lr), map_history: pick(ld.mh), projects: Object.keys((ld.lr && ld.lr.projects) || {}).length, files: ['/data/land-rules.json', '/data/map-history.json'], example: '/api/x/land/CDS-001' }, 200, 3600);
   if (!/^[A-Z0-9-]{3,20}$/.test(id)) return J({ error: 'bad id' }, 400);
   const a = ld.lr && ld.lr.projects && ld.lr.projects[id], b = ld.mh && ld.mh.projects && ld.mh.projects[id];

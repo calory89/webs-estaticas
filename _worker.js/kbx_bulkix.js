@@ -58,7 +58,7 @@ export async function buildIndex(env) {
     sources: { projects: ORIGIN + '/api/v1/projects', promises: ORIGIN + '/data/promises.json', website_health: { url: ORIGIN + '/data/web-health.json', updated: (web && web.updated) || null }, lookalikes: { url: ORIGIN + '/data/lookalikes.json', updated: (look && look.updated) || null, window_days: (look && look.window_days) || null } },
     fields: { p: ['slug', 'name', 'id', 'developer', 'developer_slug', 'market', 'country', 'tracked_pages (host and path)', 'official_hosts', 'handover_on_record', 'times_dates_moved', 'permit_number_published (1 or 0)', 'health_host', 'completed (1 or 0)', 'months past the handover date on record (0: not past)', 'first published handover date when a later one is on record', 'register entry', 'register entry read on'],
       d: ['slug', 'name', 'projects', 'markets', 'official_hosts', 'times_dates_moved', 'projects_with_permit_number', 'health_host'],
-      w: 'host -> [last daily check: u answered, b answered with a 4xx status, x server error, 0 no answer, - not checked; HTTP status; date checked]', l: 'developer_slug -> lookalike websites recorded' },
+      w: TB.kbx_bulkix__s.k0, l: 'developer_slug -> lookalike websites recorded' },
     p, d, w, l };
   BUILT = { ix, web, look, v }; return v;
 }
@@ -76,15 +76,7 @@ export async function handle(req, u, env, ctx) {
 const T = TB.kbx_bulkix_T /* n32w (19 Nov 2026): table moved to /data/i18n/kbx_bulkix.json, filled by kbx_strings.js before any kolaboro.com request is handled */;
 const t = (lang, k) => (T[lang] && T[lang][k] != null ? T[lang][k] : T.en[k]);
 
-const CSS = '<style id="kbk21">.bk21 .bk-hero{padding:clamp(32px,5vw,64px) 0 clamp(20px,3vw,32px);border-bottom:1px solid var(--k-line)}.bk21 .bk-hero h1{font-size:var(--k-fs-4xl);line-height:1.02;letter-spacing:-.03em;max-width:18ch;margin:8px 0 0}.bk21 .bk-hero .lead{max-width:60ch;margin-top:16px}' +
-  '.bk21 .bk-priv{display:flex;gap:10px;align-items:flex-start;max-width:68ch;margin:18px 0 0;padding:12px 14px;border:1px solid var(--k-line);border-radius:var(--k-r-md);background:var(--k-surface);font-size:var(--k-fs-sm);color:var(--k-ink-2)}.bk21 .bk-priv svg{flex:none;width:20px;height:20px;margin-top:2px;color:var(--k-ok)}' +
-  '.bk21 .bk-sec{padding:clamp(24px,4vw,44px) 0}.bk21 .bk-sec h2{font-size:var(--k-fs-2xl);margin:0 0 12px}.bk21 .bk-in{display:grid;gap:12px;max-width:820px}.bk21 .bk-in textarea{min-height:190px;font-size:16px;line-height:1.45}.bk21 .bk-in textarea.is-drop{outline:2px dashed var(--k-sea);outline-offset:2px;background:var(--k-sea-soft)}' +
-  '.bk21 .bk-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}.bk21 .bk-row .k-btn,.bk21 .bk-row .btn{min-height:44px}.bk21 .bk-file{position:relative;overflow:hidden;cursor:pointer}.bk21 .bk-file input{position:absolute;inset:0;opacity:0;cursor:pointer;font-size:0}.bk21 .bk-file:focus-within{outline:2px solid var(--k-sea);outline-offset:2px}.bk21 .bk-drop{color:var(--k-muted);font-size:var(--k-fs-sm)}' +
-  '.bk21 .bk-status{margin:4px 0 0;color:var(--k-ink-2);font-size:var(--k-fs-sm);min-height:1.4em}.bk21 .bk-status.is-bad{color:var(--k-bad)}.bk21 #bkres[hidden]{display:none}' +
-  '.bk21 .bk-stats{display:flex;flex-wrap:wrap;gap:12px 40px;margin:4px 0 18px}.bk21 .bk-tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:0 0 14px}' +
-  '.bk21 .k-table td{vertical-align:top}.bk21 .k-table td small{display:block;color:var(--k-muted);font-size:var(--k-fs-xs);line-height:1.35;margin-top:2px}.bk21 td.bk-q{max-width:240px;overflow-wrap:anywhere}.bk21 td.bk-m{min-width:200px}.bk21 td.bk-m a{font-weight:600}.bk21 .bk-nm{overflow-wrap:anywhere}' +
-  '@media(max-width:640px){.bk21 .k-table--stack td{text-align:end}.bk21 .k-table--stack td>span,.bk21 .k-table--stack td>div{max-width:62%;overflow-wrap:anywhere}.bk21 td.bk-q{max-width:none;font-weight:600}}' +
-  '.bk21 .bk-how{max-width:74ch;padding-inline-start:1.2em;display:grid;gap:8px;color:var(--k-ink-2)}.bk21 .bk-src{max-width:74ch;color:var(--k-muted);font-size:var(--k-fs-sm);margin:14px 0 0}.bk21 .bk-ltr{direction:ltr;unicode-bidi:isolate}</style>';
+/* CSS: n40 k17, in /data/i18n/k17s.json */
 const LOCK = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10.5" width="14" height="9.5" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
 
 function body(lang) {
@@ -209,13 +201,13 @@ async function assemble(shellRes, lang) {
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' }, provider: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' } },
     { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Kolaboro', item: ORIGIN + pre(lang) + '/' }, { '@type': 'ListItem', position: 2, name: t(lang, 'tools'), item: ORIGIN + '/tools/' }, { '@type': 'ListItem', position: 3, name: t(lang, 'crumb'), item: url }] }] };
   const tags = '<title>' + esc(title) + ' | Kolaboro</title><meta name="description" content="' + esc(desc) + '"><link rel="canonical" href="' + url + '">' + alts +
-    '<meta property="og:type" content="website"><meta property="og:site_name" content="Kolaboro"><meta property="og:title" content="' + esc(title) + ' | Kolaboro"><meta property="og:description" content="' + esc(desc) + '"><meta property="og:url" content="' + url + '"><meta property="og:image" content="' + ORIGIN + '/k/og/pricing.png"><meta name="twitter:card" content="summary_large_image">' +
-    '<script type="application/ld+json">' + JSON.stringify(ld).replace(/</g, '\\u003c') + '</script>' + CSS;
+    TB.kbx_bulkix__s.k1 + esc(title) + ' | Kolaboro"><meta property="og:description" content="' + esc(desc) + '"><meta property="og:url" content="' + url + '"><meta property="og:image" content="' + ORIGIN + '/k/og/pricing.png"><meta name="twitter:card" content="summary_large_image">' +
+    '<script type="application/ld+json">' + JSON.stringify(ld).replace(/</g, '\\u003c') + '</script>' + TB.kbx_bulkix__s.CSS;
   const js = Object.assign({}, t(lang, 'j'), { pre: pre(lang), locale: LOC[lang] || 'en-GB' });
   const tail = '<script type="application/json" id="kbk-t">' + JSON.stringify(js).replace(/</g, '\\u003c') + '</script><script>' + JS + '</script>';
   const res = new HTMLRewriter()
     .on('title', { element(e) { e.remove(); } })
-    .on('meta[name="description"],meta[name="robots"],meta[property^="og:"],meta[name^="twitter:"],link[rel="canonical"],link[rel="alternate"][hreflang]', { element(e) { e.remove(); } })
+    .on(TB.kbx_bulkix__s.k2, { element(e) { e.remove(); } })
     .on('script[type="application/ld+json"]', { element(e) { e.remove(); } })
     .on('head', { element(e) { e.append(tags, { html: true }); } })
     .on('main', { element(e) { e.setInnerContent(body(lang) + tail, { html: true }); } })

@@ -1,3 +1,4 @@
+import { TB } from './kbx_strings.js';
 // kolaboro.com batch 32 (agent n32x, 19 Nov 2026): ten engineering features. The worker only renders the page shells and two small
 // endpoints; data are static files under /data/ built by /open/n32x-build.py, browser code is static under /k/n32x/.
 //   GET /[l/]data/sql/                    SQL on the open dataset (DuckDB-WASM, lazy), data card, Parquet + CSV (/sql/ answers 301 here)
@@ -83,7 +84,7 @@ async function sqlPage(env, shell, l) {
   const rows = c.files.map(f => '<tr><th scope="row"><code>' + esc(f.table) + '</code></th><td class="n">' + bdi(l, nf(f.rows, l)) + '</td><td class="n">' + f.columns.length + '</td><td><a href="' + f.parquet.path + '">Parquet</a> <span class="k-xs">' + bdi(l, nf(f.parquet.bytes / 1024, l) + ' KB') + '</span> · <a href="' + f.csv.path + '">CSV</a> <span class="k-xs">' + bdi(l, nf(f.csv.bytes / 1024, l) + ' KB') + '</span></td><td><code title="SHA-256">' + esc(f.parquet.sha256.slice(0, 16)) + '…</code></td></tr>');
   const b = '<div class="n32-k"><div><b>' + esc(c.version) + '</b>' + esc(t(l, 'sql_ver')) + '</div><div><b>' + bdi(l, nf(c.files[0].rows, l)) + '</b>' + esc(t(l, 'sql_pr')) + '</div><div><b>' + bdi(l, nf(c.files[1].rows, l)) + '</b>' + esc(t(l, 'sql_cl')) + '</div><div><b>' + bdi(l, nf(c.files[2].rows, l)) + '</b>' + esc(t(l, 'sql_mk')) + '</div></div>' +
     app(l, 'sql') + sec(t(l, 'sql_card'), '<p>' + esc(fill(t(l, 'sql_src'), { d: fd(c.source.published, l), h: c.source.sha256.slice(0, 16) })) + ' <a href="' + pre(l) + '/data/snapshots/">/data/snapshots/</a></p>' +
-    table(t(l, 'sql_th'), rows) + paras(l, 'sql_p') + '<p><a href="/data/sql/datacard.json">datacard.json</a> · <a href="/open/n32x-build.py">n32x-build.py</a> · ' + esc(c.licence) + '</p>');
+    table(t(l, 'sql_th'), rows) + paras(l, 'sql_p') + TB.kbx_n32x__s.k0 + esc(c.licence) + '</p>');
   return page(shell, l, Object.assign(H(l, 'sql'), { path: '/data/sql/', body: b, updated: c.built, crumb: [[t(l, 'data'), '/data/']], 
     ld: [{ '@type': 'Dataset', name: c.name, description: c.what_it_is, version: c.version, license: 'https://creativecommons.org/licenses/by/4.0/', creator: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' }, dateModified: c.built,
       distribution: c.files.flatMap(f => [{ '@type': 'DataDownload', encodingFormat: 'application/vnd.apache.parquet', contentUrl: ORIGIN + f.parquet.path }, { '@type': 'DataDownload', encodingFormat: 'text/csv', contentUrl: ORIGIN + f.csv.path }]) }] }));
@@ -130,7 +131,7 @@ async function ofPage(env, shell, l) {
   const cmd = T.en.of_cmd.map((x, i) => [(t(l, 'of_cd') || [])[i] || x[0], x[1]]);
   const b = paras(l, 'of_p') + '<h2>' + esc(t(l, 'of_dl')) + '</h2>' + filesList(l, [['/open/kolaboro_offline_verify.py', 'Python 3.8+, stdlib only'], ['/open/kolaboro-offline-verify.mjs', 'Node 18+, no packages']]) +
     '<h2>' + esc(t(l, 'of_how')) + '</h2>' + cmd.map(x => '<p>' + esc(x[0]) + '</p><pre dir="ltr"><code>' + esc(x[1]) + '</code></pre>').join('') +
-    sec(t(l, 'of_what'), '<ul>' + t(l, 'of_chk').map(x => '<li>' + esc(x) + '</li>').join('') + '</ul>') + '<p><a href="' + pre(l) + '/data/snapshots/">/data/snapshots/</a> · <a href="/verify/">/verify/</a> · <a href="/.well-known/kolaboro-keys.json">kolaboro-keys.json</a></p>';
+    sec(t(l, 'of_what'), '<ul>' + t(l, 'of_chk').map(x => '<li>' + esc(x) + '</li>').join('') + '</ul>') + '<p><a href="' + pre(l) + TB.kbx_n32x__s.k1;
   return page(shell, l, Object.assign(H(l, 'of'), { path: '/verify/offline/', body: b, updated: '2026-11-19', crumb: [[t(l, 'verify'), '/verify/']], type: 'TechArticle' }));
 }
 
@@ -147,11 +148,11 @@ async function provenance(env) {
     worker_tree: (fromDep && fromDep.worker_tree) || (fromHist && fromHist.worker_tree) || null, worker_bytes: (fromHist && fromHist.worker_bytes) || null,
     dataset: { file: '/data/named.json', sha256: ch ? ch.live.sha256 : null, bytes: ch ? ch.live.bytes : null, snapshot_chain_tip: ch ? ch.chain_tip : null },
     live_seen_by_guard: (fromDep && fromDep.at) || null, smoke_checks: fromDep ? [fromDep.checks_passed, fromDep.checks_total] : null,
-    latest_recorded_deploy: (() => { const x = D0.find(y => y.commit && (y.worker_tree || (H0.find(z => z.commit === y.commit) || {}).worker_tree)); if (!x || x.commit === commit) return null; const hh = H0.find(z => z.commit === x.commit) || {}; return { commit: x.commit, live_seen: x.at, worker_tree: x.worker_tree || hh.worker_tree, note: 'The newest deploy the guard recorded. Commits after it that change only data files keep this worker source; a code commit changes it.' }; })(),
+    latest_recorded_deploy: (() => { const x = D0.find(y => y.commit && (y.worker_tree || (H0.find(z => z.commit === y.commit) || {}).worker_tree)); if (!x || x.commit === commit) return null; const hh = H0.find(z => z.commit === x.commit) || {}; return { commit: x.commit, live_seen: x.at, worker_tree: x.worker_tree || hh.worker_tree, note: TB.kbx_n32x__s.k2 }; })(),
     attested_at: new Date().toISOString().replace(/\.\d{3}Z$/, 'Z'),
-    meaning: 'Which code commit and which dataset this site served at attested_at, signed by the key in /.well-known/kolaboro-keys.json. worker_tree is null until the deploy guard or the history file records this commit.' };
+    meaning: TB.kbx_n32x__s.k3 };
   let signature = null;
-  try { const K = await import('./kolaboro.js'), msgHash = await shaHex(B.canon(att)); const s = await K.signBody(env, B.canon(att)); if (s) signature = { alg: 'Ed25519', kid: (env && env.KB_SIGN_KID) || 'kb', value: s, message: '"kolaboro-sig-v1\\n" + SHA-256 hex of the canonical JSON of "attestation" (keys sorted, no spaces)', attestation_sha256: msgHash }; } catch (e) {}
+  try { const K = await import('./kolaboro.js'), msgHash = await shaHex(B.canon(att)); const s = await K.signBody(env, B.canon(att)); if (s) signature = { alg: 'Ed25519', kid: (env && env.KB_SIGN_KID) || 'kb', value: s, message: TB.kbx_n32x__s.k4, attestation_sha256: msgHash }; } catch (e) {}
   const merged = D0.filter(x => x.commit).slice(0, 60).map(x => { const h = H0.find(y => y.commit === x.commit) || {}; return { commit: x.commit, live_seen: x.at, result: x.result, smoke: [x.checks_passed, x.checks_total], worker_tree: x.worker_tree || h.worker_tree || null, worker_bytes: h.worker_bytes || null, dataset_sha256: x.dataset_sha256 || h.dataset_sha256 || null }; });
   const v = { attestation: att, signature, history: merged, history_file: '/data/provenance.json', verify: ORIGIN + '/verify/offline/' };
   PV = { commit, t: Date.now(), v }; return v;
@@ -196,8 +197,8 @@ async function stream(req, u, env, ctx) {
   return new Response(ts.readable, { headers: { 'content-type': 'text/event-stream; charset=utf-8', 'cache-control': 'no-store', 'access-control-allow-origin': '*', 'x-accel-buffering': 'no' } });
 }
 async function stPage(env, shell, l) {
-  const b = app(l, 'st') + sec(t(l, 'st_api'), paras(l, 'st_p') + '<pre dir="ltr"><code>curl -N https://kolaboro.com/api/v1/stream?n=5\n\nconst es = new EventSource("https://kolaboro.com/api/v1/stream");\nes.addEventListener("change", e => console.log(JSON.parse(e.data)));</code></pre>') +
-    '<p><a href="/api/v1/changes">/api/v1/changes</a> · <a href="/api/v1/changes/feed.json">feed.json</a> · <a href="' + pre(l) + '/api/docs/">' + esc(t(l, 'st_docs')) + '</a></p>';
+  const b = app(l, 'st') + sec(t(l, 'st_api'), paras(l, 'st_p') + TB.kbx_n32x__s.k5) +
+    TB.kbx_n32x__s.k6 + pre(l) + '/api/docs/">' + esc(t(l, 'st_docs')) + '</a></p>';
   return page(shell, l, Object.assign(H(l, 'st'), { path: '/changes/live/', body: b, updated: '2026-11-19' }));
 }
 

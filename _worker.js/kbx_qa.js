@@ -6,6 +6,7 @@
 // Device split needs the read-only function in scratchpad m12/w6.sql (kolaboro_qa_vitals); until it is applied the endpoint
 // answers from kolaboro_vitals_public (28 days, devices combined) and says so in "state" and "note".
 import * as KB from './kolaboro.js';
+import { TB } from './kbx_strings.js';
 const { json, rpc } = KB;
 export const PATHS = /^\/api\/x\/qa(\/|$)/;
 
@@ -43,7 +44,7 @@ async function speed(ctx) {
   if (hit) return new Response(hit.body, { headers: HDR });
   const out = {
     updated: new Date().toISOString(), state: 'ok', note: null, min_samples: MIN_SAMPLES, thresholds: THRESHOLDS, pages: PAGES,
-    method: 'Field data from real visitors\' browsers: /k/vitals.js reads Largest Contentful Paint, Interaction to Next Paint, Cumulative Layout Shift and Time to First Byte with PerformanceObserver (no third-party library) and sends one beacon per page view to /api/x/f/vitals. Bots, Lighthouse and our own test browsers are dropped. Stored per sample: page type, device class (mobile when the browser reports a mobile device or the viewport is 760 px wide or less, otherwise desktop), metric and value. No IP, cookie, URL or user id. Shown here: the 75th percentile (percentile_cont) per page type and device class over the last 7 and 28 UTC days, only where at least ' + MIN_SAMPLES + ' samples exist.',
+    method: TB.kbx_qa__s.k0 + MIN_SAMPLES + ' samples exist.',
     windows: {},
   };
   let fallback = false;
@@ -63,7 +64,7 @@ async function speed(ctx) {
       out.windows['28d'] = { days: 28, samples: +(d && d.samples_28d) || 0, device_split: false, rows: ((d && d.overall_28d) || []).map(r => cell(Object.assign({}, r, { device: 'all' }))) };
       out.windows['7d'] = null;
       out.state = 'partial';
-      out.note = 'The per-device and 7-day breakdown starts when the read-only database function kolaboro_qa_vitals is installed. Until then this shows 28 days with phones and desktops combined.';
+      out.note = TB.kbx_qa__s.k1;
     } catch (e) {
       out.state = 'unavailable'; out.note = 'The real-user speed data could not be read just now. Nothing is estimated in its place.';
     }

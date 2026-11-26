@@ -31,7 +31,8 @@ import { FS } from './kbx_facets_i18n.js';
 import { ogImg } from './kbx_ogt.js';   // n29t: share image per page type
 import { TCS, TCPL, TCPL_T } from './kbx_buy_c29.js';   // n29h2: link to /tools/total-cost/<place>/
 import { PL as BPL } from './kbx_buy_i18n.js';
-import { regSale, rsText } from './kbx_n31d_rs.js';   // n31d: DLD registered sale prices are not asking prices
+import { regSale, rsText } from './kbx_n31d_rs.js';
+import { TB } from './kbx_strings.js';   // n31d: DLD registered sale prices are not asking prices
 const TCSLUG = { ae: 'dubai', esA: 'costa-del-sol', pt: 'portugal', th: 'thailand', id: 'indonesia', uk: 'england' };
 
 const ORIGIN = 'https://kolaboro.com';
@@ -394,7 +395,7 @@ function projTable(F, lang, L, withPlace) {
   return '<div class="k-table-wrap"><table class="k-table k-table--dense k-table--stack"><thead><tr>' + cols.map(c => '<th scope="col">' + esc(c) + '</th>').join('') + '</tr></thead><tbody>' + rows + '</tbody></table></div>';
 }
 const groupStats = (F, L) => { const ix = F.ix, sc = L.map(x => F.score(x.id)).filter(v => v != null); return { n: L.length, pn: L.filter(x => x.pn).length, mv: L.filter(x => { const h = handP(ix, x); return h && h.mv > 0; }).length, med: median(sc), lm: L.map(x => lastmod(ix, x)).sort().pop() }; };
-const dataLine = (F, lang, d) => '<p class="k-small k-muted">' + te(lang, 'data_line', { d: fd(d || F.updated, lang) }) + ' <a href="' + pre(lang) + '/methods/transparency-score/">' + te(lang, 'al_m') + '</a> · <a href="/data/named.json">named.json</a> · <a href="/data/promises.json">promises.json</a></p>';
+const dataLine = (F, lang, d) => '<p class="k-small k-muted">' + te(lang, 'data_line', { d: fd(d || F.updated, lang) }) + ' <a href="' + pre(lang) + '/methods/transparency-score/">' + te(lang, 'al_m') + TB.kbx_facets__s.k0;
 
 function yearPage(F, y, s, lang) {
   const g = F.years.get(y + '/' + s); if (!g) return null;
@@ -527,7 +528,7 @@ function ovPage(F, s, lang) {
   const body = '<div class="kfa"><section class="k-sec"><div class="k-wrap"><div class="k-phead">' + crumbHtml(cr) + '<h1>' + th(lang, 'ov_t', { p: bdi(p), mo: esc(mo) }) + '</h1><p class="lead">' + th(lang, 'ov_lead', { p: bdi(p) }) + '</p><p class="k-small k-muted"><time datetime="' + today + '">' + esc(dT) + '</time></p></div>' +
     kv([[nf(lang, st.k), t(lang, 'kv_ov')], [nf(lang, st.n), t(lang, 'kv_wd')], [st.med == null ? '-' : nf(lang, st.med), t(lang, 'kv_med')], [nf(lang, st.max), t(lang, 'kv_max')]]) +
     '<h2 id="projects">' + te(lang, 'ov_h2') + '</h2><div class="k-table-wrap"><table class="k-table k-table--dense k-table--stack"><thead><tr>' + cols.map(c => '<th scope="col">' + esc(c) + '</th>').join('') + '</tr></thead><tbody>' + rows + '</tbody></table></div>' +
-    '<p class="k-small k-muted">' + te(lang, 'ov_data', { d: fd(lm, lang) }) + ' <a href="/data/named.json">named.json</a> · <a href="/data/promises.json">promises.json</a> · <a href="/data/bali-cases.json">bali-cases.json</a></p>' +
+    '<p class="k-small k-muted">' + te(lang, 'ov_data', { d: fd(lm, lang) }) + TB.kbx_facets__s.k1 +
     '<h2 id="method">' + te(lang, 'ov_rule_h') + '</h2><p>' + te(lang, 'ov_rule', { mo }) + '</p>' +
     '<h2 id="cite">' + te(lang, 'ov_cite_h') + '</h2><p><code>' + te(lang, 'ov_cite', { t: title, u: url, d: dT }) + '</code></p>' +
     '<p class="kfa-l"><a href="' + pre(lang) + '/handover/overdue/">' + te(lang, 'ov_back') + '</a>' + (yrs.length ? '<span>' + th(lang, 'ov_years', { p: bdi(p) }) + ':</span>' + yrs.map(o => '<a href="' + pre(lang) + '/handover/' + o.y + '/' + o.s + '/">' + o.y + '</a>').join('') : '') + '<a href="/m/' + slugM(g.mk) + '/">' + th(lang, 'ov_mk', { p: bdi(p) }) + '</a></p>' +
@@ -614,7 +615,7 @@ async function sitemap(env) {
   let F; try { F = await facetsData(env); } catch (e) { return new Response('Not ready', { status: 503 }); }
   const xe = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;');
   const urls = allPaths(F, true).flatMap(([p, lm]) => LANGS.map(l => '<url><loc>' + xe(PUB(l, p)) + '</loc><lastmod>' + (lm || F.updated) + '</lastmod>' + LANGS.map(a => '<xhtml:link rel="alternate" hreflang="' + a + '" href="' + xe(PUB(a, p)) + '"/>').join('') + '<xhtml:link rel="alternate" hreflang="x-default" href="' + xe(ORIGIN + p) + '"/></url>'));
-  return new Response('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n' + urls.join('\n') + '\n</urlset>\n', { headers: { 'content-type': 'application/xml; charset=utf-8', 'cache-control': 'public, max-age=3600' } });
+  return new Response(TB.kbx_facets__s.k2 + urls.join('\n') + '\n</urlset>\n', { headers: { 'content-type': 'application/xml; charset=utf-8', 'cache-control': 'public, max-age=3600' } });
 }
 export const FA_KIT = { CSS, crumbHtml, crumbLd, kv, faqLd, replyBox, regFor };   // n29h1 (batch 29): shared page parts for kbx_h29.js
 export { tcFor, TC_SRC as TC_SOURCES, TC as TC_SETS };   // n29h2: for the per-country cost pages in kbx_buy.js

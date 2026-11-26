@@ -17,6 +17,7 @@ import { t27 } from './kbx_t27_i18n.js';
 import { mkName } from './kbx_hdate.js';
 import { trData } from './kbx_tr.js';
 import { trustRender, head, crumbLd } from './kbx_trust.js';
+import { TB } from './kbx_strings.js';
 
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
@@ -42,9 +43,7 @@ const mail = (a, subj) => '<a href="mailto:' + a + (subj ? '?subject=' + encodeU
 const ul = L => '<ul>' + L.map(x => '<li>' + esc(x) + '</li>').join('') + '</ul>';
 const links = (lang, L) => '<h2>' + esc(t27(lang, 'related')) + '</h2><ul class="k27-rel">' + L.map(([h, k]) => '<li><a href="' + h + '">' + esc(t27(lang, k)) + '</a></li>').join('') + '</ul>';
 const reviewed = lang => '<p class="k-small k-muted">' + fill(esc(t27(lang, 'rev')), { d: tm(REVIEWED, lang) }) + '</p>';
-const CSS27 = '<style id="k27-css">.k27-tw{overflow-x:auto;border:1px solid var(--k-line);border-radius:var(--k-r-md,10px);background:var(--k-surface);margin:var(--k-4,16px) 0}.k27-tw table{width:100%;min-width:560px;border-collapse:collapse}.k27-tw th,.k27-tw td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--k-line)}.k27-tw th{font-size:var(--k-fs-xs,13px);font-weight:600}' +
-  '.k27-log{list-style:none;padding:0!important}.k27-log li{padding:12px 0;border-bottom:1px solid var(--k-line);margin:0!important}.k27-log small{display:block;color:var(--k-muted)}.k27-code{display:block;white-space:pre-wrap;overflow-wrap:anywhere;background:var(--k-sunken);border-radius:var(--k-r-sm,6px);padding:var(--k-3,12px);font-size:var(--k-fs-xs,13px)}' +
-  '.k27-empty{border:1px dashed var(--k-line-2);border-radius:var(--k-r-md,10px);padding:var(--k-4,16px)}@media (max-width:640px){.k27-tw table{min-width:0}.k27-tw thead{display:none}.k27-tw tr{display:block;border-bottom:1px solid var(--k-line);padding:8px 0}.k27-tw td{display:block;border:0;padding:4px 12px}}.k27-rel{padding-inline-start:18px}.k27-rel a{display:inline-block;padding:12px 0;min-height:44px;box-sizing:border-box}</style>';
+/* CSS27: n40 k17, in /data/i18n/k17s.json */
 
 // ------------------------------------------------------------------------------------------------ data
 const SHARED = (globalThis.__kbJson = globalThis.__kbJson || {});
@@ -133,7 +132,7 @@ function badgeSvg(score, date) {
   const col = score == null ? '#56636F' : '#0B6E4F';
   return '<svg xmlns="http://www.w3.org/2000/svg" width="' + w + '" height="44" viewBox="0 0 ' + w + ' 44" role="img" aria-label="' + esc(L + ': ' + R) + '"><title>' + esc(L + ': ' + R) + '</title>' +
     '<rect width="' + w + '" height="44" rx="8" fill="#17212B"/><rect x="' + lw + '" width="' + rw + '" height="44" rx="8" fill="' + col + '"/><rect x="' + lw + '" width="10" height="44" fill="' + col + '"/>' +
-    '<g font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif" fill="#fff"><text x="12" y="19" font-size="12" font-weight="700">Kolaboro</text><text x="12" y="34" font-size="11" opacity=".85">transparency score</text>' +
+    TB.kbx_t27__s.k0 +
     '<text x="' + (lw + 10) + '" y="' + (score == null ? 27 : 21) + '" font-size="' + (score == null ? 12 : 15) + '" font-weight="700">' + (score == null ? 'not issued' : score + ' / 100') + '</text>' + (score == null ? '' : '<text x="' + (lw + 10) + '" y="36" font-size="10" opacity=".85">data ' + esc(date) + '</text>') + '</g></svg>';
 }
 const csvCell = v => { const s = v == null ? '' : String(v); return /[",\n\r]/.test(s) || /^[=+\-@]/.test(s) ? '"' + (/^[=+\-@]/.test(s) ? "'" : '') + s.replace(/"/g, '""') + '"' : s; };
@@ -200,5 +199,5 @@ export async function handle(req, u, env, ctx, shell) {
       const k = lang + '|' + kind + '|' + (ix ? ix.v : ''); pg = BODY.get(k); if (!pg) { pg = kind === 'cite' ? citePage(lang, ix) : badgePage(lang, ix); if (BODY.size > 600) BODY.clear(); BODY.set(k, pg); }
     } else { const k = lang + '|' + kind; pg = BODY.get(k); if (!pg) { pg = kind === 'contact' ? contactPage(lang) : casesPage(lang); BODY.set(k, pg); } }
   } catch (e) { return null; }   // a data file did not load: the static page (if any) answers
-  return trustRender(lang, Object.assign({}, pg, { ld: pg.ld, body: pg.body.replace('<div class="kpg">', CSS27 + '<div class="kpg">') }), shell);
+  return trustRender(lang, Object.assign({}, pg, { ld: pg.ld, body: pg.body.replace('<div class="kpg">', TB.kbx_t27__s.CSS27 + '<div class="kpg">') }), shell);
 }

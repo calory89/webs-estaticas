@@ -4,7 +4,8 @@
 //                                  2026-07-28 (stateless, per-request _meta, server/discover) and 2025-03-26..2025-11-25 (initialize)
 // Every tool answer carries the same Ed25519 signature fields as the open API (/api/open/*): 'kolaboro-sig-v1\n' + SHA-256 hex of the body.
 import { open, sha, signBody } from './kolaboro.js';
-import { TOOLS2, mcpTool } from './kbx_n34c.js';   // n34c (batch 34): MCP server v2 tools (history, evidence, market compare, proofs, deltas)
+import { TOOLS2, mcpTool } from './kbx_n34c.js';
+import { TB } from './kbx_strings.js';   // n34c (batch 34): MCP server v2 tools (history, evidence, market compare, proofs, deltas)
 
 export const PATHS = /^\/(api\/x\/e\/|mcp(\/|$))/;
 
@@ -64,7 +65,7 @@ async function sigBlock(r) {
   const h = await sha(r.body);
   return { alg: 'Ed25519', key_id: r.kid || null, signature: r.sig || null, body_sha256: h, signed_message: 'kolaboro-sig-v1\n' + h,
     dataset_sha256: r.ds || null, source: r.source, keys: KEYS_URL,
-    how_to_verify: 'Ed25519-verify base64 "signature" over the UTF-8 bytes of signed_message, where body_sha256 is SHA-256 hex of the first text block exactly as returned; public key = keys[kid]. Or call verify_signature.' };
+    how_to_verify: TB.kbx_e__s.k0 };
 }
 
 // ---------- signed manifest of the Parquet export (files published daily by GitHub Actions; this worker re-hashes them before signing)
@@ -84,8 +85,8 @@ async function parquetManifest(env) {
   }
   const v = { ok: files.length > 0 && files.every(f => f.match), checked_at: new Date().toISOString(), manifest_url: 'https://kolaboro.com/data/kolaboro.parquet.json',
     manifest_sha256: await sha(mtxt), generated: man.generated, source: man.source, license: man.license, files,
-    statement: 'The Kolaboro site worker fetched the files listed above from this deployment, hashed them, and signs this answer. A file you downloaded is the one described here if its SHA-256 equals sha256_served.',
-    signature_format: 'header x-kolaboro-signature = base64 Ed25519 over "kolaboro-sig-v1\\n" + SHA-256 hex of this exact body; key id in x-kolaboro-key-id; keys at ' + KEYS_URL };
+    statement: TB.kbx_e__s.k1,
+    signature_format: TB.kbx_e__s.k2 + KEYS_URL };
   MAN = { t: Date.now(), v }; return v;
 }
 async function manifestResponse(env) {
@@ -242,11 +243,11 @@ async function runTool(env, name, a) {
     if (!slug && !id) throw argErr('give slug or id'); if (slug && !/^[a-z0-9-]{1,90}$/.test(slug)) throw argErr('slug must be lowercase letters, digits and hyphens'); if (id && !ID_RE.test(id)) throw argErr('id must look like BER-001');
     if (['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'].indexOf(lang) < 0) throw argErr('lang must be one of en es de fr nl ru zh ar');
     const [N, TR] = await Promise.all([import('./kbx_named.js'), import('./kbx_tr.js')]), ix = await N.data(env), x = slug ? ix.bySlug.get(slug) : ix.byId.get(id.toUpperCase());
-    if (!x) return [{ status: 404, local: true, body: JSON.stringify({ error: 'no named project with this ' + (slug ? 'slug' : 'id'), hint: 'Named project pages: https://kolaboro.com/projects/ ; projects in Sumba are never named (conflict of interest, see /independence/).' }, null, 1), source: 'https://kolaboro.com/projects/' }];
+    if (!x) return [{ status: 404, local: true, body: JSON.stringify({ error: 'no named project with this ' + (slug ? 'slug' : 'id'), hint: TB.kbx_e__s.k3 }, null, 1), source: 'https://kolaboro.com/projects/' }];
     const tp = await TR.trProject(env, x.id, lang).catch(() => null), url = 'https://kolaboro.com' + N.pre(lang) + '/projects/' + x.s + '/';
     const body = JSON.stringify({ id: x.id, name: x.n, developer: x.dv || null, url, lang, quick_answer: N.quickAnswer(ix, x, lang, tp), transparency_score: tp ? tp.score : null, ranks: tp ? tp.ranks.map(r => ({ place: r.p, rank: r.r, of: r.m, page: 'https://kolaboro.com' + N.pre(lang) + '/rankings/transparency/' + r.s + '/' })) : [],
       checklist: tp ? tp.items.map(i => ({ item: i.label, status: i.st, text: i.text })) : [], last_checked: N.lastmod(ix, x), answers: 'https://kolaboro.com/answers/' + x.s + '.md', sections: [url + '#answer', url + '#legit', url + '#delivery', url + '#promise', url + '#developer', url + '#where'],
-      rules: 'Facts only, each with its source on the page. Kolaboro gives no verdict about a named company. The transparency score counts what is published and checkable, not quality.' }, null, 1);
+      rules: TB.kbx_e__s.k4 }, null, 1);
     return [await signed(env, body, url + '#answer')];
   }
   if (name === 'compare_projects') {   // n27a (batch 27)
@@ -339,7 +340,7 @@ async function mcp(req, u, env, ctx) {
   if (origin && origin !== 'null') { try { const o = new URL(origin); if (!/^https?:$/.test(o.protocol)) throw 0; } catch (e) { return out(rpcErr(null, -32600, 'Invalid Origin header'), 403); } }
   if (req.method === 'GET' || req.method === 'DELETE' || req.method === 'HEAD') {
     // no standalone server stream and no sessions: this server is stateless (2026-07-28 says 405; earlier revisions allow it)
-    return out(rpcErr(null, -32000, 'Method not allowed. This is an MCP endpoint (Streamable HTTP): POST JSON-RPC 2.0 messages here. Docs: https://kolaboro.com/docs/mcp/'), 405, { allow: 'POST, OPTIONS' });
+    return out(rpcErr(null, -32000, TB.kbx_e__s.k5), 405, { allow: 'POST, OPTIONS' });
   }
   if (req.method !== 'POST') return out(rpcErr(null, -32000, 'Method not allowed'), 405, { allow: 'POST, OPTIONS' });
   const rl = await rateCheck(req, ctx, 'mcp', RATE_MCP);

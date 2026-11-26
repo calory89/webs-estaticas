@@ -1,3 +1,4 @@
+import { TB } from './kbx_strings.js';
 // Feature module r for kolaboro.com (see kbx.js): visual change watch and the asking-price index.
 //   GET /api/x/r/                      index of endpoints
 //   GET /api/x/r/visual                summary of /data/visual-diff.json (method, limits, totals, recent changes)
@@ -29,7 +30,7 @@ export async function handle(req, u, env, ctx) {
   if (req.method !== 'GET' && req.method !== 'HEAD') return out({ error: 'method not allowed' }, 405, 0);
   const p = u.pathname.replace(/\/+$/, '');
   if (p === '/api/x/r') return out({ endpoints: {
-    '/api/x/r/visual': 'Visual change watch of developer websites: totals, method, recent changes (geometry only). Page: /visual/',
+    '/api/x/r/visual': TB.kbx_r__s.k0,
     '/api/x/r/visual/{ID}': 'One project\'s visual change history, for example /api/x/r/visual/BALI-014',
     '/api/x/r/price-index': 'Chained same-project index of advertised asking prices, all tracked markets. Page: /index/prices/',
     '/api/x/r/price-index?market=Bali': 'One market with every chain step and the price moves behind it' } });
@@ -44,8 +45,8 @@ export async function handle(req, u, env, ctx) {
     const d = await load(env, 'visual-diff.json');
     if (!d) return out(STARTING('visual-diff.json'), 200, 60);
     const id = m[1].toUpperCase(), x = (d.projects || []).find(y => y.id === id);
-    if (!x) return out({ id, status: 'no capture yet', note: 'Only projects with their own website are captured, and a first capture is a baseline. Images are never published; they are available to a buyer on request.', generated: d.generated }, 404);
-    return out(Object.assign({ generated: d.generated, images: 'Not published (they would identify the project). Before, after and highlighted diff are kept privately for 90 days and are available to a buyer on request.' }, x));
+    if (!x) return out({ id, status: 'no capture yet', note: TB.kbx_r__s.k1, generated: d.generated }, 404);
+    return out(Object.assign({ generated: d.generated, images: TB.kbx_r__s.k2 }, x));
   }
   if (p === '/api/x/r/price-index') {
     const d = await load(env, 'price-index.json');

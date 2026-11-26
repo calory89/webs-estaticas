@@ -2,10 +2,11 @@
 // The browser reads the Sentinel-2 COGs itself (sentinel-cogs on AWS Open Data allows CORS range reads); this worker only
 // finds, per quarter, the least cloudy scenes that cover a point, using Element84 Earth Search. No account, no key.
 import { openData } from './kolaboro.js';
+import { TB } from './kbx_strings.js';
 export const PATHS = /^\/api\/x\/g\//;
 
 const STAC = 'https://earth-search.aws.element84.com/v1/search';
-const SRC = 'Copernicus Sentinel-2 L2A (contains modified Copernicus Sentinel data), found with Element84 Earth Search, read from the Sentinel-2 COGs on AWS Open Data';
+/* SRC: n40 k17, in /data/i18n/k17s.json */
 const ORIGIN_G = 'https://kolaboro.com';
 const hits = new Map();   // best effort per isolate: ip -> [timestamps]
 
@@ -55,8 +56,8 @@ async function scenes(req, u, ctx) {
   if (limited(ip, 20, 10 * 60e3)) return out({ error: 'rate_limited', note: 'At most 20 new points per 10 minutes from one address. Try again shortly.' }, 429);
   const t0 = Date.now(), qs = quarters(years, today);
   const res = await Promise.all(qs.map(q => stacQuarter(rl, rg, q).then(c => Object.assign({}, q, { candidates: c.slice(0, 6), listed: c.length }), e => Object.assign({}, q, { candidates: [], error: String(e.message || e).slice(0, 60) }))));
-  const body = { lat: rl, lng: rg, years, generated: today.toISOString(), stac_ms: Date.now() - t0, source: SRC, stac: 'https://earth-search.aws.element84.com/v1 (collection sentinel-2-l2a)',
-    note: 'Candidates per quarter, least cloudy first by whole-scene cloud cover (max 70%). The page then checks the scene classification at your point and keeps the first one that is clear there.',
+  const body = { lat: rl, lng: rg, years, generated: today.toISOString(), stac_ms: Date.now() - t0, source: TB.kbx_g__s.SRC, stac: 'https://earth-search.aws.element84.com/v1 (collection sentinel-2-l2a)',
+    note: TB.kbx_g__s.k0,
     quarters: res };
   const failed = res.filter(q => q.error).length;
   const resp = out(body, 200, failed ? 0 : 3600);
@@ -138,10 +139,10 @@ async function frame(req, u, ctx) {
   const hit = await caches.default.match(key);
   if (hit) { const r = new Response(hit.body, hit); r.headers.set('x-cache', 'hit'); return r; }
   const ip = req.headers.get('cf-connecting-ip') || 'x';
-  if (limited('f:' + ip, 240, 10 * 60e3)) return out({ error: 'rate_limited', note: 'At most 240 new quarters (about six points since 2017) per 10 minutes from one address. Pictures already made load without limit. Try again shortly.' }, 429);
+  if (limited('f:' + ip, 240, 10 * 60e3)) return out({ error: 'rate_limited', note: TB.kbx_g__s.k1 }, 429);
   let res;
   try { res = await frameRun(rl, rg, b); } catch (e) { return out({ q: b.q, from: b.from, to: b.to, status: 'search failed', error: String(e && e.message || e).slice(0, 80) }, 502); }
-  const body = Object.assign({ v: FR_V, lat: rl, lng: rg, q: b.q, from: b.from, to: b.to, generated: today.toISOString(), source: SRC, method: 'https://kolaboro.com/satellite/plot/#h-how' }, res);
+  const body = Object.assign({ v: FR_V, lat: rl, lng: rg, q: b.q, from: b.from, to: b.to, generated: today.toISOString(), source: TB.kbx_g__s.SRC, method: 'https://kolaboro.com/satellite/plot/#h-how' }, res);
   const age = b.current ? 21600 : 2592000;
   const headers = { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'public, max-age=' + age, 'access-control-allow-origin': '*' };
   if (res.status === 'ok' || res.status === 'no image' || (res.status === 'no clear image' && !res.tried.some(t => t.error))) ctx.waitUntil(caches.default.put(key, new Response(JSON.stringify(body), { headers })));
@@ -164,7 +165,7 @@ export async function handle(req, u, env, ctx) {
     const keep = ['id', 'market', 'country', 'region', 'stage', 'done', 'delay', 'overdue', 'checks', 'verified', 'claims', 'flags', 'checked', 'sat', 'register', 'history', 'units'];
     const o = {}; keep.forEach(k => { if (c[k] !== undefined) o[k] = c[k]; });
     return out({ updated: d.updated, project: o, page: 'https://kolaboro.com/p/?id=' + encodeURIComponent(id), api: 'https://kolaboro.com/api/open/projects/' + encodeURIComponent(id),
-      sat_method: 'sat: Sentinel-2 composites of a ~400 m box around the project site, the same 120-day window a year apart; change = NDVI or brightness shift on 6%+ of clear pixels. The site coordinates are not published.' }, 200, 300);
+      sat_method: TB.kbx_g__s.k2 }, 200, 300);
   }
   if (p === '/api/x/g/status') {
     // The on-demand viewer needs no account. A Copernicus Data Space client (CDSE_CLIENT_ID / CDSE_CLIENT_SECRET) is only an optional upgrade path.

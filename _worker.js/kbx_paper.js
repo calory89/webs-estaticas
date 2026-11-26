@@ -133,7 +133,7 @@ function planRows(items, lang) {
 export function planningHtml(pd, x, lang) {
   const P = pd && pd.pl, rec = P && P.projects && P.projects[x.id];
   if (!rec) return '';
-  if (rec.src === 'none') return '<p class="ki">' + esc(nt(lang, 'pl_out')) + ' <a class="k-src" href="https://www.eplanning.scot/" rel="noopener" target="_blank">eplanning.scot</a></p>';
+  if (rec.src === 'none') return '<p class="ki">' + esc(nt(lang, 'pl_out')) + TB.kbx_paper__s.k0;
   const S = (P.sources || {})[rec.src] || {};
   const head = '<p class="ki">' + esc(nt(lang, 'pl_intro', { r: rec.radius_m || 200, src: S.name || rec.src })) + '</p>';
   const rule = rec.src === 'nyc' ? '<p class="k-small k-muted">' + esc(nt(lang, 'pl_rule_nyc')) + '</p>' : rec.src === 'miami' ? '<p class="k-small k-muted">' + esc(nt(lang, 'pl_rule_mia')) + '</p>' : '';
@@ -251,25 +251,7 @@ async function lawNotes(env) {
   return out;
 }
 
-const CSS = `<style id="kca18">
-.kca .k-phead{padding-block:var(--k-7,48px) var(--k-5,24px)}.kca h1{max-width:24ch}
-.kca-grid{display:grid;gap:var(--k-6,32px);grid-template-columns:minmax(0,1fr)}
-@media(min-width:1000px){.kca-grid{grid-template-columns:minmax(0,5fr) minmax(0,6fr);align-items:start}.kca-out{position:sticky;top:88px}}
-.kca fieldset{border:1px solid var(--k-line);border-radius:var(--k-r-lg,14px);padding:var(--k-4,16px) var(--k-5,24px) var(--k-5,24px);margin:0 0 var(--k-5,24px);background:var(--k-surface);min-width:0}
-.kca legend{font-weight:700;padding:0 6px;font-size:var(--k-fs-md,17px)}
-.kca-row{display:grid;gap:var(--k-3,12px);grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr))}
-.kca .k-field{margin:0 0 var(--k-3,12px)}.kca .k-input,.kca .k-select,.kca .k-textarea{width:100%;box-sizing:border-box}
-.kca-cl{display:flex;gap:10px;align-items:flex-start;padding:10px 0;border-top:1px solid var(--k-line)}.kca-cl:first-of-type{border-top:0}
-.kca-cl input{width:22px;height:22px;margin:2px 0 0;flex:none}.kca-cl label{cursor:pointer}.kca-cl small{display:block;color:var(--k-muted)}
-.kca-doc{background:var(--k-surface);border:1px solid var(--k-line-2,var(--k-line));border-radius:var(--k-r-lg,14px);padding:var(--k-5,24px);max-height:none}
-.kca-doc h3{font-size:var(--k-fs-lg,20px);margin:0 0 6px}.kca-doc h4{font-size:var(--k-fs-md,17px);margin:var(--k-5,24px) 0 6px}
-.kca-doc p{margin:6px 0;line-height:1.55}.kca-doc .kca-meta{color:var(--k-muted);font-size:var(--k-fs-sm,15px)}
-.kca-law{margin:8px 0 0;padding:10px 12px;border-inline-start:3px solid var(--k-sea);background:var(--k-sunken);border-radius:0 var(--k-r-sm,6px) var(--k-r-sm,6px) 0;font-size:var(--k-fs-sm,15px)}
-.kca-law.is-none{border-inline-start-color:var(--k-line-2,var(--k-line));color:var(--k-muted)}.kca-law q{display:block;margin:4px 0;font-style:italic;overflow-wrap:anywhere}
-.kca-acts{display:flex;flex-wrap:wrap;gap:10px;margin:var(--k-4,16px) 0}.kca-st{min-height:1.5em;font-size:var(--k-fs-sm,15px)}
-.kca-rel{margin-top:var(--k-6,32px)}
-@media print{header,footer,nav,.kca-form,.kca-acts,.k-phead,.kca-rel,.ship,.k-alert{display:none!important}.kca-grid{display:block}.kca-doc{border:0;padding:0}}
-</style>`;
+/* CSS: n40 k17, in /data/i18n/k17s.json */
 
 function toolBody(lang, LAW) {
   const t = tt(lang), p = pre(lang);
@@ -280,15 +262,15 @@ function toolBody(lang, LAW) {
   return '<div class="kca"><section class="k-phead"><div class="k-wrap"><p class="k-crumb"><a href="' + p + '/">Kolaboro</a> / <a href="/tools/">' + esc(t.crumb_tools) + '</a></p><h1>' + esc(t.h1) + '</h1><p class="lead">' + esc(t.lead) + '</p>' +
     '<div class="k-alert k-alert--warn" role="note"><b>' + esc(t.warn_b) + '</b><span>' + esc(t.warn) + '</span></div>' +
     '<div class="k-alert" role="note" style="margin-top:12px"><b>' + esc(t.priv_b) + '</b><span>' + esc(t.priv) + '</span></div></div></section>' +
-    '<section class="k-sec" style="padding-top:var(--k-5,24px)"><div class="k-wrap kca-grid"><form class="kca-form" id="kca-f" data-kb-nosubmit novalidate>' +
+    TB.kbx_paper__s.k1 +
     '<fieldset><legend>' + esc(t.s1) + '</legend><div class="k-field"><label class="k-label" for="ca-country">' + esc(t.f_country) + '</label><select class="k-select" id="ca-country" name="country">' + COUNTRIES.map(c => '<option value="' + c[0] + '">' + esc(c[1]) + '</option>').join('') + '</select></div>' +
     '<div class="kca-row">' + f('seller', t.f_seller, 'text') + f('buyer', t.f_buyer, 'text', '', '', 1) + '</div><div class="kca-row">' + f('project', t.f_project, 'text') + f('unit', t.f_unit, 'text') + '</div>' + f('contract', t.f_contract, 'text', '', '', 1) + '</fieldset>' +
-    '<fieldset><legend>' + esc(t.s2) + '</legend><div class="kca-row">' + f('price', t.f_price, 'text', ' inputmode="decimal"') + '<div class="k-field"><label class="k-label" for="ca-cur">' + esc(t.f_cur) + '</label><input class="k-input" id="ca-cur" name="cur" type="text" maxlength="3" autocomplete="off" value="EUR" style="text-transform:uppercase"></div>' + f('paid', t.f_paid, 'text', ' inputmode="decimal"', '', 1) + '</div>' +
+    '<fieldset><legend>' + esc(t.s2) + '</legend><div class="kca-row">' + f('price', t.f_price, 'text', ' inputmode="decimal"') + '<div class="k-field"><label class="k-label" for="ca-cur">' + esc(t.f_cur) + TB.kbx_paper__s.k2 + f('paid', t.f_paid, 'text', ' inputmode="decimal"', '', 1) + '</div>' +
     f('sched', t.f_sched, 'textarea', '', '', 1) + '<div class="kca-row">' + f('date', t.f_date, 'date') + f('grace', t.f_grace, 'number', ' min="0" max="24" step="1"', '3') + f('long', t.f_long, 'number', ' min="1" max="60" step="1"', '6') + '</div>' +
     '<div class="kca-row">' + f('pen', t.f_pen, 'number', ' min="0" max="5" step="0.05"', '0.5') + f('cap', t.f_cap, 'number', ' min="0" max="50" step="0.5"', '10') + f('int', t.f_int, 'number', ' min="0" max="30" step="0.1"', '4') + f('snag', t.f_snag, 'number', ' min="1" max="365" step="1"', '30') + '</div></fieldset>' +
     '<fieldset><legend>' + esc(t.s3) + '</legend>' + cls.map(k => '<div class="kca-cl"><input type="checkbox" id="ca-c-' + k + '" name="c_' + k + '"' + (k !== 'reg' ? ' checked' : '') + '><label for="ca-c-' + k + '">' + esc(t['c_' + k]) + '<small data-basis="' + k + '"></small></label></div>').join('') + '</fieldset></form>' +
     '<div class="kca-out" aria-labelledby="kca-h4"><h2 id="kca-h4" class="k-vh">' + esc(t.s4) + '</h2><div class="kca-acts"><button type="button" class="k-btn k-btn--primary" id="kca-pdf">' + esc(t.pdf) + '</button><button type="button" class="k-btn" id="kca-docx">' + esc(t.docx) + '</button><button type="button" class="k-btn k-btn--ghost" id="kca-print">' + esc(t.print) + '</button></div>' +
-    '<p class="kca-st" id="kca-st" role="status" aria-live="polite"></p><article class="kca-doc" id="kca-doc" lang="en" dir="ltr"></article><p class="k-small k-muted">' + esc(t.doc_lang) + '</p></div></div></section>' +
+    TB.kbx_paper__s.k3 + esc(t.doc_lang) + '</p></div></div></section>' +
     '<section class="k-sec kca-rel"><div class="k-wrap"><h2>' + esc(t.rel_h) + '</h2><ul><li><a href="/tools/law/">' + esc(t.rel_law) + '</a></li><li><a href="/tools/delay-compensation/">' + esc(t.rel_delay) + '</a></li><li><a href="/tools/deposit-protection/">' + esc(t.rel_dep) + '</a></li></ul></div></section></div>' +
     '<script>window.KCA=' + JSON.stringify(client).replace(/</g, '\\u003c') + ';</script><script>' + JS + '</script>';
 }
@@ -369,12 +351,12 @@ async function assembleTool(shellRes, lang, env) {
     { '@type': 'WebApplication', name: 'Kolaboro ' + t.title, url, description: t.desc, inLanguage: lang, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Any', isAccessibleForFree: true, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' } },
     { '@type': 'BreadcrumbList', itemListElement: [['Kolaboro', ORIGIN + pre(lang) + '/'], [t.crumb_tools, ORIGIN + '/tools/'], [t.title, url]].map((x, i) => ({ '@type': 'ListItem', position: i + 1, name: x[0], item: x[1] })) }] };
   const tags = '<title>' + esc(t.title) + ' | Kolaboro</title><meta name="description" content="' + esc(t.desc) + '"><link rel="canonical" href="' + url + '">' + alts +
-    '<meta property="og:type" content="website"><meta property="og:site_name" content="Kolaboro"><meta property="og:title" content="' + esc(t.title) + ' | Kolaboro"><meta property="og:description" content="' + esc(t.desc) + '"><meta property="og:url" content="' + url + '"><meta name="twitter:card" content="summary">' +
-    '<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin><script type="application/ld+json">' + JSON.stringify(ld).replace(/</g, '\\u003c') + '</script>' + CSS;
+    TB.kbx_paper__s.k4 + esc(t.title) + ' | Kolaboro"><meta property="og:description" content="' + esc(t.desc) + '"><meta property="og:url" content="' + url + '"><meta name="twitter:card" content="summary">' +
+    TB.kbx_paper__s.k5 + JSON.stringify(ld).replace(/</g, '\\u003c') + '</script>' + TB.kbx_paper__s.CSS;
   const LAW = await lawNotes(env);
   const res = new HTMLRewriter()
     .on('title', { element(e) { e.remove(); } })
-    .on('meta[name="description"],meta[name="robots"],meta[property^="og:"],meta[name^="twitter:"],link[rel="canonical"],link[rel="alternate"][hreflang]', { element(e) { e.remove(); } })
+    .on(TB.kbx_paper__s.k6, { element(e) { e.remove(); } })
     .on('script[type="application/ld+json"]', { element(e) { e.remove(); } })
     .on('head', { element(e) { e.append(tags, { html: true }); } })
     .on('main', { element(e) { e.setAttribute('data-clarity-mask', 'True'); e.setInnerContent(toolBody(lang, LAW), { html: true }); } })

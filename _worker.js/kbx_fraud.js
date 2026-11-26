@@ -9,6 +9,7 @@
 //                                     CC0). Only the bank's public identifier is sent, never an account number.
 // Projects in conflict-of-interest markets are not named (kbx_named.js data()), so their domains are not in the list either.
 import { data, isListing, okHttp, host } from './kbx_named.js';
+import { TB } from './kbx_strings.js';
 
 export const PATHS = /^\/api\/x\/fraud\//;
 const H = { 'content-type': 'application/json; charset=utf-8', 'access-control-allow-origin': '*', 'x-content-type-options': 'nosniff' };
@@ -57,7 +58,7 @@ async function domains(env) {
   list.sort((a, b) => a.d < b.d ? -1 : 1); shared.sort();
   const v = {
     updated: ix.updated || null, n: list.length, named: list.filter(x => x.m).length,
-    note: 'Registrable domains of the developer and project websites in Kolaboro\'s named project data. m=1: the domain carries the developer\'s or the project\'s name. Domains we link for more than one developer (portals, agencies, news) are listed in shared and are never treated as a developer\'s own.',
+    note: TB.kbx_fraud__s.k0,
     source: '/data/named.json', domains: list, shared,
   };
   LIST = { ix, v };

@@ -20,7 +20,8 @@ import { rpc } from './kolaboro.js';
 import { S } from './kbx_cite_i18n.js';
 import { coName, mkName } from './kbx_hdate.js';
 import { ogImg } from './kbx_ogt.js';
-import { t as W30 } from './kbx_n30c_named.js';   // n30c: widget v2 builder link   // n29t: share image per page type
+import { t as W30 } from './kbx_n30c_named.js';
+import { TB } from './kbx_strings.js';   // n30c: widget v2 builder link   // n29t: share image per page type
 
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
@@ -87,14 +88,10 @@ const fval = (lang, f, v, c) => {   // a value from promise-drift, in words
 };
 
 // ------------------------------------------------------------------------------------------------ embeds (standalone HTML, no scripts)
-const ECSS = '<style>:root{--i:#13222E;--m:#56636F;--l:#D9DFDC;--p:#fff;--s:#155C75;--sk:#E8ECEA}@media(prefers-color-scheme:dark){:root{--i:#EEF2F0;--m:#A9B4BD;--l:#33404C;--p:#13222E;--s:#7FC3DA;--sk:#1C2C38}}' +
-  'html,body{margin:0;background:var(--p);color:var(--i);font:15px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}.w{padding:14px 16px;border:1px solid var(--l);border-radius:12px;max-width:640px;box-sizing:border-box}' +
-  '.h{font-weight:700;font-size:17px;margin:0 0 2px}.s{color:var(--m);font-size:13px;margin:0 0 10px}dl{margin:0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:6px 12px}dt{color:var(--m);font-size:13px}dd{margin:0;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}' +
-  'ol{margin:6px 0 0;padding-inline-start:18px}li{margin:3px 0}.f{color:var(--m);font-size:12px;margin:10px 0 0;border-top:1px solid var(--l);padding-top:8px}a{color:var(--s)}code{font-size:11px;overflow-wrap:anywhere}.k{display:inline-block;background:var(--sk);border-radius:6px;padding:1px 7px;font-size:13px}' +
-  '@media(max-width:420px){dl{grid-template-columns:1fr}dt{margin-top:4px}}</style>';
+/* ECSS: n40 k17, in /data/i18n/k17s.json */
 function embedPage(lang, title, inner, canon) {
   // served as XHTML: Cloudflare's zone tag injection (analytics) only rewrites text/html, so the widgets stay free of tracking code
-  return '<?xml version="1.0" encoding="utf-8"?>\n<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="' + lang + '" xml:lang="' + lang + '"' + dir(lang) + '><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="robots" content="noindex, follow"/><link rel="canonical" href="' + canon + '"/><title>' + esc(title) + '</title>' + ECSS + '</head><body><div class="w">' + inner + '</div></body></html>';
+  return TB.kbx_cite__s.k0 + lang + '" xml:lang="' + lang + '"' + dir(lang) + TB.kbx_cite__s.k1 + canon + '"/><title>' + esc(title) + '</title>' + TB.kbx_cite__s.ECSS + '</head><body><div class="w">' + inner + '</div></body></html>';
 }
 const langOf = u => { const l = u.searchParams.get('lang'); return LANGS.includes(l) ? l : 'en'; };
 function head(X, x, lang) {
@@ -142,12 +139,12 @@ const xe = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;',
 function badgeSvg(left, right, col) {
   const w1 = Math.round(14 + left.length * 6.6), w2 = Math.round(12 + right.length * 6.3), W = w1 + w2;
   return '<svg xmlns="http://www.w3.org/2000/svg" width="' + W + '" height="22" role="img" aria-label="' + xe(left + ': ' + right) + '"><title>' + xe(left + ': ' + right) + '</title><rect width="' + W + '" height="22" rx="4" fill="#13222E"/><rect x="' + w1 + '" width="' + w2 + '" height="22" rx="4" fill="' + col + '"/><rect x="' + w1 + '" width="6" height="22" fill="' + col + '"/>' +
-    '<g fill="#fff" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11"><circle cx="9" cy="11" r="3" fill="#FF5B14"/><text x="16" y="15">' + xe(left) + '</text><text x="' + (w1 + 7) + '" y="15">' + xe(right) + '</text></g></svg>';
+    TB.kbx_cite__s.k2 + xe(left) + '</text><text x="' + (w1 + 7) + '" y="15">' + xe(right) + '</text></g></svg>';
 }
 function codesPage(X, x, lang, vr) {
   const q = lang === 'en' ? '' : '?lang=' + lang, card = ORIGIN + '/embed/card/' + x.s + '/' + q, trk = ORIGIN + '/embed/tracker/' + x.s + '/' + q, bdg = ORIGIN + '/embed/badge/' + x.s + '.svg';
   const ifr = (src, h, ti) => '<iframe src="' + src + '" title="' + esc(ti) + '" width="100%" height="' + h + '" style="border:0;max-width:640px" loading="lazy"></iframe>';
-  const code = s => '<pre style="white-space:pre-wrap;overflow-wrap:anywhere;background:var(--sk);border-radius:8px;padding:8px 10px;font-size:12px;margin:6px 0 14px"><code>' + esc(s) + '</code></pre>';
+  const code = s => TB.kbx_cite__s.k3 + esc(s) + '</code></pre>';
   const rv = X.rev(x);
   // n27a (batch 27): every embed code carries a plain link to the project page beside the iframe, so the host page links back (a link inside an iframe counts for the frame only)
   const back = '\n<p><a href="' + pUrl(lang, x) + '">' + esc(x.n + ': ' + t(lang, 'open')) + '</a></p>';
@@ -162,9 +159,7 @@ function codesPage(X, x, lang, vr) {
 }
 
 // ------------------------------------------------------------------------------------------------ pages in the site shell
-const PCSS = '<style>.cx .k-ledger{margin:10px 0 18px}.cx h2{scroll-margin-top:90px}.cx .cx-l{padding-inline-start:20px}.cx .cx-l li{margin:6px 0}.cx .cx-src{font-size:.88rem;color:var(--k-muted,var(--muted))}.cx .cx-q{border-inline-start:3px solid var(--k-line-2,var(--line));padding:6px 0 6px 14px;margin:10px 0}' +
-  '.cx .cx-chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:10px 0 20px}.cx .cx-chips a{display:inline-flex;align-items:center;min-height:44px;padding:0 14px;border:1px solid var(--k-line,var(--line));border-radius:var(--k-r-md,10px);background:var(--k-surface,var(--paper));text-decoration:none}' +
-  '.cx code{overflow-wrap:anywhere}.cx .cx-ch li{margin:8px 0;line-height:1.5}.cx .cx-ch small{color:var(--k-muted,var(--muted))}</style>';
+/* PCSS: n40 k17, in /data/i18n/k17s.json */
 async function shellPage(shell, lang, o) {
   const path = o.path, canon = ORIGIN + pre(lang) + path;
   const alts = o.langs === false ? '' : LANGS.map(l => '<link rel="alternate" hreflang="' + l + '" href="' + ORIGIN + pre(l) + path + '">').join('') + '<link rel="alternate" hreflang="x-default" href="' + ORIGIN + path + '">';
@@ -172,14 +167,14 @@ async function shellPage(shell, lang, o) {
   const ld = { '@context': 'https://schema.org', '@graph': [{ '@type': o.type || 'WebPage', '@id': canon + '#page', url: canon, name: o.h1, description: o.desc, inLanguage: lang, dateModified: o.updated, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' }, publisher: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' } },
     { '@type': 'BreadcrumbList', itemListElement: crumbs.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c[0], item: c[1] })) }].concat(o.ld || []) };
   const tags = '<title>' + esc(o.title) + ([...String(o.title)].length + 11 <= 60 ? ' | Kolaboro' : '') + '</title><meta name="description" content="' + esc(o.desc) + '"><link rel="canonical" href="' + canon + '">' + alts +
-    '<meta name="robots" content="' + (o.noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large, max-snippet:-1') + '"><meta property="og:type" content="website"><meta property="og:site_name" content="Kolaboro"><meta property="og:title" content="' + esc(o.title) + '"><meta property="og:description" content="' + esc(o.desc) + '"><meta property="og:url" content="' + canon + '"><meta property="og:image" content="' + ogImg(canon) + '"><meta name="twitter:card" content="summary_large_image">' +
+    '<meta name="robots" content="' + (o.noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large, max-snippet:-1') + TB.kbx_cite__s.k4 + esc(o.title) + '"><meta property="og:description" content="' + esc(o.desc) + '"><meta property="og:url" content="' + canon + '"><meta property="og:image" content="' + ogImg(canon) + '"><meta name="twitter:card" content="summary_large_image">' +
     (o.feed ? '<link rel="alternate" type="application/atom+xml" title="' + esc(o.feed[1]) + '" href="' + o.feed[0] + '">' : '') +
-    '<script type="application/ld+json">' + JSON.stringify(ld).replace(/</g, '\\u003c') + '</script>' + PCSS;
+    '<script type="application/ld+json">' + JSON.stringify(ld).replace(/</g, '\\u003c') + '</script>' + TB.kbx_cite__s.PCSS;
   const main = '<section class="phero"><div class="wrap"><p class="crumb">' + crumbs.map((c, i) => i < crumbs.length - 1 ? '<a href="' + esc(c[1].replace(ORIGIN, '')) + '">' + esc(c[0]) + '</a>' : esc(c[0])).join(' / ') + '</p><h1>' + esc(o.h1) + '</h1>' + (o.lead ? '<p class="lead">' + esc(o.lead) + '</p>' : '') + '</div></section><section class="sec cx"><div class="wrap k-prose" style="max-width:var(--wrap)">' + o.body + '</div></section>';
   const sh = await shell(pre(lang) + '/how-we-score/');
   const res = new HTMLRewriter()
     .on('title', { element(e) { e.remove(); } })
-    .on('meta[name="description"],meta[name="robots"],meta[property^="og:"],meta[name^="twitter:"],link[rel="canonical"],link[rel="alternate"][hreflang]', { element(e) { e.remove(); } })
+    .on(TB.kbx_cite__s.k5, { element(e) { e.remove(); } })
     .on('script[type="application/ld+json"]', { element(e) { e.remove(); } })
     .on('head', { element(e) { e.append(tags, { html: true }); } })
     .on('main', { element(e) { e.setInnerContent(main, { html: true }); } })
@@ -242,7 +237,7 @@ function story(X, mkt, month, lang) {
       proj.push([x.id, x.n, ho ? ho.d : '', lm ? Math.max(0, lm.late) : '', isPermit(c) ? 'yes' : 'no', isEscrow(c) ? 'yes' : 'no', c.score || 0, c.vscore || 0, N.lastmod(X.ix, x), pUrl('en', x)]);
       return '<tr><td data-label="' + esc(t(lang, 'th_proj')) + '"><a href="' + pre(lang) + '/projects/' + x.s + '/">' + esc(x.n) + '</a></td><td data-label="' + esc(t(lang, 'th_hand')) + '">' + esc(ho ? N.fd(ho.d, lang) : t(lang, 'notpub')) + '</td><td class="k-n" data-label="' + esc(t(lang, 'th_late')) + '">' + (lm && lm.late > 0 ? lm.late : '0') + '</td><td data-label="' + esc(t(lang, 'th_pn')) + '">' + esc(isPermit(c) ? t(lang, 'stated') : t(lang, 'notpub')) + '</td><td class="k-n" data-label="' + esc(t(lang, 'th_chk')) + '">' + (c.score || 0) + '/6</td><td data-label="' + esc(t(lang, 'th_last')) + '">' + esc(N.fd(N.lastmod(X.ix, x), lang)) + '</td></tr>';
     });
-    b += h2('projects', t(lang, 'st_tab_h', { mk: m })) + '<div class="k-table-wrap"><table class="k-table k-table--dense k-table--stack"><thead><tr><th scope="col">' + [t(lang, 'th_proj'), t(lang, 'th_hand'), t(lang, 'th_late'), t(lang, 'th_pn'), t(lang, 'th_chk'), t(lang, 'th_last')].map(esc).join('</th><th scope="col">') + '</th></tr></thead><tbody>' + rows.join('') + '</tbody></table></div>';
+    b += h2('projects', t(lang, 'st_tab_h', { mk: m })) + TB.kbx_cite__s.k6 + [t(lang, 'th_proj'), t(lang, 'th_hand'), t(lang, 'th_late'), t(lang, 'th_pn'), t(lang, 'th_chk'), t(lang, 'th_last')].map(esc).join('</th><th scope="col">') + '</th></tr></thead><tbody>' + rows.join('') + '</tbody></table></div>';
   }
   const url = ORIGIN + pre(lang) + path, cite = t(lang, 'st_cite', { mk: m, mo, url, d: N.fd(X.today, lang) });
   b += h2('cite', t(lang, 'cite_h')) + '<p class="cx-q">' + esc(cite).replace(esc(url), '<bdi><a href="' + esc(url) + '">' + esc(url) + '</a></bdi>' + (lang === 'zh' || lang === 'ar' ? ' ' : '')) + '</p><p><a class="k-btn" href="/stories/' + month + '/' + mkt.s + '.csv" download>' + esc(t(lang, 'dl')) + '</a></p>';
@@ -261,7 +256,7 @@ function storyCsv(X, mkt, month) {
   const s = story(X, mkt, month, 'en');
   const L = ['# Kolaboro off-plan data, ' + mkt.m + ', ' + month + '. Data of ' + X.today + '. CC BY 4.0, attribute "Kolaboro" and link ' + ORIGIN + s.path, 'metric,value,unit,source'];
   for (const r of s.csvRows) L.push(r.map((v, i) => csvCell(i === 3 && String(v).startsWith('/') ? ORIGIN + v : v)).join(','));
-  if (s.proj.length) { L.push('', 'id,project,handover_on_record,months_past_first_date,permit_number_published,deposit_protection_stated,checks_public_of_6,checks_confirmed_of_6,last_checked,page'); for (const r of s.proj) L.push(r.map(csvCell).join(',')); }
+  if (s.proj.length) { L.push('', TB.kbx_cite__s.k7); for (const r of s.proj) L.push(r.map(csvCell).join(',')); }
   return L.join('\n') + '\n';
 }
 function storiesIndex(X, lang) {
@@ -310,14 +305,14 @@ function answers(X, x, tp) {
   const L = ['# ' + x.n + ': facts on record', '', 'Canonical page: ' + url, 'Other languages: ' + LANGS.filter(l => l !== 'en').map(l => pUrl(l, x)).join(' '), 'Last checked: ' + lc + '. Licence: CC BY 4.0, attribute "Kolaboro" and link the canonical page.', 'Rules: facts only, each with its source. Kolaboro gives no verdicts about a named company.', ''];
   L.push('## Quick answer {#answer}', '', N.quickAnswer(X.ix, x, 'en', tp || null), '');   // n24s: the same text as the top of the page
   L.push('## Summary {#summary}', '');
-  if (!rv) L.push(x.n + ' (' + where + ') is tracked by Kolaboro and not yet reviewed: our research agent has not read its sources yet, so no score or check results are published. Page: ' + url, '');
+  if (!rv) L.push(x.n + ' (' + where + TB.kbx_cite__s.k8 + url, '');
   else {
     L.push(x.n + ' is an off-plan property project in ' + where + (x.dv ? ', by ' + x.dv : '') + (c.stage ? ', stage on record: ' + c.stage : '') + '. ' +
       (ho ? 'Handover date on record: ' + N.fd(ho.d, 'en') + (lm && lm.late > 0 ? ', ' + lm.late + ' months past the first date on record (' + N.fd(lm.first, 'en') + ')' : '') + '. ' : 'No handover date is published in the sources we read. ') +
       (x.pn ? 'Permit or licence number published: ' + x.pn + '. ' : isPermit(c) ? 'A permit or licence number is published. ' : 'No permit or licence number is published in the sources we read. ') +
       c.score + ' of 6 buyer checks are public, ' + (c.vscore || 0) + ' confirmed by a register or an independent source.', '');
   }
-  L.push('## Is ' + x.n + ' legit? {#legit}', '', 'Kolaboro does not label projects as legit or not. It publishes what official registers and the developer\'s own pages show, with sources, and what it could not verify: ' + url + '#checks' + (rv && c.claims ? '. Of ' + ((c.claims.verified || 0) + (c.claims.unverified || 0) + (c.claims.contradicted || 0)) + ' developer claims tested: confirmed ' + (c.claims.verified || 0) + ', not yet verified ' + (c.claims.unverified || 0) + ', contradicted by another source ' + (c.claims.contradicted || 0) + '.' : '.'), '');
+  L.push('## Is ' + x.n + ' legit? {#legit}', '', TB.kbx_cite__s.k9 + url + '#checks' + (rv && c.claims ? '. Of ' + ((c.claims.verified || 0) + (c.claims.unverified || 0) + (c.claims.contradicted || 0)) + ' developer claims tested: confirmed ' + (c.claims.verified || 0) + ', not yet verified ' + (c.claims.unverified || 0) + ', contradicted by another source ' + (c.claims.contradicted || 0) + '.' : '.'), '');
   L.push('## When will ' + x.n + ' be delivered? {#delivery}', '');
   if (rv && P.length) for (const q of P) L.push('- ' + N.tr('en', 'pk_' + q.k) + ': ' + N.fd(q.d, 'en') + ' (' + N.tr('en', 'ps_' + q.st) + (q.mv ? '; moved ' + q.mv + ' times, ' + (q.mm || 0) + ' months in total' : '; not moved in our records') + '; source: ' + (q.src === 'page' ? 'developer or listing page' + (q.sha ? ', copy SHA-256 ' + q.sha : '') : 'research record') + ', first seen ' + (((q.hist || [])[0] || {}).seen || q.seen) + ')');
   else L.push(rv ? 'No dated promise found in the sources we read.' : 'Not yet reviewed.');
@@ -325,7 +320,7 @@ function answers(X, x, tp) {
   L.push('## Does ' + x.n + ' have a permit? {#permits}', '', x.pn ? 'Number published: ' + x.pn + ' (source: ' + (N.okHttp(x.du) ? N.fixU(x.du) : page || url) + ').' : 'No permit or licence number is published in the sources we read.' + (rv && isPermit(c) ? ' The sources state a permit without a number we can show.' : ''));
   const rw = x.rw || c.register; if (rw && rw.register) L.push('Official register check: ' + rw.register + ', ' + (rw.item || '') + ': ' + (rw.status || '') + (rw.checked ? ' (checked ' + rw.checked + ')' : '') + '. How registers are searched: ' + ORIGIN + '/registers/');
   L.push('', '## Who is the developer? {#developer}', '', x.dv ? x.dv + (x.dvs && X.ix.devs.has(x.dvs) ? ': ' + ORIGIN + '/developers/' + x.dvs + '/' : '') + ((x.fx || {}).developer_company && N.cleanOk(x.fx.developer_company) ? '. Company as published: ' + x.fx.developer_company : '') : 'Not published in the sources we read.', '');
-  L.push('## What do buyers say? {#reviews}', '', 'Kolaboro publishes buyer reviews only from verified buyers (proof of purchase), after moderation, on the project page: ' + url + '#reviews. Developers can reply with documents: ' + ORIGIN + '/developers/reply/?id=' + encodeURIComponent(x.id), '');
+  L.push('## What do buyers say? {#reviews}', '', TB.kbx_cite__s.k10 + url + '#reviews. Developers can reply with documents: ' + ORIGIN + '/developers/reply/?id=' + encodeURIComponent(x.id), '');
   L.push('## What changed recently {#changes}', '');
   if (ch.length) for (const e of ch) { const cc = e.c, v = z => z === true ? 'yes' : z === false ? 'no' : String(z); L.push('- ' + e.d + ': ' + (cc.label || cc.f) + ': ' + (cc.f === 'price_from' && cc.pct != null ? (cc.pct > 0 ? '+' : '') + cc.pct + '%' : v(cc.from) + ' to ' + v(cc.to)) + ' (page copies ' + (cc.sha_from || '') + ' and ' + (cc.sha_to || '') + ')'); }
   else L.push('No change found between dated copies of the developer page.');
@@ -337,7 +332,7 @@ function answers(X, x, tp) {
   return L.join('\n');
 }
 function llmsProjects(X) {
-  const L = ['# Kolaboro: every named off-plan project, one citation-ready block each', '', '> Facts only, each with its source. Data of ' + X.today + '. CC BY 4.0, attribute "Kolaboro". Projects not yet reviewed carry no score. Full answers per project: ' + ORIGIN + '/answers/<slug>.md. Section anchors on each project page: #answer #glance #legit #promise #delivery #permits #where #checks #developer #reviews #reply #faq #sources.', ''];
+  const L = ['# Kolaboro: every named off-plan project, one citation-ready block each', '', '> Facts only, each with its source. Data of ' + X.today + TB.kbx_cite__s.k11 + ORIGIN + TB.kbx_cite__s.k12, ''];
   const mk = new Map(); for (const x of X.ix.P) { if (!mk.has(x.mk)) mk.set(x.mk, []); mk.get(x.mk).push(x); }
   for (const m of [...mk.keys()].sort()) {
     L.push('## ' + m, '');
@@ -395,7 +390,7 @@ function citeSitemap(X) {
   const entries = [['/stories/', X.today], ...X.storyMonths.flatMap(m => X.markets.map(k => ['/stories/' + m + '/' + k.s + '/', m === X.cur ? X.today : m + '-28'])), ...X.months.map(m => ['/changes/' + m + '/', lastIn(m)])];
   const out = [];
   for (const [p, d] of entries) for (const l of LANGS) out.push('<url><loc>' + ORIGIN + pre(l) + p + '</loc><lastmod>' + d + '</lastmod>' + LANGS.map(k => '<xhtml:link rel="alternate" hreflang="' + k + '" href="' + ORIGIN + pre(k) + p + '"/>').join('') + '<xhtml:link rel="alternate" hreflang="x-default" href="' + ORIGIN + p + '"/></url>');
-  return '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">' + out.join('') + '</urlset>';
+  return TB.kbx_cite__s.k13 + out.join('') + '</urlset>';
 }
 
 // ------------------------------------------------------------------------------------------------ routes
@@ -434,7 +429,7 @@ export async function handle(req, u, env, ctx, shell) {
     let trP = null; try { trP = (await import('./kbx_tr.js')).trProject; } catch (e) { trP = null; }
     const L = c.L.slice().sort((a, b) => String(a.mk).localeCompare(String(b.mk)) || a.n.localeCompare(b.n)), tps = trP ? await Promise.all(L.map(x => trP(env, x.id, 'en').catch(() => null))) : L.map(() => null);
     const mks = [...new Set(L.map(x => x.mk))];
-    const out = ['# Kolaboro: every named off-plan project in ' + c.co + ', full answers', '', '> ' + L.length + ' projects in ' + mks.length + ' market' + (mks.length === 1 ? '' : 's') + ' (' + mks.join(', ') + '). For each project: quick answer, dated handover promises, permit, developer, changes and sources, the same text as ' + ORIGIN + '/answers/<slug>.md. Facts only, each with its source. Data of ' + X.today + '. CC BY 4.0, attribute "Kolaboro". Short version: ' + ORIGIN + '/llms/' + c.s + '.txt', '',
+    const out = ['# Kolaboro: every named off-plan project in ' + c.co + ', full answers', '', '> ' + L.length + ' projects in ' + mks.length + ' market' + (mks.length === 1 ? '' : 's') + ' (' + mks.join(', ') + TB.kbx_cite__s.k14 + ORIGIN + '/answers/<slug>.md. Facts only, each with its source. Data of ' + X.today + '. CC BY 4.0, attribute "Kolaboro". Short version: ' + ORIGIN + '/llms/' + c.s + '.txt', '',
       ...L.map((x, i) => answers(X, x, tps[i]).replace(/^# /, '# [' + x.mk + '] ') + '\n---\n')].join('\n');
     if (Object.keys(LLD).filter(z => z.startsWith('full|')).length < 8) LLD[k] = out;   // a few MB at most per isolate
     return txt(out, 'text/plain; charset=utf-8', { 'x-robots-tag': 'noindex' });

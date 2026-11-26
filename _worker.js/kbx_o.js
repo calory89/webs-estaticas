@@ -9,6 +9,7 @@
 //   GET  /api/x/o/slo            service level objectives and remaining error budgets, computed from uptime probes, the API log and
 //                                real-user vitals at request time
 import * as K from './kolaboro.js';
+import { TB } from './kbx_strings.js';
 const { json, rpc, sha, deskReview, pageParts, qnorm, quoteFound, signBody, logHeads, PUB_RAW_B64 } = K;   // WKEY is read live as K.WKEY (it can come from a secret)
 
 export const PATHS = /^\/api\/x\/o\//;
@@ -69,16 +70,16 @@ async function oidc(req, workflowFile) {
 
 // ---------- 1. External witnesses ----------
 const ORIGIN = 'kolaboro.com/log';
-const OPENS_SOON = 'Witness registration opens soon: the cosignature was checked, but the witness table is not live yet, so nothing was stored.';
+/* OPENS_SOON: n40 k17, in /data/i18n/k17s.json */
 async function witnessPost(req, env, ctx) {
   const ip = req.headers.get('cf-connecting-ip') || 'x';
   if (await limited('w/' + encodeURIComponent(ip), 20)) return json({ accepted: false, error: 'rate', note: 'at most 20 submissions an hour from one address' }, 429);
   let b; try { const t = await req.text(); if (t.length > 6000) throw 0; b = JSON.parse(t); } catch (e) { return json({ accepted: false, error: 'bad_request', need: '{checkpoint, cosignature, public_key, contact?}' }, 400); }
   const body = String(b.checkpoint || ''), line = String(b.cosignature || ''), pk = String(b.public_key || ''), contact = b.contact ? String(b.contact).slice(0, 200) : null;
   const cm = body.match(/^kolaboro\.com\/log\n(\d{1,9})\n([A-Za-z0-9+/]{43}=)\n((?:[^\n\u0000-\u001f]{1,200}\n){0,4})$/);
-  if (!cm) return json({ accepted: false, error: 'checkpoint', why: 'checkpoint must be the body of a kolaboro.com/log checkpoint: origin, size, base64 root, optional extension lines, each ending in a newline' }, 400);
+  if (!cm) return json({ accepted: false, error: 'checkpoint', why: TB.kbx_o__s.k0 }, 400);
   const lm = line.match(/^— ([!-~]{3,120}) ([A-Za-z0-9+/]{102}==)$/);
-  if (!lm || lm[1].includes('+')) return json({ accepted: false, error: 'cosignature', why: 'expected one line: "— <name> <base64 of 76 bytes>" (C2SP tlog-cosignature, Ed25519); the name has no spaces or plus signs' }, 400);
+  if (!lm || lm[1].includes('+')) return json({ accepted: false, error: 'cosignature', why: TB.kbx_o__s.k1 }, 400);
   if (contact && !/^https:\/\/[^\s<>"']{4,190}$/.test(contact)) return json({ accepted: false, error: 'contact', why: 'contact must be an https URL (for example the repository that runs the witness)' }, 400);
   let pubRaw, blob; try { pubRaw = b64d(pk); blob = b64d(lm[2]); } catch (e) { return json({ accepted: false, error: 'base64' }, 400); }
   if (pubRaw.length !== 32 || blob.length !== 76) return json({ accepted: false, error: 'length', why: 'public key must be 32 bytes and the cosignature 4 + 8 + 64 bytes' }, 400);
@@ -98,18 +99,18 @@ async function witnessPost(req, env, ctx) {
   let ours = false;
   if (name.startsWith('kolaboro.com/')) {   // names under our domain are reserved for our own witness workflow
     let cl = null; try { cl = await oidc(req, 'kolaboro-witness.yml'); } catch (e) {}
-    if (!cl) return json({ accepted: false, error: 'reserved_name', why: 'names under kolaboro.com/ are reserved for Kolaboro\'s own witness; use a name you control, e.g. github.com/you/kolaboro-witness' }, 403);
+    if (!cl) return json({ accepted: false, error: 'reserved_name', why: TB.kbx_o__s.k2 }, 403);
     ours = true;
   }
   let r;
   try { r = await rpc('kolaboro_o_witness_put', { p_wkey: K.WKEY, p_name: name, p_pub: pk, p_contact: contact, p_ours: ours, p_time: ts, p_size: size, p_root: rootB64, p_line: line }); }
-  catch (e) { return json({ accepted: false, state: 'opens_soon', verified: true, checks, message: OPENS_SOON }, 503); }
+  catch (e) { return json({ accepted: false, state: 'opens_soon', verified: true, checks, message: TB.kbx_o__s.OPENS_SOON }, 503); }
   if (!r || r.ok !== true) return json({ accepted: false, verified: true, checks, error: (r && r.error) || 'rejected', why: r && r.why }, 409);
   return json({ accepted: true, verified: true, checks, witness: name, tree_size: size, cosignatures: r.cosignatures });
 }
 async function witnessData() {
   try { const d = await rpc('kolaboro_o_witnesses_public', {}); if (d && Array.isArray(d.witnesses)) return Object.assign({ state: 'open' }, d); } catch (e) {}
-  return { state: 'setup', witnesses: [], note: 'Witness registration opens soon. The verification endpoint is live; storage starts once the witness table is created.' };
+  return { state: 'setup', witnesses: [], note: TB.kbx_o__s.k3 };
 }
 async function witnessList(ctx) {
   const d = await witnessData();
@@ -218,7 +219,7 @@ async function slo(ctx) {
   const elapsed = (now - Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), 1)) / 864e5;
   const res = { computed_at: now.toISOString(), window: { month, days_in_month: dim, days_elapsed: Math.round(elapsed * 100) / 100 }, slos: [] };
   // availability
-  const A = { id: 'availability', objective: 'The home page and the API health check answer (2xx or 3xx within 15 s) in 99.9% of uptime probes each calendar month', target: 0.999, source: '/api/open/uptime' };
+  const A = { id: 'availability', objective: TB.kbx_o__s.k4, target: 0.999, source: '/api/open/uptime' };
   const days = up && Array.isArray(up.daily) ? up.daily.filter(d => String(d.day).slice(0, 7) === month) : null;
   if (!days) Object.assign(A, { state: 'unavailable', note: 'the uptime data could not be read just now' });
   else {
@@ -228,22 +229,22 @@ async function slo(ctx) {
       budget_failed_probes_month: Math.round(budget * 100) / 100, budget_minutes_month: Math.round(dim * 1440 * (1 - A.target) * 10) / 10,
       budget_spent_pct: Math.round(failed / budget * 1000) / 10, budget_remaining_pct: Math.round((1 - failed / budget) * 1000) / 10,
       met: probes ? ok / probes >= A.target : null,
-      note: 'Budget = 0.1% of the probes a full month holds at the published schedule (288 database probes and 24 GitHub probes a day). Probes started ' + (up.since ? String(up.since).slice(0, 10) : 'recently') + ', so this month is partly covered.' });
+      note: TB.kbx_o__s.k5 + (up.since ? String(up.since).slice(0, 10) : 'recently') + ', so this month is partly covered.' });
   }
   res.slos.push(A);
   // desk review success
   const D = { id: 'desk_review', objective: '95% of desk review requests return a report each calendar month', target: 0.95, source: 'API log (every /api/kb/analyze and /api/x/b/review call: success or failure)' };
   const dd = desk && Array.isArray(desk.days) && !(desk.note && !desk.days.length) ? desk.days.filter(d => String(d.day).slice(0, 7) === month) : null;
-  if (!dd) Object.assign(D, { state: 'setup', note: 'The public read of the API log is not switched on yet. Until it is, this objective is defined but not measured here.' });
+  if (!dd) Object.assign(D, { state: 'setup', note: TB.kbx_o__s.k6 });
   else {
     const total = dd.reduce((a, d) => a + (+d.total || 0), 0), ok = dd.reduce((a, d) => a + (+d.ok || 0), 0), failed = total - ok, budget = total * (1 - D.target);
     Object.assign(D, { state: total ? 'measuring' : 'no_data', requests: total, failed, measured: total ? ok / total : null, budget_failed_requests: Math.round(budget * 100) / 100,
       budget_spent_pct: budget ? Math.round(failed / budget * 1000) / 10 : null, budget_remaining_pct: budget ? Math.round((1 - failed / budget) * 1000) / 10 : null, met: total ? ok / total >= D.target : null,
-      note: 'A failure is any request that ends without a report, including sites that block automated readers or have no readable text. Requests refused for rate limits or bad input are not counted.' + (total < 100 ? ' Fewer than 100 requests this month: one failure moves the rate by more than 1 point.' : '') });
+      note: TB.kbx_o__s.k7 + (total < 100 ? ' Fewer than 100 requests this month: one failure moves the rate by more than 1 point.' : '') });
   }
   res.slos.push(D);
   // LCP
-  const L = { id: 'lcp_p75', objective: '75th percentile Largest Contentful Paint at or under 2.5 s over the last 28 days, measured in real visitors\' browsers', target_ms: 2500, min_samples: 50, source: '/api/x/f/vitals' };
+  const L = { id: 'lcp_p75', objective: TB.kbx_o__s.k8, target_ms: 2500, min_samples: 50, source: '/api/x/f/vitals' };
   const all = vit && Array.isArray(vit.overall_28d) ? vit.overall_28d.find(x => x.metric === 'LCP' && (x.page === 'all' || x.page == null)) : null;
   if (!vit) Object.assign(L, { state: 'unavailable', note: 'real-user vitals could not be read just now' });
   else if (!all || (+all.n || 0) < L.min_samples) Object.assign(L, { state: 'no_data', samples: all ? +all.n : 0, note: 'Not enough real-user samples yet (fewer than 50 in 28 days): no verdict.' });

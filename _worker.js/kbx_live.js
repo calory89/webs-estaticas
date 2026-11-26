@@ -5,6 +5,7 @@
 //   GET /api/x/live/csp      counts of Content-Security-Policy (report-only) violations reported to /api/kb/csp, aggregates only,
 //                            read through the public function kolaboro_csp_public (answers available:false until it exists).
 import { rpc } from './kolaboro.js';
+import { TB } from './kbx_strings.js';
 export const PATHS = /^\/api\/x\/live(\/|$)/;
 
 const HDR = { 'content-type': 'application/json; charset=utf-8', 'access-control-allow-origin': '*', 'x-content-type-options': 'nosniff' };
@@ -39,7 +40,7 @@ function incidents(dep) {
   if (cur) { cur.resolved_at = null; inc.push(cur); }
   return inc.reverse().slice(0, 20).map(x => Object.assign(x, {
     summary: x.kind === 'rolled_back' ? 'Smoke checks failed after a deploy; the guard restored the last passing files automatically.'
-      : 'New code was pushed but not live within 12 minutes (Cloudflare Pages build queue or limit); the previous version kept serving visitors.',
+      : TB.kbx_live__s.k0,
     runs: x.runs.slice(-3)
   }));
 }
@@ -85,7 +86,7 @@ export async function handle(req, u, env, ctx) {
   if (p === '/api/x/live/csp') {
     let d = null; try { d = await rpc('kolaboro_csp_public', {}); } catch (e) {}
     if (!d) return out({ available: false, mode: 'report-only', endpoint: '/api/kb/csp', note: 'Reports are collected since 3 Nov 2026. The public read of the counts is not enabled yet.' }, 200, 300);
-    return out(Object.assign({ available: true, mode: 'script rules enforced on every page since 2026-11-11 (reports about scripts are real blocks from then on); other rules report-only', endpoint: '/api/kb/csp' }, d), 200, 300);
+    return out(Object.assign({ available: true, mode: TB.kbx_live__s.k1, endpoint: '/api/kb/csp' }, d), 200, 300);
   }
   return out({ error: 'not_found' }, 404);
 }

@@ -17,6 +17,7 @@
 // Tables and functions: scratchpad m11/t.sql. Until applied, reports and webhook registration answer "opens soon".
 import * as KB from './kolaboro.js';
 import { stateOf, diffOf } from './kbx_j.js';
+import { TB } from './kbx_strings.js';
 const { json, rpc, sha, signBody, openLoad, verifyAssertion } = KB;
 
 export const PATHS = /^\/api\/x\/t\//;
@@ -177,7 +178,7 @@ async function hookSample(env, ctx, req) {
   const after = stateOf(c, null), before = JSON.parse(JSON.stringify(after));
   before.score = Math.max(0, (after.score || 0) - 1);
   const evt = await changeEvent(c, before, after, diffOf(before, after), d, dsha);
-  evt.sample = true; evt.note = 'Sample only: the "before" state is made up for this example (one check fewer). Real events carry the recorded previous state.';
+  evt.sample = true; evt.note = TB.kbx_t__s.k0;
   const s = await signedRequest(env, 0, evt, 1);
   if (!s) return out({ error: 'signing_unavailable' }, 503);
   return out({ headers: s.headers, body: s.body, verify: { message: 'kolaboro-sig-v1\\n + sha256_hex(body)', keys: 'https://kolaboro.com/.well-known/kolaboro-keys.json' } });

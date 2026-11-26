@@ -15,6 +15,7 @@
 //   POST /api/x/cohort/{join|confirm|me|intro|answer|leave}   JSON body; tokens travel in the body, never in a URL the server logs
 import { CS } from './kbx_cohort_i18n.js';
 import { rpcW, sha } from './kolaboro.js';
+import { TB } from './kbx_strings.js';
 
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
@@ -64,7 +65,7 @@ export async function handle(req, u, env, ctx) {
   const p = u.pathname.replace(/\/+$/, '');
   if (p === '/api/x/cohort' || p === '/api/x/cohort/status') {
     const flag = flagOn(env), db = await dbReady();
-    return out({ module: 'cohort (batch 18, n18e)', enabled: flag && db, flag, db, page: ORIGIN + '/cohort/', note: flag && db ? 'open' : 'Buyer groups are built but not switched on: they need the Pages variable KB_COHORT=on and the database migration n18e (not applied).' }, 200, 'public, max-age=60');
+    return out({ module: 'cohort (batch 18, n18e)', enabled: flag && db, flag, db, page: ORIGIN + '/cohort/', note: flag && db ? 'open' : TB.kbx_cohort__s.k0 }, 200, 'public, max-age=60');
   }
   const on = await enabled(env);
   if (p === '/api/x/cohort/count') {

@@ -13,6 +13,7 @@
 //   GET /[l/]engineering/search-quality/   30 multilingual search ranking regression test
 // Strings in 8 languages: /data/n34c-i18n.json (static asset, read once per isolate).
 import { signBody } from './kolaboro.js';
+import { TB } from './kbx_strings.js';
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' };
@@ -188,7 +189,7 @@ export async function tlogProof(env, slug, day) {
   const LL = await logLeaves(tl);
   return { type: 'kolaboro-tlog-proof-v1', project: slug, day: E[i].day, record: rec, leaf: hexA(leaf), leaf_index: j, day_size: lv.n, day_root: lv.root, day_path: (await pathOf(j, L)).map(hexA),
     snapshot: { sha256: E[i].snapshot_sha256, head: E[i].snapshot_head, copy: ORIGIN + '/data/snapshots/' + E[i].day + '/named.json.gz' }, day_index: i, log_path: (await pathOf(i, LL)).map(hexA), tree_head: th, signature: sig,
-    verify: 'python3 kolaboro_offline_verify.py tlog proof.json [named.json.gz]  (https://kolaboro.com/verify/offline/)' };
+    verify: TB.kbx_n34c__s.k0 };
 }
 async function tlogApi(req, u, env) {
   const p = u.pathname, q = u.searchParams;
@@ -222,7 +223,7 @@ async function tlPage(env, shell, l, u) {
     sec(t(l, 'tl_head'), code(l, JSON.stringify({ tree_head: th, signature: sig }, null, 1))) +
     sec(t(l, 'tl_entries'), table(t(l, 'tl_th'), rows)) +
     sec(t(l, 'method'), paras(l, 'tl_p') + code(l, tl.record_leaf + '\n' + tl.day_leaf + '\n' + tl.node)) +
-    sec(t(l, 'tl_off'), code(l, 'curl -s "https://kolaboro.com/api/v1/tlog/proof?project=amani-melasti" -o proof.json\npython3 kolaboro_offline_verify.py tlog proof.json\ncurl -s "https://kolaboro.com/api/v1/tlog/consistency?first=1&second=' + tl.size + '" -o cons.json\nnode kolaboro-offline-verify.mjs tlog-consistency cons.json')) +
+    sec(t(l, 'tl_off'), code(l, TB.kbx_n34c__s.k1 + tl.size + '" -o cons.json\nnode kolaboro-offline-verify.mjs tlog-consistency cons.json')) +
     files(l, [['/api/v1/tlog', t(l, 'signed')], ['/data/tlog/index.json', 'JSON'], ['/open/n34c-daily.py', 'Python'], ['/open/kolaboro_offline_verify.py', 'Python'], ['/open/kolaboro-offline-verify.mjs', 'Node']]) +
     '<p><a href="' + pre(l) + '/data/snapshots/">' + esc(t(l, 'snapshots')) + '</a> · <a href="/log/">' + esc(t(l, 'publog')) + '</a> · <a href="/engineering/transparency-log/">' + esc(t(l, 'tl_old')) + '</a></p>';
   return page(shell, l, Object.assign(H(l, 'tl'), { path: '/verify/transparency-log/', body: b, updated: tl.entries[tl.size - 1].day, crumb: [[t(l, 'verify'), '/verify/']], maxAge: 300, noindex: !!slug }));
@@ -254,7 +255,7 @@ async function errSec(l) {
   let e = null; try { e = await (await import('./kbx_n27a.js')).errUsage(14); } catch (x) { return ''; }
   const S = t(l, 'n39_er'), g = (o, re) => Object.entries(o).reduce((a, [k, v]) => a + (re.test(k) ? v : 0), 0);
   const rows = e.per_day.filter(x => Object.keys(x.counts).length).map(x => '<tr><td class="n">' + esc(fd(x.date, l)) + '</td>' + [/^404 page$/, /^404 (api|data)$/, /^404 asset$/, /^5xx /, /^404 \w+ bot$/].map(re => '<td class="n">' + bdi(l, nf(g(x.counts, re), l)) + '</td>').join('') + '</tr>');
-  return sec(S[0], '<p class="k-xs">' + esc(S[1]) + '</p>' + (rows.length ? table(S[2], rows) : '<p class="mut">' + esc(S[5]) + '</p>') + (e.top_paths.length ? '<h3>' + esc(S[3]) + '</h3>' + table(S[4], e.top_paths.map(x => '<tr><td><code dir="ltr">' + esc(x.path) + '</code></td><td class="n">' + esc(x.status) + '</td><td class="n">' + bdi(l, nf(x.n, l)) + '</td></tr>')) : '') + '<p class="k-xs"><a href="/api/open/usage" hreflang="en"><code dir="ltr">/api/open/usage</code></a></p>', 'errors');
+  return sec(S[0], '<p class="k-xs">' + esc(S[1]) + '</p>' + (rows.length ? table(S[2], rows) : '<p class="mut">' + esc(S[5]) + '</p>') + (e.top_paths.length ? '<h3>' + esc(S[3]) + '</h3>' + table(S[4], e.top_paths.map(x => '<tr><td><code dir="ltr">' + esc(x.path) + '</code></td><td class="n">' + esc(x.status) + '</td><td class="n">' + bdi(l, nf(x.n, l)) + '</td></tr>')) : '') + TB.kbx_n34c__s.k2, 'errors');
 }
 // n39 t3: the broken-link check that runs inside the deploy guard job (open/deploy-guard.py link_check), latest run
 function lkSec(l, m) {
@@ -335,8 +336,8 @@ async function pfPage(env, shell, l) {
   const allA = new Set(), ver = new Set(); for (const x of pb.templates) for (const a of x.assets) { allA.add(a.path); if (/[?&]v=/.test(a.path)) ver.add(a.path); }
   const b = kpis(l, [[nf(pb.passed, l) + '/' + nf(pb.total, l), t(l, 'pf_pass')], [nf(ver.size, l) + '/' + nf(allA.size, l), t(l, 'pf_imm')], [bm ? nf(Object.keys(bm.files).length, l) : '0', t(l, 'pf_brn')]]) +
     sec(t(l, 'pf_tpl'), table(t(l, 'pf_th'), rows) + '<p class="k-xs">' + esc(fill(t(l, 'pf_how'), { d: ft(pb.measured, l) })) + '</p>') +
-    sec(t(l, 'pf_br'), paras(l, 'pf_brp') + (BR_ON ? '' : '<p><b>' + esc(t(l, 'pf_offp')) + '</b></p>') + table(t(l, 'pf_bth'), brows) + code(l, 'curl -sI -H "accept-encoding: br" https://kolaboro.com/data/named.json | grep -i "content-encoding\\|x-kolaboro-precompressed"')) +
-    sec(t(l, 'pf_immh'), paras(l, 'pf_immp')) + sec(t(l, 'pf_push'), paras(l, 'pf_pushp') + code(l, 'python3 _s/kolaboro.com/open/n34c-build.py budget HEAD\npython3 _s/kolaboro.com/open/n34c-build.py perf')) +
+    sec(t(l, 'pf_br'), paras(l, 'pf_brp') + (BR_ON ? '' : '<p><b>' + esc(t(l, 'pf_offp')) + '</b></p>') + table(t(l, 'pf_bth'), brows) + code(l, TB.kbx_n34c__s.k3)) +
+    sec(t(l, 'pf_immh'), paras(l, 'pf_immp')) + sec(t(l, 'pf_push'), paras(l, 'pf_pushp') + code(l, TB.kbx_n34c__s.k4)) +
     files(l, [['/open/perf-budget.json', bud ? bud.set : 'JSON'], ['/data/perf-budget.json', 'JSON'], ['/data/br/manifest.json', 'JSON'], ['/open/n34c-build.py', 'Python'], ['/open/pre-push.sh', 'sh']]) + '<p><a href="/engineering/page-weight/">' + esc(t(l, 'pf_pw')) + '</a> · <a href="' + pre(l) + '/engineering/early-hints/">Early Hints</a></p>';
   return page(shell, l, Object.assign(H(l, 'pf'), { path: '/engineering/performance/', body: b, updated: pb.measured }));
 }
@@ -397,7 +398,7 @@ export async function mcpTool(env, name, a) {
     for (let i = 0; i < rec.length; i++) { const [day, ch] = rec[i], e = { day, change: typeof ch === 'string' ? ch : 'changed', fields: typeof ch === 'string' ? null : ch, delta_file: ORIGIN + '/data/delta/' + day + '.json' };
       if (i < 6 && typeof ch !== 'string') { const d = await file(env, '/data/delta/' + day + '.json', 600000); const c = d && d.changed[a.slug]; if (c) { e.new_values = c.set; if (c.unset) e.removed_fields = c.unset; e.from_day = d.from.day; } }
       outD.push(e); }
-    return { body: { project: a.slug, page: ORIGIN + '/projects/' + a.slug + '/', snapshot_days: bp.days, changes: outD, note: 'Days are snapshot days of /data/named.json; a day lists changes since the previous snapshot day. Source: the signed daily deltas at https://kolaboro.com/data/delta/.' }, source: ORIGIN + '/data/delta/by-project.json' };
+    return { body: { project: a.slug, page: ORIGIN + '/projects/' + a.slug + '/', snapshot_days: bp.days, changes: outD, note: TB.kbx_n34c__s.k5 }, source: ORIGIN + '/data/delta/by-project.json' };
   }
   if (name === 'project_evidence') {
     if (!slugOk(a.slug)) return { err: 'slug must be lowercase letters, digits and hyphens' };
@@ -436,7 +437,7 @@ async function mcPage(env, shell, l) {
   const rows = TL.map(x => '<tr><td><code dir="ltr">' + esc(x.name) + '</code>' + (v2.has(x.name) ? ' <b class="ok">v2</b>' : '') + '</td><td>' + esc(x.title) + '</td><td dir="ltr" class="k-xs">' + esc(Object.keys((x.inputSchema || {}).properties || {}).join(', ')) + '</td></tr>');
   const tr = ts ? ts.results.map(r => '<tr><td><code dir="ltr">' + esc(r.tool) + '</code></td><td>' + okc(l, r.ok) + '</td><td class="k-xs">' + esc(r.detail || '') + '</td></tr>') : [];
   const b = kpis(l, [[esc(E.SERVER ? E.SERVER.version : '2'), t(l, 'mc_ver')], [nf(TL.length, l), t(l, 'mc_tools')], [nf(v2.size, l), t(l, 'mc_new')], [ts ? nf(ts.passed, l) + '/' + nf(ts.total, l) : '-', t(l, 'mc_tests')]]) +
-    sec(t(l, 'mc_list'), table(t(l, 'mc_th'), rows)) + sec(t(l, 'mc_try'), code(l, 'curl -s https://kolaboro.com/mcp -H "content-type: application/json" -H "accept: application/json, text/event-stream" \\\n  -d \'{"jsonrpc":"2.0","id":1,"method":"tools/call","params":{"name":"compare_markets","arguments":{"markets":["Dubai","Bali"]}}}\'')) +
+    sec(t(l, 'mc_list'), table(t(l, 'mc_th'), rows)) + sec(t(l, 'mc_try'), code(l, TB.kbx_n34c__s.k6)) +
     sec(t(l, 'mc_tests_h'), tr.length ? table(t(l, 'mc_tth'), tr) + '<p class="k-xs">' + esc(fill(t(l, 'mc_tat'), { d: ft(ts.at, l) })) + '</p>' : '<p class="mut">' + esc(t(l, 'na')) + '</p>') +
     sec(t(l, 'method'), paras(l, 'mc_p')) + '<p><a href="/docs/mcp/">' + esc(t(l, 'mc_docs')) + '</a> · <a href="/data/mcp-tests.json" dir="ltr">mcp-tests.json</a></p>';
   return page(shell, l, Object.assign(H(l, 'mc'), { path: '/engineering/mcp/', body: b, updated: '2026-11-21', type: 'TechArticle' }));
@@ -480,10 +481,10 @@ async function chartIframe(env, u) {
   const href = ORIGIN + pre(l) + '/m/' + ms + '/?utm_source=embed&utm_medium=chart';
   const tbl = kind === 'delays' && c.delays ? c.delays.buckets.map(b => '<tr><td>' + (b.to == null ? b.from + '+' : b.from + '-' + b.to) + '</td><td>' + b.n + '</td></tr>').join('') : c.disclosure ? Object.entries(c.disclosure).map(([k, v]) => '<tr><td>' + esc(k) + '</td><td>' + esc(v) + '</td></tr>').join('') : '';
   // served as application/xhtml+xml like /embed/v2/: the site's HTML layers (analytics, prefetch rules, ticker) leave it alone, so a page that embeds it gets no script at all
-  const html = '<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="' + l + '" xml:lang="' + l + '"' + (l === 'ar' ? ' dir="rtl"' : '') + '><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="robots" content="noindex"/><link rel="canonical" href="' + ORIGIN + pre(l) + '/m/' + ms + '/"/><title>' + esc(c.market) + ' | Kolaboro</title>' +
-    '<style>html,body{margin:0;background:' + (dark ? '#0F161D' : '#fff') + ';color:' + (dark ? '#E8ECEF' : '#17212B') + ';font:13px system-ui,sans-serif}main{padding:6px}svg{max-width:100%;height:auto;display:block}a{color:inherit}.s{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}</style></head><body><main>' + svg +
+  const html = TB.kbx_n34c__s.k7 + l + '" xml:lang="' + l + '"' + (l === 'ar' ? ' dir="rtl"' : '') + TB.kbx_n34c__s.k8 + ORIGIN + pre(l) + '/m/' + ms + '/"/><title>' + esc(c.market) + ' | Kolaboro</title>' +
+    '<style>html,body{margin:0;background:' + (dark ? '#0F161D' : '#fff') + ';color:' + (dark ? '#E8ECEF' : '#17212B') + TB.kbx_n34c__s.k9 + svg +
     '<table class="s"><caption>' + esc(c.market) + '</caption>' + tbl + '</table><p style="margin:2px 0 0;font-size:11px"><a href="' + esc(href) + '" target="_blank">' + esc(fill(t(l, 'ch_more'), { m: c.market })) + '</a></p></main></body></html>';
-  return new Response(html, { headers: { 'content-type': 'application/xhtml+xml; charset=utf-8', 'cache-control': 'public, max-age=3600', 'content-language': l, 'x-content-type-options': 'nosniff', 'x-robots-tag': 'noindex', 'content-security-policy': "default-src 'none'; style-src 'unsafe-inline'; img-src data:; frame-ancestors *; base-uri 'none'; form-action 'none'" } });
+  return new Response(html, { headers: { 'content-type': 'application/xhtml+xml; charset=utf-8', 'cache-control': 'public, max-age=3600', 'content-language': l, 'x-content-type-options': 'nosniff', 'x-robots-tag': 'noindex', 'content-security-policy': TB.kbx_n34c__s.k10 } });
 }
 async function chartApi(req, u, env) {
   const ms = /^\/api\/v1\/charts\/([a-z0-9-]{2,60})$/.exec(u.pathname)[1], q = u.searchParams, l = LANGS.includes(q.get('lang')) ? q.get('lang') : 'en';

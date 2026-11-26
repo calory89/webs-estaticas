@@ -15,6 +15,7 @@ import { e29t } from './kbx_e29_i18n.js';
 import { trustRender, head, crumbLd } from './kbx_trust.js';
 import { coName } from './kbx_hdate.js';
 import { REVIEWED, NEXT, METHOD, ACC, FOUNDERS, dots, reviewLine, accLine, errLine } from './kbx_e29_lines.js';
+import { TB } from './kbx_strings.js';
 export { methodLine, guideNext, aboutBox, ABOUT_CSS } from './kbx_e29_lines.js';
 
 const ORIGIN = 'https://kolaboro.com';
@@ -40,10 +41,7 @@ const ol = L => '<ol>' + L.map(x => '<li>' + esc(x) + '</li>').join('') + '</ol>
 const host = u => { try { return new URL(u).hostname.replace(/^www\./, '').toLowerCase(); } catch (e) { return ''; } };
 const slugC = s => String(s || '').normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');   // = kbx_seo.js slug (/countries/<c>/)
 
-const CSS29 = '<style id="k29e-css">.k29-tw{overflow-x:auto;border:1px solid var(--k-line);border-radius:var(--k-r-md,10px);background:var(--k-surface);margin:var(--k-4,16px) 0}.k29-tw:focus-visible{outline:3px solid var(--k-sea,#155C75)}.k29-tw table{width:100%;min-width:640px;border-collapse:collapse}.k29-tw th,.k29-tw td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--k-line)}.k29-tw th{font-size:var(--k-fs-xs,13px);font-weight:600}.k29-tw td small{color:var(--k-muted)}.k29-n{font-variant-numeric:tabular-nums;white-space:nowrap}' +
-  '.k29-card{border:1px solid var(--k-line);border-radius:var(--k-r-md,10px);padding:14px 16px;margin:14px 0;background:var(--k-surface)}.k29-card h3{margin:0 0 6px}.k29-card dl{margin:0}.k29-card dt{font-weight:600;margin-top:10px}.k29-card dd{margin:4px 0 0}.k29-card dd p{margin:4px 0}.k29-src{font-size:var(--k-fs-xs,13px);color:var(--k-muted)}.k29-src a{overflow-wrap:anywhere}' +
-  '.k29-rel{padding-inline-start:18px}.k29-rel a{display:inline-block;padding:10px 0;min-height:44px;box-sizing:border-box}' +
-  '@media (max-width:640px){.k29-tw table{min-width:0}.k29-tw thead{display:none}.k29-tw tr{display:block;border-bottom:1px solid var(--k-line);padding:8px 0}.k29-tw td{display:block;border:0;padding:3px 12px}.k29-tw td[data-l]::before{content:attr(data-l) ": ";font-weight:600}}</style>';
+/* CSS29: n40 k17, in /data/i18n/k17s.json */
 const EN_ONLY = /^\/(independence|registers|changelog|shipping|status|tools|countries\/?$|countries\/[a-z0-9-]+\/$|data-policy)/;   // pages served in English only
 const lk = (lang, h) => EN_ONLY.test(h) && !/^\/countries\/foreign-buyers\//.test(h) ? h : pre(lang) + h;
 const rel = (lang, L) => '<h2 id="related">' + esc(t(lang, 'rel')) + '</h2><ul class="k29-rel">' + L.map(([h, k]) => '<li><a href="' + lk(lang, h) + '">' + esc(t(lang, k)) + '</a></li>').join('') + '</ul>';
@@ -91,7 +89,7 @@ function editorialPage(lang) {
     '<h2 id="who">' + esc(t(lang, 'ep_who_h')) + '</h2>' + who +
     '<h2 id="review">' + esc(t(lang, 'ep_rv_h')) + '</h2>' + ul(t(lang, 'ep_rv')) + '<p class="k-small k-muted">' + fill(esc(t(lang, 'mv')), { v: METHOD.v, d: tm(METHOD.d, lang), n: tm(METHOD.next, lang) }) + ' <a href="' + pre(lang) + '/methods/transparency-score/">' + esc(t(lang, 'l_score')) + '</a> · <a href="' + pre(lang) + '/how-we-work/">' + esc(t(lang, 'l_hw')) + '</a></p>' +
     '<h2 id="corrections">' + esc(t(lang, 'ep_co_h')) + '</h2>' + ul(t(lang, 'ep_co')) + '<p><a href="' + pre(lang) + '/corrections/">' + esc(t(lang, 'l_corr')) + '</a></p>' +
-    '<h2 id="licence">' + esc(t(lang, 'ep_li_h')) + '</h2>' + ul(t(lang, 'ep_li')) + '<p><a href="' + pre(lang) + '/cite/">' + esc(t(lang, 'l_cite')) + '</a> · <a href="/data-policy/">' + esc(t(lang, 'l_dp')) + '</a> · <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener">CC BY 4.0</a></p>' +
+    '<h2 id="licence">' + esc(t(lang, 'ep_li_h')) + '</h2>' + ul(t(lang, 'ep_li')) + '<p><a href="' + pre(lang) + '/cite/">' + esc(t(lang, 'l_cite')) + '</a> · <a href="/data-policy/">' + esc(t(lang, 'l_dp')) + TB.kbx_e29__s.k0 +
     '<h2 id="not">' + esc(t(lang, 'ep_no_h')) + '</h2>' + ul(t(lang, 'ep_no')) +
     rel(lang, [['/how-we-work/', 'l_hw'], ['/sources/', 'l_src'], ['/team/', 'l_team'], ['/moderation/', 'l_mod'], ['/corrections/', 'l_corr'], ['/cite/', 'l_cite'], ['/changelog/', 'l_chg']]) + '</div></div></section></div>';
   const title = t(lang, 'ep_title'), desc = t(lang, 'ep_desc');
@@ -255,7 +253,7 @@ export async function handle(req, u, env, ctx, shell) {
         const k = lang + '|fb|' + (G ? G.v : '') + '|' + (SL ? SL.updated : ''); pg = BODY.get(k); if (!pg) { pg = foreignPage(lang, B, G, SL, cc); if (BODY.size > 300) BODY.clear(); BODY.set(k, pg); } }
     }
   } catch (e) { return null; }
-  return trustRender(lang, Object.assign({}, pg, { body: dots(pg.body).replace('<div class="kpg">', CSS29 + '<div class="kpg">') }), shell);
+  return trustRender(lang, Object.assign({}, pg, { body: dots(pg.body).replace('<div class="kpg">', TB.kbx_e29__s.CSS29 + '<div class="kpg">') }), shell);
 }
 // sitemap rows (kbx_trust.js sitemapXml): path -> lastmod
 export { editorialPage, workPage, sourcesPage, protectPage, foreignPage, sourcesData, cronText, JOBS, buyMods };   // for the local test

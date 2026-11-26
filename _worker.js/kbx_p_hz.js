@@ -1,3 +1,4 @@
+import { TB } from './kbx_strings.js';
 // Natural hazards at a point, read straight from open sources. No account, no key, no imports: the same file runs in the
 // worker (kbx_p.js, live pins) and in the GitHub Actions batch (tools/kolaboro-hazards, tracked projects).
 // Every function returns { ok, ...figures, source, query, limits } or { ok: false, why }. Nothing is estimated or filled in.
@@ -137,8 +138,8 @@ function demTile(lat, lng) {
 }
 export async function elevation(lat, lng) {
   const url = demTile(lat, lng);
-  const src = { name: 'Copernicus DEM GLO-30 (ESA / European Union), AWS Open Data', url: 'https://registry.opendata.aws/copernicus-dem/', license: 'Copernicus DEM licence: free use with attribution. Produced using Copernicus WorldDEM-30 (c) DLR e.V. 2010-2014 and (c) Airbus Defence and Space GmbH 2014-2018, provided under COPERNICUS by the European Union and ESA.' };
-  const limits = 'A surface model, not bare ground: on a built or wooded spot it measures the top of roofs and trees. One cell is about 30 m. Data acquired 2011 to 2015. Absolute vertical accuracy is specified as better than 4 m (90%). Heights are above the EGM2008 geoid, roughly mean sea level, not above the local tide datum.';
+  const src = { name: 'Copernicus DEM GLO-30 (ESA / European Union), AWS Open Data', url: 'https://registry.opendata.aws/copernicus-dem/', license: TB.kbx_p_hz__s.k0 };
+  const limits = TB.kbx_p_hz__s.k1;
   try {
     const m = await meta(url, { cacheTtl: 86400 * 30, cacheEverything: true });
     const p = await pixel(m, lat, lng);
@@ -155,7 +156,7 @@ const AQ = 'https://aqueduct.wridata.org/AqueductFloods20/';
 const AQF = { river: 'inunriver_historical_000000000WATCH_1980_rp00100.tif', coast: 'inuncoast_historical_nosub_hist_rp0100_0.tif' };
 export async function flood(lat, lng) {
   const src = { name: 'WRI Aqueduct Floods Hazard Maps v2 (World Resources Institute)', url: 'https://www.wri.org/data/aqueduct-floods-hazard-maps', license: 'CC BY 4.0' };
-  const limits = 'A global model on a grid of about 1 km (30 arc-seconds): one value covers a whole neighbourhood, so a plot on a hill inside a flooded cell can be dry, and a drained plot in a dry cell can still flood. Flood defences are not modelled. Riverine baseline uses 1960 to 1999 climate (WATCH), coastal baseline is 2010 sea level without subsidence. Flash floods from heavy rain on small streams and drainage failures are not in this model.';
+  const limits = TB.kbx_p_hz__s.k2;
   const one = async k => {
     const url = AQ + AQF[k];
     const m = await meta(url, { cacheTtl: 86400 * 30, cacheEverything: true });
@@ -164,15 +165,15 @@ export async function flood(lat, lng) {
   };
   try {
     const [river, coast] = await Promise.all([one('river'), one('coast')]);
-    return { ok: true, return_period_years: 100, river_depth_m: river, coast_depth_m: coast, cell_m: 1000, note: 'null means the model has no value in this cell (for rivers: no modelled river network there; for the coast: outside the coastal model). 0 means modelled and not flooded.', source: src, query: [AQ + AQF.river, AQ + AQF.coast], limits };
+    return { ok: true, return_period_years: 100, river_depth_m: river, coast_depth_m: coast, cell_m: 1000, note: TB.kbx_p_hz__s.k3, source: src, query: [AQ + AQF.river, AQ + AQF.coast], limits };
   } catch (e) { return { ok: false, why: String(e.message || e).slice(0, 80), source: src, query: [AQ + AQF.river, AQ + AQF.coast], limits }; }
 }
 
 // ---------- 3. Earthquakes: USGS ComCat (FDSN event service) ----------
 export async function quakes(lat, lng, radiusKm = 100) {
-  const q = 'https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=1900-01-01&minmagnitude=5&orderby=magnitude&limit=2000&latitude=' + lat.toFixed(3) + '&longitude=' + lng.toFixed(3) + '&maxradiuskm=' + radiusKm;
+  const q = TB.kbx_p_hz__s.k4 + lat.toFixed(3) + '&longitude=' + lng.toFixed(3) + '&maxradiuskm=' + radiusKm;
   const src = { name: 'USGS ANSS Comprehensive Earthquake Catalog (ComCat), FDSN event web service', url: 'https://earthquake.usgs.gov/fdsnws/event/1/', license: 'US Government work, public domain' };
-  const limits = 'Counts recorded events, not shaking at your plot or the chance of a future one. The catalogue is incomplete for older and smaller events: before the 1960s many M5 to M6 events in remote regions are missing. Depth matters: a deep M6 is often felt less than a shallow M5. For design ground shaking, ask for the national seismic code value for the site.';
+  const limits = TB.kbx_p_hz__s.k5;
   try {
     const r = await get(q, { cf: { cacheTtl: 86400, cacheEverything: true } }, 20000);
     if (!r.ok) return { ok: false, why: 'USGS answered ' + r.status, source: src, query: q, limits };
@@ -190,7 +191,7 @@ export async function tsunami(lat, lng, radiusKm = 50) {
   const dy = radiusKm / 111, dx = radiusKm / (111 * Math.max(0.2, Math.cos(R(lat))));
   const q = 'https://www.ngdc.noaa.gov/hazel/hazard-service/api/v1/tsunamis/runups?minLatitude=' + (lat - dy).toFixed(2) + '&maxLatitude=' + (lat + dy).toFixed(2) + '&minLongitude=' + (lng - dx).toFixed(2) + '&maxLongitude=' + (lng + dx).toFixed(2);
   const src = { name: 'NOAA NCEI / WDS Global Historical Tsunami Database', url: 'https://www.ngdc.noaa.gov/hazard/tsu_db.shtml', license: 'US Government work, public domain. doi:10.7289/V5PN93H7' };
-  const limits = 'Observed run-ups: places where a tsunami reached and someone measured or reported the height. No record nearby does not mean no risk; it can mean nobody measured. Heights are local and can vary a lot along one bay.';
+  const limits = TB.kbx_p_hz__s.k6;
   try {
     const r = await get(q, { cf: { cacheTtl: 86400 * 7, cacheEverything: true } }, 20000);
     if (!r.ok) return { ok: false, why: 'NOAA answered ' + r.status, source: src, query: q, limits };
@@ -207,10 +208,10 @@ export async function tsunami(lat, lng, radiusKm = 50) {
 // ---------- 5. Volcanoes: Smithsonian Global Volcanism Program, Volcanoes of the World ----------
 export async function volcano(lat, lng, radiusKm = 100) {
   const dy = radiusKm / 111, dx = radiusKm / (111 * Math.max(0.2, Math.cos(R(lat))));
-  const q = 'https://webservices.volcano.si.edu/geoserver/GVP-VOTW/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=GVP-VOTW:Smithsonian_VOTW_Holocene_Volcanoes&outputFormat=application/json&bbox=' +
+  const q = TB.kbx_p_hz__s.k7 +
     [(lng - dx).toFixed(2), (lat - dy).toFixed(2), (lng + dx).toFixed(2), (lat + dy).toFixed(2)].join(',');
   const src = { name: 'Smithsonian Institution Global Volcanism Program, Volcanoes of the World (Holocene volcanoes)', url: 'https://volcano.si.edu/', license: 'Cite as: Global Volcanism Program, Smithsonian Institution, Volcanoes of the World database' };
-  const limits = 'Distance to the summit point of each volcano active in the last 11,700 years. Ash fall, lahars (mud flows down river valleys) and exclusion zones depend on wind, terrain and the eruption, not on distance alone. For an official hazard zone, check the national volcano agency map (in Indonesia: PVMBG, magma.esdm.go.id).';
+  const limits = TB.kbx_p_hz__s.k8;
   try {
     const r = await get(q, { cf: { cacheTtl: 86400 * 7, cacheEverything: true } }, 20000);
     if (!r.ok) return { ok: false, why: 'GVP answered ' + r.status, source: src, query: q, limits };
@@ -234,7 +235,7 @@ function segKm(lat, lng, a, b) {   // point to segment on a local flat projectio
 export async function coast(lat, lng, radiusKm = 10, opt = {}) {
   const ql = '[out:json][timeout:18];way(around:' + radiusKm * 1000 + ',' + lat.toFixed(5) + ',' + lng.toFixed(5) + ')[natural=coastline];out geom;';
   const src = { name: 'OpenStreetMap coastline (natural=coastline), queried with the Overpass API', url: 'https://www.openstreetmap.org/copyright', license: 'ODbL, (c) OpenStreetMap contributors' };
-  const limits = 'Straight-line distance to the mapped high-water line, as drawn by OpenStreetMap volunteers. Accuracy is usually tens of metres on popular coasts and can be worse elsewhere. Rivers, lagoons and estuaries are not coastline here.';
+  const limits = TB.kbx_p_hz__s.k9;
   const query = 'https://overpass-turbo.eu/?Q=' + encodeURIComponent(ql) + '&R';
   const one = async ep => {   // both public servers are asked at once; the first valid answer wins (one is often slow)
     const r = await get(ep, { method: 'POST', body: 'data=' + encodeURIComponent(ql), headers: { 'content-type': 'application/x-www-form-urlencoded' } }, opt.overpassMs || 9000);
@@ -261,7 +262,7 @@ export async function coast(lat, lng, radiusKm = 10, opt = {}) {
 // cut into 10 degree tiles published at /data/coast/<lon>_<lat>.json (every tile exists, open ocean ones are empty, so a 404 or a missing tile is an error); 36 column files /data/coast/<lon>.json (quantised TopoJSON units, delta-encoded lines).
 // Coarse on purpose: the outline is generalised and quantised to a few hundred metres, so the result is given in bands.
 const NE_SRC = { name: 'Natural Earth 1:10m land outline (fallback, used because no OpenStreetMap server answered)', url: 'https://www.naturalearthdata.com/about/terms-of-use/', license: 'Public domain (Natural Earth), redistributed by world-atlas 2.0.2' };
-const NE_LIMITS = 'A generalised world outline at 1:10 million, accurate to about 1 km and simplified around small bays, islands and river mouths. We show it only in bands (under 1 km, or to the nearest 0.5 km) and only when the detailed OpenStreetMap coastline could not be read.';
+/* NE_LIMITS: n40 k17, in /data/i18n/k17s.json */
 async function neCoast(lat, lng, radiusKm, opt) {
   const tx = Math.floor((lng + 180) / 10) * 10 - 180, ty = Math.floor((lat + 90) / 10) * 10 - 90;
   const path = '/data/coast/' + tx + '.json';   // one file per 10 degree longitude column, holding its 18 tiles (5 Nov 2026: fewer files for the Pages 20,000 file limit)
@@ -275,9 +276,9 @@ async function neCoast(lat, lng, radiusKm, opt) {
     let x = e[0], y = e[1], prev = { lon: ox + x * sx, lat: oy + y * sy };
     for (let i = 2; i < e.length; i += 2) { x += e[i]; y += e[i + 1]; const cur = { lon: ox + x * sx, lat: oy + y * sy }; best = Math.min(best, segKm(lat, lng, prev, cur)); prev = cur; }
   }
-  if (!(best <= radiusKm)) return { ok: true, approx: true, within_km: radiusKm, distance_m: null, beyond: true, source: NE_SRC, query, limits: NE_LIMITS };
-  return best < 1 ? { ok: true, approx: true, within_km: radiusKm, distance_m: null, under_m: 1000, source: NE_SRC, query, limits: NE_LIMITS }
-    : { ok: true, approx: true, within_km: radiusKm, distance_m: Math.round(best * 2) * 500, source: NE_SRC, query, limits: NE_LIMITS };
+  if (!(best <= radiusKm)) return { ok: true, approx: true, within_km: radiusKm, distance_m: null, beyond: true, source: NE_SRC, query, limits: TB.kbx_p_hz__s.NE_LIMITS };
+  return best < 1 ? { ok: true, approx: true, within_km: radiusKm, distance_m: null, under_m: 1000, source: NE_SRC, query, limits: TB.kbx_p_hz__s.NE_LIMITS }
+    : { ok: true, approx: true, within_km: radiusKm, distance_m: Math.round(best * 2) * 500, source: NE_SRC, query, limits: TB.kbx_p_hz__s.NE_LIMITS };
 }
 
 export const SOURCES = ['elevation', 'flood', 'quakes', 'tsunami', 'volcano', 'coast'];

@@ -51,7 +51,7 @@ function cellHtml(rd, c, lang) {
 }
 function tableHtml(rd, ids, lang, quotes) {
   const cols = t(lang, 'cols');
-  return '<div class="k-table-wrap ksr-tw"><table class="k-table k-table--dense k-table--stack ksr"><thead><tr>' + cols.map(c => '<th scope="col">' + esc(c) + '</th>').join('') + '</tr></thead><tbody>' +
+  return TB.kbx_rules__s.k0 + cols.map(c => '<th scope="col">' + esc(c) + '</th>').join('') + '</tr></thead><tbody>' +
     ids.map(i => { const j = rd.rules[i]; return '<tr id="r-' + esc(i) + '"><th scope="row" data-label="' + esc(cols[0]) + '">' + ltr(j.name) + '</th>' + CELLS.map((c, n) => '<td data-label="' + esc(cols[n + 1]) + '">' + cellHtml(rd, quotes ? j[c] : Object.assign({}, j[c], { q: null }), lang) + '</td>').join('') + '</tr>'; }).join('') + '</tbody></table></div>';
 }
 export const RULES_CSS = '.ksr-tw{margin:12px 0;overflow-x:auto}.ksr th[scope=row]{min-width:6.5em;font-weight:600}.ksr td{min-width:9.5em;vertical-align:top;font-size:var(--k-fs-sm,15px)}.ksr .k-src{display:flex;white-space:normal;margin-top:4px;width:fit-content;max-width:100%}.ksr-t{display:block}.ksr-q{display:block;margin:4px 0;color:var(--k-muted,var(--muted));font-size:var(--k-fs-xs,13px);unicode-bidi:isolate}' +
@@ -77,7 +77,7 @@ export function pageBody(rd, lang) {   // exported for the local test
   const used = new Set(); for (const i of order) for (const c of CELLS) for (const s of (rd.rules[i][c].src || [])) used.add(s);
   const srcs = Object.keys(rd.sources).filter(k => used.has(k)).map(k => { const s = rd.sources[k]; return '<li><a href="' + esc(s.u) + '" rel="noopener" target="_blank">' + ltr(s.n) + '</a> <span class="k-muted">' + (s.d ? esc(String(t(lang, 'dk')[s.dk || 'page']).replace('{d}', s.dk === 'edition' ? s.d.slice(0, 4) : fdt(s.d, lang))) + ', ' : '') + esc(String(t(lang, 'read')).replace('{d}', fdt(s.read, lang))) + '</span></li>'; }).join('');
   const nr = t(lang, 'p_not'), nots = (rd.not_read || []).map(n => '<li>' + ltr(n.place) + ': ' + esc(nr[n.place] || n.why) + '</li>').join('');
-  return '<div class="ksr-pg"><section class="k-sec"><div class="k-wrap"><div class="k-phead"><p class="k-crumb"><a href="' + pre(lang) + '/">Kolaboro</a> / ' + esc(t(lang, 'crumb')) + '</p><h1>' + esc(t(lang, 'p_title')) + '</h1><p class="lead">' + esc(t(lang, 'p_lead')) + '</p>' +
+  return TB.kbx_rules__s.k1 + pre(lang) + '/">Kolaboro</a> / ' + esc(t(lang, 'crumb')) + '</p><h1>' + esc(t(lang, 'p_title')) + '</h1><p class="lead">' + esc(t(lang, 'p_lead')) + '</p>' +
     '<p class="k-small k-muted">' + esc(String(t(lang, 'p_upd')).replace('{d}', fdt(rd.updated, lang))) + '</p></div>' +
     '<h2>' + esc(t(lang, 'p_how_h')) + '</h2><ul>' + t(lang, 'p_how').map(s => '<li>' + esc(s) + '</li>').join('') + '</ul>' +
     '<h2 id="rules">' + esc(t(lang, 'p_t_h')) + '</h2>' + tableHtml(rd, order, lang, true) +
@@ -85,7 +85,7 @@ export function pageBody(rd, lang) {   // exported for the local test
     '<h2 id="sources">' + esc(t(lang, 'p_src_h')) + '</h2><p>' + esc(t(lang, 'p_src_d')) + '</p><ul class="ksr-src">' + srcs + '</ul>' +
     (nots ? '<h2>' + esc(t(lang, 'p_not_h')) + '</h2><ul>' + nots + '</ul>' : '') +
     '<h2>' + esc(t(lang, 'p_where')) + '</h2><p>' + esc(t(lang, 'p_where_t')) + ' <a href="' + pre(lang) + '/projects/">kolaboro.com/projects</a></p>' +
-    '<p class="k-small"><a class="k-src" href="/api/x/short-let-rules">' + esc(t(lang, 'p_json')) + '</a> <a class="k-src" href="/data/short-let-rules.json">/data/short-let-rules.json</a> <span class="k-muted">' + esc(t(lang, 'p_lic')) + '</span></p></div></section></div>';
+    '<p class="k-small"><a class="k-src" href="/api/x/short-let-rules">' + esc(t(lang, 'p_json')) + TB.kbx_rules__s.k2 + esc(t(lang, 'p_lic')) + '</span></p></div></section></div>';
 }
 export async function page(req, u, env, ctx, shell) {
   const m = u.pathname.match(PAGE_RX); if (!m || !shell) return null;

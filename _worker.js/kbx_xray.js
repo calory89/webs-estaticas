@@ -353,7 +353,7 @@ async function cardHosting(X) {
     net = [net, org].filter(Boolean).join(' ');
   }
   const cdn = net && CDN.test(net);
-  if (cdn) c.facts.push({ k: 'Note', key: 'f_hs_note', v: 'This is a large hosting or CDN network: its country says where the network is registered, not where the developer is.' , vk: 'v_hs_cdn' });
+  if (cdn) c.facts.push({ k: 'Note', key: 'f_hs_note', v: TB.kbx_xray__s.k0 , vk: 'v_hs_cdn' });
   c.summary = host + ' resolves to ' + ips[0] + (net ? ' on ' + clip(net, 60) : '') + (ctry ? ', a network registered in ' + ctry : '') + '.';
   c.sk = 'hs_ip'; c.sa = { d: host, ip: ips[0], net: clip(net || '', 60), c: ctry || '' };
   return c;
@@ -433,7 +433,7 @@ async function runXray(inp, opts, emit) {
   X.ix = ix; X.named = Promise.resolve(ix);
   // conflict of interest: no X-ray of projects in the founder's market
   if (ix && coiHit(ix, inp)) {
-    const c = { id: 'coi', title: 'Not reviewed: conflict of interest', status: 'skipped', sk: 'coi', summary: 'We do not review or name projects in this market, because a Kolaboro founder develops a project there. See our independence policy.', links: [{ label: 'Independence policy', key: 'l_indep', url: ORIGIN + '/independence' }], ms: 0, where: 'edge', sources: [] };
+    const c = { id: 'coi', title: 'Not reviewed: conflict of interest', status: 'skipped', sk: 'coi', summary: TB.kbx_xray__s.k1, links: [{ label: 'Independence policy', key: 'l_indep', url: ORIGIN + '/independence' }], ms: 0, where: 'edge', sources: [] };
     emit({ type: 'plan', checks: [{ id: 'coi', title: c.title }], input: inp }); emit({ type: 'card', card: c });
     return finish([c], inp, started, t0, opts, emit, allSources);
   }
@@ -502,10 +502,10 @@ async function finish(cards, inp, started, t0, opts, emit, allSources) {
   const proof = { colo: (req.cf && req.cf.colo) || null, country: (req.cf && req.cf.country) || null, runtime: 'Cloudflare Workers (V8 isolate at the edge)', started_at: started, finished_at: new Date().toISOString(), total_ms: Date.now() - t0,
     sources: srcList.length, hosts: [...new Set(srcList.map(s => { try { return new URL(s.url).hostname; } catch (e) { return ''; } }).filter(Boolean))], bytes_read: srcList.reduce((a, s) => a + (s.bytes || 0), 0),
     cards: cards.map(c => ({ id: c.id, status: c.status, ms: c.ms, where: c.where, sources: (c.sources || []).length, sha256: c.sha256 })),
-    seal: { root_sha256: root, lines, method: 'root_sha256 = SHA-256 of the sorted lines joined by a newline; a card line is "card_id SHA-256(JCS(card without its sha256 field))", the meta line hashes JCS(meta). JCS = RFC 8785 canonical JSON.' },
+    seal: { root_sha256: root, lines, method: TB.kbx_xray__s.k2 },
     ai: opts.desk ? 'The existing desk review ran (partner key).' : 'No model was called by the X-ray. Every card is a fixed rule, a public source or our own data.' };
   const res = { version: VERSION, root, url: ORIGIN + '/x/' + root + '/', meta: metaObj, cards, proof, lang: opts.lang || 'en',
-    disclaimer: 'Every item is what the named source returned or what the page says, with its link. "Not found" or "not published" is not proof of a problem, and "found" is not proof the project is sound. A check at the land office, and on site (site visits on request: we confirm a local agent for your location before you pay), covers what no website can.' };
+    disclaimer: TB.kbx_xray__s.k3 };
   // OpenTimestamps through the existing stamp path (Bitcoin calendars), best effort
   try {
     const r = await kbApi(new Request(ORIGIN + '/api/kb/stamp', { method: 'POST', headers: { 'content-type': 'application/json', 'cf-connecting-ip': req.headers.get('cf-connecting-ip') || 'x' }, body: JSON.stringify({ hash: root, source: 'xray' }) }), new URL(ORIGIN + '/api/kb/stamp'), env, ctx);
@@ -573,13 +573,13 @@ async function v1(req, u, env, ctx) {
 function openapi() {
   const card = { type: 'object', required: ['id', 'title', 'status'], properties: { id: { type: 'string' }, title: { type: 'string' }, status: { enum: ['ok', 'found', 'not_found', 'not_published', 'unavailable', 'needs_key', 'skipped', 'error'] }, summary: { type: 'string' }, facts: { type: 'array', items: { type: 'object', properties: { k: { type: 'string' }, v: { type: 'string' }, q: { type: 'string', description: 'literal sentence from the page' }, src: { type: 'string', format: 'uri' } } } }, links: { type: 'array' }, gaps: { type: 'array', items: { type: 'string' } }, sources: { type: 'array', items: { type: 'object', properties: { name: { type: 'string' }, url: { type: 'string' }, status: { type: 'integer' }, bytes: { type: 'integer' }, sha256: { type: 'string' }, ms: { type: 'integer' } } } }, ms: { type: 'integer' }, where: { type: 'string' }, sha256: { type: 'string' } } };
   const result = { type: 'object', properties: { version: { type: 'string' }, root: { type: 'string', pattern: '^[0-9a-f]{64}$' }, url: { type: 'string', format: 'uri' }, meta: { type: 'object' }, cards: { type: 'array', items: { $ref: '#/components/schemas/XrayCard' } }, proof: { type: 'object' }, disclaimer: { type: 'string' } } };
-  return { openapi: '3.1.0', info: { title: 'Kolaboro Project X-ray API', version: '2026-11-07', description: 'Everything that can be known for free about an off-plan property project from its website or name: our database match, what the page says (literal quotes), Internet Archive history, domain RDAP, certificate transparency, hosting network, official registers and fixed-rule statements to check. No AI is called unless a partner key asks for the desk review. Every result is sealed by a SHA-256 root and can be fetched again at /x/{root}.json or as a W3C verifiable credential at /x/{root}/vc.', license: { name: 'CC BY 4.0', identifier: 'CC-BY-4.0' } },
+  return { openapi: '3.1.0', info: { title: 'Kolaboro Project X-ray API', version: '2026-11-07', description: TB.kbx_xray__s.k4, license: { name: 'CC BY 4.0', identifier: 'CC-BY-4.0' } },
     servers: [{ url: ORIGIN }], components: { securitySchemes: { apiKey: { type: 'apiKey', in: 'header', name: 'x-api-key', description: 'Optional. Free key from ' + ORIGIN + '/api-keys/. Needed only for desk: true.' } }, schemas: { XrayCard: card, XrayResult: result } },
     paths: {
       '/api/v1/xray': { post: { summary: 'Run a Project X-ray', security: [{}, { apiKey: [] }], requestBody: { required: true, content: { 'application/json': { schema: { type: 'object', properties: { url: { type: 'string', description: 'project or developer website' }, q: { type: 'string', description: 'project or developer name' }, desk: { type: 'boolean', description: 'also run the desk review (partner key required)' }, lang: { enum: LANGS } } }, examples: { url: { value: { url: 'https://www.teus-group.com/amani-melasti' } }, name: { value: { q: 'Amani Melasti' } } } } } }, responses: { 200: { description: 'X-ray result', content: { 'application/json': { schema: { $ref: '#/components/schemas/XrayResult' } } } }, 400: { description: 'empty or invalid input' }, 401: { description: 'desk requested without a valid key' }, 429: { description: 'hourly limit' } } } },
-      '/api/kb/xray': { get: { summary: 'Run a Project X-ray as a Server-Sent Events stream (used by /check/)', parameters: [{ name: 'u', in: 'query', required: true, schema: { type: 'string' } }, { name: 'lang', in: 'query', schema: { enum: LANGS } }], responses: { 200: { description: 'text/event-stream: {type:"plan"}, one {type:"card", card} per check as it finishes, then {type:"done", root, url, proof}', content: { 'text/event-stream': { schema: { type: 'string' } } } } } } },
+      '/api/kb/xray': { get: { summary: 'Run a Project X-ray as a Server-Sent Events stream (used by /check/)', parameters: [{ name: 'u', in: 'query', required: true, schema: { type: 'string' } }, { name: 'lang', in: 'query', schema: { enum: LANGS } }], responses: { 200: { description: TB.kbx_xray__s.k5, content: { 'text/event-stream': { schema: { type: 'string' } } } } } } },
       '/x/{root}.json': { get: { summary: 'A sealed X-ray again', parameters: [{ name: 'root', in: 'path', required: true, schema: { type: 'string', pattern: '^[0-9a-f]{64}$' } }], responses: { 200: { description: 'the stored result', content: { 'application/json': { schema: { $ref: '#/components/schemas/XrayResult' } } } }, 404: { description: 'not stored here' } } } },
-      '/x/{root}/vc': { get: { summary: 'The sealed X-ray as a W3C Verifiable Credential (Data Integrity, eddsa-jcs-2022, issuer did:web:kolaboro.com)', parameters: [{ name: 'root', in: 'path', required: true, schema: { type: 'string' } }], responses: { 200: { description: 'application/vc+ld+json' } } } },
+      '/x/{root}/vc': { get: { summary: TB.kbx_xray__s.k6, parameters: [{ name: 'root', in: 'path', required: true, schema: { type: 'string' } }], responses: { 200: { description: 'application/vc+ld+json' } } } },
       '/api/kb/xray/stats': { get: { summary: 'Real number of sealed X-rays for a domain', parameters: [{ name: 'd', in: 'query', required: true, schema: { type: 'string' } }], responses: { 200: { description: '{domain, xrays}' } } } }
     } };
 }
@@ -587,7 +587,7 @@ async function vc(root, env) {
   const d = await load(root, env); if (!d) return out({ error: 'not_found' }, 404);
   const { issue } = await import('./kbx_acct.js');
   const at = String(d.proof && d.proof.finished_at || d.meta.started_at).replace(/\.\d+Z$/, 'Z');
-  const doc = { '@context': ['https://www.w3.org/ns/credentials/v2'], id: ORIGIN + '/x/' + root + '/vc', type: ['VerifiableCredential', 'KolaboroProjectXray'], name: 'Kolaboro Project X-ray', description: 'What free public sources and the project page said at the time of the X-ray, sealed by a SHA-256 root. Not a verdict on any project or company.',
+  const doc = { '@context': ['https://www.w3.org/ns/credentials/v2'], id: ORIGIN + '/x/' + root + '/vc', type: ['VerifiableCredential', 'KolaboroProjectXray'], name: 'Kolaboro Project X-ray', description: TB.kbx_xray__s.k7,
     issuer: { id: 'did:web:kolaboro.com', name: 'Kolaboro' }, validFrom: at,
     credentialSubject: { id: d.url, type: 'ProjectXray', rootSha256: root, input: d.meta.input, cards: d.cards.map(c => ({ id: c.id, status: c.status, sha256: c.sha256, sources: (c.sources || []).map(s => ({ url: s.url, sha256: s.sha256 || null })) })), sealLines: d.proof.seal.lines, disclaimer: d.disclaimer } };
   const v = await issue(env, doc, at); if (!v) return out({ error: 'signing_unavailable' }, 503);

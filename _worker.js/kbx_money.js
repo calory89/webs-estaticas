@@ -78,10 +78,10 @@ function shortletHtml(sl, x, lang) {
   const br = ['0-1', '2', '3+'].filter(g => e.br && ok(e.br[g])).map(g => [g, e.br[g]]);
   if (br.length) {
     const th = t(lang, 'sl_br_h');
-    h += '<div class="k-table-wrap kmo-tw"><table class="k-table k-table--dense"><caption class="k-small k-muted">' + esc(t(lang, 'sl_br')) + '</caption><thead><tr><th scope="col">' + esc(th[0]) + '</th><th scope="col" class="k-n">' + esc(th[1]) + '</th><th scope="col" class="k-n">' + esc(th[2]) + '</th></tr></thead><tbody>' +
+    h += TB.kbx_money__s.k0 + esc(t(lang, 'sl_br')) + '</caption><thead><tr><th scope="col">' + esc(th[0]) + '</th><th scope="col" class="k-n">' + esc(th[1]) + '</th><th scope="col" class="k-n">' + esc(th[2]) + '</th></tr></thead><tbody>' +
       br.map(([g, v]) => '<tr><th scope="row">' + esc(g === '0-1' ? t(lang, 'sl_br0') : g) + '</th><td class="k-n">' + ltr(fnum(v.n, lang)) + '</td><td class="k-n">' + ltr(P(v.p50)) + '</td></tr>').join('') + '</tbody></table></div>';
   }
-  h += '<p class="k-small k-muted">' + esc(t(lang, 'sl_lim')) + ' ' + src + ' <a class="k-src" href="https://insideairbnb.com/data-assumptions/" rel="noopener" target="_blank">' + esc(t(lang, 'sl_method')) + '</a></p>';
+  h += '<p class="k-small k-muted">' + esc(t(lang, 'sl_lim')) + ' ' + src + TB.kbx_money__s.k1 + esc(t(lang, 'sl_method')) + '</a></p>';
   return h;
 }
 
@@ -99,7 +99,7 @@ function soldHtml(sn, x, lang) {
   h += '<p class="kfact">' + fill(lang, 'so_reg', { reg: H(regA), a: fdt(r.from, lang), b: fdt(r.to, lang) }) + '</p>';
   const th = t(lang, 'so_th');
   const rows = (ROWS[r.reg] || []).filter(([k]) => r[k] && r[k].n);
-  h += '<div class="k-table-wrap kmo-tw"><table class="k-table k-table--dense"><thead><tr><th scope="col">' + esc(th[0]) + '</th><th scope="col" class="k-n">' + esc(th[1]) + '</th><th scope="col" class="k-n">' + esc(th[2]) + '<br><small class="k-muted">' + esc(th[3]) + '</small></th></tr></thead><tbody>' +
+  h += TB.kbx_money__s.k2 + esc(th[0]) + '</th><th scope="col" class="k-n">' + esc(th[1]) + '</th><th scope="col" class="k-n">' + esc(th[2]) + '<br><small class="k-muted">' + esc(th[3]) + '</small></th></tr></thead><tbody>' +
     rows.map(([k, lbl]) => { const s = r[k]; return '<tr><th scope="row">' + esc(t(lang, lbl)) + '</th><td class="k-n">' + ltr(fnum(s.n, lang)) + '</td><td class="k-n">' + (ok(s) ? '<b>' + ltr(P(s.p50)) + '</b><br><small class="k-muted">' + ltr(P(s.p25)) + ' - ' + ltr(P(s.p75)) + '</small>' : '<span class="k-muted">-</span>') + '</td></tr>'; }).join('') + '</tbody></table></div>';
   const L = [];
   if (r.reg === 'dvf') {
@@ -143,12 +143,12 @@ export async function handle(req, u, env, ctx) {
   try {
     const md = await moneyData(env), sl = md.sl || {}, sn = md.sn || {};
     const m = u.pathname.match(/^\/api\/x\/money\/([A-Za-z0-9-]{3,20})\/?$/);
-    if (!m) return out({ what: 'Short lets (Inside Airbnb) and recorded sale prices (official registers) within 1 km of each pinned named project.', short_lets: { updated: sl.updated, source: sl.source, method: sl.method, datasets: sl.datasets, summary: sl.summary, projects: Object.keys(sl.projects || {}).filter(k => !(sl.projects[k] || {}).outside) },
+    if (!m) return out({ what: TB.kbx_money__s.k3, short_lets: { updated: sl.updated, source: sl.source, method: sl.method, datasets: sl.datasets, summary: sl.summary, projects: Object.keys(sl.projects || {}).filter(k => !(sl.projects[k] || {}).outside) },
       recorded_sales: { updated: sn.updated, registers: sn.registers, method: sn.method, not_covered: sn.not_covered, summary: sn.summary, projects: Object.keys(sn.projects || {}) }, per_project: ORIGIN + '/api/x/money/<ID>', files: [ORIGIN + '/data/short-lets.json', ORIGIN + '/data/sales-nearby.json'] });
     const id = m[1].toUpperCase(), a = (sl.projects || {})[id], b = (sn.projects || {})[id];
     if (!a && !b && md.ru) { const { data } = await import('./kbx_named.js'); const ix = await data(env).catch(() => null); const x = ix && ix.byId.get(id); const rj = x ? rulesJson(md.ru, x, null) : null;
       if (rj) return out({ id, name: x.n, url: ORIGIN + '/projects/' + x.s + '/#money', short_lets: null, recorded_sales: null, short_let_rules: rj }); }
-    if (!a && !b) return out({ id, error: 'not_covered', note: 'Only projects with a plot-level pin in a city covered by Inside Airbnb or by an official open sales register are covered.' }, 404);
+    if (!a && !b) return out({ id, error: 'not_covered', note: TB.kbx_money__s.k4 }, 404);
     const { data } = await import('./kbx_named.js'); const ix = await data(env).catch(() => null); const x = ix && ix.byId.get(id);
     return out({ id, name: x ? x.n : null, url: x ? ORIGIN + '/projects/' + x.s + '/#money' : null, radius_m: 1000,
       short_lets: a && !a.outside ? Object.assign({ dataset: Object.assign({ path: a.ds }, (sl.datasets || {})[a.ds] || {}), source: sl.source, updated: sl.updated }, a, { claim: a.claim ? Object.assign({}, a.claim, { copy: x ? ORIGIN + '/projects/' + x.s + '/changes/' + a.claim.sha + '.txt' : null }) : null }) : null,

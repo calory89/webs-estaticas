@@ -10,6 +10,7 @@
 //   GET /api/x/h/archive/{sha256}[?raw=1]
 // The static files are written by batch jobs; this module only reads them, so the site keeps working if a job is late.
 import { rpc, WKEY } from './kolaboro.js';
+import { TB } from './kbx_strings.js';
 export const PATHS = /^\/api\/x\/h(\/|$)/;
 
 const UA = 'KolaboroRegisterCheck/1.0 (+https://kolaboro.com/registers/)';
@@ -87,11 +88,11 @@ async function lookup(req, u, env, ctx) {
   const blocked = /just a moment|captcha|access denied/i.test(html.slice(0, 4000)) && !parsed.found;
   const rec = { kind: 'kolaboro-register-lookup-v1', register: id, register_name: R.name, query: n, url, fetched_at: at, http_status: r.status, content_type: (r.headers.get('content-type') || '').split(';')[0],
     bytes: buf.byteLength, sha256: s, result: blocked ? { found: null, blocked: true } : parsed,
-    note: 'sha256 is the SHA-256 of the exact bytes the register returned. Fetch them again with /api/x/h/archive/' + s + '?raw=1 and hash them yourself.' };
+    note: TB.kbx_h__s.k0 + s + '?raw=1 and hash them yourself.' };
   let durable = false;
   try { const d = await rpc('kolaboro_register_lookup_put', { p_wkey: WKEY, p_sha256: s, p_register: id, p_query: n, p_url: url, p_fetched_at: at, p_http: r.status, p_bytes: buf.byteLength, p_result: rec.result }); durable = !!d; } catch (e) { durable = false; }
   rec.archive = { url: 'https://kolaboro.com/api/x/h/archive/' + s, edge_cache_days: 30, durable,
-    durable_note: durable ? 'Stored in the Kolaboro database.' : 'Kept in the edge cache for up to 30 days. The permanent archive table is waiting for approval; until then, save this record if you need it.' };
+    durable_note: durable ? 'Stored in the Kolaboro database.' : TB.kbx_h__s.k1 };
   const ttl = { headers: { 'cache-control': 'public, max-age=2592000', 'content-type': 'application/json' } };
   ctx.waitUntil(Promise.all([caches.default.put(AKEY(s), new Response(JSON.stringify(rec), ttl)),
     caches.default.put(RKEY(s), new Response(buf, { headers: { 'cache-control': 'public, max-age=2592000', 'content-type': 'application/octet-stream' } }))]));
@@ -106,7 +107,7 @@ async function archive(u, s) {
   const r = await caches.default.match(AKEY(s));
   if (r) return out(await r.json(), 200, 300);
   try { const d = await rpc('kolaboro_register_lookup_get', { p_sha256: s }); if (d) return out(d, 200, 300); } catch (e) {}
-  return out({ error: 'not found', note: 'Records live in the edge cache of the data centre that made the lookup for 30 days, until the permanent archive is approved.' }, 404, 0);
+  return out({ error: 'not found', note: TB.kbx_h__s.k2 }, 404, 0);
 }
 
 export async function handle(req, u, env, ctx) {

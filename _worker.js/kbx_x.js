@@ -8,6 +8,7 @@
 //   when asked for, it is derived from USD with the fixed peg of 3.6725 AED per USD and flagged as derived.
 //   The browser does all simulation; this endpoint only relays and trims open data.
 import * as KB from './kolaboro.js';
+import { TB } from './kbx_strings.js';
 const { json } = KB;
 export const PATHS = /^\/api\/x\/x(\/|$)/;
 
@@ -86,7 +87,7 @@ async function fx(u, ctx) {
   }
   const body = {
     source: 'European Central Bank, euro foreign exchange reference rates (dataset EXR, daily, spot)',
-    licence: 'ECB statistics may be reused free of charge provided the source is acknowledged (ECB copyright and reuse notice).',
+    licence: TB.kbx_x__s.k0,
     query,
     unit: 'units of currency per 1 EUR',
     fetched: new Date().toISOString(),
@@ -106,7 +107,7 @@ export async function handle(req, u, env, ctx) {
   if (req.method === 'OPTIONS') return new Response(null, { status: 204, headers: { 'access-control-allow-origin': '*', 'access-control-allow-methods': 'GET', 'access-control-max-age': '86400' } });
   if (req.method !== 'GET' && req.method !== 'HEAD') return json({ error: 'method not allowed' }, 405);
   const p = u.pathname.replace(/\/+$/, '');
-  if (p === '/api/x/x' || p === '/api/x/x/') return json({ module: 'x', endpoints: { '/api/x/x/fx?c=IDR,USD': 'ECB daily reference rates per EUR for up to 6 currencies (AED derived from the USD peg), cached 12 h' } });
+  if (p === '/api/x/x' || p === '/api/x/x/') return json({ module: 'x', endpoints: { '/api/x/x/fx?c=IDR,USD': TB.kbx_x__s.k1 } });
   if (p === '/api/x/x/fx') return fx(u, ctx);
   return json({ error: 'not found', module: 'x' }, 404);
 }

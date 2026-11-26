@@ -1,3 +1,4 @@
+import { TB } from './kbx_strings.js';
 // kolaboro.com (n31a, batch 31, 18 Nov 2026): conversion. No paid AI, no database reads or writes in this file.
 //   2   POST /api/open/fn?s=<step>             one funnel step, sent once per browser session by /k/site.js (no cookie, id or address kept)
 //       GET  /[lang/]funnel/                   the funnel: project page -> check -> email -> booking -> payment, last 28 days
@@ -69,17 +70,13 @@ async function funnel(days) {
   const [pv, st] = await Promise.all([sum(PV, ['project', 'check', 'pricing']), sum(CK, [...OK_STEP])]);
   const order = [['project', pv.project], ['project_cta', st.project_cta], ['check', pv.check], ['check_start', st.check_start], ['check_done', st.check_done], ['lead', st.lead], ['book', st.book], ['pay_click', st.pay_click], ['pay_return', st.pay_return]];
   return { page: ORIGIN + '/funnel/', at: new Date().toISOString(), days, licence: 'CC BY 4.0 (credit: Kolaboro, kolaboro.com)',
-    note: 'Counted at the edge in the Cloudflare location that answers this request, without cookies, ids or IP addresses: only "step + day -> count". Lower bounds for one location, kept up to 35 days. Page views (project, check, pricing) since 13 Nov 2026; the other steps once per browser session since 18 Nov 2026. "pay_return" is a visit to the thanks page, not a confirmed payment.',
+    note: TB.kbx_n31a__s.k0,
     steps: order.map(([k, n]) => ({ step: k, count: n })), pricing_page_views: pv.pricing, project_requests: st.request,
     missing_answers: Object.fromEntries(MISS.map(m => [m, st['miss_' + m] || 0])) };
 }
 
 // ------------------------------------------------------------------------------------------------ pages
-const CSS = '<style id="n31a-css">.n31{padding-bottom:40px}.n31 h2{margin-top:28px}.n31-tw{overflow-x:auto;margin:8px 0 16px}.n31-t{width:100%;border-collapse:collapse}.n31-t th,.n31-t td{text-align:start;padding:8px;border-bottom:1px solid var(--line,#DDE3E0);vertical-align:top;font-variant-numeric:tabular-nums}.n31-t td.n{text-align:end}' +
-  '.n31-l{list-style:none;padding:0;margin:8px 0}.n31-l li{padding:10px 0;border-bottom:1px solid var(--line,#DDE3E0);overflow-wrap:anywhere}.n31-l li b{display:block}.n31-k{display:inline-block;font-size:.78rem;font-weight:700;padding:2px 8px;border-radius:999px;margin-inline-start:6px;vertical-align:middle;background:var(--k-sunken,#EEF1EF)}.n31-k.ok{color:var(--k-ok,#1F6B45)}.n31-k.no{color:var(--k-warn,#8A5A00)}.n31-k.bad{color:var(--k-bad,#A12A1C)}' +
-  '.n31-f{display:grid;gap:12px;max-width:560px;margin:16px 0}.n31-f label{display:grid;gap:4px;font-weight:600}.n31-f input[type=text],.n31-f input[type=email]{min-height:48px;padding:10px 12px;font:inherit;border:1px solid var(--line-2,#C9D1CE);border-radius:10px;background:var(--bg,#fff);color:inherit;min-width:0}.n31-f .cons{display:flex;gap:10px;align-items:flex-start;font-weight:400}.n31-f .cons input{width:22px;height:22px;flex:none;margin-top:2px}.n31-f .hp{position:absolute;left:-9999px}.n31-e{color:var(--k-bad,#A12A1C);min-height:1.2em;margin:0}.n31-ok{padding:12px 14px;border:2px solid var(--k-ok,#1F6B45);border-radius:10px}' +
-  '.n31-src{font-size:.86rem;color:var(--muted,#56635D);overflow-wrap:anywhere}.n31-ck{padding:12px 0;border-bottom:1px solid var(--line,#DDE3E0)}.n31-ck h3{margin:0 0 6px;font-size:1.05rem}.n31-ck ul{margin:4px 0;padding-inline-start:20px}.n31-ck li{margin:4px 0;overflow-wrap:anywhere}.n31-note{color:var(--muted,#56635D);font-size:.92rem}' +
-  '@media print{header,footer,.mcta,.kx-tick,nav{display:none!important}}</style>';
+/* CSS: n40 k17, in /data/i18n/k17s.json */
 const page = (html, lang, extra) => new Response(html, { headers: Object.assign({ 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=300', 'content-language': lang }, extra || {}) });
 const hero = (lang, h1, lead, crumb) => '<section class="phero"' + dirA(lang) + '><div class="wrap"><p class="crumb"><a href="' + (pre(lang) || '') + '/">Kolaboro</a> / ' + esc(crumb || h1) + '</p><h1>' + esc(h1) + '</h1><p class="lead">' + esc(lead) + '</p></div></section>';
 async function build(pg, lang, shell, shellPath) {
@@ -89,7 +86,7 @@ async function build(pg, lang, shell, shellPath) {
 const ld = (name, url, desc) => ({ '@context': 'https://schema.org', '@type': 'WebPage', name, url, description: desc, inLanguage: LOC.en, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' }, publisher: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' } });
 function pgObj(lang, path, title, desc, body, lastmod) {
   const canon = ORIGIN + pre(lang) + path, o = ld(title, canon, desc); o.inLanguage = lang;
-  return { title: title + ' | Kolaboro', desc: String(desc).slice(0, 155), canon, body: CSS + body, ld: o, lastmod: lastmod || '2026-11-18', alt: l => ORIGIN + pre(l) + path };
+  return { title: title + ' | Kolaboro', desc: String(desc).slice(0, 155), canon, body: TB.kbx_n31a__s.CSS + body, ld: o, lastmod: lastmod || '2026-11-18', alt: l => ORIGIN + pre(l) + path };
 }
 
 // 2 + 50: funnel page
@@ -109,7 +106,7 @@ async function fnPage(lang, shell) {
 
 // 17: ask us to add a project (posts to the existing lead function, as the other forms on the site do)
 const SB = 'https://oykcsmextclpdnugixqz.supabase.co/rest/v1/rpc/kolaboro_apply';
-const AK = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw';
+/* AK: n40 k17, in /data/i18n/k17s.json */
 async function rqPage(lang, shell) {
   const L = T[lang];
   const msg = { q: L.rq_e_q, em: L.rq_e_em, ok: L.rq_e_ok, dup: L.rq_e_dup, net: L.rq_e_net, sending: L.rq_sending, alt: L.rq_alt, ck: lk(lang, '/check/') };
@@ -118,18 +115,18 @@ async function rqPage(lang, shell) {
     '<label>' + esc(L.rq_q) + '<input type="text" name="q" maxlength="300" autocomplete="off" required></label>' +
     '<label>' + esc(L.rq_pl) + '<input type="text" name="place" maxlength="120" placeholder="' + esc(L.rq_pl_ph) + '"></label>' +
     '<label>' + esc(L.rq_em) + '<input type="email" name="email" maxlength="200" autocomplete="email" required></label>' +
-    '<label class="hp" aria-hidden="true">Company<input name="company" tabindex="-1" autocomplete="off"></label>' +
+    TB.kbx_n31a__s.k1 +
     '<label class="cons"><input type="checkbox" name="consent" required><span>' + esc(L.rq_ok) + ' <a href="/legal/privacy/">' + esc(L.rq_priv) + '</a>.</span></label>' +
     '<p class="n31-e" role="alert"></p><p><button class="btn btn-hi" type="submit">' + esc(L.rq_send) + '</button></p></form>' +
     '<div class="n31-ok" id="rq-ok" role="status" tabindex="-1" hidden><p><b>' + esc(L.rq_done) + '</b></p><p id="rq-alt"></p></div></div>' +
-    "<script>(function(){var f=document.getElementById('rq');if(!f)return;var M=JSON.parse(f.getAttribute('data-msg')),e=f.querySelector('.n31-e'),t0=Date.now(),qs=new URLSearchParams(location.search);if(qs.get('q'))f.q.value=qs.get('q').slice(0,300);" +
-    "f.addEventListener('submit',function(ev){ev.preventDefault();e.textContent='';var q=f.q.value.trim(),em=f.email.value.trim(),pl=f.place.value.trim();" +
-    "if(q.length<2){e.textContent=M.q;f.q.focus();return;}if(!/^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$/.test(em)){e.textContent=M.em;f.email.focus();return;}if(!f.consent.checked){e.textContent=M.ok;return;}if(f.company.value||Date.now()-t0<2000){e.textContent=M.net;return;}" +
+    TB.kbx_n31a__s.k2 +
+    TB.kbx_n31a__s.k3 +
+    TB.kbx_n31a__s.k4 +
     "var b=f.querySelector('button'),lb=b.textContent;b.disabled=true;b.textContent=M.sending;" +
-    "fetch('" + SB + "',{method:'POST',headers:{apikey:'" + AK + "',Authorization:'Bearer " + AK + "','Content-Type':'application/json'},body:JSON.stringify({p_name:'Project request',p_email:em,p_country:pl,p_phone:'',p_who:'buyer | project request',p_bring:('Project: '+q+(pl?'\\nPlace: '+pl:'')).slice(0,4000),p_learn:q.slice(0,300),p_week:'',p_lang:document.documentElement.lang||'en',p_source:('project-request | '+(document.referrer?new URL(document.referrer).pathname:'direct')).slice(0,200),p_plan:'project-request'})})" +
-    ".then(function(r){return r.json();}).then(function(d){if(d==='ok'){f.hidden=true;var ok=document.getElementById('rq-ok');ok.hidden=false;ok.focus();try{navigator.sendBeacon('/api/open/fn?s=request');}catch(x){}" +
-    "if(/^(https?:\\/\\/)?[\\w-]+(\\.[\\w-]+)+(\\/\\S*)?$/i.test(q)){var a=document.createElement('a');a.href=M.ck+'?url='+encodeURIComponent(q)+'#analyze';a.textContent=M.alt;document.getElementById('rq-alt').appendChild(a);}return;}throw new Error(d==='too_many'?M.dup:M.net);})" +
-    ".catch(function(x){e.textContent=x&&x.message&&x.message.indexOf('fetch')<0?x.message:M.net;b.disabled=false;b.textContent=lb;});});})();</script>";
+    "fetch('" + SB + "',{method:'POST',headers:{apikey:'" + TB.kbx_n31a__s.AK + "',Authorization:'Bearer " + TB.kbx_n31a__s.AK + TB.kbx_n31a__s.k5 +
+    TB.kbx_n31a__s.k6 +
+    TB.kbx_n31a__s.k7 +
+    TB.kbx_n31a__s.k8;
   return page(await build(pgObj(lang, '/request-project/', L.rq_title, L.rq_lead, body), lang, shell, '/about/'), lang, { 'x-robots-tag': 'noindex, follow' });
 }
 
@@ -141,7 +138,7 @@ function bzPage(lang, shell, env) {
     '<h2>' + esc(L.bz_paid_h) + '</h2><p>' + esc(L.bz_paid) + '</p>' + (vol.length ? offerCards(vol, lang) : '') +
     '<p><a class="btn btn-hi" href="mailto:carlos@kolaboro.com?subject=' + encodeURIComponent('Several checks') + '">' + esc(L.bz_cta) + '</a> <a class="btn btn-line" href="' + lk(lang, '/pricing/') + '">' + esc(L.mo_links.split(':')[0]) + '</a></p>' +
     '<h2>' + esc(L.bz_how_h) + '</h2><ul>' + L.bz_how.map(x => '<li>' + esc(x) + '</li>').join('') + '</ul>' +
-    '<p class="n31-note"><a href="/data/licence/">/data/licence/</a> · <a href="/independence/">/independence/</a> · <a href="/lawyers/">/lawyers/</a> · <a href="' + lk(lang, '/api/docs/') + '">API</a></p></div>';
+    TB.kbx_n31a__s.k9 + lk(lang, '/api/docs/') + '">API</a></p></div>';
   return build(pgObj(lang, '/business/', L.bz_title, L.bz_lead, body), lang, shell, '/pricing/').then(h => page(h, lang));
 }
 
@@ -203,7 +200,7 @@ async function srPage(lang, shell, env, slug) {
 export function ctaHtml(lang, slug) {
   const L = CTA[lang] || CTA.en, href = (lang === 'en' ? '/book/' : pre(lang) + '/pricing/') + '?p=' + slug + '#kreq';   // n34r: request form first, payment after an agent is confirmed
   return '<div class="mcta kn31c"><a class="btn btn-hi" href="' + href + '" data-ev="n31_cta"><span>' + esc(L[0]) + '</span><small>' + esc(L[1]) + '</small></a></div>' +
-    '<style>.kn31c .btn{display:flex;flex-direction:column;align-items:center;gap:0;line-height:1.2;padding-block:8px}.kn31c small{font-weight:500;font-size:.78rem;opacity:.92}@media (min-width:761px){.mcta.kn31c{display:block;left:auto;right:20px;bottom:20px;width:auto}.mcta.kn31c .btn{width:auto;padding-inline:20px}[dir=rtl] .mcta.kn31c{right:auto;left:20px}}@media print{.kn31c{display:none!important}}</style>' +
+    TB.kbx_n31a__s.k10 +
     '<script src="/k/n31.js?v=' + N31V + '" defer></script>';
 }
 export const N31V = 'a3';
@@ -236,7 +233,7 @@ export async function pricingOffers(res, lang, env) {
   if (!(await loadT(env))) return res;
   const list = offers(env).filter(o => !['volume', 'datalicence'].includes(o.k));
   if (!list.length) return res;
-  const add = '<section class="sec"><div class="wrap"' + dirA(lang) + '>' + CSS + '<h2>' + esc(T[lang].of_h) + '</h2>' + offerCards(list, lang) + '</div></section>';
+  const add = '<section class="sec"><div class="wrap"' + dirA(lang) + '>' + TB.kbx_n31a__s.CSS + '<h2>' + esc(T[lang].of_h) + '</h2>' + offerCards(list, lang) + '</div></section>';
   return new HTMLRewriter().on('main > section:first-of-type', { element(e) { e.after(add, { html: true }); } }).transform(res);
 }
 
@@ -261,7 +258,7 @@ export async function handle(req, u, env, ctx, shell) {
       if (!/^[A-Z0-9-]{3,20}$/.test(id)) return jout({ error: 'id' }, 400);
       if (req.method === 'POST') { if (bot || !ourOrigin(req) || !allow(req, 20)) return jout({ ok: false }, 202); ctx.waitUntil(inc(SVK(id))); return jout({ ok: true }, 202); }
       const n = await get(SVK(id));
-      return jout({ id, saves_at_least: n, shown: n >= 3, since: '2026-11-18', note: 'Saves to a list counted once per browser at the edge in this Cloudflare location, without cookies or ids: a lower bound.' }, 200, { 'cache-control': 'public, max-age=300' });
+      return jout({ id, saves_at_least: n, shown: n >= 3, since: '2026-11-18', note: TB.kbx_n31a__s.k11 }, 200, { 'cache-control': 'public, max-age=300' });
     }
     return null;
   }

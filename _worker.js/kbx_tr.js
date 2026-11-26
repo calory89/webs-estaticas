@@ -25,7 +25,8 @@ import { E as E27 } from './kbx_e27_i18n.js';
 import { t27 } from './kbx_t27_i18n.js';
 import { ogImg } from './kbx_ogt.js';   // n29t: share image per page type
 import { methodLine, accLine } from './kbx_e29_lines.js';   // n29e (batch 29): method version and date (item 58), who is accountable (56)
-import { regSale, rsText } from './kbx_n31d_rs.js';   // n31d: DLD registered sale prices are not asking prices
+import { regSale, rsText } from './kbx_n31d_rs.js';
+import { TB } from './kbx_strings.js';   // n31d: DLD registered sale prices are not asking prices
 
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
@@ -255,7 +256,7 @@ function rgBar(lang, pl, path, o) {   // r10u (batch 37): keep only projects wit
   const P = pre(lang) + path, k = pl.L.filter(r => !r.sumba && o.G.get(r.s)).length, q = (rg, so) => P + (rg || so ? '?' + [rg ? 'rg=1' : '', so ? 's=reg' : ''].filter(Boolean).join('&amp;') : '') + '#ranking';
   const a = (h, txt, cur) => '<a href="' + h + '"' + (cur ? ' aria-current="true"' : '') + '>' + esc(txt) + '</a>';
   return '<nav class="ktr-rgb" aria-label="' + esc(o.RT('rk_h')) + '">' + a(q(0, o.so), o.RT('rk_all', { n: nf(lang, pl.L.length) }), !o.rg) + a(q(1, o.so), o.RT('rk_rg', { n: nf(lang, k) }), o.rg) + a(q(o.rg, !o.so), o.RT(o.so ? 'rk_s0' : 'rk_s1'), false) + '</nav><p class="k-small k-muted">' + esc(o.RT('rk_note')) + ' <a href="' + pre(lang) + '/data/how-we-verify/">/data/how-we-verify/</a></p>' +
-    '<style>.ktr-rgb{display:flex;flex-wrap:wrap;gap:0 18px;margin:4px 0 0}.ktr-rgb a{display:inline-flex;align-items:center;min-height:44px;font-weight:600}.ktr-rgb a[aria-current]{text-decoration:none;color:inherit;border-bottom:3px solid var(--k-sea,#155C75)}.ktr-rgn{display:inline-block;font-size:.8rem;font-weight:600;padding:1px 8px;margin:4px 0;border:1px solid #1F6B3A;border-radius:999px;color:#1F6B3A;text-decoration:none;white-space:nowrap}:root[data-theme=dark] .ktr-rgn{color:#7FD19B;border-color:#7FD19B}</style>';
+    TB.kbx_tr__s.k0;
 }
 function kvHtml(lang, pl, ix) {
   const it = [[nf(lang, pl.n), t(lang, 'kv_n')], [pl.med == null ? '-' : nf(lang, pl.med), t(lang, 'kv_med')], [nf(lang, pct(pl.permit, pl.n)) + '%', t(lang, 'kv_permit')], [nf(lang, pct(pl.date, pl.n)) + '%', t(lang, 'kv_date')], [nf(lang, pct(pl.deposit, pl.n)) + '%', t(lang, 'kv_dep')]];
@@ -273,20 +274,15 @@ function emailBox(lang, P) {
   const p = bdi(mkName(P.n, lang));
   return '<div class="ktr-box ktr-em" id="get-analysis"><h2>' + th(lang, 'em_h', { p }) + '</h2><p>' + esc(t(lang, 'em_t')) + '</p>' +
     '<form id="ktr-form" novalidate data-place="' + esc(P.s) + '" data-lang="' + lang + '" data-m=\'' + esc(JSON.stringify({ ok: t(lang, 'em_ok', { p: mkName(P.n, lang) }), bad: t(lang, 'em_bad'), need: t(lang, 'em_need'), err: t(lang, 'em_err'), busy: t(lang, 'em_busy') })) + '\'>' +
-    '<div class="k-field"><label class="k-label" for="ktr-email">' + esc(t(lang, 'em_lbl')) + '</label><input class="k-input" id="ktr-email" name="email" type="email" autocomplete="email" inputmode="email" required maxlength="200" dir="ltr"></div>' +
+    '<div class="k-field"><label class="k-label" for="ktr-email">' + esc(t(lang, 'em_lbl')) + TB.kbx_tr__s.k1 +
     '<label class="ktr-cons"><input type="checkbox" name="consent" id="ktr-cons" required><span>' + th(lang, 'em_cons', { p }) + ' <a href="/legal/privacy/">' + esc(t(lang, 'em_priv')) + '</a></span></label>' +
     '<button class="k-btn k-btn--primary" type="submit">' + esc(t(lang, 'em_btn')) + '</button>' +
-    '<div class="ktr-hp" aria-hidden="true"><label>Website<input name="website" tabindex="-1" autocomplete="off"></label></div>' +
-    '<p class="ktr-msg" id="ktr-msg" role="status" aria-live="polite"></p></form><p class="k-small k-muted">' + esc(t(lang, 'em_note')) + '</p></div>';
+    TB.kbx_tr__s.k2 +
+    TB.kbx_tr__s.k3 + esc(t(lang, 'em_note')) + '</p></div>';
 }
 // "How this score is made": the row's ledger sits in a <template> in a hidden full-width row, filled and shown on the first click
-const LED_JS = '<script>document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest(".ktr-db");if(!b)return;var r=document.getElementById(b.getAttribute("aria-controls"));if(!r)return;var td=r.firstElementChild,tp=td&&td.querySelector("template");if(tp){td.appendChild(tp.content.cloneNode(true));tp.remove();}var o=b.getAttribute("aria-expanded")!=="true";b.setAttribute("aria-expanded",o?"true":"false");r.hidden=!o;});</script>';
-const FORM_JS = '<script>(function(){var f=document.getElementById("ktr-form");if(!f)return;var M=JSON.parse(f.getAttribute("data-m")),m=document.getElementById("ktr-msg"),e=f.email,c=f.consent,busy=false;' +
-  'function say(s,bad){m.textContent=s;m.style.color=bad?"var(--k-brand-ink)":"";}' +
-  'f.addEventListener("submit",function(ev){ev.preventDefault();if(busy)return;var em=(e.value||"").trim();if(!/^[^@\\s]+@[^@\\s]+\\.[^@\\s]{2,}$/.test(em)){e.setAttribute("aria-invalid","true");say(M.bad,1);e.focus();return;}e.removeAttribute("aria-invalid");' +
-  'if(!c.checked){c.setAttribute("aria-invalid","true");say(M.need,1);c.focus();return;}c.removeAttribute("aria-invalid");busy=true;var b=f.querySelector("[type=submit]");b.disabled=true;say(M.busy);' +
-  'fetch("/api/x/transparency/lead",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({email:em,consent:true,place:f.getAttribute("data-place"),lang:f.getAttribute("data-lang"),website:f.website.value,ref:document.referrer.slice(0,200)})}).then(function(r){return r.json();}).then(function(j){busy=false;b.disabled=false;' +
-  'if(j&&j.ok){say(M.ok);f.reset();try{if(window.kbEvent)kbEvent("transparency_lead",f.getAttribute("data-place"));}catch(x){}return;}say(j&&j.error==="email"?M.bad:M.err,1);}).catch(function(){busy=false;b.disabled=false;say(M.err,1);});});})();</script>';
+/* LED_JS: n40 k17, in /data/i18n/k17s.json */
+/* FORM_JS: n40 k17, in /data/i18n/k17s.json */
 function faqList(lang, pl, ix) {
   const P = pl.P, p = mkName(P.n, lang), n = pl.n, nn = nf(lang, n), top = pl.ranked ? pl.L[0] : null;
   const f = [[t(lang, 'q1', { p }), t(lang, 'a1', { n: nn, d: fdt(ix.updated, lang) })]];
@@ -333,11 +329,11 @@ function viewOf(pl, o) { if (!o || !o.G) return pl; let L = o.rg ? pl.L.filter(r
 // r11u (round 11): long rankings (Dubai 766 rows, 3.2 MB) send the first PG_N rows; the rest come as a row fragment (?rows=N) on request,
 // or all on one page (?all=1). A link to a row that is not on the page (#p-<id>) loads the rest first.
 const PG_N = 100;
-const PG_JS = '<script>(function(){var w=document.getElementById("ktr-more");if(!w)return;var b=w.querySelector("button"),busy=0;function go(h){if(busy)return;busy=1;b.disabled=true;var nx=0;fetch(w.getAttribute("data-src")+"&from="+w.getAttribute("data-from")+(h?"&to=all":"")).then(function(r){if(!r.ok)throw 0;nx=+(r.headers.get("x-kb-next")||0);return r.text()}).then(function(t){var tb=w.previousElementSibling.querySelector("tbody"),n=tb.querySelectorAll("tr[id^=p-]").length;tb.insertAdjacentHTML("beforeend",t);var N=+w.getAttribute("data-n");if(nx&&nx<N){busy=0;b.disabled=false;w.setAttribute("data-from",nx);w.querySelector("p").textContent=w.getAttribute("data-sh").replace("{a}",nx.toLocaleString(document.documentElement.lang));b.textContent=w.getAttribute("data-nx").replace("{k}",Math.min(100,N-nx).toLocaleString(document.documentElement.lang));}else w.remove();var e=h&&document.getElementById(h);if(e){e.scrollIntoView();}else{var r=tb.querySelectorAll("tr[id^=p-]")[n],a=r&&r.querySelector("a,button");if(a)a.focus();}}).catch(function(){busy=0;b.disabled=false;w.querySelector("p").textContent=w.getAttribute("data-err")})}b.addEventListener("click",function(){go()});var h=decodeURIComponent(location.hash.slice(1));if(/^[pd]-/.test(h)&&!document.getElementById(h))go(h)})()</script>';
+/* PG_JS: n40 k17, in /data/i18n/k17s.json */
 function moreHtml(lang, pv, path, o) {
   const q = (o.rg ? '&amp;rg=1' : '') + (o.so ? '&amp;s=reg' : ''), P = pre(lang) + path, n = pv.L.length;
   return '<div class="ktr-more" id="ktr-more" data-src="' + P + '?rows=1' + q + '" data-from="' + PG_N + '" data-n="' + n + '" data-sh="' + esc(o.RT('pg_sh', { a: '{a}', n: nf(lang, n) })) + '" data-nx="' + esc(o.RT('pg_next', { k: '{k}' })) + '" data-err="' + esc(o.RT('pg_err')) + '"><p class="k-small">' + esc(o.RT('pg_sh', { a: nf(lang, PG_N), n: nf(lang, n) })) + '</p><p class="ktr-mp"><button type="button" class="k-btn">' + esc(n - PG_N > PG_N ? o.RT('pg_next', { k: nf(lang, PG_N) }) : o.RT('pg_more', { k: nf(lang, n - PG_N) })) + '</button> <a href="' + P + '?all=1' + q + '#ranking">' + esc(o.RT('pg_all', { n: nf(lang, n) })) + '</a></p></div>' +
-    '<style>.ktr-more{margin:10px 0 18px}.ktr-mp{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px}.ktr-mp button{min-height:44px;padding:8px 18px;font-weight:600;cursor:pointer}.ktr-mp a{display:inline-flex;align-items:center;min-height:44px;font-weight:600}</style>' + PG_JS;
+    TB.kbx_tr__s.k4 + TB.kbx_tr__s.PG_JS;
 }
 function rowsFrag(ix, slug, lang, o, from, all) { const pl = ix.places.get(slug); if (!pl) return null; const L = viewOf(pl, o).L, to = all ? L.length : Math.min(L.length, from + PG_N); return { h: L.slice(from, to).map(r => rowHtml(lang, r, r['rk_' + pl.P.s], pl.ranked, o)).join(''), next: to < L.length ? to : 0 }; }
 function placePage(ix, slug, lang, o) {
@@ -355,7 +351,7 @@ function placePage(ix, slug, lang, o) {
   body += thinHtml(lang, pl);
   body += emailBox(lang, P) + replyBox(lang, null);
   body += '<h2 id="faq">' + esc(t(lang, 'faq_h')) + '</h2><div class="k-disc">' + faq.map(([q, a]) => '<details><summary>' + esc(q) + '</summary><p>' + esc(a) + '</p></details>').join('') + '</div>';
-  body += linksHtml(lang, slug) + '</div></section></div>' + LED_JS + FORM_JS;
+  body += linksHtml(lang, slug) + '</div></section></div>' + TB.kbx_tr__s.LED_JS + TB.kbx_tr__s.FORM_JS;
   const url = PUB(lang, path);
   const items = pl.L.slice(0, PG_N).map((r, i) => Object.assign({ '@type': 'ListItem', position: pl.ranked ? r['rk_' + slug] : i + 1, name: r.n }, r.sumba ? {} : { url: PUB(lang, '/projects/' + r.s + '/') }));
   const ld = [
@@ -368,7 +364,7 @@ function placePage(ix, slug, lang, o) {
 function hubTable(lang, ix, kind) {
   const L = [...ix.places.values()].filter(pl => pl.P.k === kind).sort((a, b) => b.n - a.n || a.P.n.localeCompare(b.P.n));
   const cols = [t(lang, 'c_place'), t(lang, 'c_n'), t(lang, 'c_med'), t(lang, 'h_permit'), t(lang, 'h_date'), t(lang, 'c_dep')];
-  return '<div class="k-table-wrap ktr-tw ktr-hub"><table class="k-table k-table--dense k-table--stack"><thead><tr>' + cols.map(c => '<th scope="col">' + esc(c) + '</th>').join('') + '</tr></thead><tbody>' +
+  return TB.kbx_tr__s.k5 + cols.map(c => '<th scope="col">' + esc(c) + '</th>').join('') + '</tr></thead><tbody>' +
     L.map(pl => '<tr><td data-label="' + esc(cols[0]) + '"><a href="' + pre(lang) + '/rankings/transparency/' + pl.P.s + '/">' + bdi(mkName(pl.P.n, lang)) + '</a>' + (pl.ranked ? '' : '<br><small class="k-muted">' + esc(t(lang, 'unranked')) + '</small>') + '</td><td class="k-n" data-label="' + esc(cols[1]) + '">' + nf(lang, pl.n) + '</td><td class="k-n" data-label="' + esc(cols[2]) + '">' + (pl.med == null ? '-' : nf(lang, pl.med)) + '</td><td class="k-n" data-label="' + esc(cols[3]) + '">' + nf(lang, pct(pl.permit, pl.n)) + '%</td><td class="k-n" data-label="' + esc(cols[4]) + '">' + nf(lang, pct(pl.date, pl.n)) + '%</td><td class="k-n" data-label="' + esc(cols[5]) + '">' + nf(lang, pct(pl.deposit, pl.n)) + '%</td></tr>').join('') + '</tbody></table></div>';
 }
 function hubPage(ix, lang) {
@@ -404,7 +400,7 @@ function methodPage(ix, lang) {
   const places = TR_PLACES.map(P => '<li><a href="' + pre(lang) + '/rankings/transparency/' + P.s + '/">' + bdi(P.n) + '</a> <span class="k-muted">(' + bdi(P.cc) + '): ' + th(lang, 'mt_rule_m', { m: P.m.map(bdi).join(', ') }) + (P.a ? '; ' + th(lang, 'mt_rule_a', { a: bdi(P.an || P.a.source) }) + ((P.am || []).length ? ' (' + P.am.map(bdi).join(', ') + ')' : '') : '') + '</span></li>').join('');
   const D = ix.dates, dl = [['/data/named.json', D.named], ['/data/bali-cases.json', D.cases], ['/data/on-time.json', D.ontime], ['/data/web-health.json', D.web], ['/data/lookalikes.json', D.look], ['/data/sanctions.json', D.sanctions], ['/data/gleif-family.json', D.gleif]].map(([f, d]) => '<li><a href="' + f + '"><bdi>' + f + '</bdi></a>' + (d ? ' <span class="k-muted">' + esc(fdt(String(d).slice(0, 10), lang)) + '</span>' : '') + '</li>').join('');
   const body = '<div class="ktr"><section class="k-sec"><div class="k-wrap k-prose"><div class="k-phead">' + crumbHtml(lang, cr) + '<h1>' + esc(title) + '</h1><p class="lead">' + esc(t(lang, 'mt_lead')) + '</p><p class="k-small k-muted">' + methodLine(lang).trim() + '</p>' + accLine(lang) + '</div>' +
-    '<h2 id="weights">' + esc(t(lang, 'mt_w_h')) + '</h2><div class="k-table-wrap ktr-tw"><table class="k-table k-table--dense k-table--stack ktr-mt"><thead><tr>' + cols.map(c => '<th scope="col">' + esc(c) + '</th>').join('') + '</tr></thead><tbody>' + rows + '<tr><th scope="row">' + esc(t(lang, 'name')) + '</th><td class="k-n"><b>100</b></td><td></td><td></td></tr></tbody></table></div>' +
+    '<h2 id="weights">' + esc(t(lang, 'mt_w_h')) + TB.kbx_tr__s.k6 + cols.map(c => '<th scope="col">' + esc(c) + '</th>').join('') + '</tr></thead><tbody>' + rows + '<tr><th scope="row">' + esc(t(lang, 'name')) + '</th><td class="k-n"><b>100</b></td><td></td><td></td></tr></tbody></table></div>' +
     exampleHtml(ix, lang) +   // n31b (batch 31, item 82): one real project scored step by step
     '<h2 id="rules">' + esc(t(lang, 'mt_rules_h')) + '</h2><ul>' + t(lang, 'mt_rules').map(s => '<li>' + esc(s) + '</li>').join('') + '</ul>' +
     '<h2 id="not">' + esc(t(lang, 'mt_not_h')) + '</h2><p>' + esc(t(lang, 'mt_not')) + '</p>' +
@@ -455,7 +451,7 @@ async function sitemap(env) {
   const paths = ['/rankings/transparency/', '/methods/transparency-score/'].concat([...ix.places.keys()].map(s => '/rankings/transparency/' + s + '/'));
   const xe = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;');
   const urls = paths.flatMap(p => LANGS.map(l => '<url><loc>' + xe(PUB(l, p)) + '</loc><lastmod>' + ix.updated + '</lastmod>' + LANGS.map(a => '<xhtml:link rel="alternate" hreflang="' + a + '" href="' + xe(PUB(a, p)) + '"/>').join('') + '<xhtml:link rel="alternate" hreflang="x-default" href="' + xe(ORIGIN + p) + '"/></url>'));
-  return new Response('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n' + urls.join('\n') + '\n</urlset>\n', { headers: { 'content-type': 'application/xml; charset=utf-8', 'cache-control': 'public, max-age=3600' } });
+  return new Response(TB.kbx_tr__s.k7 + urls.join('\n') + '\n</urlset>\n', { headers: { 'content-type': 'application/xml; charset=utf-8', 'cache-control': 'public, max-age=3600' } });
 }
 function rowJson(r, slug) {
   const comp = {}; for (const k of KEYS) { const q = r.comp[k]; comp[k] = { status: q.st === 'yes' ? 'yes' : q.st === 'part' ? 'partly' : q.st === 'no' ? 'not published' : 'not checked', points: q.st === 'nc' ? null : q.pts, max: q.st === 'nc' ? null : q.max }; if (k === 'record') comp[k].record = q.r; }
@@ -499,7 +495,7 @@ export async function handle(req, u, env, ctx) {
   const H = { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'public, max-age=600', 'access-control-allow-origin': '*', 'x-content-type-options': 'nosniff' };
   if (req.method !== 'GET' && req.method !== 'HEAD') return new Response(JSON.stringify({ error: 'method' }), { status: 405, headers: H });
   let ix; try { ix = await trData(env); } catch (e) { return new Response(JSON.stringify({ error: 'not_ready' }), { status: 503, headers: Object.assign({}, H, { 'cache-control': 'no-store' }) }); }
-  const meta = { name: 'Kolaboro transparency score (0-100)', method: ORIGIN + '/methods/transparency-score/', weights: MAX, licence: 'CC BY 4.0 (credit: Kolaboro, kolaboro.com)', data_read: ix.updated, min_projects_to_rank: MIN_RANK, note: 'Measures what is published and checkable, not quality, safety or value. Not checked components are left out of a project\'s total. Projects of companies linked to Kolaboro\'s founder are excluded.' };
+  const meta = { name: 'Kolaboro transparency score (0-100)', method: ORIGIN + '/methods/transparency-score/', weights: MAX, licence: 'CC BY 4.0 (credit: Kolaboro, kolaboro.com)', data_read: ix.updated, min_projects_to_rank: MIN_RANK, note: TB.kbx_tr__s.k8 };
   const slug = p.split('/')[4];
   if (slug) {
     const pl = ix.places.get(slug); if (!pl) return new Response(JSON.stringify({ error: 'place', places: [...ix.places.keys()] }), { status: 404, headers: H });

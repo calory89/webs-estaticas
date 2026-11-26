@@ -126,12 +126,9 @@ async function weekly(env) {
 const inWeek = (e, w) => e.d >= w && e.d < addD(w, 7);
 
 // ------------------------------------------------------------------------------------------------ page shells
-const CSS = '<style id="ke27-css">.ke{padding-bottom:40px}.ke h2{margin:28px 0 8px}.ke-sum{color:var(--muted,#56636F);margin:0 0 10px}.ke-l{list-style:none;padding:0;margin:0 0 18px}.ke-l>li{padding:10px 0;border-bottom:1px solid var(--line,#d5d3cc)}.ke-l>li>a{font-weight:700}' +
-  '.ke-l ul{margin:4px 0 0;padding-inline-start:18px}.ke-l small{color:var(--muted,#56636F)}.ke-src{font-size:.85rem}.ke-tw{overflow-x:auto}.ke-t{width:100%;border-collapse:collapse;margin:8px 0 18px}.ke-t th,.ke-t td{text-align:start;padding:9px 8px;border-bottom:1px solid var(--line,#d5d3cc);vertical-align:top}.ke-t td.n{font-variant-numeric:tabular-nums;white-space:nowrap}' +
-  '.ke-f{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin:14px 0}.ke-note{max-width:760px;color:var(--ink-2,#3a4651)}.ke-acts{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}.ke-acts a,.ke-acts button{display:inline-flex;align-items:center;min-height:46px;padding:0 16px;border:1.5px solid var(--ink,#17212B);border-radius:12px;background:var(--card,#fff);color:var(--ink,#17212B);font:inherit;font-weight:700;text-decoration:none;cursor:pointer}' +
-  '.ke-ok{color:var(--k-ok,#1d7a46)}.ke-mid{color:var(--k-warn,#9a6200)}.ke-no{color:var(--muted,#56636F)}@media print{@page{margin:14mm 12mm}header,footer,nav,.k-ticker,.ktick,.ke-acts,.lsw,.skip,.mcta,.cc,.totop,#shipT{display:none!important}.ke h2{break-after:avoid;margin-top:16px}.ke-l>li,.n34-q>li,.ke-t tr{break-inside:avoid}.ke-ref{border:1px solid #999;padding:6px 8px}.n34-q>li::before{border-color:#999}body{background:#fff!important;color:#000}.ke a{color:#000}.ke a[href^="http"]::after{content:" (" attr(href) ")";font-size:.8em;word-break:break-all}.phero{padding:0!important}}</style>';
+/* CSS: n40 k17, in /data/i18n/k17s.json */
 async function htmlPage(env, ctx, shell, lang, pg, noindex) {
-  let html = await N.assemble(Object.assign({ ld: { '@context': 'https://schema.org', '@type': 'WebPage', name: pg.title, url: pg.canon, inLanguage: lang } }, pg, { body: CSS + pg.body }), lang, await shell(pre(lang) + '/how-we-score/'));
+  let html = await N.assemble(Object.assign({ ld: { '@context': 'https://schema.org', '@type': 'WebPage', name: pg.title, url: pg.canon, inLanguage: lang } }, pg, { body: TB.kbx_e27__s.CSS + pg.body }), lang, await shell(pre(lang) + '/how-we-score/'));
   if (noindex) html = html.replace('</head>', '<meta name="robots" content="noindex, follow"></head>');
   const h = { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=900', 'content-language': lang };
   if (noindex) h['x-robots-tag'] = 'noindex, follow';
@@ -330,7 +327,7 @@ async function placeFeed(req, env, s, fmt) {
   const it = e => ({ id: 'tag:kolaboro.com,2026:weekly/' + s + '/' + e.key, url: ORIGIN + '/projects/' + e.x.s + '/', title: e.x.n + ': ' + evText('en', e), text: e.x.n + ' (' + [e.x.ar, e.x.mk].filter(Boolean).join(', ') + '): ' + evText('en', e) + '.' + (e.src ? ' Source: ' + e.src : ''), d: e.d + 'T00:00:00Z' });
   const h = { 'cache-control': 'public, max-age=1800', 'access-control-allow-origin': '*' };
   if (fmt === 'json') return new Response(JSON.stringify({ version: 'https://jsonfeed.org/version/1.1', title, home_page_url: home, feed_url: self, language: 'en', authors: [{ name: 'Kolaboro', url: ORIGIN + '/' }], items: E2.map(it).map(i => ({ id: i.id, url: i.url, title: i.title, content_text: i.text, date_published: i.d })) }), { headers: Object.assign({ 'content-type': 'application/feed+json; charset=utf-8' }, h) });
-  const x = '<?xml version="1.0" encoding="utf-8"?>\n<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><title>' + xe(title) + '</title><id>' + xe(home) + '</id><link rel="self" type="application/atom+xml" href="' + xe(self) + '"/><link rel="alternate" type="text/html" href="' + xe(home) + '"/><updated>' + upd + '</updated><author><name>Kolaboro</name><uri>' + ORIGIN + '/</uri></author><rights>CC BY 4.0</rights>' +
+  const x = TB.kbx_e27__s.k0 + xe(title) + '</title><id>' + xe(home) + '</id><link rel="self" type="application/atom+xml" href="' + xe(self) + '"/><link rel="alternate" type="text/html" href="' + xe(home) + '"/><updated>' + upd + '</updated><author><name>Kolaboro</name><uri>' + ORIGIN + '/</uri></author><rights>CC BY 4.0</rights>' +
     E2.map(it).map(i => '<entry><title>' + xe(i.title) + '</title><id>' + xe(i.id) + '</id><link rel="alternate" type="text/html" href="' + xe(i.url) + '"/><updated>' + i.d + '</updated><summary type="text">' + xe(i.text) + '</summary></entry>').join('') + '</feed>';
   return new Response(x, { headers: Object.assign({ 'content-type': 'application/atom+xml; charset=utf-8' }, h) });
 }
@@ -338,7 +335,7 @@ async function sitemap(env) {
   const wk = await weekly(env), alt = p => LANGS.map(l => '<xhtml:link rel="alternate" hreflang="' + l + '" href="' + ORIGIN + pre(l) + p + '"/>').join('') + '<xhtml:link rel="alternate" hreflang="x-default" href="' + ORIGIN + p + '"/>';
   const U = [['/weekly/', wk.today], ['/delays/', wk.today]];   // n33a (item 85): the weekly delays page, same address every week
   for (const b of wk.byPlace.values()) if (b.L.length && b.ev.length) U.push(['/weekly/' + b.P.s + '/', b.ev[0].d]);
-  const x = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">' + U.flatMap(([p, d]) => LANGS.map(l => '<url><loc>' + ORIGIN + pre(l) + p + '</loc><lastmod>' + d + '</lastmod>' + alt(p) + '</url>')).join('') + '</urlset>';
+  const x = TB.kbx_e27__s.k1 + U.flatMap(([p, d]) => LANGS.map(l => '<url><loc>' + ORIGIN + pre(l) + p + '</loc><lastmod>' + d + '</lastmod>' + alt(p) + '</url>')).join('') + '</urlset>';
   return new Response(x, { headers: { 'content-type': 'application/xml; charset=utf-8', 'cache-control': 'public, max-age=3600' } });
 }
 
@@ -346,7 +343,7 @@ async function sitemap(env) {
 export function mailReview(lang, x, since, stopUrl) {
   const n = x.n, link = ORIGIN + '/buyer-reports/?project=' + encodeURIComponent(x.id), dir = lang === 'ar' ? ' dir="rtl"' : '';
   return { subject: t(lang, 'm_rev_s', { n }), text: [t(lang, 'm_rev_h', { n, d: N.fd(since, lang) }), '', t(lang, 'm_rev_p'), '', t(lang, 'm_rev_b') + ': ' + link, '', t(lang, 'm_rev_n', { n }), '', t(lang, 'm_foot', { u: stopUrl })].join('\n'),
-    html: '<div lang="' + lang + '"' + dir + ' style="font:16px/1.5 Arial,sans-serif;color:#17212B;max-width:560px"><h1 style="font-size:20px">' + esc(t(lang, 'm_rev_h', { n, d: N.fd(since, lang) })) + '</h1><p>' + esc(t(lang, 'm_rev_p')) + '</p><p><a href="' + esc(link) + '" style="display:inline-block;padding:12px 18px;background:#17212B;color:#fff;border-radius:10px;text-decoration:none;font-weight:700">' + esc(t(lang, 'm_rev_b')) + '</a></p><p>' + esc(t(lang, 'm_rev_n', { n })) + '</p><p style="color:#59626B;font-size:13px">' + esc(t(lang, 'm_foot', { u: '' })) + '<a href="' + esc(stopUrl) + '">' + esc(stopUrl) + '</a></p></div>' };
+    html: '<div lang="' + lang + '"' + dir + ' style="font:16px/1.5 Arial,sans-serif;color:#17212B;max-width:560px"><h1 style="font-size:20px">' + esc(t(lang, 'm_rev_h', { n, d: N.fd(since, lang) })) + '</h1><p>' + esc(t(lang, 'm_rev_p')) + '</p><p><a href="' + esc(link) + TB.kbx_e27__s.k2 + esc(t(lang, 'm_rev_b')) + '</a></p><p>' + esc(t(lang, 'm_rev_n', { n })) + '</p><p style="color:#59626B;font-size:13px">' + esc(t(lang, 'm_foot', { u: '' })) + '<a href="' + esc(stopUrl) + '">' + esc(stopUrl) + '</a></p></div>' };
 }
 export async function mailDelays(env, lang, s, stopUrl) {
   const wk = await weekly(env), b = wk.byPlace.get(s); if (!b) return null;
@@ -367,9 +364,9 @@ async function mailPreview(u, env, kind) {
   if (kind === 'review') { const ix = await N.data(env), id = String(u.searchParams.get('id') || '').toUpperCase(); const x = ix.byId.get(id) || ix.P.find(okName); if (x && okName(x)) m = mailReview(lang, x, x.ad || ix.updated, stop); }
   else { const s = String(u.searchParams.get('place') || 'bali').toLowerCase(); if (PLACES.some(P => P.s === s)) m = await mailDelays(env, lang, s, stop); }
   if (!m) return new Response('Not found', { status: 404 });
-  const page = '<!doctype html><html lang="' + lang + '"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>' + esc(m.subject) + '</title></head><body style="margin:24px;background:#F1EFE9">' +
-    '<p style="font:14px Arial,sans-serif;background:#fff3cd;padding:10px 14px;border-radius:8px;max-width:600px">' + esc(t(lang, 'm_prev')) + '</p><p style="font:14px Arial,sans-serif"><b>Subject:</b> ' + esc(m.subject) + '</p><div style="background:#fff;padding:20px;border-radius:12px;max-width:620px">' + m.html + '</div>' +
-    '<details style="font:13px monospace;max-width:620px;margin-top:16px"><summary>text/plain</summary><pre style="white-space:pre-wrap">' + esc(m.text) + '</pre></details></body></html>';
+  const page = '<!doctype html><html lang="' + lang + TB.kbx_e27__s.k3 + esc(m.subject) + '</title></head><body style="margin:24px;background:#F1EFE9">' +
+    TB.kbx_e27__s.k4 + esc(t(lang, 'm_prev')) + '</p><p style="font:14px Arial,sans-serif"><b>Subject:</b> ' + esc(m.subject) + '</p><div style="background:#fff;padding:20px;border-radius:12px;max-width:620px">' + m.html + '</div>' +
+    TB.kbx_e27__s.k5 + esc(m.text) + '</pre></details></body></html>';
   return new Response(page, { headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=600', 'x-robots-tag': 'noindex, nofollow' } });
 }
 
@@ -394,7 +391,7 @@ async function signups(env, ctx) {
   got.forEach(g => { if (g) for (const [id, w] of Object.entries(g)) { const x = ix.byId.get(id); if (x && w >= 3) rows.push({ id, slug: x.s, name: x.n, market: x.mk, watchers: w, page: ORIGIN + '/projects/' + x.s + '/' }); } });
   rows.sort((a, b) => b.watchers - a.watchers);
   const checked = got.reduce((a, g, i) => a + (g ? ids.slice(i * CHUNK, (i + 1) * CHUNK).length : 0), 0);
-  return new Response(JSON.stringify({ version: 'e27-signups-1', day, about: 'Confirmed email watchers (double opt-in) per project page, read through the existing counters function. A project is listed only from 3 watchers (privacy threshold); below that the count is not available to us either. Coverage grows by ' + CHUNK + ' projects each time this is read, and restarts every day (UTC).',
+  return new Response(JSON.stringify({ version: 'e27-signups-1', day, about: TB.kbx_e27__s.k6 + CHUNK + ' projects each time this is read, and restarts every day (UTC).',
     confirmed_watchers_total: total, total_source: 'kolaboro_metrics_public (totals.followers)', threshold: 3, projects_checked_today: checked, projects_total: ids.length, projects: rows }), { headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'public, max-age=300', 'access-control-allow-origin': '*' } });
 }
 
@@ -419,7 +416,7 @@ export async function handle(req, u, env, ctx, shell) {
     if (m[1] === 'signups') return signups(env, ctx);
     const ix = await N.data(env), x = ix.byId.get(m[3].toUpperCase()); if (!x || !okName(x)) return new Response(JSON.stringify({ error: 'not_found' }), { status: 404, headers: { 'content-type': 'application/json' } });
     const X = await extra(env);
-    return new Response(JSON.stringify({ id: x.id, developer: x.dv || null, kinds: ['insolvency', 'dissolution'], about: 'Official gazette notices of insolvency or dissolution about the developer company (exact legal name), and insolvency notices found by the insolvency watch. A notice is a legal publication, not a finding about the project.', notices: noticesOf(ix, X, x) }), { headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'public, max-age=3600', 'access-control-allow-origin': '*' } });
+    return new Response(JSON.stringify({ id: x.id, developer: x.dv || null, kinds: ['insolvency', 'dissolution'], about: TB.kbx_e27__s.k7, notices: noticesOf(ix, X, x) }), { headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'public, max-age=3600', 'access-control-allow-origin': '*' } });
   }
   const lm = p.match(/^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?(?:projects\/([a-z0-9-]{1,90})\/report(\/|\.pdf)?|weekly(?:\/([a-z0-9-]{2,40}))?(\/?))$/);
   if (!lm) return null;

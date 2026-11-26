@@ -15,6 +15,7 @@
 // Admin two-factor needs no worker route: /admin talks to the database function kolaboro_admin_2fa directly (see /k/acct.js).
 import { rpc, sha, verifyAssertion, PUB_RAW_B64, WKEY } from './kolaboro.js';
 import { handle as lookupHandle } from './kbx_lookup.js';
+import { TB } from './kbx_strings.js';
 
 export const PATHS = /^\/api\/x\/acct\//;
 const ORIGIN = 'https://kolaboro.com', RP = 'kolaboro.com', DID = 'did:web:kolaboro.com';
@@ -185,10 +186,10 @@ const NONCE_RX = / nonce="[^"]*"/g;   // our HTML gets a fresh CSP nonce on ever
 async function vcLookup(root, req, u, env, ctx) {
   const r = await lookupHandle(new Request(ORIGIN + '/api/kb/lookup/r/' + root), new URL(ORIGIN + '/api/kb/lookup/r/' + root), env, ctx);
   const d = await r.json().catch(() => null);
-  if (!d || d.error || !d.seal || d.seal.root_sha256 !== root) return out({ error: 'not_in_edge_cache', note: 'Sealed results are kept 30 days in the edge cache of the data centre that made the lookup. Open the credential link from the same results page, or run the lookup again.' }, 404, { 'access-control-allow-origin': '*' });
+  if (!d || d.error || !d.seal || d.seal.root_sha256 !== root) return out({ error: 'not_in_edge_cache', note: TB.kbx_acct__s.k0 }, 404, { 'access-control-allow-origin': '*' });
   const at = String(d.finished_at || d.started_at || new Date().toISOString()).replace(/\.\d+Z$/, 'Z');
   const doc = { '@context': CTX, id: ORIGIN + '/api/x/acct/vc/lookup/' + root, type: ['VerifiableCredential', 'KolaboroSealedLookup'],
-    name: 'Kolaboro sealed register lookup', description: 'What the named official registers returned at fetched_at, kept byte for byte and sealed by a SHA-256 root (also timestamped through OpenTimestamps). Not a verdict on any project or company.',
+    name: 'Kolaboro sealed register lookup', description: TB.kbx_acct__s.k1,
     issuer: { id: DID, name: 'Kolaboro' }, validFrom: at,
     credentialSubject: { id: d.seal.result_url, type: 'SealedRegisterLookup', rootSha256: root, resultSha256: await sha(jcs(d)), summary: d.summary || null,
       checks: (d.checks || []).map(c => ({ id: c.id, source: c.source || c.register || c.name || null, status: c.status, url: (c.snapshot && c.snapshot.url) || c.url || null, sha256: c.snapshot && c.snapshot.sha256 || null, fetchedAt: c.snapshot && c.snapshot.fetched_at || null, rawUrl: c.snapshot && c.snapshot.raw_url || null })),
@@ -204,7 +205,7 @@ async function vcReport(req, env, ctx) {
   if (!me || !me.user) return fail('auth', 401);
   const c = (me.cases || []).find(x => x.id === b.case_id);
   if (!c) return out({ error: 'case', message: 'No such case in your account.' }, 404);
-  if (!c.report_url && !c.verdict) return out({ error: 'not_delivered', message: 'This case has no delivered report yet. The credential is available once the report is published to you.' }, 409);
+  if (!c.report_url && !c.verdict) return out({ error: 'not_delivered', message: TB.kbx_acct__s.k2 }, 409);
   const reportUrl = c.report_url ? new URL(c.report_url, ORIGIN).href : null;
   let reportSha = null;
   if (reportUrl && /^https:\/\//.test(reportUrl)) {
@@ -215,9 +216,9 @@ async function vcReport(req, env, ctx) {
   const at = new Date(delivered).toISOString().replace(/\.\d+Z$/, 'Z');
   const doc = { '@context': CTX, id: 'urn:kolaboro:report:' + (await sha('kolaboro-report-vc-v1\n' + c.id + '\n' + (reportUrl || '') + '\n' + (c.verdict || ''))).slice(0, 32),
     type: ['VerifiableCredential', 'KolaboroDueDiligenceReport'], name: 'Kolaboro due diligence report',
-    description: 'Kolaboro delivered this report to the holder of case ' + c.code + '. Project details are as the buyer entered them. reportSha256 fingerprints the report file as published when this credential was issued.',
+    description: 'Kolaboro delivered this report to the holder of case ' + c.code + TB.kbx_acct__s.k3,
     issuer: { id: DID, name: 'Kolaboro' }, validFrom: at,
-    credentialSubject: { type: 'DueDiligenceReport', caseCode: c.code, stage: c.stage, verdict: c.verdict || null, reportUrl, reportSha256: reportSha, reportSha256Method: reportSha ? 'SHA-256 of the report file; for an HTML page, after removing its nonce="..." attributes (a fresh security nonce is stamped on every response)' : undefined, deliveredAt: at,
+    credentialSubject: { type: 'DueDiligenceReport', caseCode: c.code, stage: c.stage, verdict: c.verdict || null, reportUrl, reportSha256: reportSha, reportSha256Method: reportSha ? TB.kbx_acct__s.k4 : undefined, deliveredAt: at,
       project: { name: c.project_name || null, url: c.project_url || null, location: c.location || null, developer: c.developer || null, enteredBy: 'buyer' },
       demo: !!(me.user && me.user.demo) || undefined } };
   const vc = await issue(env, doc);

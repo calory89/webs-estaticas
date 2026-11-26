@@ -146,8 +146,8 @@ function cleanReport(o) {
 // Free text is written in that language; every quote stays verbatim in the page's own language, so the quote check is unchanged.
 const DESK_LANGS = { en: 'English', es: 'Spanish', de: 'German', fr: 'French', nl: 'Dutch', ru: 'Russian', zh: 'Simplified Chinese', ar: 'Arabic' };
 const deskLang = v => { const l = String(v || '').toLowerCase().slice(0, 2); return Object.prototype.hasOwnProperty.call(DESK_LANGS, l) ? l : 'en'; };
-const deskLangRule = l => l === 'en' ? '' : '\n\nLanguage of the report: the buyer reads it in ' + DESK_LANGS[l] + '. Write "site_about", "property_type", "location", "price_from", "lease_years", "completion", "advertised_return", "permit_claim", "payment_plan", every "claim" in "promises", every item of "questions" and "missing", and "summary" in ' + DESK_LANGS[l] + '. Write numbers with the digits 0-9.' +
-  ' Do NOT translate any quote: every "quote", every value in "quotes", every "summary_quotes" item and "ai_instructions_quote" stay copied character for character from the page, in the language the page is written in. Keep names of projects, developers and companies as the page writes them. Keep the JSON keys and the fixed values of "page_kind", "title_type" and "attention" exactly as listed above, in English.';
+const deskLangRule = l => l === 'en' ? '' : '\n\nLanguage of the report: the buyer reads it in ' + DESK_LANGS[l] + TB.kolaboro__s.k0 + DESK_LANGS[l] + '. Write numbers with the digits 0-9.' +
+  TB.kolaboro__s.k1;
 // the two sentences deskReview adds itself, in the report language; field labels for the second-reader disagreement note
 const DESK_T = TB.kolaboro_DESK_T /* n40 k5: in /data/i18n/kolaboro.json */;
 const _psha = {}; const promptSha = l => _psha[l || 'en'] || (_psha[l || 'en'] = sha(DESK_SYSTEM + '\n' + PROMPT + deskLangRule(l || 'en')));
@@ -560,17 +560,7 @@ async function analyze(req, env, ctx) {
 }
 
 
-const COPILOT_PROMPT = `You are the Kolaboro agent copilot. Kolaboro trains local people (not lawyers) to verify off-plan property for overseas buyers. A junior agent pastes text from documents about ONE property (land certificate, brochure, contract, permit, developer messages). Your job: tell the agent exactly what is inconsistent, what to ask for, what to check on site, and when to escalate to a notary or lawyer. Be concrete and short. Never give legal conclusions; flag and route.
-Reply with ONLY one JSON object:
-{
- "inconsistencies": [{"topic": string, "a": string, "b": string, "severity": "low"|"medium"|"high", "why": string}],
- "ask_for": [up to 6 precise documents or answers the agent must request, each naming who to ask],
- "check_on_site": [up to 6 things to verify physically, each measurable],
- "escalate": {"needed": true|false, "to": "notary"|"lawyer"|"surveyor"|"none", "why": string},
- "status": "go"|"hold"|"stop_and_escalate",
- "summary": "two sentences for the agent"
-}
-Use the documents' own words in "a" and "b". Keep every string under 30 words.`;
+/* COPILOT_PROMPT: n40 k17, in /data/i18n/k17s.json */
 
 async function copilot(req, env, ctx) {
   if (!env.ANTHROPIC_API_KEY) return json({ error: 'not_configured' }, 503);
@@ -584,7 +574,7 @@ async function copilot(req, env, ctx) {
   if (hit) { const d = await hit.json(); return json({ ...d, cached: true }); }
   if (await rateLimited(req, ctx)) return json({ error: 'rate' }, 429);
   let out;
-  try { out = await claude(env, COPILOT_PROMPT + '\n\nMilestone or stage: ' + String(b.stage || 'pre-purchase').slice(0, 60) + '\n\n' + body); }
+  try { out = await claude(env, TB.kolaboro__s.COPILOT_PROMPT + '\n\nMilestone or stage: ' + String(b.stage || 'pre-purchase').slice(0, 60) + '\n\n' + body); }
   catch (e) { return json({ error: 'model' }, 503); }
   const res = { analysed: new Date().toISOString(), copilot: out };
   ctx.waitUntil(caches.default.put(ck, new Response(JSON.stringify(res), { headers: { 'content-type': 'application/json', 'cache-control': 'max-age=604800' } })));
@@ -657,20 +647,7 @@ export async function api(req, u, env, ctx) {
 }
 
 // ---------- Plan vs reality: vision check of site photos against what was sold ----------
-const PROGRESS_PROMPT = `You are the Kolaboro progress checker. A local agent photographed an off-plan construction site before the buyer pays the next instalment. You get the site photos, optionally a render or plan from the developer's brochure, and what the developer claims about the current stage.
-Judge ONLY what is visible. Never guess about things you cannot see; say so instead.
-Reply with ONLY one JSON object:
-{
- "observed_stage": "land clearing"|"foundations"|"structure"|"roof"|"walls and openings"|"finishes"|"complete"|"unclear",
- "built_pct": integer 0-100 (your estimate of physical completion of the whole building from the photos),
- "confidence": "low"|"medium"|"high",
- "elements": [{"item": string, "expected": string, "observed": string, "status": "matches"|"differs"|"missing"|"not visible"}],
- "discrepancies": [up to 5 concrete differences between what is sold or claimed and what is visible],
- "pay_signal": "consistent"|"ahead_of_works"|"cannot_tell",
- "retake": [up to 4 specific photos the agent should take to raise confidence, each naming angle and subject],
- "summary": "two sentences for the buyer"
-}
-pay_signal compares the share already paid (if given) to built_pct: "ahead_of_works" when payments exceed visible works by more than 15 points. Keep strings under 25 words.`;
+/* PROGRESS_PROMPT: n40 k17, in /data/i18n/k17s.json */
 
 function parseJson(t) {
   const m = t.match(/\{[\s\S]*\}/); if (!m) throw new Error('no json');
@@ -703,7 +680,7 @@ function parseJson(t) {
 async function claudeVision(env, content, maxTokens) {
   let last = '';
   for (const model of ['claude-sonnet-5-5', 'claude-haiku-5-5']) {
-    const r = await anthropic(env, { model, max_tokens: maxTokens || 2500, system: 'Reply with one valid JSON object only. Inside JSON strings never use unescaped double quotes: use single quotes or the typographic quotes the document uses.', messages: [{ role: 'user', content }] });
+    const r = await anthropic(env, { model, max_tokens: maxTokens || 2500, system: TB.kolaboro__s.k2, messages: [{ role: 'user', content }] });
     if (r.status === 404 || (r.status === 400 && !last)) { last = model + ' ' + r.status + ' ' + (await r.text()).slice(0, 200); continue; }
     if (!r.ok) { last = 'model ' + r.status + ' ' + (await r.text()).slice(0, 160); if (r.status >= 500 || r.status === 429) continue; throw new Error(last); }
     const d = await r.json();
@@ -732,7 +709,7 @@ async function progress(req, env, ctx) {
   const content = [];
   photos.forEach((p, i) => { content.push({ type: 'text', text: 'Site photo ' + (i + 1) + ':' }); content.push(p); });
   if (plan) { content.push({ type: 'text', text: 'Render or plan from the developer brochure:' }); content.push(plan); }
-  content.push({ type: 'text', text: PROGRESS_PROMPT + '\n\nDeveloper claim about this stage: ' + (claim || 'not given') + '\nShare of the price already paid by the buyer: ' + (paid ? paid + '%' : 'not given') });
+  content.push({ type: 'text', text: TB.kolaboro__s.PROGRESS_PROMPT + '\n\nDeveloper claim about this stage: ' + (claim || 'not given') + '\nShare of the price already paid by the buyer: ' + (paid ? paid + '%' : 'not given') });
   let out;
   try { out = await claudeVision(env, content); }
   catch (e) { return json({ error: 'model', detail: String(e.message || e).replace(/sk-[\w-]+/g, '') }, 503); }
@@ -855,22 +832,7 @@ async function stamp(req, env, ctx) {
 }
 
 // ---------- Land certificate reader (Indonesian SHM / SHGB / Hak Pakai) ----------
-const CERT_PROMPT = `You read photos of Indonesian land certificates (Sertipikat Hak Milik, Hak Guna Bangunan, Hak Pakai) for Kolaboro, which protects foreign property buyers. Transcribe only what is legible; never invent. Then compare with the buyer's claim text if given.
-Reply with ONLY one JSON object:
-{
- "document_type": "SHM"|"SHGB"|"Hak Pakai"|"Hak Sewa"|"not a land certificate"|"unclear",
- "certificate_number": string|null, "nib": string|null, "surat_ukur": string|null,
- "area_m2": number|null, "village": string|null, "district": string|null, "regency": string|null, "province": string|null,
- "holder": string|null, "holder_type": "individual"|"company"|"unclear",
- "issued": string|null, "expires": string|null,
- "encumbrances": [strings: e.g. Hak Tanggungan (mortgage), blokir, notes in the endorsement pages],
- "legibility": "good"|"partial"|"poor",
- "mismatches": [{"field": string, "certificate": string, "claim": string, "severity": "low"|"medium"|"high"}],
- "flags": [up to 6 plain-English risk notes for a foreign buyer, each tied to what is on the document],
- "next_checks": [up to 5 things the agent must verify at the land office (BPN) or with a notary],
- "summary": "two sentences for the buyer"
-}
-Rules for flags: foreigners cannot hold SHM; SHGB and Hak Pakai expire and need extension; a company holder needs its deed and NIB checked; a mortgage (Hak Tanggungan) must be lifted before transfer. Keep strings under 30 words.`;
+/* CERT_PROMPT: n40 k17, in /data/i18n/k17s.json */
 
 async function certificate(req, env, ctx) {
   if (!env.ANTHROPIC_API_KEY) return json({ error: 'not_configured' }, 503);
@@ -885,7 +847,7 @@ async function certificate(req, env, ctx) {
   const hit = await caches.default.match(ck); if (hit) { const d = await hit.json(); return json({ ...d, cached: true }); }
   if (await rateLimited(req, ctx)) return json({ error: 'rate' }, 429);
   let out;
-  try { out = await claudeVision(env, [{ type: 'image', source: { type: 'base64', media_type: m[1], data: m[3] } }, { type: 'text', text: CERT_PROMPT + langRule(lang) + '\n\nWhat the developer or brochure claims about this land: ' + (claim || 'not given') }]); }
+  try { out = await claudeVision(env, [{ type: 'image', source: { type: 'base64', media_type: m[1], data: m[3] } }, { type: 'text', text: TB.kolaboro__s.CERT_PROMPT + langRule(lang) + '\n\nWhat the developer or brochure claims about this land: ' + (claim || 'not given') }]); }
   catch (e) { return json({ error: 'model', detail: String(e.message || e).replace(/sk-[\w-]+/g, '') }, 503); }
   const res = { analysed: new Date().toISOString(), certificate: out };
   ctx.waitUntil(caches.default.put(ck, new Response(JSON.stringify(res), { headers: { 'content-type': 'application/json', 'cache-control': 'max-age=604800' } })));
@@ -895,7 +857,7 @@ async function certificate(req, env, ctx) {
 
 // ---------- Any property document: permit (PBG/IMB/SLF), sale contract (PPJB/AJB), company deed (Akta/NIB), invoice or receipt ----------
 const LANGS = { en: 'English', es: 'Spanish', de: 'German', fr: 'French', nl: 'Dutch', ru: 'Russian', zh: 'Simplified Chinese', id: 'Indonesian' };
-function langRule(l) { return l && l !== 'en' ? '\n\nWrite every explanation (summary, flags, risks, next checks, mismatch descriptions) in ' + LANGS[l] + '. Keep transcribed values (names, numbers, dates, legal terms) exactly as written on the document.' : ''; }
+function langRule(l) { return l && l !== 'en' ? '\n\nWrite every explanation (summary, flags, risks, next checks, mismatch descriptions) in ' + LANGS[l] + TB.kolaboro__s.k3 : ''; }
 const DOC_TYPES = {
   permit: 'a building permit or related approval (Indonesia: PBG, old IMB, SLF, KKPR/zoning; elsewhere the local equivalent). Extract permit number, holder, address/plot, permitted use, floors, building area, issue date, issuing office. Flag: holder differs from the developer, use not residential/tourism as sold, more floors/units sold than permitted, permit for a different plot, SLF (fit-for-use) missing for a finished building.',
   contract: 'a property sale or reservation contract (Indonesia: PPJB, AJB, lease agreement; or any off-plan SPA). Extract parties, property, price, payment schedule, completion date, title type, lease term and extension, penalties for late delivery, refund rights, governing law, who holds the title until transfer. In "clauses" list the clauses that put the buyer at risk (unilateral date changes, no penalty for delay, payments not tied to construction milestones, nominee structures, forfeit of all payments on buyer default, extension "promised" without fixed price, dispute forum far from the buyer).',
@@ -951,11 +913,7 @@ async function documentRead(req, env, ctx) {
 
 
 // ---------- Payment plan reader: contract or payment schedule -> instalments the buyer confirms before saving ----------
-const PLAN_PROMPT = `You read a property purchase contract, reservation form or payment schedule for an off-plan property.
-Extract ONLY the payment instalments the buyer must pay, exactly as written. Do not invent dates or amounts: if the document gives a milestone instead of a date, leave "due" empty and put the milestone. If an amount is a percentage, write it as written (for example "30% of the price") and add the computed amount in brackets only if the price is stated.
-Reply with ONLY one JSON object:
-{"currency": "EUR or the currency used", "total_price": "as written or empty", "instalments": [{"label": "short name, e.g. Deposit, 2nd instalment", "due": "YYYY-MM-DD or empty", "amount": "as written", "milestone": "what triggers it, or empty", "quote": "the exact words in the document, under 25 words"}], "notes": "one sentence on anything unusual about the payment terms, or empty"}
-If the document has no payment terms, reply {"instalments": [], "notes": "No payment terms found in this document."}`;
+/* PLAN_PROMPT: n40 k17, in /data/i18n/k17s.json */
 async function planRead(req, env, ctx) {
   if (!env.ANTHROPIC_API_KEY) return json({ error: 'not_configured' }, 503);
   const raw = await req.text(); if (raw.length > 4000000) return json({ error: 'too_big' }, 413);
@@ -972,7 +930,7 @@ async function planRead(req, env, ctx) {
   const ck = new Request('https://kolaboro.com/__kb_plan/' + key);
   const hit = await caches.default.match(ck); if (hit) { const d = await hit.json(); return json({ ...d, cached: true }); }
   if (await rateLimited(req, ctx)) return json({ error: 'rate' }, 429);
-  content.push({ type: 'text', text: PLAN_PROMPT + (text ? '\n\nDocument text pasted by the buyer:\n' + text : '') });
+  content.push({ type: 'text', text: TB.kolaboro__s.PLAN_PROMPT + (text ? '\n\nDocument text pasted by the buyer:\n' + text : '') });
   let out;
   try { out = await claudeVision(env, content, 2500); }
   catch (e) { return json({ error: 'model', detail: String(e.message || e).replace(/sk-[\w-]+/g, '') }, 503); }
@@ -984,20 +942,7 @@ async function planRead(req, env, ctx) {
 }
 
 // ---------- Report draft from the evidence (reviewer edits and publishes it in the admin) ----------
-const REPORT_PROMPT = `You are the Kolaboro report writer. A buyer abroad paid us to check an off-plan property before paying. Below is everything in their case: what the developer advertises, the documents we read, the agent's site photos and notes (with GPS and time), satellite comparisons and the buyer's notes.
-Write the DRAFT of the final report. A human reviewer will edit it before it is sent, and every change they make is recorded.
-Rules: use only the evidence given; cite evidence ids in each finding; say "not checked yet" instead of guessing; never accuse anyone; plain English; the buyer is not a lawyer.
-Reply with ONLY one JSON object:
-{
- "verdict": "safe"|"hold"|"stop",
- "headline": "one sentence the buyer reads first",
- "summary": "3 to 5 sentences",
- "findings": [{"area": "title"|"permit"|"developer"|"progress"|"payments"|"contract"|"returns"|"other", "status": "ok"|"concern"|"red_flag"|"not_checked", "text": "what we found and why it matters, under 45 words", "evidence": [ids]}],
- "before_next_payment": ["up to 5 concrete things to get or do before paying again"],
- "questions_for_developer": ["up to 6 precise questions"],
- "limits": "one sentence on what this check could not cover"
-}
-verdict: "safe" only when title, permit and progress are each supported by evidence and nothing is a red flag; "stop" when any red flag concerns title, permit, money or progress far behind payments; otherwise "hold".`;
+/* REPORT_PROMPT: n40 k17, in /data/i18n/k17s.json */
 
 async function reportDraft(req, env, ctx) {
   if (!env.ANTHROPIC_API_KEY) return json({ error: 'not_configured' }, 503);
@@ -1008,7 +953,7 @@ async function reportDraft(req, env, ctx) {
     text: m.text || null, summary: r.summary || m.summary || null, flags: r.flags || null, mismatches: r.mismatches || null, area_m2: r.area_m2 || null, holder: r.holder || null, document_type: r.document_type || m.type || null, change: m.change, risky_clauses: r.risky_clauses || r.clauses || null }; });
   const ctxt = JSON.stringify({ case: input.case, evidence: ev, tasks: (input.tasks || []).map(t => ({ kind: t.kind, status: t.status, agent_note: t.agent_note })) }).slice(0, 60000);
   let out;
-  try { out = await claude(env, REPORT_PROMPT + '\n\nCASE FILE (JSON):\n' + ctxt); }
+  try { out = await claude(env, TB.kolaboro__s.REPORT_PROMPT + '\n\nCASE FILE (JSON):\n' + ctxt); }
   catch (e) { return json({ error: 'model', detail: String(e.message || e).replace(/sk-[\w-]+/g, '') }, 503); }
   if (!['safe', 'hold', 'stop'].includes(out.verdict)) out.verdict = 'hold';
   let saved = {}; try { saved = await rpc('kolaboro_ops2', { p_key: String(b.key || ''), p_action: 'report_save', p_payload: { case_code: input.case.code, draft: out, model: MODELS.join('/') } }); } catch (e) {}
@@ -1040,7 +985,7 @@ function cors(r) { const h = new Headers(r.headers); h.set('access-control-allow
 const HONEY_API = '2466ab2fe25f1162fbe9a6aeebfa2dee031873a44164b20f4818715e78013c52';
 // n36e: a 401 on the partner endpoints says which key works where (a free kb_live_ key from /api-keys/ is for /api/x/k/m/*)
 export const PILOT_401 = key => ({ error: /^kb_live_/.test(key || '') ? 'wrong_key_type' : 'missing_key', how: 'https://kolaboro.com/api-pilot',
-  note: 'This endpoint takes a partner pilot key (x-api-key: kb_pilot_...). No key needed: GET /api/open/* (same data). Free self-serve key (kb_live_..., https://kolaboro.com/api-keys/): GET /api/x/k/m/<path>, the metered copy of /api/open/<path>. Public sandbox key for the partner feed: x-api-key: kb_sandbox_public on /api/x/z/*.',
+  note: TB.kolaboro__s.k4,
   open: 'https://kolaboro.com/api/open', free_keys: 'https://kolaboro.com/api-keys/', docs: 'https://kolaboro.com/docs/api/' });
 async function apiV1(req, u, env, ctx) {
   if (req.method === 'OPTIONS') return cors(new Response(null, { status: 204 }));
@@ -1222,10 +1167,10 @@ async function extraRoutes(req, u, path, env) {
     if (!r || !r.day) return openResp({ error: 'no snapshot on or before this day', first_snapshot: '2026-11-03' }, null, 300);
     if (!r.project) return openResp({ error: 'project not in the dataset on that day', snapshot_day: r.day, days_available: r.days_available }, null, 300);
     return openResp({ asked_for: tm[2], snapshot_day: r.day, dataset_sha256: r.dataset_sha256, matches_public_log: r.matches_log, project: openProject(r.project), history: r.project.history || [],
-      note: r.matches_log ? 'The snapshot hashes to the dataset_sha256 recorded in that day\'s public log line (kolaboro.com/log).' : 'Snapshot taken after that day\'s log line was computed, so it is not covered by the log. Snapshots and log lines are taken together from 4 Nov 2026.' }, null, 3600);
+      note: r.matches_log ? TB.kolaboro__s.k5 : TB.kolaboro__s.k6 }, null, 3600);
   }
   const pm = path.match(/^\/api\/open\/pdf\/([0-9a-fA-F]{64})$/);
-  if (pm) { try { return openResp(Object.assign({ note: 'A registered PDF was created by the Kolaboro portal with exactly these bytes. Any edit, even one character, changes the SHA-256.' }, await rpc('kolaboro_pdf_lookup', { p_sha256: pm[1] })), null, 60); } catch (e) { return openResp({ error: 'unavailable' }, null, 30); } }
+  if (pm) { try { return openResp(Object.assign({ note: TB.kolaboro__s.k7 }, await rpc('kolaboro_pdf_lookup', { p_sha256: pm[1] })), null, 60); } catch (e) { return openResp({ error: 'unavailable' }, null, 30); } }
   if (path === '/api/open/ai-spend') { try { return openResp(await rpc('kolaboro_ai_spend_public', {}), null, 300); } catch (e) { return openResp({ error: 'unavailable' }, null, 30); } }
   if (path === '/api/open/security') { let h = null; try { h = await rpc('kolaboro_honey_public', {}); } catch (e) {} let z = null; try { const r = await env.ASSETS.fetch(new Request('https://kolaboro.com/_s/kolaboro.com/data/security-scan.json')); if (r.ok) z = await r.json(); } catch (e) {} return openResp({ scan: z, honeytokens: h }, null, 300); }
   if (path === '/api/open/build') return openResp({ commit: (env && env.CF_PAGES_COMMIT_SHA) || null, branch: (env && env.CF_PAGES_BRANCH) || null, source: 'https://github.com/calory89 (private repository; the commit id is shown so changes can be dated)' }, null, 60);
@@ -1400,14 +1345,14 @@ async function openRoutes(req, u, path, L, env) {
   if (rm) { let r = null; try { r = await rpc('kolaboro_evidence_receipt', { p_id: +rm[1] }); } catch (e) {}
     if (!r || r.error) return new Response(JSON.stringify({ error: 'not_found' }), { status: 404, headers: { 'content-type': 'application/json', 'access-control-allow-origin': '*' } });
     if (r.passkey) r.passkey_check = await verifyPasskey(r.passkey, r.sha256, r.passkey.code || '');
-    return openResp({ receipt: 'kolaboro-evidence-receipt-v1', ...r, note: 'This answer is signed by Kolaboro (x-kolaboro-signature). Check the signature with the public key at /.well-known/kolaboro-keys.json, and the file with its SHA-256.' }, null, 300); }
+    return openResp({ receipt: 'kolaboro-evidence-receipt-v1', ...r, note: TB.kolaboro__s.k8 }, null, 300); }
   const pm = dpath.match(/^\/api\/open\/proof\/([A-Za-z0-9 -]{3,20})$/);
   if (pm) {
     const c = cases.find(x => x.id.toLowerCase() === pm[1].toLowerCase());
     if (!c || !/^[0-9a-f]{64}$/.test(fpOf(c))) return new Response(JSON.stringify({ error: 'not_found' }), { status: 404, headers: { 'content-type': 'application/json', 'access-control-allow-origin': '*' } });
     const lines = fpLines(cases), line = c.id + ' ' + fpOf(c), idx = lines.indexOf(line), m = await merkle(lines, idx);
     return openResp({ project: c.id, page_fingerprint_date: (c.fp && c.fp.date) || null, line, leaf: toHex(await mLeaf(line)), index: idx, leaves: lines.length, path: m.path, projects_root: m.root, dataset_sha256: L.sha, updated: d.updated,
-      method: 'leaf = SHA-256(0x00 || line); node = SHA-256(0x01 || left || right); an unpaired last node is promoted; lines are "ID SHA256" for every project with a page fingerprint, sorted. The root is recorded daily in the public log at kolaboro.com/log and timestamped in Bitcoin.' });
+      method: TB.kolaboro__s.k9 });
   }
   if (path === '/api/open/changes') {
     const since = /^\d{4}-\d{2}-\d{2}$/.test(u.searchParams.get('since') || '') ? u.searchParams.get('since') : new Date(Date.now() - 7 * 864e5).toISOString().slice(0, 10), out = [];
@@ -1426,7 +1371,7 @@ async function openRoutes(req, u, path, L, env) {
   }
   if (path === '/api/open/stats') return openResp({ ...meta, projects: cases.length, markets: d.markets, ...(d.db || {}), countries: nCountries });
   if (path === '/api/open/summary') { let ships = (d.ships || []).slice(0, 20); try { ships = (await import('./kbx_ticker.js')).mergeShips(await (await import('./kbx_ticker.js')).tickerItems(env), d.ships || []); } catch (e) {} return openResp({ updated: d.updated, projects: cases.length, markets: d.markets, countries: nCountries, db: Object.assign({}, d.db || {}, { countries: nCountries }), seal: d.seal || null, ships }); }
-  if (path === '/api/open/markets') return openResp({ ...meta, method: 'transparency_index = 60% average public-disclosure score + 30% average confirmed score + 10% share without public problems; markets with 3+ projects', markets: marketStats(cases) });
+  if (path === '/api/open/markets') return openResp({ ...meta, method: TB.kolaboro__s.k10, markets: marketStats(cases) });
   if (path === '/api/open/markets.csv') { const m = marketStats(cases), k = Object.keys(m[0] || {}); return openResp([k.join(',')].concat(m.map(r => k.map(x => csvCell(r[x])).join(','))).join('\n'), 'text/csv; charset=utf-8'); }
   if (path === '/api/open/projects' || path === '/api/open/projects.csv') {
     const all = filterCases(cases, u.searchParams), off = Math.max(0, +u.searchParams.get('offset') || 0), lim = Math.min(1000, Math.max(1, +u.searchParams.get('limit') || 1000));
@@ -1458,7 +1403,7 @@ async function openRoutes(req, u, path, L, env) {
     const list = items.filter(x => !alertsOnly || /past the promised|from space|not approved|not in the approved/.test(x.title)).sort((a, b) => (b.date || '').localeCompare(a.date || '')).slice(0, 100);
     const title = alertsOnly ? 'Kolaboro alerts: overdue, stalled and unapproved projects' : 'Kolaboro: ' + (pool.length && new Set(pool.map(c => c.market)).size > 1 ? pool[0].country : (pool[0] ? pool[0].market : mk)) + ' changes';
     if (path.endsWith('.json')) return openResp({ version: 'https://jsonfeed.org/version/1.1', title, home_page_url: 'https://kolaboro.com/database', items: list.map(x => ({ id: x.id, url: x.url, title: x.title, content_text: x.title, date_published: x.date + 'T12:00:00Z' })) }, 'application/feed+json; charset=utf-8');
-    return openResp('<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel><title>' + xesc(title) + '</title><link>https://kolaboro.com/database</link><description>Changes on developer pages and alerts from the Kolaboro database. Projects appear by id.</description>' +
+    return openResp('<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel><title>' + xesc(title) + TB.kolaboro__s.k11 +
       list.map(x => '<item><title>' + xesc(x.title) + '</title><link>' + x.url + '</link><guid isPermaLink="false">' + xesc(x.id) + '</guid><pubDate>' + new Date((x.date || d.updated) + 'T12:00:00Z').toUTCString() + '</pubDate></item>').join('') + '</channel></rss>', 'application/rss+xml; charset=utf-8');
   }
   const bm = path.match(/^\/api\/open\/badge\/([A-Za-z0-9-]{3,20})\.svg$/);
@@ -1468,7 +1413,7 @@ async function openRoutes(req, u, path, L, env) {
     const col = !c ? '#59626B' : (c.flags || []).length ? '#B83A05' : c.score >= 5 && (c.vscore || 0) >= 3 ? '#0B7A55' : c.score >= 3 ? '#9A6B00' : '#B83A05';
     const w1 = 66, w2 = 8 + L.length * 6.4, W = Math.round(w1 + w2);
     const svg = '<svg xmlns="http://www.w3.org/2000/svg" width="' + W + '" height="22" role="img" aria-label="Kolaboro: ' + xesc(L) + '"><title>Kolaboro: ' + xesc(L) + (c ? ' (checked ' + xesc(c.checked || d.updated) + ')' : '') + '</title><rect width="' + W + '" height="22" rx="4" fill="#17212B"/><rect x="' + w1 + '" width="' + (W - w1) + '" height="22" rx="4" fill="' + col + '"/><rect x="' + w1 + '" width="6" height="22" fill="' + col + '"/>' +
-      '<g fill="#fff" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11"><circle cx="10" cy="11" r="3.5" fill="#FF5B14"/><text x="18" y="15">kolaboro</text><text x="' + (w1 + 6) + '" y="15">' + xesc(L) + '</text></g></svg>';
+      TB.kolaboro__s.k12 + (w1 + 6) + '" y="15">' + xesc(L) + '</text></g></svg>';
     return new Response(svg, { headers: { 'content-type': 'image/svg+xml; charset=utf-8', 'cache-control': 'public, max-age=3600', 'access-control-allow-origin': '*' } });
   }
   if (path === '/feed.json' || path === '/feed.xml') {
@@ -1479,7 +1424,7 @@ async function openRoutes(req, u, path, L, env) {
     const fid = t => { let h = 5381; for (let i = 0; i < t.length; i++) h = ((h << 5) + h + t.charCodeAt(i)) >>> 0; return h.toString(36); };
     const items = ships.map(s => ({ id: 'kolaboro-' + s.d + '-' + fid(String(s.t)), date: s.d + 'T12:00:00Z', title: s.t, tag: s.k }));
     if (path === '/feed.json') return openResp({ version: 'https://jsonfeed.org/version/1.1', title: 'Kolaboro: what we shipped', home_page_url: 'https://kolaboro.com/changelog/', feed_url: 'https://kolaboro.com/feed.json', items: items.map(x => ({ id: x.id, url: 'https://kolaboro.com/changelog/', title: x.title, content_text: x.title, date_published: x.date, tags: [x.tag] })) }, 'application/feed+json; charset=utf-8');
-    const rss = '<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kolaboro: what we shipped</title><link>https://kolaboro.com/changelog/</link><atom:link href="https://kolaboro.com/feed.xml" rel="self" type="application/rss+xml"/><description>New data and features, every day.</description>' +
+    const rss = TB.kolaboro__s.k13 +
       items.map(x => '<item><title>' + xesc(x.title) + '</title><link>https://kolaboro.com/changelog/</link><guid isPermaLink="false">' + x.id + '</guid><pubDate>' + new Date(x.date).toUTCString() + '</pubDate><category>' + x.tag + '</category></item>').join('') + '</channel></rss>';
     return openResp(rss, 'application/rss+xml; charset=utf-8');
   }
@@ -1502,13 +1447,13 @@ async function telegram(req, env, ctx) {
   const chat = msg.chat.id, text = String(msg.text || '');
   const link = (text.match(/https?:\/\/[^\s<>"]+/) || [])[0];
   ctx.waitUntil((async () => {
-    if (!link) return tgSend(env, chat, 'Send me the link to an off-plan project page and I will tell you what it promises, what it leaves out and what to ask before you pay. Free, about a minute.\n\nFull database: https://kolaboro.com/database');
+    if (!link) return tgSend(env, chat, TB.kolaboro__s.k14);
     await tgSend(env, chat, 'Reading the page… about a minute.');
     const fake = new Request('https://kolaboro.com/api/kb/analyze', { method: 'POST', headers: { 'content-type': 'application/json', 'cf-connecting-ip': 'tg-' + chat }, body: JSON.stringify({ url: link }) });
     let d; try { d = await (await analyze(fake, env, ctx)).json(); } catch (e) { d = { error: 'fetch' }; }
-    if (d.error) return tgSend(env, chat, d.error === 'rate' ? 'Too many checks right now. Try again in a few minutes.' : 'I could not read that page. Try the project or developer page itself, or use https://kolaboro.com/check');
+    if (d.error) return tgSend(env, chat, d.error === 'rate' ? 'Too many checks right now. Try again in a few minutes.' : TB.kolaboro__s.k15);
     const r = d.report || {}, L = [];
-    if (d.not_property || r.page_kind === 'not_real_estate') return tgSend(env, chat, tgEsc(d.host) + ' is not a property project' + (r.site_about ? ' (' + tgEsc(r.site_about) + ')' : '') + ', so there is nothing to check.\n\nSend me the link to an off-plan project, a developer website or a property listing.');
+    if (d.not_property || r.page_kind === 'not_real_estate') return tgSend(env, chat, tgEsc(d.host) + ' is not a property project' + (r.site_about ? ' (' + tgEsc(r.site_about) + ')' : '') + TB.kolaboro__s.k16);
     L.push('<b>' + tgEsc(r.project || d.host) + '</b>' + (r.location ? ' · ' + tgEsc(r.location) : ''));
     L.push('Attention needed: <b>' + tgEsc(r.attention || 'unknown') + '</b>');
     if (r.summary) L.push(tgEsc(r.summary));
@@ -1522,10 +1467,7 @@ async function telegram(req, env, ctx) {
 }
 
 // ---------- Ask the database: plain-language questions answered only from the published data ----------
-const ASK_PROMPT = `You answer questions about the Kolaboro database of off-plan property projects. Use ONLY the data below. Projects are anonymous (ids like BALI-014); never guess names, developers or facts that are not in the data. If the data cannot answer, say what it can tell instead.
-Definitions: six public checks per project (permit number public, deposit protection, construction progress, plans, developer track record, no guaranteed returns); score = how many are public (0-6); confirmed (vscore) = how many are confirmed by an official registry or independent source; claims = developer claims tested (verified, unverified, contradicted); overdue = months past the promised handover; transparency index = 60% avg score/6 + 30% avg confirmed/6 + 10% share without public problems.
-A high score means documents are public, not that they are genuine. Not financial or legal advice.
-Reply with ONLY one JSON object: {"answer": "2 to 5 plain sentences with the key numbers", "numbers": [{"label": "short", "value": "short"}] (0 to 4), "projects": ["ids worth opening, max 6"], "follow_up": ["up to 2 short follow-up questions"]}`;
+/* ASK_PROMPT: n40 k17, in /data/i18n/k17s.json */
 export async function ask(req, env, ctx) {
   if (!env.ANTHROPIC_API_KEY) return json({ error: 'not_configured' }, 503);
   let b; try { b = await req.json(); } catch (e) { return json({ error: 'bad_request' }, 400); }
@@ -1542,9 +1484,9 @@ export async function ask(req, env, ctx) {
   const row = c => [c.id, c.market, c.stage || '', c.band || '', c.done || '', c.title || '', c.score, c.vscore ?? '', (c.checks || {}).permit === 2 ? 'permit' : '', (c.checks || {}).escrow === true ? 'escrow' : '', c.overdue || '', c.delay || '', (c.claims || {}).contradicted || 0, (c.flags || []).length].join('|');
   const db = d.db || {};
   const ctxt = 'DATA updated ' + d.updated + '\nTOTALS: ' + JSON.stringify({ projects: cases.length, markets: d.markets, countries: new Set(cases.map(c => ({ 'Puerto Rico (USA)': 'Puerto Rico', 'St Lucia': 'Saint Lucia' })[c.country] || c.country)).size, claims: db.claims, claims_total: db.claims_total, checks_by_level: db.checks_by_level, stages: db.stages, all_six_public: db.all_six_public, with_flags: db.with_flags, overdue: db.overdue, overdue_avg_months: db.overdue_avg_months, delayed: db.delayed }) +
-    '\nMARKETS (market|country|projects|avg_checks|avg_confirmed|permit_public_pct|deposit_protection_pct|all_six_public|with_flags|transparency_index):\n' + ms.join('\n') +
-    (pick.length ? '\nPROJECTS IN NAMED MARKETS (id|market|stage|band|completion|title|score|confirmed|permit|escrow|overdue_months|delay_months|contradicted_claims|flags):\n' + pick.map(row).join('\n') : '');
-  let out; try { out = await claude(env, ASK_PROMPT + '\n\n' + ctxt + '\n\nQUESTION: ' + q, null, null, 6000); } catch (e) { return json({ error: 'model' }, 503); }
+    TB.kolaboro__s.k17 + ms.join('\n') +
+    (pick.length ? TB.kolaboro__s.k18 + pick.map(row).join('\n') : '');
+  let out; try { out = await claude(env, TB.kolaboro__s.ASK_PROMPT + '\n\n' + ctxt + '\n\nQUESTION: ' + q, null, null, 6000); } catch (e) { return json({ error: 'model' }, 503); }
   const ids = new Set(cases.map(c => c.id));
   const res = { q, updated: d.updated, answer: String(out.answer || ''), numbers: (out.numbers || []).slice(0, 4), projects: (out.projects || []).filter(x => ids.has(x)).slice(0, 6), follow_up: (out.follow_up || []).slice(0, 2) };
   ctx.waitUntil(caches.default.put(ck, new Response(JSON.stringify(res), { headers: { 'content-type': 'application/json', 'cache-control': 'max-age=86400' } })));
@@ -1561,7 +1503,7 @@ export async function dataSitemap() {
   const cs = d.cases || [], mk = [...new Set(cs.map(c => c.market))];
   // project URLs live in the named-project sitemaps (/p/<id>/ now 301s to /projects/<slug>/); this one lists markets only
   const urls = [].concat(mk.map(m => '<url><loc>https://kolaboro.com/m/' + slugM(m) + '/</loc><lastmod>' + d.updated + '</lastmod></url>'));
-  return new Response('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + urls.join('') + '</urlset>', { headers: { 'content-type': 'application/xml; charset=utf-8', 'cache-control': 'public, max-age=3600' } });
+  return new Response(TB.kolaboro__s.k19 + urls.join('') + '</urlset>', { headers: { 'content-type': 'application/xml; charset=utf-8', 'cache-control': 'public, max-age=3600' } });
 }
 export async function ssr(base, u, kind, env) {
   let d; try { d = await openData(); } catch (e) { return base; }
@@ -1610,10 +1552,10 @@ export async function ssr(base, u, kind, env) {
     // n33l (items 68, 69): every project of the market is listed, each link named after the project (was the first 200, by id);
     // n33p (items 44, 56): markets of up to 200 projects also show area, developer and the handover date on record
     body = '<h2>Off-plan projects in ' + hesc(m) + (same31 ? '' : ', ' + hesc(L[0].country)) + '</h2><p>' + hesc(desc) + '</p>' + (L.length > 200   // r5u (batch 37): big markets keep every link, without the status words repeated on each line (page-weight budget)
-      ? '<p>For each project: buyer checks published, then confirmed, of 6; a dash means not yet reviewed by Kolaboro.</p><ul>' + L.slice(0, 300).map(x => '<li>' + pLink(x.id, false) + ' ' + (rv8(x) ? x.score + '/6, ' + (x.vscore || 0) + '/6' : '-') + '</li>').join('') + '</ul>' + (L.length > 300 ? '<p>The first 300 of ' + n + ' are listed here. <a href="/rankings/transparency/' + slugM(m) + '/">All ' + n + ' projects in ' + hesc(m) + ', ranked for transparency</a> · <a href="/search/?q=' + encodeURIComponent(m) + '">Search them</a></p>' : '')
+      ? TB.kolaboro__s.k20 + L.slice(0, 300).map(x => '<li>' + pLink(x.id, false) + ' ' + (rv8(x) ? x.score + '/6, ' + (x.vscore || 0) + '/6' : '-') + '</li>').join('') + '</ul>' + (L.length > 300 ? '<p>The first 300 of ' + n + ' are listed here. <a href="/rankings/transparency/' + slugM(m) + '/">All ' + n + ' projects in ' + hesc(m) + ', ranked for transparency</a> · <a href="/search/?q=' + encodeURIComponent(m) + '">Search them</a></p>' : '')
       : '<ul>' + L.map(x => '<li>' + pLink(x.id, true) + ': ' + (rv8(x) ? hesc(x.stage || 'off-plan') + ', ' + x.score + '/6 public, ' + (x.vscore || 0) + '/6 confirmed' : 'Not yet reviewed by Kolaboro') + '</li>').join('') + '</ul>');
     const cs8 = String(L[0].country === 'Puerto Rico (USA)' ? 'Puerto Rico' : L[0].country === 'St Lucia' ? 'Saint Lucia' : L[0].country).normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');   // same slug as /countries/<c>/ (kbx_seo.js)
-    body = '<p class="crumb"><a href="/">Kolaboro</a> / <a href="/countries/">Countries</a> / <a href="/countries/' + cs8 + '/">' + hesc(L[0].country) + '</a> / ' + hesc(m) + '</p>' + body + '<p><a href="/countries/' + cs8 + '/">All projects in ' + hesc(L[0].country) + '</a> · <a href="/data/changes/feed.atom?m=' + encodeURIComponent(m) + '" type="application/atom+xml">Atom feed of record changes in ' + hesc(m) + '</a> · <a href="/countries/' + cs8 + '/how-to-check/">How to check a project in ' + hesc(L[0].country) + '</a> · <a href="/rankings/most-delayed/">Most delayed projects</a> · <a href="/registers/">Official registers</a>' + (String(m).toLowerCase() !== 'sumba' && L.filter(x => RV(x.id)).length >= 8 ? ' · <a href="/stories/' + new Date().toISOString().slice(0, 7) + '/' + slugM(m) + '/">' + hesc(m) + ': this month\'s story</a>' : '') + placesForMarket(m).map(P => ' · <a href="/rankings/transparency/' + P.s + '/">Transparency ranking: ' + hesc(P.n) + '</a>').join('') + '</p>';
+    body = TB.kolaboro__s.k21 + cs8 + '/">' + hesc(L[0].country) + '</a> / ' + hesc(m) + '</p>' + body + '<p><a href="/countries/' + cs8 + '/">All projects in ' + hesc(L[0].country) + '</a> · <a href="/data/changes/feed.atom?m=' + encodeURIComponent(m) + '" type="application/atom+xml">Atom feed of record changes in ' + hesc(m) + '</a> · <a href="/countries/' + cs8 + '/how-to-check/">How to check a project in ' + hesc(L[0].country) + TB.kolaboro__s.k22 + (String(m).toLowerCase() !== 'sumba' && L.filter(x => RV(x.id)).length >= 8 ? ' · <a href="/stories/' + new Date().toISOString().slice(0, 7) + '/' + slugM(m) + '/">' + hesc(m) + ': this month\'s story</a>' : '') + placesForMarket(m).map(P => ' · <a href="/rankings/transparency/' + P.s + '/">Transparency ranking: ' + hesc(P.n) + '</a>').join('') + '</p>';
     // n29t (items 52, 53, 48, 46): the place itself as a Place inside its Country; the visible breadcrumb of the page (the shell's) shows
     // the same path as the BreadcrumbList; the market's own change feed is linked in <head>; the title fits in 60 characters
     ld = { '@context': 'https://schema.org', '@graph': [{ '@type': 'CollectionPage', name: title.replace(' | Kolaboro', ''), description: desc, url: canon, dateModified: d.updated, about: { '@id': canon + '#place' } }, { '@type': 'Place', '@id': canon + '#place', name: m, containedInPlace: { '@type': 'Country', name: L[0].country, url: 'https://kolaboro.com/countries/' + cs8 + '/' } }, { '@type': 'BreadcrumbList', itemListElement: [['Kolaboro', '/'], ['Countries', '/countries/'], [L[0].country, '/countries/' + cs8 + '/'], [m, '/m/' + slugM(m) + '/']].map((x, i) => ({ '@type': 'ListItem', position: i + 1, name: x[0], item: 'https://kolaboro.com' + x[1] })) }] };
@@ -1625,7 +1567,7 @@ export async function ssr(base, u, kind, env) {
   const nm = ((base.headers.get('content-security-policy-report-only') || '') + ' ' + (base.headers.get('content-security-policy') || '')).match(/'nonce-([A-Za-z0-9+/=]+)'/), nonceAttr = nm ? ' nonce="' + nm[1] + '"' : '';   // the JSON-LD block added here carries the response's nonce too
   // n22e: on market pages the pre-rendered list (removed by /m/m.js) and the still-empty body pushed the hero and the forecast section
   // around after first paint (layout shift 0.8 to 1.6). With scripting on, the list is not painted and the body keeps its room.
-  const cls22 = kind === 'p' ? '' : '<style>@media (scripting:enabled){#ssr.ssr-only{display:none}}#mk-body:empty{min-height:130vh}</style>';
+  const cls22 = kind === 'p' ? '' : TB.kolaboro__s.k23;
   const tags = cls22 + (kind === 'm' ? '<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">' : '') + '<title>' + hesc(title) + '</title><meta name="description" content="' + hesc(desc) + '"><link rel="canonical" href="' + canon + '"><meta property="og:title" content="' + hesc(title) + '"><meta property="og:description" content="' + hesc(desc) + '"><meta property="og:url" content="' + canon + '"><script' + nonceAttr + ' type="application/ld+json">' + JSON.stringify(ld).replace(/</g, '\\u003c') + '</script>';
   let seenTitle = false;
   const res = new HTMLRewriter()

@@ -16,7 +16,8 @@
 //   14 GET /manifest.webmanifest, /[lang/]offline/ installable app and the page the service worker (/sw.js) shows offline
 // Every JSON answer: CORS, ETag + If-None-Match 304, RateLimit-Policy / RateLimit (IETF draft) and X-RateLimit-*, edge cache headers.
 import { T } from './kbx_n30b_i18n.js';
-import { dqExtra, dqJson, loadT as n31cT } from './kbx_n31c.js';   // n31c (batch 31): gaps by place, automatic checks, stable ids
+import { dqExtra, dqJson, loadT as n31cT } from './kbx_n31c.js';
+import { TB } from './kbx_strings.js';   // n31c (batch 31): gaps by place, automatic checks, stable ids
 
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
@@ -96,7 +97,7 @@ async function chain(env) {
   let tip = null;
   if (!last || last.sha256 !== live.sha256) {
     const day = today(), prev = last ? last.head : 'genesis';
-    tip = { day, provisional: true, bytes: live.bytes, sha256: live.sha256, prev, head: await sha('kolaboro-snapshot-v1|' + day + '|/data/named.json|' + live.sha256 + '|' + live.bytes + '|' + prev), copy: '/data/named.json', note: 'The file served now; it becomes an entry with a copy when the snapshot script runs after the next publish.' };
+    tip = { day, provisional: true, bytes: live.bytes, sha256: live.sha256, prev, head: await sha('kolaboro-snapshot-v1|' + day + '|/data/named.json|' + live.sha256 + '|' + live.bytes + '|' + prev), copy: '/data/named.json', note: TB.kbx_n30b__s.k0 };
   }
   return Object.assign({}, idx, { api: 'kolaboro-snapshots-v1', live: { file: '/data/named.json', bytes: live.bytes, sha256: live.sha256, matches_entry: match }, provisional_tip: tip, chain_tip: tip ? tip.head : (last ? last.head : null),
     verify: { page: ORIGIN + '/data/snapshots/', public_keys: ORIGIN + '/.well-known/kolaboro-keys.json', signature: 'x-kolaboro-signature = base64 Ed25519 over "kolaboro-sig-v1\\n" + SHA-256 hex of this exact body' } });
@@ -109,32 +110,21 @@ async function snapPage(req, u, env, ctx, shell, lang) {
   const tipRow = c.provisional_tip ? '<tr class="sn-tip"><td>' + esc(fdt(c.provisional_tip.day, lang)) + ' <small>(' + esc(L.sn_tip) + ')</small></td><td></td><td>' + ar(lang, nf(c.provisional_tip.bytes / 1e6, lang, 2)) + ' MB</td><td><code title="' + c.provisional_tip.sha256 + '">' + short(c.provisional_tip.sha256) + '</code></td><td><code title="' + c.provisional_tip.head + '">' + short(c.provisional_tip.head) + '</code></td><td><a href="/data/named.json">named.json</a></td></tr>' : '';
   const msg = { wait: L.sn_verify_wait, ok_chain: L.sn_ok_chain, bad_chain: L.sn_bad_chain, ok_live: L.sn_ok_live, live_new: L.sn_live_new, sig_ok: L.sn_sig_ok, sig_no: L.sn_sig_no, sig_bad: L.sn_sig_bad, match: L.sn_match, nomatch: L.sn_nomatch, loc: LOC[lang] };
   const body = '<section class="phero"' + (lang === 'ar' ? ' dir="rtl"' : '') + '><div class="wrap"><p class="crumb"><a href="' + P + '/">' + esc(L.home) + '</a> / <a href="/data/">' + esc(L.data) + '</a> / ' + esc(L.sn_h1) + '</p><h1>' + esc(L.sn_h1) + '</h1><p class="lead">' + esc(L.sn_lead) + '</p></div></section>' +
-    '<div class="wrap n30" ' + (lang === 'ar' ? 'dir="rtl" ' : '') + 'id="sn" data-msg="' + esc(JSON.stringify(msg)) + '">' + CSS +
+    '<div class="wrap n30" ' + (lang === 'ar' ? 'dir="rtl" ' : '') + 'id="sn" data-msg="' + esc(JSON.stringify(msg)) + '">' + TB.kbx_n30b__s.CSS +
     '<h2>' + esc(L.sn_verify_h) + '</h2><p><button type="button" class="btn" id="sn-go">' + esc(L.sn_verify_btn) + '</button></p><ul class="n30-out" id="sn-out" role="status" aria-live="polite"></ul>' +
-    '<p><label for="sn-file">' + esc(L.sn_file_lbl) + '</label><br><input type="file" id="sn-file" accept=".json,.gz,application/json,application/gzip"> <small>' + esc(L.sn_nothing) + '</small></p><p id="sn-fout" role="status" aria-live="polite"></p>' +
+    '<p><label for="sn-file">' + esc(L.sn_file_lbl) + TB.kbx_n30b__s.k1 + esc(L.sn_nothing) + '</small></p><p id="sn-fout" role="status" aria-live="polite"></p>' +
     '<div class="n30-tw"><table class="n30-t"><thead><tr>' + L.sn_th.map(x => '<th scope="col">' + esc(x) + '</th>').join('') + '</tr></thead><tbody>' + tipRow + rows + '</tbody></table></div>' +
     '<p class="k-xs">' + esc(L.sn_note) + '</p>' +
-    '<h2>' + esc(L.sn_cli_h) + '</h2><p>' + esc(L.sn_cli) + '</p><h3>' + esc(L.sn_rule_h) + '</h3><pre dir="ltr" class="n30-pre">' + esc(c.head_rule) + '\n\ncurl -sO https://kolaboro.com' + esc(((c.entries || []).slice(-1)[0] || {}).copy || '/data/named.json') + '\ngunzip -c named.json.gz | sha256sum\nprintf \'%s\' "kolaboro-snapshot-v1|DAY|/data/named.json|SHA256|BYTES|PREV" | sha256sum</pre>' +
+    '<h2>' + esc(L.sn_cli_h) + '</h2><p>' + esc(L.sn_cli) + '</p><h3>' + esc(L.sn_rule_h) + '</h3><pre dir="ltr" class="n30-pre">' + esc(c.head_rule) + '\n\ncurl -sO https://kolaboro.com' + esc(((c.entries || []).slice(-1)[0] || {}).copy || '/data/named.json') + TB.kbx_n30b__s.k2 +
     '<p>' + fill(esc(L.sn_more), { log: '<a href="/log/">/log/</a>', api: '<a href="/api/v1/snapshots">/api/v1/snapshots</a>' }) + ' <a href="' + P + '/api/docs/">API v1</a> · <a href="' + P + '/engineering/data-quality/">' + esc(T[lang].dq_h1) + '</a></p>' + X34 + '</div>' +
-    '<script>' + SNAP_JS + '</script>';
+    '<script>' + TB.kbx_n30b__s.SNAP_JS + '</script>';
   const ld = { '@context': 'https://schema.org', '@graph': [{ '@type': 'Dataset', name: L.sn_h1, description: L.sn_lead, url: canonU, license: 'https://creativecommons.org/licenses/by/4.0/', isAccessibleForFree: true, dateModified: c.updated, creator: { '@id': ORIGIN + '/#org' },
     distribution: (c.entries || []).map(e => ({ '@type': 'DataDownload', encodingFormat: 'application/gzip', contentUrl: ORIGIN + e.copy, sha256: e.sha256, uploadDate: e.day })) },
     { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Kolaboro', item: ORIGIN + P + '/' }, { '@type': 'ListItem', position: 2, name: L.data, item: ORIGIN + '/data/' }, { '@type': 'ListItem', position: 3, name: L.sn_h1, item: canonU }] }] };
   return assemble({ title: L.sn_title + ' | Kolaboro', desc: L.sn_lead.slice(0, 155), canon: canonU, body, ld, lastmod: c.updated, alt: l => ORIGIN + pre(l) + '/data/snapshots/' }, lang, shell, '/data/');
 }
 // in-browser verifier: recompute every head, compare the live file, check the Ed25519 signature of the API answer, hash a dropped file
-const SNAP_JS = "(function(){var R=document.getElementById('sn');if(!R)return;var M=JSON.parse(R.getAttribute('data-msg')),O=document.getElementById('sn-out'),te=new TextEncoder();" +
-  "function H(b){return crypto.subtle.digest('SHA-256',typeof b==='string'?te.encode(b):b).then(function(d){return Array.prototype.map.call(new Uint8Array(d),function(x){return('0'+x.toString(16)).slice(-2);}).join('');});}" +
-  "function f(s,v){return s.replace(/\\{(\\w+)\\}/g,function(m,k){return v[k]!=null?v[k]:m;});}function li(t,ok){var e=document.createElement('li');e.textContent=(ok===false?'\\u2717 ':ok===null?'\\u2022 ':'\\u2713 ')+t;e.className=ok===false?'bad':'';O.appendChild(e);}" +
-  "function day(d){try{return new Date(d+'T12:00:00Z').toLocaleDateString(M.loc,{day:'numeric',month:'short',year:'numeric'});}catch(e){return d;}}var C=null;" +
-  "function verify(){var b=document.getElementById('sn-go');b.disabled=true;O.textContent='';li(M.wait,null);var txt,sig,kid;" +
-  "fetch('/api/v1/snapshots',{cache:'no-store'}).then(function(r){sig=r.headers.get('x-kolaboro-signature');return r.text();}).then(function(t){txt=t;C=JSON.parse(t);O.textContent='';var E=C.entries.slice();if(C.provisional_tip)E.push(C.provisional_tip);var prev='genesis',i=0;" +
-  "function step(){if(i>=E.length){li(f(M.ok_chain,{n:E.length}));return live();}var e=E[i];if(e.prev!==prev){li(f(M.bad_chain,{d:day(e.day)}),false);return;}H('kolaboro-snapshot-v1|'+e.day+'|/data/named.json|'+e.sha256+'|'+e.bytes+'|'+e.prev).then(function(h){if(h!==e.head){li(f(M.bad_chain,{d:day(e.day)}),false);return;}prev=h;i++;step();});}step();}).catch(function(){li('Error',false);}).then(function(){b.disabled=false;});" +
-  "function live(){return fetch('/data/named.json',{cache:'no-store'}).then(function(r){return r.arrayBuffer();}).then(H).then(function(h){var last=C.entries[C.entries.length-1];if(last&&h===last.sha256)li(f(M.ok_live,{d:day(last.day)}));else if(C.provisional_tip&&h===C.provisional_tip.sha256)li(f(M.live_new,{s:h.slice(0,12)+'\\u2026'}),null);else li(f(M.nomatch,{s:h.slice(0,12)+'\\u2026'}),null);return sigchk();});}" +
-  "function sigchk(){if(!sig)return;return fetch('/.well-known/kolaboro-keys.json').then(function(r){return r.json();}).then(function(k){var raw=Uint8Array.from(atob(k.keys[0].public_key_raw_b64),function(c){return c.charCodeAt(0);});return crypto.subtle.importKey('raw',raw,{name:'Ed25519'},false,['verify']).then(function(key){return H(txt).then(function(h){return crypto.subtle.verify({name:'Ed25519'},key,Uint8Array.from(atob(sig),function(c){return c.charCodeAt(0);}),te.encode('kolaboro-sig-v1\\n'+h));});}).then(function(ok){li(ok?M.sig_ok:M.sig_bad,ok?true:false);},function(){li(M.sig_no,null);});});}}" +
-  "document.getElementById('sn-go').addEventListener('click',verify);" +
-  "document.getElementById('sn-file').addEventListener('change',function(ev){var file=ev.target.files[0],o=document.getElementById('sn-fout');if(!file)return;o.textContent=M.wait;var p=/\\.gz$/i.test(file.name)&&window.DecompressionStream?new Response(file.stream().pipeThrough(new DecompressionStream('gzip'))).arrayBuffer():file.arrayBuffer();" +
-  "Promise.all([p.then(H),C?Promise.resolve(C):fetch('/api/v1/snapshots').then(function(r){return r.json();}).then(function(j){C=j;return j;})]).then(function(a){var h=a[0],E=a[1].entries.concat(a[1].provisional_tip?[a[1].provisional_tip]:[]),m=E.filter(function(e){return e.sha256===h;})[0];o.textContent=m?'\\u2713 '+f(M.match,{d:day(m.day)}):'\\u2717 '+f(M.nomatch,{s:h.slice(0,16)+'\\u2026'});}).catch(function(){o.textContent='Error';});});})();";
+/* SNAP_JS: n40 k17, in /data/i18n/k17s.json */
 
 // ------------------------------------------------------------------------------------------------ 13: changes
 let CH = null;
@@ -170,14 +160,14 @@ async function changes(req, u, env, rh) {
   const nextCur = more && lastE ? b64u(lastE.at + '\n' + lastE.id) : null;
   const keep = new URLSearchParams(); if (proj) keep.set('project', proj); if (mk) keep.set('market', q.get('market')); if (q.get('limit')) keep.set('limit', String(limit));
   const o = { api: 'kolaboro-changes-v1', licence: 'CC BY 4.0 (credit: Kolaboro, kolaboro.com)',
-    sync: 'Oldest first. Keep the "at" of the last change you stored and ask again with ?since=<that at>, or follow "next" while has_more is true. Change ids are stable. Send If-None-Match or If-Modified-Since to get 304 when nothing is new.',
+    sync: TB.kbx_n30b__s.k3,
     since: cur ? null : since, count: page.length, total_after_filter: L.length, has_more: more, next_cursor: nextCur, next: nextCur ? ORIGIN + '/api/v1/changes?' + (keep.toString() ? keep.toString() + '&' : '') + 'cursor=' + nextCur : null,
     last_change_at: C.last, resume: lastE ? ORIGIN + '/api/v1/changes?since=' + encodeURIComponent(lastE.at) : null, feed: ORIGIN + '/api/v1/changes/feed.json', changes: page };
   return out(req, JSON.stringify(o), { extra: rh, maxAge: 300, lastMod: C.last });
 }
 async function changesFeed(req, env, rh) {
   const C = await allChanges(env), L = C.E.slice(-100).reverse();
-  const f = { version: 'https://jsonfeed.org/version/1.1', title: 'Kolaboro: dated changes to tracked projects', home_page_url: ORIGIN + '/changes/', feed_url: ORIGIN + '/api/v1/changes/feed.json', description: 'Every dated change Kolaboro holds about the projects it tracks: dates on record, developer page changes, register checks, sealed copies, satellite comparisons. Full history for sync: ' + ORIGIN + '/api/v1/changes', language: 'en', authors: [{ name: 'Kolaboro', url: ORIGIN + '/' }],
+  const f = { version: 'https://jsonfeed.org/version/1.1', title: 'Kolaboro: dated changes to tracked projects', home_page_url: ORIGIN + '/changes/', feed_url: ORIGIN + '/api/v1/changes/feed.json', description: TB.kbx_n30b__s.k4 + ORIGIN + '/api/v1/changes', language: 'en', authors: [{ name: 'Kolaboro', url: ORIGIN + '/' }],
     items: L.map(e => ({ id: e.id, url: e.url, external_url: e.source || undefined, title: e.project.name + ': ' + e.title, content_text: e.text, date_published: e.at, tags: [e.project.market, e.kind].filter(Boolean) })) };
   return out(req, JSON.stringify(f), { type: 'application/feed+json; charset=utf-8', extra: rh, maxAge: 600, lastMod: C.last });
 }
@@ -208,7 +198,7 @@ async function quality(env) {
   const pct = (a, b) => b ? Math.round(1000 * a / b) / 10 : 0;
   const markets = [...byMk.values()].filter(m => m.projects >= 10).sort((a, b) => b.projects - a.projects).map(m => ({ market: m.market, country: m.country, projects: m.projects, handover_pct: pct(m.ho, m.projects), price_pct: pct(m.price, m.projects), permit_number_pct: pct(m.pn, m.projects), pin_pct: pct(m.pin, m.projects), official_page_pct: pct(m.url, m.projects), median_days_since_check: median(m.ages) }));
   const v = { api: 'kolaboro-data-quality-v1', computed_at: new Date().toISOString().replace(/\.\d{3}Z$/, 'Z'), data_updated: ix.updated, dataset: { file: '/data/named.json', sha256: nf2.sha256, bytes: nf2.bytes }, build: (env && env.CF_PAGES_COMMIT_SHA) ? String(env.CF_PAGES_COMMIT_SHA).slice(0, 12) : null,
-    method: 'Counts every named project page (Sumba projects are excluded, conflict of interest). A field counts when the published record has a value with its source; nothing is estimated. Freshness = days from the last date we checked the project (developer page read, register check or sealed copy) to the day of computation.',
+    method: TB.kbx_n30b__s.k5,
     projects: tot, fields: Object.fromEntries(Object.keys(FIELDS).map(k => [k, { projects: cnt[k], pct: pct(cnt[k], tot) }])), freshness: Object.fromEntries(Object.entries(fr).map(([k, c]) => [k, { projects: c, pct: pct(c, tot) }])),
     median_days_since_check: median(ages), median_sources_per_project: median(srcs), markets };
   try { Object.assign(v, dqJson(ix)); } catch (e) {}   // n31c: gaps, validation, aliases
@@ -222,7 +212,7 @@ async function dqPage(req, u, env, ctx, shell, lang) {
   const fr = '<ul class="n30-fr">' + Object.entries(q.freshness).map(([k, f]) => '<li><b>' + pc(f.pct) + '</b> ' + esc(L.dq_fr[k]) + ' <small>(' + ar(lang, nf(f.projects, lang)) + ')</small></li>').join('') + '</ul>';
   const mrows = q.markets.map(m => '<tr><th scope="row"><bdi>' + esc(m.market) + '</bdi></th><td>' + ar(lang, nf(m.projects, lang)) + '</td><td>' + pc(m.handover_pct) + '</td><td>' + pc(m.price_pct) + '</td><td>' + pc(m.permit_number_pct) + '</td><td>' + pc(m.pin_pct) + '</td><td>' + pc(m.official_page_pct) + '</td><td>' + ar(lang, nf(m.median_days_since_check, lang)) + '</td></tr>').join('');
   const body = '<section class="phero"' + (lang === 'ar' ? ' dir="rtl"' : '') + '><div class="wrap"><p class="crumb"><a href="' + P + '/">' + esc(L.home) + '</a> / <a href="/engineering/">' + esc(L.eng) + '</a> / ' + esc(L.dq_h1) + '</p><h1>' + esc(L.dq_h1) + '</h1><p class="lead">' + esc(L.dq_lead) + '</p></div></section>' +
-    '<div class="wrap n30"' + (lang === 'ar' ? ' dir="rtl"' : '') + '>' + CSS +
+    '<div class="wrap n30"' + (lang === 'ar' ? ' dir="rtl"' : '') + '>' + TB.kbx_n30b__s.CSS +
     '<p class="k-xs">' + fill(esc(L.dq_src), { f: '<a href="/data/named.json">/data/named.json</a>', s: '<code>' + short(q.dataset.sha256) + '</code>', d: esc(fdt(q.data_updated, lang)), t: esc(fdt(q.computed_at, lang)) + (q.build ? ' (build <code>' + esc(q.build) + '</code>)' : '') }) + ' ' + esc(fill(L.dq_med_src, { n: nf(q.median_sources_per_project, lang, 1) })) + ' <a href="/api/v1/data-quality">' + esc(L.dq_api) + '</a></p>' +
     '<h2>' + esc(L.dq_f_h) + ' <small>(' + ar(lang, nf(q.projects, lang)) + ')</small></h2><div class="n30-tw"><table class="n30-t"><thead><tr>' + L.dq_th_f.map(x => '<th scope="col">' + esc(x) + '</th>').join('') + '</tr></thead><tbody>' + frows + '</tbody></table></div>' +
     '<h2>' + esc(L.dq_fr_h) + '</h2>' + fr +
@@ -251,10 +241,10 @@ async function certificate(env, slug) {
     subject: { id: x.id, slug: x.s, name: x.n, page: ORIGIN + '/projects/' + x.s + '/' }, facts, facts_sha256: factsSha,
     dataset: { named_json_sha256: named.sha256, bali_cases_json_sha256: cases.sha256, snapshot_chain_tip: snap ? snap.chain_tip : null, snapshots: ORIGIN + '/data/snapshots/' },
     live_check: ORIGIN + '/projects/' + x.s + '/certificate/?h=' + factsSha.slice(0, 16),
-    meaning: 'What Kolaboro published about this project on the issue date, as recorded in its data files. Not a verdict about the project or its developer, and not a guarantee.' };
+    meaning: TB.kbx_n30b__s.k6 };
   const body = canon(cert), digest = await sha(body);
   let signature = { alg: 'none', note: 'hash only: the signing key is not configured', certificate_sha256: digest };
-  try { const K = await import('./kolaboro.js'); const s = await K.signBody(env, body); if (s) signature = { alg: 'Ed25519', kid: (env && env.KB_SIGN_KID) || 'kb', value: s, message: '"kolaboro-sig-v1\\n" + SHA-256 hex of the canonical JSON of "certificate" (keys sorted, no spaces)', certificate_sha256: digest }; } catch (e) {}
+  try { const K = await import('./kolaboro.js'); const s = await K.signBody(env, body); if (s) signature = { alg: 'Ed25519', kid: (env && env.KB_SIGN_KID) || 'kb', value: s, message: TB.kbx_n30b__s.k7, certificate_sha256: digest }; } catch (e) {}
   return { x, cert, signature };
 }
 async function certPage(req, u, env, ctx, shell, lang, slug) {
@@ -274,27 +264,19 @@ async function certPage(req, u, env, ctx, shell, lang, slug) {
   const msg = { wait: L.ce_chk_wait, ok: L.ce_chk_ok, hash: L.ce_chk_hash, bad: L.ce_chk_bad, nosig: L.ce_chk_nosig, qr: L.ce_qr };
   const self = ORIGIN + P + '/projects/' + x.s + '/certificate/?h=' + cert.facts_sha256.slice(0, 16);
   const body = '<section class="phero"' + (lang === 'ar' ? ' dir="rtl"' : '') + '><div class="wrap"><p class="crumb"><a href="' + P + '/">' + esc(L.home) + '</a> / <a href="' + P + '/projects/' + x.s + '/"><bdi>' + esc(x.n) + '</bdi></a> / ' + esc(L.ce_h1) + '</p><h1>' + esc(L.ce_h1) + ': <bdi>' + esc(x.n) + '</bdi></h1><p class="lead">' + esc(fill(L.ce_lead, { n: x.n, d: fdt(cert.issued, lang) })) + '</p></div></section>' +
-    '<div class="wrap n30 n30-cert"' + (lang === 'ar' ? ' dir="rtl"' : '') + ' id="ce" data-slug="' + esc(x.s) + '" data-qr="' + esc(self) + '" data-msg="' + esc(JSON.stringify(msg)) + '">' + CSS + scan +
+    '<div class="wrap n30 n30-cert"' + (lang === 'ar' ? ' dir="rtl"' : '') + ' id="ce" data-slug="' + esc(x.s) + '" data-qr="' + esc(self) + '" data-msg="' + esc(JSON.stringify(msg)) + '">' + TB.kbx_n30b__s.CSS + scan +
     '<div class="n30-cg"><div><h2>' + esc(L.ce_facts) + '</h2><div class="n30-tw"><table class="n30-t"><tbody>' + facts + '</tbody></table></div></div><figure class="n30-qr"><div id="ce-qr" role="img" aria-label="' + esc(L.ce_qr) + '"></div><figcaption><small dir="ltr"><bdi>' + esc(x.id) + '</bdi> · ' + esc(fdt(cert.issued, lang)) + '</small></figcaption></figure></div>' +
     '<h2>' + esc(L.ce_hash) + '</h2><div class="n30-tw"><table class="n30-t"><tbody>' + hrow(L.ce_issued, cert.issued) + hrow(L.ce_facts_sha, cert.facts_sha256) + hrow(L.ce_named_sha, cert.dataset.named_json_sha256) + hrow(L.ce_cases_sha, cert.dataset.bali_cases_json_sha256) + hrow(L.ce_chain, cert.dataset.snapshot_chain_tip) + '</tbody></table></div>' +
     '<h2>' + esc(L.ce_sig) + '</h2><p>' + esc(signature.alg === 'Ed25519' ? fill(L.ce_signed, { k: signature.kid }) : L.ce_hashonly) + '</p>' + (signature.value ? '<p><code class="n30-h">' + esc(signature.value) + '</code></p>' : '') +
     '<p class="n30-act"><button type="button" class="btn" id="ce-go">' + esc(L.ce_chk) + '</button> <a class="btn btn-ghost" href="/api/v1/projects/' + x.s + '/certificate">' + esc(L.ce_json) + '</a> <a class="btn btn-ghost" href="' + P + '/projects/' + x.s + '/">' + esc(L.ce_live) + '</a> <button type="button" class="btn btn-ghost" id="ce-pr">' + esc(L.ce_print) + '</button></p><ul class="n30-out" id="ce-out" role="status" aria-live="polite"></ul>' +
-    '<p class="k-xs">' + esc(L.ce_note) + ' <a href="' + P + '/data/snapshots/">' + esc(L.sn_h1) + '</a> · <a href="/verify/">/verify/</a></p></div><script>' + CERT_JS + '</script>';
+    '<p class="k-xs">' + esc(L.ce_note) + ' <a href="' + P + '/data/snapshots/">' + esc(L.sn_h1) + '</a> · <a href="/verify/">/verify/</a></p></div><script>' + TB.kbx_n30b__s.CERT_JS + '</script>';
   const canonU = ORIGIN + P + '/projects/' + x.s + '/certificate/';
   const ld = { '@context': 'https://schema.org', '@graph': [{ '@type': 'WebPage', url: canonU, name: fill(L.ce_title, { n: x.n }), inLanguage: lang, dateModified: cert.issued, about: { '@type': 'Place', name: x.n, url: ORIGIN + P + '/projects/' + x.s + '/' } }] };
   const html = await assemble({ title: fill(L.ce_title, { n: x.n }) + ' | Kolaboro', desc: fill(L.ce_lead, { n: x.n, d: fdt(cert.issued, lang) }).slice(0, 155), canon: canonU, body, ld, lastmod: cert.issued, alt: l => ORIGIN + pre(l) + '/projects/' + x.s + '/certificate/' }, lang, shell, '/verify/');
   return page(html, lang, { 'x-robots-tag': 'noindex, follow' });
 }
 // QR: qrcodejs 1.0.0 from cdnjs with SRI (the same file and hash as k/site.js), loaded only on this page; check: canonical JSON + SHA-256 + Ed25519
-const CERT_JS = "(function(){var R=document.getElementById('ce');if(!R)return;var M=JSON.parse(R.getAttribute('data-msg')),O=document.getElementById('ce-out'),te=new TextEncoder();" +
-  "var s=document.createElement('script');s.src='https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js';s.integrity='sha384-3zSEDfvllQohrq0PHL1fOXJuC/jSOO34H46t6UQfobFOmxE5BpjjaIJY5F2/bMnU';s.crossOrigin='anonymous';s.onload=function(){try{new QRCode(document.getElementById('ce-qr'),{text:R.getAttribute('data-qr'),width:176,height:176,correctLevel:QRCode.CorrectLevel.M});}catch(e){}};document.head.appendChild(s);" +
-  "function canon(v){if(v===null||typeof v!=='object')return JSON.stringify(v===undefined?null:v);if(Array.isArray(v))return'['+v.map(canon).join(',')+']';return'{'+Object.keys(v).filter(function(k){return v[k]!==undefined;}).sort().map(function(k){return JSON.stringify(k)+':'+canon(v[k]);}).join(',')+'}';}" +
-  "function H(t){return crypto.subtle.digest('SHA-256',te.encode(t)).then(function(d){return Array.prototype.map.call(new Uint8Array(d),function(x){return('0'+x.toString(16)).slice(-2);}).join('');});}" +
-  "function li(t,ok){var e=document.createElement('li');e.textContent=(ok===false?'\\u2717 ':ok===null?'\\u2022 ':'\\u2713 ')+t;O.appendChild(e);}" +
-  "document.getElementById('ce-pr').addEventListener('click',function(){window.print();});" +
-  "document.getElementById('ce-go').addEventListener('click',function(){var b=this;b.disabled=true;O.textContent='';li(M.wait,null);fetch('/api/v1/projects/'+R.getAttribute('data-slug')+'/certificate',{cache:'no-store'}).then(function(r){return r.json();}).then(function(j){var c=j.certificate,g=j.signature;" +
-  "return H(canon(c.facts)).then(function(fh){if(fh!==c.facts_sha256)throw 0;return H(canon(c));}).then(function(ch){if(g.certificate_sha256!==ch)throw 0;if(g.alg!=='Ed25519'){O.textContent='';li(M.hash);return;}" +
-  "return fetch('/.well-known/kolaboro-keys.json').then(function(r){return r.json();}).then(function(k){var raw=Uint8Array.from(atob(k.keys[0].public_key_raw_b64),function(x){return x.charCodeAt(0);});return crypto.subtle.importKey('raw',raw,{name:'Ed25519'},false,['verify']).then(function(key){return crypto.subtle.verify({name:'Ed25519'},key,Uint8Array.from(atob(g.value),function(x){return x.charCodeAt(0);}),te.encode('kolaboro-sig-v1\\n'+ch));}).then(function(ok){O.textContent='';li(ok?M.ok:M.bad,ok?true:false);},function(){O.textContent='';li(M.nosig,null);});});});}).catch(function(){O.textContent='';li(M.bad,false);}).then(function(){b.disabled=false;});});})();";
+/* CERT_JS: n40 k17, in /data/i18n/k17s.json */
 
 // ------------------------------------------------------------------------------------------------ 11: developer websites
 async function devWebsite(req, env, slug, rh) {
@@ -317,7 +299,7 @@ async function openapiV1(env) {
   // spec above has none under /api/v1/, so before this the v1 document listed no paths. The typed SDKs at /sdk/v1/ are generated from it.
   let v1x = null; try { v1x = await jsonFile(env, '/docs/api/openapi-v1-paths.json'); } catch (e) {}
   if (v1x && v1x.paths) Object.assign(paths, v1x.paths);
-  const v = { openapi: '3.1.0', info: { title: 'Kolaboro API v1', version: '2026-11-17', summary: 'Open, read-only JSON about tracked off-plan projects and their developers.', description: 'No key. CORS open. Rate limit 120 calls a minute per IP per endpoint group, announced in RateLimit-Policy and RateLimit (draft-ietf-httpapi-ratelimit-headers) and X-RateLimit-*. ETag on every answer: send If-None-Match to get 304. Ids (BALI-014) and slugs are stable. Playground: https://kolaboro.com/api/docs/. Full description of every public endpoint: https://kolaboro.com/docs/api/openapi.json', license: full.info && full.info.license, contact: full.info && full.info.contact },
+  const v = { openapi: '3.1.0', info: { title: 'Kolaboro API v1', version: '2026-11-17', summary: 'Open, read-only JSON about tracked off-plan projects and their developers.', description: TB.kbx_n30b__s.k8, license: full.info && full.info.license, contact: full.info && full.info.contact },
     servers: [{ url: ORIGIN }], paths, components: Object.assign({}, full.components || {}, { schemas: Object.assign({}, (full.components || {}).schemas || {}, (v1x && v1x.schemas) || {}) }) };
   OA = { t: Date.now(), v }; return v;
 }
@@ -328,20 +310,15 @@ async function docsPage(req, u, env, ctx, shell, lang) {
   const rows = EPS.map(([k, p, ex]) => { const v = ex ? p.replace(/\{[a-z]+\}/, ex) : p; return '<li class="n30-ep"><div><code dir="ltr">GET ' + esc(p) + '</code><p>' + esc(L.ad_d[k]) + '</p></div><button type="button" class="btn btn-ghost" data-try="' + esc(v) + '">' + esc(L.ad_try) + '</button></li>'; }).join('');
   const msg = { st: L.ad_status, tm: L.ad_time, hd: L.ad_hdr, bd: L.ad_body, again: L.ad_again };
   const body = '<section class="phero"' + (lang === 'ar' ? ' dir="rtl"' : '') + '><div class="wrap"><p class="crumb"><a href="' + P + '/">' + esc(L.home) + '</a> / <a href="/docs/api/">API</a> / v1</p><h1>' + esc(L.ad_h1) + '</h1><p class="lead">' + esc(L.ad_lead) + '</p></div></section>' +
-    '<div class="wrap n30" id="ad"' + (lang === 'ar' ? ' dir="rtl"' : '') + ' data-msg="' + esc(JSON.stringify(msg)) + '">' + CSS +
+    '<div class="wrap n30" id="ad"' + (lang === 'ar' ? ' dir="rtl"' : '') + ' data-msg="' + esc(JSON.stringify(msg)) + '">' + TB.kbx_n30b__s.CSS +
     '<h2>' + esc(L.ad_ep) + '</h2><ul class="n30-eps">' + rows + '</ul>' +
-    '<form id="ad-f" class="n30-try"><label for="ad-u">URL</label><div class="n30-row"><input id="ad-u" dir="ltr" value="/api/v1/projects/coco-hills" spellcheck="false" autocomplete="off"><button class="btn" type="submit">' + esc(L.ad_try) + '</button> <button class="btn btn-ghost" type="button" id="ad-again" hidden>' + esc(L.ad_again) + '</button></div></form>' +
-    '<div id="ad-res" hidden><p id="ad-st" role="status" aria-live="polite"></p><details><summary>' + esc(L.ad_hdr) + '</summary><pre dir="ltr" class="n30-pre" id="ad-h"></pre></details><h3>' + esc(L.ad_body) + '</h3><pre dir="ltr" class="n30-pre n30-body" id="ad-b" tabindex="0"></pre><p class="k-xs" dir="ltr"><code id="ad-curl"></code></p></div>' +
-    '<h2>' + esc(L.ad_lim_h) + '</h2><p>' + esc(L.ad_lim) + '</p><ul class="lk"><li><a href="/api/v1/openapi.json">' + esc(L.ad_spec) + '</a></li><li><a href="/docs/api/explorer/">' + esc(L.ad_full) + '</a></li><li><a href="' + P + '/data/snapshots/">' + esc(L.sn_h1) + '</a></li><li><a href="' + P + '/engineering/data-quality/">' + esc(L.dq_h1) + '</a></li></ul>' + X34 + '</div><script>' + DOCS_JS + '</script>';
+    TB.kbx_n30b__s.k9 + esc(L.ad_try) + '</button> <button class="btn btn-ghost" type="button" id="ad-again" hidden>' + esc(L.ad_again) + '</button></div></form>' +
+    '<div id="ad-res" hidden><p id="ad-st" role="status" aria-live="polite"></p><details><summary>' + esc(L.ad_hdr) + '</summary><pre dir="ltr" class="n30-pre" id="ad-h"></pre></details><h3>' + esc(L.ad_body) + TB.kbx_n30b__s.k10 +
+    '<h2>' + esc(L.ad_lim_h) + '</h2><p>' + esc(L.ad_lim) + '</p><ul class="lk"><li><a href="/api/v1/openapi.json">' + esc(L.ad_spec) + '</a></li><li><a href="/docs/api/explorer/">' + esc(L.ad_full) + '</a></li><li><a href="' + P + '/data/snapshots/">' + esc(L.sn_h1) + '</a></li><li><a href="' + P + '/engineering/data-quality/">' + esc(L.dq_h1) + '</a></li></ul>' + X34 + '</div><script>' + TB.kbx_n30b__s.DOCS_JS + '</script>';
   const ld = { '@context': 'https://schema.org', '@graph': [{ '@type': 'WebAPI', name: 'Kolaboro API v1', url: canonU, documentation: ORIGIN + '/api/v1/openapi.json', provider: { '@id': ORIGIN + '/#org' }, termsOfService: ORIGIN + '/legal/terms/' }] };
   return assemble({ title: L.ad_title + ' | Kolaboro', desc: L.ad_lead.slice(0, 155), canon: canonU, body, ld, lastmod: '2026-11-17', alt: l => ORIGIN + pre(l) + '/api/docs/' }, lang, shell, '/docs/api/');
 }
-const DOCS_JS = "(function(){var R=document.getElementById('ad');if(!R)return;var M=JSON.parse(R.getAttribute('data-msg')),f=document.getElementById('ad-f'),inp=document.getElementById('ad-u'),ag=document.getElementById('ad-again'),last=null;" +
-  "function go(etag){var u=inp.value.trim();if(!/^\\/api\\/v1\\//.test(u)){inp.setAttribute('aria-invalid','true');return;}inp.removeAttribute('aria-invalid');var t0=performance.now(),h={};if(etag)h['If-None-Match']=etag;" +
-  "fetch(u,{headers:h,cache:'no-store'}).then(function(r){var ms=Math.round(performance.now()-t0),hs=[];r.headers.forEach(function(v,k){hs.push(k+': '+v);});last=r.headers.get('etag');ag.hidden=!last;" +
-  "return r.text().then(function(t){document.getElementById('ad-res').hidden=false;document.getElementById('ad-st').textContent=M.st+': '+r.status+' \\u00b7 '+M.tm+': '+ms+' ms';document.getElementById('ad-h').textContent=hs.sort().join('\\n');var b=t;try{b=JSON.stringify(JSON.parse(t),null,2);}catch(e){}if(b.length>60000)b=b.slice(0,60000)+'\\n\\u2026';document.getElementById('ad-b').textContent=r.status===304?'(304 Not Modified)':b;document.getElementById('ad-curl').textContent='curl -s'+(etag?\" -H 'If-None-Match: \"+etag+\"'\":'')+\" 'https://kolaboro.com\"+u+\"'\";});}).catch(function(e){document.getElementById('ad-res').hidden=false;document.getElementById('ad-st').textContent=String(e);});}" +
-  "f.addEventListener('submit',function(e){e.preventDefault();go();});ag.addEventListener('click',function(){go(last);});" +
-  "R.querySelectorAll('[data-try]').forEach(function(b){b.addEventListener('click',function(){inp.value=b.getAttribute('data-try');go();inp.scrollIntoView({block:'center'});});});})();";
+/* DOCS_JS: n40 k17, in /data/i18n/k17s.json */
 
 // ------------------------------------------------------------------------------------------------ 14: manifest and offline page
 const MANIFEST = { name: 'Kolaboro: check off-plan property projects', short_name: 'Kolaboro', id: '/', start_url: '/', scope: '/', display: 'standalone', background_color: '#F6F6F3', theme_color: '#17212B', lang: 'en', dir: 'auto',
@@ -352,21 +329,15 @@ const MANIFEST = { name: 'Kolaboro: check off-plan property projects', short_nam
 async function offPage(req, u, env, ctx, shell, lang) {
   const L = T[lang], P = pre(lang), canonU = ORIGIN + P + '/offline/';
   const body = '<section class="phero"' + (lang === 'ar' ? ' dir="rtl"' : '') + '><div class="wrap"><h1>' + esc(L.of_h1) + '</h1><p class="lead">' + esc(L.of_lead) + '</p><p><button type="button" class="btn" id="of-retry">' + esc(L.of_retry) + '</button></p></div></section>' +
-    '<div class="wrap n30" id="of"' + (lang === 'ar' ? ' dir="rtl"' : '') + ' data-none="' + esc(L.of_none) + '">' + CSS + '<h2>' + esc(L.of_list) + '</h2><ul class="lk" id="of-l"></ul></div>' +
-    "<script>(function(){document.getElementById('of-retry').addEventListener('click',function(){location.reload();});var ul=document.getElementById('of-l'),R=document.getElementById('of');if(!('caches' in window)){ul.outerHTML='<p>'+R.getAttribute('data-none')+'</p>';return;}" +
-    "Promise.all(['kb-my-v1','kb-saved-v1'].map(function(n){return caches.open(n).then(function(c){return c.keys();}).catch(function(){return [];});})).then(function(a){var seen={},n=0;a[0].concat(a[1]).forEach(function(r){var p=new URL(r.url).pathname;if(seen[p]||!/^\\/(?:[a-z]{2}\\/)?(?:projects|developers|compare|p|guides)\\//.test(p)||/\\.(json|js|css|png|svg)$/.test(p))return;seen[p]=1;n++;var li=document.createElement('li'),x=document.createElement('a');x.href=p+new URL(r.url).search;x.textContent=decodeURIComponent(p.replace(/^\\/(?:[a-z]{2}\\/)?/,'').replace(/\\/$/,'').replace(/[-/]/g,' '));li.appendChild(x);ul.appendChild(li);});if(!n)ul.outerHTML='<p>'+R.getAttribute('data-none')+'</p>';});})();</script>";
+    '<div class="wrap n30" id="of"' + (lang === 'ar' ? ' dir="rtl"' : '') + ' data-none="' + esc(L.of_none) + '">' + TB.kbx_n30b__s.CSS + '<h2>' + esc(L.of_list) + '</h2><ul class="lk" id="of-l"></ul></div>' +
+    TB.kbx_n30b__s.k11 +
+    TB.kbx_n30b__s.k12;
   const html = await assemble({ title: L.of_title + ' | Kolaboro', desc: L.of_lead, canon: canonU, body, ld: { '@context': 'https://schema.org', '@type': 'WebPage', name: L.of_title, url: canonU }, lastmod: '2026-11-17', alt: l => ORIGIN + pre(l) + '/offline/' }, lang, shell, '/about/');
   return page(html, lang, { 'x-robots-tag': 'noindex, follow' });
 }
 
 // ------------------------------------------------------------------------------------------------ shared
-const CSS = '<style id="n30b-css">.n30{padding-bottom:40px}.n30>ul:not([class]){padding-inline-start:20px}.n30 h2{margin-top:28px}.n30-tw{overflow-x:auto;margin:8px 0 16px}.n30-t{width:100%;border-collapse:collapse}.n30-t th,.n30-t td{text-align:start;padding:8px;border-bottom:1px solid var(--line,#DDE3E0);vertical-align:top;font-variant-numeric:tabular-nums}' +
-  '.n30-t td{overflow-wrap:anywhere}.n30-t thead th{font-size:.85rem;color:var(--muted,#56635D)}.n30-sm td,.n30-sm th{font-size:.9rem;padding:6px}.n30 code{font-size:.85em;overflow-wrap:anywhere}.n30-h{display:inline-block;max-width:100%;overflow-wrap:anywhere;word-break:break-all}.n30-pre{background:var(--k-sunken,#EEF1EF);padding:12px;border-radius:6px;overflow:auto;max-width:100%;white-space:pre-wrap;word-break:break-all;font-size:.82rem}' +
-  '.n30-body{max-height:440px}.n30-out{list-style:none;padding:0;margin:8px 0}.n30-out li{padding:4px 0}.n30-out li.bad{color:var(--k-bad,#A12A1C);font-weight:700}.n30-bar{display:inline-block;width:110px;height:8px;background:var(--k-sunken,#E8ECEA);border-radius:4px;vertical-align:middle;overflow:hidden}.n30-bar i{display:block;height:100%;background:var(--k-ok,#1F6B45)}' +
-  '.n30-fr{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:8px 24px}.n30-eps{list-style:none;padding:0;margin:0}.n30-ep{display:flex;gap:12px;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--line,#DDE3E0)}.n30-ep p{margin:2px 0 0;color:var(--muted,#56635D);font-size:.92rem}.n30-ep code{overflow-wrap:anywhere}' +
-  '.n30-try{margin:20px 0 8px}.n30-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.n30-row input{flex:1 1 260px;min-width:0;padding:10px;font:inherit;font-family:ui-monospace,monospace;border:1px solid var(--line-2,#C9D1CE);border-radius:6px;background:var(--bg,#fff);color:inherit}' +
-  '.n30-cg{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px 28px;align-items:start}.n30-qr{margin:28px 0 0;text-align:center}.n30-qr #ce-qr{background:#fff;padding:10px;display:inline-block;min-width:176px;min-height:176px}.n30-note{padding:10px 14px;border-radius:6px;border:2px solid var(--k-ok,#1F6B45)}.n30-note.chg{border-color:var(--k-warn,#8A5A00)}.n30-act .btn{margin:4px 6px 4px 0}' +
-  '.sn-tip td{font-style:italic}@media (max-width:640px){.n30-cg{grid-template-columns:minmax(0,1fr)}.n30-ep{flex-direction:column;align-items:flex-start}}@media print{header,footer,.n30-act,.kx-tick,nav{display:none!important}.n30-qr #ce-qr{border:0}}</style>';
+/* CSS: n40 k17, in /data/i18n/k17s.json */
 async function assemble(pg, lang, shell, shellPath) {
   const n = await N();
   // n34s (21 Nov 2026): /<lang>/engineering/, /<lang>/data/ and /<lang>/docs/api/ do not exist, so translated pages took the English 404 page as

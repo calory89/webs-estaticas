@@ -1,3 +1,4 @@
+import { TB } from './kbx_strings.js';
 // Feature module q for kolaboro.com (see kbx.js): people behind projects.
 //   GET /api/x/q/                       index of endpoints
 //   GET /api/x/q/graph                  company and director graph: coverage, method, per-project summaries (from /data/company-graph.json)
@@ -83,15 +84,15 @@ async function courtUK(name) {
     title_matches: hits.map(({ in_title, ...e }) => e),
     text_mentions_only: entries.length - hits.length, more_results: more,
     search_page: FCL + '/search?query=' + encodeURIComponent(q),
-    label: 'A case naming a company with this exact name. Check it is the same company: names can be reused after a company is dissolved, and a party in a case is not necessarily at fault.',
-    rules: ['Only judgments whose case title contains the exact name (after normalising punctuation and Ltd/Limited) are listed.',
-      'Judgments that only mention the name in the text are counted, not listed. Open the search page to read them yourself.',
-      'Coverage: Find Case Law holds judgments from 2001 onward for most higher courts in England and Wales and some tribunals, not every court decision.'],
+    label: TB.kbx_q__s.k0,
+    rules: [TB.kbx_q__s.k1,
+      TB.kbx_q__s.k2,
+      TB.kbx_q__s.k3],
     licence: 'Contains public sector information licensed under the Open Justice Licence v1.0.'
   };
 }
 async function courtUS(name, env) {
-  if (!env.COURTLISTENER_TOKEN) return { source: 'us', status: 'not connected yet', note: 'CourtListener (Free Law Project) needs a free API token. The owner can add it as COURTLISTENER_TOKEN.' };
+  if (!env.COURTLISTENER_TOKEN) return { source: 'us', status: 'not connected yet', note: TB.kbx_q__s.k4 };
   const q = 'caseName:("' + name.replace(/"/g, '') + '")';
   const r = await fetch('https://www.courtlistener.com/api/rest/v4/search/?type=o&q=' + encodeURIComponent(q), { headers: { authorization: 'Token ' + env.COURTLISTENER_TOKEN, 'user-agent': UA }, signal: AbortSignal.timeout(15000) });
   if (!r.ok) throw new Error('CourtListener answered HTTP ' + r.status);
@@ -100,12 +101,12 @@ async function courtUS(name, env) {
   const hits = rows.filter(x => normName(x.title).includes(want));
   return { source: 'us', source_name: 'CourtListener, Free Law Project (US courts)', query: name, fetched_at: new Date().toISOString(), title_matches: hits, text_mentions_only: rows.length - hits.length, more_results: !!d.next,
     search_page: 'https://www.courtlistener.com/?q=' + encodeURIComponent(q),
-    label: 'A case naming a company with this exact name. Check it is the same company: names can be reused, and a party in a case is not necessarily at fault.' };
+    label: TB.kbx_q__s.k5 };
 }
 async function court(req, u, env, ctx) {
   const name = validName(u.searchParams.get('name'));
   const src = (u.searchParams.get('source') || 'uk').toLowerCase();
-  if (!name) return out({ error: 'enter the full legal name of a company, including its legal form (for example Limited, Ltd, PLC, LLP, LLC, Inc, PT). Names of people are not searched.' }, 400, 0);
+  if (!name) return out({ error: TB.kbx_q__s.k6 }, 400, 0);
   if (src !== 'uk' && src !== 'us') return out({ error: 'unknown source', sources: ['uk', 'us'] }, 400, 0);
   const ck = new Request('https://kolaboro.com/__q_court/' + src + '/' + encodeURIComponent(normName(name).trim()));
   const hit = await caches.default.match(ck);
@@ -150,8 +151,8 @@ async function sources(env, ctx) {
     return o;
   }));
   const d = { sources: res, automated_project_checks: 0,
-    why_no_automatic_checks: 'Find Case Law needs a licence for programmatic bulk searching. Until that licence is granted, no project is searched automatically and no per-project court counts are published.',
-    exact_name_rule: 'We only ever search an exact legal company name and only list cases with that exact name in the title, labelled as needing a same-company check. We never search people.' };
+    why_no_automatic_checks: TB.kbx_q__s.k7,
+    exact_name_rule: TB.kbx_q__s.k8 };
   ctx.waitUntil(caches.default.put(ck, new Response(JSON.stringify(d), { headers: { 'content-type': 'application/json', 'cache-control': 'public, max-age=21600' } })));
   return out(d, 200, 600);
 }
@@ -172,7 +173,7 @@ export async function handle(req, u, env, ctx) {
       const id = gm[1].toUpperCase();
       const d = await load(env, 'company-graph.json'); if (!d) return out(STARTING('company-graph.json'), 200, 60);
       const x = (d.projects || {})[id];
-      if (!x) return out({ id, covered: false, note: 'The company graph covers UK-tracked projects only: Companies House is the only register we found with free, open officer data.' }, 404, 300);
+      if (!x) return out({ id, covered: false, note: TB.kbx_q__s.k9 }, 404, 300);
       return out({ id, updated: d.updated, register: d.register.name, method: d.method, ...x });
     }
     if (p === '/api/x/q/court/sources') return sources(env, ctx);

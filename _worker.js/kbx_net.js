@@ -165,11 +165,11 @@ async function graph(env) {
   const g = buildGraph(ix.P, web, fam);
   g.version = GRAPH_V; g.updated = ix.named.updated || null; g.generated_at = new Date().toISOString();
   g.source = { named: ORIGIN + '/data/named.json', pages: ORIGIN + '/projects/<slug>/', licence: 'CC BY 4.0, Kolaboro' };
-  g.types = { company: 'same legal company name', regid: 'same company registry or tax number', domain: 'same own-website registrable domain', address: 'same street-level company address', name: 'same project name in the same country', web: 'the same public identifier on both developers\' own websites: analytics, tag manager, ads, pixel or chat id, custom WordPress theme, homepage HTML skeleton, TLS certificate, own name servers or dedicated server address (/data/dev-links.json, read daily). Usually the same marketing agency, web studio or hosting account, not the same owner' };
+  g.types = { company: 'same legal company name', regid: 'same company registry or tax number', domain: 'same own-website registrable domain', address: 'same street-level company address', name: 'same project name in the same country', web: TB.kbx_net__s.k0 };
   g.web_updated = web.updated || null;
-  g.types.family = 'GLEIF level 2 (CC0): one developer\'s matched LEI is the other\'s direct or ultimate parent or direct child, or both report the same direct or ultimate parent (/data/gleif-family.json, weekly). Accounting consolidation as reported to GLEIF.';
+  g.types.family = TB.kbx_net__s.k1;
   g.family_updated = (fam && fam.updated) || null;
-  g.not_linked = ['hosting (shared hosts join unrelated companies)', 'directors (our public register data labels directors per project only; private individuals are never named)'];
+  g.not_linked = ['hosting (shared hosts join unrelated companies)', TB.kbx_net__s.k2];
   g.hub_rule = 'identifiers shared by more than ' + HUB + ' developers are dropped as portals, agencies or templates';
   GMEMO = { key, g }; return g;
 }
@@ -186,79 +186,25 @@ async function live(env) {
 }
 
 // ------------------------------------------------------------------------------------------------ pages
-const CSS = `<style id="knet14">
-.kn14{--gap:var(--k-5,24px)}
-.kn14 .k-phead{padding-block:var(--k-7,48px) var(--k-5,24px)}
-.kn14 h1{max-width:20ch}
-.kn14 .lead{max-width:62ch;color:var(--k-ink-2)}
-.kn-stats{display:flex;flex-wrap:wrap;gap:var(--k-3,12px) var(--k-6,32px);margin:var(--k-4,16px) 0 0;padding:0;list-style:none}
-.kn-stats li{display:flex;flex-direction:column}.kn-stats b{font-size:var(--k-fs-2xl,28px);font-weight:700;font-variant-numeric:tabular-nums;color:var(--k-ink)}.kn-stats span{font-size:var(--k-fs-sm,15px);color:var(--k-muted)}
-.kn-ui{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:var(--k-4,16px);align-items:start}
-.kn-plate{position:relative;border:1px solid var(--k-line-2);border-radius:var(--k-r-lg,14px);background:var(--k-surface);overflow:hidden;min-height:320px}
-.kn-plate canvas{display:block;width:100%;height:100%}
-.kn-plate .kn-tip{position:absolute;pointer-events:none;background:var(--k-ink);color:var(--k-paper);font-size:var(--k-fs-xs,13px);padding:4px 8px;border-radius:var(--k-r-xs,4px);white-space:nowrap;transform:translate(-50%,-130%);display:none}
-.kn-plate .kn-msg{position:absolute;inset:0;display:grid;place-items:center;color:var(--k-muted);font-size:var(--k-fs-sm)}
-.kn-tools{position:absolute;inset-inline-end:10px;bottom:10px;display:flex;gap:6px}
-.kn-side{display:flex;flex-direction:column;gap:var(--k-4,16px)}
-.kn-legend{margin:0;padding:0;list-style:none;display:grid;gap:6px;font-size:var(--k-fs-sm)}
-.kn-legend label{display:flex;align-items:center;gap:10px;min-height:32px;cursor:pointer}
-.kn-legend svg{flex:none}
-.kn-legend small{margin-inline-start:auto;color:var(--k-muted);font-variant-numeric:tabular-nums}
-.kn-card{border:1px solid var(--k-line);border-radius:var(--k-r-md,10px);background:var(--k-surface);padding:var(--k-4,16px)}
-.kn-card h2{font-size:var(--k-fs-lg,20px);margin:0 0 4px;padding-inline-end:40px}#kn-info{position:relative}#kn-info .kn-x{position:absolute;inset-inline-end:8px;top:8px;width:44px;height:44px;border:0;background:none;font-size:24px;line-height:1;color:var(--k-muted);cursor:pointer;border-radius:var(--k-r-sm)}#kn-info .kn-x:hover{background:var(--k-sunken)}.kn-side{position:sticky;top:90px}
-.kn-card p{margin:0 0 8px;font-size:var(--k-fs-sm)}
-.kn-card ul{margin:8px 0 0;padding:0;list-style:none;max-height:340px;overflow:auto}
-.kn-card li{padding:8px 0;border-top:1px solid var(--k-line);font-size:var(--k-fs-sm)}
-.kn-card li b a{color:var(--k-ink)}
-.kn-card li span{display:block;color:var(--k-muted);font-size:var(--k-fs-xs);margin-top:2px;overflow-wrap:anywhere}
-.kn-sr{position:relative}
-.kn-res{position:absolute;z-index:5;inset-inline:0;top:100%;margin:2px 0 0;padding:4px;list-style:none;background:var(--k-surface);border:1px solid var(--k-line-2);border-radius:var(--k-r-sm,6px);box-shadow:var(--k-sh-3);max-height:260px;overflow:auto}
-.kn-res li{padding:10px 8px;border-radius:var(--k-r-xs);cursor:pointer;font-size:var(--k-fs-sm)}
-.kn-res li[aria-selected=true],.kn-res li:hover{background:var(--k-sea-soft)}
-.kn-res small{color:var(--k-muted);margin-inline-start:6px}
-.kn-how{margin-top:var(--k-7,48px)}
-.kn-how ul{padding-inline-start:1.1em;max-width:72ch}.kn-how li{margin:0 0 8px}
-.kn-all{margin-top:var(--k-6,32px)}
-.kn-all td a{overflow-wrap:anywhere}
-@media(max-width:900px){.kn-ui{grid-template-columns:1fr}.kn-side{order:-1;position:static}#kn-info{display:none}#kn-info.is-open{display:block;position:fixed;z-index:60;inset-inline:8px;bottom:8px;max-height:58vh;overflow:auto;box-shadow:var(--k-sh-3)}}
-/* live globe */
-.kl-band{background:var(--k-band);color:var(--k-band-ink)}
-.kl-band .k-crumb a,.kl-band .k-crumb{color:var(--k-band-muted)}
-.kl-band h1{color:var(--k-band-ink)}.kl-band .lead{color:var(--k-band-muted)}
-.kl-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:var(--k-6,32px);align-items:center;padding-block:var(--k-6,32px) var(--k-7,48px)}
-.kl-globe{position:relative;aspect-ratio:1;width:100%;max-width:620px;margin-inline:auto}
-.kl-globe canvas{width:100%;height:100%;display:block;cursor:grab;touch-action:none}
-.kl-globe .k-btn{position:absolute;inset-inline-end:0;bottom:0}
-.kl-ctr{display:grid;grid-template-columns:1fr 1fr;gap:var(--k-4,16px) var(--k-5,24px);margin:var(--k-5,24px) 0;padding:0;list-style:none}
-.kl-ctr b{display:block;font-size:var(--k-fs-3xl,36px);font-weight:700;line-height:1.05;font-variant-numeric:tabular-nums;color:var(--k-band-ink)}
-.kl-ctr span{color:var(--k-band-muted);font-size:var(--k-fs-sm)}
-.kl-feed{margin:0;padding:0;list-style:none;border-top:1px solid rgba(255,255,255,.14)}
-.kl-feed li{display:flex;gap:12px;align-items:baseline;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.14);font-size:var(--k-fs-sm)}
-.kl-feed li b{font-weight:600;color:var(--k-band-ink)}.kl-feed li span{color:var(--k-band-muted)}.kl-feed li time{margin-inline-start:auto;color:var(--k-band-muted);font-variant-numeric:tabular-nums;white-space:nowrap}
-.kl-feed li.is-new b::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--k-brand);margin-inline-end:8px;vertical-align:middle}
-.kl-band h2{color:var(--k-band-ink);font-size:var(--k-fs-lg);margin:var(--k-5,24px) 0 var(--k-2,8px)}
-.kl-note{color:var(--k-band-muted);font-size:var(--k-fs-xs);margin-top:var(--k-3,12px)}
-.kl-band .k-btn--primary{margin-top:var(--k-4,16px)}
-@media(max-width:900px){.kl-grid{grid-template-columns:1fr}.kl-globe{max-width:440px}}
-</style>`;
+/* CSS: n40 k17, in /data/i18n/k17s.json */
 
 function graphBody(lang) {
   const t = tr(T, lang), p = pre(lang);
-  const sw = (ty) => ({ company: '<svg width="34" height="10" aria-hidden="true"><line x1="1" y1="5" x2="33" y2="5" stroke="currentColor" stroke-width="3"/></svg>', regid: '<svg width="34" height="10" aria-hidden="true"><line x1="1" y1="3" x2="33" y2="3" stroke="currentColor" stroke-width="1.6"/><line x1="1" y1="7" x2="33" y2="7" stroke="currentColor" stroke-width="1.6"/></svg>', domain: '<svg width="34" height="10" aria-hidden="true"><line x1="1" y1="5" x2="33" y2="5" stroke="currentColor" stroke-width="2.4" stroke-dasharray="7 4"/></svg>', address: '<svg width="34" height="10" aria-hidden="true"><line x1="1" y1="5" x2="33" y2="5" stroke="currentColor" stroke-width="2.4" stroke-dasharray="2 4" stroke-linecap="round"/></svg>', name: '<svg width="34" height="10" aria-hidden="true"><line x1="1" y1="5" x2="33" y2="5" stroke="currentColor" stroke-width="1.2"/></svg>', web: '<svg width="34" height="10" aria-hidden="true"><line x1="1" y1="5" x2="33" y2="5" stroke="currentColor" stroke-width="1.6" stroke-dasharray="10 3 2 3"/></svg>', family: '<svg width="34" height="10" aria-hidden="true"><line x1="1" y1="5" x2="33" y2="5" stroke="currentColor" stroke-width="2.8" stroke-dasharray="1 3" stroke-linecap="round"/></svg>' })[ty];
+  const sw = (ty) => ({ company: TB.kbx_net__s.k3, regid: TB.kbx_net__s.k4, domain: TB.kbx_net__s.k5, address: TB.kbx_net__s.k6, name: TB.kbx_net__s.k7, web: TB.kbx_net__s.k8, family: TB.kbx_net__s.k9 })[ty];
   const types = ['company', 'regid', 'domain', 'address', 'name', 'web', 'family'];
   return '<div class="kn14" data-kn14 data-lang="' + lang + '" data-pre="' + p + '" data-t="' + esc(JSON.stringify(t)) + '">' +
     '<header class="k-phead k-wrap"><nav class="k-crumb" aria-label="Breadcrumb"><a href="' + p + '/">Kolaboro</a> / <a href="/graph/">Company graph</a> / <span aria-current="page">' + esc(t.g_title) + '</span></nav>' +
     '<h1>' + esc(t.g_title) + '</h1><p class="lead">' + esc(t.g_lead) + '</p>' +
     '<ul class="kn-stats" aria-live="polite"><li><b data-st="developers">…</b><span>' + esc(t.s_dev) + '</span></li><li><b data-st="linked_developers">…</b><span>' + esc(t.s_linked) + '</span></li><li><b data-st="links">…</b><span>' + esc(t.s_links) + '</span></li><li><b data-st="clusters">…</b><span>' + esc(t.s_clusters) + '</span></li></ul></header>' +
-    '<section class="k-wrap"><div class="kn-ui"><div class="kn-plate" id="kn-plate"><canvas id="kn-c" role="img" aria-label="' + esc(t.g_title) + '"></canvas><div class="kn-tip" id="kn-tip"></div><div class="kn-msg" id="kn-msg">' + esc(t.loading) + '</div>' +
+    TB.kbx_net__s.k10 + esc(t.g_title) + '"></canvas><div class="kn-tip" id="kn-tip"></div><div class="kn-msg" id="kn-msg">' + esc(t.loading) + '</div>' +
     '<div class="kn-tools"><button type="button" class="k-btn k-btn--sm" id="kn-reset">' + esc(t.reset) + '</button></div></div>' +
-    '<aside class="kn-side"><div class="k-field kn-sr"><label class="k-label" for="kn-q">' + esc(t.search) + '</label><input class="k-input" id="kn-q" type="search" autocomplete="off" placeholder="' + esc(t.search_ph) + '" role="combobox" aria-expanded="false" aria-controls="kn-res" aria-autocomplete="list"><ul class="kn-res" id="kn-res" role="listbox" hidden></ul></div>' +
+    '<aside class="kn-side"><div class="k-field kn-sr"><label class="k-label" for="kn-q">' + esc(t.search) + '</label><input class="k-input" id="kn-q" type="search" autocomplete="off" placeholder="' + esc(t.search_ph) + TB.kbx_net__s.k11 +
     '<fieldset class="kn-card"><legend class="k-vh">Link types</legend><ul class="kn-legend">' + types.map(ty => '<li><label><input type="checkbox" checked data-ty="' + ty + '"> ' + sw(ty) + ' ' + esc(t['t_' + ty]) + ' <small data-ct="' + ty + '"></small></label></li>').join('') +
     '<li><label><input type="checkbox" id="kn-iso"> ' + esc(t.show_all) + '</label></li></ul></fieldset>' +
     '<div class="kn-card" id="kn-info" aria-live="polite"><p class="k-muted">' + esc(t.pick) + '</p></div></aside></div>' +
     '<div class="kn-how k-prose"><h2>' + esc(t.how_h) + '</h2><ul>' + ['m1', 'm2', 'm3', 'm4', 'm5', 'm6', 'm9', 'm10', 'm7', 'm8'].map(k => '<li>' + esc(t[k] || T.en[k]) + '</li>').join('') + '</ul>' +
-    '<p><a href="/api/x/net/graph">' + esc(t.data) + '</a> · <a href="/data/named.json">named.json</a> · <a href="/independence/">Independence policy</a></p></div>' +
-    '<div class="kn-all"><h2>' + esc(t.table_h) + '</h2><div class="k-table-wrap"><table class="k-table k-table--dense k-table--stack"><thead><tr><th>' + esc(t.dev) + '</th><th>' + esc(t.dev) + '</th><th>' + esc(t.via) + '</th></tr></thead><tbody id="kn-tb"></tbody></table></div></div></section></div>';
+    '<p><a href="/api/x/net/graph">' + esc(t.data) + TB.kbx_net__s.k12 +
+    '<div class="kn-all"><h2>' + esc(t.table_h) + TB.kbx_net__s.k13 + esc(t.dev) + '</th><th>' + esc(t.dev) + '</th><th>' + esc(t.via) + '</th></tr></thead><tbody id="kn-tb"></tbody></table></div></div></section></div>';
 }
 const GRAPH_JS = String.raw`(function(){
 var R=document.querySelector('[data-kn14]');if(!R)return;var T=JSON.parse(R.getAttribute('data-t')),PRE=R.getAttribute('data-pre'),RTL=document.documentElement.dir==='rtl';
@@ -330,12 +276,12 @@ var rt,lw=0;addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(
 function liveBody(lang) {
   const t = tr(LT, lang), p = pre(lang);
   return '<div class="kn14" data-kl14 data-lang="' + lang + '" data-t="' + esc(JSON.stringify(t)) + '"><section class="kl-band"><div class="k-wrap">' +
-    '<header class="k-phead" style="padding-bottom:0"><nav class="k-crumb" aria-label="Breadcrumb"><a href="' + p + '/">Kolaboro</a> / <a href="/live/">Live</a> / <span aria-current="page">' + esc(t.l_title) + '</span></nav><h1>' + esc(t.l_title) + '</h1><p class="lead">' + esc(t.l_lead) + '</p></header>' +
+    TB.kbx_net__s.k14 + p + '/">Kolaboro</a> / <a href="/live/">Live</a> / <span aria-current="page">' + esc(t.l_title) + '</span></nav><h1>' + esc(t.l_title) + '</h1><p class="lead">' + esc(t.l_lead) + '</p></header>' +
     '<div class="kl-grid"><div class="kl-globe"><canvas id="kl-c" role="img" aria-label="' + esc(t.l_title) + '"></canvas><button type="button" class="k-btn k-btn--sm" id="kl-pp" aria-pressed="false">' + esc(t.pause) + '</button></div>' +
     '<div><ul class="kl-ctr" aria-live="polite"><li><b data-c="all">…</b><span>' + esc(t.c_all) + '</span></li><li><b data-c="h24">…</b><span>' + esc(t.c_24) + '</span></li><li><b data-c="h1">…</b><span>' + esc(t.c_1) + '</span></li><li><b data-c="markets">…</b><span>' + esc(t.c_mk) + ' (24 h)</span></li></ul>' +
     '<h2>' + esc(t.recent) + '</h2><ol class="kl-feed" id="kl-feed" aria-live="polite"><li><span>' + esc(t.loading) + '</span></li></ol>' +
     '<p class="kl-note">' + esc(t.count_note) + '</p><a class="k-btn k-btn--primary" href="' + p + '/check/">' + esc(t.run) + '</a></div></div></div></section>' +
-    '<section class="k-wrap kn-how k-prose" style="margin-bottom:var(--k-8,64px)"><h2>' + esc(t.how_h) + '</h2><ul><li>' + esc(t.h1) + '</li><li>' + esc(t.h2) + '</li><li>' + esc(t.h3) + '</li><li>' + esc(t.h4) + '</li><li>' + esc(t.land) + ' <a class="k-src" href="https://www.naturalearthdata.com/about/terms-of-use/" rel="noopener">naturalearthdata.com</a></li></ul><p><a href="/api/x/net/live">' + esc(t.data) + '</a></p></section></div>';
+    '<section class="k-wrap kn-how k-prose" style="margin-bottom:var(--k-8,64px)"><h2>' + esc(t.how_h) + '</h2><ul><li>' + esc(t.h1) + '</li><li>' + esc(t.h2) + '</li><li>' + esc(t.h3) + '</li><li>' + esc(t.h4) + '</li><li>' + esc(t.land) + TB.kbx_net__s.k15 + esc(t.data) + '</a></p></section></div>';
 }
 const LIVE_JS = String.raw`(function(){
 var R=document.querySelector('[data-kl14]');if(!R)return;var T=JSON.parse(R.getAttribute('data-t'));
@@ -370,11 +316,11 @@ size();addEventListener('resize',function(){size();if(RM)draw(0)});poll();setInt
 async function assemble(shellRes, o) {
   const alts = LANGS.map(l => '<link rel="alternate" hreflang="' + l + '" href="' + ORIGIN + pre(l) + o.path + '">').join('') + '<link rel="alternate" hreflang="x-default" href="' + ORIGIN + o.path + '">';
   const tags = '<title>' + esc(o.title) + ' | Kolaboro</title><meta name="description" content="' + esc(o.desc) + '"><link rel="canonical" href="' + ORIGIN + pre(o.lang) + o.path + '">' + alts +
-    '<meta property="og:type" content="website"><meta property="og:site_name" content="Kolaboro"><meta property="og:title" content="' + esc(o.title) + ' | Kolaboro"><meta property="og:description" content="' + esc(o.desc) + '"><meta property="og:url" content="' + ORIGIN + pre(o.lang) + o.path + '"><meta name="twitter:card" content="summary">' +
-    '<script type="application/ld+json">' + JSON.stringify(o.ld).replace(/</g, '\\u003c') + '</script>' + CSS;
+    TB.kbx_net__s.k16 + esc(o.title) + ' | Kolaboro"><meta property="og:description" content="' + esc(o.desc) + '"><meta property="og:url" content="' + ORIGIN + pre(o.lang) + o.path + '"><meta name="twitter:card" content="summary">' +
+    '<script type="application/ld+json">' + JSON.stringify(o.ld).replace(/</g, '\\u003c') + '</script>' + TB.kbx_net__s.CSS;
   const res = new HTMLRewriter()
     .on('title', { element(e) { e.remove(); } })
-    .on('meta[name="description"],meta[name="robots"],meta[property^="og:"],meta[name^="twitter:"],link[rel="canonical"],link[rel="alternate"][hreflang]', { element(e) { e.remove(); } })
+    .on(TB.kbx_net__s.k17, { element(e) { e.remove(); } })
     .on('script[type="application/ld+json"]', { element(e) { e.remove(); } })
     .on('head', { element(e) { e.append(tags, { html: true }); } })
     .on('main', { element(e) { e.setInnerContent(o.body + '<script>' + o.js + '</script>', { html: true }); } })

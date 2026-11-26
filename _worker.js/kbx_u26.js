@@ -36,7 +36,7 @@ export function nextStep(lang, x, name, cmp, txt) {   // txt (n31d, item 148): t
   const m = { ok: t26(lang, 'sh_ok'), saved: t26(lang, 'nx_saved'), save: t26(lang, 'nx_save'), url, title: name };
   return '<section class="ks knx" id="next" data-kn="' + esc(JSON.stringify(m)) + '"><h2>' + esc(t26(lang, 'nx_h')) + '</h2><ul class="knx-a">' +
     ((cmp || []).length ? '<li><a href="' + esc(cmpHref) + '" data-ev="next_compare"><span aria-hidden="true">⇆</span>' + esc(t26(lang, 'nx_cmp')) + '</a></li>' : '') +
-    '<li><button type="button" data-kn-save aria-pressed="false"><span aria-hidden="true">☆</span><span>' + esc(t26(lang, 'nx_save')) + '</span></button></li>' +
+    TB.kbx_u26__s.k0 + esc(t26(lang, 'nx_save')) + '</span></button></li>' +
     '<li><a href="#watch" data-kn-alert><span aria-hidden="true">✉</span>' + esc(t26(lang, 'nx_alert')) + '</a></li>' +
     '<li><a href="/ask-developer/?id=' + encodeURIComponent(x.id) + '"><span aria-hidden="true">?</span>' + esc(t26(lang, 'nx_ask')) + '</a></li>' +
     '<li><a href="' + P + '/projects/' + x.s + '/timeline/"><span aria-hidden="true">⋮</span>' + esc(t30(lang, 'tl_link')) + '</a></li>' +   // n30a: every dated record on one timeline
@@ -67,7 +67,7 @@ export function filterBar(lang) {
     sel('pm', 'f_pm', anyO + '<option value="1">' + esc(t26(lang, 'pm_y')) + '</option><option value="0">' + esc(t26(lang, 'pm_n')) + '</option>') +
     sel('sc', 'f_sc', anyO + [25, 50, 75].map(n => '<option value="' + n + '">' + esc(t26(lang, 'sc_n', { n })) + '</option>').join('')) +
     sel('so', 'f_so', ['0', 'tr', 'ho', 'ck'].map(k => '<option value="' + (k === '0' ? '' : k) + '">' + esc(t26(lang, 'so_' + k)) + '</option>').join('')) +
-    '<button type="reset" class="kf-r">' + esc(t26(lang, 'f_clr')) + '</button></form><p class="kf-n" role="status" aria-live="polite"></p><ol class="kf-out" hidden></ol></details>';
+    '<button type="reset" class="kf-r">' + esc(t26(lang, 'f_clr')) + TB.kbx_u26__s.k1;
 }
 export const KF_CSS = '';   // n40 k10: moved to /k/kp.css (one cached file for every named page)
 export const KF_JS = "(function(){var K=document.querySelector('[data-kf]');if(!K)return;var M=JSON.parse(K.getAttribute('data-kf')),F=K.querySelector('form'),n=K.querySelector('.kf-n'),out=K.querySelector('.kf-out'),L=document.querySelector('[data-kx-lists]'),D=null,P=null,lim=100;" +
@@ -131,7 +131,7 @@ async function facets(env, lang) {
     p.push([x.s, x.n, x.dv || '', x.co || '', H.coName(x.co, lang) || x.co || '', x.mk || '', H.mkName(x.mk, lang), ho ? H.hyear(ho.d) : null, ho ? H.hkey(ho.d) : null, ho ? H.hdisp(ho.d, lang) : '',
       (x.pn || (cc.checks || {}).permit === 2) ? 1 : 0, r ? r.score : null, N.lastmod(ix, x), typesOf(f.unit_types), pr, cu, pu, cc.stage || x.st || null, x.ar && x.ar !== x.mk ? x.ar : null]);
   }
-  const v = JSON.stringify({ version: 'facets-2', lang, updated: ix.updated, license: 'CC BY 4.0, credit Kolaboro', note: 'One row per named project. Transparency score 0 to 100 counts what is published and checkable (method: ' + ORIGIN + '/methods/transparency-score/); null where not scored. Handover as published. ty: unit types the developer publishes (v villa, a apartment, t townhouse, p penthouse, s studio, l land, h hotel or serviced, o office or shop). pr/cu: lowest price as published and its currency; pu: the same in US dollars at the ECB reference rate of fx.d (null where no price or no rate).',
+  const v = JSON.stringify({ version: 'facets-2', lang, updated: ix.updated, license: 'CC BY 4.0, credit Kolaboro', note: TB.kbx_u26__s.k2 + ORIGIN + TB.kbx_u26__s.k3,
     fields: ['s', 'n', 'dv', 'co', 'con', 'pl', 'pln', 'yr', 'hk', 'ho', 'pm', 'sc', 'ck', 'ty', 'pr', 'cu', 'pu', 'st', 'ar'], fx, p });
   FAC.set(lang, { ix, k, v }); return v;
 }
@@ -212,7 +212,7 @@ async function sweepCached(env, ctx, force) {
 export function warm(env, ctx) { try { ctx.waitUntil(sweepCached(env, ctx, false).catch(() => {})); } catch (e) {} }
 async function statusPages(env, ctx) {
   const s = await sweepCached(env, ctx, false);
-  return jr(Object.assign({ about: 'The 20 key pages of kolaboro.com, fetched from the Cloudflare edge as a visitor would (one retry). Run at most every 5 minutes per edge location, once for every newly deployed commit (a smoke test after each deploy), and every 5 minutes by the database server\'s uptime probe of /api/kb/health. Up = 2xx or 3xx with a body. The rolling history is kept in this edge location\'s cache only, so it can be shorter after a cache eviction.', schedule: 'every 5 minutes' }, s), 200, 'public, max-age=60');
+  return jr(Object.assign({ about: TB.kbx_u26__s.k4, schedule: 'every 5 minutes' }, s), 200, 'public, max-age=60');
 }
 
 // ------------------------------------------------------------------------------------------------ compare page
@@ -254,14 +254,14 @@ async function comparePage(req, u, env, ctx, shell, lang) {
   const body = '<section class="phero kp"><div class="wrap"><p class="crumb"><a href="' + P + '/">Kolaboro</a> / <a href="' + P + '/projects/">' + esc((await import('./kbx_named.js')).tr(lang, 'h1_i')) + '</a></p><h1>' + esc(t26(lang, 'c_t')) + '</h1><p class="lead">' + esc(t26(lang, 'c_d')) + '</p>' + addBox + '</div></section>' +
     '<div class="wrap kwrap kc-w">' + (L.length < 2 ? '<p class="kc-few">' + esc(t26(lang, 'c_few')) + ' <a href="' + P + '/projects/">' + esc(N.tr(lang, 'h1_i')) + '</a></p>' : '') + table +
     '<p class="ki">' + esc(t26(lang, 'c_note')) + ' <a href="' + P + '/methods/transparency-score/">' + esc(t26(lang, 'r_tr')) + '</a></p>' +
-    (L.length ? '<p class="knx-s"><span>' + esc(t26(lang, 'c_share')) + ':</span> <a href="https://wa.me/?text=' + encodeURIComponent(t26(lang, 'c_t') + ' ' + shareUrl) + '" target="_blank" rel="noopener nofollow">WhatsApp</a> <button type="button" class="kc-cp" data-u="' + esc(shareUrl) + '" data-ok="' + esc(t26(lang, 'sh_ok')) + '">' + esc(t26(lang, 'sh_copy')) + '</button> <span class="kc-cpo" role="status" aria-live="polite"></span></p>' : '') +
+    (L.length ? '<p class="knx-s"><span>' + esc(t26(lang, 'c_share')) + ':</span> <a href="https://wa.me/?text=' + encodeURIComponent(t26(lang, 'c_t') + ' ' + shareUrl) + TB.kbx_u26__s.k5 + esc(shareUrl) + '" data-ok="' + esc(t26(lang, 'sh_ok')) + '">' + esc(t26(lang, 'sh_copy')) + '</button> <span class="kc-cpo" role="status" aria-live="polite"></span></p>' : '') +
     '<p class="ki"><a href="/compare/">' + esc(t26(lang, 'c_old')) + '</a></p></div>' +
-    '<style>.kc-tw{overflow-x:auto;border:1px solid var(--line,#d5d3cc);border-radius:14px;background:var(--card,#fff);margin:18px 0}.kc{width:100%;border-collapse:collapse;min-width:560px}.kc th,.kc td{padding:12px 14px;text-align:start;vertical-align:top;border-bottom:1px solid var(--line,#d5d3cc)}.kc thead th{font-size:1.05rem}.kc tbody th{font-size:.86rem;color:var(--muted,#59626B);font-weight:600;width:22%}.kc-np{color:var(--muted,#59626B)}.kc-sc{font-variant-numeric:tabular-nums}.kc-bar{display:block;height:6px;border-radius:3px;background:var(--concrete,#F1EFE9);margin-top:6px;max-width:160px}.kc-bar i{display:block;height:100%;border-radius:3px;background:var(--k-sea,#155C75)}' +
-    '.kc6{display:flex;gap:8px;align-items:flex-start}.kc6 i{flex:none;width:12px;height:12px;border-radius:50%;margin-top:5px;background:#9AA3A0}.kc6-ok i{background:#1E7B4F}.kc6-part i{background:#C98A00}.kc6-no i{background:#C2410C}.kc-dt label{display:inline-flex;align-items:center;gap:8px;min-height:44px;font-weight:600;cursor:pointer}.kc-dt input{width:20px;height:20px;accent-color:var(--k-sea,#155C75)}.kc-w:has(#kc-diff:checked) tr.kc-same{display:none}' +
-    '.kc-rm{display:inline-grid;place-items:center;width:44px;height:44px;border:1px solid var(--line,#d5d3cc);border-radius:9px;text-decoration:none;margin-inline-start:6px;vertical-align:middle}.kc-vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}.kc-add{position:relative;max-width:560px;margin-top:18px}.kc-add label{display:block;font-weight:700;margin-bottom:6px}.kc-add input{width:100%;min-height:52px;border:2px solid var(--ink,#17212B);border-radius:12px;padding:0 14px;font:inherit;background:var(--paper,#fff);color:inherit}' +
-    '.kc-add ul{position:absolute;inset-inline:0;top:100%;z-index:30;list-style:none;margin:4px 0 0;padding:4px;background:var(--card,#fff);border:1px solid var(--line,#d5d3cc);border-radius:12px;box-shadow:0 12px 30px rgba(23,33,43,.18);max-height:320px;overflow:auto}.kc-add li a{display:block;padding:10px;border-radius:8px;text-decoration:none;color:inherit}.kc-add li a:hover,.kc-add li a:focus{background:var(--concrete,#F1EFE9);outline:0}.kc-add small{display:block;color:var(--muted,#59626B)}.kc-few{font-weight:600;margin:20px 0}' +
-    '.knx-s{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px}.knx-s a,.kc-cp{min-height:44px;display:inline-flex;align-items:center}.kc-cp{padding:0;border:0;background:none;color:inherit;font:inherit;text-decoration:underline;cursor:pointer}@media(max-width:640px){.kc{min-width:0}.kc thead{display:block}.kc thead tr{display:flex;flex-wrap:wrap;gap:6px 14px;padding:10px 12px;border-bottom:1px solid var(--line,#d5d3cc)}.kc thead th{display:flex;align-items:center;gap:2px;border:0;padding:0;font-size:.95rem}.kc thead th:first-child{display:none}.kc,.kc tbody,.kc tr{display:block}.kc tbody tr{padding:8px 0}.kc tbody th{display:block;width:auto;border:0;padding:8px 12px 2px}.kc td{display:block;border:0;padding:4px 12px}.kc td::before{content:attr(data-n);display:block;font-size:.78rem;color:var(--muted,#59626B)}.kc tbody td{border-inline-start:3px solid var(--line,#d5d3cc);margin:4px 12px;padding:2px 10px}}</style>' +
-    '<script>' + KC_JS + '</script>';
+    TB.kbx_u26__s.k6 +
+    TB.kbx_u26__s.k7 +
+    TB.kbx_u26__s.k8 +
+    TB.kbx_u26__s.k9 +
+    TB.kbx_u26__s.k10 +
+    '<script>' + TB.kbx_u26__s.KC_JS + '</script>';
   const canon = ORIGIN + P + '/compare/';
   const title = t26(lang, 'c_t') + (L.length ? ': ' + L.map(x => x.n).join(' / ') : '');
   const pg = { title: (title.length > 60 ? t26(lang, 'c_t') : title) + ' | Kolaboro', desc: t26(lang, 'c_d'), canon, body, noindex: true, alt: l => ORIGIN + pre(l) + '/compare/' + (L.length ? '?p=' + L.map(x => x.s).join(',') : ''),
@@ -272,18 +272,7 @@ async function comparePage(req, u, env, ctx, shell, lang) {
   return new Response(html, { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=300', 'x-robots-tag': 'noindex' } });
 }
 // suggestions as you type, from the public search index (names, developers, places); picking one adds it to the comparison
-const KC_JS = "(function(){var B=document.querySelector('[data-kc]');if(!B)return;var M=JSON.parse(B.getAttribute('data-kc')),q=B.querySelector('input'),ul=B.querySelector('ul'),IX=null,P=null,act=-1;" +
-  "function norm(s){return String(s||'').toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').replace(/[^0-9a-z\\u0400-\\u04ff\\u0600-\\u06ff\\u4e00-\\u9fff]+/g,' ').trim();}" +
-  "function load(){if(P)return P;P=fetch('/api/v1/search-index').then(function(r){return r.json();}).then(function(d){IX=(d.p||[]).filter(function(p){return M.cur.indexOf(p[0])<0;}).map(function(p){return{s:p[0],n:p[1],sub:[p[3],p[7]||p[5],p[6]].filter(Boolean).join(' \\u00b7 '),h:' '+norm(p[1]+' '+p[3]+' '+p[5]+' '+p[6]+' '+p[7])};});}).catch(function(){P=null;});return P;}" +
-  "function close(){ul.hidden=true;q.setAttribute('aria-expanded','false');act=-1;}" +
-  "function run(){var ws=norm(q.value).split(' ').filter(Boolean);if(!ws.length){close();return;}load().then(function(){if(!IX)return;var R=IX.filter(function(it){return ws.every(function(w){return it.h.indexOf(w)>=0;});}).sort(function(a,b){return(norm(a.n).indexOf(ws[0])===0?0:1)-(norm(b.n).indexOf(ws[0])===0?0:1)||a.n.length-b.n.length;}).slice(0,8);" +
-  "ul.innerHTML='';R.forEach(function(it,i){var li=document.createElement('li'),a=document.createElement('a'),b=document.createElement('b'),s=document.createElement('small');li.setAttribute('role','option');li.id='kc-o'+i;a.href=M.pre+'/compare/?p='+M.cur.concat([it.s]).join(',');a.tabIndex=-1;b.textContent=it.n;s.textContent=it.sub;a.appendChild(b);a.appendChild(s);li.appendChild(a);ul.appendChild(li);});ul.hidden=!R.length;q.setAttribute('aria-expanded',R.length?'true':'false');act=-1;});}" +
-  "var tm;q.addEventListener('input',function(){clearTimeout(tm);tm=setTimeout(run,80);});q.addEventListener('focus',load,{once:true});" +
-  "q.addEventListener('keydown',function(e){var L=ul.querySelectorAll('li');if(e.key==='ArrowDown'||e.key==='ArrowUp'){if(!L.length)return;e.preventDefault();act=(act+(e.key==='ArrowDown'?1:-1)+L.length)%L.length;L.forEach(function(li,i){li.setAttribute('aria-selected',i===act?'true':'false');li.firstChild.style.background=i===act?'var(--concrete,#F1EFE9)':'';});q.setAttribute('aria-activedescendant','kc-o'+act);}" +
-  "else if(e.key==='Enter'){var a=L[act>=0?act:0];if(a){e.preventDefault();location.href=a.firstChild.href;}}else if(e.key==='Escape')close();});" +
-  "document.addEventListener('click',function(e){if(!B.contains(e.target))close();});" +
-  "var dt=document.getElementById('kc-diff');if(dt)dt.addEventListener('change',function(){try{var u=new URL(location.href);if(dt.checked)u.searchParams.set('diff','1');else u.searchParams.delete('diff');history.replaceState(null,'',u);var c=document.querySelector('.kc-cp');if(c){var v=new URL(c.getAttribute('data-u'));if(dt.checked)v.searchParams.set('diff','1');else v.searchParams.delete('diff');c.setAttribute('data-u',v.href);}}catch(e){}});" +
-  "var cp=document.querySelector('.kc-cp');if(cp)cp.addEventListener('click',function(){var o=document.querySelector('.kc-cpo'),u=cp.getAttribute('data-u'),ok=function(){o.textContent=cp.getAttribute('data-ok');setTimeout(function(){o.textContent='';},2500);};try{navigator.clipboard.writeText(u).then(ok,function(){prompt('',u);});}catch(e){prompt('',u);}});})();";
+/* KC_JS: n40 k17, in /data/i18n/k17s.json */
 
 // ------------------------------------------------------------------------------------------------ routes
 export const PATHS = /^\/api\/v1\/(?:facets|followers)$|^\/api\/x\/status\/pages\/?$|^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?compare\/?$/;

@@ -6,6 +6,7 @@
 // GET /api/x/disc/similar?id=ID    the 5 most similar projects (data/similar.json) with the shared public features that explain it
 // GET /api/x/disc/timeline?id=ID   every dated public event for one project, grouped by kind, each with its source file
 import * as KB from './kolaboro.js';
+import { TB } from './kbx_strings.js';
 const { json } = KB;
 export const PATHS = /^\/api\/x\/disc(\/|$)/;
 
@@ -53,7 +54,7 @@ async function points(env) {
     updated: d.updated || null,
     keys: ['id', 'market', 'country', 'stage', 'tier', 'band', 'score', 'max', 'area'],
     rows,
-    points: mp ? { status: 'ready', generated: mp.generated, method: mp.method, sources: mp.sources, counts: mp.counts, markets: mp.markets, unplaced: mp.unplaced || [] } : { status: 'starting', note: 'The nightly job has not published the market points (key market_points of /data/similar.json) yet.' }
+    points: mp ? { status: 'ready', generated: mp.generated, method: mp.method, sources: mp.sources, counts: mp.counts, markets: mp.markets, unplaced: mp.unplaced || [] } : { status: 'starting', note: TB.kbx_disc__s.k0 }
   }, 200, 600);
 }
 
@@ -155,7 +156,7 @@ async function timeline(env, id) {
   E.sort((a, b) => a.date < b.date ? 1 : a.date > b.date ? -1 : 0);
   const counts = {}; KINDS.forEach(k => { counts[k[0]] = E.filter(e => e.kind === k[0]).length; });
   return out({ id, market: c.market, country: c.country, dataset_updated: d.updated, kinds: KINDS, counts, events: E, files,
-    note: 'Developer replies are read in the browser from /api/x/i/replies so they appear as soon as a moderator approves them.' }, 200, 300);
+    note: TB.kbx_disc__s.k1 }, 200, 300);
 }
 
 export async function handle(req, u, env, ctx) {

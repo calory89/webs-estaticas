@@ -10,6 +10,7 @@
 //   GET  /api/x/ins/digest.json | /feed.xml   the weekly digest data (carried inside /digest/index.html) and its RSS feed
 // The weekly digest and change heatmap page (/digest/, heatmap at /digest/#changes) is built by .github/workflows/kolaboro-digest.yml on main.
 import * as KB from './kolaboro.js';
+import { TB } from './kbx_strings.js';
 const { json, claude, openData, rateLimited, qnorm } = KB;
 export const PATHS = /^\/api\/x\/ins(\/|$)/;
 
@@ -60,7 +61,7 @@ function feed(D) {
     const link = SITE + '/digest/' + (w.id === D.latest ? '' : '#w-' + w.id);
     return '<item><title>' + xesc('Kolaboro weekly digest, week ' + (+w.id.slice(5)) + ' ' + w.id.slice(0, 4) + (w.partial ? ' (to date)' : '')) + '</title><link>' + xesc(link) + '</link><guid isPermaLink="false">kolaboro-digest-' + w.id + (w.partial ? '-' + w.to : '') + '</guid><pubDate>' + new Date(w.generated).toUTCString() + '</pubDate><description>' + xesc(w.intro.text) + '</description></item>';
   }).join('');
-  return '<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kolaboro weekly market digest</title><link>' + SITE + '/digest/</link><atom:link href="' + SITE + '/api/x/ins/feed.xml" rel="self" type="application/rss+xml"/><description>New off-plan projects, slipped dates, moved promises, page, register and satellite changes, by market. Counted by code from the public data.</description><language>en</language>' + items + '</channel></rss>\n';
+  return TB.kbx_ins__s.k0 + SITE + '/digest/</link><atom:link href="' + SITE + TB.kbx_ins__s.k1 + items + '</channel></rss>\n';
 }
 async function cases(env) { const d = (await file(env, 'bali-cases.json')) || (await openData()); return d; }
 
@@ -79,7 +80,7 @@ export function explain(c) {
     let state, text;
     if (!res) { state = 'not_researched'; text = NAME[k] + ': not researched yet for this project, so it cannot count.'; }
     else if (pub) { state = CONFIRMED.includes(lv) ? 'published_confirmed' : lv === 'contradicted' ? 'published_contradicted' : 'published'; text = NAME[k] + ': published (' + WHAT[k] + '). Source level: ' + LVL[lv] + '.'; }
-    else if (k === 'permit' && ck.permit === 1) { state = 'claimed'; text = NAME[k] + ': a permit is claimed but no number is published, so a buyer cannot look it up and it does not count.'; }
+    else if (k === 'permit' && ck.permit === 1) { state = 'claimed'; text = NAME[k] + TB.kbx_ins__s.k2; }
     else if (k === 'returns_ok') { state = 'missing'; text = NAME[k] + ': the marketing uses "guaranteed" return language, so this check is not met.'; }
     else { state = 'missing'; text = NAME[k] + ': not published (we look for ' + WHAT[k] + ').'; }
     return { check: k, name: NAME[k], published: pub, level: lv, researched: res, state, text };
@@ -94,7 +95,7 @@ export function explain(c) {
   unconf.forEach(r => raise.push({ check: r.check, kind: 'confirm', text: 'If an official register or an independent source confirmed the ' + r.name.toLowerCase() + ': confirmed ' + vs + ' to ' + (vs + 1) + ' of 6.', vscore: [vs, vs + 1] }));
   if (flags.length) raise.push({ kind: 'flags', text: 'While ' + (flags.length === 1 ? 'a problem appears' : flags.length + ' problems appear') + ' in public reports (news, courts or regulators), the tier stays "' + TIER.caution + '" however much is published. That is the rule, by design.' });
   const summary = c.id + ' publishes ' + s + ' of the ' + mx + ' things a careful buyer needs' + (s ? ' (' + pubRows.map(r => r.name.toLowerCase()).join(', ') + ')' : '') + '. ' +
-    (vs ? vs + ' of them ' + (vs === 1 ? 'is' : 'are') + ' confirmed by an official register or an independent source.' : 'None is confirmed by an official register or an independent source yet: everything published rests on the developer\'s word.') + ' ' +
+    (vs ? vs + ' of them ' + (vs === 1 ? 'is' : 'are') + ' confirmed by an official register or an independent source.' : TB.kbx_ins__s.k3) + ' ' +
     'Tier: "' + TIER[tier] + '"' + (flags.length ? ', because public reports show ' + (flags.length === 1 ? 'a problem' : flags.length + ' problems') + '.' : s <= 1 ? ', because 1 or fewer checks are published.' : s >= (researched.length === 3 ? 3 : 4) ? ', because ' + s + ' checks are published and no problem appears in public reports.' : ', because ' + s + ' checks are published (' + (researched.length === 3 ? 3 : 4) + ' are needed for "' + TIER.clear + '").');
   const cl = c.claims || {};
   return {
@@ -106,9 +107,9 @@ export function explain(c) {
     unconfirmed: unconf.map(r => r.check), contradicted: contra.map(r => r.check),
     claims: { verified: cl.verified || 0, unverified: cl.unverified || 0, contradicted: cl.contradicted || 0, text: (cl.verified || cl.unverified || cl.contradicted) ? 'Developer claims tested against registers, courts and press: ' + (cl.verified || 0) + ' verified, ' + (cl.unverified || 0) + ' unverified, ' + (cl.contradicted || 0) + ' contradicted. Claims do not change the score.' : null },
     flags, raise,
-    caveat: 'A high score means documents are public, not that they are genuine. Not financial or legal advice.',
-    rules: 'One point per check the developer publishes (a permit counts only with a number a buyer can look up), one confirmed point per check backed by an official register or independent source. Tier "' + TIER.caution + '" with a public problem or 0 to 1 checks published, "' + TIER.clear + '" with 4 or more (3 when only 3 checks could be researched), otherwise "' + TIER.mixed + '".',
-    method: METHOD, language: 'en', language_note: 'English only: the 8 language versions of the site have no translated wording for these explanation templates yet.',
+    caveat: TB.kbx_ins__s.k4,
+    rules: TB.kbx_ins__s.k5 + TIER.caution + '" with a public problem or 0 to 1 checks published, "' + TIER.clear + '" with 4 or more (3 when only 3 checks could be researched), otherwise "' + TIER.mixed + '".',
+    method: METHOD, language: 'en', language_note: TB.kbx_ins__s.k6,
     links: { project: SITE + '/p/' + encodeURIComponent(c.id) + '/', explain: SITE + '/explain/?id=' + encodeURIComponent(c.id) }
   };
 }
@@ -153,13 +154,7 @@ export async function evidence(env, id) {
 }
 
 // ---------- project-scoped question (the /ask code path: rateLimited + claude() + edge cache, narrowed to one project) ----------
-const ASK1_PROMPT = `You answer a buyer's question about ONE anonymous off-plan property project, using ONLY the evidence lines below (E1, E2, ...). They are Kolaboro's public record for this project: its checks, promises, timeline, hazards and register or satellite checks.
-Rules:
-- If the evidence lines cannot answer the question, or it asks about anything else (other projects, the developer's name, prices you do not see, legal or financial advice, predictions), set "answerable": false and say in one sentence what the evidence does cover.
-- Never guess. Never name a developer or a project. Copy numbers and dates exactly as they appear in the lines.
-- Cite every fact: each citation names one evidence line and quotes the exact text of its value (or part of it).
-- No dashes as punctuation. Plain English, 1 to 4 short sentences. Not financial or legal advice.
-Reply with ONLY one JSON object: {"answerable": true or false, "answer": "...", "citations": [{"e": "E3", "quote": "exact text from that line's value"}]}`;
+/* ASK1_PROMPT: n40 k17, in /data/i18n/k17s.json */
 const numsIn = t => (String(t).match(/\d+(?:[.,]\d+)?/g) || []).map(n => n.replace(',', '.'));
 
 async function ask(req, env, ctx) {
@@ -173,7 +168,7 @@ async function ask(req, env, ctx) {
   const hit = await caches.default.match(ck); if (hit) return out({ ...(await hit.json()), cached: true });
   if (await rateLimited(req, ctx)) return out({ error: 'rate', message: 'Too many questions from your network this hour. Try again later.' }, 429);
   const ctxt = ev.lines.map(l => l.e + ' ' + l.field + ': ' + l.value).join('\n');
-  let o; try { o = await claude(env, ASK1_PROMPT + '\n\nPROJECT ' + id + ' (data updated ' + ev.updated + ')\n' + ctxt + '\n\nQUESTION: ' + q, null, null, 1200); }
+  let o; try { o = await claude(env, TB.kbx_ins__s.ASK1_PROMPT + '\n\nPROJECT ' + id + ' (data updated ' + ev.updated + ')\n' + ctxt + '\n\nQUESTION: ' + q, null, null, 1200); }
   catch (e) { return out({ error: e && e.budget ? 'budget' : 'model', message: e && e.budget ? 'The daily AI budget is used up. Try again tomorrow.' : 'The model did not answer. Try again in a minute.' }, 503); }
   const byE = {}; ev.lines.forEach(l => { byE[l.e] = l; });
   const cites = []; const seen = new Set();
@@ -190,10 +185,10 @@ async function ask(req, env, ctx) {
   if (answerable && !good.length) { answerable = false; refused = 'no_valid_citation'; }
   else if (answerable && loose.length) { answerable = false; refused = 'number_not_in_cited_evidence'; }
   const res = { id, q, updated: ev.updated, answerable, refused,
-    answer: answerable ? answer : (refused ? 'We could not back an answer with this project\'s evidence, so we do not show one. Try asking about its checks, promises, timeline, hazards or register checks.' : answer || 'The evidence for this project does not answer that.'),
+    answer: answerable ? answer : (refused ? TB.kbx_ins__s.k7 : answer || 'The evidence for this project does not answer that.'),
     citations: answerable ? good : [], rejected_citations: cites.filter(c => !c.quote_found).map(c => c.e), unbacked_numbers: loose.slice(0, 6),
     model: claude.lastModel || null, evidence_lines: ev.lines.length,
-    note: 'Answered by a model from this project\'s public evidence only. Code checked that every citation names a real evidence line and quotes text found in it, and that every number in the answer appears in the cited lines.' };
+    note: TB.kbx_ins__s.k8 };
   ctx.waitUntil(caches.default.put(ck, new Response(JSON.stringify(res), { headers: { 'content-type': 'application/json', 'cache-control': 'max-age=86400' } })));
   return out(res);
 }
@@ -234,7 +229,7 @@ export async function indices(env, market) {
   const minP = (pi && pi.rules && pi.rules.min_pairs_per_link) || 5;
   if (last && last.pairs >= minP) I.push({ key: 'prices', label: 'Asking-price index', status: 'ok', href: '/index/prices/', value: (+last.index).toFixed(1), text: 'Advertised "from" prices, chained index: ' + (+last.index).toFixed(1) + ' on ' + last.date + ' against 100 on ' + first.date + ', from ' + last.pairs + ' same-project price pairs on the last link (' + pmk.changes_total + ' price changes seen in total). Asking prices, not sale prices.', n: last.pairs, as_of: pi.generated });
   else thin('prices', 'Asking-price index', '/index/prices/', (last ? last.pairs : 0) + ' same-project price pairs on the last link, the index needs ' + minP + '.');
-  return { market, country: C[0].country, projects: C.length, updated: d.updated, indices: I, note: 'Each figure comes from the public file behind the linked page. "Not enough data" means the sample is below that page\'s own minimum.' };
+  return { market, country: C[0].country, projects: C.length, updated: d.updated, indices: I, note: TB.kbx_ins__s.k9 };
 }
 
 export async function handle(req, u, env, ctx) {

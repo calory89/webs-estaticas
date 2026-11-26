@@ -16,6 +16,7 @@ import { t31, n31js, loadS } from './kbx_n31b_page.js';
 import { trustRender, head, crumbLd, progData } from './kbx_trust.js';
 import { trData } from './kbx_tr.js';
 import { METHOD } from './kbx_e29_lines.js';
+import { TB } from './kbx_strings.js';
 
 const ORIGIN = 'https://kolaboro.com';
 const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' };
@@ -36,9 +37,7 @@ const ext = (u, label) => '<a class="k-src" href="' + esc(u) + '" rel="noopener 
 const ul = L => '<ul>' + L.map(x => '<li>' + esc(x) + '</li>').join('') + '</ul>';
 const reviewed = lang => '<p class="k-small k-muted">' + tv(lang, 'upd', { d: tm(REVIEWED, lang) }) + '</p>';
 const links = (lang, L) => '<h2>' + esc(t(lang, 'rel')) + '</h2><ul class="k31-rel">' + L.map(([h, k]) => '<li><a href="' + (h.startsWith('/') && !/^\/(independence|registers|metrics|buyer-reports|developers\/reply)\b/.test(h) ? pre(lang) + h : h) + '">' + esc(t(lang, k)) + '</a></li>').join('') + '</ul>';
-const CSS = '<style id="k31p-css">.k31-tw{overflow-x:auto;border:1px solid var(--k-line);border-radius:var(--k-r-md,10px);background:var(--k-surface);margin:var(--k-4,16px) 0}.k31-tw table{width:100%;border-collapse:collapse}.k31-tw th,.k31-tw td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--k-line)}.k31-tw th{font-size:var(--k-fs-xs,13px);font-weight:600}.k31-tw .k-n{text-align:end;font-variant-numeric:tabular-nums;white-space:nowrap}' +
-  '.k31-rel{padding-inline-start:18px}.k31-rel a,.k31-btn{display:inline-block;padding:12px 0;min-height:44px;box-sizing:border-box}.k31-h{font-family:ui-monospace,monospace;font-size:12px;overflow-wrap:anywhere}.k31-box{border:1px solid var(--k-line);border-radius:var(--k-r-md,10px);padding:var(--k-3,12px) var(--k-4,16px);margin:var(--k-4,16px) 0;background:var(--k-sunken)}' +
-  '@media (max-width:640px){.k31-tw table.k31-st thead{display:none}.k31-tw table.k31-st tr{display:block;border-bottom:1px solid var(--k-line);padding:8px 0}.k31-tw table.k31-st td,.k31-tw table.k31-st th{display:block;border:0;padding:4px 12px;text-align:start}}</style>';
+/* CSS: n40 k17, in /data/i18n/k17s.json */
 
 // ------------------------------------------------------------------------------------------------ data
 const SHARED = (globalThis.__kbJson = globalThis.__kbJson || {});
@@ -101,7 +100,7 @@ function casePage(lang, cs) {
 }
 function caseJson() {
   const M = c1Math();
-  return Object.assign({ name: 'Kolaboro case study 1: ' + C1.name, page: ORIGIN + '/case-studies/' + C1.slug + '/', project_page: ORIGIN + '/projects/' + C1.ps + '/', licence: 'CC BY 4.0 (credit: Kolaboro, kolaboro.com)', published: REVIEWED, note: 'Facts only, each with its source and the date read. Register figures: DLD project register as republished by dubairealestateiq.com. Arithmetic on the register figures, not a forecast.' }, C1, { months_moved: M.moved, arithmetic: { from: M.a, to: M.b, months: M.mo, points: M.pts, points_per_month: +M.avg.toFixed(3), remaining_points: M.rem, points_per_month_needed: +M.need.toFixed(2) } });
+  return Object.assign({ name: 'Kolaboro case study 1: ' + C1.name, page: ORIGIN + '/case-studies/' + C1.slug + '/', project_page: ORIGIN + '/projects/' + C1.ps + '/', licence: 'CC BY 4.0 (credit: Kolaboro, kolaboro.com)', published: REVIEWED, note: TB.kbx_n31b__s.k0 }, C1, { months_moved: M.moved, arithmetic: { from: M.a, to: M.b, months: M.mo, points: M.pts, points_per_month: +M.avg.toFixed(3), remaining_points: M.rem, points_per_month_needed: +M.need.toFixed(2) } });
 }
 function casesHub(lang) {
   const M = c1Math(), cr = [[t(lang, 'cs_h1'), pre(lang) + '/case-studies/']];
@@ -239,7 +238,7 @@ export async function handle(req, u, env, ctx, shell) {
     }
   } catch (e) { return null; }
   if (!pg) return null;
-  const res = await trustRender(lang, Object.assign({}, pg, { body: pg.body.replace('<div class="kpg">', CSS + '<div class="kpg">') }), shell);
+  const res = await trustRender(lang, Object.assign({}, pg, { body: pg.body.replace('<div class="kpg">', TB.kbx_n31b__s.CSS + '<div class="kpg">') }), shell);
   if (pg.noindex) { const h = new Headers(res.headers); h.set('x-robots-tag', 'noindex, follow'); return new Response(res.body, { status: res.status, headers: h }); }
   return res;
 }

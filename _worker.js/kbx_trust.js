@@ -22,7 +22,8 @@ import { TS } from './kbx_trust_i18n.js';
 import { trData } from './kbx_tr.js';
 import { placeName } from './kbx_hdate.js';
 import { t27 } from './kbx_t27_i18n.js';   // n27t: funding and conflicts of interest on /team/
-import { ogImg } from './kbx_ogt.js';   // n29t: share image per page type
+import { ogImg } from './kbx_ogt.js';
+import { TB } from './kbx_strings.js';   // n29t: share image per page type
 
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
@@ -126,11 +127,7 @@ export async function progData(env, inner) {
 }
 
 // ------------------------------------------------------------------------------------------------ shared HTML
-const CSS = '<style id="kpg-css">.kpg h2{margin-top:var(--k-7,48px)}.kpg .k-grid{--k-min:190px}.kpg-st{border:1px solid var(--k-line);border-radius:var(--k-r-md,10px);background:var(--k-surface);padding:var(--k-4,16px)}.kpg-st b{display:block;font-size:var(--k-fs-2xl,28px);line-height:1.15}.kpg-st span{display:block;color:var(--k-ink-2)}.kpg-st small{display:block;color:var(--k-muted);font-size:var(--k-fs-xs,13px);margin-top:4px;overflow-wrap:anywhere}' +
-  '.kpg-fig{margin:var(--k-4,16px) 0;padding:var(--k-4,16px);border:1px solid var(--k-line);border-radius:var(--k-r-md,10px);background:var(--k-surface)}.kpg-fig svg{display:block;width:100%;height:auto}.kpg-fig figcaption{color:var(--k-muted);font-size:var(--k-fs-sm,15px);margin-top:8px}' +
-  '.kpg-b{fill:var(--k-sea)}.kpg-l{fill:none;stroke:var(--k-brand-ink);stroke-width:2}.kpg-ax{stroke:var(--k-line-2);stroke-width:1}.kpg-tx{fill:var(--k-muted);font-size:11px;font-family:inherit}.kpg-tv{fill:var(--k-ink);font-size:11px;font-weight:600}.kpg-tl{fill:var(--k-brand-ink);font-size:11px;font-weight:600}' +
-  '.kpg ol.kpg-it{list-style:none;padding:0;margin:0}.kpg-it li{display:flex;gap:10px;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--k-line)}.kpg-it li>b{min-width:2.6em;color:var(--k-muted);font-variant-numeric:tabular-nums}.kpg-it li>span:last-child{flex:1}' +
-  '.kpg-q li{margin:8px 0}.kpg-q blockquote{margin:0}.kpg-cite{background:var(--k-sunken);border-radius:var(--k-r-sm,6px);padding:var(--k-3,12px);overflow-wrap:anywhere}.kpg ul,.kpg ol{padding-inline-start:1.2em}.kpg li{margin:6px 0}.kpg .k-badge{white-space:nowrap}.kpg-sec h3{margin-top:var(--k-5,24px)}</style>';
+/* CSS: n40 k17, in /data/i18n/k17s.json */
 const ST_BADGE = { done: 'ok', doing: 'info', next: 'plain', planned: 'plain' };
 const badge = (lang, st) => '<span class="k-badge k-badge--' + (ST_BADGE[st] || 'plain') + '">' + esc(t(lang, 'st_' + st)) + '</span>';
 const crumb = (lang, list) => '<p class="k-crumb"><a href="' + pre(lang) + '/">Kolaboro</a> / ' + list.map((x, i) => i < list.length - 1 ? '<a href="' + x[1] + '">' + esc(x[0]) + '</a>' : '<span>' + esc(x[0]) + '</span>').join(' / ') + '</p>';
@@ -169,7 +166,7 @@ function progressPage(D, lang, sm, smDay) {
   const cell = v => v == null ? '<td class="k-n k-muted">' + esc(t(lang, 'none')) + '</td>' : '<td class="k-n">' + esc(nf(lang, v)) + '</td>';
   const rows = S.slice().reverse().map(s => '<tr><th scope="row" data-label="' + esc(t(lang, 'c_day')) + '"><time datetime="' + s.d + '">' + esc(fdt(s.d, lang)) + '</time></th>' + [s.added, s.total, s.markets, s.countries, s.ships, s.deploys].map((v, i) => cell(v).replace('<td', '<td data-label="' + esc(t(lang, ['c_added', 'c_total', 'c_mk', 'c_co', 'c_ships', 'c_dep'][i])) + '"')).join('') + '</tr>').join('');
   const th = ['c_day', 'c_added', 'c_total', 'c_mk', 'c_co', 'c_ships', 'c_dep'].map((k, i) => '<th scope="col"' + (i ? ' class="k-n"' : '') + '>' + esc(t(lang, k)) + '</th>').join('');
-  const sn = D.days.length ? '<div class="k-table-wrap"><table class="k-table k-table--dense k-table--stack"><thead><tr><th scope="col">' + esc(t(lang, 'c_day')) + '</th><th scope="col" class="k-n">' + esc(t(lang, 'c_src')) + '</th><th scope="col" class="k-n">' + esc(t(lang, 'c_cl')) + '</th><th scope="col" class="k-n">' + esc(t(lang, 'c_sm')) + '</th></tr></thead><tbody>' +
+  const sn = D.days.length ? TB.kbx_trust__s.k0 + esc(t(lang, 'c_day')) + '</th><th scope="col" class="k-n">' + esc(t(lang, 'c_src')) + '</th><th scope="col" class="k-n">' + esc(t(lang, 'c_cl')) + '</th><th scope="col" class="k-n">' + esc(t(lang, 'c_sm')) + '</th></tr></thead><tbody>' +
     D.days.slice(0, 60).map(r => '<tr><th scope="row"><time datetime="' + esc(r.d) + '">' + esc(fdt(r.d, lang)) + '</time></th>' + [r.sources, r.claims_total, r.sitemap_urls].map((v, i) => cell(v).replace('<td', '<td data-label="' + esc(t(lang, ['c_src', 'c_cl', 'c_sm'][i])) + '"')).join('') + '</tr>').join('') + '</tbody></table></div>' : '<p class="k-muted">' + esc(t(lang, 'sn_empty')) + '</p>';
   const c = D.cnt;
   const more = [['/changelog/', 'l_chg'], ['/shipping/', 'l_ship'], ['/metrics/', 'l_met'], ['/status/', 'l_stat']].map(([h, k]) => '<li><a href="' + h + '">' + esc(t(lang, k)) + '</a></li>').join('')
@@ -182,7 +179,7 @@ function progressPage(D, lang, sm, smDay) {
     '<h2 id="improvements">' + esc(t(lang, 'imp_h')) + '</h2><p>' + esc(tx(lang, 'imp_p', { a: nf(lang, c.done), b: nf(lang, c.doing), c: nf(lang, c.next), d: nf(lang, c.planned) })) + '</p><p><a class="k-btn k-btn--primary" href="' + pre(lang) + IMP_P + '">' + esc(t(lang, 'imp_a')) + '</a></p>' +
     '<h2 id="method">' + esc(t(lang, 'mt_h')) + '</h2><ul>' + t(lang, 'mt').map(s => '<li>' + esc(s) + '</li>').join('') + '</ul>' +
     '<h2>' + esc(t(lang, 'more_h')) + '</h2><ul>' + more + '<li><a href="' + pre(lang) + TEAM_P + '">' + esc(t(lang, 'l_team')) + '</a></li><li><a href="' + pre(lang) + PRESS_P + '">' + esc(t(lang, 'crumb_places')) + '</a></li></ul>' +
-    '<p class="k-small"><a class="k-src" href="/api/x/progress">' + esc(t(lang, 'json')) + '</a> <a class="k-src" href="/data/progress.json">/data/progress.json</a> <span class="k-muted">CC BY 4.0</span></p></div></section></div>';
+    '<p class="k-small"><a class="k-src" href="/api/x/progress">' + esc(t(lang, 'json')) + TB.kbx_trust__s.k1;
   const title = t(lang, 'p_title'), desc = t(lang, 'p_desc'), url = ORIGIN + pre(lang) + PROG_P;
   const ld = [{ '@type': 'WebPage', '@id': url + '#page', url, name: title, description: desc, inLanguage: lang, dateModified: now, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' } },
     { '@type': 'Dataset', name: title, description: desc, url, isAccessibleForFree: true, dateModified: now, license: 'https://creativecommons.org/licenses/by/4.0/', creator: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' }, temporalCoverage: (D.first || now) + '/' + now, distribution: [{ '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: ORIGIN + '/api/x/progress' }] },
@@ -207,7 +204,7 @@ function improvementsPage(D, lang) {
   const body = '<div class="kpg">' + head(lang, [[t(lang, 'chg_a'), pre(lang) + PROG_P], [t(lang, 'crumb_imp'), pre(lang) + IMP_P]], esc(t(lang, 'i_h1')), esc(t(lang, 'i_lead')),
     '<p><b>' + sum + '</b></p><p class="k-small k-muted">' + esc(tx(lang, 'upd', { d: fdt(D.itemsUpd, lang) })) + (note ? ' ' + esc(note) : '') + '</p>') +
     '<h2>' + esc(t(lang, 'i_crit_h')) + '</h2><ol>' + t(lang, 'i_crit').map(x => '<li>' + esc(x) + '</li>').join('') + '</ol>' + nav + list +
-    '<p class="k-small"><a href="' + pre(lang) + PROG_P + '">' + esc(t(lang, 'chg_a')) + '</a> <a class="k-src" href="/data/progress.json">/data/progress.json</a></p></div></section></div>';
+    '<p class="k-small"><a href="' + pre(lang) + PROG_P + '">' + esc(t(lang, 'chg_a')) + TB.kbx_trust__s.k2;
   const title = t(lang, 'i_title'), desc = t(lang, 'i_desc'), url = ORIGIN + pre(lang) + IMP_P;
   const ld = [{ '@type': 'WebPage', '@id': url + '#page', url, name: title, description: desc, inLanguage: lang, dateModified: D.itemsUpd, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' } },
     crumbLd(lang, [[t(lang, 'chg_a'), pre(lang) + PROG_P], [t(lang, 'crumb_imp'), pre(lang) + IMP_P]])];
@@ -322,12 +319,12 @@ export async function trustRender(lang, pg, shell) {
   const sh = await shell(pre(lang) + '/how-we-score/');
   const url = ORIGIN + pre(lang) + pg.path, alts = LANGS.map(l => '<link rel="alternate" hreflang="' + l + '" href="' + ORIGIN + pre(l) + pg.path + '">').join('') + '<link rel="alternate" hreflang="x-default" href="' + ORIGIN + pg.path + '">';
   const tags = '<title>' + esc(pg.title) + ([...pg.title].length + 11 <= 60 ? ' | Kolaboro' : '') + '</title><meta name="description" content="' + esc(pg.desc) + '"><link rel="canonical" href="' + url + '">' + alts + '<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">' +
-    '<meta property="og:type" content="website"><meta property="og:site_name" content="Kolaboro"><meta property="og:title" content="' + esc(pg.title) + '"><meta property="og:description" content="' + esc(pg.desc) + '"><meta property="og:url" content="' + url + '"><meta property="og:image" content="' + ogImg(url) + '"><meta name="twitter:card" content="summary_large_image">' +
-    '<script type="application/ld+json">' + JSON.stringify({ '@context': 'https://schema.org', '@graph': pg.ld }).replace(/</g, '\\u003c') + '</script>' + CSS;
+    TB.kbx_trust__s.k3 + esc(pg.title) + '"><meta property="og:description" content="' + esc(pg.desc) + '"><meta property="og:url" content="' + url + '"><meta property="og:image" content="' + ogImg(url) + '"><meta name="twitter:card" content="summary_large_image">' +
+    '<script type="application/ld+json">' + JSON.stringify({ '@context': 'https://schema.org', '@graph': pg.ld }).replace(/</g, '\\u003c') + '</script>' + TB.kbx_trust__s.CSS;
   const res = new HTMLRewriter()
     .on('html', { element(e) { e.setAttribute('lang', lang); if (lang === 'ar') e.setAttribute('dir', 'rtl'); else e.removeAttribute('dir'); } })
     .on('title', { element(e) { e.remove(); } })
-    .on('meta[name="description"],meta[name="robots"],meta[property^="og:"],meta[name^="twitter:"],link[rel="canonical"],link[rel="alternate"][hreflang]', { element(e) { e.remove(); } })
+    .on(TB.kbx_trust__s.k4, { element(e) { e.remove(); } })
     .on('script[type="application/ld+json"]', { element(e) { e.remove(); } })
     .on('head', { element(e) { e.append(tags, { html: true }); } })
     .on('main', { element(e) { e.setInnerContent(pg.body, { html: true }); } })
@@ -352,7 +349,7 @@ async function sitemapXml(env) {
   try { const c = await opt(env, 'corrections.json'); if (c && c.updated) lm['/corrections/'] = c.updated; } catch (e) {}
   if (lm[PRESS_P]) lm['/transparency-badge/'] = lm[PRESS_P];
   const x = paths.flatMap(p => LANGS.map(l => '<url><loc>' + ORIGIN + pre(l) + p + '</loc>' + (lm[p] ? '<lastmod>' + lm[p] + '</lastmod>' : '') + LANGS.map(a => '<xhtml:link rel="alternate" hreflang="' + a + '" href="' + ORIGIN + pre(a) + p + '"/>').join('') + '<xhtml:link rel="alternate" hreflang="x-default" href="' + ORIGIN + p + '"/></url>'));
-  return '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n' + x.join('\n') + '\n</urlset>\n';
+  return TB.kbx_trust__s.k5 + x.join('\n') + '\n</urlset>\n';
 }
 
 // ------------------------------------------------------------------------------------------------ JSON API (routed with the pages in index.js)

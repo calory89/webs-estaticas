@@ -13,6 +13,7 @@
 //   kindIco(k, lang)          item 68: icon and label of a source's kind, next to each source and each tested claim
 import { METHOD, ACC } from './kbx_e29_lines.js';
 import { CAP } from './kbx_n31b_cap.js';
+import { TB } from './kbx_strings.js';
 export const N31V = '2';
 const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 // n31b: the strings live in /data/n31b-i18n.json (kept out of the worker bundle, which must stay under Pages' 25 MiB limit), loaded once
@@ -94,9 +95,9 @@ export function trustBlock(x, c, lang, o) {
 // item 88: one button on every fact line, opening an email to the existing correction address with the line and the page filled in
 export function n31js() {
   const W8 = {}; for (const l of Object.keys(S || { en: 1 })) W8[l] = [t31(l, 'w_btn'), t31(l, 'w_subj'), t31(l, 'w_body')];
-  return "(function(){var D=document.getElementById('k31t');if(!D)return;var W=" + JSON.stringify(W8).replace(/</g, '\\u003c') + ",L=(document.documentElement.lang||'en').slice(0,2),T=W[L]||W.en,S=T[1].replace('{n}',D.getAttribute('data-n')).replace('{id}',D.getAttribute('data-id'));" +
-  "var Q=document.querySelectorAll('main li.kfact');for(var i=0;i<Q.length;i++){var b=document.createElement('button');b.type='button';b.className='k31w';b.setAttribute('aria-label',T[0]);b.title=T[0];b.textContent='\\u2691';Q[i].appendChild(b)}" +
-  "document.addEventListener('click',function(e){var b=e.target&&e.target.closest&&e.target.closest('.k31w');if(!b)return;var li=b.parentNode,c=li.cloneNode(true),x=c.querySelectorAll('.k31w');for(var j=0;j<x.length;j++)x[j].remove();" +
-  "var tx=(c.textContent||'').replace(/\\s+/g,' ').trim().slice(0,500),s=li.closest('section[id],details[id],div[id]'),u=location.origin+location.pathname+(s&&s.id?'#'+s.id:'');" +
-  "location.href='mailto:hello@kolaboro.com?subject='+encodeURIComponent(S)+'&body='+encodeURIComponent(T[2].replace('{u}',u).replace('{l}',tx))})})();";
+  return "(function(){var D=document.getElementById('k31t');if(!D)return;var W=" + JSON.stringify(W8).replace(/</g, '\\u003c') + TB.kbx_n31b_page__s.k0 +
+  TB.kbx_n31b_page__s.k1 +
+  TB.kbx_n31b_page__s.k2 +
+  TB.kbx_n31b_page__s.k3 +
+  TB.kbx_n31b_page__s.k4;
 }

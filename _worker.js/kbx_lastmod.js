@@ -1,3 +1,4 @@
+import { TB } from './kbx_strings.js';
 // True lastmod for kolaboro.com named project pages (batch 15, s15b).
 // "Last modified" means the date of the last REAL change of the data a page shows, never the date we last checked it or the deploy date.
 // For every project we fingerprint five parts of its data, with volatile dates (checked, seen, sealed, invited) and page-copy hashes
@@ -98,7 +99,7 @@ async function trueLastmod0(env) {
 // GET /api/seo/lastmod: the computed state, in the format of /data/lastmod.json (the pin job publishes it as is)
 export async function lastmodRoute(env) {
   const v = await trueLastmod(env);
-  const body = { version: 'lastmod-1', updated: new Date().toISOString().slice(0, 16) + 'Z', method: 'Per project, five data parts are fingerprinted without volatile dates (named n, case c, promises p, findings f, satellite s). Each part keeps the date its current fingerprint was first seen; a page lastmod is the latest of its parts and its added date.', files: v.files, previous_pin: v.pinned, p: v.state };
+  const body = { version: 'lastmod-1', updated: new Date().toISOString().slice(0, 16) + 'Z', method: TB.kbx_lastmod__s.k0, files: v.files, previous_pin: v.pinned, p: v.state };
   return new Response(JSON.stringify(body), { headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store', 'x-robots-tag': 'noindex' } });
 }
 

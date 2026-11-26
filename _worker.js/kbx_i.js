@@ -24,6 +24,7 @@
 // show "opening soon" (replies) or local-only mode (room).
 import { rpc, sha, WKEY } from './kolaboro.js';
 import { officialDomains } from './kbx_named.js';
+import { TB } from './kbx_strings.js';
 
 export const PATHS = /^\/api\/x\/i\//;
 
@@ -249,7 +250,7 @@ export async function handle(req, u, env, ctx) {
     if (await limited(req, ctx, 'dns', 40)) return out({ error: 'rate' }, 429);
     const [dns, meta, off] = await Promise.all([dnsCheck(domain, token), metaCheck(domain, token), official(id, domain, env)]);
     return out({ project: id, domain, verified: dns.found || meta.found, method: dns.found ? 'dns' : meta.found ? 'meta' : null,
-      official: { named_page: off.named, domains: off.domains, match: off.match, note: off.named ? (off.match ? 'This domain is the domain of the page we track for this project.' : 'This domain is not the domain of the page we track for this project, so a published reply would not get the "controls the official domain" badge. A moderator can still review it.') : 'This project has no public named page.' },
+      official: { named_page: off.named, domains: off.domains, match: off.match, note: off.named ? (off.match ? 'This domain is the domain of the page we track for this project.' : TB.kbx_i__s.k0) : 'This project has no public named page.' },
       dns, meta, checked_at: new Date().toISOString() });
   }
   if (path === '/api/x/i/reply' && req.method === 'POST') return reply(req, env, ctx);

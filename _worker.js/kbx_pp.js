@@ -41,59 +41,7 @@ const ROWS = [
   ['lei', 'WW', 'man', 'GLEIF LEI search', 'https://search.gleif.org/']
 ];
 
-const CSS = `<style id="kpp17">
-.kpp{--gap:var(--k-5,24px)}
-.kpp .k-phead{padding-block:var(--k-7,48px) var(--k-5,24px)}
-.kpp h1{max-width:22ch}
-.kpp .k-phead .lead{max-width:62ch}
-.kpp-priv{display:flex;gap:var(--k-3,12px);align-items:flex-start;max-width:72ch;margin-top:var(--k-4,16px)}
-.kpp-priv svg{flex:none;width:22px;height:22px;color:var(--k-ok);margin-top:2px}
-.kpp-grid{display:grid;gap:var(--k-6,32px);grid-template-columns:minmax(0,1fr);align-items:start;padding-bottom:var(--k-7,48px)}
-@media (min-width:960px){.kpp-grid{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr)}}
-.kpp-grid>*{min-width:0}
-.kpp-fig{margin:0;max-width:100%;position:relative;border:1.5px dashed var(--k-line-2);border-radius:var(--k-r-lg,14px);background:var(--k-sunken);min-height:260px;display:block;overflow:hidden}
-.kpp [hidden]{display:none!important}
-.kpp-fig.has{min-height:0;border-style:solid;border-color:var(--k-line);background:var(--k-surface)}
-.kpp-fig.over{border-color:var(--k-sea);background:var(--k-sea-soft)}
-.kpp-fig canvas{display:block;width:100%;height:auto}
-.kpp-fig canvas[hidden]{display:none}
-.kpp-empty{text-align:center;padding:var(--k-8,64px) var(--k-4,16px);color:var(--k-muted)}
-.kpp-empty svg{width:56px;height:56px;color:var(--k-line-2);display:block;margin:0 auto var(--k-3,12px)}
-.kpp-empty b{display:block;color:var(--k-ink);font-size:var(--k-fs-md);margin-bottom:4px}
-.kpp-side{display:flex;flex-direction:column;gap:var(--k-4,16px)}
-.kpp-pick{display:flex;flex-wrap:wrap;gap:var(--k-2,8px)}
-.kpp-pick label{position:relative;cursor:pointer}
-.kpp-pick input[type=file]{position:absolute;inset:0;opacity:0;width:1px;height:1px}
-.kpp-pick label:focus-within{outline:2px solid var(--k-sea);outline-offset:2px;border-radius:var(--k-r-md,10px)}
-.kpp-samples{display:flex;flex-wrap:wrap;gap:var(--k-2,8px);align-items:center}
-.kpp-samples>span{width:100%;color:var(--k-muted);font-size:var(--k-fs-sm)}
-.kpp-status{min-height:1.5em;margin:0;font-size:var(--k-fs-sm);color:var(--k-ink-2)}
-.kpp-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:var(--k-3,12px)}
-.kpp-item{border:1px solid var(--k-line);border-radius:var(--k-r-md,10px);background:var(--k-surface);padding:var(--k-4,16px)}
-.kpp-item.on{border-color:var(--k-sea);box-shadow:0 0 0 2px var(--k-sea-soft)}
-.kpp-ih{display:flex;gap:var(--k-3,12px);align-items:flex-start}
-.kpp-n{flex:none;display:grid;place-items:center;width:28px;height:28px;border-radius:var(--k-r-sm,6px);background:var(--k-sea);color:#fff;font-weight:700;font-size:var(--k-fs-sm)}
-.kpp-v{display:block;font-size:var(--k-fs-lg);font-weight:650;letter-spacing:.01em;word-break:break-all;color:var(--k-ink)}
-.kpp-k{display:block;font-size:var(--k-fs-sm);color:var(--k-ink-2)}
-.kpp-meta{display:flex;flex-wrap:wrap;gap:var(--k-2,8px);margin-top:var(--k-2,8px)}
-.kpp-act{display:flex;flex-wrap:wrap;gap:var(--k-2,8px);margin-top:var(--k-3,12px);align-items:center}
-.kpp-res{margin-top:var(--k-3,12px);overflow-wrap:anywhere;min-width:0}
-.kpp-res .k-hash{max-width:100%}
-.kpp-res:empty{display:none}
-.kpp-item,.kpp-ih>div{min-width:0}
-.kpp-res .k-ledger{margin:var(--k-2,8px) 0}
-.kpp-chk{border-top:1px solid var(--k-line);padding-top:var(--k-3,12px);margin-top:var(--k-3,12px)}
-.kpp-chk:first-child{border-top:0;margin-top:0;padding-top:0}
-.kpp-chk h4{font-size:var(--k-fs-sm);margin:0 0 6px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
-.kpp-chk p{margin:4px 0;font-size:var(--k-fs-sm);color:var(--k-ink-2)}
-.kpp-txt textarea{width:100%;max-width:100%;box-sizing:border-box;min-height:9em;font-size:var(--k-fs-sm);line-height:1.5}
-.kpp-how{padding-block:var(--k-7,48px)}
-.kpp-how h2{margin-top:0}
-.kpp-two{display:grid;gap:var(--k-6,32px);grid-template-columns:1fr;margin-top:var(--k-6,32px)}
-@media (min-width:860px){.kpp-two{grid-template-columns:1fr 1fr}}
-.kpp-two ul{padding-inline-start:1.2em;margin:0}.kpp-two li{margin-bottom:6px}
-.kpp-rel{display:flex;flex-wrap:wrap;gap:var(--k-2,8px)}
-</style>`;
+/* CSS: n40 k17, in /data/i18n/k17s.json */
 
 function body(lang) {
   const t = tr(lang), p = pre(lang);
@@ -252,12 +200,12 @@ async function assemble(shellRes, lang) {
     { '@type': 'WebApplication', name: 'Kolaboro ' + t.title, url, description: t.desc, inLanguage: lang, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Any', isAccessibleForFree: true, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' } },
     { '@type': 'BreadcrumbList', itemListElement: [['Kolaboro', ORIGIN + pre(lang) + '/'], [t.crumb_tools, ORIGIN + '/tools/'], [t.title, url]].map((x, i) => ({ '@type': 'ListItem', position: i + 1, name: x[0], item: x[1] })) }] };
   const tags = '<title>' + esc(t.title) + ' | Kolaboro</title><meta name="description" content="' + esc(t.desc) + '"><link rel="canonical" href="' + url + '">' + alts +
-    '<meta property="og:type" content="website"><meta property="og:site_name" content="Kolaboro"><meta property="og:title" content="' + esc(t.title) + ' | Kolaboro"><meta property="og:description" content="' + esc(t.desc) + '"><meta property="og:url" content="' + url + '"><meta name="twitter:card" content="summary">' +
+    TB.kbx_pp__s.k0 + esc(t.title) + ' | Kolaboro"><meta property="og:description" content="' + esc(t.desc) + '"><meta property="og:url" content="' + url + '"><meta name="twitter:card" content="summary">' +
     '<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>' +
-    '<script type="application/ld+json">' + JSON.stringify(ld).replace(/</g, '\\u003c') + '</script>' + CSS;
+    '<script type="application/ld+json">' + JSON.stringify(ld).replace(/</g, '\\u003c') + '</script>' + TB.kbx_pp__s.CSS;
   const res = new HTMLRewriter()
     .on('title', { element(e) { e.remove(); } })
-    .on('meta[name="description"],meta[name="robots"],meta[property^="og:"],meta[name^="twitter:"],link[rel="canonical"],link[rel="alternate"][hreflang]', { element(e) { e.remove(); } })
+    .on(TB.kbx_pp__s.k1, { element(e) { e.remove(); } })
     .on('script[type="application/ld+json"]', { element(e) { e.remove(); } })
     .on('head', { element(e) { e.append(tags, { html: true }); } })
     .on('main', { element(e) { e.setAttribute('data-clarity-mask', 'True'); e.setInnerContent(body(lang) + '<script>' + JS + '</script>', { html: true }); } })

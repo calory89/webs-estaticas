@@ -6,6 +6,7 @@
 // Rules: never redirect to the home page as a catch-all; Sumba ids (conflict of interest) never go to a named page, they keep the
 // anonymous /p/<id>/ file; private paths and API paths keep their 404.
 import { data } from './kbx_named.js';
+import { TB } from './kbx_strings.js';
 
 const LANGS = ['es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const COI = new Set(['sumba']);
@@ -62,12 +63,12 @@ export function helpBody(lang, h1, lead) {
   const L = T[lang] || T.en, pre = lang === 'en' ? '' : '/' + lang;
   const li = (href, a) => '<li><a href="' + href + '"><b>' + esc(a[0]) + '</b>' + (a[1] ? '<span>' + esc(a[1]) + '</span>' : '') + '</a></li>';
   return '<section class="phero"' + (lang === 'ar' ? ' dir="rtl"' : '') + ' lang="' + lang + '"><div class="wrap"><h1>' + esc(h1 || L.h) + '</h1><p class="lead">' + esc(lead || L.l) + '</p>' +
-    '<form class="hero-check" role="search" action="' + pre + '/projects/" method="get" style="display:flex;gap:8px;flex-wrap:wrap;margin-top:22px;max-width:560px">' +
-    '<label for="nf-q" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">' + esc(L.s) + '</label>' +
-    '<input id="nf-q" name="q" type="search" required placeholder="' + esc(L.ph) + '" style="flex:1 1 240px;min-width:0;min-height:46px;padding:10px 14px;border:1px solid #C9D0D6;border-radius:10px;font:inherit">' +
+    '<form class="hero-check" role="search" action="' + pre + TB.kbx_404__s.k0 +
+    TB.kbx_404__s.k1 + esc(L.s) + '</label>' +
+    '<input id="nf-q" name="q" type="search" required placeholder="' + esc(L.ph) + TB.kbx_404__s.k2 +
     '<button class="btn btn-hi" type="submit">' + esc(L.b) + '</button></form>' +
     // n28c: long words (nl "Transparantierankings", de compounds) widened the 1fr columns past the screen on phones
-    '<style>.nf-links{grid-template-columns:repeat(3,minmax(0,1fr))}@media (max-width:700px){.nf-links{grid-template-columns:repeat(2,minmax(0,1fr))}}.nf-links b{overflow-wrap:anywhere;hyphens:auto}</style><ul class="nf-links">' + li(pre + '/projects/', L.p) + li(pre + '/rankings/transparency/', L.r) + li(pre + '/check/', L.c) + li('/tools/', L.o) + li('/countries/', L.u) + li(pre + '/', L.m) + '</ul></div></section>';
+    TB.kbx_404__s.k3 + li(pre + '/projects/', L.p) + li(pre + '/rankings/transparency/', L.r) + li(pre + '/check/', L.c) + li('/tools/', L.o) + li('/countries/', L.u) + li(pre + '/', L.m) + '</ul></div></section>';
 }
 
 export async function page(r, u, status, env) {

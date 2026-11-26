@@ -17,10 +17,8 @@ const T = TB.kbx_plot_T /* n32w (19 Nov 2026): table moved to /data/i18n/kbx_plo
 const t = (lang, k) => (T[lang] && T[lang][k] != null ? T[lang][k] : T.en[k]);
 
 const ICON = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v6M12 16.5v.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>';
-const AR = d => '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="' + d + '" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
-const CSS = '<style id="kpl19">.pl19 .pl-share{display:grid;gap:10px;justify-items:start;margin-top:16px}.pl19 .pl-share>.k-btn{min-height:44px}.pl19 .pl-gout:empty{display:none}' +
-  '.pl19 .st-seg button{min-height:44px}.pl19 .pl-pl .st-ib{min-width:44px;min-height:44px}[dir=rtl] .pl19 #plprev svg,[dir=rtl] .pl19 #plnext svg{transform:scaleX(-1)}' +
-  '.pl19 .pl-frame,.pl19 .pl-chart{direction:ltr}.pl19 .st-can ul{padding:0;padding-inline-start:1.1em}</style>';
+const AR = d => '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="' + d + TB.kbx_plot__s.k0;
+/* CSS: n40 k17, in /data/i18n/k17s.json */
 
 function body(lang) {
   const L = k => esc(t(lang, k)), p = pre(lang);
@@ -59,14 +57,14 @@ async function assemble(shellRes, lang) {
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' }, provider: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' } },
     { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Kolaboro', item: ORIGIN + pre(lang) + '/' }, { '@type': 'ListItem', position: 2, name: t(lang, 'crumb_sat'), item: ORIGIN + '/satellite/' }, { '@type': 'ListItem', position: 3, name: t(lang, 'crumb'), item: url }] }] };
   const tags = '<title>' + esc(t(lang, 'title')) + ' | Kolaboro</title><meta name="description" content="' + esc(t(lang, 'desc')) + '"><link rel="canonical" href="' + url + '">' + alts +
-    '<meta property="og:type" content="website"><meta property="og:site_name" content="Kolaboro"><meta property="og:title" content="' + esc(t(lang, 'title')) + ' | Kolaboro"><meta property="og:description" content="' + esc(t(lang, 'desc')) + '"><meta property="og:url" content="' + url + '"><meta property="og:image" content="' + ORIGIN + '/k/og/pricing.png"><meta name="twitter:card" content="summary_large_image">' +
+    TB.kbx_plot__s.k1 + esc(t(lang, 'title')) + ' | Kolaboro"><meta property="og:description" content="' + esc(t(lang, 'desc')) + '"><meta property="og:url" content="' + url + '"><meta property="og:image" content="' + ORIGIN + '/k/og/pricing.png"><meta name="twitter:card" content="summary_large_image">' +
     '<script type="application/ld+json">' + JSON.stringify(ld).replace(/</g, '\\u003c') + '</script>' +
-    '<link rel="stylesheet" href="/satellite/sat.css?v=6ff435225d"><link rel="stylesheet" href="/satellite/plot/vendor/leaflet-1.9.4.css"><link rel="stylesheet" href="/satellite/plot/plot.css?v=a23d55414b">' + CSS;
+    TB.kbx_plot__s.k2 + TB.kbx_plot__s.CSS;
   const tail = '<script type="application/json" id="kpl-t">' + JSON.stringify(jsStrings(lang)).replace(/</g, '\\u003c') + '</script>' +
-    '<script src="/satellite/plot/vendor/leaflet-1.9.4.js" defer></script><script src="/satellite/plot/plot-core.js?v=30c85a4e23" defer></script><script src="/satellite/plot/plot.js?v=' + V + '" defer></script>';
+    TB.kbx_plot__s.k3 + V + '" defer></script>';
   const res = new HTMLRewriter()
     .on('title', { element(e) { e.remove(); } })
-    .on('meta[name="description"],meta[name="robots"],meta[property^="og:"],meta[name^="twitter:"],link[rel="canonical"],link[rel="alternate"][hreflang]', { element(e) { e.remove(); } })
+    .on(TB.kbx_plot__s.k4, { element(e) { e.remove(); } })
     .on('script[type="application/ld+json"]', { element(e) { e.remove(); } })
     .on('head', { element(e) { e.append(tags, { html: true }); } })
     .on('main', { element(e) { e.setInnerContent(body(lang) + tail, { html: true }); } })

@@ -1,3 +1,4 @@
+import { TB } from './kbx_strings.js';
 // kolaboro.com batch 34 (agent n34a, 21 Nov 2026): data and verification engine. The worker renders page shells, two small JSON
 // endpoints and a few blocks added to existing pages; data are static files built by /open/n34a-build.py (published files only) and by
 // two jobs on main (tools/kolaboro-agent/source_health.py, register_diff.py); browser code is static under /k/n34a/.
@@ -115,7 +116,7 @@ async function historyApi(env, u, key) {
   let cur = null;
   const out = vs.map((v, i) => { cur = i ? apply(cur, v.ops) : v.base; const o = { version: i + 1, date: v.d, record_sha256: v.sha, snapshot_sha256: v.file, changes: i ? v.ops : null }; if (full || i === vs.length - 1) o.record = cur; return o; });
   return json({ api: 'kolaboro-history-v1', id: r.id, slug: r.slug, page: ORIGIN + '/projects/' + r.slug + '/', versions_n: out.length, diff: ix.diff, record_hash: ix.record_hash, snapshots: ORIGIN + '/data/snapshots/',
-    note: 'Each version is the record as published on that day (from the dated snapshot copies, or the live file for the newest day). "changes" lists what changed since the version before.', licence: 'CC BY 4.0 (credit: Kolaboro, kolaboro.com)', versions: out });
+    note: TB.kbx_n34a__s.k0, licence: 'CC BY 4.0 (credit: Kolaboro, kolaboro.com)', versions: out });
 }
 async function evidenceApi(env, key) {
   const r = await resolve(env, key); if (!r) return json({ error: 'not_found', id: key }, 404);
@@ -286,7 +287,7 @@ async function rpPage(env, shell, l) {
   const st = r0 ? r0.steps : [];
   const res = st.length ? table(t(l, 'rp_th'), st.map(s => '<tr><th scope="row">' + esc(s.step) + '</th><td>' + (s.match ? '<span class="ok">' + esc(t(l, 'rp_ok')) + '</span>' : '<span class="bad">' + esc(t(l, 'rp_no')) + '</span>') + '</td><td><code>' + esc(String(s.rebuilt_sha256 || s.published_outputs_sha256 || '').slice(0, 16)) + '</code>' + (s.commit ? ' <span class="k-xs">main@' + esc(s.commit) + '</span>' : '') + (s.outputs ? ' <span class="k-xs">' + nf(s.outputs, l) + ' ' + esc(t(l, 'rp_files')) + '</span>' : '') + '</td></tr>')) + '<p class="k-xs">' + esc(fill(t(l, 'rp_run'), { d: (r0.run_at || '').replace('T', ' ').slice(0, 16) + ' UTC' })) + '</p>' : '<p class="mut">-</p>';
   const outs = Object.entries(b0.outputs);
-  const b = sec(t(l, 'rp_last'), res) + sec(t(l, 'rp_cmd'), '<pre dir="ltr"><code>curl -O https://kolaboro.com/open/n34a-build.py\n# download the files listed under "inputs" in /data/n34a/build.json into data/ (same paths)\npython3 n34a-build.py data --check</code></pre>' + paras(l, 'rp_c') + '<pre dir="ltr"><code>python3 _s/kolaboro.com/open/kolaboro-repro.py --repo . --ref origin/main --write</code></pre>') +
+  const b = sec(t(l, 'rp_last'), res) + sec(t(l, 'rp_cmd'), TB.kbx_n34a__s.k1 + paras(l, 'rp_c') + TB.kbx_n34a__s.k2) +
     sec(t(l, 'rp_io'), '<details><summary>' + esc(fill(t(l, 'rp_n'), { i: nf(Object.keys(b0.inputs).length, l), o: nf(outs.length, l) })) + '</summary>' + table(['', 'SHA-256'], Object.entries(b0.inputs).map(([k, v]) => '<tr><td><code>' + esc(k) + '</code></td><td><code>' + esc(v.slice(0, 16)) + '</code></td></tr>').concat(outs.map(([k, v]) => '<tr><td><code>' + esc(k) + '</code></td><td><code>' + esc(v.slice(0, 16)) + '</code></td></tr>'))) + '</details><p>' + esc(t(l, 'rp_all')) + ' <code>' + esc(b0.outputs_sha256) + '</code></p>') +
     sec(t(l, 'method'), paras(l, 'rp_p')) + filesList(l, [['/data/n34a/build.json', 'JSON'], ['/data/n34a/repro.json', 'JSON'], ['/open/n34a-build.py', 'Python'], ['/open/kolaboro-repro.py', 'Python']]);
   return page(shell, l, Object.assign(H(l, 'rp'), { path: '/engineering/reproducible/', body: b, updated: b0.built, crumb: [[t(l, 'eng'), '/engineering/']], type: 'TechArticle' }));
@@ -305,7 +306,7 @@ async function hiPage(env, shell, l, u) {
   const vp = ix.versions_per_record;
   const b = kpis([[nf(ix.records, l), t(l, 'hi_k')[0]], [nf(ix.versions_from.length, l), t(l, 'hi_k')[1]], [nf(Object.entries(vp).reduce((s, [k, v]) => s + (+k) * v, 0), l), t(l, 'hi_k')[2]]]) +
     '<form method="get"><label for="n34h">' + esc(t(l, 'project')) + '</label> <input id="n34h" name="p" value="' + esc(pick) + '" placeholder="BALI-001 / amani-melasti" autocomplete="off"> <button type="submit">' + esc(t(l, 'hi_go')) + '</button></form>' + one +
-    sec(t(l, 'hi_api'), '<pre dir="ltr"><code>GET https://kolaboro.com/api/v1/projects/BALI-001/history\nGET https://kolaboro.com/api/v1/projects/amani-melasti/history?full=1</code></pre>' + paras(l, 'hi_p') + '<ul><li><span lang="en" dir="ltr">' + esc(ix.diff) + '</span></li><li><span lang="en" dir="ltr">' + esc(ix.record_hash) + '</span></li></ul>') +
+    sec(t(l, 'hi_api'), TB.kbx_n34a__s.k3 + paras(l, 'hi_p') + '<ul><li><span lang="en" dir="ltr">' + esc(ix.diff) + '</span></li><li><span lang="en" dir="ltr">' + esc(ix.record_hash) + '</span></li></ul>') +
     sec(t(l, 'hi_dist'), table(t(l, 'hi_dth'), Object.entries(vp).map(([k, v]) => '<tr><td class="n">' + nf(+k, l) + '</td><td class="n">' + nf(v, l) + '</td></tr>'))) +
     sec(t(l, 'hi_from'), '<ul>' + ix.versions_from.map(v => '<li>' + esc(fd(v.d, l)) + ' <code>' + esc(v.file_sha256.slice(0, 16)) + '</code> <span class="k-xs">' + esc(v.kind) + '</span></li>').join('') + '</ul>') +
     filesList(l, [['/data/n34a/history/index.json', 'JSON'], ['/data/snapshots/', t(l, 'snaps')], ['/api/docs/', 'API']]);
@@ -329,7 +330,7 @@ async function piPage(env, shell, l, u) {
 async function fmPage(env, shell, l) {
   const d = await file(env, '/data/formats.json', 3600000); if (!d) return null;
   const rows = d.files.map(f => '<tr><th scope="row"><a href="' + esc(f.path) + '" dir="ltr">' + esc(f.path.replace('/data/', '')) + '</a></th><td>' + esc(f.format) + '</td><td class="n">' + nf(f.rows, l) + '</td><td class="n">' + bdi(l, nf(f.bytes / 1048576, l, 2) + ' MB') + '</td><td><code title="' + esc(f.sha256) + '">' + esc(f.sha256.slice(0, 16)) + '…</code></td><td><code>' + esc(f.version) + '</code></td></tr>');
-  const b = table(t(l, 'fm_th'), rows) + sec(t(l, 'fm_use'), '<pre dir="ltr"><code>sqlite3 kolaboro.sqlite "SELECT market, COUNT(*) FROM projects GROUP BY market ORDER BY 2 DESC LIMIT 10;"\nsqlite3 kolaboro.sqlite "SELECT status, COUNT(*) FROM claims GROUP BY status;"\nsha256sum kolaboro-pins.geojson</code></pre>' + paras(l, 'fm_p')) +
+  const b = table(t(l, 'fm_th'), rows) + sec(t(l, 'fm_use'), TB.kbx_n34a__s.k4 + paras(l, 'fm_p')) +
     sec(t(l, 'fm_other'), '<ul>' + d.other.map(o => '<li><a href="' + esc(o[0]) + '">' + esc(o[0]) + '</a> <span class="k-xs">' + esc(o[1]) + '</span></li>').join('') + '</ul>') + '<p class="k-xs">' + esc(fill(t(l, 'fm_src'), { h: d.source.sha256.slice(0, 16), v: d.source.version })) + '</p>' + filesList(l, [['/data/formats.json', 'JSON'], ['/open/n34a-build.py', 'Python']]);
   return page(shell, l, Object.assign(H(l, 'fm'), { path: '/data/formats/', body: b, updated: d.built, crumb: [[t(l, 'data'), '/data/']],
     ld: [{ '@type': 'Dataset', name: 'Kolaboro off-plan project records', version: d.source.version, license: 'https://creativecommons.org/licenses/by/4.0/', creator: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' }, dateModified: d.built,

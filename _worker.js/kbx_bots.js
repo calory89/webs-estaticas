@@ -1,3 +1,4 @@
+import { TB } from './kbx_strings.js';
 // kolaboro.com (n26i, batch 26): visits of answer-engine crawlers and fetchers per day, from the requests this site serves.
 // The worker kept no user-agent log before this batch and has no durable counter store (no KV or analytics binding, no table for
 // it), so the counts live in the edge cache of each Cloudflare location: a lower bound for that one location, kept up to 30 days,
@@ -64,7 +65,7 @@ async function data(req) {
   const colo = (req.cf && req.cf.colo) || null;
   if (MEMO.v && MEMO.colo === colo && Date.now() - MEMO.t < 120000) return MEMO.v;
   const v = { as_of: new Date().toISOString(), location: colo, days: await read(14),
-    method: 'Requests to kolaboro.com whose user agent names a known crawler, counted per day by the worker that serves the site. Counts are kept in the edge cache of the Cloudflare location that served them (' + (colo || 'unknown') + ' for this answer): a lower bound for that one location, not a global total, and a location can drop them early. A user agent can be faked; we do not verify crawler IP ranges. Nothing about the visitor is stored.',
+    method: TB.kbx_bots__s.k0 + (colo || 'unknown') + TB.kbx_bots__s.k1,
     crawlers: BOTS.map(b => ({ name: b[0], kind: b[2] })), since: '2026-11-12 (UTC)' };
   MEMO = { t: Date.now(), v, colo }; return v;
 }
@@ -76,7 +77,7 @@ function famTable(D) {   // n31s (item 225)
   const nf = n => new Intl.NumberFormat('en-GB').format(n), W = D.days.slice(0, 7), tot = {}; let all = 0;
   for (const d of W) for (const [k, v] of Object.entries(d.ai_by_page_family || {})) { tot[k] = (tot[k] || 0) + v; all += v; }
   const rows = FAMS.filter(f => tot[f[0]]).map(f => '<tr><td>' + esc(f[1]) + '</td><td style="text-align:end">' + nf(tot[f[0]]) + '</td><td style="text-align:end">' + Math.round(tot[f[0]] / all * 100) + '%</td></tr>').join('');
-  return '<h3 style="margin-top:22px">Answer-engine crawler requests by page family, last 7 days</h3>' + (all ? '<div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse"><thead><tr><th scope="col" style="text-align:start">Page family</th><th scope="col" style="text-align:end">Requests</th><th scope="col" style="text-align:end">Share</th></tr></thead><tbody>' + rows + '</tbody></table></div>' : '<p>Counted since 18 Nov 2026; none at this location yet.</p>') + '<p class="muted" style="font-size:.9rem">Same counter and limits as above (one Cloudflare location, a lower bound), answer-engine crawlers only, counted by family since 18 Nov 2026.</p>';
+  return '<h3 style="margin-top:22px">Answer-engine crawler requests by page family, last 7 days</h3>' + (all ? TB.kbx_bots__s.k2 + rows + '</tbody></table></div>' : '<p>Counted since 18 Nov 2026; none at this location yet.</p>') + TB.kbx_bots__s.k3;
 }
 export async function html(req) {
   const D = await data(req), nf = n => new Intl.NumberFormat('en-GB').format(n);

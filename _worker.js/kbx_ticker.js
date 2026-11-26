@@ -77,7 +77,7 @@ export async function tickerHtml(env, lang) {
 // n20s (9 Nov 2026), defence in depth on every HTML page: a link whose address is a script or data URL (it could only come from
 // third-party text such as an OpenStreetMap tag, a register record or a developer page) is made inert. Escaping alone does not stop these.
 // The selector only fires on the rare href that contains "script" or starts with "data:", so normal pages pay nothing.
-const BAD_HREF = 'a[href*="script" i], a[href^="data:" i], a[href*="&#"], a[href*="&colon" i], a[href*="&tab" i], a[href*="&newline" i], area[href*="script" i]';
+/* BAD_HREF: n40 k17, in /data/i18n/k17s.json */
 const deEnt = v => v.replace(/&#x([0-9a-f]{1,6});?/gi, (m, h) => { try { return String.fromCodePoint(parseInt(h, 16)); } catch (e) { return ''; } }).replace(/&#(\d{1,7});?/g, (m, n) => { try { return String.fromCodePoint(+n); } catch (e) { return ''; } }).replace(/&colon;/gi, ':').replace(/&(?:tab|newline);/gi, '');
 function safeHref(e) { const v = deEnt(e.getAttribute('href') || '').replace(/[\t\n\r]/g, ''); if (/^[\u0000- ]*(?:javascript|vbscript|data):/i.test(v)) { e.setAttribute('href', '#'); e.removeAttribute('target'); } }
 // n26y (batch 26): every page links /progress/ (daily counters, chart, the 300 improvements): the "Shipping daily" label of the bar,
@@ -89,7 +89,7 @@ export async function kbTick(req, r, env) {
   try {
     if (req.method !== 'GET' || !r || (r.status !== 200 && r.status !== 404 && r.status !== 410) || !/text\/html/.test(r.headers.get('content-type') || '')) return r;
     const lm = /^\/(es|de|fr|nl|ru|zh|ar)(\/|$)/.exec(new URL(req.url).pathname), h = await tickerHtml(env, lm ? lm[1] : 'en');   // n25t: bar in the page language
-    let rw = new HTMLRewriter().on(BAD_HREF, { element: safeHref })
+    let rw = new HTMLRewriter().on(TB.kbx_ticker__s.BAD_HREF, { element: safeHref })
       // n31t (batch 31, item 277): five entries at most in the main menu; "Live cases" stays in the footer (Data column)
       .on('nav#menu > a[href$="/cases/"]', { element(e) { e.remove(); } })
       // n31t (item 291): keyboard shortcuts next to Accessibility in the footer, in the page language

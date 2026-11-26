@@ -13,6 +13,7 @@
 //   GET  /__k/kxc-admin.js                      admin CRM tab "X-rays" (RPC kolaboro_xc_admin, admin key)
 // DB: RPC kolaboro_xc (worker key) and kolaboro_xc_admin (admin key), cron kolaboro-xray-remind (see /home/claude/wtk/x11c/MIGRATION.sql).
 import { rpcW, sha } from './kolaboro.js';
+import { TB } from './kbx_strings.js';
 
 export const PATHS = /^\/k\/xray-cta\.js$|^\/api\/x\/xc(\/|$)|^\/embed\/xray(\.js|\/)?$|^\/__k\/kxc-admin\.js$/;
 const SITE = 'https://kolaboro.com';
@@ -177,7 +178,7 @@ async function emailRoute(req, u, env, ctx) {
   const t = await mkTok(env, Object.assign({ e, r: root, d, x: Date.now() + 7 * 86400000 }, /^https?:\/\/[^\s"<>]{3,240}$/.test(pu) && hostOf(pu) === d ? { u: pu } : {})); if (!t) return out({ error: 'not_configured' }, 503);
   const link = SITE + '/api/x/xc/email/confirm?t=' + t;
   const html = '<p>Someone, hopefully you, asked Kolaboro to email the Project X-ray of <b>' + esc(d) + '</b> to this address.</p>' +
-    '<p>Confirm with the button below and we send the link to the X-ray once. If it was not you, ignore this email: nothing else will be sent.</p>';
+    TB.kbx_xc__s.k0;
   const r = await xc('mail', { kind: 'xray_confirm', to: e, subject: 'Confirm: email me the Project X-ray of ' + d, html, dedupe: 'xc:' + (await sha(e + '|' + root)).slice(0, 40), cta: 'Confirm and send', url: link });
   if (dbMissing(r)) return out({ error: 'not_ready', message: 'Email sending for X-rays is not switched on yet.' }, 503);
   if (!r || !r.ok) return out({ error: (r && r.error) || 'db' }, r && (r.error === 'limit' || r.error === 'daily_cap') ? 429 : 400);
@@ -194,7 +195,7 @@ function page(title, inner, status) {
 async function confirmRoute(req, u, env, ctx) {
   if (req.method === 'GET') {
     const t = u.searchParams.get('t') || '', o = await rdTok(env, t);
-    if (!o) return page('Link not valid', '<h1>This link is not valid</h1><p class="muted">It may have expired after 7 days. Run the X-ray again and ask for the email from there.</p>', 400);
+    if (!o) return page('Link not valid', TB.kbx_xc__s.k1, 400);
     return page('Confirm', '<h1>Send the Project X-ray of ' + esc(o.d) + '?</h1><p>We send one email with the link to the sealed X-ray to <b>' + esc(o.e) + '</b>. Nothing else.</p>' +
       '<form method="post" action="/api/x/xc/email/confirm"><input type="hidden" name="t" value="' + esc(t) + '"><button class="xcb" type="submit">Yes, send it</button></form>');
   }
@@ -203,8 +204,8 @@ async function confirmRoute(req, u, env, ctx) {
   if (!o) return page('Link not valid', '<h1>This link is not valid</h1><p class="muted">It may have expired after 7 days.</p>', 400);
   // The sealed copy lives in the edge cache until the durable X-ray store is applied, so the button re-runs the X-ray (always works)
   const xu = SITE + '/x/' + o.r + '/', ru = SITE + '/check/?url=' + encodeURIComponent(o.u || 'https://' + o.d) + '#xr';
-  const html = '<p>Here is the Project X-ray of <b>' + esc(o.d) + '</b> you asked for. The button runs it again with today\'s sources. The sealed copy of the run you saw: <a href="' + xu + '">' + esc(xu.replace('https://', '')) + '</a> (kept while our storage allows; the button always works).</p>' +
-    '<p>What the X-ray cannot show: the land title at the land office, the building permit file, what is really on the plot, and your contract terms. The €490 pre-purchase check covers those, with a full refund if we cannot take your case: <a href="' + SITE + '/pricing">pricing</a>.</p>';
+  const html = '<p>Here is the Project X-ray of <b>' + esc(o.d) + TB.kbx_xc__s.k2 + xu + '">' + esc(xu.replace('https://', '')) + '</a> (kept while our storage allows; the button always works).</p>' +
+    TB.kbx_xc__s.k3 + SITE + '/pricing">pricing</a>.</p>';
   const r = await xc('mail', { kind: 'xray_send', to: o.e, subject: 'Your Project X-ray of ' + o.d, html, dedupe: 'xs:' + (await sha(b.t)).slice(0, 40), cta: 'Open the X-ray', url: ru });
   if (!r || !r.ok) return page('Not sent', '<h1>We could not send it</h1><p class="muted">' + esc(r && r.error === 'limit' ? 'This address got the most X-ray emails allowed today. Try tomorrow.' : 'Try again in a few minutes.') + '</p>', 503);
   ctx.waitUntil(xc('ev', { step: 'email_sent', domain: o.d, page: '/api/x/xc/email/confirm', data: { root: o.r } }));
@@ -227,103 +228,27 @@ async function seenRoute(req, u, env, ctx) {
 async function stopRoute(req, u, env, ctx) {
   const t = u.searchParams.get('t') || '';
   const r = /^[0-9a-f]{32}$/.test(t) ? await xc('stop', { tok: t }) : { error: 'token' };
-  if (!r || !r.ok) return page('Link not valid', '<h1>This link is not valid</h1><p class="muted">Write to hello@kolaboro.com and we stop every email by hand.</p>', 400);
-  return page('Stopped', '<h1>Done: no more X-ray reminders</h1><p>We will not send you reminders about X-rays again. Emails about a case you open still arrive, because they are about your case.</p>');
+  if (!r || !r.ok) return page('Link not valid', TB.kbx_xc__s.k4, 400);
+  return page('Stopped', TB.kbx_xc__s.k5);
 }
 
 // ------------------------------------------------------------------ embed for agencies and lenders
-const EMBED_JS = `/* Kolaboro "X-ray this project" button v1. <script src="https://kolaboro.com/embed/xray.js" async></script>
-   Options on the script tag: data-url (default: this page), data-label, data-theme="dark". Or put data-kolaboro-xray[="<url>"] on any
-   element to get a button inside it. Privacy: no cookies, no storage, nothing is sent when the page loads; a click sends one beacon
-   with this site's host name only (for the partner's click count), then opens the X-ray on kolaboro.com in a new tab. */
-(function () {
-  var O = 'https://kolaboro.com', s = document.currentScript;
-  function btn(url, label, dark) {
-    var a = document.createElement('a');
-    a.href = O + '/check/?url=' + encodeURIComponent(url) + '&src=embed&utm_source=embed&utm_medium=partner&utm_campaign=' + encodeURIComponent(location.hostname) + '#xr';
-    a.target = '_blank'; a.rel = 'noopener'; a.setAttribute('data-kolaboro-btn', '1');
-    a.setAttribute('style', 'display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:12px;font:600 15px/1.2 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;text-decoration:none;border:1px solid ' + (dark ? '#3a4652;background:#17212B;color:#F6F6F3' : '#D5D3CC;background:#fff;color:#17212B'));
-    a.innerHTML = '<svg width="18" height="18" viewBox="0 0 32 32" aria-hidden="true"><path d="M8 4v24M8 16 23 6.5M8 16l15 9.5" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><circle cx="24" cy="6" r="3.4" fill="currentColor"/><circle cx="24" cy="26" r="3.4" fill="currentColor"/><circle cx="8" cy="16" r="4.2" fill="#FF5B14"/></svg><span></span>';
-    a.lastChild.textContent = label || 'X-ray this project';
-    a.addEventListener('click', function () { try { var d = JSON.stringify({ step: 'embed_click', h: location.hostname }); if (navigator.sendBeacon) navigator.sendBeacon(O + '/api/x/xc/ev', new Blob([d], { type: 'text/plain' })); } catch (e) {} });
-    return a;
-  }
-  var els = document.querySelectorAll('[data-kolaboro-xray]');
-  for (var i = 0; i < els.length; i++) { var e = els[i]; if (e.querySelector('[data-kolaboro-btn]')) continue; e.appendChild(btn(e.getAttribute('data-kolaboro-xray') || location.href, e.getAttribute('data-label'), e.getAttribute('data-theme') === 'dark')); }
-  if (s && !els.length && s.parentNode) s.parentNode.insertBefore(btn(s.getAttribute('data-url') || location.href, s.getAttribute('data-label'), s.getAttribute('data-theme') === 'dark'), s);
-})();
-`;
+/* EMBED_JS: n40 k17, in /data/i18n/k17s.json */
 function embedDoc() {
   const snip = '<script src="https://kolaboro.com/embed/xray.js" async></script>';
-  const inner = '<p class="muted" style="margin:0">For agencies, lenders and listing sites</p><h1 style="margin:.2em 0">"X-ray this project" button</h1>' +
-    '<p>Add one line to a listing page. Your visitors get a button that opens a free Project X-ray of that listing on kolaboro.com: register checks, the Internet Archive history of the developer site, red flags with quotes, and the gaps only a site visit can close.</p>' +
-    '<h2 style="font-size:1.1rem">Paste this where the button should appear</h2><pre style="white-space:pre-wrap;word-break:break-all;background:var(--paper,#F6F6F3);border:1px solid var(--line,#ddd);border-radius:10px;padding:12px;font-size:.85rem"><code>' + esc(snip) + '</code></pre>' +
+  const inner = TB.kbx_xc__s.k6 + esc(snip) + '</code></pre>' +
     '<p><button class="xcb" type="button" id="cp">Copy the snippet</button></p>' +
-    '<h2 style="font-size:1.1rem">Options</h2><ul><li><code>data-url="https://..."</code> the project page to X-ray (default: the page the button is on)</li><li><code>data-label="..."</code> your own button text</li><li><code>data-theme="dark"</code> for dark pages</li><li>Several listings on one page: put <code>data-kolaboro-xray="https://..."</code> on each element and load the script once.</li></ul>' +
-    '<h2 style="font-size:1.1rem">Privacy</h2><p>No cookies, no local storage, no request when your page loads. A click sends one beacon with your site\'s host name only, so we can tell you how many clicks your site sent. We never learn who your visitors are from the button.</p>' +
-    '<h2 style="font-size:1.1rem">Try it</h2><div data-kolaboro-xray="https://www.teus-group.com/amani-melasti"></div><p class="muted" style="font-size:.85rem">This demo button X-rays a public developer page. Clicks on this page are counted for kolaboro.com.</p>';
-  const h = '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>X-ray button for partners | Kolaboro</title>' +
-    '<meta name="description" content="One script tag adds an X-ray this project button to any listing page. No cookies, no visitor tracking, only a click count."><link rel="canonical" href="https://kolaboro.com/embed/xray/">' +
-    '<link rel="stylesheet" href="/k/site.css"><style>body{background:var(--paper,#F6F6F3);color:var(--ink,#17212B);margin:0}.xcw{max-width:760px;margin:0 auto;padding:32px 16px 60px}.xcc{background:var(--card,#fff);border:1px solid var(--line,#ddd);border-radius:16px;padding:22px}' +
-    '.xcb{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:12px;border:0;background:var(--hivis,#FF5B14);color:#111;font:inherit;font-weight:800;cursor:pointer}.xcb:focus-visible{outline:3px solid #2563EB;outline-offset:2px}.muted{color:var(--muted,#59626B)}code{overflow-wrap:anywhere}.xcc h2{margin:22px 0 6px}.xcc p{margin:8px 0}</style></head>' +
-    '<body><main class="xcw"><p><a href="/">kolaboro</a> / <a href="/docs/api/">API</a> / X-ray button</p><div class="xcc">' + inner + '</div></main>' +
-    '<script>document.getElementById("cp").onclick=function(){var t=' + JSON.stringify(snip).replace(/</g, '\\u003c') + ',b=this;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){b.textContent="Copied";},function(){b.textContent="Select the text above";});};</script>' +
+    TB.kbx_xc__s.k7 +
+    TB.kbx_xc__s.k8 +
+    TB.kbx_xc__s.k9;
+  const h = TB.kbx_xc__s.k10 + inner + '</div></main>' +
+    '<script>document.getElementById("cp").onclick=function(){var t=' + JSON.stringify(snip).replace(/</g, '\\u003c') + TB.kbx_xc__s.k11 +
     '<script src="/embed/xray.js" async></script></body></html>';
   return new Response(h, { headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=600', 'x-content-type-options': 'nosniff' } });
 }
 
 // ------------------------------------------------------------------ admin CRM tab
-const ADMIN_JS = `/* kolaboro.com/admin: "X-rays" tab (x11c, 7 Nov 2026). Recent Project X-rays (domain, time, cards, checkout, paid), the anonymous
-   funnel per CTA variant, partner embed clicks and reminders. Data: RPC kolaboro_xc_admin (admin key). */
-(function () {
-  if (window.__kxcadm) return; window.__kxcadm = 1;
-  var days = 30, busy = false, STEPS = ['pasted', 'first_card', 'full', 'run', 'gaps_viewed', 'questions_copied', 'questions_mailto', 'checkout_opened', 'checkout_paypal', 'monitor_opened', 'watch', 'email_req', 'email_sent', 'sample_open', 'remind_optin'];
-  function $(i) { return document.getElementById(i); }
-  function esc(x) { return String(x == null ? '' : x).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
-  function when(t) { var d = new Date(t), s = (Date.now() - d) / 1000; if (s < 3600) return Math.max(1, Math.round(s / 60)) + ' min ago'; if (s < 86400) return Math.round(s / 3600) + ' h ago'; return d.toLocaleDateString(undefined, { day: 'numeric', month: 'short' }) + ' ' + d.toTimeString().slice(0, 5); }
-  function table(head, rows) { if (!rows.length) return '<p class="muted" style="margin:6px 0">Nothing yet in this period.</p>'; return '<div class="tw"><table><tr>' + head.map(function (h) { return '<th>' + h + '</th>'; }).join('') + '</tr>' + rows.map(function (r) { return '<tr>' + r.map(function (c) { return '<td>' + c + '</td>'; }).join('') + '</tr>'; }).join('') + '</table></div>'; }
-  function kpi(a, b, c) { return '<div class="kpi"><span>' + a + '</span><b>' + b + '</b><small>' + c + '</small></div>'; }
-  function yes(b) { return b ? '<b style="color:#0A704E">yes</b>' : '<span class="muted">no</span>'; }
-  function render(d) {
-    var X = d.xrays || [], F = d.funnel || [], R = d.reminders || {}, vs = {};
-    F.forEach(function (f) { (vs[f.v] = vs[f.v] || {})[f.step] = f.sessions; });
-    var paid = X.filter(function (x) { return x.paid; }).length, co = X.filter(function (x) { return x.checkout; }).length;
-    var h = '<div class="kpis">' + kpi('X-rays run', X.length, 'last ' + days + ' days (max 200 listed)') + kpi('Checkout opened', co, X.length ? Math.round(100 * co / X.length) + '% of X-rays' : '') +
-      kpi('Paid cases from an X-ray', paid, 'case notes link the X-ray') + kpi('Reminder opt-ins', R.optins || 0, (R.sent || 0) + ' sent, ' + (R.stopped || 0) + ' stopped') + kpi('X-ray emails', d.emails || 0, 'confirmations and sends') + '</div>';
-    h += '<h3>Funnel by CTA variant (sessions)</h3>' + table(['Step'].concat(Object.keys(vs).sort()), STEPS.filter(function (s) { return Object.keys(vs).some(function (v) { return vs[v][s]; }); }).map(function (s) { return [esc(s.replace(/_/g, ' '))].concat(Object.keys(vs).sort().map(function (v) { return vs[v][s] || 0; })); }));
-    h += '<h3>Recent X-rays</h3>' + table(['When', 'Domain', 'Cards', 'Named', 'Variant', 'Source', 'Checkout', 'PayPal', 'Case', 'Paid', 'X-ray'], X.slice(0, 120).map(function (x) {
-      return [esc(when(x.at)), esc(x.domain || ''), esc(x.cards || ''), x.named ? '<a href="/projects/' + esc(x.named) + '/" target="_blank" rel="noopener">' + esc(x.named) + '</a>' : '', esc(x.v || 'A'), esc(x.src || ''), yes(x.checkout), yes(x.paypal), yes(x.case_opened), yes(x.paid), x.root ? '<a href="/x/' + esc(x.root) + '/" target="_blank" rel="noopener">open</a>' : ''];
-    }));
-    h += '<h3>Partner buttons (embed clicks)</h3>' + table(['Partner site', 'Clicks', 'Last'], (d.embeds || []).map(function (e) { return [esc(e.host), e.n, esc(when(e.last))]; }));
-    $('t-xrays-body').innerHTML = h;
-  }
-  function load() {
-    if (busy || !window.KBADM) return; busy = true; $('t-xrays-body').innerHTML = '<p class="muted">Loading…</p>';
-    window.KBADM.rpc('kolaboro_xc_admin', { p_key: window.KBADM.pw(), p_days: days }).then(function (d) {
-      busy = false; if (!d || d.error || d.code) { $('t-xrays-body').innerHTML = '<p class="muted">Could not load (' + esc(d && (d.error || d.message)) + ').</p>'; return; } render(d);
-    }).catch(function () { busy = false; $('t-xrays-body').innerHTML = '<p class="muted">Could not load.</p>'; });
-  }
-  function setup() {
-    var nav = document.querySelector('nav.tabs'), main = document.querySelector('main'); if (!nav || !main || !window.KBADM) return false;
-    if ($('t-xrays')) return true;
-    var b = document.createElement('button'); b.setAttribute('data-t', 'xrays'); b.textContent = 'X-rays';
-    var tr = nav.querySelector('[data-t="traffic"]') || nav.querySelector('[data-t="growth"]'); nav.insertBefore(b, tr || null);
-    var sec = document.createElement('section'); sec.id = 't-xrays'; sec.className = 'hide';
-    sec.innerHTML = '<div style="display:flex;gap:8px;align-items:center;margin:0 0 12px;flex-wrap:wrap"><b>Period</b>' + [7, 30, 90].map(function (n) { return '<button data-xdays="' + n + '" style="padding:6px 12px;border-radius:999px;border:1px solid #ddd;background:' + (n === days ? '#111;color:#fff' : '#fff') + ';cursor:pointer">' + n + ' days</button>'; }).join('') + '</div><div id="t-xrays-body"></div>';
-    main.appendChild(sec);
-    sec.querySelectorAll('[data-xdays]').forEach(function (x) { x.onclick = function () { days = +x.getAttribute('data-xdays'); sec.querySelectorAll('[data-xdays]').forEach(function (y) { var on = y === x; y.style.background = on ? '#111' : '#fff'; y.style.color = on ? '#fff' : ''; }); load(); }; });
-    b.onclick = function () {
-      nav.querySelectorAll('button').forEach(function (x) { x.classList.toggle('on', x === b); });
-      main.querySelectorAll(':scope > section').forEach(function (s) { s.classList.toggle('hide', s !== sec); });
-      load();
-    };
-    nav.querySelectorAll('button').forEach(function (x) { if (x !== b) x.addEventListener('click', function () { b.classList.remove('on'); sec.classList.add('hide'); }); });
-    if (location.hash === '#xrays') b.click();
-    return true;
-  }
-  var n = 0, iv = setInterval(function () { if (setup() || ++n > 120) clearInterval(iv); }, 500);
-})();
-`;
+/* ADMIN_JS: n40 k17, in /data/i18n/k17s.json */
 
 async function status(env) {
   const r = await xc('counts', { domain: 'kolaboro.com' });
@@ -337,9 +262,9 @@ export async function handle(req, u, env, ctx) {
     const r = await env.ASSETS.fetch(new Request(SITE + '/_s/kolaboro.com/k/xray-cta.js'));
     return new Response(r.body, { status: r.status, headers: { 'content-type': 'application/javascript; charset=utf-8', 'cache-control': 'public, max-age=300', 'x-content-type-options': 'nosniff' } });
   }
-  if (p === '/embed/xray.js') return new Response(EMBED_JS, { headers: { 'content-type': 'application/javascript; charset=utf-8', 'cache-control': 'public, max-age=3600', 'access-control-allow-origin': '*', 'x-content-type-options': 'nosniff', 'cross-origin-resource-policy': 'cross-origin' } });
+  if (p === '/embed/xray.js') return new Response(TB.kbx_xc__s.EMBED_JS, { headers: { 'content-type': 'application/javascript; charset=utf-8', 'cache-control': 'public, max-age=3600', 'access-control-allow-origin': '*', 'x-content-type-options': 'nosniff', 'cross-origin-resource-policy': 'cross-origin' } });
   if (p === '/embed/xray' || p === '/embed/xray/') return p.endsWith('/') ? embedDoc() : new Response(null, { status: 301, headers: { location: '/embed/xray/' } });
-  if (p === '/__k/kxc-admin.js') return new Response(ADMIN_JS, { headers: { 'content-type': 'application/javascript; charset=utf-8', 'cache-control': 'no-store' } });
+  if (p === '/__k/kxc-admin.js') return new Response(TB.kbx_xc__s.ADMIN_JS, { headers: { 'content-type': 'application/javascript; charset=utf-8', 'cache-control': 'no-store' } });
   try {
     if (p === '/api/x/xc/ctx' && req.method === 'GET') return await ctxRoute(req, u, env, ctx);
     if (p === '/api/x/xc/ev') return await evRoute(req, u, env, ctx);

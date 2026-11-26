@@ -15,7 +15,8 @@
 
 import { t26 } from './kbx_u26.js';
 import { aliasesFor } from './kbx_n31c.js';   // n31c (item 117): stable developer id and the slugs that redirect to it
-import { E as E27 } from './kbx_e27_i18n.js';   // n27e: free PDF report offered in the watch box
+import { E as E27 } from './kbx_e27_i18n.js';
+import { TB } from './kbx_strings.js';   // n27e: free PDF report offered in the watch box
 const ORIGIN = 'https://kolaboro.com';
 const LANGS9 = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const esc = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -76,11 +77,11 @@ export function watchBox(lang, id, name, path, snap) {
   if (snap) Object.assign(m, { snap, s_btn: t9(lang, 's_btn'), s_on: t9(lang, 's_on'), s_acct: t9(lang, 's_acct'), s_local: t9(lang, 's_local'), s_off: t9(lang, 's_off'), s_dash: t9(lang, 's_dash'), s_list: t9(lang, 's_list') });
   return '<div class="kwatch" id="watch" data-kw="' + esc(JSON.stringify(m)) + '"><div class="kw-t"><b>' + esc(t9(lang, 'w_h')) + '</b><p>' + esc(t9(lang, 'w_txt', { n: name })) + '</p></div>' +
     '<div class="kw-a"><button type="button" class="k-btn k-btn--dark kbtn" data-kw-btn>' + esc(t9(lang, 'w_btn')) + '</button>' +
-    '<p class="kw-as" data-kw-as hidden><span></span> <button type="button" class="kw-lnk" data-kw-change>' + esc(t9(lang, 'w_change')) + '</button></p>' +
-    '<form class="kw-f" novalidate hidden><label for="kw-e">' + esc(t9(lang, 'w_email')) + '</label><div><input id="kw-e" type="email" name="email" autocomplete="email" inputmode="email" placeholder="you@email.com" required>' +
-    '<input type="text" name="hp" tabindex="-1" autocomplete="off" aria-hidden="true" class="kw-hp"><button type="submit" class="k-btn k-btn--dark kbtn">' + esc(t9(lang, 'w_go')) + '</button></div></form>' +
+    TB.kbx_follow__s.k0 + esc(t9(lang, 'w_change')) + '</button></p>' +
+    '<form class="kw-f" novalidate hidden><label for="kw-e">' + esc(t9(lang, 'w_email')) + TB.kbx_follow__s.k1 +
+    TB.kbx_follow__s.k2 + esc(t9(lang, 'w_go')) + '</button></div></form>' +
     '<p class="kw-out" role="status" aria-live="polite"></p>' + (path.indexOf('/projects/') === 0 ? '<p class="kw-rp">' + esc((H28[lang] || H28.en).of.replace('{n}', name)) + ' <a href="' + pre(lang) + esc(path) + 'report/" data-kw-rp hidden>' + esc((E27[lang] || E27.en).of_dl) + '</a></p>' : '') + '<p class="kw-n">' + esc(t9(lang, 'w_note')) + '</p>' +
-    (snap ? '<p class="kw-s"><button type="button" class="kw-sb" data-kw-save aria-pressed="false"><span aria-hidden="true">\u2606</span> <span>' + esc(t9(lang, 's_btn')) + '</span></button> <span class="kw-sv" role="status" aria-live="polite"></span></p>' : '') + '</div>' + feedLinks(lang, path, name) + '</div>';
+    (snap ? TB.kbx_follow__s.k3 + esc(t9(lang, 's_btn')) + '</span></button> <span class="kw-sv" role="status" aria-live="polite"></span></p>' : '') + '</div>' + feedLinks(lang, path, name) + '</div>';
 }
 // n28b: counts in the page language (1,590 / 1.590 / 1 590), Latin digits as elsewhere on the site
 export const nf28 = (lang, n) => { try { return Number(n).toLocaleString({ zh: 'zh-CN', ar: 'ar' }[lang] || lang, { numberingSystem: 'latn' }); } catch (e) { return String(n); } };
@@ -194,7 +195,7 @@ function projectJson(N, ix, x) {
   const reg = x.rw || c.register || null;
   const srcs = [...new Set([page, N.okHttp(x.du) ? N.fixU(x.du) : null, ...(x.src || []).filter(N.okHttp).map(N.fixU), ...(x.fl || []).map(f => f[1]).filter(N.okHttp)].filter(Boolean))];
   return {
-    api: 'kolaboro-named-v1', license: 'CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/), attribute "Kolaboro"', rules: 'Facts only, each as published by its source. No opinions or verdicts. Projects not yet reviewed carry no score, checks or claim counts.',
+    api: 'kolaboro-named-v1', license: 'CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/), attribute "Kolaboro"', rules: TB.kbx_follow__s.k4,
     id: x.id, slug: x.s, name: x.n, developer: x.dv ? { name: x.dv, slug: x.dvs && ix.devs.has(x.dvs) ? x.dvs : null, url: x.dvs && ix.devs.has(x.dvs) ? ORIGIN + '/developers/' + x.dvs + '/' : null, api: x.dvs && ix.devs.has(x.dvs) ? ORIGIN + '/api/v1/developers/' + x.dvs : null } : null,
     location: { area: x.ar || null, market: x.mk, country: x.co }, stage: c.stage || x.st || null, site_status: x.sts || null,
     reviewed: rvd, added: x.ad || null, last_checked: N.lastmod(ix, x),
@@ -251,7 +252,7 @@ async function feed(req, N, ix, kind, slug, fmt) {
   let E = [], name, home, about;
   if (kind === 'projects') {
     const x = ix.bySlug.get(slug); if (!x) return jerr({ error: 'not_found' }, 404);
-    E = events(N, ix, x); name = x.n; home = ORIGIN + '/projects/' + slug + '/'; about = 'Dated changes on record for ' + x.n + ' (' + [x.mk, x.co].filter(Boolean).join(', ') + '): promises and their changes, changes seen on the developer page, sealed copies and official register checks. Facts only, each with its source.';
+    E = events(N, ix, x); name = x.n; home = ORIGIN + '/projects/' + slug + '/'; about = 'Dated changes on record for ' + x.n + ' (' + [x.mk, x.co].filter(Boolean).join(', ') + TB.kbx_follow__s.k5;
   } else {
     const dv = ix.devs.get(slug); if (!dv) return jerr({ error: 'not_found' }, 404);
     for (const id of dv.ids) { const x = ix.byId.get(id); if (x) E.push(...events(N, ix, x).map(e => Object.assign(e, { title: x.n + ': ' + e.title }))); }
@@ -267,7 +268,7 @@ async function feed(req, N, ix, kind, slug, fmt) {
       items: E.map(e => ({ id: tag(e), url: e.url, external_url: e.src || undefined, title: e.title, content_text: e.text + (e.src ? ' Source: ' + e.src : ''), content_html: '<p>' + esc(e.text) + '</p>' + (e.src ? '<p>Source: <a href="' + esc(e.src) + '">' + esc(e.src) + '</a></p>' : ''), date_published: e.d })) };
     return out(req, JSON.stringify(o), 'application/feed+json; charset=utf-8', hh, 1800);
   }
-  const x = '<?xml version="1.0" encoding="utf-8"?>\n<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><title>' + xe(title) + '</title><subtitle>' + xe(about) + '</subtitle><id>' + xe(home) + '</id>' +
+  const x = TB.kbx_follow__s.k6 + xe(title) + '</title><subtitle>' + xe(about) + '</subtitle><id>' + xe(home) + '</id>' +
     '<link rel="self" type="application/atom+xml" href="' + xe(self) + '"/><link rel="alternate" type="text/html" href="' + xe(home) + '"/><updated>' + upd + '</updated><author><name>Kolaboro</name><uri>' + ORIGIN + '/</uri></author><rights>CC BY 4.0</rights><icon>' + ORIGIN + '/k/favicon.svg</icon>' +
     E.map(e => '<entry><title>' + xe(e.title) + '</title><id>' + xe(tag(e)) + '</id><link rel="alternate" type="text/html" href="' + xe(e.url) + '"/>' + (e.src ? '<link rel="related" href="' + xe(e.src) + '"/>' : '') + '<updated>' + e.d + '</updated><published>' + e.d + '</published>' +
       '<summary type="text">' + xe(e.text) + '</summary><content type="html">' + xe('<p>' + esc(e.text) + '</p>' + (e.src ? '<p>Source: <a href="' + esc(e.src) + '">' + esc(e.src) + '</a></p>' : '')) + '</content></entry>').join('') + '</feed>';

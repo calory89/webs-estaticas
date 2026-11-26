@@ -1,3 +1,4 @@
+import { TB } from './kbx_strings.js';
 // kolaboro.com batch 33 (n33l, 20 Nov 2026): internal links and the language menu. Data: /data/n33l.json (built by
 // open/n33l-build.py from data/named.json, the live sitemaps and today's translated footers), read once per isolate.
 //   footer(lang)            items 63 and 74: the footer columns (Buyers, the 12 biggest markets, Data, About): about 40 links
@@ -36,7 +37,7 @@ export function footer(lang) {
 const MS_RX = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:|projects\/|m\/|countries\/|countries\/[a-z0-9-]{2,60}\/|rankings\/)$/;
 const slugC = c => String(c || '').normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
 export const msWants = p => MS_RX.test(p);
-const MSCSS = '<style>.n33-ms{border-bottom:1px solid var(--line,#d5dbd8);background:var(--card,#fff);font-size:.9rem}.n33-ms .wrap{display:flex;align-items:center;gap:6px 14px;padding-top:8px;padding-bottom:8px;overflow-x:auto;white-space:nowrap;scrollbar-width:thin}.n33-ms b{flex:none}.n33-ms a{flex:none}.n33-ms small{flex:none;color:var(--muted,#56636F);font-size:.78rem}</style>';
+/* MSCSS: n40 k17, in /data/i18n/k17s.json */
 export function msBlock(lang, path) {
   if (!J || !J.ms) return '';
   const c = /\/countries\/([a-z0-9-]{2,60})\/$/.exec(path), co = c ? c[1] : null;
@@ -44,7 +45,7 @@ export function msBlock(lang, path) {
   if (co) L = L.filter(x => x[2] && slugC(x[2]) === co).concat(L.filter(x => !(x[2] && slugC(x[2]) === co)));   // the country's own pages first
   const a = L.slice(0, 9).map(x => { const href = lang !== 'en' && has(x[3], lang) ? '/' + lang + x[0] : x[0];
     return '<a href="' + esc(href) + '"' + (lang !== 'en' && href === x[0] ? ' hreflang="en"' : '') + '><bdi>' + esc((x[5] && x[5][lang]) || x[4]) + '</bdi></a>'; }).join(' · ');
-  return MSCSS + '<nav class="n33-ms" aria-label="' + esc(lab(lang, 'ms_h')) + '"' + (lang === 'ar' ? ' dir="rtl"' : '') + '><div class="wrap"><b>' + esc(lab(lang, 'ms_h')) + ':</b> ' + a + ' <small>' + esc(lab(lang, 'ms_src')) + '</small></div></nav>';
+  return TB.kbx_n33l__s.MSCSS + '<nav class="n33-ms" aria-label="' + esc(lab(lang, 'ms_h')) + '"' + (lang === 'ar' ? ' dir="rtl"' : '') + '><div class="wrap"><b>' + esc(lab(lang, 'ms_h')) + ':</b> ' + a + ' <small>' + esc(lab(lang, 'ms_src')) + '</small></div></nav>';
 }
 
 // ------------------------------------------------------------------------------------------------ item 71: language menu
@@ -52,7 +53,7 @@ const LN = { en: 'English', es: 'Español', de: 'Deutsch', fr: 'Français', ru: 
 export function lswHtml(lang, alt) {   // alt: { lang: path } from the page's own hreflang links
   if (!J) return '';
   const cur = lang.toUpperCase();
-  return '<style id="lsw-css">' + (J.lswcss || '') + '</style><details class="lsw"><summary aria-label="' + esc(lab(lang, 'language')) + ': ' + cur + ' (' + LN[lang] + ')"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="8" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M2 10h16M10 2c2.4 2.3 3.4 5 3.4 8s-1 5.7-3.4 8M10 2C7.6 4.3 6.6 7 6.6 10s1 5.7 3.4 8" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span class="lsw-w">' + esc(lab(lang, 'language')) + ':</span> ' + cur + '</summary><ul>' +
+  return '<style id="lsw-css">' + (J.lswcss || '') + '</style><details class="lsw"><summary aria-label="' + esc(lab(lang, 'language')) + ': ' + cur + ' (' + LN[lang] + TB.kbx_n33l__s.k0 + esc(lab(lang, 'language')) + ':</span> ' + cur + '</summary><ul>' +
     LO.map(l => '<li><a href="' + esc(alt[l] || pre(l) + '/') + '" hreflang="' + l + '" lang="' + l + '"' + (l === lang ? ' aria-current="page"' : '') + '>' + l.toUpperCase() + ' <span' + (l === 'ar' ? ' dir="rtl"' : '') + '>' + LN[l] + '</span></a></li>').join('') + '</ul></details>';
 }
 // a language version the page links in its head but its menu leaves out (some shells had no ES line): added at the end of the menu
@@ -82,7 +83,7 @@ export async function devMarkets(req, u, env, r) {
 
 // ------------------------------------------------------------------------------------------------ item 76: /sitemap/
 export const SM_RX = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?sitemap\/?$/;
-const CSS = '<style>.n33-sm h2{margin:30px 0 10px}.n33-sm .n33-co{columns:2 300px;column-gap:32px}.n33-sm .n33-c{break-inside:avoid;margin:0 0 18px}.n33-sm .n33-c h3{font-size:1rem;margin:0 0 4px}.n33-sm ul{margin:0;padding-inline-start:18px}.n33-sm li{margin:2px 0}.n33-sm .n33-n{color:var(--muted,#56636F);font-size:.85rem}.n33-sm .n33-l{columns:3 200px;column-gap:28px;padding-inline-start:18px}</style>';
+/* CSS: n40 k17, in /data/i18n/k17s.json */
 export async function sitemapPage(req, u, env, shell) {
   const m = SM_RX.exec(u.pathname); if (!m) return null;
   if (!/\/$/.test(u.pathname)) return new Response(null, { status: 301, headers: { location: u.pathname + '/' } });
@@ -110,7 +111,7 @@ export async function sitemapPage(req, u, env, shell) {
   const body = '<section class="phero kp"><div class="wrap"><p class="crumb"><a href="' + pre(lang) + '/">Kolaboro</a> / ' + esc(lab(lang, 'sm_h1')) + '</p><h1>' + esc(lab(lang, 'sm_h1')) + '</h1><p class="lead">' + esc(lab(lang, 'sm_lead').replace('{d}', dd)) + '</p></div></section>' +
     '<div class="wrap kwrap n33-sm"' + (lang === 'ar' ? ' dir="rtl"' : '') + '><h2>' + esc(lab(lang, 'sm_main')) + '</h2><ul class="n33-l">' + li(main) + '</ul>' +
     '<h2>' + esc(lab(lang, 'sm_co')) + '</h2><div class="n33-co">' + co + '</div>' +
-    '<h2>' + esc(lab(lang, 'sm_more')) + '</h2><ul class="n33-l">' + li((J.ft[lang] || J.ft.en).find(g => g[0] === 'h_about')[1].concat(J.more[lang] || J.more.en)) + '</ul></div>' + CSS;
+    '<h2>' + esc(lab(lang, 'sm_more')) + '</h2><ul class="n33-l">' + li((J.ft[lang] || J.ft.en).find(g => g[0] === 'h_about')[1].concat(J.more[lang] || J.more.en)) + '</ul></div>' + TB.kbx_n33l__s.CSS;
   const canon = ORIGIN + pre(lang) + '/sitemap/', title = lab(lang, 'sm_title');
   const pg = { title: (title + ' | Kolaboro').length > 60 ? title : title + ' | Kolaboro', desc: lab(lang, 'sm_desc'), canon, body, alt: l => ORIGIN + pre(l) + '/sitemap/',
     ld: { '@context': 'https://schema.org', '@graph': [{ '@type': 'CollectionPage', name: title, url: canon, inLanguage: lang, description: lab(lang, 'sm_desc'), dateModified: String(J.data || J.v).slice(0, 10), isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' } },

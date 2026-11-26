@@ -27,7 +27,7 @@ const T = {
 const t = (lang, k, v) => { let s = (T[lang] || T.en)[k] || T.en[k]; if (v) s = s.replace(/\{(\w+)\}/g, (m, a) => v[a] != null ? v[a] : m); return s; };
 const bdi = s => '<bdi>' + esc(s) + '</bdi>';
 const slugA = s => String(s || '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');   // same as kbx_facets.js
-const CSS = '<style id="kg27-css">.kg27{padding:28px 0;border-top:1px solid var(--line)}.kg27 h2{font-size:1.25rem;margin:0 0 4px}.kg27-s{color:var(--muted);margin:0 0 12px;max-width:72ch}.kg27-l{columns:3 220px;padding-inline-start:18px;margin:0}.kg27-l li{margin:0 0 8px;break-inside:avoid}.kg27-l small{color:var(--muted)}.kg27 h3{font-size:1rem;margin:16px 0 6px}.kg27-p{max-width:78ch;line-height:1.6}.kg27-p a.src{font-size:.8rem}@media (max-width:600px),(pointer:coarse){.kg27-l li{margin:0}.kg27-l a{display:inline-block;padding:12px 0;min-height:44px;box-sizing:border-box}}</style>';
+/* CSS: n40 k17, in /data/i18n/k17s.json */
 
 let IX = null, TOP = null, LOADING = null;
 let EMB = null;
@@ -54,7 +54,7 @@ function topHtml(ix, lang, kind) {
   const head = '<section class="kg27" id="most-searched"' + (lang === 'ar' ? ' dir="rtl"' : '') + '><div class="wrap"><h2>' + esc(t(lang, 'h')) + '</h2><p class="kg27-s">' + esc(t(lang, 's')) + '</p>';
   if (kind === 'home') h = head + '<ul class="kg27-l">' + P.L.slice(0, 30).map(x => li(x, lang)).join('') + '</ul><p><a href="' + pre(lang) + '/rankings/transparency/#most-searched">' + esc(t(lang, 'all')) + '</a></p></div></section>';
   else h = head + [...P.byMk.entries()].sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0])).map(([mk, L]) => '<h3>' + bdi(mkName(mk, lang)) + '</h3><ul class="kg27-l">' + L.map(x => '<li><a href="' + pre(lang) + '/projects/' + x.s + '/">' + bdi(x.n) + '</a></li>').join('') + '</ul>').join('') + '</div></section>';
-  h = CSS + h; P.html.set(key, h); return h;
+  h = TB.kbx_g27__s.CSS + h; P.html.set(key, h); return h;
 }
 // the home page, /countries/, /rankings/, /rankings/transparency/ (index.js, after the least-linked block)
 export function topReady(env, ctx, lang, path) {
@@ -100,6 +100,6 @@ export async function marketBlock(env, key) {
   let h = M.html.get(mk); if (h != null) return h;
   const P = build(M.ix), top = P.byMk.get(mk) || [];
   const para = M.big.has(mk) ? paraHtml(M, mk) : '';
-  h = para || top.length ? CSS + '<section class="kg27" id="in-numbers"><div class="wrap">' + para + (top.length ? '<h2>' + esc(t('en', 'inm', { p: mk })) + '</h2><ul class="kg27-l">' + top.map(x => '<li><a href="/projects/' + x.s + '/">' + bdi(x.n) + '</a>' + (x.dv ? ' <small>' + bdi(x.dv) + '</small>' : '') + '</li>').join('') + '</ul>' : '') + '</div></section>' : '';
+  h = para || top.length ? TB.kbx_g27__s.CSS + '<section class="kg27" id="in-numbers"><div class="wrap">' + para + (top.length ? '<h2>' + esc(t('en', 'inm', { p: mk })) + '</h2><ul class="kg27-l">' + top.map(x => '<li><a href="/projects/' + x.s + '/">' + bdi(x.n) + '</a>' + (x.dv ? ' <small>' + bdi(x.dv) + '</small>' : '') + '</li>').join('') + '</ul>' : '') + '</div></section>' : '';
   M.html.set(mk, h); return h;
 }

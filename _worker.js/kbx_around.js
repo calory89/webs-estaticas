@@ -51,12 +51,7 @@ const mapU = ll => Array.isArray(ll) && isFinite(ll[0]) && isFinite(ll[1]) ? 'ht
 const bd = s => '<bdi>' + esc(s) + '</bdi>';
 const buildDate = (b, fd) => /^\d{8}$/.test(String(b || '')) ? fd(String(b).slice(0, 4) + '-' + String(b).slice(4, 6) + '-' + String(b).slice(6, 8)) : String(b || '');
 
-const CSS = '<style id="karo-css">.karo .kl-led{display:grid;grid-template-columns:minmax(0,1fr);margin:10px 0;border-top:1px solid var(--k-line,#ccd)}.karo .kl-led>dt{margin:0;padding:12px 0 2px;font-weight:640;color:var(--k-ink,inherit)}.karo .kl-led>dd{margin:0;padding:0 0 12px;border-bottom:1px solid var(--k-line,#ccd);text-align:start;line-height:1.55;overflow-wrap:anywhere}' +
-  '@media (min-width:760px){.karo .kl-led{grid-template-columns:220px minmax(0,1fr)}.karo .kl-led>dt{padding:12px 0;padding-inline-end:16px;border-bottom:1px solid var(--k-line,#ccd)}.karo .kl-led>dd{padding:12px 0}}.karo .k-src{display:inline-flex;margin-inline-start:4px}' +
-  '.karo h3{margin:26px 0 6px;font-size:var(--k-fs-lg,1.2rem);scroll-margin-top:140px}.karo .lim{font-size:var(--k-fs-xs,.82rem);color:var(--k-muted,#56636F);margin:8px 0;max-width:80ch}.karo .srcl{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:var(--k-fs-xs,.82rem);margin:8px 0 0}.karo .srcl a{color:var(--k-sea,#155C75)}' +
-  '.karo .k-table td,.karo .k-table th{vertical-align:top;text-align:start}.karo .k-table q{quotes:"\\201C" "\\201D";font-weight:600}.karo .k-table ul{margin:0;padding:0;list-style:none}.karo .k-table li+li{margin-top:2px}.karo td.k-n,.karo th.k-n{text-align:end;white-space:nowrap}.karo td.k-n small{display:block;color:var(--k-muted,#56636F);font-size:var(--k-fs-xs,.82rem)}' +
-  '@media (max-width:639px){.karo .k-table--stack th[scope=row]{display:block;padding:0 0 4px;border:0}.karo .k-table--stack td.k-n{white-space:normal}.karo .k-table--stack td.k-n small{display:inline;margin-inline-start:6px}' +
-  '.karo .kc thead{display:none}.karo .kc tr{display:block;padding:10px 0;border-bottom:1px solid var(--k-line,#ccd)}.karo .kc td{display:block;padding:2px 0;border:0}.karo .kc td::before{content:attr(data-label);display:block;color:var(--k-muted,#56636F);font-size:var(--k-fs-xs,.82rem)}}</style>';
+/* CSS: n40 k17, in /data/i18n/k17s.json */
 
 // ------------------------------------------------------------------------------------------------ #around (with #distance-claims)
 function place(o, lang, withKind) {   // "Name (kind), 480 m map"
@@ -118,7 +113,7 @@ export function aroundHtml(ad, x, lang, fd) {
   }
   if (!rows.length) return '';
   const p = String(r.pin || '').split(','), hq = p.length === 2 && isFinite(+p[0]) && isFinite(+p[1]) ? '?lat=' + (+p[0]).toFixed(4) + '&lng=' + (+p[1]).toFixed(4) : '';
-  return CSS + '<div class="karo"><p class="ki">' + esc(t(lang, 'intro', { b: buildDate(ar.osm_build, fd), a: num(r.acc || 100, lang) })) + '</p>' +
+  return TB.kbx_around__s.CSS + '<div class="karo"><p class="ki">' + esc(t(lang, 'intro', { b: buildDate(ar.osm_build, fd), a: num(r.acc || 100, lang) })) + '</p>' +
     '<dl class="kl-led">' + rows.map(([a, b]) => '<dt>' + esc(a) + '</dt><dd>' + b + '</dd>').join('') + '</dl>' +
     '<p class="lim">' + esc(t(lang, 'lim')) + ' ' + src('https://www.openstreetmap.org/copyright', t(lang, 'osm')) + '</p>' + claimsHtml(ad, x, lang, fd) +
     '<p class="srcl"><a href="/hazards/' + esc(hq) + '">' + esc(t(lang, 'hz')) + '</a><a href="/api/x/around/' + encodeURIComponent(x.id) + '">' + esc(t(lang, 'method')) + cm(lang) + esc(t(lang, 'upd', { d: fd(ar.updated) })) + '</a></p></div>';
@@ -133,7 +128,7 @@ export function climateHtml(ad, x, lang, fd) {
   const f = (v, k) => num(v, lang, { maximumFractionDigits: k !== 'pr' && Math.abs(v) < 10 ? 1 : 0 });   // whole days and millimetres; one decimal under 10 days
   const cell = (a, k) => '<span><b>' + esc(f(a[0], k)) + '</b> <small>(' + esc(t(lang, 'rg', { a: f(a[1], k), b: f(a[2], k) })) + ')</small></span>';
   const s = cl.source || {}, p = String(r.pin || '').split(','), hq = p.length === 2 && isFinite(+p[0]) && isFinite(+p[1]) ? '?lat=' + (+p[0]).toFixed(4) + '&lng=' + (+p[1]).toFixed(4) : '';
-  return (ad.ar && ad.ar.projects && ad.ar.projects[x.id] ? '' : CSS) + '<div class="karo"><p class="ki">' + esc(t(lang, 'cintro')) + '</p><div class="k-table-wrap"><table class="k-table k-table--stack"><thead><tr><th>' + esc(t(lang, 'col0')) + '</th>' +
+  return (ad.ar && ad.ar.projects && ad.ar.projects[x.id] ? '' : TB.kbx_around__s.CSS) + '<div class="karo"><p class="ki">' + esc(t(lang, 'cintro')) + '</p><div class="k-table-wrap"><table class="k-table k-table--stack"><thead><tr><th>' + esc(t(lang, 'col0')) + '</th>' +
     cols.map(([, l]) => '<th class="k-n">' + esc(t(lang, l)) + '</th>').join('') + '</tr></thead><tbody>' +
     rowsK.map(k => '<tr><th scope="row" data-label="">' + esc(t(lang, k)) + '</th>' + cols.map(([c, l]) => '<td class="k-n" data-label="' + esc(t(lang, l)) + '">' + cell(r[k][c], k) + '</td>').join('') + '</tr>').join('') + '</tbody></table></div>' +
     '<p class="lim">' + esc(t(lang, 'scen')) + ' ' + esc(t(lang, 'clim')) + '</p>' +
@@ -148,7 +143,7 @@ export async function handle(req, u, env) {
   const ad = await aroundData(env).catch(() => null);
   if (!ad || (!ad.ar && !ad.cl && !ad.dc)) return J({ error: 'data not published yet' }, 503);
   const pick = f => f ? Object.fromEntries(Object.entries(f).filter(([k]) => k !== 'projects')) : null;
-  if (!id || id === 'about') return J({ about: 'What is around each pinned project (nearest sea, beach, airport, runway end, hospital, school, supermarket, public transport stop; yearly PM2.5 and NO2), the climate at the pin (1995-2014 against 2040-2059) and the distance claims on the page next to the measurement. Shown in #around, #distance-claims and #climate on named project pages.',
+  if (!id || id === 'about') return J({ about: TB.kbx_around__s.k0,
     around: pick(ad.ar), climate: pick(ad.cl), distance_claims: pick(ad.dc), projects: Object.keys((ad.ar && ad.ar.projects) || {}).length, files: ['/data/around.json', '/data/climate.json', '/data/distance-claims.json'], example: '/api/x/around/CDS-001' }, 200, 3600);
   if (!/^[A-Z0-9-]{3,20}$/.test(id)) return J({ error: 'bad id' }, 400);
   const a = ad.ar && ad.ar.projects && ad.ar.projects[id], b = ad.cl && ad.cl.projects && ad.cl.projects[id], c = ad.dc && ad.dc.projects && ad.dc.projects[id];

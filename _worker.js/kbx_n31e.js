@@ -1,3 +1,4 @@
+import { TB } from './kbx_strings.js';
 // kolaboro.com batch 31 (agent n31e, 18 Nov 2026): buyer tools, items 156 to 180 of the 300 list. No model calls, nothing stored about
 // visitors, no database writes. Facts only, each with its source and the date it was read. Pages in 8 languages (Arabic RTL).
 //   GET /k/n31e.js?v=<V>                        client script of the pages below (loaded only on them)
@@ -76,14 +77,7 @@ async function perUsd() {
 const toUsd = (fx, amt, cur) => fx && fx.r[cur] ? amt / fx.r[cur] : null;
 
 // ------------------------------------------------------------------------------------------------ page frame
-const CSS = '<style id="n31-css">.n31w{max-width:980px}.n31w h2{margin-top:28px}.n31p{max-width:72ch}.n31m{color:var(--muted,#59626B);font-size:.88rem}.n31src{overflow-wrap:anywhere}' +
-  '.n31f{display:grid;gap:10px;margin:16px 0;max-width:720px}.n31f label{font-weight:600}.n31f input,.n31f select,.n31f textarea{width:100%;box-sizing:border-box;min-height:48px;border:1.5px solid var(--line,#d5d3cc);border-radius:12px;padding:10px 12px;font:inherit;background:var(--paper,#fff);color:inherit}.n31f textarea{min-height:120px}' +
-  '.n31row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.n31row .k-btn{min-height:48px}.n31b{min-height:44px;padding:8px 14px;border:1.5px solid var(--ink,#17212B);border-radius:999px;background:var(--card,#fff);color:inherit;font:inherit;font-weight:600;cursor:pointer}.n31b[aria-pressed=true]{background:var(--ink,#17212B);color:var(--paper,#fff)}' +
-  '.n31c{border:1px solid var(--line,#d5d3cc);border-radius:14px;background:var(--card,#fff);padding:14px 16px;margin:12px 0}.n31c h3{margin:0 0 6px;font-size:1.08rem}.n31c p{margin:6px 0}.n31c.is-no{border-inline-start:4px solid var(--hivis,#FF5B14)}.n31c.is-ok{border-inline-start:4px solid var(--k-sea,#155C75)}.n31c.is-mid{border-inline-start:4px solid #C9A227}' +
-  '.n31q{margin:8px 0;padding:6px 12px;border-inline-start:3px solid var(--line,#d5d3cc);font-size:.94rem;overflow-wrap:anywhere}.n31s{font-weight:600;min-height:1.4em}' +
-  '.n31t{overflow-x:auto;border:1px solid var(--line,#d5d3cc);border-radius:14px;background:var(--card,#fff);margin:12px 0}.n31t table{width:100%;border-collapse:collapse}.n31t th,.n31t td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid var(--line,#d5d3cc);font-variant-numeric:tabular-nums}.n31t th{font-size:.86rem;color:var(--muted,#59626B)}.n31t td small{display:block;color:var(--muted,#59626B)}' +
-  '@media(max-width:640px){.n31t.n31stack{border:0;background:none}.n31stack thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}.n31stack tr,.n31stack td,.n31stack th[scope=row]{display:block}.n31stack tr{border:1px solid var(--line,#d5d3cc);border-radius:12px;margin:0 0 8px;padding:8px 12px;background:var(--card,#fff)}.n31stack td,.n31stack th[scope=row]{border:0;padding:3px 0}.n31stack td[data-l]::before{content:attr(data-l) ": ";color:var(--muted,#59626B);font-size:.84rem}}' +
-  '.n31rel{display:flex;flex-wrap:wrap;gap:8px 18px;padding:0;list-style:none}.n31rel a{display:inline-flex;min-height:44px;align-items:center}.k-vh{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}</style>';
+/* CSS: n40 k17, in /data/i18n/k17s.json */
 const REL = ['find-listing', 'handover-history', 'on-time', 'request-documents', 'receipt-check', 'payment-vs-progress', 'visa-by-investment', 'compare-countries', 'inheritance', 'foreign-mortgages', 'area-report', 'translate'];
 const relList = (lang, me) => '<h2>' + esc(t31(lang, 'rel_h')) + '</h2><ul class="n31rel">' + REL.filter(k => k !== me).map(k => '<li><a href="' + pre(lang) + '/tools/' + k + '/">' + esc(t31(lang, k + '_h1')) + '</a></li>').join('') +
   '<li><a href="' + pre(lang) + '/tools/contract-reader/">' + esc(t31(lang, 'cr_link')) + '</a></li><li><a href="' + pre(lang) + '/satellite/monthly/">' + esc(t31(lang, 'sm_h1')) + '</a></li><li><a href="' + pre(lang) + '/watch/new-websites/">' + esc(t31(lang, 'nw_h1')) + '</a></li><li><a href="/tools/">' + esc(t31(lang, 'all_tools')) + '</a></li></ul>';
@@ -92,7 +86,7 @@ function frame(lang, path, key, inner, o) {
   o = o || {};
   const P = pre(lang), crumb = '<p class="crumb"><a href="' + P + '/">Kolaboro</a> / ' + (o.crumb || '<a href="/tools/">' + esc(t31(lang, 'bc_tools')) + '</a>') + '</p>';
   return '<section class="phero kp"><div class="wrap">' + crumb + '<h1>' + esc(t31(lang, key + '_h1')) + '</h1><p class="lead n31p">' + esc(t31(lang, key + '_lead')) + '</p>' + (o.priv ? '<p class="n31p"><b>' + esc(o.priv) + '</b></p>' : '') + '</div></section>' +
-    '<div class="wrap kwrap n31w" id="n31" data-k="' + key + '" data-m="' + esc(JSON.stringify(o.m || {})) + '">' + inner + (o.norel ? '' : relList(lang, o.me)) + '</div>' + CSS + (o.noscript ? '' : script);
+    '<div class="wrap kwrap n31w" id="n31" data-k="' + key + '" data-m="' + esc(JSON.stringify(o.m || {})) + '">' + inner + (o.norel ? '' : relList(lang, o.me)) + '</div>' + TB.kbx_n31e__s.CSS + (o.noscript ? '' : script);
 }
 async function page(lang, shell, key, path, body, o) {
   o = o || {};
@@ -163,7 +157,7 @@ export function handoverRecord(ix, N, x, H) {
   return { id: x.id, slug: x.s, name: nameOf(x), developer: x.dv || null, market: x.mk || null, stage: c.stage || x.st || null, current: h ? String(h.d) : null, moves: pr ? (pr.mv || 0) : 0,
     delay_months: fx.delay_months != null ? fx.delay_months : null, distinct_dates: distinct.length, events: ev, developer_page: N.okHttp(x.url) ? x.url : null,
     page: ORIGIN + '/projects/' + x.s + '/', timeline: ORIGIN + '/projects/' + x.s + '/timeline/', licence: 'CC BY 4.0, credit Kolaboro (kolaboro.com)',
-    note: 'Dates as published by the developer or read by our research on the day shown (seen). A date that was never read again keeps its first day. No forecast.' };
+    note: TB.kbx_n31e__s.k0 };
 }
 
 // ------------------------------------------------------------------------------------------------ 156 / 172: find a listing, handover history
@@ -171,10 +165,10 @@ function findPage(lang, key) {
   const w = (k, v) => t31(lang, k, v);
   const M = { k: key, ph: w('fl_ph'), go: w('fl_go'), wait: w('fl_wait'), none: w('fl_none'), err: w('fl_err'), how: { u: w('how_u'), d: w('how_d'), n: w('how_n'), nn: w('how_nn'), g: w('how_g'), v: w('how_v'), q: w('how_q') },
     th: w('hh_th'), kinds: w('hh_kinds'), cur: w('hh_cur'), moves: w('hh_moves'), open: w('fl_open'), tl: w('fl_tl'), hist: w('fl_hist'), dev: w('fl_dev'), st: w('stage'), ho: w('fl_ho'), ck: w('fl_ck'), more: w('fl_more'), first: w('hh_first') };
-  const inner = '<form class="n31f" id="n31-fl" role="search"><label for="n31-q">' + esc(w(key === 'find-listing' ? 'fl_lab' : 'hh_lab')) + '</label><input id="n31-q" name="q" type="text" inputmode="url" autocomplete="off" spellcheck="false" placeholder="' + esc(w('fl_ph')) + '" maxlength="600">' +
-    '<div class="n31row"><button class="k-btn" type="submit">' + esc(w('fl_go')) + '</button></div></form><p id="n31-s" class="n31s" role="status" aria-live="polite"></p><div id="n31-o"></div>' +
+  const inner = '<form class="n31f" id="n31-fl" role="search"><label for="n31-q">' + esc(w(key === 'find-listing' ? 'fl_lab' : 'hh_lab')) + TB.kbx_n31e__s.k1 + esc(w('fl_ph')) + '" maxlength="600">' +
+    '<div class="n31row"><button class="k-btn" type="submit">' + esc(w('fl_go')) + TB.kbx_n31e__s.k2 +
     '<h2>' + esc(w('fl_how_h')) + '</h2><ul class="n31p">' + w('fl_how').map(s => '<li>' + esc(s) + '</li>').join('') + '</ul>' +
-    '<p class="n31m">' + esc(w('fl_api')) + ' <a href="/api/v1/find?q=marina">/api/v1/find?q=</a> · <a href="/api/v1/handover-history/unsere-flora-berlin">/api/v1/handover-history/&lt;slug&gt;</a> · <a href="' + '/extension/">' + esc(w('fl_ext')) + '</a></p>';
+    '<p class="n31m">' + esc(w('fl_api')) + TB.kbx_n31e__s.k3 + '/extension/">' + esc(w('fl_ext')) + '</a></p>';
   return frame(lang, '/tools/' + key + '/', key, inner, { m: M, me: key, priv: w(key === 'find-listing' ? 'fl_priv' : 'hh_priv') });
 }
 
@@ -205,7 +199,7 @@ async function visaPage(env, lang) {
     }
     return h + '</section>';
   };
-  const inner = '<form class="n31f" id="n31-vb"><label for="n31-b">' + esc(w('v_budget')) + '</label><div class="n31row"><input id="n31-b" type="number" min="0" step="1000" inputmode="numeric" style="max-width:220px"><select id="n31-bc" aria-label="' + esc(w('currency')) + '" style="max-width:120px">' + ['USD', 'EUR', 'GBP', 'AED', 'TRY'].map(c => '<option>' + c + '</option>').join('') + '</select><button class="k-btn" type="submit">' + esc(w('v_go')) + '</button></div></form><p id="n31-s" class="n31s" role="status" aria-live="polite"></p>' +
+  const inner = '<form class="n31f" id="n31-vb"><label for="n31-b">' + esc(w('v_budget')) + TB.kbx_n31e__s.k4 + esc(w('currency')) + '" style="max-width:120px">' + ['USD', 'EUR', 'GBP', 'AED', 'TRY'].map(c => '<option>' + c + '</option>').join('') + '</select><button class="k-btn" type="submit">' + esc(w('v_go')) + '</button></div></form><p id="n31-s" class="n31s" role="status" aria-live="polite"></p>' +
     rows.map(card).join('') + '<p class="n31m">' + esc(w('v_note', { d: fx ? fdate(fx, lang) : '?' })) + '</p><p class="n31m">' + esc(w('not_advice')) + '</p>';
   const M = { fx: (await perUsd()) ? (await perUsd()).r : null, msg: { ok: w('v_ok'), no: w('v_no') } };
   return frame(lang, '/tools/visa-by-investment/', 'visa-by-investment', inner, { m: M, me: 'visa-by-investment' });
@@ -259,7 +253,7 @@ async function comparePage(env, lang, u) {
   const table = '<div class="n31t n31stack"><table><thead><tr><th scope="col">' + esc(w('cc_row')) + '</th>' + pick.map(cc => '<th scope="col">' + esc(country(cc, lang)) + '</th>').join('') + '</tr></thead><tbody>' +
     R.map(([h, f]) => '<tr><th scope="row">' + esc(h) + '</th>' + pick.map(cc => cell(cc, f(cc))).join('') + '</tr>').join('') + '</tbody></table></div>';
   const form = '<form class="n31f" method="get" action="' + P + '/tools/compare-countries/" id="n31-cc"><fieldset style="border:0;padding:0;margin:0"><legend><b>' + esc(w('cc_pick')) + '</b></legend><div class="n31row">' +
-    all.map(cc => '<label class="n31b" style="display:inline-flex;gap:6px;align-items:center"><input type="checkbox" name="cc" value="' + cc + '"' + (pick.includes(cc) ? ' checked' : '') + ' style="width:auto;min-height:0">' + esc(country(cc, lang)) + '</label>').join('') +
+    all.map(cc => TB.kbx_n31e__s.k5 + cc + '"' + (pick.includes(cc) ? ' checked' : '') + ' style="width:auto;min-height:0">' + esc(country(cc, lang)) + '</label>').join('') +
     '</div></fieldset><input type="hidden" name="c" value="' + pick.join(',') + '"><div class="n31row"><button class="k-btn" type="submit">' + esc(w('cc_go')) + '</button></div></form>';
   const inner = form + table + '<p class="n31m">' + esc(w('cc_note', { d: fdate(D.day, lang) })) + '</p><p class="n31m">' + esc(w('not_advice')) + '</p>';
   return frame(lang, '/tools/compare-countries/', 'compare-countries', inner, { me: 'compare-countries' });
@@ -275,7 +269,7 @@ async function onTimePage(env, lang, u) {
     msg: { res: w('ot_res'), few: w('ot_few'), est: w('ot_est'), bad: w('ot_bad'), none: w('ot_none'), pick: w('ot_pick') }, LOC: LOC[lang], day: S0.day };
   const inner = '<form class="n31f" id="n31-ot"><label for="n31-mk">' + esc(w('ot_mk')) + '</label><select id="n31-mk"><option value="">' + esc(w('ot_all')) + '</option>' + opts + '</select>' +
     '<label for="n31-d">' + esc(w('ot_date')) + '</label><input id="n31-d" type="month" min="2024-01" max="2035-12">' +
-    '<div class="n31row"><button class="k-btn" type="submit">' + esc(w('ot_go')) + '</button></div></form><p id="n31-s" class="n31s" role="status" aria-live="polite"></p><div id="n31-o"></div>' +
+    '<div class="n31row"><button class="k-btn" type="submit">' + esc(w('ot_go')) + TB.kbx_n31e__s.k6 +
     '<h2>' + esc(w('ot_m_h')) + '</h2><ul class="n31p">' + w('ot_m').map(s => '<li>' + esc(s) + '</li>').join('') + '</ul><p><a href="' + P + '/methods/handover-slippage/">' + esc(w('ot_full')) + '</a></p>';
   return frame(lang, '/tools/on-time/', 'on-time', inner, { m: M, me: 'on-time' });
 }
@@ -293,7 +287,7 @@ async function reqDocPage(env, lang, u) {
     '<label for="n31-un">' + esc(w('rd_un')) + '</label><input id="n31-un" type="text" maxlength="80">' +
     '<label for="n31-me">' + esc(w('rd_me')) + '</label><input id="n31-me" type="text" maxlength="80" autocomplete="name">' +
     '<label for="n31-l">' + esc(w('rd_l')) + '</label><select id="n31-l">' + LANGS.map(l => '<option value="' + l + '"' + (l === lang ? ' selected' : '') + '>' + esc(M.name[l]) + '</option>').join('') + '</select>' +
-    '<fieldset style="border:0;padding:0;margin:0"><legend><b>' + esc(w('rd_docs')) + '</b></legend>' + docs.map(d => '<label style="display:flex;gap:10px;align-items:flex-start;font-weight:400;min-height:44px"><input type="checkbox" value="' + d + '" checked style="width:auto;min-height:0;margin-top:4px"> <span>' + esc(w('rd_doc_' + d)) + '</span></label>').join('') + '</fieldset></form>' +
+    '<fieldset style="border:0;padding:0;margin:0"><legend><b>' + esc(w('rd_docs')) + '</b></legend>' + docs.map(d => TB.kbx_n31e__s.k7 + d + '" checked style="width:auto;min-height:0;margin-top:4px"> <span>' + esc(w('rd_doc_' + d)) + '</span></label>').join('') + '</fieldset></form>' +
     '<h2>' + esc(w('rd_out')) + '</h2><div class="n31f"><label for="n31-su">' + esc(w('rd_subj')) + '</label><input id="n31-su" type="text" readonly><label for="n31-bo">' + esc(w('rd_body')) + '</label><textarea id="n31-bo" rows="16" readonly dir="auto"></textarea>' +
     '<div class="n31row"><button class="k-btn" type="button" id="n31-cp">' + esc(w('rd_copy')) + '</button><a class="k-btn k-btn--ghost" id="n31-mt" href="mailto:">' + esc(w('rd_mail')) + '</a></div><p id="n31-s" class="n31s" role="status" aria-live="polite"></p></div>' +
     '<p class="n31p">' + esc(w('rd_why')) + '</p><p class="n31m">' + esc(w('rd_priv')) + '</p>';
@@ -324,7 +318,7 @@ async function areaPage(env, lang, u) {
     for (const x of L) { const c = ix.caseBy.get(x.id) || {}; st[kindOf(c.stage || x.st)]++; if ((c.checks || {}).permit === 2) pn++; if ((c.checks || {}).escrow === true) esc2++; if (N.overdueOf && N.overdueOf(ix, x)) ov++; if ((x.fx || {}).lat) pin++; }
     const top = tr ? L.map(x => tr.rows.get(x.id)).filter(Boolean).sort((a, b) => b.score - a.score || a.n.localeCompare(b.n)).slice(0, 10) : [];
     const li = (a, b) => '<tr><th scope="row">' + esc(a) + '</th><td>' + b + '</td></tr>';
-    rep = '<article class="n31rep" id="n31-rep"><header class="n31rh"><div><p class="n31m" id="n31-ag"></p><h2 style="margin:0">' + esc(w('ar_rt', { m: H.mkName(m, lang) })) + '</h2><p class="n31m">' + esc(w('ar_asof', { d: fdate(ix.updated || S0.day, lang) })) + '</p></div><img id="n31-lg" alt="" hidden></header>' +
+    rep = TB.kbx_n31e__s.k8 + esc(w('ar_rt', { m: H.mkName(m, lang) })) + '</h2><p class="n31m">' + esc(w('ar_asof', { d: fdate(ix.updated || S0.day, lang) })) + '</p></div><img id="n31-lg" alt="" hidden></header>' +
       '<div class="n31t"><table><tbody>' + li(w('ar_k'), '<b>' + nf(L.length, lang) + '</b>') + li(w('ar_st'), esc(w('ar_stv', { a: nf(st.op, lang), b: nf(st.uc, lang), c: nf(st.done, lang) }))) +
       li(w('cc_r_pn'), nf(pn, lang) + ' (' + nf(Math.round(pn / Math.max(1, L.length) * 100), lang) + ' %)') + li(w('cc_r_esc'), nf(esc2, lang) + ' (' + nf(Math.round(esc2 / Math.max(1, L.length) * 100), lang) + ' %)') + li(w('ar_pin'), nf(pin, lang)) + li(w('ar_ov'), nf(ov, lang)) +
       li(w('cc_r_late'), sr && sr.n >= 5 ? esc(w('cc_med', { m: nf(sr.med, lang) })) + ' <small>' + esc(w('cc_n', { n: nf(sr.n, lang) })) + '</small>' : esc(w('cc_few', { n: nf(sr ? sr.n : 0, lang) }))) + '</tbody></table></div>' +
@@ -335,8 +329,8 @@ async function areaPage(env, lang, u) {
     '<div class="n31row"><button class="k-btn" type="submit">' + esc(w('ar_go')) + '</button></div>' +
     '<label for="n31-an">' + esc(w('ar_an')) + '</label><input id="n31-an" type="text" maxlength="80"><label for="n31-al">' + esc(w('ar_al')) + '</label><input id="n31-al" type="file" accept="image/png,image/jpeg,image/webp,image/svg+xml">' +
     '<p class="n31m">' + esc(w('ar_priv')) + '</p>' + (m ? '<div class="n31row"><button class="k-btn" type="button" id="n31-pr">' + esc(w('ar_print')) + '</button></div>' : '') + '</form>' + rep +
-    '<style>.n31rh{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;margin:16px 0}.n31rh img{max-height:64px;max-width:180px;object-fit:contain}.n31rep{border:1px solid var(--line,#d5d3cc);border-radius:14px;padding:16px;background:var(--card,#fff)}' +
-    '@media print{header,footer,nav,.phero,.n31np,.n31rel,.n31w>h2,.k-ticker,.kticker,[class*=ticker],#n31>h2{display:none!important}.n31rep{border:0;padding:0}.n31rep a{color:inherit;text-decoration:none}body{background:#fff!important}}</style>';
+    TB.kbx_n31e__s.k9 +
+    TB.kbx_n31e__s.k10;
   return frame(lang, '/tools/area-report/', 'area-report', inner, { me: 'area-report', m: {} });
 }
 
@@ -349,18 +343,18 @@ function translatePage(lang) {
     '<label for="n31-tt">' + esc(w('tr_or')) + '</label><textarea id="n31-tt" rows="8" dir="auto" spellcheck="false"></textarea>' +
     '<label for="n31-tl">' + esc(w('tr_to')) + '</label><select id="n31-tl">' + LANGS.map(l => '<option value="' + l + '"' + (l === lang ? ' selected' : '') + '>' + esc(names[l]) + '</option>').join('') + '</select>' +
     '<label for="n31-ts">' + esc(w('tr_from')) + '</label><select id="n31-ts"><option value="">' + esc(w('tr_auto')) + '</option>' + Object.keys(names).map(l => '<option value="' + l + '">' + esc(names[l]) + '</option>').join('') + '</select>' +
-    '<div class="n31row"><button class="k-btn" type="submit">' + esc(w('tr_go')) + '</button></div></form><p id="n31-s" class="n31s" role="status" aria-live="polite"></p><div id="n31-o" dir="auto"></div>' +
+    '<div class="n31row"><button class="k-btn" type="submit">' + esc(w('tr_go')) + TB.kbx_n31e__s.k11 +
     '<h2>' + esc(w('tr_how_h')) + '</h2><ul class="n31p">' + w('tr_how').map(s => '<li>' + esc(s) + '</li>').join('') + '</ul>';
   return frame(lang, '/tools/translate/', 'translate', inner, { m: M, me: 'translate', priv: w('tr_priv') });
 }
 function receiptPage(lang) {
   const w = (k, v) => t31(lang, k, v);
   const M = { msg: { none: w('rc_none'), ok: w('rc_ok'), bad: w('rc_bad'), ae: w('rc_ae'), esc: w('rc_esc'), noesc: w('rc_noesc'), ben: w('rc_ben'), noben: w('rc_noben'), pers: w('rc_pers'), ref: w('rc_ref'), noref: w('rc_noref'), sw: w('rc_sw'), cc: w('rc_cc'), call: w('rc_call'), iban: w('rc_iban'), scan: w('tr_scan'), rd: w('tr_rd') } };
-  const inner = '<form class="n31f" id="n31-rc"><label for="n31-rf">' + esc(w('rc_file')) + '</label><input id="n31-rf" type="file" accept="application/pdf,.pdf,text/plain,.txt"><label for="n31-rt">' + esc(w('rc_or')) + '</label><textarea id="n31-rt" rows="8" dir="auto" spellcheck="false"></textarea>' +
-    '<label for="n31-rp">' + esc(w('rc_proj')) + '</label><input id="n31-rp" type="text" maxlength="160"><label style="display:flex;gap:10px;align-items:center;font-weight:400;min-height:44px"><input id="n31-rd" type="checkbox" style="width:auto;min-height:0"> ' + esc(w('rc_dubai')) + '</label>' +
-    '<div class="n31row"><button class="k-btn" type="submit">' + esc(w('rc_go')) + '</button></div></form><p id="n31-s" class="n31s" role="status" aria-live="polite"></p><div id="n31-o"></div>' +
+  const inner = '<form class="n31f" id="n31-rc"><label for="n31-rf">' + esc(w('rc_file')) + TB.kbx_n31e__s.k12 + esc(w('rc_or')) + '</label><textarea id="n31-rt" rows="8" dir="auto" spellcheck="false"></textarea>' +
+    '<label for="n31-rp">' + esc(w('rc_proj')) + TB.kbx_n31e__s.k13 + esc(w('rc_dubai')) + '</label>' +
+    '<div class="n31row"><button class="k-btn" type="submit">' + esc(w('rc_go')) + TB.kbx_n31e__s.k14 +
     '<h2>' + esc(w('rc_law_h')) + '</h2><p class="n31p">' + esc(w('rc_law')) + '</p><p class="n31q" dir="ltr" lang="en">“' + esc(CRC.ae_l8_q) + '”</p><p>' + esc(w('source')) + ': ' + srcA(CRC.ae_l8) + readOn(lang, CRC.ae_l8.d) + '</p>' +
-    '<p class="n31m">' + esc(w('rc_more')) + ' <a href="/tools/account-check/">/tools/account-check/</a> · <a href="/tools/payment-email-check/">/tools/payment-email-check/</a> · <a href="/tools/agent-check/">/tools/agent-check/</a></p>';
+    '<p class="n31m">' + esc(w('rc_more')) + TB.kbx_n31e__s.k15;
   return frame(lang, '/tools/receipt-check/', 'receipt-check', inner, { m: M, me: 'receipt-check', priv: w('rc_priv') });
 }
 async function pvpPage(env, lang, u) {
@@ -371,12 +365,12 @@ async function pvpPage(env, lang, u) {
   const M = { pj, all: S0.all.med, msg: { paid: w('pv_paid'), built: w('pv_built'), gap: w('pv_gap'), gap0: w('pv_gap0'), bad: w('pv_bad'), plan: w('pv_planfrom'), med: w('pv_med'), sum: w('pv_sum'), month: w('pv_month'), aria: w('pv_aria') }, LOC: LOC[lang] };
   const row = (i, p, t, v) => '<div class="n31row n31pr"><input aria-label="' + esc(w('pv_pct')) + ' ' + i + '" type="number" min="0" max="100" step="0.5" value="' + p + '" style="max-width:110px"><select aria-label="' + esc(w('pv_when')) + ' ' + i + '" style="max-width:220px"><option value="s"' + (t === 's' ? ' selected' : '') + '>' + esc(w('pv_t_s')) + '</option><option value="b"' + (t === 'b' ? ' selected' : '') + '>' + esc(w('pv_t_b')) + '</option><option value="m"' + (t === 'm' ? ' selected' : '') + '>' + esc(w('pv_t_m')) + '</option><option value="h"' + (t === 'h' ? ' selected' : '') + '>' + esc(w('pv_t_h')) + '</option></select><input aria-label="' + esc(w('pv_v')) + ' ' + i + '" type="number" min="0" max="120" step="1" value="' + v + '" style="max-width:110px"></div>';
   const inner = (pj ? '<p class="n31c"><b>' + bdi(pj.n) + '</b>' + (pj.plan ? '<br>' + esc(w('pv_planfrom')) + ' <span dir="auto">“' + esc(pj.plan) + '”</span>' : '') + '</p>' : '') +
-    '<form class="n31f" id="n31-pv"><div class="n31row"><label for="n31-ps" style="min-width:12em">' + esc(w('pv_start')) + '</label><input id="n31-ps" type="month" style="max-width:200px"></div><div class="n31row"><label for="n31-ph" style="min-width:12em">' + esc(w('pv_ho')) + '</label><input id="n31-ph" type="month" style="max-width:200px"></div>' +
-    '<div class="n31row"><label for="n31-pd" style="min-width:12em">' + esc(w('pv_delay')) + '</label><input id="n31-pd" type="number" min="0" max="120" step="1" value="0" style="max-width:110px"></div><p class="n31m" id="n31-pdm"></p>' +
+    '<form class="n31f" id="n31-pv"><div class="n31row"><label for="n31-ps" style="min-width:12em">' + esc(w('pv_start')) + TB.kbx_n31e__s.k16 + esc(w('pv_ho')) + '</label><input id="n31-ph" type="month" style="max-width:200px"></div>' +
+    '<div class="n31row"><label for="n31-pd" style="min-width:12em">' + esc(w('pv_delay')) + TB.kbx_n31e__s.k17 +
     '<fieldset style="border:0;padding:0;margin:0"><legend><b>' + esc(w('pv_rows')) + '</b></legend><p class="n31m">' + esc(w('pv_rows_h')) + '</p><div id="n31-rows">' + row(1, 20, 's', 0) + row(2, 30, 'b', 50) + row(3, 20, 'b', 80) + row(4, 30, 'h', 0) + '</div>' +
     '<div class="n31row"><button class="n31b" type="button" id="n31-add">' + esc(w('pv_add')) + '</button></div></fieldset><div class="n31row"><button class="k-btn" type="submit">' + esc(w('pv_go')) + '</button></div></form>' +
-    '<p id="n31-s" class="n31s" role="status" aria-live="polite"></p><div id="n31-o" dir="ltr"></div><h2>' + esc(w('pv_m_h')) + '</h2><ul class="n31p">' + w('pv_m').map(s => '<li>' + esc(s) + '</li>').join('') + '</ul>' +
-    '<p class="n31m"><a href="/tools/payment-risk/">/tools/payment-risk/</a> · <a href="/tools/payment-plan/">/tools/payment-plan/</a></p>';
+    TB.kbx_n31e__s.k18 + esc(w('pv_m_h')) + '</h2><ul class="n31p">' + w('pv_m').map(s => '<li>' + esc(s) + '</li>').join('') + '</ul>' +
+    TB.kbx_n31e__s.k19;
   return frame(lang, '/tools/payment-vs-progress/', 'payment-vs-progress', inner, { m: M, me: 'payment-vs-progress' });
 }
 function appPage(lang) {
@@ -406,8 +400,8 @@ async function satPage(env, lang) {
       '<p><a href="' + P + '/projects/' + o.x.s + '/#space">' + bdi(nameOf(o.x)) + '</a><br><small class="n31m">' + esc(H.mkName(o.x.mk, lang)) + ' · ' + esc(w('sm_n', { n: nf(fr.length, lang), a: ym(first, lang), b: ym(last, lang) })) + (o.ch != null ? ' · ' + esc(w('sm_ch', { c: (o.ch > 0 ? '+' : '') + nf(o.ch, lang) })) : '') + '</small></p></li>'; }).join('');
   const inner = '<div class="n31row"><button class="n31b" type="button" id="n31-pp" aria-pressed="false">' + esc(w('sm_pause')) + '</button><label class="n31m" for="n31-sp">' + esc(w('sm_speed')) + '</label><input id="n31-sp" type="range" min="2" max="12" value="6" style="max-width:180px"></div>' + map +
     '<ul class="n31sg">' + cards + '</ul><h2>' + esc(w('sm_m_h')) + '</h2><ul class="n31p">' + w('sm_m').map(s => '<li>' + esc(s) + '</li>').join('') + '</ul><p class="n31m">' + esc((sd && sd.source && sd.source.attribution) || 'Contains modified Copernicus Sentinel data') + '. <a href="' + esc((sd && sd.source && sd.source.url) || 'https://registry.opendata.aws/sentinel-2-l2a-cogs/') + '" rel="noopener" target="_blank">Sentinel-2 L2A</a> · ' + esc(w('updated', { d: fdate((sd && sd.updated) || '2026-11-08', lang) })) + '</p>' +
-    '<style>.n31map svg{width:100%;height:auto;display:block}.n31map .sea{fill:color-mix(in srgb,var(--k-sea,#155C75) 10%,var(--card,#fff))}.n31map line{stroke:var(--line,#d5d3cc);stroke-width:1}.n31map circle{fill:#C9440E;stroke:var(--card,#fff);stroke-width:1.5}:root[data-theme=dark] .n31map circle{fill:#FF6A2B}.n31map a:focus circle{stroke:var(--ink,#17212B);stroke-width:3}' +
-    '.n31sg{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}.n31sc p{margin:6px 0 0;font-size:.92rem;overflow-wrap:anywhere}.n31tile{position:relative;width:100%;aspect-ratio:1;border-radius:10px;background:#1b2530 no-repeat;background-size:cover;image-rendering:auto}.n31mo{position:absolute;inset-inline-start:6px;bottom:6px;background:rgba(0,0,0,.65);color:#fff;font-size:.75rem;padding:1px 6px;border-radius:6px;font-variant-numeric:tabular-nums}.n31sc:target .n31tile{outline:3px solid var(--hivis,#FF5B14)}</style>';
+    TB.kbx_n31e__s.k20 +
+    TB.kbx_n31e__s.k21;
   return frame(lang, '/satellite/monthly/', 'sm', inner, { me: 'sm', m: { play: w('sm_play') }, crumb: '<a href="/satellite/">' + esc(w('bc_sat')) + '</a>' });
 }
 
@@ -434,17 +428,17 @@ async function newSitesPage(env, lang) {
   const rows = L.map(o => { const y = +o.rg.slice(0, 4), gap = o.fc && y - o.fc >= 2 ? '<small>' + esc(w('nw_gap', { f: o.fc, y })) + '</small>' : '';
     return '<tr><td data-l="' + esc(w('nw_th')[0]) + '"><b dir="ltr">' + esc(o.d) + '</b>' + (o.rgr ? '<small>' + esc(o.rgr) + '</small>' : '') + '</td><td data-l="' + esc(w('nw_th')[1]) + '"><b>' + esc(fdate(o.rg, lang)) + '</b>' + gap + '</td><td data-l="' + esc(w('nw_th')[2]) + '">' + [...o.ps].slice(0, 4).map(([s, n]) => '<a href="' + P + '/projects/' + s + '/">' + bdi(n) + '</a>').join(', ') + (o.ps.size > 4 ? ' +' + (o.ps.size - 4) : '') + (o.devs.size ? '<small>' + esc([...o.devs].slice(0, 2).join(', ')) + '</small>' : '') + '</td></tr>'; }).join('');
   const inner = '<p class="n31p"><b>' + esc(w('nw_sum', { k: nf(L.length, lang), n: nf(total, lang), c: fdate(cut, lang) })) + '</b></p>' +
-    '<p class="n31row"><a class="k-btn k-btn--ghost" href="/api/v1/new-websites.json">' + esc(w('nw_feed')) + '</a><a class="n31b" style="display:inline-flex;align-items:center;text-decoration:none" href="/api/v1/new-websites">JSON</a></p>' +
+    '<p class="n31row"><a class="k-btn k-btn--ghost" href="/api/v1/new-websites.json">' + esc(w('nw_feed')) + TB.kbx_n31e__s.k22 +
     '<div class="n31t n31stack"><table><thead><tr>' + w('nw_th').map(h => '<th scope="col">' + esc(h) + '</th>').join('') + '</tr></thead><tbody>' + rows + '</tbody></table></div>' +
-    '<h2>' + esc(w('nw_m_h')) + '</h2><ul class="n31p">' + w('nw_m').map(s => '<li>' + esc(s) + '</li>').join('') + '</ul><p class="n31m">' + esc(w('updated', { d: fdate(updated || '2026-11-17', lang) })) + ' · <a href="https://rdap.org/" rel="noopener" target="_blank">RDAP</a> · <a href="/data/web-forensics.json">web-forensics.json</a></p>';
+    '<h2>' + esc(w('nw_m_h')) + '</h2><ul class="n31p">' + w('nw_m').map(s => '<li>' + esc(s) + '</li>').join('') + '</ul><p class="n31m">' + esc(w('updated', { d: fdate(updated || '2026-11-17', lang) })) + TB.kbx_n31e__s.k23;
   return frame(lang, '/watch/new-websites/', 'nw', inner, { me: 'nw', noscript: true, crumb: '<a href="/watch/lookalikes/">' + esc(w('bc_watch')) + '</a>' });
 }
 async function newSitesApi(env, feed) {
   const { L, updated, cut } = await newSites(env);
-  if (!feed) return jr({ updated, registered_since: cut, count: L.length, method: 'Developer and project websites of tracked projects whose registrable domain was registered in the last 24 months (registry RDAP, read once per domain and kept). Facts only: a young domain is not a judgement about a company.', licence: 'CC BY 4.0, credit Kolaboro (kolaboro.com)', page: ORIGIN + '/watch/new-websites/',
+  if (!feed) return jr({ updated, registered_since: cut, count: L.length, method: TB.kbx_n31e__s.k24, licence: 'CC BY 4.0, credit Kolaboro (kolaboro.com)', page: ORIGIN + '/watch/new-websites/',
     items: L.map(o => ({ domain: o.d, registered: o.rg, rdap_read: o.rr, registrar: o.rgr, founded_claim: o.fc, projects: [...o.ps].map(([s, n]) => ({ slug: s, name: n, url: ORIGIN + '/projects/' + s + '/' })), developers: [...o.devs] })) });
   return new Response(JSON.stringify({ version: 'https://jsonfeed.org/version/1.1', title: 'Kolaboro: recently registered developer websites', home_page_url: ORIGIN + '/watch/new-websites/', feed_url: ORIGIN + '/api/v1/new-websites.json', language: 'en',
-    description: 'Websites of tracked off-plan projects or developers whose domain was registered in the last 24 months, from registry RDAP data. Facts only.',
+    description: TB.kbx_n31e__s.k25,
     items: L.slice(0, 100).map(o => ({ id: 'kolaboro-new-site-' + o.d + '-' + o.rg, url: ORIGIN + '/watch/new-websites/', title: o.d + ' registered on ' + o.rg, date_published: o.rg + 'T00:00:00Z',
       content_text: o.d + ' (registrar: ' + (o.rgr || 'not published') + ') was registered on ' + o.rg + ' according to the registry RDAP record read on ' + o.rr + '. Linked to: ' + [...o.ps].map(([s, n]) => n).slice(0, 6).join(', ') + '.' + (o.fc ? ' Founding year claimed on the developer page: ' + o.fc + '.' : '') })) }, null, 1),
     { headers: { 'content-type': 'application/feed+json; charset=utf-8', 'cache-control': 'public, max-age=3600', 'access-control-allow-origin': '*' } });
@@ -457,15 +451,15 @@ export async function crBlock(lang, env) {
   let NT = {}; try { const [a, b] = await Promise.all([import('./kbx_buy_notes.js'), import('./kbx_buy_c29.js')]); NT = Object.assign({}, a.NT, b.NT29); } catch (e) {}
   const M = Object.fromEntries(Object.entries(C).map(([cc, L]) => [cc, L.map(i => ({ k: i.k, l: (i.l[lang] || i.l.en), n: NT[i.k] ? (NT[i.k][lang] || NT[i.k].en) : null, rx: i.rx, s: i.s.map(sk => CRC.src[sk]).filter(Boolean) }))]));
   return '<section class="n31crc" id="n31crc" data-m="' + esc(JSON.stringify({ C: M, msg: { found: w('crc_found'), miss: w('crc_miss'), wait: w('crc_wait'), src: w('source'), pick: w('crc_pick') } })) + '"><h2>' + esc(w('crc_h')) + '</h2><p class="n31p">' + esc(w('crc_lead')) + '</p>' +
-    '<label for="n31crc-c"><b>' + esc(w('crc_c')) + '</b></label> <select id="n31crc-c" style="min-height:48px;border-radius:12px;padding:8px"><option value="">' + esc(w('crc_pick')) + '</option>' + Object.keys(C).map(cc => '<option value="' + cc + '">' + esc(country(cc, lang)) + '</option>').join('') + '</select>' +
-    '<div id="n31crc-o" aria-live="polite"></div><p class="n31m">' + esc(w('crc_note')) + '</p></section>' + CSS + script;
+    '<label for="n31crc-c"><b>' + esc(w('crc_c')) + TB.kbx_n31e__s.k26 + esc(w('crc_pick')) + '</option>' + Object.keys(C).map(cc => '<option value="' + cc + '">' + esc(country(cc, lang)) + '</option>').join('') + '</select>' +
+    '<div id="n31crc-o" aria-live="polite"></div><p class="n31m">' + esc(w('crc_note')) + '</p></section>' + TB.kbx_n31e__s.CSS + script;
 }
 
 // ------------------------------------------------------------------------------------------------ MCP helpers (kbx_e.js)
 export async function mcpFind(env, q, lim) {
   await L31(env);
   const { ix, N, hits } = await findProjects(env, q, lim || 10);
-  return { query: q, count: hits.length, results: hits.map(x => Object.assign(brief(ix, N, x, 'en'), { handover_history: ORIGIN + '/api/v1/handover-history/' + x.s })), search_page: ORIGIN + '/tools/handover-history/', rules: 'Named projects only (Sumba projects are never named). Matches on the project name first, then developer and place. Facts only, no verdict.' };
+  return { query: q, count: hits.length, results: hits.map(x => Object.assign(brief(ix, N, x, 'en'), { handover_history: ORIGIN + '/api/v1/handover-history/' + x.s })), search_page: ORIGIN + '/tools/handover-history/', rules: TB.kbx_n31e__s.k27 };
 }
 export async function mcpCert(env, slug, inner) {
   const r = await inner('/api/v1/projects/' + slug + '/certificate');

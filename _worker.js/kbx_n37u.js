@@ -19,6 +19,7 @@
 // Sumba, Eco Beach City and Equinox are left out by the build.
 import * as N from './kbx_named.js';
 import { coName, mkName } from './kbx_hdate.js';
+import { TB } from './kbx_strings.js';
 
 const ORIGIN = 'https://kolaboro.com';
 const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' };
@@ -211,7 +212,7 @@ const nul = s => ({ type: ['string', 'null'], ...s });
 function schemas() {
   if (IX.sch) return IX.sch;
   const F = D.f, reg = { type: 'object', required: ['name', 'url', 'reached_by_our_checker'], additionalProperties: false, properties: { name: { type: 'string', minLength: 1 }, url: nul({ pattern: URX }), reached_by_our_checker: nul({}) } };
-  const rec = { $schema: 'https://json-schema.org/draft/2020-12/schema', $id: ORIGIN + '/data/record.schema.json', title: 'Kolaboro project record (GET /projects/{slug}/record.json)', description: 'The 10 key facts of one project, each with its source, source kind and date, and what is still unknown. Licence CC BY 4.0.', type: 'object',
+  const rec = { $schema: 'https://json-schema.org/draft/2020-12/schema', $id: ORIGIN + '/data/record.schema.json', title: 'Kolaboro project record (GET /projects/{slug}/record.json)', description: TB.kbx_n37u__s.k0, type: 'object',
     required: ['id', 'slug', 'name', 'market', 'area', 'developer', 'page', 'record', 'built', 'licence', 'fields_held', 'fields_total', 'kinds', 'facts', 'unknown'], additionalProperties: false,
     properties: { id: { type: 'string', minLength: 3 }, slug: { type: 'string', pattern: '^[a-z0-9-]{1,90}$' }, name: { type: 'string', minLength: 1 }, market: { type: 'string', minLength: 2 }, area: nul({}), developer: nul({}), page: { type: 'string', pattern: URX }, record: { type: 'string', pattern: URX }, built: nul({ pattern: DRX }), licence: { type: 'string' },
       fields_held: { type: 'integer', minimum: 0, maximum: F.length }, fields_total: { const: F.length }, kinds: { type: 'object', required: KINDS, additionalProperties: false, properties: Object.fromEntries(KINDS.map(k => [k, { type: 'string' }])) },
@@ -256,9 +257,9 @@ async function sha(s) { const b = await crypto.subtle.digest('SHA-256', new Text
 async function recJson2(r) { const o = recObj(r); o.sha256_facts = await sha(canon(o.facts)); return new Response(JSON.stringify(o, null, 1), { headers: { ...JH, 'x-robots-tag': 'noindex', link: '<' + ORIGIN + '/data/record.schema.json>; rel="describedby"' } }); }
 async function fpBlock(l, r) {
   const h = await sha(canon(recObj(r).facts));
-  return '<h2 id="fp">' + esc(t(l, 'fp_h')) + '</h2><p>' + esc(t(l, 'fp_p')) + '</p><p><code style="overflow-wrap:anywhere">' + h + '</code></p><p><button type="button" id="n39-fp" data-h="' + h + '" data-u="/projects/' + r[1] + '/record.json" data-ok="' + esc(t(l, 'fp_ok')) + '" data-no="' + esc(t(l, 'fp_no')) + '" style="min-height:44px;padding:0 16px;border-radius:10px;border:1px solid currentColor;background:transparent;color:inherit;font:inherit;cursor:pointer">' + esc(t(l, 'fp_b')) + '</button> <span id="n39-fpo" role="status" aria-live="polite"></span></p>' +
+  return '<h2 id="fp">' + esc(t(l, 'fp_h')) + '</h2><p>' + esc(t(l, 'fp_p')) + '</p><p><code style="overflow-wrap:anywhere">' + h + '</code></p><p><button type="button" id="n39-fp" data-h="' + h + '" data-u="/projects/' + r[1] + '/record.json" data-ok="' + esc(t(l, 'fp_ok')) + '" data-no="' + esc(t(l, 'fp_no')) + TB.kbx_n37u__s.k1 + esc(t(l, 'fp_b')) + '</button> <span id="n39-fpo" role="status" aria-live="polite"></span></p>' +
     '<p class="k-xs">' + esc(t(l, 'fp_n')) + ' <a href="/data/record.schema.json">record.schema.json</a></p>' +
-    '<script>(function(){var b=document.getElementById("n39-fp"),o=document.getElementById("n39-fpo");function c(v){return Array.isArray(v)?"["+v.map(c).join(",")+"]":v&&typeof v==="object"?"{"+Object.keys(v).sort().map(function(k){return JSON.stringify(k)+":"+c(v[k])}).join(",")+"}":JSON.stringify(v)}b.addEventListener("click",function(){o.textContent="…";fetch(b.dataset.u,{cache:"no-store"}).then(function(r){return r.json()}).then(function(j){return crypto.subtle.digest("SHA-256",new TextEncoder().encode(c(j.facts))).then(function(d){var h=Array.from(new Uint8Array(d)).map(function(x){return x.toString(16).padStart(2,"0")}).join("");o.textContent=(h===b.dataset.h&&h===j.sha256_facts?b.dataset.ok:b.dataset.no)+" "+h.slice(0,16)+"…"})}).catch(function(){o.textContent=b.dataset.no})})})()</script>';
+    TB.kbx_n37u__s.k2;
 }
 async function cond(req, r) {   // ETag from the body, 304 when the client already holds it
   const body = await r.text(), et = '"' + (await sha(body)).slice(0, 32) + '"', h = new Headers(r.headers); h.set('etag', et);
@@ -266,7 +267,7 @@ async function cond(req, r) {   // ETag from the body, 304 when the client alrea
   if (inm.split(',').map(s => s.trim().replace(/^W\//, '')).includes(et)) { h.delete('content-type'); return new Response(null, { status: 304, headers: h }); }
   return new Response(req.method === 'HEAD' ? null : body, { status: r.status, headers: h });
 }
-const N39C = '<style>.n39-f{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:end;margin:12px 0 18px}.n39-f label{display:flex;flex-direction:column;gap:4px;font-size:.88rem;min-width:0;max-width:100%;flex:1 1 150px}.n39-f select,.n39-f input{width:100%;min-height:44px;padding:0 10px;border:1px solid var(--k-line,#D5DCDB);border-radius:10px;background:var(--k-surface,#fff);color:inherit;font:inherit;max-width:100%}.n39-f button{min-height:44px;padding:0 18px;border-radius:10px;border:1px solid currentColor;background:transparent;color:inherit;font:inherit;font-weight:700;cursor:pointer}.n39-u{overflow-wrap:anywhere;font-size:.88rem}.n37 code{white-space:normal;overflow-wrap:anywhere}.n39-k{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:12px 0 20px}.n39-k div{border:1px solid var(--k-line,#D5DCDB);border-radius:12px;padding:12px 14px}.n39-k b{display:block;font-size:1.4rem;font-variant-numeric:tabular-nums}.n39-k span{font-size:.86rem}.n39-l a{display:inline-flex;align-items:center;min-height:44px}</style>';
+/* N39C: n40 k17, in /data/i18n/k17s.json */
 const tw39 = (l, th, rows) => '<div class="n37-tw" tabindex="0" role="region" aria-label="' + esc(t(l, 'tw_l')) + '"><table><thead><tr>' + th.map(k => '<th scope="col">' + esc(t(l, k)) + '</th>').join('') + '</tr></thead><tbody>' + rows.join('') + '</tbody></table></div>';
 const kp39 = (l, a) => '<div class="n39-k">' + a.map(([v, k]) => '<div><b>' + bdi(v) + '</b><span>' + esc(k) + '</span></div>').join('') + '</div>';
 const dLnk = (l, f) => '<a href="' + recU(l, f[1]) + '">' + bdi(f[2]) + '</a>';
@@ -276,15 +277,15 @@ async function validatePage(env, shell, l) {
   const v = validateAll(), P = pre(l);
   let b = kp39(l, [[nf(v.ok, l) + ' / ' + nf(v.n, l), t(l, 'v_k1')], [nf(v.bad.filter(x => x[1].length).length, l), t(l, 'v_k2')], [nf(v.bad.filter(x => x[2].length).length, l), t(l, 'v_k3')]]);
   b += '<p><img src="/data/validate.svg" alt="' + esc(tf(l, 'v_badge', { ok: nf(v.ok, l), n: nf(v.n, l) })) + '" width="196" height="20"></p><p class="k-xs">' + esc(t(l, 'v_emb')) + ' <code style="overflow-wrap:anywhere">&lt;img src="' + ORIGIN + '/data/validate.svg" alt="records valid"&gt;</code></p>';
-  b += '<h2>' + esc(t(l, 'v_h2')) + '</h2><p>' + esc(t(l, 'v_p2')) + '</p><ul class="n39-l"><li><a href="/data/record.schema.json">/data/record.schema.json</a></li><li><a href="/data/changes.schema.json">/data/changes.schema.json</a></li></ul>';
+  b += '<h2>' + esc(t(l, 'v_h2')) + '</h2><p>' + esc(t(l, 'v_p2')) + TB.kbx_n37u__s.k3;
   b += '<h2>' + esc(t(l, 'v_h3')) + '</h2>' + tw39(l, ['v_th_r', 'v_th_n'], RULES.map((k, i) => '<tr><td>' + esc(t(l, k)) + '</td><td class="n">' + nf(v.rc[i], l) + '</td></tr>'));
   b += '<h2 id="fail">' + esc(tf(l, 'v_h4', { n: nf(v.bad.length, l) })) + '</h2>' + (v.bad.length ? tw39(l, ['th_p', 'v_th_e'], v.bad.slice(0, 200).map(([r, e, fx]) => '<tr><th scope="row">' + dLnk(l, r) + '</th><td>' + e.slice(0, 5).map(x => '<code>' + esc(x) + '</code>').join('<br>') + (e.length && fx.length ? '<br>' : '') + fx.map(x => esc(t(l, RULES[x[0]])) + (x[1] ? ' (' + esc(t(l, 'f_' + x[1])) + ')' : '')).join('<br>') + '</td></tr>')) : '<p>' + esc(t(l, 'v_none')) + '</p>');
   b += '<p class="n39-l"><a href="' + P + '/data/query/">' + esc(t(l, 'q_h1')) + '</a>' + DOT + '<a href="' + P + '/data/duplicates/">' + esc(t(l, 'du_h1')) + '</a>' + DOT + '<a href="' + P + '/data/sources/">' + esc(t(l, 'so_h1')) + '</a></p>';
-  return page(shell, l, { path: '/data/validate/', h1: t(l, 'v_h1'), lead: tf(l, 'v_lead', { n: nf(v.n, l) }), body: N39C + b, crumb: [[t(l, 'data'), P + '/data/']] });
+  return page(shell, l, { path: '/data/validate/', h1: t(l, 'v_h1'), lead: tf(l, 'v_lead', { n: nf(v.n, l) }), body: TB.kbx_n37u__s.N39C + b, crumb: [[t(l, 'data'), P + '/data/']] });
 }
 function badgeSvg() {
   const v = validateAll(), a = 'records valid', bt = v.ok.toLocaleString('en-GB') + ' / ' + v.n.toLocaleString('en-GB'), w1 = 92, w2 = 104, c = v.ok === v.n ? '#1F6B3A' : v.ok / v.n >= 0.99 ? '#6A4C00' : '#9A3412';
-  const s = '<svg xmlns="http://www.w3.org/2000/svg" width="' + (w1 + w2) + '" height="20" role="img" aria-label="' + a + ': ' + bt + '"><title>' + a + ': ' + bt + ' (' + D.built + ')</title><rect width="' + w1 + '" height="20" fill="#3A4652"/><rect x="' + w1 + '" width="' + w2 + '" height="20" fill="' + c + '"/><g fill="#fff" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11" text-anchor="middle"><text x="' + w1 / 2 + '" y="14">' + a + '</text><text x="' + (w1 + w2 / 2) + '" y="14">' + bt + '</text></g></svg>';
+  const s = '<svg xmlns="http://www.w3.org/2000/svg" width="' + (w1 + w2) + '" height="20" role="img" aria-label="' + a + ': ' + bt + '"><title>' + a + ': ' + bt + ' (' + D.built + ')</title><rect width="' + w1 + '" height="20" fill="#3A4652"/><rect x="' + w1 + '" width="' + w2 + '" height="20" fill="' + c + TB.kbx_n37u__s.k4 + w1 / 2 + '" y="14">' + a + '</text><text x="' + (w1 + w2 / 2) + '" y="14">' + bt + '</text></g></svg>';
   return new Response(s, { headers: { 'content-type': 'image/svg+xml; charset=utf-8', 'access-control-allow-origin': '*', 'cache-control': 'public, max-age=900' } });
 }
 // query by URL: m (market), dev (developer slug), has / miss (comma-separated fields), kind (at least one fact of this source kind), min (facts held), q (name), sort, limit, offset, format
@@ -312,9 +313,9 @@ async function queryRoute(env, shell, l, u) {
   b += '<p>' + esc(tf(l, 'q_res', { n: nf(rows.length, l), a: nf(Math.min(rows.length, q.offset + 1), l), b: nf(Math.min(rows.length, q.offset + q.limit), l) })) + '</p><p class="n39-u">' + esc(t(l, 'q_api')) + ' <a href="' + esc(api + (api.includes('?') ? '&' : '?') + 'format=json') + '" rel="nofollow">JSON</a> · <a href="' + esc(api + (api.includes('?') ? '&' : '?') + 'format=csv') + '" rel="nofollow">CSV</a><br><code>' + esc(api + (api.includes('?') ? '&' : '?') + 'format=json') + '</code></p>';
   b += tw39(l, ['th_p', 'q_m', 'th_k', 'q_s_r'], part.map(r => '<tr><th scope="row">' + dLnk(l, r) + '</th><td>' + bdi(r[3]) + '</td><td class="n">' + nf(cnt(r), l) + ' / 10</td><td class="n">' + nf(x.rg(r), l) + '</td></tr>'));
   if (rows.length > q.offset + q.limit) { const nu = new URL(u); nu.searchParams.set('offset', q.offset + q.limit); b += '<p class="n39-l"><a href="' + esc(P + '/data/query/' + nu.search) + '" rel="nofollow">' + esc(t(l, 'q_next')) + '</a></p>'; }
-  b += '<h2>' + esc(t(l, 'q_doc')) + '</h2><p>' + esc(t(l, 'q_docp')) + '</p><ul class="n39-l"><li><a href="/data/query/?m=Dubai&amp;has=pn,cp&amp;sort=reg&amp;format=json" rel="nofollow"><code>?m=Dubai&amp;has=pn,cp&amp;sort=reg&amp;format=json</code></a></li><li><a href="' + P + '/data/query/?miss=pn&amp;min=5" rel="nofollow"><code>?miss=pn&amp;min=5</code></a></li><li><a href="/data/query/?kind=reg&amp;m=Kuala%20Lumpur&amp;format=csv" rel="nofollow"><code>?kind=reg&amp;m=Kuala Lumpur&amp;format=csv</code></a></li></ul>';
+  b += '<h2>' + esc(t(l, 'q_doc')) + '</h2><p>' + esc(t(l, 'q_docp')) + TB.kbx_n37u__s.k5 + P + TB.kbx_n37u__s.k6;
   const plain = !u.search;
-  return page(shell, l, { path: '/data/query/', h1: t(l, 'q_h1'), lead: tf(l, 'q_lead', { n: nf(D.n, l) }), body: N39C + b, noindex: !plain, crumb: [[t(l, 'data'), P + '/data/']] });
+  return page(shell, l, { path: '/data/query/', h1: t(l, 'q_h1'), lead: tf(l, 'q_lead', { n: nf(D.n, l) }), body: TB.kbx_n37u__s.N39C + b, noindex: !plain, crumb: [[t(l, 'data'), P + '/data/']] });
 }
 function ndjson(u) {
   const m = String(u.searchParams.get('m') || '').slice(0, 80).trim().toLowerCase(), M = IX.nd || (IX.nd = new Map());
@@ -325,7 +326,7 @@ function changesCsv(u) {
   const g = k => u.searchParams.get(k), q = chFilter({ m: (g('m') || '').slice(0, 80), field: g('field') || '', since: g('since') || '' });
   if (q.err) return new Response(q.err + '\n', { status: 400, headers: { 'content-type': 'text/plain; charset=utf-8' } });
   const K = ['date', 'slug', 'project', 'market', 'developer', 'field', 'label', 'from', 'to', 'months_moved', 'record', 'source_of_current_value'];
-  return new Response(['# Kolaboro: real changes of key facts, built ' + D.built + '. Licence CC BY 4.0, cite Kolaboro. Rule: ' + CH_RULE, K.join(',')].concat(q.rows.map(x => { const o = chRow(x); return K.map(k => csvQ(o[k])).join(','); })).join('\n') + '\n', { headers: CSVH('kolaboro-changes.csv') });
+  return new Response(['# Kolaboro: real changes of key facts, built ' + D.built + '. Licence CC BY 4.0, cite Kolaboro. Rule: ' + TB.kbx_n37u__s.CH_RULE, K.join(',')].concat(q.rows.map(x => { const o = chRow(x); return K.map(k => csvQ(o[k])).join(','); })).join('\n') + '\n', { headers: CSVH('kolaboro-changes.csv') });
 }
 // possible duplicates: same register or permit number in one market, same name in one market, same register page cited for two projects
 const nName = s => String(s).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/\b(the|by|at|residences?|residence|project)\b/g, ' ').replace(/[^a-z0-9Ѐ-ӿ一-鿿]+/g, '');
@@ -341,12 +342,12 @@ function dupPairs() {
 }
 async function dupPage(env, shell, l, u) {
   const P = pre(l), a = dupPairs();
-  if (u && u.searchParams.get('format') === 'json') return new Response(JSON.stringify({ built: D.built, licence: 'CC BY 4.0, cite Kolaboro', rules: { pn: 'same register or permit number in one market', nm: 'same name in one market, ignoring case, accents, spaces and the words the, by, at, residence(s), project', src: 'the same official register page cited for both' }, note: 'A pair is a reason to look, not a finding: phases of one development can share a name or a register number.', total: a.length, pairs: a.map(p => ({ a: p.a[1], b: p.b[1], market: p.a[3], why: p.w.map(w => ({ rule: w[0], value: w[1] })) })) }, null, 1), { headers: JH });
+  if (u && u.searchParams.get('format') === 'json') return new Response(JSON.stringify({ built: D.built, licence: 'CC BY 4.0, cite Kolaboro', rules: { pn: 'same register or permit number in one market', nm: TB.kbx_n37u__s.k7, src: 'the same official register page cited for both' }, note: TB.kbx_n37u__s.k8, total: a.length, pairs: a.map(p => ({ a: p.a[1], b: p.b[1], market: p.a[3], why: p.w.map(w => ({ rule: w[0], value: w[1] })) })) }, null, 1), { headers: JH });
   const byR = k => a.filter(p => p.w.some(w => w[0] === k)).length;
   let b = kp39(l, [[nf(a.length, l), t(l, 'du_k1')], [nf(byR('pn'), l), t(l, 'du_pn')], [nf(byR('nm'), l), t(l, 'du_nm')], [nf(byR('src'), l), t(l, 'du_src')]]) + '<p>' + esc(t(l, 'du_note')) + '</p>';
   b += a.length ? tw39(l, ['du_a', 'du_b', 'q_m', 'du_why'], a.map(p => '<tr><th scope="row">' + dLnk(l, p.a) + '<br><span class="k-xs">' + bdi(p.a[6] || '') + '</span></th><td>' + dLnk(l, p.b) + '<br><span class="k-xs">' + bdi(p.b[6] || '') + '</span></td><td>' + bdi(p.a[3]) + '</td><td>' + p.w.map(w => esc(t(l, 'du_' + w[0])) + ': <bdi class="k-xs" style="overflow-wrap:anywhere">' + esc(String(w[1]).slice(0, 120)) + '</bdi>').join('<br>') + '</td></tr>')) : '<p>' + esc(t(l, 'v_none')) + '</p>';
   b += '<p class="n39-l"><a href="/data/duplicates/?format=json" rel="nofollow">JSON</a>' + DOT + '<a href="' + P + '/data/validate/">' + esc(t(l, 'v_h1')) + '</a>' + DOT + '<a href="' + P + '/data/query/">' + esc(t(l, 'q_h1')) + '</a></p>';
-  return page(shell, l, { path: '/data/duplicates/', h1: t(l, 'du_h1'), lead: tf(l, 'du_lead', { n: nf(D.n, l) }), body: N39C + b, noindex: !!(u && u.search), crumb: [[t(l, 'data'), P + '/data/']] });
+  return page(shell, l, { path: '/data/duplicates/', h1: t(l, 'du_h1'), lead: tf(l, 'du_lead', { n: nf(D.n, l) }), body: TB.kbx_n37u__s.N39C + b, noindex: !!(u && u.search), crumb: [[t(l, 'data'), P + '/data/']] });
 }
 // the weekly source reads (/data/source-health.json) grouped by site; official registers are the sites behind register facts or listed in our register table
 async function srcSites(env) {
@@ -364,16 +365,16 @@ async function srcSites(env) {
 }
 async function srcPage(env, shell, l, u) {
   const P = pre(l), x = await srcSites(env); if (!x) return null;
-  if (u && u.searchParams.get('format') === 'json') return new Response(JSON.stringify({ updated: x.upd, licence: 'CC BY 4.0, cite Kolaboro', method: 'Grouped by site from ' + ORIGIN + '/data/source-health.json (every cited URL read once a week). live = HTTP 200-399; e = no answer; r = robots.txt asks us not to read; n = not read yet.', sites: x.all.map(s => ({ site: s.h, official_register: s.reg, urls: s.n, live: s.ok, http_4xx: s.c4, http_5xx: s.c5, no_answer: s.e, robots: s.r, not_read: s.nr, text_changed: s.ch, last_read: s.last || null, citations: s.cites })) }, null, 1), { headers: JH });
+  if (u && u.searchParams.get('format') === 'json') return new Response(JSON.stringify({ updated: x.upd, licence: 'CC BY 4.0, cite Kolaboro', method: 'Grouped by site from ' + ORIGIN + TB.kbx_n37u__s.k9, sites: x.all.map(s => ({ site: s.h, official_register: s.reg, urls: s.n, live: s.ok, http_4xx: s.c4, http_5xx: s.c5, no_answer: s.e, robots: s.r, not_read: s.nr, text_changed: s.ch, last_read: s.last || null, citations: s.cites })) }, null, 1), { headers: JH });
   const row = s => '<tr><th scope="row" style="overflow-wrap:anywhere">' + bdi(s.h) + '</th><td class="n">' + nf(s.n, l) + '</td><td class="n">' + bdi(nf(share(s.ok, s.n - s.r - s.nr || 1), l) + '%') + '</td><td class="n">' + nf(s.c4 + s.c5, l) + '</td><td class="n">' + nf(s.e, l) + '</td><td class="n">' + nf(s.r, l) + '</td><td class="n">' + esc(fd(s.last, l)) + '</td></tr>', TH = ['so_site', 'so_urls', 'so_live', 'so_err', 'so_e', 'so_r', 'so_last'];
   const live = x.all.reduce((a, s) => a + s.ok, 0);
   let b = kp39(l, [[nf(x.all.length, l), t(l, 'so_k1')], [nf(x.reg.length, l), t(l, 'so_k2')], [nf(x.n, l), t(l, 'so_k3')], [nf(share(live, x.n), l) + '%', t(l, 'so_k4')]]);
   b += '<h2 id="registers">' + esc(t(l, 'so_h2')) + '</h2><p>' + esc(t(l, 'so_p2')) + '</p>' + tw39(l, TH, x.reg.map(row));
   b += '<h2 id="sites">' + esc(tf(l, 'so_h3', { n: nf(Math.min(80, x.all.length), l) })) + '</h2>' + tw39(l, TH, x.all.slice(0, 80).map(row));
   b += '<p class="k-xs">' + esc(t(l, 'so_note')) + '</p><p class="n39-l"><a href="/sources/health/">/sources/health/</a>' + DOT + '<a href="/data/sources/?format=json" rel="nofollow">JSON</a>' + DOT + '<a href="' + P + '/registers/">/registers/</a></p>';
-  return page(shell, l, { path: '/data/sources/', h1: t(l, 'so_h1'), lead: tf(l, 'so_lead', { d: fd(x.upd, l) }), body: N39C + b, noindex: !!(u && u.search), crumb: [[t(l, 'data'), P + '/data/']] });
+  return page(shell, l, { path: '/data/sources/', h1: t(l, 'so_h1'), lead: tf(l, 'so_lead', { d: fd(x.upd, l) }), body: TB.kbx_n37u__s.N39C + b, noindex: !!(u && u.search), crumb: [[t(l, 'data'), P + '/data/']] });
 }
-const n39Links = l => { const P = pre(l); return N39C + '<p class="n37-in n39-l"' + dir(l) + '>' + [['validate/', 'v_h1'], ['query/', 'q_h1'], ['duplicates/', 'du_h1'], ['sources/', 'so_h1']].map(([p, k]) => '<a href="' + P + '/data/' + p + '">' + esc(t(l, k)) + '</a>').join(DOT) + DOT + '<a href="/data/records.ndjson">records.ndjson</a>' + DOT + '<a href="/data/changes.csv">changes.csv</a>' + DOT + '<a href="/data/record.schema.json">JSON Schema</a></p>'; };
+const n39Links = l => { const P = pre(l); return TB.kbx_n37u__s.N39C + '<p class="n37-in n39-l"' + dir(l) + '>' + [['validate/', 'v_h1'], ['query/', 'q_h1'], ['duplicates/', 'du_h1'], ['sources/', 'so_h1']].map(([p, k]) => '<a href="' + P + '/data/' + p + '">' + esc(t(l, k)) + '</a>').join(DOT) + DOT + '<a href="/data/records.ndjson">records.ndjson</a>' + DOT + '<a href="/data/changes.csv">changes.csv</a>' + DOT + '<a href="/data/record.schema.json">JSON Schema</a></p>'; };
 
 // r3u (round 3): facts on record per market (/m/<market>/) and per developer (/developers/<slug>/), live numbers in the home hero,
 // /<lang>/data/ (open data in 7 more languages), and errPage() used by index.js when a page throws twice
@@ -407,8 +408,7 @@ function mkDash0(l, m) {
   const fut = [...yr.values()].reduce((a, x) => a + x, 0), keys = [String(Y0), String(Y0 + 1), String(Y0 + 2), 'l'], mx = Math.max(1, ...keys.map(x => yr.get(x) || 0));
   const pc = (a, z) => z ? bdi(nf(share(a, z), l) + '%') : '-';
   const tile = (h, v, sub) => '<div class="d40-t"><p class="d40-l">' + esc(h) + '</p><p class="d40-v">' + v + '</p><p class="d40-s">' + sub + '</p></div>';
-  return '<style>.d40{margin:14px 0 18px}.d40 h2{font-size:1.1rem;margin:0 0 8px}.d40-g{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));gap:10px}.d40-t{border:1px solid var(--k-line,#D5DCDB);border-radius:12px;padding:12px 14px;background:var(--k-sunken,transparent)}.d40-t p{margin:0}.d40-l{font-size:.85rem;color:var(--k-muted,#5f5c55)}.d40-v{font-size:1.6rem;font-weight:700;font-variant-numeric:tabular-nums;line-height:1.25}.d40-s{font-size:.85rem;color:var(--k-muted,#5f5c55)}.d40-b{list-style:none;padding:0;margin:4px 0 0;font-size:.85rem}.d40-b li{display:grid;grid-template-columns:3.6em 1fr 3em;gap:6px;align-items:center}.d40-b i{display:block;height:8px;border-radius:4px;background:var(--k-sea,#0f766e)}.d40-f{font-size:.82rem;color:var(--k-muted,#5f5c55);margin:8px 0 0}.d40-f a{display:inline-block;padding:6px 0}</style>' +
-    '<section class="d40" id="dash"' + dir(l) + ' aria-labelledby="d40-h"><h2 id="d40-h">' + esc(tf(l, 'd40_h', { m: mkName(m, l) })) + '</h2><div class="d40-g">' +
+  return TB.kbx_n37u__s.k10 + dir(l) + ' aria-labelledby="d40-h"><h2 id="d40-h">' + esc(tf(l, 'd40_h', { m: mkName(m, l) })) + '</h2><div class="d40-g">' +
     tile(t(l, 'd40_dl'), pc(past, dated), esc(tf(l, 'd40_ds', { a: nf(past, l), n: nf(dated, l) }))) +
     tile(t(l, 'd40_pl'), pc(pn, n), esc(tf(l, 'd40_ps', { a: nf(pn, l), n: nf(n, l) }))) +
     tile(t(l, 'd40_rl'), pc(rg, n), esc(tf(l, 'd40_rs', { a: nf(rg, l), n: nf(n, l) }))) +
@@ -459,32 +459,32 @@ function cgBox(l, p) {
     if (bl & (1 << i)) A.push('<a href="' + pre(l) + '/countries/' + m[1] + '/' + s + '">' + lab + '</a>'); else if (l !== 'en' && (be & (1 << i))) A.push('<a href="/countries/' + m[1] + '/' + s + '" hreflang="en">' + lab + '</a>' + en); });
   for (const [s, n, loc] of c.m) if (!mm || s !== mm[1]) A.push(l === 'en' || loc ? '<a href="' + pre(l) + '/m/' + s + '/">' + esc(tf(l, 'cg_m', { m: mkName(n, l) })) + '</a>' : '<a href="/m/' + s + '/" hreflang="en">' + esc(tf(l, 'cg_m', { m: mkName(n, l) })) + '</a>' + en);
   if (A.length < 2) return '';
-  return '<nav class="wrap" id="n40-cg" aria-labelledby="n40-cg-h"' + dir(l) + '><div style="border:1px solid var(--line,#d9d9d9);border-radius:12px;padding:14px 16px;margin:24px 0"><h2 id="n40-cg-h" style="font-size:1.05rem;margin:0 0 6px">' + esc(t(l, 'cg_h')) + '</h2><ul style="margin:0;padding-inline-start:20px;line-height:1.9">' + A.map(a => '<li>' + a + '</li>').join('') + '</ul></div></nav>';
+  return '<nav class="wrap" id="n40-cg" aria-labelledby="n40-cg-h"' + dir(l) + TB.kbx_n37u__s.k11 + esc(t(l, 'cg_h')) + '</h2><ul style="margin:0;padding-inline-start:20px;line-height:1.9">' + A.map(a => '<li>' + a + '</li>').join('') + '</ul></div></nav>';
 }
 // n40 k11 (R01-41): "is this project late?" box on the home page and /check/. The browser matches the name or link against the public
 // bulk index (/api/x/bulkix: handover on record, moves, completion, register entry), so nothing typed is sent and no new endpoint exists.
 const LT41 = ['h', 'p', 'l', 'b', 'ld', 'er', 'nf', 'mn', 'mx', 'ho', 'nho', 'mv', 'mvn', 'late', 'late1', 'okmv', 'ok', 'done', 'unk', 'rg', 'nrg', 'pn', 'y', 'n', 'open', 'src'];
 function lateBox(l, nc) {
   const S = {}; for (const k of LT41) S[k] = t(l, 'lt_' + k + '41'); S.pre = pre(l); S.loc = LOC[l] || 'en-GB';
-  return '<section class="wrap" id="n40-late" aria-labelledby="n40-late-h"' + dir(l) + '><div class="n40-lt"><h2 id="n40-late-h">' + esc(S.h) + '</h2><p>' + esc(S.p) + '</p><form id="n40-late-f" role="search" novalidate><label for="n40-late-q">' + esc(S.l) + '</label><div class="n40-lt-r"><input id="n40-late-q" name="q" type="search" autocomplete="off" spellcheck="false" minlength="2" maxlength="300" required><button type="submit" class="btn btn-hi">' + esc(S.b) + '</button></div></form><div id="n40-late-o" aria-live="polite"></div></div>' +
+  return '<section class="wrap" id="n40-late" aria-labelledby="n40-late-h"' + dir(l) + '><div class="n40-lt"><h2 id="n40-late-h">' + esc(S.h) + '</h2><p>' + esc(S.p) + '</p><form id="n40-late-f" role="search" novalidate><label for="n40-late-q">' + esc(S.l) + TB.kbx_n37u__s.k12 + esc(S.b) + '</button></div></form><div id="n40-late-o" aria-live="polite"></div></div>' +
     '<script type="application/json" id="n40-late-s">' + JSON.stringify(S).replace(/</g, '\\u003c') + '</script><script src="/k/late.js?v=k11b" defer' + (nc ? ' nonce="' + nc + '"' : '') + '></script>' +
-    '<style>.n40-lt{border:1px solid var(--line,#d9d9d9);border-radius:12px;padding:16px;margin:24px 0;background:var(--card,transparent)}.n40-lt h2{font-size:1.15rem;margin:0 0 6px}.n40-lt p{margin:0 0 10px}.n40-lt label{display:block;font-weight:600;margin:0 0 6px}.n40-lt-r{display:flex;gap:8px;flex-wrap:wrap}.n40-lt-r input{flex:1 1 220px;min-height:44px;padding:8px 12px;border:1px solid var(--line,#bbb);border-radius:10px;font:inherit;background:var(--bg,#fff);color:inherit}.n40-lt-r button{min-height:44px}#n40-late-o{margin-top:12px}#n40-late-o ul{margin:6px 0;padding-inline-start:20px;line-height:1.8}#n40-late-o .v{font-weight:700;margin:0 0 6px}#n40-late-o .v.late{color:var(--k-red,#b42318)}#n40-late-o .v.mv{color:var(--k-amber,#8a5a00)}#n40-late-o .v.ok{color:var(--k-green,#1a7f37)}#n40-late-o button.lk{background:none;border:0;padding:4px 0;color:var(--k-sea,#155C75);text-decoration:underline;cursor:pointer;font:inherit;min-height:32px;text-align:start}</style></section>';
+    TB.kbx_n37u__s.k13;
 }
 // n40 k13 (R07-29): home page country hub, the 20 countries with the most tracked projects as plain text links (list ch20 in /data/n37u-i18n.json)
 function chBox(l) {
   const L = (T && T.ch20) || [], cg = (T && T.cg26) || {}, cn = c => { try { return coName(c, l) || c; } catch (e) { return c; } };
   const A = L.map(([s, n]) => { const ok = l === 'en' || ((cg[s] && cg[s].p && cg[s].p[l]) || 0) & 1; return '<li><a href="' + (ok ? pre(l) : '') + '/countries/' + s + '/"' + (ok ? '' : ' hreflang="en"') + '>' + esc(cn(n)) + '</a></li>'; });
   if (A.length < 5) return '';
-  return '<section class="wrap" id="n40-ch" aria-labelledby="n40-ch-h"' + dir(l) + '><style>#n40-ch{margin:28px auto}#n40-ch ul{list-style:none;margin:10px 0 8px;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:2px 16px}#n40-ch li a{display:inline-block;padding:6px 0;min-height:24px}#n40-ch p{margin:0;color:var(--k-muted,#56636F);max-width:70ch}</style><h2 id="n40-ch-h">' + esc(t(l, 'ch_h')) + '</h2><p>' + esc(t(l, 'ch_p')) + '</p><ul>' + A.join('') + '</ul><p><a href="' + pre(l) + '/countries/">' + esc(t(l, 'ch_a')) + '</a></p></section>';
+  return '<section class="wrap" id="n40-ch" aria-labelledby="n40-ch-h"' + dir(l) + TB.kbx_n37u__s.k14 + esc(t(l, 'ch_h')) + '</h2><p>' + esc(t(l, 'ch_p')) + '</p><ul>' + A.join('') + '</ul><p><a href="' + pre(l) + '/countries/">' + esc(t(l, 'ch_a')) + '</a></p></section>';
 }
 export async function foot(u, env, r) {
   const l = (/^\/(es|de|fr|nl|ru|zh|ar)\//.exec(u.pathname) || [])[1] || 'en'; if (!T) T = await file(env, '/data/n37u-i18n.json'); if (!T) return r;
-  const zh = l === 'zh' ? '<style id="n40-cjk">:root{--k-font:Archivo,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC","Noto Sans SC","Source Han Sans SC",system-ui,sans-serif}body{font-synthesis-weight:none;font-synthesis-style:none}input,button,select,textarea{font-family:inherit}</style>' : '';   // n40 R02-45: one CJK stack for every element, no faux bold or italic
+  const zh = l === 'zh' ? TB.kbx_n37u__s.k15 : '';   // n40 R02-45: one CJK stack for every element, no faux bold or italic
   const nc = ((r.headers.get('content-security-policy') || '').match(/'nonce-([^']+)'/) || [])[1], fl = '<script src="/k/fl.js?v=n40k2b" defer' + (nc ? ' nonce="' + nc + '"' : '') + '></script>';   // n40 R02-47: form errors linked to their fields (/k/fl.js)
   const lt = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:check\/)?$/.test(u.pathname) ? lateBox(l, nc) : '', ltSel = /check\/$/.test(u.pathname) ? '#analyze' : '#hp-band';
   return new HTMLRewriter().on('head', { element(e) { if (zh) e.append(zh, { html: true }); } }).on('body', { element(e) { e.append(fl, { html: true }); } }).on(ltSel, { element(e) { if (lt) e.after(lt, { html: true }); } })
     .on('#n40-meth', { element(e) { e.remove(); } })   // n40 k12: translated rankings arrived with the English box already in them; drop it, the box in the page language is appended below
-    .on('main', { element(e) { const cg = cgBox(l, u.pathname); if (cg) e.append(cg, { html: true }); if (/^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?$/.test(u.pathname)) { const ch = chBox(l); if (ch) e.append(ch, { html: true }); } if (/^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?rankings\//.test(u.pathname)) e.append('<section class="wrap" id="n40-meth"' + dir(l) + '><div style="border:1px solid var(--line,#d9d9d9);border-radius:12px;padding:14px 16px;margin:24px 0"><h2 style="font-size:1.05rem;margin:0 0 6px">' + esc(t(l, 'mt_h')) + '</h2><p style="margin:0">' + esc(t(l, 'mt_p')) + ' <a href="' + pre(l) + '/how-we-score/">' + esc(t(l, 'mt_a')) + '</a></p></div></section>', { html: true }); } }).transform(r);   // n40 R02-40: method box on every rankings page
+    .on('main', { element(e) { const cg = cgBox(l, u.pathname); if (cg) e.append(cg, { html: true }); if (/^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?$/.test(u.pathname)) { const ch = chBox(l); if (ch) e.append(ch, { html: true }); } if (/^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?rankings\//.test(u.pathname)) e.append('<section class="wrap" id="n40-meth"' + dir(l) + TB.kbx_n37u__s.k16 + esc(t(l, 'mt_h')) + '</h2><p style="margin:0">' + esc(t(l, 'mt_p')) + ' <a href="' + pre(l) + '/how-we-score/">' + esc(t(l, 'mt_a')) + '</a></p></div></section>', { html: true }); } }).transform(r);   // n40 R02-40: method box on every rankings page
 }
 let STATS = null;
 async function stats(env) {
@@ -496,7 +496,7 @@ async function stats(env) {
 async function liveLine(l, env) {
   const s = await stats(env); if (!s) return '';
   const tx = tf(l, 'live_p', { p: '\u0001projects\u0002' + nf(s.projects, l) + '\u0003', s: '\u0001sources\u0002' + nf(s.sources, l) + '\u0003', g: nf(IX.regs, l), f: nf(IX.src, l) });
-  return '<style>.n37-live{margin:10px 0 0;font-size:.95rem;line-height:1.5;max-width:640px}.n37-live a{font-weight:700}</style><p class="n37-live" id="n37-live"' + dir(l) + '>' +
+  return TB.kbx_n37u__s.k17 + dir(l) + '>' +
     esc(tx).replace(/\u0001(\w+)\u0002([^\u0003]*)\u0003/g, (m, k, v) => '<b data-db="' + k + '">' + v + '</b>') + ' <a href="' + pre(l) + '/data/gaps/">' + esc(t(l, 'live_l')) + '</a></p>';
 }
 // n38 d4: home page. The first screen keeps one short proof line; the numbers that used to sit in two dense paragraphs move to a
@@ -562,9 +562,9 @@ async function slugsJson(env, ms) {
 export async function errPage(u) {
   const m = /^\/(es|de|fr|nl|ru|zh|ar)\//.exec(u.pathname), l = m ? m[1] : 'en';
   const g = k => (T && T[l] && T[l][k]) || ({ err_h: 'This page did not load', err_p: 'Our server could not build it just now. It usually works again within seconds.', err_a: 'Try again', home: 'Home' })[k];
-  const html = '<!doctype html><html lang="' + l + '"' + dir(l) + '><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>' + esc(g('err_h')) + ' | Kolaboro</title>' +
-    '<style>body{margin:0;font:16px/1.6 system-ui,sans-serif;background:#F6F4EF;color:#17212B}main{max-width:560px;margin:12vh auto;padding:0 16px}a{color:#155C75;font-weight:700}@media (prefers-color-scheme:dark){body{background:#11181F;color:#E8ECEF}a{color:#7CC7E0}}</style></head>' +
-    '<body><main><h1>' + esc(g('err_h')) + '</h1><p>' + esc(g('err_p')) + '</p><p><a href="' + esc(u.pathname) + '">' + esc(g('err_a')) + '</a><span class="n37-dot" aria-hidden="true"> · </span><a href="' + pre(l) + '/">' + esc(g('home')) + '</a><span class="n37-dot" aria-hidden="true"> · </span><a href="/engineering/status/">/engineering/status/</a></p></main></body></html>';
+  const html = '<!doctype html><html lang="' + l + '"' + dir(l) + TB.kbx_n37u__s.k18 + esc(g('err_h')) + ' | Kolaboro</title>' +
+    TB.kbx_n37u__s.k19 +
+    '<body><main><h1>' + esc(g('err_h')) + '</h1><p>' + esc(g('err_p')) + '</p><p><a href="' + esc(u.pathname) + '">' + esc(g('err_a')) + '</a><span class="n37-dot" aria-hidden="true"> · </span><a href="' + pre(l) + '/">' + esc(g('home')) + TB.kbx_n37u__s.k20;
   return new Response(html, { status: 503, headers: { 'content-type': 'text/html; charset=utf-8', 'retry-after': '5', 'cache-control': 'no-store', 'x-kb-fallback': '1' } });
 }
 
@@ -618,8 +618,8 @@ async function changesPage(env, shell, l, mq) {
   b += '<div class="n37-tw" tabindex="0" role="region" aria-label="' + esc(t(l, 'tw_l')) + '"><table><thead><tr><th scope="col">' + esc(t(l, 'tl_d')) + '</th><th scope="col">' + esc(t(l, 'th_p')) + '</th><th scope="col">' + esc(t(l, 'ch_mk')) + '</th><th scope="col">' + esc(t(l, 'th_f')) + '</th><th scope="col">' + esc(t(l, 'ch_from')) + '</th><th scope="col">' + esc(t(l, 'ch_to')) + '</th></tr></thead><tbody>' +
     rows.map(([r, x]) => '<tr><td class="n">' + esc(fd(x.d, l)) + '</td><th scope="row"><a href="' + recU(l, r[1]) + '#timeline">' + bdi(r[2]) + '</a></th><td>' + bdi(r[3]) + '</td><td>' + fname(l, x.f) + '</td><td class="n37-v">' + bdi(tv(x.p, l, 90)) + '</td><td class="n37-v">' + bdi(tv(x.v, l, 90)) + '</td></tr>').join('') + '</tbody></table></div>';
   b += '<p class="k-xs">' + esc(t(l, 'tl_note')) + ' <a href="/data/snapshots/index.json">' + esc(t(l, 'tl_snap')) + '</a><span class="n37-dot" aria-hidden="true"> · </span><a href="/data/n37u-tl.json">' + esc(t(l, 'dl')) + '</a><span class="n37-dot" aria-hidden="true"> · </span><a href="' + P + '/data/gaps/">' + esc(t(l, 'gp_link')) + '</a></p>';
-  b = '<p class="n37-np"><a href="' + P + '/data/changes/week/">' + esc(t(l, 'wk_h1')) + '</a><span class="n37-dot" aria-hidden="true"> · </span><a href="/data/changes/feed.atom' + (mk ? '?m=' + encodeURIComponent(mk) : '') + '" type="application/atom+xml">' + esc(t(l, 'fd_l')) + '</a><span class="n37-dot" aria-hidden="true"> · </span><a href="/data/changes.json' + (mk ? '?m=' + encodeURIComponent(mk) : '') + '" type="application/json">JSON</a><span class="n37-dot" aria-hidden="true"> · </span><a href="/docs/api/#key-facts">API</a></p>' + b;   // r6u
-  const res = await page(shell, l, { path: '/data/changes/', h1: t(l, 'ch_h1'), lead: t(l, 'ch_lead'), body: b, noindex: !!mk, head: FEEDL, crumb: [[t(l, 'data'), P + '/data/']] });
+  b = '<p class="n37-np"><a href="' + P + '/data/changes/week/">' + esc(t(l, 'wk_h1')) + '</a><span class="n37-dot" aria-hidden="true"> · </span><a href="/data/changes/feed.atom' + (mk ? '?m=' + encodeURIComponent(mk) : '') + '" type="application/atom+xml">' + esc(t(l, 'fd_l')) + '</a><span class="n37-dot" aria-hidden="true"> · </span><a href="/data/changes.json' + (mk ? '?m=' + encodeURIComponent(mk) : '') + TB.kbx_n37u__s.k21 + b;   // r6u
+  const res = await page(shell, l, { path: '/data/changes/', h1: t(l, 'ch_h1'), lead: t(l, 'ch_lead'), body: b, noindex: !!mk, head: TB.kbx_n37u__s.FEEDL, crumb: [[t(l, 'data'), P + '/data/']] });
   return res;
 }
 // r6u: handover dates moved, per developer, from the daily copies (same change rule as the timeline). Months: a quarter counts as
@@ -671,10 +671,10 @@ async function weekPage(env, shell, l) {
       rows.map(([r, x]) => '<tr><td class="n">' + esc(fd(x.d, l)) + '</td><th scope="row"><a href="' + recU(l, r[1]) + '#timeline">' + bdi(r[2]) + '</a></th><td>' + fname(l, x.f) + (x.f === 'ho' ? ' <span class="k-xs">(' + esc(byM(l, (mIdx(x.v) != null && mIdx(x.p) != null) ? mIdx(x.v) - mIdx(x.p) : null)) + ')</span>' : '') + '</td><td class="n37-v">' + bdi(tv(x.p, l, 90)) + '</td><td class="n37-v">' + bdi(tv(x.v, l, 90)) + '</td></tr>').join('') + '</tbody></table></div>' +
       '<p><a href="' + P + '/data/changes/?m=' + encodeURIComponent(m) + '">' + esc(tf(l, 'wk_all', { m })) + '</a><span class="n37-dot" aria-hidden="true"> · </span><a href="/data/changes/feed.atom?m=' + encodeURIComponent(m) + '" type="application/atom+xml">' + esc(t(l, 'fd_l')) + '</a></p>';
   }
-  b += '<p class="k-xs">' + esc(t(l, 'tl_note')) + ' <a href="' + P + '/data/changes/">' + esc(t(l, 'ch_h1')) + '</a><span class="n37-dot" aria-hidden="true"> · </span><a href="/data/changes/feed.atom" type="application/atom+xml">' + esc(t(l, 'fd_l')) + '</a><span class="n37-dot" aria-hidden="true"> · </span><a href="/data/changes/week.json" type="application/json">JSON</a><span class="n37-dot" aria-hidden="true"> · </span><a href="/data/n37u-tl.json">' + esc(t(l, 'dl')) + '</a></p>';
-  return page(shell, l, { path: '/data/changes/week/', h1: t(l, 'wk_h1'), lead: t(l, 'wk_lead'), body: b, head: FEEDL, crumb: [[t(l, 'data'), P + '/data/'], [t(l, 'ch_h1'), P + '/data/changes/']] });
+  b += '<p class="k-xs">' + esc(t(l, 'tl_note')) + ' <a href="' + P + '/data/changes/">' + esc(t(l, 'ch_h1')) + TB.kbx_n37u__s.k22 + esc(t(l, 'fd_l')) + TB.kbx_n37u__s.k23 + esc(t(l, 'dl')) + '</a></p>';
+  return page(shell, l, { path: '/data/changes/week/', h1: t(l, 'wk_h1'), lead: t(l, 'wk_lead'), body: b, head: TB.kbx_n37u__s.FEEDL, crumb: [[t(l, 'data'), P + '/data/'], [t(l, 'ch_h1'), P + '/data/changes/']] });
 }
-const FEEDL = '<link rel="alternate" type="application/atom+xml" title="Kolaboro: project fact changes" href="/data/changes/feed.atom">';
+/* FEEDL: n40 k17, in /data/i18n/k17s.json */
 const xe = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 function feedAtom(mq) {   // r6u: every real change of a key fact (newest 100), one market with ?m=
   const all = allChanges(), mk = mq, rows = (mk ? all.filter(x => x[0][3] === mk) : all).slice(0, 100);
@@ -698,7 +698,7 @@ const ITEMS = [['s1', '/projects/emaar-golf-vale/record/#fields'], ['s2', '/proj
 const li37 = l => x => '<li><a href="' + (x[2] || /\.(csv|json|atom)$|^\/docs\/|^\/data\/#|^\/(es|fr|de|ru|zh|ar|nl)\//.test(x[1]) ? '' : pre(l)) + x[1] + '">' + esc(t(l, x[0] + '_t')) + '</a>: ' + esc(t(l, x[0] + '_s')) + '</li>';
 const shipX = (d, l) => { const I = (T && T['items' + d]) || []; return I.length ? '<section class="wrap" id="shipped-2026-11-' + d + '"' + dir(l) + '><h2>' + esc(t(l, 'sh' + d + '_h')) + '</h2><ul>' + I.map(li37(l)).join('') + '</ul></section>' : ''; };
 const shipped = l => shipX(26, l) + shipX(25, l) + '<section class="wrap" id="shipped-2026-11-23"' + dir(l) + '><h2>' + esc(t(l, 'sh_h')) + '</h2><p>' + esc(t(l, 'sh_p')) + '</p><ul>' + ITEMS.map(x => '<li><a href="' + (/\.(csv|json|atom)$|^\/docs\/|^\/data\/#|^\/(es|fr|de|ru|zh|ar|nl)\//.test(x[1]) ? '' : pre(l)) + x[1] + '">' + esc(t(l, x[0] + '_t')) + '</a>: ' + esc(t(l, x[0] + '_s')) + '</li>').join('') + '</ul></section>';
-const STY = '<style>.n37-in{margin:14px 0 0;padding:12px 16px;border:1px solid var(--k-line,var(--line,#d5d3cc));border-radius:14px;line-height:1.55}.n37-in a{font-weight:700}</style>';
+/* STY: n40 k17, in /data/i18n/k17s.json */
 
 // r7u (round 7): the key-fact changes as JSON (GET /data/changes.json, GET /data/changes/week.json), two MCP tools answered here
 // (get_project_record, list_fact_changes; listed in kbx_e.js) and /[l/]data/how-we-verify/ (the method, with live numbers)
@@ -709,7 +709,7 @@ function chRow([r, x]) {
   if (x.f === 'ho') { const a = mIdx(x.p), b = mIdx(x.v); if (a != null && b != null) o.months_moved = b - a; }
   return o;
 }
-const CH_RULE = 'A change is a key fact whose value moved between two of our daily copies of the record (or between the last copy and today). The same fact restated more precisely (2027-Q2 to 20 Apr 2027, December 2026 to 31 Dec 2026) is not counted. A quarter counts as its last month and a year alone as December when months_moved is computed.';
+/* CH_RULE: n40 k17, in /data/i18n/k17s.json */
 function chFilter(q) {   // q: { m, field, since, days, limit, offset }
   let rows = allChanges();
   if (q.m) { const k = String(q.m).trim().toLowerCase(); rows = rows.filter(x => x[0][3].toLowerCase() === k); }
@@ -724,14 +724,14 @@ function changesJson(u) {
   const g = k => u.searchParams.get(k), lim = Math.min(1000, Math.max(1, parseInt(g('limit') || '200', 10) || 200)), off = Math.min(100000, Math.max(0, parseInt(g('offset') || '0', 10) || 0));
   const q = chFilter({ m: (g('m') || '').slice(0, 80), field: g('field') || '', since: g('since') || '' });
   if (q.err) return new Response(JSON.stringify({ error: q.err }), { status: 400, headers: JH });
-  const o = { built: D.built, licence: 'CC BY 4.0, cite Kolaboro', rule: CH_RULE, copies_from: TL && TL.days && TL.days.length ? TL.days[0][0] : null, filters: { m: g('m') || null, field: g('field') || null, since: q.since }, total: q.rows.length, offset: off, limit: lim,
+  const o = { built: D.built, licence: 'CC BY 4.0, cite Kolaboro', rule: TB.kbx_n37u__s.CH_RULE, copies_from: TL && TL.days && TL.days.length ? TL.days[0][0] : null, filters: { m: g('m') || null, field: g('field') || null, since: q.since }, total: q.rows.length, offset: off, limit: lim,
     changes: q.rows.slice(off, off + lim).map(chRow), page: ORIGIN + '/data/changes/', feed: ORIGIN + '/data/changes/feed.atom', week: ORIGIN + '/data/changes/week.json' };
   return new Response(JSON.stringify(o, null, 1), { headers: { ...JH, link: '<' + ORIGIN + '/data/changes.schema.json>; rel="describedby"' } });
 }
 function weekObj() {
   const all = allChanges(), z = Date.parse(D.built + 'T00:00:00Z'), a = isoD(z - 6 * DAY), a0 = isoD(z - 13 * DAY), wk = all.filter(x => x[1].d >= a), G = new Map();
   for (const x of wk) (G.get(x[0][3]) || G.set(x[0][3], []).get(x[0][3])).push(x);
-  return { built: D.built, licence: 'CC BY 4.0, cite Kolaboro', rule: CH_RULE, from: a, to: D.built, changes_count: wk.length, projects: new Set(wk.map(x => x[0])).size,
+  return { built: D.built, licence: 'CC BY 4.0, cite Kolaboro', rule: TB.kbx_n37u__s.CH_RULE, from: a, to: D.built, changes_count: wk.length, projects: new Set(wk.map(x => x[0])).size,
     previous_week: { from: a0, to: isoD(z - 7 * DAY), changes_count: all.filter(x => x[1].d >= a0 && x[1].d < a).length },
     markets: [...G.entries()].sort((m, n) => n[1].length - m[1].length || m[0].localeCompare(n[0])).map(([m, rows]) => ({ market: m, changes: rows.length, projects: new Set(rows.map(x => x[0])).size, handover_moves: rows.filter(x => x[1].f === 'ho').length, page: ORIGIN + '/data/changes/week/#mk-' + slugM(m), feed: ORIGIN + '/data/changes/feed.atom?m=' + encodeURIComponent(m) })),
     changes: wk.map(chRow), page: ORIGIN + '/data/changes/week/' };
@@ -757,7 +757,7 @@ export async function mcpTool3(env, name, a) {
     const q = chFilter({ m: a.market || '', field: a.field || '', since: a.since || '', days: a.days });
     if (q.err) return { err: q.err };
     const lim = a.limit || 50;
-    return { body: { built: D.built, rule: CH_RULE, filters: { market: a.market || null, field: a.field || null, since: q.since }, total: q.rows.length, changes: q.rows.slice(0, lim).map(chRow), more: q.rows.length > lim ? ORIGIN + '/data/changes.json' : null }, source: ORIGIN + '/data/changes.json' };
+    return { body: { built: D.built, rule: TB.kbx_n37u__s.CH_RULE, filters: { market: a.market || null, field: a.field || null, since: q.since }, total: q.rows.length, changes: q.rows.slice(0, lim).map(chRow), more: q.rows.length > lim ? ORIGIN + '/data/changes.json' : null }, source: ORIGIN + '/data/changes.json' };
   }
   return null;
 }
@@ -809,7 +809,7 @@ function progLine(l) {
 }
 async function progBlock(l, env) {
   const g = progStats(), s = await stats(env), P = pre(l), li = (h, x) => '<li><a href="' + h + '">' + esc(x) + '</a></li>';
-  return '<section id="n37-today" aria-labelledby="n37-today-h" style="border:1px solid var(--k-line,#D5DCDB);border-radius:14px;padding:14px 18px;margin:14px 0 22px"' + dir(l) + '><h2 id="n37-today-h" style="font-size:1.1rem;margin:0 0 6px">' + esc(tf(l, 'pg_h', { d: fd(g.built, l) })) + '</h2><ul style="margin:0;padding-inline-start:18px;line-height:1.7">' +
+  return TB.kbx_n37u__s.k24 + dir(l) + '><h2 id="n37-today-h" style="font-size:1.1rem;margin:0 0 6px">' + esc(tf(l, 'pg_h', { d: fd(g.built, l) })) + '</h2><ul style="margin:0;padding-inline-start:18px;line-height:1.7">' +
     (s ? li(P + '/projects/', tf(l, 'pg_p', { p: nf(s.projects, l), m: nf(s.markets, l), c: nf(s.countries, l) })) : '') +
     li(P + '/data/how-we-verify/', tf(l, 'pg_line', { c: nf(g.conf, l), n: nf(g.tot, l), cp: pct1(g.conf, g.tot, l) })) +
     li('/registers/', tf(l, 'pg_r', { r: nf(g.regs, l), m: nf(g.mk, l) })) +
@@ -820,7 +820,7 @@ async function progBlock(l, env) {
 // r10u (round 10): /yc/try/ lists what shipped today, one link each, with numbers counted from the published files
 async function todayBlock(l, env) {
   const g = progStats(), G = await regMap(env), P = pre(l), k = KP ? kpSum(kpRows(null)) : null, li = (h, x) => '<li><a href="' + h + '">' + esc(x) + '</a></li>';
-  return '<section id="n37-shipped" aria-labelledby="n37-shipped-h" style="border:1px solid var(--k-line,#D5DCDB);border-radius:14px;padding:14px 18px;margin:0 0 22px"' + dir(l) + '><h2 id="n37-shipped-h" style="font-size:1.1rem;margin:0 0 6px">' + esc(tf(l, 'yt_h', { d: fd(g.built, l) })) + '</h2><ol style="margin:0;padding-inline-start:22px;line-height:1.7">' +
+  return TB.kbx_n37u__s.k25 + dir(l) + '><h2 id="n37-shipped-h" style="font-size:1.1rem;margin:0 0 6px">' + esc(tf(l, 'yt_h', { d: fd(g.built, l) })) + '</h2><ol style="margin:0;padding-inline-start:22px;line-height:1.7">' +
     li(P + '/projects/emaar-golf-vale/record/', tf(l, 'yt_rec', { n: nf(g.n, l) })) +
     (G ? li(P + '/search/?rg=1&amp;so=reg', tf(l, 'yt_rg', { g: nf(G.size, l) })) : '') +
     (k ? li(P + '/registers/malaysia/', tf(l, 'yt_kp', { e: nf(k.n, l), p: nf(k.pr, l), k: nf(k.late3, l) })) : '') +
@@ -985,9 +985,7 @@ function bars(l, m, o) {   // one accessible bar chart: units where the register
     return '<rect x="' + x.toFixed(1) + '" y="' + (H - h) + '" width="' + bw + '" height="' + Math.max(h, 1) + '" rx="4" fill="currentColor"' + (y === YLO ? ' opacity=".55"' : '') + '></rect><text x="' + (x + bw / 2).toFixed(1) + '" y="' + (H - h - 6) + '" text-anchor="middle">' + esc(nf(v[i], l)) + '</text><text x="' + (x + bw / 2).toFixed(1) + '" y="' + (H + 18) + '" text-anchor="middle">' + esc(y === YLO ? '≤' + y : y === YHI ? y + '+' : String(y)) + '</text>'; }).join('') +
     '</svg><figcaption class="k-xs">' + esc(tf(l, U ? 'pl_cu' : 'pl_cp', { m })) + '</figcaption></figure>';
 }
-const N38C = '<style>.n38-fig{margin:8px 0 14px}.n38-fig svg{direction:ltr}.n38-fig text{font-size:15px}.n38-t{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:12px 0 18px}.n38-t div{border:1px solid var(--k-line,#D5DCDB);border-radius:12px;padding:10px 14px}.n38-t b{display:block;font-size:1.45rem;font-variant-numeric:tabular-nums}.n38-t span{font-size:.88rem;color:var(--k-muted,#56636F)}' +
-  '.n38-f{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:8px 0}.n38-f select,.n38-f button,.n38-pb{min-height:44px;padding:0 14px;border:1px solid var(--k-line,#D5DCDB);border-radius:10px;background:var(--k-surface,#fff);color:inherit;font:inherit}.n38-hi{background:color-mix(in srgb,currentColor 7%,transparent)}' +
-  '@media print{header,footer,nav,.crumb,.n38-np,#kb-tick,.k-tick,[role=banner],[role=contentinfo]{display:none!important}body{background:#fff!important;color:#000!important}.n37-tw{overflow:visible;border:0}.n37 a{color:inherit;text-decoration:none}.n37 table{font-size:9.5pt}.n37 h2{break-after:avoid;margin-top:14px}.n37 tr{break-inside:avoid}.phero{padding:0!important}@page{size:A4;margin:14mm}}</style>';
+/* N38C: n40 k17, in /data/i18n/k17s.json */
 function pipeTable(l, m, o) {
   return kpTw(l, kpTh(l, ['pl_y', 'pl_p', 'pl_u', 'pl_g']) + '<tbody>' + YRS.map(y => { const z = o.Y[y]; return '<tr><th scope="row">' + esc(yL(l, y)) + '</th><td class="n">' + nf(z[0], l) + '</td><td class="n">' + (z[2] ? nf(z[1], l) + ' <span class="k-xs">' + esc(tf(l, 'pl_uof', { a: nf(z[2], l), b: nf(z[0], l) })) + '</span>' : '') + '</td><td class="n">' + bdi(nf(share(z[3], z[0]), l) + '%') + '</td></tr>'; }).join('') + '</tbody>');
 }
@@ -999,7 +997,7 @@ async function pipePage(env, shell, l, u) {
   b += '<h2 id="all">' + esc(t(l, 'pl_ah')) + '</h2>' + kpTw(l, '<thead><tr><th scope="col">' + esc(t(l, 'gp_m')) + '</th><th scope="col">' + esc(t(l, 'pl_d')) + '</th>' + YRS.map(y => '<th scope="col">' + esc(y === YLO ? '≤' + y : y === YHI ? y + '+' : String(y)) + '</th>').join('') + '</tr></thead><tbody>' +
     MK.map(x => { const z = pipe(x); return '<tr id="mk-' + slugM(x) + '"' + (x === m ? ' class="n38-hi"' : '') + '><th scope="row"><a href="' + P + '/data/pipeline/?m=' + encodeURIComponent(x) + '#m" rel="nofollow">' + bdi(x) + '</a></th><td class="n">' + nf(z.d, l) + ' / ' + nf(z.n, l) + '</td>' + YRS.map(y => '<td class="n">' + nf(z.Y[y][0], l) + '</td>').join('') + '</tr>'; }).join('') + '</tbody>');
   b += '<p class="k-xs">' + esc(t(l, 'pl_def')) + '</p>';
-  return page(shell, l, { path: '/data/pipeline/', h1: t(l, 'pl_h1'), lead: t(l, 'pl_lead'), body: N38C + b, noindex: !!q, crumb: [[t(l, 'data'), P + '/data/']] });
+  return page(shell, l, { path: '/data/pipeline/', h1: t(l, 'pl_h1'), lead: t(l, 'pl_lead'), body: TB.kbx_n37u__s.N38C + b, noindex: !!q, crumb: [[t(l, 'data'), P + '/data/']] });
 }
 // delays: three signals we measure, none of them a forecast
 const BI = () => { const y = +D.built.slice(0, 4), mo = +D.built.slice(5, 7); return y * 12 + mo; };
@@ -1027,7 +1025,7 @@ async function delayPage(env, shell, l) {
   b += '<h2 id="later">' + esc(tf(l, 'dl_lh', { n: nf(L.length, l), t: nf(A.late.length, l) })) + '</h2>' + kpTw(l, kpTh(l, ['th_p', 'ch_mk', 'ch_from', 'ch_to', 'tr_by', 'tr_seen']) + '<tbody>' + L.map(x => '<tr><th scope="row"><a href="' + recU(l, x.r[1]) + '#timeline">' + bdi(x.r[2]) + '</a></th><td>' + bdi(x.r[3]) + '</td><td class="n">' + bdi(tv(x.x.p, l, 40)) + '</td><td class="n">' + bdi(tv(x.x.v, l, 40)) + '</td><td class="n">' + esc(byM(l, x.dm)) + '</td><td class="n">' + esc(fd(x.x.d, l)) + '</td></tr>').join('') + '</tbody>');
   b += '<h2 id="passed">' + esc(tf(l, 'dl_oh', { n: nf(A.od.length, l) })) + '</h2><p>' + esc(t(l, 'dl_op')) + '</p>' + (A.od.length ? kpTw(l, kpTh(l, ['th_p', 'ch_mk', 'f_ho', 'f_cp', 'th_s']) + '<tbody>' + A.od.map(([r, p]) => { const c = r[8][6], u = c[1]; return '<tr><th scope="row"><a href="' + pre(l) + '/projects/' + r[1] + '/">' + bdi(r[2]) + '</a></th><td>' + bdi(r[3]) + '</td><td class="n">' + bdi(tv(r[8][0][0], l, 30)) + '</td><td class="n">' + bdi(nf(p, l) + '%') + '</td><td>' + (u && /^https?:/.test(u) ? '<a href="' + esc(u) + '" rel="nofollow noopener">' + esc(host(u)) + '</a> ' : '') + '<span class="k-xs">' + esc(fd(c[3], l)) + '</span></td></tr>'; }).join('') + '</tbody>') : '<p>' + esc(t(l, 'none')) + '</p>');
   b += '<p>' + '<a href="' + P + '/data/changes/week/">' + esc(t(l, 'wk_h1')) + '</a>' + DOT + '<a href="' + P + '/registers/malaysia/#late">' + esc(t(l, 'kr_h1')) + '</a>' + DOT + '<a href="' + n38u(l, 'pipeline/') + '">' + esc(t(l, 'pl_h1')) + '</a>' + DOT + '<a href="' + n38u(l, 'heat/') + '">' + esc(t(l, 'e_h1')) + '</a>' + DOT + '<a href="/data/n37u-tl.json">' + esc(t(l, 'dl')) + '</a></p>';   // n39 t2: heat table
-  return page(shell, l, { path: '/data/delays/', h1: t(l, 'dl_h1'), lead: t(l, 'dl_lead'), body: N38C + b, crumb: [[t(l, 'data'), P + '/data/']] });
+  return page(shell, l, { path: '/data/delays/', h1: t(l, 'dl_h1'), lead: t(l, 'dl_lead'), body: TB.kbx_n37u__s.N38C + b, crumb: [[t(l, 'data'), P + '/data/']] });
 }
 // developers compared by register-confirmed share (3+ records)
 const DLS = { g: 'dv_g', n: 'dv_n', any: 'dv_any', med: 'gp_md', mk: 'dv_mk' };
@@ -1045,7 +1043,7 @@ async function dvPage(env, shell, l, u) {
   b += kpTw(l, '<thead><tr><th scope="col">#</th><th scope="col">' + esc(t(l, 'dv_d')) + '</th>' + Object.keys(DLS).map(k => '<th scope="col"' + (k === so ? ' aria-sort="descending"' : '') + '>' + esc(t(l, DLS[k])) + '</th>').join('') + '<th scope="col">' + esc(t(l, 'gp_m')) + '</th></tr></thead><tbody>' +
     R.map(x => '<tr id="d-' + x.s + '"><td class="n">' + nf(x.rk, l) + '</td><th scope="row"><a href="' + P + '/developers/' + x.s + '/#n37-dreg">' + bdi(x.d) + '</a></th><td class="n">' + bdi(nf(x.g, l) + '%') + ' <span class="k-xs">' + nf(x.gg, l) + '/' + nf(x.h, l) + '</span></td><td class="n">' + nf(x.n, l) + '</td><td class="n">' + bdi(nf(x.any, l) + '%') + '</td><td class="n">' + nf(x.med, l) + ' / 10</td><td class="n">' + nf(x.mk, l) + '</td><td>' + x.ms.map(bdi).join(', ') + (x.mk > 3 ? '…' : '') + '</td></tr>').join('') + '</tbody>');
   b += '<p class="k-xs">' + esc(t(l, 'dv_def')) + '</p><p><a href="' + P + '/developers/compare/">' + esc(t(l, 'dv_cmp')) + '</a>' + DOT + '<a href="' + P + '/data/markets/">' + esc(t(l, 'mc_h1')) + '</a>' + DOT + '<a href="' + P + '/data/how-we-verify/">' + esc(t(l, 'vf_l')) + '</a></p>';
-  return page(shell, l, { path: '/data/developers/', h1: t(l, 'dv_h1'), lead: t(l, 'dv_lead'), body: N38C + b, noindex: !!q, crumb: [[t(l, 'data'), P + '/data/'], [t(l, 'mc_h1'), P + '/data/markets/']] });
+  return page(shell, l, { path: '/data/developers/', h1: t(l, 'dv_h1'), lead: t(l, 'dv_lead'), body: TB.kbx_n37u__s.N38C + b, noindex: !!q, crumb: [[t(l, 'data'), P + '/data/'], [t(l, 'mc_h1'), P + '/data/markets/']] });
 }
 function dvRank(l, slug) { const x = dvRows().find(y => y.s === slug); return x ? '<p id="n38-dvr"><a href="' + n38u(l, 'developers/') + '#d-' + slug + '">' + esc(tf(l, 'dv_rk', { r: nf(x.rk, l), n: nf(dvRows().length, l), g: nf(x.g, l) })) + '</a></p>' : ''; }
 // one-page market fact sheet, laid out for A4
@@ -1061,8 +1059,8 @@ async function sheetPage(env, shell, l, m) {
   b += areaBlock(l, m) + nextBlock(l, m);   // n39 t2
   b += '<h2>' + esc(t(l, 'mk_best')) + '</h2>' + recList(l, byK.slice(0, 5)) + '<h2>' + esc(t(l, 'mk_thin')) + '</h2>' + recList(l, byK.slice(-5).reverse());
   b += '<p class="k-xs">' + esc(tf(l, 'ms_foot', { u: ORIGIN + P + '/data/markets/' + sl + '/', d: fd(D.built, l) })) + '</p><p class="n38-np"><a href="/m/' + sl + '/">' + bdi(m) + '</a>' + DOT + '<a href="' + n38u(l, 'pipeline/') + '?m=' + encodeURIComponent(m) + '#m" rel="nofollow">' + esc(t(l, 'pl_h1')) + '</a>' + DOT + '<a href="' + n38u(l, 'delays/') + '#mk-' + sl + '">' + esc(t(l, 'dl_h1')) + '</a></p>' +
-    '<script>document.getElementById("n38-print").addEventListener("click",function(){window.print()})</script>';
-  return page(shell, l, { path: '/data/markets/' + sl + '/', h1: tf(l, 'ms_h1', { m }), lead: tf(l, 'ms_lead', { m, n: nf(rows.length, l) }), body: N38C + b, noindex: true, crumb: [[t(l, 'data'), P + '/data/'], [t(l, 'mc_h1'), P + '/data/markets/']] });
+    TB.kbx_n37u__s.k26;
+  return page(shell, l, { path: '/data/markets/' + sl + '/', h1: tf(l, 'ms_h1', { m }), lead: tf(l, 'ms_lead', { m, n: nf(rows.length, l) }), body: TB.kbx_n37u__s.N38C + b, noindex: true, crumb: [[t(l, 'data'), P + '/data/'], [t(l, 'mc_h1'), P + '/data/markets/']] });
 }
 // same-year handover supply on project pages
 function supplyLine(l, x) {
@@ -1073,24 +1071,20 @@ function supplyLine(l, x) {
 // saved searches: kept in this browser only (localStorage), nothing is sent
 function savedBox(l, nonce) {
   const L = { save: t(l, 'ss_save'), saved: t(l, 'ss_done'), rm: t(l, 'ss_rm'), noq: t(l, 'ss_noq'), full: t(l, 'ss_full'), loc: LOC[l] || 'en-GB' };
-  return '<section class="wrap n37" id="saved"' + dir(l) + ' data-t="' + esc(JSON.stringify(L)) + '"><style>#saved{margin:18px auto 8px;padding:14px 18px;border:1px solid var(--k-line,#D5DCDB);border-radius:14px}#saved h2{margin:0 0 4px;font-size:1.1rem}#saved ul{list-style:none;padding:0;margin:8px 0}#saved li{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:center;min-height:44px;border-bottom:1px solid var(--k-line,#D5DCDB)}#saved li a{font-weight:600;overflow-wrap:anywhere}#saved button{min-height:44px;padding:0 14px;border:1px solid var(--k-line,#D5DCDB);border-radius:10px;background:var(--k-surface,#fff);color:inherit;font:inherit;cursor:pointer}#saved li button{min-height:36px;min-width:44px;padding:0 10px}</style>' +
-    '<h2>' + esc(t(l, 'ss_h')) + '</h2><p class="k-xs" style="margin:0">' + esc(t(l, 'ss_p')) + '</p><p><button type="button" id="n38-ss">' + esc(L.save) + '</button> <span id="n38-ssm" role="status" class="k-xs"></span></p><ul id="n38-ssl"></ul><p class="k-xs" id="n38-sse">' + esc(t(l, 'ss_e')) + '</p></section>' +
-    '<script' + (nonce ? ' nonce="' + esc(nonce) + '"' : '') + '>(function(){var s=document.getElementById("saved");if(!s)return;var L=JSON.parse(s.getAttribute("data-t")),K="kb-saved-searches",ul=document.getElementById("n38-ssl"),msg=document.getElementById("n38-ssm");' +
-    'function get(){try{var a=JSON.parse(localStorage.getItem(K)||"[]");return Array.isArray(a)?a:[]}catch(e){return[]}}function put(a){try{localStorage.setItem(K,JSON.stringify(a));return true}catch(e){return false}}' +
-    'function cur(){var p=new URLSearchParams(location.search),o=[],i=document.querySelector("main input[name=q]");if(i&&i.value.trim()&&i.value.trim()!==p.get("q"))p.set("q",i.value.trim());p.forEach(function(v,k){if(v&&k!=="page")o.push([k,v])});return o.length?{u:location.pathname+"?"+o.map(function(x){return encodeURIComponent(x[0])+"="+encodeURIComponent(x[1])}).join("&"),l:o.map(function(x){return x[0]==="q"?"\\u201c"+x[1]+"\\u201d":x[0]+": "+x[1]}).join(", ")}:null}' +
-    'function draw(){var a=get();ul.textContent="";a.forEach(function(x,i){var li=document.createElement("li"),A=document.createElement("a"),d=document.createElement("span"),b=document.createElement("button");A.href=x.u;A.textContent=x.l;d.className="k-xs";try{d.textContent=new Date(x.t).toLocaleDateString(L.loc)}catch(e){}b.type="button";b.textContent=L.rm;b.setAttribute("aria-label",L.rm+": "+x.l);b.addEventListener("click",function(){var z=get();z.splice(i,1);put(z);draw()});li.appendChild(A);li.appendChild(d);li.appendChild(b);ul.appendChild(li)});document.getElementById("n38-sse").hidden=a.length>0}' +
-    'document.getElementById("n38-ss").addEventListener("click",function(){var c=cur();if(!c){msg.textContent=L.noq;return}var a=get().filter(function(x){return x.u!==c.u});a.unshift({u:c.u,l:c.l,t:Date.now()});if(a.length>20){a.length=20}msg.textContent=put(a)?L.saved:L.full;draw()});draw()})()</script>';
+  return '<section class="wrap n37" id="saved"' + dir(l) + ' data-t="' + esc(JSON.stringify(L)) + TB.kbx_n37u__s.k27 +
+    '<h2>' + esc(t(l, 'ss_h')) + '</h2><p class="k-xs" style="margin:0">' + esc(t(l, 'ss_p')) + '</p><p><button type="button" id="n38-ss">' + esc(L.save) + TB.kbx_n37u__s.k28 + esc(t(l, 'ss_e')) + '</p></section>' +
+    '<script' + (nonce ? ' nonce="' + esc(nonce) + '"' : '') + TB.kbx_n37u__s.k29 +
+    TB.kbx_n37u__s.k30 +
+    TB.kbx_n37u__s.k31 +
+    TB.kbx_n37u__s.k32 +
+    TB.kbx_n37u__s.k33;
 }
 // n39 t2 (25 Nov 2026): buyer product. Everything below is computed from /data/n37u.json and /data/n37u-tl.json (published files);
 // nothing is estimated or forecast. Routes: /[l/]projects/<slug>/documents/, /[l/]projects/<slug>/stress/, /[l/]developers/<slug>/timeline/,
 // /[l/]data/heat/, /[l/]registers/lookup/; injected: developer record line and closest comparison on project pages, areas and next 12 months on market pages.
 const P39 = l => pre(l);
 const t39u = (l, s) => P39(l) + '/projects/' + s + '/';
-const N39T2C = '<style>.n39-ck{list-style:none;padding:0;margin:8px 0}.n39-ck li{display:grid;grid-template-columns:28px 1fr;gap:4px 10px;padding:10px 0;border-bottom:1px solid var(--k-line,#D5DCDB)}.n39-ck .bx{width:20px;height:20px;border:2px solid currentColor;border-radius:4px;margin-top:3px}.n39-ck b{display:block}.n39-ck .ok{color:#1F6B3A}.n39-ck .ask{color:#9A3412}:root[data-theme=dark] .n39-ck .ok{color:#7FD49A}:root[data-theme=dark] .n39-ck .ask{color:#FFA07A}@media (prefers-color-scheme:dark){:root:not([data-theme=light]) .n39-ck .ok{color:#7FD49A}:root:not([data-theme=light]) .n39-ck .ask{color:#FFA07A}}' +
-  '.n39-f{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:end;margin:10px 0 16px}.n39-f label{display:flex;flex-direction:column;gap:4px;font-weight:600;font-size:.92rem}.n39-f input,.n39-f select{min-height:44px;padding:0 10px;border:1px solid var(--k-line,#D5DCDB);border-radius:10px;font:inherit;font-size:16px;background:var(--k-surface,#fff);color:inherit;min-width:9rem}.n39-f button,.n39-pb{min-height:44px;padding:0 16px;border:1px solid var(--k-ink,#17212B);border-radius:10px;background:var(--k-ink,#17212B);color:var(--k-surface,#fff);font:inherit;font-weight:700;cursor:pointer}' +
-  '.n39-h td.hb{font-variant-numeric:tabular-nums;white-space:nowrap}.n39-h td.h0{background:#E7F3EA}.n39-h td.h1{background:#FBF1DC}.n39-h td.h2{background:#FBE4DC}.n39-h td.hb small{display:block;font-size:.75rem;color:var(--k-muted,#56636F)}:root[data-theme=dark] .n39-h td.h0{background:#16331F}:root[data-theme=dark] .n39-h td.h1{background:#3A2E12}:root[data-theme=dark] .n39-h td.h2{background:#3D1F16}@media (prefers-color-scheme:dark){:root:not([data-theme=light]) .n39-h td.h0{background:#16331F}:root:not([data-theme=light]) .n39-h td.h1{background:#3A2E12}:root:not([data-theme=light]) .n39-h td.h2{background:#3D1F16}}' +
-  '.n39-key{display:flex;flex-wrap:wrap;gap:6px 14px;list-style:none;padding:0;margin:6px 0}.n39-key li{display:flex;align-items:center;gap:6px}.n39-key i{width:16px;height:16px;border-radius:3px;border:1px solid var(--k-line,#D5DCDB)}.n39-key i.h0{background:#E7F3EA}.n39-key i.h1{background:#FBF1DC}.n39-key i.h2{background:#FBE4DC}' +
-  '@media print{.n39-np,.k-cta,header,footer,nav,.crumb{display:none!important}.n39-ck li{break-inside:avoid}.n39-h td{print-color-adjust:exact;-webkit-print-color-adjust:exact}}</style>';
+/* N39T2C: n40 k17, in /data/i18n/k17s.json */
 const lnk = (h, s, x) => '<a href="' + esc(h) + '"' + (x || '') + '>' + esc(s) + '</a>';
 const ext = (u, s) => u && /^https?:/.test(u) ? '<a href="' + esc(u) + '" rel="nofollow noopener">' + esc(s || host(u)) + '</a>' : '';
 const cellOf = (r, f) => r[8][D.f.indexOf(f)] || null;
@@ -1128,8 +1122,8 @@ async function docPage(env, shell, l, r) {
   b += '</ul>';
   if (k && k.length) b += '<p>' + esc(tf(l, 'b_q_kp', { c: k.map(p => p.c).join(', ') })) + ' ' + ext(k[0].u, 'teduh.kpkt.gov.my') + '</p>';
   b += '<p class="k-xs">' + esc(t(l, 'b_q_not')) + '</p>' + buyRow(l, r, 'documents') + cmpBlock(l, r) +
-    '<script>document.getElementById("n39-print").addEventListener("click",function(){window.print()})</script>';
-  return page(shell, l, { path: '/projects/' + r[1] + '/documents/', h1: tf(l, 'b_q_h1', { n: r[2] }), lead: t(l, 'b_q_lead'), body: N38C + N39T2C + b, noindex: true, crumb: [[t(l, 'projects'), P39(l) + '/projects/'], [r[2], t39u(l, r[1])]] });
+    TB.kbx_n37u__s.k34;
+  return page(shell, l, { path: '/projects/' + r[1] + '/documents/', h1: tf(l, 'b_q_h1', { n: r[2] }), lead: t(l, 'b_q_lead'), body: TB.kbx_n37u__s.N38C + TB.kbx_n37u__s.N39T2C + b, noindex: true, crumb: [[t(l, 'projects'), P39(l) + '/projects/'], [r[2], t39u(l, r[1])]] });
 }
 // 2. payment plan stress against the handover moves we measured (GET form, no script)
 function mkMoves(m) { const A = dlAll(), z = A.ms.find(x => x.m === m), all = A.late.map(x => x.dm).filter(x => x > 0).sort((a, b) => a - b); const mine = z ? z.late.map(x => x.dm).filter(x => x > 0).sort((a, b) => a - b) : []; const use = mine.length >= 3 ? mine : all; return { own: mine.length >= 3, n: use.length, med: median(use), hi: use.length ? use[Math.min(use.length - 1, Math.floor(use.length * 0.9))] : 0, max: use.length ? use[use.length - 1] : 0 }; }
@@ -1149,7 +1143,7 @@ async function stressPage(env, shell, l, r, u) {
     if (hi < now) b += '<p>' + esc(t(l, 'b_w_past')) + '</p>';
   }
   b += '<p class="k-xs">' + esc(t(l, 'b_w_not')) + '</p><p>' + lnk(n38u(l, 'delays/') + '#mk-' + slugM(r[3]), t(l, 'dl_h1')) + DOT + lnk(P39(l) + '/tools/', t(l, 'b_w_tools')) + '</p>' + buyRow(l, r, 'stress');
-  return page(shell, l, { path: '/projects/' + r[1] + '/stress/', h1: tf(l, 'b_w_h1', { n: r[2] }), lead: t(l, 'b_w_lead'), body: N38C + N39T2C + b, noindex: true, crumb: [[t(l, 'projects'), P39(l) + '/projects/'], [r[2], t39u(l, r[1])]] });
+  return page(shell, l, { path: '/projects/' + r[1] + '/stress/', h1: tf(l, 'b_w_h1', { n: r[2] }), lead: t(l, 'b_w_lead'), body: TB.kbx_n37u__s.N38C + TB.kbx_n37u__s.N39T2C + b, noindex: true, crumb: [[t(l, 'projects'), P39(l) + '/projects/'], [r[2], t39u(l, r[1])]] });
 }
 // 3. developer timeline: every project of one developer by handover date, with the changes we recorded
 async function devTlPage(env, shell, l, slug, u) {
@@ -1168,7 +1162,7 @@ async function devTlPage(env, shell, l, slug, u) {
     }).join('') + '</tbody>');
   }
   b += '<p class="k-xs">' + esc(t(l, 'b_v_not')) + '</p><p>' + lnk(P39(l) + '/developers/' + slug + '/', name) + DOT + lnk(n38u(l, 'developers/') + '#d-' + slug, t(l, 'dv_h1')) + DOT + lnk(P39(l) + '/developers/compare/', t(l, 'dv_cmp')) + '</p>';
-  return page(shell, l, { path: '/developers/' + slug + '/timeline/', h1: tf(l, 'b_v_h1', { d: name }), lead: t(l, 'b_v_lead'), body: N38C + N39T2C + b, noindex: !!cur, crumb: [[t(l, 'b_v_devs'), P39(l) + '/developers/'], [name, P39(l) + '/developers/' + slug + '/']] });
+  return page(shell, l, { path: '/developers/' + slug + '/timeline/', h1: tf(l, 'b_v_h1', { d: name }), lead: t(l, 'b_v_lead'), body: TB.kbx_n37u__s.N38C + TB.kbx_n37u__s.N39T2C + b, noindex: !!cur, crumb: [[t(l, 'b_v_devs'), P39(l) + '/developers/'], [name, P39(l) + '/developers/' + slug + '/']] });
 }
 // 4. market heat table: delays and register share in one view, bands by fixed thresholds, every cell also in numbers
 const band = (v, a, c, up) => v == null ? '' : up ? (v >= c ? 'h0' : v >= a ? 'h1' : 'h2') : (v <= a ? 'h0' : v <= c ? 'h1' : 'h2');
@@ -1189,7 +1183,7 @@ async function heatPage(env, shell, l) {
   b += '<div class="n39-h">' + kpTw(l, '<thead><tr><th scope="col">' + esc(t(l, 'gp_m')) + '</th><th scope="col">' + esc(t(l, 'ms_r')) + '</th>' + C.map(c => '<th scope="col">' + esc(t(l, c[1])) + '</th>').join('') + '</tr></thead><tbody>' +
     H.map(x => '<tr id="mk-' + slugM(x.m) + '"><th scope="row"><a href="/m/' + slugM(x.m) + '/#n39-area">' + bdi(x.m) + '</a></th><td class="n">' + nf(x.n, l) + '</td>' + C.map(c => { const v = x[c[0]], k = band(v, c[2], c[3], c[4]); return '<td class="hb ' + k + '">' + (v == null ? '<span class="k-xs">' + esc(t(l, 'b_e_na')) + '</span>' : bdi(nf(v, l) + c[5]) + '<small>' + esc(t(l, 'b_e_' + (k === 'h0' ? 'b0' : k === 'h1' ? 'b1' : 'b2'))) + '</small>') + '</td>'; }).join('') + '</tr>').join('') + '</tbody>') + '</div>';
   b += '<p class="k-xs">' + esc(t(l, 'b_e_def')) + '</p><p>' + lnk(n38u(l, 'markets/'), t(l, 'mc_h1')) + DOT + lnk(n38u(l, 'delays/'), t(l, 'dl_h1')) + DOT + lnk(n38u(l, 'pipeline/'), t(l, 'pl_h1')) + '</p>';
-  return page(shell, l, { path: '/data/heat/', h1: t(l, 'b_e_h1'), lead: t(l, 'b_e_lead'), body: N38C + N39T2C + b, crumb: [[t(l, 'data'), P39(l) + '/data/'], [t(l, 'mc_h1'), n38u(l, 'markets/')]] });
+  return page(shell, l, { path: '/data/heat/', h1: t(l, 'b_e_h1'), lead: t(l, 'b_e_lead'), body: TB.kbx_n37u__s.N38C + TB.kbx_n37u__s.N39T2C + b, crumb: [[t(l, 'data'), P39(l) + '/data/'], [t(l, 'mc_h1'), n38u(l, 'markets/')]] });
 }
 // 5. find a project by its permit, registration or register number
 const nrm = s => String(s || '').toLowerCase().replace(/[^a-z0-9]/g, '');
@@ -1199,7 +1193,7 @@ async function lookupPage(env, shell, l, u) {
   let b = '<form class="n39-f" method="get" action="' + P39(l) + '/registers/lookup/" role="search"><label>' + esc(t(l, 'b_k_l')) + '<input name="n" value="' + esc(q0) + '" autocomplete="off" spellcheck="false"></label><button type="submit">' + esc(t(l, 'b_k_go')) + '</button></form><p class="k-xs">' + esc(tf(l, 'b_k_hint', { n: nf(D.known[1], l) })) + '</p>';
   if (q0) b += '<h2 id="res">' + esc(tf(l, hits.length === 1 ? 'b_k_r1' : 'b_k_rn', { n: nf(hits.length, l), q: q0 })) + '</h2>' + (hits.length ? kpTw(l, kpTh(l, ['th_p', 'ch_mk', 'b_k_num', 'th_s', 'f_ho']) + '<tbody>' + hits.map(([r, w]) => { const h = cellOf(r, 'ho'); return '<tr><th scope="row"><a href="' + t39u(l, r[1]) + 'documents/">' + bdi(r[2]) + '</a></th><td>' + bdi(r[3]) + '</td><td class="n">' + bdi(tv(String(w[1]), l, 60)) + '</td><td>' + ext(w[2]) + ' <span class="k-xs">' + esc(fd(w[3], l)) + '</span></td><td class="n">' + (h ? bdi(tv(h[0], l, 30)) : '') + '</td></tr>'; }).join('') + '</tbody>') : '<p>' + esc(t(l, 'b_k_none')) + '</p>');
   b += '<p class="k-xs">' + esc(t(l, 'b_k_not')) + '</p><p>' + lnk(P39(l) + '/registers/', t(l, 'kr_regs')) + DOT + lnk(P39(l) + '/registers/malaysia/', t(l, 'kr_h1')) + '</p>';
-  return page(shell, l, { path: '/registers/lookup/', h1: t(l, 'b_k_h1'), lead: t(l, 'b_k_lead'), body: N38C + N39T2C + b, noindex: !!q0, crumb: [[t(l, 'kr_regs'), P39(l) + '/registers/']] });
+  return page(shell, l, { path: '/registers/lookup/', h1: t(l, 'b_k_h1'), lead: t(l, 'b_k_lead'), body: TB.kbx_n37u__s.N38C + TB.kbx_n37u__s.N39T2C + b, noindex: !!q0, crumb: [[t(l, 'kr_regs'), P39(l) + '/registers/']] });
 }
 // 6. the developer's record in one line on project pages
 function devLine(l, r) {
@@ -1240,7 +1234,7 @@ export async function inject(req, u, env, r) {
     const m = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?(.*)$/.exec(u.pathname), l = m[1] || 'en', p = m[2];
     if (!(await load(env))) return r;
     const add = []; let mm;
-    if ((p === 'engineering/' || p === 'yc/') && l === 'en') { add.push(['main', 'append', shipped(l)]); if (p === 'yc/') add.push(['section.k27 .k-prose > p', 'after', '<style>@media (max-width:640px){#n37-yct a,#n37-shipped p a{display:inline-flex;align-items:center;min-height:44px}}</style><p id="n37-yct" style="border:1px solid var(--k-line,#D5DCDB);border-radius:14px;padding:10px 16px">' + esc(tf(l, 'yt_top', { d: fd(D.built, l), n: nf(ITEMS.length, l) })) + ' <a href="/yc/try/#n37-shipped">' + esc(t(l, 'yt_open')) + '</a><span class="n37-dot" aria-hidden="true"> · </span><a href="#shipped-2026-11-23">' + esc(t(l, 'yt_list')) + '</a></p>']); }   // r10u: today's work at the top of /yc/
+    if ((p === 'engineering/' || p === 'yc/') && l === 'en') { add.push(['main', 'append', shipped(l)]); if (p === 'yc/') add.push(['section.k27 .k-prose > p', 'after', TB.kbx_n37u__s.k35 + esc(tf(l, 'yt_top', { d: fd(D.built, l), n: nf(ITEMS.length, l) })) + ' <a href="/yc/try/#n37-shipped">' + esc(t(l, 'yt_open')) + '</a><span class="n37-dot" aria-hidden="true"> · </span><a href="#shipped-2026-11-23">' + esc(t(l, 'yt_list')) + '</a></p>']); }   // r10u: today's work at the top of /yc/
     else if (p === 'search/') { await regMap(env);   // r5u: completeness and latest change on each result
       return new HTMLRewriter().on('#n34-out', { element(e) { e.setAttribute('data-n37', seTpl(l)); } }).on('ol.n34-res > li > a', { element(e) { const mm2 = /\/projects\/([a-z0-9-]{1,90})\/$/.exec(e.getAttribute('href') || ''), x = mm2 && IX.bySlug.get(mm2[1]); if (x) e.after(seInfo(l, x), { html: true }); } })
         .on('head', { element(e) { e.append(VSC, { html: true }); } }).on('main', { element(e) { e.onEndTag(end => { end.before(savedBox(l, ((r.headers.get('content-security-policy') || '').match(/'nonce-([^']+)'/) || [])[1]), { html: true }); }); } }).transform(r);   // n38 d3: saved searches
@@ -1254,10 +1248,10 @@ export async function inject(req, u, env, r) {
       const k = cnt(x);
       const lc = latestChange(x), lch = lc ? '<p class="n37-in"' + dir(l) + '><a href="' + recU(l, x[1]) + '#timeline">' + esc(tf(l, 'tl_pj', { f: t(l, 'f_' + lc.x.f), a: tv(lc.x.p, l, 70), b: tv(lc.x.v, l, 70), d: fd(lc.x.d, l) })) + '</a>' + (lc.n > 1 ? ' <span class="k-xs">' + esc(tf(l, 'tl_more', { n: nf(lc.n - 1, l) })) + '</span>' : '') + '</p>' : '';
       add.push(['#answer', 'append', VSC + vsBlock(l, x, actRow(l, x)) + kpBlock(l, x[1], 'n37-kp', 'h3')]);   // r5u; r9u: Malaysian register block
-      add.push(['#glance', 'append', STY + '<p class="n37-in"' + dir(l) + '><a href="' + recU(l, x[1]) + '">' + esc(tf(l, 'inj_p', { k: nf(k, l), g: nf(10 - k, l) })) + '</a><span class="n37-dot" aria-hidden="true"> · </span><a href="' + pre(l) + '/projects/' + x[1] + '/brief/">' + esc(t(l, 'a_br')) + '</a></p>' + lch + devLine(l, x) + buyRow(l, x, '')]);   // n39 t2
+      add.push(['#glance', 'append', TB.kbx_n37u__s.STY + '<p class="n37-in"' + dir(l) + '><a href="' + recU(l, x[1]) + '">' + esc(tf(l, 'inj_p', { k: nf(k, l), g: nf(10 - k, l) })) + '</a><span class="n37-dot" aria-hidden="true"> · </span><a href="' + pre(l) + '/projects/' + x[1] + '/brief/">' + esc(t(l, 'a_br')) + '</a></p>' + lch + devLine(l, x) + buyRow(l, x, '')]);   // n39 t2
       if (D.mk[x[3]]) add.push(['#market', 'append', '<p class="n37-in"' + dir(l) + '><a href="' + recU(l, x[1]) + '#market">' + esc(tf(l, 'inj_m', { m: x[3] })) + '</a></p>' + supplyLine(l, x) + cmpBlock(l, x)]);   // n39 t2   // n38 d3: same-year handover supply
-    } else if (p === 'data/' || p === 'data/dictionary/' || p === 'registers/') add.push(['main', 'append', '<section class="wrap"' + dir(l) + '>' + STY + '<p class="n37-in">' + (l === 'en' || p === 'data/' ? '' : '<a href="' + pre(l) + '/data/">' + esc(t(l, 'dh_link')) + '</a> · ') + '<a href="' + pre(l) + '/data/gaps/">' + esc(t(l, 'gp_link')) + '</a> · ' + esc(t(l, 's5_s')) + '<span class="n37-dot" aria-hidden="true"> · </span><a href="' + pre(l) + '/data/gaps/#dist">' + esc(t(l, 's8_t')) + '</a><span class="n37-dot" aria-hidden="true"> · </span><a href="' + pre(l) + '/data/changes/">' + esc(t(l, 'ch_h1')) + '</a><span class="n37-dot" aria-hidden="true"> · </span><a href="' + pre(l) + '/data/markets/">' + esc(t(l, 'mc_h1')) + '</a><span class="n37-dot" aria-hidden="true"> · </span><a href="' + pre(l) + '/registers/malaysia/">' + esc(t(l, 'kr_h1')) + '</a><span class="n37-dot" aria-hidden="true"> · </span><a href="/data/gaps.csv" download>' + esc(t(l, 'csv_l')) + '</a>' + DOT + '<a href="' + n38u(l, 'pipeline/') + '">' + esc(t(l, 'pl_h1')) + '</a>' + DOT + '<a href="' + n38u(l, 'delays/') + '">' + esc(t(l, 'dl_h1')) + '</a>' + DOT + '<a href="' + n38u(l, 'developers/') + '">' + esc(t(l, 'dv_h1')) + '</a>' + DOT + '<a href="' + n38u(l, 'markets/dubai/') + '">' + esc(tf(l, 'ms_h1', { m: 'Dubai' })) + '</a>' + DOT + '<a href="' + pre(l) + '/search/#saved">' + esc(t(l, 'ss_h')) + '</a></p></section>']);   // r9u; n38 d3
-    if (p === 'data/' || p === 'data/dictionary/' || p === 'registers/' || p === 'engineering/') { const h = '<section class="wrap"' + dir(l) + '>' + STY + n39Links(l) + '</section>', mi = add.find(a => a[0] === 'main'); if (mi) mi[2] += h; else add.push(['main', 'append', h]); }   // n39 t1: one 'main' handler only (a second onEndTag replaces the first)
+    } else if (p === 'data/' || p === 'data/dictionary/' || p === 'registers/') add.push(['main', 'append', '<section class="wrap"' + dir(l) + '>' + TB.kbx_n37u__s.STY + '<p class="n37-in">' + (l === 'en' || p === 'data/' ? '' : '<a href="' + pre(l) + '/data/">' + esc(t(l, 'dh_link')) + '</a> · ') + '<a href="' + pre(l) + '/data/gaps/">' + esc(t(l, 'gp_link')) + '</a> · ' + esc(t(l, 's5_s')) + '<span class="n37-dot" aria-hidden="true"> · </span><a href="' + pre(l) + '/data/gaps/#dist">' + esc(t(l, 's8_t')) + '</a><span class="n37-dot" aria-hidden="true"> · </span><a href="' + pre(l) + '/data/changes/">' + esc(t(l, 'ch_h1')) + '</a><span class="n37-dot" aria-hidden="true"> · </span><a href="' + pre(l) + '/data/markets/">' + esc(t(l, 'mc_h1')) + '</a><span class="n37-dot" aria-hidden="true"> · </span><a href="' + pre(l) + '/registers/malaysia/">' + esc(t(l, 'kr_h1')) + '</a><span class="n37-dot" aria-hidden="true"> · </span><a href="/data/gaps.csv" download>' + esc(t(l, 'csv_l')) + '</a>' + DOT + '<a href="' + n38u(l, 'pipeline/') + '">' + esc(t(l, 'pl_h1')) + '</a>' + DOT + '<a href="' + n38u(l, 'delays/') + '">' + esc(t(l, 'dl_h1')) + '</a>' + DOT + '<a href="' + n38u(l, 'developers/') + '">' + esc(t(l, 'dv_h1')) + '</a>' + DOT + '<a href="' + n38u(l, 'markets/dubai/') + '">' + esc(tf(l, 'ms_h1', { m: 'Dubai' })) + '</a>' + DOT + '<a href="' + pre(l) + '/search/#saved">' + esc(t(l, 'ss_h')) + '</a></p></section>']);   // r9u; n38 d3
+    if (p === 'data/' || p === 'data/dictionary/' || p === 'registers/' || p === 'engineering/') { const h = '<section class="wrap"' + dir(l) + '>' + TB.kbx_n37u__s.STY + n39Links(l) + '</section>', mi = add.find(a => a[0] === 'main'); if (mi) mi[2] += h; else add.push(['main', 'append', h]); }   // n39 t1: one 'main' handler only (a second onEndTag replaces the first)
     if (!add.length) return r;
     let out = new HTMLRewriter();
     const tail = [];   // n39 t2: one end-tag handler for <main> (a second onEndTag on the same element replaces the first, which dropped the shipped list on /engineering/)

@@ -1,3 +1,4 @@
+import { TB } from './kbx_strings.js';
 // kolaboro.com batch 17 (n17b): radar through the clouds, mapped building footprints and a sealed site-visit record. No model calls.
 // Data (built monthly on main by .github/workflows/kolaboro-space-extra.yml, tools/kolaboro-agent/space_extra.py):
 //   /data/satellite-radar.json  Sentinel-1 RTC (Microsoft Planetary Computer, CC BY 4.0; contains modified Copernicus Sentinel data)
@@ -39,9 +40,7 @@ const mi = s => { const m = String(s).match(/^(\d{4})-(\d{2})/); return m ? +m[1
 const ym = i => Math.floor(i / 12) + '-' + String(i % 12 + 1).padStart(2, '0');
 const sg = v => (v > 0 ? '+' : '') + v;
 const relDate = r => String(r || '').replace(/\.\d+$/, '');   // Overture release 2026-10-21.0 -> 2026-10-21
-const CSS = '<style id="kspace-css">.kspace{margin-top:28px;padding-top:4px;border-top:1px solid var(--k-line,var(--line))}.kspace h3{margin:18px 0 6px;font-size:var(--k-fs-lg,1.2rem)}' +
-  '.kspace .tw{overflow-x:auto}.kspace table{border-collapse:collapse;font-size:var(--k-fs-xs,.82rem);min-width:100%}.kspace th,.kspace td{text-align:start;padding:6px 8px;border-bottom:1px solid var(--k-line,var(--line));white-space:nowrap;font-variant-numeric:tabular-nums}' +
-  '.kspace code{font-size:.78rem;word-break:break-all;white-space:normal}.ksat-chart .rl{fill:none;stroke:var(--k-ink,#13222E);stroke-width:2;stroke-linejoin:round}.ksat-chart .rp{fill:var(--k-ink,#13222E)}.ksat-lg i.r{border-top-color:var(--k-ink,#13222E)}</style>';
+/* CSS: n40 k17, in /data/i18n/k17s.json */
 
 function rchart(rec, band, ms, lang, fd, W) {
   const m0 = mi(rec.m0), n = rec.n, end = m0 + n;
@@ -74,7 +73,7 @@ function radarHtml(rd, id, lang, fd, ms, opt) {
     h += '<figure class="ksat-chart"><div dir="ltr" class="ksat-w">' + rchart(rec, band, ms, lang, fd, 720) + '</div><div dir="ltr" class="ksat-n">' + rchart(rec, band, ms, lang, fd, 360) + '</div><ul class="ksat-lg"><li><i class="r"></i>' + esc(t(lang, 'rlx')) + '</li>' + (band != null ? '<li><i class="b"></i>' + esc(t(lang, 'rlb')) + ' (±' + band + ' dB)</li>' : '') + ((ms || []).some(o => !o.old) ? '<li><i class="m"></i>' + esc(t(lang, 'rlm')) + '</li>' : '') + '</ul></figure>';
   } else h += '<li>' + esc(t(lang, 'rfew', { k, n })) + '</li></ul>';
   h += '<p class="ksat-lim">' + esc(t(lang, 'rlim')) + '</p>';
-  h += '<p class="ksat-src">' + esc(rd.source.attribution) + '. <a class="src" href="' + esc(rd.source.url) + '" rel="noopener" target="_blank">Sentinel-1 RTC, Microsoft Planetary Computer</a> <a class="src" href="' + esc(rd.source.licence_url) + '" rel="noopener" target="_blank">CC BY 4.0</a> <a class="src" href="/data/satellite-radar.json">' + esc(t(lang, 'method')) + ', ' + esc(t(lang, 'upd', { d: fd(rd.updated) })) + '</a></p>';
+  h += '<p class="ksat-src">' + esc(rd.source.attribution) + '. <a class="src" href="' + esc(rd.source.url) + TB.kbx_space__s.k0 + esc(rd.source.licence_url) + '" rel="noopener" target="_blank">CC BY 4.0</a> <a class="src" href="/data/satellite-radar.json">' + esc(t(lang, 'method')) + ', ' + esc(t(lang, 'upd', { d: fd(rd.updated) })) + '</a></p>';
   if (k) {
     const th = t(lang, 'rth'), f = v => v == null ? '' : String(v);
     const rows = months.map((m, i) => '<tr><td>' + esc(fd(m)) + '</td><td>' + esc(rec.dt[i] ? fd(rec.dt[i]) : t(lang, 'none')) + '</td><td>' + (rec.ns[i] || '') + '</td><td>' + f(rec.vv[i]) + '</td><td>' + f(rec.rvv[i]) + '</td><td>' + (rec.y && rec.y[i] != null ? sg(rec.y[i]) : '') + '</td></tr>').reverse().join('');
@@ -101,7 +100,7 @@ function bldHtml(bd, id, lang, fd, num) {
     if (rec.max_height_m || rec.max_floors) h += '<li>' + esc(t(lang, 'btall', { h: [rec.max_height_m ? t(lang, 'bm', { h: num(rec.max_height_m) }) : '', rec.max_floors ? t(lang, 'bfl', { f: rec.max_floors }) : ''].filter(Boolean).join(', ') })) + '</li>';
   }
   h += '</ul><p class="ksat-lim">' + esc(t(lang, 'blim')) + '</p>';
-  h += '<p class="ksat-src">' + esc(bd.source.attribution) + '. <a class="src" href="' + esc(bd.source.url) + '" rel="noopener" target="_blank">Overture Maps buildings, ' + esc(rel) + '</a> <a class="src" href="' + esc(bd.source.licence_url) + '" rel="noopener" target="_blank">ODbL 1.0</a> <a class="src" href="' + esc(bd.source.attribution_url) + '" rel="noopener" target="_blank">Overture attribution</a> <a class="src" href="/data/buildings.json">' + esc(t(lang, 'method')) + ', ' + esc(t(lang, 'upd', { d: fd(bd.updated) })) + '</a></p>';
+  h += '<p class="ksat-src">' + esc(bd.source.attribution) + '. <a class="src" href="' + esc(bd.source.url) + '" rel="noopener" target="_blank">Overture Maps buildings, ' + esc(rel) + '</a> <a class="src" href="' + esc(bd.source.licence_url) + '" rel="noopener" target="_blank">ODbL 1.0</a> <a class="src" href="' + esc(bd.source.attribution_url) + TB.kbx_space__s.k1 + esc(t(lang, 'method')) + ', ' + esc(t(lang, 'upd', { d: fd(bd.updated) })) + '</a></p>';
   if (rec.b && rec.b.length) {
     const th = t(lang, 'bth');
     const rows = rec.b.map(b => '<tr><td>' + num(b.d) + ' m</td><td>' + num(b.m2) + ' m²</td><td>' + (b.h ? num(b.h) + ' m' : '') + '</td><td>' + (b.f || '') + '</td><td>' + esc((b.src || []).join(', ')) + '</td><td>' + esc(b.fs ? fd(relDate(b.fs)) : '') + '</td><td><code title="' + esc(b.id) + '">' + esc(String(b.id).slice(0, 8)) + '</code></td></tr>').join('');
@@ -119,7 +118,7 @@ export function spaceHtml(sp, id, lang, fd, ms, opt) {
   const num = v => { try { return nmf(lang === 'en' ? 'en-GB' : lang).format(v); } catch (e) { return String(v); } };
   const a = radarHtml(sp.radar, id, lang, fd, ms, opt), b = bldHtml(sp.bld, id, lang, fd, num);
   const lk = '<p class="ksat-src"><a href="/tools/site-visit/?p=' + encodeURIComponent(id) + (lang !== 'en' ? '&amp;lang=' + lang : '') + '">' + esc(t(lang, 'sv')) + '</a></p>';
-  return a || b ? CSS + '<div class="kspace">' + a + b + lk + '</div>' : '';
+  return a || b ? TB.kbx_space__s.CSS + '<div class="kspace">' + a + b + lk + '</div>' : '';
 }
 
 // for /api/x/pay/series (kbx_pay.js)
@@ -185,13 +184,13 @@ async function visit(req, env, ctx) {
   const subject = { type: 'SiteVisitRecord', project: { id: x.id, name: x.n || null, market: x.mk || null, page: ORIGIN + '/projects/' + x.s + '/' },
     reported_by_browser: { position: lat != null && lng != null ? { lat, lng, accuracy_m: acc } : null, device_time: dev, photos },
     checked_by_kolaboro: checks,
-    note: 'Kolaboro signs what the visitor\'s browser reported and when it reached us, plus the distance to the project location in our records. Photos never left the device: only their SHA-256 fingerprints are here, so anyone holding a photo can check it is one of these. GPS and clocks can be set by the device owner, so this record shows consistency, not proof of presence. Not a verdict on any project or company.' };
+    note: TB.kbx_space__s.k2 };
   const lines = photos.map(p => 'photo ' + p.sha256).sort();
   const { jcs, issue } = await import('./kbx_acct.js');
   lines.push('subject ' + await sha256hex(jcs(Object.assign({}, subject, { photos_hashed: lines.length }))));
   const root = await sha256hex(lines.join('\n'));
   subject.rootSha256 = root; subject.sealLines = lines;
-  subject.sealMethod = 'rootSha256 = SHA-256 of the lines joined by a newline: "photo <sha256>" per photo (sorted), then "subject <SHA-256 of JCS(credentialSubject without rootSha256, sealLines, sealMethod, timestamp), plus photos_hashed: number of photo lines>". JCS = RFC 8785.';
+  subject.sealMethod = TB.kbx_space__s.k3;
   // OpenTimestamps: the existing stamp path keeps the root hash only (no position, no project, no photo hashes)
   let stamp = { status: 'not_stamped' };
   try {
@@ -202,7 +201,7 @@ async function visit(req, env, ctx) {
   } catch (e) { stamp = { status: 'error' }; }
   subject.timestamp = stamp;
   const doc = { '@context': ['https://www.w3.org/ns/credentials/v2'], id: 'urn:sha256:' + root, type: ['VerifiableCredential', 'KolaboroSiteVisitRecord'], name: 'Kolaboro site-visit record',
-    description: 'A buyer\'s site visit as their browser reported it, received and signed by Kolaboro, with the distance to the project location in our records.',
+    description: TB.kbx_space__s.k4,
     issuer: { id: 'did:web:kolaboro.com', name: 'Kolaboro' }, validFrom: at, credentialSubject: subject };
   const vc = await issue(env, doc, at);
   if (!vc) return out({ error: 'signing_unavailable', unsigned: doc }, 503);

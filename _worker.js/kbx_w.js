@@ -12,6 +12,7 @@
 //   GET /api/x/w/agent?market=dubai&brn=N  or &office=NAME: Dubai Land Department broker or office lookup, when a source is reachable
 // The data files are written by batch jobs on main (tools/kolaboro-w/) from the private research records; this module only reads them.
 import * as KB from './kolaboro.js';
+import { TB } from './kbx_strings.js';
 const { sha } = KB;
 export const PATHS = /^\/api\/x\/w(\/|$)/;
 
@@ -126,7 +127,7 @@ async function bormeLookup(env, name) {
 }
 async function insolvency(req, u, env, ctx) {
   const name = validName(u.searchParams.get('name'));
-  if (!name) return out({ error: 'enter the full legal name of a company, including its legal form (for example Limited, Ltd, PLC, LLP, S.L., S.A., Sociedad Limitada). Names of people are not searched.' }, 400, 0);
+  if (!name) return out({ error: TB.kbx_w__s.k0 }, 400, 0);
   const base = norm(name);
   const ck = 'ins/v2/' + encodeURIComponent(base);
   const hit = await caches.default.match(new Request('https://kolaboro.com/__w_cache/' + ck));
@@ -136,8 +137,8 @@ async function insolvency(req, u, env, ctx) {
       gazetteLookup(name).catch(e => ({ source: 'The Gazette (UK)', error: 'did not answer', detail: String(e && e.message || e).slice(0, 120) })),
       bormeLookup(env, name).catch(e => ({ source: 'BORME (Spain)', error: 'index not readable' }))]);
     return { query: name, normalised: base, fetched_at: new Date().toISOString(), uk, es,
-      rule: 'Only notices for exactly this company name are listed, apart from capitals, accents, punctuation and the legal form. Check it is the same company (registration number, address): a name can be reused after a company is dissolved.',
-      not_covered: 'Other countries are not searched. See the list of official registers on kolaboro.com/tools/insolvency-check/.' };
+      rule: TB.kbx_w__s.k1,
+      not_covered: TB.kbx_w__s.k2 };
   }, 86400, ctx);
   if (d.uk && d.uk.error) d.partial = true;
   d.query = name;   // a cached answer is shared by everyone who searches the same normalised name: echo this request's own text, never an earlier visitor's
@@ -177,7 +178,7 @@ async function agentSources(env, ctx, fresh) {
     if (s.env) o.key = env[s.env] ? 'connected' : 'not connected yet';
     return o;
   }));
-  const d = { sources: res, note: 'Probed from Cloudflare (where this API runs). A source that is blocked or captcha-protected is listed for a check by hand, never estimated.' };
+  const d = { sources: res, note: TB.kbx_w__s.k3 };
   ctx.waitUntil(caches.default.put(ck, new Response(JSON.stringify(d), { headers: { 'content-type': 'application/json', 'cache-control': 'public, max-age=21600' } })));
   return out(d, 200, 600);
 }
@@ -210,7 +211,7 @@ async function agent(req, u, env, ctx) {
   if (!brn && office.length < 3) return out({ error: 'enter a broker registration number (BRN, digits) or at least 3 letters of an office name' }, 400, 0);
   const query = brn ? { brn } : { office };
   if (!env.DUBAI_PULSE_CLIENT_ID || !env.DUBAI_PULSE_CLIENT_SECRET) return out({ query, status: 'not connected',
-    note: 'The official open dataset (Dubai Pulse) needs an API key we do not have yet, and the Dubai Land Department search page is protected by a captcha, which we do not get around. Check by hand below: it is the same register, and takes a minute.',
+    note: TB.kbx_w__s.k4,
     by_hand: BY_HAND }, 200, 0);
   try {
     const d = await cached('agent/v1/' + (brn ? 'b' + brn : 'o' + encodeURIComponent(office.toLowerCase())), async () => {

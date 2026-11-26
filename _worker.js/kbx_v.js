@@ -1,3 +1,4 @@
+import { TB } from './kbx_strings.js';
 // Feature module v for kolaboro.com (see kbx.js): market statistics: delay index, on-time odds, monthly press release.
 // Owned by block V (batch 4, 4 Nov 2026). Endpoints live under /api/x/v/.
 //   GET /api/x/v/                    index of endpoints
@@ -34,8 +35,8 @@ export async function handle(req, u, env, ctx) {
   if (req.method !== 'GET' && req.method !== 'HEAD') return out({ error: 'method not allowed' }, 405, 0);
   const p = u.pathname.replace(/\/+$/, '');
   if (p === '/api/x/v') return out({ endpoints: {
-    '/api/x/v/on-time?id=BALI-014': 'One project: status against its first promised handover and, where 10 or more comparable closed projects exist, the share that handed over within 6 months (Wilson 95% interval). Page: /index/delays/#odds',
-    '/api/x/v/delays': 'Delivery-delay index: per market, share past the first promised handover, median and 90th percentile months late, sample sizes. Page: /index/delays/',
+    '/api/x/v/on-time?id=BALI-014': TB.kbx_v__s.k0,
+    '/api/x/v/delays': TB.kbx_v__s.k1,
     '/api/x/v/delays?market=Bali': 'One market',
     '/api/x/v/press': 'The latest monthly press release as JSON. Page: /press/monthly/' }, licence: LIC });
 

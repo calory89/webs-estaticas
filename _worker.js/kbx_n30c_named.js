@@ -6,6 +6,7 @@
 //   priceLink(pd, ix, x, lang) item 18: one line under "Prices over time" that links to the place's price history page
 import { S } from './kbx_n30c_i18n.js';
 import { mkName } from './kbx_hdate.js';
+import { TB } from './kbx_strings.js';
 export { S };
 const ORIGIN = 'https://kolaboro.com';
 export const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
@@ -36,7 +37,7 @@ export function pinRecord(ld, x) {
   if (h) out.flood = { river_m: h.flood_river_m == null ? null : h.flood_river_m, coast_m: h.flood_coast_m == null ? null : h.flood_coast_m, return_period_years: 100, cell_km: 1, source: 'WRI Aqueduct Floods v2', url: (hz.sources || {}).flood || null, read: hz.updated || null };
   return out;
 }
-const PIN_CSS = '<style>.kpc{margin:0 0 16px;padding:10px 14px;border:1px solid var(--k-line,#d5dbd8);border-radius:12px}.kpc h3{margin:0;font-size:1.05rem}.kpc dt{font-weight:640;margin-top:8px}.kpc dd{margin:0}.kpc .lim{font-size:.82rem;color:var(--k-muted,#56636F);margin:8px 0 0}</style>';
+/* PIN_CSS: n40 k17, in /data/i18n/k17s.json */
 export function pinHtml(ld, x, lang, fd) {
   let R; try { R = pinRecord(ld, x); } catch (e) { R = null; }
   if (!R || (!R.land && !R.protected && !R.flood)) return '';
@@ -58,7 +59,7 @@ export function pinHtml(ld, x, lang, fd) {
     rows.push([t(lang, 'pc_flood'), esc(F.river_m == null && F.coast_m == null ? t(lang, 'pc_fna') : t(lang, 'pc_f', { r: v(F.river_m), c: v(F.coast_m) }))]); srcs.push(src(F.url, 'WRI Aqueduct Floods')); dates.push(F.read);
   }
   const d = dates.filter(Boolean).sort()[0];
-  return PIN_CSS + '<div class="kpc" id="pin-check"><h3>' + esc(t(lang, 'pc_h')) + '</h3><dl>' + rows.map(([a, b]) => '<dt>' + esc(a) + '</dt><dd>' + b + '</dd>').join('') + '</dl><p class="lim">' +
+  return TB.kbx_n30c_named__s.PIN_CSS + '<div class="kpc" id="pin-check"><h3>' + esc(t(lang, 'pc_h')) + '</h3><dl>' + rows.map(([a, b]) => '<dt>' + esc(a) + '</dt><dd>' + b + '</dd>').join('') + '</dl><p class="lim">' +
     esc(t(lang, 'pc_i', { a: num(R.accuracy_m, lang) })) + ' ' + srcs.join(', ') + (d ? ', ' + esc(t(lang, 'pc_read', { d: fd(d) })) : '') + '. <a href="/api/v1/pin/' + encodeURIComponent(x.id) + '">' + esc(t(lang, 'pc_api')) + '</a></p></div>';
 }
 

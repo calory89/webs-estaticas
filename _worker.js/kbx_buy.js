@@ -21,7 +21,8 @@ import { SRC29, PLAN29, COUNTRY29, GL29, GL_TERMS, GL_NAME, TC29, TCPL, TCPL_T, 
 import { ogImg } from './kbx_ogt.js';   // n29t: share image per page type
 import { guideNext, accLine } from './kbx_e29_lines.js';   // n29e (batch 29): next review (item 64), who is accountable (56)
 import { e29t } from './kbx_e29_i18n.js';
-import { regSale, rsText } from './kbx_n31d_rs.js';   // n31d: DLD registered sale prices are not asking prices
+import { regSale, rsText } from './kbx_n31d_rs.js';
+import { TB } from './kbx_strings.js';   // n31d: DLD registered sale prices are not asking prices
 
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = BUY_LANGS;
@@ -457,7 +458,7 @@ async function sitemapXml(env) {
   let cs = []; try { cs = [...(await tcData(env)).by.keys()]; } catch (e) { cs = []; }   // cost pages that exist (5+ published prices)
   const paths = [BASE].concat(BUY_PLACES.map(P => BASE + P.s + '/'), GL_TERMS.map(x => '/glossary/' + x + '/'), cs.map(x => '/tools/total-cost/' + x + '/'));
   const x = paths.flatMap(p => LANGS.map(l => '<url><loc>' + ORIGIN + pre(l) + p + '</loc><lastmod>' + MOD + '</lastmod>' + LANGS.map(a => '<xhtml:link rel="alternate" hreflang="' + a + '" href="' + ORIGIN + pre(a) + p + '"/>').join('') + '<xhtml:link rel="alternate" hreflang="x-default" href="' + ORIGIN + p + '"/></url>'));
-  return '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n' + x.join('\n') + '\n</urlset>\n';
+  return TB.kbx_buy__s.k0 + x.join('\n') + '\n</urlset>\n';
 }
 
 export { guidePage, hubPage, guideData, glData, glPage, tcData, tcPage, SRC, PLAN };   // for the local test

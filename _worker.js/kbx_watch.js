@@ -55,7 +55,7 @@ export const watchHeading = lang => t(lang, 'h');
 
 const rdapUrl = d => 'https://client.rdap.org/?type=domain&object=' + encodeURIComponent(d);
 const crtUrl = d => 'https://crt.sh/?q=' + encodeURIComponent(d);
-const CSS = '<style id="kwatch-css">.kwa-l{list-style:none;padding:0;margin:var(--k-3,12px) 0;display:grid;gap:var(--k-3,12px)}.kwa-l li{padding:var(--k-3,12px) var(--k-4,16px);border:1px solid var(--k-line,#D5DAD8);border-radius:var(--k-r-md,10px);background:var(--k-surface,#fff);overflow-wrap:anywhere}.kwa-l b{font-weight:650}.kwa-l .kwa-m{display:block;color:var(--k-muted,#56636F);font-size:var(--k-fs-sm,15px);margin-top:4px}.kwa-l .src{margin-inline-start:6px}.kwa-sa{margin-top:var(--k-5,24px)}.kwa-lk{display:flex;flex-wrap:wrap;gap:var(--k-2,8px) var(--k-5,24px)}.kwa-sa h3,.kwa-la h3{margin:0 0 var(--k-2,8px);font-size:var(--k-fs-lg,20px)}</style>';
+/* CSS: n40 k17, in /data/i18n/k17s.json */
 
 function itemHtml(x, lang) {
   const meta = [x.reg ? t(lang, 'reg', { d: fdt(x.reg, lang) }) : t(lang, 'noreg'), x.cert ? t(lang, x.cert_first ? 'cert' : 'cert2', { d: fdt(x.cert, lang) }) : t(lang, x.cert_first ? 'nocert' : 'nocert2'), x.gone ? t(lang, 'gone', { d: fdt(x.gone, lang) }) : t(lang, x.res ? 'res1' : 'res0')].join(' ');
@@ -83,26 +83,26 @@ export function watchDevHtml(wd, slug, lang) {
     h += '<div class="kwa-sa"><h3>' + esc(t(lang, 'sa_h')) + '</h3><ul class="fl"><li class="kfact">' + esc(t(lang, 'sa_ok', { d: fdt(sa.updated, lang), lists: '\u0001' })).replace('\u0001', links) + '</li></ul><p class="k-xs">' + esc(t(lang, 'sa_note')) + ' <a href="/data/sanctions.json">sanctions.json</a></p></div>';
   }
   h += warnDevHtml(sa, slug, lang);   // n21a: regulator warning lists of unauthorised firms
-  return h ? CSS + h : '';
+  return h ? TB.kbx_watch__s.CSS + h : '';
 }
 
 // ------------------------------------------------------------------------------------------------ public feed page
 const PG_CSS = '<style id="kwatch-pg">.kwa-pg .k-phead{padding-block:var(--k-7,48px) var(--k-5,24px)}.kwa-pg h1{max-width:24ch}.kwa-pg .lead,.kwa-pg p{max-width:72ch;line-height:1.6}.kwa-pg .kwa-cav{color:var(--k-ink-2,#2F3E4B)}' +
   '.kwa-f{display:flex;flex-wrap:wrap;gap:var(--k-2,8px);align-items:center;margin:var(--k-4,16px) 0}.kwa-f input{flex:1 1 260px;min-height:44px;padding:0 12px;border:1px solid var(--k-field,#9AA5AE);border-radius:var(--k-r-sm,6px);background:var(--k-surface,#fff);color:var(--k-ink,#13222E);font:inherit}' +
   '.kwa-pg td{overflow-wrap:anywhere}.kwa-pg td a{color:var(--k-sea,#155C75)}.kwa-pg .kwa-src{padding-inline-start:20px}.kwa-pg .kwa-src li{margin:0 0 6px}</style>';
-const FILTER_JS = '(function(){var i=document.getElementById("kwa-q"),rows=[].slice.call(document.querySelectorAll("#kwa-t tbody tr")),c=document.getElementById("kwa-c");if(!i)return;i.addEventListener("input",function(){var q=i.value.trim().toLowerCase(),n=0;rows.forEach(function(r){var ok=!q||r.textContent.toLowerCase().indexOf(q)>=0;r.hidden=!ok;if(ok)n++;});if(c)c.textContent=n+" / "+rows.length;});})();';
+/* FILTER_JS: n40 k17, in /data/i18n/k17s.json */
 function pageBody(la, lang) {
   const items = (la && la.items) || [], k = new Set(items.map(x => x.o)).size;
   const rows = items.map(x => '<tr><td data-label="' + esc(t(lang, 'th')[0]) + '" dir="ltr"><b>' + esc(x.u || x.d) + '</b></td><td data-label="' + esc(t(lang, 'th')[1]) + '"><span dir="ltr">' + esc(x.o) + '</span>' + (x.dv ? '<br><a href="' + esc(pre(lang) + (x.url || '')) + '">' + esc(x.dv) + '</a>' : '') + '</td><td data-label="' + esc(t(lang, 'th')[2]) + '">' + esc((t(lang, 'why') || {})[x.why] || x.why) + '</td>' +
     '<td data-label="' + esc(t(lang, 'th')[3]) + '"><a href="' + esc(rdapUrl(x.d)) + '" rel="nofollow noopener" target="_blank">' + esc(x.reg ? fdt(x.reg, lang) : t(lang, 'np')) + '</a></td><td data-label="' + esc(t(lang, 'th')[4]) + '"><a href="' + esc(crtUrl(x.d)) + '" rel="nofollow noopener" target="_blank">' + esc(x.cert ? fdt(x.cert, lang) : x.cert_first ? t(lang, 'nf') : '-') + '</a></td><td data-label="' + esc(t(lang, 'th')[5]) + '">' + esc(x.gone ? t(lang, 'gone', { d: fdt(x.gone, lang) }) : t(lang, x.res ? 'yes' : 'no')) + '</td></tr>').join('');
   const table = items.length ? '<div class="kwa-f"><label for="kwa-q">' + esc(t(lang, 'p_filter')) + '</label><input id="kwa-q" type="search" placeholder="' + esc(t(lang, 'p_ph')) + '" autocomplete="off"><span id="kwa-c" class="k-muted" aria-live="polite"></span></div>' +
-    '<div class="k-table-wrap"><table class="k-table k-table--dense k-table--stack" id="kwa-t"><thead><tr>' + t(lang, 'th').map(h => '<th scope="col">' + esc(h) + '</th>').join('') + '</tr></thead><tbody>' + rows + '</tbody></table></div><script>' + FILTER_JS + '</script>'
+    TB.kbx_watch__s.k0 + t(lang, 'th').map(h => '<th scope="col">' + esc(h) + '</th>').join('') + '</tr></thead><tbody>' + rows + '</tbody></table></div><script>' + TB.kbx_watch__s.FILTER_JS + '</script>'
     : '<div class="k-empty"><strong>' + esc(t(lang, 'p_empty')) + '</strong></div>';
   const srcs = ((la && la.sources) || []).map(s => '<li><a href="' + esc(s.url) + '" rel="noopener" target="_blank">' + esc(s.name) + '</a> <span class="k-muted">(' + esc(s.licence) + ')</span></li>').join('');
-  return '<div class="kwa-pg"><section class="k-sec"><div class="k-wrap"><div class="k-phead"><p class="k-crumb"><a href="' + pre(lang) + '/">Kolaboro</a></p><h1>' + esc(t(lang, 'p_title')) + '</h1><p class="lead">' + esc(t(lang, 'p_lead')) + '</p><p class="kwa-cav">' + esc(t(lang, 'p_cav')) + '</p>' +
+  return TB.kbx_watch__s.k1 + pre(lang) + '/">Kolaboro</a></p><h1>' + esc(t(lang, 'p_title')) + '</h1><p class="lead">' + esc(t(lang, 'p_lead')) + '</p><p class="kwa-cav">' + esc(t(lang, 'p_cav')) + '</p>' +
     '<p><a href="' + pre(lang) + '/watch/lookalikes/images/">' + esc(I30(lang, 'ir_t')) + '</a></p>' +   // n30c (item 16): pictures shared by two projects
     (la ? '<p><b>' + esc(t(lang, 'p_count', { n: items.length, k, w: la.watched || 0 })) + '</b> <span class="k-muted">' + esc(t(lang, 'p_upd', { d: fdt(la.updated, lang) })) + '</span></p>' : '') + '</div>' + table + '</div></section>' +
-    '<section class="k-sec"><div class="k-wrap"><h2>' + esc(t(lang, 'p_mh')) + '</h2><p>' + esc(t(lang, 'p_m')) + '</p><h3>' + esc(t(lang, 'p_src')) + '</h3><ul class="kwa-src">' + srcs + '</ul><p><a href="/api/x/watch/lookalikes">/api/x/watch/lookalikes</a> · <a href="/data/lookalikes.json">/data/lookalikes.json</a> · <a href="' + '/tools/payment-email-check/">' + esc(t(lang, 'p_pay')) + '</a></p></div></section></div>';
+    '<section class="k-sec"><div class="k-wrap"><h2>' + esc(t(lang, 'p_mh')) + '</h2><p>' + esc(t(lang, 'p_m')) + '</p><h3>' + esc(t(lang, 'p_src')) + '</h3><ul class="kwa-src">' + srcs + TB.kbx_watch__s.k2 + '/tools/payment-email-check/">' + esc(t(lang, 'p_pay')) + '</a></p></div></section></div>';
 }
 export async function page(req, u, env, ctx, shell) {
   const m = u.pathname.match(PAGE_RX); if (!m || !shell) return null;
@@ -136,7 +136,7 @@ export async function handle(req, u, env) {
   if (u.pathname === '/api/x/watch/sanctions') {
     if (!wd.sa) return out({ error: 'not_built_yet' }, 503);
     const s = u.searchParams.get('dev');
-    if (s) return out({ dev: s, screened_no_match: wd.clean.has(s), updated: wd.sa.updated, lists: wd.sa.lists, warnings: wd.sa.warnings ? { screened_no_match: (wd.sa.warnings.no_match || []).includes(s), updated: wd.sa.warnings.updated, lists: wd.sa.warnings.lists } : undefined, note: 'false means the name was not screened (it could be a person\'s name) or is under review; it is not a finding.' });
+    if (s) return out({ dev: s, screened_no_match: wd.clean.has(s), updated: wd.sa.updated, lists: wd.sa.lists, warnings: wd.sa.warnings ? { screened_no_match: (wd.sa.warnings.no_match || []).includes(s), updated: wd.sa.warnings.updated, lists: wd.sa.warnings.lists } : undefined, note: TB.kbx_watch__s.k3 });
     return out(wd.sa);
   }
   if (!wd.la) return out({ error: 'not_built_yet' }, 503);

@@ -145,12 +145,7 @@ export function projectFc(fc, id, devGroup) {
 }
 
 // ------------------------------------------------------------------------------------------------ HTML: forecast
-const FC_CSS = '<style id="kfc17">.kfc{margin:28px 0 0;padding:20px 22px;border:1px solid var(--k-line,var(--line));border-radius:var(--k-r-lg,14px);background:var(--k-surface,var(--card))}.kfc h3{margin:0 0 8px;font-size:var(--k-fs-lg,20px)}' +
-  '.kfc p{margin:8px 0;line-height:1.55;max-width:72ch}.kfc .tw{margin:12px 0}.kfc td.n,.kfc th.n{text-align:end;font-variant-numeric:tabular-nums;white-space:nowrap}.kfc-bar{display:inline-block;vertical-align:middle;width:72px;height:8px;border-radius:4px;background:var(--k-sunken,#E8ECEA);margin-inline-start:8px;overflow:hidden}' +
-  '.kfc-bar i{display:block;height:100%;width:var(--v);background:var(--k-sea,#155C75)}.kfc .k-alert{margin:12px 0}.kfc-fine{font-size:var(--k-fs-xs,13px);color:var(--k-muted,#56636F)}.kfc-links a{margin-inline-end:16px}.kfc-fig{margin:14px 0;direction:ltr}.kfc-fig svg{width:100%;height:auto;max-width:640px;display:block}' +
-  '.kfc-fig figcaption{font-size:var(--k-fs-xs,13px);color:var(--k-muted)}.kfc-ln{fill:none;stroke:var(--k-sea,#155C75);stroke-width:2.5}.kfc-bd{fill:var(--k-sea-soft,#DCEBF0);stroke:none}.kfc-gr{stroke:var(--k-line,#D5DBD8);stroke-width:1}.kfc-tx{fill:var(--k-muted,#56636F);font-size:12px;font-family:inherit}' +
-  '.kfc-m{max-width:860px}.kfc-m h2{font-size:var(--k-fs-2xl,28px);margin:0 0 8px}.kfc .k-table-wrap{margin:12px 0}.kfc .k-table td.n,.kfc .k-table th.n{text-align:end}' +
-  '@media(max-width:640px){.kfc{padding:16px}.kfc-bar{width:48px}}</style>';
+/* FC_CSS: n40 k17, in /data/i18n/k17s.json */
 function rowsTable(rows, lang, rel, prj, kt) {
   if (!rows.length) return '';
   const lbl = r => rel ? (r.k === 0 ? t(lang, 'k0') : t(lang, 'kn', { m: r.k })) : esc(monthName(prj.first + r.k, lang)) + ' <small class="kfc-fine">(' + esc(r.k === 0 ? t(lang, 'k0') : t(lang, 'kn', { m: r.k })) + ')</small>';
@@ -163,20 +158,20 @@ export function fcProjectHtml(fc, x, lang, devGroup) {
   try {
     const o = projectFc(fc, x.id, devGroup); if (!o) return '';
     let b = '<div class="kfc" id="forecast"><h3>' + esc(t(lang, 'fc_h')) + '</h3><p class="ki">' + esc(t(lang, 'fc_intro')) + '</p>';
-    if (o.status === 'none') return b + '<p class="k-muted">' + esc(t(lang, 'none')) + '</p></div>' + FC_CSS;
-    if (o.status === 'done') return b + '<p class="k-muted">' + esc(t(lang, 'done')) + '</p></div>' + FC_CSS;
+    if (o.status === 'none') return b + '<p class="k-muted">' + esc(t(lang, 'none')) + '</p></div>' + TB.kbx_fc__s.FC_CSS;
+    if (o.status === 'done') return b + '<p class="k-muted">' + esc(t(lang, 'done')) + '</p></div>' + TB.kbx_fc__s.FC_CSS;
     b += '<p>' + esc(t(lang, 'fc_first', { d: monthName(mi(o.first), lang) })) + (o.current && o.current !== o.first ? ' ' + esc(t(lang, 'fc_cur', { d: monthName(mi(o.current), lang) })) : '') + ' ' + srcMark(fc, lang) + '</p>';
-    if (o.status === 'excluded') return b + '<p class="k-muted">' + esc(t(lang, 'excl1')) + '</p>' + methodLink(lang) + '</div>' + FC_CSS;
+    if (o.status === 'excluded') return b + '<p class="k-muted">' + esc(t(lang, 'excl1')) + '</p>' + methodLink(lang) + '</div>' + TB.kbx_fc__s.FC_CSS;
     const cond = o.months_since_first >= 0 ? '<p>' + esc(t(lang, 'cond', { m: nf(o.months_since_first, lang) })) + '</p>' : '';
     if (o.group) b += '<p>' + esc(gLine(o.group, lang)) + '</p>' + cond + (rowsTable(o.rows, lang, false, { first: mi(o.first) }) || '');
     else {
       const m = o.market;
       b += '<div class="k-alert" role="status"><span>' + esc(t(lang, 'nd', { g: placeName(m.name, lang), n: nf(m.n, lang), k: nf(m.k, lang), N: MIN_N, K: MIN_K })) + '</span></div>';
-      return b + methodLink(lang) + '</div>' + FC_CSS;   // named pages show no pooled figure: the all-markets context lives on the method and market pages
+      return b + methodLink(lang) + '</div>' + TB.kbx_fc__s.FC_CSS;   // named pages show no pooled figure: the all-markets context lives on the method and market pages
     }
     if (o.beyond != null && o.rows.length) b += '<p class="kfc-fine">' + esc(t(lang, 'beyond', { m: o.beyond })) + '</p>';
     else if (!o.rows.length) b += '<p class="kfc-fine">' + esc(t(lang, 'beyond', { m: Math.max(0, o.months_since_first) })) + '</p>';
-    return b + '<p class="kfc-fine">' + esc(t(lang, 'bias')) + '</p>' + methodLink(lang) + '</div>' + FC_CSS;
+    return b + '<p class="kfc-fine">' + esc(t(lang, 'bias')) + '</p>' + methodLink(lang) + '</div>' + TB.kbx_fc__s.FC_CSS;
   } catch (e) { return ''; }
 }
 const methodLink = lang => '<p class="kfc-fine kfc-links"><a href="' + pre(lang) + '/methods/delivery-forecast/">' + esc(t(lang, 'method')) + '</a> <a href="/api/x/fc/curves">' + esc(t(lang, 'm_api')) + '</a></p>';
@@ -209,7 +204,7 @@ export async function fcMarketHtml(env, marketKey) {   // English: /m/<market>/ 
     let b = '<section class="sec" id="forecast"><div class="wrap"><div class="kfc kfc-m"><h2>' + esc(t(lang, 'fc_h')) + ': ' + esc(g.name) + '</h2><p>' + esc(t(lang, 'fc_intro')) + '</p>';
     if (g.enough) b += '<p>' + esc(gLine(g, lang)) + ' ' + srcMark(fc, lang) + '</p>' + rowsTable(g.by.filter(Boolean), lang, true, null, 1) + curveSvg(g, lang);
     else b += '<div class="k-alert" role="status"><span>' + esc(t(lang, 'nd', { g: g.name, n: g.n, k: g.k, N: MIN_N, K: MIN_K })) + '</span></div><p><b>For context only, all markets pooled:</b> ' + fc.all.n + ' projects whose first promised handover has passed; ' + fc.all.k + ' recorded as handed over. This is not an estimate for ' + esc(g.name) + '. ' + srcMark(fc, lang) + '</p>' + rowsTable(fc.all.by.filter(Boolean), lang, true, null, 1);
-    return b + '<p class="kfc-fine">' + esc(t(lang, 'bias')) + '</p>' + methodLink(lang) + '</div></div></section>' + FC_CSS;
+    return b + '<p class="kfc-fine">' + esc(t(lang, 'bias')) + '</p>' + methodLink(lang) + '</div></div></section>' + TB.kbx_fc__s.FC_CSS;
   } catch (e) { return ''; }
 }
 
@@ -227,9 +222,9 @@ export async function rsData(env) {
     for (const g of ya.groups || []) if (g.grp === 'project') projects[g.key] = { reported: g.n || 0, answered: g.answered || 0, median_days: g.median_days == null ? null : +g.median_days };
     for (const r of dr) { if (!r || !r.project_id) continue; const o = replies[r.project_id] || (replies[r.project_id] = { approved: 0 }); o.approved++; }
     const v = { version: 'dev-response-live-1', generated: new Date().toISOString(), live: true,
-      job: 'computed live by the kolaboro.com worker from the public aggregate functions kolaboro_y_asks_public and kolaboro_devreply_public (10 minute cache)',
-      sources: { asks: 'kolaboro_y_asks_public: questions a buyer sent from /ask-developer/ and later reported back (answered or not, and the day); a project is broken out from ' + (ya.min_sample || 5) + ' reported questions', replies: 'kolaboro_devreply_public: right-of-reply submissions approved by a moderator (newest 200)' },
-      note: 'Counts and day medians per project id only. No messages, emails, names, tokens or IP hashes. Developer pages add these up over the developer’s projects.',
+      job: TB.kbx_fc__s.k0,
+      sources: { asks: TB.kbx_fc__s.k1 + (ya.min_sample || 5) + ' reported questions', replies: 'kolaboro_devreply_public: right-of-reply submissions approved by a moderator (newest 200)' },
+      note: TB.kbx_fc__s.k2,
       licence: 'CC BY 4.0 (credit: Kolaboro, kolaboro.com)', min_reported_per_project: ya.min_sample || 5,
       totals: { asks_opened: ya.opened || 0, asks_reported: ya.reported || 0, projects_below_min: ya.projects_below_min || 0, replies_approved: dr.length }, projects, replies };
     RS_LIVE = { t: Date.now(), v }; return v;
@@ -337,24 +332,20 @@ async function openNumbers0(env) {
     generated: new Date().toISOString(), version: 'open-1', note: 'Aggregates only. The paying-customer figure is a count; revenue amounts are not published.',
     xrays: { sealed_total: X ? X.all : null, last_24h: X ? X.h24 : null, markets_24h: X ? X.markets : null, source: '/live/xrays/ (public function kolaboro_xray_live)' },
     pages: Object.assign({ source: '/api/seo/urls' }, named || { projects: null, developers: null, languages: LANGS.length }),
-    watching: { email: m && m.totals ? m.totals.followers : null, push_devices: push.ok && push.v ? push.v.devices : null, saved_alerts: al.ok && al.v ? al.v.live : null, source: 'public functions kolaboro_metrics_public (followers only), kolaboro_push_public, kolaboro_y_alerts_public' },
+    watching: { email: m && m.totals ? m.totals.followers : null, push_devices: push.ok && push.v ? push.v.devices : null, saved_alerts: al.ok && al.v ? al.v.live : null, source: TB.kbx_fc__s.k3 },
     sealed: { log_days: heads.length || (T && T.totals ? T.totals.log_days : null), log_first: heads.length ? heads.map(h => h.day).sort()[0] : (T && T.totals ? T.totals.log_first : null),
       projects_in_todays_root: seal ? seal.count : null, root_date: seal ? seal.date : null, bitcoin_stamps: m && m.totals ? m.totals.stamps : null, stamps_confirmed: m && m.totals ? m.totals.stamps_confirmed : null, source: '/log/ and /api/open/log' },
     shipping: { ships_last_7_days: sh && sh.totals ? sh.totals.ships_last_7_days : null, streak_days: sh && sh.streak ? sh.streak.current : null, as_of: sh ? sh.generated_at : null,
       deploys_last_7_days: dep7.length, rollbacks_last_7_days: dep7.filter(d => d.result === 'rolled_back').length,
       commit_to_live_median_s: ctl ? ctl.median_s : null, commit_to_live_p90_s: ctl ? ctl.p90_s : null, commit_to_live_samples: ctl ? ctl.samples : null, source: '/shipping/ (/data/shipping.json, /data/deploys.json)' },
-    customers: { paid_checks: m && m.totals && typeof m.totals.paid_checks === 'number' ? m.totals.paid_checks : null, source: 'public function kolaboro_metrics_public (count of payments recorded for a paid check; authorised by Carlos on 8 Nov 2026)', note: 'A count only. Revenue amounts are not published.' },
+    customers: { paid_checks: m && m.totals && typeof m.totals.paid_checks === 'number' ? m.totals.paid_checks : null, source: TB.kbx_fc__s.k4, note: 'A count only. Revenue amounts are not published.' },
     weeks: rows, weekly_history: T ? { generated: T.generated, complete_until: T.complete_until || null, file: '/data/traction.json' } : null, history_update: freeze,
-    caveats: ['X-ray counts include runs by the Kolaboro team while testing; they are not separated yet.', 'Sealed X-rays for weeks after the weekly history are counted live from the public function kolaboro_xray_live (see history_update). X-ray runs come only from the weekly history job; a week it has not completed is marked partial.']
+    caveats: ['X-ray counts include runs by the Kolaboro team while testing; they are not separated yet.', TB.kbx_fc__s.k5]
   };
 }
 
 // ------------------------------------------------------------------------------------------------ pages
-const PG_CSS = '<style id="kfc17p">.kfc-pg .k-phead{padding-block:var(--k-7,48px) var(--k-5,24px)}.kfc-pg h1{max-width:20ch}.kfc-pg .lead{max-width:62ch;color:var(--k-ink-2)}.kfc-pg h2{margin:0 0 var(--k-3,12px)}' +
-  '.kfc-pg .k-sec{padding-block:var(--k-6,32px)}.kfc-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr));gap:0;border:1px solid var(--k-line);border-radius:var(--k-r-lg,14px);background:var(--k-surface);overflow:hidden}' +
-  '.kfc-stats>div{padding:18px 20px;box-shadow:inset -1px -1px 0 var(--k-line)}.kfc-stats b{display:block;font-size:var(--k-fs-3xl,36px);line-height:1.05;font-weight:700;font-variant-numeric:tabular-nums;color:var(--k-ink)}.kfc-stats span{display:block;font-weight:600;margin-top:4px}.kfc-stats small{display:block;color:var(--k-muted);margin-top:2px;font-size:var(--k-fs-sm,15px)}' +
-  '.kfc-stats .k-src{display:inline-flex;margin-top:8px}.kfc-pg td.k-n,.kfc-pg th.k-n{text-align:end}.kfc-wk{display:inline-block;vertical-align:middle;height:8px;border-radius:4px;background:var(--k-sea,#155C75);margin-inline-start:8px;min-width:2px}.kfc-pg tr.is-now td{background:var(--k-sea-soft)}' +
-  '.kfc-pg .k-ledger dd{font-variant-numeric:tabular-nums}.kfc-pg .kfc-fine{font-size:var(--k-fs-xs,13px);color:var(--k-muted)}.kfc-meth p,.kfc-meth ul{max-width:68ch;line-height:1.6}.kfc-meth h2{font-size:var(--k-fs-xl,24px);margin:var(--k-6,32px) 0 var(--k-2,8px)}.kfc-meth h2:first-child{margin-top:0}.kfc-pg .kfc-links a{margin-inline-end:16px}.kfc-stats--one{max-width:420px}@media(max-width:640px){.kfc-stats b{font-size:var(--k-fs-2xl,28px)}}</style>';
+/* PG_CSS: n40 k17, in /data/i18n/k17s.json */
 const dur = (s, lang) => s == null ? t(lang, 'o_none') : s >= 90 ? nf(Math.round(s / 6) / 10, lang) + ' ' + t(lang, 'min') : nf(s, lang) + ' ' + t(lang, 's');
 const N = (v, lang) => v == null ? '<span class="k-muted">' + esc(t(lang, 'o_none')) + '</span>' : nf(v, lang);
 function openBody(d, lang) {
@@ -386,12 +377,12 @@ function openBody(d, lang) {
   const slot = '<section class="k-sec" id="customers" data-slot="customers"><div class="k-wrap"><h2>' + esc(t(lang, 'o_s_cust')) + '</h2><div class="kfc-stats kfc-stats--one">' +
     stat(cu.paid_checks, t(lang, 'c_cust'), t(lang, 'c_cust_s'), src('/api/x/fc/open', 'kolaboro.com/api/x/fc/open')) + '</div><p class="kfc-fine">' + esc(t(lang, 'c_cust_n')) + '</p></div></section>';
   const upd = t(lang, 'o_upd', { t: d.generated.slice(11, 16), d: d.weekly_history ? dayName(d.weekly_history.generated, lang) : t(lang, 'o_none') });
-  return '<div class="kfc-pg"><section class="k-sec"><div class="k-wrap"><div class="k-phead"><p class="k-crumb"><a href="' + pre(lang) + '/">Kolaboro</a></p><h1>' + esc(t(lang, 'o_h1')) + '</h1><p class="lead">' + esc(t(lang, 'o_lead')) + '</p><p class="kfc-fine"><time datetime="' + esc(d.generated) + '">' + esc(upd) + '</time></p></div>' +
+  return TB.kbx_fc__s.k6 + pre(lang) + '/">Kolaboro</a></p><h1>' + esc(t(lang, 'o_h1')) + '</h1><p class="lead">' + esc(t(lang, 'o_lead')) + '</p><p class="kfc-fine"><time datetime="' + esc(d.generated) + '">' + esc(upd) + '</time></p></div>' +
     '<h2>' + esc(t(lang, 'o_s_now')) + '</h2>' + stats + '</div></section>' +
     '<section class="k-sec"><div class="k-wrap"><h2>' + esc(t(lang, 'o_s_week')) + '</h2>' + week + '</div></section>' +
     '<section class="k-sec"><div class="k-wrap"><h2>' + esc(t(lang, 'o_s_seal')) + '</h2>' + sealed + '</div></section>' +
     '<section class="k-sec"><div class="k-wrap"><h2>' + esc(t(lang, 'o_s_ship')) + '</h2>' + ship + '</div></section>' + slot +
-    '<section class="k-sec"><div class="k-wrap kfc-meth"><h2>' + esc(t(lang, 'o_s_src')) + '</h2><p>' + esc(t(lang, 'o_src_t')) + '</p><p class="kfc-links"><a href="/api/x/fc/open">/api/x/fc/open</a> <a href="/data/traction.json">/data/traction.json</a> <span>CC BY 4.0</span></p></div></section></div>';
+    '<section class="k-sec"><div class="k-wrap kfc-meth"><h2>' + esc(t(lang, 'o_s_src')) + '</h2><p>' + esc(t(lang, 'o_src_t')) + TB.kbx_fc__s.k7;
 }
 function methodBody(fc, lang) {
   const rows = [fc.all, ...[...fc.markets.values()].filter(g => g.n > 0).sort((a, b) => b.n - a.n || a.name.localeCompare(b.name))];
@@ -400,20 +391,20 @@ function methodBody(fc, lang) {
       (g.level === 'all' ? '<span class="k-badge k-badge--info">' + esc(t(lang, 'm_all')) + '</span>' : g.enough ? '<span class="k-badge k-badge--ok">' + esc(t(lang, 'm_ok')) + '</span>' : '<span class="k-badge k-badge--plain">' + esc(t(lang, 'm_nd')) + '</span>') + '</td></tr>').join('') + '</tbody></table></div>';
   const tb = tbl(rows.slice(0, 13)) + (rows.length > 13 ? '<div class="k-disc"><details><summary>+' + nf(rows.length - 13, lang) + '</summary>' + tbl(rows.slice(13)) + '</details></div>' : '');
   const P = (h, p) => '<h2>' + esc(t(lang, h)) + '</h2><p>' + esc(p) + '</p>';
-  return '<div class="kfc-pg"><section class="k-sec"><div class="k-wrap"><div class="k-phead"><p class="k-crumb"><a href="' + pre(lang) + '/">Kolaboro</a> / <a href="/index/delays/">' + esc(t(lang, 'm_crumb')) + '</a></p><h1>' + esc(t(lang, 'm_title')) + '</h1><p class="lead">' + esc(t(lang, 'm_lead')) + '</p></div>' +
+  return TB.kbx_fc__s.k8 + pre(lang) + '/">Kolaboro</a> / <a href="/index/delays/">' + esc(t(lang, 'm_crumb')) + '</a></p><h1>' + esc(t(lang, 'm_title')) + '</h1><p class="lead">' + esc(t(lang, 'm_lead')) + '</p></div>' +
     '<div class="kfc kfc-m">' + curveSvg(fc.all, lang) + '<p>' + esc(gLine(fc.all, lang)) + ' ' + srcMark(fc, lang) + '</p>' + rowsTable(fc.all.by.filter(Boolean), lang, true, null, 1) + '<p class="kfc-fine">' + esc(t(lang, 'bias')) + '</p></div></div></section>' +
     '<section class="k-sec"><div class="k-wrap kfc-meth">' + P('m_h_data', t(lang, 'm_data')) + P('m_h_time', t(lang, 'm_time')) + '<p class="kfc-fine">' + esc(t(lang, 'm_excl', { n: nf(fc.cnt.excluded, lang) })) + '</p>' + P('m_h_est', t(lang, 'm_est')) +
     P('m_h_rule', t(lang, 'm_rule', { N: MIN_N, K: MIN_K, ND: MIN_ND, R: MIN_R })) + '<h2>' + esc(t(lang, 'm_h_lim')) + '</h2><ul><li>' + esc(t(lang, 'bias')) + '</li><li>' + esc(t(lang, 'm_lim2')) + '</li><li>' + esc(t(lang, 'm_lim3')) + '</li></ul></div></section>' +
-    '<section class="k-sec"><div class="k-wrap"><h2>' + esc(t(lang, 'm_h_now')) + '</h2>' + tb + '<p class="kfc-fine kfc-links"><a href="/api/x/fc/curves">' + esc(t(lang, 'm_api')) + '</a> <a href="/data/promises.json">/data/promises.json</a> <a href="/data/bali-cases.json">/data/bali-cases.json</a> <span>CC BY 4.0</span></p></div></section></div>';
+    '<section class="k-sec"><div class="k-wrap"><h2>' + esc(t(lang, 'm_h_now')) + '</h2>' + tb + '<p class="kfc-fine kfc-links"><a href="/api/x/fc/curves">' + esc(t(lang, 'm_api')) + TB.kbx_fc__s.k9;
 }
 async function assemble(shellRes, o) {
   const alts = LANGS.map(l => '<link rel="alternate" hreflang="' + l + '" href="' + ORIGIN + pre(l) + o.path + '">').join('') + '<link rel="alternate" hreflang="x-default" href="' + ORIGIN + o.path + '">';
   const tags = '<title>' + esc(o.title) + ' | Kolaboro</title><meta name="description" content="' + esc(o.desc) + '"><link rel="canonical" href="' + ORIGIN + pre(o.lang) + o.path + '">' + alts +
-    '<meta property="og:type" content="website"><meta property="og:site_name" content="Kolaboro"><meta property="og:title" content="' + esc(o.title) + ' | Kolaboro"><meta property="og:description" content="' + esc(o.desc) + '"><meta property="og:url" content="' + ORIGIN + pre(o.lang) + o.path + '"><meta name="twitter:card" content="summary">' +
-    '<script type="application/ld+json">' + JSON.stringify(o.ld).replace(/</g, '\\u003c') + '</script>' + PG_CSS + FC_CSS;
+    TB.kbx_fc__s.k10 + esc(o.title) + ' | Kolaboro"><meta property="og:description" content="' + esc(o.desc) + '"><meta property="og:url" content="' + ORIGIN + pre(o.lang) + o.path + '"><meta name="twitter:card" content="summary">' +
+    '<script type="application/ld+json">' + JSON.stringify(o.ld).replace(/</g, '\\u003c') + '</script>' + TB.kbx_fc__s.PG_CSS + TB.kbx_fc__s.FC_CSS;
   const res = new HTMLRewriter()
     .on('title', { element(e) { e.remove(); } })
-    .on('meta[name="description"],meta[name="robots"],meta[property^="og:"],meta[name^="twitter:"],link[rel="canonical"],link[rel="alternate"][hreflang]', { element(e) { e.remove(); } })
+    .on(TB.kbx_fc__s.k11, { element(e) { e.remove(); } })
     .on('script[type="application/ld+json"]', { element(e) { e.remove(); } })
     .on('head', { element(e) { e.append(tags, { html: true }); } })
     .on('main', { element(e) { e.setInnerContent(o.body, { html: true }); } })

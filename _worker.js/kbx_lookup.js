@@ -12,6 +12,7 @@
 // no data says not_found / not_published, a source we cannot query says unavailable or needs_key.
 import { api as kbApi, fetchPage, okUrl, pageParts, rpc, sha, logApi, WKEY, PILOT_401 } from './kolaboro.js';
 import { handle as hHandle } from './kbx_h.js';
+import { TB } from './kbx_strings.js';
 
 export const PATHS = /^\/api\/(kb|v1)\/lookup(\/|$)/;
 const VERSION = 'kolaboro-lookup-1';
@@ -152,7 +153,7 @@ async function catastroRef(rc, ctx) {
     c.status = 'found';
     c.fields = { reference: rc, units_on_parcel: (r.control && r.control.cudnp) || list.length,
       units: list.slice(0, 20).map(x => { const k = x.rc || {}; return { reference: [k.pc1, k.pc2, k.car, k.cc1, k.cc2].join(''), address: x.dt && x.dt.locs && x.dt.locs.lous && x.dt.locs.lous.lourb && x.dt.locs.lous.lourb.dir ? [x.dt.locs.lous.lourb.dir.tv, x.dt.locs.lous.lourb.dir.nv, x.dt.locs.lous.lourb.dir.pnp].filter(Boolean).join(' ') : null }; }) };
-    c.note = 'The parcel is divided into units; pass a 20 character reference to get the surface, use and year of one unit.';
+    c.note = TB.kbx_lookup__s.k0;
     return c;
   }
   c.status = 'not_found'; return c;
@@ -261,17 +262,17 @@ async function nycDob(by, value, ctx) {
   }
   return res;
 }
-const MD = 'https://services.arcgis.com/8Pc9XBTAsYuxx9Ny/arcgis/rest/services/miamidade_permit_data/FeatureServer/0/query';
+/* MD: n40 k17, in /data/i18n/k17s.json */
 const ABBR = [[/\bSTREET\b/g, 'ST'], [/\bAVENUE\b/g, 'AVE'], [/\bAV\b/g, 'AVE'], [/\bROAD\b/g, 'RD'], [/\bBOULEVARD\b/g, 'BLVD'], [/\bPLACE\b/g, 'PL'], [/\bDRIVE\b/g, 'DR'], [/\bLANE\b/g, 'LN'], [/\bCOURT\b/g, 'CT'], [/\bTERRACE\b/g, 'TER'], [/\bPARKWAY\b/g, 'PKWY'], [/\bHIGHWAY\b/g, 'HWY'], [/\bCIRCLE\b/g, 'CIR'], [/\bNORTH ?WEST\b/g, 'NW'], [/\bNORTH ?EAST\b/g, 'NE'], [/\bSOUTH ?WEST\b/g, 'SW'], [/\bSOUTH ?EAST\b/g, 'SE'], [/\b(\d+)(ST|ND|RD|TH)\b/g, '$1']];
 function mdAddr(a) { let s = (a.number + ' ' + a.street).toUpperCase().replace(/[.,']/g, ' ').replace(/\s+/g, ' ').trim(); ABBR.forEach(([re, r]) => { s = s.replace(re, r); }); return s; }
 async function miamiDade(by, value, ctx) {
   const where = by === 'permit' ? "PermitNumber='" + value.replace(/\D/g, '') + "' OR MasterPermitNumber='" + value.replace(/\D/g, '') + "'" : "PropertyAddress LIKE '" + value.replace(/'/g, "''") + "%'";
-  const url = MD + '?where=' + encodeURIComponent(where) + '&outFields=PermitNumber,PermitIssuedDate,ApplicationDate,PermitType,ResidentialCommercial,ApplicationTypeDescription,ProposedUseDescription,DetailDescriptionComments,PropertyAddress,OwnerName,ContractorName,SquareFootage,StructureUnits,StructureFloors,CoCcDate,City,FolioNumber&orderByFields=PermitIssuedDate%20DESC&resultRecordCount=25&returnGeometry=false&f=json';
+  const url = TB.kbx_lookup__s.MD + '?where=' + encodeURIComponent(where) + TB.kbx_lookup__s.k1;
   const c = check('us_miami_dade_permits', 'Miami-Dade County, Building Permits Issued (county open data, ArcGIS)', 'https://gis-mdc.opendata.arcgis.com/', 'US', { by: by === 'permit' ? 'permit number' : 'address', value, url });
   const raw = await getRaw(url); c.ms = raw.ms; c.snapshot = snap(raw, ctx);
   const j = raw.ok ? jparse(raw.text) : null;
   if (!j || j.error || !Array.isArray(j.features)) { c.note = raw.sha256 ? 'The county service answered without data' + (j && j.error ? ' (' + clip(j.error.message, 80) + ')' : '') + '.' : 'The county service did not answer.'; return c; }
-  if (!j.features.length) { c.status = 'not_found'; c.note = 'This dataset covers permits issued by Miami-Dade County (unincorporated areas and some cities), not the City of Miami or Miami Beach building departments.'; return c; }
+  if (!j.features.length) { c.status = 'not_found'; c.note = TB.kbx_lookup__s.k2; return c; }
   const rows = j.features.map(f => f.attributes);
   c.status = 'found';
   c.fields = { permits_returned: rows.length, latest: rows.slice(0, 8).map(a => ({ permit: a.PermitNumber, issued: a.PermitIssuedDate || null, type: a.PermitType, use: a.ProposedUseDescription || null, application: a.ApplicationTypeDescription || null,
@@ -309,7 +310,7 @@ async function gleif(name, ctx) {
   const raw = await getRaw(url, { accept: 'application/vnd.api+json' }); c.ms = raw.ms; c.snapshot = snap(raw, ctx);
   const j = raw.ok ? jparse(raw.text) : null;
   if (!j || !Array.isArray(j.data)) { c.note = raw.sha256 ? 'GLEIF answered HTTP ' + raw.status + '.' : 'GLEIF did not answer.'; return c; }
-  if (!j.data.length) { c.status = 'not_found'; c.note = 'No legal entity with an LEI under this name. Many small developers have no LEI, so this alone proves nothing.'; return c; }
+  if (!j.data.length) { c.status = 'not_found'; c.note = TB.kbx_lookup__s.k3; return c; }
   c.status = 'found';
   c.fields = { matches: j.data.slice(0, 5).map(d => { const e = d.attributes.entity || {}; return { lei: d.attributes.lei, legal_name: e.legalName && e.legalName.name, status: e.status, jurisdiction: e.jurisdiction, legal_form: e.legalForm && e.legalForm.id,
     registered_at: d.attributes.registration && d.attributes.registration.initialRegistrationDate, city: e.legalAddress && e.legalAddress.city, country: e.legalAddress && e.legalAddress.country, page: 'https://search.gleif.org/#/record/' + d.attributes.lei }; }) };
@@ -335,7 +336,7 @@ async function dubai(q, env, ctx) {
   const c = check('ae_dubai_dld', 'Dubai Land Department project registry (Dubai Pulse open API)', 'https://www.dubaipulse.gov.ae/data/dld-registration/dld_projects-open', 'AE', { by: 'project name or number', value: q || null, url: 'https://api.dubaipulse.gov.ae/open/dld/dld_projects-open-api' });
   c.manual_check = 'https://dubailand.gov.ae/en/eservices/real-estate-project-status-landing/';
   const k = env.DUBAI_PULSE_KEY || env.DUBAI_PULSE, s = env.DUBAI_PULSE_SECRET || (String(env.DUBAI_PULSE || '').split(':')[1]);
-  if (!k || !s) { c.status = 'needs_key'; c.note = 'Dubai Pulse API credentials are not configured yet. Check the project by hand on the DLD project status page.'; return c; }
+  if (!k || !s) { c.status = 'needs_key'; c.note = TB.kbx_lookup__s.k4; return c; }
   try {
     const t = await fetch('https://api.dubaipulse.gov.ae/oauth/client_credential/accesstoken?grant_type=client_credentials', { method: 'POST', headers: { 'content-type': 'application/x-www-form-urlencoded' }, body: 'client_id=' + encodeURIComponent(String(k).split(':')[0]) + '&client_secret=' + encodeURIComponent(s), signal: AbortSignal.timeout(10000) });
     const tok = (await t.json()).access_token; if (!tok) { c.note = 'Dubai Pulse refused the credentials.'; return c; }
@@ -353,16 +354,16 @@ async function dubai(q, env, ctx) {
 function indonesia() {
   const a = check('id_bhumi', 'BHUMI, ATR/BPN land parcel map (Indonesia)', 'https://bhumi.atrbpn.go.id/', 'ID', { by: 'manual', value: null, url: null });
   a.status = 'not_published'; a.manual_check = 'https://bhumi.atrbpn.go.id/';
-  a.note = 'ATR/BPN publishes the parcel map only as an interactive viewer with no documented public API; certificate details need the Sentuh Tanahku app or a notary (PPAT). Check the parcel by hand, or order a site visit.';
+  a.note = TB.kbx_lookup__s.k5;
   const b = check('id_rdtr', 'GISTARU RDTR interactive zoning map, Ministry of ATR/BPN (Indonesia)', 'https://gistaru.atrbpn.go.id/rdtrinteraktif/', 'ID', { by: 'manual', value: null, url: null });
   b.status = 'not_published'; b.manual_check = 'https://gistaru.atrbpn.go.id/rdtrinteraktif/';
-  b.note = 'The zoning plan (RDTR) is published as a map viewer only; no programmatic query is offered. Building approvals (PBG) are on SIMBG (https://simbg.pu.go.id/) behind a login.';
+  b.note = TB.kbx_lookup__s.k6;
   return [a, b];
 }
 function spainCompany() {
   const c = check('es_borme', 'BORME, Boletín Oficial del Registro Mercantil (Spain)', 'https://www.boe.es/diario_borme/', 'ES', { by: 'manual', value: null, url: null });
   c.status = 'not_published'; c.manual_check = 'https://www.boe.es/diario_borme/';
-  c.note = 'The BOE open-data API publishes BORME only as daily summaries, with no search by company name; a full company extract (nota simple mercantil) is paid at registradores.org.';
+  c.note = TB.kbx_lookup__s.k7;
   return c;
 }
 
@@ -384,7 +385,7 @@ async function imageReuse(hashes, env) {
   const cases = [...new Set(hits.map(x => x.case_id))];
   c.status = hits.length ? 'found' : 'not_found';
   c.fields = { images_checked: hashes.length, index_images: idx.images, index_generated: idx.generated, near_identical_matches: hits.slice(0, 20), other_projects: cases.length };
-  c.note = hits.length ? 'Near-identical images (0 to 5 bits apart) appear on other tracked projects (anonymous ids). A shared render can be a stock image or the same developer; check before concluding.' : 'No near-identical image among ' + idx.images + ' images of tracked projects.';
+  c.note = hits.length ? TB.kbx_lookup__s.k8 : 'No near-identical image among ' + idx.images + ' images of tracked projects.';
   return c;
 }
 
@@ -411,7 +412,7 @@ function compare(brochure, checks) {
       let agree, note = null;
       if (field === 'use') { const g1 = USE_GROUP(x.value), g2 = USE_GROUP(rr.value); agree = g1 && g2 ? g1 === g2 : null; }
       else if (field === 'area') { agree = Math.abs(x.value - rr.value) <= Math.max(5, rr.value * 0.1); if (!agree) note = 'The brochure figure may describe one unit or include terraces; the register figure is ' + (rr.unit || 'the registered area') + '.'; }
-      else if (field === 'year') { agree = x.value === rr.value; if (!agree) note = 'A brochure year is usually a completion promise; the register year is when the building was recorded as built.'; }
+      else if (field === 'year') { agree = x.value === rr.value; if (!agree) note = TB.kbx_lookup__s.k9; }
       else agree = x.value === rr.value;
       const d = { field, agree, brochure: { value: x.value, unit: x.unit, text: x.text, from: x.from, source_url: x.source_url }, register: { value: rr.value, text: rr.text, source: rr.source, check: rr.check }, note };
       if (!best || (agree && !best.agree)) best = d;
@@ -435,7 +436,7 @@ function holderMatch(siteName, from, checks) {
   let best = null;
   names.forEach(n => { const b = normCo(n.name), bt = b.split(' ').filter(w => w.length > 2); const common = bt.filter(w => at.has(w)).length; const score = bt.length ? common / Math.max(bt.length, at.size) : 0; if (!best || score > best.score) best = Object.assign({ score }, n); });
   return { field: 'company', agree: best.score >= 0.6 ? true : best.score === 0 ? false : null, brochure: { value: siteName, text: siteName, from }, register: { value: best.name, text: best.name, source: best.source, check: best.check },
-    note: best.score >= 0.6 ? 'The company named on the website matches a holder or applicant on the register.' : best.score === 0 ? 'The company on the website does not appear among the owners, applicants or contractors on the register. It may act through another company; ask which entity holds the permit.' : 'Partial name match only; check the exact legal entity.' };
+    note: best.score >= 0.6 ? 'The company named on the website matches a holder or applicant on the register.' : best.score === 0 ? TB.kbx_lookup__s.k10 : 'Partial name match only; check the exact legal entity.' };
 }
 
 // ---------- the lookup ----------
@@ -492,7 +493,7 @@ async function run(inp, req, env, ctx, opts) {
       site.fields = { developer: rep.developer, project: rep.project, location: rep.location, country: rep.country, property_type: rep.property_type, completion: rep.completion, permit_claim: rep.permit_claim, title_type: rep.title_type, price_from: rep.price_from };
       site.desk_review = { analysed: review.d.analysed, cached: !!review.d.cached, prompt_sha256: review.d.prompt_sha256 || null, quotes: fq };
       if (rep.permit_claim) idsFrom(rep.permit_claim, 'desk_review').forEach(x => { if (!ids.some(y => y.type === x.type && y.value === x.value)) ids.push(x); });
-    } else if (review && review.skipped) site.desk_review = { status: 'skipped', note: 'The desk review runs only for lookups started on kolaboro.com or by API partners (it has a daily spend cap).' };
+    } else if (review && review.skipped) site.desk_review = { status: 'skipped', note: TB.kbx_lookup__s.k11 };
     else if (review) site.desk_review = { status: 'unavailable', error: review.d && review.d.error || 'error', note: review.d && review.d.error === 'rate' ? 'Hourly limit for desk reviews reached; register checks still ran.' : 'The desk review did not complete; register checks still ran.' };
     site.fields = Object.assign(site.fields || {}, { identifiers_found: ids.filter(x => x.from !== 'input').map(x => ({ type: x.type, value: x.value, text: x.text })) });
   }
@@ -536,7 +537,7 @@ async function run(inp, req, env, ctx, opts) {
   const company = inp.company || (rep && rep.developer) || qName || null;
   if (company && company.length >= 3) reg.push(gleif(company, ctx));
   ids.filter(x => x.type === 'uk_company_number').slice(0, 1).forEach(x => reg.push(ukCompany(x.value, ip, env, ctx)));
-  if (cs.has('GB') && company && !ids.some(x => x.type === 'uk_company_number')) { const c = check('company_uk', 'Companies House (United Kingdom)', 'https://find-and-update.company-information.service.gov.uk/', 'GB', { by: 'company name', value: company, url: null }); c.status = 'needs_key'; c.note = 'Search by name uses the Companies House API, which needs a key from Carlos. A company number on the website or in the text is looked up without a key.'; c.manual_check = 'https://find-and-update.company-information.service.gov.uk/search?q=' + encodeURIComponent(company); reg.push(Promise.resolve(c)); }
+  if (cs.has('GB') && company && !ids.some(x => x.type === 'uk_company_number')) { const c = check('company_uk', 'Companies House (United Kingdom)', 'https://find-and-update.company-information.service.gov.uk/', 'GB', { by: 'company name', value: company, url: null }); c.status = 'needs_key'; c.note = TB.kbx_lookup__s.k12; c.manual_check = 'https://find-and-update.company-information.service.gov.uk/search?q=' + encodeURIComponent(company); reg.push(Promise.resolve(c)); }
   if (cs.has('ES')) reg.push(Promise.resolve(spainCompany()));
   if (cs.has('AE')) reg.push(dubai((rep && rep.project) || inp.q || null, env, ctx));
   if (cs.has('ID')) reg.push(Promise.resolve(indonesia()));
@@ -552,7 +553,7 @@ async function run(inp, req, env, ctx, opts) {
   checks.forEach(c => { summary[c.status] = (summary[c.status] || 0) + 1; });
   const result = { version: VERSION, started_at: started, input: { url: pageUrl, q: inp.q || null, country: inp.country || null, refcat: inp.refcat || null, address: inp.address || null, permit: inp.permit || null, company: inp.company || null, lat: inp.lat, lng: inp.lng, image_hashes: inp.image_hashes.length },
     detected: { countries: [...cs], identifiers: ids.map(x => ({ type: x.type, value: x.value, from: x.from, text: x.text })) }, summary, checks, comparison, seal: null, finished_at: null, ms: 0,
-    disclaimer: 'Each result is what the named official source returned at fetched_at, kept byte for byte. A not_found or not_published result is not proof of a problem; a found result is not proof the project is sound. Kolaboro does not invent or fill in data.' };
+    disclaimer: TB.kbx_lookup__s.k13 };
   if (lines.length) {
     const root = await sha(lines.join('\n'));
     let stamp = null, stampStatus = 'not_stamped';
@@ -562,7 +563,7 @@ async function run(inp, req, env, ctx, opts) {
       if (d.stamp) { stamp = { created_at: d.stamp.created_at, calendars: d.stamp.calendars, bitcoin_block: d.stamp.bitcoin_block || null, stored: d.stored !== false }; stampStatus = 'submitted'; }
       else stampStatus = d.error === 'rate' ? 'rate_limited' : 'calendars_unavailable';
     } catch (e) { stampStatus = 'error'; }
-    result.seal = { root_sha256: root, method: 'root_sha256 = SHA-256 of the lines below joined by a newline; each line is "sha256 fetched_at check_id" of the exact bytes a source returned (fetch them at snapshot.raw_url).', lines,
+    result.seal = { root_sha256: root, method: TB.kbx_lookup__s.k14, lines,
       opentimestamps: stamp, stamp_status: stampStatus, verify: 'https://kolaboro.com/api/kb/stamp?hash=' + root, result_url: 'https://kolaboro.com/api/kb/lookup/r/' + root };
   }
   result.finished_at = new Date().toISOString(); result.ms = Date.now() - t0;
@@ -638,7 +639,7 @@ async function points(env) {
     const sim = simR.ok ? await simR.json() : {}, mp = (sim.market_points && sim.market_points.markets) || {}, markets = {};
     const projects = ix.P.filter(x => x.s && x.n && x.mk && mp[x.mk]).map(x => [x.s, x.n, x.mk]).sort((a, b) => a[1].localeCompare(b[1]));
     Object.keys(mp).forEach(k => { if (k.toLowerCase() !== 'sumba') markets[k] = { lat: mp[k].lat, lng: mp[k].lng, place: mp[k].place || k, src: mp[k].src || null }; });
-    const v = { version: 'photo-points-1', generated: new Date().toISOString(), what: 'One public point per market (rounded to about 1 km), not the project plot. Built from /data/similar.json market_points.', method_url: 'https://kolaboro.com/data/similar.json', markets, projects };
+    const v = { version: 'photo-points-1', generated: new Date().toISOString(), what: TB.kbx_lookup__s.k15, method_url: 'https://kolaboro.com/data/similar.json', markets, projects };
     PTS = { t: Date.now(), v };
     return out(v, 200, { 'cache-control': 'public, max-age=3600' });
   } catch (e) { return out({ error: 'points_unavailable' }, 503); }
@@ -656,7 +657,7 @@ export async function handle(req, u, env, ctx) {
   if (m) { const r = await caches.default.match(RAWKEY(m[1])); if (!r) return out({ error: 'not_in_edge_cache', note: 'Raw responses are kept 30 days in the edge cache of the data centre that made the lookup.' }, 404);
     return new Response(r.body, { headers: { 'content-type': 'text/plain; charset=utf-8', 'x-content-type-options': 'nosniff', 'content-security-policy': "default-src 'none'", 'access-control-allow-origin': '*', 'cache-control': 'public, max-age=86400' } }); }
   m = p.match(/^\/api\/kb\/lookup\/r\/([0-9a-f]{64})$/);
-  if (m) { const r = await caches.default.match(RESKEY(m[1])); return r ? out(await r.json(), 200, { 'cache-control': 'public, max-age=300' }) : out({ error: 'not_in_edge_cache', note: 'Sealed results are kept 30 days in the edge cache of the data centre that made the lookup. The root hash stays verifiable with /api/kb/stamp?hash=.' }, 404); }
+  if (m) { const r = await caches.default.match(RESKEY(m[1])); return r ? out(await r.json(), 200, { 'cache-control': 'public, max-age=300' }) : out({ error: 'not_in_edge_cache', note: TB.kbx_lookup__s.k16 }, 404); }
   if (p === '/api/kb/lookup/schema') return out({ docs: 'https://kolaboro.com/docs/api/', version: VERSION });
   return out({ error: 'not_found' }, 404);
 }

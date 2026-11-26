@@ -12,6 +12,7 @@
 import * as N from './kbx_named.js';
 import { S, t, esc, num, LANGS, slugMk, pinRecord, phMarkets, PH_MIN } from './kbx_n30c_named.js';
 import { mkName, coName } from './kbx_hdate.js';
+import { TB } from './kbx_strings.js';
 
 const ORIGIN = 'https://kolaboro.com';
 const COI_RX = /eco\s*beach\s*city|\bequinox\b/i;
@@ -30,11 +31,11 @@ const quant = (a, q) => { if (!a.length) return null; const s = a.slice().sort((
 const fdt = (d, lang) => N.fd(String(d).slice(0, 10), lang);
 const ftime = (d, lang) => { try { return new Date(d).toLocaleString(lang === 'en' ? 'en-GB' : lang, { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit', timeZone: 'UTC', numberingSystem: 'latn' }) + ' UTC'; } catch (e) { return String(d); } };
 const kb = n => n == null ? '-' : (n / 1024).toFixed(n < 10240 ? 1 : 0) + ' KB';
-const PCSS = '<style>.n3 h2{margin:34px 0 10px;scroll-margin-top:90px}.n3 .k-table-wrap{overflow-x:auto;margin:10px 0 18px}.n3 table{width:100%;border-collapse:collapse;min-width:520px}.n3 th,.n3 td{padding:8px 10px;border-bottom:1px solid var(--k-line,#d5dbd8);text-align:start;vertical-align:top}.n3 td.k-n,.n3 th.k-n{text-align:end;font-variant-numeric:tabular-nums}.n3 .n3-kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:14px 0}.n3 .n3-kv div{border:1px solid var(--k-line,#d5dbd8);border-radius:12px;padding:10px 12px}.n3 .n3-kv b{display:block;font-size:1.4rem}.n3 .n3-kv span{font-size:.85rem;color:var(--k-muted,#56636F)}.n3 code{overflow-wrap:anywhere}.n3 .lim{font-size:.86rem;color:var(--k-muted,#56636F)}.n3 ul.lk{padding-inline-start:20px}</style>';
+/* PCSS: n40 k17, in /data/i18n/k17s.json */
 async function shellPage(shell, lang, o) {
   const sh = await shell(pre(lang) + '/how-we-score/'); if (!sh || sh.status !== 200) return null;
   const crumb = '<p class="crumb"><a href="' + pre(lang) + '/">Kolaboro</a>' + (o.crumb || []).map(([h, l]) => ' / <a href="' + h + '">' + esc(l) + '</a>').join('') + '</p>';
-  const body = '<section class="phero kp"><div class="wrap">' + crumb + '<h1>' + esc(o.h1) + '</h1><p class="lead">' + esc(o.lead) + '</p></div></section><div class="wrap kwrap n3">' + o.body + '</div>' + PCSS;
+  const body = '<section class="phero kp"><div class="wrap">' + crumb + '<h1>' + esc(o.h1) + '</h1><p class="lead">' + esc(o.lead) + '</p></div></section><div class="wrap kwrap n3">' + o.body + '</div>' + TB.kbx_n30c__s.PCSS;
   const pg = { title: o.title + ' | Kolaboro', desc: o.desc, canon: o.canon, body, noindex: !!o.noindex, alt: o.alt,
     ld: { '@context': 'https://schema.org', '@graph': [{ '@type': o.type || 'WebPage', name: o.title, url: o.canon, inLanguage: lang, description: o.desc, dateModified: o.mod || undefined, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' } }].concat(o.ld || []) } };
   return new Response(await N.assemble(pg, lang, sh), { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=600' } });
@@ -73,7 +74,7 @@ function phChart(e, lang) {
   const tbl = med.length > 1 ? '<details class="kph-dt"><summary>' + esc(A11.tbl) + '</summary><div class="k-table-wrap" tabindex="0"><table><thead><tr><th scope="col">' + esc(A11.d) + '</th><th scope="col" class="k-n">' + esc(A11.m) + '</th></tr></thead><tbody>' +
     (med.length > 80 ? med.filter((p, i) => i % Math.ceil(med.length / 80) === 0 || i === med.length - 1) : med).map(p => '<tr><td>' + esc(fdt(p[0], lang)) + '</td><td class="k-n">' + num(p[1], lang, 1) + '</td></tr>').join('') + '</tbody></table></div></details>' : '';
   return '<figure class="kph-fig"><svg class="kph-svg" viewBox="0 0 ' + W + ' ' + Hh + '" role="img" tabindex="0" aria-label="' + esc(t(lang, 'ph_chart', { n: e.L.length })) + '"' + (sum ? ' aria-describedby="' + sid + '"' : '') + '>' + g + lines + ml + '</svg><figcaption>' + esc(t(lang, 'ph_chart', { n: num(e.L.length, lang) })) + (sum ? ' <span id="' + sid + '">' + esc(sum) + '</span>' : '') + '</figcaption></figure>' + tbl +
-    '<style>.kph-svg:focus{outline:2px solid var(--k-sea,#155C75);outline-offset:4px}.kph-dt{margin:0 0 16px;max-width:760px}.kph-dt summary{min-height:44px;display:flex;align-items:center;cursor:pointer}.kph-fig{margin:14px 0;max-width:760px}.kph-svg{width:100%;height:auto;display:block}.kph-grid{stroke:var(--k-line,#d5dbd8);stroke-width:1}.kph-ax{font-size:12px;fill:var(--k-muted,#56636F)}.n3-pl{fill:none;stroke:var(--k-sea,#155C75);stroke-width:1.4;opacity:.45}.n3-med{fill:none;stroke:var(--k-ink,#17212B);stroke-width:3.5}@media(max-width:600px){.kph-ax{font-size:20px}}.kph-fig figcaption{font-size:.84rem;color:var(--k-muted,#56636F)}</style>';
+    TB.kbx_n30c__s.k0;
 }
 const pctS = (v, lang) => (v > 0 ? '+' : v < 0 ? '−' : '') + num(Math.abs(v), lang, 1) + '%';
 async function priceHistory(u, env, shell, lang, mkS) {
@@ -124,7 +125,7 @@ async function imageReuse(u, env, shell, lang) {
     '<p class="lim">' + esc(t(lang, 'ir_caut')) + '</p>' +
     '<h2 id="cross">' + esc(t(lang, 'ir_c')) + '</h2>' + table('cross') + '<h2 id="same-site">' + esc(t(lang, 'ir_cs')) + '</h2>' + table('same_site') + '<h2 id="same-developer">' + esc(t(lang, 'ir_cd')) + '</h2>' + table('same_dev') +
     '<h2 id="method">' + esc(t(lang, 'ir_meth')) + '</h2><p><span lang="en">' + esc(R.method) + '</span></p><p class="lim">' + esc(t(lang, 'ir_from', { d: fdt((R.input || {}).generated || '', lang), c: fdt(R.generated, lang) })) + ' ' + esc(t(lang, 'ir_left', { n: num(cp.images_left_out_low_structure || 0, lang) })) + '</p>' +
-    '<ul class="lk"><li><a href="/tools/image-check/">' + esc(t(lang, 'ir_check')) + '</a></li><li><a href="' + P + '/watch/lookalikes/">' + esc(t(lang, 'ir_dom')) + '</a></li><li><a href="/data/image-reuse.json">/data/image-reuse.json</a> (CC BY 4.0)</li><li><a href="/data/image-hashes.json">/data/image-hashes.json</a></li></ul>';
+    '<ul class="lk"><li><a href="/tools/image-check/">' + esc(t(lang, 'ir_check')) + '</a></li><li><a href="' + P + '/watch/lookalikes/">' + esc(t(lang, 'ir_dom')) + TB.kbx_n30c__s.k1;
   return shellPage(shell, lang, { title: t(lang, 'ir_t'), h1: t(lang, 'ir_t'), lead: t(lang, 'ir_d'), desc: t(lang, 'ir_d'), canon: ORIGIN + P + '/watch/lookalikes/images/', alt: l => ORIGIN + pre(l) + '/watch/lookalikes/images/', body, mod: R.generated,
     crumb: [[P + '/watch/lookalikes/', t(lang, 'ir_dom')]], ld: [{ '@type': 'Dataset', name: 'Kolaboro image reuse matches', url: ORIGIN + '/data/image-reuse.json', license: 'https://creativecommons.org/licenses/by/4.0/', creator: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' }, dateModified: R.generated, isBasedOn: ORIGIN + '/data/image-hashes.json' }] });
 }
@@ -152,27 +153,15 @@ function widget(D, x, lang, theme, size) {
   if (size === 'l') { if (row && row.score != null) rows.push([t(lang, 'w_tr'), esc(num(row.score, lang)) + '/100']); const sha = x.sha || (c.fp || {}).sha256, sd = x.sealed || (c.fp || {}).date; if (sha && sd) rows.push([t(lang, 'w_sealed', { d: N.fd(sd, lang) }), '<code>sha256:' + esc(String(sha).slice(0, 16)) + '…</code>']); }
   const dark = ':root{--i:#EEF2F0;--m:#A9B4BD;--l:#33404C;--p:#13222E;--s:#7FC3DA;--sk:#1C2C38;--o:#FFB37A}', light = ':root{--i:#13222E;--m:#56636F;--l:#D9DFDC;--p:#fff;--s:#155C75;--sk:#E8ECEA;--o:#B83A05}';
   const css = '<style>' + (theme === 'dark' ? dark : light + (theme === 'auto' ? '@media(prefers-color-scheme:dark){' + dark + '}' : '')) + 'html,body{margin:0;background:var(--p);color:var(--i);font:' + (size === 's' ? 14 : 15) + 'px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}' +
-    '.w{padding:12px 14px;border:1px solid var(--l);border-radius:12px;box-sizing:border-box;max-width:' + WSIZE[size].w + 'px;overflow:hidden}.h{font-weight:700;font-size:' + (size === 'l' ? 18 : 16) + 'px;margin:0 0 2px}.h a{color:inherit;text-decoration:none}.s{color:var(--m);font-size:13px;margin:0 0 8px}' +
-    'dl{margin:0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:5px 12px}dt{color:var(--m);font-size:13px}dd{margin:0;overflow-wrap:anywhere;font-variant-numeric:tabular-nums}code{font-size:12px}.k{display:inline-block;background:var(--sk);color:var(--o);border-radius:6px;padding:0 6px;font-size:12px}' +
-    '.f{color:var(--m);font-size:12px;margin:8px 0 0;border-top:1px solid var(--l);padding-top:6px}.f a{color:var(--s);font-weight:600}@media(max-width:340px){dl{grid-template-columns:1fr}}</style>';
+    TB.kbx_n30c__s.k2 + WSIZE[size].w + 'px;overflow:hidden}.h{font-weight:700;font-size:' + (size === 'l' ? 18 : 16) + TB.kbx_n30c__s.k3 +
+    TB.kbx_n30c__s.k4 +
+    TB.kbx_n30c__s.k5;
   const body = '<div class="w"><p class="h"><a href="' + url + '" target="_blank" rel="noopener">' + esc(x.n) + '</a></p><p class="s">' + esc(place) + '</p>' + (rev ? '' : '<p class="s">' + esc(t(lang, 'w_nr')) + '</p>') +
     '<dl>' + rows.map(r => '<dt>' + esc(r[0]) + '</dt><dd>' + r[1] + '</dd>').join('') + '</dl><p class="f">' + esc(t(lang, 'w_up', { d: N.fd(N.lastmod(D.ix, x), lang) })) + ' · <a href="' + url + '" target="_blank" rel="noopener">' + esc(t(lang, 'w_open')) + '</a> · CC BY 4.0</p></div>';
-  return '<?xml version="1.0" encoding="utf-8"?>\n<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="' + lang + '" xml:lang="' + lang + '"' + (lang === 'ar' ? ' dir="rtl"' : '') + '><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="robots" content="noindex, follow"/><link rel="canonical" href="' + url + '"/><title>' + esc(x.n) + ' | Kolaboro</title>' + css + '</head><body>' + body + '</body></html>';
+  return TB.kbx_n30c__s.k6 + lang + '" xml:lang="' + lang + '"' + (lang === 'ar' ? ' dir="rtl"' : '') + TB.kbx_n30c__s.k7 + url + '"/><title>' + esc(x.n) + ' | Kolaboro</title>' + css + '</head><body>' + body + '</body></html>';
 }
-const LOADER = '(function(d){var O="https://kolaboro.com",Z={s:[360,200],m:[480,320],l:[680,440]};function go(){var L=d.querySelectorAll("[data-kolaboro-project]:not([data-kb-done])");for(var i=0;i<L.length;i++){var el=L[i],p=el.getAttribute("data-kolaboro-project")||"";el.setAttribute("data-kb-done","1");if(!/^[a-z0-9-]{1,90}$/.test(p))continue;' +
-  'var th=el.getAttribute("data-theme"),z=el.getAttribute("data-size"),l=el.getAttribute("data-lang")||"en";th=/^(light|dark|auto)$/.test(th)?th:"auto";z=Z[z]?z:"m";l=/^(en|es|de|fr|nl|ru|zh|ar)$/.test(l)?l:"en";var f=d.createElement("iframe");f.src=O+"/embed/v2/"+p+"/?theme="+th+"&size="+z+(l!=="en"?"&lang="+l:"");' +
-  'f.title="Kolaboro: "+p;f.loading="lazy";f.width="100%";f.height=String(Z[z][1]);f.style.cssText="border:0;display:block;width:100%;max-width:"+Z[z][0]+"px;color-scheme:normal";el.insertBefore(f,el.firstChild);}}d.readyState==="loading"?d.addEventListener("DOMContentLoaded",go):go();})(document);';
-const BUILDER_JS = '(function(){var B=document.querySelector("[data-n3w]");if(!B)return;var M=JSON.parse(B.getAttribute("data-n3w")),F=B.querySelector("form"),q=F.elements.p,dl=document.getElementById("n3w-dl"),pv=B.querySelector(".n3w-pv"),c1=document.getElementById("n3w-c1"),c2=document.getElementById("n3w-c2"),IX=null,cur=M.p;' +
-  'function v(n){return F.elements[n].value}function nm(){var r=IX&&IX.filter(function(x){return x[0]===cur})[0];return r?r[1]:cur}' +
-  'function draw(){var th=v("th"),z=v("sz"),l=v("lg"),W={s:[360,200],m:[480,320],l:[680,440]}[z],src="https://kolaboro.com/embed/v2/"+cur+"/?theme="+th+"&size="+z+(l!=="en"?"&lang="+l:""),url="https://kolaboro.com"+(l==="en"?"":"/"+l)+"/projects/"+cur+"/",a="<a href=\\""+url+"\\">"+nm().replace(/[<>&"]/g,"")+" on Kolaboro</a>";' +
-  'pv.innerHTML="";var f=document.createElement("iframe");f.src=src;f.title="Kolaboro";f.width="100%";f.height=W[1];f.style.cssText="border:0;display:block;width:100%;max-width:"+W[0]+"px";pv.appendChild(f);' +
-  'c1.value="<iframe src=\\""+src+"\\" title=\\"Kolaboro: "+nm().replace(/[<>&"]/g,"")+"\\" width=\\"100%\\" height=\\""+W[1]+"\\" style=\\"border:0;max-width:"+W[0]+"px\\" loading=\\"lazy\\"></iframe>\\n<p>"+a+"</p>";' +
-  'c2.value="<div data-kolaboro-project=\\""+cur+"\\" data-theme=\\""+th+"\\" data-size=\\""+z+"\\""+(l!=="en"?" data-lang=\\""+l+"\\"":"")+">"+a+"</div>\\n<script src=\\"https://kolaboro.com/embed/v2.js\\" async><\\/script>";' +
-  'try{var u=new URL(location.href);u.searchParams.set("p",cur);["th","sz","lg"].forEach(function(k){u.searchParams.set(k,v(k))});history.replaceState(null,"",u.pathname+u.search)}catch(e){}}' +
-  'function load(){if(IX)return;fetch("/api/v1/search-index").then(function(r){return r.json()}).then(function(j){IX=j.p||[];draw()}).catch(function(){})}' +
-  'q.addEventListener("focus",load,{once:true});q.addEventListener("input",function(){load();var s=q.value.toLowerCase().trim();if(!IX||s.length<2)return;dl.innerHTML="";IX.filter(function(x){return (x[1]+" "+x[3]+" "+x[5]).toLowerCase().indexOf(s)>=0}).slice(0,12).forEach(function(x){var o=document.createElement("option");o.value=x[1];o.label=x[5]+" · "+x[3];dl.appendChild(o)});' +
-  'var hit=IX.filter(function(x){return x[1].toLowerCase()===s||x[0]===s})[0];if(hit){cur=hit[0];draw()}});F.addEventListener("change",function(e){if(e.target!==q)draw()});F.addEventListener("submit",function(e){e.preventDefault()});' +
-  'B.querySelectorAll("[data-cp]").forEach(function(b){b.addEventListener("click",function(){var ta=document.getElementById(b.getAttribute("data-cp"));ta.select();try{navigator.clipboard.writeText(ta.value)}catch(e){document.execCommand&&document.execCommand("copy")}b.textContent=M.ok;setTimeout(function(){b.textContent=M.cp},1600)})});draw()})();';
+/* LOADER: n40 k17, in /data/i18n/k17s.json */
+/* BUILDER_JS: n40 k17, in /data/i18n/k17s.json */
 async function widgetBuilder(u, env, shell, lang) {
   const ix = await N.data(env), P = pre(lang);
   let p = String(u.searchParams.get('p') || '').toLowerCase(); let x = ix.bySlug.get(p);
@@ -186,12 +175,12 @@ async function widgetBuilder(u, env, shell, lang) {
     '<label for="n3w-sz"><span>' + esc(t(lang, 'w_sz')) + '</span>' + opt('sz', [['s', t(lang, 'w_s') + ' (360 × 200)'], ['m', t(lang, 'w_m') + ' (480 × 320)'], ['l', t(lang, 'w_l') + ' (680 × 440)']], sz) + '</label>' +
     '<label for="n3w-lg"><span>' + esc(t(lang, 'w_lg')) + '</span>' + opt('lg', LANGS.map(l => [l, LN[l]]), lg) + '</label></form>' +
     '<h2>' + esc(t(lang, 'w_pv')) + '</h2><div class="n3w-pv"><iframe src="/embed/v2/' + x.s + '/?theme=' + th + '&amp;size=' + sz + (lg !== 'en' ? '&amp;lang=' + lg : '') + '" title="Kolaboro" width="100%" height="' + WSIZE[sz].h + '" style="border:0;display:block;max-width:' + WSIZE[sz].w + 'px"></iframe></div>' +
-    '<h2>' + esc(t(lang, 'w_c1')) + '</h2><textarea id="n3w-c1" aria-label="' + esc(t(lang, 'w_c1')) + '" rows="5" readonly spellcheck="false"></textarea><button type="button" class="n3w-b" data-cp="n3w-c1">' + esc(t(lang, 'w_cp')) + '</button>' +
-    '<h2>' + esc(t(lang, 'w_c2')) + '</h2><textarea id="n3w-c2" aria-label="' + esc(t(lang, 'w_c2')) + '" rows="4" readonly spellcheck="false"></textarea><button type="button" class="n3w-b" data-cp="n3w-c2">' + esc(t(lang, 'w_cp')) + '</button>' +
+    '<h2>' + esc(t(lang, 'w_c1')) + '</h2><textarea id="n3w-c1" aria-label="' + esc(t(lang, 'w_c1')) + TB.kbx_n30c__s.k8 + esc(t(lang, 'w_cp')) + '</button>' +
+    '<h2>' + esc(t(lang, 'w_c2')) + '</h2><textarea id="n3w-c2" aria-label="' + esc(t(lang, 'w_c2')) + TB.kbx_n30c__s.k9 + esc(t(lang, 'w_cp')) + '</button>' +
     '<p class="lim">' + esc(t(lang, 'w_lic')) + '</p><ul class="lk"><li><a href="/embed/widgets/">' + esc(t(lang, 'w_more')) + '</a></li><li><a href="/embed/p/' + x.s + '/">/embed/p/' + x.s + '/</a></li></ul></div>' +
-    '<style>.n3w-f{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px 14px;margin:18px 0}.n3w-f label{display:flex;flex-direction:column;gap:4px;font-weight:600;font-size:.88rem;min-width:0}.n3w-f input,.n3w-f select{min-height:44px;border:1.5px solid var(--line,#d5d3cc);border-radius:10px;padding:0 10px;background:var(--paper,#fff);color:inherit;font:inherit;font-weight:500;min-width:0;width:100%;box-sizing:border-box}' +
-    '.n3w textarea{width:100%;box-sizing:border-box;font:13px/1.45 ui-monospace,Menlo,Consolas,monospace;border:1px solid var(--line,#d5d3cc);border-radius:10px;padding:10px;background:var(--paper,#fff);color:inherit}.n3w-b{min-height:44px;padding:0 16px;margin:6px 0 0;border:1.5px solid var(--ink,#17212B);border-radius:10px;background:none;color:inherit;font:inherit;font-weight:600;cursor:pointer}.n3w-pv{padding:12px;border:1px dashed var(--line,#d5d3cc);border-radius:12px}</style>' +
-    '<script>' + BUILDER_JS + '</script>';
+    TB.kbx_n30c__s.k10 +
+    TB.kbx_n30c__s.k11 +
+    '<script>' + TB.kbx_n30c__s.BUILDER_JS + '</script>';
   return shellPage(shell, lang, { title: t(lang, 'w_t'), h1: t(lang, 'w_t'), lead: t(lang, 'w_lead'), desc: t(lang, 'w_d'), canon: ORIGIN + P + '/tools/widget/', alt: l => ORIGIN + pre(l) + '/tools/widget/', body, crumb: [['/tools/', t(lang, 'cr_tools')]] });
 }
 
@@ -240,7 +229,7 @@ async function engStatus(u, env, ctx, shell, lang) {
     b += '<p>' + esc(t(lang, 'es_lat1', { t: ftime(sw.at, lang), c: sw.commit || '-', up: num(sw.up || 0, lang), n: num(sw.n || 0, lang), p50: num(Math.round(quant(swMs, .5) || 0), lang), p95: num(Math.round(quant(swMs, .95) || 0), lang) })) + '</p>' +
       '<div class="k-table-wrap"><table><thead><tr><th scope="col">' + esc(t(lang, 'es_pg')) + '</th><th scope="col" class="k-n">' + esc(t(lang, 'es_hs')) + '</th><th scope="col" class="k-n">' + esc(t(lang, 'es_ms')) + '</th><th scope="col" class="k-n">' + esc(t(lang, 'es_kb')) + '</th></tr></thead><tbody>' +
       sw.pages.map(p => '<tr><td><a href="' + esc(p.p) + '"><code>' + esc(p.p) + '</code></a></td><td class="k-n">' + esc(p.status) + '</td><td class="k-n">' + ms(p.ms) + '</td><td class="k-n">' + kb(p.bytes) + '</td></tr>').join('') + '</tbody></table></div>' +
-      '<p class="lim"><a href="/api/x/status/pages">/api/x/status/pages</a> · p50 / p95: linear interpolation (type 7), n = ' + swMs.length + '</p>';
+      TB.kbx_n30c__s.k12 + swMs.length + '</p>';
   } else b += na;
   // 3. deploy and build times
   b += '<h2 id="deploys">' + esc(t(lang, 'es_dep')) + '</h2>';
@@ -260,7 +249,7 @@ async function engStatus(u, env, ctx, shell, lang) {
   } else b += na;
   try { b += await (await import('./kbx_n34c.js')).statusBlock(env, lang); } catch (e) {}   // n34c (batch 34): API usage per endpoint and 30-day synthetic monitoring
   try { b += await (await import('./kbx_n35b.js')).incidentsHtml(env, lang); } catch (e) {}   // n35b (batch 35, item 20): incident history from deploy guard, monitoring and engineering notes
-  b += '<p class="lim">' + esc(t(lang, 'es_more')) + '</p><ul class="lk"><li><a href="/status/">/status/</a></li><li><a href="/engineering/reliability/">/engineering/reliability/</a></li><li><a href="/engineering/speed/">/engineering/speed/</a></li><li><a href="/engineering/page-weight/">/engineering/page-weight/</a></li><li><a href="/data/lighthouse.json">/data/lighthouse.json</a></li></ul>';
+  b += '<p class="lim">' + esc(t(lang, 'es_more')) + TB.kbx_n30c__s.k13;
   const r = await shellPage(shell, lang, { title: t(lang, 'es_t'), h1: t(lang, 'es_t'), lead: t(lang, 'es_lead'), desc: t(lang, 'es_d'), canon: ORIGIN + P + '/engineering/status/', alt: l => ORIGIN + pre(l) + '/engineering/status/', body: b, crumb: [['/engineering/', t(lang, 'cr_eng')]] });
   if (r) { const h = new Headers(r.headers); h.set('cache-control', 'public, max-age=120'); return new Response(r.body, { status: 200, headers: h }); }
   return r;
@@ -275,12 +264,12 @@ export { t as t30 };
 export async function handle(req, u, env, ctx, shell) {
   const p = u.pathname;
   if (p === '/k/n30c-map.js') return new Response(null, { status: 301, headers: { location: '/k/n35b/map.js', 'cache-control': 'public, max-age=3600' } });
-  if (p === '/embed/v2.js') return new Response(LOADER, { headers: { 'content-type': 'application/javascript; charset=utf-8', 'cache-control': 'public, max-age=3600', 'access-control-allow-origin': '*', 'x-content-type-options': 'nosniff' } });
+  if (p === '/embed/v2.js') return new Response(TB.kbx_n30c__s.LOADER, { headers: { 'content-type': 'application/javascript; charset=utf-8', 'cache-control': 'public, max-age=3600', 'access-control-allow-origin': '*', 'x-content-type-options': 'nosniff' } });
   let m = /^\/api\/v1\/pin\/([A-Za-z0-9-]{3,20})$/.exec(p);
   if (m) {
     const ix = await N.data(env), x = ix.byId.get(m[1].toUpperCase()) || ix.bySlug.get(m[1].toLowerCase()); if (!x) return jr({ error: 'unknown project id' }, 404);
     const L = await import('./kbx_land.js'), ld = await L.landData(env), r = pinRecord(ld, x);
-    return jr(Object.assign({ about: 'Pin check of one named project: what open layers say at the project pin (about 100 m accurate). Readings of global models and volunteer maps, not a verdict on the land; the land office gives the binding answer. Coordinates are not published.', project: ORIGIN + '/projects/' + x.s + '/' }, r || { id: x.id, note: 'no pin check for this project yet (no plot-level pin, or not in the last run)' }), 200, 'public, max-age=3600');
+    return jr(Object.assign({ about: TB.kbx_n30c__s.k14, project: ORIGIN + '/projects/' + x.s + '/' }, r || { id: x.id, note: 'no pin check for this project yet (no plot-level pin, or not in the last run)' }), 200, 'public, max-age=3600');
   }
   m = /^\/embed\/v2\/([a-z0-9-]{1,90})\/?$/.exec(p);
   if (m) {

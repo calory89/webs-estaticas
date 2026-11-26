@@ -127,13 +127,7 @@ export function stages(rec, ix, rd, bd, ms, id) {
 }
 
 // ------------------------------------------------------------------------------------------------ HTML (inside the "from space" section)
-const CSS = '<style id="kstage-css">.kstage{margin-top:28px;padding-top:4px;border-top:1px solid var(--k-line,var(--line))}.kstage h3{margin:18px 0 6px;font-size:var(--k-fs-lg,1.2rem)}' +
-  '.kstage-now{margin:12px 0 0;padding:14px 16px;border:1px solid var(--k-line,var(--line));border-radius:var(--k-r-lg,14px);background:var(--k-surface,#fff)}.kstage-now .kstage-st{font-size:var(--k-fs-xl,1.4rem);font-weight:700;margin:2px 0 4px}.kstage-now ul{margin:8px 0 0;padding-inline-start:18px;line-height:1.5;font-size:var(--k-fs-sm,.94rem);color:var(--k-ink-2,var(--ink))}' +
-  '.kstage-rib{display:flex;gap:1px;margin:16px 0 4px;height:26px;border-radius:var(--k-r-xs,4px);overflow:hidden}.kstage-rib i{flex:1 1 0;min-width:2px;display:block;background:var(--k-sunken,#E8ECEA)}' +
-  '.kstage .s-cleared{background:color-mix(in srgb,var(--k-sea,#155C75) 22%,var(--k-surface,#fff))}.kstage .s-earthworks{background:color-mix(in srgb,var(--k-sea,#155C75) 45%,var(--k-surface,#fff))}.kstage .s-structure{background:color-mix(in srgb,var(--k-sea,#155C75) 72%,var(--k-surface,#fff))}.kstage .s-roofed{background:var(--k-sea,#155C75)}' +
-  '.kstage .s-none,.kstage .s-base{background:var(--k-sunken,#E8ECEA)}.kstage .s-base{background:repeating-linear-gradient(90deg,var(--k-sunken,#E8ECEA) 0 3px,var(--k-line-2,#C9D0CD) 3px 4px)}.kstage .s-cant{background:repeating-linear-gradient(135deg,var(--k-surface,#fff) 0 3px,var(--k-muted,#56636F) 3px 4px)}.kstage .s-nodata{background:var(--k-surface,#fff);box-shadow:inset 0 0 0 1px var(--k-line,#D5DAD8)}' +
-  '.kstage-yr{display:flex;justify-content:space-between;font-size:.72rem;color:var(--k-muted,var(--muted));font-variant-numeric:tabular-nums}.kstage-lg{display:flex;flex-wrap:wrap;gap:6px 16px;margin:10px 0 0;padding:0;list-style:none;font-size:var(--k-fs-xs,.82rem)}.kstage-lg li{display:flex;align-items:center;gap:6px}.kstage-lg i{display:inline-block;width:14px;height:14px;border-radius:3px}' +
-  '.kstage .tw{overflow-x:auto}.kstage table{border-collapse:collapse;font-size:var(--k-fs-xs,.82rem);min-width:100%}.kstage th,.kstage td{text-align:start;padding:6px 8px;border-bottom:1px solid var(--k-line,var(--line));vertical-align:top;font-variant-numeric:tabular-nums}.kstage td:first-child{white-space:nowrap}</style>';
+/* CSS: n40 k17, in /data/i18n/k17s.json */
 
 const SRC = { o: '/data/construction-progress.json', r: '/data/satellite-radar.json', b: '/data/buildings.json', d: '/promises/', p: '/promises/' };
 function reasonText(lang, fd, code, p) {
@@ -149,7 +143,7 @@ export function stageHtml(est, lang, fd, id) {
   if (!est) return '';
   const head = '<h3>' + esc(t(lang, 'h')) + '</h3><p class="ki">' + esc(t(lang, 'intro')) + '</p>';
   const links = '<p class="ksat-src"><a href="' + pre(lang) + '/methods/construction-stage/">' + esc(t(lang, 'method')) + '</a> <a class="src" href="/api/x/stage/' + encodeURIComponent(id) + '">' + esc(t(lang, 'api')) + '</a></p>';
-  if (!est.enough || !est.latest) return CSS + '<div class="kstage" id="stage">' + head + '<p>' + esc(t(lang, 'thin', { c: est.clear })) + '</p>' + links + '</div>';
+  if (!est.enough || !est.latest) return TB.kbx_stage__s.CSS + '<div class="kstage" id="stage">' + head + '<p>' + esc(t(lang, 'thin', { c: est.clear })) + '</p>' + links + '</div>';
   const L = est.latest;
   const li = L.r.map(([code, p]) => '<li>' + esc(reasonText(lang, fd, code, p)) + (srcOf(code) ? ' <a class="k-src" href="' + srcOf(code) + '">' + esc(code[0] === 'o' ? 'Sentinel-2' : code[0] === 'r' ? 'Sentinel-1' : code[0] === 'b' ? 'Overture' : t(lang, 'why')) + '</a>' : '') + '</li>').join('');
   const now = '<div class="kstage-now" role="group" aria-label="' + esc(t(lang, 'latest', { m: fd(L.m) })) + '"><div class="k-small k-muted">' + esc(t(lang, 'latest', { m: fd(L.m) })) + '</div><div class="kstage-st">' + esc(stageWord(lang, L.s)) + '</div>' +
@@ -163,7 +157,7 @@ export function stageHtml(est, lang, fd, id) {
   const sigs = x => x.r.map(([code, p]) => code === 'o_up' || code === 'o_green' || code === 'o_same' ? (code === 'o_same' ? '' : t(lang, 's_o', { x: code === 'o_green' ? '-' + p.x : p.x })) : code === 'r_up' || code === 'r_down' || code === 'r_flat' ? t(lang, 's_r', { x: p.x }) : code === 'b_yes' || code === 'b_yesf' ? t(lang, 's_b') : '').filter(Boolean).join(', ');
   const rows = M.slice().reverse().map(x => '<tr><td>' + esc(fd(x.m)) + '</td><td>' + esc(stageWord(lang, x.s)) + '</td><td>' + esc(x.c ? t(lang, 'c_' + x.c) : '') + '</td><td>' + esc(sigs(x)) + '</td></tr>').join('');
   const table = '<details><summary>' + esc(t(lang, 'tbl')) + '</summary><div class="tw"><table><thead><tr>' + th.map(h => '<th scope="col">' + esc(h) + '</th>').join('') + '</tr></thead><tbody>' + rows + '</tbody></table></div></details>';
-  return CSS + '<div class="kstage" id="stage">' + head + now + rib + lg + '<p class="ksat-lim">' + esc(t(lang, 'lim')) + '</p>' + links + table + '</div>';
+  return TB.kbx_stage__s.CSS + '<div class="kstage" id="stage">' + head + now + rib + lg + '<p class="ksat-lim">' + esc(t(lang, 'lim')) + '</p>' + links + table + '</div>';
 }
 // per-month stage words for the time machine (month -> [stage word, confidence word])
 export function stageLabels(est, lang) {
@@ -185,7 +179,7 @@ async function inputs(env, id) {
 export async function handle(req, u, env) {
   if (req.method !== 'GET' && req.method !== 'HEAD') return out({ error: 'method not allowed' }, 405, 'no-store');
   const q = u.pathname.replace(/\/+$/, '');
-  if (q === '/api/x/stage') return out({ module: 'stage (batch 18, n18b)', endpoints: { '/api/x/stage/<ID>': 'monthly construction stage estimate, confidence and reasons for one named project with a satellite series' }, rules: RULES, version: VERSION, method: ORIGIN + '/methods/construction-stage/', licence: 'CC BY 4.0 (credit: Kolaboro, kolaboro.com)' });
+  if (q === '/api/x/stage') return out({ module: 'stage (batch 18, n18b)', endpoints: { '/api/x/stage/<ID>': TB.kbx_stage__s.k0 }, rules: RULES, version: VERSION, method: ORIGIN + '/methods/construction-stage/', licence: 'CC BY 4.0 (credit: Kolaboro, kolaboro.com)' });
   const id = decodeURIComponent(q.slice('/api/x/stage/'.length)).toUpperCase().slice(0, 20);
   if (!/^[A-Z]{1,6}-\d{1,4}$/.test(id)) return out({ error: 'give /api/x/stage/<ID> like AUH-003' }, 400, 'public, max-age=60');
   let d; try { d = await inputs(env, id); } catch (e) { return out({ error: 'unavailable' }, 503, 'no-store'); }
@@ -197,7 +191,7 @@ export async function handle(req, u, env) {
     months: e.months.map(x => ({ month: x.m, stage: x.s, confidence: x.c, reasons: x.r.map(([c]) => c) })),
     stages: Object.fromEntries(['base', 'none', 'cleared', 'earthworks', 'structure', 'roofed', 'cant', 'nodata'].map(s => [s, stageWord('en', s)])),
     sources: { optical: ORIGIN + SRC.o, radar: ORIGIN + SRC.r, buildings: ORIGIN + SRC.b, promises: ORIGIN + '/data/promises.json' }, data_updated: { optical: d.sat.updated, radar: d.sat.space && d.sat.space.radar && d.sat.space.radar.updated || null, buildings: d.sat.space && d.sat.space.bld && d.sat.space.bld.updated || null },
-    caveat: S.en.lim, method: ORIGIN + '/methods/construction-stage/', licence: 'CC BY 4.0 (credit: Kolaboro, kolaboro.com). Contains modified Copernicus Sentinel data; Overture Maps ODbL 1.0.' });
+    caveat: S.en.lim, method: ORIGIN + '/methods/construction-stage/', licence: TB.kbx_stage__s.k1 });
 }
 
 // ------------------------------------------------------------------------------------------------ method page
@@ -208,13 +202,13 @@ function methodBody(lang) {
   const fill = s => s.replace(/\{(\w+)\}/g, (m, x) => v[x] != null ? v[x] : m);
   const keys = ['base', 'roofed', 'structure', 'earthworks', 'cleared', 'none'];
   const rules = t(lang, 'm_rules').map((s, i) => '<li><span class="kstg-sw s-' + keys[i] + '" aria-hidden="true"></span>' + esc(fill(s)) + '</li>').join('');
-  return '<div class="kstg-pg"><section class="k-sec"><div class="k-wrap"><div class="k-phead"><p class="k-crumb"><a href="' + pre(lang) + '/">Kolaboro</a></p><h1>' + esc(t(lang, 'm_title')) + '</h1><p class="lead">' + esc(t(lang, 'm_lead')) + '</p></div>' +
+  return TB.kbx_stage__s.k2 + pre(lang) + '/">Kolaboro</a></p><h1>' + esc(t(lang, 'm_title')) + '</h1><p class="lead">' + esc(t(lang, 'm_lead')) + '</p></div>' +
     '<h2>' + esc(t(lang, 'm_h_in')) + '</h2><ul>' + t(lang, 'm_in').map(s => '<li>' + esc(fill(s)) + '</li>').join('') + '</ul></div></section>' +
     '<section class="k-sec"><div class="k-wrap"><h2>' + esc(t(lang, 'm_h_rules')) + '</h2><ol>' + rules + '</ol>' +
     '<p>' + esc(fill(t(lang, 'm_rule_x'))) + '</p><h2>' + esc(t(lang, 'm_h_conf')) + '</h2><p>' + esc(t(lang, 'm_conf')) + '</p>' +
     '<h2>' + esc(t(lang, 'm_h_cant')) + '</h2><p><span class="kstg-sw s-cant" aria-hidden="true"></span>' + esc(stageWord(lang, 'cant')) + '</p><ul>' + t(lang, 'm_cant').map(s => '<li>' + esc(fill(s)) + '</li>').join('') + '</ul></div></section>' +
     '<section class="k-sec"><div class="k-wrap"><h2>' + esc(t(lang, 'm_h_lim')) + '</h2><p>' + esc(t(lang, 'm_lim')) + '</p><h2>' + esc(t(lang, 'm_h_data')) + '</h2><p>' + esc(t(lang, 'm_data')) + '</p>' +
-    '<p class="kfc-links"><a href="/api/x/stage">/api/x/stage</a> <a href="/data/construction-progress.json">/data/construction-progress.json</a> <a href="/data/satellite-radar.json">/data/satellite-radar.json</a> <a href="/data/buildings.json">/data/buildings.json</a> <a href="https://registry.opendata.aws/sentinel-2-l2a-cogs/" rel="noopener">Sentinel-2 L2A COGs</a> <a href="https://planetarycomputer.microsoft.com/dataset/sentinel-1-rtc" rel="noopener">Sentinel-1 RTC</a> <a href="https://docs.overturemaps.org/attribution/" rel="noopener">Overture attribution</a></p></div></section></div>';
+    TB.kbx_stage__s.k3;
 }
 export async function method(req, u, env, ctx, shell) {
   const m = u.pathname.match(/^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?methods\/construction-stage(\/?)$/); if (!m || !shell) return null;

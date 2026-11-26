@@ -6,6 +6,7 @@
 // and limits. A source that does not answer is reported as unavailable, never estimated. Pins are rounded to about 10 m and the
 // answer is cached at the edge; coordinates are not stored or logged anywhere else.
 import * as HZ from './kbx_p_hz.js';
+import { TB } from './kbx_strings.js';
 export const PATHS = /^\/api\/x\/u(\/|$)/;
 
 const CORS = { 'access-control-allow-origin': '*', 'access-control-allow-methods': 'GET, OPTIONS' };
@@ -142,10 +143,10 @@ async function climate(lat, lng) {
     baseline: { river_m: rbv.ok ? rbv.v : 'unavailable', river_period: '1960 to 1999 climate (WATCH)', coast_m: cbv.ok ? cbv.v : 'unavailable', coast_period: '2010 sea level' },
     scenarios,
     files_read: all.length, files_failed: failed.length, failures: failed.slice(0, 6).map(x => ({ file: x.f, why: x.why })),
-    reading: 'River: water depth in the 1 km cell for a 1-in-100-year river flood, from each of five climate models (GFDL-ESM2M, HadGEM2-ES, IPSL-CM5A-LR, MIROC-ESM-CHEM, NorESM1-M); we show the median and the range, because the models disagree. Coast: depth for a 1-in-100-year storm surge plus sea level rise, at the 50th and the 95th percentile of the sea level projection, without land subsidence. null means the model has no value in this cell (no modelled river, or outside the coastal model); 0 means modelled and dry.',
+    reading: TB.kbx_u__s.k0,
     source: { name: 'WRI Aqueduct Floods Hazard Maps v2 (World Resources Institute; Ward et al. 2020)', url: 'https://www.wri.org/data/aqueduct-floods-hazard-maps', license: 'CC BY 4.0' },
     query: AQ + '<file>.tif, files named in this answer (for example ' + AQ + F.river('rcp8p5', 2050, GCM[0]) + ')',
-    limits: 'A global model on a 1 km grid: one value covers a neighbourhood, flood defences are not modelled, and flash floods from heavy rain on small streams are not included. Future runs come from five 2010s-era climate models (CMIP5) under two emission paths; they are scenarios, not forecasts, and they often disagree, so read the range, not one number. The coastal runs leave out land subsidence, which in parts of Jakarta and other deltas adds more than sea level rise. Riverine baseline is the 1960 to 1999 climate, coastal baseline is 2010 sea level.',
+    limits: TB.kbx_u__s.k1,
   };
 }
 
@@ -209,8 +210,8 @@ async function ofmTiles() {   // current tile URL template from the TileJSON (th
   OFM = { url, t: Date.now() }; return url;
 }
 async function osmProtected(lat, lng) {
-  const src = { name: 'OpenStreetMap protected areas, nature reserves, national parks and mangrove wetlands, read from OpenFreeMap vector tiles (OpenMapTiles schema, zoom 14)', url: 'https://openfreemap.org/', license: 'Data ODbL, (c) OpenStreetMap contributors. Tiles: OpenFreeMap, OpenMapTiles schema' };
-  const limits = 'Volunteer-mapped boundaries: coverage is good for national parks and around tourist areas and patchy elsewhere, and an OpenStreetMap boundary is not a legal document. A missing boundary does not prove the land is unprotected. The tiles keep the class and name of each area, not its legal designation. Distances are to the mapped boundary, up to 1 km, rounded to 10 m (under 1 km).';
+  const src = { name: TB.kbx_u__s.k2, url: 'https://openfreemap.org/', license: 'Data ODbL, (c) OpenStreetMap contributors. Tiles: OpenFreeMap, OpenMapTiles schema' };
+  const limits = TB.kbx_u__s.k3;
   const Z = 14, n = 2 ** Z, rad = 1, dy = rad / 110.57, dx = rad / (111.32 * Math.max(0.2, Math.cos(R(lat))));
   const tx = lo => Math.floor((lo + 180) / 360 * n), ty = la => Math.floor((1 - Math.log(Math.tan(R(la)) + 1 / Math.cos(R(la))) / Math.PI) / 2 * n);
   const x0 = tx(lng - dx), x1 = tx(lng + dx), y0 = ty(lat + dy), y1 = ty(lat - dy), px = tx(lng), py = ty(lat);
@@ -260,7 +261,7 @@ async function osmProtected(lat, lng) {
   list.sort((a, b) => (b.inside - a.inside) || ((a.boundary_m == null ? 1e9 : a.boundary_m) - (b.boundary_m == null ? 1e9 : b.boundary_m)));
   const inside = list.filter(x => x.inside), near = list.filter(x => !x.inside);
   return { ok: true, radius_m: 1000, zoom: Z, tiles_read: tiles.length, inside, near: near.slice(0, 12), near_total: near.length, source: src, query: urls.map(t => t.url), limits,
-    note: inside.length ? 'The pin falls inside at least one mapped area.' : near.length ? 'Not inside a mapped area, but at least one boundary is within 1 km.' : 'No mapped protected area, nature reserve, national park or mangrove wetland contains the pin or comes within 1 km.' };
+    note: inside.length ? 'The pin falls inside at least one mapped area.' : near.length ? 'Not inside a mapped area, but at least one boundary is within 1 km.' : TB.kbx_u__s.k4 };
 }
 const GMW = new Map();
 async function gmwBlock(env, lonB, latB) {
@@ -289,8 +290,8 @@ function tileSet(blk, t) {
   t.set = s; return s;
 }
 async function mangroveGrid(lat, lng, env, radiusKm = 1) {
-  const src = { name: 'Global Mangrove Watch v3.0, 2020 mangrove extent (Bunting et al. 2022, Aberystwyth University, soloEO, JAXA and partners)', url: 'https://zenodo.org/records/6894273', license: 'CC BY 4.0' };
-  const limits = 'Satellite-mapped mangrove forest in 2020 (ALOS PALSAR radar and Landsat, 25 m pixels). We reduced it to a grid of 0.002 degree cells (about 220 m) that contain any mangrove pixel, so distances are to the nearest such cell edge and can be up to about 220 m shorter than to the trees themselves. Mangroves cleared since 2020 still show; planted ones since then do not.';
+  const src = { name: TB.kbx_u__s.k5, url: 'https://zenodo.org/records/6894273', license: 'CC BY 4.0' };
+  const limits = TB.kbx_u__s.k6;
   const step = 1 / 500, dy = radiusKm / 110.57, dx = radiusKm / (111.32 * Math.max(0.2, Math.cos(R(lat))));
   let best = Infinity, cells = 0;
   try {
@@ -311,14 +312,14 @@ async function mangroveGrid(lat, lng, env, radiusKm = 1) {
     }
   } catch (e) { return { ok: false, why: String(e.message || e).slice(0, 80), source: src, limits }; }
   return { ok: true, radius_m: radiusKm * 1000, grid_m: 220, in_cell: best === 0, cells_within: cells, nearest_m: best === Infinity ? null : Math.round(best * 1000 / 10) * 10,
-    query: 'https://kolaboro.com/data/mangroves/ (index built from gmw_v3_2020_gtiff.zip, Zenodo record 6894273)', source: src, limits };
+    query: TB.kbx_u__s.k7, source: src, limits };
 }
 async function protectedAt(lat, lng, env) {
   const t0 = Date.now();
   const [osm, gmw] = await Promise.all([osmProtected(lat, lng), mangroveGrid(lat, lng, env)]);
   return { lat, lng, generated: new Date().toISOString(), ms: Date.now() - t0, osm, mangroves: gmw,
     not_used: { name: 'World Database on Protected Areas (WDPA, Protected Planet, UNEP-WCMC)', url: 'https://www.protectedplanet.net/c/terms-and-conditions',
-      why: 'The most complete global list of protected areas, but its terms forbid commercial use without prior written permission from UNEP-WCMC, and they define commercial use as any use by or to assist a commercial entity. Kolaboro is run by a company, so we do not use it. The official national registers and the land office remain the binding source.' } };
+      why: TB.kbx_u__s.k8 } };
 }
 
 export async function handle(req, u, env, ctx) {
@@ -334,13 +335,13 @@ export async function handle(req, u, env, ctx) {
       const k = new Request('https://kolaboro.com/__u/' + key);
       const hit = await caches.default.match(k);
       if (hit) { const r = new Response(hit.body, hit); r.headers.set('x-cache', 'hit'); return r; }
-      if (!(await allow(ctx, 'u' + p + '/' + ipOf(req), 12, 600))) return out({ error: 'rate_limited', note: 'At most 12 new pins per 10 minutes from one address, so the free public sources behind this page are not overloaded. Pins already looked up by anyone stay instant.' }, 429);
+      if (!(await allow(ctx, 'u' + p + '/' + ipOf(req), 12, 600))) return out({ error: 'rate_limited', note: TB.kbx_u__s.k9 }, 429);
       if (p === 'climate') return await cached(key, ctx, () => climate(lat, lng), b => b.files_failed ? 0 : 86400 * 30);
       return await cached(key, ctx, () => protectedAt(lat, lng, env), b => (b.osm.ok && b.mangroves.ok) ? 86400 * 7 : 0);
     }
     if (p === '' || p === 'about') return out({ module: 'u', endpoints: {
-      '/api/x/u/climate?lat=&lng=': '100-year river and coastal flood depth at a point: baseline, 2030 and 2050 under RCP4.5 and RCP8.5 (WRI Aqueduct Floods v2, CC BY 4.0)',
-      '/api/x/u/protected?lat=&lng=': 'protected areas and mangroves at or within 1 km of a point (OpenStreetMap ODbL via Overpass; Global Mangrove Watch 2020, CC BY 4.0)' },
+      '/api/x/u/climate?lat=&lng=': TB.kbx_u__s.k10,
+      '/api/x/u/protected?lat=&lng=': TB.kbx_u__s.k11 },
       data: { '/data/night-lights.json': 'night light trend at tracked projects that should be finished (NASA Black Marble via GIBS)', '/data/stalled-sites.json': 'Sentinel-2 change between the last two clear quarters at every tracked project with coordinates' },
       pages: ['https://kolaboro.com/hazards/', 'https://kolaboro.com/satellite/night/'] }, 200, 3600);
   } catch (e) { return out({ error: 'failed', detail: String(e.message || e).slice(0, 100) }, 502); }

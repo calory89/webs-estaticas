@@ -9,6 +9,7 @@
 import * as N from './kbx_named.js';
 import { light6, t27 } from './kbx_u27.js';
 import { coName, mkName } from './kbx_hdate.js';
+import { TB } from './kbx_strings.js';
 
 const ORIGIN = 'https://kolaboro.com';
 const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' };
@@ -112,7 +113,7 @@ async function dcPage(env, shell, l, u) {
     rows.map(([k, fn]) => '<tr><th scope="row">' + esc(t(l, k)) + '</th>' + F.map(f => '<td class="n">' + fn(f) + '</td>').join('') + '</tr>').join('') + '</tbody></table></div>';
   const upd = String(ix.updated || '').slice(0, 10);
   const b = '<form class="n35-f" method="get" action="' + P + '/developers/compare/">' + [0, 1, 2, 3].map(sel).join('') + dl + '<button class="n35-b" type="submit">' + esc(t(l, 'dc_go')) + '</button></form><p class="k-xs">' + esc(t(l, 'dc_tip')) + '</p>' +
-    tbl + '<p class="n35-note">' + esc(tf(l, 'dc_meth', { d: fdt(upd, l) })) + '</p><p class="n35-note"><b>' + esc(t(l, 'hist')) + '</b> <a href="/data/court-cases.json">court-cases.json</a> · <a href="/data/promises.json">promises.json</a></p>';
+    tbl + '<p class="n35-note">' + esc(tf(l, 'dc_meth', { d: fdt(upd, l) })) + '</p><p class="n35-note"><b>' + esc(t(l, 'hist')) + TB.kbx_n35b__s.k0;
   const names = F.map(f => f.dv.n).join(', ');
   return page(shell, l, { k: 'dc_t', path: '/developers/compare/', h1: custom ? tf(l, 'dc_h1x', { a: names }) : t(l, 'dc_t'), title: custom ? tf(l, 'dc_h1x', { a: names }) : t(l, 'dc_t'), lead: t(l, 'dc_l'), body: b, updated: upd, noindex: custom, crumb: [[t(l, 'developers'), P + '/developers/']], type: 'WebPage' });
 }
@@ -142,10 +143,10 @@ async function bjPage(env, shell, l, x) {
   const b = '<div class="n35-bj" data-k="kb-journey:' + esc(x.id) + '"><p class="n35-np"><span class="n35-bjn" role="status" aria-live="polite" data-t="' + esc(t(l, 'bj_n')) + '"></span> <button type="button" class="n35-b2" data-kb-print>' + esc(t(l, 'bj_print')) + '</button> <button type="button" class="n35-b2 n35-bjr">' + esc(t(l, 'bj_reset')) + '</button></p><ol class="n35-bjl">' +
     S.map(([k, rec, links], i) => '<li class="n35-card"><label><input type="checkbox" value="' + (i + 1) + '"> <b>' + esc(t(l, k)) + '</b></label><p>' + esc(t(l, k + 'd')) + '</p>' + say(rec) + (links.length ? '<p class="k-xs n35-np">' + links.join(' · ') + '</p>' : '') + '</li>').join('') + '</ol></div>' +
     '<p class="n35-note">' + lk('l_proj', P + '/projects/' + x.s + '/') + ' · ' + lk('l_my', '/tools/my-checklist/') + ' · ' + esc(t(l, 'hist')) + '</p>' +
-    '<style>.n35-bjl{list-style:none;padding:0;counter-reset:j}.n35-bjl>li{counter-increment:j;position:relative;padding-inline-start:56px}.n35-bjl>li::before{content:counter(j);position:absolute;inset-inline-start:16px;top:16px;width:28px;height:28px;border-radius:50%;background:var(--k-ink,#13222E);color:var(--k-paper,#fff);display:grid;place-items:center;font-weight:700;font-size:.9rem}.n35-bjl label{display:flex;gap:10px;align-items:center;min-height:44px;cursor:pointer;font-size:1.05rem}.n35-bjl input{width:22px;height:22px;flex:none}.n35-bjl li.on{opacity:.75}.n35-bjl li.on b{text-decoration:line-through}.n35-say{margin:6px 0 0;padding:8px 12px;border-radius:10px;background:var(--k-sunken,#E8ECEA);font-size:.92rem}.n35-bjn{font-weight:700;margin-inline-end:8px}</style>' +
-    '<script>(function(){var R=document.querySelector(".n35-bj");if(!R)return;var K=R.getAttribute("data-k"),B=R.querySelectorAll(".n35-bjl input"),n=R.querySelector(".n35-bjn"),s={};try{s=JSON.parse(localStorage.getItem(K)||"{}")}catch(e){}' +
-    'function d(){var a=0;B.forEach(function(b){b.checked=!!s[b.value];b.closest("li").classList.toggle("on",b.checked);if(b.checked)a++});n.textContent=n.getAttribute("data-t").replace("{a}",a).replace("{b}",B.length)}' +
-    'function w(){try{localStorage.setItem(K,JSON.stringify(s))}catch(e){}}B.forEach(function(b){b.addEventListener("change",function(){if(b.checked)s[b.value]=new Date().toISOString().slice(0,10);else delete s[b.value];w();d()})});' +
+    TB.kbx_n35b__s.k1 +
+    TB.kbx_n35b__s.k2 +
+    TB.kbx_n35b__s.k3 +
+    TB.kbx_n35b__s.k4 +
     'R.querySelector(".n35-bjr").addEventListener("click",function(){s={};w();d()});d()})()</script>';
   return page(shell, l, { path: '/projects/' + x.s + '/journey/', h1: tf(l, 'bj_t', { n: x.n }), lead: tf(l, 'bj_l', { n: x.n }), body: b, updated: N.lastmod(ix, x), noindex: true, crumb: [[t(l, 'projects'), P + '/projects/'], [x.n, P + '/projects/' + x.s + '/']] });
 }
@@ -154,8 +155,7 @@ async function bjPage(env, shell, l, x) {
 const VK = ['c_new', 'c_open', 'c_pp', 'c_pp2', 'c_ppw', 'c_bad', 'c_mis', 'c_short', 'c_add', 'c_drop', 'c_empty', 'c_name', 'c_size', 'c_added', 'c_view', 'c_dl', 'c_cr', 'c_del', 'c_delq', 'c_lock', 'c_exp', 'c_imp', 'c_impok', 'c_impbad', 'c_wipe', 'c_wipeq', 'c_busy', 'c_n', 'c_nosup', 'c_locked', 'c_big', 'c_act'];
 async function vtPage(env, shell, l) {
   const S = Object.fromEntries(VK.map(k => [k, t(l, k)])); S._loc = LOC[l]; S._p = pre(l);
-  const b = '<div id="n35v" class="n35-card" aria-live="polite"><noscript>JavaScript is needed for the vault.</noscript></div>' +
-    '<details class="n35-card"><summary><b>' + esc(t(l, 'vt_how')) + '</b></summary><p>' + esc(t(l, 'vt_howd')) + '</p></details>' +
+  const b = TB.kbx_n35b__s.k5 + esc(t(l, 'vt_how')) + '</b></summary><p>' + esc(t(l, 'vt_howd')) + '</p></details>' +
     '<script type="application/json" id="n35v-t">' + JSON.stringify(S).replace(/</g, '\\u003c') + '</script><script src="/k/n35b/vault.js?v=' + V + '" defer></script>';
   return page(shell, l, { k: 'vt_t', path: '/tools/vault/', h1: t(l, 'vt_t'), lead: t(l, 'vt_l'), body: b, updated: '2026-11-22', crumb: [[t(l, 'tools'), pre(l) + '/tools/']], type: 'WebApplication' });
 }
@@ -187,7 +187,7 @@ async function pmPage(env, shell, l, u) {
     '<p class="n35-note">' + esc(tf(l, 'pm_note', { d: fdt(D && D.built, l) })) + ' ' + esc(t(l, 'pm_meth')) + ' <a href="/data/n35b.json">n35b.json</a></p>' +
     '<h2>' + esc(t(l, 'pm_tbl')) + '</h2><div class="n35-tw" tabindex="0" role="region" aria-label="' + esc(t(l, 'pm_tbl')) + '"><table><thead><tr><th scope="col">' + esc(t(l, 'pm_mk')) + '</th><th scope="col">' + esc(t(l, 'pm_th_n')) + '</th><th scope="col">' + esc(t(l, 'pm_th_med')) + '</th><th scope="col">' + esc(t(l, 'pm_th_ci')) + '</th></tr></thead><tbody>' +
     M.map(x => '<tr><td><a href="' + P + '/tools/price-per-m2/?m=' + x.slug + '">' + esc(mkName(x.market, l)) + '</a></td><td class="n">' + nf(x.n, l) + '</td><td class="n">' + nf(x.median, l) + ' ' + esc(x.currency) + '</td><td class="n">' + nf(x.ci95[0], l) + ' – ' + nf(x.ci95[1], l) + '</td></tr>').join('') + '</tbody></table></div>' +
-    '<script>(function(){var s=document.getElementById("n35pm"),p=document.querySelector("label[for=n35pp]");if(!s||!p)return;var C={' + M.map(x => '"' + x.slug + '":"' + x.currency + '"').join(',') + '};function u(){var t=p.firstChild;t.textContent=t.textContent.replace(/\\s*\\(.*\\)$/,"")+" ("+(C[s.value]||"")+")"}s.addEventListener("change",u);u()})()</script>';
+    TB.kbx_n35b__s.k6 + M.map(x => '"' + x.slug + '":"' + x.currency + '"').join(',') + TB.kbx_n35b__s.k7;
   return page(shell, l, { k: 'pm_t', path: '/tools/price-per-m2/', h1: t(l, 'pm_t'), lead: t(l, 'pm_l'), body: b, updated: D && D.built, noindex: asked, crumb: [[t(l, 'tools'), P + '/tools/']], type: 'WebApplication', maxAge: 600 });
 }
 
@@ -201,7 +201,7 @@ export async function incidentsHtml(env, l) {
     '<div class="k-table-wrap" tabindex="0" role="region" aria-label="' + esc(t(l, 'in_h')) + '"><table><thead><tr><th scope="col">' + esc(t(l, 'in_when')) + '</th><th scope="col">' + esc(t(l, 'in_what')) + '</th><th scope="col">' + esc(t(l, 'in_imp')) + '</th><th scope="col">' + esc(t(l, 'in_dur')) + '</th><th scope="col">' + esc(t(l, 'in_fix')) + '</th></tr></thead><tbody>' +
     (D.incidents || []).map(x => '<tr id="i-' + esc(x.id) + '"><td><time datetime="' + esc(x.start.replace(/Z$/, ':00Z')) + '">' + esc(fdh(x.start)) + '</time><br><small>' + esc(x.kind) + '</small></td><td lang="en">' + esc(x.what) + '</td><td lang="en">' + esc(x.impact) + '</td><td class="k-n">' + dur(x) + '</td><td lang="en">' + esc(x.fix) +
       ((x.commits || []).filter(Boolean).length ? ' <small>' + x.commits.filter(Boolean).map(c => '<code>' + esc(c) + '</code>').join(' ') + '</small>' : '') + '</td></tr>').join('') +
-    '</tbody></table></div><p class="k-xs"><a href="/data/n35b.json">' + esc(t(l, 'in_json')) + '</a> · <a href="/data/deploys.json">deploys.json</a> · <a href="/data/monitoring.json">monitoring.json</a></p></section>';
+    '</tbody></table></div><p class="k-xs"><a href="/data/n35b.json">' + esc(t(l, 'in_json')) + TB.kbx_n35b__s.k8;
 }
 
 // ------------------------------------------------------------------------------------------------ routes

@@ -6,7 +6,8 @@
 // record's facts) on the same timeline. Server-rendered SVG, no client script. Projects without a series get no section.
 import { BA_BTN_JS, baButton } from './kbx_n30a.js';   // n30a (batch 30): before/after slider over two dated images of the same sprite
 import { spaceData, spaceHtml } from './kbx_space.js';   // n17b: Sentinel-1 radar and Overture buildings, same circle
-import { stages, stageHtml, stageLabels } from './kbx_stage.js';   // n18b: construction stage estimate per month (rules), time machine labels
+import { stages, stageHtml, stageLabels } from './kbx_stage.js';
+import { TB } from './kbx_strings.js';   // n18b: construction stage estimate per month (rules), time machine labels
 const ORIGIN = 'https://kolaboro.com';
 let MEMO = null;
 export async function satData(env) {
@@ -53,17 +54,7 @@ export function milestones(prom, fx) {
   return out;
 }
 
-const CSS = '<style id="ksat-css">.ksat{--ksat-t:76px}.ksat .ksat-sum{margin:0 0 4px;padding:0;list-style:none}.ksat .ksat-sum li{border-top:1px solid var(--k-line,var(--line));padding:10px 0;line-height:1.5}' +
-  '.ksat figure{margin:18px 0 0;border:1px solid var(--k-line,var(--line));border-radius:var(--k-r-lg,14px);background:var(--k-surface,var(--card,#fff));padding:14px 14px 10px}.ksat figcaption{font-size:var(--k-fs-xs,.82rem);color:var(--k-muted,var(--muted));margin:8px 0 0;line-height:1.45}' +
-  '.ksat-strip{display:flex;flex-direction:row-reverse;gap:6px;overflow-x:auto;margin:0;padding:0 0 8px;list-style:none;scroll-snap-type:x proximity;overscroll-behavior-x:contain}.ksat-strip li{flex:0 0 var(--ksat-t);scroll-snap-align:end;margin:0}' +
-  '.ksat-tile{display:block;width:var(--ksat-t);height:var(--ksat-t);border-radius:var(--k-r-xs,4px);background-color:var(--k-sunken,#E8ECEA);background-repeat:no-repeat}.ksat-tile.is-none{background-image:repeating-linear-gradient(135deg,transparent 0 6px,color-mix(in srgb,var(--k-muted,#56636F) 18%,transparent) 6px 7px)}' +
-  '.ksat-strip small{display:block;font-size:.72rem;line-height:1.25;color:var(--k-muted,var(--muted));margin-top:4px;font-variant-numeric:tabular-nums}.ksat-strip .is-none+small{color:var(--k-faint,var(--muted))}' +
-  '.ksat-n{display:none}@media(max-width:560px){.ksat-w{display:none}.ksat-n{display:block}}.ksat-chart svg{display:block;width:100%;height:auto;overflow:visible}.ksat-chart .ax{stroke:var(--k-line,#D5DAD8);stroke-width:1}.ksat-chart .gl{stroke:var(--k-line,#D5DAD8);stroke-width:1;stroke-dasharray:2 4}.ksat-chart text{fill:var(--k-muted,#56636F);font-size:11px;font-variant-numeric:tabular-nums}' +
-  '.ksat-chart .lx{fill:none;stroke:var(--k-sea,#155C75);stroke-width:2.2;stroke-linejoin:round}.ksat-chart .px{fill:var(--k-sea,#155C75)}.ksat-chart .band{fill:color-mix(in srgb,var(--k-sea,#155C75) 8%,transparent)}' +
-  '.ksat-chart .ms{fill:color-mix(in srgb,var(--k-ink,#13222E) 9%,transparent)}.ksat-chart .ml{stroke:var(--k-ink,#13222E);stroke-width:1.5}.ksat-chart .mo{stroke:var(--k-muted,#56636F);stroke-width:1;stroke-dasharray:3 3}.ksat-chart .mt{fill:var(--k-ink,#13222E);font-size:11px;font-weight:600}.ksat-chart .mto{fill:var(--k-muted,#56636F);font-weight:500}' +
-  '.ksat-lg{display:flex;flex-wrap:wrap;gap:6px 18px;margin:8px 0 0;padding:0;list-style:none;font-size:var(--k-fs-xs,.82rem);color:var(--k-ink-2,var(--ink))}.ksat-lg li{display:flex;align-items:flex-start;gap:8px;line-height:1.4}.ksat-lg i{display:inline-block;flex:0 0 20px;margin-top:.6em;width:20px;height:0;border-top:2.2px solid var(--k-sea,#155C75)}.ksat-lg i.b{height:12px;margin-top:.15em;border:0;background:color-mix(in srgb,var(--k-sea,#155C75) 14%,transparent)}.ksat-lg i.m{height:12px;width:12px;flex-basis:12px;margin-top:.15em;border:0;border-inline-start:1.5px solid var(--k-ink,#13222E);background:color-mix(in srgb,var(--k-ink,#13222E) 9%,transparent)}.ksat-lg i.o{width:0;flex-basis:12px;margin-top:.15em;height:12px;border:0;border-inline-start:1px dashed var(--k-muted,#56636F)}' +
-  '.ksat-lim{margin:14px 0 0;font-size:var(--k-fs-sm,.92rem);color:var(--k-ink-2,var(--ink));line-height:1.55;max-width:72ch}.ksat-src{margin:8px 0 0;font-size:var(--k-fs-xs,.82rem);color:var(--k-muted,var(--muted))}.ksat details{margin:12px 0 0}.ksat details summary{cursor:pointer;min-height:44px;display:flex;align-items:center;font-weight:600}' +
-  '@media(max-width:640px){.ksat{--ksat-t:64px}.ksat figure{padding:10px 10px 8px}}</style>';
+/* CSS: n40 k17, in /data/i18n/k17s.json */
 
 // change index per month: (built-up or bare share of the circle minus that of the ring) minus the median of that difference over the first
 // 3 clear months, in points. Season and haze move circle and ring together, so the difference is far steadier than either share alone
@@ -116,11 +107,7 @@ function chart(rec, ix, ms, lang, fd, trk, W) {
 let TM = { en: {} };   // n40 k4: strings in 8 languages live in /data/media-i18n.json (sat_TM)
 
 const tt = (lang, k, v) => { const s = (TM[lang] && TM[lang][k]) || TM.en[k] || ''; return v ? s.replace(/\{(\w+)\}/g, (m, x) => v[x] != null ? v[x] : m) : s; };
-const TM_CSS = '<style id="ktm-css">.ktm{margin:18px 0 0;border:1px solid var(--k-line,var(--line));border-radius:var(--k-r-lg,14px);background:var(--k-surface,var(--card,#fff));padding:14px 14px 10px}.ktm h3{margin:0 0 10px;font-size:var(--k-fs-lg,1.2rem)}' +
-  '.ktm-v{display:flex;justify-content:center}.ktm canvas{display:block;width:min(384px,100%);height:auto;aspect-ratio:1;border-radius:var(--k-r-sm,6px);background:var(--k-sunken,#E8ECEA)}' +
-  '.ktm-c{display:flex;align-items:center;gap:12px;margin:12px auto 0;max-width:520px}.ktm-c input{flex:1 1 auto;min-width:0;min-height:44px;accent-color:var(--k-sea,#155C75)}.ktm-c button{flex:0 0 auto;min-width:96px;min-height:44px}' +
-  '.ktm-o{margin:6px 0 0;text-align:center;font-variant-numeric:tabular-nums;line-height:1.45}.ktm-o b{font-size:var(--k-fs-lg,1.15rem)}.ktm-o span{display:block;font-size:var(--k-fs-sm,.92rem);color:var(--k-muted,var(--muted))}.ktm-o i{display:block;font-style:normal;font-weight:600;color:var(--k-ink-2,var(--ink))}' +
-  '.ktm-g{margin:10px 0 0;text-align:center}.ktm-g>.k-btn{min-height:44px}.ktm-gout{text-align:start}.ktm figcaption{font-size:var(--k-fs-xs,.82rem);color:var(--k-muted,var(--muted));margin:8px 0 0;line-height:1.45}.ksat-strip.is-on .ksat-tile:not(.is-none){background-image:var(--ksat-u)}</style>';
+/* TM_CSS: n40 k17, in /data/i18n/k17s.json */
 const TM_JS = "(function(){var f=document.getElementById('ktm');if(!f||!f.nextElementSibling)return;var d;try{d=JSON.parse(f.nextElementSibling.textContent)}catch(e){return}" +
   "var n=d.length,c=f.querySelector('canvas'),x=c.getContext('2d'),r=f.querySelector('input'),b=f.querySelector('button'),o=f.querySelector('.ktm-o'),im=null,tm=null,cur=n-1,T=+f.getAttribute('data-t')||96;" +
   "function draw(){if(!im||!im.complete||!im.naturalWidth)return;var k=d[cur][3];x.imageSmoothingEnabled=true;x.imageSmoothingQuality='high';x.drawImage(im,k*T,0,T,T,0,0,c.width,c.height)}" +
@@ -136,7 +123,7 @@ function timeMachine(rec, months, lang, fd, img, labels) {
   const d = ix.map(i => { const dd = fd(rec.dt[i] || months[i]); return [fd(months[i]), tt(lang, 'scene', { d: dd }), labels[months[i]] ? tt(lang, 'est', { s: labels[months[i]] }) : '', rec.f[i], tt(lang, 'alt', { d: dd })]; });
   const cap = tt(lang, 'cap', { k: ix.length, n: rec.n, a: fd(months[0]), b: fd(months[rec.n - 1]) });
   const yy = String(rec.dt[ix[0]] || months[ix[0]]).slice(0, 4), yz = String(rec.dt[ix[ix.length - 1]] || months[ix[ix.length - 1]]).slice(0, 4);
-  return '<figure class="ktm" id="ktm" hidden data-u="' + esc(img) + '" data-t="96" data-y="' + esc(yy === yz ? yy : yy + '-' + yz) + '"><h3>' + esc(tt(lang, 'h')) + '</h3><div class="ktm-v" dir="ltr"><canvas width="384" height="384" role="img" aria-label=""></canvas></div>' +
+  return '<figure class="ktm" id="ktm" hidden data-u="' + esc(img) + '" data-t="96" data-y="' + esc(yy === yz ? yy : yy + '-' + yz) + '"><h3>' + esc(tt(lang, 'h')) + TB.kbx_named_sat__s.k0 +
     '<div class="ktm-c" dir="ltr"><button type="button" class="k-btn k-btn--sm" data-play="' + esc(tt(lang, 'play')) + '" data-pause="' + esc(tt(lang, 'pause')) + '">' + esc(tt(lang, 'play')) + '</button><input type="range" min="0" max="' + (d.length - 1) + '" step="1" value="' + (d.length - 1) + '" aria-label="' + esc(tt(lang, 'lab')) + '"></div>' +
     '<p class="ktm-o" aria-live="polite"><b></b><span></span><i></i></p><figcaption>' + esc(cap) + '</figcaption>' +
     '<div class="ktm-g">' + baButton(lang) + ' <button type="button" class="k-btn k-btn--sm k-btn--ghost" data-gif data-l="' + esc(JSON.stringify({ making: tt(lang, 'making'), ready: tt(lang, 'ready'), share: tt(lang, 'share'), dl: tt(lang, 'dl'), copy: tt(lang, 'copy'), copied: tt(lang, 'copied'), note: tt(lang, 'note'), fail: tt(lang, 'fail') })) + '">' + esc(tt(lang, 'gif')) + '</button><div class="ktm-gout" hidden></div></div></figure>' +
@@ -149,7 +136,7 @@ export function satSection(meta, id, prom, fx, lang, fd, trk, tl) {   // tl(date
   if (!rec || !rec.n || !rec.m0) return '';
   const m0 = mi(rec.m0), n = rec.n, months = Array.from({ length: n }, (_, i) => ym(m0 + i));
   const clearN = rec.c.filter(v => v != null).length;
-  const srcLine = '<p class="ksat-src">' + esc(meta.source.attribution) + '. <a class="src" href="' + esc(meta.source.url) + '" rel="noopener" target="_blank">Copernicus Sentinel-2 L2A, AWS Open Data</a> <a class="src" href="/data/construction-progress.json">' + esc(t(lang, 'method')) + ', ' + esc(t(lang, 'upd', { d: fd(meta.updated) })) + '</a></p>';
+  const srcLine = '<p class="ksat-src">' + esc(meta.source.attribution) + '. <a class="src" href="' + esc(meta.source.url) + TB.kbx_named_sat__s.k1 + esc(t(lang, 'method')) + ', ' + esc(t(lang, 'upd', { d: fd(meta.updated) })) + '</a></p>';
   let sum = '<ul class="ksat-sum"><li>' + esc(t(lang, 'clear', { c: clearN, n })) + '</li>';
   const ix = index(rec);
   if (ix) {
@@ -172,7 +159,7 @@ export function satSection(meta, id, prom, fx, lang, fd, trk, tl) {   // tl(date
         : '<li><span class="ksat-tile is-none" role="img" aria-label="' + lab + ': ' + esc(t(lang, 'cloudy')) + '"></span><small>' + lab + '</small></li>');
     }
     // n18b: the sprite loads only when the section comes near the viewport (TM_JS adds is-on); without script, noscript shows it
-    strip = '<figure dir="ltr"><ol class="ksat-strip" tabindex="0" style="--ksat-u:url(' + img + ')">' + li.join('') + '</ol><noscript><style>.ksat-strip .ksat-tile:not(.is-none){background-image:var(--ksat-u)}</style></noscript><figcaption>' + esc(t(lang, 'strip')) + '</figcaption></figure>';
+    strip = '<figure dir="ltr"><ol class="ksat-strip" tabindex="0" style="--ksat-u:url(' + img + ')">' + li.join('') + TB.kbx_named_sat__s.k2 + esc(t(lang, 'strip')) + '</figcaption></figure>';
     tmach = timeMachine(rec, months, lang, fd, img, stageLabels(est, lang));
     if (!tmach) strip = strip.replace('class="ksat-strip"', 'class="ksat-strip is-on"');
   }
@@ -188,7 +175,7 @@ export function satSection(meta, id, prom, fx, lang, fd, trk, tl) {   // tl(date
   const table = clearN ? '<details><summary>' + esc(t(lang, 'tbl')) + '</summary><div class="tw"><table><thead><tr>' + th.map(h => '<th>' + esc(h) + '</th>').join('') + '</tr></thead><tbody>' + rows + '</tbody></table></div></details>' : '';
   const spc = meta.space ? spaceHtml(meta.space, id, lang, fd, milestones(prom, fx || {}), { cloudy: n - clearN, n }) : '';
   const stg = stageHtml(est, lang, fd, id);
-  return CSS + (strip ? TM_CSS : '') + '<div class="ksat"><p class="ki">' + esc(t(lang, 'intro')) + '</p>' + sum + tmach + ch + strip + '<p class="ksat-lim">' + esc(t(lang, 'lim')) + '</p>' + srcLine + table + spc + stg + '</div>';
+  return TB.kbx_named_sat__s.CSS + (strip ? TB.kbx_named_sat__s.TM_CSS : '') + '<div class="ksat"><p class="ki">' + esc(t(lang, 'intro')) + '</p>' + sum + tmach + ch + strip + '<p class="ksat-lim">' + esc(t(lang, 'lim')) + '</p>' + srcLine + table + spc + stg + '</div>';
 }
 
 // n29p (batch 29, item 13): the change verdict of the section in one sentence, for the line under the quick answer

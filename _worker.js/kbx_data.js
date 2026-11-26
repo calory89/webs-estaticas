@@ -10,6 +10,7 @@
 // /data/catalog.json, /data/contracts.json, /data/schemas/kolaboro-data.schema.json, /docs/api/openapi.json. Until the job has run
 // once, the endpoints answer with status "starting".
 import * as KB from './kolaboro.js';
+import { TB } from './kbx_strings.js';
 export const PATHS = /^\/api\/x\/data(\/|$)/;
 
 const CORS = { 'access-control-allow-origin': '*', 'access-control-expose-headers': 'x-kolaboro-signature, x-kolaboro-key-id' };
@@ -101,9 +102,9 @@ export async function handle(req, u, env, ctx) {
   const p = u.pathname.replace(/\/+$/, '');
   try {
     if (p === '/api/x/data') return out({
-      module: 'data', about: 'Open data platform of kolaboro.com: catalog, data contracts, freshness and the OpenAPI description. Page: https://kolaboro.com/data/',
+      module: 'data', about: TB.kbx_data__s.k0,
       endpoints: {
-        '/api/x/data/freshness': 'every public dataset with its freshness target, age measured now from the live file and status ok, late or no_target',
+        '/api/x/data/freshness': TB.kbx_data__s.k1,
         '/api/x/data/freshness?strict=1': 'same, HTTP 503 when any dataset is late (for monitors)',
         '/api/x/data/schema/{id}.json': 'the JSON Schema (2020-12) data contract of one dataset, e.g. /api/x/data/schema/bali-cases.json',
         '/api/x/data/openapi.json': 'the OpenAPI 3.1 description of the public API (same as /docs/api/openapi.json)'

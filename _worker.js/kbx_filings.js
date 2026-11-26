@@ -31,7 +31,7 @@ export async function filingsData(env) {
 const S = TB.kbx_filings_S /* n40 k5: in /data/i18n/kbx_filings.json */;
 const t = (l, k) => (S[l] && S[l][k] != null ? S[l][k] : S.en[k]);
 export const filingsHeading = lang => t(lang, 'h');
-const FIL_CSS = '.kfi-tw{margin:12px 0;max-width:760px;overflow-x:auto}.kfi-tw td,.kfi-tw th{vertical-align:top}.kfi-tw .k-src{white-space:normal}.kfi{overflow-wrap:anywhere}';
+/* FIL_CSS: n40 k17, in /data/i18n/k17s.json */
 const okUrl = u => /^https:\/\/[a-z0-9.-]+\//i.test(String(u || ''));
 
 // section body for the developer page ('' when the developer is not matched to a listed company)
@@ -40,7 +40,7 @@ export function filingsDevHtml(fd, slug, lang) {
   const EX = fd.exchanges || {}, th = t(lang, 'th');
   const rows = d.l.map(l => { const e = EX[l.x] || {}; const link = okUrl(l.u) ? '<a class="k-src" href="' + esc(l.u) + '" rel="noopener nofollow" target="_blank">' + esc(t(lang, 'fil')) + '</a>' : okUrl(e.u) ? '<a class="k-src" href="' + esc(e.u) + '" rel="noopener nofollow" target="_blank">' + esc(t(lang, 'exhome')) + '</a>' : '-';
     return '<tr><th scope="row" data-label="' + esc(th[0]) + '">' + ltr(e.n || l.x) + '</th><td data-label="' + esc(th[1]) + '">' + (l.t ? '<b>' + ltr(l.t) + '</b>' : '-') + '</td><td data-label="' + esc(th[2]) + '">' + link + '</td></tr>'; }).join('');
-  let h = '<style>' + FIL_CSS + '</style><div class="kfi"><p class="kfact">' + esc(t(lang, 'intro')).replace('{co}', ltr(d.co)) + '</p>' +
+  let h = '<style>' + TB.kbx_filings__s.FIL_CSS + '</style><div class="kfi"><p class="kfact">' + esc(t(lang, 'intro')).replace('{co}', ltr(d.co)) + '</p>' +
     '<div class="k-table-wrap kfi-tw"><table class="k-table k-table--dense k-table--stack"><thead><tr>' + th.map(x => '<th scope="col">' + esc(x) + '</th>').join('') + '</tr></thead><tbody>' + rows + '</tbody></table></div>';
   const L = [];
   if (d.annual && d.cik) L.push(esc(t(lang, 'annual')).replace('{form}', ltr(d.annual.form)).replace('{d}', esc(fdt(d.annual.filed, lang))).replace('{p}', esc(fdt(d.annual.period, lang))) +
@@ -65,7 +65,7 @@ export async function handle(req, u, env) {
   if (s) {
     if (!/^[a-z0-9-]{1,90}$/.test(s)) return out({ error: 'bad_dev' }, 400);
     const d = (fd.developers || {})[s];
-    if (!d) return out({ dev: s, listed_match: false, note: 'No exact-name match to a listed company in our sources. This is not a finding: the developer may be private, listed under another name, or a subsidiary of a listed group.', updated: fd.updated }, 404);
+    if (!d) return out({ dev: s, listed_match: false, note: TB.kbx_filings__s.k0, updated: fd.updated }, 404);
     return out({ dev: s, url: ORIGIN + '/developers/' + s + '/#filings', listed_match: true, updated: fd.updated, company: d.co, wikidata: d.q || null, lei: d.lei || null, sec_cik: d.cik || null,
       listings: d.l.map(l => ({ exchange: (fd.exchanges[l.x] || {}).n || l.x, ticker: l.t || null, filings: l.u || (fd.exchanges[l.x] || {}).u || null })), latest_annual_report_sec: d.annual || null, results_as_published: d.fin || null, credit_ratings_as_announced: d.rt || null, sources: fd.sources });
   }

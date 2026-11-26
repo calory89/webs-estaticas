@@ -19,6 +19,7 @@
 import * as N from './kbx_named.js';
 import { mkName } from './kbx_hdate.js';
 import { TR_PLACES } from './kbx_tr_places.js';
+import { TB } from './kbx_strings.js';
 
 const ORIGIN = 'https://kolaboro.com';
 // strings live in /data/n31s-i18n.json (static asset, read once per isolate) to keep the worker bundle small
@@ -177,7 +178,7 @@ async function monthPage(u, env, shell, lang) {
   const t3 = past.length ? '<div class="k-table-wrap"><table><thead><tr><th scope="col">' + esc(t(lang, 'm_month')) + '</th>' + K.map(([l]) => '<th scope="col" class="k-n">' + esc(t(lang, l)) + '</th>').join('') + '</tr></thead><tbody>' + past.map(([m, d]) => '<tr><th scope="row">' + esc(monthName(m, lang)) + ' (' + esc(fdt(d.d, lang)) + ')</th>' + K.map(([, k]) => '<td class="k-n">' + (d[k] != null ? num(d[k], lang) : '-') + '</td>').join('') + '</tr>').join('') + '</tbody></table></div>' : '<p>' + esc(t(lang, 'm_first')) + '</p>';
   const rd = fdt(new Date().toISOString().slice(0, 10), lang);
   const body = '<h2>' + esc(moN) + '</h2>' + t1 + '<h2>' + esc(t(lang, 'm_quality')) + '</h2>' + t2 + '<h2>' + esc(t(lang, 'm_hist')) + '</h2><p class="n31-s">' + esc(t(lang, 'm_hist_p')) + '</p>' + t3 +
-    '<p class="n31-s">' + esc(t(lang, 'm_src', { d: rd })) + ' <a href="/data/progress.json">progress.json</a> · <a href="/data/named.json">named.json</a></p><p class="n31-s" id="cite">' + esc(t(lang, 'm_cite', { mo: moN, d: rd })) + ' <a href="' + pre(lang) + '/cite/">/cite/</a></p>';
+    '<p class="n31-s">' + esc(t(lang, 'm_src', { d: rd })) + TB.kbx_n31s__s.k0 + esc(t(lang, 'm_cite', { mo: moN, d: rd })) + ' <a href="' + pre(lang) + '/cite/">/cite/</a></p>';
   return page(shell, lang, { title: t(lang, 'm_title', { mo: moN }), desc: t(lang, 'm_desc', { mo: moN }), h1: t(lang, 'm_title', { mo: moN }), lead: t(lang, 'm_lead'), canon: ORIGIN + pre(lang) + '/reports/month/', alt: altOf('/reports/month/'),
     crumb: [[pre(lang) + '/reports/', t(lang, 'reports')], [null, moN]], body, mod: now.d, type: 'Report',
     ld: [{ '@type': 'Dataset', name: t(lang, 'm_title', { mo: moN }), description: t(lang, 'm_lead') || t(lang, 'm_title', { mo: moN }), url: ORIGIN + pre(lang) + '/reports/month/', license: 'https://creativecommons.org/licenses/by/4.0/', creator: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' }, dateModified: now.d, temporalCoverage: mo, distribution: [{ '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: ORIGIN + '/data/progress.json' }] }] });
@@ -188,7 +189,7 @@ function codeBlocks(slug) {
   const p = 'https://kolaboro.com/api/v1/projects/' + slug, c = 'https://kolaboro.com/api/v1/changes?since=2026-11-01', s = 'https://kolaboro.com/api/v1/slippage';
   return [
     ['d_ex1', 'curl -s ' + p + '\n', 'import json, urllib.request\n\nwith urllib.request.urlopen("' + p + '") as r:\n    p = json.load(r)\nprint(p["name"], p["developer"]["name"])\n', 'const r = await fetch("' + p + '");\nconst p = await r.json();\nconsole.log(p.name, p.developer.name);\n'],
-    ['d_ex2', 'curl -s "' + c + '"\n', 'import json, urllib.request\n\nurl = "' + c + '"\nwhile url:\n    with urllib.request.urlopen(url) as r:\n        page = json.load(r)\n    for ch in page.get("changes", []):\n        print(ch.get("at"), ch.get("id"))\n    url = page.get("next") if page.get("has_more") else None\n', 'let url = "' + c + '";\nwhile (url) {\n  const page = await (await fetch(url)).json();\n  for (const ch of page.changes || []) console.log(ch.at, ch.id);\n  url = page.has_more ? page.next : null;\n}\n'],
+    ['d_ex2', 'curl -s "' + c + '"\n', 'import json, urllib.request\n\nurl = "' + c + TB.kbx_n31s__s.k1, 'let url = "' + c + TB.kbx_n31s__s.k2],
     ['d_ex3', 'curl -s ' + s + '\n', 'import json, urllib.request\n\nwith urllib.request.urlopen("' + s + '") as r:\n    d = json.load(r)\nprint(d["method"])\n', 'const d = await (await fetch("' + s + '")).json();\nconsole.log(d.method);\n']
   ];
 }
@@ -230,7 +231,7 @@ async function notesPage(u, env, shell) {
       body: '<p class="n31-s">' + esc(fdt(n.d, 'en')) + '</p>' + n.b(c) + '<p class="n31-s"><a href="/engineering/notes/">All engineering notes</a></p>', type: 'TechArticle', mod: n.d,
       ld: [{ '@type': 'TechArticle', headline: n.h, datePublished: n.d, dateModified: n.d, author: { '@type': 'Organization', name: 'Kolaboro' }, url: ORIGIN + '/engineering/notes/' + s + '/' }] });
   }
-  return page(shell, 'en', { title: 'Engineering notes', desc: 'How Kolaboro works under the hood: the rules behind overdue handovers and slippage, and how sitemaps and crawler access are checked.', h1: 'Engineering notes', lead: 'How the checks work, written down with their rules and limits.', canon: ORIGIN + '/engineering/notes/', alt: () => ORIGIN + '/engineering/notes/', enOnly: true, crumb: [['/engineering/', 'Engineering'], [null, 'Notes']],
+  return page(shell, 'en', { title: 'Engineering notes', desc: TB.kbx_n31s__s.k3, h1: 'Engineering notes', lead: 'How the checks work, written down with their rules and limits.', canon: ORIGIN + '/engineering/notes/', alt: () => ORIGIN + '/engineering/notes/', enOnly: true, crumb: [['/engineering/', 'Engineering'], [null, 'Notes']],
     body: '<ul>' + NOTES.map(n => '<li><a href="/engineering/notes/' + n.s + '/">' + esc(n.h) + '</a> <span class="n31-s">(' + esc(fdt(n.d, 'en')) + ')</span><br>' + esc(n.l) + '</li>').join('') + '</ul>', type: 'CollectionPage' });
 }
 

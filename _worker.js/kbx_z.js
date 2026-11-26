@@ -9,6 +9,7 @@
 // Everything comes from the open dataset (/data/bali-cases.json) and /data/hazards.json; /data/on-time.json is used only if it exists.
 // Signatures: the open API scheme (signBody in kolaboro.js): x-kolaboro-signature = base64 Ed25519 over "kolaboro-sig-v1\n" + SHA-256 hex of the body.
 import * as KB from './kolaboro.js';
+import { TB } from './kbx_strings.js';
 const { json, rpc, sha, signBody, openLoad } = KB;
 export const PATHS = /^\/api\/x\/z(\/|$)/;
 
@@ -39,11 +40,11 @@ export async function handle(req, u, env, ctx) {
 
 function index() {
   return { feed: 'kolaboro-risk-feed', version: VERSION, docs: 'https://kolaboro.com/docs/partners/', schema: 'https://kolaboro.com/api/x/z/feed/schema.json',
-    auth: 'header x-api-key: a free key from https://kolaboro.com/api-keys/ (kb_live_...), or the public sandbox key ' + SANDBOX_KEY,
+    auth: TB.kbx_z__s.k0 + SANDBOX_KEY,
     endpoints: { 'GET /api/x/z/feed/projects': 'risk fields per anonymous project id; limit (1-' + PAGE_MAX + '), cursor, ids (comma separated, up to 100), market',
       'GET /api/x/z/feed/changes': 'recorded changes to project fields, oldest first; since (YYYY-MM-DD, inclusive), limit, cursor',
       'GET /api/x/z/feed/status': 'which sources are present and which limits apply', 'GET /api/x/z/feed/schema.json': 'JSON Schema of both answers' },
-    signature: 'x-kolaboro-signature = base64 Ed25519 over "kolaboro-sig-v1\\n" + SHA-256 hex of the exact body; key id in x-kolaboro-key-id; public keys at https://kolaboro.com/.well-known/kolaboro-keys.json' };
+    signature: TB.kbx_z__s.k1 };
 }
 
 // ---------------------------------------------------------------- data
@@ -102,9 +103,9 @@ function risk(c, S) {
   return o;
 }
 function notes(S) {
-  const n = { meaning: 'Scores describe what is public about a project and how much of it an official register or independent source confirms. They are not a judgement of the developer, a valuation or a credit rating.',
-    hazards: S.hz ? 'From /data/hazards.json (updated ' + S.hz.updated + ', ' + Object.keys(S.hz.projects).length + ' projects with coordinates). Figures are rounded so they cannot pinpoint a plot. null means the project has no coordinates there. Sources and method: https://kolaboro.com/hazards/' : 'Hazard file unavailable at the moment: hazards are null for every project.' };
-  n.on_time = S.ot ? 'on_time comes from /data/on-time.json (generated ' + (S.ot.generated || S.ot.updated || 'date not stated') + '). ' + (S.ot.question ? 'Question: ' + S.ot.question + ' ' : '') + 'estimate is the share of closed comparable projects that handed over on time, with a 95% interval. ' + (S.ot.bias || '') + ' Method: https://kolaboro.com/data/on-time.json' : 'on_time is omitted: /data/on-time.json is not published yet. When it is, the field appears with no change to the rest of the answer.';
+  const n = { meaning: TB.kbx_z__s.k2,
+    hazards: S.hz ? 'From /data/hazards.json (updated ' + S.hz.updated + ', ' + Object.keys(S.hz.projects).length + TB.kbx_z__s.k3 : 'Hazard file unavailable at the moment: hazards are null for every project.' };
+  n.on_time = S.ot ? 'on_time comes from /data/on-time.json (generated ' + (S.ot.generated || S.ot.updated || 'date not stated') + '). ' + (S.ot.question ? 'Question: ' + S.ot.question + ' ' : '') + TB.kbx_z__s.k4 + (S.ot.bias || '') + ' Method: https://kolaboro.com/data/on-time.json' : TB.kbx_z__s.k5;
   return n;
 }
 const b64u = s => btoa(unescape(encodeURIComponent(s))).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
@@ -171,7 +172,7 @@ async function feed(req, u, p, env, ctx) {
       from: e.x.from === undefined ? null : e.x.from, to: e.x.to === undefined ? null : e.x.to, url: 'https://kolaboro.com/p/?id=' + encodeURIComponent(e.c.id) });
     const last = page[page.length - 1];
     body = Object.assign(base, { since, total, count: out.length, next_cursor: more && last ? b64u('c:' + last.d + '|' + last.c.id + '|' + last.i) : null,
-      notes: { granularity: 'Changes are recorded by the daily data run with a date, not a time. Keep the last next_cursor, or re-read since=<last date you saw> and drop ids you already have: ids are stable.' }, changes: out });
+      notes: { granularity: TB.kbx_z__s.k6 }, changes: out });
   }
   const text = JSON.stringify(body, null, 1);
   const h = Object.assign({ 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store', 'x-kolaboro-dataset-sha256': S.L.sha, 'x-kolaboro-feed-version': VERSION }, CORS, A.headers);
@@ -195,7 +196,7 @@ async function bundle(h, env) {
   return plain({ sha256: h, case_pdf: pdf && pdf.registered ? { registered: true, case: pdf.case || null, created_at: pdf.created_at || null, chain_head: pdf.chain_head || null } : { registered: false },
     timestamp: st ? { created_at: st.created_at, bitcoin_block: st.bitcoin_block || null, calendars: st.calendars || [], source: st.source || null, proof: 'https://kolaboro.com/api/kb/stamp?hash=' + h } : null,
     genuine: !!((pdf && pdf.registered) || st),
-    note: 'Case-file bundles are registered against the case (the same registry as /verify#pdf). Bundles for public projects are timestamped with OpenTimestamps when they are made. Any edit, even one byte, changes the SHA-256.' }, 200, { 'cache-control': 'public, max-age=60' });
+    note: TB.kbx_z__s.k7 }, 200, { 'cache-control': 'public, max-age=60' });
 }
 
 // ---------------------------------------------------------------- JSON Schema

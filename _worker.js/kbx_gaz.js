@@ -25,8 +25,7 @@ const S = TB.kbx_gaz_S /* n40 k5: in /data/i18n/kbx_gaz.json */;
 const t = (lang, k, v) => { const s = (S[lang] && S[lang][k] != null ? S[lang][k] : S.en[k]); return typeof s === 'string' && v ? s.replace(/\{(\w+)\}/g, (m, x) => v[x] != null ? v[x] : m) : s; };
 export const gazHeading = lang => t(lang, 'g_h');
 
-const CSS = '<style id="kgaz-css">.kgz-w{margin-top:var(--k-5,24px)}.kgz-w h3{margin:0 0 var(--k-2,8px);font-size:var(--k-fs-lg,20px)}.kgz-co{margin:var(--k-4,16px) 0 var(--k-2,8px)}.kgz-co b{font-weight:650}.kgz-s{list-style:none;padding:0;margin:0 0 var(--k-3,12px);color:var(--k-muted,#56636F);font-size:var(--k-fs-sm,15px)}.kgz-s li{margin:2px 0}' +
-  '.kgz td,.kgz th{text-align:start;vertical-align:top}.kgz td:first-child{white-space:nowrap;font-variant-numeric:tabular-nums}.kgz td{overflow-wrap:anywhere}.kgz details{margin-top:var(--k-2,8px)}.kgz summary{cursor:pointer;min-height:44px;display:inline-flex;align-items:center;color:var(--k-sea,#155C75);font-weight:600}.kgz-x{color:var(--k-muted,#56636F)}</style>';
+/* CSS: n40 k17, in /data/i18n/k17s.json */
 
 // ------------------------------------------------------------------------------------------------ warning lists line (inside #watch)
 export function warnDevHtml(sa, slug, lang) {
@@ -36,7 +35,7 @@ export function warnDevHtml(sa, slug, lang) {
   const links = ok.map(l => '<a class="src" href="' + esc(http(l.page)) + '" rel="noopener" target="_blank"><bdi>' + esc(l.short || l.id) + '</bdi>' + (l.list_date ? ' (' + esc(fdt(l.list_date, lang)) + ')' : '') + '</a>').join(' ');
   const hand = (w.not_read || []).map(l => '<a href="' + esc(http(l.page)) + '" rel="noopener" target="_blank"><bdi>' + esc(l.name) + '</bdi></a>').join(', ');
   return '<div class="kgz-w"><h3>' + esc(t(lang, 'w_h')) + '</h3><ul class="fl"><li class="kfact">' + esc(t(lang, 'w_ok', { d: fdt(w.updated, lang), lists: '\u0001' })).replace(/\s*[(（]\u0001[)）]/, '') + '<span class="kgz-ls">' + links + '</span></li></ul><p class="k-xs">' + esc(t(lang, 'w_note')) +
-    (hand ? ' ' + esc(t(lang, 'w_hand')) + ' ' + hand + '.' : '') + ' <a href="/data/sanctions.json">sanctions.json</a></p></div><style id="kgazw-css">.kgz-w{margin-top:var(--k-5,24px)}.kgz-w h3{margin:0 0 var(--k-2,8px);font-size:var(--k-fs-lg,20px)}.kgz-ls{display:flex;flex-wrap:wrap;gap:var(--k-1,4px) var(--k-3,12px);margin-top:var(--k-2,8px)}</style>';
+    (hand ? ' ' + esc(t(lang, 'w_hand')) + ' ' + hand + '.' : '') + TB.kbx_gaz__s.k0;
 }
 
 // ------------------------------------------------------------------------------------------------ gazette notices section (#gazette)
@@ -60,7 +59,7 @@ export function gazDevHtml(gz, slug, lang) {
   if (!all.length) body = '<ul class="fl"><li class="kfact">' + esc(t(lang, 'g_none')) + ' ' + srcs + '</li></ul>';
   else body = '<p><b>' + esc(t(lang, 'g_n', { n: d.total })) + '</b>' + (d.total > all.length ? ' ' + esc(t(lang, 'g_cap', { n: all.length })) : '') + ' ' + srcs + '</p>' + tbl(all.slice(0, 5)) +
     (all.length > 5 ? '<details><summary>' + esc(t(lang, 'g_more', { n: all.length })) + '</summary>' + tbl(all.slice(5)) + '</details>' : '');
-  return CSS + '<div class="kgz"><p class="ki">' + esc(t(lang, 'g_intro')) + '</p>' + names + '<ul class="kgz-s">' + sl.map(x => '<li>' + esc(x) + '</li>').join('') + '</ul>' + body + '<p class="k-xs"><a href="/api/x/gazette?dev=' + esc(slug) + '"><bdi dir="ltr">/api/x/gazette</bdi></a> · <a href="/data/gazette.json"><bdi dir="ltr">gazette.json</bdi></a></p></div>';
+  return TB.kbx_gaz__s.CSS + '<div class="kgz"><p class="ki">' + esc(t(lang, 'g_intro')) + '</p>' + names + '<ul class="kgz-s">' + sl.map(x => '<li>' + esc(x) + '</li>').join('') + '</ul>' + body + '<p class="k-xs"><a href="/api/x/gazette?dev=' + esc(slug) + TB.kbx_gaz__s.k1;
 }
 
 // ------------------------------------------------------------------------------------------------ JSON API
@@ -77,6 +76,6 @@ async function load(env) {
 export async function handle(req, u, env) {
   const gz = await load(env); if (!gz) return out({ error: 'not_built_yet' }, 503);
   const s = u.searchParams.get('dev'), base = { version: gz.version, updated: gz.updated, note: gz.note, method: gz.method, sources: gz.sources, row: gz.row };
-  if (s) { const d = gz.devs && gz.devs[s]; return out(Object.assign(base, { dev: s, searched: !!d, names: d ? d.names : [], searched_in: d ? d.searched : {}, total: d ? d.total : 0, notices: d ? d.notices_all : [], note_dev: d ? undefined : 'This developer was not searched: its pages give a brand name, or its country has no open gazette we read. Not a finding.' })); }
+  if (s) { const d = gz.devs && gz.devs[s]; return out(Object.assign(base, { dev: s, searched: !!d, names: d ? d.names : [], searched_in: d ? d.searched : {}, total: d ? d.total : 0, notices: d ? d.notices_all : [], note_dev: d ? undefined : TB.kbx_gaz__s.k2 })); }
   return out(Object.assign(base, { developers: Object.keys(gz.devs || {}).length, devs: gz.devs }));
 }

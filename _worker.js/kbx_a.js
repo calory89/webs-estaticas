@@ -2,6 +2,7 @@
 // Every event below is read from a record that already exists (live findings, self-tests, eval runs, public log witnesses, uptime probes);
 // nothing is generated to look busy. Answers are Ed25519-signed with the same key as /api/open/* so the browser can check them.
 import { rpc, signBody, openLoad } from './kolaboro.js';
+import { TB } from './kbx_strings.js';
 
 export const PATHS = /^\/api\/x\/a\//;
 
@@ -97,7 +98,7 @@ async function snapshot(env, ctx) {
   const cache = caches.default, key = new Request(CK + 'events-v1');
   try { const hit = await cache.match(key); if (hit) return { text: await hit.text(), sig: hit.headers.get('x-sig') }; } catch (e) {}
   const g = await gather(cache, env);
-  const body = { generated_at: new Date().toISOString(), about: 'Real system events from existing public records: findings of the daily developer page check (/data/live-findings.json, quotes checked in code), end-to-end self-tests, daily evaluation runs, public log witnesses in Sigstore Rekor and uptime probes. Times are when each record says it happened; uptime probes carry the time this edge first saw the new count ("seen").', last_event_at: g.events.length ? g.events[0].at : null, events: g.events, uptime: g.uptime, sources: g.sources };
+  const body = { generated_at: new Date().toISOString(), about: TB.kbx_a__s.k0, last_event_at: g.events.length ? g.events[0].at : null, events: g.events, uptime: g.uptime, sources: g.sources };
   const text = JSON.stringify(body); let sig = null; try { sig = await signBody(env, text); } catch (e) {}
   const put = cache.put(key, new Response(text, { headers: { 'content-type': 'application/json', 'cache-control': 'public, max-age=20', 'x-sig': sig || '' } })).catch(() => {});
   if (ctx && ctx.waitUntil) ctx.waitUntil(put);
