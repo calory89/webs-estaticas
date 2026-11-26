@@ -608,7 +608,7 @@ export default {
       if (!kn37u) kn37u = await import('./kbx_n37u.js'); if (!kseo) kseo = await import('./kbx_seo.js');
       const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
       const inner = p => this.fetch(new Request(new URL(p, u), { headers: { accept: 'application/json' } }), env, ctx);
-      try { const ck = new Request(ORIGIN_KB_GH + u.pathname + '?kb_gh=2'); let r = req.method === 'GET' && u.pathname.endsWith('/') ? await caches.default.match(ck) : null;   // built from the whole dataset (4-6 s), so kept at the edge for an hour
+      try { const ck = new Request(ORIGIN_KB_GH + u.pathname + '?kb_gh=3'); let r = req.method === 'GET' && u.pathname.endsWith('/') ? await caches.default.match(ck) : null;   // built from the whole dataset (4-6 s), so kept at the edge for an hour
         if (!r) { r = await kn37u.guidesHub(req, u, env, shell, () => kseo.guideIndex(env, inner)); if (r && r.status === 200) { const c = new Response(r.clone().body, r); c.headers.set('cache-control', 'public, max-age=3600'); ctx.waitUntil(caches.default.put(ck, c)); } }
         if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r; } catch (e) {}
     }

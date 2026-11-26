@@ -8,8 +8,10 @@ const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const day = s => { const x = new Date(String(s).slice(0, 10) + 'T00:00:00Z'); return isNaN(x) ? '' : MON[x.getUTCMonth()] + ' ' + x.getUTCDate(); };
 let C = { t: 0, h: null }, K33 = null;
+import { TB } from './kbx_strings.js';   // n40 k7: footer strings in /data/i18n/kbx_ticker.json (S), filled by kbx_strings.js
+const S = TB.kbx_ticker_S;
 export const SHIP_N = 3;   // n31t (batch 31): lines in the bar (site.js uses the same number)
-const SC_L = { en: 'Keyboard shortcuts', es: 'Atajos de teclado', de: 'Tastenkürzel', fr: 'Raccourcis clavier', nl: 'Sneltoetsen', ru: 'Горячие клавиши', zh: '键盘快捷键', ar: 'اختصارات لوحة المفاتيح' };
+
 const SITE_V = 'n38d5'; // bump when _s/kolaboro.com/k/site.js changes (pages hard-code an older ?v=)
 
 async function file(env, n) {
@@ -80,11 +82,9 @@ const deEnt = v => v.replace(/&#x([0-9a-f]{1,6});?/gi, (m, h) => { try { return 
 function safeHref(e) { const v = deEnt(e.getAttribute('href') || '').replace(/[\t\n\r]/g, ''); if (/^[\u0000- ]*(?:javascript|vbscript|data):/i.test(v)) { e.setAttribute('href', '#'); e.removeAttribute('target'); } }
 // n26y (batch 26): every page links /progress/ (daily counters, chart, the 300 improvements): the "Shipping daily" label of the bar,
 // one footer line after "Changelog", and a line under the /changelog/ heading (the changelog file itself is edited by the lead only)
-const PROG_L = {"en": "Progress", "es": "Avances", "fr": "Avancement", "de": "Fortschritt", "nl": "Voortgang", "ru": "Прогресс", "zh": "进展", "ar": "التقدّم"};
-const PROG_C = {"en": "Daily counters, the chart of projects added and the 300 improvements with their status:", "es": "Contadores diarios, el gráfico de proyectos añadidos y las 300 mejoras con su estado:", "fr": "Compteurs quotidiens, graphique des projets ajoutés et les 300 améliorations avec leur statut :", "de": "Tägliche Zähler, die Grafik der neu aufgenommenen Projekte und die 300 Verbesserungen mit ihrem Stand:", "nl": "Dagelijkse tellers, de grafiek van toegevoegde projecten en de 300 verbeteringen met hun status:", "ru": "Ежедневные счётчики, график добавленных проектов и 300 улучшений со статусом:", "zh": "每日计数、新增项目图表，以及 300 项改进及其状态：", "ar": "العدّادات اليومية، ورسم المشاريع المضافة، والتحسينات الـ300 مع حالتها:"};
-const FT27 = { en: ['Contact', 'How to cite'], es: ['Contacto', 'Cómo citar'], fr: ['Contact', 'Comment citer'], de: ['Kontakt', 'Zitieren'], nl: ['Contact', 'Citeren'], ru: ['Контакты', 'Как ссылаться'], zh: ['联系我们', '如何引用'], ar: ['اتصل بنا', 'كيف تستشهد بنا'] };
+
 // n29e (batch 29): editorial policy and how we work, after How to cite
-const FT29 = { en: ['Editorial policy', 'How we work'], es: ['Política editorial', 'Cómo trabajamos'], fr: ['Politique éditoriale', 'Comment nous travaillons'], de: ['Redaktionelle Richtlinien', 'So arbeiten wir'], nl: ['Redactioneel beleid', 'Hoe we werken'], ru: ['Редакционная политика', 'Как мы работаем'], zh: ['编辑政策', '我们如何工作'], ar: ['السياسة التحريرية', 'كيف نعمل'] };
+
 export async function kbTick(req, r, env) {
   try {
     if (req.method !== 'GET' || !r || (r.status !== 200 && r.status !== 404 && r.status !== 410) || !/text\/html/.test(r.headers.get('content-type') || '')) return r;
@@ -93,11 +93,13 @@ export async function kbTick(req, r, env) {
       // n31t (batch 31, item 277): five entries at most in the main menu; "Live cases" stays in the footer (Data column)
       .on('nav#menu > a[href$="/cases/"]', { element(e) { e.remove(); } })
       // n31t (item 291): keyboard shortcuts next to Accessibility in the footer, in the page language
-      .on('footer a[href="/accessibility/"]', { element(e) { const lp = /^\/(es|de|fr|nl|ru|zh|ar)(\/|$)/.exec(new URL(req.url).pathname); e.after('</li><li><a href="' + (lp ? '/' + lp[1] : '') + '/shortcuts/">' + esc(SC_L[lp ? lp[1] : 'en']) + '</a>', { html: true }); } });
+      .on('footer a[href="/accessibility/"]', { element(e) { const lp = /^\/(es|de|fr|nl|ru|zh|ar)(\/|$)/.exec(new URL(req.url).pathname); e.after('</li><li><a href="' + (lp ? '/' + lp[1] : '') + '/shortcuts/">' + esc(S.SC_L[lp ? lp[1] : 'en']) + '</a>', { html: true }); } });
     const pl = lm ? lm[1] : 'en', pp = (lm ? '/' + pl : '') + '/progress/', pth = new URL(req.url).pathname;
-    rw = rw.on('a.ship-l', { element(e) { e.setAttribute('href', pp); } }).on('footer a[href$="/changelog/"]', { element(e) { e.after('</li><li><a href="' + pp + '">' + esc(PROG_L[pl]) + '</a>', { html: true }); } })
+    // n40 k7 (R03-15): a conflict-of-interest line in the footer of every template, linking the independence rules (English page)
+    if (S.COI && S.COI[pl]) rw = rw.on('footer p.fine', { element(e) { e.append(' <span class="coi">' + esc(S.COI[pl]) + ' <a href="/independence/"' + (pl === 'en' ? '' : ' hreflang="en"') + '>' + esc(S.COI_L[pl]) + '</a>.</span>', { html: true }); } });
+    rw = rw.on('a.ship-l', { element(e) { e.setAttribute('href', pp); } }).on('footer a[href$="/changelog/"]', { element(e) { e.after('</li><li><a href="' + pp + '">' + esc(S.PROG_L[pl]) + '</a>', { html: true }); } })
       // n27t (batch 27): the corrections log, contact (with response times) and how to cite, in the page language, in the footer's Trust column
-      .on('footer a[href="/corrections/"]', { element(e) { const lp = lm ? '/' + pl : ''; e.setAttribute('href', lp + '/corrections/'); e.after('</li><li><a href="' + lp + '/contact/">' + esc(FT27[pl][0]) + '</a></li><li><a href="' + lp + '/cite/">' + esc(FT27[pl][1]) + '</a></li><li><a href="' + lp + '/editorial-policy/">' + esc(FT29[pl][0]) + '</a></li><li><a href="' + lp + '/how-we-work/">' + esc(FT29[pl][1]) + '</a>', { html: true }); } });
+      .on('footer a[href="/corrections/"]', { element(e) { const lp = lm ? '/' + pl : ''; e.setAttribute('href', lp + '/corrections/'); e.after('</li><li><a href="' + lp + '/contact/">' + esc(S.FT27[pl][0]) + '</a></li><li><a href="' + lp + '/cite/">' + esc(S.FT27[pl][1]) + '</a></li><li><a href="' + lp + '/editorial-policy/">' + esc(S.FT29[pl][0]) + '</a></li><li><a href="' + lp + '/how-we-work/">' + esc(S.FT29[pl][1]) + '</a>', { html: true }); } });
     // n33l (batch 33, items 63, 64, 71, 74): the shorter footer, "most searched this month" on the home page and hubs, and a language
     // menu that links the page's own language versions (see kbx_n33l.js). Without its data file the page keeps the old footer.
     try { if (!K33) K33 = await import('./kbx_n33l.js'); if (await K33.load(env)) {
@@ -114,7 +116,7 @@ export async function kbTick(req, r, env) {
       if (ms && /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?$/.test(pth)) rw = rw.on('#hp-band > .wrap', { element(e) { if (msDone) return; msDone = true; e.append(ms, { html: true }); } }).on('main', { element(e) { e.onEndTag(t => { if (msDone) return; msDone = true; t.before(ms, { html: true }); }); } });
       else if (ms) rw = rw.on('main', { element(e) { if (msDone) return; msDone = true; e.prepend(ms, { html: true }); } });
     } } catch (e) {}
-    if (/^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?changelog\/$/.test(pth)) { let once = false; rw = rw.on('main h1', { element(e) { if (once) return; once = true; e.after('<p class="k-small">' + esc(PROG_C[pl]) + ' <a href="' + pp + '">' + esc(PROG_L[pl]) + '</a></p>', { html: true }); } }); }
+    if (/^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?changelog\/$/.test(pth)) { let once = false; rw = rw.on('main h1', { element(e) { if (once) return; once = true; e.after('<p class="k-small">' + esc(S.PROG_C[pl]) + ' <a href="' + pp + '">' + esc(S.PROG_L[pl]) + '</a></p>', { html: true }); } }); }
     // n31t (batch 31, item 16): the second copy of the lines exists only for the endless scroll; it is now left empty in the HTML (no
     // duplicate text for readers, screen readers or search engines) and site.js adds it, inert and hidden from assistive tech, only
     // when the three lines are wider than the bar

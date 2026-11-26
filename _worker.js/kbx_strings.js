@@ -66,6 +66,7 @@ TB.kolaboro_OPEN_DOC = {}; (FILES.kolaboro || (FILES.kolaboro = {}))["OPEN_DOC"]
 TB.kolaboro_DESK_T = {}; (FILES.kolaboro || (FILES.kolaboro = {}))["DESK_T"] = TB.kolaboro_DESK_T;
 TB.index_K = {}; FILES.index = { K: TB.index_K };   // /__k/kcheck.js and /__k/ktraffic.js (index.js kScript)
 // n40 k5 end
+TB.kbx_ticker_S = {}; FILES.kbx_ticker = { S: TB.kbx_ticker_S };   // n40 k7: footer strings of kbx_ticker.js
 const done = new Set();
 let pend = null;
 export const stat = { loaded: 0, files: Object.keys(FILES).length, ms: 0, errors: 0, at: null };

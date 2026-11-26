@@ -76,7 +76,7 @@ async function page(shell, l, o) {
   const ld = { '@context': 'https://schema.org', '@graph': [{ '@type': o.type || 'WebPage', url: canon, name: o.h1, description: o.lead, inLanguage: l, dateModified: o.updated || new Date().toISOString().slice(0, 10), isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' } },
     { '@type': 'BreadcrumbList', itemListElement: crumbs.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c[0], item: c[1] ? ORIGIN + c[1] : canon })) }] };
   const langs = o.langs || LANGS;
-  const html = await n.assemble({ title: o.title || o.h1 + ' | Kolaboro', desc: o.lead.slice(0, 155), canon, body, ld, alt: x => ORIGIN + pre(langs.includes(x) ? x : 'en') + o.path }, l, await shell(pre(l) + '/how-we-score/'));
+  const html = await n.assemble({ title: o.title || o.h1 + ' | Kolaboro', desc: o.desc || o.lead.slice(0, 155), canon, body, ld, alt: x => ORIGIN + pre(langs.includes(x) ? x : 'en') + o.path }, l, await shell(pre(l) + '/how-we-score/'));
   const h = { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=' + (o.maxAge || 600), 'content-language': l };
   if (o.noindex) h['x-robots-tag'] = 'noindex, follow';
   return new Response(o.noindex ? html.replace('<head>', '<head><meta name="robots" content="noindex, follow">') : html, { status: o.status || 200, headers: h });
@@ -261,7 +261,7 @@ async function pkPage(env, shell, l) {
     '<h2>' + esc(t(l, 'pr_fig_h')) + '</h2><ul>' + t(l, 'pr_fig').map(([n, p]) => '<li><a href="' + (/^\/press\/(monthly|cases|data-journalism)\//.test(p) ? pre(l) + p : p) + '">' + esc(n) + '</a></li>').join('') + '</ul>' +
     '<h2>' + esc(t(l, 'pr_c_h')) + '</h2><p>' + esc(t(l, 'pr_c')).replace('press@kolaboro.com', '<a href="mailto:press@kolaboro.com">press@kolaboro.com</a>') + '</p>' +
     '<h2>' + esc(t(l, 'pr_logo_h')) + '</h2><p>' + esc(t(l, 'pr_logo')) + '</p><p><a href="/k/logo.svg">logo.svg</a> · <a href="/k/logo.png">logo.png</a> · <a href="/favicon.svg">favicon.svg</a></p>';
-  return page(shell, l, { path: '/press/', h1: t(l, 'pr_t'), lead: t(l, 'pr_l'), body: b, updated: st && st.updated ? String(st.updated).slice(0, 10) : '2026-11-18', crumb: [] });
+  return page(shell, l, { path: '/press/', h1: t(l, 'pr_t'), lead: t(l, 'pr_l'), title: t(l, 'pr_ti') || undefined, desc: t(l, 'pr_de') || undefined, body: b, updated: st && st.updated ? String(st.updated).slice(0, 10) : '2026-11-18', crumb: [] });
 }
 function pmFacts(h) {   // the numbers inside each English headline, read back from the published text
   const x = h.text || '', n = s => (s || '').replace(/,/g, '');

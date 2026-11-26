@@ -265,7 +265,7 @@ const moreHtml = (D, mk, lang, skip) => { const L = placeLinks(D, mk, lang, skip
 function drPage(D, s, lang) {
   const g = D.DR.get(s); if (!g) return null;
   const p = mkName(g.mk, lang), path = '/rankings/developers/' + s + '/', url = PUB(lang, path), d = D.updated, top = g.devs[0];
-  const title = fitT(t(lang, 'dr_t', { p }), t(lang, 'dr_t2', { p }), t(lang, 'dr_t3', { p }));
+  const title = fitT(...(H[lang] && H[lang].dr_tl ? [t(lang, 'dr_tl', { p, k: nf(lang, g.devs.length), n: nf(lang, g.n) })] : []), t(lang, 'dr_t', { p }), t(lang, 'dr_t2', { p }), t(lang, 'dr_t3', { p }));   // n40 k7 (R03-27): dr_tl, a longer title with the counts (zh)
   const desc = fitD(t(lang, 'dr_d', { k: nf(lang, g.devs.length), p, n: nf(lang, g.n), d: fd(d, lang) }));
   const cr = crumbs(lang, [[t(lang, 'drh_t'), pre(lang) + '/rankings/developers/']], [title, pre(lang) + path]);
   const cols = t(lang, 'dr_cols');
