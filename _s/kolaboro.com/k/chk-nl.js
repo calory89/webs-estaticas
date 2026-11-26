@@ -253,7 +253,7 @@
       '<div id="az-bench"></div>' + '<div class="az-res"><div class="az-box"><h3>Ask these before you pay</h3><ol>' + (r.questions || []).map(function(q){ return '<li>' + esc(q) + '</li>'; }).join('') + '</ol></div>' +
       '<div class="az-box"><h3>What the website promises</h3><ul class="cl">' + promList + '</ul>' + (ci && !(ci.promises || []).length ? '<p class="muted" style="font-size:.86rem">No claim could be matched to an exact quote on the page.</p>' : '') +
       ((r.missing || []).length ? '<h3 style="margin-top:14px">What it doesn\'t say</h3><ul>' + r.missing.map(function(q){ return '<li>' + esc(q) + '</li>'; }).join('') + '</ul>' : '') + '</div></div>' +
-      cta() + '<p class="muted" style="font-size:.82rem;margin-top:12px">Automated desk review of what the website itself says, on ' + new Date(d.analysed).toUTCString().slice(5, 16) + '. Advertised claims, not verified facts, and not a judgement of the developer. The questions and the gaps are ours, not quotes. <a href="/check/red-team/">Try to fool this AI</a>.</p>' + sig;
+      cta() + '<p class="muted" style="font-size:.82rem;margin-top:12px">Automated desk review of what the website itself says, on ' + new Date(d.analysed).toUTCString().slice(5, 16) + '. Advertised claims, not verified facts, and not a judgement of the developer. The questions and the gaps are ours, not quotes. <a href="/check/red-team/">Probeer deze controle te misleiden</a>.</p>' + sig;
     show(4); sigBind(d); if (!isResale(r) && !portal) bench(r); ev('desk_done', { att: att, first: !!d.first }); if (window.kbLog) kbLog('desk_done', url);
   }
 })();
