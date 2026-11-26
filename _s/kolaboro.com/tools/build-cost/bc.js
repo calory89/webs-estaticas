@@ -71,7 +71,7 @@
 
   function writeUrl(st){
     try {
-      var q = new URLSearchParams();
+      var q = new URLSearchParams(); if (PRJ) q.set('project', PRJ);
       q.set('m', st.m); if (st.t) q.set('t', st.t);
       if (st.s > 0) q.set('s', String(st.s)); if (st.p > 0) q.set('p', String(st.p)); q.set('c', st.c);
       history.replaceState(null, '', location.pathname + '?' + q.toString());
@@ -79,6 +79,7 @@
   }
   function readUrl(){
     var q; try { q = new URLSearchParams(location.search); } catch(e){ return; }
+    PRJ = /^[a-z0-9-]{2,120}$/.test(q.get('project') || '') ? q.get('project') : ''; PRJP = num(q.get('p')) > 0;
     if (q.get('m') && cityOf(q.get('m'))) $('bcM').value = q.get('m');
     if (q.get('c') && CURS.indexOf(q.get('c')) >= 0) $('bcC').value = q.get('c');
     if (num(q.get('s')) > 0) $('bcS').value = (+num(q.get('s'))).toLocaleString('en', { maximumFractionDigits: 2 });
@@ -192,9 +193,28 @@
     $('bcSrc').innerHTML = h;
   }
 
+  // n40 k23: ?project=<slug> fills market, starting price and currency from the public record; the address keeps every input
+  var PRJ = '', PRJP = false;
+  function prjNote(h, bad){ var n = document.createElement('p'); n.className = 'ki'; n.setAttribute('role', 'status'); n.style.cssText = 'margin:0 0 12px;padding:10px 12px;border-radius:10px;border:1px solid ' + (bad ? '#B3261E' : 'var(--line,#D8DEDB)'); n.innerHTML = h; var f = $('bcF'); f.parentNode.insertBefore(n, f); }
+  function usePrj(){
+    if (!PRJ) return;
+    var lk = '<a href="/projects/' + esc(PRJ) + '/">';
+    if (PRJP) { prjNote('Figures from the record of ' + lk + esc(PRJ) + '</a>, as saved in this link. Check every figure against your own contract.'); return; }
+    fetch('/projects/' + PRJ + '/record.json').then(function(r){ if (!r.ok) throw 0; return r.json(); }).then(function(r){
+      var pr = '', bits = [];
+      (r.facts || []).forEach(function(f){ if (f.field === 'pr') pr = String(f.value || ''); });
+      if (r.market && cityOf(r.market)) { $('bcM').value = r.market; fillTypes(); bits.push('market ' + esc(r.market)); }
+      var m = /^([A-Z]{3})\s*([\d.,]+)/.exec(pr), amt = m ? parseFloat(m[2].replace(/,/g, '')) : 0;
+      if (m && amt > 0 && CURS.indexOf(m[1]) >= 0) { $('bcC').value = m[1]; $('bcP').value = amt.toLocaleString('en'); bits.push('starting price <bdi dir="ltr">' + esc(pr) + '</bdi>'); }
+      prjNote('Filled from the public record of ' + lk + esc(r.name || PRJ) + '</a>' + (bits.length ? ': ' + bits.join('; ') : '') + '. The record holds no unit size, so enter the size of the unit you are offered. Check every figure against your own contract.');
+      calc();
+    }).catch(function(){ prjNote('The record of this project did not load, so nothing was filled in.', true); });
+  }
+
   function init(){
     fillMarkets(); fillTypes(); readUrl(); ready = true;
     tracked(); sources(); calc();
+    usePrj();
     $('bcF').addEventListener('input', calc);
     $('bcF').addEventListener('change', function(e){ if (e.target.id === 'bcM') fillTypes(); calc(); });
     ['bcP', 'bcS'].forEach(function(id){ $(id).addEventListener('blur', function(){ var v = num(this.value); if (v > 0) this.value = v.toLocaleString('en', { maximumFractionDigits: 2 }); }); });
