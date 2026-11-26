@@ -19,7 +19,10 @@
     "AE-DU": "Dubai (UAE)",
     "TH": "Thailand",
     "ES": "Spain",
-    "PT": "Portugal"
+    "PT": "Portugal",
+    "US-FL": "Florida (USA)",
+    "AU-VIC": "Victoria (Australia)",
+    "MX": "Mexico"
   },
   "sources": {
     "id-pp18-2021": {
@@ -85,6 +88,39 @@
       "publisher": "Procuradoria-Geral Distrital de Lisboa legislation database (pgdlisboa.pt), consolidated text",
       "url": "https://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?artigo_id=775A0442&nid=775&tabela=leis&pagina=1&ficha=1&so_miolo=&nversao=",
       "language": "pt"
+    },
+    "us-fl-718-202": {
+      "law": "Florida Condominium Act (Chapter 718, Florida Statutes), section 718.202",
+      "publisher": "Online Sunshine, official website of the Florida Legislature (leg.state.fl.us)",
+      "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0718/Sections/0718.202.html",
+      "language": "en",
+      "read": "2026-11-26",
+      "note": "The 2026 Florida Statutes."
+    },
+    "us-fl-718-503": {
+      "law": "Florida Condominium Act (Chapter 718, Florida Statutes), section 718.503",
+      "publisher": "Online Sunshine, official website of the Florida Legislature (leg.state.fl.us)",
+      "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799/0718/Sections/0718.503.html",
+      "language": "en",
+      "read": "2026-11-26",
+      "note": "The 2026 Florida Statutes."
+    },
+    "au-vic-sla-1962": {
+      "law": "Sale of Land Act 1962 (Victoria)",
+      "publisher": "Victorian Legislation (legislation.vic.gov.au), Office of the Chief Parliamentary Counsel",
+      "url": "https://content.legislation.vic.gov.au/sites/default/files/2026-09/62-6975aa174-authorised.pdf",
+      "page": "https://www.legislation.vic.gov.au/in-force/acts/sale-land-act-1962",
+      "language": "en",
+      "read": "2026-11-26",
+      "note": "Authorised Version No. 174, incorporating amendments as at 9 September 2026. Other Australian states have their own rules."
+    },
+    "mx-lfpc": {
+      "law": "Federal Consumer Protection Law (Ley Federal de Protección al Consumidor)",
+      "publisher": "Chamber of Deputies of the Mexican Congress (diputados.gob.mx)",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "language": "es",
+      "read": "2026-11-26",
+      "note": "Consolidated text, last amendment published in the Diario Oficial de la Federación on 12 December 2025."
     }
   },
   "rules": [
@@ -387,6 +423,191 @@
       "quote": "Se quem constitui o sinal deixar de cumprir a obrigação por causa que lhe seja imputável, tem o outro contraente a faculdade de fazer sua a coisa entregue; se o não cumprimento do contrato for devido a este último, tem aquele a faculdade de exigir o dobro do que prestou",
       "translation": "If the party who gave the deposit fails to perform for a reason attributable to them, the other party may keep what was given; if the failure is due to the latter, the former may demand double what they paid",
       "checked": "2026-11-03"
+    },
+    {
+      "id": "us-fl-escrow-10",
+      "market": "US-FL",
+      "topics": [
+        "escrow",
+        "payment"
+      ],
+      "title": "In Florida, deposits up to 10% of the price go into an escrow account until the condo is built",
+      "plain": "While construction of a condominium is not substantially completed, the developer must pay into an escrow account every payment you make up to 10% of the sale price, and the escrow agent gives you a receipt on request. If you properly terminate the contract, the money comes back to you with any interest earned. Ask for the name of the escrow agent and a receipt for each payment.",
+      "source": "us-fl-718-202",
+      "cite": "Section 718.202(1) and (1)(a)",
+      "quote": "If a developer contracts to sell a condominium parcel and the construction, furnishing, and landscaping of the property submitted or proposed to be submitted to condominium ownership has not been substantially completed in accordance with the plans and specifications and representations made by the developer in the disclosures required by this chapter, the developer shall pay into an escrow account all payments up to 10 percent of the sale price received by the developer from the buyer towards the sale price. The escrow agent shall give to the purchaser a receipt for the deposit, upon request. [...] (a) If a buyer properly terminates the contract pursuant to its terms or pursuant to this chapter, the funds shall be paid to the buyer together with any interest earned.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "us-fl-escrow-over-10",
+      "market": "US-FL",
+      "topics": [
+        "escrow",
+        "payment"
+      ],
+      "title": "Payments above 10% go into a special escrow account, and can fund construction only if the contract says so",
+      "plain": "Money you pay above 10% of the price before construction is completed must sit in a special escrow account controlled by an escrow agent. The developer may use it for construction costs once construction has begun, but only if your contract provides for it, and the contract must then carry a bold warning on its first page. Read the first page of the contract for that warning before paying more than 10%.",
+      "source": "us-fl-718-202",
+      "cite": "Section 718.202(2) and (3)",
+      "quote": "All payments which are in excess of the 10 percent of the sale price described in subsection (1) and which have been received prior to completion of construction by the developer from the buyer on a contract for purchase of a condominium parcel shall be held in a special escrow account established as provided in subsection (1) and controlled by an escrow agent and may not be used by the developer prior to closing the transaction, except as provided in subsection (3) or except for refund to the buyer. [...] (3) If the contract for sale of the condominium unit so provides, the developer may withdraw escrow funds in excess of 10 percent of the purchase price from the special account required by subsection (2) when the construction of improvements has begun.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "us-fl-escrow-independent",
+      "market": "US-FL",
+      "topics": [
+        "escrow",
+        "parties"
+      ],
+      "title": "The escrow agent must be independent of the developer",
+      "plain": "The escrow must be held by a bank, a savings and loan association, a Florida Bar attorney, a registered real estate broker, an authorised title insurer or a lending institution worth more than $5 million, and never by the developer or anyone working for or linked to it. Check who the escrow agent named in your contract is.",
+      "source": "us-fl-718-202",
+      "cite": "Section 718.202(8)",
+      "quote": "Every escrow agent shall be independent of the developer, and no developer or any officer, director, affiliate, subsidiary, or employee of a developer may serve as escrow agent.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "us-fl-voidable",
+      "market": "US-FL",
+      "topics": [
+        "termination",
+        "escrow"
+      ],
+      "title": "If the developer breaks the escrow rules, you can void the contract and get your money back with interest",
+      "plain": "A developer that does not follow the escrow rules makes the contract voidable by the buyer, and everything you deposited or advanced must be refunded with interest. Willful failure to use escrow is also a felony of the third degree under the same section.",
+      "source": "us-fl-718-202",
+      "cite": "Section 718.202(5)",
+      "quote": "The failure to comply with the provisions of this section renders the contract voidable by the buyer, and, if voided, all sums deposited or advanced under the contract shall be refunded with interest at the highest rate then being paid on savings accounts, excluding certificates of deposit, by savings and loan associations in the area in which the condominium property is located.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "us-fl-15-days",
+      "market": "US-FL",
+      "topics": [
+        "termination"
+      ],
+      "title": "You can cancel a developer contract within 15 days",
+      "plain": "A developer contract for a residential condominium unit must say that the buyer can cancel it in writing within 15 days after signing and receiving all the documents the developer must deliver, and again within 15 days of any amendment that changes the offering against the buyer. A waiver of this right has no effect.",
+      "source": "us-fl-718-503",
+      "cite": "Section 718.503(1)(a)1",
+      "quote": "THIS AGREEMENT IS VOIDABLE BY BUYER BY DELIVERING WRITTEN NOTICE OF THE BUYER’S INTENTION TO CANCEL WITHIN 15 DAYS AFTER THE DATE OF EXECUTION OF THIS AGREEMENT BY THE BUYER, AND RECEIPT BY BUYER OF ALL OF THE ITEMS REQUIRED TO BE DELIVERED TO HIM OR HER BY THE DEVELOPER UNDER SECTION 718.503, FLORIDA STATUTES. THIS AGREEMENT IS ALSO VOIDABLE BY BUYER BY DELIVERING WRITTEN NOTICE OF THE BUYER’S INTENTION TO CANCEL WITHIN 15 DAYS AFTER THE DATE OF RECEIPT FROM THE DEVELOPER OF ANY AMENDMENT WHICH MATERIALLY ALTERS OR MODIFIES THE OFFERING IN A MANNER THAT IS ADVERSE TO THE BUYER. ANY PURPORTED WAIVER OF THESE VOIDABILITY RIGHTS SHALL BE OF NO EFFECT.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "au-vic-deposit-trust",
+      "market": "AU-VIC",
+      "topics": [
+        "escrow",
+        "payment"
+      ],
+      "title": "In Victoria, an off-the-plan deposit is capped at 10% and held on trust until the plan is registered",
+      "plain": "A seller in Victoria may not sign an off-the-plan contract unless the deposit is paid to a legal practitioner, conveyancer or licensed estate agent acting for the seller, who holds it on trust for you until the plan of subdivision is registered, and the deposit may not be more than 10% of the price. Never pay a deposit straight to the developer.",
+      "source": "au-vic-sla-1962",
+      "cite": "Section 9AA(1)",
+      "quote": "A vendor must not enter into an off-the-plan contract with any person, except a statutory body or authority, unless [...] (a) the off-the-plan contract provides that the deposit moneys payable by the purchaser are to be paid [...] (i) to a legal practitioner, conveyancer or licensed estate agent acting for the vendor to be held by the legal practitioner, conveyancer or licensed estate agent on trust for the purchaser until the registration of the plan of subdivision; and [...] (b) the deposit moneys payable under the contract do not exceed 10 per cent of the purchase price of the lot.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "au-vic-18-months",
+      "market": "AU-VIC",
+      "topics": [
+        "termination",
+        "delay",
+        "completion"
+      ],
+      "title": "If the plan is not registered within 18 months (or the agreed period), you can rescind",
+      "plain": "If the plan of subdivision is not registered within 18 months of the contract date, or within another period the contract sets, you may rescind the contract at any time after that period and before the plan is registered. You may also rescind before registration if the seller broke the deposit or disclosure rules.",
+      "source": "au-vic-sla-1962",
+      "cite": "Section 9AE(1) and (2)",
+      "quote": "(1) If the vendor under an off-the-plan contract fails to comply with section 9AA(1) or (2), 9AB or 9ADA the purchaser may rescind the off-the-plan contract at any time before the registration of the plan of subdivision. (2) If the plan of subdivision is not registered within 18 months after the date of an off-the-plan contract for the sale of a lot on that plan of subdivision, or, if the contract specifies another period, before the end of that specified period, the purchaser may, at any time after the expiration of that period but before the plan is so registered, rescind the contract.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "au-vic-sunset",
+      "market": "AU-VIC",
+      "topics": [
+        "termination",
+        "completion"
+      ],
+      "title": "A seller can use a sunset clause only with your written consent or a court order",
+      "plain": "For a residential off-the-plan contract, the seller may rescind under a sunset clause only if the plan is not registered or the occupancy permit is not issued by the sunset date, and only after giving you at least 28 days written notice and getting your written consent. You do not have to consent. Without your consent, the seller must ask the Supreme Court, which decides whether rescission is just and equitable.",
+      "source": "au-vic-sla-1962",
+      "cite": "Section 10B(1) to (3) and section 10E(1) and (2)",
+      "quote": "(1) A vendor must not rescind a residential off-the-plan contract under a sunset clause in that contract except as provided for in this Division. (2) Subject to subsection (3), a vendor may rescind a residential off-the-plan contract under a sunset clause if [...] (a) the relevant plan of subdivision has not been registered by the sunset date; or (b) an occupancy permit has not been issued by the sunset date. (3) Before rescinding a residential off-the-plan contract under a sunset clause, the vendor must obtain the written consent of each purchaser to the rescission after giving each purchaser, at least 28 days before the proposed rescission, written notice setting out [...] (c) that the purchaser is not obliged to consent to the proposed rescission. [...] 10E (1) A vendor under a residential off-the-plan contract that contains a sunset clause may apply to the Supreme Court for an order permitting the vendor to rescind the contract under the sunset clause.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "mx-contract-registered",
+      "market": "MX",
+      "topics": [
+        "law",
+        "parties"
+      ],
+      "title": "In Mexico, a developer selling homes must register its sales contracts with Profeco",
+      "plain": "The consumer law applies when the seller is a developer, builder, promoter or anyone else advising on and selling homes to the public, and those contracts must be registered with the Federal Consumer Protection Agency (Profeco). Ask for the Profeco registration of the contract you are given.",
+      "source": "mx-lfpc",
+      "cite": "Article 73",
+      "quote": "Los actos relacionados con inmuebles sólo estarán sujetos a esta ley, cuando los proveedores sean fraccionadores, constructores, promotores y demás personas que intervengan en la asesoría y venta al público de viviendas destinadas a casa habitación [...] Los contratos relacionados con las actividades a que se refiere el párrafo anterior, deberán registrarse ante la Procuraduría.",
+      "translation": "Acts relating to real property are subject to this law only when the suppliers are land subdividers, builders, developers and other persons who take part in advising on and selling to the public homes intended as dwellings [...] Contracts relating to the activities referred to in the previous paragraph must be registered with the Agency (Procuraduría).",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "mx-presale-documents",
+      "market": "MX",
+      "topics": [
+        "permit"
+      ],
+      "title": "In a presale, the developer must show the full construction project and the permits",
+      "plain": "Before you buy in a presale (preventa), the developer must make available the complete executive construction project and the model, and, for new homes or presales, the authorisations, licences and permits issued for the construction. Ask to see them, and check them with the issuing authority.",
+      "source": "mx-lfpc",
+      "cite": "Article 73 BIS, sections I and V",
+      "quote": "I. En caso de preventa, el proveedor deberá exhibir el proyecto ejecutivo de construcción completo, así como la maqueta respectiva y, en su caso, el inmueble muestra; [...] V. Para el caso de inmuebles nuevos o preventas, las autorizaciones, licencias o permisos expedidos por las autoridades correspondientes para la construcción, relativas a las especificaciones técnicas, seguridad, uso de suelo, la clase de materiales utilizados en la construcción; servicios básicos con que cuenta, así como todos aquellos con los que debe contar de conformidad con la legislación aplicable.",
+      "translation": "I. In the case of a presale, the supplier must exhibit the complete executive construction project, as well as the corresponding model and, where applicable, the show unit; [...] V. For new properties or presales, the authorisations, licences or permits issued by the competent authorities for the construction, relating to the technical specifications, safety, land use, the type of materials used in the construction; the basic services it has, as well as all those it must have under the applicable legislation.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "mx-cancel-guarantee",
+      "market": "MX",
+      "topics": [
+        "termination",
+        "escrow"
+      ],
+      "title": "The developer must tell you how you can cancel and what guarantee backs the deal",
+      "plain": "The developer must inform you of the conditions under which you can cancel the purchase, and of any mortgage, trust (fideicomiso) or other guarantee that exists and how it is set up. Mexican law does not require an escrow account for presales, so ask in writing where your payments go and what protects them.",
+      "source": "mx-lfpc",
+      "cite": "Article 73 BIS, sections XII and XIII",
+      "quote": "XII. Las condiciones bajo las cuales el consumidor puede cancelar la operación, y XIII. Se deberá indicar al consumidor sobre la existencia y constitución de garantía hipotecaria, fiduciaria o de cualquier otro tipo, así como su instrumentación.",
+      "translation": "XII. The conditions under which the consumer may cancel the transaction, and XIII. The consumer must be informed of the existence and creation of any mortgage, trust or other guarantee, and how it is put in place.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "mx-delivery-penalties",
+      "market": "MX",
+      "topics": [
+        "delay",
+        "completion"
+      ],
+      "title": "The contract must set a delivery date and penalties that are equal for both sides",
+      "plain": "A registered home sale contract must state the start and end dates of the work and the delivery date of the property, and any contractual penalties for breach must be reciprocal and equivalent for seller and buyer. The developer is excused from the agreed delivery date only if it fully proves force majeure or an unforeseeable event.",
+      "source": "mx-lfpc",
+      "cite": "Article 73 TER, sections IX and XII",
+      "quote": "IX. Las penas convencionales que se apliquen tanto al proveedor como al consumidor por el incumplimiento de las obligaciones contraídas, las cuales deberán ser recíprocas y equivalentes, sin perjuicio de lo dispuesto por los ordenamientos legales aplicables; [...] XII. Fecha de inicio y término de ejecución de la actividad o servicio contratado, así como la de entrega del bien objeto del contrato; esto último, de conformidad con lo dispuesto por el artículo 74 de esta Ley. El proveedor únicamente quedará exento de la obligación de entregar en la fecha convenida, cuando acredite plenamente, que la entrega no se realizó en la misma por caso fortuito o fuerza mayor que afecte directamente, a él o al bien, pudiéndose pactar sin responsabilidad alguna, una nueva fecha de entrega;",
+      "translation": "IX. The contractual penalties applicable to both the supplier and the consumer for breach of the obligations undertaken, which must be reciprocal and equivalent, without prejudice to the applicable laws; [...] XII. The start and end date of the contracted activity or service, and the date of delivery of the property covered by the contract, the latter in accordance with article 74 of this Law. The supplier is exempt from the obligation to deliver on the agreed date only when it fully proves that delivery did not take place on that date because of an unforeseeable event or force majeure directly affecting it or the property, in which case a new delivery date may be agreed without liability.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "mx-warranty",
+      "market": "MX",
+      "topics": [
+        "completion"
+      ],
+      "title": "A new home comes with at least a 5-year structural warranty",
+      "plain": "Every home sold under the consumer law must come with a warranty of at least five years for structural matters, three years for waterproofing and one year for everything else, counted from actual delivery. During the warranty the developer must repair defects at no cost to you.",
+      "source": "mx-lfpc",
+      "cite": "Article 73 QUÁTER",
+      "quote": "Todo bien inmueble cuya transacción esté regulada por esta Ley, deberá ofrecerse al consumidor con la garantía correspondiente, la cual no podrá ser inferior a cinco años para cuestiones estructurales y tres años para impermeabilización; para los demás elementos la garantía mínima será de un año. Todos los plazos serán contados a partir de la entrega real del bien.",
+      "translation": "Every property whose transaction is governed by this Law must be offered to the consumer with the corresponding warranty, which may not be less than five years for structural matters and three years for waterproofing; for the other elements the minimum warranty is one year. All periods are counted from the actual delivery of the property.",
+      "checked": "2026-11-26"
     }
   ]
 }

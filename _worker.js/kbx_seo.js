@@ -90,7 +90,7 @@ function regsFor(B, country) {   // register cards whose market belongs to this 
   const mk = new Set((B.byCountry.get(country) || []).map(c => c.market));
   return B.regCards.filter(r => ctry(r.name) === country || (r.sub && ctry(r.sub) === country) || mk.has(r.name));
 }
-const LAWC = { ID: 'Indonesia', 'AE-DU': 'UAE', TH: 'Thailand', ES: 'Spain', PT: 'Portugal' };
+const LAWC = { ID: 'Indonesia', 'AE-DU': 'UAE', TH: 'Thailand', ES: 'Spain', PT: 'Portugal', 'US-FL': 'USA', 'AU-VIC': 'Australia', MX: 'Mexico' };   // n40 L4: Florida, Victoria, Mexico
 function lawFor(B, country) {
   const rules = [];
   for (const [src, key] of [[B.law, 'law'], [B.lh, 'lh']]) {
@@ -244,7 +244,7 @@ function qTemplate(q) { return String(q).replace(/\b(19|20)\d{2}\b/g, '<year>').
 function srcBox(B, C, laws, regs) {   // n40 R01-40: official links first, the date we read each one, and an archived copy
   const rc = new Map(((B.regs && B.regs.registers) || []).map(r => [r.url, r.probed_at])), seen = new Set(), L = [];
   for (const r of regs || []) for (const it of r.items) if (it.url && !seen.has(it.url)) { seen.add(it.url); L.push([it.name, it.url, rc.get(it.url), 'register']); }
-  for (const r of laws || []) if (!seen.has(r.src.url)) { seen.add(r.src.url); L.push([r.src.law, r.src.url, B.law && B.law.version, 'law']); }
+  for (const r of laws || []) if (!seen.has(r.src.url)) { seen.add(r.src.url); L.push([r.src.law, r.src.url, r.src.read || (B.law && B.law.version), 'law']); }
   if (!L.length) return '';
   return h2('sources', 'Sources') + '<p class="muted">Official sources first, with the date we last read each one and a link to an archived copy.</p><ol class="sx-l">' + L.map(o => '<li><a href="' + esc(o[1]) + '" rel="noopener">' + esc(o[0]) + '</a> <small>' + esc(new URL(o[1]).hostname) + (o[2] ? ' · ' + (o[3] === 'register' ? 'checked on ' : 'read on ') + '<time datetime="' + esc(String(o[2]).slice(0, 10)) + '">' + longDate(String(o[2]).slice(0, 10)) + '</time>' : '') + ' · <a href="https://web.archive.org/web/2026/' + esc(o[1]) + '" rel="nofollow noopener">archived copy</a></small></li>').join('') + '</ol><p class="sx-src">Data files: <a href="/data/register-checks.json">/data/register-checks.json</a>, <a href="/tools/law/law.json">/tools/law/law.json</a>.</p>';
 }
@@ -289,7 +289,7 @@ function pSafe(B, x) {
 }
 const median = a => { const s = a.slice().sort((x, y) => x - y), m = s.length >> 1; return s.length ? (s.length % 2 ? s[m] : Math.round((s[m - 1] + s[m]) / 2)) : null; };
 function pLaw(B, x) {
-  const { c: C, s: S } = x, laws = lawFor(B, C), up = (B.law && B.law.version) || B.d.updated;
+  const { c: C, s: S } = x, laws = lawFor(B, C), up = laws.reduce((m, r) => r.checked > m ? r.checked : m, (B.law && B.law.version) || B.d.updated);
   const topics = (B.law && B.law.topics) || {};
   let body = '<div class="sx-sum" id="summary"><p><b>' + laws.length + ' rule' + (laws.length === 1 ? '' : 's') + ' of ' + esc(C) + ' law that matter when you buy off-plan, each quoted from the official text with a link.</b> We include an article only after reading it in the official source. General information, not legal advice: ask a local lawyer about your contract.</p></div>';
   body += laws.map(r => '<article class="sx-reg" id="' + esc(r.id) + '"><h3>' + esc(r.title) + '<a class="sx-anchor" href="#' + esc(r.id) + '" aria-label="Link to this rule">#</a></h3>' + (r.topics ? '<p class="sx-src">' + r.topics.map(t => esc(topics[t] || t)).join(', ') + '</p>' : '') + '<p>' + esc(r.plain) + '</p>' + (r.quote ? '<blockquote class="sx-q" lang="' + esc(r.src.language || '') + '">' + esc(r.quote) + '</blockquote>' : '') + (r.translation ? '<p class="sx-src">Translation: ' + esc(r.translation) + '</p>' : '') + '<p class="sx-src">' + esc(r.src.law) + (r.cite ? ', ' + esc(r.cite) : '') + '. <a href="' + esc(r.src.url) + '" rel="noopener">' + esc(r.src.publisher || new URL(r.src.url).hostname) + '</a>' + (r.src.checked ? ', checked ' + esc(r.src.checked) : '') + '.</p></article>').join('');
@@ -483,7 +483,7 @@ async function hubUrls(B) {
   const up = B.d.updated, list = countryList(B), out = [], asOf = B.ontime && B.ontime.as_of_month ? B.ontime.as_of_month + '-01' : null;
   out.push({ loc: SITE + '/countries/', lastmod: maxLm(B, B.all), t: 'countries' });
   out.push({ loc: SITE + '/guides/', lastmod: maxLm(B, B.all), t: 'guides' });   // n40 R01-33
-  for (const x of list) { out.push({ loc: SITE + '/countries/' + x.s + '/', lastmod: maxLm(B, x.L.concat(x.U), x.L.some(c => lateMonths(B, c)) ? [asOf] : []), t: 'countries' }); if (x.L.length >= THIN_MIN) out.push({ loc: SITE + '/countries/' + x.s + '/how-to-check/', lastmod: maxLm(B, x.L), t: 'guides' }); if (x.L.length >= SAFE_MIN) out.push({ loc: SITE + '/countries/' + x.s + '/is-it-safe/', lastmod: maxLm(B, x.L, [asOf]), t: 'guides' }); if (lawFor(B, x.c).length) out.push({ loc: SITE + '/countries/' + x.s + '/buyer-protection-law/', lastmod: (B.law && B.law.version) || up, t: 'guides' }); }
+  for (const x of list) { out.push({ loc: SITE + '/countries/' + x.s + '/', lastmod: maxLm(B, x.L.concat(x.U), x.L.some(c => lateMonths(B, c)) ? [asOf] : []), t: 'countries' }); if (x.L.length >= THIN_MIN) out.push({ loc: SITE + '/countries/' + x.s + '/how-to-check/', lastmod: maxLm(B, x.L), t: 'guides' }); if (x.L.length >= SAFE_MIN) out.push({ loc: SITE + '/countries/' + x.s + '/is-it-safe/', lastmod: maxLm(B, x.L, [asOf]), t: 'guides' }); { const lw = lawFor(B, x.c); if (lw.length) out.push({ loc: SITE + '/countries/' + x.s + '/buyer-protection-law/', lastmod: lw.reduce((m, r) => r.checked > m ? r.checked : m, (B.law && B.law.version) || up), t: 'guides' }); } }
   const dl = delayedList(B, () => true).map(o => o.c), drift = (B.drift && B.drift.projects) || {}, m0 = up.slice(0, 7) + '-01', A = addedDates(B);
   out.push({ loc: SITE + '/rankings/', lastmod: maxLm(B, B.cases, [asOf]), t: 'rankings' }, { loc: SITE + '/rankings/most-delayed/', lastmod: maxLm(B, dl, [asOf]), t: 'rankings' }, { loc: SITE + '/rankings/changed-promises/', lastmod: maxLm(B, B.cases.filter(c => drift[c.id])), t: 'rankings' }, { loc: SITE + '/new/', lastmod: maxLm(B, B.all.filter(c => !reviewed(c) || (A.get(c.id) || '').slice(0, 7) === m0.slice(0, 7)), [m0]), t: 'rankings' }, { loc: SITE + '/embed/widgets/', lastmod: maxLm(B, B.all), t: 'rankings' });
   out.push({ loc: SITE + '/press/delivery-index/', lastmod: (diMonths(B)[0] || {}).taken || up, t: 'rankings' }); for (const h of diMonths(B)) out.push({ loc: SITE + '/press/delivery-index/' + h.month + '/', lastmod: h.taken, t: 'rankings' });

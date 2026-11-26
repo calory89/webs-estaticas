@@ -715,7 +715,7 @@ async function evDeveloper(S, env, ctx) {
 }
 
 // ------------------------------------------------------------------------------------------------ (17) law and registers
-const LAWC = { ID: 'Indonesia', 'AE-DU': 'UAE', TH: 'Thailand', ES: 'Spain', PT: 'Portugal' };
+const LAWC = { ID: 'Indonesia', 'AE-DU': 'UAE', TH: 'Thailand', ES: 'Spain', PT: 'Portugal', 'US-FL': 'USA', 'AU-VIC': 'Australia', MX: 'Mexico' };
 const COVC = { Spain: 'ES', USA: 'US', UAE: 'AE', Indonesia: 'ID', 'United Kingdom': 'GB' };
 async function evLaw(S, env, ctx) {
   const c = card('law', 17), B = S.B, C = S.country;
@@ -736,7 +736,7 @@ async function evLaw(S, env, ctx) {
   }
   c.status = rules.length ? 'found' : 'not_published';
   c.summary = rules.length ? rules.length + ' rules of ' + C + ' law for off-plan buyers, quoted from the official text' + (cov && cov.code !== 'ANY' ? '; ' + ((cov.online || []).length ? (cov.online || []).length + ' registers we query live, ' : 'no register with open online access, ') + (cov.manual || []).length + ' checked by hand.' : '.')
-    : 'We have not quoted the buyer protection law of ' + C + ' yet (we cover Indonesia, UAE, Thailand, Spain and Portugal).' + (cov ? ' Registers: ' + (cov.code === 'ANY' ? 'general checks for any country.' : (cov.online || []).length + ' live, ' + (cov.manual || []).length + ' by hand.') : '');
+    : 'We have not quoted the buyer protection law of ' + C + ' yet (we cover Indonesia, UAE, Thailand, Spain, Portugal, Mexico, Florida (USA) and Victoria (Australia)).' + (cov ? ' Registers: ' + (cov.code === 'ANY' ? 'general checks for any country.' : (cov.online || []).length + ' live, ' + (cov.manual || []).length + ' by hand.') : '');
   return c._done();
 }
 
