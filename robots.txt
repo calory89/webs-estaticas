@@ -17,11 +17,19 @@ User-agent: DuckDuckBot
 User-agent: YandexBot
 Allow: /
 Allow: /api/img/
+Allow: /api/region/
+Allow: /api/airport/
+Allow: /api/events.json
+Allow: /api/cities.json
 Disallow: /api/
 
 User-agent: *
 Allow: /
 Allow: /api/img/
+Allow: /api/region/
+Allow: /api/airport/
+Allow: /api/events.json
+Allow: /api/cities.json
 Disallow: /api/
 
 # Summary and open data for AI assistants: https://www.top3hotels.com/llms.txt
