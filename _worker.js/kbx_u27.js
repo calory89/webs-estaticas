@@ -172,6 +172,9 @@ function client() {
     zh: { kld: '正在加载税费…', mp0: '没有符合这些筛选条件的项目。', mpr: '清除筛选' },
     ar: { kld: 'جارٍ تحميل الضرائب والرسوم…', mp0: 'لا يوجد مشروع يطابق هذه المرشحات.', mpr: 'امسح المرشحات' } };
   for (var w2 in W2) for (var w3 in W2[w2]) W[w2][w3] = W2[w2][w3];
+  // n40 k9: singular for a count of 1 (developer and market suggestions, map count)
+  var W1 = { en: ['1 project', '1 project in this view'], es: ['1 proyecto', '1 proyecto en esta vista'], fr: ['1 projet', '1 projet dans cette vue'], de: ['1 Projekt', '1 Projekt in dieser Ansicht'], nl: ['1 project', '1 project in deze weergave'], ru: ['1 проект', '1 проект в этой области'], zh: ['1 个项目', '此视图中有 1 个项目'], ar: ['مشروع واحد', 'مشروع واحد في هذا العرض'] };
+  for (var w1 in W1) { W[w1].sgp1 = W1[w1][0]; W[w1].mpk1 = W1[w1][1]; }
   var T = W[LG] || W.en, f = function (k, v) { var s = T[k] || W.en[k]; if (v) for (var a in v) s = s.split('{' + a + '}').join(v[a]); return s; };
   var LOC = { en: 'en-GB', es: 'es-ES', fr: 'fr-FR', de: 'de-DE', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' }[LG] || 'en-GB';
   var nf = function (n, d) { try { return Number(n).toLocaleString(LOC, { maximumFractionDigits: d || 0, numberingSystem: 'latn' }); } catch (e) { return String(Math.round(n)); } };
@@ -336,9 +339,9 @@ function client() {
     var norm = function (s) { return String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^0-9a-zЀ-ӿ؀-ۿ一-鿿]+/g, ' ').trim(); };
     var load = function () { if (P) return P; P = fetch('/api/v1/search-index').then(function (r) { return r.json(); }).then(function (d) {
       IX = (d.p || []).map(function (p) { return { u: PRE + '/projects/' + p[0] + '/', n: p[1], sub: [p[3], p[7] || p[5], p[6]].filter(Boolean).join(' · '), h: ' ' + norm(p[1] + ' ' + p[3] + ' ' + p[5] + ' ' + p[6] + ' ' + p[7]), w: 0 }; })
-        .concat((d.d || []).map(function (x) { return { u: PRE + '/developers/' + x[0] + '/', n: x[1], sub: f('sgd') + ' · ' + f('sgp', { k: x[2] }) + (x[3] ? ' · ' + x[3] : ''), h: ' ' + norm(x[1] + ' ' + x[3]), w: 1 }; }));
+        .concat((d.d || []).map(function (x) { return { u: PRE + '/developers/' + x[0] + '/', n: x[1], sub: f('sgd') + ' · ' + (+x[2] === 1 ? f('sgp1') : f('sgp', { k: x[2] })) + (x[3] ? ' · ' + x[3] : ''), h: ' ' + norm(x[1] + ' ' + x[3]), w: 1 }; }));
       var MK = {}; (d.p || []).forEach(function (p) { if (!p[5]) return; var m = MK[p[5]] || (MK[p[5]] = { c: p[6], k: 0 }); m.k++; });   // n40 k6: markets too
-      Object.keys(MK).forEach(function (m) { var sl = m.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''); IX.push({ u: PRE + '/m/' + sl + '/', n: m, sub: [MK[m].c !== m ? MK[m].c : '', f('sgp', { k: MK[m].k })].filter(Boolean).join(' · '), h: ' ' + norm(m + ' ' + MK[m].c), w: 2 }); });
+      Object.keys(MK).forEach(function (m) { var sl = m.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''); IX.push({ u: PRE + '/m/' + sl + '/', n: m, sub: [MK[m].c !== m ? MK[m].c : '', (+MK[m].k === 1 ? f('sgp1') : f('sgp', { k: MK[m].k }))].filter(Boolean).join(' · '), h: ' ' + norm(m + ' ' + MK[m].c), w: 2 }); });
     }).catch(function () { P = null; }); return P; };
     var close = function () { ul.hidden = true; HQ.setAttribute('aria-expanded', 'false'); HQ.removeAttribute('aria-activedescendant'); act = -1; };
     var run = function () {
@@ -372,7 +375,7 @@ function client() {
     var draw = function () {
       if (!data) return; var R = data.p.filter(pass), pins = R.filter(function (p) { return p[4] != null; }), byMk = {};
       R.forEach(function (p) { if (p[4] == null && data.mk[p[2]]) { (byMk[p[2]] = byMk[p[2]] || []).push(p); } });
-      cnt.textContent = f('mpk', { k: nf(R.length) }); var e0 = MP.querySelector('.kmp-0'); if (e0) e0.hidden = R.length > 0; if (rs) rs.hidden = !['co', 'yr', 'pm', 'sc'].some(function (k) { return q(k); });
+      cnt.textContent = (R.length === 1 ? f('mpk1') : f('mpk', { k: nf(R.length) })); var e0 = MP.querySelector('.kmp-0'); if (e0) e0.hidden = R.length > 0; if (rs) rs.hidden = !['co', 'yr', 'pm', 'sc'].some(function (k) { return q(k); });
       var h = '', esc2 = function (s) { var x = document.createElement('i'); x.textContent = s; return x.innerHTML; };
       R.slice(0, lim).forEach(function (p) { h += '<li><a href="' + PRE + '/projects/' + p[0] + '/">' + esc2(p[1]) + '</a> <small>' + esc2([p[2], p[3]].filter(function (v, i, a) { return v && a.indexOf(v) === i; }).join(', ')) + (p[6] ? ' · ' + p[6] : '') + (p[8] != null ? ' · ' + p[8] + '/100' : '') + '</small></li>'; });
       listEl.innerHTML = h; var more = MP.querySelector('.kmp-more'); if (more) more.hidden = R.length <= lim;
