@@ -31,13 +31,15 @@
   $('fn').addEventListener('blur',function(){this.classList.toggle('bad',!!this.value&&this.value.trim().length<2)});
   // lightbox
   var lb=$('lb'),lbFrom=null;function lbOpen(i){lbFrom=i;lb.querySelector('img').src=i.src;lb.querySelector('img').alt=i.alt;lb.hidden=false;lb.querySelector('button').focus()}function lbClose(){if(lb.hidden)return;lb.hidden=true;if(lbFrom)lbFrom.focus()}
-  document.querySelectorAll('#gal img,img.zoom,.realgal img').forEach(function(i){i.tabIndex=0;i.addEventListener('click',function(){lbOpen(i)});i.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();lbOpen(i)}})});
+  document.querySelectorAll('#gal img,img.zoom,.realgal img,.built img').forEach(function(i){i.tabIndex=0;i.addEventListener('click',function(){lbOpen(i)});i.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();lbOpen(i)}})});
   lb.addEventListener('click',lbClose);addEventListener('keydown',function(e){if(e.key==='Escape')lbClose()});
   // active nav
   var links=[].slice.call(document.querySelectorAll('.nav ul a'));var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'))});
   addEventListener('scroll',function(){var y=scrollY+120,cur=-1;secs.forEach(function(s,i){if(s&&s.offsetTop<=y)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})},{passive:true});
   // real drone video, loads only on click
   var v=$('video');if(v)v.addEventListener('click',function(){v.outerHTML='<div class="video"><iframe src="https://www.youtube-nocookie.com/embed/b6SvJJgZedk?autoplay=1&rel=0" title="Karimunjawa drone video" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>'});
+  // print / save as PDF: open all answers first
+  var pr=$('print');if(pr)pr.addEventListener('click',function(){document.querySelectorAll('details').forEach(function(d){d.open=true});document.querySelectorAll('.rv').forEach(function(e){e.classList.add('in')});setTimeout(function(){window.print()},50)});
   // copy ref
   $('copy').addEventListener('click',function(){try{navigator.clipboard.writeText($('refno').textContent);this.textContent='Copied'}catch(e){}});
   // submit

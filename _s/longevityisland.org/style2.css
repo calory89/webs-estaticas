@@ -108,3 +108,19 @@
 .privacy{font-size:12.5px;color:var(--ink2);margin:8px 0 0;text-align:center}
 .lb button:focus-visible{outline:3px solid #fff}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1!important;transform:none!important}}
+.built{margin-top:60px;display:grid;grid-template-columns:1fr 2fr;gap:34px;align-items:center}
+.built .ph{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.built figure{margin:0;position:relative}.built img{width:100%;height:260px;object-fit:cover;border-radius:14px;cursor:zoom-in}
+.built figure .pill{position:absolute;left:10px;top:10px}
+.built figcaption{font:500 11px 'IBM Plex Mono',monospace;letter-spacing:.05em;color:var(--ink2);margin-top:6px}
+@media(max-width:900px){.built{grid-template-columns:1fr}.built .ph{grid-template-columns:1fr 1fr}.built img{height:200px}}
+.langs{background:var(--card)}
+.langs .lgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:30px}
+.langs details{background:var(--sand);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.langs summary{cursor:pointer;font-weight:600}.langs details p{font-size:14.5px;color:var(--ink2);margin:10px 0 0}
+.langs details[open]{grid-column:1/-1}
+@media(max-width:900px){.langs .lgrid{grid-template-columns:1fr 1fr}}
+.tools{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:26px}
+.btn-line{border:1px solid var(--line);background:#fff;color:var(--ink)}
+@media print{.honest,.video,#reserve,.lb,.tools,.scrolldown,footer .foot>div:nth-child(2){display:none!important}.hero{min-height:0!important;color:#000}.hero img,.hero picture{display:none}.hero h1,.hero p{color:#000!important;text-shadow:none!important}.rv{opacity:1!important;transform:none!important}section{padding:24px 0!important;break-inside:avoid-page}details{display:block}details>p{display:block!important}.online,.reserve{background:#fff!important;color:#000!important}.online *,.reserve *{color:#000!important}}
+:where(img){height:auto}
