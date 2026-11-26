@@ -2251,7 +2251,7 @@
   {
    "id": "shipping",
    "title": "Shipping log",
-   "description": "Ships (commits by people, or by Claude working for one) and data updates per UTC day from the git history of the live branch, streaks, engineering metrics and day summaries written by an AI model and checked in code.",
+   "description": "Ships (commits) and data updates per UTC day from the git history of the live branch, streaks, engineering metrics and day summaries written by an AI model and checked in code.",
    "kind": "operations",
    "workflow": "kolaboro-shipping.yml",
    "schedule": "weekly, Friday 12:19 UTC",

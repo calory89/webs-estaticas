@@ -592,7 +592,7 @@ async function weekPage(env, shell, l) {
 const FEEDL = '<link rel="alternate" type="application/atom+xml" title="Kolaboro: project fact changes" href="/data/changes/feed.atom">';
 const xe = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 function feedAtom(mq) {   // r6u: every real change of a key fact (newest 100), one market with ?m=
-  const all = allChanges(), mk = all.some(x => x[0][3] === mq) ? mq : '', rows = (mk ? all.filter(x => x[0][3] === mk) : all).slice(0, 100);
+  const all = allChanges(), mk = mq, rows = (mk ? all.filter(x => x[0][3] === mk) : all).slice(0, 100);
   const self = ORIGIN + '/data/changes/feed.atom' + (mk ? '?m=' + encodeURIComponent(mk) : ''), upd = (rows.length ? rows[0][1].d : D.built) + 'T00:00:00Z';
   const x = '<?xml version="1.0" encoding="utf-8"?>\n<feed xmlns="http://www.w3.org/2005/Atom"><title>' + xe('Kolaboro: project fact changes' + (mk ? ' in ' + mk : '')) + '</title><id>' + xe(self) + '</id><updated>' + upd + '</updated><link rel="self" href="' + xe(self) + '"/><link rel="alternate" type="text/html" href="' + ORIGIN + '/data/changes/' + (mk ? '?m=' + encodeURIComponent(mk) : '') + '"/><author><name>Kolaboro</name></author><rights>CC BY 4.0</rights>' +
     rows.map(([r, c]) => { const f = t('en', 'f_' + c.f), cur = r[8][D.f.indexOf(c.f)], src = cur && cur[1] && /^https?:/.test(cur[1]) ? cur[1] : '';

@@ -3235,7 +3235,7 @@
    "@type": "dcat:Dataset",
    "dct:identifier": "shipping",
    "dct:title": "Shipping log",
-   "dct:description": "Ships (commits by people, or by Claude working for one) and data updates per UTC day from the git history of the live branch, streaks, engineering metrics and day summaries written by an AI model and checked in code.",
+   "dct:description": "Ships (commits) and data updates per UTC day from the git history of the live branch, streaks, engineering metrics and day summaries written by an AI model and checked in code.",
    "dcat:keyword": [
     "changelog",
     "shipping"

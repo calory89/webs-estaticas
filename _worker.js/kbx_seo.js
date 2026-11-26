@@ -1,19 +1,3 @@
-// Sitewide search and answer-engine layer for kolaboro.com (batch 8, agent seoT). Routed from index.js before the static site.
-// Everything here is rendered by the worker from published data files, so no static files are added to the Pages deployment.
-//   /sitemap_index.xml, /sitemaps/<name>.xml    sitemap index split by type and language, with lastmod and hreflang alternates
-//   /llms.txt, /llms-full.txt                   the published files plus live figures, hubs, guides and named projects
-//   /countries/, /countries/<c>/                country hubs: markets, named projects with facts, delays, registers, FAQ
-//   /countries/<c>/how-to-check/                how to check an off-plan project in <c>: registers, what is usually missing, what to ask
-//   /countries/<c>/is-it-safe/                  what the delivery and disclosure record shows (countries with 5+ tracked projects)
-//   /countries/<c>/buyer-protection-law/        quoted official law notes (only countries with notes in /tools/law/law.json)
-//   /rankings/most-delayed/[<market>/]          projects furthest past the first handover date on record
-//   /rankings/changed-promises/                 projects and developers whose advertised promises changed most
-//   /new/                                       projects added to tracking this month
-//   /vs/<a>-vs-<b>/                             side-by-side facts for two named projects in the same market (meaningful pairs only)
-//   /embed/delay/<market>/, /embed/project/<id>/, /embed/widgets/   embeddable cards with attribution, and their embed codes
-//   /engineering/seo/                           indexation dashboard (counts computed live; crawl results from data/seo-audit.json)
-//   /<key>.txt                                  IndexNow key file
-// Facts only: every number is computed from the data files named on the page; named project pages belong to seoP (/api/seo/urls).
 import * as KB from './kolaboro.js';
 import { trueLastmod, lastmodRoute } from './kbx_lastmod.js';
 import { BUY_PLACES, PL as BUY_PL } from './kbx_buy_i18n.js';   // batch 27 (n27c): step-by-step buying guides per place
@@ -42,7 +26,6 @@ const longDate = iso => { const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(iso || ''); 
 const ymIdx = s => { const m = /^(\d{4})-(\d{2})/.exec(s || ''); return m ? +m[1] * 12 + (+m[2] - 1) : null; };
 const ymName = s => { const m = /^(\d{4})-(\d{2})/.exec(s || ''); return m ? MONTHS[+m[2] - 1] + ' ' + m[1] : ''; };
 
-// ---------- data (published files read from the deployed assets; memo per isolate) ----------
 const MEMO = {};
 async function file(env, name, ttl) {
   const m = MEMO[name]; if (m && Date.now() - m.t < (ttl || 300000)) return m.v;
@@ -50,7 +33,6 @@ async function file(env, name, ttl) {
   try { const r = await env.ASSETS.fetch(new Request(SITE + '/_s/kolaboro.com' + name)); if (r.ok) v = /\.json$/.test(name) ? await r.json() : await r.text(); } catch (e) { v = null; }
   MEMO[name] = { t: Date.now(), v }; return v;
 }
-// Named URLs published by the project/developer page layer (seoP). Read through the worker itself, never invented here.
 async function named(inner) {
   const m = MEMO.__named; if (m && Date.now() - m.t < 300000) return m.v;
   let v = { projects: new Map(), developers: [], all: [] };
@@ -78,20 +60,14 @@ async function base(env, inner) {
   const N = await named(inner);
   const T = await trueLastmod(env).catch(() => null);
   const all0 = (d.cases || []).map(c => Object.assign({}, c, { country: ctry(c.country) }));
-  // n29q: conflict of interest (a Kolaboro founder develops a project in Sumba): Sumba projects are listed nowhere but the transparency
-  // ranking. They are left out of every list, table and statistic here; totals that match /api/open/stats add them back with a note.
   const coi = all0.filter(c => /^sumba$/i.test(String(c.market || '').trim())), all = all0.filter(c => !coi.includes(c));
-  // Legal-safety rule (lead, batch 8): a project the research agent has not read yet (no deep profile and no verification evidence)
-  // is shown only as "Not yet reviewed by Kolaboro": no score, no caution or risk label, never in a ranking or a statistic.
   const cases = all.filter(reviewed), unrev = all.filter(c => !reviewed(c));
   const byCountry = new Map(); for (const c of cases) { if (!byCountry.has(c.country)) byCountry.set(c.country, []); byCountry.get(c.country).push(c); }
   const uByCountry = new Map(); for (const c of unrev) { if (!uByCountry.has(c.country)) uByCountry.set(c.country, []); uByCountry.get(c.country).push(c); }
   const mToC = new Map(); for (const c of all) if (!mToC.has(c.market)) mToC.set(c.market, c.country);
   return { d, all, coi, cases, unrev, byCountry, uByCountry, mToC, delay, ontime, promises, drift, regs, cover, law, lh, regCards: parseRegisters(regHtml), N, T };
 }
-// The /registers/ page is our own static HTML: one card per market or country, one item per register.
 export const NOT_REVIEWED = 'Not yet reviewed by Kolaboro';
-// same rule as the named project pages (kbx_named.js): reviewed only when at least one buyer check has verification evidence
 function reviewed(c) { return !!(c && c.verified && Object.values(c.verified).some(v => v && v !== 'none')); }
 function parseRegisters(h) {
   const out = [];
@@ -135,17 +111,13 @@ function stats(L) {
   s.avg = n ? s.avg / n : 0; s.vavg = n ? s.vavg / n : 0; return s;
 }
 function pname(B, c) { const e = B.N.projects.get(c.id); return e && e.name ? e.name : c.id; }
-// true lastmod (batch 15): a project's date is the last real change of its data (kbx_lastmod.js); a hub's date is the latest of the
-// projects it lists, plus the first day of the reference month for pages whose month counts (months late, new this month)
 function tl(B, c) { const d = B.T && B.T.project.get(c.id); if (d) return d; const h = (c.history || []).map(x => x.d).filter(Boolean).sort(); return h[h.length - 1] || B.d.updated; }
 function maxLm(B, L, extra) { let m = ''; for (const c of L) { const d = tl(B, c); if (d > m) m = d; } for (const e of extra || []) if (e && e > m) m = e; const today = new Date().toISOString().slice(0, 10); return m > today ? today : (m || B.d.updated); }
 let HLM = null;   // path -> true lastmod of the hub being rendered (set by handle() for render())
 function plink(B, c) { const e = B.N.projects.get(c.id); return e ? e.loc.replace(SITE, '') : '/p/' + encodeURIComponent(c.id) + '/'; }
 const place = c => (c.region && c.region !== c.market ? c.region + ', ' : '') + c.market;
 
-// ---------- HTML pages: our own static page (header, footer, styles) with a new head and <main> ----------
 const CSS = '<style>.sx-cf{max-width:420px;margin:0 0 16px}.sx-cf label{display:block;font-weight:600;margin:0 0 6px}.sx-cf input{width:100%;min-height:48px;padding:0 14px;border:1px solid var(--k-field,var(--line));border-radius:var(--k-r-sm,6px);background:var(--k-surface,#fff);color:var(--k-ink,var(--ink));font:inherit}.sx-cfn{margin:6px 0 0;min-height:1.3em;font-size:var(--k-fs-xs,13px);color:var(--k-muted,var(--muted))}.sx-sum{background:var(--paper);border:2px solid var(--ink);border-radius:18px;padding:18px 20px;margin:0 0 26px;max-width:820px}.sx-sum p{margin:0 0 8px}.sx-sum p:last-child{margin:0}.sx-kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:18px 0 26px}.sx-kv div{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:12px 14px}.sx-kv b{display:block;font-size:1.5rem;font-stretch:110%}.sx-kv span{font-size:.86rem;color:var(--muted)}.sx-tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:12px 0 22px;border-radius:16px}.sx-tw table{min-width:560px}.sx h2{margin:40px 0 12px;scroll-margin-top:90px}.sx h3{margin:22px 0 8px}.sx .muted,.sx small{color:var(--muted)}.sx ul.sx-l{padding-left:20px}.sx ul.sx-l li{margin:6px 0}.sx-chips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 20px;padding:0;list-style:none}.sx-chips a{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:6px 12px;background:var(--paper);text-decoration:none}.sx-chips a:hover{border-color:var(--ink)}.sx-reg{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:10px 0}.sx-reg h3{margin:0 0 6px;font-size:1.05rem}.sx-reg dl{margin:0}.sx-reg dt{font-weight:700;font-size:.85rem;margin-top:8px}.sx-reg dd{margin:2px 0 0}.sx-q{border-left:3px solid var(--line);padding:4px 0 4px 14px;margin:10px 0;font-style:italic}.sx-src{font-size:.86rem;color:var(--muted)}.sx-anchor{text-decoration:none;color:var(--muted);margin-left:2px;font-size:.5em;opacity:.6;vertical-align:middle;display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;margin-block:-10px}.sx-reply{border:2px dashed var(--line);border-radius:16px;padding:14px 18px;margin:30px 0}.sx-toc{columns:2;column-gap:28px;padding-left:18px}@media(max-width:620px){.sx-toc{columns:1}.sx-kv{grid-template-columns:1fr 1fr}}' +
-  // d12b redesign (7 Nov 2026): calmer summary, real stat tiles, smaller section headings, anchors on hover, tables as cards on phones
   '.sx.sec{padding-top:clamp(24px,4vw,44px)}.sx-sum{background:var(--k-surface,var(--paper));border:1px solid var(--line);border-inline-start:4px solid var(--k-sea,#155C75);border-radius:var(--k-r-lg,14px);padding:20px 22px;line-height:1.55;max-width:72ch}' +
   '.sx-kv{gap:0;border:1px solid var(--line);border-radius:var(--k-r-lg,14px);overflow:hidden;background:var(--k-surface,var(--paper));grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}.sx-kv div{border:0;border-radius:0;box-shadow:inset -1px -1px 0 var(--line);background:transparent;padding:16px 18px}.sx-kv b{font-size:clamp(1.6rem,3vw,2.1rem);line-height:1.1;font-variant-numeric:tabular-nums;margin-bottom:4px}.sx-kv span{font-size:.88rem;line-height:1.35;color:var(--muted);display:block}' +
   '.sx h2{font-size:clamp(1.45rem,2.8vw,2.1rem);line-height:1.15;margin:52px 0 12px;max-width:30ch}.sx h2+p,.sx h2+.sx-src{max-width:68ch}.sx-anchor{opacity:0;transition:opacity .15s;font-size:.6em;color:var(--k-muted,var(--muted))}.sx h2:hover .sx-anchor,.sx-anchor:focus-visible{opacity:1}' +
@@ -165,8 +137,6 @@ function tableWrap(head, rows) {   // d12b: each cell carries its column name (d
   const L = head.map(h => String(h).replace(/<[^>]+>/g, '').replace(/"/g, '&quot;'));
   const R = rows.map(r => { let i = 0; return r.replace(/<td(\s[^>]*)?>/g, (m, a) => '<td' + (a || '') + ' data-l="' + (L[i++] || '') + '">'); });
   return '<div class="sx-tw"><table class="ptable"><thead><tr>' + head.map(h => '<th scope="col">' + h + '</th>').join('') + '</tr></thead><tbody>' + R.join('') + '</tbody></table></div>'; }
-// n29t (item 40): a list page (CollectionPage) without an ItemList gets one, built from the rows it shows: the first link of each
-// table row, or else the links of its lists. Up to 100 items, in page order, so the structured data says what the page lists.
 const unesc = t => String(t).replace(/<[^>]+>/g, '').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
 function listLd(body) {
   let m = [...String(body).matchAll(/<tr><td[^>]*><a href="(\/[^"#]*)">([\s\S]*?)<\/a>/g)];
@@ -202,7 +172,6 @@ async function shellOut(shell, R, cacheHdr) {
   return new Response(res.body, { status: R.status, headers: h });
 }
 
-// ---------- pages ----------
 function countryList(B) { const names = new Set([...B.byCountry.keys(), ...B.uByCountry.keys()]); return [...names].map(c => ({ c, s: slug(c), L: B.byCountry.get(c) || [], U: B.uByCountry.get(c) || [] })).sort((a, b) => b.L.length - a.L.length || b.U.length - a.U.length || a.c.localeCompare(b.c)); }
 function unrevSection(B, U) { return U.length ? h2('not-reviewed', 'Added, not yet reviewed') + '<p>' + U.length + ' project' + (U.length === 1 ? ' was' : 's were') + ' added to tracking and ' + (U.length === 1 ? 'has' : 'have') + ' not been read by our research agent yet. We show no score or check results for them until we have.</p>' + tableWrap(['Project', 'Where', 'Status'], U.slice().sort((a, b) => a.id.localeCompare(b.id)).map(c => '<tr><td><a href="' + plink(B, c) + '">' + esc(pname(B, c)) + '</a></td><td>' + esc(place(c)) + '</td><td>' + NOT_REVIEWED + '</td></tr>')) : ''; }
 function coiNote(B) { return B.coi && B.coi.length ? '; ' + B.coi.length + ' of them, in Sumba, are counted here but listed only in the <a href="/rankings/transparency/sumba/">transparency ranking</a> (a Kolaboro founder develops a project there: <a href="/independence/">conflict of interest</a>)' : ''; }
@@ -246,7 +215,7 @@ function pCountry(B, x) {
   body += '<ul class="sx-chips"><li><a href="/countries/' + S + '/how-to-check/">How to check a project in ' + esc(C) + '</a></li>' + (n >= SAFE_MIN ? '<li><a href="/countries/' + S + '/is-it-safe/">Is it safe to buy off-plan in ' + esc(C) + '?</a></li>' : '') + (laws.length ? '<li><a href="/countries/' + S + '/buyer-protection-law/">Buyer protection law in ' + esc(C) + '</a></li>' : '') + placesForCountry(C).map(P => '<li><a href="/rankings/transparency/' + P.s + '/">Transparency ranking: ' + esc(P.n) + '</a></li>').join('') + '</ul>';
   const mkU = [...new Set(U.map(c => c.market))].filter(m => !mk.some(o => o.m === m));   // n29t (item 36): markets with only not-yet-reviewed projects were linked from nowhere (orphan /m/ pages)
   body += h2('markets', 'Markets in ' + C) + '<ul class="sx-chips">' + mk.map(o => '<li><a href="/m/' + slugM(o.m) + '/">' + esc(o.m) + ' (' + (o.n + U.filter(z => z.market === o.m).length) + ')</a></li>').join('') + mkU.map(m => '<li><a href="/m/' + slugM(m) + '/">' + esc(m) + ' (' + U.filter(c => c.market === m).length + ' not yet reviewed)</a></li>').join('') + '</ul>';
-  { const k = (B.coi || []).filter(c => c.country === C).length; if (k) body += '<p class="muted">Not listed on this page: ' + k + ' project' + (k === 1 ? '' : 's') + ' in Sumba, where a Kolaboro founder develops a project (<a href="/independence/">conflict of interest</a>). ' + (k === 1 ? 'It appears' : 'They appear') + ' only in the <a href="/rankings/transparency/sumba/">transparency ranking</a>.</p>'; }   // n29q
+  { const k = (B.coi || []).filter(c => c.country === C).length; if (k) body += '<p class="muted">Some projects in this country are not listed on this page because of a <a href="/independence/">conflict of interest</a>. Site totals include them.</p>'; }   // n29q
   body += h2('projects', 'Off-plan projects tracked in ' + C) + '<p class="muted">Sorted by the number of buyer checks the developer makes public. Facts as advertised, checked against registers where we could; "not published" means we found no public source.</p>' + tableWrap(PHEAD, projectRows(B, L)) + unrevSection(B, U);
   if (lates.length) body += h2('delays', 'Furthest past the first handover date') + '<ol class="sx-l">' + lates.slice(0, 10).map(o => '<li><a href="' + plink(B, o.c) + '">' + esc(pname(B, o.c)) + '</a> (' + esc(o.c.market) + '): first handover on record ' + ymName(o.lm.first + '-01') + ', ' + o.lm.late + ' months ago' + (o.lm.moved ? '; date moved ' + o.lm.moved + ' months in total' : '') + '</li>').join('') + '</ol><p class="sx-src">Source: <a href="/data/on-time.json">/data/on-time.json</a> (as of ' + esc(B.ontime.as_of_month) + '). <a href="/rankings/most-delayed/">All markets</a></p>';
   if (dm.length) body += h2('delay-index', 'Delivery-delay index') + tableWrap(['Market', 'Tracked', 'With a date', 'Past first date', 'Share past first date', 'Median months late'], dm.map(r => '<tr><td>' + esc(r.market) + '</td><td>' + r.tracked + '</td><td>' + r.with_date + '</td><td>' + r.past_first + '</td><td>' + (r.share_past_first == null ? 'too few' : r.share_past_first + '%') + '</td><td>' + (r.median_late == null ? 'too few' : r.median_late) + '</td></tr>')) + '<p class="sx-src">Source: <a href="/index/delays/">delivery-delay index</a>, <a href="/data/delay-index.json">/data/delay-index.json</a>.</p>';
@@ -348,7 +317,6 @@ function pChanged(B) {
   let body = '<div class="sx-sum" id="summary"><p><b>' + rows.length + ' tracked off-plan projects changed what their own pages promise</b> since we started keeping daily copies on ' + longDate(B.drift.first_day) + ' (' + B.drift.counts.changes + ' changes found in ' + B.drift.counts.projects + ' projects read daily), or moved a dated promise such as the handover.</p><p>A change is a difference between two dated copies of the developer page, each fingerprinted with SHA-256; it can be a correction, an update or a new promise. Fields read: ' + B.drift.fields.join(', ') + '.</p></div>';
   if (devs.length) body += h2('developers', 'Developers with the most changed promises') + tableWrap(['Developer', 'Projects with changes', 'Changes on their pages', 'Months handover dates moved'], devs.map(v => '<tr><td>' + (v.url ? '<a href="' + esc(v.url.replace(SITE, '')) + '">' + esc(v.name) + '</a>' : esc(v.name)) + '</td><td>' + v.projects + '</td><td>' + v.changes + '</td><td>' + v.mm + '</td></tr>'));
   const cpRow = o => '<tr><td><a href="' + plink(B, o.c) + '">' + esc(pname(B, o.c)) + '</a></td><td>' + esc(o.c.market) + '</td><td>' + o.n + '</td><td>' + esc(o.f.join(', ') || 'dated promise moved') + '</td><td>' + o.mm + '</td></tr>', CPH = ['Project', 'Market', 'Changes on the page', 'What changed', 'Months handover dates moved'];
-  // n29t (item 38): every project of the ranking is linked from it (before, rows past 150 were cut); the rest sit in a folded table
   body += h2('projects', 'Projects with the most changes') + tableWrap(CPH, rows.slice(0, 150).map(cpRow)) + (rows.length > 150 ? '<details><summary>' + (rows.length - 150) + ' more projects with changes (' + 151 + ' to ' + rows.length + ')</summary>' + tableWrap(CPH, rows.slice(150).map(cpRow)) + '</details>' : '');
   body += '<p class="sx-src">Sources: <a href="/data/promise-drift.json">/data/promise-drift.json</a> (daily page copies), <a href="/data/promises.json">/data/promises.json</a> (dated promises, each an exact quote). See <a href="/promises/">the promise tracker</a>.</p>' + REPLY;
   return render({ path: '/rankings/changed-promises/', title: 'Most changed promises: off-plan developers and projects', h1: 'Most changed off-plan promises', lead: 'What developers changed on their own pages, found by comparing dated copies we keep every day.', desc: rows.length + ' off-plan projects changed advertised promises (handover date, price, permit, guaranteed returns) since ' + longDate(B.drift.first_day) + '. Dated copies, SHA-256 fingerprints.', updated: up, type: 'CollectionPage', crumbs: [['Kolaboro', '/'], ['Rankings', '/rankings/'], ['Changed promises', '/rankings/changed-promises/']], body });
@@ -358,7 +326,6 @@ function addedDates(B) {   // first day a project appears in our daily page copi
   for (const c of B.cases) { const ds = []; if (P[c.id] && P[c.id].first) ds.push(P[c.id].first); for (const x of PR[c.id] || []) for (const h of x.hist || []) if (h.seen) ds.push(h.seen); for (const h of c.history || []) if (h.d) ds.push(h.d); out.set(c.id, ds.length ? ds.sort()[0] : null); }
   return out;
 }
-// n39 t3 (25 Nov 2026): /new/ is paged (NEW_PER projects a page, ?p=2 ...); the English page was 620 KB with every project in one table set
 const NEW_PER = 150;
 function pNew(B, u) {
   const up = B.d.updated, m0 = up.slice(0, 7), A = addedDates(B);
@@ -376,7 +343,6 @@ function pNew(B, u) {
   body += pager + REPLY;
   return render({ path: pU(pg), noindex: pg > 1, title: 'New off-plan projects in ' + mname + ': ' + L.length + ' first on record' + (pg > 1 ? ', page ' + pg : '') + ' | Kolaboro', h1: 'New off-plan projects this month', lead: 'Projects that first appear in our records in ' + mname + ', with what they publish.', desc: L.length + ' off-plan projects first on record at Kolaboro in ' + mname + ' in ' + by.size + ' countries: stage, advertised handover, public buyer checks.', updated: up, type: 'CollectionPage', crumbs: [['Kolaboro', '/'], ['New this month', '/new/']], body });
 }
-// Comparisons only for named projects in the same market, same stage and same price band (a pair a buyer actually weighs); max 2 per project.
 function pairs(B) {
   if (MEMO.__pairs && MEMO.__pairs.k === B.d.updated + B.N.projects.size) return MEMO.__pairs.v;
   const groups = new Map();
@@ -394,8 +360,6 @@ function pVs(B, key) {
     return render({ path: '/vs/', title: 'Off-plan project comparisons: facts side by side | Kolaboro', h1: 'Compare off-plan projects', desc: P.length + ' comparisons of off-plan projects in the same market, stage and price band: permits, deposit protection, handover dates, delays.', updated: up, type: 'CollectionPage', crumbs: [['Kolaboro', '/'], ['Comparisons', '/vs/']], body, noindex: !P.length });
   }
   let pr = P.find(([a, b]) => pairPath(a, b) === '/vs/' + key + '/');
-  // n38 d2: the greedy pairing shifts when projects are added, so a pair linked yesterday (or listed by another isolate) could 404.
-  // Any two named projects in the same market, stage and price band still get their comparison page; only the /vs/ list stays curated.
   if (!pr) { const mk = /^([a-z0-9]+-[0-9]+)-vs-([a-z0-9]+-[0-9]+)$/.exec(key); if (!mk || mk[1] === mk[2]) return null; const f = id => B.cases.find(c => c.id.toLowerCase() === id && B.N.projects.has(c.id)); const a = f(mk[1]), b = f(mk[2]); if (!a || !b || a.market !== b.market || !a.stage || a.stage !== b.stage || !a.band || a.band !== b.band) return null; pr = [a, b]; }
   const [a, b] = pr, la = lateMonths(B, a), lb = lateMonths(B, b), na = pname(B, a), nb = pname(B, b);
   const row = (k, f) => '<tr><th scope="row">' + k + '</th><td>' + f(a, la) + '</td><td>' + f(b, lb) + '</td></tr>';
@@ -410,7 +374,6 @@ function pRankings(B) {
   return render({ path: '/rankings/', title: 'Off-plan rankings: delays, changed promises, transparency', h1: 'Off-plan rankings', desc: 'Data-driven lists of off-plan projects: most delayed by market, most changed promises, new projects, transparency by market.', updated: B.d.updated, type: 'CollectionPage', crumbs: [['Kolaboro', '/'], ['Rankings', '/rankings/']], body });
 }
 
-// ---------- citeable monthly report: one frozen permalink per month from the delay index history ----------
 function diMonths(B) { return ((B.delay && B.delay.history) || []).filter(h => /^\d{4}-\d{2}$/.test(h.month)).sort((a, b) => a.month < b.month ? 1 : -1); }
 function diRows(h) { return Object.entries(h.markets || {}).map(([m, a]) => ({ m, tracked: a[0], past: a[1], share: a[2], median: a[3], p90: a[4] })).sort((a, b) => b.tracked - a.tracked || a.m.localeCompare(b.m)); }
 function diCsv(B, month) {
@@ -438,10 +401,7 @@ function pDeliveryIndex(B, month) {
     ld: [{ '@type': 'Dataset', '@id': SITE + path + '#dataset', name: 'Kolaboro Off-plan Delivery Index, ' + mname, description: 'Share of tracked off-plan property projects past the first handover date on record, and months late, by market. Snapshot of ' + h.taken + '.', url: SITE + path, license: 'https://creativecommons.org/licenses/by/4.0/', creator: { '@type': 'Organization', name: 'Kolaboro', url: SITE + '/' }, temporalCoverage: month, dateModified: h.taken, isAccessibleForFree: true, variableMeasured: ['share of projects past the first handover date', 'median months late', '90th percentile months late'], distribution: [{ '@type': 'DataDownload', encodingFormat: 'text/csv', contentUrl: SITE + '/press/delivery-index/' + month + '.csv' }, { '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: SITE + '/data/delay-index.json' }], citation: cite }] });
 }
 
-// ---------- embeds: small self-contained cards with an attribution link (framing allowed for /embed/) ----------
 function embedHtml(title, inner, canon) {
-  // served as XHTML (application/xhtml+xml, see EMBED_HDR): the zone's analytics injection skips it, so third-party sites embedding
-  // the card load no tracking (same approach as s15c's kbx_cite.js embeds). Markup must stay well-formed XML.
   return '<?xml version="1.0" encoding="utf-8"?>\n<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="robots" content="noindex, follow"/><link rel="canonical" href="' + canon + '"/><title>' + esc(title) + '</title><style>:root{--i:#17212B;--m:#5B6670;--l:#E1E4DF;--p:#fff;--a:#C9461A}@media(prefers-color-scheme:dark){:root{--i:#F2F1EC;--m:#A9B2BB;--l:#33404C;--p:#17212B;--a:#FF8A5B}}html,body{margin:0;background:var(--p);color:var(--i);font:15px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}.c{border:1px solid var(--l);border-radius:14px;padding:14px 16px;max-width:520px}.h{font-weight:700;font-size:16px;margin:0 0 4px}.s{color:var(--m);font-size:13px;margin:0 0 10px}.k{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:8px 0}.k div{border:1px solid var(--l);border-radius:10px;padding:8px}.k b{display:block;font-size:20px}.k span{font-size:12px;color:var(--m)}ul{margin:6px 0;padding-left:18px}a{color:var(--i)}.f{font-size:12px;color:var(--m);margin-top:10px}.f a{color:var(--a)}</style></head><body><div class="c">' + inner + '</div></body></html>';
 }
 const EMBED_HDR = { 'content-type': 'application/xhtml+xml; charset=utf-8', 'cache-control': 'public, max-age=3600, no-transform', 'content-security-policy': "default-src 'none'; style-src 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'none'", 'x-robots-tag': 'noindex, follow' };
@@ -470,18 +430,13 @@ function pWidgets(B) {
   return render({ path: '/embed/widgets/', title: 'Embeddable off-plan data widgets: delay index, fact cards', h1: 'Embed Kolaboro data', desc: 'Free embeddable cards: off-plan delivery-delay index per market and project fact cards, live from the open dataset, CC BY 4.0.', updated: B.d.updated, crumbs: [['Kolaboro', '/'], ['Press', '/press/'], ['Widgets', '/embed/widgets/']], body });
 }
 
-// ---------- sitemaps ----------
 const XHDR = { 'content-type': 'application/xml; charset=utf-8', 'cache-control': 'public, max-age=600', 'x-robots-tag': 'noindex' };
 const urlset = (items, alt, img) => '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"' + (alt ? ' xmlns:xhtml="http://www.w3.org/1999/xhtml"' : '') + (img ? ' xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"' : '') + '>\n' + items.map(i => '<url><loc>' + xesc(i.loc) + '</loc>' + (i.lastmod ? '<lastmod>' + i.lastmod + '</lastmod>' : '') + (i.alt || []).map(a => '<xhtml:link rel="alternate" hreflang="' + a[0] + '" href="' + xesc(a[1]) + '"/>').join('') + (i.img || []).map(u => '<image:image><image:loc>' + xesc(u) + '</image:loc></image:image>').join('') + '</url>').join('\n') + '\n</urlset>\n';
-// image sitemap (batch 15): the share card of every named project and developer page (rendered by kbx_og.js from the same facts) and,
-// where we hold one, the monthly Sentinel-2 thumbnail strip shown in "Construction progress from space" (kbx_named_sat.js).
-// English pages only: the images are the same in every language and the hreflang set already links the translations.
 async function imageUrls(env, B, NP, ND, pages) {
   const prog = await file(env, '/data/construction-progress.json'), sp = (prog && prog.projects) || {};
   const one = (i, kind) => { const b = i.base, img = [SITE + '/og' + b.replace(/\/$/, '') + '.png']; const r = kind === 'project' && i.id && sp[i.id]; if (r && r.frames && r.v) img.push(SITE + '/k/sat/proj/' + encodeURIComponent(i.id) + '.jpg?v=' + encodeURIComponent(r.v)); return { loc: i.loc, lastmod: i.lastmod, img }; };
   const en = i => !/^https:\/\/kolaboro\.com\/(es|de|fr|ru|nl|ar|zh)\//.test(i.loc);
   const out = NP.filter(i => en(i) && /^\/projects\/[^/]+\/$/.test(i.base || '')).map(i => one(i, 'project')).concat(ND.filter(i => en(i) && /^\/developers\/[^/]+\/$/.test(i.base || '')).map(i => one(i, 'developer')));
-  // n26i: English static pages with their own share image (og:image of the page itself, read from the deployed file, our domain only)
   if (pages) { const E = pages.filter(pg => pg.lang === 'en'), I = await Promise.all(E.map(pg => ogOf(env, pg.loc.replace(SITE, '')))); E.forEach((pg, i) => { if (I[i]) out.push({ loc: pg.loc, lastmod: pg.lastmod, img: [I[i]] }); }); }
   return out;
 }
@@ -493,8 +448,6 @@ async function ogOf(env, p) {
   } catch (e) { v = null; }
   MEMO[k] = { t: Date.now(), v }; return v;
 }
-// n26i (batch 26): indexable pages our own crawl of 13 Nov found linked but in no sitemap: worker-rendered pages in 8 languages and
-// a few static pages. Each answered 200, self-canonical, no noindex. No lastmod is invented for them (left out when not known).
 const XL = ['methods/construction-stage', 'methods/delivery-forecast', 'guides/short-let-rules', 'satellite/plot', 'watch/lookalikes', 'graph/developers', 'tools/contract-addendum', 'tools/permit-photo', 'live/xrays', 'open', 'numbers'];
 const XE = ['tools/account-check', 'tools/site-visit', 'tools/payment-email-check', 'findings', 'room', 'bulk-check', 'engineering/seo'];
 const xtraLocs = () => XL.flatMap(p => LANGS.map(l => SITE + (l === 'en' ? '' : '/' + l) + '/' + p + '/')).concat(XE.map(p => SITE + '/' + p + '/')).map(loc => ({ loc, lastmod: null }));
@@ -520,7 +473,6 @@ async function hubUrls(B) {
   return out;
 }
 function namedUrls(B, type) {   // seoP's named pages, grouped by base URL with hreflang alternates; lastmod = last real data change (kbx_lastmod.js)
-  // n33i: a page Search Console shows impressions for (data/seo-priority.json) is listed even when thin (sm=false), with its language versions
   const list = B.N.all.filter(e => e.type === type && (e.sm !== false || (B.prio && B.prio.has(e.loc.replace(SITE, '').replace(/^\/(es|de|fr|ru|nl|ar|zh)\//, '/'))))); const byBase = new Map(), T = B.T;
   const all = T ? [...T.project.values()].sort() : [], newest = all[all.length - 1] || null;
   const tlm = (e, b) => { if (!T) return null; if (type === 'project' && e.id) return T.project.get(e.id) || null; if (type === 'developer') { const m = /^\/developers\/([^/]+)\/$/.exec(b); return m ? T.developer.get(m[1]) || null : null; } if (type === 'index') return newest; return null; };
@@ -544,9 +496,6 @@ async function sitemaps(env, B, name) {
   for (const l of LANGS) { S['projects-' + l] = NP.filter(i => lg(i) === l); S['developers-' + l] = ND.filter(i => lg(i) === l); }
   S.images = await imageUrls(env, B, NP, ND, pages);
   for (const k of Object.keys(S)) if (k !== 'images') { const seen = new Set(); S[k] = S[k].filter(i => i && i.loc && !seen.has(i.loc) && seen.add(i.loc)); }   // n20f: one URL once per sitemap (/report/sample/ was listed twice)
-  // n33i (batch 33, items 11, 19): pages with Search Console impressions and no clicks (data/seo-priority.json) come first in their
-  // sitemap, then the most searched projects (TOP_IDS), then the rest in their usual order; the same pages, when listed in one of
-  // these sitemaps, also make /sitemaps/recrawl.xml (one URL can be in two sitemaps). It is not counted twice in the totals.
   try {
     const pr = await file(env, '/data/seo-priority.json'), rk = new Map(), base = x => x.replace(SITE, '').replace(/^\/(es|de|fr|ru|nl|ar|zh)\//, '/');
     ((pr && pr.recrawl) || []).forEach((r, i) => { if (r && r.path && !rk.has(r.path)) rk.set(r.path, i); });
@@ -561,12 +510,8 @@ async function sitemaps(env, B, name) {
     const keys = Object.keys(S).filter(k => S[k].length);
     if (name === 'stats') return Object.fromEntries(Object.keys(S).filter(k => k !== 'recrawl').map(k => [k, S[k].length]));
     const last = k => S[k].reduce((a, i) => (i.lastmod && i.lastmod > a ? i.lastmod : a), '') || up;
-    // sitemaps published by other modules (batch 15: s15c's data stories and change log), listed only while they answer 200 with XML
     const ext = [];
     for (const x of EXT_MAPS) {   // n29i: translated market files;   // n29h1: + place data pages (kbx_h29.js)
-        // n27e: + weekly changes per place;   // n26s: + handover year, neighbourhood and comparison pages;   // n26y: /progress/, /press/places/, /moderation/, /team/ (kbx_trust.js)
-      // n27g: listed always. The check by fetching each one (up to 5,000 URLs to build) did not finish inside this request, so since
-      // batch 26 none of the four reached the index; a lastmod read on an earlier request is used when we have one, else the data date
       let ok = MEMO['__ext' + x];
       if ((!ok || Date.now() - ok.t > 600000) && B.inner && B.ctx && B.ctx.waitUntil) { MEMO['__ext' + x] = ok = { t: Date.now(), v: ok ? ok.v : null }; B.ctx.waitUntil((async () => { try { const r = await B.inner(x); if (r && r.ok && /xml/.test(r.headers.get('content-type') || '')) { const t = await r.text(); const ds = [...t.matchAll(/<lastmod>(\d{4}-\d{2}-\d{2})/g)].map(m => m[1]).sort(); MEMO['__ext' + x] = { t: Date.now(), v: { last: ds[ds.length - 1] || null, n: (t.match(/<url>/g) || []).length } }; } } catch (e) {} })()); }
       const lmx = (ok && ok.v && ok.v.last) || String(up || '').slice(0, 10);
@@ -578,7 +523,6 @@ async function sitemaps(env, B, name) {
   return new Response(urlset(S[name], S[name].some(i => i.alt), S[name].some(i => i.img)), { headers: XHDR });
 }
 
-// ---------- llms.txt / llms-full.txt: the published file plus live sections ----------
 async function llms(env, B, full) {
   const st = (await file(env, full ? '/llms-full.txt' : '/llms.txt', 60000)) || '# Kolaboro\n';
   const S = stats(B.cases), list = countryList(B), up = B.d.updated, L = [];
@@ -588,7 +532,6 @@ async function llms(env, B, full) {
   L.push('', '## Buying off-plan: step-by-step guides by place (8 languages)', '- [All guides](' + SITE + '/guides/buying-off-plan/)');   // n27c
   for (const P of BUY_PLACES) L.push('- [Buying off-plan ' + BUY_PL[P.s].in.en + ': what to check](' + SITE + '/guides/buying-off-plan/' + P.s + '/): company, land, permit, deposit protection and handover record, with official sources and real project pages.');
   L.push('', '## Rankings', '- [Most delayed off-plan projects](' + SITE + '/rankings/most-delayed/): past the first handover date on record, by market.', '- [Most changed promises](' + SITE + '/rankings/changed-promises/): changes found between dated copies of developer pages.', '- [New projects this month](' + SITE + '/new/)', '- [Embeddable widgets](' + SITE + '/embed/widgets/)', '- [Off-plan Delivery Index, monthly frozen editions](' + SITE + '/press/delivery-index/): citeable permalinks with CSV');
-  // n31s (item 218): pages added on 17 and 18 November 2026 (8 languages unless marked English)
   L.push('', '## New pages (17 and 18 November 2026)', '- [Contract and brochure reader](' + SITE + '/tools/contract-reader/): rule-based highlights of handover date, penalty, escrow, payment schedule, governing law and cancellation in a PDF, in the browser, nothing uploaded.',
     '- [Handover slippage by market](' + SITE + '/methods/handover-slippage/): months past the first handover date on record, median and quartiles, sample size and method; data at ' + SITE + '/api/v1/slippage', '- [Tamper-evident daily dataset](' + SITE + '/data/snapshots/): SHA-256 hash chain of each daily snapshot with an in-browser verifier.',
     '- [API v1 docs and playground](' + SITE + '/api/docs/) and [Kolaboro for developers](' + SITE + '/docs/): API, MCP server, widget, SDKs, with curl, Python and JavaScript examples.', '- [Data quality](' + SITE + '/engineering/data-quality/): coverage and freshness of each field, by market.',
@@ -596,26 +539,22 @@ async function llms(env, B, full) {
     '- [Figures of the month](' + SITE + '/reports/month/): same address every month.', '- [Glossary](' + SITE + '/glossary/) with real project examples, and [free tools](' + SITE + '/tools/), both now in 8 languages.', '- [Engineering notes](' + SITE + '/engineering/notes/) (English): how overdue handovers are decided, how sitemaps and crawler access are checked.',
     '- Per project: timeline ' + SITE + '/projects/<slug>/timeline/, verification certificate ' + SITE + '/projects/<slug>/certificate/, Markdown version ' + SITE + '/projects/<slug>.md (same as /answers/<slug>.md).', '- Change feed: ' + SITE + '/api/v1/changes?since=<ISO date> and ' + SITE + '/api/v1/changes/feed.json');
   const np = [...B.N.projects.values()], byId = new Map(B.all.map(c => [c.id, c]));
-  // n26i (batch 26): the same named projects with their quick answer in each language, and one file per country
   if (np.length) {
     const cn = new Map(); for (const e of np) { const c = byId.get(e.id); if (c && c.country) cn.set(c.country, (cn.get(c.country) || 0) + 1); }
     L.push('', '## Per language and per country', '- Every named project with the quick answer of its page, in the page language: ' + ['es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'].map(l => '[' + l + '](' + SITE + '/' + l + '/llms.txt)').join(', ') + '; English: ' + SITE + '/llms-full.txt and ' + SITE + '/llms-projects.txt.', '- One answer file per project (quick answer, dated promises, permit, developer, changes, sources): ' + SITE + '/answers/<slug>.md', '- Per country, full answer of every project in one file (English): ' + SITE + '/llms-full/<country>.txt (same country slugs as below)', '- Questions about off-plan projects answered from our data, by market, country and developer: ' + SITE + '/answers/questions.md (JSON: ' + SITE + '/answers/questions.json)', '- Per country (English): ' + [...cn.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).map(([c, n]) => '[' + c + '](' + SITE + '/llms/' + slug(c) + '.txt) ' + n).join(', '));
   }
-  // n27a (batch 27): one answer file per place and per developer, the corrections log for machines, the MCP tools
   if (np.length) {
     const pm = new Map(); for (const e of np) { const c = byId.get(e.id); if (c && c.market) pm.set(c.market, (pm.get(c.market) || 0) + 1); }
     L.push('', '## Answer files per place and per developer', '- One Markdown answer file per place (every named project there with its quick answer, overdue handover dates, permits, rankings): ' + [...pm.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).map(([m, n]) => '[' + m + '](' + SITE + '/answers/place/' + slug(m) + '.md) ' + n).join(', '),
       '- One per developer: ' + SITE + '/answers/developer/<slug>.md (slugs as in /developers/<slug>/; listed under Developers below)', '- Per-project data downloads: ' + SITE + '/api/v1/projects/<slug> (JSON) and ' + SITE + '/api/v1/projects/<slug>.csv (CSV), CC BY 4.0',
       '- Known errors and corrections: ' + SITE + '/corrections/ (also ' + SITE + '/corrections.json and ' + SITE + '/corrections.md)', '- MCP server (read-only, signed answers): ' + SITE + '/mcp with tools search_projects, get_project, project_quick_answer, compare_projects, list_by_handover_year, market_stats, database_stats; docs ' + SITE + '/docs/mcp/');
   }
-  // n33a (batch 33, item 80): the hubs, the open data and the 300 most searched project pages (n27g order), before the full list
   L.push('', '## Hubs', ...[['/projects/', 'All tracked projects, searchable'], ['/developers/', 'Developers, with projects, permits and delivery record'], ['/countries/', 'Country hubs'], ['/m/', 'Market files by place'], ['/rankings/', 'Rankings'], ['/handover/', 'Handover dates by year and place'], ['/handover/overdue/', 'Projects past the handover date on record'], ['/delays/', 'Off-plan delays of the week (same address every week, with an archive of earlier weeks)'], ['/weekly/', 'What changed this week, by place'], ['/new/', 'New projects this month'], ['/reports/', 'Market reports by place'], ['/vs/', 'Side-by-side comparisons'], ['/tools/', 'Free buyer tools'], ['/guides/buying-off-plan/', 'Buying guides by place'], ['/registers/', 'Official registers we read, by country'], ['/glossary/', 'Glossary'], ['/map/', 'Map of all projects'], ['/numbers/', 'Key figures with sources'], ['/press/delivery-index/', 'Off-plan Delivery Index, monthly editions']].map(([p, d]) => '- [' + d + '](' + SITE + p + ')'));
   L.push('', '## Open data (CC BY 4.0)', '- [Data catalog](' + SITE + '/data/): every public dataset with licence, update frequency, size, SHA-256 and download', '- [SQL in the browser](' + SITE + '/data/sql/): versioned Parquet and CSV (projects, claims, markets), data card at ' + SITE + '/data/sql/datacard.json', '- [Daily snapshots with a hash chain](' + SITE + '/data/snapshots/)', '- [API v1](' + SITE + '/api/docs/): ' + SITE + '/api/v1/projects/<slug>, ' + SITE + '/api/v1/changes, change feed ' + SITE + '/api/v1/changes/feed.json', '- [Search all claims and sources](' + SITE + '/claims/search/), [anomaly radar](' + SITE + '/anomalies/), [entity graph](' + SITE + '/graph/entities/), [offline verifier](' + SITE + '/verify/offline/), [build provenance](' + SITE + '/engineering/provenance/), [satellite construction index](' + SITE + '/satellite/construction-index/)');
   try { const T = (await import('./kbx_g27.js')).TOP_IDS, ids = Array.isArray(T) ? T : String(T).split(/\s+/), byPid = new Map(np.map(e => [e.id, e])), top = ids.map(i => byPid.get(i)).filter(e => e && e.loc && !/eco\s*beach|equinox|sumba/i.test(String(e.name))).slice(0, 300);
     if (top.length) { L.push('', '## Most searched project pages (' + top.length + ')'); for (const e of top) L.push('- [' + e.name + '](' + e.loc + ') Answers: ' + SITE + '/answers/' + String(e.loc).replace(/\/$/, '').split('/').pop() + '.md'); } } catch (e) {}
   if (np.length) {
     L.push('', '## Named projects (facts only; each page has a right of reply)');
-    // n24s: the page's quick answer (from /api/seo/urls) when we have it: what, developer, where, handover, permit, transparency score
     for (const e of (full ? np : np.slice(0, 400))) { const c = byId.get(e.id); if (e.summary) { L.push('- [' + e.name + '](' + e.loc + '): ' + e.summary + ' Answers: ' + SITE + '/answers/' + String(e.loc).replace(/\/$/, '').split('/').pop() + '.md'); continue; } if (c && !reviewed(c)) { L.push('- [' + e.name + '](' + e.loc + '): ' + (c.stage || 'off-plan') + ' in ' + place(c) + ', ' + c.country + '; not yet reviewed by Kolaboro.'); continue; } const lm = c && lateMonths(B, c); L.push('- [' + e.name + '](' + e.loc + ')' + (c ? ': ' + (c.stage || 'off-plan') + ' in ' + place(c) + ', ' + c.country + (e.developer ? ', developer ' + e.developer : '') + '; ' + c.score + '/6 buyer checks public, ' + (c.vscore || 0) + ' confirmed' + (c.done ? '; handover advertised ' + c.done : '') + (lm && lm.late > 0 ? '; ' + lm.late + ' months past the first handover date on record' : '') + '; checked ' + c.checked + '.' : (e.summary ? ': ' + e.summary : ''))); }
     if (!full && np.length > 400) L.push('- ' + (np.length - 400) + ' more in ' + SITE + '/llms-full.txt and ' + SITE + '/sitemap_index.xml');
     const dv = B.N.developers; if (dv.length) { L.push('', '## Developers'); for (const e of dv) L.push('- [' + (e.name || e.loc) + '](' + e.loc + ')' + (e.summary ? ': ' + e.summary : '') + ' Answers: ' + SITE + '/answers/developer/' + String(e.loc).replace(/\/$/, '').split('/').pop() + '.md'); }
@@ -624,10 +563,6 @@ async function llms(env, B, full) {
   return new Response(live.replace(/\s+$/, '') + '\n' + L.join('\n') + '\n', { headers: { 'content-type': 'text/plain; charset=utf-8', 'cache-control': 'public, max-age=600' } });
 }
 
-// ---------- measurement ----------
-// n39 t3 (25 Nov 2026): structured data of every page template read live and checked: each JSON-LD block parses, has the schema.org
-// context and a @type on every node, no Review, AggregateRating or ClaimReview anywhere, the page node's url equals the canonical,
-// breadcrumb positions run 1..n with a name, and inLanguage matches the page language. Memo 10 minutes (17 pages, about 2 MB read).
 const SD_PAGES = ['/', '/es/', '/ar/', '/projects/emaar-golf-vale/', '/fr/projects/emaar-golf-vale/', '/projects/emaar-golf-vale/record/', '/developers/emaar-properties/', '/m/dubai/', '/de/m/dubai/', '/countries/spain/', '/rankings/most-delayed/', '/new/', '/data/', '/data/delays/', '/glossary/', '/engineering/', '/yc/'];
 let SDM = null;
 async function sdLive() {
@@ -667,14 +602,12 @@ async function pSeo(env, B) {
   if (audit) {
     const s = audit.summary;
     body += h2('crawl', 'Crawl audit') + '<p class="muted">Crawler: tools/kolaboro-seo/audit.py on main (user agent KolaboroSEOAudit/1.0). It fetches every sitemap URL with GET and HEAD and checks status codes, canonicals, hreflang reciprocity and JSON-LD.</p><div class="sx-kv">' + [['crawled', 'URLs crawled'], ['ok_200', 'answered 200'], ['indexable', 'indexable (200, self-canonical, not noindex)'], ['schema_valid_pages', 'pages with valid JSON-LD'], ['schema_errors', 'JSON-LD errors'], ['head_mismatch', 'HEAD differs from GET'], ['canonical_mismatch', 'canonical points elsewhere'], ['hreflang_errors', 'hreflang errors'], ['redirects', 'sitemap URLs that redirect'], ['errors_4xx_5xx', '4xx or 5xx'], ['image_sitemap_images', 'images in the image sitemap'], ['image_errors', 'image sitemap errors'], ['lastmod_future', 'lastmod dates in the future']].filter(([k]) => s[k] != null).map(([k, t]) => '<div><b>' + fmt(s[k]) + '</b><span>' + t + '</span></div>').join('') + '</div>';
-    // n29t (items 50, 36): coverage per sitemap (listed, crawled, 200, indexable, canonical elsewhere, noindex) and the orphan check
     if (audit.coverage) body += '<h3 id="coverage">Coverage by sitemap</h3>' + tableWrap(['Sitemap', 'Listed', 'Crawled', 'Answered 200', 'Indexable', 'Canonical elsewhere', 'Noindex', 'Not 200'], Object.entries(audit.coverage).map(([k, c]) => '<tr><td>' + esc(k) + '</td><td>' + fmt(c.listed) + '</td><td>' + fmt(c.crawled) + '</td><td>' + fmt(c.ok_200) + '</td><td>' + fmt(c.indexable) + '</td><td>' + fmt(c.canonical_elsewhere) + '</td><td>' + fmt(c.noindex) + '</td><td>' + fmt(c.not_200) + '</td></tr>')) + '<p class="muted">Translated project and developer sitemaps are sampled, so "crawled" is lower than "listed" there.</p>';
     if (audit.internal_links) { const il = audit.internal_links; body += '<h3 id="orphans">Orphan pages</h3><p>' + fmt(il.judged) + ' sitemap pages judged: <b>' + fmt(s.orphans || 0) + '</b> that no crawled page links to, ' + fmt(s.weakly_linked || 0) + ' linked from exactly one page. ' + esc(il.method || '') + (il.not_judged && il.not_judged.length ? ' Not judged (sampled): ' + esc(il.not_judged.join(', ')) + '.' : '') + '</p>' + ((il.orphans || []).length ? '<details><summary>Orphan pages (' + fmt(il.orphans.length) + ')</summary><ul class="sx-l">' + il.orphans.slice(0, 200).map(x => '<li><a href="' + esc(x.replace(SITE, '')) + '">' + esc(x.replace(SITE, '')) + '</a></li>').join('') + '</ul></details>' : ''); }
     else body += '<h3 id="orphans">Orphan pages</h3><p>The weekly crawl counts, for every sitemap page, how many crawled pages link to it; the first run with this check has not been published yet.</p>';
     if ((audit.problems || []).length) body += '<h3>Open problems (first 40)</h3><ul class="sx-l">' + audit.problems.slice(0, 40).map(p => '<li><code>' + esc(p.url.replace(SITE, '')) + '</code>: ' + esc(p.issue) + '</li>').join('') + '</ul>';
     if ((audit.history || []).length) body += '<h3>History</h3>' + tableWrap(['Run', 'Crawled', 'Indexable', 'Valid schema', 'Problems'], audit.history.slice(-14).reverse().map(h => '<tr><td>' + esc(h.at) + '</td><td>' + h.crawled + '</td><td>' + h.indexable + '</td><td>' + h.schema_valid_pages + '</td><td>' + h.problems + '</td></tr>'));
   }
-  // n26i (batch 26): the daily sample check (tools/kolaboro-seo/daily.py): structured data and internal 404s / redirects
   body += h2('daily', 'Daily sample check: structured data, 404s and redirects');
   if (daily && daily.summary) {
     const d = daily.summary;
@@ -685,7 +618,6 @@ async function pSeo(env, B) {
     if ((daily.history || []).length > 1) body += '<h3>Last runs</h3>' + tableWrap(['Run', 'Pages', 'Passed', 'Links', 'Broken', 'Redirects'], daily.history.slice(-14).reverse().map(x => '<tr><td>' + esc(x.at) + '</td><td>' + x.pages + '</td><td>' + x.pages_ok + '</td><td>' + x.links_checked + '</td><td>' + x.broken + '</td><td>' + x.redirects + '</td></tr>'));
   } else body += '<p>The first daily run has not been published yet. It runs every day after the IndexNow job (tools/kolaboro-seo/daily.py on main) and writes <code>/data/seo-daily.json</code>.</p>';
   if (lh && Array.isArray(lh.runs)) { const rows = lh.runs.filter(r => r.form_factor === 'mobile'); const over = rows.filter(r => (r.metrics || {}).lcp_ms >= 2500 || (r.metrics || {}).cls >= 0.1 || (r.metrics || {}).tbt_ms >= 200).length; body += h2('cwv', 'Core Web Vitals budget (lab, Lighthouse, mobile)') + '<p>Budget per page: LCP under 2,500 ms, CLS under 0.1, TBT under 200 ms (lab stand-in for INP). ' + (rows.length - over) + ' of ' + rows.length + ' key pages are within budget. Source: <a href="/data/lighthouse.json">/data/lighthouse.json</a>, run ' + esc(String(lh.generated || '').slice(0, 16).replace('T', ' ')) + ' UTC. Real-user figures: <a href="/engineering/speed/">speed</a>.</p>' + tableWrap(['Page', 'Performance', 'LCP', 'CLS', 'TBT', 'Budget'], rows.map(r => { const m = r.metrics || {}, ok = m.lcp_ms < 2500 && m.cls < 0.1 && m.tbt_ms < 200; return '<tr><td><a href="' + esc(r.page) + '">' + esc(r.page) + '</a></td><td>' + esc((r.scores || {}).performance) + '</td><td>' + fmt(m.lcp_ms) + ' ms</td><td>' + m.cls + '</td><td>' + fmt(m.tbt_ms) + ' ms</td><td>' + (ok ? 'within' : 'over') + '</td></tr>'; })); }
-  // batch 15: true lastmod, image sitemap, crawl rules
   const T = B.T;
   if (T) {
     const ds = [...T.project.values()].sort(), today = new Date().toISOString().slice(0, 10), wk = new Date(Date.now() - 7 * 864e5).toISOString().slice(0, 10);
@@ -697,7 +629,6 @@ async function pSeo(env, B) {
   body += h2('images', 'Image sitemap') + '<p><a href="/sitemaps/images.xml">/sitemaps/images.xml</a> lists ' + fmt(cnt.images || 0) + ' English pages with their images: every named project and developer page with its 1200 x 630 facts card and, where we hold one, the monthly Sentinel-2 satellite strip, plus the static pages that carry their own share image. Each card is also an <code>ImageObject</code> (primaryImageOfPage) in the page\'s JSON-LD.</p>';
   body += await sdSection();   // n39 t3
   body += h2('hygiene', 'Crawl rules') + '<ul class="sx-l"><li>One URL per page: trailing slash, lower case; <code>/p/&lt;id&gt;/</code>, <code>/projects/x</code> and <code>index.html</code> answer one 301 to the final URL (no chains).</li><li>Pages reached with a functional query (<code>?q=</code>, <code>?sort=</code>, <code>?lang=</code> ...) answer <code>X-Robots-Tag: noindex, follow</code>; tracking-only queries (<code>utm_*</code>, <code>gclid</code>, <code>fbclid</code>) keep the canonical as the only signal.</li><li><a href="/robots.txt">robots.txt</a> allows every search and answer-engine crawler (Googlebot, Bingbot, GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot, Applebot and others) on public pages.</li><li>Structured data on named pages: WebPage or ProfilePage, Organization, Residence or ApartmentComplex with GeoCoordinates where the location is public, Dataset, FAQPage, BreadcrumbList, ImageObject. Never Review, AggregateRating or ClaimReview.</li><li>Since 20 Nov 2026: every <code>/api/</code> answer carries <code>X-Robots-Tag: noindex</code>; old query addresses (<code>/p/?id=</code>, <code>/m/?market=</code>, translated <code>/ask-developer/?id=</code>) answer one 301 to the clean page, and an id we do not hold answers a real 404; links to addresses with a query string carry <code>rel="nofollow"</code>; robots.txt closes <code>/api/kb/</code>, <code>/k/</code> (except scripts, styles, fonts and images) and, for search crawlers, <code>/api/x/</code>.</li><li>Crawlers revalidate pages with <code>If-Modified-Since</code> and get a 304 when the page did not change (the edge remembers each page\'s fingerprint).</li><li>hreflang check: <a href="/open/hreflang-check.py">/open/hreflang-check.py</a> (Python standard library) samples every sitemap and checks status, noindex, self-canonical, return links and x-default.</li></ul>';
-  // n33i (batch 33, item 23): the weekly indexing log (Search Console counts only) and the URL lists behind each validation request
   try {
     const il = await file(env, '/data/seo-index-log.json'), vl = await file(env, '/data/seo-validation.json'), pr = await file(env, '/data/seo-priority.json');
     if (il && (il.weeks || []).length) {
@@ -712,17 +643,13 @@ async function pSeo(env, B) {
   return render({ path: '/engineering/seo/', title: 'Search and indexation: sitemaps, crawl audit, structured data | Kolaboro engineering', h1: 'Search and indexation', lead: 'How much of kolaboro.com search engines and answer engines can find, measured, not estimated.', desc: fmt(total) + ' URLs in the sitemaps; crawl audit of status codes, canonicals, hreflang and structured data; Core Web Vitals budget; IndexNow submissions.', updated: (audit && audit.generated_at || B.d.updated).slice(0, 10), crumbs: [['Kolaboro', '/'], ['Engineering', '/engineering/'], ['Search and indexation', '/engineering/seo/']], body });
 }
 
-// n26i: sitemap URL counts for /numbers/ (the same figures /engineering/seo/ shows)
 export async function sitemapStats(env, inner) { const B = await base(env, inner); return sitemaps(env, B, 'stats'); }
 
-// ---------- entry ----------
 export async function handle(req, u, env, ctx, shell, inner) {
   const p = u.pathname;
   if (p === '/' + INDEXNOW_KEY + '.txt') return new Response(INDEXNOW_KEY, { headers: { 'content-type': 'text/plain; charset=utf-8', 'cache-control': 'public, max-age=86400' } });
   if (p === '/api/seo/lastmod') return lastmodRoute(env);   // batch 15: true lastmod state (published as /data/lastmod.json by the SEO workflow)
   if (/^\/(countries|rankings|vs|new|embed\/(delay|project|widgets)|engineering\/seo|press\/delivery-index)(\/[^?#.]*)?$/.test(p) && !p.endsWith('/')) return new Response(null, { status: 301, headers: { location: p + '/' + u.search } });
-  // batch 15 (s15b): hub and guide pages are cached at the edge per deploy (every data publish is a deploy), so a crawler gets the
-  // HTML without the data join (TTFB). Only clean URLs; a query string always renders fresh.
   const ckey = req.method === 'GET' && (!u.search || [...u.searchParams.keys()].every(k => /^(utm_[a-z_]+|gclid|gbraid|wbraid|fbclid|msclkid|mc_[a-z]+|igshid|ref|_ga)$/i.test(k))) && env && env.CF_PAGES_COMMIT_SHA && /^\/(countries|rankings|vs|new|press\/delivery-index|embed\/widgets)\//.test(p) && typeof caches !== 'undefined' ? new Request(SITE + '/__seo_html/v2/' + env.CF_PAGES_COMMIT_SHA + p) : null;
   if (ckey) { try { const hit = await caches.default.match(ckey); if (hit) { const h = new Headers(hit.headers); h.set('x-seo-cache', 'hit'); h.set('cache-control', 'no-cache'); return new Response(hit.body, { status: hit.status, headers: h }); } } catch (e) {} }
   let B; try { B = await base(env, inner); } catch (e) { return new Response('Data temporarily unavailable', { status: 503, headers: { 'retry-after': '60', 'content-type': 'text/plain' } }); }
@@ -760,5 +687,4 @@ export async function handle(req, u, env, ctx, shell, inner) {
   return new Response(html, { status: 200, headers: h2 });
 }
 export { sitemaps, countryList, hubUrls };
-// n26y (batch 26): number of URLs in the sitemaps built here (the /progress/ page adds the sitemaps other modules publish)
 export async function sitemapTotal(env, inner) { const B = await base(env, inner); const c = await sitemaps(env, B, 'stats'); return Object.values(c).reduce((a, b) => a + b, 0); }
