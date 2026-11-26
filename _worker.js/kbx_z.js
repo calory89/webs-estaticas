@@ -1,4 +1,5 @@
 // comments: _notes/kolaboro-worker-comments.txt
+const $q = TB.kbx_z__q, $s = TB.kbx_z__s, $t = TB.kbx_z__t;   // n40 k46: short names for this module's string tables (strings in /data/i18n/k19s.json, k17s.json, k46s.json)
 import * as KB from './kolaboro.js';
 import { TB } from './kbx_strings.js';
 const { json, rpc, sha, signBody, openLoad } = KB;
@@ -10,40 +11,40 @@ const LIVE_PER_MINUTE = 60, PAGE_DEFAULT = 100, PAGE_MAX = 500;
 const CHECKS = [['permit', 'permit_public'], ['escrow', 'deposit_protection'], ['progress', 'progress'], ['plans', 'plans'], ['record', 'track_record'], ['returns_ok', 'no_guaranteed_returns']];
 const CORS = { 'access-control-allow-origin': '*', 'access-control-allow-methods': 'GET, OPTIONS', 'access-control-allow-headers': 'x-api-key, content-type, if-none-match',
 'access-control-expose-headers': 'x-kolaboro-signature, x-kolaboro-key-id, x-kolaboro-dataset-sha256, x-ratelimit-limit, x-ratelimit-remaining, x-ratelimit-burst-limit, x-ratelimit-burst-remaining, x-kolaboro-feed-version' };
-const ipOf = req => { const ip = req.headers.get('cf-connecting-ip') || 'x'; return ip.includes(':') ? ip.split(':').slice(0, 4).join(':') + '::/64' : ip; };
-function plain(o, s = 200, extra) { return new Response(JSON.stringify(o, null, 1), { status: s, headers: Object.assign({ 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' }, CORS, extra || {}) }); }
+const ipOf = req => { const ip = req.headers.get($q.a) || 'x'; return ip.includes(':') ? ip.split(':').slice(0, 4).join(':') + '::/64' : ip; };
+function plain(o, s = 200, extra) { return new Response(JSON.stringify(o, null, 1), { status: s, headers: Object.assign({ 'content-type': $q.b, 'cache-control': $q.c }, CORS, extra || {}) }); }
 export async function handle(req, u, env, ctx) {
 const p = u.pathname.replace(/\/+$/, '');
-if (req.method === 'OPTIONS') return new Response(null, { status: 204, headers: CORS });
-if (req.method !== 'GET' && req.method !== 'HEAD') return plain({ error: 'method' }, 405);
+if (req.method === $q.d) return new Response(null, { status: 204, headers: CORS });
+if (req.method !== 'GET' && req.method !== 'HEAD') return plain({ error: $q.e }, 405);
 try {
-if (p === '/api/x/z' || p === '/api/x/z/feed') return plain(index());
-if (p === '/api/x/z/feed/schema.json' || p === '/api/x/z/feed/schema') return plain(SCHEMA, 200, { 'content-type': TB.kbx_z__t.k0, 'cache-control': 'public, max-age=3600' });
-if (p === '/api/x/z/feed/status') return plain(await status(env));
-if (p === '/api/x/z/feed/projects' || p === '/api/x/z/feed/changes') return await feed(req, u, p, env, ctx);
+if (p === $q.f || p === $q.g) return plain(index());
+if (p === $q.h || p === $q.i) return plain(SCHEMA, 200, { 'content-type': $t.k0, 'cache-control': $q.j });
+if (p === $q.k) return plain(await status(env));
+if (p === $q.l || p === $q.m) return await feed(req, u, p, env, ctx);
 const bm = p.match(/^\/api\/x\/z\/bundle\/([0-9a-fA-F]{64})$/);
 if (bm) return await bundle(bm[1].toLowerCase(), env);
-} catch (e) { return plain({ error: 'server', detail: String(e && e.message || e).slice(0, 120) }, 500); }
-return plain({ error: 'not_found', docs: 'https://kolaboro.com/docs/partners/' }, 404);
+} catch (e) { return plain({ error: $q.n, detail: String(e && e.message || e).slice(0, 120) }, 500); }
+return plain({ error: $q.o, docs: $q.p }, 404);
 }
 function index() {
-return { feed: 'kolaboro-risk-feed', version: VERSION, docs: 'https://kolaboro.com/docs/partners/', schema: TB.kbx_z__t.k1,
-auth: TB.kbx_z__s.k0 + SANDBOX_KEY,
-endpoints: { 'GET /api/x/z/feed/projects': TB.kbx_z__t.k2 + PAGE_MAX + TB.kbx_z__t.k3,
-'GET /api/x/z/feed/changes': TB.kbx_z__t.k4,
-'GET /api/x/z/feed/status': TB.kbx_z__t.k5, 'GET /api/x/z/feed/schema.json': 'JSON Schema of both answers' },
-signature: TB.kbx_z__s.k1 };
+return { feed: $q.q, version: VERSION, docs: $q.p, schema: $t.k1,
+auth: $s.k0 + SANDBOX_KEY,
+endpoints: { 'GET /api/x/z/feed/projects': $t.k2 + PAGE_MAX + $t.k3,
+'GET /api/x/z/feed/changes': $t.k4,
+'GET /api/x/z/feed/status': $t.k5, 'GET /api/x/z/feed/schema.json': $q.r },
+signature: $s.k1 };
 }
 let SRC = { t: 0, v: null };
 async function asset(env, path) {
-try { if (env && env.ASSETS) { const r = await env.ASSETS.fetch(new Request('https://kolaboro.com' + path)); if (r.ok && /json/.test(r.headers.get('content-type') || '')) return await r.json(); } } catch (e) {}
-try { const r = await fetch('https://kolaboro.com' + path, { cf: { cacheTtl: 600, cacheEverything: true } }); if (r.ok && /json/.test(r.headers.get('content-type') || '')) return await r.json(); } catch (e) {}
+try { if (env && env.ASSETS) { const r = await env.ASSETS.fetch(new Request($q.s + path)); if (r.ok && /json/.test(r.headers.get($q.t) || '')) return await r.json(); } } catch (e) {}
+try { const r = await fetch($q.s + path, { cf: { cacheTtl: 600, cacheEverything: true } }); if (r.ok && /json/.test(r.headers.get($q.t) || '')) return await r.json(); } catch (e) {}
 return null;
 }
 async function sources(env) {
 if (SRC.v && Date.now() - SRC.t < 300000) return SRC.v;
 const L = await openLoad();
-const [hz, ot] = await Promise.all([asset(env, '/data/hazards.json'), asset(env, '/data/on-time.json')]);
+const [hz, ot] = await Promise.all([asset(env, $q.u), asset(env, $q.v)]);
 const v = { L, hz: hz && hz.projects ? hz : null, ot: ot && (ot.projects || ot.rows || ot.items) ? ot : null };
 SRC = { t: Date.now(), v }; return v;
 }
@@ -52,7 +53,7 @@ if (!ot) return undefined;
 const P = ot.projects || ot.rows || ot.items;
 let r;
 if (Array.isArray(P)) r = P.find(x => x && (x.id === id || x.project === id)) || null; else r = P && P[id] !== undefined ? P[id] : null;
-if (!r || typeof r !== 'object' || ot.version !== 'on-time-1') return r;
+if (!r || typeof r !== $q.w || ot.version !== $q.x) return r;
 const g = r.g && ot.groups ? ot.groups[r.g] : null;
 return { status: r.s ?? null, first_handover: r.first ?? null, current_handover: r.cur ?? null, months_moved: r.moved ?? null, months_overdue: r.overdue ?? null, months_to_first_handover: r.to_first ?? null,
 estimate: g ? { on_time_pct: g.p ?? null, ci95_low_pct: g.lo ?? null, ci95_high_pct: g.hi ?? null, comparables: g.n ?? null, comparables_on_time: g.k ?? null, basis: g.name || null, level: g.level || null } : null };
@@ -84,99 +85,99 @@ satellite: c.sat ? { status: c.sat.status || null, changed_pct: c.sat.changed_pc
 register: c.register ? { register: c.register.register, item: c.register.item, status: c.register.status, checked: c.register.checked } : null,
 hazards: S.hz ? hazards(S.hz.projects[c.id]) : null,
 last_checked: isoDay(c.checked), page_fingerprint: c.fp && c.fp.sha256 ? { sha256: c.fp.sha256, date: c.fp.date || null } : null,
-url: 'https://kolaboro.com/p/?id=' + encodeURIComponent(c.id) };
+url: $q.y + encodeURIComponent(c.id) };
 if (S.ot) o.on_time = onTimeOf(S.ot, c.id);
 return o;
 }
 function notes(S) {
-const n = { meaning: TB.kbx_z__s.k2,
-hazards: S.hz ? 'From /data/hazards.json (updated ' + S.hz.updated + ', ' + Object.keys(S.hz.projects).length + TB.kbx_z__s.k3 : TB.kbx_z__t.k6 };
-n.on_time = S.ot ? TB.kbx_z__t.k7 + (S.ot.generated || S.ot.updated || 'date not stated') + '). ' + (S.ot.question ? 'Question: ' + S.ot.question + ' ' : '') + TB.kbx_z__s.k4 + (S.ot.bias || '') + TB.kbx_z__t.k8 : TB.kbx_z__s.k5;
+const n = { meaning: $s.k2,
+hazards: S.hz ? $q.z + S.hz.updated + ', ' + Object.keys(S.hz.projects).length + $s.k3 : $t.k6 };
+n.on_time = S.ot ? $t.k7 + (S.ot.generated || S.ot.updated || $q.A) + '). ' + (S.ot.question ? $q.B + S.ot.question + ' ' : '') + $s.k4 + (S.ot.bias || '') + $t.k8 : $s.k5;
 return n;
 }
 const b64u = s => btoa(unescape(encodeURIComponent(s))).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
 const unb64u = s => { try { return decodeURIComponent(escape(atob(String(s).replace(/-/g, '+').replace(/_/g, '/')))); } catch (e) { return null; } };
 async function counter(name, max, ttl) {
-const k = new Request('https://kolaboro.com/__kz_rl/' + name);
+const k = new Request($q.C + name);
 const hit = await caches.default.match(k); const n = hit ? (+(await hit.text()) || 0) : 0;
-return { n, over: n >= max, put: () => caches.default.put(k, new Response(String(n + 1), { headers: { 'cache-control': 'max-age=' + ttl } })) };
+return { n, over: n >= max, put: () => caches.default.put(k, new Response(String(n + 1), { headers: { 'cache-control': $q.D + ttl } })) };
 }
 async function auth(req, ctx, endpoint) {
-const key = (req.headers.get('x-api-key') || '').trim();
+const key = (req.headers.get($q.E) || '').trim();
 if (key === SANDBOX_KEY) {
 const c = await counter('sb/' + encodeURIComponent(ipOf(req)) + '/' + new Date().toISOString().slice(0, 13), SANDBOX_PER_HOUR, 3600);
-if (c.over) return { error: plain({ error: 'rate', limit: SANDBOX_PER_HOUR + TB.kbx_z__t.k9, retry: 'next hour' }, 429) };
+if (c.over) return { error: plain({ error: 'rate', limit: SANDBOX_PER_HOUR + $t.k9, retry: $q.F }, 429) };
 ctx.waitUntil(c.put());
 return { sandbox: true, page: SANDBOX_PAGE, headers: { 'x-ratelimit-limit': String(SANDBOX_PER_HOUR), 'x-ratelimit-remaining': String(SANDBOX_PER_HOUR - c.n - 1) } };
 }
-if (!/^kb_live_[0-9a-f]{40}$/.test(key)) return { error: plain({ error: 'missing_key', how: TB.kbx_z__t.k10 + SANDBOX_KEY, docs: 'https://kolaboro.com/docs/partners/' }, 401) };
+if (!/^kb_live_[0-9a-f]{40}$/.test(key)) return { error: plain({ error: $q.G, how: $t.k10 + SANDBOX_KEY, docs: $q.p }, 401) };
 const h = await sha(key);
 const b = await counter('k/' + h.slice(0, 24) + '/' + new Date().toISOString().slice(0, 16), LIVE_PER_MINUTE, 120);
-if (b.over) return { error: plain({ error: 'rate', limit: LIVE_PER_MINUTE + ' calls per minute per key', retry: 'next minute' }, 429, { 'retry-after': '60' }) };
-let a; try { a = await rpc('kolaboro_k_key_use', { p_wkey: KB.WKEY, p_hash: h, p_endpoint: endpoint }); } catch (e) { return { error: plain({ error: 'keys_unavailable', note: TB.kbx_z__t.k11 }, 503) }; }
+if (b.over) return { error: plain({ error: 'rate', limit: LIVE_PER_MINUTE + $q.H, retry: $q.I }, 429, { 'retry-after': '60' }) };
+let a; try { a = await rpc($q.J, { p_wkey: KB.WKEY, p_hash: h, p_endpoint: endpoint }); } catch (e) { return { error: plain({ error: $q.K, note: $t.k11 }, 503) }; }
 if (!a || a.error) return { error: plain({ error: (a && a.error) || 'db', daily_quota: a && a.daily_quota }, a && a.error === 'quota' ? 429 : 401) };
 ctx.waitUntil(b.put());
 return { sandbox: false, page: PAGE_MAX, prefix: key.slice(0, 12), headers: { 'x-ratelimit-limit': String(a.daily_quota), 'x-ratelimit-remaining': String(a.remaining), 'x-ratelimit-burst-limit': String(LIVE_PER_MINUTE), 'x-ratelimit-burst-remaining': String(LIVE_PER_MINUTE - b.n - 1) } };
 }
 async function feed(req, u, p, env, ctx) {
-const kind = p.endsWith('/projects') ? 'projects' : 'changes';
-const A = await auth(req, ctx, '/api/x/z/feed/' + kind);
+const kind = p.endsWith($q.L) ? $q.M : $q.N;
+const A = await auth(req, ctx, $q.O + kind);
 if (A.error) return A.error;
 const S = await sources(env), cases = (S.L.d.cases || []).slice().sort((a, b) => a.id < b.id ? -1 : a.id > b.id ? 1 : 0);
 const q = u.searchParams, lim = Math.max(1, Math.min(A.page, +q.get('limit') || Math.min(PAGE_DEFAULT, A.page)));
-const now = new Date(), base = { feed: 'kolaboro-risk-feed', version: VERSION, kind, generated_at: now.toISOString(), timestamp: Math.floor(now.getTime() / 1000),
-dataset_sha256: S.L.sha, data_updated: S.L.d.updated, license: TB.kbx_z__t.k12, sandbox: A.sandbox };
+const now = new Date(), base = { feed: $q.q, version: VERSION, kind, generated_at: now.toISOString(), timestamp: Math.floor(now.getTime() / 1000),
+dataset_sha256: S.L.sha, data_updated: S.L.d.updated, license: $t.k12, sandbox: A.sandbox };
 let body;
-if (kind === 'projects') {
+if (kind === $q.M) {
 let pool = cases;
 const ids = (q.get('ids') || '').split(',').map(s => s.trim().toUpperCase()).filter(s => /^[A-Z0-9 -]{3,20}$/.test(s)).slice(0, 100);
 if (ids.length) { const set = new Set(ids); pool = pool.filter(c => set.has(c.id.toUpperCase())); }
-const mk = (q.get('market') || '').toLowerCase(); if (mk) pool = pool.filter(c => (c.market || '').toLowerCase() === mk || (c.country || '').toLowerCase() === mk);
+const mk = (q.get($q.P) || '').toLowerCase(); if (mk) pool = pool.filter(c => (c.market || '').toLowerCase() === mk || (c.country || '').toLowerCase() === mk);
 const total = pool.length;
-if (q.get('cursor')) { const after = unb64u(q.get('cursor')); if (!after || !/^p:/.test(after)) return plain({ error: 'bad_cursor' }, 400); pool = pool.filter(c => c.id > after.slice(2)); }
+if (q.get($q.Q)) { const after = unb64u(q.get($q.Q)); if (!after || !/^p:/.test(after)) return plain({ error: $q.R }, 400); pool = pool.filter(c => c.id > after.slice(2)); }
 const page = pool.slice(0, lim), more = pool.length > lim;
 body = Object.assign(base, { total, count: page.length, next_cursor: more ? b64u('p:' + page[page.length - 1].id) : null, notes: notes(S), projects: page.map(c => risk(c, S)) });
 } else {
 const sinceQ = q.get('since') || '';
-if (sinceQ && !/^\d{4}-\d{2}-\d{2}$/.test(sinceQ)) return plain({ error: 'bad_since', expected: 'YYYY-MM-DD' }, 400);
-const since = sinceQ || '2000-01-01', ev = [];
+if (sinceQ && !/^\d{4}-\d{2}-\d{2}$/.test(sinceQ)) return plain({ error: $q.S, expected: $q.T }, 400);
+const since = sinceQ || $q.U, ev = [];
 for (const c of cases) (c.history || []).forEach((x, i) => { if (x && x.d && x.d >= since) ev.push({ d: x.d, c, i, x }); });
 ev.sort((a, b) => a.d < b.d ? -1 : a.d > b.d ? 1 : a.c.id < b.c.id ? -1 : a.c.id > b.c.id ? 1 : a.i - b.i);
 const total = ev.length; let start = 0;
-if (q.get('cursor')) {
-const after = unb64u(q.get('cursor')); const m = after && after.match(/^c:(\d{4}-\d{2}-\d{2})\|([A-Za-z0-9 -]{3,20})\|(\d{1,4})$/);
-if (!m) return plain({ error: 'bad_cursor' }, 400);
+if (q.get($q.Q)) {
+const after = unb64u(q.get($q.Q)); const m = after && after.match(/^c:(\d{4}-\d{2}-\d{2})\|([A-Za-z0-9 -]{3,20})\|(\d{1,4})$/);
+if (!m) return plain({ error: $q.R }, 400);
 const key = [m[1], m[2], +m[3]]; start = ev.findIndex(e => e.d > key[0] || (e.d === key[0] && (e.c.id > key[1] || (e.c.id === key[1] && e.i > key[2])))); if (start < 0) start = ev.length;
 }
 const page = ev.slice(start, start + lim), more = start + lim < ev.length;
 const out = [];
 for (const e of page) out.push({ id: 'chg_' + (await sha(e.c.id + '|' + e.d + '|' + e.i + '|' + e.x.f)).slice(0, 20), date: e.d, project: e.c.id, market: e.c.market, field: e.x.f,
-from: e.x.from === undefined ? null : e.x.from, to: e.x.to === undefined ? null : e.x.to, url: 'https://kolaboro.com/p/?id=' + encodeURIComponent(e.c.id) });
+from: e.x.from === undefined ? null : e.x.from, to: e.x.to === undefined ? null : e.x.to, url: $q.y + encodeURIComponent(e.c.id) });
 const last = page[page.length - 1];
 body = Object.assign(base, { since, total, count: out.length, next_cursor: more && last ? b64u('c:' + last.d + '|' + last.c.id + '|' + last.i) : null,
-notes: { granularity: TB.kbx_z__s.k6 }, changes: out });
+notes: { granularity: $s.k6 }, changes: out });
 }
 const text = JSON.stringify(body, null, 1);
-const h = Object.assign({ 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store', 'x-kolaboro-dataset-sha256': S.L.sha, 'x-kolaboro-feed-version': VERSION }, CORS, A.headers);
-try { const sg = await signBody(env, text); if (sg) { h['x-kolaboro-signature'] = sg; h['x-kolaboro-key-id'] = (env && env.KB_SIGN_KID) || 'kb'; } else h['x-kolaboro-signature-status'] = 'signing key not installed'; } catch (e) { h['x-kolaboro-signature-status'] = 'signing failed'; }
+const h = Object.assign({ 'content-type': $q.b, 'cache-control': $q.c, 'x-kolaboro-dataset-sha256': S.L.sha, 'x-kolaboro-feed-version': VERSION }, CORS, A.headers);
+try { const sg = await signBody(env, text); if (sg) { h[$q.V] = sg; h[$q.W] = (env && env.KB_SIGN_KID) || 'kb'; } else h[$q.X] = $q.Y; } catch (e) { h[$q.X] = $q.Z; }
 return new Response(text, { status: 200, headers: h });
 }
 async function status(env) {
   const S = await sources(env); let keys = null;
-  try { const r = await fetch('https://kolaboro.com/api/x/k/keys/status'); keys = r.ok ? await r.json() : null; } catch (e) {}
-  return { feed: 'kolaboro-risk-feed', version: VERSION, checked_at: new Date().toISOString(), data_updated: S.L.d.updated, dataset_sha256: S.L.sha, projects: (S.L.d.cases || []).length,
-    sources: { dataset: '/data/bali-cases.json', hazards: S.hz ? { file: '/data/hazards.json', updated: S.hz.updated, projects: Object.keys(S.hz.projects).length } : null, on_time: S.ot ? { file: '/data/on-time.json', generated: S.ot.generated || S.ot.updated || null, version: S.ot.version || null } : null },
+  try { const r = await fetch($q.aa); keys = r.ok ? await r.json() : null; } catch (e) {}
+  return { feed: $q.q, version: VERSION, checked_at: new Date().toISOString(), data_updated: S.L.d.updated, dataset_sha256: S.L.sha, projects: (S.L.d.cases || []).length,
+    sources: { dataset: $q.ab, hazards: S.hz ? { file: $q.u, updated: S.hz.updated, projects: Object.keys(S.hz.projects).length } : null, on_time: S.ot ? { file: $q.v, generated: S.ot.generated || S.ot.updated || null, version: S.ot.version || null } : null },
     signing: !!(env && env.KB_SIGN_KEY), live_keys_open: keys ? !!keys.open : null,
-    limits: { sandbox: { key: SANDBOX_KEY, per_ip_per_hour: SANDBOX_PER_HOUR, page_max: SANDBOX_PAGE }, live: { per_key_per_minute: LIVE_PER_MINUTE, per_key_per_day: keys && keys.plans ? (keys.plans[0] || {}).daily_quota : null, page_max: PAGE_MAX, note: 'The daily quota is shared with the metered open API (/api/x/k/m/*) for the same key.' } } };
+    limits: { sandbox: { key: SANDBOX_KEY, per_ip_per_hour: SANDBOX_PER_HOUR, page_max: SANDBOX_PAGE }, live: { per_key_per_minute: LIVE_PER_MINUTE, per_key_per_day: keys && keys.plans ? (keys.plans[0] || {}).daily_quota : null, page_max: PAGE_MAX, note: $q.ac } } };
 }
 async function bundle(h, env) {
 let pdf = null, st = null;
-try { pdf = await rpc('kolaboro_pdf_lookup', { p_sha256: h }); } catch (e) {}
-try { st = await rpc('kolaboro_stamp_get', { p_hash: h }); } catch (e) {}
+try { pdf = await rpc($q.ad, { p_sha256: h }); } catch (e) {}
+try { st = await rpc($q.ae, { p_hash: h }); } catch (e) {}
 return plain({ sha256: h, case_pdf: pdf && pdf.registered ? { registered: true, case: pdf.case || null, created_at: pdf.created_at || null, chain_head: pdf.chain_head || null } : { registered: false },
-timestamp: st ? { created_at: st.created_at, bitcoin_block: st.bitcoin_block || null, calendars: st.calendars || [], source: st.source || null, proof: TB.kbx_z__t.k13 + h } : null,
+timestamp: st ? { created_at: st.created_at, bitcoin_block: st.bitcoin_block || null, calendars: st.calendars || [], source: st.source || null, proof: $t.k13 + h } : null,
 genuine: !!((pdf && pdf.registered) || st),
-note: TB.kbx_z__s.k7 }, 200, { 'cache-control': 'public, max-age=60' });
+note: $s.k7 }, 200, { 'cache-control': $q.af });
 }
 const nul = t => ({ type: [t, 'null'] });
 const SCHEMA = {

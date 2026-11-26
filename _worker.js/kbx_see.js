@@ -1,4 +1,5 @@
 // comments: _notes/kolaboro-worker-comments.txt
+const $q = TB.kbx_see__q, $s = TB.kbx_see__s, $t = TB.kbx_see__t;   // n40 k46: short names for this module's string tables (strings in /data/i18n/k19s.json, k17s.json, k46s.json)
 import { TB } from './kbx_strings.js';
 const IF = (globalThis.__kbIF = globalThis.__kbIF || {}); function sf(k, f) { if (IF[k]) return IF[k]; const p = f(); IF[k] = p; const d = () => { if (IF[k] === p) delete IF[k]; }; p.then(d, d); return p; }   // n40 d12
 const ORIGIN = 'https://kolaboro.com';
@@ -8,26 +9,25 @@ const loadOne = (env, name) => sf('see:' + name, () => loadOne0(env, name));
 async function loadOne0(env, name) {
 const m = MEMO[name]; if (m && (m.a || Date.now() - m.t < 600000)) return m.v;
 let r = null, a = false;
-try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/' + name)); a = !!(r && r.ok); } catch (e) { r = null; }
-if (!r || !r.ok) { try { r = await fetch(ORIGIN + '/data/' + name + '?w=1', { cf: { cacheTtl: 300, cacheEverything: true } }); } catch (e) { r = null; } }
+try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + $q.a + name)); a = !!(r && r.ok); } catch (e) { r = null; }
+if (!r || !r.ok) { try { r = await fetch(ORIGIN + $q.b + name + '?w=1', { cf: { cacheTtl: 300, cacheEverything: true } }); } catch (e) { r = null; } }
 const v = r && r.ok ? await r.json().catch(() => null) : null;
 MEMO[name] = { t: Date.now(), v, a: a && v != null }; return v;
 }
 export async function seeData(env) {
-const [ph, d3, si] = await Promise.all([loadOne(env, 'street-photos.json'), loadOne(env, 'site-3d.json'), loadOne(env, 'media-i18n.json')]);
+const [ph, d3, si] = await Promise.all([loadOne(env, $q.c), loadOne(env, $q.d), loadOne(env, $q.e)]);
 if (si && si.see) S = si.see;
 return { ph, d3, v: ((ph && ph.updated) || '') + '/' + ((d3 && d3.updated) || '') };
 }
 export const accM = dec => dec >= 5 ? 15 : dec === 4 ? 30 : 100;
 let S = { en: {} };
-const t = (lang, k, v) => { const s = (S[lang] && S[lang][k]) || S.en[k] || ''; return v && typeof s === 'string' ? s.replace(/\{(\w+)\}/g, (m, x) => v[x] != null ? v[x] : m) : s; };
-const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const t = (lang, k, v) => { const s = (S[lang] && S[lang][k]) || S.en[k] || ''; return v && typeof s === $q.f ? s.replace(/\{(\w+)\}/g, (m, x) => v[x] != null ? v[x] : m) : s; };
+const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': $q.g, "'": '&#39;' }[c]));
 const phk = (l, n) => { const a = n % 10, b = n % 100; return n === 1 ? 'ph1' : l === 'ru' && a === 1 && b !== 11 ? 'phr' : l === 'ar' ? (n === 2 ? 'ph2' : b >= 3 && b <= 10 ? 'phn' : 'ph11') : 'phn'; };
 export const seeToc = lang => t(lang, 'toc');
 export const seeHeading = lang => t(lang, 'h');
 const SRCN = { panoramax: 'Panoramax', kartaview: 'KartaView', commons: 'Wikimedia Commons' };
 const adiff = (a, b) => { const d = Math.abs(a - b) % 360; return d > 180 ? 360 - d : d; };
-const dtf = (L, o) => { const c = (globalThis.__kbFmt = globalThis.__kbFmt || {}), k = 'd' + L + JSON.stringify(o || 0); return c[k] || (c[k] = new Intl.DateTimeFormat(L, o)); };
 const nmf = (L, o) => { const c = (globalThis.__kbFmt = globalThis.__kbFmt || {}), k = 'n' + L + JSON.stringify(o || 0); return c[k] || (c[k] = new Intl.NumberFormat(L, o)); };
 export function seeHtml(sd, id, lang, fd, name) {
 if (!sd) return '';
@@ -35,44 +35,44 @@ const php = sd.ph && sd.ph.projects && sd.ph.projects[id], d3 = sd.d3 && sd.d3.p
 if (!php && !d3) return '';
 const num = v => { try { return nmf(lang === 'en' ? 'en-GB' : lang).format(v); } catch (e) { return String(v); } };
 const lat = d3 ? d3.lat : null, lng = d3 ? d3.lng : null, dec = d3 ? d3.dec : 3, acc = accM(dec);
-let h = TB.kbx_see__s.CSS + '<div class="ksee">';
+let h = $s.CSS + $q.h;
 if (php) {
 h += '<h3>' + esc(t(lang, 'ph')) + '</h3>';
 const L = php.ph || [];
-if (!L.length) { const ok = ['panoramax', 'kartaview', 'commons'].filter(k => !(php.errors || []).includes(k)).map(k => SRCN[k]); if (ok.length) h += '<p>' + esc(t(lang, 'ph0', { d: fd(php.checked), s: ok.join(', ') })) + '</p>'; }
+if (!L.length) { const ok = [$q.i, $q.j, $q.k].filter(k => !(php.errors || []).includes(k)).map(k => SRCN[k]); if (ok.length) h += '<p>' + esc(t(lang, 'ph0', { d: fd(php.checked), s: ok.join(', ') })) + '</p>'; }
 else {
-h += '<p class="ki">' + esc(t(lang, phk(lang, L.length), { n: num(L.length) })) + '</p><ul class="ksee-ph">' + L.map((x, i) => {
+h += $q.l + esc(t(lang, phk(lang, L.length), { n: num(L.length) })) + $q.m + L.map((x, i) => {
 const sn = SRCN[x.src] || x.src, alt = sn + (x.date ? ', ' + fd(x.date) : '') + ', ' + num(x.d) + ' m' + (name ? ', ' + name : '');
-const ex = [x.az != null && x.to != null && adiff(x.az, x.to) <= 60 ? t(lang, 'face') : '', x.pano ? t(lang, 'pano') : '', x.src === 'commons' ? t(lang, 'commons') : ''].filter(Boolean).join(', ');
-return '<li><a class="im" href="' + esc(x.page) + TB.kbx_see__t.k0 + encodeURIComponent(id) + '/' + i + '.jpg?v=' + encodeURIComponent(sd.ph.updated || '') + '" alt="' + esc(alt) + TB.kbx_see__t.k1 +
-'<div class="tx"><b>' + esc(x.date ? t(lang, 'cap', { d: fd(x.date), m: num(x.d) }) : t(lang, 'nod', { m: num(x.d) })) + '</b>' + (ex ? '<span>' + esc(ex) + '</span>' : '') +
-'<span>' + esc(t(lang, 'lic', { l: x.lic })) + (x.lic_url ? ' <a href="' + esc(x.lic_url) + TB.kbx_see__t.k2 + esc(x.lic) + '</a>' : '') + '</span>' +
-'<a class="k-src" href="' + esc(x.page) + TB.kbx_see__t.k3 + esc(t(lang, 'open', { s: sn })) + '</a></div></li>';
+const ex = [x.az != null && x.to != null && adiff(x.az, x.to) <= 60 ? t(lang, 'face') : '', x.pano ? t(lang, 'pano') : '', x.src === $q.k ? t(lang, $q.k) : ''].filter(Boolean).join(', ');
+return $q.n + esc(x.page) + $t.k0 + encodeURIComponent(id) + '/' + i + $q.o + encodeURIComponent(sd.ph.updated || '') + $q.p + esc(alt) + $t.k1 +
+$q.q + esc(x.date ? t(lang, 'cap', { d: fd(x.date), m: num(x.d) }) : t(lang, 'nod', { m: num(x.d) })) + '</b>' + (ex ? $q.r + esc(ex) + $q.s : '') +
+$q.r + esc(t(lang, 'lic', { l: x.lic })) + (x.lic_url ? $q.t + esc(x.lic_url) + $t.k2 + esc(x.lic) + '</a>' : '') + $q.s +
+$q.u + esc(x.page) + $t.k3 + esc(t(lang, 'open', { s: sn })) + $q.v;
 }).join('') + '</ul>';
 }
-h += '<p class="ksat-lim">' + esc(t(lang, 'phlim', { a: acc })) + '</p>';
-if (lat != null) h += '<p class="ksat-lim">' + esc(t(lang, 'other')) + TB.kbx_see__s.k0 + lat + ',' + lng + TB.kbx_see__t.k4 + esc(t(lang, 'gsv')) + TB.kbx_see__t.k5 + lat + '&amp;lng=' + lng + TB.kbx_see__t.k6 + esc(t(lang, 'mpl')) + '</a></li></ul>';
-h += '<p class="ksat-src">' + ['panoramax', 'kartaview', 'commons'].map(k => { const s = sd.ph.sources[k]; return '<a class="src" href="' + esc(s.url) + '" rel="noopener" target="_blank">' + esc(s.name) + '</a>'; }).join(' ') +
-TB.kbx_see__t.k7 + esc(t(lang, 'method')) + ', ' + esc(t(lang, 'upd', { d: fd(php.checked || sd.ph.updated) })) + '</a></p>';
+h += $q.w + esc(t(lang, 'phlim', { a: acc })) + '</p>';
+if (lat != null) h += $q.w + esc(t(lang, 'other')) + $s.k0 + lat + ',' + lng + $t.k4 + esc(t(lang, 'gsv')) + $t.k5 + lat + $q.x + lng + $t.k6 + esc(t(lang, 'mpl')) + $q.y;
+h += $q.z + [$q.i, $q.j, $q.k].map(k => { const s = sd.ph.sources[k]; return $q.A + esc(s.url) + $q.B + esc(s.name) + '</a>'; }).join(' ') +
+$t.k7 + esc(t(lang, $q.C)) + ', ' + esc(t(lang, 'upd', { d: fd(php.checked || sd.ph.updated) })) + $q.D;
 }
 if (d3) {
 const rel = String(sd.d3.release || '').replace(/\.\d+$/, '');
-h += '<h3>' + esc(t(lang, 'd3')) + '</h3><p>' + esc(d3.n ? t(lang, 'd3i', { n: num(d3.n), k: num(d3.n_in) }) : t(lang, 'd3i0', { rel: fd(rel) })) + '</p>' +
-'<div class="ksee-3d" data-id="' + esc(id) + '" data-lat="' + d3.lat + '" data-lng="' + d3.lng + '" data-acc="' + acc + '" data-v="' + esc(sd.d3.updated || '') + '" data-l="' + esc(t(lang, 'd3l')) + '" data-e="' + esc(t(lang, 'd3e')) + '" data-r="' + esc(t(lang, 'reset')) + '">' +
-TB.kbx_see__t.k8 + esc(t(lang, 'd3b')) + TB.kbx_see__t.k9 + esc(t(lang, 'd3s')) + '</span></div>' +
-TB.kbx_see__t.k10 + esc(t(lang, 'd3') + (name ? ': ' + name : '')) + TB.kbx_see__t.k11 + esc(t(lang, 'd3help')) + '</p>' +
-TB.kbx_see__t.k12 + esc(t(lang, 'lgp')) + '</li><li><i class="a"></i>' + esc(t(lang, 'lga', { a: acc, dec })) + '</li><li><i class="c"></i>' + esc(t(lang, 'lgc')) + '</li>' +
-(d3.n ? '<li><i class="k"></i>' + esc(t(lang, 'lgk')) + '</li><li><i class="u"></i>' + esc(t(lang, 'lgu')) + '</li>' : '') + '</ul></div>' +
-'<p class="ksat-lim">' + esc(t(lang, 'd3lim')) + '</p>' +
-'<p class="ksat-src">' + esc(sd.d3.source.attribution) + '. <a class="src" href="' + esc(sd.d3.source.url) + TB.kbx_see__t.k13 + esc(sd.d3.release) + '</a> <a class="src" href="' + esc(sd.d3.source.licence_url) + TB.kbx_see__t.k14 +
-TB.kbx_see__s.k1 +
-TB.kbx_see__s.k2 + ML + '</a>' +
-TB.kbx_see__t.k15 + esc(t(lang, 'method')) + ', ' + esc(t(lang, 'upd', { d: fd(sd.d3.updated) })) + '</a></p>' +
-TB.kbx_see__s.k3 +
-TB.kbx_see__s.k4 +
-TB.kbx_see__s.k5 + ML + TB.kbx_see__s.k6;
+h += '<h3>' + esc(t(lang, 'd3')) + $q.E + esc(d3.n ? t(lang, 'd3i', { n: num(d3.n), k: num(d3.n_in) }) : t(lang, 'd3i0', { rel: fd(rel) })) + '</p>' +
+$q.F + esc(id) + $q.G + d3.lat + $q.H + d3.lng + $q.I + acc + $q.J + esc(sd.d3.updated || '') + $q.K + esc(t(lang, 'd3l')) + $q.L + esc(t(lang, 'd3e')) + $q.M + esc(t(lang, 'reset')) + '">' +
+$t.k8 + esc(t(lang, 'd3b')) + $t.k9 + esc(t(lang, 'd3s')) + $q.N +
+$t.k10 + esc(t(lang, 'd3') + (name ? ': ' + name : '')) + $t.k11 + esc(t(lang, $q.O)) + '</p>' +
+$t.k12 + esc(t(lang, 'lgp')) + $q.P + esc(t(lang, 'lga', { a: acc, dec })) + $q.Q + esc(t(lang, 'lgc')) + '</li>' +
+(d3.n ? $q.R + esc(t(lang, 'lgk')) + $q.S + esc(t(lang, 'lgu')) + '</li>' : '') + $q.T +
+$q.w + esc(t(lang, 'd3lim')) + '</p>' +
+$q.z + esc(sd.d3.source.attribution) + $q.U + esc(sd.d3.source.url) + $t.k13 + esc(sd.d3.release) + $q.V + esc(sd.d3.source.licence_url) + $t.k14 +
+$s.k1 +
+$s.k2 + ML + '</a>' +
+$t.k15 + esc(t(lang, $q.C)) + ', ' + esc(t(lang, 'upd', { d: fd(sd.d3.updated) })) + $q.D +
+$s.k3 +
+$s.k4 +
+$s.k5 + ML + $s.k6;
 }
-return h + '</div>';
+return h + $q.W;
 }
 const VIEWER = `(function(){
 var ML="${ML_CDN}";
@@ -117,54 +117,54 @@ window.kSee3D=function(r){
 })();`;
 export const PATHS = /^\/api\/x\/see\//;
 const H = { 'content-type': 'application/json; charset=utf-8', 'x-content-type-options': 'nosniff', 'access-control-allow-origin': '*' };
-const out = (o, st, cc) => new Response(JSON.stringify(o), { status: st || 200, headers: Object.assign({ 'cache-control': cc || 'no-store' }, H) });
+const out = (o, st, cc) => new Response(JSON.stringify(o), { status: st || 200, headers: Object.assign({ 'cache-control': cc || $q.X }, H) });
 async function thumb(req, sd, id, n, ctx) {
 const rec = sd.ph && sd.ph.projects && sd.ph.projects[id], x = rec && rec.ph && rec.ph[n];
-if (!x || !/^https:\/\//.test(x.thumb || '')) return new Response('not found', { status: 404, headers: { 'cache-control': 'public, max-age=3600' } });
-const ck = new Request(ORIGIN + '/__see_ph/' + encodeURIComponent(id) + '/' + n + '/' + encodeURIComponent(x.src + ':' + x.id + ':' + x.thumb.slice(-48)));
+if (!x || !/^https:\/\//.test(x.thumb || '')) return new Response($q.Y, { status: 404, headers: { 'cache-control': $q.Z } });
+const ck = new Request(ORIGIN + $q.aa + encodeURIComponent(id) + '/' + n + '/' + encodeURIComponent(x.src + ':' + x.id + ':' + x.thumb.slice(-48)));
 try { const hit = await caches.default.match(ck); if (hit) return hit; } catch (e) {}
-const sk = new Request(ck.url + '/stale');
+const sk = new Request(ck.url + $q.ab);
 let r = null, ct = '', buf = null;
 for (let a = 0; a < 2 && !buf; a++) {
 if (a) await new Promise(ok => setTimeout(ok, 600));
-try { r = await fetch(x.thumb, { headers: { 'user-agent': TB.kbx_see__t.UA, accept: TB.kbx_see__t.k16 }, cf: { cacheTtl: 604800, cacheEverything: true }, redirect: 'follow', signal: AbortSignal.timeout(12000) }); } catch (e) { r = null; }
-ct = r && r.headers.get('content-type') || '';
+try { r = await fetch(x.thumb, { headers: { 'user-agent': $t.UA, accept: $t.k16 }, cf: { cacheTtl: 604800, cacheEverything: true }, redirect: $q.ac, signal: AbortSignal.timeout(12000) }); } catch (e) { r = null; }
+ct = r && r.headers.get($q.ad) || '';
 if (r && r.ok && /^image\/(jpeg|png|webp)/.test(ct)) { const b = await r.arrayBuffer(); if (b.byteLength <= 2500000) buf = b; }
 }
 if (!buf) {
-try { const st = await caches.default.match(sk); if (st) { const h = new Headers(st.headers); h.set('x-kb-fallback', 'stale'); h.set('cache-control', 'public, max-age=600'); return new Response(st.body, { status: 200, headers: h }); } } catch (e) {}
-return new Response(TB.kbx_see__s.k7, { status: 200, headers: { 'content-type': 'image/svg+xml', 'cache-control': 'no-store', 'x-kb-fallback': 'placeholder', 'x-content-type-options': 'nosniff', 'content-security-policy': TB.kbx_see__t.k17 } });
+try { const st = await caches.default.match(sk); if (st) { const h = new Headers(st.headers); h.set($q.ae, 'stale'); h.set($q.af, $q.ag); return new Response(st.body, { status: 200, headers: h }); } } catch (e) {}
+return new Response($s.k7, { status: 200, headers: { 'content-type': $q.ah, 'cache-control': $q.X, 'x-kb-fallback': $q.ai, 'x-content-type-options': $q.aj, 'content-security-policy': $t.k17 } });
 }
-const res = new Response(buf, { status: 200, headers: { 'content-type': ct.split(';')[0], 'cache-control': 'public, max-age=604800', 'x-content-type-options': 'nosniff', 'access-control-allow-origin': '*',
-'x-photo-source': x.page, 'x-photo-licence': x.lic, 'content-security-policy': "default-src 'none'" } });
-try { ctx && ctx.waitUntil && ctx.waitUntil(Promise.all([caches.default.put(ck, res.clone()), caches.default.put(sk, new Response(buf.slice(0), { headers: { 'content-type': ct.split(';')[0], 'cache-control': 'public, max-age=2592000', 'x-photo-source': x.page, 'x-photo-licence': x.lic, 'x-content-type-options': 'nosniff', 'access-control-allow-origin': '*', 'content-security-policy': "default-src 'none'" } }))])); } catch (e) {}
+const res = new Response(buf, { status: 200, headers: { 'content-type': ct.split(';')[0], 'cache-control': $q.ak, 'x-content-type-options': $q.aj, 'access-control-allow-origin': '*',
+'x-photo-source': x.page, 'x-photo-licence': x.lic, 'content-security-policy': $q.al } });
+try { ctx && ctx.waitUntil && ctx.waitUntil(Promise.all([caches.default.put(ck, res.clone()), caches.default.put(sk, new Response(buf.slice(0), { headers: { 'content-type': ct.split(';')[0], 'cache-control': $q.am, 'x-photo-source': x.page, 'x-photo-licence': x.lic, 'x-content-type-options': $q.aj, 'access-control-allow-origin': '*', 'content-security-policy': $q.al } }))])); } catch (e) {}
 return res;
 }
 export async function handle(req, u, env, ctx) {
 const p = u.pathname;
-if (req.method !== 'GET' && req.method !== 'HEAD') return out({ error: 'method' }, 405);
+if (req.method !== 'GET' && req.method !== 'HEAD') return out({ error: $q.C }, 405);
 try {
-if (p === '/api/x/see/3d.js') return new Response(VIEWER, { status: 200, headers: { 'content-type': 'text/javascript; charset=utf-8', 'cache-control': 'public, max-age=86400', 'x-content-type-options': 'nosniff' } });
+if (p === $q.an) return new Response(VIEWER, { status: 200, headers: { 'content-type': $q.ao, 'cache-control': $q.ap, 'x-content-type-options': $q.aj } });
 const sd = await seeData(env);
 let m = p.match(/^\/api\/x\/see\/ph\/([A-Za-z0-9-]{3,20})\/([0-9])\.jpg$/);
 if (m) return thumb(req, sd, m[1].toUpperCase(), +m[2], ctx);
 m = p.match(/^\/api\/x\/see\/3d\/([A-Za-z0-9-]{3,20})\/?$/);
 if (m) {
 const id = m[1].toUpperCase(), r = sd.d3 && sd.d3.projects && sd.d3.projects[id];
-if (!r) return out({ id, error: 'no_pin', note: TB.kbx_see__t.k18 }, 404, 'public, max-age=600');
-return out(Object.assign({ id, release: sd.d3.release, updated: sd.d3.updated, radius_m: sd.d3.radius_m, circle_m: sd.d3.circle_m, acc_m: accM(r.dec), unit: sd.d3.unit, source: sd.d3.source }, r), 200, 'public, max-age=3600');
+if (!r) return out({ id, error: $q.aq, note: $t.k18 }, 404, $q.ag);
+return out(Object.assign({ id, release: sd.d3.release, updated: sd.d3.updated, radius_m: sd.d3.radius_m, circle_m: sd.d3.circle_m, acc_m: accM(r.dec), unit: sd.d3.unit, source: sd.d3.source }, r), 200, $q.Z);
 }
 m = p.match(/^\/api\/x\/see\/([A-Za-z0-9-]{3,20})\/?$/);
 if (m) {
 const id = m[1].toUpperCase(), ph = sd.ph && sd.ph.projects && sd.ph.projects[id], r = sd.d3 && sd.d3.projects && sd.d3.projects[id];
-if (!ph && !r) return out({ id, error: 'no_pin', note: TB.kbx_see__t.k19 }, 404, 'public, max-age=600');
+if (!ph && !r) return out({ id, error: $q.aq, note: $t.k19 }, 404, $q.ag);
 const { data } = await import('./kbx_named.js'); const ix = await data(env).catch(() => null); const x = ix && ix.byId.get(id);
-return out({ id, name: x ? x.n : null, url: x ? ORIGIN + '/projects/' + x.s + '/#ground' : null,
+return out({ id, name: x ? x.n : null, url: x ? ORIGIN + $q.ar + x.s + $q.as : null,
 photos: ph ? { checked: ph.checked, radius_m: sd.ph.radius_m, found: ph.found, newest: ph.newest || null,
-items: (ph.ph || []).map((y, i) => ({ source: SRCN[y.src] || y.src, date: y.date, distance_m: y.d, camera_heading: y.az, licence: y.lic, licence_url: y.lic_url, page: y.page, thumbnail: ORIGIN + '/api/x/see/ph/' + id + '/' + i + '.jpg' })),
-sources: sd.ph.sources, method: '/data/street-photos.json' } : null,
-model3d: r ? { pin: { lat: r.lat, lng: r.lng, decimals: r.dec, accuracy_m: accM(r.dec) }, buildings: r.n, touching_150m_circle: r.n_in, release: sd.d3.release, data: ORIGIN + '/api/x/see/3d/' + id } : null }, 200, 'public, max-age=600');
+items: (ph.ph || []).map((y, i) => ({ source: SRCN[y.src] || y.src, date: y.date, distance_m: y.d, camera_heading: y.az, licence: y.lic, licence_url: y.lic_url, page: y.page, thumbnail: ORIGIN + $q.at + id + '/' + i + '.jpg' })),
+sources: sd.ph.sources, method: $q.au } : null,
+model3d: r ? { pin: { lat: r.lat, lng: r.lng, decimals: r.dec, accuracy_m: accM(r.dec) }, buildings: r.n, touching_150m_circle: r.n_in, release: sd.d3.release, data: ORIGIN + $q.av + id } : null }, 200, $q.ag);
 }
-return out({ error: 'not_found', see: ['/api/x/see/<ID>', '/api/x/see/3d/<ID>', '/api/x/see/ph/<ID>/<n>.jpg', '/api/x/see/3d.js'] }, 404);
-} catch (e) { return out({ error: 'server' }, 500); }
+return out({ error: $q.aw, see: [$q.ax, $q.ay, $q.az, $q.an] }, 404);
+} catch (e) { return out({ error: $q.aA }, 500); }
 }

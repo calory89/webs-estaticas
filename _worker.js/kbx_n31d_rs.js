@@ -1,4 +1,6 @@
 // comments: _notes/kolaboro-worker-comments.txt
+import { TB } from './kbx_strings.js';
+const $q = TB.kbx_n31d_rs__q;   // n40 k46: short names for this module's string tables (strings in /data/i18n/k19s.json, k17s.json, k46s.json)
 const RX = /^Latest registered home sales listed on the page \((\d+), ([^)]*?) to ([^)]*?)\): (AED) ([\d,]+) to AED ([\d,]+)/;
 const MEMO = new WeakMap();
 const num = s => +String(s).replace(/,/g, '');
@@ -14,10 +16,9 @@ if (a === pm && (px == null ? b <= pm : px === b)) { r = { n: +m[1], d1: m[2], d
 }
 MEMO.set(x, r); return r;
 }
-export const isRegSale = x => !!regSale(x);
 const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' };
 const nf = (v, l) => { try { return Number(v).toLocaleString(LOC[l] || 'en-GB'); } catch (e) { return String(v); } };
-const dt = (s, l) => { const t = Date.parse(String(s) + ' 12:00 UTC'); if (!isFinite(t)) return s; try { return new Date(t).toLocaleDateString(LOC[l] || 'en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' }); } catch (e) { return s; } };
+const dt = (s, l) => { const t = Date.parse(String(s) + $q.a); if (!isFinite(t)) return s; try { return new Date(t).toLocaleDateString(LOC[l] || 'en-GB', { day: $q.b, month: 'short', year: $q.b, timeZone: 'UTC' }); } catch (e) { return s; } };
 const T = {
 en: { r: 'Registered sales from {a} to {b} (DLD, {d})', r1: 'Registered sale of {a} (DLD, {d})', k: 'Registered sales (DLD)', np: 'Asking price: not published in the pages we read.' },
 es: { r: 'Ventas registradas de {a} a {b} (DLD, {d})', r1: 'Venta registrada de {a} (DLD, {d})', k: 'Ventas registradas (DLD)', np: 'Precio de venta del promotor: no publicado en las páginas que leímos.' },
@@ -33,5 +34,4 @@ export function rsText(lang, r) {
 const m = v => r.cur + ' ' + nf(v, lang), d = r.d1 && r.d1 !== r.d2 ? dt(r.d1, lang) + ' - ' + dt(r.d2, lang) : dt(r.d2, lang);
 return (r.a === r.b ? tt(lang, 'r1') : tt(lang, 'r')).replace('{a}', m(r.a)).replace('{b}', m(r.b)).replace('{d}', d);
 }
-export const rsKey = lang => tt(lang, 'k');
 export const rsNoAsk = lang => tt(lang, 'np');

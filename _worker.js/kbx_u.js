@@ -1,22 +1,23 @@
 // comments: _notes/kolaboro-worker-comments.txt
+const $q = TB.kbx_u__q, $s = TB.kbx_u__s, $t = TB.kbx_u__t;   // n40 k46: short names for this module's string tables (strings in /data/i18n/k19s.json, k17s.json, k46s.json)
 import * as HZ from './kbx_p_hz.js';
 import { TB } from './kbx_strings.js';
 export const PATHS = /^\/api\/x\/u(\/|$)/;
 const CORS = { 'access-control-allow-origin': '*', 'access-control-allow-methods': 'GET, OPTIONS' };
 function out(o, s = 200, maxAge = 0) {
-  return new Response(JSON.stringify(o), { status: s, headers: Object.assign({ 'content-type': 'application/json; charset=utf-8', 'cache-control': maxAge ? 'public, max-age=' + maxAge : 'no-store', 'x-content-type-options': 'nosniff' }, CORS) });
+  return new Response(JSON.stringify(o), { status: s, headers: Object.assign({ 'content-type': $q.a, 'cache-control': maxAge ? $q.b + maxAge : $q.c, 'x-content-type-options': $q.d }, CORS) });
 }
 const UA = { 'user-agent': 'KolaboroClimate/1.0 (+https://kolaboro.com/hazards/)' };
-const ipOf = req => { const a = req.headers.get('cf-connecting-ip') || 'x'; return a.includes(':') ? a.split(':').slice(0, 4).join(':') + '::/64' : a; };
+const ipOf = req => { const a = req.headers.get($q.e) || 'x'; return a.includes(':') ? a.split(':').slice(0, 4).join(':') + '::/64' : a; };
 const hits = new Map();
 async function allow(ctx, key, limit, ttl) {
 const now = Date.now(), a = (hits.get(key) || []).filter(t => now - t < ttl * 1000);
 if (a.length >= limit) return false;
 a.push(now); hits.set(key, a); if (hits.size > 5000) hits.clear();
-const k = new Request('https://kolaboro.com/__rlu/' + encodeURIComponent(key + '/' + Math.floor(now / (ttl * 1000))));
+const k = new Request($q.f + encodeURIComponent(key + '/' + Math.floor(now / (ttl * 1000))));
 const hit = await caches.default.match(k); const n = hit ? (+(await hit.text()) || 0) : 0;
 if (n >= limit) return false;
-const p = caches.default.put(k, new Response(String(n + 1), { headers: { 'cache-control': 'max-age=' + ttl } }));
+const p = caches.default.put(k, new Response(String(n + 1), { headers: { 'cache-control': $q.g + ttl } }));
 if (ctx && ctx.waitUntil) ctx.waitUntil(p.catch(() => {})); else await p.catch(() => {});
 return true;
 }
@@ -32,12 +33,12 @@ if (!a || !b || !(lat >= -60 && lat <= 75 && lng >= -180 && lng <= 180)) return 
 return [Math.round(lat * 1e4) / 1e4, Math.round(lng * 1e4) / 1e4];
 }
 async function cached(key, ctx, make, okFor) {
-const k = new Request('https://kolaboro.com/__u/' + key);
+const k = new Request($q.h + key);
 const hit = await caches.default.match(k);
-if (hit) { const r = new Response(hit.body, hit); r.headers.set('x-cache', 'hit'); return r; }
+if (hit) { const r = new Response(hit.body, hit); r.headers.set($q.i, 'hit'); return r; }
 const body = await make();
 const ttl = okFor(body);
-if (ttl) ctx.waitUntil(caches.default.put(k, new Response(JSON.stringify(body), { headers: Object.assign({ 'content-type': 'application/json; charset=utf-8', 'cache-control': 'public, max-age=' + ttl }, CORS) })).catch(() => {}));
+if (ttl) ctx.waitUntil(caches.default.put(k, new Response(JSON.stringify(body), { headers: Object.assign({ 'content-type': $q.a, 'cache-control': $q.b + ttl }, CORS) })).catch(() => {}));
 return out(body, 200, ttl ? Math.min(ttl, 86400) : 300);
 }
 const GCM = ['0000GFDL-ESM2M', '0000HadGEM2-ES', '00IPSL-CM5A-LR', 'MIROC-ESM-CHEM', '00000NorESM1-M'];
@@ -47,8 +48,8 @@ const F = {
 river_base: 'inunriver_historical_000000000WATCH_1980_rp00100.tif',
 coast_base: 'inuncoast_historical_nosub_hist_rp0100_0.tif',
 river: (s, y, g) => 'inunriver_' + s + '_' + g + '_' + y + '_rp00100.tif',
-coast50: (s, y) => 'inuncoast_' + s + '_nosub_' + y + '_rp0100_0_perc_50.tif',
-coast95: (s, y) => 'inuncoast_' + s + '_nosub_' + y + '_rp0100_0.tif',
+coast50: (s, y) => $q.j + s + $q.k + y + $q.l,
+coast95: (s, y) => $q.j + s + $q.k + y + $q.m,
 };
 const TS = { 1: 1, 2: 1, 3: 2, 4: 4, 5: 8, 11: 4, 12: 8, 16: 8 };
 const TAIL = 180000;
@@ -56,21 +57,21 @@ const TIFS = new Map();
 async function rangeBytes(url, hdr) {
 const r = await get(url, { headers: { range: hdr } }, 20000);
 if (r.status !== 206) throw new Error('http ' + r.status);
-const total = +(String(r.headers.get('content-range') || '').split('/')[1] || 0);
+const total = +(String(r.headers.get($q.n) || '').split('/')[1] || 0);
 return { b: new Uint8Array(await r.arrayBuffer()), total };
 }
 async function tifMeta(url) {
 if (TIFS.has(url)) return TIFS.get(url);
 const p = (async () => {
-const [h, t] = await Promise.all([rangeBytes(url, 'bytes=0-65535'), rangeBytes(url, 'bytes=-' + TAIL)]);
+const [h, t] = await Promise.all([rangeBytes(url, $q.o), rangeBytes(url, $q.p + TAIL)]);
 const head = h.b, tail = t.b, tail0 = t.total - tail.length;
 const at = (off, n) => off + n <= head.length ? head.subarray(off, off + n) : off >= tail0 && off + n <= t.total ? tail.subarray(off - tail0, off - tail0 + n) : null;
 const le = head[0] === 0x49, dv0 = new DataView(head.buffer, head.byteOffset, head.byteLength);
-if (dv0.getUint16(2, le) !== 42) throw new Error('not a classic TIFF');
+if (dv0.getUint16(2, le) !== 42) throw new Error($q.q);
 const ifdOff = dv0.getUint32(4, le);
-const c = at(ifdOff, 2); if (!c) throw new Error('IFD outside the bytes read');
+const c = at(ifdOff, 2); if (!c) throw new Error($q.r);
 const n = new DataView(c.buffer, c.byteOffset, 2).getUint16(0, le);
-const e = at(ifdOff + 2, n * 12); if (!e) throw new Error('IFD outside the bytes read');
+const e = at(ifdOff + 2, n * 12); if (!e) throw new Error($q.r);
 const dv = new DataView(e.buffer, e.byteOffset, e.byteLength), tags = {};
 for (let i = 0; i < n; i++) {
 const p = i * 12, tag = dv.getUint16(p, le), typ = dv.getUint16(p + 2, le), cnt = dv.getUint32(p + 4, le), sz = (TS[typ] || 1) * cnt;
@@ -78,14 +79,14 @@ if (sz <= 4) tags[tag] = typ === 3 ? dv.getUint16(p + 8, le) : dv.getUint32(p + 
 else tags[tag] = { off: dv.getUint32(p + 8, le), typ, cnt };
 }
 const arr = (tag, kind) => {
-const x = tags[tag]; if (!x || typeof x !== 'object') return null;
-const b = at(x.off, TS[x.typ] * x.cnt); if (!b) throw new Error('tag ' + tag + ' outside the bytes read');
+const x = tags[tag]; if (!x || typeof x !== $q.s) return null;
+const b = at(x.off, TS[x.typ] * x.cnt); if (!b) throw new Error('tag ' + tag + $q.t);
 const d = new DataView(b.buffer, b.byteOffset, b.byteLength), o = [];
 for (let i = 0; i < x.cnt; i++) o.push(x.typ === 12 ? d.getFloat64(i * 8, le) : x.typ === 4 ? d.getUint32(i * 4, le) : x.typ === 3 ? d.getUint16(i * 2, le) : d.getUint8(i));
 return kind === 'u32' ? Uint32Array.from(o) : o;
 };
-if (tags[322]) throw new Error('tiled TIFF, expected strips');
-if ((tags[278] || 1) !== 1) throw new Error('expected one row per strip');
+if (tags[322]) throw new Error($q.u);
+if ((tags[278] || 1) !== 1) throw new Error($q.v);
 const scale = arr(33550), tie = arr(33922), nd = arr(42113);
 const nodata = nd ? parseFloat(String.fromCharCode(...nd).replace(/\0/g, '')) : null;
 return { url, le, head: new Uint8Array(0), W: tags[256], H: tags[257], bits: tags[258], comp: tags[259], pred: tags[317] || 1, fmt: tags[339] || 1,
@@ -96,7 +97,7 @@ if (TIFS.size > 48) TIFS.delete(TIFS.keys().next().value);
 return p;
 }
 async function depthAt(file, lat, lng) {
-const m = await tifMeta(TB.kbx_u__t.AQ + file);
+const m = await tifMeta($t.AQ + file);
 const row = Math.floor((m.y0 - lat) / m.sy);
 if (row < 0 || row >= m.H) return null;
 const one = Object.assign({}, m, { offT: m.offs[row], cntT: m.cnts[row] });
@@ -121,18 +122,18 @@ const c50 = await x.c50, c95 = await x.c95;
 scenarios.push({ scenario: x.s, scenario_name: SCEN[x.s], year: x.y,
 river: { models_answered: okv.length, models_total: GCM.length, models_with_value: num.length,
 median_m: num.length ? med(num) : null, min_m: num.length ? Math.min(...num) : null, max_m: num.length ? Math.max(...num) : null,
-by_model: Object.fromEntries(GCM.map((g, i) => [g.replace(/^0+/, ''), rv[i].ok ? rv[i].v : 'unavailable'])) },
-coast: { sea_level_50th_m: val(c50) === undefined ? 'unavailable' : val(c50), sea_level_95th_m: val(c95) === undefined ? 'unavailable' : val(c95) } });
+by_model: Object.fromEntries(GCM.map((g, i) => [g.replace(/^0+/, ''), rv[i].ok ? rv[i].v : $q.w])) },
+coast: { sea_level_50th_m: val(c50) === undefined ? $q.w : val(c50), sea_level_95th_m: val(c95) === undefined ? $q.w : val(c95) } });
 }
 return {
 lat, lng, generated: new Date().toISOString(), ms: Date.now() - t0, return_period_years: 100, cell_m: 1000,
-baseline: { river_m: rbv.ok ? rbv.v : 'unavailable', river_period: '1960 to 1999 climate (WATCH)', coast_m: cbv.ok ? cbv.v : 'unavailable', coast_period: '2010 sea level' },
+baseline: { river_m: rbv.ok ? rbv.v : $q.w, river_period: $q.x, coast_m: cbv.ok ? cbv.v : $q.w, coast_period: $q.y },
 scenarios,
 files_read: all.length, files_failed: failed.length, failures: failed.slice(0, 6).map(x => ({ file: x.f, why: x.why })),
-reading: TB.kbx_u__s.k0,
-source: { name: TB.kbx_u__t.k0, url: TB.kbx_u__t.k1, license: 'CC BY 4.0' },
-query: TB.kbx_u__t.AQ + TB.kbx_u__t.k2 + TB.kbx_u__t.AQ + F.river('rcp8p5', 2050, GCM[0]) + ')',
-limits: TB.kbx_u__s.k1,
+reading: $s.k0,
+source: { name: $t.k0, url: $t.k1, license: $q.z },
+query: $t.AQ + $t.k2 + $t.AQ + F.river($q.A, 2050, GCM[0]) + ')',
+limits: $s.k1,
 };
 }
 const R = d => d * Math.PI / 180;
@@ -147,7 +148,7 @@ export function mvt(b, want) {
 let p = 0; const td = new TextDecoder(), layers = {};
 const vint = () => { let x = 0, s = 0, c; do { c = b[p++]; x += (c & 0x7f) * 2 ** s; s += 7; } while (c & 0x80); return x; };
 const sub = (end, fn) => { while (p < end) { const k = vint(); fn(k >> 3, k & 7); } };
-const skip = w => { if (w === 0) vint(); else if (w === 1) p += 8; else if (w === 2) { const l = vint(); p += l; } else if (w === 5) p += 4; else throw new Error('bad tile'); };
+const skip = w => { if (w === 0) vint(); else if (w === 1) p += 8; else if (w === 2) { const l = vint(); p += l; } else if (w === 5) p += 4; else throw new Error($q.B); };
 const str = () => { const l = vint(), s = td.decode(b.subarray(p, p + l)); p += l; return s; };
 const packed = () => { const l = vint(), e = p + l, o = []; while (p < e) o.push(vint()); return o; };
 sub(b.length, (f, w) => {
@@ -175,20 +176,20 @@ return { props, rings };
 });
 return layers;
 }
-const OFM_KIND = (layer, pr) => layer === 'landcover' ? (pr.subclass === 'mangrove' ? 'mangrove' : null)
-: pr.class === 'national_park' ? 'national park' : pr.class === 'nature_reserve' ? 'nature reserve' : pr.class === 'protected_area' ? 'protected area' : pr.class ? String(pr.class).replace(/_/g, ' ').slice(0, 40) : 'protected area';
+const OFM_KIND = (layer, pr) => layer === $q.C ? (pr.subclass === $q.D ? $q.D : null)
+: pr.class === $q.E ? $q.F : pr.class === $q.G ? $q.H : pr.class === $q.I ? $q.J : pr.class ? String(pr.class).replace(/_/g, ' ').slice(0, 40) : $q.J;
 let OFM = null;
 async function ofmTiles() {
 if (OFM && Date.now() - OFM.t < 6 * 3600e3) return OFM.url;
-const r = await get('https://tiles.openfreemap.org/planet', { cf: { cacheTtl: 3600, cacheEverything: true } }, 8000);
-if (!r.ok) throw new Error('OpenFreeMap TileJSON ' + r.status);
+const r = await get($q.K, { cf: { cacheTtl: 3600, cacheEverything: true } }, 8000);
+if (!r.ok) throw new Error($q.L + r.status);
 const j = await r.json(), url = j && j.tiles && j.tiles[0];
-if (!url || !/^https:\/\/tiles\.openfreemap\.org\//.test(url)) throw new Error('unexpected TileJSON');
+if (!url || !/^https:\/\/tiles\.openfreemap\.org\//.test(url)) throw new Error($q.M);
 OFM = { url, t: Date.now() }; return url;
 }
 async function osmProtected(lat, lng) {
-const src = { name: TB.kbx_u__s.k2, url: 'https://openfreemap.org/', license: TB.kbx_u__t.k3 };
-const limits = TB.kbx_u__s.k3;
+const src = { name: $s.k2, url: $q.N, license: $t.k3 };
+const limits = $s.k3;
 const Z = 14, n = 2 ** Z, rad = 1, dy = rad / 110.57, dx = rad / (111.32 * Math.max(0.2, Math.cos(R(lat))));
 const tx = lo => Math.floor((lo + 180) / 360 * n), ty = la => Math.floor((1 - Math.log(Math.tan(R(la)) + 1 / Math.cos(R(la))) / Math.PI) / 2 * n);
 const x0 = tx(lng - dx), x1 = tx(lng + dx), y0 = ty(lat + dy), y1 = ty(lat - dy), px = tx(lng), py = ty(lat);
@@ -201,19 +202,19 @@ try {
 tiles = await Promise.all(urls.map(async t => {
 const r = await get(t.url, { cf: { cacheTtl: 86400 * 7, cacheEverything: true } }, 10000);
 if (r.status === 204 || r.status === 404) return Object.assign(t, { layers: {} });
-if (!r.ok) throw new Error('tile answered ' + r.status);
-return Object.assign(t, { layers: mvt(new Uint8Array(await r.arrayBuffer()), ['park', 'landcover']) });
+if (!r.ok) throw new Error($q.O + r.status);
+return Object.assign(t, { layers: mvt(new Uint8Array(await r.arrayBuffer()), ['park', $q.C]) });
 }));
 } catch (e) { return { ok: false, why: String(e.message || e).slice(0, 80), source: src, query: urls.map(t => t.url), limits }; }
 const found = new Map();
 for (const t of tiles) {
-for (const ly of ['park', 'landcover']) {
+for (const ly of ['park', $q.C]) {
 const L = t.layers[ly]; if (!L) continue;
 const E = L.extent, toLL = (qx, qy) => ({ lon: (t.x + qx / E) / n * 360 - 180, lat: Math.atan(Math.sinh(Math.PI * (1 - 2 * (t.y + qy / E) / n))) * 180 / Math.PI });
 const pinX = ((lng + 180) / 360 * n - t.x) * E, pinY = ((1 - Math.log(Math.tan(R(lat)) + 1 / Math.cos(R(lat))) / Math.PI) / 2 * n - t.y) * E;
 for (const f of L.features) {
 const kind = OFM_KIND(ly, f.props); if (!kind) continue;
-const name = String(f.props['name:en'] || f.props.name_en || f.props.name || '').slice(0, 90) || null;
+const name = String(f.props[$q.P] || f.props.name_en || f.props.name || '').slice(0, 90) || null;
 const key = kind + '|' + (name || ('#' + t.x + '/' + t.y + '/' + L.features.indexOf(f)));
 let inside = false, best = Infinity;
 if (t.x === px && t.y === py) {
@@ -237,20 +238,20 @@ boundary_m: o.edge_km === Infinity || o.edge_km > rad ? null : o.edge_km < 1 ? M
 list.sort((a, b) => (b.inside - a.inside) || ((a.boundary_m == null ? 1e9 : a.boundary_m) - (b.boundary_m == null ? 1e9 : b.boundary_m)));
 const inside = list.filter(x => x.inside), near = list.filter(x => !x.inside);
 return { ok: true, radius_m: 1000, zoom: Z, tiles_read: tiles.length, inside, near: near.slice(0, 12), near_total: near.length, source: src, query: urls.map(t => t.url), limits,
-note: inside.length ? TB.kbx_u__t.k4 : near.length ? TB.kbx_u__t.k5 : TB.kbx_u__s.k4 };
+note: inside.length ? $t.k4 : near.length ? $t.k5 : $s.k4 };
 }
 const GMW = new Map();
 async function gmwBlock(env, lonB, latB) {
 const key = lonB + '_' + latB;
 if (GMW.has(key)) return GMW.get(key);
 const p = (async () => {
-const path = '/data/mangroves/' + key + '.bin';
-let r = env && env.ASSETS ? await env.ASSETS.fetch(new Request('https://kolaboro.com/_s/kolaboro.com' + path)).catch(() => null) : null;
-if (!r || r.status === 404 || !r.ok) r = await get('https://kolaboro.com' + path, { cf: { cacheTtl: 86400 * 30, cacheEverything: true } }, 10000);
+const path = $q.Q + key + '.bin';
+let r = env && env.ASSETS ? await env.ASSETS.fetch(new Request($q.R + path)).catch(() => null) : null;
+if (!r || r.status === 404 || !r.ok) r = await get($q.S + path, { cf: { cacheTtl: 86400 * 30, cacheEverything: true } }, 10000);
 if (r.status === 404) return null;
-if (!r.ok) throw new Error('mangrove index ' + r.status);
+if (!r.ok) throw new Error($q.T + r.status);
 const b = new Uint8Array(await r.arrayBuffer()), dv = new DataView(b.buffer);
-if (String.fromCharCode(b[0], b[1], b[2], b[3]) !== 'GMW1') { if (b[0] === 0x3c) return null; throw new Error('bad mangrove index'); }
+if (String.fromCharCode(b[0], b[1], b[2], b[3]) !== 'GMW1') { if (b[0] === 0x3c) return null; throw new Error($q.U); }
 const N = dv.getUint16(4, true), n = dv.getUint16(6, true), body = 8 + n * 16, tiles = new Map();
 for (let i = 0; i < n; i++) { const o = 8 + i * 16; tiles.set(dv.getInt16(o, true) + '_' + dv.getInt16(o + 2, true), { cnt: dv.getUint32(o + 4, true), off: body + dv.getUint32(o + 8, true), len: dv.getUint32(o + 12, true), set: null }); }
 return { N, b, tiles };
@@ -266,8 +267,8 @@ while (i < t.off + t.len) { let x = 0, sh = 0, c; do { c = blk.b[i++]; x |= (c &
 t.set = s; return s;
 }
 async function mangroveGrid(lat, lng, env, radiusKm = 1) {
-const src = { name: TB.kbx_u__s.k5, url: 'https://zenodo.org/records/6894273', license: 'CC BY 4.0' };
-const limits = TB.kbx_u__s.k6;
+const src = { name: $s.k5, url: $q.V, license: $q.z };
+const limits = $s.k6;
 const step = 1 / 500, dy = radiusKm / 110.57, dx = radiusKm / (111.32 * Math.max(0.2, Math.cos(R(lat))));
 let best = Infinity, cells = 0;
 try {
@@ -288,37 +289,37 @@ if (d <= radiusKm) { cells++; best = Math.min(best, d); }
 }
 } catch (e) { return { ok: false, why: String(e.message || e).slice(0, 80), source: src, limits }; }
 return { ok: true, radius_m: radiusKm * 1000, grid_m: 220, in_cell: best === 0, cells_within: cells, nearest_m: best === Infinity ? null : Math.round(best * 1000 / 10) * 10,
-query: TB.kbx_u__s.k7, source: src, limits };
+query: $s.k7, source: src, limits };
 }
 async function protectedAt(lat, lng, env) {
 const t0 = Date.now();
 const [osm, gmw] = await Promise.all([osmProtected(lat, lng), mangroveGrid(lat, lng, env)]);
 return { lat, lng, generated: new Date().toISOString(), ms: Date.now() - t0, osm, mangroves: gmw,
-not_used: { name: TB.kbx_u__t.k6, url: TB.kbx_u__t.k7,
-why: TB.kbx_u__s.k8 } };
+not_used: { name: $t.k6, url: $t.k7,
+why: $s.k8 } };
 }
 export async function handle(req, u, env, ctx) {
-if (req.method === 'OPTIONS') return new Response(null, { status: 204, headers: CORS });
-if (req.method !== 'GET') return out({ error: 'GET only' }, 405);
+if (req.method === $q.W) return new Response(null, { status: 204, headers: CORS });
+if (req.method !== 'GET') return out({ error: $q.X }, 405);
 const p = u.pathname.replace(/^\/api\/x\/u\/?/, '');
 try {
-if (p === 'climate' || p === 'protected') {
+if (p === $q.Y || p === $q.Z) {
 const pin = pinOf(u);
-if (!pin) return out({ error: TB.kbx_u__t.k8 }, 400);
+if (!pin) return out({ error: $t.k8 }, 400);
 const [lat, lng] = pin;
-const key = (p === 'climate' ? 'cl1/' : 'pa1/') + lat + ',' + lng;
-const k = new Request('https://kolaboro.com/__u/' + key);
+const key = (p === $q.Y ? 'cl1/' : 'pa1/') + lat + ',' + lng;
+const k = new Request($q.h + key);
 const hit = await caches.default.match(k);
-if (hit) { const r = new Response(hit.body, hit); r.headers.set('x-cache', 'hit'); return r; }
-if (!(await allow(ctx, 'u' + p + '/' + ipOf(req), 12, 600))) return out({ error: 'rate_limited', note: TB.kbx_u__s.k9 }, 429);
-if (p === 'climate') return await cached(key, ctx, () => climate(lat, lng), b => b.files_failed ? 0 : 86400 * 30);
+if (hit) { const r = new Response(hit.body, hit); r.headers.set($q.i, 'hit'); return r; }
+if (!(await allow(ctx, 'u' + p + '/' + ipOf(req), 12, 600))) return out({ error: $q.aa, note: $s.k9 }, 429);
+if (p === $q.Y) return await cached(key, ctx, () => climate(lat, lng), b => b.files_failed ? 0 : 86400 * 30);
 return await cached(key, ctx, () => protectedAt(lat, lng, env), b => (b.osm.ok && b.mangroves.ok) ? 86400 * 7 : 0);
 }
 if (p === '' || p === 'about') return out({ module: 'u', endpoints: {
-'/api/x/u/climate?lat=&lng=': TB.kbx_u__s.k10,
-'/api/x/u/protected?lat=&lng=': TB.kbx_u__s.k11 },
-data: { '/data/night-lights.json': TB.kbx_u__t.k9, '/data/stalled-sites.json': TB.kbx_u__t.k10 },
-pages: ['https://kolaboro.com/hazards/', 'https://kolaboro.com/satellite/night/'] }, 200, 3600);
-} catch (e) { return out({ error: 'failed', detail: String(e.message || e).slice(0, 100) }, 502); }
-return out({ error: 'not found' }, 404);
+'/api/x/u/climate?lat=&lng=': $s.k10,
+'/api/x/u/protected?lat=&lng=': $s.k11 },
+data: { '/data/night-lights.json': $t.k9, '/data/stalled-sites.json': $t.k10 },
+pages: [$q.ab, $q.ac] }, 200, 3600);
+} catch (e) { return out({ error: $q.ad, detail: String(e.message || e).slice(0, 100) }, 502); }
+return out({ error: $q.ae }, 404);
 }

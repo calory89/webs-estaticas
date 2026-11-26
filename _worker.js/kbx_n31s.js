@@ -1,4 +1,5 @@
 // comments: _notes/kolaboro-worker-comments.txt
+const $q = TB.kbx_n31s__q, $s = TB.kbx_n31s__s, $t = TB.kbx_n31s__t;   // n40 k46: short names for this module's string tables (strings in /data/i18n/k19s.json, k17s.json, k46s.json)
 import * as N from './kbx_named.js';
 import { mkName } from './kbx_hdate.js';
 import { TR_PLACES } from './kbx_tr_places.js';
@@ -8,38 +9,36 @@ let S = { en: {} }, TOOLS = {}, GL = {}, I18N = false;
 async function loadI18n(env) {
 if (I18N) return true;
 let j = null;
-try { const r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/n31s-i18n.json')); if (r.ok) j = await r.json(); } catch (e) {}
-if (!j) { try { const r = await fetch(ORIGIN + '/data/n31s-i18n.json', { cf: { cacheTtl: 300 } }); if (r.ok) j = await r.json(); } catch (e) {} }
+try { const r = await env.ASSETS.fetch(new Request(ORIGIN + $q.b)); if (r.ok) j = await r.json(); } catch (e) {}
+if (!j) { try { const r = await fetch(ORIGIN + $q.c, { cf: { cacheTtl: 300 } }); if (r.ok) j = await r.json(); } catch (e) {} }
 if (j && j.S) { S = j.S; TOOLS = j.TOOLS || {}; GL = j.GL || {}; I18N = true; }
 return I18N;
 }
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const COI_RX = /eco\s*beach\s*city|\bequinox\b/i;
 const pre = l => l === 'en' ? '' : '/' + l;
-const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': $q.d, "'": '&#39;' }[c]));
 const t = (lang, k, v) => { let s = (S[lang] && S[lang][k]) || S.en[k] || k; if (v) s = s.replace(/\{(\w+)\}/g, (m, a) => v[a] != null ? v[a] : m); return s; };
 const nmf = (lang, d) => new Intl.NumberFormat(lang === 'en' ? 'en-GB' : lang === 'zh' ? 'zh-CN' : lang, { maximumFractionDigits: d || 0, numberingSystem: 'latn' });
 const num = (v, lang, d) => { try { return nmf(lang, d).format(v); } catch (e) { return String(v); } };
 const fdt = (d, lang) => N.fd(String(d).slice(0, 10), lang);
-const monthName = (ym, lang) => { try { return new Date(ym + '-15T00:00:00Z').toLocaleDateString(lang === 'en' ? 'en-GB' : lang === 'zh' ? 'zh-CN' : lang, { month: 'long', year: 'numeric', timeZone: 'UTC', numberingSystem: 'latn' }); } catch (e) { return ym; } };
+const monthName = (ym, lang) => { try { return new Date(ym + $q.e).toLocaleDateString(lang === 'en' ? 'en-GB' : lang === 'zh' ? 'zh-CN' : lang, { month: 'long', year: $q.f, timeZone: 'UTC', numberingSystem: 'latn' }); } catch (e) { return ym; } };
 const slugA = s => String(s || '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
-export const N31S_V = 'n31s1';
 export const PATHS = /^\/(?:es|de|fr|nl|ru|zh|ar)\/(?:tools|glossary)\/?$|^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:docs|reports\/month)\/?$|^\/engineering\/notes(?:\/[a-z0-9-]{3,60})?\/?$|^\/projects\/[a-z0-9-]{1,90}\.md$/;
-const html = (b, cc) => new Response(b, { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': cc || 'public, max-age=600' } });
+const html = (b, cc) => new Response(b, { status: 200, headers: { 'content-type': $q.g, 'cache-control': cc || $q.h } });
 const MEMO = {};
 async function asset(env, path, kind, ttl) {
 const m = MEMO[path]; if (m && Date.now() - m.t < (ttl || 600000)) return m.v;
 let v = null;
-try { const r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com' + path)); if (r.ok) v = kind === 'json' ? await r.json() : await r.text(); } catch (e) { v = null; }
+try { const r = await env.ASSETS.fetch(new Request(ORIGIN + $q.i + path)); if (r.ok) v = kind === 'json' ? await r.json() : await r.text(); } catch (e) { v = null; }
 MEMO[path] = { t: Date.now(), v }; return v;
 }
-const CSS = '<style>.n31 h2{margin:32px 0 10px}.n31 .k-table-wrap{overflow-x:auto;margin:10px 0 18px}.n31 table{width:100%;border-collapse:collapse;min-width:480px}.n31 th,.n31 td{padding:8px 10px;border-bottom:1px solid var(--k-line,#d5dbd8);text-align:start;vertical-align:top}.n31 td.k-n,.n31 th.k-n{text-align:end;font-variant-numeric:tabular-nums}.n31 pre{overflow-x:auto;background:var(--k-sunken,#f3f5f4);border:1px solid var(--k-line,#d5dbd8);border-radius:8px;padding:12px;font-size:.86rem;line-height:1.45;white-space:pre;max-width:100%}.n31 .n31-g{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:14px 0}.n31 .n31-g>div{border:1px solid var(--k-line,#d5dbd8);border-radius:10px;padding:14px}.n31 .n31-g h3{margin:0 0 6px;font-size:1.05rem}.n31 .n31-s{font-size:.9rem;color:var(--k-muted,#56636F)}.n31 dl.glossary .gl{margin:0 0 18px}.n31-ex{font-size:.92rem;margin:6px 0 0;padding-inline-start:18px}.n31-ex li{margin:3px 0}.n31-ex q{color:var(--k-muted,#56636F)}</style>';
 async function page(shell, lang, o) {
-  const sh = await shell(pre(lang) + '/how-we-score/'); if (!sh || sh.status !== 200) return null;
-  const crumb = '<p class="crumb"><a href="' + pre(lang) + '/">Kolaboro</a>' + (o.crumb || []).map(([h, l]) => ' / ' + (h ? '<a href="' + h + '">' + esc(l) + '</a>' : esc(l))).join('') + '</p>';
-  const body = (o.head || '') + '<section class="phero kp"><div class="wrap">' + crumb + '<h1>' + esc(o.h1) + '</h1><p class="lead">' + esc(o.lead) + '</p>' + (o.hero || '') + '</div></section><div class="wrap kwrap n31"' + (lang === 'ar' ? ' dir="rtl"' : '') + '>' + o.body + '</div>' + CSS;
-  const pg = { title: o.title + ' | Kolaboro', desc: o.desc, canon: o.canon, body, alt: o.alt,
-    ld: { '@context': 'https://schema.org', '@graph': [{ '@type': o.type || 'WebPage', name: o.title, url: o.canon, inLanguage: lang, description: o.desc, dateModified: o.mod || undefined, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' } }].concat(o.ld || []) } };
+  const sh = await shell(pre(lang) + $q.j); if (!sh || sh.status !== 200) return null;
+  const crumb = $q.k + pre(lang) + $q.l + (o.crumb || []).map(([h, l]) => ' / ' + (h ? $q.m + h + '">' + esc(l) + '</a>' : esc(l))).join('') + '</p>';
+  const body = (o.head || '') + $q.n + crumb + '<h1>' + esc(o.h1) + $q.o + esc(o.lead) + '</p>' + (o.hero || '') + $q.p + (lang === 'ar' ? $q.q : '') + '>' + o.body + $q.r + $q.a;
+  const pg = { title: o.title + $q.s, desc: o.desc, canon: o.canon, body, alt: o.alt,
+    ld: { '@context': $q.t, '@graph': [{ '@type': o.type || $q.u, name: o.title, url: o.canon, inLanguage: lang, description: o.desc, dateModified: o.mod || undefined, isPartOf: { '@type': $q.v, name: $q.w, url: ORIGIN + '/' } }].concat(o.ld || []) } };
   let out = await N.assemble(pg, lang, sh);
   if (o.enOnly) out = out.replace(/<link rel="alternate" hreflang="(?!en"|x-default")[^"]*" href="[^"]*">/g, '');   // English-only pages: no hreflang to other languages
   return html(out);
@@ -51,27 +50,27 @@ const T35 = { en: ['Price per m² checker', 'Private document vault', 'Compare d
 const LOCAL_TOOLS = new Set(['/tools/bulk-check/', '/tools/contract-addendum/', '/tools/contract-reader/', '/tools/permit-photo/', '/tools/widget/', '/tools/total-cost/dubai/']);
 export function toolsParse(src) {
 const m = /<main[^>]*>([\s\S]*?)<\/main>/.exec(src || ''); if (!m) return null;
-const main = m[1], css = (/<link rel="stylesheet" href="(\/tools\/ft\.css[^"]*)"/.exec(src) || [])[1] || '/tools/ft.css';
+const main = m[1], css = (/<link rel="stylesheet" href="(\/tools\/ft\.css[^"]*)"/.exec(src) || [])[1] || $q.x;
 const G = []; const gr = /<p class="eyebrow" role="heading" aria-level="2" id="([a-z]+)"[^>]*>[^<]*<\/p>\s*<div class="ft-method"[^>]*>([\s\S]*?)<\/div>\s*(?=<p class="eyebrow"|<\/div><\/section>)/g; let g;
 while ((g = gr.exec(main))) { const L = []; let it; ITEM_RX.lastIndex = 0; while ((it = ITEM_RX.exec(g[2]))) L.push({ look: !!it[1], href: it[2], name: it[3], tc: it[4], tag: it[5], desc: it[6] }); G.push({ id: g[1], L }); }
 return { G, css };
 }
 async function toolsHub(u, env, shell, lang) {
-const src = await asset(env, '/tools/', 'text'); const P = toolsParse(src); if (!P || !P.G.length) return null;
+const src = await asset(env, $q.y, 'text'); const P = toolsParse(src); if (!P || !P.G.length) return null;
 let untr = 0, LT = LOCAL_TOOLS;
 try { LT = new Set([...LOCAL_TOOLS, ...(await (await import('./kbx_n32t.js')).localSet(env, lang))]); } catch (e) {}
-const grp = P.G.map((g, gi) => '<h2 class="eyebrow" id="' + g.id + TB.kbx_n31s__t.k0 + (gi ? '40px' : '0') + ' 0 0">' + esc(t(lang, 'g_' + g.id)) + TB.kbx_n31s__t.k1 + g.L.map(x => {
+const grp = P.G.map((g, gi) => $q.z + g.id + $t.k0 + (gi ? '40px' : '0') + $q.A + esc(t(lang, 'g_' + g.id)) + $t.k1 + g.L.map(x => {
 const tr = (TOOLS[x.href] || {})[lang]; if (!tr) untr++;
 const href = LT.has(x.href) ? pre(lang) + x.href : x.href, en = !LT.has(x.href);
-const tag = x.tag ? '<span class="ft-tag ' + x.tc + '">' + esc(TAGS[x.tag] ? t(lang, TAGS[x.tag]) : x.tag) + '</span>' : '';
-return '<div class="ft-f' + (x.look ? ' look' : '') + '"><h3><a href="' + href + '"' + (en ? ' hreflang="en"' : '') + '>' + (tr ? esc(tr[0]) : x.name) + '</a>' + tag + '</h3><p>' + (tr ? esc(tr[1]) : x.desc) + (en ? ' <span class="n31-s">(' + esc(t(lang, 'inen')) + ')</span>' : '') + '</p></div>';
-}).join('') + '</div>').join('');
-const jump = '<nav class="ft-jump" aria-label="' + esc(t(lang, 't_groups')) + '">' + P.G.map(g => '<a href="#' + g.id + '">' + esc(t(lang, 'g_' + g.id)) + ' <small>' + g.L.length + '</small></a>').join('') + '</nav>';
+const tag = x.tag ? $q.B + x.tc + '">' + esc(TAGS[x.tag] ? t(lang, TAGS[x.tag]) : x.tag) + $q.C : '';
+return $q.D + (x.look ? ' look' : '') + $q.E + href + '"' + (en ? $q.F : '') + '>' + (tr ? esc(tr[0]) : x.name) + '</a>' + tag + $q.G + (tr ? esc(tr[1]) : x.desc) + (en ? $q.H + esc(t(lang, 'inen')) + $q.I : '') + $q.J;
+}).join('') + $q.r).join('');
+const jump = $q.K + esc(t(lang, $q.L)) + '">' + P.G.map(g => $q.M + g.id + '">' + esc(t(lang, 'g_' + g.id)) + $q.N + g.L.length + $q.O).join('') + $q.P;
 const n = P.G.reduce((a, g) => a + g.L.length, 0);
-return page(shell, lang, { title: t(lang, 't_title'), desc: t(lang, 't_desc'), h1: t(lang, 't_title'), lead: t(lang, 't_lead'), canon: ORIGIN + pre(lang) + '/tools/', alt: altOf('/tools/'),
-crumb: [[null, t(lang, 'tools')]], head: '<link rel="stylesheet" href="' + esc(P.css) + '">', hero: '<p class="k-small"><a href="' + pre(lang) + '/tools/widget/">' + esc(t(lang, 't_widget')) + '</a>' + (TB.kbx_n31s__t.o_T34[lang] || TB.kbx_n31s__t.o_T34.en).map((x, i) => ' · <a href="' + pre(lang) + ['/tools/due-diligence/', '/search/', '/markets/compare/'][i] + '">' + esc(x) + '</a>').join('') + (T35[lang] || T35.en).map((x, i) => ' · <a href="' + pre(lang) + ['/tools/price-per-m2/', '/tools/vault/', '/developers/compare/'][i] + '">' + esc(x) + '</a>').join('') + '</p>' + jump,
-body: '<section class="ft-sec">' + grp + '</section><!-- n31s tools ' + n + ', untranslated ' + untr + ' -->',
-type: 'CollectionPage' });
+return page(shell, lang, { title: t(lang, $q.Q), desc: t(lang, $q.R), h1: t(lang, $q.Q), lead: t(lang, $q.S), canon: ORIGIN + pre(lang) + $q.y, alt: altOf($q.y),
+crumb: [[null, t(lang, 'tools')]], head: $q.T + esc(P.css) + '">', hero: $q.U + pre(lang) + $q.V + esc(t(lang, $q.W)) + '</a>' + ($t.o_T34[lang] || $t.o_T34.en).map((x, i) => $q.X + pre(lang) + [$q.Y, $q.Z, $q.aa][i] + '">' + esc(x) + '</a>').join('') + (T35[lang] || T35.en).map((x, i) => $q.X + pre(lang) + [$q.ab, $q.ac, $q.ad][i] + '">' + esc(x) + '</a>').join('') + '</p>' + jump,
+body: $q.ae + grp + $q.af + n + $q.ag + untr + ' -->',
+type: $q.ah });
 }
 const GL_RX = {
 escrow: [/\bescrow\b/i], 'certid-o-permanente': [/certid[aã]o/i], ejido: [/\bejido/i, 'Mexico'], fideicomiso: [/fideicomiso/i, 'Mexico'], 'foreign-quota-thailand': [/foreign (?:freehold )?quota/i, 'Thailand'],
@@ -88,11 +87,11 @@ const P = ix.P.filter(x => x.n && !COI_RX.test(x.n + ' ' + x.dv)).sort((a, b) =>
 const M = new Map();
 for (const [k, [rx, co]] of Object.entries(GL_RX)) {
 const L = [], mks = new Set();
-const neg = new RegExp(TB.kbx_n31s__t.k2 + rx.source + ')', 'i');
+const neg = new RegExp($t.k2 + rx.source + ')', 'i');
 for (const pass of [0, 1]) for (const x of P) {
 if (L.length >= 3) break;
 if (co && x.co !== co) continue; if (L.some(e => e.s === x.s)) continue;
-const parts = [].concat(x.dl || [], Object.values(x.ev || {})).filter(s => typeof s === 'string');
+const parts = [].concat(x.dl || [], Object.values(x.ev || {})).filter(s => typeof s === $q.ai);
 const hit = parts.find(s => rx.test(s) && !N.OPINION_RX.test(s) && (pass === 1 || !neg.test(s))); if (!hit) continue;
 if (mks.has(x.mk) && L.length < 2) continue;
 const i = hit.search(rx); let a = Math.max(0, i - 60), b = Math.min(hit.length, i + 90);
@@ -103,33 +102,33 @@ if (L.length) M.set(k, L);
 }
 GX = { ix, M }; return M;
 }
-const exHtml = (L, lang) => L && L.length ? '<ul class="n31-ex" aria-label="' + esc(t(lang, 'gl_ex')) + '"><li><b>' + esc(t(lang, 'gl_ex')) + '</b></li>' + L.map(e => '<li><a href="' + pre(lang) + '/projects/' + e.s + '/"><bdi>' + esc(e.n) + '</bdi></a> (<bdi>' + esc(mkName(e.mk, lang)) + '</bdi>): <q lang="' + ((e.q.match(/[\u0400-\u04FF]/g) || []).length > (e.q.match(/[A-Za-z]/g) || []).length ? 'ru' : 'en') + '">' + esc(e.q) + '</q></li>').join('') + '</ul>' : '';
+const exHtml = (L, lang) => L && L.length ? $q.aj + esc(t(lang, 'gl_ex')) + $q.ak + esc(t(lang, 'gl_ex')) + $q.al + L.map(e => $q.am + pre(lang) + $q.an + e.s + $q.ao + esc(e.n) + $q.ap + esc(mkName(e.mk, lang)) + $q.aq + ((e.q.match(/[\u0400-\u04FF]/g) || []).length > (e.q.match(/[A-Za-z]/g) || []).length ? 'ru' : 'en') + '">' + esc(e.q) + $q.ar).join('') + '</ul>' : '';
 async function glossaryPage(u, env, shell, lang) {
-const src = await asset(env, '/glossary/', 'text'); if (!src) return null;
+const src = await asset(env, $q.as, 'text'); if (!src) return null;
 const E = []; const rx = /<div class="gl" id="([^"]+)"><dt>([\s\S]*?)<\/dt><dd>([\s\S]*?)<\/dd><\/div>/g; let m;
 while ((m = rx.exec(src))) E.push({ id: m[1], dt: m[2], dd: m[3] });
 if (!E.length) return null;
 let X = new Map(); try { X = await glossaryExamples(env); } catch (e) {}
-const rows = E.map(e => { const tr = (GL[e.id] || {})[lang], mo = TB.kbx_n31s__t.o_GL_MORE[e.id];
-return '<div class="gl" id="' + e.id + '"><dt>' + (tr ? esc(tr[0]) : e.dt) + '</dt><dd>' + (tr ? esc(tr[1]) : e.dd.replace(/<a [^>]*>[\s\S]*?<\/a>/g, '')) + (mo ? ' <a href="' + pre(lang) + mo[0] + '">' + esc(t(lang, mo[1])) + '</a>' : '') + exHtml(X.get(e.id), lang) + '</dd></div>'; }).join('');
-const terms = E.map(e => { const tr = (GL[e.id] || {})[lang]; return { '@type': 'DefinedTerm', name: tr ? tr[0] : e.dt.replace(/<[^>]+>/g, ''), description: tr ? tr[1] : e.dd.replace(/<[^>]+>/g, '').trim(), url: ORIGIN + pre(lang) + '/glossary/#' + e.id }; });
-return page(shell, lang, { title: t(lang, 'gl_title'), desc: t(lang, 'gl_desc'), h1: t(lang, 'gl_title'), lead: t(lang, 'gl_lead'), canon: ORIGIN + pre(lang) + '/glossary/', alt: altOf('/glossary/'),
-crumb: [[null, t(lang, 'gloss')]], body: '<dl class="glossary">' + rows + '</dl><p class="n31-s">' + esc(t(lang, 'gl_ex_note')) + '</p>', type: 'DefinedTermSet',
-ld: [{ '@type': 'DefinedTermSet', '@id': ORIGIN + pre(lang) + '/glossary/#terms', name: t(lang, 'gl_title'), hasDefinedTerm: terms }] });
+const rows = E.map(e => { const tr = (GL[e.id] || {})[lang], mo = $t.o_GL_MORE[e.id];
+return $q.at + e.id + $q.au + (tr ? esc(tr[0]) : e.dt) + $q.av + (tr ? esc(tr[1]) : e.dd.replace(/<a [^>]*>[\s\S]*?<\/a>/g, '')) + (mo ? $q.aw + pre(lang) + mo[0] + '">' + esc(t(lang, mo[1])) + '</a>' : '') + exHtml(X.get(e.id), lang) + $q.ax; }).join('');
+const terms = E.map(e => { const tr = (GL[e.id] || {})[lang]; return { '@type': $q.ay, name: tr ? tr[0] : e.dt.replace(/<[^>]+>/g, ''), description: tr ? tr[1] : e.dd.replace(/<[^>]+>/g, '').trim(), url: ORIGIN + pre(lang) + $q.az + e.id }; });
+return page(shell, lang, { title: t(lang, $q.aA), desc: t(lang, $q.aB), h1: t(lang, $q.aA), lead: t(lang, $q.aC), canon: ORIGIN + pre(lang) + $q.as, alt: altOf($q.as),
+crumb: [[null, t(lang, 'gloss')]], body: $q.aD + rows + $q.aE + esc(t(lang, $q.aF)) + '</p>', type: $q.aG,
+ld: [{ '@type': $q.aG, '@id': ORIGIN + pre(lang) + $q.aH, name: t(lang, $q.aA), hasDefinedTerm: terms }] });
 }
 export async function enStatic(u, r, env) {
 if (!(await loadI18n(env))) return r;
-if (!r || r.status !== 200 || !/text\/html/.test(r.headers.get('content-type') || '')) return r;
-const p = u.pathname, alts = LANGS.map(l => '<link rel="alternate" hreflang="' + l + '" href="' + ORIGIN + pre(l) + p + '">').join('') + TB.kbx_n31s__t.k3 + ORIGIN + p + '">';
-let rw = new HTMLRewriter().on('link[rel="alternate"][hreflang]', { element(e) { e.remove(); } }).on('head', { element(e) { e.append(alts, { html: true }); } });
-if (p === '/glossary/') {
+if (!r || r.status !== 200 || !/text\/html/.test(r.headers.get($q.aI) || '')) return r;
+const p = u.pathname, alts = LANGS.map(l => $q.aJ + l + $q.aK + ORIGIN + pre(l) + p + '">').join('') + $t.k3 + ORIGIN + p + '">';
+let rw = new HTMLRewriter().on($q.aL, { element(e) { e.remove(); } }).on('head', { element(e) { e.append(alts, { html: true }); } });
+if (p === $q.as) {
 let X = new Map(); try { X = await glossaryExamples(env); } catch (e) {}
-let gid = null; rw = rw.on('div.gl', { element(e) { gid = e.getAttribute('id'); } }).on('div.gl > dd', { element(e) { const h = exHtml(X.get(gid), 'en'); if (h) e.append(h, { html: true }); } })
+let gid = null; rw = rw.on($q.aM, { element(e) { gid = e.getAttribute('id'); } }).on($q.aN, { element(e) { const h = exHtml(X.get(gid), 'en'); if (h) e.append(h, { html: true }); } })
 }
 return rw.transform(r);
 }
 async function monthPage(u, env, shell, lang) {
-const [pr, ix] = await Promise.all([asset(env, '/data/progress.json', 'json'), N.data(env)]);
+const [pr, ix] = await Promise.all([asset(env, $q.aO, 'json'), N.data(env)]);
 const days = ((pr && pr.days) || []).filter(d => d && d.d).sort((a, b) => a.d.localeCompare(b.d)); if (!days.length) return null;
 const now = days[days.length - 1], mo = now.d.slice(0, 7), first = days.find(d => d.d.slice(0, 7) === mo) || now, moN = monthName(mo, lang);
 const P = ix.P.filter(x => !COI_RX.test(String(x.n) + ' ' + String(x.dv)));
@@ -137,43 +136,43 @@ let permit = 0, hand = 0, over = 0, rev = 0, added = 0; const today = new Date()
 for (const x of P) { const c = ix.caseBy.get(x.id) || {}; if ((c.checks || {}).permit === 2) permit++; if (N.handoverOf(ix, x)) hand++; if (N.overdueOf(ix, x, today)) over++; if (x.rw) rev++; if (String(x.ad || '').slice(0, 7) === mo) added++; }
 const pc = v => num(v / P.length * 100, lang, 1) + ' %';
 const ch = (a, b) => { if (a == null || b == null) return '-'; const d = a - b; return (d > 0 ? '+' : d < 0 ? '−' : '') + num(Math.abs(d), lang); };
-const K = [['m_projects', 'projects'], ['m_markets', 'markets'], ['m_countries', 'countries'], ['m_sources', 'sources'], ['m_claims', 'claims_total'], ['m_urls', 'sitemap_urls']];
-const t1 = TB.kbx_n31s__t.k4 + esc(t(lang, 'm_now')) + ' (' + esc(fdt(now.d, lang)) + ')</th><th scope="col" class="k-n">' + esc(t(lang, 'm_start', { d: fdt(first.d, lang) })) + '</th><th scope="col" class="k-n">' + esc(t(lang, 'm_ch')) + '</th></tr></thead><tbody>' +
-K.map(([l, k]) => '<tr><th scope="row">' + esc(t(lang, l)) + '</th><td class="k-n">' + (now[k] != null ? num(now[k], lang) : '-') + '</td><td class="k-n">' + (first[k] != null ? num(first[k], lang) : '-') + '</td><td class="k-n">' + ch(now[k], first[k]) + '</td></tr>').join('') + '</tbody></table></div>';
-const Q = [['m_permit', permit], ['m_hand', hand], ['m_over', over], ['m_rev', rev]];
-const t2 = TB.kbx_n31s__t.k5 + Q.map(([l, v]) => '<tr><th scope="row">' + esc(t(lang, l)) + '</th><td class="k-n">' + num(v, lang) + '</td><td class="k-n">' + pc(v) + '</td></tr>').join('') +
-'<tr><th scope="row">' + esc(t(lang, 'm_added', { mo: moN })) + '</th><td class="k-n">' + num(added, lang) + TB.kbx_n31s__t.k6 + esc(t(lang, 'm_share', { n: num(P.length, lang) })) + ' <a href="' + pre(lang) + TB.kbx_n31s__t.k7 + pre(lang) + TB.kbx_n31s__t.k8 + pre(lang) + '/numbers/">/numbers/</a></p>';
+const K = [[$q.aP, $q.aQ], [$q.aR, $q.aS], [$q.aT, $q.aU], [$q.aV, $q.aW], [$q.aX, $q.aY], [$q.aZ, $q.ba]];
+const t1 = $t.k4 + esc(t(lang, 'm_now')) + ' (' + esc(fdt(now.d, lang)) + $q.bb + esc(t(lang, $q.bc, { d: fdt(first.d, lang) })) + $q.bd + esc(t(lang, 'm_ch')) + $q.be +
+K.map(([l, k]) => $q.bf + esc(t(lang, l)) + $q.bg + (now[k] != null ? num(now[k], lang) : '-') + $q.bh + (first[k] != null ? num(first[k], lang) : '-') + $q.bh + ch(now[k], first[k]) + $q.bi).join('') + $q.bj;
+const Q = [[$q.bk, permit], [$q.bl, hand], [$q.bm, over], ['m_rev', rev]];
+const t2 = $t.k5 + Q.map(([l, v]) => $q.bf + esc(t(lang, l)) + $q.bg + num(v, lang) + $q.bh + pc(v) + $q.bi).join('') +
+$q.bf + esc(t(lang, $q.bn, { mo: moN })) + $q.bg + num(added, lang) + $t.k6 + esc(t(lang, $q.bo, { n: num(P.length, lang) })) + $q.aw + pre(lang) + $t.k7 + pre(lang) + $t.k8 + pre(lang) + $q.bp;
 const byMo = new Map(); for (const d of days) byMo.set(d.d.slice(0, 7), d);
 const past = [...byMo.entries()].filter(([m]) => m !== mo).reverse();
-const t3 = past.length ? TB.kbx_n31s__t.k9 + esc(t(lang, 'm_month')) + '</th>' + K.map(([l]) => '<th scope="col" class="k-n">' + esc(t(lang, l)) + '</th>').join('') + '</tr></thead><tbody>' + past.map(([m, d]) => '<tr><th scope="row">' + esc(monthName(m, lang)) + ' (' + esc(fdt(d.d, lang)) + ')</th>' + K.map(([, k]) => '<td class="k-n">' + (d[k] != null ? num(d[k], lang) : '-') + '</td>').join('') + '</tr>').join('') + '</tbody></table></div>' : '<p>' + esc(t(lang, 'm_first')) + '</p>';
+const t3 = past.length ? $t.k9 + esc(t(lang, $q.bq)) + '</th>' + K.map(([l]) => $q.br + esc(t(lang, l)) + '</th>').join('') + $q.bs + past.map(([m, d]) => $q.bf + esc(monthName(m, lang)) + ' (' + esc(fdt(d.d, lang)) + $q.bt + K.map(([, k]) => $q.bu + (d[k] != null ? num(d[k], lang) : '-') + '</td>').join('') + '</tr>').join('') + $q.bj : '<p>' + esc(t(lang, $q.bv)) + '</p>';
 const rd = fdt(new Date().toISOString().slice(0, 10), lang);
-const body = '<h2>' + esc(moN) + '</h2>' + t1 + '<h2>' + esc(t(lang, 'm_quality')) + '</h2>' + t2 + '<h2>' + esc(t(lang, 'm_hist')) + '</h2><p class="n31-s">' + esc(t(lang, 'm_hist_p')) + '</p>' + t3 +
-'<p class="n31-s">' + esc(t(lang, 'm_src', { d: rd })) + TB.kbx_n31s__s.k0 + esc(t(lang, 'm_cite', { mo: moN, d: rd })) + ' <a href="' + pre(lang) + '/cite/">/cite/</a></p>';
-return page(shell, lang, { title: t(lang, 'm_title', { mo: moN }), desc: t(lang, 'm_desc', { mo: moN }), h1: t(lang, 'm_title', { mo: moN }), lead: t(lang, 'm_lead'), canon: ORIGIN + pre(lang) + '/reports/month/', alt: altOf('/reports/month/'),
-crumb: [[pre(lang) + '/reports/', t(lang, 'reports')], [null, moN]], body, mod: now.d, type: 'Report',
-ld: [{ '@type': 'Dataset', name: t(lang, 'm_title', { mo: moN }), description: t(lang, 'm_lead') || t(lang, 'm_title', { mo: moN }), url: ORIGIN + pre(lang) + '/reports/month/', license: TB.kbx_n31s__t.k10, creator: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' }, dateModified: now.d, temporalCoverage: mo, distribution: [{ '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: ORIGIN + '/data/progress.json' }] }] });
+const body = '<h2>' + esc(moN) + '</h2>' + t1 + '<h2>' + esc(t(lang, $q.bw)) + '</h2>' + t2 + '<h2>' + esc(t(lang, $q.bx)) + $q.by + esc(t(lang, $q.bz)) + '</p>' + t3 +
+$q.bA + esc(t(lang, 'm_src', { d: rd })) + $s.k0 + esc(t(lang, $q.bB, { mo: moN, d: rd })) + $q.aw + pre(lang) + $q.bC;
+return page(shell, lang, { title: t(lang, $q.bD, { mo: moN }), desc: t(lang, $q.bE, { mo: moN }), h1: t(lang, $q.bD, { mo: moN }), lead: t(lang, $q.bF), canon: ORIGIN + pre(lang) + $q.bG, alt: altOf($q.bG),
+crumb: [[pre(lang) + $q.bH, t(lang, $q.bI)], [null, moN]], body, mod: now.d, type: $q.bJ,
+ld: [{ '@type': $q.bK, name: t(lang, $q.bD, { mo: moN }), description: t(lang, $q.bF) || t(lang, $q.bD, { mo: moN }), url: ORIGIN + pre(lang) + $q.bG, license: $t.k10, creator: { '@type': $q.bL, name: $q.w, url: ORIGIN + '/' }, dateModified: now.d, temporalCoverage: mo, distribution: [{ '@type': $q.bM, encodingFormat: $q.bN, contentUrl: ORIGIN + $q.aO }] }] });
 }
 function codeBlocks(slug) {
-const p = 'https://kolaboro.com/api/v1/projects/' + slug, c = TB.kbx_n31s__t.k11, s = 'https://kolaboro.com/api/v1/slippage';
+const p = $q.bO + slug, c = $t.k11, s = $q.bP;
 return [
-['d_ex1', 'curl -s ' + p + '\n', TB.kbx_n31s__t.k12 + p + TB.kbx_n31s__t.k13, 'const r = await fetch("' + p + TB.kbx_n31s__t.k14],
-['d_ex2', 'curl -s "' + c + '"\n', TB.kbx_n31s__t.k15 + c + TB.kbx_n31s__s.k1, 'let url = "' + c + TB.kbx_n31s__s.k2],
-['d_ex3', 'curl -s ' + s + '\n', TB.kbx_n31s__t.k16 + s + TB.kbx_n31s__t.k17, 'const d = await (await fetch("' + s + '")).json();\nconsole.log(d.method);\n']
+['d_ex1', $q.bQ + p + '\n', $t.k12 + p + $t.k13, $q.bR + p + $t.k14],
+['d_ex2', $q.bS + c + '"\n', $t.k15 + c + $s.k1, $q.bT + c + $s.k2],
+['d_ex3', $q.bQ + s + '\n', $t.k16 + s + $t.k17, $q.bU + s + $q.bV]
 ];
 }
 async function docsPage(u, env, shell, lang) {
 const P = lang === 'en' ? '' : pre(lang);
-const card = (h, p, links) => '<div><h3>' + esc(h) + '</h3><p>' + esc(p) + '</p><p class="n31-s">' + links.map(([href, l, en]) => '<a href="' + href + '"' + (en && lang !== 'en' ? ' hreflang="en"' : '') + '>' + esc(l) + '</a>').join(' · ') + (h === t(lang, 'd_mcp') ? TB.kbx_n31s__t.k18 : '') + '</p></div>';
-const cards = '<div class="n31-g">' +
-card(t(lang, 'd_api'), t(lang, 'd_api_p'), [[P + '/api/docs/', '/api/docs/'], ['/api/v1/openapi.json', 'openapi.json'], [P + '/data/snapshots/', '/data/snapshots/']]) +
-card(t(lang, 'd_mcp'), t(lang, 'd_mcp_p'), [['/docs/mcp/', '/docs/mcp/', 1]]) +
-card(t(lang, 'd_wid'), t(lang, 'd_wid_p'), [[P + '/tools/widget/', '/tools/widget/']]) +
-card(t(lang, 'd_sdk'), t(lang, 'd_sdk_p'), [['/docs/sdk/', '/docs/sdk/', 1]]) +
-card(t(lang, 'd_hook'), t(lang, 'd_hook_p'), [['/docs/webhooks/', '/docs/webhooks/', 1]]) +
-card(t(lang, 'd_open'), t(lang, 'd_open_p'), [['/docs/api/', '/docs/api/', 1], ['/data/named.json', 'named.json'], ['/llms.txt', 'llms.txt']]) + '</div>';
-const ex = codeBlocks('amani-melasti').map(([k, sh, py, js]) => '<h3>' + esc(t(lang, k)) + TB.kbx_n31s__t.k19 + esc(sh) + TB.kbx_n31s__t.k20 + esc(py) + TB.kbx_n31s__t.k21 + esc(js) + '</code></pre>').join('');
-const body = cards + '<h2 id="examples">' + esc(t(lang, 'd_ex')) + '</h2><p>' + esc(t(lang, 'd_ex_p')) + '</p>' + ex + '<p class="n31-s">' + esc(t(lang, 'd_lim')) + '</p>';
-return page(shell, lang, { title: t(lang, 'd_title'), desc: t(lang, 'd_desc'), h1: t(lang, 'd_title'), lead: t(lang, 'd_lead'), canon: ORIGIN + pre(lang) + '/docs/', alt: altOf('/docs/'), crumb: [[null, t(lang, 'docs')]], body, type: 'TechArticle' });
+const card = (h, p, links) => $q.bW + esc(h) + $q.G + esc(p) + $q.bX + links.map(([href, l, en]) => $q.m + href + '"' + (en && lang !== 'en' ? $q.F : '') + '>' + esc(l) + '</a>').join(' · ') + (h === t(lang, 'd_mcp') ? $t.k18 : '') + $q.J;
+const cards = $q.bY +
+card(t(lang, 'd_api'), t(lang, $q.bZ), [[P + $q.ca, $q.ca], [$q.cb, $q.cc], [P + $q.cd, $q.cd]]) +
+card(t(lang, 'd_mcp'), t(lang, $q.ce), [[$q.cf, $q.cf, 1]]) +
+card(t(lang, 'd_wid'), t(lang, $q.cg), [[P + $q.ch, $q.ch]]) +
+card(t(lang, 'd_sdk'), t(lang, $q.ci), [[$q.cj, $q.cj, 1]]) +
+card(t(lang, $q.ck), t(lang, $q.cl), [[$q.cm, $q.cm, 1]]) +
+card(t(lang, $q.cn), t(lang, $q.co), [[$q.cp, $q.cp, 1], [$q.cq, $q.cr], [$q.cs, $q.ct]]) + $q.r;
+const ex = codeBlocks($q.cu).map(([k, sh, py, js]) => '<h3>' + esc(t(lang, k)) + $t.k19 + esc(sh) + $t.k20 + esc(py) + $t.k21 + esc(js) + $q.cv).join('');
+const body = cards + $q.cw + esc(t(lang, 'd_ex')) + $q.cx + esc(t(lang, $q.cy)) + '</p>' + ex + $q.bA + esc(t(lang, 'd_lim')) + '</p>';
+return page(shell, lang, { title: t(lang, $q.cz), desc: t(lang, $q.cA), h1: t(lang, $q.cz), lead: t(lang, $q.cB), canon: ORIGIN + pre(lang) + $q.cC, alt: altOf($q.cC), crumb: [[null, t(lang, 'docs')]], body, type: $q.cD });
 }
 const NOTES = [
 { s: 'overdue-handovers', d: '2026-11-18', h: 'How we decide that a handover date has passed', l: 'The rule behind the overdue notices, the monthly overdue report and the slippage statistics, and what it cannot tell you.',
@@ -192,13 +191,13 @@ async function notesPage(u, env, shell) {
 const m = /^\/engineering\/notes(?:\/([a-z0-9-]{3,60}))?\/?$/.exec(u.pathname), s = m && m[1];
 if (s) {
 const n = NOTES.find(x => x.s === s); if (!n) return null;
-const c = await asset(env, '/data/seo-checks.json', 'json', 300000);
-return page(shell, 'en', { title: n.h, desc: n.l, h1: n.h, lead: n.l, canon: ORIGIN + '/engineering/notes/' + s + '/', alt: () => ORIGIN + '/engineering/notes/' + s + '/', enOnly: true, crumb: [['/engineering/', 'Engineering'], ['/engineering/notes/', 'Notes'], [null, n.h]],
-body: '<p class="n31-s">' + esc(fdt(n.d, 'en')) + '</p>' + n.b(c) + TB.kbx_n31s__t.k22, type: 'TechArticle', mod: n.d,
-ld: [{ '@type': 'TechArticle', headline: n.h, datePublished: n.d, dateModified: n.d, author: { '@type': 'Organization', name: 'Kolaboro' }, url: ORIGIN + '/engineering/notes/' + s + '/' }] });
+const c = await asset(env, $q.cE, 'json', 300000);
+return page(shell, 'en', { title: n.h, desc: n.l, h1: n.h, lead: n.l, canon: ORIGIN + $q.cF + s + '/', alt: () => ORIGIN + $q.cF + s + '/', enOnly: true, crumb: [[$q.cG, $q.cH], [$q.cF, 'Notes'], [null, n.h]],
+body: $q.bA + esc(fdt(n.d, 'en')) + '</p>' + n.b(c) + $t.k22, type: $q.cD, mod: n.d,
+ld: [{ '@type': $q.cD, headline: n.h, datePublished: n.d, dateModified: n.d, author: { '@type': $q.bL, name: $q.w }, url: ORIGIN + $q.cF + s + '/' }] });
 }
-return page(shell, 'en', { title: 'Engineering notes', desc: TB.kbx_n31s__s.k3, h1: 'Engineering notes', lead: TB.kbx_n31s__t.k23, canon: ORIGIN + '/engineering/notes/', alt: () => ORIGIN + '/engineering/notes/', enOnly: true, crumb: [['/engineering/', 'Engineering'], [null, 'Notes']],
-body: '<ul>' + NOTES.map(n => '<li><a href="/engineering/notes/' + n.s + '/">' + esc(n.h) + '</a> <span class="n31-s">(' + esc(fdt(n.d, 'en')) + ')</span><br>' + esc(n.l) + '</li>').join('') + '</ul>', type: 'CollectionPage' });
+return page(shell, 'en', { title: $q.cI, desc: $s.k3, h1: $q.cI, lead: $t.k23, canon: ORIGIN + $q.cF, alt: () => ORIGIN + $q.cF, enOnly: true, crumb: [[$q.cG, $q.cH], [null, 'Notes']],
+body: '<ul>' + NOTES.map(n => $q.cJ + n.s + '/">' + esc(n.h) + $q.cK + esc(fdt(n.d, 'en')) + $q.cL + esc(n.l) + '</li>').join('') + '</ul>', type: $q.ah });
 }
 let TOPM = null;
 async function topByMk(env) {
@@ -209,25 +208,25 @@ TOPM = { ix, M }; return M;
 }
 function placeOf(p) {
 let m;
-if ((m = /^\/guides\/buying-off-plan\/([a-z-]+)\/$/.exec(p))) { const mks = TB.kbx_n31s__t.o_GUIDE[m[1]]; if (!mks) return null; return { mks, tr: TR_PLACES.find(P => !P.coi && !P.a && P.s === slugA(mks[0])) || TR_PLACES.find(P => !P.coi && !P.a && P.m.some(k => mks.includes(k))), name: mks[0] }; }
+if ((m = /^\/guides\/buying-off-plan\/([a-z-]+)\/$/.exec(p))) { const mks = $t.o_GUIDE[m[1]]; if (!mks) return null; return { mks, tr: TR_PLACES.find(P => !P.coi && !P.a && P.s === slugA(mks[0])) || TR_PLACES.find(P => !P.coi && !P.a && P.m.some(k => mks.includes(k))), name: mks[0] }; }
 if ((m = /^\/rankings\/transparency\/([a-z0-9-]+)\/$/.exec(p))) { const P = TR_PLACES.find(q => q.s === m[1] && !q.coi); return P ? { mks: P.m, tr: P, name: P.n } : null; }
 if ((m = /^\/handover\/20\d\d\/([a-z0-9-]+)\/$/.exec(p))) { const P = TR_PLACES.find(q => q.s === m[1] && !q.coi); return { slug: m[1], tr: P, mks: P ? P.m : null, name: P ? P.n : null }; }
 if ((m = /^\/m\/([^/]+)\/$/.exec(p))) { let k = m[1]; try { k = decodeURIComponent(k); } catch (e) {} const P = TR_PLACES.find(q => !q.coi && !q.a && q.s === slugA(k)) || TR_PLACES.find(q => !q.coi && !q.a && q.m.some(x => slugA(x) === slugA(k))); return { tr: P, mks: null, name: null, mOnly: true }; }
 return null;
 }
 export async function inject(req, u, env, r) {
-if (req.method !== 'GET' || !r || r.status !== 200 || !/text\/html/.test(r.headers.get('content-type') || '')) return r;
+if (req.method !== 'GET' || !r || r.status !== 200 || !/text\/html/.test(r.headers.get($q.aI) || '')) return r;
 if (!(await loadI18n(env))) return r;
 const lm = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?(.*)$/.exec(u.pathname), lang = lm[1] || 'en', p = '/' + lm[2].replace(/\/?$/, '/');
 if (/^\/developers\//.test(p)) return r;
 let pl = null; try { pl = placeOf(p); } catch (e) {}
 const wk = pl && pl.tr ? pl.tr : null;
-const head = (wk ? TB.kbx_n31s__t.k24 + esc(t(lang, 'fd_place', { p: mkName(wk.n, lang) })) + '" href="/weekly/' + wk.s + '/feed.atom">' : '') + TB.kbx_n31s__t.k25 + esc(t(lang, 'fd_all')) + '" href="/api/v1/changes/feed.json">';
-const line = TB.kbx_n31s__t.k26 + esc(t(lang, 'fd_h')) + ':</b> ' + (wk ? '<a href="' + pre(lang) + '/weekly/' + wk.s + '/">' + esc(t(lang, 'fd_place', { p: mkName(wk.n, lang) })) + '</a> (<a href="/weekly/' + wk.s + '/feed.atom">Atom</a>) · ' : '') + '<a href="/api/v1/changes/feed.json">' + esc(t(lang, 'fd_all')) + '</a> · <a href="/feed.xml">' + esc(t(lang, 'fd_ship')) + '</a></p></div></section>';
+const head = (wk ? $t.k24 + esc(t(lang, $q.cM, { p: mkName(wk.n, lang) })) + $q.cN + wk.s + $q.cO : '') + $t.k25 + esc(t(lang, $q.cP)) + $q.cQ;
+const line = $t.k26 + esc(t(lang, 'fd_h')) + $q.cR + (wk ? $q.m + pre(lang) + $q.cS + wk.s + '/">' + esc(t(lang, $q.cM, { p: mkName(wk.n, lang) })) + $q.cT + wk.s + $q.cU : '') + $q.cV + esc(t(lang, $q.cP)) + $q.cW + esc(t(lang, $q.cX)) + $q.cY;
 let ms = '';
 if (pl && pl.mks && !pl.mOnly) {
 try { const M = await topByMk(env), L = [].concat(...pl.mks.map(k => M.get(k) || [])).slice(0, 24);
-if (L.length) ms = TB.kbx_n31s__t.k27 + esc(t(lang, 'ms_h', { p: mkName(pl.name || pl.mks[0], lang) })) + '</h2><p>' + esc(t(lang, 'ms_p', { p: mkName(pl.name || pl.mks[0], lang) })) + TB.kbx_n31s__t.k28 + L.map(x => TB.kbx_n31s__t.k29 + pre(lang) + '/projects/' + x.s + '/"><bdi>' + esc(x.n) + '</bdi></a></li>').join('') + '</ul></div></section>'; } catch (e) {}
+if (L.length) ms = $t.k27 + esc(t(lang, 'ms_h', { p: mkName(pl.name || pl.mks[0], lang) })) + $q.cx + esc(t(lang, 'ms_p', { p: mkName(pl.name || pl.mks[0], lang) })) + $t.k28 + L.map(x => $t.k29 + pre(lang) + $q.an + x.s + $q.ao + esc(x.n) + $q.cZ).join('') + $q.da; } catch (e) {}
 }
 return new HTMLRewriter().on('head', { element(e) { e.append(head, { html: true }); } }).on('main', { element(e) { e.append(ms + line, { html: true }); } }).transform(r);
 }
@@ -236,17 +235,17 @@ const p = u.pathname;
 if (!/\.md$/.test(p) && !(await loadI18n(env))) return null;
 let m = /^\/projects\/([a-z0-9-]{1,90})\.md$/.exec(p);
 if (m) {
-const C = await import('./kbx_cite.js'), au = new URL('/answers/' + m[1] + '.md', u);
+const C = await import('./kbx_cite.js'), au = new URL($q.db + m[1] + '.md', u);
 const r = await C.handle(new Request(au, { method: 'GET', headers: req.headers }), au, env, ctx, shell); if (!r || r.status !== 200) return null;
-const h = new Headers(r.headers); h.set('content-type', 'text/markdown; charset=utf-8'); h.set('link', '<' + ORIGIN + '/projects/' + m[1] + '/>; rel="canonical"'); h.set('access-control-allow-origin', '*');
+const h = new Headers(r.headers); h.set($q.aI, $q.dc); h.set('link', '<' + ORIGIN + $q.an + m[1] + $q.dd); h.set($q.de, '*');
 return new Response(r.body, { status: 200, headers: h });
 }
 if (!p.endsWith('/')) return Response.redirect(ORIGIN + p + '/' + u.search, 301);
 m = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?(.*?)\/$/.exec(p); const lang = m[1] || 'en', what = m[2];
 try {
 if (what === 'tools') return await toolsHub(u, env, shell, lang);
-if (what === 'glossary') return await glossaryPage(u, env, shell, lang);
-if (what === 'reports/month') return await monthPage(u, env, shell, lang);
+if (what === $q.df) return await glossaryPage(u, env, shell, lang);
+if (what === $q.dg) return await monthPage(u, env, shell, lang);
 if (what === 'docs') return await docsPage(u, env, shell, lang);
 if (/^engineering\/notes/.test(what)) return await notesPage(u, env, shell);
 } catch (e) { return null; }

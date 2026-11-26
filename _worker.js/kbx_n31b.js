@@ -1,4 +1,5 @@
 // comments: _notes/kolaboro-worker-comments.txt
+const $q = TB.kbx_n31b__q, $s = TB.kbx_n31b__s, $t = TB.kbx_n31b__t;   // n40 k46: short names for this module's string tables (strings in /data/i18n/k19s.json, k17s.json, k46s.json)
 import { t31, n31js, loadS } from './kbx_n31b_page.js';
 import { trustRender, head, crumbLd, progData } from './kbx_trust.js';
 import { trData } from './kbx_tr.js';
@@ -11,24 +12,24 @@ export const PAGES = ['/case-studies/', '/case-studies/aykon-city-3/', '/conflic
 export const REVIEWED = '2026-11-18';
 const MAIL = 'hello@kolaboro.com';
 const pre = l => l === 'en' ? '' : '/' + l;
-const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-const bdi = s => '<bdi>' + esc(s) + '</bdi>';
+const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': $q.a, "'": '&#39;' }[c]));
+const bdi = s => '<bdi>' + esc(s) + $q.b;
 const t = (lang, k, v) => t31(lang, k, v);
 const tv = (lang, k, v) => esc(t31(lang, k)).replace(/\{(\w+)\}/g, (m, a) => v && v[a] != null ? v[a] : m);
 const nf = (lang, n, d) => Number(n).toLocaleString(LOC[lang] || 'en-GB', { maximumFractionDigits: d == null ? 0 : d, minimumFractionDigits: d || 0 });
-const fdt = (iso, lang) => { const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(iso || ''); if (!m) return String(iso || ''); try { return new Intl.DateTimeFormat(LOC[lang] || 'en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(Date.UTC(+m[1], +m[2] - 1, +m[3]))); } catch (e) { return iso.slice(0, 10); } };
-const tm = (iso, lang) => '<time datetime="' + esc(String(iso).slice(0, 10)) + '">' + esc(fdt(iso, lang)) + '</time>';
-const mailA = (subj) => '<a href="mailto:' + MAIL + (subj ? '?subject=' + encodeURIComponent(subj) : '') + '"><bdi>' + MAIL + '</bdi></a>';
-const ext = (u, label) => '<a class="k-src" href="' + esc(u) + TB.kbx_n31b__t.k0 + esc(label || u.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')) + '</bdi></a>';
+const fdt = (iso, lang) => { const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(iso || ''); if (!m) return String(iso || ''); try { return new Intl.DateTimeFormat(LOC[lang] || 'en-GB', { day: $q.c, month: 'long', year: $q.c, timeZone: 'UTC' }).format(new Date(Date.UTC(+m[1], +m[2] - 1, +m[3]))); } catch (e) { return iso.slice(0, 10); } };
+const tm = (iso, lang) => $q.d + esc(String(iso).slice(0, 10)) + '">' + esc(fdt(iso, lang)) + $q.e;
+const mailA = (subj) => $q.f + MAIL + (subj ? $q.g + encodeURIComponent(subj) : '') + $q.h + MAIL + $q.i;
+const ext = (u, label) => $q.j + esc(u) + $t.k0 + esc(label || u.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')) + $q.i;
 const ul = L => '<ul>' + L.map(x => '<li>' + esc(x) + '</li>').join('') + '</ul>';
-const reviewed = lang => '<p class="k-small k-muted">' + tv(lang, 'upd', { d: tm(REVIEWED, lang) }) + '</p>';
-const links = (lang, L) => '<h2>' + esc(t(lang, 'rel')) + '</h2><ul class="k31-rel">' + L.map(([h, k]) => '<li><a href="' + (h.startsWith('/') && !/^\/(independence|registers|metrics|buyer-reports|developers\/reply)\b/.test(h) ? pre(lang) + h : h) + '">' + esc(t(lang, k)) + '</a></li>').join('') + '</ul>';
+const reviewed = lang => $q.k + tv(lang, 'upd', { d: tm(REVIEWED, lang) }) + '</p>';
+const links = (lang, L) => '<h2>' + esc(t(lang, 'rel')) + $q.l + L.map(([h, k]) => $q.m + (h.startsWith('/') && !/^\/(independence|registers|metrics|buyer-reports|developers\/reply)\b/.test(h) ? pre(lang) + h : h) + '">' + esc(t(lang, k)) + $q.n).join('') + '</ul>';
 const SHARED = (globalThis.__kbJson = globalThis.__kbJson || {});
 async function load(env, name) {
 const m = SHARED[name]; if (m && (m.a || Date.now() - m.t < 600000)) return m.v;
 let r = null, a = false;
-try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/' + name)); a = !!(r && r.ok); } catch (e) { r = null; }
-if (!r || !r.ok) r = await fetch(ORIGIN + '/data/' + name, { cf: { cacheTtl: 300, cacheEverything: true } });
+try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + $q.o + name)); a = !!(r && r.ok); } catch (e) { r = null; }
+if (!r || !r.ok) r = await fetch(ORIGIN + $q.p + name, { cf: { cacheTtl: 300, cacheEverything: true } });
 if (!r.ok) throw new Error(name + ' ' + r.status);
 const v = await r.json(); SHARED[name] = { t: Date.now(), v, a }; return v;
 }
@@ -46,7 +47,7 @@ sources: [
 ['https://dubailand.gov.ae/en/eservices/real-estate-project-status-landing/', 'DLD Project Status Enquiry (captcha; probed by our checker on 13 Nov 2026)', '2026-11-13'],
 ['https://kolaboro.com/data/construction-progress.json', 'Kolaboro Sentinel-2 construction series', null]]
 };
-const mon = (a, b) => { const x = Date.parse(a + 'T00:00:00Z'), y = Date.parse(b + 'T00:00:00Z'); return (y - x) / (864e5 * 30.4375); };
+const mon = (a, b) => { const x = Date.parse(a + $q.q), y = Date.parse(b + $q.q); return (y - x) / (864e5 * 30.4375); };
 const ym = d => { const m = /^(\d{4})-(\d{2})/.exec(d); return m ? +m[1] * 12 + +m[2] : 0; };
 function c1Math() {
 const I = C1.inspections, a = I[I.length - 1], b = I[0], c = I[1];
@@ -55,111 +56,111 @@ const left = mon(b[0], C1.now.completion), rem = +(100 - b[1]).toFixed(2);
 return { a, b, c, mo, pts, avg: pts / mon(a[0], b[0]), mo2, pts2, rem, need: rem / left, moved: ym(C1.now.completion) - ym(C1.first.d) };
 }
 function casePage(lang, cs) {
-const M = c1Math(), P = pre(lang) + '/projects/' + C1.ps + '/';
-const cr = [[t(lang, 'cs_h1'), pre(lang) + '/case-studies/'], [C1.name, pre(lang) + '/case-studies/' + C1.slug + '/']];
-const en = s => '<span lang="en" dir="ltr">' + esc(s) + '</span>';
-const rows = C1.inspections.map((r, i) => { const prev = C1.inspections[i + 1]; return '<tr><td>' + tm(r[0], lang) + '</td><td class="k-n">' + nf(lang, r[1], 2) + ' %</td><td class="k-n">' + (prev ? '+' + nf(lang, r[1] - prev[1], 2) : '') + '</td></tr>'; }).join('');
+const M = c1Math(), P = pre(lang) + $q.r + C1.ps + '/';
+const cr = [[t(lang, 'cs_h1'), pre(lang) + $q.s], [C1.name, pre(lang) + $q.s + C1.slug + '/']];
+const en = s => $q.t + esc(s) + $q.u;
+const rows = C1.inspections.map((r, i) => { const prev = C1.inspections[i + 1]; return $q.v + tm(r[0], lang) + $q.w + nf(lang, r[1], 2) + $q.x + (prev ? '+' + nf(lang, r[1] - prev[1], 2) : '') + $q.y; }).join('');
 const th = t(lang, 'c1_th');
-const sat = cs && cs.sat && cs.sat.status === 'visible change' ? '<h2 id="space">' + esc(t(lang, 'c1_space_h')) + '</h2><p>' + tv(lang, 'c1_space', { x: nf(lang, cs.sat.changed_pct, 1), d: tm(cs.sat.date, lang) }) + ' <a class="k-src" href="' + P + '#space">kolaboro.com</a></p>' : '';
-const src = '<h2 id="sources">' + esc(t(lang, 'src_h')) + '</h2><ol>' + C1.sources.map(([u, l, d]) => '<li>' + ext(u, u.replace(/^https?:\/\/(www\.)?/, '').split('/')[0]) + ' <span lang="en" dir="ltr">' + esc(l) + '</span>' + (d ? ' <span class="k-muted">(' + tv(lang, 'read', { d: tm(d, lang) }) + ')</span>' : '') + '</li>').join('') + '</ol>';
-const body = '<div class="kpg">' + head(lang, cr, esc(t(lang, 'c1_h1')), esc(t(lang, 'c1_lead')), reviewed(lang)) + '<div class="k-prose">' +
-'<h2 id="project">' + esc(t(lang, 'c1_what_h')) + '</h2><p>' + tv(lang, 'c1_what', { no: bdi(C1.no), reg: tm(C1.registered, lang), st: tm(C1.start, lang), co: en(C1.company), dn: bdi(C1.dldDev), u: nf(lang, C1.units), bank: en(C1.bank) }) + ' ' + ext(C1.sources[0][0], 'dubairealestateiq.com') + '</p>' +
-'<h2 id="first">' + esc(t(lang, 'c1_then_h')) + '</h2><p>' + tv(lang, 'c1_then', { r: tm(C1.first.record, lang), a: tm(C1.first.d, lang), d: tm(C1.now.read, lang) }) + ' ' + ext(C1.sources[1][0], 'binayah.com') + '</p>' +
-'<h2 id="now">' + esc(t(lang, 'c1_now_h')) + '</h2><p>' + tv(lang, 'c1_now', { d: tm(C1.now.read, lang), sta: en(C1.now.status), c: tm(C1.now.completion, lang), pct: nf(lang, C1.now.pct, 2), i: tm(C1.now.inspected, lang), m: nf(lang, M.moved), q: en(C1.agency) }) + ' ' + ext(C1.sources[0][0], 'dubairealestateiq.com') + ' ' + ext(C1.sources[2][0], 'a1properties.ae') + '</p>' +
-'<p class="k-small k-muted">' + esc(t(lang, 'c1_dld')) + ' ' + ext(C1.sources[4][0], 'dubailand.gov.ae') + '</p>' +
-'<h2 id="inspections">' + esc(t(lang, 'c1_insp_h')) + TB.kbx_n31b__t.k1 + esc(th[0]) + '</th><th scope="col" class="k-n">' + esc(th[1]) + '</th><th scope="col" class="k-n">' + esc(th[2]) + '</th></tr></thead><tbody>' + rows + '</tbody></table></div>' +
-'<h2 id="arithmetic">' + esc(t(lang, 'c1_math_h')) + '</h2><p>' + tv(lang, 'c1_math', { a: tm(M.a[0], lang), b: tm(M.b[0], lang), c: tm(M.c[0], lang), mo: nf(lang, M.mo), pts: nf(lang, M.pts, 2), avg: nf(lang, M.avg, 2), mo2: nf(lang, M.mo2), pts2: nf(lang, M.pts2, 2), due: tm(C1.now.completion, lang), rem: nf(lang, M.rem, 2), need: nf(lang, M.need, 1) }) + '</p>' +
-sat + '<h2 id="developer">' + esc(t(lang, 'c1_dev_h')) + '</h2><p>' + esc(t(lang, 'c1_dev')) + ' ' + ext(C1.sources[3][0], 'tradearabia.com') + ' <a href="' + pre(lang) + '/developers/' + C1.devs + '/">' + bdi(C1.dev) + '</a></p>' +
-'<h2 id="check">' + esc(t(lang, 'c1_buyer_h')) + '</h2>' + ul(t(lang, 'c1_buyer')) +
-'<h2 id="reply">' + esc(t(lang, 'c1_reply_h')) + '</h2><p>' + esc(t(lang, 'c1_reply')) + TB.kbx_n31b__t.k2 + C1.id + '">' + esc(t(lang, 'c1_reply_b')) + '</a></p>' +
-'<p><a href="' + P + '">' + esc(t(lang, 'c1_more')) + '</a> · <a href="/data/cases/' + C1.slug + '.json">' + esc(t(lang, 'c1_dl')) + '</a></p>' + src +
-links(lang, [['/case-studies/', 'l_case'], ['/what-we-cannot-know/', 'l_cant'], ['/corrections/', 'l_corr'], ['/conflicts-of-interest/', 'l_coi']]) + '</div></div></section></div>';
-const title = t(lang, 'c1_title'), desc = t(lang, 'c1_desc'), url = ORIGIN + pre(lang) + '/case-studies/' + C1.slug + '/';
-return { path: '/case-studies/' + C1.slug + '/', title, desc, body, ld: [{ '@type': 'Article', '@id': url + '#article', url, headline: title, description: desc, inLanguage: lang, datePublished: REVIEWED, dateModified: C1.now.read, author: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' }, publisher: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' }, about: { '@type': 'Place', name: C1.name + ', Business Bay, Dubai' }, isBasedOn: C1.sources.map(s => s[0]) }, crumbLd(lang, cr)] };
+const sat = cs && cs.sat && cs.sat.status === $q.z ? $q.A + esc(t(lang, $q.B)) + $q.C + tv(lang, $q.D, { x: nf(lang, cs.sat.changed_pct, 1), d: tm(cs.sat.date, lang) }) + $q.E + P + $q.F : '';
+const src = $q.G + esc(t(lang, 'src_h')) + $q.H + C1.sources.map(([u, l, d]) => '<li>' + ext(u, u.replace(/^https?:\/\/(www\.)?/, '').split('/')[0]) + $q.I + esc(l) + $q.u + (d ? $q.J + tv(lang, 'read', { d: tm(d, lang) }) + $q.K : '') + '</li>').join('') + '</ol>';
+const body = $q.L + head(lang, cr, esc(t(lang, 'c1_h1')), esc(t(lang, $q.M)), reviewed(lang)) + $q.N +
+$q.O + esc(t(lang, $q.P)) + $q.C + tv(lang, $q.Q, { no: bdi(C1.no), reg: tm(C1.registered, lang), st: tm(C1.start, lang), co: en(C1.company), dn: bdi(C1.dldDev), u: nf(lang, C1.units), bank: en(C1.bank) }) + ' ' + ext(C1.sources[0][0], $q.R) + '</p>' +
+$q.S + esc(t(lang, $q.T)) + $q.C + tv(lang, $q.U, { r: tm(C1.first.record, lang), a: tm(C1.first.d, lang), d: tm(C1.now.read, lang) }) + ' ' + ext(C1.sources[1][0], $q.V) + '</p>' +
+$q.W + esc(t(lang, $q.X)) + $q.C + tv(lang, $q.Y, { d: tm(C1.now.read, lang), sta: en(C1.now.status), c: tm(C1.now.completion, lang), pct: nf(lang, C1.now.pct, 2), i: tm(C1.now.inspected, lang), m: nf(lang, M.moved), q: en(C1.agency) }) + ' ' + ext(C1.sources[0][0], $q.R) + ' ' + ext(C1.sources[2][0], $q.Z) + '</p>' +
+$q.k + esc(t(lang, $q.aa)) + ' ' + ext(C1.sources[4][0], $q.ab) + '</p>' +
+$q.ac + esc(t(lang, $q.ad)) + $t.k1 + esc(th[0]) + $q.ae + esc(th[1]) + $q.ae + esc(th[2]) + $q.af + rows + $q.ag +
+$q.ah + esc(t(lang, $q.ai)) + $q.C + tv(lang, $q.aj, { a: tm(M.a[0], lang), b: tm(M.b[0], lang), c: tm(M.c[0], lang), mo: nf(lang, M.mo), pts: nf(lang, M.pts, 2), avg: nf(lang, M.avg, 2), mo2: nf(lang, M.mo2), pts2: nf(lang, M.pts2, 2), due: tm(C1.now.completion, lang), rem: nf(lang, M.rem, 2), need: nf(lang, M.need, 1) }) + '</p>' +
+sat + $q.ak + esc(t(lang, $q.al)) + $q.C + esc(t(lang, $q.am)) + ' ' + ext(C1.sources[3][0], $q.an) + $q.ao + pre(lang) + $q.ap + C1.devs + '/">' + bdi(C1.dev) + $q.aq +
+$q.ar + esc(t(lang, $q.as)) + '</h2>' + ul(t(lang, $q.at)) +
+$q.au + esc(t(lang, $q.av)) + $q.C + esc(t(lang, $q.aw)) + $t.k2 + C1.id + '">' + esc(t(lang, $q.ax)) + $q.aq +
+$q.ay + P + '">' + esc(t(lang, $q.az)) + $q.aA + C1.slug + $q.aB + esc(t(lang, 'c1_dl')) + $q.aq + src +
+links(lang, [[$q.s, $q.aC], [$q.aD, $q.aE], [$q.aF, $q.aG], [$q.aH, 'l_coi']]) + $q.aI;
+const title = t(lang, $q.aJ), desc = t(lang, $q.aK), url = ORIGIN + pre(lang) + $q.s + C1.slug + '/';
+return { path: $q.s + C1.slug + '/', title, desc, body, ld: [{ '@type': $q.aL, '@id': url + $q.aM, url, headline: title, description: desc, inLanguage: lang, datePublished: REVIEWED, dateModified: C1.now.read, author: { '@type': $q.aN, name: $q.aO, url: ORIGIN + '/' }, publisher: { '@type': $q.aN, name: $q.aO, url: ORIGIN + '/' }, about: { '@type': 'Place', name: C1.name + $q.aP }, isBasedOn: C1.sources.map(s => s[0]) }, crumbLd(lang, cr)] };
 }
 function caseJson() {
 const M = c1Math();
-return Object.assign({ name: 'Kolaboro case study 1: ' + C1.name, page: ORIGIN + '/case-studies/' + C1.slug + '/', project_page: ORIGIN + '/projects/' + C1.ps + '/', licence: TB.kbx_n31b__t.k3, published: REVIEWED, note: TB.kbx_n31b__s.k0 }, C1, { months_moved: M.moved, arithmetic: { from: M.a, to: M.b, months: M.mo, points: M.pts, points_per_month: +M.avg.toFixed(3), remaining_points: M.rem, points_per_month_needed: +M.need.toFixed(2) } });
+return Object.assign({ name: $q.aQ + C1.name, page: ORIGIN + $q.s + C1.slug + '/', project_page: ORIGIN + $q.r + C1.ps + '/', licence: $t.k3, published: REVIEWED, note: $s.k0 }, C1, { months_moved: M.moved, arithmetic: { from: M.a, to: M.b, months: M.mo, points: M.pts, points_per_month: +M.avg.toFixed(3), remaining_points: M.rem, points_per_month_needed: +M.need.toFixed(2) } });
 }
 function casesHub(lang) {
-const M = c1Math(), cr = [[t(lang, 'cs_h1'), pre(lang) + '/case-studies/']];
-const body = '<div class="kpg">' + head(lang, cr, esc(t(lang, 'cs_h1')), esc(t(lang, 'cs_lead')), reviewed(lang)) + '<div class="k-prose">' +
-'<ol class="k31-rel"><li><a href="' + pre(lang) + '/case-studies/' + C1.slug + '/">' + esc(t(lang, 'cs_one', { n: C1.name, p: 'Dubai', a: fdt(C1.first.d, lang), b: fdt(C1.now.completion, lang) })) + '</a></li></ol>' +
-'<p>' + esc(t(lang, 'cs_rule')) + '</p>' + links(lang, [['/buyer-cases/', 'l_bcase'], ['/what-we-cannot-know/', 'l_cant'], ['/corrections/', 'l_corr']]) + '</div></div></section></div>';
-const title = t(lang, 'cs_title'), desc = t(lang, 'cs_desc'), url = ORIGIN + pre(lang) + '/case-studies/';
-return { path: '/case-studies/', title, desc, body, ld: [{ '@type': 'CollectionPage', '@id': url + '#page', url, name: title, description: desc, inLanguage: lang, dateModified: REVIEWED, hasPart: [{ '@type': 'Article', url: ORIGIN + pre(lang) + '/case-studies/' + C1.slug + '/', headline: t(lang, 'c1_title') }] }, crumbLd(lang, cr)] };
+const M = c1Math(), cr = [[t(lang, 'cs_h1'), pre(lang) + $q.s]];
+const body = $q.L + head(lang, cr, esc(t(lang, 'cs_h1')), esc(t(lang, $q.aR)), reviewed(lang)) + $q.N +
+$q.aS + pre(lang) + $q.s + C1.slug + '/">' + esc(t(lang, $q.aT, { n: C1.name, p: 'Dubai', a: fdt(C1.first.d, lang), b: fdt(C1.now.completion, lang) })) + $q.aU +
+'<p>' + esc(t(lang, $q.aV)) + '</p>' + links(lang, [[$q.aW, $q.aX], [$q.aD, $q.aE], [$q.aF, $q.aG]]) + $q.aI;
+const title = t(lang, $q.aY), desc = t(lang, $q.aZ), url = ORIGIN + pre(lang) + $q.s;
+return { path: $q.s, title, desc, body, ld: [{ '@type': $q.ba, '@id': url + '#page', url, name: title, description: desc, inLanguage: lang, dateModified: REVIEWED, hasPart: [{ '@type': $q.aL, url: ORIGIN + pre(lang) + $q.s + C1.slug + '/', headline: t(lang, $q.aJ) }] }, crumbLd(lang, cr)] };
 }
 function page(lang, path, kT, kD, kH, kL, inner, rel) {
   const cr = [[t(lang, kH), pre(lang) + path]];
-  const body = '<div class="kpg">' + head(lang, cr, esc(t(lang, kH)), esc(t(lang, kL)), reviewed(lang)) + '<div class="k-prose">' + inner + links(lang, rel) + '</div></div></section></div>';
+  const body = $q.L + head(lang, cr, esc(t(lang, kH)), esc(t(lang, kL)), reviewed(lang)) + $q.N + inner + links(lang, rel) + $q.aI;
   const title = t(lang, kT), desc = t(lang, kD), url = ORIGIN + pre(lang) + path;
-  return { path, title, desc, body, ld: [{ '@type': 'WebPage', '@id': url + '#page', url, name: title, description: desc, inLanguage: lang, dateModified: REVIEWED, publisher: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' } }, crumbLd(lang, cr)] };
+  return { path, title, desc, body, ld: [{ '@type': $q.bb, '@id': url + '#page', url, name: title, description: desc, inLanguage: lang, dateModified: REVIEWED, publisher: { '@type': $q.aN, name: $q.aO, url: ORIGIN + '/' } }, crumbLd(lang, cr)] };
 }
 function coiPage(lang) {
-const inner = '<h2 id="who">' + esc(t(lang, 'ci_who_h')) + '</h2><p>' + esc(t(lang, 'ci_who')) + ' <a href="' + pre(lang) + '/team/">' + esc(t(lang, 'l_team')) + '</a></p>' +
-'<h2 id="pay">' + esc(t(lang, 'ci_pay_h')) + '</h2>' + ul(t(lang, 'ci_pay')) + TB.kbx_n31b__t.k4 +
-'<h2 id="founder">' + esc(t(lang, 'ci_fd_h')) + '</h2><p>' + esc(t(lang, 'ci_fd')) + ' <a href="' + pre(lang) + '/methods/transparency-score/#coi">' + esc(t(lang, 'l_score')) + '</a></p>' +
-'<h2 id="rules">' + esc(t(lang, 'ci_rule_h')) + '</h2>' + ul(t(lang, 'ci_rule')) +
-'<h2 id="report">' + esc(t(lang, 'ci_rep_h')) + '</h2><p>' + tv(lang, 'ci_rep', { m: mailA(t(lang, 'l_coi')) }) + '</p>';
-return page(lang, '/conflicts-of-interest/', 'ci_title', 'ci_desc', 'ci_h1', 'ci_lead', inner, [['/independence/', 'l_ind'], ['/corrections/', 'l_corr'], ['/what-we-cannot-know/', 'l_cant'], ['/transparency-report/2026/', 'l_tr']]);
+const inner = $q.bc + esc(t(lang, $q.bd)) + $q.C + esc(t(lang, $q.be)) + $q.ao + pre(lang) + $q.bf + esc(t(lang, $q.bg)) + $q.aq +
+$q.bh + esc(t(lang, $q.bi)) + '</h2>' + ul(t(lang, $q.bj)) + $t.k4 +
+$q.bk + esc(t(lang, $q.bl)) + $q.C + esc(t(lang, 'ci_fd')) + $q.ao + pre(lang) + $q.bm + esc(t(lang, $q.bn)) + $q.aq +
+$q.bo + esc(t(lang, $q.bp)) + '</h2>' + ul(t(lang, $q.bq)) +
+$q.br + esc(t(lang, $q.bs)) + $q.C + tv(lang, $q.bt, { m: mailA(t(lang, 'l_coi')) }) + '</p>';
+return page(lang, $q.aH, $q.bu, $q.bv, 'ci_h1', $q.bw, inner, [[$q.bx, 'l_ind'], [$q.aF, $q.aG], [$q.aD, $q.aE], [$q.by, 'l_tr']]);
 }
 function cantPage(lang) {
-const th = t(lang, 'nk_th'), I = t(lang, 'nk_items');
-const inner = TB.kbx_n31b__t.k5 + th.map(h => '<th scope="col">' + esc(h) + '</th>').join('') + '</tr></thead><tbody>' + I.map(r => '<tr><th scope="row">' + esc(r[0]) + '</th><td>' + esc(r[1]) + '</td><td>' + esc(r[2]) + '</td></tr>').join('') + '</tbody></table></div>' +
-'<p><a href="' + pre(lang) + '/tools/contract-reader/">' + esc(I[2][0]) + ' ›</a></p>';
-return page(lang, '/what-we-cannot-know/', 'nk_title', 'nk_desc', 'nk_h1', 'nk_lead', inner, [['/how-we-score/', 'l_score'], ['/case-studies/', 'l_case'], ['/conflicts-of-interest/', 'l_coi'], ['/corrections/', 'l_corr']]);
+const th = t(lang, 'nk_th'), I = t(lang, $q.bz);
+const inner = $t.k5 + th.map(h => $q.bA + esc(h) + '</th>').join('') + $q.bB + I.map(r => $q.bC + esc(r[0]) + $q.bD + esc(r[1]) + $q.bE + esc(r[2]) + $q.y).join('') + $q.ag +
+$q.ay + pre(lang) + $q.bF + esc(I[2][0]) + $q.bG;
+return page(lang, $q.aD, $q.bH, $q.bI, 'nk_h1', $q.bJ, inner, [[$q.bK, $q.bn], [$q.s, $q.aC], [$q.aH, 'l_coi'], [$q.aF, $q.aG]]);
 }
 function rmPage(lang) {
-const inner = '<h2 id="never">' + esc(t(lang, 'rm_never_h')) + '</h2>' + ul(t(lang, 'rm_never')) +
-'<h2 id="stays">' + esc(t(lang, 'rm_stay_h')) + '</h2><p>' + esc(t(lang, 'rm_stay')) + '</p>' +
-'<h2 id="ask">' + esc(t(lang, 'rm_how_h')) + '</h2><p>' + tv(lang, 'rm_how', { m: mailA(t(lang, 'rm_subj')) }) + TB.kbx_n31b__t.k6 + MAIL + '?subject=' + encodeURIComponent(t(lang, 'rm_subj')) + '">' + esc(t(lang, 'rm_b')) + '</a></p>' +
-'<h2 id="next">' + esc(t(lang, 'rm_then_h')) + '</h2>' + ul(t(lang, 'rm_then')) +
-'<h2 id="copies">' + esc(t(lang, 'rm_copies_h')) + '</h2><p>' + esc(t(lang, 'rm_copies')) + ' ' + ext(TB.kbx_n31b__t.k7, 'Google') + '</p>' +
-'<p class="k-small">' + esc(t(lang, 'rm_law')) + ' ' + ext(TB.kbx_n31b__t.k8, 'EUR-Lex') + '</p>';
-return page(lang, '/data-removal/', 'rm_title', 'rm_desc', 'rm_h1', 'rm_lead', inner, [['/data-policy/', 'l_data'], ['/corrections/', 'l_corr'], ['/moderation/', 'l_mod'], ['/contact/', 'l_contact']]);
+const inner = $q.bL + esc(t(lang, $q.bM)) + '</h2>' + ul(t(lang, $q.bN)) +
+$q.bO + esc(t(lang, $q.bP)) + $q.C + esc(t(lang, $q.bQ)) + '</p>' +
+$q.bR + esc(t(lang, $q.bS)) + $q.C + tv(lang, $q.bT, { m: mailA(t(lang, $q.bU)) }) + $t.k6 + MAIL + $q.g + encodeURIComponent(t(lang, $q.bU)) + '">' + esc(t(lang, 'rm_b')) + $q.aq +
+$q.bV + esc(t(lang, $q.bW)) + '</h2>' + ul(t(lang, $q.bX)) +
+$q.bY + esc(t(lang, $q.bZ)) + $q.C + esc(t(lang, $q.ca)) + ' ' + ext($t.k7, $q.cb) + '</p>' +
+$q.cc + esc(t(lang, $q.cd)) + ' ' + ext($t.k8, $q.ce) + '</p>';
+return page(lang, $q.cf, $q.cg, $q.ch, 'rm_h1', $q.ci, inner, [[$q.cj, $q.ck], [$q.aF, $q.aG], [$q.cl, 'l_mod'], [$q.cm, $q.cn]]);
 }
 function fraudPage(lang) {
-const F = t(lang, 'fr_first'), CH = t(lang, 'fr_ch');
-const inner = '<h2 id="first">' + esc(t(lang, 'fr_first_h')) + '</h2><ul><li>' + esc(F[0]) + '</li><li>' + esc(F[1]) + '<ul>' + CH.map(c => '<li>' + esc(c[0]) + ': ' + ext(c[2], c[1]) + '</li>').join('') + '</ul></li></ul>' +
-'<h2 id="tip">' + esc(t(lang, 'fr_us_h')) + '</h2><p>' + tv(lang, 'fr_us', { m: mailA(t(lang, 'fr_subj')) }) + TB.kbx_n31b__t.k9 + MAIL + '?subject=' + encodeURIComponent(t(lang, 'fr_subj')) + '">' + esc(t(lang, 'fr_b')) + '</a></p><p>' + esc(t(lang, 'fr_pub')) + TB.kbx_n31b__t.k10 +
-'<h2 id="what">' + esc(t(lang, 'fr_do_h')) + '</h2>' + ul(t(lang, 'fr_do')) +
-'<h2 id="safe">' + esc(t(lang, 'fr_safe_h')) + '</h2>' + ul(t(lang, 'fr_safe')) +
-'<h2 id="cannot">' + esc(t(lang, 'fr_not_h')) + '</h2><p>' + esc(t(lang, 'fr_not')) + '</p>';
-return page(lang, '/report-fraud/', 'fr_title', 'fr_desc', 'fr_h1', 'fr_lead', inner, [['/moderation/', 'l_mod'], ['/data-removal/', 'l_rm'], ['/contact/', 'l_contact'], ['/what-we-cannot-know/', 'l_cant']]);
+const F = t(lang, $q.co), CH = t(lang, 'fr_ch');
+const inner = $q.S + esc(t(lang, $q.cp)) + $q.cq + esc(F[0]) + $q.cr + esc(F[1]) + '<ul>' + CH.map(c => '<li>' + esc(c[0]) + ': ' + ext(c[2], c[1]) + '</li>').join('') + $q.cs +
+$q.ct + esc(t(lang, $q.cu)) + $q.C + tv(lang, 'fr_us', { m: mailA(t(lang, $q.cv)) }) + $t.k9 + MAIL + $q.g + encodeURIComponent(t(lang, $q.cv)) + '">' + esc(t(lang, 'fr_b')) + $q.cw + esc(t(lang, $q.cx)) + $t.k10 +
+$q.cy + esc(t(lang, $q.cz)) + '</h2>' + ul(t(lang, 'fr_do')) +
+$q.cA + esc(t(lang, $q.cB)) + '</h2>' + ul(t(lang, $q.cC)) +
+$q.cD + esc(t(lang, $q.cE)) + $q.C + esc(t(lang, $q.cF)) + '</p>';
+return page(lang, $q.cG, $q.cH, $q.cI, 'fr_h1', $q.cJ, inner, [[$q.cl, 'l_mod'], [$q.cf, 'l_rm'], [$q.cm, $q.cn], [$q.aD, $q.aE]]);
 }
 function reportPage(lang, D) {
-const R = t(lang, 'trp_r'), th = t(lang, 'trp_th');
-const row = (k, v, src) => '<tr><th scope="row">' + esc(R[k]) + '</th><td class="k-n">' + (v == null ? '<span class="k-muted">-</span>' : nf(lang, v)) + '</td><td>' + src + '</td></tr>';
-const sa = p => '<a class="k-src" href="' + p + '">' + esc(p) + '</a>';
+const R = t(lang, 'trp_r'), th = t(lang, $q.cK);
+const row = (k, v, src) => $q.bC + esc(R[k]) + $q.cL + (v == null ? $q.cM : nf(lang, v)) + $q.bE + src + $q.y;
+const sa = p => $q.j + p + '">' + esc(p) + '</a>';
 const C = D.corr || {}, E = C.entries || [], A = (C.audits || [])[0], latest = E.reduce((m, e) => e.date > m ? e.date : m, '');
 const kinds = {}; for (const e of E) kinds[e.kind] = (kinds[e.kind] || 0) + 1;
-const rmN = E.filter(e => e.kind === 'removal').length;
-const inner = '<p>' + tv(lang, 'trp_period', { a: tm(D.first, lang), b: tm(D.today, lang) }) + '</p>' +
-'<h2 id="data">' + esc(t(lang, 'trp_data_h')) + TB.kbx_n31b__t.k11 + th.map((h, i) => '<th scope="col"' + (i === 1 ? ' class="k-n"' : '') + '>' + esc(h) + '</th>').join('') + '</tr></thead><tbody>' +
-row('p', D.projects, sa('/api/open/stats')) + row('mk', D.markets, sa('/api/open/stats')) + row('co', D.countries, sa('/api/open/stats')) + row('src', D.sources, sa('/data/bali-cases.json')) +
-row('rv', D.rv, sa('/data/named.json')) + row('rw', D.rw, sa('/data/named.json')) + row('cap', D.cap, sa('/data/register-captures.json')) + '</tbody></table></div>' +
-'<h2 id="errors">' + esc(t(lang, 'trp_err_h')) + '</h2><p>' + (E.length ? tv(lang, 'trp_err', { n: nf(lang, E.length), d: tm(latest, lang), ad: A ? tm(A.date, lang) : '-', w: A ? nf(lang, A.wrong) : '-', k: A ? nf(lang, A.claims - A.unchecked) : '-', r: A ? nf(lang, A.error_rate_pct, 1) : '-' }) : esc(t(lang, 'trp_err0'))) + ' <a class="k-src" href="' + pre(lang) + '/corrections/">' + esc(t(lang, 'l_corr')) + '</a></p>' +
-(E.length ? '<p class="k-small k-muted">' + esc(t(lang, 'trp_kinds', { list: Object.keys(kinds).sort().map(k => k + ' ' + kinds[k]).join(', ') })) + '</p>' : '') +
-'<h2 id="personal">' + esc(t(lang, 'trp_rm_h')) + '</h2><p>' + esc(t(lang, 'trp_rm', { n: nf(lang, rmN) })) + ' <a class="k-src" href="' + pre(lang) + '/data-removal/">' + esc(t(lang, 'l_rm')) + '</a></p>' +
-'<h2 id="money">' + esc(t(lang, 'trp_money_h')) + '</h2><p>' + esc(t(lang, 'trp_money')) + TB.kbx_n31b__t.k12 + pre(lang) + '/conflicts-of-interest/">' + esc(t(lang, 'l_coi')) + '</a></p>' +
-'<h2 id="not-yet">' + esc(t(lang, 'trp_not_h')) + '</h2>' + ul(t(lang, 'trp_not')) + '<p class="k-small k-muted">' + esc(t(lang, 'trp_next')) + '</p>';
-return page(lang, '/transparency-report/2026/', 'trp_title', 'trp_desc', 'trp_h1', 'trp_lead', inner, [['/corrections/', 'l_corr'], ['/conflicts-of-interest/', 'l_coi'], ['/registers/captures/', 'l_cap'], ['/what-we-cannot-know/', 'l_cant']]);
+const rmN = E.filter(e => e.kind === $q.cN).length;
+const inner = '<p>' + tv(lang, $q.cO, { a: tm(D.first, lang), b: tm(D.today, lang) }) + '</p>' +
+$q.cP + esc(t(lang, $q.cQ)) + $t.k11 + th.map((h, i) => $q.cR + (i === 1 ? $q.cS : '') + '>' + esc(h) + '</th>').join('') + $q.bB +
+row('p', D.projects, sa($q.cT)) + row('mk', D.markets, sa($q.cT)) + row('co', D.countries, sa($q.cT)) + row('src', D.sources, sa($q.cU)) +
+row('rv', D.rv, sa($q.cV)) + row('rw', D.rw, sa($q.cV)) + row('cap', D.cap, sa($q.cW)) + $q.ag +
+$q.cX + esc(t(lang, $q.cY)) + $q.C + (E.length ? tv(lang, $q.cZ, { n: nf(lang, E.length), d: tm(latest, lang), ad: A ? tm(A.date, lang) : '-', w: A ? nf(lang, A.wrong) : '-', k: A ? nf(lang, A.claims - A.unchecked) : '-', r: A ? nf(lang, A.error_rate_pct, 1) : '-' }) : esc(t(lang, $q.da))) + $q.E + pre(lang) + $q.db + esc(t(lang, $q.aG)) + $q.aq +
+(E.length ? $q.k + esc(t(lang, $q.dc, { list: Object.keys(kinds).sort().map(k => k + ' ' + kinds[k]).join(', ') })) + '</p>' : '') +
+$q.dd + esc(t(lang, $q.de)) + $q.C + esc(t(lang, $q.df, { n: nf(lang, rmN) })) + $q.E + pre(lang) + $q.dg + esc(t(lang, 'l_rm')) + $q.aq +
+$q.dh + esc(t(lang, $q.di)) + $q.C + esc(t(lang, $q.dj)) + $t.k12 + pre(lang) + $q.dk + esc(t(lang, 'l_coi')) + $q.aq +
+$q.dl + esc(t(lang, $q.dm)) + '</h2>' + ul(t(lang, $q.dn)) + $q.k + esc(t(lang, $q.do)) + '</p>';
+return page(lang, $q.by, $q.dp, $q.dq, $q.dr, $q.ds, inner, [[$q.aF, $q.aG], [$q.aH, 'l_coi'], [$q.dt, 'l_cap'], [$q.aD, $q.aE]]);
 }
 async function reportData(env) {
-const [named, corr, caps] = await Promise.all([load(env, 'named.json'), opt(env, 'corrections.json'), opt(env, 'register-captures.json')]);
+const [named, corr, caps] = await Promise.all([load(env, $q.du), opt(env, $q.dv), opt(env, $q.dw)]);
 let live = null; try { live = (await progData(env, null)).live; } catch (e) { live = null; }
 let ex = null; try { ex = (await trData(env)).excluded.length; } catch (e) { ex = null; }
 const P = named.projects || [], ads = P.map(x => x.ad).filter(d => /^\d{4}-\d{2}-\d{2}$/.test(d || '')).sort();
-return { first: ads[0] || '2026-10-28', today: new Date().toISOString().slice(0, 10), projects: live ? live.projects : P.length, markets: live ? live.markets : new Set(P.map(x => x.mk)).size, countries: live ? live.countries : new Set(P.map(x => x.co)).size, sources: live ? live.sources : null,
+return { first: ads[0] || $q.dx, today: new Date().toISOString().slice(0, 10), projects: live ? live.projects : P.length, markets: live ? live.markets : new Set(P.map(x => x.mk)).size, countries: live ? live.countries : new Set(P.map(x => x.co)).size, sources: live ? live.sources : null,
 rv: P.filter(x => x.rvw && x.rvw.ok).length, rw: P.filter(x => x.rw).length, ex, cap: caps ? (caps.items || []).filter(i => i.sha256).length : 0, corr, v: (named.updated || '') + '|' + P.length + '|' + ((corr && corr.updated) || '') + '|' + ((corr && corr.entries) || []).length + '|' + (caps ? caps.updated : '') };
 }
 function capPage(lang, C) {
 const th = t(lang, 'cp_th'), I = (C && C.items) || [];
-const files = it => (it.files || []).map(f => '<a href="' + esc(f.path) + '">' + esc(t(lang, f.kind === 'full' ? 'cp_full' : f.kind === 'shot' ? 'cp_shot' : f.kind === 'redacted' ? 'cp_red' : 'cp_ext')) + '</a> <span class="k31-h">' + esc(f.sha256.slice(0, 16)) + '…</span>').join('<br>');
-const rows = I.map(it => '<tr id="' + esc(it.id) + '"><td>' + (it.slug ? '<a href="' + pre(lang) + '/projects/' + esc(it.slug) + '/"><bdi>' + esc(it.name || it.id) + '</bdi></a>' : bdi(it.id)) + TB.kbx_n31b__t.k13 + esc(it.id) + TB.kbx_n31b__t.k14 + esc(it.register) + '</span><br>' + ext(it.url, it.url.replace(/^https?:\/\//, '').split('/')[0]) + '</td><td>' + tm(it.fetched_at, lang) + TB.kbx_n31b__t.k15 + esc(String(it.fetched_at).slice(11, 16)) + ' UTC</span></td><td>' + (it.files && it.files.length ? files(it) : esc(t(lang, 'cp_none'))) + '</td><td class="k31-h" dir="ltr">' + esc(it.sha256) + '<br><span class="k-muted">' + nf(lang, it.bytes) + ' B</span></td></tr>').join('');
-const inner = '<p class="k-small k-muted">' + esc(t(lang, 'cp_note')) + TB.kbx_n31b__t.k16 + th.map(h => '<th scope="col">' + esc(h) + '</th>').join('') + '</tr></thead><tbody>' + rows + '</tbody></table></div>' +
-'<h2 id="verify">' + esc(t(lang, 'cp_how_h')) + '</h2><p>' + esc(t(lang, 'cp_how')) + TB.kbx_n31b__t.k17 + (C && C.manifest_sha256 ? ' <span class="k31-h">' + esc(C.manifest_sha256) + '</span>' : '') + '</p>';
-return page(lang, '/registers/captures/', 'cp_title', 'cp_desc', 'cp_h1', 'cp_lead', inner, [['/registers/', 'l_cap'], ['/corrections/', 'l_corr'], ['/transparency-report/2026/', 'l_tr']]);
+const files = it => (it.files || []).map(f => $q.dy + esc(f.path) + '">' + esc(t(lang, f.kind === 'full' ? $q.dz : f.kind === 'shot' ? $q.dA : f.kind === $q.dB ? $q.dC : $q.dD)) + $q.dE + esc(f.sha256.slice(0, 16)) + $q.dF).join('<br>');
+const rows = I.map(it => $q.dG + esc(it.id) + $q.dH + (it.slug ? $q.dy + pre(lang) + $q.r + esc(it.slug) + $q.dI + esc(it.name || it.id) + $q.i : bdi(it.id)) + $t.k13 + esc(it.id) + $t.k14 + esc(it.register) + $q.dJ + ext(it.url, it.url.replace(/^https?:\/\//, '').split('/')[0]) + $q.bE + tm(it.fetched_at, lang) + $t.k15 + esc(String(it.fetched_at).slice(11, 16)) + $q.dK + (it.files && it.files.length ? files(it) : esc(t(lang, $q.dL))) + $q.dM + esc(it.sha256) + $q.dN + nf(lang, it.bytes) + $q.dO).join('');
+const inner = $q.k + esc(t(lang, $q.dP)) + $t.k16 + th.map(h => $q.bA + esc(h) + '</th>').join('') + $q.bB + rows + $q.ag +
+$q.dQ + esc(t(lang, $q.dR)) + $q.C + esc(t(lang, $q.dS)) + $t.k17 + (C && C.manifest_sha256 ? $q.dT + esc(C.manifest_sha256) + $q.u : '') + '</p>';
+return page(lang, $q.dt, $q.dU, $q.dV, 'cp_h1', $q.dW, inner, [[$q.dX, 'l_cap'], [$q.aF, $q.aG], [$q.by, 'l_tr']]);
 }
 function histPage(lang, H, ix, only) {
 const today = new Date().toISOString().slice(0, 10), days = (H && H.days) || [];
@@ -169,14 +170,14 @@ for (const k of Object.keys(live)) if (!devs[k]) devs[k] = { n: live[k].name, s:
 const L = Object.entries(devs).map(([k, d]) => { const ser = (d.s || []).map((v, i) => [days[i], v]).filter(p => p[1] != null); const lv = live[k] ? Math.round(live[k].s / live[k].n * 10) / 10 : null; if (lv != null && (!ser.length || ser[ser.length - 1][0] !== today)) ser.push([today, lv, 1]); const vals = ser.map(p => p[1]); const ch = vals.length > 1 && Math.max(...vals) !== Math.min(...vals); return { k, n: d.n || (live[k] && live[k].name) || k, np: live[k] ? live[k].n : d.np || null, ser, ch }; })
 .filter(r => r.ser.length && (only === 'all' ? true : only ? r.k === only : r.ch)).sort((a, b) => Math.abs(b.ser[b.ser.length - 1][1] - b.ser[0][1]) - Math.abs(a.ser[a.ser.length - 1][1] - a.ser[0][1]) || a.n.localeCompare(b.n));
 const th = t(lang, 'sh_th');
-const spark = ser => ser.map(p => '<time datetime="' + esc(p[0]) + '" title="' + esc(fdt(p[0], lang)) + '">' + esc(p[0].slice(5)) + (p[2] ? '*' : '') + '</time> ' + nf(lang, p[1], 1)).join(' · ');
-const rows = L.slice(0, 400).map(r => { const a = r.ser[0][1], b = r.ser[r.ser.length - 1][1], d = Math.round((b - a) * 10) / 10; return '<tr id="' + esc(r.k) + '"><th scope="row"><a href="' + pre(lang) + '/developers/' + esc(r.k) + '/"><bdi>' + esc(r.n) + '</bdi></a></th><td class="k-n">' + (r.np == null ? '' : nf(lang, r.np)) + '</td><td class="k-n">' + nf(lang, a, 1) + '</td><td class="k-n">' + nf(lang, b, 1) + '</td><td class="k-n">' + (d > 0 ? '+' : '') + nf(lang, d, 1) + '</td><td class="k-small">' + spark(r.ser) + '</td></tr>'; }).join('');
-const nav = '<p>' + (only ? '<a href="' + pre(lang) + '/score-history/">' + esc(t(lang, 'sh_only')) + '</a>' : '<b>' + esc(t(lang, 'sh_only')) + '</b>') + ' · ' + (only === 'all' ? '<b>' + esc(t(lang, 'sh_all')) + '</b>' : '<a href="' + pre(lang) + TB.kbx_n31b__t.k18 + esc(t(lang, 'sh_all')) + '</a>') + '</p>';
-const one = only && only !== 'all' && !L.length ? '<p class="k31-box">' + esc(t(lang, 'sh_none', { d: fdt(days[0] || today, lang) })) + '</p>' : '';
-const inner = '<p class="k-small k-muted">' + esc(t(lang, 'sh_m', { v: METHOD.v })) + ' * = ' + esc(t(lang, 'sh_today')) + '</p>' + nav + one +
-(rows ? TB.kbx_n31b__t.k19 + th.map((h, i) => '<th scope="col"' + (i && i < 5 ? ' class="k-n"' : '') + '>' + esc(h) + '</th>').join('') + '</tr></thead><tbody>' + rows + '</tbody></table></div>' : '') +
-TB.kbx_n31b__t.k20;
-const pg = page(lang, '/score-history/', 'sh_title', 'sh_desc', 'sh_h1', 'sh_lead', inner, [['/methods/transparency-score/', 'l_score'], ['/rankings/transparency/', 'l_rank'], ['/corrections/', 'l_corr']]);
+const spark = ser => ser.map(p => $q.d + esc(p[0]) + $q.dY + esc(fdt(p[0], lang)) + '">' + esc(p[0].slice(5)) + (p[2] ? '*' : '') + $q.dZ + nf(lang, p[1], 1)).join(' · ');
+const rows = L.slice(0, 400).map(r => { const a = r.ser[0][1], b = r.ser[r.ser.length - 1][1], d = Math.round((b - a) * 10) / 10; return $q.dG + esc(r.k) + $q.ea + pre(lang) + $q.ap + esc(r.k) + $q.dI + esc(r.n) + $q.eb + (r.np == null ? '' : nf(lang, r.np)) + $q.w + nf(lang, a, 1) + $q.w + nf(lang, b, 1) + $q.w + (d > 0 ? '+' : '') + nf(lang, d, 1) + $q.ec + spark(r.ser) + $q.y; }).join('');
+const nav = '<p>' + (only ? $q.dy + pre(lang) + $q.ed + esc(t(lang, $q.ee)) + '</a>' : '<b>' + esc(t(lang, $q.ee)) + '</b>') + ' · ' + (only === 'all' ? '<b>' + esc(t(lang, $q.ef)) + '</b>' : $q.dy + pre(lang) + $t.k18 + esc(t(lang, $q.ef)) + '</a>') + '</p>';
+const one = only && only !== 'all' && !L.length ? $q.eg + esc(t(lang, $q.eh, { d: fdt(days[0] || today, lang) })) + '</p>' : '';
+const inner = $q.k + esc(t(lang, 'sh_m', { v: METHOD.v })) + ' * = ' + esc(t(lang, $q.ei)) + '</p>' + nav + one +
+(rows ? $t.k19 + th.map((h, i) => $q.cR + (i && i < 5 ? $q.cS : '') + '>' + esc(h) + '</th>').join('') + $q.bB + rows + $q.ag : '') +
+$t.k20;
+const pg = page(lang, $q.ej, $q.ek, $q.el, 'sh_h1', $q.em, inner, [[$q.en, $q.bn], [$q.eo, $q.ep], [$q.aF, $q.aG]]);
 if (only) pg.noindex = true;
 return pg;
 }
@@ -185,31 +186,31 @@ const keep = (k, f) => { let v = BODY.get(k); if (!v) { v = f(); if (BODY.size >
 export async function handle(req, u, env, ctx, shell) {
 const p = u.pathname;
 if (!(await loadS(env))) return null;
-if (p === '/k/n31b.js') return new Response(n31js(), { headers: { 'content-type': 'application/javascript; charset=utf-8', 'cache-control': 'public, max-age=31536000, immutable', 'x-content-type-options': 'nosniff' } });
-if (p === '/data/cases/aykon-city-3.json') return new Response(JSON.stringify(caseJson(), null, 1), { headers: { 'content-type': 'application/json; charset=utf-8', 'access-control-allow-origin': '*', 'cache-control': 'public, max-age=3600' } });
+if (p === $q.eq) return new Response(n31js(), { headers: { 'content-type': $q.er, 'cache-control': $q.es, 'x-content-type-options': $q.et } });
+if (p === $q.eu) return new Response(JSON.stringify(caseJson(), null, 1), { headers: { 'content-type': $q.ev, 'access-control-allow-origin': '*', 'cache-control': $q.ew } });
 const m = RX.exec(p); if (!m || !shell) return null;
-if (!m[3]) return new Response(null, { status: 301, headers: { location: p + '/' + u.search, 'cache-control': 'public, max-age=86400' } });
+if (!m[3]) return new Response(null, { status: 301, headers: { location: p + '/' + u.search, 'cache-control': $q.ex } });
 const lang = m[1] || 'en', kind = m[2];
-if (kind === 'transparency-report') return new Response(null, { status: 301, headers: { location: pre(lang) + '/transparency-report/2026/', 'cache-control': 'public, max-age=86400' } });
+if (kind === $q.ey) return new Response(null, { status: 301, headers: { location: pre(lang) + $q.by, 'cache-control': $q.ex } });
 let pg;
 try {
-if (kind === 'case-studies') pg = keep(lang + '|cs', () => casesHub(lang));
-else if (kind === 'case-studies/aykon-city-3') { const cases = await opt(env, 'bali-cases.json'); const cs = cases ? (cases.cases || []).find(c => c.id === C1.id) : null; pg = keep(lang + '|c1|' + (cs && cs.sat ? cs.sat.date : ''), () => casePage(lang, cs)); }
-else if (kind === 'conflicts-of-interest') pg = keep(lang + '|ci', () => coiPage(lang));
-else if (kind === 'what-we-cannot-know') pg = keep(lang + '|nk', () => cantPage(lang));
-else if (kind === 'data-removal') pg = keep(lang + '|rm', () => rmPage(lang));
-else if (kind === 'report-fraud') pg = keep(lang + '|fr', () => fraudPage(lang));
-else if (kind === 'transparency-report/2026') { const D = await reportData(env); pg = keep(lang + '|tr|' + D.v + '|' + D.today, () => reportPage(lang, D)); }
-else if (kind === 'registers/captures') { const C = await opt(env, 'register-captures.json'); pg = keep(lang + '|cp|' + (C ? C.updated + (C.items || []).length : ''), () => capPage(lang, C)); }
-else if (kind === 'score-history') {
-const [H, ix] = await Promise.all([opt(env, 'score-history.json'), trData(env).catch(() => null)]);
+if (kind === $q.ez) pg = keep(lang + '|cs', () => casesHub(lang));
+else if (kind === $q.eA) { const cases = await opt(env, $q.eB); const cs = cases ? (cases.cases || []).find(c => c.id === C1.id) : null; pg = keep(lang + '|c1|' + (cs && cs.sat ? cs.sat.date : ''), () => casePage(lang, cs)); }
+else if (kind === $q.eC) pg = keep(lang + '|ci', () => coiPage(lang));
+else if (kind === $q.eD) pg = keep(lang + '|nk', () => cantPage(lang));
+else if (kind === $q.eE) pg = keep(lang + '|rm', () => rmPage(lang));
+else if (kind === $q.eF) pg = keep(lang + '|fr', () => fraudPage(lang));
+else if (kind === $q.eG) { const D = await reportData(env); pg = keep(lang + '|tr|' + D.v + '|' + D.today, () => reportPage(lang, D)); }
+else if (kind === $q.eH) { const C = await opt(env, $q.dw); pg = keep(lang + '|cp|' + (C ? C.updated + (C.items || []).length : ''), () => capPage(lang, C)); }
+else if (kind === $q.eI) {
+const [H, ix] = await Promise.all([opt(env, $q.eJ), trData(env).catch(() => null)]);
 const d = String(u.searchParams.get('d') || '').toLowerCase(), only = d === 'all' ? 'all' : /^[a-z0-9-]{2,90}$/.test(d) ? d : '';
 pg = keep(lang + '|sh|' + only + '|' + (H ? H.updated : '') + '|' + (ix ? ix.v : ''), () => histPage(lang, H, ix, only));
 }
 } catch (e) { return null; }
 if (!pg) return null;
-const res = await trustRender(lang, Object.assign({}, pg, { body: pg.body.replace('<div class="kpg">', TB.kbx_n31b__s.CSS + '<div class="kpg">') }), shell);
-if (pg.noindex) { const h = new Headers(res.headers); h.set('x-robots-tag', 'noindex, follow'); return new Response(res.body, { status: res.status, headers: h }); }
+const res = await trustRender(lang, Object.assign({}, pg, { body: pg.body.replace($q.L, $s.CSS + $q.L) }), shell);
+if (pg.noindex) { const h = new Headers(res.headers); h.set($q.eK, $q.eL); return new Response(res.body, { status: res.status, headers: h }); }
 return res;
 }
 export { casePage, casesHub, coiPage, cantPage, rmPage, fraudPage, reportPage, capPage, histPage, caseJson };

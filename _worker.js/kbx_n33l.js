@@ -1,13 +1,14 @@
 // comments: _notes/kolaboro-worker-comments.txt
+const $q = TB.kbx_n33l__q, $s = TB.kbx_n33l__s, $t = TB.kbx_n33l__t;   // n40 k46: short names for this module's string tables (strings in /data/i18n/k19s.json, k17s.json, k46s.json)
 import { TB } from './kbx_strings.js';
 const ORIGIN = 'https://kolaboro.com';
 export const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const pre = l => l === 'en' ? '' : '/' + l;
-const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': $q.a, "'": '&#39;' }[c]));
 let J = null, JP = null;
 export async function load(env) {
 if (J) return J;
-if (!JP) JP = (async () => { try { const r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/n33l.json')); if (r.ok) J = await r.json(); } catch (e) {} JP = null; return J; })();
+if (!JP) JP = (async () => { try { const r = await env.ASSETS.fetch(new Request(ORIGIN + $q.b)); if (r.ok) J = await r.json(); } catch (e) {} JP = null; return J; })();
 return JP;
 }
 const lab = (l, k) => (J.lab[l] && J.lab[l][k]) || J.lab.en[k] || k;
@@ -16,8 +17,8 @@ const FC = {};
 export function footer(lang) {
 if (!J) return '';
 if (FC[lang]) return FC[lang];
-const G = J.ft[lang] || J.ft.en, order = ['h_buyers', 'h_markets', 'h_data', 'h_about'];
-const h = order.map(k => G.find(g => g[0] === k)).filter(Boolean).map(g => '<div><h2 class="fh">' + esc(lab(lang, g[0])) + '</h2><ul>' + g[1].map(x => '<li><a href="' + esc(x[0]) + '"' + (lang !== 'en' && !/^\/(es|de|fr|nl|ru|zh|ar)\//.test(x[0]) ? ' hreflang="en"' : '') + '>' + esc(x[1]) + '</a></li>').join('') + '</ul></div>').join('');
+const G = J.ft[lang] || J.ft.en, order = [$q.c, $q.d, $q.e, $q.f];
+const h = order.map(k => G.find(g => g[0] === k)).filter(Boolean).map(g => $q.g + esc(lab(lang, g[0])) + $q.h + g[1].map(x => $q.i + esc(x[0]) + '"' + (lang !== 'en' && !/^\/(es|de|fr|nl|ru|zh|ar)\//.test(x[0]) ? $q.j : '') + '>' + esc(x[1]) + $q.k).join('') + $q.l).join('');
 return (FC[lang] = h);
 }
 const MS_RX = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:|projects\/|m\/|countries\/|countries\/[a-z0-9-]{2,60}\/|rankings\/)$/;
@@ -29,21 +30,21 @@ const c = /\/countries\/([a-z0-9-]{2,60})\/$/.exec(path), co = c ? c[1] : null;
 let L = J.ms.slice();
 if (co) L = L.filter(x => x[2] && slugC(x[2]) === co).concat(L.filter(x => !(x[2] && slugC(x[2]) === co)));
 const a = L.slice(0, 9).map(x => { const href = lang !== 'en' && has(x[3], lang) ? '/' + lang + x[0] : x[0];
-return '<a href="' + esc(href) + '"' + (lang !== 'en' && href === x[0] ? ' hreflang="en"' : '') + '><bdi>' + esc((x[5] && x[5][lang]) || x[4]) + '</bdi></a>'; }).join(' · ');
-return TB.kbx_n33l__s.MSCSS + '<nav class="n33-ms" aria-label="' + esc(lab(lang, 'ms_h')) + '"' + (lang === 'ar' ? ' dir="rtl"' : '') + '><div class="wrap"><b>' + esc(lab(lang, 'ms_h')) + ':</b> ' + a + ' <small>' + esc(lab(lang, 'ms_src')) + '</small></div></nav>';
+return $q.m + esc(href) + '"' + (lang !== 'en' && href === x[0] ? $q.j : '') + $q.n + esc((x[5] && x[5][lang]) || x[4]) + $q.o; }).join(' · ');
+return $s.MSCSS + $q.p + esc(lab(lang, 'ms_h')) + '"' + (lang === 'ar' ? $q.q : '') + $q.r + esc(lab(lang, 'ms_h')) + $q.s + a + $q.t + esc(lab(lang, $q.u)) + $q.v;
 }
 const LN = { en: 'English', es: 'Español', de: 'Deutsch', fr: 'Français', ru: 'Русский', nl: 'Nederlands', ar: 'العربية', zh: '简体中文' }, LO = ['en', 'es', 'de', 'fr', 'ru', 'nl', 'ar', 'zh'];
 export function lswHtml(lang, alt) {
 if (!J) return '';
 const cur = lang.toUpperCase();
-return '<style id="lsw-css">' + (J.lswcss || '') + TB.kbx_n33l__t.k0 + esc(lab(lang, 'language')) + ': ' + cur + ' (' + LN[lang] + TB.kbx_n33l__s.k0 + esc(lab(lang, 'language')) + ':</span> ' + cur + '</summary><ul>' +
-LO.map(l => '<li><a href="' + esc(alt[l] || pre(l) + '/') + '" hreflang="' + l + '" lang="' + l + '"' + (l === lang ? ' aria-current="page"' : '') + '>' + l.toUpperCase() + ' <span' + (l === 'ar' ? ' dir="rtl"' : '') + '>' + LN[l] + '</span></a></li>').join('') + '</ul></details>';
+return $q.w + (J.lswcss || '') + $t.k0 + esc(lab(lang, $q.x)) + ': ' + cur + ' (' + LN[lang] + $s.k0 + esc(lab(lang, $q.x)) + $q.y + cur + $q.z +
+LO.map(l => $q.i + esc(alt[l] || pre(l) + '/') + $q.A + l + $q.B + l + '"' + (l === lang ? $q.C : '') + '>' + l.toUpperCase() + $q.D + (l === 'ar' ? $q.q : '') + '>' + LN[l] + $q.E).join('') + $q.F;
 }
-export const lswMissing = (alt, seen) => LO.filter(l => alt[l] && !seen.has(l)).map(l => '<li><a href="' + esc(alt[l]) + '" hreflang="' + l + '" lang="' + l + '">' + l.toUpperCase() + ' <span' + (l === 'ar' ? ' dir="rtl"' : '') + '>' + LN[l] + '</span></a></li>').join('');
-export const altPath = href => { try { const u = new URL(href, ORIGIN); return u.hostname.replace(/^www\./, '') === 'kolaboro.com' ? u.pathname + u.search : null; } catch (e) { return null; } };
+export const lswMissing = (alt, seen) => LO.filter(l => alt[l] && !seen.has(l)).map(l => $q.i + esc(alt[l]) + $q.A + l + $q.B + l + '">' + l.toUpperCase() + $q.D + (l === 'ar' ? $q.q : '') + '>' + LN[l] + $q.E).join('');
+export const altPath = href => { try { const u = new URL(href, ORIGIN); return u.hostname.replace(/^www\./, '') === $q.G ? u.pathname + u.search : null; } catch (e) { return null; } };
 export async function devMarkets(req, u, env, r) {
 const m = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?developers\/([a-z0-9-]{1,90})\/$/.exec(u.pathname);
-if (!m || req.method !== 'GET' || !r || r.status !== 200 || !/text\/html/.test(r.headers.get('content-type') || '')) return r;
+if (!m || req.method !== 'GET' || !r || r.status !== 200 || !/text\/html/.test(r.headers.get($q.H) || '')) return r;
 const lang = m[1] || 'en';
 if (!(await load(env))) return r;
 let ix; try { ix = await (await import('./kbx_named.js')).data(env); } catch (e) { return r; }
@@ -54,11 +55,11 @@ let mkName = k => k; try { mkName = (await import('./kbx_hdate.js')).mkName; } c
 const slugM = k => encodeURIComponent(String(k).toLowerCase().replace(/\s+/g, '-'));
 const L = [...c].sort((a, b) => b[1] - a[1] || String(a[0]).localeCompare(b[0])).slice(0, 12).map(([k, n]) => {
 const tr = lang !== 'en' && ((ix.mk.get(k) || {}).k || 0) >= 5;
-return '<a href="' + (tr ? '/' + lang : '') + '/m/' + slugM(k) + '/"' + (lang !== 'en' && !tr ? ' hreflang="en"' : '') + '><bdi>' + esc(mkName(k, lang)) + '</bdi></a> (' + esc(lab(lang, n === 1 ? 'sm_n1' : 'sm_n').replace('{n}', n)) + ')';
+return $q.m + (tr ? '/' + lang : '') + '/m/' + slugM(k) + '/"' + (lang !== 'en' && !tr ? $q.j : '') + $q.n + esc(mkName(k, lang)) + $q.I + esc(lab(lang, n === 1 ? 'sm_n1' : 'sm_n').replace('{n}', n)) + ')';
 });
-const line = TB.kbx_n33l__t.k1 + esc(lab(lang, 'h_markets')) + ':</b> ' + L.join(' · ') + '</p>';
+const line = $t.k1 + esc(lab(lang, $q.d)) + $q.s + L.join(' · ') + '</p>';
 let done = false;
-return new HTMLRewriter().on('main p.crumb', { element(e) { if (done) return; done = true; e.after(line, { html: true }); } }).transform(r);
+return new HTMLRewriter().on($q.J, { element(e) { if (done) return; done = true; e.after(line, { html: true }); } }).transform(r);
 }
 export const SM_RX = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?sitemap\/?$/;
 export async function sitemapPage(req, u, env, shell) {
@@ -67,32 +68,32 @@ if (!/\/$/.test(u.pathname)) return new Response(null, { status: 301, headers: {
 const lang = m[1] || 'en';
 if (!(await load(env))) return null;
 const N = await import('./kbx_named.js');
-const sh = await shell(pre(lang) + '/how-we-score/'); if (!sh || sh.status !== 200) return null;
+const sh = await shell(pre(lang) + $q.K); if (!sh || sh.status !== 200) return null;
 const nf = new Intl.NumberFormat(lang === 'en' ? 'en-GB' : lang === 'zh' ? 'zh-CN' : lang, { numberingSystem: 'latn' });
 const cnt = n => esc(lab(lang, n === 1 ? 'sm_n1' : 'sm_n').replace('{n}', nf.format(n)));
-let dd = J.data || J.v; try { dd = new Intl.DateTimeFormat(lang === 'en' ? 'en-GB' : lang === 'zh' ? 'zh-CN' : lang, { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC', numberingSystem: 'latn' }).format(new Date(String(J.data || J.v).slice(0, 10) + 'T00:00:00Z')); } catch (e) {}
+let dd = J.data || J.v; try { dd = new Intl.DateTimeFormat(lang === 'en' ? 'en-GB' : lang === 'zh' ? 'zh-CN' : lang, { day: $q.L, month: 'long', year: $q.L, timeZone: 'UTC', numberingSystem: 'latn' }).format(new Date(String(J.data || J.v).slice(0, 10) + $q.M)); } catch (e) {}
 const href = (path, ls) => lang !== 'en' && has(ls, lang) ? '/' + lang + path : path;
-const enOnly = (path, ls) => lang !== 'en' && !has(ls, lang) ? ' hreflang="en"' : '';
+const enOnly = (path, ls) => lang !== 'en' && !has(ls, lang) ? $q.j : '';
 let total = 0;
 const co = J.sm.map(([c, cs, ls, nm, mks]) => {
 const n = mks.reduce((a, x) => a + x[1], 0); total += n;
-const cn = (nm && nm[lang]) || c, cp = '/countries/' + cs + '/';
-const head = has(ls, 'en') ? '<a href="' + href(cp, ls) + '"' + enOnly(cp, ls) + '><bdi>' + esc(cn) + '</bdi></a>' : '<bdi>' + esc(cn) + '</bdi>';
+const cn = (nm && nm[lang]) || c, cp = $q.N + cs + '/';
+const head = has(ls, 'en') ? $q.m + href(cp, ls) + '"' + enOnly(cp, ls) + $q.n + esc(cn) + $q.o : '<bdi>' + esc(cn) + $q.O;
 const sl = s => encodeURIComponent(String(s).toLowerCase().replace(/\s+/g, '-'));
-const li = mks.map(([mk, k, mls, mn]) => { const mp = '/m/' + sl(mk) + '/', t = '<bdi>' + esc((mn && mn[lang]) || mk) + '</bdi>';
-return '<li>' + (has(mls, 'en') ? '<a href="' + href(mp, mls) + '"' + enOnly(mp, mls) + '>' + t + '</a>' : t) + ' <span class="n33-n">' + cnt(k) + '</span></li>'; }).join('');
-return '<div class="n33-c"><h3>' + head + ' <span class="n33-n">' + cnt(n) + '</span></h3><ul>' + li + '</ul></div>';
+const li = mks.map(([mk, k, mls, mn]) => { const mp = '/m/' + sl(mk) + '/', t = '<bdi>' + esc((mn && mn[lang]) || mk) + $q.O;
+return '<li>' + (has(mls, 'en') ? $q.m + href(mp, mls) + '"' + enOnly(mp, mls) + '>' + t + '</a>' : t) + $q.P + cnt(k) + $q.Q; }).join('');
+return $q.R + head + $q.P + cnt(n) + $q.S + li + $q.l;
 }).join('');
-const G = J.ft[lang] || J.ft.en, main = G.filter(g => g[0] === 'h_buyers' || g[0] === 'h_data').flatMap(g => g[1]);
+const G = J.ft[lang] || J.ft.en, main = G.filter(g => g[0] === $q.c || g[0] === $q.e).flatMap(g => g[1]);
 const li = A => A.map(x => '<li><a href="' + esc(x[0]) + '"' + (lang !== 'en' && !/^\/(es|de|fr|nl|ru|zh|ar)\//.test(x[0]) ? ' hreflang="en"' : '') + '>' + esc(x[1]) + '</a></li>').join('');
-const body = TB.kbx_n33l__t.k2 + pre(lang) + '/">Kolaboro</a> / ' + esc(lab(lang, 'sm_h1')) + '</p><h1>' + esc(lab(lang, 'sm_h1')) + '</h1><p class="lead">' + esc(lab(lang, 'sm_lead').replace('{d}', dd)) + '</p></div></section>' +
-'<div class="wrap kwrap n33-sm"' + (lang === 'ar' ? ' dir="rtl"' : '') + '><h2>' + esc(lab(lang, 'sm_main')) + '</h2><ul class="n33-l">' + li(main) + '</ul>' +
-'<h2>' + esc(lab(lang, 'sm_co')) + '</h2><div class="n33-co">' + co + '</div>' +
-'<h2>' + esc(lab(lang, 'sm_more')) + '</h2><ul class="n33-l">' + li((J.ft[lang] || J.ft.en).find(g => g[0] === 'h_about')[1].concat(J.more[lang] || J.more.en)) + '</ul></div>' + TB.kbx_n33l__s.CSS;
-const canon = ORIGIN + pre(lang) + '/sitemap/', title = lab(lang, 'sm_title');
-const pg = { title: (title + ' | Kolaboro').length > 60 ? title : title + ' | Kolaboro', desc: lab(lang, 'sm_desc'), canon, body, alt: l => ORIGIN + pre(l) + '/sitemap/',
-ld: { '@context': 'https://schema.org', '@graph': [{ '@type': 'CollectionPage', name: title, url: canon, inLanguage: lang, description: lab(lang, 'sm_desc'), dateModified: String(J.data || J.v).slice(0, 10), isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' } },
-{ '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Kolaboro', item: ORIGIN + pre(lang) + '/' }, { '@type': 'ListItem', position: 2, name: lab(lang, 'sm_h1'), item: canon }] }] } };
+const body = $t.k2 + pre(lang) + $q.T + esc(lab(lang, 'sm_h1')) + $q.U + esc(lab(lang, 'sm_h1')) + $q.V + esc(lab(lang, $q.W).replace('{d}', dd)) + $q.X +
+$q.Y + (lang === 'ar' ? $q.q : '') + '><h2>' + esc(lab(lang, $q.Z)) + $q.aa + li(main) + '</ul>' +
+'<h2>' + esc(lab(lang, 'sm_co')) + $q.ab + co + $q.ac +
+'<h2>' + esc(lab(lang, $q.ad)) + $q.aa + li((J.ft[lang] || J.ft.en).find(g => g[0] === $q.f)[1].concat(J.more[lang] || J.more.en)) + $q.l + $s.CSS;
+const canon = ORIGIN + pre(lang) + $q.ae, title = lab(lang, $q.af);
+const pg = { title: (title + $q.ag).length > 60 ? title : title + $q.ag, desc: lab(lang, $q.ah), canon, body, alt: l => ORIGIN + pre(l) + $q.ae,
+ld: { '@context': $q.ai, '@graph': [{ '@type': $q.aj, name: title, url: canon, inLanguage: lang, description: lab(lang, $q.ah), dateModified: String(J.data || J.v).slice(0, 10), isPartOf: { '@type': $q.ak, name: $q.al, url: ORIGIN + '/' } },
+{ '@type': $q.am, itemListElement: [{ '@type': $q.an, position: 1, name: $q.al, item: ORIGIN + pre(lang) + '/' }, { '@type': $q.an, position: 2, name: lab(lang, 'sm_h1'), item: canon }] }] } };
 const out = await N.assemble(pg, lang, sh);
-return new Response(out, { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=600' } });
+return new Response(out, { status: 200, headers: { 'content-type': $q.ao, 'cache-control': $q.ap } });
 }

@@ -1,7 +1,7 @@
 // comments: _notes/kolaboro-worker-comments.txt
+const $q = TB.kbx_404__q, $s = TB.kbx_404__s, $t = TB.kbx_404__t;   // n40 k46: short names for this module's string tables (strings in /data/i18n/k19s.json, k17s.json, k46s.json)
 import { data } from './kbx_named.js';
 import { TB } from './kbx_strings.js';
-const LANGS = ['es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const COI = new Set(['sumba']);
 const MAP = {
 '/score/': '/how-we-score/', '/report/': '/report/sample/', '/docs/': '/docs/api/', '/guides/': '/guides/buying-off-plan/',
@@ -11,7 +11,7 @@ const MAP = {
 '/x/': '/check/', '/x': '/check/', '/pay': '/pricing/', '/pay/': '/pricing/', '/k/sat/': '/satellite/', '/k/sat': '/satellite/'
 };
 const GONE = new Set(['/6', '/p/HO', '/k']);
-const rd = (loc, s) => new Response(null, { status: s || 301, headers: { location: loc, 'cache-control': 'public, max-age=86400', 'x-robots-tag': 'noindex' } });
+const rd = (loc, s) => new Response(null, { status: s || 301, headers: { location: loc, 'cache-control': $q.a, 'x-robots-tag': $q.b } });
 export async function fix(u, env) {
 let p = u.pathname; if (/^\/(api|admin|portal|cdn-cgi|backup-admin)(\/|$)/.test(p)) return null;
 const lm = p.match(/^\/(es|de|fr|nl|ru|zh|ar)(\/.*)$/), lang = lm ? lm[1] : 'en', rest = lm ? lm[2] : p, pre = lang === 'en' ? '' : '/' + lang;
@@ -21,13 +21,13 @@ if (pm && (pm[2] && pm[2] !== '/' || lm)) {
 const id = pm[1].toUpperCase();
 try {
 const ix = await data(env), x = ix.byId.get(id), c = ix.caseBy.get(id);
-if (x && !COI.has(String(x.mk || '').toLowerCase())) return rd(pre + '/projects/' + x.s + '/');
+if (x && !COI.has(String(x.mk || '').toLowerCase())) return rd(pre + $q.c + x.s + '/');
 if (c) return rd('/p/' + encodeURIComponent(id) + '/');
 } catch (e) { return null; }
 return null;
 }
 const mm = rest.match(/^\/m\/([^/.]{2,60})\/?$/); if (lm && mm) return rd('/m/' + mm[1] + '/');
-const dd = p.match(/^\/data\/([a-z0-9-]+)\/\1\/(.+)$/); if (dd) return rd('/data/' + dd[1] + '/' + dd[2]);
+const dd = p.match(/^\/data\/([a-z0-9-]+)\/\1\/(.+)$/); if (dd) return rd($q.d + dd[1] + '/' + dd[2]);
 const t = MAP[p]; if (t) return rd(t);
 return null;
 }
@@ -41,16 +41,16 @@ ru: { t: 'Страница не найдена', g: 'Этой страницы �
 zh: { t: '页面未找到', g: '此页面已不存在', h: '此页面不存在。', hg: '此页面已移除。', l: '链接可能已过期或输入有误。请搜索我们跟踪的项目，或从以下页面开始。', s: '搜索项目和开发商', ph: '项目、开发商或市场', b: '搜索', p: ['项目', '我们跟踪的所有项目，附来源'], r: ['透明度排名', '各项目公开了什么，按岛屿和城市'], o: ['工具', '面向买家的免费核查（英文）'], c: ['核查项目', '粘贴网站或名称'], u: ['国家指南', '海外购房，逐国说明（英文）'], m: ['首页', ''] },
 ar: { t: 'الصفحة غير موجودة', g: 'هذه الصفحة لم تعد موجودة', h: 'هذه الصفحة غير موجودة.', hg: 'أُزيلت هذه الصفحة.', l: 'ربما يكون الرابط قديماً أو مكتوباً بشكل خاطئ. ابحث في المشاريع التي نتابعها، أو ابدأ من إحدى هذه الصفحات.', s: 'ابحث عن المشاريع والمطورين', ph: 'مشروع أو مطور أو سوق', b: 'بحث', p: ['المشاريع', 'كل مشروع نتابعه، مع المصادر'], r: ['تصنيفات الشفافية', 'ما ينشره كل مشروع، حسب الجزيرة والمدينة'], o: ['الأدوات', 'فحوص مجانية للمشترين (بالإنجليزية)'], c: ['افحص مشروعاً', 'الصق موقعاً أو اسماً'], u: ['أدلة الدول', 'الشراء في الخارج، دولة بدولة (بالإنجليزية)'], m: ['الرئيسية', ''] }
 };
-const esc = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const esc = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': $q.e, "'": '&#39;' }[c]));
 export function helpBody(lang, h1, lead) {
 const L = T[lang] || T.en, pre = lang === 'en' ? '' : '/' + lang;
-const li = (href, a) => '<li><a href="' + href + '"><b>' + esc(a[0]) + '</b>' + (a[1] ? '<span>' + esc(a[1]) + '</span>' : '') + '</a></li>';
-return '<section class="phero"' + (lang === 'ar' ? ' dir="rtl"' : '') + ' lang="' + lang + '"><div class="wrap"><h1>' + esc(h1 || L.h) + '</h1><p class="lead">' + esc(lead || L.l) + '</p>' +
-TB.kbx_404__t.k0 + pre + TB.kbx_404__s.k0 +
-TB.kbx_404__s.k1 + esc(L.s) + '</label>' +
-TB.kbx_404__t.k1 + esc(L.ph) + TB.kbx_404__s.k2 +
-TB.kbx_404__t.k2 + esc(L.b) + '</button></form>' +
-TB.kbx_404__s.k3 + li(pre + '/projects/', L.p) + li(pre + '/rankings/transparency/', L.r) + li(pre + '/check/', L.c) + li('/tools/', L.o) + li('/countries/', L.u) + li(pre + '/', L.m) + '</ul></div></section>';
+const li = (href, a) => $q.f + href + '"><b>' + esc(a[0]) + '</b>' + (a[1] ? $q.g + esc(a[1]) + $q.h : '') + $q.i;
+return $q.j + (lang === 'ar' ? $q.k : '') + $q.l + lang + $q.m + esc(h1 || L.h) + $q.n + esc(lead || L.l) + '</p>' +
+$t.k0 + pre + $s.k0 +
+$s.k1 + esc(L.s) + $q.o +
+$t.k1 + esc(L.ph) + $s.k2 +
+$t.k2 + esc(L.b) + $q.p +
+$s.k3 + li(pre + $q.c, L.p) + li(pre + $q.q, L.r) + li(pre + $q.r, L.c) + li($q.s, L.o) + li($q.t, L.u) + li(pre + '/', L.m) + $q.u;
 }
 export async function page(r, u, status, env) {
   const lm = u.pathname.match(/^\/(es|de|fr|nl|ru|zh|ar)(\/|$)/), lang = lm ? lm[1] : 'en', L = T[lang], gone = status === 410;
@@ -58,23 +58,23 @@ export async function page(r, u, status, env) {
   // n26i (batch 26): header and footer in the page language too. The static 404.html is English; for /<lang>/ paths the shell is the
   // translated /<lang>/how-we-score/ page (the same shell the named pages use), with its head reduced to a noindex 404.
   let src = r;
-  if (lang !== 'en' && env && env.ASSETS) try { const s = await env.ASSETS.fetch(new Request('https://kolaboro.com/_s/kolaboro.com/' + lang + '/how-we-score/index.html')); if (s.ok && /text\/html/.test(s.headers.get('content-type') || 'text/html')) src = s; } catch (e) { src = r; }
-  const h = new Headers(r.headers); h.set('x-robots-tag', 'noindex'); h.set('cache-control', 'no-cache'); h.set('content-type', 'text/html; charset=utf-8'); h.delete('content-length'); h.delete('etag');
+  if (lang !== 'en' && env && env.ASSETS) try { const s = await env.ASSETS.fetch(new Request($q.v + lang + $q.w)); if (s.ok && /text\/html/.test(s.headers.get($q.x) || $q.y)) src = s; } catch (e) { src = r; }
+  const h = new Headers(r.headers); h.set($q.z, $q.b); h.set($q.A, $q.B); h.set($q.x, $q.C); h.delete($q.D); h.delete('etag');
   const out = new Response(src.body, { status: gone ? 410 : 404, headers: h });
-  const title = (gone ? L.g : L.t) + ' | Kolaboro'; let seenLsw = false;
+  const title = (gone ? L.g : L.t) + $q.E; let seenLsw = false;
   // n28c: language buttons of a missing page lead to that language's home (also on the English static 404)
-  let rw = new HTMLRewriter().on('head title', { element(e) { e.setInnerContent(title); } }).on('main', { element(e) { e.setInnerContent(body, { html: true }); } })
-    .on('details.lsw a[hreflang]', { element(e) { const l = e.getAttribute('hreflang'); e.setAttribute('href', l === 'en' ? '/' : '/' + l + '/'); e.removeAttribute('aria-current'); } })
-    .on('link[rel="canonical"],meta[property="og:url"]', { element(e) { e.remove(); } });   // n28a: a missing page has no canonical (the English shell pointed every 404 at /404.html, itself a 308)
+  let rw = new HTMLRewriter().on($q.F, { element(e) { e.setInnerContent(title); } }).on('main', { element(e) { e.setInnerContent(body, { html: true }); } })
+    .on($q.G, { element(e) { const l = e.getAttribute($q.H); e.setAttribute('href', l === 'en' ? '/' : '/' + l + '/'); e.removeAttribute($q.I); } })
+    .on($q.J, { element(e) { e.remove(); } });   // n28a: a missing page has no canonical (the English shell pointed every 404 at /404.html, itself a 308)
   // n28c: the translated shell is read straight from the static files, so its scripts carried no nonce and the enforced CSP of this
   // response blocked all of them (ticker, menu, search: 6 to 10 console errors per page). Stamp this response's nonce, as kbHeaders does.
-  const nm = ((h.get('content-security-policy') || '') + ' ' + (h.get('content-security-policy-report-only') || '')).match(/'nonce-([A-Za-z0-9+/=]+)'/);
-  if (src !== r && nm) rw = rw.on('script', { element(e) { e.setAttribute('nonce', nm[1]); } });
+  const nm = ((h.get($q.K) || '') + ' ' + (h.get($q.L) || '')).match(/'nonce-([A-Za-z0-9+/=]+)'/);
+  if (src !== r && nm) rw = rw.on($q.M, { element(e) { e.setAttribute('nonce', nm[1]); } });
   if (src !== r) rw = rw
-    .on('link[rel="canonical"],link[rel="alternate"][hreflang],script[type="application/ld+json"],meta[property^="og:"],meta[name^="twitter:"]', { element(e) { e.remove(); } })
-    .on('meta[name="description"]', { element(e) { e.setAttribute('content', L.l); } })
-    .on('meta[name="robots"]', { element(e) { e.remove(); } })
-    .on('head', { element(e) { e.append('<meta name="robots" content="noindex">', { html: true }); } })
-    .on('style[id="lsw-css"]', { element(e) { if (seenLsw) e.remove(); seenLsw = true; } });
+    .on($q.N, { element(e) { e.remove(); } })
+    .on($q.O, { element(e) { e.setAttribute($q.P, L.l); } })
+    .on($q.Q, { element(e) { e.remove(); } })
+    .on('head', { element(e) { e.append($q.R, { html: true }); } })
+    .on($q.S, { element(e) { if (seenLsw) e.remove(); seenLsw = true; } });
   return rw.transform(out);
 }

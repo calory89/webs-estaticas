@@ -1,4 +1,5 @@
 // comments: _notes/kolaboro-worker-comments.txt
+const $q = TB.kbx_xray__q, $s = TB.kbx_xray__s, $t = TB.kbx_xray__t;   // n40 k46: short names for this module's string tables (strings in /data/i18n/k19s.json, k17s.json, k46s.json)
 import { fetchPage, okUrl, pageParts, scanInjection, rpc, sha, WKEY, api as kbApi, logApi } from './kolaboro.js';
 import { TB } from './kbx_strings.js';
 export const PATHS = /^\/api\/kb\/xray(?:\/stats)?\/?$|^\/api\/v1\/xray(?:\/openapi\.json)?\/?$|^\/x\/[0-9a-f]{64}(?:\/|\.json|\/vc)?$/;
@@ -6,16 +7,16 @@ const XV = 'n40k40a';
 const ORIGIN = 'https://kolaboro.com', VERSION = 'kolaboro-xray-1', PER_IP_HOUR = 30, CARD_MS = 12000;
 const te = new TextEncoder();
 const hexOf = b => [...new Uint8Array(b)].map(x => x.toString(16).padStart(2, '0')).join('');
-const sha256Buf = async b => hexOf(await crypto.subtle.digest('SHA-256', b));
+const sha256Buf = async b => hexOf(await crypto.subtle.digest($q.a, b));
 function jcs(v) {
-if (v === null || typeof v !== 'object') return JSON.stringify(v === undefined ? null : (typeof v === 'number' && !isFinite(v) ? null : v));
+if (v === null || typeof v !== $q.b) return JSON.stringify(v === undefined ? null : (typeof v === $q.c && !isFinite(v) ? null : v));
 if (Array.isArray(v)) return '[' + v.map(jcs).join(',') + ']';
 return '{' + Object.keys(v).filter(k => v[k] !== undefined).sort().map(k => JSON.stringify(k) + ':' + jcs(v[k])).join(',') + '}';
 }
 const CORS = { 'access-control-allow-origin': '*', 'access-control-allow-headers': 'x-api-key, content-type', 'access-control-allow-methods': 'GET, POST, OPTIONS' };
-const out = (o, s, extra) => new Response(JSON.stringify(o, null, 1), { status: s || 200, headers: Object.assign({ 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store', 'x-content-type-options': 'nosniff' }, CORS, extra || {}) });
-const RESKEY = r => new Request(ORIGIN + '/__xray_r/' + r);
-const INKEY = k => new Request(ORIGIN + '/__xray_in/' + k);
+const out = (o, s, extra) => new Response(JSON.stringify(o, null, 1), { status: s || 200, headers: Object.assign({ 'content-type': $q.d, 'cache-control': $q.e, 'x-content-type-options': $q.f }, CORS, extra || {}) });
+const RESKEY = r => new Request(ORIGIN + $q.g + r);
+const INKEY = k => new Request(ORIGIN + $q.h + k);
 const ent = t => String(t).replace(/&gt;/g, '>').replace(/&lt;/g, '<').replace(/&#(\d{1,6});/g, (m, n) => { try { return String.fromCodePoint(+n); } catch (e) { return ' '; } }).replace(/&#x([0-9a-f]{1,6});/gi, (m, n) => { try { return String.fromCodePoint(parseInt(n, 16)); } catch (e) { return ' '; } }).replace(/&(?:nbsp|#160);/g, ' ').replace(/&[a-z]{2,8};/gi, ' ');
 const clip = (s, n) => { s = String(s == null ? '' : s).replace(/\s+/g, ' ').trim(); return s.length > n ? s.slice(0, n - 1).replace(/\s+\S*$/, '') + '…' : s; };
 const isoDay = d => { try { return new Date(d).toISOString().slice(0, 10); } catch (e) { return null; } };
@@ -33,11 +34,11 @@ return async function xfetch(url, init, name, ms) {
 const t = Date.now(), rec = { name: name || new URL(url).hostname, url: String(url), status: 0, bytes: 0, sha256: null, ms: 0 };
 sources.push(rec);
 try {
-const r = await fetch(url, Object.assign({ headers: { 'user-agent': TB.kbx_xray__t.UA, accept: TB.kbx_xray__t.k0 }, signal: AbortSignal.timeout(ms || 8000), cf: { cacheTtl: 3600, cacheEverything: true } }, init || {}));
+const r = await fetch(url, Object.assign({ headers: { 'user-agent': $t.UA, accept: $t.k0 }, signal: AbortSignal.timeout(ms || 8000), cf: { cacheTtl: 3600, cacheEverything: true } }, init || {}));
 const buf = await r.arrayBuffer();
 rec.status = r.status; rec.bytes = buf.byteLength; rec.sha256 = await sha256Buf(buf); rec.ms = Date.now() - t;
 return { ok: r.ok, status: r.status, buf, headers: r.headers, text: () => new TextDecoder().decode(buf), json: () => JSON.parse(new TextDecoder().decode(buf)) };
-} catch (e) { rec.ms = Date.now() - t; rec.error = e && e.name === 'TimeoutError' ? 'timeout' : 'network'; return { ok: false, status: 0, error: rec.error, buf: new ArrayBuffer(0), text: () => '', json: () => null }; }
+} catch (e) { rec.ms = Date.now() - t; rec.error = e && e.name === $q.i ? $q.j : $q.k; return { ok: false, status: 0, error: rec.error, buf: new ArrayBuffer(0), text: () => '', json: () => null }; }
 };
 }
 let NM = null;
@@ -58,18 +59,18 @@ function findMatch(ix, inp) {
 let project = null, developer = null, also = [], how = null;
 if (inp.kind === 'url') {
 const p = pathOf(inp.url), h = inp.host, rd = regDomain(h);
-project = ix.P.find(x => x.url && pathOf(x.url) === p) || null; if (project) how = 'exact project URL';
+project = ix.P.find(x => x.url && pathOf(x.url) === p) || null; if (project) how = $q.l;
 const sameHost = ix.P.filter(x => x.url && (hostOf(x.url) === h || regDomain(hostOf(x.url)) === rd));
 const devHost = ix.P.filter(x => x.du && regDomain(hostOf(x.du)) === rd);
-if (!project && sameHost.length === 1) { project = sameHost[0]; how = 'only project we track on this website'; }
+if (!project && sameHost.length === 1) { project = sameHost[0]; how = $q.m; }
 const pool = sameHost.concat(devHost);
 if (pool.length) { const dv = pool[0].dvs; if (dv && ix.devs.has(dv) && pool.every(x => x.dvs === dv)) developer = ix.devs.get(dv); }
 if (!project && pool.length) also = pool.slice(0, 12);
-if (!how && pool.length) how = 'same website';
+if (!how && pool.length) how = $q.n;
 } else {
 let best = null, bs = 0;
 for (const x of ix.P) { const s = normName(x.n) === normName(inp.q) ? 1.01 : sim(x.n, inp.q); if (s > bs) { bs = s; best = x; } }
-if (best && bs >= 0.75) { project = best; how = bs > 1 ? 'exact name' : 'similar name'; }
+if (best && bs >= 0.75) { project = best; how = bs > 1 ? $q.o : $q.p; }
 let bd = null, bds = 0;
 for (const d of ix.devs.values()) { const s = normName(d.n) === normName(inp.q) ? 1.01 : sim(d.n, inp.q); if (s > bds) { bds = s; bd = d; } }
 if (bd && bds >= 0.8) developer = bd;
@@ -78,40 +79,39 @@ if (!project && !developer) also = ix.P.map(x => [sim(x.n, inp.q), x]).filter(a 
 if (project && !developer && project.dvs && ix.devs.has(project.dvs)) developer = ix.devs.get(project.dvs);
 return { project, developer, also, how };
 }
-const pLink = s => ORIGIN + '/projects/' + s + '/';
-const dLink = s => ORIGIN + '/developers/' + s + '/';
+const pLink = s => ORIGIN + $q.q + s + '/';
+const dLink = s => ORIGIN + $q.r + s + '/';
 function matchCard(ix, m, inp) {
-const c = { id: 'match', title: 'Already in our database', facts: [], links: [], gaps: [] };
+const c = { id: 'match', title: $q.s, facts: [], links: [], gaps: [] };
 if (!m.project && !m.developer && !m.also.length) {
-c.status = 'not_found'; c.summary = 'This ' + (inp.kind === 'url' ? 'website' : 'name') + ' does not match any of the ' + ix.P.length.toLocaleString('en') + ' projects or ' + ix.devs.size.toLocaleString('en') + ' developers we track.';
-c.sk = 'match_none'; c.sa = { n: ix.P.length, d: ix.devs.size, kind: inp.kind }; return c;
+c.status = $q.t; c.summary = 'This ' + (inp.kind === 'url' ? $q.u : 'name') + $q.v + ix.P.length.toLocaleString('en') + $q.w + ix.devs.size.toLocaleString('en') + $q.x;
+c.sk = $q.y; c.sa = { n: ix.P.length, d: ix.devs.size, kind: inp.kind }; return c;
 }
 c.status = 'found';
 if (m.project) {
 const p = m.project, cs = ix.caseBy.get(p.id) || {};
 c.project = { slug: p.s, name: p.n, url: pLink(p.s), market: p.mk, country: p.co, area: p.ar, stage: p.st, developer: p.dv || null, checked: cs.checked || null };
-c.summary = p.n + (p.dv ? ' by ' + p.dv : '') + ' (' + [p.ar, p.mk].filter(Boolean).join(', ') + TB.kbx_xray__t.k1;
-c.sk = 'match_project'; c.sa = { name: p.n, dev: p.dv || '', place: [p.ar, p.mk].filter(Boolean).join(', ') };
-c.facts.push({ k: 'Project', key: 'f_project', v: p.n, src: pLink(p.s) });
-if (p.st) c.facts.push({ k: 'Stage (our last check)', key: 'f_stage_ours', v: p.st, src: pLink(p.s) });
-if (p.fx && p.fx.handover_promised) c.facts.push({ k: 'Handover promised', key: 'f_handover', v: String(p.fx.handover_promised), src: pLink(p.s) });
-if (cs.checked) c.facts.push({ k: 'Last checked by us', key: 'f_checked', v: cs.checked, src: pLink(p.s) });
-c.links.push({ label: 'Open the full dossier', key: 'l_dossier', url: pLink(p.s), primary: true });
+c.summary = p.n + (p.dv ? ' by ' + p.dv : '') + ' (' + [p.ar, p.mk].filter(Boolean).join(', ') + $t.k1;
+c.sk = $q.z; c.sa = { name: p.n, dev: p.dv || '', place: [p.ar, p.mk].filter(Boolean).join(', ') };
+c.facts.push({ k: $q.A, key: $q.B, v: p.n, src: pLink(p.s) });
+if (p.st) c.facts.push({ k: $q.C, key: $q.D, v: p.st, src: pLink(p.s) });
+if (p.fx && p.fx.handover_promised) c.facts.push({ k: $q.E, key: $q.F, v: String(p.fx.handover_promised), src: pLink(p.s) });
+if (cs.checked) c.facts.push({ k: $q.G, key: $q.H, v: cs.checked, src: pLink(p.s) });
+c.links.push({ label: $q.I, key: $q.J, url: pLink(p.s), primary: true });
 }
 if (m.developer) {
 const d = m.developer; c.developer = { slug: d.s, name: d.n, url: dLink(d.s), projects: d.ids.length };
-if (!m.project) { c.summary = d.n + ' is a developer we track, with ' + d.ids.length + ' project' + (d.ids.length === 1 ? '' : 's') + ' in our database.'; c.sk = 'match_dev'; c.sa = { dev: d.n, n: d.ids.length }; }
-c.facts.push({ k: 'Developer', key: 'f_developer', v: d.n + ' (' + d.ids.length + ' project' + (d.ids.length === 1 ? '' : 's') + ' tracked)', src: dLink(d.s) });
-c.links.push({ label: 'Developer page', key: 'l_dev', url: dLink(d.s), primary: !m.project });
+if (!m.project) { c.summary = d.n + $q.K + d.ids.length + $q.L + (d.ids.length === 1 ? '' : 's') + $q.M; c.sk = $q.N; c.sa = { dev: d.n, n: d.ids.length }; }
+c.facts.push({ k: $q.O, key: $q.P, v: d.n + ' (' + d.ids.length + $q.L + (d.ids.length === 1 ? '' : 's') + $q.Q, src: dLink(d.s) });
+c.links.push({ label: $q.R, key: 'l_dev', url: dLink(d.s), primary: !m.project });
 }
 if (m.also.length) {
-if (!m.project && !m.developer) { c.summary = 'Not an exact match, but ' + m.also.length + ' tracked project' + (m.also.length === 1 ? ' is' : 's are') + ' close to this ' + (inp.kind === 'url' ? 'website' : 'name') + '.'; c.sk = 'match_close'; c.sa = { n: m.also.length }; c.status = 'ok'; }
+if (!m.project && !m.developer) { c.summary = $q.S + m.also.length + $q.T + (m.also.length === 1 ? ' is' : 's are') + $q.U + (inp.kind === 'url' ? $q.u : 'name') + '.'; c.sk = $q.V; c.sa = { n: m.also.length }; c.status = 'ok'; }
 c.close = m.also.map(x => ({ name: x.n, url: pLink(x.s), market: x.mk }));
 }
-c.how = m.how; c.sources = [{ name: TB.kbx_xray__t.k2 + (ix.updated || '?') + ')', url: ORIGIN + '/data/named.json', status: 200 }];
+c.how = m.how; c.sources = [{ name: $t.k2 + (ix.updated || '?') + ')', url: ORIGIN + $q.W, status: 200 }];
 return c;
 }
-function sentences(text) { return text.replace(/\s+/g, ' ').split(/(?<=[.!?])\s+(?=[A-Z0-9"“(])|\s{2,}|\s[|•·]\s/); }
 function sentenceAt(text, idx, len) {
 let a = Math.max(text.lastIndexOf('. ', idx), text.lastIndexOf('! ', idx), text.lastIndexOf('? ', idx), text.lastIndexOf(' | ', idx));
 if (a < 0 || idx - a > 220) { a = Math.max(0, idx - 110); if (a > 0) { const sp = text.indexOf(' ', a); if (sp > 0 && sp < idx) a = sp + 1; } } else a += 2;
@@ -121,7 +121,7 @@ return clip(text.slice(a, b), 260);
 function meta(html, re) { const m = html.match(re); return m ? clip(m[1].replace(/&amp;/g, '&').replace(/&#39;|&rsquo;/g, "'").replace(/&quot;/g, '"'), 160) : null; }
 function ldNodes(html) {
 const out = []; const re = /<script[^>]*application\/ld\+json[^>]*>([\s\S]*?)<\/script>/gi; let m;
-while ((m = re.exec(html)) && out.length < 40) { try { const j = JSON.parse(m[1].trim()); const walk = v => { if (Array.isArray(v)) v.forEach(walk); else if (v && typeof v === 'object') { out.push(v); if (v['@graph']) walk(v['@graph']); } }; walk(j); } catch (e) {} }
+while ((m = re.exec(html)) && out.length < 40) { try { const j = JSON.parse(m[1].trim()); const walk = v => { if (Array.isArray(v)) v.forEach(walk); else if (v && typeof v === $q.b) { out.push(v); if (v[$q.X]) walk(v[$q.X]); } }; walk(j); } catch (e) {} }
 return out;
 }
 const CUR = '(?:US\\$|USD|\\$|€|EUR|£|GBP|AED|IDR|Rp\\.?|THB|฿|MYR|RM|AUD|A\\$|SGD|S\\$|VND|PHP|₱|MXN|CHF)';
@@ -138,33 +138,33 @@ const h1 = meta(html, /<h1[^>]*>([\s\S]*?)<\/h1>/i); const h1t = h1 ? clip(h1.re
 const site = meta(html, /<meta[^>]+property=["']og:site_name["'][^>]+content=["']([^"']+)/i);
 const ldName = (ld.find(x => /Residence|Apartment|House|Product|Place|Accommodation|RealEstateListing|Offer/i.test(String(x['@type']))) || {}).name;
 const name = og || h1t || title;
-if (name) facts.push({ k: 'Name on the page', key: 'f_name', v: clip(name, 140), q: name, src, how: og ? 'og:title' : h1t ? '<h1>' : '<title>' });
+if (name) facts.push({ k: $q.Y, key: $q.Z, v: clip(name, 140), q: name, src, how: og ? $q.aa : h1t ? '<h1>' : $q.ab });
 else gaps.push('name');
-if (ldName && ldName !== name) facts.push({ k: 'Name in structured data', key: 'f_ldname', v: clip(ldName, 140), q: ldName, src, how: 'JSON-LD' });
+if (ldName && ldName !== name) facts.push({ k: $q.ac, key: $q.ad, v: clip(ldName, 140), q: ldName, src, how: $q.ae });
 let dev = null, devQ = null, devHow = null;
 const org = ld.find(x => /Organization|RealEstateAgent|LocalBusiness|Corporation/i.test(String(x['@type'])) && x.name);
-if (org) { dev = clip(org.name, 100); devQ = org.name; devHow = 'JSON-LD ' + org['@type']; }
-if (!dev) { const m = text.match(/\b(?:developed|built|brought to you|delivered) by\s+([A-Z][\w&.'’\- ]{2,50}?)(?=[.,;:!|]|\s(?:in|on|at|and|with|is|for|since)\b|$)/); if (m) { dev = clip(m[1], 80); devQ = sentenceAt(text, m.index, m[0].length); devHow = '"by" sentence'; } }
-if (!dev) { const m = text.match(/(?:©|\(c\)|copyright)\s*(?:20\d\d\s*[-–]?\s*(?:20\d\d)?\s*)?([A-Z][\w&.'’\- ]{2,50}?)(?=[.,|]|\s(?:all rights|todos|alle)|$)/i); if (m) { dev = clip(m[1], 80); devQ = clip(m[0], 140); devHow = 'copyright line'; } }
-if (!dev && site) { dev = site; devQ = site; devHow = 'og:site_name'; }
-if (dev) facts.push({ k: 'Developer or seller named', key: 'f_dev', v: dev, q: devQ, src, how: devHow }); else gaps.push('developer');
+if (org) { dev = clip(org.name, 100); devQ = org.name; devHow = $q.af + org['@type']; }
+if (!dev) { const m = text.match(/\b(?:developed|built|brought to you|delivered) by\s+([A-Z][\w&.'’\- ]{2,50}?)(?=[.,;:!|]|\s(?:in|on|at|and|with|is|for|since)\b|$)/); if (m) { dev = clip(m[1], 80); devQ = sentenceAt(text, m.index, m[0].length); devHow = $q.ag; } }
+if (!dev) { const m = text.match(/(?:©|\(c\)|copyright)\s*(?:20\d\d\s*[-–]?\s*(?:20\d\d)?\s*)?([A-Z][\w&.'’\- ]{2,50}?)(?=[.,|]|\s(?:all rights|todos|alle)|$)/i); if (m) { dev = clip(m[1], 80); devQ = clip(m[0], 140); devHow = $q.ah; } }
+if (!dev && site) { dev = site; devQ = site; devHow = $q.ai; }
+if (dev) facts.push({ k: $q.aj, key: 'f_dev', v: dev, q: devQ, src, how: devHow }); else gaps.push($q.ak);
 let loc = null, locQ = null;
 const addr = ld.map(x => x.address).find(Boolean);
-if (addr) { loc = typeof addr === 'string' ? addr : [addr.streetAddress, addr.addressLocality, addr.addressRegion, addr.addressCountry && (addr.addressCountry.name || addr.addressCountry)].filter(Boolean).join(', '); locQ = loc; }
+if (addr) { loc = typeof addr === $q.al ? addr : [addr.streetAddress, addr.addressLocality, addr.addressRegion, addr.addressCountry && (addr.addressCountry.name || addr.addressCountry)].filter(Boolean).join(', '); locQ = loc; }
 if (!loc) { const m = text.match(/\b(?:[Ll]ocated|[Ss]ituated|[Nn]estled|[Aa]ddress)\s*(?:in|at|on|:)?\s+([A-Z][^.!?|]{3,90})/); if (m) { loc = clip(m[1], 90); locQ = sentenceAt(text, m.index, m[0].length); } }
-if (loc) facts.push({ k: 'Location stated', key: 'f_loc', v: clip(loc, 120), q: locQ, src }); else gaps.push('location');
+if (loc) facts.push({ k: $q.am, key: 'f_loc', v: clip(loc, 120), q: locQ, src }); else gaps.push($q.an);
 STAGE_RX.lastIndex = 0; const st = STAGE_RX.exec(text);
-if (st) facts.push({ k: 'Stage stated', key: 'f_stage', v: st[1].toLowerCase(), q: sentenceAt(text, st.index, st[0].length), src });
+if (st) facts.push({ k: $q.ao, key: $q.ap, v: st[1].toLowerCase(), q: sentenceAt(text, st.index, st[0].length), src });
 HANDOVER_RX.lastIndex = 0; const hs = []; let hm; while ((hm = HANDOVER_RX.exec(text)) && hs.length < 3) hs.push({ v: hm[2], q: sentenceAt(text, hm.index, hm[0].length) });
-uniqBy(hs, x => x.v.toLowerCase()).forEach((x, i) => facts.push({ k: i ? 'Other date stated' : 'Promised handover', key: i ? 'f_date2' : 'f_handover', v: x.v, q: x.q, src }));
-if (!hs.length) gaps.push('handover');
+uniqBy(hs, x => x.v.toLowerCase()).forEach((x, i) => facts.push({ k: i ? $q.aq : $q.ar, key: i ? $q.as : $q.F, v: x.v, q: x.q, src }));
+if (!hs.length) gaps.push($q.at);
 PRICE_RX.lastIndex = 0; const ps = []; let pm; while ((pm = PRICE_RX.exec(text)) && ps.length < 40) { const v = pm[0].trim(); if (/\d{3}/.test(v.replace(/[.,\s]/g, '')) && !/^20[0-4]\d$/.test(v)) ps.push({ v, q: sentenceAt(text, pm.index, pm[0].length) }); }
 const pu = uniqBy(ps, x => x.v.replace(/\s/g, '')).slice(0, 6);
-pu.forEach(x => facts.push({ k: 'Price found', key: 'f_price', v: x.v, q: x.q, src }));
+pu.forEach(x => facts.push({ k: $q.au, key: $q.av, v: x.v, q: x.q, src }));
 if (!pu.length) gaps.push('price');
 SIZE_RX.lastIndex = 0; const ss = []; let sm; while ((sm = SIZE_RX.exec(text)) && ss.length < 30) ss.push({ v: sm[0].trim(), q: sentenceAt(text, sm.index, sm[0].length) });
 const su = uniqBy(ss, x => x.v.toLowerCase().replace(/\s/g, '')).slice(0, 6);
-su.forEach(x => facts.push({ k: 'Size found', key: 'f_size', v: x.v, q: x.q, src }));
+su.forEach(x => facts.push({ k: $q.aw, key: $q.ax, v: x.v, q: x.q, src }));
 if (!su.length) gaps.push('size');
 return { facts, gaps, name, dev, loc };
 }
@@ -194,183 +194,183 @@ return { facts, gaps };
 }
 async function cardIdentity(X) {
 const pg = await X.page;
-if (!pg) return { id: 'identity', title: 'What the page says', status: 'skipped', summary: TB.kbx_xray__t.k3, sk: 'id_noweb', gaps: ['developer'] };
-if (!pg.ok) return { id: 'identity', title: 'What the page says', status: 'unavailable', summary: pg.error === 'blocked' ? TB.kbx_xray__t.k4 + (pg.status ? ' (HTTP ' + pg.status + ')' : '') + TB.kbx_xray__t.k5 : 'The website could not be read' + (pg.status ? ' (HTTP ' + pg.status + ')' : pg.detail === 'timeout' ? ' (no answer in 15 s)' : '') + '.', sk: pg.error === 'blocked' ? 'id_blocked' : 'id_fail', sa: { status: pg.status || '' }, gaps: ['developer', 'permit'] };
+if (!pg) return { id: $q.ay, title: $q.az, status: $q.aA, summary: $t.k3, sk: $q.aB, gaps: [$q.ak] };
+if (!pg.ok) return { id: $q.ay, title: $q.az, status: $q.aC, summary: pg.error === $q.aD ? $t.k4 + (pg.status ? $q.aE + pg.status + ')' : '') + $t.k5 : $q.aF + (pg.status ? $q.aE + pg.status + ')' : pg.detail === $q.j ? $q.aG : '') + '.', sk: pg.error === $q.aD ? $q.aH : $q.aI, sa: { status: pg.status || '' }, gaps: [$q.ak, $q.aJ] };
 const f = identityFacts(pg, X.input);
 X.found.identity = f;
-const c = { id: 'identity', title: 'What the page says', status: f.facts.length ? 'found' : 'not_published', facts: f.facts, gaps: f.gaps };
-c.summary = 'Read ' + pg.text.length.toLocaleString('en') + ' visible characters of ' + pg.url.replace(/^https?:\/\//, '') + (pg.hidden_blocks ? ' (' + pg.hidden_blocks + ' hidden blocks removed)' : '') + '. ' + f.facts.length + TB.kbx_xray__t.k6;
-c.sk = 'id_read'; c.sa = { chars: pg.text.length, url: pg.url.replace(/^https?:\/\//, ''), n: f.facts.length, hidden: pg.hidden_blocks || 0 };
+const c = { id: $q.ay, title: $q.az, status: f.facts.length ? 'found' : $q.aK, facts: f.facts, gaps: f.gaps };
+c.summary = 'Read ' + pg.text.length.toLocaleString('en') + $q.aL + pg.url.replace(/^https?:\/\//, '') + (pg.hidden_blocks ? ' (' + pg.hidden_blocks + $q.aM : '') + '. ' + f.facts.length + $t.k6;
+c.sk = $q.aN; c.sa = { chars: pg.text.length, url: pg.url.replace(/^https?:\/\//, ''), n: f.facts.length, hidden: pg.hidden_blocks || 0 };
 c.page = { url: pg.url, status: pg.status, bytes: pg.bytes, sha256: pg.sha256, redirects: pg.hops || 0 };
 return c;
 }
 async function cardFlags(X) {
 const pg = await X.page;
-if (!pg || !pg.ok) return { id: 'flags', title: 'Statements to check', status: 'skipped', summary: 'No page text to check.', sk: 'fl_none' };
+if (!pg || !pg.ok) return { id: 'flags', title: $q.aO, status: $q.aA, summary: $q.aP, sk: $q.aQ };
 const f = flagFacts(pg), hits = f.facts.filter(x => !x.absent).length, abs = f.facts.filter(x => x.absent).length;
-return { id: 'flags', title: 'Statements to check', status: hits || abs ? 'found' : 'ok', facts: f.facts, gaps: f.gaps,
-summary: hits + ' statement' + (hits === 1 ? '' : 's') + TB.kbx_xray__t.k7 + abs + ' usual disclosure' + (abs === 1 ? ' is' : 's are') + TB.kbx_xray__t.k8, sk: 'fl_sum', sa: { hits, abs },
-method: { rules: FLAG_RULES.length + ABSENT.length, url: ORIGIN + '/how-we-score' } };
+return { id: 'flags', title: $q.aO, status: hits || abs ? 'found' : 'ok', facts: f.facts, gaps: f.gaps,
+summary: hits + $q.aR + (hits === 1 ? '' : 's') + $t.k7 + abs + $q.aS + (abs === 1 ? ' is' : 's are') + $t.k8, sk: $q.aT, sa: { hits, abs },
+method: { rules: FLAG_RULES.length + ABSENT.length, url: ORIGIN + $q.aU } };
 }
 async function cardWayback(X) {
-const h = X.input.host; const c = { id: 'wayback', title: 'Internet Archive timeline', facts: [], links: [], gaps: [] };
+const h = X.input.host; const c = { id: $q.aV, title: $q.aW, facts: [], links: [], gaps: [] };
 const m = await X.match;
 const own = [];
 if (m && m.project) { const p = m.project, cs = (X.ix && X.ix.caseBy.get(p.id)) || {};
-if (p.ad) own.push({ k: 'Our first record of this project', key: 'f_own_first', v: p.ad, src: pLink(p.s) });
-if (p.sealed && p.sha) own.push({ k: 'Our sealed copy of its facts', key: 'f_own_sealed', v: p.sealed + ' · SHA-256 ' + p.sha.slice(0, 16) + '…', src: pLink(p.s) });
-if (cs.fp && cs.fp.sha256) own.push({ k: 'Our fingerprint of the developer page', key: 'f_own_fp', v: cs.fp.date + ' · SHA-256 ' + cs.fp.sha256.slice(0, 16) + '…', src: pLink(p.s) });
-if ((cs.history || []).length) own.push({ k: 'Dated changes we recorded', key: 'f_own_hist', v: String(cs.history.length), src: pLink(p.s) + '#history' });
+if (p.ad) own.push({ k: $q.aX, key: $q.aY, v: p.ad, src: pLink(p.s) });
+if (p.sealed && p.sha) own.push({ k: $q.aZ, key: $q.ba, v: p.sealed + $q.bb + p.sha.slice(0, 16) + '…', src: pLink(p.s) });
+if (cs.fp && cs.fp.sha256) own.push({ k: $q.bc, key: $q.bd, v: cs.fp.date + $q.bb + cs.fp.sha256.slice(0, 16) + '…', src: pLink(p.s) });
+if ((cs.history || []).length) own.push({ k: $q.be, key: $q.bf, v: String(cs.history.length), src: pLink(p.s) + $q.bg });
 }
-if (!h) { c.status = own.length ? 'found' : 'skipped'; c.facts = own; c.summary = own.length ? TB.kbx_xray__t.k9 : TB.kbx_xray__t.k10; c.sk = own.length ? 'wb_own' : 'wb_noweb'; return c; }
+if (!h) { c.status = own.length ? 'found' : $q.aA; c.facts = own; c.summary = own.length ? $t.k9 : $t.k10; c.sk = own.length ? $q.bh : $q.bi; return c; }
 const rd = regDomain(h);
 const [first, spark] = await Promise.all([
-X.fetch(TB.kbx_xray__t.k11 + encodeURIComponent(rd) + TB.kbx_xray__t.k12, null, 'Internet Archive CDX API', 10000),
-X.fetch(TB.kbx_xray__t.k13 + encodeURIComponent(rd) + '&collapse=timestamp:6', null, 'Internet Archive sparkline', 10000)
+X.fetch($t.k11 + encodeURIComponent(rd) + $t.k12, null, $q.bj, 10000),
+X.fetch($t.k13 + encodeURIComponent(rd) + $q.bk, null, $q.bl, 10000)
 ]);
 let rows = null; try { rows = first.ok ? first.json() : null; } catch (e) {}
 let sp = null; try { sp = spark.ok ? spark.json() : null; } catch (e) {}
 const years = {};
 if (sp && sp.years) Object.keys(sp.years).forEach(y => { const n = (sp.years[y] || []).reduce((a, b) => a + (+b || 0), 0); if (n) years[y] = n; });
-if (!first.ok && !spark.ok) { c.status = 'unavailable'; c.summary = TB.kbx_xray__t.k14; c.sk = 'wb_down'; c.facts = own; return c; }
+if (!first.ok && !spark.ok) { c.status = $q.aC; c.summary = $t.k14; c.sk = $q.bm; c.facts = own; return c; }
 const fr = rows && rows.length > 1 ? rows[1] : null;
 const ts = fr ? fr[0] : (sp && sp.first_ts) || null;
-if (!ts) { c.status = 'not_found'; c.summary = TB.kbx_xray__t.k15 + rd + TB.kbx_xray__t.k16; c.sk = 'wb_none'; c.sa = { d: rd }; c.facts = own; c.links.push({ label: 'Search the Internet Archive', key: 'l_wb_all', url: 'https://web.archive.org/web/*/' + rd + '*' }); return c; }
+if (!ts) { c.status = $q.t; c.summary = $t.k15 + rd + $t.k16; c.sk = $q.bn; c.sa = { d: rd }; c.facts = own; c.links.push({ label: $q.bo, key: $q.bp, url: $q.bq + rd + '*' }); return c; }
 const day = ts.slice(0, 4) + '-' + ts.slice(4, 6) + '-' + ts.slice(6, 8);
 c.status = 'found';
-c.facts.push({ k: 'First snapshot of ' + rd, key: 'f_wb_first', v: day + ' (' + yearsSince(day) + ' years ago)', src: 'https://web.archive.org/web/' + ts + '/' + (fr ? fr[1] : rd) });
-if (sp && sp.last_ts) { const l = String(sp.last_ts); c.facts.push({ k: 'Latest snapshot', key: 'f_wb_last', v: l.slice(0, 4) + '-' + l.slice(4, 6) + '-' + l.slice(6, 8), src: 'https://web.archive.org/web/' + l + '/' + rd }); }
+c.facts.push({ k: $q.br + rd, key: $q.bs, v: day + ' (' + yearsSince(day) + $q.bt, src: $q.bu + ts + '/' + (fr ? fr[1] : rd) });
+if (sp && sp.last_ts) { const l = String(sp.last_ts); c.facts.push({ k: $q.bv, key: $q.bw, v: l.slice(0, 4) + '-' + l.slice(4, 6) + '-' + l.slice(6, 8), src: $q.bu + l + '/' + rd }); }
 const ys = Object.keys(years).sort();
-if (ys.length) { c.years = ys.map(y => ({ y: +y, n: years[y], url: 'https://web.archive.org/web/' + y + '0101000000*/' + rd })); c.facts.push({ k: TB.kbx_xray__t.k17, key: 'f_wb_years', v: ys.map(y => y + ': ' + years[y]).join(' · '), src: 'https://web.archive.org/web/*/' + rd + '*' }); }
+if (ys.length) { c.years = ys.map(y => ({ y: +y, n: years[y], url: $q.bu + y + $q.bx + rd })); c.facts.push({ k: $t.k17, key: $q.by, v: ys.map(y => y + ': ' + years[y]).join(' · '), src: $q.bq + rd + '*' }); }
 c.facts = c.facts.concat(own);
-c.summary = 'The Internet Archive first saw ' + rd + ' on ' + day + '.'; c.sk = 'wb_first'; c.sa = { d: rd, day };
-c.links.push({ label: 'All snapshots', key: 'l_wb_all', url: 'https://web.archive.org/web/*/' + rd + '*' });
+c.summary = $q.bz + rd + ' on ' + day + '.'; c.sk = $q.bA; c.sa = { d: rd, day };
+c.links.push({ label: $q.bB, key: $q.bp, url: $q.bq + rd + '*' });
 return c;
 }
-async function rdapJson(X, url, name) { const r = await X.fetch(url, { headers: { 'user-agent': TB.kbx_xray__t.UA, accept: TB.kbx_xray__t.k18 }, redirect: 'follow' }, name, 9000); let j = null; try { j = r.ok ? r.json() : null; } catch (e) {} return { r, j }; }
+async function rdapJson(X, url, name) { const r = await X.fetch(url, { headers: { 'user-agent': $t.UA, accept: $t.k18 }, redirect: $q.bC }, name, 9000); let j = null; try { j = r.ok ? r.json() : null; } catch (e) {} return { r, j }; }
 const ev = (j, a) => ((j && j.events) || []).find(e => e.eventAction === a);
 function vname(ent) { const v = ent && ent.vcardArray && ent.vcardArray[1]; const fn = v && v.find(x => x[0] === 'fn'); return fn ? fn[3] : (ent && ent.handle) || null; }
 async function cardDomain(X) {
-const h = X.input.host; const c = { id: 'domain', title: 'Domain registration', facts: [], links: [], gaps: [] };
-if (!h) { c.status = 'skipped'; c.summary = 'No website given.'; c.sk = 'dm_noweb'; return c; }
-const rd = regDomain(h), { r, j } = await rdapJson(X, 'https://rdap.org/domain/' + encodeURIComponent(rd), TB.kbx_xray__t.k19);
-const src = 'https://rdap.org/domain/' + rd;
-if (!j) { c.status = r.status === 404 ? 'not_published' : 'unavailable'; c.summary = r.status === 404 ? 'No public RDAP record for ' + rd + TB.kbx_xray__t.k20 : 'The RDAP service did not answer.'; c.sk = r.status === 404 ? 'dm_none' : 'dm_down'; c.sa = { d: rd }; c.links.push({ label: 'Look it up on lookup.icann.org', key: 'l_icann', url: TB.kbx_xray__t.k21 + rd }); return c; }
-const reg = ev(j, 'registration'), exp = ev(j, 'expiration'), chg = ev(j, 'last changed') || ev(j, 'last update of RDAP database');
-const registrar = (j.entities || []).find(e => (e.roles || []).includes('registrar'));
+const h = X.input.host; const c = { id: $q.bD, title: $q.bE, facts: [], links: [], gaps: [] };
+if (!h) { c.status = $q.aA; c.summary = $q.bF; c.sk = $q.bG; return c; }
+const rd = regDomain(h), { r, j } = await rdapJson(X, $q.bH + encodeURIComponent(rd), $t.k19);
+const src = $q.bH + rd;
+if (!j) { c.status = r.status === 404 ? $q.aK : $q.aC; c.summary = r.status === 404 ? $q.bI + rd + $t.k20 : $q.bJ; c.sk = r.status === 404 ? $q.bK : $q.bL; c.sa = { d: rd }; c.links.push({ label: $q.bM, key: $q.bN, url: $t.k21 + rd }); return c; }
+const reg = ev(j, $q.bO), exp = ev(j, $q.bP), chg = ev(j, $q.bQ) || ev(j, $q.bR);
+const registrar = (j.entities || []).find(e => (e.roles || []).includes($q.bS));
 c.status = 'found';
-if (reg) c.facts.push({ k: 'Registered', key: 'f_dm_reg', v: isoDay(reg.eventDate) + ' (' + yearsSince(reg.eventDate) + ' years ago)', src });
-else c.facts.push({ k: 'Registration date', key: 'f_dm_reg', v: 'not published by the registry', src });
-if (exp) c.facts.push({ k: 'Paid until', key: 'f_dm_exp', v: isoDay(exp.eventDate), src });
-if (chg && chg.eventAction === 'last changed') c.facts.push({ k: 'Last changed', key: 'f_dm_chg', v: isoDay(chg.eventDate), src });
-if (registrar) c.facts.push({ k: 'Registrar', key: 'f_dm_registrar', v: vname(registrar), src });
-if ((j.status || []).length) c.facts.push({ k: 'Status codes', key: 'f_dm_status', v: j.status.slice(0, 4).join(', '), src });
-if ((j.nameservers || []).length) c.facts.push({ k: 'Name servers', key: 'f_dm_ns', v: j.nameservers.slice(0, 3).map(n => String(n.ldhName || '').toLowerCase()).join(', '), src });
-const self = (j.links || []).find(l => l.rel === 'self'); if (self) c.links.push({ label: 'Registry RDAP record', key: 'l_rdap', url: self.href });
-c.summary = reg ? rd + ' was registered on ' + isoDay(reg.eventDate) + (registrar ? ' through ' + vname(registrar) : '') + '.' : 'The registry does not publish when ' + rd + ' was registered.';
-c.sk = reg ? 'dm_reg' : 'dm_noreg'; c.sa = { d: rd, day: reg ? isoDay(reg.eventDate) : '', by: registrar ? vname(registrar) : '' };
+if (reg) c.facts.push({ k: $q.bT, key: $q.bU, v: isoDay(reg.eventDate) + ' (' + yearsSince(reg.eventDate) + $q.bt, src });
+else c.facts.push({ k: $q.bV, key: $q.bU, v: $q.bW, src });
+if (exp) c.facts.push({ k: $q.bX, key: $q.bY, v: isoDay(exp.eventDate), src });
+if (chg && chg.eventAction === $q.bQ) c.facts.push({ k: $q.bZ, key: $q.ca, v: isoDay(chg.eventDate), src });
+if (registrar) c.facts.push({ k: $q.cb, key: $q.cc, v: vname(registrar), src });
+if ((j.status || []).length) c.facts.push({ k: $q.cd, key: $q.ce, v: j.status.slice(0, 4).join(', '), src });
+if ((j.nameservers || []).length) c.facts.push({ k: $q.cf, key: $q.cg, v: j.nameservers.slice(0, 3).map(n => String(n.ldhName || '').toLowerCase()).join(', '), src });
+const self = (j.links || []).find(l => l.rel === 'self'); if (self) c.links.push({ label: $q.ch, key: $q.ci, url: self.href });
+c.summary = reg ? rd + $q.cj + isoDay(reg.eventDate) + (registrar ? $q.ck + vname(registrar) : '') + '.' : $q.cl + rd + $q.cm;
+c.sk = reg ? $q.cn : $q.co; c.sa = { d: rd, day: reg ? isoDay(reg.eventDate) : '', by: registrar ? vname(registrar) : '' };
 c.reg_date = reg ? isoDay(reg.eventDate) : null;
 return c;
 }
 async function cardTls(X) {
-const h = X.input.host; const c = { id: 'tls', title: 'Security certificate history', facts: [], links: [], gaps: [] };
-if (!h) { c.status = 'skipped'; c.summary = 'No website given.'; c.sk = 'dm_noweb'; return c; }
-const rd = regDomain(h), crt = 'https://crt.sh/?q=' + encodeURIComponent(rd);
+const h = X.input.host; const c = { id: 'tls', title: $q.cp, facts: [], links: [], gaps: [] };
+if (!h) { c.status = $q.aA; c.summary = $q.bF; c.sk = $q.bG; return c; }
+const rd = regDomain(h), crt = $q.cq + encodeURIComponent(rd);
 const [r, r2] = await Promise.all([
-X.fetch(TB.kbx_xray__t.k22 + encodeURIComponent(rd) + TB.kbx_xray__t.k23, null, TB.kbx_xray__t.k24, 9000),
-X.fetch(crt + '&output=json', null, TB.kbx_xray__t.k25, 10000)
+X.fetch($t.k22 + encodeURIComponent(rd) + $t.k23, null, $t.k24, 9000),
+X.fetch(crt + $q.cr, null, $t.k25, 10000)
 ]);
 let a = null; try { a = r.ok ? r.json() : null; } catch (e) {}
 let hist = null; try { hist = r2 && r2.ok ? r2.json() : null; } catch (e) {}
-c.links.push({ label: 'Search crt.sh', key: 'l_crt', url: crt });
-if (!Array.isArray(a) && !Array.isArray(hist)) { c.status = 'unavailable'; c.summary = r.status === 429 ? TB.kbx_xray__t.k26 : TB.kbx_xray__t.k27; c.sk = r.status === 429 ? 'tl_rate' : 'tl_down'; return c; }
+c.links.push({ label: $q.cs, key: 'l_crt', url: crt });
+if (!Array.isArray(a) && !Array.isArray(hist)) { c.status = $q.aC; c.summary = r.status === 429 ? $t.k26 : $t.k27; c.sk = r.status === 429 ? $q.ct : $q.cu; return c; }
 const cur = Array.isArray(a) ? a : [], all = Array.isArray(hist) ? hist : [];
-if (!cur.length && !all.length) { c.status = 'not_found'; c.summary = 'No certificate for ' + rd + TB.kbx_xray__t.k28; c.sk = 'tl_none'; c.sa = { d: rd }; return c; }
+if (!cur.length && !all.length) { c.status = $q.t; c.summary = $q.cv + rd + $t.k28; c.sk = $q.cw; c.sa = { d: rd }; return c; }
 c.status = 'found';
 const firstAll = all.length ? all.map(x => x.not_before).filter(Boolean).sort()[0] : null;
 const byStart = cur.slice().sort((x, y) => Date.parse(x.not_before) - Date.parse(y.not_before)), last = byStart[byStart.length - 1];
-if (firstAll) c.facts.push({ k: 'First certificate in the public logs', key: 'f_tl_first', v: isoDay(firstAll) + ' (' + yearsSince(firstAll) + ' years ago)', src: crt });
-else if (byStart.length) c.facts.push({ k: 'Oldest certificate still valid today', key: 'f_tl_oldcur', v: isoDay(byStart[0].not_before) + TB.kbx_xray__t.k29, src: crt });
+if (firstAll) c.facts.push({ k: $q.cx, key: $q.cy, v: isoDay(firstAll) + ' (' + yearsSince(firstAll) + $q.bt, src: crt });
+else if (byStart.length) c.facts.push({ k: $q.cz, key: $q.cA, v: isoDay(byStart[0].not_before) + $t.k29, src: crt });
 if (last) {
-c.facts.push({ k: 'Current certificate issuer', key: 'f_tl_issuer', v: (last.issuer && (last.issuer.friendly_name || last.issuer.name)) || 'unknown', src: 'https://sslmate.com/certspotter/' });
-c.facts.push({ k: 'Current certificate valid', key: 'f_tl_valid', v: isoDay(last.not_before) + ' to ' + isoDay(last.not_after), src: 'https://sslmate.com/certspotter/' });
+c.facts.push({ k: $q.cB, key: $q.cC, v: (last.issuer && (last.issuer.friendly_name || last.issuer.name)) || $q.cD, src: $q.cE });
+c.facts.push({ k: $q.cF, key: $q.cG, v: isoDay(last.not_before) + ' to ' + isoDay(last.not_after), src: $q.cE });
 }
-c.facts.push({ k: 'Certificates listed', key: 'f_tl_n', v: String(all.length || cur.length), src: crt });
+c.facts.push({ k: $q.cH, key: $q.cI, v: String(all.length || cur.length), src: crt });
 const by = last && last.issuer && last.issuer.friendly_name || '';
-if (firstAll) { c.summary = 'The first certificate for ' + rd + ' in the public logs dates from ' + isoDay(firstAll) + (by ? '; the current one is from ' + by : '') + '.'; c.sk = 'tl_first'; c.sa = { d: rd, day: isoDay(firstAll), by }; }
-else { c.summary = 'Current certificates for ' + rd + (by ? ' are from ' + by : '') + TB.kbx_xray__t.k30; c.sk = 'tl_cur'; c.sa = { d: rd, by }; }
+if (firstAll) { c.summary = $q.cJ + rd + $q.cK + isoDay(firstAll) + (by ? $q.cL + by : '') + '.'; c.sk = $q.cM; c.sa = { d: rd, day: isoDay(firstAll), by }; }
+else { c.summary = $q.cN + rd + (by ? $q.cO + by : '') + $t.k30; c.sk = $q.cP; c.sa = { d: rd, by }; }
 return c;
 }
 const CDN = /cloudflare|amazon|aws|google|akamai|fastly|vercel|netlify|microsoft|azure|incapsula|imperva|sucuri|bunny|ovh|hetzner|digitalocean|wix|squarespace|shopify|automattic|wpengine|hostinger/i;
 async function cardHosting(X) {
-const h = X.input.host; const c = { id: 'hosting', title: 'Where the website is hosted', facts: [], links: [], gaps: [] };
-if (!h) { c.status = 'skipped'; c.summary = 'No website given.'; c.sk = 'dm_noweb'; return c; }
+const h = X.input.host; const c = { id: $q.cQ, title: $q.cR, facts: [], links: [], gaps: [] };
+if (!h) { c.status = $q.aA; c.summary = $q.bF; c.sk = $q.bG; return c; }
 const host = (X.input.url && new URL(X.input.url).hostname) || h;
-const d = await X.fetch(TB.kbx_xray__t.k31 + encodeURIComponent(host) + '&type=A', { headers: { accept: 'application/dns-json' } }, 'DNS over HTTPS (Cloudflare 1.1.1.1)', 6000);
+const d = await X.fetch($t.k31 + encodeURIComponent(host) + $q.cS, { headers: { accept: $q.cT } }, $q.cU, 6000);
 let dj = null; try { dj = d.ok ? d.json() : null; } catch (e) {}
 const ips = ((dj && dj.Answer) || []).filter(x => x.type === 1).map(x => x.data).slice(0, 3);
-if (!ips.length) { c.status = dj ? 'not_found' : 'unavailable'; c.summary = dj ? 'No IPv4 address published for ' + host + '.' : 'DNS lookup did not answer.'; c.sk = dj ? 'hs_noip' : 'hs_down'; c.sa = { d: host }; return c; }
-const { j } = await rdapJson(X, 'https://rdap.org/ip/' + ips[0], TB.kbx_xray__t.k32);
+if (!ips.length) { c.status = dj ? $q.t : $q.aC; c.summary = dj ? $q.cV + host + '.' : $q.cW; c.sk = dj ? $q.cX : $q.cY; c.sa = { d: host }; return c; }
+const { j } = await rdapJson(X, $q.cZ + ips[0], $t.k32);
 c.status = 'found';
-c.facts.push({ k: 'IP address', key: 'f_hs_ip', v: ips.join(', '), src: TB.kbx_xray__t.k33 + host + '&type=A' });
+c.facts.push({ k: $q.da, key: $q.db, v: ips.join(', '), src: $t.k33 + host + $q.cS });
 let net = null, ctry = null;
 if (j) { net = j.name || null; ctry = j.country || null; const org = (j.entities || []).map(vname).filter(Boolean)[0];
-if (net || org) c.facts.push({ k: 'Network', key: 'f_hs_net', v: [net, org].filter(Boolean).join(' · '), src: 'https://rdap.org/ip/' + ips[0] });
-c.facts.push({ k: 'Network registered in', key: 'f_hs_ctry', v: ctry || 'not published', src: 'https://rdap.org/ip/' + ips[0] });
+if (net || org) c.facts.push({ k: $q.dc, key: $q.dd, v: [net, org].filter(Boolean).join(' · '), src: $q.cZ + ips[0] });
+c.facts.push({ k: $q.de, key: $q.df, v: ctry || $q.dg, src: $q.cZ + ips[0] });
 net = [net, org].filter(Boolean).join(' ');
 }
 const cdn = net && CDN.test(net);
-if (cdn) c.facts.push({ k: 'Note', key: 'f_hs_note', v: TB.kbx_xray__s.k0 , vk: 'v_hs_cdn' });
-c.summary = host + ' resolves to ' + ips[0] + (net ? ' on ' + clip(net, 60) : '') + (ctry ? ', a network registered in ' + ctry : '') + '.';
+if (cdn) c.facts.push({ k: 'Note', key: $q.dh, v: $s.k0 , vk: $q.di });
+c.summary = host + $q.dj + ips[0] + (net ? ' on ' + clip(net, 60) : '') + (ctry ? $q.dk + ctry : '') + '.';
 c.sk = 'hs_ip'; c.sa = { d: host, ip: ips[0], net: clip(net || '', 60), c: ctry || '' };
 return c;
 }
 async function cardRegisters(X) {
-const c = { id: 'registers', title: 'Official registers', facts: [], links: [], gaps: [] };
+const c = { id: $q.dl, title: $q.dm, facts: [], links: [], gaps: [] };
 const m = await X.match, pg0 = await X.page, idf = pg0 && pg0.ok ? identityFacts(pg0, X.input) : null;
 const company = (m && m.developer && m.developer.n) || (m && m.project && m.project.dv) || (idf && idf.dev) || null;
 const body = { ai: '0' }; if (X.input.url) body.url = X.input.url; else body.q = X.input.q; if (company && company.length >= 3 && company.length <= 120) body.company = company;
 const t = Date.now(); let d = null;
 try {
 const lk = await import('./kbx_lookup.js');
-const r = await lk.handle(new Request(ORIGIN + '/api/kb/lookup', { method: 'POST', headers: { 'content-type': 'application/json', 'cf-connecting-ip': X.ip }, body: JSON.stringify(body) }), new URL(ORIGIN + '/api/kb/lookup'), X.env, X.ctx);
+const r = await lk.handle(new Request(ORIGIN + $q.dn, { method: 'POST', headers: { 'content-type': $q.do, 'cf-connecting-ip': X.ip }, body: JSON.stringify(body) }), new URL(ORIGIN + $q.dn), X.env, X.ctx);
 d = await r.json();
-} catch (e) { d = { error: 'server' }; }
-c.sources = [{ name: TB.kbx_xray__t.k34, url: ORIGIN + '/api/kb/lookup', status: d && !d.error ? 200 : 0, ms: Date.now() - t }];
-if (!d || d.error) { c.status = d && d.error === 'rate' ? 'unavailable' : 'unavailable'; c.summary = d && d.error === 'rate' ? TB.kbx_xray__t.k35 : 'The register lookup did not complete.'; c.sk = d && d.error === 'rate' ? 'rg_rate' : 'rg_down'; return c; }
-const regs = (d.checks || []).filter(x => x.id !== 'website' && x.id !== 'rdap');
+} catch (e) { d = { error: $q.dp }; }
+c.sources = [{ name: $t.k34, url: ORIGIN + $q.dn, status: d && !d.error ? 200 : 0, ms: Date.now() - t }];
+if (!d || d.error) { c.status = d && d.error === 'rate' ? $q.aC : $q.aC; c.summary = d && d.error === 'rate' ? $t.k35 : $q.dq; c.sk = d && d.error === 'rate' ? $q.dr : $q.ds; return c; }
+const regs = (d.checks || []).filter(x => x.id !== $q.u && x.id !== 'rdap');
 regs.forEach(x => {
 const sn = x.snapshot || {};
 c.facts.push({ k: x.label || x.name || x.id, v: x.status === 'found' ? (x.summary || x.note || 'found') : x.status.replace(/_/g, ' ') + (x.note ? ': ' + clip(x.note, 160) : ''), src: sn.url || x.url || x.source_url || null, status: x.status, sha256: sn.sha256 || null });
 if (sn.sha256) c.sources.push({ name: x.label || x.id, url: sn.url || x.url, status: sn.status || 200, bytes: sn.bytes || null, sha256: sn.sha256 });
 });
 const found = regs.filter(x => x.status === 'found').length;
-c.status = !regs.length ? 'not_found' : found ? 'found' : 'not_found';
-c.summary = !regs.length ? TB.kbx_xray__t.k36 + (company ? '' : ' (no company name found to search)') + '.' : found + ' of ' + regs.length + TB.kbx_xray__t.k37 + (company ? ' (company searched: ' + clip(company, 60) + ')' : '') + '.';
-c.sk = !regs.length ? 'rg_none' : 'rg_sum'; c.sa = { f: found, n: regs.length, co: company ? clip(company, 60) : '' };
-if (!found) c.gaps.push('developer');
-c.gaps.push('land', 'permit');
-if (d.seal) { c.seal = { root: d.seal.root_sha256, url: d.seal.result_url }; c.links.push({ label: 'Sealed register result', key: 'l_seal', url: d.seal.result_url }); }
-c.links.push({ label: 'Which registers exist per country', key: 'l_cov', url: ORIGIN + '/registers/' });
+c.status = !regs.length ? $q.t : found ? 'found' : $q.t;
+c.summary = !regs.length ? $t.k36 + (company ? '' : $q.dt) + '.' : found + ' of ' + regs.length + $t.k37 + (company ? $q.du + clip(company, 60) + ')' : '') + '.';
+c.sk = !regs.length ? $q.dv : $q.dw; c.sa = { f: found, n: regs.length, co: company ? clip(company, 60) : '' };
+if (!found) c.gaps.push($q.ak);
+c.gaps.push('land', $q.aJ);
+if (d.seal) { c.seal = { root: d.seal.root_sha256, url: d.seal.result_url }; c.links.push({ label: $q.dx, key: $q.dy, url: d.seal.result_url }); }
+c.links.push({ label: $q.dz, key: 'l_cov', url: ORIGIN + $q.dA });
 return c;
 }
 async function cardDesk(X) {
 const t = Date.now();
-const r = await kbApi(new Request(ORIGIN + '/api/kb/analyze', { method: 'POST', headers: { 'content-type': 'application/json', 'cf-connecting-ip': X.ip }, body: JSON.stringify({ url: X.input.url, lang: X.lang }) }), new URL(ORIGIN + '/api/kb/analyze'), X.env, X.ctx);
+const r = await kbApi(new Request(ORIGIN + $q.dB, { method: 'POST', headers: { 'content-type': $q.do, 'cf-connecting-ip': X.ip }, body: JSON.stringify({ url: X.input.url, lang: X.lang }) }), new URL(ORIGIN + $q.dB), X.env, X.ctx);
 const d = await r.json().catch(() => ({}));
-const c = { id: 'desk', title: 'Desk review (AI)', sources: [{ name: TB.kbx_xray__t.k38, url: ORIGIN + '/api/kb/analyze', status: r.status, ms: Date.now() - t }] };
-if (!d.report) { c.status = 'unavailable'; c.summary = 'The desk review did not complete (' + (d.error || r.status) + ').'; return c; }
+const c = { id: 'desk', title: $q.dC, sources: [{ name: $t.k38, url: ORIGIN + $q.dB, status: r.status, ms: Date.now() - t }] };
+if (!d.report) { c.status = $q.aC; c.summary = $q.dD + (d.error || r.status) + ').'; return c; }
 const rp = d.report; c.status = 'found'; c.summary = clip(rp.summary || '', 300); c.cached = !!d.cached;
-c.facts = ['project', 'developer', 'location', 'completion', 'price_from', 'title_type', 'permit_claim', 'advertised_return'].filter(k => rp[k]).map(k => ({ k: k.replace(/_/g, ' '), v: String(rp[k]), src: X.input.url }));
+c.facts = [$q.dE, $q.ak, $q.an, $q.dF, $q.dG, $q.dH, $q.dI, $q.dJ].filter(k => rp[k]).map(k => ({ k: k.replace(/_/g, ' '), v: String(rp[k]), src: X.input.url }));
 return c;
 }
 const EV_GAPS = { location: ['site'], satellite: ['site'], law: ['contract'], developer: ['developer'], ppm: [], market: [], images: [], similar: [] };
-const absU = x => typeof x === 'string' && x ? (x.startsWith('/') ? ORIGIN + x : x) : undefined;
+const absU = x => typeof x === $q.al && x ? (x.startsWith('/') ? ORIGIN + x : x) : undefined;
 function evCard(c) {
-const k = { id: c.id, n: c.n, title: c.title || TB.kbx_xray__t.o_EV_TITLES[c.id] || c.id, status: c.status === 'not_applicable' ? 'skipped' : (c.status || 'ok'), summary: c.summary || '',
+const k = { id: c.id, n: c.n, title: c.title || $t.o_EV_TITLES[c.id] || c.id, status: c.status === $q.dK ? $q.aA : (c.status || 'ok'), summary: c.summary || '',
 facts: (c.items || []).slice(0, 30).map(i => ({ k: String(i.label || ''), v: i.value == null ? '' : String(i.value), q: i.quote || undefined, src: absU(i.url), kind: i.kind || undefined })),
 limits: Array.isArray(c.limits) ? c.limits.slice(0, 6) : undefined, paid: c.paid || undefined, data: c.data || undefined,
-gaps: (c.status === 'found' && c.id === 'developer') ? [] : (EV_GAPS[c.id] || []),
+gaps: (c.status === 'found' && c.id === $q.ak) ? [] : (EV_GAPS[c.id] || []),
 sources: (c.sources || []).map(x => ({ name: x.name, url: absU(x.url), status: x.status || undefined, bytes: x.bytes || undefined, sha256: x.sha256 || undefined, licence: x.licence || undefined, cache: x.cache || undefined })), where: 'edge' };
 if (c.img && c.img.src) k.img = { url: absU(c.img.src), alt: c.img.alt || k.title, credit: c.img.credit || '', w: c.img.w, h: c.img.h };
 return k;
@@ -389,26 +389,26 @@ async function withBudget(p, ms) { let t; const to = new Promise(r => { t = setT
 async function runXray(inp, opts, emit) {
 const { env, ctx, req } = opts, t0 = Date.now(), started = new Date().toISOString();
 const allSources = [], cards = [], waiters = {};
-const X = { input: inp, lang: opts.lang || 'en', env, ctx, ip: req.headers.get('cf-connecting-ip') || 'x', found: {}, ix: null };
+const X = { input: inp, lang: opts.lang || 'en', env, ctx, ip: req.headers.get($q.dL) || 'x', found: {}, ix: null };
 const resolvers = {}; const wait = id => waiters[id] || (waiters[id] = new Promise(r => { resolvers[id] = r; }));
 X.wait = wait;
 let ix = null; try { ix = await named(env); } catch (e) {}
 X.ix = ix; X.named = Promise.resolve(ix);
 if (ix && coiHit(ix, inp)) {
-const c = { id: 'coi', title: 'Not reviewed: conflict of interest', status: 'skipped', sk: 'coi', summary: TB.kbx_xray__s.k1, links: [{ label: 'Independence policy', key: 'l_indep', url: ORIGIN + '/independence' }], ms: 0, where: 'edge', sources: [] };
+const c = { id: 'coi', title: $q.dM, status: $q.aA, sk: 'coi', summary: $s.k1, links: [{ label: $q.dN, key: $q.dO, url: ORIGIN + $q.dP }], ms: 0, where: 'edge', sources: [] };
 emit({ type: 'plan', checks: [{ id: 'coi', title: c.title }], input: inp }); emit({ type: 'card', card: c });
 return finish([c], inp, started, t0, opts, emit, allSources);
 }
 let m = ix ? findMatch(ix, inp) : { project: null, developer: null, also: [] };
 if (inp.kind === 'name' && m.project && m.project.url && okUrl(m.project.url)) { const u = okUrl(m.project.url); inp = Object.assign({}, inp, { url: u.toString(), host: u.hostname.toLowerCase().replace(/^www\./, ''), via: 'name' }); X.input = inp; }
 X.match = Promise.resolve(m);
-let ev = null; try { ev = await import('./kbx_xray_ev.js'); if (typeof ev.evRun !== 'function') ev = null; } catch (e) { ev = null; }
+let ev = null; try { ev = await import('./kbx_xray_ev.js'); if (typeof ev.evRun !== $q.dQ) ev = null; } catch (e) { ev = null; }
 const evIds = ev && (inp.url || m.project) ? (ev.EV_IDS || []) : [];
 const list = CARDS.filter(c => !(c.web && !inp.host));
-if (opts.desk && inp.url) list.push({ id: 'desk', title: 'Desk review (AI)', run: cardDesk, where: 'edge+ai' });
-emit({ type: 'plan', checks: list.map(c => ({ id: c.id, title: c.title })).concat(evIds.map(id => ({ id, title: TB.kbx_xray__t.o_EV_TITLES[id] || id }))), input: inp, at: started, colo: (req.cf && req.cf.colo) || null, version: VERSION });
+if (opts.desk && inp.url) list.push({ id: 'desk', title: $q.dC, run: cardDesk, where: $q.dR });
+emit({ type: 'plan', checks: list.map(c => ({ id: c.id, title: c.title })).concat(evIds.map(id => ({ id, title: $t.o_EV_TITLES[id] || id }))), input: inp, at: started, colo: (req.cf && req.cf.colo) || null, version: VERSION });
 X.page = inp.url ? (async () => {
-const t = Date.now(), rec = { name: 'The project website', url: inp.url, status: 0, bytes: 0, sha256: null, ms: 0 }; allSources.push(rec);
+const t = Date.now(), rec = { name: $q.dS, url: inp.url, status: 0, bytes: 0, sha256: null, ms: 0 }; allSources.push(rec);
 const pg = await fetchPage(new URL(inp.url));
 rec.ms = Date.now() - t; rec.status = pg.status || 0;
 if (pg.error) { rec.error = pg.error; return { ok: false, error: pg.error, status: pg.status, detail: pg.detail }; }
@@ -417,7 +417,7 @@ const parts = pageParts(pg.html);
 return { ok: true, url: pg.url, status: pg.status, html: pg.html, text: ent(parts.visible).slice(0, 300000), hidden: parts.hidden, hidden_blocks: parts.hidden.length, bytes: buf.byteLength, sha256: rec.sha256, hops: pg.hops };
 })() : Promise.resolve(null);
 const done = (c, def, t, srcs) => {
-c = c || { status: 'skipped' }; c.id = def.id; c.title = c.title || def.title; c.ms = Date.now() - t; c.where = c.where || def.where || 'edge';
+c = c || { status: $q.aA }; c.id = def.id; c.title = c.title || def.title; c.ms = Date.now() - t; c.where = c.where || def.where || 'edge';
 c.sources = (c.sources || []).concat(srcs.filter(s => !(c.sources || []).some(x => x.url === s.url)));
 c.sources.forEach(s => allSources.push(s));
 cards.push(c); if (resolvers[def.id]) resolvers[def.id](c); else waiters[def.id] = Promise.resolve(c);
@@ -425,11 +425,11 @@ emit({ type: 'card', card: c }); return c;
 };
 const jobs = list.map(def => {
 const t = Date.now();
-if (def.id === 'match') return Promise.resolve(done(ix ? matchCard(ix, m, inp) : { status: 'unavailable', summary: TB.kbx_xray__t.k39, sk: 'match_down' }, def, t, []));
+if (def.id === 'match') return Promise.resolve(done(ix ? matchCard(ix, m, inp) : { status: $q.aC, summary: $t.k39, sk: $q.dT }, def, t, []));
 const srcs = []; const XX = Object.assign({}, X, { fetch: makeFetcher(srcs) });
 return withBudget(Promise.resolve().then(() => def.run(XX)), CARD_MS)
-.then(c => c && c.__timeout ? { status: 'unavailable', summary: 'This check took longer than ' + CARD_MS / 1000 + ' s and was stopped.', sk: 'timeout' } : c)
-.catch(e => ({ status: 'error', summary: 'This check failed: ' + clip(String(e && e.message || e), 120), sk: 'error' }))
+.then(c => c && c.__timeout ? { status: $q.aC, summary: $q.dU + CARD_MS / 1000 + $q.dV, sk: $q.j } : c)
+.catch(e => ({ status: 'error', summary: $q.dW + clip(String(e && e.message || e), 120), sk: 'error' }))
 .then(c => c === null ? (resolvers[def.id] && resolvers[def.id](null), null) : done(c, def, t, srcs));
 });
 if (evIds.length) jobs.push((async () => {
@@ -441,14 +441,14 @@ const page = pg && pg.ok ? { url: inp.url, final_url: pg.url, html: pg.html, tex
 const seen = new Set();
 try { await ev.evRun(page, hint, env, ctx, c => { if (!c || !c.id || seen.has(c.id)) return; seen.add(c.id); const k = evCard(c); done(k, { id: k.id, title: k.title, where: 'edge' }, t, []); }, {}); }
 catch (e) {}
-evIds.filter(id => !seen.has(id)).forEach(id => done({ status: 'error', summary: 'This check did not answer.', sk: 'error' }, { id, title: TB.kbx_xray__t.o_EV_TITLES[id] || id }, t, []));
+evIds.filter(id => !seen.has(id)).forEach(id => done({ status: 'error', summary: $q.dX, sk: 'error' }, { id, title: $t.o_EV_TITLES[id] || id }, t, []));
 })());
 await Promise.all(jobs);
 return finish(cards, inp, started, t0, opts, emit, allSources);
 }
 async function finish(cards, inp, started, t0, opts, emit, allSources) {
 const { env, ctx, req } = opts;
-const order = ['coi', 'match', 'identity', 'flags', 'registers', 'domain', 'wayback', 'location', 'satellite', 'ppm', 'market', 'developer', 'law', 'similar', 'images', 'tls', 'hosting', 'desk'];
+const order = ['coi', 'match', $q.ay, 'flags', $q.dl, $q.bD, $q.aV, $q.an, $q.dY, 'ppm', $q.dZ, $q.ak, 'law', $q.ea, $q.eb, 'tls', $q.cQ, 'desk'];
 cards.sort((a, b) => { const x = order.indexOf(a.id), y = order.indexOf(b.id); return (x < 0 ? 50 : x) - (y < 0 ? 50 : y); });
 const lines = [];
 for (const c of cards) { c.sha256 = await sha(jcs(Object.assign({}, c, { sha256: undefined }))); lines.push(c.id + ' ' + c.sha256); }
@@ -457,16 +457,16 @@ lines.push('meta ' + await sha(jcs(metaObj))); lines.sort();
 const root = await sha(lines.join('\n'));
 const seen = new Map(); allSources.forEach(s => { const k = s.url + ' ' + (s.sha256 || ''); if (!seen.has(k)) seen.set(k, s); });
 const srcList = [...seen.values()];
-const proof = { colo: (req.cf && req.cf.colo) || null, country: (req.cf && req.cf.country) || null, runtime: TB.kbx_xray__t.k40, started_at: started, finished_at: new Date().toISOString(), total_ms: Date.now() - t0,
+const proof = { colo: (req.cf && req.cf.colo) || null, country: (req.cf && req.cf.country) || null, runtime: $t.k40, started_at: started, finished_at: new Date().toISOString(), total_ms: Date.now() - t0,
 sources: srcList.length, hosts: [...new Set(srcList.map(s => { try { return new URL(s.url).hostname; } catch (e) { return ''; } }).filter(Boolean))], bytes_read: srcList.reduce((a, s) => a + (s.bytes || 0), 0),
 cards: cards.map(c => ({ id: c.id, status: c.status, ms: c.ms, where: c.where, sources: (c.sources || []).length, sha256: c.sha256 })),
-seal: { root_sha256: root, lines, method: TB.kbx_xray__s.k2 },
-ai: opts.desk ? TB.kbx_xray__t.k41 : TB.kbx_xray__t.k42 };
+seal: { root_sha256: root, lines, method: $s.k2 },
+ai: opts.desk ? $t.k41 : $t.k42 };
 const res = { version: VERSION, root, url: ORIGIN + '/x/' + root + '/', meta: metaObj, cards, proof, lang: opts.lang || 'en',
-disclaimer: TB.kbx_xray__s.k3 };
+disclaimer: $s.k3 };
 try {
-const r = await kbApi(new Request(ORIGIN + '/api/kb/stamp', { method: 'POST', headers: { 'content-type': 'application/json', 'cf-connecting-ip': req.headers.get('cf-connecting-ip') || 'x' }, body: JSON.stringify({ hash: root, source: 'xray' }) }), new URL(ORIGIN + '/api/kb/stamp'), env, ctx);
-const d = await r.json(); proof.seal.opentimestamps = d.stamp ? { status: 'submitted', created_at: d.stamp.created_at, calendars: d.stamp.calendars, verify: ORIGIN + '/api/kb/stamp?hash=' + root } : { status: d.error === 'rate' ? 'rate_limited' : 'not_stamped' };
+const r = await kbApi(new Request(ORIGIN + $q.ec, { method: 'POST', headers: { 'content-type': $q.do, 'cf-connecting-ip': req.headers.get($q.dL) || 'x' }, body: JSON.stringify({ hash: root, source: 'xray' }) }), new URL(ORIGIN + $q.ec), env, ctx);
+const d = await r.json(); proof.seal.opentimestamps = d.stamp ? { status: $q.ed, created_at: d.stamp.created_at, calendars: d.stamp.calendars, verify: ORIGIN + $q.ee + root } : { status: d.error === 'rate' ? $q.ef : $q.eg };
 } catch (e) { proof.seal.opentimestamps = { status: 'error' }; }
 await store(res, inp, env, ctx);
 emit({ type: 'done', root, url: res.url, total_ms: proof.total_ms, proof, stored: res.stored });
@@ -475,125 +475,125 @@ return res;
 }
 async function store(res, inp, env, ctx) {
 const body = JSON.stringify(res);
-ctx.waitUntil(caches.default.put(RESKEY(res.root), new Response(body, { headers: { 'content-type': 'application/json', 'cache-control': 'public, max-age=2592000' } })).catch(() => {}));
+ctx.waitUntil(caches.default.put(RESKEY(res.root), new Response(body, { headers: { 'content-type': $q.do, 'cache-control': $q.eh } })).catch(() => {}));
 res.stored = 'edge';
-try { const r = await withBudget(rpc('kolaboro_xray_put', { p_wkey: WKEY, p_root: res.root, p_domain: inp.host || null, p_q: inp.q || inp.url, p_data: res }), 4000); if (r === 'ok') res.stored = 'db'; } catch (e) {}
+try { const r = await withBudget(rpc($q.ei, { p_wkey: WKEY, p_root: res.root, p_domain: inp.host || null, p_q: inp.q || inp.url, p_data: res }), 4000); if (r === 'ok') res.stored = 'db'; } catch (e) {}
 }
 async function load(root, env) {
 const h = await caches.default.match(RESKEY(root)); if (h) return h.json();
-try { const d = await rpc('kolaboro_xray_get', { p_root: root }); if (d && d.root === root) return d; } catch (e) {}
+try { const d = await rpc($q.ej, { p_root: root }); if (d && d.root === root) return d; } catch (e) {}
 return null;
 }
 async function rateOk(req, ctx) {
-const ip0 = req.headers.get('cf-connecting-ip') || 'x', ip = ip0.includes(':') ? ip0.split(':').slice(0, 4).join(':') + '::/64' : ip0, hour = new Date().toISOString().slice(0, 13);
-const k = new Request(ORIGIN + '/__xray_rl/' + encodeURIComponent(ip) + '/' + hour); const h = await caches.default.match(k), n = h ? (+(await h.text()) || 0) : 0;
+const ip0 = req.headers.get($q.dL) || 'x', ip = ip0.includes(':') ? ip0.split(':').slice(0, 4).join(':') + '::/64' : ip0, hour = new Date().toISOString().slice(0, 13);
+const k = new Request(ORIGIN + $q.ek + encodeURIComponent(ip) + '/' + hour); const h = await caches.default.match(k), n = h ? (+(await h.text()) || 0) : 0;
 if (n >= PER_IP_HOUR) return false;
-ctx.waitUntil(caches.default.put(k, new Response(String(n + 1), { headers: { 'cache-control': 'max-age=3600' } }))); return true;
+ctx.waitUntil(caches.default.put(k, new Response(String(n + 1), { headers: { 'cache-control': $q.el } }))); return true;
 }
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 function sse(req, env, ctx, inp, lang) {
 const { readable, writable } = new TransformStream(), w = writable.getWriter();
-const send = o => w.write(te.encode('data: ' + JSON.stringify(o) + '\n\n')).catch(() => {});
+const send = o => w.write(te.encode($q.em + JSON.stringify(o) + '\n\n')).catch(() => {});
 const job = (async () => {
 try {
 const ik = await sha(VERSION + XV + '|' + lang + '|' + (inp.url || '') + '|' + (inp.q || ''));
 const hit = await caches.default.match(INKEY(ik));
 if (hit) { const res = await hit.json(); send({ type: 'plan', checks: res.cards.map(c => ({ id: c.id, title: c.title })), input: res.meta.input, cached: true, at: res.meta.started_at }); for (const c of res.cards) send({ type: 'card', card: c, cached: true }); send({ type: 'done', root: res.root, url: res.url, total_ms: res.proof.total_ms, proof: res.proof, cached: true, stored: res.stored }); return; }
-if (!(await rateOk(req, ctx))) { send({ type: 'error', error: 'rate', limit: PER_IP_HOUR + ' X-rays an hour per visitor' }); return; }
+if (!(await rateOk(req, ctx))) { send({ type: 'error', error: 'rate', limit: PER_IP_HOUR + $q.en }); return; }
 const res = await runXray(inp, { env, ctx, req, lang }, send);
 const ttl = (res.cards || []).some(c => c && c.status === 'error') ? 60 : 600;
-ctx.waitUntil(caches.default.put(INKEY(ik), new Response(JSON.stringify(res), { headers: { 'content-type': 'application/json', 'cache-control': 'max-age=' + ttl } })).catch(() => {}));
-} catch (e) { send({ type: 'error', error: 'server', detail: clip(String(e && e.message || e), 160) }); }
+ctx.waitUntil(caches.default.put(INKEY(ik), new Response(JSON.stringify(res), { headers: { 'content-type': $q.do, 'cache-control': $q.eo + ttl } })).catch(() => {}));
+} catch (e) { send({ type: 'error', error: $q.dp, detail: clip(String(e && e.message || e), 160) }); }
 finally { try { await w.close(); } catch (e) {} }
 })();
 ctx.waitUntil(job);
-return new Response(readable, { headers: Object.assign({ 'content-type': 'text/event-stream; charset=utf-8', 'cache-control': 'no-store', 'x-accel-buffering': 'no', 'x-content-type-options': 'nosniff' }, CORS) });
+return new Response(readable, { headers: Object.assign({ 'content-type': $q.ep, 'cache-control': $q.e, 'x-accel-buffering': 'no', 'x-content-type-options': $q.f }, CORS) });
 }
 async function v1(req, u, env, ctx) {
-  let b = {}; if (req.method === 'POST') { try { b = await req.json(); } catch (e) { return out({ error: 'bad_request', docs: ORIGIN + '/api/v1/xray/openapi.json' }, 400); } } else { b = { url: u.searchParams.get('url'), q: u.searchParams.get('q'), desk: u.searchParams.get('desk') }; }
+  let b = {}; if (req.method === 'POST') { try { b = await req.json(); } catch (e) { return out({ error: $q.eq, docs: ORIGIN + $q.er }, 400); } } else { b = { url: u.searchParams.get('url'), q: u.searchParams.get('q'), desk: u.searchParams.get('desk') }; }
   const inp = parseInput(b.url || b.q || '');
-  if (!inp) return out({ error: 'empty', need: 'url or q (a project website, or a project or developer name, 3 to 500 characters)', docs: ORIGIN + '/api/v1/xray/openapi.json' }, 400);
-  if (inp.kind === 'bad') return out({ error: 'url', note: 'Only public http(s) websites can be read.' }, 400);
-  const key = req.headers.get('x-api-key') || '', lang = LANGS.includes(b.lang) ? b.lang : 'en';
+  if (!inp) return out({ error: 'empty', need: $q.es, docs: ORIGIN + $q.er }, 400);
+  if (inp.kind === 'bad') return out({ error: 'url', note: $q.et }, 400);
+  const key = req.headers.get($q.eu) || '', lang = LANGS.includes(b.lang) ? b.lang : 'en';
   let desk = false, partner = null;
-  if (key) { let a; try { a = await rpc('kolaboro_api_use', { p_key: key, p_endpoint: 'POST /api/v1/xray' }); } catch (e) { return out({ error: 'db' }, 503); }
-    if (!a || a.error) return out({ error: (a && a.error) || 'invalid_key' }, a && a.error === 'quota' ? 429 : 401);
-    partner = a; desk = (b.desk === true || b.desk === '1' || b.desk === 'true') && !!inp.url && !String(key).startsWith('kb_sandbox'); }
-  else if (b.desk) return out({ error: 'key_required', note: 'The desk review is only available with a partner key (x-api-key). Without a key the X-ray runs the register and free checks.', keys: ORIGIN + '/api-keys/' }, 401);
-  if (!partner && !(await rateOk(req, ctx))) return out({ error: 'rate', limit: PER_IP_HOUR + ' X-rays an hour per visitor; partner keys have their own quota' }, 429);
+  if (key) { let a; try { a = await rpc($q.ev, { p_key: key, p_endpoint: $q.ew }); } catch (e) { return out({ error: 'db' }, 503); }
+    if (!a || a.error) return out({ error: (a && a.error) || $q.ex }, a && a.error === 'quota' ? 429 : 401);
+    partner = a; desk = (b.desk === true || b.desk === '1' || b.desk === 'true') && !!inp.url && !String(key).startsWith($q.ey); }
+  else if (b.desk) return out({ error: $q.ez, note: $q.eA, keys: ORIGIN + $q.eB }, 401);
+  if (!partner && !(await rateOk(req, ctx))) return out({ error: 'rate', limit: PER_IP_HOUR + $q.eC }, 429);
   const res = await runXray(inp, { env, ctx, req, lang, desk }, () => {});
   return out(res, 200);
 }
 function openapi() {
-const card = { type: 'object', required: ['id', 'title', 'status'], properties: { id: { type: 'string' }, title: { type: 'string' }, status: { enum: ['ok', 'found', 'not_found', 'not_published', 'unavailable', 'needs_key', 'skipped', 'error'] }, summary: { type: 'string' }, facts: { type: 'array', items: { type: 'object', properties: { k: { type: 'string' }, v: { type: 'string' }, q: { type: 'string', description: 'literal sentence from the page' }, src: { type: 'string', format: 'uri' } } } }, links: { type: 'array' }, gaps: { type: 'array', items: { type: 'string' } }, sources: { type: 'array', items: { type: 'object', properties: { name: { type: 'string' }, url: { type: 'string' }, status: { type: 'integer' }, bytes: { type: 'integer' }, sha256: { type: 'string' }, ms: { type: 'integer' } } } }, ms: { type: 'integer' }, where: { type: 'string' }, sha256: { type: 'string' } } };
-const result = { type: 'object', properties: { version: { type: 'string' }, root: { type: 'string', pattern: '^[0-9a-f]{64}$' }, url: { type: 'string', format: 'uri' }, meta: { type: 'object' }, cards: { type: 'array', items: { $ref: '#/components/schemas/XrayCard' } }, proof: { type: 'object' }, disclaimer: { type: 'string' } } };
-return { openapi: '3.1.0', info: { title: 'Kolaboro Project X-ray API', version: '2026-11-07', description: TB.kbx_xray__s.k4, license: { name: 'CC BY 4.0', identifier: 'CC-BY-4.0' } },
-servers: [{ url: ORIGIN }], components: { securitySchemes: { apiKey: { type: 'apiKey', in: 'header', name: 'x-api-key', description: 'Optional. Free key from ' + ORIGIN + TB.kbx_xray__t.k43 } }, schemas: { XrayCard: card, XrayResult: result } },
+const card = { type: $q.b, required: ['id', 'title', $q.eD], properties: { id: { type: $q.al }, title: { type: $q.al }, status: { enum: ['ok', 'found', $q.t, $q.aK, $q.aC, $q.eE, $q.aA, 'error'] }, summary: { type: $q.al }, facts: { type: 'array', items: { type: $q.b, properties: { k: { type: $q.al }, v: { type: $q.al }, q: { type: $q.al, description: $q.eF }, src: { type: $q.al, format: 'uri' } } } }, links: { type: 'array' }, gaps: { type: 'array', items: { type: $q.al } }, sources: { type: 'array', items: { type: $q.b, properties: { name: { type: $q.al }, url: { type: $q.al }, status: { type: $q.eG }, bytes: { type: $q.eG }, sha256: { type: $q.al }, ms: { type: $q.eG } } } }, ms: { type: $q.eG }, where: { type: $q.al }, sha256: { type: $q.al } } };
+const result = { type: $q.b, properties: { version: { type: $q.al }, root: { type: $q.al, pattern: $q.eH }, url: { type: $q.al, format: 'uri' }, meta: { type: $q.b }, cards: { type: 'array', items: { $ref: $q.eI } }, proof: { type: $q.b }, disclaimer: { type: $q.al } } };
+return { openapi: '3.1.0', info: { title: $q.eJ, version: $q.eK, description: $s.k4, license: { name: $q.eL, identifier: $q.eM } },
+servers: [{ url: ORIGIN }], components: { securitySchemes: { apiKey: { type: $q.eN, in: $q.eO, name: $q.eu, description: $q.eP + ORIGIN + $t.k43 } }, schemas: { XrayCard: card, XrayResult: result } },
 paths: {
-'/api/v1/xray': { post: { summary: 'Run a Project X-ray', security: [{}, { apiKey: [] }], requestBody: { required: true, content: { 'application/json': { schema: { type: 'object', properties: { url: { type: 'string', description: 'project or developer website' }, q: { type: 'string', description: 'project or developer name' }, desk: { type: 'boolean', description: TB.kbx_xray__t.k44 }, lang: { enum: LANGS } } }, examples: { url: { value: { url: TB.kbx_xray__t.k45 } }, name: { value: { q: 'Amani Melasti' } } } } } }, responses: { 200: { description: 'X-ray result', content: { 'application/json': { schema: { $ref: '#/components/schemas/XrayResult' } } } }, 400: { description: 'empty or invalid input' }, 401: { description: 'desk requested without a valid key' }, 429: { description: 'hourly limit' } } } },
-'/api/kb/xray': { get: { summary: TB.kbx_xray__t.k46, parameters: [{ name: 'u', in: 'query', required: true, schema: { type: 'string' } }, { name: 'lang', in: 'query', schema: { enum: LANGS } }], responses: { 200: { description: TB.kbx_xray__s.k5, content: { 'text/event-stream': { schema: { type: 'string' } } } } } } },
-'/x/{root}.json': { get: { summary: 'A sealed X-ray again', parameters: [{ name: 'root', in: 'path', required: true, schema: { type: 'string', pattern: '^[0-9a-f]{64}$' } }], responses: { 200: { description: 'the stored result', content: { 'application/json': { schema: { $ref: '#/components/schemas/XrayResult' } } } }, 404: { description: 'not stored here' } } } },
-'/x/{root}/vc': { get: { summary: TB.kbx_xray__s.k6, parameters: [{ name: 'root', in: 'path', required: true, schema: { type: 'string' } }], responses: { 200: { description: 'application/vc+ld+json' } } } },
-'/api/kb/xray/stats': { get: { summary: TB.kbx_xray__t.k47, parameters: [{ name: 'd', in: 'query', required: true, schema: { type: 'string' } }], responses: { 200: { description: '{domain, xrays}' } } } }
+'/api/v1/xray': { post: { summary: $q.eQ, security: [{}, { apiKey: [] }], requestBody: { required: true, content: { 'application/json': { schema: { type: $q.b, properties: { url: { type: $q.al, description: $q.eR }, q: { type: $q.al, description: $q.eS }, desk: { type: $q.eT, description: $t.k44 }, lang: { enum: LANGS } } }, examples: { url: { value: { url: $t.k45 } }, name: { value: { q: $q.eU } } } } } }, responses: { 200: { description: $q.eV, content: { 'application/json': { schema: { $ref: $q.eW } } } }, 400: { description: $q.eX }, 401: { description: $q.eY }, 429: { description: $q.eZ } } } },
+'/api/kb/xray': { get: { summary: $t.k46, parameters: [{ name: 'u', in: 'query', required: true, schema: { type: $q.al } }, { name: 'lang', in: 'query', schema: { enum: LANGS } }], responses: { 200: { description: $s.k5, content: { 'text/event-stream': { schema: { type: $q.al } } } } } } },
+'/x/{root}.json': { get: { summary: $q.fa, parameters: [{ name: 'root', in: 'path', required: true, schema: { type: $q.al, pattern: $q.eH } }], responses: { 200: { description: $q.fb, content: { 'application/json': { schema: { $ref: $q.eW } } } }, 404: { description: $q.fc } } } },
+'/x/{root}/vc': { get: { summary: $s.k6, parameters: [{ name: 'root', in: 'path', required: true, schema: { type: $q.al } }], responses: { 200: { description: $q.fd } } } },
+'/api/kb/xray/stats': { get: { summary: $t.k47, parameters: [{ name: 'd', in: 'query', required: true, schema: { type: $q.al } }], responses: { 200: { description: $q.fe } } } }
 } };
 }
 async function vc(root, env) {
-const d = await load(root, env); if (!d) return out({ error: 'not_found' }, 404);
+const d = await load(root, env); if (!d) return out({ error: $q.t }, 404);
 const { issue } = await import('./kbx_acct.js');
 const at = String(d.proof && d.proof.finished_at || d.meta.started_at).replace(/\.\d+Z$/, 'Z');
-const doc = { '@context': ['https://www.w3.org/ns/credentials/v2'], id: ORIGIN + '/x/' + root + '/vc', type: ['VerifiableCredential', 'KolaboroProjectXray'], name: 'Kolaboro Project X-ray', description: TB.kbx_xray__s.k7,
-issuer: { id: 'did:web:kolaboro.com', name: 'Kolaboro' }, validFrom: at,
-credentialSubject: { id: d.url, type: 'ProjectXray', rootSha256: root, input: d.meta.input, cards: d.cards.map(c => ({ id: c.id, status: c.status, sha256: c.sha256, sources: (c.sources || []).map(s => ({ url: s.url, sha256: s.sha256 || null })) })), sealLines: d.proof.seal.lines, disclaimer: d.disclaimer } };
-const v = await issue(env, doc, at); if (!v) return out({ error: 'signing_unavailable' }, 503);
-return out(v, 200, { 'content-type': 'application/vc+ld+json; charset=utf-8', 'cache-control': 'public, max-age=3600', 'content-disposition': 'inline; filename="kolaboro-xray-' + root.slice(0, 12) + '.vc.json"' });
+const doc = { '@context': [$q.ff], id: ORIGIN + '/x/' + root + '/vc', type: [$q.fg, $q.fh], name: $q.fi, description: $s.k7,
+issuer: { id: $q.fj, name: $q.fk }, validFrom: at,
+credentialSubject: { id: d.url, type: $q.fl, rootSha256: root, input: d.meta.input, cards: d.cards.map(c => ({ id: c.id, status: c.status, sha256: c.sha256, sources: (c.sources || []).map(s => ({ url: s.url, sha256: s.sha256 || null })) })), sealLines: d.proof.seal.lines, disclaimer: d.disclaimer } };
+const v = await issue(env, doc, at); if (!v) return out({ error: $q.fm }, 503);
+return out(v, 200, { 'content-type': $q.fn, 'cache-control': $q.fo, 'content-disposition': $q.fp + root.slice(0, 12) + $q.fq });
 }
-const escH = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const escH = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': $q.fr, "'": '&#39;' }[c]));
 const XP = TB.kbx_xray_XP ;
 async function page(root, env, ctx, shell, qlang) {
   const d = await load(root, env);
   const lang = LANGS.includes(qlang) ? qlang : d && LANGS.includes(d.lang || (d.meta || {}).lang) ? (d.lang || d.meta.lang) : 'en';
   const X = (k, v) => { const s = (XP[lang] && XP[lang][k]) || XP.en[k]; return v ? s.replace(/\{(\w+)\}/g, (m, x) => v[x] != null ? v[x] : m) : s; }, pl = lang === 'en' ? '' : '/' + lang;
-  let base = await shell(pl + '/about/');   // a plain page shell (header, footer, styles) in the page's language; /check/ has inline scripts that need its form
-  if (pl && (!base || base.status !== 200)) base = await shell('/about/');
+  let base = await shell(pl + $q.fs);   // a plain page shell (header, footer, styles) in the page's language; /check/ has inline scripts that need its form
+  if (pl && (!base || base.status !== 200)) base = await shell($q.fs);
   const name = d ? ((d.cards.find(c => c.id === 'match') || {}).project || {}).name || (d.meta.input.url ? d.meta.input.url.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '') : d.meta.input.q) : null;
-  const title = (d ? X('title', { n: clip(name, 60) }) : X('title_nf')) + ' | Kolaboro';
-  const noJs = d ? '<noscript><ol>' + d.cards.map(c => '<li><b>' + escH(c.title) + '</b>: ' + escH(c.summary || c.status) + '<ul>' + (c.facts || []).map(f => '<li>' + escH(f.k) + ': ' + escH(f.v) + (f.q ? ' "' + escH(f.q) + '"' : '') + (f.src ? ' (' + escH(f.src) + ')' : '') + '</li>').join('') + '</ul></li>').join('') + '</ol></noscript>' : '';
-  const ltr = t => '<bdi dir="ltr">' + escH(t) + '</bdi>';
-  const main = '<section class="phero tight"><div class="wrap"><p class="crumb"><a href="' + pl + '/">Kolaboro</a> / <a href="' + pl + '/check/">' + escH(X('check')) + '</a> / ' + escH(X('xray')) + '</p><h1 class="xr-h1">' + (d ? escH(X('h1', { n: '\u0001' })).replace('\u0001', '<bdi>' + escH(clip(name, 80)) + '</bdi>') : escH(X('h1_nf'))) + '</h1>' +
-    (d ? '<p class="lead">' + escH(X('lead', { d: '\u0001', t: '\u0002' })).replace('\u0001', ltr(String(d.meta.started_at).slice(0, 10))).replace('\u0002', ltr(String(d.meta.started_at).slice(11, 16))) + '</p><p class="xr-fp">' + escH(X('fp')) + '<code dir="ltr">' + root + '</code></p><p class="xr-hcta"><a class="btn btn-line btn-sm" href="' + pl + '/check/' + (d.meta.input.url ? '?url=' + encodeURIComponent(d.meta.input.url) : '') + '">' + escH(X('again')) + '</a></p>' : '<p class="lead">' + escH(X('lead_nf')) + '</p><p><a class="btn btn-hi" href="' + pl + '/check/">' + escH(X('fresh')) + '</a></p>') + '</div></section>' +
-    '<style>.xr-h1{font-size:clamp(1.9rem,5vw,3.2rem);line-height:1.05;overflow-wrap:anywhere;max-width:22ch}.xr-fp{font-size:.82rem;color:var(--muted);margin:10px 0 0;overflow-wrap:anywhere}.xr-fp code{font:600 .8rem ui-monospace,Menlo,monospace;color:var(--ink-2);margin-inline-start:6px}.xr-hcta{margin:14px 0 0}#analyze.sec{padding-top:8px}#xr-sealed:empty{min-height:110vh}</style>' +
-    '<section class="sec" id="analyze"><div class="wrap"><div id="xr-sealed" data-root="' + root + '"></div>' + noJs + '</div></section>' +
-    '<script src="/k/xray.js?v=' + XV + '" defer></script><script src="/k/xray-cta.js?v=n36e1" defer></script>' + (d ? '<script type="application/json" id="xr-data">' + JSON.stringify(d).replace(/</g, '\\u003c') + '</script>' : '');
+  const title = (d ? X('title', { n: clip(name, 60) }) : X($q.ft)) + $q.fu;
+  const noJs = d ? $q.fv + d.cards.map(c => $q.fw + escH(c.title) + $q.fx + escH(c.summary || c.status) + '<ul>' + (c.facts || []).map(f => '<li>' + escH(f.k) + ': ' + escH(f.v) + (f.q ? ' "' + escH(f.q) + '"' : '') + (f.src ? ' (' + escH(f.src) + ')' : '') + '</li>').join('') + $q.fy).join('') + $q.fz : '';
+  const ltr = t => $q.fA + escH(t) + $q.fB;
+  const main = $q.fC + pl + $q.fD + pl + $q.fE + escH(X('check')) + $q.fF + escH(X('xray')) + $q.fG + (d ? escH(X('h1', { n: $q.fH })).replace($q.fH, '<bdi>' + escH(clip(name, 80)) + $q.fB) : escH(X('h1_nf'))) + '</h1>' +
+    (d ? $q.fI + escH(X('lead', { d: $q.fH, t: $q.fJ })).replace($q.fH, ltr(String(d.meta.started_at).slice(0, 10))).replace($q.fJ, ltr(String(d.meta.started_at).slice(11, 16))) + $q.fK + escH(X('fp')) + $q.fL + root + $q.fM + pl + $q.fN + (d.meta.input.url ? '?url=' + encodeURIComponent(d.meta.input.url) : '') + '">' + escH(X('again')) + $q.fO : $q.fI + escH(X($q.fP)) + $q.fQ + pl + $q.fE + escH(X('fresh')) + $q.fO) + $q.fR +
+    $q.fS +
+    $q.fT + root + $q.fU + noJs + $q.fR +
+    $q.fV + XV + $q.fW + (d ? $q.fX + JSON.stringify(d).replace(/</g, $q.fY) + $q.fZ : '');
   const r = new HTMLRewriter()
     .on('title', { element(e) { e.setInnerContent(title); } })
-    .on('meta[name="description"]', { element(e) { e.setAttribute('content', X('desc')); } })
-    .on('meta[property="og:title"]', { element(e) { e.setAttribute('content', title); } })
-    .on('meta[property="og:description"]', { element(e) { e.setAttribute('content', X('desc')); } })
-    .on('meta[property="og:url"]', { element(e) { e.setAttribute('content', ORIGIN + '/x/' + root + '/'); } })
-    .on('link[rel="canonical"]', { element(e) { e.setAttribute('href', ORIGIN + '/x/' + root + '/'); } })
-    .on('link[rel="alternate"][hreflang]', { element(e) { e.remove(); } })
-    .on('details.lsw a[hreflang]', { element(e) { const l = e.getAttribute('hreflang'); if (LANGS.includes(l)) { e.setAttribute('href', '/x/' + root + '/?lang=' + l); if (l === lang) e.setAttribute('aria-current', 'page'); else e.removeAttribute('aria-current'); } } })
-    .on('head', { element(e) { e.append('<meta name="robots" content="noindex, follow">' + LANGS.map(l => '<link rel="alternate" hreflang="' + l + '" href="/x/' + root + '/?lang=' + l + '">').join(''), { html: true }); } })   // the header's language menu (site.js) reads these
+    .on($q.ga, { element(e) { e.setAttribute($q.gb, X('desc')); } })
+    .on($q.gc, { element(e) { e.setAttribute($q.gb, title); } })
+    .on($q.gd, { element(e) { e.setAttribute($q.gb, X('desc')); } })
+    .on($q.ge, { element(e) { e.setAttribute($q.gb, ORIGIN + '/x/' + root + '/'); } })
+    .on($q.gf, { element(e) { e.setAttribute('href', ORIGIN + '/x/' + root + '/'); } })
+    .on($q.gg, { element(e) { e.remove(); } })
+    .on($q.gh, { element(e) { const l = e.getAttribute($q.gi); if (LANGS.includes(l)) { e.setAttribute('href', '/x/' + root + $q.gj + l); if (l === lang) e.setAttribute($q.gk, 'page'); else e.removeAttribute($q.gk); } } })
+    .on('head', { element(e) { e.append($q.gl + LANGS.map(l => $q.gm + l + $q.gn + root + $q.gj + l + '">').join(''), { html: true }); } })   // the header's language menu (site.js) reads these
     .on('main', { element(e) { e.setInnerContent(main, { html: true }); } })
-    .on('script[src^="/k/cycle.js"]', { element(e) { e.remove(); } })
-    .on('script[type="application/ld+json"]', { element(e) { e.remove(); } })
+    .on($q.go, { element(e) { e.remove(); } })
+    .on($q.gp, { element(e) { e.remove(); } })
     .transform(base);
-  const h = new Headers(r.headers); h.set('x-robots-tag', 'noindex, follow'); h.set('content-language', lang);
+  const h = new Headers(r.headers); h.set($q.gq, $q.gr); h.set($q.gs, lang);
   return new Response(r.body, { status: d ? 200 : 404, headers: h });
 }
 export async function handle(req, u, env, ctx, shell) {
 const p = u.pathname;
-if (req.method === 'OPTIONS') return new Response(null, { status: 204, headers: Object.assign({ 'access-control-max-age': '86400' }, CORS) });
-if (p === '/api/v1/xray/openapi.json') return out(openapi(), 200, { 'cache-control': 'public, max-age=3600' });
-if (/^\/api\/v1\/xray\/?$/.test(p)) return (req.method === 'POST' || req.method === 'GET') ? v1(req, u, env, ctx) : out({ error: 'method' }, 405);
+if (req.method === $q.gt) return new Response(null, { status: 204, headers: Object.assign({ 'access-control-max-age': '86400' }, CORS) });
+if (p === $q.er) return out(openapi(), 200, { 'cache-control': $q.fo });
+if (/^\/api\/v1\/xray\/?$/.test(p)) return (req.method === 'POST' || req.method === 'GET') ? v1(req, u, env, ctx) : out({ error: $q.gu }, 405);
 if (/^\/api\/kb\/xray\/stats\/?$/.test(p)) {
 const dm = String(u.searchParams.get('d') || '').toLowerCase().replace(/^www\./, '').slice(0, 200);
-if (!/^[a-z0-9.-]+\.[a-z]{2,}$/.test(dm)) return out({ error: 'domain' }, 400);
-try { const s = await rpc('kolaboro_xray_stats', { p_domain: dm }); return out({ domain: dm, xrays: s ? s.xrays : 0, last: s ? s.last : null, counting: true, source: TB.kbx_xray__t.k48 }, 200, { 'cache-control': 'public, max-age=60' }); }
-catch (e) { return out({ domain: dm, xrays: null, counting: false, note: TB.kbx_xray__t.k49 }, 200, { 'cache-control': 'public, max-age=60' }); }
+if (!/^[a-z0-9.-]+\.[a-z]{2,}$/.test(dm)) return out({ error: $q.bD }, 400);
+try { const s = await rpc($q.gv, { p_domain: dm }); return out({ domain: dm, xrays: s ? s.xrays : 0, last: s ? s.last : null, counting: true, source: $t.k48 }, 200, { 'cache-control': $q.gw }); }
+catch (e) { return out({ domain: dm, xrays: null, counting: false, note: $t.k49 }, 200, { 'cache-control': $q.gw }); }
 }
 if (/^\/api\/kb\/xray\/?$/.test(p)) {
-if (req.method !== 'GET' && req.method !== 'POST') return out({ error: 'method' }, 405);
+if (req.method !== 'GET' && req.method !== 'POST') return out({ error: $q.gu }, 405);
 let raw = u.searchParams.get('u') || '', lang = u.searchParams.get('lang') || 'en';
 if (req.method === 'POST') { try { const b = await req.json(); raw = b.u || b.url || b.q || raw; lang = b.lang || lang; } catch (e) {} }
 const inp = parseInput(raw);
@@ -603,7 +603,7 @@ return sse(req, env, ctx, inp, LANGS.includes(lang) ? lang : 'en');
 }
 let m = p.match(/^\/x\/([0-9a-f]{64})(\/|\.json|\/vc)?$/);
 if (m) {
-if (m[2] === '.json') { const d = await load(m[1], env); return d ? out(d, 200, { 'cache-control': 'public, max-age=300' }) : out({ error: 'not_found' }, 404); }
+if (m[2] === '.json') { const d = await load(m[1], env); return d ? out(d, 200, { 'cache-control': $q.gx }) : out({ error: $q.t }, 404); }
 if (m[2] === '/vc') return vc(m[1], env);
 if (!m[2]) return new Response(null, { status: 301, headers: { location: '/x/' + m[1] + '/' } });
 return page(m[1], env, ctx, shell, u.searchParams.get('lang'));

@@ -1,4 +1,5 @@
 // comments: _notes/kolaboro-worker-comments.txt
+const $q = TB.kbx_q__q, $s = TB.kbx_q__s, $t = TB.kbx_q__t;   // n40 k46: short names for this module's string tables (strings in /data/i18n/k19s.json, k17s.json, k46s.json)
 import { TB } from './kbx_strings.js';
 export const PATHS = /^\/api\/x\/q(\/|$)/;
 const FCL = 'https://caselaw.nationalarchives.gov.uk';
@@ -9,29 +10,29 @@ if (m && Date.now() - m.t < 120000) return m.v;
 let v = null;
 try {
 let r = null;
-if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request('https://kolaboro.com/data/' + name));
-if (!r || !r.ok) r = await fetch('https://kolaboro.com/data/' + name, { cf: { cacheTtl: 600, cacheEverything: true } });
+if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request($q.a + name));
+if (!r || !r.ok) r = await fetch($q.a + name, { cf: { cacheTtl: 600, cacheEverything: true } });
 if (r.ok) v = await r.json();
 } catch (e) { v = null; }
 MEMO[name] = { t: Date.now(), v };
 return v;
 }
 function out(o, s = 200, maxAge = 300) {
-  return new Response(JSON.stringify(o), { status: s, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': maxAge ? 'public, max-age=' + maxAge : 'no-store', 'access-control-allow-origin': '*' } });
+  return new Response(JSON.stringify(o), { status: s, headers: { 'content-type': $q.b, 'cache-control': maxAge ? $q.c + maxAge : $q.d, 'access-control-allow-origin': '*' } });
 }
-const STARTING = name => ({ status: 'starting', note: 'The batch job has not published ' + name + ' yet.' });
+const STARTING = name => ({ status: $q.e, note: $q.f + name + ' yet.' });
 const unxml = s => String(s || '').replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'").replace(/&amp;/g, '&');
 async function rateOk(req, ctx, limit) {
-const ip = req.headers.get('cf-connecting-ip') || 'x', hour = new Date().toISOString().slice(0, 13);
-const k = new Request('https://kolaboro.com/__q_rl/' + encodeURIComponent(ip) + '/' + hour);
+const ip = req.headers.get($q.g) || 'x', hour = new Date().toISOString().slice(0, 13);
+const k = new Request($q.h + encodeURIComponent(ip) + '/' + hour);
 const h = await caches.default.match(k), n = h ? (+(await h.text()) || 0) : 0;
 if (n >= limit) return false;
-ctx.waitUntil(caches.default.put(k, new Response(String(n + 1), { headers: { 'cache-control': 'max-age=3600' } })));
+ctx.waitUntil(caches.default.put(k, new Response(String(n + 1), { headers: { 'cache-control': $q.i } })));
 return true;
 }
 const FORM = /(\b(limited|ltd\.?|plc|llp|llc|l\.l\.c\.|inc\.?|corp\.?|corporation|gmbh|s\.?a\.?|s\.?l\.?|b\.?v\.?|pty\.? ltd\.?|sdn\.? bhd\.?|co\.?,? ltd\.?|company limited|public company limited|pcl|fze|fzco|fz-llc|dmcc)\s*$)|^pt\.?\s+\S/i;
 export function normName(s) {
-return ' ' + String(s || '').toUpperCase().replace(/&/g, ' AND ').replace(/\bLTD\b\.?/g, 'LIMITED').replace(/\bCO\b\.?/g, 'COMPANY')
+return ' ' + String(s || '').toUpperCase().replace(/&/g, ' AND ').replace(/\bLTD\b\.?/g, $q.j).replace(/\bCO\b\.?/g, $q.k)
 .replace(/[^A-Z0-9 ]+/g, ' ').replace(/\s+/g, ' ').trim() + ' ';
 }
 export function validName(raw) {
@@ -57,49 +58,49 @@ return { entries, more };
 }
 async function courtUK(name) {
 const q = '"' + name.replace(/"/g, '') + '"';
-const url = FCL + '/atom.xml?query=' + encodeURIComponent(q) + '&per_page=50';
-const r = await fetch(url, { headers: { 'user-agent': TB.kbx_q__t.UA, accept: 'application/atom+xml' }, signal: AbortSignal.timeout(15000) });
-if (!r.ok) throw new Error('Find Case Law answered HTTP ' + r.status);
+const url = FCL + $q.l + encodeURIComponent(q) + $q.m;
+const r = await fetch(url, { headers: { 'user-agent': $t.UA, accept: $q.n }, signal: AbortSignal.timeout(15000) });
+if (!r.ok) throw new Error($q.o + r.status);
 const { entries, more } = parseAtom(await r.text(), name);
 const hits = entries.filter(e => e.in_title);
 return {
-source: 'uk', source_name: TB.kbx_q__t.k0,
+source: 'uk', source_name: $t.k0,
 query: name, searched_for: q, fetched_at: new Date().toISOString(),
 title_matches: hits.map(({ in_title, ...e }) => e),
 text_mentions_only: entries.length - hits.length, more_results: more,
-search_page: FCL + '/search?query=' + encodeURIComponent(q),
-label: TB.kbx_q__s.k0,
-rules: [TB.kbx_q__s.k1,
-TB.kbx_q__s.k2,
-TB.kbx_q__s.k3],
-licence: TB.kbx_q__t.k1
+search_page: FCL + $q.p + encodeURIComponent(q),
+label: $s.k0,
+rules: [$s.k1,
+$s.k2,
+$s.k3],
+licence: $t.k1
 };
 }
 async function courtUS(name, env) {
-if (!env.COURTLISTENER_TOKEN) return { source: 'us', status: 'not connected yet', note: TB.kbx_q__s.k4 };
-const q = 'caseName:("' + name.replace(/"/g, '') + '")';
-const r = await fetch(TB.kbx_q__t.k2 + encodeURIComponent(q), { headers: { authorization: 'Token ' + env.COURTLISTENER_TOKEN, 'user-agent': TB.kbx_q__t.UA }, signal: AbortSignal.timeout(15000) });
-if (!r.ok) throw new Error('CourtListener answered HTTP ' + r.status);
+if (!env.COURTLISTENER_TOKEN) return { source: 'us', status: $q.q, note: $s.k4 };
+const q = $q.r + name.replace(/"/g, '') + '")';
+const r = await fetch($t.k2 + encodeURIComponent(q), { headers: { authorization: $q.s + env.COURTLISTENER_TOKEN, 'user-agent': $t.UA }, signal: AbortSignal.timeout(15000) });
+if (!r.ok) throw new Error($q.t + r.status);
 const d = await r.json(), want = normName(name);
-const rows = (d.results || []).map(x => ({ title: x.caseName || '', url: x.absolute_url ? 'https://www.courtlistener.com' + x.absolute_url : null, court: x.court || '', date: (x.dateFiled || '').slice(0, 10), citation: (x.citation || [])[0] || null }));
+const rows = (d.results || []).map(x => ({ title: x.caseName || '', url: x.absolute_url ? $q.u + x.absolute_url : null, court: x.court || '', date: (x.dateFiled || '').slice(0, 10), citation: (x.citation || [])[0] || null }));
 const hits = rows.filter(x => normName(x.title).includes(want));
-return { source: 'us', source_name: TB.kbx_q__t.k3, query: name, fetched_at: new Date().toISOString(), title_matches: hits, text_mentions_only: rows.length - hits.length, more_results: !!d.next,
-search_page: 'https://www.courtlistener.com/?q=' + encodeURIComponent(q),
-label: TB.kbx_q__s.k5 };
+return { source: 'us', source_name: $t.k3, query: name, fetched_at: new Date().toISOString(), title_matches: hits, text_mentions_only: rows.length - hits.length, more_results: !!d.next,
+search_page: $q.v + encodeURIComponent(q),
+label: $s.k5 };
 }
 async function court(req, u, env, ctx) {
 const name = validName(u.searchParams.get('name'));
-const src = (u.searchParams.get('source') || 'uk').toLowerCase();
-if (!name) return out({ error: TB.kbx_q__s.k6 }, 400, 0);
-if (src !== 'uk' && src !== 'us') return out({ error: 'unknown source', sources: ['uk', 'us'] }, 400, 0);
-const ck = new Request('https://kolaboro.com/__q_court/' + src + '/' + encodeURIComponent(normName(name).trim()));
+const src = (u.searchParams.get($q.w) || 'uk').toLowerCase();
+if (!name) return out({ error: $s.k6 }, 400, 0);
+if (src !== 'uk' && src !== 'us') return out({ error: $q.x, sources: ['uk', 'us'] }, 400, 0);
+const ck = new Request($q.y + src + '/' + encodeURIComponent(normName(name).trim()));
 const hit = await caches.default.match(ck);
 if (hit) { const d = await hit.json(); d.cached = true; return out(d, 200, 0); }
-if (!(await rateOk(req, ctx, 20))) return out({ error: 'rate limit: 20 court searches an hour' }, 429, 0);
+if (!(await rateOk(req, ctx, 20))) return out({ error: $q.z }, 429, 0);
 let d;
 try { d = src === 'uk' ? await courtUK(name) : await courtUS(name, env); }
-catch (e) { return out({ source: src, query: name, error: 'the court database did not answer', detail: String(e && e.message || e).slice(0, 120) }, 502, 0); }
-if (d.title_matches) ctx.waitUntil(caches.default.put(ck, new Response(JSON.stringify(d), { headers: { 'content-type': 'application/json', 'cache-control': 'public, max-age=86400' } })));
+catch (e) { return out({ source: src, query: name, error: $q.A, detail: String(e && e.message || e).slice(0, 120) }, 502, 0); }
+if (d.title_matches) ctx.waitUntil(caches.default.put(ck, new Response(JSON.stringify(d), { headers: { 'content-type': $q.B, 'cache-control': $q.C } })));
 return out(d, 200, 0);
 }
 const SOURCES = [
@@ -117,53 +118,53 @@ terms: 'Search form that needs a browser session, and published judgments are an
 terms: 'We found no public judgment search that works without an account. Not automated.' }
 ];
 async function sources(env, ctx) {
-const ck = new Request(TB.kbx_q__t.k4);
+const ck = new Request($t.k4);
 const c = await caches.default.match(ck);
 if (c) return out(await c.json(), 200, 600);
 const res = await Promise.all(SOURCES.map(async s => {
 const o = { id: s.id, market: s.market, name: s.name, url: s.url, terms: s.terms };
-if (s.env) { o.status = env[s.env] ? 'connected' : 'not connected yet'; o.env = s.env; return o; }
-if (!s.probe) { o.status = 'not automated'; return o; }
+if (s.env) { o.status = env[s.env] ? $q.D : $q.q; o.env = s.env; return o; }
+if (!s.probe) { o.status = $q.E; return o; }
 try {
-const r = await fetch(s.probe, { headers: { 'user-agent': TB.kbx_q__t.UA }, redirect: 'follow', signal: AbortSignal.timeout(10000) });
+const r = await fetch(s.probe, { headers: { 'user-agent': $t.UA }, redirect: $q.F, signal: AbortSignal.timeout(10000) });
 const t = (await r.text()).slice(0, 3000);
 o.http = r.status;
-o.status = r.ok && !/access denied|just a moment|captcha/i.test(t) ? 'reachable' : 'blocked from our servers';
-} catch (e) { o.status = 'did not answer'; }
+o.status = r.ok && !/access denied|just a moment|captcha/i.test(t) ? $q.G : $q.H;
+} catch (e) { o.status = $q.I; }
 o.probed_at = new Date().toISOString();
 return o;
 }));
 const d = { sources: res, automated_project_checks: 0,
-why_no_automatic_checks: TB.kbx_q__s.k7,
-exact_name_rule: TB.kbx_q__s.k8 };
-ctx.waitUntil(caches.default.put(ck, new Response(JSON.stringify(d), { headers: { 'content-type': 'application/json', 'cache-control': 'public, max-age=21600' } })));
+why_no_automatic_checks: $s.k7,
+exact_name_rule: $s.k8 };
+ctx.waitUntil(caches.default.put(ck, new Response(JSON.stringify(d), { headers: { 'content-type': $q.B, 'cache-control': $q.J } })));
 return out(d, 200, 600);
 }
 export async function handle(req, u, env, ctx) {
-if (req.method === 'OPTIONS') return new Response(null, { status: 204, headers: { 'access-control-allow-origin': '*', 'access-control-allow-methods': 'GET', 'access-control-max-age': '86400' } });
-if (req.method !== 'GET' && req.method !== 'HEAD') return out({ error: 'method not allowed' }, 405, 0);
+if (req.method === $q.K) return new Response(null, { status: 204, headers: { 'access-control-allow-origin': '*', 'access-control-allow-methods': 'GET', 'access-control-max-age': '86400' } });
+if (req.method !== 'GET' && req.method !== 'HEAD') return out({ error: $q.L }, 405, 0);
 const p = u.pathname.replace(/\/+$/, '');
 try {
-if (p === '/api/x/q') return out({ module: 'people behind projects', endpoints: ['/api/x/q/graph', '/api/x/q/graph/{ID}', '/api/x/q/court/sources', TB.kbx_q__t.k5, '/api/x/q/mystery-shopper'], pages: ['/graph/', '/mystery-shopper/'] }, 200, 3600);
-if (p === '/api/x/q/graph') {
-const d = await load(env, 'company-graph.json'); if (!d) return out(STARTING('company-graph.json'), 200, 60);
+if (p === $q.M) return out({ module: $q.N, endpoints: [$q.O, $q.P, $q.Q, $t.k5, $q.R], pages: [$q.S, $q.T] }, 200, 3600);
+if (p === $q.O) {
+const d = await load(env, $q.U); if (!d) return out(STARTING($q.U), 200, 60);
 const projects = Object.fromEntries(Object.entries(d.projects || {}).map(([k, v]) => [k, { market: v.market, summary: v.summary, network: v.network || null, directors: v.directors || 0 }]));
 return out({ ...d, projects });
 }
 const gm = p.match(/^\/api\/x\/q\/graph\/([A-Za-z]{2,5}-\d{3,4})$/);
 if (gm) {
 const id = gm[1].toUpperCase();
-const d = await load(env, 'company-graph.json'); if (!d) return out(STARTING('company-graph.json'), 200, 60);
+const d = await load(env, $q.U); if (!d) return out(STARTING($q.U), 200, 60);
 const x = (d.projects || {})[id];
-if (!x) return out({ id, covered: false, note: TB.kbx_q__s.k9 }, 404, 300);
+if (!x) return out({ id, covered: false, note: $s.k9 }, 404, 300);
 return out({ id, updated: d.updated, register: d.register.name, method: d.method, ...x });
 }
-if (p === '/api/x/q/court/sources') return sources(env, ctx);
-if (p === '/api/x/q/court') return court(req, u, env, ctx);
-if (p === '/api/x/q/mystery-shopper') {
-const d = await load(env, 'mystery-shopper.json'); if (!d) return out(STARTING('mystery-shopper.json'), 200, 60);
+if (p === $q.Q) return sources(env, ctx);
+if (p === $q.V) return court(req, u, env, ctx);
+if (p === $q.R) {
+const d = await load(env, $q.W); if (!d) return out(STARTING($q.W), 200, 60);
 return out(d, 200, 600);
 }
-} catch (e) { return out({ error: 'internal error' }, 500, 0); }
-return out({ error: 'not found', see: '/api/x/q/' }, 404, 60);
+} catch (e) { return out({ error: $q.X }, 500, 0); }
+return out({ error: $q.Y, see: $q.Z }, 404, 60);
 }

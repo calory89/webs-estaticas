@@ -1,4 +1,5 @@
 // comments: _notes/kolaboro-worker-comments.txt
+const $q = TB.kbx_xc__q, $s = TB.kbx_xc__s, $t = TB.kbx_xc__t;   // n40 k46: short names for this module's string tables (strings in /data/i18n/k19s.json, k17s.json, k46s.json)
 import { rpcW, sha } from './kolaboro.js';
 import { TB } from './kbx_strings.js';
 export const PATHS = /^\/k\/xray-cta\.js$|^\/api\/x\/xc(\/|$)|^\/embed\/xray(\.js|\/)?$|^\/__k\/kxc-admin\.js$/;
@@ -22,22 +23,22 @@ pay: PAY, book: '/book/', pricing: '/pricing',
 };
 const MONITOR = { price: '€99', per: 'per month, per property', items: ['Monthly GPS-stamped site visit (on request)', 'Milestone check before every payment (on request)', '"Go" or "hold" advice, based on the evidence', 'Delay alerts by email', 'Final handover inspection (on request)'] };
 const SAMPLE = { url: '/report/sample', label: 'Sample client report', note: 'a fictional project in Bali, built like a real report' };
-function out(o, s = 200, extra) { return new Response(JSON.stringify(o), { status: s, headers: Object.assign({ 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store', 'x-content-type-options': 'nosniff' }, extra || {}) }); }
-const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-const hostOf = u => { try { return new URL(/^https?:\/\//i.test(u) ? u : 'https://' + u).hostname.toLowerCase().replace(/^www\./, ''); } catch (e) { return ''; } };
+function out(o, s = 200, extra) { return new Response(JSON.stringify(o), { status: s, headers: Object.assign({ 'content-type': $q.a, 'cache-control': $q.b, 'x-content-type-options': $q.c }, extra || {}) }); }
+const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': $q.d, "'": '&#39;' }[c]));
+const hostOf = u => { try { return new URL(/^https?:\/\//i.test(u) ? u : $q.e + u).hostname.toLowerCase().replace(/^www\./, ''); } catch (e) { return ''; } };
 const normU = u => String(u || '').trim().toLowerCase().replace(/^https?:\/\/(www\.)?/, '').replace(/[?#].*$/, '').replace(/\/+$/, '');
-const ipOf = req => { const a = req.headers.get('cf-connecting-ip') || 'x'; return a.includes(':') ? a.split(':').slice(0, 4).join(':') + '::/64' : a; };
+const ipOf = req => { const a = req.headers.get($q.f) || 'x'; return a.includes(':') ? a.split(':').slice(0, 4).join(':') + '::/64' : a; };
 async function allow(ctx, key, limit, ttl) {
-const k = new Request(SITE + '/__rlxc/' + encodeURIComponent(key));
+const k = new Request(SITE + $q.g + encodeURIComponent(key));
 const hit = await caches.default.match(k); const n = hit ? (+(await hit.text()) || 0) : 0;
 if (n >= limit) return false;
-const p = caches.default.put(k, new Response(String(n + 1), { headers: { 'cache-control': 'max-age=' + ttl } }));
+const p = caches.default.put(k, new Response(String(n + 1), { headers: { 'cache-control': $q.h + ttl } }));
 if (ctx && ctx.waitUntil) ctx.waitUntil(p); else await p;
 return true;
 }
 async function body(req) { try { const t = await req.text(); if (t.length > 6000) return null; if (/^\s*\{/.test(t)) return JSON.parse(t); return Object.fromEntries(new URLSearchParams(t)); } catch (e) { return null; } }
-async function xc(action, payload) { try { return await rpcW('kolaboro_xc', { p_action: action, p_payload: payload }); } catch (e) { return { error: 'db' }; } }
-const dbMissing = r => !r || r.error === 'db' || r.code === 'PGRST202' || /Could not find the function/i.test(r.message || '');
+async function xc(action, payload) { try { return await rpcW($q.i, { p_action: action, p_payload: payload }); } catch (e) { return { error: 'db' }; } }
+const dbMissing = r => !r || r.error === 'db' || r.code === $q.j || /Could not find the function/i.test(r.message || '');
 let HM = null;
 async function match(env, raw) {
 let N; try { N = await import('./kbx_named.js'); } catch (e) { return null; }
@@ -66,10 +67,10 @@ if (!x && !dev) return null;
 let proj = null;
 if (x) {
 const ho = N.handoverOf(ix, x), c = ix.caseBy.get(x.id);
-proj = { id: x.id, slug: x.s, name: x.n, url: '/projects/' + x.s + '/', stage: x.st || (c && c.stage) || null, market: x.mk || null, country: x.co || null,
+proj = { id: x.id, slug: x.s, name: x.n, url: $q.k + x.s + '/', stage: x.st || (c && c.stage) || null, market: x.mk || null, country: x.co || null,
 handover: ho ? String(ho.d) : null, handover_future: ho ? future(String(ho.d)) : null, reviewed: N.reviewed(c) };
 }
-return { project: proj, developer: dev ? { slug: dev.s, name: dev.n, url: '/developers/' + dev.s + '/', projects: dev.ids.length } : null };
+return { project: proj, developer: dev ? { slug: dev.s, name: dev.n, url: $q.l + dev.s + '/', projects: dev.ids.length } : null };
 }
 function future(d) {
 const m = String(d).match(/^(\d{4})(?:-(?:Q([1-4])|(\d{2})))?/i); if (!m) return null;
@@ -91,46 +92,46 @@ const v = variant(env, u);
 const m = raw ? await match(env, raw) : null;
 let counts = { runs: null, watchers: null, threshold: 3 }, db = null;
 if (domain || (m && m.project)) {
-const ck = new Request(SITE + '/__xcc/' + encodeURIComponent(domain + '|' + ((m && m.project && m.project.id) || '')));
+const ck = new Request(SITE + $q.m + encodeURIComponent(domain + '|' + ((m && m.project && m.project.id) || '')));
 const hit = await caches.default.match(ck);
 let r = hit ? await hit.json() : null;
-if (!r) { r = await xc('counts', { domain, ref: (m && m.project && m.project.id) || '' }); if (r && r.ok) ctx.waitUntil(caches.default.put(ck, new Response(JSON.stringify(r), { headers: { 'cache-control': 'max-age=60' } }))); }
-db = !dbMissing(r) && r && r.error !== 'unauthorized';
+if (!r) { r = await xc($q.n, { domain, ref: (m && m.project && m.project.id) || '' }); if (r && r.ok) ctx.waitUntil(caches.default.put(ck, new Response(JSON.stringify(r), { headers: { 'cache-control': $q.o } }))); }
+db = !dbMissing(r) && r && r.error !== $q.p;
 if (r && r.ok) counts = { runs: r.runs || null, watchers: r.watchers || null, threshold: r.threshold || 3 };
 }
 const p = m && m.project;
 const stage = p && p.stage ? String(p.stage).toLowerCase() : '';
 const monitoring = p ? { offered: /off-plan|under construction|pre-?launch|launch/.test(stage) && p.handover_future === true, stage: p.stage, handover: p.handover, source: p.url } : { offered: null };
 return out({ ok: true, v, copy: COPY[v], domain: domain || null, named: m ? m.project : null, developer: m ? m.developer : null, counts, db,
-monitoring, monitor_offer: MONITOR, offer: OFFER, sample: SAMPLE, watch_api: '/api/v1/watch', mail: true }, 200, { 'cache-control': 'private, max-age=30' });
+monitoring, monitor_offer: MONITOR, offer: OFFER, sample: SAMPLE, watch_api: $q.q, mail: true }, 200, { 'cache-control': $q.r });
 }
 async function evRoute(req, u, env, ctx) {
-if (req.method === 'OPTIONS') return new Response(null, { status: 204, headers: { 'access-control-allow-origin': '*', 'access-control-allow-methods': 'POST', 'access-control-allow-headers': 'content-type', 'access-control-max-age': '86400' } });
+if (req.method === $q.s) return new Response(null, { status: 204, headers: { 'access-control-allow-origin': '*', 'access-control-allow-methods': 'POST', 'access-control-allow-headers': $q.t, 'access-control-max-age': '86400' } });
 const b = await body(req); if (!b) return out({ error: 'body' }, 400);
 const step = String(b.step || ''); if (!STEPS.test(step)) return out({ error: 'step' }, 400);
-const orig = req.headers.get('origin') || '', ours = /^https:\/\/(www\.)?kolaboro\.com$/.test(orig);
+const orig = req.headers.get($q.u) || '', ours = /^https:\/\/(www\.)?kolaboro\.com$/.test(orig);
 const cors = { 'access-control-allow-origin': '*' };
-if (step === 'embed_click') {
-const h = hostOf(orig || req.headers.get('referer') || b.h || '');
+if (step === $q.v) {
+const h = hostOf(orig || req.headers.get($q.w) || b.h || '');
 if (!h || !DOM_RX.test(h) || !(await allow(ctx, 'xe|' + ipOf(req), 30, 600))) return out({ ok: false }, 200, cors);
-const r = await xc('ev', { step, domain: h, page: '/embed/xray.js', data: { src: 'embed' } });
+const r = await xc('ev', { step, domain: h, page: $q.x, data: { src: 'embed' } });
 return out({ ok: !!(r && r.ok) }, 200, cors);
 }
-if (orig && !ours) return out({ error: 'origin' }, 403);
+if (orig && !ours) return out({ error: $q.u }, 403);
 if (!(await allow(ctx, 'xv|' + ipOf(req), 150, 600))) return out({ error: 'rate' }, 429);
 const domain = hostOf(String(b.domain || '')), root = ROOT_RX.test(String(b.root || '')) ? String(b.root) : null;
 const data = { root, v: /^[AB]$/.test(b.v) ? b.v : 'A', sid: /^[a-z0-9]{6,24}$/i.test(b.sid || '') ? b.sid : null, src: String(b.src || '').replace(/[^a-z0-9_.-]/gi, '').slice(0, 40) || null,
 cards: Number.isFinite(+b.cards) ? Math.min(99, Math.max(0, +b.cards | 0)) : null, named: /^[a-z0-9-]{1,90}$/.test(b.named || '') ? b.named : null, test: b.test ? '1' : undefined };
-if (step === 'run') data.ih = (await sha('kxc-ih|' + ipOf(req))).slice(0, 16);
-const r = await xc('ev', { step, domain: DOM_RX.test(domain) ? domain : '', page: '/check/', data });
-if (dbMissing(r)) return out({ ok: false, stored: false, why: 'db functions not applied yet' }, 202);
+if (step === 'run') data.ih = (await sha($q.y + ipOf(req))).slice(0, 16);
+const r = await xc('ev', { step, domain: DOM_RX.test(domain) ? domain : '', page: $q.z, data });
+if (dbMissing(r)) return out({ ok: false, stored: false, why: $q.A }, 202);
 return out({ ok: !!(r && r.ok), error: r && r.error });
 }
 function b64u(bytes) { let s = ''; bytes.forEach(x => s += String.fromCharCode(x)); return btoa(s).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, ''); }
 function unb64u(s) { const b = atob(s.replace(/-/g, '+').replace(/_/g, '/') + '==='.slice((s.length + 3) % 4)); return Uint8Array.from(b, c => c.charCodeAt(0)); }
 async function hmac(env, msg) {
 const sec = env.KB_SIGN_KEY || env.KB_HOOK_KEY; if (!sec) return null;
-const k = await crypto.subtle.importKey('raw', te.encode('kolaboro-xc-mail-v1|' + sec), { name: 'HMAC', hash: 'SHA-256' }, false, ['sign']);
+const k = await crypto.subtle.importKey('raw', te.encode($q.B + sec), { name: 'HMAC', hash: $q.C }, false, ['sign']);
 return b64u(new Uint8Array(await crypto.subtle.sign('HMAC', k, te.encode(msg))).slice(0, 16));
 }
 async function mkTok(env, o) { const p = b64u(te.encode(JSON.stringify(o))), s = await hmac(env, p); return s ? p + '.' + s : null; }
@@ -142,101 +143,100 @@ if (!o || !(o.x > Date.now()) || !EMAIL_RX.test(o.e || '') || !ROOT_RX.test(o.r 
 return o;
 }
 async function emailRoute(req, u, env, ctx) {
-if (req.method !== 'POST') return out({ error: 'method' }, 405);
-const orig = req.headers.get('origin'); if (orig && !/^https:\/\/(www\.)?kolaboro\.com$/.test(orig)) return out({ error: 'origin' }, 403);
+if (req.method !== 'POST') return out({ error: $q.D }, 405);
+const orig = req.headers.get($q.u); if (orig && !/^https:\/\/(www\.)?kolaboro\.com$/.test(orig)) return out({ error: $q.u }, 403);
 const b = await body(req); if (!b) return out({ error: 'body' }, 400);
 if (b.hp) return out({ ok: true });
 const e = String(b.email || '').trim().toLowerCase(), root = String(b.root || ''), d = hostOf(String(b.domain || '')), pu = String(b.url || '');
 if (e.length > 120 || !EMAIL_RX.test(e)) return out({ error: 'email' }, 400);
 if (!ROOT_RX.test(root) || !DOM_RX.test(d)) return out({ error: 'xray' }, 400);
 if (!(await allow(ctx, 'xm|' + ipOf(req), 5, 3600))) return out({ error: 'rate' }, 429);
-const t = await mkTok(env, Object.assign({ e, r: root, d, x: Date.now() + 7 * 86400000 }, /^https?:\/\/[^\s"<>]{3,240}$/.test(pu) && hostOf(pu) === d ? { u: pu } : {})); if (!t) return out({ error: 'not_configured' }, 503);
-const link = SITE + '/api/x/xc/email/confirm?t=' + t;
-const html = TB.kbx_xc__t.k0 + esc(d) + '</b> to this address.</p>' +
-TB.kbx_xc__s.k0;
-const r = await xc('mail', { kind: 'xray_confirm', to: e, subject: TB.kbx_xc__t.k1 + d, html, dedupe: 'xc:' + (await sha(e + '|' + root)).slice(0, 40), cta: 'Confirm and send', url: link });
-if (dbMissing(r)) return out({ error: 'not_ready', message: TB.kbx_xc__t.k2 }, 503);
-if (!r || !r.ok) return out({ error: (r && r.error) || 'db' }, r && (r.error === 'limit' || r.error === 'daily_cap') ? 429 : 400);
-ctx.waitUntil(xc('ev', { step: 'email_req', domain: d, page: '/check/', data: { root } }));
-return out({ ok: true, next: r.duplicate ? 'already sent, check your inbox' : 'confirmation email sent' });
+const t = await mkTok(env, Object.assign({ e, r: root, d, x: Date.now() + 7 * 86400000 }, /^https?:\/\/[^\s"<>]{3,240}$/.test(pu) && hostOf(pu) === d ? { u: pu } : {})); if (!t) return out({ error: $q.E }, 503);
+const link = SITE + $q.F + t;
+const html = $t.k0 + esc(d) + $q.G +
+$s.k0;
+const r = await xc('mail', { kind: $q.H, to: e, subject: $t.k1 + d, html, dedupe: 'xc:' + (await sha(e + '|' + root)).slice(0, 40), cta: $q.I, url: link });
+if (dbMissing(r)) return out({ error: $q.J, message: $t.k2 }, 503);
+if (!r || !r.ok) return out({ error: (r && r.error) || 'db' }, r && (r.error === 'limit' || r.error === $q.K) ? 429 : 400);
+ctx.waitUntil(xc('ev', { step: $q.L, domain: d, page: $q.z, data: { root } }));
+return out({ ok: true, next: r.duplicate ? $q.M : $q.N });
 }
 function page(title, inner, status) {
-  const h = '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">' +
-    '<title>' + esc(title) + ' | Kolaboro</title><link rel="stylesheet" href="/k/site.css"><style>body{background:var(--paper,#F6F6F3);color:var(--ink,#17212B);margin:0}.xcw{max-width:620px;margin:0 auto;padding:40px 16px}' +
-    '.xcc{background:var(--card,#fff);border:1px solid var(--line,#ddd);border-radius:16px;padding:22px}.xcb{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:12px;border:0;background:var(--hivis,#FF5B14);color:#111;font:inherit;font-weight:800;cursor:pointer;text-decoration:none}' +
-    '.xcb:focus-visible{outline:3px solid #2563EB;outline-offset:2px}.muted{color:var(--muted,#59626B)}</style></head><body><main class="xcw"><p><a href="/">kolaboro</a></p><div class="xcc">' + inner + '</div></main></body></html>';
-  return new Response(h, { status: status || 200, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store', 'x-frame-options': 'DENY', 'referrer-policy': 'no-referrer', 'x-content-type-options': 'nosniff' } });
+  const h = $q.O + esc(title) + $q.P +
+    $q.Q +
+    $q.R + inner + $q.S;
+  return new Response(h, { status: status || 200, headers: { 'content-type': $q.T, 'cache-control': $q.b, 'x-frame-options': 'DENY', 'referrer-policy': $q.U, 'x-content-type-options': $q.c } });
 }
 async function confirmRoute(req, u, env, ctx) {
 if (req.method === 'GET') {
 const t = u.searchParams.get('t') || '', o = await rdTok(env, t);
-if (!o) return page('Link not valid', TB.kbx_xc__s.k1, 400);
-return page('Confirm', '<h1>Send the Project X-ray of ' + esc(o.d) + TB.kbx_xc__t.k3 + esc(o.e) + '</b>. Nothing else.</p>' +
-TB.kbx_xc__t.k4 + esc(t) + TB.kbx_xc__t.k5);
+if (!o) return page($q.V, $s.k1, 400);
+return page($q.W, $q.X + esc(o.d) + $t.k3 + esc(o.e) + $q.Y +
+$t.k4 + esc(t) + $t.k5);
 }
-if (req.method !== 'POST') return out({ error: 'method' }, 405);
+if (req.method !== 'POST') return out({ error: $q.D }, 405);
 const b = await body(req), o = await rdTok(env, b && b.t);
-if (!o) return page('Link not valid', TB.kbx_xc__t.k6, 400);
-const xu = SITE + '/x/' + o.r + '/', ru = SITE + '/check/?url=' + encodeURIComponent(o.u || 'https://' + o.d) + '#xr';
-const html = '<p>Here is the Project X-ray of <b>' + esc(o.d) + TB.kbx_xc__s.k2 + xu + '">' + esc(xu.replace('https://', '')) + TB.kbx_xc__t.k7 +
-TB.kbx_xc__s.k3 + SITE + '/pricing">pricing</a>.</p>';
-const r = await xc('mail', { kind: 'xray_send', to: o.e, subject: 'Your Project X-ray of ' + o.d, html, dedupe: 'xs:' + (await sha(b.t)).slice(0, 40), cta: 'Open the X-ray', url: ru });
-if (!r || !r.ok) return page('Not sent', TB.kbx_xc__t.k8 + esc(r && r.error === 'limit' ? TB.kbx_xc__t.k9 : 'Try again in a few minutes.') + '</p>', 503);
-ctx.waitUntil(xc('ev', { step: 'email_sent', domain: o.d, page: '/api/x/xc/email/confirm', data: { root: o.r } }));
-return page('Sent', '<h1>Sent</h1><p>' + (r.duplicate ? TB.kbx_xc__t.k10 : 'Check your inbox in a minute.') + '</p><p><a class="xcb" href="' + esc(ru.replace(SITE, '')) + '">Open the X-ray now</a></p>');
+if (!o) return page($q.V, $t.k6, 400);
+const xu = SITE + '/x/' + o.r + '/', ru = SITE + $q.Z + encodeURIComponent(o.u || $q.e + o.d) + '#xr';
+const html = $q.aa + esc(o.d) + $s.k2 + xu + '">' + esc(xu.replace($q.e, '')) + $t.k7 +
+$s.k3 + SITE + $q.ab;
+const r = await xc('mail', { kind: $q.ac, to: o.e, subject: $q.ad + o.d, html, dedupe: 'xs:' + (await sha(b.t)).slice(0, 40), cta: $q.ae, url: ru });
+if (!r || !r.ok) return page($q.af, $t.k8 + esc(r && r.error === 'limit' ? $t.k9 : $q.ag) + '</p>', 503);
+ctx.waitUntil(xc('ev', { step: $q.ah, domain: o.d, page: $q.ai, data: { root: o.r } }));
+return page('Sent', $q.aj + (r.duplicate ? $t.k10 : $q.ak) + $q.al + esc(ru.replace(SITE, '')) + $q.am);
 }
 async function seenRoute(req, u, env, ctx) {
-if (req.method !== 'POST') return out({ error: 'method' }, 405);
-const orig = req.headers.get('origin'); if (orig && !/^https:\/\/(www\.)?kolaboro\.com$/.test(orig)) return out({ error: 'origin' }, 403);
+if (req.method !== 'POST') return out({ error: $q.D }, 405);
+const orig = req.headers.get($q.u); if (orig && !/^https:\/\/(www\.)?kolaboro\.com$/.test(orig)) return out({ error: $q.u }, 403);
 const b = await body(req); if (!b || !b.token) return out({ error: 'auth' }, 401);
 if (!(await allow(ctx, 'xs|' + ipOf(req), 60, 600))) return out({ error: 'rate' }, 429);
 const pl = { token: String(b.token).slice(0, 200), root: String(b.root || ''), domain: hostOf(String(b.domain || '')), url: String(b.url || '').slice(0, 300), lang: String(b.lang || 'en').slice(0, 5) };
-if (typeof b.optin === 'boolean') pl.optin = b.optin;
+if (typeof b.optin === $q.an) pl.optin = b.optin;
 const r = await xc('seen', pl);
 if (dbMissing(r)) return out({ ok: false, ready: false }, 202);
-if (r && r.ok && pl.optin) ctx.waitUntil(xc('ev', { step: 'remind_optin', domain: pl.domain, page: '/check/', data: { root: pl.root } }));
+if (r && r.ok && pl.optin) ctx.waitUntil(xc('ev', { step: $q.ao, domain: pl.domain, page: $q.z, data: { root: pl.root } }));
 return out(r && r.ok ? { ok: true, optin: !!r.optin, stopped: !!r.stopped } : { error: (r && r.error) || 'db' }, r && r.ok ? 200 : r && r.error === 'auth' ? 401 : 400);
 }
 async function stopRoute(req, u, env, ctx) {
 const t = u.searchParams.get('t') || '';
 const r = /^[0-9a-f]{32}$/.test(t) ? await xc('stop', { tok: t }) : { error: 'token' };
-if (!r || !r.ok) return page('Link not valid', TB.kbx_xc__s.k4, 400);
-return page('Stopped', TB.kbx_xc__s.k5);
+if (!r || !r.ok) return page($q.V, $s.k4, 400);
+return page($q.ap, $s.k5);
 }
 function embedDoc() {
-const snip = TB.kbx_xc__t.k11;
-const inner = TB.kbx_xc__s.k6 + esc(snip) + '</code></pre>' +
-TB.kbx_xc__t.k12 +
-TB.kbx_xc__s.k7 +
-TB.kbx_xc__s.k8 +
-TB.kbx_xc__s.k9;
-const h = TB.kbx_xc__s.k10 + inner + '</div></main>' +
-TB.kbx_xc__t.k13 + JSON.stringify(snip).replace(/</g, '\\u003c') + TB.kbx_xc__s.k11 +
-TB.kbx_xc__t.k14;
-return new Response(h, { headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=600', 'x-content-type-options': 'nosniff' } });
+const snip = $t.k11;
+const inner = $s.k6 + esc(snip) + $q.aq +
+$t.k12 +
+$s.k7 +
+$s.k8 +
+$s.k9;
+const h = $s.k10 + inner + $q.ar +
+$t.k13 + JSON.stringify(snip).replace(/</g, $q.as) + $s.k11 +
+$t.k14;
+return new Response(h, { headers: { 'content-type': $q.T, 'cache-control': $q.at, 'x-content-type-options': $q.c } });
 }
 async function status(env) {
-  const r = await xc('counts', { domain: 'kolaboro.com' });
+  const r = await xc($q.n, { domain: $q.au });
   return out({ ok: true, db_functions: !dbMissing(r) && !!(r && r.ok), mail_signing: !!(env.KB_SIGN_KEY || env.KB_HOOK_KEY), cta_flag: String(env.KB_XRAY_CTA || 'A'),
-    reminder_cron: 'kolaboro-xray-remind, hourly at :37 (DB)', threshold: 3, prices: { check: OFFER.price, monitoring: MONITOR.price + ' ' + MONITOR.per }, pay: PAY });
+    reminder_cron: $q.av, threshold: 3, prices: { check: OFFER.price, monitoring: MONITOR.price + ' ' + MONITOR.per }, pay: PAY });
 }
 export async function handle(req, u, env, ctx) {
 const p = u.pathname;
-if (p === '/k/xray-cta.js') {
-const r = await env.ASSETS.fetch(new Request(SITE + '/_s/kolaboro.com/k/xray-cta.js'));
-return new Response(r.body, { status: r.status, headers: { 'content-type': 'application/javascript; charset=utf-8', 'cache-control': 'public, max-age=300', 'x-content-type-options': 'nosniff' } });
+if (p === $q.aw) {
+const r = await env.ASSETS.fetch(new Request(SITE + $q.ax));
+return new Response(r.body, { status: r.status, headers: { 'content-type': $q.ay, 'cache-control': $q.az, 'x-content-type-options': $q.c } });
 }
-if (p === '/embed/xray.js') return new Response(TB.kbx_xc__s.EMBED_JS, { headers: { 'content-type': 'application/javascript; charset=utf-8', 'cache-control': 'public, max-age=3600', 'access-control-allow-origin': '*', 'x-content-type-options': 'nosniff', 'cross-origin-resource-policy': 'cross-origin' } });
-if (p === '/embed/xray' || p === '/embed/xray/') return p.endsWith('/') ? embedDoc() : new Response(null, { status: 301, headers: { location: '/embed/xray/' } });
-if (p === '/__k/kxc-admin.js') return new Response(TB.kbx_xc__s.ADMIN_JS, { headers: { 'content-type': 'application/javascript; charset=utf-8', 'cache-control': 'no-store' } });
+if (p === $q.x) return new Response($s.EMBED_JS, { headers: { 'content-type': $q.ay, 'cache-control': $q.aA, 'access-control-allow-origin': '*', 'x-content-type-options': $q.c, 'cross-origin-resource-policy': $q.aB } });
+if (p === $q.aC || p === $q.aD) return p.endsWith('/') ? embedDoc() : new Response(null, { status: 301, headers: { location: $q.aD } });
+if (p === $q.aE) return new Response($s.ADMIN_JS, { headers: { 'content-type': $q.ay, 'cache-control': $q.b } });
 try {
-if (p === '/api/x/xc/ctx' && req.method === 'GET') return await ctxRoute(req, u, env, ctx);
-if (p === '/api/x/xc/ev') return await evRoute(req, u, env, ctx);
-if (p === '/api/x/xc/email') return await emailRoute(req, u, env, ctx);
-if (p === '/api/x/xc/email/confirm') return await confirmRoute(req, u, env, ctx);
-if (p === '/api/x/xc/seen') return await seenRoute(req, u, env, ctx);
-if (p === '/api/x/xc/stop' && req.method === 'GET') return await stopRoute(req, u, env, ctx);
-if (p === '/api/x/xc/status' || p === '/api/x/xc') return await status(env);
-} catch (e) { return out({ error: 'server', message: String(e && e.message || e).slice(0, 200) }, 500); }
-return out({ error: 'not found' }, 404);
+if (p === $q.aF && req.method === 'GET') return await ctxRoute(req, u, env, ctx);
+if (p === $q.aG) return await evRoute(req, u, env, ctx);
+if (p === $q.aH) return await emailRoute(req, u, env, ctx);
+if (p === $q.ai) return await confirmRoute(req, u, env, ctx);
+if (p === $q.aI) return await seenRoute(req, u, env, ctx);
+if (p === $q.aJ && req.method === 'GET') return await stopRoute(req, u, env, ctx);
+if (p === $q.aK || p === $q.aL) return await status(env);
+} catch (e) { return out({ error: $q.aM, message: String(e && e.message || e).slice(0, 200) }, 500); }
+return out({ error: $q.aN }, 404);
 }

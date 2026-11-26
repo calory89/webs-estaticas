@@ -1,4 +1,5 @@
 // comments: _notes/kolaboro-worker-comments.txt
+const $q = TB.kbx_paper__q, $s = TB.kbx_paper__s, $t = TB.kbx_paper__t;   // n40 k46: short names for this module's string tables (strings in /data/i18n/k19s.json, k17s.json, k46s.json)
 import { TB } from './kbx_strings.js';
 const IF = (globalThis.__kbIF = globalThis.__kbIF || {}); function sf(k, f) { if (IF[k]) return IF[k]; const p = f(); IF[k] = p; const d = () => { if (IF[k] === p) delete IF[k]; }; p.then(d, d); return p; }   // n40 d12
 const ORIGIN = 'https://kolaboro.com';
@@ -6,119 +7,119 @@ export const PATHS = /^\/api\/x\/paper\//;
 export const TOOL_RX = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?tools\/contract-addendum\/?$/;
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' };
-const esc = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const esc = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': $q.a, "'": '&#39;' }[c]));
 const pre = l => l === 'en' ? '' : '/' + l;
 const OPINION = /\b(scam\w*|fraud\w*|ponzi|swindl\w*|rip-?off|avoid\w*|beware|dodgy|shady|crook\w*|estafa\w*|fraude\w*|timo|betrug\w*|arnaque\w*|escroc\w*|oplicht\w*|bedrog\w*)\b|мошен|обман|афер|骗局|诈骗|欺诈|احتيال|نصب/i;
-const MASK = s => String(s || '').replace(/[\w.+-]+@[\w-]+\.[\w.]+/g, '[e-mail]').replace(/\+?\d[\d ()-]{8,}\d/g, m => /\d{1,3}([.,\s]\d{3}){2,}/.test(m) ? m : '[phone]');
+const MASK = s => String(s || '').replace(/[\w.+-]+@[\w-]+\.[\w.]+/g, $q.b).replace(/\+?\d[\d ()-]{8,}\d/g, m => /\d{1,3}([.,\s]\d{3}){2,}/.test(m) ? m : $q.c);
 let MEMO = {};
-const loadOne = (env, path, ttl) => sf('paper:' + path, () => loadOne0(env, path, ttl));
+const loadOne = (env, path, ttl) => sf($q.d + path, () => loadOne0(env, path, ttl));
 async function loadOne0(env, path, ttl) {
 const m = MEMO[path]; if (m && (m.a || Date.now() - m.t < (ttl || 600000))) return m.v;
 let r = null, a = false;
-try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com' + path)); a = !!(r && r.ok); } catch (e) { r = null; }
+try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + $q.e + path)); a = !!(r && r.ok); } catch (e) { r = null; }
 if (!r || !r.ok) { try { r = await fetch(ORIGIN + path + '?v=' + Math.floor(Date.now() / 600000), { cf: { cacheTtl: 300, cacheEverything: true } }); } catch (e) { r = null; } }
 const v = r && r.ok ? await r.json().catch(() => null) : null;
 MEMO[path] = { t: Date.now(), v, a: a && v != null }; return v;
 }
 export async function paperData(env) {
-const [ph, pl] = await Promise.all([loadOne(env, '/data/price-history.json'), loadOne(env, '/data/planning.json')]);
+const [ph, pl] = await Promise.all([loadOne(env, $q.f), loadOne(env, $q.g)]);
 return { ph, pl, v: ((ph && ph.updated) || '') + '/' + ((pl && pl.updated) || '') };
 }
 const N = TB.kbx_paper_N ;
-const nt = (l, k, v) => { let s = (N[l] && N[l][k] != null ? N[l][k] : N.en[k]); if (v && typeof s === 'string') s = s.replace(/\{(\w+)\}/g, (m, x) => v[x] != null ? v[x] : m); return s; };
+const nt = (l, k, v) => { let s = (N[l] && N[l][k] != null ? N[l][k] : N.en[k]); if (v && typeof s === $q.h) s = s.replace(/\{(\w+)\}/g, (m, x) => v[x] != null ? v[x] : m); return s; };
 const dtf = (L, o) => { const c = (globalThis.__kbFmt = globalThis.__kbFmt || {}), k = 'd' + L + JSON.stringify(o || 0); return c[k] || (c[k] = new Intl.DateTimeFormat(L, o)); };
 const nmf = (L, o) => { const c = (globalThis.__kbFmt = globalThis.__kbFmt || {}), k = 'n' + L + JSON.stringify(o || 0); return c[k] || (c[k] = new Intl.NumberFormat(L, o)); };
-const fdt = (d, l) => { try { return dtf(LOC[l] || 'en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' }).format(new Date(String(d).slice(0, 10) + 'T00:00:00Z')); } catch (e) { return String(d || ''); } };
+const fdt = (d, l) => { try { return dtf(LOC[l] || 'en-GB', { day: $q.i, month: 'short', year: $q.i, timeZone: 'UTC' }).format(new Date(String(d).slice(0, 10) + $q.j)); } catch (e) { return String(d || ''); } };
 const nf = (v, l) => { try { return nmf(LOC[l] || 'en-GB', { maximumFractionDigits: 0 }).format(v); } catch (e) { return String(v); } };
 const hostOf = u => { try { return new URL(u).hostname.replace(/^www\./, ''); } catch (e) { return ''; } };
-const ia = (ts, url) => 'https://web.archive.org/web/' + ts + '/' + url;
-const ltr = t => '<bdi dir="ltr">' + esc(t) + '</bdi>';
+const ia = (ts, url) => $q.k + ts + '/' + url;
+const ltr = t => $q.l + esc(t) + $q.m;
 const ctxClean = c => { let t = String(c).replace(/(?:\s*\*){2,}\s*/g, ' ').replace(/\s+/g, ' ').trim(); const wd = t.split(' ').length > 5;
 if (/^[a-z0-9]/.test(t)) t = '…' + (wd ? t.replace(/^[^\s\[]+\s+/, '') : t); if (!/[.!?)\]]$/.test(t)) t = (wd ? t.replace(/\s+[^\s\]]+$/, '') : t) + '…'; return t; };
-function copyHref(x, p, url) { return p.src === 'copy' ? '/projects/' + x.s + '/changes/' + p.ref + '.txt' : ia(p.ref, url); }
+function copyHref(x, p, url) { return p.src === 'copy' ? $q.n + x.s + $q.o + p.ref + '.txt' : ia(p.ref, url); }
 function chart(pts, cur, x, url, lang) {
 const P = pts.filter(p => p.head && p.head.cur === cur);
 if (P.length < 2 || new Set(P.map(p => p.head.v)).size < 2) return '';
-const T = P.map(p => Date.parse(p.d + 'T00:00:00Z')), V = P.map(p => p.head.v);
+const T = P.map(p => Date.parse(p.d + $q.j)), V = P.map(p => p.head.v);
 let t0 = Math.min(...T), t1 = Math.max(...T); if (t1 === t0) { t0 -= 86400000; t1 += 86400000; }
 let v0 = Math.min(...V), v1 = Math.max(...V); const pad = (v1 - v0) * 0.15 || v1 * 0.08 || 1; v0 = Math.max(0, v0 - pad); v1 += pad;
 const W = 640, H = 220, L = 74, R = 16, TP = 14, B = 30;
 const X = t => L + (t - t0) / (t1 - t0) * (W - L - R), Y = v => TP + (1 - (v - v0) / (v1 - v0)) * (H - TP - B);
 const ticks = [v0 + (v1 - v0) * 0.1, (v0 + v1) / 2, v1 - (v1 - v0) * 0.1];
-const short = v => { try { return nmf(LOC[lang] || 'en-GB', { notation: 'compact', maximumFractionDigits: 2 }).format(v); } catch (e) { return String(Math.round(v)); } };
+const short = v => { try { return nmf(LOC[lang] || 'en-GB', { notation: $q.p, maximumFractionDigits: 2 }).format(v); } catch (e) { return String(Math.round(v)); } };
 const line = P.map((p, i) => (i ? 'L' : 'M') + X(T[i]).toFixed(1) + ' ' + Y(V[i]).toFixed(1)).join(' ');
-return TB.kbx_paper__t.k0 + W + ' ' + H + '" role="group" aria-label="' + esc(nt(lang, 'ph_chart', { cur })) + '" class="kph-svg">' +
-ticks.map(v => '<line x1="' + L + '" x2="' + (W - R) + '" y1="' + Y(v).toFixed(1) + '" y2="' + Y(v).toFixed(1) + '" class="kph-grid"/><text x="' + (L - 8) + '" y="' + (Y(v) + 4).toFixed(1) + '" text-anchor="end" class="kph-ax">' + esc(short(v)) + '</text>').join('') +
-'<text x="' + L + '" y="' + (H - 8) + '" class="kph-ax">' + esc(fdt(P[0].d, lang)) + '</text><text x="' + (W - R) + '" y="' + (H - 8) + '" text-anchor="end" class="kph-ax">' + esc(fdt(P[P.length - 1].d, lang)) + '</text>' +
-'<path d="' + line + '" class="kph-line"/>' +
-P.map((p, i) => '<a href="' + esc(copyHref(x, p, url)) + '"' + (p.src === 'ia' ? TB.kbx_paper__t.k1 : '') + '><circle cx="' + X(T[i]).toFixed(1) + '" cy="' + Y(V[i]).toFixed(1) + '" r="6" class="kph-pt' + (p.src === 'ia' ? ' is-ia' : '') + '"><title>' + esc(fdt(p.d, lang) + ': ' + p.head.p + ' (' + nt(lang, p.src === 'ia' ? 'ph_ia' : 'ph_copy') + ')') + '</title></circle></a>').join('') +
-'</svg><figcaption>' + esc(nt(lang, 'ph_chart', { cur })) + '</figcaption></figure>';
+return $t.k0 + W + ' ' + H + $q.q + esc(nt(lang, $q.r, { cur })) + $q.s +
+ticks.map(v => $q.t + L + $q.u + (W - R) + $q.v + Y(v).toFixed(1) + $q.w + Y(v).toFixed(1) + $q.x + (L - 8) + '" y="' + (Y(v) + 4).toFixed(1) + $q.y + esc(short(v)) + $q.z).join('') +
+$q.A + L + '" y="' + (H - 8) + $q.B + esc(fdt(P[0].d, lang)) + $q.C + (W - R) + '" y="' + (H - 8) + $q.y + esc(fdt(P[P.length - 1].d, lang)) + $q.z +
+$q.D + line + $q.E +
+P.map((p, i) => $q.F + esc(copyHref(x, p, url)) + '"' + (p.src === 'ia' ? $t.k1 : '') + $q.G + X(T[i]).toFixed(1) + $q.H + Y(V[i]).toFixed(1) + $q.I + (p.src === 'ia' ? $q.J : '') + $q.K + esc(fdt(p.d, lang) + ': ' + p.head.p + ' (' + nt(lang, p.src === 'ia' ? 'ph_ia' : $q.L) + ')') + $q.M).join('') +
+$q.N + esc(nt(lang, $q.r, { cur })) + $q.O;
 }
 export function pricesHtml(pd, x, lang) {
 const rec = pd && pd.ph && pd.ph.projects && pd.ph.projects[x.id];
 if (!pd || !pd.ph) return '';
 const url = (rec && rec.url) || x.url || '';
 const pts = (rec && rec.pts) || [];
-const json = ' <a class="k-src" href="/api/x/paper/' + esc(x.id) + '">' + esc(nt(lang, 'ph_json')) + '</a>';
-if (!pts.length) return '<p class="ki">' + esc(nt(lang, 'ph_nocopy')) + json + '</p>';
+const json = $q.P + esc(x.id) + '">' + esc(nt(lang, $q.Q)) + '</a>';
+if (!pts.length) return $q.R + esc(nt(lang, $q.S)) + json + '</p>';
 const nC = pts.filter(p => p.src === 'copy').length, nI = pts.filter(p => p.src === 'ia').length;
-const intro = '<p class="ki">' + esc(nt(lang, 'ph_intro', { host: hostOf(url) || '-' })) + '</p>';
+const intro = $q.R + esc(nt(lang, $q.T, { host: hostOf(url) || '-' })) + '</p>';
 const withP = pts.filter(p => p.head), anyP = pts.some(p => (p.all || []).some(a => a.k === 'price'));
-if (!anyP) return intro + '<ul class="fl"><li class="kfact">' + esc(nt(lang, pts.length === 1 ? 'ph_none1' : 'ph_none', { n: pts.length, a: fdt(pts[0].d, lang), b: fdt(pts[pts.length - 1].d, lang) })) +
-' <a class="src" href="' + esc(copyHref(x, pts[pts.length - 1], url)) + '"' + (pts[pts.length - 1].src === 'ia' ? TB.kbx_paper__t.k2 : '') + '>' + esc(nt(lang, 'ph_open')) + TB.kbx_paper__t.k3 + esc(nt(lang, 'ph_src', { a: nC, b: nI })) + json + '</p>';
+if (!anyP) return intro + $q.U + esc(nt(lang, pts.length === 1 ? $q.V : $q.W, { n: pts.length, a: fdt(pts[0].d, lang), b: fdt(pts[pts.length - 1].d, lang) })) +
+$q.X + esc(copyHref(x, pts[pts.length - 1], url)) + '"' + (pts[pts.length - 1].src === 'ia' ? $t.k2 : '') + '>' + esc(nt(lang, $q.Y)) + $t.k3 + esc(nt(lang, $q.Z, { a: nC, b: nI })) + json + '</p>';
 const first = withP[0] || null, last = withP[withP.length - 1] || null;
 const curs = [...new Set(withP.map(p => p.head.cur))];
 const L = [];
-const src = p => ' <a class="src" href="' + esc(copyHref(x, p, url)) + '"' + (p.src === 'ia' ? ' rel="nofollow noopener" target="_blank"' : '') + '>' + esc(nt(lang, p.src === 'ia' ? 'ph_ia' : 'ph_copy')) + '</a>';
-if (!first) L.push('<li class="kfact">' + esc(nt(lang, 'ph_nohead')) + src(pts[pts.length - 1]) + '</li>');
-else L.push('<li class="kfact">' + esc(nt(lang, 'ph_first', { p: first.head.p, d: fdt(first.d, lang) })).replace(esc(first.head.p), ltr(first.head.p)) + src(first) + '</li>');
+const src = p => $q.X + esc(copyHref(x, p, url)) + '"' + (p.src === 'ia' ? $q.aa : '') + '>' + esc(nt(lang, p.src === 'ia' ? 'ph_ia' : $q.L)) + '</a>';
+if (!first) L.push($q.ab + esc(nt(lang, $q.ac)) + src(pts[pts.length - 1]) + '</li>');
+else L.push($q.ab + esc(nt(lang, $q.ad, { p: first.head.p, d: fdt(first.d, lang) })).replace(esc(first.head.p), ltr(first.head.p)) + src(first) + '</li>');
 if (withP.length > 1) {
-L.push('<li class="kfact">' + esc(nt(lang, 'ph_last', { p: last.head.p, d: fdt(last.d, lang) })).replace(esc(last.head.p), ltr(last.head.p)) + src(last) + '</li>');
-if (curs.length > 1) L.push('<li class="kfact">' + esc(nt(lang, 'ph_cur2')) + src(last) + '</li>');
-else if (withP.every(p => p.head.v === first.head.v)) L.push('<li class="kfact">' + esc(nt(lang, 'ph_same', { n: withP.length })) + src(last) + '</li>');
-else { const pct = (last.head.v - first.head.v) / first.head.v * 100; L.push('<li class="kfact">' + esc(nt(lang, 'ph_chg', { cur: first.head.cur, pct: (pct > 0 ? '+' : '') + pct.toFixed(Math.abs(pct) < 1 ? 2 : 1) + '%' })) + src(last) + '</li>'); }
+L.push($q.ab + esc(nt(lang, $q.ae, { p: last.head.p, d: fdt(last.d, lang) })).replace(esc(last.head.p), ltr(last.head.p)) + src(last) + '</li>');
+if (curs.length > 1) L.push($q.ab + esc(nt(lang, $q.af)) + src(last) + '</li>');
+else if (withP.every(p => p.head.v === first.head.v)) L.push($q.ab + esc(nt(lang, $q.ag, { n: withP.length })) + src(last) + '</li>');
+else { const pct = (last.head.v - first.head.v) / first.head.v * 100; L.push($q.ab + esc(nt(lang, $q.ah, { cur: first.head.cur, pct: (pct > 0 ? '+' : '') + pct.toFixed(Math.abs(pct) < 1 ? 2 : 1) + '%' })) + src(last) + '</li>'); }
 }
 const main = curs.length ? curs.map(c => [c, withP.filter(p => p.head.cur === c).length]).sort((a, b) => b[1] - a[1])[0][0] : null;
 const th = nt(lang, 'ph_th');
-const kind = k => k === 'price' ? '' : ' <small class="k-muted">(' + esc(nt(lang, 'k_' + k)) + ')</small>';
+const kind = k => k === 'price' ? '' : $q.ai + esc(nt(lang, 'k_' + k)) + $q.aj;
 const sig = p => JSON.stringify([p.src, p.head ? [p.head.cur, p.head.v, p.head.c] : null, (p.all || []).map(a => [a.cur, a.v, a.k])]);
 const G = []; for (const p of pts.slice().reverse()) { const g = G[G.length - 1]; if (g && sig(g.p) === sig(p)) { g.n++; g.old = p; } else G.push({ p, n: 1, old: p }); }
 const rows = G.map(({ p, n, old }) => {
-const ctx = p.head && p.head.c && !OPINION.test(p.head.c) ? TB.kbx_paper__t.k4 + esc(ctxClean(MASK(p.head.c))) + '</small>' : '';
-const when = n > 1 ? esc(fdt(old.d, lang)) + ' – ' + esc(fdt(p.d, lang)) + '<br><small class="k-muted">' + esc(nt(lang, 'ph_ncopies', { n })) + '</small>' : esc(fdt(p.d, lang));
+const ctx = p.head && p.head.c && !OPINION.test(p.head.c) ? $t.k4 + esc(ctxClean(MASK(p.head.c))) + $q.ak : '';
+const when = n > 1 ? esc(fdt(old.d, lang)) + ' – ' + esc(fdt(p.d, lang)) + $q.al + esc(nt(lang, $q.am, { n })) + $q.ak : esc(fdt(p.d, lang));
 const others = (p.all || []).filter(a => !(p.head && a.cur === p.head.cur && a.v === p.head.v));
-const oth = others.slice(0, 4).map(a => ltr(a.p) + kind(a.k)).join(', ') + (others.length > 4 ? ' ' + '+' + (others.length - 4) : '');
+const oth = others.slice(0, 4).map(a => ltr(a.p) + kind(a.k)).join(', ') + (others.length > 4 ? $q.an + (others.length - 4) : '');
 const noP = !(p.all || []).some(a => a.k === 'price');
-return '<tr class="kfact"><td data-label="' + esc(th[0]) + '"><span>' + when + '</span></td><td data-label="' + esc(th[1]) + '"><span><a class="src" href="' + esc(copyHref(x, p, url)) + '"' + (p.src === 'ia' ? TB.kbx_paper__t.k5 : '') + '>' + esc(nt(lang, p.src === 'ia' ? 'ph_ia' : 'ph_copy')) + '</a></span></td>' +
-'<td data-label="' + esc(th[2]) + '"><span>' + (p.head ? '<b>' + ltr(p.head.p) + '</b>' + ctx : '<span class="k-muted">' + (noP ? esc(nt(lang, 'ph_noprice')) : '-') + '</span>') + '</span></td><td data-label="' + esc(th[3]) + '"><span>' + (oth || '<span class="k-muted">-</span>') + '</span></td></tr>';
+return $q.ao + esc(th[0]) + $q.ap + when + $q.aq + esc(th[1]) + $q.ar + esc(copyHref(x, p, url)) + '"' + (p.src === 'ia' ? $t.k5 : '') + '>' + esc(nt(lang, p.src === 'ia' ? 'ph_ia' : $q.L)) + $q.as +
+$q.at + esc(th[2]) + $q.ap + (p.head ? '<b>' + ltr(p.head.p) + '</b>' + ctx : $q.au + (noP ? esc(nt(lang, $q.av)) : '-') + $q.aw) + $q.aq + esc(th[3]) + $q.ap + (oth || $q.ax) + $q.ay;
 }).join('');
-return intro + '<ul class="fl">' + L.join('') + '</ul>' + (main ? chart(pts, main, x, url, lang) : '') +
-TB.kbx_paper__t.k6 + th.map(h => '<th scope="col">' + esc(h) + '</th>').join('') + '</tr></thead><tbody>' + rows + '</tbody></table></div>' +
-'<p class="k-small k-muted">' + esc(nt(lang, 'ph_rule')) + ' ' + esc(nt(lang, 'ph_src', { a: nC, b: nI })) + json + '</p>';
+return intro + $q.az + L.join('') + '</ul>' + (main ? chart(pts, main, x, url, lang) : '') +
+$t.k6 + th.map(h => $q.aA + esc(h) + '</th>').join('') + $q.aB + rows + $q.aC +
+$q.aD + esc(nt(lang, $q.aE)) + ' ' + esc(nt(lang, $q.Z, { a: nC, b: nI })) + json + '</p>';
 }
 function planRows(items, lang) {
 const th = nt(lang, 'pl_th');
-return TB.kbx_paper__t.k7 + th.map(h => '<th scope="col">' + esc(h) + '</th>').join('') + '</tr></thead><tbody>' +
-items.map(it => '<tr class="kfact"><td data-label="' + esc(th[0]) + '"><span><a class="src" href="' + esc(it.url) + TB.kbx_paper__t.k8 + ltr(it.ref || '-') + '</a></span></td><td data-label="' + esc(th[1]) + '">' + esc(MASK(it.name || '-')) + '</td>' +
-'<td data-label="' + esc(th[2]) + '"><span>' + esc(MASK(it.desc || '-')) + (it.cost ? ' <small class="k-muted">(' + esc(nt(lang, 'pl_cost')) + ' ' + ltr((it.cur || '') + ' ' + nf(it.cost, lang)) + ')</small>' : '') + '</span></td>' +
-'<td data-label="' + esc(th[3]) + '">' + esc(it.status || '-') + '</td><td data-label="' + esc(th[4]) + '">' + (it.d_in ? esc(fdt(it.d_in, lang)) : '-') + '</td><td data-label="' + esc(th[5]) + '">' + (it.d_dec ? esc(fdt(it.d_dec, lang)) : '-') + '</td>' +
-'<td data-label="' + esc(th[6]) + '" class="k-n">' + (it.dist_m != null ? esc(nf(it.dist_m, lang)) + ' m' : '-') + '</td></tr>').join('') + '</tbody></table></div>';
+return $t.k7 + th.map(h => $q.aA + esc(h) + '</th>').join('') + $q.aB +
+items.map(it => $q.ao + esc(th[0]) + $q.ar + esc(it.url) + $t.k8 + ltr(it.ref || '-') + $q.aF + esc(th[1]) + '">' + esc(MASK(it.name || '-')) + '</td>' +
+$q.at + esc(th[2]) + $q.ap + esc(MASK(it.desc || '-')) + (it.cost ? $q.ai + esc(nt(lang, $q.aG)) + ' ' + ltr((it.cur || '') + ' ' + nf(it.cost, lang)) + $q.aj : '') + $q.aH +
+$q.at + esc(th[3]) + '">' + esc(it.status || '-') + $q.aI + esc(th[4]) + '">' + (it.d_in ? esc(fdt(it.d_in, lang)) : '-') + $q.aI + esc(th[5]) + '">' + (it.d_dec ? esc(fdt(it.d_dec, lang)) : '-') + '</td>' +
+$q.at + esc(th[6]) + $q.aJ + (it.dist_m != null ? esc(nf(it.dist_m, lang)) + ' m' : '-') + $q.aK).join('') + $q.aC;
 }
 export function planningHtml(pd, x, lang) {
 const P = pd && pd.pl, rec = P && P.projects && P.projects[x.id];
 if (!rec) return '';
-if (rec.src === 'none') return '<p class="ki">' + esc(nt(lang, 'pl_out')) + TB.kbx_paper__s.k0;
+if (rec.src === 'none') return $q.R + esc(nt(lang, $q.aL)) + $s.k0;
 const S = (P.sources || {})[rec.src] || {};
-const head = '<p class="ki">' + esc(nt(lang, 'pl_intro', { r: rec.radius_m || 200, src: S.name || rec.src })) + '</p>';
-const rule = rec.src === 'nyc' ? '<p class="k-small k-muted">' + esc(nt(lang, 'pl_rule_nyc')) + '</p>' : rec.src === 'miami' ? '<p class="k-small k-muted">' + esc(nt(lang, 'pl_rule_mia')) + '</p>' : '';
+const head = $q.R + esc(nt(lang, $q.aM, { r: rec.radius_m || 200, src: S.name || rec.src })) + '</p>';
+const rule = rec.src === 'nyc' ? $q.aD + esc(nt(lang, $q.aN)) + '</p>' : rec.src === 'miami' ? $q.aD + esc(nt(lang, $q.aO)) + '</p>' : '';
 const items = rec.items || [];
 let body;
-if (items.length) body = (rec.stale ? '<p class="k-small k-muted">' + esc(nt(lang, 'pl_stale', { d: fdt(rec.checked, lang) })) + '</p>' : '') + planRows(items, lang);
-else if ((rec.errors || []).length) body = '<p class="ki">' + esc(nt(lang, 'pl_err', { d: fdt(rec.checked, lang) })) + '</p>';
-else body = '<ul class="fl"><li class="kfact">' + esc(nt(lang, 'pl_none', { r: rec.radius_m || 200, d: fdt(rec.checked, lang) })) + ' <a class="src" href="' + esc(S.url || '#') + TB.kbx_paper__t.k9 + esc(hostOf(S.url || '')) + '</a></li></ul>';
-const live = rec.src === 'uk' ? '<div class="kpl-live" data-id="' + esc(x.id) + TB.kbx_paper__t.k10 + esc(nt(lang, 'pl_live')) + TB.kbx_paper__t.k11 +
-'<script>window.KPL=' + JSON.stringify({ load: nt(lang, 'pl_load'), none: nt(lang, 'pl_live_none'), err: nt(lang, 'pl_live_err'), th: nt(lang, 'pl_th') }).replace(/</g, '\\u003c') + ';' + LIVE_JS + '</script>' : '';
-return head + body + live + rule + '<p class="k-small k-muted">' + esc(nt(lang, 'pl_lic')) + ': <a class="k-src" href="' + esc(S.licence_url || S.url || '#') + '" rel="noopener" target="_blank">' + esc(S.licence || '') + '</a>. ' + esc(nt(lang, 'pl_priv')) + ' <a class="k-src" href="/api/x/paper/' + esc(x.id) + '">' + esc(nt(lang, 'ph_json')) + '</a></p>';
+if (items.length) body = (rec.stale ? $q.aD + esc(nt(lang, $q.aP, { d: fdt(rec.checked, lang) })) + '</p>' : '') + planRows(items, lang);
+else if ((rec.errors || []).length) body = $q.R + esc(nt(lang, $q.aQ, { d: fdt(rec.checked, lang) })) + '</p>';
+else body = $q.U + esc(nt(lang, $q.aR, { r: rec.radius_m || 200, d: fdt(rec.checked, lang) })) + $q.X + esc(S.url || '#') + $t.k9 + esc(hostOf(S.url || '')) + $q.aS;
+const live = rec.src === 'uk' ? $q.aT + esc(x.id) + $t.k10 + esc(nt(lang, $q.aU)) + $t.k11 +
+$q.aV + JSON.stringify({ load: nt(lang, $q.aW), none: nt(lang, $q.aX), err: nt(lang, $q.aY), th: nt(lang, 'pl_th') }).replace(/</g, $q.aZ) + ';' + LIVE_JS + $q.ba : '';
+return head + body + live + rule + $q.aD + esc(nt(lang, $q.bb)) + $q.bc + esc(S.licence_url || S.url || '#') + $q.bd + esc(S.licence || '') + $q.be + esc(nt(lang, $q.bf)) + $q.P + esc(x.id) + '">' + esc(nt(lang, $q.Q)) + $q.bg;
 }
 const LIVE_JS = String.raw`(()=>{const T=window.KPL,e=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 document.querySelectorAll('.kpl-live').forEach(w=>{const b=w.querySelector('button'),o=w.querySelector('.kpl-out');if(!b||b.dataset.on)return;b.dataset.on=1;
@@ -133,63 +134,63 @@ export const PAPER_CSS = '.kph-fig{margin:14px 0 10px;max-width:720px}.kph-svg{w
 '@media(max-width:600px){.kph-ax{font-size:21px}}.kph-fig figcaption{font-size:.84rem;color:var(--k-muted,#56636F)}.kph-ctx{display:inline-block;max-width:46ch;overflow-wrap:anywhere}.kph-t td,.kpl-t td{vertical-align:top}.kpl-t td{overflow-wrap:break-word}.kpl-t td::before{overflow-wrap:normal;word-break:normal}.kpl-live{margin:10px 0}.kpl-out{margin-top:10px}';
 const R0 = 6371008.8, rad = v => v * Math.PI / 180;
 const dist = (a, b, c, d) => { const h = Math.sin(rad(c - a) / 2) ** 2 + Math.cos(rad(a)) * Math.cos(rad(c)) * Math.sin(rad(d - b) / 2) ** 2; return Math.round(2 * R0 * Math.asin(Math.min(1, Math.sqrt(h)))); };
-function circle(la, ln, r) { const p = []; for (let i = 0; i <= 24; i++) { const t = 2 * Math.PI * i / 24; p.push((ln + r * Math.sin(t) / (111320 * Math.cos(rad(la)))).toFixed(6) + ' ' + (la + r * Math.cos(t) / 111320).toFixed(6)); } return 'POLYGON((' + p.join(',') + '))'; }
+function circle(la, ln, r) { const p = []; for (let i = 0; i <= 24; i++) { const t = 2 * Math.PI * i / 24; p.push((ln + r * Math.sin(t) / (111320 * Math.cos(rad(la)))).toFixed(6) + ' ' + (la + r * Math.cos(t) / 111320).toFixed(6)); } return $q.bh + p.join(',') + '))'; }
 const clean = (s, n) => { s = MASK(String(s || '').replace(/\s+/g, ' ').trim()); return s.length > n ? s.slice(0, n - 1) + '…' : s; };
 async function ukLive(la, ln) {
 const items = [];
-for (const ds of ['planning-application', 'brownfield-land']) {
-const q = TB.kbx_paper__t.k12 + new URLSearchParams({ dataset: ds, geometry: circle(la, ln, 200), geometry_relation: 'intersects', limit: '100' });
-const r = await fetch(q, { headers: { accept: 'application/json', 'user-agent': TB.kbx_paper__t.k13 }, cf: { cacheTtl: 86400, cacheEverything: true } });
+for (const ds of [$q.bi, $q.bj]) {
+const q = $t.k12 + new URLSearchParams({ dataset: ds, geometry: circle(la, ln, 200), geometry_relation: $q.bk, limit: '100' });
+const r = await fetch(q, { headers: { accept: $q.bl, 'user-agent': $t.k13 }, cf: { cacheTtl: 86400, cacheEverything: true } });
 if (!r.ok) throw new Error('uk ' + r.status);
 const d = await r.json();
 for (const e of d.entities || []) {
 const m = /POINT\s*\(\s*(-?[\d.]+)\s+(-?[\d.]+)\s*\)/.exec(e.point || '');
-items.push({ kind: ds, ref: String(e.reference || '').slice(0, 60), name: clean(e.name || e['site-address'], 120), desc: clean(e.description || e.notes, 220),
-status: clean(e['planning-decision'] || e.status || e['planning-permission-status'], 60), d_in: e['start-date'] || e['entry-date'] || null, d_dec: e['decision-date'] || e['planning-permission-date'] || null,
-dist_m: m ? dist(la, ln, +m[2], +m[1]) : null, url: TB.kbx_paper__t.k14 + e.entity });
+items.push({ kind: ds, ref: String(e.reference || '').slice(0, 60), name: clean(e.name || e[$q.bm], 120), desc: clean(e.description || e.notes, 220),
+status: clean(e[$q.bn] || e.status || e[$q.bo], 60), d_in: e[$q.bp] || e[$q.bq] || null, d_dec: e[$q.br] || e[$q.bs] || null,
+dist_m: m ? dist(la, ln, +m[2], +m[1]) : null, url: $t.k14 + e.entity });
 }
 }
 return items;
 }
 async function limited(req, ctx, name, max) {
-const ip = req.headers.get('cf-connecting-ip') || 'x', k = new Request(ORIGIN + '/__kpaper_rl/' + name + '/' + encodeURIComponent(ip) + '/' + new Date().toISOString().slice(0, 13));
+const ip = req.headers.get($q.bt) || 'x', k = new Request(ORIGIN + $q.bu + name + '/' + encodeURIComponent(ip) + '/' + new Date().toISOString().slice(0, 13));
 const hit = await caches.default.match(k); const n = hit ? (+(await hit.text()) || 0) : 0; if (n >= max) return true;
-const p = caches.default.put(k, new Response(String(n + 1), { headers: { 'cache-control': 'max-age=3600' } })); if (ctx && ctx.waitUntil) ctx.waitUntil(p.catch(() => {})); else await p.catch(() => {});
+const p = caches.default.put(k, new Response(String(n + 1), { headers: { 'cache-control': $q.bv } })); if (ctx && ctx.waitUntil) ctx.waitUntil(p.catch(() => {})); else await p.catch(() => {});
 return false;
 }
 const HJ = { 'content-type': 'application/json; charset=utf-8', 'x-content-type-options': 'nosniff', 'access-control-allow-origin': '*' };
-const out = (o, st, cc) => new Response(JSON.stringify(o), { status: st || 200, headers: Object.assign({ 'cache-control': cc || 'no-store' }, HJ) });
+const out = (o, st, cc) => new Response(JSON.stringify(o), { status: st || 200, headers: Object.assign({ 'cache-control': cc || $q.bw }, HJ) });
 export async function handle(req, u, env, ctx) {
-if (req.method !== 'GET' && req.method !== 'HEAD') return out({ error: 'method' }, 405);
+if (req.method !== 'GET' && req.method !== 'HEAD') return out({ error: $q.bx }, 405);
 const p = u.pathname.replace(/\/+$/, '');
 try {
 const { data } = await import('./kbx_named.js');
-const ix = await data(env).catch(() => null); if (!ix) return out({ error: 'unavailable' }, 503);
+const ix = await data(env).catch(() => null); if (!ix) return out({ error: $q.by }, 503);
 let m = p.match(/^\/api\/x\/paper\/planning\/([A-Za-z0-9-]{3,20})\/live$/);
 if (m) {
-const x = ix.byId.get(m[1].toUpperCase()); if (!x) return out({ error: 'not_found' }, 404);
+const x = ix.byId.get(m[1].toUpperCase()); if (!x) return out({ error: $q.bz }, 404);
 const pd = await paperData(env), rec = pd.pl && pd.pl.projects && pd.pl.projects[x.id];
-if (!rec || rec.src !== 'uk' || !rec.pin) return out({ error: 'not_covered', note: TB.kbx_paper__t.k15 }, 400);
-const ck = new Request(ORIGIN + '/__kpaper_uk/v1/' + x.id);
-const hit = await caches.default.match(ck); if (hit) return new Response(hit.body, { status: 200, headers: Object.assign({ 'cache-control': 'public, max-age=3600', 'x-cache': 'hit' }, HJ) });
-if (await limited(req, ctx, 'uk', 30)) return out({ error: 'rate', note: TB.kbx_paper__t.k16 }, 429);
-let items; try { items = await ukLive(rec.pin[0], rec.pin[1]); } catch (e) { return out({ error: 'register_unavailable', source: 'planning.data.gov.uk', note: TB.kbx_paper__t.k17 }, 200); }
+if (!rec || rec.src !== 'uk' || !rec.pin) return out({ error: $q.bA, note: $t.k15 }, 400);
+const ck = new Request(ORIGIN + $q.bB + x.id);
+const hit = await caches.default.match(ck); if (hit) return new Response(hit.body, { status: 200, headers: Object.assign({ 'cache-control': $q.bC, 'x-cache': 'hit' }, HJ) });
+if (await limited(req, ctx, 'uk', 30)) return out({ error: 'rate', note: $t.k16 }, 429);
+let items; try { items = await ukLive(rec.pin[0], rec.pin[1]); } catch (e) { return out({ error: $q.bD, source: $q.bE, note: $t.k17 }, 200); }
 const body = JSON.stringify({ id: x.id, checked: new Date().toISOString(), radius_m: 200, source: (pd.pl.sources || {}).uk || null, items: items.slice(0, 40) });
-const put = caches.default.put(ck, new Response(body, { headers: { 'cache-control': 'max-age=86400' } })); if (ctx && ctx.waitUntil) ctx.waitUntil(put.catch(() => {}));
-return new Response(body, { status: 200, headers: Object.assign({ 'cache-control': 'public, max-age=3600' }, HJ) });
+const put = caches.default.put(ck, new Response(body, { headers: { 'cache-control': $q.bF } })); if (ctx && ctx.waitUntil) ctx.waitUntil(put.catch(() => {}));
+return new Response(body, { status: 200, headers: Object.assign({ 'cache-control': $q.bC }, HJ) });
 }
 m = p.match(/^\/api\/x\/paper\/([A-Za-z0-9-]{3,20})$/);
 if (m) {
 const x = ix.byId.get(m[1].toUpperCase()) || ix.bySlug.get(m[1].toLowerCase());
-if (!x) return out({ id: m[1], named: false }, 404, 'public, max-age=300');
+if (!x) return out({ id: m[1], named: false }, 404, $q.bG);
 const pd = await paperData(env), ph = pd.ph, pl = pd.pl, r = ph && ph.projects && ph.projects[x.id];
-const pts = r ? r.pts.map(q => Object.assign({}, q, { copy_url: q.src === 'copy' ? ORIGIN + '/projects/' + x.s + '/changes/' + q.ref + '.txt' : ia(q.ref, r.url) })) : [];
-return out({ id: x.id, name: x.n || null, page: ORIGIN + '/projects/' + x.s + '/',
+const pts = r ? r.pts.map(q => Object.assign({}, q, { copy_url: q.src === 'copy' ? ORIGIN + $q.n + x.s + $q.o + q.ref + '.txt' : ia(q.ref, r.url) })) : [];
+return out({ id: x.id, name: x.n || null, page: ORIGIN + $q.n + x.s + '/',
 prices: ph ? { updated: ph.updated, url_tracked: r ? r.url : x.url || null, rules: ph.rules, sources: ph.sources, points: pts } : null,
-planning: pl ? Object.assign({ updated: pl.updated, privacy: pl.privacy, not_covered: pl.not_covered }, pl.projects && pl.projects[x.id] ? { record: pl.projects[x.id], source: (pl.sources || {})[pl.projects[x.id].src] || null } : { record: null }) : null }, 200, 'public, max-age=600');
+planning: pl ? Object.assign({ updated: pl.updated, privacy: pl.privacy, not_covered: pl.not_covered }, pl.projects && pl.projects[x.id] ? { record: pl.projects[x.id], source: (pl.sources || {})[pl.projects[x.id].src] || null } : { record: null }) : null }, 200, $q.bH);
 }
-return out({ error: 'not_found', see: ['/api/x/paper/<ID>', '/api/x/paper/planning/<ID>/live'] }, 404);
-} catch (e) { return out({ error: 'server' }, 500); }
+return out({ error: $q.bz, see: [$q.bI, $q.bJ] }, 404);
+} catch (e) { return out({ error: $q.bK }, 500); }
 }
 const EXTRA = TB.kbx_paper_EXTRA ;
 const BASIS = {
@@ -206,32 +207,32 @@ UK: { escrow: [], delay: ['uk-cra-62'], refund: ['uk-cra-62'], complete: [], per
 const T = TB.kbx_paper_T ;
 const tt = l => Object.assign({}, T.en, T[l] || {});
 async function lawNotes(env) {
-const lj = await loadOne(env, '/tools/law/law.json', 3600000);
+const lj = await loadOne(env, $q.bL, 3600000);
 const out = {};
-if (lj) for (const r of lj.rules || []) { const s = (lj.sources || {})[r.source] || {}; out[r.id] = { law: s.law || r.source, cite: r.cite, url: s.url || '/tools/law/', lang: s.language || 'en', quote: String(r.quote || ''), tr: r.translation || '', title: r.title || '', checked: r.checked || lj.version, kb: '/tools/law/#' + r.id }; }
-for (const [k, v] of Object.entries(EXTRA)) out[k] = Object.assign({ checked: '2026-11-08' }, v);
+if (lj) for (const r of lj.rules || []) { const s = (lj.sources || {})[r.source] || {}; out[r.id] = { law: s.law || r.source, cite: r.cite, url: s.url || $q.bM, lang: s.language || 'en', quote: String(r.quote || ''), tr: r.translation || '', title: r.title || '', checked: r.checked || lj.version, kb: $q.bN + r.id }; }
+for (const [k, v] of Object.entries(EXTRA)) out[k] = Object.assign({ checked: $q.bO }, v);
 return out;
 }
 function toolBody(lang, LAW) {
 const t = tt(lang), p = pre(lang);
-const f = (id, label, type, extra, val, opt) => '<div class="k-field"><label class="k-label" for="ca-' + id + '">' + esc(label) + (opt ? ' <small class="k-muted">(' + esc(t.opt) + ')</small>' : '') + '</label>' +
-    (type === 'textarea' ? '<textarea class="k-textarea" id="ca-' + id + '" name="' + id + '" rows="2" autocomplete="off"' + (extra || '') + '>' + esc(val || '') + '</textarea>' : '<input class="k-input" id="ca-' + id + '" name="' + id + '" type="' + type + '" autocomplete="off"' + (extra || '') + (val != null ? ' value="' + esc(val) + '"' : '') + '>') + '</div>';
-const cls = ['escrow', 'delay', 'refund', 'complete', 'permits', 'snag', 'reg'];
-const client = { lang, t: { law_none: t.law_none, law_open: t.law_open, quote: t.quote, trans: t.trans, note: t.note, st_pdf: t.st_pdf, st_done: t.st_done, st_err: t.st_err, st_latin: t.st_latin, empty: t.empty, law_h: t.law_h }, LAW, BASIS, C: TB.kbx_paper__t.o_COUNTRIES };
-return TB.kbx_paper__t.k18 + p + '/">Kolaboro</a> / <a href="/tools/">' + esc(t.crumb_tools) + '</a></p><h1>' + esc(t.h1) + '</h1><p class="lead">' + esc(t.lead) + '</p>' +
-TB.kbx_paper__t.k19 + esc(t.warn_b) + '</b><span>' + esc(t.warn) + '</span></div>' +
-TB.kbx_paper__t.k20 + esc(t.priv_b) + '</b><span>' + esc(t.priv) + '</span></div></div></section>' +
-TB.kbx_paper__s.k1 +
-'<fieldset><legend>' + esc(t.s1) + TB.kbx_paper__t.k21 + esc(t.f_country) + TB.kbx_paper__t.k22 + TB.kbx_paper__t.o_COUNTRIES.map(c => '<option value="' + c[0] + '">' + esc(c[1]) + '</option>').join('') + '</select></div>' +
-'<div class="kca-row">' + f('seller', t.f_seller, 'text') + f('buyer', t.f_buyer, 'text', '', '', 1) + '</div><div class="kca-row">' + f('project', t.f_project, 'text') + f('unit', t.f_unit, 'text') + '</div>' + f('contract', t.f_contract, 'text', '', '', 1) + '</fieldset>' +
-'<fieldset><legend>' + esc(t.s2) + '</legend><div class="kca-row">' + f('price', t.f_price, 'text', ' inputmode="decimal"') + TB.kbx_paper__t.k23 + esc(t.f_cur) + TB.kbx_paper__s.k2 + f('paid', t.f_paid, 'text', ' inputmode="decimal"', '', 1) + '</div>' +
-f('sched', t.f_sched, 'textarea', '', '', 1) + '<div class="kca-row">' + f('date', t.f_date, 'date') + f('grace', t.f_grace, 'number', ' min="0" max="24" step="1"', '3') + f('long', t.f_long, 'number', ' min="1" max="60" step="1"', '6') + '</div>' +
-'<div class="kca-row">' + f('pen', t.f_pen, 'number', ' min="0" max="5" step="0.05"', '0.5') + f('cap', t.f_cap, 'number', ' min="0" max="50" step="0.5"', '10') + f('int', t.f_int, 'number', ' min="0" max="30" step="0.1"', '4') + f('snag', t.f_snag, 'number', ' min="1" max="365" step="1"', '30') + '</div></fieldset>' +
-'<fieldset><legend>' + esc(t.s3) + '</legend>' + cls.map(k => TB.kbx_paper__t.k24 + k + '" name="c_' + k + '"' + (k !== 'reg' ? ' checked' : '') + '><label for="ca-c-' + k + '">' + esc(t['c_' + k]) + '<small data-basis="' + k + '"></small></label></div>').join('') + '</fieldset></form>' +
-TB.kbx_paper__t.k25 + esc(t.s4) + TB.kbx_paper__t.k26 + esc(t.pdf) + TB.kbx_paper__t.k27 + esc(t.docx) + TB.kbx_paper__t.k28 + esc(t.print) + '</button></div>' +
-TB.kbx_paper__s.k3 + esc(t.doc_lang) + '</p></div></div></section>' +
-TB.kbx_paper__t.k29 + esc(t.rel_h) + '</h2><ul><li><a href="/tools/law/">' + esc(t.rel_law) + TB.kbx_paper__t.k30 + esc(t.rel_delay) + TB.kbx_paper__t.k31 + esc(t.rel_dep) + '</a></li></ul></div></section></div>' +
-'<script>window.KCA=' + JSON.stringify(client).replace(/</g, '\\u003c') + ';</script><script>' + JS + '</script>';
+const f = (id, label, type, extra, val, opt) => $q.bP + id + '">' + esc(label) + (opt ? $q.ai + esc(t.opt) + $q.aj : '') + $q.bQ +
+    (type === $q.bR ? $q.bS + id + $q.bT + id + $q.bU + (extra || '') + '>' + esc(val || '') + $q.bV : $q.bW + id + $q.bT + id + $q.bX + type + $q.bY + (extra || '') + (val != null ? $q.bZ + esc(val) + '"' : '') + '>') + $q.ca;
+const cls = [$q.cb, 'delay', $q.cc, $q.cd, $q.ce, 'snag', 'reg'];
+const client = { lang, t: { law_none: t.law_none, law_open: t.law_open, quote: t.quote, trans: t.trans, note: t.note, st_pdf: t.st_pdf, st_done: t.st_done, st_err: t.st_err, st_latin: t.st_latin, empty: t.empty, law_h: t.law_h }, LAW, BASIS, C: $t.o_COUNTRIES };
+return $t.k18 + p + $q.cf + esc(t.crumb_tools) + $q.cg + esc(t.h1) + $q.ch + esc(t.lead) + '</p>' +
+$t.k19 + esc(t.warn_b) + $q.ci + esc(t.warn) + $q.cj +
+$t.k20 + esc(t.priv_b) + $q.ci + esc(t.priv) + $q.ck +
+$s.k1 +
+$q.cl + esc(t.s1) + $t.k21 + esc(t.f_country) + $t.k22 + $t.o_COUNTRIES.map(c => $q.cm + c[0] + '">' + esc(c[1]) + $q.cn).join('') + $q.co +
+$q.cp + f($q.cq, t.f_seller, 'text') + f('buyer', t.f_buyer, 'text', '', '', 1) + $q.cr + f($q.cs, t.f_project, 'text') + f('unit', t.f_unit, 'text') + $q.ca + f($q.ct, t.f_contract, 'text', '', '', 1) + $q.cu +
+$q.cl + esc(t.s2) + $q.cv + f('price', t.f_price, 'text', $q.cw) + $t.k23 + esc(t.f_cur) + $s.k2 + f('paid', t.f_paid, 'text', $q.cw, '', 1) + $q.ca +
+f('sched', t.f_sched, $q.bR, '', '', 1) + $q.cp + f('date', t.f_date, 'date') + f('grace', t.f_grace, $q.cx, $q.cy, '3') + f('long', t.f_long, $q.cx, $q.cz, '6') + $q.ca +
+$q.cp + f('pen', t.f_pen, $q.cx, $q.cA, '0.5') + f('cap', t.f_cap, $q.cx, $q.cB, '10') + f('int', t.f_int, $q.cx, $q.cC, '4') + f('snag', t.f_snag, $q.cx, $q.cD, '30') + $q.cE +
+$q.cl + esc(t.s3) + $q.cF + cls.map(k => $t.k24 + k + $q.cG + k + '"' + (k !== 'reg' ? $q.cH : '') + $q.cI + k + '">' + esc(t['c_' + k]) + $q.cJ + k + $q.cK).join('') + $q.cL +
+$t.k25 + esc(t.s4) + $t.k26 + esc(t.pdf) + $t.k27 + esc(t.docx) + $t.k28 + esc(t.print) + $q.cM +
+$s.k3 + esc(t.doc_lang) + $q.cN +
+$t.k29 + esc(t.rel_h) + $q.cO + esc(t.rel_law) + $t.k30 + esc(t.rel_delay) + $t.k31 + esc(t.rel_dep) + $q.cP +
+$q.cQ + JSON.stringify(client).replace(/</g, $q.aZ) + $q.cR + JS + $q.ba;
 }
 const JS = String.raw`(()=>{const K=window.KCA,t=K.t,$=s=>document.querySelector(s),F=$('#kca-f'),D=$('#kca-doc'),ST=$('#kca-st');
 const CUR={ES:'EUR',PT:'EUR','AE-DU':'AED',MX:'MXN',TH:'THB',ID:'IDR',UK:'GBP','US-FL':'USD','US-NY':'USD'};
@@ -301,31 +302,31 @@ $('#kca-docx').addEventListener('click',()=>{try{const body=plain().map(p=>'<w:p
  save(docx,fname('docx'));ST.textContent=t.st_done}catch(z){ST.textContent=t.st_err.replace('{e}',z.message||'error')}});
 $('#kca-print').addEventListener('click',()=>window.print());})();`;
 async function assembleTool(shellRes, lang, env) {
-const t = tt(lang), path = '/tools/contract-addendum/', url = ORIGIN + pre(lang) + path;
-const alts = LANGS.map(l => '<link rel="alternate" hreflang="' + l + '" href="' + ORIGIN + pre(l) + path + '">').join('') + TB.kbx_paper__t.k32 + ORIGIN + path + '">';
-const ld = { '@context': 'https://schema.org', '@graph': [
-{ '@type': 'WebApplication', name: 'Kolaboro ' + t.title, url, description: t.desc, inLanguage: lang, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Any', isAccessibleForFree: true, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' } },
-{ '@type': 'BreadcrumbList', itemListElement: [['Kolaboro', ORIGIN + pre(lang) + '/'], [t.crumb_tools, ORIGIN + '/tools/'], [t.title, url]].map((x, i) => ({ '@type': 'ListItem', position: i + 1, name: x[0], item: x[1] })) }] };
-const tags = '<title>' + esc(t.title) + TB.kbx_paper__t.k33 + esc(t.desc) + '"><link rel="canonical" href="' + url + '">' + alts +
-TB.kbx_paper__s.k4 + esc(t.title) + TB.kbx_paper__t.k34 + esc(t.desc) + '"><meta property="og:url" content="' + url + TB.kbx_paper__t.k35 +
-TB.kbx_paper__s.k5 + JSON.stringify(ld).replace(/</g, '\\u003c') + '</script>' + TB.kbx_paper__s.CSS;
+const t = tt(lang), path = $q.cS, url = ORIGIN + pre(lang) + path;
+const alts = LANGS.map(l => $q.cT + l + $q.cU + ORIGIN + pre(l) + path + '">').join('') + $t.k32 + ORIGIN + path + '">';
+const ld = { '@context': $q.cV, '@graph': [
+{ '@type': $q.cW, name: $q.cX + t.title, url, description: t.desc, inLanguage: lang, applicationCategory: $q.cY, operatingSystem: 'Any', isAccessibleForFree: true, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' } },
+{ '@type': $q.cZ, itemListElement: [[$q.da, ORIGIN + pre(lang) + '/'], [t.crumb_tools, ORIGIN + $q.db], [t.title, url]].map((x, i) => ({ '@type': $q.dc, position: i + 1, name: x[0], item: x[1] })) }] };
+const tags = $q.dd + esc(t.title) + $t.k33 + esc(t.desc) + $q.de + url + '">' + alts +
+$s.k4 + esc(t.title) + $t.k34 + esc(t.desc) + $q.df + url + $t.k35 +
+$s.k5 + JSON.stringify(ld).replace(/</g, $q.aZ) + $q.ba + $s.CSS;
 const LAW = await lawNotes(env);
 const res = new HTMLRewriter()
 .on('title', { element(e) { e.remove(); } })
-.on(TB.kbx_paper__s.k6, { element(e) { e.remove(); } })
-.on('script[type="application/ld+json"]', { element(e) { e.remove(); } })
+.on($s.k6, { element(e) { e.remove(); } })
+.on($q.dg, { element(e) { e.remove(); } })
 .on('head', { element(e) { e.append(tags, { html: true }); } })
-.on('main', { element(e) { e.setAttribute('data-clarity-mask', 'True'); e.setInnerContent(toolBody(lang, LAW), { html: true }); } })
-.on('details.lsw a[hreflang]', { element(e) { const l = e.getAttribute('hreflang'); if (LANGS.includes(l)) e.setAttribute('href', pre(l) + path); } })
-.transform(new Response(shellRes.body, { headers: { 'content-type': 'text/html; charset=utf-8' } }));
+.on('main', { element(e) { e.setAttribute($q.dh, 'True'); e.setInnerContent(toolBody(lang, LAW), { html: true }); } })
+.on($q.di, { element(e) { const l = e.getAttribute($q.dj); if (LANGS.includes(l)) e.setAttribute('href', pre(l) + path); } })
+.transform(new Response(shellRes.body, { headers: { 'content-type': $q.dk } }));
 return await res.text();
 }
 export async function handleTool(req, u, env, ctx, shell) {
 if (req.method !== 'GET' && req.method !== 'HEAD') return null;
 const m = u.pathname.match(/^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?tools\/contract-addendum(\/?)$/); if (!m) return null;
-if (!m[2]) return new Response(null, { status: 301, headers: { location: u.pathname + '/' + u.search, 'cache-control': 'public, max-age=86400' } });
+if (!m[2]) return new Response(null, { status: 301, headers: { location: u.pathname + '/' + u.search, 'cache-control': $q.dl } });
 const lang = m[1] || 'en';
-const sh = await shell(pre(lang) + '/how-we-score/');
+const sh = await shell(pre(lang) + $q.dm);
 if (!sh || sh.status !== 200) return null;
-return new Response(await assembleTool(sh, lang, env), { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=300' } });
+return new Response(await assembleTool(sh, lang, env), { status: 200, headers: { 'content-type': $q.dk, 'cache-control': $q.bG } });
 }

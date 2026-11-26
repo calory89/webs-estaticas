@@ -1,4 +1,5 @@
 // comments: _notes/kolaboro-worker-comments.txt
+const $q = TB.kbx_bulkix__q, $s = TB.kbx_bulkix__s, $t = TB.kbx_bulkix__t;   // n40 k46: short names for this module's string tables (strings in /data/i18n/k19s.json, k17s.json, k46s.json)
 import { TB } from './kbx_strings.js';
 export const PATHS = /^\/api\/x\/bulkix\/?$/;
 export const PAGE = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?tools\/bulk-check\/?$/;
@@ -6,14 +7,14 @@ const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' };
 const pre = l => l === 'en' ? '' : '/' + l;
-const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': $q.b, "'": '&#39;' }[c]));
 const MAX = 100, V = 'n40k11-1';
 const MEMO = {};
 async function file(env, name) {
   const m = MEMO[name]; if (m && Date.now() - m.t < 600000) return m.v;
   let r = null;
-  try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/' + name)); } catch (e) { r = null; }
-  if (!r || !r.ok) r = await fetch(ORIGIN + '/data/' + name, { cf: { cacheTtl: 300, cacheEverything: true } });
+  try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + $q.c + name)); } catch (e) { r = null; }
+  if (!r || !r.ok) r = await fetch(ORIGIN + $q.d + name, { cf: { cacheTtl: 300, cacheEverything: true } });
   if (!r.ok) throw new Error(name + ' ' + r.status);
   const v = await r.json(); MEMO[name] = { t: Date.now(), v }; return v;
 }
@@ -22,7 +23,7 @@ let NM = null, BUILT = null;
 export async function buildIndex(env) {
 if (!NM) NM = await import('./kbx_named.js');
 const ix = await NM.data(env);
-const [web, look, u37] = await Promise.all([file(env, 'web-health.json').catch(() => null), file(env, 'lookalikes.json').catch(() => null), file(env, 'n37u.json').catch(() => null)]);
+const [web, look, u37] = await Promise.all([file(env, $q.e).catch(() => null), file(env, $q.f).catch(() => null), file(env, $q.g).catch(() => null)]);
 if (BUILT && BUILT.ix === ix && BUILT.web === web && BUILT.look === look) return BUILT.v;
 const rgOf = new Map(); for (const r of (u37 && u37.p) || []) { const g = r[8] && r[8][8]; if (g && g[2] === 'reg') rgOf.set(r[0], [String(g[0]).slice(0, 110), g[3] || '']); }
 const wd = (web && web.d) || {}, w = {}, l = {};
@@ -34,7 +35,7 @@ const hs = hostsOf(x), ho = NM.handoverOf(ix, x), pr = ix.prom[x.id] || [];
 const dvs = x.dvs && ix.devs.has(x.dvs) ? x.dvs : '';
 return [x.s, x.n, x.id, x.dv || '', dvs, x.mk || '', x.co || '', [...new Set([x.url, x.du].filter(NM.okHttp).map(pathOf).filter(Boolean))], hs,
 ho ? String(ho.d) : '', pr.reduce((a, q) => a + (q.mv || 0), 0), x.pn ? 1 : 0, hs.find(health) || '',
-((ix.caseBy.get(x.id) || {}).stage || x.st) === 'completed' ? 1 : 0, (NM.overdueOf(ix, x) || {}).m || 0, ho && ho.p && ho.p.ph ? String(ho.p.d0) : '', ...(rgOf.get(x.id) || ['', ''])];
+((ix.caseBy.get(x.id) || {}).stage || x.st) === $q.h ? 1 : 0, (NM.overdueOf(ix, x) || {}).m || 0, ho && ho.p && ho.p.ph ? String(ho.p.d0) : '', ...(rgOf.get(x.id) || ['', ''])];
 });
 const hostDevs = {}; for (const x of ix.P) for (const h of hostsOf(x)) (hostDevs[h] = hostDevs[h] || new Set()).add(x.dvs || x.dv || x.id);
 const d = [...ix.devs.values()].map(v => {
@@ -44,39 +45,38 @@ hs.sort((a, b) => cnt[b] - cnt[a]);
 return [v.s, v.n, xs.length, [...new Set(xs.map(x => x.mk).filter(Boolean))].slice(0, 4).join(', '), hs.slice(0, 12),
 xs.reduce((a, x) => a + (ix.prom[x.id] || []).reduce((b, q) => b + (q.mv || 0), 0), 0), xs.filter(x => x.pn).length, hs.find(health) || ''];
 });
-const v = { version: 'bulk-index-1', updated: NM.iso(ix.updated) || ix.updated, licence: TB.kbx_bulkix__t.k0, counts: { projects: p.length, developers: d.length },
-sources: { projects: ORIGIN + '/api/v1/projects', promises: ORIGIN + '/data/promises.json', website_health: { url: ORIGIN + '/data/web-health.json', updated: (web && web.updated) || null }, lookalikes: { url: ORIGIN + '/data/lookalikes.json', updated: (look && look.updated) || null, window_days: (look && look.window_days) || null } },
-fields: { p: ['slug', 'name', 'id', 'developer', 'developer_slug', 'market', 'country', 'tracked_pages (host and path)', 'official_hosts', 'handover_on_record', 'times_dates_moved', 'permit_number_published (1 or 0)', 'health_host', 'completed (1 or 0)', TB.kbx_bulkix__t.k1, TB.kbx_bulkix__t.k2, 'register entry', 'register entry read on'],
-d: ['slug', 'name', 'projects', 'markets', 'official_hosts', 'times_dates_moved', 'projects_with_permit_number', 'health_host'],
-w: TB.kbx_bulkix__s.k0, l: TB.kbx_bulkix__t.k3 },
+const v = { version: $q.i, updated: NM.iso(ix.updated) || ix.updated, licence: $t.k0, counts: { projects: p.length, developers: d.length },
+sources: { projects: ORIGIN + $q.j, promises: ORIGIN + $q.k, website_health: { url: ORIGIN + $q.l, updated: (web && web.updated) || null }, lookalikes: { url: ORIGIN + $q.m, updated: (look && look.updated) || null, window_days: (look && look.window_days) || null } },
+fields: { p: ['slug', 'name', 'id', $q.n, $q.o, $q.p, $q.q, $q.r, $q.s, $q.t, $q.u, $q.v, $q.w, $q.x, $t.k1, $t.k2, $q.y, $q.z],
+d: ['slug', 'name', $q.A, $q.B, $q.s, $q.u, $q.C, $q.w],
+w: $s.k0, l: $t.k3 },
 p, d, w, l };
 BUILT = { ix, web, look, v }; return v;
 }
 export async function handle(req, u, env, ctx) {
-if (req.method !== 'GET' && req.method !== 'HEAD') return new Response('{"error":"method"}', { status: 405, headers: { 'content-type': 'application/json' } });
-const ck = new Request(ORIGIN + '/__bulkix/' + V);
+if (req.method !== 'GET' && req.method !== 'HEAD') return new Response($q.D, { status: 405, headers: { 'content-type': $q.E } });
+const ck = new Request(ORIGIN + $q.F + V);
 try { const hit = await caches.default.match(ck); if (hit) return hit; } catch (e) {}
-let v; try { v = await buildIndex(env); } catch (e) { return new Response('{"error":"unavailable"}', { status: 503, headers: { 'content-type': 'application/json', 'retry-after': '60', 'cache-control': 'no-store' } }); }
-const r = new Response(JSON.stringify(v), { status: 200, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'public, max-age=900', 'access-control-allow-origin': '*', 'x-content-type-options': 'nosniff' } });
+let v; try { v = await buildIndex(env); } catch (e) { return new Response($q.G, { status: 503, headers: { 'content-type': $q.E, 'retry-after': '60', 'cache-control': $q.H } }); }
+const r = new Response(JSON.stringify(v), { status: 200, headers: { 'content-type': $q.I, 'cache-control': $q.J, 'access-control-allow-origin': '*', 'x-content-type-options': $q.K } });
 if (ctx && ctx.waitUntil) ctx.waitUntil(caches.default.put(ck, r.clone()).catch(() => {}));
 return r;
 }
 const T = TB.kbx_bulkix_T ;
 const t = (lang, k) => (T[lang] && T[lang][k] != null ? T[lang][k] : T.en[k]);
-const LOCK = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10.5" width="14" height="9.5" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
 function body(lang) {
   const L = k => esc(t(lang, k)), p = pre(lang);
-  return '<div class="bk21" data-clarity-mask="true"><section class="bk-hero"><div class="wrap"><p class="crumb"><a href="' + p + '/">Kolaboro</a> / <a href="/tools/">' + L('tools') + '</a> / ' + L('crumb') + '</p><h1>' + L('h1') + '</h1><p class="lead">' + L('lead') + '</p>' +
-    '<p class="bk-priv">' + LOCK + '<span><b>' + L('priv_b') + '</b> ' + L('priv') + '</span></p></div></section>' +
-    '<section class="bk-sec" aria-labelledby="bk-h-in"><div class="wrap"><h2 id="bk-h-in">' + L('h_in') + '</h2><form class="bk-in" id="bkform" novalidate><div class="k-field"><label class="k-label" for="bkin">' + L('in_label') + '</label>' +
-    '<textarea class="k-textarea" id="bkin" data-clarity-mask="true" dir="auto" spellcheck="false" autocomplete="off" autocapitalize="off" placeholder="' + L('ph') + '"></textarea></div>' +
-    '<div class="bk-row"><button class="btn btn-hi" type="submit" id="bkrun">' + L('run') + '</button><label class="k-btn bk-file"><span>' + L('file') + '</span><input type="file" id="bkfile" accept=".csv,.tsv,.txt,text/csv,text/plain"></label><button class="k-btn k-btn--ghost" type="button" id="bksample">' + L('sample') + '</button><button class="k-btn k-btn--ghost" type="button" id="bkclear">' + L('clear') + '</button><span class="bk-drop">' + L('drop') + '</span></div>' +
-    '<p class="bk-status" id="bkstatus" role="status" aria-live="polite"></p></form></div></section>' +
-    '<section class="bk-sec" id="bkres" aria-labelledby="bk-h-res" hidden><div class="wrap"><h2 id="bk-h-res" tabindex="-1">' + L('h_res') + '</h2><div class="bk-stats" id="bkstats"></div><div class="bk-tools"><button class="k-btn" type="button" id="bkexp">' + L('exp') + '</button></div>' +
-    '<div class="k-table-wrap"><table class="k-table k-table--dense k-table--stack" id="bktable"><thead><tr>' + t(lang, 'j').th.map(h => '<th scope="col">' + esc(h) + '</th>').join('') + '</tr></thead><tbody></tbody></table></div><p class="bk-src" id="bkdates"></p></div></section>' +
-    '<section class="bk-sec" aria-labelledby="bk-h-how"><div class="wrap"><h2 id="bk-h-how">' + L('h_how') + '</h2><ul class="bk-how">' + t(lang, 'how').map(x => '<li>' + esc(x) + '</li>').join('') + '</ul>' +
-    '<p class="bk-src">' + L('src') + ' <a class="k-src" href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener">CC BY 4.0</a> <a class="k-src" href="/api/x/bulkix">' + L('src_a') + '</a> <a class="k-src" href="/data/web-health.json">web-health.json</a> <a class="k-src" href="' + p + '/watch/lookalikes/">lookalikes</a></p>' +
-    '<p class="bk-src">' + L('reg') + ' <a href="/bulk-check/">' + L('reg_a') + '</a></p></div></section></div>';
+  return $q.L + p + $q.M + L('tools') + $q.N + L('crumb') + $q.O + L('h1') + $q.P + L('lead') + '</p>' +
+    $q.Q + $q.a + $q.R + L($q.S) + '</b> ' + L('priv') + $q.T +
+    $q.U + L('h_in') + $q.V + L($q.W) + $q.X +
+    $q.Y + L('ph') + $q.Z +
+    $q.aa + L('run') + $q.ab + L('file') + $q.ac + L($q.ad) + $q.ae + L('clear') + $q.af + L('drop') + $q.ag +
+    $q.ah +
+    $q.ai + L('h_res') + $q.aj + L('exp') + $q.ak +
+    $q.al + t(lang, 'j').th.map(h => $q.am + esc(h) + '</th>').join('') + $q.an +
+    $q.ao + L('h_how') + $q.ap + t(lang, 'how').map(x => '<li>' + esc(x) + '</li>').join('') + '</ul>' +
+    $q.aq + L('src') + $q.ar + L('src_a') + $q.as + p + $q.at +
+    $q.aq + L('reg') + $q.au + L('reg_a') + $q.av;
 }
 const JS = `(function(){
 var D=document,T=JSON.parse(D.getElementById('kbk-t').textContent),MAX=${MAX},$=function(i){return D.getElementById(i)};
@@ -176,35 +176,35 @@ ta.addEventListener('keydown',function(e){if((e.ctrlKey||e.metaKey)&&e.key==='En
 window.KBBulk={parse:parse,matchRow:matchRow,load:load};
 })();`;
 async function assemble(shellRes, lang) {
-const path = '/tools/bulk-check/', url = ORIGIN + pre(lang) + path, title = t(lang, 'title'), desc = t(lang, 'desc');
-const alts = LANGS.map(l => '<link rel="alternate" hreflang="' + l + '" href="' + ORIGIN + pre(l) + path + '">').join('') + TB.kbx_bulkix__t.k4 + ORIGIN + path + '">';
-const ld = { '@context': 'https://schema.org', '@graph': [
-{ '@type': 'WebApplication', '@id': url + '#app', name: title, description: desc, url, inLanguage: lang, applicationCategory: 'BusinessApplication', operatingSystem: 'Any (web browser)', isAccessibleForFree: true,
-offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' }, provider: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' } },
-{ '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Kolaboro', item: ORIGIN + pre(lang) + '/' }, { '@type': 'ListItem', position: 2, name: t(lang, 'tools'), item: ORIGIN + '/tools/' }, { '@type': 'ListItem', position: 3, name: t(lang, 'crumb'), item: url }] }] };
-const tags = '<title>' + esc(title) + TB.kbx_bulkix__t.k5 + esc(desc) + '"><link rel="canonical" href="' + url + '">' + alts +
-TB.kbx_bulkix__s.k1 + esc(title) + TB.kbx_bulkix__t.k6 + esc(desc) + '"><meta property="og:url" content="' + url + '"><meta property="og:image" content="' + ORIGIN + TB.kbx_bulkix__t.k7 +
-'<script type="application/ld+json">' + JSON.stringify(ld).replace(/</g, '\\u003c') + '</script>' + TB.kbx_bulkix__s.CSS;
+const path = $q.aw, url = ORIGIN + pre(lang) + path, title = t(lang, 'title'), desc = t(lang, 'desc');
+const alts = LANGS.map(l => $q.ax + l + $q.ay + ORIGIN + pre(l) + path + '">').join('') + $t.k4 + ORIGIN + path + '">';
+const ld = { '@context': $q.az, '@graph': [
+{ '@type': $q.aA, '@id': url + '#app', name: title, description: desc, url, inLanguage: lang, applicationCategory: $q.aB, operatingSystem: $q.aC, isAccessibleForFree: true,
+offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' }, provider: { '@type': $q.aD, name: $q.aE, url: ORIGIN + '/' } },
+{ '@type': $q.aF, itemListElement: [{ '@type': $q.aG, position: 1, name: $q.aE, item: ORIGIN + pre(lang) + '/' }, { '@type': $q.aG, position: 2, name: t(lang, 'tools'), item: ORIGIN + $q.aH }, { '@type': $q.aG, position: 3, name: t(lang, 'crumb'), item: url }] }] };
+const tags = $q.aI + esc(title) + $t.k5 + esc(desc) + $q.aJ + url + '">' + alts +
+$s.k1 + esc(title) + $t.k6 + esc(desc) + $q.aK + url + $q.aL + ORIGIN + $t.k7 +
+$q.aM + JSON.stringify(ld).replace(/</g, $q.aN) + $q.aO + $s.CSS;
 const js = Object.assign({}, t(lang, 'j'), { pre: pre(lang), locale: LOC[lang] || 'en-GB' });
-const tail = TB.kbx_bulkix__t.k8 + JSON.stringify(js).replace(/</g, '\\u003c') + '</script><script>' + JS + '</script>';
+const tail = $t.k8 + JSON.stringify(js).replace(/</g, $q.aN) + $q.aP + JS + $q.aO;
 const res = new HTMLRewriter()
 .on('title', { element(e) { e.remove(); } })
-.on(TB.kbx_bulkix__s.k2, { element(e) { e.remove(); } })
-.on('script[type="application/ld+json"]', { element(e) { e.remove(); } })
+.on($s.k2, { element(e) { e.remove(); } })
+.on($q.aQ, { element(e) { e.remove(); } })
 .on('head', { element(e) { e.append(tags, { html: true }); } })
 .on('main', { element(e) { e.setInnerContent(body(lang) + tail, { html: true }); } })
-.on('details.lsw a[hreflang]', { element(e) { const l = e.getAttribute('hreflang'); if (LANGS.includes(l)) e.setAttribute('href', pre(l) + path); } })
-.transform(new Response(shellRes.body, { headers: { 'content-type': 'text/html; charset=utf-8' } }));
+.on($q.aR, { element(e) { const l = e.getAttribute($q.aS); if (LANGS.includes(l)) e.setAttribute('href', pre(l) + path); } })
+.transform(new Response(shellRes.body, { headers: { 'content-type': $q.aT } }));
 return await res.text();
 }
 export async function page(req, u, env, ctx, shell) {
   const m = u.pathname.match(/^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?tools\/bulk-check(\/?)$/); if (!m || !shell) return null;
-  if (!m[2]) return new Response(null, { status: 301, headers: { location: u.pathname + '/' + u.search, 'cache-control': 'public, max-age=86400' } });
+  if (!m[2]) return new Response(null, { status: 301, headers: { location: u.pathname + '/' + u.search, 'cache-control': $q.aU } });
   const lang = m[1] || 'en';
   try {
-    const sh = await shell(pre(lang) + '/how-we-score/');
+    const sh = await shell(pre(lang) + $q.aV);
     if (!sh || sh.status !== 200) return null;
-    return new Response(await assemble(sh, lang), { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=600' } });
+    return new Response(await assemble(sh, lang), { status: 200, headers: { 'content-type': $q.aT, 'cache-control': $q.aW } });
   } catch (e) { return null; }
 }
 export { T as BULKIX_T, JS as BULKIX_JS };

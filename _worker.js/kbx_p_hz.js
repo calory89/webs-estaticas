@@ -1,4 +1,5 @@
 // comments: _notes/kolaboro-worker-comments.txt
+const $q = TB.kbx_p_hz__q, $s = TB.kbx_p_hz__s, $t = TB.kbx_p_hz__t;   // n40 k46: short names for this module's string tables (strings in /data/i18n/k19s.json, k17s.json, k46s.json)
 import { TB } from './kbx_strings.js';
 const UA = { 'user-agent': 'KolaboroHazards/1.0 (+https://kolaboro.com/hazards/)' };
 const R = d => d * Math.PI / 180;
@@ -8,7 +9,7 @@ return 12742 * Math.asin(Math.min(1, Math.sqrt(x)));
 }
 const r1 = x => Math.round(x * 10) / 10;
 async function get(url, opt = {}, ms = 15000) {
-const ac = typeof AbortController !== 'undefined' ? new AbortController() : null;
+const ac = typeof AbortController !== $q.b ? new AbortController() : null;
 const t = ac ? setTimeout(() => ac.abort(), ms) : null;
 try {
 const r = await fetch(url, Object.assign({ headers: Object.assign({}, UA, opt.headers || {}), signal: ac && ac.signal }, opt.cf ? { cf: opt.cf } : {}, opt.method ? { method: opt.method, body: opt.body } : {}));
@@ -16,8 +17,8 @@ return r;
 } finally { if (t) clearTimeout(t); }
 }
 async function range(url, a, n, cf) {
-const r = await get(url, { headers: { range: 'bytes=' + a + '-' + (a + n - 1) }, cf });
-if (r.status === 404 || r.status === 403) { const e = new Error('missing'); e.code = r.status; throw e; }
+const r = await get(url, { headers: { range: $q.c + a + '-' + (a + n - 1) }, cf });
+if (r.status === 404 || r.status === 403) { const e = new Error($q.d); e.code = r.status; throw e; }
 if (r.status !== 206 && r.status !== 200) throw new Error('http ' + r.status);
 const b = new Uint8Array(await r.arrayBuffer());
 return r.status === 200 ? b.subarray(a, a + n) : b;
@@ -26,7 +27,7 @@ const TS = { 1: 1, 2: 1, 3: 2, 4: 4, 5: 8, 11: 4, 12: 8, 16: 8 };
 async function ifd(url, cf) {
 let head = await range(url, 0, 65536, cf);
 const le = head[0] === 0x49, dv0 = new DataView(head.buffer, head.byteOffset, head.byteLength);
-if (dv0.getUint16(2, le) !== 42) throw new Error('not a classic TIFF');
+if (dv0.getUint16(2, le) !== 42) throw new Error($q.e);
 const off = dv0.getUint32(4, le);
 let buf = head, base = 0;
 if (off + 4096 > head.length) { buf = await range(url, off, 4096, cf); base = off; }
@@ -40,7 +41,7 @@ else tags[tag] = { off: dv.getUint32(p + 8, le), typ, cnt };
 if (sz > 4) far.push(tag);
 }
 const val = async (tag, maxN) => {
-const t = tags[tag]; if (!t || typeof t !== 'object') return t;
+const t = tags[tag]; if (!t || typeof t !== $q.f) return t;
 const sz = TS[t.typ] * Math.min(t.cnt, maxN || t.cnt);
 const b = t.off + sz <= head.length ? head.subarray(t.off, t.off + sz) : await range(url, t.off, sz, cf);
 const d = new DataView(b.buffer, b.byteOffset, b.byteLength), out = [];
@@ -55,13 +56,13 @@ tw: tags[322], th: tags[323], rps: tags[278], offT: tags[324] || tags[273], cntT
 sx: scale[0], sy: scale[1], x0: tie[3], y0: tie[4], nodata };
 }
 async function arrAt(m, t, i) {
-if (typeof t === 'number') return t;
+if (typeof t === $q.g) return t;
 const p = t.off + i * 4;
 const b = p + 4 <= m.head.length ? m.head.subarray(p, p + 4) : await range(m.url, p, 4, m.cf);
 return new DataView(b.buffer, b.byteOffset, 4).getUint32(0, m.le);
 }
 async function inflate(u8) {
-const s = new Blob([u8]).stream().pipeThrough(new DecompressionStream('deflate'));
+const s = new Blob([u8]).stream().pipeThrough(new DecompressionStream($q.h));
 return new Uint8Array(await new Response(s).arrayBuffer());
 }
 function lzw(src, need) {
@@ -95,7 +96,7 @@ if (!n) return { value: null, empty: true };
 const raw = await range(m.url, o, n, m.cf);
 const rowBytes = bw * bps, need = (rr + 1) * rowBytes;
 let dec = m.comp === 1 ? raw : m.comp === 5 ? lzw(raw, need) : (m.comp === 8 || m.comp === 32946) ? await inflate(raw) : null;
-if (!dec) throw new Error('compression ' + m.comp);
+if (!dec) throw new Error($q.i + m.comp);
 const line = dec.subarray(rr * rowBytes, (rr + 1) * rowBytes);
 let bytes;
 if (m.pred === 3) {
@@ -126,46 +127,45 @@ async function meta(url, cf) {
 function demTile(lat, lng) {
 const a = Math.floor(lat), b = Math.floor(lng);
 const ns = (a < 0 ? 'S' : 'N') + String(Math.abs(a)).padStart(2, '0'), ew = (b < 0 ? 'W' : 'E') + String(Math.abs(b)).padStart(3, '0');
-const n = 'Copernicus_DSM_COG_10_' + ns + '_00_' + ew + '_00_DEM';
-return TB.kbx_p_hz__t.k0 + n + '/' + n + '.tif';
+const n = $q.j + ns + '_00_' + ew + $q.k;
+return $t.k0 + n + '/' + n + '.tif';
 }
 export async function elevation(lat, lng) {
 const url = demTile(lat, lng);
-const src = { name: TB.kbx_p_hz__t.k1, url: TB.kbx_p_hz__t.k2, license: TB.kbx_p_hz__s.k0 };
-const limits = TB.kbx_p_hz__s.k1;
+const src = { name: $t.k1, url: $t.k2, license: $s.k0 };
+const limits = $s.k1;
 try {
 const m = await meta(url, { cacheTtl: 86400 * 30, cacheEverything: true });
 const p = await pixel(m, lat, lng);
-if (p.value == null) return { ok: false, why: 'no DEM value at this point', source: src, query: url, limits };
+if (p.value == null) return { ok: false, why: $q.l, source: src, query: url, limits };
 return { ok: true, metres: r1(p.value), cell_m: 30, source: src, query: url, limits };
 } catch (e) {
-if (e.code === 404 || e.code === 403) return { ok: true, metres: null, ocean: true, note: TB.kbx_p_hz__t.k3, source: src, query: url, limits };
+if (e.code === 404 || e.code === 403) return { ok: true, metres: null, ocean: true, note: $t.k3, source: src, query: url, limits };
 return { ok: false, why: String(e.message || e).slice(0, 80), source: src, query: url, limits };
 }
 }
-const AQ = 'https://aqueduct.wridata.org/AqueductFloods20/';
 const AQF = { river: 'inunriver_historical_000000000WATCH_1980_rp00100.tif', coast: 'inuncoast_historical_nosub_hist_rp0100_0.tif' };
 export async function flood(lat, lng) {
-const src = { name: TB.kbx_p_hz__t.k4, url: TB.kbx_p_hz__t.k5, license: 'CC BY 4.0' };
-const limits = TB.kbx_p_hz__s.k2;
+const src = { name: $t.k4, url: $t.k5, license: $q.m };
+const limits = $s.k2;
 const one = async k => {
-    const url = AQ + AQF[k];
+    const url = $q.a + AQF[k];
     const m = await meta(url, { cacheTtl: 86400 * 30, cacheEverything: true });
     const p = await pixel(m, lat, lng);
     return p.value == null ? null : Math.max(0, Math.round(p.value * 100) / 100);
   };
 try {
 const [river, coast] = await Promise.all([one('river'), one('coast')]);
-return { ok: true, return_period_years: 100, river_depth_m: river, coast_depth_m: coast, cell_m: 1000, note: TB.kbx_p_hz__s.k3, source: src, query: [AQ + AQF.river, AQ + AQF.coast], limits };
-} catch (e) { return { ok: false, why: String(e.message || e).slice(0, 80), source: src, query: [AQ + AQF.river, AQ + AQF.coast], limits }; }
+return { ok: true, return_period_years: 100, river_depth_m: river, coast_depth_m: coast, cell_m: 1000, note: $s.k3, source: src, query: [$q.a + AQF.river, $q.a + AQF.coast], limits };
+} catch (e) { return { ok: false, why: String(e.message || e).slice(0, 80), source: src, query: [$q.a + AQF.river, $q.a + AQF.coast], limits }; }
 }
 export async function quakes(lat, lng, radiusKm = 100) {
-const q = TB.kbx_p_hz__s.k4 + lat.toFixed(3) + '&longitude=' + lng.toFixed(3) + '&maxradiuskm=' + radiusKm;
-const src = { name: TB.kbx_p_hz__t.k6, url: TB.kbx_p_hz__t.k7, license: 'US Government work, public domain' };
-const limits = TB.kbx_p_hz__s.k5;
+const q = $s.k4 + lat.toFixed(3) + $q.n + lng.toFixed(3) + $q.o + radiusKm;
+const src = { name: $t.k6, url: $t.k7, license: $q.p };
+const limits = $s.k5;
 try {
 const r = await get(q, { cf: { cacheTtl: 86400, cacheEverything: true } }, 20000);
-if (!r.ok) return { ok: false, why: 'USGS answered ' + r.status, source: src, query: q, limits };
+if (!r.ok) return { ok: false, why: $q.q + r.status, source: src, query: q, limits };
 const d = await r.json(), f = (d.features || []).filter(x => x && x.properties && x.geometry);
 const ev = f.map(x => ({ mag: x.properties.mag, year: new Date(x.properties.time).getUTCFullYear(), date: new Date(x.properties.time).toISOString().slice(0, 10), place: String(x.properties.place || '').slice(0, 80),
 depth_km: Math.round(x.geometry.coordinates[2]), dist_km: Math.round(km(lat, lng, x.geometry.coordinates[1], x.geometry.coordinates[0])), url: x.properties.url }));
@@ -176,12 +176,12 @@ largest: ev.slice(0, 5), nearest_m6: ev.filter(e => e.mag >= 6).sort((a, b) => a
 }
 export async function tsunami(lat, lng, radiusKm = 50) {
 const dy = radiusKm / 111, dx = radiusKm / (111 * Math.max(0.2, Math.cos(R(lat))));
-const q = TB.kbx_p_hz__t.k8 + (lat - dy).toFixed(2) + '&maxLatitude=' + (lat + dy).toFixed(2) + '&minLongitude=' + (lng - dx).toFixed(2) + '&maxLongitude=' + (lng + dx).toFixed(2);
-const src = { name: TB.kbx_p_hz__t.k9, url: TB.kbx_p_hz__t.k10, license: TB.kbx_p_hz__t.k11 };
-const limits = TB.kbx_p_hz__s.k6;
+const q = $t.k8 + (lat - dy).toFixed(2) + $q.r + (lat + dy).toFixed(2) + $q.s + (lng - dx).toFixed(2) + $q.t + (lng + dx).toFixed(2);
+const src = { name: $t.k9, url: $t.k10, license: $t.k11 };
+const limits = $s.k6;
 try {
 const r = await get(q, { cf: { cacheTtl: 86400 * 7, cacheEverything: true } }, 20000);
-if (!r.ok) return { ok: false, why: 'NOAA answered ' + r.status, source: src, query: q, limits };
+if (!r.ok) return { ok: false, why: $q.u + r.status, source: src, query: q, limits };
 const d = await r.json();
 const ev = (d.items || []).filter(x => x.latitude != null && x.longitude != null && x.doubtful !== 'y').map(x => ({ year: x.year, height_m: x.runupHt != null ? x.runupHt : null, place: String(x.locationName || '').slice(0, 60),
 dist_km: Math.round(km(lat, lng, x.latitude, x.longitude) * 10) / 10, deaths: x.deaths != null ? x.deaths : null, event: x.tsunamiEventId })).filter(x => x.dist_km <= radiusKm);
@@ -193,17 +193,17 @@ latest_year: ev.reduce((m, x) => Math.max(m, x.year || 0), 0) || null, top: ev.s
 }
 export async function volcano(lat, lng, radiusKm = 100) {
 const dy = radiusKm / 111, dx = radiusKm / (111 * Math.max(0.2, Math.cos(R(lat))));
-const q = TB.kbx_p_hz__s.k7 +
+const q = $s.k7 +
 [(lng - dx).toFixed(2), (lat - dy).toFixed(2), (lng + dx).toFixed(2), (lat + dy).toFixed(2)].join(',');
-const src = { name: TB.kbx_p_hz__t.k12, url: 'https://volcano.si.edu/', license: TB.kbx_p_hz__t.k13 };
-const limits = TB.kbx_p_hz__s.k8;
+const src = { name: $t.k12, url: $q.v, license: $t.k13 };
+const limits = $s.k8;
 try {
 const r = await get(q, { cf: { cacheTtl: 86400 * 7, cacheEverything: true } }, 20000);
-if (!r.ok) return { ok: false, why: 'GVP answered ' + r.status, source: src, query: q, limits };
+if (!r.ok) return { ok: false, why: $q.w + r.status, source: src, query: q, limits };
 const d = await r.json();
 const v = (d.features || []).map(f => ({ name: f.properties.Volcano_Name, number: f.properties.Volcano_Number, last_eruption_year: f.properties.Last_Eruption_Year != null ? f.properties.Last_Eruption_Year : null,
 type: f.properties.Primary_Volcano_Type || null, dist_km: Math.round(km(lat, lng, f.geometry.coordinates[1], f.geometry.coordinates[0]) * 10) / 10,
-url: TB.kbx_p_hz__t.k14 + f.properties.Volcano_Number })).filter(x => x.dist_km <= radiusKm).sort((a, b) => a.dist_km - b.dist_km);
+url: $t.k14 + f.properties.Volcano_Number })).filter(x => x.dist_km <= radiusKm).sort((a, b) => a.dist_km - b.dist_km);
 return { ok: true, radius_km: radiusKm, count: v.length, nearest: v.slice(0, 4), source: src, query: q, limits };
 } catch (e) { return { ok: false, why: String(e.message || e).slice(0, 80), source: src, query: q, limits }; }
 }
@@ -215,15 +215,15 @@ let t = L ? -(ax * dx + ay * dy) / L : 0; t = Math.max(0, Math.min(1, t));
 return Math.hypot(ax + t * dx, ay + t * dy);
 }
 export async function coast(lat, lng, radiusKm = 10, opt = {}) {
-const ql = '[out:json][timeout:18];way(around:' + radiusKm * 1000 + ',' + lat.toFixed(5) + ',' + lng.toFixed(5) + ')[natural=coastline];out geom;';
-const src = { name: TB.kbx_p_hz__t.k15, url: TB.kbx_p_hz__t.k16, license: 'ODbL, (c) OpenStreetMap contributors' };
-const limits = TB.kbx_p_hz__s.k9;
-const query = 'https://overpass-turbo.eu/?Q=' + encodeURIComponent(ql) + '&R';
+const ql = $q.x + radiusKm * 1000 + ',' + lat.toFixed(5) + ',' + lng.toFixed(5) + $q.y;
+const src = { name: $t.k15, url: $t.k16, license: $q.z };
+const limits = $s.k9;
+const query = $q.A + encodeURIComponent(ql) + '&R';
 const one = async ep => {   // both public servers are asked at once; the first valid answer wins (one is often slow)
-    const r = await get(ep, { method: 'POST', body: 'data=' + encodeURIComponent(ql), headers: { 'content-type': 'application/x-www-form-urlencoded' } }, opt.overpassMs || 9000);
-    if (!r.ok) throw new Error('Overpass answered ' + r.status);
+    const r = await get(ep, { method: 'POST', body: 'data=' + encodeURIComponent(ql), headers: { 'content-type': $q.B } }, opt.overpassMs || 9000);
+    if (!r.ok) throw new Error($q.C + r.status);
     const d = await r.json();
-    if (d.remark && /error|timed out/i.test(d.remark)) throw new Error('Overpass: ' + String(d.remark).slice(0, 60));
+    if (d.remark && /error|timed out/i.test(d.remark)) throw new Error($q.D + String(d.remark).slice(0, 60));
     let best = Infinity;
     for (const w of d.elements || []) { const g = w.geometry || []; for (let i = 1; i < g.length; i++) best = Math.min(best, segKm(lat, lng, g[i - 1], g[i])); }
     return { best, ep };
@@ -231,30 +231,30 @@ const one = async ep => {   // both public servers are asked at once; the first 
 let lastErr = '';
 const ne = neCoast(lat, lng, radiusKm, opt).catch(e => ({ ok: false, why: String(e.message || e).slice(0, 60) }));
 try {
-const { best, ep } = await Promise.any(TB.kbx_p_hz__t.o_OVERPASS.map(one));
+const { best, ep } = await Promise.any($t.o_OVERPASS.map(one));
 if (best === Infinity) return { ok: true, within_km: radiusKm, distance_m: null, beyond: true, source: src, query, limits };
 return { ok: true, within_km: radiusKm, distance_m: best < 1 ? Math.round(best * 1000 / 10) * 10 : Math.round(best * 1000 / 50) * 50, source: src, query, limits, endpoint: ep.replace(/\/api\/interpreter$/, '') };
 } catch (e) { lastErr = e && e.errors ? e.errors.map(x => String(x.message || x).slice(0, 50)).join('; ') : String(e.message || e).slice(0, 80); }
 const f = await ne;
-if (f.ok) { f.osm_failed = lastErr || 'no Overpass server answered'; return f; }
-return { ok: false, why: (lastErr || 'no Overpass server answered') + '; fallback: ' + f.why, source: src, limits };
+if (f.ok) { f.osm_failed = lastErr || $q.E; return f; }
+return { ok: false, why: (lastErr || $q.E) + $q.F + f.why, source: src, limits };
 }
 async function neCoast(lat, lng, radiusKm, opt) {
 const tx = Math.floor((lng + 180) / 10) * 10 - 180, ty = Math.floor((lat + 90) / 10) * 10 - 90;
-const path = '/data/coast/' + tx + '.json';
-const query = 'https://kolaboro.com' + path;
+const path = $q.G + tx + '.json';
+const query = $q.H + path;
 const r = opt.asset ? await opt.asset(path) : await get(query, { cf: { cacheTtl: 86400 * 30, cacheEverything: true } }, 8000);
-if (!r.ok) throw new Error('outline tile ' + r.status);
+if (!r.ok) throw new Error($q.I + r.status);
 const c = await r.json(), [sx, sy] = c.s, [ox, oy] = c.t, d = { l: (c.tiles || {})[String(ty)] };
-if (!d.l) throw new Error('outline tile missing ' + tx + ' ' + ty);
+if (!d.l) throw new Error($q.J + tx + ' ' + ty);
 let best = Infinity;
 for (const e of d.l) {
 let x = e[0], y = e[1], prev = { lon: ox + x * sx, lat: oy + y * sy };
 for (let i = 2; i < e.length; i += 2) { x += e[i]; y += e[i + 1]; const cur = { lon: ox + x * sx, lat: oy + y * sy }; best = Math.min(best, segKm(lat, lng, prev, cur)); prev = cur; }
 }
-if (!(best <= radiusKm)) return { ok: true, approx: true, within_km: radiusKm, distance_m: null, beyond: true, source: TB.kbx_p_hz__t.o_NE_SRC, query, limits: TB.kbx_p_hz__s.NE_LIMITS };
-return best < 1 ? { ok: true, approx: true, within_km: radiusKm, distance_m: null, under_m: 1000, source: TB.kbx_p_hz__t.o_NE_SRC, query, limits: TB.kbx_p_hz__s.NE_LIMITS }
-: { ok: true, approx: true, within_km: radiusKm, distance_m: Math.round(best * 2) * 500, source: TB.kbx_p_hz__t.o_NE_SRC, query, limits: TB.kbx_p_hz__s.NE_LIMITS };
+if (!(best <= radiusKm)) return { ok: true, approx: true, within_km: radiusKm, distance_m: null, beyond: true, source: $t.o_NE_SRC, query, limits: $s.NE_LIMITS };
+return best < 1 ? { ok: true, approx: true, within_km: radiusKm, distance_m: null, under_m: 1000, source: $t.o_NE_SRC, query, limits: $s.NE_LIMITS }
+: { ok: true, approx: true, within_km: radiusKm, distance_m: Math.round(best * 2) * 500, source: $t.o_NE_SRC, query, limits: $s.NE_LIMITS };
 }
 export const SOURCES = ['elevation', 'flood', 'quakes', 'tsunami', 'volcano', 'coast'];
 export async function all(lat, lng, opt = {}) {

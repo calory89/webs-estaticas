@@ -1,11 +1,12 @@
 // comments: _notes/kolaboro-worker-comments.txt
+const $q = TB.kbx_follow__q, $s = TB.kbx_follow__s, $t = TB.kbx_follow__t;   // n40 k46: short names for this module's string tables (strings in /data/i18n/k19s.json, k17s.json, k46s.json)
 import { t26 } from './kbx_u26.js';
 import { aliasesFor } from './kbx_n31c.js';
 import { E as E27 } from './kbx_e27_i18n.js';
 import { TB } from './kbx_strings.js';
 const ORIGIN = 'https://kolaboro.com';
 const LANGS9 = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
-const esc = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const esc = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': $q.a, "'": '&#39;' }[c]));
 const pre = lang => lang === 'en' ? '' : '/' + lang;
 const S = {
 en: { w_h: 'Watch this project', w_txt: 'One email when what is published about {n} changes: handover date, prices, documents or register results.', w_btn: 'Watch this project', w_as: 'Email: {e}', w_change: 'Use another email', w_email: 'Your email', w_go: 'Watch',
@@ -50,24 +51,24 @@ const SV = {"en": ["Save to my list", "Saved to my list", "Saved to your list an
 for (const [l, v] of Object.entries(SV)) if (S[l]) ['s_btn', 's_on', 's_acct', 's_local', 's_off', 's_dash', 's_list'].forEach((k, i) => { S[l][k] = v[i]; });
 const t9 = (lang, k, v) => { const s = (S[lang] && S[lang][k]) || S.en[k]; return v ? s.replace(/\{(\w+)\}/g, (m, x) => v[x] != null ? v[x] : m) : s; };
 export function feedLinks(lang, path, name) {
-return '<p class="kfeeds"><span>' + esc(t9(lang, 'f_lbl')) + '</span> <a href="' + esc(path) + TB.kbx_follow__t.k0 + esc(name) + ' (Atom)">Atom</a> <a href="' + esc(path) + TB.kbx_follow__t.k1 + esc(name) + TB.kbx_follow__t.k2 + esc(path.replace(/\/$/, '')) + '" type="application/json">API</a></p>';
+return $q.b + esc(t9(lang, 'f_lbl')) + $q.c + esc(path) + $t.k0 + esc(name) + $q.d + esc(path) + $t.k1 + esc(name) + $t.k2 + esc(path.replace(/\/$/, '')) + $q.e;
 }
 export function watchBox(lang, id, name, path, snap) {
-const m = { id, ok: t9(lang, 'w_ok', { n: name }), sent: t9(lang, 'w_sent', { e: '%E%' }), bad: t9(lang, 'w_bad'), err: t9(lang, 'w_err'), busy: t9(lang, 'w_busy'), as: t9(lang, 'w_as', { e: '%E%' }) };
-if (snap) Object.assign(m, { snap, s_btn: t9(lang, 's_btn'), s_on: t9(lang, 's_on'), s_acct: t9(lang, 's_acct'), s_local: t9(lang, 's_local'), s_off: t9(lang, 's_off'), s_dash: t9(lang, 's_dash'), s_list: t9(lang, 's_list') });
-return TB.kbx_follow__t.k3 + esc(JSON.stringify(m)) + '"><div class="kw-t"><b>' + esc(t9(lang, 'w_h')) + '</b><p>' + esc(t9(lang, 'w_txt', { n: name })) + '</p></div>' +
-TB.kbx_follow__t.k4 + esc(t9(lang, 'w_btn')) + '</button>' +
-TB.kbx_follow__s.k0 + esc(t9(lang, 'w_change')) + '</button></p>' +
-TB.kbx_follow__t.k5 + esc(t9(lang, 'w_email')) + TB.kbx_follow__s.k1 +
-TB.kbx_follow__s.k2 + esc(t9(lang, 'w_go')) + '</button></div></form>' +
-TB.kbx_follow__t.k6 + (path.indexOf('/projects/') === 0 ? '<p class="kw-rp">' + esc((H28[lang] || H28.en).of.replace('{n}', name)) + ' <a href="' + pre(lang) + esc(path) + 'report/" data-kw-rp hidden>' + esc((E27[lang] || E27.en).of_dl) + '</a></p>' : '') + '<p class="kw-n">' + esc(t9(lang, 'w_note')) + '</p>' +
-(snap ? TB.kbx_follow__s.k3 + esc(t9(lang, 's_btn')) + TB.kbx_follow__t.k7 : '') + '</div>' + feedLinks(lang, path, name) + '</div>';
+const m = { id, ok: t9(lang, 'w_ok', { n: name }), sent: t9(lang, $q.f, { e: '%E%' }), bad: t9(lang, 'w_bad'), err: t9(lang, 'w_err'), busy: t9(lang, $q.g), as: t9(lang, 'w_as', { e: '%E%' }) };
+if (snap) Object.assign(m, { snap, s_btn: t9(lang, 's_btn'), s_on: t9(lang, 's_on'), s_acct: t9(lang, $q.h), s_local: t9(lang, $q.i), s_off: t9(lang, 's_off'), s_dash: t9(lang, $q.j), s_list: t9(lang, $q.k) });
+return $t.k3 + esc(JSON.stringify(m)) + $q.l + esc(t9(lang, 'w_h')) + $q.m + esc(t9(lang, 'w_txt', { n: name })) + $q.n +
+$t.k4 + esc(t9(lang, 'w_btn')) + $q.o +
+$s.k0 + esc(t9(lang, $q.p)) + $q.q +
+$t.k5 + esc(t9(lang, $q.r)) + $s.k1 +
+$s.k2 + esc(t9(lang, 'w_go')) + $q.s +
+$t.k6 + (path.indexOf($q.t) === 0 ? $q.u + esc((H28[lang] || H28.en).of.replace('{n}', name)) + $q.v + pre(lang) + esc(path) + $q.w + esc((E27[lang] || E27.en).of_dl) + $q.x : '') + $q.y + esc(t9(lang, $q.z)) + '</p>' +
+(snap ? $s.k3 + esc(t9(lang, 's_btn')) + $t.k7 : '') + $q.A + feedLinks(lang, path, name) + $q.A;
 }
 export const nf28 = (lang, n) => { try { return Number(n).toLocaleString({ zh: 'zh-CN', ar: 'ar' }[lang] || lang, { numberingSystem: 'latn' }); } catch (e) { return String(n); } };
 export function searchBox(lang, np, nd) {
-const m = { pre: pre(lang), none: t9(lang, 'sx_none', { q: '%Q%' }), chk: t9(lang, 'sx_chk'), dev: t9(lang, 'sx_dev'), k: t9(lang, 'sx_k', { k: '%K%' }), k1: t9(lang, 'sx_k1'), res: t9(lang, 'sx_res', { k: '%K%' }), res1: t9(lang, 'sx_res1'), cnt: t9(lang, 'sx_cnt', { p: nf28(lang, np), d: nf28(lang, nd) }) };
-return TB.kbx_follow__t.k8 + esc(JSON.stringify(m)) + '"><label for="kx-q">' + esc(t9(lang, 'sx_lbl')) + TB.kbx_follow__t.k9 + esc(t9(lang, 'sx_ph')) + TB.kbx_follow__t.k10 +
-TB.kbx_follow__t.k11 + esc(m.cnt) + TB.kbx_follow__t.k12;
+const m = { pre: pre(lang), none: t9(lang, $q.B, { q: '%Q%' }), chk: t9(lang, $q.C), dev: t9(lang, $q.D), k: t9(lang, 'sx_k', { k: '%K%' }), k1: t9(lang, 'sx_k1'), res: t9(lang, $q.E, { k: '%K%' }), res1: t9(lang, $q.F), cnt: t9(lang, $q.G, { p: nf28(lang, np), d: nf28(lang, nd) }) };
+return $t.k8 + esc(JSON.stringify(m)) + $q.H + esc(t9(lang, $q.I)) + $t.k9 + esc(t9(lang, 'sx_ph')) + $t.k10 +
+$t.k11 + esc(m.cnt) + $t.k12;
 }
 export const W9CSS = '';
 export const W9JS = "(function(){function ls(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v);}catch(e){return null;}}" +
@@ -104,45 +105,45 @@ export const W9JS = "(function(){function ls(k,v){try{if(v===undefined)return lo
 export const PATHS9 = /^\/api\/v1\/(?:projects|developers)(?:\/[a-z0-9-]{1,90})?\/?$|^\/api\/v1\/(?:search-index|watch)$|^\/(?:projects|developers)\/[a-z0-9-]{1,90}\/feed\.(?:atom|json)$/;
 const RL = new Map();
 async function rate(req, ctx, bucket, max) {   // per IP per minute: in-isolate count plus a shared count in the colo cache (same as kbx_e.js)
-  const ip = req.headers.get('cf-connecting-ip') || 'unknown', min = Math.floor(Date.now() / 60000), k = bucket + '|' + ip + '|' + min;
+  const ip = req.headers.get($q.J) || $q.K, min = Math.floor(Date.now() / 60000), k = bucket + '|' + ip + '|' + min;
   const local = (RL.get(k) || 0) + 1; RL.set(k, local);
   if (RL.size > 5000) for (const key of RL.keys()) if (!key.endsWith('|' + min)) RL.delete(key);
-  let shared = 0; const ck = new Request(ORIGIN + '/__rl-b9/' + bucket + '/' + encodeURIComponent(ip) + '/' + min);
+  let shared = 0; const ck = new Request(ORIGIN + $q.L + bucket + '/' + encodeURIComponent(ip) + '/' + min);
   try { const hit = await caches.default.match(ck); if (hit) shared = +(await hit.text()) || 0; } catch (e) {}
   const n = Math.max(local, shared + 1);
-  try { const p = caches.default.put(ck, new Response(String(n), { headers: { 'cache-control': 'max-age=120' } })); if (ctx && ctx.waitUntil) ctx.waitUntil(p.catch(() => {})); } catch (e) {}
+  try { const p = caches.default.put(ck, new Response(String(n), { headers: { 'cache-control': $q.M } })); if (ctx && ctx.waitUntil) ctx.waitUntil(p.catch(() => {})); } catch (e) {}
   return { ok: n <= max, remaining: Math.max(0, max - n), retry: 60 - Math.floor(Date.now() / 1000) % 60 };
 }
 const CORS = { 'access-control-allow-origin': '*', 'access-control-allow-methods': 'GET, HEAD, OPTIONS', 'access-control-allow-headers': 'if-none-match, accept', 'access-control-expose-headers': 'etag, ratelimit, ratelimit-policy, x-ratelimit-limit, x-ratelimit-remaining, retry-after, last-modified', 'access-control-max-age': '86400' };
-async function sha16(s) { const d = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(s)); return [...new Uint8Array(d)].slice(0, 16).map(b => b.toString(16).padStart(2, '0')).join(''); }
+async function sha16(s) { const d = await crypto.subtle.digest($q.N, new TextEncoder().encode(s)); return [...new Uint8Array(d)].slice(0, 16).map(b => b.toString(16).padStart(2, '0')).join(''); }
 async function out(req, body, type, extra, maxAge) {   // body + strong ETag; 304 when If-None-Match matches
   const etag = '"' + await sha16(body) + '"';
-  const h = Object.assign({ 'content-type': type, etag, 'cache-control': 'public, max-age=' + (maxAge || 300) + ', stale-while-revalidate=600', vary: 'accept-encoding', 'x-content-type-options': 'nosniff' }, CORS, extra || {});
-  const inm = req.headers.get('if-none-match') || '';
+  const h = Object.assign({ 'content-type': type, etag, 'cache-control': $q.O + (maxAge || 300) + $q.P, vary: $q.Q, 'x-content-type-options': $q.R }, CORS, extra || {});
+  const inm = req.headers.get($q.S) || '';
   if (inm && inm.split(',').map(s => s.trim().replace(/^W\//, '')).includes(etag)) return new Response(null, { status: 304, headers: h });
   return new Response(req.method === 'HEAD' ? null : body, { status: 200, headers: h });
 }
-const jerr = (o, s, extra) => new Response(JSON.stringify(o), { status: s, headers: Object.assign({ 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' }, CORS, extra || {}) });
+const jerr = (o, s, extra) => new Response(JSON.stringify(o), { status: s, headers: Object.assign({ 'content-type': $q.T, 'cache-control': $q.U }, CORS, extra || {}) });
 const JT = 'application/json; charset=utf-8';
 export async function handle(req, u, env, ctx) {
 const p = u.pathname;
 if (!PATHS9.test(p)) return null;
-if (p === '/api/v1/watch') return watch(req, u, env, ctx);
+if (p === $q.V) return watch(req, u, env, ctx);
 if (/^\/api\/v1\/projects\/check\/?$/.test(p)) return null;
-if (req.method === 'OPTIONS') return new Response(null, { status: 204, headers: CORS });
+if (req.method === $q.W) return new Response(null, { status: 204, headers: CORS });
 if (req.method !== 'GET' && req.method !== 'HEAD') return null;
 const N = await import('./kbx_named.js');
-let ix; try { ix = await N.data(env); } catch (e) { return jerr({ error: 'data_unavailable' }, 503); }
+let ix; try { ix = await N.data(env); } catch (e) { return jerr({ error: $q.X }, 503); }
 const fm = p.match(/^\/(projects|developers)\/([a-z0-9-]{1,90})\/feed\.(atom|json)$/);
 if (fm) return feed(req, N, ix, fm[1], fm[2], fm[3]);
-const rl = await rate(req, ctx, 'api9', 120), rh = { 'x-ratelimit-limit': '120;w=60', 'x-ratelimit-remaining': String(rl.remaining), 'ratelimit-policy': '"ip";q=120;w=60', ratelimit: '"ip";r=' + rl.remaining + ';t=' + rl.retry };
-if (!rl.ok) return jerr({ error: 'rate_limited', limit_per_minute: 120, retry_after_s: rl.retry }, 429, Object.assign(rh, { 'retry-after': String(rl.retry) }));
-if (p === '/api/v1/search-index' && u.searchParams.get('f') === 'ids') { const ids = {}; for (const [id, x] of ix.byId) if (x && x.s) ids[id] = x.s; return out(req, JSON.stringify({ version: 'named-ids-1', ids }), JT, rh, 3600); }
-if (p === '/api/v1/search-index') return out(req, JSON.stringify(searchIndex(N, ix)), JT, rh, 900);
+const rl = await rate(req, ctx, 'api9', 120), rh = { 'x-ratelimit-limit': $q.Y, 'x-ratelimit-remaining': String(rl.remaining), 'ratelimit-policy': $q.Z, ratelimit: $q.aa + rl.remaining + ';t=' + rl.retry };
+if (!rl.ok) return jerr({ error: $q.ab, limit_per_minute: 120, retry_after_s: rl.retry }, 429, Object.assign(rh, { 'retry-after': String(rl.retry) }));
+if (p === $q.ac && u.searchParams.get('f') === 'ids') { const ids = {}; for (const [id, x] of ix.byId) if (x && x.s) ids[id] = x.s; return out(req, JSON.stringify({ version: $q.ad, ids }), JT, rh, 3600); }
+if (p === $q.ac) return out(req, JSON.stringify(searchIndex(N, ix)), JT, rh, 900);
 const m = p.match(/^\/api\/v1\/(projects|developers)(?:\/([a-z0-9-]{1,90}))?\/?$/);
-if (!m[2]) return out(req, JSON.stringify(m[1] === 'projects' ? listProjects(N, ix) : listDevelopers(N, ix)), JT, rh, 900);
-if (m[1] === 'projects') { const x = ix.bySlug.get(m[2]); if (!x) return jerr({ error: 'not_found', note: 'No named project at this slug. List: ' + ORIGIN + '/api/v1/projects' }, 404, rh); return out(req, JSON.stringify(projectJson(N, ix, x)), JT, rh); }
-const dv = ix.devs.get(m[2]); if (!dv) return jerr({ error: 'not_found', note: 'No developer at this slug. List: ' + ORIGIN + '/api/v1/developers' }, 404, rh);
+if (!m[2]) return out(req, JSON.stringify(m[1] === $q.ae ? listProjects(N, ix) : listDevelopers(N, ix)), JT, rh, 900);
+if (m[1] === $q.ae) { const x = ix.bySlug.get(m[2]); if (!x) return jerr({ error: $q.af, note: $q.ag + ORIGIN + $q.ah }, 404, rh); return out(req, JSON.stringify(projectJson(N, ix, x)), JT, rh); }
+const dv = ix.devs.get(m[2]); if (!dv) return jerr({ error: $q.af, note: $q.ai + ORIGIN + $q.aj }, 404, rh);
 return out(req, JSON.stringify(developerJson(N, ix, dv)), JT, rh);
 }
 let SXI = null;
@@ -150,110 +151,110 @@ function searchIndex(N, ix) {
 if (SXI && SXI.ix === ix) return SXI.v;
 const p = ix.P.map(x => [x.s, x.n, x.id, x.dv || '', x.dvs && ix.devs.has(x.dvs) ? x.dvs : '', x.mk || '', x.co || '', x.ar && x.ar !== x.mk ? x.ar : '']);
 const d = [...ix.devs.values()].map(v => [v.s, v.n, v.ids.length, [...new Set(v.ids.map(i => (ix.byId.get(i) || {}).mk).filter(Boolean))].slice(0, 4).join(', ')]);
-const v = { version: 'named-search-1', updated: ix.updated, counts: { projects: p.length, developers: d.length }, fields: { p: ['slug', 'name', 'id', 'developer', 'developer_slug', 'market', 'country', 'area'], d: ['slug', 'name', 'projects', 'markets'] },
-urls: { project: ORIGIN + TB.kbx_follow__t.k13, developer: ORIGIN + '/{lang}/developers/{slug}/' }, p, d };
+const v = { version: $q.ak, updated: ix.updated, counts: { projects: p.length, developers: d.length }, fields: { p: ['slug', 'name', 'id', $q.al, $q.am, $q.an, $q.ao, 'area'], d: ['slug', 'name', $q.ae, $q.ap] },
+urls: { project: ORIGIN + $t.k13, developer: ORIGIN + $q.aq }, p, d };
 SXI = { ix, v }; return v;
 }
 const LANG_URL = (kind, s) => Object.fromEntries(LANGS9.map(l => [l, ORIGIN + pre(l) + '/' + kind + '/' + s + '/']));
 function projectJson(N, ix, x) {
 const c = ix.caseBy.get(x.id) || {}, rvd = N.reviewed(c), page = N.okHttp(x.url) ? N.fixU(x.url) : null, ho = N.handoverOf(ix, x);
-const fx = {}; for (const k of TB.kbx_follow__t.o_FX_KEYS) { const v = (x.fx || {})[k]; if (v != null && v !== '' && (typeof v !== 'string' || N.cleanOk(v))) fx[k] = v; }
-const prom = (ix.prom[x.id] || []).map(q => ({ kind: q.k, date: q.d, status: q.st, times_moved: q.mv || 0, months_moved: q.mm || 0, source: q.src === 'page' ? 'developer page' : 'research', first_seen: (q.hist && q.hist[0] && q.hist[0].seen) || q.seen, last_seen: q.seen, page_sha256: q.sha || null,
+const fx = {}; for (const k of $t.o_FX_KEYS) { const v = (x.fx || {})[k]; if (v != null && v !== '' && (typeof v !== $q.ar || N.cleanOk(v))) fx[k] = v; }
+const prom = (ix.prom[x.id] || []).map(q => ({ kind: q.k, date: q.d, status: q.st, times_moved: q.mv || 0, months_moved: q.mm || 0, source: q.src === 'page' ? $q.as : $q.at, first_seen: (q.hist && q.hist[0] && q.hist[0].seen) || q.seen, last_seen: q.seen, page_sha256: q.sha || null,
 history: (q.hist || []).map(h => ({ date: h.d, seen: h.seen })) }));
 const reg = x.rw || c.register || null;
 const srcs = [...new Set([page, N.okHttp(x.du) ? N.fixU(x.du) : null, ...(x.src || []).filter(N.okHttp).map(N.fixU), ...(x.fl || []).map(f => f[1]).filter(N.okHttp)].filter(Boolean))];
 return {
-api: 'kolaboro-named-v1', license: TB.kbx_follow__t.k14, rules: TB.kbx_follow__s.k4,
-id: x.id, slug: x.s, name: x.n, developer: x.dv ? { name: x.dv, slug: x.dvs && ix.devs.has(x.dvs) ? x.dvs : null, url: x.dvs && ix.devs.has(x.dvs) ? ORIGIN + '/developers/' + x.dvs + '/' : null, api: x.dvs && ix.devs.has(x.dvs) ? ORIGIN + '/api/v1/developers/' + x.dvs : null } : null,
+api: $q.au, license: $t.k14, rules: $s.k4,
+id: x.id, slug: x.s, name: x.n, developer: x.dv ? { name: x.dv, slug: x.dvs && ix.devs.has(x.dvs) ? x.dvs : null, url: x.dvs && ix.devs.has(x.dvs) ? ORIGIN + $q.av + x.dvs + '/' : null, api: x.dvs && ix.devs.has(x.dvs) ? ORIGIN + $q.aw + x.dvs : null } : null,
 location: { area: x.ar || null, market: x.mk, country: x.co }, stage: c.stage || x.st || null, site_status: x.sts || null,
 reviewed: rvd, added: x.ad || null, last_checked: N.lastmod(ix, x),
 published_page: page ? { url: page, host: N.host(page), is_listing_portal: N.isListing(page) } : null,
-permit: { number: x.pn || null, source: x.pn ? ((N.okHttp(x.du) ? N.fixU(x.du) : null) || page) : null, note: x.pn ? null : 'not published' },
+permit: { number: x.pn || null, source: x.pn ? ((N.okHttp(x.du) ? N.fixU(x.du) : null) || page) : null, note: x.pn ? null : $q.ax },
 handover: ho ? { date: ho.d, source: page } : null, overdue_months: c.overdue || null,
 promises: prom, published_facts: fx, published_statements: (x.dl || []).filter(N.cleanOk), facts_source: page,
 change_history: (c.history || []).map(h => ({ date: h.d, field: h.f, from: h.from, to: h.to, source: page })),
 hourly_findings: (((ix.find[x.id] || {}).f) || []).slice(0, 20).filter(f => N.cleanOk(f.text)).map(f => ({ at: f.at, text: f.text, page_sha256_prefix: f.fp || null })),
-sealed_copy: x.sha || (c.fp || {}).sha256 ? { date: x.sealed || (c.fp || {}).date || null, sha256: x.sha || (c.fp || {}).sha256, verify: ORIGIN + '/verify' } : null,
-register: reg ? { register: reg.register, item: reg.item, status: reg.status, detail: reg.detail || null, checked: reg.checked, how: ORIGIN + '/registers/' } : null,
+sealed_copy: x.sha || (c.fp || {}).sha256 ? { date: x.sealed || (c.fp || {}).date || null, sha256: x.sha || (c.fp || {}).sha256, verify: ORIGIN + $q.ay } : null,
+register: reg ? { register: reg.register, item: reg.item, status: reg.status, detail: reg.detail || null, checked: reg.checked, how: ORIGIN + $q.az } : null,
 public_reports: (x.fl || []).filter(f => N.okHttp(f[1])).map(f => ({ kind: f[0], url: f[1] })),
-review: rvd ? { score: c.score, max: c.max, verified_score: c.vscore || 0, checks: c.checks || null, verification: c.verified || null, claims: c.claims || null, method: ORIGIN + '/how-we-score' } : null,
+review: rvd ? { score: c.score, max: c.max, verified_score: c.vscore || 0, checks: c.checks || null, verification: c.verified || null, claims: c.claims || null, method: ORIGIN + $q.aA } : null,
 sources: srcs,
-urls: { page: ORIGIN + '/projects/' + x.s + '/', pages: LANG_URL('projects', x.s), feed_atom: ORIGIN + '/projects/' + x.s + '/feed.atom', feed_json: ORIGIN + '/projects/' + x.s + '/feed.json', record: ORIGIN + '/api/open/projects/' + encodeURIComponent(x.id),
-watch: ORIGIN + '/projects/' + x.s + '/#watch', reply: ORIGIN + '/developers/reply/?id=' + encodeURIComponent(x.id), corrections: ORIGIN + '/corrections?id=' + encodeURIComponent(x.id) }
+urls: { page: ORIGIN + $q.t + x.s + '/', pages: LANG_URL($q.ae, x.s), feed_atom: ORIGIN + $q.t + x.s + $q.aB, feed_json: ORIGIN + $q.t + x.s + $q.aC, record: ORIGIN + $q.aD + encodeURIComponent(x.id),
+watch: ORIGIN + $q.t + x.s + $q.aE, reply: ORIGIN + $q.aF + encodeURIComponent(x.id), corrections: ORIGIN + $q.aG + encodeURIComponent(x.id) }
 };
 }
 function developerJson(N, ix, dv) {
 const L = dv.ids.map(i => ix.byId.get(i)).filter(Boolean), lm = L.map(x => N.lastmod(ix, x)).sort();
-return { api: 'kolaboro-named-v1', license: TB.kbx_follow__t.k15, rules: TB.kbx_follow__t.k16,
+return { api: $q.au, license: $t.k15, rules: $t.k16,
 slug: dv.s, id: dv.s, aliases: aliasesFor(dv.s), names_as_published: [...new Set(L.map(x => x.dv).filter(Boolean))], last_checked: lm[lm.length - 1] || null, markets: [...new Set(L.map(x => x.mk))],
-projects: L.map(x => { const c = ix.caseBy.get(x.id) || {}, ho = N.handoverOf(ix, x); return { id: x.id, slug: x.s, name: x.n, market: x.mk, country: x.co, stage: c.stage || x.st || null, handover: ho ? ho.d : null, permit_number_published: !!x.pn, reviewed: N.reviewed(c), api: ORIGIN + '/api/v1/projects/' + x.s, page: ORIGIN + '/projects/' + x.s + '/' }; }),
-urls: { page: ORIGIN + '/developers/' + dv.s + '/', pages: LANG_URL('developers', dv.s), feed_atom: ORIGIN + '/developers/' + dv.s + '/feed.atom', feed_json: ORIGIN + '/developers/' + dv.s + '/feed.json' } };
+projects: L.map(x => { const c = ix.caseBy.get(x.id) || {}, ho = N.handoverOf(ix, x); return { id: x.id, slug: x.s, name: x.n, market: x.mk, country: x.co, stage: c.stage || x.st || null, handover: ho ? ho.d : null, permit_number_published: !!x.pn, reviewed: N.reviewed(c), api: ORIGIN + $q.aH + x.s, page: ORIGIN + $q.t + x.s + '/' }; }),
+urls: { page: ORIGIN + $q.av + dv.s + '/', pages: LANG_URL($q.aI, dv.s), feed_atom: ORIGIN + $q.av + dv.s + $q.aB, feed_json: ORIGIN + $q.av + dv.s + $q.aC } };
 }
-function listProjects(N, ix) { return { api: 'kolaboro-named-v1', updated: ix.updated, count: ix.P.length, projects: ix.P.map(x => ({ slug: x.s, id: x.id, name: x.n, market: x.mk, api: ORIGIN + '/api/v1/projects/' + x.s })) }; }
-function listDevelopers(N, ix) { return { api: 'kolaboro-named-v1', updated: ix.updated, count: ix.devs.size, developers: [...ix.devs.values()].map(v => ({ slug: v.s, name: v.n, aliases: aliasesFor(v.s), projects: v.ids.length, api: ORIGIN + '/api/v1/developers/' + v.s })) }; }
+function listProjects(N, ix) { return { api: $q.au, updated: ix.updated, count: ix.P.length, projects: ix.P.map(x => ({ slug: x.s, id: x.id, name: x.n, market: x.mk, api: ORIGIN + $q.aH + x.s })) }; }
+function listDevelopers(N, ix) { return { api: $q.au, updated: ix.updated, count: ix.devs.size, developers: [...ix.devs.values()].map(v => ({ slug: v.s, name: v.n, aliases: aliasesFor(v.s), projects: v.ids.length, api: ORIGIN + $q.aw + v.s })) }; }
 export function events(N, ix, x) {
-const c = ix.caseBy.get(x.id) || {}, page = N.okHttp(x.url) ? N.fixU(x.url) : null, E = [], base = ORIGIN + '/projects/' + x.s + '/';
-const add = (d, key, title, text, src, anchor) => { const i = N.iso(d); if (!i || !N.cleanOk(title) || (text && !N.cleanOk(text))) return; let dt = i + 'T00:00:00Z'; if (/T\d/.test(String(d))) { const z = new Date(d); if (!isNaN(z)) dt = z.toISOString().replace(/\.\d{3}Z$/, 'Z'); } E.push({ d: dt, key: x.id + '/' + key, title, text: text || title, src: src || page, url: base + (anchor ? '#' + anchor : '') }); };
-if (x.ad) add(x.ad, 'added', 'Added to the projects Kolaboro tracks', 'Kolaboro started tracking ' + x.n + ' (' + [x.ar, x.mk, x.co].filter(Boolean).join(', ').split(', ').filter((v, i, a) => a.findIndex(w => w.toLowerCase() === v.toLowerCase()) === i).join(', ') + ').', page, '');
-for (const h of c.history || []) add(h.d, 'change/' + h.d + '/' + String(h.f).replace(/\W+/g, '-'), 'Developer page changed: ' + h.f, 'On the developer page, "' + h.f + '" changed from ' + fv(h.from) + ' to ' + fv(h.to) + '.', page, 'history');
+const c = ix.caseBy.get(x.id) || {}, page = N.okHttp(x.url) ? N.fixU(x.url) : null, E = [], base = ORIGIN + $q.t + x.s + '/';
+const add = (d, key, title, text, src, anchor) => { const i = N.iso(d); if (!i || !N.cleanOk(title) || (text && !N.cleanOk(text))) return; let dt = i + $q.aJ; if (/T\d/.test(String(d))) { const z = new Date(d); if (!isNaN(z)) dt = z.toISOString().replace(/\.\d{3}Z$/, 'Z'); } E.push({ d: dt, key: x.id + '/' + key, title, text: text || title, src: src || page, url: base + (anchor ? '#' + anchor : '') }); };
+if (x.ad) add(x.ad, 'added', $q.aK, $q.aL + x.n + ' (' + [x.ar, x.mk, x.co].filter(Boolean).join(', ').split(', ').filter((v, i, a) => a.findIndex(w => w.toLowerCase() === v.toLowerCase()) === i).join(', ') + ').', page, '');
+for (const h of c.history || []) add(h.d, $q.aM + h.d + '/' + String(h.f).replace(/\W+/g, '-'), $q.aN + h.f, $q.aO + h.f + $q.aP + fv(h.from) + ' to ' + fv(h.to) + '.', page, $q.aQ);
 for (const q of ix.prom[x.id] || []) {
 const kind = N.tr('en', 'pk_' + q.k), H = (q.hist || []).slice().sort((a, b) => String(a.seen).localeCompare(String(b.seen)));
 H.forEach((h, i) => {
-if (i === 0) add(h.seen, 'promise/' + q.k + '/' + h.seen, kind + ' date on record: ' + N.fd(h.d, 'en'), kind + ' recorded as ' + N.fd(h.d, 'en') + ' (' + (h.src === 'page' ? 'developer page' : 'our research') + ', seen ' + N.fd(h.seen, 'en') + ').', page, 'delivery');
-else if (h.d !== H[i - 1].d) add(h.seen, 'promise/' + q.k + '/' + h.seen, kind + ' date changed: ' + N.fd(H[i - 1].d, 'en') + ' to ' + N.fd(h.d, 'en'), kind + ' date on record changed from ' + N.fd(H[i - 1].d, 'en') + ' to ' + N.fd(h.d, 'en') + ' (seen ' + N.fd(h.seen, 'en') + ').', page, 'delivery');
+if (i === 0) add(h.seen, $q.aR + q.k + '/' + h.seen, kind + $q.aS + N.fd(h.d, 'en'), kind + $q.aT + N.fd(h.d, 'en') + ' (' + (h.src === 'page' ? $q.as : $q.aU) + $q.aV + N.fd(h.seen, 'en') + ').', page, $q.aW);
+else if (h.d !== H[i - 1].d) add(h.seen, $q.aR + q.k + '/' + h.seen, kind + $q.aX + N.fd(H[i - 1].d, 'en') + ' to ' + N.fd(h.d, 'en'), kind + $q.aY + N.fd(H[i - 1].d, 'en') + ' to ' + N.fd(h.d, 'en') + $q.aZ + N.fd(h.seen, 'en') + ').', page, $q.aW);
 });
 }
-if (c.overdue && N.iso(c.checked)) add(c.checked, 'overdue/' + N.iso(c.checked), 'Handover date on record has passed', N.tr('en', 'g_over', { m: c.overdue }), ORIGIN + '/promises/', 'delivery');
-for (const f of (((ix.find[x.id] || {}).f) || []).slice(0, 30)) { const t = String(f.text || '').replace(/^[A-Z]{2,5}-\d{3,4}\s*·\s*/, ''); add(f.at, 'finding/' + f.at + '/' + (f.fp || ''), 'Change seen on the developer page', t + (f.fp ? ' (page fingerprint SHA-256 ' + f.fp + '...)' : ''), page, 'history'); }
+if (c.overdue && N.iso(c.checked)) add(c.checked, $q.ba + N.iso(c.checked), $q.bb, N.tr('en', $q.bc, { m: c.overdue }), ORIGIN + $q.bd, $q.aW);
+for (const f of (((ix.find[x.id] || {}).f) || []).slice(0, 30)) { const t = String(f.text || '').replace(/^[A-Z]{2,5}-\d{3,4}\s*·\s*/, ''); add(f.at, $q.be + f.at + '/' + (f.fp || ''), $q.bf, t + (f.fp ? $q.bg + f.fp + '...)' : ''), page, $q.aQ); }
 const sha = x.sha || (c.fp || {}).sha256, sd = x.sealed || (c.fp || {}).date;
-if (sha && sd) add(sd, 'sealed/' + sha.slice(0, 16), 'Copy of the developer page sealed', TB.kbx_follow__t.k17 + sha + '. Check it at ' + ORIGIN + '/verify.', ORIGIN + '/verify', 'history');
+if (sha && sd) add(sd, $q.bh + sha.slice(0, 16), $q.bi, $t.k17 + sha + $q.bj + ORIGIN + $q.bk, ORIGIN + $q.ay, $q.aQ);
 const rw = x.rw || c.register;
-if (rw && rw.checked) add(rw.checked, 'register/' + N.iso(rw.checked), 'Official register checked: ' + rw.register, N.tr('en', 'rw_line', { reg: rw.register, item: rw.item, st: rw.status, det: rw.detail ? ', ' + rw.detail : '', d: N.fd(rw.checked, 'en') }), ORIGIN + '/registers/', 'permits');
-if (c.sat && c.sat.date) add(c.sat.date, 'sat/' + c.sat.date, 'Satellite image compared', N.tr('en', 'sat_line', { d: N.fd(c.sat.date, 'en'), st: N.tr('en', c.sat.status === 'visible change' ? 'sat_visible' : 'sat_none'), pct: c.sat.changed_pct }), ORIGIN + '/satellite/', 'history');
+if (rw && rw.checked) add(rw.checked, $q.bl + N.iso(rw.checked), $q.bm + rw.register, N.tr('en', $q.bn, { reg: rw.register, item: rw.item, st: rw.status, det: rw.detail ? ', ' + rw.detail : '', d: N.fd(rw.checked, 'en') }), ORIGIN + $q.az, $q.bo);
+if (c.sat && c.sat.date) add(c.sat.date, 'sat/' + c.sat.date, $q.bp, N.tr('en', $q.bq, { d: N.fd(c.sat.date, 'en'), st: N.tr('en', c.sat.status === $q.br ? $q.bs : $q.bt), pct: c.sat.changed_pct }), ORIGIN + $q.bu, $q.aQ);
 return E;
 }
-const fv = v => v === true ? 'yes' : v === false ? 'no' : v == null ? 'not stated' : String(v);
-const xe = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;' }[c])).replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F]/g, '');
+const fv = v => v === true ? 'yes' : v === false ? 'no' : v == null ? $q.bv : String(v);
+const xe = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': $q.a, "'": $q.bw }[c])).replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F]/g, '');
 async function feed(req, N, ix, kind, slug, fmt) {
 let E = [], name, home, about;
-if (kind === 'projects') {
-const x = ix.bySlug.get(slug); if (!x) return jerr({ error: 'not_found' }, 404);
-E = events(N, ix, x); name = x.n; home = ORIGIN + '/projects/' + slug + '/'; about = 'Dated changes on record for ' + x.n + ' (' + [x.mk, x.co].filter(Boolean).join(', ') + TB.kbx_follow__s.k5;
+if (kind === $q.ae) {
+const x = ix.bySlug.get(slug); if (!x) return jerr({ error: $q.af }, 404);
+E = events(N, ix, x); name = x.n; home = ORIGIN + $q.t + slug + '/'; about = $q.bx + x.n + ' (' + [x.mk, x.co].filter(Boolean).join(', ') + $s.k5;
 } else {
-const dv = ix.devs.get(slug); if (!dv) return jerr({ error: 'not_found' }, 404);
+const dv = ix.devs.get(slug); if (!dv) return jerr({ error: $q.af }, 404);
 for (const id of dv.ids) { const x = ix.byId.get(id); if (x) E.push(...events(N, ix, x).map(e => Object.assign(e, { title: x.n + ': ' + e.title }))); }
-name = dv.n; home = ORIGIN + '/developers/' + slug + '/'; about = TB.kbx_follow__t.k18 + dv.n + TB.kbx_follow__t.k19;
+name = dv.n; home = ORIGIN + $q.av + slug + '/'; about = $t.k18 + dv.n + $t.k19;
 }
 const seen = new Set(); E = E.filter(e => !seen.has(e.key) && seen.add(e.key)).sort((a, b) => b.d.localeCompare(a.d)).slice(0, 60);
-const upd = E.length ? E[0].d : (N.iso(ix.updated) || '2026-11-01') + 'T00:00:00Z', self = home + 'feed.' + fmt, title = name + ': changes on record | Kolaboro';
-const tag = e => 'tag:kolaboro.com,2026:' + e.key;
+const upd = E.length ? E[0].d : (N.iso(ix.updated) || $q.by) + $q.aJ, self = home + 'feed.' + fmt, title = name + $q.bz;
+const tag = e => $q.bA + e.key;
 const hh = { 'last-modified': new Date(upd).toUTCString() };
 if (fmt === 'json') {
-const o = { version: 'https://jsonfeed.org/version/1.1', title, home_page_url: home, feed_url: self, description: about, language: 'en', authors: [{ name: 'Kolaboro', url: ORIGIN + '/' }], icon: ORIGIN + '/k/favicon.svg', favicon: ORIGIN + '/k/favicon.svg',
-_kolaboro: { license: 'CC BY 4.0', api: ORIGIN + '/api/v1/' + kind + '/' + slug, watch_by_email: kind === 'projects' ? home + '#watch' : null },
-items: E.map(e => ({ id: tag(e), url: e.url, external_url: e.src || undefined, title: e.title, content_text: e.text + (e.src ? ' Source: ' + e.src : ''), content_html: '<p>' + esc(e.text) + '</p>' + (e.src ? '<p>Source: <a href="' + esc(e.src) + '">' + esc(e.src) + '</a></p>' : ''), date_published: e.d })) };
-return out(req, JSON.stringify(o), 'application/feed+json; charset=utf-8', hh, 1800);
+const o = { version: $q.bB, title, home_page_url: home, feed_url: self, description: about, language: 'en', authors: [{ name: $q.bC, url: ORIGIN + '/' }], icon: ORIGIN + $q.bD, favicon: ORIGIN + $q.bD,
+_kolaboro: { license: $q.bE, api: ORIGIN + $q.bF + kind + '/' + slug, watch_by_email: kind === $q.ae ? home + $q.bG : null },
+items: E.map(e => ({ id: tag(e), url: e.url, external_url: e.src || undefined, title: e.title, content_text: e.text + (e.src ? $q.bH + e.src : ''), content_html: '<p>' + esc(e.text) + '</p>' + (e.src ? $q.bI + esc(e.src) + '">' + esc(e.src) + $q.x : ''), date_published: e.d })) };
+return out(req, JSON.stringify(o), $q.bJ, hh, 1800);
 }
-const x = TB.kbx_follow__s.k6 + xe(title) + '</title><subtitle>' + xe(about) + '</subtitle><id>' + xe(home) + '</id>' +
-TB.kbx_follow__t.k20 + xe(self) + TB.kbx_follow__t.k21 + xe(home) + '"/><updated>' + upd + TB.kbx_follow__t.k22 + ORIGIN + TB.kbx_follow__t.k23 + ORIGIN + '/k/favicon.svg</icon>' +
-E.map(e => '<entry><title>' + xe(e.title) + '</title><id>' + xe(tag(e)) + TB.kbx_follow__t.k24 + xe(e.url) + '"/>' + (e.src ? '<link rel="related" href="' + xe(e.src) + '"/>' : '') + '<updated>' + e.d + '</updated><published>' + e.d + '</published>' +
-'<summary type="text">' + xe(e.text) + '</summary><content type="html">' + xe('<p>' + esc(e.text) + '</p>' + (e.src ? '<p>Source: <a href="' + esc(e.src) + '">' + esc(e.src) + '</a></p>' : '')) + '</content></entry>').join('') + '</feed>';
-return out(req, x, 'application/atom+xml; charset=utf-8', hh, 1800);
+const x = $s.k6 + xe(title) + $q.bK + xe(about) + $q.bL + xe(home) + '</id>' +
+$t.k20 + xe(self) + $t.k21 + xe(home) + $q.bM + upd + $t.k22 + ORIGIN + $t.k23 + ORIGIN + $q.bN +
+E.map(e => $q.bO + xe(e.title) + $q.bP + xe(tag(e)) + $t.k24 + xe(e.url) + '"/>' + (e.src ? $q.bQ + xe(e.src) + '"/>' : '') + $q.bR + e.d + $q.bS + e.d + $q.bT +
+$q.bU + xe(e.text) + $q.bV + xe('<p>' + esc(e.text) + '</p>' + (e.src ? $q.bI + esc(e.src) + '">' + esc(e.src) + $q.x : '')) + $q.bW).join('') + $q.bX;
+return out(req, x, $q.bY, hh, 1800);
 }
 async function watch(req, u, env, ctx) {
-const o = (b, s, extra) => new Response(JSON.stringify(b), { status: s || 200, headers: Object.assign({ 'content-type': JT, 'cache-control': 'no-store' }, extra || {}) });
-if (req.method !== 'POST') return o({ error: 'method', use: TB.kbx_follow__t.k25 }, 405);
-const orig = req.headers.get('origin'); if (orig && !/^https:\/\/(www\.)?kolaboro\.com$/.test(orig)) return o({ error: 'origin' }, 403);
-const rl = await rate(req, ctx, 'watch9', 6); if (!rl.ok) return o({ error: 'rate', retry_after_s: rl.retry }, 429, { 'retry-after': String(rl.retry) });
+const o = (b, s, extra) => new Response(JSON.stringify(b), { status: s || 200, headers: Object.assign({ 'content-type': JT, 'cache-control': $q.U }, extra || {}) });
+if (req.method !== 'POST') return o({ error: $q.bZ, use: $t.k25 }, 405);
+const orig = req.headers.get($q.ca); if (orig && !/^https:\/\/(www\.)?kolaboro\.com$/.test(orig)) return o({ error: $q.ca }, 403);
+const rl = await rate(req, ctx, $q.cb, 6); if (!rl.ok) return o({ error: 'rate', retry_after_s: rl.retry }, 429, { 'retry-after': String(rl.retry) });
 let b; try { b = await req.json(); } catch (e) { return o({ error: 'body' }, 400); }
 if (b && b.hp) return o({ ok: true, confirmed: false });
 const email = String((b && b.email) || '').trim().toLowerCase(), key = String((b && b.project) || '').trim();
 if (email.length > 200 || !/^[^@\s]+@[^@\s]+\.[a-z]{2,}$/.test(email)) return o({ error: 'email' }, 400);
 const N = await import('./kbx_named.js');
 let ix; try { ix = await N.data(env); } catch (e) { return o({ error: 'data' }, 503); }
-const x = ix.byId.get(key.toUpperCase()) || ix.bySlug.get(key.toLowerCase()); if (!x) return o({ error: 'project' }, 404);
+const x = ix.byId.get(key.toUpperCase()) || ix.bySlug.get(key.toLowerCase()); if (!x) return o({ error: $q.cc }, 404);
 const { rpc } = await import('./kolaboro.js');
-let r; try { r = await rpc('kolaboro_follow', { p_email: email, p_ref: x.id }); } catch (e) { return o({ error: 'db' }, 503); }
+let r; try { r = await rpc($q.cd, { p_email: email, p_ref: x.id }); } catch (e) { return o({ error: 'db' }, 503); }
 if (!r || r.error) { const e = r && r.error; return o({ error: e === 'busy' ? 'busy' : e === 'input' ? 'email' : 'db' }, e === 'busy' ? 429 : e === 'input' ? 400 : 503); }
-return o({ ok: true, project: x.id, confirmed: !!r.confirmed, next: r.confirmed ? 'already confirmed' : 'confirmation link sent by email' });
+return o({ ok: true, project: x.id, confirmed: !!r.confirmed, next: r.confirmed ? $q.ce : $q.cf });
 }

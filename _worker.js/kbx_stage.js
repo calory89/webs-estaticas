@@ -1,16 +1,16 @@
 // comments: _notes/kolaboro-worker-comments.txt
+const $q = TB.kbx_stage__q, $s = TB.kbx_stage__s, $t = TB.kbx_stage__t;   // n40 k46: short names for this module's string tables (strings in /data/i18n/k19s.json, k17s.json, k46s.json)
 import { TB } from './kbx_strings.js';
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
-const LOCALE = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' };
 export const VERSION = 'stage-rules-1';
 export const PATHS = /^\/api\/x\/stage(?:\/|$)/;
 export const RULES = { optical_band_pts: 15, optical_window: 3, earthworks_after_clear_months: 3, radar_window: 3, footprint_cover_pct: 10, footprint_near_m: 75, already_built_pct: 50, min_clear_months: 6, start_grace_months: 6 };
 const ORDER = ['none', 'cleared', 'earthworks', 'structure', 'roofed'];
 const S = TB.kbx_stage_S ;
-const t = (lang, k, v) => { const s = (S[lang] && S[lang][k]) || S.en[k]; return v && typeof s === 'string' ? s.replace(/\{(\w+)\}/g, (m, x) => v[x] != null ? v[x] : m) : s; };
+const t = (lang, k, v) => { const s = (S[lang] && S[lang][k]) || S.en[k]; return v && typeof s === $q.b ? s.replace(/\{(\w+)\}/g, (m, x) => v[x] != null ? v[x] : m) : s; };
 export const stageWord = (lang, s) => t(lang, 'st_' + s);
-const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': $q.c, "'": '&#39;' }[c]));
 const mi = s => { const m = String(s || '').match(/^(\d{4})-(\d{2})/); return m ? +m[1] * 12 + (+m[2] - 1) : null; };
 const ym = i => Math.floor(i / 12) + '-' + String(i % 12 + 1).padStart(2, '0');
 const med = a => { const v = a.slice().sort((x, y) => x - y), h = v.length >> 1; return v.length ? (v.length % 2 ? v[h] : (v[h - 1] + v[h]) / 2) : null; };
@@ -36,7 +36,7 @@ const baseIdx = ix ? new Set([ix.first[0], ...ix.y.map((v, i) => v == null ? -1 
 const baseLabel = ix ? ym(m0 + ix.first[0]) : (rr ? rr.m0 : rec.m0);
 const baseBuilt = ix ? med([...baseIdx].map(i => rec.b[i]).filter(v => v != null)) : null;
 const built0 = baseBuilt != null && baseBuilt >= R.already_built_pct;
-const hand = ms.filter(o => o.k === 'handover' && !o.old).sort((a, b) => a.b - b.b).pop(), start = ms.filter(o => o.k === 'construction_start' && !o.old).sort((a, b) => a.b - b.b).pop();
+const hand = ms.filter(o => o.k === $q.d && !o.old).sort((a, b) => a.b - b.b).pop(), start = ms.filter(o => o.k === $q.e && !o.old).sort((a, b) => a.b - b.b).pop();
 const out = []; let run = 0, ever = false, rEver = false, lastClear = null, firstUp = null;
 const optHist = [];
 for (let i = 0; i < n; i++) {
@@ -46,7 +46,7 @@ if (ix && ix.y[i] != null) {
 optHist.push(ix.y[i]); lastClear = M;
 ox = med(optHist.slice(-R.optical_window));
 if (baseIdx.has(i)) o = 'base';
-else if (ox >= B) { run++; o = run >= R.earthworks_after_clear_months ? 'earthworks' : 'cleared'; ever = true; if (firstUp == null) firstUp = M; }
+else if (ox >= B) { run++; o = run >= R.earthworks_after_clear_months ? $q.f : $q.g; ever = true; if (firstUp == null) firstUp = M; }
 else if (ox <= -B) { run = 0; o = 'green'; }
 else { run = 0; o = 'same'; }
 }
@@ -61,46 +61,46 @@ if (r === 'up') rEver = true;
 }
 }
 const bm = bOk && M >= bFrom;
-if (o === 'base') reasons.push(['o_base', { m: ym(M) }]);
-else if (o === 'cleared' || o === 'earthworks') reasons.push(['o_up', { x: sg(Math.round(ox)), base: baseLabel, k: run }]);
-else if (o === 'green') reasons.push(['o_green', { x: Math.abs(Math.round(ox)), base: baseLabel }]);
-else if (o === 'same') reasons.push(['o_same', { b: B, base: baseLabel }]);
-else reasons.push(lastClear != null ? ['o_gap', { m: ym(lastClear) }] : ['o_never', {}]);
+if (o === 'base') reasons.push([$q.h, { m: ym(M) }]);
+else if (o === $q.g || o === $q.f) reasons.push(['o_up', { x: sg(Math.round(ox)), base: baseLabel, k: run }]);
+else if (o === 'green') reasons.push([$q.i, { x: Math.abs(Math.round(ox)), base: baseLabel }]);
+else if (o === 'same') reasons.push([$q.j, { b: B, base: baseLabel }]);
+else reasons.push(lastClear != null ? ['o_gap', { m: ym(lastClear) }] : [$q.k, {}]);
 if (!rr) reasons.push(['r_na', {}]);
 else if (r == null) reasons.push(['r_gap', {}]);
-else { reasons.push([r === 'up' ? 'r_up' : r === 'down' ? 'r_down' : 'r_flat', { x: sg(rx), b: band }]); if (rh != null && rh < -band) reasons.push(['r_vh', { x: sg(rh) }]); }
+else { reasons.push([r === 'up' ? 'r_up' : r === 'down' ? $q.l : $q.m, { x: sg(rx), b: band }]); if (rh != null && rh < -band) reasons.push(['r_vh', { x: sg(rh) }]); }
 if (bl) {
 if (!bl.n) reasons.push(['b_no', { rel }]);
 else if (bCover < R.footprint_cover_pct) reasons.push(['b_low', { p: bCover, t: R.footprint_cover_pct, rel }]);
 else if (!bOk) reasons.push(['b_far', { d: bNear, t: R.footprint_near_m, rel }]);
-else if (bm) reasons.push(bl.first_seen_min ? ['b_yesf', { n: bl.n, p: bCover, rel, d: relDate(bl.first_seen_min) }] : ['b_yes', { n: bl.n, p: bCover, rel }]);
-else reasons.push(['b_later', { d: ym(bFrom) }]);
+else if (bm) reasons.push(bl.first_seen_min ? [$q.n, { n: bl.n, p: bCover, rel, d: relDate(bl.first_seen_min) }] : ['b_yes', { n: bl.n, p: bCover, rel }]);
+else reasons.push([$q.o, { d: ym(bFrom) }]);
 }
 let s, c = null;
-if (o == null && r == null && !bm) s = 'nodata';
+if (o == null && r == null && !bm) s = $q.p;
 else if (o === 'base' && r !== 'up' && !bm) { s = 'base'; }
-else if (bm && (ever || rEver)) { s = 'roofed'; sup.push('b'); if (ever) { sup.push('o'); if (o !== 'cleared' && o !== 'earthworks') reasons.push(['o_ever', { b: B, m: ym(firstUp) }]); } if (rEver) sup.push('r'); }
+else if (bm && (ever || rEver)) { s = $q.q; sup.push('b'); if (ever) { sup.push('o'); if (o !== $q.g && o !== $q.f) reasons.push([$q.r, { b: B, m: ym(firstUp) }]); } if (rEver) sup.push('r'); }
 else if (bm && (o === 'same' || o === 'base' || o == null) && r !== 'up' && built0) { s = 'none'; c = 'low'; reasons.push(['d_pre', { p: Math.round(baseBuilt), base: baseLabel }]); }
 else if (bm && (o === 'same' || o === 'base' || o == null) && r !== 'up') { s = 'cant'; reasons.push(['d_bo', { base: baseLabel }]); }
-else if (r === 'up' && o === 'same' && built0) { s = 'structure'; sup.push('r'); reasons.push(['o_built', { p: Math.round(baseBuilt) }]); }
+else if (r === 'up' && o === 'same' && built0) { s = $q.s; sup.push('r'); reasons.push([$q.t, { p: Math.round(baseBuilt) }]); }
 else if (r === 'up' && (o === 'same' || o === 'base')) { s = 'cant'; reasons.push(['d_ro', {}]); }
-else if (r === 'up') { s = 'structure'; sup.push('r'); if (o === 'cleared' || o === 'earthworks') sup.push('o'); }
-else if (o === 'cleared' || o === 'earthworks') { s = o; sup.push('o'); if (o === 'cleared' && rh != null && rh < -band) sup.push('r'); }
+else if (r === 'up') { s = $q.s; sup.push('r'); if (o === $q.g || o === $q.f) sup.push('o'); }
+else if (o === $q.g || o === $q.f) { s = o; sup.push('o'); if (o === $q.g && rh != null && rh < -band) sup.push('r'); }
 else if (o === 'green' || (bm && o === 'green')) { s = 'cant'; reasons.push(['d_g', {}]); }
 else if (o === 'same') { s = 'none'; sup.push('o'); if (r === 'flat') sup.push('r'); }
 else if (r === 'flat') { s = 'none'; sup.push('r'); }
 else if (r === 'down') { s = 'cant'; reasons.push(['d_rd', {}]); }
-else s = 'nodata';
+else s = $q.p;
 if (ORDER.includes(s) && !c) {
-const sustained = (sup.includes('o') && (s === 'none' ? optHist.length >= 3 : run >= 3)) || (sup.includes('r') && !sup.includes('o')) || s === 'roofed';
-c = sup.length >= 2 ? 'high' : sustained ? 'medium' : 'low';
+const sustained = (sup.includes('o') && (s === 'none' ? optHist.length >= 3 : run >= 3)) || (sup.includes('r') && !sup.includes('o')) || s === $q.q;
+c = sup.length >= 2 ? 'high' : sustained ? $q.u : 'low';
 }
-if (hand && M > hand.b && s !== 'roofed') reasons.push(['p_hand', { d: hand.d }]);
-if (start && M > start.b + R.start_grace_months && (s === 'none' || s === 'base')) reasons.push(['p_start', { d: start.d }]);
+if (hand && M > hand.b && s !== $q.q) reasons.push([$q.v, { d: hand.d }]);
+if (start && M > start.b + R.start_grace_months && (s === 'none' || s === 'base')) reasons.push([$q.w, { d: start.d }]);
 out.push({ m: ym(M), s, c, r: reasons });
 }
 const enough = clearN >= R.min_clear_months || !!rr;
-const latest = [...out].reverse().find(x => x.s !== 'nodata') || null;
+const latest = [...out].reverse().find(x => x.s !== $q.p) || null;
 return { enough, clear: clearN, months: out, latest };
 }
 const SRC = { o: '/data/construction-progress.json', r: '/data/satellite-radar.json', b: '/data/buildings.json', d: '/promises/', p: '/promises/' };
@@ -113,30 +113,30 @@ return t(lang, code, q);
 const srcOf = code => SRC[code[0]] || '';
 export function stageHtml(est, lang, fd, id) {
 if (!est) return '';
-const head = '<h3>' + esc(t(lang, 'h')) + '</h3><p class="ki">' + esc(t(lang, 'intro')) + '</p>';
-const links = '<p class="ksat-src"><a href="' + pre(lang) + '/methods/construction-stage/">' + esc(t(lang, 'method')) + TB.kbx_stage__t.k0 + encodeURIComponent(id) + '">' + esc(t(lang, 'api')) + '</a></p>';
-if (!est.enough || !est.latest) return TB.kbx_stage__s.CSS + '<div class="kstage" id="stage">' + head + '<p>' + esc(t(lang, 'thin', { c: est.clear })) + '</p>' + links + '</div>';
+const head = '<h3>' + esc(t(lang, 'h')) + $q.x + esc(t(lang, 'intro')) + '</p>';
+const links = $q.y + pre(lang) + $q.z + esc(t(lang, $q.A)) + $t.k0 + encodeURIComponent(id) + '">' + esc(t(lang, 'api')) + $q.B;
+if (!est.enough || !est.latest) return $s.CSS + $q.C + head + '<p>' + esc(t(lang, 'thin', { c: est.clear })) + '</p>' + links + $q.D;
 const L = est.latest;
-const li = L.r.map(([code, p]) => '<li>' + esc(reasonText(lang, fd, code, p)) + (srcOf(code) ? ' <a class="k-src" href="' + srcOf(code) + '">' + esc(code[0] === 'o' ? 'Sentinel-2' : code[0] === 'r' ? 'Sentinel-1' : code[0] === 'b' ? 'Overture' : t(lang, 'why')) + '</a>' : '') + '</li>').join('');
-const now = TB.kbx_stage__t.k1 + esc(t(lang, 'latest', { m: fd(L.m) })) + '"><div class="k-small k-muted">' + esc(t(lang, 'latest', { m: fd(L.m) })) + '</div><div class="kstage-st">' + esc(stageWord(lang, L.s)) + '</div>' +
-(L.c ? '<div>' + esc(t(lang, 'conf', { c: t(lang, 'c_' + L.c) })) + '</div>' : '') + '<ul aria-label="' + esc(t(lang, 'why')) + '">' + li + '</ul></div>';
+const li = L.r.map(([code, p]) => '<li>' + esc(reasonText(lang, fd, code, p)) + (srcOf(code) ? $q.E + srcOf(code) + '">' + esc(code[0] === 'o' ? $q.F : code[0] === 'r' ? $q.G : code[0] === 'b' ? $q.H : t(lang, 'why')) + '</a>' : '') + '</li>').join('');
+const now = $t.k1 + esc(t(lang, $q.I, { m: fd(L.m) })) + $q.J + esc(t(lang, $q.I, { m: fd(L.m) })) + $q.K + esc(stageWord(lang, L.s)) + $q.D +
+(L.c ? '<div>' + esc(t(lang, 'conf', { c: t(lang, 'c_' + L.c) })) + $q.D : '') + $q.L + esc(t(lang, 'why')) + '">' + li + $q.M;
 const M = est.months;
-const rib = TB.kbx_stage__t.k2 + M.map(x => '<i class="s-' + x.s + '" title="' + esc(fd(x.m) + ': ' + stageWord(lang, x.s) + (x.c ? ' (' + t(lang, 'c_' + x.c) + ')' : '')) + '"></i>').join('') + '</div>' +
-TB.kbx_stage__t.k3 + esc(M[0].m.slice(0, 4)) + '</span><span>' + esc(M[Math.floor(M.length / 2)].m.slice(0, 4)) + '</span><span>' + esc(M[M.length - 1].m.slice(0, 4)) + '</span></div>';
+const rib = $t.k2 + M.map(x => $q.N + x.s + $q.O + esc(fd(x.m) + ': ' + stageWord(lang, x.s) + (x.c ? ' (' + t(lang, 'c_' + x.c) + ')' : '')) + $q.P).join('') + $q.D +
+$t.k3 + esc(M[0].m.slice(0, 4)) + $q.Q + esc(M[Math.floor(M.length / 2)].m.slice(0, 4)) + $q.Q + esc(M[M.length - 1].m.slice(0, 4)) + $q.R;
 const used = [...new Set(M.map(x => x.s))];
-const lg = '<ul class="kstage-lg">' + ['base', 'none', 'cleared', 'earthworks', 'structure', 'roofed', 'cant', 'nodata'].filter(s => used.includes(s)).map(s => '<li><i class="s-' + s + '"></i>' + esc(stageWord(lang, s)) + '</li>').join('') + '</ul><p class="ksat-src">' + esc(t(lang, 'leg')) + '</p>';
+const lg = $q.S + ['base', 'none', $q.g, $q.f, $q.s, $q.q, 'cant', $q.p].filter(s => used.includes(s)).map(s => $q.T + s + $q.P + esc(stageWord(lang, s)) + '</li>').join('') + $q.U + esc(t(lang, 'leg')) + '</p>';
 const th = t(lang, 'th');
-const sigs = x => x.r.map(([code, p]) => code === 'o_up' || code === 'o_green' || code === 'o_same' ? (code === 'o_same' ? '' : t(lang, 's_o', { x: code === 'o_green' ? '-' + p.x : p.x })) : code === 'r_up' || code === 'r_down' || code === 'r_flat' ? t(lang, 's_r', { x: p.x }) : code === 'b_yes' || code === 'b_yesf' ? t(lang, 's_b') : '').filter(Boolean).join(', ');
-const rows = M.slice().reverse().map(x => '<tr><td>' + esc(fd(x.m)) + '</td><td>' + esc(stageWord(lang, x.s)) + '</td><td>' + esc(x.c ? t(lang, 'c_' + x.c) : '') + '</td><td>' + esc(sigs(x)) + '</td></tr>').join('');
-const table = '<details><summary>' + esc(t(lang, 'tbl')) + TB.kbx_stage__t.k4 + th.map(h => '<th scope="col">' + esc(h) + '</th>').join('') + '</tr></thead><tbody>' + rows + '</tbody></table></div></details>';
-return TB.kbx_stage__s.CSS + '<div class="kstage" id="stage">' + head + now + rib + lg + '<p class="ksat-lim">' + esc(t(lang, 'lim')) + '</p>' + links + table + '</div>';
+const sigs = x => x.r.map(([code, p]) => code === 'o_up' || code === $q.i || code === $q.j ? (code === $q.j ? '' : t(lang, 's_o', { x: code === $q.i ? '-' + p.x : p.x })) : code === 'r_up' || code === $q.l || code === $q.m ? t(lang, 's_r', { x: p.x }) : code === 'b_yes' || code === $q.n ? t(lang, 's_b') : '').filter(Boolean).join(', ');
+const rows = M.slice().reverse().map(x => $q.V + esc(fd(x.m)) + $q.W + esc(stageWord(lang, x.s)) + $q.W + esc(x.c ? t(lang, 'c_' + x.c) : '') + $q.W + esc(sigs(x)) + $q.X).join('');
+const table = $q.Y + esc(t(lang, 'tbl')) + $t.k4 + th.map(h => $q.Z + esc(h) + '</th>').join('') + $q.aa + rows + $q.ab;
+return $s.CSS + $q.C + head + now + rib + lg + $q.ac + esc(t(lang, 'lim')) + '</p>' + links + table + $q.D;
 }
 export function stageLabels(est, lang) {
 const o = {}; if (!est || !est.enough) return o;
 for (const x of est.months) o[x.m] = stageWord(lang, x.s) + (x.c ? ' (' + t(lang, 'c_' + x.c) + ')' : '');
 return o;
 }
-function out(o, s, cc) { return new Response(JSON.stringify(o), { status: s || 200, headers: { 'content-type': 'application/json; charset=utf-8', 'access-control-allow-origin': '*', 'cache-control': cc || 'public, max-age=600' } }); }
+function out(o, s, cc) { return new Response(JSON.stringify(o), { status: s || 200, headers: { 'content-type': $q.ad, 'access-control-allow-origin': '*', 'cache-control': cc || $q.ae } }); }
 async function inputs(env, id) {
 const ns = await import('./kbx_named_sat.js'), nm = await import('./kbx_named.js');
 const sat = await ns.satData(env), ix = await nm.data(env), x = ix.byId.get(id);
@@ -146,56 +146,54 @@ const ms = ns.milestones(ix.prom[id] || [], x.fx || {});
 return { x, rec, sat, ms, est: stages(rec, ns.index(rec), sat.space && sat.space.radar, sat.space && sat.space.bld, ms, id) };
 }
 export async function handle(req, u, env) {
-if (req.method !== 'GET' && req.method !== 'HEAD') return out({ error: 'method not allowed' }, 405, 'no-store');
+if (req.method !== 'GET' && req.method !== 'HEAD') return out({ error: $q.af }, 405, $q.ag);
 const q = u.pathname.replace(/\/+$/, '');
-if (q === '/api/x/stage') return out({ module: 'stage (batch 18, n18b)', endpoints: { '/api/x/stage/<ID>': TB.kbx_stage__s.k0 }, rules: RULES, version: VERSION, method: ORIGIN + '/methods/construction-stage/', licence: TB.kbx_stage__t.k5 });
-const id = decodeURIComponent(q.slice('/api/x/stage/'.length)).toUpperCase().slice(0, 20);
-if (!/^[A-Z]{1,6}-\d{1,4}$/.test(id)) return out({ error: 'give /api/x/stage/<ID> like AUH-003' }, 400, 'public, max-age=60');
-let d; try { d = await inputs(env, id); } catch (e) { return out({ error: 'unavailable' }, 503, 'no-store'); }
-if (!d || !d.x) return out({ id, error: 'no named project has this id' }, 404, 'public, max-age=300');
-if (!d.rec) return out({ id, error: TB.kbx_stage__t.k6 }, 404, 'public, max-age=300');
+if (q === $q.ah) return out({ module: $q.ai, endpoints: { '/api/x/stage/<ID>': $s.k0 }, rules: RULES, version: VERSION, method: ORIGIN + $q.aj, licence: $t.k5 });
+const id = decodeURIComponent(q.slice($q.ak.length)).toUpperCase().slice(0, 20);
+if (!/^[A-Z]{1,6}-\d{1,4}$/.test(id)) return out({ error: $q.al }, 400, $q.am);
+let d; try { d = await inputs(env, id); } catch (e) { return out({ error: $q.an }, 503, $q.ag); }
+if (!d || !d.x) return out({ id, error: $q.ao }, 404, $q.ap);
+if (!d.rec) return out({ id, error: $t.k6 }, 404, $q.ap);
 const e = d.est;
-return out({ id, name: d.x.n, page: ORIGIN + '/projects/' + d.x.s + '/', version: VERSION, rules: RULES, enough: e.enough, clear_months: e.clear,
+return out({ id, name: d.x.n, page: ORIGIN + $q.aq + d.x.s + '/', version: VERSION, rules: RULES, enough: e.enough, clear_months: e.clear,
 latest: e.latest && { month: e.latest.m, stage: e.latest.s, stage_text: stageWord('en', e.latest.s), confidence: e.latest.c, reasons: e.latest.r.map(([c, p]) => ({ code: c, text: t('en', c, p), params: p, source: srcOf(c) ? ORIGIN + srcOf(c) : null })) },
 months: e.months.map(x => ({ month: x.m, stage: x.s, confidence: x.c, reasons: x.r.map(([c]) => c) })),
-stages: Object.fromEntries(['base', 'none', 'cleared', 'earthworks', 'structure', 'roofed', 'cant', 'nodata'].map(s => [s, stageWord('en', s)])),
-sources: { optical: ORIGIN + SRC.o, radar: ORIGIN + SRC.r, buildings: ORIGIN + SRC.b, promises: ORIGIN + '/data/promises.json' }, data_updated: { optical: d.sat.updated, radar: d.sat.space && d.sat.space.radar && d.sat.space.radar.updated || null, buildings: d.sat.space && d.sat.space.bld && d.sat.space.bld.updated || null },
-caveat: S.en.lim, method: ORIGIN + '/methods/construction-stage/', licence: TB.kbx_stage__s.k1 });
+stages: Object.fromEntries(['base', 'none', $q.g, $q.f, $q.s, $q.q, 'cant', $q.p].map(s => [s, stageWord('en', s)])),
+sources: { optical: ORIGIN + SRC.o, radar: ORIGIN + SRC.r, buildings: ORIGIN + SRC.b, promises: ORIGIN + $q.ar }, data_updated: { optical: d.sat.updated, radar: d.sat.space && d.sat.space.radar && d.sat.space.radar.updated || null, buildings: d.sat.space && d.sat.space.bld && d.sat.space.bld.updated || null },
+caveat: S.en.lim, method: ORIGIN + $q.aj, licence: $s.k1 });
 }
-const PG_CSS = '<style id="kstage-pg">.kstg-pg .k-phead{padding-block:var(--k-7,48px) var(--k-5,24px)}.kstg-pg h1{max-width:22ch}.kstg-pg .lead{max-width:62ch;color:var(--k-ink-2)}.kstg-pg h2{margin:0 0 var(--k-3,12px)}.kstg-pg ol,.kstg-pg ul{max-width:72ch;line-height:1.6;padding-inline-start:22px}.kstg-pg li{margin:0 0 8px}.kstg-pg p{max-width:72ch;line-height:1.6}' +
-'.kstg-sw{display:inline-block;width:14px;height:14px;border-radius:3px;margin-inline-end:8px;vertical-align:-2px}.kstg-sw.s-cleared{background:color-mix(in srgb,var(--k-sea,#155C75) 22%,var(--k-surface,#fff))}.kstg-sw.s-earthworks{background:color-mix(in srgb,var(--k-sea,#155C75) 45%,var(--k-surface,#fff))}.kstg-sw.s-structure{background:color-mix(in srgb,var(--k-sea,#155C75) 72%,var(--k-surface,#fff))}.kstg-sw.s-roofed{background:var(--k-sea,#155C75)}.kstg-sw.s-none,.kstg-sw.s-base{background:var(--k-sunken,#E8ECEA);box-shadow:inset 0 0 0 1px var(--k-line,#D5DAD8)}.kstg-sw.s-cant{background:repeating-linear-gradient(135deg,var(--k-surface,#fff) 0 3px,var(--k-muted,#56636F) 3px 4px)}</style>';
 function methodBody(lang) {
 const R = RULES, v = { a: R.already_built_pct, n: R.footprint_near_m, w: R.optical_window, t: R.footprint_cover_pct, b: R.optical_band_pts, e: R.earthworks_after_clear_months, c: R.min_clear_months };
 const fill = s => s.replace(/\{(\w+)\}/g, (m, x) => v[x] != null ? v[x] : m);
-const keys = ['base', 'roofed', 'structure', 'earthworks', 'cleared', 'none'];
-const rules = t(lang, 'm_rules').map((s, i) => '<li><span class="kstg-sw s-' + keys[i] + '" aria-hidden="true"></span>' + esc(fill(s)) + '</li>').join('');
-return TB.kbx_stage__s.k2 + pre(lang) + '/">Kolaboro</a></p><h1>' + esc(t(lang, 'm_title')) + '</h1><p class="lead">' + esc(t(lang, 'm_lead')) + '</p></div>' +
-'<h2>' + esc(t(lang, 'm_h_in')) + '</h2><ul>' + t(lang, 'm_in').map(s => '<li>' + esc(fill(s)) + '</li>').join('') + '</ul></div></section>' +
-TB.kbx_stage__t.k7 + esc(t(lang, 'm_h_rules')) + '</h2><ol>' + rules + '</ol>' +
-'<p>' + esc(fill(t(lang, 'm_rule_x'))) + '</p><h2>' + esc(t(lang, 'm_h_conf')) + '</h2><p>' + esc(t(lang, 'm_conf')) + '</p>' +
-'<h2>' + esc(t(lang, 'm_h_cant')) + TB.kbx_stage__t.k8 + esc(stageWord(lang, 'cant')) + '</p><ul>' + t(lang, 'm_cant').map(s => '<li>' + esc(fill(s)) + '</li>').join('') + '</ul></div></section>' +
-TB.kbx_stage__t.k9 + esc(t(lang, 'm_h_lim')) + '</h2><p>' + esc(t(lang, 'm_lim')) + '</p><h2>' + esc(t(lang, 'm_h_data')) + '</h2><p>' + esc(t(lang, 'm_data')) + '</p>' +
-TB.kbx_stage__s.k3;
+const keys = ['base', $q.q, $q.s, $q.f, $q.g, 'none'];
+const rules = t(lang, $q.as).map((s, i) => $q.at + keys[i] + $q.au + esc(fill(s)) + '</li>').join('');
+return $s.k2 + pre(lang) + $q.av + esc(t(lang, $q.aw)) + $q.ax + esc(t(lang, $q.ay)) + $q.az +
+'<h2>' + esc(t(lang, $q.aA)) + $q.aB + t(lang, 'm_in').map(s => '<li>' + esc(fill(s)) + '</li>').join('') + $q.aC +
+$t.k7 + esc(t(lang, $q.aD)) + $q.aE + rules + '</ol>' +
+'<p>' + esc(fill(t(lang, $q.aF))) + $q.aG + esc(t(lang, $q.aH)) + $q.aI + esc(t(lang, $q.aJ)) + '</p>' +
+'<h2>' + esc(t(lang, $q.aK)) + $t.k8 + esc(stageWord(lang, 'cant')) + $q.aL + t(lang, $q.aM).map(s => '<li>' + esc(fill(s)) + '</li>').join('') + $q.aC +
+$t.k9 + esc(t(lang, $q.aN)) + $q.aI + esc(t(lang, 'm_lim')) + $q.aG + esc(t(lang, $q.aO)) + $q.aI + esc(t(lang, $q.aP)) + '</p>' +
+$s.k3;
 }
 export async function method(req, u, env, ctx, shell) {
   const m = u.pathname.match(/^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?methods\/construction-stage(\/?)$/); if (!m || !shell) return null;
-  if (!m[2]) return new Response(null, { status: 301, headers: { location: u.pathname + '/' + u.search, 'cache-control': 'public, max-age=86400' } });
-  const lang = m[1] || 'en', path = '/methods/construction-stage/', url = ORIGIN + pre(lang) + path;
-  const sh = await shell(pre(lang) + '/how-we-score/');
-  const ld = { '@context': 'https://schema.org', '@graph': [{ '@type': 'TechArticle', '@id': url + '#article', headline: t(lang, 'm_title'), description: t(lang, 'm_desc'), url, inLanguage: lang, dateModified: '2026-11-08', author: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' }, publisher: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' } },
-    { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Kolaboro', item: ORIGIN + pre(lang) + '/' }, { '@type': 'ListItem', position: 2, name: t(lang, 'm_title'), item: url }] }] };
-  const alts = LANGS.map(l => '<link rel="alternate" hreflang="' + l + '" href="' + ORIGIN + pre(l) + path + '">').join('') + '<link rel="alternate" hreflang="x-default" href="' + ORIGIN + path + '">';
-  const tags = '<title>' + esc(t(lang, 'm_title')) + ' | Kolaboro</title><meta name="description" content="' + esc(t(lang, 'm_desc')) + '"><link rel="canonical" href="' + url + '">' + alts +
-    '<meta property="og:type" content="article"><meta property="og:site_name" content="Kolaboro"><meta property="og:title" content="' + esc(t(lang, 'm_title')) + ' | Kolaboro"><meta property="og:description" content="' + esc(t(lang, 'm_desc')) + '"><meta property="og:url" content="' + url + '"><meta name="twitter:card" content="summary">' +
-    '<script type="application/ld+json">' + JSON.stringify(ld).replace(/</g, '\\u003c') + '</script>' + PG_CSS;
+  if (!m[2]) return new Response(null, { status: 301, headers: { location: u.pathname + '/' + u.search, 'cache-control': $q.aQ } });
+  const lang = m[1] || 'en', path = $q.aj, url = ORIGIN + pre(lang) + path;
+  const sh = await shell(pre(lang) + $q.aR);
+  const ld = { '@context': $q.aS, '@graph': [{ '@type': $q.aT, '@id': url + $q.aU, headline: t(lang, $q.aw), description: t(lang, $q.aV), url, inLanguage: lang, dateModified: $q.aW, author: { '@type': $q.aX, name: $q.aY, url: ORIGIN + '/' }, publisher: { '@type': $q.aX, name: $q.aY, url: ORIGIN + '/' } },
+    { '@type': $q.aZ, itemListElement: [{ '@type': $q.ba, position: 1, name: $q.aY, item: ORIGIN + pre(lang) + '/' }, { '@type': $q.ba, position: 2, name: t(lang, $q.aw), item: url }] }] };
+  const alts = LANGS.map(l => $q.bb + l + $q.bc + ORIGIN + pre(l) + path + '">').join('') + $q.bd + ORIGIN + path + '">';
+  const tags = $q.be + esc(t(lang, $q.aw)) + $q.bf + esc(t(lang, $q.aV)) + $q.bg + url + '">' + alts +
+    $q.bh + esc(t(lang, $q.aw)) + $q.bi + esc(t(lang, $q.aV)) + $q.bj + url + $q.bk +
+    $q.bl + JSON.stringify(ld).replace(/</g, $q.bm) + $q.bn + $q.a;
   const res = new HTMLRewriter()
     .on('html', { element(e) { e.setAttribute('lang', lang); if (lang === 'ar') e.setAttribute('dir', 'rtl'); else e.removeAttribute('dir'); } })
     .on('title', { element(e) { e.remove(); } })
-    .on('meta[name="description"],meta[name="robots"],meta[property^="og:"],meta[name^="twitter:"],link[rel="canonical"],link[rel="alternate"][hreflang]', { element(e) { e.remove(); } })
-    .on('script[type="application/ld+json"]', { element(e) { e.remove(); } })
+    .on($q.bo, { element(e) { e.remove(); } })
+    .on($q.bp, { element(e) { e.remove(); } })
     .on('head', { element(e) { e.append(tags, { html: true }); } })
     .on('main', { element(e) { e.setInnerContent(methodBody(lang), { html: true }); } })
-    .on('details.lsw a[hreflang]', { element(e) { const l = e.getAttribute('hreflang'); if (LANGS.includes(l)) e.setAttribute('href', pre(l) + path); } })
-    .transform(new Response(sh.body, { headers: { 'content-type': 'text/html; charset=utf-8' } }));
-  return new Response(await res.text(), { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=600' } });
+    .on($q.bq, { element(e) { const l = e.getAttribute($q.br); if (LANGS.includes(l)) e.setAttribute('href', pre(l) + path); } })
+    .transform(new Response(sh.body, { headers: { 'content-type': $q.bs } }));
+  return new Response(await res.text(), { status: 200, headers: { 'content-type': $q.bs, 'cache-control': $q.ae } });
 }

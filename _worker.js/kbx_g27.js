@@ -1,4 +1,5 @@
 // comments: _notes/kolaboro-worker-comments.txt
+const $q = TB.kbx_g27__q, $s = TB.kbx_g27__s, $t = TB.kbx_g27__t;   // n40 k46: short names for this module's string tables (strings in /data/i18n/k19s.json, k17s.json, k46s.json)
 import { data as namedData, handoverOf, overdueOf, movedOf, OV_MIN, esc, pre, fd, okHttp, isListing } from './kbx_named.js';
 import { trData } from './kbx_tr.js';
 import { mkName, hyear } from './kbx_hdate.js';
@@ -17,7 +18,7 @@ zh: { h: '搜索最多的项目', s: '搜索量最高的期房项目，每个页
 ar: { h: 'المشاريع الأكثر بحثًا', s: 'المشاريع على المخطط الأكثر بحثًا، لكل صفحة موعد التسليم وحالة الترخيص والمطوّر، ولكل معلومة مصدرها.', all: 'كل المشاريع الـ300 حسب المكان', inm: 'المشاريع الأكثر بحثًا في {p}' }
 };
 const t = (lang, k, v) => { let s = (T[lang] || T.en)[k] || T.en[k]; if (v) s = s.replace(/\{(\w+)\}/g, (m, a) => v[a] != null ? v[a] : m); return s; };
-const bdi = s => '<bdi>' + esc(s) + '</bdi>';
+const bdi = s => '<bdi>' + esc(s) + $q.a;
 const slugA = s => String(s || '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
 let IX = null, TOP = null, LOADING = null;
 let EMB = null;
@@ -37,13 +38,13 @@ if (IX) return IX;
 if (!LOADING) { LOADING = namedData(env).then(ix => { IX = ix; return ix; }).catch(() => null).finally(() => { LOADING = null; }); if (ctx && ctx.waitUntil) ctx.waitUntil(LOADING); }
 return null;
 }
-const li = (x, lang) => '<li><a href="' + pre(lang) + '/projects/' + x.s + '/">' + bdi(x.n) + '</a> <small>' + bdi(mkName(x.mk, lang)) + '</small></li>';
+const li = (x, lang) => $q.b + pre(lang) + $q.c + x.s + '/">' + bdi(x.n) + $q.d + bdi(mkName(x.mk, lang)) + $q.e;
 function topHtml(ix, lang, kind) {
 const P = build(ix), key = lang + '|' + kind; let h = P.html.get(key); if (h) return h;
-const head = TB.kbx_g27__t.k0 + (lang === 'ar' ? ' dir="rtl"' : '') + '><div class="wrap"><h2>' + esc(t(lang, 'h')) + '</h2><p class="kg27-s">' + esc(t(lang, 's')) + '</p>';
-if (kind === 'home') h = head + '<ul class="kg27-l">' + P.L.slice(0, 30).map(x => li(x, lang)).join('') + '</ul><p><a href="' + pre(lang) + TB.kbx_g27__t.k1 + esc(t(lang, 'all')) + '</a></p></div></section>';
-else h = head + [...P.byMk.entries()].sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0])).map(([mk, L]) => '<h3>' + bdi(mkName(mk, lang)) + '</h3><ul class="kg27-l">' + L.map(x => '<li><a href="' + pre(lang) + '/projects/' + x.s + '/">' + bdi(x.n) + '</a></li>').join('') + '</ul>').join('') + '</div></section>';
-h = TB.kbx_g27__s.CSS + h; P.html.set(key, h); return h;
+const head = $t.k0 + (lang === 'ar' ? $q.f : '') + $q.g + esc(t(lang, 'h')) + $q.h + esc(t(lang, 's')) + '</p>';
+if (kind === 'home') h = head + $q.i + P.L.slice(0, 30).map(x => li(x, lang)).join('') + $q.j + pre(lang) + $t.k1 + esc(t(lang, 'all')) + $q.k;
+else h = head + [...P.byMk.entries()].sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0])).map(([mk, L]) => '<h3>' + bdi(mkName(mk, lang)) + $q.l + L.map(x => $q.b + pre(lang) + $q.c + x.s + '/">' + bdi(x.n) + $q.m).join('') + '</ul>').join('') + $q.n;
+h = $s.CSS + h; P.html.set(key, h); return h;
 }
 export function topReady(env, ctx, lang, path) {
 const ix = ready(env, ctx);
@@ -52,7 +53,7 @@ try { return topHtml(ix, LANGS.includes(lang) ? lang : 'en', kind); } catch (e) 
 }
 const pct = (a, b) => b ? Math.round(a / b * 100) : 0;
 const nf = n => Number(n).toLocaleString('en-GB');
-const srcL = (u, l) => ' <a class="src" href="' + u + '">' + esc(l) + '</a>';
+const srcL = (u, l) => $q.o + u + '">' + esc(l) + '</a>';
 let MK = null;
 async function marketFacts(env) {
 const [ix, tri] = await Promise.all([namedData(env), trData(env).catch(() => null)]);
@@ -73,11 +74,11 @@ const pr = L.filter(x => (x.fx || {}).price_min).length, own = L.filter(x => okH
 const sc = M.tri ? L.map(x => { const r = M.tri.rows.get(x.id); return r ? r.score : null; }).filter(v => v != null).sort((a, b) => a - b) : [];
 const med = sc.length ? (sc.length % 2 ? sc[(sc.length - 1) / 2] : Math.round((sc[sc.length / 2 - 1] + sc[sc.length / 2]) / 2)) : null;
 const d = fd(String(ix.updated || '').slice(0, 10), 'en'), s = n === 1 ? '' : 's';
-const parts = ['<b>' + esc(mk) + ' in numbers, as of ' + esc(d) + ':</b> we track ' + nf(n) + ' off-plan project' + s + ' from ' + nf(devs) + ' developer' + (devs === 1 ? '' : 's') + '.',
-nf(pn) + ' (' + pct(pn, n) + TB.kbx_g27__t.k2 + nf(hN) + ' (' + pct(hN, n) + '%) a handover date' + (yTop ? ', most often ' + yTop[0] + ' (' + nf(yTop[1]) + ')' : '') + '.',
-TB.kbx_g27__t.k3 + nf(mv) + TB.kbx_g27__t.k4 + nf(ov) + (ov ? ' (<a href="/handover/overdue/' + (ov >= OV_MIN ? slugA(mk) + '/' : '') + '">overdue report</a>)' : '') + '.',
-nf(pr) + ' publish a price; for ' + nf(own) + TB.kbx_g27__t.k5 + (med != null ? ' Median transparency score: ' + med + '/100.' : '')];
-return '<p class="kg27-p">' + parts.join(' ') + srcL('/data/named.json', 'named.json') + srcL('/data/promises.json', 'promises.json') + srcL('/methods/transparency-score/', 'method') + '</p>';
+const parts = ['<b>' + esc(mk) + $q.p + esc(d) + $q.q + nf(n) + $q.r + s + $q.s + nf(devs) + $q.t + (devs === 1 ? '' : 's') + '.',
+nf(pn) + ' (' + pct(pn, n) + $t.k2 + nf(hN) + ' (' + pct(hN, n) + $q.u + (yTop ? $q.v + yTop[0] + ' (' + nf(yTop[1]) + ')' : '') + '.',
+$t.k3 + nf(mv) + $t.k4 + nf(ov) + (ov ? $q.w + (ov >= OV_MIN ? slugA(mk) + '/' : '') + $q.x : '') + '.',
+nf(pr) + $q.y + nf(own) + $t.k5 + (med != null ? $q.z + med + '/100.' : '')];
+return $q.A + parts.join(' ') + srcL($q.B, $q.C) + srcL($q.D, $q.E) + srcL($q.F, $q.G) + '</p>';
 }
 export async function marketBlock(env, key) {
 let M; try { M = await marketFacts(env); } catch (e) { return ''; }
@@ -86,6 +87,6 @@ if (!mk) return '';
 let h = M.html.get(mk); if (h != null) return h;
 const P = build(M.ix), top = P.byMk.get(mk) || [];
 const para = M.big.has(mk) ? paraHtml(M, mk) : '';
-h = para || top.length ? TB.kbx_g27__s.CSS + TB.kbx_g27__t.k6 + para + (top.length ? '<h2>' + esc(t('en', 'inm', { p: mk })) + '</h2><ul class="kg27-l">' + top.map(x => '<li><a href="/projects/' + x.s + '/">' + bdi(x.n) + '</a>' + (x.dv ? ' <small>' + bdi(x.dv) + '</small>' : '') + '</li>').join('') + '</ul>' : '') + '</div></section>' : '';
+h = para || top.length ? $s.CSS + $t.k6 + para + (top.length ? '<h2>' + esc(t('en', 'inm', { p: mk })) + $q.H + top.map(x => $q.I + x.s + '/">' + bdi(x.n) + '</a>' + (x.dv ? $q.J + bdi(x.dv) + $q.K : '') + '</li>').join('') + '</ul>' : '') + $q.n : '';
 M.html.set(mk, h); return h;
 }

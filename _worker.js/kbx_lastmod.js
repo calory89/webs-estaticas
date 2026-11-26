@@ -1,10 +1,11 @@
 // comments: _notes/kolaboro-worker-comments.txt
+const $q = TB.kbx_lastmod__q, $s = TB.kbx_lastmod__s, $t = TB.kbx_lastmod__t;   // n40 k46: short names for this module's string tables (strings in /data/i18n/k19s.json, k17s.json, k46s.json)
 import { TB } from './kbx_strings.js';
 const ORIGIN = 'https://kolaboro.com';
 const VOL = new Set(['checked', 'invited', 'seen', 'sealed']);
 export const PARTS = ['n', 'c', 'p', 'f', 's'];
 function canon(v, top) {   // stable JSON: sorted keys, volatile date keys dropped; at the top level also the page-copy hashes
-  if (v === null || typeof v !== 'object') return JSON.stringify(v === undefined ? null : v);
+  if (v === null || typeof v !== $q.a) return JSON.stringify(v === undefined ? null : v);
   if (Array.isArray(v)) return '[' + v.map(x => canon(x)).join(',') + ']';
   const ks = Object.keys(v).filter(k => !VOL.has(k) && !(top && (k === 'sha' || k === 'fp')) && v[k] !== undefined).sort();
   return '{' + ks.map(k => JSON.stringify(k) + ':' + canon(v[k])).join(',') + '}';
@@ -40,7 +41,7 @@ export function quickLastmod(q, pin, kind, key) {
 if (!q || !q.named || !q.cases || !q.caseBy || !q.prom || !q.find || !q.prog || !pin) return null;
 let ix = QIX.get(q.named);
 if (!ix) { ix = { slug: new Map(), dev: new Map() }; for (const x of q.named.projects || []) { if (!x || !x.id) continue; if (x.s) ix.slug.set(x.s, x); if (x.dvs) { if (!ix.dev.has(x.dvs)) ix.dev.set(x.dvs, []); ix.dev.get(x.dvs).push(x); } } QIX.set(q.named, ix); }
-const xs = kind === 'projects' ? [ix.slug.get(key)].filter(Boolean) : kind === 'developers' ? ix.dev.get(key) || [] : [];
+const xs = kind === $q.b ? [ix.slug.get(key)].filter(Boolean) : kind === $q.c ? ix.dev.get(key) || [] : [];
 if (!xs.length) return null;
 const P = pin.p || {}, today = new Date().toISOString().slice(0, 10);
 const part = { n: null, c: id => q.caseBy.get(id), p: id => (q.prom.projects || {})[id], f: id => ((q.find.projects || {})[id] || {}).f, s: id => (q.prog.projects || {})[id] };
@@ -50,14 +51,14 @@ for (const x of xs) { const d = one(q.raw ? q.raw(x) : x, P, part, fileDay, toda
 return best;
 }
 let PIN = null;
-export async function pinFile(env) { if (PIN) return PIN; const v = await (PINP || (PINP = json(env, 'lastmod.json').finally(() => { PINP = null; }))); if (v) PIN = v; return v; }
+export async function pinFile(env) { if (PIN) return PIN; const v = await (PINP || (PINP = json(env, $q.d).finally(() => { PINP = null; }))); if (v) PIN = v; return v; }
 let PINP = null;
 let MEMO = null;
 let NET = false;
 async function json(env, name) {
-  try { const r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/' + name)); if (r.ok) return await r.json(); } catch (e) {}
+  try { const r = await env.ASSETS.fetch(new Request(ORIGIN + $q.e + name)); if (r.ok) return await r.json(); } catch (e) {}
   NET = true;
-  try { const r = await fetch(ORIGIN + '/data/' + name, { cf: { cacheTtl: 300, cacheEverything: true } }); if (r.ok) return await r.json(); } catch (e) {}
+  try { const r = await fetch(ORIGIN + $q.f + name, { cf: { cacheTtl: 300, cacheEverything: true } }); if (r.ok) return await r.json(); } catch (e) {}
   return null;
 }
 export async function trueLastmod(env) {
@@ -68,7 +69,7 @@ return BUSY = trueLastmod0(env).then(v => { BUSY = null; return v; }, e => { BUS
 let BUSY = null;
 async function trueLastmod0(env) {
 NET = false;
-const [named, cases, prom, find, prog, pin] = await Promise.all(['named.json', 'bali-cases.json', 'promises.json', 'findings-by-project.json', 'construction-progress.json', 'lastmod.json'].map(n => json(env, n)));
+const [named, cases, prom, find, prog, pin] = await Promise.all([$q.g, $q.h, $q.i, $q.j, $q.k, $q.d].map(n => json(env, n)));
 const r = compute({ named, cases, prom, find, prog }, pin);
 const dev = new Map(), slug = new Map();
 for (const x of (named && named.projects) || []) { const d = r.byId.get(x.id); if (x.s && d) slug.set(x.s, d); if (x.dvs && d && (!dev.has(x.dvs) || d > dev.get(x.dvs))) dev.set(x.dvs, d); }
@@ -77,21 +78,21 @@ MEMO = { t: Date.now(), v, a: !NET }; return v;
 }
 export async function lastmodRoute(env) {
 const v = await trueLastmod(env);
-const body = { version: 'lastmod-1', updated: new Date().toISOString().slice(0, 16) + 'Z', method: TB.kbx_lastmod__s.k0, files: v.files, previous_pin: v.pinned, p: v.state };
-return new Response(JSON.stringify(body), { headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store', 'x-robots-tag': 'noindex' } });
+const body = { version: $q.l, updated: new Date().toISOString().slice(0, 16) + 'Z', method: $s.k0, files: v.files, previous_pin: v.pinned, p: v.state };
+return new Response(JSON.stringify(body), { headers: { 'content-type': $q.m, 'cache-control': $q.n, 'x-robots-tag': $q.o } });
 }
 export async function seoLd(pg, env, kind, key, q) {
-if (!pg || !pg.ld || !Array.isArray(pg.ld['@graph']) || !pg.feed || !pg.canon) return pg;
+if (!pg || !pg.ld || !Array.isArray(pg.ld[$q.p]) || !pg.feed || !pg.canon) return pg;
 let d = null;
 if (q && !(MEMO && MEMO.a)) { try { d = quickLastmod(q, await pinFile(env), kind, key); } catch (e) { d = null; } }
-if (!d) { const T = await trueLastmod(env).catch(() => null); d = T && (kind === 'projects' ? T.slug.get(key) : kind === 'developers' ? T.developer.get(key) : null); }
-const G = pg.ld['@graph'], img = ORIGIN + '/og' + pg.feed.path.replace(/\/$/, '') + '.png', id = pg.canon + '#og';
+if (!d) { const T = await trueLastmod(env).catch(() => null); d = T && (kind === $q.b ? T.slug.get(key) : kind === $q.c ? T.developer.get(key) : null); }
+const G = pg.ld[$q.p], img = ORIGIN + '/og' + pg.feed.path.replace(/\/$/, '') + '.png', id = pg.canon + '#og';
 for (const n of G) {
-if (!n || typeof n !== 'object') continue;
-if (d && (n['@type'] === 'WebPage' || n['@type'] === 'ProfilePage' || n['@type'] === 'Dataset') && n.dateModified) n.dateModified = d;
-if ((n['@type'] === 'WebPage' || n['@type'] === 'ProfilePage') && !n.primaryImageOfPage) n.primaryImageOfPage = { '@id': id };
+if (!n || typeof n !== $q.a) continue;
+if (d && (n['@type'] === $q.q || n['@type'] === $q.r || n['@type'] === $q.s) && n.dateModified) n.dateModified = d;
+if ((n['@type'] === $q.q || n['@type'] === $q.r) && !n.primaryImageOfPage) n.primaryImageOfPage = { '@id': id };
 }
-if (!G.some(n => n && n['@id'] === id)) G.push({ '@type': 'ImageObject', '@id': id, contentUrl: img, url: img, encodingFormat: 'image/png', width: 1200, height: 630, caption: 'Kolaboro facts card: ' + pg.feed.name, creditText: 'Kolaboro', creator: { '@id': ORIGIN + '/#org' }, copyrightNotice: 'Kolaboro, CC BY 4.0', license: TB.kbx_lastmod__t.k0, acquireLicensePage: ORIGIN + '/data-policy/' });
+if (!G.some(n => n && n['@id'] === id)) G.push({ '@type': $q.t, '@id': id, contentUrl: img, url: img, encodingFormat: $q.u, width: 1200, height: 630, caption: $q.v + pg.feed.name, creditText: $q.w, creator: { '@id': ORIGIN + '/#org' }, copyrightNotice: $q.x, license: $t.k0, acquireLicensePage: ORIGIN + $q.y });
 if (d) pg.lastmod = d;
 return pg;
 }

@@ -1,8 +1,9 @@
 // comments: _notes/kolaboro-worker-comments.txt
+const $q = TB.kbx_net__q, $s = TB.kbx_net__s, $t = TB.kbx_net__t;   // n40 k46: short names for this module's string tables (strings in /data/i18n/k19s.json, k17s.json, k46s.json)
 import { TB } from './kbx_strings.js';
 import { data as namedData, isListing, host, pre, esc } from './kbx_named.js';
 import { rpc } from './kolaboro.js';
-import { LAND } from './kbx_net_land.js';
+import './kbx_net_land.js';
 import { familyData } from './kbx_named_plus.js';
 import { webGroups } from './kbx_web.js';
 const ORIGIN = 'https://kolaboro.com';
@@ -14,15 +15,15 @@ let MEMO = {};
 async function file(env, name) {
   const m = MEMO[name]; if (m && Date.now() - m.t < 600000) return m.v;
   let r = null;
-  try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/' + name)); } catch (e) { r = null; }
-  if (!r || !r.ok) r = await fetch(ORIGIN + '/data/' + name, { cf: { cacheTtl: 300, cacheEverything: true } });
+  try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + $q.a + name)); } catch (e) { r = null; }
+  if (!r || !r.ok) r = await fetch(ORIGIN + $q.b + name, { cf: { cacheTtl: 300, cacheEverything: true } });
   if (!r.ok) throw new Error(name + ' ' + r.status);
   const v = await r.json(); MEMO[name] = { t: Date.now(), v }; return v;
 }
 const fold = s => String(s || '').normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase();
 const LEGAL = /\b(pt|cv|llc|l\.?l\.?c|ltd|limited|plc|llp|inc|corp|corporation|gmbh|ag|kg|sa|s\.a|sas|sarl|sl|s\.l|slu|sau|srl|spa|bv|nv|oy|ab|as|a\/s|aps|sro|s\.r\.o|kft|zrt|sp\.? z o\.?o|ooo|jsc|pjsc|pcl|co\.?,? ltd|sdn bhd|bhd|pte|pty|fze|fzco|fz-llc|dmcc|s\.a\.p\.i|sapi|s de rl|de c\.?v|lda|unipessoal|unipersonal|eood|ood|doo|d\.o\.o|ltda|eirl|sociedad|company)\b/;
 function legalNames(s) {
-if (!s || typeof s !== 'string') return [];
+if (!s || typeof s !== $q.c) return [];
 const out = [];
 for (let part of s.split(/;|\band\b|\s\/\s/)) {
 part = part.replace(/\(.*$/, '').replace(/,\s*(?:subsidiary|part of|per |nif|cif|rfc|id |reg|registration|registered|cr |cin|uen|nib|npwp|tax|company no|licen[cs]e|trade).*$/i, '').trim();
@@ -34,7 +35,7 @@ out.push({ k, label: part.replace(/\s+/g, ' ').trim() });
 return out;
 }
 function regIds(s) {
-if (!s || typeof s !== 'string') return [];
+if (!s || typeof s !== $q.c) return [];
 const out = new Set();
 for (const m of s.matchAll(/\b([A-Z]{0,4}[- ]?[0-9][0-9A-Z-]{5,24})\b/g)) {
 const t = m[1].replace(/[- ]/g, '').toUpperCase(); const digits = (t.match(/\d/g) || []).length;
@@ -43,7 +44,7 @@ if (digits >= 6 && t.length <= 20 && !/^(19|20)\d{2}(0[1-9]|1[0-2])?$/.test(t)) 
 return [...out];
 }
 function addresses(s) {
-if (!s || typeof s !== 'string') return [];
+if (!s || typeof s !== $q.c) return [];
 const out = [];
 for (const seg of s.split(/[(),;]/)) {
 const f = fold(seg).replace(/[^a-z0-9 ]+/g, ' ').replace(/\bno\b/g, ' ').replace(/\s+/g, ' ').trim();
@@ -65,7 +66,7 @@ if (!x.dvs || !x.dv) continue;
 let d = devs.get(x.dvs); if (!d) devs.set(x.dvs, d = { s: x.dvs, n: x.dv, p: [], mk: new Map(), co: new Set() });
 d.p.push(x); d.mk.set(x.mk, (d.mk.get(x.mk) || 0) + 1); if (x.co) d.co.add(x.co);
 }
-const TYPES = ['company', 'regid', 'domain', 'address', 'name', 'web', 'family'];
+const TYPES = [$q.d, 'regid', $q.e, $q.f, 'name', 'web', $q.g];
 const idx = Object.fromEntries(TYPES.map(t => [t, new Map()]));
 const add = (t, key, dev, x, label) => {
     if (!key) return; const m = idx[t]; let e = m.get(key); if (!e) m.set(key, e = new Map());
@@ -73,7 +74,7 @@ const add = (t, key, dev, x, label) => {
   };
 for (const d of devs.values()) for (const x of d.p) {
 const fx = x.fx || {};
-for (const ln of legalNames(fx.developer_company)) add('company', ln.k, d.s, x, ln.label);
+for (const ln of legalNames(fx.developer_company)) add($q.d, ln.k, d.s, x, ln.label);
 for (const id of regIds(fx.developer_company)) add('regid', id, d.s, x, id);
 const toks = [...new Set((fold(d.n) + ' ' + fold(x.n)).split(/[^a-z0-9]+/).filter(w => w.length >= 4 && !GENERIC.has(w)))];
 for (const u of [x.url, x.du]) {
@@ -81,23 +82,23 @@ if (!u || isListing(u)) continue;
 const rd = regDomain(host(u)); if (!rd) continue;
 const label = rd.split('.')[0].replace(/-/g, '');
 if (!toks.some(w => label.includes(w))) continue;
-add('domain', rd, d.s, x, rd);
+add($q.e, rd, d.s, x, rd);
 }
-for (const a of addresses(fx.developer_hq)) add('address', a.k, d.s, x, a.label);
+for (const a of addresses(fx.developer_hq)) add($q.f, a.k, d.s, x, a.label);
 const nk = nameKey(x.n); if (nk.length >= 6) add('name', nk + '|' + (x.co || x.mk), d.s, x, x.n);
 }
 for (const g of (web && web.groups) || []) for (const s of g.devs || []) { const d = devs.get(s); if (!d) continue; const dm = (g.doms || []).filter(x => g.dom && g.dom[x] === s); add('web', g.t + ':' + g.v, s, d.p[0], g.label + (dm.length ? ' (' + dm.join(', ') + ')' : '')); }
-const FD = (fam && fam.devs) || {}, WHY = { parent: 'direct parent or child', child: 'direct parent or child', ultimate: 'ultimate parent', same_parent: 'same direct parent', same_ultimate: 'same ultimate parent' };
+const FD = (fam && fam.devs) || {}, WHY = { parent: $q.h, child: $q.h, ultimate: $q.i, same_parent: $q.j, same_ultimate: $q.k };
 for (const l of (fam && fam.links) || []) {
 const da = devs.get(l.a), db = devs.get(l.b); if (!da || !db || !FD[l.a] || !FD[l.b]) continue;
-const pk = l.why.includes('same_parent') ? 'parent' : l.why.includes('same_ultimate') ? 'ultimate' : null;
-const v = l.why.map(w => WHY[w]).filter((w, i, a) => a.indexOf(w) === i).join(', ') + ' (LEI ' + FD[l.a].lei + ' / ' + FD[l.b].lei + (pk && FD[l.a][pk] ? '; parent ' + FD[l.a][pk].legal : '') + ')';
-add('family', 'gl:' + l.a + '|' + l.b, l.a, da.p[0], v); add('family', 'gl:' + l.a + '|' + l.b, l.b, db.p[0], v);
+const pk = l.why.includes($q.l) ? $q.m : l.why.includes($q.n) ? $q.o : null;
+const v = l.why.map(w => WHY[w]).filter((w, i, a) => a.indexOf(w) === i).join(', ') + $q.p + FD[l.a].lei + ' / ' + FD[l.b].lei + (pk && FD[l.a][pk] ? $q.q + FD[l.a][pk].legal : '') + ')';
+add($q.g, 'gl:' + l.a + '|' + l.b, l.a, da.p[0], v); add($q.g, 'gl:' + l.a + '|' + l.b, l.b, db.p[0], v);
 }
 const links = new Map(), hubs = Object.fromEntries(TYPES.map(t => [t, 0])), shared = Object.fromEntries(TYPES.map(t => [t, 0]));
 for (const t of TYPES) for (const [key, e] of idx[t]) {
 if (e.size < 2) continue;
-if (t !== 'family' && e.size > (t === 'web' ? 8 : HUB)) { hubs[t]++; continue; }
+if (t !== $q.g && e.size > (t === 'web' ? 8 : HUB)) { hubs[t]++; continue; }
 shared[t]++;
 const ds = [...e.keys()].sort();
 for (let i = 0; i < ds.length; i++) for (let j = i + 1; j < ds.length; j++) {
@@ -124,7 +125,7 @@ stats: { projects: P.length, developers: nodes.length, linked_developers: linked
 const T = TB.kbx_net_T ;
 const LT = TB.kbx_net_LT ;
 const tr = (D, lang) => Object.assign({}, D.en, D[lang] || {});
-function out(o, s, cc) { return new Response(JSON.stringify(o), { status: s || 200, headers: { 'content-type': 'application/json; charset=utf-8', 'access-control-allow-origin': '*', 'cache-control': cc || 'public, max-age=600', 'x-content-type-options': 'nosniff' } }); }
+function out(o, s, cc) { return new Response(JSON.stringify(o), { status: s || 200, headers: { 'content-type': $q.r, 'access-control-allow-origin': '*', 'cache-control': cc || $q.s, 'x-content-type-options': $q.t } }); }
 let GMEMO = null;
 async function graph(env) {
 const ix = await namedData(env);
@@ -134,42 +135,42 @@ const key = (ix.named.updated || '') + '|' + ix.P.length + '|' + (web.updated ||
 if (GMEMO && GMEMO.key === key) return GMEMO.g;
 const g = buildGraph(ix.P, web, fam);
 g.version = GRAPH_V; g.updated = ix.named.updated || null; g.generated_at = new Date().toISOString();
-g.source = { named: ORIGIN + '/data/named.json', pages: ORIGIN + '/projects/<slug>/', licence: 'CC BY 4.0, Kolaboro' };
-g.types = { company: 'same legal company name', regid: 'same company registry or tax number', domain: 'same own-website registrable domain', address: 'same street-level company address', name: 'same project name in the same country', web: TB.kbx_net__s.k0 };
+g.source = { named: ORIGIN + $q.u, pages: ORIGIN + $q.v, licence: $q.w };
+g.types = { company: $q.x, regid: $q.y, domain: $q.z, address: $q.A, name: $q.B, web: $s.k0 };
 g.web_updated = web.updated || null;
-g.types.family = TB.kbx_net__s.k1;
+g.types.family = $s.k1;
 g.family_updated = (fam && fam.updated) || null;
-g.not_linked = [TB.kbx_net__t.k0, TB.kbx_net__s.k2];
-g.hub_rule = 'identifiers shared by more than ' + HUB + TB.kbx_net__t.k1;
+g.not_linked = [$t.k0, $s.k2];
+g.hub_rule = $q.C + HUB + $t.k1;
 GMEMO = { key, g }; return g;
 }
 let LMEMO = { t: 0, v: null };
 async function live(env) {
   if (LMEMO.v && Date.now() - LMEMO.t < 8000) return LMEMO.v;
-  const [r, sim] = await Promise.all([rpc('kolaboro_xray_live', { p_hours: 24 }), file(env, 'similar.json').catch(() => ({}))]);
+  const [r, sim] = await Promise.all([rpc($q.D, { p_hours: 24 }), file(env, $q.E).catch(() => ({}))]);
   const mp = (sim.market_points && sim.market_points.markets) || {};
-  const pt = m => { const p = m && mp[m]; return p && typeof p.lat === 'number' ? [Math.round(p.lat * 100) / 100, Math.round(p.lng * 100) / 100] : null; };
+  const pt = m => { const p = m && mp[m]; return p && typeof p.lat === $q.F ? [Math.round(p.lat * 100) / 100, Math.round(p.lng * 100) / 100] : null; };
   const recent = ((r && r.recent) || []).map(e => { const mk = e.mk && !/sumba/i.test(e.mk) ? e.mk : null; return { t: e.t, mk, p: pt(mk), c: e.c || 0 }; });
-  const v = { totals: (r && r.totals) || null, recent, since: (r && r.since) || null, at: new Date().toISOString(), source: 'kolaboro_xrays via public function kolaboro_xray_live (time to the minute, market, card count only)', points: 'market public points from /data/similar.json (Natural Earth, GeoNames)' };
+  const v = { totals: (r && r.totals) || null, recent, since: (r && r.since) || null, at: new Date().toISOString(), source: $q.G, points: $q.H };
   LMEMO = { t: Date.now(), v }; return v;
 }
 function graphBody(lang) {
 const t = tr(T, lang), p = pre(lang);
-const sw = (ty) => ({ company: TB.kbx_net__s.k3, regid: TB.kbx_net__s.k4, domain: TB.kbx_net__s.k5, address: TB.kbx_net__s.k6, name: TB.kbx_net__s.k7, web: TB.kbx_net__s.k8, family: TB.kbx_net__s.k9 })[ty];
-const types = ['company', 'regid', 'domain', 'address', 'name', 'web', 'family'];
-return TB.kbx_net__t.k2 + lang + '" data-pre="' + p + '" data-t="' + esc(JSON.stringify(t)) + '">' +
-TB.kbx_net__t.k3 + p + TB.kbx_net__t.k4 + esc(t.g_title) + '</span></nav>' +
-'<h1>' + esc(t.g_title) + '</h1><p class="lead">' + esc(t.g_lead) + '</p>' +
-TB.kbx_net__t.k5 + esc(t.s_dev) + TB.kbx_net__t.k6 + esc(t.s_linked) + TB.kbx_net__t.k7 + esc(t.s_links) + TB.kbx_net__t.k8 + esc(t.s_clusters) + '</span></li></ul></header>' +
-TB.kbx_net__s.k10 + esc(t.g_title) + TB.kbx_net__t.k9 + esc(t.loading) + '</div>' +
-TB.kbx_net__t.k10 + esc(t.reset) + '</button></div></div>' +
-TB.kbx_net__t.k11 + esc(t.search) + TB.kbx_net__t.k12 + esc(t.search_ph) + TB.kbx_net__s.k11 +
-TB.kbx_net__t.k13 + types.map(ty => TB.kbx_net__t.k14 + ty + '"> ' + sw(ty) + ' ' + esc(t['t_' + ty]) + ' <small data-ct="' + ty + '"></small></label></li>').join('') +
-TB.kbx_net__t.k15 + esc(t.show_all) + '</label></li></ul></fieldset>' +
-TB.kbx_net__t.k16 + esc(t.pick) + '</p></div></aside></div>' +
-'<div class="kn-how k-prose"><h2>' + esc(t.how_h) + '</h2><ul>' + ['m1', 'm2', 'm3', 'm4', 'm5', 'm6', 'm9', 'm10', 'm7', 'm8'].map(k => '<li>' + esc(t[k] || T.en[k]) + '</li>').join('') + '</ul>' +
-'<p><a href="/api/x/net/graph">' + esc(t.data) + TB.kbx_net__s.k12 +
-'<div class="kn-all"><h2>' + esc(t.table_h) + TB.kbx_net__s.k13 + esc(t.dev) + '</th><th>' + esc(t.dev) + '</th><th>' + esc(t.via) + TB.kbx_net__t.k17;
+const sw = (ty) => ({ company: $s.k3, regid: $s.k4, domain: $s.k5, address: $s.k6, name: $s.k7, web: $s.k8, family: $s.k9 })[ty];
+const types = [$q.d, 'regid', $q.e, $q.f, 'name', 'web', $q.g];
+return $t.k2 + lang + $q.I + p + $q.J + esc(JSON.stringify(t)) + '">' +
+$t.k3 + p + $t.k4 + esc(t.g_title) + $q.K +
+'<h1>' + esc(t.g_title) + $q.L + esc(t.g_lead) + '</p>' +
+$t.k5 + esc(t.s_dev) + $t.k6 + esc(t.s_linked) + $t.k7 + esc(t.s_links) + $t.k8 + esc(t.s_clusters) + $q.M +
+$s.k10 + esc(t.g_title) + $t.k9 + esc(t.loading) + $q.N +
+$t.k10 + esc(t.reset) + $q.O +
+$t.k11 + esc(t.search) + $t.k12 + esc(t.search_ph) + $s.k11 +
+$t.k13 + types.map(ty => $t.k14 + ty + '"> ' + sw(ty) + ' ' + esc(t['t_' + ty]) + $q.P + ty + $q.Q).join('') +
+$t.k15 + esc(t.show_all) + $q.R +
+$t.k16 + esc(t.pick) + $q.S +
+$q.T + esc(t.how_h) + $q.U + ['m1', 'm2', 'm3', 'm4', 'm5', 'm6', 'm9', 'm10', 'm7', 'm8'].map(k => '<li>' + esc(t[k] || T.en[k]) + '</li>').join('') + '</ul>' +
+$q.V + esc(t.data) + $s.k12 +
+$q.W + esc(t.table_h) + $s.k13 + esc(t.dev) + $q.X + esc(t.dev) + $q.X + esc(t.via) + $t.k17;
 }
 const GRAPH_JS = String.raw`(function(){
 var R=document.querySelector('[data-kn14]');if(!R)return;var T=JSON.parse(R.getAttribute('data-t')),PRE=R.getAttribute('data-pre'),RTL=document.documentElement.dir==='rtl';
@@ -239,13 +240,13 @@ var rt,lw=0;addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(
 })();`;
 function liveBody(lang) {
 const t = tr(LT, lang), p = pre(lang);
-return TB.kbx_net__t.k18 + lang + '" data-t="' + esc(JSON.stringify(t)) + TB.kbx_net__t.k19 +
-TB.kbx_net__s.k14 + p + TB.kbx_net__t.k20 + esc(t.l_title) + '</span></nav><h1>' + esc(t.l_title) + '</h1><p class="lead">' + esc(t.l_lead) + '</p></header>' +
-TB.kbx_net__t.k21 + esc(t.l_title) + TB.kbx_net__t.k22 + esc(t.pause) + '</button></div>' +
-TB.kbx_net__t.k23 + esc(t.c_all) + TB.kbx_net__t.k24 + esc(t.c_24) + TB.kbx_net__t.k25 + esc(t.c_1) + TB.kbx_net__t.k26 + esc(t.c_mk) + ' (24 h)</span></li></ul>' +
-'<h2>' + esc(t.recent) + TB.kbx_net__t.k27 + esc(t.loading) + '</span></li></ol>' +
-'<p class="kl-note">' + esc(t.count_note) + TB.kbx_net__t.k28 + p + '/check/">' + esc(t.run) + '</a></div></div></div></section>' +
-TB.kbx_net__t.k29 + esc(t.how_h) + '</h2><ul><li>' + esc(t.h1) + '</li><li>' + esc(t.h2) + '</li><li>' + esc(t.h3) + '</li><li>' + esc(t.h4) + '</li><li>' + esc(t.land) + TB.kbx_net__s.k15 + esc(t.data) + '</a></p></section></div>';
+return $t.k18 + lang + $q.J + esc(JSON.stringify(t)) + $t.k19 +
+$s.k14 + p + $t.k20 + esc(t.l_title) + $q.Y + esc(t.l_title) + $q.L + esc(t.l_lead) + $q.Z +
+$t.k21 + esc(t.l_title) + $t.k22 + esc(t.pause) + $q.aa +
+$t.k23 + esc(t.c_all) + $t.k24 + esc(t.c_24) + $t.k25 + esc(t.c_1) + $t.k26 + esc(t.c_mk) + $q.ab +
+'<h2>' + esc(t.recent) + $t.k27 + esc(t.loading) + $q.ac +
+$q.ad + esc(t.count_note) + $t.k28 + p + $q.ae + esc(t.run) + $q.af +
+$t.k29 + esc(t.how_h) + $q.ag + esc(t.h1) + $q.ah + esc(t.h2) + $q.ah + esc(t.h3) + $q.ah + esc(t.h4) + $q.ah + esc(t.land) + $s.k15 + esc(t.data) + $q.ai;
 }
 const LIVE_JS = String.raw`(function(){
 var R=document.querySelector('[data-kl14]');if(!R)return;var T=JSON.parse(R.getAttribute('data-t'));
@@ -277,41 +278,41 @@ function poll(){fetch('/api/x/net/live',{cache:'no-store'}).then(function(r){if(
 size();addEventListener('resize',function(){size();if(RM)draw(0)});poll();setInterval(function(){if(!document.hidden)poll()},15000);if(RM)draw(0);else requestAnimationFrame(loop);
 })();`;
 async function assemble(shellRes, o) {
-const alts = LANGS.map(l => '<link rel="alternate" hreflang="' + l + '" href="' + ORIGIN + pre(l) + o.path + '">').join('') + TB.kbx_net__t.k30 + ORIGIN + o.path + '">';
-const tags = '<title>' + esc(o.title) + TB.kbx_net__t.k31 + esc(o.desc) + '"><link rel="canonical" href="' + ORIGIN + pre(o.lang) + o.path + '">' + alts +
-TB.kbx_net__s.k16 + esc(o.title) + TB.kbx_net__t.k32 + esc(o.desc) + '"><meta property="og:url" content="' + ORIGIN + pre(o.lang) + o.path + TB.kbx_net__t.k33 +
-'<script type="application/ld+json">' + JSON.stringify(o.ld).replace(/</g, '\\u003c') + '</script>' + TB.kbx_net__s.CSS;
+const alts = LANGS.map(l => $q.aj + l + $q.ak + ORIGIN + pre(l) + o.path + '">').join('') + $t.k30 + ORIGIN + o.path + '">';
+const tags = $q.al + esc(o.title) + $t.k31 + esc(o.desc) + $q.am + ORIGIN + pre(o.lang) + o.path + '">' + alts +
+$s.k16 + esc(o.title) + $t.k32 + esc(o.desc) + $q.an + ORIGIN + pre(o.lang) + o.path + $t.k33 +
+$q.ao + JSON.stringify(o.ld).replace(/</g, $q.ap) + $q.aq + $s.CSS;
 const res = new HTMLRewriter()
 .on('title', { element(e) { e.remove(); } })
-.on(TB.kbx_net__s.k17, { element(e) { e.remove(); } })
-.on('script[type="application/ld+json"]', { element(e) { e.remove(); } })
+.on($s.k17, { element(e) { e.remove(); } })
+.on($q.ar, { element(e) { e.remove(); } })
 .on('head', { element(e) { e.append(tags, { html: true }); } })
-.on('main', { element(e) { e.setInnerContent(o.body + '<script>' + o.js + '</script>', { html: true }); } })
-.on('details.lsw a[hreflang]', { element(e) { const l = e.getAttribute('hreflang'); if (LANGS.includes(l)) e.setAttribute('href', pre(l) + o.path); } })
-.transform(new Response(shellRes.body, { headers: { 'content-type': 'text/html; charset=utf-8' } }));
+.on('main', { element(e) { e.setInnerContent(o.body + $q.as + o.js + $q.aq, { html: true }); } })
+.on($q.at, { element(e) { const l = e.getAttribute($q.au); if (LANGS.includes(l)) e.setAttribute('href', pre(l) + o.path); } })
+.transform(new Response(shellRes.body, { headers: { 'content-type': $q.av } }));
 return await res.text();
 }
 export async function handle(req, u, env, ctx, shell) {
 const p = u.pathname;
 if (req.method !== 'GET' && req.method !== 'HEAD') return null;
-if (p === '/api/x/net/graph') { try { return out(await graph(env), 200, 'public, max-age=600'); } catch (e) { return out({ error: 'graph unavailable' }, 503, 'no-store'); } }
-if (p === '/api/x/net/live') {
-try { return out(await live(env), 200, 'public, max-age=10'); }
-catch (e) { return out({ error: 'live data unavailable', totals: null, recent: [] }, 503, 'no-store'); }
+if (p === $q.aw) { try { return out(await graph(env), 200, $q.s); } catch (e) { return out({ error: $q.ax }, 503, $q.ay); } }
+if (p === $q.az) {
+try { return out(await live(env), 200, $q.aA); }
+catch (e) { return out({ error: $q.aB, totals: null, recent: [] }, 503, $q.ay); }
 }
 const m = p.match(/^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?(graph\/developers|live\/xrays)(\/?)$/); if (!m) return null;
-if (!m[3]) return new Response(null, { status: 301, headers: { location: p + '/' + u.search, 'cache-control': 'public, max-age=86400' } });
+if (!m[3]) return new Response(null, { status: 301, headers: { location: p + '/' + u.search, 'cache-control': $q.aC } });
 const lang = m[1] || 'en', kind = m[2];
-const sh = await shell(pre(lang) + '/how-we-score/');
+const sh = await shell(pre(lang) + $q.aD);
 let o;
-if (kind === 'graph/developers') {
+if (kind === $q.aE) {
 const t = tr(T, lang);
-o = { lang, path: '/graph/developers/', title: t.g_title, desc: t.g_desc, body: graphBody(lang), js: GRAPH_JS,
-ld: { '@context': 'https://schema.org', '@graph': [{ '@type': 'Dataset', name: 'Kolaboro developer network', description: T.en.g_desc, url: ORIGIN + '/graph/developers/', license: TB.kbx_net__t.k34, creator: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' }, distribution: { '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: ORIGIN + '/api/x/net/graph' } }, { '@type': 'BreadcrumbList', itemListElement: [['Kolaboro', '/'], ['Company graph', '/graph/'], [t.g_title, pre(lang) + '/graph/developers/']].map((x, i) => ({ '@type': 'ListItem', position: i + 1, name: x[0], item: ORIGIN + x[1] })) }] } };
+o = { lang, path: $q.aF, title: t.g_title, desc: t.g_desc, body: graphBody(lang), js: GRAPH_JS,
+ld: { '@context': $q.aG, '@graph': [{ '@type': $q.aH, name: $q.aI, description: T.en.g_desc, url: ORIGIN + $q.aF, license: $t.k34, creator: { '@type': $q.aJ, name: $q.aK, url: ORIGIN + '/' }, distribution: { '@type': $q.aL, encodingFormat: $q.aM, contentUrl: ORIGIN + $q.aw } }, { '@type': $q.aN, itemListElement: [[$q.aK, '/'], [$q.aO, $q.aP], [t.g_title, pre(lang) + $q.aF]].map((x, i) => ({ '@type': $q.aQ, position: i + 1, name: x[0], item: ORIGIN + x[1] })) }] } };
 } else {
 const t = tr(LT, lang);
-o = { lang, path: '/live/xrays/', title: t.l_title, desc: t.l_desc, body: liveBody(lang), js: LIVE_JS.replace('__LAND__', LAND),
-ld: { '@context': 'https://schema.org', '@type': 'WebPage', name: t.l_title, description: t.l_desc, url: ORIGIN + pre(lang) + '/live/xrays/' } };
+o = { lang, path: $q.aR, title: t.l_title, desc: t.l_desc, body: liveBody(lang), js: LIVE_JS.replace($q.aS, TB.kbx_net_land__q.X_LAND),
+ld: { '@context': $q.aG, '@type': $q.aT, name: t.l_title, description: t.l_desc, url: ORIGIN + pre(lang) + $q.aR } };
 }
-return new Response(await assemble(sh, o), { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=300' } });
+return new Response(await assemble(sh, o), { status: 200, headers: { 'content-type': $q.av, 'cache-control': $q.aU } });
 }

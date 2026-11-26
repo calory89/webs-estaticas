@@ -1,4 +1,5 @@
 // comments: _notes/kolaboro-worker-comments.txt
+const $q = TB.kbx_buy__q, $s = TB.kbx_buy__s, $t = TB.kbx_buy__t;   // n40 k46: short names for this module's string tables (strings in /data/i18n/k19s.json, k17s.json, k46s.json)
 import { BS, PL, BUY_PLACES, BUY_LANGS, buyPlaceOf } from './kbx_buy_i18n.js';
 import { NT } from './kbx_buy_notes.js';
 import { trData } from './kbx_tr.js';
@@ -25,14 +26,14 @@ const MOD = '2026-11-14';
 const revOf = slug => slug && PLAN29[slug] ? REVIEWED29 : REVIEWED;
 const TABLE_MAX = 30;
 const pre = l => l === 'en' ? '' : '/' + l;
-const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-const bdi = s => '<bdi>' + esc(s) + '</bdi>';
+const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': $q.b, "'": '&#39;' }[c]));
+const bdi = s => '<bdi>' + esc(s) + $q.c;
 const t = (lang, k) => (BS[lang] && BS[lang][k] != null) ? BS[lang][k] : BS.en[k];
 const fill = (s, v) => String(s).replace(/\{(\w+)\}/g, (m, a) => v && v[a] != null ? v[a] : m);
 const te = (lang, k, v) => fill(esc(t(lang, k)), v);
 const tx = (lang, k, v) => fill(t(lang, k), v);
 const nf = (lang, n) => Number(n).toLocaleString(LOC[lang] || 'en-GB');
-const fdt = (iso, lang) => { const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(iso || ''); if (!m) return String(iso || ''); try { return new Intl.DateTimeFormat(LOC[lang] || 'en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(Date.UTC(+m[1], +m[2] - 1, +m[3]))); } catch (e) { return iso; } };
+const fdt = (iso, lang) => { const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(iso || ''); if (!m) return String(iso || ''); try { return new Intl.DateTimeFormat(LOC[lang] || 'en-GB', { day: $q.d, month: 'long', year: $q.d, timeZone: 'UTC' }).format(new Date(Date.UTC(+m[1], +m[2] - 1, +m[3]))); } catch (e) { return iso; } };
 const note = (k, lang) => (NT[k] && (NT[k][lang] || NT[k].en)) || '';
 const pn = (P, lang) => PL[P.s].n[lang] || PL[P.s].n.en;
 const pin = (P, lang) => PL[P.s].in[lang] || PL[P.s].in.en;
@@ -115,7 +116,7 @@ const L = rows.filter(r => !r.sumba && buyPlaceOf(r.mk, r.ar, r.co) === P).sort(
 const cnt = (k, st) => L.filter(r => r.comp[k].st === (st || 'yes')).length;
 const past = L.filter(r => r.comp.record.r === 'past').length, moved = L.filter(r => r.comp.record.r === 'moved').length;
 const sc = L.map(r => r.score).sort((a, b) => a - b), med = sc.length ? (sc.length % 2 ? sc[(sc.length - 1) / 2] : Math.round((sc[sc.length / 2 - 1] + sc[sc.length / 2]) / 2)) : null;
-places.set(P.s, { P, L, n: L.length, legal: cnt('legal'), permit: cnt('permit'), deposit: cnt('deposit'), loc: cnt('location'), past, moved, med, ranked: P.tr && ix.places.get(P.tr) ? ix.places.get(P.tr).n : null });
+places.set(P.s, { P, L, n: L.length, legal: cnt('legal'), permit: cnt($q.e), deposit: cnt($q.f), loc: cnt($q.g), past, moved, med, ranked: P.tr && ix.places.get(P.tr) ? ix.places.get(P.tr).n : null });
 }
 GD = { v: ix.v, ix, dev, places, updated: ix.updated };
 return GD;
@@ -123,79 +124,75 @@ return GD;
 let LH = null;
 async function leaseCount(env, ids) {
 try {
-const S = globalThis.__kbJson && globalThis.__kbJson['named.json'];
+const S = globalThis.__kbJson && globalThis.__kbJson[$q.h];
 const named = S && S.v; if (!named) return null;
 if (!LH || LH.k !== named) LH = { k: named, m: new Map((named.projects || []).map(x => [x.id, /lease/i.test(String((x.fx || {}).foreign_ownership || ''))])) };
 return ids.filter(i => LH.m.get(i)).length;
 } catch (e) { return null; }
 }
-const CSS = '<style id="kby-css">.kby h2{margin-top:var(--k-7,48px)}.kby .k-grid{--k-min:140px}.kby h2,.kby-step{scroll-margin-top:96px}.kby-st{border:1px solid var(--k-line);border-radius:var(--k-r-md,10px);background:var(--k-surface);padding:var(--k-4,16px)}.kby-st b{display:block;font-size:var(--k-fs-2xl,28px);line-height:1.15}.kby-st span{display:block;color:var(--k-ink-2)}' +
-'.kby-toc ol{columns:2 240px;padding-inline-start:1.2em}.kby-step h3{margin-top:var(--k-5,24px);font-size:var(--k-fs-md,17px)}.kby-rl{list-style:none;padding:0;margin:0}.kby-rl li{padding:10px 0;border-top:1px solid var(--k-line)}.kby-rl li:first-child{border-top:0}.kby-s{display:block;margin-top:4px;font-size:var(--k-fs-xs,13px);color:var(--k-muted);overflow-wrap:anywhere}.kby-s a{color:inherit}' +
-'.kby-ex{padding-inline-start:1.2em}.kby-ex li{margin:4px 0}.kby .k-table td small{display:block;color:var(--k-muted)}.kby-faq h3{font-size:var(--k-fs-md,17px);margin:var(--k-5,24px) 0 4px}.kby-note{border:1px solid var(--k-line);border-radius:var(--k-r-md,10px);background:var(--k-sunken);padding:var(--k-4,16px);margin-top:var(--k-6,32px)}.kby-num{counter-reset:none}.kby-qs ol{padding-inline-start:1.4em}.kby-qs li{margin:0 0 14px;break-inside:avoid}.kby-qs .kby-a{display:block;margin-top:6px;min-height:2.2em;border-bottom:1px dashed var(--k-line);color:var(--k-muted);font-size:var(--k-fs-xs,13px)}' +
-'@media print{header,footer,nav,.k-crumb,.lsw,.kby-note,.kby-pr{display:none!important}.kby a{color:inherit;text-decoration:none}body:has(#questions:target) .k-prose>:not(.kby-qs),body:has(#questions:target) .k-phead{display:none!important}}</style>';
-const crumb = (lang, list) => '<p class="k-crumb"><a href="' + pre(lang) + '/">Kolaboro</a> / ' + list.map((x, i) => i < list.length - 1 ? '<a href="' + x[1] + '">' + esc(x[0]) + '</a>' : '<span>' + esc(x[0]) + '</span>').join(' / ') + '</p>';
-const crumbLd = (lang, list) => ({ '@type': 'BreadcrumbList', itemListElement: [['Kolaboro', pre(lang) + '/']].concat(list).map((x, i) => ({ '@type': 'ListItem', position: i + 1, name: x[0], item: ORIGIN + x[1] })) });
-const stat = (lang, v, k) => '<div class="kby-st"><b>' + (v == null ? '-' : esc(nf(lang, v))) + '</b><span>' + esc(t(lang, k)) + '</span></div>';
+const crumb = (lang, list) => $q.i + pre(lang) + $q.j + list.map((x, i) => i < list.length - 1 ? $q.k + x[1] + '">' + esc(x[0]) + '</a>' : $q.l + esc(x[0]) + $q.m).join(' / ') + '</p>';
+const crumbLd = (lang, list) => ({ '@type': $q.n, itemListElement: [[$q.o, pre(lang) + '/']].concat(list).map((x, i) => ({ '@type': $q.p, position: i + 1, name: x[0], item: ORIGIN + x[1] })) });
+const stat = (lang, v, k) => $q.q + (v == null ? '-' : esc(nf(lang, v))) + $q.r + esc(t(lang, k)) + $q.s;
 function srcLinks(lang, ids) {
-return '<span class="kby-s">' + ids.map(id => { const s = SRC[id]; if (!s) return '';
-return '<a href="' + esc(s.u) + '"' + (s.own ? '' : ' rel="noopener"') + '><bdi>' + esc(s.n) + '</bdi></a>' + (s.d ? ' (' + esc(tx(lang, s.own || s.op ? 'opened' : 'read', { d: fdt(s.d, lang) })) + ')' : '') +
-(s.law ? ' · <a href="/tools/law/#' + esc(s.law) + '">' + esc(t(lang, 'lawnote')) + '</a>' : s.lh ? ' · <a href="/tools/late-handover/">' + esc(t(lang, 'lawnote')) + '</a>' : '');
-}).filter(Boolean).join(' · ') + '</span>';
+return $q.t + ids.map(id => { const s = SRC[id]; if (!s) return '';
+return $q.k + esc(s.u) + '"' + (s.own ? '' : $q.u) + $q.v + esc(s.n) + $q.w + (s.d ? ' (' + esc(tx(lang, s.own || s.op ? $q.x : 'read', { d: fdt(s.d, lang) })) + ')' : '') +
+(s.law ? $q.y + esc(s.law) + '">' + esc(t(lang, $q.z)) + '</a>' : s.lh ? $q.A + esc(t(lang, $q.z)) + '</a>' : '');
+}).filter(Boolean).join(' · ') + $q.m;
 }
 const legalName = v => String(v || '').replace(/\s*\([^)]*\)/g, '').split(/,\s*(?=Jl\.|Jalan|Calle|C\/|Avda|Av\.|Rua|Street|St\.|\d)/i)[0].trim();
-const pLink = (lang, r) => '<a href="' + pre(lang) + '/projects/' + esc(r.s) + '/">' + bdi(r.n) + '</a>';
-const exList = (lang, items) => items.length ? '<p><b>' + esc(t(lang, 'ex')) + '</b></p><ul class="kby-ex">' + items.join('') + '</ul>' : '';
+const pLink = (lang, r) => $q.k + pre(lang) + $q.B + esc(r.s) + '/">' + bdi(r.n) + '</a>';
+const exList = (lang, items) => items.length ? $q.C + esc(t(lang, 'ex')) + $q.D + items.join('') + '</ul>' : '';
 const exLi = (lang, r, k, v) => '<li>' + pLink(lang, r) + ': ' + te(lang, k, v) + '</li>';
 function recCell(lang, q) {
 const r = q.r;
-if (r === 'past') return te(lang, 'rec_past', { m: esc(nf(lang, q.m || 0)) });
-if (r === 'moved') return q.m ? te(lang, 'rec_moved_m', { m: esc(nf(lang, q.m)) }) : esc(t(lang, 'rec_moved'));
-return esc(t(lang, { kept: 'rec_kept', done: 'rec_done', late: 'rec_late', none: 'rec_none' }[r] || 'rec_nc'));
+if (r === 'past') return te(lang, $q.E, { m: esc(nf(lang, q.m || 0)) });
+if (r === 'moved') return q.m ? te(lang, $q.F, { m: esc(nf(lang, q.m)) }) : esc(t(lang, $q.G));
+return esc(t(lang, { kept: $q.H, done: $q.I, late: $q.J, none: $q.K }[r] || $q.L));
 }
 function stepData(lang, G, D, k, lease) {
 const P = D.P, v = { n: esc(nf(lang, D.n)), in: esc(pin(P, lang)) }, L = D.L;
 if (!D.n) return '';
 let p = '', ex = [];
-if (k === 'company') {
-p = te(lang, 'd_legal', Object.assign({ a: esc(nf(lang, D.legal)) }, v));
-ex = L.filter(r => r.comp.legal.st === 'yes' && r.comp.legal.v).slice(0, 3).map(r => exLi(lang, r, 'ex_legal', { v: bdi(legalName(r.comp.legal.v)) }));
+if (k === $q.M) {
+p = te(lang, $q.N, Object.assign({ a: esc(nf(lang, D.legal)) }, v));
+ex = L.filter(r => r.comp.legal.st === 'yes' && r.comp.legal.v).slice(0, 3).map(r => exLi(lang, r, $q.O, { v: bdi(legalName(r.comp.legal.v)) }));
 } else if (k === 'land') {
-p = (lease ? te(lang, 'd_lease', Object.assign({ a: esc(nf(lang, lease)) }, v)) + ' ' : '') + te(lang, 'd_loc', Object.assign({ a: esc(nf(lang, D.loc)) }, v));
-} else if (k === 'permit') {
-p = te(lang, 'd_permit', Object.assign({ a: esc(nf(lang, D.permit)) }, v));
-ex = L.filter(r => r.comp.permit.st === 'yes' && r.comp.permit.v).slice(0, 3).map(r => exLi(lang, r, 'ex_permit', { v: bdi(r.comp.permit.v) }));
+p = (lease ? te(lang, $q.P, Object.assign({ a: esc(nf(lang, lease)) }, v)) + ' ' : '') + te(lang, 'd_loc', Object.assign({ a: esc(nf(lang, D.loc)) }, v));
+} else if (k === $q.e) {
+p = te(lang, $q.Q, Object.assign({ a: esc(nf(lang, D.permit)) }, v));
+ex = L.filter(r => r.comp.permit.st === 'yes' && r.comp.permit.v).slice(0, 3).map(r => exLi(lang, r, $q.R, { v: bdi(r.comp.permit.v) }));
 } else if (k === 'money') {
 p = te(lang, 'd_dep', Object.assign({ a: esc(nf(lang, D.deposit)) }, v));
-ex = L.filter(r => r.comp.deposit.st === 'yes').slice(0, 3).map(r => exLi(lang, r, 'ex_dep'));
+ex = L.filter(r => r.comp.deposit.st === 'yes').slice(0, 3).map(r => exLi(lang, r, $q.S));
 } else if (k === 'date') {
-p = te(lang, 'd_date', Object.assign({ a: esc(nf(lang, D.past)), b: esc(nf(lang, D.moved)) }, v));
+p = te(lang, $q.T, Object.assign({ a: esc(nf(lang, D.past)), b: esc(nf(lang, D.moved)) }, v));
 const past = L.filter(r => r.comp.record.r === 'past').sort((a, b) => (b.comp.record.m || 0) - (a.comp.record.m || 0)).slice(0, 2);
 const mv = L.filter(r => r.comp.record.r === 'moved').slice(0, 1), kept = L.filter(r => r.comp.record.r === 'kept' && r.comp.date.v).slice(0, 1);
-ex = past.map(r => exLi(lang, r, 'ex_past', { m: esc(nf(lang, r.comp.record.m || 0)) })).concat(mv.map(r => exLi(lang, r, 'ex_moved', { m: esc(nf(lang, r.comp.record.m || 1)) })), kept.map(r => exLi(lang, r, 'ex_kept', { v: bdi(hdisp(String(r.comp.date.v), lang)) })));
+ex = past.map(r => exLi(lang, r, $q.U, { m: esc(nf(lang, r.comp.record.m || 0)) })).concat(mv.map(r => exLi(lang, r, $q.V, { m: esc(nf(lang, r.comp.record.m || 1)) })), kept.map(r => exLi(lang, r, $q.W, { v: bdi(hdisp(String(r.comp.date.v), lang)) })));
 } else return '';
-return '<h3>' + esc(t(lang, 'data_h')) + '</h3><p>' + p + '</p>' + exList(lang, ex);
+return '<h3>' + esc(t(lang, $q.X)) + $q.Y + p + '</p>' + exList(lang, ex);
 }
 function table(lang, G, D) {
   const L = D.L.slice().sort((a, b) => (TOP.has(b.id) ? 1 : 0) - (TOP.has(a.id) ? 1 : 0) || b.score - a.score || a.n.localeCompare(b.n)).slice(0, TABLE_MAX);
   if (!L.length) return '';
   const rows = L.map(r => {
     const d = (r.dvs && G.dev.get(r.dvs)) || null, pm = r.comp.permit;
-    return '<tr><td>' + pLink(lang, r) + (r.ar ? '<small>' + bdi(r.ar) + '</small>' : '') + '</td><td>' + (r.dv ? (r.dvs ? '<a href="' + pre(lang) + '/developers/' + esc(r.dvs) + '/">' + bdi(r.dv) + '</a>' : bdi(r.dv)) : '-') + '</td><td>' +
-      (pm.st === 'yes' ? (pm.v ? bdi(pm.v) : esc(t(lang, 'pubd'))) : '<span class="k-muted">' + esc(t(lang, 'np')) + '</span>') + '</td><td>' + recCell(lang, r.comp.record) + '</td><td>' +
-      (d ? te(lang, 'devrec', { n: esc(nf(lang, d.n)), past: esc(nf(lang, d.past)), moved: esc(nf(lang, d.moved)), done: esc(nf(lang, d.done)) }) : '-') + '</td></tr>';
+    return $q.Z + pLink(lang, r) + (r.ar ? $q.aa + bdi(r.ar) + $q.ab : '') + $q.ac + (r.dv ? (r.dvs ? $q.k + pre(lang) + $q.ad + esc(r.dvs) + '/">' + bdi(r.dv) + '</a>' : bdi(r.dv)) : '-') + $q.ac +
+      (pm.st === 'yes' ? (pm.v ? bdi(pm.v) : esc(t(lang, 'pubd'))) : $q.ae + esc(t(lang, 'np')) + $q.m) + $q.ac + recCell(lang, r.comp.record) + $q.ac +
+      (d ? te(lang, $q.af, { n: esc(nf(lang, d.n)), past: esc(nf(lang, d.past)), moved: esc(nf(lang, d.moved)), done: esc(nf(lang, d.done)) }) : '-') + $q.ag;
   }).join('');
   const P = D.P;
-  const more = P.tr && D.ranked ? '<p><a href="' + pre(lang) + '/rankings/transparency/' + P.tr + '/">' + te(lang, 'tbl_more', { n: esc(nf(lang, D.ranked)), p: esc(pn(P, lang)) }) + '</a></p>' : '';
-  return '<h2 id="projects">' + te(lang, 'tbl_h', { in: esc(pin(P, lang)) }) + '</h2><p>' + te(lang, 'tbl_p', { k: esc(nf(lang, L.length)) }) + '</p>' +
-    '<div class="k-table-wrap"><table class="k-table k-table--dense"><thead><tr><th>' + ['th_proj', 'th_dev', 'th_permit', 'th_rec', 'th_devrec'].map(k => esc(t(lang, k))).join('</th><th>') + '</th></tr></thead><tbody>' + rows + '</tbody></table></div>' + more;
+  const more = P.tr && D.ranked ? $q.ah + pre(lang) + $q.ai + P.tr + '/">' + te(lang, $q.aj, { n: esc(nf(lang, D.ranked)), p: esc(pn(P, lang)) }) + $q.ak : '';
+  return $q.al + te(lang, 'tbl_h', { in: esc(pin(P, lang)) }) + $q.am + te(lang, 'tbl_p', { k: esc(nf(lang, L.length)) }) + '</p>' +
+    $q.an + [$q.ao, $q.ap, $q.aq, $q.ar, $q.as].map(k => esc(t(lang, k))).join($q.at) + $q.au + rows + $q.av + more;
 }
 const GL_STEP = { land: [['leasehold', 'lease_h1']], money: [['escrow', 'escrow_h1'], ['payment-plan', 'pp_h1']] };
-const glLinks = (lang, k) => GL_STEP[k] ? '<p class="k-small">' + GL_STEP[k].map(([x, h]) => '<a href="' + pre(lang) + '/glossary/' + x + '/">' + esc(GL29[lang] && GL29[lang][h] || GL29.en[h]) + '</a>').join(' · ') + '</p>' : '';
+const glLinks = (lang, k) => GL_STEP[k] ? $q.aw + GL_STEP[k].map(([x, h]) => $q.k + pre(lang) + $q.ax + x + '/">' + esc(GL29[lang] && GL29[lang][h] || GL29.en[h]) + '</a>').join(' · ') + '</p>' : '';
 function questions(lang, slug, P) {
 const plan = PLAN[slug] || {};
 const li = STEPS.map(k => { const ids = [...new Set((plan[k] || []).flatMap(x => x[1]))];
-return '<li><b>' + esc(t(lang, 'qq_' + k)) + '</b>' + (ids.length ? ' <span class="kby-s">' + esc(t(lang, 'qs_src')) + ' ' + ids.map(id => SRC[id] ? '<bdi>' + esc(SRC[id].n) + '</bdi>' : '').filter(Boolean).join(' · ') + '</span>' : '') + '<span class="kby-a">' + esc(t(lang, 'qs_ans')) + '</span></li>'; }).join('');
-return TB.kbx_buy__t.k0 + te(lang, 'qs_h', { in: esc(pin(P, lang)) }) + '</h2><p>' + esc(t(lang, 'qs_p')) + ' <a class="kby-pr" href="#questions">' + esc(t(lang, 'qs_print')) + '</a></p><ol>' + li + '</ol></section>';
+return $q.ay + esc(t(lang, 'qq_' + k)) + '</b>' + (ids.length ? $q.az + esc(t(lang, $q.aA)) + ' ' + ids.map(id => SRC[id] ? '<bdi>' + esc(SRC[id].n) + $q.c : '').filter(Boolean).join(' · ') + $q.m : '') + $q.aB + esc(t(lang, $q.aC)) + $q.aD; }).join('');
+return $t.k0 + te(lang, 'qs_h', { in: esc(pin(P, lang)) }) + $q.am + esc(t(lang, 'qs_p')) + $q.aE + esc(t(lang, $q.aF)) + $q.aG + li + $q.aH;
 }
 function guidePage(G, slug, lang, lease) {
 const D = G.places.get(slug); if (!D) return null;
@@ -204,52 +201,52 @@ const vIn = { in: esc(inP), p: esc(name), n: esc(nf(lang, D.n)) };
 const title = tx(lang, 'title', { in: (PL[slug].tin && PL[slug].tin[lang]) || inP });
 const steps = STEPS.map((k, i) => {
 const notes = plan[k] || [];
-return '<section class="kby-step" id="step-' + k + '"><h2>' + esc(tx(lang, 'step', { n: i + 1 })) + (lang === 'zh' ? '：' : ': ') + esc(t(lang, 'st_' + k)) + '</h2><p>' + esc(t(lang, 'g_' + k)) + '</p>' +
-(notes.length ? '<h3>' + te(lang, 'rules') + '</h3><ul class="kby-rl">' + notes.map(([nk, ids]) => '<li>' + esc(note(nk, lang)) + srcLinks(lang, ids) + '</li>').join('') + '</ul>' : '') +
-stepData(lang, G, D, k, k === 'land' ? lease : 0) + glLinks(lang, k) + '</section>';
+return $q.aI + k + $q.aJ + esc(tx(lang, 'step', { n: i + 1 })) + (lang === 'zh' ? '：' : ': ') + esc(t(lang, 'st_' + k)) + $q.am + esc(t(lang, 'g_' + k)) + '</p>' +
+(notes.length ? '<h3>' + te(lang, 'rules') + $q.aK + notes.map(([nk, ids]) => '<li>' + esc(note(nk, lang)) + srcLinks(lang, ids) + '</li>').join('') + '</ul>' : '') +
+stepData(lang, G, D, k, k === 'land' ? lease : 0) + glLinks(lang, k) + $q.aL;
 }).join('');
-const sum = '<h2 id="figures">' + te(lang, 'sum_h', { p: esc(name) }) + '</h2><div class="k-grid">' + stat(lang, D.n, 's_n') + stat(lang, D.permit, 's_permit') + stat(lang, D.deposit, 's_dep') + stat(lang, D.past, 's_past') + stat(lang, D.moved, 's_moved') + (D.med != null ? stat(lang, D.med, 's_med') : '') + '</div><p class="k-small k-muted">' + esc(t(lang, 'sum_note')) + '</p>';
-const toc = '<nav class="kby-toc" aria-label="' + esc(t(lang, 'toc')) + '"><h2 id="toc">' + esc(t(lang, 'toc')) + '</h2><ol>' + STEPS.map(k => '<li><a href="#step-' + k + '">' + esc(t(lang, 'st_' + k)) + '</a></li>').join('') + '<li><a href="#projects">' + esc(tx(lang, 'tbl_h', { in: inP })) + '</a></li><li><a href="#questions">' + esc(tx(lang, 'qs_h', { in: inP })) + '</a></li><li><a href="#faq">' + esc(t(lang, 'faq_h')) + '</a></li></ol></nav>';
+const sum = $q.aM + te(lang, 'sum_h', { p: esc(name) }) + $q.aN + stat(lang, D.n, 's_n') + stat(lang, D.permit, $q.aO) + stat(lang, D.deposit, 's_dep') + stat(lang, D.past, $q.aP) + stat(lang, D.moved, $q.aQ) + (D.med != null ? stat(lang, D.med, 's_med') : '') + $q.aR + esc(t(lang, $q.aS)) + '</p>';
+const toc = $q.aT + esc(t(lang, 'toc')) + $q.aU + esc(t(lang, 'toc')) + $q.aV + STEPS.map(k => $q.aW + k + '">' + esc(t(lang, 'st_' + k)) + $q.aX).join('') + $q.aY + esc(tx(lang, 'tbl_h', { in: inP })) + $q.aZ + esc(tx(lang, 'qs_h', { in: inP })) + $q.ba + esc(t(lang, 'faq_h')) + $q.bb;
 const txt = (k, v) => fill(t(lang, k), v);
 const notesOf = k => (plan[k] || []).map(([nk]) => note(nk, lang)).filter(Boolean);
 const vT = { in: inP, p: name, n: nf(lang, D.n) };
-const faq = [[txt('q_what', vT), txt('a_what', { steps: STEPS.map(k => t(lang, 'st_' + k)).join('; ') })]];
-if (D.n) faq.push([txt('q_safe', vT), txt('a_safe', Object.assign({ a: nf(lang, D.permit), b: nf(lang, D.deposit), c: nf(lang, D.past) }, vT))]);
+const faq = [[txt($q.bc, vT), txt($q.bd, { steps: STEPS.map(k => t(lang, 'st_' + k)).join('; ') })]];
+if (D.n) faq.push([txt($q.be, vT), txt($q.bf, Object.assign({ a: nf(lang, D.permit), b: nf(lang, D.deposit), c: nf(lang, D.past) }, vT))]);
 if (notesOf('land').length && P.own !== false) faq.push([txt('q_own', vT), notesOf('land').join(' ')]);
 if (notesOf('money').length) faq.push([txt('q_dep', vT), notesOf('money').join(' ')]);
-if (D.n) { faq.push([txt('q_permit', vT), txt('d_permit', Object.assign({ a: nf(lang, D.permit) }, vT))]); faq.push([txt('q_late', vT), txt('d_date', Object.assign({ a: nf(lang, D.past), b: nf(lang, D.moved) }, vT))]); }
-const faqHtml = TB.kbx_buy__t.k1 + esc(t(lang, 'faq_h')) + '</h2>' + faq.map(([q, a]) => '<h3>' + esc(q) + '</h3><p>' + esc(a) + '</p>').join('') + '</section>';
-const others = BUY_PLACES.filter(o => o.s !== slug).map(o => '<li><a href="' + pre(lang) + BASE + o.s + '/">' + esc(tx(lang, 'guide_link', { in: pin(o, lang) })) + '</a></li>').join('');
+if (D.n) { faq.push([txt($q.bg, vT), txt($q.Q, Object.assign({ a: nf(lang, D.permit) }, vT))]); faq.push([txt($q.bh, vT), txt($q.T, Object.assign({ a: nf(lang, D.past), b: nf(lang, D.moved) }, vT))]); }
+const faqHtml = $t.k1 + esc(t(lang, 'faq_h')) + '</h2>' + faq.map(([q, a]) => '<h3>' + esc(q) + $q.Y + esc(a) + '</p>').join('') + $q.aL;
+const others = BUY_PLACES.filter(o => o.s !== slug).map(o => $q.bi + pre(lang) + BASE + o.s + '/">' + esc(tx(lang, $q.bj, { in: pin(o, lang) })) + $q.aX).join('');
 const rel = [];
-if (P.tr && D.ranked) rel.push([pre(lang) + '/rankings/transparency/' + P.tr + '/', tx(lang, 'l_rank', { p: name })]);
-if (COUNTRY[P.cc]) rel.push(['/countries/' + COUNTRY[P.cc] + '/how-to-check/', tx(lang, 'l_country', { c: P.c })]);
-rel.push([pre(lang) + '/buyer-protection-law/#' + P.s, e29t(lang, 'l_bp')], [pre(lang) + '/countries/foreign-buyers/#' + P.s, e29t(lang, 'l_fb')]);
-if (LAWPAGE[P.cc]) rel.push(['/tools/law/', t(lang, 'l_law')]);
-if (DEST[slug]) rel.push([DEST[slug], tx(lang, 'l_dest', { in: inP })]);
-{ const cs = GUIDE_TC[slug]; if (cs) rel.push([pre(lang) + '/tools/total-cost/' + cs + '/', cf(lang, 'c_t', { in: (TCPL_T[cs] && TCPL_T[cs][lang]) || cin(cs, lang) })]); }
-rel.push([pre(lang) + '/guides/short-let-rules/', t(lang, 'l_short')], ['/checklist/', t(lang, 'l_list')], ['/check/', t(lang, 'l_check')]);
-const note2 = '<div class="kby-note"><p>' + esc(t(lang, 'legal')) + '</p><p>' + te(lang, 'reply', { in: esc(inP) }) + TB.kbx_buy__t.k2 + esc(t(lang, 'reply_btn')) + '</a></p></div>';
-const body = TB.kbx_buy__t.k3 + crumb(lang, [[t(lang, 'guides'), pre(lang) + BASE], [name, pre(lang) + path]]) + '<h1>' + esc(title) + '</h1><p class="lead">' + te(lang, 'lead', vIn) + '</p>' +
-TB.kbx_buy__t.k4 + revOf(slug) + '">' + esc(tx(lang, 'upd', { d: fdt(revOf(slug), lang), d2: fdt(G.updated, lang) })) + '</time>' + guideNext(lang, revOf(slug)) + '</p>' + accLine(lang) + '</div>' +
-'<div class="k-prose">' + sum + toc + steps + table(lang, G, D) + questions(lang, slug, P) + faqHtml + note2 +
-'<h2 id="related">' + esc(t(lang, 'rel_h')) + '</h2><ul>' + rel.map(([h, l]) => '<li><a href="' + esc(h) + '">' + esc(l) + '</a></li>').join('') + '</ul><h3>' + esc(t(lang, 'l_other')) + '</h3><ul>' + others + '</ul></div></div></section></div>';
+if (P.tr && D.ranked) rel.push([pre(lang) + $q.ai + P.tr + '/', tx(lang, $q.bk, { p: name })]);
+if (COUNTRY[P.cc]) rel.push([$q.bl + COUNTRY[P.cc] + $q.bm, tx(lang, $q.bn, { c: P.c })]);
+rel.push([pre(lang) + $q.bo + P.s, e29t(lang, 'l_bp')], [pre(lang) + $q.bp + P.s, e29t(lang, 'l_fb')]);
+if (LAWPAGE[P.cc]) rel.push([$q.bq, t(lang, 'l_law')]);
+if (DEST[slug]) rel.push([DEST[slug], tx(lang, $q.br, { in: inP })]);
+{ const cs = GUIDE_TC[slug]; if (cs) rel.push([pre(lang) + $q.bs + cs + '/', cf(lang, 'c_t', { in: (TCPL_T[cs] && TCPL_T[cs][lang]) || cin(cs, lang) })]); }
+rel.push([pre(lang) + $q.bt, t(lang, $q.bu)], [$q.bv, t(lang, $q.bw)], [$q.bx, t(lang, $q.by)]);
+const note2 = $q.bz + esc(t(lang, 'legal')) + $q.bA + te(lang, 'reply', { in: esc(inP) }) + $t.k2 + esc(t(lang, $q.bB)) + $q.bC;
+const body = $t.k3 + crumb(lang, [[t(lang, $q.bD), pre(lang) + BASE], [name, pre(lang) + path]]) + '<h1>' + esc(title) + $q.bE + te(lang, 'lead', vIn) + '</p>' +
+$t.k4 + revOf(slug) + '">' + esc(tx(lang, 'upd', { d: fdt(revOf(slug), lang), d2: fdt(G.updated, lang) })) + $q.bF + guideNext(lang, revOf(slug)) + '</p>' + accLine(lang) + $q.bG +
+$q.bH + sum + toc + steps + table(lang, G, D) + questions(lang, slug, P) + faqHtml + note2 +
+$q.bI + esc(t(lang, 'rel_h')) + $q.bJ + rel.map(([h, l]) => $q.bi + esc(h) + '">' + esc(l) + $q.aX).join('') + $q.bK + esc(t(lang, $q.bL)) + $q.bM + others + $q.bN;
 let desc = tx(lang, 'desc', vT); if ([...desc].length > 155) desc = tx(lang, 'desc2', vT);
 if ([...desc].length > 155) { const c = [...desc].slice(0, 154).join(''); desc = c.replace(/[\s,;:]+\S*$/, '') + '.'; }
 const url = ORIGIN + pre(lang) + path;
-const ld = [{ '@type': 'Article', '@id': url + '#guide', url, headline: title, description: desc, inLanguage: lang, datePublished: PLAN29[slug] ? REVIEWED29 : '2026-11-13', dateModified: G.updated > MOD ? G.updated : MOD, author: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' }, publisher: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' }, about: { '@type': 'Place', name: PL[slug].n.en }, mainEntityOfPage: url },
-crumbLd(lang, [[t(lang, 'guides'), pre(lang) + BASE], [name, pre(lang) + path]]),
-{ '@type': 'FAQPage', '@id': url + '#faq', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }];
+const ld = [{ '@type': $q.bO, '@id': url + $q.bP, url, headline: title, description: desc, inLanguage: lang, datePublished: PLAN29[slug] ? REVIEWED29 : $q.bQ, dateModified: G.updated > MOD ? G.updated : MOD, author: { '@type': $q.bR, name: $q.o, url: ORIGIN + '/' }, publisher: { '@type': $q.bR, name: $q.o, url: ORIGIN + '/' }, about: { '@type': 'Place', name: PL[slug].n.en }, mainEntityOfPage: url },
+crumbLd(lang, [[t(lang, $q.bD), pre(lang) + BASE], [name, pre(lang) + path]]),
+{ '@type': $q.bS, '@id': url + '#faq', mainEntity: faq.map(([q, a]) => ({ '@type': $q.bT, name: q, acceptedAnswer: { '@type': $q.bU, text: a } })) }];
 return { path, title, desc, body, ld };
 }
 function hubPage(G, lang) {
-const rows = BUY_PLACES.map(P => { const D = G.places.get(P.s); return '<tr><td><a href="' + pre(lang) + BASE + P.s + '/">' + esc(tx(lang, 'guide_link', { in: pin(P, lang) })) + '</a></td><td>' + esc(nf(lang, D.n)) + '</td><td>' + esc(nf(lang, D.permit)) + '</td><td>' + esc(nf(lang, D.past)) + '</td></tr>'; }).join('');
-const title = t(lang, 'hub_title'), desc = t(lang, 'hub_desc'), url = ORIGIN + pre(lang) + BASE;
-const body = TB.kbx_buy__t.k5 + crumb(lang, [[t(lang, 'guides'), pre(lang) + BASE]]) + '<h1>' + esc(title) + '</h1><p class="lead">' + esc(t(lang, 'hub_lead')) + '</p>' +
-TB.kbx_buy__t.k6 + REVIEWED + '">' + esc(tx(lang, 'upd', { d: fdt(REVIEWED, lang), d2: fdt(G.updated, lang) })) + '</time>' + guideNext(lang, REVIEWED) + '</p>' + accLine(lang) + '</div><div class="k-prose">' +
-TB.kbx_buy__t.k7 + ['h_guide', 'h_n', 'h_permit', 'h_past'].map(k => esc(t(lang, k))).join('</th><th>') + '</th></tr></thead><tbody>' + rows + '</tbody></table></div>' +
-'<p class="k-small k-muted">' + esc(t(lang, 'sum_note')) + '</p>' +
-'<p><a href="' + pre(lang) + '/buyer-protection-law/">' + esc(e29t(lang, 'l_bp')) + '</a> · <a href="' + pre(lang) + '/countries/foreign-buyers/">' + esc(e29t(lang, 'l_fb')) + '</a></p><div class="kby-note"><p>' + esc(t(lang, 'legal')) + TB.kbx_buy__t.k8;
-const ld = [{ '@type': 'CollectionPage', '@id': url + '#page', url, name: title, description: desc, inLanguage: lang, dateModified: MOD, hasPart: BUY_PLACES.map(P => ({ '@type': 'Article', headline: tx(lang, 'title', { in: pin(P, lang) }), url: ORIGIN + pre(lang) + BASE + P.s + '/' })) }, crumbLd(lang, [[t(lang, 'guides'), pre(lang) + BASE]])];
+const rows = BUY_PLACES.map(P => { const D = G.places.get(P.s); return $q.bV + pre(lang) + BASE + P.s + '/">' + esc(tx(lang, $q.bj, { in: pin(P, lang) })) + $q.bW + esc(nf(lang, D.n)) + $q.ac + esc(nf(lang, D.permit)) + $q.ac + esc(nf(lang, D.past)) + $q.ag; }).join('');
+const title = t(lang, $q.bX), desc = t(lang, $q.bY), url = ORIGIN + pre(lang) + BASE;
+const body = $t.k5 + crumb(lang, [[t(lang, $q.bD), pre(lang) + BASE]]) + '<h1>' + esc(title) + $q.bE + esc(t(lang, $q.bZ)) + '</p>' +
+$t.k6 + REVIEWED + '">' + esc(tx(lang, 'upd', { d: fdt(REVIEWED, lang), d2: fdt(G.updated, lang) })) + $q.bF + guideNext(lang, REVIEWED) + '</p>' + accLine(lang) + $q.ca +
+$t.k7 + [$q.cb, 'h_n', $q.cc, $q.cd].map(k => esc(t(lang, k))).join($q.at) + $q.au + rows + $q.av +
+$q.ce + esc(t(lang, $q.aS)) + '</p>' +
+$q.ah + pre(lang) + $q.cf + esc(e29t(lang, 'l_bp')) + $q.cg + pre(lang) + $q.ch + esc(e29t(lang, 'l_fb')) + $q.ci + esc(t(lang, 'legal')) + $t.k8;
+const ld = [{ '@type': $q.cj, '@id': url + '#page', url, name: title, description: desc, inLanguage: lang, dateModified: MOD, hasPart: BUY_PLACES.map(P => ({ '@type': $q.bO, headline: tx(lang, 'title', { in: pin(P, lang) }), url: ORIGIN + pre(lang) + BASE + P.s + '/' })) }, crumbLd(lang, [[t(lang, $q.bD), pre(lang) + BASE]])];
 return { path: BASE, title, desc, body, ld };
 }
 const GL_MIN = 5;
@@ -280,49 +277,49 @@ return GLD;
 }
 const pctS = (lang, v) => nf(lang, Math.round(v * 10) / 10) + '%';
 function glPage(D, term, lang) {
-const path = '/glossary/' + term + '/', url = ORIGIN + pre(lang) + path, M = D.by;
+const path = $q.ax + term + '/', url = ORIGIN + pre(lang) + path, M = D.by;
 let rows = [], head = [], q2 = '', a2 = '', step = 'money';
 const mkC = (m) => '<td>' + bdi(mkName(m.mk, lang)) + '</td>';
-if (term === 'escrow') {
+if (term === $q.ck) {
 const L = M.filter(m => m.n >= GL_MIN).sort((a, b) => b.dep / b.n - a.dep / a.n || b.n - a.n);
-head = ['g_mk', 'g_n', 'escrow_c', 'escrow_s'];
-rows = L.map(m => '<tr>' + mkC(m) + '<td>' + nf(lang, m.n) + '</td><td>' + nf(lang, m.dep) + '</td><td>' + pctS(lang, 100 * m.dep / m.n) + '</td></tr>');
-q2 = g(lang, 'escrow_q2'); a2 = gf(lang, 'escrow_a2', { list: L.filter(m => m.dep).slice(0, 3).map(m => mkName(m.mk, lang) + ' ' + nf(lang, m.dep) + '/' + nf(lang, m.n)).join('; ') });
-} else if (term === 'leasehold') {
+head = ['g_mk', 'g_n', $q.cl, $q.cm];
+rows = L.map(m => '<tr>' + mkC(m) + '<td>' + nf(lang, m.n) + $q.ac + nf(lang, m.dep) + $q.ac + pctS(lang, 100 * m.dep / m.n) + $q.ag);
+q2 = g(lang, $q.cn); a2 = gf(lang, $q.co, { list: L.filter(m => m.dep).slice(0, 3).map(m => mkName(m.mk, lang) + ' ' + nf(lang, m.dep) + '/' + nf(lang, m.n)).join('; ') });
+} else if (term === $q.cp) {
 step = 'land';
 const L = M.filter(m => m.own >= GL_MIN).sort((a, b) => b.lh / b.own - a.lh / a.own || b.own - a.own);
-head = ['g_mk', 'lease_c', 'lease_f', 'lease_l', 'lease_o', 'lease_y'];
-rows = L.map(m => '<tr>' + mkC(m) + '<td>' + nf(lang, m.own) + '</td><td>' + nf(lang, m.fh) + '</td><td>' + nf(lang, m.lh) + '</td><td>' + nf(lang, m.oth) + '</td><td>' + (m.yrs.length ? nf(lang, Math.min(...m.yrs)) + '-' + nf(lang, Math.max(...m.yrs)) : '-') + '</td></tr>');
-q2 = g(lang, 'lease_q2'); a2 = gf(lang, 'lease_a2', { list: L.filter(m => m.lh).slice(0, 3).map(m => mkName(m.mk, lang) + ' ' + nf(lang, m.lh) + '/' + nf(lang, m.own)).join('; ') });
+head = ['g_mk', $q.cq, $q.cr, $q.cs, $q.ct, $q.cu];
+rows = L.map(m => '<tr>' + mkC(m) + '<td>' + nf(lang, m.own) + $q.ac + nf(lang, m.fh) + $q.ac + nf(lang, m.lh) + $q.ac + nf(lang, m.oth) + $q.ac + (m.yrs.length ? nf(lang, Math.min(...m.yrs)) + '-' + nf(lang, Math.max(...m.yrs)) : '-') + $q.ag);
+q2 = g(lang, $q.cv); a2 = gf(lang, $q.cw, { list: L.filter(m => m.lh).slice(0, 3).map(m => mkName(m.mk, lang) + ' ' + nf(lang, m.lh) + '/' + nf(lang, m.own)).join('; ') });
 } else {
 const L = M.filter(m => m.pct.length >= GL_MIN).sort((a, b) => med(a.pct) - med(b.pct) || b.pct.length - a.pct.length);
-head = ['g_mk', 'g_n', 'pp_c', 'pp_med', 'pp_rng', 'pp_plan'];
-rows = L.map(m => '<tr>' + mkC(m) + '<td>' + nf(lang, m.n) + '</td><td>' + nf(lang, m.pct.length) + '</td><td>' + pctS(lang, med(m.pct)) + '</td><td>' + pctS(lang, Math.min(...m.pct)) + ' - ' + pctS(lang, Math.max(...m.pct)) + '</td><td>' + nf(lang, m.plan) + '</td></tr>');
+head = ['g_mk', 'g_n', 'pp_c', $q.cx, $q.cy, $q.cz];
+rows = L.map(m => '<tr>' + mkC(m) + '<td>' + nf(lang, m.n) + $q.ac + nf(lang, m.pct.length) + $q.ac + pctS(lang, med(m.pct)) + $q.ac + pctS(lang, Math.min(...m.pct)) + ' - ' + pctS(lang, Math.max(...m.pct)) + $q.ac + nf(lang, m.plan) + $q.ag);
 q2 = g(lang, 'pp_q2'); a2 = gf(lang, 'pp_a2', { list: L.slice().sort((a, b) => b.pct.length - a.pct.length).slice(0, 4).map(m => mkName(m.mk, lang) + ' ' + pctS(lang, med(m.pct))).join('; ') });
 }
-const k = term === 'payment-plan' ? 'pp' : term === 'leasehold' ? 'lease' : 'escrow';
+const k = term === $q.cA ? 'pp' : term === $q.cp ? 'lease' : $q.ck;
 const title = g(lang, k + '_t'), h1 = g(lang, k + '_h1'), def = g(lang, k + '_def');
 let desc = g(lang, k + '_d'); if ([...desc].length > 155) desc = [...desc].slice(0, 154).join('').replace(/[\s,;:]+\S*$/, '') + '.';
-const guides = BUY_PLACES.filter(P => (PLAN[P.s] || {})[step]).map(P => '<li><a href="' + pre(lang) + BASE + P.s + '/#step-' + step + '">' + esc(gf(lang, step === 'land' ? 'g_guide_l' : 'g_guide', { in: pin(P, lang) })) + '</a></li>').join('');
-const tbl = TB.kbx_buy__t.k9 + head.map(x => esc(g(lang, x))).join('</th><th>') + '</th></tr></thead><tbody>' + rows.join('') + TB.kbx_buy__t.k10 + esc(g(lang, 'g_note')) + '</p>';
+const guides = BUY_PLACES.filter(P => (PLAN[P.s] || {})[step]).map(P => $q.bi + pre(lang) + BASE + P.s + $q.cB + step + '">' + esc(gf(lang, step === 'land' ? $q.cC : $q.cD, { in: pin(P, lang) })) + $q.aX).join('');
+const tbl = $t.k9 + head.map(x => esc(g(lang, x))).join($q.at) + $q.au + rows.join('') + $t.k10 + esc(g(lang, $q.cE)) + '</p>';
 const faq = [[gf(lang, 'q1', { term: GL_NAME[term][lang] || GL_NAME[term].en }), def], [q2, a2]];
-const crumbs = [[g(lang, 'g_crumb'), '/glossary/'], [h1, pre(lang) + path]];
-const body = TB.kbx_buy__t.k11 + crumb(lang, crumbs) + '<h1>' + esc(h1) + '</h1><p class="lead">' + esc(def) + '</p>' +
-TB.kbx_buy__t.k12 + MOD + '">' + esc(gf(lang, 'g_upd', { d: fdt(MOD, lang), d2: fdt(D.updated, lang) })) + TB.kbx_buy__t.k13 + tbl +
-(guides ? '<h2 id="rules">' + esc(g(lang, 'g_rules')) + '</h2><ul>' + guides + '</ul>' : '') +
-TB.kbx_buy__t.k14 + esc(g(lang, 'g_faq')) + '</h2>' + faq.map(([q, a]) => '<h3>' + esc(q) + '</h3><p>' + esc(a) + '</p>').join('') + '</section>' +
-'<p><a href="/glossary/">' + esc(g(lang, 'g_all')) + '</a> · <a href="' + pre(lang) + BASE + '">' + esc(t(lang, 'hub')) + '</a></p></div></div></section></div>';
-const ld = [{ '@type': 'DefinedTerm', '@id': url + '#term', name: h1, description: def, inLanguage: lang, url, inDefinedTermSet: ORIGIN + '/glossary/' },
-{ '@type': 'Dataset', name: title, description: desc, url, inLanguage: lang, dateModified: D.updated > MOD ? D.updated : MOD, creator: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' }, license: TB.kbx_buy__t.k15, isAccessibleForFree: true },
-crumbLd(lang, crumbs), { '@type': 'FAQPage', '@id': url + '#faq', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }];
-return { path, title, desc, body, ld, og: 'website' };
+const crumbs = [[g(lang, $q.cF), $q.ax], [h1, pre(lang) + path]];
+const body = $t.k11 + crumb(lang, crumbs) + '<h1>' + esc(h1) + $q.bE + esc(def) + '</p>' +
+$t.k12 + MOD + '">' + esc(gf(lang, 'g_upd', { d: fdt(MOD, lang), d2: fdt(D.updated, lang) })) + $t.k13 + tbl +
+(guides ? $q.cG + esc(g(lang, $q.cH)) + $q.bJ + guides + '</ul>' : '') +
+$t.k14 + esc(g(lang, 'g_faq')) + '</h2>' + faq.map(([q, a]) => '<h3>' + esc(q) + $q.Y + esc(a) + '</p>').join('') + $q.aL +
+$q.cI + esc(g(lang, 'g_all')) + $q.cg + pre(lang) + BASE + '">' + esc(t(lang, 'hub')) + $q.cJ;
+const ld = [{ '@type': $q.cK, '@id': url + '#term', name: h1, description: def, inLanguage: lang, url, inDefinedTermSet: ORIGIN + $q.ax },
+{ '@type': $q.cL, name: title, description: desc, url, inLanguage: lang, dateModified: D.updated > MOD ? D.updated : MOD, creator: { '@type': $q.bR, name: $q.o, url: ORIGIN + '/' }, license: $t.k15, isAccessibleForFree: true },
+crumbLd(lang, crumbs), { '@type': $q.bS, '@id': url + '#faq', mainEntity: faq.map(([q, a]) => ({ '@type': $q.bT, name: q, acceptedAnswer: { '@type': $q.bU, text: a } })) }];
+return { path, title, desc, body, ld, og: $q.cM };
 }
 const TC_MIN = 5;
 const GUIDE_TC = { dubai: 'dubai', 'costa-del-sol': 'costa-del-sol', bali: 'indonesia', phuket: 'thailand', lisbon: 'portugal', 'united-kingdom': 'england' };
 const c = (lang, k) => (TCS[lang] && TCS[lang][k] != null) ? TCS[lang][k] : TCS.en[k];
 const cf = (lang, k, v) => fill(c(lang, k), v);
 const cin = (s, lang) => (TCPL[s] && (TCPL[s][lang] || TCPL[s].en)) || (PL[s] ? pin({ s }, lang) : s);
-const money = (lang, cur, v) => { try { return new Intl.NumberFormat(LOC[lang] || 'en-GB', { style: 'currency', currency: cur, maximumFractionDigits: 0 }).format(v); } catch (e) { return cur + ' ' + nf(lang, Math.round(v)); } };
+const money = (lang, cur, v) => { try { return new Intl.NumberFormat(LOC[lang] || 'en-GB', { style: $q.cN, currency: cur, maximumFractionDigits: 0 }).format(v); } catch (e) { return cur + ' ' + nf(lang, Math.round(v)); } };
 const qtl = (a, q) => { const b = a.slice().sort((x, y) => x - y), i = (b.length - 1) * q, lo = Math.floor(i), hi = Math.ceil(i); return b[lo] + (b[hi] - b[lo]) * (i - lo); };
 let TCD = null;
 async function tcData(env) {
@@ -344,42 +341,42 @@ return TCD;
 }
 function tcPage(D, s, lang) {
 const d = D.by.get(s); if (!d) return null;
-const { E, T, L } = d, inP = cin(s, lang), path = '/tools/total-cost/' + s + '/', url = ORIGIN + pre(lang) + path;
+const { E, T, L } = d, inP = cin(s, lang), path = $q.bs + s + '/', url = ORIGIN + pre(lang) + path;
 const ps = L.map(o => o.p), k = nf(lang, L.length);
 const tot = p => (costCalc(L[0].x, p, lang).rows || []).reduce((a, r) => a + (r.amount || 0), 0);
 const C0 = costCalc(L[0].x, 1, lang);
 const srcOf = i => T.rows[i] ? T.rows[i].s.map(q => TC_SOURCES[q]).filter(Boolean) : [];
-const rowsH = C0.rows.map((r, i) => '<tr><td>' + esc(r.label) + '</td><td>' + bdi(r.rate) + '</td><td>' + srcOf(i).map(([n, u]) => '<a href="' + esc(u) + '" rel="noopener"><bdi>' + esc(n) + '</bdi></a>').join(' · ') + '</td></tr>').join('');
+const rowsH = C0.rows.map((r, i) => $q.Z + esc(r.label) + $q.ac + bdi(r.rate) + $q.ac + srcOf(i).map(([n, u]) => $q.k + esc(u) + $q.cO + esc(n) + $q.w).join(' · ') + $q.ag).join('');
 const pts = [['c_q1', qtl(ps, 0.25)], ['c_q2', qtl(ps, 0.5)], ['c_q3', qtl(ps, 0.75)]].map(([kk, p]) => [kk, Math.round(p)]);
-const exH = pts.map(([kk, p]) => '<tr><td>' + esc(c(lang, kk)) + '</td><td>' + esc(money(lang, T.cur, p)) + '</td><td>' + esc(money(lang, T.cur, tot(p))) + '</td></tr>').join('');
+const exH = pts.map(([kk, p]) => $q.Z + esc(c(lang, kk)) + $q.ac + esc(money(lang, T.cur, p)) + $q.ac + esc(money(lang, T.cur, tot(p))) + $q.ag).join('');
 const mp = pts[1][1];
 const near = L.slice().sort((a, b) => Math.abs(a.p - mp) - Math.abs(b.p - mp) || String(a.x.n).localeCompare(String(b.x.n))).slice(0, 6)
-.map(o => '<li><a href="' + pre(lang) + '/projects/' + esc(o.x.s) + '/">' + bdi(o.x.n) + '</a>: ' + esc(money(lang, T.cur, o.p)) + ' + ' + esc(money(lang, T.cur, tot(o.p))) + '</li>').join('');
+.map(o => $q.bi + pre(lang) + $q.B + esc(o.x.s) + '/">' + bdi(o.x.n) + $q.cP + esc(money(lang, T.cur, o.p)) + ' + ' + esc(money(lang, T.cur, tot(o.p))) + '</li>').join('');
 const title = cf(lang, 'c_t', { in: (TCPL_T[s] && TCPL_T[s][lang]) || inP });
 const rowsTxt = C0.rows.map(r => r.label + ' ' + r.rate).join('; ') + (C0.part ? '; ' + C0.part : '');
 const faq = [[cf(lang, 'c_q', { in: inP }), cf(lang, 'c_a', { rows: rowsTxt, p: money(lang, T.cur, mp), tot: money(lang, T.cur, tot(mp)) })]];
-let desc = cf(lang, 'c_lead', { in: inP, k }); if ([...desc].length > 155) desc = [...desc].slice(0, 154).join('').replace(/[\s,;:]+\S*$/, '') + '.';
-const crumbs = [[t(lang, 'guides'), pre(lang) + BASE], [title, pre(lang) + path]];
-const body = TB.kbx_buy__t.k16 + crumb(lang, crumbs) + '<h1>' + esc(title) + '</h1><p class="lead">' + esc(cf(lang, 'c_lead', { in: inP, k })) + '</p>' +
-TB.kbx_buy__t.k17 + MOD + '">' + esc(cf(lang, 'c_upd', { d: fdt(D.updated > MOD ? D.updated : MOD, lang) })) + TB.kbx_buy__t.k18 +
-'<h2 id="rows">' + esc(c(lang, 'c_rows')) + TB.kbx_buy__t.k19 + ['c_tax', 'c_rate', 'c_src'].map(z => esc(c(lang, z))).join('</th><th>') + '</th></tr></thead><tbody>' + rowsH + '</tbody></table></div>' +
+let desc = cf(lang, $q.cQ, { in: inP, k }); if ([...desc].length > 155) desc = [...desc].slice(0, 154).join('').replace(/[\s,;:]+\S*$/, '') + '.';
+const crumbs = [[t(lang, $q.bD), pre(lang) + BASE], [title, pre(lang) + path]];
+const body = $t.k16 + crumb(lang, crumbs) + '<h1>' + esc(title) + $q.bE + esc(cf(lang, $q.cQ, { in: inP, k })) + '</p>' +
+$t.k17 + MOD + '">' + esc(cf(lang, 'c_upd', { d: fdt(D.updated > MOD ? D.updated : MOD, lang) })) + $t.k18 +
+$q.cR + esc(c(lang, $q.cS)) + $t.k19 + ['c_tax', $q.cT, 'c_src'].map(z => esc(c(lang, z))).join($q.at) + $q.au + rowsH + $q.av +
 (C0.part ? '<p>' + esc(C0.part) + '</p>' : '') + (C0.note ? '<p>' + esc(C0.note) + '</p>' : '') +
-'<h2 id="examples">' + esc(c(lang, 'c_ex')) + '</h2><p>' + esc(cf(lang, 'c_exp', { k, in: inP, cur: T.cur })) + TB.kbx_buy__t.k20 + ['c_pt', 'c_price', 'c_tot'].map(z => esc(c(lang, z))).join('</th><th>') + '</th></tr></thead><tbody>' + exH + '</tbody></table></div>' +
-'<h3>' + esc(c(lang, 'c_near')) + '</h3><ul>' + near + '</ul>' +
-TB.kbx_buy__t.k21 + E.tool + '">' + esc(c(lang, 'c_tool')) + '</a>' + (PL[s] ? ' · <a href="' + pre(lang) + BASE + s + '/">' + esc(tx(lang, 'guide_link', { in: pin({ s }, lang) })) + '</a>' : '') + '</p>' +
-TB.kbx_buy__t.k22 + esc(t(lang, 'faq_h')) + '</h2>' + faq.map(([q, a]) => '<h3>' + esc(q) + '</h3><p>' + esc(a) + '</p>').join('') + '</section><div class="kby-note"><p>' + esc(c(lang, 'c_note')) + TB.kbx_buy__t.k23;
-const ld = [{ '@type': 'WebPage', '@id': url + '#page', url, name: title, description: desc, inLanguage: lang, dateModified: MOD }, crumbLd(lang, crumbs),
-{ '@type': 'FAQPage', '@id': url + '#faq', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }];
+$q.cU + esc(c(lang, 'c_ex')) + $q.am + esc(cf(lang, 'c_exp', { k, in: inP, cur: T.cur })) + $t.k20 + ['c_pt', $q.cV, 'c_tot'].map(z => esc(c(lang, z))).join($q.at) + $q.au + exH + $q.av +
+'<h3>' + esc(c(lang, $q.cW)) + $q.bM + near + '</ul>' +
+$t.k21 + E.tool + '">' + esc(c(lang, $q.cX)) + '</a>' + (PL[s] ? $q.cY + pre(lang) + BASE + s + '/">' + esc(tx(lang, $q.bj, { in: pin({ s }, lang) })) + '</a>' : '') + '</p>' +
+$t.k22 + esc(t(lang, 'faq_h')) + '</h2>' + faq.map(([q, a]) => '<h3>' + esc(q) + $q.Y + esc(a) + '</p>').join('') + $q.cZ + esc(c(lang, $q.da)) + $t.k23;
+const ld = [{ '@type': $q.db, '@id': url + '#page', url, name: title, description: desc, inLanguage: lang, dateModified: MOD }, crumbLd(lang, crumbs),
+{ '@type': $q.bS, '@id': url + '#faq', mainEntity: faq.map(([q, a]) => ({ '@type': $q.bT, name: q, acceptedAnswer: { '@type': $q.bU, text: a } })) }];
 return { path, title, desc, body, ld };
 }
 const BODY = new Map();
 export async function page(req, u, env, ctx, shell) {
-  if (u.pathname === SITEMAP) return new Response(await sitemapXml(env), { headers: { 'content-type': 'application/xml; charset=utf-8', 'cache-control': 'public, max-age=3600' } });
+  if (u.pathname === SITEMAP) return new Response(await sitemapXml(env), { headers: { 'content-type': $q.dc, 'cache-control': $q.dd } });
   const cm = u.pathname.match(TC_RX), gm = cm || u.pathname.match(GL_RX);
   const m = gm || u.pathname.match(PAGE_RX); if (!m || !shell) return null;
   const lang = m[1] || 'en', slug = gm ? null : (m[2] || null);
   if (slug && !PL[slug]) return null;
-  if (!m[3]) return new Response(null, { status: 301, headers: { location: u.pathname + '/' + u.search, 'cache-control': 'public, max-age=86400' } });
+  if (!m[3]) return new Response(null, { status: 301, headers: { location: u.pathname + '/' + u.search, 'cache-control': $q.de } });
   let G; try { G = await guideData(env); } catch (e) { return null; }
   const k = lang + '|' + (cm ? 'c:' + cm[2] : gm ? 'g:' + gm[2] : (slug || '#')) + '|' + G.v;
   let pg = BODY.get(k);
@@ -390,26 +387,26 @@ export async function page(req, u, env, ctx, shell) {
     pg = slug ? guidePage(G, slug, lang, lease) : hubPage(G, lang); if (!pg) return null;
     if (BODY.size > 300) BODY.clear(); BODY.set(k, pg);
   }
-  const sh = await shell(pre(lang) + '/how-we-score/');
-  const url = ORIGIN + pre(lang) + pg.path, alts = LANGS.map(l => '<link rel="alternate" hreflang="' + l + '" href="' + ORIGIN + pre(l) + pg.path + '">').join('') + '<link rel="alternate" hreflang="x-default" href="' + ORIGIN + pg.path + '">';
-  const tags = '<title>' + esc(pg.title) + ([...pg.title].length + 11 <= 60 ? ' | Kolaboro' : '') + '</title><meta name="description" content="' + esc(pg.desc) + '"><link rel="canonical" href="' + url + '">' + alts + '<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">' +
-    '<meta property="og:type" content="article"><meta property="og:site_name" content="Kolaboro"><meta property="og:title" content="' + esc(pg.title) + '"><meta property="og:description" content="' + esc(pg.desc) + '"><meta property="og:url" content="' + url + '"><meta property="og:image" content="' + ogImg(url) + '"><meta name="twitter:card" content="summary_large_image">' +
-    '<script type="application/ld+json">' + JSON.stringify({ '@context': 'https://schema.org', '@graph': pg.ld }).replace(/</g, '\\u003c') + '</script>' + CSS;
+  const sh = await shell(pre(lang) + $q.df);
+  const url = ORIGIN + pre(lang) + pg.path, alts = LANGS.map(l => $q.dg + l + $q.dh + ORIGIN + pre(l) + pg.path + '">').join('') + $q.di + ORIGIN + pg.path + '">';
+  const tags = $q.dj + esc(pg.title) + ([...pg.title].length + 11 <= 60 ? $q.dk : '') + $q.dl + esc(pg.desc) + $q.dm + url + '">' + alts + $q.dn +
+    $q.do + esc(pg.title) + $q.dp + esc(pg.desc) + $q.dq + url + $q.dr + ogImg(url) + $q.ds +
+    $q.dt + JSON.stringify({ '@context': $q.du, '@graph': pg.ld }).replace(/</g, $q.dv) + $q.dw + $q.a;
   const res = new HTMLRewriter()
     .on('html', { element(e) { e.setAttribute('lang', lang); if (lang === 'ar') e.setAttribute('dir', 'rtl'); else e.removeAttribute('dir'); } })
     .on('title', { element(e) { e.remove(); } })
-    .on('meta[name="description"],meta[name="robots"],meta[property^="og:"],meta[name^="twitter:"],link[rel="canonical"],link[rel="alternate"][hreflang]', { element(e) { e.remove(); } })
-    .on('script[type="application/ld+json"]', { element(e) { e.remove(); } })
+    .on($q.dx, { element(e) { e.remove(); } })
+    .on($q.dy, { element(e) { e.remove(); } })
     .on('head', { element(e) { e.append(tags, { html: true }); } })
     .on('main', { element(e) { e.setInnerContent(pg.body, { html: true }); } })
-    .on('details.lsw a[hreflang]', { element(e) { const l = e.getAttribute('hreflang'); if (LANGS.includes(l)) e.setAttribute('href', pre(l) + pg.path); } })
-    .transform(new Response(sh.body, { headers: { 'content-type': 'text/html; charset=utf-8' } }));
-  return new Response(req.method === 'HEAD' ? null : await res.text(), { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=600' } });
+    .on($q.dz, { element(e) { const l = e.getAttribute($q.dA); if (LANGS.includes(l)) e.setAttribute('href', pre(l) + pg.path); } })
+    .transform(new Response(sh.body, { headers: { 'content-type': $q.dB } }));
+  return new Response(req.method === 'HEAD' ? null : await res.text(), { status: 200, headers: { 'content-type': $q.dB, 'cache-control': $q.dC } });
 }
 async function sitemapXml(env) {
 let cs = []; try { cs = [...(await tcData(env)).by.keys()]; } catch (e) { cs = []; }
-const paths = [BASE].concat(BUY_PLACES.map(P => BASE + P.s + '/'), GL_TERMS.map(x => '/glossary/' + x + '/'), cs.map(x => '/tools/total-cost/' + x + '/'));
-const x = paths.flatMap(p => LANGS.map(l => '<url><loc>' + ORIGIN + pre(l) + p + '</loc><lastmod>' + MOD + '</lastmod>' + LANGS.map(a => TB.kbx_buy__t.k24 + a + '" href="' + ORIGIN + pre(a) + p + '"/>').join('') + TB.kbx_buy__t.k25 + ORIGIN + p + '"/></url>'));
-return TB.kbx_buy__s.k0 + x.join('\n') + '\n</urlset>\n';
+const paths = [BASE].concat(BUY_PLACES.map(P => BASE + P.s + '/'), GL_TERMS.map(x => $q.ax + x + '/'), cs.map(x => $q.bs + x + '/'));
+const x = paths.flatMap(p => LANGS.map(l => $q.dD + ORIGIN + pre(l) + p + $q.dE + MOD + $q.dF + LANGS.map(a => $t.k24 + a + $q.dh + ORIGIN + pre(a) + p + '"/>').join('') + $t.k25 + ORIGIN + p + $q.dG));
+return $s.k0 + x.join('\n') + $q.dH;
 }
 export { guidePage, hubPage, guideData, glData, glPage, tcData, tcPage, SRC, PLAN };

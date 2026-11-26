@@ -1,19 +1,20 @@
 // comments: _notes/kolaboro-worker-comments.txt
+const $q = TB.kbx_p29__q, $t = TB.kbx_p29__t;   // n40 k46: short names for this module's string tables (strings in /data/i18n/k19s.json, k17s.json, k46s.json)
 import { regSale } from './kbx_n31d_rs.js';
 import { NT } from './kbx_buy_notes.js';
 import { rulesFor } from './kbx_rules.js';
 import { words } from './kbx_named_qa.js';
 import { TB } from './kbx_strings.js';
-const esc = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const esc = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': $q.a, "'": '&#39;' }[c]));
 const host = u => { try { return new URL(u).hostname.replace(/^www\./, ''); } catch (e) { return ''; } };
-const okU = u => typeof u === 'string' && /^https?:\/\/[^\s"<>]+$/.test(u);
+const okU = u => typeof u === $q.b && /^https?:\/\/[^\s"<>]+$/.test(u);
 const pre = l => l === 'en' ? '' : '/' + l;
 const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' };
 const nf = (lang, v, o) => { try { const c = (globalThis.__kbFmt = globalThis.__kbFmt || {}), k = 'n' + LOC[lang] + JSON.stringify(o || 0); return (c[k] || (c[k] = new Intl.NumberFormat(LOC[lang] || 'en-GB', o))).format(v); } catch (e) { return String(v); } };
-const src = (u, label) => okU(u) ? ' <a class="src" href="' + esc(u) + '" rel="nofollow noopener" target="_blank">' + esc(label || host(u)) + '</a>' : '';
-const own = (u, label) => ' <a class="src" href="' + esc(u) + '">' + esc(label) + '</a>';
-const li = (h, s) => '<li class="kfact">' + h + (s || '') + '</li>';
-const enq = (t, lang) => lang === 'en' ? esc(t) : '<span lang="en" dir="ltr">' + esc(t) + '</span>';
+const src = (u, label) => okU(u) ? $q.c + esc(u) + $q.d + esc(label || host(u)) + '</a>' : '';
+const own = (u, label) => $q.c + esc(u) + '">' + esc(label) + '</a>';
+const li = (h, s) => $q.e + h + (s || '') + '</li>';
+const enq = (t, lang) => lang === 'en' ? esc(t) : $q.f + esc(t) + $q.g;
 const S = TB.kbx_p29_S ;
 export const t29 = (lang, k, v) => { if (v && (v.k === 1 || v.n === 1) && S[lang] && S[lang][k + '_1']) k += '_1'; const s = (S[lang] && S[lang][k]) || S.en[k] || k; return v ? s.replace(/\{(\w+)\}/g, (m, x) => v[x] != null ? v[x] : m).replace(/(?<!\.)\.\.(?=\s|$)/g, '.') : s; };
 const LAW = {
@@ -38,9 +39,9 @@ const MX_COAST = new Set(['Riviera Maya', 'Los Cabos', 'Puerto Vallarta', 'Rivie
 const landed = x => /villa|house|home|townhouse|bungalow|land|plot|landed/i.test(((x.fx || {}).unit_types || []).join(' ') + ' ' + x.n) && !/apartment|condo|suite|studio|tower/i.test(((x.fx || {}).unit_types || []).join(' '));
 function lawFor(x, lang) {
 const n = k => (NT[k] && (NT[k][lang] || NT[k].en)) || '';
-if (x.co === 'Indonesia') return [[n('n_id_milik'), LAW.id_uupa]].concat(landed(x) ? [[n('n_id_pakai'), LAW.id_pp18]] : []);
-if (x.co === 'Thailand') return landed(x) ? [[n('n_th_land'), LAW.th_dol]] : [[n('n_th_quota'), LAW.th_condo]];
-if (x.co === 'Mexico' && MX_COAST.has(x.mk)) return [[TB.kbx_p29__t.o_MX_RZ[lang] || TB.kbx_p29__t.o_MX_RZ.en, LAW.mx_lie]];
+if (x.co === $q.h) return [[n($q.i), LAW.id_uupa]].concat(landed(x) ? [[n($q.j), LAW.id_pp18]] : []);
+if (x.co === $q.k) return landed(x) ? [[n($q.l), LAW.th_dol]] : [[n($q.m), LAW.th_condo]];
+if (x.co === $q.n && MX_COAST.has(x.mk)) return [[$t.o_MX_RZ[lang] || $t.o_MX_RZ.en, LAW.mx_lie]];
 if (x.co === 'UAE' && x.mk === 'Dubai') return [[AE_L7[lang] || AE_L7.en, LAW.ae_l7]];
 return [];
 }
@@ -68,51 +69,51 @@ export function ppmMedian(ix, x, lang, mkL) {
 const v = ppmOf(x); if (v == null) return '';
 const cur = String(x.fx.currency).toUpperCase(), m = medians(ix).get(x.mk + '|' + cur); if (!m) return '';
 const d = Math.round((v / m.m - 1) * 100), p = Math.abs(d) < 5 ? t29(lang, 'p_eq') : t29(lang, d > 0 ? 'p_up' : 'p_dn', { x: nf(lang, Math.abs(d)) });
-return li(esc(t29(lang, 'ppm_med', { mk: mkL, k: nf(lang, m.n), c: cur, v: cur + ' ' + nf(lang, Math.round(m.m)), p })), own('/data/named.json', 'kolaboro.com/data/named.json'));
+return li(esc(t29(lang, $q.o, { mk: mkL, k: nf(lang, m.n), c: cur, v: cur + ' ' + nf(lang, Math.round(m.m)), p })), own($q.p, $q.q));
 }
 const CO_REG = { USA: 'United States', UK: 'United Kingdom', 'Türkiye': 'Turkey' };
 export function companyRegs(REG, x) {
 if (!REG || !REG.length) return [];
-const has = r => (r.checks || []).includes('company') && okU(r.url);
+const has = r => (r.checks || []).includes($q.r) && okU(r.url);
 const byM = REG.filter(r => r.market === x.mk && has(r)); if (byM.length) return byM;
 const co = CO_REG[x.co] || x.co; return REG.filter(r => r.market === co && has(r));
 }
-const regLi = (lang, r, p) => li('<b>' + esc(t29(lang, 'dreg', { p })) + '</b> <bdi>' + esc(r.register) + '</bdi>', src(r.url));
+const regLi = (lang, r, p) => li('<b>' + esc(t29(lang, 'dreg', { p })) + $q.s + esc(r.register) + $q.t, src(r.url));
 export function p29Project(ix, x, lang, c, h, ex) {
-const fx = x.fx || {}, name = x.n, page = h.page, rd = h.read, by = page ? t29(lang, 'pp_read', { d: rd }) : '';
+const fx = x.fx || {}, name = x.n, page = h.page, rd = h.read, by = page ? t29(lang, $q.u, { d: rd }) : '';
 const out = { faq: [], toc: [], secs: {} };
 const plan = fx.payment_plan && h.cleanOk(String(fx.payment_plan)) ? String(fx.payment_plan) : '';
-out.secs.plan = '<ul class="fl">' + (plan ? li('<b>' + esc(h.tr(lang, 'f_plan')) + ':</b> ' + enq(plan, lang), src(page)) : '<li>' + esc(t29(lang, 'pp_none', { d: rd })) + '</li>') +
-(fx.deposit_pct ? li('<b>' + esc(h.tr(lang, 'f_deposit')) + ':</b> ' + esc(nf(lang, fx.deposit_pct)) + '%', src(page)) : '') + (plan && by ? '<li><small class="k-muted">' + esc(by) + '</small></li>' : '') + '</ul>';
+out.secs.plan = $q.v + (plan ? li('<b>' + esc(h.tr(lang, $q.w)) + $q.x + enq(plan, lang), src(page)) : '<li>' + esc(t29(lang, $q.y, { d: rd })) + '</li>') +
+(fx.deposit_pct ? li('<b>' + esc(h.tr(lang, $q.z)) + $q.x + esc(nf(lang, fx.deposit_pct)) + '%', src(page)) : '') + (plan && by ? $q.A + esc(by) + $q.B : '') + '</ul>';
 const T = [], A = [];
-if ((fx.unit_types || []).length) { T.push(li('<b>' + esc(h.tr(lang, 'f_types')) + ':</b> ' + enq(fx.unit_types.join(', '), lang), src(page))); A.push(fx.unit_types.join(', ')); }
-if (fx.size_min_m2) { const s = nf(lang, fx.size_min_m2) + (fx.size_max_m2 && fx.size_max_m2 !== fx.size_min_m2 ? ' - ' + nf(lang, fx.size_max_m2) : '') + ' m²'; T.push(li('<b>' + esc(h.tr(lang, 'f_sizes')) + ':</b> ' + esc(s), src(page))); A.push(s); }
-if (c && c.units) { T.push(li('<b>' + esc(h.tr(lang, 'f_units')) + ':</b> ' + esc(nf(lang, c.units)), src(page))); A.push(h.tr(lang, 'f_units') + ': ' + nf(lang, c.units)); }
-if (!h.rvd && x.ev && x.ev.plans && h.cleanOk(x.ev.plans)) T.push(li('<b>' + esc(t29(lang, 'ty_pl')) + ':</b> ' + enq(x.ev.plans, lang), src(x.du || page)));
-out.secs.types = '<ul class="fl">' + (T.length ? T.join('') + (by && !plan ? '<li><small class="k-muted">' + esc(by) + '</small></li>' : '') : '<li>' + esc(t29(lang, 'ty_none', { d: rd })) + '</li>') + '</ul>';
+if ((fx.unit_types || []).length) { T.push(li('<b>' + esc(h.tr(lang, $q.C)) + $q.x + enq(fx.unit_types.join(', '), lang), src(page))); A.push(fx.unit_types.join(', ')); }
+if (fx.size_min_m2) { const s = nf(lang, fx.size_min_m2) + (fx.size_max_m2 && fx.size_max_m2 !== fx.size_min_m2 ? ' - ' + nf(lang, fx.size_max_m2) : '') + ' m²'; T.push(li('<b>' + esc(h.tr(lang, $q.D)) + $q.x + esc(s), src(page))); A.push(s); }
+if (c && c.units) { T.push(li('<b>' + esc(h.tr(lang, $q.E)) + $q.x + esc(nf(lang, c.units)), src(page))); A.push(h.tr(lang, $q.E) + ': ' + nf(lang, c.units)); }
+if (!h.rvd && x.ev && x.ev.plans && h.cleanOk(x.ev.plans)) T.push(li('<b>' + esc(t29(lang, 'ty_pl')) + $q.x + enq(x.ev.plans, lang), src(x.du || page)));
+out.secs.types = $q.v + (T.length ? T.join('') + (by && !plan ? $q.A + esc(by) + $q.B : '') : '<li>' + esc(t29(lang, $q.F, { d: rd })) + '</li>') + '</ul>';
 const R = [], fo = fx.foreign_ownership && h.cleanOk(String(fx.foreign_ownership)) ? String(fx.foreign_ownership) : '', L = lawFor(x, lang), co = h.coName(x.co, lang) || x.co;
-if (fo) R.push(li('<b>' + esc(t29(lang, 'own_pub')) + '</b> ' + enq(fo, lang), src(page)));
+if (fo) R.push(li('<b>' + esc(t29(lang, $q.G)) + '</b> ' + enq(fo, lang), src(page)));
 const LL = L.filter(l => l[0]);
-if (LL.length) R.push(li('<b>' + esc(t29(lang, 'own_law', { co })) + '</b> ' + LL.map(([txt, s]) => esc(txt) + src(s.u, s.n) + ' <small class="k-muted">(' + esc(h.fd(s.d, lang)) + ')</small>').join(' ')));
-if (fo) out.faq.push([t29(lang, 'q_own', { n: name }), (t29(lang, 'own_pub') + ' ' + fo + '.' + (L.length ? ' ' + t29(lang, 'own_law', { co }) + ' ' + L.map(l => l[1].n).join('; ') + '.' : '')).replace(/\.\.$/, '.'), [fo], 1]);
+if (LL.length) R.push(li('<b>' + esc(t29(lang, $q.H, { co })) + '</b> ' + LL.map(([txt, s]) => esc(txt) + src(s.u, s.n) + $q.I + esc(h.fd(s.d, lang)) + $q.J).join(' ')));
+if (fo) out.faq.push([t29(lang, 'q_own', { n: name }), (t29(lang, $q.G) + ' ' + fo + '.' + (L.length ? ' ' + t29(lang, $q.H, { co }) + ' ' + L.map(l => l[1].n).join('; ') + '.' : '')).replace(/\.\.$/, '.'), [fo], 1]);
 const rdat = ex && ex.ru, ds = ex && ex.sl && ex.sl.projects && ex.sl.projects[x.id] && !ex.sl.projects[x.id].outside ? ex.sl.projects[x.id].ds : null;
 const rid = rdat ? rulesFor(rdat, x, ds) : [];
 for (const id of rid.slice(0, 1)) {
 const j = rdat.rules[id], cell = ['reg', 'stay', 'cap'].map(k => j[k]).find(cc => cc && cc.s === 'rule' && cc.t);
 if (!cell) continue;
 const txt = cell.t[lang] || cell.t.en, s0 = (cell.src || []).map(k => rdat.sources[k]).find(Boolean);
-R.push(li('<b>' + esc(t29(lang, 'str_l', { p: '\u0001' })).replace('\u0001', '<a href="' + pre(lang) + '/guides/short-let-rules/#r-' + esc(id) + '">' + esc(j.name) + '</a>') + '</b> ' + esc(txt), s0 ? src(s0.u, String(s0.n).split(',')[0]) : ''));
+R.push(li('<b>' + esc(t29(lang, 'str_l', { p: $q.K })).replace($q.K, $q.L + pre(lang) + $q.M + esc(id) + '">' + esc(j.name) + '</a>') + '</b> ' + esc(txt), s0 ? src(s0.u, String(s0.n).split(',')[0]) : ''));
 }
-out.secs.rules = R.length ? '<ul class="fl">' + R.join('') + '</ul>' : '';
+out.secs.rules = R.length ? $q.v + R.join('') + '</ul>' : '';
 return out;
 }
 export function distLine(lang, name, pairs) {
 if (!pairs.length) return { li: '', faq: null };
 const sep = lang === 'zh' ? '；' : lang === 'ar' ? '؛ ' : '; ', cl = lang === 'zh' ? '：' : lang === 'fr' ? ' : ' : ': ';
 const txt = pairs.map(([a, b]) => a + cl + b).join(sep);
-return { li: li('<b>' + esc(t29(lang, 'wd_l')) + '</b> <bdi>' + esc(txt) + '</bdi>', TB.kbx_p29__t.k0), faq: null };
+return { li: li('<b>' + esc(t29(lang, 'wd_l')) + $q.s + esc(txt) + $q.t, $t.k0), faq: null };
 }
-export const satHtml29 = (lang, s) => s ? '<p class="kans-u k29s"><span>' + esc(t29(lang, 'sat_l')) + ' ' + esc(s) + ' <a href="#space">' + esc(t29(lang, 'sat_more')) + '</a></span></p>' : '';
+export const satHtml29 = (lang, s) => s ? $q.N + esc(t29(lang, 'sat_l')) + ' ' + esc(s) + $q.O + esc(t29(lang, $q.P)) + $q.Q : '';
 export function devAnswer(lang, P, en) {
 const out = new Set(); const W = () => words(P.filter(p => !out.has(p[0])).map(p => p[2]).join(' '));
 for (const k of en) { if (W() <= 60) break; out.add(k); }
@@ -122,20 +123,20 @@ return P.filter(p => !out.has(p[0])).map(p => p[1]).join(' ');
 const SY_C = { st_offplan: '#B07A12', st_construction: '#155C75', st_completed: '#2E7D4F', st_unknown: '#7A848C' };
 export function devStageYear(lang, rows, dev) {
 if (rows.length < 2) return '';
-const ND = '~', yrs = new Map(), sts = ['st_offplan', 'st_construction', 'st_completed', 'st_unknown'].filter(k => rows.some(r => r.st === k)), stL = {};
+const ND = '~', yrs = new Map(), sts = [$q.R, $q.S, $q.T, $q.U].filter(k => rows.some(r => r.st === k)), stL = {};
 for (const r of rows) { const y = r.y || ND; const o = yrs.get(y) || {}; o[r.st] = (o[r.st] || 0) + 1; yrs.set(y, o); stL[r.st] = r.stL; }
 const Y = [...yrs.keys()].sort((a, b) => a === ND ? 1 : b === ND ? -1 : a.localeCompare(b)), tot = y => sts.reduce((n, k) => n + (yrs.get(y)[k] || 0), 0), mx = Math.max(...Y.map(tot));
 const yl = y => y === ND ? t29(lang, 'sy_nd') : y, cap = s => String(s).charAt(0).toUpperCase() + String(s).slice(1);
 const W = 640, LW = 92, BW = 470, RH = 26, H = Y.length * RH + 34;
 let g = '';
-Y.forEach((y, i) => { let x = LW; const ty = 8 + i * RH; g += '<text x="' + (LW - 8) + '" y="' + (ty + 15) + '" text-anchor="end" font-size="13" fill="currentColor">' + esc(yl(y)) + '</text>';
-for (const k of sts) { const n = yrs.get(y)[k] || 0; if (!n) continue; const w = Math.max(2, Math.round(n / mx * BW)); g += '<rect x="' + x + '" y="' + ty + '" width="' + w + '" height="' + (RH - 8) + '" fill="' + SY_C[k] + '"><title>' + esc(yl(y) + ': ' + cap(stL[k]) + ' ' + nf(lang, n)) + '</title></rect>'; x += w; }
-g += '<text x="' + (x + 6) + '" y="' + (ty + 15) + '" font-size="13" fill="currentColor">' + esc(nf(lang, tot(y))) + '</text>'; });
-let lx = LW; const ly = Y.length * RH + 14; for (const k of sts) { const t = cap(stL[k]); g += '<rect x="' + lx + '" y="' + ly + '" width="12" height="12" fill="' + SY_C[k] + '"></rect><text x="' + (lx + 17) + '" y="' + (ly + 11) + '" font-size="12" fill="currentColor">' + esc(t) + '</text>'; lx += 30 + [...t].length * 7; }
-const svg = '<svg viewBox="0 0 ' + W + ' ' + H + '" width="100%" style="max-width:' + W + 'px;direction:ltr" direction="ltr" role="img" aria-label="' + esc(t29(lang, 'sy_al', { n: nf(lang, rows.length), dev })) + '">' + g + '</svg>';
-const th = '<tr><th scope="col">' + esc(t29(lang, 'sy_y')) + '</th>' + sts.map(k => '<th scope="col">' + esc(cap(stL[k])) + '</th>').join('') + '<th scope="col">' + esc(t29(lang, 'sy_t')) + '</th></tr>';
-const tb = Y.map(y => '<tr><th scope="row">' + esc(yl(y)) + '</th>' + sts.map(k => '<td>' + esc(nf(lang, yrs.get(y)[k] || 0)) + '</td>').join('') + '<td><b>' + esc(nf(lang, tot(y))) + '</b></td></tr>').join('') + '<tr><th scope="row">' + esc(t29(lang, 'sy_t')) + '</th>' + sts.map(k => '<td>' + esc(nf(lang, rows.filter(r => r.st === k).length)) + '</td>').join('') + '<td><b>' + esc(nf(lang, rows.length)) + '</b></td></tr>';
-return '<h3 id="by-year">' + esc(t29(lang, 'sy_h')) + '</h3><figure class="k25sy" style="margin:8px 0 12px;overflow-x:auto">' + svg + '</figure><div class="tw"><table><caption class="k-xs" style="text-align:start;caption-side:top">' + esc(t29(lang, 'sy_cap')) + '</caption><thead>' + th + '</thead><tbody>' + tb + '</tbody></table></div>';
+Y.forEach((y, i) => { let x = LW; const ty = 8 + i * RH; g += $q.V + (LW - 8) + '" y="' + (ty + 15) + $q.W + esc(yl(y)) + $q.X;
+for (const k of sts) { const n = yrs.get(y)[k] || 0; if (!n) continue; const w = Math.max(2, Math.round(n / mx * BW)); g += $q.Y + x + '" y="' + ty + $q.Z + w + $q.aa + (RH - 8) + $q.ab + SY_C[k] + $q.ac + esc(yl(y) + ': ' + cap(stL[k]) + ' ' + nf(lang, n)) + $q.ad; x += w; }
+g += $q.V + (x + 6) + '" y="' + (ty + 15) + $q.ae + esc(nf(lang, tot(y))) + $q.X; });
+let lx = LW; const ly = Y.length * RH + 14; for (const k of sts) { const t = cap(stL[k]); g += $q.Y + lx + '" y="' + ly + $q.af + SY_C[k] + $q.ag + (lx + 17) + '" y="' + (ly + 11) + $q.ah + esc(t) + $q.X; lx += 30 + [...t].length * 7; }
+const svg = $q.ai + W + ' ' + H + $q.aj + W + $q.ak + esc(t29(lang, 'sy_al', { n: nf(lang, rows.length), dev })) + '">' + g + $q.al;
+const th = $q.am + esc(t29(lang, 'sy_y')) + '</th>' + sts.map(k => $q.an + esc(cap(stL[k])) + '</th>').join('') + $q.an + esc(t29(lang, 'sy_t')) + $q.ao;
+const tb = Y.map(y => $q.ap + esc(yl(y)) + '</th>' + sts.map(k => '<td>' + esc(nf(lang, yrs.get(y)[k] || 0)) + '</td>').join('') + $q.aq + esc(nf(lang, tot(y))) + $q.ar).join('') + $q.ap + esc(t29(lang, 'sy_t')) + '</th>' + sts.map(k => '<td>' + esc(nf(lang, rows.filter(r => r.st === k).length)) + '</td>').join('') + $q.aq + esc(nf(lang, rows.length)) + $q.ar;
+return $q.as + esc(t29(lang, 'sy_h')) + $q.at + svg + $q.au + esc(t29(lang, $q.av)) + $q.aw + th + $q.ax + tb + $q.ay;
 }
 export function devFilter(lang, rows) {
 if (rows.length < 6) return '';
@@ -143,10 +144,10 @@ const grp = (k, kl) => { const m = new Map(); for (const r of rows) { const e = 
 const M = grp('mk', 'mkL'), St = grp('st', 'stL');
 if (M.size < 2 && St.size < 2) return '';
 const b = (f, l, n, on) => '<button type="button" class="k29b" data-f="' + esc(f) + '" aria-pressed="' + (on ? 'true' : 'false') + '">' + esc(String(l).charAt(0).toUpperCase() + String(l).slice(1)) + ' <small>' + esc(nf(lang, n)) + '</small></button>';
-const chips = [b('', t29(lang, 'fl_all', { k: '' }).replace(/\s*[(（]\s*[)）]/, ''), rows.length, true)];
+const chips = [b('', t29(lang, $q.az, { k: '' }).replace(/\s*[(（]\s*[)）]/, ''), rows.length, true)];
 if (M.size > 1) for (const [k, e] of [...M].sort((a, c) => c[1].n - a[1].n)) chips.push(b('m:' + k, e.l, e.n));
 if (St.size > 1) for (const [k, e] of St) chips.push(b('s:' + k, e.l, e.n));
-return TB.kbx_p29__t.k1 + esc(t29(lang, 'fl_lbl')) + '">' + chips.join('') + '</div>';
+return $t.k1 + esc(t29(lang, $q.aA)) + '">' + chips.join('') + $q.aB;
 }
 export const DEV_CSS = '<style id="k29-css">.k29f{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px}.k29b{min-height:44px;padding:8px 14px;border:1px solid var(--line);border-radius:999px;background:var(--card,#fff);color:inherit;font:inherit;cursor:pointer}.k29b[aria-pressed=true]{border-color:var(--k-sea,#155C75);box-shadow:inset 0 0 0 1px var(--k-sea,#155C75)}.k29b small{color:var(--muted)}</style>';
 export const DEV_JS = "(function(){var g=document.querySelector('.k29f');if(!g)return;var R=document.querySelectorAll('#projects tbody tr[data-f]');g.addEventListener('click',function(e){var b=e.target.closest('.k29b');if(!b)return;var f=b.getAttribute('data-f');g.querySelectorAll('.k29b').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});R.forEach(function(r){r.hidden=!!f&&r.getAttribute('data-f').split(' ').indexOf(f)<0})})})();";

@@ -1,3 +1,4 @@
+const $q = TB.kbx_hdate__q, $t = TB.kbx_hdate__t;   // n40 k46: short names for this module's string tables (strings in /data/i18n/k19s.json, k17s.json, k46s.json)
 import { TB } from './kbx_strings.js';
 // comments: _notes/kolaboro-worker-comments.txt
 const MON = {
@@ -28,7 +29,7 @@ m => { const w = m[1].toLowerCase(), o = /^(first|primer|1)/.test(w) ? 1 : 2; re
 [new RegExp('^(first|second|third|fourth|primer|segundo|tercer|cuarto|1er|1st|2nd|3rd|4th|[1-4]º|[1-4]°|[1-4]\\.)\\s+(?:quarter|trimestre|quartal)(?:\\s+(?:of|de|del))?\\s+' + Y, 'i'),
 m => { const w = m[1].toLowerCase().replace(/[º°.]|st|nd|rd|th|er/g, ''); const o = { first: 1, primer: 1, second: 2, segundo: 2, third: 3, tercer: 3, fourth: 4, cuarto: 4 }[w] || +w; return o >= 1 && o <= 4 ? { y: +m[2], q: o } : null; }],
 [new RegExp('^(early|beginning|start|mid|middle|late|end|principios|inicios|comienzos|mediados|finales|fines|d[ée]but|fin|anfang|mitte|ende|begin|medio|eind)(?:\\s*-\\s*|\\s+(?:of\\s+|de\\s+|del\\s+)?)' + Y, 'i'),
-m => ({ y: +m[2], p: TB.kbx_hdate__t.o_PART[m[1].toLowerCase()] || TB.kbx_hdate__t.o_PART[m[1].toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')] })],
+m => ({ y: +m[2], p: $t.o_PART[m[1].toLowerCase()] || $t.o_PART[m[1].toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')] })],
 [new RegExp('^mi-' + Y, 'i'), m => ({ y: +m[1], p: 'm' })],
 [new RegExp('^' + Y + '\\s+(mid|end)-?year\\b', 'i'), m => ({ y: +m[1], p: m[2].toLowerCase() === 'mid' ? 'm' : 'e' })],
 [new RegExp('^(' + Object.keys(SEASON).join('|') + ')(?:\\s+(?:of|de|del))?\\s+' + Y, 'i'), m => ({ y: +m[2], s: SEASON[m[1].toLowerCase()] })],
@@ -71,14 +72,14 @@ CACHE.set(raw, out);
 return out;
 }
 const L10N = {
-en: { q: (n, y) => 'Q' + n + ' ' + y, h: (n, y) => (n === 1 ? 'first' : 'second') + ' half of ' + y, p: { b: y => 'early ' + y, m: y => 'mid-' + y, l: y => 'late ' + y, e: y => 'end of ' + y }, s: { sp: 'spring', su: 'summer', au: 'autumn', wi: 'winter' }, sy: (s, y) => s + ' ' + y, c: x => 'about ' + x, ph: x => 'phase 1: ' + x },
-es: { q: (n, y) => n + '.º trimestre de ' + y, h: (n, y) => (n === 1 ? 'primer' : 'segundo') + ' semestre de ' + y, p: { b: y => 'principios de ' + y, m: y => 'mediados de ' + y, l: y => 'finales de ' + y, e: y => 'finales de ' + y }, s: { sp: 'primavera', su: 'verano', au: 'otoño', wi: 'invierno' }, sy: (s, y) => s + ' de ' + y, c: x => 'hacia ' + x, ph: x => 'fase 1: ' + x },
-fr: { q: (n, y) => (n === 1 ? '1er' : n + 'e') + ' trimestre ' + y, h: (n, y) => (n === 1 ? '1er' : '2d') + ' semestre ' + y, p: { b: y => 'début ' + y, m: y => 'mi-' + y, l: y => 'fin ' + y, e: y => 'fin ' + y }, s: { sp: 'printemps', su: 'été', au: 'automne', wi: 'hiver' }, sy: (s, y) => s + ' ' + y, c: x => 'vers ' + x, ph: x => 'phase 1 : ' + x },
-de: { q: (n, y) => n + '. Quartal ' + y, h: (n, y) => n + '. Halbjahr ' + y, p: { b: y => 'Anfang ' + y, m: y => 'Mitte ' + y, l: y => 'Ende ' + y, e: y => 'Ende ' + y }, s: { sp: 'Frühjahr', su: 'Sommer', au: 'Herbst', wi: 'Winter' }, sy: (s, y) => s + ' ' + y, c: x => 'etwa ' + x, ph: x => '1. Bauabschnitt: ' + x },
-nl: { q: (n, y) => (n === 1 ? '1e' : n + 'e') + ' kwartaal ' + y, h: (n, y) => (n === 1 ? 'eerste' : 'tweede') + ' helft van ' + y, p: { b: y => 'begin ' + y, m: y => 'medio ' + y, l: y => 'eind ' + y, e: y => 'eind ' + y }, s: { sp: 'voorjaar', su: 'zomer', au: 'najaar', wi: 'winter' }, sy: (s, y) => s + ' ' + y, c: x => 'rond ' + x, ph: x => 'fase 1: ' + x },
-ru: { q: (n, y) => ['I', 'II', 'III', 'IV'][n - 1] + ' квартал ' + y + ' г.', h: (n, y) => (n === 1 ? 'I' : 'II') + ' полугодие ' + y + ' г.', p: { b: y => 'начало ' + y + ' г.', m: y => 'середина ' + y + ' г.', l: y => 'конец ' + y + ' г.', e: y => 'конец ' + y + ' г.' }, s: { sp: 'весна', su: 'лето', au: 'осень', wi: 'зима' }, sy: (s, y) => s + ' ' + y + ' г.', c: x => 'около ' + x, ph: x => '1-я очередь: ' + x },
+en: { q: (n, y) => 'Q' + n + ' ' + y, h: (n, y) => (n === 1 ? 'first' : 'second') + ' half of ' + y, p: { b: y => 'early ' + y, m: y => 'mid-' + y, l: y => 'late ' + y, e: y => 'end of ' + y }, s: { sp: 'spring', su: 'summer', au: 'autumn', wi: 'winter' }, sy: (s, y) => s + ' ' + y, c: x => 'about ' + x, ph: x => $q.a + x },
+es: { q: (n, y) => n + '.º trimestre de ' + y, h: (n, y) => (n === 1 ? 'primer' : 'segundo') + ' semestre de ' + y, p: { b: y => 'principios de ' + y, m: y => 'mediados de ' + y, l: y => $q.b + y, e: y => 'finales de ' + y }, s: { sp: 'primavera', su: 'verano', au: 'otoño', wi: 'invierno' }, sy: (s, y) => s + ' de ' + y, c: x => 'hacia ' + x, ph: x => $q.c + x },
+fr: { q: (n, y) => (n === 1 ? '1er' : n + 'e') + ' trimestre ' + y, h: (n, y) => (n === 1 ? '1er' : '2d') + ' semestre ' + y, p: { b: y => 'début ' + y, m: y => 'mi-' + y, l: y => 'fin ' + y, e: y => 'fin ' + y }, s: { sp: 'printemps', su: 'été', au: 'automne', wi: 'hiver' }, sy: (s, y) => s + ' ' + y, c: x => 'vers ' + x, ph: x => $q.d + x },
+de: { q: (n, y) => n + '. Quartal ' + y, h: (n, y) => n + '. Halbjahr ' + y, p: { b: y => 'Anfang ' + y, m: y => 'Mitte ' + y, l: y => 'Ende ' + y, e: y => 'Ende ' + y }, s: { sp: 'Frühjahr', su: 'Sommer', au: 'Herbst', wi: 'Winter' }, sy: (s, y) => s + ' ' + y, c: x => 'etwa ' + x, ph: x => $q.e + x },
+nl: { q: (n, y) => (n === 1 ? '1e' : n + 'e') + ' kwartaal ' + y, h: (n, y) => (n === 1 ? 'eerste' : 'tweede') + ' helft van ' + y, p: { b: y => 'begin ' + y, m: y => 'medio ' + y, l: y => 'eind ' + y, e: y => 'eind ' + y }, s: { sp: 'voorjaar', su: 'zomer', au: 'najaar', wi: 'winter' }, sy: (s, y) => s + ' ' + y, c: x => 'rond ' + x, ph: x => $q.c + x },
+ru: { q: (n, y) => ['I', 'II', 'III', 'IV'][n - 1] + ' квартал ' + y + ' г.', h: (n, y) => (n === 1 ? 'I' : 'II') + ' полугодие ' + y + ' г.', p: { b: y => 'начало ' + y + ' г.', m: y => 'середина ' + y + ' г.', l: y => $q.f + y + ' г.', e: y => 'конец ' + y + ' г.' }, s: { sp: 'весна', su: 'лето', au: 'осень', wi: 'зима' }, sy: (s, y) => s + ' ' + y + ' г.', c: x => 'около ' + x, ph: x => $q.g + x },
 zh: { q: (n, y) => y + '年第' + '一二三四'[n - 1] + '季度', h: (n, y) => y + '年' + (n === 1 ? '上' : '下') + '半年', p: { b: y => y + '年初', m: y => y + '年年中', l: y => y + '年底', e: y => y + '年底' }, s: { sp: '春季', su: '夏季', au: '秋季', wi: '冬季' }, sy: (s, y) => y + '年' + s, c: x => '约' + x, ph: x => '一期：' + x },
-ar: { q: (n, y) => 'الربع ' + ['الأول', 'الثاني', 'الثالث', 'الرابع'][n - 1] + ' من ' + y, h: (n, y) => 'النصف ' + (n === 1 ? 'الأول' : 'الثاني') + ' من ' + y, p: { b: y => 'أوائل ' + y, m: y => 'منتصف ' + y, l: y => 'أواخر ' + y, e: y => 'نهاية ' + y }, s: { sp: 'ربيع', su: 'صيف', au: 'خريف', wi: 'شتاء' }, sy: (s, y) => s + ' ' + y, c: x => 'نحو ' + x, ph: x => 'المرحلة الأولى: ' + x }
+ar: { q: (n, y) => 'الربع ' + ['الأول', 'الثاني', 'الثالث', 'الرابع'][n - 1] + ' من ' + y, h: (n, y) => 'النصف ' + (n === 1 ? 'الأول' : 'الثاني') + ' من ' + y, p: { b: y => 'أوائل ' + y, m: y => 'منتصف ' + y, l: y => $q.h + y, e: y => 'نهاية ' + y }, s: { sp: 'ربيع', su: 'صيف', au: 'خريف', wi: 'شتاء' }, sy: (s, y) => s + ' ' + y, c: x => 'نحو ' + x, ph: x => $q.i + x }
 };
 const LOCALE = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' };
 const fmtC = new Map();
@@ -86,8 +87,8 @@ const dtf = (L, o) => { const k = L + JSON.stringify(o); let f = fmtC.get(k); if
 function one(v, lang) {
   const W8 = L10N[lang] || L10N.en, L = LOCALE[lang] || 'en-GB';
   try {
-    if (v.d) return dtf(L, { day: 'numeric', month: 'long', year: 'numeric' }).format(new Date(Date.UTC(v.y, v.m - 1, v.d)));
-    if (v.m) return dtf(L, { month: 'long', year: 'numeric' }).format(new Date(Date.UTC(v.y, v.m - 1, 1)));
+    if (v.d) return dtf(L, { day: $q.j, month: 'long', year: $q.j }).format(new Date(Date.UTC(v.y, v.m - 1, v.d)));
+    if (v.m) return dtf(L, { month: 'long', year: $q.j }).format(new Date(Date.UTC(v.y, v.m - 1, 1)));
   } catch (e) { return String(v.y); }
   if (v.q) return W8.q(v.q, v.y);
   if (v.h) return W8.h(v.h, v.y);
@@ -99,17 +100,13 @@ export function hshow(P, lang) {
 let x = one(P.a, lang);
 if (P.b) {
 if (!P.a.q && !P.a.h && !P.a.p && !P.a.s && !P.a.m && !P.b.q && !P.b.h && !P.b.p && !P.b.s && !P.b.m) {
-try { x = dtf(LOCALE[lang] || 'en-GB', { year: 'numeric' }).formatRange(new Date(Date.UTC(P.a.y, 0, 1)), new Date(Date.UTC(P.b.y, 0, 1))); } catch (e) { x = P.a.y + '–' + P.b.y; }
+try { x = dtf(LOCALE[lang] || 'en-GB', { year: $q.j }).formatRange(new Date(Date.UTC(P.a.y, 0, 1)), new Date(Date.UTC(P.b.y, 0, 1))); } catch (e) { x = P.a.y + '–' + P.b.y; }
 } else x = x + ' – ' + one(P.b, lang);
 }
 const W8 = L10N[lang] || L10N.en;
 if (P.c) x = W8.c(x);
 if (P.ph) x = W8.ph(x);
 return x;
-}
-export function hfmt(s, lang) {
-const P = hparse(s);
-return P ? hshow(P, lang) : (s == null ? '' : String(s));
 }
 export function hdisp(s, lang) {
 if (s == null) return '';
@@ -148,10 +145,10 @@ const SHORT = { ru: { USA: 'США', 'United States': 'США' }, zh: { UAE: '�
 const dnC = new Map();
 export function coName(co, lang) {
 if (!co || !lang || lang === 'en') return co || '';
-if (co === 'Northern Cyprus') return NCY[lang] || co;
+if (co === $q.k) return NCY[lang] || co;
 const sh = SHORT[lang] && SHORT[lang][co]; if (sh) return sh;
 const iso = CO2[co]; if (!iso) return co;
-try { let f = dnC.get(lang); if (!f) { f = new Intl.DisplayNames([LOCALE[lang] || lang], { type: 'region', fallback: 'none' }); dnC.set(lang, f); } return f.of(iso) || co; } catch (e) { return co; }
+try { let f = dnC.get(lang); if (!f) { f = new Intl.DisplayNames([LOCALE[lang] || lang], { type: $q.l, fallback: 'none' }); dnC.set(lang, f); } return f.of(iso) || co; } catch (e) { return co; }
 }
 export const CO_ISO2 = CO2;
 const PLN_RAW = {
@@ -192,7 +189,7 @@ for (const [k, v] of Object.entries(PLN_RAW)) { const a = v.split('|'); PLN[k] =
 export const mkName = (mk, lang) => {
 if (!mk || !lang || lang === 'en') return mk || '';
 const n = PLN[mk] && PLN[mk][lang]; if (n) return n;
-if (CO2[mk] || mk === 'Northern Cyprus') return coName(mk, lang);
+if (CO2[mk] || mk === $q.k) return coName(mk, lang);
 const m = /^(.+?) \((.+)\)$/.exec(mk); if (m && (PLN[m[2]] || CO2[m[2]])) return mkName(m[1], lang) + ' (' + mkName(m[2], lang) + ')';
 return mk;
 };

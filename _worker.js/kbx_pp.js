@@ -1,10 +1,11 @@
 // comments: _notes/kolaboro-worker-comments.txt
+const $q = TB.kbx_pp__q, $s = TB.kbx_pp__s, $t = TB.kbx_pp__t;   // n40 k46: short names for this module's string tables (strings in /data/i18n/k19s.json, k17s.json, k46s.json)
 import { TB } from './kbx_strings.js';
 const ORIGIN = 'https://kolaboro.com';
 export const PATHS = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?tools\/permit-photo\/?$/;
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const PATH = '/tools/permit-photo/';
-const esc = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const esc = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': $q.a, "'": '&#39;' }[c]));
 const pre = l => l === 'en' ? '' : '/' + l;
 const TJS = 'https://cdn.jsdelivr.net/npm/tesseract.js@5.1.1/dist/tesseract.min.js';
 const S = TB.kbx_pp_S ;
@@ -34,34 +35,34 @@ function body(lang) {
   const client = { lang, read: t.read, st_load: t.st_load, st_lang: t.st_lang, st_read: t.st_read, st_done: t.st_done, st_none: t.st_none, st_err: t.st_err, st_img: t.st_img, lookup: t.lookup, open: t.open, manual: t.manual, ask: t.ask,
     ck_ok: t.ck_ok, ck_bad: t.ck_bad, fmt: t.fmt, looking: t.looking, r_found: t.r_found, r_not_found: t.r_not_found, r_not_published: t.r_not_published, r_needs_key: t.r_needs_key, r_unavailable: t.r_unavailable,
     raw: t.raw, sealed: t.sealed, rate: t.rate, lk_err: t.lk_err, nf_note: t.nf_note, sent: t.sent, who_town: t.who_town, who_notary: t.who_notary, m: t.m, p: t.p, rows: ROWS };
-  const langOpts = [['eng', 'English'], ['spa', 'Español'], ['ara', 'العربية'], ['ind', 'Bahasa Indonesia'], ['tha', 'ไทย'], ['chi_sim', '简体中文'], ['rus', 'Русский'], ['fra', 'Français'], ['deu', 'Deutsch'], ['nld', 'Nederlands']];
-  const def = { en: 'eng', es: 'spa', ar: 'ara', zh: 'chi_sim', ru: 'rus', fr: 'fra', de: 'deu', nl: 'nld' }[lang] || 'eng';
+  const langOpts = [['eng', $q.b], ['spa', $q.c], ['ara', $q.d], ['ind', $q.e], ['tha', 'ไทย'], [$q.f, '简体中文'], ['rus', $q.g], ['fra', $q.h], ['deu', $q.i], ['nld', $q.j]];
+  const def = { en: 'eng', es: 'spa', ar: 'ara', zh: $q.f, ru: 'rus', fr: 'fra', de: 'deu', nl: 'nld' }[lang] || 'eng';
   const rows = ROWS.map(r => {
     const act = r[2] === 'live' ? t.act_live.replace('{reg}', r[3]) : r[2] === 'key' ? t.act_key : r[2] === 'ask' ? t.act_ask : t.act_man.replace('{reg}', r[3]);
-    return '<tr><td data-label="' + esc(t.th_mk) + '">' + esc(t.m[r[1]]) + '</td><td data-label="' + esc(t.th_no) + '">' + esc(t.p[r[0]]) + '</td><td data-label="' + esc(t.th_do) + '">' + esc(act) + (r[4] ? ' <a class="k-src" href="' + esc(r[4]) + '" rel="noopener">' + esc(r[4].startsWith('/') ? 'kolaboro.com' + r[4] : new URL(r[4]).hostname.replace(/^www\./, '')) + '</a>' : '') + '</td></tr>';
+    return $q.k + esc(t.th_mk) + '">' + esc(t.m[r[1]]) + $q.l + esc(t.th_no) + '">' + esc(t.p[r[0]]) + $q.l + esc(t.th_do) + '">' + esc(act) + (r[4] ? $q.m + esc(r[4]) + $q.n + esc(r[4].startsWith('/') ? $q.o + r[4] : new URL(r[4]).hostname.replace(/^www\./, '')) + '</a>' : '') + $q.p;
   }).join('');
-  return '<div class="kpp" data-kpp data-t="' + esc(JSON.stringify(client)) + '"><div class="k-wrap">' +
-    '<header class="k-phead"><nav class="k-crumb" aria-label="Breadcrumb"><a href="' + p + '/">Kolaboro</a> / <a href="/tools/">' + esc(t.crumb_tools) + '</a> / <span aria-current="page">' + esc(t.title) + '</span></nav>' +
-    '<h1>' + esc(t.h1) + '</h1><p class="lead">' + esc(t.lead) + '</p>' +
-    '<p class="kpp-priv"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="m8.5 12 2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span><b>' + esc(t.priv_b) + '</b> ' + esc(t.priv) + '</span></p></header>' +
-    '<div class="kpp-grid"><div class="k-stack" style="--k-gap:var(--k-4,16px)">' +
-      '<figure class="kpp-fig" id="ppFig"><div class="kpp-empty" id="ppEmpty"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="10" width="36" height="28" rx="4" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M12 18h14M12 24h20M12 30h10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg><b>' + esc(t.drop) + '</b><span class="k-small">' + esc(t.drop_help) + '</span></div><canvas id="ppCv" hidden role="img" aria-label="' + esc(t.title) + '"></canvas></figure>' +
-      '<div class="kpp-txt k-field" id="ppTxtWrap" hidden><label class="k-label" for="ppTxt">' + esc(t.text_h) + '</label><textarea class="k-textarea" id="ppTxt" spellcheck="false" autocomplete="off"></textarea><p class="k-help">' + esc(t.text_help) + '</p><div><button type="button" class="k-btn k-btn--sm" id="ppAgain">' + esc(t.again) + '</button></div></div>' +
-    '</div><div class="kpp-side">' +
-      '<div class="kpp-pick"><label class="k-btn">' + esc(t.pick) + '<input type="file" id="ppFile" accept="image/*"></label><label class="k-btn">' + esc(t.cam) + '<input type="file" id="ppCam" accept="image/*" capture="environment"></label></div>' +
-      '<div class="k-field"><label class="k-label" for="ppLang">' + esc(t.lang_l) + '</label><select class="k-select" id="ppLang">' + langOpts.map(o => '<option value="' + o[0] + '"' + (o[0] === def ? ' selected' : '') + ' lang="' + ({ eng: 'en', spa: 'es', ara: 'ar', ind: 'id', tha: 'th', chi_sim: 'zh', rus: 'ru', fra: 'fr', deu: 'de', nld: 'nl' })[o[0]] + '">' + esc(o[1]) + '</option>').join('') + '</select><p class="k-help">' + esc(t.lang_help) + '</p></div>' +
-      '<div><button type="button" class="k-btn k-btn--primary k-btn--block" id="ppRead" disabled>' + esc(t.read) + '</button></div>' +
-      '<div class="k-progress" id="ppProg" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" hidden><i style="--v:0%"></i></div>' +
-      '<p class="kpp-status" id="ppStatus" aria-live="polite"></p>' +
-      '<div class="kpp-samples"><span>' + esc(t.samples) + '</span><button type="button" class="k-btn k-btn--sm k-btn--ghost" data-pp-sample="es">' + esc(t.s_es) + '</button><button type="button" class="k-btn k-btn--sm k-btn--ghost" data-pp-sample="uk">' + esc(t.s_uk) + '</button><button type="button" class="k-btn k-btn--sm k-btn--ghost" data-pp-sample="au">' + esc(t.s_au) + '</button><button type="button" class="k-btn k-btn--sm k-btn--ghost" data-pp-sample="id">' + esc(t.s_id) + '</button><p class="k-xs k-muted" style="margin:0">' + esc(t.sample_note) + '</p></div>' +
-      '<section id="ppFound" hidden aria-labelledby="ppFoundH"><h2 id="ppFoundH" style="font-size:var(--k-fs-xl);margin:0 0 4px">' + esc(t.found_h) + '</h2><p class="k-small k-muted" style="margin:0 0 var(--k-3,12px)">' + esc(t.found_help) + '</p><ol class="kpp-list" id="ppList"></ol></section>' +
-    '</div></div></div>' +
-    '<section class="k-sec--tint kpp-how"><div class="k-wrap"><h2>' + esc(t.how_h) + '</h2>' +
-      '<div class="k-table-wrap"><table class="k-table k-table--stack"><thead><tr><th scope="col">' + esc(t.th_mk) + '</th><th scope="col">' + esc(t.th_no) + '</th><th scope="col">' + esc(t.th_do) + '</th></tr></thead><tbody>' + rows + '</tbody></table></div>' +
-      '<div class="kpp-two"><div><h3>' + esc(t.lim_h) + '</h3><ul><li>' + esc(t.lim1) + '</li><li>' + esc(t.lim2) + '</li><li>' + esc(t.lim3) + '</li><li>' + esc(t.lim4) + '</li><li>' + esc(t.nf_note) + '</li></ul></div>' +
-      '<div><h3>' + esc(t.cr_h) + '</h3><p>' + esc(t.cr) + ' <a class="k-src" href="https://github.com/naptha/tesseract.js" rel="noopener">github.com/naptha/tesseract.js</a> <a class="k-src" href="https://github.com/tesseract-ocr/tessdata" rel="noopener">github.com/tesseract-ocr/tessdata</a></p>' +
-      '<h3>' + esc(t.rel) + '</h3><div class="kpp-rel"><a class="k-btn k-btn--sm" href="/tools/permit-check/">' + esc(t.rel_qr) + '</a><a class="k-btn k-btn--sm" href="/tools/agent-check/">' + esc(t.rel_agent) + '</a><a class="k-btn k-btn--sm" href="/registers/">' + esc(t.rel_reg) + '</a></div></div></div>' +
-    '</div></section></div>';
+  return $q.q + esc(JSON.stringify(client)) + $q.r +
+    $q.s + p + $q.t + esc(t.crumb_tools) + $q.u + esc(t.title) + $q.v +
+    '<h1>' + esc(t.h1) + $q.w + esc(t.lead) + '</p>' +
+    $q.x + esc(t.priv_b) + '</b> ' + esc(t.priv) + $q.y +
+    $q.z +
+      $q.A + esc(t.drop) + $q.B + esc(t.drop_help) + $q.C + esc(t.title) + $q.D +
+      $q.E + esc(t.text_h) + $q.F + esc(t.text_help) + $q.G + esc(t.again) + $q.H +
+    $q.I +
+      $q.J + esc(t.pick) + $q.K + esc(t.cam) + $q.L +
+      $q.M + esc(t.lang_l) + $q.N + langOpts.map(o => $q.O + o[0] + '"' + (o[0] === def ? $q.P : '') + $q.Q + ({ eng: 'en', spa: 'es', ara: 'ar', ind: 'id', tha: 'th', chi_sim: 'zh', rus: 'ru', fra: 'fr', deu: 'de', nld: 'nl' })[o[0]] + '">' + esc(o[1]) + $q.R).join('') + $q.S + esc(t.lang_help) + $q.T +
+      $q.U + esc(t.read) + $q.V +
+      $q.W +
+      $q.X +
+      $q.Y + esc(t.samples) + $q.Z + esc(t.s_es) + $q.aa + esc(t.s_uk) + $q.ab + esc(t.s_au) + $q.ac + esc(t.s_id) + $q.ad + esc(t.sample_note) + $q.T +
+      $q.ae + esc(t.found_h) + $q.af + esc(t.found_help) + $q.ag +
+    $q.ah +
+    $q.ai + esc(t.how_h) + '</h2>' +
+      $q.aj + esc(t.th_mk) + $q.ak + esc(t.th_no) + $q.ak + esc(t.th_do) + $q.al + rows + $q.am +
+      $q.an + esc(t.lim_h) + $q.ao + esc(t.lim1) + $q.ap + esc(t.lim2) + $q.ap + esc(t.lim3) + $q.ap + esc(t.lim4) + $q.ap + esc(t.nf_note) + $q.aq +
+      $q.ar + esc(t.cr_h) + $q.as + esc(t.cr) + $q.at +
+      '<h3>' + esc(t.rel) + $q.au + esc(t.rel_qr) + $q.av + esc(t.rel_agent) + $q.aw + esc(t.rel_reg) + $q.ax +
+    $q.ay;
 }
 const JS = String.raw`(function(){
 var R=document.querySelector('[data-kpp]');if(!R)return;var T=JSON.parse(R.getAttribute('data-t'));
@@ -178,30 +179,30 @@ function lookup(i,b){var c=cands[i],li=b.closest('.kpp-item'),out=li.querySelect
 })();`;
 async function assemble(shellRes, lang) {
 const t = tr(lang), path = PATH, url = ORIGIN + pre(lang) + path;
-const alts = LANGS.map(l => '<link rel="alternate" hreflang="' + l + '" href="' + ORIGIN + pre(l) + path + '">').join('') + TB.kbx_pp__t.k0 + ORIGIN + path + '">';
-const ld = { '@context': 'https://schema.org', '@graph': [
-{ '@type': 'WebApplication', name: 'Kolaboro ' + t.title, url, description: t.desc, inLanguage: lang, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Any', isAccessibleForFree: true, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' } },
-{ '@type': 'BreadcrumbList', itemListElement: [['Kolaboro', ORIGIN + pre(lang) + '/'], [t.crumb_tools, ORIGIN + '/tools/'], [t.title, url]].map((x, i) => ({ '@type': 'ListItem', position: i + 1, name: x[0], item: x[1] })) }] };
-const tags = '<title>' + esc(t.title) + TB.kbx_pp__t.k1 + esc(t.desc) + '"><link rel="canonical" href="' + url + '">' + alts +
-TB.kbx_pp__s.k0 + esc(t.title) + TB.kbx_pp__t.k2 + esc(t.desc) + '"><meta property="og:url" content="' + url + TB.kbx_pp__t.k3 +
-TB.kbx_pp__t.k4 +
-'<script type="application/ld+json">' + JSON.stringify(ld).replace(/</g, '\\u003c') + '</script>' + TB.kbx_pp__s.CSS;
+const alts = LANGS.map(l => $q.az + l + $q.aA + ORIGIN + pre(l) + path + '">').join('') + $t.k0 + ORIGIN + path + '">';
+const ld = { '@context': $q.aB, '@graph': [
+{ '@type': $q.aC, name: $q.aD + t.title, url, description: t.desc, inLanguage: lang, applicationCategory: $q.aE, operatingSystem: 'Any', isAccessibleForFree: true, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' } },
+{ '@type': $q.aF, itemListElement: [[$q.aG, ORIGIN + pre(lang) + '/'], [t.crumb_tools, ORIGIN + $q.aH], [t.title, url]].map((x, i) => ({ '@type': $q.aI, position: i + 1, name: x[0], item: x[1] })) }] };
+const tags = $q.aJ + esc(t.title) + $t.k1 + esc(t.desc) + $q.aK + url + '">' + alts +
+$s.k0 + esc(t.title) + $t.k2 + esc(t.desc) + $q.aL + url + $t.k3 +
+$t.k4 +
+$q.aM + JSON.stringify(ld).replace(/</g, $q.aN) + $q.aO + $s.CSS;
 const res = new HTMLRewriter()
 .on('title', { element(e) { e.remove(); } })
-.on(TB.kbx_pp__s.k1, { element(e) { e.remove(); } })
-.on('script[type="application/ld+json"]', { element(e) { e.remove(); } })
+.on($s.k1, { element(e) { e.remove(); } })
+.on($q.aP, { element(e) { e.remove(); } })
 .on('head', { element(e) { e.append(tags, { html: true }); } })
-.on('main', { element(e) { e.setAttribute('data-clarity-mask', 'True'); e.setInnerContent(body(lang) + '<script>' + JS + '</script>', { html: true }); } })
-.on('details.lsw a[hreflang]', { element(e) { const l = e.getAttribute('hreflang'); if (LANGS.includes(l)) e.setAttribute('href', pre(l) + path); } })
-.transform(new Response(shellRes.body, { headers: { 'content-type': 'text/html; charset=utf-8' } }));
+.on('main', { element(e) { e.setAttribute($q.aQ, 'True'); e.setInnerContent(body(lang) + $q.aR + JS + $q.aO, { html: true }); } })
+.on($q.aS, { element(e) { const l = e.getAttribute($q.aT); if (LANGS.includes(l)) e.setAttribute('href', pre(l) + path); } })
+.transform(new Response(shellRes.body, { headers: { 'content-type': $q.aU } }));
 return await res.text();
 }
 export async function handle(req, u, env, ctx, shell) {
 if (req.method !== 'GET' && req.method !== 'HEAD') return null;
 const m = u.pathname.match(/^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?tools\/permit-photo(\/?)$/); if (!m) return null;
-if (!m[2]) return new Response(null, { status: 301, headers: { location: u.pathname + '/' + u.search, 'cache-control': 'public, max-age=86400' } });
+if (!m[2]) return new Response(null, { status: 301, headers: { location: u.pathname + '/' + u.search, 'cache-control': $q.aV } });
 const lang = m[1] || 'en';
-const sh = await shell(pre(lang) + '/how-we-score/');
+const sh = await shell(pre(lang) + $q.aW);
 if (!sh || sh.status !== 200) return null;
-return new Response(await assemble(sh, lang), { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=300' } });
+return new Response(await assemble(sh, lang), { status: 200, headers: { 'content-type': $q.aU, 'cache-control': $q.aX } });
 }
