@@ -46,3 +46,4 @@
 @media (max-width:640px){:root .kwrap .kz-d>summary{padding:14px 44px 14px 16px}[dir=rtl] .kwrap .kz-d>summary{padding:14px 16px 14px 44px}:root .kwrap .kz-d[open]{padding:0 16px 16px}:root .kwrap .kz-d[open]>summary{margin:0 -16px 4px}}
 @media (min-width:1120px){:root .phero.kp .kans>#checks6 .klt-l{grid-template-columns:repeat(2,minmax(0,1fr))}:root .phero.kp>.wrap>.kfl8{margin:var(--k-3) 0 var(--k-2)}}
 @media (max-width:1119px){:root .phero.kp .kans{border:0;padding:0;background:none;box-shadow:none;max-width:none}:root .phero.kp>.wrap>.kfl8{margin:var(--k-3) 0 var(--k-2)}}
+:root .phero.kp .kans>.kans-u>span{display:inline-flex;align-items:center;min-height:44px}
