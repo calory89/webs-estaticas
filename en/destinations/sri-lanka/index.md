@@ -37,23 +37,21 @@ On the south coast, go whale watching from Mirissa between roughly November and 
 
 Book a cooking class in the hills, and do a tea factory tour in Nuwara Eliya or around Ella. If your timing is right, the August to October elephant gathering at Minneriya is a spectacle.
 
-## How many days and a suggested route
+## Sri Lanka itinerary: 14 days, day by day
 
 Ten days is the comfortable minimum for a first visit, and two weeks is better. With less than a week, pick one region instead of trying to cross the island.
 
-- **Days 1-2:** arrive, a short stay in Colombo or straight to Negombo near the airport if you land late.
+**14-day itinerary for Sri Lanka**
 
-- **Days 3-4:** Sigiriya, Dambulla and Polonnaruwa, the Cultural Triangle.
-
-- **Day 5:** Kandy.
-
-- **Days 6-8:** train to Ella, with a stop in Nuwara Eliya if you like cooler air.
-
-- **Day 9:** a safari at Udawalawe or Yala on the way south.
-
-- **Days 10-12:** Galle, Mirissa or Unawatuna for the beach.
-
-- **Days 13-14:** back up the Expressway to Colombo and the airport.
+| Day | Plan |
+|---|---|
+| Days 1-2 | Arrive, a short stay in Colombo or straight to Negombo near the airport if you land late. |
+| Days 3-4 | Sigiriya, Dambulla and Polonnaruwa, the Cultural Triangle. |
+| Day 5 | Kandy. |
+| Days 6-8 | Train to Ella, with a stop in Nuwara Eliya if you like cooler air. |
+| Day 9 | A safari at Udawalawe or Yala on the way south. |
+| Days 10-12 | Galle, Mirissa or Unawatuna for the beach. |
+| Days 13-14 | Back up the Expressway to Colombo and the airport. |
 
 Do not underestimate road times. A 100 km drive in the hills can take three hours or more.
 

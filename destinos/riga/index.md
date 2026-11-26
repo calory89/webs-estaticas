@@ -37,15 +37,17 @@ Pasea por el barrio de casas de madera de Āgenskalns y por el parque de Bastejk
 
 Si te sobra un día, Sigulda y el Parque Nacional del Gauja quedan a una hora larga en tren. Hay castillos, cuevas y senderos entre bosques. Otra opción es el Palacio de Rundāle, barroco y espectacular, aunque sin coche cuesta más llegar.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Riga en 3 días: ruta día a día
 
 Tres días es el punto justo. Con dos ves lo principal, con cuatro puedes añadir una excursión.
 
-- **Día 1:** casco viejo a primera hora (Ayuntamiento, Cabezas Negras, Doms, San Pedro). Por la tarde, Monumento a la Libertad y paseo por Bastejkalns. Cena en una taberna de la ciudad vieja, mejor en las calles secundarias.
+**Itinerario de 3 días en Riga**
 
-- **Día 2:** mañana en el Mercado Central y el barrio de Spīķeri, justo detrás. Tarde en el Art Nouveau de Alberta iela y Elizabetes. Atardecer en el mirador de la Academia de Ciencias.
-
-- **Día 3:** Museo de la Ocupación por la mañana. Después, Jūrmala si hace bueno o Kalnciema si es sábado. Última cena en el barrio de Miera iela.
+| Día | Plan |
+|---|---|
+| Día 1 | Casco viejo a primera hora (Ayuntamiento, Cabezas Negras, Doms, San Pedro). Por la tarde, Monumento a la Libertad y paseo por Bastejkalns. Cena en una taberna de la ciudad vieja, mejor en las calles secundarias. |
+| Día 2 | Mañana en el Mercado Central y el barrio de Spīķeri, justo detrás. Tarde en el Art Nouveau de Alberta iela y Elizabetes. Atardecer en el mirador de la Academia de Ciencias. |
+| Día 3 | Museo de la Ocupación por la mañana. Después, Jūrmala si hace bueno o Kalnciema si es sábado. Última cena en el barrio de Miera iela. |
 
 ## Cuándo ir a Riga
 

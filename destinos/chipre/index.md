@@ -39,19 +39,19 @@ El senderismo en Troodos es de lo mejor de la isla. Hay rutas cortas bien señal
 
 Si te interesa el vino, la zona de Omodos y los pueblos cercanos tienen bodegas pequeñas, y puedes probar el Commandaria, un vino dulce con siglos de historia. Y hay una excursión corta pero potente: cruzar a pie por Ledra Street a la parte norte de Nicosia con el pasaporte en mano. Ten en cuenta que el seguro del coche de alquiler suele no cubrir el norte.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Chipre en 7 días: ruta día a día
 
 Con cuatro días ves lo básico. Con siete, la isla se disfruta sin correr. Yo haría esto:
 
-- **Días 1 y 2:** Lárnaca, Lefkara y, si hay tiempo, Nicosia.
+**Itinerario de 7 días en Chipre**
 
-- **Día 3:** Limasol, Kourion y Kolossi.
-
-- **Día 4:** Troodos, iglesias pintadas y Omodos. Duerme en la montaña si te apetece fresco.
-
-- **Días 5 y 6:** Pafos, Petra tou Romiou y Akamas.
-
-- **Día 7:** vuelta hacia Lárnaca o desvío por Ayia Napa y Cabo Greco.
+| Día | Plan |
+|---|---|
+| Días 1-2 | Lárnaca, Lefkara y, si hay tiempo, Nicosia. |
+| Día 3 | Limasol, Kourion y Kolossi. |
+| Día 4 | Troodos, iglesias pintadas y Omodos. Duerme en la montaña si te apetece fresco. |
+| Días 5-6 | Pafos, Petra tou Romiou y Akamas. |
+| Día 7 | Vuelta hacia Lárnaca o desvío por Ayia Napa y Cabo Greco. |
 
 Si solo tienes un fin de semana largo, quédate en Lárnaca y Limasol y haz una excursión a Troodos.
 

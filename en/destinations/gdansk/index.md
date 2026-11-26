@@ -97,29 +97,13 @@ Most of the best of Gdansk costs nothing, because the city itself is the attract
 
 ## Gdansk itinerary: 3 days
 
-### Day 1: Main Town
+**3-day itinerary for Gdansk**
 
-**Morning:** Start at the Golden Gate and walk Long Lane to Long Market. Do the Main Town Hall and Artus Court before 11 am. Then climb St Mary's tower.
-
-**Afternoon:** Pierogi lunch, then Mariacka Street, the Crane and across the footbridge to Granary Island. Fit in the Amber Museum if you have energy.
-
-**Evening:** Sunset from the Granary Island side of the river, dinner off the main drag, then a craft beer bar.
-
-### Day 2: WWII and Solidarity
-
-**Morning:** Museum of the Second World War, arriving at opening. Bring patience and a snack.
-
-**Afternoon:** Walk 15 minutes north to the Polish Post Office (a small museum on the 1939 defence) and on to the European Solidarity Centre, the shipyard gates and the monument.
-
-**Evening:** Market Hall area for a drink, or the shipyard's post-industrial bars and venues around the old docks.
-
-### Day 3: Westerplatte, Oliwa and Sopot
-
-**Morning:** Bus or boat to Westerplatte. Return to the centre, then take the SKM train north.
-
-**Afternoon:** Get off at Gdańsk Oliwa for the cathedral organ and the park, then continue to Sopot for the beach, the pier and Monte Cassino street.
-
-**Evening:** Fish dinner in Sopot and a train back. SKM runs late, but check the last train.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Main Town | Start at the Golden Gate and walk Long Lane to Long Market. Do the Main Town Hall and Artus Court before 11 am. Then climb St Mary's tower. | Pierogi lunch, then Mariacka Street, the Crane and across the footbridge to Granary Island. Fit in the Amber Museum if you have energy. | Sunset from the Granary Island side of the river, dinner off the main drag, then a craft beer bar. |
+| Day 2 · WWII and Solidarity | Museum of the Second World War, arriving at opening. Bring patience and a snack. | Walk 15 minutes north to the Polish Post Office (a small museum on the 1939 defence) and on to the European Solidarity Centre, the shipyard gates and the monument. | Market Hall area for a drink, or the shipyard's post-industrial bars and venues around the old docks. |
+| Day 3 · Westerplatte, Oliwa and Sopot | Bus or boat to Westerplatte. Return to the centre, then take the SKM train north. | Get off at Gdańsk Oliwa for the cathedral organ and the park, then continue to Sopot for the beach, the pier and Monte Cassino street. | Fish dinner in Sopot and a train back. SKM runs late, but check the last train. |
 
 ## What is overrated (and what to do instead)
 

@@ -101,23 +101,16 @@ Una ciudad tan cara tiene la ventaja de que casi todo lo bonito es público. Est
 
 El truco que más dinero ahorra son los **domingos**: el transporte público tiene un tope diario de unos 10 AUD (6 €). Ese día puedes hacer ferry a Manly, ferry a Watsons Bay, tren y bus sin pagar más. Deja para el domingo lo que esté más lejos.
 
-## Itinerario: Sídney en 4 días
+## Qué ver en Sídney en 4 días: ruta día a día
 
-### Día 1: la bahía
+**Itinerario de 4 días en Sídney**
 
-**Mañana:** empieza en Mrs Macquarie's Chair temprano y atraviesa el jardín botánico hasta la Ópera. **Tarde:** The Rocks, comida en un pub, y cruce del Harbour Bridge a pie con subida al Pylon Lookout. Vuelta en ferry desde Milsons Point. **Noche:** cena en Circular Quay o, mejor, función en la Ópera si encuentras entrada barata.
-
-### Día 2: costa este
-
-**Mañana:** bus o tren a Bondi y paseo costero hasta Coogee, con baño en Bronte o Clovelly. **Tarde:** comida en Coogee y bus de vuelta hacia Surry Hills para tomar un café y pasear. **Noche:** cena en Surry Hills o en Chinatown (Haymarket), que está al lado y es más barato.
-
-### Día 3: ferris y Manly
-
-**Mañana:** ferry a Taronga Zoo o, si no te interesa, directamente a Manly. **Tarde:** Manly, Shelly Beach y la parte alta del paseo de North Head si te quedan piernas. **Noche:** ferry de vuelta al atardecer (es el mejor momento del día en Sídney) y cena en Newtown, en King Street.
-
-### Día 4: Blue Mountains
-
-**Mañana:** tren temprano desde Central hasta Katoomba, unas 2 horas. **Tarde:** Echo Point para ver las Three Sisters y caminata por el Prince Henry Cliff Walk. **Noche:** vuelta en tren y última cerveza en un pub de The Rocks o de Glebe. Si cae en domingo, este día te sale casi gratis gracias al tope del transporte.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · La bahía | Empieza en Mrs Macquarie's Chair temprano y atraviesa el jardín botánico hasta la Ópera. | The Rocks, comida en un pub, y cruce del Harbour Bridge a pie con subida al Pylon Lookout. Vuelta en ferry desde Milsons Point. | Cena en Circular Quay o, mejor, función en la Ópera si encuentras entrada barata. |
+| Día 2 · Costa este | Bus o tren a Bondi y paseo costero hasta Coogee, con baño en Bronte o Clovelly. | Comida en Coogee y bus de vuelta hacia Surry Hills para tomar un café y pasear. | Cena en Surry Hills o en Chinatown (Haymarket), que está al lado y es más barato. |
+| Día 3 · Ferris y Manly | Ferry a Taronga Zoo o, si no te interesa, directamente a Manly. | Manly, Shelly Beach y la parte alta del paseo de North Head si te quedan piernas. | Ferry de vuelta al atardecer (es el mejor momento del día en Sídney) y cena en Newtown, en King Street. |
+| Día 4 · Blue Mountains | Tren temprano desde Central hasta Katoomba, unas 2 horas. | Echo Point para ver las Three Sisters y caminata por el Prince Henry Cliff Walk. | Vuelta en tren y última cerveza en un pub de The Rocks o de Glebe. Si cae en domingo, este día te sale casi gratis gracias al tope del transporte. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -181,12 +174,14 @@ Para moverte, el sistema Opal integra trenes, metro, buses, tranvía y ferris. N
 
 Sin contar vuelos, por persona y día:
 
-- **Ajustado: 70-100 €.** Albergue o habitación compartida, súper y comida asiática barata, transporte público, actividades gratis.
+**Presupuesto orientativo por día**
 
-- **Medio: 160-250 €.** Hotel de tres estrellas en habitación doble compartida, un brunch y una cena en restaurante, cervezas, el zoo o alguna entrada.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | 70-100 € | Albergue o habitación compartida, súper y comida asiática barata, transporte público, actividades gratis. |
+| Medio | 160-250 € | Hotel de tres estrellas en habitación doble compartida, un brunch y una cena en restaurante, cervezas, el zoo o alguna entrada. |
 
 - **Vuelo desde España:** entre 900 y 1.500 € ida y vuelta con escala, según fecha. Fuera del verano austral se encuentran los mejores precios.
-
 - **Visado:** los españoles necesitan la eVisitor, que se tramita online y es gratuita en la web oficial del Gobierno australiano.
 
 ## Excursiones de un día desde Sídney

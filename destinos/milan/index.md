@@ -35,15 +35,17 @@ Si te gusta el fútbol, el estadio de San Siro (Giuseppe Meazza) se visita con t
 
 También hay mercadillos: en Navigli, el último domingo de cada mes hay mercado de antigüedades, y la zona de Porta Genova y la Darsena cambia de cara según el día. Para ver la ciudad desde otro ángulo, el tranvía histórico amarillo cruza el centro y se coge con billete normal.
 
-## Cuántos días necesitas y ruta sugerida
+## Qué ver en Milán en 3 días: ruta día a día
 
 Tres días es lo ideal. Con dos ves lo esencial sin ir corriendo si te organizas; con cuatro puedes añadir una escapada al lago de Como o a Bérgamo, ambos a menos de una hora y pico en tren.
 
-- **Día 1:** Duomo (terrazas a primera hora), Galleria, paseo hasta La Scala y Brera. Atardecer de aperitivo por la zona.
+**Itinerario de 3 días en Milán**
 
-- **Día 2:** Última Cena (con reserva), Sant'Ambrogio, Castello Sforzesco y Parco Sempione. Cena en Isola o Porta Venezia.
-
-- **Día 3:** San Lorenzo, Navigli y Darsena de día, Porta Nuova por la tarde. O una excursión a Como si el tiempo acompaña.
+| Día | Plan |
+|---|---|
+| Día 1 | Duomo (terrazas a primera hora), Galleria, paseo hasta La Scala y Brera. Atardecer de aperitivo por la zona. |
+| Día 2 | Última Cena (con reserva), Sant'Ambrogio, Castello Sforzesco y Parco Sempione. Cena en Isola o Porta Venezia. |
+| Día 3 | San Lorenzo, Navigli y Darsena de día, Porta Nuova por la tarde. O una excursión a Como si el tiempo acompaña. |
 
 ## Cuándo ir: clima y temporadas
 

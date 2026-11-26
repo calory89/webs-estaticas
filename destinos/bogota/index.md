@@ -59,17 +59,18 @@ La casa-museo donde vivió Simón Bolívar, al pie de los cerros. Jardín tranqu
 
 - **Partido de tejo:** el deporte nacional, con pólvora y cerveza. Hay locales en varios barrios, entre ellos algunos pensados para visitantes.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Bogotá en 4 días: ruta día a día
 
 Tres días bastan para lo esencial; con cuatro puedes añadir Zipaquirá sin prisa.
 
-- **Día 1:** La Candelaria a pie. Plaza de Bolívar, Museo del Oro y Museo Botero, comida en el centro y tarde tranquila para aclimatarte a la altura.
+**Itinerario de 4 días en Bogotá**
 
-- **Día 2:** Monserrate por la mañana, Quinta de Bolívar después y paseo por La Macarena para cenar.
-
-- **Día 3:** Paloquemao temprano, Museo Nacional y tarde en Usaquén (domingo, mejor si coincide con el mercado y la Ciclovía).
-
-- **Día 4 opcional:** excursión a Zipaquirá.
+| Día | Plan |
+|---|---|
+| Día 1 | La Candelaria a pie. Plaza de Bolívar, Museo del Oro y Museo Botero, comida en el centro y tarde tranquila para aclimatarte a la altura. |
+| Día 2 | Monserrate por la mañana, Quinta de Bolívar después y paseo por La Macarena para cenar. |
+| Día 3 | Paloquemao temprano, Museo Nacional y tarde en Usaquén (domingo, mejor si coincide con el mercado y la Ciclovía). |
+| Día 4 | Opcional. Excursión a Zipaquirá. |
 
 ## Cuándo ir
 
@@ -101,11 +102,13 @@ Dentro de la ciudad, el **TransMilenio** es rápido en sus carriles propios, per
 
 ## Presupuesto orientativo por día
 
-- **Ajustado (30-45 euros):** dormitorio en hostal, menú del día, transporte público y museos gratuitos o baratos.
+**Presupuesto orientativo por día**
 
-- **Medio (60-90 euros):** habitación privada o hotel sencillo, comidas en restaurantes, algún taxi y entradas.
-
-- **Cómodo (120 euros o más):** buen hotel, restaurantes de nivel, taxis o apps a diario y excursiones guiadas.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | 30-45 euros | Dormitorio en hostal, menú del día, transporte público y museos gratuitos o baratos. |
+| Medio | 60-90 euros | Habitación privada o hotel sencillo, comidas en restaurantes, algún taxi y entradas. |
+| Cómodo | 120 euros o más | Buen hotel, restaurantes de nivel, taxis o apps a diario y excursiones guiadas. |
 
 ## Preguntas frecuentes
 

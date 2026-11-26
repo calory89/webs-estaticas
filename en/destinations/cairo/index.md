@@ -59,17 +59,18 @@ Located in Fustat, it is well laid out and houses the Royal Mummies Hall. It is 
 
 - **Street art and galleries in Zamalek:** a gentler, more modern side of the city.
 
-## How many days and a suggested route
+## Cairo itinerary: 4 days, day by day
 
 Three full days is the practical minimum. Four is comfortable, and five lets you add Saqqara and Dahshur without rushing.
 
-- **Day 1:** Giza plateau at opening time, then the Grand Egyptian Museum in the afternoon.
+**4-day itinerary for Cairo**
 
-- **Day 2:** the Citadel, Sultan Hassan, then Al-Muizz Street and Khan el-Khalili at dusk.
-
-- **Day 3:** Egyptian Museum or the Civilization Museum, Coptic Cairo, felucca at sunset.
-
-- **Day 4:** Saqqara and Dahshur with a driver, back in time for dinner.
+| Day | Plan |
+|---|---|
+| Day 1 | Giza plateau at opening time, then the Grand Egyptian Museum in the afternoon. |
+| Day 2 | The Citadel, Sultan Hassan, then Al-Muizz Street and Khan el-Khalili at dusk. |
+| Day 3 | Egyptian Museum or the Civilization Museum, Coptic Cairo, felucca at sunset. |
+| Day 4 | Saqqara and Dahshur with a driver, back in time for dinner. |
 
 ## When to go
 

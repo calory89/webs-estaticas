@@ -37,19 +37,19 @@ Un día de bodegas en Constantia, la zona vinícola más cercana, o en Stellenbo
 
 Los sábados por la mañana, el mercado de la Old Biscuit Mill en Woodstock llena de gente y de comida. Ve temprano o aguanta las colas. Entre julio y noviembre, Hermanus (a unas dos horas) es buen sitio para ver ballenas francas desde la costa. Y si te gusta caminar, el paseo marítimo de Sea Point es llano, gratis y lo usan los locales a todas horas.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Ciudad del Cabo en 5 días: ruta día a día
 
 Con cuatro o cinco días lo esencial queda bien cubierto. Con una semana puedes añadir bodegas y Hermanus sin ir con la lengua fuera.
 
-- **Día 1:** Bo-Kaap, centro, Company's Garden y District Six. Atardecer en Signal Hill.
+**Itinerario de 5 días en Ciudad del Cabo**
 
-- **Día 2:** Table Mountain a primera hora y tarde tranquila en el Waterfront.
-
-- **Día 3:** Robben Island por la mañana. Por la tarde, Sea Point o Camps Bay.
-
-- **Día 4:** Excursión a la península: Chapman's Peak, Hout Bay, Boulders y Cape Point. Es largo, sal temprano.
-
-- **Día 5:** Kirstenbosch y bodegas de Constantia.
+| Día | Plan |
+|---|---|
+| Día 1 | Bo-Kaap, centro, Company's Garden y District Six. Atardecer en Signal Hill. |
+| Día 2 | Table Mountain a primera hora y tarde tranquila en el Waterfront. |
+| Día 3 | Robben Island por la mañana. Por la tarde, Sea Point o Camps Bay. |
+| Día 4 | Excursión a la península: Chapman's Peak, Hout Bay, Boulders y Cape Point. Es largo, sal temprano. |
+| Día 5 | Kirstenbosch y bodegas de Constantia. |
 
 ## Cuándo ir: clima y temporadas
 

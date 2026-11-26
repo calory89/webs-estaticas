@@ -83,17 +83,13 @@ Walking up to Agadir Oufella instead of taking the cable car takes about 40 minu
 
 ## Agadir itinerary: 3 days
 
-### Day 1: Beach, kasbah and port
+**3-day itinerary for Agadir**
 
-**Morning:** walk the promenade from the southern hotels to the marina, with a coffee stop on the way. **Afternoon:** eat lunch at the port fish grills, then visit the Amazigh museum and the Jardin de Olhão. **Evening:** take the cable car up to Agadir Oufella for sunset, then eat dinner around the marina or back in the centre.
-
-### Day 2: Souk, fake medina and hammam
-
-**Morning:** Souk El Had, ideally before 11am when it's cooler and less crowded (remember it's closed Mondays). **Afternoon:** petit taxi to Medina Polizzi, then the Souss estuary for birds if you have energy. **Evening:** hammam, then a tagine dinner in the Talborjt area, where prices drop and the restaurants feel more local.
-
-### Day 3: Taghazout and the coast
-
-**Morning:** bus or grand taxi north to Taghazout (about 30-40 minutes) for a surf lesson or a beach walk. **Afternoon:** lunch on a Taghazout terrace, then go on to Tamraght or, if you have a car, inland to the Imouzzer palm gorge for a swim. **Evening:** sunset in Taghazout before heading back, or stay over if the surf is good.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Beach, kasbah and port | Walk the promenade from the southern hotels to the marina, with a coffee stop on the way. | Eat lunch at the port fish grills, then visit the Amazigh museum and the Jardin de Olhão. | Take the cable car up to Agadir Oufella for sunset, then eat dinner around the marina or back in the centre. |
+| Day 2 · Souk, fake medina and hammam | Souk El Had, ideally before 11am when it's cooler and less crowded (remember it's closed Mondays). | Petit taxi to Medina Polizzi, then the Souss estuary for birds if you have energy. | Hammam, then a tagine dinner in the Talborjt area, where prices drop and the restaurants feel more local. |
+| Day 3 · Taghazout and the coast | Bus or grand taxi north to Taghazout (about 30-40 minutes) for a surf lesson or a beach walk. | Lunch on a Taghazout terrace, then go on to Tamraght or, if you have a car, inland to the Imouzzer palm gorge for a swim. | Sunset in Taghazout before heading back, or stay over if the surf is good. |
 
 ## What is overrated (and what to do instead)
 
@@ -137,11 +133,13 @@ In town, orange **petit taxis** are cheap (€1-3 for most rides). Insist on the
 
 ## How much a trip to Agadir costs
 
-- **Shoestring: €35-50 a day.** A hostel or simple guesthouse (€15-25), local food (€8-12), buses and shared taxis (€3-5), mostly free sights.
+**Rough daily budget**
 
-- **Mid-range: €80-130 a day.** A 3-4 star seafront hotel (€60-90 per person sharing), restaurant meals with the odd beer (€25-35), a cable car or surf lesson (€10-30), petit taxis.
-
-- **Comfortable: €180+ a day.** Resort or boutique stay, marina dinners, private drivers and spa.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €35-50 a day | A hostel or simple guesthouse (€15-25), local food (€8-12), buses and shared taxis (€3-5), mostly free sights. |
+| Mid-range | €80-130 a day | A 3-4 star seafront hotel (€60-90 per person sharing), restaurant meals with the odd beer (€25-35), a cable car or surf lesson (€10-30), petit taxis. |
+| Comfortable | €180+ a day | Resort or boutique stay, marina dinners, private drivers and spa. |
 
 Flights are the variable. Direct low-cost routes from Europe often drop below €60 return outside holidays.
 

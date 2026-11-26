@@ -201,7 +201,8 @@ def dest_page(d, lst, meses, en, en_slug, guide):
         en_lst = [r for r in lst if r['origin'] in EN_HOME]
         r1 = en_lst[0] if en_lst else r0
         f1 = r1.get('facts') or {}
-        title = f'Cheap flights to {name} from {oname(r1)}: €{r1["price_from"]} ({NOW_EN})' if en_lst else f'Flight deals to {name} from €{r0["price_from"]} ({NOW_EN})'
+        # Search Console (28 días): las consultas que traen estos hubs son "flight deals to X" (Sri Lanka, Stockholm, Munich, Krakow, en posición 4-9)
+        title = f'Flight deals to {name}: €{r1["price_from"]} from {oname(r1)} ({NOW_EN})' if en_lst else f'Flight deals to {name} from €{r0["price_from"]} ({NOW_EN})'
         lead = (f'The cheapest return flight to {name} from {oname(r1)} we found is {r1["price_from"]} € ({stops(f1.get("escalas_ida"), True)}, {f1.get("aerolinea") or "several airlines"}). '
                 + (f'Cheaper still from {oname(r0)}, at {r0["price_from"]} €. ' if r0 is not r1 else '')
                 + (f'The usual price across the {len(lst)} cities we track is about {int(statistics.median(meds))} € (median).' if meds else ''))

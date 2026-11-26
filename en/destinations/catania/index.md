@@ -89,29 +89,13 @@ Some state-run sites offer free entry on the first Sunday of the month. Check be
 
 ## Catania itinerary: 3 days
 
-### Day 1: historic centre and the market
+**3-day itinerary for Catania**
 
-**Morning:** Granita and brioche, then straight to the Pescheria before 10am. Walk up to the Duomo and the Elephant Fountain, then visit the cathedral.
-
-**Afternoon:** Lunch at a trattoria near the market (pasta alla Norma or fish). Walk along Via Vittorio Emanuele II to the Teatro Romano, then up Via dei Crociferi. Finish with the Badia di Sant'Agata rooftop late in the day.
-
-**Evening:** Stroll up Via Etnea to Villa Bellini, then drinks around Piazza Teatro Massimo.
-
-### Day 2: Etna
-
-**Morning:** Take the early AST bus from the station to Rifugio Sapienza, or join a tour. Explore the Silvestri craters, which are free.
-
-**Afternoon:** Take the cable car up and hike, or book a guided summit tour if conditions allow. Bring layers, because it is cold up there even in July.
-
-**Evening:** Back in town, have horse meat grilled to order on Via Plebiscito. Not for everyone, but very Catanese.
-
-### Day 3: monastery, castle and the coast
-
-**Morning:** Book the Monastero dei Benedettini tour and visit San Nicolò l'Arena next door.
-
-**Afternoon:** Walk down to Castello Ursino. Then take a bus north to Aci Castello and Aci Trezza for a swim off the rocks and the sea stacks.
-
-**Evening:** Eat seafood in Aci Trezza or back in the centre, with a final arancino on the way home.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Historic centre and the market | Granita and brioche, then straight to the Pescheria before 10am. Walk up to the Duomo and the Elephant Fountain, then visit the cathedral. | Lunch at a trattoria near the market (pasta alla Norma or fish). Walk along Via Vittorio Emanuele II to the Teatro Romano, then up Via dei Crociferi. Finish with the Badia di Sant'Agata rooftop late in the day. | Stroll up Via Etnea to Villa Bellini, then drinks around Piazza Teatro Massimo. |
+| Day 2 · Etna | Take the early AST bus from the station to Rifugio Sapienza, or join a tour. Explore the Silvestri craters, which are free. | Take the cable car up and hike, or book a guided summit tour if conditions allow. Bring layers, because it is cold up there even in July. | Back in town, have horse meat grilled to order on Via Plebiscito. Not for everyone, but very Catanese. |
+| Day 3 · Monastery, castle and the coast | Book the Monastero dei Benedettini tour and visit San Nicolò l'Arena next door. | Walk down to Castello Ursino. Then take a bus north to Aci Castello and Aci Trezza for a swim off the rocks and the sea stacks. | Eat seafood in Aci Trezza or back in the centre, with a final arancino on the way home. |
 
 ## What is overrated (and what to do instead)
 
@@ -181,9 +165,12 @@ Within the city, the centre is walkable. The single metro line runs from the por
 
 ## How much a trip to Catania costs
 
-- **Shoestring: €50-70 a day.** Hostel bed (€25-40), street food and market meals (€15-20), one paid sight, walking and buses.
+**Rough daily budget**
 
-- **Mid-range: €110-170 a day** per person sharing a double. B&B or small hotel, a trattoria lunch, a restaurant dinner, a museum or two and taxis now and then.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €50-70 a day | Hostel bed (€25-40), street food and market meals (€15-20), one paid sight, walking and buses. |
+| Mid-range | €110-170 a day | Per person sharing a double. B&B or small hotel, a trattoria lunch, a restaurant dinner, a museum or two and taxis now and then. |
 
 - **Etna day extra:** €7-10 by public bus; €50 and up for the cable car; €60-120 for a guided tour.
 

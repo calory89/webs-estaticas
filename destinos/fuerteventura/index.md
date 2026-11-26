@@ -95,33 +95,20 @@ Lo mejor de la isla no cuesta nada: todas las playas son de acceso libre y casi 
 
 - Atardecer desde el Faro del Tostón, en El Cotillo.
 
-## Itinerario: Fuerteventura en 6 días
+## Qué ver en Fuerteventura en 6 días: ruta día a día
 
 Este plan asume coche y dos bases: tres noches en el norte (Corralejo o El Cotillo) y tres en el sur (Costa Calma o Morro Jable). Así no pierdes horas al volante cada día.
 
-### Día 1: Corralejo y las dunas
+**Itinerario de 6 días en Fuerteventura**
 
-**Mañana:** recoge el coche en el aeropuerto y sube al norte (unos 35 minutos). **Tarde:** playa en las dunas, en la zona sur del parque, más resguardada. **Noche:** atardecer en las dunas y cena de pescado en el puerto viejo de Corralejo.
-
-### Día 2: Isla de Lobos
-
-**Mañana:** primer ferry a Lobos (con la autorización ya pedida), sendero hasta el faro antes de que apriete el calor. **Tarde:** baño y snorkel en La Concha, vuelta a media tarde. **Noche:** cena tranquila en Corralejo; la calle principal tiene bares, pero evita los locales con fotos de paella en la puerta.
-
-### Día 3: Lajares y El Cotillo
-
-**Mañana:** sendero al Calderón Hondo desde Lajares, café en el pueblo. **Tarde:** lagunas de El Cotillo y, si te animas, clase de surf. **Noche:** atardecer en el Faro del Tostón y cena en el puerto viejo de El Cotillo.
-
-### Día 4: el interior camino del sur
-
-**Mañana:** Ecomuseo de La Alcogida en Tefía, luego Mirador de Morro Velosa y Betancuria. **Tarde:** comida en Betancuria, Barranco de las Peñitas y Cuevas de Ajuy. **Noche:** sigue hasta Costa Calma o Morro Jable (alrededor de 1 hora) y cena allí.
-
-### Día 5: Cofete y Punta Jandía
-
-**Mañana:** pista a Cofete temprano, antes del polvo de los 4x4, con parada en el mirador del Paso, desde donde ves toda la playa. **Tarde:** Faro de Punta Jandía y comida de pescado en Puertito de la Cruz. **Noche:** paseo por el paseo marítimo de Morro Jable y la playa del Matorral.
-
-### Día 6: Sotavento y vuelta
-
-**Mañana:** playa de Sotavento con marea baja, en Risco del Paso. **Tarde:** si el vuelo lo permite, sube por la costa este con parada en las Salinas del Carmen o el castillo de Caleta de Fuste. **Noche:** el aeropuerto está a menos de 15 minutos de Caleta, buena última parada.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Corralejo y las dunas | Recoge el coche en el aeropuerto y sube al norte (unos 35 minutos). | Playa en las dunas, en la zona sur del parque, más resguardada. | Atardecer en las dunas y cena de pescado en el puerto viejo de Corralejo. |
+| Día 2 · Isla de Lobos | Primer ferry a Lobos (con la autorización ya pedida), sendero hasta el faro antes de que apriete el calor. | Baño y snorkel en La Concha, vuelta a media tarde. | Cena tranquila en Corralejo; la calle principal tiene bares, pero evita los locales con fotos de paella en la puerta. |
+| Día 3 · Lajares y El Cotillo | Sendero al Calderón Hondo desde Lajares, café en el pueblo. | Lagunas de El Cotillo y, si te animas, clase de surf. | Atardecer en el Faro del Tostón y cena en el puerto viejo de El Cotillo. |
+| Día 4 · El interior camino del sur | Ecomuseo de La Alcogida en Tefía, luego Mirador de Morro Velosa y Betancuria. | Comida en Betancuria, Barranco de las Peñitas y Cuevas de Ajuy. | Sigue hasta Costa Calma o Morro Jable (alrededor de 1 hora) y cena allí. |
+| Día 5 · Cofete y Punta Jandía | Pista a Cofete temprano, antes del polvo de los 4x4, con parada en el mirador del Paso, desde donde ves toda la playa. | Faro de Punta Jandía y comida de pescado en Puertito de la Cruz. | Paseo por el paseo marítimo de Morro Jable y la playa del Matorral. |
+| Día 6 · Sotavento y vuelta | Playa de Sotavento con marea baja, en Risco del Paso. | Si el vuelo lo permite, sube por la costa este con parada en las Salinas del Carmen o el castillo de Caleta de Fuste. | El aeropuerto está a menos de 15 minutos de Caleta, buena última parada. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -185,9 +172,12 @@ El transporte público vale para moverse entre pueblos grandes, pero no llega a 
 
 ## Cuánto cuesta un viaje a Fuerteventura
 
-- **Ajustado (unos 70-90 € por persona y día, en pareja):** apartamento compartido a 70 €, coche a medias, compra en supermercado y un menú al día, playas y senderos gratis.
+**Presupuesto orientativo por día**
 
-- **Medio (unos 120-170 € por persona y día):** hotel o apartamento de 110-150 €, coche, comidas y cenas fuera, ferry a Lobos y una clase de surf o un barco.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | unos 70-90 € por persona y día, en pareja | Apartamento compartido a 70 €, coche a medias, compra en supermercado y un menú al día, playas y senderos gratis. |
+| Medio | unos 120-170 € por persona y día | Hotel o apartamento de 110-150 €, coche, comidas y cenas fuera, ferry a Lobos y una clase de surf o un barco. |
 
 - **Vuelos:** desde la península, entre 40 y 150 € ida y vuelta según fecha y antelación.
 

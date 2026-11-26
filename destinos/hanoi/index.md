@@ -37,19 +37,19 @@ Haz una clase de cocina en Hoi An u Hanói: te enseñan a escoger las hierbas y 
 
 Los túneles de Cu Chi, a unas dos horas de Saigón, son turísticos pero ayudan a entender la guerra desde el lado vietnamita.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Vietnam en 14 días: ruta día a día
 
 Con una semana, te toca elegir: norte o centro-sur. Con diez días, se puede hacer una ruta norte-centro-sur sin ir con la lengua fuera. Con quince, ya hay margen para Ninh Binh, Phong Nha o Dalat. Aquí va una propuesta de 14 días:
 
-- **Días 1-3:** Hanói y Casco Antiguo, con un día de excursión a Ninh Binh.
+**Itinerario de 14 días en Vietnam**
 
-- **Días 4-5:** Lan Ha o Ha Long con noche en barco.
-
-- **Días 6-7:** vuelo a Hue, ciudadela y tumbas.
-
-- **Días 8-10:** Hoi An, con media jornada en Da Nang o Hai Van de camino.
-
-- **Días 11-14:** vuelo a Saigón, Mekong y túneles de Cu Chi.
+| Día | Plan |
+|---|---|
+| Días 1-3 | Hanói y Casco Antiguo, con un día de excursión a Ninh Binh. |
+| Días 4-5 | Lan Ha o Ha Long con noche en barco. |
+| Días 6-7 | Vuelo a Hue, ciudadela y tumbas. |
+| Días 8-10 | Hoi An, con media jornada en Da Nang o Hai Van de camino. |
+| Días 11-14 | Vuelo a Saigón, Mekong y túneles de Cu Chi. |
 
 Los vuelos internos son baratos y ahorran horas de autobús o de tren. El Reunification Express (Hanói-Saigón) tarda más de 30 horas; el tramo Hue-Da Nang es el más bonito y se puede hacer suelto.
 

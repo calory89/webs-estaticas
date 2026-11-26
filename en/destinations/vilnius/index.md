@@ -39,15 +39,17 @@ For a change of scale, a hot air balloon flight over Vilnius or Trakai is a popu
 
 For a half-day trip, go to **Trakai**, about 28 km west. The red-brick island castle sits on Lake Galvė, and you can rent a kayak or rowing boat in summer. Trains and buses make the trip simple. If you want the darker history, a visit to the memorial at **Paneriai** (Ponary) is sobering and takes about two hours.
 
-## How many days and a suggested route
+## Vilnius itinerary: 3 days, day by day
 
 **Two days** covers the highlights. **Three days** is ideal, and it lets you add Trakai without rushing. Four or more makes sense if you like museums or want to base yourself here for the wider Baltic region.
 
-- **Day 1, Old Town.** Gate of Dawn, St. Anne's, the university, Pilies street, Cathedral Square and Gediminas Hill at sunset. Dinner around Stikliai or Vokiečių.
+**3-day itinerary for Vilnius**
 
-- **Day 2, Užupis and the modern side.** Užupis in the morning, Three Crosses Hill, then the KGB museum in the afternoon. In the evening, the TV tower or a drink in the New Town.
-
-- **Day 3, Trakai.** Take an early train, visit the castle, eat kibinai by the lake and be back in Vilnius for a late dinner.
+| Day | Plan |
+|---|---|
+| Day 1 | Old Town. Gate of Dawn, St. Anne's, the university, Pilies street, Cathedral Square and Gediminas Hill at sunset. Dinner around Stikliai or Vokiečių. |
+| Day 2 | Užupis and the modern side. Užupis in the morning, Three Crosses Hill, then the KGB museum in the afternoon. In the evening, the TV tower or a drink in the New Town. |
+| Day 3 | Trakai. Take an early train, visit the castle, eat kibinai by the lake and be back in Vilnius for a late dinner. |
 
 ## When to go
 

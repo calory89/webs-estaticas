@@ -35,15 +35,17 @@ Spend at least one long evening in a beer garden. In the traditional ones, such 
 
 Walk or cycle along the Isar, especially the stretch near the Flaucher, where locals sunbathe on the gravel. The Deutsches Museum, on an island in the river, is enormous and good for a rainy morning, as is the BMW Museum if you like cars. Day trips are easy: Neuschwanstein castle (train to Füssen, then bus, about two hours each way), Salzburg in under two hours by train, or Garmisch for the Zugspitze.
 
-## How many days and a suggested route
+## Munich itinerary: 3 days, day by day
 
 Three days is the sweet spot. Two works if you skip the day trip.
 
-- **Day 1, the old town.** Marienplatz, Alter Peter, Viktualienmarkt for lunch, the Asamkirche, then the Residenz and dinner in a traditional Wirtshaus.
+**3-day itinerary for Munich**
 
-- **Day 2, art and park.** A museum in the morning, the Englischer Garten and the Eisbach in the afternoon, and a beer at the Chinese Tower.
-
-- **Day 3, out of the centre.** Nymphenburg and the Hirschgarten, or Dachau, or a long day to Neuschwanstein. Finish at the Olympiapark if you have energy.
+| Day | Plan |
+|---|---|
+| Day 1 | The old town. Marienplatz, Alter Peter, Viktualienmarkt for lunch, the Asamkirche, then the Residenz and dinner in a traditional Wirtshaus. |
+| Day 2 | Art and park. A museum in the morning, the Englischer Garten and the Eisbach in the afternoon, and a beer at the Chinese Tower. |
+| Day 3 | Out of the centre. Nymphenburg and the Hirschgarten, or Dachau, or a long day to Neuschwanstein. Finish at the Olympiapark if you have energy. |
 
 ## When to go
 

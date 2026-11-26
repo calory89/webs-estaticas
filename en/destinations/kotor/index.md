@@ -93,29 +93,13 @@ Much of Kotor costs nothing, and the best view is free if you are willing to swe
 
 ## Kotor itinerary: 3 days
 
-### Day 1: Old town and fortress
+**3-day itinerary for Kotor**
 
-**Morning:** start the wall climb as soon as it opens, with water and a snack from the market. Come down by late morning and visit the Cathedral of St Tryphon while it is still cool inside.
-
-**Afternoon:** have a long lunch, then visit the Maritime Museum and the Cats Museum. Spend the afternoon heat in the shade of the smaller squares, St Luke's and the Square of Flour.
-
-**Evening:** walk out to the North Gate and the river for golden hour, then eat in the old town once the day-trippers have left.
-
-### Day 2: Perast and the bay
-
-**Morning:** take the bus to Perast (about 25 minutes). Climb the bell tower of St Nicholas church for the view and take a short boat across to Our Lady of the Rocks.
-
-**Afternoon:** swim from the platforms in Perast, or head back towards Kotor and stop in Dobrota. Alternatively, swap the bus for a half-day boat tour that includes the Blue Cave.
-
-**Evening:** eat seafood by the water in Dobrota or Prčanj, where prices are a little lower than in the old town.
-
-### Day 3: Lovćen and Njeguši
-
-**Morning:** drive, taxi or take the cable car up towards Lovćen. Climb the steps to the Njegoš Mausoleum for a view that on clear days reaches the Albanian mountains.
-
-**Afternoon:** stop in Njeguši for smoked ham and cheese, then go down the serpentine back to Kotor with stops at the viewpoint bends.
-
-**Evening:** if you still have the legs, do a short section of the Ladder of Kotor at sunset. Otherwise, finish with a glass of Vranac in the old town.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Old town and fortress | Start the wall climb as soon as it opens, with water and a snack from the market. Come down by late morning and visit the Cathedral of St Tryphon while it is still cool inside. | Have a long lunch, then visit the Maritime Museum and the Cats Museum. Spend the afternoon heat in the shade of the smaller squares, St Luke's and the Square of Flour. | Walk out to the North Gate and the river for golden hour, then eat in the old town once the day-trippers have left. |
+| Day 2 · Perast and the bay | Take the bus to Perast (about 25 minutes). Climb the bell tower of St Nicholas church for the view and take a short boat across to Our Lady of the Rocks. | Swim from the platforms in Perast, or head back towards Kotor and stop in Dobrota. Alternatively, swap the bus for a half-day boat tour that includes the Blue Cave. | Eat seafood by the water in Dobrota or Prčanj, where prices are a little lower than in the old town. |
+| Day 3 · Lovćen and Njeguši | Drive, taxi or take the cable car up towards Lovćen. Climb the steps to the Njegoš Mausoleum for a view that on clear days reaches the Albanian mountains. | Stop in Njeguši for smoked ham and cheese, then go down the serpentine back to Kotor with stops at the viewpoint bends. | If you still have the legs, do a short section of the Ladder of Kotor at sunset. Otherwise, finish with a glass of Vranac in the old town. |
 
 ## What is overrated (and what to do instead)
 

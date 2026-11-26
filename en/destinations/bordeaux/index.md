@@ -87,29 +87,13 @@ Municipal museums are free on the first Sunday of each month. Oysters at the mar
 
 ## Bordeaux itinerary: 3 days
 
-### Day 1: The classic centre
+**3-day itinerary for Bordeaux**
 
-**Morning:** Start at Place de la Bourse and the Miroir d'Eau before the crowds, then wander Saint-Pierre and Place du Parlement. Coffee and a canelé on the way.
-
-**Afternoon:** Walk to the cathedral and climb Tour Pey-Berland, then visit the Musée d'Aquitaine. Pass the Grosse Cloche and stroll part of Rue Sainte-Catherine.
-
-**Evening:** Cross the Pont de Pierre at sunset, then dinner in Saint-Pierre or around Saint-Michel.
-
-### Day 2: Markets, Chartrons and the Cité du Vin
-
-**Morning:** Oysters at the Marché des Capucins (ideally on a weekend), then a short look at Saint-Michel and its spire.
-
-**Afternoon:** Tram or walk up to Chartrons: Jardin Public, Rue Notre-Dame and the CAPC. Continue to the Cité du Vin for a late-afternoon slot, or swap in the Bassins de Lumières.
-
-**Evening:** Drinks on the Belvedere or along the Chartrons quays, dinner on Rue Notre-Dame.
-
-### Day 3: Day trip
-
-**Morning:** Train to Saint-Émilion for vineyards and the medieval village, or to Arcachon for the sea.
-
-**Afternoon:** A tasting at a Saint-Émilion property, or the Dune du Pilat if you went coastal.
-
-**Evening:** Back in Bordeaux for a final wine bar, or cross to Darwin on the right bank for beer and a relaxed last night.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · The classic centre | Start at Place de la Bourse and the Miroir d'Eau before the crowds, then wander Saint-Pierre and Place du Parlement. Coffee and a canelé on the way. | Walk to the cathedral and climb Tour Pey-Berland, then visit the Musée d'Aquitaine. Pass the Grosse Cloche and stroll part of Rue Sainte-Catherine. | Cross the Pont de Pierre at sunset, then dinner in Saint-Pierre or around Saint-Michel. |
+| Day 2 · Markets, Chartrons and the Cité du Vin | Oysters at the Marché des Capucins (ideally on a weekend), then a short look at Saint-Michel and its spire. | Tram or walk up to Chartrons: Jardin Public, Rue Notre-Dame and the CAPC. Continue to the Cité du Vin for a late-afternoon slot, or swap in the Bassins de Lumières. | Drinks on the Belvedere or along the Chartrons quays, dinner on Rue Notre-Dame. |
+| Day 3 · Day trip | Train to Saint-Émilion for vineyards and the medieval village, or to Arcachon for the sea. | A tasting at a Saint-Émilion property, or the Dune du Pilat if you went coastal. | Back in Bordeaux for a final wine bar, or cross to Darwin on the right bank for beer and a relaxed last night. |
 
 ## What is overrated (and what to do instead)
 

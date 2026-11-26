@@ -37,15 +37,17 @@ Book a hammam. A traditional one with black soap and a vigorous scrub costs litt
 
 For a break from the medina, try a day trip. The Ourika Valley and the Atlas foothills are cooler in summer, and the Agafay Desert is a stony landscape about 40 minutes out, good for camel rides and sunset dinners. Essaouira on the Atlantic coast is a long day trip of about three hours each way, so better with an overnight stay.
 
-## How many days and a suggested route
+## Marrakesh itinerary: 3 days, day by day
 
 Three days is the sweet spot. Two is enough for the highlights if you hurry, and four or five lets you add a mountain or coast excursion.
 
-**Day 1:** Koutoubia, then the Jemaa el-Fna area, the souks in the afternoon, and dinner on the square at dusk.
+**3-day itinerary for Marrakesh**
 
-**Day 2:** Early start at the Saadian Tombs and Bahia Palace, lunch in the Kasbah area, El Badi in the afternoon, then a hammam to recover.
-
-**Day 3:** Majorelle and the YSL museum in the morning, lunch in Gueliz, Ben Youssef and Le Jardin Secret later, and a rooftop drink at sunset.
+| Day | Plan |
+|---|---|
+| Day 1 | Koutoubia, then the Jemaa el-Fna area, the souks in the afternoon, and dinner on the square at dusk. |
+| Day 2 | Early start at the Saadian Tombs and Bahia Palace, lunch in the Kasbah area, El Badi in the afternoon, then a hammam to recover. |
+| Day 3 | Majorelle and the YSL museum in the morning, lunch in Gueliz, Ben Youssef and Le Jardin Secret later, and a rooftop drink at sunset. |
 
 ## When to go
 

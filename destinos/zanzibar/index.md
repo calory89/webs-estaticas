@@ -37,15 +37,17 @@ El tour de especias es el clásico y funciona mejor de lo que parece: te dan a o
 
 Un aviso cultural: Zanzíbar es mayoritariamente musulmana. En Stone Town y en las aldeas cubre hombros y rodillas. En la playa del hotel, bikini sin problema; fuera de ahí, un pareo te evita miradas incómodas.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Zanzíbar en 7 días: ruta día a día
 
 Con cinco días ves lo esencial; con siete lo disfrutas sin ir con la lengua fuera. Esta es la ruta que haría:
 
-- **Días 1 y 2:** Stone Town. Paseo por el casco viejo, mercado, Forodhani al atardecer. Excursión a Isla Prisión o tour de especias.
+**Itinerario de 7 días en Zanzíbar**
 
-- **Días 3 a 5:** costa norte (Kendwa o Nungwi). Playa, snorkel en Mnemba, puesta de sol con una cerveza fría.
-
-- **Días 6 y 7:** costa este (Paje o Jambiani). Parada en Jozani de camino, kitesurf si te animas, cena en un sitio con los pies en la arena.
+| Día | Plan |
+|---|---|
+| Días 1-2 | Stone Town. Paseo por el casco viejo, mercado, Forodhani al atardecer. Excursión a Isla Prisión o tour de especias. |
+| Días 3-5 | Costa norte (Kendwa o Nungwi). Playa, snorkel en Mnemba, puesta de sol con una cerveza fría. |
+| Días 6-7 | Costa este (Paje o Jambiani). Parada en Jozani de camino, kitesurf si te animas, cena en un sitio con los pies en la arena. |
 
 Si solo tienes tres o cuatro días, quédate en Stone Town y una playa, la que más te apetezca. Moverse mucho en la isla cansa más de lo que parece.
 

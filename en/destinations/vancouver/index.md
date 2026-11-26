@@ -95,21 +95,14 @@ The best of the city costs nothing, which helps balance the restaurant bills. Th
 
 ## Vancouver itinerary: 4 days
 
-### Day 1: Downtown, Stanley Park and English Bay
+**4-day itinerary for Vancouver**
 
-**Morning:** start at Canada Place, walk through Gastown and see the steam clock, then Chinatown and the Sun Yat-Sen garden. **Afternoon:** walk the Coal Harbour seawall to Denman Street, rent a bike and loop Stanley Park. **Evening:** sunset at English Bay, then cheap dinner on Denman or Davie Street.
-
-### Day 2: Granville Island, Kits and UBC
-
-**Morning:** Aquabus to Granville Island, early market breakfast. **Afternoon:** walk to Kits Beach, then bus out to the Museum of Anthropology and, if you have energy, down to Wreck Beach. **Evening:** back to Kitsilano for dinner on West 4th, or to Main Street for breweries.
-
-### Day 3: North Shore
-
-**Morning:** SeaBus to Lonsdale Quay, then bus to Lynn Canyon. **Afternoon:** Grouse Mountain if the sky is clear (or Deep Cove and Quarry Rock if it is cloudy). **Evening:** back via the Shipyards for food and a beer with the skyline view, then the SeaBus at dusk.
-
-### Day 4: Day trip
-
-Drive or take a bus up the Sea-to-Sky Highway to Squamish for the Sea to Sky Gondola, or go to Victoria by ferry. Back by evening for dinner in Gastown or a final round of sushi.
+| Day | Plan |
+|---|---|
+| Day 1 | Downtown, Stanley Park and English Bay. Morning: start at Canada Place, walk through Gastown and see the steam clock, then Chinatown and the Sun Yat-Sen garden. Afternoon: walk the Coal Harbour seawall to Denman Street, rent a bike and loop Stanley Park. Evening: sunset at English Bay, then cheap dinner on Denman or Davie Street. |
+| Day 2 | Granville Island, Kits and UBC. Morning: Aquabus to Granville Island, early market breakfast. Afternoon: walk to Kits Beach, then bus out to the Museum of Anthropology and, if you have energy, down to Wreck Beach. Evening: back to Kitsilano for dinner on West 4th, or to Main Street for breweries. |
+| Day 3 | North Shore. Morning: SeaBus to Lonsdale Quay, then bus to Lynn Canyon. Afternoon: Grouse Mountain if the sky is clear (or Deep Cove and Quarry Rock if it is cloudy). Evening: back via the Shipyards for food and a beer with the skyline view, then the SeaBus at dusk. |
+| Day 4 | Day trip. Drive or take a bus up the Sea-to-Sky Highway to Squamish for the Sea to Sky Gondola, or go to Victoria by ferry. Back by evening for dinner in Gastown or a final round of sushi. |
 
 ## What is overrated (and what to do instead)
 

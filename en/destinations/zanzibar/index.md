@@ -65,17 +65,18 @@ A restaurant perched on a rock just off the southeast coast. You can wade out at
 
 - **Slave history:** the former slave market site in Stone Town and the Mangapwani slave chamber north of town. Sobering, and worth it.
 
-## How many days and a suggested route
+## Zanzibar itinerary: 7 days, day by day
 
 Five to seven days is the sweet spot. Three is possible but you will spend a lot of it in transfers.
 
-- **Days 1-2:** Stone Town. Wander, eat at Forodhani, do Prison Island or a spice tour.
+**7-day itinerary for Zanzibar**
 
-- **Days 3-4:** East coast (Paje or Jambiani). Jozani on the way, kitesurfing or lazy beach time.
-
-- **Days 5-6:** North coast (Nungwi or Kendwa). Snorkelling at Mnemba, sunsets.
-
-- **Day 7:** Back to Stone Town or straight to the airport.
+| Day | Plan |
+|---|---|
+| Days 1-2 | Stone Town. Wander, eat at Forodhani, do Prison Island or a spice tour. |
+| Days 3-4 | East coast (Paje or Jambiani). Jozani on the way, kitesurfing or lazy beach time. |
+| Days 5-6 | North coast (Nungwi or Kendwa). Snorkelling at Mnemba, sunsets. |
+| Day 7 | Back to Stone Town or straight to the airport. |
 
 ## When to go
 

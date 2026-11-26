@@ -105,25 +105,15 @@ If you plan several Manrique sites, buy a combined ticket from the island's tour
 
 ## Lanzarote itinerary: 5 days
 
-### Day 1: Timanfaya and the west coast
+**5-day itinerary for Lanzarote**
 
-**Morning:** Timanfaya at opening time, then the Tremesana walk if you have a booking. **Afternoon:** lunch at El Golfo, the green lagoon, Los Hervideros and Janubio. **Evening:** sunset over the salt pans, then dinner in Playa Blanca or Yaiza.
-
-### Day 2: La Geria and the centre
-
-**Morning:** the Montaña Colorada loop, then a coffee in Uga. **Afternoon:** two bodegas along the LZ-30, with lunch at one of them. **Evening:** the Fundación César Manrique before closing, then tapas around the Charco de San Ginés in Arrecife. Someone else drives.
-
-### Day 3: The north
-
-**Morning:** Jardín de Cactus, then Cueva de los Verdes. **Afternoon:** Jameos del Agua, then up to the Mirador del Río. **Evening:** the Manrique house in Haría and dinner in the village.
-
-### Day 4: La Graciosa
-
-**Morning:** the ferry from Órzola to Caleta de Sebo. **Afternoon:** hire a bike or take a 4x4 taxi to Playa de las Conchas. **Evening:** the last ferry back, then sunset drinks in Caleta de Famara.
-
-### Day 5: Papagayo and Teguise
-
-**Morning:** the Papagayo coves early, with a swim. **Afternoon:** Teguise (or its market, if it's Sunday), then the castle viewpoint. **Evening:** surf-town dinner in Famara, or seafood in Arrecife.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Timanfaya and the west coast | Timanfaya at opening time, then the Tremesana walk if you have a booking. | Lunch at El Golfo, the green lagoon, Los Hervideros and Janubio. | Sunset over the salt pans, then dinner in Playa Blanca or Yaiza. |
+| Day 2 · La Geria and the centre | The Montaña Colorada loop, then a coffee in Uga. | Two bodegas along the LZ-30, with lunch at one of them. | The Fundación César Manrique before closing, then tapas around the Charco de San Ginés in Arrecife. Someone else drives. |
+| Day 3 · The north | Jardín de Cactus, then Cueva de los Verdes. | Jameos del Agua, then up to the Mirador del Río. | The Manrique house in Haría and dinner in the village. |
+| Day 4 · La Graciosa | The ferry from Órzola to Caleta de Sebo. | Hire a bike or take a 4x4 taxi to Playa de las Conchas. | The last ferry back, then sunset drinks in Caleta de Famara. |
+| Day 5 · Papagayo and Teguise | The Papagayo coves early, with a swim. | Teguise (or its market, if it's Sunday), then the castle viewpoint. | Surf-town dinner in Famara, or seafood in Arrecife. |
 
 ## What is overrated (and what to do instead)
 
@@ -171,9 +161,12 @@ For seeing the island, **rent a car**. Buses link the main resorts and towns but
 
 ## How much a trip to Lanzarote costs
 
-- **Shoestring (about €70-90 per person per day, sharing):** a shared apartment in Arrecife or Costa Teguise, menús del día, a shared rental car, mostly free sights plus Timanfaya.
+**Rough daily budget**
 
-- **Mid-range (about €130-180 per person per day):** a hotel or nice apartment in Playa Blanca or Puerto del Carmen, sit-down fish lunches, Manrique combined tickets, a bodega tasting and the La Graciosa ferry.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | about €70-90 per person per day, sharing | A shared apartment in Arrecife or Costa Teguise, menús del día, a shared rental car, mostly free sights plus Timanfaya. |
+| Mid-range | about €130-180 per person per day | A hotel or nice apartment in Playa Blanca or Puerto del Carmen, sit-down fish lunches, Manrique combined tickets, a bodega tasting and the La Graciosa ferry. |
 
 - **Typical extras:** Timanfaya €20, Jameos €15, the La Graciosa ferry €25-30 return, a surf lesson €40-50, petrol around €1.30-1.40 a litre (cheaper than mainland Spain thanks to lower taxes).
 

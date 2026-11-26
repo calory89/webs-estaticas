@@ -37,17 +37,18 @@ Snorkelling and swimming come first, naturally. At Tamarin you can go out early 
 
 On land, hike Le Pouce or the Black River trails, or take a guided walk around Chamarel. Visit a tea estate such as Bois Chéri in the south, and tour a sugar museum like L'Aventure du Sucre for the island's history. In Mahébourg, the Monday market is the one most locals actually use. For something very local, find a Sega night. The dance is rooted in slave heritage and is more fun when you join in than when you watch.
 
-## How many days and a suggested route
+## Mauritius itinerary: 7 days, day by day
 
 A week is the sweet spot, and five days is workable. With ten, you'll have time to do nothing on a beach, which is half the point of the trip.
 
-- **Days 1 to 2, southeast:** land, settle in around Blue Bay or Mahébourg, snorkel, and visit the Monday market if it fits.
+**7-day itinerary for Mauritius**
 
-- **Day 3, south and southwest:** Gris Gris, La Vanille Nature Park, then Chamarel for the earths, waterfall and rum.
-
-- **Days 4 to 5, west:** Le Morne, Tamarin and Flic en Flac. Add Black River Gorges for a hike.
-
-- **Days 6 to 7, north:** Grand Baie, Pamplemousses, Cap Malheureux and Port Louis. If you have time, take a catamaran to the northern islets.
+| Day | Plan |
+|---|---|
+| Days 1-2 | Southeast. Land, settle in around Blue Bay or Mahébourg, snorkel, and visit the Monday market if it fits. |
+| Day 3 | South and southwest. Gris Gris, La Vanille Nature Park, then Chamarel for the earths, waterfall and rum. |
+| Days 4-5 | West. Le Morne, Tamarin and Flic en Flac. Add Black River Gorges for a hike. |
+| Days 6-7 | North. Grand Baie, Pamplemousses, Cap Malheureux and Port Louis. If you have time, take a catamaran to the northern islets. |
 
 ## When to go
 

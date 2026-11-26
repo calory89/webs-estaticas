@@ -39,17 +39,18 @@ Si tienes menos de 26 años y resides en la UE, muchos museos nacionales, entre 
 
 Los mercados de barrio, como el de Aligre cerca de la Bastilla, sirven para comprar queso, fruta y fiambre y montar un picnic. Y si te quedan fuerzas, una excursión de medio día a Versalles en el RER C permite ver los jardines sin gastar demasiado: el palacio es caro, los jardines mucho menos.
 
-## Cuántos días y ruta sugerida
+## Qué ver en París en 4 días: ruta día a día
 
 Con tres días ves lo esencial sin correr. Con cuatro respiras. Con cinco ya puedes meter Versalles o un par de museos más. Esta es mi propuesta para cuatro:
 
-- **Día 1:** Île de la Cité (Notre-Dame, Sainte-Chapelle), Barrio Latino y Jardin du Luxembourg. Cena por la zona de la rue Mouffetard.
+**Itinerario de 4 días en París**
 
-- **Día 2:** Louvre por la mañana, paseo por las Tullerías y los Campos Elíseos hasta el Arco del Triunfo. Atardecer en el Trocadéro.
-
-- **Día 3:** Montmartre por la mañana, Orsay por la tarde y Marais de noche.
-
-- **Día 4:** Père-Lachaise, Canal Saint-Martin y barrio de Belleville, o Versalles si prefieres.
+| Día | Plan |
+|---|---|
+| Día 1 | Île de la Cité (Notre-Dame, Sainte-Chapelle), Barrio Latino y Jardin du Luxembourg. Cena por la zona de la rue Mouffetard. |
+| Día 2 | Louvre por la mañana, paseo por las Tullerías y los Campos Elíseos hasta el Arco del Triunfo. Atardecer en el Trocadéro. |
+| Día 3 | Montmartre por la mañana, Orsay por la tarde y Marais de noche. |
+| Día 4 | Père-Lachaise, Canal Saint-Martin y barrio de Belleville, o Versalles si prefieres. |
 
 ## Cuándo ir: clima y temporadas
 
@@ -93,11 +94,13 @@ Dentro de la ciudad, el metro es rápido y cubre casi todo. Si vas a quedarte va
 
 ## Presupuesto orientativo por día
 
-- **Ajustado (70-90 euros):** albergue, comida de panadería y formule del mediodía, transporte y un museo o monumento.
+**Presupuesto orientativo por día**
 
-- **Medio (130-180 euros):** hotel sencillo o habitación privada, restaurante a diario y un par de entradas.
-
-- **Cómodo (más de 200 euros):** buen hotel céntrico, cenas con vino y excursiones.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | 70-90 euros | Albergue, comida de panadería y formule del mediodía, transporte y un museo o monumento. |
+| Medio | 130-180 euros | Hotel sencillo o habitación privada, restaurante a diario y un par de entradas. |
+| Cómodo | más de 200 euros | Buen hotel céntrico, cenas con vino y excursiones. |
 
 No incluyo el vuelo. Son cifras aproximadas y varían con la temporada.
 

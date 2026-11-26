@@ -39,15 +39,17 @@ Los domingos por la mañana, el mercado junto a la estación de Midi es enorme y
 
 Los primeros miércoles de mes por la tarde muchos museos públicos reducen o eliminan la entrada. Confírmalo antes, porque cambia.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Bruselas en 3 días: ruta día a día
 
 Con dos días ves lo esencial. Con tres, vas más relajado y puedes colar una excursión. Con cuatro o cinco, usa Bruselas de base y sal a otras ciudades.
 
-- **Día 1:** Grand-Place, Manneken Pis, Galerías Saint-Hubert, catedral y paseo por Sainte-Catherine. Cena en la zona de Dansaert.
+**Itinerario de 3 días en Bruselas**
 
-- **Día 2:** mañana en el Mont des Arts y el Museo Magritte, Sablon a mediodía, Marolles y mercadillo por la tarde. Cerveza al final.
-
-- **Día 3:** Cinquantenaire, Casa Horta o Atomium, según gustos. Por la tarde, Ixelles con sus estanques.
+| Día | Plan |
+|---|---|
+| Día 1 | Grand-Place, Manneken Pis, Galerías Saint-Hubert, catedral y paseo por Sainte-Catherine. Cena en la zona de Dansaert. |
+| Día 2 | Mañana en el Mont des Arts y el Museo Magritte, Sablon a mediodía, Marolles y mercadillo por la tarde. Cerveza al final. |
+| Día 3 | Cinquantenaire, Casa Horta o Atomium, según gustos. Por la tarde, Ixelles con sus estanques. |
 
 Si te sobra tiempo, Gante (unos 35 minutos en tren) es más tranquila que Brujas y tiene menos gente. Brujas está a una hora. Los billetes sencillos rondan los 15 € por trayecto y se compran en las máquinas de la estación.
 

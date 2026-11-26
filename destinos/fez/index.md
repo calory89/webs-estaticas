@@ -39,21 +39,17 @@ Si te interesa la cocina, hay talleres en riads donde se empieza por el mercado 
 
 Desde Fez se puede ir a las ruinas romanas de Volubilis, a la ciudad santa de Moulay Idriss y a Meknes en una jornada. Para Chefchaouen, mejor reservar otro día aparte, porque el trayecto es largo.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Fez en 3 días: ruta día a día
 
 Tres días es la medida justa. Con dos se ve lo básico y sales con prisa; con cuatro empiezas a necesitar excursiones.
 
-### Día 1: medina vieja
+**Itinerario de 3 días en Fez**
 
-Entra por Bab Boujloud, visita Bou Inania y Attarine, y pasea por los zocos de los metales y las especias. Come en la medina y, por la tarde, sube a las Tumbas Meriníes para el atardecer.
-
-### Día 2: curtidurías, museos y Fes el-Jdid
-
-Por la mañana, las curtidurías de Chouara y el Nejjarine. Después, Fes el-Jdid, el Mellah y las puertas del Palacio Real. Por la tarde, cerámica en Ain Nokbi.
-
-### Día 3: excursión o ritmo lento
-
-Volubilis y Moulay Idriss si quieres campo. Si prefieres quedarte, un guía, un hammam y alguna compra pensada con calma.
+| Día | Plan |
+|---|---|
+| Día 1 | Medina vieja. Entra por Bab Boujloud, visita Bou Inania y Attarine, y pasea por los zocos de los metales y las especias. Come en la medina y, por la tarde, sube a las Tumbas Meriníes para el atardecer. |
+| Día 2 | Curtidurías, museos y Fes el-Jdid. Por la mañana, las curtidurías de Chouara y el Nejjarine. Después, Fes el-Jdid, el Mellah y las puertas del Palacio Real. Por la tarde, cerámica en Ain Nokbi. |
+| Día 3 | Excursión o ritmo lento. Volubilis y Moulay Idriss si quieres campo. Si prefieres quedarte, un guía, un hammam y alguna compra pensada con calma. |
 
 ## Cuándo ir a Fez
 
@@ -97,11 +93,13 @@ Dentro de la ciudad, los **petit taxis** (rojos) van a cualquier barrio y son ba
 
 ## Presupuesto orientativo por día
 
-- **Ajustado (30-40 €):** hostal o habitación sencilla, comida en puestos, entradas puntuales y transporte local.
+**Presupuesto orientativo por día**
 
-- **Medio (60-90 €):** riad con encanto, comidas en restaurante local, guía medio día y entradas.
-
-- **Cómodo (120 € o más):** riad de categoría, cenas en sitios especiales y excursión con conductor.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | 30-40 € | Hostal o habitación sencilla, comida en puestos, entradas puntuales y transporte local. |
+| Medio | 60-90 € | Riad con encanto, comidas en restaurante local, guía medio día y entradas. |
+| Cómodo | 120 € o más | Riad de categoría, cenas en sitios especiales y excursión con conductor. |
 
 Una referencia útil: 10 dirhams equivalen aproximadamente a 1 €. Lleva efectivo, porque en la medina muchos sitios no aceptan tarjeta.
 

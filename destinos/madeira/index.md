@@ -39,19 +39,19 @@ Fuera del senderismo, puedes ver delfines y ballenas con salida desde Funchal, h
 
 Un detalle práctico: algunos senderos de zonas protegidas piden registro previo o una pequeña tasa. Comprueba el estado de los caminos antes de salir, porque tras temporales o incendios cierran tramos concretos.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Madeira en 5 días: ruta día a día
 
 Con cuatro días ves lo esencial, con cinco o seis lo disfrutas sin ir con la lengua fuera. Esta sería mi ruta de cinco días:
 
-- **Día 1:** Funchal a pie, Mercado dos Lavradores, Zona Velha y cena con espetada.
+**Itinerario de 5 días en Madeira**
 
-- **Día 2:** Monte, bajada en cesto y tarde de bodega o jardín botánico.
-
-- **Día 3:** Pico do Arieiro al amanecer, ruta hasta el Pico Ruivo si el tiempo acompaña y bajada por Santana.
-
-- **Día 4:** oeste de la isla: Cabo Girão, Porto Moniz y Fanal.
-
-- **Día 5:** Ponta de São Lourenço por la mañana y tarde libre en Funchal o en Câmara de Lobos.
+| Día | Plan |
+|---|---|
+| Día 1 | Funchal a pie, Mercado dos Lavradores, Zona Velha y cena con espetada. |
+| Día 2 | Monte, bajada en cesto y tarde de bodega o jardín botánico. |
+| Día 3 | Pico do Arieiro al amanecer, ruta hasta el Pico Ruivo si el tiempo acompaña y bajada por Santana. |
+| Día 4 | Oeste de la isla: Cabo Girão, Porto Moniz y Fanal. |
+| Día 5 | Ponta de São Lourenço por la mañana y tarde libre en Funchal o en Câmara de Lobos. |
 
 Si tienes un día extra, dedícalo a una levada larga, o a una excursión en barco para ver cetáceos.
 

@@ -29,17 +29,18 @@ Singapore is the easiest big Asian city to enjoy on a first trip. Everything run
 
 Do a hawker crawl. Pick three centres in one day and eat small portions at each. Take the Southern Ridges walk, which links parks via the Henderson Waves bridge and gives you canopy views without the crowds. At night, the Night Safari beside the zoo is a good one if you like animals, since it lets you see nocturnal species with little light disturbance. Spend an evening on the river between Boat Quay and Clarke Quay; it is touristy, but the lit-up bridges are pretty. For a free show, catch Spectra, the light and water display at Marina Bay, in the evening.
 
-## How many days and a suggested route
+## Singapore itinerary: 4 days, day by day
 
 Three full days covers the main sights without rushing, and four lets you slow down. If you have just a long layover, Changi's Jewel with its indoor waterfall is a decent consolation, but do leave the airport if you have six hours or more.
 
-- **Day 1:** Chinatown in the morning, lunch at Maxwell, Marina Bay at sunset, Gardens by the Bay after dark.
+**4-day itinerary for Singapore**
 
-- **Day 2:** Botanic Gardens early, then Little India for lunch, then Kampong Glam in the late afternoon.
-
-- **Day 3:** Sentosa or Pulau Ubin, depending on whether you want beaches or bikes. Finish with satay.
-
-- **Day 4 (optional):** Southern Ridges, shopping on Orchard Road if that is your thing, Night Safari.
+| Day | Plan |
+|---|---|
+| Day 1 | Chinatown in the morning, lunch at Maxwell, Marina Bay at sunset, Gardens by the Bay after dark. |
+| Day 2 | Botanic Gardens early, then Little India for lunch, then Kampong Glam in the late afternoon. |
+| Day 3 | Sentosa or Pulau Ubin, depending on whether you want beaches or bikes. Finish with satay. |
+| Day 4 | (optional). Southern Ridges, shopping on Orchard Road if that is your thing, Night Safari. |
 
 ## When to go
 

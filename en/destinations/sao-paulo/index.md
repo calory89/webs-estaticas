@@ -101,21 +101,14 @@ For a big expensive city, Sao Paulo is generous with free culture. The trick is 
 
 This Sao Paulo itinerary groups places by area so you use the metro, not taxis stuck in traffic. If you land on a Tuesday, swap day one to the start so MASP is free.
 
-### Day 1: Avenida Paulista and Jardins
+**4-day itinerary for Sao Paulo**
 
-**Morning:** MASP when it opens, then a coffee and a walk through Parque Trianon across the avenue. **Afternoon:** walk Paulista towards Consolação, stopping at Japan House and Instituto Moreira Salles, then wander down into Jardins and Rua Oscar Freire. **Evening:** pizza in Bixiga or dinner in Jardins.
-
-### Day 2: Historic centre and Luz
-
-**Morning:** metro to Sé, see the cathedral and Pátio do Colégio, then climb Farol Santander. **Lunch:** mortadella sandwich at the Mercadão. **Afternoon:** Pinacoteca and Museu da Língua Portuguesa at Luz (leave before dusk). **Evening:** sunset from Edifício Itália, a look at Copan, then a beer at Bar Brahma on the corner of Ipiranga and São João. Uber back.
-
-### Day 3: Ibirapuera, Vila Madalena and Pinheiros
-
-**Morning:** Ibirapuera Park and the Museu Afro Brasil. **Afternoon:** Uber to Vila Madalena, walk down Beco do Batman and browse the galleries. **Evening:** bar-hop between Vila Madalena and Pinheiros, where the city's best restaurants and cocktail bars are.
-
-### Day 4: Liberdade and football
-
-**Morning:** Liberdade (best on a weekend for the fair), with lunch at a ramen or sushi counter. **Afternoon:** Museu do Futebol at Pacaembu, or a match if one is on. **Evening:** concert at Sala São Paulo or a final churrascaria dinner. Prefer the sea? Swap this day for Santos.
+| Day | Plan |
+|---|---|
+| Day 1 | Avenida Paulista and Jardins. Morning: MASP when it opens, then a coffee and a walk through Parque Trianon across the avenue. Afternoon: walk Paulista towards Consolação, stopping at Japan House and Instituto Moreira Salles, then wander down into Jardins and Rua Oscar Freire. Evening: pizza in Bixiga or dinner in Jardins. |
+| Day 2 | Historic centre and Luz. Morning: metro to Sé, see the cathedral and Pátio do Colégio, then climb Farol Santander. Lunch: mortadella sandwich at the Mercadão. Afternoon: Pinacoteca and Museu da Língua Portuguesa at Luz (leave before dusk). Evening: sunset from Edifício Itália, a look at Copan, then a beer at Bar Brahma on the corner of Ipiranga and São João. Uber back. |
+| Day 3 | Ibirapuera, Vila Madalena and Pinheiros. Morning: Ibirapuera Park and the Museu Afro Brasil. Afternoon: Uber to Vila Madalena, walk down Beco do Batman and browse the galleries. Evening: bar-hop between Vila Madalena and Pinheiros, where the city's best restaurants and cocktail bars are. |
+| Day 4 | Liberdade and football. Morning: Liberdade (best on a weekend for the fair), with lunch at a ramen or sushi counter. Afternoon: Museu do Futebol at Pacaembu, or a match if one is on. Evening: concert at Sala São Paulo or a final churrascaria dinner. Prefer the sea? Swap this day for Santos. |
 
 ## What is overrated (and what to do instead)
 
@@ -185,11 +178,13 @@ The metro is clean, efficient and the best way around. A single ride costs about
 
 ## How much a trip to Sao Paulo costs
 
-- **Shoestring: €40-55 a day.** Hostel dorm (€15), set lunch and street snacks (€12), metro (€3), free museum days, a couple of beers.
+**Rough daily budget**
 
-- **Mid-range: €100-160 a day.** Double room in Pinheiros or Jardins (€70), a nice dinner (€25-30), museums (€10), Ubers (€10-15).
-
-- **Comfort: €250+ a day.** Upscale hotel, tasting menus at the city's top restaurants and cocktail bars.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €40-55 a day | Hostel dorm (€15), set lunch and street snacks (€12), metro (€3), free museum days, a couple of beers. |
+| Mid-range | €100-160 a day | Double room in Pinheiros or Jardins (€70), a nice dinner (€25-30), museums (€10), Ubers (€10-15). |
+| Comfort | €250+ a day | Upscale hotel, tasting menus at the city's top restaurants and cocktail bars. |
 
 ## Day trips from Sao Paulo
 

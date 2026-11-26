@@ -35,15 +35,17 @@ Swim off the rocks below the walls. The cliff-side **Buža bar** is reached thro
 
 Rent a sea kayak for a paddle around the walls and out to Lokrum. It is one of the best ways to see the city from below. Take a day boat to the Elaphiti Islands (Koločep, Lopud and Šipan), where Lopud has a proper sandy beach. If you like wine, go to the Pelješac peninsula for tastings of Plavac Mali, the local red, and stop at Ston for oysters and its long defensive wall.
 
-## How many days and a suggested route
+## Dubrovnik itinerary: 3 days, day by day
 
 Two days covers the essentials. Three is the sweet spot, because it lets you add an island or a day trip without rushing. Four or five works if you want Mljet, Cavtat or Pelješac as well.
 
-- **Day 1:** Walls at opening time, then Stradun, the fountain and the Franciscan Monastery. Lunch in a side street away from the main drag. Late afternoon at Banje beach, and a drink at Buža if the sea is calm.
+**3-day itinerary for Dubrovnik**
 
-- **Day 2:** Morning ferry to Lokrum or the Elaphiti Islands. Back by late afternoon, then the cable car to Srđ for sunset.
-
-- **Day 3:** Fort Lovrijenac, then a trip to Cavtat by boat or bus, or a day on Pelješac for wine and oysters.
+| Day | Plan |
+|---|---|
+| Day 1 | Walls at opening time, then Stradun, the fountain and the Franciscan Monastery. Lunch in a side street away from the main drag. Late afternoon at Banje beach, and a drink at Buža if the sea is calm. |
+| Day 2 | Morning ferry to Lokrum or the Elaphiti Islands. Back by late afternoon, then the cable car to Srđ for sunset. |
+| Day 3 | Fort Lovrijenac, then a trip to Cavtat by boat or bus, or a day on Pelješac for wine and oysters. |
 
 ## When to go
 

@@ -89,21 +89,14 @@ A good chunk of what is worth seeing costs nothing. Most temples inside the moat
 
 ## Chiang Mai itinerary: 4 days
 
-### Day 1: Old City
+**4-day itinerary for Chiang Mai**
 
-**Morning:** start at the Lanna Folklife Museum, then walk to Wat Chedi Luang and Wat Phan Tao. **Afternoon:** have khao soi for lunch, then Wat Phra Singh and the smaller temples to the north, with a massage to finish. **Evening:** eat khao kha moo from the stall at Chang Phueak Gate, or the Sunday Walking Street if it is Sunday.
-
-### Day 2: Doi Suthep and the west side
-
-**Morning:** hike the Monk's Trail to Wat Pha Lat early, then carry on up to Doi Suthep by red truck or on foot. **Afternoon:** Wat Umong, Baan Kang Wat and Wat Suan Dok. **Evening:** sunset at Ang Kaew, then dinner and a drink in Nimman.
-
-### Day 3: Cooking class and the river
-
-**Morning:** a half-day cooking class (most pick you up from your hotel). **Afternoon:** Warorot Market, the flower market, and a walk along the Ping River. **Evening:** Muay Thai at Thapae, or the Saturday Walking Street on Wualai Road.
-
-### Day 4: Day trip
-
-Choose one: Doi Inthanon, an elephant sanctuary, or the Sticky Waterfall plus Mae Kampong village. Most take the whole day. Back in the city, eat a slow last dinner at Huen Phen.
+| Day | Plan |
+|---|---|
+| Day 1 | Old City. Morning: start at the Lanna Folklife Museum, then walk to Wat Chedi Luang and Wat Phan Tao. Afternoon: have khao soi for lunch, then Wat Phra Singh and the smaller temples to the north, with a massage to finish. Evening: eat khao kha moo from the stall at Chang Phueak Gate, or the Sunday Walking Street if it is Sunday. |
+| Day 2 | Doi Suthep and the west side. Morning: hike the Monk's Trail to Wat Pha Lat early, then carry on up to Doi Suthep by red truck or on foot. Afternoon: Wat Umong, Baan Kang Wat and Wat Suan Dok. Evening: sunset at Ang Kaew, then dinner and a drink in Nimman. |
+| Day 3 | Cooking class and the river. Morning: a half-day cooking class (most pick you up from your hotel). Afternoon: Warorot Market, the flower market, and a walk along the Ping River. Evening: Muay Thai at Thapae, or the Saturday Walking Street on Wualai Road. |
+| Day 4 | Day trip. Choose one: Doi Inthanon, an elephant sanctuary, or the Sticky Waterfall plus Mae Kampong village. Most take the whole day. Back in the city, eat a slow last dinner at Huen Phen. |
 
 ## What is overrated (and what to do instead)
 
@@ -169,9 +162,12 @@ There is no useful tourist travel pass. Pay per ride.
 
 ## How much a trip to Chiang Mai costs
 
-- **Shoestring: about €25-35 a day.** This covers a hostel or basic guesthouse (€8-15), street food (€6-8), red trucks, and free or cheap temples.
+**Rough daily budget**
 
-- **Mid-range: about €60-100 a day.** This covers a boutique hotel (€35-70), sit-down meals, a daily massage, Grab rides, and a paid activity every couple of days.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | about €25-35 a day | This covers a hostel or basic guesthouse (€8-15), street food (€6-8), red trucks, and free or cheap temples. |
+| Mid-range | about €60-100 a day | This covers a boutique hotel (€35-70), sit-down meals, a daily massage, Grab rides, and a paid activity every couple of days. |
 
 - **Big extras:** a cooking class (€26-40), an elephant sanctuary (€65+), and a private Doi Inthanon driver (€60-80 per car).
 

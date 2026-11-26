@@ -97,19 +97,15 @@ Lo mejor de la ciudad no cuesta nada: playas, acantilados, leones marinos y parq
 
 - Conciertos de órgano en el Spreckels Organ Pavilion de Balboa Park, normalmente los domingos por la tarde (comprueba el calendario).
 
-## Itinerario: San Diego en 3 días
+## Qué ver en San Diego en 3 días: ruta día a día
 
-### Día 1: Balboa Park, Little Italy y Gaslamp
+**Itinerario de 3 días en San Diego**
 
-**Mañana:** zoo a la apertura o, si no te interesa, dos museos de Balboa Park (el San Diego Museum of Art y el Museum of Us son buenas elecciones). **Tarde:** paseo por el parque, Spanish Village y bajada a Little Italy (unos 30 minutos andando o bus). **Noche:** cena en Little Italy y una copa en el Gaslamp Quarter, que está a quince minutos.
-
-### Día 2: La Jolla y costa norte
-
-**Mañana:** kayak en La Jolla Shores o paseo por La Jolla Cove y Children's Pool. **Tarde:** Torrey Pines, bajando a la playa con marea baja. Sin coche, esta jornada es complicada: usa Uber o el bus 30 hasta La Jolla. **Noche:** puesta de sol y cena informal en Pacific Beach.
-
-### Día 3: Coronado, Point Loma y Ocean Beach
-
-**Mañana:** ferry a Coronado, bici hasta el Hotel del Coronado y la playa. **Tarde:** de vuelta, USS Midway o, con coche, Cabrillo National Monument. **Noche:** Sunset Cliffs al atardecer y hamburguesa o tacos en Ocean Beach.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Balboa Park, Little Italy y Gaslamp | Zoo a la apertura o, si no te interesa, dos museos de Balboa Park (el San Diego Museum of Art y el Museum of Us son buenas elecciones). | Paseo por el parque, Spanish Village y bajada a Little Italy (unos 30 minutos andando o bus). | Cena en Little Italy y una copa en el Gaslamp Quarter, que está a quince minutos. |
+| Día 2 · La Jolla y costa norte | Kayak en La Jolla Shores o paseo por La Jolla Cove y Children's Pool. | Torrey Pines, bajando a la playa con marea baja. Sin coche, esta jornada es complicada: usa Uber o el bus 30 hasta La Jolla. | Puesta de sol y cena informal en Pacific Beach. |
+| Día 3 · Coronado, Point Loma y Ocean Beach | Ferry a Coronado, bici hasta el Hotel del Coronado y la playa. | De vuelta, USS Midway o, con coche, Cabrillo National Monument. | Sunset Cliffs al atardecer y hamburguesa o tacos en Ocean Beach. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -163,9 +159,12 @@ Para moverte, el **trolley** (tranvía con líneas Blue, Green y Orange) y los b
 
 ## Cuánto cuesta un viaje a San Diego
 
-- **Presupuesto ajustado (unos 110-140 € al día):** cama en albergue de Ocean Beach o Old Town (50-70 €), taquerías y supermercado (30-35 €), transporte público con tope diario (unos 6 €), planes gratis y alguna entrada (20-30 €).
+**Presupuesto orientativo por día**
 
-- **Presupuesto medio (unos 250-350 € al día por persona en habitación doble):** hotel en Little Italy o el centro (90-150 € por persona), comidas en restaurante (60-80 €), Uber o coche de alquiler compartido (30-50 €), una entrada grande como el zoo o el Midway (40-70 €).
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Presupuesto ajustado | unos 110-140 € al día | Cama en albergue de Ocean Beach o Old Town (50-70 €), taquerías y supermercado (30-35 €), transporte público con tope diario (unos 6 €), planes gratis y alguna entrada (20-30 €). |
+| Presupuesto medio | unos 250-350 € al día por persona en habitación doble | Hotel en Little Italy o el centro (90-150 € por persona), comidas en restaurante (60-80 €), Uber o coche de alquiler compartido (30-50 €), una entrada grande como el zoo o el Midway (40-70 €). |
 
 ## Excursiones de un día desde San Diego
 

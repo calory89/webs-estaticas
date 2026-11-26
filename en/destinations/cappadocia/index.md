@@ -85,21 +85,14 @@ Wander Çavuşin's old village on the cliff, where the crumbling Church of St Jo
 
 ## Cappadocia itinerary: 4 days
 
-### Day 1: Göreme and the valleys
+**4-day itinerary for Cappadocia**
 
-**Morning:** balloon flight, or balloon watching from the hill if you're not flying. Then go to the Göreme Open Air Museum right as it opens. **Afternoon:** walk to Çavuşin through the valleys, then start Rose and Red valleys. **Evening:** sunset at the Red Valley viewpoint, then dinner in Göreme and an early night.
-
-### Day 2: North loop
-
-**Morning:** Paşabağ early, then Zelve. **Afternoon:** Avanos, with lunch by the river and a pottery workshop. **Evening:** back to Göreme or Ürgüp, with a wine tasting in Ürgüp if you're staying there.
-
-### Day 3: South, underground and Ihlara
-
-**Morning:** Derinkuyu or Kaymaklı first thing. **Afternoon:** Ihlara Valley walk to Belisırma, trout lunch by the river, then Selime Monastery. This is the day for a Green Tour or a rented car, because public transport won't get you around it efficiently. **Evening:** dinner and a testi kebab if you haven't had one yet.
-
-### Day 4: Uçhisar and spare balloon morning
-
-**Morning:** your backup balloon slot if day 1 was cancelled. Otherwise, Pigeon Valley downhill from Uçhisar. **Afternoon:** Ortahisar village and castle, or Love Valley. **Evening:** Uçhisar Castle for sunset, then dinner on a terrace in Uçhisar.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Göreme and the valleys | Balloon flight, or balloon watching from the hill if you're not flying. Then go to the Göreme Open Air Museum right as it opens. | Walk to Çavuşin through the valleys, then start Rose and Red valleys. | Sunset at the Red Valley viewpoint, then dinner in Göreme and an early night. |
+| Day 2 · North loop | Paşabağ early, then Zelve. | Avanos, with lunch by the river and a pottery workshop. | Back to Göreme or Ürgüp, with a wine tasting in Ürgüp if you're staying there. |
+| Day 3 · South, underground and Ihlara | Derinkuyu or Kaymaklı first thing. | Ihlara Valley walk to Belisırma, trout lunch by the river, then Selime Monastery. This is the day for a Green Tour or a rented car, because public transport won't get you around it efficiently. | Dinner and a testi kebab if you haven't had one yet. |
+| Day 4 · Uçhisar and spare balloon morning | Your backup balloon slot if day 1 was cancelled. Otherwise, Pigeon Valley downhill from Uçhisar. | Ortahisar village and castle, or Love Valley. | Uçhisar Castle for sunset, then dinner on a terrace in Uçhisar. |
 
 ## What is overrated (and what to do instead)
 

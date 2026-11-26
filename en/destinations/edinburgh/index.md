@@ -61,15 +61,17 @@ It has glasshouses, a good view back to the skyline and free entry to the ground
 
 - Browse the Sunday market in Stockbridge for coffee, pastries and street food.
 
-## How many days and a suggested route
+## Edinburgh itinerary: 3 days, day by day
 
 Two days gets you the greatest hits. Three is the sweet spot. Four lets you add a day trip without rushing.
 
-**Day 1:** Castle at opening, then walk the Royal Mile down to Holyrood. Have a late lunch near the Grassmarket and finish with a pub dinner and an early night.
+**3-day itinerary for Edinburgh**
 
-**Day 2:** Climb Arthur's Seat in the morning, then spend the afternoon at the National Museum and Greyfriars. Finish at Calton Hill for sunset.
-
-**Day 3:** Walk the Water of Leith from Dean Village to Stockbridge, then head to Leith for seafood and a stroll along the docks.
+| Day | Plan |
+|---|---|
+| Day 1 | Castle at opening, then walk the Royal Mile down to Holyrood. Have a late lunch near the Grassmarket and finish with a pub dinner and an early night. |
+| Day 2 | Climb Arthur's Seat in the morning, then spend the afternoon at the National Museum and Greyfriars. Finish at Calton Hill for sunset. |
+| Day 3 | Walk the Water of Leith from Dean Village to Stockbridge, then head to Leith for seafood and a stroll along the docks. |
 
 ## When to go
 

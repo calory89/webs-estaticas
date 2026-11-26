@@ -97,29 +97,16 @@ Jordan's paid sights add up fast, so these cheap options matter:
 
 ## Jordan and Petra itinerary: 6 days
 
-### Day 1: Amman
+**6-day itinerary for Jordan and Petra**
 
-**Morning:** Arrive and drop your bags in downtown or Jabal Amman. Start with breakfast at Hashem (falafel, hummus, ful). **Afternoon:** See the Roman Theatre, then walk or take a short taxi up to the Citadel for the late light. **Evening:** Walk Rainbow Street, eat kunafa at Habibah, then have dinner in Jabal al-Weibdeh.
-
-### Day 2: Jerash, then down to the Dead Sea
-
-**Morning:** Leave early for Jerash and spend three hours there. **Afternoon:** Drive or take a taxi past Amman down to the Dead Sea (about 1 hour 15 minutes) for a float before sunset. **Evening:** Stay at a Dead Sea hotel, or head back to Madaba for a cheaper night.
-
-### Day 3: Madaba, Mount Nebo, King's Highway to Petra
-
-**Morning:** See the mosaic map in Madaba, then go up Mount Nebo. **Afternoon:** Drive the King's Highway south via Kerak Castle and the Wadi Mujib viewpoint, arriving in Wadi Musa by sunset. **Evening:** Petra by Night if it falls on the right day. Otherwise, take a cooking class or go to bed early.
-
-### Day 4: Petra, the classic route
-
-**Morning:** Be at the gate at opening. Walk the Siq to the Treasury, then climb to the Al-Khubtha viewpoint. **Afternoon:** Visit the Royal Tombs and the Colonnaded Street, then climb to the Monastery for afternoon light. **Evening:** Eat something filling in Wadi Musa and rest your legs.
-
-### Day 5: Petra, the quieter side
-
-**Morning:** Hike the High Place of Sacrifice loop through Wadi Farasa. **Afternoon:** Drive to Little Petra, then on to Wadi Rum (about 1 hour 45 minutes). Most camps pick you up at the visitor centre. **Evening:** Sunset on the dunes, zarb dinner, stars.
-
-### Day 6: Wadi Rum and out
-
-**Morning:** Take a jeep tour at sunrise, before the heat: Lawrence's Spring, the Khazali Canyon inscriptions and the rock bridges. **Afternoon:** Transfer to Aqaba, about 1 hour away, which has an airport and the Red Sea. Alternatively, drive back to Amman in about 4 hours. **Evening:** Have a seafood dinner in Aqaba or catch your flight home.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Amman | Arrive and drop your bags in downtown or Jabal Amman. Start with breakfast at Hashem (falafel, hummus, ful). | See the Roman Theatre, then walk or take a short taxi up to the Citadel for the late light. | Walk Rainbow Street, eat kunafa at Habibah, then have dinner in Jabal al-Weibdeh. |
+| Day 2 · Jerash, then down to the Dead Sea | Leave early for Jerash and spend three hours there. | Drive or take a taxi past Amman down to the Dead Sea (about 1 hour 15 minutes) for a float before sunset. | Stay at a Dead Sea hotel, or head back to Madaba for a cheaper night. |
+| Day 3 · Madaba, Mount Nebo, King's Highway to Petra | See the mosaic map in Madaba, then go up Mount Nebo. | Drive the King's Highway south via Kerak Castle and the Wadi Mujib viewpoint, arriving in Wadi Musa by sunset. | Petra by Night if it falls on the right day. Otherwise, take a cooking class or go to bed early. |
+| Day 4 · Petra, the classic route | Be at the gate at opening. Walk the Siq to the Treasury, then climb to the Al-Khubtha viewpoint. | Visit the Royal Tombs and the Colonnaded Street, then climb to the Monastery for afternoon light. | Eat something filling in Wadi Musa and rest your legs. |
+| Day 5 · Petra, the quieter side | Hike the High Place of Sacrifice loop through Wadi Farasa. | Drive to Little Petra, then on to Wadi Rum (about 1 hour 45 minutes). Most camps pick you up at the visitor centre. | Sunset on the dunes, zarb dinner, stars. |
+| Day 6 · Wadi Rum and out | Take a jeep tour at sunrise, before the heat: Lawrence's Spring, the Khazali Canyon inscriptions and the rock bridges. | Transfer to Aqaba, about 1 hour away, which has an airport and the Red Sea. Alternatively, drive back to Amman in about 4 hours. | Have a seafood dinner in Aqaba or catch your flight home. |
 
 ## What is overrated (and what to do instead)
 

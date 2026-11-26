@@ -83,31 +83,15 @@ Para ver las vistas de la fortaleza sin pagar los 15 €, la opción es la Escal
 
 Los autobuses locales de la bahía son muy baratos: ir a Perast cuesta unos 2 €, frente a los 20-30 € que te piden en un taxi o una excursión.
 
-## Itinerario: Kotor en 3 días
+## Qué ver en Kotor en 3 días: ruta día a día
 
-### Día 1: casco antiguo y fortaleza
+**Itinerario de 3 días en Kotor**
 
-**Mañana:** empieza muy temprano con la subida a la fortaleza de San Juan, antes del calor y de los cruceros. Al bajar, entra en la catedral de San Trifón y en las iglesias de San Lucas y San Nicolás.
-
-**Tarde:** comida en la ciudad vieja, Museo Marítimo en las horas de más calor y paseo hasta la Puerta Sur y el mercado.
-
-**Noche:** cena en la Plaza de Armas o en alguna placita interior, con una copa de Vranac.
-
-### Día 2: Perast y la bahía
-
-**Mañana:** autobús a Perast (unos 20-25 minutos). Barca a Nuestra Señora de las Rocas y paseo por el pueblo; sube al campanario de San Nicolás para ver la bahía desde arriba.
-
-**Tarde:** baño en las plataformas de Perast o vuelta a Dobrota para bañarte allí, y luego kayak.
-
-**Noche:** cruza a Muo y cena marisco frente a la muralla iluminada.
-
-### Día 3: Lovćen y Njeguši (o Budva)
-
-**Mañana:** serpentinas hasta Njeguši para comer pršut y queso, y subida al Mausoleo de Njegoš en el Lovćen.
-
-**Tarde:** si vas en coche, sigue hasta Cetinje, la antigua capital, y vuelve por la costa. Si prefieres playa, cambia el plan entero por Budva.
-
-**Noche:** última vuelta por Kotor cuando ya no queda casi nadie.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Casco antiguo y fortaleza | Empieza muy temprano con la subida a la fortaleza de San Juan, antes del calor y de los cruceros. Al bajar, entra en la catedral de San Trifón y en las iglesias de San Lucas y San Nicolás. | Comida en la ciudad vieja, Museo Marítimo en las horas de más calor y paseo hasta la Puerta Sur y el mercado. | Cena en la Plaza de Armas o en alguna placita interior, con una copa de Vranac. |
+| Día 2 · Perast y la bahía | Autobús a Perast (unos 20-25 minutos). Barca a Nuestra Señora de las Rocas y paseo por el pueblo; sube al campanario de San Nicolás para ver la bahía desde arriba. | Baño en las plataformas de Perast o vuelta a Dobrota para bañarte allí, y luego kayak. | Cruza a Muo y cena marisco frente a la muralla iluminada. |
+| Día 3 · Lovćen y Njeguši (o Budva) | Serpentinas hasta Njeguši para comer pršut y queso, y subida al Mausoleo de Njegoš en el Lovćen. | Si vas en coche, sigue hasta Cetinje, la antigua capital, y vuelve por la costa. Si prefieres playa, cambia el plan entero por Budva. | Última vuelta por Kotor cuando ya no queda casi nadie. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 

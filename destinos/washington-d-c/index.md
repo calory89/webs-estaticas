@@ -97,19 +97,15 @@ Pocas ciudades del mundo te dejan llenar tres días sin pagar una entrada. Todo 
 
 - **Zoo Nacional**, con sus pandas, que volvieron en 2024.
 
-## Itinerario: Washington D. C. en 3 días
+## Qué ver en Washington D. C. en 3 días: ruta día a día
 
-### Día 1: Capitolio y museos del Mall
+**Itinerario de 3 días en Washington D. C.**
 
-**Mañana:** visita guiada al Capitolio a primera hora y túnel a la Biblioteca del Congreso. **Tarde:** come en el Museo Afroamericano (o lleva bocadillo al Mall) y dedícale la tarde entera. **Noche:** cena en Capitol Hill o en Union Market, y si tienes fuerzas, paseo hasta el Washington Monument iluminado.
-
-### Día 2: más museos y memoriales al atardecer
-
-**Mañana:** Air and Space o Historia Natural en cuanto abran, y después Archivos Nacionales. **Tarde:** National Gallery of Art y, hacia las 18:00, ruta a pie o en bici por los memoriales: Washington Monument, Segunda Guerra Mundial, Vietnam, Lincoln, Corea, MLK y Jefferson. **Noche:** cena etíope en Shaw o un half-smoke en Ben's Chili Bowl, en U Street.
-
-### Día 3: Arlington y Georgetown
-
-**Mañana:** metro a Arlington, tumba de Kennedy y cambio de guardia. **Tarde:** vuelve en bus o cruza andando hasta Georgetown por el puente Key Bridge desde Rosslyn: M Street, el canal, escaleras de El Exorcista y waterfront. **Noche:** cena en The Wharf o un concierto en Blues Alley. Si te sobra un rato antes, pasa por el Millennium Stage del Kennedy Center.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Capitolio y museos del Mall | Visita guiada al Capitolio a primera hora y túnel a la Biblioteca del Congreso. | Come en el Museo Afroamericano (o lleva bocadillo al Mall) y dedícale la tarde entera. | Cena en Capitol Hill o en Union Market, y si tienes fuerzas, paseo hasta el Washington Monument iluminado. |
+| Día 2 · Más museos y memoriales al atardecer | Air and Space o Historia Natural en cuanto abran, y después Archivos Nacionales. | National Gallery of Art y, hacia las 18:00, ruta a pie o en bici por los memoriales: Washington Monument, Segunda Guerra Mundial, Vietnam, Lincoln, Corea, MLK y Jefferson. | Cena etíope en Shaw o un half-smoke en Ben's Chili Bowl, en U Street. |
+| Día 3 · Arlington y Georgetown | Metro a Arlington, tumba de Kennedy y cambio de guardia. | Vuelve en bus o cruza andando hasta Georgetown por el puente Key Bridge desde Rosslyn: M Street, el canal, escaleras de El Exorcista y waterfront. | Cena en The Wharf o un concierto en Blues Alley. Si te sobra un rato antes, pasa por el Millennium Stage del Kennedy Center. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -175,12 +171,14 @@ Por la ciudad, el **metro** es limpio y eficiente. Paga con la tarjeta SmarTrip 
 
 Precios por persona y día sin contar vuelos, durmiendo en habitación doble compartida:
 
-- **Ajustado: 90-120 € al día.** Albergue u hotel en Arlington compartido, food halls y comida de supermercado, museos gratis y transporte a pie o en metro.
+**Presupuesto orientativo por día**
 
-- **Medio: 180-250 € al día.** Hotel de tres estrellas en Dupont o Capitol Hill, una cena en restaurante, alguna entrada de pago y Uber puntual.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | 90-120 € al día | Albergue u hotel en Arlington compartido, food halls y comida de supermercado, museos gratis y transporte a pie o en metro. |
+| Medio | 180-250 € al día | Hotel de tres estrellas en Dupont o Capitol Hill, una cena en restaurante, alguna entrada de pago y Uber puntual. |
 
 - **Extras habituales:** ESTA para entrar en EE. UU. (40 $), seguro médico de viaje (muy recomendable, la sanidad es carísima) y propinas.
-
 Los vuelos directos desde Madrid a Dulles suelen salir entre 450 y 800 € ida y vuelta según temporada; con escala, a veces menos.
 
 ## Excursiones de un día desde Washington D. C.

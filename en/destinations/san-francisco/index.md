@@ -59,15 +59,17 @@ Twin Peaks gives you the whole city laid out below, if it isn't swallowed by clo
 
 - Watch the sea lions at Pier 39. They are noisy, smelly and oddly addictive.
 
-## How many days and a suggested route
+## San Francisco itinerary: 3 days, day by day
 
 Three full days is the sweet spot. Four lets you slow down or add Muir Woods and Sausalito. Two is possible but rushed.
 
-**Day 1:** Morning at the Ferry Building, then Chinatown and North Beach on foot, Coit Tower, and a cable car down to the waterfront. Finish with sunset at Fisherman's Wharf or a walk along the Embarcadero.
+**3-day itinerary for San Francisco**
 
-**Day 2:** Alcatraz first thing (book the earliest slot), then the Presidio and Golden Gate Bridge. Afternoon at Crissy Field, with dinner in the Marina or Cow Hollow.
-
-**Day 3:** Golden Gate Park in the morning, Lands End in the afternoon, then the Mission for burritos and murals at dusk.
+| Day | Plan |
+|---|---|
+| Day 1 | Morning at the Ferry Building, then Chinatown and North Beach on foot, Coit Tower, and a cable car down to the waterfront. Finish with sunset at Fisherman's Wharf or a walk along the Embarcadero. |
+| Day 2 | Alcatraz first thing (book the earliest slot), then the Presidio and Golden Gate Bridge. Afternoon at Crissy Field, with dinner in the Marina or Cow Hollow. |
+| Day 3 | Golden Gate Park in the morning, Lands End in the afternoon, then the Mission for burritos and murals at dusk. |
 
 ## When to go
 

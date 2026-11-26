@@ -91,23 +91,16 @@ Buena parte de lo mejor de la ciudad no cuesta nada. Templo de Santo Domingo, Ca
 
 - Domingo en Tlacolula: el mercado es gratis y el autobús cuesta poco más de 1 €.
 
-## Itinerario: Oaxaca en 4 días
+## Qué ver en Oaxaca en 4 días: ruta día a día
 
-### Día 1: centro histórico y mercados
+**Itinerario de 4 días en Oaxaca**
 
-**Mañana:** desayuno en el Mercado 20 de Noviembre (chocolate con pan de yema), Zócalo y Catedral, y subida por el Andador Macedonio Alcalá hasta Santo Domingo. **Tarde:** Museo de las Culturas y el turno de tarde del Jardín Etnobotánico; después, Museo Textil e IAGO. **Noche:** cata de mezcal y tlayuda nocturna.
-
-### Día 2: Monte Albán y barrios
-
-**Mañana:** autobús temprano a Monte Albán y vuelta hacia mediodía. **Tarde:** comida en el pasillo de humo, siesta corta y paseo por Jalatlaco y Xochimilco. **Noche:** atardecer en el Cerro del Fortín y cena en el centro.
-
-### Día 3: valle de Tlacolula (mejor si es domingo)
-
-**Mañana:** Árbol del Tule de paso y mercado de Tlacolula, o Teotitlán del Valle si no es domingo. **Tarde:** Mitla y palenque en Santiago Matatlán; si quieres, Hierve el Agua. **Noche:** vuelta a la ciudad y cena ligera, que habrás probado mezcal.
-
-### Día 4: pueblos artesanos del sur
-
-**Mañana:** San Bartolo Coyotepec (barro negro) y San Martín Tilcajete (alebrijes). **Tarde:** vuelta a Oaxaca, nieves en la Soledad y compras en el Benito Juárez. **Noche:** cena de despedida en un restaurante bueno de cocina oaxaqueña.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Centro histórico y mercados | Desayuno en el Mercado 20 de Noviembre (chocolate con pan de yema), Zócalo y Catedral, y subida por el Andador Macedonio Alcalá hasta Santo Domingo. | Museo de las Culturas y el turno de tarde del Jardín Etnobotánico; después, Museo Textil e IAGO. | Cata de mezcal y tlayuda nocturna. |
+| Día 2 · Monte Albán y barrios | Autobús temprano a Monte Albán y vuelta hacia mediodía. | Comida en el pasillo de humo, siesta corta y paseo por Jalatlaco y Xochimilco. | Atardecer en el Cerro del Fortín y cena en el centro. |
+| Día 3 · Valle de Tlacolula (mejor si es domingo) | Árbol del Tule de paso y mercado de Tlacolula, o Teotitlán del Valle si no es domingo. | Mitla y palenque en Santiago Matatlán; si quieres, Hierve el Agua. | Vuelta a la ciudad y cena ligera, que habrás probado mezcal. |
+| Día 4 · Pueblos artesanos del sur | San Bartolo Coyotepec (barro negro) y San Martín Tilcajete (alebrijes). | Vuelta a Oaxaca, nieves en la Soledad y compras en el Benito Juárez. | Cena de despedida en un restaurante bueno de cocina oaxaqueña. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -173,9 +166,12 @@ En la ciudad no hay metro ni abonos turísticos. El centro se hace andando. Para
 
 Sin contar vuelos (desde Madrid suelen ir vía Ciudad de México, y el billete ida y vuelta ronda los 700-1.100 € según fechas), el gasto diario queda así:
 
-- **Ajustado: 40-55 € al día.** Hostal o habitación sencilla (15-25 €), comer en mercados (10-15 €), transporte en colectivo y entradas (5-10 €), algún mezcal.
+**Presupuesto orientativo por día**
 
-- **Medio: 90-140 € al día.** Hotel boutique en el centro (50-90 €), un restaurante bueno al día (25-35 €), excursiones con chófer o tour (15-25 € prorrateado), catas y museos.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | 40-55 € al día | Hostal o habitación sencilla (15-25 €), comer en mercados (10-15 €), transporte en colectivo y entradas (5-10 €), algún mezcal. |
+| Medio | 90-140 € al día | Hotel boutique en el centro (50-90 €), un restaurante bueno al día (25-35 €), excursiones con chófer o tour (15-25 € prorrateado), catas y museos. |
 
 Paga en pesos siempre que puedas: en mercados y colectivos no aceptan tarjeta. Saca efectivo en cajeros de bancos (dentro de sucursales mejor que en la calle) y rechaza la conversión a euros que te ofrezca el cajero.
 

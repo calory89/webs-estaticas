@@ -99,31 +99,15 @@ Marsella es generosa con el viajero tacaño. Gratis o por muy poco puedes:
 
 - Muchos museos municipales son gratis el primer domingo de mes.
 
-## Itinerario: Marsella en 3 días
+## Qué ver en Marsella en 3 días: ruta día a día
 
-### Día 1: el puerto, Le Panier y el MuCEM
+**Itinerario de 3 días en Marsella**
 
-**Mañana:** empieza temprano en el Vieux-Port con el mercado de pescado, cruza en el Ferry Boat y sube a Le Panier por la Montée des Accoules. Callejea hasta La Vieille Charité.
-
-**Tarde:** baja a La Major y sigue hacia el MuCEM. Visita una exposición si te interesa y, sobre todo, sube a las terrazas y cruza al Fuerte Saint-Jean.
-
-**Noche:** aperitivo en la Place de Lenche y cena por la zona de la Place Thiars, detrás del muelle sur, donde hay más opciones y precios algo más razonables que en primera línea.
-
-### Día 2: Notre-Dame, la Corniche y el atardecer
-
-**Mañana:** pasa por Saint-Victor y Le Four des Navettes y sube a Notre-Dame de la Garde a pie (o en el bus 60).
-
-**Tarde:** baja hacia la Corniche, coge el bus 83 hasta la Plage des Catalans para un baño y camina hasta Malmousque y el Vallon des Auffes.
-
-**Noche:** cena de pescado en el Vallon si tienes presupuesto o vuelve en bus al Cours Julien para cenar barato y tomar algo.
-
-### Día 3: las calanques o las islas
-
-**Mañana:** bus 21 hasta Luminy y caminata a Sugiton. Lleva agua, comida y calzado de verdad: no hay nada abajo.
-
-**Tarde:** baño y vuelta. Si el mistral sopla fuerte o hace mal tiempo, sustitúyelo por el Palais Longchamp y la Cité Radieuse.
-
-**Noche:** última cena con bullabesa si te la quieres dar, o pizza marsellesa y panisse en algún local de barrio.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · El puerto, Le Panier y el MuCEM | Empieza temprano en el Vieux-Port con el mercado de pescado, cruza en el Ferry Boat y sube a Le Panier por la Montée des Accoules. Callejea hasta La Vieille Charité. | Baja a La Major y sigue hacia el MuCEM. Visita una exposición si te interesa y, sobre todo, sube a las terrazas y cruza al Fuerte Saint-Jean. | Aperitivo en la Place de Lenche y cena por la zona de la Place Thiars, detrás del muelle sur, donde hay más opciones y precios algo más razonables que en primera línea. |
+| Día 2 · Notre-Dame, la Corniche y el atardecer | Pasa por Saint-Victor y Le Four des Navettes y sube a Notre-Dame de la Garde a pie (o en el bus 60). | Baja hacia la Corniche, coge el bus 83 hasta la Plage des Catalans para un baño y camina hasta Malmousque y el Vallon des Auffes. | Cena de pescado en el Vallon si tienes presupuesto o vuelve en bus al Cours Julien para cenar barato y tomar algo. |
+| Día 3 · Las calanques o las islas | Bus 21 hasta Luminy y caminata a Sugiton. Lleva agua, comida y calzado de verdad: no hay nada abajo. | Baño y vuelta. Si el mistral sopla fuerte o hace mal tiempo, sustitúyelo por el Palais Longchamp y la Cité Radieuse. | Última cena con bullabesa si te la quieres dar, o pizza marsellesa y panisse en algún local de barrio. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 

@@ -105,21 +105,12 @@ The Pass Strasbourg (around €25) bundles discounts, including a museum, the pl
 
 ## Strasbourg itinerary: 2 days
 
-### Day 1: Cathedral, Petite France and a winstub
+**2-day itinerary for Strasbourg**
 
-**Morning:** Be at the cathedral when it opens. Climb the platform first, then walk the nave. Afterwards, see the Œuvre Notre-Dame museum next door.
-
-**Afternoon:** Have lunch around Place Gutenberg, then tour the Palais Rohan state apartments. Walk along the quays to the Musée Alsacien, or take the Batorama boat from its landing beside Palais Rohan.
-
-**Evening:** Head to Petite France as the crowds leave. Watch sunset from the Barrage Vauban, then have dinner at a winstub. Walk back past the lit-up cathedral.
-
-### Day 2: Neustadt, Europe and Krutenau
-
-**Morning:** Walk Petite France again early, when it is empty, then cross to MAMCS. On Saturday, swap this for the Boulevard de la Marne market.
-
-**Afternoon:** Walk from Place de la République through the Neustadt toward the Orangerie, then on to the European Parliament. Take tram E back.
-
-**Evening:** Have tarte flambée and beer in Krutenau, then drinks around Place de Zurich. With a third day, take the train to Colmar.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Cathedral, Petite France and a winstub | Be at the cathedral when it opens. Climb the platform first, then walk the nave. Afterwards, see the Œuvre Notre-Dame museum next door. | Have lunch around Place Gutenberg, then tour the Palais Rohan state apartments. Walk along the quays to the Musée Alsacien, or take the Batorama boat from its landing beside Palais Rohan. | Head to Petite France as the crowds leave. Watch sunset from the Barrage Vauban, then have dinner at a winstub. Walk back past the lit-up cathedral. |
+| Day 2 · Neustadt, Europe and Krutenau | Walk Petite France again early, when it is empty, then cross to MAMCS. On Saturday, swap this for the Boulevard de la Marne market. | Walk from Place de la République through the Neustadt toward the Orangerie, then on to the European Parliament. Take tram E back. | Have tarte flambée and beer in Krutenau, then drinks around Place de Zurich. With a third day, take the train to Colmar. |
 
 ## What is overrated (and what to do instead)
 

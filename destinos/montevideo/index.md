@@ -85,19 +85,15 @@ Lo mejor de la ciudad no cuesta nada. Pasear la Rambla, ver el atardecer en Poci
 
 Por muy poco puedes subir al Faro de Punta Carretas o visitar el Palacio Legislativo. Si vas en verano, las playas urbanas (Pocitos, Buceo, Malvín) son gratis y se llenan los fines de semana. Un truco que funciona: muchas instituciones públicas tienen jornadas de puertas abiertas a principios de octubre, en el Día del Patrimonio, con edificios que el resto del año no se pueden visitar.
 
-## Itinerario: Montevideo en 3 días
+## Qué ver en Montevideo en 3 días: ruta día a día
 
-### Día 1: Ciudad Vieja y Centro
+**Itinerario de 3 días en Montevideo**
 
-**Mañana:** empieza en la Plaza Independencia, baja al mausoleo de Artigas y visita el Palacio Salvo. Entra por la Puerta de la Ciudadela y recorre la peatonal Sarandí hasta la Plaza Matriz, con parada en el Museo Torres García. **Tarde:** come en el Mercado del Puerto o en sus alrededores, y luego visita el Museo del Carnaval y el Museo Andes 1972. **Noche:** función o visita en el Teatro Solís, y después cena por el Centro. Vuelve a la zona del hotel en taxi o Uber.
-
-### Día 2: Rambla, Punta Carretas y Pocitos
-
-**Mañana:** bus o taxi al Palacio Legislativo para la visita guiada. **Tarde:** baja al Parque Rodó y al Museo de Artes Visuales, y de ahí camina por la Rambla hasta el Faro de Punta Carretas. **Noche:** sigue hasta Pocitos para ver el atardecer y cena en una parrilla del barrio, que es más local que la Ciudad Vieja.
-
-### Día 3: barrios y vida local
-
-**Mañana:** si cae en domingo, feria de Tristán Narvaja. Si no, el Prado y el Rosedal. **Tarde:** Estadio Centenario o comida en el Mercado Agrícola, y después tarde libre en Pocitos o en la playa. **Noche:** si es domingo, busca el candombe en Barrio Sur. Termina en un bar de Palermo o en el Bar Fun Fun.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Ciudad Vieja y Centro | Empieza en la Plaza Independencia, baja al mausoleo de Artigas y visita el Palacio Salvo. Entra por la Puerta de la Ciudadela y recorre la peatonal Sarandí hasta la Plaza Matriz, con parada en el Museo Torres García. | Come en el Mercado del Puerto o en sus alrededores, y luego visita el Museo del Carnaval y el Museo Andes 1972. | Función o visita en el Teatro Solís, y después cena por el Centro. Vuelve a la zona del hotel en taxi o Uber. |
+| Día 2 · Rambla, Punta Carretas y Pocitos | Bus o taxi al Palacio Legislativo para la visita guiada. | Baja al Parque Rodó y al Museo de Artes Visuales, y de ahí camina por la Rambla hasta el Faro de Punta Carretas. | Sigue hasta Pocitos para ver el atardecer y cena en una parrilla del barrio, que es más local que la Ciudad Vieja. |
+| Día 3 · Barrios y vida local | Si cae en domingo, feria de Tristán Narvaja. Si no, el Prado y el Rosedal. | Estadio Centenario o comida en el Mercado Agrícola, y después tarde libre en Pocitos o en la playa. | Si es domingo, busca el candombe en Barrio Sur. Termina en un bar de Palermo o en el Bar Fun Fun. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -151,9 +147,12 @@ Por la ciudad, los buses urbanos llegan a todas partes. Un viaje cuesta en torno
 
 Uruguay usa el peso uruguayo (UYU); 1 € equivale a unos 45-48 pesos. Paga con tarjeta extranjera en restaurantes: los turistas tienen devolución de IVA en restaurantes y alojamiento, y se aplica automáticamente.
 
-- **Presupuesto ajustado (unos 60-80 € al día):** hostal o habitación en Cordón (25-35 €), menú ejecutivo y un chivito (25 €), bus y museos gratis (5-10 €).
+**Presupuesto orientativo por día**
 
-- **Presupuesto medio (unos 140-200 € al día):** hotel en Pocitos (80-110 €), parrilla por la noche y café por la tarde (50-70 €), Uber, visitas y algún museo (15-25 €).
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Presupuesto ajustado | unos 60-80 € al día | Hostal o habitación en Cordón (25-35 €), menú ejecutivo y un chivito (25 €), bus y museos gratis (5-10 €). |
+| Presupuesto medio | unos 140-200 € al día | Hotel en Pocitos (80-110 €), parrilla por la noche y café por la tarde (50-70 €), Uber, visitas y algún museo (15-25 €). |
 
 ## Excursiones de un día desde Montevideo
 

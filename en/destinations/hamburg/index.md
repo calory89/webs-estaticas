@@ -65,15 +65,17 @@ A former fishing village on the western Elbe, with white houses and tiny stairwa
 
 - **Visit the Kunsthalle** if it rains. It has a solid collection from the Middle Ages to the present, and it's next to the main station.
 
-## How many days and a suggested route
+## Hamburg itinerary: 3 days, day by day
 
 Two days covers the headline sights. Three is the sweet spot, and four lets you add Blankenese and a slower pace.
 
-- **Day 1:** Rathaus, Jungfernstieg, Kontorhaus District and Chilehaus, then Speicherstadt and Elbphilharmonie at sunset.
+**3-day itinerary for Hamburg**
 
-- **Day 2:** Michel, Landungsbrücken, the Old Elbe Tunnel, ferry 62, then dinner and drinks in St. Pauli.
-
-- **Day 3:** Schanzenviertel in the morning, Miniatur Wunderland or Planten un Blomen after lunch, a last stroll by the Alster. On Sunday, swap in the Fischmarkt at dawn.
+| Day | Plan |
+|---|---|
+| Day 1 | Rathaus, Jungfernstieg, Kontorhaus District and Chilehaus, then Speicherstadt and Elbphilharmonie at sunset. |
+| Day 2 | Michel, Landungsbrücken, the Old Elbe Tunnel, ferry 62, then dinner and drinks in St. Pauli. |
+| Day 3 | Schanzenviertel in the morning, Miniatur Wunderland or Planten un Blomen after lunch, a last stroll by the Alster. On Sunday, swap in the Fischmarkt at dawn. |
 
 ## When to go
 

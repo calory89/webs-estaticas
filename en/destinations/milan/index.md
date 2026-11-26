@@ -65,15 +65,17 @@ It sounds odd, but this open-air gallery of Art Nouveau and realist sculpture is
 
 - Take a day trip to Lake Como: trains run from Milano Centrale to Varenna and Como San Giovanni in about an hour.
 
-## How many days and a route
+## Milan itinerary: 3 days, day by day
 
 Two days covers the essentials, three lets you breathe, and four lets you add a lake or Bergamo. Here is a sensible three-day plan.
 
-- **Day 1:** Duomo and roof in the morning, Galleria, lunch near Brera, the Pinacoteca, then an evening drink around San Lorenzo.
+**3-day itinerary for Milan**
 
-- **Day 2:** Last Supper at your booked slot, Sant'Ambrogio, Castello Sforzesco, Parco Sempione, and dinner and canals in Navigli.
-
-- **Day 3:** Porta Nuova and Bosco Verticale, Fondazione Prada or the Cimitero Monumentale, and then either shopping or a half-day on Lake Como.
+| Day | Plan |
+|---|---|
+| Day 1 | Duomo and roof in the morning, Galleria, lunch near Brera, the Pinacoteca, then an evening drink around San Lorenzo. |
+| Day 2 | Last Supper at your booked slot, Sant'Ambrogio, Castello Sforzesco, Parco Sempione, and dinner and canals in Navigli. |
+| Day 3 | Porta Nuova and Bosco Verticale, Fondazione Prada or the Cimitero Monumentale, and then either shopping or a half-day on Lake Como. |
 
 ## When to go
 

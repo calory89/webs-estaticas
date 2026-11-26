@@ -97,17 +97,13 @@ Madrid is one of the cheapest big capitals in Western Europe to see for nothing,
 
 ## Madrid itinerary: 3 days
 
-### Day 1: Art and the Retiro
+**3-day itinerary for Madrid**
 
-**Morning:** Be at the Prado at opening and spend 3 hours there. Head for Velázquez and Goya first, before the tour groups arrive. **Afternoon:** Have lunch with a menú del día in the Huertas/Barrio de las Letras area, then walk into the Retiro for the Palacio de Cristal and the lake. **Evening:** Go up to the Círculo de Bellas Artes rooftop at sunset, walk Gran Vía, then have dinner at 9:30pm in Chueca.
-
-### Day 2: Old Madrid and the palace
-
-**Morning:** Walk from Sol to Plaza Mayor (a squid sandwich counts as breakfast), then on to the Royal Palace with a pre-booked ticket, and Almudena Cathedral next door. **Afternoon:** Have lunch around Mercado de San Miguel's side streets rather than inside it. Then visit the Reina Sofía for Guernica, or rest if it's August. **Evening:** Watch sunset at Templo de Debod, then take the metro or walk to La Latina for a tapas crawl on Cava Baja.
-
-### Day 3: Neighbourhoods and markets
-
-**Morning:** If it's Sunday, go to El Rastro early. Otherwise, visit the Thyssen, then wander through Lavapiés. **Afternoon:** Have vermouth and a long lunch, then walk down to Matadero and Madrid Río. **Evening:** Go out in Malasaña, then get churros at San Ginés on the way home.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Art and the Retiro | Be at the Prado at opening and spend 3 hours there. Head for Velázquez and Goya first, before the tour groups arrive. | Have lunch with a menú del día in the Huertas/Barrio de las Letras area, then walk into the Retiro for the Palacio de Cristal and the lake. | Go up to the Círculo de Bellas Artes rooftop at sunset, walk Gran Vía, then have dinner at 9:30pm in Chueca. |
+| Day 2 · Old Madrid and the palace | Walk from Sol to Plaza Mayor (a squid sandwich counts as breakfast), then on to the Royal Palace with a pre-booked ticket, and Almudena Cathedral next door. | Have lunch around Mercado de San Miguel's side streets rather than inside it. Then visit the Reina Sofía for Guernica, or rest if it's August. | Watch sunset at Templo de Debod, then take the metro or walk to La Latina for a tapas crawl on Cava Baja. |
+| Day 3 · Neighbourhoods and markets | If it's Sunday, go to El Rastro early. Otherwise, visit the Thyssen, then wander through Lavapiés. | Have vermouth and a long lunch, then walk down to Matadero and Madrid Río. | Go out in Malasaña, then get churros at San Ginés on the way home. |
 
 ## What is overrated (and what to do instead)
 
@@ -173,9 +169,12 @@ In town, the metro is fast, clean and frequent. Get a rechargeable Tarjeta Multi
 
 ## How much a trip to Madrid costs
 
-- **Shoestring: €60-80 a day.** Hostel bed €30-40, menú del día lunch, a tapas-and-beer dinner, free museum slots, walking and a 10-trip metro card.
+**Rough daily budget**
 
-- **Mid-range: €150-220 a day per person (sharing a double).** 3-star hotel €110-160 per room, one paid museum or the palace, a proper dinner with wine, a rooftop drink and the occasional taxi.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €60-80 a day | Hostel bed €30-40, menú del día lunch, a tapas-and-beer dinner, free museum slots, walking and a 10-trip metro card. |
+| Mid-range | €150-220 a day per person (sharing a double) | 3-star hotel €110-160 per room, one paid museum or the palace, a proper dinner with wine, a rooftop drink and the occasional taxi. |
 
 - **Extras to budget for:** a flamenco show €35-50, a Bernabéu tour €25-35, a day trip train €15-40 return.
 

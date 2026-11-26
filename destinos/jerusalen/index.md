@@ -91,33 +91,15 @@ Lo más importante de la ciudad no cuesta nada: la Ciudad Vieja, el Muro, el San
 
 - Muchos museos tienen tarifas reducidas para estudiantes: lleva el carné.
 
-## Itinerario: Jerusalén en 3 días
+## Qué ver en Jerusalén en 3 días: ruta día a día
 
-### Día 1: Ciudad Vieja a fondo
+**Itinerario de 3 días en Jerusalén**
 
-**Mañana:** entra por la Puerta de Jaffa muy temprano y ve directo al Santo Sepulcro antes de las colas. Desde ahí pasa al barrio judío y al Cardo romano hasta llegar al Muro de las Lamentaciones. Si te toca la franja de la mañana, sube a la Explanada.
-
-**Tarde:** recorre la Vía Dolorosa al revés, hacia la Puerta de los Leones, y vuelve por el zoco del barrio musulmán hasta la Puerta de Damasco. Por la tarde, los Túneles del Muro con la reserva hecha.
-
-**Noche:** el espectáculo de luces en la Torre de David y cena por Nahalat Shiva.
-
-### Día 2: Monte de los Olivos, Ciudad de David y Monte Sión
-
-**Mañana:** taxi al Monte de los Olivos y bajada a pie hasta Getsemaní. Cruza el valle del Cedrón hacia la Ciudad de David y el túnel de Ezequías.
-
-**Tarde:** sube al Monte Sión (Cenáculo y Dormición) y haz el tramo sur de las murallas, o la Torre de David si no la viste.
-
-**Noche:** Mahane Yehuda, de bar en bar, y cena en el mercado.
-
-### Día 3: Jerusalén moderna
-
-**Mañana:** tranvía a Mount Herzl para ver Yad Vashem sin prisas.
-
-**Tarde:** el Museo de Israel, con la Knesset al lado, y después bus o taxi a la Colonia Alemana.
-
-**Noche:** atardecer en el paseo de Haas y cena en Emek Refaim.
-
-Si uno de los días cae en Shabbat, cambia el orden: el sábado pásalo en la Ciudad Vieja, donde los barrios cristiano y musulmán siguen abiertos.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Ciudad Vieja a fondo | Entra por la Puerta de Jaffa muy temprano y ve directo al Santo Sepulcro antes de las colas. Desde ahí pasa al barrio judío y al Cardo romano hasta llegar al Muro de las Lamentaciones. Si te toca la franja de la mañana, sube a la Explanada. | Recorre la Vía Dolorosa al revés, hacia la Puerta de los Leones, y vuelve por el zoco del barrio musulmán hasta la Puerta de Damasco. Por la tarde, los Túneles del Muro con la reserva hecha. | El espectáculo de luces en la Torre de David y cena por Nahalat Shiva. |
+| Día 2 · Monte de los Olivos, Ciudad de David y Monte Sión | Taxi al Monte de los Olivos y bajada a pie hasta Getsemaní. Cruza el valle del Cedrón hacia la Ciudad de David y el túnel de Ezequías. | Sube al Monte Sión (Cenáculo y Dormición) y haz el tramo sur de las murallas, o la Torre de David si no la viste. | Mahane Yehuda, de bar en bar, y cena en el mercado. |
+| Día 3 · Jerusalén moderna | Tranvía a Mount Herzl para ver Yad Vashem sin prisas. | El Museo de Israel, con la Knesset al lado, y después bus o taxi a la Colonia Alemana. | Atardecer en el paseo de Haas y cena en Emek Refaim. Si uno de los días cae en Shabbat, cambia el orden: el sábado pásalo en la Ciudad Vieja, donde los barrios cristiano y musulmán siguen abiertos. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -183,11 +165,13 @@ Se vuela al aeropuerto Ben Gurion, a unos 50 km. La mejor opción es el **tren**
 
 Israel es caro, al nivel de los países nórdicos en comida y alojamiento. Sin contar los vuelos (desde Madrid o Barcelona, entre 150 y 400 € ida y vuelta según la época), calcula por persona y día:
 
-- **Ajustado: 70-90 €.** Dormitorio en hostal, comida callejera, transporte público y sitios gratis.
+**Presupuesto orientativo por día**
 
-- **Medio: 150-200 €.** Hotel sencillo compartido, una comida de restaurante al día, dos o tres entradas y algún taxi.
-
-- **Cómodo: a partir de 300 €.** Hotel en Mamilla, buenos restaurantes y visitas guiadas privadas.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | 70-90 € | Dormitorio en hostal, comida callejera, transporte público y sitios gratis. |
+| Medio | 150-200 € | Hotel sencillo compartido, una comida de restaurante al día, dos o tres entradas y algún taxi. |
+| Cómodo | a partir de 300 € | Hotel en Mamilla, buenos restaurantes y visitas guiadas privadas. |
 
 ## Excursiones de un día desde Jerusalén
 

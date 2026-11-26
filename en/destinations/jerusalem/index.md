@@ -95,29 +95,13 @@ A surprising amount of the best of Jerusalem costs nothing. The Old City streets
 
 ## Jerusalem itinerary: 3 days
 
-### Day 1: the Old City
+**3-day itinerary for Jerusalem**
 
-**Morning:** enter at Jaffa Gate and walk straight to the Church of the Holy Sepulchre before the crowds arrive. Continue through the Muslim Quarter to the Austrian Hospice rooftop, then have hummus at Abu Shukri.
-
-**Afternoon:** head through the Jewish Quarter and the Cardo to the Western Wall, then do your pre-booked Western Wall Tunnels tour. Finish on the southern Ramparts walk if your legs allow.
-
-**Evening:** walk up Mamilla to the new city and have dinner around Jaffa Road or Mahane Yehuda.
-
-### Day 2: Temple Mount, City of David, Mount of Olives
-
-**Morning:** queue early at the Mughrabi Bridge for Temple Mount. Afterwards, walk out through Dung Gate to the City of David and get wet in Hezekiah's Tunnel.
-
-**Afternoon:** take a taxi to the top of the Mount of Olives (the afternoon light is softer here than you would think), then walk down to Gethsemane and back in via Lions' Gate.
-
-**Evening:** catch the Tower of David night show, or get knafeh near Damascus Gate.
-
-### Day 3: museums and modern Jerusalem
-
-**Morning:** take the light rail to Mount Herzl for Yad Vashem.
-
-**Afternoon:** take a short taxi to the Israel Museum, then walk or taxi to the German Colony and Emek Refaim for coffee, ending at the First Station.
-
-**Evening:** go to Mahane Yehuda, ideally on a Thursday.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · The Old City | Enter at Jaffa Gate and walk straight to the Church of the Holy Sepulchre before the crowds arrive. Continue through the Muslim Quarter to the Austrian Hospice rooftop, then have hummus at Abu Shukri. | Head through the Jewish Quarter and the Cardo to the Western Wall, then do your pre-booked Western Wall Tunnels tour. Finish on the southern Ramparts walk if your legs allow. | Walk up Mamilla to the new city and have dinner around Jaffa Road or Mahane Yehuda. |
+| Day 2 · Temple Mount, City of David, Mount of Olives | Queue early at the Mughrabi Bridge for Temple Mount. Afterwards, walk out through Dung Gate to the City of David and get wet in Hezekiah's Tunnel. | Take a taxi to the top of the Mount of Olives (the afternoon light is softer here than you would think), then walk down to Gethsemane and back in via Lions' Gate. | Catch the Tower of David night show, or get knafeh near Damascus Gate. |
+| Day 3 · Museums and modern Jerusalem | Take the light rail to Mount Herzl for Yad Vashem. | Take a short taxi to the Israel Museum, then walk or taxi to the German Colony and Emek Refaim for coffee, ending at the First Station. | Go to Mahane Yehuda, ideally on a Thursday. |
 
 ## What is overrated (and what to do instead)
 

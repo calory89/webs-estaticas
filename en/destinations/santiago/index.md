@@ -93,17 +93,13 @@ Most of Santiago's best experiences cost nothing. The free list is long:
 
 ## Santiago itinerary: 3 days
 
-### Day 1: Historic centre and Lastarria
+**3-day itinerary for Santiago**
 
-**Morning:** Start at La Moneda, walk up to the Plaza de Armas and the cathedral, then spend a couple of hours in the Museo Precolombino. **Afternoon:** Cross to the Mercado Central for a look, then lunch at La Vega Central or a terremoto at La Piojera. Walk back along the Mapocho to Bellas Artes and Parque Forestal. **Evening:** Climb Cerro Santa Lucía for sunset, then dinner and pisco sours in Lastarria.
-
-### Day 2: Bellavista, San Cristóbal and Providencia
-
-**Morning:** Visit La Chascona early, then take the funicular up Cerro San Cristóbal. **Afternoon:** Ride the teleférico down towards Providencia, wander Barrio Italia, and go up Sky Costanera if the sky is clear. **Evening:** Dinner in Bellavista or Barrio Italia, with drinks around Patio Bellavista or the more local bars on Constitución.
-
-### Day 3: Day trip
-
-**Morning:** Take an early bus to Valparaíso and spend the day on the hills, riding the ascensores and visiting La Sebastiana. **Evening:** Return to Santiago and eat late, like Chileans do. Wine lovers can swap Valparaíso for a Maipo or Casablanca vineyard. If you have a fourth day, use it for the Museo de la Memoria and the Cementerio General.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Historic centre and Lastarria | Start at La Moneda, walk up to the Plaza de Armas and the cathedral, then spend a couple of hours in the Museo Precolombino. | Cross to the Mercado Central for a look, then lunch at La Vega Central or a terremoto at La Piojera. Walk back along the Mapocho to Bellas Artes and Parque Forestal. | Climb Cerro Santa Lucía for sunset, then dinner and pisco sours in Lastarria. |
+| Day 2 · Bellavista, San Cristóbal and Providencia | Visit La Chascona early, then take the funicular up Cerro San Cristóbal. | Ride the teleférico down towards Providencia, wander Barrio Italia, and go up Sky Costanera if the sky is clear. | Dinner in Bellavista or Barrio Italia, with drinks around Patio Bellavista or the more local bars on Constitución. |
+| Day 3 · Day trip | Take an early bus to Valparaíso and spend the day on the hills, riding the ascensores and visiting La Sebastiana. | | Return to Santiago and eat late, like Chileans do. Wine lovers can swap Valparaíso for a Maipo or Casablanca vineyard. If you have a fourth day, use it for the Museo de la Memoria and the Cementerio General. |
 
 ## What is overrated (and what to do instead)
 
@@ -173,9 +169,12 @@ In the city, the **metro** is clean, fast and the best way to move. Buy a **Bip!
 
 ## How much a trip to Santiago costs
 
-- **Shoestring: €45-60 a day**. That covers a hostel dorm (€15-25), menú del día lunches, completos and street food, metro, and free museums and hills.
+**Rough daily budget**
 
-- **Mid-range: €100-160 a day**. That covers a comfortable hotel in Providencia or Lastarria (€60-100), a sit-down dinner with wine, paid sights like La Chascona, and taxis at night.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €45-60 a day | That covers a hostel dorm (€15-25), menú del día lunches, completos and street food, metro, and free museums and hills. |
+| Mid-range | €100-160 a day | That covers a comfortable hotel in Providencia or Lastarria (€60-100), a sit-down dinner with wine, paid sights like La Chascona, and taxis at night. |
 
 - **Extras**: a Valparaíso day trip costs €20-35 including the bus and lunch. Vineyard tours run €25-80 depending on transport.
 

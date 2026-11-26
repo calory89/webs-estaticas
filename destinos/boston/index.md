@@ -95,19 +95,15 @@ Para ser una ciudad cara, hay muchísimo gratis. Andar el Freedom Trail, Beacon 
 
 - **Silver Line desde el aeropuerto:** gratis, y es la forma más barata de entrar en la ciudad.
 
-## Itinerario: Boston en 3 días
+## Qué ver en Boston en 3 días: ruta día a día
 
-### Día 1: Freedom Trail y North End
+**Itinerario de 3 días en Boston**
 
-**Mañana:** empieza en Boston Common y sigue la línea roja del suelo: State House, Granary Burying Ground (donde están enterrados Paul Revere y Samuel Adams), Old State House y Faneuil Hall. **Tarde:** come en el North End, visita la Paul Revere House y la Old North Church, cruza a Charlestown y termina en el USS Constitution y Bunker Hill. **Noche:** vuelve al North End a cenar pasta o pizza y remata con un cannoli.
-
-### Día 2: Beacon Hill, Back Bay y Fenway
-
-**Mañana:** Acorn Street temprano, Charles Street para un café y Public Garden. **Tarde:** Commonwealth Avenue y Newbury Street hasta Copley, visita a la Public Library y, después, el Isabella Stewart Gardner o el MFA (elige uno si vas justo). **Noche:** partido en Fenway si hay temporada; si no, cena por Lansdowne Street o en el South End.
-
-### Día 3: Cambridge y Seaport
-
-**Mañana:** línea roja hasta Harvard, paseo por Harvard Yard y café en Harvard Square. **Tarde:** baja a Kendall/MIT, ve el Stata Center y cruza el Longfellow Bridge andando hacia Beacon Hill. **Noche:** línea plateada o un paseo hasta Seaport para ver el atardecer en el Harborwalk y cenar marisco.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Freedom Trail y North End | Empieza en Boston Common y sigue la línea roja del suelo: State House, Granary Burying Ground (donde están enterrados Paul Revere y Samuel Adams), Old State House y Faneuil Hall. | Come en el North End, visita la Paul Revere House y la Old North Church, cruza a Charlestown y termina en el USS Constitution y Bunker Hill. | Vuelve al North End a cenar pasta o pizza y remata con un cannoli. |
+| Día 2 · Beacon Hill, Back Bay y Fenway | Acorn Street temprano, Charles Street para un café y Public Garden. | Commonwealth Avenue y Newbury Street hasta Copley, visita a la Public Library y, después, el Isabella Stewart Gardner o el MFA (elige uno si vas justo). | Partido en Fenway si hay temporada; si no, cena por Lansdowne Street o en el South End. |
+| Día 3 · Cambridge y Seaport | Línea roja hasta Harvard, paseo por Harvard Yard y café en Harvard Square. | Baja a Kendall/MIT, ve el Stata Center y cruza el Longfellow Bridge andando hacia Beacon Hill. | Línea plateada o un paseo hasta Seaport para ver el atardecer en el Harborwalk y cenar marisco. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 

@@ -95,17 +95,13 @@ A lot of the best of Montreal costs nothing. The city is built for walking and i
 
 ## Montreal itinerary: 3 days
 
-### Day 1: Old Montreal and the Old Port
+**3-day itinerary for Montreal**
 
-**Morning:** start at Place d'Armes (metro), visit Notre-Dame Basilica early, then walk Rue Saint-Paul and Place Jacques-Cartier. **Afternoon:** Pointe-à-Callière, then the Old Port waterfront and a walk to look at Habitat 67. **Evening:** dinner in Old Montreal or Griffintown. Old Montreal is pricier, so Griffintown and Little Burgundy (Rue Notre-Dame Ouest) are better value.
-
-### Day 2: Mile End, the Plateau and Mount Royal
-
-**Morning:** bagels in Mile End, coffee on Rue Bernard, then walk south down Boulevard Saint-Laurent for the murals. **Afternoon:** lunch at Schwartz's (expect a queue), wander Rue Saint-Denis and the staircase streets around Parc La Fontaine. **Evening:** climb Mount Royal from the Cartier monument for sunset at the Kondiaronk Belvedere, then return to the Plateau for poutine or a BYOB dinner on Avenue Duluth.
-
-### Day 3: Markets, art and the east or west end
-
-**Morning:** Jean-Talon Market and a coffee in Little Italy. **Afternoon:** pick one. Either the Botanical Garden and Olympic Park (green line to Pie-IX), or the Museum of Fine Arts downtown followed by Saint Joseph's Oratory. **Evening:** drinks on Rue Notre-Dame Ouest, or a hockey game if the Canadiens are home. With a fourth day, take the train to Quebec City.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Old Montreal and the Old Port | Start at Place d'Armes (metro), visit Notre-Dame Basilica early, then walk Rue Saint-Paul and Place Jacques-Cartier. | Pointe-à-Callière, then the Old Port waterfront and a walk to look at Habitat 67. | Dinner in Old Montreal or Griffintown. Old Montreal is pricier, so Griffintown and Little Burgundy (Rue Notre-Dame Ouest) are better value. |
+| Day 2 · Mile End, the Plateau and Mount Royal | Bagels in Mile End, coffee on Rue Bernard, then walk south down Boulevard Saint-Laurent for the murals. | Lunch at Schwartz's (expect a queue), wander Rue Saint-Denis and the staircase streets around Parc La Fontaine. | Climb Mount Royal from the Cartier monument for sunset at the Kondiaronk Belvedere, then return to the Plateau for poutine or a BYOB dinner on Avenue Duluth. |
+| Day 3 · Markets, art and the east or west end | Jean-Talon Market and a coffee in Little Italy. | Pick one. Either the Botanical Garden and Olympic Park (green line to Pie-IX), or the Museum of Fine Arts downtown followed by Saint Joseph's Oratory. | Drinks on Rue Notre-Dame Ouest, or a hockey game if the Canadiens are home. With a fourth day, take the train to Quebec City. |
 
 ## What is overrated (and what to do instead)
 

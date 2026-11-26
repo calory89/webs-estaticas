@@ -37,19 +37,19 @@ Hike one of the Troodos nature trails, such as the Caledonia waterfall path, whi
 
 If you like snorkelling, the rocky coves around Cape Greco and Paphos are better than the big sandy beaches. In winter there is even skiing on Mount Olympus in the Troodos, although only a few runs and not for serious skiers.
 
-## How many days and a suggested route
+## Cyprus itinerary: 7 days, day by day
 
 Four days gives you a taste. Seven is the right amount if you want to see the island without rushing. Ten lets you slow down and add the Akamas or a few mountain nights.
 
-- **Days 1-2: Larnaca and the east.** Land, see the town, then spend a day at Cape Greco.
+**7-day itinerary for Cyprus**
 
-- **Day 3: Nicosia.** Old town, the walls and the Ledra Street crossing, with a lunch of meze.
-
-- **Days 4-5: Troodos.** Painted churches, Omodos and a walk. Sleep in a village if you can.
-
-- **Day 6: Limassol and Kourion.** Old town in the morning, ruins in the afternoon.
-
-- **Day 7: Paphos.** Mosaics, tombs, a harbour dinner.
+| Day | Plan |
+|---|---|
+| Days 1-2 | Larnaca and the east. Land, see the town, then spend a day at Cape Greco. |
+| Day 3 | Nicosia. Old town, the walls and the Ledra Street crossing, with a lunch of meze. |
+| Days 4-5 | Troodos. Painted churches, Omodos and a walk. Sleep in a village if you can. |
+| Day 6 | Limassol and Kourion. Old town in the morning, ruins in the afternoon. |
+| Day 7 | Paphos. Mosaics, tombs, a harbour dinner. |
 
 ## When to go
 

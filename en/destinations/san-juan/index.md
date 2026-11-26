@@ -95,21 +95,14 @@ A surprising amount of San Juan costs nothing. The **free trolleys** loop around
 
 ## San Juan itinerary: 4 days
 
-### Day 1: Old San Juan
+**4-day itinerary for San Juan**
 
-**Morning:** El Morro at opening, then the lawn and the cemetery viewpoint over La Perla. **Afternoon:** lunch on Calle Fortaleza or Calle San Sebastián, then the cathedral and Calle del Cristo, ending at Castillo San Cristóbal. **Evening:** Paseo de la Princesa at golden hour, dinner in the old town and a drink on San Sebastián.
-
-### Day 2: Santurce, Condado and the lagoon
-
-**Morning:** mural walk around Calle Cerra, then the Museo de Arte de Puerto Rico. **Afternoon:** paddleboard on Condado Lagoon, then the beach at Ocean Park. **Evening:** dinner around Santurce, then La Placita for salsa and cheap drinks.
-
-### Day 3: El Yunque and Luquillo
-
-**Morning:** leave early for El Yunque, about 45-60 minutes by car, and hike a short trail to a waterfall before the rain clouds roll in. **Afternoon:** swim at Luquillo Beach and eat at the Luquillo kiosks (a long row of numbered food stands). **Evening:** stay east for a Laguna Grande bio bay kayak in Fajardo, then drive back.
-
-### Day 4: Piñones and a slow finish
-
-**Morning:** cycle the Piñones boardwalk and stop at the fritter kiosks. **Afternoon:** take the ferry to Cataño for Bacardí, or go back to whichever fort you rushed. **Evening:** sunset on the walls and a final mofongo.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Old San Juan | El Morro at opening, then the lawn and the cemetery viewpoint over La Perla. | Lunch on Calle Fortaleza or Calle San Sebastián, then the cathedral and Calle del Cristo, ending at Castillo San Cristóbal. | Paseo de la Princesa at golden hour, dinner in the old town and a drink on San Sebastián. |
+| Day 2 · Santurce, Condado and the lagoon | Mural walk around Calle Cerra, then the Museo de Arte de Puerto Rico. | Paddleboard on Condado Lagoon, then the beach at Ocean Park. | Dinner around Santurce, then La Placita for salsa and cheap drinks. |
+| Day 3 · El Yunque and Luquillo | Leave early for El Yunque, about 45-60 minutes by car, and hike a short trail to a waterfall before the rain clouds roll in. | Swim at Luquillo Beach and eat at the Luquillo kiosks (a long row of numbered food stands). | Stay east for a Laguna Grande bio bay kayak in Fajardo, then drive back. |
+| Day 4 · Piñones and a slow finish | Cycle the Piñones boardwalk and stop at the fritter kiosks. | Take the ferry to Cataño for Bacardí, or go back to whichever fort you rushed. | Sunset on the walls and a final mofongo. |
 
 ## What is overrated (and what to do instead)
 

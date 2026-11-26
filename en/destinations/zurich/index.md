@@ -39,15 +39,17 @@ Take a lake boat. The ZVV network includes a few short boat routes, and a basic 
 
 Day trips are easy. The Rhine Falls near Schaffhausen are roughly an hour away, Lucerne is about 45 minutes by train, and Winterthur has some excellent museums and a quieter feel.
 
-## How many days and a suggested route
+## Zurich itinerary: 3 days, day by day
 
 Two days covers the centre. Three is better, because it lets you add Uetliberg or a day trip without rushing. A fourth day only makes sense if you plan a mountain excursion.
 
-**Day 1:** Lindenhof, the old town, Grossmünster, Fraumünster and St. Peter. Walk Bahnhofstrasse in the afternoon and finish by the lake for sunset.
+**3-day itinerary for Zurich**
 
-**Day 2:** Kunsthaus in the morning, then Zurich West for lunch and a wander. Spend the evening in Niederdorf or Seefeld.
-
-**Day 3:** Uetliberg early, a swim or lake walk in the afternoon, or swap it for Lucerne or the Rhine Falls.
+| Day | Plan |
+|---|---|
+| Day 1 | Lindenhof, the old town, Grossmünster, Fraumünster and St. Peter. Walk Bahnhofstrasse in the afternoon and finish by the lake for sunset. |
+| Day 2 | Kunsthaus in the morning, then Zurich West for lunch and a wander. Spend the evening in Niederdorf or Seefeld. |
+| Day 3 | Uetliberg early, a swim or lake walk in the afternoon, or swap it for Lucerne or the Rhine Falls. |
 
 ## When to go
 

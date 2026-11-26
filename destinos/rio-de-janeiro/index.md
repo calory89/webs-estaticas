@@ -37,17 +37,18 @@ Los domingos, la Feira Hippie de Ipanema en la Praça General Osório tiene arte
 
 Para adrenalina, el parapente o ala delta desde la Pedra Bonita aterriza en la playa de São Conrado, y es una actividad que se contrata con empresas locales. Y si te gusta el fútbol, el Maracanã se visita por dentro y, con suerte, puedes coincidir con un Flamengo-Fluminense.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Río de Janeiro en 4 días: ruta día a día
 
 Cuatro días es el mínimo razonable; cinco te permiten bajar el ritmo. Una ruta posible:
 
-- **Día 1:** Copacabana, paseo hasta Arpoador, Ipanema y atardecer en la piedra.
+**Itinerario de 4 días en Río de Janeiro**
 
-- **Día 2:** Cristo Redentor a primera hora, comida en Cosme Velho o Laranjeiras, tarde en el Jardim Botânico y Parque Lage.
-
-- **Día 3:** Centro histórico por la mañana, Porto Maravilha, tarde en Santa Teresa y noche en Lapa o Pedra do Sal.
-
-- **Día 4:** Pan de Azúcar con tiempo para el atardecer, desayuno antes en la Urca, y cena en Botafogo.
+| Día | Plan |
+|---|---|
+| Día 1 | Copacabana, paseo hasta Arpoador, Ipanema y atardecer en la piedra. |
+| Día 2 | Cristo Redentor a primera hora, comida en Cosme Velho o Laranjeiras, tarde en el Jardim Botânico y Parque Lage. |
+| Día 3 | Centro histórico por la mañana, Porto Maravilha, tarde en Santa Teresa y noche en Lapa o Pedra do Sal. |
+| Día 4 | Pan de Azúcar con tiempo para el atardecer, desayuno antes en la Urca, y cena en Botafogo. |
 
 El quinto día, si lo tienes, para Tijuca, un paseo por Leblon o una excursión a Paraty o Ilha Grande.
 

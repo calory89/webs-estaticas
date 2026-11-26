@@ -83,23 +83,16 @@ Gran parte de lo que importa en la ciudad no cuesta nada. Kaleiçi, la Puerta de
 
 Las playas públicas de Konyaaltı y Lara no se pagan si llevas tu toalla. El parque de la cascada baja de Düden es gratis o casi, y el paseo de Karaalioğlu al atardecer es el mejor plan de la ciudad sin gastar un euro. Para comer barato, un simit (rosca de sésamo) cuesta menos de 1 € y un dürüm en un sitio de barrio, entre 3 y 5 €.
 
-## Itinerario: Antalya en 4 días
+## Qué ver en Antalya en 4 días: ruta día a día
 
-### Día 1: Kaleiçi y el atardecer
+**Itinerario de 4 días en Antalya**
 
-**Mañana:** entra por la Puerta de Adriano, baja por Kaleiçi, para en el museo Suna e İnan Kıraç y sigue hasta la torre Hıdırlık. **Tarde:** baja al puerto viejo, coge el barco de una hora a la cascada de Düden y date un baño en Mermerli. **Noche:** atardecer en Karaalioğlu y cena fuera de las calles principales de Kaleiçi.
-
-### Día 2: museo, Konyaaltı y teleférico
-
-**Mañana:** tranvía nostálgico hasta el Museo de Antalya. **Tarde:** playa en Konyaaltı, que queda justo debajo del museo, y paseo hacia el oeste. **Noche:** teleférico de Tünektepe y vuelta en taxi o autobús.
-
-### Día 3: Perge, Aspendos y Side
-
-**Mañana:** Perge, pronto, antes del calor. **Tarde:** Aspendos y, si tienes coche, Side para el atardecer junto al templo de Apolo. **Noche:** vuelta a Antalya y cena tranquila.
-
-### Día 4: Termessos o Düden y hammam
-
-**Mañana:** Termessos si te gustan las ruinas en la montaña, o la cascada alta de Düden si prefieres algo suave. **Tarde:** hammam y compras en el bazar junto a Kalekapısı. **Noche:** última cena con vistas al puerto, esta vez sí, por darte el capricho.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Kaleiçi y el atardecer | Entra por la Puerta de Adriano, baja por Kaleiçi, para en el museo Suna e İnan Kıraç y sigue hasta la torre Hıdırlık. | Baja al puerto viejo, coge el barco de una hora a la cascada de Düden y date un baño en Mermerli. | Atardecer en Karaalioğlu y cena fuera de las calles principales de Kaleiçi. |
+| Día 2 · Museo, Konyaaltı y teleférico | Tranvía nostálgico hasta el Museo de Antalya. | Playa en Konyaaltı, que queda justo debajo del museo, y paseo hacia el oeste. | Teleférico de Tünektepe y vuelta en taxi o autobús. |
+| Día 3 · Perge, Aspendos y Side | Perge, pronto, antes del calor. | Aspendos y, si tienes coche, Side para el atardecer junto al templo de Apolo. | Vuelta a Antalya y cena tranquila. |
+| Día 4 · Termessos o Düden y hammam | Termessos si te gustan las ruinas en la montaña, o la cascada alta de Düden si prefieres algo suave. | Hammam y compras en el bazar junto a Kalekapısı. | Última cena con vistas al puerto, esta vez sí, por darte el capricho. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -159,12 +152,14 @@ Dentro de la ciudad se paga con la tarjeta **AntalyaKart**, recargable en máqui
 
 ## Cuánto cuesta un viaje a Antalya
 
-- **Presupuesto ajustado: 50-70 € al día.** Pensión sencilla compartiendo, lokantas y comida callejera, transporte público y sitios gratis o baratos.
+**Presupuesto orientativo por día**
 
-- **Presupuesto medio: 100-150 € al día.** Hotel boutique en Kaleiçi, cenas con meze, un museo o yacimiento al día y algún taxi.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Presupuesto ajustado | 50-70 € al día | Pensión sencilla compartiendo, lokantas y comida callejera, transporte público y sitios gratis o baratos. |
+| Presupuesto medio | 100-150 € al día | Hotel boutique en Kaleiçi, cenas con meze, un museo o yacimiento al día y algún taxi. |
 
 - **Entradas grandes aparte:** Aspendos y Perge cuestan unos 15-25 € cada una para extranjeros. Si vas a ver varios sitios, mira el **Museum Pass Mediterranean**.
-
 - **Vuelos desde España:** hay directos desde varias ciudades en temporada; fuera de ella suele tocar escala en Estambul.
 
 ## Excursiones de un día desde Antalya

@@ -39,19 +39,19 @@ Browse a Don Quijote store at midnight, sing at a karaoke booth, play at a game 
 
 If you have a spare day, Kamakura (big Buddha, coastal temples) and Nikko (ornate shrines in the forest) are the easiest escapes by train. Hakone works for hot springs and Fuji views, though clouds often win.
 
-## How many days and a suggested route
+## Tokyo itinerary: 5 days, day by day
 
 Four days is the minimum to feel you have seen something; five or six is the sweet spot. A week lets you add a day trip without rushing.
 
-- **Day 1, east side:** Asakusa early, Ueno Park and the museums, Yanaka in the late afternoon, dinner in Ueno.
+**5-day itinerary for Tokyo**
 
-- **Day 2, Shibuya and Harajuku:** Meiji Jingu in the morning, Takeshita Street if you must, lunch near Omotesando, Shibuya Sky at sunset.
-
-- **Day 3, Shinjuku:** Late start. Walk the west side, then Omoide Yokocho and Golden Gai after dark.
-
-- **Day 4, Tsukiji and Ginza, then the palace:** Market breakfast, Imperial Palace East Gardens, then Akihabara in the evening.
-
-- **Day 5, flexible:** teamLab, Nakameguro, or a day trip to Kamakura.
+| Day | Plan |
+|---|---|
+| Day 1 | East side. Asakusa early, Ueno Park and the museums, Yanaka in the late afternoon, dinner in Ueno. |
+| Day 2 | Shibuya and Harajuku. Meiji Jingu in the morning, Takeshita Street if you must, lunch near Omotesando, Shibuya Sky at sunset. |
+| Day 3 | Shinjuku. Late start. Walk the west side, then Omoide Yokocho and Golden Gai after dark. |
+| Day 4 | Tsukiji and Ginza, then the palace. Market breakfast, Imperial Palace East Gardens, then Akihabara in the evening. |
+| Day 5 | Flexible. TeamLab, Nakameguro, or a day trip to Kamakura. |
 
 ## When to go
 

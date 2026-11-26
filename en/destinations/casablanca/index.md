@@ -93,21 +93,12 @@ The cheap extras are a tram ride (under €1), a msemen pancake and mint tea fro
 
 ## Casablanca itinerary: 2 days
 
-### Day 1: Mosque, medina and the sea
+**2-day itinerary for Casablanca**
 
-**Morning:** Start at the Hassan II Mosque for an early guided tour. Then walk east along the coast road to the old medina and La Sqala. Have lunch in the Sqala garden.
-
-**Afternoon:** Walk through the medina to Place des Nations Unies, then do the Art Deco stroll down Boulevard Mohammed V. Finish at the Marché Central with a plate of oysters.
-
-**Evening:** Take a petit taxi to the Corniche for sunset, with a view of the Sidi Abderrahmane marabout. Have dinner in Ain Diab, or at Rick's Café if you booked.
-
-### Day 2: Habous, parks and modern Casa
-
-**Morning:** Go to the Quartier Habous for pastries at Bennis, shopping and the Mahkama du Pacha.
-
-**Afternoon:** Take a taxi to the Museum of Moroccan Judaism. Then head to Place Mohammed V, the Arab League Park and the Sacré-Cœur. Stop at Villa des Arts if an exhibition appeals.
-
-**Evening:** Spend a café hour in Maârif, followed by a hammam, then a tagine dinner nearby.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Mosque, medina and the sea | Start at the Hassan II Mosque for an early guided tour. Then walk east along the coast road to the old medina and La Sqala. Have lunch in the Sqala garden. | Walk through the medina to Place des Nations Unies, then do the Art Deco stroll down Boulevard Mohammed V. Finish at the Marché Central with a plate of oysters. | Take a petit taxi to the Corniche for sunset, with a view of the Sidi Abderrahmane marabout. Have dinner in Ain Diab, or at Rick's Café if you booked. |
+| Day 2 · Habous, parks and modern Casa | Go to the Quartier Habous for pastries at Bennis, shopping and the Mahkama du Pacha. | Take a taxi to the Museum of Moroccan Judaism. Then head to Place Mohammed V, the Arab League Park and the Sacré-Cœur. Stop at Villa des Arts if an exhibition appeals. | Spend a café hour in Maârif, followed by a hammam, then a tagine dinner nearby. |
 
 ## What is overrated (and what to do instead)
 
@@ -175,9 +166,12 @@ Red **petit taxis** are cheap, at €1.50-4 for most rides. Insist on the meter 
 
 ## How much a trip to Casablanca costs
 
-- **Shoestring: €35-55 a day.** This covers a hostel or basic hotel (€15-30), street food and local lunches (€8-12), tram and shared taxis (€3), and the mosque tour on one day.
+**Rough daily budget**
 
-- **Mid-range: €90-150 a day.** This covers a comfortable hotel in Gauthier or the centre (€55-100), two sit-down meals (€25-40), taxis (€8), and a hammam or museum.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €35-55 a day | This covers a hostel or basic hotel (€15-30), street food and local lunches (€8-12), tram and shared taxis (€3), and the mosque tour on one day. |
+| Mid-range | €90-150 a day | This covers a comfortable hotel in Gauthier or the centre (€55-100), two sit-down meals (€25-40), taxis (€8), and a hammam or museum. |
 
 - **Extras:** Budget about €13 for the mosque tour, €5 for the train to Rabat (more on the Al Boraq high-speed line) and €8-12 for a drink at a bar.
 

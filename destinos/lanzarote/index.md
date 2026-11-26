@@ -99,29 +99,19 @@ La parte más espectacular de la isla es gratis. El Golfo, Los Hervideros, las S
 
 Si vas a entrar en varios centros de Manrique, pregunta en taquilla por los **bonos combinados** de los Centros Turísticos del Cabildo: con tres o cuatro centros ya ahorras un buen pico.
 
-## Itinerario: Lanzarote en 5 días
+## Qué ver en Lanzarote en 5 días: ruta día a día
 
 Está pensado con coche de alquiler y con base en el centro o el sur de la isla. Ninguna distancia pasa de una hora.
 
-### Día 1: Manrique y la capital
+**Itinerario de 5 días en Lanzarote**
 
-**Mañana:** Fundación César Manrique en Tahíche y después Teguise, con subida al castillo de Santa Bárbara. **Tarde:** playa de Famara y paseo por Caleta de Famara, con sus calles de arena. **Noche:** cena y tapas en el Charco de San Ginés, en Arrecife.
-
-### Día 2: el norte
-
-**Mañana:** Jameos del Agua a primera hora y Cueva de los Verdes justo después. **Tarde:** baño en el Caletón Blanco, Mirador del Río y bajada por Haría, con parada en la casa-museo de Manrique. **Noche:** pescado en Arrieta o en Punta Mujeres, más tranquilos y baratos que la costa sur.
-
-### Día 3: Timanfaya y la costa de lava
-
-**Mañana:** Timanfaya, llegando cuando abren. **Tarde:** Volcán del Cuervo si te quedan piernas, Los Hervideros, El Golfo y el Charco de los Clicos. **Noche:** atardecer en las Salinas de Janubio y cena en El Golfo o en Yaiza.
-
-### Día 4: el sur y las playas
-
-**Mañana:** Playas de Papagayo, antes de las 11. **Tarde:** subida al mirador de Femés y vuelta por La Geria parando en una bodega. **Noche:** paseo por el puerto deportivo Marina Rubicón, en Playa Blanca.
-
-### Día 5: La Graciosa
-
-**Mañana:** ferry desde Órzola a Caleta de Sebo. Alquila bici o pide un 4x4 hasta la playa de Las Conchas. **Tarde:** baño en la playa Francesa, más resguardada, y vuelta en el ferry de la tarde. **Noche:** última cena en Arrecife o en tu base. Si cae en domingo, cambia este día por el mercado de Teguise y reserva La Graciosa para otro.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Manrique y la capital | Fundación César Manrique en Tahíche y después Teguise, con subida al castillo de Santa Bárbara. | Playa de Famara y paseo por Caleta de Famara, con sus calles de arena. | Cena y tapas en el Charco de San Ginés, en Arrecife. |
+| Día 2 · El norte | Jameos del Agua a primera hora y Cueva de los Verdes justo después. | Baño en el Caletón Blanco, Mirador del Río y bajada por Haría, con parada en la casa-museo de Manrique. | Pescado en Arrieta o en Punta Mujeres, más tranquilos y baratos que la costa sur. |
+| Día 3 · Timanfaya y la costa de lava | Timanfaya, llegando cuando abren. | Volcán del Cuervo si te quedan piernas, Los Hervideros, El Golfo y el Charco de los Clicos. | Atardecer en las Salinas de Janubio y cena en El Golfo o en Yaiza. |
+| Día 4 · El sur y las playas | Playas de Papagayo, antes de las 11. | Subida al mirador de Femés y vuelta por La Geria parando en una bodega. | Paseo por el puerto deportivo Marina Rubicón, en Playa Blanca. |
+| Día 5 · La Graciosa | Ferry desde Órzola a Caleta de Sebo. Alquila bici o pide un 4x4 hasta la playa de Las Conchas. | Baño en la playa Francesa, más resguardada, y vuelta en el ferry de la tarde. | Última cena en Arrecife o en tu base. Si cae en domingo, cambia este día por el mercado de Teguise y reserva La Graciosa para otro. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -185,12 +175,14 @@ La red de guaguas une bien Arrecife con las zonas turísticas, pero llega mal o 
 
 ## Cuánto cuesta un viaje a Lanzarote
 
-- **Presupuesto ajustado: unos 70-90 € al día por persona** (en pareja). Apartamento en Arrecife o Costa Teguise, coche compartido, menús del día, compra en supermercado para Papagayo y centros escogidos con bono.
+**Presupuesto orientativo por día**
 
-- **Presupuesto medio: unos 120-170 € al día por persona.** Hotel en Puerto del Carmen o Playa Blanca, cenas de pescado con vino, todos los centros de Manrique y una actividad (surf o barco).
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Presupuesto ajustado | unos 70-90 € al día por persona | (en pareja). Apartamento en Arrecife o Costa Teguise, coche compartido, menús del día, compra en supermercado para Papagayo y centros escogidos con bono. |
+| Presupuesto medio | unos 120-170 € al día por persona | Hotel en Puerto del Carmen o Playa Blanca, cenas de pescado con vino, todos los centros de Manrique y una actividad (surf o barco). |
 
 - **Vuelo desde la península:** entre 50 y 150 € ida y vuelta según fecha y antelación.
-
 - **Gasolina:** más barata que en la península; 5 días de isla salen por unos 40-50 € de depósito.
 
 ## Excursiones de un día desde Lanzarote

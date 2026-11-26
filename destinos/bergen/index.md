@@ -89,29 +89,15 @@ Bergen es de las ciudades más caras de Europa, pero lo mejor es gratis: las mon
 
 - Si visitas varios museos y usas mucho el transporte, haz cuentas con la Bergen Card (unos 40 € 24 h), que incluye bus y tranvía y descuenta o cubre museos. Si solo vas a subir montañas, no compensa.
 
-## Itinerario: Bergen en 3 días
+## Qué ver en Bergen en 3 días: ruta día a día
 
-### Día 1: puerto, Bryggen y Fløyen
+**Itinerario de 3 días en Bergen**
 
-**Mañana:** empieza temprano en Bryggen, antes de los cruceros. Entra en los callejones y luego al Museo Hanseático y Schøtstuene. Sigue hasta la iglesia de Santa María y la fortaleza de Bergenhus.
-
-**Tarde:** cruza a Fløibanen, sube a Fløyen, camina hasta el lago Skomakerdiket y baja andando por Fjellsiden hasta Øvregaten y Skostredet.
-
-**Noche:** cena de sopa de pescado y un par de cervezas por Kong Oscars gate o Nordnes.
-
-### Día 2: museos, Nordnes y Ulriken
-
-**Mañana:** KODE (si llueve, tómatelo con calma) y vuelta por Byparken y el lago. Si hace sol, cambia el orden y sube primero a Ulriken.
-
-**Tarde:** Ulriken en teleférico o, si estás en forma, el Vidden desde Fløyen. Alternativa tranquila: Bybanen a Troldhaugen y Fantoft.
-
-**Noche:** paseo por Nordnes hasta la punta del parque al atardecer (en verano será tarde, a las 23:00 aún hay luz) y concierto o copa en USF Verftet.
-
-### Día 3: fiordo
-
-**Mañana y tarde:** excursión de un día: Norway in a Nutshell hasta Flåm o, si quieres algo más corto, el barco al Osterfjord y Mostraumen por la mañana.
-
-**Noche:** última cena en Pingvinen y vuelta a Bryggen iluminado.
+| Día | Plan |
+|---|---|
+| Día 1 | Puerto, Bryggen y Fløyen. Mañana: empieza temprano en Bryggen, antes de los cruceros. Entra en los callejones y luego al Museo Hanseático y Schøtstuene. Sigue hasta la iglesia de Santa María y la fortaleza de Bergenhus. Tarde: cruza a Fløibanen, sube a Fløyen, camina hasta el lago Skomakerdiket y baja andando por Fjellsiden hasta Øvregaten y Skostredet. Noche: cena de sopa de pescado y un par de cervezas por Kong Oscars gate o Nordnes. |
+| Día 2 | Museos, Nordnes y Ulriken. Mañana: KODE (si llueve, tómatelo con calma) y vuelta por Byparken y el lago. Si hace sol, cambia el orden y sube primero a Ulriken. Tarde: Ulriken en teleférico o, si estás en forma, el Vidden desde Fløyen. Alternativa tranquila: Bybanen a Troldhaugen y Fantoft. Noche: paseo por Nordnes hasta la punta del parque al atardecer (en verano será tarde, a las 23:00 aún hay luz) y concierto o copa en USF Verftet. |
+| Día 3 | Fiordo. Mañana y tarde: excursión de un día: Norway in a Nutshell hasta Flåm o, si quieres algo más corto, el barco al Osterfjord y Mostraumen por la mañana. Noche: última cena en Pingvinen y vuelta a Bryggen iluminado. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -165,12 +151,14 @@ En la ciudad irás andando casi todo; el centro es pequeño, aunque con muchas c
 
 ## Cuánto cuesta un viaje a Bergen
 
-- **Ajustado: 90-120 € por persona y día.** Hostal o cama compartida (40-60 €), comida de supermercado y algún pølse, montañas a pie y un museo.
+**Presupuesto orientativo por día**
 
-- **Medio: 180-250 € por persona y día.** Hotel de cadena con desayuno (doble compartida), una comida y una cena fuera, Fløibanen, Ulriken y un par de museos.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | 90-120 € por persona y día | Hostal o cama compartida (40-60 €), comida de supermercado y algún pølse, montañas a pie y un museo. |
+| Medio | 180-250 € por persona y día | Hotel de cadena con desayuno (doble compartida), una comida y una cena fuera, Fløibanen, Ulriken y un par de museos. |
 
 - **Excursión de fiordo:** súmale entre 100 y 250 € según el tipo.
-
 - **Vuelos desde España:** directos en temporada con Norwegian y otras low cost; fuera de verano pueden encontrarse por menos de 100 € ida y vuelta.
 
 ## Excursiones de un día desde Bergen

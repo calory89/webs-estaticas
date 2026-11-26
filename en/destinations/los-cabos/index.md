@@ -93,25 +93,15 @@ Free and almost free things exist, though you will need to plan around them. Eve
 
 ## Los Cabos itinerary: 5 days
 
-### Day 1: Cabo San Lucas and El Arco
+**5-day itinerary for Los Cabos**
 
-**Morning:** early panga to El Arco and Lover's Beach, then a couple of hours on the sand. **Afternoon:** lunch on tacos in town, then Médano Beach with a cold drink. **Evening:** walk the marina, eat tacos at a stand like Gardenias, and decide whether you have the energy for the bars.
-
-### Day 2: The Corridor bays
-
-**Morning:** head to Santa María by 9am to snorkel. **Afternoon:** move to Chileno to relax under a palapa. **Evening:** sunset sail from Cabo San Lucas, or an early night if you plan to go far tomorrow.
-
-### Day 3: San José del Cabo
-
-**Morning:** bird walk at Estero San José, then coffee near Plaza Mijares. **Afternoon:** La Playita and Puerto Los Cabos, maybe a fishing trip. **Evening:** the Art Walk if it is Thursday, then dinner in the old town.
-
-### Day 4: Todos Santos and Cerritos
-
-**Morning:** drive about 1 hour north to Todos Santos and wander the galleries and old town. **Afternoon:** surf lesson or beach time at Cerritos. **Evening:** back in Cabo for a cheap dinner.
-
-### Day 5: Cabo Pulmo or La Paz
-
-**Morning:** leave early for Cabo Pulmo to dive or snorkel, or for La Paz to see whale sharks in season. **Afternoon:** lunch near the water. **Evening:** final dinner in San José, which is closer to the airport.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Cabo San Lucas and El Arco | Early panga to El Arco and Lover's Beach, then a couple of hours on the sand. | Lunch on tacos in town, then Médano Beach with a cold drink. | Walk the marina, eat tacos at a stand like Gardenias, and decide whether you have the energy for the bars. |
+| Day 2 · The Corridor bays | Head to Santa María by 9am to snorkel. | Move to Chileno to relax under a palapa. | Sunset sail from Cabo San Lucas, or an early night if you plan to go far tomorrow. |
+| Day 3 · San José del Cabo | Bird walk at Estero San José, then coffee near Plaza Mijares. | La Playita and Puerto Los Cabos, maybe a fishing trip. | The Art Walk if it is Thursday, then dinner in the old town. |
+| Day 4 · Todos Santos and Cerritos | Drive about 1 hour north to Todos Santos and wander the galleries and old town. | Surf lesson or beach time at Cerritos. | Back in Cabo for a cheap dinner. |
+| Day 5 · Cabo Pulmo or La Paz | Leave early for Cabo Pulmo to dive or snorkel, or for La Paz to see whale sharks in season. | Lunch near the water. | Final dinner in San José, which is closer to the airport. |
 
 ## What is overrated (and what to do instead)
 

@@ -39,15 +39,17 @@ Para la tarde, una cata de whisky. En el Scotch Whisky Experience, junto al cast
 
 Si te sobra un día, hay excursiones fáciles en tren: St Andrews, Stirling o North Berwick, en la costa. Las excursiones de un día a las Highlands en bus son largas, pero funcionan si tienes poco tiempo.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Edimburgo en 3 días: ruta día a día
 
 Tres días son suficientes para lo esencial; con dos vas apurado, y con cuatro puedes añadir una excursión.
 
-**Día 1: Old Town.** Castillo a primera hora, Royal Mile andando, St Giles, Victoria Street y Grassmarket. Termina en Greyfriars con la luz de la tarde.
+**Itinerario de 3 días en Edimburgo**
 
-**Día 2: Holyrood y colinas.** Museo Nacional por la mañana, Palacio de Holyrood al mediodía y Arthur's Seat por la tarde si el cielo ayuda. Si no, sube a Calton Hill.
-
-**Día 3: New Town y alrededores.** Paseo por Princes Street Gardens y Scott Monument, Dean Village por la mañana y Stockbridge para comer. Por la tarde, Leith o el Royal Botanic Garden, que es gratis en las zonas exteriores.
+| Día | Plan |
+|---|---|
+| Día 1 | Old Town. Castillo a primera hora, Royal Mile andando, St Giles, Victoria Street y Grassmarket. Termina en Greyfriars con la luz de la tarde. |
+| Día 2 | Holyrood y colinas. Museo Nacional por la mañana, Palacio de Holyrood al mediodía y Arthur's Seat por la tarde si el cielo ayuda. Si no, sube a Calton Hill. |
+| Día 3 | New Town y alrededores. Paseo por Princes Street Gardens y Scott Monument, Dean Village por la mañana y Stockbridge para comer. Por la tarde, Leith o el Royal Botanic Garden, que es gratis en las zonas exteriores. |
 
 ## Cuándo ir: clima y temporadas
 

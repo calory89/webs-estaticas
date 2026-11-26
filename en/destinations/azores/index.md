@@ -59,13 +59,16 @@ Narrow flats of land at the foot of steep cliffs, reached by hairpin roads or hi
 
 - **Tasting Pico wine**, particularly the crisp Verdelho, and São Jorge cheese straight from the producer.
 
-## How many days and a suggested route
+## The Azores itinerary: 7 days, day by day
 
 Three days on São Miguel alone is a fair introduction. Seven days lets you add a second island without feeling rushed. Ten gives you a proper three-island trip.
 
-- **Days 1-4:** São Miguel. Day one in Ponta Delgada, day two at Sete Cidades and the west, day three around Furnas and the Nordeste, with a hot soak in the evening.
+**7-day itinerary for The Azores**
 
-- **Days 5-7:** fly to Faial or Pico. Whale watching and the Capelinhos drive on Faial, then the short ferry across to Pico for vineyards or the climb.
+| Day | Plan |
+|---|---|
+| Days 1-4 | São Miguel. Day one in Ponta Delgada, day two at Sete Cidades and the west, day three around Furnas and the Nordeste, with a hot soak in the evening. |
+| Days 5-7 | Fly to Faial or Pico. Whale watching and the Capelinhos drive on Faial, then the short ferry across to Pico for vineyards or the climb. |
 
 Avoid trying to see five islands in a week. Inter-island flights are short, but the transfers eat whole mornings.
 

@@ -97,35 +97,14 @@ Melbourne is expensive, but a surprising amount of what you'll want to do costs 
 
 ## Melbourne itinerary: 4 days
 
-### Day 1: CBD, laneways and the river
+**4-day itinerary for Melbourne**
 
-**Morning:** start with coffee on Degraves Street, then walk Centre Place, the Block Arcade and the Royal Arcade. Head to the State Library when it opens.
-
-**Afternoon:** Hosier Lane and AC/DC Lane, then ACMI or the Ian Potter Centre at Federation Square. Cross the river to NGV International.
-
-**Evening:** dumplings in Chinatown, then a drink at a rooftop or one of the lane bars off Flinders Lane.
-
-### Day 2: Gardens, the MCG and Richmond
-
-**Morning:** the Shrine of Remembrance balcony, then the Royal Botanic Gardens.
-
-**Afternoon:** walk along the river through Birrarung Marr to the MCG for a tour or a match.
-
-**Evening:** walk or tram to Victoria Street in Richmond for pho or Vietnamese, or catch a gig at the Corner Hotel.
-
-### Day 3: Market, Carlton and Fitzroy
-
-**Morning:** Queen Victoria Market (not on a Monday or Wednesday), with a jam doughnut and a coffee.
-
-**Afternoon:** walk to Carlton Gardens for the Royal Exhibition Building and the Melbourne Museum, then cross into Fitzroy for Gertrude and Brunswick Streets.
-
-**Evening:** dinner and bars in Fitzroy or Collingwood. If you'd rather see the penguins, swap this evening with day 4.
-
-### Day 4: Day trip, or St Kilda
-
-**Option A:** spend the day at Phillip Island, staying for the Penguin Parade at sunset, or do a Yarra Valley winery day.
-
-**Option B:** take a relaxed morning in South Yarra and Prahran (Chapel Street), then ride tram 96 to St Kilda for the Esplanade, Acland Street cakes and the penguins at dusk.
+| Day | Plan |
+|---|---|
+| Day 1 | CBD, laneways and the river. Morning: start with coffee on Degraves Street, then walk Centre Place, the Block Arcade and the Royal Arcade. Head to the State Library when it opens. Afternoon: Hosier Lane and AC/DC Lane, then ACMI or the Ian Potter Centre at Federation Square. Cross the river to NGV International. Evening: dumplings in Chinatown, then a drink at a rooftop or one of the lane bars off Flinders Lane. |
+| Day 2 | Gardens, the MCG and Richmond. Morning: the Shrine of Remembrance balcony, then the Royal Botanic Gardens. Afternoon: walk along the river through Birrarung Marr to the MCG for a tour or a match. Evening: walk or tram to Victoria Street in Richmond for pho or Vietnamese, or catch a gig at the Corner Hotel. |
+| Day 3 | Market, Carlton and Fitzroy. Morning: Queen Victoria Market (not on a Monday or Wednesday), with a jam doughnut and a coffee. Afternoon: walk to Carlton Gardens for the Royal Exhibition Building and the Melbourne Museum, then cross into Fitzroy for Gertrude and Brunswick Streets. Evening: dinner and bars in Fitzroy or Collingwood. If you'd rather see the penguins, swap this evening with day 4. |
+| Day 4 | Day trip, or St Kilda. Option A: spend the day at Phillip Island, staying for the Penguin Parade at sunset, or do a Yarra Valley winery day. Option B: take a relaxed morning in South Yarra and Prahran (Chapel Street), then ride tram 96 to St Kilda for the Esplanade, Acland Street cakes and the penguins at dusk. |
 
 ## What is overrated (and what to do instead)
 
@@ -187,9 +166,12 @@ Getting around, use trams, trains and buses with a **myki** card (about A$6 for 
 
 ## How much a trip to Melbourne costs
 
-- **Shoestring: A$100-140 a day (€57-80).** Hostel dorm, supermarket breakfast, dumplings or banh mi for lunch, free museums, capped transport, one beer.
+**Rough daily budget**
 
-- **Mid-range: A$300-450 a day (€170-260).** A double room in a decent hotel, brunch out, a proper dinner with wine, a paid attraction or a footy ticket, and the odd Uber.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring: A$100-140 a day | €57-80 | Hostel dorm, supermarket breakfast, dumplings or banh mi for lunch, free museums, capped transport, one beer. |
+| Mid-range: A$300-450 a day | €170-260 | A double room in a decent hotel, brunch out, a proper dinner with wine, a paid attraction or a footy ticket, and the odd Uber. |
 
 - **Day trips:** Phillip Island tours run A$150-250, and Great Ocean Road tours A$130-200. Hiring a car costs about A$70-120 a day plus fuel.
 

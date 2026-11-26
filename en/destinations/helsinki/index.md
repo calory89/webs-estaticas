@@ -59,15 +59,17 @@ The harbour-side market is touristy but still pleasant for coffee and a look at 
 
 - **Take a ferry to Tallinn** for the day if you have a spare one. It is about two hours each way.
 
-## How many days and a suggested route
+## Helsinki itinerary: 3 days, day by day
 
 Two full days cover the highlights, three let you slow down. With a long weekend:
 
-**Day 1:** Central Station, Oodi, Kiasma or Ateneum, Senate Square and the cathedral, lunch in the Old Market Hall, Uspenski in the afternoon, then an evening sauna at Allas or Löyly.
+**3-day itinerary for Helsinki**
 
-**Day 2:** Morning ferry to Suomenlinna, a long lunch on the island, then back to Punavuori for design shops and dinner.
-
-**Day 3:** Temppeliaukio Church, the Sibelius Monument, a coffee stop at Regatta in Töölö, and an afternoon in Kallio.
+| Day | Plan |
+|---|---|
+| Day 1 | Central Station, Oodi, Kiasma or Ateneum, Senate Square and the cathedral, lunch in the Old Market Hall, Uspenski in the afternoon, then an evening sauna at Allas or Löyly. |
+| Day 2 | Morning ferry to Suomenlinna, a long lunch on the island, then back to Punavuori for design shops and dinner. |
+| Day 3 | Temppeliaukio Church, the Sibelius Monument, a coffee stop at Regatta in Töölö, and an afternoon in Kallio. |
 
 ## When to go
 

@@ -81,23 +81,16 @@ La ciudad tiene mucho que ver sin pagar. Los muros incas de Hatun Rumiyoc, Loret
 
 El mercado de San Pedro y el de San Blas se recorren gratis, y comer allí cuesta entre 8 y 15 soles (2-4 €). Hay free tours que salen de la Plaza de Armas cada mañana: no son gratis de verdad, se deja propina, y lo razonable son unos 20-30 soles por persona. Los domingos hay izamiento de banderas con desfile en la Plaza de Armas, a media mañana.
 
-## Itinerario: Cusco en 4 días
+## Qué ver en Cusco en 4 días: ruta día a día
 
-### Día 1: centro y aclimatación
+**Itinerario de 4 días en Cusco**
 
-Por la mañana, nada de esfuerzos: Plaza de Armas, Catedral y el muro de Hatun Rumiyoc, con mate de coca en el hotel antes de salir. Por la tarde, Qorikancha y paseo por la avenida El Sol hasta el mercado de San Pedro. Cena ligera y pronto a dormir; el alcohol el primer día es mala idea con la altura.
-
-### Día 2: ruinas de arriba y San Blas
-
-A primera hora, taxi a Tambomachay y bajada andando por Puca Pucara, Qenqo y Sacsayhuamán. Comida en San Blas. Por la tarde, Museo de Arte Precolombino y subida al Cristo Blanco para el atardecer (o San Cristóbal si estás cansado). Por la noche, bailes del Centro Qosqo y cena en San Blas.
-
-### Día 3: Valle Sagrado
-
-Sal temprano hacia Pisac (ruinas y mercado), come en Urubamba y termina en Ollantaytambo por la tarde. Lo mejor es dormir en Ollantaytambo: el tren a Machu Picchu sale de ahí y te ahorras madrugar desde Cusco.
-
-### Día 4: Machu Picchu
-
-Tren temprano de Ollantaytambo a Aguas Calientes (unos 90 minutos), bus de subida y visita con la entrada reservada a tu hora. Comida en Aguas Calientes y tren de vuelta a la tarde, con conexión a Cusco en bus o tren. Llegas tarde y reventado, pero contento.
+| Día | Plan |
+|---|---|
+| Día 1 | Centro y aclimatación. Por la mañana, nada de esfuerzos: Plaza de Armas, Catedral y el muro de Hatun Rumiyoc, con mate de coca en el hotel antes de salir. Por la tarde, Qorikancha y paseo por la avenida El Sol hasta el mercado de San Pedro. Cena ligera y pronto a dormir; el alcohol el primer día es mala idea con la altura. |
+| Día 2 | Ruinas de arriba y San Blas. A primera hora, taxi a Tambomachay y bajada andando por Puca Pucara, Qenqo y Sacsayhuamán. Comida en San Blas. Por la tarde, Museo de Arte Precolombino y subida al Cristo Blanco para el atardecer (o San Cristóbal si estás cansado). Por la noche, bailes del Centro Qosqo y cena en San Blas. |
+| Día 3 | Valle Sagrado. Sal temprano hacia Pisac (ruinas y mercado), come en Urubamba y termina en Ollantaytambo por la tarde. Lo mejor es dormir en Ollantaytambo: el tren a Machu Picchu sale de ahí y te ahorras madrugar desde Cusco. |
+| Día 4 | Machu Picchu. Tren temprano de Ollantaytambo a Aguas Calientes (unos 90 minutos), bus de subida y visita con la entrada reservada a tu hora. Comida en Aguas Calientes y tren de vuelta a la tarde, con conexión a Cusco en bus o tren. Llegas tarde y reventado, pero contento. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -151,9 +144,12 @@ Al Valle Sagrado salen colectivos y furgonetas desde la zona de la calle Pavitos
 
 ## Cuánto cuesta un viaje a Cusco
 
-- **Presupuesto ajustado: 35-50 € al día.** Hostal en San Pedro, menús del día y mercado, todo andando, colectivos al Valle Sagrado y free tours.
+**Presupuesto orientativo por día**
 
-- **Presupuesto medio: 80-130 € al día.** Hotel en San Blas, cenas en restaurante, taxis por app y alguna excursión organizada.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Presupuesto ajustado | 35-50 € al día | Hostal en San Pedro, menús del día y mercado, todo andando, colectivos al Valle Sagrado y free tours. |
+| Presupuesto medio | 80-130 € al día | Hotel en San Blas, cenas en restaurante, taxis por app y alguna excursión organizada. |
 
 - **Machu Picchu aparte:** entre 150 y 250 € por persona, sumando tren ida y vuelta, bus de subida y entrada. Es el gasto grande del viaje.
 

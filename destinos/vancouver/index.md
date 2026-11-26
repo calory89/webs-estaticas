@@ -89,23 +89,16 @@ Lo mejor de Vancouver no cuesta nada, que en una ciudad tan cara es un alivio. F
 
 - Los fuegos artificiales de la **Honda Celebration of Light**, a finales de julio, sobre English Bay.
 
-## Itinerario: Vancouver en 4 días
+## Qué ver en Vancouver en 4 días: ruta día a día
 
-### Día 1: centro, Stanley Park y West End
+**Itinerario de 4 días en Vancouver**
 
-**Mañana:** Canada Place y paseo por Coal Harbour hasta la entrada de Stanley Park. Alquila bici en Denman Street y da la vuelta al Seawall. **Tarde:** sigue pedaleando por el Seawall hasta English Bay y Sunset Beach. **Noche:** cena en Denman o Robson Street (izakayas y ramen) y puesta de sol en English Bay.
-
-### Día 2: Granville Island y Kitsilano
-
-**Mañana:** Aquabus a Granville Island, desayuno y compras en el Public Market. **Tarde:** andando por el Seawall hasta Vanier Park y Kitsilano Beach; si te queda energía, bus a UBC para el Museum of Anthropology. **Noche:** cena en West 4th Avenue o vuelta al centro.
-
-### Día 3: North Shore
-
-**Mañana:** SeaBus a Lonsdale Quay y bus a Lynn Canyon (o al Grouse Grind si te van las cuestas). **Tarde:** Deep Cove y Quarry Rock, con donut de premio. **Noche:** SeaBus de vuelta con la ciudad iluminada y cena en Gastown.
-
-### Día 4: Chinatown, Main Street y Richmond
-
-**Mañana:** jardín Dr. Sun Yat-Sen y Chinatown, y paseo por Gastown si no lo viste. **Tarde:** Main Street y cervecerías de Brewery Creek, o Queen Elizabeth Park. **Noche:** Canada Line a Richmond para cenar dim sum o, en temporada, el Night Market.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Centro, Stanley Park y West End | Canada Place y paseo por Coal Harbour hasta la entrada de Stanley Park. Alquila bici en Denman Street y da la vuelta al Seawall. | Sigue pedaleando por el Seawall hasta English Bay y Sunset Beach. | Cena en Denman o Robson Street (izakayas y ramen) y puesta de sol en English Bay. |
+| Día 2 · Granville Island y Kitsilano | Aquabus a Granville Island, desayuno y compras en el Public Market. | Andando por el Seawall hasta Vanier Park y Kitsilano Beach; si te queda energía, bus a UBC para el Museum of Anthropology. | Cena en West 4th Avenue o vuelta al centro. |
+| Día 3 · North Shore | SeaBus a Lonsdale Quay y bus a Lynn Canyon (o al Grouse Grind si te van las cuestas). | Deep Cove y Quarry Rock, con donut de premio. | SeaBus de vuelta con la ciudad iluminada y cena en Gastown. |
+| Día 4 · Chinatown, Main Street y Richmond | Jardín Dr. Sun Yat-Sen y Chinatown, y paseo por Gastown si no lo viste. | Main Street y cervecerías de Brewery Creek, o Queen Elizabeth Park. | Canada Line a Richmond para cenar dim sum o, en temporada, el Night Market. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -167,9 +160,12 @@ Para moverte, el sistema es TransLink: SkyTrain (metro elevado), buses y SeaBus.
 
 ## Cuánto cuesta un viaje a Vancouver
 
-- **Presupuesto ajustado: unos 110-140 € al día.** Albergue (60 €), comida en food courts y supermercado (30 €), transporte (8 €) y planes gratis.
+**Presupuesto orientativo por día**
 
-- **Presupuesto medio: unos 250-330 € al día.** Hotel medio en el centro (200 €), comidas y cenas en restaurante (70 €), transporte y alguna entrada (30-50 €).
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Presupuesto ajustado | unos 110-140 € al día | Albergue (60 €), comida en food courts y supermercado (30 €), transporte (8 €) y planes gratis. |
+| Presupuesto medio | unos 250-330 € al día | Hotel medio en el centro (200 €), comidas y cenas en restaurante (70 €), transporte y alguna entrada (30-50 €). |
 
 - **Vuelo desde España:** casi siempre con escala. Entre 600 y 1.000 € ida y vuelta según la temporada; en julio y agosto, más.
 

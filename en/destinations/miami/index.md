@@ -35,17 +35,18 @@ It is also expensive and spread out, so a little planning goes a long way. That'
 
 Rent a bike or scooter and ride the Miami Beach boardwalk, which runs for miles along the dunes. Take a boat tour on Biscayne Bay to see the waterfront mansions of Star Island. Browse Lincoln Road and the quieter Española Way in the late afternoon. Visit the Frost Science museum with kids, or spend a sunset on a rooftop in Brickell. If you like lively evenings, Miami delivers: clubs on the beach, salsa in Little Havana, and relaxed bars in Wynwood. Haulover Beach has a clothing-optional section, if that is your thing.
 
-## How many days and a suggested route
+## Miami itinerary: 4 days, day by day
 
 Three full days covers the essentials. Four lets you slow down or add the Everglades. A week is only worth it if you want to add a Keys road trip.
 
-- **Day 1, South Beach:** Early walk on Ocean Drive, Art Deco tour, beach time, then dinner and a stroll on Lincoln Road.
+**4-day itinerary for Miami**
 
-- **Day 2, the city:** Wynwood in the morning, Design District for lunch, Little Havana for the late afternoon and dinner.
-
-- **Day 3, bay and gardens:** Vizcaya, then Coconut Grove for a waterfront lunch, then Coral Gables or Key Biscayne.
-
-- **Day 4, optional:** Everglades half-day, or PAMM and a boat tour if the weather is poor.
+| Day | Plan |
+|---|---|
+| Day 1 | South Beach. Early walk on Ocean Drive, Art Deco tour, beach time, then dinner and a stroll on Lincoln Road. |
+| Day 2 | The city. Wynwood in the morning, Design District for lunch, Little Havana for the late afternoon and dinner. |
+| Day 3 | Bay and gardens. Vizcaya, then Coconut Grove for a waterfront lunch, then Coral Gables or Key Biscayne. |
+| Day 4 | Optional. Everglades half-day, or PAMM and a boat tour if the weather is poor. |
 
 ## When to go
 

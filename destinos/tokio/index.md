@@ -39,19 +39,19 @@ Si el cuerpo lo pide, date un baño en un sentō (baño público de barrio) o en
 
 Para una escapada de un día, Kamakura (templos y el Gran Buda, a una hora en tren) y Nikko (santuarios entre cedros, algo más lejos) funcionan mejor que intentar meter el Fuji en un día. Hakone o Kawaguchiko piden una noche.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Tokio en 5 días: ruta día a día
 
 Con tres días ves lo esencial yendo deprisa. Con cinco, la ciudad empieza a tener sentido. Con siete puedes añadir una excursión. Esta es una ruta de cinco días que evita cruzar la ciudad de un lado a otro sin necesidad:
 
-- **Día 1:** Asakusa por la mañana, Skytree si el cielo está despejado, paseo por el río Sumida y cena en el barrio.
+**Itinerario de 5 días en Tokio**
 
-- **Día 2:** Ueno y Yanaka por la mañana, Akihabara por la tarde y noche en Shinjuku.
-
-- **Día 3:** Meiji Jingu, Harajuku y Omotesando por la mañana, Shibuya al atardecer.
-
-- **Día 4:** Tsukiji temprano, Ginza, jardines del Palacio Imperial y teamLab Planets por la tarde.
-
-- **Día 5:** Kamakura o Shimokitazawa, según el ritmo que lleves.
+| Día | Plan |
+|---|---|
+| Día 1 | Asakusa por la mañana, Skytree si el cielo está despejado, paseo por el río Sumida y cena en el barrio. |
+| Día 2 | Ueno y Yanaka por la mañana, Akihabara por la tarde y noche en Shinjuku. |
+| Día 3 | Meiji Jingu, Harajuku y Omotesando por la mañana, Shibuya al atardecer. |
+| Día 4 | Tsukiji temprano, Ginza, jardines del Palacio Imperial y teamLab Planets por la tarde. |
+| Día 5 | Kamakura o Shimokitazawa, según el ritmo que lleves. |
 
 ## Cuándo ir a Tokio
 
@@ -91,11 +91,13 @@ Para moverte por la ciudad, consigue una tarjeta **Suica** o **Pasmo**, o añád
 
 ## Presupuesto orientativo por día
 
-- **Ajustado (60-80 euros):** hostal o cápsula, comidas en cadenas y konbini, transporte con Suica y entradas gratuitas.
+**Presupuesto orientativo por día**
 
-- **Medio (110-160 euros):** hotel de negocios, algún restaurante con reserva, entradas a miradores o museos y una excursión.
-
-- **Cómodo (200 euros o más):** hotel de categoría, cenas largas y actividades de pago.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | 60-80 euros | Hostal o cápsula, comidas en cadenas y konbini, transporte con Suica y entradas gratuitas. |
+| Medio | 110-160 euros | Hotel de negocios, algún restaurante con reserva, entradas a miradores o museos y una excursión. |
+| Cómodo | 200 euros o más | Hotel de categoría, cenas largas y actividades de pago. |
 
 El vuelo y los desplazamientos largos (como el Shinkansen a Kioto) se calculan aparte. Son cifras generales: varían bastante según la temporada y el tipo de cambio.
 

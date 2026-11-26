@@ -101,17 +101,13 @@ A surprising amount of KL costs nothing, and transport between the free sights i
 
 ## Kuala Lumpur itinerary: 3 days
 
-### Day 1: Old KL and Chinatown
+**3-day itinerary for Kuala Lumpur**
 
-**Morning:** start at the Islamic Arts Museum, then walk to the National Mosque and through the Perdana Botanical Gardens. **Afternoon:** head down to Merdeka Square and Masjid Jamek, then into Chinatown: Central Market, Kwai Chai Hong, and the two temples on Jalan Tun H.S. Lee. Have a late lunch of Hokkien mee or chicken rice. **Evening:** come back to the river for the Blue Pool lights, then have a drink on a Chinatown rooftop.
-
-### Day 2: Batu Caves, Brickfields and the towers
-
-**Morning:** take the early KTM train from KL Sentral to Batu Caves and climb before 9am. **Afternoon:** ride back to KL Sentral and walk into Brickfields for a banana leaf lunch, then rest during the hottest hours. Go to Thean Hou Temple late in the afternoon. **Evening:** do your booked Petronas Skybridge slot or just KLCC Park at sunset, watch the fountain show, then take the walkway to Bukit Bintang for dinner on Jalan Alor.
-
-### Day 3: Malay KL or a day trip
-
-**Morning:** have nasi lemak for breakfast in Kampung Baru and walk the village lanes. **Afternoon:** visit KL Forest Eco Park, and KL Tower if you skipped Petronas, or go shopping and eating in Pavilion. **Evening:** Heli Lounge Bar for sunset, then a mamak dinner. If you'd rather leave the city, use this day for Malacca instead.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Old KL and Chinatown | Start at the Islamic Arts Museum, then walk to the National Mosque and through the Perdana Botanical Gardens. | Head down to Merdeka Square and Masjid Jamek, then into Chinatown: Central Market, Kwai Chai Hong, and the two temples on Jalan Tun H.S. Lee. Have a late lunch of Hokkien mee or chicken rice. | Come back to the river for the Blue Pool lights, then have a drink on a Chinatown rooftop. |
+| Day 2 · Batu Caves, Brickfields and the towers | Take the early KTM train from KL Sentral to Batu Caves and climb before 9am. | Ride back to KL Sentral and walk into Brickfields for a banana leaf lunch, then rest during the hottest hours. Go to Thean Hou Temple late in the afternoon. | Do your booked Petronas Skybridge slot or just KLCC Park at sunset, watch the fountain show, then take the walkway to Bukit Bintang for dinner on Jalan Alor. |
+| Day 3 · Malay KL or a day trip | Have nasi lemak for breakfast in Kampung Baru and walk the village lanes. | Visit KL Forest Eco Park, and KL Tower if you skipped Petronas, or go shopping and eating in Pavilion. | Heli Lounge Bar for sunset, then a mamak dinner. If you'd rather leave the city, use this day for Malacca instead. |
 
 ## What is overrated (and what to do instead)
 

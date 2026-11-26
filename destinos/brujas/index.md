@@ -39,17 +39,16 @@ Alquila una bici para el día si quieres salir del casco. El camino junto al can
 
 En diciembre, el mercadillo de Navidad en el Markt y la pista de hielo atraen a mucha gente. Tiene su gracia, pero compruébalo antes si no te van las aglomeraciones.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Brujas en 2 días: ruta día a día
 
 Dos días son suficientes para ver lo importante sin correr. Con uno, sales satisfecho pero apurado. Con tres, ya te sobra tiempo para Damme en bici o una excursión a Gante, que está a media hora en tren.
 
-### Día 1: el casco histórico
+**Itinerario de 2 días en Brujas**
 
-Empieza en el Begijnhof y el Minnewater a primera hora, cuando están vacíos. Baja hacia el Markt, sube al Belfort y sigue por Burg. Come fuera del centro y, por la tarde, paseo en barca. Al caer el sol, vuelve al Rozenhoedkaai.
-
-### Día 2: museos, cerveza y muralla
-
-Por la mañana, Sint-Janshospitaal, la iglesia de Nuestra Señora y, si te apetece, el Groeninge. Después comida tranquila y visita a De Halve Maan. Termina el día andando hasta los molinos de Kruisvest y cenando en una taberna lejos de las plazas.
+| Día | Plan |
+|---|---|
+| Día 1 | El casco histórico. Empieza en el Begijnhof y el Minnewater a primera hora, cuando están vacíos. Baja hacia el Markt, sube al Belfort y sigue por Burg. Come fuera del centro y, por la tarde, paseo en barca. Al caer el sol, vuelve al Rozenhoedkaai. |
+| Día 2 | Museos, cerveza y muralla. Por la mañana, Sint-Janshospitaal, la iglesia de Nuestra Señora y, si te apetece, el Groeninge. Después comida tranquila y visita a De Halve Maan. Termina el día andando hasta los molinos de Kruisvest y cenando en una taberna lejos de las plazas. |
 
 ## Cuándo ir a Brujas
 

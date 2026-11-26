@@ -97,23 +97,16 @@ Otras ideas baratas:
 
 - Si vas a ver muchos museos, calcula si te compensa el **Museum Pass Cappadocia** (unos 90-100 €, válido varios días): sale a cuenta si entras en Göreme, Zelve, Paşabağ, Derinkuyu, Kaymaklı, Ihlara y Uçhisar.
 
-## Itinerario: Capadocia en 4 días
+## Qué ver en Capadocia en 4 días: ruta día a día
 
-### Día 1: Göreme y sus valles
+**Itinerario de 4 días en Capadocia**
 
-**Mañana:** globos al amanecer (desde el aire o desde la colina) y después Museo al Aire Libre de Göreme, a 1,5 km andando del pueblo. **Tarde:** come en Göreme y camina el Valle Rosa y el Valle Rojo hasta Çavuşin. **Noche:** atardecer en el mirador del Valle Rojo y cena de testi kebap en Göreme.
-
-### Día 2: subterráneo e Ihlara
-
-Es el día de alquilar coche o coger el famoso «Green Tour» (unos 40-60 € con comida). **Mañana:** Derinkuyu o Kaymaklı nada más abrir. **Tarde:** caminata por Ihlara hasta Belisırma, comida junto al río y Monasterio de Selime. **Noche:** vuelta cansado; cena sencilla en el pueblo.
-
-### Día 3: Uçhisar, Palomas y Ortahisar
-
-**Mañana:** segunda oportunidad para el globo si el día 1 se canceló. Después autobús a Uçhisar y bajada a pie por el Valle de las Palomas hasta Göreme. **Tarde:** taxi o dolmuş a Ortahisar, paseo y castillo. **Noche:** atardecer en el castillo de Uçhisar o en el Valle del Amor.
-
-### Día 4: Zelve, Paşabağ y Avanos
-
-**Mañana:** Paşabağ temprano y Zelve justo después (autobús hacia Avanos o un taxi corto). **Tarde:** Avanos, comida junto al río, taller de cerámica y paseo por el puente. **Noche:** hammam y última cena. Si te sobra energía, quad o caballos al atardecer en lugar del hammam.
+| Día | Plan |
+|---|---|
+| Día 1 | Göreme y sus valles. Mañana: globos al amanecer (desde el aire o desde la colina) y después Museo al Aire Libre de Göreme, a 1,5 km andando del pueblo. Tarde: come en Göreme y camina el Valle Rosa y el Valle Rojo hasta Çavuşin. Noche: atardecer en el mirador del Valle Rojo y cena de testi kebap en Göreme. |
+| Día 2 | Subterráneo e Ihlara. Es el día de alquilar coche o coger el famoso «Green Tour» (unos 40-60 € con comida). Mañana: Derinkuyu o Kaymaklı nada más abrir. Tarde: caminata por Ihlara hasta Belisırma, comida junto al río y Monasterio de Selime. Noche: vuelta cansado; cena sencilla en el pueblo. |
+| Día 3 | Uçhisar, Palomas y Ortahisar. Mañana: segunda oportunidad para el globo si el día 1 se canceló. Después autobús a Uçhisar y bajada a pie por el Valle de las Palomas hasta Göreme. Tarde: taxi o dolmuş a Ortahisar, paseo y castillo. Noche: atardecer en el castillo de Uçhisar o en el Valle del Amor. |
+| Día 4 | Zelve, Paşabağ y Avanos. Mañana: Paşabağ temprano y Zelve justo después (autobús hacia Avanos o un taxi corto). Tarde: Avanos, comida junto al río, taller de cerámica y paseo por el puente. Noche: hammam y última cena. Si te sobra energía, quad o caballos al atardecer en lugar del hammam. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 

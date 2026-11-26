@@ -35,17 +35,18 @@ Los cenotes son lo mejor de la zona para bañarse. La Ruta de los Cenotes, salie
 
 Si quieres parque temático, Xcaret y Xel-Há están en la Riviera Maya. Son caros y piden un día entero, así que decide si te apetece de verdad. Para buceo y snorkel, hay arrecifes cerca de Isla Mujeres, y entre mayo y septiembre se organizan salidas a ver tiburón ballena desde Isla Mujeres y Holbox, que requieren reservar con operadores serios y respetar las normas.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Cancún en 4 días: ruta día a día
 
 Cuatro días dan para ver lo esencial sin correr. Con una semana entra Holbox, que se alcanza por ferry desde Chiquilá, o una escapada a Playa del Carmen.
 
-- **Día 1:** llegada, paseo por el centro, cena en el Parque de las Palapas.
+**Itinerario de 4 días en Cancún**
 
-- **Día 2:** Playa Delfines por la mañana, El Rey, y atardecer en la laguna.
-
-- **Día 3:** ferry a Isla Mujeres, Playa Norte y carrito de golf hasta Punta Sur.
-
-- **Día 4:** Chichén Itzá con parada en un cenote, o Tulum y cenotes si prefieres mar.
+| Día | Plan |
+|---|---|
+| Día 1 | Llegada, paseo por el centro, cena en el Parque de las Palapas. |
+| Día 2 | Playa Delfines por la mañana, El Rey, y atardecer en la laguna. |
+| Día 3 | Ferry a Isla Mujeres, Playa Norte y carrito de golf hasta Punta Sur. |
+| Día 4 | Chichén Itzá con parada en un cenote, o Tulum y cenotes si prefieres mar. |
 
 ## Cuándo ir a Cancún
 
@@ -85,11 +86,13 @@ Para moverte entre el centro y las playas, los autobuses urbanos R1 y R2 recorre
 
 ## Presupuesto orientativo por día
 
-- **Ajustado (35-50 euros):** dormitorio en hostal, comida en mercados, autobús urbano y alguna playa pública.
+**Presupuesto orientativo por día**
 
-- **Medio (80-120 euros):** hotel sencillo en el centro, comidas en restaurante, una excursión cada dos días.
-
-- **Cómodo (200 euros o más):** resort, cenas en la Zona Hotelera, tours privados y parques temáticos.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | 35-50 euros | Dormitorio en hostal, comida en mercados, autobús urbano y alguna playa pública. |
+| Medio | 80-120 euros | Hotel sencillo en el centro, comidas en restaurante, una excursión cada dos días. |
+| Cómodo | 200 euros o más | Resort, cenas en la Zona Hotelera, tours privados y parques temáticos. |
 
 Las entradas a Chichén Itzá y Tulum, los parques y los ferris son lo que más sube el presupuesto, así que organízalos con cabeza.
 

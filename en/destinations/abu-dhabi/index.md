@@ -97,17 +97,13 @@ The two best sights in town cost nothing, which is not something you can say abo
 
 ## Abu Dhabi itinerary: 3 days
 
-### Day 1: The old city and the Corniche
+**3-day itinerary for Abu Dhabi**
 
-**Morning:** Start at Al Mina Fish Market and the Iranian Souk, then go to Qasr Al Hosn while it is still cool. **Afternoon:** Eat lunch at a downtown Lebanese or Indian cafeteria, then visit Qasr Al Watan, followed by a quick look at Emirates Palace next door. **Evening:** Ride a bike along the Corniche at sunset, then head to Heritage Village for the skyline view.
-
-### Day 2: Saadiyat Island
-
-**Morning:** Be at the Louvre Abu Dhabi at opening. **Afternoon:** Spend the hottest hours at Saadiyat public beach. **Evening:** Visit the Abrahamic Family House in late light, then take a 25-minute taxi to the Grand Mosque for your booked pre-sunset slot. Eat dinner at Souk Al Qanater (Souk Qaryat Al Beri) across the creek, with mosque views.
-
-### Day 3: Mangroves and Yas Island
-
-**Morning:** Do a sunrise kayak in Mangrove National Park. **Afternoon:** Choose one Yas Island theme park, or Yas Waterworld in summer. **Evening:** Have dinner at Yas Bay waterfront, or catch a sunset cycle session on Yas Marina Circuit if it runs that night (check in advance).
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · The old city and the Corniche | Start at Al Mina Fish Market and the Iranian Souk, then go to Qasr Al Hosn while it is still cool. | Eat lunch at a downtown Lebanese or Indian cafeteria, then visit Qasr Al Watan, followed by a quick look at Emirates Palace next door. | Ride a bike along the Corniche at sunset, then head to Heritage Village for the skyline view. |
+| Day 2 · Saadiyat Island | Be at the Louvre Abu Dhabi at opening. | Spend the hottest hours at Saadiyat public beach. | Visit the Abrahamic Family House in late light, then take a 25-minute taxi to the Grand Mosque for your booked pre-sunset slot. Eat dinner at Souk Al Qanater (Souk Qaryat Al Beri) across the creek, with mosque views. |
+| Day 3 · Mangroves and Yas Island | Do a sunrise kayak in Mangrove National Park. | Choose one Yas Island theme park, or Yas Waterworld in summer. | Have dinner at Yas Bay waterfront, or catch a sunset cycle session on Yas Marina Circuit if it runs that night (check in advance). |
 
 ## What is overrated (and what to do instead)
 

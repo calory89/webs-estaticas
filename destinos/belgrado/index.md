@@ -37,15 +37,17 @@ Para algo más tranquilo, **Ada Ciganlija** es la playa interior de los belgrade
 
 Si te sobra un día, **Novi Sad** se hace bien en tren desde la estación de Belgrado Centar, y Sremski Karlovci y la Fruška Gora quedan cerca para una excursión corta.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Belgrado en 3 días: ruta día a día
 
 Tres días es la medida justa. Con dos ves lo esencial; con cuatro puedes añadir Novi Sad sin correr.
 
-- **Día 1:** plaza de la República, Knez Mihailova, Kalemegdan y atardecer en la confluencia. Cena en Skadarlija.
+**Itinerario de 3 días en Belgrado**
 
-- **Día 2:** Templo de San Sava por la mañana, Museo de Tesla y comida en Vračar. Por la tarde, Estado Mayor bombardeado y paseo por Savamala hasta las barcazas.
-
-- **Día 3:** Museo de Yugoslavia por la mañana, tarde en Zemun con subida a Gardoš y cena de pescado junto al Danubio.
+| Día | Plan |
+|---|---|
+| Día 1 | Plaza de la República, Knez Mihailova, Kalemegdan y atardecer en la confluencia. Cena en Skadarlija. |
+| Día 2 | Templo de San Sava por la mañana, Museo de Tesla y comida en Vračar. Por la tarde, Estado Mayor bombardeado y paseo por Savamala hasta las barcazas. |
+| Día 3 | Museo de Yugoslavia por la mañana, tarde en Zemun con subida a Gardoš y cena de pescado junto al Danubio. |
 
 ## Cuándo ir
 

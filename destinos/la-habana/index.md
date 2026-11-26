@@ -39,17 +39,18 @@ Si te gusta Hemingway, hay dos paradas clásicas: El Floridita para el daiquirí
 
 Un buen plan corto es coger la lanchita a Regla desde el muelle de Luz. Cuesta casi nada, cruzas la bahía y llegas a un barrio tranquilo con iglesia y vida de pueblo.
 
-## Cuántos días y ruta sugerida
+## Qué ver en La Habana en 4 días: ruta día a día
 
 Cuatro días es un buen equilibrio; con tres ves lo esencial y con cinco entra una escapada. Una ruta razonable:
 
-- **Día 1:** La Habana Vieja a pie: Plaza de la Catedral, Plaza Vieja, Obispo y Castillo de la Real Fuerza. Atardecer en el Malecón.
+**Itinerario de 4 días en La Habana**
 
-- **Día 2:** Capitolio, Paseo del Prado y Gran Teatro por la mañana. Por la tarde, cruza a la Cabaña y quédate al cañonazo.
-
-- **Día 3:** Vedado: Cementerio de Colón, Plaza de la Revolución, Coppelia y Hotel Nacional. Noche en la FAC.
-
-- **Día 4:** Fusterlandia y Finca Vigía por la mañana, o Callejón de Hamel si cae en domingo. Tarde libre para Regla o para repetir lo que más te haya gustado.
+| Día | Plan |
+|---|---|
+| Día 1 | La Habana Vieja a pie: Plaza de la Catedral, Plaza Vieja, Obispo y Castillo de la Real Fuerza. Atardecer en el Malecón. |
+| Día 2 | Capitolio, Paseo del Prado y Gran Teatro por la mañana. Por la tarde, cruza a la Cabaña y quédate al cañonazo. |
+| Día 3 | Vedado: Cementerio de Colón, Plaza de la Revolución, Coppelia y Hotel Nacional. Noche en la FAC. |
+| Día 4 | Fusterlandia y Finca Vigía por la mañana, o Callejón de Hamel si cae en domingo. Tarde libre para Regla o para repetir lo que más te haya gustado. |
 
 Con un quinto día, la excursión a Viñales o a Soroa es lo más habitual desde la capital.
 

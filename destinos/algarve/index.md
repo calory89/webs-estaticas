@@ -95,33 +95,20 @@ Casi todo lo mejor del Algarve no cuesta nada. Todas las playas son públicas, i
 
 - Los mercados de Olhão y Loulé, aunque solo sea para mirar.
 
-## Itinerario: Algarve en 6 días
+## Qué ver en Algarve en 6 días: ruta día a día
 
 Este plan usa dos bases: Lagos para los tres primeros días y Tavira para los tres siguientes. Así solo cambias de hotel una vez y evitas la parte fea del centro.
 
-### Día 1: Faro y traslado a Lagos
+**Itinerario de 6 días en Algarve**
 
-**Mañana**: al aterrizar, Cidade Velha de Faro, la torre de la Sé y la Capela dos Ossos. **Tarde**: carretera o tren a Lagos (entre 1 y 2 horas), y paseo por el casco antiguo. **Noche**: atardecer en la Ponta da Piedade y cena en el centro, lejos de la Rua 25 de Abril.
-
-### Día 2: Lagos desde el agua y Sagres
-
-**Mañana**: kayak por las grutas de la Ponta da Piedade y baño en la Praia do Camilo. **Tarde**: Sagres (30 minutos), fortaleza y playa de Mareta o de Beliche. **Noche**: puesta de sol en el Cabo de São Vicente.
-
-### Día 3: Benagil y los Siete Valles
-
-**Mañana**: sendero desde la Praia da Marinha hasta Benagil, temprano. **Tarde**: barco o kayak a la cueva, comida en Benagil y baño en la Marinha. **Noche**: Carvoeiro y el Algar Seco al atardecer, y traslado a Tavira (una hora y cuarto).
-
-### Día 4: Tavira y su isla
-
-**Mañana**: pueblo de Tavira, castillo y mercado. **Tarde**: barco a la Ilha de Tavira y playa. **Noche**: cena junto al río, con cataplana o pulpo.
-
-### Día 5: Ria Formosa y Olhão
-
-**Mañana**: mercado de Olhão. **Tarde**: ferry a la Ilha da Culatra, playa y almuerzo de pescado en el pueblo. **Noche**: vuelta a Tavira o cena de marisco en Olhão.
-
-### Día 6: Cacela Velha y Praia do Barril
-
-**Mañana**: Cacela Velha con marea baja. **Tarde**: Praia do Barril y el cementerio de anclas. **Noche**: vuelta a Faro (30 minutos) para el vuelo o última cena en Tavira.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Faro y traslado a Lagos | Al aterrizar, Cidade Velha de Faro, la torre de la Sé y la Capela dos Ossos. | Carretera o tren a Lagos (entre 1 y 2 horas), y paseo por el casco antiguo. | Atardecer en la Ponta da Piedade y cena en el centro, lejos de la Rua 25 de Abril. |
+| Día 2 · Lagos desde el agua y Sagres | Kayak por las grutas de la Ponta da Piedade y baño en la Praia do Camilo. | Sagres (30 minutos), fortaleza y playa de Mareta o de Beliche. | Puesta de sol en el Cabo de São Vicente. |
+| Día 3 · Benagil y los Siete Valles | Sendero desde la Praia da Marinha hasta Benagil, temprano. | Barco o kayak a la cueva, comida en Benagil y baño en la Marinha. | Carvoeiro y el Algar Seco al atardecer, y traslado a Tavira (una hora y cuarto). |
+| Día 4 · Tavira y su isla | Pueblo de Tavira, castillo y mercado. | Barco a la Ilha de Tavira y playa. | Cena junto al río, con cataplana o pulpo. |
+| Día 5 · Ria Formosa y Olhão | Mercado de Olhão. | Ferry a la Ilha da Culatra, playa y almuerzo de pescado en el pueblo. | Vuelta a Tavira o cena de marisco en Olhão. |
+| Día 6 · Cacela Velha y Praia do Barril | Cacela Velha con marea baja. | Praia do Barril y el cementerio de anclas. | Vuelta a Faro (30 minutos) para el vuelo o última cena en Tavira. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -185,9 +172,12 @@ Nuestro consejo: **alquila coche**, aunque sea solo para la parte oeste. Sagres,
 
 ## Cuánto cuesta un viaje a Algarve
 
-- **Presupuesto ajustado (unos 70-90 € al día)**: hostal o habitación sencilla (30-50 €), prato do dia y supermercado (20-25 €), tren y ferris (5-10 €), playas y senderos gratis.
+**Presupuesto orientativo por día**
 
-- **Presupuesto medio (unos 150-200 € al día por persona, compartiendo habitación)**: hotel o apartamento bueno (50-80 € por cabeza), comida y cena en restaurante (45-60 €), coche de alquiler y gasolina compartidos (25-35 €), una actividad como kayak o barco (25-35 €).
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Presupuesto ajustado | unos 70-90 € al día | Hostal o habitación sencilla (30-50 €), prato do dia y supermercado (20-25 €), tren y ferris (5-10 €), playas y senderos gratis. |
+| Presupuesto medio | unos 150-200 € al día por persona, compartiendo habitación | Hotel o apartamento bueno (50-80 € por cabeza), comida y cena en restaurante (45-60 €), coche de alquiler y gasolina compartidos (25-35 €), una actividad como kayak o barco (25-35 €). |
 
 ## Excursiones de un día desde Algarve
 

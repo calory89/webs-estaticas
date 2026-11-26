@@ -107,29 +107,13 @@ A lot of Seville costs nothing. Plaza de España, Parque de María Luisa, Barrio
 
 ## Seville itinerary: 3 days
 
-### Day 1: The big three and Santa Cruz
+**3-day itinerary for Seville**
 
-**Morning:** take the first Alcázar slot, then walk out through Santa Cruz while it's still calm.
-
-**Afternoon:** have a long lunch, then visit the Cathedral and climb the Giralda later in the afternoon, when the morning groups have gone. If you still have energy, pop into the Archivo de Indias.
-
-**Evening:** catch a flamenco show at Casa de la Memoria, then have tapas around Alfalfa.
-
-### Day 2: Parks, palaces and the river
-
-**Morning:** start at Plaza de España before it gets hot, then walk through Parque de María Luisa.
-
-**Afternoon:** head back north for Casa de Pilatos, take a siesta, then visit Palacio de las Dueñas.
-
-**Evening:** watch sunset from Las Setas or simply walk along the river to Torre del Oro, then have drinks on the Alameda de Hércules.
-
-### Day 3: Triana and the slow side
-
-**Morning:** see the Museo de Bellas Artes, then cross to the Triana market and the Castillo de San Jorge.
-
-**Afternoon:** have lunch in Triana, browse the ceramics streets, and take the Maestranza tour on your way back over the bridge.
-
-**Evening:** eat dinner on Calle Betis, or hop between bars on Calle Feria for a last round of montaditos.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · The big three and Santa Cruz | Take the first Alcázar slot, then walk out through Santa Cruz while it's still calm. | Have a long lunch, then visit the Cathedral and climb the Giralda later in the afternoon, when the morning groups have gone. If you still have energy, pop into the Archivo de Indias. | Catch a flamenco show at Casa de la Memoria, then have tapas around Alfalfa. |
+| Day 2 · Parks, palaces and the river | Start at Plaza de España before it gets hot, then walk through Parque de María Luisa. | Head back north for Casa de Pilatos, take a siesta, then visit Palacio de las Dueñas. | Watch sunset from Las Setas or simply walk along the river to Torre del Oro, then have drinks on the Alameda de Hércules. |
+| Day 3 · Triana and the slow side | See the Museo de Bellas Artes, then cross to the Triana market and the Castillo de San Jorge. | Have lunch in Triana, browse the ceramics streets, and take the Maestranza tour on your way back over the bridge. | Eat dinner on Calle Betis, or hop between bars on Calle Feria for a last round of montaditos. |
 
 ## What is overrated (and what to do instead)
 
@@ -201,9 +185,12 @@ Once you're in town you'll mostly walk. The old centre is compact, and many stre
 
 ## How much a trip to Seville costs
 
-- **Shoestring: €50-70 per day.** Hostel dorm, tapas and menú del día, walking, and one or two paid sights.
+**Rough daily budget**
 
-- **Mid-range: €130-200 per day.** Boutique hotel or nice flat, tapas dinners with wine, Alcázar plus a couple of palaces, and a flamenco show.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €50-70 per day | Hostel dorm, tapas and menú del día, walking, and one or two paid sights. |
+| Mid-range | €130-200 per day | Boutique hotel or nice flat, tapas dinners with wine, Alcázar plus a couple of palaces, and a flamenco show. |
 
 - **Typical sight costs:** Alcázar €16-20, Cathedral €13-15, Casa de Pilatos €12-18, flamenco €25-30.
 

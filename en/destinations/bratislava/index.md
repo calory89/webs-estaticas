@@ -101,21 +101,12 @@ A lot of the best of Bratislava costs nothing.
 
 ## Bratislava itinerary: 2 days
 
-### Day 1: Old Town and castle
+**2-day itinerary for Bratislava**
 
-**Morning:** Start at Michael's Gate and climb it before the crowds. Wander down Michalská and Ventúrska to the Main Square, the Primate's Palace and Čumil.
-
-**Afternoon:** Have a halušky lunch, then visit St Martin's Cathedral and walk up to the castle grounds for the views. If you still have energy, continue to Slavín.
-
-**Evening:** Walk back down for a wine flight in the Old Town, then dinner at a beer hall. Afterwards, take a night stroll along the embankment.
-
-### Day 2: Devín, the Danube and the UFO
-
-**Morning:** Take bus 29 from under the UFO bridge to Devín Castle and spend two hours on the ruins and the river confluence.
-
-**Afternoon:** Ride back and walk past the Blue Church. If you are into art, swap in Danubiana instead.
-
-**Evening:** Cross the UFO bridge to Sad Janka Kráľa park, then go up the UFO for a sunset drink. If tickets are available, go to the opera.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Old Town and castle | Start at Michael's Gate and climb it before the crowds. Wander down Michalská and Ventúrska to the Main Square, the Primate's Palace and Čumil. | Have a halušky lunch, then visit St Martin's Cathedral and walk up to the castle grounds for the views. If you still have energy, continue to Slavín. | Walk back down for a wine flight in the Old Town, then dinner at a beer hall. Afterwards, take a night stroll along the embankment. |
+| Day 2 · Devín, the Danube and the UFO | Take bus 29 from under the UFO bridge to Devín Castle and spend two hours on the ruins and the river confluence. | Ride back and walk past the Blue Church. If you are into art, swap in Danubiana instead. | Cross the UFO bridge to Sad Janka Kráľa park, then go up the UFO for a sunset drink. If tickets are available, go to the opera. |
 
 ## What is overrated (and what to do instead)
 
@@ -175,9 +166,12 @@ The Slovak Pub on Obchodná is touristy but cheap and serves classic dishes, whi
 
 ## How much a trip to Bratislava costs
 
-- **Shoestring: €45-65 a day.** This covers a hostel dorm (€20-30), a lunch menu, a supermarket or street-food dinner, a transport pass and mostly free sights.
+**Rough daily budget**
 
-- **Mid-range: €110-170 a day per person (sharing a double).** This covers an Old Town hotel, two restaurant meals with wine, Devín and the UFO, and an opera ticket.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €45-65 a day | This covers a hostel dorm (€20-30), a lunch menu, a supermarket or street-food dinner, a transport pass and mostly free sights. |
+| Mid-range | €110-170 a day per person (sharing a double) | This covers an Old Town hotel, two restaurant meals with wine, Devín and the UFO, and an opera ticket. |
 
 - **Typical extras:** beer €3, coffee €2.50-3.50, wine tasting €10-20, Devín €6-8.
 

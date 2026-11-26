@@ -33,19 +33,19 @@ New York is loud, expensive and tiring, and it is still one of the few cities th
 
 See a Broadway show, and use the TKTS booth in Times Square or a same-day lottery for cheaper seats. Catch live jazz in a small Village club, which beats any tourist trap. Rent a bike along the Hudson River Greenway, or spend a lazy afternoon in Williamsburg's vintage shops and rooftop bars. Baseball fans should try a Yankees game in the Bronx or a Mets game in Queens. A summer evening at one of these is hard to beat.
 
-## How many days and a suggested route
+## New York itinerary: 5 days, day by day
 
 Four to five days is the sweet spot. Three covers the greatest hits at a sprint, while a week lets you explore the outer boroughs properly.
 
-- **Day 1, Midtown:** Grand Central, Fifth Avenue, Top of the Rock at sunset, Times Square after dark.
+**5-day itinerary for New York**
 
-- **Day 2, Central Park and Upper side:** Central Park in the morning, the Met after lunch, dinner on the Upper West Side.
-
-- **Day 3, Downtown:** 9/11 Memorial, Battery Park, the Statue of Liberty ferry, then wander the Lower East Side for dinner.
-
-- **Day 4, Brooklyn:** Brooklyn Bridge walk, DUMBO, lunch in Williamsburg, an evening on the waterfront.
-
-- **Day 5, Village and Chelsea:** West Village, the High Line, Chelsea Market, then a show or jazz set.
+| Day | Plan |
+|---|---|
+| Day 1 | Midtown. Grand Central, Fifth Avenue, Top of the Rock at sunset, Times Square after dark. |
+| Day 2 | Central Park and Upper side. Central Park in the morning, the Met after lunch, dinner on the Upper West Side. |
+| Day 3 | Downtown. 9/11 Memorial, Battery Park, the Statue of Liberty ferry, then wander the Lower East Side for dinner. |
+| Day 4 | Brooklyn. Brooklyn Bridge walk, DUMBO, lunch in Williamsburg, an evening on the waterfront. |
+| Day 5 | Village and Chelsea. West Village, the High Line, Chelsea Market, then a show or jazz set. |
 
 ## When to go: weather and seasons
 

@@ -39,17 +39,18 @@ Un atardecer en el parque del río Han con ramyeon preparado en una tienda de co
 
 Si tienes un día extra, la excursión a la DMZ (zona desmilitarizada) se hace solo con tour organizado y requiere llevar pasaporte. Reserva con antelación.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Seúl en 4 días: ruta día a día
 
 Cuatro días es un buen punto de partida; con cinco puedes añadir la DMZ o una excursión al parque nacional de Bukhansan. Con tres harás lo básico y acabarás cansado.
 
-- **Día 1:** Gyeongbokgung por la mañana, Bukchon, Insadong y cena en Ikseon-dong.
+**Itinerario de 4 días en Seúl**
 
-- **Día 2:** Changdeokgung con Huwon, Gwangjang para comer, Cheonggyecheon y DDP de noche.
-
-- **Día 3:** Namsan a pie, Myeongdong o Itaewon, torre al atardecer.
-
-- **Día 4:** Hongdae por la mañana, Seongsu o Gangnam por la tarde y paseo junto al Han.
+| Día | Plan |
+|---|---|
+| Día 1 | Gyeongbokgung por la mañana, Bukchon, Insadong y cena en Ikseon-dong. |
+| Día 2 | Changdeokgung con Huwon, Gwangjang para comer, Cheonggyecheon y DDP de noche. |
+| Día 3 | Namsan a pie, Myeongdong o Itaewon, torre al atardecer. |
+| Día 4 | Hongdae por la mañana, Seongsu o Gangnam por la tarde y paseo junto al Han. |
 
 ## Cuándo ir: clima y temporadas
 

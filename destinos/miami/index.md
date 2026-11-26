@@ -61,17 +61,18 @@ A un par de horas como mucho entre ir, hacer la visita y volver, es el contraste
 
 - **Deporte:** si coincide partido de Heat (baloncesto) o Inter Miami (fútbol), merece la pena el ambiente.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Miami en 4 días: ruta día a día
 
 Cuatro días son lo cómodo; con tres lo ves bien si te organizas. Menos y vas a pasar más tiempo en el coche o en el tráfico que en la calle.
 
-- **Día 1:** Art Deco por la mañana, playa de South Beach al mediodía, Lincoln Road y cena por la zona.
+**Itinerario de 4 días en Miami**
 
-- **Día 2:** Wynwood a primera hora, comida en Little Havana, tarde de Calle Ocho y música por la noche.
-
-- **Día 3:** Vizcaya, Coconut Grove y Coral Gables.
-
-- **Día 4:** Everglades por la mañana y Key Biscayne o playa por la tarde.
+| Día | Plan |
+|---|---|
+| Día 1 | Art Deco por la mañana, playa de South Beach al mediodía, Lincoln Road y cena por la zona. |
+| Día 2 | Wynwood a primera hora, comida en Little Havana, tarde de Calle Ocho y música por la noche. |
+| Día 3 | Vizcaya, Coconut Grove y Coral Gables. |
+| Día 4 | Everglades por la mañana y Key Biscayne o playa por la tarde. |
 
 ## Cuándo ir
 
@@ -117,11 +118,13 @@ Dentro de la ciudad, el Metromover (gratis) cubre Downtown y Brickell, y hay tro
 
 ## Presupuesto orientativo por día
 
-- **Ajustado (100-150 $):** dormitorio compartido o alojamiento barato fuera de South Beach, comida cubana y de puesto, transporte público.
+**Presupuesto orientativo por día**
 
-- **Medio (200-300 $):** hotel sencillo, restaurantes de mesa, algún Uber y una entrada o excursión.
-
-- **Cómodo (400 $ o más):** hotel en primera línea, cenas con copas y traslados privados.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | 100-150 $ | Dormitorio compartido o alojamiento barato fuera de South Beach, comida cubana y de puesto, transporte público. |
+| Medio | 200-300 $ | Hotel sencillo, restaurantes de mesa, algún Uber y una entrada o excursión. |
+| Cómodo | 400 $ o más | Hotel en primera línea, cenas con copas y traslados privados. |
 
 Los vuelos y el alojamiento marcan la diferencia. Reserva con tiempo y compara fechas entre semana.
 

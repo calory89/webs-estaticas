@@ -87,29 +87,15 @@ Gran parte de lo mejor de Gdansk no cuesta nada. Pasear por Długa, Mariacka y e
 
 Los martes suelen ser gratis varios museos importantes, entre ellos el de la Segunda Guerra Mundial y algunas sedes del Museo de Gdansk; si puedes cuadrar el viaje, ponlo ese día y reserva antes. El exterior del Centro Europeo de la Solidaridad y el monumento de los astilleros también son gratis, y la playa de Brzeźno solo te cuesta el billete de tranvía. Para comer barato, los bares de leche (**bar mleczny**) te dan un menú por 5-7 €.
 
-## Itinerario: Gdansk en 3 días
+## Qué ver en Gdansk en 3 días: ruta día a día
 
-### Día 1: casco histórico y miradores
+**Itinerario de 3 días en Gdansk**
 
-**Mañana:** empieza temprano en la Puerta Dorada y baja por la calle Długa hasta Długi Targ antes de que lleguen los grupos. Sube a la torre de la Basílica de Santa María y visita el Ayuntamiento.
-
-**Tarde:** come en un bar de leche y sigue por la calle Mariacka hasta el muelle del Motława y la Grúa. Cruza a la Isla de los Graneros y entra en el Museo del Ámbar si te interesa.
-
-**Noche:** sube a la Colina Gradowa para el atardecer y cena pierogi en el centro, pero lejos de Długi Targ.
-
-### Día 2: siglo XX, astilleros y Westerplatte
-
-**Mañana:** Museo de la Segunda Guerra Mundial a primera hora (3-4 horas). Está a 10 minutos andando del centro.
-
-**Tarde:** camina 15 minutos hasta el Centro Europeo de la Solidaridad y la zona del astillero. Si te queda energía, coge el bus o el barco a Westerplatte para cerrar el círculo de la guerra.
-
-**Noche:** tranvía o tren a Wrzeszcz y cena en Garnizon.
-
-### Día 3: Sopot, Oliwa o Malbork
-
-**Opción playa:** por la mañana, tranvía a Oliwa para la catedral y el parque; por la tarde, tren SKM a Sopot, paseo por la calle Monte Cassino y el muelle, y atardecer en la playa.
-
-**Opción castillo:** tren a primera hora a Malbork (medio día largo) y vuelta para una última cena en el centro. Si es tu primera vez en Polonia y te gustan los castillos, elige esta.
+| Día | Plan |
+|---|---|
+| Día 1 | Casco histórico y miradores. Mañana: empieza temprano en la Puerta Dorada y baja por la calle Długa hasta Długi Targ antes de que lleguen los grupos. Sube a la torre de la Basílica de Santa María y visita el Ayuntamiento. Tarde: come en un bar de leche y sigue por la calle Mariacka hasta el muelle del Motława y la Grúa. Cruza a la Isla de los Graneros y entra en el Museo del Ámbar si te interesa. Noche: sube a la Colina Gradowa para el atardecer y cena pierogi en el centro, pero lejos de Długi Targ. |
+| Día 2 | Siglo XX, astilleros y Westerplatte. Mañana: Museo de la Segunda Guerra Mundial a primera hora (3-4 horas). Está a 10 minutos andando del centro. Tarde: camina 15 minutos hasta el Centro Europeo de la Solidaridad y la zona del astillero. Si te queda energía, coge el bus o el barco a Westerplatte para cerrar el círculo de la guerra. Noche: tranvía o tren a Wrzeszcz y cena en Garnizon. |
+| Día 3 | Sopot, Oliwa o Malbork. Opción playa: por la mañana, tranvía a Oliwa para la catedral y el parque; por la tarde, tren SKM a Sopot, paseo por la calle Monte Cassino y el muelle, y atardecer en la playa. Opción castillo: tren a primera hora a Malbork (medio día largo) y vuelta para una última cena en el centro. Si es tu primera vez en Polonia y te gustan los castillos, elige esta. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -173,9 +159,12 @@ El centro histórico se recorre andando. Para Oliwa, Brzeźno o Wrzeszcz usarás
 
 La moneda es el zloty (PLN); un euro son algo más de 4 zł. Presupuesto por persona y día, sin vuelo:
 
-- **Ajustado: 50-70 € al día.** Albergue o habitación privada en Wrzeszcz (25-40 €), comidas en bares de leche y zapiekankas (12-18 €), transporte (3-5 €), museos en día gratuito o uno de pago (5-10 €).
+**Presupuesto orientativo por día**
 
-- **Medio: 100-150 € al día.** Hotel de tres estrellas en el centro o apartamento (50-80 € por persona en habitación doble), comida y cena en restaurantes (35-45 €), dos museos (15 €), transporte y alguna cerveza (10-15 €).
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | 50-70 € al día | Albergue o habitación privada en Wrzeszcz (25-40 €), comidas en bares de leche y zapiekankas (12-18 €), transporte (3-5 €), museos en día gratuito o uno de pago (5-10 €). |
+| Medio | 100-150 € al día | Hotel de tres estrellas en el centro o apartamento (50-80 € por persona en habitación doble), comida y cena en restaurantes (35-45 €), dos museos (15 €), transporte y alguna cerveza (10-15 €). |
 
 - **Extras habituales:** barco a Westerplatte (15-20 €), entrada a Malbork (unos 15-20 €), tren a Malbork ida y vuelta (unos 10-15 €).
 

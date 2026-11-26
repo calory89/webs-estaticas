@@ -57,15 +57,17 @@ A grand building near the Old Town, good for a rainy afternoon. It is strong on 
 
 - Visit the Ethnographic Open-Air Museum on Lake Ķīšezers to see old farmsteads and wooden churches set in woodland.
 
-## How many days and a suggested route
+## Riga itinerary: 3 days, day by day
 
 Two full days cover the highlights. Three is better, because it lets you add a day trip without rushing.
 
-**Day 1:** Old Town in the morning, the Cathedral, St. Peter's tower, lunch in a cellar restaurant, then the Three Brothers and Bastejkalns.
+**3-day itinerary for Riga**
 
-**Day 2:** Art Nouveau streets in the morning, the Central Market for lunch, then the Latvian National Museum of Art or the Academy of Sciences tower at sunset.
-
-**Day 3:** Take a day trip. Jūrmala, with its wooden villas and wide sandy beach, is about 30 minutes by train from Riga Central station. Sigulda and Gauja National Park, with castles and forest trails, is roughly an hour away by train. Choose the beach in summer and the forest the rest of the year.
+| Day | Plan |
+|---|---|
+| Day 1 | Old Town in the morning, the Cathedral, St. Peter's tower, lunch in a cellar restaurant, then the Three Brothers and Bastejkalns. |
+| Day 2 | Art Nouveau streets in the morning, the Central Market for lunch, then the Latvian National Museum of Art or the Academy of Sciences tower at sunset. |
+| Day 3 | Take a day trip. Jūrmala, with its wooden villas and wide sandy beach, is about 30 minutes by train from Riga Central station. Sigulda and Gauja National Park, with castles and forest trails, is roughly an hour away by train. Choose the beach in summer and the forest the rest of the year. |
 
 ## When to go
 

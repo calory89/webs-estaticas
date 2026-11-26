@@ -89,23 +89,14 @@ Buena parte de lo mejor de la ciudad no cuesta nada. El interior de la catedral,
 
 - Tapas gratis con la bebida en los bares que todavía las ponen, sobre todo fuera de la Rúa do Franco.
 
-## Itinerario: Santiago de Compostela en 2 días
+## Qué ver en Santiago de Compostela en 2 días: ruta día a día
 
-### Día 1: catedral, zona vieja y Alameda
+**Itinerario de 2 días en Santiago de Compostela**
 
-**Mañana:** entra en la catedral a primera hora, luego el Pórtico da Gloria y el museo si has reservado. Rodea el templo por la Quintana, Praterías y la Azabachería, y entra en San Martiño Pinario.
-
-**Tarde:** come algo de pulpo y empanada en la zona vieja (lejos del Franco si puedes), baja por la Rúa do Vilar y la Rúa Nova, y sube a las cubiertas de la catedral si conseguiste entradas. Termina en la Alameda al atardecer.
-
-**Noche:** vinos por la Rúa da Raíña y paseo nocturno por el Obradoiro iluminado y la Quintana.
-
-### Día 2: mercado, Bonaval y Sar
-
-**Mañana:** Mercado de Abastos temprano, y desde allí a pie al Museo do Pobo Galego, el parque de Bonaval y el CGAC, todos juntos.
-
-**Tarde:** come en el propio mercado o en la Rúa de San Pedro. Después, paseo hasta la Colexiata de Santa María do Sar, o bus a la Cidade da Cultura si prefieres arquitectura contemporánea.
-
-**Noche:** cena en el Ensanche, donde los precios bajan y los raciones suben, y una última vuelta por la zona vieja.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Catedral, zona vieja y Alameda | Entra en la catedral a primera hora, luego el Pórtico da Gloria y el museo si has reservado. Rodea el templo por la Quintana, Praterías y la Azabachería, y entra en San Martiño Pinario. | Come algo de pulpo y empanada en la zona vieja (lejos del Franco si puedes), baja por la Rúa do Vilar y la Rúa Nova, y sube a las cubiertas de la catedral si conseguiste entradas. Termina en la Alameda al atardecer. | Vinos por la Rúa da Raíña y paseo nocturno por el Obradoiro iluminado y la Quintana. |
+| Día 2 · Mercado, Bonaval y Sar | Mercado de Abastos temprano, y desde allí a pie al Museo do Pobo Galego, el parque de Bonaval y el CGAC, todos juntos. | Come en el propio mercado o en la Rúa de San Pedro. Después, paseo hasta la Colexiata de Santa María do Sar, o bus a la Cidade da Cultura si prefieres arquitectura contemporánea. | Cena en el Ensanche, donde los precios bajan y los raciones suben, y una última vuelta por la zona vieja. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -169,9 +160,12 @@ Una vez en la ciudad, olvídate del transporte: el casco histórico es peatonal 
 
 ## Cuánto cuesta un viaje a Santiago de Compostela
 
-- **Presupuesto ajustado (60-80 € al día por persona):** albergue o pensión en San Pedro (25-40 €), menú del día y raciones (25 €), catedral gratis y algún museo barato (5 €).
+**Presupuesto orientativo por día**
 
-- **Presupuesto medio (110-160 € al día por persona):** hotel en el Ensanche o la zona vieja compartiendo habitación (40-60 €), comidas y cenas en restaurante con vino (45-60 €), cubiertas de la catedral, Pórtico y museos (25-30 €).
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Presupuesto ajustado | 60-80 € al día por persona | Albergue o pensión en San Pedro (25-40 €), menú del día y raciones (25 €), catedral gratis y algún museo barato (5 €). |
+| Presupuesto medio | 110-160 € al día por persona | Hotel en el Ensanche o la zona vieja compartiendo habitación (40-60 €), comidas y cenas en restaurante con vino (45-60 €), cubiertas de la catedral, Pórtico y museos (25-30 €). |
 
 ## Excursiones de un día desde Santiago de Compostela
 

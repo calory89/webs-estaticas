@@ -79,23 +79,14 @@ Lo mejor de la ciudad no está en ningún edificio. Estos planes son los que har
 
 Casi todo lo bueno de la ciudad es gratis: el centro histórico, los puentes, el mercado, el patio del castillo si subes a pie, Metelkova, el parque Tivoli y las exposiciones al aire libre. Hay también **free tours** diarios desde la plaza Prešeren (deja propina, unos 10 €). Los coches eléctricos **Kavalir** recorren la zona peatonal gratis; se paran levantando la mano y están pensados sobre todo para gente mayor o con movilidad reducida, así que úsalos con cabeza. El agua del grifo y de las fuentes públicas es buena: lleva botella.
 
-## Itinerario: Liubliana en 2 días
+## Qué ver en Liubliana en 2 días: ruta día a día
 
-### Día 1: centro histórico y castillo
+**Itinerario de 2 días en Liubliana**
 
-**Mañana:** empieza en la plaza Prešeren y la iglesia franciscana, cruza el Triple Puente y entra al mercado antes de las diez. Sigue por la catedral, el Puente de los Carniceros y el del Dragón.
-
-**Tarde:** come en el mercado o en un menú del día y sube al castillo por la tarde, cuando hay mejor luz para fotografiar los Alpes. Baja por Stari trg y Gornji trg hasta la fuente de los Tres Ríos.
-
-**Noche:** cena en la zona de Trubarjeva, con locales más baratos, y paseo por el río iluminado. Si te apetece fiesta, Metelkova está a 10 minutos.
-
-### Día 2: Plečnik, Trnovo y Tivoli
-
-**Mañana:** Biblioteca Nacional, plaza del Congreso y Križanke. Desde ahí, en 15 minutos llegas andando a la Casa de Plečnik en Trnovo, con reserva hecha.
-
-**Tarde:** paseo por Krakovo y vuelta por el río hasta el centro. Sube a Nebotičnik y después cruza al parque Tivoli por la calle Cankarjeva.
-
-**Noche:** barco por el río si no lo hiciste, o vino en la orilla de Petkovškovo nabrežje. Si es viernes en temporada, cambia la comida por Odprta kuhna.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Centro histórico y castillo | Empieza en la plaza Prešeren y la iglesia franciscana, cruza el Triple Puente y entra al mercado antes de las diez. Sigue por la catedral, el Puente de los Carniceros y el del Dragón. | Come en el mercado o en un menú del día y sube al castillo por la tarde, cuando hay mejor luz para fotografiar los Alpes. Baja por Stari trg y Gornji trg hasta la fuente de los Tres Ríos. | Cena en la zona de Trubarjeva, con locales más baratos, y paseo por el río iluminado. Si te apetece fiesta, Metelkova está a 10 minutos. |
+| Día 2 · Plečnik, Trnovo y Tivoli | Biblioteca Nacional, plaza del Congreso y Križanke. Desde ahí, en 15 minutos llegas andando a la Casa de Plečnik en Trnovo, con reserva hecha. | Paseo por Krakovo y vuelta por el río hasta el centro. Sube a Nebotičnik y después cruza al parque Tivoli por la calle Cankarjeva. | Barco por el río si no lo hiciste, o vino en la orilla de Petkovškovo nabrežje. Si es viernes en temporada, cambia la comida por Odprta kuhna. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -159,9 +150,12 @@ Dentro de la ciudad, andarás casi todo. Los autobuses urbanos (LPP) se pagan co
 
 Eslovenia ya no es barata como hace diez años, pero sigue por debajo de Viena o Múnich. Por persona y día, sin vuelos:
 
-- **Ajustado: unos 60-80 €.** Cama en hostal, menú del día, burek o mercado para la cena y visitas gratuitas.
+**Presupuesto orientativo por día**
 
-- **Medio: unos 130-180 €.** Hotel céntrico compartido en pareja, comidas en gostilna, castillo, barco y alguna copa de vino.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | unos 60-80 € | Cama en hostal, menú del día, burek o mercado para la cena y visitas gratuitas. |
+| Medio | unos 130-180 € | Hotel céntrico compartido en pareja, comidas en gostilna, castillo, barco y alguna copa de vino. |
 
 - **Excursión de un día:** suma entre 15 y 50 € según destino y entradas.
 

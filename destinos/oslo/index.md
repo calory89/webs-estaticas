@@ -37,15 +37,17 @@ Otra opción muy local son las saunas flotantes del puerto, como KOK. Se reserva
 
 Si vas en invierno, hay esquí de fondo y alpino a unos minutos de la ciudad en metro. En verano, senderismo en Nordmarka o bicicleta por la orilla del fiordo. Y los miradores de Ekeberg, con vistas a toda la bahía, son perfectos para la hora de la luz baja.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Oslo en 3 días: ruta día a día
 
 Tres días bastan para verlo bien sin ir corriendo. Con dos, te quedas sin ritmo tranquilo; con cuatro, empiezas a salir de la ciudad.
 
-- **Día 1, centro y puerto:** Ópera, Museo Munch, fortaleza de Akershus, paseo por Aker Brygge y cena temprana en Mathallen o en alguna zona de Grønland.
+**Itinerario de 3 días en Oslo**
 
-- **Día 2, museos y Frogner:** Museo Nacional por la mañana, Parque Vigeland después y tarde libre en Grünerløkka, con paseo por el Akerselva.
-
-- **Día 3, fiordo y colinas:** bus o ferri a Bygdøy para el Fram y el Kon-Tiki, o barco a una isla; si te sobra tiempo, Holmenkollen al final del día.
+| Día | Plan |
+|---|---|
+| Día 1 | Centro y puerto. Ópera, Museo Munch, fortaleza de Akershus, paseo por Aker Brygge y cena temprana en Mathallen o en alguna zona de Grønland. |
+| Día 2 | Museos y Frogner. Museo Nacional por la mañana, Parque Vigeland después y tarde libre en Grünerløkka, con paseo por el Akerselva. |
+| Día 3 | Fiordo y colinas. Bus o ferri a Bygdøy para el Fram y el Kon-Tiki, o barco a una isla; si te sobra tiempo, Holmenkollen al final del día. |
 
 ## Cuándo ir a Oslo
 

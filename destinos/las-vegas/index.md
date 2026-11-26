@@ -39,17 +39,18 @@ Sobre el juego: hay que tener 21 años para entrar a jugar y para beber alcohol.
 
 Para salir de la ciudad hay excursiones muy buenas. **Red Rock Canyon** está a unos 30 minutos al oeste y tiene rutas cortas entre rocas rojas. **Valley of Fire**, a una hora al noreste, es aún más espectacular. La **presa Hoover** queda a unos 45 minutos. El Gran Cañón es otra historia: son varias horas de ida, así que o duermes por la zona o contratas un vuelo organizado.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Las Vegas en 4 días: ruta día a día
 
 Con tres días tienes lo esencial; con cuatro, vas más tranquilo y puedes hacer una excursión. Más de cinco, sin coche y sin ganas de apostar, se hace largo.
 
-- **Día 1:** llegada, paseo por el sur del Strip, el cartel de bienvenida y cena. Por la noche, Bellagio y las fuentes.
+**Itinerario de 4 días en Las Vegas**
 
-- **Día 2:** mañana en Venetian y Palazzo, tarde en Caesars Palace y sus tiendas, y noche en el LINQ o en un espectáculo.
-
-- **Día 3:** Red Rock Canyon o Valley of Fire por la mañana (mejor con coche alquilado o excursión) y Downtown al atardecer, con el Neon Museum y Fremont Street.
-
-- **Día 4:** Mob Museum, el Arts District y compras en los outlets, si te quedan ganas.
+| Día | Plan |
+|---|---|
+| Día 1 | Llegada, paseo por el sur del Strip, el cartel de bienvenida y cena. Por la noche, Bellagio y las fuentes. |
+| Día 2 | Mañana en Venetian y Palazzo, tarde en Caesars Palace y sus tiendas, y noche en el LINQ o en un espectáculo. |
+| Día 3 | Red Rock Canyon o Valley of Fire por la mañana (mejor con coche alquilado o excursión) y Downtown al atardecer, con el Neon Museum y Fremont Street. |
+| Día 4 | Mob Museum, el Arts District y compras en los outlets, si te quedan ganas. |
 
 ## Cuándo ir: clima y temporadas
 

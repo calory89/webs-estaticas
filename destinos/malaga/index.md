@@ -93,19 +93,15 @@ Buena parte de lo mejor de la ciudad no cuesta nada. El Teatro Romano, el Soho, 
 
 - Mercado de Atarazanas: entrar y mirar no cuesta nada; una ración de boquerones, unos 8 €.
 
-## Itinerario: Málaga en 3 días
+## Qué ver en Málaga en 3 días: ruta día a día
 
-### Día 1: Alcazaba, centro y atardecer
+**Itinerario de 3 días en Málaga**
 
-**Mañana:** Alcazaba a primera hora y subida a Gibralfaro. Baja andando y pasa por el Teatro Romano. **Tarde:** come en el centro, después Museo Picasso y paseo por la Plaza de la Merced, Calle Granada y la Catedral (sube a las cubiertas a última hora). **Noche:** vino en Antigua Casa de Guardia y tapas por los alrededores de la plaza de Uncibay.
-
-### Día 2: mercado, puerto y playa
-
-**Mañana:** Mercado de Atarazanas, Museo de Málaga y el Soho. **Tarde:** Muelle Uno, Pompidou si te apetece otro museo, y caminata por la Malagueta hasta Pedregalejo (una hora larga, o bus 11). **Noche:** espetos y fritura en Pedregalejo o El Palo y vuelta en bus o taxi.
-
-### Día 3: excursión
-
-**Mañana y tarde:** Caminito del Rey (tren de cercanías a El Chorro, reserva previa) o Nerja en bus. **Noche:** vuelta a Málaga y última cena en el centro. Si tu vuelo sale temprano, cambia la excursión por el Jardín Botánico o un día de playa.
+| Día | Plan |
+|---|---|
+| Día 1 | Alcazaba, centro y atardecer. Mañana: Alcazaba a primera hora y subida a Gibralfaro. Baja andando y pasa por el Teatro Romano. Tarde: come en el centro, después Museo Picasso y paseo por la Plaza de la Merced, Calle Granada y la Catedral (sube a las cubiertas a última hora). Noche: vino en Antigua Casa de Guardia y tapas por los alrededores de la plaza de Uncibay. |
+| Día 2 | Mercado, puerto y playa. Mañana: Mercado de Atarazanas, Museo de Málaga y el Soho. Tarde: Muelle Uno, Pompidou si te apetece otro museo, y caminata por la Malagueta hasta Pedregalejo (una hora larga, o bus 11). Noche: espetos y fritura en Pedregalejo o El Palo y vuelta en bus o taxi. |
+| Día 3 | Excursión. Mañana y tarde: Caminito del Rey (tren de cercanías a El Chorro, reserva previa) o Nerja en bus. Noche: vuelta a Málaga y última cena en el centro. Si tu vuelo sale temprano, cambia la excursión por el Jardín Botánico o un día de playa. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -169,12 +165,14 @@ El centro se hace entero andando. Solo necesitarás bus para Gibralfaro, Pedrega
 
 ## Cuánto cuesta un viaje a Málaga
 
-- **Presupuesto ajustado: entre 70 y 90 € al día** por persona. Habitación compartida o alojamiento barato en El Perchel, menús del día, tapas, museos gratis y transporte en bus y tren.
+**Presupuesto orientativo por día**
 
-- **Presupuesto medio: entre 130 y 180 € al día** por persona. Hotel de tres o cuatro estrellas en el centro o el Soho compartiendo doble, cenas de pescado, entradas a la Alcazaba, Picasso y la Catedral, y una excursión.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Presupuesto ajustado | entre 70 y 90 € al día | Por persona. Habitación compartida o alojamiento barato en El Perchel, menús del día, tapas, museos gratis y transporte en bus y tren. |
+| Presupuesto medio | entre 130 y 180 € al día | Por persona. Hotel de tres o cuatro estrellas en el centro o el Soho compartiendo doble, cenas de pescado, entradas a la Alcazaba, Picasso y la Catedral, y una excursión. |
 
 - Entradas principales del viaje: unos 40 € sumando Alcazaba, Gibralfaro, Catedral con cubiertas y Museo Picasso.
-
 - Excursión al Caminito del Rey con tren: entre 20 y 30 €.
 
 ## Excursiones de un día desde Málaga

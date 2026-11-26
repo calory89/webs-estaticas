@@ -37,17 +37,19 @@ Cruza el Gran Canal en **traghetto**, esas góndolas baratas de pie que unen las
 
 Una excursión a las islas de la laguna da buen resultado. **Burano** es famosa por sus casas de colores y sus encajes; **Murano** es la isla del vidrio, con muchos talleres que son pura trampa para turistas, así que busca uno donde veas soplar de verdad; y **Torcello** es casi vacía, con un mosaico bizantino precioso en su catedral. Y si buscas una librería curiosa, la **Libreria Acqua Alta** tiene libros apilados en una góndola y bañeras.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Venecia en 3 días: ruta día a día
 
 Dos días completos son el mínimo razonable. Con tres lo haces bien y sin correr, y con cuatro puedes añadir islas y quedarte sin prisa.
 
 ### Ruta de tres días
 
-- **Día 1:** llegada, paseo por Cannaregio y el Gueto, vaporetto línea 1 por el Gran Canal al atardecer y cena de cicchetti cerca de Rialto.
+**Itinerario de 3 días en Venecia**
 
-- **Día 2:** San Marcos a primera hora, Palacio Ducal, comida tranquila en Castello y tarde en Dorsoduro con Zattere y Salute.
-
-- **Día 3:** mercado de Rialto por la mañana, Frari y San Rocco, y por la tarde Burano y Torcello, o el campanile de San Giorgio si prefieres no moverte de la ciudad.
+| Día | Plan |
+|---|---|
+| Día 1 | Llegada, paseo por Cannaregio y el Gueto, vaporetto línea 1 por el Gran Canal al atardecer y cena de cicchetti cerca de Rialto. |
+| Día 2 | San Marcos a primera hora, Palacio Ducal, comida tranquila en Castello y tarde en Dorsoduro con Zattere y Salute. |
+| Día 3 | Mercado de Rialto por la mañana, Frari y San Rocco, y por la tarde Burano y Torcello, o el campanile de San Giorgio si prefieres no moverte de la ciudad. |
 
 ## Cuándo ir: clima y temporadas
 
@@ -87,11 +89,13 @@ Dentro de la ciudad, lo habitual es ir a pie. El vaporetto (transporte público 
 
 ## Presupuesto orientativo por día
 
-- **Muy ajustado (45-70 euros):** albergue o Mestre, cicchetti, mucho paseo a pie y pocas entradas.
+**Presupuesto orientativo por día**
 
-- **Medio (100-150 euros):** habitación doble sencilla, comidas en bacari y trattorias, un par de museos y vaporetto.
-
-- **Cómodo (200 euros o más):** hotel con vistas, restaurantes sentados y excursión a las islas.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Muy ajustado | 45-70 euros | Albergue o Mestre, cicchetti, mucho paseo a pie y pocas entradas. |
+| Medio | 100-150 euros | Habitación doble sencilla, comidas en bacari y trattorias, un par de museos y vaporetto. |
+| Cómodo | 200 euros o más | Hotel con vistas, restaurantes sentados y excursión a las islas. |
 
 Lo que más sube la cuenta son el alojamiento y las entradas. La comida se puede controlar mucho.
 

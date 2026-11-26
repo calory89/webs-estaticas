@@ -101,25 +101,13 @@ Norway punishes your wallet, but Bergen's best views cost nothing if you use you
 
 ## Bergen itinerary: 3 days
 
-### Day 1: Bryggen, Fløyen and the harbour
+**3-day itinerary for Bergen**
 
-**Morning:** Start early at Bryggen before the cruise passengers arrive, then explore the back alleys and Schøtstuene. Walk to Bergenhus Fortress and Haakon's Hall.
-
-**Afternoon:** Look around the Fish Market, then grab lunch away from the stalls. Take Fløibanen up (or hike), wander to Skomakerdiket lake and walk down through the residential lanes.
-
-**Evening:** Dinner at Pingvinen on Vaskerelven for traditional Norwegian food at fair prices, then a beer around Skostredet.
-
-### Day 2: Ulriken or museums, then Nordnes
-
-**Morning:** If it is clear, take Ulriken643 and either come back down or hike Vidden to Fløyen (in which case it becomes a full day). If it is raining, spend the morning in KODE.
-
-**Afternoon:** Ride Bybanen south to Troldhaugen and Fantoft, or walk across to Nordnes and the Aquarium.
-
-**Evening:** Sunset in Nordnesparken, then dinner at a fish restaurant on the harbour such as Enhjørningen in Bryggen if you want to splurge.
-
-### Day 3: A fjord day
-
-**Morning to evening:** Do the Norway in a Nutshell route (train to Myrdal, the Flåm Railway down to Flåm, the Nærøyfjord boat to Gudvangen, bus to Voss, train back). It takes 10-12 hours. For a shorter day, do the Mostraumen cruise in the morning and spend the afternoon in Sandviken and Gamle Bergen.
+| Day | Plan |
+|---|---|
+| Day 1 | Bryggen, Fløyen and the harbour. Morning: Start early at Bryggen before the cruise passengers arrive, then explore the back alleys and Schøtstuene. Walk to Bergenhus Fortress and Haakon's Hall. Afternoon: Look around the Fish Market, then grab lunch away from the stalls. Take Fløibanen up (or hike), wander to Skomakerdiket lake and walk down through the residential lanes. Evening: Dinner at Pingvinen on Vaskerelven for traditional Norwegian food at fair prices, then a beer around Skostredet. |
+| Day 2 | Ulriken or museums, then Nordnes. Morning: If it is clear, take Ulriken643 and either come back down or hike Vidden to Fløyen (in which case it becomes a full day). If it is raining, spend the morning in KODE. Afternoon: Ride Bybanen south to Troldhaugen and Fantoft, or walk across to Nordnes and the Aquarium. Evening: Sunset in Nordnesparken, then dinner at a fish restaurant on the harbour such as Enhjørningen in Bryggen if you want to splurge. |
+| Day 3 | A fjord day. Morning to evening: Do the Norway in a Nutshell route (train to Myrdal, the Flåm Railway down to Flåm, the Nærøyfjord boat to Gudvangen, bus to Voss, train back). It takes 10-12 hours. For a shorter day, do the Mostraumen cruise in the morning and spend the afternoon in Sandviken and Gamle Bergen. |
 
 ## What is overrated (and what to do instead)
 
@@ -165,9 +153,12 @@ The centre is walkable, though hilly. Buses and Bybanen are run by Skyss: buy ti
 
 ## How much a trip to Bergen costs
 
-- **Shoestring: €90-120 a day.** Hostel dorm (€40-60), supermarket food and one cheap bakery stop (€25-30), hiking instead of funiculars, one museum (€13), public transport (€5).
+**Rough daily budget**
 
-- **Mid-range: €220-300 a day.** Double room in a central hotel (€150-200 split between two, so about €90 each), lunch out and a restaurant dinner (€70-90), Fløibanen or Ulriken (€17-35), museums (€20-30), transport (€10).
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €90-120 a day | Hostel dorm (€40-60), supermarket food and one cheap bakery stop (€25-30), hiking instead of funiculars, one museum (€13), public transport (€5). |
+| Mid-range | €220-300 a day | Double room in a central hotel (€150-200 split between two, so about €90 each), lunch out and a restaurant dinner (€70-90), Fløibanen or Ulriken (€17-35), museums (€20-30), transport (€10). |
 
 - **Extras:** Norway in a Nutshell costs roughly €200-280 per person depending on season and how you book. The Mostraumen cruise is about €80.
 

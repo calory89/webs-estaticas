@@ -41,15 +41,17 @@ Some of the best hours here involve very little sightseeing.
 
 - Take a day trip to Kutná Hora, about an hour by train, to see the Sedlec Ossuary, decorated with human bones.
 
-## How many days and a suggested route
+## Prague itinerary: 3 days, day by day
 
 Three days is the sweet spot. Two works if you skip the extras, and four lets you add a day trip.
 
-**Day 1:** Old Town Square, then Josefov, then a slow afternoon in the lanes towards the river. Cross Charles Bridge in the evening, when the light is softer and the early-morning magic is gone anyway.
+**3-day itinerary for Prague**
 
-**Day 2:** Castle first thing, then Strahov for lunch, then walk down through Petřín to Malá Strana and Kampa. Finish with dinner in a Malá Strana side street, not on the main drag.
-
-**Day 3:** Vyšehrad in the morning, a stroll along the Náplavka riverbank, then Letná or Vinohrady for the evening. If you have a fourth day, spend it in Kutná Hora.
+| Day | Plan |
+|---|---|
+| Day 1 | Old Town Square, then Josefov, then a slow afternoon in the lanes towards the river. Cross Charles Bridge in the evening, when the light is softer and the early-morning magic is gone anyway. |
+| Day 2 | Castle first thing, then Strahov for lunch, then walk down through Petřín to Malá Strana and Kampa. Finish with dinner in a Malá Strana side street, not on the main drag. |
+| Day 3 | Vyšehrad in the morning, a stroll along the Náplavka riverbank, then Letná or Vinohrady for the evening. If you have a fourth day, spend it in Kutná Hora. |
 
 ## When to go
 

@@ -99,21 +99,12 @@ Almost free: a glass of manzanilla at the bar costs €2-3, and tapas run about 
 
 ## Cadiz itinerary: 2 days
 
-### Day 1: Old town, cathedral and La Caleta
+**2-day itinerary for Cadiz**
 
-**Morning:** Start at the Mercado Central for breakfast or an early tapa. Walk to Torre Tavira for the camera obscura, then cut through to Plaza de las Flores. Finish the morning at the cathedral and climb the tower.
-
-**Afternoon:** See the Roman Theatre in El Pópulo, then head down Campo del Sur along the sea wall. Have a late lunch in La Viña around 2:30pm, followed by a siesta.
-
-**Evening:** Walk to La Caleta, visit the Castillo de Santa Catalina, then go out along the causeway for sunset. Have dinner and drinks back in La Viña or around Calle Zorrilla.
-
-### Day 2: Museums, gardens and the big beach
-
-**Morning:** Visit the Museo de Cádiz on Plaza de Mina, then the Oratorio de San Felipe Neri. Do the Gadir site if you've booked it. Walk through Parque Genovés and along the Alameda.
-
-**Afternoon:** Take bus 1 to Playa de la Victoria for a beach afternoon and a chiringuito lunch.
-
-**Evening:** Walk back along the promenade towards Puerta de Tierra, or ride the bus. End with a tapas crawl around Plaza de San Agustín and Calle Plocia, where Taberna El Tío de la Tiza and the wine bars nearby stay lively.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Old town, cathedral and La Caleta | Start at the Mercado Central for breakfast or an early tapa. Walk to Torre Tavira for the camera obscura, then cut through to Plaza de las Flores. Finish the morning at the cathedral and climb the tower. | See the Roman Theatre in El Pópulo, then head down Campo del Sur along the sea wall. Have a late lunch in La Viña around 2:30pm, followed by a siesta. | Walk to La Caleta, visit the Castillo de Santa Catalina, then go out along the causeway for sunset. Have dinner and drinks back in La Viña or around Calle Zorrilla. |
+| Day 2 · Museums, gardens and the big beach | Visit the Museo de Cádiz on Plaza de Mina, then the Oratorio de San Felipe Neri. Do the Gadir site if you've booked it. Walk through Parque Genovés and along the Alameda. | Take bus 1 to Playa de la Victoria for a beach afternoon and a chiringuito lunch. | Walk back along the promenade towards Puerta de Tierra, or ride the bus. End with a tapas crawl around Plaza de San Agustín and Calle Plocia, where Taberna El Tío de la Tiza and the wine bars nearby stay lively. |
 
 ## What is overrated (and what to do instead)
 
@@ -173,9 +164,12 @@ In town, you walk. The old town is about 1.5 km across. Urban buses (line 1 and 
 
 ## How much a trip to Cadiz costs
 
-- **Shoestring: about €50-70 a day.** That covers a hostel bed (€30-40), market food and tapas (€15-20), a couple of buses and free sights.
+**Rough daily budget**
 
-- **Mid-range: about €120-180 a day per person (sharing a double).** That covers a hotel in the old town (€90-150 per room), a tapas lunch and a seafood dinner (€50), and entry to the cathedral, Torre Tavira and the museum (€20).
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | about €50-70 a day | That covers a hostel bed (€30-40), market food and tapas (€15-20), a couple of buses and free sights. |
+| Mid-range | about €120-180 a day per person (sharing a double) | That covers a hotel in the old town (€90-150 per room), a tapas lunch and a seafood dinner (€50), and entry to the cathedral, Torre Tavira and the museum (€20). |
 
 - **Extras:** flamenco €15-25, catamaran €3 each way, train to Jerez about €4.
 

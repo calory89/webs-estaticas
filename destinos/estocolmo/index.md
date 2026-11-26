@@ -37,17 +37,18 @@ Lo mejor de la ciudad es el agua. Coge un barco de cercanías hacia el archipié
 
 Haz una pausa de **fika**, el café con bollo que casi funciona como institución nacional. Pide un kanelbulle (bollo de canela) y quédate un rato. En verano puedes bañarte en varios puntos de la ciudad, y en invierno, patinar sobre hielo en Kungsträdgården cuando la pista está abierta. Otro plan barato es pasear por Södermalm, la zona de tiendas de segunda mano y cafés de SoFo, el barrio al sur de Folkungagatan.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Estocolmo en 4 días: ruta día a día
 
 Tres días bastan para lo esencial. Con dos vas con prisa, y con cuatro te da tiempo a salir al archipiélago o a Drottningholm sin agobios.
 
-- **Día 1:** Gamla Stan por la mañana, almuerzo en la zona, tarde en Stadshuset y paseo por Södermalm hasta Monteliusvägen al atardecer.
+**Itinerario de 4 días en Estocolmo**
 
-- **Día 2:** Djurgården entero. Vasa a primera hora, Skansen después, y si te queda energía, el paseo junto al agua.
-
-- **Día 3:** Skeppsholmen y Moderna Museet por la mañana, Fotografiska por la tarde y cena en Södermalm.
-
-- **Día 4 (opcional):** barco al archipiélago o a Drottningholm.
+| Día | Plan |
+|---|---|
+| Día 1 | Gamla Stan por la mañana, almuerzo en la zona, tarde en Stadshuset y paseo por Södermalm hasta Monteliusvägen al atardecer. |
+| Día 2 | Djurgården entero. Vasa a primera hora, Skansen después, y si te queda energía, el paseo junto al agua. |
+| Día 3 | Skeppsholmen y Moderna Museet por la mañana, Fotografiska por la tarde y cena en Södermalm. |
+| Día 4 | (opcional). Barco al archipiélago o a Drottningholm. |
 
 ## Cuándo ir
 

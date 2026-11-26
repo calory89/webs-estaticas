@@ -91,31 +91,15 @@ Osaka es de las ciudades grandes más baratas de Japón para pasear. Estos plane
 
 - El parque Expo '70 en Suita, con la Torre del Sol de Taro Okamoto (la entrada al parque cuesta un par de euros).
 
-## Itinerario: Osaka en 3 días
+## Qué ver en Osaka en 3 días: ruta día a día
 
-### Día 1: el sur, Namba y Dotonbori
+**Itinerario de 3 días en Osaka**
 
-**Mañana:** Kuromon a primera hora para desayunar fruta y algo de marisco. Luego Den Den Town, que está al lado.
-
-**Tarde:** paseo por Shinsaibashi-suji y Amerikamura. Café y compras.
-
-**Noche:** Hozenji Yokocho al anochecer y cena en Dotonbori a base de takoyaki y okonomiyaki. Si te queda energía, copa en Ura-Namba.
-
-### Día 2: el castillo y el norte
-
-**Mañana:** castillo de Osaka y su parque a primera hora, antes de que lleguen los grupos.
-
-**Tarde:** metro hasta Tenjimbashisuji Rokuchome y paseo por la calle comercial hasta el santuario Tenmangu. Desde allí, a pie o una parada de metro, Nakazakicho.
-
-**Noche:** Umeda Sky Building para el atardecer y cena en Takimi Koji o en los bares de Tenma.
-
-### Día 3: Tennoji, Shinsekai y la bahía
-
-**Mañana:** Shitennoji y tranvía Hankai hasta Sumiyoshi Taisha.
-
-**Tarde:** metro hasta Osakako y acuario Kaiyukan.
-
-**Noche:** vuelta a Shinsekai para cenar kushikatsu bajo la torre Tsutenkaku y, si quieres, terminar en Spa World.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · El sur, Namba y Dotonbori | Kuromon a primera hora para desayunar fruta y algo de marisco. Luego Den Den Town, que está al lado. | Paseo por Shinsaibashi-suji y Amerikamura. Café y compras. | Hozenji Yokocho al anochecer y cena en Dotonbori a base de takoyaki y okonomiyaki. Si te queda energía, copa en Ura-Namba. |
+| Día 2 · El castillo y el norte | Castillo de Osaka y su parque a primera hora, antes de que lleguen los grupos. | Metro hasta Tenjimbashisuji Rokuchome y paseo por la calle comercial hasta el santuario Tenmangu. Desde allí, a pie o una parada de metro, Nakazakicho. | Umeda Sky Building para el atardecer y cena en Takimi Koji o en los bares de Tenma. |
+| Día 3 · Tennoji, Shinsekai y la bahía | Shitennoji y tranvía Hankai hasta Sumiyoshi Taisha. | Metro hasta Osakako y acuario Kaiyukan. | Vuelta a Shinsekai para cenar kushikatsu bajo la torre Tsutenkaku y, si quieres, terminar en Spa World. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -183,9 +167,12 @@ Si vuelas al aeropuerto de Itami, que es sobre todo nacional, hay monorraíl y b
 
 Referencia: 1 € equivale a unos 160-170 yenes. Por persona y día, sin vuelos:
 
-- **Presupuesto ajustado (50-80 €/día):** hostal o cápsula (25-40 €), comida de konbini y puestos callejeros (15-25 €), metro (5 €), visitas gratis o baratas.
+**Presupuesto orientativo por día**
 
-- **Presupuesto medio (120-180 €/día):** hotel de negocios en habitación doble compartida (40-70 € por persona), comidas sentado (35-50 €), transporte y un par de entradas (20-30 €).
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Presupuesto ajustado | 50-80 €/día | Hostal o cápsula (25-40 €), comida de konbini y puestos callejeros (15-25 €), metro (5 €), visitas gratis o baratas. |
+| Presupuesto medio | 120-180 €/día | Hotel de negocios en habitación doble compartida (40-70 € por persona), comidas sentado (35-50 €), transporte y un par de entradas (20-30 €). |
 
 - **Extra:** Universal Studios añade entre 60 y 150 € si sumas el Express Pass.
 

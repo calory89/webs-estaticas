@@ -95,21 +95,14 @@ Plenty of the best things in Barcelona cost nothing. A good free day is easy to 
 
 ## Barcelona itinerary: 4 days
 
-### Day 1: Gothic Quarter, El Born and Barceloneta
+**4-day itinerary for Barcelona**
 
-**Morning:** start at Plaça de Catalunya, walk down La Rambla quickly (look, don't eat), detour into La Boqueria before 10am, then cross into the Gothic Quarter and the Cathedral. **Afternoon:** lunch on a menú del día, then the Picasso Museum and Santa Maria del Mar in El Born, with a stroll through Parc de la Ciutadella. **Evening:** walk to Barceloneta for bombas and beer at La Cova Fumada (lunchtime-focused, so check if open) or another old-school bar, then a sunset along the seafront.
-
-### Day 2: Sagrada Família, Sant Pau, Park Güell and Gràcia
-
-**Morning:** Sagrada Família at your booked slot, then walk Avinguda de Gaudí to Sant Pau. **Afternoon:** bus or taxi up to Park Güell for an afternoon entry, then walk across to the Bunkers del Carmel for late-afternoon views. **Evening:** come down into Gràcia for dinner and a drink in Plaça del Sol or Plaça de la Virreina.
-
-### Day 3: Eixample, Raval and Poble Sec
-
-**Morning:** La Pedrera or Casa Batlló on Passeig de Gràcia, then wander the Eixample's grid of modernista facades. **Afternoon:** Palau de la Música tour, then cross to the Raval for the MACBA (the skateboarders outside are part of the show) and a coffee. **Evening:** vermouth around Sant Antoni, then pintxos on Carrer de Blai.
-
-### Day 4: Montjuïc and the beach
-
-**Morning:** funicular from Paral·lel up Montjuïc, the Fundació Miró and the castle. **Afternoon:** walk down via the gardens to the MNAC, see the Romanesque rooms and the view from the steps. **Evening:** metro to Poblenou, a swim or a walk at Bogatell, then dinner on Rambla del Poblenou, the calmer, local version of La Rambla.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Gothic Quarter, El Born and Barceloneta | Start at Plaça de Catalunya, walk down La Rambla quickly (look, don't eat), detour into La Boqueria before 10am, then cross into the Gothic Quarter and the Cathedral. | Lunch on a menú del día, then the Picasso Museum and Santa Maria del Mar in El Born, with a stroll through Parc de la Ciutadella. | Walk to Barceloneta for bombas and beer at La Cova Fumada (lunchtime-focused, so check if open) or another old-school bar, then a sunset along the seafront. |
+| Day 2 · Sagrada Família, Sant Pau, Park Güell and Gràcia | Sagrada Família at your booked slot, then walk Avinguda de Gaudí to Sant Pau. | Bus or taxi up to Park Güell for an afternoon entry, then walk across to the Bunkers del Carmel for late-afternoon views. | Come down into Gràcia for dinner and a drink in Plaça del Sol or Plaça de la Virreina. |
+| Day 3 · Eixample, Raval and Poble Sec | La Pedrera or Casa Batlló on Passeig de Gràcia, then wander the Eixample's grid of modernista facades. | Palau de la Música tour, then cross to the Raval for the MACBA (the skateboarders outside are part of the show) and a coffee. | Vermouth around Sant Antoni, then pintxos on Carrer de Blai. |
+| Day 4 · Montjuïc and the beach | Funicular from Paral·lel up Montjuïc, the Fundació Miró and the castle. | Walk down via the gardens to the MNAC, see the Romanesque rooms and the view from the steps. | Metro to Poblenou, a swim or a walk at Bogatell, then dinner on Rambla del Poblenou, the calmer, local version of La Rambla. |
 
 ## What is overrated (and what to do instead)
 
@@ -165,9 +158,12 @@ In the city, the metro is fast and covers almost everything. Skip single tickets
 
 ## How much a trip to Barcelona costs
 
-- **Shoestring: €70-100 a day.** Hostel dorm (€30-50), menú del día at lunch, supermarket breakfast, pintxos for dinner, one paid sight a day, T-casual for transport.
+**Rough daily budget**
 
-- **Mid-range: €180-260 a day per person** (sharing a double). Hotel in Eixample or Gràcia, two restaurant meals, two paid sights or a concert, the odd taxi.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €70-100 a day | Hostel dorm (€30-50), menú del día at lunch, supermarket breakfast, pintxos for dinner, one paid sight a day, T-casual for transport. |
+| Mid-range | €180-260 a day per person | (sharing a double). Hotel in Eixample or Gràcia, two restaurant meals, two paid sights or a concert, the odd taxi. |
 
 - **Big-ticket extras:** Sagrada Família with towers (about €40), Casa Batlló (€35-45), flamenco show (€35-50), day trip to Montserrat with rack railway (about €35-45 return).
 

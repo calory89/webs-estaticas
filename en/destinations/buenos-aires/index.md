@@ -59,17 +59,18 @@ A wetland reserve a few steps from the glass towers of Puerto Madero. It is a go
 
 - **Feria de Mataderos.** On Sundays, gaucho crafts, folk music and empanadas on the city's western edge.
 
-## How many days and a suggested route
+## Buenos Aires itinerary: 4 days, day by day
 
 Three days gives you the highlights, and four is the sweet spot. With five or six you can add Tigre or Colonia and still have slow mornings.
 
-**Day 1:** Plaza de Mayo, Avenida de Mayo, Café Tortoni, Palacio Barolo, then San Telmo for the evening.
+**4-day itinerary for Buenos Aires**
 
-**Day 2:** Recoleta Cemetery, a walk through Recoleta and the Ateneo bookshop, Teatro Colón tour, then dinner in Palermo.
-
-**Day 3:** Palermo parks and MALBA, a leisurely afternoon in Soho, and a milonga at night.
-
-**Day 4:** La Boca in the morning, then Puerto Madero and the Costanera Sur reserve. Or swap in Tigre or Colonia.
+| Day | Plan |
+|---|---|
+| Day 1 | Plaza de Mayo, Avenida de Mayo, Café Tortoni, Palacio Barolo, then San Telmo for the evening. |
+| Day 2 | Recoleta Cemetery, a walk through Recoleta and the Ateneo bookshop, Teatro Colón tour, then dinner in Palermo. |
+| Day 3 | Palermo parks and MALBA, a leisurely afternoon in Soho, and a milonga at night. |
+| Day 4 | La Boca in the morning, then Puerto Madero and the Costanera Sur reserve. Or swap in Tigre or Colonia. |
 
 ## When to go
 

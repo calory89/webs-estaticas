@@ -39,15 +39,17 @@ Un paseo en barco por los canales ayuda a orientarse el primer día. Las opcione
 
 Para salir de la ciudad, Haarlem queda a unos 15 minutos en tren y es una alternativa tranquila. Zaanse Schans, con sus molinos, es más turístico pero rápido de visitar en una mañana. En primavera, Keukenhof es la gran excursión de los tulipanes, aproximadamente de finales de marzo a mediados de mayo.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Ámsterdam en 3 días: ruta día a día
 
 Tres días es el punto justo. Con dos ves lo esencial; con cuatro o cinco te da tiempo a una excursión.
 
-- **Día 1:** llegada, paseo por el centro, Dam, Begijnhof y canales. Cena en el Jordaan.
+**Itinerario de 3 días en Ámsterdam**
 
-- **Día 2:** Rijksmuseum por la mañana, Museo Van Gogh después, Vondelpark para descansar y cena en De Pijp.
-
-- **Día 3:** Casa de Ana Frank a primera hora, Negen Straatjes, ferry a Noord y tarde en NDSM o en el EYE.
+| Día | Plan |
+|---|---|
+| Día 1 | Llegada, paseo por el centro, Dam, Begijnhof y canales. Cena en el Jordaan. |
+| Día 2 | Rijksmuseum por la mañana, Museo Van Gogh después, Vondelpark para descansar y cena en De Pijp. |
+| Día 3 | Casa de Ana Frank a primera hora, Negen Straatjes, ferry a Noord y tarde en NDSM o en el EYE. |
 
 ## Cuándo ir
 

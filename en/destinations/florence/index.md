@@ -59,15 +59,17 @@ The New Sacristy has Michelangelo's sculptures and a heavy, rather sombre atmosp
 
 - Join a cooking class focused on fresh pasta, which is easy to book and usually ends with a long lunch.
 
-## How many days and a suggested route
+## Florence itinerary: 3 days, day by day
 
 Two days covers the essentials. Three is the right number for most people. Four lets you add a day trip without rushing.
 
-**Day 1:** Duomo and dome climb early, Baptistery, lunch near San Lorenzo, Medici Chapels, then Piazza della Signoria and Ponte Vecchio at golden hour.
+**3-day itinerary for Florence**
 
-**Day 2:** Uffizi in the morning, Accademia after lunch, then evening drinks in Santo Spirito.
-
-**Day 3:** Santa Croce, then cross to Pitti and Boboli, finishing with San Miniato at sunset. If you have a fourth day, take the train to Siena.
+| Day | Plan |
+|---|---|
+| Day 1 | Duomo and dome climb early, Baptistery, lunch near San Lorenzo, Medici Chapels, then Piazza della Signoria and Ponte Vecchio at golden hour. |
+| Day 2 | Uffizi in the morning, Accademia after lunch, then evening drinks in Santo Spirito. |
+| Day 3 | Santa Croce, then cross to Pitti and Boboli, finishing with San Miniato at sunset. If you have a fourth day, take the train to Siena. |
 
 ## When to go
 

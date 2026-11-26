@@ -53,15 +53,17 @@ Zhenski Pazar is the open-air market for fruit, spices and clothes. It's rougher
 
 - **Day trips.** Rila Monastery is about two hours away, and Plovdiv is roughly two hours by train or bus. Both are doable in a day, though Rila is easier with a tour or rental car.
 
-## How many days and a suggested route
+## Sofia itinerary: 3 days, day by day
 
 Two days covers the centre. Three lets you add Boyana and Vitosha without rushing.
 
-- **Day 1:** Alexander Nevsky early, then Sveta Nedelya, the Serdica ruins, St George Rotunda, Banya Bashi and the Central Market Hall. Evening on Vitosha Boulevard.
+**3-day itinerary for Sofia**
 
-- **Day 2:** Boyana Church in the morning, then the National Museum of History if you like museums. Afternoon in Borisova Gradina and the area around the theatre.
-
-- **Day 3:** Vitosha mountain, or a day trip to Rila or Plovdiv.
+| Day | Plan |
+|---|---|
+| Day 1 | Alexander Nevsky early, then Sveta Nedelya, the Serdica ruins, St George Rotunda, Banya Bashi and the Central Market Hall. Evening on Vitosha Boulevard. |
+| Day 2 | Boyana Church in the morning, then the National Museum of History if you like museums. Afternoon in Borisova Gradina and the area around the theatre. |
+| Day 3 | Vitosha mountain, or a day trip to Rila or Plovdiv. |
 
 ## When to go
 

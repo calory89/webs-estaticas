@@ -101,23 +101,14 @@ En una ciudad tan cara, compensa saber qué no cuesta nada. Si duermes en un hot
 
 - Fuentes de agua potable por toda la ciudad: lleva botella y ahórrate 4 € cada vez.
 
-## Itinerario: Ginebra en 2 días
+## Qué ver en Ginebra en 2 días: ruta día a día
 
-### Día 1: lago y casco antiguo
+**Itinerario de 2 días en Ginebra**
 
-**Mañana.** Empieza desayunando en Bains des Pâquis. Camina por el Quai du Mont-Blanc, cruza el puente del Mont-Blanc o la Mouette hacia la orilla sur y acércate al Jet d'Eau por el espigón. Vuelve por el Jardin Anglais y el Reloj de Flores.
-
-**Tarde.** Sube a la Vieille Ville: catedral y torres, Place du Bourg-de-Four, Grand-Rue. Baja al Parc des Bastions para ver el Muro de los Reformadores y, si te queda energía, entra al Musée d'Art et d'Histoire, que está a cinco minutos.
-
-**Noche.** Atardecer en la orilla de Pâquis o en una buvette del Ródano, y cena en Pâquis, el barrio con más variedad de cocinas a precios menos dolorosos.
-
-### Día 2: la Ginebra internacional y Carouge
-
-**Mañana.** Tranvía 15 hasta Nations. Visita guiada al Palacio de las Naciones (reservada), foto en la Broken Chair y Museo de la Cruz Roja. Si vas sobrado, el Musée Ariana está al lado.
-
-**Tarde.** Baja paseando por el Jardín Botánico hasta el lago, o vuelve en tranvía. Luego toma el tranvía hasta Plainpalais (si es día de mercadillo, mejor por la mañana) y sigue hacia Carouge.
-
-**Noche.** Cena en Carouge, con terrazas en verano y bares pequeños donde la gente local alarga la noche.
+| Día | Plan |
+|---|---|
+| Día 1 | Lago y casco antiguo. Mañana. Empieza desayunando en Bains des Pâquis. Camina por el Quai du Mont-Blanc, cruza el puente del Mont-Blanc o la Mouette hacia la orilla sur y acércate al Jet d'Eau por el espigón. Vuelve por el Jardin Anglais y el Reloj de Flores. Tarde. Sube a la Vieille Ville: catedral y torres, Place du Bourg-de-Four, Grand-Rue. Baja al Parc des Bastions para ver el Muro de los Reformadores y, si te queda energía, entra al Musée d'Art et d'Histoire, que está a cinco minutos. Noche. Atardecer en la orilla de Pâquis o en una buvette del Ródano, y cena en Pâquis, el barrio con más variedad de cocinas a precios menos dolorosos. |
+| Día 2 | La Ginebra internacional y Carouge. Mañana. Tranvía 15 hasta Nations. Visita guiada al Palacio de las Naciones (reservada), foto en la Broken Chair y Museo de la Cruz Roja. Si vas sobrado, el Musée Ariana está al lado. Tarde. Baja paseando por el Jardín Botánico hasta el lago, o vuelve en tranvía. Luego toma el tranvía hasta Plainpalais (si es día de mercadillo, mejor por la mañana) y sigue hacia Carouge. Noche. Cena en Carouge, con terrazas en verano y bares pequeños donde la gente local alarga la noche. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -183,9 +174,12 @@ Dentro de la ciudad, el centro se recorre andando. Para el resto hay tranvía, b
 
 Ginebra es de las ciudades más caras de Europa, pero se puede contener el gasto. Por persona y día, sin vuelos:
 
-- **Ajustado: unos 100-120 €.** Dormitorio en albergue (unos 45 €), comida del súper y un plato caliente, transporte gratis, sitios gratis y un museo.
+**Presupuesto orientativo por día**
 
-- **Medio: unos 200-260 €.** Hotel sencillo compartido (unos 80-100 € por cabeza), una comida y una cena en restaurante, una fondue, ONU y museo de la Cruz Roja.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | unos 100-120 € | Dormitorio en albergue (unos 45 €), comida del súper y un plato caliente, transporte gratis, sitios gratis y un museo. |
+| Medio | unos 200-260 € | Hotel sencillo compartido (unos 80-100 € por cabeza), una comida y una cena en restaurante, una fondue, ONU y museo de la Cruz Roja. |
 
 - **Extras a tener en cuenta:** excursión en tren a Montreux (unos 40-60 € ida y vuelta sin descuentos), teleférico del Salève (unos 25 €), copas (desde 12 €).
 

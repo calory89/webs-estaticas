@@ -35,15 +35,17 @@ Take a street food walk through Yaowarat or a cooking class, which is worth it i
 
 At night, try a rooftop bar in Silom or Sathorn for the skyline, or wander the lively streets of Ari for local cafes and small bars. Muay Thai fans can see a fight at Rajadamnern Stadium.
 
-## How many days and a suggested route
+## Bangkok itinerary: 3 days, day by day
 
 Three full days is the sweet spot. Two will feel rushed, and four lets you add a day trip.
 
-- **Day 1, old city.** Grand Palace in the morning, Wat Pho, then the ferry to Wat Arun at sunset. Dinner in Yaowarat.
+**3-day itinerary for Bangkok**
 
-- **Day 2, modern Bangkok.** Jim Thompson House, then Siam's malls and the BTS elevated walkways, then Lumphini Park in the late afternoon.
-
-- **Day 3, local side.** Chatuchak if it's the weekend, otherwise Talat Noi and Bang Krachao. End with a massage and a long dinner.
+| Day | Plan |
+|---|---|
+| Day 1 | Old city. Grand Palace in the morning, Wat Pho, then the ferry to Wat Arun at sunset. Dinner in Yaowarat. |
+| Day 2 | Modern Bangkok. Jim Thompson House, then Siam's malls and the BTS elevated walkways, then Lumphini Park in the late afternoon. |
+| Day 3 | Local side. Chatuchak if it's the weekend, otherwise Talat Noi and Bang Krachao. End with a massage and a long dinner. |
 
 A fourth day could go to Ayutthaya, the ruined former capital, by train from Hua Lamphong or the newer Krung Thep Aphiwat station, or to a floating market. The famous ones are tourist-heavy, so go early.
 

@@ -93,17 +93,13 @@ A lot of the best of Osaka costs nothing. The castle park, Dotonbori, Hozenji Yo
 
 ## Osaka itinerary: 3 days
 
-### Day 1: Castle, Umeda and Namba at night
+**3-day itinerary for Osaka**
 
-**Morning:** Osaka Castle park early, before tour groups. Take the Chuo or Tanimachi line to Tanimachi 4-chome. **Afternoon:** head to Umeda for lunch in the basement food halls of Hankyu or Hanshin department stores, then walk to Nakazakicho for coffee. Be at the Umeda Sky Building for sunset. **Evening:** ride the Midosuji line south to Namba. Walk Hozenji Yokocho, then Dotonbori, then eat your way through takoyaki and okonomiyaki.
-
-### Day 2: South Osaka, old and new
-
-**Morning:** the Hankai tram or Nankai line to Sumiyoshi Taisha, then back towards Tennoji for Shitennoji. **Afternoon:** Abeno Harukas if the weather is clear, then walk to Shinsekai for a late kushikatsu lunch. **Evening:** a soak at Spa World, or Kuromon (early, it closes in the afternoon) and Den Den Town, finishing with drinks in Ura-Namba.
-
-### Day 3: Nara day trip
-
-**Morning:** Kintetsu train from Osaka-Namba to Kintetsu-Nara, about 40 minutes. See Todaiji's giant Buddha and the deer in Nara Park before 10am. **Afternoon:** Kasuga Taisha and the lantern-lined paths, then lunch in Naramachi. **Evening:** back in Osaka by 6pm for a Tenjinbashisuji food crawl or a farewell okonomiyaki.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Castle, Umeda and Namba at night | Osaka Castle park early, before tour groups. Take the Chuo or Tanimachi line to Tanimachi 4-chome. | Head to Umeda for lunch in the basement food halls of Hankyu or Hanshin department stores, then walk to Nakazakicho for coffee. Be at the Umeda Sky Building for sunset. | Ride the Midosuji line south to Namba. Walk Hozenji Yokocho, then Dotonbori, then eat your way through takoyaki and okonomiyaki. |
+| Day 2 · South Osaka, old and new | The Hankai tram or Nankai line to Sumiyoshi Taisha, then back towards Tennoji for Shitennoji. | Abeno Harukas if the weather is clear, then walk to Shinsekai for a late kushikatsu lunch. | A soak at Spa World, or Kuromon (early, it closes in the afternoon) and Den Den Town, finishing with drinks in Ura-Namba. |
+| Day 3 · Nara day trip | Kintetsu train from Osaka-Namba to Kintetsu-Nara, about 40 minutes. See Todaiji's giant Buddha and the deer in Nara Park before 10am. | Kasuga Taisha and the lantern-lined paths, then lunch in Naramachi. | Back in Osaka by 6pm for a Tenjinbashisuji food crawl or a farewell okonomiyaki. |
 
 ## What is overrated (and what to do instead)
 
@@ -175,9 +171,12 @@ In the city, the **Midosuji subway line** is your spine, running north to south 
 
 Osaka is cheaper than Tokyo, and the weak yen has made Japan good value for Europeans. Rough daily budgets per person:
 
-- **Shoestring: €50-70 a day.** Hostel bed €20-30, konbini breakfast, street food and ramen for €15-20, transport €5-8, mostly free sights.
+**Rough daily budget**
 
-- **Mid-range: €120-180 a day.** Double room shared at €50-80 each, izakaya dinners, a couple of paid attractions, day trip tickets.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €50-70 a day | Hostel bed €20-30, konbini breakfast, street food and ramen for €15-20, transport €5-8, mostly free sights. |
+| Mid-range | €120-180 a day | Double room shared at €50-80 each, izakaya dinners, a couple of paid attractions, day trip tickets. |
 
 - **Extras to budget for:** Universal Studios (€60-150 with Express), kaiseki dinners (€80+), and the Nara day trip (about €10 return plus food).
 

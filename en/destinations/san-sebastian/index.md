@@ -91,17 +91,13 @@ The best things here cost nothing. Walking La Concha, climbing Monte Urgull, wat
 
 ## San Sebastian itinerary: 3 days
 
-### Day 1: Old Town, Urgull and your first pintxos
+**3-day itinerary for San Sebastian**
 
-**Morning:** Start in the Parte Vieja, see Santa María del Coro and Plaza de la Constitución, then visit San Telmo Museoa. **Afternoon:** Climb Monte Urgull from behind the museum and come down via the port, where the fishermen's bars serve grilled sardines. **Evening:** First pintxo crawl in the Old Town, finishing with a slice of cheesecake at La Viña.
-
-### Day 2: The bay end to end
-
-**Morning:** Walk La Concha promenade to the Miramar Palace gardens, then on to Ondarreta for a swim. **Afternoon:** Peine del Viento, then the funicular up Monte Igueldo for the late-afternoon view. **Evening:** Head to Gros for dinner: pintxos along Calle Zabaleta and around, with fewer crowds than the Old Town.
-
-### Day 3: The coast
-
-**Morning:** Hike from Zurriola over Ulia to Pasaia, take the little ferry to Pasai Donibane and have a seafood lunch there. **Afternoon:** Bus back, or carry on to Hondarribia for its walled old town and painted fishermen's quarter. **Evening:** Final round of pintxos, or a grilled steak (txuleta) dinner if you have budget left.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Old Town, Urgull and your first pintxos | Start in the Parte Vieja, see Santa María del Coro and Plaza de la Constitución, then visit San Telmo Museoa. | Climb Monte Urgull from behind the museum and come down via the port, where the fishermen's bars serve grilled sardines. | First pintxo crawl in the Old Town, finishing with a slice of cheesecake at La Viña. |
+| Day 2 · The bay end to end | Walk La Concha promenade to the Miramar Palace gardens, then on to Ondarreta for a swim. | Peine del Viento, then the funicular up Monte Igueldo for the late-afternoon view. | Head to Gros for dinner: pintxos along Calle Zabaleta and around, with fewer crowds than the Old Town. |
+| Day 3 · The coast | Hike from Zurriola over Ulia to Pasaia, take the little ferry to Pasai Donibane and have a seafood lunch there. | Bus back, or carry on to Hondarribia for its walled old town and painted fishermen's quarter. | Final round of pintxos, or a grilled steak (txuleta) dinner if you have budget left. |
 
 ## What is overrated (and what to do instead)
 
@@ -163,9 +159,12 @@ Once there, you walk. The centre, the Old Town, Gros and La Concha are all withi
 
 ## How much a trip to San Sebastian costs
 
-- **Shoestring: about €80-110 per day.** Hostel bed (€35-60), market picnic lunch, a modest pintxo dinner (€20-25), walking everywhere and free sights.
+**Rough daily budget**
 
-- **Mid-range: about €200-300 per day per person sharing a double.** Hotel (€70-150 per person), menú del día lunch, a full pintxo crawl or restaurant dinner, the funicular, a museum and the odd taxi.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | about €80-110 per day | Hostel bed (€35-60), market picnic lunch, a modest pintxo dinner (€20-25), walking everywhere and free sights. |
+| Mid-range | about €200-300 per day per person sharing a double | Hotel (€70-150 per person), menú del día lunch, a full pintxo crawl or restaurant dinner, the funicular, a museum and the odd taxi. |
 
 - **Add-ons:** surf lesson €35-50, cider house €40-50, Michelin tasting menu €250+.
 

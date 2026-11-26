@@ -97,19 +97,15 @@ La ciudad es cara para Brasil, pero tiene una oferta cultural gratuita muy buena
 
 - Un pastel de feira con caldo de cana en cualquier mercado callejero: unos 3 €.
 
-## Itinerario: São Paulo en 3 días
+## Qué ver en São Paulo en 3 días: ruta día a día
 
-### Día 1: centro histórico y Luz
+**Itinerario de 3 días en São Paulo**
 
-**Mañana:** empieza en la Pinacoteca y la Estação da Luz (metro Luz). Sigue hasta el Mercadão a comer el bocadillo de mortadela. **Tarde:** camina hacia la Sé, el Pátio do Colégio, el Mosteiro de São Bento y el Theatro Municipal. Remata en el Copan. **Noche:** sube al bar del Terraço Itália al atardecer y luego vete a cenar a otro barrio; el centro de noche no tiene gracia.
-
-### Día 2: Paulista e Ibirapuera
-
-**Mañana:** Parque Ibirapuera, con el Museu Afro Brasil y los edificios de Niemeyer. **Tarde:** taxi o Uber a Paulista, visita al MASP, café en el Instituto Moreira Salles o la Japan House. **Noche:** mirante del Sesc al atardecer y cena en los Jardins o en el Bixiga, con pizza o cantina italiana.
-
-### Día 3: Liberdade, Pompeia y Vila Madalena
-
-**Mañana:** Liberdade (mejor si es fin de semana, con la feria) y comida japonesa barata. **Tarde:** metro hasta Sesc Pompeia y luego Beco do Batman y las calles de Vila Madalena. **Noche:** bares de Vila Madalena o Pinheiros (la zona de Largo da Batata y Rua dos Pinheiros) hasta que el cuerpo aguante.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Centro histórico y Luz | Empieza en la Pinacoteca y la Estação da Luz (metro Luz). Sigue hasta el Mercadão a comer el bocadillo de mortadela. | Camina hacia la Sé, el Pátio do Colégio, el Mosteiro de São Bento y el Theatro Municipal. Remata en el Copan. | Sube al bar del Terraço Itália al atardecer y luego vete a cenar a otro barrio; el centro de noche no tiene gracia. |
+| Día 2 · Paulista e Ibirapuera | Parque Ibirapuera, con el Museu Afro Brasil y los edificios de Niemeyer. | Taxi o Uber a Paulista, visita al MASP, café en el Instituto Moreira Salles o la Japan House. | Mirante del Sesc al atardecer y cena en los Jardins o en el Bixiga, con pizza o cantina italiana. |
+| Día 3 · Liberdade, Pompeia y Vila Madalena | Liberdade (mejor si es fin de semana, con la feria) y comida japonesa barata. | Metro hasta Sesc Pompeia y luego Beco do Batman y las calles de Vila Madalena. | Bares de Vila Madalena o Pinheiros (la zona de Largo da Batata y Rua dos Pinheiros) hasta que el cuerpo aguante. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -179,9 +175,12 @@ Los vuelos nacionales suelen usar **Congonhas**, dentro de la ciudad; un Uber a 
 
 São Paulo es la ciudad más cara de Brasil, pero para un bolsillo europeo sigue siendo asequible. El cambio ronda los 6 reales por euro.
 
-- **Presupuesto ajustado: 50-70 € al día.** Hostal en Vila Madalena o Liberdade, comida por quilo, metro y museos los días gratis.
+**Presupuesto orientativo por día**
 
-- **Presupuesto medio: 110-160 € al día.** Hotel en Paulista o Jardins, cenas en restaurante, algún Uber, entradas pagadas y copas.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Presupuesto ajustado | 50-70 € al día | Hostal en Vila Madalena o Liberdade, comida por quilo, metro y museos los días gratis. |
+| Presupuesto medio | 110-160 € al día | Hotel en Paulista o Jardins, cenas en restaurante, algún Uber, entradas pagadas y copas. |
 
 - **Vuelos desde España:** directos desde Madrid o Barcelona, normalmente entre 600 y 900 € ida y vuelta, algo menos con escala y buscando con antelación.
 

@@ -79,23 +79,14 @@ Buena parte de lo mejor de la ciudad no cuesta nada. La explanada de la mezquita
 
 Comer barato también es fácil: un bocadillo de kefta o de hígado en un puesto ronda 2 €, un cuenco de harira menos de 1 € y una bandeja de pescado frito en la medina unos 3-4 €.
 
-## Itinerario: Casablanca en 2 días
+## Qué ver en Casablanca en 2 días: ruta día a día
 
-### Día 1: centro, medina y mezquita
+**Itinerario de 2 días en Casablanca**
 
-**Mañana:** empieza en la plaza Mohammed V y recorre el bulevar Mohammed V mirando las fachadas art déco. Desvíate hacia la Catedral del Sagrado Corazón y el Parque de la Liga Árabe.
-
-**Tarde:** come pescado en el Mercado Central. Después, cruza a la medina por la plaza de Naciones Unidas, sal por la Skala y camina por la costa hasta la mezquita Hassan II para la visita guiada de la tarde.
-
-**Noche:** quédate en la explanada a ver cómo se ilumina el minarete y cena en La Sqala, en el antiguo bastión, o algo más barato por la medina.
-
-### Día 2: Habous, museos y Corniche
-
-**Mañana:** petit taxi al barrio Habous. Compras, dulces en Bennis y paseo tranquilo. Si te interesa, sigue en taxi al Museo del Judaísmo Marroquí.
-
-**Tarde:** come en el barrio o en un café, y luego tranvía hasta Aïn Diab. Paseo por la Corniche, morabito de Sidi Abderrahmane si la marea lo permite y clase de surf si te animas.
-
-**Noche:** atardecer en una terraza de la Corniche y cena de pescado allí mismo o de vuelta en el puerto.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Centro, medina y mezquita | Empieza en la plaza Mohammed V y recorre el bulevar Mohammed V mirando las fachadas art déco. Desvíate hacia la Catedral del Sagrado Corazón y el Parque de la Liga Árabe. | Come pescado en el Mercado Central. Después, cruza a la medina por la plaza de Naciones Unidas, sal por la Skala y camina por la costa hasta la mezquita Hassan II para la visita guiada de la tarde. | Quédate en la explanada a ver cómo se ilumina el minarete y cena en La Sqala, en el antiguo bastión, o algo más barato por la medina. |
+| Día 2 · Habous, museos y Corniche | Petit taxi al barrio Habous. Compras, dulces en Bennis y paseo tranquilo. Si te interesa, sigue en taxi al Museo del Judaísmo Marroquí. | Come en el barrio o en un café, y luego tranvía hasta Aïn Diab. Paseo por la Corniche, morabito de Sidi Abderrahmane si la marea lo permite y clase de surf si te animas. | Atardecer en una terraza de la Corniche y cena de pescado allí mismo o de vuelta en el puerto. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -151,9 +142,12 @@ Para moverte, el **tranvía** es la mejor opción. Tiene varias líneas (T1 a T4
 
 Con 1 € a unos 11 dírhams, estos son precios orientativos por persona y día, sin vuelo:
 
-- **Presupuesto ajustado: 35-50 € al día.** Hostal u hotel sencillo compartido, comida en puestos y restaurantes populares, tranvía y alguna entrada.
+**Presupuesto orientativo por día**
 
-- **Presupuesto medio: 80-120 € al día.** Hotel de 3 estrellas en el centro, comidas en restaurantes y cena de pescado, taxis y visita a la mezquita.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Presupuesto ajustado | 35-50 € al día | Hostal u hotel sencillo compartido, comida en puestos y restaurantes populares, tranvía y alguna entrada. |
+| Presupuesto medio | 80-120 € al día | Hotel de 3 estrellas en el centro, comidas en restaurantes y cena de pescado, taxis y visita a la mezquita. |
 
 - **Gastos sueltos:** mezquita Hassan II, unos 14 €; té, 1-2 €; tranvía, menos de 1 €; petit taxi, 2-4 €; tren al aeropuerto, unos 5 €.
 

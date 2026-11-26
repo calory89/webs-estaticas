@@ -33,21 +33,17 @@ Tómate un freddo espresso (café frío con espuma) en una terraza de Thissio, c
 
 Con un día extra, hay dos escapadas fáciles. El cabo Sunión, con el templo de Poseidón sobre el mar, se alcanza en autobús de línea y es mejor al atardecer. O la Riviera ateniense: tranvía hasta la costa y baño en alguna de las playas de pago o en el lago de Vouliagmeni.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Atenas en 3 días: ruta día a día
 
 Tres días es lo razonable. Con dos vas con prisa y con cuatro puedes añadir Sunión o una isla cercana como Egina, que está a poco más de una hora en ferri desde El Pireo.
 
-### Día 1: lo clásico
+**Itinerario de 3 días en Atenas**
 
-Acrópolis a primera hora, Museo de la Acrópolis, comida en Koukaki y tarde en el Ágora antigua. Para terminar, atardecer en Thissio y cena en Monastiraki.
-
-### Día 2: centro y miradores
-
-Mañana en el Museo Arqueológico Nacional. Luego Syntagma, Zeus Olímpico y el Estadio Panatenaico. Para cerrar el día, subida al Licabeto y cena en Kolonaki o Exarchia.
-
-### Día 3: mercados y escapada
-
-Varvakios y Monastiraki por la mañana, Plaka y Anafiotika después de comer. Si prefieres mar, cambia la tarde por el cabo Sunión.
+| Día | Plan |
+|---|---|
+| Día 1 | Lo clásico. Acrópolis a primera hora, Museo de la Acrópolis, comida en Koukaki y tarde en el Ágora antigua. Para terminar, atardecer en Thissio y cena en Monastiraki. |
+| Día 2 | Centro y miradores. Mañana en el Museo Arqueológico Nacional. Luego Syntagma, Zeus Olímpico y el Estadio Panatenaico. Para cerrar el día, subida al Licabeto y cena en Kolonaki o Exarchia. |
+| Día 3 | Mercados y escapada. Varvakios y Monastiraki por la mañana, Plaka y Anafiotika después de comer. Si prefieres mar, cambia la tarde por el cabo Sunión. |
 
 ## Cuándo ir: clima y temporadas
 

@@ -97,21 +97,14 @@ Many of the best things here cost nothing or close to it:
 
 ## Medellin itinerary: 4 days
 
-### Day 1: Centre and Metrocable
+**4-day itinerary for Medellin**
 
-**Morning:** Do a free walking tour of the centre or go to Plaza Botero and the Museo de Antioquia on your own. **Afternoon:** Ride the metro to Acevedo and up Metrocable Line K to Santo Domingo, then back down and on to Universidad for the Jardín Botánico. **Evening:** Return to Poblado for dinner in Provenza.
-
-### Day 2: Comuna 13 and Laureles
-
-**Morning:** Get to Comuna 13 early. **Afternoon:** Head to the Museo Casa de la Memoria, then take a taxi up to Pueblito Paisa for late-afternoon views. **Evening:** Eat a cheap dinner in Laureles, then catch some salsa on La 70 if it is the weekend.
-
-### Day 3: Guatapé
-
-**Full day:** Take an early bus from Terminal Norte to El Peñol rock, climb the 700-odd steps, then go into Guatapé town for its colourful zócalos and lunch by the reservoir. Be back in Medellin by evening, tired.
-
-### Day 4: Parque Arví and Ciudad del Río
-
-**Morning:** Take Metrocable K then L to Parque Arví for a forest walk. **Afternoon:** Head down to MAMM and eat at Mercado del Río. **Evening:** Finish with a farewell night in Envigado or a rooftop bar in Poblado.
+| Day | Plan |
+|---|---|
+| Day 1 | Centre and Metrocable. Morning: Do a free walking tour of the centre or go to Plaza Botero and the Museo de Antioquia on your own. Afternoon: Ride the metro to Acevedo and up Metrocable Line K to Santo Domingo, then back down and on to Universidad for the Jardín Botánico. Evening: Return to Poblado for dinner in Provenza. |
+| Day 2 | Comuna 13 and Laureles. Morning: Get to Comuna 13 early. Afternoon: Head to the Museo Casa de la Memoria, then take a taxi up to Pueblito Paisa for late-afternoon views. Evening: Eat a cheap dinner in Laureles, then catch some salsa on La 70 if it is the weekend. |
+| Day 3 | Guatapé. Full day: Take an early bus from Terminal Norte to El Peñol rock, climb the 700-odd steps, then go into Guatapé town for its colourful zócalos and lunch by the reservoir. Be back in Medellin by evening, tired. |
+| Day 4 | Parque Arví and Ciudad del Río. Morning: Take Metrocable K then L to Parque Arví for a forest walk. Afternoon: Head down to MAMM and eat at Mercado del Río. Evening: Finish with a farewell night in Envigado or a rooftop bar in Poblado. |
 
 ## What is overrated (and what to do instead)
 
@@ -173,9 +166,12 @@ In town, the metro is clean, safe and cheap at under €1 a ride. Get a recharge
 
 ## How much a trip to Medellin costs
 
-- **Shoestring: €30-45 a day.** This covers a hostel dorm, menú del día lunches, street food, metro transport and free sights.
+**Rough daily budget**
 
-- **Mid-range: €70-120 a day.** This covers a private room or decent hotel in Poblado or Laureles, sit-down dinners, taxis, a paid tour or two and some nights out.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €30-45 a day | This covers a hostel dorm, menú del día lunches, street food, metro transport and free sights. |
+| Mid-range | €70-120 a day | This covers a private room or decent hotel in Poblado or Laureles, sit-down dinners, taxis, a paid tour or two and some nights out. |
 
 - **Guatapé day trip:** €15-25 on your own by bus, €40-60 on an organised tour.
 

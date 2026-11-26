@@ -97,21 +97,12 @@ Several municipal monuments, including the Alcázar, have historically offered f
 
 ## Cordoba itinerary: 2 days
 
-### Day 1: Mezquita, Alcázar and the river
+**2-day itinerary for Cordoba**
 
-**Morning:** Be at the Mezquita for the free early slot, then climb the bell tower (book it the day before). Have breakfast on a side street: tostada with tomato and coffee for €3-4. Walk to the Alcázar and do the gardens before the heat sets in.
-
-**Afternoon:** Have a long lunch in the Judería, then see the Synagogue and Casa de Sefarad. Take a siesta. It is not a cliché here; from June to September the city empties between 2pm and 6pm.
-
-**Evening:** Cross the Roman Bridge at sunset, visit the Calahorra Tower if it is still open, then walk back across and get lost in the quiet lanes of the Judería. Finish with dinner and fino near the Mezquita, or at the hammam.
-
-### Day 2: Patios, Santa Marina and taverns
-
-**Morning:** Either take the bus to Medina Azahara (allow 3-4 hours in total) or walk north to the Palacio de Viana.
-
-**Afternoon:** Walk to San Lorenzo and Santa Marina, then down through Plaza de la Corredera for a late lunch. Then head to Plaza del Potro and the Julio Romero de Torres museum.
-
-**Evening:** Go on a tavern crawl through the centre. Start at Taberna Salinas, then pass the Templo Romano and Plaza de las Tendillas. End the night at Mercado Victoria or with a flamenco show.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Mezquita, Alcázar and the river | Be at the Mezquita for the free early slot, then climb the bell tower (book it the day before). Have breakfast on a side street: tostada with tomato and coffee for €3-4. Walk to the Alcázar and do the gardens before the heat sets in. | Have a long lunch in the Judería, then see the Synagogue and Casa de Sefarad. Take a siesta. It is not a cliché here; from June to September the city empties between 2pm and 6pm. | Cross the Roman Bridge at sunset, visit the Calahorra Tower if it is still open, then walk back across and get lost in the quiet lanes of the Judería. Finish with dinner and fino near the Mezquita, or at the hammam. |
+| Day 2 · Patios, Santa Marina and taverns | Either take the bus to Medina Azahara (allow 3-4 hours in total) or walk north to the Palacio de Viana. | Walk to San Lorenzo and Santa Marina, then down through Plaza de la Corredera for a late lunch. Then head to Plaza del Potro and the Julio Romero de Torres museum. | Go on a tavern crawl through the centre. Start at Taberna Salinas, then pass the Templo Romano and Plaza de las Tendillas. End the night at Mercado Victoria or with a flamenco show. |
 
 ## What is overrated (and what to do instead)
 
@@ -171,9 +162,12 @@ Cordoba's train station is about 20-25 minutes on foot from the Mezquita, an eas
 
 Cordoba is one of Spain's cheaper cities. These are rough daily costs per person in 2026:
 
-- **Shoestring: €50-70 a day.** Hostel bed (€20-30), free Mezquita slot, menú del día lunch, tapas dinner, walking everywhere.
+**Rough daily budget**
 
-- **Mid-range: €110-160 a day.** Double room in the Judería split two ways (€50-75 each), paid tickets to the Mezquita, Alcázar and Viana, a sit-down dinner with wine, and the occasional taxi.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €50-70 a day | Hostel bed (€20-30), free Mezquita slot, menú del día lunch, tapas dinner, walking everywhere. |
+| Mid-range | €110-160 a day | Double room in the Judería split two ways (€50-75 each), paid tickets to the Mezquita, Alcázar and Viana, a sit-down dinner with wine, and the occasional taxi. |
 
 - **Extras:** hammam €35-50, flamenco show €25-30, Medina Azahara bus about €10.
 

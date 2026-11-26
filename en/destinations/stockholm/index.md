@@ -61,17 +61,18 @@ The Stockholm tunnelbana is often called the longest art gallery in the world. S
 
 - **Swim or sauna.** In summer Swedes jump from rocks and jetties around Långholmen. In winter many bathhouses and saunas around the city are open to the public.
 
-## How many days and a suggested route
+## Stockholm itinerary: 4 days, day by day
 
 Three days is the sweet spot. Two works if you are fast and picky. Four lets you add the archipelago or Drottningholm without rushing.
 
-- **Day 1:** Gamla Stan in the morning, the Royal Palace if you like, then lunch near Slussen and sunset at Monteliusvägen.
+**4-day itinerary for Stockholm**
 
-- **Day 2:** Djurgården. Vasa first, then Skansen, then a long walk along the water. Evening in Södermalm.
-
-- **Day 3:** City Hall, the Östermalm food hall and a stroll through Östermalm. Afternoon at Moderna Museet or Fotografiska.
-
-- **Day 4, if you have it:** A full day in the archipelago or Drottningholm.
+| Day | Plan |
+|---|---|
+| Day 1 | Gamla Stan in the morning, the Royal Palace if you like, then lunch near Slussen and sunset at Monteliusvägen. |
+| Day 2 | Djurgården. Vasa first, then Skansen, then a long walk along the water. Evening in Södermalm. |
+| Day 3 | City Hall, the Östermalm food hall and a stroll through Östermalm. Afternoon at Moderna Museet or Fotografiska. |
+| Day 4 | If you have it. A full day in the archipelago or Drottningholm. |
 
 ## When to go
 

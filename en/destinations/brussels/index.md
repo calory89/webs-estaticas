@@ -57,15 +57,17 @@ Victor Horta's own house is one of the finest Art Nouveau interiors anywhere: st
 
 - **Visit the Musical Instruments Museum (MIM),** where the headphones play the instruments as you walk by. The roof café has a good view too.
 
-## How many days and a suggested route
+## Brussels itinerary: 3 days, day by day
 
 Two days covers the centre. Three is better, because it lets you add a museum, a neighbourhood like Ixelles or Saint-Gilles, and a slow evening. If you want a day trip to Bruges or Ghent, make it four.
 
-**Day 1:** Grand-Place at opening hours, the Galleries, Manneken Pis, lunch of frites, then Sablon and the Marolles, finishing with beers around Saint-Géry.
+**3-day itinerary for Brussels**
 
-**Day 2:** Magritte Museum and Fine Arts in the morning, the Comic Strip Center after lunch, then walk through Dansaert and the canal area.
-
-**Day 3:** Horta Museum, a long lunch in Saint-Gilles or Ixelles, then Flagey and the ponds, or Cinquantenaire and the EU Quarter if you prefer.
+| Day | Plan |
+|---|---|
+| Day 1 | Grand-Place at opening hours, the Galleries, Manneken Pis, lunch of frites, then Sablon and the Marolles, finishing with beers around Saint-Géry. |
+| Day 2 | Magritte Museum and Fine Arts in the morning, the Comic Strip Center after lunch, then walk through Dansaert and the canal area. |
+| Day 3 | Horta Museum, a long lunch in Saint-Gilles or Ixelles, then Flagey and the ponds, or Cinquantenaire and the EU Quarter if you prefer. |
 
 ## When to go
 

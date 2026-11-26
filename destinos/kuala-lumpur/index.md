@@ -81,19 +81,15 @@ Buena parte de lo que más merece la pena no cuesta nada. Son gratis Batu Caves,
 
 Para moverte, los autobuses **GoKL** (los morados y verdes) son gratuitos y unen Bukit Bintang, KLCC, Chinatown y KL Sentral. El tren a Batu Caves cuesta menos de 1 €. Si comes en hawker centres, puedes alimentarte por 10 € al día sin pasar hambre.
 
-## Itinerario: Kuala Lumpur en 3 días
+## Qué ver en Kuala Lumpur en 3 días: ruta día a día
 
-### Día 1: centro histórico y Chinatown
+**Itinerario de 3 días en Kuala Lumpur**
 
-**Mañana:** empieza en la plaza Merdeka y el edificio Sultan Abdul Samad, cruza a la Masjid Jamek y baja andando hasta Central Market. **Tarde:** come en Chinatown, pasea por Petaling Street, el templo Sin Sze Si Ya y Kwai Chai Hong, y refúgiate del calor en algún café de casa-tienda. **Noche:** vuelve a la Masjid Jamek para ver el río iluminado (River of Life) y cena en Chinatown.
-
-### Día 2: Batu Caves y la zona del lago
-
-**Mañana:** tren KTM Komuter temprano desde KL Sentral a Batu Caves (30 minutos). **Tarde:** vuelve a KL Sentral, come banana leaf rice en Brickfields y sigue al Museo de Arte Islámico y la Mezquita Nacional. Si te queda energía, Grab al templo Thean Hou para el atardecer. **Noche:** cena en Jalan Alor y masaje de pies en Bukit Bintang.
-
-### Día 3: KL moderno
-
-**Mañana:** KL Forest Eco Park y Menara KL (si prefieres subir al atardecer, cambia el orden y pasa la mañana en el Jardín Botánico Perdana). **Tarde:** Kampung Baru andando y cruce por el puente peatonal Saloma hacia KLCC. **Noche:** fotos de las Petronas desde el parque, espectáculo de fuentes y una copa en un rooftop.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Centro histórico y Chinatown | Empieza en la plaza Merdeka y el edificio Sultan Abdul Samad, cruza a la Masjid Jamek y baja andando hasta Central Market. | Come en Chinatown, pasea por Petaling Street, el templo Sin Sze Si Ya y Kwai Chai Hong, y refúgiate del calor en algún café de casa-tienda. | Vuelve a la Masjid Jamek para ver el río iluminado (River of Life) y cena en Chinatown. |
+| Día 2 · Batu Caves y la zona del lago | Tren KTM Komuter temprano desde KL Sentral a Batu Caves (30 minutos). | Vuelve a KL Sentral, come banana leaf rice en Brickfields y sigue al Museo de Arte Islámico y la Mezquita Nacional. Si te queda energía, Grab al templo Thean Hou para el atardecer. | Cena en Jalan Alor y masaje de pies en Bukit Bintang. |
+| Día 3 · KL moderno | KL Forest Eco Park y Menara KL (si prefieres subir al atardecer, cambia el orden y pasa la mañana en el Jardín Botánico Perdana). | Kampung Baru andando y cruce por el puente peatonal Saloma hacia KLCC. | Fotos de las Petronas desde el parque, espectáculo de fuentes y una copa en un rooftop. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -155,9 +151,12 @@ Por la ciudad, el transporte de RapidKL (LRT, MRT y monorraíl) es limpio y bara
 
 Kuala Lumpur es barata para comer y dormir, y cara solo para el alcohol. Presupuesto por persona y día, sin vuelos:
 
-- **Ajustado: 30-40 €.** Hostal o habitación doble compartida en Chinatown, comer en hawkers, transporte público y visitas gratuitas.
+**Presupuesto orientativo por día**
 
-- **Medio: 70-100 €.** Hotel de cuatro estrellas en Bukit Bintang, alguna comida de restaurante, Grab cuando apriete el calor, Menara KL y un par de cervezas.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | 30-40 € | Hostal o habitación doble compartida en Chinatown, comer en hawkers, transporte público y visitas gratuitas. |
+| Medio | 70-100 € | Hotel de cuatro estrellas en Bukit Bintang, alguna comida de restaurante, Grab cuando apriete el calor, Menara KL y un par de cervezas. |
 
 - **Cerveza en bar:** 5-8 €. **Copa en rooftop:** 10-15 €.
 

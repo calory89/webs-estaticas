@@ -87,23 +87,14 @@ Bratislava es de las capitales europeas donde más se puede ver sin pagar. Grati
 
 Casi gratis: el billete de transporte de 24 horas (unos 5-6 €) te sirve para Devín, Kamzík y Petržalka. Un **denné menu** (menú del día) a mediodía en día laborable cuesta entre 7 y 10 € con sopa y principal. Y una cerveza de medio litro fuera del casco antiguo baja de los 3 €.
 
-## Itinerario: Bratislava en 2 días
+## Qué ver en Bratislava en 2 días: ruta día a día
 
-### Día 1: casco antiguo, castillo y puente
+**Itinerario de 2 días en Bratislava**
 
-**Mañana.** Empieza temprano en la Iglesia Azul para hacer la foto sin gente. Camina hacia el centro por Hviezdoslavovo námestie, entra por la Puerta de San Miguel (sube a la torre) y recorre Michalská, Ventúrska y Hlavné námestie. Visita el Palacio Primacial y el patio del Antiguo Ayuntamiento.
-
-**Tarde.** Come un menú del día fuera de la plaza principal. Sigue a la catedral de San Martín y sube al castillo; dedica tiempo a los jardines. Baja hacia el río y cruza el Puente SNP.
-
-**Noche.** Atardecer desde el mirador UFO o desde las terrazas del castillo si prefieres no pagar. Cena con halušky y cerveza eslovaca.
-
-### Día 2: Devín, Slavín y Danubio
-
-**Mañana.** Bus 29 desde la parada bajo el Puente SNP hasta Devín (unos 25 minutos). Recorre la ruina y baja hasta la confluencia de los ríos.
-
-**Tarde.** Vuelve al centro, come y sube andando a Slavín para tener la vista sobre la ciudad. De bajada, pasa por el Palacio Grassalkovich y el edificio de la Radio.
-
-**Noche.** Paseo por la orilla hasta Eurovea y cerveza en una microcervecería. Si te sobra energía, ópera o ballet en el Teatro Nacional.
+| Día | Plan |
+|---|---|
+| Día 1 | Casco antiguo, castillo y puente. Mañana. Empieza temprano en la Iglesia Azul para hacer la foto sin gente. Camina hacia el centro por Hviezdoslavovo námestie, entra por la Puerta de San Miguel (sube a la torre) y recorre Michalská, Ventúrska y Hlavné námestie. Visita el Palacio Primacial y el patio del Antiguo Ayuntamiento. Tarde. Come un menú del día fuera de la plaza principal. Sigue a la catedral de San Martín y sube al castillo; dedica tiempo a los jardines. Baja hacia el río y cruza el Puente SNP. Noche. Atardecer desde el mirador UFO o desde las terrazas del castillo si prefieres no pagar. Cena con halušky y cerveza eslovaca. |
+| Día 2 | Devín, Slavín y Danubio. Mañana. Bus 29 desde la parada bajo el Puente SNP hasta Devín (unos 25 minutos). Recorre la ruina y baja hasta la confluencia de los ríos. Tarde. Vuelve al centro, come y sube andando a Slavín para tener la vista sobre la ciudad. De bajada, pasa por el Palacio Grassalkovich y el edificio de la Radio. Noche. Paseo por la orilla hasta Eurovea y cerveza en una microcervecería. Si te sobra energía, ópera o ballet en el Teatro Nacional. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -165,9 +156,12 @@ En la ciudad, el centro se recorre a pie. Para Devín, Kamzík o Petržalka usa 
 
 ## Cuánto cuesta un viaje a Bratislava
 
-- **Presupuesto ajustado (unos 50-70 € al día):** hostal 25 €, menú del día y cena sencilla 20 €, transporte 5 €, alguna entrada 5-10 €, cervezas 5 €.
+**Presupuesto orientativo por día**
 
-- **Presupuesto medio (unos 120-160 € al día):** hotel de gama media 90 €, comidas en restaurante 35 €, entradas (castillo de Devín, torre, UFO) 20 €, transporte y copas 15 €.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Presupuesto ajustado | unos 50-70 € al día | Hostal 25 €, menú del día y cena sencilla 20 €, transporte 5 €, alguna entrada 5-10 €, cervezas 5 €. |
+| Presupuesto medio | unos 120-160 € al día | Hotel de gama media 90 €, comidas en restaurante 35 €, entradas (castillo de Devín, torre, UFO) 20 €, transporte y copas 15 €. |
 
 - **Precios sueltos:** café 2-3 €, medio litro de cerveza 2,50-4 €, halušky 8-12 €, mirador UFO 10-12 €.
 

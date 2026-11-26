@@ -93,31 +93,15 @@ La ciudad es cara para dormir y para comer, pero sus mejores vistas no cuestan n
 
 Para comer barato, el truco es el **pintxo-pote de Gros**: muchos bares del barrio ofrecen los jueves por la tarde bebida más pintxo por unos 2,50-3 €. Comprar en el mercado y hacer picnic en Miramar también funciona. El autobús urbano con tarjeta sale a menos de 1,50 € el viaje, aunque casi no lo vas a necesitar.
 
-## Itinerario: San Sebastián en 3 días
+## Qué ver en San Sebastián en 3 días: ruta día a día
 
-### Día 1: Parte Vieja, Urgull y La Concha
+**Itinerario de 3 días en San Sebastián**
 
-**Mañana:** mercado de la Bretxa, Parte Vieja con Santa María del Coro y la Plaza de la Constitución, y subida a Urgull desde el puerto. Baja por el Paseo Nuevo.
-
-**Tarde:** San Telmo si llueve o apetece, y después todo el paseo de La Concha hasta Miramar.
-
-**Noche:** primera ronda de pintxos por la Parte Vieja. Empieza pronto, sobre las 19:30, antes de que los bares se llenen.
-
-### Día 2: Igueldo, Ondarreta y Gros
-
-**Mañana:** paseo hasta Ondarreta y el Peine del Viento. En verano, isla de Santa Clara en barco.
-
-**Tarde:** cruza la ciudad hasta Gros, para ver el Kursaal y Zurriola, o haz una clase de surf. Vuelve hacia el atardecer para subir a Igueldo en funicular.
-
-**Noche:** pintxos en Gros, que es más tranquilo y algo más barato. Si es jueves, pintxo-pote.
-
-### Día 3: Pasaia y Hondarribia
-
-**Mañana:** bus hasta Pasai San Pedro, motora de un par de minutos a **Pasai Donibane** y paseo por su única calle con casas de colores. Si estás en forma, haz la ida andando desde Gros por Ulía.
-
-**Tarde:** bus a Hondarribia para ver el casco amurallado y el barrio de la Marina, con sus casas de balcones pintados.
-
-**Noche:** pintxos en la calle San Pedro de Hondarribia antes de volver, o última cena en San Sebastián.
+| Día | Plan |
+|---|---|
+| Día 1 | Parte Vieja, Urgull y La Concha. Mañana: mercado de la Bretxa, Parte Vieja con Santa María del Coro y la Plaza de la Constitución, y subida a Urgull desde el puerto. Baja por el Paseo Nuevo. Tarde: San Telmo si llueve o apetece, y después todo el paseo de La Concha hasta Miramar. Noche: primera ronda de pintxos por la Parte Vieja. Empieza pronto, sobre las 19:30, antes de que los bares se llenen. |
+| Día 2 | Igueldo, Ondarreta y Gros. Mañana: paseo hasta Ondarreta y el Peine del Viento. En verano, isla de Santa Clara en barco. Tarde: cruza la ciudad hasta Gros, para ver el Kursaal y Zurriola, o haz una clase de surf. Vuelve hacia el atardecer para subir a Igueldo en funicular. Noche: pintxos en Gros, que es más tranquilo y algo más barato. Si es jueves, pintxo-pote. |
+| Día 3 | Pasaia y Hondarribia. Mañana: bus hasta Pasai San Pedro, motora de un par de minutos a Pasai Donibane y paseo por su única calle con casas de colores. Si estás en forma, haz la ida andando desde Gros por Ulía. Tarde: bus a Hondarribia para ver el casco amurallado y el barrio de la Marina, con sus casas de balcones pintados. Noche: pintxos en la calle San Pedro de Hondarribia antes de volver, o última cena en San Sebastián. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -171,9 +155,12 @@ Dentro de la ciudad se va andando. Para las distancias largas, los buses urbanos
 
 ## Cuánto cuesta un viaje a San Sebastián
 
-- **Presupuesto ajustado: unos 80-110 € al día.** Albergue o habitación en Amara (35-60 €), menú del día o picnic de mercado, pintxo-pote en Gros, subidas gratis a Urgull y playas, y como mucho un funicular.
+**Presupuesto orientativo por día**
 
-- **Presupuesto medio: unos 200-280 € al día por persona en habitación doble.** Hotel en el Centro o Gros (75-130 € por persona), cena de pintxos de 35 €, una comida de txuleta, museo, Igueldo y la excursión del día.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Presupuesto ajustado | unos 80-110 € al día | Albergue o habitación en Amara (35-60 €), menú del día o picnic de mercado, pintxo-pote en Gros, subidas gratis a Urgull y playas, y como mucho un funicular. |
+| Presupuesto medio | unos 200-280 € al día por persona en habitación doble | Hotel en el Centro o Gros (75-130 € por persona), cena de pintxos de 35 €, una comida de txuleta, museo, Igueldo y la excursión del día. |
 
 - **Extras comunes:** clase de surf, 35-50 €; sidrería, 40-50 €; barco a Santa Clara, unos 5-6 €; Aquarium, unos 16 €.
 

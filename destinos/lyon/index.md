@@ -97,33 +97,15 @@ Buena parte de lo mejor de Lyon no cuesta nada. Estos son los planes gratis o ca
 
 - Muchos museos municipales son gratis el primer domingo de cada mes; compruébalo antes en su web.
 
-## Itinerario: Lyon en 3 días
+## Qué ver en Lyon en 3 días: ruta día a día
 
-### Día 1: Fourvière y Vieux Lyon
+**Itinerario de 3 días en Lyon**
 
-**Mañana:** sube en funicular desde la estación Vieux Lyon hasta Fourvière. Visita la basílica, el mirador y los teatros romanos.
-
-**Tarde:** baja andando por el Jardin du Rosaire hasta Vieux Lyon. Recorre Saint-Jean y su catedral, Saint-Paul y las traboules. Come tarde en un bouchon.
-
-**Noche:** cruza la pasarela Saint-Georges o la Passerelle du Palais de Justice para ver Fourvière iluminada desde la otra orilla.
-
-### Día 2: Presqu'île y Croix-Rousse
-
-**Mañana:** mercado del Quai Saint-Antoine, place Bellecour y paseo hacia el norte hasta la place des Terreaux. Entra al Musée des Beaux-Arts.
-
-**Tarde:** sube por las Pentes de la Croix-Rousse buscando traboules, sigue hasta el Mur des Canuts y termina tomando algo en la place de la Croix-Rousse.
-
-**Noche:** cena en las Pentes, donde hay bistrós modernos más baratos que en Vieux Lyon.
-
-### Día 3: Parque, mercado y Confluence
-
-**Mañana:** Parc de la Tête d'Or a primera hora.
-
-**Mediodía:** Les Halles Paul Bocuse, que quedan a unos 20 minutos andando, para comer de picoteo.
-
-**Tarde:** tranvía hasta el Musée des Confluences y vuelta por el barrio de Confluence.
-
-**Noche:** péniche en las Berges du Rhône y cena en la Guillotière.
+| Día | Plan |
+|---|---|
+| Día 1 | Fourvière y Vieux Lyon. Mañana: sube en funicular desde la estación Vieux Lyon hasta Fourvière. Visita la basílica, el mirador y los teatros romanos. Tarde: baja andando por el Jardin du Rosaire hasta Vieux Lyon. Recorre Saint-Jean y su catedral, Saint-Paul y las traboules. Come tarde en un bouchon. Noche: cruza la pasarela Saint-Georges o la Passerelle du Palais de Justice para ver Fourvière iluminada desde la otra orilla. |
+| Día 2 | Presqu'île y Croix-Rousse. Mañana: mercado del Quai Saint-Antoine, place Bellecour y paseo hacia el norte hasta la place des Terreaux. Entra al Musée des Beaux-Arts. Tarde: sube por las Pentes de la Croix-Rousse buscando traboules, sigue hasta el Mur des Canuts y termina tomando algo en la place de la Croix-Rousse. Noche: cena en las Pentes, donde hay bistrós modernos más baratos que en Vieux Lyon. |
+| Día 3 | Parque, mercado y Confluence. Mañana: Parc de la Tête d'Or a primera hora. Mediodía: Les Halles Paul Bocuse, que quedan a unos 20 minutos andando, para comer de picoteo. Tarde: tranvía hasta el Musée des Confluences y vuelta por el barrio de Confluence. Noche: péniche en las Berges du Rhône y cena en la Guillotière. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -187,9 +169,12 @@ En la ciudad, la red TCL tiene cuatro líneas de metro (A, B, C y D), tranvías,
 
 ## Cuánto cuesta un viaje a Lyon
 
-- **Presupuesto ajustado (unos 70-90 € al día por persona):** albergue o habitación compartida, comida en mercados y boulangeries, un bouchon a mediodía, transporte con abono y planes gratis.
+**Presupuesto orientativo por día**
 
-- **Presupuesto medio (unos 130-180 € al día por persona):** hotel doble en la Presqu'île compartido, bouchon por la noche, un museo o dos y alguna copa en una péniche.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Presupuesto ajustado | unos 70-90 € al día por persona | Albergue o habitación compartida, comida en mercados y boulangeries, un bouchon a mediodía, transporte con abono y planes gratis. |
+| Presupuesto medio | unos 130-180 € al día por persona | Hotel doble en la Presqu'île compartido, bouchon por la noche, un museo o dos y alguna copa en una péniche. |
 
 - **Vuelos desde España:** hay rutas directas desde Madrid, Barcelona, Sevilla, Málaga y otras ciudades. Desde 30-60 € ida y vuelta si reservas con tiempo y viajas sin maleta facturada.
 

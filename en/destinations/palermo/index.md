@@ -39,15 +39,17 @@ Walk along the **Foro Italico** seafront at sunset when the whole city seems to 
 
 For one evening, find a seat for an opera or a concert at Teatro Massimo or the Politeama. Tickets can be cheaper than you would think.
 
-## How many days and a suggested route
+## Palermo itinerary: 3 days, day by day
 
 Three full days is the sweet spot. Two works if you stick to the centre. Four lets you add Cefalù or a quiet day at the beach.
 
-- **Day 1:** Palazzo dei Normanni and Cappella Palatina in the morning, then the cathedral, Quattro Canti, La Martorana and San Cataldo. Lunch at Ballarò, then the Kalsa neighbourhood in the late afternoon.
+**3-day itinerary for Palermo**
 
-- **Day 2:** Monreale in the morning, back to town for the Capo market, Teatro Massimo and the Oratorio del Rosario. Evening drinks in the Vucciria area.
-
-- **Day 3:** the Catacombe, then Mondello for the afternoon, or Cefalù by train for a day trip (about 45 minutes to an hour from Palermo Centrale).
+| Day | Plan |
+|---|---|
+| Day 1 | Palazzo dei Normanni and Cappella Palatina in the morning, then the cathedral, Quattro Canti, La Martorana and San Cataldo. Lunch at Ballarò, then the Kalsa neighbourhood in the late afternoon. |
+| Day 2 | Monreale in the morning, back to town for the Capo market, Teatro Massimo and the Oratorio del Rosario. Evening drinks in the Vucciria area. |
+| Day 3 | The Catacombe, then Mondello for the afternoon, or Cefalù by train for a day trip (about 45 minutes to an hour from Palermo Centrale). |
 
 ## When to go
 

@@ -103,21 +103,14 @@ Chicago is generous with free stuff, more than most US cities. These cost nothin
 
 ## Chicago itinerary: 4 days
 
-### Day 1: The Loop and the river
+**4-day itinerary for Chicago**
 
-**Morning:** Start at Millennium Park early, see the Bean and the Lurie Garden, then pop into the Chicago Cultural Center for the Tiffany dome. **Afternoon:** Spend 3 hours at the Art Institute, then take the architecture river cruise at around 4-5 pm. **Evening:** Have a drink on the Riverwalk, then eat dinner in the West Loop on Randolph Street.
-
-### Day 2: Museums and the lakefront
-
-**Morning:** Head to the Field Museum (or the Shedd if you have kids) on the Museum Campus. **Afternoon:** Walk the path toward the Adler Planetarium for the skyline view, then rent a Divvy bike and ride north along the lakefront. **Evening:** End at Navy Pier at sunset, then catch blues in Lincoln Park.
-
-### Day 3: North Side neighbourhoods
-
-**Morning:** Visit Lincoln Park Zoo, the Conservatory and the Nature Boardwalk. **Afternoon:** Walk or ride to Wrigleyville for a Cubs game, or head to Old Town and Wicker Park. **Evening:** See a Second City show, then have a drink at the Signature Lounge for the night view.
-
-### Day 4: West Side and Pilsen
-
-**Morning:** Take the Green Line to Oak Park for Frank Lloyd Wright, stopping at Garfield Park Conservatory on the way back. **Afternoon:** Go to Pilsen for murals, tacos and the National Museum of Mexican Art. **Evening:** Finish with dinner in Wicker Park or Logan Square, or catch late jazz at the Green Mill.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · The Loop and the river | Start at Millennium Park early, see the Bean and the Lurie Garden, then pop into the Chicago Cultural Center for the Tiffany dome. | Spend 3 hours at the Art Institute, then take the architecture river cruise at around 4-5 pm. | Have a drink on the Riverwalk, then eat dinner in the West Loop on Randolph Street. |
+| Day 2 · Museums and the lakefront | Head to the Field Museum (or the Shedd if you have kids) on the Museum Campus. | Walk the path toward the Adler Planetarium for the skyline view, then rent a Divvy bike and ride north along the lakefront. | End at Navy Pier at sunset, then catch blues in Lincoln Park. |
+| Day 3 · North Side neighbourhoods | Visit Lincoln Park Zoo, the Conservatory and the Nature Boardwalk. | Walk or ride to Wrigleyville for a Cubs game, or head to Old Town and Wicker Park. | See a Second City show, then have a drink at the Signature Lounge for the night view. |
+| Day 4 · West Side and Pilsen | Take the Green Line to Oak Park for Frank Lloyd Wright, stopping at Garfield Park Conservatory on the way back. | Go to Pilsen for murals, tacos and the National Museum of Mexican Art. | Finish with dinner in Wicker Park or Logan Square, or catch late jazz at the Green Mill. |
 
 ## What is overrated (and what to do instead)
 
@@ -175,9 +168,12 @@ Getting around, the "L" trains and CTA buses cover most of what you need. Tap a 
 
 ## How much a trip to Chicago costs
 
-- **Shoestring: about €90-130 ($100-140) per day.** This covers a hostel dorm, hot dogs and tacos, a transit pass and mostly free sights.
+**Rough daily budget**
 
-- **Mid-range: about €230-350 ($250-380) per day.** This covers a 3-star hotel, sit-down dinners, the architecture cruise or a museum, and a show or a ballgame.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | about €90-130 ($100-140) per day | This covers a hostel dorm, hot dogs and tacos, a transit pass and mostly free sights. |
+| Mid-range | about €230-350 ($250-380) per day | This covers a 3-star hotel, sit-down dinners, the architecture cruise or a museum, and a show or a ballgame. |
 
 ## Day trips from Chicago
 

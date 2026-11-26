@@ -101,21 +101,14 @@ Hong Kong is expensive to sleep in, but a lot of the best bits cost nothing or c
 
 ## Hong Kong itinerary: 4 days
 
-### Day 1: Central, Sheung Wan and the Peak
+**4-day itinerary for Hong Kong**
 
-**Morning:** dim sum, then walk from Central to Sheung Wan via the Mid-Levels Escalator, Tai Kwun, Hollywood Road and Man Mo Temple. **Afternoon:** dried seafood shops on Des Voeux Road West, then the tram east for the ride. **Evening:** bus 15 or the Peak Tram up around sunset, Lugard Road loop, back down for dinner in SoHo.
-
-### Day 2: Kowloon
-
-**Morning:** Star Ferry to Tsim Sha Tsui, then MTR to Diamond Hill for Chi Lin Nunnery and Nan Lian Garden, plus Wong Tai Sin. **Afternoon:** Prince Edward MTR for the Flower Market, Bird Garden and Goldfish Market, then Sham Shui Po for snacks. **Evening:** Temple Street Night Market and claypot rice, then the TST promenade for the skyline.
-
-### Day 3: Lantau Island
-
-**Morning:** MTR to Tung Chung, cable car up early to the Big Buddha and Po Lin Monastery. **Afternoon:** bus to Tai O for snacks and stilt houses, then bus back to Tung Chung. **Evening:** West Kowloon for sunset at the harbourfront park, M+ if you still have energy, dinner in Jordan.
-
-### Day 4: Hike and beach
-
-**Morning:** Dragon's Back from To Tei Wan down to Big Wave Bay. **Afternoon:** swim, then bus to Shek O for a lazy lunch, or head back for the Palace Museum if it is raining. **Evening:** Happy Valley races if it is a Wednesday; otherwise drinks in Sai Ying Pun and a final roast goose dinner.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Central, Sheung Wan and the Peak | Dim sum, then walk from Central to Sheung Wan via the Mid-Levels Escalator, Tai Kwun, Hollywood Road and Man Mo Temple. | Dried seafood shops on Des Voeux Road West, then the tram east for the ride. | Bus 15 or the Peak Tram up around sunset, Lugard Road loop, back down for dinner in SoHo. |
+| Day 2 · Kowloon | Star Ferry to Tsim Sha Tsui, then MTR to Diamond Hill for Chi Lin Nunnery and Nan Lian Garden, plus Wong Tai Sin. | Prince Edward MTR for the Flower Market, Bird Garden and Goldfish Market, then Sham Shui Po for snacks. | Temple Street Night Market and claypot rice, then the TST promenade for the skyline. |
+| Day 3 · Lantau Island | MTR to Tung Chung, cable car up early to the Big Buddha and Po Lin Monastery. | Bus to Tai O for snacks and stilt houses, then bus back to Tung Chung. | West Kowloon for sunset at the harbourfront park, M+ if you still have energy, dinner in Jordan. |
+| Day 4 · Hike and beach | Dragon's Back from To Tei Wan down to Big Wave Bay. | Swim, then bus to Shek O for a lazy lunch, or head back for the Palace Museum if it is raining. | Happy Valley races if it is a Wednesday; otherwise drinks in Sai Ying Pun and a final roast goose dinner. |
 
 ## What is overrated (and what to do instead)
 

@@ -83,19 +83,15 @@ Túnez es barato hasta cuando pagas, pero hay mucho gratis. La medina, los zocos
 
 El tren TGM es casi gratis: un billete cuesta alrededor de 1 TND (unos 0,30 €) y te pasea por toda la costa norte. Las entradas a museos y yacimientos rara vez superan los 4 €, y el pan con harissa o un bocadillo de fricassé (pan frito con atún, huevo y patata) sale por 2 o 3 TND.
 
-## Itinerario: Túnez en 3 días
+## Qué ver en Túnez en 3 días: ruta día a día
 
-### Día 1: medina y centro
+**Itinerario de 3 días en Túnez**
 
-**Mañana:** entra por Bab el Bhar, sube por la calle Jamaa Ez Zitouna hasta la Gran Mezquita y recorre los zocos de alrededor (Attarine, Chaouachia, Berka). **Tarde:** baja al sur de la medina para Dar Ben Abdallah y la Tourbet el Bey, té en el Café M'rabet y una terraza con vistas. **Noche:** paseo por la avenida Habib Bourguiba y cena en el centro o en un dar de la medina.
-
-### Día 2: Cartago y Sidi Bou Said
-
-**Mañana:** TGM desde la estación Tunis Marine hasta Carthage Hannibal, colina de Byrsa y museo, y luego bajada a las Termas de Antonino. **Tarde:** TGM dos paradas hasta Sidi Bou Said, comida y paseo hasta el atardecer en el Café des Délices. **Noche:** vuelve en TGM y para en La Goulette a cenar pescado.
-
-### Día 3: Bardo y costa
-
-**Mañana:** metro ligero línea 4 al Museo del Bardo, a primera hora. **Tarde:** vuelta al centro, Mercado Central y compras de última hora, o TGM hasta La Marsa para playa y té en el Saf Saf. **Noche:** última cena con brik y couscous y café en la Bourguiba.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Medina y centro | Entra por Bab el Bhar, sube por la calle Jamaa Ez Zitouna hasta la Gran Mezquita y recorre los zocos de alrededor (Attarine, Chaouachia, Berka). | Baja al sur de la medina para Dar Ben Abdallah y la Tourbet el Bey, té en el Café M'rabet y una terraza con vistas. | Paseo por la avenida Habib Bourguiba y cena en el centro o en un dar de la medina. |
+| Día 2 · Cartago y Sidi Bou Said | TGM desde la estación Tunis Marine hasta Carthage Hannibal, colina de Byrsa y museo, y luego bajada a las Termas de Antonino. | TGM dos paradas hasta Sidi Bou Said, comida y paseo hasta el atardecer en el Café des Délices. | Vuelve en TGM y para en La Goulette a cenar pescado. |
+| Día 3 · Bardo y costa | Metro ligero línea 4 al Museo del Bardo, a primera hora. | Vuelta al centro, Mercado Central y compras de última hora, o TGM hasta La Marsa para playa y té en el Saf Saf. | Última cena con brik y couscous y café en la Bourguiba. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -167,9 +163,12 @@ No hay abono turístico útil: los billetes sueltos cuestan tan poco que no lo n
 
 Sin contar el vuelo, y con 1 € a unos 3,4 TND:
 
-- **Ajustado: 35-50 € al día.** Hotel sencillo en el centro, comida callejera, TGM y metro, entradas de museos.
+**Presupuesto orientativo por día**
 
-- **Medio: 80-120 € al día.** Dar en la medina o buen hotel, restaurantes con mesa y mantel, taxis y alguna cena especial.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | 35-50 € al día | Hotel sencillo en el centro, comida callejera, TGM y metro, entradas de museos. |
+| Medio | 80-120 € al día | Dar en la medina o buen hotel, restaurantes con mesa y mantel, taxis y alguna cena especial. |
 
 El dinar no se puede sacar del país ni comprar fuera. Saca en cajeros o cambia en el aeropuerto y guarda los recibos si quieres recambiar lo que sobre al irte.
 

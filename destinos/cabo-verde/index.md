@@ -97,37 +97,21 @@ Las playas son públicas en todo el país, incluso las que tienen hoteles delant
 
 - **Baía das Gatas**, una laguna natural protegida por rocas en São Vicente, a unos 2 € en aluguer desde Mindelo.
 
-## Itinerario: Cabo Verde en 7 días
+## Qué ver en Cabo Verde en 7 días: ruta día a día
 
 Este plan combina Sal, São Vicente y Santo Antão. Desde España hay vuelos directos a Sal en temporada y conexiones vía Lisboa o Canarias a Sal, Praia y São Vicente. Reserva el vuelo interno Sal-São Vicente con margen y no lo pongas el día antes de volver a casa.
 
-### Día 1: llegada a Sal y Santa Maria
+**Itinerario de 7 días en Cabo Verde**
 
-Mañana: aterriza en Sal y ve en taxi a Santa Maria. Tarde: playa de Santa Maria y paseo por el pontón. Noche: cena de pescado del día en el pueblo y una Strela en algún bar de la calle principal.
-
-### Día 2: vuelta a la isla de Sal
-
-Mañana: Shark Bay con marea baja y Buracona hacia mediodía para el Olho Azul. Tarde: salinas de Pedra de Lume ya con menos gente. Noche: atardecer en Ponta Preta.
-
-### Día 3: vuelo a São Vicente y Mindelo
-
-Mañana: vuelo interno a São Vicente (aproximadamente 1 hora). Tarde: Mindelo a pie: Praça Nova, Mercado Municipal, mercado de pescado y Torre de Belém. Noche: música en directo y cachupa o pescado a la brasa.
-
-### Día 4: ferry a Santo Antão y Estrada da Corda
-
-Mañana: ferry temprano de Mindelo a Porto Novo (aproximadamente 1 hora). Aluguer por la Estrada da Corda hasta el valle de Paul. Tarde: paseo por la ribeira y visita a un trapiche de grogue. Noche: duerme en Paul o en Ponta do Sol.
-
-### Día 5: Cova y bajada por Paul
-
-Mañana: aluguer hasta el cráter de Cova y bajada a pie por la Ribeira do Paul (3-4 horas). Tarde: descanso en Vila das Pombas. Noche: cena en Ponta do Sol, junto al puerto.
-
-### Día 6: Fontainhas y vuelta a Mindelo
-
-Mañana: sendero de Ponta do Sol a Fontainhas, y hasta Cruzinha si tienes piernas. Tarde: aluguer a Porto Novo y ferry de vuelta a Mindelo. Noche: última noche de música en Mindelo.
-
-### Día 7: Monte Verde o Baía das Gatas
-
-Mañana: Monte Verde temprano o baño en Baía das Gatas. Tarde: vuelo de vuelta (vía Sal, Praia o Lisboa, según tu billete). Si tu vuelo internacional sale de Sal, vuelve allí la noche anterior para no depender de un vuelo interno retrasado.
+| Día | Plan |
+|---|---|
+| Día 1 | Llegada a Sal y Santa Maria. Mañana: aterriza en Sal y ve en taxi a Santa Maria. Tarde: playa de Santa Maria y paseo por el pontón. Noche: cena de pescado del día en el pueblo y una Strela en algún bar de la calle principal. |
+| Día 2 | Vuelta a la isla de Sal. Mañana: Shark Bay con marea baja y Buracona hacia mediodía para el Olho Azul. Tarde: salinas de Pedra de Lume ya con menos gente. Noche: atardecer en Ponta Preta. |
+| Día 3 | Vuelo a São Vicente y Mindelo. Mañana: vuelo interno a São Vicente (aproximadamente 1 hora). Tarde: Mindelo a pie: Praça Nova, Mercado Municipal, mercado de pescado y Torre de Belém. Noche: música en directo y cachupa o pescado a la brasa. |
+| Día 4 | Ferry a Santo Antão y Estrada da Corda. Mañana: ferry temprano de Mindelo a Porto Novo (aproximadamente 1 hora). Aluguer por la Estrada da Corda hasta el valle de Paul. Tarde: paseo por la ribeira y visita a un trapiche de grogue. Noche: duerme en Paul o en Ponta do Sol. |
+| Día 5 | Cova y bajada por Paul. Mañana: aluguer hasta el cráter de Cova y bajada a pie por la Ribeira do Paul (3-4 horas). Tarde: descanso en Vila das Pombas. Noche: cena en Ponta do Sol, junto al puerto. |
+| Día 6 | Fontainhas y vuelta a Mindelo. Mañana: sendero de Ponta do Sol a Fontainhas, y hasta Cruzinha si tienes piernas. Tarde: aluguer a Porto Novo y ferry de vuelta a Mindelo. Noche: última noche de música en Mindelo. |
+| Día 7 | Monte Verde o Baía das Gatas. Mañana: Monte Verde temprano o baño en Baía das Gatas. Tarde: vuelo de vuelta (vía Sal, Praia o Lisboa, según tu billete). Si tu vuelo internacional sale de Sal, vuelve allí la noche anterior para no depender de un vuelo interno retrasado. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -179,9 +163,12 @@ No hay abonos de transporte. Dentro de cada isla se usan los **aluguers** (furgo
 
 ## Cuánto cuesta un viaje a Cabo Verde
 
-- **Presupuesto ajustado: 50-70 € al día.** Pensión sencilla, comida local, aluguers y senderos por libre.
+**Presupuesto orientativo por día**
 
-- **Presupuesto medio: 100-150 € al día.** Hotel pequeño con buenas vistas, cenas en restaurante, alguna excursión o inmersión y taxis.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Presupuesto ajustado | 50-70 € al día | Pensión sencilla, comida local, aluguers y senderos por libre. |
+| Presupuesto medio | 100-150 € al día | Hotel pequeño con buenas vistas, cenas en restaurante, alguna excursión o inmersión y taxis. |
 
 - **Extras a sumar:** vuelo desde España (entre 300 y 600 € ida y vuelta según temporada), vuelos internos y la tasa de seguridad aeroportuaria.
 

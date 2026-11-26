@@ -83,23 +83,14 @@ Fráncfort no es barata, pero lo más bonito se ve sin pagar. Römerberg, Nueva 
 
 Varios museos del Museumsufer son gratis el último sábado de cada mes. Y si te vas a mover mucho, mira la **Frankfurt Card** (transporte ilimitado y descuentos en museos, unos 13 € al día) o la **Museumsufer-Ticket** (dos días de museos por unos 21 €), que se amortiza a partir de dos o tres museos.
 
-## Itinerario: Fráncfort en 2 días
+## Qué ver en Fráncfort en 2 días: ruta día a día
 
-### Día 1: casco antiguo, mercado y sidra
+**Itinerario de 2 días en Fráncfort**
 
-**Mañana:** empieza temprano en el Römerberg, antes de que lleguen los grupos. Sigue por la Nueva Altstadt hasta la catedral y sube a la torre. Baja a la Paulskirche y termina en la Kleinmarkthalle para comer algo de pie.
-
-**Tarde:** Casa de Goethe si te interesa, luego Alte Oper y la Fressgass. A media tarde, Main Tower (está a 5 minutos de la Fressgass); intenta coincidir con el atardecer.
-
-**Noche:** cruza el Eiserner Steg para ver los rascacielos iluminados y cena en una taberna de sidra de Sachsenhausen, lejos de Kleine Rittergasse.
-
-### Día 2: museos del Meno y barrios
-
-**Mañana:** Städel Museum a primera hora, con la entrada comprada. Si te quedan fuerzas, el Museo de Arte Aplicado o el de Cine están en la misma orilla.
-
-**Tarde:** paseo por la orilla del Meno hacia el este y metro U4 hasta Bornheim. Café en Berger Straße. Alternativa con lluvia o niños: Palmengarten y Senckenberg (U6/U7).
-
-**Noche:** cena en Bornheim o Nordend y, si te apetece, una cerveza en alguna terraza de Berger Straße.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Casco antiguo, mercado y sidra | Empieza temprano en el Römerberg, antes de que lleguen los grupos. Sigue por la Nueva Altstadt hasta la catedral y sube a la torre. Baja a la Paulskirche y termina en la Kleinmarkthalle para comer algo de pie. | Casa de Goethe si te interesa, luego Alte Oper y la Fressgass. A media tarde, Main Tower (está a 5 minutos de la Fressgass); intenta coincidir con el atardecer. | Cruza el Eiserner Steg para ver los rascacielos iluminados y cena en una taberna de sidra de Sachsenhausen, lejos de Kleine Rittergasse. |
+| Día 2 · Museos del Meno y barrios | Städel Museum a primera hora, con la entrada comprada. Si te quedan fuerzas, el Museo de Arte Aplicado o el de Cine están en la misma orilla. | Paseo por la orilla del Meno hacia el este y metro U4 hasta Bornheim. Café en Berger Straße. Alternativa con lluvia o niños: Palmengarten y Senckenberg (U6/U7). | Cena en Bornheim o Nordend y, si te apetece, una cerveza en alguna terraza de Berger Straße. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -157,9 +148,12 @@ Dentro de la ciudad, el centro se hace andando. Para lo demás, metro (U-Bahn), 
 
 ## Cuánto cuesta un viaje a Fráncfort
 
-- **Presupuesto ajustado: unos 80 a 100 € al día** por persona. Hostal o hotel en Bahnhofsviertel compartiendo habitación (35 a 50 €), comida en mercados y puestos (20 €), transporte diario (6 €) y un museo o el Main Tower (15 €).
+**Presupuesto orientativo por día**
 
-- **Presupuesto medio: unos 150 a 200 € al día** por persona. Hotel en Sachsenhausen o Nordend en doble (55 a 75 € por cabeza), cena en taberna y comida sentada (45 €), Frankfurt Card o billetes (12 €), museos y mirador (30 €) y algo de copas.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Presupuesto ajustado | unos 80 a 100 € al día | Por persona. Hostal o hotel en Bahnhofsviertel compartiendo habitación (35 a 50 €), comida en mercados y puestos (20 €), transporte diario (6 €) y un museo o el Main Tower (15 €). |
+| Presupuesto medio | unos 150 a 200 € al día | Por persona. Hotel en Sachsenhausen o Nordend en doble (55 a 75 € por cabeza), cena en taberna y comida sentada (45 €), Frankfurt Card o billetes (12 €), museos y mirador (30 €) y algo de copas. |
 
 - **Extras habituales:** crucero por el Meno (15 €), Ebbelwei-Express (10 €), cerveza o sidra en bar (4 a 5 €), café (3 a 4 €).
 

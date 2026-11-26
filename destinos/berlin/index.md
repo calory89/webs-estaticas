@@ -39,17 +39,18 @@ Los domingos, el mercadillo de Mauerpark mezcla ropa de segunda mano, comida cal
 
 La vida nocturna es famosa, y con razón. Berghain tiene una puerta imprevisible y colas de horas; si te interesa la música electrónica, hay decenas de clubes menos exigentes en Friedrichshain y Neukölln. Los bares abren hasta tarde y muchos no cobran entrada.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Berlín en 4 días: ruta día a día
 
 Con tres días ves lo esencial. Con cuatro lo disfrutas sin ir con la lengua fuera. Una propuesta:
 
-- **Día 1:** tour a pie por el centro, Puerta de Brandeburgo, Memorial del Holocausto, Reichstag y Topografía del Terror.
+**Itinerario de 4 días en Berlín**
 
-- **Día 2:** Bernauer Straße y Mauerpark por la mañana; Isla de los Museos y Alexanderplatz por la tarde.
-
-- **Día 3:** East Side Gallery, cruce a Kreuzberg a pie, comida en Markthalle Neun y noche por Neukölln o Friedrichshain.
-
-- **Día 4:** Tempelhofer Feld, el palacio de Charlottenburg o una excursión en tren a Potsdam, a unos 30-40 minutos.
+| Día | Plan |
+|---|---|
+| Día 1 | Tour a pie por el centro, Puerta de Brandeburgo, Memorial del Holocausto, Reichstag y Topografía del Terror. |
+| Día 2 | Bernauer Straße y Mauerpark por la mañana; Isla de los Museos y Alexanderplatz por la tarde. |
+| Día 3 | East Side Gallery, cruce a Kreuzberg a pie, comida en Markthalle Neun y noche por Neukölln o Friedrichshain. |
+| Día 4 | Tempelhofer Feld, el palacio de Charlottenburg o una excursión en tren a Potsdam, a unos 30-40 minutos. |
 
 ## Cuándo ir
 

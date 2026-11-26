@@ -103,29 +103,13 @@ Wroclaw is cheap even when you pay, but a lot of the best stuff is free:
 
 ## Wroclaw itinerary: 3 days
 
-### Day 1: Old Town and Cathedral Island
+**3-day itinerary for Wroclaw**
 
-**Morning:** start at the Rynek before 9am, then Salt Square and the Jaś and Małgosia houses. Climb St Elizabeth's tower for the overview. Late morning, visit the Museum of Burgher Art in the Town Hall.
-
-**Afternoon:** lunch at a milk bar, then walk down to the university for the Aula Leopoldina and Mathematical Tower. Cross to Piaskowa Island, stop at Hala Targowa if it is still open, and continue to Cathedral Island.
-
-**Evening:** go up the cathedral tower before it closes, then wait for the lamplighter at dusk. Dinner back in the Old Town, beer at Spiż.
-
-### Day 2: Panorama, Centennial Hall and the east
-
-**Morning:** book the first slot at the Racławice Panorama, then use the same ticket for the National Museum next door if you like art.
-
-**Afternoon:** take a tram east to Centennial Hall. See the dome, walk the Pergola, then the Japanese Garden and Szczytnicki Park. Families can swap the garden for the zoo and Afrykarium.
-
-**Evening:** stay for the Multimedia Fountain show (in season), then tram back for dinner and a bar crawl around Kotlarska and Ruska.
-
-### Day 3: Four Denominations, Nadodrze and the river
-
-**Morning:** walk the Four Denominations District and visit the White Stork Synagogue. Brunch nearby.
-
-**Afternoon:** cross the river to Nadodrze for street art, cafés and courtyards. In summer, rent a kayak or pedal boat on the Oder late afternoon.
-
-**Evening:** sunset on Wyspa Słodowa, then Neon Side at Ruska 46 once it is dark, and a last plate of pierogi.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Old Town and Cathedral Island | Start at the Rynek before 9am, then Salt Square and the Jaś and Małgosia houses. Climb St Elizabeth's tower for the overview. Late morning, visit the Museum of Burgher Art in the Town Hall. | Lunch at a milk bar, then walk down to the university for the Aula Leopoldina and Mathematical Tower. Cross to Piaskowa Island, stop at Hala Targowa if it is still open, and continue to Cathedral Island. | Go up the cathedral tower before it closes, then wait for the lamplighter at dusk. Dinner back in the Old Town, beer at Spiż. |
+| Day 2 · Panorama, Centennial Hall and the east | Book the first slot at the Racławice Panorama, then use the same ticket for the National Museum next door if you like art. | Take a tram east to Centennial Hall. See the dome, walk the Pergola, then the Japanese Garden and Szczytnicki Park. Families can swap the garden for the zoo and Afrykarium. | Stay for the Multimedia Fountain show (in season), then tram back for dinner and a bar crawl around Kotlarska and Ruska. |
+| Day 3 · Four Denominations, Nadodrze and the river | Walk the Four Denominations District and visit the White Stork Synagogue. Brunch nearby. | Cross the river to Nadodrze for street art, cafés and courtyards. In summer, rent a kayak or pedal boat on the Oder late afternoon. | Sunset on Wyspa Słodowa, then Neon Side at Ruska 46 once it is dark, and a last plate of pierogi. |
 
 ## What is overrated (and what to do instead)
 

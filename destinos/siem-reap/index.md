@@ -91,21 +91,17 @@ Los templos no son baratos, pero la ciudad sí.
 
 - **Comida callejera:** un plato de num banh chok o un bocadillo nom pang cuestan entre 1 y 2 $.
 
-## Itinerario: Siem Reap y Angkor en 3 días
+## Qué ver en Siem Reap y Angkor en 3 días: ruta día a día
 
 Este orden funciona con un tuk-tuk contratado cada día (entre 15 y 30 $ según la ruta). Deja siempre el mediodía para descansar.
 
-### Día 1: circuito pequeño
+**Itinerario de 3 días en Siem Reap y Angkor**
 
-**Mañana:** amanecer en Angkor Wat, visita completa del templo al salir el resto de la gente y Ta Prohm después. **Tarde:** vuelta al hotel a comer y descansar; a media tarde, Angkor Thom (Bayon, Baphuon y terrazas) con la luz baja. **Noche:** cena por el Mercado Viejo y paseo por Pub Street, aunque sea para comprobar que no es lo tuyo.
-
-### Día 2: circuito grande
-
-**Mañana:** amanecer en Srah Srang, Banteay Kdei, Ta Som, Neak Pean y Preah Khan. **Tarde:** descanso o Museo Nacional de Angkor; a última hora, Mebon Oriental y atardecer en Pre Rup. **Noche:** circo Phare.
-
-### Día 3: Banteay Srei y Kbal Spean
-
-**Mañana:** sal temprano a Banteay Srei, sigue a Kbal Spean (paseo de unos 40 minutos cuesta arriba hasta las tallas en el lecho del río) y para en el Museo de las Minas de Camboya, que está de camino. **Tarde:** vuelta parando en Banteay Samré; masaje en la ciudad. **Noche:** cena en un restaurante escuela y compras en el mercado nocturno.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Circuito pequeño | Amanecer en Angkor Wat, visita completa del templo al salir el resto de la gente y Ta Prohm después. | Vuelta al hotel a comer y descansar; a media tarde, Angkor Thom (Bayon, Baphuon y terrazas) con la luz baja. | Cena por el Mercado Viejo y paseo por Pub Street, aunque sea para comprobar que no es lo tuyo. |
+| Día 2 · Circuito grande | Amanecer en Srah Srang, Banteay Kdei, Ta Som, Neak Pean y Preah Khan. | Descanso o Museo Nacional de Angkor; a última hora, Mebon Oriental y atardecer en Pre Rup. | Circo Phare. |
+| Día 3 · Banteay Srei y Kbal Spean | Sal temprano a Banteay Srei, sigue a Kbal Spean (paseo de unos 40 minutos cuesta arriba hasta las tallas en el lecho del río) y para en el Museo de las Minas de Camboya, que está de camino. | Vuelta parando en Banteay Samré; masaje en la ciudad. | Cena en un restaurante escuela y compras en el mercado nocturno. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -173,12 +169,14 @@ En la ciudad no hay transporte público ni abonos. Te moverás en tuk-tuk o remo
 
 Precios por persona y día, sin vuelos y sin contar el pase de Angkor (unos 57 € el de 3 días):
 
-- **Ajustado: entre 25 y 35 € al día.** Hostal o guesthouse, comida de puesto, bici o tuk-tuk compartido y una cerveza barata.
+**Presupuesto orientativo por día**
 
-- **Medio: entre 60 y 90 € al día.** Hotel con piscina, tuk-tuk privado para los templos, restaurantes y una noche de circo.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | entre 25 y 35 € al día | Hostal o guesthouse, comida de puesto, bici o tuk-tuk compartido y una cerveza barata. |
+| Medio | entre 60 y 90 € al día | Hotel con piscina, tuk-tuk privado para los templos, restaurantes y una noche de circo. |
 
 - **Extras habituales:** guía oficial, entre 35 y 45 € al día; circo Phare, entre 17 y 35 €; Beng Mealea, 5 € más el transporte; Phnom Kulen, unos 20 € de entrada.
-
 Para entrar en Camboya los españoles necesitan visado: el e-visa cuesta unos 33 € y el visado a la llegada, alrededor de 28 €.
 
 ## Excursiones de un día desde Siem Reap y Angkor

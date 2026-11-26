@@ -39,17 +39,18 @@ Si te gustan los mercados, ve al de Coyoacán o al de San Juan. Y un domingo cua
 
 Hay una excursión que casi nadie se salta: Teotihuacán, a unos 50 kilómetros al norte. Sube a la Pirámide del Sol temprano (con calor y sin sombra se sufre) y camina la Calzada de los Muertos. Se llega en autobús desde la Terminal Norte en algo menos de una hora y media, según el tráfico.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Ciudad de México en 4 días: ruta día a día
 
 Con tres días ves lo esencial sin correr demasiado. Con cuatro o cinco disfrutas de verdad y puedes añadir Teotihuacán sin sacrificar nada.
 
-- **Día 1:** Centro Histórico. Zócalo, catedral, Templo Mayor, Palacio Nacional, Bellas Artes. Cena en la Roma.
+**Itinerario de 4 días en Ciudad de México**
 
-- **Día 2:** Chapultepec. Museo de Antropología por la mañana y castillo por la tarde. Paseo por Condesa al final.
-
-- **Día 3:** Coyoacán y Casa Azul por la mañana, UNAM después. Xochimilco si te queda aire.
-
-- **Día 4:** Teotihuacán a primera hora y de vuelta a mediodía. Tarde libre o lucha libre por la noche.
+| Día | Plan |
+|---|---|
+| Día 1 | Centro Histórico. Zócalo, catedral, Templo Mayor, Palacio Nacional, Bellas Artes. Cena en la Roma. |
+| Día 2 | Chapultepec. Museo de Antropología por la mañana y castillo por la tarde. Paseo por Condesa al final. |
+| Día 3 | Coyoacán y Casa Azul por la mañana, UNAM después. Xochimilco si te queda aire. |
+| Día 4 | Teotihuacán a primera hora y de vuelta a mediodía. Tarde libre o lucha libre por la noche. |
 
 ## Cuándo ir: clima y temporadas
 

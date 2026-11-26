@@ -10,6 +10,16 @@ import gen_deals as G  # noqa: E402
 import gen_en as E  # noqa: E402
 
 SITE = 'https://www.happylowcost.com'
+# días de cada guía (los escribe gen_deals): el enlace dice la consulta que la guía ya posiciona, "qué ver en X en 3 días"
+try:
+    GUIDE_DAYS = json.load(open(os.path.join('destinos', 'dias.json'), encoding='utf-8'))
+except Exception:
+    GUIDE_DAYS = {}
+UK_ORIG = {'Londres', 'London', 'Manchester', 'Edimburgo', 'Edinburgh', 'Glasgow', 'Bristol', 'Birmingham', 'Liverpool', 'Leeds', 'Newcastle', 'Belfast'}
+try:
+    GBP = float(json.load(open(os.path.join('hlc', 'fx.json')))['rates']['GBP'])
+except Exception:
+    GBP = 0
 FEED = 'https://gmdalfsvtfhzepyrdmjj.supabase.co/functions/v1/hlc-routes?action=feed'
 # ---- que rutas siguen en el indice de Google ----------------------------------
 # Las 3.380 paginas de ruta son el 61% de las impresiones del sitio y el 16% de
@@ -165,6 +175,11 @@ def page(r, lang, others):
         # "Vuelos baratos Madrid-Roma desde 44 € (nov 2026) · Happy Low Cost": la fecha va con el precio, la marca al final
         core = re.sub(r'\s*[|·–-]\s*Happy Low Cost\s*$', '', t0).strip()
         c['title'] = (f"{core} ({mes_en[:3]} {td.year}) · Happy Low Cost" if en else f"{core} ({mes_es[:3]} {td.year}) · Happy Low Cost") if core != t0 else (f"{t0} ({mes_en[:3]} {td.year})" if en else f"{t0} ({mes_es[:3]} {td.year})")
+    # salidas de Reino Unido: el precio también en libras en el título (la gente de allí busca en £; tipo del BCE de hlc/fx.json)
+    if en and r['origin'] in UK_ORIG and GBP and c.get('title'):
+        _t = re.sub(r'€\s?(\d+)', lambda m_: f'£{int(round(int(m_.group(1)) * GBP))} (€{m_.group(1)})', c['title'], count=1)
+        if len(re.sub(r'\s*·\s*Happy Low Cost\s*$', '', _t)) <= 66:
+            c['title'] = _t
     if p_:
         if en:
             c['meta'] = (f"Flights {__import__('en_names').city_en(r['origin'])} to {dest} from €{p_} return" + (', nonstop' if stops == 0 else '') + (f' with {air_}' if air_ else '') + '. '
@@ -232,7 +247,9 @@ def page(r, lang, others):
     rel = ''.join(f'<a class="hub-l" href="{"/en/flights/" + en_slug(o) if en else "/vuelos/" + o["slug"]}/">{e(o["origin"])} → {e(E.NAMES.get(o["dest_slug"], o["dest"]) if en else o["dest"])} · {o["price_from"]} €</a>' for o in others[:12])
     L = (lambda es_, en_: en_ if en else es_)
     gpath = f"en/destinations/{G.en_dest_slug(ds)}" if en else f"destinos/{ds}"
-    guide_btn = f'<a class="hlc-btn o" href="/{gpath}/">📖 {e(L("Qué ver en " + dest, dest + " itinerary"))}</a>' if os.path.isfile(os.path.join(gpath, 'index.html')) else ''
+    nd_g = GUIDE_DAYS.get(ds) or 0
+    g_txt = L("Qué ver en " + dest + (f" en {nd_g} días" if nd_g else ""), dest + (f" itinerary: {nd_g} days" if nd_g else " itinerary"))
+    guide_btn = f'<a class="hlc-btn o" href="/{gpath}/">📖 {e(g_txt)}</a>' if os.path.isfile(os.path.join(gpath, 'index.html')) else ''
     r_o = r['origin']
     # otras ciudades al mismo destino (solo rutas indexadas) y, si esta ruta no está en el índice, la ruta indexada más barata al mismo destino
     sib = sorted([o for o in BY_DEST.get(ds, []) if o['slug'] != slug and o['slug'] in INDEXED_SLUGS[lang]], key=lambda o: o['price_from'])

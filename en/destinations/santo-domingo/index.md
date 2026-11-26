@@ -99,17 +99,13 @@ A surprising amount of the city costs nothing.
 
 ## Santo Domingo itinerary: 3 days
 
-### Day 1: Zona Colonial
+**3-day itinerary for Santo Domingo**
 
-**Morning:** Start at Parque Colón and the cathedral, then walk down Calle Las Damas past the Panteón to Fortaleza Ozama for the tower view. **Afternoon:** After lunch, visit the Museo de las Casas Reales and the Alcázar de Colón, then rest in the heat. **Evening:** Have drinks on Plaza España at sunset, dinner in the Zona, then a walk up to the San Francisco ruins (if it's Sunday, swap this day with another to catch Bonyé).
-
-### Day 2: Caves, Malecón and the modern city
-
-**Morning:** Take an Uber early to Los Tres Ojos, then Faro a Colón next door. **Afternoon:** Head back west for Plaza de la Cultura or the Jardín Botánico, depending on your taste. **Evening:** Walk the Malecón at sunset, eat mofongo at a seafront spot, then grab a beer at a colmado in Gazcue.
-
-### Day 3: Beach day
-
-**Morning:** Take a guagua or Uber to Boca Chica or Juan Dolio and get there before 10am for shade. **Afternoon:** Have fried fish, tostones and a swim, then head back by 4pm to beat traffic. **Evening:** Finish with a last dinner in the Zona and a bachata class or live music bar.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Zona Colonial | Start at Parque Colón and the cathedral, then walk down Calle Las Damas past the Panteón to Fortaleza Ozama for the tower view. | After lunch, visit the Museo de las Casas Reales and the Alcázar de Colón, then rest in the heat. | Have drinks on Plaza España at sunset, dinner in the Zona, then a walk up to the San Francisco ruins (if it's Sunday, swap this day with another to catch Bonyé). |
+| Day 2 · Caves, Malecón and the modern city | Take an Uber early to Los Tres Ojos, then Faro a Colón next door. | Head back west for Plaza de la Cultura or the Jardín Botánico, depending on your taste. | Walk the Malecón at sunset, eat mofongo at a seafront spot, then grab a beer at a colmado in Gazcue. |
+| Day 3 · Beach day | Take a guagua or Uber to Boca Chica or Juan Dolio and get there before 10am for shade. | Have fried fish, tostones and a swim, then head back by 4pm to beat traffic. | Finish with a last dinner in the Zona and a bachata class or live music bar. |
 
 ## What is overrated (and what to do instead)
 
@@ -171,12 +167,14 @@ Within the city, the Zona is walkable, and Uber is the easiest way to go further
 
 ## How much a trip to Santo Domingo costs
 
-- **Shoestring, €40-55 a day:** hostel bed or basic room (€15-25), comedor lunches, street snacks, metro and guaguas, free sights and one paid museum.
+**Rough daily budget**
 
-- **Mid-range, €90-140 a day:** boutique room in the Zona or Gazcue (€50-80), sit-down dinners, Uber everywhere, a class or tour, a few rums.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €40-55 a day | Hostel bed or basic room (€15-25), comedor lunches, street snacks, metro and guaguas, free sights and one paid museum. |
+| Mid-range | €90-140 a day | Boutique room in the Zona or Gazcue (€50-80), sit-down dinners, Uber everywhere, a class or tour, a few rums. |
 
 - **Extras:** airport taxi €35-45 each way, Saona Island tour €60-100, baseball ticket from €5-10.
-
 Pay in pesos where you can, since dollar prices are usually rounded in the seller's favour. At the time of writing, €1 buys roughly RD$65-70.
 
 ## Day trips from Santo Domingo

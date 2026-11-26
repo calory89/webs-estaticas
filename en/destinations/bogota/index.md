@@ -39,15 +39,17 @@ Take a half-day trip to the **Catedral de Sal in Zipaquirá**, an underground ch
 
 For nightlife, head to Zona T and Parque 93 for polished bars, or to Chapinero for a mix of cocktail spots and live music. Try a game of tejo, the traditional Colombian target game involving small explosive paper pouches. It is silly and loud, and well worth an evening.
 
-## How many days and a suggested route
+## Bogota itinerary: 3 days, day by day
 
 Three days is the sweet spot. Two will do if you stay central, and four lets you add Zipaquirá or a slower pace.
 
-- **Day 1:** Morning in La Candelaria, then Plaza de Bolívar, Museo del Oro and Museo Botero. Early dinner near the old town, then bed. You will be tired from the altitude.
+**3-day itinerary for Bogota**
 
-- **Day 2:** Monserrate early, then Paloquemao market for lunch, afternoon on the street art route, evening in Chapinero.
-
-- **Day 3:** Ciclovía if it is Sunday, otherwise Quinta de Bolívar and the botanical garden. Finish at Usaquén for a long meal.
+| Day | Plan |
+|---|---|
+| Day 1 | Morning in La Candelaria, then Plaza de Bolívar, Museo del Oro and Museo Botero. Early dinner near the old town, then bed. You will be tired from the altitude. |
+| Day 2 | Monserrate early, then Paloquemao market for lunch, afternoon on the street art route, evening in Chapinero. |
+| Day 3 | Ciclovía if it is Sunday, otherwise Quinta de Bolívar and the botanical garden. Finish at Usaquén for a long meal. |
 
 ## When to go
 

@@ -117,31 +117,15 @@ Abu Dabi tiene fama de cara, y lo es, pero lo mejor de la ciudad sale barato. La
 
 - Autobuses urbanos: el trayecto cuesta unos pocos dirhams.
 
-## Itinerario: Abu Dabi en 3 días
+## Qué ver en Abu Dabi en 3 días: ruta día a día
 
-### Día 1: centro histórico y Corniche
+**Itinerario de 3 días en Abu Dabi**
 
-**Mañana:** Qasr Al Hosn y la Casa de Artesanía, en pleno centro. Después, taxi corto hasta Qasr Al Watan.
-
-**Tarde:** descanso en el hotel en las horas de más calor. Sobre las cuatro, taxi a la Gran Mezquita con la reserva hecha, y quédate hasta que se ilumine.
-
-**Noche:** cena en algún restaurante libanés o emiratí del centro y, si te quedan fuerzas, paseo por la Corniche.
-
-### Día 2: Saadiyat y Breakwater
-
-**Mañana:** Louvre Abu Dabi a primera hora, antes de que lleguen los grupos.
-
-**Tarde:** playa de Saadiyat o kayak por los manglares (si eliges el kayak, mejor al atardecer).
-
-**Noche:** mirador de las Etihad Towers, foto desde el Breakwater y cena por la zona de Marina Mall.
-
-### Día 3: Yas Island o desierto
-
-**Mañana:** mercado de pescado de Mina Zayed y comida allí mismo.
-
-**Tarde:** parques de Yas Island, o safari por el desierto si prefieres dunas a montañas rusas.
-
-**Noche:** si te quedas en Yas, cena en Yas Bay; si haces safari, la cena va incluida en el campamento.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Centro histórico y Corniche | Qasr Al Hosn y la Casa de Artesanía, en pleno centro. Después, taxi corto hasta Qasr Al Watan. | Descanso en el hotel en las horas de más calor. Sobre las cuatro, taxi a la Gran Mezquita con la reserva hecha, y quédate hasta que se ilumine. | Cena en algún restaurante libanés o emiratí del centro y, si te quedan fuerzas, paseo por la Corniche. |
+| Día 2 · Saadiyat y Breakwater | Louvre Abu Dabi a primera hora, antes de que lleguen los grupos. | Playa de Saadiyat o kayak por los manglares (si eliges el kayak, mejor al atardecer). | Mirador de las Etihad Towers, foto desde el Breakwater y cena por la zona de Marina Mall. |
+| Día 3 · Yas Island o desierto | Mercado de pescado de Mina Zayed y comida allí mismo. | Parques de Yas Island, o safari por el desierto si prefieres dunas a montañas rusas. | Si te quedas en Yas, cena en Yas Bay; si haces safari, la cena va incluida en el campamento. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -203,9 +187,12 @@ No hay metro. Para moverte por la ciudad, la tarjeta Hafilat se recarga en máqu
 
 Abu Dabi es más caro que la media de Europa del Sur, sobre todo en alojamiento y alcohol. Precio por persona y día, sin vuelos:
 
-- **Presupuesto ajustado (de 60 a 90 €):** hotel sencillo en el centro compartido, comida india o libanesa, bus y entradas baratas o gratuitas.
+**Presupuesto orientativo por día**
 
-- **Presupuesto medio (de 130 a 200 €):** hotel de 4 estrellas, una comida de restaurante al día, taxis, el Louvre, Qasr Al Watan y una actividad como kayak o safari.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Presupuesto ajustado | de 60 a 90 € | Hotel sencillo en el centro compartido, comida india o libanesa, bus y entradas baratas o gratuitas. |
+| Presupuesto medio | de 130 a 200 € | Hotel de 4 estrellas, una comida de restaurante al día, taxis, el Louvre, Qasr Al Watan y una actividad como kayak o safari. |
 
 - **Extra si vas a Yas:** unos 85 € por parque, o un poco más por un pase combinado.
 

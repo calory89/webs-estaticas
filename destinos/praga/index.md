@@ -39,15 +39,17 @@ Un paseo en barco por el Moldava sirve más para descansar que para ver cosas nu
 
 Si te gusta la cerveza, haz una ruta por pubs checos de verdad: cerveza de barril, sin música alta y con camareros que no sonríen mucho. Es parte del encanto.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Praga en 3 días: ruta día a día
 
 Con tres días llegas bien. Con dos, vas deprisa pero cubres lo principal. Con cuatro o cinco puedes sumar una excursión, por ejemplo Kutná Hora con su osario o Karlštejn.
 
-- **Día 1:** Ciudad Vieja, Orloj, Josefov y Puente de Carlos al caer la tarde.
+**Itinerario de 3 días en Praga**
 
-- **Día 2:** Castillo de Praga a primera hora, Malá Strana, isla de Kampa y subida a Petřín.
-
-- **Día 3:** Vyšehrad por la mañana, Casa Danzante, paseo por Náplavka y cerveza en Letná.
+| Día | Plan |
+|---|---|
+| Día 1 | Ciudad Vieja, Orloj, Josefov y Puente de Carlos al caer la tarde. |
+| Día 2 | Castillo de Praga a primera hora, Malá Strana, isla de Kampa y subida a Petřín. |
+| Día 3 | Vyšehrad por la mañana, Casa Danzante, paseo por Náplavka y cerveza en Letná. |
 
 ## Cuándo ir
 
@@ -91,11 +93,13 @@ La moneda es la corona checa (CZK), no el euro. Casi todo se paga con tarjeta, p
 
 ## Presupuesto orientativo por día
 
-- **Ajustado (50-70 €):** hostal, comida en pubs locales, transporte público y alguna entrada.
+**Presupuesto orientativo por día**
 
-- **Medio (90-130 €):** hotel céntrico de categoría media, comidas en restaurante y entradas a varios monumentos.
-
-- **Cómodo (150 € o más):** mejor alojamiento, cenas con más calidad y excursiones.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | 50-70 € | Hostal, comida en pubs locales, transporte público y alguna entrada. |
+| Medio | 90-130 € | Hotel céntrico de categoría media, comidas en restaurante y entradas a varios monumentos. |
+| Cómodo | 150 € o más | Mejor alojamiento, cenas con más calidad y excursiones. |
 
 Son cifras de referencia y varían según temporada y tipo de viaje.
 

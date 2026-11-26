@@ -93,21 +93,14 @@ The walled city itself is free, and so is most of what makes Cartagena special. 
 
 ## Cartagena itinerary: 4 days
 
-### Day 1: The walled city
+**4-day itinerary for Cartagena**
 
-**Morning:** Enter through the Torre del Reloj at 7.30am, then walk to Plaza de Santo Domingo, Plaza de Bolívar and the Palacio de la Inquisición. **Afternoon:** Lunch on a set menu, then cool off in the Museo del Oro Zenú and visit San Pedro Claver. Nap through the worst heat. **Evening:** Sunset on the walls, then dinner in San Diego.
-
-### Day 2: Getsemaní and San Felipe
-
-**Morning:** Walk to Castillo San Felipe for opening time. **Afternoon:** Back to Getsemaní for murals on Calle de la Sierpe and Callejón Angosto, lunch, then a siesta or a pool. **Evening:** Plaza de la Trinidad for street food, then salsa at Café Havana.
-
-### Day 3: Rosario Islands
-
-**Morning:** Boats leave from the Muelle de la Bodeguita around 8-9am. **Afternoon:** Snorkelling, lunch and beach time, back around 4pm. **Evening:** An easy dinner in Getsemaní; the sea and sun will flatten you.
-
-### Day 4: Market, views and San Diego
-
-**Morning:** Bazurto market early, then a taxi up Cerro de la Popa. **Afternoon:** Las Bóvedas and a slow wander through San Diego. **Evening:** A last rooftop drink and a proper dinner in the Centro.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · The walled city | Enter through the Torre del Reloj at 7.30am, then walk to Plaza de Santo Domingo, Plaza de Bolívar and the Palacio de la Inquisición. | Lunch on a set menu, then cool off in the Museo del Oro Zenú and visit San Pedro Claver. Nap through the worst heat. | Sunset on the walls, then dinner in San Diego. |
+| Day 2 · Getsemaní and San Felipe | Walk to Castillo San Felipe for opening time. | Back to Getsemaní for murals on Calle de la Sierpe and Callejón Angosto, lunch, then a siesta or a pool. | Plaza de la Trinidad for street food, then salsa at Café Havana. |
+| Day 3 · Rosario Islands | Boats leave from the Muelle de la Bodeguita around 8-9am. | Snorkelling, lunch and beach time, back around 4pm. | An easy dinner in Getsemaní; the sea and sun will flatten you. |
+| Day 4 · Market, views and San Diego | Bazurto market early, then a taxi up Cerro de la Popa. | Las Bóvedas and a slow wander through San Diego. | A last rooftop drink and a proper dinner in the Centro. |
 
 ## What is overrated (and what to do instead)
 

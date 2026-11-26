@@ -79,23 +79,16 @@ Pasear por las islas cuesta lo que el ferri, y Distillery District, Kensington, 
 
 Otras opciones casi gratuitas: el **Evergreen Brick Works**, una antigua fábrica de ladrillos con mercado de agricultores los sábados, y el paseo por el lago en **Harbourfront**, con conciertos gratis en verano. Otro truco para ver la ciudad desde arriba sin pagar la CN Tower: tomarte algo en una terraza de rooftop, aunque las copas rondan los 18-22 CAD.
 
-## Itinerario: Toronto en 4 días
+## Qué ver en Toronto en 4 días: ruta día a día
 
-### Día 1: centro y lago
+**Itinerario de 4 días en Toronto**
 
-**Mañana:** desayuno en St. Lawrence Market y paseo hasta Distillery District. **Tarde:** camina por el distrito financiero, entra a Brookfield Place y pasa por Nathan Phillips Square. **Noche:** sube a la CN Tower al atardecer y cena por King West o el Entertainment District.
-
-### Día 2: barrios del oeste
-
-**Mañana:** AGO (si es miércoles, déjalo para la tarde). **Tarde:** Chinatown, Kensington Market y Graffiti Alley, todo a pie. Sigue por Queen West hasta Trinity Bellwoods. **Noche:** bares de Ossington o cena en Little Portugal, en Dundas West.
-
-### Día 3: museos, castillo e islas
-
-**Mañana:** ROM y paseo por la Universidad de Toronto. **Mediodía:** Casa Loma o solo los Baldwin Steps. **Tarde:** baja en metro a Union y coge el ferri a Ward's Island. **Noche:** vuelve con la última luz para hacer la foto del skyline y cena coreana en Bloor.
-
-### Día 4: cataratas del Niágara
-
-**Mañana:** GO Train temprano desde Union Station. **Tarde:** barco hasta los pies de las cataratas y paseo por el Niagara Parkway. Si te da tiempo, merienda en Niagara-on-the-Lake. **Noche:** vuelta a Toronto. En verano hay espectáculo de luces y algunos fuegos artificiales, así que puedes quedarte un poco más.
+| Día | Plan |
+|---|---|
+| Día 1 | Centro y lago. Mañana: desayuno en St. Lawrence Market y paseo hasta Distillery District. Tarde: camina por el distrito financiero, entra a Brookfield Place y pasa por Nathan Phillips Square. Noche: sube a la CN Tower al atardecer y cena por King West o el Entertainment District. |
+| Día 2 | Barrios del oeste. Mañana: AGO (si es miércoles, déjalo para la tarde). Tarde: Chinatown, Kensington Market y Graffiti Alley, todo a pie. Sigue por Queen West hasta Trinity Bellwoods. Noche: bares de Ossington o cena en Little Portugal, en Dundas West. |
+| Día 3 | Museos, castillo e islas. Mañana: ROM y paseo por la Universidad de Toronto. Mediodía: Casa Loma o solo los Baldwin Steps. Tarde: baja en metro a Union y coge el ferri a Ward's Island. Noche: vuelve con la última luz para hacer la foto del skyline y cena coreana en Bloor. |
+| Día 4 | Cataratas del Niágara. Mañana: GO Train temprano desde Union Station. Tarde: barco hasta los pies de las cataratas y paseo por el Niagara Parkway. Si te da tiempo, merienda en Niagara-on-the-Lake. Noche: vuelta a Toronto. En verano hay espectáculo de luces y algunos fuegos artificiales, así que puedes quedarte un poco más. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -155,12 +148,14 @@ Dentro de la ciudad funciona la **TTC**: metro, tranvía y bus. Un viaje cuesta 
 
 ## Cuánto cuesta un viaje a Toronto
 
-- **Presupuesto ajustado: unos 110-140 € al día.** Hostal (50 €), comidas baratas y supermercado (30-35 €), transporte (8 €) y una entrada o actividad diaria (20-30 €).
+**Presupuesto orientativo por día**
 
-- **Presupuesto medio: unos 250-330 € al día.** Hotel de gama media (170 €), comida y cena en restaurantes (60-80 €), transporte (10 €) y entradas (30-40 €).
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Presupuesto ajustado | unos 110-140 € al día | Hostal (50 €), comidas baratas y supermercado (30-35 €), transporte (8 €) y una entrada o actividad diaria (20-30 €). |
+| Presupuesto medio | unos 250-330 € al día | Hotel de gama media (170 €), comida y cena en restaurantes (60-80 €), transporte (10 €) y entradas (30-40 €). |
 
 - **Vuelos desde España:** directos desde Madrid o Barcelona (según temporada) o con escala, entre 450 y 900 € ida y vuelta. Lo más barato suele estar entre noviembre y marzo.
-
 - **eTA:** la autorización de viaje obligatoria para españoles que llegan en avión. Cuesta unos 7 CAD (5 €).
 
 ## Excursiones de un día desde Toronto

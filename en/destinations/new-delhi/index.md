@@ -109,21 +109,14 @@ Street food meals cost €1-3, and a metro ride rarely goes above €0.70, so a 
 
 ## New Delhi itinerary: 4 days
 
-### Day 1: Old Delhi
+**4-day itinerary for New Delhi**
 
-**Morning:** metro to Chandni Chowk (Yellow Line) and start at the Red Fort when it opens. **Afternoon:** walk to Jama Masjid, climb the minaret, then lunch at Karim's. Wander Chandni Chowk, Paranthe Wali Gali and Khari Baoli. **Evening:** back to your hotel to rest; Old Delhi drains you. Dinner near Connaught Place.
-
-### Day 2: Lutyens' Delhi
-
-**Morning:** Agrasen ki Baoli early, then Gurudwara Bangla Sahib and its langar for an early lunch. **Afternoon:** National Museum if you like museums, or Khan Market for coffee and books. **Evening:** Kartavya Path and India Gate at dusk, then the National War Memorial.
-
-### Day 3: Tombs and Sufi music
-
-**Morning:** Lodhi Garden at sunrise, Lodhi Colony murals. **Afternoon:** Humayun's Tomb, then Sunder Nursery. **Evening:** walk to Nizamuddin Dargah for qawwali (ideally a Thursday), with kebabs in the basti lanes.
-
-### Day 4: South Delhi, or Agra
-
-**Morning:** Qutub Minar at opening, then Mehrauli Archaeological Park. **Afternoon:** Dilli Haat for shopping and regional snacks, or Akshardham (not Monday). **Evening:** sunset at Hauz Khas lake and dinner in the village. If you would rather see the Taj Mahal, swap this day for the Agra trip below.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Old Delhi | Metro to Chandni Chowk (Yellow Line) and start at the Red Fort when it opens. | Walk to Jama Masjid, climb the minaret, then lunch at Karim's. Wander Chandni Chowk, Paranthe Wali Gali and Khari Baoli. | Back to your hotel to rest; Old Delhi drains you. Dinner near Connaught Place. |
+| Day 2 · Lutyens' Delhi | Agrasen ki Baoli early, then Gurudwara Bangla Sahib and its langar for an early lunch. | National Museum if you like museums, or Khan Market for coffee and books. | Kartavya Path and India Gate at dusk, then the National War Memorial. |
+| Day 3 · Tombs and Sufi music | Lodhi Garden at sunrise, Lodhi Colony murals. | Humayun's Tomb, then Sunder Nursery. | Walk to Nizamuddin Dargah for qawwali (ideally a Thursday), with kebabs in the basti lanes. |
+| Day 4 · South Delhi, or Agra | Qutub Minar at opening, then Mehrauli Archaeological Park. | Dilli Haat for shopping and regional snacks, or Akshardham (not Monday). | Sunset at Hauz Khas lake and dinner in the village. If you would rather see the Taj Mahal, swap this day for the Agra trip below. |
 
 ## What is overrated (and what to do instead)
 
@@ -187,9 +180,12 @@ The fastest route from Indira Gandhi International Airport is the **Airport Expr
 
 ## How much a trip to New Delhi costs
 
-- **Shoestring: €25-35 a day.** Hostel dorm €8-15, street food €5, metro €2, one or two paid monuments €6-12.
+**Rough daily budget**
 
-- **Mid-range: €70-120 a day.** Good hotel €50-80, restaurant meals €20-30, Uber rides €8-10, all the monuments plus a food tour.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €25-35 a day | Hostel dorm €8-15, street food €5, metro €2, one or two paid monuments €6-12. |
+| Mid-range | €70-120 a day | Good hotel €50-80, restaurant meals €20-30, Uber rides €8-10, all the monuments plus a food tour. |
 
 - **Extras:** Agra day trip by train €25-50 return plus Taj entry about ₹1,300 (€14).
 

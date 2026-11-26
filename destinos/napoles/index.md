@@ -39,21 +39,17 @@ Usa el metro de la Línea 1 como si fuera una visita más: las estaciones de **T
 
 Desde el puerto (Molo Beverello) salen barcos a Capri, Ischia y Procida. Procida, más pequeña y tranquila, me parece la mejor opción para escaparse un día sin multitudes.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Nápoles en 3 días: ruta día a día
 
 Tres días es lo razonable. Con dos ves lo esencial; con cuatro o cinco añades Pompeya, Herculano o una isla sin ir con el reloj en la mano.
 
-### Día 1: centro histórico
+**Itinerario de 3 días en Nápoles**
 
-Mañana en Spaccanapoli, Cappella Sansevero, Duomo y San Gregorio Armeno. Pizza al mediodía, claustro de Santa Chiara por la tarde y paseo hasta Via Toledo.
-
-### Día 2: arqueología y mar
-
-Mañana en el MANN. Después, Piazza del Plebiscito, Galleria Umberto I y Castel dell'Ovo. Cena en Chiaia o Santa Lucia.
-
-### Día 3: excursión
-
-Pompeya o Herculano. Si solo puedes elegir una, Pompeya es más grande y famosa; Herculano está mejor conservada y se ve en dos o tres horas. Vuelve a tiempo para subir al Vomero al atardecer.
+| Día | Plan |
+|---|---|
+| Día 1 | Centro histórico. Mañana en Spaccanapoli, Cappella Sansevero, Duomo y San Gregorio Armeno. Pizza al mediodía, claustro de Santa Chiara por la tarde y paseo hasta Via Toledo. |
+| Día 2 | Arqueología y mar. Mañana en el MANN. Después, Piazza del Plebiscito, Galleria Umberto I y Castel dell'Ovo. Cena en Chiaia o Santa Lucia. |
+| Día 3 | Excursión. Pompeya o Herculano. Si solo puedes elegir una, Pompeya es más grande y famosa; Herculano está mejor conservada y se ve en dos o tres horas. Vuelve a tiempo para subir al Vomero al atardecer. |
 
 ## Cuándo ir
 
@@ -89,11 +85,13 @@ Cruzar la calle exige método: mira, avanza a paso constante y no te detengas. L
 
 ## Presupuesto orientativo por día
 
-- **Ajustado (45-65 €):** cama en hostal, pizza y comida de calle, transporte público y una o dos entradas.
+**Presupuesto orientativo por día**
 
-- **Medio (90-140 €):** hotel o B&B céntrico, restaurante a mediodía, cena sencilla y museos o excursión.
-
-- **Cómodo (180 € o más):** buen hotel en Chiaia o Santa Lucia, cenas con mantel y alguna excursión organizada.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | 45-65 € | Cama en hostal, pizza y comida de calle, transporte público y una o dos entradas. |
+| Medio | 90-140 € | Hotel o B&B céntrico, restaurante a mediodía, cena sencilla y museos o excursión. |
+| Cómodo | 180 € o más | Buen hotel en Chiaia o Santa Lucia, cenas con mantel y alguna excursión organizada. |
 
 Una pizza suele costar entre 5 y 9 €, un café en barra poco más de 1 €, y la entrada a Pompeya ronda los 20 €. Son cifras de referencia que cambian según la temporada.
 

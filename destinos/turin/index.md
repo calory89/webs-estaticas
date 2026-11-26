@@ -81,31 +81,15 @@ Buena parte de lo mejor de Turín no cuesta nada. Los soportales de Via Roma, Vi
 
 El Museo Egipcio y otros museos estatales tienen descuentos o entrada gratuita en fechas concretas, como el primer domingo de mes en algunos de ellos; comprueba antes porque cambia. Si piensas entrar en tres o más museos, mira la **Torino+Piemonte Card**, que incluye muchos museos y descuentos en transporte. Y el aperitivo, bien elegido, te resuelve la cena por el precio de una copa.
 
-## Itinerario: Turín en 3 días
+## Qué ver en Turín en 3 días: ruta día a día
 
-### Día 1: el centro histórico
+**Itinerario de 3 días en Turín**
 
-**Mañana:** Museo Egipcio a primera hora, con entrada comprada. Al salir, Piazza San Carlo y café de barra.
-
-**Tarde:** Piazza Castello, Palazzo Madama por fuera, San Lorenzo, Musei Reali y catedral. Todo está a pocos minutos andando.
-
-**Noche:** aperitivo en el Quadrilatero Romano y paseo por Via Garibaldi.
-
-### Día 2: la Mole y el río
-
-**Mañana:** mercado de Porta Palazzo y bicerin en la Consolata.
-
-**Tarde:** Museo del Cine y ascensor de la Mole al atardecer. Luego, Via Po hasta Piazza Vittorio.
-
-**Noche:** cruza el puente a la Gran Madre, sube al Monte dei Cappuccini si aún hay luz y cena en el barrio o vuelve a Piazza Vittorio.
-
-### Día 3: Superga o el Lingotto
-
-**Mañana:** tranvía 15 a Sassi y subida a Superga. Si prefieres coches y arte moderno, metro al Lingotto y MAUTO.
-
-**Tarde:** Parque del Valentino y Borgo Medievale.
-
-**Noche:** cena y copas en San Salvario, al lado del parque.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · El centro histórico | Museo Egipcio a primera hora, con entrada comprada. Al salir, Piazza San Carlo y café de barra. | Piazza Castello, Palazzo Madama por fuera, San Lorenzo, Musei Reali y catedral. Todo está a pocos minutos andando. | Aperitivo en el Quadrilatero Romano y paseo por Via Garibaldi. |
+| Día 2 · La Mole y el río | Mercado de Porta Palazzo y bicerin en la Consolata. | Museo del Cine y ascensor de la Mole al atardecer. Luego, Via Po hasta Piazza Vittorio. | Cruza el puente a la Gran Madre, sube al Monte dei Cappuccini si aún hay luz y cena en el barrio o vuelve a Piazza Vittorio. |
+| Día 3 · Superga o el Lingotto | Tranvía 15 a Sassi y subida a Superga. Si prefieres coches y arte moderno, metro al Lingotto y MAUTO. | Parque del Valentino y Borgo Medievale. | Cena y copas en San Salvario, al lado del parque. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -165,9 +149,12 @@ Dentro de la ciudad, el centro se hace andando. La red GTT tiene una línea de m
 
 ## Cuánto cuesta un viaje a Turín
 
-- **Presupuesto ajustado (60-90 € por persona y día):** habitación en San Salvario compartida, aperitivo como cena, café de barra, una entrada de museo al día y todo andando.
+**Presupuesto orientativo por día**
 
-- **Presupuesto medio (120-180 € por persona y día):** hotel céntrico en doble, una comida en trattoria y una cena en restaurante, dos museos al día y algún taxi.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Presupuesto ajustado | 60-90 € por persona y día | Habitación en San Salvario compartida, aperitivo como cena, café de barra, una entrada de museo al día y todo andando. |
+| Presupuesto medio | 120-180 € por persona y día | Hotel céntrico en doble, una comida en trattoria y una cena en restaurante, dos museos al día y algún taxi. |
 
 - **Extras a contar:** Museo Egipcio unos 20 €, Mole y Museo del Cine 15-25 €, Musei Reali unos 15 €, bicerin unos 7 €.
 

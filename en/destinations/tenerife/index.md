@@ -37,19 +37,19 @@ Whale and dolphin trips leave from Los Cristianos and Puerto Colón. Pilot whale
 
 Stargazing is exceptional. Teide's clear, high air is why the island hosts major observatories, and several operators run night trips with telescopes. For families, Siam Park (water park, Costa Adeje) and Loro Parque (Puerto de la Cruz) are the big draws, and both are expensive. Windsurfers and kitesurfers head for El Médano, which gets reliable wind. In the north, hiking is the main event, and the Anaga and Teno trails are the best ones.
 
-## How many days and a suggested route
+## Tenerife itinerary: 7 days, day by day
 
 Four days is the minimum to feel the island. Seven lets you split it between north and south without rushing.
 
-- **Day 1:** Arrive and settle in the south. Walk the coast, eat fish at Los Abrigos or Los Cristianos.
+**7-day itinerary for Tenerife**
 
-- **Day 2:** Teide at sunrise or early morning, then a slow afternoon in Vilaflor or La Orotava on the way down.
-
-- **Day 3:** Northwest loop: Masca viewpoint, Garachico, Icod de los Vinos.
-
-- **Day 4:** Anaga hike, then La Laguna in the evening.
-
-- **Days 5-7 (if you have them):** Whale trip, a beach day in the south, Santa Cruz market, and a guachinche lunch in the north.
+| Day | Plan |
+|---|---|
+| Day 1 | Arrive and settle in the south. Walk the coast, eat fish at Los Abrigos or Los Cristianos. |
+| Day 2 | Teide at sunrise or early morning, then a slow afternoon in Vilaflor or La Orotava on the way down. |
+| Day 3 | Northwest loop: Masca viewpoint, Garachico, Icod de los Vinos. |
+| Day 4 | Anaga hike, then La Laguna in the evening. |
+| Days 5-7 | (if you have them). Whale trip, a beach day in the south, Santa Cruz market, and a guachinche lunch in the north. |
 
 A hire car makes this route much easier. Buses cover the coast well but are slow for the mountains.
 

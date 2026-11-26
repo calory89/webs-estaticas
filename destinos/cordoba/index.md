@@ -81,23 +81,14 @@ Bastante de lo mejor de Córdoba sale gratis. Si eres ciudadano de la UE, entras
 
 Con 0 € también puedes ver el acceso matinal a la Mezquita, si lo mantienen cuando vayas, y la mayoría de los patios en el Festival de mayo. Para comer, tira de tapa con bebida: en muchas tabernas fuera del centro turístico la caña viene con algo.
 
-## Itinerario: Córdoba en 2 días
+## Qué ver en Córdoba en 2 días: ruta día a día
 
-### Día 1: Mezquita, Judería y río
+**Itinerario de 2 días en Córdoba**
 
-**Mañana:** entra a la Mezquita a primera hora. Después recorre la Judería: Sinagoga, Calleja de las Flores, Puerta de Almodóvar. Baja al Alcázar de los Reyes Cristianos antes de que apriete el calor.
-
-**Tarde:** come por San Basilio y entra en algún patio. A media tarde ve a los Baños del Alcázar Califal y a la Plaza del Potro.
-
-**Noche:** cruza el Puente Romano al atardecer y cena en tabernas de la zona de San Pedro, a 10 minutos andando del río.
-
-### Día 2: Medina Azahara y la Córdoba de los cordobeses
-
-**Mañana:** coge el bus lanzadera a Medina Azahara a primera hora y vuelve a la ciudad para comer.
-
-**Tarde:** visita el Palacio de Viana y pasea por Santa Marina y San Lorenzo, el Cristo de los Faroles, el Templo Romano y la Plaza de la Corredera.
-
-**Noche:** toma algo en la Corredera o por las Tendillas, y si te quedan fuerzas, ve al flamenco o vuelve a la Judería ya vacía.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Mezquita, Judería y río | Entra a la Mezquita a primera hora. Después recorre la Judería: Sinagoga, Calleja de las Flores, Puerta de Almodóvar. Baja al Alcázar de los Reyes Cristianos antes de que apriete el calor. | Come por San Basilio y entra en algún patio. A media tarde ve a los Baños del Alcázar Califal y a la Plaza del Potro. | Cruza el Puente Romano al atardecer y cena en tabernas de la zona de San Pedro, a 10 minutos andando del río. |
+| Día 2 · Medina Azahara y la Córdoba de los cordobeses | Coge el bus lanzadera a Medina Azahara a primera hora y vuelve a la ciudad para comer. | Visita el Palacio de Viana y pasea por Santa Marina y San Lorenzo, el Cristo de los Faroles, el Templo Romano y la Plaza de la Corredera. | Toma algo en la Corredera o por las Tendillas, y si te quedan fuerzas, ve al flamenco o vuelve a la Judería ya vacía. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 

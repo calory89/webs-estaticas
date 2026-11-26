@@ -83,21 +83,14 @@ The metro is the other big saving, at €0.40-1.30 (3-10 CNY) per ride. Street b
 
 ## Beijing itinerary: 4 days
 
-### Day 1: Imperial axis
+**4-day itinerary for Beijing**
 
-**Morning:** Cross Tiananmen Square (reserved) and enter the Forbidden City at opening. **Afternoon:** Exit north, climb Jingshan Park, then walk into Beihai Park. **Evening:** Walk up to Houhai for a lakeside drink, then have dinner in the Gulou hutongs.
-
-### Day 2: Temples and hutongs
-
-**Morning:** Be at Temple of Heaven by 8am for the park life. **Afternoon:** Take the metro to the Lama Temple, then the Confucius Temple, then wander Wudaoying and the hutongs towards the Drum and Bell Towers. **Evening:** Peking duck dinner, booked ahead.
-
-### Day 3: The Great Wall
-
-**Morning:** Leave around 7am for Mutianyu by private driver or tour bus. **Afternoon:** Walk the Wall, take the toboggan down, and have a late lunch at the village restaurants by the car park. **Evening:** Back by 5pm. Rest, then catch an acrobatics show.
-
-### Day 4: Northwest and modern Beijing
-
-**Morning:** Summer Palace, entering at the north gate and walking down to the lake. **Afternoon:** National Museum, or 798 if you prefer contemporary art. **Evening:** Olympic Park lit up, or Sanlitun for dinner and bars.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Imperial axis | Cross Tiananmen Square (reserved) and enter the Forbidden City at opening. | Exit north, climb Jingshan Park, then walk into Beihai Park. | Walk up to Houhai for a lakeside drink, then have dinner in the Gulou hutongs. |
+| Day 2 · Temples and hutongs | Be at Temple of Heaven by 8am for the park life. | Take the metro to the Lama Temple, then the Confucius Temple, then wander Wudaoying and the hutongs towards the Drum and Bell Towers. | Peking duck dinner, booked ahead. |
+| Day 3 · The Great Wall | Leave around 7am for Mutianyu by private driver or tour bus. | Walk the Wall, take the toboggan down, and have a late lunch at the village restaurants by the car park. | Back by 5pm. Rest, then catch an acrobatics show. |
+| Day 4 · Northwest and modern Beijing | Summer Palace, entering at the north gate and walking down to the lake. | National Museum, or 798 if you prefer contemporary art. | Olympic Park lit up, or Sanlitun for dinner and bars. |
 
 ## What is overrated (and what to do instead)
 

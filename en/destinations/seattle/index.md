@@ -101,17 +101,13 @@ Seattle's best views and most of its character cost nothing, so you can balance 
 
 ## Seattle itinerary: 3 days
 
-### Day 1: Downtown, Pike Place and the waterfront
+**3-day itinerary for Seattle**
 
-**Morning:** Pike Place Market at 9am, with breakfast from a bakery and a stop at the gum wall in Post Alley (quick look, it's gross). **Afternoon:** walk the waterfront via the Overlook Walk, then head south to Pioneer Square for the Underground Tour. **Evening:** sunset from the Columbia Center Sky View, then dinner in the International District, a 10-minute walk away.
-
-### Day 2: Seattle Center, Queen Anne and Lake Union
-
-**Morning:** the Monorail from Westlake Center to Seattle Center (about €3 / $3.50). Do Chihuly first, then the Space Needle or MoPOP, not all three. **Afternoon:** bus or walk to Fremont for the Troll and lunch, then on to Gas Works Park. **Evening:** back south to Kerry Park for the night view, then dinner and drinks on Capitol Hill.
-
-### Day 3: Ballard and the water
-
-**Morning:** Ballard Locks, then a walk along Ballard Avenue and lunch with oysters or a craft beer. **Afternoon:** hike in Discovery Park, or take the ferry to Bainbridge Island instead. **Evening:** if you went to Bainbridge, the ferry back at dusk gives you the best skyline view of the trip. End with dinner in Belltown.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Downtown, Pike Place and the waterfront | Pike Place Market at 9am, with breakfast from a bakery and a stop at the gum wall in Post Alley (quick look, it's gross). | Walk the waterfront via the Overlook Walk, then head south to Pioneer Square for the Underground Tour. | Sunset from the Columbia Center Sky View, then dinner in the International District, a 10-minute walk away. |
+| Day 2 · Seattle Center, Queen Anne and Lake Union | The Monorail from Westlake Center to Seattle Center (about €3 / $3.50). Do Chihuly first, then the Space Needle or MoPOP, not all three. | Bus or walk to Fremont for the Troll and lunch, then on to Gas Works Park. | Back south to Kerry Park for the night view, then dinner and drinks on Capitol Hill. |
+| Day 3 · Ballard and the water | Ballard Locks, then a walk along Ballard Avenue and lunch with oysters or a craft beer. | Hike in Discovery Park, or take the ferry to Bainbridge Island instead. | If you went to Bainbridge, the ferry back at dusk gives you the best skyline view of the trip. End with dinner in Belltown. |
 
 ## What is overrated (and what to do instead)
 
@@ -179,12 +175,14 @@ In the city, buses cover most places, and the light rail is useful for the north
 
 ## How much a trip to Seattle costs
 
-- **Shoestring: €110-150 ($125-170) a day.** Hostel dorm, light rail and buses, market food and teriyaki, free viewpoints and parks, plus the ferry.
+**Rough daily budget**
 
-- **Mid-range: €280-400 ($320-460) a day.** Central 3-star hotel, one paid attraction a day, sit-down lunch and dinner with tips, the odd Uber.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €110-150 ($125-170) a day | Hostel dorm, light rail and buses, market food and teriyaki, free viewpoints and parks, plus the ferry. |
+| Mid-range | €280-400 ($320-460) a day | Central 3-star hotel, one paid attraction a day, sit-down lunch and dinner with tips, the odd Uber. |
 
 - **Typical extras:** Space Needle €35-45, a craft beer €8-10 ($9-11), coffee €4-6 ($5-7), oysters at happy hour €2-3 ($2-3.50) each.
-
 The CityPASS bundles the Space Needle, Aquarium and a few other attractions and saves money if you're planning three or more paid sights.
 
 ## Day trips from Seattle

@@ -37,21 +37,17 @@ Haz una clase de pasta fresca: la sfoglia (la lámina de pasta hecha a mano con 
 
 Por la tarde, el Giardini Margherita es el pulmón verde de los boloñeses, buen sitio para tumbarse un rato. En verano, la Piazza Maggiore se llena de proyecciones de cine al aire libre, gratis o casi. Y a la hora del aperitivo, la zona de Via Petroni, Via del Pratello o Piazza Santo Stefano funciona muy bien, con una copa y algo de picar por poco dinero.
 
-## Cuántos días necesitas y ruta sugerida
+## Qué ver en Bolonia en 3 días: ruta día a día
 
 Con dos días ves lo esencial sin agobiarte. Con tres, lo disfrutas y puedes dedicar una jornada a una excursión. Más de cuatro solo tiene sentido si quieres usarla como base para ver otras ciudades.
 
-### Día 1: el centro histórico
+**Itinerario de 3 días en Bolonia**
 
-Por la mañana, Piazza Maggiore, San Petronio y Neptuno. Después, Quadrilatero y comida allí mismo. Por la tarde, Due Torri, Archiginnasio y paseo hasta Santo Stefano. Cena en una osteria de las calles de atrás.
-
-### Día 2: universidad, arte y colina
-
-Via Zamboni, Pinacoteca o museo según gustos, y comida tranquila. A media tarde, subida a San Luca para ver el atardecer. Baja con luz y cena sencilla.
-
-### Día 3: excursión
-
-Modena y Parma son las más golosas (vinagre balsámico, parmigiano, jamón). Ferrara es la más bonita para pasear en bici. Ravenna tiene los mosaicos bizantinos. Florencia está a 35 minutos en alta velocidad si prefieres cambiar de aires.
+| Día | Plan |
+|---|---|
+| Día 1 | El centro histórico. Por la mañana, Piazza Maggiore, San Petronio y Neptuno. Después, Quadrilatero y comida allí mismo. Por la tarde, Due Torri, Archiginnasio y paseo hasta Santo Stefano. Cena en una osteria de las calles de atrás. |
+| Día 2 | Universidad, arte y colina. Via Zamboni, Pinacoteca o museo según gustos, y comida tranquila. A media tarde, subida a San Luca para ver el atardecer. Baja con luz y cena sencilla. |
+| Día 3 | Excursión. Modena y Parma son las más golosas (vinagre balsámico, parmigiano, jamón). Ferrara es la más bonita para pasear en bici. Ravenna tiene los mosaicos bizantinos. Florencia está a 35 minutos en alta velocidad si prefieres cambiar de aires. |
 
 ## Cuándo ir a Bolonia: clima y temporadas
 
@@ -87,11 +83,13 @@ El centro se recorre a pie sin problema, y es lo mejor. Para distancias algo má
 
 ## Presupuesto orientativo por día
 
-- **Ajustado (60-80 euros):** albergue o cama compartida, comida de mercado, un plato de pasta en mediodía y aperitivo.
+**Presupuesto orientativo por día**
 
-- **Medio (110-150 euros):** hotel sencillo o apartamento, comida en trattoria, cena tranquila, alguna entrada y transporte.
-
-- **Cómodo (200 euros o más):** buen hotel céntrico, restaurantes de nivel y alguna actividad guiada.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | 60-80 euros | Albergue o cama compartida, comida de mercado, un plato de pasta en mediodía y aperitivo. |
+| Medio | 110-150 euros | Hotel sencillo o apartamento, comida en trattoria, cena tranquila, alguna entrada y transporte. |
+| Cómodo | 200 euros o más | Buen hotel céntrico, restaurantes de nivel y alguna actividad guiada. |
 
 La gran ventaja es que gran parte de lo mejor de Bolonia (pasear por los pórticos, ver las plazas, subir a San Luca andando) es gratis.
 

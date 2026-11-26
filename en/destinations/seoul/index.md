@@ -39,19 +39,19 @@ Do a picnic on the Han River. Buy ramyeon from a convenience store, cook it in t
 
 For a half day out of the centre, hike part of **Bukhansan** or the easier Inwangsan, which sits right behind the palace. A trip to the **DMZ** is possible by organised tour only, and it needs advance booking and a passport. Finish a night at a noraebang (private karaoke room) with friends. It is a Seoul rite of passage.
 
-## How many days and a suggested route
+## Seoul itinerary: 5 days, day by day
 
 Four days covers the highlights. Five lets you slow down and add a day trip. Three is a sprint, but it works if you skip the DMZ.
 
-- **Day 1:** Gyeongbokgung at opening, Bukchon, Insadong, then dinner in Ikseon-dong.
+**5-day itinerary for Seoul**
 
-- **Day 2:** Changdeokgung and Huwon, Gwangjang Market for lunch, Dongdaemun Design Plaza at dusk.
-
-- **Day 3:** Walk up Namsan in the morning, Myeongdong for street food, Itaewon at night.
-
-- **Day 4:** Seongsu-dong for cafes and shops, then Hongdae in the evening.
-
-- **Day 5:** Bukhansan or a DMZ tour, or COEX and the Lotte World Tower area for a skyline view.
+| Day | Plan |
+|---|---|
+| Day 1 | Gyeongbokgung at opening, Bukchon, Insadong, then dinner in Ikseon-dong. |
+| Day 2 | Changdeokgung and Huwon, Gwangjang Market for lunch, Dongdaemun Design Plaza at dusk. |
+| Day 3 | Walk up Namsan in the morning, Myeongdong for street food, Itaewon at night. |
+| Day 4 | Seongsu-dong for cafes and shops, then Hongdae in the evening. |
+| Day 5 | Bukhansan or a DMZ tour, or COEX and the Lotte World Tower area for a skyline view. |
 
 ## When to go
 

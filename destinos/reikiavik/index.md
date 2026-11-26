@@ -37,23 +37,21 @@ Si vas entre septiembre y abril, busca auroras boreales. Aléjate de las luces d
 
 También se puede ver ballenas desde Reikiavik o, mejor, desde Húsavík, en el norte. Y hay caminatas sobre glaciar con guía, que sí conviene reservar con operadores serios: no te metas en hielo por tu cuenta.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Islandia en 7 días: ruta día a día
 
 Con 4 días ves Reikiavik, el Círculo Dorado y el sur hasta Vík. Con 7, puedes hacer la costa sur hasta Jökulsárlón sin ir con prisa. La vuelta completa a la isla por la Ruta 1 (unos 1.300 km) pide al menos 8 o 10 días.
 
-- **Día 1:** llegada, Reikiavik a pie y piscina por la tarde.
+**Itinerario de 7 días en Islandia**
 
-- **Día 2:** Círculo Dorado: Þingvellir, Geysir, Gullfoss.
-
-- **Día 3:** Seljalandsfoss, Skógafoss y noche en Vík.
-
-- **Día 4:** Reynisfjara, Skaftafell y Jökulsárlón.
-
-- **Día 5:** Diamond Beach y vuelta hacia el oeste con calma.
-
-- **Día 6:** Snæfellsnes o baño termal.
-
-- **Día 7:** última mañana en Reikiavik y vuelo.
+| Día | Plan |
+|---|---|
+| Día 1 | Llegada, Reikiavik a pie y piscina por la tarde. |
+| Día 2 | Círculo Dorado: Þingvellir, Geysir, Gullfoss. |
+| Día 3 | Seljalandsfoss, Skógafoss y noche en Vík. |
+| Día 4 | Reynisfjara, Skaftafell y Jökulsárlón. |
+| Día 5 | Diamond Beach y vuelta hacia el oeste con calma. |
+| Día 6 | Snæfellsnes o baño termal. |
+| Día 7 | Última mañana en Reikiavik y vuelo. |
 
 ## Cuándo ir
 

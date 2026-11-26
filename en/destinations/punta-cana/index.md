@@ -41,19 +41,19 @@ Golf is a real draw. Punta Espada in Cap Cana and Corales at Puntacana Resort ar
 
 For nightlife, Coco Bongo at Downtown Punta Cana is the show-club option. For something calmer, a rum on the sand at El Cortecito does the job.
 
-## How many days, and a suggested route
+## Punta Cana itinerary: 5 days, day by day
 
 Four to five days is the sweet spot. Less than three and you are just landing and leaving; more than a week and you will want a second base elsewhere in the country.
 
-- **Day 1:** Arrive, swim, sunset walk on Bávaro, dinner at El Cortecito.
+**5-day itinerary for Punta Cana**
 
-- **Day 2:** Macao Beach in the morning, buggy tour in the afternoon.
-
-- **Day 3:** Isla Saona full day, or a catamaran trip if you want something shorter.
-
-- **Day 4:** Scape Park or Indigenous Eyes, then Cap Cana marina for dinner.
-
-- **Day 5:** La Romana and Altos de Chavón, or Higüey basilica, or simply sleep in and read.
+| Day | Plan |
+|---|---|
+| Day 1 | Arrive, swim, sunset walk on Bávaro, dinner at El Cortecito. |
+| Day 2 | Macao Beach in the morning, buggy tour in the afternoon. |
+| Day 3 | Isla Saona full day, or a catamaran trip if you want something shorter. |
+| Day 4 | Scape Park or Indigenous Eyes, then Cap Cana marina for dinner. |
+| Day 5 | La Romana and Altos de Chavón, or Higüey basilica, or simply sleep in and read. |
 
 Santo Domingo's Zona Colonial is a proper day trip, but it is roughly two and a half to three hours each way. If colonial history matters to you, stay a night there instead of rushing it.
 

@@ -93,31 +93,15 @@ Valencia es una ciudad muy agradecida para viajar con poco dinero. Con un poco d
 
 - El **arte urbano del Carmen** y una ruta por las fachadas modernistas del Ensanche.
 
-## Itinerario: Valencia en 3 días
+## Qué ver en Valencia en 3 días: ruta día a día
 
-### Día 1: centro histórico
+**Itinerario de 3 días en Valencia**
 
-**Mañana:** empieza en el Mercado Central con un almuerzo, cruza a la Lonja y sigue hasta la Plaza Redonda y la catedral. Sube al Micalet antes del mediodía si vas en invierno.
-
-**Tarde:** Plaza de la Virgen, Palacio del Marqués de Dos Aguas y paseo por el Carmen hasta las Torres de Serranos. Sube a la torre a media tarde.
-
-**Noche:** cena de tapas en el Carmen o baja a Ruzafa, a 20 minutos andando.
-
-### Día 2: el Turia y la Valencia moderna
-
-**Mañana:** Museo de Bellas Artes y Jardines del Real. Alquila bici y baja por el cauce del Turia.
-
-**Tarde:** llega a la Ciudad de las Artes y las Ciencias. Si vas con niños o te gustan los acuarios, el Oceanogràfic te ocupa la tarde entera; si no, basta con el Museu de les Ciències o con verlo por fuera.
-
-**Noche:** los edificios iluminados y vuelta hacia el centro por el Mercado de Colón para cenar en el Ensanche.
-
-### Día 3: el mar y la Albufera
-
-**Mañana:** tranvía al Cabanyal, paseo por sus calles de azulejos y playa. Si es domingo o verano, reserva arroz.
-
-**Tarde:** bus de EMT línea 25 o coche hacia la Albufera. Comida en El Palmar (arroz o all i pebre) y barca al atardecer.
-
-**Noche:** vuelta a la ciudad y última horchata, o un agua de Valencia si aún te quedan fuerzas.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Centro histórico | Empieza en el Mercado Central con un almuerzo, cruza a la Lonja y sigue hasta la Plaza Redonda y la catedral. Sube al Micalet antes del mediodía si vas en invierno. | Plaza de la Virgen, Palacio del Marqués de Dos Aguas y paseo por el Carmen hasta las Torres de Serranos. Sube a la torre a media tarde. | Cena de tapas en el Carmen o baja a Ruzafa, a 20 minutos andando. |
+| Día 2 · El Turia y la Valencia moderna | Museo de Bellas Artes y Jardines del Real. Alquila bici y baja por el cauce del Turia. | Llega a la Ciudad de las Artes y las Ciencias. Si vas con niños o te gustan los acuarios, el Oceanogràfic te ocupa la tarde entera; si no, basta con el Museu de les Ciències o con verlo por fuera. | Los edificios iluminados y vuelta hacia el centro por el Mercado de Colón para cenar en el Ensanche. |
+| Día 3 · El mar y la Albufera | Tranvía al Cabanyal, paseo por sus calles de azulejos y playa. Si es domingo o verano, reserva arroz. | Bus de EMT línea 25 o coche hacia la Albufera. Comida en El Palmar (arroz o all i pebre) y barca al atardecer. | Vuelta a la ciudad y última horchata, o un agua de Valencia si aún te quedan fuerzas. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -181,9 +165,12 @@ Por la ciudad te moverás andando, en bici, en metro y en tranvía (para la play
 
 Precios por persona y día, sin contar el vuelo y en habitación doble compartida:
 
-- **Ajustado: 60-80 €.** Hostel o piso compartido, menú del día, almuerzo valenciano, museos gratis y bici.
+**Presupuesto orientativo por día**
 
-- **Medio: 110-160 €.** Hotel de tres estrellas céntrico, una paella buena, alguna entrada de pago y cenas de tapas.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | 60-80 € | Hostel o piso compartido, menú del día, almuerzo valenciano, museos gratis y bici. |
+| Medio | 110-160 € | Hotel de tres estrellas céntrico, una paella buena, alguna entrada de pago y cenas de tapas. |
 
 - **Extras orientativos:** Oceanogràfic unos 40 €, barca en la Albufera 5-6 €, Micalet 3 €, Tourist Card de 72 horas unos 25 €.
 

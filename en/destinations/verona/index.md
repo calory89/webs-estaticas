@@ -95,21 +95,12 @@ A lot of the best of Verona costs nothing, and the city is easy to enjoy on a ti
 
 ## Verona itinerary: 2 days
 
-### Day 1: Roman and medieval centre
+**2-day itinerary for Verona**
 
-**Morning:** Be at the Arena when it opens, then walk up Via Mazzini to Piazza delle Erbe. Climb the Torre dei Lamberti while the light is good, then cut through to Piazza dei Signori and the Scaliger Tombs.
-
-**Afternoon:** Have lunch at an osteria off the main squares. Afterwards, take a quick look at Juliet's House, then visit Sant'Anastasia and the Duomo.
-
-**Evening:** Cross Ponte Pietra and walk up to Castel San Pietro for sunset. Come down for an aperitivo on Via Sottoriva and dinner in the centre or in Veronetta.
-
-### Day 2: Castles, San Zeno and the river
-
-**Morning:** Start at Castelvecchio and its museum, then cross Ponte Scaligero and walk the river path to San Zeno. Allow time for the cloister.
-
-**Afternoon:** Have lunch around San Zeno, which is calmer and better value. Walk back via Corso Cavour and Porta Borsari, then cross to Giardino Giusti or the Teatro Romano.
-
-**Evening:** In summer, go to the opera at the Arena. The rest of the year, settle in at a wine bar for Amarone by the glass and a slow dinner.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Roman and medieval centre | Be at the Arena when it opens, then walk up Via Mazzini to Piazza delle Erbe. Climb the Torre dei Lamberti while the light is good, then cut through to Piazza dei Signori and the Scaliger Tombs. | Have lunch at an osteria off the main squares. Afterwards, take a quick look at Juliet's House, then visit Sant'Anastasia and the Duomo. | Cross Ponte Pietra and walk up to Castel San Pietro for sunset. Come down for an aperitivo on Via Sottoriva and dinner in the centre or in Veronetta. |
+| Day 2 · Castles, San Zeno and the river | Start at Castelvecchio and its museum, then cross Ponte Scaligero and walk the river path to San Zeno. Allow time for the cloister. | Have lunch around San Zeno, which is calmer and better value. Walk back via Corso Cavour and Porta Borsari, then cross to Giardino Giusti or the Teatro Romano. | In summer, go to the opera at the Arena. The rest of the year, settle in at a wine bar for Amarone by the glass and a slow dinner. |
 
 ## What is overrated (and what to do instead)
 
@@ -169,9 +160,12 @@ In town you will mostly walk. ATV city buses cost about €1.50-2 per ride, and 
 
 ## How much a trip to Verona costs
 
-- **Shoestring: €60-90 a day.** That covers a hostel bed or cheap room outside the centre (€35-50), pizza or a market lunch, one paid sight, walking and a spritz.
+**Rough daily budget**
 
-- **Mid-range: €150-250 a day per person.** That means a central double room shared (€60-120 each), a VeronaCard, a good lunch and dinner with wine, and an aperitivo.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €60-90 a day | That covers a hostel bed or cheap room outside the centre (€35-50), pizza or a market lunch, one paid sight, walking and a spritz. |
+| Mid-range | €150-250 a day per person | That means a central double room shared (€60-120 each), a VeronaCard, a good lunch and dinner with wine, and an aperitivo. |
 
 - **Extras:** Opera tickets run from €30 to €200+. A winery tasting costs €20-40, and a Lake Garda trip €10-20 in transport.
 

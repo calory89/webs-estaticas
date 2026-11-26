@@ -16,6 +16,7 @@ SITE, e, flag, slugify = G.SITE, G.e, G.flag, G.slugify
 API = G.API
 
 from en_names import NAMES  # noqa: E402
+import en_names  # noqa: E402
 COUNTRIES = {'ES': 'Spain', 'PT': 'Portugal', 'GB': 'United Kingdom', 'IE': 'Ireland', 'FR': 'France', 'IT': 'Italy', 'DE': 'Germany', 'NL': 'Netherlands', 'BE': 'Belgium', 'CH': 'Switzerland',
              'AT': 'Austria', 'DK': 'Denmark', 'SE': 'Sweden', 'NO': 'Norway', 'FI': 'Finland', 'PL': 'Poland', 'CZ': 'Czechia', 'HU': 'Hungary', 'GR': 'Greece', 'RO': 'Romania', 'BG': 'Bulgaria',
              'HR': 'Croatia', 'RS': 'Serbia', 'TR': 'Turkey', 'IS': 'Iceland', 'MT': 'Malta', 'CY': 'Cyprus', 'EE': 'Estonia', 'LV': 'Latvia', 'LT': 'Lithuania', 'US': 'United States',
@@ -233,7 +234,7 @@ def main():
         es_url = f'{SITE}/chollos/{slug}/'
         title = G.clean_title(en.get('title') or f'{o} → {d} from €{x["price"]} {trip(f)}')
         qa = G.deal_faq(x, True)
-        seo_t = en.get('seo_title') or f'Flights {o} → {d} for €{x["price"]} ({trip(f)}) · Verified deal'
+        seo_t = G.deal_seo_title(dict(f, origen=o, destino=d, periodo_en=(datetime.date.fromisoformat(f['ida'][:10]).strftime('%b %Y') if re.match(r'\d{4}-\d\d-\d\d', f.get('ida') or '') else '')), x['price'], True, trip(f))
         desc = en.get('meta_description') or en.get('excerpt') or title
         ls_ = G.lib_slug(f)
         hero = f'/hlc/img/cities/{ls_}.jpg' if ls_ else (f'/chollos/{slug}/foto.jpg' if os.path.exists(f'chollos/{slug}/foto.jpg') else (x.get('image_url') or ''))
@@ -286,7 +287,8 @@ def main():
 {T3.block(d, *G.dest_ll(f), lang='en', checkin=f.get('ida'), checkout=f.get('vuelta'))}
 <section class="sec" style="padding-top:10px"><div class="sec-h"><div><div class="kicker">You might also like</div><h2>Similar deals</h2></div><a class="hlc-btn o" href="/en/deals/">See all</a></div><div class="dc-grid">{''.join(card(y) for y in rel)}</div></section>
 </div></main>{FOOTER}</body></html>'''
-        write(f'en/deals/{eslug}', page)
+        write(f'en/deals/{eslug}', page.replace('</head>', '<link rel="alternate" type="text/markdown" href="' + url + 'index.md" title="Markdown"></head>', 1))
+        open(f'en/deals/{eslug}/index.md', 'w', encoding='utf-8').write(G.deal_md(x, url, title, qa, True))
         hechos.add(eslug)
         if eslug != slug:
             moved[f'/en/deals/{slug}/'] = f'/en/deals/{eslug}/'
@@ -436,12 +438,18 @@ def main():
 {ch_}
 <div class="sec-h"><div><div class="kicker">Ideas for cheap travel</div><h1 class="x-h1">{e(h1_)}</h1><p>{e(intro_)}</p></div></div>
 <div class="dc-grid">{''.join(card(x) for x in sub) or '<div class="dc-empty"><b>No deals here right now.</b><span>Check all of today’s deals.</span><a class="hlc-btn" href="/en/deals/">Today’s deals</a></div>'}</div>
+{G.ideas_faq(sub, h1_, True, {'under-50': 50, 'under-100': 100}.get(k_))}
 </div></main>{FOOTER}</body></html>'''
         write(f'en/deals/ideas/{k_}', pg)
         ideas_en.append((k_, h1_, len(sub)))
     json.dump(ideas_en, open('en/ideas.json', 'w'), ensure_ascii=False)
 
     hero_imgs = [p for p in ('bali', 'tokio', 'nueva-york', 'santorini', 'maldivas', 'lisboa')]
+    # guías EN más leídas (Search Console, 28 días hasta el 25-nov-2026)
+    TOP_EN = ['tallin', 'zanzibar', 'riga', 'salzburgo', 'fez', 'las-vegas', 'praga', 'sri-lanka']
+    tge = [s_ for s_ in TOP_EN if s_ in dmap and dmap[s_].get('guide_html_en')]
+    top_guides = ('<section class="sec" style="padding-top:10px"><div class="wrap"><div class="sec-h"><div><div class="kicker">Most read</div><h2>Most-read itineraries</h2></div><a class="hlc-btn o" href="/en/destinations/">All guides</a></div><div class="hub-g">'
+                  + ''.join(f'<a class="hub-l" href="/en/destinations/{G.en_dest_slug(s_)}/">{e(NAMES.get(s_, dmap[s_]["name"]))} itinerary</a>' for s_ in tge) + '</div></div></section>') if tge else ''
     guides_hub = ''.join(f'<a class="hub-l" href="/en/destinations/{G.en_dest_slug(s_)}/">{e(NAMES.get(s_, g["name"]))}</a>' for s_, g in dmap.items())
     org = {"@type": "Organization", "@id": f"{SITE}/#org", "name": "Happy Low Cost", "url": f"{SITE}/en/", "logo": f"{SITE}/hlc/brand/icon-512.png", "foundingDate": "2012",
            "sameAs": ["https://www.facebook.com/happylowcostofficialpage/", "https://www.instagram.com/happylowcost/", "https://x.com/happylowcost"],
@@ -516,7 +524,7 @@ def main():
 <div class="pw-grid">{past_html}</div>
 <div class="h2-cta2"><h3>Don't miss the next one.</h3>{qform()}</div>
 </div></section>
-{f'<section class="sec" style="padding-top:0"><div class="wrap"><section class="hub"><h2>Destination guides</h2><div class="hub-g">{guides_hub}</div></section></div></section>' if guides_hub else ''}
+{top_guides}{f'<section class="sec" style="padding-top:0"><div class="wrap"><section class="hub"><h2>Destination guides</h2><div class="hub-g">{guides_hub}</div></section></div></section>' if guides_hub else ''}
 </main>{FOOTER}</body></html>'''
     write('en', page)
 
@@ -537,6 +545,10 @@ def main():
             add = ''.join(f'<h3>{e(q)}</h3><p>{e(a)}</p>' for q, a in xq)
             mfaq = re.search(r'(<h2>[^<]*(?:Preguntas frecuentes|FAQ)[^<]*</h2>.*?)(?=<h2|$)', gh, re.S | re.I)
             gh = (gh[:mfaq.end()] + add + gh[mfaq.end():]) if mfaq else gh + '<h2>FAQs</h2>' + add
+        nd_i = nd_ or max([int(m_.group(1)) for m_ in re.finditer(r'\bday\s*(\d{1,2})\b', gh, re.I)] + [0])
+        gh, trip_ld = G.guide_itinerary(gh, n, nd_i if 2 <= nd_i <= 21 else 0, 'en')
+        gh, bud = G.guide_budget(gh, 'en')
+        attr = G.guide_attractions(gh)
         gh, faq_ld, _w = G.guide_extras(gh, 'en')
         upd_en = g.get('updated_en') or g.get('updated_at')
         summ = G.guide_summary(gh, n, nd_, sub, upd_en, 'en', deal_href=lambda x_: f'/en/deals/{G.en_deal_slug(x_)}/' if G.en_deal_slug(x_) in hechos else '/en/deals/')
@@ -544,7 +556,10 @@ def main():
         hub_en = f"/en/flights/to/{G.en_dest_slug(p['s'])}/" if os.path.isfile(f"en/flights/to/{G.en_dest_slug(p['s'])}/index.html") else ''
         ch, cld = crumbs([('Home', '/en/'), ('Destinations', '/en/destinations/'), (n, None)])
         dest_ld = {"@type": "TouristDestination", "@id": url + '#dest', "name": n, "url": url, "image": {"@id": img_ld["@id"]},
-                   **({"geo": {"@type": "GeoCoordinates", "latitude": p['y'], "longitude": p['x']}} if p.get('y') is not None else {})}
+                   **({"geo": {"@type": "GeoCoordinates", "latitude": p['y'], "longitude": p['x']}} if p.get('y') is not None else {}),
+                   "containedInPlace": {"@type": "Country", "name": en_names.country_en(p['c'])}}
+        if attr:
+            dest_ld["includesAttraction"] = attr
         art = {"@type": "Article", "headline": (g.get('seo_title_en') or f'What to see in {n}')[:110], "description": g.get('meta_description_en') or '', "image": f"{SITE}/hlc/img/cities/{p['s']}.jpg",
                "dateModified": upd_en, "datePublished": g.get('updated_at') or upd_en, "inLanguage": "en", "about": {"@id": url + '#dest'}, "author": {"@id": G.ORG_ID},
                "publisher": {"@id": G.ORG_ID}, "mainEntityOfPage": url, "isAccessibleForFree": True, "speakable": {"@type": "SpeakableSpecification", "cssSelector": [".g-sum", "h1"]}}
@@ -566,10 +581,17 @@ def main():
             ttl_ = f'{n} itinerary: what to see in {nd_} days ({datetime.date.today().year})'
             if 'itinerar' not in dsc_.lower() and 'day by day' not in dsc_.lower() and not re.search(r'\b\d+[ -]days?\b|\b(three|four|five|seven)[ -]days?\b', dsc_, re.I):
                 dsc_ = f'{nd_} days in {n}, day by day: ' + dsc_[:1].lower() + dsc_[1:]
+        if bud and 'budget' not in dsc_.lower():
+            add_ = f' Budget: {bud} a day.'
+            if len(dsc_.rstrip()) + len(add_) <= 200:
+                dsc_ = dsc_.rstrip() + ('' if dsc_.rstrip().endswith('.') else '.') + add_
         art["headline"] = ttl_[:110]
         page = head(ttl_ + (' · Happy Low Cost' if len(ttl_) <= 46 else ''), dsc_[:300],
-                    url, es, f"{SITE}/hlc/img/cities/{p['s']}.jpg", 'article', [G.ORG_LD, img_ld, dest_ld, art, cld] + ([faq_ld] if faq_ld else []), body_class='destino',
-                    extra_head=G.guide_head_extra(p['s'], url + 'index.md', upd_en, 'en', bool(es)), og_alt=f'Photo of {n}')
+                    url, es, f"{SITE}/hlc/img/cities/{p['s']}.jpg", 'article', [G.ORG_LD, img_ld, dest_ld, art, cld] + ([faq_ld] if faq_ld else []) + ([trip_ld] if trip_ld else []), body_class='destino',
+                    extra_head=G.guide_head_extra(p['s'], url + 'index.md', upd_en, 'en', bool(es)) + G.GUIDE_TABLE_CSS, og_alt=f'Photo of {n}')
+        near = G.nearby_guides(p, dmap)
+        near_html = (f'<section class="sec" style="padding-top:10px"><div class="sec-h"><div><div class="kicker">Combine in the same trip</div><h2>Destinations near {e(n)}</h2></div></div><div class="hub-g">'
+                     + ''.join(f'<a class="hub-l" href="/en/destinations/{G.en_dest_slug(q["s"])}/">{e(NAMES.get(q["s"], q["n"]))} itinerary <small>about {km_} km away</small></a>' for km_, q in near if dmap[q['s']].get('guide_html_en')) + '</div></section>') if any(dmap[q['s']].get('guide_html_en') for _k, q in near) else ''
         cr = G.CR.get(p['s']) or {}
         page += f'''<main>
 <section class="deal-hero" style="background-image:url(/hlc/img/cities/{p['s']}.jpg)"{G.photos_attr(p['s'])}><div class="wrap">
@@ -590,7 +612,7 @@ def main():
 </aside></div>
 <div id="hotels">{T3.block(n, p.get('y'), p.get('x'), [p['s']] + list(p.get('a') or []), (), lang='en')}</div>
 <section class="sec vw" data-hlc-videos data-dest="{p["s"]}" data-hide-empty hidden><div class="sec-h"><div><div class="kicker">Traveller videos</div><h2>{e(n)} on video</h2></div><a class="hlc-btn o" href="/en/videos/">Share yours</a></div><div class="vw-grid"></div></section>
-<section class="sec" style="padding-top:10px"><div class="sec-h"><div><div class="kicker">More inspiration</div><h2>Other destinations</h2></div></div><div class="hub-g">{''.join(f'<a class="hub-l" href="/en/destinations/{G.en_dest_slug(q["s"])}/">{e(NAMES.get(q["s"], q["n"]))}</a>' for q in G.DLIB if q['s'] in dmap and q['s'] != p['s'] and q['r'] == p['r'])}</div></section>
+{near_html}<section class="sec" style="padding-top:10px"><div class="sec-h"><div><div class="kicker">More inspiration</div><h2>Other destinations</h2></div></div><div class="hub-g">{''.join(f'<a class="hub-l" href="/en/destinations/{G.en_dest_slug(q["s"])}/">{e(NAMES.get(q["s"], q["n"]))}</a>' for q in G.DLIB if q['s'] in dmap and q['s'] != p['s'] and q['r'] == p['r'])}</div></section>
 </div></main>{FOOTER}</body></html>'''
         write(f"en/destinations/{G.en_dest_slug(p['s'])}", page)
         open(f"en/destinations/{G.en_dest_slug(p['s'])}/index.md", 'w', encoding='utf-8').write(G.guide_md(g.get('seo_title_en') or f'What to see in {n}', url, gh, n, nd_, upd_en, 'en',

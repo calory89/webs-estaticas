@@ -45,15 +45,17 @@ Para salir de la ciudad hay buenas excursiones:
 
 - **Hallstatt:** preciosa y saturada. Sal temprano y vuelve antes del pico de turistas, o mejor, ve a St. Gilgen, en el lago Wolfgangsee, que está más tranquilo.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Salzburgo en 3 días: ruta día a día
 
 Dos días llenos bastan para lo esencial. Con tres, respiras y añades una excursión. Con cuatro o más solo tiene sentido si quieres hacer varios lagos o senderismo.
 
-**Día 1:** casco viejo. Catedral, Residenzplatz, San Pedro, subida a la fortaleza y paseo por Getreidegasse al final del día.
+**Itinerario de 3 días en Salzburgo**
 
-**Día 2:** Mirabell por la mañana, cruzas el río hacia la orilla derecha, comes por Linzer Gasse y subes al Mönchsberg o al Kapuzinerberg al atardecer.
-
-**Día 3:** Hellbrunn por la mañana, o excursión completa a Hallein, Werfen o los lagos.
+| Día | Plan |
+|---|---|
+| Día 1 | Casco viejo. Catedral, Residenzplatz, San Pedro, subida a la fortaleza y paseo por Getreidegasse al final del día. |
+| Día 2 | Mirabell por la mañana, cruzas el río hacia la orilla derecha, comes por Linzer Gasse y subes al Mönchsberg o al Kapuzinerberg al atardecer. |
+| Día 3 | Hellbrunn por la mañana, o excursión completa a Hallein, Werfen o los lagos. |
 
 La Salzburg Card (24, 48 o 72 horas) incluye entradas y transporte público. Compensa si haces fortaleza, Hellbrunn y un par de museos en pocos días. Haz las cuentas antes de comprarla.
 
@@ -101,11 +103,13 @@ Dentro de la ciudad se anda casi todo. Para Hellbrunn y las afueras hay buses y 
 
 ## Presupuesto orientativo por día
 
-- **Económico (70-95 €):** hostel, comida de puesto, Bosna, una entrada y transporte público.
+**Presupuesto orientativo por día**
 
-- **Medio (130-180 €):** hotel de gama media o apartamento, comida en restaurante, entradas y una excursión.
-
-- **Cómodo (250 € o más):** hotel céntrico, cena con postre en un buen local y tour privado.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Económico | 70-95 € | Hostel, comida de puesto, Bosna, una entrada y transporte público. |
+| Medio | 130-180 € | Hotel de gama media o apartamento, comida en restaurante, entradas y una excursión. |
+| Cómodo | 250 € o más | Hotel céntrico, cena con postre en un buen local y tour privado. |
 
 Estas cifras varían bastante según temporada. Revisa precios antes de reservar.
 

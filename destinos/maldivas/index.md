@@ -35,17 +35,18 @@ Otras actividades habituales son el picnic en un banco de arena, la pesca al ata
 
 Si buscas algo distinto, la llamada «safari boat» (crucero en barco local por varios atolones) es una forma de mover el presupuesto: duermes a bordo, buceas y comes incluido, y en algunas se puede conseguir alcohol, algo que no ocurre en las islas locales.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Maldivas en 7 días: ruta día a día
 
 Con una semana vas bien. Menos de cinco días no compensa el viaje desde España, y con diez puedes combinar dos atolones sin ir con prisas.
 
-- **Día 1:** llegada a Velana, noche en Hulhumalé o traslado directo a la isla elegida.
+**Itinerario de 7 días en Maldivas**
 
-- **Días 2-3:** Maafushi o una isla de Malé Sur, para aclimatarte y hacer el primer snorkel.
-
-- **Días 4-6:** Dhigurah o Ukulhas, en Ari, para ver tiburón ballena o mantas, según la época.
-
-- **Día 7:** vuelta a Malé, paseo por mezquita y mercado, y vuelo.
+| Día | Plan |
+|---|---|
+| Día 1 | Llegada a Velana, noche en Hulhumalé o traslado directo a la isla elegida. |
+| Días 2-3 | Maafushi o una isla de Malé Sur, para aclimatarte y hacer el primer snorkel. |
+| Días 4-6 | Dhigurah o Ukulhas, en Ari, para ver tiburón ballena o mantas, según la época. |
+| Día 7 | Vuelta a Malé, paseo por mezquita y mercado, y vuelo. |
 
 Planifica con margen para el último día. Un ferri o lancha rápida retrasados pueden costarte el avión.
 

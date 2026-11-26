@@ -107,21 +107,12 @@ A surprising amount of Pisa costs nothing:
 
 ## Pisa itinerary: 2 days
 
-### Day 1: Piazza dei Miracoli and the old town
+**2-day itinerary for Pisa**
 
-**Morning:** Arrive at the square early and take the first or second tower slot you booked. Then visit the Duomo and the Baptistery, timing your Baptistery visit for one of the singing demonstrations.
-
-**Afternoon:** Have lunch away from the square, anywhere south of Piazza dei Cavalieri. Then come back to the Camposanto, which is quieter after lunch, and walk the city walls in the late afternoon. Skip the walls if it is very hot and go to the Orto Botanico instead.
-
-**Evening:** Walk down through Piazza dei Cavalieri to Borgo Stretto for aperitivo in Piazza delle Vettovaglie, then have a trattoria dinner nearby.
-
-### Day 2: The river and the other Pisa
-
-**Morning:** Start at the market in Piazza delle Vettovaglie with a coffee. Then walk east along Lungarno Mediceo to the Museo Nazionale di San Matteo.
-
-**Afternoon:** Cross to the south bank for Palazzo Blu and Santa Maria della Spina. Then walk down Corso Italia to see the Tuttomondo mural. If you have energy left, head west to the Museo delle Navi Antiche.
-
-**Evening:** Watch sunset from the Ponte di Mezzo or Ponte Solferino, then go for cecina and pizza in the centre.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Piazza dei Miracoli and the old town | Arrive at the square early and take the first or second tower slot you booked. Then visit the Duomo and the Baptistery, timing your Baptistery visit for one of the singing demonstrations. | Have lunch away from the square, anywhere south of Piazza dei Cavalieri. Then come back to the Camposanto, which is quieter after lunch, and walk the city walls in the late afternoon. Skip the walls if it is very hot and go to the Orto Botanico instead. | Walk down through Piazza dei Cavalieri to Borgo Stretto for aperitivo in Piazza delle Vettovaglie, then have a trattoria dinner nearby. |
+| Day 2 · The river and the other Pisa | Start at the market in Piazza delle Vettovaglie with a coffee. Then walk east along Lungarno Mediceo to the Museo Nazionale di San Matteo. | Cross to the south bank for Palazzo Blu and Santa Maria della Spina. Then walk down Corso Italia to see the Tuttomondo mural. If you have energy left, head west to the Museo delle Navi Antiche. | Watch sunset from the Ponte di Mezzo or Ponte Solferino, then go for cecina and pizza in the centre. |
 
 ## What is overrated (and what to do instead)
 
@@ -179,9 +170,12 @@ Once in town, walk. The historic centre is flat, and you can cross it on foot in
 
 ## How much a trip to Pisa costs
 
-- **Shoestring (about €60-80 a day):** a hostel bed or cheap room near the station (€30-45), cecina and pizza (€15), aperitivo (€6), the Duomo and walls (free to €5) and walking everywhere.
+**Rough daily budget**
 
-- **Mid-range (about €150-220 a day for one, sharing a double):** a central hotel (€50-80 per person), the tower plus monuments (€30-45), two proper meals with wine (€50-60) and a museum or day-trip train (€10-20).
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | about €60-80 a day | A hostel bed or cheap room near the station (€30-45), cecina and pizza (€15), aperitivo (€6), the Duomo and walls (free to €5) and walking everywhere. |
+| Mid-range | about €150-220 a day for one, sharing a double | A central hotel (€50-80 per person), the tower plus monuments (€30-45), two proper meals with wine (€50-60) and a museum or day-trip train (€10-20). |
 
 ## Day trips from Pisa
 

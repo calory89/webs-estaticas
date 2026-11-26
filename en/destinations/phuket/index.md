@@ -61,19 +61,19 @@ A patch of remaining rainforest in the north of the island, with short trails an
 
 - **Rent a kayak** or paddleboard on a calm morning, before the wind picks up.
 
-## How many days and a suggested route
+## Phuket itinerary: 5 days, day by day
 
 Four to five days is enough for a first visit. With a week you can add a second island trip and slow down.
 
-- **Day 1:** Arrive, settle into your beach, swim and eat nearby.
+**5-day itinerary for Phuket**
 
-- **Day 2:** Old Town in the morning, a long lunch, then Wat Chalong and Big Buddha in the afternoon.
-
-- **Day 3:** Full-day boat trip, either Phang Nga Bay or Phi Phi.
-
-- **Day 4:** Southern beaches: Nai Harn, Kata Noi, then sunset at Promthep Cape.
-
-- **Day 5:** A cooking class, Khao Phra Thaeo, or a second island.
+| Day | Plan |
+|---|---|
+| Day 1 | Arrive, settle into your beach, swim and eat nearby. |
+| Day 2 | Old Town in the morning, a long lunch, then Wat Chalong and Big Buddha in the afternoon. |
+| Day 3 | Full-day boat trip, either Phang Nga Bay or Phi Phi. |
+| Day 4 | Southern beaches: Nai Harn, Kata Noi, then sunset at Promthep Cape. |
+| Day 5 | A cooking class, Khao Phra Thaeo, or a second island. |
 
 ## When to go: weather and seasons
 

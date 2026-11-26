@@ -85,47 +85,17 @@ Todas las playas son gratis. Lo que pagas es el parking en las más famosas en t
 
 Los sitios talayóticos menores, como Talatí de Dalt o Torralba d'en Salord, cuestan poco o nada y se ven en 20-30 minutos. La destilería Xoriguer es gratis. Comprar queso, sobrasada y pan en el Mercat des Claustre de Maó o en un supermercado y comer en la playa te sale por unos 10 € por persona, y es uno de los mejores planes de la isla.
 
-## Itinerario: Menorca en 5 días
+## Qué ver en Menorca en 5 días: ruta día a día
 
-### Día 1: Maó y el puerto
+**Itinerario de 5 días en Menorca**
 
-**Mañana:** casco antiguo, Santa María y Mercat des Claustre. Baja al puerto por la Costa de ses Voltes.
-
-**Tarde:** barco por el puerto o Fortaleza de La Mola. Después, un baño en Es Grau, al norte de Maó, que tiene agua tranquila y poco fondo.
-
-**Noche:** cena en el puerto de Maó o en Es Castell, en Cales Fonts, que es más barato y más agradable.
-
-### Día 2: Calas del sur (Galdana, Mitjana, Macarella)
-
-**Mañana:** llega temprano a Cala Galdana y camina a Mitjana para el primer baño.
-
-**Tarde:** sigue por el Camí de Cavalls hasta Macarella y Macarelleta. Vuelve andando o con el bus.
-
-**Noche:** cena en Ciutadella.
-
-### Día 3: Ciutadella y Turqueta
-
-**Mañana:** Cala Turqueta antes de que se llene.
-
-**Tarde:** casco antiguo de Ciutadella: Plaça des Born, catedral y Ses Voltes. Para la puesta de sol, ve al faro de Punta Nati o a la costa de Cala en Blanes.
-
-**Noche:** pomada en el puerto de Ciutadella.
-
-### Día 4: Interior y talayots
-
-**Mañana:** Naveta des Tudons y, de camino a Maó, Torre d'en Galmés.
-
-**Tarde:** Monte Toro y baño en Son Bou, la playa más larga de la isla. También puedes ir a Binibeca y sus calas.
-
-**Noche:** Cova d'en Xoroi al atardecer, si te apetece pagar el capricho.
-
-### Día 5: La costa norte
-
-**Mañana:** Cala Pregonda desde Binimel·là.
-
-**Tarde:** comida en Fornells y kayak por la bahía. Atardecer en el faro de Cavalleria.
-
-**Noche:** vuelta a tu base.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Maó y el puerto | Casco antiguo, Santa María y Mercat des Claustre. Baja al puerto por la Costa de ses Voltes. | Barco por el puerto o Fortaleza de La Mola. Después, un baño en Es Grau, al norte de Maó, que tiene agua tranquila y poco fondo. | Cena en el puerto de Maó o en Es Castell, en Cales Fonts, que es más barato y más agradable. |
+| Día 2 · Calas del sur (Galdana, Mitjana, Macarella) | Llega temprano a Cala Galdana y camina a Mitjana para el primer baño. | Sigue por el Camí de Cavalls hasta Macarella y Macarelleta. Vuelve andando o con el bus. | Cena en Ciutadella. |
+| Día 3 · Ciutadella y Turqueta | Cala Turqueta antes de que se llene. | Casco antiguo de Ciutadella: Plaça des Born, catedral y Ses Voltes. Para la puesta de sol, ve al faro de Punta Nati o a la costa de Cala en Blanes. | Pomada en el puerto de Ciutadella. |
+| Día 4 · Interior y talayots | Naveta des Tudons y, de camino a Maó, Torre d'en Galmés. | Monte Toro y baño en Son Bou, la playa más larga de la isla. También puedes ir a Binibeca y sus calas. | Cova d'en Xoroi al atardecer, si te apetece pagar el capricho. |
+| Día 5 · La costa norte | Cala Pregonda desde Binimel·là. | Comida en Fornells y kayak por la bahía. Atardecer en el faro de Cavalleria. | Vuelta a tu base. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -179,12 +149,14 @@ Para moverte, el **coche de alquiler** es lo más práctico: entre 30 y 70 € a
 
 ## Cuánto cuesta un viaje a Menorca
 
-- **Presupuesto ajustado (unos 80-110 € al día por persona):** habitación compartida en el interior o en Maó, bus, picnic de mercado y una cena sencilla.
+**Presupuesto orientativo por día**
 
-- **Presupuesto medio (unos 150-220 € al día por persona):** hotel o apartamento en Ciutadella, coche compartido, comidas fuera, alguna actividad (kayak, barco) y una cena buena.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Presupuesto ajustado | unos 80-110 € al día por persona | Habitación compartida en el interior o en Maó, bus, picnic de mercado y una cena sencilla. |
+| Presupuesto medio | unos 150-220 € al día por persona | Hotel o apartamento en Ciutadella, coche compartido, comidas fuera, alguna actividad (kayak, barco) y una cena buena. |
 
 - **Extras:** parking de calas (7-8 € al día en temporada), Cova d'en Xoroi (unos 20 €) y caldereta (70-90 €).
-
 - **Vuelos:** desde Madrid o Barcelona se encuentran por 40-80 € ida y vuelta fuera de agosto. En agosto pueden triplicarse.
 
 ## Excursiones de un día desde Menorca

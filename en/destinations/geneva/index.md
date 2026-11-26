@@ -95,23 +95,12 @@ Geneva is expensive, but a surprising amount of the best stuff costs nothing. Th
 
 ## Geneva itinerary: 2 days
 
-### Day 1: Old Town, the lake and Pâquis
+**2-day itinerary for Geneva**
 
-**Morning:** Start at Parc des Bastions and the Reformation Wall, then walk up into the Old Town. Climb the St. Pierre Cathedral towers early, then visit Maison Tavel and have coffee on Place du Bourg-de-Four.
-
-**Afternoon:** Walk down to MAH for the Witz altarpiece, then head to the lakefront via the Jardin Anglais. Walk out to the Jet d'Eau, then hop on a Mouette across to Pâquis.
-
-**Evening:** Sunset drink at Bains des Pâquis, then dinner in the Pâquis neighbourhood, Geneva's most international and least expensive area for food (Lebanese, Ethiopian, Portuguese, Thai).
-
-### Day 2: International Geneva and Carouge
-
-**Morning:** Take tram 15 to Place des Nations. See the Broken Chair, do your booked UN tour, then cross the road to the Red Cross Museum.
-
-**Afternoon:** Walk through the Botanical Garden toward the lake, or head straight to Plainpalais for the flea market (Wednesday or Saturday) and the Patek Philippe Museum.
-
-**Evening:** Tram to Carouge. Wander Rue Saint-Joseph and Rue Ancienne, then settle in for fondue or filets de perche.
-
-With a spare half day, swap the Patek Philippe Museum for CERN, or add a Rhône swim in summer.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Old Town, the lake and Pâquis | Start at Parc des Bastions and the Reformation Wall, then walk up into the Old Town. Climb the St. Pierre Cathedral towers early, then visit Maison Tavel and have coffee on Place du Bourg-de-Four. | Walk down to MAH for the Witz altarpiece, then head to the lakefront via the Jardin Anglais. Walk out to the Jet d'Eau, then hop on a Mouette across to Pâquis. | Sunset drink at Bains des Pâquis, then dinner in the Pâquis neighbourhood, Geneva's most international and least expensive area for food (Lebanese, Ethiopian, Portuguese, Thai). |
+| Day 2 · International Geneva and Carouge | Take tram 15 to Place des Nations. See the Broken Chair, do your booked UN tour, then cross the road to the Red Cross Museum. | Walk through the Botanical Garden toward the lake, or head straight to Plainpalais for the flea market (Wednesday or Saturday) and the Patek Philippe Museum. | Tram to Carouge. Wander Rue Saint-Joseph and Rue Ancienne, then settle in for fondue or filets de perche. With a spare half day, swap the Patek Philippe Museum for CERN, or add a Rhône swim in summer. |
 
 ## What is overrated (and what to do instead)
 
@@ -177,9 +166,12 @@ Getting around is easy on foot, as the centre is compact. For longer hops, TPG t
 
 Geneva is one of the most expensive cities in Europe, but the free transport and free museums soften the blow. Rough daily costs per person, excluding flights:
 
-- **Shoestring: CHF 90-120 (€95-130).** Hostel dorm, supermarket breakfasts, plat du jour lunch, one cheap Pâquis dinner, free museums and free transport.
+**Rough daily budget**
 
-- **Mid-range: CHF 220-320 (€235-340).** Half a double room in a 3-star hotel, two restaurant meals, a fondue, the UN tour or Red Cross Museum, a drink or two.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring: CHF 90-120 | €95-130 | Hostel dorm, supermarket breakfasts, plat du jour lunch, one cheap Pâquis dinner, free museums and free transport. |
+| Mid-range: CHF 220-320 | €235-340 | Half a double room in a 3-star hotel, two restaurant meals, a fondue, the UN tour or Red Cross Museum, a drink or two. |
 
 - **Money-saving moves:** eat your main meal at lunch, buy wine and picnic food at Coop or Migros, and sleep in Annemasse if hotel prices are crazy.
 

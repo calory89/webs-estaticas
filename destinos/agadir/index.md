@@ -87,31 +87,15 @@ Buena parte de lo mejor de la ciudad no cuesta nada. La playa sin tumbona, el pa
 
 - **Bus urbano:** unos 0,50 € el trayecto.
 
-## Itinerario: Agadir en 3 días
+## Qué ver en Agadir en 3 días: ruta día a día
 
-### Día 1: centro, playa y kasbah
+**Itinerario de 3 días en Agadir**
 
-**Mañana:** empieza en el Museo del Patrimonio Amazigh y sigue con el Valle de los Pájaros y el Jardín de Olhão, que están a pocos minutos andando. Baja después a la playa.
-
-**Tarde:** playa y paseo por la corniche hasta la Marina. A media tarde, taxi al teleférico y sube a la kasbah de Agadir Oufella para el atardecer.
-
-**Noche:** cena en Talborjt, en alguno de los restaurantes alrededor de la mezquita.
-
-### Día 2: zoco, puerto y Medina Polizzi
-
-**Mañana:** Souk El Had con calma (recuerda que el lunes está cerrado). Compra especias, amlou o argán aquí.
-
-**Tarde:** comida en las parrillas del puerto pesquero. Luego taxi a la Medina Polizzi, o al Crocoparc si vas con niños.
-
-**Noche:** paseo y copa en la Marina. Es de las pocas zonas donde se sirve alcohol con facilidad.
-
-### Día 3: Taghazout y la costa norte
-
-**Mañana:** taxi o bus hacia Tamraght y Taghazout. Clase de surf o simplemente playa en Banana Beach.
-
-**Tarde:** sube a Paradise Valley si tienes coche o contratas un taxi para el día, o quédate en Taghazout tomando algo en una terraza frente a las olas.
-
-**Noche:** cena de pescado en Taghazout o vuelta a Agadir y última cena con tajine.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Centro, playa y kasbah | Empieza en el Museo del Patrimonio Amazigh y sigue con el Valle de los Pájaros y el Jardín de Olhão, que están a pocos minutos andando. Baja después a la playa. | Playa y paseo por la corniche hasta la Marina. A media tarde, taxi al teleférico y sube a la kasbah de Agadir Oufella para el atardecer. | Cena en Talborjt, en alguno de los restaurantes alrededor de la mezquita. |
+| Día 2 · Zoco, puerto y Medina Polizzi | Souk El Had con calma (recuerda que el lunes está cerrado). Compra especias, amlou o argán aquí. | Comida en las parrillas del puerto pesquero. Luego taxi a la Medina Polizzi, o al Crocoparc si vas con niños. | Paseo y copa en la Marina. Es de las pocas zonas donde se sirve alcohol con facilidad. |
+| Día 3 · Taghazout y la costa norte | Taxi o bus hacia Tamraght y Taghazout. Clase de surf o simplemente playa en Banana Beach. | Sube a Paradise Valley si tienes coche o contratas un taxi para el día, o quédate en Taghazout tomando algo en una terraza frente a las olas. | Cena de pescado en Taghazout o vuelta a Agadir y última cena con tajine. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 

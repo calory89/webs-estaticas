@@ -99,25 +99,15 @@ Menorca's best things cost nothing. Every beach is public and free, though some 
 
 This plan assumes a rental car, which makes life much easier. It's based in Ciutadella for days 1-3 and Maó for days 4-5, but one base works if you don't mind driving 45 minutes.
 
-### Day 1: Ciutadella
+**5-day itinerary for Menorca**
 
-**Morning:** Walk the old town: the cathedral, Ses Voltes, Plaça des Born and the market. **Afternoon:** Swim at Cala en Blanes or another small cove near town, or rest. **Evening:** Visit the Naveta des Tudons in late light, then have dinner along Ciutadella's harbour or the streets just above it.
-
-### Day 2: Southwest coves
-
-**Morning:** Take an early bus or drive to Macarella, then walk to Macarelleta. **Afternoon:** Follow the Camí de Cavalls to Cala Turqueta, or drive there. Bring water. **Evening:** Watch the sunset at Punta Nati lighthouse, northwest of Ciutadella.
-
-### Day 3: North coast
-
-**Morning:** Walk to Cala Pregonda, if the wind allows. **Afternoon:** Head to Fornells for a late lunch, then kayak or paddleboard in the bay. **Evening:** Watch the sunset at Cap de Cavalleria lighthouse.
-
-### Day 4: Centre and the move east
-
-**Morning:** Drive up Monte Toro, then visit Torre d'en Galmés. **Afternoon:** Walk from Cala Galdana to Cala Mitjana and swim. **Evening:** Check into Maó, then have dinner in the upper town or on the harbour front.
-
-### Day 5: Mahón and the southeast
-
-**Morning:** Visit Fortaleza de La Mola or Illa del Rei, then the Claustre del Carme market. **Afternoon:** Take a harbour boat trip and visit Xoriguer, then see Binibeca Vell. **Evening:** Have a sunset drink at Cova d'en Xoroi, or a quieter dinner in Es Castell.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Ciutadella | Walk the old town: the cathedral, Ses Voltes, Plaça des Born and the market. | Swim at Cala en Blanes or another small cove near town, or rest. | Visit the Naveta des Tudons in late light, then have dinner along Ciutadella's harbour or the streets just above it. |
+| Day 2 · Southwest coves | Take an early bus or drive to Macarella, then walk to Macarelleta. | Follow the Camí de Cavalls to Cala Turqueta, or drive there. Bring water. | Watch the sunset at Punta Nati lighthouse, northwest of Ciutadella. |
+| Day 3 · North coast | Walk to Cala Pregonda, if the wind allows. | Head to Fornells for a late lunch, then kayak or paddleboard in the bay. | Watch the sunset at Cap de Cavalleria lighthouse. |
+| Day 4 · Centre and the move east | Drive up Monte Toro, then visit Torre d'en Galmés. | Walk from Cala Galdana to Cala Mitjana and swim. | Check into Maó, then have dinner in the upper town or on the harbour front. |
+| Day 5 · Mahón and the southeast | Visit Fortaleza de La Mola or Illa del Rei, then the Claustre del Carme market. | Take a harbour boat trip and visit Xoriguer, then see Binibeca Vell. | Have a sunset drink at Cova d'en Xoroi, or a quieter dinner in Es Castell. |
 
 ## What is overrated (and what to do instead)
 
@@ -175,9 +165,12 @@ Line 1 links Maó and Ciutadella along the main road (Me-1) in about an hour for
 
 ## How much a trip to Menorca costs
 
-- **Shoestring (about €70-100 per person per day):** Shared room or hostal (€40-60 each), buses, supermarket picnics, one menú del día, free beaches.
+**Rough daily budget**
 
-- **Mid-range (about €150-220 per person per day):** A double in a town hotel (€120-180 per room), shared car rental, a sit-down lunch and dinner, one paid activity.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | about €70-100 per person per day | Shared room or hostal (€40-60 each), buses, supermarket picnics, one menú del día, free beaches. |
+| Mid-range | about €150-220 per person per day | A double in a town hotel (€120-180 per room), shared car rental, a sit-down lunch and dinner, one paid activity. |
 
 - **Extras:** Caldereta €70-90, boat trip €40-70, Cova d'en Xoroi €20-25, beach parking a few euros.
 

@@ -37,17 +37,18 @@ Lo mejor de la ciudad se hace en barco. El ferry público desde Eminönü o Kara
 
 Un hamam tradicional es otra cita obligada, aunque con matices. Los históricos como Cağaloğlu o Çemberlitaş son bonitos y caros; si te importa más el masaje que el decorado, hay opciones de barrio más baratas. Al atardecer, sube a una azotea de Gálata o Beyoğlu a tomar té. Los bares con vistas cobran más, pero un çay con vistas al Cuerno de Oro no hace daño a nadie.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Estambul en 4 días: ruta día a día
 
 Cuatro días es el punto dulce. Con tres ves lo básico a ritmo fuerte; con cinco puedes añadir Kadıköy con calma y alguna excursión.
 
-- **Día 1: Sultanahmet.** Santa Sofía a primera hora, Mezquita Azul, Cisterna Basílica y paseo por el Hipódromo. Cena por la zona de Cankurtaran.
+**Itinerario de 4 días en Estambul**
 
-- **Día 2: Topkapı y bazares.** Palacio por la mañana, Süleymaniye después y tarde en el Gran Bazar y el Bazar de las Especias. Pescado en Eminönü para comer.
-
-- **Día 3: Cuerno de Oro y Beyoğlu.** Balat y Fener por la mañana, tranvía hasta Karaköy, subida a Gálata y paseo por İstiklal con parada en las callejuelas laterales.
-
-- **Día 4: Bósforo y Asia.** Ferry a Kadıköy, mercado, comida y café por Moda. Vuelta en vapor al atardecer.
+| Día | Plan |
+|---|---|
+| Día 1 | Sultanahmet. Santa Sofía a primera hora, Mezquita Azul, Cisterna Basílica y paseo por el Hipódromo. Cena por la zona de Cankurtaran. |
+| Día 2 | Topkapı y bazares. Palacio por la mañana, Süleymaniye después y tarde en el Gran Bazar y el Bazar de las Especias. Pescado en Eminönü para comer. |
+| Día 3 | Cuerno de Oro y Beyoğlu. Balat y Fener por la mañana, tranvía hasta Karaköy, subida a Gálata y paseo por İstiklal con parada en las callejuelas laterales. |
+| Día 4 | Bósforo y Asia. Ferry a Kadıköy, mercado, comida y café por Moda. Vuelta en vapor al atardecer. |
 
 ## Cuándo ir
 

@@ -61,17 +61,18 @@ Daniel Libeskind's zigzag building is worth the visit for the architecture alone
 
 - **Climb Teufelsberg**, the abandoned Cold War listening station on a hill in Grunewald, for views and graffiti. Check opening times before you go.
 
-## How many days and a suggested route
+## Berlin itinerary: 4 days, day by day
 
 Three days covers the headline sights. Four lets you slow down and see a couple of neighbourhoods properly. Five is better if you want day trips, such as Potsdam with its Sanssouci Palace.
 
-**Day 1:** Brandenburg Gate, Reichstag, Holocaust Memorial, Topography of Terror, then Gendarmenmarkt and an evening around Hackescher Markt.
+**4-day itinerary for Berlin**
 
-**Day 2:** Museum Island in the morning, Berlin Cathedral, lunch in Mitte, then Bernauer Strasse and Mauerpark (on Sunday) in the afternoon.
-
-**Day 3:** East Side Gallery, a wander through Kreuzberg, a döner, canal-side drinks, then dinner in Neukölln.
-
-**Day 4:** Tempelhofer Feld, the Jewish Museum, or Charlottenburg Palace, and a slow final afternoon.
+| Day | Plan |
+|---|---|
+| Day 1 | Brandenburg Gate, Reichstag, Holocaust Memorial, Topography of Terror, then Gendarmenmarkt and an evening around Hackescher Markt. |
+| Day 2 | Museum Island in the morning, Berlin Cathedral, lunch in Mitte, then Bernauer Strasse and Mauerpark (on Sunday) in the afternoon. |
+| Day 3 | East Side Gallery, a wander through Kreuzberg, a döner, canal-side drinks, then dinner in Neukölln. |
+| Day 4 | Tempelhofer Feld, the Jewish Museum, or Charlottenburg Palace, and a slow final afternoon. |
 
 ## When to go
 

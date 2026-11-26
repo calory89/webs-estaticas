@@ -87,23 +87,16 @@ Buena parte de lo mejor de la ciudad no cuesta nada. El Bund, la Concesión Fran
 
 - **Vistas de Pudong gratis:** desde el Bund o desde el paseo ribereño del North Bund, más tranquilo.
 
-## Itinerario: Shanghái en 4 días
+## Qué ver en Shanghái en 4 días: ruta día a día
 
-### Día 1: Bund, People's Square y Pudong
+**Itinerario de 4 días en Shanghái**
 
-**Mañana:** Bund a primera hora y después metro a People's Square para el Museo de Shanghái. **Tarde:** baja por la calle Nanjing hasta el Bund y coge el ferry de Jinling Road a Pudong. **Noche:** sube a la Torre de Shanghái al atardecer y vuelve al Bund en metro (línea 2) para verlo iluminado.
-
-### Día 2: Ciudad antigua y Concesión Francesa
-
-**Mañana:** Jardín Yuyuan nada más abrir, con xiaolongbao para comer por la zona (fuera del bazar). **Tarde:** metro a Tianzifang y de ahí a pie o en bici por la Concesión Francesa: Fuxing Road, Anfu Road y Wukang Road. **Noche:** cena en Xintiandi o en Yongkang Road, donde hay bares y cervecerías.
-
-### Día 3: Templos, arte y West Bund
-
-**Mañana:** Templo del Buda de Jade y paseo por M50. **Tarde:** Templo de Jing'an y metro al West Bund para el Long Museum y el paseo junto al río. **Noche:** masaje de pies y cena de comida de Shanghái (hongshao rou, fideos de cebolleta) en un restaurante de barrio.
-
-### Día 4: Excursión
-
-Tren rápido a **Suzhou** (jardines clásicos) o metro a **Zhujiajiao** (pueblo de canales). Vuelve por la tarde y despídete con una copa en una azotea o con un paseo por el North Bund.
+| Día | Plan |
+|---|---|
+| Día 1 | Bund, People's Square y Pudong. Mañana: Bund a primera hora y después metro a People's Square para el Museo de Shanghái. Tarde: baja por la calle Nanjing hasta el Bund y coge el ferry de Jinling Road a Pudong. Noche: sube a la Torre de Shanghái al atardecer y vuelve al Bund en metro (línea 2) para verlo iluminado. |
+| Día 2 | Ciudad antigua y Concesión Francesa. Mañana: Jardín Yuyuan nada más abrir, con xiaolongbao para comer por la zona (fuera del bazar). Tarde: metro a Tianzifang y de ahí a pie o en bici por la Concesión Francesa: Fuxing Road, Anfu Road y Wukang Road. Noche: cena en Xintiandi o en Yongkang Road, donde hay bares y cervecerías. |
+| Día 3 | Templos, arte y West Bund. Mañana: Templo del Buda de Jade y paseo por M50. Tarde: Templo de Jing'an y metro al West Bund para el Long Museum y el paseo junto al río. Noche: masaje de pies y cena de comida de Shanghái (hongshao rou, fideos de cebolleta) en un restaurante de barrio. |
+| Día 4 | Excursión. Tren rápido a Suzhou (jardines clásicos) o metro a Zhujiajiao (pueblo de canales). Vuelve por la tarde y despídete con una copa en una azotea o con un paseo por el North Bund. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -165,12 +158,14 @@ Para moverte, el metro es excelente, con carteles en inglés y viajes de 3 a 10 
 
 ## Cuánto cuesta un viaje a Shanghái
 
-- **Presupuesto ajustado: 45-60 € al día.** Albergue o hotel sencillo (20-35 €), comida de barrio (10-15 €), metro (3 €) y alguna entrada barata.
+**Presupuesto orientativo por día**
 
-- **Presupuesto medio: 110-170 € al día.** Hotel bien situado (70-120 €), restaurantes normales (25-35 €), un mirador o espectáculo y algún taxi.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Presupuesto ajustado | 45-60 € al día | Albergue o hotel sencillo (20-35 €), comida de barrio (10-15 €), metro (3 €) y alguna entrada barata. |
+| Presupuesto medio | 110-170 € al día | Hotel bien situado (70-120 €), restaurantes normales (25-35 €), un mirador o espectáculo y algún taxi. |
 
 - **Vuelo desde España:** ida y vuelta con escala, entre 500 y 800 € según temporada; directos desde Madrid, algo más.
-
 Los españoles pueden entrar sin visado para estancias cortas, pero las condiciones han cambiado varias veces; comprueba la normativa vigente antes de comprar el vuelo.
 
 ## Excursiones de un día desde Shanghái

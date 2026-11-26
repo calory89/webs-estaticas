@@ -97,23 +97,16 @@ Mucho de lo mejor cuesta cero o casi cero. Templos, mercados, paseos marítimos 
 
 - El parque de Hong Kong, en Admiralty, con un aviario gratuito.
 
-## Itinerario: Hong Kong en 4 días
+## Qué ver en Hong Kong en 4 días: ruta día a día
 
-### Día 1: isla de Hong Kong
+**Itinerario de 4 días en Hong Kong**
 
-**Mañana:** desayuno de dim sum en Central, tranvía hacia Sheung Wan, Man Mo y Hollywood Road. **Tarde:** baja por las escaleras de Mid-Levels y Soho, luego date una vuelta por el parque de Hong Kong. Sube al Peak en bus antes del atardecer. **Noche:** recorre Lugard Road, baja y toma algo en Lan Kwai Fong o en un bar de Soho.
-
-### Día 2: Kowloon
-
-**Mañana:** Wong Tai Sin y Chi Lin Nunnery. **Tarde:** Sham Shui Po para comer barato y después los mercados de Mong Kok. **Noche:** cena en Temple Street, metro a Tsim Sha Tsui, paseo marítimo y vuelta a la isla en Star Ferry.
-
-### Día 3: Lantau
-
-**Mañana:** metro a Tung Chung a primera hora, teleférico o bus 23 al Buda y Po Lin (el monasterio sirve un almuerzo vegetariano barato). **Tarde:** bus a Tai O y paseo entre palafitos. **Noche:** de vuelta, atardecer en West Kowloon y cena en Jordan.
-
-### Día 4: naturaleza o isla
-
-**Mañana:** Dragon's Back y baño en Big Wave Bay (o, si prefieres, ferry a Lamma). **Tarde:** Causeway Bay para compras o M+ si llueve. **Noche:** los miércoles, carreras en Happy Valley; si no, una cena de despedida con oca asada en Wan Chai.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Isla de Hong Kong | Desayuno de dim sum en Central, tranvía hacia Sheung Wan, Man Mo y Hollywood Road. | Baja por las escaleras de Mid-Levels y Soho, luego date una vuelta por el parque de Hong Kong. Sube al Peak en bus antes del atardecer. | Recorre Lugard Road, baja y toma algo en Lan Kwai Fong o en un bar de Soho. |
+| Día 2 · Kowloon | Wong Tai Sin y Chi Lin Nunnery. | Sham Shui Po para comer barato y después los mercados de Mong Kok. | Cena en Temple Street, metro a Tsim Sha Tsui, paseo marítimo y vuelta a la isla en Star Ferry. |
+| Día 3 · Lantau | Metro a Tung Chung a primera hora, teleférico o bus 23 al Buda y Po Lin (el monasterio sirve un almuerzo vegetariano barato). | Bus a Tai O y paseo entre palafitos. | De vuelta, atardecer en West Kowloon y cena en Jordan. |
+| Día 4 · Naturaleza o isla | Dragon's Back y baño en Big Wave Bay (o, si prefieres, ferry a Lamma). | Causeway Bay para compras o M+ si llueve. | Los miércoles, carreras en Happy Valley; si no, una cena de despedida con oca asada en Wan Chai. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 

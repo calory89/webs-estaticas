@@ -101,29 +101,13 @@ Montevideo is expensive to eat and sleep in, but many of its best experiences co
 
 ## Montevideo itinerary: 3 days
 
-### Day 1: Ciudad Vieja and Centro
+**3-day itinerary for Montevideo**
 
-**Morning:** start at Plaza Independencia, look up at the Palacio Salvo, walk through the Puerta de la Ciudadela and down Peatonal Sarandí. Stop at Plaza Matriz and the Museo Torres García.
-
-**Afternoon:** lunch near or at the Mercado del Puerto, then the Museo Andes 1972 and the Museo del Carnaval. Coffee at Café Brasilero.
-
-**Evening:** a show or a tour at Teatro Solís, or wine and tapas at one of the old town bars. Take a taxi or app ride home rather than walking through empty streets late.
-
-### Day 2: the Rambla and the southern neighbourhoods
-
-**Morning:** bus to the Palacio Legislativo for a tour, then on to the Estadio Centenario and its museum if you like football.
-
-**Afternoon:** head to Parque Rodó and its art museum, then walk the Rambla to the Punta Carretas lighthouse.
-
-**Evening:** continue along the Rambla to Pocitos for sunset, then a parrilla dinner or a chivito in Pocitos or Punta Carretas.
-
-### Day 3: Sunday market or a day trip
-
-**Morning:** if it is Sunday, the Feria de Tristán Narvaja. Otherwise, catch an early bus to Colonia del Sacramento.
-
-**Afternoon:** in the city, take a relaxed lunch at the Mercado Agrícola (MAM) and drift back to the beach. In Colonia, walk the old quarter and climb the lighthouse.
-
-**Evening:** back in Montevideo, catch candombe in Barrio Sur if it is the weekend, or a carnival tablado in season.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Ciudad Vieja and Centro | Start at Plaza Independencia, look up at the Palacio Salvo, walk through the Puerta de la Ciudadela and down Peatonal Sarandí. Stop at Plaza Matriz and the Museo Torres García. | Lunch near or at the Mercado del Puerto, then the Museo Andes 1972 and the Museo del Carnaval. Coffee at Café Brasilero. | A show or a tour at Teatro Solís, or wine and tapas at one of the old town bars. Take a taxi or app ride home rather than walking through empty streets late. |
+| Day 2 · The Rambla and the southern neighbourhoods | Bus to the Palacio Legislativo for a tour, then on to the Estadio Centenario and its museum if you like football. | Head to Parque Rodó and its art museum, then walk the Rambla to the Punta Carretas lighthouse. | Continue along the Rambla to Pocitos for sunset, then a parrilla dinner or a chivito in Pocitos or Punta Carretas. |
+| Day 3 · Sunday market or a day trip | If it is Sunday, the Feria de Tristán Narvaja. Otherwise, catch an early bus to Colonia del Sacramento. | In the city, take a relaxed lunch at the Mercado Agrícola (MAM) and drift back to the beach. In Colonia, walk the old quarter and climb the lighthouse. | Back in Montevideo, catch candombe in Barrio Sur if it is the weekend, or a carnival tablado in season. |
 
 ## What is overrated (and what to do instead)
 
@@ -187,9 +171,12 @@ Within the city, buses are the main transport; there is no metro. Fares are arou
 
 ## How much a trip to Montevideo costs
 
-- **Shoestring: €50-70 per day.** Hostel dorm (€20-30), market food and menú del día lunches, buses, free sights and walking tours.
+**Rough daily budget**
 
-- **Mid-range: €110-170 per day.** Double room in Pocitos or a good old-town hotel (€70-120), a parrilla dinner with wine, a couple of museums, taxis at night.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €50-70 per day | Hostel dorm (€20-30), market food and menú del día lunches, buses, free sights and walking tours. |
+| Mid-range | €110-170 per day | Double room in Pocitos or a good old-town hotel (€70-120), a parrilla dinner with wine, a couple of museums, taxis at night. |
 
 - **Extras:** Colonia day trip by bus €25-35 return, winery visit with tasting €30-60, carnival tablado tickets from about €10.
 

@@ -41,17 +41,18 @@ Bájate también hasta el Embarcadero y camina hacia el Pier 39 para ver los leo
 
 Por la noche, un Irish coffee en el Buena Vista Café, junto a Fisherman's Wharf, es un clásico local. Y si te apetece algo distinto, un concierto en una sala pequeña de la Misión sale más barato que cualquier espectáculo del centro.
 
-## Cuántos días y ruta sugerida
+## Qué ver en San Francisco en 4 días: ruta día a día
 
 Con cuatro días ves lo esencial sin correr. Con tres es posible si renuncias a Sausalito o a un parque. Yo plantearía así:
 
-- **Día 1:** Union Square, Chinatown, North Beach y puesta de sol en Coit Tower o Telegraph Hill.
+**Itinerario de 4 días en San Francisco**
 
-- **Día 2:** Alcatraz a primera hora, Fisherman's Wharf, Pier 39 y paseo hasta el Ferry Building.
-
-- **Día 3:** Presidio, Golden Gate Bridge, Sausalito en bici y ferry de vuelta.
-
-- **Día 4:** Mission District, Dolores Park, Alamo Square, Haight-Ashbury y Golden Gate Park.
+| Día | Plan |
+|---|---|
+| Día 1 | Union Square, Chinatown, North Beach y puesta de sol en Coit Tower o Telegraph Hill. |
+| Día 2 | Alcatraz a primera hora, Fisherman's Wharf, Pier 39 y paseo hasta el Ferry Building. |
+| Día 3 | Presidio, Golden Gate Bridge, Sausalito en bici y ferry de vuelta. |
+| Día 4 | Mission District, Dolores Park, Alamo Square, Haight-Ashbury y Golden Gate Park. |
 
 ## Cuándo ir
 

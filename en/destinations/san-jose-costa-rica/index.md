@@ -95,61 +95,17 @@ Free things are thinner on the ground here than in Europe, but they exist.
 
 This route makes a loop from San José airport (SJO). A rental car makes it easy, and shuttles work fine too.
 
-### Day 1: Airport to La Fortuna
+**7-day itinerary for Costa Rica**
 
-**Morning:** pick up your car or shuttle and drive about 3 hours north. Stop for a casado at a roadside soda.
-
-**Afternoon:** check in and head to El Chollín for a free soak.
-
-**Evening:** book a night walk, then eat in town.
-
-### Day 2: Arenal
-
-**Morning:** start at La Fortuna Waterfall at opening time, then walk the lava trails in Arenal Volcano National Park.
-
-**Afternoon:** visit the Hanging Bridges with a guide.
-
-**Evening:** treat yourself to Tabacón or a cheaper hot spring with dinner.
-
-### Day 3: Around Lake Arenal to Monteverde
-
-**Morning:** drive the scenic road around Lake Arenal, about 3.5 hours, with a coffee stop in Nuevo Arenal.
-
-**Afternoon:** arrive in Santa Elena, settle in and visit a coffee or chocolate farm.
-
-**Evening:** eat in Santa Elena and pack warm clothes for the next day.
-
-### Day 4: Monteverde
-
-**Morning:** do a guided walk in Curi-Cancha or the Monteverde Reserve right at opening.
-
-**Afternoon:** go ziplining at Selvatura or Sky Adventures.
-
-**Evening:** take a night tour if you skipped it in La Fortuna.
-
-### Day 5: Monteverde to Manuel Antonio
-
-**Morning:** drive about 4 hours south, with a stop at the Tárcoles crocodile bridge.
-
-**Afternoon:** swim at Playa Espadilla.
-
-**Evening:** watch the sunset from a bar on the ridge road between Quepos and Manuel Antonio.
-
-### Day 6: Manuel Antonio
-
-**Morning:** enter the national park early with a guide, then swim at Playa Manuel Antonio.
-
-**Afternoon:** book a catamaran or kayak trip, or just rest.
-
-**Evening:** have fresh fish at the Quepos marina.
-
-### Day 7: Back to San José
-
-**Morning:** take a last early swim, then drive about 3 hours to SJO.
-
-**Afternoon:** if your flight is late, stop at the Gold Museum and Mercado Central in San José.
-
-**Evening:** fly out, or stay in Alajuela near the airport.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Airport to La Fortuna | Pick up your car or shuttle and drive about 3 hours north. Stop for a casado at a roadside soda. | Check in and head to El Chollín for a free soak. | Book a night walk, then eat in town. |
+| Day 2 · Arenal | Start at La Fortuna Waterfall at opening time, then walk the lava trails in Arenal Volcano National Park. | Visit the Hanging Bridges with a guide. | Treat yourself to Tabacón or a cheaper hot spring with dinner. |
+| Day 3 · Around Lake Arenal to Monteverde | Drive the scenic road around Lake Arenal, about 3.5 hours, with a coffee stop in Nuevo Arenal. | Arrive in Santa Elena, settle in and visit a coffee or chocolate farm. | Eat in Santa Elena and pack warm clothes for the next day. |
+| Day 4 · Monteverde | Do a guided walk in Curi-Cancha or the Monteverde Reserve right at opening. | Go ziplining at Selvatura or Sky Adventures. | Take a night tour if you skipped it in La Fortuna. |
+| Day 5 · Monteverde to Manuel Antonio | Drive about 4 hours south, with a stop at the Tárcoles crocodile bridge. | Swim at Playa Espadilla. | Watch the sunset from a bar on the ridge road between Quepos and Manuel Antonio. |
+| Day 6 · Manuel Antonio | Enter the national park early with a guide, then swim at Playa Manuel Antonio. | Book a catamaran or kayak trip, or just rest. | Have fresh fish at the Quepos marina. |
+| Day 7 · Back to San José | Take a last early swim, then drive about 3 hours to SJO. | If your flight is late, stop at the Gold Museum and Mercado Central in San José. | Fly out, or stay in Alajuela near the airport. |
 
 ## What is overrated (and what to do instead)
 
@@ -225,12 +181,14 @@ There is no tourist travel pass. Buy national park tickets online through SINAC.
 
 ## How much a trip to Costa Rica costs
 
-- **Shoestring: €55-75 a day.** Hostel dorm, soda meals, public buses, one paid park or activity.
+**Rough daily budget**
 
-- **Mid-range: €130-200 a day per person (sharing).** Double room in a nice lodge, rental car split two ways, restaurant dinners, one tour daily.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €55-75 a day | Hostel dorm, soda meals, public buses, one paid park or activity. |
+| Mid-range | €130-200 a day per person (sharing) | Double room in a nice lodge, rental car split two ways, restaurant dinners, one tour daily. |
 
 - **Typical one-offs:** zipline €55, rafting €110, park entries €15-28, hot springs €30-100.
-
 - **A 7-day mid-range trip** runs about €1,000-1,400 per person before flights.
 
 ## Day trips from Costa Rica

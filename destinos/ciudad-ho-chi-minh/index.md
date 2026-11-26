@@ -81,19 +81,15 @@ Lo mejor de la ciudad cuesta poco. Pasear por Nguyen Hue, entrar en la oficina d
 
 Los templos de Cholon y la pagoda del Emperador de Jade también son gratis (deja algo en la caja de donaciones si quieres). Los museos rondan 1-2,50 €, el metro y los buses menos de 1 € y un bánh mì callejero, 1 €. Se puede pasar un día entero por menos de 10 € sin pasar hambre.
 
-## Itinerario: Ciudad Ho Chi Minh en 3 días
+## Qué ver en Ciudad Ho Chi Minh en 3 días: ruta día a día
 
-### Día 1: centro colonial y guerra
+**Itinerario de 3 días en Ciudad Ho Chi Minh**
 
-**Mañana:** Museo de los Restos de la Guerra a primera hora y, a diez minutos andando, el Palacio de la Independencia. **Tarde:** comida de com tam, después catedral, correos y calle de los libros; café en el edificio del 42 de Nguyen Hue. **Noche:** paseo por Nguyen Hue hasta el río y cena de marisco en Vinh Khanh, a 15 minutos andando cruzando el puente.
-
-### Día 2: excursión a Cu Chi y barrio chino
-
-**Mañana:** túneles de Cu Chi; sal temprano para volver antes de comer. **Tarde:** Grab hasta Cholon para ver Binh Tay y el templo de Thien Hau. **Noche:** tour de comida en moto o cena por tu cuenta en el Distrito 3, y copa en altura en el centro.
-
-### Día 3: templos, mercados y río
-
-**Mañana:** pagoda del Emperador de Jade, iglesia rosa y mercado de Tan Dinh, todo bastante cerca. **Tarde:** Museo de Bellas Artes y vuelta rápida por Ben Thanh; luego metro a Thao Dien. **Noche:** vuelta en Waterbus al atardecer y última cena en el centro. Si prefieres el Mekong a Cu Chi, cambia el día 2 y deja Cholon para esta tarde.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Centro colonial y guerra | Museo de los Restos de la Guerra a primera hora y, a diez minutos andando, el Palacio de la Independencia. | Comida de com tam, después catedral, correos y calle de los libros; café en el edificio del 42 de Nguyen Hue. | Paseo por Nguyen Hue hasta el río y cena de marisco en Vinh Khanh, a 15 minutos andando cruzando el puente. |
+| Día 2 · Excursión a Cu Chi y barrio chino | Túneles de Cu Chi; sal temprano para volver antes de comer. | Grab hasta Cholon para ver Binh Tay y el templo de Thien Hau. | Tour de comida en moto o cena por tu cuenta en el Distrito 3, y copa en altura en el centro. |
+| Día 3 · Templos, mercados y río | Pagoda del Emperador de Jade, iglesia rosa y mercado de Tan Dinh, todo bastante cerca. | Museo de Bellas Artes y vuelta rápida por Ben Thanh; luego metro a Thao Dien. | Vuelta en Waterbus al atardecer y última cena en el centro. Si prefieres el Mekong a Cu Chi, cambia el día 2 y deja Cholon para esta tarde. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -157,9 +153,12 @@ Para moverte, Grab es la herramienta básica: un trayecto en moto (GrabBike) por
 
 Con el euro a unos 28.000-30.000 VND, Saigón es barata para casi todo menos para los hoteles de lujo y los bares de diseño.
 
-- **Presupuesto ajustado, 30-40 € al día**: hostal o hotel sencillo (10-20 €), comida en la calle (8 €), transporte en Grab moto y bus (3 €), un museo y un café.
+**Presupuesto orientativo por día**
 
-- **Presupuesto medio, 70-100 € al día**: hotel de 3-4 estrellas en el Distrito 1 (40-60 €), comidas mezclando calle y restaurante (20 €), Grab en coche, una copa en altura o un masaje.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Presupuesto ajustado | 30-40 € al día | Hostal o hotel sencillo (10-20 €), comida en la calle (8 €), transporte en Grab moto y bus (3 €), un museo y un café. |
+| Presupuesto medio | 70-100 € al día | Hotel de 3-4 estrellas en el Distrito 1 (40-60 €), comidas mezclando calle y restaurante (20 €), Grab en coche, una copa en altura o un masaje. |
 
 - **Excursiones**: Cu Chi o el Mekong en tour organizado, entre 20 y 50 € según el grupo y si es privado.
 

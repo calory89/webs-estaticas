@@ -97,31 +97,15 @@ Buena parte de lo mejor de Split no cuesta nada. El palacio se recorre entero si
 
 - **Burek de panadería:** por unos **3-4 €** desayunas o comes contundente.
 
-## Itinerario: Split en 3 días
+## Qué ver en Split en 3 días: ruta día a día
 
-### Día 1: el palacio y la ciudad vieja
+**Itinerario de 3 días en Split**
 
-**Mañana:** entra al palacio temprano por la Puerta de Bronce, desde la Riva. Recorre el Peristilo y el vestíbulo, sube al campanario de la catedral y visita el templo de Júpiter antes de que lleguen los grupos. Sal por la Puerta de Oro y frota el pie de Grgur Ninski. Vuelve por la Puerta de Plata al mercado verde.
-
-**Tarde:** come algo y métete en los sótanos de pago durante las horas de más calor. Luego sal por la Puerta de Hierro a la Pjaca, la Plaza de las Frutas y la pescadería (si sigue abierta). Paseo por la Riva.
-
-**Noche:** cena en Varoš o en los callejones del palacio, y después copa en el Peristilo, con las columnas iluminadas.
-
-### Día 2: Marjan, Meštrović y playa
-
-**Mañana:** sube desde Varoš al mirador de Vidilica y sigue por los senderos de Marjan. Baja hacia la Galería Meštrović y el Kaštilac.
-
-**Tarde:** baño y siesta en la playa de Kašjuni, que está justo debajo. Lleva comida o compra algo en el chiringuito.
-
-**Noche:** vuelve andando al centro por la costa (unos 40 minutos) o en el bus 12. Cena y, si te apetece fiesta, termina en Bačvice.
-
-### Día 3: excursión
-
-**Mañana:** elige una excursión. Trogir es la más fácil (media jornada en bus). Si prefieres agua dulce, Krka ocupa casi todo el día. Si quieres islas, ferry a Hvar o Brač temprano.
-
-**Tarde:** vuelta a Split hacia media tarde y baño rápido en Bačvice o Firule.
-
-**Noche:** última cena con pescado a la parrilla y paseo por la Riva al atardecer, cuando la gente de Split sale a dar la vuelta.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · El palacio y la ciudad vieja | Entra al palacio temprano por la Puerta de Bronce, desde la Riva. Recorre el Peristilo y el vestíbulo, sube al campanario de la catedral y visita el templo de Júpiter antes de que lleguen los grupos. Sal por la Puerta de Oro y frota el pie de Grgur Ninski. Vuelve por la Puerta de Plata al mercado verde. | Come algo y métete en los sótanos de pago durante las horas de más calor. Luego sal por la Puerta de Hierro a la Pjaca, la Plaza de las Frutas y la pescadería (si sigue abierta). Paseo por la Riva. | Cena en Varoš o en los callejones del palacio, y después copa en el Peristilo, con las columnas iluminadas. |
+| Día 2 · Marjan, Meštrović y playa | Sube desde Varoš al mirador de Vidilica y sigue por los senderos de Marjan. Baja hacia la Galería Meštrović y el Kaštilac. | Baño y siesta en la playa de Kašjuni, que está justo debajo. Lleva comida o compra algo en el chiringuito. | Vuelve andando al centro por la costa (unos 40 minutos) o en el bus 12. Cena y, si te apetece fiesta, termina en Bačvice. |
+| Día 3 · Excursión | Elige una excursión. Trogir es la más fácil (media jornada en bus). Si prefieres agua dulce, Krka ocupa casi todo el día. Si quieres islas, ferry a Hvar o Brač temprano. | Vuelta a Split hacia media tarde y baño rápido en Bačvice o Firule. | Última cena con pescado a la parrilla y paseo por la Riva al atardecer, cuando la gente de Split sale a dar la vuelta. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 

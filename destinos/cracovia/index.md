@@ -59,15 +59,17 @@ Está a las afueras y es Patrimonio de la Humanidad. Lo mejor es la capilla de S
 
 - **Salir de bares en Kazimierz.** Una cerveza local cuesta pocos euros y hay locales con música en directo.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Cracovia en 3 días: ruta día a día
 
 Tres días es el punto justo. Con dos ves lo básico pero pierdes Auschwitz o Wieliczka. Con cuatro, sumas Nowa Huta y un día tranquilo.
 
-- **Día 1:** Rynek, Santa María, Collegium Maius y Wawel. Cena en Kazimierz.
+**Itinerario de 3 días en Cracovia**
 
-- **Día 2:** Fábrica de Schindler, plaza de los Héroes del Gueto y un buen rato en Kazimierz.
-
-- **Día 3:** Auschwitz por la mañana. Por la tarde, descanso y paseo por el Planty, o Wieliczka si cambias de plan.
+| Día | Plan |
+|---|---|
+| Día 1 | Rynek, Santa María, Collegium Maius y Wawel. Cena en Kazimierz. |
+| Día 2 | Fábrica de Schindler, plaza de los Héroes del Gueto y un buen rato en Kazimierz. |
+| Día 3 | Auschwitz por la mañana. Por la tarde, descanso y paseo por el Planty, o Wieliczka si cambias de plan. |
 
 ## Cuándo ir
 

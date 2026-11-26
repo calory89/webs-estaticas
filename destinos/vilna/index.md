@@ -37,15 +37,17 @@ Haz un free tour el primer día para orientarte, y después sigue por tu cuenta.
 
 La excursión clásica es **Trakai**, a unos 30 km. Su castillo de ladrillo rojo está en una isla en mitad de un lago. En tren o autobús tardas aproximadamente media hora. Ve entre semana y a primera hora, porque los fines de semana de verano se llena. Prueba allí los kibinai, empanadas de la comunidad caraíta.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Vilna en 3 días: ruta día a día
 
 Con **dos días** ves lo esencial. Con **tres** vas bien y puedes hacer Trakai. Cuatro solo si quieres museos con calma o una segunda excursión.
 
-- **Día 1:** Puerta del Alba, calle Pilies, universidad, Santa Ana y plaza de la Catedral. Torre de Gediminas al atardecer.
+**Itinerario de 3 días en Vilna**
 
-- **Día 2:** Trakai por la mañana. Por la tarde, Užupis y el paseo junto al río.
-
-- **Día 3:** Museo del Genocidio, iglesia de San Pedro y San Pablo, y la colina de las Tres Cruces. Termina en el mercado o en un café.
+| Día | Plan |
+|---|---|
+| Día 1 | Puerta del Alba, calle Pilies, universidad, Santa Ana y plaza de la Catedral. Torre de Gediminas al atardecer. |
+| Día 2 | Trakai por la mañana. Por la tarde, Užupis y el paseo junto al río. |
+| Día 3 | Museo del Genocidio, iglesia de San Pedro y San Pablo, y la colina de las Tres Cruces. Termina en el mercado o en un café. |
 
 ## Cuándo ir
 

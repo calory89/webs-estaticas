@@ -81,31 +81,15 @@ Catania es de las ciudades más baratas del sur de Europa, y gran parte de lo bu
 
 Comer bien también es barato: un arancino cuesta entre 2,50 y 3,50 €, y con dos de ellos ya has comido. Un paseo por el Lungomare hasta la escollera de Ognina, al atardecer, es otro plan gratis y muy local. Y los cráteres Silvestri del Etna no se pagan: solo el autobús para subir.
 
-## Itinerario: Catania en 3 días
+## Qué ver en Catania en 3 días: ruta día a día
 
-### Día 1: el centro histórico
+**Itinerario de 3 días en Catania**
 
-**Mañana:** empieza en la Pescheria antes de las 10, luego la Piazza del Duomo, la catedral y la subida a la Badia di Sant'Agata. Termina en el Teatro Romano, a pocos minutos.
-
-**Tarde:** visita guiada al Monastero dei Benedettini, baja por la Via dei Crociferi y sube por la Via Etnea hasta Villa Bellini, con parada en el anfiteatro de Stesicoro.
-
-**Noche:** cena de brasa en Via Plebiscito y una copa en los alrededores del Teatro Massimo.
-
-### Día 2: el Etna
-
-**Mañana:** autobús AST desde la estación hacia el Rifugio Sapienza, que sale temprano (comprueba la hora el día antes). Llegas en unas dos horas.
-
-**Tarde:** cráteres Silvestri a pie, y si el presupuesto da, teleférico hacia la zona alta. El autobús de vuelta sale a media tarde: no lo pierdas, porque no hay otro.
-
-**Noche:** algo ligero, pasta alla Norma y granita en el centro. Vas a estar cansado.
-
-### Día 3: Siracusa u Ortigia, o mar
-
-**Mañana:** tren o autobús a Siracusa y paseo por la isla de Ortigia: Duomo, fuente Aretusa y mercado.
-
-**Tarde:** baño en las rocas de Ortigia o parque arqueológico de la Neápolis, y vuelta a Catania.
-
-**Noche:** último paseo por la Piazza del Duomo iluminada y arancino de despedida. Si prefieres no viajar otro día, cambia Siracusa por Castello Ursino por la mañana y Aci Castello y Aci Trezza por la tarde.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · El centro histórico | Empieza en la Pescheria antes de las 10, luego la Piazza del Duomo, la catedral y la subida a la Badia di Sant'Agata. Termina en el Teatro Romano, a pocos minutos. | Visita guiada al Monastero dei Benedettini, baja por la Via dei Crociferi y sube por la Via Etnea hasta Villa Bellini, con parada en el anfiteatro de Stesicoro. | Cena de brasa en Via Plebiscito y una copa en los alrededores del Teatro Massimo. |
+| Día 2 · El Etna | Autobús AST desde la estación hacia el Rifugio Sapienza, que sale temprano (comprueba la hora el día antes). Llegas en unas dos horas. | Cráteres Silvestri a pie, y si el presupuesto da, teleférico hacia la zona alta. El autobús de vuelta sale a media tarde: no lo pierdas, porque no hay otro. | Algo ligero, pasta alla Norma y granita en el centro. Vas a estar cansado. |
+| Día 3 · Siracusa u Ortigia, o mar | Tren o autobús a Siracusa y paseo por la isla de Ortigia: Duomo, fuente Aretusa y mercado. | Baño en las rocas de Ortigia o parque arqueológico de la Neápolis, y vuelta a Catania. | Último paseo por la Piazza del Duomo iluminada y arancino de despedida. Si prefieres no viajar otro día, cambia Siracusa por Castello Ursino por la mañana y Aci Castello y Aci Trezza por la tarde. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -169,9 +153,12 @@ Por la ciudad todo lo importante se hace andando. El metro tiene una sola línea
 
 Gasto por persona y día, sin contar vuelos:
 
-- **Ajustado: unos 55 a 70 €.** Cama en hostal o habitación compartiendo B&B, comida callejera, una visita de pago y transporte en bus.
+**Presupuesto orientativo por día**
 
-- **Medio: unos 110 a 150 €.** Doble en B&B céntrico a medias, una cena en trattoria, Monastero dei Benedettini o Badia, y una excursión en tren o bus.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | unos 55 a 70 € | Cama en hostal o habitación compartiendo B&B, comida callejera, una visita de pago y transporte en bus. |
+| Medio | unos 110 a 150 € | Doble en B&B céntrico a medias, una cena en trattoria, Monastero dei Benedettini o Badia, y una excursión en tren o bus. |
 
 - **Extra para el Etna:** entre 15 € (solo autobús) y 90 € (teleférico y todoterreno hasta la zona alta).
 

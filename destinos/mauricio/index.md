@@ -37,19 +37,19 @@ Otra excursión clásica es la Île aux Bénitiers, con salida desde la zona de 
 
 También conviene dedicar una tarde al interior: tés, campos de caña y templos. La isla tiene tradición azucarera y se ve desde la carretera.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Isla Mauricio en 7 días: ruta día a día
 
 Con cinco días ves lo esencial; con siete lo disfrutas sin correr; con diez puedes relajarte en la playa. Esta ruta de siete días evita ir y venir de un extremo a otro:
 
-- **Días 1 y 2, norte:** Grand Baie como base. Playas de Mont Choisy y Pereybere, comida callejera y excursión en barco a las islas del norte.
+**Itinerario de 7 días en Isla Mauricio**
 
-- **Día 3, Port Louis y Pamplemousses:** mercado por la mañana, jardín botánico y vuelta al norte.
-
-- **Días 4 y 5, oeste y suroeste:** Flic en Flac o Tamarin; Chamarel y las gargantas del Río Negro un día; Le Morne el siguiente.
-
-- **Día 6, interior:** Grand Bassin, Curepipe y Trou aux Cerfs.
-
-- **Día 7, este y salida:** Île aux Cerfs a primera hora y traslado al aeropuerto, que está en el sureste.
+| Día | Plan |
+|---|---|
+| Días 1-2 | Norte. Grand Baie como base. Playas de Mont Choisy y Pereybere, comida callejera y excursión en barco a las islas del norte. |
+| Día 3 | Port Louis y Pamplemousses. Mercado por la mañana, jardín botánico y vuelta al norte. |
+| Días 4-5 | Oeste y suroeste. Flic en Flac o Tamarin; Chamarel y las gargantas del Río Negro un día; Le Morne el siguiente. |
+| Día 6 | Interior. Grand Bassin, Curepipe y Trou aux Cerfs. |
+| Día 7 | Este y salida. Île aux Cerfs a primera hora y traslado al aeropuerto, que está en el sureste. |
 
 ## Cuándo ir
 

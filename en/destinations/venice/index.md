@@ -63,15 +63,17 @@ Burano is the one with the painted houses and the lace; go early for photos. Mur
 
 - **Lido day:** bike or walk the island, with a beach and a very different, calm atmosphere.
 
-## How many days and a suggested route
+## Venice itinerary: 3 days, day by day
 
 Two full days is the minimum; three is comfortable, and gives you one for the islands. Day trippers should know that Venice charges an access fee (roughly 5 to 10 euros) on selected peak days, bookable online. Guests staying overnight in the city are exempt, but check the current rules before you travel.
 
-- **Day 1:** early St Mark's Square, Doge's Palace, lunch in Castello, afternoon in the Arsenale area, sunset on the Zattere.
+**3-day itinerary for Venice**
 
-- **Day 2:** Rialto market, Frari and San Rocco, Dorsoduro museums, cicchetti in the evening, Cannaregio for dinner.
-
-- **Day 3:** boat to Burano and Torcello in the morning, Murano on the way back, San Giorgio Maggiore at the end of the day.
+| Day | Plan |
+|---|---|
+| Day 1 | Early St Mark's Square, Doge's Palace, lunch in Castello, afternoon in the Arsenale area, sunset on the Zattere. |
+| Day 2 | Rialto market, Frari and San Rocco, Dorsoduro museums, cicchetti in the evening, Cannaregio for dinner. |
+| Day 3 | Boat to Burano and Torcello in the morning, Murano on the way back, San Giorgio Maggiore at the end of the day. |
 
 ## When to go
 

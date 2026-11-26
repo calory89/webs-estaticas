@@ -99,33 +99,20 @@ Las playas son públicas en toda España, así que lo caro en Mallorca es el apa
 
 - Bus TIB entre pueblos: la mayoría de trayectos cuestan unos pocos euros, mucho menos que una excursión organizada.
 
-## Itinerario: Mallorca en 6 días
+## Qué ver en Mallorca en 6 días: ruta día a día
 
 Este plan asume coche desde el día 3. Los dos primeros días en Palma puedes hacerlos a pie y en autobús.
 
-### Día 1: Palma histórica
+**Itinerario de 6 días en Mallorca**
 
-**Mañana:** catedral a primera hora, luego Palacio de la Almudaina por fuera y casco antiguo hacia los Baños Árabes. **Tarde:** paseo por el Born y la calle Sant Miquel, subida al mercado del Olivar. **Noche:** tapas en la zona de la Llotja o en Santa Catalina.
-
-### Día 2: Bellver, arte y bahía
-
-**Mañana:** subida al Castell de Bellver desde El Terreno. **Tarde:** Fundació Miró en Cala Major (bus urbano de EMT) y Es Baluard de vuelta en el centro. **Noche:** atardecer desde la muralla de Es Baluard y cena en Santa Catalina.
-
-### Día 3: Sóller y Fornalutx
-
-**Mañana:** tren de Palma a Sóller y tranvía al puerto. **Tarde:** Fornalutx y paseo entre naranjos. Si quieres caminar, baja a pie de Fornalutx a Sóller (una hora larga). **Noche:** vuelve en bus a Palma o duerme en Sóller y recoge el coche al día siguiente.
-
-### Día 4: Costa de la Tramuntana
-
-**Mañana:** Valldemossa a primera hora. **Tarde:** Deià, mirador de Sa Foradada y baño en Cala Deià. **Noche:** carretera hacia Lluc o el norte; si es tarde, duerme en Lluc.
-
-### Día 5: Norte de la isla
-
-**Mañana:** Sa Calobra muy temprano o Cap de Formentor (no los dos el mismo día con calma). **Tarde:** Pollença y su Calvari, y paseo por las murallas de Alcúdia. **Noche:** cena en Pollença, en la plaza Major.
-
-### Día 6: Calas del sur
-
-**Mañana:** Parque Natural de Mondragó antes de las 10. **Tarde:** Cala Llombards o Es Trenc, y helado en Santanyí. **Noche:** vuelta a Palma; el aeropuerto queda a unos 45 minutos.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Palma histórica | Catedral a primera hora, luego Palacio de la Almudaina por fuera y casco antiguo hacia los Baños Árabes. | Paseo por el Born y la calle Sant Miquel, subida al mercado del Olivar. | Tapas en la zona de la Llotja o en Santa Catalina. |
+| Día 2 · Bellver, arte y bahía | Subida al Castell de Bellver desde El Terreno. | Fundació Miró en Cala Major (bus urbano de EMT) y Es Baluard de vuelta en el centro. | Atardecer desde la muralla de Es Baluard y cena en Santa Catalina. |
+| Día 3 · Sóller y Fornalutx | Tren de Palma a Sóller y tranvía al puerto. | Fornalutx y paseo entre naranjos. Si quieres caminar, baja a pie de Fornalutx a Sóller (una hora larga). | Vuelve en bus a Palma o duerme en Sóller y recoge el coche al día siguiente. |
+| Día 4 · Costa de la Tramuntana | Valldemossa a primera hora. | Deià, mirador de Sa Foradada y baño en Cala Deià. | Carretera hacia Lluc o el norte; si es tarde, duerme en Lluc. |
+| Día 5 · Norte de la isla | Sa Calobra muy temprano o Cap de Formentor (no los dos el mismo día con calma). | Pollença y su Calvari, y paseo por las murallas de Alcúdia. | Cena en Pollença, en la plaza Major. |
+| Día 6 · Calas del sur | Parque Natural de Mondragó antes de las 10. | Cala Llombards o Es Trenc, y helado en Santanyí. | Vuelta a Palma; el aeropuerto queda a unos 45 minutos. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 

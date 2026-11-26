@@ -55,15 +55,17 @@ Bologna once had a network of canals. Today you can glimpse one through a small 
 
 - **Visit the Giardini Margherita** on a warm evening, when half of Bologna seems to be there with a bottle and a picnic.
 
-## How many days and a suggested route
+## Bologna itinerary: 3 days, day by day
 
 Two days covers the main sights, but three is the right number if you want to eat properly and add a day trip.
 
-**Day 1:** Piazza Maggiore, San Petronio, Neptune, the Quadrilatero for lunch, then the Archiginnasio and the Two Towers in the late afternoon.
+**3-day itinerary for Bologna**
 
-**Day 2:** Morning at Piazza Santo Stefano, wander up Via Zamboni, lunch near the university, then walk the Portico di San Luca in the afternoon and head back for an evening aperitivo.
-
-**Day 3:** A day trip. Modena and Parma are about half an hour to an hour away by train, and Ravenna and Ferrara are also easy. Food lovers should pick Modena or Parma, and mosaic fans should pick Ravenna.
+| Day | Plan |
+|---|---|
+| Day 1 | Piazza Maggiore, San Petronio, Neptune, the Quadrilatero for lunch, then the Archiginnasio and the Two Towers in the late afternoon. |
+| Day 2 | Morning at Piazza Santo Stefano, wander up Via Zamboni, lunch near the university, then walk the Portico di San Luca in the afternoon and head back for an evening aperitivo. |
+| Day 3 | A day trip. Modena and Parma are about half an hour to an hour away by train, and Ravenna and Ferrara are also easy. Food lovers should pick Modena or Parma, and mosaic fans should pick Ravenna. |
 
 ## When to go
 

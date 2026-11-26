@@ -85,31 +85,15 @@ Lo mejor de Seattle está al aire libre y no cobra entrada. Kerry Park, Gas Work
 
 Por menos de 10 $ tienes el ferri a Bainbridge (la travesía es el plan, la isla es extra) y el monorraíl entre Westlake Center y Seattle Center, que cuesta unos 4 $ y es una reliquia de 1962 que hace el trayecto en dos minutos. La biblioteca central, un edificio de cristal y acero de Rem Koolhaas en la Cuarta Avenida, se visita gratis y tiene una planta en espiral muy curiosa. El primer jueves de mes hay varios museos gratis, incluido el Seattle Art Museum.
 
-## Itinerario: Seattle en 3 días
+## Qué ver en Seattle en 3 días: ruta día a día
 
-### Día 1: centro, mercado y bahía
+**Itinerario de 3 días en Seattle**
 
-**Mañana:** Pike Place Market a primera hora, desayuno ahí mismo. Baja por las escaleras hacia el paseo marítimo (Waterfront), recién reformado.
-
-**Tarde:** Seattle Art Museum o la biblioteca central, y después el ferri de ida y vuelta a Bainbridge. Si el día está claro, sube al Sky View Observatory a media tarde.
-
-**Noche:** cena en Belltown, que está a un paso del mercado, o en Capitol Hill si te apetece salir.
-
-### Día 2: Seattle Center y Queen Anne
-
-**Mañana:** monorraíl desde Westlake a Seattle Center. MoPOP a primera hora y Chihuly después.
-
-**Tarde:** Space Needle si la quieres, y luego paseo por el Olympic Sculpture Park. A media tarde, bus o taxi corto a Queen Anne.
-
-**Noche:** atardecer en Kerry Park y cena en Queen Anne Avenue, la calle principal del barrio.
-
-### Día 3: barrios del norte
-
-**Mañana:** Discovery Park (bus 33 desde el centro) y después las esclusas de Ballard, que quedan cerca.
-
-**Tarde:** comida en Ballard, luego Fremont y su trol, y caminata por el Burke-Gilman Trail hasta Gas Works Park.
-
-**Noche:** cervecería en Ballard o Fremont, o la Underground Tour de Pioneer Square si prefieres algo con historia (hay pases por la tarde).
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Centro, mercado y bahía | Pike Place Market a primera hora, desayuno ahí mismo. Baja por las escaleras hacia el paseo marítimo (Waterfront), recién reformado. | Seattle Art Museum o la biblioteca central, y después el ferri de ida y vuelta a Bainbridge. Si el día está claro, sube al Sky View Observatory a media tarde. | Cena en Belltown, que está a un paso del mercado, o en Capitol Hill si te apetece salir. |
+| Día 2 · Seattle Center y Queen Anne | Monorraíl desde Westlake a Seattle Center. MoPOP a primera hora y Chihuly después. | Space Needle si la quieres, y luego paseo por el Olympic Sculpture Park. A media tarde, bus o taxi corto a Queen Anne. | Atardecer en Kerry Park y cena en Queen Anne Avenue, la calle principal del barrio. |
+| Día 3 · Barrios del norte | Discovery Park (bus 33 desde el centro) y después las esclusas de Ballard, que quedan cerca. | Comida en Ballard, luego Fremont y su trol, y caminata por el Burke-Gilman Trail hasta Gas Works Park. | Cervecería en Ballard o Fremont, o la Underground Tour de Pioneer Square si prefieres algo con historia (hay pases por la tarde). |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 

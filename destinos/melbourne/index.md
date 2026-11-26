@@ -95,23 +95,16 @@ Melbourne es cara, pero tiene mucho gratis y vale la pena exprimirlo. Lo más ú
 
 - Playas de St Kilda y Brighton.
 
-## Itinerario: Melbourne en 4 días
+## Qué ver en Melbourne en 4 días: ruta día a día
 
-### Día 1: el centro y los callejones
+**Itinerario de 4 días en Melbourne**
 
-**Mañana:** café en Degraves Street, Block Arcade y Royal Arcade, y luego State Library. **Tarde:** Fed Square, ACMI, Hosier Lane y AC/DC Lane, todo andando o en tranvía gratis. **Noche:** cena en Chinatown (dumplings en Shanghai Street o HuTong) y una copa en algún bar escondido de los callejones.
-
-### Día 2: arte, jardines y río
-
-**Mañana:** NGV International a primera hora. **Tarde:** cruza a los Royal Botanic Gardens y sube al balcón del Shrine. Después bajas paseando junto al Yarra hasta el MCG, para la visita o un partido si hay. **Noche:** Southbank y vistas desde el Princes Bridge, o cena en Richmond (pho en Victoria Street).
-
-### Día 3: barrios
-
-**Mañana:** Queen Victoria Market para desayunar donuts. Después, Carlton Gardens y el Melbourne Museum. **Tarde:** café en Lygon Street y luego tranvía 11 a Fitzroy: Brunswick Street, Gertrude Street y Smith Street. **Noche:** cena y bares en Fitzroy, quizá un concierto.
-
-### Día 4: excursión o playa
-
-Elige entre Phillip Island con la Penguin Parade (tour de día completo, vuelves de noche) o el valle de Yarra con bodegas. Si prefieres no salir de la ciudad, pasa el día entre Brighton y St Kilda, con pingüinos al atardecer.
+| Día | Plan |
+|---|---|
+| Día 1 | El centro y los callejones. Mañana: café en Degraves Street, Block Arcade y Royal Arcade, y luego State Library. Tarde: Fed Square, ACMI, Hosier Lane y AC/DC Lane, todo andando o en tranvía gratis. Noche: cena en Chinatown (dumplings en Shanghai Street o HuTong) y una copa en algún bar escondido de los callejones. |
+| Día 2 | Arte, jardines y río. Mañana: NGV International a primera hora. Tarde: cruza a los Royal Botanic Gardens y sube al balcón del Shrine. Después bajas paseando junto al Yarra hasta el MCG, para la visita o un partido si hay. Noche: Southbank y vistas desde el Princes Bridge, o cena en Richmond (pho en Victoria Street). |
+| Día 3 | Barrios. Mañana: Queen Victoria Market para desayunar donuts. Después, Carlton Gardens y el Melbourne Museum. Tarde: café en Lygon Street y luego tranvía 11 a Fitzroy: Brunswick Street, Gertrude Street y Smith Street. Noche: cena y bares en Fitzroy, quizá un concierto. |
+| Día 4 | Excursión o playa. Elige entre Phillip Island con la Penguin Parade (tour de día completo, vuelves de noche) o el valle de Yarra con bodegas. Si prefieres no salir de la ciudad, pasa el día entre Brighton y St Kilda, con pingüinos al atardecer. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -171,12 +164,14 @@ Para moverte, la tarjeta **myki** sirve en tranvías, trenes y buses. Cuesta uno
 
 ## Cuánto cuesta un viaje a Melbourne
 
-- **Presupuesto ajustado: 70-90 € al día.** Incluye dormitorio en hostal (30 €), café y comida barata (25-30 €), transporte (7 €) y museos gratis.
+**Presupuesto orientativo por día**
 
-- **Presupuesto medio: 160-220 € al día por persona** en habitación doble. Incluye hotel en el centro (60-90 € por cabeza), brunch y cena en restaurante (60-70 €), alguna copa, transporte y una entrada de pago.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Presupuesto ajustado | 70-90 € al día | Incluye dormitorio en hostal (30 €), café y comida barata (25-30 €), transporte (7 €) y museos gratis. |
+| Presupuesto medio | 160-220 € al día por persona | En habitación doble. Incluye hotel en el centro (60-90 € por cabeza), brunch y cena en restaurante (60-70 €), alguna copa, transporte y una entrada de pago. |
 
 - **Vuelo desde España:** ida y vuelta con escala, entre 900 y 1.500 € según la temporada.
-
 - **Excursión organizada a Phillip Island:** unos 90-120 €.
 
 ## Excursiones de un día desde Melbourne

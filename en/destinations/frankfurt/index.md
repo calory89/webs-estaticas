@@ -95,21 +95,12 @@ The best things here cost little. The old town, the cathedral interior, the Paul
 
 ## Frankfurt itinerary: 2 days
 
-### Day 1: old town, museums and apple wine
+**2-day itinerary for Frankfurt**
 
-**Morning:** start at Römerberg early, walk through the Neue Altstadt to the Kaiserdom and climb the tower. Drop into the Paulskirche on your way to the Kleinmarkthalle for a late breakfast or early sausage.
-
-**Afternoon:** cross the Eiserner Steg to Sachsenhausen and spend 2-3 hours at the Städel. If you still have energy, add the Liebieghaus next door, which is smaller and often quiet.
-
-**Evening:** walk south to the taverns on Schweizer Straße for green sauce and apple wine. Walk back along the river after dark for the lit-up skyline.
-
-### Day 2: skyline, Goethe and the neighbourhoods
-
-**Morning:** the Goethe House near Hauptwache, then a coffee and a walk down Fressgass (the food street between Börsenstraße and the Alte Oper) to Opernplatz.
-
-**Afternoon:** take the tram or U-Bahn to Bornheim and walk Berger Straße, or head west to the Palmengarten if the weather is bad. Come back for the Main Tower in the late afternoon.
-
-**Evening:** sunset from the Main Tower, then dinner in the Bahnhofsviertel, where the best cheap international food in the city is, or a quieter meal in Nordend if that part of town makes you uneasy.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Old town, museums and apple wine | Start at Römerberg early, walk through the Neue Altstadt to the Kaiserdom and climb the tower. Drop into the Paulskirche on your way to the Kleinmarkthalle for a late breakfast or early sausage. | Cross the Eiserner Steg to Sachsenhausen and spend 2-3 hours at the Städel. If you still have energy, add the Liebieghaus next door, which is smaller and often quiet. | Walk south to the taverns on Schweizer Straße for green sauce and apple wine. Walk back along the river after dark for the lit-up skyline. |
+| Day 2 · Skyline, Goethe and the neighbourhoods | The Goethe House near Hauptwache, then a coffee and a walk down Fressgass (the food street between Börsenstraße and the Alte Oper) to Opernplatz. | Take the tram or U-Bahn to Bornheim and walk Berger Straße, or head west to the Palmengarten if the weather is bad. Come back for the Main Tower in the late afternoon. | Sunset from the Main Tower, then dinner in the Bahnhofsviertel, where the best cheap international food in the city is, or a quieter meal in Nordend if that part of town makes you uneasy. |
 
 ## What is overrated (and what to do instead)
 
@@ -177,9 +168,12 @@ The centre itself is very walkable: Römerberg to the Städel is 15 minutes on f
 
 ## How much a trip to Frankfurt costs
 
-- **Shoestring (€70-100 a day):** hostel bed €30-50, market and takeaway meals €20, day ticket €7, one museum or free sights.
+**Rough daily budget**
 
-- **Mid-range (€170-250 a day per person, sharing a room):** hotel €120-180 per room, tavern lunch and dinner €50-60, Frankfurt Card or museum tickets €20-30, a few drinks.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €70-100 a day | Hostel bed €30-50, market and takeaway meals €20, day ticket €7, one museum or free sights. |
+| Mid-range | €170-250 a day per person, sharing a room | Hotel €120-180 per room, tavern lunch and dinner €50-60, Frankfurt Card or museum tickets €20-30, a few drinks. |
 
 - **Trade fair week:** add 50-150% to accommodation, or stay in Mainz or Offenbach and commute.
 

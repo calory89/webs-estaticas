@@ -43,17 +43,18 @@ Hollywood Boulevard, with its Walk of Fame and the TCL Chinese Theatre forecourt
 
 - Take a studio tour. Paramount and Warner Bros. both run them, and they are more interesting than most of Hollywood Boulevard.
 
-## How many days and a suggested route
+## Los Angeles itinerary: 4 days, day by day
 
 Four days is the sweet spot for a first visit. Three is rushed, and five lets you add Pasadena or a day on the coast. Group things by area, not by a checklist.
 
-- **Day 1, Downtown.** Union Station, Olvera Street, Grand Central Market for lunch, the Broad and the Disney Hall, then the Arts District for dinner.
+**4-day itinerary for Los Angeles**
 
-- **Day 2, Hollywood and the hills.** Griffith Observatory in the morning, a quick look at Hollywood Boulevard, lunch in Los Feliz or Silver Lake, then Melrose.
-
-- **Day 3, the Westside.** The Getty Center in the morning, then Santa Monica for a late lunch and an afternoon on the beach. Walk or cycle to Venice for sunset.
-
-- **Day 4, your choice.** Malibu and the Getty Villa for coast, a studio tour for cinema, or Koreatown and Thai Town for a food crawl.
+| Day | Plan |
+|---|---|
+| Day 1 | Downtown. Union Station, Olvera Street, Grand Central Market for lunch, the Broad and the Disney Hall, then the Arts District for dinner. |
+| Day 2 | Hollywood and the hills. Griffith Observatory in the morning, a quick look at Hollywood Boulevard, lunch in Los Feliz or Silver Lake, then Melrose. |
+| Day 3 | The Westside. The Getty Center in the morning, then Santa Monica for a late lunch and an afternoon on the beach. Walk or cycle to Venice for sunset. |
+| Day 4 | Your choice. Malibu and the Getty Villa for coast, a studio tour for cinema, or Koreatown and Thai Town for a food crawl. |
 
 ## When to go: weather and seasons
 

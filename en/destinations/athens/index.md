@@ -37,13 +37,15 @@ Do a food walk around the Central Market on Athinas Street, where the meat hall 
 
 For a half-day trip, Cape Sounion and the Temple of Poseidon at sunset is the classic. Buses run from the centre, and the light over the Aegean is worth the ride.
 
-## How many days and a suggested route
+## Athens itinerary: 3 days, day by day
 
-**Day 1:** Acropolis at opening, Acropolis Museum, lunch in Koukaki, then Anafiotika and Plaka. Finish with dinner in Psyrri.
+**3-day itinerary for Athens**
 
-**Day 2:** Ancient Agora in the morning, Monastiraki market, the Central Market, then the National Archaeological Museum. Sunset on Lycabettus.
-
-**Day 3:** Panathenaic Stadium, Temple of Olympian Zeus, then a slow afternoon in Pangrati or Kolonaki. Or swap in Sounion for a coastal day.
+| Day | Plan |
+|---|---|
+| Day 1 | Acropolis at opening, Acropolis Museum, lunch in Koukaki, then Anafiotika and Plaka. Finish with dinner in Psyrri. |
+| Day 2 | Ancient Agora in the morning, Monastiraki market, the Central Market, then the National Archaeological Museum. Sunset on Lycabettus. |
+| Day 3 | Panathenaic Stadium, Temple of Olympian Zeus, then a slow afternoon in Pangrati or Kolonaki. Or swap in Sounion for a coastal day. |
 
 Two days works if you're rushing. A fourth day is best spent on a day trip to Delphi or a ferry from Piraeus to Aegina or Hydra.
 

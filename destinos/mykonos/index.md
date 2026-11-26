@@ -33,15 +33,17 @@ Playa, claro, pero con criterio. **Paradise** y **Super Paradise** son fiesta de
 
 Las tumbonas en playas organizadas cuestan entre 20 y 60 euros el par según la playa y la época. Llévate toalla y sombrilla propia y usa los tramos libres. Otra idea: un paseo en barco por la costa o un taxi acuático entre playas. Sale caro, pero te ahorra una tarde de buses.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Mykonos en 3 días: ruta día a día
 
 Tres días completos son lo ideal; con dos vas con prisa y con cuatro empiezas a repetir playa.
 
-- **Día 1:** Chora de punta a punta. Mañana temprano por callejuelas, Paraportiani y molinos; comida en el puerto viejo; atardecer en Little Venice y cena en el centro.
+**Itinerario de 3 días en Mykonos**
 
-- **Día 2:** Delos. Sal en el primer barco que puedas desde el Puerto Viejo, porque a mediodía el calor es duro. Vuelve para comer y tarde de playa en Platis Gialos u Ornos.
-
-- **Día 3:** Playa larga (Elia o Paradise) por la mañana, Ano Mera a media tarde y atardecer en Armenistis si tienes coche o moto.
+| Día | Plan |
+|---|---|
+| Día 1 | Chora de punta a punta. Mañana temprano por callejuelas, Paraportiani y molinos; comida en el puerto viejo; atardecer en Little Venice y cena en el centro. |
+| Día 2 | Delos. Sal en el primer barco que puedas desde el Puerto Viejo, porque a mediodía el calor es duro. Vuelve para comer y tarde de playa en Platis Gialos u Ornos. |
+| Día 3 | Playa larga (Elia o Paradise) por la mañana, Ano Mera a media tarde y atardecer en Armenistis si tienes coche o moto. |
 
 ## Cuándo ir: clima y temporadas
 

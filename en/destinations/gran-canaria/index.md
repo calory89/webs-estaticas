@@ -101,25 +101,15 @@ A lot of the best stuff costs nothing. The beaches are public, the dunes are fre
 
 ## Gran Canaria itinerary: 5 days
 
-### Day 1: Old Las Palmas
+**5-day itinerary for Gran Canaria**
 
-**Morning:** Mercado de Vegueta for breakfast, then the cathedral and its tower, and Casa de Colón. **Afternoon:** Museo Canario, then walk up Calle Mayor de Triana. **Evening:** tapas in Vegueta, or dinner on Calle Pérez Galdós.
-
-### Day 2: Las Canteras and the port
-
-**Morning:** swim and snorkel at La Barra at low tide. **Afternoon:** lunch at the Mercado del Puerto, then a surf lesson or a long walk to the Auditorio. **Evening:** sunset on the promenade and grilled fish at La Puntilla.
-
-### Day 3: The mountains (car)
-
-**Morning:** leave Las Palmas early, stop at the Bandama viewpoint, then hike Roque Nublo before 10am. **Afternoon:** lunch in Tejeda, then Roque Bentayga. **Evening:** sunset at Pico de las Nieves, then drive down to the south and sleep there.
-
-### Day 4: The south
-
-**Morning:** the Maspalomas dunes early, then walk to the Faro de Maspalomas. **Afternoon:** drive or take the bus to Puerto de Mogán for a late lunch and a swim. **Evening:** back to Meloneras for dinner, or a detour through Fataga and its palm-filled ravine.
-
-### Day 5: The north coast (car)
-
-**Morning:** Cueva Pintada in Gáldar (booked), then a snorkel at Sardina del Norte. **Afternoon:** fish lunch in Puerto de las Nieves and a dip at Las Salinas. **Evening:** Arucas and Teror on the way back to Las Palmas or the airport.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Old Las Palmas | Mercado de Vegueta for breakfast, then the cathedral and its tower, and Casa de Colón. | Museo Canario, then walk up Calle Mayor de Triana. | Tapas in Vegueta, or dinner on Calle Pérez Galdós. |
+| Day 2 · Las Canteras and the port | Swim and snorkel at La Barra at low tide. | Lunch at the Mercado del Puerto, then a surf lesson or a long walk to the Auditorio. | Sunset on the promenade and grilled fish at La Puntilla. |
+| Day 3 · The mountains (car) | Leave Las Palmas early, stop at the Bandama viewpoint, then hike Roque Nublo before 10am. | Lunch in Tejeda, then Roque Bentayga. | Sunset at Pico de las Nieves, then drive down to the south and sleep there. |
+| Day 4 · The south | The Maspalomas dunes early, then walk to the Faro de Maspalomas. | Drive or take the bus to Puerto de Mogán for a late lunch and a swim. | Back to Meloneras for dinner, or a detour through Fataga and its palm-filled ravine. |
+| Day 5 · The north coast (car) | Cueva Pintada in Gáldar (booked), then a snorkel at Sardina del Norte. | Fish lunch in Puerto de las Nieves and a dip at Las Salinas. | Arucas and Teror on the way back to Las Palmas or the airport. |
 
 ## What is overrated (and what to do instead)
 
@@ -183,9 +173,12 @@ Inside Las Palmas, the yellow city buses (guaguas) cost about €1.50 a ride. Be
 
 ## How much a trip to Gran Canaria costs
 
-- **Shoestring (€50-70 per day):** hostel or a cheap room in Las Palmas (€25-40), menú del día lunches, supermarket breakfast, buses and free beaches.
+**Rough daily budget**
 
-- **Mid-range (€110-170 per day):** a double room at €80-120 split, a car for a couple of days, a sit-down dinner, a museum or a surf lesson.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €50-70 per day | Hostel or a cheap room in Las Palmas (€25-40), menú del día lunches, supermarket breakfast, buses and free beaches. |
+| Mid-range | €110-170 per day | A double room at €80-120 split, a car for a couple of days, a sit-down dinner, a museum or a surf lesson. |
 
 - **Extra costs to plan:** car hire at €30 per day plus fuel, guided tours at €50-70, and the ferry to Tenerife at €40-60 each way.
 

@@ -89,21 +89,15 @@ Nairobi no es barata para el turista porque las entradas a parques y museos tien
 
 - **Matatu:** cruzar media ciudad cuesta menos de 1 €.
 
-## Itinerario: Nairobi en 3 días
+## Qué ver en Nairobi en 3 días: ruta día a día
 
-### Día 1: safari, elefantes y jirafas
+**Itinerario de 3 días en Nairobi**
 
-**Mañana:** safari en el Parque Nacional de Nairobi desde que abre, parando en el Ivory Burning Site. Sal del parque a tiempo para el turno del Sheldrick Wildlife Trust a media mañana. **Tarde:** comida en Karen y visita al Giraffe Centre, que queda a pocos minutos en coche. **Noche:** cena en Karen o vuelta a tu barrio; habrás madrugado mucho.
-
-### Día 2: Karen, museo y vista desde arriba
-
-**Mañana:** Karen Blixen Museum y Kazuri Beads, uno al lado del otro. **Tarde:** taxi a Museum Hill para el Nairobi National Museum (dos o tres horas) y después bajada al centro para subir al KICC antes de que caiga el sol. **Noche:** nyama choma y cerveza en Westlands o Kilimani.
-
-### Día 3: bosque, mercado y ciudad real
-
-**Mañana:** caminata o bici por Karura Forest. **Tarde:** visita a Kibera con guía local o, si prefieres algo más ligero, Railway Museum y paseo por el CBD con City Market. **Noche:** Maasai Market si coincide en un centro comercial abierto por la tarde, y cena despedida en Westlands.
-
-Todo esto se hace en Uber o Bolt; Nairobi no está pensada para cruzarla andando y las distancias entre Karen, el centro y Westlands son largas.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Safari, elefantes y jirafas | Safari en el Parque Nacional de Nairobi desde que abre, parando en el Ivory Burning Site. Sal del parque a tiempo para el turno del Sheldrick Wildlife Trust a media mañana. | Comida en Karen y visita al Giraffe Centre, que queda a pocos minutos en coche. | Cena en Karen o vuelta a tu barrio; habrás madrugado mucho. |
+| Día 2 · Karen, museo y vista desde arriba | Karen Blixen Museum y Kazuri Beads, uno al lado del otro. | Taxi a Museum Hill para el Nairobi National Museum (dos o tres horas) y después bajada al centro para subir al KICC antes de que caiga el sol. | Nyama choma y cerveza en Westlands o Kilimani. |
+| Día 3 · Bosque, mercado y ciudad real | Caminata o bici por Karura Forest. | Visita a Kibera con guía local o, si prefieres algo más ligero, Railway Museum y paseo por el CBD con City Market. | Maasai Market si coincide en un centro comercial abierto por la tarde, y cena despedida en Westlands. Todo esto se hace en Uber o Bolt; Nairobi no está pensada para cruzarla andando y las distancias entre Karen, el centro y Westlands son largas. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -161,12 +155,14 @@ El matatu de la línea 34 conecta el aeropuerto con el centro por menos de 1 €
 
 ## Cuánto cuesta un viaje a Nairobi
 
-- **Presupuesto ajustado (unos 50-70 € al día):** hostal o guesthouse sencilla (20-30 €), comida local (8-12 €), transporte en matatu y algún Bolt (5-8 €) y una entrada barata.
+**Presupuesto orientativo por día**
 
-- **Presupuesto medio (unos 120-180 € al día):** hotel en Westlands o Kilimani (60-100 €), comidas en restaurantes (25-40 €), Bolt para todo (15 €) y museos o actividades (20-30 €).
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Presupuesto ajustado | unos 50-70 € al día | Hostal o guesthouse sencilla (20-30 €), comida local (8-12 €), transporte en matatu y algún Bolt (5-8 €) y una entrada barata. |
+| Presupuesto medio | unos 120-180 € al día | Hotel en Westlands o Kilimani (60-100 €), comidas en restaurantes (25-40 €), Bolt para todo (15 €) y museos o actividades (20-30 €). |
 
 - **Gastos aparte:** safari en el parque nacional (entre 120 y 170 € con entrada y vehículo, compartiendo menos si vas en grupo), Sheldrick (15 €) y la autorización de viaje eTA (unos 30 dólares).
-
 El chelín keniano (KES) ronda los 140-150 por euro; consulta el cambio antes de ir. Saca dinero en cajeros de bancos dentro de centros comerciales.
 
 ## Excursiones de un día desde Nairobi

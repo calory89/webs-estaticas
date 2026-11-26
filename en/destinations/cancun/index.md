@@ -33,17 +33,18 @@ Snorkelling is the obvious one. Tours to the reef off Punta Nizuc and around Isl
 
 Cenotes are the best break from the beach. Many are an easy drive south, especially around Puerto Morelos and along the road to Tulum. Go as early as you can, because tour buses arrive by late morning. For nightlife, Coco Bongo is the famous big-production club in the Hotel Zone. It is touristy but fun if you commit. Downtown bars are cheaper and more relaxed.
 
-## How many days and a suggested route
+## Cancun itinerary: 4 days, day by day
 
 Four days is the sweet spot. Three works if you skip the big day trip, and a week lets you add Tulum, Holbox or Bacalar without rushing.
 
-- **Day 1:** Arrive, swim at Playa Langosta or Tortugas, dinner downtown near Parque de las Palapas.
+**4-day itinerary for Cancun**
 
-- **Day 2:** Ferry to Isla Mujeres early, golf cart, Playa Norte, back in the late afternoon.
-
-- **Day 3:** Day trip to Chichén Itzá (about 2.5 hours each way) or Tulum, ideally with a cenote stop on the way back.
-
-- **Day 4:** Morning at El Rey and Playa Delfines, a slow lunch, then the airport.
+| Day | Plan |
+|---|---|
+| Day 1 | Arrive, swim at Playa Langosta or Tortugas, dinner downtown near Parque de las Palapas. |
+| Day 2 | Ferry to Isla Mujeres early, golf cart, Playa Norte, back in the late afternoon. |
+| Day 3 | Day trip to Chichén Itzá (about 2.5 hours each way) or Tulum, ideally with a cenote stop on the way back. |
+| Day 4 | Morning at El Rey and Playa Delfines, a slow lunch, then the airport. |
 
 ## When to go: weather and seasons
 

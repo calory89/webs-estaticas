@@ -93,17 +93,13 @@ Nairobi is not a cheap city for visitors, because the headline sights charge non
 
 ## Nairobi itinerary: 3 days
 
-### Day 1: Wildlife in the south-west
+**3-day itinerary for Nairobi**
 
-**Morning:** enter Nairobi National Park at opening time for a 4-hour game drive. **Midday:** exit and head to the Sheldrick elephant orphanage for the late-morning feeding, which you will have booked ahead. **Afternoon:** continue to the Giraffe Centre, then Kazuri Beads and the Karen Blixen Museum, all within a short drive. **Evening:** dinner in Karen, where there are several good garden restaurants. Head back early, or stay in Karen to avoid the drive across town.
-
-### Day 2: City centre and museums
-
-**Morning:** start at the Nairobi National Museum on Museum Hill. **Afternoon:** drive into the centre for lunch, walk past the Nairobi Gallery, City Hall and Kimathi Street, then visit the Railway Museum. Finish on the KICC rooftop in the late afternoon. **Evening:** go out for dinner and drinks in Westlands. Take an Uber or Bolt back rather than walking.
-
-### Day 3: Forest, markets and nyama choma
-
-**Morning:** have breakfast at River Café and cycle or walk Karura Forest. **Afternoon:** catch the Maasai Market wherever it is that day, or shop at the Village Market in Gigiri. **Evening:** go for a long nyama choma dinner and a final drink in Kilimani.
+| Day | Plan |
+|---|---|
+| Day 1 | Wildlife in the south-west. Morning: enter Nairobi National Park at opening time for a 4-hour game drive. Midday: exit and head to the Sheldrick elephant orphanage for the late-morning feeding, which you will have booked ahead. Afternoon: continue to the Giraffe Centre, then Kazuri Beads and the Karen Blixen Museum, all within a short drive. Evening: dinner in Karen, where there are several good garden restaurants. Head back early, or stay in Karen to avoid the drive across town. |
+| Day 2 | City centre and museums. Morning: start at the Nairobi National Museum on Museum Hill. Afternoon: drive into the centre for lunch, walk past the Nairobi Gallery, City Hall and Kimathi Street, then visit the Railway Museum. Finish on the KICC rooftop in the late afternoon. Evening: go out for dinner and drinks in Westlands. Take an Uber or Bolt back rather than walking. |
+| Day 3 | Forest, markets and nyama choma. Morning: have breakfast at River Café and cycle or walk Karura Forest. Afternoon: catch the Maasai Market wherever it is that day, or shop at the Village Market in Gigiri. Evening: go for a long nyama choma dinner and a final drink in Kilimani. |
 
 ## What is overrated (and what to do instead)
 
@@ -163,9 +159,12 @@ For getting around, use Uber and Bolt: they are cheap (most rides cost €3-8), 
 
 ## How much a trip to Nairobi costs
 
-- **Shoestring (€45-70 per day):** a hostel dorm or budget room, local food, Bolt rides and one paid sight. The national park pushes the total up on the day you go.
+**Rough daily budget**
 
-- **Mid-range (€120-200 per day):** a comfortable hotel in Westlands or Karen, restaurant meals, a shared game drive and several sights.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €45-70 per day | A hostel dorm or budget room, local food, Bolt rides and one paid sight. The national park pushes the total up on the day you go. |
+| Mid-range | €120-200 per day | A comfortable hotel in Westlands or Karen, restaurant meals, a shared game drive and several sights. |
 
 - **Big-ticket extras:** national park entry plus vehicle comes to €140-200. The Sheldrick costs €15-20, and a Naivasha day trip €80-150.
 

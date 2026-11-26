@@ -65,17 +65,18 @@ About an hour northeast, with fiery rock formations and far fewer people than th
 
 - **Peppermill Lounge.** A retro, neon-lit bar with a fire pit that still feels like old Vegas.
 
-## How many days and a suggested route
+## Las Vegas itinerary: 4 days, day by day
 
 Three nights is enough for the city itself. Four lets you add a desert day without rushing. More than five and you will want to leave, or you will be spending money you did not plan to.
 
-**Day 1:** Settle in, walk the south Strip, see the Bellagio fountains at sunset, then dinner.
+**4-day itinerary for Las Vegas**
 
-**Day 2:** Morning at the pool or sleeping in. Afternoon at the Venetian and Sphere area, then a show.
-
-**Day 3:** Early start for Red Rock Canyon or Valley of Fire. Evening downtown on Fremont Street and the Neon Museum.
-
-**Day 4:** Hoover Dam if you have the energy, or a long brunch and a last walk before the airport.
+| Day | Plan |
+|---|---|
+| Day 1 | Settle in, walk the south Strip, see the Bellagio fountains at sunset, then dinner. |
+| Day 2 | Morning at the pool or sleeping in. Afternoon at the Venetian and Sphere area, then a show. |
+| Day 3 | Early start for Red Rock Canyon or Valley of Fire. Evening downtown on Fremont Street and the Neon Museum. |
+| Day 4 | Hoover Dam if you have the energy, or a long brunch and a last walk before the airport. |
 
 ## When to go
 

@@ -57,15 +57,17 @@ Madruga un domingo para ir al Fischmarkt, el mercado de pescado junto al Elba, q
 
 Si te gusta el arte, la Kunsthalle reúne una buena colección desde la Edad Media hasta hoy. Para algo más alternativo, el Schanzenviertel y el Karoviertel están llenos de tiendas independientes, murales y cafés. Y si coincide con las fechas, el Dom, la gran feria de atracciones en el Heiligengeistfeld, se celebra tres veces al año.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Hamburgo en 3 días: ruta día a día
 
 Con tres días tienes lo esencial sin correr. Con dos se puede, pero te dejas Blankenese o los barrios.
 
-- **Día 1:** Rathaus, Jungfernstieg, Speicherstadt y HafenCity, Elbphilharmonie al atardecer.
+**Itinerario de 3 días en Hamburgo**
 
-- **Día 2:** Landungsbrücken, Alter Elbtunnel, ferri 62, Michel y noche por St. Pauli.
-
-- **Día 3:** Planten un Blomen, Schanzenviertel y Karoviertel, o excursión a Blankenese.
+| Día | Plan |
+|---|---|
+| Día 1 | Rathaus, Jungfernstieg, Speicherstadt y HafenCity, Elbphilharmonie al atardecer. |
+| Día 2 | Landungsbrücken, Alter Elbtunnel, ferri 62, Michel y noche por St. Pauli. |
+| Día 3 | Planten un Blomen, Schanzenviertel y Karoviertel, o excursión a Blankenese. |
 
 Si vas en domingo, mueve el Fischmarkt a primera hora y cambia el orden del resto.
 
@@ -101,11 +103,13 @@ El transporte público (HVV) incluye metro, S-Bahn, autobús y los ferris urbano
 
 ## Presupuesto orientativo por día
 
-- **Ajustado (50-70 euros):** cama en hostal, bocadillos, transporte público y sitios gratuitos.
+**Presupuesto orientativo por día**
 
-- **Medio (100-150 euros):** hotel sencillo, una comida sentado, alguna entrada como Miniatur Wunderland.
-
-- **Cómodo (más de 180 euros):** buen hotel céntrico, cenas en restaurante y excursiones.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | 50-70 euros | Cama en hostal, bocadillos, transporte público y sitios gratuitos. |
+| Medio | 100-150 euros | Hotel sencillo, una comida sentado, alguna entrada como Miniatur Wunderland. |
+| Cómodo | más de 180 euros | Buen hotel céntrico, cenas en restaurante y excursiones. |
 
 Alemania es más barata que los países nórdicos, pero Hamburgo no es una ciudad low cost por naturaleza: los precios de alojamiento suben con las ferias y los conciertos.
 

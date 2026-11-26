@@ -93,21 +93,14 @@ A surprising amount of the best stuff costs nothing, which matters in a city thi
 
 ## Sydney itinerary: 4 days
 
-### Day 1: Harbour and city
+**4-day itinerary for Sydney**
 
-**Morning:** Start at Mrs Macquarie's Chair early, walk through the Botanic Garden to the Opera House and take the tour. **Afternoon:** Lunch around Circular Quay, then The Rocks and the walk across the Harbour Bridge to Milsons Point. Ferry back from Milsons Point. **Evening:** Sunset drink at a Rocks pub, then dinner in Chinatown or the Thai strip on Campbell Street in Haymarket.
-
-### Day 2: Beaches
-
-**Morning:** Bus to Bondi, a swim and coffee, then the coastal walk to Coogee. **Afternoon:** Swim at Clovelly or Giles Baths, then a bus back towards the city. **Evening:** Dinner and drinks in Surry Hills, where Crown Street has plenty of choice.
-
-### Day 3: Ferries, Manly and Watsons Bay
-
-**Morning:** F1 ferry to Manly, walk to Shelly Beach, snorkel or just swim. **Afternoon:** Back to Circular Quay, then a ferry to Watsons Bay and the walk to The Gap. Swap Watsons Bay for Taronga Zoo if you have kids. **Evening:** Fish and chips at Watsons Bay, then the ferry back with the city lit up. Do this day on a Sunday if possible to use the fare cap.
-
-### Day 4: Blue Mountains or Newtown and the gallery
-
-**Option A:** An early train from Central to Katoomba (about 2 hours), the Three Sisters at Echo Point and a walk along the cliff tops, then the train back for dinner in Newtown. **Option B:** The Art Gallery of NSW in the morning, Paddington and its terrace streets in the afternoon, and Newtown in the evening for Thai and a bar.
+| Day | Plan |
+|---|---|
+| Day 1 | Harbour and city. Morning: Start at Mrs Macquarie's Chair early, walk through the Botanic Garden to the Opera House and take the tour. Afternoon: Lunch around Circular Quay, then The Rocks and the walk across the Harbour Bridge to Milsons Point. Ferry back from Milsons Point. Evening: Sunset drink at a Rocks pub, then dinner in Chinatown or the Thai strip on Campbell Street in Haymarket. |
+| Day 2 | Beaches. Morning: Bus to Bondi, a swim and coffee, then the coastal walk to Coogee. Afternoon: Swim at Clovelly or Giles Baths, then a bus back towards the city. Evening: Dinner and drinks in Surry Hills, where Crown Street has plenty of choice. |
+| Day 3 | Ferries, Manly and Watsons Bay. Morning: F1 ferry to Manly, walk to Shelly Beach, snorkel or just swim. Afternoon: Back to Circular Quay, then a ferry to Watsons Bay and the walk to The Gap. Swap Watsons Bay for Taronga Zoo if you have kids. Evening: Fish and chips at Watsons Bay, then the ferry back with the city lit up. Do this day on a Sunday if possible to use the fare cap. |
+| Day 4 | Blue Mountains or Newtown and the gallery. Option A: An early train from Central to Katoomba (about 2 hours), the Three Sisters at Echo Point and a walk along the cliff tops, then the train back for dinner in Newtown. Option B: The Art Gallery of NSW in the morning, Paddington and its terrace streets in the afternoon, and Newtown in the evening for Thai and a bar. |
 
 ## What is overrated (and what to do instead)
 

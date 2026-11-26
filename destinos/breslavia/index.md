@@ -85,29 +85,15 @@ Breslavia es barata de por sí, y lo mejor no cuesta nada. El Rynek, la isla de 
 
 Muchas iglesias se pueden ver por dentro sin pagar (solo las torres cuestan). El parque Szczytnicki y el paseo junto al río son gratis, igual que Nadodrze y el patio de neones. Muchos museos tienen un día de entrada libre a la semana, normalmente uno entre semana: comprueba en la web de cada uno antes de ir. Y para comer barato, los bares de leche (bar mleczny) te dan de comer por 5-7 €.
 
-## Itinerario: Breslavia en 3 días
+## Qué ver en Breslavia en 3 días: ruta día a día
 
-### Día 1: casco antiguo y río
+**Itinerario de 3 días en Breslavia**
 
-**Mañana:** empieza en el Rynek temprano, rodea el Ayuntamiento y sube a la torre de Santa Isabel. Pasa por las casitas de Hansel y Gretel y por el Puente de las Penitentes.
-
-**Tarde:** come en un bar de leche, ve andando hasta la Universidad (Aula Leopoldina y Torre Matemática) y baja al Mercado Cubierto, que está al lado. Cruza a la isla de Piasek.
-
-**Noche:** llega a Ostrów Tumski antes del anochecer para ver al farolero. Cena por el centro y cerveza en la zona de la calle Ruska con parada en los neones.
-
-### Día 2: Panorama, Hala Stulecia y Nadodrze
-
-**Mañana:** Panorama de Racławice a primera hora y Museo Nacional al lado, si te apetece arte (la colección de arte medieval silesio es buena).
-
-**Tarde:** tranvía hasta la Hala Stulecia, el Jardín Japonés y el parque Szczytnicki. Si vas con niños o llueve, cambia el parque por el zoo y el Afrykarium, que está enfrente.
-
-**Noche:** espectáculo de la fuente multimedia si es temporada. Vuelve en tranvía y termina en Nadodrze o en la isla de Słodowa si hace bueno.
-
-### Día 3: excursión o ciudad sin prisa
-
-**Mañana y tarde:** excursión al castillo de Książ o a la Iglesia de la Paz de Świdnica (más abajo, en excursiones). Si prefieres quedarte, dedica la mañana a Nadodrze y la caza de enanos y la tarde a un paseo en barco por el Óder.
-
-**Noche:** última cena con pierogi y una vuelta final por el Rynek iluminado.
+| Día | Plan |
+|---|---|
+| Día 1 | Casco antiguo y río. Mañana: empieza en el Rynek temprano, rodea el Ayuntamiento y sube a la torre de Santa Isabel. Pasa por las casitas de Hansel y Gretel y por el Puente de las Penitentes. Tarde: come en un bar de leche, ve andando hasta la Universidad (Aula Leopoldina y Torre Matemática) y baja al Mercado Cubierto, que está al lado. Cruza a la isla de Piasek. Noche: llega a Ostrów Tumski antes del anochecer para ver al farolero. Cena por el centro y cerveza en la zona de la calle Ruska con parada en los neones. |
+| Día 2 | Panorama, Hala Stulecia y Nadodrze. Mañana: Panorama de Racławice a primera hora y Museo Nacional al lado, si te apetece arte (la colección de arte medieval silesio es buena). Tarde: tranvía hasta la Hala Stulecia, el Jardín Japonés y el parque Szczytnicki. Si vas con niños o llueve, cambia el parque por el zoo y el Afrykarium, que está enfrente. Noche: espectáculo de la fuente multimedia si es temporada. Vuelve en tranvía y termina en Nadodrze o en la isla de Słodowa si hace bueno. |
+| Día 3 | Excursión o ciudad sin prisa. Mañana y tarde: excursión al castillo de Książ o a la Iglesia de la Paz de Świdnica (más abajo, en excursiones). Si prefieres quedarte, dedica la mañana a Nadodrze y la caza de enanos y la tarde a un paseo en barco por el Óder. Noche: última cena con pierogi y una vuelta final por el Rynek iluminado. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -167,9 +153,12 @@ Dentro de la ciudad, el centro se hace andando. Para la Hala Stulecia, el zoo o 
 
 Breslavia es una de las ciudades más baratas de la UE para un fin de semana. El cambio ronda los 4,2-4,3 zł por euro. Presupuesto orientativo por persona y día, sin vuelo:
 
-- **Ajustado: unos 45-60 € al día.** Hostal o apartamento compartido, comidas en bares de leche, una entrada o torre al día, transporte puntual.
+**Presupuesto orientativo por día**
 
-- **Medio: unos 90-130 € al día.** Hotel céntrico en habitación doble compartida, restaurantes normales, cervezas por la noche, dos o tres visitas de pago.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | unos 45-60 € al día | Hostal o apartamento compartido, comidas en bares de leche, una entrada o torre al día, transporte puntual. |
+| Medio | unos 90-130 € al día | Hotel céntrico en habitación doble compartida, restaurantes normales, cervezas por la noche, dos o tres visitas de pago. |
 
 - **Extras habituales:** Panorama unos 10 €, Aula Leopoldina unos 8 €, zoo y Afrykarium unos 18 €, excursión a Książ con tren y entrada unos 20-25 €.
 

@@ -81,17 +81,13 @@ A lot of Hoi An costs nothing. Walking the old streets and riverbank is free, an
 
 ## Hoi An itinerary: 3 days
 
-### Day 1: The Ancient Town
+**3-day itinerary for Hoi An**
 
-**Morning:** Be on Tran Phu by 6:30am. Walk to the Japanese Covered Bridge, then the Central Market for breakfast, and use your coupons on the Fujian Assembly Hall and Quan Cong Temple before the groups arrive. **Afternoon:** Visit Tan Ky Old House, then retreat to your hotel or a café during the heat, and drop by a tailor if you plan to order anything. **Evening:** Cross to An Hoi for sunset, take a lantern boat, and eat cao lau and white rose dumplings.
-
-### Day 2: Bikes, villages and the beach
-
-**Morning:** Cycle through the rice fields to Tra Que, then continue to An Bang Beach for a swim and a seafood lunch. **Afternoon:** Ride back and head east to Cam Thanh for the basket boats, or book a cooking class that combines both. **Evening:** Go for chicken rice at a local spot, have a second tailor fitting, and enjoy a drink by the river once the crowds thin.
-
-### Day 3: My Son or the Marble Mountains
-
-**Morning:** Leave early for My Son Sanctuary to beat heat and tour buses. **Afternoon:** Return for a late lunch of mi Quang and pick up your clothes. **Evening:** Finish with a final walk through the old town after 9pm, when the day-trippers from Da Nang have gone.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · The Ancient Town | Be on Tran Phu by 6:30am. Walk to the Japanese Covered Bridge, then the Central Market for breakfast, and use your coupons on the Fujian Assembly Hall and Quan Cong Temple before the groups arrive. | Visit Tan Ky Old House, then retreat to your hotel or a café during the heat, and drop by a tailor if you plan to order anything. | Cross to An Hoi for sunset, take a lantern boat, and eat cao lau and white rose dumplings. |
+| Day 2 · Bikes, villages and the beach | Cycle through the rice fields to Tra Que, then continue to An Bang Beach for a swim and a seafood lunch. | Ride back and head east to Cam Thanh for the basket boats, or book a cooking class that combines both. | Go for chicken rice at a local spot, have a second tailor fitting, and enjoy a drink by the river once the crowds thin. |
+| Day 3 · My Son or the Marble Mountains | Leave early for My Son Sanctuary to beat heat and tour buses. | Return for a late lunch of mi Quang and pick up your clothes. | Finish with a final walk through the old town after 9pm, when the day-trippers from Da Nang have gone. |
 
 ## What is overrated (and what to do instead)
 
@@ -147,9 +143,12 @@ In town, walk and cycle. The Ancient Town is car-free for much of the day, and b
 
 ## How much a trip to Hoi An costs
 
-- **Shoestring: €25-35 a day.** This covers a hostel dorm or basic homestay (€8-12), street food (€6-8), a bike, the old town ticket spread over your stay, and a few beers.
+**Rough daily budget**
 
-- **Mid-range: €60-100 a day.** This covers a boutique hotel with a pool (€35-60), sit-down meals, a cooking class or a day trip, Grab rides and a lantern boat.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €25-35 a day | This covers a hostel dorm or basic homestay (€8-12), street food (€6-8), a bike, the old town ticket spread over your stay, and a few beers. |
+| Mid-range | €60-100 a day | This covers a boutique hotel with a pool (€35-60), sit-down meals, a cooking class or a day trip, Grab rides and a lantern boat. |
 
 - **Extras:** tailoring (€20 to €200+), the My Son tour (€15-30), and cooking classes (€25-40).
 

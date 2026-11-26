@@ -39,17 +39,18 @@ El buceo es muy bueno, sobre todo en Gozo y Comino, con pecios y cuevas aptas pa
 
 En verano, casi cada fin de semana hay una festa en algún pueblo: banda, procesión, fuegos artificiales y puestos de dulces. Si coincides con una, quédate un rato.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Malta en 4 días: ruta día a día
 
 Con tres días ves lo esencial. Con cuatro o cinco lo disfrutas sin ir con la lengua fuera. Esta es mi propuesta para cuatro:
 
-- **Día 1:** La Valeta entera. Concatedral por la mañana, Upper Barrakka, paseo sin rumbo y atardecer desde las murallas.
+**Itinerario de 4 días en Malta**
 
-- **Día 2:** Birgu por la mañana en ferry, y por la tarde Mdina y Rabat.
-
-- **Día 3:** Costa sur. Templos de Ħaġar Qim, Gruta Azul y comida en Marsaxlokk.
-
-- **Día 4:** Gozo. Ferry desde Ċirkewwa, Victoria, Ġgantija y Dwejra. Es un día largo, pero compensa.
+| Día | Plan |
+|---|---|
+| Día 1 | La Valeta entera. Concatedral por la mañana, Upper Barrakka, paseo sin rumbo y atardecer desde las murallas. |
+| Día 2 | Birgu por la mañana en ferry, y por la tarde Mdina y Rabat. |
+| Día 3 | Costa sur. Templos de Ħaġar Qim, Gruta Azul y comida en Marsaxlokk. |
+| Día 4 | Gozo. Ferry desde Ċirkewwa, Victoria, Ġgantija y Dwejra. Es un día largo, pero compensa. |
 
 Con un quinto día, juntarías playa y Comino. La Blue Lagoon es preciosa pero se llena de barcos y toallas; ve a primera hora o en temporada baja.
 

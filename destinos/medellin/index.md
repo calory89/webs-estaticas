@@ -91,23 +91,16 @@ Medellín es de las ciudades grandes más baratas de Sudamérica para hacer turi
 
 - El **Cerro Nutibara** y su Pueblito Paisa.
 
-## Itinerario: Medellín en 4 días
+## Qué ver en Medellín en 4 días: ruta día a día
 
-### Día 1: el centro
+**Itinerario de 4 días en Medellín**
 
-**Mañana:** free tour por el centro, que pasa por la Plaza Botero, el Palacio de la Cultura y el Parque Berrío. **Tarde:** Museo de Antioquia y Parque de las Luces; después metro a Universidad para el Jardín Botánico. **Noche:** vuelve a tu alojamiento antes de que el centro se vacíe y cena en Laureles.
-
-### Día 2: Metrocable y Parque Arví
-
-**Mañana:** metro hasta Acevedo, línea K hasta Santo Domingo y línea L hasta Parque Arví. Paseo por el bosque y comida en el mercadillo. **Tarde:** bajada y Museo Casa de la Memoria o MAMM, según te apetezca. **Noche:** cena y copas en Provenza.
-
-### Día 3: Comuna 13 y Laureles
-
-**Mañana:** Comuna 13 a primera hora con guía local. **Tarde:** Pueblito Paisa en el Cerro Nutibara y paseo por Laureles. **Noche:** clase de salsa y baile en la 70.
-
-### Día 4: Guatapé
-
-**Mañana:** bus temprano desde la Terminal del Norte y subida a la Piedra del Peñol. **Tarde:** paseo por el pueblo de Guatapé y sus zócalos de colores; comida de trucha. **Noche:** regreso a Medellín y última bandeja paisa.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · El centro | Free tour por el centro, que pasa por la Plaza Botero, el Palacio de la Cultura y el Parque Berrío. | Museo de Antioquia y Parque de las Luces; después metro a Universidad para el Jardín Botánico. | Vuelve a tu alojamiento antes de que el centro se vacíe y cena en Laureles. |
+| Día 2 · Metrocable y Parque Arví | Metro hasta Acevedo, línea K hasta Santo Domingo y línea L hasta Parque Arví. Paseo por el bosque y comida en el mercadillo. | Bajada y Museo Casa de la Memoria o MAMM, según te apetezca. | Cena y copas en Provenza. |
+| Día 3 · Comuna 13 y Laureles | Comuna 13 a primera hora con guía local. | Pueblito Paisa en el Cerro Nutibara y paseo por Laureles. | Clase de salsa y baile en la 70. |
+| Día 4 · Guatapé | Bus temprano desde la Terminal del Norte y subida a la Piedra del Peñol. | Paseo por el pueblo de Guatapé y sus zócalos de colores; comida de trucha. | Regreso a Medellín y última bandeja paisa. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -173,9 +166,12 @@ Dentro de la ciudad, el **metro** es la columna vertebral: línea A (norte-sur),
 
 Cambio orientativo: 1 € son unos 4.500 pesos colombianos. Sin contar el vuelo:
 
-- **Ajustado: 30-40 € al día.** Dormitorio en hostal o habitación sencilla en Laureles, corrientazo a mediodía, cena de calle, metro y planes gratuitos.
+**Presupuesto orientativo por día**
 
-- **Medio: 70-100 € al día.** Hotel o apartamento doble, comidas en restaurantes, un tour guiado, taxis por app y copas por la noche.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | 30-40 € al día | Dormitorio en hostal o habitación sencilla en Laureles, corrientazo a mediodía, cena de calle, metro y planes gratuitos. |
+| Medio | 70-100 € al día | Hotel o apartamento doble, comidas en restaurantes, un tour guiado, taxis por app y copas por la noche. |
 
 - **Extras:** excursión a Guatapé por tu cuenta, 15-20 €; tour organizado, 30-40 €; parapente, 40-50 €.
 

@@ -103,17 +103,13 @@ A lot of the best of Valencia costs nothing.
 
 ## Valencia itinerary: 3 days
 
-### Day 1: the old town
+**3-day itinerary for Valencia**
 
-**Morning:** start at Mercado Central for breakfast, cross to La Lonja, then walk to the cathedral and climb the Miguelete. **Afternoon:** Plaza de la Virgen, the Ceramics Museum, then lunch on a menú del día nearby. Wander El Carmen, climb Torres de Quart and finish at Torres de Serranos. **Evening:** horchata at Santa Catalina, then tapas and agua de Valencia in El Carmen.
-
-### Day 2: the Turia and the City of Arts and Sciences
-
-**Morning:** Museo de Bellas Artes when it opens, then rent bikes and ride the Turia south. **Afternoon:** Oceanogràfic or the Science Museum, depending on taste. Stay around the complex until sunset, when it looks its best. **Evening:** dinner and drinks in Ruzafa, a short ride away.
-
-### Day 3: beach and Albufera
-
-**Morning:** tram or bus to El Cabanyal, coffee at the market, a vermouth at Casa Montaña and a walk on Malvarrosa. **Afternoon:** paella for lunch on the beachfront, then a lazy hour on the sand. **Evening:** bus to El Palmar in the Albufera for a sunset boat ride, then back into the city for a late dinner.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · The old town | Start at Mercado Central for breakfast, cross to La Lonja, then walk to the cathedral and climb the Miguelete. | Plaza de la Virgen, the Ceramics Museum, then lunch on a menú del día nearby. Wander El Carmen, climb Torres de Quart and finish at Torres de Serranos. | Horchata at Santa Catalina, then tapas and agua de Valencia in El Carmen. |
+| Day 2 · The Turia and the City of Arts and Sciences | Museo de Bellas Artes when it opens, then rent bikes and ride the Turia south. | Oceanogràfic or the Science Museum, depending on taste. Stay around the complex until sunset, when it looks its best. | Dinner and drinks in Ruzafa, a short ride away. |
+| Day 3 · Beach and Albufera | Tram or bus to El Cabanyal, coffee at the market, a vermouth at Casa Montaña and a walk on Malvarrosa. | Paella for lunch on the beachfront, then a lazy hour on the sand. | Bus to El Palmar in the Albufera for a sunset boat ride, then back into the city for a late dinner. |
 
 ## What is overrated (and what to do instead)
 
@@ -161,9 +157,12 @@ Inside the city you will mostly walk. EMT buses cost about €1.50 a ride, and t
 
 Rough daily budgets per person, not counting flights:
 
-- **Shoestring: €50-70.** Hostel bed, menú del día at lunch, market food or tapas at night, free museums, walking and the odd bus.
+**Rough daily budget**
 
-- **Mid-range: €110-170.** Half of a double room in a central hotel, a rice lunch and a sit-down dinner, Oceanogràfic or Tourist Card, a bike rental and a couple of drinks.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €50-70 | Hostel bed, menú del día at lunch, market food or tapas at night, free museums, walking and the odd bus. |
+| Mid-range | €110-170 | Half of a double room in a central hotel, a rice lunch and a sit-down dinner, Oceanogràfic or Tourist Card, a bike rental and a couple of drinks. |
 
 - **Extras:** Albufera boat €5-8, paella €15-25, horchata €4-5, cocktail €8-10.
 

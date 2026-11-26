@@ -53,15 +53,17 @@ Camina sin rumbo por el Capo y por Ballarò, que son los barrios que más se par
 
 Si te sobra un día, Cefalù es una opción fácil en tren desde Palermo Centrale, con trayecto de aproximadamente una hora, un casco antiguo pequeño y una playa urbana.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Palermo en 3 días: ruta día a día
 
 Tres días es lo razonable. Con dos ves lo esencial con prisas, y con cuatro o cinco puedes añadir Cefalù, Monreale con calma o alguna excursión a Segesta o Erice.
 
-- **Día 1:** Palazzo dei Normanni y Cappella Palatina a primera hora, Catedral, Quattro Canti, Piazza Pretoria y Martorana. Tarde por el Capo y cena en la zona.
+**Itinerario de 3 días en Palermo**
 
-- **Día 2:** Monreale por la mañana. Vuelta a Palermo, comida en Ballarò, Teatro Massimo y paseo por la Kalsa.
-
-- **Día 3:** Catacumbas, Palazzo Abatellis, Foro Italico y tarde libre o playa en Mondello.
+| Día | Plan |
+|---|---|
+| Día 1 | Palazzo dei Normanni y Cappella Palatina a primera hora, Catedral, Quattro Canti, Piazza Pretoria y Martorana. Tarde por el Capo y cena en la zona. |
+| Día 2 | Monreale por la mañana. Vuelta a Palermo, comida en Ballarò, Teatro Massimo y paseo por la Kalsa. |
+| Día 3 | Catacumbas, Palazzo Abatellis, Foro Italico y tarde libre o playa en Mondello. |
 
 ## Cuándo ir
 
@@ -105,11 +107,13 @@ Dentro de la ciudad, casi todo se hace a pie. Hay autobuses urbanos y algunas l�
 
 ## Presupuesto orientativo por día
 
-- **Muy ajustado (unos 50-60 euros):** albergue, comida callejera y entradas contadas.
+**Presupuesto orientativo por día**
 
-- **Medio (unos 90-120 euros):** habitación doble repartida, restaurante a mediodía y varias visitas de pago.
-
-- **Cómodo (150 euros o más):** hotel céntrico, cenas sentado y excursiones.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Muy ajustado | unos 50-60 euros | Albergue, comida callejera y entradas contadas. |
+| Medio | unos 90-120 euros | Habitación doble repartida, restaurante a mediodía y varias visitas de pago. |
+| Cómodo | 150 euros o más | Hotel céntrico, cenas sentado y excursiones. |
 
 Las entradas principales, como la Cappella Palatina o las catacumbas, suelen estar entre 5 y 15 euros según el caso. Mira si hay entradas combinadas antes de comprar.
 

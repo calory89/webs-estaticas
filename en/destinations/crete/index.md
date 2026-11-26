@@ -61,19 +61,19 @@ Vai has a natural palm grove behind its beach, while the ruined palace at Zakros
 
 - **Do a food or cooking morning** in a village; many families offer them and they are usually better than touristy ones in town.
 
-## How many days and a suggested route
+## Crete itinerary: 7 days, day by day
 
 Five days is the minimum for one region. Seven is comfortable, ten lets you see both the west and east. Here is a seven-day route that avoids too much backtracking:
 
-- **Days 1-3:** Chania. Old town on day one, Elafonissi or Balos on day two, Samaria or Imbros on day three.
+**7-day itinerary for Crete**
 
-- **Day 4:** drive east to Rethymno, stopping at Arkadi, and spend the evening in the old town.
-
-- **Day 5:** Preveli and Plakias or Agia Galini on the south coast.
-
-- **Day 6:** Phaistos and Matala, then continue to Heraklion for Knossos and the museum the next morning.
-
-- **Day 7:** Knossos, museum, then fly out or continue to Agios Nikolaos and Spinalonga if you have more time.
+| Day | Plan |
+|---|---|
+| Days 1-3 | Chania. Old town on day one, Elafonissi or Balos on day two, Samaria or Imbros on day three. |
+| Day 4 | Drive east to Rethymno, stopping at Arkadi, and spend the evening in the old town. |
+| Day 5 | Preveli and Plakias or Agia Galini on the south coast. |
+| Day 6 | Phaistos and Matala, then continue to Heraklion for Knossos and the museum the next morning. |
+| Day 7 | Knossos, museum, then fly out or continue to Agios Nikolaos and Spinalonga if you have more time. |
 
 ## When to go
 

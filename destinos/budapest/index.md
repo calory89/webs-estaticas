@@ -39,15 +39,17 @@ Por la noche, un paseo en barco por el Danubio con el Parlamento iluminado merec
 
 Para salir de la ciudad, Szentendre, un pueblo de casas barrocas y galerías, está a unos 40 minutos en el tren suburbano HÉV desde Batthyány tér. Y si te interesa el pasado comunista, Memento Park reúne estatuas de aquella época fuera del centro.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Budapest en 3 días: ruta día a día
 
 Con tres días ves lo esencial. Con cuatro añades Szentendre o más tiempo en las termas sin ir con prisa.
 
-- **Día 1, Pest:** Mercado Central por la mañana, Zapatos en el Danubio, Parlamento (visita reservada), Basílica y cena en el barrio judío.
+**Itinerario de 3 días en Budapest**
 
-- **Día 2, Buda:** Bastión de los Pescadores y Matías temprano, Castillo, comida en Buda, subida a la Colina Gellért y termas Gellért o Rudas al final.
-
-- **Día 3, Andrássy:** paseo por la avenida hasta Plaza de los Héroes, Casa del Terror si te interesa, Széchenyi por la tarde y barco nocturno.
+| Día | Plan |
+|---|---|
+| Día 1 | Pest. Mercado Central por la mañana, Zapatos en el Danubio, Parlamento (visita reservada), Basílica y cena en el barrio judío. |
+| Día 2 | Buda. Bastión de los Pescadores y Matías temprano, Castillo, comida en Buda, subida a la Colina Gellért y termas Gellért o Rudas al final. |
+| Día 3 | Andrássy. Paseo por la avenida hasta Plaza de los Héroes, Casa del Terror si te interesa, Széchenyi por la tarde y barco nocturno. |
 
 ## Cuándo ir
 
@@ -81,11 +83,13 @@ Dentro de la ciudad todo funciona con la app BudapestGO o con máquinas en las p
 
 ## Presupuesto orientativo por día
 
-- **Ajustado (50-70 €):** hostal, comida en mercados y canteens, transporte público y una visita de pago.
+**Presupuesto orientativo por día**
 
-- **Medio (90-130 €):** hotel o apartamento céntrico, un buen restaurante al día, termas o Parlamento y alguna copa.
-
-- **Cómodo (150 € o más):** hotel de categoría, cenas en restaurantes de nivel, barco y taxi cuando apetezca.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | 50-70 € | Hostal, comida en mercados y canteens, transporte público y una visita de pago. |
+| Medio | 90-130 € | Hotel o apartamento céntrico, un buen restaurante al día, termas o Parlamento y alguna copa. |
+| Cómodo | 150 € o más | Hotel de categoría, cenas en restaurantes de nivel, barco y taxi cuando apetezca. |
 
 Las termas suelen rondar entre 25 y 35 € la entrada y el Parlamento unos 15-25 €. Todo son cifras orientativas y varían según temporada.
 

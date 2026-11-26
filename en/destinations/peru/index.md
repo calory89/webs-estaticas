@@ -35,21 +35,20 @@ It is also a country that rewards slow travel and punishes cramming. Distances a
 
 Hike. The Inca Trail needs a permit booked months ahead and closes each February. The Salkantay and Lares routes are alternatives, and Rainbow Mountain (Vinicunca) is a hard, very high day trip. Take a cooking class in Lima or Cusco, where you learn to make ceviche and lomo saltado properly. Ride the scenic train from Ollantaytambo to Aguas Calientes. Paraglide off the Miraflores cliffs for a view of the Pacific. Sandboard in Huacachina. Spend an afternoon at a textile cooperative near Chinchero, where women show natural dyeing with cochineal and plants.
 
-## How many days and a suggested route
+## Peru itinerary: 10 days, day by day
 
 Ten days is the sweet spot for a first visit. Seven works if you stick to Lima, Cusco and Machu Picchu. Two weeks lets you add Arequipa or Titicaca without rushing.
 
-- **Days 1-2:** Lima. Miraflores, Barranco, the historic centre, a long lunch.
+**10-day itinerary for Peru**
 
-- **Days 3-4:** Fly to Cusco. Take it easy on day one, explore the old town on day two.
-
-- **Days 5-6:** Sacred Valley, sleeping in Ollantaytambo.
-
-- **Day 7:** Train to Aguas Calientes, then Machu Picchu early the next morning.
-
-- **Days 8-9:** Back to Cusco, then fly to Arequipa for the colonial centre, or on to Puno for the lake.
-
-- **Day 10:** Return to Lima for your flight home.
+| Day | Plan |
+|---|---|
+| Days 1-2 | Lima. Miraflores, Barranco, the historic centre, a long lunch. |
+| Days 3-4 | Fly to Cusco. Take it easy on day one, explore the old town on day two. |
+| Days 5-6 | Sacred Valley, sleeping in Ollantaytambo. |
+| Day 7 | Train to Aguas Calientes, then Machu Picchu early the next morning. |
+| Days 8-9 | Back to Cusco, then fly to Arequipa for the colonial centre, or on to Puno for the lake. |
+| Day 10 | Return to Lima for your flight home. |
 
 ## When to go
 

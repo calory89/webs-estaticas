@@ -53,15 +53,17 @@ The Saborna crkva is a calm 19th-century church near Kalemegdan, good for a shor
 
 - **Shop the markets.** Kalenić market in Vračar has fruit, cheese and honey, and is calmer than the central ones.
 
-## How many days and a suggested route
+## Belgrade itinerary: 3 days, day by day
 
 Three days is the sweet spot. Two works if you skip the museums. Four gives time for a day trip, for example to Novi Sad.
 
-**Day 1:** Republic Square, Knez Mihailova, Kalemegdan at sunset, dinner in Dorćol or Skadarlija.
+**3-day itinerary for Belgrade**
 
-**Day 2:** Church of Saint Sava in the morning, Tesla Museum, lunch in Vračar, then the House of Flowers. Evening on Strahinjića Bana or at a splav.
-
-**Day 3:** Zemun and Gardoš Tower, a fish lunch on the quay, and Ada Ciganlija if it is warm.
+| Day | Plan |
+|---|---|
+| Day 1 | Republic Square, Knez Mihailova, Kalemegdan at sunset, dinner in Dorćol or Skadarlija. |
+| Day 2 | Church of Saint Sava in the morning, Tesla Museum, lunch in Vračar, then the House of Flowers. Evening on Strahinjića Bana or at a splav. |
+| Day 3 | Zemun and Gardoš Tower, a fish lunch on the quay, and Ada Ciganlija if it is warm. |
 
 ## When to go
 

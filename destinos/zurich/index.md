@@ -59,15 +59,17 @@ El museo de arte principal, con una colección sólida que incluye a Giacometti,
 
 - **Mercadillos de Navidad:** en diciembre, el de la estación central, bajo un enorme árbol de cristales Swarovski, es de los más conocidos del país.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Zúrich en 3 días: ruta día a día
 
 Dos días completos bastan para ver lo esencial. Tres te permiten añadir una excursión o ir sin prisa.
 
-- **Día 1:** mañana en el casco viejo (Grossmünster, Lindenhof, Fraumünster), comida en Niederdorf, tarde por Bahnhofstrasse y paseo junto al lago hasta el atardecer.
+**Itinerario de 3 días en Zúrich**
 
-- **Día 2:** subida al Uetliberg por la mañana, comida en Zürich West y tarde en el Kunsthaus o en un Badi, según estación.
-
-- **Día 3 (opcional):** Lucerna o Rheinfall en tren.
+| Día | Plan |
+|---|---|
+| Día 1 | Mañana en el casco viejo (Grossmünster, Lindenhof, Fraumünster), comida en Niederdorf, tarde por Bahnhofstrasse y paseo junto al lago hasta el atardecer. |
+| Día 2 | Subida al Uetliberg por la mañana, comida en Zürich West y tarde en el Kunsthaus o en un Badi, según estación. |
+| Día 3 | (opcional). Lucerna o Rheinfall en tren. |
 
 ## Cuándo ir: clima y temporadas
 

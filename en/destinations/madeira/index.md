@@ -59,19 +59,19 @@ This fishing village sits just west of Funchal, with small boats pulled up by th
 
 - **Porto Santo:** A ferry connects to this separate island, famous for its long golden beach. It works as a day trip or an overnight if you want actual sand.
 
-## How many days and a suggested route
+## Madeira itinerary: 5 days, day by day
 
 Four to five days is a good number. Three is enough if you stay near Funchal and rent a car. A week lets you slow down and add Porto Santo.
 
-- **Day 1:** Funchal, with the market in the morning, Zona Velha, and dinner in the old town.
+**5-day itinerary for Madeira**
 
-- **Day 2:** Monte and its garden, then Câmara de Lobos and Cabo Girão in the afternoon.
-
-- **Day 3:** Pico do Arieiro at sunrise, then the Pico Ruivo trail or a milder walk if the weather is poor.
-
-- **Day 4:** North coast loop: Santana, São Vicente, Seixal and Porto Moniz.
-
-- **Day 5:** Ponta de São Lourenço in the morning, then an easy afternoon.
+| Day | Plan |
+|---|---|
+| Day 1 | Funchal, with the market in the morning, Zona Velha, and dinner in the old town. |
+| Day 2 | Monte and its garden, then Câmara de Lobos and Cabo Girão in the afternoon. |
+| Day 3 | Pico do Arieiro at sunrise, then the Pico Ruivo trail or a milder walk if the weather is poor. |
+| Day 4 | North coast loop: Santana, São Vicente, Seixal and Porto Moniz. |
+| Day 5 | Ponta de São Lourenço in the morning, then an easy afternoon. |
 
 ## When to go
 

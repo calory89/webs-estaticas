@@ -81,31 +81,15 @@ Mucho de lo mejor de la ciudad no cuesta nada. Los miradores (San Nicolás, San 
 
 También puedes pasear por el bosque de la Alhambra (la Cuesta de Gomérez y sus alrededores) sin entrada. Y lo de cenar a base de tapas incluidas con la bebida es literal: con 4 o 5 cañas cenas por menos de 15 €.
 
-## Itinerario: Granada en 3 días
+## Qué ver en Granada en 3 días: ruta día a día
 
-### Día 1: la Alhambra
+**Itinerario de 3 días en Granada**
 
-**Mañana:** entra pronto a la Alhambra, con pase de Nazaríes temprano. Alcazaba, palacios, Palacio de Carlos V y Generalife. Sube andando por la Cuesta de Gomérez desde Plaza Nueva (20 minutos de cuesta) o en el bus C30.
-
-**Tarde:** baja por el bosque y come en el Realejo. Después, siesta o paseo tranquilo por el barrio y sus murales.
-
-**Noche:** tapas por el Campo del Príncipe y la Calle Molinos.
-
-### Día 2: Albaicín y Sacromonte
-
-**Mañana:** desde Plaza Nueva, Carrera del Darro, El Bañuelo y Paseo de los Tristes. Sube al Albaicín por la Cuesta del Chapiz, recorre placetas y asómate a San Nicolás antes de que se llene.
-
-**Tarde:** come algo en la zona de Plaza Larga, sigue hacia el Sacromonte y visita el museo de las cuevas.
-
-**Noche:** zambra en una cueva del Sacromonte o atardecer en San Cristóbal y té en Calderería Nueva.
-
-### Día 3: centro y monasterios
-
-**Mañana:** Capilla Real, catedral, Alcaicería y Corral del Carbón. Churros en Café Fútbol a media mañana.
-
-**Tarde:** San Jerónimo andando, y luego bus a la Cartuja. Si prefieres otra cosa, baños árabes.
-
-**Noche:** ruta de tapas por Calle Elvira y Calle Navarrete, o alrededor de la Plaza de Bib-Rambla.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · La Alhambra | Entra pronto a la Alhambra, con pase de Nazaríes temprano. Alcazaba, palacios, Palacio de Carlos V y Generalife. Sube andando por la Cuesta de Gomérez desde Plaza Nueva (20 minutos de cuesta) o en el bus C30. | Baja por el bosque y come en el Realejo. Después, siesta o paseo tranquilo por el barrio y sus murales. | Tapas por el Campo del Príncipe y la Calle Molinos. |
+| Día 2 · Albaicín y Sacromonte | Desde Plaza Nueva, Carrera del Darro, El Bañuelo y Paseo de los Tristes. Sube al Albaicín por la Cuesta del Chapiz, recorre placetas y asómate a San Nicolás antes de que se llene. | Come algo en la zona de Plaza Larga, sigue hacia el Sacromonte y visita el museo de las cuevas. | Zambra en una cueva del Sacromonte o atardecer en San Cristóbal y té en Calderería Nueva. |
+| Día 3 · Centro y monasterios | Capilla Real, catedral, Alcaicería y Corral del Carbón. Churros en Café Fútbol a media mañana. | San Jerónimo andando, y luego bus a la Cartuja. Si prefieres otra cosa, baños árabes. | Ruta de tapas por Calle Elvira y Calle Navarrete, o alrededor de la Plaza de Bib-Rambla. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -169,9 +153,12 @@ Dentro de la ciudad casi todo se hace andando. Para las cuestas existen los **mi
 
 Presupuesto por persona y día, sin vuelos y compartiendo habitación doble:
 
-- **Ajustado: unos 55 a 70 €.** Hostal o apartamento sencillo (25-35 € por cabeza), cenas de tapas, menú del día y monumentos gratis más la Alhambra un día.
+**Presupuesto orientativo por día**
 
-- **Medio: unos 100 a 140 €.** Hotel céntrico (45-70 € por cabeza), comidas en restaurante, Alhambra, Capilla Real, una zambra o baños árabes.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | unos 55 a 70 € | Hostal o apartamento sencillo (25-35 € por cabeza), cenas de tapas, menú del día y monumentos gratis más la Alhambra un día. |
+| Medio | unos 100 a 140 € | Hotel céntrico (45-70 € por cabeza), comidas en restaurante, Alhambra, Capilla Real, una zambra o baños árabes. |
 
 La Alhambra es el gasto obligado. Todo lo demás se puede ajustar mucho.
 

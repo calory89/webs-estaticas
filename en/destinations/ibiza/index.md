@@ -95,25 +95,15 @@ Ibiza is expensive, but the best bits cost nothing. Every beach is public, inclu
 
 ## Ibiza itinerary: 5 days
 
-### Day 1: Ibiza Town
+**5-day itinerary for Ibiza**
 
-**Morning:** coffee and an ensaimada around Vara de Rey, the elegant boulevard of the new town, then walk the Marina port district. **Afternoon:** Puig des Molins necropolis, then up into Dalt Vila for the cathedral and the bastions. **Evening:** dinner in the Marina or Dalt Vila, a drink overlooking the port, and Pacha if you want a club night.
-
-### Day 2: The south and Ses Salines
-
-**Morning:** beach early at Ses Salines, walk the salt flats. **Afternoon:** move to Es Cavallet or stay put, lunch at a beach chiringuito. **Evening:** back to town, or head to Playa d'en Bossa if you want Ushuaïa or Hï.
-
-### Day 3: The west coast and Es Vedrà
-
-**Morning:** Cala Salada and Saladeta for a swim. **Afternoon:** drive via Sant Josep and Sant Agustí, lunch on a terrace, then Cala d'Hort. **Evening:** sunset at Torre des Savinar, then dinner in Sant Josep or back towards Sant Antoni.
-
-### Day 4: The north and the villages
-
-**Morning:** Sant Miquel church and Cova de Can Marçà. **Afternoon:** Cala d'en Serra or Portinatx, with a stop at Santa Gertrudis on the way back. **Evening:** Benirràs drums if it is Sunday, otherwise dinner in Santa Eulària's seafront.
-
-### Day 5: Formentera
-
-**Morning:** early ferry from Ibiza port to La Savina. Rent a scooter or e-bike and head to Ses Illetes. **Afternoon:** lunch on the beach, then the lighthouse at Cap de Barbaria. **Evening:** ferry back, a last dinner in Ibiza Town.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Ibiza Town | Coffee and an ensaimada around Vara de Rey, the elegant boulevard of the new town, then walk the Marina port district. | Puig des Molins necropolis, then up into Dalt Vila for the cathedral and the bastions. | Dinner in the Marina or Dalt Vila, a drink overlooking the port, and Pacha if you want a club night. |
+| Day 2 · The south and Ses Salines | Beach early at Ses Salines, walk the salt flats. | Move to Es Cavallet or stay put, lunch at a beach chiringuito. | Back to town, or head to Playa d'en Bossa if you want Ushuaïa or Hï. |
+| Day 3 · The west coast and Es Vedrà | Cala Salada and Saladeta for a swim. | Drive via Sant Josep and Sant Agustí, lunch on a terrace, then Cala d'Hort. | Sunset at Torre des Savinar, then dinner in Sant Josep or back towards Sant Antoni. |
+| Day 4 · The north and the villages | Sant Miquel church and Cova de Can Marçà. | Cala d'en Serra or Portinatx, with a stop at Santa Gertrudis on the way back. | Benirràs drums if it is Sunday, otherwise dinner in Santa Eulària's seafront. |
+| Day 5 · Formentera | Early ferry from Ibiza port to La Savina. Rent a scooter or e-bike and head to Ses Illetes. | Lunch on the beach, then the lighthouse at Cap de Barbaria. | Ferry back, a last dinner in Ibiza Town. |
 
 ## What is overrated (and what to do instead)
 

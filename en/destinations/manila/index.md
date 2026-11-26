@@ -105,29 +105,13 @@ Manila is cheap to see, and the best museums cost nothing.
 
 ## Manila itinerary: 3 days
 
-### Day 1: Intramuros and the museums
+**3-day itinerary for Manila**
 
-**Morning:** Be at Fort Santiago when it opens, then walk south through Intramuros to the Manila Cathedral, San Agustin and Casa Manila. Rent a Bambike if the heat is already bad.
-
-**Afternoon:** Lunch in Intramuros, then cross Rizal Park to the National Museum. Do Fine Arts and Natural History, and save Anthropology if you still have energy.
-
-**Evening:** Grab a car to Roxas Boulevard or the Mall of Asia seafront for sunset, with dinner nearby or back in Makati.
-
-### Day 2: Binondo, Escolta and Quiapo
-
-**Morning:** Skip breakfast. Start at Binondo Church around 10am and eat along Ongpin and Carvajal Street.
-
-**Afternoon:** Walk to Escolta for the old buildings, then on to Quiapo Church and the market streets. Add the Chinese Cemetery with a guide if you are curious.
-
-**Evening:** Head back to Makati and spend the night in Poblacion for drinks and dinner.
-
-### Day 3: Makati and BGC
-
-**Morning:** On a Saturday or Sunday, start at the Salcedo or Legazpi market. Otherwise go straight to the Ayala Museum.
-
-**Afternoon:** Take a Grab to the Manila American Cemetery, then walk the BGC murals and around Bonifacio High Street.
-
-**Evening:** Dinner in BGC or Poblacion, then karaoke if you have a group.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Intramuros and the museums | Be at Fort Santiago when it opens, then walk south through Intramuros to the Manila Cathedral, San Agustin and Casa Manila. Rent a Bambike if the heat is already bad. | Lunch in Intramuros, then cross Rizal Park to the National Museum. Do Fine Arts and Natural History, and save Anthropology if you still have energy. | Grab a car to Roxas Boulevard or the Mall of Asia seafront for sunset, with dinner nearby or back in Makati. |
+| Day 2 · Binondo, Escolta and Quiapo | Skip breakfast. Start at Binondo Church around 10am and eat along Ongpin and Carvajal Street. | Walk to Escolta for the old buildings, then on to Quiapo Church and the market streets. Add the Chinese Cemetery with a guide if you are curious. | Head back to Makati and spend the night in Poblacion for drinks and dinner. |
+| Day 3 · Makati and BGC | On a Saturday or Sunday, start at the Salcedo or Legazpi market. Otherwise go straight to the Ayala Museum. | Take a Grab to the Manila American Cemetery, then walk the BGC murals and around Bonifacio High Street. | Dinner in BGC or Poblacion, then karaoke if you have a group. |
 
 ## What is overrated (and what to do instead)
 
@@ -187,11 +171,13 @@ Getting around, Grab is the default. Three rail lines help: **LRT-1** runs north
 
 ## How much a trip to Manila costs
 
-- **Shoestring: €30-40 a day.** A hostel dorm (€12-15), carinderia meals and street food (€6-8), trains and jeepneys (€2), free museums, and a couple of beers.
+**Rough daily budget**
 
-- **Mid-range: €80-120 a day.** A good hotel in Makati (€45-70), restaurant meals (€25-35), Grab rides (€10-15), and paid museums or a tour.
-
-- **Comfortable: €180+ a day.** A 5-star hotel in Makati or BGC, top restaurants, and a driver for day trips.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €30-40 a day | A hostel dorm (€12-15), carinderia meals and street food (€6-8), trains and jeepneys (€2), free museums, and a couple of beers. |
+| Mid-range | €80-120 a day | A good hotel in Makati (€45-70), restaurant meals (€25-35), Grab rides (€10-15), and paid museums or a tour. |
+| Comfortable | €180+ a day | A 5-star hotel in Makati or BGC, top restaurants, and a driver for day trips. |
 
 ## Day trips from Manila
 

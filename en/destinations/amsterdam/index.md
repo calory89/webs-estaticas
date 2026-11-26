@@ -41,17 +41,18 @@ Spend an evening in a brown café, the old wood-panelled pubs where beer comes i
 
 For a change of pace, cross to the A'DAM Lookout for views over the IJ, or browse the boutiques in the Nine Streets, a grid of small shops between the main canals.
 
-## How many days and a suggested route
+## Amsterdam itinerary: 4 days, day by day
 
 Three days is the sweet spot. Two works if you skip museums, and four lets you add a day trip.
 
-- **Day 1: the old centre.** Early canal walk, Begijnhof, the Nine Streets, lunch near Spui, then a canal cruise or the Rembrandthuis. Evening drinks in the Jordaan.
+**4-day itinerary for Amsterdam**
 
-- **Day 2: museums and parks.** Rijksmuseum at opening, a walk through Vondelpark, Van Gogh Museum in the afternoon. Dinner in De Pijp.
-
-- **Day 3: Jordaan, Anne Frank and Noord.** Anne Frank Huis at your booked slot, a slow Jordaan lunch, then the ferry to Noord for an afternoon at NDSM or EYE.
-
-- **Day 4, if you have it:** Haarlem (about 15 minutes by train) for a calmer, more compact version of Amsterdam, or Zaanse Schans for windmills. In spring, Keukenhof's tulip gardens are the big draw.
+| Day | Plan |
+|---|---|
+| Day 1 | The old centre. Early canal walk, Begijnhof, the Nine Streets, lunch near Spui, then a canal cruise or the Rembrandthuis. Evening drinks in the Jordaan. |
+| Day 2 | Museums and parks. Rijksmuseum at opening, a walk through Vondelpark, Van Gogh Museum in the afternoon. Dinner in De Pijp. |
+| Day 3 | Jordaan, Anne Frank and Noord. Anne Frank Huis at your booked slot, a slow Jordaan lunch, then the ferry to Noord for an afternoon at NDSM or EYE. |
+| Day 4 | If you have it. Haarlem (about 15 minutes by train) for a calmer, more compact version of Amsterdam, or Zaanse Schans for windmills. In spring, Keukenhof's tulip gardens are the big draw. |
 
 ## When to go
 

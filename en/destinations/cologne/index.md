@@ -99,21 +99,12 @@ A lot of what to see in Cologne costs nothing. The cathedral nave, Groß St. Mar
 
 ## Cologne itinerary: 2 days
 
-### Day 1: Dom, old town and the Rhine
+**2-day itinerary for Cologne**
 
-**Morning:** Be at the cathedral when it opens, then climb the south tower before the queue builds. Walk down to Museum Ludwig next door for a couple of hours.
-
-**Afternoon:** Have a late lunch at Früh am Dom or Gaffel am Dom (Halve Hahn and a Kölsch), then wander through the Altstadt to Groß St. Martin and Fischmarkt. Follow the river south to the Rheinauhafen and the Chocolate Museum if you want it.
-
-**Evening:** Walk back and cross the Hohenzollern Bridge to the KölnTriangle for sunset. Return for dinner at Malzmühle or Peters Brauhaus.
-
-### Day 2: History, neighbourhoods and nightlife
-
-**Morning:** Visit the EL-DE-Haus, then St. Gereon, a ten-minute walk away. If you prefer art, swap in the Wallraf-Richartz or Kolumba.
-
-**Afternoon:** Walk west across the Ring to the Belgian Quarter. Have coffee, browse the shops and eat lunch around Brüsseler Platz and Aachener Straße.
-
-**Evening:** Take the tram or S-Bahn to Ehrenfeld for murals at dusk, cheap dinner on Venloer Straße and a bar or club. If you'd rather stay central, Päffgen on Friesenstraße is the most local of the big Brauhäuser.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Dom, old town and the Rhine | Be at the cathedral when it opens, then climb the south tower before the queue builds. Walk down to Museum Ludwig next door for a couple of hours. | Have a late lunch at Früh am Dom or Gaffel am Dom (Halve Hahn and a Kölsch), then wander through the Altstadt to Groß St. Martin and Fischmarkt. Follow the river south to the Rheinauhafen and the Chocolate Museum if you want it. | Walk back and cross the Hohenzollern Bridge to the KölnTriangle for sunset. Return for dinner at Malzmühle or Peters Brauhaus. |
+| Day 2 · History, neighbourhoods and nightlife | Visit the EL-DE-Haus, then St. Gereon, a ten-minute walk away. If you prefer art, swap in the Wallraf-Richartz or Kolumba. | Walk west across the Ring to the Belgian Quarter. Have coffee, browse the shops and eat lunch around Brüsseler Platz and Aachener Straße. | Take the tram or S-Bahn to Ehrenfeld for murals at dusk, cheap dinner on Venloer Straße and a bar or club. If you'd rather stay central, Päffgen on Friesenstraße is the most local of the big Brauhäuser. |
 
 ## What is overrated (and what to do instead)
 
@@ -179,9 +170,12 @@ Within the city, the centre is walkable. KVB trams and U-Bahn lines cover the re
 
 ## How much a trip to Cologne costs
 
-- **Shoestring (about €70-90 a day):** hostel bed €30-45, bakery breakfast, döner lunch, supermarket beers in the Rheinpark, free churches and one paid sight, 24-hour transport ticket.
+**Rough daily budget**
 
-- **Mid-range (about €170-250 a day per person, sharing a room):** central hotel €120-180 split two ways, Brauhaus lunch and dinner, two museums or the tower plus KölnTriangle, a few rounds of Kölsch, transport.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | about €70-90 a day | Hostel bed €30-45, bakery breakfast, döner lunch, supermarket beers in the Rheinpark, free churches and one paid sight, 24-hour transport ticket. |
+| Mid-range | about €170-250 a day per person, sharing a room | Central hotel €120-180 split two ways, Brauhaus lunch and dinner, two museums or the tower plus KölnTriangle, a few rounds of Kölsch, transport. |
 
 Budget extra during Carnival, Christmas market weekends and big trade fairs, when accommodation alone can double.
 

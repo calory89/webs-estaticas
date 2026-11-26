@@ -12,6 +12,7 @@ HERE = os.path.join(ROOT, '_hlc')
 import sys
 sys.path.insert(0, HERE)
 import top3 as T3
+import en_names
 import bk as BK
 API = 'https://gmdalfsvtfhzepyrdmjj.supabase.co/functions/v1/hlc-deals?action=feed'
 SITE = 'https://www.happylowcost.com'
@@ -140,6 +141,47 @@ def faq_html(qa, en=False):
 
 def faq_ld(qa, lang):
     return {"@type": "FAQPage", "inLanguage": lang, "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in qa]}
+
+
+def deal_md(x, url, title, qa, en=False):
+    """Versión Markdown de un chollo vivo (index.md) para asistentes de IA: solo datos del feed (ronda SEO 3)."""
+    f = x['facts']
+    L = (lambda a, b: b if en else a)
+    rows = [(L('Precio', 'Price'), (f'€{x.get("price")} ' + L('', 'return')) if en else f'{x.get("price")} € ida y vuelta'),
+            (L('Ida', 'Outbound'), f.get('ida')), (L('Vuelta', 'Return'), f.get('vuelta')), (L('Aerolínea', 'Airline'), f.get('aerolinea')),
+            (L('Escalas', 'Stops'), f.get('escalas') if f.get('escalas') is not None else None),
+            (L('Precio habitual de la ruta', 'Usual price on this route'), (f'€{f.get("precio_normal")}' if en else f'{f.get("precio_normal")} €') if f.get('precio_normal') else None),
+            (L('Ahorro', 'Saving'), f'{f.get("ahorro_pct")} %' if f.get('ahorro_pct') else None),
+            (L('Comprobado', 'Checked'), (checked(x) or '')[:10] or None)]
+    out = f'# {title}\n\n> ' + L('Chollo de vuelo verificado por Happy Low Cost. Página original', 'Flight deal verified by Happy Low Cost. Original page') + f': {url}\n\n'
+    out += ''.join(f'- **{k}:** {v}\n' for k, v in rows if v not in (None, ''))
+    out += '\n## ' + L('Preguntas frecuentes', 'FAQ') + '\n\n' + ''.join(f'### {q}\n\n{a}\n\n' for q, a in qa)
+    out += L('Los precios cambian cada hora: comprueba el precio en la página original antes de reservar.\n', 'Fares change by the hour: check the live price on the original page before booking.\n')
+    return out.replace(' — ', ', ').replace('—', ', ')
+
+
+def deal_seo_title(f, price, en=False, trip_=''):
+    """Título del chollo con el ahorro (% sobre el precio normal de la ruta) y la fecha, recortado para que quepa (ronda SEO 3)."""
+    o, d = f.get('origen'), f.get('destino')
+    try:
+        pct = int(round(float(f.get('ahorro_pct') or 0)))
+    except Exception:
+        pct = 0
+    if en:
+        base = f'Flights {o} → {d} for €{price} {trip_}'.rstrip()
+        parts = [f' ({pct}% off)' if pct >= 20 else '', f' · {f.get("periodo_en")}' if f.get('periodo_en') else '', ' · Verified deal']
+    else:
+        base = f"Vuelos {o} → {d} por {price} € {f.get('tipo', '')}".rstrip()
+        per = f.get('periodo')
+        if not per and re.match(r'\d{4}-\d\d', f.get('ida') or ''):
+            per = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'][int(f['ida'][5:7]) - 1] + ' ' + f['ida'][:4]
+        parts = [f' (-{pct} %)' if pct >= 20 else '', f" en {per}" if per else '',
+                 f" con {f.get('aerolinea')}" if f.get('aerolinea') and len(f.get('aerolinea')) < 22 else '']
+    t = base
+    for p_ in parts:
+        if p_ and len(t + p_) <= 72:
+            t += p_
+    return t
 
 
 def quick_answer(x):
@@ -704,6 +746,164 @@ def guide_image_ld(slug, name, lang='es'):
     return im
 
 
+# ---------- ronda SEO 3 (26-nov-2026): itinerario, lugares y presupuesto estructurados ----------
+_DSPEC = r'(?:D[ií]as?|Days?)\s*(\d{1,2})(?:\s*(?:-|–|y|a|al|and|to)\s*(\d{1,2}))?'
+_DAY_A = re.compile(r'<(li|p)>\s*<strong>\s*' + _DSPEC + r'\b([^<]*)</strong>(.*?)</\1>', re.S | re.I)
+_DAY_B = re.compile(r'<h3>\s*' + _DSPEC + r'\b([^<]*)</h3>(.*?)(?=<h3>|$)', re.S | re.I)
+_PARTS = (('mañana', r'mañana|morning'), ('tarde', r'tarde|afternoon'), ('noche', r'noche|evening|night'))
+
+
+def _plain(h):
+    return re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', ' ', h or ''))).strip()
+
+
+def _cap(t):
+    return t[:1].upper() + t[1:] if t else t
+
+
+def _day_parts(h):
+    """{'mañana': ..., 'tarde': ..., 'noche': ...} cuando la guía marca los tramos en negrita (Mañana:/Morning:)."""
+    out = {}
+    marks = list(re.finditer(r'<strong>\s*([^<:]{3,20}?)\s*:?\s*</strong>\s*:?', h))
+    for k, m in enumerate(marks):
+        lab = m.group(1).strip().lower()
+        for key, rx in _PARTS:
+            if re.fullmatch(rf'(?:por la |de |in the |the )?(?:{rx})', lab):
+                end = marks[k + 1].start() if k + 1 < len(marks) else len(h)
+                out[key] = _cap(_plain(h[m.end():end]).lstrip(' :.,'))
+    return out
+
+
+def guide_itinerary(gh, name, nd, lang='es'):
+    """Ruta día a día de la propia guía en tabla (Día | Plan, o Día | Mañana | Tarde | Noche si la guía lo separa)
+    y como TouristTrip para buscadores e IA. También pone el H2 literal de la consulta ("Qué ver en X en N días" /
+    "X itinerary: N days"). Devuelve (gh, trip_ld). Sin días seguidos en el texto no toca nada (ronda SEO 3)."""
+    es = lang == 'es'
+    for m in re.finditer(r'<h2>(.*?)</h2>(.*?)(?=<h2>|$)', gh, re.S):
+        sec = m.group(2)
+        for rx, kind in ((_DAY_A, 'a'), (_DAY_B, 'b')):
+            ms = list(rx.finditer(sec))
+            if len(ms) < 2:
+                continue
+            items, nxt, ok = [], 1, True
+            for d in ms:
+                a, b = int(d.group(2) if kind == 'a' else d.group(1)), d.group(3) if kind == 'a' else d.group(2)
+                b = int(b) if b else a
+                if a != nxt or b < a:
+                    ok = False
+                    break
+                nxt = b + 1
+                lab = _plain(d.group(4) if kind == 'a' else d.group(3)).strip(' ,.:;')
+                body_ = d.group(5) if kind == 'a' else d.group(4)
+                items.append((a, b, _cap(lab), _cap(_plain(body_).lstrip(' :.,')), _day_parts(body_)))
+            if ok:
+                break
+        else:
+            continue
+        if not ok:
+            continue
+        last = items[-1][1]
+        n = nd if nd and nd >= last else last
+        D = ('Día', 'Días') if es else ('Day', 'Days')
+        dl = (lambda a, b: f'{D[0]} {a}' if a == b else f'{D[1]} {a}-{b}')
+        # tres columnas solo si los tramos recogen todo el texto del día (no se pierde nada de la guía)
+        three = all(len(it[4]) >= 2 and sum(len(v) for v in it[4].values()) >= 0.85 * len(re.sub(r'(?i)\b(por la )?(mañana|tarde|noche|morning|afternoon|evening|night)\s*:', '', it[3])) for it in items)
+        if three:
+            H = ('Mañana', 'Tarde', 'Noche') if es else ('Morning', 'Afternoon', 'Evening')
+            head_ = f'<th scope="col">{D[0]}</th>' + ''.join(f'<th scope="col">{h_}</th>' for h_ in H)
+            rows = ''.join(f'<tr><th scope="row">{dl(a, b)}' + (f'<br><small>{e(lab)}</small>' if lab else '') + '</th>' + ''.join(f'<td>{e(pt.get(k_, ""))}</td>' for k_, _r in _PARTS) + '</tr>' for a, b, lab, txt, pt in items)
+        else:
+            head_ = f'<th scope="col">{D[0]}</th><th scope="col">Plan</th>'
+            rows = ''.join(f'<tr><th scope="row">{dl(a, b)}</th><td>' + (f'<b>{e(lab)}.</b> ' if lab else '') + f'{e(txt)}</td></tr>' for a, b, lab, txt, pt in items)
+        cap = (f'Itinerario de {n} días en {name}' if es else f'{n}-day itinerary for {name}')
+        tbl = f'<div class="g-tw" role="region" tabindex="0" aria-label="{e(cap)}"><table class="g-itin"><caption>{e(cap)}</caption><thead><tr>{head_}</tr></thead><tbody>{rows}</tbody></table></div>'
+        first, lastm = ms[0], ms[-1]
+        rx_ = _DAY_A if kind == 'a' else _DAY_B
+        mid = rx_.sub('', sec[first.start():lastm.end()])
+        new = sec[:first.start()] + '\x00' + mid + sec[lastm.end():]
+        new = re.sub(r'<ul>\s*\x00\s*</ul>', '\x00', new)
+        new = re.sub(r'<ul>\s*</ul>', '', new).replace('\x00', tbl)
+        h2 = m.group(1)
+        lit = (f'Qué ver en {name} en {n} días' if es else f'{name} itinerary: {n} days')
+        if lit.lower() not in _plain(h2).lower():
+            h2 = e(f'{lit}: ruta día a día' if es else f'{lit}, day by day')
+        gh = gh[:m.start()] + f'<h2>{h2}</h2>' + new + gh[m.end():]
+        trip = {"@type": "TouristTrip", "name": cap, "itinerary": {"@type": "ItemList", "numberOfItems": len(items), "itemListElement": [
+            {"@type": "ListItem", "position": k + 1, "name": dl(a, b) + (f': {lab}' if lab else ''), "description": _first_sentence(txt, 300)} for k, (a, b, lab, txt, pt) in enumerate(items)]}}
+        return gh, trip
+    return gh, None
+
+
+def guide_attractions(gh):
+    """Lugares de la sección "Qué ver" (nombre en negrita + descripción de la guía) como TouristAttraction."""
+    for m in re.finditer(r'<h2>(.*?)</h2>(.*?)(?=<h2>|$)', gh, re.S):
+        if not re.search(r'qu[eé] ver|what to see|sights|top sights', _plain(m.group(1)), re.I) or re.search(r'd[ií]as|days', _plain(m.group(1)), re.I):
+            continue
+        out = []
+        pairs = [(li.group(1), li.group(2)) for li in re.finditer(r'<li>\s*<strong>(.*?)</strong>(.*?)</li>', m.group(2), re.S)]
+        if len(pairs) < 3:
+            pairs = [(h_.group(1), h_.group(2)) for h_ in re.finditer(r'<h3>(.*?)</h3>\s*(.*?)(?=<h3>|$)', m.group(2), re.S)]
+        for li_name, li_body in pairs:
+            nm = _plain(li_name).rstrip(' .:,;')
+            if 2 < len(nm) < 90:
+                d_ = _first_sentence(li_body, 240)
+                out.append({"@type": "TouristAttraction", "name": nm, **({"description": d_} if len(d_) > 20 else {})})
+        if len(out) >= 3:
+            return out[:20]
+    return []
+
+
+def guide_budget(gh, lang='es'):
+    """Sección de presupuesto por día en tabla (Nivel | Por día | Qué incluye) con las cifras de la guía.
+    Devuelve (gh, importe del nivel más barato en texto o '')."""
+    es = lang == 'es'
+    for m in re.finditer(r'<h2>(.*?)</h2>(.*?)(?=<h2>|$)', gh, re.S):
+        h2t = _plain(m.group(1))
+        if not re.search(r'presupuesto|budget|cu[aá]nto cuesta|how much', h2t, re.I) or re.search(r'dormir|alojar|stay|sleep', h2t, re.I):
+            continue
+        ul = re.search(r'<ul>(.*?)</ul>', m.group(2), re.S)
+        if not ul:
+            continue
+        rows, rest = [], []
+        for li in re.findall(r'<li>(.*?)</li>', ul.group(1), re.S):
+            mm = re.match(r'\s*<strong>(.*?)</strong>(.*)', li, re.S)
+            lab = _plain(mm.group(1)).rstrip(' :.') if mm else ''
+            am = (re.match(r'(.*?)\s*\(([^()]*\d[^()]*)\)$', lab) or re.match(r'(.*?)[,:]\s*([^,:]*\d[^,:]*)$', lab)) if mm else None
+            if am and re.search(r'€|eur|£|\$|usd', am.group(2), re.I) and not re.search(r'entrada|ticket|vuelo|flight', am.group(1), re.I):
+                rows.append((am.group(1).strip(), am.group(2).strip(), _cap(_plain(mm.group(2)).lstrip(' :.,'))))
+            else:
+                rest.append(li)
+        if len(rows) < 2:
+            continue
+        H = ('Nivel', 'Por persona y día', 'Qué incluye') if es else ('Level', 'Per person per day', 'What it covers')
+        tbl = (f'<div class="g-tw" role="region" tabindex="0" aria-label="{"Presupuesto por día" if es else "Daily budget"}"><table class="g-bud"><caption>{"Presupuesto orientativo por día" if es else "Rough daily budget"}</caption><thead><tr>' + ''.join(f'<th scope="col">{h}</th>' for h in H)
+               + '</tr></thead><tbody>' + ''.join(f'<tr><th scope="row">{e(a)}</th><td>{e(b)}</td><td>{e(c)}</td></tr>' for a, b, c in rows) + '</tbody></table></div>'
+               + (('<ul>' + ''.join(f'<li>{x}</li>' for x in rest) + '</ul>') if rest else ''))
+        sec = m.group(2)[:ul.start()] + tbl + m.group(2)[ul.end():]
+        gh = gh[:m.start(2)] + sec + gh[m.end(2):]
+        amt = re.sub(r'(?i)\s*(al d[ií]a|por d[ií]a|por persona|a day|per day|per person|pp)\b\.?', '', rows[0][1]).strip(' ,.')
+        return gh, amt
+    return gh, ''
+
+
+def nearby_guides(p, have, n=3):
+    """Las n guías más cercanas en km (por coordenadas), para enlazar destinos que se combinan en un viaje."""
+    import math
+    if p.get('y') is None:
+        return []
+    def km(a, b):
+        la1, lo1, la2, lo2 = map(math.radians, (a['y'], a['x'], b['y'], b['x']))
+        h = math.sin((la2 - la1) / 2) ** 2 + math.cos(la1) * math.cos(la2) * math.sin((lo2 - lo1) / 2) ** 2
+        return 6371 * 2 * math.asin(math.sqrt(h))
+    c = sorted(((km(p, q), q) for q in DLIB if q['s'] in have and q['s'] != p['s'] and q.get('y') is not None), key=lambda t: t[0])
+    return [(round(d_ / 10) * 10, q) for d_, q in c[:n] if d_ < 2500]
+
+
+GUIDE_TABLE_CSS = ('<style>.deal-body>.txt{min-width:0}.g-tw{overflow-x:auto;max-width:100%;margin:14px 0}.g-itin,.g-bud{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;font-size:15px;line-height:1.5}'
+                   '.g-itin caption,.g-bud caption{text-align:left;font-weight:700;padding:0 0 6px}.g-itin th,.g-itin td,.g-bud th,.g-bud td{padding:10px 12px;border-bottom:1px solid #EADCC4;text-align:left;vertical-align:top}'
+                   '.g-itin th[scope=row]{white-space:nowrap}.g-near{display:flex;flex-wrap:wrap;gap:8px}</style>')
+
+
 def hero_preload(hero, lib=None):
     """Precarga de la foto de cabecera (LCP); con foto de la biblioteca, la de 800 px en móvil."""
     if not hero:
@@ -719,6 +919,16 @@ def guide_md(title, url, gh, name, days, updated_iso, lang='es', extra=''):
     """Versión Markdown de la guía (index.md) para asistentes de IA: mismo contenido, sin plantilla."""
     t = gh or ''
     t = re.sub(r'<nav class="g-toc".*?</nav>', '', t, flags=re.S)
+
+    def _tbl(m_):
+        cap = re.search(r'<caption>(.*?)</caption>', m_.group(1), re.S)
+        rows = [[re.sub(r'\s+', ' ', re.sub(r'<br\s*/?>', ' · ', c)).strip().replace('|', '/') for c in re.findall(r'<t[hd][^>]*>(.*?)</t[hd]>', r_, re.S)] for r_ in re.findall(r'<tr>(.*?)</tr>', m_.group(1), re.S)]
+        rows = [[re.sub(r'<[^>]+>', '', c) for c in r_] for r_ in rows if r_]
+        if not rows:
+            return ''
+        md = ('\n\n**' + re.sub(r'<[^>]+>', '', cap.group(1)) + '**\n\n' if cap else '\n\n') + '| ' + ' | '.join(rows[0]) + ' |\n|' + '---|' * len(rows[0]) + '\n'
+        return md + ''.join('| ' + ' | '.join(r_) + ' |\n' for r_ in rows[1:]) + '\n'
+    t = re.sub(r'<div class="g-tw"[^>]*>(.*?)</table></div>', _tbl, t, flags=re.S)
     t = re.sub(r'<h2[^>]*>(.*?)</h2>', lambda m: '\n\n## ' + re.sub('<[^>]+>', '', m.group(1)).strip() + '\n\n', t, flags=re.S)
     t = re.sub(r'<h3[^>]*>(.*?)</h3>', lambda m: '\n\n### ' + re.sub('<[^>]+>', '', m.group(1)).strip() + '\n\n', t, flags=re.S)
     t = re.sub(r'<li>(.*?)</li>', lambda m: '\n- ' + re.sub(r'\s+', ' ', m.group(1)).strip(), t, flags=re.S)
@@ -919,6 +1129,48 @@ def filters_html(deals):
 </div>'''
 
 
+def ideas_faq(sub, h1, en=False, budget=None):
+    """FAQ con datos reales de los chollos de una página de ideas + enlaces a los hubs de precios del mismo presupuesto (ronda SEO 3)."""
+    if not sub:
+        return ''
+    import gen_en as _E
+    L = (lambda a, b: b if en else a)
+    nm = (lambda x: _E.names(x)) if en else (lambda x: (x['facts'].get('origen'), x['facts'].get('destino')))
+    c0 = min(sub, key=lambda x: x.get('price') or 99999)
+    o0, d0 = nm(c0)
+    f0 = c0['facts']
+    orig = {}
+    for x in sub:
+        orig[nm(x)[0]] = orig.get(nm(x)[0], 0) + 1
+    dests = {}
+    for x in sorted(sub, key=lambda x: x.get('price') or 99999):
+        dests.setdefault(nm(x)[1], x.get('price'))
+    pr = (lambda v: f'€{v}') if en else (lambda v: f'{v} €')
+    hl = h1[:1].lower() + h1[1:]
+    qa = [(L(f'¿Cuál es el chollo más barato de {hl}?', f'What is the cheapest deal in {hl}?'),
+           L(f'{o0} → {d0} por {c0["price"]} € ida y vuelta' + (f', del {fecha(f0.get("ida"))} al {fecha(f0.get("vuelta"))}' if f0.get('vuelta') else '') + '.',
+             f'{o0} → {d0} for €{c0["price"]} return' + (f', {_E.date_en(f0.get("ida"))} to {_E.date_en(f0.get("vuelta"))}' if f0.get('vuelta') else '') + '.')),
+          (L('¿Desde qué ciudades salen?', 'Which cities do they leave from?'),
+           ', '.join(f'{k} ({v})' for k, v in sorted(orig.items(), key=lambda kv: -kv[1])[:8]) + '.'),
+          (L('¿A qué destinos hay chollos?', 'Which destinations have deals?'),
+           ', '.join(f'{k} ({L("desde", "from")} {pr(v)})' for k, v in list(dests.items())[:8]) + '.'),
+          (L('¿Cada cuánto se actualizan?', 'How often are they updated?'),
+           L('Volvemos a comprobar cada chollo activo una vez al día y lo retiramos si ha subido más de un 10 %.', 'We re-check every live deal once a day and remove it if it has gone up more than 10%.'))]
+    ld = {"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": L('es-ES', 'en'), "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in qa]}
+    links = ''
+    if budget:
+        hubs = []
+        for o_ in sorted(orig, key=lambda k: -orig[k]):
+            sl = slugify(o_)
+            pth = f'en/flights/from/{sl}' if en else f'vuelos/desde/{sl}'
+            if os.path.isfile(os.path.join(pth, 'index.html')):
+                hubs.append(f'<a class="chip" href="/{pth}/#{"under" if en else "menos"}-{budget}">{e(L(f"Desde {o_} por menos de {budget} €", f"From {o_} under €{budget}"))}</a>')
+        if hubs:
+            links = f'<h2>{L("Más rutas del mismo presupuesto", "More routes on the same budget")}</h2><div class="chips" style="flex-wrap:wrap">' + ''.join(hubs[:8]) + '</div>'
+    return (f'<section class="sec" style="padding-top:10px">{links}<h2>{L("Preguntas frecuentes", "FAQ")}</h2><div class="txt guide">'
+            + ''.join(f'<h3>{e(q)}</h3><p>{e(a)}</p>' for q, a in qa) + f'</div><script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script></section>')
+
+
 IDEAS_EN = {'fin-de-semana': 'weekend-getaways', 'menos-de-50-euros': 'under-50', 'menos-de-100-euros': 'under-100', 'larga-distancia': 'long-haul', 'directos': 'nonstop', 'navidad-2026': 'christmas-2026'}
 EN_ALT = {'chollos': '/en/deals/', **{f'chollos/ideas/{k}': f'/en/deals/ideas/{v}/' for k, v in IDEAS_EN.items()}}
 
@@ -1061,7 +1313,7 @@ def main():
         url = f'{SITE}/chollos/{slug}/'
         title = x.get('title') or f"{f.get('origen')} → {f.get('destino')} desde {f.get('precio')} €"
         h1t = clean_title(title)
-        seo_t = f"Vuelos {f.get('origen')} → {f.get('destino')} por {x.get('price')} € {f.get('tipo', '')}" + (f" en {f.get('periodo')}" if f.get('periodo') else '') + (f" con {f.get('aerolinea')}" if f.get('aerolinea') and len(f.get('aerolinea')) < 22 else '')
+        seo_t = deal_seo_title(f, x.get('price'))
         qa = deal_faq(x)
         excerpt = x.get('excerpt') or f"Chollo de vuelo {f.get('origen')} - {f.get('destino')} por {x.get('price')} € {f.get('tipo', '')}, comprobado hoy."
         share_txt = quote(f"✈️ {f.get('origen')} → {f.get('destino')} por {f.get('precio')} € ida y vuelta" + (f" ({fecha(f.get('ida'))} – {fecha(f.get('vuelta'))})" if f.get('vuelta') else '') + f"\n{url}")
@@ -1124,7 +1376,9 @@ def main():
 {T3.block(f.get('destino', ''), *dest_ll(f), lang='es', checkin=f.get('ida'), checkout=f.get('vuelta'))}
 <section class="sec" style="padding-top:10px"><div class="sec-h"><div><div class="kicker">También te puede interesar</div><h2>Chollos parecidos</h2></div><a class="hlc-btn o" href="/chollos/">Ver todos</a></div><div class="dc-grid">{rel_html}</div></section>
 </div></main></body></html>'''
+        page = page.replace('</head>', '<link rel="alternate" type="text/markdown" href="' + url + 'index.md" title="Markdown"></head>', 1)
         open(os.path.join(out, 'index.html'), 'w', encoding='utf-8').write(page)
+        open(os.path.join(out, 'index.md'), 'w', encoding='utf-8').write(deal_md(x, url, h1t, qa))
 
     cities_ = {}
     for x in deals:
@@ -1293,7 +1547,8 @@ def main():
         cheapest = min((x['price'] for x in sub), default=None)
         intro = (f"{desc_} {len(sub)} chollos ahora mismo" + (f", desde {cheapest} €." if cheapest else ".") + " Precios comprobados cada día.") if sub else f"{desc_} Ahora mismo no hay ninguno: crea una alerta y te avisamos."
         list_page(f'chollos/ideas/{k_}', f'{h1_}: chollos de vuelos · Happy Low Cost', h1_, 'Ideas para viajar barato', intro, sub, f'{SITE}/chollos/ideas/{k_}/',
-                  [('Inicio', '/'), ('Chollos', '/chollos/'), (h1_, None)], extra_links=hub, noindex=not sub)
+                  [('Inicio', '/'), ('Chollos', '/chollos/'), (h1_, None)], extra_links=hub, noindex=not sub,
+                  seo_html=ideas_faq(sub, h1_, False, {'menos-de-50-euros': 50, 'menos-de-100-euros': 100}.get(k_)))
         gen.add(f'ideas/{k_}')
         ideas_links.append((k_, h1_, len(sub)))
     json.dump(ideas_links, open('chollos/ideas.json', 'w', encoding='utf-8'), ensure_ascii=False)
@@ -1301,6 +1556,7 @@ def main():
 
     # ---------- guías de destino /destinos/<slug>/ ----------
     dlinks = []
+    guide_days_map = {}
     for p in DLIB:
         g = dmap.get(p['s'])
         if not g:
@@ -1316,6 +1572,9 @@ def main():
             add = ''.join(f'<h3>{e(q)}</h3><p>{e(a)}</p>' for q, a in xq)
             mfaq = re.search(r'(<h2>[^<]*(?:Preguntas frecuentes|FAQ)[^<]*</h2>.*?)(?=<h2|$)', gh, re.S | re.I)
             gh = (gh[:mfaq.end()] + add + gh[mfaq.end():]) if mfaq else gh + '<h2>Preguntas frecuentes</h2>' + add
+        gh, trip_ld = guide_itinerary(gh, p['n'], nd, 'es')
+        gh, bud = guide_budget(gh, 'es')
+        attr = guide_attractions(gh)
         gh, g_faq, words = guide_extras(gh, 'es')
         ch, cld = crumbs([('Inicio', '/'), ('Destinos', '/destinos/'), (p['n'], None)])
         # título con el año (las consultas que ya posicionan son "qué ver en X en 3 días": la cifra y el año suben el CTR)
@@ -1326,13 +1585,20 @@ def main():
         dsc = g.get('meta_description') or f"Guía de {p['n']}: qué ver, dónde dormir, qué comer y chollos de vuelos."
         if nd and not re.search(r'd[ií]a a d[ií]a|\d+ d[ií]as', dsc, re.I):
             dsc = f"{nd} días en {p['n']}, día a día: " + dsc[:1].lower() + dsc[1:]
+        if bud and 'presupuesto' not in dsc.lower():
+            bud_ = re.sub(r'(?i)\s*euros?\b', ' €', bud).strip()
+            add_ = f" Presupuesto: {bud_} al día."
+            if len(dsc.rstrip()) + len(add_) <= 200:
+                dsc = dsc.rstrip() + ('' if dsc.rstrip().endswith('.') else '.') + add_
         summ = guide_summary(gh, p['n'], nd, sub, g.get('updated_at'), 'es')
         img_ld = guide_image_ld(p['s'], p['n'], 'es')
         hub_es = f"/vuelos/a/{p['s']}/" if os.path.isfile(os.path.join('vuelos', 'a', p['s'], 'index.html')) else ''
         en_url_ = f"{SITE}/en/destinations/{en_dest_slug(p['s'])}/" 
         cr = CR.get(p['s']) or {}
         dest_ld = {"@type": "TouristDestination", "name": p['n'], "url": url, "image": f"{SITE}/hlc/img/cities/{p['s']}.jpg", "geo": {"@type": "GeoCoordinates", "latitude": p['y'], "longitude": p['x']},
-                   "containedInPlace": {"@type": "Country", "name": p['c']}}
+                   "containedInPlace": {"@type": "Country", "name": en_names.COUNTRY_ES_FIX.get(p['c'], p['c'])}}
+        if attr:
+            dest_ld["includesAttraction"] = attr
         art = {"@type": "Article", "headline": (g.get('seo_title') or f"Qué ver en {p['n']}")[:110], "description": g.get('meta_description') or '', "image": f"{SITE}/hlc/img/cities/{p['s']}.jpg",
                "dateModified": g.get('updated_at'), "datePublished": g.get('updated_at'), "wordCount": words, "inLanguage": "es-ES", "about": {"@id": url + '#destino'},
                "author": {"@id": ORG_ID}, "publisher": {"@id": ORG_ID}, "mainEntityOfPage": url, "isAccessibleForFree": True,
@@ -1342,9 +1608,13 @@ def main():
         dest_ld["image"] = {"@id": img_ld["@id"]}
         dest_ld["@id"] = url + '#destino'
         side = ''.join(card(x) for x in sub[:3])
+        near = nearby_guides(p, dmap)
+        near_html = (f'<section class="sec" style="padding-top:10px"><div class="sec-h"><div><div class="kicker">Para combinar en el mismo viaje</div><h2>Destinos cerca de {e(p["n"])}</h2></div></div><div class="hub-g">'
+                     + ''.join(f'<a class="hub-l" href="/destinos/{q["s"]}/">Qué ver en {e(q["n"])} <small>a unos {km_} km</small></a>' for km_, q in near) + '</div></section>') if near else ''
+        guide_days_map[p['s']] = nd
         page = head(title=e(ttl + (' · Happy Low Cost' if len(ttl) <= 46 else '')), desc=e(dsc[:300]),
                     canonical=url, og_image=f"{SITE}/hlc/img/cities/{p['s']}.jpg", og_title=e(ttl), og_alt=e(f"Foto de {p['n']} ({p['c']})"),
-                    extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12">' + guide_head_extra(p['s'], url + 'index.md', g.get('updated_at'), 'es', bool(g.get('guide_html_en'))) + ('<link rel="alternate" hreflang="es" href="' + url + '"><link rel="alternate" hreflang="en" href="' + en_url_ + '"><link rel="alternate" hreflang="x-default" href="' + url + '">' if g.get('guide_html_en') else '') + ld_script([ORG_LD, img_ld, dest_ld, art, cld] + ([g_faq] if g_faq else [])), body_class='destino')
+                    extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12">' + guide_head_extra(p['s'], url + 'index.md', g.get('updated_at'), 'es', bool(g.get('guide_html_en'))) + ('<link rel="alternate" hreflang="es" href="' + url + '"><link rel="alternate" hreflang="en" href="' + en_url_ + '"><link rel="alternate" hreflang="x-default" href="' + url + '">' if g.get('guide_html_en') else '') + GUIDE_TABLE_CSS + ld_script([ORG_LD, img_ld, dest_ld, art, cld] + ([g_faq] if g_faq else []) + ([trip_ld] if trip_ld else [])), body_class='destino')
         page += f'''<main>
 <section class="deal-hero" style="background-image:url(/hlc/img/cities/{p['s']}.jpg)"{photos_attr(p['s'])}><div class="wrap">
 {ch.replace('class="crumbs"', 'class="crumbs crumbs-l"')}
@@ -1364,13 +1634,15 @@ def main():
 </aside></div>
 <div id="hoteles">{T3.block(p['n'], p.get('y'), p.get('x'), [p['s']] + list(p.get('a') or []), (), lang='es')}</div>
 <section class="sec vw" data-hlc-videos data-dest="{p["s"]}" data-hide-empty hidden><div class="sec-h"><div><div class="kicker">Vídeos de viajeros</div><h2>{e(p["n"])} en vídeo</h2></div><a class="hlc-btn o" href="/videos/">Comparte el tuyo</a></div><div class="vw-grid"></div></section>
-<section class="sec" style="padding-top:10px"><div class="sec-h"><div><div class="kicker">Más inspiración</div><h2>Otros destinos</h2></div></div><div class="hub-g">{''.join(f'<a class="hub-l" href="/destinos/{q["s"]}/">{e(q["n"])}</a>' for q in DLIB if q['s'] in dmap and q['s'] != p['s'] and q['r'] == p['r'])}</div></section>
+{near_html}<section class="sec" style="padding-top:10px"><div class="sec-h"><div><div class="kicker">Más inspiración</div><h2>Otros destinos</h2></div></div><div class="hub-g">{''.join(f'<a class="hub-l" href="/destinos/{q["s"]}/">{e(q["n"])}</a>' for q in DLIB if q['s'] in dmap and q['s'] != p['s'] and q['r'] == p['r'])}</div></section>
 </div></main></body></html>'''
         os.makedirs(os.path.join('destinos', p['s']), exist_ok=True)
         open(os.path.join('destinos', p['s'], 'index.html'), 'w', encoding='utf-8').write(page)
         open(os.path.join('destinos', p['s'], 'index.md'), 'w', encoding='utf-8').write(guide_md(ttl0, url, re.sub(r'<section class="g-sum".*?</section>', '', gh, flags=re.S), p['n'], nd, g.get('updated_at'), 'es',
              (f"## Vuelos y chollos\n\n- Chollos de vuelos a {p['n']}: {SITE}/destinos/{p['s']}/#chollos\n" + (f"- Precios de vuelos a {p['n']} desde varias ciudades: {SITE}{hub_es}\n" if hub_es else '') + f"- Alerta gratis de chollos: {SITE}/alertas/\n")))
         dlinks.append((p, g))
+    # días de cada guía: gen_routes los usa en el texto del enlace ("Qué ver en X en 3 días")
+    json.dump(guide_days_map, open(os.path.join('destinos', 'dias.json'), 'w', encoding='utf-8'), sort_keys=True)
     # ---------- /hoteles/: los 3 hoteles de cada destino con guía ----------
     hl = []
     for p, g in dlinks:
@@ -1386,6 +1658,19 @@ def main():
     os.makedirs('hoteles', exist_ok=True)
     open('hoteles/index.html', 'w', encoding='utf-8').write(hp)
     json.dump([p['s'] for p, c_ in hl], open('hoteles/destinos.json', 'w'))
+
+    # portada: guías más leídas (las 8 con más impresiones en Search Console, 28 días hasta el 25-nov-2026)
+    TOP_GUIAS = ['bucarest', 'varsovia', 'belgrado', 'tallin', 'salzburgo', 'riga', 'maldivas', 'sofia']
+    if os.path.exists('index.html'):
+        nm_ = {p['s']: p['n'] for p, g in dlinks}
+        tg = [s_ for s_ in TOP_GUIAS if s_ in nm_]
+        if tg:
+            blk = ('<!--top-guias--><section class="sec" style="padding-top:10px"><div class="wrap"><div class="sec-h"><div><div class="kicker">Lo que más se lee</div><h2>Guías más leídas</h2></div><a class="hlc-btn o" href="/destinos/">Todas las guías</a></div><div class="hub-g">'
+                   + ''.join(f'<a class="hub-l" href="/destinos/{s_}/">Qué ver en {e(nm_[s_])}' + (f' en {guide_days_map[s_]} días' if guide_days_map.get(s_) else '') + '</a>' for s_ in tg)
+                   + '</div></div></section><!--/top-guias-->')
+            hi = open('index.html', encoding='utf-8').read()
+            hi = re.sub(r'<!--top-guias-->.*?<!--/top-guias-->', lambda _m: blk, hi, flags=re.S) if '<!--top-guias-->' in hi else hi.replace('</main>', blk + '</main>', 1)
+            open('index.html', 'w', encoding='utf-8').write(hi)
 
     # índice de guías dentro de /destinos/
     if os.path.exists('destinos/index.html'):

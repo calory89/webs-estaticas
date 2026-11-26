@@ -107,25 +107,13 @@ Malaga is one of the cheapest cities in Spain to see well. A lot of the best stu
 
 ## Malaga itinerary: 3 days
 
-### Day 1: Moorish Malaga and the old town
+**3-day itinerary for Malaga**
 
-**Morning:** Be at the Alcazaba when it opens, then walk or take bus 35 up to Gibralfaro. Walk down via the Mirador de Gibralfaro and pass the Roman Theatre at the bottom.
-
-**Afternoon:** Lunch around Calle Alcazabilla or in the lanes behind the cathedral. Then the Picasso Museum (booked slot) and the cathedral rooftop in late afternoon.
-
-**Evening:** A glass of sweet wine at El Pimpi or Casa de Guardia, then a tapas crawl through Plaza del Obispo, Calle Granada and Plaza de la Merced.
-
-### Day 2: Market, museums, port and beach
-
-**Morning:** Coffee at Café Central, then Atarazanas market for a mid-morning snack. Walk through Soho to see the murals and drop into CAC Málaga.
-
-**Afternoon:** Carmen Thyssen or the Pompidou, depending on whether you prefer Spanish painting or modern art. Walk Muelle Uno to La Farola, then along Malagueta beach for a swim.
-
-**Evening:** Bus 3 or 11 east to Pedregalejo for espetos and fried fish on the seafront. Stay for sunset, then take the bus back.
-
-### Day 3: Day trip
-
-**Morning to evening:** Pick one: Nerja and Frigiliana for beaches and white villages, the Caminito del Rey for the walk, Ronda for the gorge, or Granada if you have Alhambra tickets. Back in Malaga, end with a last drink on a rooftop terrace near the cathedral.
+| Day | Plan |
+|---|---|
+| Day 1 | Moorish Malaga and the old town. Morning: Be at the Alcazaba when it opens, then walk or take bus 35 up to Gibralfaro. Walk down via the Mirador de Gibralfaro and pass the Roman Theatre at the bottom. Afternoon: Lunch around Calle Alcazabilla or in the lanes behind the cathedral. Then the Picasso Museum (booked slot) and the cathedral rooftop in late afternoon. Evening: A glass of sweet wine at El Pimpi or Casa de Guardia, then a tapas crawl through Plaza del Obispo, Calle Granada and Plaza de la Merced. |
+| Day 2 | Market, museums, port and beach. Morning: Coffee at Café Central, then Atarazanas market for a mid-morning snack. Walk through Soho to see the murals and drop into CAC Málaga. Afternoon: Carmen Thyssen or the Pompidou, depending on whether you prefer Spanish painting or modern art. Walk Muelle Uno to La Farola, then along Malagueta beach for a swim. Evening: Bus 3 or 11 east to Pedregalejo for espetos and fried fish on the seafront. Stay for sunset, then take the bus back. |
+| Day 3 | Day trip. Morning to evening: Pick one: Nerja and Frigiliana for beaches and white villages, the Caminito del Rey for the walk, Ronda for the gorge, or Granada if you have Alhambra tickets. Back in Malaga, end with a last drink on a rooftop terrace near the cathedral. |
 
 ## What is overrated (and what to do instead)
 

@@ -59,15 +59,17 @@ About 35 minutes north by train to Humlebæk. A superb collection, a sculpture g
 
 - **Walk Jægersborggade in Nørrebro.** A single street of small shops, ceramics, coffee and a good bakery.
 
-## How many days and a suggested route
+## Copenhagen itinerary: 3 days, day by day
 
 Three days is the sweet spot. Two will let you hit the main sights but leave you rushed, while four lets you add Louisiana or a beach day.
 
-**Day 1:** Nyhavn early, Amalienborg, the waterfront walk, lunch at Torvehallerne, Rosenborg and the King's Garden, then Tivoli in the evening.
+**3-day itinerary for Copenhagen**
 
-**Day 2:** Christiansborg and the Round Tower, a wander along Strøget (skip the shops, enjoy the side streets), Glyptotek or Designmuseum, then dinner in Vesterbro.
-
-**Day 3:** Christianshavn and Christiania in the morning, a canal boat, then an afternoon in Nørrebro or Refshaleøen, where the Reffen street-food area is a good place to end the trip.
+| Day | Plan |
+|---|---|
+| Day 1 | Nyhavn early, Amalienborg, the waterfront walk, lunch at Torvehallerne, Rosenborg and the King's Garden, then Tivoli in the evening. |
+| Day 2 | Christiansborg and the Round Tower, a wander along Strøget (skip the shops, enjoy the side streets), Glyptotek or Designmuseum, then dinner in Vesterbro. |
+| Day 3 | Christianshavn and Christiania in the morning, a canal boat, then an afternoon in Nørrebro or Refshaleøen, where the Reffen street-food area is a good place to end the trip. |
 
 ## When to go
 

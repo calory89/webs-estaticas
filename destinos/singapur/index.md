@@ -37,17 +37,18 @@ Una visita guiada de comida por Chinatown o Tiong Bahru ayuda a entender qué es
 
 Para una copa, el Long Bar del Raffles Hotel sirve el Singapore Sling, que cuesta bastante más de lo razonable y se bebe por la historia. Las azoteas con vistas son otra opción, pero casi todas piden reserva o una consumición mínima, y algunas tienen código de vestimenta.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Singapur en 4 días: ruta día a día
 
 Con tres días ves lo esencial. Con cuatro lo disfrutas sin ir con la lengua fuera, que es lo recomendable por el calor. Más de cinco solo tiene sentido si usas Singapur como base para otras zonas.
 
-- **Día 1:** Chinatown por la mañana, comida en Maxwell, tarde en Marina Bay y, al anochecer, Gardens by the Bay con los Supertrees iluminados.
+**Itinerario de 4 días en Singapur**
 
-- **Día 2:** Jardín Botánico temprano, Orchard Road si quieres ver centros comerciales y noche en Clarke Quay.
-
-- **Día 3:** Little India por la mañana, Kampong Glam después de comer y cena en Arab Street.
-
-- **Día 4:** Sentosa o Pulau Ubin, o el Night Safari por la tarde. Si te sobra tiempo, Southern Ridges.
+| Día | Plan |
+|---|---|
+| Día 1 | Chinatown por la mañana, comida en Maxwell, tarde en Marina Bay y, al anochecer, Gardens by the Bay con los Supertrees iluminados. |
+| Día 2 | Jardín Botánico temprano, Orchard Road si quieres ver centros comerciales y noche en Clarke Quay. |
+| Día 3 | Little India por la mañana, Kampong Glam después de comer y cena en Arab Street. |
+| Día 4 | Sentosa o Pulau Ubin, o el Night Safari por la tarde. Si te sobra tiempo, Southern Ridges. |
 
 ## Cuándo ir: clima y temporadas
 
@@ -101,11 +102,13 @@ Algunas normas conviene conocerlas: multas por tirar basura, prohibición de vap
 
 ## Presupuesto orientativo por día
 
-- **Ajustado (60-90 euros):** cápsula o dormitorio, hawker centres, metro y atracciones gratuitas o una de pago.
+**Presupuesto orientativo por día**
 
-- **Medio (130-200 euros):** hotel céntrico, mezcla de hawker y restaurante, alguna entrada y desplazamientos cómodos.
-
-- **Cómodo (250 euros o más):** hotel de categoría, cenas con vistas, copas y actividades de pago.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | 60-90 euros | Cápsula o dormitorio, hawker centres, metro y atracciones gratuitas o una de pago. |
+| Medio | 130-200 euros | Hotel céntrico, mezcla de hawker y restaurante, alguna entrada y desplazamientos cómodos. |
+| Cómodo | 250 euros o más | Hotel de categoría, cenas con vistas, copas y actividades de pago. |
 
 El alcohol y las entradas a atracciones dispararán el presupuesto más rápido que la comida. Los precios son aproximados y varían según la temporada.
 

@@ -39,15 +39,17 @@ Then do the ruin bars. Szimpla Kert, in the old Jewish Quarter, was the first an
 
 Take a walk along Andrássy út, the tree-lined boulevard to Heroes' Square, and stop at the House of Terror if you want to understand the 20th century here. Rent a bike or walk the length of Margaret Island, a car-free park in the middle of the Danube. A river cruise is touristy, but the evening ones with the lit-up Parliament are decent value.
 
-## How many days and a suggested route
+## Budapest itinerary: 3 days, day by day
 
 Three days is the sweet spot. Two will do if you skip the museums; four lets you add a day trip to Szentendre or the Danube Bend.
 
-**Day 1, Buda:** Castle District in the morning, Fisherman's Bastion, lunch on the hill, then Gellért Hill and a late-afternoon soak at Rudas or Gellért.
+**3-day itinerary for Budapest**
 
-**Day 2, Pest:** Parliament, the Shoes on the Danube, St Stephen's Basilica, lunch at the Great Market Hall, the Dohány Street Synagogue and an evening in the Jewish Quarter.
-
-**Day 3, City Park:** Andrássy út on foot, Heroes' Square, Vajdahunyad Castle, then a long morning or afternoon at Széchenyi Baths. Leave Margaret Island for the last evening.
+| Day | Plan |
+|---|---|
+| Day 1 | Buda. Castle District in the morning, Fisherman's Bastion, lunch on the hill, then Gellért Hill and a late-afternoon soak at Rudas or Gellért. |
+| Day 2 | Pest. Parliament, the Shoes on the Danube, St Stephen's Basilica, lunch at the Great Market Hall, the Dohány Street Synagogue and an evening in the Jewish Quarter. |
+| Day 3 | City Park. Andrássy út on foot, Heroes' Square, Vajdahunyad Castle, then a long morning or afternoon at Széchenyi Baths. Leave Margaret Island for the last evening. |
 
 ## When to go
 

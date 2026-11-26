@@ -89,23 +89,14 @@ Otros ahorros:
 
 - Al aperitivo en algunas osterie te ponen algo de picar con la copa. Sale bastante más barato que una cena.
 
-## Itinerario: Verona en 2 días
+## Qué ver en Verona en 2 días: ruta día a día
 
-### Día 1: centro histórico y Arena
+**Itinerario de 2 días en Verona**
 
-**Mañana:** Patio de la Casa de Julieta antes de las nueve. De allí a la Piazza delle Erbe, la Piazza dei Signori y las Arche Scaligere, todo a cinco minutos andando. Después, Sant'Anastasia y el Duomo.
-
-**Tarde:** Comida por la Via Sottoriva, bajo los soportales junto al río. Luego, la Arena (por la tarde hay menos grupos) y un paseo por la Via Mazzini, la calle de las tiendas.
-
-**Noche:** Torre dei Lamberti a última hora si sigue abierta, spritz en la Piazza delle Erbe y cena en una osteria de las calles traseras. En verano, cambia la cena por ópera en la Arena.
-
-### Día 2: San Zeno, el río y el mirador
-
-**Mañana:** Andando a la Basílica de San Zeno por la orilla del río. Vuelve por Castelvecchio y cruza el Ponte Scaligero.
-
-**Tarde:** Cruza a Veronetta: Teatro Romano, Museo Archeologico y, si hace buen tiempo, Giardino Giusti.
-
-**Noche:** Sube a Castel San Pietro para la puesta de sol. Baja por el Ponte Pietra y cena en Veronetta, que es más barato que el centro.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Centro histórico y Arena | Patio de la Casa de Julieta antes de las nueve. De allí a la Piazza delle Erbe, la Piazza dei Signori y las Arche Scaligere, todo a cinco minutos andando. Después, Sant'Anastasia y el Duomo. | Comida por la Via Sottoriva, bajo los soportales junto al río. Luego, la Arena (por la tarde hay menos grupos) y un paseo por la Via Mazzini, la calle de las tiendas. | Torre dei Lamberti a última hora si sigue abierta, spritz en la Piazza delle Erbe y cena en una osteria de las calles traseras. En verano, cambia la cena por ópera en la Arena. |
+| Día 2 · San Zeno, el río y el mirador | Andando a la Basílica de San Zeno por la orilla del río. Vuelve por Castelvecchio y cruza el Ponte Scaligero. | Cruza a Veronetta: Teatro Romano, Museo Archeologico y, si hace buen tiempo, Giardino Giusti. | Sube a Castel San Pietro para la puesta de sol. Baja por el Ponte Pietra y cena en Veronetta, que es más barato que el centro. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -173,9 +164,12 @@ Para moverte por Verona, vas andando a casi todo. Los autobuses urbanos de ATV c
 
 ## Cuánto cuesta un viaje a Verona
 
-- **Presupuesto ajustado: unos 70-90 € al día por persona.** Habitación doble compartida en Veronetta o hostal, desayuno de barra, menú de mediodía, aperitivo en vez de cena, mirador a pie y una o dos entradas.
+**Presupuesto orientativo por día**
 
-- **Presupuesto medio: unos 130-180 € al día por persona.** Hotel en el centro, Verona Card, cena en osteria con vino, spritz y una excursión en tren.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Presupuesto ajustado | unos 70-90 € al día por persona | Habitación doble compartida en Veronetta o hostal, desayuno de barra, menú de mediodía, aperitivo en vez de cena, mirador a pie y una o dos entradas. |
+| Presupuesto medio | unos 130-180 € al día por persona | Hotel en el centro, Verona Card, cena en osteria con vino, spritz y una excursión en tren. |
 
 - **Extras:** ópera en la Arena desde 30 € en grada hasta más de 150 € en platea. Cata en Valpolicella, de 20 a 40 €.
 

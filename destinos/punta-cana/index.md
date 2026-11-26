@@ -35,21 +35,20 @@ Lo más sensato es combinar días de playa con dos o tres planes. Las excursione
 
 Si te gusta el golf, hay campos de nivel mundial en Cap Cana y Puntacana Resort, aunque no es plan barato. Para salir de noche, Bávaro tiene bares en la playa y discotecas, y los jueves y fines de semana es cuando hay ambiente. Y un consejo que parece menor pero no lo es: el sol aquí pega fuerte incluso nublado, así que lleva crema decente, que allí es cara.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Punta Cana en 6 días: ruta día a día
 
 Con cinco o seis días vas bien. Con cuatro tienes playa y una excursión; con una semana te da para ir con calma y añadir Santo Domingo. Esta es una ruta que funciona:
 
-- **Día 1:** llegada, paseo por la playa de tu zona y cena sencilla.
+**Itinerario de 6 días en Punta Cana**
 
-- **Día 2:** Bávaro y El Cortecito, con comida en un comedor de playa.
-
-- **Día 3:** excursión a Isla Saona desde Bayahibe, saliendo temprano.
-
-- **Día 4:** Macao por la mañana y Ojos Indígenas o Hoyo Azul por la tarde.
-
-- **Día 5:** Altos de Chavón y Basílica de Higüey, o descanso sin plan.
-
-- **Día 6 (opcional):** Santo Domingo y su Zona Colonial, con unas dos horas y media o tres de trayecto por autopista.
+| Día | Plan |
+|---|---|
+| Día 1 | Llegada, paseo por la playa de tu zona y cena sencilla. |
+| Día 2 | Bávaro y El Cortecito, con comida en un comedor de playa. |
+| Día 3 | Excursión a Isla Saona desde Bayahibe, saliendo temprano. |
+| Día 4 | Macao por la mañana y Ojos Indígenas o Hoyo Azul por la tarde. |
+| Día 5 | Altos de Chavón y Basílica de Higüey, o descanso sin plan. |
+| Día 6 | (opcional). Santo Domingo y su Zona Colonial, con unas dos horas y media o tres de trayecto por autopista. |
 
 ## Cuándo ir: clima y temporadas
 
@@ -95,11 +94,13 @@ Desde la terminal tienes tres opciones: traslado del hotel, taxi oficial con tar
 
 ## Presupuesto orientativo por día
 
-- **Ajustado (40-60 €):** alojamiento sencillo, comedores locales, guagua y playa pública.
+**Presupuesto orientativo por día**
 
-- **Medio (90-140 €):** hotel medio, comidas en restaurante, alguna excursión y taxi puntual.
-
-- **Todo incluido (120-200 € por persona):** estancia, comidas y bebidas, sumando las excursiones aparte.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | 40-60 € | Alojamiento sencillo, comedores locales, guagua y playa pública. |
+| Medio | 90-140 € | Hotel medio, comidas en restaurante, alguna excursión y taxi puntual. |
+| Todo incluido | 120-200 € por persona | Estancia, comidas y bebidas, sumando las excursiones aparte. |
 
 Son cifras generales y cambian mucho según temporada. Las excursiones grandes como Saona suman un buen pellizco, así que cuéntalas aparte en tu presupuesto.
 

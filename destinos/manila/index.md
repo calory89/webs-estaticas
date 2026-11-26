@@ -87,19 +87,15 @@ Manila es barata, y lo mejor de la parte histórica sale gratis o casi. Los tres
 
 El atardecer en Roxas Boulevard, el parque Rizal y los murales de BGC tampoco cuestan nada. Para moverte, el metro ligero (LRT y MRT) vale entre 15 y 35 pesos por trayecto, menos de 60 céntimos. Y comer en una **carinderia**, esos comedores de barrio con ollas a la vista, sale por 2-3 € con arroz incluido.
 
-## Itinerario: Manila en 3 días
+## Qué ver en Manila en 3 días: ruta día a día
 
-### Día 1: Intramuros y la bahía
+**Itinerario de 3 días en Manila**
 
-**Mañana:** entra en Intramuros temprano. Fuerte Santiago, Catedral, San Agustín y Casa Manila, en ese orden. **Tarde:** comida en Intramuros y vuelta en bici de bambú por la muralla, o bien los Museos Nacionales cruzando el parque Rizal (10 minutos andando). **Noche:** atardecer en Roxas Boulevard y cena en Malate.
-
-### Día 2: Quiapo, Binondo y Makati
-
-**Mañana:** LRT-1 hasta Carriedo, Iglesia de Quiapo y paseo hasta San Sebastián. **Tarde:** cruza el puente de Jones o MacArthur hasta Binondo y come de puesto en puesto por Ongpin. Pasa por Escolta para ver los edificios art déco. **Noche:** Grab hasta Makati, cena y copas en Poblacion.
-
-### Día 3: el Manila moderno
-
-**Mañana:** Museo Ayala y paseo por Greenbelt. Si es fin de semana, desayuna en el mercado de Legaspi o Salcedo. **Tarde:** BGC, murales y Bonifacio High Street. **Noche:** cena en BGC o vuelve a Poblacion. Si prefieres salir de la ciudad, cambia este día por Tagaytay o Corregidor.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Intramuros y la bahía | Entra en Intramuros temprano. Fuerte Santiago, Catedral, San Agustín y Casa Manila, en ese orden. | Comida en Intramuros y vuelta en bici de bambú por la muralla, o bien los Museos Nacionales cruzando el parque Rizal (10 minutos andando). | Atardecer en Roxas Boulevard y cena en Malate. |
+| Día 2 · Quiapo, Binondo y Makati | LRT-1 hasta Carriedo, Iglesia de Quiapo y paseo hasta San Sebastián. | Cruza el puente de Jones o MacArthur hasta Binondo y come de puesto en puesto por Ongpin. Pasa por Escolta para ver los edificios art déco. | Grab hasta Makati, cena y copas en Poblacion. |
+| Día 3 · El Manila moderno | Museo Ayala y paseo por Greenbelt. Si es fin de semana, desayuna en el mercado de Legaspi o Salcedo. | BGC, murales y Bonifacio High Street. | Cena en BGC o vuelve a Poblacion. Si prefieres salir de la ciudad, cambia este día por Tagaytay o Corregidor. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 

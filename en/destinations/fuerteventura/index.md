@@ -85,29 +85,16 @@ Betancuria's streets cost nothing to wander, only the church and museums charge.
 
 ## Fuerteventura itinerary: 6 days
 
-### Day 1: Corralejo and the dunes
+**6-day itinerary for Fuerteventura**
 
-Morning: settle into Corralejo and walk the seafront along Avenida Marítima. Afternoon: drive or bus to the Corralejo dunes and swim at Grandes Playas. Evening: sunset on the dunes, then dinner in Corralejo's old town around Plaza Patricio Calero.
-
-### Day 2: Isla de Lobos
-
-Morning: early ferry to Lobos, walk to the lighthouse and climb the caldera. Afternoon: swim and snorkel at La Concha before the return boat. Evening: drinks at Flag Beach or the bars near the harbour.
-
-### Day 3: The northwest
-
-Morning: hike Calderón Hondo from Lajares, then coffee in the village. Afternoon: Faro del Tostón and the lagoons of El Cotillo. Evening: sunset at Torre del Tostón and fish by the old harbour.
-
-### Day 4: Centre of the island
-
-Morning: drive to Betancuria early, via Mirador Morro Velosa. Afternoon: Ajuy caves and a fish lunch in the hamlet, then the Ecomuseo de La Alcogida in Tefía. Evening: move south to Costa Calma or Morro Jable, stopping at Mirador de Sicasumbre for sunset.
-
-### Day 5: Sotavento
-
-Morning: Risco del Paso at low tide for the lagoon. Afternoon: a kitesurf lesson or simply beach time. Evening: dinner on Morro Jable's promenade.
-
-### Day 6: Cofete
-
-Morning: 4x4 bus or careful drive to Cofete and walk the beach. Afternoon: Villa Winter from the outside, then the Mirador de Cofete. Evening: return to Morro Jable or head north for your flight.
+| Day | Plan |
+|---|---|
+| Day 1 | Corralejo and the dunes. Morning: settle into Corralejo and walk the seafront along Avenida Marítima. Afternoon: drive or bus to the Corralejo dunes and swim at Grandes Playas. Evening: sunset on the dunes, then dinner in Corralejo's old town around Plaza Patricio Calero. |
+| Day 2 | Isla de Lobos. Morning: early ferry to Lobos, walk to the lighthouse and climb the caldera. Afternoon: swim and snorkel at La Concha before the return boat. Evening: drinks at Flag Beach or the bars near the harbour. |
+| Day 3 | The northwest. Morning: hike Calderón Hondo from Lajares, then coffee in the village. Afternoon: Faro del Tostón and the lagoons of El Cotillo. Evening: sunset at Torre del Tostón and fish by the old harbour. |
+| Day 4 | Centre of the island. Morning: drive to Betancuria early, via Mirador Morro Velosa. Afternoon: Ajuy caves and a fish lunch in the hamlet, then the Ecomuseo de La Alcogida in Tefía. Evening: move south to Costa Calma or Morro Jable, stopping at Mirador de Sicasumbre for sunset. |
+| Day 5 | Sotavento. Morning: Risco del Paso at low tide for the lagoon. Afternoon: a kitesurf lesson or simply beach time. Evening: dinner on Morro Jable's promenade. |
+| Day 6 | Cofete. Morning: 4x4 bus or careful drive to Cofete and walk the beach. Afternoon: Villa Winter from the outside, then the Mirador de Cofete. Evening: return to Morro Jable or head north for your flight. |
 
 ## What is overrated (and what to do instead)
 
@@ -165,9 +152,12 @@ Honestly, a **rental car** is the way to see the island. Buses connect the main 
 
 ## How much a trip to Fuerteventura costs
 
-- **Shoestring: €60-90 per day.** Hostel or shared apartment, supermarket picnics, buses, free beaches and hikes.
+**Rough daily budget**
 
-- **Mid-range: €130-200 per day.** Private apartment, a rental car, one restaurant meal a day and an activity such as a surf lesson or the Lobos trip.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €60-90 per day | Hostel or shared apartment, supermarket picnics, buses, free beaches and hikes. |
+| Mid-range | €130-200 per day | Private apartment, a rental car, one restaurant meal a day and an activity such as a surf lesson or the Lobos trip. |
 
 Fuel and car hire are the hidden costs. Groceries are cheaper than in mainland Spain thanks to lower taxes, so self-catering saves a lot.
 

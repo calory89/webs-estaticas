@@ -95,37 +95,14 @@ Taipei is easy to do cheaply because many of its best sights cost nothing. Templ
 
 ## Taipei itinerary: 4 days
 
-### Day 1: Old Taipei and Xinyi
+**4-day itinerary for Taipei**
 
-**Morning:** Breakfast at Fuhang Soy Milk, then walk to Chiang Kai-shek Memorial Hall for the changing of the guard.
-
-**Afternoon:** MRT to Longshan Temple and Bopiliao, then lunch nearby. Head to Huashan 1914 for coffee.
-
-**Evening:** Climb Elephant Mountain for sunset, then eat at the Taipei 101 food court or walk to Raohe Night Market (about 20 minutes by MRT).
-
-### Day 2: Museum, Dadaocheng and Ningxia
-
-**Morning:** National Palace Museum when it opens. Allow until lunch.
-
-**Afternoon:** MRT to Dadaocheng and walk Dihua Street, stopping for tea and the City God Temple. Walk to Dadaocheng Wharf for sunset.
-
-**Evening:** Ningxia Night Market for dinner, which is a short walk away.
-
-### Day 3: Hot springs and mountain tea
-
-**Morning:** MRT to Xinbeitou. Walk through Beitou Park, visit the museum and Thermal Valley, and soak in a hot spring.
-
-**Afternoon:** Ride back across the city to Taipei Zoo station for the Maokong Gondola. Drink tea at the top until late afternoon.
-
-**Evening:** Ride the gondola down after dark for city lights, then end in Ximending for snacks and a drink.
-
-### Day 4: Jiufen and the northeast coast
-
-**Morning:** Bus 1062 from near Zhongxiao Fuxing MRT to Jiufen. Arrive early, before the tour groups.
-
-**Afternoon:** Continue to Shifen by bus or train via Ruifang for the waterfall, or go to Houtong cat village.
-
-**Evening:** Back in Taipei for a final beef noodle soup and a foot massage.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Old Taipei and Xinyi | Breakfast at Fuhang Soy Milk, then walk to Chiang Kai-shek Memorial Hall for the changing of the guard. | MRT to Longshan Temple and Bopiliao, then lunch nearby. Head to Huashan 1914 for coffee. | Climb Elephant Mountain for sunset, then eat at the Taipei 101 food court or walk to Raohe Night Market (about 20 minutes by MRT). |
+| Day 2 · Museum, Dadaocheng and Ningxia | National Palace Museum when it opens. Allow until lunch. | MRT to Dadaocheng and walk Dihua Street, stopping for tea and the City God Temple. Walk to Dadaocheng Wharf for sunset. | Ningxia Night Market for dinner, which is a short walk away. |
+| Day 3 · Hot springs and mountain tea | MRT to Xinbeitou. Walk through Beitou Park, visit the museum and Thermal Valley, and soak in a hot spring. | Ride back across the city to Taipei Zoo station for the Maokong Gondola. Drink tea at the top until late afternoon. | Ride the gondola down after dark for city lights, then end in Ximending for snacks and a drink. |
+| Day 4 · Jiufen and the northeast coast | Bus 1062 from near Zhongxiao Fuxing MRT to Jiufen. Arrive early, before the tour groups. | Continue to Shifen by bus or train via Ruifang for the waterfall, or go to Houtong cat village. | Back in Taipei for a final beef noodle soup and a foot massage. |
 
 ## What is overrated (and what to do instead)
 

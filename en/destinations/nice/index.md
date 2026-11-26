@@ -83,17 +83,13 @@ For almost free, a socca portion costs about €4-5, a pan bagnat €6-8, and a 
 
 ## Nice itinerary: 3 days
 
-### Day 1: Old Town, Castle Hill and the Promenade
+**3-day itinerary for Nice**
 
-**Morning:** start at Cours Saleya market, then wander the Old Town lanes, Sainte-Réparate and Place Rossetti. **Afternoon:** socca for lunch, then climb Castle Hill and walk down the other side to Port Lympia. **Evening:** walk the Promenade des Anglais at sunset toward the Negresco, then dinner back near Place Garibaldi.
-
-### Day 2: Cimiez, art and the coast
-
-**Morning:** bus up to Cimiez for the Matisse Museum, Roman ruins and monastery gardens, then walk down to the Chagall Museum. **Afternoon:** lunch near Libération market, then head east past the port to swim at Coco Beach. **Evening:** drinks and dinner around the port and Rue Bonaparte.
-
-### Day 3: Day trip east
-
-**Morning:** bus 82 to Èze village for the views and the Jardin Exotique. **Afternoon:** walk down the Nietzsche path to Èze-sur-Mer (about 1.5 hours, steep), then train to Monaco. **Evening:** catch the train back to Nice in about 20 minutes and finish with ice cream in the Old Town.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Old Town, Castle Hill and the Promenade | Start at Cours Saleya market, then wander the Old Town lanes, Sainte-Réparate and Place Rossetti. | Socca for lunch, then climb Castle Hill and walk down the other side to Port Lympia. | Walk the Promenade des Anglais at sunset toward the Negresco, then dinner back near Place Garibaldi. |
+| Day 2 · Cimiez, art and the coast | Bus up to Cimiez for the Matisse Museum, Roman ruins and monastery gardens, then walk down to the Chagall Museum. | Lunch near Libération market, then head east past the port to swim at Coco Beach. | Drinks and dinner around the port and Rue Bonaparte. |
+| Day 3 · Day trip east | Bus 82 to Èze village for the views and the Jardin Exotique. | Walk down the Nietzsche path to Èze-sur-Mer (about 1.5 hours, steep), then train to Monaco. | Catch the train back to Nice in about 20 minutes and finish with ice cream in the Old Town. |
 
 ## What is overrated (and what to do instead)
 
@@ -151,9 +147,12 @@ Once there, you'll walk most places. The tram (lines 1, 2 and 3) and Lignes d'Az
 
 ## How much a trip to Nice costs
 
-- **Shoestring (€70-100 per day):** hostel bed €30-45, street food and supermarket picnics €20-25, public beaches, one museum, local transport €5.
+**Rough daily budget**
 
-- **Mid-range (€160-250 per day):** double room €110-180 split between two, sit-down lunch and dinner €50-70, museums and a day trip €25-35, drinks €15-20.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €70-100 per day | Hostel bed €30-45, street food and supermarket picnics €20-25, public beaches, one museum, local transport €5. |
+| Mid-range | €160-250 per day | Double room €110-180 split between two, sit-down lunch and dinner €50-70, museums and a day trip €25-35, drinks €15-20. |
 
 - **Extras:** beach club lounger €25-40, boat trip €30-60, city tourist tax per night added to your hotel bill.
 

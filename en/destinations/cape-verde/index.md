@@ -95,33 +95,17 @@ Beaches are public and free throughout Cape Verde, even the ones in front of res
 
 This route covers São Vicente, Santo Antão and Sal. Fly into São Vicente (or into Sal and connect with Binter Cabo Verde), and leave from Sal. If your flights run the other way, simply reverse it.
 
-### Day 1: Mindelo
+**7-day itinerary for Cape Verde**
 
-Morning: walk the centre, Praça Nova and Rua de Lisboa, then the fish market. Afternoon: swim at Laginha beach. Evening: grilled fish for dinner, then hop between live music bars in the centre.
-
-### Day 2: Around São Vicente
-
-Morning: take a taxi up Monte Verde before the clouds come in. Afternoon: swim at Baía das Gatas, or at Calhau, where you can eat lobster if the budget allows. Evening: back in Mindelo, buy your ferry ticket for the next morning.
-
-### Day 3: Santo Antão, Cova to Paul
-
-Morning: take the early ferry to Porto Novo (about 1 hour), then an aluguer up to the Cova crater. Afternoon: hike down into the Paul valley and taste grogue at a trapiche. Evening: sleep in the Paul valley or in Ponta do Sol.
-
-### Day 4: Ponta do Sol, Fontainhas, Cruzinha
-
-Morning: start the coastal walk early to beat the heat. Afternoon: finish at Cruzinha and take your pre-arranged taxi back. Evening: fresh fish by the harbour in Ponta do Sol.
-
-### Day 5: Back to Mindelo and fly to Sal
-
-Morning: take the ferry back to Mindelo. Afternoon: catch the inter-island flight to Sal and an aluguer or taxi to Santa Maria. Evening: wander the pier and the sea-facing restaurants.
-
-### Day 6: Sal island loop
-
-Morning: Pedra de Lume, before the tour buses arrive. Midday: the Blue Eye at Buracona while the sun is high. Afternoon: Shark Bay, then Kite Beach to watch the riders. Evening: cachupa and a pontche in Santa Maria.
-
-### Day 7: Beach and water
-
-Morning: snorkel, dive or take a kite lesson. Afternoon: a long, slow walk west along Santa Maria beach. Evening: catch your flight, or squeeze in one last sunset on the pier.
+| Day | Plan |
+|---|---|
+| Day 1 | Mindelo. Morning: walk the centre, Praça Nova and Rua de Lisboa, then the fish market. Afternoon: swim at Laginha beach. Evening: grilled fish for dinner, then hop between live music bars in the centre. |
+| Day 2 | Around São Vicente. Morning: take a taxi up Monte Verde before the clouds come in. Afternoon: swim at Baía das Gatas, or at Calhau, where you can eat lobster if the budget allows. Evening: back in Mindelo, buy your ferry ticket for the next morning. |
+| Day 3 | Santo Antão, Cova to Paul. Morning: take the early ferry to Porto Novo (about 1 hour), then an aluguer up to the Cova crater. Afternoon: hike down into the Paul valley and taste grogue at a trapiche. Evening: sleep in the Paul valley or in Ponta do Sol. |
+| Day 4 | Ponta do Sol, Fontainhas, Cruzinha. Morning: start the coastal walk early to beat the heat. Afternoon: finish at Cruzinha and take your pre-arranged taxi back. Evening: fresh fish by the harbour in Ponta do Sol. |
+| Day 5 | Back to Mindelo and fly to Sal. Morning: take the ferry back to Mindelo. Afternoon: catch the inter-island flight to Sal and an aluguer or taxi to Santa Maria. Evening: wander the pier and the sea-facing restaurants. |
+| Day 6 | Sal island loop. Morning: Pedra de Lume, before the tour buses arrive. Midday: the Blue Eye at Buracona while the sun is high. Afternoon: Shark Bay, then Kite Beach to watch the riders. Evening: cachupa and a pontche in Santa Maria. |
+| Day 7 | Beach and water. Morning: snorkel, dive or take a kite lesson. Afternoon: a long, slow walk west along Santa Maria beach. Evening: catch your flight, or squeeze in one last sunset on the pier. |
 
 ## What is overrated (and what to do instead)
 

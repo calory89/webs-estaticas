@@ -35,21 +35,20 @@ Lo más recomendable es el tren entre Kandy y Ella, o Nanu Oya y Ella. Es lento,
 
 Para el resto, haz una clase de cocina esrilanquesa en una casa particular, camina por las plantaciones con un guía local, alquila una bici en Polonnaruwa o aprende a surfear en Weligama, que tiene olas suaves para principiantes. En Arugam Bay, en la costa este, el surf es más serio y la temporada va aproximadamente de mayo a septiembre.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Sri Lanka en 10 días: ruta día a día
 
 Con una semana puedes hacer un buen recorrido, pero a un ritmo apretado. Con diez o doce días el viaje respira, y con dos semanas ya puedes meter más playa o el norte.
 
-- **Días 1-2:** llegada, Negombo o Colombo y salida hacia el Triángulo Cultural.
+**Itinerario de 10 días en Sri Lanka**
 
-- **Días 3-4:** Sigiriya, Dambulla y Polonnaruwa.
-
-- **Día 5:** Kandy.
-
-- **Días 6-7:** tren a Nuwara Eliya y Ella.
-
-- **Día 8:** safari en Udawalawe o Yala, camino de la costa.
-
-- **Días 9-10:** Mirissa, Galle y vuelo desde Colombo.
+| Día | Plan |
+|---|---|
+| Días 1-2 | Llegada, Negombo o Colombo y salida hacia el Triángulo Cultural. |
+| Días 3-4 | Sigiriya, Dambulla y Polonnaruwa. |
+| Día 5 | Kandy. |
+| Días 6-7 | Tren a Nuwara Eliya y Ella. |
+| Día 8 | Safari en Udawalawe o Yala, camino de la costa. |
+| Días 9-10 | Mirissa, Galle y vuelo desde Colombo. |
 
 Es una ruta en forma de círculo que evita repetir tramos. Si vas justo de días, quita Polonnaruwa o el safari antes que reducir el tren y las montañas.
 

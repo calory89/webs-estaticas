@@ -95,17 +95,13 @@ This is the cheapest major US city to sightsee in. Every Smithsonian museum, the
 
 ## Washington DC itinerary: 3 days
 
-### Day 1: Capitol Hill and the east end of the Mall
+**3-day itinerary for Washington DC**
 
-**Morning:** Capitol tour (booked ahead), then the tunnel to the Library of Congress. Peek at the Supreme Court next door. **Afternoon:** lunch at Eastern Market (crab cake or a blueberry buckwheat pancake at Market Lunch, cash and queues), then the National Gallery of Art or Natural History. **Evening:** dinner in Navy Yard or at The Wharf, a short ride south.
-
-### Day 2: Monuments and the big museums
-
-**Morning:** Washington Monument at opening, then the African American History museum right next door. **Afternoon:** Holocaust Museum or Air and Space, then the White House from the Ellipse. **Evening:** walk west to the WWII Memorial, the Lincoln Memorial at sunset, Vietnam and Korean memorials, and on to Jefferson and FDR around the Tidal Basin if you still have legs. Dinner on U Street with a half-smoke at Ben's Chili Bowl or Ethiopian in Shaw.
-
-### Day 3: Arlington and Georgetown
-
-**Morning:** metro to Arlington Cemetery for the Kennedy graves and the Changing of the Guard. **Afternoon:** walk or take a quick ride over to Georgetown: lunch, the residential streets, Dumbarton Oaks and the canal towpath. **Evening:** sunset from the Kennedy Center terrace or a drink on the Georgetown waterfront, then dinner in Dupont Circle or Logan Circle.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Capitol Hill and the east end of the Mall | Capitol tour (booked ahead), then the tunnel to the Library of Congress. Peek at the Supreme Court next door. | Lunch at Eastern Market (crab cake or a blueberry buckwheat pancake at Market Lunch, cash and queues), then the National Gallery of Art or Natural History. | Dinner in Navy Yard or at The Wharf, a short ride south. |
+| Day 2 · Monuments and the big museums | Washington Monument at opening, then the African American History museum right next door. | Holocaust Museum or Air and Space, then the White House from the Ellipse. | Walk west to the WWII Memorial, the Lincoln Memorial at sunset, Vietnam and Korean memorials, and on to Jefferson and FDR around the Tidal Basin if you still have legs. Dinner on U Street with a half-smoke at Ben's Chili Bowl or Ethiopian in Shaw. |
+| Day 3 · Arlington and Georgetown | Metro to Arlington Cemetery for the Kennedy graves and the Changing of the Guard. | Walk or take a quick ride over to Georgetown: lunch, the residential streets, Dumbarton Oaks and the canal towpath. | Sunset from the Kennedy Center terrace or a drink on the Georgetown waterfront, then dinner in Dupont Circle or Logan Circle. |
 
 ## What is overrated (and what to do instead)
 
@@ -167,9 +163,12 @@ In the city, the **Metro** is clean and simple, with fares around €2-6 ($2-7) 
 
 Daily budgets per person, excluding flights:
 
-- **Shoestring: about €90-130 ($100-140).** Hostel dorm, free museums, cheap lunches and carry-outs, walking and metro.
+**Rough daily budget**
 
-- **Mid-range: about €230-350 ($250-380).** Share of a 3-star hotel, sit-down meals, a few drinks, one paid activity and the odd Uber.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring: about €90-130 | $100-140 | Hostel dorm, free museums, cheap lunches and carry-outs, walking and metro. |
+| Mid-range: about €230-350 | $250-380 | Share of a 3-star hotel, sit-down meals, a few drinks, one paid activity and the odd Uber. |
 
 - **Typical extras:** beer €8-10 ($8-11), coffee €4-6 ($4-6), Arlington tram €17 ($18).
 

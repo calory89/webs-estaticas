@@ -87,17 +87,13 @@ For almost free, buy bread, cheese, tomatoes and figs at the Green Market and pi
 
 ## Split itinerary: 3 days
 
-### Day 1: Diocletian's Palace and the old town
+**3-day itinerary for Split**
 
-**Morning:** Be at the Peristyle by 7:30 before the cruise groups arrive. Climb the cathedral bell tower first, then the cathedral, crypt and Temple of Jupiter. **Afternoon:** Escape the heat in the substructures, then walk out of the Golden Gate to rub Gregory of Nin's toe. Grab lunch west of the palace, then wander Pjaca and Fruit Square. **Evening:** Sunset drink on the Riva, then dinner in a konoba in Varoš or on the quieter lanes of the old town's north side.
-
-### Day 2: Markets, Marjan and the beach
-
-**Morning:** Fish market and Green Market, then buy a picnic. Walk up through Varoš to Vidilica and on to Telegrin if you are keen. **Afternoon:** Descend to Kašjuni for a swim, then walk or take bus 12 to the Meštrović Gallery on the way back. **Evening:** Picigin at Bačvice as the sun goes down, then drinks at the beach bars in Bačvice or the Firule area.
-
-### Day 3: Day trip and a final evening
-
-**Morning:** Leave early for Trogir, Krka or an island (see day trips below). **Afternoon:** Explore, swim, eat lunch where you are. **Evening:** Back in Split for a farewell dinner. If it is summer, check whether there is an open-air performance in the Peristyle.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Diocletian's Palace and the old town | Be at the Peristyle by 7:30 before the cruise groups arrive. Climb the cathedral bell tower first, then the cathedral, crypt and Temple of Jupiter. | Escape the heat in the substructures, then walk out of the Golden Gate to rub Gregory of Nin's toe. Grab lunch west of the palace, then wander Pjaca and Fruit Square. | Sunset drink on the Riva, then dinner in a konoba in Varoš or on the quieter lanes of the old town's north side. |
+| Day 2 · Markets, Marjan and the beach | Fish market and Green Market, then buy a picnic. Walk up through Varoš to Vidilica and on to Telegrin if you are keen. | Descend to Kašjuni for a swim, then walk or take bus 12 to the Meštrović Gallery on the way back. | Picigin at Bačvice as the sun goes down, then drinks at the beach bars in Bačvice or the Firule area. |
+| Day 3 · Day trip and a final evening | Leave early for Trogir, Krka or an island (see day trips below). | Explore, swim, eat lunch where you are. | Back in Split for a farewell dinner. If it is summer, check whether there is an open-air performance in the Peristyle. |
 
 ## What is overrated (and what to do instead)
 
@@ -157,12 +153,14 @@ In town, you will walk almost everywhere. The old town is pedestrian-only. Prome
 
 ## How much a trip to Split costs
 
-- **Shoestring: €60-90 a day.** Hostel bed, bakery breakfast, market picnic or gablec lunch, cheap dinner, free sights and beaches, one paid attraction.
+**Rough daily budget**
 
-- **Mid-range: €150-250 a day per person.** Double room or apartment shared, sit-down lunch and dinner with wine, a couple of paid sights, a day trip or ferry.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €60-90 a day | Hostel bed, bakery breakfast, market picnic or gablec lunch, cheap dinner, free sights and beaches, one paid attraction. |
+| Mid-range | €150-250 a day per person | Double room or apartment shared, sit-down lunch and dinner with wine, a couple of paid sights, a day trip or ferry. |
 
 - **Extras to budget for:** island catamaran €10-30 each way, Krka entry €20-40 in summer, organised boat tours €60-120.
-
 Croatia uses the euro, and summer prices are now close to Western Europe. Out of season, everything gets noticeably cheaper.
 
 ## Day trips from Split

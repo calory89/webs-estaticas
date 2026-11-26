@@ -39,19 +39,19 @@ Para ver ballenas piloto y delfines hay salidas desde Los Cristianos y Costa Ade
 
 Si te gusta el viento, El Médano es lugar de windsurf y kitesurf, con la Montaña Roja al fondo. Y si quieres playa fácil, Playa del Duque, en Costa Adeje, es amplia y cómoda, aunque cara de ambiente.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Tenerife en 5 días: ruta día a día
 
 Con tres días ves lo esencial. Con cinco, la isla empieza a tener sentido. Más de siete solo si quieres combinar playa y senderismo sin prisa.
 
-- **Día 1:** Santa Cruz y La Laguna. Mercado, paseo por el centro, cena en La Laguna.
+**Itinerario de 5 días en Tenerife**
 
-- **Día 2:** Anaga. Cruz del Carmen, un sendero corto, Taganana y comida en Benijo.
-
-- **Día 3:** Teide. Subida temprano, Roques de García y bajada por Vilaflor, que presume de ser el pueblo más alto de España.
-
-- **Día 4:** Norte oeste. Icod, Garachico y baño en El Caletón; si hay tiempo, Punta de Teno al atardecer.
-
-- **Día 5:** Masca y Los Gigantes, o playa y barco en el sur antes del vuelo.
+| Día | Plan |
+|---|---|
+| Día 1 | Santa Cruz y La Laguna. Mercado, paseo por el centro, cena en La Laguna. |
+| Día 2 | Anaga. Cruz del Carmen, un sendero corto, Taganana y comida en Benijo. |
+| Día 3 | Teide. Subida temprano, Roques de García y bajada por Vilaflor, que presume de ser el pueblo más alto de España. |
+| Día 4 | Norte oeste. Icod, Garachico y baño en El Caletón; si hay tiempo, Punta de Teno al atardecer. |
+| Día 5 | Masca y Los Gigantes, o playa y barco en el sur antes del vuelo. |
 
 ## Cuándo ir
 
@@ -87,11 +87,13 @@ Para recorrer la isla con libertad, el coche es lo más cómodo. Reserva con ant
 
 ## Presupuesto orientativo por día
 
-- **Ajustado (60-80 €):** alojamiento sencillo, guagua, comida en guachinches o bares locales, playas y senderos gratuitos.
+**Presupuesto orientativo por día**
 
-- **Medio (100-150 €):** hotel de tres estrellas o apartamento, coche de alquiler, un par de actividades de pago y buena comida.
-
-- **Cómodo (200 € o más):** hotel de categoría, restaurantes de calidad, excursiones en barco y teleférico.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | 60-80 € | Alojamiento sencillo, guagua, comida en guachinches o bares locales, playas y senderos gratuitos. |
+| Medio | 100-150 € | Hotel de tres estrellas o apartamento, coche de alquiler, un par de actividades de pago y buena comida. |
+| Cómodo | 200 € o más | Hotel de categoría, restaurantes de calidad, excursiones en barco y teleférico. |
 
 El teleférico ronda los 40 € por persona. El alquiler de coche suele salir entre 25 y 40 € al día fuera de temporada alta, y mucho más en agosto o Navidad.
 

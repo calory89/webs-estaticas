@@ -95,31 +95,15 @@ Pasear por el casco antiguo es gratis y por las mañanas tempranas apenas hay co
 
 - Mercado central por la mañana: gratis, y es de lo mejor que hay.
 
-## Itinerario: Hoi An en 3 días
+## Qué ver en Hoi An en 3 días: ruta día a día
 
-### Día 1: el casco antiguo
+**Itinerario de 3 días en Hoi An**
 
-**Mañana:** llega al Puente Japonés a las 7 y luego visita la casa Phùng Hưng, la Sala Cantonesa y la de Fujian. Desayuna un bánh mì por el camino. Termina en el mercado central y en el templo de Quan Công.
-
-**Tarde:** vuelve al hotel a refugiarte del calor o encarga ropa a un sastre. Hacia las 4 entra en Tấn Ký y luego cruza a An Hội.
-
-**Noche:** mira el atardecer desde el puente de An Hội, cena cao lầu y date una vuelta por el mercado nocturno. Si te apetece, sube a la barca con farolillo.
-
-### Día 2: campo, cocina y playa
-
-**Mañana:** clase de cocina con visita al mercado, o paseo en bici a Trà Quế.
-
-**Tarde:** pedalea hasta An Bàng, son 15-20 minutos. Bañito y cena de marisco en la playa.
-
-**Noche:** vuelve en Grab si es tarde y dale la segunda prueba al traje.
-
-### Día 3: My Son y despedida
-
-**Mañana:** excursión a los templos de My Son. Sal a las 6 para llegar antes que los grupos y estar de vuelta para comer.
-
-**Tarde:** paseo en barca redonda en Cẩm Thanh, o descanso.
-
-**Noche:** última cena en la orilla tranquila de An Hội y recoge la ropa del sastre.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · El casco antiguo | Llega al Puente Japonés a las 7 y luego visita la casa Phùng Hưng, la Sala Cantonesa y la de Fujian. Desayuna un bánh mì por el camino. Termina en el mercado central y en el templo de Quan Công. | Vuelve al hotel a refugiarte del calor o encarga ropa a un sastre. Hacia las 4 entra en Tấn Ký y luego cruza a An Hội. | Mira el atardecer desde el puente de An Hội, cena cao lầu y date una vuelta por el mercado nocturno. Si te apetece, sube a la barca con farolillo. |
+| Día 2 · Campo, cocina y playa | Clase de cocina con visita al mercado, o paseo en bici a Trà Quế. | Pedalea hasta An Bàng, son 15-20 minutos. Bañito y cena de marisco en la playa. | Vuelve en Grab si es tarde y dale la segunda prueba al traje. |
+| Día 3 · My Son y despedida | Excursión a los templos de My Son. Sal a las 6 para llegar antes que los grupos y estar de vuelta para comer. | Paseo en barca redonda en Cẩm Thanh, o descanso. | Última cena en la orilla tranquila de An Hội y recoge la ropa del sastre. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -183,9 +167,12 @@ No existen abonos de transporte. El casco antiguo se recorre andando y en alguna
 
 ## Cuánto cuesta un viaje a Hoi An
 
-- **Presupuesto ajustado: 30-40 € al día.** Homestay sencillo, comida local, bici y la entrada conjunta.
+**Presupuesto orientativo por día**
 
-- **Presupuesto medio: 60-100 € al día.** Hotel con piscina, restaurantes, una excursión o una clase de cocina y algún Grab.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Presupuesto ajustado | 30-40 € al día | Homestay sencillo, comida local, bici y la entrada conjunta. |
+| Presupuesto medio | 60-100 € al día | Hotel con piscina, restaurantes, una excursión o una clase de cocina y algún Grab. |
 
 Como referencia, 1 € equivale a unos 28.000-30.000 dong. Los sastres y las excursiones van aparte.
 

@@ -83,19 +83,15 @@ El Real Alcázar tiene franjas gratuitas los lunes a última hora, pero hay que 
 
 Otros planes de cero euros: el Castillo de San Jorge en Triana (antigua sede de la Inquisición, con un centro de interpretación sobrio y potente), los jardines de Murillo, el puente de la Barqueta al atardecer y entrar en iglesias como San Luis de los Franceses en horario de culto o la parroquia de Santa Ana en Triana.
 
-## Itinerario: Sevilla en 3 días
+## Qué ver en Sevilla en 3 días: ruta día a día
 
-### Día 1: el Sevilla clásico
+**Itinerario de 3 días en Sevilla**
 
-**Mañana:** Real Alcázar en el primer turno, luego paseo por el barrio de Santa Cruz y los Jardines de Murillo. **Tarde:** comida por la zona de la calle San Fernando o Puerta de Jerez, siesta si hace calor y, a partir de las seis, Parque de María Luisa y Plaza de España con la luz bajando. **Noche:** tapas por la zona de la Alfalfa y la calle Pérez Galdós.
-
-### Día 2: Catedral, centro y Triana
-
-**Mañana:** Catedral y Giralda a primera hora, Archivo de Indias y paseo por el Arenal hasta la Torre del Oro. **Tarde:** cruza a Triana por el Puente de Isabel II, Mercado de Triana, Castillo de San Jorge, calle Alfarería y calle Betis. **Noche:** cena de tapas en Triana y vuelta por el puente con la ciudad iluminada, o espectáculo de flamenco.
-
-### Día 3: el Sevilla de los sevillanos
-
-**Mañana:** Casa de Pilatos o Palacio de las Dueñas, y después Museo de Bellas Artes. **Tarde:** subida norte por la calle Feria (con su mercado) hasta la Basílica de la Macarena y la muralla. **Noche:** Setas al atardecer y terraza en la Alameda de Hércules, a diez minutos andando.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · El Sevilla clásico | Real Alcázar en el primer turno, luego paseo por el barrio de Santa Cruz y los Jardines de Murillo. | Comida por la zona de la calle San Fernando o Puerta de Jerez, siesta si hace calor y, a partir de las seis, Parque de María Luisa y Plaza de España con la luz bajando. | Tapas por la zona de la Alfalfa y la calle Pérez Galdós. |
+| Día 2 · Catedral, centro y Triana | Catedral y Giralda a primera hora, Archivo de Indias y paseo por el Arenal hasta la Torre del Oro. | Cruza a Triana por el Puente de Isabel II, Mercado de Triana, Castillo de San Jorge, calle Alfarería y calle Betis. | Cena de tapas en Triana y vuelta por el puente con la ciudad iluminada, o espectáculo de flamenco. |
+| Día 3 · El Sevilla de los sevillanos | Casa de Pilatos o Palacio de las Dueñas, y después Museo de Bellas Artes. | Subida norte por la calle Feria (con su mercado) hasta la Basílica de la Macarena y la muralla. | Setas al atardecer y terraza en la Alameda de Hércules, a diez minutos andando. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -169,9 +165,12 @@ Dentro de la ciudad casi no hace falta transporte: el casco histórico se cruza 
 
 ## Cuánto cuesta un viaje a Sevilla
 
-- **Presupuesto ajustado: 50-70 € al día.** Albergue o habitación compartida (25-35 €), comida de menú y tapas (20-25 €), entradas a sitios gratuitos y un monumento de pago.
+**Presupuesto orientativo por día**
 
-- **Presupuesto medio: 110-160 € al día por persona.** Hotel de tres estrellas en el centro compartiendo habitación (45-70 €), tapeo y una cena sentada (35-45 €), Alcázar, Catedral y un flamenco repartidos en el viaje.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Presupuesto ajustado | 50-70 € al día | Albergue o habitación compartida (25-35 €), comida de menú y tapas (20-25 €), entradas a sitios gratuitos y un monumento de pago. |
+| Presupuesto medio | 110-160 € al día por persona | Hotel de tres estrellas en el centro compartiendo habitación (45-70 €), tapeo y una cena sentada (35-45 €), Alcázar, Catedral y un flamenco repartidos en el viaje. |
 
 - **Entradas principales:** Alcázar unos 16 €, Catedral unos 13 €, Setas unos 15 €, Casa de Pilatos unos 12 €, flamenco entre 20 y 30 €.
 

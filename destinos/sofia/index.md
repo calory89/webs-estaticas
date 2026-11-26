@@ -39,15 +39,17 @@ Por la tarde, prueba los baños minerales: la ciudad tiene aguas termales, y jun
 
 Y sal de la ciudad al menos una vez. En el Vitosha puedes subir en telecabina desde Simeonovo y caminar hacia Cherni Vrah, el pico más alto del macizo, que ronda los 2.290 metros. En invierno hay esquí, sin lujos pero barato.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Sofía en 3 días: ruta día a día
 
 Tres días son ideales. Con dos ves lo esencial, pero tendrás que ir rápido; con cuatro o cinco ya puedes meter una excursión larga.
 
-- **Día 1:** free tour, Alejandro Nevski, Santa Sofía, calle Vitosha y cena en el centro.
+**Itinerario de 3 días en Sofía**
 
-- **Día 2:** Rotonda de San Jorge, Serdica, mercados y mezquita. Por la tarde, baños, museo arqueológico y paseo por Borisova Gradina.
-
-- **Día 3:** Iglesia de Boyana por la mañana y subida al Vitosha por la tarde, si hace buen tiempo.
+| Día | Plan |
+|---|---|
+| Día 1 | Free tour, Alejandro Nevski, Santa Sofía, calle Vitosha y cena en el centro. |
+| Día 2 | Rotonda de San Jorge, Serdica, mercados y mezquita. Por la tarde, baños, museo arqueológico y paseo por Borisova Gradina. |
+| Día 3 | Iglesia de Boyana por la mañana y subida al Vitosha por la tarde, si hace buen tiempo. |
 
 Si tienes más tiempo, Plovdiv queda a unas dos horas en tren o autobús, y el monasterio de Rila, algo más lejos, exige día completo con tour o coche de alquiler.
 

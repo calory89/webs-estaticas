@@ -89,35 +89,19 @@ Lo gratis escasea, pero existe. Las playas son públicas por ley, así que ning�
 
 - **Mirador del lago Arenal** desde la carretera a Tilarán, con paradas en la cuneta.
 
-## Itinerario: Costa Rica en 7 días
+## Qué ver en Costa Rica en 7 días: ruta día a día
 
-### Día 1: San José
+**Itinerario de 7 días en Costa Rica**
 
-**Mañana:** Teatro Nacional y Museo del Oro Precolombino. **Tarde:** Mercado Central y Avenida Central hasta la Plaza de la Cultura. **Noche:** cena en Barrio Escalante, la zona con mejores restaurantes. Si llegas tarde de España, duerme cerca del aeropuerto y sáltate la capital.
-
-### Día 2: a La Fortuna
-
-**Mañana:** 3 horas de viaje en coche o shuttle. **Tarde:** Catarata Río Fortuna. **Noche:** aguas termales.
-
-### Día 3: Arenal
-
-**Mañana:** Parque Nacional Volcán Arenal o Arenal 1968, con la vista del cono despejado. **Tarde:** puentes colgantes de Místico. **Noche:** tour nocturno de ranas en La Fortuna.
-
-### Día 4: Río Celeste
-
-**Mañana:** excursión a Río Celeste con salida temprana. **Tarde:** vuelta a La Fortuna. **Noche:** casado en una soda del pueblo. Si vas sin coche, cambia este día por canopy o rafting suave en el río Balsa.
-
-### Día 5: Monteverde
-
-**Mañana:** traslado de unas 4 horas, o el "jeep-boat-jeep" que cruza el lago Arenal (unos 30 €, más bonito y algo más corto). **Tarde:** canopy o finca de café. **Noche:** tour nocturno por el bosque.
-
-### Día 6: Monteverde y bajada a Manuel Antonio
-
-**Mañana:** Reserva de Monteverde o Santa Elena al abrir. **Tarde:** 4 horas hasta Quepos, con parada en el puente de Tárcoles. **Noche:** atardecer en Playa Espadilla.
-
-### Día 7: Manuel Antonio
-
-**Mañana:** parque nacional a primera hora, con guía. **Tarde:** playa y vuelta a San José (3 h 30 min) si vuelas al día siguiente. **Noche:** duerme en Alajuela, cerca del aeropuerto.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · San José | Teatro Nacional y Museo del Oro Precolombino. | Mercado Central y Avenida Central hasta la Plaza de la Cultura. | Cena en Barrio Escalante, la zona con mejores restaurantes. Si llegas tarde de España, duerme cerca del aeropuerto y sáltate la capital. |
+| Día 2 · A La Fortuna | 3 horas de viaje en coche o shuttle. | Catarata Río Fortuna. | Aguas termales. |
+| Día 3 · Arenal | Parque Nacional Volcán Arenal o Arenal 1968, con la vista del cono despejado. | Puentes colgantes de Místico. | Tour nocturno de ranas en La Fortuna. |
+| Día 4 · Río Celeste | Excursión a Río Celeste con salida temprana. | Vuelta a La Fortuna. | Casado en una soda del pueblo. Si vas sin coche, cambia este día por canopy o rafting suave en el río Balsa. |
+| Día 5 · Monteverde | Traslado de unas 4 horas, o el "jeep-boat-jeep" que cruza el lago Arenal (unos 30 €, más bonito y algo más corto). | Canopy o finca de café. | Tour nocturno por el bosque. |
+| Día 6 · Monteverde y bajada a Manuel Antonio | Reserva de Monteverde o Santa Elena al abrir. | 4 horas hasta Quepos, con parada en el puente de Tárcoles. | Atardecer en Playa Espadilla. |
+| Día 7 · Manuel Antonio | Parque nacional a primera hora, con guía. | Playa y vuelta a San José (3 h 30 min) si vuelas al día siguiente. | Duerme en Alajuela, cerca del aeropuerto. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -185,14 +169,15 @@ Para moverte por el país no hay abonos de transporte. Los buses públicos salen
 
 Costa Rica es el país más caro de Centroamérica, con precios parecidos a los de España o algo más altos en zonas turísticas. Sin contar el vuelo, que desde Madrid ronda los 600-900 € ida y vuelta:
 
-- **Presupuesto ajustado: 60-80 € al día.** Hostal en dormitorio o habitación sencilla, comida en sodas, buses públicos y una actividad pagada cada dos días.
+**Presupuesto orientativo por día**
 
-- **Presupuesto medio: 140-200 € al día por persona** (en pareja). Hotel con baño propio, coche de alquiler compartido, restaurantes y una actividad o entrada diaria.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Presupuesto ajustado | 60-80 € al día | Hostal en dormitorio o habitación sencilla, comida en sodas, buses públicos y una actividad pagada cada dos días. |
+| Presupuesto medio | 140-200 € al día por persona | (en pareja). Hotel con baño propio, coche de alquiler compartido, restaurantes y una actividad o entrada diaria. |
 
 - **Coche de alquiler:** entre 40 y 90 € al día con el seguro obligatorio, que casi nunca está en el precio de la web.
-
 - **Gasolina:** en torno a 1,20-1,40 € el litro.
-
 El euro equivale a unos 550-600 colones. Se paga con tarjeta en casi todas partes y los dólares se aceptan en todo el país, pero el cambio en dólares suele salirte peor.
 
 ## Excursiones de un día desde Costa Rica

@@ -37,17 +37,18 @@ Más allá de los monumentos, Londres se disfruta con rutinas pequeñas. Un pub 
 
 Si te gustan los mercados, Borough Market funciona mejor con el estómago vacío y entre semana. Los domingos, Brick Lane y Columbia Road Flower Market dan un paseo distinto por el este. Los amantes del fútbol pueden reservar el tour de algún estadio, aunque un partido es complicado de conseguir. Y si el cuerpo pide verde, Kew Gardens es una excursión tranquila en metro.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Londres en 4 días: ruta día a día
 
 Con tres días se ve lo esencial; con cuatro se respira. Una propuesta:
 
-- **Día 1:** Westminster, St James's Park, Trafalgar Square y National Gallery. Cena en Soho.
+**Itinerario de 4 días en Londres**
 
-- **Día 2:** Tower of London, Tower Bridge, paseo por el sur hasta la Tate Modern y Borough Market.
-
-- **Día 3:** British Museum por la mañana, Covent Garden y tarde en Camden o Regent's Canal.
-
-- **Día 4:** Greenwich o Notting Hill, según el día que haga, y Sky Garden al final.
+| Día | Plan |
+|---|---|
+| Día 1 | Westminster, St James's Park, Trafalgar Square y National Gallery. Cena en Soho. |
+| Día 2 | Tower of London, Tower Bridge, paseo por el sur hasta la Tate Modern y Borough Market. |
+| Día 3 | British Museum por la mañana, Covent Garden y tarde en Camden o Regent's Canal. |
+| Día 4 | Greenwich o Notting Hill, según el día que haga, y Sky Garden al final. |
 
 ## Cuándo ir: clima y temporadas
 

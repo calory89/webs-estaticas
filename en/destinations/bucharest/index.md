@@ -57,15 +57,17 @@ Not the dry place the name suggests. The textiles, icons and costumes are beauti
 
 - **Day trip to Sinaia and Peleș Castle.** Trains leave from Gara de Nord and take roughly two hours. Brașov is a longer but popular option.
 
-## How many days and a suggested route
+## Bucharest itinerary: 3 days, day by day
 
 Three days is the sweet spot. Two will do if you skip the museums, and four lets you add a day trip.
 
-- **Day 1:** Old Town, Stavropoleos, Cărturești Carusel, lunch in Lipscani, then Calea Victoriei, Revolution Square and the Athenaeum. Dinner back in the centre.
+**3-day itinerary for Bucharest**
 
-- **Day 2:** Parliament Palace tour in the morning, then walk or ride towards Cișmigiu Gardens. In the afternoon visit the Peasant Museum, and finish with the Herășrău side of town in the evening.
-
-- **Day 3:** Village Museum and Herăstrău Park, then Therme or a day trip to Mogoșoaia or Sinaia.
+| Day | Plan |
+|---|---|
+| Day 1 | Old Town, Stavropoleos, Cărturești Carusel, lunch in Lipscani, then Calea Victoriei, Revolution Square and the Athenaeum. Dinner back in the centre. |
+| Day 2 | Parliament Palace tour in the morning, then walk or ride towards Cișmigiu Gardens. In the afternoon visit the Peasant Museum, and finish with the Herășrău side of town in the evening. |
+| Day 3 | Village Museum and Herăstrău Park, then Therme or a day trip to Mogoșoaia or Sinaia. |
 
 ## When to go
 

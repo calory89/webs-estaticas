@@ -89,19 +89,15 @@ Gran parte de lo mejor no cuesta nada. El Viejo San Juan, el Paseo de la Princes
 
 - Los **castillos** por unos 10 $ (con ambos incluidos) son la mejor relación calidad-precio de la ciudad.
 
-## Itinerario: San Juan en 3 días
+## Qué ver en San Juan en 3 días: ruta día a día
 
-### Día 1: Viejo San Juan
+**Itinerario de 3 días en San Juan**
 
-**Mañana:** El Morro a primera hora, luego el cementerio desde arriba y bajada por la Calle Norzagaray hasta el Castillo San Cristóbal. **Tarde:** comida en el casco antiguo, catedral, Calle del Cristo, Calle Fortaleza y jardines de Casa Blanca. **Noche:** atardecer en la explanada de El Morro o en el Paseo de la Princesa y cena por la Calle de San Sebastián.
-
-### Día 2: Santurce y playa
-
-**Mañana:** Museo de Arte de Puerto Rico y paseo por los murales de Calle Cerra. **Tarde:** comida en La Placita y playa en Ocean Park hasta que baje el sol. **Noche:** vuelta a La Placita si es jueves, viernes o sábado; si no, cena en Santurce, que tiene la mejor cocina de la ciudad.
-
-### Día 3: Piñones o bahía
-
-**Mañana:** bici o coche hasta Piñones y frituras para almorzar. **Tarde:** playa en Isla Verde o Escambrón, o lancha a Cataño y Bacardí si prefieres plan urbano. **Noche:** última cena con mofongo y una piña colada, aunque sea en el hotel, para no irte sin probarla.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Viejo San Juan | El Morro a primera hora, luego el cementerio desde arriba y bajada por la Calle Norzagaray hasta el Castillo San Cristóbal. | Comida en el casco antiguo, catedral, Calle del Cristo, Calle Fortaleza y jardines de Casa Blanca. | Atardecer en la explanada de El Morro o en el Paseo de la Princesa y cena por la Calle de San Sebastián. |
+| Día 2 · Santurce y playa | Museo de Arte de Puerto Rico y paseo por los murales de Calle Cerra. | Comida en La Placita y playa en Ocean Park hasta que baje el sol. | Vuelta a La Placita si es jueves, viernes o sábado; si no, cena en Santurce, que tiene la mejor cocina de la ciudad. |
+| Día 3 · Piñones o bahía | Bici o coche hasta Piñones y frituras para almorzar. | Playa en Isla Verde o Escambrón, o lancha a Cataño y Bacardí si prefieres plan urbano. | Última cena con mofongo y una piña colada, aunque sea en el hotel, para no irte sin probarla. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 

@@ -95,29 +95,13 @@ Quito is already cheap, but a lot of the best bits cost nothing at all:
 
 ## Quito itinerary: 3 days
 
-### Day 1: Old Town
+**3-day itinerary for Quito**
 
-**Morning:** Take a free walking tour from Plaza Grande, or do it yourself: Plaza Grande, La Compañía, then San Francisco and Casa del Alabado. Take it slowly, because the altitude hits on day one.
-
-**Afternoon:** Have a set lunch at Mercado Central, then walk up to the Basílica del Voto Nacional and climb the towers. Taxi up to Itchimbía for the late-afternoon view.
-
-**Evening:** Have canelazo on La Ronda (best Friday or Saturday), then dinner nearby. Get a taxi or app ride back if you are staying outside the centre.
-
-### Day 2: The heights and the north
-
-**Morning:** Go to the TelefériQo first thing for clear views. Bring a warm layer, because it is cold up there.
-
-**Afternoon:** Taxi to the Capilla del Hombre and Guayasamín's house. Afterwards, head down to González Suárez and walk to Guápulo.
-
-**Evening:** Have dinner and drinks in La Floresta, which is calmer and better than La Mariscal.
-
-### Day 3: The equator and Panecillo
-
-**Morning:** Go to Mitad del Mundo and Museo Intiñan. A taxi or app ride costs $15-25 each way, or you can take the metro plus a bus for about a dollar but double the time.
-
-**Afternoon:** Back in town, take a taxi up El Panecillo for the late-afternoon light, then come down to Plaza Santo Domingo.
-
-**Evening:** Have a farewell dinner of Ecuadorian food in the Old Town or La Floresta.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Old Town | Take a free walking tour from Plaza Grande, or do it yourself: Plaza Grande, La Compañía, then San Francisco and Casa del Alabado. Take it slowly, because the altitude hits on day one. | Have a set lunch at Mercado Central, then walk up to the Basílica del Voto Nacional and climb the towers. Taxi up to Itchimbía for the late-afternoon view. | Have canelazo on La Ronda (best Friday or Saturday), then dinner nearby. Get a taxi or app ride back if you are staying outside the centre. |
+| Day 2 · The heights and the north | Go to the TelefériQo first thing for clear views. Bring a warm layer, because it is cold up there. | Taxi to the Capilla del Hombre and Guayasamín's house. Afterwards, head down to González Suárez and walk to Guápulo. | Have dinner and drinks in La Floresta, which is calmer and better than La Mariscal. |
+| Day 3 · The equator and Panecillo | Go to Mitad del Mundo and Museo Intiñan. A taxi or app ride costs $15-25 each way, or you can take the metro plus a bus for about a dollar but double the time. | Back in town, take a taxi up El Panecillo for the late-afternoon light, then come down to Plaza Santo Domingo. | Have a farewell dinner of Ecuadorian food in the Old Town or La Floresta. |
 
 ## What is overrated (and what to do instead)
 
@@ -181,9 +165,12 @@ The **Quito Metro**, opened at the end of 2023, runs one line from Quitumbe in t
 
 ## How much a trip to Quito costs
 
-- **Shoestring: $35-50 (€32-45) a day.** This covers a hostel dorm, almuerzos, market food, metro and free sights.
+**Rough daily budget**
 
-- **Mid-range: $90-150 (€80-135) a day.** This covers a boutique hotel, restaurant dinners, taxis and the TelefériQo and museum entries.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | $35-50 (€32-45) a day | This covers a hostel dorm, almuerzos, market food, metro and free sights. |
+| Mid-range | $90-150 (€80-135) a day | This covers a boutique hotel, restaurant dinners, taxis and the TelefériQo and museum entries. |
 
 - **Day tours:** add $40-80 per tour (Cotopaxi, Quilotoa).
 

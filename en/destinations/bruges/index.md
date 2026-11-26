@@ -39,17 +39,16 @@ Rent a **bike** and ride the canal path out to Damme, a tiny village lined with 
 
 Spend an evening drinking beer. **'t Brugs Beertje** is a classic for connoisseurs, with a long Belgian list and patient staff. **Café Vlissinghe**, dating from 1515, is the place for a slow, candlelit pint. Chocolate shops are everywhere. Look for small independent chocolatiers rather than the glossy ones on the Markt.
 
-## How many days and a suggested route
+## Bruges itinerary: 2 days, day by day
 
 One day is enough for the highlights, but two days is the sweet spot. Staying overnight gets you the town before and after the coaches.
 
-### Day 1
+**2-day itinerary for Bruges**
 
-Start at the Markt before the crowds, then climb the Belfry first thing. Walk to the Burg, see the basilica, then pause at Rozenhoedkaai. After lunch, visit the Groeninge Museum and the Church of Our Lady. Finish with the Begijnhof and Minnewater around sunset, then dinner and a beer.
-
-### Day 2
-
-Walk the Kruisvest windmills in the morning, then take the boat tour or visit De Halve Maan. After lunch, bike to Damme or visit Sint-Janshospitaal. Wander the Sint-Anna quarter for the last hour, when the streets are almost empty.
+| Day | Plan |
+|---|---|
+| Day 1 | Start at the Markt before the crowds, then climb the Belfry first thing. Walk to the Burg, see the basilica, then pause at Rozenhoedkaai. After lunch, visit the Groeninge Museum and the Church of Our Lady. Finish with the Begijnhof and Minnewater around sunset, then dinner and a beer. |
+| Day 2 | Walk the Kruisvest windmills in the morning, then take the boat tour or visit De Halve Maan. After lunch, bike to Damme or visit Sint-Janshospitaal. Wander the Sint-Anna quarter for the last hour, when the streets are almost empty. |
 
 ## When to go
 

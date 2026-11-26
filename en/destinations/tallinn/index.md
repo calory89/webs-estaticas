@@ -39,13 +39,15 @@ For something different, book a sauna. Estonians take it seriously, and several 
 
 The Song Festival Grounds are worth knowing about. Estonia's "Singing Revolution" is part of the national story, and the amphitheatre is where huge choirs gather every few years.
 
-## How many days and suggested route
+## Tallinn itinerary: 3 days, day by day
 
-**Day 1, Old Town.** Start at Town Hall Square, climb Toompea, see the cathedral and the two viewpoints, then come back down for lunch. After that, St Olaf's, the walls and a slow evening in the lanes.
+**3-day itinerary for Tallinn**
 
-**Day 2, beyond the walls.** Take the tram to Kadriorg for the palace and park, then KUMU. In the afternoon, head to Telliskivi and Kalamaja and stay for dinner.
-
-**Day 3, your choice.** Seaplane Harbour and Patarei, or the Open Air Museum, or a ferry across to Helsinki (about two hours each way). Lahemaa National Park, with its manor houses and coast, is also doable as a long day trip with a car or a tour.
+| Day | Plan |
+|---|---|
+| Day 1 | Old Town. Start at Town Hall Square, climb Toompea, see the cathedral and the two viewpoints, then come back down for lunch. After that, St Olaf's, the walls and a slow evening in the lanes. |
+| Day 2 | Beyond the walls. Take the tram to Kadriorg for the palace and park, then KUMU. In the afternoon, head to Telliskivi and Kalamaja and stay for dinner. |
+| Day 3 | Your choice. Seaplane Harbour and Patarei, or the Open Air Museum, or a ferry across to Helsinki (about two hours each way). Lahemaa National Park, with its manor houses and coast, is also doable as a long day trip with a car or a tour. |
 
 ## When to go
 

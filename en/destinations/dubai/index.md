@@ -63,17 +63,18 @@ A warehouse district in Al Quoz with galleries, specialty coffee and concept sto
 
 - **Skiing in a mall:** Ski Dubai is silly and fun if the kids are along, or if you simply want to see snow in the Gulf.
 
-## How many days and a suggested route
+## Dubai itinerary: 4 days, day by day
 
 Three full days covers the essentials. Four lets you slow down, which in summer heat matters. Five suits those wanting the desert, a beach day and a day trip to Abu Dhabi.
 
-- **Day 1, Old Dubai:** Al Fahidi in the morning, the abra across the Creek, the souks, then dinner in Deira or Bur Dubai.
+**4-day itinerary for Dubai**
 
-- **Day 2, Downtown:** Museum of the Future or the Frame in the morning, the Dubai Mall at midday, Burj Khalifa at sunset, the fountain after dark.
-
-- **Day 3, coast:** Jumeirah Mosque, a beach morning, an afternoon around Palm or Marina, evening at JBR or La Mer.
-
-- **Day 4, desert:** a late-afternoon safari, or a lie-in and Alserkal Avenue if you've had enough of sand.
+| Day | Plan |
+|---|---|
+| Day 1 | Old Dubai. Al Fahidi in the morning, the abra across the Creek, the souks, then dinner in Deira or Bur Dubai. |
+| Day 2 | Downtown. Museum of the Future or the Frame in the morning, the Dubai Mall at midday, Burj Khalifa at sunset, the fountain after dark. |
+| Day 3 | Coast. Jumeirah Mosque, a beach morning, an afternoon around Palm or Marina, evening at JBR or La Mer. |
+| Day 4 | Desert. A late-afternoon safari, or a lie-in and Alserkal Avenue if you've had enough of sand. |
 
 ## When to go
 

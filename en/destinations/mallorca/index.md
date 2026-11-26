@@ -99,29 +99,16 @@ The best of the island costs nothing: beaches, mountain walks and old towns. In 
 
 ## Mallorca itinerary: 6 days
 
-### Day 1: Palma
+**6-day itinerary for Mallorca**
 
-**Morning:** See the cathedral at opening, then walk the old town and Plaça Major. **Afternoon:** Have tapas at the Mercat de l'Olivar, siesta, then head up to Bellver Castle for late light. **Evening:** Dinner and drinks in Santa Catalina.
-
-### Day 2: Palma to Sóller
-
-**Morning:** Take the vintage train to Sóller. **Afternoon:** Ride the tram to Port de Sóller, then swim or take the boat to Sa Calobra. **Evening:** Sleep in Sóller or Port de Sóller and eat seafood by the harbour.
-
-### Day 3: Deià and Valldemossa
-
-**Morning:** Hike from Sóller to Deià, or drive there, then swim at Cala de Deià. **Afternoon:** Visit Valldemossa once the coaches have gone. **Evening:** Drive to the north and sleep in Pollença or Alcúdia.
-
-### Day 4: The north
-
-**Morning:** Go to Cap de Formentor early (or by bus in summer) and stop at Es Colomer. **Afternoon:** Walk the Alcúdia walls and visit Pollentia, then climb the Calvari in Pollença. **Evening:** Eat in Pollença's main square.
-
-### Day 5: The east
-
-**Morning:** Drive to Porto Cristo for a booked slot at the Caves of Drach. **Afternoon:** Head south and swim at Cala Mondragó or Cala Llombards. **Evening:** Have fish in Cala Figuera or Santanyí.
-
-### Day 6: The south and back
-
-**Morning:** Spend the morning at Es Trenc before it fills. **Afternoon:** Stop for lunch in Colònia de Sant Jordi, then drive back towards Palma (about 1 hour). **Evening:** Watch the sunset from the Palma walls and have a last ensaïmada.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Palma | See the cathedral at opening, then walk the old town and Plaça Major. | Have tapas at the Mercat de l'Olivar, siesta, then head up to Bellver Castle for late light. | Dinner and drinks in Santa Catalina. |
+| Day 2 · Palma to Sóller | Take the vintage train to Sóller. | Ride the tram to Port de Sóller, then swim or take the boat to Sa Calobra. | Sleep in Sóller or Port de Sóller and eat seafood by the harbour. |
+| Day 3 · Deià and Valldemossa | Hike from Sóller to Deià, or drive there, then swim at Cala de Deià. | Visit Valldemossa once the coaches have gone. | Drive to the north and sleep in Pollença or Alcúdia. |
+| Day 4 · The north | Go to Cap de Formentor early (or by bus in summer) and stop at Es Colomer. | Walk the Alcúdia walls and visit Pollentia, then climb the Calvari in Pollença. | Eat in Pollença's main square. |
+| Day 5 · The east | Drive to Porto Cristo for a booked slot at the Caves of Drach. | Head south and swim at Cala Mondragó or Cala Llombards. | Have fish in Cala Figuera or Santanyí. |
+| Day 6 · The south and back | Spend the morning at Es Trenc before it fills. | Stop for lunch in Colònia de Sant Jordi, then drive back towards Palma (about 1 hour). | Watch the sunset from the Palma walls and have a last ensaïmada. |
 
 ## What is overrated (and what to do instead)
 
@@ -179,9 +166,12 @@ Around the island, **TIB buses** leave from the Estació Intermodal under Plaça
 
 ## How much a trip to Mallorca costs
 
-- **Shoestring: €60-80 per day.** Hostel bed €35, menú del día at lunch, supermarket dinner, buses, free beaches.
+**Rough daily budget**
 
-- **Mid-range: €140-200 per day per person** (sharing). A double hotel room, a sit-down dinner, a rental car split two ways, one paid sight a day.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €60-80 per day | Hostel bed €35, menú del día at lunch, supermarket dinner, buses, free beaches. |
+| Mid-range | €140-200 per day per person | (sharing). A double hotel room, a sit-down dinner, a rental car split two ways, one paid sight a day. |
 
 - **Extras:** the tourist tax of €1-4 per person per night depending on hotel category, beach sunbeds at about €15-25 for two, and the Sóller train at about €25.
 

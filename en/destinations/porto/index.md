@@ -65,15 +65,17 @@ Where the river meets the Atlantic. Take the historic tram along the water (line
 
 - Browse the shops and cafés around Cedofeita and Rua Miguel Bombarda, the gallery and design street.
 
-## How many days and a suggested route
+## Porto itinerary: 3 days, day by day
 
 Two days covers the essentials. Three is better, and gives you time to slow down.
 
-**Day 1:** São Bento station, the cathedral, down to Ribeira, across the bridge to Gaia for a cellar visit, and sunset at the Jardim do Morro.
+**3-day itinerary for Porto**
 
-**Day 2:** Bolhão market in the morning, Clérigos, Livraria Lello and the Baixa, then the Palácio da Bolsa. Dinner in Cedofeita.
-
-**Day 3:** Tram to Foz, a long walk on the seafront, then Serralves in the afternoon. Or take a day trip: the Douro Valley by train or boat, or Guimarães and Braga.
+| Day | Plan |
+|---|---|
+| Day 1 | São Bento station, the cathedral, down to Ribeira, across the bridge to Gaia for a cellar visit, and sunset at the Jardim do Morro. |
+| Day 2 | Bolhão market in the morning, Clérigos, Livraria Lello and the Baixa, then the Palácio da Bolsa. Dinner in Cedofeita. |
+| Day 3 | Tram to Foz, a long walk on the seafront, then Serralves in the afternoon. Or take a day trip: the Douro Valley by train or boat, or Guimarães and Braga. |
 
 ## When to go
 

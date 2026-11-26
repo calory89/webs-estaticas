@@ -51,15 +51,17 @@ Ruins on a ridge above Kamari, reached by a steep road or a hike. It's quiet and
 
 - **Sunset sailing.** Pricey, but out on the water you avoid the crowds on land.
 
-## How many days and a suggested route
+## Santorini itinerary: 3 days, day by day
 
 Three full days is the sweet spot. Two works if you're disciplined. Four lets you slow down.
 
-- **Day 1:** Fira in the morning, Imerovigli in the afternoon, sunset from the Skaros path.
+**3-day itinerary for Santorini**
 
-- **Day 2:** Akrotiri early, then Red Beach or Perissa, and an evening in Pyrgos or Megalochori with wine.
-
-- **Day 3:** Oia at sunrise, a volcano boat trip, and dinner at Ammoudi Bay.
+| Day | Plan |
+|---|---|
+| Day 1 | Fira in the morning, Imerovigli in the afternoon, sunset from the Skaros path. |
+| Day 2 | Akrotiri early, then Red Beach or Perissa, and an evening in Pyrgos or Megalochori with wine. |
+| Day 3 | Oia at sunrise, a volcano boat trip, and dinner at Ammoudi Bay. |
 
 With a fourth day, do the Fira–Oia hike and spend the afternoon on a beach.
 

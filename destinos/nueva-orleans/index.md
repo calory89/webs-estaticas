@@ -91,23 +91,16 @@ Buena parte de lo mejor no cuesta nada. Pasear el French Quarter, Jackson Square
 
 - **Second lines de los domingos**, la mejor música de la ciudad sin pagar entrada.
 
-## Itinerario: Nueva Orleans en 4 días
+## Qué ver en Nueva Orleans en 4 días: ruta día a día
 
-### Día 1: French Quarter
+**Itinerario de 4 días en Nueva Orleans**
 
-**Mañana:** beignets temprano, Jackson Square, la catedral y el paseo del río. **Tarde:** Royal Street, French Market y, si te interesa la historia, el Cabildo o la visita guiada al cementerio St. Louis n.º 1. **Noche:** cena criolla en el barrio, concierto en Preservation Hall y una vuelta rápida por Bourbon Street para decir que has estado.
-
-### Día 2: museo y Marigny
-
-**Mañana:** National WWII Museum, en el Warehouse District, a 15 minutos andando de Canal Street. **Tarde:** paseo por el Tremé y Louis Armstrong Park, y luego bajada al Faubourg Marigny para ver sus casas de colores. **Noche:** Frenchmen Street hasta que el cuerpo aguante.
-
-### Día 3: Garden District y Uptown
-
-**Mañana:** tranvía de St. Charles desde Canal, bajada en Washington Avenue y paseo por el Garden District. **Tarde:** Magazine Street para comer y comprar, después tranvía hasta Audubon Park y vuelta. **Noche:** cena en Uptown y concierto en el Maple Leaf o en Tipitina's.
-
-### Día 4: pantanos y City Park
-
-**Mañana:** tour por los pantanos o visita a la Whitney Plantation (reserva con traslado). **Tarde:** de vuelta, tranvía de Canal Street hasta City Park, jardín de esculturas y café con beignets en el parque. **Noche:** ferry a Algiers al atardecer y última cena con ostras.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · French Quarter | Beignets temprano, Jackson Square, la catedral y el paseo del río. | Royal Street, French Market y, si te interesa la historia, el Cabildo o la visita guiada al cementerio St. Louis n.º 1. | Cena criolla en el barrio, concierto en Preservation Hall y una vuelta rápida por Bourbon Street para decir que has estado. |
+| Día 2 · Museo y Marigny | National WWII Museum, en el Warehouse District, a 15 minutos andando de Canal Street. | Paseo por el Tremé y Louis Armstrong Park, y luego bajada al Faubourg Marigny para ver sus casas de colores. | Frenchmen Street hasta que el cuerpo aguante. |
+| Día 3 · Garden District y Uptown | Tranvía de St. Charles desde Canal, bajada en Washington Avenue y paseo por el Garden District. | Magazine Street para comer y comprar, después tranvía hasta Audubon Park y vuelta. | Cena en Uptown y concierto en el Maple Leaf o en Tipitina's. |
+| Día 4 · Pantanos y City Park | Tour por los pantanos o visita a la Whitney Plantation (reserva con traslado). | De vuelta, tranvía de Canal Street hasta City Park, jardín de esculturas y café con beignets en el parque. | Ferry a Algiers al atardecer y última cena con ostras. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -183,9 +176,12 @@ En la ciudad, el French Quarter, el Marigny y el Warehouse District se recorren 
 
 Nueva Orleans no es barata, sobre todo por el alojamiento. Estos son presupuestos por persona y día, sin vuelos, compartiendo habitación doble:
 
-- **Ajustado: unos 120-150 €**. Hotel o casa de huéspedes en Mid-City o CBD, po'boys y comida de barrio, Jazzy Pass y conciertos con entrada gratuita.
+**Presupuesto orientativo por día**
 
-- **Medio: unos 220-300 €**. Hotel en el French Quarter o el Marigny, una cena buena al día, un museo o tour pagado y algunas copas.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | unos 120-150 € | Hotel o casa de huéspedes en Mid-City o CBD, po'boys y comida de barrio, Jazzy Pass y conciertos con entrada gratuita. |
+| Medio | unos 220-300 € | Hotel en el French Quarter o el Marigny, una cena buena al día, un museo o tour pagado y algunas copas. |
 
 Un vuelo desde España suele requerir al menos una escala (en Nueva York, Atlanta, Miami u otro hub) y anda entre 550 y 900 € ida y vuelta según fechas; fuera de festivales y en otoño o enero se encuentran las mejores tarifas.
 

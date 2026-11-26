@@ -70,13 +70,30 @@ def tools_pages():
         L = (lambda a, b: b if en else a)
         url = f"{SITE}/en/tools/baggage/" if en else f"{SITE}/herramientas/equipaje/"
         alt = f'<link rel="alternate" hreflang="es" href="{SITE}/herramientas/equipaje/"><link rel="alternate" hreflang="en" href="{SITE}/en/tools/baggage/">'
-        rows = ''.join(f'<tr><td><b>{G.e(a)}</b></td><td>{f[0]}×{f[1]}×{f[2]}</td><td>{G.e(w) or "—"}</td><td>{(f"{c[0]}×{c[1]}×{c[2]}") if c else "—"}</td><td>{G.e(p) or "—"}</td></tr>' for a, f, w, c, p in BAGS)
+        nd_ = L('sin dato', 'n/a')
+        rows = ''.join(f'<tr><td><b>{G.e(a)}</b></td><td>{f[0]}×{f[1]}×{f[2]}</td><td>{G.e(w) or nd_}</td><td>{(f"{c[0]}×{c[1]}×{c[2]}") if c else L("no vende", "not sold")}</td><td>{G.e(p) or nd_}</td></tr>' for a, f, w, c, p in BAGS)
+        # respuesta directa y FAQ con los datos de la tabla (consulta en Search Console: "affordable airlines with free baggage", posición 5)
+        vol = lambda t: t[0] * t[1] * t[2]
+        big = sorted(BAGS, key=lambda r: -vol(r[1]))
+        incl = [r[0] for r in BAGS if 'incluida' in (r[4] or '')]
+        std = [r[0] for r in BAGS if tuple(r[1]) == (40, 30, 20)]
+        qa_bag = [(L('¿Qué aerolínea low cost deja el bulto gratis más grande?', 'Which low-cost airline has the biggest free bag?'),
+                   L(f'{big[0][0]}: {big[0][1][0]}×{big[0][1][1]}×{big[0][1][2]} cm gratis bajo el asiento' + (f', hasta {big[0][2]}' if big[0][2] else '') + '.', f'{big[0][0]}: a free under-seat bag of {big[0][1][0]}×{big[0][1][1]}×{big[0][1][2]} cm' + (f', up to {big[0][2]}' if big[0][2] else '') + '.')),
+                  (L('¿Qué aerolíneas incluyen la maleta de cabina en el precio?', 'Which airlines include a cabin bag in the fare?'),
+                   L('En nuestra tabla: ' + ', '.join(incl) + '. En las low cost la maleta de cabina se paga aparte.', 'In our table: ' + ', '.join(incl) + '. On low-cost airlines the cabin bag is paid separately.')),
+                  (L('¿Cuál es la medida estándar del bulto gratis?', 'What is the standard free bag size?'),
+                   L(f'40×30×20 cm en {len(std)} de las {len(BAGS)} aerolíneas: ' + ', '.join(std) + '.', f'40×30×20 cm on {len(std)} of the {len(BAGS)} airlines: ' + ', '.join(std) + '.'))]
+        qa_html = f'<h2 style="margin-top:30px">{L("Preguntas frecuentes", "FAQ")}</h2><div class="txt guide">' + ''.join(f'<h3>{G.e(q)}</h3><p>{G.e(a)}</p>' for q, a in qa_bag) + '</div>'
+        qa_ld = {"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": L('es-ES', 'en'), "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in qa_bag]}
+        quick = L(f'Todas las aerolíneas de la tabla dejan un bulto gratis bajo el asiento; el más grande es el de {big[0][0]} ({big[0][1][0]}×{big[0][1][1]}×{big[0][1][2]} cm). La maleta de cabina va incluida en {", ".join(incl)}.',
+                  f'Every airline in the table lets a small under-seat bag fly free; the biggest is {big[0][0]}’s ({big[0][1][0]}×{big[0][1][1]}×{big[0][1][2]} cm). A cabin bag is included on {", ".join(incl)}.')
         src = ' · '.join(f'<a href="{u}" target="_blank" rel="noopener">{G.e(t)}</a>' for t, u in BAG_SRC)
-        title = L('Calculadora de equipaje de mano low cost 2026: ¿cabe gratis tu mochila?', 'Low-cost hand luggage checker 2026: does your bag fly free?')
+        title = L('Calculadora de equipaje de mano low cost 2026: ¿cabe gratis tu mochila?', 'Airlines with free baggage (2026): free bag size by airline')
         desc = L('Mete las medidas de tu mochila o maleta y mira en qué aerolíneas low cost viaja gratis: Ryanair, Vueling, easyJet, Wizz Air, Volotea y más.',
                  'Enter your bag size and see which low-cost airlines let it fly free: Ryanair, Vueling, easyJet, Wizz Air, Volotea and more.')
         body = f'''<main class="sec" style="padding-top:26px"><div class="wrap" style="max-width:900px">
-<div class="kicker">{L("Herramientas lowcost", "Low-cost tools")}</div><h1 class="x-h1">{L("¿Cabe gratis tu equipaje?", "Does your bag fly free?")}</h1>
+<div class="kicker">{L("Herramientas lowcost", "Low-cost tools")}</div><h1 class="x-h1">{L("¿Cabe gratis tu equipaje?", "Airlines with free baggage: does your bag fly free?")}</h1>
+<p class="qa" style="background:#FFF6E0;border-left:4px solid #FFC531;padding:12px 14px;border-radius:10px"><b>{L("Respuesta rápida:", "Quick answer:")}</b> {G.e(quick)}</p>
 <p style="font-size:18px">{L("Pon las medidas de tu mochila o maleta, en centímetros y con asas y ruedas incluidas.", "Enter your bag size in centimetres, including handles and wheels.")}</p>
 <form class="xf open" data-bag style="margin:18px 0"><div class="xf-row">
 <label class="xf-sel"><span>{L("Alto", "Height")} (cm)</span><input type="number" inputmode="numeric" name="a" min="5" max="120" value="40" required></label>
@@ -98,6 +115,7 @@ var t=a?(EN?'Free':'Gratis'):(c?(EN?'Paid cabin bag':'Maleta de cabina')+(r[4]?'
 return '<div class="bag-c '+cls+'"><b>'+r[0]+'</b><i>'+t+'</i></div>';}}).join('')+'</div><p style="font:16px Inter,sans-serif"><b>'+free+'</b> '+(EN?'of':'de')+' '+D.length+' '+(EN?'airlines let it fly free.':'aerolíneas la llevan gratis.')+'</p>';}}
 f.addEventListener('input',run);run();}})();
 </script>
+{qa_html}<script type="application/ld+json">{_j.dumps(qa_ld, ensure_ascii=False)}</script>
 <p style="margin-top:26px"><a class="hlc-btn" href="{L("/chollos/", "/en/deals/")}">{L("Ver los chollos de hoy", "See today’s deals")}</a></p></div></main>'''
         if en:
             pg = E.head(title + ' · Happy Low Cost', desc, url, f"{SITE}/herramientas/equipaje/", og_type='article', body_class='tool') + body + E.FOOTER + '</body></html>'

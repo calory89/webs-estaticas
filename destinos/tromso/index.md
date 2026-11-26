@@ -81,19 +81,15 @@ En una ciudad cara, lo gratis es oro. Pasear el muelle y Storgata, cruzar el pue
 
 El Museo de Arte del Norte de Noruega suele tener entrada gratuita y la biblioteca pública (Tromsø bibliotek, un edificio curioso en el centro) es perfecta para entrar en calor. Para comer barato, el supermercado: Rema 1000, Kiwi o Coop tienen bocadillos, sopas y cerveza (hasta cierta hora) a precios normales para Noruega. La tarjeta del bus urbano compensa si te mueves mucho, pero el centro se hace andando.
 
-## Itinerario: Tromsø en 3 días
+## Qué ver en Tromsø en 3 días: ruta día a día
 
-### Día 1: el centro y el teleférico
+**Itinerario de 3 días en Tromsø**
 
-**Mañana:** café en el centro y paseo por Storgata, la catedral de madera y el muelle. Entra al Museo Polar.**Tarde:** Polaria (cuadra la visita con la comida de las focas). Después cruza el puente andando, visita la Catedral del Ártico y sube en el Fjellheisen a la hora del atardecer.**Noche:** cena en el centro y pinta en Ølhallen. Si la previsión de auroras es buena, sal a Telegrafbukta.
-
-### Día 2: naturaleza y caza de auroras
-
-**Mañana:** trineo de perros o visita a los renos (las agencias recogen en el centro).**Tarde:** descanso, sauna flotante en Pust o paseo por los museos pequeños.**Noche:** tour de auroras. Vuelves de madrugada: no planees nada temprano el día siguiente.
-
-### Día 3: fiordos
-
-**Mañana:** excursión a Kvaløya y Sommarøy, en coche de alquiler o tour, o ballenas si es temporada.**Tarde:** vuelta por el puente de Sandnessund y, si queda luz y ganas, Prestvannet.**Noche:** cena final con pescado ártico o reno, y segundo intento de auroras por tu cuenta si la primera noche no hubo suerte.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · El centro y el teleférico | Café en el centro y paseo por Storgata, la catedral de madera y el muelle. Entra al Museo Polar. | Polaria (cuadra la visita con la comida de las focas). Después cruza el puente andando, visita la Catedral del Ártico y sube en el Fjellheisen a la hora del atardecer. | Cena en el centro y pinta en Ølhallen. Si la previsión de auroras es buena, sal a Telegrafbukta. |
+| Día 2 · Naturaleza y caza de auroras | Trineo de perros o visita a los renos (las agencias recogen en el centro). | Descanso, sauna flotante en Pust o paseo por los museos pequeños. | Tour de auroras. Vuelves de madrugada: no planees nada temprano el día siguiente. |
+| Día 3 · Fiordos | Excursión a Kvaløya y Sommarøy, en coche de alquiler o tour, o ballenas si es temporada. | Vuelta por el puente de Sandnessund y, si queda luz y ganas, Prestvannet. | Cena final con pescado ártico o reno, y segundo intento de auroras por tu cuenta si la primera noche no hubo suerte. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 

@@ -87,17 +87,13 @@ State museums, including the Musei Reali, are free on the first Sunday of the mo
 
 ## Turin itinerary: 3 days
 
-### Day 1: Royal Turin and the centre
+**3-day itinerary for Turin**
 
-**Morning:** start in Piazza Castello with a coffee at Mulassano, then do Palazzo Madama and climb its tower. Pop into the cathedral. **Afternoon:** Musei Reali (focus on the Armoury and the palace rooms), then walk down Via Roma to Piazza San Carlo and spin on the bull. **Evening:** aperitivo in the Quadrilatero Romano and dinner there. Finish with a nightcap on Via Po.
-
-### Day 2: Egypt, cinema and the view
-
-**Morning:** Museo Egizio at opening time, booked ahead. **Afternoon:** lunch nearby, then the Mole Antonelliana, with the cinema museum first and then your pre-booked lift slot. **Evening:** walk Via Po to Piazza Vittorio Veneto, cross the river and climb Monte dei Cappuccini for sunset. Dinner in Vanchiglia afterwards.
-
-### Day 3: Markets, river and hills
-
-**Morning:** Porta Palazzo market, then a bicerin at Caffè al Bicerin a few minutes' walk away. **Afternoon:** either take tram 15 and the rack railway up to Superga, or swap this for Venaria Reale if you prefer palaces to views. **Evening:** stroll Parco del Valentino at golden hour and have dinner in San Salvario.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Royal Turin and the centre | Start in Piazza Castello with a coffee at Mulassano, then do Palazzo Madama and climb its tower. Pop into the cathedral. | Musei Reali (focus on the Armoury and the palace rooms), then walk down Via Roma to Piazza San Carlo and spin on the bull. | Aperitivo in the Quadrilatero Romano and dinner there. Finish with a nightcap on Via Po. |
+| Day 2 · Egypt, cinema and the view | Museo Egizio at opening time, booked ahead. | Lunch nearby, then the Mole Antonelliana, with the cinema museum first and then your pre-booked lift slot. | Walk Via Po to Piazza Vittorio Veneto, cross the river and climb Monte dei Cappuccini for sunset. Dinner in Vanchiglia afterwards. |
+| Day 3 · Markets, river and hills | Porta Palazzo market, then a bicerin at Caffè al Bicerin a few minutes' walk away. | Either take tram 15 and the rack railway up to Superga, or swap this for Venaria Reale if you prefer palaces to views. | Stroll Parco del Valentino at golden hour and have dinner in San Salvario. |
 
 ## What is overrated (and what to do instead)
 
@@ -159,9 +155,12 @@ The centre is very walkable, and you may not need transport at all. GTT runs tra
 
 ## How much a trip to Turin costs
 
-- **Shoestring (about €60-80 a day):** hostel bed or cheap room share (€30-45), market food and aperitivo dinners (€20-25), one paid museum (€10-20), walking everywhere.
+**Rough daily budget**
 
-- **Mid-range (about €150-220 a day):** a double room in the centre split two ways (€60-90 each), a trattoria lunch plus a sit-down dinner with wine (€50-65), two museums or the Mole combo (€25-40), plus a coffee and bicerin habit (€10).
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | about €60-80 a day | Hostel bed or cheap room share (€30-45), market food and aperitivo dinners (€20-25), one paid museum (€10-20), walking everywhere. |
+| Mid-range | about €150-220 a day | A double room in the centre split two ways (€60-90 each), a trattoria lunch plus a sit-down dinner with wine (€50-65), two museums or the Mole combo (€25-40), plus a coffee and bicerin habit (€10). |
 
 - **Extras to budget for:** a truffle dish in season (€25-50 more), a Langhe wine tour (€80-150), the city tax on accommodation (a few euros per person per night).
 

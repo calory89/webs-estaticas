@@ -95,31 +95,15 @@ Madrid sale barata si sabes aprovechar los horarios gratuitos. Estos son los que
 
 - Muchos bares de La Latina y Lavapiés dan tapa con la caña; una ronda de unos 3 € puede valer de cena ligera.
 
-## Itinerario: Madrid en 3 días
+## Qué ver en Madrid en 3 días: ruta día a día
 
-### Día 1: Madrid de los Austrias y Palacio Real
+**Itinerario de 3 días en Madrid**
 
-**Mañana:** empieza en la Puerta del Sol, baja por la calle Mayor hasta la Plaza Mayor y sigue hasta la Plaza de la Villa. Continúa al Palacio Real y entra si te apetece.
-
-**Tarde:** Catedral de la Almudena, Jardines de Sabatini y paseo hasta el Templo de Debod para el atardecer.
-
-**Noche:** cena por la calle Ponzano (si no te importa coger metro) o vuelve a Malasaña, que queda a 15 minutos andando desde Debod.
-
-### Día 2: museos y Retiro
-
-**Mañana:** Museo del Prado a primera hora, cuando hay menos gente. Sal por la puerta de Jerónimos y sube por Los Jerónimos hasta el Retiro.
-
-**Tarde:** Retiro, Palacio de Cristal y barcas. Si te quedan fuerzas, Thyssen o el Reina Sofía en su franja gratuita.
-
-**Noche:** azotea del Círculo de Bellas Artes y tapas en el Barrio de las Letras.
-
-### Día 3: barrios y vida local
-
-**Mañana:** si es domingo, el Rastro; si no, Mercado de San Fernando en Lavapiés y paseo por el barrio.
-
-**Tarde:** vermut en La Latina, luego Madrid Río y Matadero andando por el río.
-
-**Noche:** Gran Vía iluminada y copas en Chueca o Malasaña.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Madrid de los Austrias y Palacio Real | Empieza en la Puerta del Sol, baja por la calle Mayor hasta la Plaza Mayor y sigue hasta la Plaza de la Villa. Continúa al Palacio Real y entra si te apetece. | Catedral de la Almudena, Jardines de Sabatini y paseo hasta el Templo de Debod para el atardecer. | Cena por la calle Ponzano (si no te importa coger metro) o vuelve a Malasaña, que queda a 15 minutos andando desde Debod. |
+| Día 2 · Museos y Retiro | Museo del Prado a primera hora, cuando hay menos gente. Sal por la puerta de Jerónimos y sube por Los Jerónimos hasta el Retiro. | Retiro, Palacio de Cristal y barcas. Si te quedan fuerzas, Thyssen o el Reina Sofía en su franja gratuita. | Azotea del Círculo de Bellas Artes y tapas en el Barrio de las Letras. |
+| Día 3 · Barrios y vida local | Si es domingo, el Rastro; si no, Mercado de San Fernando en Lavapiés y paseo por el barrio. | Vermut en La Latina, luego Madrid Río y Matadero andando por el río. | Gran Vía iluminada y copas en Chueca o Malasaña. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 

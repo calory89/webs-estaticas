@@ -39,21 +39,17 @@ Si quieres algo distinto, date una vuelta por el barrio de Noblessner, un antigu
 
 Para una excursión de un día, Lahemaa, un parque nacional a menos de una hora en coche hacia el este, tiene bosques, costa rocosa y la mansión de Palmse. También puedes cruzar a Helsinki en ferry, que son unas dos horas, aunque yo lo haría solo si tienes cuatro días o más.
 
-## Cuántos días necesitas y una ruta sugerida
+## Qué ver en Tallin en 3 días: ruta día a día
 
 Con dos días ves lo básico. Con tres vas más holgado y puedes sumar Kadriorg. A partir de cuatro, ya compensa la excursión a Lahemaa o a Helsinki.
 
-### Día 1: Ciudad Vieja
+**Itinerario de 3 días en Tallin**
 
-Empieza en Toompea con Kohtuotsa y la catedral Nevski, baja a la plaza del Ayuntamiento, pasa por Katariina käik, y sigue por las murallas hasta la puerta Viru. Por la tarde, San Olaf y un paseo por Pikk.
-
-### Día 2: Kalamaja y la costa
-
-Telliskivi por la mañana, comida en F-Hoone o en el mercado de Balti Jaama Turg, y por la tarde Noblessner y Lennusadam. Cierra el día en Rotermann.
-
-### Día 3: Kadriorg y margen
-
-Parque y palacio de Kadriorg, museo KUMU y, si el tiempo acompaña, un paseo hasta Pirita, con su playa y su puerto deportivo. Si prefieres otra cosa, aquí cabe la excursión a Lahemaa.
+| Día | Plan |
+|---|---|
+| Día 1 | Ciudad Vieja. Empieza en Toompea con Kohtuotsa y la catedral Nevski, baja a la plaza del Ayuntamiento, pasa por Katariina käik, y sigue por las murallas hasta la puerta Viru. Por la tarde, San Olaf y un paseo por Pikk. |
+| Día 2 | Kalamaja y la costa. Telliskivi por la mañana, comida en F-Hoone o en el mercado de Balti Jaama Turg, y por la tarde Noblessner y Lennusadam. Cierra el día en Rotermann. |
+| Día 3 | Kadriorg y margen. Parque y palacio de Kadriorg, museo KUMU y, si el tiempo acompaña, un paseo hasta Pirita, con su playa y su puerto deportivo. Si prefieres otra cosa, aquí cabe la excursión a Lahemaa. |
 
 ## Cuándo ir a Tallin: clima y temporadas
 
@@ -91,11 +87,13 @@ Dentro de la ciudad todo se hace a pie, salvo Kadriorg, Pirita y la torre de tel
 
 ## Presupuesto orientativo por día
 
-- **Mochilero (50-65 euros):** hostal, comida en mercados y locales sencillos, transporte público y museos gratuitos o una sola entrada.
+**Presupuesto orientativo por día**
 
-- **Medio (90-130 euros):** hotel o apartamento, una comida en restaurante, cena informal, entradas y algún trayecto en taxi.
-
-- **Cómodo (150 euros o más):** hotel en la Ciudad Vieja, restaurantes destacados y excursiones.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Mochilero | 50-65 euros | Hostal, comida en mercados y locales sencillos, transporte público y museos gratuitos o una sola entrada. |
+| Medio | 90-130 euros | Hotel o apartamento, una comida en restaurante, cena informal, entradas y algún trayecto en taxi. |
+| Cómodo | 150 euros o más | Hotel en la Ciudad Vieja, restaurantes destacados y excursiones. |
 
 Una cerveza en terraza ronda los 5-6 euros y un plato del día en un sitio normal suele costar entre 10 y 15. Ten en cuenta que los precios de la Ciudad Vieja son mayores que en el resto.
 

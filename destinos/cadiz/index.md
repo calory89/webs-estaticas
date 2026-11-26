@@ -99,25 +99,14 @@ Buena parte de lo mejor de Cádiz no cuesta nada. Estos son los planes gratuitos
 
 La catedral tiene momentos de entrada sin coste para culto; comprueba el horario, pero ten en cuenta que en ese caso no subes a la torre.
 
-## Itinerario: Cádiz en 2 días
+## Qué ver en Cádiz en 2 días: ruta día a día
 
-### Día 1: casco antiguo y La Caleta
+**Itinerario de 2 días en Cádiz**
 
-**Mañana:** empieza en el Mercado Central para verlo con todo el pescado. Desde ahí, cinco minutos a la Torre Tavira (subida temprano, con buena luz). Baja hacia la plaza de la Catedral y sube a la Torre de Poniente.
-
-**Tarde:** come en el Pópulo o vuelve a la plaza de las Flores. Visita el Teatro Romano, sal por el Campo del Sur caminando junto al mar y entra en la Viña. Termina en el Castillo de Santa Catalina.
-
-**Noche:** atardecer en La Caleta y cena de pescado frito por la calle Virgen de la Palma.
-
-### Día 2: museos, parques y playa
-
-**Mañana:** Oratorio de San Felipe Neri y Museo de Cádiz en la plaza de Mina. Sigue por el parque Genovés y la Alameda Apodaca.
-
-**Tarde:** bus hasta la playa de la Victoria (líneas 1 o 7, desde la plaza de España o Puertas de Tierra). Baño, chiringuito y vuelta caminando por el paseo marítimo si te quedan piernas.
-
-**Noche:** vuelve al centro para tomar algo en la plaza de San Juan de Dios o por la calle Plocia, donde está la zona de bares más animada.
-
-Si tienes un tercer día, dedícalo al catamarán a El Puerto o a Jerez en tren.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Casco antiguo y La Caleta | Empieza en el Mercado Central para verlo con todo el pescado. Desde ahí, cinco minutos a la Torre Tavira (subida temprano, con buena luz). Baja hacia la plaza de la Catedral y sube a la Torre de Poniente. | Come en el Pópulo o vuelve a la plaza de las Flores. Visita el Teatro Romano, sal por el Campo del Sur caminando junto al mar y entra en la Viña. Termina en el Castillo de Santa Catalina. | Atardecer en La Caleta y cena de pescado frito por la calle Virgen de la Palma. |
+| Día 2 · Museos, parques y playa | Oratorio de San Felipe Neri y Museo de Cádiz en la plaza de Mina. Sigue por el parque Genovés y la Alameda Apodaca. | Bus hasta la playa de la Victoria (líneas 1 o 7, desde la plaza de España o Puertas de Tierra). Baño, chiringuito y vuelta caminando por el paseo marítimo si te quedan piernas. | Vuelve al centro para tomar algo en la plaza de San Juan de Dios o por la calle Plocia, donde está la zona de bares más animada. Si tienes un tercer día, dedícalo al catamarán a El Puerto o a Jerez en tren. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -181,9 +170,12 @@ Dentro de la ciudad, el casco antiguo se hace andando. Para ir a la playa de la 
 
 ## Cuánto cuesta un viaje a Cádiz
 
-- **Presupuesto ajustado: 55-80 € al día.** Albergue o habitación compartida (30-45 €), tapas y freidurías (20-25 €), transporte y alguna entrada (5-10 €).
+**Presupuesto orientativo por día**
 
-- **Presupuesto medio: 120-180 € al día por persona** (compartiendo habitación doble). Hotel en el centro (80-140 € la habitación), comida sentado y cena de tapas (40-60 €), entradas y transporte (15-20 €).
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Presupuesto ajustado | 55-80 € al día | Albergue o habitación compartida (30-45 €), tapas y freidurías (20-25 €), transporte y alguna entrada (5-10 €). |
+| Presupuesto medio | 120-180 € al día por persona | (compartiendo habitación doble). Hotel en el centro (80-140 € la habitación), comida sentado y cena de tapas (40-60 €), entradas y transporte (15-20 €). |
 
 En Carnaval y en agosto suma un 40-60 % al alojamiento.
 

@@ -79,31 +79,15 @@ Buena parte de lo que hay que ver en Alicante no cuesta nada. El castillo de San
 
 Pasear por la Explanada, el puerto y Santa Cruz, subir al Tossal y bañarte en cualquier playa tampoco te cuesta nada. Para gastar poco en comida, compra en el Mercado Central y come en el parque de Canalejas o en la playa. Un menú del día en el centro, lejos del paseo, sigue rondando los 13 o 15 €.
 
-## Itinerario: Alicante en 3 días
+## Qué ver en Alicante en 3 días: ruta día a día
 
-### Día 1: castillo, Santa Cruz y casco antiguo
+**Itinerario de 3 días en Alicante**
 
-**Mañana:** sube en el ascensor al castillo de Santa Bárbara a primera hora. Baja andando por el Parque de la Ereta hasta el barrio de Santa Cruz.
-
-**Tarde:** Basílica de Santa María y MACA, luego Concatedral de San Nicolás. Come arroz en el centro. Por la tarde, baño en el Postiguet o paseo por el puerto.
-
-**Noche:** tapas por Castaños y una copa en el casco antiguo.
-
-### Día 2: mercado, museos y atardecer
-
-**Mañana:** Mercado Central y compra de salazones. Luego TRAM hasta el MARQ.
-
-**Tarde:** Museo de Hogueras y paseo por la Rambla y la Explanada. Sube al Tossal para el atardecer.
-
-**Noche:** cena en el barrio de Benalúa o en la zona del puerto.
-
-### Día 3: Tabarca o playa de San Juan
-
-**Mañana:** barco a Tabarca desde el puerto, o TRAM a San Juan si prefieres playa.
-
-**Tarde:** caldero en Tabarca o arroz en el Cabo de la Huerta. Vuelta a media tarde.
-
-**Noche:** última horchata en la Explanada y paseo por el puerto.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Castillo, Santa Cruz y casco antiguo | Sube en el ascensor al castillo de Santa Bárbara a primera hora. Baja andando por el Parque de la Ereta hasta el barrio de Santa Cruz. | Basílica de Santa María y MACA, luego Concatedral de San Nicolás. Come arroz en el centro. Por la tarde, baño en el Postiguet o paseo por el puerto. | Tapas por Castaños y una copa en el casco antiguo. |
+| Día 2 · Mercado, museos y atardecer | Mercado Central y compra de salazones. Luego TRAM hasta el MARQ. | Museo de Hogueras y paseo por la Rambla y la Explanada. Sube al Tossal para el atardecer. | Cena en el barrio de Benalúa o en la zona del puerto. |
+| Día 3 · Tabarca o playa de San Juan | Barco a Tabarca desde el puerto, o TRAM a San Juan si prefieres playa. | Caldero en Tabarca o arroz en el Cabo de la Huerta. Vuelta a media tarde. | Última horchata en la Explanada y paseo por el puerto. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -147,9 +131,12 @@ En la ciudad, el centro se hace andando. Para las playas y el norte está el **T
 
 ## Cuánto cuesta un viaje a Alicante
 
-- **Presupuesto ajustado, unos 60 a 80 € al día:** hostal o habitación compartida (30 a 45 €), menú del día y comida del mercado (25 €), transporte y alguna entrada (5 a 10 €).
+**Presupuesto orientativo por día**
 
-- **Presupuesto medio, unos 120 a 170 € al día:** hotel medio en el centro (80 a 110 €), arroz a mediodía y tapas de noche (45 €), Tabarca, museos y transporte (10 a 25 €).
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Presupuesto ajustado | unos 60 a 80 € al día | Hostal o habitación compartida (30 a 45 €), menú del día y comida del mercado (25 €), transporte y alguna entrada (5 a 10 €). |
+| Presupuesto medio | unos 120 a 170 € al día | Hotel medio en el centro (80 a 110 €), arroz a mediodía y tapas de noche (45 €), Tabarca, museos y transporte (10 a 25 €). |
 
 - **Vuelos:** desde muchas ciudades de España y Europa hay ida y vuelta por 30 a 80 € si reservas con tiempo y viajas fuera de temporada.
 

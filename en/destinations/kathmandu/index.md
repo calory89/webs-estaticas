@@ -91,21 +91,14 @@ The paid squares are where most of your sightseeing money goes. Budget around �
 
 ## Kathmandu itinerary: 4 days
 
-### Day 1: Old Kathmandu and Swayambhunath
+**4-day itinerary for Kathmandu**
 
-**Morning:** walk from Thamel south through Asan Tole and Indra Chowk to Kathmandu Durbar Square. **Afternoon:** taxi or a 30-minute walk west to Swayambhunath for views as the light softens. **Evening:** dinner in Thamel, then an early night, because jet lag and dust add up.
-
-### Day 2: Pashupatinath and Boudhanath
-
-**Morning:** take a taxi to Pashupatinath. **Afternoon:** walk to Boudhanath, about 30-40 minutes along local roads, or take a short taxi. Detour to Kopan if you have energy. **Evening:** kora at dusk and dinner on a Boudha rooftop with Tibetan food.
-
-### Day 3: Patan
-
-**Morning:** Patan Durbar Square and the Patan Museum. **Afternoon:** the Golden Temple (Hiranya Varna Mahavihar), the lanes north of the square, and a Newari lunch. **Evening:** drinks and dinner in Jhamsikhel, Patan's café district.
-
-### Day 4: Bhaktapur and Changu Narayan
-
-**Morning:** take an early taxi or bus to Changu Narayan, then hike down to Bhaktapur. **Afternoon:** Durbar, Taumadhi and Pottery Squares, with juju dhau (yogurt) as a break. **Evening:** stay for sunset in the squares, then taxi back.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Old Kathmandu and Swayambhunath | Walk from Thamel south through Asan Tole and Indra Chowk to Kathmandu Durbar Square. | Taxi or a 30-minute walk west to Swayambhunath for views as the light softens. | Dinner in Thamel, then an early night, because jet lag and dust add up. |
+| Day 2 · Pashupatinath and Boudhanath | Take a taxi to Pashupatinath. | Walk to Boudhanath, about 30-40 minutes along local roads, or take a short taxi. Detour to Kopan if you have energy. | Kora at dusk and dinner on a Boudha rooftop with Tibetan food. |
+| Day 3 · Patan | Patan Durbar Square and the Patan Museum. | The Golden Temple (Hiranya Varna Mahavihar), the lanes north of the square, and a Newari lunch. | Drinks and dinner in Jhamsikhel, Patan's café district. |
+| Day 4 · Bhaktapur and Changu Narayan | Take an early taxi or bus to Changu Narayan, then hike down to Bhaktapur. | Durbar, Taumadhi and Pottery Squares, with juju dhau (yogurt) as a break. | Stay for sunset in the squares, then taxi back. |
 
 ## What is overrated (and what to do instead)
 
@@ -161,11 +154,13 @@ Getting around, you will mostly walk and take taxis. Taxis rarely use meters, so
 
 ## How much a trip to Kathmandu costs
 
-- **Shoestring: €20-30 per day.** This covers a hostel dorm, dal bhat and momos, local buses, and one paid site.
+**Rough daily budget**
 
-- **Mid-range: €50-90 per day.** This covers a good hotel, restaurant meals, taxis everywhere, and tickets.
-
-- **Comfortable: €120+ per day.** This covers a boutique hotel such as a heritage property in Patan, private drivers, and a guide.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €20-30 per day | This covers a hostel dorm, dal bhat and momos, local buses, and one paid site. |
+| Mid-range | €50-90 per day | This covers a good hotel, restaurant meals, taxis everywhere, and tickets. |
+| Comfortable | €120+ per day | This covers a boutique hotel such as a heritage property in Patan, private drivers, and a guide. |
 
 - **Extras:** the visa on arrival costs about $30 for 15 days or $50 for 30 days, and site tickets add up to about €40 over four days.
 

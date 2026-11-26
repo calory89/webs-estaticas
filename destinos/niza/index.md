@@ -81,19 +81,15 @@ Niza es cara para dormir y comer, pero lo mejor no cuesta nada. Gratis: la Prome
 
 Casi gratis: una socca (unos 4 €), un pan bagnat para comer en la playa (6 a 8 €) y el billete de tren a Villefranche o Mónaco (entre 2 y 5 €). Si vas a varios museos municipales, pregunta por el pase combinado de varios días, que sale más barato que pagar entradas sueltas.
 
-## Itinerario: Niza en 3 días
+## Qué ver en Niza en 3 días: ruta día a día
 
-### Día 1: casco viejo, colina y puerto
+**Itinerario de 3 días en Niza**
 
-**Mañana:** mercado de Cours Saleya temprano, desayuno con socca y paseo por el Vieux Nice (rue Droite, Sainte-Réparate, place Rossetti). **Tarde:** sube a la Colline du Château, baja por el lado del puerto y sigue hasta Coco Beach para un baño. **Noche:** vuelve a la Colline para el atardecer o quédate cenando por el puerto, donde los precios son más sensatos.
-
-### Día 2: Cimiez, museos y Promenade
-
-**Mañana:** bus a Cimiez, Musée Matisse, ruinas romanas y jardines del monasterio. **Tarde:** baja andando al Musée Chagall y desde ahí a la Cathédrale Saint-Nicolas. Luego, playa o Promenade des Anglais hasta el Negresco. **Noche:** place Masséna iluminada, Paillon y cena en el casco viejo, en las calles traseras.
-
-### Día 3: excursión en tren
-
-**Mañana:** tren a Villefranche-sur-Mer (unos 7 minutos), paseo por el puerto y baño en la playa de Marinière. **Tarde:** sigue en tren a Mónaco, sube a la Roca y baja al casino de Montecarlo. **Noche:** vuelve a Niza en tren y cena en Libération o el puerto.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Casco viejo, colina y puerto | Mercado de Cours Saleya temprano, desayuno con socca y paseo por el Vieux Nice (rue Droite, Sainte-Réparate, place Rossetti). | Sube a la Colline du Château, baja por el lado del puerto y sigue hasta Coco Beach para un baño. | Vuelve a la Colline para el atardecer o quédate cenando por el puerto, donde los precios son más sensatos. |
+| Día 2 · Cimiez, museos y Promenade | Bus a Cimiez, Musée Matisse, ruinas romanas y jardines del monasterio. | Baja andando al Musée Chagall y desde ahí a la Cathédrale Saint-Nicolas. Luego, playa o Promenade des Anglais hasta el Negresco. | Place Masséna iluminada, Paillon y cena en el casco viejo, en las calles traseras. |
+| Día 3 · Excursión en tren | Tren a Villefranche-sur-Mer (unos 7 minutos), paseo por el puerto y baño en la playa de Marinière. | Sigue en tren a Mónaco, sube a la Roca y baja al casino de Montecarlo. | Vuelve a Niza en tren y cena en Libération o el puerto. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 

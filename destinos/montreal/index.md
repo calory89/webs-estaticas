@@ -87,31 +87,15 @@ Lo mejor de Montreal no cuesta dinero: el mirador Kondiaronk, pasear el Plateau 
 
 - **Bagel de 1 CAD y poutine de 10 CAD:** se puede comer muy bien por poco.
 
-## Itinerario: Montreal en 3 días
+## Qué ver en Montreal en 3 días: ruta día a día
 
-### Día 1: Montreal Viejo y el río
+**Itinerario de 3 días en Montreal**
 
-**Mañana:** empieza en la Place d'Armes y entra en la basílica de Notre-Dame nada más abrir. Sigue por la rue Saint-Paul y la Place Jacques-Cartier antes de que se llenen.
-
-**Tarde:** Pointe-à-Callière y paseo por el Viejo Puerto hasta la Cité du Havre para ver Habitat 67. Si hace buen tiempo, ferry o metro a Jean-Drapeau.
-
-**Noche:** cena fuera de las calles más turísticas, por ejemplo en la zona de la rue McGill o en Griffintown, y vuelve a ver el casco viejo iluminado.
-
-### Día 2: Mont Royal, Plateau y Mile End
-
-**Mañana:** sube al Mont Royal desde el centro, para en el mirador Kondiaronk y baja por el lado este hacia el Plateau.
-
-**Tarde:** recorre el Plateau por la rue Saint-Denis y la avenue du Mont-Royal, y sube a Mile End para los bagels. Si es domingo de verano, empieza la tarde con los tam-tams.
-
-**Noche:** cena en un restaurante «Apportez votre vin» de la rue Duluth y copa en el boulevard Saint-Laurent.
-
-### Día 3: mercado, museo y centro
-
-**Mañana:** metro a Jean-Talon (líneas naranja y azul), desayuno de mercado y paseo por Little Italy.
-
-**Tarde:** Musée des Beaux-Arts y paseo por la rue Sherbrooke y el campus de McGill. Si prefieres aire libre, cambia el museo por el Jardín Botánico o por la bici en el canal de Lachine con parada en el mercado Atwater.
-
-**Noche:** smoked meat o poutine de despedida y paseo por el Quartier des Spectacles, que suele tener algo montado.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Montreal Viejo y el río | Empieza en la Place d'Armes y entra en la basílica de Notre-Dame nada más abrir. Sigue por la rue Saint-Paul y la Place Jacques-Cartier antes de que se llenen. | Pointe-à-Callière y paseo por el Viejo Puerto hasta la Cité du Havre para ver Habitat 67. Si hace buen tiempo, ferry o metro a Jean-Drapeau. | Cena fuera de las calles más turísticas, por ejemplo en la zona de la rue McGill o en Griffintown, y vuelve a ver el casco viejo iluminado. |
+| Día 2 · Mont Royal, Plateau y Mile End | Sube al Mont Royal desde el centro, para en el mirador Kondiaronk y baja por el lado este hacia el Plateau. | Recorre el Plateau por la rue Saint-Denis y la avenue du Mont-Royal, y sube a Mile End para los bagels. Si es domingo de verano, empieza la tarde con los tam-tams. | Cena en un restaurante «Apportez votre vin» de la rue Duluth y copa en el boulevard Saint-Laurent. |
+| Día 3 · Mercado, museo y centro | Metro a Jean-Talon (líneas naranja y azul), desayuno de mercado y paseo por Little Italy. | Musée des Beaux-Arts y paseo por la rue Sherbrooke y el campus de McGill. Si prefieres aire libre, cambia el museo por el Jardín Botánico o por la bici en el canal de Lachine con parada en el mercado Atwater. | Smoked meat o poutine de despedida y paseo por el Quartier des Spectacles, que suele tener algo montado. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 

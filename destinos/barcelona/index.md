@@ -91,19 +91,15 @@ Una parte grande de lo mejor de la ciudad no cuesta nada. Estas son nuestras opc
 
 - El Hospital de Sant Pau por fuera (dentro unos 17 €), recinto modernista muy poco masificado.
 
-## Itinerario: Barcelona en 3 días
+## Qué ver en Barcelona en 3 días: ruta día a día
 
-### Día 1: casco antiguo y mar
+**Itinerario de 3 días en Barcelona**
 
-**Mañana:** empieza en plaça de Catalunya, baja por las Ramblas solo hasta la Boqueria y gira hacia el Gòtic: catedral, carrer del Bisbe, plaça Sant Felip Neri y plaça del Rei. **Tarde:** cruza la Via Laietana hacia el Born, entra en Santa Maria del Mar y en el Museu Picasso. Sal por la Ciutadella. **Noche:** paseo hasta la Barceloneta para ver el mar al atardecer y cena de tapas en el barrio, en bares de toda la vida como La Cova Fumada (solo mediodía) o en la zona de la calle Sant Carles.
-
-### Día 2: Gaudí y Gràcia
-
-**Mañana:** Park Güell a primera hora. Baja andando por Gràcia hasta passeig de Gràcia (unos 40 minutos con paradas en las plazas). **Tarde:** La Pedrera o Casa Batlló y, a media tarde, la Sagrada Família con la entrada reservada. **Noche:** sube a los Bunkers del Carmel si están abiertos o cena en las plazas de Gràcia.
-
-### Día 3: Montjuïc y Sant Antoni
-
-**Mañana:** funicular desde Paral·lel, castillo de Montjuïc y jardines. Baja hacia el MNAC y la Fundació Miró si te gusta el arte contemporáneo (unos 15 €). **Tarde:** plaça d'Espanya, las Arenas y vermut largo en Sant Antoni o el Poble-sec, con montaditos en el carrer Blai (pinchos a 1-2 €). **Noche:** cena en el Poble-sec o el Raval y última copa en el Born.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Casco antiguo y mar | Empieza en plaça de Catalunya, baja por las Ramblas solo hasta la Boqueria y gira hacia el Gòtic: catedral, carrer del Bisbe, plaça Sant Felip Neri y plaça del Rei. | Cruza la Via Laietana hacia el Born, entra en Santa Maria del Mar y en el Museu Picasso. Sal por la Ciutadella. | Paseo hasta la Barceloneta para ver el mar al atardecer y cena de tapas en el barrio, en bares de toda la vida como La Cova Fumada (solo mediodía) o en la zona de la calle Sant Carles. |
+| Día 2 · Gaudí y Gràcia | Park Güell a primera hora. Baja andando por Gràcia hasta passeig de Gràcia (unos 40 minutos con paradas en las plazas). | La Pedrera o Casa Batlló y, a media tarde, la Sagrada Família con la entrada reservada. | Sube a los Bunkers del Carmel si están abiertos o cena en las plazas de Gràcia. |
+| Día 3 · Montjuïc y Sant Antoni | Funicular desde Paral·lel, castillo de Montjuïc y jardines. Baja hacia el MNAC y la Fundació Miró si te gusta el arte contemporáneo (unos 15 €). | Plaça d'Espanya, las Arenas y vermut largo en Sant Antoni o el Poble-sec, con montaditos en el carrer Blai (pinchos a 1-2 €). | Cena en el Poble-sec o el Raval y última copa en el Born. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 

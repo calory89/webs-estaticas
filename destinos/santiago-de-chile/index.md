@@ -93,19 +93,15 @@ Otros planes de casi cero euros:
 
 - El Día del Patrimonio (último fin de semana de mayo), cuando abren gratis edificios normalmente cerrados.
 
-## Itinerario: Santiago de Chile en 3 días
+## Qué ver en Santiago de Chile en 3 días: ruta día a día
 
-### Día 1: centro histórico y Lastarria
+**Itinerario de 3 días en Santiago de Chile**
 
-**Mañana:** empieza en La Moneda, sube por la calle Bandera o Ahumada hasta la Plaza de Armas y entra al Museo de Arte Precolombino. **Tarde:** cruza a La Vega y el Mercado Central para comer, y vuelve andando por el Parque Forestal hasta Bellas Artes. Sube al Cerro Santa Lucía a última hora. **Noche:** cena y pisco sour en Lastarria.
-
-### Día 2: memoria, Yungay y Bellavista
-
-**Mañana:** metro hasta Quinta Normal y Museo de la Memoria. **Tarde:** paseo por el Barrio Yungay y Barrio Brasil, almuerzo en una picada o un peruano, y a media tarde cruza a Bellavista para ver La Chascona. **Noche:** funicular al San Cristóbal para el atardecer y cena en Bellavista, o un terremoto en La Piojera si prefieres ambiente.
-
-### Día 3: Providencia, Barrio Italia y vino
-
-**Mañana:** visita a una viña (Cousiño Macul o Concha y Toro, reserva antes). **Tarde:** Barrio Italia para comer y pasear, y si te quedan ganas, el Parque Bicentenario en Vitacura. **Noche:** cena en Providencia o en Barrio Italia. Si tienes un cuarto día, úsalo para Valparaíso.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Centro histórico y Lastarria | Empieza en La Moneda, sube por la calle Bandera o Ahumada hasta la Plaza de Armas y entra al Museo de Arte Precolombino. | Cruza a La Vega y el Mercado Central para comer, y vuelve andando por el Parque Forestal hasta Bellas Artes. Sube al Cerro Santa Lucía a última hora. | Cena y pisco sour en Lastarria. |
+| Día 2 · Memoria, Yungay y Bellavista | Metro hasta Quinta Normal y Museo de la Memoria. | Paseo por el Barrio Yungay y Barrio Brasil, almuerzo en una picada o un peruano, y a media tarde cruza a Bellavista para ver La Chascona. | Funicular al San Cristóbal para el atardecer y cena en Bellavista, o un terremoto en La Piojera si prefieres ambiente. |
+| Día 3 · Providencia, Barrio Italia y vino | Visita a una viña (Cousiño Macul o Concha y Toro, reserva antes). | Barrio Italia para comer y pasear, y si te quedan ganas, el Parque Bicentenario en Vitacura. | Cena en Providencia o en Barrio Italia. Si tienes un cuarto día, úsalo para Valparaíso. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 

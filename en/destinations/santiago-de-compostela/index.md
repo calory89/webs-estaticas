@@ -105,21 +105,12 @@ Some museums have free entry at certain times or on certain days, so check befor
 
 ## Santiago de Compostela itinerary: 2 days
 
-### Day 1: cathedral and old town
+**2-day itinerary for Santiago de Compostela**
 
-**Morning:** Start at Praza do Obradoiro before the groups arrive, then go into the cathedral and visit the Pórtico da Gloria on your pre-booked slot. Stay for the noon Pilgrim's Mass if you want to see the cathedral full.
-
-**Afternoon:** Lunch on a menú del día around Rúa da Raíña. Then do the rooftop tour, followed by the Museo das Peregrinacións on Praterías and a wander through Quintana and San Martiño Pinario.
-
-**Evening:** Walk to the Alameda for the sunset view of the towers. Then go back into the old town for a tapas crawl on Rúa do Franco and Rúa da Raíña, finishing with a late look at Obradoiro lit up at night.
-
-### Day 2: market, museums and beyond the walls
-
-**Morning:** Go to the Mercado de Abastos first thing. Have a coffee, buy seafood and have it cooked for an early lunch.
-
-**Afternoon:** Walk up to San Domingos de Bonaval for the Museo do Pobo Galego and its spiral staircase, then the Bonaval park and the CGAC next door. If the weather holds, walk down to Santa María do Sar to see the leaning columns.
-
-**Evening:** Head to the Ensanche, the modern part of town around Rúa da República Arxentina, for dinner where locals eat. Then go for a drink in the old town, where you might catch the tuna playing.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Cathedral and old town | Start at Praza do Obradoiro before the groups arrive, then go into the cathedral and visit the Pórtico da Gloria on your pre-booked slot. Stay for the noon Pilgrim's Mass if you want to see the cathedral full. | Lunch on a menú del día around Rúa da Raíña. Then do the rooftop tour, followed by the Museo das Peregrinacións on Praterías and a wander through Quintana and San Martiño Pinario. | Walk to the Alameda for the sunset view of the towers. Then go back into the old town for a tapas crawl on Rúa do Franco and Rúa da Raíña, finishing with a late look at Obradoiro lit up at night. |
+| Day 2 · Market, museums and beyond the walls | Go to the Mercado de Abastos first thing. Have a coffee, buy seafood and have it cooked for an early lunch. | Walk up to San Domingos de Bonaval for the Museo do Pobo Galego and its spiral staircase, then the Bonaval park and the CGAC next door. If the weather holds, walk down to Santa María do Sar to see the leaning columns. | Head to the Ensanche, the modern part of town around Rúa da República Arxentina, for dinner where locals eat. Then go for a drink in the old town, where you might catch the tuna playing. |
 
 ## What is overrated (and what to do instead)
 
@@ -183,9 +174,12 @@ Once in Santiago, walk. The old town is small and largely pedestrian. City buses
 
 Santiago is affordable by Western European standards. Rough daily budgets per person:
 
-- **Shoestring: €50-70 a day.** A hostel or pilgrim albergue bed (€15-25), market breakfast, a menú del día lunch, free tapas with drinks for dinner and free sights.
+**Rough daily budget**
 
-- **Mid-range: €110-160 a day.** A share of a double in the old town (€40-60), a sit-down seafood dinner, the rooftop tour, a couple of museums and a few drinks.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €50-70 a day | A hostel or pilgrim albergue bed (€15-25), market breakfast, a menú del día lunch, free tapas with drinks for dinner and free sights. |
+| Mid-range | €110-160 a day | A share of a double in the old town (€40-60), a sit-down seafood dinner, the rooftop tour, a couple of museums and a few drinks. |
 
 - **Day trip extra:** €10-40 for transport, depending on whether you take a train, bus or tour.
 

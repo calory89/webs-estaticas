@@ -39,19 +39,19 @@ Los paseos tranquilos salen mejor de lo que parece: Roosevelt Island en el telef
 
 Times Square, una vez, de noche y sin cenar allí. Con eso basta.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Nueva York en 5 días: ruta día a día
 
 Con cuatro días ves lo esencial; con cinco, sin ir a la carrera; con siete, hasta te da tiempo a aburrirte un poco, que también es parte de viajar. Esta es mi ruta para cinco:
 
-- **Día 1:** Lower Manhattan, ferri de Staten Island, Memorial del 11-S y puente de Brooklyn al atardecer con cena en DUMBO.
+**Itinerario de 5 días en Nueva York**
 
-- **Día 2:** Central Park por la mañana, Met por la tarde y paseo por el Upper West Side.
-
-- **Día 3:** Greenwich Village, SoHo, Chinatown y Little Italy. Cena en el Lower East Side.
-
-- **Día 4:** High Line, Chelsea Market, Hudson Yards y mirador al caer la tarde. Después, Broadway si te apetece.
-
-- **Día 5:** MoMA, Grand Central y, por la tarde, Williamsburg o un partido.
+| Día | Plan |
+|---|---|
+| Día 1 | Lower Manhattan, ferri de Staten Island, Memorial del 11-S y puente de Brooklyn al atardecer con cena en DUMBO. |
+| Día 2 | Central Park por la mañana, Met por la tarde y paseo por el Upper West Side. |
+| Día 3 | Greenwich Village, SoHo, Chinatown y Little Italy. Cena en el Lower East Side. |
+| Día 4 | High Line, Chelsea Market, Hudson Yards y mirador al caer la tarde. Después, Broadway si te apetece. |
+| Día 5 | MoMA, Grand Central y, por la tarde, Williamsburg o un partido. |
 
 ## Cuándo ir
 
@@ -89,11 +89,13 @@ Dentro de la ciudad, el metro funciona las 24 horas y se paga con tarjeta contac
 
 ## Presupuesto orientativo por día
 
-- **Ajustado (unos 100-150 euros):** hostal o habitación en Queens, comida callejera, metro y actividades gratuitas.
+**Presupuesto orientativo por día**
 
-- **Medio (unos 200-300 euros):** hotel correcto, restaurantes sencillos, un mirador o museo al día y metro.
-
-- **Cómodo (más de 350 euros):** hotel céntrico, cenas con reserva, Broadway y algún capricho.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | unos 100-150 euros | Hostal o habitación en Queens, comida callejera, metro y actividades gratuitas. |
+| Medio | unos 200-300 euros | Hotel correcto, restaurantes sencillos, un mirador o museo al día y metro. |
+| Cómodo | más de 350 euros | Hotel céntrico, cenas con reserva, Broadway y algún capricho. |
 
 Son cifras generales: el vuelo y el tipo de cambio mueven mucho el total, y las tasas e impuestos suman más de lo que parece.
 

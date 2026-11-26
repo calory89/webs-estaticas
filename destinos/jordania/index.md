@@ -83,35 +83,19 @@ Jordania no es barata, pero hay cosas que salen a cero. La Pequeña Petra es gra
 
 El gran ahorro es el **Jordan Pass**: entre 70 y 80 JD (unos 90-105 €) según los días de Petra que elijas, incluye la visa (de unos 40 JD) si te quedas al menos tres noches, y la entrada a Petra, Wadi Rum, Jerash, Kerak, la Ciudadela y unos 40 sitios más. Si vas a Petra, sale a cuenta siempre. Cómpralo por la web oficial antes de volar.
 
-## Itinerario: Jordania y Petra en 7 días
+## Qué ver en Jordania y Petra en 7 días: ruta día a día
 
-### Día 1: Amán
+**Itinerario de 7 días en Jordania y Petra**
 
-**Mañana:** Ciudadela y bajada a pie hasta el teatro romano. **Tarde:** zocos de Al-Balad y knafeh en Habibah. **Noche:** cena en el downtown y café en Rainbow Street.
-
-### Día 2: Jerash y Amán
-
-**Mañana:** recoge el coche y llega a Jerash a primera hora. **Tarde:** castillo de Ajlun (30 minutos más) o vuelta a Amán para descansar. **Noche:** hammam o cena en Jabal Al-Weibdeh, el barrio de galerías y cafés.
-
-### Día 3: Madaba, Nebo y mar Muerto
-
-**Mañana:** mosaico de Madaba y monte Nebo. **Tarde:** baño en el mar Muerto, con el sol bajando sobre Cisjordania. **Noche:** duerme en un hotel del mar Muerto o vuelve a Madaba, que es más barato.
-
-### Día 4: Carretera del Rey hasta Petra
-
-**Mañana:** Wadi Mujib si es temporada, luego el castillo de Kerak. **Tarde:** mirador de Dana y castillo de Shobak, llegando a Wadi Musa. **Noche:** Petra de noche si cae en día de apertura.
-
-### Día 5: Petra a fondo
-
-**Mañana:** entrada a primera hora, Siq, Tesoro y Lugar Alto del Sacrificio. **Tarde:** calle de las Columnas, Tumbas Reales y mirador de Al-Khubtha. **Noche:** cena en Wadi Musa y a dormir pronto.
-
-### Día 6: Monasterio y Pequeña Petra
-
-**Mañana:** segunda entrada para subir al Monasterio con menos gente. **Tarde:** Pequeña Petra. **Noche:** clase de cocina o descanso.
-
-### Día 7: Wadi Rum
-
-**Mañana:** dos horas en coche hasta el centro de visitantes de Wadi Rum. **Tarde:** 4x4 por el desierto y atardecer en una duna. **Noche:** campamento. Al día siguiente, 1 hora hasta Aqaba si vuelas desde allí o unas 4 hasta Amán.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Amán | Ciudadela y bajada a pie hasta el teatro romano. | Zocos de Al-Balad y knafeh en Habibah. | Cena en el downtown y café en Rainbow Street. |
+| Día 2 · Jerash y Amán | Recoge el coche y llega a Jerash a primera hora. | Castillo de Ajlun (30 minutos más) o vuelta a Amán para descansar. | Hammam o cena en Jabal Al-Weibdeh, el barrio de galerías y cafés. |
+| Día 3 · Madaba, Nebo y mar Muerto | Mosaico de Madaba y monte Nebo. | Baño en el mar Muerto, con el sol bajando sobre Cisjordania. | Duerme en un hotel del mar Muerto o vuelve a Madaba, que es más barato. |
+| Día 4 · Carretera del Rey hasta Petra | Wadi Mujib si es temporada, luego el castillo de Kerak. | Mirador de Dana y castillo de Shobak, llegando a Wadi Musa. | Petra de noche si cae en día de apertura. |
+| Día 5 · Petra a fondo | Entrada a primera hora, Siq, Tesoro y Lugar Alto del Sacrificio. | Calle de las Columnas, Tumbas Reales y mirador de Al-Khubtha. | Cena en Wadi Musa y a dormir pronto. |
+| Día 6 · Monasterio y Pequeña Petra | Segunda entrada para subir al Monasterio con menos gente. | Pequeña Petra. | Clase de cocina o descanso. |
+| Día 7 · Wadi Rum | Dos horas en coche hasta el centro de visitantes de Wadi Rum. | 4x4 por el desierto y atardecer en una duna. | Campamento. Al día siguiente, 1 hora hasta Aqaba si vuelas desde allí o unas 4 hasta Amán. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 

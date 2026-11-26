@@ -81,27 +81,17 @@ Buena parte del viaje no cuesta nada. Las iglesias, incluida San Nicola y la Cat
 
 Las playas son públicas aunque veas tumbonas de pago (lidi): siempre hay una franja libre. Y comer barato es fácil: una sgagliozza (polenta frita) cuesta 1 € en Bari Vecchia, un panzerotto entre 2 y 4 €, y un café en barra apenas 1,20 €.
 
-## Itinerario: Bari y Puglia en 5 días
+## Qué ver en Bari y Puglia en 5 días: ruta día a día
 
-### Día 1: Bari
+**Itinerario de 5 días en Bari y Puglia**
 
-**Mañana:** desayuno de cornetto en el Murattiano y paseo a Bari Vecchia por Arco Basso mientras las señoras hacen pasta. **Tarde:** San Nicola, catedral, castillo por fuera y Lungomare. **Noche:** crudo de mar en el Molo San Nicola y cena de orecchiette en una trattoria del casco viejo.
-
-### Día 2: Polignano a Mare y Monopoli
-
-**Mañana:** tren temprano a Polignano y mirador de Lama Monachile antes de que lleguen los grupos. **Tarde:** tren a Monopoli, baño en las calas y paseo por el puerto viejo. **Noche:** cena en Monopoli y último tren a Bari (comprueba el horario).
-
-### Día 3: Alberobello y Locorotondo
-
-**Mañana:** tren de Ferrovie del Sud Est a Alberobello (cerca de 1h30). Aia Piccola primero, luego Rione Monti y el Belvedere. **Tarde:** tren corto a Locorotondo, paseo por el casco y una copa de vino blanco local. **Noche:** vuelta a Bari o, mejor, duerme en un trullo si tu presupuesto lo permite.
-
-### Día 4: Lecce
-
-**Mañana:** Frecciarossa o regional a Lecce (1h30-2h). Santa Croce, Piazza del Duomo y anfiteatro. **Tarde:** pasticciotto y caffè leccese, y paseo por las puertas de la ciudad. **Noche:** cena en Lecce y tren de vuelta, o quédate a dormir si quieres seguir hacia el Salento.
-
-### Día 5: Matera
-
-**Mañana:** tren de Ferrovie Appulo Lucane a Matera (alrededor de 1h30). Sasso Barisano y Sasso Caveoso, con las casas excavadas en la roca. **Tarde:** mirador de Murgia Timone al otro lado del barranco, o una iglesia rupestre. **Noche:** vuelta a Bari y vuelo.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Bari | Desayuno de cornetto en el Murattiano y paseo a Bari Vecchia por Arco Basso mientras las señoras hacen pasta. | San Nicola, catedral, castillo por fuera y Lungomare. | Crudo de mar en el Molo San Nicola y cena de orecchiette en una trattoria del casco viejo. |
+| Día 2 · Polignano a Mare y Monopoli | Tren temprano a Polignano y mirador de Lama Monachile antes de que lleguen los grupos. | Tren a Monopoli, baño en las calas y paseo por el puerto viejo. | Cena en Monopoli y último tren a Bari (comprueba el horario). |
+| Día 3 · Alberobello y Locorotondo | Tren de Ferrovie del Sud Est a Alberobello (cerca de 1h30). Aia Piccola primero, luego Rione Monti y el Belvedere. | Tren corto a Locorotondo, paseo por el casco y una copa de vino blanco local. | Vuelta a Bari o, mejor, duerme en un trullo si tu presupuesto lo permite. |
+| Día 4 · Lecce | Frecciarossa o regional a Lecce (1h30-2h). Santa Croce, Piazza del Duomo y anfiteatro. | Pasticciotto y caffè leccese, y paseo por las puertas de la ciudad. | Cena en Lecce y tren de vuelta, o quédate a dormir si quieres seguir hacia el Salento. |
+| Día 5 · Matera | Tren de Ferrovie Appulo Lucane a Matera (alrededor de 1h30). Sasso Barisano y Sasso Caveoso, con las casas excavadas en la roca. | Mirador de Murgia Timone al otro lado del barranco, o una iglesia rupestre. | Vuelta a Bari y vuelo. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 

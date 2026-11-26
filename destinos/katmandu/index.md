@@ -89,23 +89,16 @@ Lo mejor de la ciudad vieja no se paga. Los barrios entre Thamel y Durbar Square
 
 - Ver el atardecer desde la colina de Swayambhunath por el lado de la estupa de Manjushri, menos concurrido.
 
-## Itinerario: Katmandú en 4 días
+## Qué ver en Katmandú en 4 días: ruta día a día
 
-### Día 1: Katmandú histórica
+**Itinerario de 4 días en Katmandú**
 
-**Mañana:** sal de Thamel andando hacia el sur por Asan Tole e Indra Chowk, con parada en Kathesimbhu. Llega a Durbar Square y dedícale el resto de la mañana, incluido el Kumari Ghar. **Tarde:** comida en Freak Street y taxi a Swayambhunath (unos 15 minutos) para el atardecer. **Noche:** cena y música en Thamel.
-
-### Día 2: Pashupatinath y Boudhanath
-
-**Mañana:** Narayanhiti Palace Museum y paseo por el Garden of Dreams. **Tarde:** taxi a Pashupatinath. Desde allí, hay un camino a pie de unos 30-40 minutos hasta Boudhanath, cruzando barrios residenciales. **Noche:** kora alrededor de la estupa y cena en una terraza con vistas.
-
-### Día 3: Patan
-
-**Mañana:** taxi a Patan y Durbar Square, con el museo a primera hora. **Tarde:** Golden Temple (Kwa Bahal), Mahaboudha y los talleres de metal de las calles traseras. Comida newari en Honacha, frente a la plaza. **Noche:** vuelta a Katmandú o cena en Jhamsikhel, la zona de cafés de Patan.
-
-### Día 4: Bhaktapur y Changu Narayan
-
-**Mañana:** taxi temprano a Changu Narayan y bajada a pie a Bhaktapur (1,5 horas). **Tarde:** Bhaktapur entero: Durbar Square, Taumadhi con el Nyatapola y la plaza de la cerámica. Pide juju dhau, el yogur de la ciudad. **Noche:** quédate a dormir en Bhaktapur o vuelve a Katmandú (40-60 minutos según tráfico). Si tienes un día más, sube de Bhaktapur a Nagarkot para el amanecer.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Katmandú histórica | Sal de Thamel andando hacia el sur por Asan Tole e Indra Chowk, con parada en Kathesimbhu. Llega a Durbar Square y dedícale el resto de la mañana, incluido el Kumari Ghar. | Comida en Freak Street y taxi a Swayambhunath (unos 15 minutos) para el atardecer. | Cena y música en Thamel. |
+| Día 2 · Pashupatinath y Boudhanath | Narayanhiti Palace Museum y paseo por el Garden of Dreams. | Taxi a Pashupatinath. Desde allí, hay un camino a pie de unos 30-40 minutos hasta Boudhanath, cruzando barrios residenciales. | Kora alrededor de la estupa y cena en una terraza con vistas. |
+| Día 3 · Patan | Taxi a Patan y Durbar Square, con el museo a primera hora. | Golden Temple (Kwa Bahal), Mahaboudha y los talleres de metal de las calles traseras. Comida newari en Honacha, frente a la plaza. | Vuelta a Katmandú o cena en Jhamsikhel, la zona de cafés de Patan. |
+| Día 4 · Bhaktapur y Changu Narayan | Taxi temprano a Changu Narayan y bajada a pie a Bhaktapur (1,5 horas). | Bhaktapur entero: Durbar Square, Taumadhi con el Nyatapola y la plaza de la cerámica. Pide juju dhau, el yogur de la ciudad. | Quédate a dormir en Bhaktapur o vuelve a Katmandú (40-60 minutos según tráfico). Si tienes un día más, sube de Bhaktapur a Nagarkot para el amanecer. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -169,12 +162,14 @@ No hay abonos de transporte para turistas. Para los días de Bhaktapur o Nagarko
 
 Nepal es barato, pero las entradas a los sitios patrimonio suman. Precios por persona y día, sin vuelos:
 
-- **Presupuesto ajustado: 25-35 € al día.** Hostal o habitación básica, dal bhat y momos, transporte en bus y a pie, una entrada al día.
+**Presupuesto orientativo por día**
 
-- **Presupuesto medio: 60-90 € al día.** Hotel con encanto en Patan o Thamel, restaurantes con terraza, taxis o apps, todas las entradas.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Presupuesto ajustado | 25-35 € al día | Hostal o habitación básica, dal bhat y momos, transporte en bus y a pie, una entrada al día. |
+| Presupuesto medio | 60-90 € al día | Hotel con encanto en Patan o Thamel, restaurantes con terraza, taxis o apps, todas las entradas. |
 
 - **Visado:** unos 30 USD por 15 días o 50 USD por 30 días, a la llegada.
-
 - **Entradas de los 4 días:** unos 40 € en total.
 
 El euro equivale aproximadamente a 150 NPR. Lleva efectivo para todo lo pequeño: muchos sitios no aceptan tarjeta.

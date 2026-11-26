@@ -91,23 +91,14 @@ Luxemburgo es cara para dormir y comer, pero buena parte de lo que merece la pen
 
 - Cambio de guardia informal frente al palacio: no es espectacular, pero ahí está.
 
-## Itinerario: Luxemburgo en 2 días
+## Qué ver en Luxemburgo en 2 días: ruta día a día
 
-### Día 1: Ville Haute, Corniche y Grund
+**Itinerario de 2 días en Luxemburgo**
 
-**Mañana:** empieza en la Place de la Constitution con la Gëlle Fra, cruza al Pont Adolphe por la pasarela de abajo y vuelve. Sube a la catedral y sigue hasta la Place Guillaume II (si es miércoles o sábado, mercado) y el Palacio Gran Ducal.
-
-**Tarde:** City Museum, casamatas del Bock y Chemin de la Corniche. Baja al Grund en el ascensor del Saint-Esprit y date una vuelta por Neumünster.
-
-**Noche:** cena en el Grund o en la Ville Haute y vuelve por la Corniche iluminada.
-
-### Día 2: Kirchberg, Pfaffenthal y Clausen
-
-**Mañana:** MNHA en el Marché-aux-Poissons y paseo por la Rue de la Loge y alrededores. Desde el Parc Pescatore, ascensor de Pfaffenthal hasta abajo.
-
-**Tarde:** funicular a Kirchberg, Fuerte Thüngen y MUDAM. Vuelve en tranvía y baja hacia Clausen por el camino de Wenzel.
-
-**Noche:** cena y copas en Clausen, o concierto en la Philharmonie si encuentras entradas.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Ville Haute, Corniche y Grund | Empieza en la Place de la Constitution con la Gëlle Fra, cruza al Pont Adolphe por la pasarela de abajo y vuelve. Sube a la catedral y sigue hasta la Place Guillaume II (si es miércoles o sábado, mercado) y el Palacio Gran Ducal. | City Museum, casamatas del Bock y Chemin de la Corniche. Baja al Grund en el ascensor del Saint-Esprit y date una vuelta por Neumünster. | Cena en el Grund o en la Ville Haute y vuelve por la Corniche iluminada. |
+| Día 2 · Kirchberg, Pfaffenthal y Clausen | MNHA en el Marché-aux-Poissons y paseo por la Rue de la Loge y alrededores. Desde el Parc Pescatore, ascensor de Pfaffenthal hasta abajo. | Funicular a Kirchberg, Fuerte Thüngen y MUDAM. Vuelve en tranvía y baja hacia Clausen por el camino de Wenzel. | Cena y copas en Clausen, o concierto en la Philharmonie si encuentras entradas. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 

@@ -59,17 +59,18 @@ The 19th-century Ottoman showpiece on the European shore. It is gilded and over 
 
 - **Sit with tea.** Any tea garden, any hour. It is the most Istanbul thing you can do.
 
-## How many days and a suggested route
+## Istanbul itinerary: 4 days, day by day
 
 Three days covers the highlights; four is more comfortable. Five lets you get to the Asian side without rushing.
 
-- **Day 1, old city:** Hagia Sophia at opening, Blue Mosque, Basilica Cistern, Topkapı in the afternoon, sunset around Sultanahmet park.
+**4-day itinerary for Istanbul**
 
-- **Day 2, markets and Golden Horn:** Süleymaniye, the Spice Bazaar, Grand Bazaar, then Balat in the afternoon and a fish sandwich by the water.
-
-- **Day 3, Beyoğlu and Bosphorus:** Galata, Karaköy, İstiklal, then a late ferry across to Kadıköy for dinner.
-
-- **Day 4:** Dolmabahçe, a Bosphorus ferry trip, or simply a slow day in Moda.
+| Day | Plan |
+|---|---|
+| Day 1 | Old city. Hagia Sophia at opening, Blue Mosque, Basilica Cistern, Topkapı in the afternoon, sunset around Sultanahmet park. |
+| Day 2 | Markets and Golden Horn. Süleymaniye, the Spice Bazaar, Grand Bazaar, then Balat in the afternoon and a fish sandwich by the water. |
+| Day 3 | Beyoğlu and Bosphorus. Galata, Karaköy, İstiklal, then a late ferry across to Kadıköy for dinner. |
+| Day 4 | Dolmabahçe, a Bosphorus ferry trip, or simply a slow day in Moda. |
 
 ## When to go
 

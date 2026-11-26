@@ -39,17 +39,18 @@ Por la noche, pasea por Pontocho, un callejón estrechísimo paralelo al río Ka
 
 Y la escapada clásica: Nara en el día. Los ciervos sueltos y el gran Buda del templo Todai-ji están a menos de una hora en tren. Otra opción más tranquila es Uji, famosa por el té matcha y por el templo Byodo-in.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Kioto en 4 días: ruta día a día
 
 Con tres días ves lo esencial; con cuatro respiras y puedes hacer una excursión. Más de cinco solo si añades Nara, Osaka o la montaña.
 
-- **Día 1, Higashiyama:** Fushimi Inari de madrugada, después Kiyomizu-dera, Sannenzaka y Ninenzaka, Yasaka y Gion al atardecer.
+**Itinerario de 4 días en Kioto**
 
-- **Día 2, oeste:** Arashiyama temprano (bambú, Tenryu-ji, puente) y por la tarde Kinkaku-ji, con Ryoan-ji cerca si te gusta el jardín seco.
-
-- **Día 3, centro y norte:** castillo de Nijo, Nishiki, paseo por Kawaramachi y tarde en Ginkaku-ji y el Camino de la Filosofía.
-
-- **Día 4, Nara o Uji:** excursión de día y cena tranquila en Pontocho.
+| Día | Plan |
+|---|---|
+| Día 1 | Higashiyama. Fushimi Inari de madrugada, después Kiyomizu-dera, Sannenzaka y Ninenzaka, Yasaka y Gion al atardecer. |
+| Día 2 | Oeste. Arashiyama temprano (bambú, Tenryu-ji, puente) y por la tarde Kinkaku-ji, con Ryoan-ji cerca si te gusta el jardín seco. |
+| Día 3 | Centro y norte. Castillo de Nijo, Nishiki, paseo por Kawaramachi y tarde en Ginkaku-ji y el Camino de la Filosofía. |
+| Día 4 | Nara o Uji. Excursión de día y cena tranquila en Pontocho. |
 
 ## Cuándo ir a Kioto
 

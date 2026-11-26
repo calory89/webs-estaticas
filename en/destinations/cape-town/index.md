@@ -39,19 +39,19 @@ Spend a day in the Constantia wine valley, the oldest in the country, or go furt
 
 On Saturdays, the Neighbourhood Goods Market in Woodstock is a good place for lunch, and the surrounding streets have street art and design shops. In winter and spring (roughly June to November), whale watching from Hermanus or the coast road is superb, with southern right whales close to shore.
 
-## How many days and a suggested route
+## Cape Town itinerary: 5 days, day by day
 
 Three days covers the highlights, five lets you breathe, and seven adds the winelands properly. A workable five-day plan:
 
-- **Day 1:** Table Mountain in the morning, Company's Garden and Bo-Kaap in the afternoon, sunset on Signal Hill.
+**5-day itinerary for Cape Town**
 
-- **Day 2:** Robben Island in the morning, then the Waterfront and Zeitz MOCAA. Dinner on Kloof Street or in Woodstock.
-
-- **Day 3:** The peninsula loop: Muizenberg, Kalk Bay, Boulders Beach, Cape Point, and back via Chapman's Peak.
-
-- **Day 4:** Kirstenbosch in the morning, then Constantia wine estates.
-
-- **Day 5:** Stellenbosch or Franschhoek, or a buffer day if weather wrecked an earlier plan.
+| Day | Plan |
+|---|---|
+| Day 1 | Table Mountain in the morning, Company's Garden and Bo-Kaap in the afternoon, sunset on Signal Hill. |
+| Day 2 | Robben Island in the morning, then the Waterfront and Zeitz MOCAA. Dinner on Kloof Street or in Woodstock. |
+| Day 3 | The peninsula loop: Muizenberg, Kalk Bay, Boulders Beach, Cape Point, and back via Chapman's Peak. |
+| Day 4 | Kirstenbosch in the morning, then Constantia wine estates. |
+| Day 5 | Stellenbosch or Franschhoek, or a buffer day if weather wrecked an earlier plan. |
 
 ## When to go: weather and seasons
 

@@ -35,17 +35,18 @@ Book a West End show. Same-day deals are sold at the TKTS booth in Leicester Squ
 
 Visit the Sky Garden for a free panorama (booking is required, so reserve ahead). Spend a Saturday morning at Portobello Road Market in Notting Hill, then walk the pastel streets before the selfie queues thicken. If you can get a ticket, a Premier League match is a better cultural education than most tours. And have a pint in an old pub, preferably one with a fireplace and no music.
 
-## How many days and a suggested route
+## London itinerary: 4 days, day by day
 
 Three days is the minimum for the main sights, four is comfortable, and a week lets you see the city rather than just its landmarks. Here is a four-day plan that avoids too much zigzagging.
 
-- **Day 1, Westminster and the South Bank:** Parliament, the Abbey, a walk along the river, the Tate Modern, then Borough Market for lunch or an early dinner.
+**4-day itinerary for London**
 
-- **Day 2, the City and the east:** St Paul's, the Tower of London, Tower Bridge, then Shoreditch and Brick Lane for the evening.
-
-- **Day 3, Bloomsbury, Soho and the West End:** British Museum in the morning, Covent Garden, Soho for dinner, and a show.
-
-- **Day 4, choose one:** Greenwich by boat, South Kensington museums plus Hyde Park, or Kew Gardens.
+| Day | Plan |
+|---|---|
+| Day 1 | Westminster and the South Bank. Parliament, the Abbey, a walk along the river, the Tate Modern, then Borough Market for lunch or an early dinner. |
+| Day 2 | The City and the east. St Paul's, the Tower of London, Tower Bridge, then Shoreditch and Brick Lane for the evening. |
+| Day 3 | Bloomsbury, Soho and the West End. British Museum in the morning, Covent Garden, Soho for dinner, and a show. |
+| Day 4 | Choose one. Greenwich by boat, South Kensington museums plus Hyde Park, or Kew Gardens. |
 
 ## When to go
 

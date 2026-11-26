@@ -33,17 +33,18 @@ Prueba una ginjinha en el pequeño local A Ginjinha, junto al Rossio. Es un lico
 
 Y si te sobra un día, la excursión más fácil es Sintra, en tren desde la estación de Rossio. Cascais, también en tren desde Cais do Sodré, es la alternativa si prefieres playa y paseo.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Lisboa en 4 días: ruta día a día
 
 Tres días bastan para lo esencial. Con cuatro puedes añadir Sintra sin ir con el reloj en la mano.
 
-- **Día 1:** Baixa, Praça do Comércio, subida por el Chiado y copa en un miradouro del Bairro Alto. Cena en una tasca cercana.
+**Itinerario de 4 días en Lisboa**
 
-- **Día 2:** Mañana en Alfama y el castillo. Tarde en la Graça y la Senhora do Monte. Si te queda energía, fado por la noche.
-
-- **Día 3:** Belém por la mañana, pasteles incluidos, y LX Factory por la tarde. Cierra en Cais do Sodré, que está lleno de bares.
-
-- **Día 4 (opcional):** Sintra, con el Palácio da Pena y el centro histórico. Sal pronto.
+| Día | Plan |
+|---|---|
+| Día 1 | Baixa, Praça do Comércio, subida por el Chiado y copa en un miradouro del Bairro Alto. Cena en una tasca cercana. |
+| Día 2 | Mañana en Alfama y el castillo. Tarde en la Graça y la Senhora do Monte. Si te queda energía, fado por la noche. |
+| Día 3 | Belém por la mañana, pasteles incluidos, y LX Factory por la tarde. Cierra en Cais do Sodré, que está lleno de bares. |
+| Día 4 | (opcional). Sintra, con el Palácio da Pena y el centro histórico. Sal pronto. |
 
 ## Cuándo ir: clima y temporadas
 
@@ -79,11 +80,13 @@ Para moverte, compra la tarjeta recargable **Navegante** (antes Viva Viagem) en 
 
 ## Presupuesto orientativo por día
 
-- **Muy ajustado (60-80 euros):** hostel, menú del día, transporte público y miradouros gratuitos.
+**Presupuesto orientativo por día**
 
-- **Cómodo (100-140 euros):** habitación doble sencilla compartida, un par de entradas y alguna cena con más calma.
-
-- **Más relajado (a partir de 180 euros):** hotel céntrico, taxis puntuales y restaurante algo mejor.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Muy ajustado | 60-80 euros | Hostel, menú del día, transporte público y miradouros gratuitos. |
+| Cómodo | 100-140 euros | Habitación doble sencilla compartida, un par de entradas y alguna cena con más calma. |
+| Más relajado | a partir de 180 euros | Hotel céntrico, taxis puntuales y restaurante algo mejor. |
 
 Son cifras aproximadas y cambian con la temporada, sobre todo el alojamiento.
 

@@ -39,15 +39,17 @@ Otra opción clásica es la excursión en barco al volcán de Nea Kameni, con ba
 
 Si te gusta el vino, la isla tiene viñedos en suelo volcánico, con uvas como la assyrtiko. Hay bodegas con cata en la zona de Pyrgos y Megalochori. Una cata sencilla sale razonable y es una buena forma de pasar la tarde mientras el calor aprieta.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Santorini en 3 días: ruta día a día
 
 Tres días completos es lo justo para verlo sin agobios; con dos te quedas corto, y con cuatro o cinco ya puedes pararte en la playa. Mi plan:
 
-- **Día 1:** Fira por la mañana, paseo por Firostefani e Imerovigli y atardecer en Imerovigli.
+**Itinerario de 3 días en Santorini**
 
-- **Día 2:** Oia a primera hora, sendero de vuelta a Fira si te apetece o bus, y comida en Ammoudi.
-
-- **Día 3:** Akrotiri por la mañana, playa por la tarde (Perissa o Kamari) y cena en Pyrgos o Megalochori.
+| Día | Plan |
+|---|---|
+| Día 1 | Fira por la mañana, paseo por Firostefani e Imerovigli y atardecer en Imerovigli. |
+| Día 2 | Oia a primera hora, sendero de vuelta a Fira si te apetece o bus, y comida en Ammoudi. |
+| Día 3 | Akrotiri por la mañana, playa por la tarde (Perissa o Kamari) y cena en Pyrgos o Megalochori. |
 
 Con un día extra, añade el volcán en barco o una cata de vino.
 

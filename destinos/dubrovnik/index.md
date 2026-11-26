@@ -37,15 +37,17 @@ En kayak desde Banje se rodean las murallas desde el mar, y las vistas desde el 
 
 Si te interesa el vino, Pelješac está a una hora larga en coche y produce tintos de uva Plavac Mali. Allí, en Ston, se toman ostras y mejillones. También hay excursiones de un día a Kotor (Montenegro) y a Mostar (Bosnia), ambas largas y con fronteras que cruzar. Yo las haría solo si tienes cuatro días o más.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Dubrovnik en 3 días: ruta día a día
 
 Tres días es lo ideal; con dos ves lo esencial pero sin respirar, y con cuatro puedes añadir una excursión larga.
 
-- **Día 1:** murallas a primera hora, Stradun, palacios y catedral. Por la tarde, descanso y atardecer en Buža o en el puerto viejo.
+**Itinerario de 3 días en Dubrovnik**
 
-- **Día 2:** barco a Lokrum por la mañana y baño. Vuelta a mediodía, y por la tarde subes a Srđ para ver la puesta de sol.
-
-- **Día 3:** Lovrijenac y luego una excursión: islas Elafiti en barco o ruta de vino y ostras por Pelješac.
+| Día | Plan |
+|---|---|
+| Día 1 | Murallas a primera hora, Stradun, palacios y catedral. Por la tarde, descanso y atardecer en Buža o en el puerto viejo. |
+| Día 2 | Barco a Lokrum por la mañana y baño. Vuelta a mediodía, y por la tarde subes a Srđ para ver la puesta de sol. |
+| Día 3 | Lovrijenac y luego una excursión: islas Elafiti en barco o ruta de vino y ostras por Pelješac. |
 
 ## Cuándo ir
 

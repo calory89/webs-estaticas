@@ -39,15 +39,17 @@ Si tienes un día de más, tienes buenas escapadas. El valle del Ourika es la m�
 
 Una clase de cocina marroquí, normalmente con visita al mercado incluida, es un plan que se paga y se disfruta. Termina con un tajín propio y la receta apuntada.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Marrakech en 3 días: ruta día a día
 
 Con tres días lo ves todo bien. Con dos te sale una versión comprimida, y con cuatro o cinco puedes sumar una excursión.
 
-- **Día 1:** medina por la mañana, zocos y madrasa. Comida tranquila y tarde en el Museo de Marrakech. Al final del día, Yemaa el Fna y cena en la plaza.
+**Itinerario de 3 días en Marrakech**
 
-- **Día 2:** Palacio Bahía y Tumbas Saadíes a primera hora, El Badi después. Por la tarde, un hammam, y al atardecer la Kutubía.
-
-- **Día 3:** Majorelle y Museo YSL a primera hora, paseo por Guéliz y cena en la ciudad nueva.
+| Día | Plan |
+|---|---|
+| Día 1 | Medina por la mañana, zocos y madrasa. Comida tranquila y tarde en el Museo de Marrakech. Al final del día, Yemaa el Fna y cena en la plaza. |
+| Día 2 | Palacio Bahía y Tumbas Saadíes a primera hora, El Badi después. Por la tarde, un hammam, y al atardecer la Kutubía. |
+| Día 3 | Majorelle y Museo YSL a primera hora, paseo por Guéliz y cena en la ciudad nueva. |
 
 ## Cuándo ir
 
@@ -91,11 +93,13 @@ Dentro de la ciudad, la medina se recorre a pie. Para ir a Guéliz o Majorelle, 
 
 ## Presupuesto orientativo por día
 
-- **Ajustado (35-50 €):** habitación sencilla en la medina, comida en puestos, entradas puntuales y transporte a pie.
+**Presupuesto orientativo por día**
 
-- **Medio (70-110 €):** riad con buena valoración, cenas en restaurantes, taxis y varias entradas.
-
-- **Cómodo (150 € o más):** riad con encanto o hotel, hammam o spa, excursión y cenas más cuidadas.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | 35-50 € | Habitación sencilla en la medina, comida en puestos, entradas puntuales y transporte a pie. |
+| Medio | 70-110 € | Riad con buena valoración, cenas en restaurantes, taxis y varias entradas. |
+| Cómodo | 150 € o más | Riad con encanto o hotel, hammam o spa, excursión y cenas más cuidadas. |
 
 La moneda es el dírham marroquí. Lleva algo de efectivo, porque en zocos y puestos de comida no suelen aceptar tarjeta. Los cajeros son habituales en Guéliz y cerca de la plaza.
 

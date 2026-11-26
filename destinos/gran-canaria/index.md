@@ -93,31 +93,18 @@ Casi todo lo bueno de la isla no cuesta nada. Las playas, las dunas de Maspaloma
 
 - **Mercado de Vegueta**, para ver producto local y tomarte un café por poco más de 1 €.
 
-## Itinerario: Gran Canaria en 6 días
+## Qué ver en Gran Canaria en 6 días: ruta día a día
 
-### Día 1: Las Palmas
+**Itinerario de 6 días en Gran Canaria**
 
-**Mañana:** Vegueta, catedral con torre y Casa de Colón. **Tarde:** pasea por Triana, la calle comercial peatonal, y coge la guagua hasta Santa Catalina; baño en Las Canteras. **Noche:** cena en el **Mercado del Puerto**, con puestos de tapas y ambiente hasta tarde.
-
-### Día 2: el norte
-
-**Mañana:** Arucas (iglesia y destilería) y Firgas, con su paseo de azulejos y cascada artificial. **Tarde:** Cueva Pintada en Gáldar y baño en Sardina del Norte. **Noche:** vuelta a Las Palmas o dormir en Agaete.
-
-### Día 3: Agaete y Tamadaba
-
-**Mañana:** Valle de Agaete con visita a una finca de café. **Tarde:** pescado en el Puerto de las Nieves y baño en Las Salinas; si te sobran fuerzas, sube a Tamadaba. **Noche:** traslado a la cumbre (Tejeda o Artenara).
-
-### Día 4: la cumbre
-
-**Mañana:** amanecer en el Roque Nublo y después el Pico de las Nieves. **Tarde:** Tejeda, Roque Bentayga y Artenara. **Noche:** observación de estrellas y cena de cuchara en Tejeda.
-
-### Día 5: Guayadeque y Fataga
-
-**Mañana:** bajada por la carretera de Fataga, con parada en el pueblo y en el mirador de la Degollada de las Yeguas. **Tarde:** comida en el Barranco de Guayadeque. **Noche:** dormir en Maspalomas o Meloneras.
-
-### Día 6: el sur
-
-**Mañana:** dunas de Maspalomas temprano, antes del calor. **Tarde:** Puerto de Mogán y baño en la playa de Amadores o en Mogán. **Noche:** atardecer en el Faro de Maspalomas y cena en Meloneras, o vuelta hacia el aeropuerto, que queda a unos 30 minutos.
+| Día | Plan |
+|---|---|
+| Día 1 | Las Palmas. Mañana: Vegueta, catedral con torre y Casa de Colón. Tarde: pasea por Triana, la calle comercial peatonal, y coge la guagua hasta Santa Catalina; baño en Las Canteras. Noche: cena en el Mercado del Puerto , con puestos de tapas y ambiente hasta tarde. |
+| Día 2 | El norte. Mañana: Arucas (iglesia y destilería) y Firgas, con su paseo de azulejos y cascada artificial. Tarde: Cueva Pintada en Gáldar y baño en Sardina del Norte. Noche: vuelta a Las Palmas o dormir en Agaete. |
+| Día 3 | Agaete y Tamadaba. Mañana: Valle de Agaete con visita a una finca de café. Tarde: pescado en el Puerto de las Nieves y baño en Las Salinas; si te sobran fuerzas, sube a Tamadaba. Noche: traslado a la cumbre (Tejeda o Artenara). |
+| Día 4 | La cumbre. Mañana: amanecer en el Roque Nublo y después el Pico de las Nieves. Tarde: Tejeda, Roque Bentayga y Artenara. Noche: observación de estrellas y cena de cuchara en Tejeda. |
+| Día 5 | Guayadeque y Fataga. Mañana: bajada por la carretera de Fataga, con parada en el pueblo y en el mirador de la Degollada de las Yeguas. Tarde: comida en el Barranco de Guayadeque. Noche: dormir en Maspalomas o Meloneras. |
+| Día 6 | El sur. Mañana: dunas de Maspalomas temprano, antes del calor. Tarde: Puerto de Mogán y baño en la playa de Amadores o en Mogán. Noche: atardecer en el Faro de Maspalomas y cena en Meloneras, o vuelta hacia el aeropuerto, que queda a unos 30 minutos. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -179,9 +166,12 @@ Dentro de Las Palmas, las **guaguas municipales** (amarillas) cuestan algo más 
 
 ## Cuánto cuesta un viaje a Gran Canaria
 
-- **Presupuesto ajustado (unos 60-80 € por persona y día)**: apartamento compartido en Las Palmas, guagua, menú del día y cenas sencillas, planes gratis.
+**Presupuesto orientativo por día**
 
-- **Presupuesto medio (unos 110-160 € por persona y día)**: hotel de tres o cuatro estrellas, coche de alquiler a medias, comidas en restaurante y alguna actividad de pago.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Presupuesto ajustado | unos 60-80 € por persona y día | Apartamento compartido en Las Palmas, guagua, menú del día y cenas sencillas, planes gratis. |
+| Presupuesto medio | unos 110-160 € por persona y día | Hotel de tres o cuatro estrellas, coche de alquiler a medias, comidas en restaurante y alguna actividad de pago. |
 
 - **Vuelos**: desde la península se encuentran ida y vuelta por 60-150 € fuera de temporada alta; en Navidad y agosto se disparan.
 

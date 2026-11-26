@@ -97,27 +97,17 @@ Ibiza tiene fama de cara, y lo es, pero lo mejor de la isla no cuesta nada. Dalt
 
 - **Bocadillo y botella de agua del súper** para playa: en los chiringuitos, una botella de agua puede costar 5 €.
 
-## Itinerario: Ibiza en 5 días
+## Qué ver en Ibiza en 5 días: ruta día a día
 
-### Día 1: Eivissa y Dalt Vila
+**Itinerario de 5 días en Ibiza**
 
-**Mañana:** Necrópolis del Puig des Molins y paseo por el barrio de La Marina. **Tarde:** playa de Talamanca, a poco más de 20 minutos andando del puerto. **Noche:** subida a Dalt Vila al atardecer y cena por el puerto o en el barrio de Sa Penya, cerca de la muralla. Si quieres discoteca esa noche, Pacha está a un paseo.
-
-### Día 2: Ses Salines y el sur
-
-**Mañana:** bus hasta Ses Salines y playa temprano. **Tarde:** camino hacia Es Cavallet o la Torre de ses Portes, en la punta. **Noche:** vuelta a la ciudad o, si vas de fiesta, Platja d'en Bossa, que está de camino.
-
-### Día 3: Es Vedrà y el oeste
-
-**Mañana:** coche de alquiler y Cala d'Hort. **Tarde:** Cala Comte para el baño. **Noche:** atardecer en la Torre des Savinar o en las rocas de Sant Antoni, y cena en Sant Antoni lejos del paseo principal.
-
-### Día 4: el norte y los pueblos
-
-**Mañana:** Santa Gertrudis y bocadillo en el Bar Costa. **Tarde:** Cala Xarraca o Portinatx, y Cala Benirràs si es domingo. **Noche:** cena en Sant Joan o vuelta a Santa Eulària y paseo marítimo. Si es sábado, cambia la mañana por Las Dalias.
-
-### Día 5: Formentera
-
-**Mañana:** ferry temprano desde el puerto de Eivissa y alquiler de bici o moto en La Savina. **Tarde:** playa de Ses Illetes y Cala Saona. **Noche:** último ferry de vuelta. Ojo con la hora, porque no hay mucho margen.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Eivissa y Dalt Vila | Necrópolis del Puig des Molins y paseo por el barrio de La Marina. | Playa de Talamanca, a poco más de 20 minutos andando del puerto. | Subida a Dalt Vila al atardecer y cena por el puerto o en el barrio de Sa Penya, cerca de la muralla. Si quieres discoteca esa noche, Pacha está a un paseo. |
+| Día 2 · Ses Salines y el sur | Bus hasta Ses Salines y playa temprano. | Camino hacia Es Cavallet o la Torre de ses Portes, en la punta. | Vuelta a la ciudad o, si vas de fiesta, Platja d'en Bossa, que está de camino. |
+| Día 3 · Es Vedrà y el oeste | Coche de alquiler y Cala d'Hort. | Cala Comte para el baño. | Atardecer en la Torre des Savinar o en las rocas de Sant Antoni, y cena en Sant Antoni lejos del paseo principal. |
+| Día 4 · El norte y los pueblos | Santa Gertrudis y bocadillo en el Bar Costa. | Cala Xarraca o Portinatx, y Cala Benirràs si es domingo. | Cena en Sant Joan o vuelta a Santa Eulària y paseo marítimo. Si es sábado, cambia la mañana por Las Dalias. |
+| Día 5 · Formentera | Ferry temprano desde el puerto de Eivissa y alquiler de bici o moto en La Savina. | Playa de Ses Illetes y Cala Saona. | Último ferry de vuelta. Ojo con la hora, porque no hay mucho margen. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -173,9 +163,12 @@ Para moverte por la isla, el bus funciona bien entre los pueblos grandes (Eiviss
 
 Ibiza es de los destinos más caros de España en verano. Estos son presupuestos por persona y día, sin contar vuelos:
 
-- **Ajustado (unos 100-130 €):** hostal o habitación compartida, bus, súper y algún menú del día, playa gratis.
+**Presupuesto orientativo por día**
 
-- **Medio (unos 180-250 €):** hotel o apartamento normal, coche compartido unos días, una cena buena al día y alguna excursión.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | unos 100-130 € | Hostal o habitación compartida, bus, súper y algún menú del día, playa gratis. |
+| Medio | unos 180-250 € | Hotel o apartamento normal, coche compartido unos días, una cena buena al día y alguna excursión. |
 
 - **Con fiesta:** suma entre 80 y 150 € por cada noche de discoteca entre entrada y copas.
 

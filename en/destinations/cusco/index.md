@@ -95,21 +95,14 @@ A lot of Cusco costs nothing, because the Inca walls are simply part of the stre
 
 ## Cusco itinerary: 4 days
 
-### Day 1: Arrive slowly
+**4-day itinerary for Cusco**
 
-**Morning:** land, check in, drink coca tea and do nothing for two hours. Seriously. **Afternoon:** walk gently to the Plaza de Armas and Qorikancha, which is mostly flat. **Evening:** have a light dinner and no alcohol. A soup like sopa de quinua is ideal. Go to bed early.
-
-### Day 2: Centre, San Blas and Sacsayhuamán
-
-**Morning:** breakfast at San Pedro market, then the Cathedral and MAP. **Afternoon:** walk Hatun Rumiyoc up to San Blas for lunch, then on to Sacsayhuamán and Cristo Blanco for late light. **Evening:** eat in San Blas and have your first pisco sour.
-
-### Day 3: Sacred Valley
-
-**Morning:** leave early for Pisac ruins and the market. **Afternoon:** head to Ollantaytambo for the terraces and the old town. Either sleep there if Machu Picchu is next, or come back via Chinchero. **Evening:** eat in Ollantaytambo or return to Cusco for dinner.
-
-### Day 4: Maras, Moray or a big trip
-
-**Morning:** visit Moray's circular terraces and the Maras salt pans, or start a full day at Humantay Lake if you are well acclimatised. **Afternoon:** return for Q'enqo and Tambomachay on foot if you did Maras. **Evening:** farewell dinner, with cuy if you are brave and lomo saltado if not.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Arrive slowly | Land, check in, drink coca tea and do nothing for two hours. Seriously. | Walk gently to the Plaza de Armas and Qorikancha, which is mostly flat. | Have a light dinner and no alcohol. A soup like sopa de quinua is ideal. Go to bed early. |
+| Day 2 · Centre, San Blas and Sacsayhuamán | Breakfast at San Pedro market, then the Cathedral and MAP. | Walk Hatun Rumiyoc up to San Blas for lunch, then on to Sacsayhuamán and Cristo Blanco for late light. | Eat in San Blas and have your first pisco sour. |
+| Day 3 · Sacred Valley | Leave early for Pisac ruins and the market. | Head to Ollantaytambo for the terraces and the old town. Either sleep there if Machu Picchu is next, or come back via Chinchero. | Eat in Ollantaytambo or return to Cusco for dinner. |
+| Day 4 · Maras, Moray or a big trip | Visit Moray's circular terraces and the Maras salt pans, or start a full day at Humantay Lake if you are well acclimatised. | Return for Q'enqo and Tambomachay on foot if you did Maras. | Farewell dinner, with cuy if you are brave and lomo saltado if not. |
 
 ## What is overrated (and what to do instead)
 
@@ -179,9 +172,12 @@ In the centre you walk everywhere. Taxis inside the city cost €2-4 (S/8-15). T
 
 ## How much a trip to Cusco costs
 
-- **Shoestring: €30-40 a day.** That covers a dorm bed, market breakfasts, menú del día lunches, colectivos, walking and the Boleto Turístico spread across your stay.
+**Rough daily budget**
 
-- **Mid-range: €80-130 a day.** That covers a double room in San Blas, sit-down dinners, taxis, a couple of guided tours and the odd pisco sour.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €30-40 a day | That covers a dorm bed, market breakfasts, menú del día lunches, colectivos, walking and the Boleto Turístico spread across your stay. |
+| Mid-range | €80-130 a day | That covers a double room in San Blas, sit-down dinners, taxis, a couple of guided tours and the odd pisco sour. |
 
 - **Machu Picchu on top:** budget €150-250 extra for the entry ticket (about €40, S/152-ish), return train (€100-200) and the Aguas Calientes bus (around €22 return).
 

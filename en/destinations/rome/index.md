@@ -65,17 +65,18 @@ Ancient paving, catacombs and umbrella pines. Rent a bike on Sundays, when traff
 
 - Add a day trip to Tivoli for Villa d'Este's fountains and Hadrian's Villa.
 
-## How many days and a suggested route
+## Rome itinerary: 4 days, day by day
 
 Three days covers the headline sights. Four lets you breathe, which is what I'd recommend.
 
-**Day 1:** Colosseum, Forum and Palatine in the morning, lunch in Monti, then the Jewish Ghetto and Trastevere for dinner.
+**4-day itinerary for Rome**
 
-**Day 2:** Vatican Museums early, St Peter's, then an afternoon on foot through Prati and across the river to Piazza Navona, the Pantheon and Trevi at dusk.
-
-**Day 3:** Borghese Gallery slot, Villa Borghese, Spanish Steps, then Testaccio for a long dinner.
-
-**Day 4:** San Clemente, the Aventine, then either Ostia Antica or the Appian Way.
+| Day | Plan |
+|---|---|
+| Day 1 | Colosseum, Forum and Palatine in the morning, lunch in Monti, then the Jewish Ghetto and Trastevere for dinner. |
+| Day 2 | Vatican Museums early, St Peter's, then an afternoon on foot through Prati and across the river to Piazza Navona, the Pantheon and Trevi at dusk. |
+| Day 3 | Borghese Gallery slot, Villa Borghese, Spanish Steps, then Testaccio for a long dinner. |
+| Day 4 | San Clemente, the Aventine, then either Ostia Antica or the Appian Way. |
 
 ## When to go
 

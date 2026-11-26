@@ -101,23 +101,12 @@ The **Luxembourg Card** (roughly €15-20 for one day, a little more for two or 
 
 ## Luxembourg itinerary: 2 days
 
-### Day 1: Old town and fortifications
+**2-day itinerary for Luxembourg**
 
-**Morning:** Start at Place d'Armes, then walk to Place Guillaume II and the Grand Ducal Palace. Spend an hour in the Lëtzebuerg City Museum to get your bearings.
-
-**Afternoon:** Head to the Fish Market and MNAHA if you're in a museum mood. Then visit the Bock Casemates, walk the Chemin de la Corniche, and descend into Grund. Have coffee at Neumünster Abbey.
-
-**Evening:** Have dinner and drinks in Grund. Walk back up via the lift at dusk to see the walls lit up.
-
-### Day 2: Valleys, bridges and Kirchberg
-
-**Morning:** Walk from Place de la Constitution down into the Pétrusse valley and under the Adolphe Bridge. Loop back up to the cathedral.
-
-**Afternoon:** Take the Pfaffenthal lift down, cross the valley, and ride the funicular up to Kirchberg. Visit Fort Thüngen and MUDAM, then return by tram.
-
-**Evening:** Have drinks at Rives de Clausen, or catch a concert at the Philharmonie if you booked one.
-
-If you have a third day, go to Vianden or the Mullerthal (see day trips below).
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Old town and fortifications | Start at Place d'Armes, then walk to Place Guillaume II and the Grand Ducal Palace. Spend an hour in the Lëtzebuerg City Museum to get your bearings. | Head to the Fish Market and MNAHA if you're in a museum mood. Then visit the Bock Casemates, walk the Chemin de la Corniche, and descend into Grund. Have coffee at Neumünster Abbey. | Have dinner and drinks in Grund. Walk back up via the lift at dusk to see the walls lit up. |
+| Day 2 · Valleys, bridges and Kirchberg | Walk from Place de la Constitution down into the Pétrusse valley and under the Adolphe Bridge. Loop back up to the cathedral. | Take the Pfaffenthal lift down, cross the valley, and ride the funicular up to Kirchberg. Visit Fort Thüngen and MUDAM, then return by tram. | Have drinks at Rives de Clausen, or catch a concert at the Philharmonie if you booked one. If you have a third day, go to Vianden or the Mullerthal (see day trips below). |
 
 ## What is overrated (and what to do instead)
 

@@ -89,19 +89,15 @@ La Zona Colonial se ve en su mayor parte sin pagar: la Calle de las Damas, el Pa
 
 El Malecón, el Parque Mirador Sur (enorme, con caminantes y ciclistas a primera hora) y el ambiente de los colmados son gratis o casi. Las entradas de pago rara vez pasan de 3-5 €, así que el gasto real no son los monumentos sino el transporte y la comida. El metro cuesta unos 20 pesos (menos de 0,50 €) por viaje.
 
-## Itinerario: Santo Domingo en 3 días
+## Qué ver en Santo Domingo en 3 días: ruta día a día
 
-### Día 1: Zona Colonial a fondo
+**Itinerario de 3 días en Santo Domingo**
 
-**Mañana:** Catedral Primada nada más abrir, Parque Colón y Calle de las Damas con la Fortaleza Ozama y el Panteón Nacional. **Tarde:** comida tranquila, siesta o piscina si tu hotel tiene, y luego Museo de las Casas Reales y Alcázar de Colón. **Noche:** cena en la Plaza de España y copas por la Calle Hostos.
-
-### Día 2: Los Tres Ojos y Malecón
-
-**Mañana:** Uber a Los Tres Ojos a primera hora y, justo al lado, el Faro a Colón. **Tarde:** vuelta por la calle El Conde hasta la Puerta del Conde y el Parque Independencia; desde ahí baja andando al Malecón. **Noche:** atardecer en el Malecón y cena en algún local de comida dominicana, como Adrian Tropical, que tiene terraza sobre el mar.
-
-### Día 3: Botánico, museo y playa
-
-**Mañana:** Jardín Botánico Nacional o Museo del Hombre Dominicano, según te tire más naturaleza o historia. **Tarde:** guagua o Uber a Boca Chica para bañarte y comer pescado frito. **Noche:** si es domingo, Bonyé en las ruinas de San Francisco; si no, despedida en un colmado del barrio.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Zona Colonial a fondo | Catedral Primada nada más abrir, Parque Colón y Calle de las Damas con la Fortaleza Ozama y el Panteón Nacional. | Comida tranquila, siesta o piscina si tu hotel tiene, y luego Museo de las Casas Reales y Alcázar de Colón. | Cena en la Plaza de España y copas por la Calle Hostos. |
+| Día 2 · Los Tres Ojos y Malecón | Uber a Los Tres Ojos a primera hora y, justo al lado, el Faro a Colón. | Vuelta por la calle El Conde hasta la Puerta del Conde y el Parque Independencia; desde ahí baja andando al Malecón. | Atardecer en el Malecón y cena en algún local de comida dominicana, como Adrian Tropical, que tiene terraza sobre el mar. |
+| Día 3 · Botánico, museo y playa | Jardín Botánico Nacional o Museo del Hombre Dominicano, según te tire más naturaleza o historia. | Guagua o Uber a Boca Chica para bañarte y comer pescado frito. | Si es domingo, Bonyé en las ruinas de San Francisco; si no, despedida en un colmado del barrio. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -167,9 +163,12 @@ Dentro de la ciudad, la Zona Colonial se hace andando. Para lo demás, Uber es b
 
 La moneda es el peso dominicano (DOP); calcula unos 70 pesos por euro. En muchos sitios turísticos aceptan dólares, pero el cambio que te aplican es malo. Presupuesto orientativo por persona y día, sin vuelos:
 
-- **Ajustado: 40-55 € al día.** Hostal o habitación sencilla en Gazcue, comidas en comedores locales, metro y Uber puntual, entradas baratas.
+**Presupuesto orientativo por día**
 
-- **Medio: 90-140 € al día.** Hotel boutique en la Zona Colonial, una comida en restaurante, cenas con copas, Uber a todas partes y una excursión.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | 40-55 € al día | Hostal o habitación sencilla en Gazcue, comidas en comedores locales, metro y Uber puntual, entradas baratas. |
+| Medio | 90-140 € al día | Hotel boutique en la Zona Colonial, una comida en restaurante, cenas con copas, Uber a todas partes y una excursión. |
 
 - **Vuelo desde España:** directos desde Madrid con Iberia, Air Europa y World2Fly, normalmente entre 450 y 800 € ida y vuelta, más barato en temporada baja.
 

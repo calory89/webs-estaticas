@@ -39,15 +39,17 @@ Head into Nordmarka, the forest north of the city. Take the T-bane to Sognsvann 
 
 For a view with your cake, ride to Frognerseteren at the end of line 1. The old restaurant is known for apple cake and the panorama over the city and fjord.
 
-## How many days and a suggested route
+## Oslo itinerary: 3 days, day by day
 
 Three days is a comfortable length. Two will do if you skip the museums on Bygdøy.
 
-**Day 1, city centre:** Start at the Opera House, walk to MUNCH, then cross to Akershus Fortress. Lunch at the harbour, then the National Museum. End with a drink in Tjuvholmen.
+**3-day itinerary for Oslo**
 
-**Day 2, west and parks:** Vigeland Park in the morning, then lunch around Frogner. In the afternoon take the ferry or bus to Bygdøy for one or two museums. Dinner in Grünerløkka.
-
-**Day 3, outdoors:** Holmenkollen in the morning, then a forest walk or a ferry to Hovedøya. Finish with a sauna if you can get a slot.
+| Day | Plan |
+|---|---|
+| Day 1 | City centre. Start at the Opera House, walk to MUNCH, then cross to Akershus Fortress. Lunch at the harbour, then the National Museum. End with a drink in Tjuvholmen. |
+| Day 2 | West and parks. Vigeland Park in the morning, then lunch around Frogner. In the afternoon take the ferry or bus to Bygdøy for one or two museums. Dinner in Grünerløkka. |
+| Day 3 | Outdoors. Holmenkollen in the morning, then a forest walk or a ferry to Hovedøya. Finish with a sauna if you can get a slot. |
 
 ## When to go
 

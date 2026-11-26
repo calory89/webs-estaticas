@@ -35,15 +35,17 @@ Lo mejor de Dublín ocurre por la noche. Evita Temple Bar como lugar donde beber
 
 The Brazen Head presume de ser el pub más antiguo de la ciudad y está bien para un rato, aunque se llena. Si te interesa el whiskey, la destilería Teeling o la Jameson de Bow Street ofrecen visitas con cata. Y un paseo por el Ha'penny Bridge al atardecer, con el Liffey de fondo, no cuesta nada.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Dublín en 3 días: ruta día a día
 
 Tres días son lo razonable. Con dos te quedas corto; con cuatro te da tiempo a salir de la ciudad.
 
-- **Día 1, centro y sur:** Trinity a primera hora, Grafton Street, St Stephen's Green, Merrion Square y museo nacional. Cena y pubs.
+**Itinerario de 3 días en Dublín**
 
-- **Día 2, la Dublín medieval y la de la cerveza:** catedral de San Patricio, Christ Church, castillo y Guinness Storehouse por la tarde.
-
-- **Día 3, historia y mar:** Kilmainham por la mañana y Howth por la tarde, o Phoenix Park si el tiempo no acompaña.
+| Día | Plan |
+|---|---|
+| Día 1 | Centro y sur. Trinity a primera hora, Grafton Street, St Stephen's Green, Merrion Square y museo nacional. Cena y pubs. |
+| Día 2 | La Dublín medieval y la de la cerveza. Catedral de San Patricio, Christ Church, castillo y Guinness Storehouse por la tarde. |
+| Día 3 | Historia y mar. Kilmainham por la mañana y Howth por la tarde, o Phoenix Park si el tiempo no acompaña. |
 
 Con un día extra, Glendalough y las montañas de Wicklow se hacen en excursión organizada. Los Acantilados de Moher desde Dublín son una paliza de ida y vuelta; mejor guardarlos para otro viaje.
 
@@ -83,11 +85,13 @@ Ni el Luas ni el DART llegan al aeropuerto. Una vez en la ciudad, la mayor parte
 
 ## Presupuesto orientativo por día
 
-- **Ajustado (70-100 euros):** hostal, comida sencilla, museos gratuitos y una pinta al día.
+**Presupuesto orientativo por día**
 
-- **Medio (150-220 euros):** hotel céntrico, entradas a Trinity y Guinness, comidas en pub y algún taxi.
-
-- **Cómodo (250 euros o más):** buen hotel, restaurantes, visitas guiadas y una excursión.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | 70-100 euros | Hostal, comida sencilla, museos gratuitos y una pinta al día. |
+| Medio | 150-220 euros | Hotel céntrico, entradas a Trinity y Guinness, comidas en pub y algún taxi. |
+| Cómodo | 250 euros o más | Buen hotel, restaurantes, visitas guiadas y una excursión. |
 
 Los gastos grandes son el alojamiento y las entradas a las atracciones principales. Muchas se abaratan comprándolas online.
 

@@ -57,19 +57,19 @@ The Blue Lagoon is stunning and often packed. Go early, or late in the afternoon
 
 - Go out in Paceville if you like loud clubs. If not, a quiet drink in Valletta or Birgu is better.
 
-## How many days and a suggested route
+## Malta itinerary: 5 days, day by day
 
 Three days covers the highlights, five is comfortable, and a week lets you add Gozo properly and spend some time at the beach.
 
-- **Day 1:** Valletta on foot, with the Upper Barrakka at noon and a harbour ferry in the evening.
+**5-day itinerary for Malta**
 
-- **Day 2:** Mdina and Rabat in the morning, Dingli Cliffs at sunset.
-
-- **Day 3:** Three Cities, then Marsaxlokk for a late fish lunch.
-
-- **Day 4:** Gozo by ferry, covering Victoria, the Citadel and a swim.
-
-- **Day 5:** Temples in the morning, beach in the afternoon, or Comino if the weather is calm.
+| Day | Plan |
+|---|---|
+| Day 1 | Valletta on foot, with the Upper Barrakka at noon and a harbour ferry in the evening. |
+| Day 2 | Mdina and Rabat in the morning, Dingli Cliffs at sunset. |
+| Day 3 | Three Cities, then Marsaxlokk for a late fish lunch. |
+| Day 4 | Gozo by ferry, covering Victoria, the Citadel and a swim. |
+| Day 5 | Temples in the morning, beach in the afternoon, or Comino if the weather is calm. |
 
 ## When to go
 

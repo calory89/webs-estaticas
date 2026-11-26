@@ -57,15 +57,17 @@ Both are small and worth an hour on a hot afternoon or a windy day. Not essentia
 
 - **Look for Petros the pelican,** the island's mascot, wandering around the harbour. He has been a local fixture for decades, and a pelican has long held the title.
 
-## How many days and a suggested route
+## Mykonos itinerary: 3 days, day by day
 
 Three full days is the sweet spot. Two works if you are focused on the town and one beach day. Four or five makes sense only if you plan to relax a lot.
 
-- **Day 1:** Early walk through Chora, then Paraportiani, the windmills and lunch. Afternoon at a nearby beach such as Ornos or Agios Stefanos. Sunset in Little Venice, dinner in the old town.
+**3-day itinerary for Mykonos**
 
-- **Day 2:** Morning ferry to Delos, back by early afternoon. Late lunch, then a swim and a slow evening.
-
-- **Day 3:** Rent a car or take a water taxi to the south coast, pick one or two beaches, then end the day at the Armenistis Lighthouse or in Ano Mera.
+| Day | Plan |
+|---|---|
+| Day 1 | Early walk through Chora, then Paraportiani, the windmills and lunch. Afternoon at a nearby beach such as Ornos or Agios Stefanos. Sunset in Little Venice, dinner in the old town. |
+| Day 2 | Morning ferry to Delos, back by early afternoon. Late lunch, then a swim and a slow evening. |
+| Day 3 | Rent a car or take a water taxi to the south coast, pick one or two beaches, then end the day at the Armenistis Lighthouse or in Ano Mera. |
 
 ## When to go
 

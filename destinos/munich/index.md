@@ -41,15 +41,17 @@ Si prefieres algo ligero, alquila una bici y recorre el Isar hacia el sur. En ve
 
 El gran día de excursión es el castillo de Neuschwanstein, cerca de Füssen, al que se llega en tren. Sale caro de tiempo (es casi un día entero) y hay que reservar entrada con antelación. Quien tenga menos días puede cambiarlo por Salzburgo o un lago alpino como el Tegernsee.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Múnich en 3 días: ruta día a día
 
 Tres días es el punto justo: dos para la ciudad y uno para una excursión. Con dos, te sale un buen fin de semana, aunque con prisas. Con cuatro o cinco puedes sumar Neuschwanstein, Salzburgo y Dachau sin correr.
 
-- **Día 1:** Marienplatz, Frauenkirche, Viktualienmarkt, Residenz y paseo hasta el Hofgarten. Cena en una cervecería tradicional.
+**Itinerario de 3 días en Múnich**
 
-- **Día 2:** mañana de museos en Maxvorstadt, comida ligera por la zona, tarde en el Englischer Garten con el Eisbach y cena en Haidhausen o Glockenbach.
-
-- **Día 3:** excursión a Neuschwanstein, o Nymphenburg y Olympiapark si prefieres quedarte en la ciudad.
+| Día | Plan |
+|---|---|
+| Día 1 | Marienplatz, Frauenkirche, Viktualienmarkt, Residenz y paseo hasta el Hofgarten. Cena en una cervecería tradicional. |
+| Día 2 | Mañana de museos en Maxvorstadt, comida ligera por la zona, tarde en el Englischer Garten con el Eisbach y cena en Haidhausen o Glockenbach. |
+| Día 3 | Excursión a Neuschwanstein, o Nymphenburg y Olympiapark si prefieres quedarte en la ciudad. |
 
 ## Cuándo ir
 

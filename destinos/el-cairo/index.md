@@ -39,17 +39,18 @@ Dar una vuelta en faluca por el Nilo, de noche y desde Garden City o la Corniche
 
 Si quieres algo diferente, una visita guiada a la Ciudad de los Muertos, el cementerio habitado de Qarafa, enseña una cara muy real de la ciudad, siempre con un guía local de confianza.
 
-## Cuántos días y ruta sugerida
+## Qué ver en El Cairo en 4 días: ruta día a día
 
 Cuatro días es una cifra razonable. Con tres vas con prisa y con cinco ya puedes añadir una escapada a Alejandría o dedicar más tiempo a Saqqara.
 
-- **Día 1:** pirámides de Guiza a primera hora y Gran Museo Egipcio por la tarde.
+**Itinerario de 4 días en El Cairo**
 
-- **Día 2:** Cairo Islámico. Ciudadela por la mañana, Ibn Tulun, Al-Muizz y Khan el-Khalili al atardecer.
-
-- **Día 3:** Museo de Tahrir por la mañana, comida en Downtown y paseo en faluca al caer el día.
-
-- **Día 4:** excursión a Saqqara y Dahshur, o Cairo Copto y Museo de la Civilización Egipcia.
+| Día | Plan |
+|---|---|
+| Día 1 | Pirámides de Guiza a primera hora y Gran Museo Egipcio por la tarde. |
+| Día 2 | Cairo Islámico. Ciudadela por la mañana, Ibn Tulun, Al-Muizz y Khan el-Khalili al atardecer. |
+| Día 3 | Museo de Tahrir por la mañana, comida en Downtown y paseo en faluca al caer el día. |
+| Día 4 | Excursión a Saqqara y Dahshur, o Cairo Copto y Museo de la Civilización Egipcia. |
 
 ## Cuándo ir: clima y temporadas
 

@@ -37,19 +37,19 @@ Haz una ruta de senderismo corta: Runyon Canyon es la más famosa y la más conc
 
 Si te interesa el cine, hay visitas guiadas a estudios como Warner Bros. o Paramount. Reserva con antelación. Para una tarde distinta, los mercadillos de Melrose y de Rose Bowl (el segundo, el segundo domingo de cada mes) dan para curiosear sin gastar mucho.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Los Ángeles en 5 días: ruta día a día
 
 Con tres días ves lo básico y lo ves con prisa. Cinco es el número razonable. Una semana te permite añadir Pasadena, Joshua Tree o San Diego.
 
-- **Día 1:** Santa Monica, Venice y atardecer en la playa.
+**Itinerario de 5 días en Los Ángeles**
 
-- **Día 2:** Getty Center por la mañana y Malibu por la tarde.
-
-- **Día 3:** Downtown, Grand Central Market, Broad, Little Tokyo y Olvera Street.
-
-- **Día 4:** Hollywood, Griffith Park y el Observatorio al atardecer.
-
-- **Día 5:** Echo Park, Silver Lake y compras o cena en Koreatown.
+| Día | Plan |
+|---|---|
+| Día 1 | Santa Monica, Venice y atardecer en la playa. |
+| Día 2 | Getty Center por la mañana y Malibu por la tarde. |
+| Día 3 | Downtown, Grand Central Market, Broad, Little Tokyo y Olvera Street. |
+| Día 4 | Hollywood, Griffith Park y el Observatorio al atardecer. |
+| Día 5 | Echo Park, Silver Lake y compras o cena en Koreatown. |
 
 Agrupa por zonas. Cruzar la ciudad dos veces en un día en hora punta te puede costar más de una hora cada vez.
 

@@ -97,21 +97,14 @@ Shanghai is easy to enjoy on a small budget, because many of its best sights cos
 
 ## Shanghai itinerary: 4 days
 
-### Day 1: The Bund, Yu Garden and Pudong
+**4-day itinerary for Shanghai**
 
-**Morning:** Start at Yu Garden as it opens, then walk 20 minutes north to the Bund. **Afternoon:** Dumplings for lunch, then the ¥2 ferry across to Pudong, the Shanghai Tower and the Lujiazui Skywalk. **Evening:** Stay on the Pudong promenade for the Bund lights, then take the ferry or metro Line 2 back for a drink on a Bund rooftop.
-
-### Day 2: People's Square and the French Concession
-
-**Morning:** Shanghai Museum at People's Square (book ahead). **Afternoon:** Metro to Xintiandi, walk to Tianzifang, then keep going west on foot along Fuxing Road, Anfu Road and Wukang Road. **Evening:** Dinner and a cocktail around Yongkang Road or Julu Road, then a foot massage.
-
-### Day 3: Temples, art and the West Bund
-
-**Morning:** Jade Buddha Temple with vegetarian noodles, then a short taxi to M50. **Afternoon:** Jing'an Temple, then metro Line 11 to the West Bund for the galleries and a riverside bike ride. **Evening:** Back in Jing'an for Shanghainese food (hong shao rou is non-negotiable).
-
-### Day 4: Suzhou
-
-**Morning:** High-speed train from Shanghai Station or Hongqiao to Suzhou (about 30 minutes). Visit the Humble Administrator's Garden early. **Afternoon:** Pingjiang Road for canals and snacks, then the Master of the Nets Garden. **Evening:** Train back and a last late dinner of shengjian bao.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · The Bund, Yu Garden and Pudong | Start at Yu Garden as it opens, then walk 20 minutes north to the Bund. | Dumplings for lunch, then the ¥2 ferry across to Pudong, the Shanghai Tower and the Lujiazui Skywalk. | Stay on the Pudong promenade for the Bund lights, then take the ferry or metro Line 2 back for a drink on a Bund rooftop. |
+| Day 2 · People's Square and the French Concession | Shanghai Museum at People's Square (book ahead). | Metro to Xintiandi, walk to Tianzifang, then keep going west on foot along Fuxing Road, Anfu Road and Wukang Road. | Dinner and a cocktail around Yongkang Road or Julu Road, then a foot massage. |
+| Day 3 · Temples, art and the West Bund | Jade Buddha Temple with vegetarian noodles, then a short taxi to M50. | Jing'an Temple, then metro Line 11 to the West Bund for the galleries and a riverside bike ride. | Back in Jing'an for Shanghainese food (hong shao rou is non-negotiable). |
+| Day 4 · Suzhou | High-speed train from Shanghai Station or Hongqiao to Suzhou (about 30 minutes). Visit the Humble Administrator's Garden early. | Pingjiang Road for canals and snacks, then the Master of the Nets Garden. | Train back and a last late dinner of shengjian bao. |
 
 ## What is overrated (and what to do instead)
 
@@ -175,11 +168,13 @@ The metro is excellent, cheap (¥3-10 per ride) and signposted in English. A one
 
 ## How much a trip to Shanghai costs
 
-- **Shoestring: €45-65 a day.** Hostel bed (€20-35), street food and noodle shops (€10-15), metro and free sights (€5).
+**Rough daily budget**
 
-- **Mid-range: €120-200 a day.** A good hotel in the French Concession or Jing'an (€80-130), sit-down meals and a cocktail (€35-50), one paid attraction plus taxis (€20-30).
-
-- **Comfortable: €250+ a day.** A Bund-view hotel, tasting menus and rooftop bars add up fast.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €45-65 a day | Hostel bed (€20-35), street food and noodle shops (€10-15), metro and free sights (€5). |
+| Mid-range | €120-200 a day | A good hotel in the French Concession or Jing'an (€80-130), sit-down meals and a cocktail (€35-50), one paid attraction plus taxis (€20-30). |
+| Comfortable | €250+ a day | A Bund-view hotel, tasting menus and rooftop bars add up fast. |
 
 ## Day trips from Shanghai
 

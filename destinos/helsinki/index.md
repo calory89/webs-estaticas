@@ -37,15 +37,17 @@ Si la ciudad se te queda corta, una excursión de un día a **Tallin** en ferry 
 
 Para una pausa barata, pide un **café con korvapuusti** (rollo de canela y cardamomo) en alguna de las cafeterías clásicas. Fazer Café, en el centro, es de manual.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Helsinki en 3 días: ruta día a día
 
 Tres días bastan para verlo con calma. Con dos, vas justo; con cuatro, puedes añadir Tallin.
 
-- **Día 1:** estación central, Oodi, Kiasma, Plaza del Senado y Catedral, paseo por Esplanadi y cena en el mercado o en Kallio.
+**Itinerario de 3 días en Helsinki**
 
-- **Día 2:** ferry a Suomenlinna por la mañana, comida allí o de vuelta en Kauppatori, tarde en Katajanokka con Uspenski y sauna al final del día.
-
-- **Día 3:** Iglesia de la Roca, Sibelius, Distrito del Diseño y una tarde sin plan en Kallio o en el parque de Töölö.
+| Día | Plan |
+|---|---|
+| Día 1 | Estación central, Oodi, Kiasma, Plaza del Senado y Catedral, paseo por Esplanadi y cena en el mercado o en Kallio. |
+| Día 2 | Ferry a Suomenlinna por la mañana, comida allí o de vuelta en Kauppatori, tarde en Katajanokka con Uspenski y sauna al final del día. |
+| Día 3 | Iglesia de la Roca, Sibelius, Distrito del Diseño y una tarde sin plan en Kallio o en el parque de Töölö. |
 
 ## Cuándo ir: clima y temporadas
 

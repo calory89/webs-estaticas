@@ -91,31 +91,15 @@ Buena parte de lo mejor de Sarajevo no cuesta nada, y lo que se paga sale barato
 
 - Un free tour por el centro, dejando propina al final.
 
-## Itinerario: Sarajevo en 3 días
+## Qué ver en Sarajevo en 3 días: ruta día a día
 
-### Día 1: el bazar y la ciudad austrohúngara
+**Itinerario de 3 días en Sarajevo**
 
-**Mañana:** Baščaršija temprano, Sebilj, mezquita de Gazi Husrev-beg y la calle Kazandžiluk. Café bosnio en cualquier terraza.
-
-**Tarde:** ćevapi para comer, luego Ferhadija hasta la línea del encuentro de culturas, la catedral y la Galería 11/07/95. Después, Puente Latino y su museo.
-
-**Noche:** Vijećnica vista desde el río y cena en Inat Kuća o en el bazar.
-
-### Día 2: la guerra y los miradores
-
-**Mañana:** Túnel de la Esperanza en taxi o tour (lo más práctico) y vuelta al centro.
-
-**Tarde:** Casa Svrzo y Museo de la Infancia en Guerra, en el mismo barrio.
-
-**Noche:** subida a la Fortaleza Amarilla para el atardecer y cerveza en la Sarajevska Pivara.
-
-### Día 3: montaña y museos
-
-**Mañana:** teleférico del Trebević y paseo hasta la pista de bobsleigh.
-
-**Tarde:** Vijećnica por dentro o, si te apetece más, el Museo Nacional en tranvía. Alternativa: Vrelo Bosne si hace buen tiempo.
-
-**Noche:** burek de despedida o cena de cocina bosnia en el centro.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · El bazar y la ciudad austrohúngara | Baščaršija temprano, Sebilj, mezquita de Gazi Husrev-beg y la calle Kazandžiluk. Café bosnio en cualquier terraza. | Ćevapi para comer, luego Ferhadija hasta la línea del encuentro de culturas, la catedral y la Galería 11/07/95. Después, Puente Latino y su museo. | Vijećnica vista desde el río y cena en Inat Kuća o en el bazar. |
+| Día 2 · La guerra y los miradores | Túnel de la Esperanza en taxi o tour (lo más práctico) y vuelta al centro. | Casa Svrzo y Museo de la Infancia en Guerra, en el mismo barrio. | Subida a la Fortaleza Amarilla para el atardecer y cerveza en la Sarajevska Pivara. |
+| Día 3 · Montaña y museos | Teleférico del Trebević y paseo hasta la pista de bobsleigh. | Vijećnica por dentro o, si te apetece más, el Museo Nacional en tranvía. Alternativa: Vrelo Bosne si hace buen tiempo. | Burek de despedida o cena de cocina bosnia en el centro. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 

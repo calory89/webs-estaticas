@@ -35,19 +35,19 @@ Lo más típico es el avistamiento de cetáceos: desde abril hasta octubre salen
 
 Los senderos señalizados son una maravilla. La ruta circular de Sete Cidades y la bajada a Salto do Cabrito son asequibles. Otro plan que gusta es la Caldeira Velha, una poza termal entre helechos, o la Ponta da Ferraria, donde el agua caliente brota junto al mar y solo se disfruta con la marea adecuada. Si te apetece algo más intenso, hay barranquismo, buceo y surf en la costa norte.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Azores en 7 días: ruta día a día
 
 Con cuatro días ves lo esencial de São Miguel. Con siete, puedes añadir Pico y Faial, que es lo que yo haría. Menos de cuatro se queda corto, porque el tiempo cambia y conviene tener margen.
 
-- **Días 1 y 2:** Ponta Delgada, Sete Cidades y Ponta da Ferraria al atardecer.
+**Itinerario de 7 días en Azores**
 
-- **Día 3:** Lagoa do Fogo, Ribeira Grande y Gorreana por la costa norte.
-
-- **Día 4:** Furnas con cozido, Terra Nostra y Caldeira Velha.
-
-- **Día 5:** vuelo a Pico o Faial y paseo por Horta.
-
-- **Días 6 y 7:** Capelinhos, ferry corto Horta–Madalena, viñedos de Pico y, si el clima acompaña, la subida a la montaña.
+| Día | Plan |
+|---|---|
+| Días 1-2 | Ponta Delgada, Sete Cidades y Ponta da Ferraria al atardecer. |
+| Día 3 | Lagoa do Fogo, Ribeira Grande y Gorreana por la costa norte. |
+| Día 4 | Furnas con cozido, Terra Nostra y Caldeira Velha. |
+| Día 5 | Vuelo a Pico o Faial y paseo por Horta. |
+| Días 6-7 | Capelinhos, ferry corto Horta–Madalena, viñedos de Pico y, si el clima acompaña, la subida a la montaña. |
 
 ## Cuándo ir: clima y temporadas
 
@@ -87,11 +87,13 @@ Un detalle práctico: en las Azores hay una hora menos que en Lisboa, es decir, 
 
 ## Presupuesto orientativo por día
 
-- **Ajustado (60-80 euros):** hostel o habitación sencilla, comidas en tascas y transporte con excursiones guiadas puntuales.
+**Presupuesto orientativo por día**
 
-- **Medio (100-150 euros):** guesthouse con buen desayuno, coche de alquiler compartido, restaurantes de producto local y alguna actividad.
-
-- **Cómodo (más de 200 euros):** hotel con spa, coche propio y salidas en barco o con guía.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | 60-80 euros | Hostel o habitación sencilla, comidas en tascas y transporte con excursiones guiadas puntuales. |
+| Medio | 100-150 euros | Guesthouse con buen desayuno, coche de alquiler compartido, restaurantes de producto local y alguna actividad. |
+| Cómodo | más de 200 euros | Hotel con spa, coche propio y salidas en barco o con guía. |
 
 Los vuelos entre islas y el alquiler de coche son lo que más sube la factura, sobre todo en verano. Mira con tiempo.
 

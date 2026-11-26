@@ -55,17 +55,18 @@ Si viajas entre octubre y abril, Global Village mezcla pabellones de decenas de 
 
 También puedes recorrer la costa en el Dubai Water Taxi o en un paseo en dhow al atardecer por el Creek o la Marina. Es un plan turístico, pero sirve para ver la ciudad desde el agua con otra perspectiva.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Dubái en 4 días: ruta día a día
 
 Cuatro días es un buen equilibrio. Con tres ves lo esencial; con cinco puedes añadir un día de playa o una excursión a Abu Dabi, que está a una hora y media aproximadamente por carretera.
 
-- **Día 1:** Al Fahidi, museo, abra por el Creek y zocos de Deira. Cena en Bur Dubái.
+**Itinerario de 4 días en Dubái**
 
-- **Día 2:** Mezquita de Jumeirah por la mañana, Dubai Frame o Museo del Futuro, y por la tarde Downtown con Burj Khalifa y fuente.
-
-- **Día 3:** Playa por la mañana en Kite Beach o JBR, descanso en las horas de calor y safari por el desierto por la tarde.
-
-- **Día 4:** Marina y Palm Jumeirah si te interesa, o excursión a Abu Dabi para ver la Gran Mezquita Sheikh Zayed.
+| Día | Plan |
+|---|---|
+| Día 1 | Al Fahidi, museo, abra por el Creek y zocos de Deira. Cena en Bur Dubái. |
+| Día 2 | Mezquita de Jumeirah por la mañana, Dubai Frame o Museo del Futuro, y por la tarde Downtown con Burj Khalifa y fuente. |
+| Día 3 | Playa por la mañana en Kite Beach o JBR, descanso en las horas de calor y safari por el desierto por la tarde. |
+| Día 4 | Marina y Palm Jumeirah si te interesa, o excursión a Abu Dabi para ver la Gran Mezquita Sheikh Zayed. |
 
 ## Cuándo ir: clima y temporadas
 

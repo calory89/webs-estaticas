@@ -95,17 +95,13 @@ Toronto is expensive, but some of its best moments cost nothing:
 
 ## Toronto itinerary: 3 days
 
-### Day 1: Downtown and the waterfront
+**3-day itinerary for Toronto**
 
-**Morning:** Start at St Lawrence Market for a peameal bacon sandwich, then walk five minutes to the Distillery District. **Afternoon:** Walk west along Front Street to Union Station and the Hockey Hall of Fame, or skip straight to the waterfront at Harbourfront. **Evening:** Go up the CN Tower before sunset, then have dinner in the Entertainment District or on King West.
-
-### Day 2: Neighbourhoods and food
-
-**Morning:** Visit the AGO, then walk west to Kensington Market and Chinatown for lunch. **Afternoon:** Walk Queen West and Graffiti Alley, then continue to Trinity Bellwoods Park. **Evening:** Have dinner and drinks on Ossington or in Little Portugal on Dundas West.
-
-### Day 3: Islands, uptown and the east
-
-**Morning:** Take the ferry to Ward's Island, walk or bike to Centre Island, and come back from Hanlan's. In winter, swap this for the ROM. **Afternoon:** Take Line 1 north to Dupont for Casa Loma, or go to Yorkville for window shopping. **Evening:** Take Line 2 east to the Danforth for Greek food, then catch the sunset from Riverdale Park East.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Downtown and the waterfront | Start at St Lawrence Market for a peameal bacon sandwich, then walk five minutes to the Distillery District. | Walk west along Front Street to Union Station and the Hockey Hall of Fame, or skip straight to the waterfront at Harbourfront. | Go up the CN Tower before sunset, then have dinner in the Entertainment District or on King West. |
+| Day 2 · Neighbourhoods and food | Visit the AGO, then walk west to Kensington Market and Chinatown for lunch. | Walk Queen West and Graffiti Alley, then continue to Trinity Bellwoods Park. | Have dinner and drinks on Ossington or in Little Portugal on Dundas West. |
+| Day 3 · Islands, uptown and the east | Take the ferry to Ward's Island, walk or bike to Centre Island, and come back from Hanlan's. In winter, swap this for the ROM. | Take Line 1 north to Dupont for Casa Loma, or go to Yorkville for window shopping. | Take Line 2 east to the Danforth for Greek food, then catch the sunset from Riverdale Park East. |
 
 ## What is overrated (and what to do instead)
 
@@ -167,9 +163,12 @@ In the city, the **TTC** runs the subway, streetcars and buses. Tap your credit 
 
 ## How much a trip to Toronto costs
 
-- **Shoestring: CAD 110-150 (€75-100) per day.** This covers a hostel dorm, market lunches and patties, transit, and mostly free sights.
+**Rough daily budget**
 
-- **Mid-range: CAD 300-450 (€200-300) per day.** This covers a 3-star hotel or private room, two restaurant meals, one or two paid attractions and the occasional taxi.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | CAD 110-150 (€75-100) per day | This covers a hostel dorm, market lunches and patties, transit, and mostly free sights. |
+| Mid-range | CAD 300-450 (€200-300) per day | This covers a 3-star hotel or private room, two restaurant meals, one or two paid attractions and the occasional taxi. |
 
 - **Extras:** Budget CAD 45-50 (€30-34) for the CN Tower, CAD 30 (€20) for a museum, and CAD 10-14 (€7-10) for a beer in a bar.
 

@@ -37,19 +37,19 @@ El domingo por la tarde, Lard Yai (Walking Street) cierra Thalang Road al tráfi
 
 Si quieres ver animales, huye de los paseos sobre elefantes y de los espectáculos. Hay santuarios que funcionan sin montar a nadie, como Phuket Elephant Sanctuary. Reserva con antelación y revisa opiniones recientes. Para el agua, el snorkel y el buceo en las islas Racha y las Similan (que cierran en temporada de lluvias) son lo más serio. Si te va el deporte, hay gimnasios de muay thai en la zona de Chalong donde puedes probar una clase suelta.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Phuket en 5 días: ruta día a día
 
 Cinco días es un buen número. Con tres ves lo básico y con siete empiezas a repetir playa.
 
-- **Día 1:** llegada, playa cercana a tu alojamiento, cena sencilla y cama temprana si vienes de un vuelo largo.
+**Itinerario de 5 días en Phuket**
 
-- **Día 2:** Phuket Town. Paseo por el casco antiguo, Thai Hua Museum, comida local y, si es domingo, Lard Yai.
-
-- **Día 3:** sur de la isla. Wat Chalong por la mañana, Big Buddha, tarde en Nai Harn y atardecer en Promthep.
-
-- **Día 4:** excursión a Phang Nga o a Phi Phi. Elige una sola, que a las dos no llegas con calma.
-
-- **Día 5:** día libre en la playa que más te haya gustado, masaje y cena de marisco en Rawai.
+| Día | Plan |
+|---|---|
+| Día 1 | Llegada, playa cercana a tu alojamiento, cena sencilla y cama temprana si vienes de un vuelo largo. |
+| Día 2 | Phuket Town. Paseo por el casco antiguo, Thai Hua Museum, comida local y, si es domingo, Lard Yai. |
+| Día 3 | Sur de la isla. Wat Chalong por la mañana, Big Buddha, tarde en Nai Harn y atardecer en Promthep. |
+| Día 4 | Excursión a Phang Nga o a Phi Phi. Elige una sola, que a las dos no llegas con calma. |
+| Día 5 | Día libre en la playa que más te haya gustado, masaje y cena de marisco en Rawai. |
 
 ## Cuándo ir: clima y temporadas
 
@@ -87,11 +87,13 @@ Dentro de la isla no hay metro ni tren. Los tuk-tuks son más caros que un taxi 
 
 ## Presupuesto orientativo por día
 
-- **Mochilero (35-50 €):** dormitorio o habitación sencilla, comida callejera, transporte local y alguna entrada.
+**Presupuesto orientativo por día**
 
-- **Medio (70-110 €):** hotel con piscina, restaurantes normales, taxis o Grab, una excursión.
-
-- **Cómodo (150 € o más):** resort en la costa oeste, cenas con vistas, excursiones privadas y barco rápido a las islas.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Mochilero | 35-50 € | Dormitorio o habitación sencilla, comida callejera, transporte local y alguna entrada. |
+| Medio | 70-110 € | Hotel con piscina, restaurantes normales, taxis o Grab, una excursión. |
+| Cómodo | 150 € o más | Resort en la costa oeste, cenas con vistas, excursiones privadas y barco rápido a las islas. |
 
 Las excursiones de día completo a Phang Nga o Phi Phi suelen costar entre 30 y 60 €, con comida y entradas a veces aparte. Una cerveza ronda los 2-3 €, y los masajes baratos, unos 8-12 € por hora.
 

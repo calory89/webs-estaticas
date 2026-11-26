@@ -35,17 +35,18 @@ Una clase de cocina balinesa en Ubud suele ser mejor plan de lo que parece, porq
 
 Al atardecer, los beach clubs de Uluwatu y Canggu son caros para los estándares de la isla. Una cerveza Bintang en una playa cualquiera con un warung al lado sale más barata y sienta igual de bien.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Bali en 10 días: ruta día a día
 
 Con una semana vas justo y tendrás que elegir. Con diez días la isla se disfruta sin correr. Si tienes dos semanas, puedes añadir Sidemen, Munduk o Amed.
 
-- **Días 1-4, Ubud:** arrozales, Campuhan, Tirta Empul y Monte Batur. Suele tocar una noche de ajuste horario.
+**Itinerario de 10 días en Bali**
 
-- **Día 5:** traslado hacia Sanur y barco a Nusa Penida.
-
-- **Días 6-7, Nusa Penida:** un día de costa oeste (Kelingking, Angel's Billabong) y otro de este o snorkel.
-
-- **Días 8-10, Uluwatu o Canggu:** playa, surf, templo al atardecer. Uluwatu para acantilados y calma; Canggu si quieres más ambiente.
+| Día | Plan |
+|---|---|
+| Días 1-4 | Ubud. Arrozales, Campuhan, Tirta Empul y Monte Batur. Suele tocar una noche de ajuste horario. |
+| Día 5 | Traslado hacia Sanur y barco a Nusa Penida. |
+| Días 6-7 | Nusa Penida. Un día de costa oeste (Kelingking, Angel's Billabong) y otro de este o snorkel. |
+| Días 8-10 | Uluwatu o Canggu. Playa, surf, templo al atardecer. Uluwatu para acantilados y calma; Canggu si quieres más ambiente. |
 
 ## Cuándo ir: clima y temporadas
 

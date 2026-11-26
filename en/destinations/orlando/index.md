@@ -95,25 +95,15 @@ Orlando is expensive, but there's more free stuff than you'd guess.
 
 ## Orlando itinerary: 5 days
 
-### Day 1: Magic Kingdom
+**5-day itinerary for Orlando**
 
-**Morning:** be at the gates before opening, ride Space Mountain, Seven Dwarfs Mine Train or TRON first. **Afternoon:** head back to the hotel for a pool break when queues peak and the heat is at its worst. **Evening:** come back for the parade and fireworks.
-
-### Day 2: EPCOT and Disney Springs
-
-**Morning:** Cosmic Rewind and Test Track while it's quiet. **Afternoon:** walk the World Showcase, snacking as you go (Mexico, Japan and France are the highlights). **Evening:** dinner at Disney Springs, or stay for EPCOT's nighttime show.
-
-### Day 3: Real Orlando
-
-**Morning:** Leu Gardens, then lunch in Mills 50 (pho or banh mi). **Afternoon:** drive ten minutes north to Winter Park: Scenic Boat Tour, Morse Museum, Park Avenue. **Evening:** Lake Eola at sunset, then drinks downtown on Wall Street or in the Milk District.
-
-### Day 4: Universal
-
-**Morning:** Islands of Adventure first for VelociCoaster and Hagrid's. **Afternoon:** Hogwarts Express to Universal Studios Florida and Diagon Alley. **Evening:** dinner at CityWalk. If Epic Universe matters more to you, swap it in here.
-
-### Day 5: Space or springs
-
-**Morning:** drive east to Kennedy Space Center as it opens. **Afternoon:** Atlantis and the bus tour to the Saturn V. **Evening:** sunset and seafood in Cocoa Beach before driving back. Prefer nature? Spend the day at Wekiwa Springs, or Blue Spring between November and March for manatees.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Magic Kingdom | Be at the gates before opening, ride Space Mountain, Seven Dwarfs Mine Train or TRON first. | Head back to the hotel for a pool break when queues peak and the heat is at its worst. | Come back for the parade and fireworks. |
+| Day 2 · EPCOT and Disney Springs | Cosmic Rewind and Test Track while it's quiet. | Walk the World Showcase, snacking as you go (Mexico, Japan and France are the highlights). | Dinner at Disney Springs, or stay for EPCOT's nighttime show. |
+| Day 3 · Real Orlando | Leu Gardens, then lunch in Mills 50 (pho or banh mi). | Drive ten minutes north to Winter Park: Scenic Boat Tour, Morse Museum, Park Avenue. | Lake Eola at sunset, then drinks downtown on Wall Street or in the Milk District. |
+| Day 4 · Universal | Islands of Adventure first for VelociCoaster and Hagrid's. | Hogwarts Express to Universal Studios Florida and Diagon Alley. | Dinner at CityWalk. If Epic Universe matters more to you, swap it in here. |
+| Day 5 · Space or springs | Drive east to Kennedy Space Center as it opens. | Atlantis and the bus tour to the Saturn V. | Sunset and seafood in Cocoa Beach before driving back. Prefer nature? Spend the day at Wekiwa Springs, or Blue Spring between November and March for manatees. |
 
 ## What is overrated (and what to do instead)
 
@@ -169,9 +159,12 @@ Around the parks, Disney runs free buses, monorail, boats and the Skyliner gondo
 
 Per person per day, not counting flights:
 
-- **Shoestring (€110-160 / $125-185 on non-park days):** shared motel or rental in Kissimmee, cheap food in Mills 50 or the supermarket, state parks and free attractions. Add €130-190 for each theme park day.
+**Rough daily budget**
 
-- **Mid-range (€220-350 / $250-400 on park days):** 3-star hotel near the parks, park ticket, one sit-down meal, car rental split among the group.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €110-160 / $125-185 on non-park days | Shared motel or rental in Kissimmee, cheap food in Mills 50 or the supermarket, state parks and free attractions. Add €130-190 for each theme park day. |
+| Mid-range | €220-350 / $250-400 on park days | 3-star hotel near the parks, park ticket, one sit-down meal, car rental split among the group. |
 
 The big costs are tickets, parking and food inside the parks. Multi-day tickets get cheaper per day, so a 4-day Disney ticket costs much less per day than a single day.
 

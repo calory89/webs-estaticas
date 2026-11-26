@@ -61,17 +61,18 @@ Dense, steep, loud and very photogenic, with murals of Maradona. Go in daylight 
 
 - **Visit Pozzuoli and the Campi Flegrei.** Steaming volcanic ground, Roman ruins and an amphitheatre, with almost no tour groups.
 
-## How many days, and a suggested route
+## Naples itinerary: 4 days, day by day
 
 Three days covers the city well, and four lets you add a day trip without rushing. Two is possible if you skip the museums.
 
-- **Day 1:** Spaccanapoli, Cappella Sansevero, Duomo, Santa Chiara, then pizza on Via dei Tribunali. Finish at Napoli Sotterranea or with an evening walk through the Quartieri Spagnoli.
+**4-day itinerary for Naples**
 
-- **Day 2:** MANN in the morning, then Via Toledo, Galleria Umberto I, Plebiscito and the Royal Palace. Walk to Castel dell'Ovo for sunset.
-
-- **Day 3:** Pompeii or Herculaneum by train. Herculaneum is smaller and better preserved, so choose it if you only have half a day.
-
-- **Day 4 (optional):** Vomero views and the Certosa, or a boat to Procida or Capri.
+| Day | Plan |
+|---|---|
+| Day 1 | Spaccanapoli, Cappella Sansevero, Duomo, Santa Chiara, then pizza on Via dei Tribunali. Finish at Napoli Sotterranea or with an evening walk through the Quartieri Spagnoli. |
+| Day 2 | MANN in the morning, then Via Toledo, Galleria Umberto I, Plebiscito and the Royal Palace. Walk to Castel dell'Ovo for sunset. |
+| Day 3 | Pompeii or Herculaneum by train. Herculaneum is smaller and better preserved, so choose it if you only have half a day. |
+| Day 4 | (optional). Vomero views and the Certosa, or a boat to Procida or Capri. |
 
 ## When to go
 

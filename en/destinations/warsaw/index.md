@@ -37,21 +37,17 @@ Walk or cycle the Vistula boulevards. The west bank is paved and calm, with a lo
 
 If you have an extra day, take the fast train to Kraków (about two and a half hours) or go to Żelazowa Wola, Chopin's birthplace, about 50 km west. Neither is essential, and Warsaw alone can fill four days.
 
-## How many days and a suggested route
+## Warsaw itinerary: 3 days, day by day
 
 Three days works well. Two is possible but tight, and four lets you slow down.
 
-### Day 1: Old Town and the Royal Route
+**3-day itinerary for Warsaw**
 
-Start in the Old Town before the tour groups arrive, visit the Royal Castle, then walk down Krakowskie Předmieście and Nowy Świat. Finish with dinner in Powiśle.
-
-### Day 2: History and the centre
-
-Spend the morning at POLIN and the Ghetto Heroes monument, then head to the Palace of Culture for the view. In the afternoon, visit the Warsaw Rising Museum, then have a milk-bar dinner nearby.
-
-### Day 3: Parks and Praga
-
-Take a slow morning in Łazienki, or go to Wilanów if you prefer palaces. Then cross the river to Praga for the Koneser Centre and an evening on Ząbkowska.
+| Day | Plan |
+|---|---|
+| Day 1 | Old Town and the Royal Route. Start in the Old Town before the tour groups arrive, visit the Royal Castle, then walk down Krakowskie Předmieście and Nowy Świat. Finish with dinner in Powiśle. |
+| Day 2 | History and the centre. Spend the morning at POLIN and the Ghetto Heroes monument, then head to the Palace of Culture for the view. In the afternoon, visit the Warsaw Rising Museum, then have a milk-bar dinner nearby. |
+| Day 3 | Parks and Praga. Take a slow morning in Łazienki, or go to Wilanów if you prefer palaces. Then cross the river to Praga for the Koneser Centre and an evening on Ząbkowska. |
 
 ## When to go
 

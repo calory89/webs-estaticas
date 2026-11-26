@@ -59,15 +59,17 @@ A wavy, colourful apartment block in Landstraße. You can only admire the outsid
 
 - **Cycle or stroll the Donauinsel.** A long, narrow island in the Danube with swimming spots in summer.
 
-## How many days and a suggested route
+## Vienna itinerary: 3 days, day by day
 
 Three days is the sweet spot. Two will feel rushed if you want museums, and four starts to suit day trips to the Wachau valley.
 
-**Day 1 (old centre):** Stephansdom, Graben, Hofburg, a long coffee break, then a tram loop around the Ringstrasse. Finish with dinner in a Beisl (a traditional tavern) near Stephansplatz.
+**3-day itinerary for Vienna**
 
-**Day 2 (palaces):** Schönbrunn early, then Naschmarkt for a quick bite, Karlskirche, and the Belvedere in the afternoon light.
-
-**Day 3 (museums and play):** Kunsthistorisches Museum in the morning, a wander through the MuseumsQuartier courtyard, then the Prater at sunset. A Heuriger evening fits here if you have energy.
+| Day | Plan |
+|---|---|
+| Day 1 | (old centre). Stephansdom, Graben, Hofburg, a long coffee break, then a tram loop around the Ringstrasse. Finish with dinner in a Beisl (a traditional tavern) near Stephansplatz. |
+| Day 2 | (palaces). Schönbrunn early, then Naschmarkt for a quick bite, Karlskirche, and the Belvedere in the afternoon light. |
+| Day 3 | (museums and play). Kunsthistorisches Museum in the morning, a wander through the MuseumsQuartier courtyard, then the Prater at sunset. A Heuriger evening fits here if you have energy. |
 
 ## When to go
 

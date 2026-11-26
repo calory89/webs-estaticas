@@ -35,15 +35,17 @@ Pasea por los Bulwary Wiślane, los muelles del Vístula, con bares al aire libr
 
 Prueba también la tarde de bares en Powiśle, o la zona de la plaza Zbawiciela, donde hay cafés, cerveza artesana y mucho joven. Si tienes un día extra, el pueblo de Żelazowa Wola, donde nació Chopin, queda a una hora en coche, y se puede combinar con un recital de piano en el jardín en verano. Los museos suelen tener un día de entrada gratuita a la semana, pero cambia, así que mira las webs antes.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Varsovia en 3 días: ruta día a día
 
 Con dos días ves lo esencial. Con tres vas más relajado y te da tiempo a Praga o a Łazienki sin correr. Cuatro solo si quieres excursión.
 
-- **Día 1:** casco antiguo temprano, Plaza del Castillo, Barbacana y paseo por la Ruta Real hasta Nowy Świat. Cena por Powiśle.
+**Itinerario de 3 días en Varsovia**
 
-- **Día 2:** Museo del Levantamiento por la mañana, comida en un bar de leche, POLIN por la tarde y mirador del Palacio de la Cultura al final.
-
-- **Día 3:** Łazienki y, después, Praga: Koneser, patios, algún mural y cena allí.
+| Día | Plan |
+|---|---|
+| Día 1 | Casco antiguo temprano, Plaza del Castillo, Barbacana y paseo por la Ruta Real hasta Nowy Świat. Cena por Powiśle. |
+| Día 2 | Museo del Levantamiento por la mañana, comida en un bar de leche, POLIN por la tarde y mirador del Palacio de la Cultura al final. |
+| Día 3 | Łazienki y, después, Praga: Koneser, patios, algún mural y cena allí. |
 
 ## Cuándo ir a Varsovia
 
@@ -81,11 +83,13 @@ La moneda es el złoty, no el euro. Dentro de la ciudad, metro, tranvía y autob
 
 ## Presupuesto orientativo por día
 
-- **Ajustado (40-55 euros):** dormitorio compartido, comida en bares de leche, transporte público y museos gratuitos o baratos.
+**Presupuesto orientativo por día**
 
-- **Medio (70-100 euros):** hotel o apartamento céntrico, restaurantes sencillos, una o dos entradas a museos y alguna cerveza.
-
-- **Cómodo (120 euros o más):** buen hotel, cenas en restaurantes de nivel y taxis o apps para moverte.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | 40-55 euros | Dormitorio compartido, comida en bares de leche, transporte público y museos gratuitos o baratos. |
+| Medio | 70-100 euros | Hotel o apartamento céntrico, restaurantes sencillos, una o dos entradas a museos y alguna cerveza. |
+| Cómodo | 120 euros o más | Buen hotel, cenas en restaurantes de nivel y taxis o apps para moverte. |
 
 Cifras generales, pueden variar según temporada, tipo de cambio y fechas.
 

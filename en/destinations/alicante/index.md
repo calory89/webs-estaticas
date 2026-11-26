@@ -99,29 +99,13 @@ For cheap eating, buy bread, salted tuna and tomatoes at the market and take the
 
 ## Alicante itinerary: 3 days
 
-### Day 1: Castle, old town and Explanada
+**3-day itinerary for Alicante**
 
-**Morning:** take the lift up to Santa Bárbara early, before the heat and the tour groups. Walk down through Santa Cruz into El Barrio, stopping at the Basílica de Santa María and MACA.
-
-**Afternoon:** long lunch around the Concatedral or Calle Castaños, then a swim at Postiguet or an hour in the MARQ if it is too hot.
-
-**Evening:** walk the Explanada and the marina for sunset, tapas on Calle Castaños, then drinks in El Barrio after 11pm.
-
-### Day 2: Market and San Juan beach
-
-**Morning:** Mercado Central for coffee and a browse, then the tram from Mercado or Luceros to Playa de San Juan.
-
-**Afternoon:** beach, then rice for lunch at one of the restaurants on the San Juan promenade (book at weekends).
-
-**Evening:** tram back, climb Castillo de San Fernando for the late light, dinner around the Rambla.
-
-### Day 3: Tabarca (or a day trip)
-
-**Morning:** first boat to Tabarca from the port. Walk the village walls and swim before the day-trippers arrive.
-
-**Afternoon:** caldero (the island's fish and rice dish) for lunch, then back to Alicante mid-afternoon. If the sea is rough or you have done boats before, go to Elche instead.
-
-**Evening:** horchata or ice cream on the Explanada, a last dinner in El Barrio.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Castle, old town and Explanada | Take the lift up to Santa Bárbara early, before the heat and the tour groups. Walk down through Santa Cruz into El Barrio, stopping at the Basílica de Santa María and MACA. | Long lunch around the Concatedral or Calle Castaños, then a swim at Postiguet or an hour in the MARQ if it is too hot. | Walk the Explanada and the marina for sunset, tapas on Calle Castaños, then drinks in El Barrio after 11pm. |
+| Day 2 · Market and San Juan beach | Mercado Central for coffee and a browse, then the tram from Mercado or Luceros to Playa de San Juan. | Beach, then rice for lunch at one of the restaurants on the San Juan promenade (book at weekends). | Tram back, climb Castillo de San Fernando for the late light, dinner around the Rambla. |
+| Day 3 · Tabarca (or a day trip) | First boat to Tabarca from the port. Walk the village walls and swim before the day-trippers arrive. | Caldero (the island's fish and rice dish) for lunch, then back to Alicante mid-afternoon. If the sea is rough or you have done boats before, go to Elche instead. | Horchata or ice cream on the Explanada, a last dinner in El Barrio. |
 
 ## What is overrated (and what to do instead)
 
@@ -189,9 +173,12 @@ The centre is walkable. For San Juan, Villajoyosa and Benidorm, use the **TRAM d
 
 ## How much a trip to Alicante costs
 
-- **Shoestring: €50-70 per day.** Hostel or cheap room (€25-40 split), menú del día lunch, market picnic, free castles and beaches, tram rides.
+**Rough daily budget**
 
-- **Mid-range: €110-170 per day.** Central hotel double (€80-130 per person halved), rice lunch, tapas dinner, Tabarca boat, a museum or two.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €50-70 per day | Hostel or cheap room (€25-40 split), menú del día lunch, market picnic, free castles and beaches, tram rides. |
+| Mid-range | €110-170 per day | Central hotel double (€80-130 per person halved), rice lunch, tapas dinner, Tabarca boat, a museum or two. |
 
 - **Extras:** Tabarca boat €25, MARQ €3, castle lift a few euros, airport bus about €4.
 

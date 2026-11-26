@@ -89,29 +89,13 @@ The Fête des Lumières (around 8 December) is free. It fills the city with ligh
 
 ## Lyon itinerary: 3 days
 
-### Day 1: Vieux Lyon and Fourvière
+**3-day itinerary for Lyon**
 
-**Morning:** Start at Cathédrale Saint-Jean, then walk through Saint-Jean and Saint-Paul and duck into the open traboules. Take the funicular up to Fourvière.
-
-**Afternoon:** See the basilica and the view, then the Roman theatres and the Lugdunum museum. Walk down via the Jardin du Rosaire, then cross the Saône footbridge to the Presqu'île.
-
-**Evening:** Have an aperitif on a terrace near Place des Jacobins, followed by dinner at a bouchon away from rue Saint-Jean.
-
-### Day 2: Presqu'île and Croix-Rousse
-
-**Morning:** Start at Place Bellecour, then walk rue de la République and rue Victor Hugo to Place des Terreaux. Spend late morning at the Musée des Beaux-Arts.
-
-**Afternoon:** Climb the slopes of Croix-Rousse through the Cour des Voraces, visit the Maison des Canuts and see the Mur des Canuts. Walk back down for the views.
-
-**Evening:** Take a wine bar crawl in the pentes, which are full of small natural-wine spots, then dinner nearby.
-
-### Day 3: Markets, museums and the rivers
-
-**Morning:** Go to Les Halles Paul Bocuse for an oyster or a praline tart, or to the Saint-Antoine market if it is a weekend.
-
-**Afternoon:** Choose either Musée des Confluences (tram T1) or Musée Lumière (metro D). Afterwards, walk or Vélo'v to Parc de la Tête d'Or.
-
-**Evening:** Watch the sunset on the Berges du Rhône with drinks on a péniche.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Vieux Lyon and Fourvière | Start at Cathédrale Saint-Jean, then walk through Saint-Jean and Saint-Paul and duck into the open traboules. Take the funicular up to Fourvière. | See the basilica and the view, then the Roman theatres and the Lugdunum museum. Walk down via the Jardin du Rosaire, then cross the Saône footbridge to the Presqu'île. | Have an aperitif on a terrace near Place des Jacobins, followed by dinner at a bouchon away from rue Saint-Jean. |
+| Day 2 · Presqu'île and Croix-Rousse | Start at Place Bellecour, then walk rue de la République and rue Victor Hugo to Place des Terreaux. Spend late morning at the Musée des Beaux-Arts. | Climb the slopes of Croix-Rousse through the Cour des Voraces, visit the Maison des Canuts and see the Mur des Canuts. Walk back down for the views. | Take a wine bar crawl in the pentes, which are full of small natural-wine spots, then dinner nearby. |
+| Day 3 · Markets, museums and the rivers | Go to Les Halles Paul Bocuse for an oyster or a praline tart, or to the Saint-Antoine market if it is a weekend. | Choose either Musée des Confluences (tram T1) or Musée Lumière (metro D). Afterwards, walk or Vélo'v to Parc de la Tête d'Or. | Watch the sunset on the Berges du Rhône with drinks on a péniche. |
 
 ## What is overrated (and what to do instead)
 
@@ -157,9 +141,12 @@ In the city, the **TCL** network (metro lines A, B, C and D, plus trams, buses a
 
 ## How much a trip to Lyon costs
 
-- **Shoestring: €60-90 per day.** Hostel bed €30-40, market picnic and one lunch formule, a transport pass, mostly free sights.
+**Rough daily budget**
 
-- **Mid-range: €150-250 per day.** Hotel double €100-160 (shared), bouchon lunch, dinner with wine, a museum or two, the odd taxi.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €60-90 per day | Hostel bed €30-40, market picnic and one lunch formule, a transport pass, mostly free sights. |
+| Mid-range | €150-250 per day | Hotel double €100-160 (shared), bouchon lunch, dinner with wine, a museum or two, the odd taxi. |
 
 - **Extras:** Rhônexpress return about €30, Lyon City Card from €30, coffee €2-3, a glass of wine €5-8.
 

@@ -95,29 +95,19 @@ En una ciudad pensada para sacarte dinero, hay más cosas gratis de lo que parec
 
 - **Manantiales estatales**: Wekiwa o Blue Spring por unos 6 $ por coche, da igual cuántos vayáis.
 
-## Itinerario: Orlando en 5 días
+## Qué ver en Orlando en 5 días: ruta día a día
 
 Este plan da por hecho que tienes coche, porque en Orlando sin coche se pierde muchísimo tiempo. Alterna parques con días suaves para no acabar en el suelo.
 
-### Día 1: Universal (Islands of Adventure y Universal Studios)
+**Itinerario de 5 días en Orlando**
 
-**Mañana:** Islands of Adventure a la apertura, Hagrid's y VelociCoaster primero. **Tarde:** Hogwarts Express a Universal Studios y Diagon Alley. **Noche:** cena en CityWalk y a dormir pronto; el jet lag ayuda a madrugar.
-
-### Día 2: Magic Kingdom
-
-**Mañana:** entra pronto y haz las montañas rusas. **Tarde:** vuelve al hotel a descansar en las horas de más calor si no está lejos. **Noche:** regresa para los fuegos artificiales y las colas cortas del final.
-
-### Día 3: Winter Park, Leu Gardens y centro
-
-**Mañana:** barca por los lagos de Winter Park y Morse Museum. **Tarde:** Leu Gardens y comida en Mills 50, que está al lado. **Noche:** paseo por Lake Eola con la fuente encendida.
-
-### Día 4: EPCOT o Hollywood Studios
-
-**Mañana:** atracciones principales. **Tarde:** si es EPCOT, la vuelta al mundo de los pabellones comiendo por el camino. **Noche:** espectáculo final sobre el lago o cena en Disney Springs.
-
-### Día 5: Kennedy Space Center y Cocoa Beach
-
-**Mañana:** sal temprano hacia Cabo Cañaveral (una hora por la SR 528). **Tarde:** sigue en el Kennedy hasta media tarde y baja a Cocoa Beach a ver el muelle. **Noche:** cena de marisco en la costa y vuelta a Orlando.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Universal (Islands of Adventure y Universal Studios) | Islands of Adventure a la apertura, Hagrid's y VelociCoaster primero. | Hogwarts Express a Universal Studios y Diagon Alley. | Cena en CityWalk y a dormir pronto; el jet lag ayuda a madrugar. |
+| Día 2 · Magic Kingdom | Entra pronto y haz las montañas rusas. | Vuelve al hotel a descansar en las horas de más calor si no está lejos. | Regresa para los fuegos artificiales y las colas cortas del final. |
+| Día 3 · Winter Park, Leu Gardens y centro | Barca por los lagos de Winter Park y Morse Museum. | Leu Gardens y comida en Mills 50, que está al lado. | Paseo por Lake Eola con la fuente encendida. |
+| Día 4 · EPCOT o Hollywood Studios | Atracciones principales. | Si es EPCOT, la vuelta al mundo de los pabellones comiendo por el camino. | Espectáculo final sobre el lago o cena en Disney Springs. |
+| Día 5 · Kennedy Space Center y Cocoa Beach | Sal temprano hacia Cabo Cañaveral (una hora por la SR 528). | Sigue en el Kennedy hasta media tarde y baja a Cocoa Beach a ver el muelle. | Cena de marisco en la costa y vuelta a Orlando. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 

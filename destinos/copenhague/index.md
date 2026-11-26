@@ -39,15 +39,17 @@ Los barcos baratos de Netto-Bådene salen cerca de Nyhavn y recorren canales y p
 
 Por la noche, tira de Vesterbro y Kødbyen, el antiguo barrio de la carne, hoy lleno de bares y restaurantes. Y si buscas algo más relajado, un banco junto al puerto con una cerveza del súper es más danés de lo que parece.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Copenhague en 3 días: ruta día a día
 
 Tres días es lo ideal. Con dos ves lo esencial, y con cuatro puedes añadir la excursión a Louisiana y Kronborg sin ir con prisa.
 
-- **Día 1, centro histórico:** Nyhavn a primera hora, Amalienborg, Marmorkirken, Rosenborg y Rundetårn. Por la tarde, Christiansborg y cena por Vesterbro.
+**Itinerario de 3 días en Copenhague**
 
-- **Día 2, barrios y puerto:** bici hacia Nørrebro, paseo por Assistens y Superkilen, Christiania a mediodía, barco de canales por la tarde y Tivoli de noche.
-
-- **Día 3, museos o excursión:** Glyptotek por la mañana o tren a Humlebæk y Helsingør. Vuelta al atardecer, con paseo por el puerto.
+| Día | Plan |
+|---|---|
+| Día 1 | Centro histórico. Nyhavn a primera hora, Amalienborg, Marmorkirken, Rosenborg y Rundetårn. Por la tarde, Christiansborg y cena por Vesterbro. |
+| Día 2 | Barrios y puerto. Bici hacia Nørrebro, paseo por Assistens y Superkilen, Christiania a mediodía, barco de canales por la tarde y Tivoli de noche. |
+| Día 3 | Museos o excursión. Glyptotek por la mañana o tren a Humlebæk y Helsingør. Vuelta al atardecer, con paseo por el puerto. |
 
 ## Cuándo ir
 
@@ -83,11 +85,13 @@ Dentro de la ciudad, la mayoría de las visitas se hacen a pie o en bici. El met
 
 ## Presupuesto orientativo por día
 
-- **Mochilero ajustado (80-110 euros):** cama de albergue, comida de súper y mercados, bici o caminar y pocas entradas de pago.
+**Presupuesto orientativo por día**
 
-- **Intermedio (130-180 euros):** habitación doble sencilla, una comida en restaurante, algún museo y transporte.
-
-- **Más cómodo (200 euros o más):** hotel céntrico, cenas sentado y varias entradas de pago.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Mochilero ajustado | 80-110 euros | Cama de albergue, comida de súper y mercados, bici o caminar y pocas entradas de pago. |
+| Intermedio | 130-180 euros | Habitación doble sencilla, una comida en restaurante, algún museo y transporte. |
+| Más cómodo | 200 euros o más | Hotel céntrico, cenas sentado y varias entradas de pago. |
 
 Estos importes son orientativos y cambian según la temporada. La moneda es la corona danesa, y casi todo se paga con tarjeta, así que apenas necesitarás efectivo.
 

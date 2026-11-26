@@ -79,23 +79,16 @@ Lo gratuito pasa por reservar online con pasaporte, pero existe y está bien. El
 
 Comer barato es facilísimo: un jianbing (crep salado de desayuno) cuesta entre 8 y 12 CNY y un plato de fideos en un local de barrio, unos 20-30 CNY.
 
-## Itinerario: Pekín en 4 días
+## Qué ver en Pekín en 4 días: ruta día a día
 
-### Día 1: el eje imperial
+**Itinerario de 4 días en Pekín**
 
-**Mañana:** Tiananmén temprano y Ciudad Prohibida (con reserva hecha). **Tarde:** sube a Jingshan al salir por la puerta norte y sigue al parque Beihai. **Noche:** camina hasta Shichahai y cena en los hutongs de alrededor.
-
-### Día 2: la Gran Muralla
-
-**Mañana:** sal temprano hacia Mutianyu (tour en bus o coche privado). **Tarde:** vuelta a la ciudad hacia las 16:00 y descanso, que se nota en las piernas. **Noche:** cena de pato laqueado.
-
-### Día 3: templos y barrios del norte
-
-**Mañana:** Templo del Cielo a primera hora con los jubilados. **Tarde:** metro línea 5 hacia el norte, Templo de los Lama y Templo de Confucio, y luego callejón de Wudaoying. **Noche:** Torre del Tambor y cervezas en los hutongs, o acrobacias en el Teatro Chaoyang.
-
-### Día 4: el Palacio de Verano y lo moderno
-
-**Mañana:** Palacio de Verano entrando por la puerta norte. **Tarde:** 798 en Didi o Museo Nacional si prefieres historia. **Noche:** Parque Olímpico iluminado y cena de hotpot.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · El eje imperial | Tiananmén temprano y Ciudad Prohibida (con reserva hecha). | Sube a Jingshan al salir por la puerta norte y sigue al parque Beihai. | Camina hasta Shichahai y cena en los hutongs de alrededor. |
+| Día 2 · La Gran Muralla | Sal temprano hacia Mutianyu (tour en bus o coche privado). | Vuelta a la ciudad hacia las 16:00 y descanso, que se nota en las piernas. | Cena de pato laqueado. |
+| Día 3 · Templos y barrios del norte | Templo del Cielo a primera hora con los jubilados. | Metro línea 5 hacia el norte, Templo de los Lama y Templo de Confucio, y luego callejón de Wudaoying. | Torre del Tambor y cervezas en los hutongs, o acrobacias en el Teatro Chaoyang. |
+| Día 4 · El Palacio de Verano y lo moderno | Palacio de Verano entrando por la puerta norte. | 798 en Didi o Museo Nacional si prefieres historia. | Parque Olímpico iluminado y cena de hotpot. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 

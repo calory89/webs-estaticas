@@ -101,19 +101,13 @@ A lot of San Diego costs nothing, which helps in a pricey US city.
 
 ## San Diego itinerary: 3 days
 
-### Day 1: Balboa Park and downtown
+**3-day itinerary for San Diego**
 
-**Morning:** Get to the San Diego Zoo when it opens and stay until lunch. **Afternoon:** Walk El Prado and the Botanical Building, and pick one museum (the Museum of Us or the San Diego Museum of Art). **Evening:** Head down to Little Italy for dinner, then drinks in the Gaslamp if you still have energy.
-
-### Day 2: La Jolla and the beaches
-
-**Morning:** Go to La Jolla Cove early for the sea lions, then kayak the caves or walk to La Jolla Shores. **Afternoon:** Drive or Uber 10 minutes north to Torrey Pines and do the Razor Point trail. **Evening:** Sunset on the reserve or back down in Pacific Beach, with fish tacos and a beer.
-
-### Day 3: The bay, Coronado and Point Loma
-
-**Morning:** Do the USS Midway, then the ferry to Coronado, a bike ride and the beach by the Hotel del. **Afternoon:** Ferry back, then Cabrillo National Monument (by car or Uber). **Evening:** Sunset Cliffs, then dinner in Ocean Beach.
-
-A fourth day works well for Tijuana or Old Town plus Barrio Logan and North Park.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Balboa Park and downtown | Get to the San Diego Zoo when it opens and stay until lunch. | Walk El Prado and the Botanical Building, and pick one museum (the Museum of Us or the San Diego Museum of Art). | Head down to Little Italy for dinner, then drinks in the Gaslamp if you still have energy. |
+| Day 2 · La Jolla and the beaches | Go to La Jolla Cove early for the sea lions, then kayak the caves or walk to La Jolla Shores. | Drive or Uber 10 minutes north to Torrey Pines and do the Razor Point trail. | Sunset on the reserve or back down in Pacific Beach, with fish tacos and a beer. |
+| Day 3 · The bay, Coronado and Point Loma | Do the USS Midway, then the ferry to Coronado, a bike ride and the beach by the Hotel del. | Ferry back, then Cabrillo National Monument (by car or Uber). | Sunset Cliffs, then dinner in Ocean Beach. A fourth day works well for Tijuana or Old Town plus Barrio Logan and North Park. |
 
 ## What is overrated (and what to do instead)
 
@@ -169,12 +163,14 @@ The **trolley** (Blue, Green and Orange lines) covers downtown, Old Town, the Me
 
 ## How much a trip to San Diego costs
 
-- **Shoestring (about €110-150 / $120-165 a day):** hostel dorm in Ocean Beach or Pacific Beach, taco shops, free beaches and parks, trolley day pass.
+**Rough daily budget**
 
-- **Mid-range (about €280-400 / $300-440 a day):** hotel in Little Italy, one paid attraction per day (zoo, Midway), sit-down dinners, a few Ubers.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | about €110-150 / $120-165 a day | Hostel dorm in Ocean Beach or Pacific Beach, taco shops, free beaches and parks, trolley day pass. |
+| Mid-range | about €280-400 / $300-440 a day | Hotel in Little Italy, one paid attraction per day (zoo, Midway), sit-down dinners, a few Ubers. |
 
 - **Extras:** surf lesson €70-90, kayak tour €45-60, whale watching €45-60.
-
 Hotels are the big cost. Book early for summer and weekends.
 
 ## Day trips from San Diego

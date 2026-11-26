@@ -37,17 +37,18 @@ Music is the real nightlife. The Fábrica de Arte Cubano in Vedado mixes galleri
 
 If you have an extra day, go to Viñales for tobacco fields and limestone hills. It is roughly two to three hours by Viazul bus or shared taxi.
 
-## How many days and a suggested route
+## Havana itinerary: 4 days, day by day
 
 Three full days covers the essentials, and four lets you slow down. Five is plenty if you add Viñales or a beach day at Playas del Este.
 
-- **Day 1:** Habana Vieja on foot: the four main plazas, lunch in a paladar, then the Capitolio and the Prado. End on the Malecón at sunset.
+**4-day itinerary for Havana**
 
-- **Day 2:** Morning at the Cementerio de Colón, then Plaza de la Revolución. Spend the afternoon in Vedado, with ice cream at Coppelia, and finish with an evening at the Fábrica de Arte Cubano.
-
-- **Day 3:** Cross the bay to La Cabaña and El Morro, then Regla. Alternatively, spend the day at Fusterlandia and the western suburbs.
-
-- **Day 4:** Day trip to Viñales, or a slow morning in Centro Habana, which is the least polished and most honest part of the city.
+| Day | Plan |
+|---|---|
+| Day 1 | Habana Vieja on foot: the four main plazas, lunch in a paladar, then the Capitolio and the Prado. End on the Malecón at sunset. |
+| Day 2 | Morning at the Cementerio de Colón, then Plaza de la Revolución. Spend the afternoon in Vedado, with ice cream at Coppelia, and finish with an evening at the Fábrica de Arte Cubano. |
+| Day 3 | Cross the bay to La Cabaña and El Morro, then Regla. Alternatively, spend the day at Fusterlandia and the western suburbs. |
+| Day 4 | Day trip to Viñales, or a slow morning in Centro Habana, which is the least polished and most honest part of the city. |
 
 ## When to go
 

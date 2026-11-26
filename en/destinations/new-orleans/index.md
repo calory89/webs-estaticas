@@ -101,29 +101,13 @@ A lot of the best of New Orleans costs nothing. Street musicians on Royal Street
 
 ## New Orleans itinerary: 3 days
 
-### Day 1: the French Quarter and the Marigny
+**3-day itinerary for New Orleans**
 
-**Morning:** beignets early at Café du Monde before the queue, then Jackson Square, St. Louis Cathedral and the Presbytère. Walk Royal and Chartres Streets towards Esplanade.
-
-**Afternoon:** muffuletta from Central Grocery on Decatur, eaten by the river. Wander the French Market, then take the St. Louis Cemetery No. 1 tour.
-
-**Evening:** book a Preservation Hall set, then walk 10 minutes to Frenchmen Street. Look at Bourbon Street once on the way if you must.
-
-### Day 2: the WWII Museum and uptown
-
-**Morning:** the National WWII Museum when it opens. Give it until early afternoon.
-
-**Afternoon:** catch the St. Charles streetcar from Lee Circle (or nearby stops) to the Garden District. Walk Prytania and Washington Avenue, then browse Magazine Street. Ride further to Audubon Park if you have the energy.
-
-**Evening:** dinner uptown, then live music at Tipitina's or the Maple Leaf depending on the night.
-
-### Day 3: Mid-City, Tremé and the Bywater
-
-**Morning:** Canal streetcar to City Park, the Sculpture Garden and NOMA. Coffee and beignets at Café du Monde's City Park branch, usually far quieter than the original.
-
-**Afternoon:** po'boy at Parkway Bakery near Bayou St. John, then Tremé: Congo Square and the Backstreet Cultural Museum. Head on to the Bywater and Crescent Park.
-
-**Evening:** drinks and music at Bacchanal, or take the Algiers Ferry at sunset for the skyline, then back to Frenchmen for a last night.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · The French Quarter and the Marigny | Beignets early at Café du Monde before the queue, then Jackson Square, St. Louis Cathedral and the Presbytère. Walk Royal and Chartres Streets towards Esplanade. | Muffuletta from Central Grocery on Decatur, eaten by the river. Wander the French Market, then take the St. Louis Cemetery No. 1 tour. | Book a Preservation Hall set, then walk 10 minutes to Frenchmen Street. Look at Bourbon Street once on the way if you must. |
+| Day 2 · The WWII Museum and uptown | The National WWII Museum when it opens. Give it until early afternoon. | Catch the St. Charles streetcar from Lee Circle (or nearby stops) to the Garden District. Walk Prytania and Washington Avenue, then browse Magazine Street. Ride further to Audubon Park if you have the energy. | Dinner uptown, then live music at Tipitina's or the Maple Leaf depending on the night. |
+| Day 3 · Mid-City, Tremé and the Bywater | Canal streetcar to City Park, the Sculpture Garden and NOMA. Coffee and beignets at Café du Monde's City Park branch, usually far quieter than the original. | Po'boy at Parkway Bakery near Bayou St. John, then Tremé: Congo Square and the Backstreet Cultural Museum. Head on to the Bywater and Crescent Park. | Drinks and music at Bacchanal, or take the Algiers Ferry at sunset for the skyline, then back to Frenchmen for a last night. |
 
 ## What is overrated (and what to do instead)
 

@@ -105,17 +105,13 @@ A surprising amount of Bilbao costs nothing, because the best things here are ar
 
 ## Bilbao itinerary: 3 days
 
-### Day 1: Old town and the river
+**3-day itinerary for Bilbao**
 
-**Morning:** start at Mercado de la Ribera, then wander the Casco Viejo, Santiago Cathedral and the Basque Museum. **Afternoon:** climb to Begoña for views, come back down and have lunch with a menú del día. **Evening:** pintxos in Plaza Nueva and Calle Santa María, then a drink by the river.
-
-### Day 2: Guggenheim and modern Bilbao
-
-**Morning:** the Guggenheim first thing, plus Puppy and Maman. **Afternoon:** lunch in the Ensanche, then Bellas Artes and Doña Casilda park, and Azkuna Zentroa on the walk back. **Evening:** the Artxanda funicular at sunset, then pintxos on Calle Ledesma or in Indautxu.
-
-### Day 3: The coast
-
-**Morning:** metro line 1 to Areeta, then cross the Vizcaya Bridge to Portugalete. **Afternoon:** back to Getxo for the old fishing port (Puerto Viejo) and a beach walk, or continue to Sopelana for surf and cliffs. **Evening:** back in town for a last dinner of grilled fish or a txuleta. If San Sebastián is a priority, swap this day for that trip.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Old town and the river | Start at Mercado de la Ribera, then wander the Casco Viejo, Santiago Cathedral and the Basque Museum. | Climb to Begoña for views, come back down and have lunch with a menú del día. | Pintxos in Plaza Nueva and Calle Santa María, then a drink by the river. |
+| Day 2 · Guggenheim and modern Bilbao | The Guggenheim first thing, plus Puppy and Maman. | Lunch in the Ensanche, then Bellas Artes and Doña Casilda park, and Azkuna Zentroa on the walk back. | The Artxanda funicular at sunset, then pintxos on Calle Ledesma or in Indautxu. |
+| Day 3 · The coast | Metro line 1 to Areeta, then cross the Vizcaya Bridge to Portugalete. | Back to Getxo for the old fishing port (Puerto Viejo) and a beach walk, or continue to Sopelana for surf and cliffs. | Back in town for a last dinner of grilled fish or a txuleta. If San Sebastián is a priority, swap this day for that trip. |
 
 ## What is overrated (and what to do instead)
 
@@ -173,9 +169,12 @@ The centre is walkable. For longer rides, the metro (two lines, linking to the c
 
 ## How much a trip to Bilbao costs
 
-- **Shoestring, about €60-80 a day:** hostel bed (€25-40), menú del día at lunch, pintxo-pote evenings, free sights, Barik transport.
+**Rough daily budget**
 
-- **Mid-range, about €140-200 a day:** central 3-star hotel (€100-150 per double, split), one museum, a pintxo crawl, one good sit-down meal.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | about €60-80 a day | Hostel bed (€25-40), menú del día at lunch, pintxo-pote evenings, free sights, Barik transport. |
+| Mid-range | about €140-200 a day | Central 3-star hotel (€100-150 per double, split), one museum, a pintxo crawl, one good sit-down meal. |
 
 - **Extras:** Guggenheim about €18-20, San Sebastián day trip about €20-30 in transport, a txuleta dinner €50+ per person.
 

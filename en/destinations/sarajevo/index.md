@@ -83,17 +83,13 @@ Climbing through **Vratnik and Bistrik**, the steep residential streets above th
 
 ## Sarajevo itinerary: 3 days
 
-### Day 1: old town and the city's story
+**3-day itinerary for Sarajevo**
 
-**Morning:** Start at the Sebilj before the crowds, then visit Gazi Husrev-beg Mosque and walk Ferhadija to the Meeting of Cultures line and the cathedral. **Afternoon:** Visit Galerija 11/07/95, then the Latin Bridge and its small museum, and finish at Vijećnica. **Evening:** Walk up to the Yellow Fortress for sunset, then come down for ćevapi in Baščaršija.
-
-### Day 2: siege history and the mountain
-
-**Morning:** Visit the War Childhood Museum, then Svrzo's House nearby. **Afternoon:** Take the Trebević cable car up from Bistrik, then walk the bobsleigh track and continue down via the Old Jewish Cemetery. **Evening:** Have a beer at the Sarajevska brewery and dinner at Inat Kuća on the opposite riverbank.
-
-### Day 3: west Sarajevo and the tunnel
-
-**Morning:** Take tram 3 west and stop at the National Museum, then look at the Holiday Inn and the stretch known as Sniper Alley. **Afternoon:** Continue to Ilidža and the Tunnel of Hope, then go to Vrelo Bosne, the spring of the Bosna river, for a walk among the ponds. **Evening:** Back in town, have coffee and baklava, then a late drink in the bars around Ferhadija. If you'd rather swap this day for Mostar, do the Tunnel on your way to the airport.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Old town and the city's story | Start at the Sebilj before the crowds, then visit Gazi Husrev-beg Mosque and walk Ferhadija to the Meeting of Cultures line and the cathedral. | Visit Galerija 11/07/95, then the Latin Bridge and its small museum, and finish at Vijećnica. | Walk up to the Yellow Fortress for sunset, then come down for ćevapi in Baščaršija. |
+| Day 2 · Siege history and the mountain | Visit the War Childhood Museum, then Svrzo's House nearby. | Take the Trebević cable car up from Bistrik, then walk the bobsleigh track and continue down via the Old Jewish Cemetery. | Have a beer at the Sarajevska brewery and dinner at Inat Kuća on the opposite riverbank. |
+| Day 3 · West Sarajevo and the tunnel | Take tram 3 west and stop at the National Museum, then look at the Holiday Inn and the stretch known as Sniper Alley. | Continue to Ilidža and the Tunnel of Hope, then go to Vrelo Bosne, the spring of the Bosna river, for a walk among the ponds. | Back in town, have coffee and baklava, then a late drink in the bars around Ferhadija. If you'd rather swap this day for Mostar, do the Tunnel on your way to the airport. |
 
 ## What is overrated (and what to do instead)
 
@@ -151,9 +147,12 @@ In town, you'll walk most of the time. Tram 3 is the backbone of the network, ru
 
 ## How much a trip to Sarajevo costs
 
-- **Shoestring, €35-50 per day:** hostel bed (€12-20), burek and ćevapi meals, trams, one or two paid museums.
+**Rough daily budget**
 
-- **Mid-range, €80-130 per day:** a guesthouse or 3-star hotel (€50-80), sit-down dinners, the cable car, a guided war tour, coffee and cake every afternoon.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €35-50 per day | Hostel bed (€12-20), burek and ćevapi meals, trams, one or two paid museums. |
+| Mid-range | €80-130 per day | A guesthouse or 3-star hotel (€50-80), sit-down dinners, the cable car, a guided war tour, coffee and cake every afternoon. |
 
 - **Typical extras:** the Tunnel (€10), a Mostar train ticket (€8-12 each way), beer (€2-3), coffee (€1.50-2).
 

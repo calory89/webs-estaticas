@@ -33,15 +33,17 @@ Walk the Vistula boulevards at sunset, when locals jog, cycle and sit on the ste
 
 Two day trips are worth the time. The **Wieliczka Salt Mine**, about 14 km southeast, has chapels carved from salt hundreds of metres underground. **Auschwitz-Birkenau** lies roughly 70 km west, a 90-minute ride by bus or organised tour. It is a heavy day. Entry is free but needs a timed pass or guided tour, so reserve weeks ahead for summer.
 
-## How many days, and a suggested route
+## Krakow itinerary: 3 days, day by day
 
 Three days covers the city well. Two is enough if you skip a day trip. Four lets you add Auschwitz or the salt mine without rushing.
 
-- **Day 1:** Main Square, St. Mary's, Cloth Hall, a lunch of pierogi, then Wawel in the afternoon. Finish with dinner on the Old Town side streets.
+**3-day itinerary for Krakow**
 
-- **Day 2:** Kazimierz in the morning, a late lunch on Plac Nowy, then cross the river to Schindler's Factory. Return for drinks in Kazimierz.
-
-- **Day 3:** Wieliczka in the morning, back by mid-afternoon, then the Czartoryski Museum or a slow walk along the Planty. If you want Auschwitz, swap it for this day.
+| Day | Plan |
+|---|---|
+| Day 1 | Main Square, St. Mary's, Cloth Hall, a lunch of pierogi, then Wawel in the afternoon. Finish with dinner on the Old Town side streets. |
+| Day 2 | Kazimierz in the morning, a late lunch on Plac Nowy, then cross the river to Schindler's Factory. Return for drinks in Kazimierz. |
+| Day 3 | Wieliczka in the morning, back by mid-afternoon, then the Czartoryski Museum or a slow walk along the Planty. If you want Auschwitz, swap it for this day. |
 
 ## When to go
 

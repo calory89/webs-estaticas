@@ -103,29 +103,13 @@ A surprising amount of Boston costs nothing, which helps offset the hotel bill.
 
 ## Boston itinerary: 3 days
 
-### Day 1: Freedom Trail, North End and Charlestown
+**3-day itinerary for Boston**
 
-**Morning:** Start at Boston Common, walk the Public Garden, then loop up through Beacon Hill and Acorn Street. Join the Freedom Trail at the State House and follow it past the Granary Burying Ground and Old State House.
-
-**Afternoon:** Lunch in the North End, then Paul Revere House and Old North Church. Cross into Charlestown for the USS Constitution and Bunker Hill.
-
-**Evening:** Ferry back from the Navy Yard to Long Wharf, then dinner back in the North End or oysters near Faneuil Hall (not inside it).
-
-### Day 2: Back Bay, museums and Fenway
-
-**Morning:** Copley Square, the Public Library and Trinity Church, then a walk down Newbury Street and Commonwealth Avenue's tree-lined mall.
-
-**Afternoon:** Green Line E branch to the Fenway area for the Gardner Museum, plus a quick hour at the MFA if you have energy left.
-
-**Evening:** A Red Sox game if it is the season. Otherwise, dinner in the South End around Tremont Street, one of the best eating neighbourhoods.
-
-### Day 3: Cambridge and the water
-
-**Morning:** Red Line to Harvard Square. Walk the Yard, see the glass flowers, have coffee in the Square.
-
-**Afternoon:** Red Line to Kendall/MIT, walk the campus, then cross the Longfellow Bridge on foot for the skyline view and drop down to the Esplanade.
-
-**Evening:** Head to the Seaport for sunset on the Harborwalk and dinner. Swap this day for Salem or the Harbor Islands if you prefer.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Freedom Trail, North End and Charlestown | Start at Boston Common, walk the Public Garden, then loop up through Beacon Hill and Acorn Street. Join the Freedom Trail at the State House and follow it past the Granary Burying Ground and Old State House. | Lunch in the North End, then Paul Revere House and Old North Church. Cross into Charlestown for the USS Constitution and Bunker Hill. | Ferry back from the Navy Yard to Long Wharf, then dinner back in the North End or oysters near Faneuil Hall (not inside it). |
+| Day 2 · Back Bay, museums and Fenway | Copley Square, the Public Library and Trinity Church, then a walk down Newbury Street and Commonwealth Avenue's tree-lined mall. | Green Line E branch to the Fenway area for the Gardner Museum, plus a quick hour at the MFA if you have energy left. | A Red Sox game if it is the season. Otherwise, dinner in the South End around Tremont Street, one of the best eating neighbourhoods. |
+| Day 3 · Cambridge and the water | Red Line to Harvard Square. Walk the Yard, see the glass flowers, have coffee in the Square. | Red Line to Kendall/MIT, walk the campus, then cross the Longfellow Bridge on foot for the skyline view and drop down to the Esplanade. | Head to the Seaport for sunset on the Harborwalk and dinner. Swap this day for Salem or the Harbor Islands if you prefer. |
 
 ## What is overrated (and what to do instead)
 

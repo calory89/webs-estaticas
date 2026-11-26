@@ -83,21 +83,14 @@ Konyaaltı Beach is free if you bring a towel, and the seafront promenade has sh
 
 ## Antalya itinerary: 4 days
 
-### Day 1: Kaleiçi and the cliffs
+**4-day itinerary for Antalya**
 
-**Morning:** Start at Hadrian's Gate, walk down through Kaleiçi to the Fluted Minaret and the Kaleiçi Museum, then end at the Old Harbour. **Afternoon:** Take a boat trip to Lower Düden or swim at one of the cliff platforms below the old town. **Evening:** Watch sunset at Hıdırlık Tower, then have dinner in the quieter lanes of southern Kaleiçi.
-
-### Day 2: Museum and Konyaaltı
-
-**Morning:** Take the nostalgic tram west to the Antalya Museum. **Afternoon:** The beach is right below the museum, so walk down to Konyaaltı and spend the afternoon there. **Evening:** Taxi or bus to the Tünektepe cable car for sunset, then have dinner back along the Konyaaltı strip.
-
-### Day 3: Perge and Aspendos
-
-**Morning:** Be at Perge at opening time. **Afternoon:** Continue to Aspendos, about 45 km from the city, to see the best-preserved Roman theatre anywhere. Hiring a car or a taxi for the day makes this easy. **Evening:** Stop at Upper Düden on the way back if you have the energy, or go straight to a hammam.
-
-### Day 4: Termessos or Side
-
-**Morning:** Choose Termessos, a mountain-top ruined city in a national park, for a hike, or Side for ruins by the sea and a beach. **Afternoon:** Finish the trip at the site you chose. **Evening:** Have a last meal in Kaleiçi and a drink with a cliff view.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Kaleiçi and the cliffs | Start at Hadrian's Gate, walk down through Kaleiçi to the Fluted Minaret and the Kaleiçi Museum, then end at the Old Harbour. | Take a boat trip to Lower Düden or swim at one of the cliff platforms below the old town. | Watch sunset at Hıdırlık Tower, then have dinner in the quieter lanes of southern Kaleiçi. |
+| Day 2 · Museum and Konyaaltı | Take the nostalgic tram west to the Antalya Museum. | The beach is right below the museum, so walk down to Konyaaltı and spend the afternoon there. | Taxi or bus to the Tünektepe cable car for sunset, then have dinner back along the Konyaaltı strip. |
+| Day 3 · Perge and Aspendos | Be at Perge at opening time. | Continue to Aspendos, about 45 km from the city, to see the best-preserved Roman theatre anywhere. Hiring a car or a taxi for the day makes this easy. | Stop at Upper Düden on the way back if you have the energy, or go straight to a hammam. |
+| Day 4 · Termessos or Side | Choose Termessos, a mountain-top ruined city in a national park, for a hike, or Side for ruins by the sea and a beach. | Finish the trip at the site you chose. | Have a last meal in Kaleiçi and a drink with a cliff view. |
 
 ## What is overrated (and what to do instead)
 
@@ -141,12 +134,14 @@ In the city, the T1 tram line crosses the centre and the old nostalgic tram (T2)
 
 ## How much a trip to Antalya costs
 
-- **Shoestring: €45-60 a day.** That covers a hostel or basic hotel (€25-35), lokanta meals and street food (€12-18), public transport (€2-3) and one paid site.
+**Rough daily budget**
 
-- **Mid-range: €100-150 a day.** That covers a Kaleiçi boutique hotel (€60-100), restaurant dinners with drinks (€30-40), museums and a boat trip or hammam.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €45-60 a day | That covers a hostel or basic hotel (€25-35), lokanta meals and street food (€12-18), public transport (€2-3) and one paid site. |
+| Mid-range | €100-150 a day | That covers a Kaleiçi boutique hotel (€60-100), restaurant dinners with drinks (€30-40), museums and a boat trip or hammam. |
 
 - **Extras:** Car hire runs €30-40 a day plus fuel, rafting €30-45, and the Aspendos festival from €20-60.
-
 Turkish prices change quickly with inflation, so treat lira figures as rough and euro equivalents as the more stable guide.
 
 ## Day trips from Antalya

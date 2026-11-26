@@ -39,17 +39,18 @@ Book a tea ceremony or a calligraphy session if you want something hands-on. Spe
 
 For a day trip, Nara (deer, the giant Buddha at Todai-ji) is about 45 minutes by train. Uji, known for matcha, is even closer. Osaka makes a great food-focused evening.
 
-## How many days and a suggested route
+## Kyoto itinerary: 4 days, day by day
 
 Three full days is the sweet spot. Two feels rushed and four lets you add Nara. Here's a route that keeps each day geographically sensible.
 
-- **Day 1, east:** Fushimi Inari at opening, then Kiyomizu-dera, Ninenzaka, Sannenzaka and Gion at dusk.
+**4-day itinerary for Kyoto**
 
-- **Day 2, west and north:** Arashiyama first thing, then Ryoan-ji and Kinkaku-ji, and finish with the Nishiki area and Pontocho for dinner.
-
-- **Day 3, centre and northeast:** Nijo Castle, the Imperial Palace park, then Ginkaku-ji, the Philosopher's Path and Nanzen-ji.
-
-- **Day 4, optional:** Nara, or Uji for matcha.
+| Day | Plan |
+|---|---|
+| Day 1 | East. Fushimi Inari at opening, then Kiyomizu-dera, Ninenzaka, Sannenzaka and Gion at dusk. |
+| Day 2 | West and north. Arashiyama first thing, then Ryoan-ji and Kinkaku-ji, and finish with the Nishiki area and Pontocho for dinner. |
+| Day 3 | Centre and northeast. Nijo Castle, the Imperial Palace park, then Ginkaku-ji, the Philosopher's Path and Nanzen-ji. |
+| Day 4 | Optional. Nara, or Uji for matcha. |
 
 ## When to go
 

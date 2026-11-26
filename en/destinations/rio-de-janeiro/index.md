@@ -39,17 +39,18 @@ Spend a Sunday on the Ipanema and Copacabana seafront, when one lane is closed t
 
 Evenings on the Lagoa Rodrigo de Freitas, with the lit-up mountains around it, are a calm counterweight to the beach.
 
-## How many days and a suggested route
+## Rio de Janeiro itinerary: 4 days, day by day
 
 Four days is comfortable. Three works if you're ruthless; five lets you add Tijuca forest, a football match or a day trip to Paraty or Ilha Grande.
 
-- **Day 1:** Arrive, walk Ipanema, sunset at Arpoador, dinner in Ipanema or Leblon.
+**4-day itinerary for Rio de Janeiro**
 
-- **Day 2:** Cristo first thing, Jardim Botânico or Parque Lage, then the Lagoa in the evening.
-
-- **Day 3:** Centro in the morning, lunch at a traditional bar, Santa Teresa, then samba in Lapa.
-
-- **Day 4:** Beach morning in Copacabana, Sugarloaf at golden hour, farewell caipirinha in Urca.
+| Day | Plan |
+|---|---|
+| Day 1 | Arrive, walk Ipanema, sunset at Arpoador, dinner in Ipanema or Leblon. |
+| Day 2 | Cristo first thing, Jardim Botânico or Parque Lage, then the Lagoa in the evening. |
+| Day 3 | Centro in the morning, lunch at a traditional bar, Santa Teresa, then samba in Lapa. |
+| Day 4 | Beach morning in Copacabana, Sugarloaf at golden hour, farewell caipirinha in Urca. |
 
 ## When to go
 

@@ -93,23 +93,14 @@ Lo mejor de Colonia cuesta poco. La catedral por dentro es gratis, igual que las
 
 - **Restos romanos sueltos**: la torre romana (Römerturm) en la esquina de la Zeughausstraße y tramos de muralla cerca de la catedral.
 
-## Itinerario: Colonia en 2 días
+## Qué ver en Colonia en 2 días: ruta día a día
 
-### Día 1: catedral, casco viejo y el Rin
+**Itinerario de 2 días en Colonia**
 
-**Mañana:** catedral a primera hora y, si tienes piernas, la torre. Después, el Museo Ludwig o el Wallraf-Richartz, según tus gustos.
-
-**Tarde:** comida en una Brauhaus (Früh am Dom o Sion), paseo por el Alter Markt, el Fischmarkt y Groß St. Martin, y bajada por la orilla hasta el Rheinauhafen y los Kranhäuser.
-
-**Noche:** vuelta por el río, cruce del puente Hohenzollern al atardecer, subida al KölnTriangle si aún está abierto y cena con Kölsch en Deutz o de nuevo en el casco viejo.
-
-### Día 2: historia, barrios y cerveza local
-
-**Mañana:** Kolumba y luego el EL-DE-Haus, que están a pocos minutos. De camino puedes asomarte a St. Gereon.
-
-**Tarde:** paseo por el Belgisches Viertel, café en la Brüsseler Platz y tranvía hasta Ehrenfeld para ver los murales.
-
-**Noche:** cena en Ehrenfeld (cocina turca o de barrio) o en Päffgen, en la Friesenstraße, y copas en el barrio belga o en el Zülpicher Viertel, la zona universitaria.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Catedral, casco viejo y el Rin | Catedral a primera hora y, si tienes piernas, la torre. Después, el Museo Ludwig o el Wallraf-Richartz, según tus gustos. | Comida en una Brauhaus (Früh am Dom o Sion), paseo por el Alter Markt, el Fischmarkt y Groß St. Martin, y bajada por la orilla hasta el Rheinauhafen y los Kranhäuser. | Vuelta por el río, cruce del puente Hohenzollern al atardecer, subida al KölnTriangle si aún está abierto y cena con Kölsch en Deutz o de nuevo en el casco viejo. |
+| Día 2 · Historia, barrios y cerveza local | Kolumba y luego el EL-DE-Haus, que están a pocos minutos. De camino puedes asomarte a St. Gereon. | Paseo por el Belgisches Viertel, café en la Brüsseler Platz y tranvía hasta Ehrenfeld para ver los murales. | Cena en Ehrenfeld (cocina turca o de barrio) o en Päffgen, en la Friesenstraße, y copas en el barrio belga o en el Zülpicher Viertel, la zona universitaria. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -165,9 +156,12 @@ En la ciudad, el centro se hace a pie y para lo demás tienes tranvía, metro li
 
 ## Cuánto cuesta un viaje a Colonia
 
-- **Presupuesto ajustado: unos 70-90 € al día.** Hostal o cama en dormitorio (30-45 €), comida de bar turco o panadería, una cena en Brauhaus, transporte con billete de día y museos baratos o gratis.
+**Presupuesto orientativo por día**
 
-- **Presupuesto medio: unos 150-200 € al día.** Hotel de tres estrellas bien situado (90-130 € por persona en doble compartida o habitación individual económica), comida y cena en restaurante, dos o tres museos y un mirador o el barco.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Presupuesto ajustado | unos 70-90 € al día | Hostal o cama en dormitorio (30-45 €), comida de bar turco o panadería, una cena en Brauhaus, transporte con billete de día y museos baratos o gratis. |
+| Presupuesto medio | unos 150-200 € al día | Hotel de tres estrellas bien situado (90-130 € por persona en doble compartida o habitación individual económica), comida y cena en restaurante, dos o tres museos y un mirador o el barco. |
 
 - **Extras habituales:** torre de la catedral 6-8 €, Museo Ludwig 13-16 €, KölnTriangle unos 5 €, Kölsch 2,50-3 € el vaso.
 

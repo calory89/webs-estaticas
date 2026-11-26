@@ -35,17 +35,18 @@ Camina la **Via Appia Antica** un domingo, cuando cierran parte al tráfico. Alq
 
 Ve a un mercado de verdad: el **Mercato di Testaccio** es el que mejor funciona para comer de pie. Haz una parada en iglesias menores, como San Luigi dei Francesi, con sus tres Caravaggio y entrada gratuita. Y deja una tarde libre para perderte por Monti, una zona de tiendas pequeñas y vermut de barrio.
 
-## Cuántos días quedarte y ruta sugerida
+## Qué ver en Roma en 4 días: ruta día a día
 
 Tres días bastan para lo esencial. Con cuatro respiras y no vas corriendo de una cola a otra. Con cinco puedes añadir una excursión, como Ostia Antica, mucho más tranquila que Pompeya.
 
-- **Día 1:** Coliseo, Foro y Palatino por la mañana. Comida en Monti. Tarde de paseo hasta Trevi y Panteón. Cena por la zona de Campo de' Fiori.
+**Itinerario de 4 días en Roma**
 
-- **Día 2:** Vaticano completo a primera hora. Comida rápida por Prati, y por la tarde Castel Sant'Angelo y Plaza Navona.
-
-- **Día 3:** Galería Borghese, Villa Borghese, Pincio y Plaza de España. Por la noche, Trastevere.
-
-- **Día 4:** Ghetto, Aventino, Testaccio y, si tienes ganas, la Via Appia Antica.
+| Día | Plan |
+|---|---|
+| Día 1 | Coliseo, Foro y Palatino por la mañana. Comida en Monti. Tarde de paseo hasta Trevi y Panteón. Cena por la zona de Campo de' Fiori. |
+| Día 2 | Vaticano completo a primera hora. Comida rápida por Prati, y por la tarde Castel Sant'Angelo y Plaza Navona. |
+| Día 3 | Galería Borghese, Villa Borghese, Pincio y Plaza de España. Por la noche, Trastevere. |
+| Día 4 | Ghetto, Aventino, Testaccio y, si tienes ganas, la Via Appia Antica. |
 
 ## Cuándo ir a Roma: clima y temporadas
 
@@ -83,11 +84,13 @@ Dentro de la ciudad, anda todo lo que puedas. La metro tiene pocas líneas (A, B
 
 ## Presupuesto orientativo por día
 
-- **Ajustado (60-80 euros):** hostal, pizza al taglio, un par de entradas y transporte público.
+**Presupuesto orientativo por día**
 
-- **Medio (110-160 euros):** hotel decente, comida y cena en trattoria, entradas principales.
-
-- **Cómodo (200 euros o más):** buen hotel céntrico, restaurantes de mantel y alguna visita guiada.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | 60-80 euros | Hostal, pizza al taglio, un par de entradas y transporte público. |
+| Medio | 110-160 euros | Hotel decente, comida y cena en trattoria, entradas principales. |
+| Cómodo | 200 euros o más | Buen hotel céntrico, restaurantes de mantel y alguna visita guiada. |
 
 ## Preguntas frecuentes sobre Roma
 

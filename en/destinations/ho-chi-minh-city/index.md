@@ -95,29 +95,13 @@ Saigon is already cheap, but plenty of what's worth seeing costs nothing at all.
 
 ## Ho Chi Minh City itinerary: 3 days
 
-### Day 1: Colonial centre and war history
+**3-day itinerary for Ho Chi Minh City**
 
-**Morning:** Be at the War Remnants Museum when it opens, then walk 10 minutes to Independence Palace. Have lunch at a com tam place nearby.
-
-**Afternoon:** Walk to the cathedral and Central Post Office, then down Dong Khoi past the Opera House. Retreat from the heat at The Café Apartments on Nguyen Hue.
-
-**Evening:** Sunset drink at a rooftop bar, then a motorbike food tour, or walk over to Vinh Khanh Street for snails.
-
-### Day 2: Cu Chi Tunnels and Thao Dien
-
-**Morning:** Leave early for the Cu Chi Tunnels (see Day trips). Half-day tours are back by early afternoon.
-
-**Afternoon:** Rest, then take metro Line 1 or a Grab to Thao Dien for coffee and a wander.
-
-**Evening:** Dinner in Thao Dien or back in the centre, then a drink on Nguyen Hue. Look in at Bui Vien only if you're curious (see below).
-
-### Day 3: Cholon, markets and temples
-
-**Morning:** Start at Jade Emperor Pagoda, then Grab to Cholon for Binh Tay Market and Thien Hau Temple.
-
-**Afternoon:** Lunch in Cholon (hu tieu or dim sum), then back to the centre for the Fine Arts Museum and Ben Thanh Market.
-
-**Evening:** Banh xeo for dinner, then the Saigon Opera House show or one last coffee on Book Street.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Colonial centre and war history | Be at the War Remnants Museum when it opens, then walk 10 minutes to Independence Palace. Have lunch at a com tam place nearby. | Walk to the cathedral and Central Post Office, then down Dong Khoi past the Opera House. Retreat from the heat at The Café Apartments on Nguyen Hue. | Sunset drink at a rooftop bar, then a motorbike food tour, or walk over to Vinh Khanh Street for snails. |
+| Day 2 · Cu Chi Tunnels and Thao Dien | Leave early for the Cu Chi Tunnels (see Day trips). Half-day tours are back by early afternoon. | Rest, then take metro Line 1 or a Grab to Thao Dien for coffee and a wander. | Dinner in Thao Dien or back in the centre, then a drink on Nguyen Hue. Look in at Bui Vien only if you're curious (see below). |
+| Day 3 · Cholon, markets and temples | Start at Jade Emperor Pagoda, then Grab to Cholon for Binh Tay Market and Thien Hau Temple. | Lunch in Cholon (hu tieu or dim sum), then back to the centre for the Fine Arts Museum and Ben Thanh Market. | Banh xeo for dinner, then the Saigon Opera House show or one last coffee on Book Street. |
 
 ## What is overrated (and what to do instead)
 
@@ -181,9 +165,12 @@ In town, most people use **Grab** (motorbike rides of 15-30,000 VND are common a
 
 Ho Chi Minh City is cheap by any European standard, and a comfortable trip costs far less than you'd guess. Rough daily budgets per person:
 
-- **Shoestring: €25-35 a day.** Hostel dorm (€8-12), street food for all meals (€6-8), buses and Grab bikes (€2-4), one museum (€1-3), a couple of coffees and beers (€4-5).
+**Rough daily budget**
 
-- **Mid-range: €60-100 a day.** A good hotel room shared (€25-40 each), a mix of street food and restaurants (€15-25), Grab cars (€5-8), a tour or rooftop drink (€15-25).
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €25-35 a day | Hostel dorm (€8-12), street food for all meals (€6-8), buses and Grab bikes (€2-4), one museum (€1-3), a couple of coffees and beers (€4-5). |
+| Mid-range | €60-100 a day | A good hotel room shared (€25-40 each), a mix of street food and restaurants (€15-25), Grab cars (€5-8), a tour or rooftop drink (€15-25). |
 
 - **Extras:** Cu Chi half-day tour €20-35, motorbike food tour €40-60, AO Show €25-55.
 

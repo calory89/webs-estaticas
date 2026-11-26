@@ -41,17 +41,18 @@ Paris is one of the few cities that lives up to its reputation and still surpris
 
 - Look inside the Palais Garnier, the old opera house. Even if you don't see a show, the staircase is worth the entry.
 
-## How many days and a suggested route
+## Paris itinerary: 4 days, day by day
 
 Three days covers the essentials, four lets you breathe, and five lets you add Versailles. With four days, I'd go like this.
 
-**Day 1:** Île de la Cité (Sainte-Chapelle early, then Notre-Dame), lunch in the Latin Quarter, afternoon at the Luxembourg Gardens, evening along the Seine.
+**4-day itinerary for Paris**
 
-**Day 2:** Louvre in the morning, a walk through the Tuileries, then Orsay in the afternoon or the Eiffel Tower at sunset.
-
-**Day 3:** Montmartre at 8 a.m., a long lunch, then the Canal Saint-Martin and a drink on the quays.
-
-**Day 4:** The Marais in the morning, Père Lachaise in the afternoon, and a slow dinner somewhere with no view of anything famous.
+| Day | Plan |
+|---|---|
+| Day 1 | Île de la Cité (Sainte-Chapelle early, then Notre-Dame), lunch in the Latin Quarter, afternoon at the Luxembourg Gardens, evening along the Seine. |
+| Day 2 | Louvre in the morning, a walk through the Tuileries, then Orsay in the afternoon or the Eiffel Tower at sunset. |
+| Day 3 | Montmartre at 8 a.m., a long lunch, then the Canal Saint-Martin and a drink on the quays. |
+| Day 4 | The Marais in the morning, Père Lachaise in the afternoon, and a slow dinner somewhere with no view of anything famous. |
 
 ## When to go
 

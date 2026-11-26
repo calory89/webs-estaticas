@@ -65,19 +65,19 @@ Si te quedas con ganas de arqueología, Festos (Phaistos) es otro palacio minoic
 
 - **Ir al este:** la playa de Vai, con su palmeral, y las calas cercanas, bastante más tranquilas que el norte.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Creta en 7 días: ruta día a día
 
 Con cinco días ves una zona. Con siete empiezas a conocer la isla. Con diez o más, la recorres sin ir con prisa. Esta es la ruta que haría con una semana y coche:
 
-- **Días 1-2, Heraclión:** Museo Arqueológico, Knossos y paseo por el puerto veneciano y la fortaleza de Koules.
+**Itinerario de 7 días en Creta**
 
-- **Día 3, Rethymno:** ciudad vieja, Fortezza y, si da tiempo, monasterio de Arkadi.
-
-- **Días 4-5, La Canea:** ciudad, y excursión a Balos o a Elafonisi (una de las dos, no ambas el mismo día).
-
-- **Día 6:** Samaria o Imbros, según fuerzas.
-
-- **Día 7:** vuelta por el sur (Preveli o Matala) y regreso a Heraclión.
+| Día | Plan |
+|---|---|
+| Días 1-2 | Heraclión. Museo Arqueológico, Knossos y paseo por el puerto veneciano y la fortaleza de Koules. |
+| Día 3 | Rethymno. Ciudad vieja, Fortezza y, si da tiempo, monasterio de Arkadi. |
+| Días 4-5 | La Canea. Ciudad, y excursión a Balos o a Elafonisi (una de las dos, no ambas el mismo día). |
+| Día 6 | Samaria o Imbros, según fuerzas. |
+| Día 7 | Vuelta por el sur (Preveli o Matala) y regreso a Heraclión. |
 
 Si solo tienes cuatro días, quédate en el oeste (La Canea, Elafonisi, Balos) o en la zona central (Heraclión y Rethymno). Intentar todo es el error clásico.
 
@@ -113,11 +113,13 @@ Para moverte, el **coche de alquiler** es lo más práctico. La autovía del nor
 
 ## Presupuesto orientativo por día
 
-- **Ajustado (60-80 euros):** alojamiento económico, comidas en tabernas, transporte público o coche compartido.
+**Presupuesto orientativo por día**
 
-- **Medio (100-150 euros):** habitación cómoda, coche de alquiler, excursiones en barco y cena con vino.
-
-- **Cómodo (más de 180 euros):** hotel con encanto, coche cómodo y restaurantes de más nivel.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | 60-80 euros | Alojamiento económico, comidas en tabernas, transporte público o coche compartido. |
+| Medio | 100-150 euros | Habitación cómoda, coche de alquiler, excursiones en barco y cena con vino. |
+| Cómodo | más de 180 euros | Hotel con encanto, coche cómodo y restaurantes de más nivel. |
 
 El coche de alquiler cuesta mucho menos fuera de verano. La gasolina es cara comparada con España, así que cuenta con ella.
 

@@ -85,23 +85,14 @@ Zagreb es de las capitales europeas donde más se puede ver sin pagar. Son grati
 
 Hay otros planes por menos de 1 €: el funicular y un billete de tranvía corto. Los museos estatales suelen tener días o noches con entrada gratuita, como la Noche de los Museos, a finales de enero. Comprueba las fechas antes de ir.
 
-## Itinerario: Zagreb en 2 días
+## Qué ver en Zagreb en 2 días: ruta día a día
 
-### Día 1: Ciudad Alta y Kaptol
+**Itinerario de 2 días en Zagreb**
 
-**Mañana:** empieza en la plaza Ban Jelačić y sube a Dolac antes de las 10. Desde ahí, visita la catedral y baja por Tkalčićeva. Luego sube a la Ciudad Alta por la Puerta de Piedra hasta San Marcos, que estará tranquila a esa hora.
-
-**Tarde:** come en la Ciudad Alta o baja a por štrukli. Después, Museo de las Relaciones Rotas y, si te gusta, el de Arte Naíf. A las 12 intenta estar junto a la torre Lotrščak para oír el cañón.
-
-**Noche:** atardecer en el paseo Strossmayer. Baja en el funicular y cena en Donji Grad o en las calles de alrededor de Tkalčićeva. Termina tomando algo en sus bares.
-
-### Día 2: Mirogoj y Donji Grad
-
-**Mañana:** coge el bus 106 desde Kaptol hasta Mirogoj y pasa allí una hora. Vuelve al centro y, si es sábado, haz la špica en la plaza de las Flores.
-
-**Tarde:** recorre la herradura de Lenuci: Zrinjevac, el Pabellón de Arte, la plaza del Rey Tomislav y el Jardín Botánico. Si te queda energía, coge el tranvía a Maksimir.
-
-**Noche:** cena tradicional y una cerveza artesana. En verano, la alternativa es irte al lago Jarun.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Ciudad Alta y Kaptol | Empieza en la plaza Ban Jelačić y sube a Dolac antes de las 10. Desde ahí, visita la catedral y baja por Tkalčićeva. Luego sube a la Ciudad Alta por la Puerta de Piedra hasta San Marcos, que estará tranquila a esa hora. | Come en la Ciudad Alta o baja a por štrukli. Después, Museo de las Relaciones Rotas y, si te gusta, el de Arte Naíf. A las 12 intenta estar junto a la torre Lotrščak para oír el cañón. | Atardecer en el paseo Strossmayer. Baja en el funicular y cena en Donji Grad o en las calles de alrededor de Tkalčićeva. Termina tomando algo en sus bares. |
+| Día 2 · Mirogoj y Donji Grad | Coge el bus 106 desde Kaptol hasta Mirogoj y pasa allí una hora. Vuelve al centro y, si es sábado, haz la špica en la plaza de las Flores. | Recorre la herradura de Lenuci: Zrinjevac, el Pabellón de Arte, la plaza del Rey Tomislav y el Jardín Botánico. Si te queda energía, coge el tranvía a Maksimir. | Cena tradicional y una cerveza artesana. En verano, la alternativa es irte al lago Jarun. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -163,9 +154,12 @@ Para el centro te bastan los pies. Para Mirogoj, Maksimir, Jarun o Medvednica, u
 
 ## Cuánto cuesta un viaje a Zagreb
 
-- **Ajustado: 50-70 € al día.** Incluye hostal o habitación compartida, burek y mercado para desayunar, menú del día, transporte y un museo.
+**Presupuesto orientativo por día**
 
-- **Medio: 110-160 € al día.** Incluye apartamento o hotel céntrico, comida y cena en restaurante, un par de museos y cervezas.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | 50-70 € al día | Incluye hostal o habitación compartida, burek y mercado para desayunar, menú del día, transporte y un museo. |
+| Medio | 110-160 € al día | Incluye apartamento o hotel céntrico, comida y cena en restaurante, un par de museos y cervezas. |
 
 - **Vuelo:** desde España, con antelación y fuera de temporada alta, es fácil encontrar idas y vueltas por 60-120 €.
 

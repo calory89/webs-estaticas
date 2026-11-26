@@ -37,15 +37,17 @@ Take a cooking class, since the cuisine here is among the best in Morocco. Sever
 
 If you have extra time, day trips go to Meknes and the Roman ruins of Volubilis, to the hillside town of Moulay Idriss Zerhoun, or up to the cedar forests around Azrou and Ifrane. Chefchaouen is possible but a long day.
 
-## How many days, and a suggested route
+## Fez itinerary: 3 days, day by day
 
 Two full days is the minimum. Three is the comfortable answer, because the medina wears you out and a slow pace helps.
 
-**Day 1:** Bab Boujloud, Bou Inania, Talaa Kebira, the Nejjarine fountain, Al-Attarine. Lunch in the medina, then Chouara Tannery in the afternoon light, finishing with sunset at the Marinid Tombs.
+**3-day itinerary for Fez**
 
-**Day 2:** Fes el-Jdid, the palace doors, the Mellah and the Jewish cemetery. After lunch, visit the potters and Borj Nord, or spend the afternoon in Jnan Sbil. A hammam fits well in the evening.
-
-**Day 3:** A day trip to Volubilis and Meknes, or a cooking class and a slow wander in the medina to pick up what you skipped.
+| Day | Plan |
+|---|---|
+| Day 1 | Bab Boujloud, Bou Inania, Talaa Kebira, the Nejjarine fountain, Al-Attarine. Lunch in the medina, then Chouara Tannery in the afternoon light, finishing with sunset at the Marinid Tombs. |
+| Day 2 | Fes el-Jdid, the palace doors, the Mellah and the Jewish cemetery. After lunch, visit the potters and Borj Nord, or spend the afternoon in Jnan Sbil. A hammam fits well in the evening. |
+| Day 3 | A day trip to Volubilis and Meknes, or a cooking class and a slow wander in the medina to pick up what you skipped. |
 
 ## When to go
 

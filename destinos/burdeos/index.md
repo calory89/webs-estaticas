@@ -93,29 +93,15 @@ Los mejores momentos de la ciudad cuestan poco. Estos no cuestan nada:
 
 Para gastar poco, compra pan, queso y una botella de vino en un supermercado y monta un picnic junto al río. Un tinto de Burdeos decente cuesta unos 6-8 € en tienda.
 
-## Itinerario: Burdeos en 3 días
+## Qué ver en Burdeos en 3 días: ruta día a día
 
-### Día 1: centro histórico y río
+**Itinerario de 3 días en Burdeos**
 
-**Mañana:** sube a la Torre Pey-Berland al abrir, visita la catedral y baja por Sainte-Catherine hasta la Grosse Cloche.
-
-**Tarde:** recorre Saint-Pierre, la Porte Cailhau y la Place du Parlement, y después la Place de la Bourse. Continúa por el muelle hacia el sur hasta Saint-Michel.
-
-**Noche:** vuelve a la Bourse para ver el Miroir d'Eau iluminado. Cena en Saint-Michel o en la zona de la Victoire, más barata.
-
-### Día 2: Chartrons, vino y la otra orilla
-
-**Mañana:** si es fin de semana, ostras en el Marché des Capucins. Si no, café en los Chartrons y paseo por la Rue Notre-Dame.
-
-**Tarde:** visita la Cité du Vin y los Bassins de Lumières, que están juntos (tranvía B desde el centro). Vuelve por el Jardin Public.
-
-**Noche:** toma copas en el Bar à Vin y cruza en BatCub o tranvía A a La Bastide para cenar en Darwin.
-
-### Día 3: excursión
-
-**Mañana y tarde:** elige entre Saint-Émilion, si lo tuyo es el vino, o Arcachon y la Duna de Pilat, si quieres mar. Los detalles están más abajo.
-
-**Noche:** despídete con una entrecôte a la bordelesa y un canelé para el camino.
+| Día | Plan |
+|---|---|
+| Día 1 | Centro histórico y río. Mañana: sube a la Torre Pey-Berland al abrir, visita la catedral y baja por Sainte-Catherine hasta la Grosse Cloche. Tarde: recorre Saint-Pierre, la Porte Cailhau y la Place du Parlement, y después la Place de la Bourse. Continúa por el muelle hacia el sur hasta Saint-Michel. Noche: vuelve a la Bourse para ver el Miroir d'Eau iluminado. Cena en Saint-Michel o en la zona de la Victoire, más barata. |
+| Día 2 | Chartrons, vino y la otra orilla. Mañana: si es fin de semana, ostras en el Marché des Capucins. Si no, café en los Chartrons y paseo por la Rue Notre-Dame. Tarde: visita la Cité du Vin y los Bassins de Lumières, que están juntos (tranvía B desde el centro). Vuelve por el Jardin Public. Noche: toma copas en el Bar à Vin y cruza en BatCub o tranvía A a La Bastide para cenar en Darwin. |
+| Día 3 | Excursión. Mañana y tarde: elige entre Saint-Émilion, si lo tuyo es el vino, o Arcachon y la Duna de Pilat, si quieres mar. Los detalles están más abajo. Noche: despídete con una entrecôte a la bordelesa y un canelé para el camino. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -177,9 +163,12 @@ En la ciudad, el centro se recorre andando. Para el resto está la red TBM: tran
 
 Estos son precios por persona y día, sin contar vuelos:
 
-- **Ajustado: 70-100 €.** Alojamiento compartido o hotel económico, menús de mediodía, picnic, museos gratis y transporte público.
+**Presupuesto orientativo por día**
 
-- **Medio: 150-220 €.** Hotel céntrico en habitación doble compartida, cena en bistró, dos visitas de pago, copas de vino y una excursión en tren.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | 70-100 € | Alojamiento compartido o hotel económico, menús de mediodía, picnic, museos gratis y transporte público. |
+| Medio | 150-220 € | Hotel céntrico en habitación doble compartida, cena en bistró, dos visitas de pago, copas de vino y una excursión en tren. |
 
 - **Extras habituales:** Cité du Vin, unos 22 €. Excursión guiada a bodegas del Médoc o Saint-Émilion, entre 80 y 150 €. Docena de ostras en el mercado, unos 20-25 €.
 

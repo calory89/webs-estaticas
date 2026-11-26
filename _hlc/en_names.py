@@ -26,3 +26,26 @@ CITY_EN = {'Sevilla': 'Seville', 'Lisboa': 'Lisbon', 'Londres': 'London', 'Parí
 
 def city_en(c):
     return CITY_EN.get(c, c)
+
+
+# Países en inglés (containedInPlace de las guías EN; ronda SEO 3, 26-nov-2026)
+COUNTRY_EN = {'Albania': 'Albania', 'Alemania': 'Germany', 'Argentina': 'Argentina', 'Australia': 'Australia', 'Austria': 'Austria', 'Bahamas': 'The Bahamas',
+              'Bosnia y Herzegovina': 'Bosnia and Herzegovina', 'Brasil': 'Brazil', 'Bulgaria': 'Bulgaria', 'Bélgica': 'Belgium', 'Cabo Verde': 'Cape Verde', 'Camboya': 'Cambodia',
+              'Canadá': 'Canada', 'Catar': 'Qatar', 'Chequia': 'Czechia', 'Chile': 'Chile', 'China': 'China', 'Chipre': 'Cyprus', 'Colombia': 'Colombia', 'Corea del Sur': 'South Korea',
+              'Costa Rica': 'Costa Rica', 'Croacia': 'Croatia', 'Cuba': 'Cuba', 'Curazao': 'Curaçao', 'Dinamarca': 'Denmark', 'EE. UU.': 'United States', 'Ecuador': 'Ecuador',
+              'Egipto': 'Egypt', 'Emiratos': 'United Arab Emirates', 'Emiratos Árabes Unidos': 'United Arab Emirates', 'Escocia': 'United Kingdom', 'Eslovaquia': 'Slovakia',
+              'Eslovenia': 'Slovenia', 'España': 'Spain', 'Estados Unidos': 'United States', 'Estonia': 'Estonia', 'Filipinas': 'Philippines', 'Finlandia': 'Finland', 'Francia': 'France',
+              'Grecia': 'Greece', 'Hungría': 'Hungary', 'India': 'India', 'Indonesia': 'Indonesia', 'Irak': 'Iraq', 'Irlanda': 'Ireland', 'Islandia': 'Iceland', 'Israel': 'Israel',
+              'Italia': 'Italy', 'Jamaica': 'Jamaica', 'Japón': 'Japan', 'Jordania': 'Jordan', 'Kenia': 'Kenya', 'Kirguistán': 'Kyrgyzstan', 'Letonia': 'Latvia', 'Lituania': 'Lithuania',
+              'Luxemburgo': 'Luxembourg', 'Malasia': 'Malaysia', 'Maldivas': 'Maldives', 'Malta': 'Malta', 'Marruecos': 'Morocco', 'Mauricio': 'Mauritius', 'Montenegro': 'Montenegro',
+              'México': 'Mexico', 'Nepal': 'Nepal', 'Noruega': 'Norway', 'Omán': 'Oman', 'Panamá': 'Panama', 'Países Bajos': 'Netherlands', 'Países Bajos Caribeños': 'Caribbean Netherlands',
+              'Perú': 'Peru', 'Polonia': 'Poland', 'Portugal': 'Portugal', 'Puerto Rico': 'Puerto Rico', 'Reino Unido': 'United Kingdom', 'Rep. Dominicana': 'Dominican Republic',
+              'República Dominicana': 'Dominican Republic', 'Rumanía': 'Romania', 'Serbia': 'Serbia', 'Sicilia': 'Italy', 'Singapur': 'Singapore', 'Sint Maarten': 'Sint Maarten',
+              'Sri Lanka': 'Sri Lanka', 'Sudáfrica': 'South Africa', 'Suecia': 'Sweden', 'Suiza': 'Switzerland', 'Tailandia': 'Thailand', 'Taiwán': 'Taiwan', 'Tanzania': 'Tanzania',
+              'Turquía': 'Turkey', 'Túnez': 'Tunisia', 'Uganda': 'Uganda', 'Uruguay': 'Uruguay', 'Uzbekistán': 'Uzbekistan', 'Vietnam': 'Vietnam'}
+# país real para schema cuando la biblioteca guarda una región
+COUNTRY_ES_FIX = {'Sicilia': 'Italia', 'Escocia': 'Reino Unido', 'EE. UU.': 'Estados Unidos', 'Emiratos': 'Emiratos Árabes Unidos', 'Rep. Dominicana': 'República Dominicana'}
+
+
+def country_en(c):
+    return COUNTRY_EN.get(c, c)

@@ -97,23 +97,12 @@ A lot of Ljubljana costs nothing, which helps make it one of the better-value ca
 
 ## Ljubljana itinerary: 2 days
 
-### Day 1: Old town, castle and river
+**2-day itinerary for Ljubljana**
 
-**Morning:** Start at Prešeren Square and the Triple Bridge, then go to the Central Market while it's in full swing. Step into the Cathedral next door. Walk up to the castle via Študentovska ulica and do the Outlook Tower before the tour groups arrive.
-
-**Afternoon:** Ride the funicular down and have lunch in the old town (Mestni trg and Stari trg). Wander Stari trg and Gornji trg, cross the Cobblers' Bridge and head to Kongresni trg. Look at the University building and the NUK library on your way to Trnovo for Plečnik House if you've booked it.
-
-**Evening:** Have a drink on the Trnovo embankment, then dinner along the river. If it's Friday, eat at Open Kitchen instead. Finish at the bars around the Cobblers' Bridge.
-
-### Day 2: Parks, art and alternative Ljubljana
-
-**Morning:** Have coffee near Prešeren Square, then walk up Čopova ulica (the main shopping street) and on to Tivoli Park. Walk the Jakopič Promenade and climb Rožnik if you have the energy.
-
-**Afternoon:** Spend an hour in the National Gallery, then cross to the Dragon Bridge and walk on to Metelkova. Take a river boat ride or rent a paddleboard in summer.
-
-**Evening:** Watch the sunset from the Nebotičnik terrace. Have dinner with Slovenian wine, then go back to Metelkova if you fancy a late night, or call it a day by the river.
-
-With a third day, go to Lake Bled early or to the Postojna Cave and Predjama Castle (see day trips below).
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Old town, castle and river | Start at Prešeren Square and the Triple Bridge, then go to the Central Market while it's in full swing. Step into the Cathedral next door. Walk up to the castle via Študentovska ulica and do the Outlook Tower before the tour groups arrive. | Ride the funicular down and have lunch in the old town (Mestni trg and Stari trg). Wander Stari trg and Gornji trg, cross the Cobblers' Bridge and head to Kongresni trg. Look at the University building and the NUK library on your way to Trnovo for Plečnik House if you've booked it. | Have a drink on the Trnovo embankment, then dinner along the river. If it's Friday, eat at Open Kitchen instead. Finish at the bars around the Cobblers' Bridge. |
+| Day 2 · Parks, art and alternative Ljubljana | Have coffee near Prešeren Square, then walk up Čopova ulica (the main shopping street) and on to Tivoli Park. Walk the Jakopič Promenade and climb Rožnik if you have the energy. | Spend an hour in the National Gallery, then cross to the Dragon Bridge and walk on to Metelkova. Take a river boat ride or rent a paddleboard in summer. | Watch the sunset from the Nebotičnik terrace. Have dinner with Slovenian wine, then go back to Metelkova if you fancy a late night, or call it a day by the river. With a third day, go to Lake Bled early or to the Postojna Cave and Predjama Castle (see day trips below). |
 
 ## What is overrated (and what to do instead)
 
@@ -181,9 +170,12 @@ In the city you'll walk almost everywhere. City buses (LPP) need an **Urbana car
 
 ## How much a trip to Ljubljana costs
 
-- **Shoestring: €55-75 a day.** That covers a hostel dorm (€25-35), a market breakfast, a set lunch (€10), burek or street food for dinner, free sights and walking.
+**Rough daily budget**
 
-- **Mid-range: €130-200 a day per person (sharing a double).** That gets you a central hotel or a good apartment (€100-160 per room), two sit-down meals with wine, the castle, a boat ride and the odd taxi.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €55-75 a day | That covers a hostel dorm (€25-35), a market breakfast, a set lunch (€10), burek or street food for dinner, free sights and walking. |
+| Mid-range | €130-200 a day per person (sharing a double) | That gets you a central hotel or a good apartment (€100-160 per room), two sit-down meals with wine, the castle, a boat ride and the odd taxi. |
 
 - **Day trip extras:** Bled by bus is about €15 return plus extras, and Postojna Cave is €30-45 depending on the combo ticket.
 

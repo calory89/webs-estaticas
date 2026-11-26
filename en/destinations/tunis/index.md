@@ -93,17 +93,13 @@ A lot of Tunis costs nothing, and the rest is cheap.
 
 ## Tunis itinerary: 3 days
 
-### Day 1: Medina and the colonial centre
+**3-day itinerary for Tunis**
 
-**Morning:** Have lablabi or coffee near the Marché Central, then walk up Avenue Habib Bourguiba to Bab el Bhar. Enter the medina and head up Rue Jamaa Zitouna to the mosque courtyard. **Afternoon:** Explore the souks (Attarine, Chechias, Trouk), eat lunch in the medina, then walk south to Dar Ben Abdallah and Tourbet el Bey. Finish with tea on a rooftop. **Evening:** Stroll the avenue at dusk and eat dinner in the Ville Nouvelle, or book Dar El Jeld for a splurge in a medina palace.
-
-### Day 2: Carthage and Sidi Bou Said
-
-**Morning:** Take the TGM from Tunis Marine to Carthage Salammbô. Walk the Tophet and Punic Ports, then continue to the Antonine Baths. **Afternoon:** Climb Byrsa Hill for the museum and the view, then hop back on the TGM two stops to Sidi Bou Said. **Evening:** Have sunset tea at Café des Délices, then eat dinner in Sidi Bou Said or one stop further in La Marsa.
-
-### Day 3: Bardo and La Marsa (or a day trip)
-
-**Morning:** Visit the Bardo Museum if it is open. Go first thing for the mosaics without crowds. **Afternoon:** Take the TGM to La Marsa for the beach, Café Saf Saf and a seafood lunch. **Evening:** Return to the centre for a final brik and a walk. If the Bardo is closed, swap the day for Dougga or Kairouan.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Medina and the colonial centre | Have lablabi or coffee near the Marché Central, then walk up Avenue Habib Bourguiba to Bab el Bhar. Enter the medina and head up Rue Jamaa Zitouna to the mosque courtyard. | Explore the souks (Attarine, Chechias, Trouk), eat lunch in the medina, then walk south to Dar Ben Abdallah and Tourbet el Bey. Finish with tea on a rooftop. | Stroll the avenue at dusk and eat dinner in the Ville Nouvelle, or book Dar El Jeld for a splurge in a medina palace. |
+| Day 2 · Carthage and Sidi Bou Said | Take the TGM from Tunis Marine to Carthage Salammbô. Walk the Tophet and Punic Ports, then continue to the Antonine Baths. | Climb Byrsa Hill for the museum and the view, then hop back on the TGM two stops to Sidi Bou Said. | Have sunset tea at Café des Délices, then eat dinner in Sidi Bou Said or one stop further in La Marsa. |
+| Day 3 · Bardo and La Marsa (or a day trip) | Visit the Bardo Museum if it is open. Go first thing for the mosaics without crowds. | Take the TGM to La Marsa for the beach, Café Saf Saf and a seafood lunch. | Return to the centre for a final brik and a walk. If the Bardo is closed, swap the day for Dougga or Kairouan. |
 
 ## What is overrated (and what to do instead)
 
@@ -173,11 +169,13 @@ There is no tourist travel pass worth buying. Single tickets are so cheap that i
 
 ## How much a trip to Tunis costs
 
-- **Shoestring: €30-45 a day.** Simple hotel or hostel (€20-30), street food (€6-8), TGM and light rail (€1-2), one paid site (€3-5).
+**Rough daily budget**
 
-- **Mid-range: €80-130 a day.** Medina dar or good centre hotel (€60-90), sit-down meals (€20-30), taxis (€5-10), museums and Carthage (€8-12).
-
-- **Comfort: €180+ a day.** Boutique dar or Sidi Bou Said hotel, palace dinners, private guide or driver.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €30-45 a day | Simple hotel or hostel (€20-30), street food (€6-8), TGM and light rail (€1-2), one paid site (€3-5). |
+| Mid-range | €80-130 a day | Medina dar or good centre hotel (€60-90), sit-down meals (€20-30), taxis (€5-10), museums and Carthage (€8-12). |
+| Comfort | €180+ a day | Boutique dar or Sidi Bou Said hotel, palace dinners, private guide or driver. |
 
 ## Day trips from Tunis
 

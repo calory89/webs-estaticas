@@ -101,29 +101,16 @@ Almost everything that matters here is free. Every beach in Portugal is public, 
 
 This plan assumes a hire car, with three nights in Lagos and three in Tavira. Without a car, swap Day 3 for a boat trip from Lagos and drop Monchique.
 
-### Day 1: Lagos and Ponta da Piedade
+**6-day itinerary for The Algarve**
 
-**Morning:** Fly into Faro and drive 1 hour west, or take the bus. **Afternoon:** Swim at Praia Dona Ana or Camilo, then walk the clifftop to Ponta da Piedade. **Evening:** Sunset at the lighthouse, then dinner in the old town around Rua 25 de Abril, though the better tables are on the side streets.
-
-### Day 2: Sagres and the wild west
-
-**Morning:** Drive to Sagres (35 minutes) and see the fortress, then go to Praia do Beliche or Tonel. **Afternoon:** Head north to Bordeira or Arrifana for dunes and surf. **Evening:** Back to Cabo de São Vicente for sunset, and grilled fish in Sagres.
-
-### Day 3: Caves and cliffs
-
-**Morning:** An early kayak tour from Benagil to the cave. **Afternoon:** Walk part of the Seven Hanging Valleys trail and swim at Praia da Marinha. **Evening:** Ferragudo, a fishing village across the river from Portimão, for sardines by the harbour.
-
-### Day 4: Silves and Monchique, then east
-
-**Morning:** Silves castle. **Afternoon:** Fóia viewpoint and piri-piri chicken in Monchique, then drive to Tavira (about 1h30). **Evening:** An easy riverside dinner in Tavira.
-
-### Day 5: Tavira and its islands
-
-**Morning:** Climb to the castle, visit the Torre de Tavira and wander the churches. **Afternoon:** Ferry to Ilha de Tavira or go to Praia do Barril. **Evening:** Cabanas de Tavira or Santa Luzia, the "octopus capital", for grilled polvo.
-
-### Day 6: Olhão, Ria Formosa and Faro
-
-**Morning:** Olhão market, then the ferry to Culatra. **Afternoon:** Faro old town and the bone chapel. **Evening:** Dinner in Faro's Cidade Velha, close to the airport for an early flight.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Lagos and Ponta da Piedade | Fly into Faro and drive 1 hour west, or take the bus. | Swim at Praia Dona Ana or Camilo, then walk the clifftop to Ponta da Piedade. | Sunset at the lighthouse, then dinner in the old town around Rua 25 de Abril, though the better tables are on the side streets. |
+| Day 2 · Sagres and the wild west | Drive to Sagres (35 minutes) and see the fortress, then go to Praia do Beliche or Tonel. | Head north to Bordeira or Arrifana for dunes and surf. | Back to Cabo de São Vicente for sunset, and grilled fish in Sagres. |
+| Day 3 · Caves and cliffs | An early kayak tour from Benagil to the cave. | Walk part of the Seven Hanging Valleys trail and swim at Praia da Marinha. | Ferragudo, a fishing village across the river from Portimão, for sardines by the harbour. |
+| Day 4 · Silves and Monchique, then east | Silves castle. | Fóia viewpoint and piri-piri chicken in Monchique, then drive to Tavira (about 1h30). | An easy riverside dinner in Tavira. |
+| Day 5 · Tavira and its islands | Climb to the castle, visit the Torre de Tavira and wander the churches. | Ferry to Ilha de Tavira or go to Praia do Barril. | Cabanas de Tavira or Santa Luzia, the "octopus capital", for grilled polvo. |
+| Day 6 · Olhão, Ria Formosa and Faro | Olhão market, then the ferry to Culatra. | Faro old town and the bone chapel. | Dinner in Faro's Cidade Velha, close to the airport for an early flight. |
 
 ## What is overrated (and what to do instead)
 
@@ -189,9 +176,12 @@ The **regional train** runs from Lagos to Vila Real de Santo António via Silves
 
 ## How much a trip to The Algarve costs
 
-- **Shoestring (€60-80/day):** Hostel dorm €25-35, supermarket breakfast, prato do dia lunch, a cheap dinner, trains and buses, free beaches and hikes.
+**Rough daily budget**
 
-- **Mid-range (€130-200/day per person, sharing):** A double in a guesthouse, a hire car split two ways, one paid activity (kayak, boat), seafood dinners with wine.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €60-80/day | Hostel dorm €25-35, supermarket breakfast, prato do dia lunch, a cheap dinner, trains and buses, free beaches and hikes. |
+| Mid-range | €130-200/day per person, sharing | A double in a guesthouse, a hire car split two ways, one paid activity (kayak, boat), seafood dinners with wine. |
 
 - **Extras:** Benagil kayak €35-45, surf lesson €35-50, Sagres fortress €3, cataplana for two €35-50.
 

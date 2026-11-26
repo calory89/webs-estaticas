@@ -97,23 +97,16 @@ Chicago tiene muchos planes gratuitos, y además de calidad. Con un abono de tra
 
 - Recorrer el Loop en la línea Brown o en la Pink elevada: por 2,50 $ te das una vuelta entre los rascacielos que vale tanto como un tour.
 
-## Itinerario: Chicago en 4 días
+## Qué ver en Chicago en 4 días: ruta día a día
 
-### Día 1: el Loop y el río
+**Itinerario de 4 días en Chicago**
 
-**Mañana:** Millennium Park temprano, el Bean y la Crown Fountain, y de ahí al Chicago Cultural Center. **Tarde:** Art Institute (3 horas sin prisa). **Noche:** crucero de arquitectura al atardecer, paseo por el Riverwalk y cena de deep dish en Lou Malnati's o Giordano's.
-
-### Día 2: Museum Campus y el sur
-
-**Mañana:** Field Museum, y paseo por la península del Adler Planetarium para la mejor vista del skyline desde el sur. **Tarde:** autobús 6 o tren Metra Electric hasta Hyde Park y el Museum of Science and Industry. **Noche:** blues en Buddy Guy's Legends, en el South Loop.
-
-### Día 3: barrios del oeste
-
-**Mañana:** Pink Line a Pilsen, murales de la calle 18 y el museo mexicano; tacos para comer. **Tarde:** Blue Line hasta Damen, paseo por Wicker Park y The 606. **Noche:** cena en Fulton Market, el antiguo barrio de mataderos convertido en la zona gastronómica de moda.
-
-### Día 4: norte y lago
-
-**Mañana:** Lincoln Park, zoo e invernadero. **Tarde:** bici por la Lakefront Trail hasta North Avenue Beach; si es temporada, partido en Wrigley Field. **Noche:** mirador del 360 Chicago al anochecer y copa final en el Green Mill.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · El Loop y el río | Millennium Park temprano, el Bean y la Crown Fountain, y de ahí al Chicago Cultural Center. | Art Institute (3 horas sin prisa). | Crucero de arquitectura al atardecer, paseo por el Riverwalk y cena de deep dish en Lou Malnati's o Giordano's. |
+| Día 2 · Museum Campus y el sur | Field Museum, y paseo por la península del Adler Planetarium para la mejor vista del skyline desde el sur. | Autobús 6 o tren Metra Electric hasta Hyde Park y el Museum of Science and Industry. | Blues en Buddy Guy's Legends, en el South Loop. |
+| Día 3 · Barrios del oeste | Pink Line a Pilsen, murales de la calle 18 y el museo mexicano; tacos para comer. | Blue Line hasta Damen, paseo por Wicker Park y The 606. | Cena en Fulton Market, el antiguo barrio de mataderos convertido en la zona gastronómica de moda. |
+| Día 4 · Norte y lago | Lincoln Park, zoo e invernadero. | Bici por la Lakefront Trail hasta North Avenue Beach; si es temporada, partido en Wrigley Field. | Mirador del 360 Chicago al anochecer y copa final en el Green Mill. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -181,12 +174,14 @@ Para 4 días, el de 7 días compensa. Las bicis **Divvy** son muy útiles junto 
 
 ## Cuánto cuesta un viaje a Chicago
 
-- **Presupuesto ajustado: 110-150 € al día.** Albergue o habitación compartida (50-70 €), comida de hot dogs, beef y tacos (30 €), transporte con abono (3 €), una entrada al día y planes gratis.
+**Presupuesto orientativo por día**
 
-- **Presupuesto medio: 220-320 € al día.** Hotel de tres estrellas compartiendo habitación (90-140 € por persona), restaurantes medios (60-80 €), un museo o crucero (30-60 €), copas y algún concierto.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Presupuesto ajustado | 110-150 € al día | Albergue o habitación compartida (50-70 €), comida de hot dogs, beef y tacos (30 €), transporte con abono (3 €), una entrada al día y planes gratis. |
+| Presupuesto medio | 220-320 € al día | Hotel de tres estrellas compartiendo habitación (90-140 € por persona), restaurantes medios (60-80 €), un museo o crucero (30-60 €), copas y algún concierto. |
 
 - **Vuelos desde España:** en temporada baja se encuentran ida y vuelta por 450-650 €, con escala o directo desde Madrid según la época. En verano, de 700 € para arriba.
-
 Si vas a ver varios museos y el crucero, mira el **Go City Chicago** o el **CityPASS**: con tres o cuatro entradas suelen compensar.
 
 ## Excursiones de un día desde Chicago

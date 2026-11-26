@@ -85,23 +85,16 @@ Buena parte de lo mejor de Delhi no cuesta nada. Son gratis la Jama Masjid (salv
 
 El metro es barato (casi ningún trayecto pasa de 0,60 €) y un chai en la calle cuesta unos 15-20 céntimos. Con 10 € al día en comida y transporte se vive bien si no te importa comer en puestos y dhabas.
 
-## Itinerario: Nueva Delhi en 4 días
+## Qué ver en Nueva Delhi en 4 días: ruta día a día
 
-### Día 1: Old Delhi
+**Itinerario de 4 días en Nueva Delhi**
 
-**Mañana:** metro a Chandni Chowk, paseo por los bazares y Khari Baoli antes de que llegue el calor y el tráfico. Desayuno de parathas en Paranthe Wali Gali. **Tarde:** Jama Masjid, comida en Karim's o en los puestos de la calle de enfrente, y Fuerte Rojo. **Noche:** vuelta a Connaught Place a descansar; no hace falta más para el primer día.
-
-### Día 2: Nueva Delhi colonial
-
-**Mañana:** Agrasen ki Baoli a primera hora y Gurudwara Bangla Sahib, quedándote a comer en el langar. **Tarde:** Museo Nacional en las horas de calor y paseo por Kartavya Path hasta India Gate al atardecer. **Noche:** cena en Khan Market, zona cara pero con buenos restaurantes.
-
-### Día 3: Mausoleos y Nizamuddin
-
-**Mañana:** Lodhi Garden y los murales del Lodhi Art District. **Tarde:** Tumba de Humayun hacia las cuatro, para coger la mejor luz. **Noche:** si es jueves, qawwali en Nizamuddin, que está al lado. Cena en los puestos de kebab del barrio.
-
-### Día 4: El sur
-
-**Mañana:** Qutub Minar a primera hora y Parque Arqueológico de Mehrauli. **Tarde:** Hauz Khas Village, ruinas y lago. Si te sobran fuerzas, el Templo del Loto, o bien Akshardham, al que llegas cruzando la ciudad en metro. **Noche:** cena y copas en Hauz Khas.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Old Delhi | Metro a Chandni Chowk, paseo por los bazares y Khari Baoli antes de que llegue el calor y el tráfico. Desayuno de parathas en Paranthe Wali Gali. | Jama Masjid, comida en Karim's o en los puestos de la calle de enfrente, y Fuerte Rojo. | Vuelta a Connaught Place a descansar; no hace falta más para el primer día. |
+| Día 2 · Nueva Delhi colonial | Agrasen ki Baoli a primera hora y Gurudwara Bangla Sahib, quedándote a comer en el langar. | Museo Nacional en las horas de calor y paseo por Kartavya Path hasta India Gate al atardecer. | Cena en Khan Market, zona cara pero con buenos restaurantes. |
+| Día 3 · Mausoleos y Nizamuddin | Lodhi Garden y los murales del Lodhi Art District. | Tumba de Humayun hacia las cuatro, para coger la mejor luz. | Si es jueves, qawwali en Nizamuddin, que está al lado. Cena en los puestos de kebab del barrio. |
+| Día 4 · El sur | Qutub Minar a primera hora y Parque Arqueológico de Mehrauli. | Hauz Khas Village, ruinas y lago. Si te sobran fuerzas, el Templo del Loto, o bien Akshardham, al que llegas cruzando la ciudad en metro. | Cena y copas en Hauz Khas. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -159,14 +152,15 @@ Por la ciudad, el **metro** es limpio, rápido y barato, con trayectos de entre 
 
 ## Cuánto cuesta un viaje a Nueva Delhi
 
-- **Presupuesto ajustado (25-35 € al día):** hostal en Paharganj o Karol Bagh, comida en la calle, metro y monumentos gratis o con una entrada al día.
+**Presupuesto orientativo por día**
 
-- **Presupuesto medio (60-100 € al día):** hotel bueno en Connaught Place, restaurantes, Uber cuando apriete el calor y dos entradas al día.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Presupuesto ajustado | 25-35 € al día | Hostal en Paharganj o Karol Bagh, comida en la calle, metro y monumentos gratis o con una entrada al día. |
+| Presupuesto medio | 60-100 € al día | Hotel bueno en Connaught Place, restaurantes, Uber cuando apriete el calor y dos entradas al día. |
 
 - **Entradas:** cuenta unos 20-25 € para los grandes monumentos de pago (Humayun, Qutub Minar, Fuerte Rojo y algún museo).
-
 - **Vuelo desde España:** ida y vuelta con escala, entre 450 y 800 € según la época.
-
 - **Visado:** el e-Visa turístico ronda los 25-80 € según la duración; compruébalo en la web oficial del gobierno indio.
 
 ## Excursiones de un día desde Nueva Delhi

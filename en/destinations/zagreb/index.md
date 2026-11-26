@@ -105,21 +105,12 @@ Many museums have free entry days. The details change, so check the museum websi
 
 ## Zagreb itinerary: 2 days
 
-### Day 1: Upper Town, Kaptol and Dolac
+**2-day itinerary for Zagreb**
 
-**Morning:** Start at Ban Jelačić Square, then walk up to Dolac Market around 8:30am for cheese, fruit and burek from a nearby bakery. Walk across to the cathedral, then up Tkalčićeva street, which is quiet in the morning.
-
-**Afternoon:** Go through the Stone Gate to St Mark's, then visit the Museum of Broken Relationships and the Naïve Art museum. Be on the Strossmayer Promenade at noon for the cannon. Have lunch with štrukli at La Štruk, then take the funicular down.
-
-**Evening:** Come back up to the Upper Town at dusk for the gas lamps, then have dinner and drinks on Tkalčićeva or in the streets around Preradovićev trg.
-
-### Day 2: Mirogoj, the Lower Town and a park
-
-**Morning:** Take bus 106 from Kaptol to Mirogoj early, when it's at its most peaceful. Back in town, have coffee on Bogovićeva.
-
-**Afternoon:** Walk the Green Horseshoe: Zrinjevac, the Art Pavilion, the Botanical Garden and Marulić Square. Add the Mimara Museum if it's raining, or take a tram to Maksimir or Jarun if it's sunny.
-
-**Evening:** Eat a traditional dinner of turkey with mlinci or sarma, then go for craft beer or a wine bar. If you have a third day, head to Plitvice or Samobor.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Upper Town, Kaptol and Dolac | Start at Ban Jelačić Square, then walk up to Dolac Market around 8:30am for cheese, fruit and burek from a nearby bakery. Walk across to the cathedral, then up Tkalčićeva street, which is quiet in the morning. | Go through the Stone Gate to St Mark's, then visit the Museum of Broken Relationships and the Naïve Art museum. Be on the Strossmayer Promenade at noon for the cannon. Have lunch with štrukli at La Štruk, then take the funicular down. | Come back up to the Upper Town at dusk for the gas lamps, then have dinner and drinks on Tkalčićeva or in the streets around Preradovićev trg. |
+| Day 2 · Mirogoj, the Lower Town and a park | Take bus 106 from Kaptol to Mirogoj early, when it's at its most peaceful. Back in town, have coffee on Bogovićeva. | Walk the Green Horseshoe: Zrinjevac, the Art Pavilion, the Botanical Garden and Marulić Square. Add the Mimara Museum if it's raining, or take a tram to Maksimir or Jarun if it's sunny. | Eat a traditional dinner of turkey with mlinci or sarma, then go for craft beer or a wine bar. If you have a third day, head to Plitvice or Samobor. |
 
 ## What is overrated (and what to do instead)
 

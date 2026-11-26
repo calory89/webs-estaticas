@@ -99,27 +99,17 @@ Rovaniemi no es barata, pero hay bastante que hacer sin pagar:
 
 - Alquilar coche entre varios: con 4 personas, salir a por auroras y a Pyhä-Luosto cuesta menos que una sola excursión organizada.
 
-## Itinerario: Rovaniemi y Laponia en 5 días
+## Qué ver en Rovaniemi y Laponia en 5 días: ruta día a día
 
-### Día 1: el centro y el río
+**Itinerario de 5 días en Rovaniemi y Laponia**
 
-**Mañana:** Arktikum con calma, y si te queda energía, Pilke al lado. **Tarde:** Korundi y paseo por Rantakatu hasta el puente Jätkänkynttilä para verlo con la última luz. **Noche:** cena de reno en el centro y, si la previsión acompaña, mira el cielo desde la orilla del río.
-
-### Día 2: Aldea de Papá Noel y renos
-
-**Mañana:** bus 8 a la Aldea de Papá Noel nada más abrir, antes de que lleguen los grupos. Correo, línea del círculo, visita a Santa. **Tarde:** granja de renos (varias están muy cerca de la aldea). **Noche:** sauna en el hotel y a dormir pronto, que mañana toca madrugar.
-
-### Día 3: huskies y auroras
-
-**Mañana:** safari con huskies, que suele incluir recogida en el hotel. **Tarde:** descanso o paseo por la plaza de Lordi y la iglesia. **Noche:** excursión de auroras o, si tienes coche, sal tú hacia el norte buscando cielo despejado.
-
-### Día 4: naturaleza fuera de la ciudad
-
-**Mañana:** coche hasta Pyhä-Luosto o Ranua (si vas con niños, Ranua). **Tarde:** ruta corta por el parque o mina de amatistas en Luosto. **Noche:** vuelta a Rovaniemi; en Luosto hay cielos muy oscuros para auroras, puedes esperar allí antes de regresar.
-
-### Día 5: Ounasvaara y el río
-
-**Mañana:** raquetas o esquí de fondo en Ounasvaara. **Tarde:** flotar en el río helado o moto de nieve, según presupuesto. **Noche:** última cena con leipäjuusto y mermelada de mora ártica de postre.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · El centro y el río | Arktikum con calma, y si te queda energía, Pilke al lado. | Korundi y paseo por Rantakatu hasta el puente Jätkänkynttilä para verlo con la última luz. | Cena de reno en el centro y, si la previsión acompaña, mira el cielo desde la orilla del río. |
+| Día 2 · Aldea de Papá Noel y renos | Bus 8 a la Aldea de Papá Noel nada más abrir, antes de que lleguen los grupos. Correo, línea del círculo, visita a Santa. | Granja de renos (varias están muy cerca de la aldea). | Sauna en el hotel y a dormir pronto, que mañana toca madrugar. |
+| Día 3 · Huskies y auroras | Safari con huskies, que suele incluir recogida en el hotel. | Descanso o paseo por la plaza de Lordi y la iglesia. | Excursión de auroras o, si tienes coche, sal tú hacia el norte buscando cielo despejado. |
+| Día 4 · Naturaleza fuera de la ciudad | Coche hasta Pyhä-Luosto o Ranua (si vas con niños, Ranua). | Ruta corta por el parque o mina de amatistas en Luosto. | Vuelta a Rovaniemi; en Luosto hay cielos muy oscuros para auroras, puedes esperar allí antes de regresar. |
+| Día 5 · Ounasvaara y el río | Raquetas o esquí de fondo en Ounasvaara. | Flotar en el río helado o moto de nieve, según presupuesto. | Última cena con leipäjuusto y mermelada de mora ártica de postre. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -165,12 +155,14 @@ En la ciudad se va andando: el centro es pequeño. Para la Aldea de Papá Noel, 
 
 Laponia es cara, y las actividades disparan el presupuesto. Cifras por persona y día, sin vuelos:
 
-- **Ajustado: unos 120-150 € al día.** Apartamento compartido (40-60 €), supermercado y lounas (30 €), transporte y una actividad barata repartida (raquetas, sauna, entradas a museos).
+**Presupuesto orientativo por día**
 
-- **Medio: unos 250-350 € al día.** Hotel en el centro (70-120 € por persona), restaurante en cena (60 €), y una actividad grande cada día o cada dos (huskies, renos, auroras).
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | unos 120-150 € al día | Apartamento compartido (40-60 €), supermercado y lounas (30 €), transporte y una actividad barata repartida (raquetas, sauna, entradas a museos). |
+| Medio | unos 250-350 € al día | Hotel en el centro (70-120 € por persona), restaurante en cena (60 €), y una actividad grande cada día o cada dos (huskies, renos, auroras). |
 
 - **Actividades sueltas:** huskies 150-250 €, renos 100-150 €, auroras 100-150 €, moto de nieve 150-200 €, río helado 100-130 €.
-
 - **Vuelos:** desde España suele haber directos en temporada de invierno; si no, con escala en Helsinki. Reserva con meses de antelación si vas en diciembre.
 
 ## Excursiones de un día desde Rovaniemi y Laponia

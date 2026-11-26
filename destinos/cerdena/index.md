@@ -35,21 +35,20 @@ Lo básico es playa, pero conviene mezclar. Haz una ruta a pie por la costa de B
 
 Si te gusta la montaña, la garganta de Su Gorropu, en el Supramonte, es un buen día de excursión con ropa de trekking. Para algo más tranquilo, el Trenino Verde recorre tramos del interior en vía estrecha, más por el paisaje que por la prisa. Y si pasas por Orgosolo, en la Barbagia, merecen un paseo los murales políticos que cubren las paredes.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Cerdeña en 7 días: ruta día a día
 
 Una semana basta para ver lo esencial del oeste y el sur sin correr. Si tienes diez días, añade la costa este y la Gallura. Intentar abarcarlo todo en siete es la manera más rápida de pasarte la mitad del viaje en la carretera.
 
-- **Días 1 y 2:** Cagliari, Castello, mercado, atardecer y baño en la playa del Poetto.
+**Itinerario de 7 días en Cerdeña**
 
-- **Día 3:** sales hacia Barumini, visitas Su Nuraxi y duermes en Oristano o en Cabras.
-
-- **Día 4:** Tharros, Is Arutas y la península del Sinis.
-
-- **Día 5:** Bosa y carretera costera hasta Alghero.
-
-- **Día 6:** Alghero, Capo Caccia y Escala del Cabirol.
-
-- **Día 7:** Stintino y La Pelosa, y vuelo de vuelta desde Alghero.
+| Día | Plan |
+|---|---|
+| Días 1-2 | Cagliari, Castello, mercado, atardecer y baño en la playa del Poetto. |
+| Día 3 | Sales hacia Barumini, visitas Su Nuraxi y duermes en Oristano o en Cabras. |
+| Día 4 | Tharros, Is Arutas y la península del Sinis. |
+| Día 5 | Bosa y carretera costera hasta Alghero. |
+| Día 6 | Alghero, Capo Caccia y Escala del Cabirol. |
+| Día 7 | Stintino y La Pelosa, y vuelo de vuelta desde Alghero. |
 
 Con billetes de entrada por Cagliari y salida por Alghero evitas deshacer camino. Algunas aerolíneas lo permiten sin complicaciones, pero el alquiler de coche con devolución en otra ciudad suele cobrar un suplemento, así que compara.
 
@@ -97,11 +96,13 @@ Para moverse, el coche de alquiler es casi obligatorio fuera de las ciudades. Re
 
 ## Presupuesto orientativo por día
 
-- **Ajustado (50-70 euros):** habitación sencilla o agriturismo fuera de temporada, comida en mercados y trattorias, y coche compartido.
+**Presupuesto orientativo por día**
 
-- **Medio (90-130 euros):** hotel o apartamento correcto, coche de alquiler, dos comidas fuera y alguna entrada o excursión.
-
-- **Comodo (150 euros o más):** hotel con vistas, restaurantes de pescado, barco privado o excursiones al golfo de Orosei.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | 50-70 euros | Habitación sencilla o agriturismo fuera de temporada, comida en mercados y trattorias, y coche compartido. |
+| Medio | 90-130 euros | Hotel o apartamento correcto, coche de alquiler, dos comidas fuera y alguna entrada o excursión. |
+| Comodo | 150 euros o más | Hotel con vistas, restaurantes de pescado, barco privado o excursiones al golfo de Orosei. |
 
 Son cifras generales: en agosto, cualquier categoría sube con facilidad un tercio o más. El alquiler de coche y el combustible suelen ser lo que más pesa en el presupuesto.
 

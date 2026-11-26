@@ -97,29 +97,19 @@ Las playas en México son públicas por ley, aunque los hoteles a veces intenten
 
 - Ballenas desde la orilla en temporada: mira desde los miradores del Corredor con prismáticos.
 
-## Itinerario: Los Cabos en 5 días
+## Qué ver en Los Cabos en 5 días: ruta día a día
 
 Lo ideal es alquilar coche al menos dos o tres días. Si no, combina el bus urbano entre los dos Cabos con alguna excursión organizada.
 
-### Día 1: San José del Cabo
+**Itinerario de 5 días en Los Cabos**
 
-**Mañana:** llegada al aeropuerto (está al lado de San José) y paseo por el Estero. **Tarde:** playa en Palmilla. **Noche:** centro de San José, Plaza Mijares y cena en la zona del Distrito del Arte (si es jueves, coincide con el Art Walk).
-
-### Día 2: Cabo San Lucas y El Arco
-
-**Mañana:** bus o coche a Cabo San Lucas (unos 40 minutos) y lancha temprano al Arco con parada en Playa del Amor. **Tarde:** comida de tacos de pescado y Playa Médano. **Noche:** atardecer en el Pacífico y paseo por la Marina.
-
-### Día 3: Playas del Corredor
-
-**Mañana:** Bahía Santa María a primera hora. **Tarde:** Playa Chileno, snorkel y descanso. **Noche:** cena en Cabo San Lucas o vuelta a San José; si es temporada y quieres darte un capricho, Flora Farms.
-
-### Día 4: Todos Santos y Cerritos
-
-**Mañana:** carretera hacia Todos Santos (una hora en coche desde Cabo San Lucas). Paseo por el pueblo y café. **Tarde:** Playa Cerritos, a 15 minutos, para ver surfistas o tomar una clase. **Noche:** vuelta con el atardecer en la carretera del Pacífico.
-
-### Día 5: Ballenas o Cabo Pulmo
-
-**Mañana:** en invierno, salida de avistamiento de ballenas desde Cabo San Lucas o San José. Fuera de temporada, Cabo Pulmo para snorkel. **Tarde:** última playa y compras en el Mercado Orgánico si es sábado. **Noche:** cena tranquila en San José, que queda cerca del aeropuerto.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · San José del Cabo | Llegada al aeropuerto (está al lado de San José) y paseo por el Estero. | Playa en Palmilla. | Centro de San José, Plaza Mijares y cena en la zona del Distrito del Arte (si es jueves, coincide con el Art Walk). |
+| Día 2 · Cabo San Lucas y El Arco | Bus o coche a Cabo San Lucas (unos 40 minutos) y lancha temprano al Arco con parada en Playa del Amor. | Comida de tacos de pescado y Playa Médano. | Atardecer en el Pacífico y paseo por la Marina. |
+| Día 3 · Playas del Corredor | Bahía Santa María a primera hora. | Playa Chileno, snorkel y descanso. | Cena en Cabo San Lucas o vuelta a San José; si es temporada y quieres darte un capricho, Flora Farms. |
+| Día 4 · Todos Santos y Cerritos | Carretera hacia Todos Santos (una hora en coche desde Cabo San Lucas). Paseo por el pueblo y café. | Playa Cerritos, a 15 minutos, para ver surfistas o tomar una clase. | Vuelta con el atardecer en la carretera del Pacífico. |
+| Día 5 · Ballenas o Cabo Pulmo | En invierno, salida de avistamiento de ballenas desde Cabo San Lucas o San José. Fuera de temporada, Cabo Pulmo para snorkel. | Última playa y compras en el Mercado Orgánico si es sábado. | Cena tranquila en San José, que queda cerca del aeropuerto. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 

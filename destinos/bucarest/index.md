@@ -39,15 +39,17 @@ Si el cuerpo pide descanso, el complejo termal Therme București, al norte de la
 
 Y si dispones de un día extra, haz una escapada a Brașov, Sinaia o el castillo de Bran. En tren se llega bien a las dos primeras. Bran es el de la leyenda de Drácula, pero conviene ir con la expectativa ajustada: es más bonito por fuera y el vínculo con Vlad Țepeș es flojo.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Bucarest en 3 días: ruta día a día
 
 Tres días es lo justo para ver lo importante sin correr. Con dos te quedas con lo básico, y con cuatro o cinco puedes sumar una excursión a los Cárpatos.
 
-- **Día 1:** casco antiguo por la mañana (Lipscani, Stavropoleos, Cărturești Carusel), comida en la zona y tarde por Calea Victoriei hasta Piața Revoluției.
+**Itinerario de 3 días en Bucarest**
 
-- **Día 2:** visita al Parlamento a primera hora, paseo por Bulevardul Unirii y tarde en el Museo del Campesino. Cena por Piața Victoriei o en el centro.
-
-- **Día 3:** parque Herăstrău con el Museo de la Aldea y Arcul de Triumf. Por la tarde, Cișmigiu y un último café por Calea Victoriei.
+| Día | Plan |
+|---|---|
+| Día 1 | Casco antiguo por la mañana (Lipscani, Stavropoleos, Cărturești Carusel), comida en la zona y tarde por Calea Victoriei hasta Piața Revoluției. |
+| Día 2 | Visita al Parlamento a primera hora, paseo por Bulevardul Unirii y tarde en el Museo del Campesino. Cena por Piața Victoriei o en el centro. |
+| Día 3 | Parque Herăstrău con el Museo de la Aldea y Arcul de Triumf. Por la tarde, Cișmigiu y un último café por Calea Victoriei. |
 
 ## Cuándo ir a Bucarest
 
@@ -89,11 +91,13 @@ Dentro de la ciudad, el metro (Metrorex) es rápido y económico, con viajes por
 
 ## Presupuesto orientativo por día
 
-- **Ajustado (40-55 euros):** hostel, menús del día, transporte público y museos baratos.
+**Presupuesto orientativo por día**
 
-- **Cómodo (70-100 euros):** hotel de tres estrellas o apartamento, comida en restaurante, alguna excursión y desplazamientos en Bolt.
-
-- **Holgado (120 euros o más):** buen hotel, restaurantes de nivel y visitas guiadas privadas.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | 40-55 euros | Hostel, menús del día, transporte público y museos baratos. |
+| Cómodo | 70-100 euros | Hotel de tres estrellas o apartamento, comida en restaurante, alguna excursión y desplazamientos en Bolt. |
+| Holgado | 120 euros o más | Buen hotel, restaurantes de nivel y visitas guiadas privadas. |
 
 La moneda es el leu rumano (RON), no el euro. Muchos sitios aceptan tarjeta, pero conviene llevar algo de efectivo para mercados y locales pequeños. Mejor sacar dinero en cajeros de un banco y rechazar la conversión automática a euros.
 

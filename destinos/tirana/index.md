@@ -89,29 +89,15 @@ Buena parte de qué ver en Tirana no cuesta nada. Son gratis la plaza Skanderbeg
 
 - El free tour, con la propina que quieras.
 
-## Itinerario: Tirana en 3 días
+## Qué ver en Tirana en 3 días: ruta día a día
 
-### Día 1: centro y comunismo
+**Itinerario de 3 días en Tirana**
 
-**Mañana:** desayuno de byrek y café, plaza Skanderbeg, mezquita Et'hem Bey y Torre del Reloj. Luego Bunk'Art 2, mejor pronto antes de que lleguen los grupos.
-
-**Tarde:** comida en el Pazari i Ri, después el puente de los Curtidores, el castillo y la Casa de las Hojas. Termina en la Pirámide al atardecer.
-
-**Noche:** paseo por Blloku, Postbllok y cena con copa en la zona.
-
-### Día 2: montaña y parque
-
-**Mañana:** bus urbano hacia Bunk'Art 1 y, tras la visita, el teleférico del Dajti. Come arriba con vistas.
-
-**Tarde:** vuelta al centro, catedral ortodoxa y mezquita Namazgah, y paseo por el Gran Parque y el lago.
-
-**Noche:** cena tradicional en un restaurante como Oda (cerca del bazar) o Mullixhiu (en el parque, cocina albanesa moderna, algo más cara).
-
-### Día 3: excursión
-
-**Mañana y tarde:** Krujë si quieres algo corto (media jornada) o Berat si te apetece el día completo. Detalles más abajo.
-
-**Noche:** última cena en el bazar o en Blloku, y a dormir pronto si el vuelo es temprano.
+| Día | Plan |
+|---|---|
+| Día 1 | Centro y comunismo. Mañana: desayuno de byrek y café, plaza Skanderbeg, mezquita Et'hem Bey y Torre del Reloj. Luego Bunk'Art 2, mejor pronto antes de que lleguen los grupos. Tarde: comida en el Pazari i Ri, después el puente de los Curtidores, el castillo y la Casa de las Hojas. Termina en la Pirámide al atardecer. Noche: paseo por Blloku, Postbllok y cena con copa en la zona. |
+| Día 2 | Montaña y parque. Mañana: bus urbano hacia Bunk'Art 1 y, tras la visita, el teleférico del Dajti. Come arriba con vistas. Tarde: vuelta al centro, catedral ortodoxa y mezquita Namazgah, y paseo por el Gran Parque y el lago. Noche: cena tradicional en un restaurante como Oda (cerca del bazar) o Mullixhiu (en el parque, cocina albanesa moderna, algo más cara). |
+| Día 3 | Excursión. Mañana y tarde: Krujë si quieres algo corto (media jornada) o Berat si te apetece el día completo. Detalles más abajo. Noche: última cena en el bazar o en Blloku, y a dormir pronto si el vuelo es temprano. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -167,9 +153,12 @@ En la ciudad todo el centro se hace a pie. Para Bunk'Art 1 y el Dajti usa el bus
 
 ## Cuánto cuesta un viaje a Tirana
 
-- **Ajustado (unos 35-45 € al día)**: hostal, byrek y comida local, bus urbano, museos baratos.
+**Presupuesto orientativo por día**
 
-- **Medio (unos 80-110 € al día)**: hotel de gama media, cenas en restaurante, teleférico, algún cóctel y una excursión.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | unos 35-45 € al día | Hostal, byrek y comida local, bus urbano, museos baratos. |
+| Medio | unos 80-110 € al día | Hotel de gama media, cenas en restaurante, teleférico, algún cóctel y una excursión. |
 
 - **Moneda**: el lek. 1 € equivale a unos 100 lek. En muchos sitios aceptan euros, pero con cambio desfavorable.
 

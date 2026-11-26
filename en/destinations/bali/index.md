@@ -37,17 +37,18 @@ Surf is the obvious one. Kuta and Canggu suit beginners, and Uluwatu, Padang Pad
 
 Cooking classes are worth a morning, especially in Ubud, where many start with a market visit. Add a yoga class, a Balinese massage (cheap, so book one more than you think you need), a Kecak or Legong dance performance, or a day of snorkelling off Nusa Lembongan or Amed. If you want something quieter, rent a bicycle in the Ubud countryside and stay off the main road.
 
-## How many days, and a suggested route
+## Bali itinerary: 7 days, day by day
 
 Five days is the bare minimum. Seven to ten is comfortable, and two weeks lets you add the north or a Gili island. Do not split your time among five bases.
 
-- **Days 1-2: Uluwatu or Sanur.** Recover from the flight, see the temple at sunset, eat grilled fish at Jimbaran.
+**7-day itinerary for Bali**
 
-- **Days 3-5: Ubud.** Terraces, Tirta Empul, a cooking class and a day of wandering the surrounding villages.
-
-- **Day 6: Mount Batur sunrise,** then back to rest or continue north.
-
-- **Day 7: Sidemen or the east coast,** then back toward the airport.
+| Day | Plan |
+|---|---|
+| Days 1-2 | Uluwatu or Sanur. Recover from the flight, see the temple at sunset, eat grilled fish at Jimbaran. |
+| Days 3-5 | Ubud. Terraces, Tirta Empul, a cooking class and a day of wandering the surrounding villages. |
+| Day 6 | Mount Batur sunrise. Then back to rest or continue north. |
+| Day 7 | Sidemen or the east coast. Then back toward the airport. |
 
 ## When to go
 
@@ -89,11 +90,13 @@ Check current rules before you fly. Most visitors need a visa on arrival or an e
 
 ## Rough daily budget
 
-- **Budget ($30-50):** hostel or homestay, warung meals, scooter or short rides.
+**Rough daily budget**
 
-- **Mid-range ($70-130):** private pool villa or good hotel, a mix of cafes and local food, a driver for a day or two.
-
-- **Comfortable ($200 and up):** boutique resort, nicer restaurants, private tours.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Budget | $30-50 | Hostel or homestay, warung meals, scooter or short rides. |
+| Mid-range | $70-130 | Private pool villa or good hotel, a mix of cafes and local food, a driver for a day or two. |
+| Comfortable | $200 and up | Boutique resort, nicer restaurants, private tours. |
 
 These are broad figures. Activities such as volcano treks, boat trips and surf lessons add up, and prices rise in peak season.
 

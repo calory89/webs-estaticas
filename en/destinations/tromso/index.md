@@ -95,29 +95,13 @@ Tromso is expensive, but a surprising amount costs nothing:
 
 ## Tromso itinerary: 3 days
 
-### Day 1: the city on foot
+**3-day itinerary for Tromso**
 
-**Morning**: start at the Polar Museum on the harbour, then walk Storgata past the cathedral. Pop into the Northern Norway Art Museum to warm up.
-
-**Afternoon**: Polaria if you like seals, then fish soup at Mathallen or a hot dog from Raketten, the tiny kiosk on Storgata. Walk over the bridge to the Arctic Cathedral.
-
-**Evening**: take bus 26 or walk on to Fjellheisen and ride up for sunset and city lights. Back down for a beer at Mack Ølhallen.
-
-### Day 2: the big excursion
-
-**Morning**: dog sledding or a reindeer visit (most leave early with hotel pickup), or a whale safari in early winter, which takes the whole day.
-
-**Afternoon**: back in town around 2-3pm. Rest, because the night is long.
-
-**Evening**: northern lights chase, leaving around 6-7pm and returning after midnight. In summer, swap this for a midnight sun hike up Fløya.
-
-### Day 3: the south of the island and the spare night
-
-**Morning**: bus to the Arctic University Museum for the Sámi and aurora exhibitions.
-
-**Afternoon**: walk back along Telegrafbukta and up to Prestvannet, or take the floating sauna session in the harbour.
-
-**Evening**: dinner of Arctic char or bacalao. If last night was cloudy, this is your backup aurora night.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · The city on foot | Start at the Polar Museum on the harbour, then walk Storgata past the cathedral. Pop into the Northern Norway Art Museum to warm up. | Polaria if you like seals, then fish soup at Mathallen or a hot dog from Raketten, the tiny kiosk on Storgata. Walk over the bridge to the Arctic Cathedral. | Take bus 26 or walk on to Fjellheisen and ride up for sunset and city lights. Back down for a beer at Mack Ølhallen. |
+| Day 2 · The big excursion | Dog sledding or a reindeer visit (most leave early with hotel pickup), or a whale safari in early winter, which takes the whole day. | Back in town around 2-3pm. Rest, because the night is long. | Northern lights chase, leaving around 6-7pm and returning after midnight. In summer, swap this for a midnight sun hike up Fløya. |
+| Day 3 · The south of the island and the spare night | Bus to the Arctic University Museum for the Sámi and aurora exhibitions. | Walk back along Telegrafbukta and up to Prestvannet, or take the floating sauna session in the harbour. | Dinner of Arctic char or bacalao. If last night was cloudy, this is your backup aurora night. |
 
 ## What is overrated (and what to do instead)
 
@@ -165,12 +149,14 @@ The centre is walkable. For the cable car, museum and Prestvannet, use city buse
 
 ## How much a trip to Tromso costs
 
-- **Shoestring: €110-150 a day**. A hostel bed or a shared apartment room, supermarket breakfasts, one cheap lunch, a hot dog for dinner, free sights and the bus. One paid tour on top will add €150-200.
+**Rough daily budget**
 
-- **Mid-range: €250-400 a day**. A central hotel, a proper dinner with a beer, the cable car, a museum, and one major excursion spread over the trip.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €110-150 a day | A hostel bed or a shared apartment room, supermarket breakfasts, one cheap lunch, a hot dog for dinner, free sights and the bus. One paid tour on top will add €150-200. |
+| Mid-range | €250-400 a day | A central hotel, a proper dinner with a beer, the cable car, a museum, and one major excursion spread over the trip. |
 
 - **Typical extras**: aurora tour €130-200, dog sledding €200-250, whale safari €150-250, floating sauna €25-35.
-
 Our tip: on a 3-day trip, book one big excursion and do aurora on your own on clear nights. That alone can save €200 per person.
 
 ## Day trips from Tromso

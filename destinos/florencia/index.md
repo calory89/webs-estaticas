@@ -59,15 +59,17 @@ Santa Maria Novella tiene una fachada de mármol que se aprecia sin pagar. San L
 
 - Hacer una excursión de un día a Siena, Pisa o a la zona del Chianti. Con tren o bus llegas a las dos primeras sin coche.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Florencia en 3 días: ruta día a día
 
 Tres días es lo razonable. Con dos ves lo esencial y con cuatro puedes sumar una excursión. Esta es mi propuesta:
 
-- **Día 1:** Duomo y cúpula a primera hora, Baptisterio, paseo por Piazza della Signoria, comida en el Mercato Centrale y tarde en Santa Maria Novella y San Lorenzo.
+**Itinerario de 3 días en Florencia**
 
-- **Día 2:** Uffizi con reserva a primera hora, Ponte Vecchio, Oltrarno, Boboli por la tarde y atardecer en Piazzale Michelangelo con San Miniato.
-
-- **Día 3:** David en la Academia a primera hora, Santa Croce, comida tranquila y tarde libre o excursión corta a Fiesole.
+| Día | Plan |
+|---|---|
+| Día 1 | Duomo y cúpula a primera hora, Baptisterio, paseo por Piazza della Signoria, comida en el Mercato Centrale y tarde en Santa Maria Novella y San Lorenzo. |
+| Día 2 | Uffizi con reserva a primera hora, Ponte Vecchio, Oltrarno, Boboli por la tarde y atardecer en Piazzale Michelangelo con San Miniato. |
+| Día 3 | David en la Academia a primera hora, Santa Croce, comida tranquila y tarde libre o excursión corta a Fiesole. |
 
 ## Cuándo ir a Florencia
 
@@ -113,11 +115,13 @@ Por tren, Florencia está muy bien conectada: Bolonia queda a poco más de media
 
 ## Presupuesto orientativo por día
 
-- **Ajustado (60-90 euros):** dormitorio compartido o habitación sencilla, comida de mercado, un museo con reserva y mucho paseo.
+**Presupuesto orientativo por día**
 
-- **Medio (120-180 euros):** hotel o apartamento correcto, comida en trattoria, uno o dos museos y algún transporte.
-
-- **Cómodo (200 euros o más):** buen hotel céntrico, cena con carne y vino, entradas combinadas y alguna excursión.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | 60-90 euros | Dormitorio compartido o habitación sencilla, comida de mercado, un museo con reserva y mucho paseo. |
+| Medio | 120-180 euros | Hotel o apartamento correcto, comida en trattoria, uno o dos museos y algún transporte. |
+| Cómodo | 200 euros o más | Buen hotel céntrico, cena con carne y vino, entradas combinadas y alguna excursión. |
 
 Las entradas a Uffizi, Academia y cúpula suman bastante, así que elige qué te importa de verdad y no intentes verlo todo. Son cifras orientativas y cambian según la época.
 

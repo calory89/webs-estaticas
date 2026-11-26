@@ -99,25 +99,14 @@ Buena parte de lo mejor de Bilbao se ve sin pagar entrada. El paseo de la ría d
 
 - **Playas de Getxo y Sopela:** el coste es el billete de metro.
 
-## Itinerario: Bilbao en 2 días
+## Qué ver en Bilbao en 2 días: ruta día a día
 
-### Día 1: Casco Viejo, ría y Artxanda
+**Itinerario de 2 días en Bilbao**
 
-**Mañana:** empieza en el Mercado de la Ribera cuando abre, cruza a la Catedral de Santiago y recorre las Siete Calles. Sube a Begoña en el ascensor desde la boca de metro de Casco Viejo y baja por las escaleras de Mallona.
-
-**Tarde:** pintxos en la Plaza Nueva antes de la hora punta. Después, el Arenal, el Teatro Arriaga y paseo por la orilla del Campo Volantín hasta el Zubizuri.
-
-**Noche:** sube en funicular a Artxanda para el atardecer, baja y cena de pintxos por la calle Ledesma o vuelve al Casco Viejo, que de noche tiene otro ambiente.
-
-### Día 2: Guggenheim, Bellas Artes y Ensanche
-
-**Mañana:** Guggenheim a primera hora, con entrada comprada. Al salir, rodéalo por fuera hasta Maman y el puente de La Salve.
-
-**Tarde:** comida por el Ensanche, Museo de Bellas Artes y paseo por el parque de Doña Casilda. Si te queda energía, sigue por Abandoibarra hasta el Itsasmuseum o tira hacia San Mamés.
-
-**Noche:** Azkuna Zentroa de camino y pintxos en Pozas o Licenciado Poza, la zona más de local de la ciudad.
-
-Con un tercer día, coge el metro hasta Areeta o Portugalete para ver el Puente Colgante y comer en la costa.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Casco Viejo, ría y Artxanda | Empieza en el Mercado de la Ribera cuando abre, cruza a la Catedral de Santiago y recorre las Siete Calles. Sube a Begoña en el ascensor desde la boca de metro de Casco Viejo y baja por las escaleras de Mallona. | Pintxos en la Plaza Nueva antes de la hora punta. Después, el Arenal, el Teatro Arriaga y paseo por la orilla del Campo Volantín hasta el Zubizuri. | Sube en funicular a Artxanda para el atardecer, baja y cena de pintxos por la calle Ledesma o vuelve al Casco Viejo, que de noche tiene otro ambiente. |
+| Día 2 · Guggenheim, Bellas Artes y Ensanche | Guggenheim a primera hora, con entrada comprada. Al salir, rodéalo por fuera hasta Maman y el puente de La Salve. | Comida por el Ensanche, Museo de Bellas Artes y paseo por el parque de Doña Casilda. Si te queda energía, sigue por Abandoibarra hasta el Itsasmuseum o tira hacia San Mamés. | Azkuna Zentroa de camino y pintxos en Pozas o Licenciado Poza, la zona más de local de la ciudad. Con un tercer día, coge el metro hasta Areeta o Portugalete para ver el Puente Colgante y comer en la costa. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -187,9 +176,12 @@ Dentro de la ciudad, lo céntrico se hace andando. Para lo demás:
 
 ## Cuánto cuesta un viaje a Bilbao
 
-- **Presupuesto ajustado (unos 70-90 € al día por persona):** albergue u hotel sencillo en Deusto o Bilbao La Vieja compartiendo habitación (30-50 €), menú del día y cena de pintxos (35 €), transporte con Barik (5 €), Bellas Artes en franja gratuita o exterior del Guggenheim.
+**Presupuesto orientativo por día**
 
-- **Presupuesto medio (unos 140-190 € al día por persona):** hotel de tres o cuatro estrellas en Abando o el Casco Viejo compartiendo doble (60-90 €), restaurante a mediodía y pintxos por la noche (50-60 €), entrada a museos (20-30 €), barco por la ría o funicular, y algún taxi.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Presupuesto ajustado | unos 70-90 € al día por persona | Albergue u hotel sencillo en Deusto o Bilbao La Vieja compartiendo habitación (30-50 €), menú del día y cena de pintxos (35 €), transporte con Barik (5 €), Bellas Artes en franja gratuita o exterior del Guggenheim. |
+| Presupuesto medio | unos 140-190 € al día por persona | Hotel de tres o cuatro estrellas en Abando o el Casco Viejo compartiendo doble (60-90 €), restaurante a mediodía y pintxos por la noche (50-60 €), entrada a museos (20-30 €), barco por la ría o funicular, y algún taxi. |
 
 ## Excursiones de un día desde Bilbao
 

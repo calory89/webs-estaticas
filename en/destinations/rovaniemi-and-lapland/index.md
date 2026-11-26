@@ -97,25 +97,15 @@ Lapland is expensive, but a surprising amount of the good stuff costs nothing. F
 
 ## Rovaniemi and Lapland itinerary: 5 days
 
-### Day 1: Rovaniemi centre
+**5-day itinerary for Rovaniemi and Lapland**
 
-**Morning:** Arktikum, then Pilke next door. **Afternoon:** walk into town via the Aalto buildings on Hallituskatu and the church, then Korundi. **Evening:** reindeer dinner in the centre and a walk across the Lumberjack's Candle Bridge, watching the sky.
-
-### Day 2: Santa Claus Village and huskies
-
-**Morning:** bus to Santa Claus Village early, before the crowds. Arctic Circle line, post office, Santa. **Afternoon:** husky safari; many kennels are nearby and include pickup. **Evening:** back in town, sauna, and early night if the aurora forecast is poor.
-
-### Day 3: Ranua or reindeer
-
-**Morning:** bus or tour to Ranua Wildlife Park (families), or a reindeer farm (couples). **Afternoon:** back in town by mid-afternoon as it gets dark. **Evening:** guided northern lights hunt or DIY session on the riverbanks.
-
-### Day 4: Into the wild
-
-**Morning:** day trip to Korouoma canyon for frozen waterfalls, or to Pyhä-Luosto national park. **Afternoon:** snowshoe or ski. **Evening:** stay out in a cabin or return late to Rovaniemi.
-
-### Day 5: Ounasvaara and slow down
-
-**Morning:** hike or ski Ounasvaara. **Afternoon:** ice floating or a smoke sauna with ice dip. **Evening:** last dinner of salmon soup and cloudberries before an early flight.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Rovaniemi centre | Arktikum, then Pilke next door. | Walk into town via the Aalto buildings on Hallituskatu and the church, then Korundi. | Reindeer dinner in the centre and a walk across the Lumberjack's Candle Bridge, watching the sky. |
+| Day 2 · Santa Claus Village and huskies | Bus to Santa Claus Village early, before the crowds. Arctic Circle line, post office, Santa. | Husky safari; many kennels are nearby and include pickup. | Back in town, sauna, and early night if the aurora forecast is poor. |
+| Day 3 · Ranua or reindeer | Bus or tour to Ranua Wildlife Park (families), or a reindeer farm (couples). | Back in town by mid-afternoon as it gets dark. | Guided northern lights hunt or DIY session on the riverbanks. |
+| Day 4 · Into the wild | Day trip to Korouoma canyon for frozen waterfalls, or to Pyhä-Luosto national park. | Snowshoe or ski. | Stay out in a cabin or return late to Rovaniemi. |
+| Day 5 · Ounasvaara and slow down | Hike or ski Ounasvaara. | Ice floating or a smoke sauna with ice dip. | Last dinner of salmon soup and cloudberries before an early flight. |
 
 ## What is overrated (and what to do instead)
 
@@ -159,11 +149,13 @@ Rovaniemi's local buses (Linkkari) are cheap at about €3-4 per ride, and line 
 
 ## How much a trip to Rovaniemi and Lapland costs
 
-- **Shoestring (€90-130 a day):** hostel or budget apartment, supermarket food and lunch buffets, free activities, bus to Santa Claus Village, DIY aurora hunting.
+**Rough daily budget**
 
-- **Mid-range (€250-400 a day):** central hotel, one tour per day (husky, reindeer or aurora), sit-down dinners, sauna sessions.
-
-- **Splurge (€600+ a day):** glass igloo or ice hotel, private tours, snowmobile safaris and tasting menus.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €90-130 a day | Hostel or budget apartment, supermarket food and lunch buffets, free activities, bus to Santa Claus Village, DIY aurora hunting. |
+| Mid-range | €250-400 a day | Central hotel, one tour per day (husky, reindeer or aurora), sit-down dinners, sauna sessions. |
+| Splurge | €600+ a day | Glass igloo or ice hotel, private tours, snowmobile safaris and tasting menus. |
 
 ## Day trips from Rovaniemi and Lapland
 

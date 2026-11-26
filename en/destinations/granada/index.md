@@ -99,29 +99,13 @@ A surprising amount of Granada costs nothing. All the viewpoints are free: San N
 
 This Granada itinerary assumes you have a morning Alhambra ticket on day 1. Swap days around to fit your slot.
 
-### Day 1: the Alhambra
+**3-day itinerary for Granada**
 
-**Morning:** take the C30 or C32 minibus from Plaza Isabel la Católica to the Alhambra, or walk up the Cuesta de Gomérez from Plaza Nueva (20-25 minutes, steep). Do the Nasrid Palaces at your slot, then the Alcazaba and the Generalife.
-
-**Afternoon:** walk down through the woods to Carmen de los Mártires, then on to the Realejo for a late lunch in Campo del Príncipe.
-
-**Evening:** tapas on Calle Navas, then a drink on Paseo de los Tristes looking up at the lit-up walls you walked that morning.
-
-### Day 2: the Albaicín and Sacromonte
-
-**Morning:** start at Plaza Nueva, walk Carrera del Darro, visit El Bañuelo, then climb into the Albaicín. Coffee and a pastry around Plaza Larga.
-
-**Afternoon:** walk east to Sacromonte, visit the Cave Museum, and do the Vereda de Enmedio if your legs allow. Lunch in a cave restaurant on Camino del Sacromonte.
-
-**Evening:** back to Mirador de San Nicolás for sunset, then a zambra flamenco show in a Sacromonte cave. Take the C34 bus or a taxi back down if you are tired.
-
-### Day 3: the centre or a day trip
-
-**Morning:** the Royal Chapel and the cathedral, then the Alcaicería, the old silk market that is now a souvenir lane. Churros in Plaza Mariana Pineda.
-
-**Afternoon:** Monasterio de la Cartuja or the Huerta de San Vicente, followed by a hammam session. If you would rather leave the city, swap this day for the Alpujarras or Sierra Nevada.
-
-**Evening:** tea on Calderería Nueva, then a last tapas round on Calle Elvira or at Bodegas Castañeda.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · The Alhambra | Take the C30 or C32 minibus from Plaza Isabel la Católica to the Alhambra, or walk up the Cuesta de Gomérez from Plaza Nueva (20-25 minutes, steep). Do the Nasrid Palaces at your slot, then the Alcazaba and the Generalife. | Walk down through the woods to Carmen de los Mártires, then on to the Realejo for a late lunch in Campo del Príncipe. | Tapas on Calle Navas, then a drink on Paseo de los Tristes looking up at the lit-up walls you walked that morning. |
+| Day 2 · The Albaicín and Sacromonte | Start at Plaza Nueva, walk Carrera del Darro, visit El Bañuelo, then climb into the Albaicín. Coffee and a pastry around Plaza Larga. | Walk east to Sacromonte, visit the Cave Museum, and do the Vereda de Enmedio if your legs allow. Lunch in a cave restaurant on Camino del Sacromonte. | Back to Mirador de San Nicolás for sunset, then a zambra flamenco show in a Sacromonte cave. Take the C34 bus or a taxi back down if you are tired. |
+| Day 3 · The centre or a day trip | The Royal Chapel and the cathedral, then the Alcaicería, the old silk market that is now a souvenir lane. Churros in Plaza Mariana Pineda. | Monasterio de la Cartuja or the Huerta de San Vicente, followed by a hammam session. If you would rather leave the city, swap this day for the Alpujarras or Sierra Nevada. | Tea on Calderería Nueva, then a last tapas round on Calle Elvira or at Bodegas Castañeda. |
 
 ## What is overrated (and what to do instead)
 
@@ -181,9 +165,12 @@ In town, you will mostly walk. The red **minibuses** are the useful ones: C30 an
 
 Granada is one of the cheaper cities in Spain, mostly thanks to free tapas.
 
-- **Shoestring: €50-70 per day.** Hostel bed (€20-30), tapas dinner (€12), cheap lunch or bakery picnic (€8), walking everywhere, the Alhambra ticket spread over your stay.
+**Rough daily budget**
 
-- **Mid-range: €120-180 per day.** Central double room split between two (€50-75 each), set lunch and a good tapas evening (€40), Alhambra, a flamenco show or hammam (€30-50).
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €50-70 per day | Hostel bed (€20-30), tapas dinner (€12), cheap lunch or bakery picnic (€8), walking everywhere, the Alhambra ticket spread over your stay. |
+| Mid-range | €120-180 per day | Central double room split between two (€50-75 each), set lunch and a good tapas evening (€40), Alhambra, a flamenco show or hammam (€30-50). |
 
 - **One-off costs:** Alhambra about €20, Royal Chapel and cathedral about €7 each, flamenco €25-35, hammam €40-50.
 

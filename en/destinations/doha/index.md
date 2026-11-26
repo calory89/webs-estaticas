@@ -99,27 +99,13 @@ Doha is expensive, but many of its best sights cost nothing.
 
 ## Doha itinerary: 3 days
 
-### Day 1: Old Doha and the waterfront
+**3-day itinerary for Doha**
 
-**Morning:** Get to the Museum of Islamic Art first thing, while you still have energy for three floors. Have coffee in the museum café.
-
-**Afternoon:** Walk through MIA Park to the Msheireb Museums (10 minutes on foot), then have lunch in Msheireb. Rest in the hotel through the hottest hours.
-
-**Evening:** Take a sunset dhow cruise from the Corniche, then walk to Souq Waqif and the Falcon Souq. Have dinner and shisha in the souq.
-
-### Day 2: Museums and modern Doha
-
-**Morning:** Visit the National Museum of Qatar, which is walkable from Souq Waqif or one metro stop away (National Museum station, Red Line).
-
-**Afternoon:** Take the Green Line to Education City for the National Library, Mathaf and the mosque.
-
-**Evening:** Go to Katara for sunset, karak and chapati, then take a short taxi to The Pearl to stroll along the marina.
-
-### Day 3: Desert
-
-**Morning to afternoon:** Take a half-day tour to the dunes at Sealine and Khor Al Adaid. Most tours pick you up in the morning or early afternoon and run 5-6 hours.
-
-**Evening:** Head to Lusail Boulevard at night, or go back to Souq Waqif for a final meal. If your flight leaves late, the Red Line goes direct to the airport.
+| Day | Plan |
+|---|---|
+| Day 1 | Old Doha and the waterfront. Morning: Get to the Museum of Islamic Art first thing, while you still have energy for three floors. Have coffee in the museum café. Afternoon: Walk through MIA Park to the Msheireb Museums (10 minutes on foot), then have lunch in Msheireb. Rest in the hotel through the hottest hours. Evening: Take a sunset dhow cruise from the Corniche, then walk to Souq Waqif and the Falcon Souq. Have dinner and shisha in the souq. |
+| Day 2 | Museums and modern Doha. Morning: Visit the National Museum of Qatar, which is walkable from Souq Waqif or one metro stop away (National Museum station, Red Line). Afternoon: Take the Green Line to Education City for the National Library, Mathaf and the mosque. Evening: Go to Katara for sunset, karak and chapati, then take a short taxi to The Pearl to stroll along the marina. |
+| Day 3 | Desert. Morning to afternoon: Take a half-day tour to the dunes at Sealine and Khor Al Adaid. Most tours pick you up in the morning or early afternoon and run 5-6 hours. Evening: Head to Lusail Boulevard at night, or go back to Souq Waqif for a final meal. If your flight leaves late, the Red Line goes direct to the airport. |
 
 ## What is overrated (and what to do instead)
 
@@ -175,12 +161,14 @@ Hamad International Airport is about 15-20 minutes from the centre. The **Doha M
 
 ## How much a trip to Doha costs
 
-- **Shoestring, €60-90 per day:** budget hotel in Al Sadd (€50-70), metro, cafeteria meals, free sights, one paid museum.
+**Rough daily budget**
 
-- **Mid-range, €150-250 per day:** 4-star hotel near the souq, sit-down dinners, Uber, museums, one dhow cruise.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €60-90 per day | Budget hotel in Al Sadd (€50-70), metro, cafeteria meals, free sights, one paid museum. |
+| Mid-range | €150-250 per day | 4-star hotel near the souq, sit-down dinners, Uber, museums, one dhow cruise. |
 
 - **Extras:** desert tour €60-90, a hotel bar drink €12-16, kayaking €30-50.
-
 Accommodation is the real cost. Look for stopover hotel deals sold alongside Qatar Airways flights, which can be very cheap.
 
 ## Day trips from Doha

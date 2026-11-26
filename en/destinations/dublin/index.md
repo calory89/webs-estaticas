@@ -35,15 +35,17 @@ Find a proper pub and stay for a session. The Brazen Head claims to be the oldes
 
 Go to Glasnevin Cemetery for the museum and the round tower. Take a distillery tour at Teeling or Jameson Bow Street if whiskey interests you more than stout. And spend one half-day on the coast: the DART train runs to Howth, where a cliff path loops around the headland, and to Dalkey, a pretty seaside village with a view across Killiney Bay.
 
-## How many days and a suggested route
+## Dublin itinerary: 3 days, day by day
 
 Two days covers the essentials. Three days lets the city breathe. Here is how I would split it.
 
-- **Day 1:** Trinity College at opening time, Grafton Street, St Stephen's Green, the National Museum, then Dublin Castle and the Chester Beatty. Finish with a pint in South William Street or Dame Lane.
+**3-day itinerary for Dublin**
 
-- **Day 2:** Kilmainham Gaol in the morning, Guinness Storehouse after lunch, then dinner in Smithfield or Stoneybatter.
-
-- **Day 3:** DART to Howth or Dalkey, a long walk and lunch by the water, back in town for a last session at a pub with live music.
+| Day | Plan |
+|---|---|
+| Day 1 | Trinity College at opening time, Grafton Street, St Stephen's Green, the National Museum, then Dublin Castle and the Chester Beatty. Finish with a pint in South William Street or Dame Lane. |
+| Day 2 | Kilmainham Gaol in the morning, Guinness Storehouse after lunch, then dinner in Smithfield or Stoneybatter. |
+| Day 3 | DART to Howth or Dalkey, a long walk and lunch by the water, back in town for a last session at a pub with live music. |
 
 A fourth day opens up Glendalough in the Wicklow Mountains or Newgrange, the Neolithic passage tomb in the Boyne Valley. Both are easier with a tour or a hire car.
 

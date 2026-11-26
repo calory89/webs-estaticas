@@ -83,39 +83,16 @@ Taipéi es generosa con quien viaja con poco dinero. Gratis: Elephant Mountain, 
 
 Casi gratis: la piscina termal pública de Beitou (2-3 €), el teleférico de Maokong (3-4 €), el metro (desde 0,60 €) y una buena comida en un puesto (2-4 €). Los baños públicos son limpios y gratuitos en todas las estaciones de metro, algo que se agradece.
 
-## Itinerario: Taipéi en 4 días
+## Qué ver en Taipéi en 4 días: ruta día a día
 
-### Día 1: Centro histórico y Wanhua
+**Itinerario de 4 días en Taipéi**
 
-**Mañana:** desayuno en Fu Hang Dou Jiang (hay cola, pero avanza rápido) y Memorial de Chiang Kai-shek, que está cerca.
-
-**Tarde:** metro a Ximending, comer allí y seguir andando hasta Bopiliao.
-
-**Noche:** Templo Longshan iluminado y cena en el mercado nocturno de Huaxi o Guangzhou Street.
-
-### Día 2: Este de la ciudad y Taipei 101
-
-**Mañana:** Daan Forest Park temprano y desayuno o brunch en Yongkang Street.
-
-**Tarde:** Huashan 1914 o Songshan Cultural Park y luego Taipei 101 (mirador si te apetece).
-
-**Noche:** subida a Elephant Mountain al atardecer y cena en el mercado nocturno de Raohe, a pocas paradas.
-
-### Día 3: Norte: museo y aguas termales
-
-**Mañana:** Museo Nacional del Palacio a primera hora.
-
-**Tarde:** línea roja hasta Beitou: Thermal Valley, biblioteca y baño termal.
-
-**Noche:** vuelta hacia el centro y cena en Ningxia, o en Shilin si te pilla de camino (con expectativas bajas).
-
-### Día 4: Excursión a Jiufen o Shifen
-
-**Mañana:** bus a Jiufen temprano para ganarle a los grupos.
-
-**Tarde:** taxi o bus hacia Shifen para lanzar el farolillo y ver la cascada, o vuelta a Taipéi para Dadaocheng.
-
-**Noche:** atardecer en el muelle de Dadaocheng y última cena de sopa de fideos con ternera.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Centro histórico y Wanhua | Desayuno en Fu Hang Dou Jiang (hay cola, pero avanza rápido) y Memorial de Chiang Kai-shek, que está cerca. | Metro a Ximending, comer allí y seguir andando hasta Bopiliao. | Templo Longshan iluminado y cena en el mercado nocturno de Huaxi o Guangzhou Street. |
+| Día 2 · Este de la ciudad y Taipei 101 | Daan Forest Park temprano y desayuno o brunch en Yongkang Street. | Huashan 1914 o Songshan Cultural Park y luego Taipei 101 (mirador si te apetece). | Subida a Elephant Mountain al atardecer y cena en el mercado nocturno de Raohe, a pocas paradas. |
+| Día 3 · Norte: museo y aguas termales | Museo Nacional del Palacio a primera hora. | Línea roja hasta Beitou: Thermal Valley, biblioteca y baño termal. | Vuelta hacia el centro y cena en Ningxia, o en Shilin si te pilla de camino (con expectativas bajas). |
+| Día 4 · Excursión a Jiufen o Shifen | Bus a Jiufen temprano para ganarle a los grupos. | Taxi o bus hacia Shifen para lanzar el farolillo y ver la cascada, o vuelta a Taipéi para Dadaocheng. | Atardecer en el muelle de Dadaocheng y última cena de sopa de fideos con ternera. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -179,12 +156,14 @@ Para moverte, compra la **EasyCard** (unos 3 € la tarjeta, recargable) nada m�
 
 Taipéi es más barata que Japón o Corea, sobre todo en comida y transporte. El gasto principal es el alojamiento.
 
-- **Ajustado (40-60 € al día):** cama en albergue (20-30 €), comida en mercados y puestos (15-20 €), metro y entradas gratuitas (5 €).
+**Presupuesto orientativo por día**
 
-- **Medio (100-150 € al día):** hotel doble correcto (60-100 € por persona compartiendo), restaurantes medios y algún capricho (30-40 €), transporte, museo, mirador y baño termal (15-25 €).
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | 40-60 € al día | Cama en albergue (20-30 €), comida en mercados y puestos (15-20 €), metro y entradas gratuitas (5 €). |
+| Medio | 100-150 € al día | Hotel doble correcto (60-100 € por persona compartiendo), restaurantes medios y algún capricho (30-40 €), transporte, museo, mirador y baño termal (15-25 €). |
 
 - **Vuelo desde España:** no hay directo; con escala en Oriente Medio, Hong Kong o Europa, entre 600 y 1.000 € ida y vuelta según la época.
-
 Referencia de cambio: 1 € equivale aproximadamente a 35 TWD.
 
 ## Excursiones de un día desde Taipéi

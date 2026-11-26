@@ -37,17 +37,18 @@ Catch a **lucha libre** night at Arena México. It is theatrical, cheap and very
 
 Wander the markets: Mercado de Coyoacán for tostadas, Mercado de San Juan for the odd ingredients chefs buy. Spend an evening in a mezcalería in Roma Norte or Centro, and ask for a small pour of something you cannot pronounce. For art, the Museo Soumaya has a free-entry reputation and a silver tile-covered building you will either love or find odd, and the Museo Tamayo in Chapultepec is quieter.
 
-## How many days and a suggested route
+## Mexico City itinerary: 4 days, day by day
 
 Four days is the sweet spot. Three works if you stay disciplined. Five lets you add Teotihuacán or Xochimilco without rushing.
 
-- **Day 1, Centro Histórico:** Zócalo, cathedral, Templo Mayor, Bellas Artes, then dinner nearby. Keep the pace slow while the altitude settles in.
+**4-day itinerary for Mexico City**
 
-- **Day 2, Chapultepec:** Anthropology museum in the morning, the castle after lunch, and an evening in Polanco or Condesa.
-
-- **Day 3, south:** Coyoacán and the Casa Azul, then Xochimilco or UNAM in the afternoon.
-
-- **Day 4, Teotihuacán:** Leave early, be back by mid-afternoon, and spend the evening in Roma.
+| Day | Plan |
+|---|---|
+| Day 1 | Centro Histórico. Zócalo, cathedral, Templo Mayor, Bellas Artes, then dinner nearby. Keep the pace slow while the altitude settles in. |
+| Day 2 | Chapultepec. Anthropology museum in the morning, the castle after lunch, and an evening in Polanco or Condesa. |
+| Day 3 | South. Coyoacán and the Casa Azul, then Xochimilco or UNAM in the afternoon. |
+| Day 4 | Teotihuacán. Leave early, be back by mid-afternoon, and spend the evening in Roma. |
 
 ## When to go: weather and seasons
 

@@ -37,17 +37,18 @@ Un partido en La Bombonera o en el Monumental de River es complicado de consegui
 
 Las excursiones de un día salen bien de precio. Tigre y su delta están a una hora en tren desde Retiro. Colonia del Sacramento, en Uruguay, se llega en ferry desde Puerto Madero, con Buquebus como compañía conocida. También puedes ir a San Antonio de Areco, para ver el campo y la tradición gauchesca.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Buenos Aires en 4 días: ruta día a día
 
 Con cuatro días ves lo esencial sin ir corriendo. Con cinco o seis puedes añadir una excursión. Esta ruta funciona bien:
 
-- **Día 1:** Plaza de Mayo, Avenida de Mayo (Tortoni y Barolo), Obelisco y Corrientes por la noche.
+**Itinerario de 4 días en Buenos Aires**
 
-- **Día 2:** San Telmo por la mañana, comida allí, tarde en Puerto Madero y Costanera Sur.
-
-- **Día 3:** Recoleta, Ateneo Grand Splendid, MALBA y cena en Palermo.
-
-- **Día 4:** La Boca por la mañana, Bosques de Palermo por la tarde, y milonga de noche.
+| Día | Plan |
+|---|---|
+| Día 1 | Plaza de Mayo, Avenida de Mayo (Tortoni y Barolo), Obelisco y Corrientes por la noche. |
+| Día 2 | San Telmo por la mañana, comida allí, tarde en Puerto Madero y Costanera Sur. |
+| Día 3 | Recoleta, Ateneo Grand Splendid, MALBA y cena en Palermo. |
+| Día 4 | La Boca por la mañana, Bosques de Palermo por la tarde, y milonga de noche. |
 
 Si te quedas más, dedica un día a Colonia o a Tigre y otro a no hacer nada en un café.
 

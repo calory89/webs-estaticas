@@ -101,19 +101,15 @@ Doha tiene fama de cara, pero muchas de sus mejores cosas son gratis:
 
 El metro cuesta unos 0,50 € el trayecto (2 QAR) y el pase de día unos 1,50 € (6 QAR). Moverte por la ciudad casi no te va a costar nada.
 
-## Itinerario: Doha en 3 días
+## Qué ver en Doha en 3 días: ruta día a día
 
-### Día 1: el Doha clásico
+**Itinerario de 3 días en Doha**
 
-**Mañana:** Museo de Arte Islámico nada más abrir, cuando hay menos gente y menos calor fuera. **Tarde:** come en el café del museo o ve al zoco. Después, Museo Nacional de Catar, a 15 minutos andando por la Corniche (o en taxi si aprieta el sol). **Noche:** atardecer en MIA Park y cena en Souq Waqif, con paseo por el Zoco de los Halcones y karak de remate.
-
-### Día 2: Doha moderna
-
-**Mañana:** Msheireb Museums y paseo por Msheireb. Desde allí, línea verde del metro hasta Education City para ver la Biblioteca Nacional. **Tarde:** taxi o Uber a la mezquita estatal y después a Katara, cuando la luz es buena. **Noche:** The Pearl-Qatar o Lusail Boulevard (línea roja) para ver las torres iluminadas. Si prefieres algo tranquilo, haz un paseo en dhow por la Corniche.
-
-### Día 3: desierto
-
-**Mañana:** safari de dunas a Sealine y el Mar Interior. Lo mejor es una excursión de medio día que te recoja en el hotel. **Tarde:** vuelve, ducha y siesta, que la necesitarás. **Noche:** cena en Al Wakrah, junto a su zoco frente al mar, más tranquilo y menos turístico que Souq Waqif. Está a unos 25 minutos en la línea roja.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · El Doha clásico | Museo de Arte Islámico nada más abrir, cuando hay menos gente y menos calor fuera. | Come en el café del museo o ve al zoco. Después, Museo Nacional de Catar, a 15 minutos andando por la Corniche (o en taxi si aprieta el sol). | Atardecer en MIA Park y cena en Souq Waqif, con paseo por el Zoco de los Halcones y karak de remate. |
+| Día 2 · Doha moderna | Msheireb Museums y paseo por Msheireb. Desde allí, línea verde del metro hasta Education City para ver la Biblioteca Nacional. | Taxi o Uber a la mezquita estatal y después a Katara, cuando la luz es buena. | The Pearl-Qatar o Lusail Boulevard (línea roja) para ver las torres iluminadas. Si prefieres algo tranquilo, haz un paseo en dhow por la Corniche. |
+| Día 3 · Desierto | Safari de dunas a Sealine y el Mar Interior. Lo mejor es una excursión de medio día que te recoja en el hotel. | Vuelve, ducha y siesta, que la necesitarás. | Cena en Al Wakrah, junto a su zoco frente al mar, más tranquilo y menos turístico que Souq Waqif. Está a unos 25 minutos en la línea roja. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -179,9 +175,12 @@ Andar está bien en Msheireb, en el zoco y en la Corniche en invierno. Para todo
 
 ## Cuánto cuesta un viaje a Doha
 
-- **Presupuesto ajustado: 70-100 € al día.** Hotel sencillo en Al Sadd (50-70 €), comida india y libanesa (15 €), metro (2 €) y un museo de pago.
+**Presupuesto orientativo por día**
 
-- **Presupuesto medio: 150-250 € al día.** Hotel boutique en el zoco o una cadena en West Bay (100-150 €), cenas en Souq Waqif (30-40 €), Uber, museos y una excursión al desierto repartida entre los días.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Presupuesto ajustado | 70-100 € al día | Hotel sencillo en Al Sadd (50-70 €), comida india y libanesa (15 €), metro (2 €) y un museo de pago. |
+| Presupuesto medio | 150-250 € al día | Hotel boutique en el zoco o una cadena en West Bay (100-150 €), cenas en Souq Waqif (30-40 €), Uber, museos y una excursión al desierto repartida entre los días. |
 
 - **Excursiones:** el safari de medio día a Sealine compartido cuesta entre 60 y 90 € por persona.
 

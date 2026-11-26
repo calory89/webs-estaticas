@@ -79,23 +79,16 @@ Casi todos los templos son gratis o cuestan menos de 1,5 €, así que puedes pa
 
 El mercado de flores Ton Lam Yai de noche, el campus de la Universidad de Chiang Mai con su lago Ang Kaew y el ambiente de Wualai al anochecer también son gratis. Y comer bien no pasa de 2 € el plato si vas donde comen los tailandeses.
 
-## Itinerario: Chiang Mai en 4 días
+## Qué ver en Chiang Mai en 4 días: ruta día a día
 
-### Día 1: casco antiguo
+**Itinerario de 4 días en Chiang Mai**
 
-**Mañana**: Wat Phra Singh a primera hora, luego Wat Chedi Luang y el Centro Cultural. **Tarde**: khao soi para comer, masaje, y vuelta a Chedi Luang para el monk chat. **Noche**: si es domingo, mercado de Ratchadamnoen; si no, cena por la zona de Chang Phueak Gate.
-
-### Día 2: Doi Suthep y Nimman
-
-**Mañana**: Grab o songthaew hasta Doi Suthep temprano. Bajada por el Monk's Trail hasta Wat Pha Lat. **Tarde**: Wat Umong y paseo por Nimmanhaemin con café. **Noche**: atardecer en Wat Suan Dok y cena en Nimman o en el mercado de Chang Phueak.
-
-### Día 3: mercados, río y templo de plata
-
-**Mañana**: clase de cocina (recogen en el hotel). **Tarde**: mercado Warorot, barrio chino y paseo por la orilla del Ping. **Noche**: Wat Sri Suphan iluminado y, si es sábado, mercado de Wualai.
-
-### Día 4: excursión
-
-Doi Inthanon o un santuario de elefantes ético, ambos de día completo. Si prefieres algo más tranquilo, Sticky Waterfalls por la mañana y Huay Tung Tao por la tarde.
+| Día | Plan |
+|---|---|
+| Día 1 | Casco antiguo. Mañana : Wat Phra Singh a primera hora, luego Wat Chedi Luang y el Centro Cultural. Tarde : khao soi para comer, masaje, y vuelta a Chedi Luang para el monk chat. Noche : si es domingo, mercado de Ratchadamnoen; si no, cena por la zona de Chang Phueak Gate. |
+| Día 2 | Doi Suthep y Nimman. Mañana : Grab o songthaew hasta Doi Suthep temprano. Bajada por el Monk's Trail hasta Wat Pha Lat. Tarde : Wat Umong y paseo por Nimmanhaemin con café. Noche : atardecer en Wat Suan Dok y cena en Nimman o en el mercado de Chang Phueak. |
+| Día 3 | Mercados, río y templo de plata. Mañana : clase de cocina (recogen en el hotel). Tarde : mercado Warorot, barrio chino y paseo por la orilla del Ping. Noche : Wat Sri Suphan iluminado y, si es sábado, mercado de Wualai. |
+| Día 4 | Excursión. Doi Inthanon o un santuario de elefantes ético, ambos de día completo. Si prefieres algo más tranquilo, Sticky Waterfalls por la mañana y Huay Tung Tao por la tarde. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 

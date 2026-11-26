@@ -93,31 +93,15 @@ La ciudad no es barata, pero muchos de sus mejores planes no cuestan nada:
 
 - Ver desde fuera el Palacio de las Garzas, residencia presidencial, con garzas paseando por el patio. El acceso a la calle a veces está restringido por seguridad.
 
-## Itinerario: Ciudad de Panamá en 3 días
+## Qué ver en Ciudad de Panamá en 3 días: ruta día a día
 
-### Día 1: Casco Viejo y Cinta Costera
+**Itinerario de 3 días en Ciudad de Panamá**
 
-**Mañana:** empieza temprano en la Plaza de la Independencia, entra a la catedral y luego al Museo del Canal. Sigue hacia la Iglesia de San José y el Arco Chato.
-
-**Tarde:** comida en el Mercado de Mariscos (ceviche y pescado frito con patacones). Después vuelve al Casco por el Paseo Esteban Huertas y la Plaza de Francia, o descansa en el hotel durante las horas de más calor.
-
-**Noche:** atardecer en la Cinta Costera 3 y cena en el Casco, con una copa en alguna azotea.
-
-### Día 2: Canal y Amador
-
-**Mañana:** sube al Cerro Ancón a primera hora. Después, Uber a las Esclusas de Miraflores (unos 15-20 minutos), cuadrando con los tránsitos del día.
-
-**Tarde:** Biomuseo y bici por la Calzada de Amador. Quédate hasta que se ponga el sol.
-
-**Noche:** cena en El Cangrejo o Bella Vista, donde se come mejor y más barato que en el Casco.
-
-### Día 3: Panamá Viejo y naturaleza
-
-**Mañana:** Parque Natural Metropolitano a primera hora, para ver animales y la vista desde el Mirador Cerro Cedro.
-
-**Tarde:** Uber a Panamá Viejo (por la tarde baja algo el sol). Vuelve paseando por la Cinta Costera hacia Paitilla para ver los rascacielos de cerca.
-
-**Noche:** si es fin de semana, Calle Uruguay. Si no, una fonda para probar sancocho y cerrar el viaje sin gastar mucho.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Casco Viejo y Cinta Costera | Empieza temprano en la Plaza de la Independencia, entra a la catedral y luego al Museo del Canal. Sigue hacia la Iglesia de San José y el Arco Chato. | Comida en el Mercado de Mariscos (ceviche y pescado frito con patacones). Después vuelve al Casco por el Paseo Esteban Huertas y la Plaza de Francia, o descansa en el hotel durante las horas de más calor. | Atardecer en la Cinta Costera 3 y cena en el Casco, con una copa en alguna azotea. |
+| Día 2 · Canal y Amador | Sube al Cerro Ancón a primera hora. Después, Uber a las Esclusas de Miraflores (unos 15-20 minutos), cuadrando con los tránsitos del día. | Biomuseo y bici por la Calzada de Amador. Quédate hasta que se ponga el sol. | Cena en El Cangrejo o Bella Vista, donde se come mejor y más barato que en el Casco. |
+| Día 3 · Panamá Viejo y naturaleza | Parque Natural Metropolitano a primera hora, para ver animales y la vista desde el Mirador Cerro Cedro. | Uber a Panamá Viejo (por la tarde baja algo el sol). Vuelve paseando por la Cinta Costera hacia Paitilla para ver los rascacielos de cerca. | Si es fin de semana, Calle Uruguay. Si no, una fonda para probar sancocho y cerrar el viaje sin gastar mucho. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -183,9 +167,12 @@ Para moverte por la ciudad, compra la **tarjeta del Metro**, recargable, que sir
 
 Panamá usa el dólar estadounidense (el balboa existe, pero solo en monedas y equivale a un dólar). No es un destino barato para Centroamérica. Presupuesto por persona y día, sin vuelos:
 
-- **Ajustado: 50-70 € (55-75 $).** Hostal en dormitorio, fondas y mercado, metro y alguna entrada.
+**Presupuesto orientativo por día**
 
-- **Medio: 110-170 € (120-185 $).** Hotel de gama media en El Cangrejo o el Casco, restaurantes, Uber y entradas a Miraflores y Panamá Viejo.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado: 50-70 € | 55-75 $ | Hostal en dormitorio, fondas y mercado, metro y alguna entrada. |
+| Medio: 110-170 € | 120-185 $ | Hotel de gama media en El Cangrejo o el Casco, restaurantes, Uber y entradas a Miraflores y Panamá Viejo. |
 
 - **Extras:** tránsito del Canal (150-200 €), excursión de un día a San Blas (100-150 €), copa en azotea (8-14 €).
 

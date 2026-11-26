@@ -41,21 +41,17 @@ En el Prater puedes subir a la noria Riesenrad, que sale en El tercer hombre, o 
 
 Para un rato de calma, un café de los de toda la vida. Aquí el café es una institución: pides un Melange, te traen un vaso de agua y nadie te echa por quedarte dos horas leyendo.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Viena en 3 días: ruta día a día
 
 Tres días son lo ideal. Con dos ves lo esencial con prisa; con cuatro o cinco puedes añadir excursiones como Bratislava, a una hora en tren.
 
-### Día 1: centro histórico
+**Itinerario de 3 días en Viena**
 
-Stephansdom por la mañana, paseo por Graben y Kohlmarkt, Hofburg y tarde de café. Termina cenando en la zona del Naschmarkt.
-
-### Día 2: palacios y arte
-
-Schönbrunn temprano, con jardines y Gloriette. Por la tarde, Belvedere y, de paso, un paseo por Karlsplatz y la Karlskirche. Si te quedan fuerzas, Ópera de pie por la noche.
-
-### Día 3: museos y barrios
-
-Kunsthistorisches o Leopold por la mañana, comida en el MuseumsQuartier y tarde en Neubau, con tiendas pequeñas y bares. Para cerrar, un Heuriger o el Prater.
+| Día | Plan |
+|---|---|
+| Día 1 | Centro histórico. Stephansdom por la mañana, paseo por Graben y Kohlmarkt, Hofburg y tarde de café. Termina cenando en la zona del Naschmarkt. |
+| Día 2 | Palacios y arte. Schönbrunn temprano, con jardines y Gloriette. Por la tarde, Belvedere y, de paso, un paseo por Karlsplatz y la Karlskirche. Si te quedan fuerzas, Ópera de pie por la noche. |
+| Día 3 | Museos y barrios. Kunsthistorisches o Leopold por la mañana, comida en el MuseumsQuartier y tarde en Neubau, con tiendas pequeñas y bares. Para cerrar, un Heuriger o el Prater. |
 
 ## Cuándo ir
 
@@ -91,11 +87,13 @@ Dentro de la ciudad, el metro (U-Bahn), los tranvías y los autobuses de Wiener 
 
 ## Presupuesto orientativo por día
 
-- **Ajustado (60-80 euros):** hostal, transporte, comidas sencillas y una entrada de museo.
+**Presupuesto orientativo por día**
 
-- **Medio (110-160 euros):** hotel correcto, restaurantes, café diario y dos visitas de pago.
-
-- **Cómodo (200 euros o más):** buen hotel, cenas tranquilas y entradas a ópera o conciertos.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Ajustado | 60-80 euros | Hostal, transporte, comidas sencillas y una entrada de museo. |
+| Medio | 110-160 euros | Hotel correcto, restaurantes, café diario y dos visitas de pago. |
+| Cómodo | 200 euros o más | Buen hotel, cenas tranquilas y entradas a ópera o conciertos. |
 
 Los palacios y museos principales suelen costar entre 15 y 30 euros cada uno. Si vas a visitar varios, compara el precio de los pases de la ciudad con las entradas sueltas antes de comprarlos.
 

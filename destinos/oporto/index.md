@@ -43,21 +43,17 @@ Lo mejor de Oporto pasa sin plan: perderse por las calles de detrás de Clérigo
 
 - Visitar los jardines y el museo de Serralves, si te gusta el arte contemporáneo y hay buen día.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Oporto en 3 días: ruta día a día
 
 Tres días es lo ideal. Con dos ves lo esencial, con cuatro puedes sumar una excursión.
 
-### Día 1: centro histórico
+**Itinerario de 3 días en Oporto**
 
-Empieza en São Bento, sube a la Sé, baja a la Ribeira y cruza el puente hacia Gaia para la cata y la cena con vistas.
-
-### Día 2: Baixa y Cedofeita
-
-Mañana en Clérigos y Lello, paseo por Rua das Flores y Aliados, comida en el Bolhão y tarde en las tiendas y galerías de Miguel Bombarda.
-
-### Día 3: río y costa
-
-Tranvía hacia la Foz, paseo por la playa y vuelta tranquila. Si te sobra un día, Braga, Guimarães o un tren al valle del Duero son opciones razonables.
+| Día | Plan |
+|---|---|
+| Día 1 | Centro histórico. Empieza en São Bento, sube a la Sé, baja a la Ribeira y cruza el puente hacia Gaia para la cata y la cena con vistas. |
+| Día 2 | Baixa y Cedofeita. Mañana en Clérigos y Lello, paseo por Rua das Flores y Aliados, comida en el Bolhão y tarde en las tiendas y galerías de Miguel Bombarda. |
+| Día 3 | Río y costa. Tranvía hacia la Foz, paseo por la playa y vuelta tranquila. Si te sobra un día, Braga, Guimarães o un tren al valle del Duero son opciones razonables. |
 
 ## Cuándo ir: clima y temporadas
 

@@ -89,17 +89,13 @@ Most of the city's highlights cost nothing at all: Skanderbeg Square, the Et'hem
 
 ## Tirana itinerary: 3 days
 
-### Day 1: the centre and the communist past
+**3-day itinerary for Tirana**
 
-**Morning:** Start at Skanderbeg Square, step into the Et'hem Bey Mosque, then join a free walking tour or go straight into Bunk'Art 2. **Afternoon:** Walk to House of Leaves, then down the boulevard to the Pyramid and climb it. **Evening:** Cross the Lana into Blloku, see Postbllok and Hoxha's villa, then have dinner and drinks in the neighbourhood.
-
-### Day 2: markets, bunkers and the mountain
-
-**Morning:** Breakfast and browsing at Pazari i Ri, then walk past Tanners' Bridge and the castle walls. **Afternoon:** Take the bus to Bunk'Art 1. From there, continue to the Dajti Ekspres station if the sky is clear, and ride up for the view. **Evening:** Head back down and finish at the Grand Park lake for sunset, then eat at a traditional restaurant near the bazaar.
-
-### Day 3: day trip
-
-**Morning:** Take a bus to Krujë (about an hour) for the castle, the Skanderbeg Museum and the old bazaar. You could also take one of the earlier buses to Berat if you prefer Ottoman towns. **Afternoon:** Return to Tirana by late afternoon. **Evening:** Have a last dinner in Blloku or around the castle street, or try Mullixhiu, the best-known modern Albanian restaurant, if you want one splurge meal.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · The centre and the communist past | Start at Skanderbeg Square, step into the Et'hem Bey Mosque, then join a free walking tour or go straight into Bunk'Art 2. | Walk to House of Leaves, then down the boulevard to the Pyramid and climb it. | Cross the Lana into Blloku, see Postbllok and Hoxha's villa, then have dinner and drinks in the neighbourhood. |
+| Day 2 · Markets, bunkers and the mountain | Breakfast and browsing at Pazari i Ri, then walk past Tanners' Bridge and the castle walls. | Take the bus to Bunk'Art 1. From there, continue to the Dajti Ekspres station if the sky is clear, and ride up for the view. | Head back down and finish at the Grand Park lake for sunset, then eat at a traditional restaurant near the bazaar. |
+| Day 3 · Day trip | Take a bus to Krujë (about an hour) for the castle, the Skanderbeg Museum and the old bazaar. You could also take one of the earlier buses to Berat if you prefer Ottoman towns. | Return to Tirana by late afternoon. | Have a last dinner in Blloku or around the castle street, or try Mullixhiu, the best-known modern Albanian restaurant, if you want one splurge meal. |
 
 ## What is overrated (and what to do instead)
 
@@ -157,9 +153,12 @@ Tirana has no metro or tram. The centre is walkable, and city buses cost 40 lek 
 
 ## How much a trip to Tirana costs
 
-- **Shoestring: €35-50 a day.** That covers a hostel bed (€12-18), bakery breakfast, a cheap lunch, a grill dinner, one museum and buses.
+**Rough daily budget**
 
-- **Mid-range: €80-130 a day.** That covers a double room in Blloku or the centre (€50-80 per room), restaurant meals, two museums, the cable car, a couple of cocktails and the occasional taxi.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €35-50 a day | That covers a hostel bed (€12-18), bakery breakfast, a cheap lunch, a grill dinner, one museum and buses. |
+| Mid-range | €80-130 a day | That covers a double room in Blloku or the centre (€50-80 per room), restaurant meals, two museums, the cable car, a couple of cocktails and the occasional taxi. |
 
 - **Day trip extra:** Add €10-20 for buses, entry and lunch.
 

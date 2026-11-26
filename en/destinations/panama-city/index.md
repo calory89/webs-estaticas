@@ -97,17 +97,13 @@ The metro also costs under €1 a ride, which is the cheapest way to cross a cit
 
 ## Panama City itinerary: 3 days
 
-### Day 1: Casco Viejo and the waterfront
+**3-day itinerary for Panama City**
 
-**Morning:** start at Plaza de la Independencia, visit the cathedral and then the Museo del Canal Interoceánico while it is still cool. **Afternoon:** lunch on ceviche at the Mercado de Mariscos, then wander back through Casco Viejo to the golden altar, Iglesia de la Merced and Plaza de Francia. Rest at your hotel during the hottest hours. **Evening:** sunset on the Paseo Esteban Huertas, then dinner and a rooftop drink in Casco Viejo.
-
-### Day 2: Ancon Hill and the canal
-
-**Morning:** Uber to Cerro Ancón at 7am, hike to the flag, then come down and do a quick lap of Mi Pueblito. **Afternoon:** head to Miraflores Locks for the afternoon transits (check the schedule first) and stay at least 90 minutes. **Evening:** dinner in El Cangrejo, which has the best spread of casual restaurants away from tourist prices.
-
-### Day 3: Panamá Viejo and Amador
-
-**Morning:** Panamá Viejo first thing, tower and museum. **Afternoon:** lunch, then cross the city to the Biomuseo (or just its exterior) and rent a bike on the Amador Causeway. **Evening:** seafood on the causeway with the skyline lit up across the water. Uber back.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Casco Viejo and the waterfront | Start at Plaza de la Independencia, visit the cathedral and then the Museo del Canal Interoceánico while it is still cool. | Lunch on ceviche at the Mercado de Mariscos, then wander back through Casco Viejo to the golden altar, Iglesia de la Merced and Plaza de Francia. Rest at your hotel during the hottest hours. | Sunset on the Paseo Esteban Huertas, then dinner and a rooftop drink in Casco Viejo. |
+| Day 2 · Ancon Hill and the canal | Uber to Cerro Ancón at 7am, hike to the flag, then come down and do a quick lap of Mi Pueblito. | Head to Miraflores Locks for the afternoon transits (check the schedule first) and stay at least 90 minutes. | Dinner in El Cangrejo, which has the best spread of casual restaurants away from tourist prices. |
+| Day 3 · Panamá Viejo and Amador | Panamá Viejo first thing, tower and museum. | Lunch, then cross the city to the Biomuseo (or just its exterior) and rent a bike on the Amador Causeway. | Seafood on the causeway with the skyline lit up across the water. Uber back. |
 
 ## What is overrated (and what to do instead)
 
@@ -179,9 +175,12 @@ Tocumen International Airport (PTY) is about 25 km east of the centre. Your opti
 
 Panama uses the US dollar (the balboa is pegged 1:1 and only exists as coins). Daily budgets per person, excluding flights:
 
-- **Shoestring: €45-65 (US$50-70).** Hostel dorm, fonda meals and ceviche cups, metro, one paid sight a day.
+**Rough daily budget**
 
-- **Mid-range: €120-180 (US$130-195).** Hotel in El Cangrejo or a cheaper Casco Viejo boutique, restaurant dinners, Uber everywhere, rooftop drinks, the canal museum and locks.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring: €45-65 | US$50-70 | Hostel dorm, fonda meals and ceviche cups, metro, one paid sight a day. |
+| Mid-range: €120-180 | US$130-195 | Hotel in El Cangrejo or a cheaper Casco Viejo boutique, restaurant dinners, Uber everywhere, rooftop drinks, the canal museum and locks. |
 
 - **Extras:** a partial canal transit at €130-180, San Blas overnight at €150-250 (US$160-270) including transport and basic lodging.
 

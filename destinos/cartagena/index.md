@@ -81,23 +81,16 @@ El casco histórico se disfruta sin gastar: pasear la Ciudad Amurallada, San Die
 
 Para comer barato, sal de las calles principales: una arepa de huevo en la calle cuesta menos de 1 € y un menú del día en un local de barrio, entre 4 y 6 €. Compra agua y cerveza en tiendas, no en terrazas, y te ahorrarás bastante.
 
-## Itinerario: Cartagena de Indias en 4 días
+## Qué ver en Cartagena en 4 días: ruta día a día
 
-### Día 1: Ciudad Amurallada
+**Itinerario de 4 días en Cartagena**
 
-**Mañana:** entra por la Torre del Reloj, Plaza de los Coches, Plaza de la Aduana e Iglesia de San Pedro Claver. **Tarde:** Plaza de Bolívar con el Palacio de la Inquisición y el Museo del Oro Zenú en las horas de más calor, luego la catedral y Plaza de Santo Domingo. **Noche:** atardecer en la muralla y cena en el centro.
-
-### Día 2: San Felipe, La Popa y Getsemaní
-
-**Mañana:** taxi temprano al Castillo de San Felipe y de ahí a La Popa con el mismo taxi. **Tarde:** vuelve a Getsemaní, comida en un local de menú y paseo por murales, Calle de la Sierpe y Callejón Angosto. **Noche:** Plaza de la Trinidad y salsa.
-
-### Día 3: Bazurto, San Diego y manglares
-
-**Mañana:** tour por el Mercado de Bazurto. **Tarde:** siesta obligatoria por el calor, y luego San Diego y Las Bóvedas. Otra opción es cambiarlo por los manglares de La Boquilla. **Noche:** paseo en barco por la bahía o cena en Getsemaní.
-
-### Día 4: Islas del Rosario o Playa Blanca
-
-**Mañana:** salida en lancha desde el muelle de La Bodeguita, junto a la muralla. **Tarde:** playa, snorkel y vuelta a media tarde. **Noche:** última cena y despedida en la muralla o en la Plaza de Santo Domingo.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Ciudad Amurallada | Entra por la Torre del Reloj, Plaza de los Coches, Plaza de la Aduana e Iglesia de San Pedro Claver. | Plaza de Bolívar con el Palacio de la Inquisición y el Museo del Oro Zenú en las horas de más calor, luego la catedral y Plaza de Santo Domingo. | Atardecer en la muralla y cena en el centro. |
+| Día 2 · San Felipe, La Popa y Getsemaní | Taxi temprano al Castillo de San Felipe y de ahí a La Popa con el mismo taxi. | Vuelve a Getsemaní, comida en un local de menú y paseo por murales, Calle de la Sierpe y Callejón Angosto. | Plaza de la Trinidad y salsa. |
+| Día 3 · Bazurto, San Diego y manglares | Tour por el Mercado de Bazurto. | Siesta obligatoria por el calor, y luego San Diego y Las Bóvedas. Otra opción es cambiarlo por los manglares de La Boquilla. | Paseo en barco por la bahía o cena en Getsemaní. |
+| Día 4 · Islas del Rosario o Playa Blanca | Salida en lancha desde el muelle de La Bodeguita, junto a la muralla. | Playa, snorkel y vuelta a media tarde. | Última cena y despedida en la muralla o en la Plaza de Santo Domingo. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -157,12 +150,14 @@ Por la ciudad: el centro, San Diego y Getsemaní se recorren andando. Para San F
 
 Cartagena es la ciudad más cara de Colombia, aunque sigue siendo más barata que España si comes fuera de las zonas turísticas. Cambio orientativo: 1 € son unos 4.500 pesos colombianos.
 
-- **Presupuesto ajustado: 40-55 € al día.** Hostal en Getsemaní, comida de menú y callejera, entradas puntuales, taxis contados.
+**Presupuesto orientativo por día**
 
-- **Presupuesto medio: 90-140 € al día.** Hotel pequeño en Getsemaní o San Diego, una cena buena al día, entradas y taxis sin mirar mucho.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Presupuesto ajustado | 40-55 € al día | Hostal en Getsemaní, comida de menú y callejera, entradas puntuales, taxis contados. |
+| Presupuesto medio | 90-140 € al día | Hotel pequeño en Getsemaní o San Diego, una cena buena al día, entradas y taxis sin mirar mucho. |
 
 - **Excursión a islas:** suma entre 40 y 90 € según la lancha y lo que incluya.
-
 - **Vuelo desde España:** desde unos 600 € ida y vuelta, normalmente con escala en Bogotá; hay vuelos directos desde Madrid en temporada.
 
 ## Excursiones de un día desde Cartagena de Indias

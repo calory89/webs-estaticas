@@ -87,37 +87,14 @@ For a free viewpoint, climb the steps up **Cerro del Fortín** to the auditorium
 
 ## Oaxaca itinerary: 4 days
 
-### Day 1: The historic centre
+**4-day itinerary for Oaxaca**
 
-**Morning:** Breakfast at Mercado Benito Juárez with hot chocolate. Walk to the Zócalo and the Cathedral, then up Alcalá to Santo Domingo, and spend two hours in the Museo de las Culturas.
-
-**Afternoon:** Take the Jardín Etnobotánico tour (book or queue in advance), then visit IAGO and the Museo Textil.
-
-**Evening:** Have dinner in the Pasillo de Humo at 20 de Noviembre, then a mezcal tasting.
-
-### Day 2: Monte Albán and the southern craft villages
-
-**Morning:** Take the first shuttle up to Monte Albán and be on the Gran Plaza before the crowds.
-
-**Afternoon:** Hire a taxi or join a tour to San Bartolo Coyotepec for black pottery and San Martín Tilcajete for alebrijes.
-
-**Evening:** Back in town, walk to the Basílica de la Soledad for ice cream, then have dinner at a mid-range Oaxacan restaurant for mole.
-
-### Day 3: The eastern valley (ideally a Sunday)
-
-**Morning:** See the Árbol del Tule, then visit Tlacolula's market if it is Sunday, or Teotitlán del Valle for rugs if it is not.
-
-**Afternoon:** Visit the ruins of Mitla, then a palenque (mezcal distillery) around Santiago Matatlán. Add Hierve el Agua if it is open and you have the energy.
-
-**Evening:** Keep it easy with tlayudas at a street stall.
-
-### Day 4: Neighbourhoods and food
-
-**Morning:** Have coffee and pastries in Jalatlaco, then walk to Xochimilco and the aqueduct.
-
-**Afternoon:** Take a cooking class, or visit the Museo Rufino Tamayo and then the Mercado de Abastos if you want a raw, local market (watch your bag).
-
-**Evening:** Climb Cerro del Fortín for sunset, then have a final dinner at a place you booked ahead.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · The historic centre | Breakfast at Mercado Benito Juárez with hot chocolate. Walk to the Zócalo and the Cathedral, then up Alcalá to Santo Domingo, and spend two hours in the Museo de las Culturas. | Take the Jardín Etnobotánico tour (book or queue in advance), then visit IAGO and the Museo Textil. | Have dinner in the Pasillo de Humo at 20 de Noviembre, then a mezcal tasting. |
+| Day 2 · Monte Albán and the southern craft villages | Take the first shuttle up to Monte Albán and be on the Gran Plaza before the crowds. | Hire a taxi or join a tour to San Bartolo Coyotepec for black pottery and San Martín Tilcajete for alebrijes. | Back in town, walk to the Basílica de la Soledad for ice cream, then have dinner at a mid-range Oaxacan restaurant for mole. |
+| Day 3 · The eastern valley (ideally a Sunday) | See the Árbol del Tule, then visit Tlacolula's market if it is Sunday, or Teotitlán del Valle for rugs if it is not. | Visit the ruins of Mitla, then a palenque (mezcal distillery) around Santiago Matatlán. Add Hierve el Agua if it is open and you have the energy. | Keep it easy with tlayudas at a street stall. |
+| Day 4 · Neighbourhoods and food | Have coffee and pastries in Jalatlaco, then walk to Xochimilco and the aqueduct. | Take a cooking class, or visit the Museo Rufino Tamayo and then the Mercado de Abastos if you want a raw, local market (watch your bag). | Climb Cerro del Fortín for sunset, then have a final dinner at a place you booked ahead. |
 
 ## What is overrated (and what to do instead)
 
@@ -175,9 +152,12 @@ The centre is compact and walkable, and you will rarely need transport in town. 
 
 ## How much a trip to Oaxaca costs
 
-- **Shoestring: €35-50 a day.** Hostel dorm (€12-20), market meals and street food (€10-15), colectivos and shuttles (€3-5), one paid site (€5), a cheap mezcal or two.
+**Rough daily budget**
 
-- **Mid-range: €90-150 a day per person (sharing a room).** Boutique guesthouse (€40-80 per person), one restaurant dinner (€25-40), tastings and entries (€15-25), occasional taxis or a shared private driver.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €35-50 a day | Hostel dorm (€12-20), market meals and street food (€10-15), colectivos and shuttles (€3-5), one paid site (€5), a cheap mezcal or two. |
+| Mid-range | €90-150 a day per person (sharing a room) | Boutique guesthouse (€40-80 per person), one restaurant dinner (€25-40), tastings and entries (€15-25), occasional taxis or a shared private driver. |
 
 - **Extras:** cooking class €60-100, a good Teotitlán rug from €100 upwards, festival-period rooms double or triple in price.
 

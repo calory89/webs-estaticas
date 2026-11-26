@@ -87,19 +87,15 @@ Buena parte de la ciudad se ve sin gastar. Pasear el centro histórico es gratis
 
 - **Almuerzos:** el menú del día con sopa, segundo y jugo sale por 3-5 € en cualquier barrio.
 
-## Itinerario: Quito en 3 días
+## Qué ver en Quito en 3 días: ruta día a día
 
-### Día 1: centro histórico
+**Itinerario de 3 días en Quito**
 
-**Mañana:** empieza tranquilo por la altura. Plaza Grande, Catedral e Iglesia de la Compañía, todo a pocos pasos. **Tarde:** almuerza en el Mercado Central, sigue hasta la plaza de San Francisco y el Museo Casa del Alabado. **Noche:** canelazo en La Ronda y cena en el centro, volviendo en taxi o app.
-
-### Día 2: alturas y vistas
-
-**Mañana:** TelefériQo a primera hora, antes de que entren las nubes (taxi desde el centro, unos 5 €). **Tarde:** Basílica del Voto Nacional y subida a sus torres; después, taxi al Panecillo para ver el atardecer. **Noche:** cena y cervezas en La Floresta.
-
-### Día 3: Mitad del Mundo y Guayasamín
-
-**Mañana:** Mitad del Mundo y Museo Intiñán (taxi o app, unos 15-20 € el trayecto, o bus desde la estación Ofelia). **Tarde:** de vuelta, Capilla del Hombre en Bellavista y bajada al barrio de Guápulo. **Noche:** cena en la zona de González Suárez o La Carolina.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Centro histórico | Empieza tranquilo por la altura. Plaza Grande, Catedral e Iglesia de la Compañía, todo a pocos pasos. | Almuerza en el Mercado Central, sigue hasta la plaza de San Francisco y el Museo Casa del Alabado. | Canelazo en La Ronda y cena en el centro, volviendo en taxi o app. |
+| Día 2 · Alturas y vistas | TelefériQo a primera hora, antes de que entren las nubes (taxi desde el centro, unos 5 €). | Basílica del Voto Nacional y subida a sus torres; después, taxi al Panecillo para ver el atardecer. | Cena y cervezas en La Floresta. |
+| Día 3 · Mitad del Mundo y Guayasamín | Mitad del Mundo y Museo Intiñán (taxi o app, unos 15-20 € el trayecto, o bus desde la estación Ofelia). | De vuelta, Capilla del Hombre en Bellavista y bajada al barrio de Guápulo. | Cena en la zona de González Suárez o La Carolina. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -163,9 +159,12 @@ Dentro de la ciudad, el **Metro de Quito** (una sola línea de norte a sur, de E
 
 ## Cuánto cuesta un viaje a Quito
 
-- **Presupuesto ajustado (35-50 € al día):** hostal en La Mariscal (12-20 €), almuerzos del día y mercados (8-10 €), metro y bus (2 €), una entrada al día (5 €).
+**Presupuesto orientativo por día**
 
-- **Presupuesto medio (80-120 € al día):** hotel en La Floresta o el centro (45-70 €), restaurantes medios (25-30 €), taxis y apps (10 €), entradas y teleférico (10-15 €).
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Presupuesto ajustado | 35-50 € al día | Hostal en La Mariscal (12-20 €), almuerzos del día y mercados (8-10 €), metro y bus (2 €), una entrada al día (5 €). |
+| Presupuesto medio | 80-120 € al día | Hotel en La Floresta o el centro (45-70 €), restaurantes medios (25-30 €), taxis y apps (10 €), entradas y teleférico (10-15 €). |
 
 - **Vuelo desde España:** ida y vuelta desde Madrid, normalmente con escala, entre 600 y 1.000 € según temporada. Busca fechas fuera de verano y Navidad.
 

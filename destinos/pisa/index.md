@@ -95,23 +95,14 @@ Lo mejor de la ciudad no cuesta nada: la Piazza dei Miracoli por fuera, la cated
 
 - Agua de las fuentes públicas: lleva botella.
 
-## Itinerario: Pisa en 2 días
+## Qué ver en Pisa en 2 días: ruta día a día
 
-### Día 1: Torre, plaza y centro histórico
+**Itinerario de 2 días en Pisa**
 
-**Mañana:** llega a la Piazza dei Miracoli temprano, sube a la Torre en uno de los primeros turnos y entra después en la catedral y el baptisterio. Remata con el Camposanto antes de que llegue la marea de autobuses.
-
-**Tarde:** come algo rápido lejos de la plaza (cinco minutos andando ya bajan los precios) y baja por Via Santa Maria hacia la Piazza dei Cavalieri. Sigue por Borgo Stretto y termina en el mercado.
-
-**Noche:** atardecer en el Ponte di Mezzo, aperitivo en Piazza delle Vettovaglie y cena de cecina y pizza en una pizzería de barrio.
-
-### Día 2: Pisa tranquila o escapada
-
-**Mañana:** murallas y Orto Botanico, o el Museo Nazionale di San Matteo si te gusta el arte. Vuelve por los Lungarni hasta Santa Maria della Spina.
-
-**Tarde:** tren a Lucca (30 minutos) para recorrer su muralla en bici, o autobús a Marina di Pisa si hace buen tiempo.
-
-**Noche:** de vuelta, pasa junto al mural de Haring y cena en la orilla sur del Arno, en la zona de San Martino, más tranquila y local.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Torre, plaza y centro histórico | Llega a la Piazza dei Miracoli temprano, sube a la Torre en uno de los primeros turnos y entra después en la catedral y el baptisterio. Remata con el Camposanto antes de que llegue la marea de autobuses. | Come algo rápido lejos de la plaza (cinco minutos andando ya bajan los precios) y baja por Via Santa Maria hacia la Piazza dei Cavalieri. Sigue por Borgo Stretto y termina en el mercado. | Atardecer en el Ponte di Mezzo, aperitivo en Piazza delle Vettovaglie y cena de cecina y pizza en una pizzería de barrio. |
+| Día 2 · Pisa tranquila o escapada | Murallas y Orto Botanico, o el Museo Nazionale di San Matteo si te gusta el arte. Vuelve por los Lungarni hasta Santa Maria della Spina. | Tren a Lucca (30 minutos) para recorrer su muralla en bici, o autobús a Marina di Pisa si hace buen tiempo. | De vuelta, pasa junto al mural de Haring y cena en la orilla sur del Arno, en la zona de San Martino, más tranquila y local. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 

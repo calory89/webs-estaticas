@@ -105,17 +105,13 @@ A lot of the best of Marseille costs nothing. The coast, the hills and the marke
 
 ## Marseille itinerary: 3 days
 
-### Day 1: old port and old town
+**3-day itinerary for Marseille**
 
-**Morning:** fish market on the Quai des Belges, then climb into Le Panier and the Vieille Charité before the crowds. **Afternoon:** walk down to the Cathédrale de la Major, cross the footbridge to Fort Saint-Jean and do the MuCEM. **Evening:** take bus 60 up to Notre-Dame de la Garde for sunset, walk down, then have dinner and drinks around Cours Julien.
-
-### Day 2: the Calanques
-
-**Morning:** leave early on bus 21 to Luminy and hike to Sugiton (book in summer), or take the bus to Sormiou. **Afternoon:** swim, picnic and walk back before the heat peaks. **Evening:** recover at the Vieux-Port with pastis at Le Bar de la Marine, and pizza from a wood-fired oven in Noailles or Le Panier.
-
-### Day 3: markets and the coast
-
-**Morning:** Noailles market, the Canebière, then metro to Palais Longchamp or bus to the Cité Radieuse. **Afternoon:** bus 83 to the Catalans, swim, then walk the Corniche to Malmousque and the Vallon des Auffes. **Evening:** book a bouillabaisse at a proper restaurant, or eat at a casual seafood place in the Vallon.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Old port and old town | Fish market on the Quai des Belges, then climb into Le Panier and the Vieille Charité before the crowds. | Walk down to the Cathédrale de la Major, cross the footbridge to Fort Saint-Jean and do the MuCEM. | Take bus 60 up to Notre-Dame de la Garde for sunset, walk down, then have dinner and drinks around Cours Julien. |
+| Day 2 · The Calanques | Leave early on bus 21 to Luminy and hike to Sugiton (book in summer), or take the bus to Sormiou. | Swim, picnic and walk back before the heat peaks. | Recover at the Vieux-Port with pastis at Le Bar de la Marine, and pizza from a wood-fired oven in Noailles or Le Panier. |
+| Day 3 · Markets and the coast | Noailles market, the Canebière, then metro to Palais Longchamp or bus to the Cité Radieuse. | Bus 83 to the Catalans, swim, then walk the Corniche to Malmousque and the Vallon des Auffes. | Book a bouillabaisse at a proper restaurant, or eat at a casual seafood place in the Vallon. |
 
 ## What is overrated (and what to do instead)
 
@@ -159,9 +155,12 @@ In the city, the RTM network has two metro lines (M1 and M2), three tram lines a
 
 ## How much a trip to Marseille costs
 
-- **Shoestring: €60-80 a day**, with a hostel bed (€25-40), market and street food, a transport pass, and free hikes and beaches.
+**Rough daily budget**
 
-- **Mid-range: €150-220 a day**, with a double room (€90-150 split or solo), bistro meals, a museum, a boat trip and drinks.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €60-80 a day | With a hostel bed (€25-40), market and street food, a transport pass, and free hikes and beaches. |
+| Mid-range | €150-220 a day | With a double room (€90-150 split or solo), bistro meals, a museum, a boat trip and drinks. |
 
 - Extras: a bouillabaisse dinner at €60-80, a kayak half-day at €40-60, or a boat tour at €30-45.
 

@@ -97,25 +97,15 @@ Much of what makes Bari and Puglia good costs nothing. Both of Bari's main churc
 
 This Bari and Puglia itinerary uses Bari as a base and public transport. With a car you could sleep in the Valle d'Itria for two nights instead.
 
-### Day 1: Bari
+**5-day itinerary for Bari and Puglia**
 
-**Morning:** Start at Basilica di San Nicola, then the cathedral and Strada Arco Basso. Focaccia at Panificio Fiore for an early snack. **Afternoon:** Castello Normanno-Svevo if you like castles, otherwise walk the Muraglia and the Lungomare. **Evening:** Aperitivo in Piazza Mercantile, then dinner in the old town, followed by the passeggiata on Via Sparano.
-
-### Day 2: Polignano a Mare and Monopoli
-
-**Morning:** Train to Polignano, early. Walk the old town and the cliff viewpoints, swim at Lama Monachile before it fills. **Afternoon:** Train ten minutes on to Monopoli, swim at Cala Porta Vecchia. **Evening:** Seafood dinner by the harbour, last train back to Bari (check times).
-
-### Day 3: Valle d'Itria
-
-**Morning:** Ferrovie del Sud Est train to Alberobello (about 1.5 hours). See Aia Piccola first, then Rione Monti. **Afternoon:** Continue to Locorotondo for the view, and to Martina Franca if energy allows. **Evening:** Dinner at a fornello pronto in Martina Franca, where you pick raw meat at the counter and they grill it, before heading back.
-
-### Day 4: Lecce
-
-**Morning:** Early fast train to Lecce. Santa Croce, Piazza del Duomo and the amphitheatre. **Afternoon:** Pasticciotto (custard pastry) and coffee, then wander the centro storico. **Evening:** Stay for the stone at golden hour and dinner; either sleep here or take a late train back.
-
-### Day 5: Matera or Trani
-
-**Morning:** Matera (technically in Basilicata) by the FAL train, about 1.5 hours, for the cave districts of the Sassi. **Afternoon:** Walk Sasso Caveoso and Sasso Barisano. **Evening:** Back in Bari for raw seafood or a final plate of assassina. If you prefer something lighter, swap Matera for an easy half day in Trani.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Bari | Start at Basilica di San Nicola, then the cathedral and Strada Arco Basso. Focaccia at Panificio Fiore for an early snack. | Castello Normanno-Svevo if you like castles, otherwise walk the Muraglia and the Lungomare. | Aperitivo in Piazza Mercantile, then dinner in the old town, followed by the passeggiata on Via Sparano. |
+| Day 2 · Polignano a Mare and Monopoli | Train to Polignano, early. Walk the old town and the cliff viewpoints, swim at Lama Monachile before it fills. | Train ten minutes on to Monopoli, swim at Cala Porta Vecchia. | Seafood dinner by the harbour, last train back to Bari (check times). |
+| Day 3 · Valle d'Itria | Ferrovie del Sud Est train to Alberobello (about 1.5 hours). See Aia Piccola first, then Rione Monti. | Continue to Locorotondo for the view, and to Martina Franca if energy allows. | Dinner at a fornello pronto in Martina Franca, where you pick raw meat at the counter and they grill it, before heading back. |
+| Day 4 · Lecce | Early fast train to Lecce. Santa Croce, Piazza del Duomo and the amphitheatre. | Pasticciotto (custard pastry) and coffee, then wander the centro storico. | Stay for the stone at golden hour and dinner; either sleep here or take a late train back. |
+| Day 5 · Matera or Trani | Matera (technically in Basilicata) by the FAL train, about 1.5 hours, for the cave districts of the Sassi. | Walk Sasso Caveoso and Sasso Barisano. | Back in Bari for raw seafood or a final plate of assassina. If you prefer something lighter, swap Matera for an easy half day in Trani. |
 
 ## What is overrated (and what to do instead)
 
@@ -181,9 +171,12 @@ Inside Bari you walk almost everywhere; the old town and Murat sit next to each 
 
 Puglia is noticeably cheaper than the Amalfi Coast or Tuscany, except in August. Rough daily budgets per person:
 
-- **Shoestring (€60-90 a day):** hostel or shared B&B room €30-45, street food and one trattoria meal €20-25, regional trains €5-15, free sights and public beaches.
+**Rough daily budget**
 
-- **Mid-range (€120-200 a day):** double room €40-70 per person, two sit-down meals €45-60, a paid sight or lido sunbed €10-25, trains or a shared car rental €15-30.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | €60-90 a day | Hostel or shared B&B room €30-45, street food and one trattoria meal €20-25, regional trains €5-15, free sights and public beaches. |
+| Mid-range | €120-200 a day | Double room €40-70 per person, two sit-down meals €45-60, a paid sight or lido sunbed €10-25, trains or a shared car rental €15-30. |
 
 - **Extras:** lido sunbed and umbrella for two €20-40 (up to €60+ in August), cooking class €50-90, Grotte di Castellana about €20.
 

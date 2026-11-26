@@ -99,23 +99,14 @@ Buena parte de la ciudad no cuesta nada. Lo que mejor sale:
 
 Si piensas ver tres o más museos de pago, mira el **Pass Musées** o el Strasbourg City Card; con uno o dos, no compensa.
 
-## Itinerario: Estrasburgo en 2 días
+## Qué ver en Estrasburgo en 2 días: ruta día a día
 
-### Día 1: catedral y centro histórico
+**Itinerario de 2 días en Estrasburgo**
 
-**Mañana:** empieza en la catedral temprano y sube a la plataforma antes de que lleguen los grupos. Luego, el Musée de l'Œuvre Notre-Dame, justo al lado. Compra tu entrada para el reloj astronómico con margen antes de mediodía y media.
-
-**Tarde:** come algo rápido (una flammekueche) y pasa al Palais Rohan. Después, barco por el Ill desde el embarcadero junto al palacio. Termina cruzando hacia el Musée Alsacien si te queda energía.
-
-**Noche:** cena en una winstub cerca de la catedral y vuelve a la plaza para verla iluminada.
-
-### Día 2: Petite France, Neustadt y barrio europeo
-
-**Mañana:** Petite France a primera hora, Ponts Couverts y la terraza del Barrage Vauban. Desde ahí sube andando por los muelles hacia la place Kléber.
-
-**Tarde:** Neustadt a pie (place de la République, Saint-Paul) y tranvía hasta el Parlamento Europeo y la Orangerie. Si prefieres, cambia esto por la escapada a Kehl en la línea D.
-
-**Noche:** cervezas y cena en la Krutenau, el barrio estudiantil, más barato y menos turístico que el centro.
+| Día | Mañana | Tarde | Noche |
+|---|---|---|---|
+| Día 1 · Catedral y centro histórico | Empieza en la catedral temprano y sube a la plataforma antes de que lleguen los grupos. Luego, el Musée de l'Œuvre Notre-Dame, justo al lado. Compra tu entrada para el reloj astronómico con margen antes de mediodía y media. | Come algo rápido (una flammekueche) y pasa al Palais Rohan. Después, barco por el Ill desde el embarcadero junto al palacio. Termina cruzando hacia el Musée Alsacien si te queda energía. | Cena en una winstub cerca de la catedral y vuelve a la plaza para verla iluminada. |
+| Día 2 · Petite France, Neustadt y barrio europeo | Petite France a primera hora, Ponts Couverts y la terraza del Barrage Vauban. Desde ahí sube andando por los muelles hacia la place Kléber. | Neustadt a pie (place de la République, Saint-Paul) y tranvía hasta el Parlamento Europeo y la Orangerie. Si prefieres, cambia esto por la escapada a Kehl en la línea D. | Cervezas y cena en la Krutenau, el barrio estudiantil, más barato y menos turístico que el centro. |
 
 ## Lo que está sobrevalorado (y qué hacer en su lugar)
 
@@ -179,9 +170,12 @@ En la ciudad, el centro se recorre andando. Para el barrio europeo o Kehl usa el
 
 ## Cuánto cuesta un viaje a Estrasburgo
 
-- **Presupuesto ajustado (unos 90-120 € al día por persona):** hotel junto a la estación o en Kehl compartiendo, menús del día, bretzels, entradas gratis o con el primer domingo, todo a pie.
+**Presupuesto orientativo por día**
 
-- **Presupuesto medio (unos 150-200 € al día por persona):** hotel en el centro, cena en winstub con vino, barco por el Ill, plataforma de la catedral y dos museos.
+| Nivel | Por persona y día | Qué incluye |
+|---|---|---|
+| Presupuesto ajustado | unos 90-120 € al día por persona | Hotel junto a la estación o en Kehl compartiendo, menús del día, bretzels, entradas gratis o con el primer domingo, todo a pie. |
+| Presupuesto medio | unos 150-200 € al día por persona | Hotel en el centro, cena en winstub con vino, barco por el Ill, plataforma de la catedral y dos museos. |
 
 - **En diciembre:** súmale un 40-60 % por el alojamiento.
 

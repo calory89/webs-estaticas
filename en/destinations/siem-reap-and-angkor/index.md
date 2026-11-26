@@ -83,29 +83,13 @@ The Angkor pass is the big unavoidable cost, but plenty of things are free. The 
 
 ## Siem Reap and Angkor itinerary: 3 days
 
-### Day 1: Sunrise and the small circuit
+**3-day itinerary for Siem Reap and Angkor**
 
-**Morning:** buy your pass at the official ticket office (or online), then sunrise at Angkor Wat. Stay inside while the crowds leave and see the bas-reliefs. Then go to the Bayon and the terraces of Angkor Thom.
-
-**Afternoon:** head back to town for lunch and a pool. Around 3pm, ride out to Ta Prohm (quieter late in the day) and Banteay Kdei.
-
-**Evening:** eat fish amok near Wat Bo and have a beer on Pub Street if you have the energy.
-
-### Day 2: The grand circuit
-
-**Morning:** leave at 7am for Preah Khan, Neak Pean, Ta Som and East Mebon. These are bigger distances, so a tuk-tuk beats a bicycle.
-
-**Afternoon:** lunch at the food stalls near Srah Srang, then rest. Head to Pre Rup for sunset.
-
-**Evening:** see Phare, the Cambodian Circus, and grab a late noodle soup afterwards.
-
-### Day 3: Banteay Srei and the town
-
-**Morning:** leave early for Banteay Srei and the Landmine Museum. If you are fit, add the riverbed carvings at Kbal Spean (a 40-minute uphill walk).
-
-**Afternoon:** visit the Angkor National Museum, or the APOPO Visitor Center if you are travelling with kids.
-
-**Evening:** stroll the Old Market and the riverside, then have dinner at one of the training restaurants.
+| Day | Morning | Afternoon | Evening |
+|---|---|---|---|
+| Day 1 · Sunrise and the small circuit | Buy your pass at the official ticket office (or online), then sunrise at Angkor Wat. Stay inside while the crowds leave and see the bas-reliefs. Then go to the Bayon and the terraces of Angkor Thom. | Head back to town for lunch and a pool. Around 3pm, ride out to Ta Prohm (quieter late in the day) and Banteay Kdei. | Eat fish amok near Wat Bo and have a beer on Pub Street if you have the energy. |
+| Day 2 · The grand circuit | Leave at 7am for Preah Khan, Neak Pean, Ta Som and East Mebon. These are bigger distances, so a tuk-tuk beats a bicycle. | Lunch at the food stalls near Srah Srang, then rest. Head to Pre Rup for sunset. | See Phare, the Cambodian Circus, and grab a late noodle soup afterwards. |
+| Day 3 · Banteay Srei and the town | Leave early for Banteay Srei and the Landmine Museum. If you are fit, add the riverbed carvings at Kbal Spean (a 40-minute uphill walk). | Visit the Angkor National Museum, or the APOPO Visitor Center if you are travelling with kids. | Stroll the Old Market and the riverside, then have dinner at one of the training restaurants. |
 
 ## What is overrated (and what to do instead)
 
@@ -153,11 +137,13 @@ In town, use **Grab** or **PassApp** for fixed-price tuk-tuks (€1-3 for short 
 
 Prices are mostly quoted in US dollars, with change often given in Cambodian riel (about 4,000 riel to the dollar).
 
-- **Shoestring, about €30-40 a day:** hostel dorm (€5-8), street food (€8), bicycle or shared tuk-tuk (€5), plus about €19 a day for the 3-day pass spread out.
+**Rough daily budget**
 
-- **Mid-range, about €70-110 a day:** boutique hotel with pool (€35-60), restaurant meals (€20), private tuk-tuk (€20), pass, and one paid activity.
-
-- **Comfort, €150 and up a day:** resort hotel, a private guide (about €35-45 a day), air-conditioned car and fine dining.
+| Level | Per person per day | What it covers |
+|---|---|---|
+| Shoestring | about €30-40 a day | Hostel dorm (€5-8), street food (€8), bicycle or shared tuk-tuk (€5), plus about €19 a day for the 3-day pass spread out. |
+| Mid-range | about €70-110 a day | Boutique hotel with pool (€35-60), restaurant meals (€20), private tuk-tuk (€20), pass, and one paid activity. |
+| Comfort | €150 and up a day | Resort hotel, a private guide (about €35-45 a day), air-conditioned car and fine dining. |
 
 ## Day trips from Siem Reap and Angkor
 

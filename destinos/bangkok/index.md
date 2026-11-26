@@ -37,17 +37,18 @@ Si te gusta ver la ciudad desde arriba, el SkyWalk del edificio Mahanakhon da vi
 
 Y una excursión de día: Ayutthaya, la antigua capital, se alcanza en tren desde Bangkok (comprueba desde qué estación sale el horario que te interese). Sus ruinas de ladrillo rojo merecen la jornada.
 
-## Cuántos días y ruta sugerida
+## Qué ver en Bangkok en 4 días: ruta día a día
 
 Con tres días ves lo esencial. Con cuatro lo disfrutas sin ir a rastras. Esta es la ruta que haría yo:
 
-- **Día 1:** casco antiguo. Gran Palacio por la mañana, Wat Pho, ferry a Wat Arun al atardecer y cena en Yaowarat.
+**Itinerario de 4 días en Bangkok**
 
-- **Día 2:** Wat Saket de primera hora, paseo por Banglamphu, tarde de masaje y descanso. Por la noche, un mercado nocturno.
-
-- **Día 3:** Jim Thompson, Siam y centros comerciales, parque Lumphini al atardecer. Si es fin de semana, cambia esto por Chatuchak.
-
-- **Día 4:** excursión a Ayutthaya o jornada de canales y Thonburi, según el cuerpo que te quede.
+| Día | Plan |
+|---|---|
+| Día 1 | Casco antiguo. Gran Palacio por la mañana, Wat Pho, ferry a Wat Arun al atardecer y cena en Yaowarat. |
+| Día 2 | Wat Saket de primera hora, paseo por Banglamphu, tarde de masaje y descanso. Por la noche, un mercado nocturno. |
+| Día 3 | Jim Thompson, Siam y centros comerciales, parque Lumphini al atardecer. Si es fin de semana, cambia esto por Chatuchak. |
+| Día 4 | Excursión a Ayutthaya o jornada de canales y Thonburi, según el cuerpo que te quede. |
 
 ## Cuándo ir: clima y temporadas
 
