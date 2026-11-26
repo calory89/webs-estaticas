@@ -626,6 +626,7 @@ function aiGuard(req, u) {
   if (!/application\/json/i.test(req.headers.get('content-type') || '')) return json({ error: 'json_required' }, 415);
   return null;
 }
+const CTR40 = new Set('dubai bali phuket costa-del-sol miami kuala-lumpur ras-al-khaimah lombok riviera-maya abu-dhabi pattaya lisbon istanbul antalya alanya bangkok algarve da-nang sharjah bodrum'.split(' '));   // n40 k7 (R03-31)
 export async function honeyPath(req, u, ctx) {   // a path listed as Disallow in robots.txt that no page links to: only scanners visit it
   ctx.waitUntil(rpc('kolaboro_honey_hit', { p_wkey: WKEY, p_kind: 'robots_path', p_hint: (req.headers.get('cf-ipcountry') || '?') + ' ' + (req.headers.get('user-agent') || '').slice(0, 80) }).catch(() => {}));
   return new Response('Not found', { status: 404, headers: { 'content-type': 'text/plain', 'cache-control': 'no-store' } });
@@ -1596,6 +1597,7 @@ export async function ssr(base, u, kind, env) {
     const pct = f => Math.round(LR.filter(f).length / LR.length * 100);
     const same31 = String(m).toLowerCase() === String(L[0].country).toLowerCase();   // n31s (item 200): a market named like its country (Cyprus, Portugal, Malaysia) said "Cyprus, Cyprus" and took the title of /countries/<c>/
     title = same31 ? m + ' off-plan market file: what developers publish | Kolaboro' : 'Off-plan projects in ' + m + ', ' + L[0].country + ': what developers publish | Kolaboro';
+    if (CTR40.has(slugM(m))) { const t40 = 'Off-plan ' + m + ' 2026: ' + n + ' projects, developers, delays'; if (t40.length <= 60) title = t40 + (t40.length + 11 <= 60 ? ' | Kolaboro' : ''); }   // n40 k7 (R03-31): title test on 20 markets, logged in /data/ctr-changes.tsv
     { const dw = (v => { const q = String(v || '').slice(0, 10).split('-'); return q.length === 3 ? (+q[2]) + ' ' + ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][+q[1] - 1] + ' ' + q[0] : String(v || ''); })(d.updated);
       const un = LR.length < n ? ' (' + (n - LR.length) + ' not yet reviewed)' : '', tail = ': ' + avg(x => x.score).toFixed(1) + ' of 6 buyer checks public on average, ' + pct(x => (x.checks || {}).permit === 2) + '% show a permit, ' + pct(x => (x.checks || {}).escrow === true) + '% deposit protection. Updated ' + dw + '.';
       desc = !L.some(rv8) ? n + ' off-plan projects tracked in ' + m + ', not yet reviewed by Kolaboro. Updated ' + dw + '.' : n + ' off-plan projects in ' + m + un + tail;

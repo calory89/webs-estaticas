@@ -197,6 +197,7 @@ async function build(env, lang, key, D, shell, inner) {
     if (lang === 'ru') body = ruPlaces(body);
   }
   if (key === 'new' || key === 'vs') body = body.replace(/(<a\s[^>]*href="\/vs\/[a-z0-9-]+-vs-[a-z0-9-]+\/")/g, '$1 hreflang="en"');   // pair pages are English only
+  if (key === 'new' || key === 'vs') body = body.replace(new RegExp('href="' + pre(lang) + '/(new|vs)/\\?p=', 'g'), 'href="/$1/?p=');   // n40 k7 (R06-08): only the English list is paged (?p=2 ...); translated page links led to a copy of page 1
   // n38 d5: the shell's inline script rewrites English-format numbers (3,433) in the page locale on DOMContentLoaded, which rewrapped
   // lines after the first paint (layout shift on /es/vs/, /de/vs/). Same rule here, with the same locale the shell's script reads (KBL.num).
   const kn = /"num":\s*"([^"]+)"/.exec(shTxt);
