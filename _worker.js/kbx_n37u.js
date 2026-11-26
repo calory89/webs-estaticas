@@ -449,10 +449,10 @@ function peers(l, slug) {
 // country link each other in every language. cg26 in /data/n37u-i18n.json lists which of these pages exist per language (from the sitemaps).
 let CGM = null;   // n40 k11 (R05-04..08, R05-29..32): market slug -> country, so translated market pages link the guides of their country too
 function cgBox(l, p) {
-  const mm = l !== 'en' && T && T.cg26 && /^\/(?:es|de|fr|nl|ru|zh|ar)\/m\/([a-z0-9-]{2,80})\/$/.exec(p);
+  const mm = T && T.cg26 && /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?m\/([a-z0-9-]{2,80})\/$/.exec(p);
   if (mm && !CGM) { CGM = new Map(); for (const k in T.cg26) for (const x of T.cg26[k].m) if (!CGM.has(x[0])) CGM.set(x[0], k); }
   const m = mm ? (CGM.get(mm[1]) ? [p, CGM.get(mm[1]), ''] : null) : /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?countries\/([a-z0-9-]{2,60})\/(?:(how-to-check|is-it-safe|buyer-protection-law)\/)?$/.exec(p); if (!m || !T.cg26) return '';
-  const c = T.cg26[m[1]]; if (!c) return ''; const cur = mm ? -1 : ['', 'how-to-check', 'is-it-safe', 'buyer-protection-law'].indexOf(m[2] || ''), bl = c.p[l] || 0, be = c.p.en || 0, en = ' <small>' + esc(t(l, 'cg_en')) + '</small>';
+  const c = T.cg26[m[1]]; if (!c || (mm && l === 'en' && c.m.length < 2)) return ''; const cur = mm ? -1 : ['', 'how-to-check', 'is-it-safe', 'buyer-protection-law'].indexOf(m[2] || ''), bl = c.p[l] || 0, be = c.p.en || 0, en = ' <small>' + esc(t(l, 'cg_en')) + '</small>';
   if (cur >= 0 && !(bl & (1 << cur))) return '';   // only on pages that exist in this language (a market page links its country's guides)
   const A = [];
   ['', 'how-to-check/', 'is-it-safe/', 'buyer-protection-law/'].forEach((s, i) => { if (i === cur) return; const lab = esc(t(l, 'cg_' + i));
@@ -467,7 +467,7 @@ const LT41 = ['h', 'p', 'l', 'b', 'ld', 'er', 'nf', 'mn', 'mx', 'ho', 'nho', 'mv
 function lateBox(l, nc) {
   const S = {}; for (const k of LT41) S[k] = t(l, 'lt_' + k + '41'); S.pre = pre(l); S.loc = LOC[l] || 'en-GB';
   return '<section class="wrap" id="n40-late" aria-labelledby="n40-late-h"' + dir(l) + '><div class="n40-lt"><h2 id="n40-late-h">' + esc(S.h) + '</h2><p>' + esc(S.p) + '</p><form id="n40-late-f" role="search" novalidate><label for="n40-late-q">' + esc(S.l) + '</label><div class="n40-lt-r"><input id="n40-late-q" name="q" type="search" autocomplete="off" spellcheck="false" minlength="2" maxlength="300" required><button type="submit" class="btn btn-hi">' + esc(S.b) + '</button></div></form><div id="n40-late-o" aria-live="polite"></div></div>' +
-    '<script type="application/json" id="n40-late-s">' + JSON.stringify(S).replace(/</g, '\\u003c') + '</script><script src="/k/late.js?v=k11a" defer' + (nc ? ' nonce="' + nc + '"' : '') + '></script>' +
+    '<script type="application/json" id="n40-late-s">' + JSON.stringify(S).replace(/</g, '\\u003c') + '</script><script src="/k/late.js?v=k11b" defer' + (nc ? ' nonce="' + nc + '"' : '') + '></script>' +
     '<style>.n40-lt{border:1px solid var(--line,#d9d9d9);border-radius:12px;padding:16px;margin:24px 0;background:var(--card,transparent)}.n40-lt h2{font-size:1.15rem;margin:0 0 6px}.n40-lt p{margin:0 0 10px}.n40-lt label{display:block;font-weight:600;margin:0 0 6px}.n40-lt-r{display:flex;gap:8px;flex-wrap:wrap}.n40-lt-r input{flex:1 1 220px;min-height:44px;padding:8px 12px;border:1px solid var(--line,#bbb);border-radius:10px;font:inherit;background:var(--bg,#fff);color:inherit}.n40-lt-r button{min-height:44px}#n40-late-o{margin-top:12px}#n40-late-o ul{margin:6px 0;padding-inline-start:20px;line-height:1.8}#n40-late-o .v{font-weight:700;margin:0 0 6px}#n40-late-o .v.late{color:var(--k-red,#b42318)}#n40-late-o .v.mv{color:var(--k-amber,#8a5a00)}#n40-late-o .v.ok{color:var(--k-green,#1a7f37)}#n40-late-o button.lk{background:none;border:0;padding:4px 0;color:var(--k-sea,#155C75);text-decoration:underline;cursor:pointer;font:inherit;min-height:32px;text-align:start}</style></section>';
 }
 export async function foot(u, env, r) {

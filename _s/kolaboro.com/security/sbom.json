@@ -2,9 +2,9 @@
  "bomFormat": "CycloneDX",
  "specVersion": "1.5",
  "serialNumber": "urn:uuid:a4326342-ac4f-4fe3-a54b-f96261133eb5",
- "version": 1,
+ "version": 2,
  "metadata": {
-  "timestamp": "2026-11-20T15:51:21.629Z",
+  "timestamp": "2026-11-26T12:15:47.000Z",
   "tools": {
    "components": [
     {
@@ -1853,24 +1853,24 @@
    "type": "file",
    "name": "/compare/compare.js",
    "group": "kolaboro.com",
-   "version": "b7a275e24e",
+   "version": "n36e1",
    "supplier": {
     "name": "Kolaboro"
    },
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "3047bc4dc185749d6721a28c8c261ce1fc027a7a925335ac563092ffa60a5878fc607284451c2090ad4e316956bdffd2"
+     "content": "bc57cb804e32946004b823d113f541bb3d3b6c1c61031749d9ee3848b5ef7fc778fcb6ca148458c217a01905b9fcb4a7"
     },
     {
      "alg": "SHA-256",
-     "content": "5ba42cd2e6b36a62b78cdd0a4dcf517b535a6e86646da37d7b25f3e637fcc98d"
+     "content": "064b13662ab5f24f1eb2d266d5e43900f00c2441ff0356db16a2eb3bde47fdd9"
     }
    ],
    "externalReferences": [
     {
      "type": "distribution",
-     "url": "https://kolaboro.com/compare/compare.js?v=b7a275e24e"
+     "url": "https://kolaboro.com/compare/compare.js?v=n36e1"
     }
    ],
    "properties": [
@@ -1921,24 +1921,24 @@
    "type": "file",
    "name": "/developers/benchmark/bk.js",
    "group": "kolaboro.com",
-   "version": "1",
+   "version": "2",
    "supplier": {
     "name": "Kolaboro"
    },
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "42191df5166737d8edc50ddc67b0c87a516cc65199784c75ed3494a0cb1ad640c94ce5610bb4917f13434aab7b89edd5"
+     "content": "5e53b66cc6c084e4d4d6be14df82a1bb295cffe82b665ea66111b1b6c5eb9df1b90bc6dd35aac9e4df5d86081c6c184c"
     },
     {
      "alg": "SHA-256",
-     "content": "468894b558db58ed5aef8719f0714b030cda808a6429e25a2cc68f49865c6f22"
+     "content": "0950bd4a9f31f79cb151552c387b577672a9730f1aec80e478ff056d57ff9f74"
     }
    ],
    "externalReferences": [
     {
      "type": "distribution",
-     "url": "https://kolaboro.com/developers/benchmark/bk.js?v=1"
+     "url": "https://kolaboro.com/developers/benchmark/bk.js?v=2"
     }
    ],
    "properties": [
@@ -3213,24 +3213,24 @@
    "type": "file",
    "name": "/k/cases.js",
    "group": "kolaboro.com",
-   "version": "3213fdd0a9",
+   "version": "64a004c86a",
    "supplier": {
     "name": "Kolaboro"
    },
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "e9c9827cb1f0106615ff98100dccfaf496850727c4399cdf369252c96d3287c865a6edf67d49208f92aed9e2be45d591"
+     "content": "da246a931b9a550c0d3a4f259f1c6d8b18748fcffbe65d64280ac6809946974a0cf573c9c65f6e31d21dd6dbe311de74"
     },
     {
      "alg": "SHA-256",
-     "content": "60eaf5aff004dc1cf21fede7cac275e248e94c3dcdfc979188eafb451fcd68d7"
+     "content": "a5666d06c23d6cbb14e8706ac8fb5dc1d15815ce6d73ca2aa8fb82115d20f64b"
     }
    ],
    "externalReferences": [
     {
      "type": "distribution",
-     "url": "https://kolaboro.com/k/cases.js?v=3213fdd0a9"
+     "url": "https://kolaboro.com/k/cases.js?v=64a004c86a"
     }
    ],
    "properties": [
@@ -3281,24 +3281,24 @@
    "type": "file",
    "name": "/k/cite29.js",
    "group": "kolaboro.com",
-   "version": "2",
+   "version": "3",
    "supplier": {
     "name": "Kolaboro"
    },
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "71ffd9539e0be3a51fb9757d5c326b61b21e983baa22d019bdafdf4bdf844446220a75b02231120c1e6cdb65ce162821"
+     "content": "023c44aeabc96b553fe31516d777700fda79bc85d95e52acb359fb5f3e89bc4796219745cda8cb9a995eedc784600c3b"
     },
     {
      "alg": "SHA-256",
-     "content": "4c7b7903fb122baadb61eefab24c49dc0be383c44e36f0f9090cb6c1a698d55d"
+     "content": "d3b540a00263a2d9a7aec3f325e99ecb63ed04b391c1b94f714ecd55704b1832"
     }
    ],
    "externalReferences": [
     {
      "type": "distribution",
-     "url": "https://kolaboro.com/k/cite29.js?v=2"
+     "url": "https://kolaboro.com/k/cite29.js?v=3"
     }
    ],
    "properties": [
@@ -3492,11 +3492,11 @@
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "a40ca6ec89bc75defd56bcef07b8db5abea2a4b85b74f20941e3f9c288f65ffce4040d621c3955e576002b1fbec73099"
+     "content": "c470f233eb0d41bd7b609b1328f4e2fa549f524df9e9bdf1ed9e93cffc3353b7d9fafe21dd7c5ffb7440631f68c32f99"
     },
     {
      "alg": "SHA-256",
-     "content": "3f66b8d2dc93ef0fcd2e53634f15fc95c82fca10a25fe7f40ae1d3bba30c5d9e"
+     "content": "b7c46c2d9954ebd8635b73d3cc5368eda851d497fcbfec8b1c6dad08030e6a01"
     }
    ],
    "externalReferences": [
@@ -3560,11 +3560,11 @@
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "8d18e7455c6588bf51eae6183119c5ce14200feac7fcdbfff30d319ee0a9c2da7b4eb6268f0f515b101f0d2b26393c6f"
+     "content": "9e7807de945514907fa76b9f9e98e75c847fc67540a175dd2b90b0d015823628792d6fa2f49c98cd09a1045a490a4374"
     },
     {
      "alg": "SHA-256",
-     "content": "ce14c1d089c67e4cec7813a5c2bf3ac23d9a6bbb23444cbb6247e2abd411fbd2"
+     "content": "2aae04fd5ae306c83b0475e16149325566017d4bc081674ba11bcd7f8264fbb3"
     }
    ],
    "externalReferences": [
@@ -3628,11 +3628,11 @@
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "034ba3dff71a6a331ed4a9feb56de3d26b56949240d02379fd3524f30554f1b683224717211a338f819e2c475f6ecf05"
+     "content": "d259b47d48f0e50482735bad710336c684c5732c7c95eb2984b961a67c6ad490bc976be805fad8300cec05852898df51"
     },
     {
      "alg": "SHA-256",
-     "content": "e07e906d8d64d1be347b5a40187231bd67c00ce53852b6c3700a2dc990cab8b3"
+     "content": "2ef40ebb741b05bbeb56564bc39ae3f70bd27fc709dc4498d1cf418290ba88ca"
     }
    ],
    "externalReferences": [
@@ -3967,11 +3967,11 @@
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "47f7779afb544499292a987e52de7d029cdeb2fde6f7042232c653730d345d8f543560f44ed6480551327bdd7e868c7b"
+     "content": "7dbbf44d7cd8698425976e8e9238fc698b96e83e992ee1d696ee5472b3a76b45a27e31f7db7cf07659516aed2fbee02b"
     },
     {
      "alg": "SHA-256",
-     "content": "855dcbd7800262015500577032d146832ff6cbca937e4a66f26fe6b43dcc589f"
+     "content": "746158f447884a114d74c8d93804d81ea8ba125722935de158a8d2930a598066"
     }
    ],
    "externalReferences": [
@@ -4035,11 +4035,11 @@
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "2f9993986ef9670582454dfe4fc5c533619aa91bc4b3bc2036709a87a4ba2d163df728a51c862fd5e9253fde043c20c4"
+     "content": "5656fd4318bb8b01a78c0ee5562dbea483fb3dcb833fa2fce9c59b96c5c1fa35d4194e78bba428a2cf4efb01c1120d6e"
     },
     {
      "alg": "SHA-256",
-     "content": "2c0b93fba1c571821d6ea8095cce34042b1691a7ad9cddb09a742ccbea4546ee"
+     "content": "e777f4b2a5422af4aac2f021cd1b0b1a5984306dc0068c3124940a3cf4b53ea2"
     }
    ],
    "externalReferences": [
@@ -4515,11 +4515,11 @@
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "b39e838db6b6c6e4d81419fcff964be7ba0613eeed7985330cfe349db2e452affd54a9a589c8c90ef8571cc8fbbe2a7e"
+     "content": "1b73b7adef5e3e7ca117b7a20098ec346838907cec1d2579d411d892f7ae3810b4c4bbabb48f22972aab766b312dffda"
     },
     {
      "alg": "SHA-256",
-     "content": "5e2aea754bf4d5d4f20b2e6377029df17b405995395e33e3a1230057ea649ff0"
+     "content": "7815b110346e0bed96f9bc45434a5f933019dabbfed5aae206cf4ffd0e674377"
     }
    ],
    "externalReferences": [
@@ -4719,11 +4719,11 @@
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "63cac15eaa11b1424ce3d857c54f43b940adfb4bfe8793bf206e962afaae8a2a61bb760fefd3f5a0a6f58ccc2b26681a"
+     "content": "994879481df706f25b744b16d2a736ff1680314cf6a22bfc0dae99a91b5e84e22b361943f41bf1e1932d6bc967e6fa94"
     },
     {
      "alg": "SHA-256",
-     "content": "e571b519e06e9e3e25025ced0fefb2d3b1cf0e1a21ffb02e1b4bf9ed4a7cfcb4"
+     "content": "6a55cfa6ced16c5e5ea4f52f70b536786a97fb2613c9dea60b61874bb7b2e608"
     }
    ],
    "externalReferences": [
@@ -4787,11 +4787,11 @@
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "801fb856fb92c44f643b035d7a808be54e4364b7cde5c3c55818e95ead20748c74ebdd84ca061acd14f9f3ca309f25d0"
+     "content": "3d50e85adec80262e310fea3a2ec30196acdcba92afe1186f86bae7dc16a34cf144e7e82f9892223d674fc2691a8697b"
     },
     {
      "alg": "SHA-256",
-     "content": "2fa0214a8a0d9580405962e80dff0f4172df48cb8c1f72a0d08575efa44af642"
+     "content": "3249b7c92d7751fa1c2b7ed8ba75458d8b3c93c0ff6e1552ccec1b1d5f77ee01"
     }
    ],
    "externalReferences": [
@@ -4848,24 +4848,24 @@
    "type": "file",
    "name": "/k/site.js",
    "group": "kolaboro.com",
-   "version": "n32s1",
+   "version": "3222000ecc",
    "supplier": {
     "name": "Kolaboro"
    },
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "aba95decf0142eec13f228f2ce0aec5fafb7f87b9bfb3aabf576e7d26aa2ca2a0de7a986673deea7228c967ee307bc47"
+     "content": "8668d015bccc50073499c83aa5a72eedd600c6dcf1223f945a148bdf766c3f6168734d39a466bd3dedc0c46218241a01"
     },
     {
      "alg": "SHA-256",
-     "content": "c274ef239275afe19c5b3c450ee89ff9737ca21a62785a17214a4f4e791b37c9"
+     "content": "3a939f888960873b78d0691e1ff9a5638e107deb62926bfca442fa2c780f09ce"
     }
    ],
    "externalReferences": [
     {
      "type": "distribution",
-     "url": "https://kolaboro.com/k/site.js?v=n32s1"
+     "url": "https://kolaboro.com/k/site.js?v=3222000ecc"
     }
    ],
    "properties": [
@@ -4916,24 +4916,24 @@
    "type": "file",
    "name": "/k/u27.js",
    "group": "kolaboro.com",
-   "version": "v113.u27l",
+   "version": "v78",
    "supplier": {
     "name": "Kolaboro"
    },
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "e0de7bf90bae4ce40939418299676ad3211400f863beab3fa272f84f4201f51892d12af8864f92f0110d0d2e4aa56092"
+     "content": "14f2264ffbcd17d7bba4b150f29c751462e8ce88a88a4c193a029d96cfff276c1c63ce67c2e1b2fbe515a479de297700"
     },
     {
      "alg": "SHA-256",
-     "content": "8dbd4914a66392b8a03a2907be64f93ae93cddfd5dc061f0dd0984e881bdc72f"
+     "content": "af4ed2d7d0a2bca256d8b54fc35dde7ff29ca9b79fa6eb3e39d84b19940735a4"
     }
    ],
    "externalReferences": [
     {
      "type": "distribution",
-     "url": "https://kolaboro.com/k/u27.js?v=v113.u27l"
+     "url": "https://kolaboro.com/k/u27.js?v=v78"
     }
    ],
    "properties": [
@@ -5124,24 +5124,24 @@
    "type": "file",
    "name": "/k/xray-cta.js",
    "group": "kolaboro.com",
-   "version": "n22e1",
+   "version": "n36e1",
    "supplier": {
     "name": "Kolaboro"
    },
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "07ef75a0f03a342299003f7f03a6c9b8524a4204394bf046995cec46660d3305bf6b5e143da514e4f691757da874674b"
+     "content": "a6a33fd48305069a90c167d657705dd3d3fa0b5c61798bcf72523afc3e5a7c59da9ddf4df6dfaa3634f51706b5ced58f"
     },
     {
      "alg": "SHA-256",
-     "content": "12ca8f47b9c6e81af8dc155754faa720e622d22ca271e18d189bc02f6aa19c0b"
+     "content": "b5a1893176cd569256e81729312ee3d6bfcbaa058bc34c6d147ebef38e318b6e"
     }
    ],
    "externalReferences": [
     {
      "type": "distribution",
-     "url": "https://kolaboro.com/k/xray-cta.js?v=n22e1"
+     "url": "https://kolaboro.com/k/xray-cta.js?v=n36e1"
     }
    ],
    "properties": [
@@ -5504,24 +5504,24 @@
    "type": "file",
    "name": "/m/m.css",
    "group": "kolaboro.com",
-   "version": "48edb8c4e6",
+   "version": "n40k4a",
    "supplier": {
     "name": "Kolaboro"
    },
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "2fe733975a7aa2b8fe4acc1e11680f0546a60038fe046e861ad5975620ef10048296a6f3b66f99035196468ea24b8673"
+     "content": "919c426c973edc104d92ea090a50b23b7f02d45dd726c0c3e7b0593e1cd0ede33be55764829005f2fc99c1da87ee1628"
     },
     {
      "alg": "SHA-256",
-     "content": "7d5d1d3b711d05277d95100d92b3239b17e83ab769227ddc7c05eec1d6fafd15"
+     "content": "df1a466dc945548ace1d4c84a91efeaf72fcfcfcf6751794194576bb12888de8"
     }
    ],
    "externalReferences": [
     {
      "type": "distribution",
-     "url": "https://kolaboro.com/m/m.css?v=48edb8c4e6"
+     "url": "https://kolaboro.com/m/m.css?v=n40k4a"
     }
    ],
    "properties": [
@@ -5572,24 +5572,24 @@
    "type": "file",
    "name": "/m/m.js",
    "group": "kolaboro.com",
-   "version": "n33a1",
+   "version": "n40k4a",
    "supplier": {
     "name": "Kolaboro"
    },
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "15007749c3559a457eb27c94c090912f02a85e0c4ece37ad7947a50e5bc0f9009d4bdc15ff5804c8d61d163d10895e3b"
+     "content": "41f0cf2a1fb0067b1c85ccb2f34dce281f90131b24c39e4974e0cd4efb00c4e1c4fd5ea363553244aa81b59bbfa3465b"
     },
     {
      "alg": "SHA-256",
-     "content": "c8c742e844e8ae1c300a974140acb701619763a4500cf77eb7b6e02b0d388fbe"
+     "content": "95404c29583117b97d74cc37368005414eb8ea0f9332eb17cfd2d082bcddcd80"
     }
    ],
    "externalReferences": [
     {
      "type": "distribution",
-     "url": "https://kolaboro.com/m/m.js?v=n33a1"
+     "url": "https://kolaboro.com/m/m.js?v=n40k4a"
     }
    ],
    "properties": [
@@ -7744,11 +7744,11 @@
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "a59941eeb396600bae8b00420e902c192a21cf2df60d74ae9f2bb2f0b986c6fb1241d265619aa22b4f623ba7da2463f5"
+     "content": "2bb77c9af332e8efb7619c338f1e992c60ac98ff5b03be4e88088adc9446af3a9ebfff16e3aa3ce8f0ac91594cc093fe"
     },
     {
      "alg": "SHA-256",
-     "content": "1a0b30e622f45c6847b2924af983831b5951d0b37069c2f3f390c3276709dd53"
+     "content": "32faaff16c322545ab476c134e4cbc14bb23d17e37493f46b461d4cadeafe313"
     }
    ],
    "externalReferences": [
@@ -8457,24 +8457,24 @@
    "type": "file",
    "name": "/tools/contract-check/cc.js",
    "group": "kolaboro.com",
-   "version": "1c18b6fa2d",
+   "version": "n40k11a",
    "supplier": {
     "name": "Kolaboro"
    },
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "9129a6c9178df80a3b5a05d6e502b560f882c84033b1ff98688f829dfa6e2e5614e017b8122f104e27db48a5ae7f6bbd"
+     "content": "202276e579b5d6b89ffbd8334d0d4f035a35b89ea0452babf94f285d747da5b27001b2a4623eb15bfa2daa68cd14f2cc"
     },
     {
      "alg": "SHA-256",
-     "content": "9d1e2ba8303b56e02f74bff92f94743163a21ab2fcd625b4293b885b807aea5b"
+     "content": "101ef28eba281970106afc106df169a7e1375a802ed8f87da420d3fddc41b65a"
     }
    ],
    "externalReferences": [
     {
      "type": "distribution",
-     "url": "https://kolaboro.com/tools/contract-check/cc.js?v=1c18b6fa2d"
+     "url": "https://kolaboro.com/tools/contract-check/cc.js?v=n40k11a"
     }
    ],
    "properties": [
