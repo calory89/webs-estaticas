@@ -34346,7 +34346,7 @@ function ics(list, site) {
 		""
 	].join("\r\n");
 }
-var R$1 = {
+var regions_default = {
 	c: /* @__PURE__ */ JSON.parse("{\"rome\":\"IT.07\",\"paris\":\"FR.11\",\"london-canada\":\"CA.08\",\"london\":\"GB.ENG\",\"barcelona\":\"ES.56\",\"tokyo\":\"JP.40\",\"dubai\":\"AE.03\",\"sarande\":\"AL.51\",\"tirana\":\"AL.50\",\"andorra-la-vella\":\"AD.07\",\"bahia-blanca\":\"AR.01\",\"buenos-aires\":\"AR.07\",\"cordoba-argentina\":\"AR.05\",\"mendoza\":\"AR.13\",\"salta\":\"AR.17\",\"san-carlos-de-bariloche\":\"AR.16\",\"santa-fe-argentina\":\"AR.21\",\"ushuaia\":\"AR.23\",\"yerevan\":\"AM.11\",\"adelaide\":\"AU.05\",\"brisbane\":\"AU.04\",\"cairns\":\"AU.04\",\"canberra\":\"AU.01\",\"darwin\":\"AU.03\",\"geelong\":\"AU.07\",\"gold-coast\":\"AU.04\",\"hobart\":\"AU.06\",\"melbourne-australia\":\"AU.07\",\"newcastle-australia\":\"AU.02\",\"perth\":\"AU.08\",\"sydney\":\"AU.02\",\"townsville\":\"AU.04\",\"bad-hofgastein\":\"AT.05\",\"bad-ischl\":\"AT.04\",\"bregenz\":\"AT.08\",\"graz\":\"AT.06\",\"innsbruck\":\"AT.07\",\"kitzbuhel\":\"AT.07\",\"klagenfurt\":\"AT.02\",\"linz\":\"AT.04\",\"salzburg\":\"AT.05\",\"seefeld-in-tirol\":\"AT.07\",\"vienna\":\"AT.09\",\"villach\":\"AT.02\",\"wels\":\"AT.04\",\"zell-am-see\":\"AT.05\",\"baku\":\"AZ.09\",\"sheki\":\"AZ.48\",\"manama\":\"BH.16\",\"bridgetown\":\"BB.08\",\"aalst\":\"BE.VLG\",\"antwerp\":\"BE.VLG\",\"blankenberge\":\"BE.VLG\",\"bruges\":\"BE.VLG\",\"brussels\":\"BE.BRU\",\"ghent\":\"BE.VLG\",\"hasselt\":\"BE.VLG\",\"knokke-heist\":\"BE.VLG\",\"kortrijk\":\"BE.VLG\",\"leuven\":\"BE.VLG\",\"liege\":\"BE.WAL\",\"mechelen\":\"BE.VLG\",\"namur\":\"BE.WAL\",\"ostend\":\"BE.VLG\",\"spa\":\"BE.WAL\",\"cotonou\":\"BJ.14\",\"cochabamba\":\"BO.02\",\"la-paz-bolivia\":\"BO.04\",\"sucre\":\"BO.01\",\"banja-luka\":\"BA.02\",\"mostar\":\"BA.01\",\"sarajevo\":\"BA.01\",\"gaborone\":\"BW.14\",\"balneario-camboriu\":\"BR.26\",\"barueri\":\"BR.27\",\"bauru\":\"BR.27\",\"belem\":\"BR.16\",\"belo-horizonte\":\"BR.15\",\"bento-goncalves\":\"BR.23\",\"blumenau\":\"BR.26\",\"boa-vista\":\"BR.25\",\"brasilia\":\"BR.07\",\"caldas-novas\":\"BR.29\",\"campinas\":\"BR.27\",\"campo-grande\":\"BR.11\",\"campos-do-jordao\":\"BR.27\",\"canela\":\"BR.23\",\"caraguatatuba\":\"BR.27\",\"caxias-do-sul\":\"BR.23\",\"cuiaba\":\"BR.14\",\"curitiba\":\"BR.18\",\"florianopolis\":\"BR.26\",\"fortaleza\":\"BR.06\",\"foz-do-iguacu\":\"BR.18\",\"ouro-preto\":\"BR.15\",\"presidente-prudente\":\"BR.27\",\"recife\":\"BR.30\",\"rio-branco\":\"BR.01\",\"rio-de-janeiro\":\"BR.21\",\"salvador\":\"BR.05\",\"sao-paulo\":\"BR.27\",\"bandar-seri-begawan\":\"BN.02\",\"burgas\":\"BG.39\",\"plovdiv\":\"BG.51\",\"sofia\":\"BG.42\",\"varna\":\"BG.61\",\"battambang\":\"KH.29\",\"phnom-penh\":\"KH.22\",\"siem-reap\":\"KH.24\",\"sihanoukville\":\"KH.28\",\"yaounde\":\"CM.11\",\"airdrie\":\"CA.01\",\"banff\":\"CA.01\",\"boucherville\":\"CA.10\",\"brossard\":\"CA.10\",\"burnaby\":\"CA.02\",\"calgary\":\"CA.01\",\"charlottetown\":\"CA.09\",\"chatham\":\"CA.08\",\"chilliwack\":\"CA.02\",\"fredericton\":\"CA.04\",\"halifax\":\"CA.07\",\"hamilton\":\"CA.08\",\"kelowna\":\"CA.02\",\"kingston-canada\":\"CA.08\",\"montreal\":\"CA.10\",\"niagara-falls\":\"CA.08\",\"north-vancouver\":\"CA.02\",\"ottawa\":\"CA.08\",\"quebec-city\":\"CA.10\",\"regina\":\"CA.11\",\"saskatoon\":\"CA.11\",\"st-john-s\":\"CA.05\",\"toronto\":\"CA.08\",\"vancouver-canada\":\"CA.02\",\"victoria\":\"CA.02\",\"whistler\":\"CA.02\",\"windsor-canada\":\"CA.08\",\"winnipeg\":\"CA.03\",\"arica\":\"CL.16\",\"concepcion\":\"CL.06\",\"puerto-varas\":\"CL.14\",\"punta-arenas\":\"CL.10\",\"santiago\":\"CL.12\",\"beijing\":\"CN.22\",\"chengdu\":\"CN.32\",\"chongqing\":\"CN.33\",\"dalian\":\"CN.19\",\"guangzhou\":\"CN.30\",\"guilin\":\"CN.16\",\"hangzhou\":\"CN.02\",\"harbin\":\"CN.08\",\"kunming\":\"CN.29\",\"lijiang\":\"CN.29\",\"nanjing\":\"CN.04\",\"qingdao\":\"CN.25\",\"shanghai\":\"CN.23\",\"shenzhen\":\"CN.30\",\"suzhou\":\"CN.04\",\"xian\":\"CN.26\",\"yangshuo\":\"CN.16\",\"yantai\":\"CN.25\",\"barranquilla\":\"CO.04\",\"bogota\":\"CO.34\",\"cali\":\"CO.29\",\"medellin\":\"CO.02\",\"santa-marta\":\"CO.38\",\"alajuela\":\"CR.01\",\"san-jose-costa-rica\":\"CR.08\",\"dubrovnik\":\"HR.03\",\"makarska\":\"HR.15\",\"opatija\":\"HR.12\",\"osijek\":\"HR.10\",\"porec\":\"HR.04\",\"pula\":\"HR.04\",\"rovinj\":\"HR.04\",\"split\":\"HR.15\",\"trogir\":\"HR.15\",\"vodice\":\"HR.13\",\"zadar\":\"HR.19\",\"zagreb\":\"HR.21\",\"sibenik\":\"HR.13\",\"larnaca\":\"CY.03\",\"limassol\":\"CY.05\",\"nicosia\":\"CY.04\",\"paphos\":\"CY.06\",\"brno\":\"CZ.78\",\"ceske-budejovice\":\"CZ.79\",\"olomouc\":\"CZ.84\",\"prague\":\"CZ.52\",\"aalborg\":\"DK.19\",\"aarhus\":\"DK.18\",\"copenhagen\":\"DK.17\",\"odense\":\"DK.21\",\"santo-domingo\":\"DO.34\",\"cuenca-ecuador\":\"EC.02\",\"quito\":\"EC.18\",\"aswan\":\"EG.16\",\"cairo\":\"EG.11\",\"hurghada\":\"EG.02\",\"luxor\":\"EG.28\",\"sharm-el-sheikh\":\"EG.26\",\"tallinn\":\"EE.01\",\"tartu\":\"EE.18\",\"addis-ababa\":\"ET.44\",\"nadi\":\"FJ.05\",\"suva\":\"FJ.01\",\"helsinki\":\"FI.01\",\"oulu\":\"FI.17\",\"rovaniemi\":\"FI.19\",\"tampere\":\"FI.06\",\"turku\":\"FI.02\",\"vaasa\":\"FI.15\",\"aix-en-provence\":\"FR.93\",\"aix-les-bains\":\"FR.84\",\"ajaccio\":\"FR.94\",\"amboise\":\"FR.24\",\"amiens\":\"FR.32\",\"angers\":\"FR.52\",\"annecy\":\"FR.84\",\"antibes\":\"FR.93\",\"arcachon\":\"FR.75\",\"arles\":\"FR.93\",\"arras\":\"FR.32\",\"avignon\":\"FR.93\",\"bastia\":\"FR.94\",\"bayeux\":\"FR.28\",\"bayonne\":\"FR.75\",\"beaune\":\"FR.27\",\"besancon\":\"FR.27\",\"biarritz\":\"FR.75\",\"blois\":\"FR.24\",\"bordeaux\":\"FR.75\",\"bourges\":\"FR.24\",\"brest\":\"FR.53\",\"beziers\":\"FR.76\",\"caen\":\"FR.28\",\"cannes\":\"FR.93\",\"carcassonne\":\"FR.76\",\"cassis\":\"FR.93\",\"chalon-sur-saone\":\"FR.27\",\"chantilly\":\"FR.32\",\"chartres\":\"FR.24\",\"clermont-ferrand\":\"FR.84\",\"cognac\":\"FR.75\",\"colmar\":\"FR.44\",\"compiegne\":\"FR.32\",\"dax\":\"FR.75\",\"deauville\":\"FR.28\",\"dijon\":\"FR.27\",\"dinan\":\"FR.53\",\"dinard\":\"FR.53\",\"dunkerque\":\"FR.32\",\"grenoble\":\"FR.84\",\"honfleur\":\"FR.28\",\"hyeres\":\"FR.93\",\"la-baule\":\"FR.52\",\"la-rochelle\":\"FR.75\",\"le-havre\":\"FR.28\",\"le-mans\":\"FR.52\",\"le-puy-en-velay\":\"FR.84\",\"le-touquet-paris-plage\":\"FR.32\",\"les-sables-d-olonne\":\"FR.52\",\"lille\":\"FR.32\",\"limoges\":\"FR.75\",\"lourdes\":\"FR.76\",\"lyon\":\"FR.84\",\"marseille\":\"FR.93\",\"menton\":\"FR.93\",\"metz\":\"FR.44\",\"montpellier\":\"FR.76\",\"mulhouse\":\"FR.44\",\"nancy\":\"FR.44\",\"nantes\":\"FR.52\",\"narbonne\":\"FR.76\",\"nice\":\"FR.93\",\"nimes\":\"FR.76\",\"orleans\":\"FR.24\",\"pau\":\"FR.75\",\"perpignan\":\"FR.76\",\"poitiers\":\"FR.75\",\"porto-vecchio\":\"FR.94\",\"perigueux\":\"FR.75\",\"quimper\":\"FR.53\",\"reims\":\"FR.44\",\"rennes\":\"FR.53\",\"rochefort\":\"FR.75\",\"roscoff\":\"FR.53\",\"rouen\":\"FR.28\",\"royan\":\"FR.75\",\"saint-brieuc\":\"FR.53\",\"saint-jean-de-luz\":\"FR.75\",\"saint-malo\":\"FR.53\",\"saint-raphael\":\"FR.93\",\"saint-tropez\":\"FR.93\",\"sarlat-la-caneda\":\"FR.75\",\"strasbourg\":\"FR.44\",\"toulon\":\"FR.93\",\"toulouse\":\"FR.76\",\"tours\":\"FR.24\",\"trouville-sur-mer\":\"FR.28\",\"troyes\":\"FR.44\",\"valence\":\"FR.84\",\"vannes\":\"FR.53\",\"versailles\":\"FR.11\",\"vichy\":\"FR.84\",\"epinal\":\"FR.44\",\"evian-les-bains\":\"FR.84\",\"cayenne\":\"GF.GF\",\"batumi\":\"GE.04\",\"tbilisi\":\"GE.51\",\"aachen\":\"DE.07\",\"augsburg\":\"DE.02\",\"bad-homburg-vor-der-hohe\":\"DE.05\",\"baden-baden\":\"DE.01\",\"bayreuth\":\"DE.02\",\"berlin\":\"DE.16\",\"bielefeld\":\"DE.07\",\"binz\":\"DE.12\",\"bonn\":\"DE.07\",\"bremen\":\"DE.03\",\"bremerhaven\":\"DE.03\",\"chemnitz\":\"DE.13\",\"cologne\":\"DE.07\",\"cottbus\":\"DE.11\",\"darmstadt\":\"DE.05\",\"dortmund\":\"DE.07\",\"dresden\":\"DE.13\",\"duisburg\":\"DE.07\",\"dusseldorf\":\"DE.07\",\"eisenach\":\"DE.15\",\"emden\":\"DE.06\",\"erfurt\":\"DE.15\",\"essen\":\"DE.07\",\"flensburg\":\"DE.10\",\"frankfurt\":\"DE.05\",\"friedrichshafen\":\"DE.01\",\"fulda\":\"DE.05\",\"garmisch-partenkirchen\":\"DE.02\",\"gottingen\":\"DE.06\",\"hamburg\":\"DE.04\",\"heidelberg\":\"DE.01\",\"heilbronn\":\"DE.01\",\"heringsdorf\":\"DE.12\",\"ingolstadt\":\"DE.02\",\"kaiserslautern\":\"DE.08\",\"karlsruhe\":\"DE.01\",\"kiel\":\"DE.10\",\"koblenz\":\"DE.08\",\"konstanz\":\"DE.01\",\"leipzig\":\"DE.13\",\"ludwigsburg\":\"DE.01\",\"ludwigshafen-am-rhein\":\"DE.08\",\"lubeck\":\"DE.10\",\"mainz\":\"DE.08\",\"mannheim\":\"DE.01\",\"munich\":\"DE.02\",\"munster\":\"DE.07\",\"nuremberg\":\"DE.02\",\"oberstdorf\":\"DE.02\",\"offenbach\":\"DE.05\",\"osnabruck\":\"DE.06\",\"passau\":\"DE.02\",\"potsdam\":\"DE.11\",\"quedlinburg\":\"DE.14\",\"regensburg\":\"DE.02\",\"rostock\":\"DE.12\",\"saarbrucken\":\"DE.09\",\"schwerin\":\"DE.12\",\"stuttgart\":\"DE.01\",\"timmendorfer-strand\":\"DE.10\",\"titisee-neustadt\":\"DE.01\",\"travemunde\":\"DE.10\",\"tubingen\":\"DE.01\",\"ulm\":\"DE.01\",\"weimar\":\"DE.15\",\"wiesbaden\":\"DE.05\",\"wismar\":\"DE.12\",\"wolfsburg\":\"DE.06\",\"wurzburg\":\"DE.02\",\"accra\":\"GH.01\",\"athens\":\"GR.ESYE31\",\"heraklion\":\"GR.ESYE43\",\"hersonissos\":\"GR.ESYE43\",\"ierapetra\":\"GR.ESYE43\",\"loutraki\":\"GR.ESYE25\",\"nafplio\":\"GR.ESYE25\",\"naxos-chora\":\"GR.ESYE42\",\"oia\":\"GR.ESYE42\",\"rethymno\":\"GR.ESYE43\",\"rhodes\":\"GR.ESYE42\",\"thessaloniki\":\"GR.ESYE12\",\"volos\":\"GR.ESYE14\",\"antigua-guatemala\":\"GT.16\",\"georgetown\":\"GY.12\",\"comayagua\":\"HN.04\",\"budapest\":\"HU.05\",\"debrecen\":\"HU.10\",\"miskolc\":\"HU.04\",\"sopron\":\"HU.09\",\"zalaegerszeg\":\"HU.24\",\"reykjavik\":\"IS.39\",\"agra\":\"IN.36\",\"ahmedabad\":\"IN.09\",\"amritsar\":\"IN.23\",\"aurangabad\":\"IN.16\",\"bhopal\":\"IN.35\",\"bikaner\":\"IN.24\",\"chandigarh\":\"IN.05\",\"coimbatore\":\"IN.25\",\"hyderabad\":\"IN.40\",\"jaipur\":\"IN.24\",\"jodhpur\":\"IN.24\",\"kolkata\":\"IN.28\",\"new-delhi\":\"IN.07\",\"pune\":\"IN.16\",\"shimla\":\"IN.11\",\"siliguri\":\"IN.28\",\"udaipur\":\"IN.24\",\"varanasi\":\"IN.36\",\"bali\":\"ID.02\",\"bandung\":\"ID.30\",\"banyuwangi\":\"ID.08\",\"bekasi\":\"ID.30\",\"bogor\":\"ID.30\",\"canggu\":\"ID.02\",\"cirebon\":\"ID.30\",\"denpasar\":\"ID.02\",\"jakarta\":\"ID.04\",\"jimbaran\":\"ID.02\",\"kuta\":\"ID.02\",\"legian\":\"ID.02\",\"lovina\":\"ID.02\",\"malang\":\"ID.08\",\"medan\":\"ID.26\",\"munduk\":\"ID.02\",\"nusa-dua\":\"ID.02\",\"nusa-lembongan\":\"ID.02\",\"nusa-penida\":\"ID.02\",\"sanur\":\"ID.02\",\"semarang\":\"ID.07\",\"seminyak\":\"ID.02\",\"solo\":\"ID.07\",\"surabaya\":\"ID.08\",\"ubud\":\"ID.02\",\"yogyakarta\":\"ID.10\",\"baghdad\":\"IQ.07\",\"cork\":\"IE.M\",\"dublin-ireland\":\"IE.L\",\"galway\":\"IE.C\",\"tel-aviv\":\"IL.05\",\"abano-terme\":\"IT.20\",\"agrigento\":\"IT.15\",\"alba\":\"IT.12\",\"alessandria\":\"IT.12\",\"alghero\":\"IT.14\",\"amalfi\":\"IT.04\",\"ancona\":\"IT.10\",\"arezzo\":\"IT.16\",\"assisi\":\"IT.18\",\"asti\":\"IT.12\",\"bari\":\"IT.13\",\"benevento\":\"IT.04\",\"bergamo\":\"IT.09\",\"bologna\":\"IT.05\",\"bolzano\":\"IT.17\",\"brescia\":\"IT.09\",\"brindisi\":\"IT.13\",\"carpi\":\"IT.05\",\"caserta\":\"IT.04\",\"catania\":\"IT.15\",\"cattolica\":\"IT.05\",\"cefalu\":\"IT.15\",\"cesena\":\"IT.05\",\"cesenatico\":\"IT.05\",\"chianciano-terme\":\"IT.16\",\"como\":\"IT.09\",\"cosenza\":\"IT.03\",\"cremona\":\"IT.09\",\"cuneo\":\"IT.12\",\"desenzano-del-garda\":\"IT.09\",\"fano\":\"IT.10\",\"ferrara\":\"IT.05\",\"florence\":\"IT.16\",\"foggia\":\"IT.13\",\"foligno\":\"IT.18\",\"forli\":\"IT.05\",\"forte-dei-marmi\":\"IT.16\",\"gaeta\":\"IT.07\",\"gallipoli\":\"IT.13\",\"genoa\":\"IT.08\",\"grosseto\":\"IT.16\",\"gubbio\":\"IT.18\",\"imola\":\"IT.05\",\"imperia\":\"IT.08\",\"la-spezia\":\"IT.08\",\"lamezia-terme\":\"IT.03\",\"latina\":\"IT.07\",\"lecce\":\"IT.13\",\"livorno\":\"IT.16\",\"lucca\":\"IT.16\",\"marsala\":\"IT.15\",\"matera\":\"IT.02\",\"merano\":\"IT.17\",\"messina\":\"IT.15\",\"milan\":\"IT.09\",\"modena\":\"IT.05\",\"modica\":\"IT.15\",\"monopoli\":\"IT.13\",\"montecatini-terme\":\"IT.16\",\"naples\":\"IT.04\",\"olbia\":\"IT.14\",\"oristano\":\"IT.14\",\"orvieto\":\"IT.18\",\"ostuni\":\"IT.13\",\"palermo\":\"IT.15\",\"parma\":\"IT.05\",\"perugia\":\"IT.18\",\"pesaro\":\"IT.10\",\"pescara\":\"IT.01\",\"piacenza\":\"IT.05\",\"pisa\":\"IT.16\",\"polignano-a-mare\":\"IT.13\",\"pompei\":\"IT.04\",\"pordenone\":\"IT.06\",\"potenza\":\"IT.02\",\"ragusa\":\"IT.15\",\"rapallo\":\"IT.08\",\"ravenna\":\"IT.05\",\"reggio-emilia\":\"IT.05\",\"riccione\":\"IT.05\",\"rimini\":\"IT.05\",\"riva-del-garda\":\"IT.17\",\"salerno\":\"IT.04\",\"san-benedetto-del-tronto\":\"IT.10\",\"sanremo\":\"IT.08\",\"santa-margherita-ligure\":\"IT.08\",\"senigallia\":\"IT.10\",\"sestri-levante\":\"IT.08\",\"siena\":\"IT.16\",\"sirmione\":\"IT.09\",\"sorrento\":\"IT.04\",\"spoleto\":\"IT.18\",\"stresa\":\"IT.12\",\"syracuse\":\"IT.15\",\"taormina\":\"IT.15\",\"taranto\":\"IT.13\",\"trani\":\"IT.13\",\"trapani\":\"IT.15\",\"trento\":\"IT.17\",\"treviso\":\"IT.20\",\"trieste\":\"IT.06\",\"turin\":\"IT.12\",\"udine\":\"IT.06\",\"varese\":\"IT.09\",\"venice\":\"IT.20\",\"verona\":\"IT.20\",\"viareggio\":\"IT.16\",\"vicenza\":\"IT.20\",\"viterbo\":\"IT.07\",\"abidjan\":\"CI.93\",\"kingston-jamaica\":\"JM.17\",\"akita\":\"JP.02\",\"aomori\":\"JP.03\",\"beppu\":\"JP.30\",\"chiba\":\"JP.04\",\"fukuoka\":\"JP.07\",\"hakodate\":\"JP.12\",\"hakone\":\"JP.19\",\"hamamatsu\":\"JP.37\",\"hiroshima\":\"JP.11\",\"kagoshima\":\"JP.18\",\"kanazawa\":\"JP.15\",\"kobe\":\"JP.13\",\"kumamoto\":\"JP.21\",\"kurashiki\":\"JP.31\",\"kyoto\":\"JP.22\",\"matsue\":\"JP.36\",\"matsumoto\":\"JP.26\",\"matsuyama\":\"JP.05\",\"miyazaki\":\"JP.25\",\"nagasaki\":\"JP.27\",\"nagoya\":\"JP.01\",\"naha\":\"JP.47\",\"nara\":\"JP.28\",\"okayama\":\"JP.31\",\"osaka\":\"JP.32\",\"sapporo\":\"JP.12\",\"sendai\":\"JP.24\",\"shizuoka\":\"JP.37\",\"toyama\":\"JP.42\",\"yamagata\":\"JP.44\",\"yokohama\":\"JP.19\",\"amman\":\"JO.16\",\"aqaba\":\"JO.21\",\"almaty\":\"KZ.02\",\"astana\":\"KZ.05\",\"atyrau\":\"KZ.06\",\"mombasa\":\"KE.37\",\"nairobi\":\"KE.05\",\"luang-prabang\":\"LA.17\",\"pakse\":\"LA.02\",\"vientiane\":\"LA.24\",\"liepaja\":\"LV.16\",\"riga\":\"LV.25\",\"beirut\":\"LB.04\",\"kaunas\":\"LT.57\",\"vilnius\":\"LT.65\",\"luxembourg-city\":\"LU.LU\",\"johor-bahru\":\"MY.01\",\"male\":\"MV.38\",\"sliema\":\"MT.56\",\"valletta\":\"MT.60\",\"aguascalientes\":\"MX.01\",\"atlixco\":\"MX.21\",\"cabo-san-lucas\":\"MX.03\",\"campeche\":\"MX.04\",\"cancun\":\"MX.23\",\"chihuahua\":\"MX.06\",\"ciudad-victoria\":\"MX.28\",\"coatepec\":\"MX.30\",\"coatzacoalcos\":\"MX.30\",\"colima\":\"MX.08\",\"comitan\":\"MX.05\",\"cordoba-mexico\":\"MX.30\",\"cozumel\":\"MX.23\",\"cuernavaca\":\"MX.17\",\"culiacan\":\"MX.25\",\"guadalajara-mexico\":\"MX.14\",\"guanajuato\":\"MX.11\",\"la-paz-mexico\":\"MX.03\",\"mazatlan\":\"MX.25\",\"mexico-city\":\"MX.09\",\"monterrey\":\"MX.19\",\"morelia\":\"MX.16\",\"merida-mexico\":\"MX.31\",\"palenque\":\"MX.05\",\"playa-del-carmen\":\"MX.23\",\"puebla\":\"MX.21\",\"puerto-vallarta\":\"MX.14\",\"queretaro\":\"MX.22\",\"san-cristobal-de-las-casas\":\"MX.05\",\"san-miguel-de-allende\":\"MX.11\",\"tampico\":\"MX.28\",\"tulum\":\"MX.23\",\"zacatecas\":\"MX.32\",\"chisinau\":\"MD.57\",\"ulaanbaatar\":\"MN.20\",\"budva\":\"ME.05\",\"kotor\":\"ME.10\",\"casablanca\":\"MA.06\",\"essaouira\":\"MA.07\",\"rabat\":\"MA.04\",\"tangier\":\"MA.01\",\"yangon\":\"MM.17\",\"swakopmund\":\"NA.29\",\"windhoek\":\"NA.21\",\"kathmandu\":\"NP.3\",\"pokhara\":\"NP.4\",\"alkmaar\":\"NL.07\",\"amersfoort\":\"NL.09\",\"amstelveen\":\"NL.07\",\"amsterdam\":\"NL.07\",\"apeldoorn\":\"NL.03\",\"arnhem\":\"NL.03\",\"breda\":\"NL.06\",\"delft\":\"NL.11\",\"den-bosch\":\"NL.06\",\"deventer\":\"NL.15\",\"eindhoven\":\"NL.06\",\"groningen\":\"NL.04\",\"haarlem\":\"NL.07\",\"leeuwarden\":\"NL.02\",\"maastricht\":\"NL.05\",\"nijmegen\":\"NL.03\",\"rotterdam\":\"NL.11\",\"the-hague\":\"NL.11\",\"tilburg\":\"NL.06\",\"utrecht\":\"NL.09\",\"valkenburg\":\"NL.05\",\"zaandam\":\"NL.07\",\"zandvoort\":\"NL.07\",\"zwolle\":\"NL.15\",\"auckland\":\"NZ.E7\",\"christchurch\":\"NZ.E9\",\"dunedin\":\"NZ.F7\",\"queenstown\":\"NZ.F7\",\"wellington\":\"NZ.G2\",\"granada-nicaragua\":\"NI.06\",\"leon-nicaragua\":\"NI.08\",\"abuja\":\"NG.11\",\"ikeja\":\"NG.05\",\"lagos-nigeria\":\"NG.05\",\"bitola\":\"MK.06\",\"ohrid\":\"MK.E2\",\"skopje\":\"MK.F6\",\"bergen\":\"NO.46\",\"oslo\":\"NO.12\",\"stavanger\":\"NO.14\",\"tromso\":\"NO.18\",\"trondheim\":\"NO.21\",\"alesund\":\"NO.08\",\"muscat\":\"OM.06\",\"salalah\":\"OM.08\",\"karachi\":\"PK.05\",\"panama-city\":\"PA.08\",\"asuncion\":\"PY.22\",\"arequipa\":\"PE.04\",\"cajamarca\":\"PE.06\",\"chiclayo\":\"PE.14\",\"cusco\":\"PE.08\",\"iquitos\":\"PE.16\",\"lima\":\"PE.LMA\",\"bacolod\":\"PH.06\",\"cebu-city\":\"PH.07\",\"dumaguete\":\"PH.07\",\"manila\":\"PH.NCR\",\"puerto-princesa\":\"PH.41\",\"bialystok\":\"PL.81\",\"bielsko-biala\":\"PL.83\",\"bydgoszcz\":\"PL.73\",\"bytom\":\"PL.83\",\"chorzow\":\"PL.83\",\"czestochowa\":\"PL.83\",\"gdansk\":\"PL.82\",\"gdynia\":\"PL.82\",\"gliwice\":\"PL.83\",\"karpacz\":\"PL.72\",\"katowice\":\"PL.83\",\"kielce\":\"PL.84\",\"kolobrzeg\":\"PL.87\",\"krakow\":\"PL.77\",\"krynica-zdroj\":\"PL.77\",\"lublin\":\"PL.75\",\"miedzyzdroje\":\"PL.87\",\"olsztyn\":\"PL.85\",\"opole\":\"PL.79\",\"poznan\":\"PL.86\",\"rzeszow\":\"PL.80\",\"sopot\":\"PL.82\",\"szczecin\":\"PL.87\",\"szczyrk\":\"PL.83\",\"szklarska-poreba\":\"PL.72\",\"torun\":\"PL.73\",\"ustka\":\"PL.82\",\"warsaw\":\"PL.78\",\"wisla\":\"PL.83\",\"wroclaw\":\"PL.72\",\"zakopane\":\"PL.77\",\"zielona-gora\":\"PL.76\",\"lodz\":\"PL.74\",\"swinoujscie\":\"PL.87\",\"albufeira\":\"PT.09\",\"amarante\":\"PT.17\",\"angra-do-heroismo\":\"PT.23\",\"aveiro\":\"PT.02\",\"braga\":\"PT.04\",\"braganca\":\"PT.05\",\"caldas-da-rainha\":\"PT.13\",\"cascais\":\"PT.14\",\"chaves\":\"PT.21\",\"coimbra\":\"PT.07\",\"estoril\":\"PT.14\",\"faro\":\"PT.09\",\"funchal\":\"PT.10\",\"fatima\":\"PT.18\",\"guimaraes\":\"PT.04\",\"horta\":\"PT.23\",\"lagos-portugal\":\"PT.09\",\"lamego\":\"PT.22\",\"leiria\":\"PT.13\",\"lisbon\":\"PT.14\",\"nazare\":\"PT.13\",\"olhao\":\"PT.09\",\"peniche\":\"PT.13\",\"ponta-delgada\":\"PT.23\",\"ponte-de-lima\":\"PT.20\",\"portimao\":\"PT.09\",\"porto\":\"PT.17\",\"porto-moniz\":\"PT.10\",\"quarteira\":\"PT.09\",\"sesimbra\":\"PT.19\",\"setubal\":\"PT.19\",\"sintra\":\"PT.14\",\"tavira\":\"PT.09\",\"tomar\":\"PT.18\",\"viana-do-castelo\":\"PT.20\",\"vila-real\":\"PT.21\",\"vilamoura\":\"PT.09\",\"viseu\":\"PT.22\",\"evora\":\"PT.08\",\"obidos\":\"PT.13\",\"doha\":\"QA.01\",\"brasov\":\"RO.09\",\"bucharest\":\"RO.10\",\"cluj-napoca\":\"RO.13\",\"constanta\":\"RO.14\",\"craiova\":\"RO.17\",\"kigali\":\"RW.12\",\"apia\":\"WS.10\",\"jeddah\":\"SA.14\",\"riyadh\":\"SA.10\",\"ta-if\":\"SA.14\",\"dakar\":\"SN.01\",\"belgrade\":\"RS.SE\",\"novi-sad\":\"RS.VO\",\"freetown\":\"SL.04\",\"bratislava\":\"SK.02\",\"kosice\":\"SK.03\",\"bled\":\"SI.03\",\"ljubljana\":\"SI.61\",\"bloemfontein\":\"ZA.03\",\"cape-town\":\"ZA.11\",\"durban\":\"ZA.02\",\"johannesburg\":\"ZA.06\",\"newcastle-south-africa\":\"ZA.02\",\"stellenbosch\":\"ZA.11\",\"busan\":\"KR.10\",\"daegu\":\"KR.15\",\"daejeon\":\"KR.19\",\"gyeongju\":\"KR.14\",\"seoul\":\"KR.11\",\"suwon\":\"KR.13\",\"a-coruna\":\"ES.58\",\"adeje\":\"ES.53\",\"albacete\":\"ES.54\",\"alcala-de-henares\":\"ES.29\",\"alcobendas\":\"ES.29\",\"algeciras\":\"ES.51\",\"alicante\":\"ES.60\",\"almeria\":\"ES.51\",\"almunecar\":\"ES.51\",\"altea\":\"ES.60\",\"antequera\":\"ES.51\",\"aranjuez\":\"ES.29\",\"arrecife\":\"ES.53\",\"astorga\":\"ES.55\",\"aviles\":\"ES.34\",\"badajoz\":\"ES.57\",\"baeza\":\"ES.51\",\"benalmadena\":\"ES.51\",\"benicassim\":\"ES.60\",\"benidorm\":\"ES.60\",\"bilbao\":\"ES.59\",\"burgos\":\"ES.55\",\"calpe\":\"ES.60\",\"cartagena\":\"ES.31\",\"castelldefels\":\"ES.56\",\"castellon-de-la-plana\":\"ES.60\",\"chiclana-de-la-frontera\":\"ES.51\",\"ciudad-real\":\"ES.54\",\"conil-de-la-frontera\":\"ES.51\",\"corralejo\":\"ES.53\",\"cuenca-spain\":\"ES.54\",\"cullera\":\"ES.60\",\"caceres\":\"ES.57\",\"cadiz\":\"ES.51\",\"cordoba-spain\":\"ES.51\",\"denia\":\"ES.60\",\"el-puerto-de-santa-maria\":\"ES.51\",\"elche\":\"ES.60\",\"estepona\":\"ES.51\",\"ferrol\":\"ES.58\",\"figueres\":\"ES.56\",\"fuengirola\":\"ES.51\",\"gandia\":\"ES.60\",\"getafe\":\"ES.29\",\"gijon\":\"ES.34\",\"girona\":\"ES.56\",\"granada-spain\":\"ES.51\",\"guadalajara-spain\":\"ES.54\",\"hondarribia\":\"ES.59\",\"huelva\":\"ES.51\",\"huesca\":\"ES.52\",\"ibiza\":\"ES.07\",\"jaca\":\"ES.52\",\"jaen\":\"ES.51\",\"jerez-de-la-frontera\":\"ES.51\",\"las-palmas-de-gran-canaria\":\"ES.53\",\"leon-spain\":\"ES.55\",\"llanes\":\"ES.34\",\"lleida\":\"ES.56\",\"lloret-de-mar\":\"ES.56\",\"logrono\":\"ES.27\",\"lugo\":\"ES.58\",\"madrid\":\"ES.29\",\"mahon\":\"ES.07\",\"marbella\":\"ES.51\",\"maspalomas\":\"ES.53\",\"mataro\":\"ES.56\",\"motril\":\"ES.51\",\"murcia\":\"ES.31\",\"malaga\":\"ES.51\",\"merida-spain\":\"ES.57\",\"nerja\":\"ES.51\",\"ourense\":\"ES.58\",\"oviedo\":\"ES.34\",\"palma\":\"ES.07\",\"pamplona\":\"ES.32\",\"plasencia\":\"ES.57\",\"playa-blanca\":\"ES.53\",\"ponferrada\":\"ES.55\",\"puerto-de-la-cruz\":\"ES.53\",\"puerto-del-carmen\":\"ES.53\",\"ribadesella\":\"ES.34\",\"ronda\":\"ES.51\",\"roses\":\"ES.56\",\"sabadell\":\"ES.56\",\"salamanca\":\"ES.55\",\"salou\":\"ES.56\",\"san-sebastian\":\"ES.59\",\"sanlucar-de-barrameda\":\"ES.51\",\"santa-cruz-de-tenerife\":\"ES.53\",\"santander\":\"ES.39\",\"santiago-de-compostela\":\"ES.58\",\"segovia\":\"ES.55\",\"seville\":\"ES.51\",\"sitges\":\"ES.56\",\"soria\":\"ES.55\",\"tarifa\":\"ES.51\",\"tarragona\":\"ES.56\",\"terrassa\":\"ES.56\",\"teruel\":\"ES.52\",\"toledo\":\"ES.54\",\"torremolinos\":\"ES.51\",\"torrevieja\":\"ES.60\",\"tudela\":\"ES.32\",\"valencia-spain\":\"ES.60\",\"valladolid\":\"ES.55\",\"vigo\":\"ES.58\",\"vitoria-gasteiz\":\"ES.59\",\"zamora\":\"ES.55\",\"zaragoza\":\"ES.52\",\"avila\":\"ES.55\",\"ubeda\":\"ES.51\",\"colombo\":\"LK.36\",\"dambulla\":\"LK.29\",\"kandy\":\"LK.29\",\"gothenburg\":\"SE.28\",\"lund\":\"SE.27\",\"malmo\":\"SE.27\",\"stockholm\":\"SE.26\",\"umea\":\"SE.23\",\"uppsala\":\"SE.21\",\"ascona\":\"CH.TI\",\"basel\":\"CH.BS\",\"bern\":\"CH.BE\",\"fribourg\":\"CH.FR\",\"geneva\":\"CH.GE\",\"grindelwald\":\"CH.BE\",\"interlaken\":\"CH.BE\",\"lausanne\":\"CH.VD\",\"locarno\":\"CH.TI\",\"lucerne\":\"CH.LU\",\"lugano\":\"CH.TI\",\"montreux\":\"CH.VD\",\"pontresina\":\"CH.GR\",\"st-gallen\":\"CH.SG\",\"thun\":\"CH.BE\",\"vevey\":\"CH.VD\",\"zurich\":\"CH.ZH\",\"kaohsiung\":\"TW.02\",\"taichung\":\"TW.04\",\"tainan\":\"TW.04\",\"taipei\":\"TW.04\",\"arusha\":\"TZ.26\",\"dar-es-salaam\":\"TZ.23\",\"zanzibar-city\":\"TZ.25\",\"bangkok\":\"TH.40\",\"chiang-mai\":\"TH.02\",\"chiang-rai\":\"TH.03\",\"hat-yai\":\"TH.68\",\"hua-hin\":\"TH.57\",\"pattaya\":\"TH.46\",\"phuket\":\"TH.62\",\"tunis\":\"TN.36\",\"adana\":\"TR.81\",\"alanya\":\"TR.07\",\"ankara\":\"TR.68\",\"antalya\":\"TR.07\",\"bursa\":\"TR.16\",\"corlu\":\"TR.59\",\"denizli\":\"TR.20\",\"diyarbakir\":\"TR.21\",\"edirne\":\"TR.22\",\"erzurum\":\"TR.25\",\"eskisehir\":\"TR.26\",\"gaziantep\":\"TR.83\",\"istanbul\":\"TR.34\",\"izmir\":\"TR.35\",\"kayseri\":\"TR.38\",\"kemer\":\"TR.07\",\"konya\":\"TR.71\",\"kusadasi\":\"TR.09\",\"marmaris\":\"TR.48\",\"samsun\":\"TR.55\",\"side\":\"TR.07\",\"trabzon\":\"TR.61\",\"canakkale\":\"TR.17\",\"cherkasy\":\"UA.01\",\"chernivtsi\":\"UA.03\",\"abu-dhabi\":\"AE.01\",\"ajman\":\"AE.02\",\"sharjah\":\"AE.06\",\"aberdeen\":\"GB.SCT\",\"alnwick\":\"GB.ENG\",\"ayr\":\"GB.SCT\",\"barnstaple\":\"GB.ENG\",\"basingstoke\":\"GB.ENG\",\"bath\":\"GB.ENG\",\"belfast\":\"GB.NIR\",\"birmingham\":\"GB.ENG\",\"blackpool\":\"GB.ENG\",\"bournemouth\":\"GB.ENG\",\"bridgwater\":\"GB.ENG\",\"bristol\":\"GB.ENG\",\"burnley\":\"GB.ENG\",\"cambridge\":\"GB.ENG\",\"canterbury\":\"GB.ENG\",\"cardiff\":\"GB.WLS\",\"carlisle\":\"GB.ENG\",\"cheltenham\":\"GB.ENG\",\"chester\":\"GB.ENG\",\"chesterfield\":\"GB.ENG\",\"cirencester\":\"GB.ENG\",\"colchester\":\"GB.ENG\",\"conwy\":\"GB.WLS\",\"coventry\":\"GB.ENG\",\"crawley\":\"GB.ENG\",\"cromer\":\"GB.ENG\",\"darlington\":\"GB.ENG\",\"derby\":\"GB.ENG\",\"derry-londonderry\":\"GB.NIR\",\"doncaster\":\"GB.ENG\",\"dundee\":\"GB.SCT\",\"durham-united-kingdom\":\"GB.ENG\",\"eastbourne\":\"GB.ENG\",\"edinburgh\":\"GB.SCT\",\"enniskillen\":\"GB.NIR\",\"exeter\":\"GB.ENG\",\"falmouth\":\"GB.ENG\",\"farnborough\":\"GB.ENG\",\"folkestone\":\"GB.ENG\",\"glasgow\":\"GB.SCT\",\"gloucester\":\"GB.ENG\",\"great-yarmouth\":\"GB.ENG\",\"guildford\":\"GB.ENG\",\"harrogate\":\"GB.ENG\",\"huddersfield\":\"GB.ENG\",\"hull\":\"GB.ENG\",\"inverness\":\"GB.SCT\",\"ipswich\":\"GB.ENG\",\"leeds\":\"GB.ENG\",\"leicester\":\"GB.ENG\",\"lincoln\":\"GB.ENG\",\"liverpool\":\"GB.ENG\",\"luton\":\"GB.ENG\",\"maidstone\":\"GB.ENG\",\"manchester\":\"GB.ENG\",\"middlesbrough\":\"GB.ENG\",\"milton-keynes\":\"GB.ENG\",\"newcastle-upon-tyne\":\"GB.ENG\",\"newquay\":\"GB.ENG\",\"norwich\":\"GB.ENG\",\"nottingham\":\"GB.ENG\",\"oban\":\"GB.SCT\",\"oxford\":\"GB.ENG\",\"paignton\":\"GB.ENG\",\"peterborough\":\"GB.ENG\",\"pitlochry\":\"GB.SCT\",\"plymouth-united-kingdom\":\"GB.ENG\",\"portree\":\"GB.SCT\",\"portrush\":\"GB.NIR\",\"portsmouth-united-kingdom\":\"GB.ENG\",\"preston\":\"GB.ENG\",\"reading\":\"GB.ENG\",\"royal-tunbridge-wells\":\"GB.ENG\",\"rye\":\"GB.ENG\",\"salisbury\":\"GB.ENG\",\"scarborough\":\"GB.ENG\",\"sheffield\":\"GB.ENG\",\"shrewsbury\":\"GB.ENG\",\"slough\":\"GB.ENG\",\"southampton\":\"GB.ENG\",\"southport\":\"GB.ENG\",\"st-albans\":\"GB.ENG\",\"st-andrews\":\"GB.SCT\",\"sunderland\":\"GB.ENG\",\"swansea\":\"GB.WLS\",\"tenby\":\"GB.WLS\",\"torquay\":\"GB.ENG\",\"truro\":\"GB.ENG\",\"watford\":\"GB.ENG\",\"whitstable\":\"GB.ENG\",\"winchester\":\"GB.ENG\",\"windermere\":\"GB.ENG\",\"windsor-united-kingdom\":\"GB.ENG\",\"woking\":\"GB.ENG\",\"worcester-united-kingdom\":\"GB.ENG\",\"york\":\"GB.ENG\",\"akron\":\"US.OH\",\"albuquerque\":\"US.NM\",\"alexandria\":\"US.VA\",\"alpharetta\":\"US.GA\",\"altoona\":\"US.PA\",\"amarillo\":\"US.TX\",\"ames\":\"US.IA\",\"anaheim\":\"US.CA\",\"ann-arbor\":\"US.MI\",\"annapolis\":\"US.MD\",\"appleton\":\"US.WI\",\"arcadia\":\"US.CA\",\"arlington\":\"US.TX\",\"asheville\":\"US.NC\",\"atlanta\":\"US.GA\",\"atlantic-city\":\"US.NJ\",\"auburn-alabama\":\"US.AL\",\"augusta\":\"US.GA\",\"aurora\":\"US.CO\",\"austin\":\"US.TX\",\"bakersfield\":\"US.CA\",\"baltimore\":\"US.MD\",\"baton-rouge\":\"US.LA\",\"beaverton\":\"US.OR\",\"bellevue\":\"US.WA\",\"bellingham\":\"US.WA\",\"bend\":\"US.OR\",\"bentonville\":\"US.AR\",\"berkeley\":\"US.CA\",\"bethesda\":\"US.MD\",\"bethlehem\":\"US.PA\",\"billings\":\"US.MT\",\"biloxi\":\"US.MS\",\"binghamton\":\"US.NY\",\"birmingham-alabama\":\"US.AL\",\"bismarck\":\"US.ND\",\"blacksburg\":\"US.VA\",\"bloomington\":\"US.IN\",\"boca-raton\":\"US.FL\",\"boise\":\"US.ID\",\"bossier-city\":\"US.LA\",\"boston\":\"US.MA\",\"boulder\":\"US.CO\",\"bowie\":\"US.MD\",\"bowling-green\":\"US.KY\",\"bozeman\":\"US.MT\",\"bradenton\":\"US.FL\",\"branson\":\"US.MO\",\"brentwood\":\"US.TN\",\"brookline\":\"US.MA\",\"brooklyn\":\"US.NY\",\"bryan\":\"US.TX\",\"buena-park\":\"US.CA\",\"buffalo\":\"US.NY\",\"burbank\":\"US.CA\",\"burlington\":\"US.VT\",\"cambridge-massachusetts\":\"US.MA\",\"camden\":\"US.ME\",\"cape-coral\":\"US.FL\",\"carmel\":\"US.CA\",\"cary\":\"US.NC\",\"casper\":\"US.WY\",\"cedar-rapids\":\"US.IA\",\"centennial\":\"US.CO\",\"chandler\":\"US.AZ\",\"chapel-hill\":\"US.NC\",\"charleston\":\"US.SC\",\"charlotte\":\"US.NC\",\"charlottesville\":\"US.VA\",\"chattanooga\":\"US.TN\",\"cheyenne\":\"US.WY\",\"chicago\":\"US.IL\",\"chico\":\"US.CA\",\"chula-vista\":\"US.CA\",\"cincinnati\":\"US.OH\",\"cleveland\":\"US.OH\",\"coeur-d-alene\":\"US.ID\",\"colorado-springs\":\"US.CO\",\"columbia\":\"US.SC\",\"columbus\":\"US.OH\",\"corpus-christi\":\"US.TX\",\"costa-mesa\":\"US.CA\",\"cupertino\":\"US.CA\",\"dallas\":\"US.TX\",\"danville\":\"US.VA\",\"davenport\":\"US.FL\",\"davis\":\"US.CA\",\"dayton\":\"US.OH\",\"daytona-beach\":\"US.FL\",\"deadwood\":\"US.SD\",\"delray-beach\":\"US.FL\",\"denver\":\"US.CO\",\"des-moines\":\"US.IA\",\"detroit\":\"US.MI\",\"dublin-united-states\":\"US.OH\",\"durham-united-states\":\"US.NC\",\"flagstaff\":\"US.AZ\",\"fort-lauderdale\":\"US.FL\",\"franklin\":\"US.TN\",\"honolulu\":\"US.HI\",\"houston\":\"US.TX\",\"huntsville\":\"US.AL\",\"indianapolis\":\"US.IN\",\"jackson-wyoming\":\"US.WY\",\"las-vegas\":\"US.NV\",\"livermore\":\"US.CA\",\"los-angeles\":\"US.CA\",\"louisville\":\"US.KY\",\"lynchburg\":\"US.VA\",\"madison\":\"US.WI\",\"melbourne-united-states\":\"US.FL\",\"memphis\":\"US.TN\",\"miami\":\"US.FL\",\"milwaukee\":\"US.WI\",\"minneapolis\":\"US.MN\",\"monterey\":\"US.CA\",\"naples-florida\":\"US.FL\",\"nashville\":\"US.TN\",\"new-orleans\":\"US.LA\",\"new-york\":\"US.NY\",\"newport-rhode-island\":\"US.RI\",\"oakland\":\"US.CA\",\"oklahoma-city\":\"US.OK\",\"omaha\":\"US.NE\",\"orlando\":\"US.FL\",\"palm-springs\":\"US.CA\",\"philadelphia\":\"US.PA\",\"phoenix\":\"US.AZ\",\"pittsburgh\":\"US.PA\",\"pleasanton\":\"US.CA\",\"plymouth-united-states\":\"US.MA\",\"portland\":\"US.OR\",\"portsmouth-united-states\":\"US.NH\",\"raleigh\":\"US.NC\",\"reno\":\"US.NV\",\"richmond\":\"US.VA\",\"rochester\":\"US.NY\",\"rock-hill\":\"US.SC\",\"sacramento\":\"US.CA\",\"salt-lake-city\":\"US.UT\",\"san-antonio\":\"US.TX\",\"san-diego\":\"US.CA\",\"san-francisco\":\"US.CA\",\"san-jose-united-states\":\"US.CA\",\"sanford\":\"US.FL\",\"santa-barbara\":\"US.CA\",\"santa-fe-united-states\":\"US.NM\",\"savannah\":\"US.GA\",\"seattle\":\"US.WA\",\"sierra-vista\":\"US.AZ\",\"spokane\":\"US.WA\",\"st-augustine\":\"US.FL\",\"stamford\":\"US.CT\",\"tampa\":\"US.FL\",\"taos\":\"US.NM\",\"traverse-city\":\"US.MI\",\"tucson\":\"US.AZ\",\"valdosta\":\"US.GA\",\"valencia-united-states\":\"US.CA\",\"vancouver-united-states\":\"US.WA\",\"ventura\":\"US.CA\",\"washington-dc\":\"US.DC\",\"wilmington-north-carolina\":\"US.NC\",\"worcester-united-states\":\"US.MA\",\"montevideo\":\"UY.10\",\"punta-del-este\":\"UY.09\",\"caracas\":\"VE.25\",\"valencia-venezuela\":\"VE.07\",\"can-tho\":\"VN.92\",\"da-nang\":\"VN.48\",\"dalat\":\"VN.68\",\"ha-long\":\"VN.22\",\"hanoi\":\"VN.01\",\"ho-chi-minh-city\":\"VN.79\",\"hoi-an\":\"VN.48\",\"hue\":\"VN.46\",\"mui-ne\":\"VN.68\",\"nha-trang\":\"VN.56\",\"quy-nhon\":\"VN.52\",\"ronne\":\"DK.17\",\"chania\":\"GR.ESYE43\",\"corfu\":\"GR.ESYE22\",\"nuuk\":\"GL.07\",\"ioannina\":\"GR.ESYE21\",\"zakynthos\":\"GR.ESYE22\",\"billund\":\"DK.21\",\"torshavn\":\"FO.ST\",\"iasi\":\"RO.23\",\"lefkada\":\"GR.ESYE22\",\"mytilene\":\"GR.ESYE41\"}"),
 	r: /* @__PURE__ */ JSON.parse("{\"IT.07\":{\"n\":\"Lazio\",\"cc\":\"IT\"},\"FR.11\":{\"n\":\"Île-de-France\",\"cc\":\"FR\"},\"CA.08\":{\"n\":\"Ontario\",\"cc\":\"CA\"},\"GB.ENG\":{\"n\":\"England\",\"cc\":\"GB\"},\"ES.56\":{\"n\":\"Catalonia\",\"cc\":\"ES\"},\"JP.40\":{\"n\":\"Tokyo\",\"cc\":\"JP\"},\"AE.03\":{\"n\":\"Dubai\",\"cc\":\"AE\"},\"AL.51\":{\"n\":\"Vlorë County\",\"cc\":\"AL\"},\"AL.50\":{\"n\":\"Tirana\",\"cc\":\"AL\"},\"AD.07\":{\"n\":\"Andorra la Vella\",\"cc\":\"AD\"},\"AR.01\":{\"n\":\"Buenos Aires\",\"cc\":\"AR\"},\"AR.07\":{\"n\":\"Buenos Aires F.D.\",\"cc\":\"AR\"},\"AR.05\":{\"n\":\"Cordoba\",\"cc\":\"AR\"},\"AR.13\":{\"n\":\"Mendoza\",\"cc\":\"AR\"},\"AR.17\":{\"n\":\"Salta\",\"cc\":\"AR\"},\"AR.16\":{\"n\":\"Rio Negro\",\"cc\":\"AR\"},\"AR.21\":{\"n\":\"Santa Fe\",\"cc\":\"AR\"},\"AR.23\":{\"n\":\"Tierra del Fuego\",\"cc\":\"AR\"},\"AM.11\":{\"n\":\"Yerevan\",\"cc\":\"AM\"},\"AU.05\":{\"n\":\"South Australia\",\"cc\":\"AU\"},\"AU.04\":{\"n\":\"Queensland\",\"cc\":\"AU\"},\"AU.01\":{\"n\":\"Australian Capital Territory\",\"cc\":\"AU\"},\"AU.03\":{\"n\":\"Northern Territory\",\"cc\":\"AU\"},\"AU.07\":{\"n\":\"Victoria\",\"cc\":\"AU\"},\"AU.06\":{\"n\":\"Tasmania\",\"cc\":\"AU\"},\"AU.02\":{\"n\":\"New South Wales\",\"cc\":\"AU\"},\"AU.08\":{\"n\":\"Western Australia\",\"cc\":\"AU\"},\"AT.05\":{\"n\":\"Salzburg\",\"cc\":\"AT\"},\"AT.04\":{\"n\":\"Upper Austria\",\"cc\":\"AT\"},\"AT.08\":{\"n\":\"Vorarlberg\",\"cc\":\"AT\"},\"AT.06\":{\"n\":\"Styria\",\"cc\":\"AT\"},\"AT.07\":{\"n\":\"Tyrol\",\"cc\":\"AT\"},\"AT.02\":{\"n\":\"Carinthia\",\"cc\":\"AT\"},\"AT.09\":{\"n\":\"Vienna\",\"cc\":\"AT\"},\"AZ.09\":{\"n\":\"Baki\",\"cc\":\"AZ\"},\"AZ.48\":{\"n\":\"Shaki City\",\"cc\":\"AZ\"},\"BH.16\":{\"n\":\"Manama\",\"cc\":\"BH\"},\"BB.08\":{\"n\":\"Saint Michael\",\"cc\":\"BB\"},\"BE.VLG\":{\"n\":\"Flanders\",\"cc\":\"BE\"},\"BE.BRU\":{\"n\":\"Brussels Capital\",\"cc\":\"BE\"},\"BE.WAL\":{\"n\":\"Wallonia\",\"cc\":\"BE\"},\"BJ.14\":{\"n\":\"Littoral\",\"cc\":\"BJ\"},\"BO.02\":{\"n\":\"Cochabamba\",\"cc\":\"BO\"},\"BO.04\":{\"n\":\"La Paz Department\",\"cc\":\"BO\"},\"BO.01\":{\"n\":\"Chuquisaca Department\",\"cc\":\"BO\"},\"BA.02\":{\"n\":\"Srpska\",\"cc\":\"BA\"},\"BA.01\":{\"n\":\"Federation of B&H\",\"cc\":\"BA\"},\"BW.14\":{\"n\":\"Gaborone\",\"cc\":\"BW\"},\"BR.26\":{\"n\":\"Santa Catarina\",\"cc\":\"BR\"},\"BR.27\":{\"n\":\"São Paulo\",\"cc\":\"BR\"},\"BR.16\":{\"n\":\"Pará\",\"cc\":\"BR\"},\"BR.15\":{\"n\":\"Minas Gerais\",\"cc\":\"BR\"},\"BR.23\":{\"n\":\"Rio Grande do Sul\",\"cc\":\"BR\"},\"BR.25\":{\"n\":\"Roraima\",\"cc\":\"BR\"},\"BR.07\":{\"n\":\"Federal District\",\"cc\":\"BR\"},\"BR.29\":{\"n\":\"Goiás\",\"cc\":\"BR\"},\"BR.11\":{\"n\":\"Mato Grosso do Sul\",\"cc\":\"BR\"},\"BR.14\":{\"n\":\"Mato Grosso\",\"cc\":\"BR\"},\"BR.18\":{\"n\":\"Paraná\",\"cc\":\"BR\"},\"BR.06\":{\"n\":\"Ceará\",\"cc\":\"BR\"},\"BR.30\":{\"n\":\"Pernambuco\",\"cc\":\"BR\"},\"BR.01\":{\"n\":\"Acre\",\"cc\":\"BR\"},\"BR.21\":{\"n\":\"Rio de Janeiro\",\"cc\":\"BR\"},\"BR.05\":{\"n\":\"Bahia\",\"cc\":\"BR\"},\"BN.02\":{\"n\":\"Brunei-Muara District\",\"cc\":\"BN\"},\"BG.39\":{\"n\":\"Burgas\",\"cc\":\"BG\"},\"BG.51\":{\"n\":\"Plovdiv\",\"cc\":\"BG\"},\"BG.42\":{\"n\":\"Sofia-Capital\",\"cc\":\"BG\"},\"BG.61\":{\"n\":\"Varna\",\"cc\":\"BG\"},\"KH.29\":{\"n\":\"Battambang\",\"cc\":\"KH\"},\"KH.22\":{\"n\":\"Phnom Penh\",\"cc\":\"KH\"},\"KH.24\":{\"n\":\"Siem Reap\",\"cc\":\"KH\"},\"KH.28\":{\"n\":\"Preah Sihanouk\",\"cc\":\"KH\"},\"CM.11\":{\"n\":\"Centre\",\"cc\":\"CM\"},\"CA.01\":{\"n\":\"Alberta\",\"cc\":\"CA\"},\"CA.10\":{\"n\":\"Quebec\",\"cc\":\"CA\"},\"CA.02\":{\"n\":\"British Columbia\",\"cc\":\"CA\"},\"CA.09\":{\"n\":\"Prince Edward Island\",\"cc\":\"CA\"},\"CA.04\":{\"n\":\"New Brunswick\",\"cc\":\"CA\"},\"CA.07\":{\"n\":\"Nova Scotia\",\"cc\":\"CA\"},\"CA.11\":{\"n\":\"Saskatchewan\",\"cc\":\"CA\"},\"CA.05\":{\"n\":\"Newfoundland and Labrador\",\"cc\":\"CA\"},\"CA.03\":{\"n\":\"Manitoba\",\"cc\":\"CA\"},\"CL.16\":{\"n\":\"Arica y Parinacota Region\",\"cc\":\"CL\"},\"CL.06\":{\"n\":\"Biobio\",\"cc\":\"CL\"},\"CL.14\":{\"n\":\"Los Lagos Region\",\"cc\":\"CL\"},\"CL.10\":{\"n\":\"Region of Magallanes\",\"cc\":\"CL\"},\"CL.12\":{\"n\":\"Santiago Metropolitan\",\"cc\":\"CL\"},\"CN.22\":{\"n\":\"Beijing\",\"cc\":\"CN\"},\"CN.32\":{\"n\":\"Sichuan\",\"cc\":\"CN\"},\"CN.33\":{\"n\":\"Chongqing\",\"cc\":\"CN\"},\"CN.19\":{\"n\":\"Liaoning\",\"cc\":\"CN\"},\"CN.30\":{\"n\":\"Guangdong\",\"cc\":\"CN\"},\"CN.16\":{\"n\":\"Guangxi\",\"cc\":\"CN\"},\"CN.02\":{\"n\":\"Zhejiang\",\"cc\":\"CN\"},\"CN.08\":{\"n\":\"Heilongjiang\",\"cc\":\"CN\"},\"CN.29\":{\"n\":\"Yunnan\",\"cc\":\"CN\"},\"CN.04\":{\"n\":\"Jiangsu\",\"cc\":\"CN\"},\"CN.25\":{\"n\":\"Shandong\",\"cc\":\"CN\"},\"CN.23\":{\"n\":\"Shanghai\",\"cc\":\"CN\"},\"CN.26\":{\"n\":\"Shaanxi\",\"cc\":\"CN\"},\"CO.04\":{\"n\":\"Atlántico\",\"cc\":\"CO\"},\"CO.34\":{\"n\":\"Bogota D.C.\",\"cc\":\"CO\"},\"CO.29\":{\"n\":\"Valle del Cauca Department\",\"cc\":\"CO\"},\"CO.02\":{\"n\":\"Antioquia\",\"cc\":\"CO\"},\"CO.38\":{\"n\":\"Magdalena Department\",\"cc\":\"CO\"},\"CR.01\":{\"n\":\"Alajuela Province\",\"cc\":\"CR\"},\"CR.08\":{\"n\":\"San José\",\"cc\":\"CR\"},\"HR.03\":{\"n\":\"Dubrovnik-Neretva\",\"cc\":\"HR\"},\"HR.15\":{\"n\":\"Split-Dalmatia\",\"cc\":\"HR\"},\"HR.12\":{\"n\":\"Primorje-Gorski Kotar\",\"cc\":\"HR\"},\"HR.10\":{\"n\":\"County of Osijek-Baranja\",\"cc\":\"HR\"},\"HR.04\":{\"n\":\"Istria\",\"cc\":\"HR\"},\"HR.13\":{\"n\":\"Šibenik-Knin\",\"cc\":\"HR\"},\"HR.19\":{\"n\":\"Zadar\",\"cc\":\"HR\"},\"HR.21\":{\"n\":\"Zagreb\",\"cc\":\"HR\"},\"CY.03\":{\"n\":\"Larnaka\",\"cc\":\"CY\"},\"CY.05\":{\"n\":\"Limassol\",\"cc\":\"CY\"},\"CY.04\":{\"n\":\"Nicosia\",\"cc\":\"CY\"},\"CY.06\":{\"n\":\"Pafos\",\"cc\":\"CY\"},\"CZ.78\":{\"n\":\"South Moravian\",\"cc\":\"CZ\"},\"CZ.79\":{\"n\":\"South Bohemian Region\",\"cc\":\"CZ\"},\"CZ.84\":{\"n\":\"Olomouc Region\",\"cc\":\"CZ\"},\"CZ.52\":{\"n\":\"Prague\",\"cc\":\"CZ\"},\"DK.19\":{\"n\":\"North Denmark\",\"cc\":\"DK\"},\"DK.18\":{\"n\":\"Central Jutland\",\"cc\":\"DK\"},\"DK.17\":{\"n\":\"Capital Region\",\"cc\":\"DK\"},\"DK.21\":{\"n\":\"South Denmark\",\"cc\":\"DK\"},\"DO.34\":{\"n\":\"Nacional\",\"cc\":\"DO\"},\"EC.02\":{\"n\":\"Azuay\",\"cc\":\"EC\"},\"EC.18\":{\"n\":\"Pichincha\",\"cc\":\"EC\"},\"EG.16\":{\"n\":\"Aswan\",\"cc\":\"EG\"},\"EG.11\":{\"n\":\"Cairo\",\"cc\":\"EG\"},\"EG.02\":{\"n\":\"Red Sea\",\"cc\":\"EG\"},\"EG.28\":{\"n\":\"Luxor\",\"cc\":\"EG\"},\"EG.26\":{\"n\":\"South Sinai\",\"cc\":\"EG\"},\"EE.01\":{\"n\":\"Harjumaa\",\"cc\":\"EE\"},\"EE.18\":{\"n\":\"Tartu\",\"cc\":\"EE\"},\"ET.44\":{\"n\":\"Addis Ababa\",\"cc\":\"ET\"},\"FJ.05\":{\"n\":\"Western\",\"cc\":\"FJ\"},\"FJ.01\":{\"n\":\"Central\",\"cc\":\"FJ\"},\"FI.01\":{\"n\":\"Uusimaa\",\"cc\":\"FI\"},\"FI.17\":{\"n\":\"North Ostrobothnia\",\"cc\":\"FI\"},\"FI.19\":{\"n\":\"Lapland\",\"cc\":\"FI\"},\"FI.06\":{\"n\":\"Pirkanmaa\",\"cc\":\"FI\"},\"FI.02\":{\"n\":\"Southwest Finland\",\"cc\":\"FI\"},\"FI.15\":{\"n\":\"Ostrobothnia\",\"cc\":\"FI\"},\"FR.93\":{\"n\":\"Provence-Alpes-Côte d'Azur\",\"cc\":\"FR\"},\"FR.84\":{\"n\":\"Auvergne-Rhône-Alpes\",\"cc\":\"FR\"},\"FR.94\":{\"n\":\"Corsica\",\"cc\":\"FR\"},\"FR.24\":{\"n\":\"Centre-Val de Loire\",\"cc\":\"FR\"},\"FR.32\":{\"n\":\"Hauts-de-France\",\"cc\":\"FR\"},\"FR.52\":{\"n\":\"Pays de la Loire\",\"cc\":\"FR\"},\"FR.75\":{\"n\":\"New Aquitaine\",\"cc\":\"FR\"},\"FR.28\":{\"n\":\"Normandy\",\"cc\":\"FR\"},\"FR.27\":{\"n\":\"Bourgogne-Franche-Comté\",\"cc\":\"FR\"},\"FR.53\":{\"n\":\"Brittany\",\"cc\":\"FR\"},\"FR.76\":{\"n\":\"Occitanie\",\"cc\":\"FR\"},\"FR.44\":{\"n\":\"Grand Est\",\"cc\":\"FR\"},\"GF.GF\":{\"n\":\"Guyane\",\"cc\":\"GF\"},\"GE.04\":{\"n\":\"Adjara\",\"cc\":\"GE\"},\"GE.51\":{\"n\":\"Tbilisi\",\"cc\":\"GE\"},\"DE.07\":{\"n\":\"North Rhine-Westphalia\",\"cc\":\"DE\"},\"DE.02\":{\"n\":\"Bavaria\",\"cc\":\"DE\"},\"DE.05\":{\"n\":\"Hesse\",\"cc\":\"DE\"},\"DE.01\":{\"n\":\"Baden-Wurttemberg\",\"cc\":\"DE\"},\"DE.16\":{\"n\":\"State of Berlin\",\"cc\":\"DE\"},\"DE.12\":{\"n\":\"Mecklenburg-Vorpommern\",\"cc\":\"DE\"},\"DE.03\":{\"n\":\"Bremen\",\"cc\":\"DE\"},\"DE.13\":{\"n\":\"Saxony\",\"cc\":\"DE\"},\"DE.11\":{\"n\":\"Brandenburg\",\"cc\":\"DE\"},\"DE.15\":{\"n\":\"Thuringia\",\"cc\":\"DE\"},\"DE.06\":{\"n\":\"Lower Saxony\",\"cc\":\"DE\"},\"DE.10\":{\"n\":\"Schleswig-Holstein\",\"cc\":\"DE\"},\"DE.04\":{\"n\":\"Hamburg\",\"cc\":\"DE\"},\"DE.08\":{\"n\":\"Rheinland-Pfalz\",\"cc\":\"DE\"},\"DE.14\":{\"n\":\"Saxony-Anhalt\",\"cc\":\"DE\"},\"DE.09\":{\"n\":\"Saarland\",\"cc\":\"DE\"},\"GH.01\":{\"n\":\"Greater Accra\",\"cc\":\"GH\"},\"GR.ESYE31\":{\"n\":\"Attica\",\"cc\":\"GR\"},\"GR.ESYE43\":{\"n\":\"Crete\",\"cc\":\"GR\"},\"GR.ESYE25\":{\"n\":\"Peloponnese\",\"cc\":\"GR\"},\"GR.ESYE42\":{\"n\":\"South Aegean\",\"cc\":\"GR\"},\"GR.ESYE12\":{\"n\":\"Central Macedonia\",\"cc\":\"GR\"},\"GR.ESYE14\":{\"n\":\"Thessaly\",\"cc\":\"GR\"},\"GT.16\":{\"n\":\"Sacatepéquez\",\"cc\":\"GT\"},\"GY.12\":{\"n\":\"Demerara-Mahaica\",\"cc\":\"GY\"},\"HN.04\":{\"n\":\"Comayagua Department\",\"cc\":\"HN\"},\"HU.05\":{\"n\":\"Budapest\",\"cc\":\"HU\"},\"HU.10\":{\"n\":\"Hajdú-Bihar\",\"cc\":\"HU\"},\"HU.04\":{\"n\":\"Borsod-Abaúj-Zemplén\",\"cc\":\"HU\"},\"HU.09\":{\"n\":\"Győr-Moson-Sopron\",\"cc\":\"HU\"},\"HU.24\":{\"n\":\"Zala County\",\"cc\":\"HU\"},\"IS.39\":{\"n\":\"Capital Region\",\"cc\":\"IS\"},\"IN.36\":{\"n\":\"Uttar Pradesh\",\"cc\":\"IN\"},\"IN.09\":{\"n\":\"Gujarat\",\"cc\":\"IN\"},\"IN.23\":{\"n\":\"Punjab\",\"cc\":\"IN\"},\"IN.16\":{\"n\":\"Maharashtra\",\"cc\":\"IN\"},\"IN.35\":{\"n\":\"Madhya Pradesh\",\"cc\":\"IN\"},\"IN.24\":{\"n\":\"Rajasthan\",\"cc\":\"IN\"},\"IN.05\":{\"n\":\"Chandigarh\",\"cc\":\"IN\"},\"IN.25\":{\"n\":\"Tamil Nadu\",\"cc\":\"IN\"},\"IN.40\":{\"n\":\"Telangana\",\"cc\":\"IN\"},\"IN.28\":{\"n\":\"West Bengal\",\"cc\":\"IN\"},\"IN.07\":{\"n\":\"Delhi\",\"cc\":\"IN\"},\"IN.11\":{\"n\":\"Himachal Pradesh\",\"cc\":\"IN\"},\"ID.02\":{\"n\":\"Bali\",\"cc\":\"ID\"},\"ID.30\":{\"n\":\"West Java\",\"cc\":\"ID\"},\"ID.08\":{\"n\":\"East Java\",\"cc\":\"ID\"},\"ID.04\":{\"n\":\"Jakarta\",\"cc\":\"ID\"},\"ID.26\":{\"n\":\"North Sumatra\",\"cc\":\"ID\"},\"ID.07\":{\"n\":\"Central Java\",\"cc\":\"ID\"},\"ID.10\":{\"n\":\"Yogyakarta\",\"cc\":\"ID\"},\"IQ.07\":{\"n\":\"Baghdad\",\"cc\":\"IQ\"},\"IE.M\":{\"n\":\"Munster\",\"cc\":\"IE\"},\"IE.L\":{\"n\":\"Leinster\",\"cc\":\"IE\"},\"IE.C\":{\"n\":\"Connacht\",\"cc\":\"IE\"},\"IL.05\":{\"n\":\"Tel Aviv\",\"cc\":\"IL\"},\"IT.20\":{\"n\":\"Veneto\",\"cc\":\"IT\"},\"IT.15\":{\"n\":\"Sicily\",\"cc\":\"IT\"},\"IT.12\":{\"n\":\"Piedmont\",\"cc\":\"IT\"},\"IT.14\":{\"n\":\"Sardinia\",\"cc\":\"IT\"},\"IT.04\":{\"n\":\"Campania\",\"cc\":\"IT\"},\"IT.10\":{\"n\":\"The Marches\",\"cc\":\"IT\"},\"IT.16\":{\"n\":\"Tuscany\",\"cc\":\"IT\"},\"IT.18\":{\"n\":\"Umbria\",\"cc\":\"IT\"},\"IT.13\":{\"n\":\"Apulia\",\"cc\":\"IT\"},\"IT.09\":{\"n\":\"Lombardy\",\"cc\":\"IT\"},\"IT.05\":{\"n\":\"Emilia-Romagna\",\"cc\":\"IT\"},\"IT.17\":{\"n\":\"Trentino-Alto Adige\",\"cc\":\"IT\"},\"IT.03\":{\"n\":\"Calabria\",\"cc\":\"IT\"},\"IT.08\":{\"n\":\"Liguria\",\"cc\":\"IT\"},\"IT.02\":{\"n\":\"Basilicate\",\"cc\":\"IT\"},\"IT.01\":{\"n\":\"Abruzzo\",\"cc\":\"IT\"},\"IT.06\":{\"n\":\"Friuli Venezia Giulia\",\"cc\":\"IT\"},\"CI.93\":{\"n\":\"Abidjan Autonomous District\",\"cc\":\"CI\"},\"JM.17\":{\"n\":\"Kingston\",\"cc\":\"JM\"},\"JP.02\":{\"n\":\"Akita\",\"cc\":\"JP\"},\"JP.03\":{\"n\":\"Aomori\",\"cc\":\"JP\"},\"JP.30\":{\"n\":\"Oita\",\"cc\":\"JP\"},\"JP.04\":{\"n\":\"Chiba\",\"cc\":\"JP\"},\"JP.07\":{\"n\":\"Fukuoka\",\"cc\":\"JP\"},\"JP.12\":{\"n\":\"Hokkaido\",\"cc\":\"JP\"},\"JP.19\":{\"n\":\"Kanagawa\",\"cc\":\"JP\"},\"JP.37\":{\"n\":\"Shizuoka\",\"cc\":\"JP\"},\"JP.11\":{\"n\":\"Hiroshima\",\"cc\":\"JP\"},\"JP.18\":{\"n\":\"Kagoshima\",\"cc\":\"JP\"},\"JP.15\":{\"n\":\"Ishikawa\",\"cc\":\"JP\"},\"JP.13\":{\"n\":\"Hyōgo\",\"cc\":\"JP\"},\"JP.21\":{\"n\":\"Kumamoto\",\"cc\":\"JP\"},\"JP.31\":{\"n\":\"Okayama\",\"cc\":\"JP\"},\"JP.22\":{\"n\":\"Kyoto\",\"cc\":\"JP\"},\"JP.36\":{\"n\":\"Shimane\",\"cc\":\"JP\"},\"JP.26\":{\"n\":\"Nagano\",\"cc\":\"JP\"},\"JP.05\":{\"n\":\"Ehime\",\"cc\":\"JP\"},\"JP.25\":{\"n\":\"Miyazaki\",\"cc\":\"JP\"},\"JP.27\":{\"n\":\"Nagasaki\",\"cc\":\"JP\"},\"JP.01\":{\"n\":\"Aichi\",\"cc\":\"JP\"},\"JP.47\":{\"n\":\"Okinawa\",\"cc\":\"JP\"},\"JP.28\":{\"n\":\"Nara\",\"cc\":\"JP\"},\"JP.32\":{\"n\":\"Osaka\",\"cc\":\"JP\"},\"JP.24\":{\"n\":\"Miyagi\",\"cc\":\"JP\"},\"JP.42\":{\"n\":\"Toyama\",\"cc\":\"JP\"},\"JP.44\":{\"n\":\"Yamagata\",\"cc\":\"JP\"},\"JO.16\":{\"n\":\"Amman\",\"cc\":\"JO\"},\"JO.21\":{\"n\":\"Aqaba\",\"cc\":\"JO\"},\"KZ.02\":{\"n\":\"Almaty\",\"cc\":\"KZ\"},\"KZ.05\":{\"n\":\"Astana\",\"cc\":\"KZ\"},\"KZ.06\":{\"n\":\"Atyrau Oblisi\",\"cc\":\"KZ\"},\"KE.37\":{\"n\":\"Mombasa County\",\"cc\":\"KE\"},\"KE.05\":{\"n\":\"Nairobi County\",\"cc\":\"KE\"},\"LA.17\":{\"n\":\"Luang Prabang Province\",\"cc\":\"LA\"},\"LA.02\":{\"n\":\"Champasak Province\",\"cc\":\"LA\"},\"LA.24\":{\"n\":\"Vientiane Prefecture\",\"cc\":\"LA\"},\"LV.16\":{\"n\":\"Liepaja\",\"cc\":\"LV\"},\"LV.25\":{\"n\":\"Riga\",\"cc\":\"LV\"},\"LB.04\":{\"n\":\"Beirut\",\"cc\":\"LB\"},\"LT.57\":{\"n\":\"Kaunas\",\"cc\":\"LT\"},\"LT.65\":{\"n\":\"Vilnius\",\"cc\":\"LT\"},\"LU.LU\":{\"n\":\"Luxembourg\",\"cc\":\"LU\"},\"MY.01\":{\"n\":\"Johor\",\"cc\":\"MY\"},\"MV.38\":{\"n\":\"Kaafu Atoll\",\"cc\":\"MV\"},\"MT.56\":{\"n\":\"Tas-Sliema\",\"cc\":\"MT\"},\"MT.60\":{\"n\":\"Valletta\",\"cc\":\"MT\"},\"MX.01\":{\"n\":\"Aguascalientes\",\"cc\":\"MX\"},\"MX.21\":{\"n\":\"Puebla\",\"cc\":\"MX\"},\"MX.03\":{\"n\":\"Baja California Sur\",\"cc\":\"MX\"},\"MX.04\":{\"n\":\"Campeche\",\"cc\":\"MX\"},\"MX.23\":{\"n\":\"Quintana Roo\",\"cc\":\"MX\"},\"MX.06\":{\"n\":\"Chihuahua\",\"cc\":\"MX\"},\"MX.28\":{\"n\":\"Tamaulipas\",\"cc\":\"MX\"},\"MX.30\":{\"n\":\"Veracruz\",\"cc\":\"MX\"},\"MX.08\":{\"n\":\"Colima\",\"cc\":\"MX\"},\"MX.05\":{\"n\":\"Chiapas\",\"cc\":\"MX\"},\"MX.17\":{\"n\":\"Morelos\",\"cc\":\"MX\"},\"MX.25\":{\"n\":\"Sinaloa\",\"cc\":\"MX\"},\"MX.14\":{\"n\":\"Jalisco\",\"cc\":\"MX\"},\"MX.11\":{\"n\":\"Guanajuato\",\"cc\":\"MX\"},\"MX.09\":{\"n\":\"Mexico City\",\"cc\":\"MX\"},\"MX.19\":{\"n\":\"Nuevo León\",\"cc\":\"MX\"},\"MX.16\":{\"n\":\"Michoacán\",\"cc\":\"MX\"},\"MX.31\":{\"n\":\"Yucatán\",\"cc\":\"MX\"},\"MX.22\":{\"n\":\"Querétaro\",\"cc\":\"MX\"},\"MX.32\":{\"n\":\"Zacatecas\",\"cc\":\"MX\"},\"MD.57\":{\"n\":\"Chișinău Municipality\",\"cc\":\"MD\"},\"MN.20\":{\"n\":\"Ulaanbaatar\",\"cc\":\"MN\"},\"ME.05\":{\"n\":\"Budva\",\"cc\":\"ME\"},\"ME.10\":{\"n\":\"Kotor\",\"cc\":\"ME\"},\"MA.06\":{\"n\":\"Casablanca-Settat\",\"cc\":\"MA\"},\"MA.07\":{\"n\":\"Marrakesh-Safi\",\"cc\":\"MA\"},\"MA.04\":{\"n\":\"Rabat-Salé-Kénitra\",\"cc\":\"MA\"},\"MA.01\":{\"n\":\"Tanger-Tetouan-Al Hoceima\",\"cc\":\"MA\"},\"MM.17\":{\"n\":\"Yangon\",\"cc\":\"MM\"},\"NA.29\":{\"n\":\"Erongo Region\",\"cc\":\"NA\"},\"NA.21\":{\"n\":\"Khomas Region\",\"cc\":\"NA\"},\"NP.3\":{\"n\":\"Bagmati Province\",\"cc\":\"NP\"},\"NP.4\":{\"n\":\"Gandaki Pradesh\",\"cc\":\"NP\"},\"NL.07\":{\"n\":\"North Holland\",\"cc\":\"NL\"},\"NL.09\":{\"n\":\"Utrecht\",\"cc\":\"NL\"},\"NL.03\":{\"n\":\"Gelderland\",\"cc\":\"NL\"},\"NL.06\":{\"n\":\"North Brabant\",\"cc\":\"NL\"},\"NL.11\":{\"n\":\"South Holland\",\"cc\":\"NL\"},\"NL.15\":{\"n\":\"Overijssel\",\"cc\":\"NL\"},\"NL.04\":{\"n\":\"Groningen\",\"cc\":\"NL\"},\"NL.02\":{\"n\":\"Friesland\",\"cc\":\"NL\"},\"NL.05\":{\"n\":\"Limburg\",\"cc\":\"NL\"},\"NZ.E7\":{\"n\":\"Auckland\",\"cc\":\"NZ\"},\"NZ.E9\":{\"n\":\"Canterbury\",\"cc\":\"NZ\"},\"NZ.F7\":{\"n\":\"Otago\",\"cc\":\"NZ\"},\"NZ.G2\":{\"n\":\"Wellington Region\",\"cc\":\"NZ\"},\"NI.06\":{\"n\":\"Granada Department\",\"cc\":\"NI\"},\"NI.08\":{\"n\":\"León Department\",\"cc\":\"NI\"},\"NG.11\":{\"n\":\"FCT\",\"cc\":\"NG\"},\"NG.05\":{\"n\":\"Lagos\",\"cc\":\"NG\"},\"MK.06\":{\"n\":\"Bitola\",\"cc\":\"MK\"},\"MK.E2\":{\"n\":\"Ohrid\",\"cc\":\"MK\"},\"MK.F6\":{\"n\":\"Grad Skopje\",\"cc\":\"MK\"},\"NO.46\":{\"n\":\"Vestland\",\"cc\":\"NO\"},\"NO.12\":{\"n\":\"Oslo\",\"cc\":\"NO\"},\"NO.14\":{\"n\":\"Rogaland\",\"cc\":\"NO\"},\"NO.18\":{\"n\":\"Troms\",\"cc\":\"NO\"},\"NO.21\":{\"n\":\"Trøndelag\",\"cc\":\"NO\"},\"NO.08\":{\"n\":\"Møre og Romsdal\",\"cc\":\"NO\"},\"OM.06\":{\"n\":\"Muscat\",\"cc\":\"OM\"},\"OM.08\":{\"n\":\"Dhofar\",\"cc\":\"OM\"},\"PK.05\":{\"n\":\"Sindh\",\"cc\":\"PK\"},\"PA.08\":{\"n\":\"Panamá\",\"cc\":\"PA\"},\"PY.22\":{\"n\":\"Asuncion\",\"cc\":\"PY\"},\"PE.04\":{\"n\":\"Arequipa\",\"cc\":\"PE\"},\"PE.06\":{\"n\":\"Cajamarca Department\",\"cc\":\"PE\"},\"PE.14\":{\"n\":\"Lambayeque\",\"cc\":\"PE\"},\"PE.08\":{\"n\":\"Cuzco Department\",\"cc\":\"PE\"},\"PE.16\":{\"n\":\"Loreto\",\"cc\":\"PE\"},\"PE.LMA\":{\"n\":\"Lima Province\",\"cc\":\"PE\"},\"PH.06\":{\"n\":\"Western Visayas\",\"cc\":\"PH\"},\"PH.07\":{\"n\":\"Central Visayas\",\"cc\":\"PH\"},\"PH.NCR\":{\"n\":\"National Capital Region\",\"cc\":\"PH\"},\"PH.41\":{\"n\":\"Mimaropa\",\"cc\":\"PH\"},\"PL.81\":{\"n\":\"Podlasie\",\"cc\":\"PL\"},\"PL.83\":{\"n\":\"Silesia\",\"cc\":\"PL\"},\"PL.73\":{\"n\":\"Kujawsko-Pomorskie\",\"cc\":\"PL\"},\"PL.82\":{\"n\":\"Pomerania\",\"cc\":\"PL\"},\"PL.72\":{\"n\":\"Lower Silesia\",\"cc\":\"PL\"},\"PL.84\":{\"n\":\"Świętokrzyskie\",\"cc\":\"PL\"},\"PL.87\":{\"n\":\"West Pomerania\",\"cc\":\"PL\"},\"PL.77\":{\"n\":\"Lesser Poland\",\"cc\":\"PL\"},\"PL.75\":{\"n\":\"Lublin\",\"cc\":\"PL\"},\"PL.85\":{\"n\":\"Warmia-Masuria\",\"cc\":\"PL\"},\"PL.79\":{\"n\":\"Opole Voivodeship\",\"cc\":\"PL\"},\"PL.86\":{\"n\":\"Greater Poland\",\"cc\":\"PL\"},\"PL.80\":{\"n\":\"Subcarpathia\",\"cc\":\"PL\"},\"PL.78\":{\"n\":\"Mazovia\",\"cc\":\"PL\"},\"PL.76\":{\"n\":\"Lubusz\",\"cc\":\"PL\"},\"PL.74\":{\"n\":\"Łódź Voivodeship\",\"cc\":\"PL\"},\"PT.09\":{\"n\":\"Faro\",\"cc\":\"PT\"},\"PT.17\":{\"n\":\"Porto\",\"cc\":\"PT\"},\"PT.23\":{\"n\":\"Azores\",\"cc\":\"PT\"},\"PT.02\":{\"n\":\"Aveiro\",\"cc\":\"PT\"},\"PT.04\":{\"n\":\"Braga\",\"cc\":\"PT\"},\"PT.05\":{\"n\":\"Bragança\",\"cc\":\"PT\"},\"PT.13\":{\"n\":\"Leiria\",\"cc\":\"PT\"},\"PT.14\":{\"n\":\"Lisbon\",\"cc\":\"PT\"},\"PT.21\":{\"n\":\"Vila Real\",\"cc\":\"PT\"},\"PT.07\":{\"n\":\"Coimbra\",\"cc\":\"PT\"},\"PT.10\":{\"n\":\"Madeira\",\"cc\":\"PT\"},\"PT.18\":{\"n\":\"Santarém\",\"cc\":\"PT\"},\"PT.22\":{\"n\":\"Viseu\",\"cc\":\"PT\"},\"PT.20\":{\"n\":\"Viana do Castelo\",\"cc\":\"PT\"},\"PT.19\":{\"n\":\"Setúbal\",\"cc\":\"PT\"},\"PT.08\":{\"n\":\"Évora\",\"cc\":\"PT\"},\"QA.01\":{\"n\":\"Baladiyat ad Dawhah\",\"cc\":\"QA\"},\"RO.09\":{\"n\":\"Brașov County\",\"cc\":\"RO\"},\"RO.10\":{\"n\":\"Bucharest\",\"cc\":\"RO\"},\"RO.13\":{\"n\":\"Cluj County\",\"cc\":\"RO\"},\"RO.14\":{\"n\":\"Constanța County\",\"cc\":\"RO\"},\"RO.17\":{\"n\":\"Dolj\",\"cc\":\"RO\"},\"RW.12\":{\"n\":\"Kigali\",\"cc\":\"RW\"},\"WS.10\":{\"n\":\"Tuamasaga\",\"cc\":\"WS\"},\"SA.14\":{\"n\":\"Mecca Region\",\"cc\":\"SA\"},\"SA.10\":{\"n\":\"Riyadh Region\",\"cc\":\"SA\"},\"SN.01\":{\"n\":\"Dakar\",\"cc\":\"SN\"},\"RS.SE\":{\"n\":\"Central Serbia\",\"cc\":\"RS\"},\"RS.VO\":{\"n\":\"Vojvodina\",\"cc\":\"RS\"},\"SL.04\":{\"n\":\"Western Area\",\"cc\":\"SL\"},\"SK.02\":{\"n\":\"Bratislava Region\",\"cc\":\"SK\"},\"SK.03\":{\"n\":\"Košice Region\",\"cc\":\"SK\"},\"SI.03\":{\"n\":\"Municipality of Bled\",\"cc\":\"SI\"},\"SI.61\":{\"n\":\"Ljubljana\",\"cc\":\"SI\"},\"ZA.03\":{\"n\":\"Free State\",\"cc\":\"ZA\"},\"ZA.11\":{\"n\":\"Western Cape\",\"cc\":\"ZA\"},\"ZA.02\":{\"n\":\"KwaZulu-Natal\",\"cc\":\"ZA\"},\"ZA.06\":{\"n\":\"Gauteng\",\"cc\":\"ZA\"},\"KR.10\":{\"n\":\"Busan\",\"cc\":\"KR\"},\"KR.15\":{\"n\":\"Daegu\",\"cc\":\"KR\"},\"KR.19\":{\"n\":\"Daejeon\",\"cc\":\"KR\"},\"KR.14\":{\"n\":\"Gyeongsangbuk-do\",\"cc\":\"KR\"},\"KR.11\":{\"n\":\"Seoul\",\"cc\":\"KR\"},\"KR.13\":{\"n\":\"Gyeonggi-do\",\"cc\":\"KR\"},\"ES.58\":{\"n\":\"Galicia\",\"cc\":\"ES\"},\"ES.53\":{\"n\":\"Canary Islands\",\"cc\":\"ES\"},\"ES.54\":{\"n\":\"Castille-La Mancha\",\"cc\":\"ES\"},\"ES.29\":{\"n\":\"Madrid\",\"cc\":\"ES\"},\"ES.51\":{\"n\":\"Andalusia\",\"cc\":\"ES\"},\"ES.60\":{\"n\":\"Valencia\",\"cc\":\"ES\"},\"ES.55\":{\"n\":\"Castille and León\",\"cc\":\"ES\"},\"ES.34\":{\"n\":\"Asturias\",\"cc\":\"ES\"},\"ES.57\":{\"n\":\"Extremadura\",\"cc\":\"ES\"},\"ES.59\":{\"n\":\"Basque Country\",\"cc\":\"ES\"},\"ES.31\":{\"n\":\"Murcia\",\"cc\":\"ES\"},\"ES.52\":{\"n\":\"Aragon\",\"cc\":\"ES\"},\"ES.07\":{\"n\":\"Balearic Islands\",\"cc\":\"ES\"},\"ES.27\":{\"n\":\"La Rioja\",\"cc\":\"ES\"},\"ES.32\":{\"n\":\"Navarre\",\"cc\":\"ES\"},\"ES.39\":{\"n\":\"Cantabria\",\"cc\":\"ES\"},\"LK.36\":{\"n\":\"Western Province\",\"cc\":\"LK\"},\"LK.29\":{\"n\":\"Central Province\",\"cc\":\"LK\"},\"SE.28\":{\"n\":\"Västra Götaland\",\"cc\":\"SE\"},\"SE.27\":{\"n\":\"Skåne\",\"cc\":\"SE\"},\"SE.26\":{\"n\":\"Stockholm\",\"cc\":\"SE\"},\"SE.23\":{\"n\":\"Västerbotten\",\"cc\":\"SE\"},\"SE.21\":{\"n\":\"Uppsala\",\"cc\":\"SE\"},\"CH.TI\":{\"n\":\"Ticino\",\"cc\":\"CH\"},\"CH.BS\":{\"n\":\"Basel-City\",\"cc\":\"CH\"},\"CH.BE\":{\"n\":\"Bern\",\"cc\":\"CH\"},\"CH.FR\":{\"n\":\"Fribourg\",\"cc\":\"CH\"},\"CH.GE\":{\"n\":\"Geneva\",\"cc\":\"CH\"},\"CH.VD\":{\"n\":\"Vaud\",\"cc\":\"CH\"},\"CH.LU\":{\"n\":\"Lucerne\",\"cc\":\"CH\"},\"CH.GR\":{\"n\":\"Grisons\",\"cc\":\"CH\"},\"CH.SG\":{\"n\":\"Saint Gallen\",\"cc\":\"CH\"},\"CH.ZH\":{\"n\":\"Zurich\",\"cc\":\"CH\"},\"TW.02\":{\"n\":\"Takao\",\"cc\":\"TW\"},\"TW.04\":{\"n\":\"Taiwan\",\"cc\":\"TW\"},\"TZ.26\":{\"n\":\"Arusha\",\"cc\":\"TZ\"},\"TZ.23\":{\"n\":\"Dar es Salaam Region\",\"cc\":\"TZ\"},\"TZ.25\":{\"n\":\"Zanzibar Urban/West\",\"cc\":\"TZ\"},\"TH.40\":{\"n\":\"Bangkok\",\"cc\":\"TH\"},\"TH.02\":{\"n\":\"Chiang Mai\",\"cc\":\"TH\"},\"TH.03\":{\"n\":\"Chiang Rai\",\"cc\":\"TH\"},\"TH.68\":{\"n\":\"Songkhla\",\"cc\":\"TH\"},\"TH.57\":{\"n\":\"Prachuap Khiri Khan\",\"cc\":\"TH\"},\"TH.46\":{\"n\":\"Chon Buri\",\"cc\":\"TH\"},\"TH.62\":{\"n\":\"Phuket\",\"cc\":\"TH\"},\"TN.36\":{\"n\":\"Tunis Governorate\",\"cc\":\"TN\"},\"TR.81\":{\"n\":\"Adana\",\"cc\":\"TR\"},\"TR.07\":{\"n\":\"Antalya\",\"cc\":\"TR\"},\"TR.68\":{\"n\":\"Ankara\",\"cc\":\"TR\"},\"TR.16\":{\"n\":\"Bursa Province\",\"cc\":\"TR\"},\"TR.59\":{\"n\":\"Tekirdağ\",\"cc\":\"TR\"},\"TR.20\":{\"n\":\"Denizli\",\"cc\":\"TR\"},\"TR.21\":{\"n\":\"Diyarbakır Province\",\"cc\":\"TR\"},\"TR.22\":{\"n\":\"Edirne\",\"cc\":\"TR\"},\"TR.25\":{\"n\":\"Erzurum\",\"cc\":\"TR\"},\"TR.26\":{\"n\":\"Eskişehir\",\"cc\":\"TR\"},\"TR.83\":{\"n\":\"Gaziantep\",\"cc\":\"TR\"},\"TR.34\":{\"n\":\"Istanbul\",\"cc\":\"TR\"},\"TR.35\":{\"n\":\"İzmir Province\",\"cc\":\"TR\"},\"TR.38\":{\"n\":\"Kayseri\",\"cc\":\"TR\"},\"TR.71\":{\"n\":\"Konya\",\"cc\":\"TR\"},\"TR.09\":{\"n\":\"Aydın\",\"cc\":\"TR\"},\"TR.48\":{\"n\":\"Muğla\",\"cc\":\"TR\"},\"TR.55\":{\"n\":\"Samsun\",\"cc\":\"TR\"},\"TR.61\":{\"n\":\"Trabzon\",\"cc\":\"TR\"},\"TR.17\":{\"n\":\"Canakkale\",\"cc\":\"TR\"},\"UA.01\":{\"n\":\"Cherkasy\",\"cc\":\"UA\"},\"UA.03\":{\"n\":\"Chernivtsi\",\"cc\":\"UA\"},\"AE.01\":{\"n\":\"Abu Dhabi\",\"cc\":\"AE\"},\"AE.02\":{\"n\":\"Ajman\",\"cc\":\"AE\"},\"AE.06\":{\"n\":\"Sharjah\",\"cc\":\"AE\"},\"GB.SCT\":{\"n\":\"Scotland\",\"cc\":\"GB\"},\"GB.NIR\":{\"n\":\"Northern Ireland\",\"cc\":\"GB\"},\"GB.WLS\":{\"n\":\"Wales\",\"cc\":\"GB\"},\"US.OH\":{\"n\":\"Ohio\",\"cc\":\"US\"},\"US.NM\":{\"n\":\"New Mexico\",\"cc\":\"US\"},\"US.VA\":{\"n\":\"Virginia\",\"cc\":\"US\"},\"US.GA\":{\"n\":\"Georgia\",\"cc\":\"US\"},\"US.PA\":{\"n\":\"Pennsylvania\",\"cc\":\"US\"},\"US.TX\":{\"n\":\"Texas\",\"cc\":\"US\"},\"US.IA\":{\"n\":\"Iowa\",\"cc\":\"US\"},\"US.CA\":{\"n\":\"California\",\"cc\":\"US\"},\"US.MI\":{\"n\":\"Michigan\",\"cc\":\"US\"},\"US.MD\":{\"n\":\"Maryland\",\"cc\":\"US\"},\"US.WI\":{\"n\":\"Wisconsin\",\"cc\":\"US\"},\"US.NC\":{\"n\":\"North Carolina\",\"cc\":\"US\"},\"US.NJ\":{\"n\":\"New Jersey\",\"cc\":\"US\"},\"US.AL\":{\"n\":\"Alabama\",\"cc\":\"US\"},\"US.CO\":{\"n\":\"Colorado\",\"cc\":\"US\"},\"US.LA\":{\"n\":\"Louisiana\",\"cc\":\"US\"},\"US.OR\":{\"n\":\"Oregon\",\"cc\":\"US\"},\"US.WA\":{\"n\":\"Washington\",\"cc\":\"US\"},\"US.AR\":{\"n\":\"Arkansas\",\"cc\":\"US\"},\"US.MT\":{\"n\":\"Montana\",\"cc\":\"US\"},\"US.MS\":{\"n\":\"Mississippi\",\"cc\":\"US\"},\"US.NY\":{\"n\":\"New York\",\"cc\":\"US\"},\"US.ND\":{\"n\":\"North Dakota\",\"cc\":\"US\"},\"US.IN\":{\"n\":\"Indiana\",\"cc\":\"US\"},\"US.FL\":{\"n\":\"Florida\",\"cc\":\"US\"},\"US.ID\":{\"n\":\"Idaho\",\"cc\":\"US\"},\"US.MA\":{\"n\":\"Massachusetts\",\"cc\":\"US\"},\"US.KY\":{\"n\":\"Kentucky\",\"cc\":\"US\"},\"US.MO\":{\"n\":\"Missouri\",\"cc\":\"US\"},\"US.TN\":{\"n\":\"Tennessee\",\"cc\":\"US\"},\"US.VT\":{\"n\":\"Vermont\",\"cc\":\"US\"},\"US.ME\":{\"n\":\"Maine\",\"cc\":\"US\"},\"US.WY\":{\"n\":\"Wyoming\",\"cc\":\"US\"},\"US.AZ\":{\"n\":\"Arizona\",\"cc\":\"US\"},\"US.SC\":{\"n\":\"South Carolina\",\"cc\":\"US\"},\"US.IL\":{\"n\":\"Illinois\",\"cc\":\"US\"},\"US.SD\":{\"n\":\"South Dakota\",\"cc\":\"US\"},\"US.HI\":{\"n\":\"Hawaii\",\"cc\":\"US\"},\"US.NV\":{\"n\":\"Nevada\",\"cc\":\"US\"},\"US.MN\":{\"n\":\"Minnesota\",\"cc\":\"US\"},\"US.RI\":{\"n\":\"Rhode Island\",\"cc\":\"US\"},\"US.OK\":{\"n\":\"Oklahoma\",\"cc\":\"US\"},\"US.NE\":{\"n\":\"Nebraska\",\"cc\":\"US\"},\"US.NH\":{\"n\":\"New Hampshire\",\"cc\":\"US\"},\"US.UT\":{\"n\":\"Utah\",\"cc\":\"US\"},\"US.CT\":{\"n\":\"Connecticut\",\"cc\":\"US\"},\"US.DC\":{\"n\":\"District of Columbia\",\"cc\":\"US\"},\"UY.10\":{\"n\":\"Montevideo Department\",\"cc\":\"UY\"},\"UY.09\":{\"n\":\"Maldonado\",\"cc\":\"UY\"},\"VE.25\":{\"n\":\"Distrito Federal\",\"cc\":\"VE\"},\"VE.07\":{\"n\":\"Carabobo\",\"cc\":\"VE\"},\"VN.92\":{\"n\":\"Can Tho City\",\"cc\":\"VN\"},\"VN.48\":{\"n\":\"Da Nang City\",\"cc\":\"VN\"},\"VN.68\":{\"n\":\"Lam Dong\",\"cc\":\"VN\"},\"VN.22\":{\"n\":\"Quảng Ninh\",\"cc\":\"VN\"},\"VN.01\":{\"n\":\"Hanoi\",\"cc\":\"VN\"},\"VN.79\":{\"n\":\"Ho Chi Minh City (HCMC)\",\"cc\":\"VN\"},\"VN.46\":{\"n\":\"Thừa Thiên Huế Province\",\"cc\":\"VN\"},\"VN.56\":{\"n\":\"Khanh Hoa\",\"cc\":\"VN\"},\"VN.52\":{\"n\":\"Gia Lai\",\"cc\":\"VN\"},\"GR.ESYE22\":{\"n\":\"Ionian Islands\",\"cc\":\"GR\"},\"GL.07\":{\"n\":\"Sermersooq\",\"cc\":\"GL\"},\"GR.ESYE21\":{\"n\":\"Epirus\",\"cc\":\"GR\"},\"FO.ST\":{\"n\":\"Streymoy\",\"cc\":\"FO\"},\"RO.23\":{\"n\":\"Iași County\",\"cc\":\"RO\"},\"GR.ESYE41\":{\"n\":\"North Aegean\",\"cc\":\"GR\"}}"),
 	k: {
@@ -34475,6 +34475,145 @@ var R$1 = {
 	_src: "GeoNames (CC BY 4.0): cities1000, admin1CodesASCII, countryInfo",
 	_built: "2026-11-26"
 };
+var DAYTRIPS = new Set({
+	_src: "live /day-trips index (Worker top3-live), read 26-nov-2026",
+	s: [
+		"amsterdam",
+		"antalya",
+		"antwerp",
+		"athens",
+		"bali",
+		"barcelona",
+		"basel",
+		"bath",
+		"beirut",
+		"belfast",
+		"berlin",
+		"bern",
+		"bilbao",
+		"bologna",
+		"bordeaux",
+		"boston",
+		"bratislava",
+		"bruges",
+		"brussels",
+		"bucharest",
+		"budapest",
+		"busan",
+		"cambridge",
+		"cannes",
+		"cardiff",
+		"cartagena",
+		"cascais",
+		"cologne",
+		"copenhagen",
+		"cordoba-spain",
+		"corfu",
+		"dresden",
+		"dublin-ireland",
+		"dubrovnik",
+		"dusseldorf",
+		"edinburgh",
+		"faro",
+		"florence",
+		"frankfurt",
+		"fukuoka",
+		"gdansk",
+		"geneva",
+		"ghent",
+		"glasgow",
+		"hamburg",
+		"heidelberg",
+		"helsinki",
+		"heraklion",
+		"hiroshima",
+		"ho-chi-minh-city",
+		"ibiza",
+		"innsbruck",
+		"interlaken",
+		"istanbul",
+		"jakarta",
+		"krakow",
+		"kuta",
+		"kyoto",
+		"lagos-portugal",
+		"larnaca",
+		"leipzig",
+		"limassol",
+		"lisbon",
+		"liverpool",
+		"ljubljana",
+		"london",
+		"los-angeles",
+		"lucerne",
+		"lyon",
+		"madrid",
+		"malaga",
+		"manchester",
+		"marseille",
+		"mexico-city",
+		"miami",
+		"milan",
+		"montreal",
+		"munich",
+		"naples",
+		"nara",
+		"new-york",
+		"nice",
+		"nicosia",
+		"nuremberg",
+		"orlando",
+		"osaka",
+		"oxford",
+		"paphos",
+		"paris",
+		"phnom-penh",
+		"porto",
+		"poznan",
+		"prague",
+		"rhodes",
+		"rome",
+		"rotterdam",
+		"salamanca",
+		"salzburg",
+		"san-diego",
+		"san-francisco",
+		"san-sebastian",
+		"sao-paulo",
+		"sarajevo",
+		"seattle",
+		"seminyak",
+		"seoul",
+		"seville",
+		"sintra",
+		"sofia",
+		"split-croatia",
+		"strasbourg",
+		"stuttgart",
+		"tallinn",
+		"the-hague",
+		"thessaloniki",
+		"tirana",
+		"tokyo",
+		"toledo",
+		"toronto",
+		"tulum",
+		"ubud",
+		"utrecht",
+		"valencia-spain",
+		"valletta",
+		"venice",
+		"verona",
+		"vienna",
+		"warsaw",
+		"wroclaw",
+		"yogyakarta",
+		"york",
+		"zagreb",
+		"zurich"
+	]
+}.s);
+var R$1 = regions_default;
 var slugify$1 = (s) => s.normalize("NFKD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 var MIN = 3;
 var members = /* @__PURE__ */ new Map();
@@ -34494,36 +34633,66 @@ var CONT = {
 	EU: {
 		s: "europe",
 		en: "Europe",
-		es: "Europa"
+		es: "Europa",
+		de: "Europa",
+		fr: "Europe",
+		it: "Europa",
+		pt: "Europa",
+		da: "Europa"
 	},
 	AS: {
 		s: "asia",
 		en: "Asia",
-		es: "Asia"
+		es: "Asia",
+		de: "Asien",
+		fr: "Asie",
+		it: "Asia",
+		pt: "Ásia",
+		da: "Asien"
 	},
 	NA: {
 		s: "north-america",
 		en: "North and Central America",
-		es: "Norteamérica y Centroamérica"
+		es: "Norteamérica y Centroamérica",
+		de: "Nord- und Mittelamerika",
+		fr: "Amérique du Nord et centrale",
+		it: "America settentrionale e centrale",
+		pt: "América do Norte e Central",
+		da: "Nord- og Mellemamerika"
 	},
 	SA: {
 		s: "south-america",
 		en: "South America",
-		es: "Sudamérica"
+		es: "Sudamérica",
+		de: "Südamerika",
+		fr: "Amérique du Sud",
+		it: "America meridionale",
+		pt: "América do Sul",
+		da: "Sydamerika"
 	},
 	AF: {
 		s: "africa",
 		en: "Africa",
-		es: "África"
+		es: "África",
+		de: "Afrika",
+		fr: "Afrique",
+		it: "Africa",
+		pt: "África",
+		da: "Afrika"
 	},
 	OC: {
 		s: "oceania",
 		en: "Oceania",
-		es: "Oceanía"
+		es: "Oceanía",
+		de: "Ozeanien",
+		fr: "Océanie",
+		it: "Oceania",
+		pt: "Oceânia",
+		da: "Oceanien"
 	}
 };
 var CONT_BY_SLUG = new Map(Object.entries(CONT).map(([k, v]) => [v.s, k]));
-var TX$5 = {
+var TX$6 = {
 	en: {
 		home: "Home",
 		regions: "Regions",
@@ -34569,9 +34738,133 @@ var TX$5 = {
 		ctitle: (c) => `Mejores hoteles en ${c}: países y ciudades`,
 		clead: (n, k) => `${k} ciudades en ${n} países, cada una con tres elecciones: económico, calidad-precio y lujo.`,
 		map: "Mapa de las ciudades (posición según sus coordenadas)"
+	},
+	de: {
+		home: "Startseite",
+		regions: "Regionen",
+		regionsLead: "Regionen mit drei oder mehr Städten, die wir abdecken, nach GeoNames (erste Verwaltungsebene).",
+		cont: "Kontinente",
+		cities: "Städte",
+		from: "Ab",
+		score: "Beste Gästebewertung",
+		pickB: "Budget",
+		pickV: "Bestes Preis-Leistungs-Verhältnis",
+		pickL: "Luxus",
+		src: "Regionen: GeoNames (CC BY 4.0), erste Verwaltungsebene jeder Stadt. Preise: niedrigster Referenzpreis pro Nacht der drei Empfehlungen (10. bis 12. November 2026, 2 Erwachsene).",
+		country: "Land",
+		median: "Median des Ab-Preises",
+		inRegion: (r) => `Weitere Städte in ${r}`,
+		byRegion: "Nach Region",
+		continents: "Nach Kontinent",
+		title: (r, c, n) => `Die besten Hotels in ${r}, ${c}: ${n} Städte im Vergleich`,
+		lead: (r, n) => `Unsere drei Hotels in jeder der ${n} Städte in ${r}: Budget, bestes Preis-Leistungs-Verhältnis und Luxus, mit Referenzpreisen und Gästebewertungen.`,
+		ctitle: (c) => `Die besten Hotels in ${c}: Länder und Städte`,
+		clead: (n, k) => `${k} Städte in ${n} Ländern, jede mit drei Empfehlungen: Budget, bestes Preis-Leistungs-Verhältnis und Luxus.`,
+		map: "Karte der Städte (Lage nach Koordinaten)"
+	},
+	fr: {
+		home: "Accueil",
+		regions: "Régions",
+		regionsLead: "Régions comptant trois villes couvertes ou plus, selon GeoNames (premier niveau administratif).",
+		cont: "Continents",
+		cities: "Villes",
+		from: "À partir de",
+		score: "Meilleure note",
+		pickB: "Petit budget",
+		pickV: "Meilleur rapport qualité-prix",
+		pickL: "Luxe",
+		src: "Régions : GeoNames (CC BY 4.0), premier niveau administratif de chaque ville. Prix : prix de référence le plus bas par nuit parmi les trois choix (10 au 12 novembre 2026, 2 adultes).",
+		country: "Pays",
+		median: "Prix « à partir de » médian",
+		inRegion: (r) => `Autres villes : ${r}`,
+		byRegion: "Par région",
+		continents: "Par continent",
+		title: (r, c, n) => `Meilleurs hôtels : ${r}, ${c} (${n} villes comparées)`,
+		lead: (r, n) => `Les trois hôtels que nous choisissons dans chacune des ${n} villes couvertes (${r}) : petit budget, meilleur rapport qualité-prix et luxe, avec prix de référence et notes.`,
+		ctitle: (c) => `Meilleurs hôtels : ${c}, pays et villes`,
+		clead: (n, k) => `${k} villes dans ${n} pays, chacune avec trois choix : petit budget, meilleur rapport qualité-prix et luxe.`,
+		map: "Carte des villes (position selon leurs coordonnées)"
+	},
+	it: {
+		home: "Home",
+		regions: "Regioni",
+		regionsLead: "Regioni con tre o più città coperte, secondo GeoNames (primo livello amministrativo).",
+		cont: "Continenti",
+		cities: "Città",
+		from: "Da",
+		score: "Miglior voto",
+		pickB: "Economico",
+		pickV: "Miglior rapporto qualità-prezzo",
+		pickL: "Lusso",
+		src: "Regioni: GeoNames (CC BY 4.0), primo livello amministrativo di ogni città. Prezzi: prezzo di riferimento più basso a notte tra le tre scelte (10-12 novembre 2026, 2 adulti).",
+		country: "Paese",
+		median: "Prezzo 'da' mediano",
+		inRegion: (r) => `Altre città: ${r}`,
+		byRegion: "Per regione",
+		continents: "Per continente",
+		title: (r, c, n) => `I migliori hotel: ${r}, ${c} (${n} città a confronto)`,
+		lead: (r, n) => `I tre hotel che scegliamo in ognuna delle ${n} città coperte (${r}): economico, miglior rapporto qualità-prezzo e lusso, con prezzi di riferimento e voti.`,
+		ctitle: (c) => `I migliori hotel: ${c}, paesi e città`,
+		clead: (n, k) => `${k} città in ${n} paesi, ognuna con tre scelte: economico, miglior rapporto qualità-prezzo e lusso.`,
+		map: "Mappa delle città (posizione secondo le coordinate)"
+	},
+	pt: {
+		home: "Início",
+		regions: "Regiões",
+		regionsLead: "Regiões com três ou mais cidades cobertas, segundo o GeoNames (primeiro nível administrativo).",
+		cont: "Continentes",
+		cities: "Cidades",
+		from: "Desde",
+		score: "Melhor nota",
+		pickB: "Económico",
+		pickV: "Melhor relação qualidade-preço",
+		pickL: "Luxo",
+		src: "Regiões: GeoNames (CC BY 4.0), primeiro nível administrativo de cada cidade. Preços: preço de referência mais baixo por noite entre as três escolhas (10 a 12 de novembro de 2026, 2 adultos).",
+		country: "País",
+		median: "Preço 'desde' mediano",
+		inRegion: (r) => `Mais cidades: ${r}`,
+		byRegion: "Por região",
+		continents: "Por continente",
+		title: (r, c, n) => `Melhores hotéis: ${r}, ${c} (${n} cidades comparadas)`,
+		lead: (r, n) => `Os três hotéis que escolhemos em cada uma das ${n} cidades cobertas (${r}): económico, melhor relação qualidade-preço e luxo, com preços de referência e notas.`,
+		ctitle: (c) => `Melhores hotéis: ${c}, países e cidades`,
+		clead: (n, k) => `${k} cidades em ${n} países, cada uma com três escolhas: económico, melhor relação qualidade-preço e luxo.`,
+		map: "Mapa das cidades (posição segundo as coordenadas)"
+	},
+	da: {
+		home: "Forside",
+		regions: "Regioner",
+		regionsLead: "Regioner med tre eller flere byer, vi dækker, ifølge GeoNames (første administrative niveau).",
+		cont: "Kontinenter",
+		cities: "Byer",
+		from: "Fra",
+		score: "Bedste gæstekarakter",
+		pickB: "Budget",
+		pickV: "Bedste værdi",
+		pickL: "Luksus",
+		src: "Regioner: GeoNames (CC BY 4.0), første administrative niveau for hver by. Priser: laveste referencepris pr. nat blandt de tre valg (10. til 12. november 2026, 2 voksne).",
+		country: "Land",
+		median: "Median for fra-prisen",
+		inRegion: (r) => `Flere byer i ${r}`,
+		byRegion: "Efter region",
+		continents: "Efter kontinent",
+		title: (r, c, n) => `De bedste hoteller i ${r}, ${c}: ${n} byer sammenlignet`,
+		lead: (r, n) => `De tre hoteller, vi vælger i hver af de ${n} byer i ${r}: budget, bedste værdi og luksus, med referencepriser og gæstekarakterer.`,
+		ctitle: (c) => `De bedste hoteller i ${c}: lande og byer`,
+		clead: (n, k) => `${k} byer i ${n} lande, hver med tre valg: budget, bedste værdi og luksus.`,
+		map: "Kort over byerne (placering efter koordinater)"
 	}
 };
-var tl = (L) => L === "es" ? "es" : "en";
+var DTH = {
+	en: "Day trips from these cities",
+	es: "Excursiones de un día desde estas ciudades (en inglés)",
+	de: "Tagesausflüge ab diesen Städten (auf Englisch)",
+	fr: "Excursions d'une journée depuis ces villes (en anglais)",
+	it: "Gite di un giorno da queste città (in inglese)",
+	pt: "Passeios de um dia a partir destas cidades (em inglês)",
+	da: "Dagsture fra disse byer (på engelsk)"
+};
+var tl = (L) => L;
 var PL = (L, p) => P(tl(L), p);
 var ctryName = (cc, L, fb) => {
 	try {
@@ -34600,13 +34893,26 @@ function regionOf(citySlug) {
 		key: k
 	} : null;
 }
+/** helpers for t12b.ts */
+var T12 = {
+	R: R$1,
+	members,
+	REG,
+	SLUG,
+	CONT,
+	fromD,
+	median,
+	ctryName,
+	svgMap: (pts, label) => svgMap(pts, label),
+	tx: (L) => TX$6[L]
+};
 /** T12.13: "More cities in <region>" for the city page. */
 async function regionLine(citySlug, L) {
 	const r = regionOf(citySlug);
 	if (!r) return "";
 	const { bySlug } = await data();
 	const others = members.get(r.key).filter((s) => s !== citySlug).map((s) => bySlug.get(s)).filter(Boolean).sort((a, b) => (b.pop ?? 0) - (a.pop ?? 0)).slice(0, 8);
-	return `<section><h2>${esc(TX$5[tl(L)].inRegion(r.name))}</h2><ul class="grid">${others.map((c) => `<li><a href="${P(L, "/" + c.slug)}">${esc(cityName(c, L))}</a></li>`).join("")}<li><a href="${PL(L, "/regions/" + r.slug)}"><b>${esc(r.name)}</b> →</a></li></ul></section>`;
+	return `<section><h2>${esc(TX$6[tl(L)].inRegion(r.name))}</h2><ul class="grid">${others.map((c) => `<li><a href="${P(L, "/" + c.slug)}">${esc(cityName(c, L))}</a></li>`).join("")}<li><a href="${PL(L, "/regions/" + r.slug)}"><b>${esc(r.name)}</b> →</a></li></ul></section>`;
 }
 /** T12.7: "By region" block on the country page. */
 function countryRegions(cc, L) {
@@ -34617,11 +34923,11 @@ function countryRegions(cc, L) {
 		m: members.get(k).length
 	})).sort((a, b) => b.m - a.m);
 	if (!rs.length) return "";
-	return `<section><h2>${esc(TX$5[tl(L)].byRegion)}</h2><ul class="grid">${rs.map((r) => `<li><a href="${PL(L, "/regions/" + r.s)}">${esc(r.n)} <span>(${r.m})</span></a></li>`).join("")}</ul></section>`;
+	return `<section><h2>${esc(TX$6[tl(L)].byRegion)}</h2><ul class="grid">${rs.map((r) => `<li><a href="${PL(L, "/regions/" + r.s)}">${esc(r.n)} <span>(${r.m})</span></a></li>`).join("")}</ul></section>`;
 }
 /** T12.17: continents and regions from /destinations. */
 function hubLinks(L) {
-	const x = TX$5[tl(L)];
+	const x = TX$6[tl(L)];
 	return `<section><h2>${esc(x.continents)}</h2><ul class="grid">${Object.values(CONT).map((c) => `<li><a href="${PL(L, "/continent/" + c.s)}">${esc(c[tl(L)])}</a></li>`).join("")}<li><a href="${PL(L, "/regions")}">${esc(x.regions)} →</a></li></ul></section>`;
 }
 function svgMap(pts, label) {
@@ -34642,7 +34948,7 @@ function svgMap(pts, label) {
 async function regionPage(slug, L) {
 	const key = REG.get(slug);
 	if (!key) return null;
-	const x = TX$5[tl(L)];
+	const x = TX$6[tl(L)];
 	const reg = R$1.r[key];
 	const { bySlug } = await data();
 	const cs = members.get(key).map((s) => bySlug.get(s)).filter((c) => !!c).sort((a, b) => (b.pop ?? 0) - (a.pop ?? 0));
@@ -34651,11 +34957,20 @@ async function regionPage(slug, L) {
 		c,
 		d: await cityData(c.id).catch(() => null)
 	})));
+	const hrefs = new Map(await Promise.all(rows.flatMap(({ c, d }) => (d?.hotels ?? []).map(async (h) => [c.slug + "|" + h.name, await hotelHref(h.name, c.slug, L)]))));
 	const cat = (hs, k) => hs?.find((h) => h.category === k);
 	const table = `<div class="tablewrap" style="overflow-x:auto"><table><thead><tr><th scope="col">${esc(x.cities)}</th><th scope="col">${esc(x.from)}</th><th scope="col">${esc(x.pickB)}</th><th scope="col">${esc(x.pickV)}</th><th scope="col">${esc(x.pickL)}</th><th scope="col">${esc(x.score)}</th></tr></thead><tbody>${rows.map(({ c, d }) => {
 		const hs = d?.hotels;
 		const best = Math.max(...(hs ?? []).map((h) => h.booking?.score ?? 0));
-		return `<tr><th scope="row"><a href="${P(L, "/" + c.slug)}">${esc(cityName(c, L))}</a></th><td>${fromD(hs) != null ? money(fromD(hs)) : "–"}</td><td>${esc(cat(hs, "Budget")?.name ?? "–")}</td><td>${esc(cat(hs, "Best Value")?.name ?? "–")}</td><td>${esc(cat(hs, "Luxury")?.name ?? "–")}</td><td>${best ? best.toFixed(1) : "–"}</td></tr>`;
+		return `<tr><th scope="row"><a href="${P(L, "/" + c.slug)}">${esc(cityName(c, L))}</a></th><td>${fromD(hs) != null ? money(fromD(hs)) : "–"}</td>${[
+			"Budget",
+			"Best Value",
+			"Luxury"
+		].map((k) => {
+			const n = cat(hs, k)?.name;
+			const h = n ? hrefs.get(c.slug + "|" + n) : null;
+			return `<td>${n ? h ? `<a href="${h}">${esc(n)}</a>` : esc(n) : "–"}</td>`;
+		}).join("")}<td>${best ? best.toFixed(1) : "–"}</td></tr>`;
 	}).join("")}</tbody></table></div>`;
 	const ck = R$1.k[reg.cc];
 	const others = [...REG.entries()].filter(([s, k]) => s !== slug && R$1.r[k].cc === reg.cc).slice(0, 12);
@@ -34668,41 +34983,67 @@ ${svgMap(cs.map((c) => ({
 		href: P(L, "/" + c.slug)
 	})), x.map)}
 ${table}<p class="note">${esc(x.src)}</p>
+${((dt) => dt.length ? `<section><h2>${esc(DTH[L] ?? DTH.en)}</h2><ul class="grid">${dt.map((c) => `<li><a href="/day-trips/${c.slug}">${esc(cityName(c, L))}</a></li>`).join("")}</ul></section>` : "")(cs.filter((c) => DAYTRIPS.has(c.slug)))}
 ${others.length ? `<section><h2>${esc(x.byRegion)}: ${esc(cn)}</h2><ul class="grid">${others.map(([s, k]) => `<li><a href="${PL(L, "/regions/" + s)}">${esc(R$1.r[k].n)}</a></li>`).join("")}</ul></section>` : ""}`;
-	const ld = [{
-		"@context": "https://schema.org",
-		"@type": "BreadcrumbList",
-		itemListElement: [
-			{
-				"@type": "ListItem",
-				position: 1,
-				name: "Top3Hotels",
-				item: SITE + PL(L, "/")
-			},
-			{
-				"@type": "ListItem",
-				position: 2,
+	const ld = [
+		{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			itemListElement: [
+				{
+					"@type": "ListItem",
+					position: 1,
+					name: "Top3Hotels",
+					item: SITE + PL(L, "/")
+				},
+				{
+					"@type": "ListItem",
+					position: 2,
+					name: cn,
+					item: SITE + P(L, "/country/" + cs[0].cslug)
+				},
+				{
+					"@type": "ListItem",
+					position: 3,
+					name: reg.n,
+					item: SITE + PL(L, "/regions/" + slug)
+				}
+			]
+		},
+		{
+			"@context": "https://schema.org",
+			"@type": "AdministrativeArea",
+			"@id": `${SITE}/regions/${slug}#place`,
+			name: reg.n,
+			containedInPlace: {
+				"@type": "Country",
 				name: cn,
-				item: SITE + P(L, "/country/" + cs[0].cslug)
+				identifier: reg.cc
 			},
-			{
+			url: SITE + PL(L, "/regions/" + slug),
+			containsPlace: cs.map((c) => ({
+				"@type": "City",
+				name: cityName(c, L),
+				url: SITE + P(L, "/" + c.slug),
+				geo: {
+					"@type": "GeoCoordinates",
+					latitude: c.lat,
+					longitude: c.lng
+				}
+			}))
+		},
+		{
+			"@context": "https://schema.org",
+			"@type": "ItemList",
+			name: x.title(reg.n, cn, cs.length),
+			itemListElement: cs.map((c, i) => ({
 				"@type": "ListItem",
-				position: 3,
-				name: reg.n,
-				item: SITE + PL(L, "/regions/" + slug)
-			}
-		]
-	}, {
-		"@context": "https://schema.org",
-		"@type": "ItemList",
-		name: x.title(reg.n, cn, cs.length),
-		itemListElement: cs.map((c, i) => ({
-			"@type": "ListItem",
-			position: i + 1,
-			name: c.city,
-			url: SITE + P(L, "/" + c.slug)
-		}))
-	}];
+				position: i + 1,
+				name: cityName(c, L),
+				url: SITE + P(L, "/" + c.slug)
+			}))
+		}
+	];
 	return page({
 		L,
 		title: `${x.title(reg.n, cn, cs.length)} | Top3Hotels`,
@@ -34710,11 +35051,11 @@ ${others.length ? `<section><h2>${esc(x.byRegion)}: ${esc(cn)}</h2><ul class="gr
 		path: "/regions/" + slug,
 		body,
 		ld,
-		alts: ["en", "es"]
+		langs: true
 	});
 }
 async function regionsIndex(L) {
-	const x = TX$5[tl(L)];
+	const x = TX$6[tl(L)];
 	const byCC = /* @__PURE__ */ new Map();
 	for (const [s, k] of REG) byCC.set(R$1.r[k].cc, [...byCC.get(R$1.r[k].cc) ?? [], [s, k]]);
 	const blocks = [...byCC.entries()].map(([cc, rs]) => ({
@@ -34731,13 +35072,13 @@ ${hubLinks(L)}<p class="note">${esc(x.src)}</p>`;
 		description: x.regionsLead,
 		path: "/regions",
 		body,
-		alts: ["en", "es"]
+		langs: true
 	});
 }
 async function continentPage(cs, L) {
 	const ck = CONT_BY_SLUG.get(cs);
 	if (!ck) return null;
-	const x = TX$5[tl(L)];
+	const x = TX$6[tl(L)];
 	const { index } = await data();
 	const list = index.filter((c) => c.cc && R$1.k[c.cc] === ck);
 	const byC = /* @__PURE__ */ new Map();
@@ -34786,7 +35127,7 @@ ${hubLinks(L)}<p class="note">${esc(x.src)}</p>`;
 		path: "/continent/" + cs,
 		body,
 		ld,
-		alts: ["en", "es"]
+		langs: true
 	});
 }
 async function regionJson(slug) {
@@ -34825,7 +35166,6 @@ async function regionJson(slug) {
 	} });
 }
 function t12Paths(L) {
-	if (L !== "en" && L !== "es") return [];
 	return [
 		"/regions",
 		...[...REG.keys()].map((s) => "/regions/" + s),
@@ -34843,11 +35183,2045 @@ async function handleT12(p) {
 	const m = p.match(/^(?:\/(es|de|fr|it|pt|da))?\/(regions|continent)(?:\/([a-z0-9-]+))?$/);
 	if (!m) return null;
 	const L = m[1] ?? "en";
-	if (L !== "en" && L !== "es") return Response.redirect(`${SITE}/${m[2]}${m[3] ? "/" + m[3] : ""}`, 301);
 	if (m[2] === "regions" && !m[3]) return html(await regionsIndex(L));
 	if (m[2] === "continent" && !m[3]) return Response.redirect(`${SITE}${P(L, "/regions")}`, 301);
 	const out = m[2] === "regions" ? await regionPage(m[3], L) : await continentPage(m[3], L);
 	return out ? html(out) : null;
+}
+var GEO$1 = {
+	c: /* @__PURE__ */ JSON.parse("{\"rome\":[20,2318895,25.1],\"paris\":[42,2138551,149.1],\"london-canada\":[252,422324,null],\"london\":[25,8961989,36.1],\"barcelona\":[15,1686208,3.2],\"tokyo\":[44,9733276,6.5],\"dubai\":[24,3790000,3.3],\"sarande\":[23,22613,0.2],\"tirana\":[113,418495,26.2],\"andorra-la-vella\":[1037,20430,124.5],\"bahia-blanca\":[20,299101,11.0],\"buenos-aires\":[31,2891082,2.3],\"cordoba-argentina\":[378,2106734,null],\"mendoza\":[853,114893,null],\"salta\":[1054,520683,null],\"san-carlos-de-bariloche\":[839,95394,87.2],\"santa-fe-argentina\":[21,391164,null],\"ushuaia\":[6,56825,0.1],\"yerevan\":[1002,1144700,null],\"adelaide\":[59,1469163,9.7],\"brisbane\":[27,2780063,15.8],\"cairns\":[7,153075,1.5],\"canberra\":[571,367752,107.4],\"darwin\":[31,139902,0.2],\"geelong\":[23,282809,0.5],\"gold-coast\":[12,640778,1.8],\"hobart\":[19,254930,0.7],\"melbourne-australia\":[25,5435590,5.9],\"newcastle-australia\":[48,508437,1.8],\"perth\":[34,2384371,11.2],\"sydney\":[58,5638830,3.0],\"townsville\":[15,201313,0.7],\"bad-hofgastein\":[836,2879,154.8],\"bad-ischl\":[470,1838,null],\"bregenz\":[405,28907,null],\"graz\":[362,303270,null],\"innsbruck\":[570,19966,null],\"kitzbuhel\":[751,8284,193.8],\"klagenfurt\":[450,100316,107.3],\"linz\":[266,214272,null],\"salzburg\":[424,157834,null],\"seefeld-in-tirol\":[1180,3648,null],\"vienna\":[171,1691468,null],\"villach\":[494,58882,93.2],\"wels\":[317,18110,null],\"zell-am-see\":[764,7446,173.6],\"baku\":[-23,2351300,3.0],\"sheki\":[549,68400,128.1],\"manama\":[12,147074,0.0],\"bridgetown\":[10,98511,0.9],\"aalst\":[12,77534,40.8],\"antwerp\":[13,529247,9.6],\"blankenberge\":[6,18000,1.5],\"bruges\":[13,118509,14.8],\"brussels\":[28,1019022,46.7],\"ghent\":[10,265086,33.5],\"hasselt\":[42,77651,81.0],\"knokke-heist\":[5,33781,1.7],\"kortrijk\":[22,73879,52.2],\"leuven\":[28,101032,52.1],\"liege\":[66,195278,113.1],\"mechelen\":[8,77530,29.8],\"namur\":[88,110939,98.3],\"ostend\":[6,69011,1.5],\"spa\":[312,10756,139.4],\"cotonou\":[7,679012,1.5],\"cochabamba\":[2537,841276,null],\"la-paz-bolivia\":[3782,2004652,null],\"sucre\":[2798,224838,null],\"banja-luka\":[151,221106,143.0],\"mostar\":[66,104518,42.5],\"sarajevo\":[509,696731,118.3],\"gaborone\":[1011,246325,null],\"balneario-camboriu\":[12,139155,0.6],\"barueri\":[729,316473,62.0],\"bauru\":[530,392947,null],\"belem\":[15,1499641,1.0],\"belo-horizonte\":[888,2721564,null],\"bento-goncalves\":[673,127977,94.3],\"blumenau\":[20,361261,44.1],\"boa-vista\":[82,419652,null],\"brasilia\":[1136,2207718,null],\"caldas-novas\":[695,98622,null],\"campinas\":[686,1031554,127.4],\"campo-grande\":[592,906092,null],\"campos-do-jordao\":[1603,52405,93.2],\"canela\":[826,45488,83.9],\"caraguatatuba\":[2,123389,0.3],\"caxias-do-sul\":[787,479599,93.3],\"cuiaba\":[193,618124,null],\"curitiba\":[924,1948626,54.6],\"florianopolis\":[26,508826,5.2],\"fortaleza\":[18,2400000,0.5],\"foz-do-iguacu\":[179,297352,null],\"ouro-preto\":[1201,77914,null],\"presidente-prudente\":[462,234706,null],\"recife\":[8,1653461,1.1],\"rio-branco\":[153,419452,null],\"rio-de-janeiro\":[12,6747815,2.1],\"salvador\":[4,2711840,3.6],\"sao-paulo\":[769,12400232,44.3],\"bandar-seri-begawan\":[10,64409,6.6],\"burgas\":[36,210646,0.5],\"plovdiv\":[163,329489,128.6],\"sofia\":[562,1152556,null],\"varna\":[83,318737,0.5],\"battambang\":[18,119251,115.8],\"phnom-penh\":[20,1573544,132.9],\"siem-reap\":[18,139458,185.3],\"sihanoukville\":[6,73036,2.5],\"yaounde\":[726,1299369,187.7],\"airdrie\":[1086,90044,null],\"banff\":[1388,8305,null],\"boucherville\":[16,39062,4.4],\"brossard\":[17,69575,4.0],\"burnaby\":[87,249125,5.2],\"calgary\":[1048,1306784,null],\"charlottetown\":[14,38809,0.3],\"chatham\":[183,43550,null],\"chilliwack\":[11,101491,59.1],\"fredericton\":[110,63116,74.6],\"halifax\":[60,471559,1.7],\"hamilton\":[95,569353,null],\"kelowna\":[350,144576,null],\"kingston-canada\":[70,132485,163.7],\"montreal\":[216,1762949,3.9],\"niagara-falls\":[184,99818,null],\"north-vancouver\":[68,88168,0.9],\"ottawa\":[71,1017449,89.1],\"quebec-city\":[54,531902,1.2],\"regina\":[577,226404,null],\"saskatoon\":[484,266141,null],\"st-john-s\":[35,110525,1.6],\"toronto\":[92,2794356,null],\"vancouver-canada\":[70,662248,0.6],\"victoria\":[18,289625,1.2],\"whistler\":[673,8713,48.0],\"windsor-canada\":[190,229660,null],\"winnipeg\":[245,749607,null],\"arica\":[80,241653,0.8],\"concepcion\":[36,223574,8.1],\"puerto-varas\":[60,37561,18.0],\"punta-arenas\":[null,117430,1.2],\"santiago\":[556,4837295,95.7],\"beijing\":[49,18960744,142.3],\"chengdu\":[499,20937757,null],\"chongqing\":[289,22000000,null],\"dalian\":[33,7450785,0.3],\"guangzhou\":[15,18676605,11.3],\"guilin\":[141,1572300,null],\"hangzhou\":[12,11936010,4.6],\"harbin\":[140,10009854,null],\"kunming\":[1895,5950578,null],\"lijiang\":[2397,211151,null],\"nanjing\":[22,9314685,78.6],\"qingdao\":[16,7172451,1.8],\"shanghai\":[12,24874500,18.1],\"shenzhen\":[4,17494398,6.4],\"suzhou\":[10,6715559,56.4],\"xian\":[416,12952907,null],\"yangshuo\":[116,300000,null],\"yantai\":[22,7102100,3.9],\"barranquilla\":[24,1206319,7.3],\"bogota\":[2582,7674366,null],\"cali\":[758,2392877,68.8],\"medellin\":[1405,1999979,191.4],\"santa-marta\":[14,499192,1.6],\"alajuela\":[955,47494,53.7],\"san-jose-costa-rica\":[1133,335007,52.0],\"dubrovnik\":[9,26922,0.2],\"makarska\":[3,12809,0.2],\"opatija\":[32,5701,0.2],\"osijek\":[87,75535,null],\"porec\":[4,8841,0.2],\"pula\":[11,52220,0.7],\"rovinj\":[10,11629,0.6],\"split\":[12,149830,0.4],\"trogir\":[20,10107,0.9],\"vodice\":[13,6592,0.2],\"zadar\":[2,67309,0.5],\"zagreb\":[135,663592,118.6],\"sibenik\":[16,31115,2.1],\"larnaca\":[24,72000,0.3],\"limassol\":[27,154000,0.1],\"nicosia\":[155,200452,18.6],\"paphos\":[81,35961,0.5],\"brno\":[226,404296,null],\"ceske-budejovice\":[381,93426,null],\"olomouc\":[223,99496,null],\"prague\":[202,1165581,null],\"aalborg\":[10,142937,1.4],\"aarhus\":[10,285273,1.1],\"copenhagen\":[14,1153615,0.5],\"odense\":[17,180863,5.7],\"santo-domingo\":[24,2201941,0.9],\"cuenca-ecuador\":[2484,636996,86.8],\"quito\":[2854,2781641,157.8],\"aswan\":[99,379774,null],\"cairo\":[23,9606916,119.8],\"hurghada\":[11,207132,0.7],\"luxor\":[89,422407,171.0],\"sharm-el-sheikh\":[11,38478,1.2],\"tallinn\":[12,394024,0.9],\"tartu\":[39,91407,119.6],\"addis-ababa\":[2405,3860000,null],\"nadi\":[9,42284,1.2],\"suva\":[null,77366,1.6],\"helsinki\":[26,658864,1.4],\"oulu\":[15,216066,2.1],\"rovaniemi\":[90,65670,81.7],\"tampere\":[114,260646,108.6],\"turku\":[22,206655,4.7],\"vaasa\":[7,69819,1.9],\"aix-en-provence\":[205,146821,17.9],\"aix-les-bains\":[246,27651,null],\"ajaccio\":[0,54364,0.4],\"amboise\":[61,12685,null],\"amiens\":[28,143086,56.1],\"angers\":[42,168279,91.7],\"annecy\":[452,49232,null],\"antibes\":[1,76393,0.7],\"arcachon\":[5,12321,0.9],\"arles\":[24,53431,11.9],\"arras\":[73,47052,79.3],\"avignon\":[31,89769,42.0],\"bastia\":[1,41001,0.4],\"bayeux\":[52,15963,9.8],\"bayonne\":[6,44396,5.9],\"beaune\":[221,24162,null],\"besancon\":[300,128426,null],\"biarritz\":[39,33188,0.6],\"blois\":[109,53660,null],\"bordeaux\":[20,265328,6.8],\"bourges\":[144,67987,null],\"brest\":[49,144899,1.0],\"beziers\":[66,74081,12.0],\"caen\":[21,110624,15.3],\"cannes\":[0,74545,0.5],\"carcassonne\":[113,49600,60.9],\"cassis\":[17,8361,0.7],\"chalon-sur-saone\":[179,47251,null],\"chantilly\":[53,11085,124.8],\"chartres\":[158,43838,136.1],\"clermont-ferrand\":[406,147865,null],\"cognac\":[28,20868,43.5],\"colmar\":[193,65405,null],\"compiegne\":[42,44243,119.5],\"dax\":[16,22305,30.2],\"deauville\":[5,4677,0.3],\"dijon\":[240,159941,null],\"dinan\":[78,12237,8.0],\"dinard\":[28,11993,1.2],\"dunkerque\":[8,86263,2.3],\"grenoble\":[218,158552,189.4],\"honfleur\":[6,8148,0.9],\"hyeres\":[41,50487,2.2],\"la-baule\":[28,17775,0.1],\"la-rochelle\":[13,76810,0.4],\"le-havre\":[5,185972,0.2],\"le-mans\":[65,144515,135.1],\"le-puy-en-velay\":[640,22718,165.8],\"le-touquet-paris-plage\":[15,5696,1.8],\"les-sables-d-olonne\":[7,16105,0.2],\"lille\":[20,238695,62.7],\"limoges\":[309,141176,162.9],\"lourdes\":[409,15786,127.1],\"lyon\":[173,520774,null],\"marseille\":[28,877215,1.5],\"menton\":[17,29649,1.6],\"metz\":[182,123914,null],\"montpellier\":[55,248252,9.2],\"mulhouse\":[238,111430,null],\"nancy\":[212,105058,null],\"nantes\":[19,325070,13.2],\"narbonne\":[11,50776,9.9],\"nice\":[25,342669,0.6],\"nimes\":[57,148236,37.2],\"orleans\":[115,116344,null],\"pau\":[219,82697,95.2],\"perpignan\":[43,110706,11.8],\"poitiers\":[118,85960,116.5],\"porto-vecchio\":[16,11820,0.6],\"perigueux\":[101,34770,97.5],\"quimper\":[13,63849,7.7],\"reims\":[88,196565,199.5],\"rennes\":[39,227830,50.3],\"rochefort\":[15,29427,8.3],\"roscoff\":[6,3772,0.7],\"rouen\":[21,116331,43.9],\"royan\":[7,19017,0.3],\"saint-brieuc\":[96,52774,3.6],\"saint-jean-de-luz\":[8,14514,1.1],\"saint-malo\":[10,50676,1.0],\"saint-raphael\":[22,34918,1.2],\"saint-tropez\":[15,5939,0.4],\"sarlat-la-caneda\":[147,11126,135.1],\"strasbourg\":[147,274845,null],\"toulon\":[12,168701,0.7],\"toulouse\":[150,511684,146.5],\"tours\":[52,141621,182.8],\"trouville-sur-mer\":[5,5751,0.3],\"troyes\":[106,60785,null],\"valence\":[126,63864,149.1],\"vannes\":[20,54020,0.9],\"versailles\":[140,85416,141.2],\"vichy\":[266,27019,null],\"epinal\":[388,39518,null],\"evian-les-bains\":[388,8207,null],\"cayenne\":[7,61550,1.0],\"batumi\":[8,186949,0.8],\"tbilisi\":[433,1049498,null],\"aachen\":[266,265208,135.8],\"augsburg\":[489,301105,null],\"bad-homburg-vor-der-hohe\":[186,51859,null],\"baden-baden\":[169,56881,null],\"bayreuth\":[338,72940,null],\"berlin\":[74,3426354,143.8],\"bielefeld\":[111,331906,148.1],\"binz\":[5,5531,1.0],\"bonn\":[64,330579,null],\"bremen\":[17,546501,36.6],\"bremerhaven\":[2,118610,0.8],\"chemnitz\":[306,247220,null],\"cologne\":[58,1024621,187.3],\"cottbus\":[80,84754,null],\"darmstadt\":[148,167029,null],\"dortmund\":[96,588462,193.2],\"dresden\":[116,564904,null],\"duisburg\":[38,504358,169.3],\"dusseldorf\":[42,618685,170.8],\"eisenach\":[215,40747,null],\"emden\":[2,51526,3.2],\"erfurt\":[194,218793,null],\"essen\":[83,593085,184.7],\"flensburg\":[33,85838,1.6],\"frankfurt\":[113,650000,null],\"friedrichshafen\":[405,58403,null],\"fulda\":[265,63760,null],\"garmisch-partenkirchen\":[705,26022,null],\"gottingen\":[153,122149,null],\"hamburg\":[9,1973896,10.5],\"heidelberg\":[115,143345,null],\"heilbronn\":[173,120733,null],\"heringsdorf\":[13,3517,0.6],\"ingolstadt\":[379,120658,null],\"kaiserslautern\":[240,98732,null],\"karlsruhe\":[118,283799,null],\"kiel\":[7,252668,0.9],\"koblenz\":[75,107319,null],\"konstanz\":[402,81275,null],\"leipzig\":[116,504971,null],\"ludwigsburg\":[298,87603,null],\"ludwigshafen-am-rhein\":[97,163196,null],\"lubeck\":[16,212207,17.0],\"mainz\":[125,222889,null],\"mannheim\":[100,307960,null],\"munich\":[524,1505005,null],\"munster\":[64,308258,145.3],\"nuremberg\":[300,515543,null],\"oberstdorf\":[819,9279,null],\"offenbach\":[113,119192,null],\"osnabruck\":[65,166462,122.4],\"passau\":[366,50560,null],\"potsdam\":[34,184754,165.8],\"quedlinburg\":[123,23139,null],\"regensburg\":[341,151389,null],\"rostock\":[18,198293,1.3],\"saarbrucken\":[195,182971,null],\"schwerin\":[48,96641,31.3],\"stuttgart\":[252,612663,null],\"timmendorfer-strand\":[3,9127,0.9],\"titisee-neustadt\":[841,12019,null],\"travemunde\":[5,13902,0.7],\"tubingen\":[333,92322,null],\"ulm\":[480,120451,null],\"weimar\":[220,64727,null],\"wiesbaden\":[147,288850,null],\"wismar\":[1,45255,1.6],\"wolfsburg\":[65,123064,139.6],\"wurzburg\":[204,133731,null],\"accra\":[33,1963264,5.2],\"athens\":[70,664046,5.3],\"heraklion\":[60,137154,0.8],\"hersonissos\":[1,2968,2.5],\"ierapetra\":[9,12355,0.4],\"loutraki\":[11,11564,0.2],\"nafplio\":[5,14582,0.3],\"naxos-chora\":[32,7070,1.0],\"oia\":[128,1087,0.4],\"rethymno\":[14,32468,0.4],\"rhodes\":[36,56128,0.5],\"thessaloniki\":[null,317778,0.8],\"volos\":[52,86048,0.1],\"antigua-guatemala\":[1583,46054,69.7],\"georgetown\":[3,235017,1.4],\"comayagua\":[551,58784,110.5],\"hong-kong\":[60,7396076,0.2],\"budapest\":[104,1741041,null],\"debrecen\":[124,202402,null],\"miskolc\":[127,154521,null],\"sopron\":[217,62246,null],\"zalaegerszeg\":[167,61898,null],\"reykjavik\":[37,118918,1.4],\"agra\":[166,1430055,null],\"ahmedabad\":[56,6357693,75.4],\"amritsar\":[244,1159227,null],\"aurangabad\":[588,1175116,null],\"bhopal\":[523,1798218,null],\"bikaner\":[229,644406,null],\"chandigarh\":[351,970602,null],\"coimbatore\":[411,2136916,116.0],\"hyderabad\":[515,6993262,null],\"jaipur\":[435,3046163,null],\"jodhpur\":[237,1056191,null],\"kolkata\":[11,4631392,48.9],\"new-delhi\":[227,11034555,null],\"pune\":[554,3124458,85.5],\"shimla\":[2073,173503,null],\"siliguri\":[124,515574,null],\"udaipur\":[565,451100,null],\"varanasi\":[86,1164404,null],\"bali\":[7,22947,1.4],\"bandung\":[714,2528163,68.5],\"banyuwangi\":[24,117558,6.6],\"bekasi\":[18,2648272,18.0],\"bogor\":[245,1078351,53.3],\"canggu\":[52,30228,0.9],\"cirebon\":[8,344851,4.0],\"denpasar\":[33,670210,1.7],\"jakarta\":[16,8540121,8.0],\"jimbaran\":[60,1785,0.1],\"kuta\":[8,30012,1.5],\"legian\":[8,10000,0.9],\"lovina\":[5,10000,1.4],\"malang\":[452,889359,47.5],\"medan\":[26,2486283,16.8],\"munduk\":[1163,6200,9.4],\"nusa-dua\":[9,2500,0.0],\"nusa-lembongan\":[8,0,6.0],\"nusa-penida\":[8,0,0.8],\"sanur\":[10,14628,0.5],\"semarang\":[18,1694740,4.3],\"seminyak\":[8,10000,0.9],\"solo\":[100,526870,68.4],\"surabaya\":[8,3018022,3.6],\"ubud\":[210,74800,16.1],\"yogyakarta\":[110,375699,24.9],\"baghdad\":[41,7216000,null],\"cork\":[10,224004,2.1],\"dublin-ireland\":[17,1024027,2.9],\"galway\":[10,85910,1.4],\"tel-aviv\":[15,432892,0.6],\"abano-terme\":[14,18224,29.5],\"agrigento\":[230,32514,3.5],\"alba\":[172,24923,56.6],\"alessandria\":[95,92104,55.8],\"alghero\":[7,34261,0.3],\"amalfi\":[6,4933,0.4],\"ancona\":[16,89994,2.5],\"arezzo\":[296,100734,87.7],\"assisi\":[424,3732,87.2],\"asti\":[123,74348,67.8],\"bari\":[5,316491,1.2],\"benevento\":[135,58418,51.8],\"bergamo\":[249,121200,153.3],\"bologna\":[54,394843,74.3],\"bolzano\":[262,107436,133.6],\"brescia\":[149,200423,152.9],\"brindisi\":[13,87141,1.3],\"carpi\":[28,71148,103.8],\"caserta\":[68,72844,24.5],\"catania\":[7,311584,0.8],\"cattolica\":[12,16189,1.0],\"cefalu\":[16,11613,1.2],\"cesena\":[44,97137,14.9],\"cesenatico\":[2,18925,0.5],\"chianciano-terme\":[475,6162,76.4],\"como\":[201,84808,154.3],\"cosenza\":[238,63852,17.5],\"cremona\":[45,71223,107.0],\"cuneo\":[534,55980,63.5],\"desenzano-del-garda\":[67,22665,126.4],\"fano\":[12,60978,1.8],\"ferrara\":[9,132009,50.9],\"florence\":[50,367150,78.9],\"foggia\":[76,137032,29.0],\"foligno\":[234,56918,92.3],\"forli\":[34,116696,28.1],\"forte-dei-marmi\":[2,7656,0.4],\"gaeta\":[2,19936,0.5],\"gallipoli\":[12,19176,1.4],\"genoa\":[19,580097,0.4],\"grosseto\":[10,60922,11.1],\"gubbio\":[522,14378,65.3],\"imola\":[47,69953,47.0],\"imperia\":[10,42328,0.4],\"la-spezia\":[3,93288,0.6],\"lamezia-terme\":[165,70501,6.5],\"latina\":[21,76305,5.8],\"lecce\":[49,80695,11.1],\"livorno\":[3,157017,1.3],\"lucca\":[19,81748,16.1],\"marsala\":[12,77915,1.4],\"matera\":[401,60403,35.5],\"merano\":[325,41051,157.6],\"messina\":[3,219948,1.0],\"milan\":[122,1371498,118.8],\"modena\":[34,184732,95.8],\"modica\":[296,54456,14.2],\"monopoli\":[9,37738,0.6],\"montecatini-terme\":[29,17954,41.9],\"naples\":[17,909048,0.5],\"olbia\":[15,60345,0.2],\"oristano\":[9,31671,4.8],\"orvieto\":[325,5440,61.6],\"ostuni\":[218,24157,6.7],\"palermo\":[14,648260,1.8],\"parma\":[57,198292,85.9],\"perugia\":[493,120137,95.7],\"pesaro\":[11,77241,0.5],\"pescara\":[4,119554,0.8],\"piacenza\":[61,103607,84.9],\"pisa\":[4,109960,9.4],\"polignano-a-mare\":[24,13356,2.6],\"pompei\":[14,23902,2.5],\"pordenone\":[24,49878,40.7],\"potenza\":[819,56433,64.3],\"ragusa\":[502,74251,20.3],\"rapallo\":[5,26993,0.4],\"ravenna\":[4,80868,7.8],\"reggio-emilia\":[58,171944,88.1],\"riccione\":[12,32744,0.7],\"rimini\":[5,148688,0.9],\"riva-del-garda\":[73,17331,119.4],\"salerno\":[4,125797,0.1],\"san-benedetto-del-tronto\":[4,45873,0.4],\"sanremo\":[15,47043,0.3],\"santa-margherita-ligure\":[13,8428,0.0],\"senigallia\":[5,30882,0.5],\"sestri-levante\":[10,16963,0.5],\"siena\":[322,53901,64.0],\"sirmione\":[66,6818,121.9],\"sorrento\":[50,14724,0.6],\"spoleto\":[396,19266,96.5],\"stresa\":[200,3985,162.5],\"syracuse\":[17,121605,0.2],\"taormina\":[204,5790,0.3],\"taranto\":[15,198585,0.6],\"trani\":[7,53981,0.1],\"trapani\":[3,67531,1.1],\"trento\":[194,120709,112.1],\"treviso\":[15,85760,17.9],\"trieste\":[2,204338,0.7],\"turin\":[239,847287,106.4],\"udine\":[113,100170,32.2],\"varese\":[382,80588,154.4],\"venice\":[2,51298,0.5],\"verona\":[59,258031,91.6],\"viareggio\":[2,62169,0.4],\"vicenza\":[39,111980,54.5],\"viterbo\":[326,47134,38.3],\"abidjan\":[50,6321017,0.5],\"kingston-jamaica\":[65,937700,3.7],\"akita\":[14,307672,5.5],\"aomori\":[7,298394,1.3],\"beppu\":[22,122643,1.6],\"chiba\":[5,979768,1.4],\"fukuoka\":[3,1612392,2.1],\"hakodate\":[5,275730,1.8],\"hakone\":[734,11293,11.6],\"hamamatsu\":[3,791707,5.1],\"hiroshima\":[16,1200754,4.6],\"kagoshima\":[6,595049,0.9],\"kanazawa\":[-1,466029,6.5],\"kobe\":[35,1525152,1.5],\"kumamoto\":[9,738907,7.8],\"kurashiki\":[4,483576,9.0],\"kyoto\":[50,1463723,46.2],\"matsue\":[8,203616,9.2],\"matsumoto\":[593,241145,81.8],\"matsuyama\":[28,511192,6.7],\"miyazaki\":[11,401339,2.4],\"nagasaki\":[15,409118,3.0],\"nagoya\":[23,2332176,9.1],\"naha\":[1,317625,1.3],\"nara\":[68,367353,37.0],\"okayama\":[5,724691,8.3],\"osaka\":[4,2753862,8.7],\"sapporo\":[26,1973832,14.8],\"sendai\":[53,1096704,10.7],\"shizuoka\":[23,693389,4.6],\"toyama\":[11,415844,6.5],\"yamagata\":[321,248772,56.1],\"yokohama\":[21,3777491,2.1],\"amman\":[757,1275857,108.0],\"aqaba\":[46,95048,0.5],\"almaty\":[783,1977011,null],\"astana\":[358,1544142,null],\"atyrau\":[-19,290700,18.5],\"mombasa\":[20,1208333,1.0],\"nairobi\":[1684,4397073,null],\"luang-prabang\":[296,55027,null],\"pakse\":[105,77900,null],\"vientiane\":[174,840940,null],\"liepaja\":[6,67421,0.3],\"riga\":[6,742572,11.4],\"beirut\":[40,1916100,1.3],\"kaunas\":[96,289380,170.9],\"vilnius\":[98,542366,null],\"luxembourg-city\":[259,76684,null],\"macao\":[28,649335,1.3],\"johor-bahru\":[32,858118,1.8],\"male\":[8,103693,0.7],\"sliema\":[40,22591,1.0],\"valletta\":[44,6794,0.5],\"aguascalientes\":[1885,722250,null],\"atlixco\":[1846,86690,null],\"cabo-san-lucas\":[11,202694,0.4],\"campeche\":[19,220389,2.1],\"cancun\":[7,14900,2.5],\"chihuahua\":[1437,925762,null],\"ciudad-victoria\":[316,332100,134.7],\"coatepec\":[1202,53621,62.8],\"coatzacoalcos\":[11,310698,1.2],\"colima\":[518,146965,49.5],\"comitan\":[1655,166178,137.1],\"cordoba-mexico\":[836,204721,83.8],\"cozumel\":[7,77236,1.3],\"cuernavaca\":[1540,338650,null],\"culiacan\":[47,808416,34.4],\"guadalajara-mexico\":[1546,1385629,195.2],\"guanajuato\":[2010,72237,null],\"la-paz-mexico\":[33,250141,0.7],\"mazatlan\":[1,381583,0.7],\"mexico-city\":[2240,12294193,null],\"monterrey\":[560,1135512,null],\"morelia\":[1917,743275,null],\"merida-mexico\":[10,1201000,36.4],\"palenque\":[94,42947,100.1],\"playa-del-carmen\":[9,149923,1.1],\"puebla\":[2166,1692181,null],\"puerto-vallarta\":[21,224166,0.3],\"queretaro\":[1826,1594212,null],\"san-cristobal-de-las-casas\":[2183,215874,145.7],\"san-miguel-de-allende\":[1917,174615,null],\"tampico\":[27,309003,6.9],\"tulum\":[5,18233,1.9],\"zacatecas\":[2480,129011,null],\"chisinau\":[24,635994,145.6],\"ulaanbaatar\":[1284,844818,null],\"budva\":[4,18000,0.1],\"kotor\":[5,5345,5.0],\"casablanca\":[27,3665954,1.8],\"essaouira\":[7,85137,0.7],\"rabat\":[46,1655753,3.6],\"tangier\":[20,1035141,1.5],\"yangon\":[30,4477638,3.1],\"swakopmund\":[18,53009,0.5],\"windhoek\":[1700,386219,null],\"kathmandu\":[1317,1442271,null],\"pokhara\":[1008,600051,null],\"alkmaar\":[5,94853,8.0],\"amersfoort\":[8,139914,63.0],\"amstelveen\":[0,79639,23.9],\"amsterdam\":[13,741636,23.3],\"apeldoorn\":[12,136670,94.9],\"arnhem\":[16,162424,103.1],\"breda\":[9,184126,35.4],\"delft\":[1,95060,11.7],\"den-bosch\":[7,160783,74.2],\"deventer\":[12,97331,109.2],\"eindhoven\":[22,235691,81.4],\"groningen\":[16,244807,25.0],\"haarlem\":[10,162543,7.0],\"leeuwarden\":[1,124481,16.4],\"maastricht\":[56,122378,106.2],\"nijmegen\":[25,177359,106.6],\"rotterdam\":[9,868135,24.0],\"the-hague\":[4,474292,3.7],\"tilburg\":[16,221947,52.8],\"utrecht\":[13,376435,49.8],\"valkenburg\":[72,3400,114.2],\"zaandam\":[-1,71708,16.6],\"zandvoort\":[6,16325,0.3],\"zwolle\":[9,129840,81.4],\"auckland\":[43,1547200,0.5],\"christchurch\":[14,419200,10.1],\"dunedin\":[21,132800,4.6],\"queenstown\":[328,10442,70.3],\"wellington\":[31,381900,1.3],\"granada-nicaragua\":[62,89409,50.8],\"leon-nicaragua\":[102,144538,16.1],\"abuja\":[476,2690000,null],\"ikeja\":[40,313196,8.0],\"lagos-nigeria\":[11,15388000,1.2],\"bitola\":[583,69287,123.0],\"ohrid\":[701,42033,108.3],\"skopje\":[247,474889,154.0],\"bergen\":[20,294029,2.0],\"oslo\":[26,1082575,1.9],\"stavanger\":[15,151669,1.2],\"tromso\":[null,41915,2.4],\"trondheim\":[18,216518,2.1],\"alesund\":[3,52626,3.4],\"muscat\":[14,797000,0.7],\"salalah\":[13,163140,1.7],\"karachi\":[8,11624219,5.1],\"panama-city\":[17,408168,0.5],\"asuncion\":[113,1482200,null],\"arequipa\":[2397,1195700,87.5],\"cajamarca\":[2700,201329,116.6],\"chiclayo\":[1,609400,13.1],\"cusco\":[3312,428450,null],\"iquitos\":[107,377609,null],\"lima\":[152,7737002,2.1],\"bacolod\":[14,454898,0.6],\"cebu-city\":[37,965332,1.3],\"dumaguete\":[10,113541,3.0],\"manila\":[13,1600000,2.5],\"puerto-princesa\":[20,222673,2.0],\"bialystok\":[135,295683,null],\"bielsko-biala\":[330,176515,null],\"bydgoszcz\":[37,330038,147.4],\"bytom\":[285,189186,null],\"chorzow\":[319,113430,null],\"czestochowa\":[253,248125,null],\"gdansk\":[8,487371,5.1],\"gdynia\":[14,257000,1.7],\"gliwice\":[200,198835,null],\"karpacz\":[599,4979,null],\"katowice\":[276,286960,null],\"kielce\":[267,192468,null],\"kolobrzeg\":[6,44377,0.4],\"krakow\":[219,816614,null],\"krynica-zdroj\":[592,12270,null],\"lublin\":[184,336339,null],\"miedzyzdroje\":[6,5502,0.6],\"olsztyn\":[151,169793,93.6],\"opole\":[173,127676,null],\"poznan\":[69,536151,null],\"rzeszow\":[209,198317,null],\"sopot\":[20,35049,0.9],\"szczecin\":[149,395513,19.6],\"szczyrk\":[501,5860,null],\"szklarska-poreba\":[647,6970,null],\"torun\":[51,196935,150.0],\"ustka\":[2,16250,1.0],\"warsaw\":[113,1702139,null],\"wisla\":[428,11379,null],\"wroclaw\":[115,672545,null],\"zakopane\":[819,27266,null],\"zielona-gora\":[143,118433,193.8],\"lodz\":[214,639890,null],\"swinoujscie\":[4,40919,1.1],\"albufeira\":[14,15851,0.9],\"amarante\":[96,6782,48.9],\"angra-do-heroismo\":[1,12045,1.3],\"aveiro\":[19,80880,3.3],\"braga\":[190,193324,26.2],\"braganca\":[664,35341,159.7],\"caldas-da-rainha\":[60,27378,6.2],\"cascais\":[20,36436,1.2],\"chaves\":[362,17535,101.3],\"coimbra\":[59,140796,31.3],\"estoril\":[24,23700,0.6],\"faro\":[24,70347,0.8],\"funchal\":[280,105795,0.7],\"fatima\":[358,11798,33.9],\"guimaraes\":[189,40604,39.4],\"horta\":[12,6572,0.9],\"lagos-portugal\":[12,33494,0.3],\"lamego\":[502,10928,70.5],\"leiria\":[33,128640,18.1],\"lisbon\":[68,517802,2.1],\"nazare\":[46,8993,1.5],\"olhao\":[11,29239,3.9],\"peniche\":[17,15662,1.5],\"ponta-delgada\":[12,20056,0.6],\"ponte-de-lima\":[13,44667,8.9],\"portimao\":[13,38487,0.2],\"porto\":[91,252687,3.2],\"porto-moniz\":[24,2762,0.3],\"quarteira\":[23,24420,1.2],\"sesimbra\":[26,41134,1.0],\"setubal\":[16,118166,1.6],\"sintra\":[197,26193,8.0],\"tavira\":[9,15133,2.4],\"tomar\":[55,19168,55.8],\"viana-do-castelo\":[12,36148,0.3],\"vila-real\":[462,17001,78.7],\"vilamoura\":[18,2819,2.0],\"viseu\":[469,103502,56.0],\"evora\":[242,53591,63.7],\"obidos\":[48,11187,7.4],\"doha\":[11,344939,0.7],\"brasov\":[573,253200,null],\"bucharest\":[83,1877155,198.8],\"cluj-napoca\":[352,286598,null],\"constanta\":[40,317832,2.0],\"craiova\":[105,234140,null],\"kigali\":[1542,1132686,null],\"apia\":[9,40407,0.5],\"jeddah\":[7,4697000,3.9],\"riyadh\":[612,4205961,null],\"ta-if\":[1672,688693,114.1],\"dakar\":[12,2646503,1.9],\"belgrade\":[120,1273651,null],\"novi-sad\":[79,215400,null],\"freetown\":[38,802639,0.7],\"singapore\":[23,5638700,2.1],\"bratislava\":[157,423737,null],\"kosice\":[205,225044,null],\"bled\":[500,5181,75.4],\"ljubljana\":[295,272220,71.9],\"bloemfontein\":[1396,556637,null],\"cape-town\":[25,4772846,1.7],\"durban\":[21,3338026,0.3],\"johannesburg\":[1767,9418183,null],\"newcastle-south-africa\":[1195,404838,null],\"stellenbosch\":[122,96228,18.1],\"busan\":[15,3285147,1.8],\"daegu\":[40,2365523,72.3],\"daejeon\":[42,1441203,56.5],\"gyeongju\":[45,245365,24.6],\"incheon\":[null,null,3.2],\"seoul\":[38,10349312,23.9],\"suwon\":[48,1234582,13.4],\"a-coruna\":[22,250438,2.0],\"adeje\":[284,43204,1.2],\"albacete\":[695,173050,139.9],\"alcala-de-henares\":[597,193751,null],\"alcobendas\":[696,116037,null],\"algeciras\":[29,121414,1.0],\"alicante\":[18,348901,1.1],\"almeria\":[21,196851,1.2],\"almunecar\":[null,27696,1.0],\"altea\":[1,23780,0.5],\"antequera\":[519,45168,33.7],\"aranjuez\":[508,54055,null],\"arrecife\":[20,61351,0.4],\"astorga\":[865,12078,123.9],\"aviles\":[26,78715,3.6],\"badajoz\":[192,150530,152.9],\"baeza\":[763,16253,139.1],\"benalmadena\":[240,58854,1.2],\"benicassim\":[12,18055,1.7],\"benidorm\":[30,70450,2.0],\"bilbao\":[20,347342,9.1],\"burgos\":[863,176418,121.8],\"calpe\":[58,23326,0.8],\"cartagena\":[1,213943,3.4],\"castelldefels\":[14,66375,0.3],\"castellon-de-la-plana\":[30,183711,2.3],\"chiclana-de-la-frontera\":[42,83831,0.5],\"ciudad-real\":[633,74743,null],\"conil-de-la-frontera\":[42,22427,1.4],\"corralejo\":[14,13618,0.9],\"cuenca-spain\":[941,54898,164.9],\"cullera\":[117,24121,0.7],\"caceres\":[441,96068,null],\"cadiz\":[22,116979,0.6],\"cordoba-spain\":[117,325708,133.0],\"denia\":[18,41733,2.4],\"el-puerto-de-santa-maria\":[11,88364,1.4],\"elche\":[96,234765,12.9],\"estepona\":[69,67012,1.2],\"ferrol\":[24,66799,1.1],\"figueres\":[41,46381,13.9],\"fuengirola\":[13,71482,1.2],\"gandia\":[34,73829,1.6],\"getafe\":[623,187525,null],\"gijon\":[22,271780,2.0],\"girona\":[81,100266,28.0],\"granada-spain\":[689,233532,48.1],\"guadalajara-spain\":[722,93470,null],\"hondarribia\":[27,16458,1.8],\"huelva\":[34,144258,3.3],\"huesca\":[476,53956,168.7],\"ibiza\":[7,49727,0.8],\"jaca\":[827,13396,129.1],\"jaen\":[558,113457,115.4],\"jerez-de-la-frontera\":[53,212879,15.1],\"las-palmas-de-gran-canaria\":[122,383516,1.3],\"leon-spain\":[844,124772,101.7],\"llanes\":[13,13639,0.6],\"lleida\":[155,140797,72.9],\"lloret-de-mar\":[14,37350,0.4],\"logrono\":[380,151164,94.0],\"lugo\":[465,98025,63.3],\"madrid\":[665,3255944,null],\"mahon\":[39,29125,3.4],\"marbella\":[57,156295,0.2],\"maspalomas\":[32,36065,0.3],\"mataro\":[43,126988,0.3],\"motril\":[34,60592,0.9],\"murcia\":[53,471982,35.7],\"malaga\":[22,592346,0.3],\"merida-spain\":[223,59857,185.7],\"nerja\":[51,21811,0.0],\"ourense\":[146,105233,62.2],\"oviedo\":[237,220027,25.4],\"palma\":[34,438234,1.0],\"pamplona\":[460,208243,60.9],\"plasencia\":[368,40141,null],\"playa-blanca\":[16,10000,0.6],\"ponferrada\":[519,68736,109.8],\"puerto-de-la-cruz\":[null,32219,0.8],\"puerto-del-carmen\":[44,30000,0.4],\"ribadesella\":[20,5730,1.5],\"ronda\":[718,36827,33.8],\"roses\":[11,19319,0.9],\"sabadell\":[187,211734,17.9],\"salamanca\":[815,144825,null],\"salou\":[6,26775,0.5],\"san-sebastian\":[17,185357,1.4],\"sanlucar-de-barrameda\":[12,68037,0.7],\"santa-cruz-de-tenerife\":[10,211359,0.7],\"santander\":[1,173635,0.6],\"santiago-de-compostela\":[257,99536,26.1],\"segovia\":[996,51683,null],\"seville\":[16,686741,54.0],\"sitges\":[18,27668,0.5],\"soria\":[1064,39112,171.8],\"tarifa\":[22,18169,2.0],\"tarragona\":[60,141542,0.5],\"terrassa\":[302,218535,24.0],\"teruel\":[908,36240,102.5],\"toledo\":[533,86526,null],\"torremolinos\":[47,65448,0.4],\"torrevieja\":[14,82599,3.3],\"tudela\":[266,34717,142.8],\"valencia-spain\":[15,824340,2.9],\"valladolid\":[702,300618,194.4],\"vigo\":[86,293642,1.5],\"vitoria-gasteiz\":[547,257407,56.7],\"zamora\":[662,61827,null],\"zaragoza\":[214,686986,162.8],\"avila\":[1127,57657,null],\"ubeda\":[766,34602,140.4],\"colombo\":[7,648034,0.3],\"dambulla\":[168,66716,86.8],\"kandy\":[500,111701,84.3],\"gothenburg\":[10,608462,2.4],\"lund\":[51,87244,10.1],\"malmo\":[10,362133,0.6],\"stockholm\":[17,1515017,1.4],\"umea\":[24,130224,8.6],\"uppsala\":[20,177074,52.6],\"ascona\":[202,5084,192.1],\"basel\":[279,177595,null],\"bern\":[549,121631,null],\"fribourg\":[610,38365,null],\"geneva\":[400,201741,null],\"grindelwald\":[1047,3730,null],\"interlaken\":[570,5067,null],\"lausanne\":[453,139111,null],\"locarno\":[206,15824,193.5],\"lucerne\":[437,81691,null],\"lugano\":[284,63185,175.1],\"montreux\":[403,25984,null],\"pontresina\":[1822,1863,null],\"st-gallen\":[684,75833,null],\"thun\":[560,43723,null],\"vevey\":[388,19891,null],\"zurich\":[429,415367,null],\"kaohsiung\":[9,2737660,2.1],\"taichung\":[91,2850285,19.3],\"tainan\":[16,1856642,2.3],\"taipei\":[5,7871900,10.3],\"arusha\":[1415,617631,null],\"dar-es-salaam\":[24,5383728,1.1],\"zanzibar-city\":[14,709809,0.8],\"bangkok\":[12,5104476,16.0],\"chiang-mai\":[313,127240,null],\"chiang-rai\":[401,78756,null],\"hat-yai\":[12,191696,15.3],\"hua-hin\":[10,126355,2.1],\"pattaya\":[9,116417,0.9],\"phuket\":[28,79308,2.1],\"tunis\":[23,693210,1.6],\"adana\":[30,1816750,37.2],\"alanya\":[11,364180,0.7],\"ankara\":[850,3517182,185.4],\"antalya\":[61,1335002,0.5],\"bursa\":[155,3101833,17.1],\"corlu\":[161,202578,16.6],\"denizli\":[405,313238,111.7],\"diyarbakir\":[674,1833684,null],\"edirne\":[62,180002,102.5],\"erzurum\":[1914,767848,140.8],\"eskisehir\":[794,921630,116.3],\"gaziantep\":[842,2222415,109.3],\"istanbul\":[39,15701602,0.4],\"izmir\":[122,2938292,0.4],\"kayseri\":[1054,1452458,null],\"kemer\":[24,17300,0.7],\"konya\":[1030,1433861,154.2],\"kusadasi\":[9,63177,1.2],\"marmaris\":[8,33731,0.5],\"samsun\":[64,394050,0.3],\"side\":[15,10505,1.2],\"trabzon\":[39,244083,2.0],\"canakkale\":[12,143622,0.3],\"cherkasy\":[110,269836,null],\"chernivtsi\":[260,264298,null],\"abu-dhabi\":[6,1807000,0.8],\"ajman\":[2,490035,0.4],\"sharjah\":[15,1800000,1.8],\"aberdeen\":[13,198590,2.7],\"alnwick\":[62,8430,7.8],\"ayr\":[13,46260,0.4],\"barnstaple\":[12,31616,10.2],\"basingstoke\":[96,107642,44.1],\"bath\":[96,101557,27.3],\"belfast\":[7,348005,2.4],\"birmingham\":[149,1157603,84.5],\"blackpool\":[21,145007,0.3],\"bournemouth\":[19,163600,0.5],\"bridgwater\":[15,41276,8.0],\"bristol\":[21,479024,9.2],\"burnley\":[140,149422,42.8],\"cambridge\":[12,145674,64.8],\"canterbury\":[19,55087,10.0],\"cardiff\":[17,372089,1.5],\"carlisle\":[29,78470,10.6],\"cheltenham\":[60,118836,26.5],\"chester\":[34,90524,10.4],\"chesterfield\":[89,113057,72.4],\"cirencester\":[112,20229,30.8],\"colchester\":[29,130245,7.3],\"conwy\":[18,3873,3.9],\"coventry\":[89,345324,90.3],\"crawley\":[84,124008,33.1],\"cromer\":[22,8801,0.3],\"darlington\":[40,92363,26.2],\"derby\":[55,270468,95.5],\"derry-londonderry\":[24,87153,8.0],\"doncaster\":[19,113566,31.7],\"dundee\":[77,148210,0.3],\"durham-united-kingdom\":[52,47785,16.6],\"eastbourne\":[8,101689,0.2],\"edinburgh\":[66,514990,2.3],\"enniskillen\":[52,14472,36.9],\"exeter\":[46,130709,6.7],\"falmouth\":[34,31988,0.9],\"farnborough\":[69,60652,50.7],\"folkestone\":[46,66429,0.5],\"glasgow\":[40,626410,15.7],\"gloucester\":[24,132416,15.1],\"great-yarmouth\":[6,63434,0.4],\"guildford\":[45,71873,48.4],\"harrogate\":[127,89060,64.0],\"huddersfield\":[90,149017,68.0],\"hull\":[8,314018,1.3],\"inverness\":[15,47790,1.9],\"ipswich\":[18,178835,3.6],\"leeds\":[50,536280,55.4],\"leicester\":[65,368600,81.9],\"lincoln\":[9,103813,49.9],\"liverpool\":[30,496770,0.6],\"luton\":[117,225262,71.6],\"maidstone\":[9,107627,14.6],\"manchester\":[51,568996,33.8],\"middlesbrough\":[15,142707,5.5],\"milton-keynes\":[114,256385,101.1],\"newcastle-upon-tyne\":[54,300125,12.9],\"newquay\":[31,20189,0.7],\"norwich\":[19,143135,30.0],\"nottingham\":[46,323632,78.1],\"oban\":[17,8140,0.3],\"oxford\":[72,162100,77.1],\"paignton\":[8,67520,0.6],\"peterborough\":[12,163379,41.9],\"pitlochry\":[120,2880,44.9],\"plymouth-united-kingdom\":[14,260203,2.0],\"portree\":[15,2310,1.8],\"portrush\":[11,6684,0.4],\"portsmouth-united-kingdom\":[6,208100,1.6],\"preston\":[34,313332,14.3],\"reading\":[51,318014,66.5],\"royal-tunbridge-wells\":[118,68910,35.0],\"rye\":[19,9041,3.0],\"salisbury\":[50,44748,28.2],\"scarborough\":[48,61749,0.6],\"sheffield\":[75,556500,58.9],\"shrewsbury\":[75,76782,61.5],\"slough\":[33,164793,66.2],\"southampton\":[19,269781,1.2],\"southport\":[9,91703,1.2],\"st-albans\":[98,84561,57.8],\"st-andrews\":[22,18410,1.1],\"sunderland\":[36,170134,1.3],\"swansea\":[18,300352,0.3],\"tenby\":[27,4696,0.4],\"torquay\":[8,65388,0.5],\"truro\":[15,23041,7.3],\"watford\":[77,125707,58.8],\"whitstable\":[5,32196,0.5],\"winchester\":[61,46074,19.9],\"windermere\":[120,7765,14.7],\"windsor-united-kingdom\":[49,31560,69.3],\"woking\":[39,103900,56.9],\"worcester-united-kingdom\":[29,101659,43.7],\"york\":[17,156135,37.0],\"akron\":[291,197542,null],\"albuquerque\":[1511,564559,null],\"alexandria\":[12,159467,1.6],\"alpharetta\":[347,63693,null],\"altoona\":[355,45344,null],\"amarillo\":[1118,198645,null],\"ames\":[287,65060,null],\"anaheim\":[48,350742,16.4],\"ann-arbor\":[269,117070,null],\"annapolis\":[12,40812,2.3],\"appleton\":[242,74139,null],\"arcadia\":[147,58408,43.8],\"arlington\":[184,388125,null],\"asheville\":[649,95056,null],\"atlanta\":[320,510823,null],\"atlantic-city\":[2,39260,0.5],\"auburn-alabama\":[215,62059,null],\"augusta\":[43,43459,151.3],\"aurora\":[1648,359407,null],\"austin\":[149,974447,null],\"bakersfield\":[123,373640,116.6],\"baltimore\":[10,585708,3.2],\"baton-rouge\":[14,227470,67.0],\"beaverton\":[58,96577,76.1],\"bellevue\":[26,139820,13.0],\"bellingham\":[21,85146,2.3],\"bend\":[1106,87014,null],\"bentonville\":[395,44499,null],\"berkeley\":[52,120972,2.9],\"bethesda\":[97,60858,11.4],\"bethlehem\":[109,74892,76.5],\"billings\":[952,117116,null],\"biloxi\":[6,45637,1.0],\"binghamton\":[264,46032,185.4],\"birmingham-alabama\":[290,34174,null],\"bismarck\":[514,75092,null],\"blacksburg\":[633,44215,null],\"bloomington\":[235,84067,null],\"boca-raton\":[4,93235,5.4],\"boise\":[823,235684,null],\"bossier-city\":[53,68094,null],\"boston\":[14,653833,1.1],\"boulder\":[1624,106803,null],\"bowie\":[42,58025,13.4],\"bowling-green\":[161,63616,null],\"bozeman\":[1468,43405,null],\"bradenton\":[1,54437,6.5],\"branson\":[237,11431,null],\"brentwood\":[227,41763,null],\"brookline\":[10,58732,6.1],\"brooklyn\":[15,2736074,0.8],\"bryan\":[114,82118,162.0],\"buena-park\":[23,83270,15.8],\"buffalo\":[183,258071,null],\"burbank\":[185,105319,24.1],\"burlington\":[61,42452,110.0],\"cambridge-massachusetts\":[5,110402,5.3],\"camden\":[8,3570,1.5],\"cape-coral\":[1,175229,2.7],\"carmel\":[68,3897,3.0],\"cary\":[152,159769,156.2],\"casper\":[1560,60285,null],\"cedar-rapids\":[247,130405,null],\"centennial\":[1777,109741,null],\"chandler\":[370,260828,null],\"chapel-hill\":[148,59568,182.8],\"charleston\":[6,132609,4.0],\"charlotte\":[229,911311,null],\"charlottesville\":[142,46597,106.1],\"chattanooga\":[206,181099,null],\"cheyenne\":[1856,65132,null],\"chicago\":[179,2664452,null],\"chico\":[60,121345,167.2],\"chula-vista\":[21,265757,9.3],\"cincinnati\":[191,311097,null],\"cleveland\":[199,365379,null],\"coeur-d-alene\":[667,49122,null],\"colorado-springs\":[1832,456568,null],\"columbia\":[89,142416,164.8],\"columbus\":[235,913175,null],\"corpus-christi\":[2,316239,3.1],\"costa-mesa\":[30,113204,6.7],\"cupertino\":[72,60572,13.7],\"dallas\":[128,1326087,null],\"danville\":[162,42082,null],\"davenport\":[42,3534,86.2],\"davis\":[16,67666,44.0],\"dayton\":[225,135512,null],\"daytona-beach\":[4,72647,3.3],\"deadwood\":[1381,1258,null],\"delray-beach\":[5,66255,0.8],\"denver\":[1609,729019,null],\"des-moines\":[266,214133,null],\"detroit\":[183,645705,null],\"dublin-united-states\":[253,45098,null],\"durham-united-states\":[123,257636,177.4],\"flagstaff\":[2104,70320,null],\"fort-lauderdale\":[1,183146,3.3],\"franklin\":[196,72639,null],\"honolulu\":[5,350964,0.2],\"houston\":[12,2314157,31.4],\"huntsville\":[193,215006,null],\"indianapolis\":[218,887642,null],\"jackson-wyoming\":[1901,10523,null],\"las-vegas\":[610,641903,null],\"livermore\":[150,88126,31.3],\"los-angeles\":[89,3820914,13.1],\"louisville\":[142,624444,null],\"lynchburg\":[192,79812,169.0],\"madison\":[267,280305,null],\"melbourne-united-states\":[6,84678,4.1],\"memphis\":[78,633104,null],\"miami\":[2,487014,4.9],\"milwaukee\":[188,563531,null],\"minneapolis\":[253,410939,null],\"monterey\":[8,28338,0.3],\"naples-florida\":[1,22951,4.7],\"nashville\":[170,689447,null],\"new-orleans\":[0,362701,9.7],\"new-york\":[10,8804190,1.0],\"newport-rhode-island\":[9,24232,0.1],\"oakland\":[13,419267,4.0],\"oklahoma-city\":[366,681054,null],\"omaha\":[323,486051,null],\"orlando\":[25,7427,73.8],\"palm-springs\":[146,47371,104.9],\"philadelphia\":[12,1573916,2.1],\"phoenix\":[331,1650070,null],\"pittsburgh\":[233,304391,null],\"pleasanton\":[106,79510,21.7],\"plymouth-united-states\":[23,7494,3.5],\"portland\":[12,652503,79.9],\"portsmouth-united-states\":[6,21530,1.5],\"raleigh\":[96,482295,150.9],\"reno\":[1373,264165,null],\"richmond\":[64,226610,35.5],\"rochester\":[154,209802,null],\"rock-hill\":[207,71548,null],\"sacramento\":[9,524943,51.2],\"salt-lake-city\":[1299,215548,null],\"san-antonio\":[198,1526656,188.0],\"san-diego\":[20,1404452,1.9],\"san-francisco\":[16,827526,1.5],\"san-jose-united-states\":[26,997368,16.2],\"sanford\":[9,58111,44.1],\"santa-barbara\":[15,91842,1.3],\"santa-fe-united-states\":[2132,87505,null],\"savannah\":[6,147780,15.7],\"seattle\":[56,780995,0.7],\"sierra-vista\":[1412,43355,null],\"spokane\":[571,229447,null],\"st-augustine\":[0,12975,2.4],\"stamford\":[7,128874,2.5],\"tampa\":[1,414547,6.8],\"taos\":[2124,5740,null],\"traverse-city\":[182,15218,null],\"tucson\":[759,542629,null],\"valdosta\":[67,55724,106.1],\"valencia-united-states\":[310,148456,43.2],\"vancouver-united-states\":[52,196442,69.6],\"ventura\":[11,96769,0.2],\"washington-dc\":[7,689545,2.9],\"wilmington-north-carolina\":[10,8278,6.9],\"worcester-united-states\":[147,206518,59.8],\"montevideo\":[34,1270737,0.8],\"punta-del-este\":[15,9277,0.8],\"caracas\":[887,3000000,12.9],\"valencia-venezuela\":[547,1619470,27.1],\"can-tho\":[3,1507187,4.4],\"da-nang\":[11,1276000,0.5],\"dalat\":[1483,258014,68.8],\"ha-long\":[8,270054,1.9],\"hanoi\":[10,8053663,84.0],\"ho-chi-minh-city\":[7,14002598,13.1],\"hoi-an\":[13,32757,2.7],\"hue\":[8,1380000,7.8],\"mui-ne\":[6,50166,0.9],\"nha-trang\":[10,579000,0.8],\"quy-nhon\":[7,519208,1.4],\"ronne\":[22,13807,0.7],\"chania\":[24,53910,0.5],\"corfu\":[13,40047,0.5],\"nuuk\":[5,14798,1.8],\"ioannina\":[468,65574,53.6],\"zakynthos\":[8,11541,0.5],\"billund\":[58,7446,27.3],\"torshavn\":[1,13200,2.7],\"iasi\":[66,378954,null],\"lefkada\":[8,8673,2.2],\"salen\":[null,null,193.5],\"mytilene\":[14,28322,1.0]}"),
+	nb: {
+		"MA": [
+			"DZ",
+			"EH",
+			"ES"
+		],
+		"PT": ["ES"],
+		"LV": [
+			"LT",
+			"EE",
+			"BY",
+			"RU"
+		],
+		"ME": [
+			"AL",
+			"HR",
+			"BA",
+			"RS",
+			"XK"
+		],
+		"LU": [
+			"DE",
+			"BE",
+			"FR"
+		],
+		"SN": [
+			"GN",
+			"MR",
+			"GW",
+			"GM",
+			"ML"
+		],
+		"BO": [
+			"PE",
+			"CL",
+			"PY",
+			"BR",
+			"AR"
+		],
+		"GL": [],
+		"RO": [
+			"MD",
+			"HU",
+			"UA",
+			"BG",
+			"RS"
+		],
+		"NA": [
+			"ZA",
+			"BW",
+			"ZM",
+			"AO"
+		],
+		"SK": [
+			"PL",
+			"HU",
+			"CZ",
+			"UA",
+			"AT"
+		],
+		"IT": [
+			"CH",
+			"VA",
+			"SI",
+			"SM",
+			"FR",
+			"AT"
+		],
+		"LA": [
+			"CN",
+			"MM",
+			"KH",
+			"TH",
+			"VN"
+		],
+		"MV": [],
+		"KE": [
+			"ET",
+			"TZ",
+			"SS",
+			"SO",
+			"UG"
+		],
+		"NZ": [],
+		"LB": ["SY", "IL"],
+		"WS": [],
+		"CL": [
+			"PE",
+			"BO",
+			"AR"
+		],
+		"IS": [],
+		"MD": ["RO", "UA"],
+		"BG": [
+			"MK",
+			"GR",
+			"RO",
+			"TR",
+			"RS"
+		],
+		"NO": [
+			"FI",
+			"RU",
+			"SE"
+		],
+		"SG": [],
+		"FJ": [],
+		"AU": [],
+		"ZA": [
+			"ZW",
+			"SZ",
+			"MZ",
+			"BW",
+			"NA",
+			"LS"
+		],
+		"NI": ["CR", "HN"],
+		"NL": ["DE", "BE"],
+		"NP": ["CN", "IN"],
+		"UY": ["BR", "AR"],
+		"IN": [
+			"CN",
+			"NP",
+			"MM",
+			"BT",
+			"PK",
+			"BD"
+		],
+		"PL": [
+			"DE",
+			"LT",
+			"SK",
+			"CZ",
+			"BY",
+			"UA",
+			"RU"
+		],
+		"JP": [],
+		"DO": ["HT"],
+		"PK": [
+			"CN",
+			"AF",
+			"IR",
+			"IN"
+		],
+		"ID": [
+			"PG",
+			"TL",
+			"MY"
+		],
+		"QA": ["SA"],
+		"SI": [
+			"HU",
+			"IT",
+			"HR",
+			"AT"
+		],
+		"UA": [
+			"PL",
+			"MD",
+			"HU",
+			"SK",
+			"BY",
+			"RO",
+			"RU"
+		],
+		"HU": [
+			"SK",
+			"SI",
+			"RO",
+			"UA",
+			"HR",
+			"AT",
+			"RS"
+		],
+		"ES": [
+			"AD",
+			"PT",
+			"GI",
+			"FR",
+			"MA"
+		],
+		"IE": ["GB"],
+		"OM": [
+			"SA",
+			"YE",
+			"AE"
+		],
+		"BH": [],
+		"VE": [
+			"GY",
+			"BR",
+			"CO"
+		],
+		"AZ": [
+			"GE",
+			"IR",
+			"AM",
+			"TR",
+			"RU"
+		],
+		"CA": ["US"],
+		"FO": [],
+		"AE": ["SA", "OM"],
+		"AL": [
+			"MK",
+			"GR",
+			"ME",
+			"RS",
+			"XK"
+		],
+		"MO": [],
+		"DK": ["DE"],
+		"TZ": [
+			"MZ",
+			"KE",
+			"CD",
+			"RW",
+			"ZM",
+			"BI",
+			"UG",
+			"MW"
+		],
+		"MT": [],
+		"MY": [
+			"BN",
+			"TH",
+			"ID"
+		],
+		"BB": [],
+		"CM": [
+			"TD",
+			"CF",
+			"GA",
+			"GQ",
+			"CG",
+			"NG"
+		],
+		"LT": [
+			"PL",
+			"BY",
+			"RU",
+			"LV"
+		],
+		"KH": [
+			"LA",
+			"TH",
+			"VN"
+		],
+		"TR": [
+			"SY",
+			"GE",
+			"IQ",
+			"IR",
+			"GR",
+			"AM",
+			"AZ",
+			"BG"
+		],
+		"DE": [
+			"CH",
+			"PL",
+			"NL",
+			"DK",
+			"BE",
+			"CZ",
+			"LU",
+			"FR",
+			"AT"
+		],
+		"MM": [
+			"CN",
+			"LA",
+			"TH",
+			"BD",
+			"IN"
+		],
+		"TH": [
+			"LA",
+			"MM",
+			"KH",
+			"MY"
+		],
+		"AD": ["ES", "FR"],
+		"PE": [
+			"EC",
+			"CL",
+			"BO",
+			"BR",
+			"CO"
+		],
+		"RW": [
+			"TZ",
+			"CD",
+			"BI",
+			"UG"
+		],
+		"JO": [
+			"SY",
+			"SA",
+			"IQ",
+			"IL",
+			"PS"
+		],
+		"IQ": [
+			"SY",
+			"SA",
+			"IR",
+			"JO",
+			"TR",
+			"KW"
+		],
+		"CN": [
+			"LA",
+			"BT",
+			"TJ",
+			"KZ",
+			"MN",
+			"AF",
+			"NP",
+			"MM",
+			"KG",
+			"PK",
+			"KP",
+			"RU",
+			"VN",
+			"IN"
+		],
+		"CH": [
+			"DE",
+			"IT",
+			"LI",
+			"FR",
+			"AT"
+		],
+		"GE": [
+			"AM",
+			"AZ",
+			"TR",
+			"RU"
+		],
+		"IL": [
+			"SY",
+			"JO",
+			"LB",
+			"EG",
+			"PS"
+		],
+		"FR": [
+			"CH",
+			"DE",
+			"BE",
+			"LU",
+			"IT",
+			"AD",
+			"MC",
+			"ES"
+		],
+		"TW": [],
+		"KZ": [
+			"TM",
+			"CN",
+			"KG",
+			"UZ",
+			"RU"
+		],
+		"ET": [
+			"ER",
+			"KE",
+			"SD",
+			"SS",
+			"SO",
+			"DJ"
+		],
+		"BW": [
+			"ZW",
+			"ZA",
+			"NA"
+		],
+		"HR": [
+			"HU",
+			"SI",
+			"BA",
+			"ME",
+			"RS"
+		],
+		"PA": ["CR", "CO"],
+		"RS": [
+			"AL",
+			"HU",
+			"MK",
+			"RO",
+			"HR",
+			"BA",
+			"BG",
+			"ME",
+			"XK"
+		],
+		"SL": ["LR", "GN"],
+		"TN": ["DZ", "LY"],
+		"KR": ["KP"],
+		"GH": [
+			"CI",
+			"TG",
+			"BF"
+		],
+		"GY": [
+			"SR",
+			"BR",
+			"VE"
+		],
+		"BJ": [
+			"NE",
+			"TG",
+			"BF",
+			"NG"
+		],
+		"AR": [
+			"CL",
+			"BO",
+			"UY",
+			"PY",
+			"BR"
+		],
+		"JM": [],
+		"BE": [
+			"DE",
+			"NL",
+			"LU",
+			"FR"
+		],
+		"GT": [
+			"MX",
+			"HN",
+			"BZ",
+			"SV"
+		],
+		"HK": [],
+		"CI": [
+			"LR",
+			"GH",
+			"GN",
+			"BF",
+			"ML"
+		],
+		"MX": [
+			"GT",
+			"US",
+			"BZ"
+		],
+		"AT": [
+			"CH",
+			"DE",
+			"HU",
+			"SK",
+			"CZ",
+			"IT",
+			"SI",
+			"LI"
+		],
+		"SE": ["NO", "FI"],
+		"NG": [
+			"TD",
+			"NE",
+			"BJ",
+			"CM"
+		],
+		"FI": [
+			"NO",
+			"RU",
+			"SE"
+		],
+		"AM": [
+			"GE",
+			"IR",
+			"AZ",
+			"TR"
+		],
+		"GB": ["IE"],
+		"BN": ["MY"],
+		"CZ": [
+			"PL",
+			"DE",
+			"SK",
+			"AT"
+		],
+		"HN": [
+			"GT",
+			"NI",
+			"SV"
+		],
+		"US": [
+			"CA",
+			"MX",
+			"CU"
+		],
+		"MK": [
+			"AL",
+			"GR",
+			"BG",
+			"RS",
+			"XK"
+		],
+		"LK": [],
+		"GF": ["SR", "BR"],
+		"CR": ["PA", "NI"],
+		"MN": ["CN", "RU"],
+		"EE": ["RU", "LV"],
+		"GR": [
+			"AL",
+			"MK",
+			"TR",
+			"BG"
+		],
+		"PY": [
+			"BO",
+			"BR",
+			"AR"
+		],
+		"BR": [
+			"SR",
+			"PE",
+			"BO",
+			"UY",
+			"GY",
+			"PY",
+			"GF",
+			"VE",
+			"CO",
+			"AR"
+		],
+		"CY": [],
+		"PH": [],
+		"SA": [
+			"QA",
+			"OM",
+			"IQ",
+			"YE",
+			"JO",
+			"AE",
+			"KW"
+		],
+		"EC": ["PE", "CO"],
+		"VN": [
+			"CN",
+			"LA",
+			"KH"
+		],
+		"EG": [
+			"LY",
+			"SD",
+			"IL",
+			"PS"
+		],
+		"CO": [
+			"EC",
+			"PE",
+			"PA",
+			"BR",
+			"VE"
+		],
+		"BA": [
+			"HR",
+			"ME",
+			"RS"
+		]
+	},
+	_src: "GeoNames (CC BY 4.0): cities1000 elevation/dem/population, countryInfo neighbours; Natural Earth 1:10m coastline (public domain)",
+	_built: "2026-11-26"
+};
+var isL = (s) => !!s && LANGS.includes(s);
+var kmD = (a, b) => {
+	const r = Math.PI / 180;
+	const x = Math.sin((b.lat - a.lat) * r / 2) ** 2 + Math.cos(a.lat * r) * Math.cos(b.lat * r) * Math.sin((b.lng - a.lng) * r / 2) ** 2;
+	return 12742 * Math.asin(Math.sqrt(Math.min(1, x)));
+};
+var ctry = (c, L) => T12.ctryName(c.cc ?? "", L, c.country);
+var sc$1 = (L, n) => n.toLocaleString(L === "en" ? "en-GB" : L, {
+	minimumFractionDigits: 1,
+	maximumFractionDigits: 1
+});
+var nf = (L, n) => new Intl.NumberFormat(L === "en" ? "en-GB" : L).format(Math.round(n));
+var ROWS = null;
+function rows() {
+	return ROWS ??= (async () => {
+		const { index } = await data();
+		return Promise.all(index.map(async (c) => {
+			const hs = (await cityData(c.id).catch(() => null))?.hotels ?? [];
+			const bv = hs.find((h) => h.category === "Best Value");
+			const lx = hs.find((h) => h.category === "Luxury");
+			return {
+				c,
+				from: T12.fromD(hs),
+				best: Math.max(0, ...hs.map((h) => h.booking?.score ?? 0)),
+				bv: bv ? {
+					name: bv.name,
+					score: bv.booking?.score,
+					nightly: bv.offer?.nightly
+				} : null,
+				lux: lx ? {
+					name: lx.name,
+					stars: lx.booking?.stars,
+					nightly: lx.offer?.nightly,
+					score: lx.booking?.score
+				} : null
+			};
+		}));
+	})();
+}
+var TX$5 = {
+	en: {
+		home: "Home",
+		city: "City",
+		country: "Country",
+		from: "From",
+		score: "Best guest score",
+		bvPick: "Best Value pick",
+		luxPick: "Luxury pick",
+		alt: "Altitude",
+		dist: "Distance",
+		pop: "Population",
+		islands: "Islands",
+		islandsLead: "Islands where we cover three or more cities, each with our three picks.",
+		islandT: (i, n) => `Best hotels in ${i}: ${n} cities compared`,
+		islandL: (i, n) => `Our Budget, Best Value and Luxury picks in the ${n} cities we cover in ${i}, with reference prices and guest scores.`,
+		byPrice: "Hotels by price",
+		byPriceLead: "Cities grouped by their 'from' price: the lowest reference price per night among our three picks.",
+		band: {
+			"under-50": "Under €50",
+			"50-100": "€50 to €100",
+			"100-200": "€100 to €200",
+			"over-200": "Over €200"
+		},
+		bandT: (b) => `${b} a night: cities with great hotels`,
+		bandL: (b, n) => `${n} cities where the cheapest of our three picks costs ${b.toLowerCase()} per night (reference price).`,
+		cont: "Continent",
+		five: (p) => `Five-star hotels under €${p} a night`,
+		fiveL: (p, n) => `${n} of our Luxury picks are five-star hotels with a reference price under €${p} per night.`,
+		coastal: "Coastal cities",
+		coastalLead: "Cities 5 km or less from the coast (straight line from the city centre to the Natural Earth 1:10m coastline).",
+		coastalT: (c, n) => `Coastal cities in ${c}: ${n} with our hotel picks`,
+		coastKm: "To the coast",
+		mountain: "Mountain cities",
+		mountainLead: (n) => `${n} cities above 800 m, by altitude (GeoNames), each with our three hotel picks.`,
+		gems: "Lesser-known towns with great hotels",
+		gemsLead: (n) => `${n} towns under 50,000 inhabitants (GeoNames) where our Best Value pick has a guest score of 8.5 or more.`,
+		routes: "One-week routes",
+		routesLead: "Three to five cities we cover in each country, in geographic order, with straight-line distances.",
+		routeT: (c) => `7 days in ${c}: a route through cities with great hotels`,
+		routeL: (c, n) => `A one-week route through ${n} cities in ${c}, in geographic order, with our three hotel picks in each stop.`,
+		leg: "From the previous stop",
+		total: "Total in a straight line",
+		noTimes: "Distances are in a straight line between city centres; we do not show travel times.",
+		cheapest: (c) => `Cheapest cities in ${c}`,
+		topScore: (c) => `Best guest scores in ${c}`,
+		seeRoute: (c) => `7 days in ${c}: a route`,
+		seeCoast: (c) => `Coastal cities in ${c}`,
+		nearIntro: (a, b) => `Nearby, we also picked hotels in ${a} and ${b}.`,
+		anchors: [(c) => `best hotels in ${c}`, (c) => `where to stay in ${c}`],
+		across: "Across the border",
+		acrossNote: "Cities in neighbouring countries less than 100 km away (straight line).",
+		more: "More",
+		srcGeo: "Sources: GeoNames (CC BY 4.0), Natural Earth (public domain).",
+		srcPrice: "Prices: reference price per night for 2 adults on the dates we checked; they change every day.",
+		menu: "Explore",
+		filters: "Filters",
+		regions: "Regions",
+		continents: "Continents",
+		countries: "Countries"
+	},
+	es: {
+		home: "Inicio",
+		city: "Ciudad",
+		country: "País",
+		from: "Desde",
+		score: "Mejor nota",
+		bvPick: "Elección calidad-precio",
+		luxPick: "Elección de lujo",
+		alt: "Altitud",
+		dist: "Distancia",
+		pop: "Población",
+		islands: "Islas",
+		islandsLead: "Islas en las que cubrimos tres o más ciudades, cada una con nuestras tres elecciones.",
+		islandT: (i, n) => `Mejores hoteles en ${i}: ${n} ciudades comparadas`,
+		islandL: (i, n) => `Nuestras elecciones económica, calidad-precio y de lujo en las ${n} ciudades que cubrimos en ${i}, con precios de referencia y notas.`,
+		byPrice: "Hoteles por precio",
+		byPriceLead: "Ciudades agrupadas por su precio 'desde': el precio de referencia más bajo por noche entre nuestras tres elecciones.",
+		band: {
+			"under-50": "Menos de 50 €",
+			"50-100": "De 50 a 100 €",
+			"100-200": "De 100 a 200 €",
+			"over-200": "Más de 200 €"
+		},
+		bandT: (b) => `${b} la noche: ciudades con buenos hoteles`,
+		bandL: (b, n) => `${n} ciudades donde la más barata de nuestras tres elecciones cuesta ${b.toLowerCase()} por noche (precio de referencia).`,
+		cont: "Continente",
+		five: (p) => `Hoteles de cinco estrellas por menos de ${p} € la noche`,
+		fiveL: (p, n) => `${n} de nuestras elecciones de lujo son hoteles de cinco estrellas con precio de referencia por debajo de ${p} € la noche.`,
+		coastal: "Ciudades costeras",
+		coastalLead: "Ciudades a 5 km o menos de la costa (en línea recta desde el centro hasta la costa de Natural Earth 1:10m).",
+		coastalT: (c, n) => `Ciudades costeras de ${c}: ${n} con nuestros hoteles`,
+		coastKm: "A la costa",
+		mountain: "Ciudades de montaña",
+		mountainLead: (n) => `${n} ciudades a más de 800 m de altitud (GeoNames), cada una con nuestras tres elecciones.`,
+		gems: "Ciudades poco conocidas con buenos hoteles",
+		gemsLead: (n) => `${n} localidades de menos de 50.000 habitantes (GeoNames) donde nuestra elección calidad-precio tiene una nota de 8,5 o más.`,
+		routes: "Rutas de una semana",
+		routesLead: "De tres a cinco ciudades que cubrimos en cada país, en orden geográfico, con distancias en línea recta.",
+		routeT: (c) => `7 días por ${c}: una ruta por ciudades con buenos hoteles`,
+		routeL: (c, n) => `Una ruta de una semana por ${n} ciudades de ${c}, en orden geográfico, con nuestras tres elecciones de hotel en cada parada.`,
+		leg: "Desde la parada anterior",
+		total: "Total en línea recta",
+		noTimes: "Distancias en línea recta entre los centros; no mostramos tiempos de viaje.",
+		cheapest: (c) => `Ciudades más baratas de ${c}`,
+		topScore: (c) => `Mejores notas en ${c}`,
+		seeRoute: (c) => `7 días por ${c}: una ruta`,
+		seeCoast: (c) => `Ciudades costeras de ${c}`,
+		nearIntro: (a, b) => `Cerca, también elegimos hoteles en ${a} y ${b}.`,
+		anchors: [(c) => `mejores hoteles de ${c}`, (c) => `dónde dormir en ${c}`],
+		across: "Al otro lado de la frontera",
+		acrossNote: "Ciudades de países vecinos a menos de 100 km (en línea recta).",
+		more: "Más",
+		srcGeo: "Fuentes: GeoNames (CC BY 4.0), Natural Earth (dominio público).",
+		srcPrice: "Precios: precio de referencia por noche para 2 adultos en las fechas que comprobamos; cambian cada día.",
+		menu: "Explorar",
+		filters: "Filtros",
+		regions: "Regiones",
+		continents: "Continentes",
+		countries: "Países"
+	},
+	de: {
+		home: "Startseite",
+		city: "Stadt",
+		country: "Land",
+		from: "Ab",
+		score: "Beste Gästebewertung",
+		bvPick: "Preis-Leistungs-Tipp",
+		luxPick: "Luxus-Tipp",
+		alt: "Höhe",
+		dist: "Entfernung",
+		pop: "Einwohner",
+		islands: "Inseln",
+		islandsLead: "Inseln, auf denen wir drei oder mehr Städte abdecken, jede mit unseren drei Empfehlungen.",
+		islandT: (i, n) => `Die besten Hotels auf ${i}: ${n} Städte im Vergleich`,
+		islandL: (i, n) => `Unsere Budget-, Preis-Leistungs- und Luxus-Empfehlungen in den ${n} Städten auf ${i}, mit Referenzpreisen und Gästebewertungen.`,
+		byPrice: "Hotels nach Preis",
+		byPriceLead: "Städte nach ihrem Ab-Preis: dem niedrigsten Referenzpreis pro Nacht unserer drei Empfehlungen.",
+		band: {
+			"under-50": "Unter 50 €",
+			"50-100": "50 bis 100 €",
+			"100-200": "100 bis 200 €",
+			"over-200": "Über 200 €"
+		},
+		bandT: (b) => `${b} pro Nacht: Städte mit guten Hotels`,
+		bandL: (b, n) => `${n} Städte, in denen die günstigste unserer drei Empfehlungen ${b.toLowerCase()} pro Nacht kostet (Referenzpreis).`,
+		cont: "Kontinent",
+		five: (p) => `Fünf-Sterne-Hotels unter ${p} € pro Nacht`,
+		fiveL: (p, n) => `${n} unserer Luxus-Empfehlungen sind Fünf-Sterne-Hotels mit einem Referenzpreis unter ${p} € pro Nacht.`,
+		coastal: "Küstenstädte",
+		coastalLead: "Städte höchstens 5 km von der Küste entfernt (Luftlinie vom Zentrum zur Küstenlinie von Natural Earth 1:10m).",
+		coastalT: (c, n) => `Küstenstädte in ${c}: ${n} mit unseren Hotels`,
+		coastKm: "Zur Küste",
+		mountain: "Bergstädte",
+		mountainLead: (n) => `${n} Städte über 800 m Höhe (GeoNames), jede mit unseren drei Empfehlungen.`,
+		gems: "Weniger bekannte Orte mit sehr guten Hotels",
+		gemsLead: (n) => `${n} Orte unter 50.000 Einwohnern (GeoNames), in denen unser Preis-Leistungs-Tipp eine Bewertung von 8,5 oder mehr hat.`,
+		routes: "Routen für eine Woche",
+		routesLead: "Drei bis fünf Städte pro Land in geografischer Reihenfolge, mit Entfernungen in Luftlinie.",
+		routeT: (c) => `7 Tage in ${c}: eine Route durch Städte mit guten Hotels`,
+		routeL: (c, n) => `Eine Wochenroute durch ${n} Städte in ${c}, in geografischer Reihenfolge, mit unseren drei Hotels an jedem Halt.`,
+		leg: "Vom vorigen Halt",
+		total: "Gesamt in Luftlinie",
+		noTimes: "Entfernungen in Luftlinie zwischen den Zentren; Reisezeiten zeigen wir nicht.",
+		cheapest: (c) => `Die günstigsten Städte in ${c}`,
+		topScore: (c) => `Die besten Bewertungen in ${c}`,
+		seeRoute: (c) => `7 Tage in ${c}: eine Route`,
+		seeCoast: (c) => `Küstenstädte in ${c}`,
+		nearIntro: (a, b) => `In der Nähe haben wir auch Hotels in ${a} und ${b} ausgewählt.`,
+		anchors: [(c) => `beste Hotels in ${c}`, (c) => `Übernachten in ${c}`],
+		across: "Jenseits der Grenze",
+		acrossNote: "Städte in Nachbarländern in weniger als 100 km (Luftlinie).",
+		more: "Mehr",
+		srcGeo: "Quellen: GeoNames (CC BY 4.0), Natural Earth (gemeinfrei).",
+		srcPrice: "Preise: Referenzpreis pro Nacht für 2 Erwachsene an den geprüften Daten; sie ändern sich täglich.",
+		menu: "Entdecken",
+		filters: "Filter",
+		regions: "Regionen",
+		continents: "Kontinente",
+		countries: "Länder"
+	},
+	fr: {
+		home: "Accueil",
+		city: "Ville",
+		country: "Pays",
+		from: "À partir de",
+		score: "Meilleure note",
+		bvPick: "Choix qualité-prix",
+		luxPick: "Choix luxe",
+		alt: "Altitude",
+		dist: "Distance",
+		pop: "Population",
+		islands: "Îles",
+		islandsLead: "Îles où nous couvrons trois villes ou plus, chacune avec nos trois choix.",
+		islandT: (i, n) => `Meilleurs hôtels : ${i} (${n} villes comparées)`,
+		islandL: (i, n) => `Nos choix petit budget, qualité-prix et luxe dans les ${n} villes couvertes (${i}), avec prix de référence et notes.`,
+		byPrice: "Hôtels par prix",
+		byPriceLead: "Villes classées selon leur prix « à partir de » : le prix de référence le plus bas par nuit parmi nos trois choix.",
+		band: {
+			"under-50": "Moins de 50 €",
+			"50-100": "De 50 à 100 €",
+			"100-200": "De 100 à 200 €",
+			"over-200": "Plus de 200 €"
+		},
+		bandT: (b) => `${b} la nuit : villes avec de bons hôtels`,
+		bandL: (b, n) => `${n} villes où le moins cher de nos trois choix coûte ${b.toLowerCase()} par nuit (prix de référence).`,
+		cont: "Continent",
+		five: (p) => `Hôtels cinq étoiles à moins de ${p} € la nuit`,
+		fiveL: (p, n) => `${n} de nos choix luxe sont des cinq étoiles avec un prix de référence inférieur à ${p} € la nuit.`,
+		coastal: "Villes côtières",
+		coastalLead: "Villes à 5 km ou moins de la côte (à vol d'oiseau depuis le centre jusqu'au trait de côte Natural Earth 1:10m).",
+		coastalT: (c, n) => `Villes côtières : ${c} (${n} avec nos hôtels)`,
+		coastKm: "Jusqu'à la côte",
+		mountain: "Villes de montagne",
+		mountainLead: (n) => `${n} villes à plus de 800 m d'altitude (GeoNames), chacune avec nos trois choix.`,
+		gems: "Villes peu connues avec de bons hôtels",
+		gemsLead: (n) => `${n} localités de moins de 50 000 habitants (GeoNames) où notre choix qualité-prix a une note de 8,5 ou plus.`,
+		routes: "Itinéraires d'une semaine",
+		routesLead: "Trois à cinq villes couvertes par pays, dans l'ordre géographique, avec les distances à vol d'oiseau.",
+		routeT: (c) => `7 jours : ${c}, un itinéraire par des villes aux bons hôtels`,
+		routeL: (c, n) => `Un itinéraire d'une semaine par ${n} villes (${c}), dans l'ordre géographique, avec nos trois hôtels à chaque étape.`,
+		leg: "Depuis l'étape précédente",
+		total: "Total à vol d'oiseau",
+		noTimes: "Distances à vol d'oiseau entre les centres ; nous n'indiquons pas de temps de trajet.",
+		cheapest: (c) => `Villes les moins chères : ${c}`,
+		topScore: (c) => `Meilleures notes : ${c}`,
+		seeRoute: (c) => `7 jours : ${c}, un itinéraire`,
+		seeCoast: (c) => `Villes côtières : ${c}`,
+		nearIntro: (a, b) => `À proximité, nous avons aussi choisi des hôtels à ${a} et ${b}.`,
+		anchors: [(c) => `meilleurs hôtels à ${c}`, (c) => `où dormir à ${c}`],
+		across: "De l'autre côté de la frontière",
+		acrossNote: "Villes de pays voisins à moins de 100 km (à vol d'oiseau).",
+		more: "Plus",
+		srcGeo: "Sources : GeoNames (CC BY 4.0), Natural Earth (domaine public).",
+		srcPrice: "Prix : prix de référence par nuit pour 2 adultes aux dates vérifiées ; ils changent chaque jour.",
+		menu: "Explorer",
+		filters: "Filtres",
+		regions: "Régions",
+		continents: "Continents",
+		countries: "Pays"
+	},
+	it: {
+		home: "Home",
+		city: "Città",
+		country: "Paese",
+		from: "Da",
+		score: "Miglior voto",
+		bvPick: "Scelta qualità-prezzo",
+		luxPick: "Scelta di lusso",
+		alt: "Altitudine",
+		dist: "Distanza",
+		pop: "Abitanti",
+		islands: "Isole",
+		islandsLead: "Isole in cui copriamo tre o più città, ognuna con le nostre tre scelte.",
+		islandT: (i, n) => `I migliori hotel: ${i} (${n} città a confronto)`,
+		islandL: (i, n) => `Le nostre scelte economica, qualità-prezzo e di lusso nelle ${n} città coperte (${i}), con prezzi di riferimento e voti.`,
+		byPrice: "Hotel per prezzo",
+		byPriceLead: "Città raggruppate per prezzo 'da': il prezzo di riferimento più basso a notte tra le nostre tre scelte.",
+		band: {
+			"under-50": "Meno di 50 €",
+			"50-100": "Da 50 a 100 €",
+			"100-200": "Da 100 a 200 €",
+			"over-200": "Oltre 200 €"
+		},
+		bandT: (b) => `${b} a notte: città con ottimi hotel`,
+		bandL: (b, n) => `${n} città dove la più economica delle nostre tre scelte costa ${b.toLowerCase()} a notte (prezzo di riferimento).`,
+		cont: "Continente",
+		five: (p) => `Hotel a cinque stelle sotto i ${p} € a notte`,
+		fiveL: (p, n) => `${n} delle nostre scelte di lusso sono cinque stelle con prezzo di riferimento sotto i ${p} € a notte.`,
+		coastal: "Città costiere",
+		coastalLead: "Città a 5 km o meno dalla costa (in linea d'aria dal centro alla linea di costa Natural Earth 1:10m).",
+		coastalT: (c, n) => `Città costiere: ${c} (${n} con i nostri hotel)`,
+		coastKm: "Alla costa",
+		mountain: "Città di montagna",
+		mountainLead: (n) => `${n} città sopra gli 800 m di altitudine (GeoNames), ognuna con le nostre tre scelte.`,
+		gems: "Località poco conosciute con ottimi hotel",
+		gemsLead: (n) => `${n} località sotto i 50.000 abitanti (GeoNames) dove la nostra scelta qualità-prezzo ha un voto di 8,5 o più.`,
+		routes: "Itinerari di una settimana",
+		routesLead: "Da tre a cinque città coperte per paese, in ordine geografico, con distanze in linea d'aria.",
+		routeT: (c) => `7 giorni: ${c}, un itinerario tra città con ottimi hotel`,
+		routeL: (c, n) => `Un itinerario di una settimana tra ${n} città (${c}), in ordine geografico, con i nostri tre hotel a ogni tappa.`,
+		leg: "Dalla tappa precedente",
+		total: "Totale in linea d'aria",
+		noTimes: "Distanze in linea d'aria tra i centri; non indichiamo tempi di viaggio.",
+		cheapest: (c) => `Le città più economiche: ${c}`,
+		topScore: (c) => `I voti migliori: ${c}`,
+		seeRoute: (c) => `7 giorni: ${c}, un itinerario`,
+		seeCoast: (c) => `Città costiere: ${c}`,
+		nearIntro: (a, b) => `Nei dintorni abbiamo scelto hotel anche a ${a} e ${b}.`,
+		anchors: [(c) => `migliori hotel a ${c}`, (c) => `dove dormire a ${c}`],
+		across: "Oltre il confine",
+		acrossNote: "Città di paesi vicini a meno di 100 km (in linea d'aria).",
+		more: "Altro",
+		srcGeo: "Fonti: GeoNames (CC BY 4.0), Natural Earth (pubblico dominio).",
+		srcPrice: "Prezzi: prezzo di riferimento a notte per 2 adulti nelle date verificate; cambiano ogni giorno.",
+		menu: "Esplora",
+		filters: "Filtri",
+		regions: "Regioni",
+		continents: "Continenti",
+		countries: "Paesi"
+	},
+	pt: {
+		home: "Início",
+		city: "Cidade",
+		country: "País",
+		from: "Desde",
+		score: "Melhor nota",
+		bvPick: "Escolha qualidade-preço",
+		luxPick: "Escolha de luxo",
+		alt: "Altitude",
+		dist: "Distância",
+		pop: "População",
+		islands: "Ilhas",
+		islandsLead: "Ilhas onde cobrimos três ou mais cidades, cada uma com as nossas três escolhas.",
+		islandT: (i, n) => `Melhores hotéis: ${i} (${n} cidades comparadas)`,
+		islandL: (i, n) => `As nossas escolhas económica, qualidade-preço e de luxo nas ${n} cidades cobertas (${i}), com preços de referência e notas.`,
+		byPrice: "Hotéis por preço",
+		byPriceLead: "Cidades agrupadas pelo preço 'desde': o preço de referência mais baixo por noite entre as nossas três escolhas.",
+		band: {
+			"under-50": "Menos de 50 €",
+			"50-100": "De 50 a 100 €",
+			"100-200": "De 100 a 200 €",
+			"over-200": "Mais de 200 €"
+		},
+		bandT: (b) => `${b} por noite: cidades com bons hotéis`,
+		bandL: (b, n) => `${n} cidades onde a mais barata das nossas três escolhas custa ${b.toLowerCase()} por noite (preço de referência).`,
+		cont: "Continente",
+		five: (p) => `Hotéis de cinco estrelas por menos de ${p} € por noite`,
+		fiveL: (p, n) => `${n} das nossas escolhas de luxo são hotéis de cinco estrelas com preço de referência abaixo de ${p} € por noite.`,
+		coastal: "Cidades costeiras",
+		coastalLead: "Cidades a 5 km ou menos da costa (em linha reta do centro até à linha de costa Natural Earth 1:10m).",
+		coastalT: (c, n) => `Cidades costeiras: ${c} (${n} com os nossos hotéis)`,
+		coastKm: "Até à costa",
+		mountain: "Cidades de montanha",
+		mountainLead: (n) => `${n} cidades acima de 800 m de altitude (GeoNames), cada uma com as nossas três escolhas.`,
+		gems: "Cidades pouco conhecidas com bons hotéis",
+		gemsLead: (n) => `${n} localidades com menos de 50 000 habitantes (GeoNames) onde a nossa escolha qualidade-preço tem nota de 8,5 ou mais.`,
+		routes: "Roteiros de uma semana",
+		routesLead: "Três a cinco cidades cobertas por país, em ordem geográfica, com distâncias em linha reta.",
+		routeT: (c) => `7 dias: ${c}, um roteiro por cidades com bons hotéis`,
+		routeL: (c, n) => `Um roteiro de uma semana por ${n} cidades (${c}), em ordem geográfica, com os nossos três hotéis em cada paragem.`,
+		leg: "Desde a paragem anterior",
+		total: "Total em linha reta",
+		noTimes: "Distâncias em linha reta entre os centros; não mostramos tempos de viagem.",
+		cheapest: (c) => `Cidades mais baratas: ${c}`,
+		topScore: (c) => `Melhores notas: ${c}`,
+		seeRoute: (c) => `7 dias: ${c}, um roteiro`,
+		seeCoast: (c) => `Cidades costeiras: ${c}`,
+		nearIntro: (a, b) => `Perto, também escolhemos hotéis em ${a} e ${b}.`,
+		anchors: [(c) => `melhores hotéis em ${c}`, (c) => `onde ficar em ${c}`],
+		across: "Do outro lado da fronteira",
+		acrossNote: "Cidades de países vizinhos a menos de 100 km (em linha reta).",
+		more: "Mais",
+		srcGeo: "Fontes: GeoNames (CC BY 4.0), Natural Earth (domínio público).",
+		srcPrice: "Preços: preço de referência por noite para 2 adultos nas datas verificadas; mudam todos os dias.",
+		menu: "Explorar",
+		filters: "Filtros",
+		regions: "Regiões",
+		continents: "Continentes",
+		countries: "Países"
+	},
+	da: {
+		home: "Forside",
+		city: "By",
+		country: "Land",
+		from: "Fra",
+		score: "Bedste gæstekarakter",
+		bvPick: "Bedste værdi",
+		luxPick: "Luksusvalg",
+		alt: "Højde",
+		dist: "Afstand",
+		pop: "Indbyggere",
+		islands: "Øer",
+		islandsLead: "Øer, hvor vi dækker tre eller flere byer, hver med vores tre valg.",
+		islandT: (i, n) => `De bedste hoteller på ${i}: ${n} byer sammenlignet`,
+		islandL: (i, n) => `Vores budget-, værdi- og luksusvalg i de ${n} byer på ${i}, med referencepriser og gæstekarakterer.`,
+		byPrice: "Hoteller efter pris",
+		byPriceLead: "Byer efter deres fra-pris: den laveste referencepris pr. nat blandt vores tre valg.",
+		band: {
+			"under-50": "Under 50 €",
+			"50-100": "50 til 100 €",
+			"100-200": "100 til 200 €",
+			"over-200": "Over 200 €"
+		},
+		bandT: (b) => `${b} pr. nat: byer med gode hoteller`,
+		bandL: (b, n) => `${n} byer, hvor det billigste af vores tre valg koster ${b.toLowerCase()} pr. nat (referencepris).`,
+		cont: "Kontinent",
+		five: (p) => `Femstjernede hoteller under ${p} € pr. nat`,
+		fiveL: (p, n) => `${n} af vores luksusvalg er femstjernede hoteller med en referencepris under ${p} € pr. nat.`,
+		coastal: "Kystbyer",
+		coastalLead: "Byer højst 5 km fra kysten (i lige linje fra centrum til Natural Earth 1:10m-kystlinjen).",
+		coastalT: (c, n) => `Kystbyer i ${c}: ${n} med vores hoteller`,
+		coastKm: "Til kysten",
+		mountain: "Bjergbyer",
+		mountainLead: (n) => `${n} byer over 800 m (GeoNames), hver med vores tre valg.`,
+		gems: "Mindre kendte byer med gode hoteller",
+		gemsLead: (n) => `${n} byer under 50.000 indbyggere (GeoNames), hvor vores værdivalg har en karakter på 8,5 eller mere.`,
+		routes: "Ruter på en uge",
+		routesLead: "Tre til fem byer pr. land i geografisk rækkefølge, med afstande i lige linje.",
+		routeT: (c) => `7 dage i ${c}: en rute gennem byer med gode hoteller`,
+		routeL: (c, n) => `En uges rute gennem ${n} byer i ${c}, i geografisk rækkefølge, med vores tre hoteller ved hvert stop.`,
+		leg: "Fra forrige stop",
+		total: "I alt i lige linje",
+		noTimes: "Afstande i lige linje mellem centrene; vi viser ikke rejsetider.",
+		cheapest: (c) => `De billigste byer i ${c}`,
+		topScore: (c) => `De bedste karakterer i ${c}`,
+		seeRoute: (c) => `7 dage i ${c}: en rute`,
+		seeCoast: (c) => `Kystbyer i ${c}`,
+		nearIntro: (a, b) => `I nærheden har vi også valgt hoteller i ${a} og ${b}.`,
+		anchors: [(c) => `bedste hoteller i ${c}`, (c) => `hvor du kan bo i ${c}`],
+		across: "På den anden side af grænsen",
+		acrossNote: "Byer i nabolande mindre end 100 km væk (i lige linje).",
+		more: "Mere",
+		srcGeo: "Kilder: GeoNames (CC BY 4.0), Natural Earth (offentligt domæne).",
+		srcPrice: "Priser: referencepris pr. nat for 2 voksne på de datoer, vi tjekkede; de ændrer sig hver dag.",
+		menu: "Udforsk",
+		filters: "Filtre",
+		regions: "Regioner",
+		continents: "Kontinenter",
+		countries: "Lande"
+	}
+};
+var ISL = [
+	[
+		"mallorca",
+		[
+			"Mallorca",
+			"Mallorca",
+			"Mallorca",
+			"Majorque",
+			"Maiorca",
+			"Maiorca",
+			"Mallorca"
+		],
+		"ES",
+		[
+			39.25,
+			40,
+			2.3,
+			3.5
+		]
+	],
+	[
+		"ibiza",
+		[
+			"Ibiza",
+			"Ibiza",
+			"Ibiza",
+			"Ibiza",
+			"Ibiza",
+			"Ibiza",
+			"Ibiza"
+		],
+		"ES",
+		[
+			38.6,
+			39.15,
+			1.15,
+			1.65
+		]
+	],
+	[
+		"tenerife",
+		[
+			"Tenerife",
+			"Tenerife",
+			"Teneriffa",
+			"Tenerife",
+			"Tenerife",
+			"Tenerife",
+			"Tenerife"
+		],
+		"ES",
+		[
+			27.98,
+			28.6,
+			-16.95,
+			-16.1
+		]
+	],
+	[
+		"gran-canaria",
+		[
+			"Gran Canaria",
+			"Gran Canaria",
+			"Gran Canaria",
+			"Grande Canarie",
+			"Gran Canaria",
+			"Gran Canária",
+			"Gran Canaria"
+		],
+		"ES",
+		[
+			27.73,
+			28.2,
+			-15.85,
+			-15.35
+		]
+	],
+	[
+		"lanzarote",
+		[
+			"Lanzarote",
+			"Lanzarote",
+			"Lanzarote",
+			"Lanzarote",
+			"Lanzarote",
+			"Lanzarote",
+			"Lanzarote"
+		],
+		"ES",
+		[
+			28.83,
+			29.25,
+			-13.9,
+			-13.4
+		]
+	],
+	[
+		"fuerteventura",
+		[
+			"Fuerteventura",
+			"Fuerteventura",
+			"Fuerteventura",
+			"Fuerteventura",
+			"Fuerteventura",
+			"Fuerteventura",
+			"Fuerteventura"
+		],
+		"ES",
+		[
+			28,
+			28.78,
+			-14.55,
+			-13.8
+		]
+	],
+	[
+		"sicily",
+		[
+			"Sicily",
+			"Sicilia",
+			"Sizilien",
+			"Sicile",
+			"Sicilia",
+			"Sicília",
+			"Sicilien"
+		],
+		"IT",
+		[
+			36.6,
+			38.35,
+			12.3,
+			15.7
+		],
+		"Sicily"
+	],
+	[
+		"sardinia",
+		[
+			"Sardinia",
+			"Cerdeña",
+			"Sardinien",
+			"Sardaigne",
+			"Sardegna",
+			"Sardenha",
+			"Sardinien"
+		],
+		"IT",
+		[
+			38.85,
+			41.3,
+			8.1,
+			9.85
+		],
+		"Sardinia"
+	],
+	[
+		"corsica",
+		[
+			"Corsica",
+			"Córcega",
+			"Korsika",
+			"Corse",
+			"Corsica",
+			"Córsega",
+			"Korsika"
+		],
+		"FR",
+		[
+			41.33,
+			43.03,
+			8.53,
+			9.57
+		]
+	],
+	[
+		"crete",
+		[
+			"Crete",
+			"Creta",
+			"Kreta",
+			"Crète",
+			"Creta",
+			"Creta",
+			"Kreta"
+		],
+		"GR",
+		[
+			34.9,
+			35.7,
+			23.5,
+			26.35
+		]
+	],
+	[
+		"corfu",
+		[
+			"Corfu",
+			"Corfú",
+			"Korfu",
+			"Corfou",
+			"Corfù",
+			"Corfu",
+			"Korfu"
+		],
+		"GR",
+		[
+			39.35,
+			39.85,
+			19.6,
+			20.15
+		]
+	],
+	[
+		"rhodes",
+		[
+			"Rhodes",
+			"Rodas",
+			"Rhodos",
+			"Rhodes",
+			"Rodi",
+			"Rodes",
+			"Rhodos"
+		],
+		"GR",
+		[
+			35.85,
+			36.47,
+			27.68,
+			28.25
+		]
+	],
+	[
+		"madeira",
+		[
+			"Madeira",
+			"Madeira",
+			"Madeira",
+			"Madère",
+			"Madeira",
+			"Madeira",
+			"Madeira"
+		],
+		"PT",
+		[
+			32.6,
+			32.9,
+			-17.3,
+			-16.6
+		]
+	],
+	[
+		"cyprus",
+		[
+			"Cyprus",
+			"Chipre",
+			"Zypern",
+			"Chypre",
+			"Cipro",
+			"Chipre",
+			"Cypern"
+		],
+		"CY",
+		[
+			34.5,
+			35.75,
+			32.2,
+			34.65
+		]
+	],
+	[
+		"malta",
+		[
+			"Malta",
+			"Malta",
+			"Malta",
+			"Malte",
+			"Malta",
+			"Malta",
+			"Malta"
+		],
+		"MT",
+		[
+			35.78,
+			36.09,
+			14.15,
+			14.58
+		]
+	],
+	[
+		"bali",
+		[
+			"Bali",
+			"Bali",
+			"Bali",
+			"Bali",
+			"Bali",
+			"Bali",
+			"Bali"
+		],
+		"ID",
+		[
+			-8.85,
+			-8.05,
+			114.4,
+			115.72
+		],
+		"Bali"
+	],
+	[
+		"phuket",
+		[
+			"Phuket",
+			"Phuket",
+			"Phuket",
+			"Phuket",
+			"Phuket",
+			"Phuket",
+			"Phuket"
+		],
+		"TH",
+		[
+			7.75,
+			8.2,
+			98.25,
+			98.45
+		]
+	],
+	[
+		"tasmania",
+		[
+			"Tasmania",
+			"Tasmania",
+			"Tasmanien",
+			"Tasmanie",
+			"Tasmania",
+			"Tasmânia",
+			"Tasmanien"
+		],
+		"AU",
+		[
+			-43.7,
+			-40.6,
+			144.5,
+			148.5
+		]
+	],
+	[
+		"oahu",
+		[
+			"Oʻahu",
+			"Oahu",
+			"Oʻahu",
+			"Oahu",
+			"Oahu",
+			"Oahu",
+			"Oahu"
+		],
+		"US",
+		[
+			21.25,
+			21.72,
+			-158.3,
+			-157.6
+		]
+	],
+	[
+		"iceland",
+		[
+			"Iceland",
+			"Islandia",
+			"Island",
+			"Islande",
+			"Islanda",
+			"Islândia",
+			"Island"
+		],
+		"IS",
+		[
+			63.2,
+			66.6,
+			-24.6,
+			-13.4
+		]
+	],
+	[
+		"zealand",
+		[
+			"Zealand",
+			"Selandia",
+			"Seeland",
+			"Seeland",
+			"Selandia",
+			"Zelândia",
+			"Sjælland"
+		],
+		"DK",
+		[
+			54.96,
+			56.13,
+			10.9,
+			12.7
+		],
+		"Zealand"
+	],
+	[
+		"jeju",
+		[
+			"Jeju",
+			"Jeju",
+			"Jeju",
+			"Jeju",
+			"Jeju",
+			"Jeju",
+			"Jeju"
+		],
+		"KR",
+		[
+			33.1,
+			33.6,
+			126.1,
+			127
+		]
+	],
+	[
+		"sri-lanka",
+		[
+			"Sri Lanka",
+			"Sri Lanka",
+			"Sri Lanka",
+			"Sri Lanka",
+			"Sri Lanka",
+			"Sri Lanka",
+			"Sri Lanka"
+		],
+		"LK",
+		[
+			5.9,
+			9.9,
+			79.5,
+			82
+		]
+	],
+	[
+		"mauritius",
+		[
+			"Mauritius",
+			"Mauricio",
+			"Mauritius",
+			"Maurice",
+			"Mauritius",
+			"Maurícia",
+			"Mauritius"
+		],
+		"MU",
+		[
+			-20.55,
+			-19.95,
+			57.3,
+			57.85
+		]
+	]
+];
+var LI = (L) => LANGS.indexOf(L);
+async function islandCities() {
+	const { index } = await data();
+	const out = /* @__PURE__ */ new Map();
+	for (const [s, , cc, [a, b, c, d], reg] of ISL) {
+		const cs = index.filter((x) => x.cc === cc && x.lat >= a && x.lat <= b && x.lng >= c && x.lng <= d && (!reg || T12.R.r[T12.R.c[x.slug] ?? ""]?.n === reg));
+		if (cs.length >= 3) out.set(s, cs.sort((p, q) => (q.pop ?? 0) - (p.pop ?? 0)));
+	}
+	return out;
+}
+var ISLC = null;
+var islands = () => ISLC ??= islandCities();
+function cityTable(L, rs, extra) {
+	const x = TX$5[L];
+	return `<div class="tablewrap" style="overflow-x:auto"><table><thead><tr><th scope="col">${esc(x.city)}</th>${extra ? `<th scope="col">${esc(extra.h)}</th>` : ""}<th scope="col">${esc(x.from)}</th><th scope="col">${esc(x.bvPick)}</th><th scope="col">${esc(x.score)}</th></tr></thead><tbody>${rs.map((r) => `<tr><th scope="row"><a href="${P(L, "/" + r.c.slug)}">${esc(cityName(r.c, L))}</a> <small>${esc(ctry(r.c, L))}</small></th>${extra ? `<td>${extra.v(r)}</td>` : ""}<td>${r.from != null ? money(r.from) : "–"}</td><td>${esc(r.bv?.name ?? "–")}</td><td>${r.best ? sc$1(L, r.best) : "–"}</td></tr>`).join("")}</tbody></table></div>`;
+}
+var crumbs = (L, items) => `<p class="crumbs"><a href="${P(L, "/")}">${esc(TX$5[L].home)}</a>${items.map(([n, h]) => ` › ${h ? `<a href="${P(L, h)}">${esc(n)}</a>` : esc(n)}`).join("")}</p>`;
+var crumbLd = (L, items) => ({
+	"@context": "https://schema.org",
+	"@type": "BreadcrumbList",
+	itemListElement: [["Top3Hotels", "/"], ...items].map(([n, h], i) => ({
+		"@type": "ListItem",
+		position: i + 1,
+		name: n,
+		item: SITE + P(L, h)
+	}))
+});
+var listLd = (name, L, cs) => ({
+	"@context": "https://schema.org",
+	"@type": "ItemList",
+	name,
+	numberOfItems: cs.length,
+	itemListElement: cs.map((c, i) => ({
+		"@type": "ListItem",
+		position: i + 1,
+		name: cityName(c, L),
+		url: SITE + P(L, "/" + c.slug)
+	}))
+});
+var rowOf = async (cs) => {
+	const all = await rows();
+	const m = new Map(all.map((r) => [r.c.slug, r]));
+	return cs.map((c) => m.get(c.slug)).filter((r) => !!r);
+};
+async function islandPage(slug, L) {
+	const isl = ISL.find((i) => i[0] === slug);
+	const cs = (await islands()).get(slug);
+	if (!isl || !cs) return null;
+	const x = TX$5[L], n = isl[1][LI(L)] ?? isl[1][0];
+	const rs = await rowOf(cs);
+	const title = x.islandT(n, cs.length);
+	const body = `${crumbs(L, [[x.islands, "/islands"], [n]])}<h1>${esc(title)}<em>.</em></h1><p class="lead">${esc(x.islandL(n, cs.length))}</p>
+${T12.svgMap(cs.map((c) => ({
+		n: cityName(c, L),
+		lat: c.lat,
+		lng: c.lng,
+		href: P(L, "/" + c.slug)
+	})), T12.tx(L).map)}${cityTable(L, rs)}<p class="note">${esc(x.srcPrice)}</p>${await islandsList(L, slug)}`;
+	return page({
+		L,
+		title: `${title} | Top3Hotels`,
+		description: `${x.islandL(n, cs.length)} ${cs.slice(0, 5).map((c) => cityName(c, L)).join(", ")}.`,
+		path: "/islands/" + slug,
+		body,
+		ld: [crumbLd(L, [[x.islands, "/islands"], [n, "/islands/" + slug]]), listLd(title, L, cs)],
+		langs: true
+	});
+}
+async function islandsList(L, skip) {
+	const m = await islands();
+	const x = TX$5[L];
+	const li = ISL.filter((i) => m.has(i[0]) && i[0] !== skip).map((i) => `<li><a href="${P(L, "/islands/" + i[0])}">${esc(i[1][LI(L)] ?? i[1][0])} <span>(${m.get(i[0]).length})</span></a></li>`).join("");
+	return li ? `<section><h2>${esc(x.islands)}</h2><ul class="grid">${li}</ul></section>` : "";
+}
+async function islandsIndex(L) {
+	const x = TX$5[L];
+	const m = await islands();
+	const body = `${crumbs(L, [[x.islands]])}<h1>${esc(x.islands)}<em>.</em></h1><p class="lead">${esc(x.islandsLead)}</p>${await islandsList(L)}${hubBlock(L)}`;
+	return page({
+		L,
+		title: `${x.islands}: ${m.size} | Top3Hotels`,
+		description: x.islandsLead,
+		path: "/islands",
+		body,
+		ld: [crumbLd(L, [[x.islands, "/islands"]])],
+		langs: true
+	});
+}
+var BANDS = [
+	[
+		"under-50",
+		0,
+		50
+	],
+	[
+		"50-100",
+		50,
+		100
+	],
+	[
+		"100-200",
+		100,
+		200
+	],
+	[
+		"over-200",
+		200,
+		1e9
+	]
+];
+var contOf = (c) => T12.R.k[c.cc ?? ""] ?? "";
+async function priceIndex(L) {
+	const x = TX$5[L];
+	const rs = (await rows()).filter((r) => r.from != null);
+	const conts = Object.keys(T12.CONT);
+	const cnt = (k, a, b) => rs.filter((r) => contOf(r.c) === k && r.from >= a && r.from < b).length;
+	const table = `<div class="tablewrap" style="overflow-x:auto"><table><thead><tr><th scope="col">${esc(x.cont)}</th>${BANDS.map(([s]) => `<th scope="col"><a href="${P(L, "/hotels-by-price/" + s)}">${esc(x.band[s])}</a></th>`).join("")}</tr></thead><tbody>${conts.map((k) => `<tr><th scope="row"><a href="${P(L, "/continent/" + T12.CONT[k].s)}">${esc(T12.CONT[k][L])}</a></th>${BANDS.map(([, a, b]) => `<td>${cnt(k, a, b)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
+	const body = `${crumbs(L, [[x.byPrice]])}<h1>${esc(x.byPrice)}<em>.</em></h1><p class="lead">${esc(x.byPriceLead)}</p>${table}<ul class="grid">${BANDS.map(([s, a, b]) => `<li><a href="${P(L, "/hotels-by-price/" + s)}">${esc(x.band[s])} <span>(${rs.filter((r) => r.from >= a && r.from < b).length})</span></a></li>`).join("")}</ul><section><h2>${esc(x.luxPick)} ★★★★★</h2><ul class="grid">${[
+		150,
+		200,
+		300
+	].map((p) => `<li><a href="${P(L, `/five-star-under-${p}`)}">${esc(x.five(p))}</a></li>`).join("")}</ul></section><p class="note">${esc(x.srcPrice)}</p>${hubBlock(L)}`;
+	return page({
+		L,
+		title: `${x.byPrice} | Top3Hotels`,
+		description: x.byPriceLead,
+		path: "/hotels-by-price",
+		body,
+		ld: [crumbLd(L, [[x.byPrice, "/hotels-by-price"]])],
+		langs: true
+	});
+}
+async function bandPage(s, L) {
+	const bd = BANDS.find((b) => b[0] === s);
+	if (!bd) return null;
+	const x = TX$5[L];
+	const rs = (await rows()).filter((r) => r.from != null && r.from >= bd[1] && r.from < bd[2]).sort((a, b) => a.from - b.from);
+	const b = x.band[s];
+	const groups = Object.keys(T12.CONT).map((k) => ({
+		k,
+		rs: rs.filter((r) => contOf(r.c) === k)
+	})).filter((g) => g.rs.length);
+	const body = `${crumbs(L, [[x.byPrice, "/hotels-by-price"], [b]])}<h1>${esc(x.bandT(b))}<em>.</em></h1><p class="lead">${esc(x.bandL(b, rs.length))}</p>${groups.map((g) => `<section><h2>${esc(T12.CONT[g.k][L])} <small>(${g.rs.length})</small></h2><ul class="grid">${g.rs.map((r) => `<li><a href="${P(L, "/" + r.c.slug)}">${esc(cityName(r.c, L))} <span>${money(r.from)}</span></a></li>`).join("")}</ul></section>`).join("")}<p class="note">${esc(x.srcPrice)}</p><p class="note">${BANDS.filter((o) => o[0] !== s).map((o) => `<a href="${P(L, "/hotels-by-price/" + o[0])}">${esc(x.band[o[0]])}</a>`).join(" · ")}</p>`;
+	return page({
+		L,
+		title: `${x.bandT(b)} | Top3Hotels`,
+		description: x.bandL(b, rs.length),
+		path: "/hotels-by-price/" + s,
+		body,
+		ld: [crumbLd(L, [[x.byPrice, "/hotels-by-price"], [b, "/hotels-by-price/" + s]]), listLd(x.bandT(b), L, rs.slice(0, 100).map((r) => r.c))],
+		langs: true
+	});
+}
+var FIVE = [
+	150,
+	200,
+	300
+];
+async function fivePage(p, L) {
+	if (!FIVE.includes(p)) return null;
+	const x = TX$5[L];
+	const rs = (await rows()).filter((r) => r.lux?.stars === 5 && r.lux.nightly != null && r.lux.nightly > 0 && r.lux.nightly < p).sort((a, b) => a.lux.nightly - b.lux.nightly);
+	const byC = /* @__PURE__ */ new Map();
+	for (const r of rs) byC.set(r.c.cslug, [...byC.get(r.c.cslug) ?? [], r]);
+	const groups = [...byC.entries()].sort((a, b) => b[1].length - a[1].length || ctry(a[1][0].c, L).localeCompare(ctry(b[1][0].c, L), L));
+	const body = `${crumbs(L, [[x.byPrice, "/hotels-by-price"], [x.five(p)]])}<h1>${esc(x.five(p))}<em>.</em></h1><p class="lead">${esc(x.fiveL(p, rs.length))}</p>${groups.map(([cs, g]) => `<section><h2><a href="${P(L, "/country/" + cs)}">${esc(ctry(g[0].c, L))}</a> <small>(${g.length})</small></h2><div class="tablewrap" style="overflow-x:auto"><table><thead><tr><th scope="col">${esc(x.city)}</th><th scope="col">${esc(x.luxPick)}</th><th scope="col">${esc(x.from)}</th><th scope="col">${esc(x.score)}</th></tr></thead><tbody>${g.map((r) => `<tr><th scope="row"><a href="${P(L, "/" + r.c.slug)}#lux">${esc(cityName(r.c, L))}</a></th><td>${esc(r.lux.name)} ★★★★★</td><td>${money(r.lux.nightly)}</td><td>${r.lux.score ? sc$1(L, r.lux.score) : "–"}</td></tr>`).join("")}</tbody></table></div></section>`).join("")}<p class="note">${esc(x.srcPrice)}</p><p class="note">${FIVE.filter((q) => q !== p).map((q) => `<a href="${P(L, `/five-star-under-${q}`)}">${esc(x.five(q))}</a>`).join(" · ")}</p>`;
+	return page({
+		L,
+		title: `${x.five(p)} | Top3Hotels`,
+		description: x.fiveL(p, rs.length),
+		path: `/five-star-under-${p}`,
+		body,
+		ld: [crumbLd(L, [[x.byPrice, "/hotels-by-price"], [x.five(p), `/five-star-under-${p}`]]), listLd(x.five(p), L, rs.slice(0, 100).map((r) => r.c))],
+		langs: true
+	});
+}
+var COAST_KM = 5;
+var coastKm = (c) => GEO$1.c[c.slug]?.[2] ?? null;
+async function coastalByCountry() {
+	const rs = (await rows()).filter((r) => {
+		const k = coastKm(r.c);
+		return k != null && k <= COAST_KM;
+	});
+	const m = /* @__PURE__ */ new Map();
+	for (const r of rs) m.set(r.c.cslug, [...m.get(r.c.cslug) ?? [], r]);
+	return m;
+}
+async function coastalIndex(L) {
+	const x = TX$5[L];
+	const list = [...(await coastalByCountry()).entries()].sort((a, b) => ctry(a[1][0].c, L).localeCompare(ctry(b[1][0].c, L), L));
+	const total = list.reduce((s, [, v]) => s + v.length, 0);
+	const body = `${crumbs(L, [[x.coastal]])}<h1>${esc(x.coastal)}<em>.</em></h1><p class="lead">${esc(x.coastalLead)} ${nf(L, total)}.</p>${list.map(([cs, v]) => `<section><h2>${v.length >= 3 ? `<a href="${P(L, "/coastal-cities/" + cs)}">${esc(ctry(v[0].c, L))}</a>` : esc(ctry(v[0].c, L))} <small>(${v.length})</small></h2><ul class="grid">${v.map((r) => `<li><a href="${P(L, "/" + r.c.slug)}">${esc(cityName(r.c, L))}</a></li>`).join("")}</ul></section>`).join("")}<p class="note">${esc(x.srcGeo)}</p>`;
+	return page({
+		L,
+		title: `${x.coastal}: ${nf(L, total)} | Top3Hotels`,
+		description: x.coastalLead,
+		path: "/coastal-cities",
+		body,
+		ld: [crumbLd(L, [[x.coastal, "/coastal-cities"]])],
+		langs: true
+	});
+}
+async function coastalCountry(cs, L) {
+	const v = (await coastalByCountry()).get(cs);
+	if (!v || v.length < 3) return null;
+	const x = TX$5[L], cn = ctry(v[0].c, L);
+	const rs = [...v].sort((a, b) => (b.c.pop ?? 0) - (a.c.pop ?? 0));
+	const title = x.coastalT(cn, rs.length);
+	const body = `${crumbs(L, [[x.coastal, "/coastal-cities"], [cn]])}<h1>${esc(title)}<em>.</em></h1><p class="lead">${esc(x.coastalLead)}</p>${T12.svgMap(rs.map((r) => ({
+		n: cityName(r.c, L),
+		lat: r.c.lat,
+		lng: r.c.lng,
+		href: P(L, "/" + r.c.slug)
+	})), T12.tx(L).map)}${cityTable(L, rs, {
+		h: x.coastKm,
+		v: (r) => `${coastKm(r.c).toLocaleString(L === "en" ? "en-GB" : L)} km`
+	})}<p class="note">${esc(x.srcGeo)} ${esc(x.srcPrice)}</p><p class="note"><a href="${P(L, "/country/" + cs)}">${esc(cn)} →</a></p>`;
+	return page({
+		L,
+		title: `${title} | Top3Hotels`,
+		description: `${title}. ${rs.slice(0, 6).map((r) => cityName(r.c, L)).join(", ")}.`,
+		path: "/coastal-cities/" + cs,
+		body,
+		ld: [crumbLd(L, [[x.coastal, "/coastal-cities"], [cn, "/coastal-cities/" + cs]]), listLd(title, L, rs.map((r) => r.c))],
+		langs: true
+	});
+}
+async function mountainPage(L) {
+	const x = TX$5[L];
+	const rs = (await rows()).filter((r) => (GEO$1.c[r.c.slug]?.[0] ?? 0) > 800).sort((a, b) => GEO$1.c[b.c.slug][0] - GEO$1.c[a.c.slug][0]);
+	const body = `${crumbs(L, [[x.mountain]])}<h1>${esc(x.mountain)}<em>.</em></h1><p class="lead">${esc(x.mountainLead(rs.length))}</p>${cityTable(L, rs, {
+		h: x.alt,
+		v: (r) => `${nf(L, GEO$1.c[r.c.slug][0])} m`
+	})}<p class="note">${esc(x.srcGeo)} ${esc(x.srcPrice)}</p>${hubBlock(L)}`;
+	return page({
+		L,
+		title: `${x.mountain}: ${rs.length} | Top3Hotels`,
+		description: x.mountainLead(rs.length),
+		path: "/mountain-cities",
+		body,
+		ld: [crumbLd(L, [[x.mountain, "/mountain-cities"]]), listLd(x.mountain, L, rs.map((r) => r.c))],
+		langs: true
+	});
+}
+var popOf = (c) => GEO$1.c[c.slug]?.[1] ?? null;
+async function gemsPage(L) {
+	const x = TX$5[L];
+	const rs = (await rows()).filter((r) => {
+		const p = popOf(r.c);
+		return p != null && p > 0 && p < 5e4 && (r.bv?.score ?? 0) >= 8.5;
+	}).sort((a, b) => (b.bv.score ?? 0) - (a.bv.score ?? 0));
+	const tb = `<div class="tablewrap" style="overflow-x:auto"><table><thead><tr><th scope="col">${esc(x.city)}</th><th scope="col">${esc(x.pop)}</th><th scope="col">${esc(x.bvPick)}</th><th scope="col">${esc(x.score)}</th><th scope="col">${esc(x.from)}</th></tr></thead><tbody>${rs.map((r) => `<tr><th scope="row"><a href="${P(L, "/" + r.c.slug)}#value">${esc(cityName(r.c, L))}</a> <small>${esc(ctry(r.c, L))}</small></th><td>${nf(L, popOf(r.c))}</td><td>${esc(r.bv.name)}</td><td>${sc$1(L, r.bv.score)}</td><td>${r.bv.nightly ? money(r.bv.nightly) : "–"}</td></tr>`).join("")}</tbody></table></div>`;
+	const body = `${crumbs(L, [[x.gems]])}<h1>${esc(x.gems)}<em>.</em></h1><p class="lead">${esc(x.gemsLead(rs.length))}</p>${tb}<p class="note">${esc(x.srcGeo)} ${esc(x.srcPrice)}</p>${hubBlock(L)}`;
+	return page({
+		L,
+		title: `${x.gems}: ${rs.length} | Top3Hotels`,
+		description: x.gemsLead(rs.length),
+		path: "/hidden-gems",
+		body,
+		ld: [crumbLd(L, [[x.gems, "/hidden-gems"]]), listLd(x.gems, L, rs.map((r) => r.c))],
+		langs: true
+	});
+}
+async function routeFor(cs) {
+	const { byCountry } = await data();
+	const list = [...byCountry.get(cs) ?? []].sort((a, b) => (b.pop ?? 0) - (a.pop ?? 0));
+	if (list.length < 3) return null;
+	const pool = list.slice(0, 12);
+	const out = [pool[0]];
+	while (out.length < 5) {
+		const last = out[out.length - 1];
+		const nx = pool.filter((c) => !out.includes(c)).map((c) => ({
+			c,
+			d: kmD(last, c)
+		})).filter((o) => o.d >= 15 && o.d <= 400).sort((a, b) => a.d - b.d)[0];
+		if (!nx) break;
+		out.push(nx.c);
+	}
+	return out.length >= 3 ? out : null;
+}
+var RT = null;
+var routeCountries = () => RT ??= (async () => {
+	const { byCountry } = await data();
+	const ok = [];
+	for (const cs of byCountry.keys()) if (await routeFor(cs)) ok.push(cs);
+	return ok;
+})();
+async function routePage(cs, L) {
+	const r = await routeFor(cs);
+	if (!r) return null;
+	const x = TX$5[L], cn = ctry(r[0], L);
+	const rs = await rowOf(r);
+	const legs = r.map((c, i) => i ? kmD(r[i - 1], c) : 0);
+	const title = x.routeT(cn);
+	const steps = `<ol class="t12route">${rs.map((o, i) => `<li><h3><a href="${P(L, "/" + o.c.slug)}">${esc(cityName(o.c, L))}</a></h3><p>${i ? `${esc(x.leg)}: ${nf(L, legs[i])} km · ` : ""}${esc(x.from)} ${o.from != null ? money(o.from) : "–"} · ${esc(x.bvPick)}: ${esc(o.bv?.name ?? "–")}${o.bv?.score ? ` (${sc$1(L, o.bv.score)})` : ""}</p></li>`).join("")}</ol><p><b>${esc(x.total)}:</b> ${nf(L, legs.reduce((a, b) => a + b, 0))} km</p>`;
+	const body = `<style>.t12route{padding-left:22px}.t12route li{margin:0 0 14px}.t12route h3{margin:0 0 4px;font-size:19px}.t12route p{margin:0;color:var(--muted)}</style>${crumbs(L, [[x.routes, "/routes"], [cn]])}<h1>${esc(title)}<em>.</em></h1><p class="lead">${esc(x.routeL(cn, r.length))}</p>${T12.svgMap(r.map((c, i) => ({
+		n: `${i + 1}. ${cityName(c, L)}`,
+		lat: c.lat,
+		lng: c.lng,
+		href: P(L, "/" + c.slug)
+	})), T12.tx(L).map)}${steps}<p class="note">${esc(x.noTimes)} ${esc(x.srcPrice)}</p><p class="note"><a href="${P(L, "/country/" + cs)}">${esc(cn)} →</a> · <a href="${P(L, "/routes")}">${esc(x.routes)} →</a></p>`;
+	const ld = [crumbLd(L, [[x.routes, "/routes"], [cn, "/routes/" + cs]]), {
+		"@context": "https://schema.org",
+		"@type": "ItemList",
+		name: title,
+		itemListOrder: "https://schema.org/ItemListOrderAscending",
+		numberOfItems: r.length,
+		itemListElement: r.map((c, i) => ({
+			"@type": "ListItem",
+			position: i + 1,
+			name: cityName(c, L),
+			url: SITE + P(L, "/" + c.slug)
+		}))
+	}];
+	return page({
+		L,
+		title: `${title} | Top3Hotels`,
+		description: `${x.routeL(cn, r.length)} ${r.map((c) => cityName(c, L)).join(", ")}.`,
+		path: "/routes/" + cs,
+		body,
+		ld,
+		langs: true
+	});
+}
+async function routesIndex(L) {
+	const x = TX$5[L];
+	const { byCountry } = await data();
+	const cs = (await routeCountries()).map((s) => ({
+		s,
+		n: ctry(byCountry.get(s)[0], L)
+	})).sort((a, b) => a.n.localeCompare(b.n, L));
+	const body = `${crumbs(L, [[x.routes]])}<h1>${esc(x.routes)}<em>.</em></h1><p class="lead">${esc(x.routesLead)}</p><ul class="grid">${cs.map((c) => `<li><a href="${P(L, "/routes/" + c.s)}">${esc(x.seeRoute(c.n))}</a></li>`).join("")}</ul><p class="note">${esc(x.noTimes)}</p>${hubBlock(L)}`;
+	return page({
+		L,
+		title: `${x.routes}: ${cs.length} | Top3Hotels`,
+		description: x.routesLead,
+		path: "/routes",
+		body,
+		ld: [crumbLd(L, [[x.routes, "/routes"]])],
+		langs: true
+	});
+}
+/** links to the new hubs (used on hub pages, /destinations and the 404-free pages) */
+function hubBlock(L) {
+	const x = TX$5[L];
+	const items = [
+		[T12.tx(L).regions, "/regions"],
+		[x.islands, "/islands"],
+		[x.coastal, "/coastal-cities"],
+		[x.mountain, "/mountain-cities"],
+		[x.gems, "/hidden-gems"],
+		[x.routes, "/routes"],
+		[x.byPrice, "/hotels-by-price"]
+	];
+	return `<section><h2>${esc(x.menu)}</h2><ul class="grid">${items.map(([n, h]) => `<li><a href="${P(L, h)}">${esc(n)}</a></li>`).join("")}</ul></section>`;
+}
+/** T12.8 (+ route and coastal links): country page blocks */
+async function countryBlocks(cslug, L) {
+	const { byCountry } = await data();
+	const list = byCountry.get(cslug) ?? [];
+	if (!list.length) return "";
+	const x = TX$5[L], cn = ctry(list[0], L);
+	const rs = await rowOf(list);
+	let out = "";
+	if (rs.length >= 6) {
+		const cheap = rs.filter((r) => r.from != null).sort((a, b) => a.from - b.from).slice(0, 5);
+		const top = rs.filter((r) => r.best > 0).sort((a, b) => b.best - a.best || (a.from ?? 1e9) - (b.from ?? 1e9)).slice(0, 5);
+		out += `<section><h2>${esc(x.cheapest(cn))}</h2><ol>${cheap.map((r) => `<li><a href="${P(L, "/" + r.c.slug)}">${esc(cityName(r.c, L))}</a>: ${esc(x.from.toLowerCase())} ${money(r.from)}</li>`).join("")}</ol></section><section><h2>${esc(x.topScore(cn))}</h2><ol>${top.map((r) => `<li><a href="${P(L, "/" + r.c.slug)}">${esc(cityName(r.c, L))}</a>: ${sc$1(L, r.best)}/10</li>`).join("")}</ol></section>`;
+	}
+	const links = [];
+	if ((await routeCountries()).includes(cslug)) links.push(`<a href="${P(L, "/routes/" + cslug)}">${esc(x.seeRoute(cn))}</a>`);
+	if (((await coastalByCountry()).get(cslug)?.length ?? 0) >= 3) links.push(`<a href="${P(L, "/coastal-cities/" + cslug)}">${esc(x.seeCoast(cn))}</a>`);
+	const isl = await islands();
+	for (const i of ISL) if (isl.get(i[0])?.[0]?.cslug === cslug) links.push(`<a href="${P(L, "/islands/" + i[0])}">${esc(i[1][LI(L)] ?? i[1][0])}</a>`);
+	if (links.length) out += `<p class="note" style="margin:14px 0">${links.join(" · ")}</p>`;
+	return out;
+}
+/** T12.11 + T12.12: one sentence in the city intro linking two nearby cities with descriptive anchors */
+async function nearIntro(slug, L) {
+	const { bySlug } = await data();
+	const c = bySlug.get(slug);
+	if (!c) return "";
+	const ns = (c.near ?? []).map((s) => bySlug.get(s)).filter((n) => !!n && n.slug !== slug).slice(0, 2);
+	if (ns.length < 2) return "";
+	const x = TX$5[L];
+	const a = (n, i) => `<a href="${P(L, "/" + n.slug)}">${esc(x.anchors[i](cityName(n, L)))}</a> (${nf(L, kmD(c, n))} km)`;
+	return `<p class="t12near" style="margin:14px 0 0;font-size:15px">${x.nearIntro(a(ns[0], 0), a(ns[1], 1))}</p>`;
+}
+/** T12.26: cities in neighbouring countries less than 100 km away */
+async function acrossBorder(slug, L) {
+	const { bySlug, index } = await data();
+	const c = bySlug.get(slug);
+	if (!c?.cc) return "";
+	const nb = new Set(GEO$1.nb[c.cc] ?? []);
+	const xs = index.filter((o) => o.cc && nb.has(o.cc)).map((o) => ({
+		o,
+		d: kmD(c, o)
+	})).filter((o) => o.d < 100).sort((a, b) => a.d - b.d).slice(0, 8);
+	if (!xs.length) return "";
+	const x = TX$5[L];
+	return `<section><h2>${esc(x.across)}</h2><ul class="grid">${xs.map(({ o, d }) => `<li><a href="${P(L, "/" + o.slug)}">${esc(cityName(o, L))} <span>${esc(ctry(o, L))} · ${nf(L, d)} km</span></a></li>`).join("")}</ul><p class="note">${esc(x.acrossNote)}</p></section>`;
+}
+/** T12.29 + T12.30: light mega menu without JS (details/summary) */
+var TOPC = [
+	["spain", "ES"],
+	["italy", "IT"],
+	["france", "FR"],
+	["united-states", "US"],
+	["united-kingdom", "GB"],
+	["germany", "DE"],
+	["portugal", "PT"],
+	["greece", "GR"],
+	["japan", "JP"],
+	["denmark", "DK"]
+];
+function megaMenu(L) {
+	const x = TX$5[L];
+	const col = (h, items) => `<div><b>${esc(h)}</b>${items.map(([n, u]) => `<a href="${P(L, u)}">${esc(n)}</a>`).join("")}</div>`;
+	return `<details class="t12mm hide-sm"><summary>${esc(x.menu)}</summary><div class="t12mmp">${col(x.continents, Object.values(T12.CONT).map((c) => [c[L], "/continent/" + c.s]))}${col(x.countries, TOPC.map(([s, cc]) => [T12.ctryName(cc, L, s), "/country/" + s]))}${col(x.filters, [
+		[T12.tx(L).regions, "/regions"],
+		[x.islands, "/islands"],
+		[x.coastal, "/coastal-cities"],
+		[x.mountain, "/mountain-cities"],
+		[x.gems, "/hidden-gems"],
+		[x.routes, "/routes"],
+		[x.byPrice, "/hotels-by-price"]
+	])}</div></details>`;
+}
+var MEGA_CSS = `.t12ll{display:inline-block;margin:6px 0 0;font-size:14px;font-weight:600}.t12near{color:var(--muted)}.t12mm{position:relative;display:inline-block}.t12mm>summary{cursor:pointer;list-style:none;display:inline-flex;align-items:center;gap:4px;white-space:nowrap;padding:8px 10px;border-radius:10px;font-weight:600}.t12mm>summary::-webkit-details-marker{display:none}.t12mm>summary::after{content:" ▾";font-size:12px}.t12mmp{position:absolute;left:0;top:100%;z-index:60;display:grid!important;grid-template-columns:repeat(3,minmax(170px,1fr));gap:18px;background:var(--card,#fff);color:var(--ink,#111);border:1px solid var(--line,#ddd);border-radius:14px;padding:16px 18px;box-shadow:0 12px 32px rgba(0,0,0,.14);width:640px}.t12mmp>div{display:flex!important;flex-direction:column!important;align-items:flex-start!important;gap:0!important}.t12mmp b{display:block;margin:0 0 6px;font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted,#555)}.t12mmp a{display:block!important;padding:5px 0!important;margin:0!important;font-size:14px!important;line-height:1.35!important;white-space:normal!important;text-decoration:none;border:0!important;background:none!important;min-height:0!important}@media (max-width:900px){.t12mm{display:none}}`;
+/** T12.32: BreadcrumbList from the visible crumbs when the page has none */
+function crumbsLd(body, L, path) {
+	const m = body.match(/<(p|nav) class="crumbs"[^>]*>([\s\S]*?)<\/\1>/);
+	if (!m) return null;
+	const parts = m[2].split("›").map((s) => s.trim()).filter(Boolean);
+	if (parts.length < 2) return null;
+	const strip = (s) => s.replace(/<[^>]+>/g, "").replace(/&amp;/g, "&").replace(/&#39;/g, "'").replace(/&quot;/g, "\"").replace(/&lt;/g, "<").replace(/&gt;/g, ">").trim();
+	return {
+		"@context": "https://schema.org",
+		"@type": "BreadcrumbList",
+		itemListElement: parts.map((s, i) => {
+			const h = s.match(/href="([^"]+)"/)?.[1];
+			return {
+				name: i === 0 ? "Top3Hotels" : strip(s),
+				item: h ? h.startsWith("http") ? h : SITE + h : SITE + P(L, path)
+			};
+		}).filter((o) => o.name).map((o, i) => ({
+			"@type": "ListItem",
+			position: i + 1,
+			name: o.name,
+			item: o.item
+		}))
+	};
+}
+async function t12bPaths(_L) {
+	const isl = [...(await islands()).keys()].map((s) => "/islands/" + s);
+	const co = [...(await coastalByCountry()).entries()].filter(([, v]) => v.length >= 3).map(([s]) => "/coastal-cities/" + s);
+	const ro = (await routeCountries()).map((s) => "/routes/" + s);
+	return [
+		"/islands",
+		...isl,
+		"/hotels-by-price",
+		...BANDS.map((b) => "/hotels-by-price/" + b[0]),
+		...FIVE.map((p) => `/five-star-under-${p}`),
+		"/coastal-cities",
+		...co,
+		"/mountain-cities",
+		"/hidden-gems",
+		"/routes",
+		...ro
+	];
+}
+var T12B_RE = /^(?:\/(es|de|fr|it|pt|da))?\/(islands|hotels-by-price|five-star-under-\d+|coastal-cities|mountain-cities|hidden-gems|routes)(?:\/([a-z0-9-]+))?$/;
+async function handleT12b(p) {
+	const m = p.match(T12B_RE);
+	if (!m) return null;
+	const L = isL(m[1]) ? m[1] : "en";
+	const [k, s] = [m[2], m[3]];
+	let out = null;
+	if (k === "islands") out = s ? await islandPage(s, L) : await islandsIndex(L);
+	else if (k === "hotels-by-price") out = s ? await bandPage(s, L) : await priceIndex(L);
+	else if (k.startsWith("five-star-under-")) out = s ? null : await fivePage(Number(k.slice(16)), L);
+	else if (k === "coastal-cities") out = s ? await coastalCountry(s, L) : await coastalIndex(L);
+	else if (k === "mountain-cities") out = s ? null : await mountainPage(L);
+	else if (k === "hidden-gems") out = s ? null : await gemsPage(L);
+	else if (k === "routes") out = s ? await routePage(s, L) : await routesIndex(L);
+	return out ? html(out) : null;
+}
+async function t12bLlms() {
+	const isl = await islands();
+	return [
+		`- Islands (${SITE}/islands): ${ISL.filter((i) => isl.has(i[0])).map((i) => `${i[1][0]} (${isl.get(i[0]).length})`).join(", ")}`,
+		`- Hotels by price: ${SITE}/hotels-by-price · five-star under 150/200/300 EUR: ${SITE}/five-star-under-200`,
+		`- Coastal cities (5 km or less from the coast, Natural Earth): ${SITE}/coastal-cities · mountain cities (over 800 m, GeoNames): ${SITE}/mountain-cities · lesser-known towns: ${SITE}/hidden-gems`,
+		`- One-week routes by country (straight-line distances, no travel times): ${SITE}/routes`
+	];
+}
+/** T12.39: on a city page, a visible link to the page in the language of the destination (when we publish that language) */
+var CC_LANG = {
+	ES: "es",
+	MX: "es",
+	AR: "es",
+	CO: "es",
+	CL: "es",
+	PE: "es",
+	UY: "es",
+	EC: "es",
+	BO: "es",
+	CR: "es",
+	GT: "es",
+	PA: "es",
+	DO: "es",
+	CU: "es",
+	PY: "es",
+	SV: "es",
+	HN: "es",
+	NI: "es",
+	VE: "es",
+	DE: "de",
+	AT: "de",
+	FR: "fr",
+	IT: "it",
+	SM: "it",
+	PT: "pt",
+	BR: "pt",
+	DK: "da"
+};
+var IN_LANG = {
+	en: "Read in English",
+	es: "Leer en español",
+	de: "Auf Deutsch lesen",
+	fr: "Lire en français",
+	it: "Leggi in italiano",
+	pt: "Ler em português",
+	da: "Læs på dansk"
+};
+function localLangLink(cc, slug, L) {
+	const t = cc ? CC_LANG[cc] : void 0;
+	if (!t || t === L) return "";
+	return `<a class="t12ll" href="${P(t, "/" + slug)}" hreflang="${t}" lang="${t}">${esc(IN_LANG[t])}</a>`;
 }
 /** T7.8/T7.12/T7.13/T7.32-T7.34: inline labels in every language. */
 var G5 = {
@@ -35353,6 +37727,7 @@ async function filterWinnersTxt() {
 			return `- ${e.name} (${SITE}/lists/${e.slug}): ${x ? `${x.start} to ${x.end}, ${x.place}. Official source: ${x.src}` : `usually ${e.when}; official dates not published yet`}`;
 		});
 		out.push(`\n# Regions with three or more cities (GeoNames first-level divisions)\n\n${(await regionsLlms()).join("\n")}`);
+		out.push(`\n# Islands, price bands, coastal and mountain cities, one-week routes\n\n${(await t12bLlms()).join("\n")}`);
 		out.push(`\n# Events (${ev.length})\n\n> Dates only when the organiser, the city or the official tourism board publishes them (checked 26 November 2026). Calendar: ${SITE}/events.ics · JSON: ${SITE}/api/events.json\n\n${ev.join("\n")}`);
 	}
 	return out.join("\n") + "\n";
@@ -127331,6 +129706,38 @@ function page(o) {
 		...o,
 		...seoNorm(o)
 	};
+	if (!(o.ld ?? []).some((x) => x?.["@type"] === "BreadcrumbList")) {
+		const b = crumbsLd(o.body, o.L, o.path);
+		if (b) o = {
+			...o,
+			ld: [...o.ld ?? [], b]
+		};
+	}
+	if (!o.noindex && !(o.ld ?? []).some((x) => [
+		"WebPage",
+		"CollectionPage",
+		"AboutPage",
+		"ContactPage",
+		"Article",
+		"BlogPosting"
+	].includes(String(x?.["@type"])))) o = {
+		...o,
+		ld: [...o.ld ?? [], {
+			"@context": "https://schema.org",
+			"@type": "WebPage",
+			"@id": SITE + P(o.L, o.path) + "#webpage",
+			url: SITE + P(o.L, o.path),
+			name: o.title,
+			inLanguage: o.L,
+			isAccessibleForFree: true,
+			publisher: {
+				"@type": "Organization",
+				"@id": "https://www.top3hotels.com/#organization",
+				name: "Top3Hotels",
+				url: SITE
+			}
+		}]
+	};
 	const t = T$1[o.L];
 	const url = SITE + P(o.L, o.path);
 	const image = (o.image ?? ogImage(o.L)).replace(/^(https:\/\/cf\.bstatic\.com\/xdata\/images\/hotel\/)max1024x768\//, "$1max1280x900/");
@@ -127356,14 +129763,22 @@ ${CSS_PLUS}
 ${CSS_TRUST}${CSS_ALT}${BK_CSS}
 ${CSS_MORE}
 ${CSS_SOCIAL}
-${CSS_DP}</style><link rel="preconnect" href="https://cf.bstatic.com"><link rel="manifest" href="/manifest.webmanifest">
+${CSS_DP}${MEGA_CSS}</style><link rel="preconnect" href="https://cf.bstatic.com"><link rel="manifest" href="/manifest.webmanifest">
 ${(o.ld ?? []).map((x) => `<script type="application/ld+json">${json(x)}<\/script>`).join("")}
 <script>window.t3track=function(e,p){try{(window.dataLayer=window.dataLayer||[]).push(Object.assign({event:e},p||{}));if(window.gtag)gtag('event',e,p||{});if(window.plausible)plausible(e,{props:p||{}})}catch(_){}};document.addEventListener('click',function(ev){var a=ev.target.closest&&ev.target.closest('[data-t]');if(a)t3track(a.dataset.t,{city:a.dataset.city,category:a.dataset.cat,provider:a.dataset.p})});<\/script>
 ${consentScript(Z[o.L])}</head><body><style id="t3-v6">${V6_CSS}</style><a class="skip" href="#main">${o.L === "es" ? "Ir al contenido" : o.L === "de" ? "Zum Inhalt" : o.L === "fr" ? "Aller au contenu" : o.L === "it" ? "Vai al contenuto" : o.L === "pt" ? "Ir para o conteúdo" : o.L === "da" ? "Gå til indhold" : "Skip to content"}</a><div class="wrap">
-<header class="top">${BRAND_LINK(P(o.L, "/"))}<nav aria-label="Main"><a href="${P(o.L, "/destinations")}">${t.allDest}</a><a class="hide-sm" href="${P(o.L, "/lists")}">${t.lists}</a><a class="hide-sm" href="${P(o.L, "/guides")}">${esc((GT[o.L] ?? GT.en).guides)}</a><a class="hide-sm" href="/how-we-choose">${t.how}</a><a class="hide-sm hide-md" href="${P(o.L, "/map")}"><span aria-hidden="true">🗺</span> ${esc(M[o.L].map)}</a><a class="hide-sm hide-md" href="${P(o.L, "/affiliate-disclosure")}">${esc(M[o.L].money)}</a><a class="cta" href="/partners">${X[o.L].forHotels}</a><button type="button" class="tbtn" data-pal aria-label="${esc(Y[o.L].js["search"])}"><span aria-hidden="true">🔍</span> <span class="lbl">${esc(Y[o.L].js["search"])}</span> <kbd>/</kbd></button><a class="tbtn" href="${P(o.L, "/saved")}" aria-label="${esc(Y[o.L].js["saved"])}">♡<span class="n" data-savedn hidden></span></a>${langSel}</nav></header>
+<header class="top">${BRAND_LINK(P(o.L, "/"))}<nav aria-label="Main"><a href="${P(o.L, "/destinations")}">${t.allDest}</a><a class="hide-sm" href="${P(o.L, "/lists")}">${t.lists}</a>${megaMenu(o.L)}<a class="hide-sm" href="${P(o.L, "/guides")}">${esc((GT[o.L] ?? GT.en).guides)}</a><a class="hide-sm" href="/how-we-choose">${t.how}</a><a class="hide-sm hide-md" href="${P(o.L, "/map")}"><span aria-hidden="true">🗺</span> ${esc(M[o.L].map)}</a><a class="hide-sm hide-md" href="${P(o.L, "/affiliate-disclosure")}">${esc(M[o.L].money)}</a><a class="cta" href="/partners">${X[o.L].forHotels}</a><button type="button" class="tbtn" data-pal aria-label="${esc(Y[o.L].js["search"])}"><span aria-hidden="true">🔍</span> <span class="lbl">${esc(Y[o.L].js["search"])}</span> <kbd>/</kbd></button><a class="tbtn" href="${P(o.L, "/saved")}" aria-label="${esc(Y[o.L].js["saved"])}">♡<span class="n" data-savedn hidden></span></a>${langSel}</nav></header>
 ${socialPill(o.L)}<main id="main" tabindex="-1">${o.body.replace(/<img(?![^>]*\bdecoding=)/g, "<img decoding=\"async\"")}</main>
 <footer><div class="cols"><div>${BRAND_LINK(P(o.L, "/"), "Top3Hotels", 30)}<p style="max-width:340px;margin:12px 0 0">${t.footer} ${X[o.L].independent} · ${X[o.L].noPaid}.</p></div>
-<div><h3>${X[o.L].explore}</h3><ul><li><a href="${P(o.L, "/destinations")}">${t.allDest}</a></li><li><a href="${P(o.L, "/lists")}">${t.lists}</a></li><li><a href="${P(GROWTH_LANGS.includes(o.L) ? o.L : "en", "/hotel-price-index")}">${{
+<div><h3>${X[o.L].explore}</h3><ul><li><a href="${P(o.L, "/destinations")}">${t.allDest}</a></li><li><a href="${P(o.L, "/regions")}">${esc({
+		en: "Regions",
+		es: "Regiones",
+		de: "Regionen",
+		fr: "Régions",
+		it: "Regioni",
+		pt: "Regiões",
+		da: "Regioner"
+	}[o.L] ?? "Regions")}</a></li><li><a href="${P(o.L, "/lists")}">${t.lists}</a></li><li><a href="${P(GROWTH_LANGS.includes(o.L) ? o.L : "en", "/hotel-price-index")}">${{
 		en: "Hotel Price Index",
 		es: "Índice de precios",
 		de: "Hotelpreisindex",
@@ -127875,7 +130290,7 @@ async function cityPage(city0, L) {
 	const same = (byCountry.get(city.cslug) ?? []).filter((c) => c.slug !== city.slug).slice(0, 24);
 	const path = `/${city.slug}`;
 	const image = hero?.img ?? hs.find((h) => h.gallery?.[0]?.src)?.gallery?.[0]?.src;
-	const reg12 = L === "en" || L === "es" ? regionOf(city.slug) : null;
+	const reg12 = regionOf(city.slug);
 	const ld = [
 		{
 			"@context": "https://schema.org",
@@ -127931,6 +130346,14 @@ async function cityPage(city0, L) {
 						addressLocality: city.city,
 						addressCountry: city.cc || city.country
 					},
+					containedInPlace: {
+						"@type": "City",
+						name: city.city,
+						...regionOf(city.slug) ? { containedInPlace: {
+							"@type": "AdministrativeArea",
+							name: regionOf(city.slug).name
+						} } : {}
+					},
 					...h.coordinates ? { geo: {
 						"@type": "GeoCoordinates",
 						latitude: h.coordinates.latitude,
@@ -127966,7 +130389,7 @@ async function cityPage(city0, L) {
 		body: `<style>${C4_CSS}</style><span hidden data-c4live data-s="${esc(c4.saved)}" data-r="${esc(c4.removed)}"></span><p class="crumbs"><a href="${P(L, "/")}">${esc(t.home)}</a> › <a href="${P(L, `/country/${city.cslug}`)}">${flag(city.cc) ? `<span class="c4flag" aria-hidden="true">${flag(city.cc)}</span>` : ""}${esc(cname)}</a> › ${reg12 ? `<a href="${P(L, `/regions/${reg12.slug}`)}">${esc(reg12.name)}</a> › ` : ""}${esc(city.city)}</p>${hom4}
 <div class="hero${hero?.img ? "" : " noimg"}">${hero?.img ? `<img src="/api/img/${esc(city.id)}/big" srcset="/api/img/${esc(city.id)}/small 500w, /api/img/${esc(city.id)}/mid 960w, /api/img/${esc(city.id)}/big 1280w" sizes="(max-width: 960px) 100vw, 1180px" alt="${esc(city.city)}" fetchpriority="high" onerror="this.onerror=null;this.src='/api/img/${esc(city.id)}/orig'">` : ""}
 <div class="in"><p class="eyebrow">${esc(cname)} · Top 3</p><h1>${esc(t.h1(city.city))}<em>.</em></h1><p class="lead">${esc(t.lead(sample))}</p><p class="lead answer">${esc(description)}</p></div>${hero?.page ? `<small>${esc(t.photo)}: <a href="${esc(hero.page)}" rel="nofollow noopener" target="_blank">Wikimedia Commons</a></small>` : ""}</div>
-<p class="byline"><span class="ok">${esc(xt.reviewed(updated))}</span><span class="ok">${esc(xt.independent)}</span><span class="ok">${esc(xt.noPaid)}</span></p>${sum4}${flights}${in1}${in1b}${how4}${allBk}${jump}<span hidden data-track="${esc(JSON.stringify({
+${await nearIntro(city.slug, L).catch(() => "")}${localLangLink(city.cc, city.slug, L)}<p class="byline"><span class="ok">${esc(xt.reviewed(updated))}</span><span class="ok">${esc(xt.independent)}</span><span class="ok">${esc(xt.noPaid)}</span></p>${sum4}${flights}${in1}${in1b}${how4}${allBk}${jump}<span hidden data-track="${esc(JSON.stringify({
 			s: city.slug,
 			c: city.city
 		}))}"></span>
@@ -127974,7 +130397,7 @@ async function cityPage(city0, L) {
 <p class="t3dn" hidden data-datesnote role="status">${esc(bx.datesOn)}</p>
 <div class="cards" id="hotels">${hs.map((h, i) => card(h, city, i, L, sights, hero?.img ? `/api/img/${city.id}/big` : void 0, hpLive.has(hotelSlug(h.name, city.slug)) ? P(hpL.get(hotelSlug(h.name, city.slug))?.includes(L) ? L : "en", `/hotel/${hotelSlug(h.name, city.slug)}`) : void 0, h === lux ? payMore : "", x4[i])).join("")}</div>
 <p class="c4row c4cmp"><a href="#cmp">⇄ ${esc(c4.cmp3)}</a></p>
-<section class="c4ref" aria-labelledby="c4ref"><h2 id="c4ref">${esc(c4.refineH)}</h2><p class="more-links" style="margin:14px 0 4px;font-size:15px"><a href="${P(GROWTH_LANGS.includes(L) ? L : "en", `/compare-picks/${city.slug}`)}">${{
+<section class="c4ref" aria-labelledby="c4ref"><h2 id="c4ref">${esc(c4.refineH)}</h2><p class="more-links" style="margin:14px 0 4px;font-size:15px"><a href="#cmp">${{
 			es: "Comparar los tres hoteles",
 			de: "Die drei Hotels im Vergleich",
 			fr: "Comparer les trois hôtels",
@@ -128033,15 +130456,15 @@ ${hs.map((h, i) => `<tr><td>${esc(label(h, L))}</td><td>${bks(h, "t3city-t") ? `
 			da: "Officiel hjemmeside"
 		}[L] ?? "Official website")}: ${esc(ap.n)}<span aria-hidden="true"> ↗</span></a>` : ""}${x4.some((x) => x.dist.includes("🚆")) ? ` ${esc(tx5(L).stNote)}` : ""}</p></section>
 <section aria-labelledby="faq"><h2 id="faq">${esc(t.faqTitle(city.city))}</h2><dl class="faq">${faq.map(([q, a]) => `<dt>${esc(q)}</dt><dd>${esc(a)}</dd>`).join("")}</dl></section>
-${events4}${sim4}${next4}${await regionLine(city.slug, L).catch(() => "")}
+${events4}${sim4}${next4}${await regionLine(city.slug, L).catch(() => "")}${await acrossBorder(city.slug, L).catch(() => "")}
 <section aria-labelledby="how"><h2 id="how">${esc(t.howTitle)}</h2><p class="lead">${esc(t.howText)} <a href="/how-we-choose">${esc(t.how)} →</a></p></section>
 <section aria-labelledby="src"><h2 id="src">${esc(xt.sources)}</h2><p class="sources">${esc(xt.sourcesText)} ${esc(checkedText)}.</p>
 <div class="forhotels"><h3 class="serif" style="font-size:22px;margin:0 0 6px">${esc(xt.badgeQ)}</h3><p style="margin:0;font-size:14px;color:var(--muted)">${esc(xt.badgeHow)}</p>${hs.map((h) => `<p style="margin:12px 0 0;font-weight:600">${esc(h.name)}</p><code>${esc(`<a href="${SITE}/${city.slug}" target="_blank" rel="noopener" title="Top3Hotels ${label(h, "en")} pick in ${city.city}"><img src="${SITE}/badge/${city.slug}/${catKey(h)}.svg" width="180" height="60" alt="Top 3 ${label(h, "en")} pick in ${city.city} 2026 · Top3Hotels"></a>`)}</code>`).join("")}<p style="margin:0;font-size:13px"><a href="/partners">${esc(xt.forHotels)} →</a></p><h3 class="serif" style="font-size:22px;margin:22px 0 6px">${esc(y.embedTitle)}</h3><p style="margin:0;font-size:14px;color:var(--muted)">${esc(y.embedHow)} <a href="/embed/${esc(city.slug)}" target="_blank" rel="noopener">Preview ↗</a></p><code>${esc(embed)}</code></div></section>
-${near.length ? `<section aria-labelledby="near"><h2 id="near">${esc(t.near(city.city))}</h2><ul class="grid">${near.map((c) => `<li><a href="${P(L, "/" + c.slug)}">${esc(c.city)} <span>${esc(countryName(c, L))}</span></a></li>`).join("")}</ul><p class="note" style="margin-top:14px">${esc(y.compareWith(city.city))}: ${POPULAR.filter((s) => s !== city.slug).slice(0, 6).map((s) => bySlug.get(s)).filter((c) => Boolean(c)).map((c) => `<a href="${P(L, `/compare/${city.slug}/${c.slug}`)}" rel="nofollow">${esc(c.city)}</a>`).join(" · ")}</p></section>` : ""}
+${near.length ? `<section aria-labelledby="near"><h2 id="near">${esc(t.near(city.city))}</h2><ul class="grid">${near.map((c) => `<li><a href="${P(L, "/" + c.slug)}">${esc(cityName(c, L))} <span>${esc(countryName(c, L))}</span></a></li>`).join("")}</ul><p class="note" style="margin-top:14px">${esc(y.compareWith(cityName(city, L)))}: ${POPULAR.filter((s) => s !== city.slug).slice(0, 6).map((s) => bySlug.get(s)).filter((c) => Boolean(c)).map((c) => `<a href="${P(L, `/compare/${city.slug}/${c.slug}`)}">${esc(cityName(c, L))}</a>`).join(" · ")}</p></section>` : ""}
 ${hotelsBlock(city, L)}
 <section hidden data-recent><h2>${esc(y.js["recent"])}</h2><div class="chipsrow"></div></section>
 ${newsBlock(L)}
-${same.length ? `<section aria-labelledby="more"><h2 id="more">${esc(t.moreIn(cname))}</h2><ul class="grid">${same.map((c) => `<li><a href="${P(L, "/" + c.slug)}">${esc(c.city)}</a></li>`).join("")}</ul><p class="note"><a href="${P(L, `/country/${city.cslug}`)}">${esc(t.allIn(cname))}</a></p></section>` : ""}
+${same.length ? `<section aria-labelledby="more"><h2 id="more">${esc(t.moreIn(cname))}</h2><ul class="grid">${same.map((c) => `<li><a href="${P(L, "/" + c.slug)}">${esc(cityName(c, L))}</a></li>`).join("")}</ul><p class="note"><a href="${P(L, `/country/${city.cslug}`)}">${esc(t.allIn(cname))}</a></p></section>` : ""}
 ${cprev}${quickBk}${((g, pl) => g || pl ? `<div class="notfit"><p>${esc(bx.none(city.city))}</p>${g}${pl}</div>` : "")(gymLink(city.id, city.slug, L, city.city), poolLink(city.id, city.slug, L, city.city))}
 <div class="sticky">${bks(value, "t3city-s") ? `<a class="btn coral" href="${esc(bks(value, "t3city-s"))}" rel="sponsored nofollow noopener" target="_blank" data-t="check_availability" data-city="${esc(city.slug)}" data-cat="value" data-p="booking-sticky">★ ${esc(t.checkPrice)}</a>` : ""}</div>
 <nav class="sticky3" aria-label="${esc(bx.quick)}">${hs.map((h) => bks(h, "t3city-s3") ? `<a class="${catKey(h)}" href="${esc(bks(h, "t3city-s3"))}" rel="sponsored nofollow noopener" target="_blank" data-t="check_availability" data-city="${esc(city.slug)}" data-cat="${catKey(h)}" data-p="booking-sticky3"><span>${esc(label(h, L))}</span><b data-eur="${h.offer?.nightly ?? ""}"><span class="v">${money(h.offer?.nightly)}</span></b></a>` : "").join("")}</nav>`,
@@ -128213,12 +130636,13 @@ async function countryPage(cslug, L) {
 		}))
 	}];
 	const tiles = await Promise.all(rows.filter((r) => r.d).map(({ c, d }) => tileFor(c, d.hotels[1], L)));
+	const hh = new Map(await Promise.all(rows.flatMap(({ c, d }) => (d?.hotels ?? []).map(async (h) => [c.slug + "|" + h.name, await hotelHref(h.name, c.slug, L)]))));
 	const body = `<p class="crumbs"><a href="${P(L, "/")}">${esc(t.home)}</a> › <a href="${P(L, "/destinations")}">${esc(t.allDest)}</a> › ${esc(cname)}</p>
 <h1>${esc(t.countryH1(cname))}<em>.</em></h1><p class="lead">${esc(t.countryLead(list.length))}</p>${countryIntro(rows, cname, L)}
 <div class="tiles">${tiles.join("")}</div>
 <section><div class="tablewrap"><table><thead><tr><th>${esc(t.allDest)}</th><th>${esc(t.cat.Budget)}</th><th>${esc(t.cat["Best Value"])}</th><th>${esc(t.cat.Luxury)}</th></tr></thead><tbody>
-${rows.filter((r) => r.d).map(({ c, d }) => `<tr><td><a href="${P(L, "/" + c.slug)}"><strong>${esc(c.city)}</strong></a></td>${d.hotels.map((h) => `<td>${esc(h.name)}<br><small>${h.booking?.score?.toFixed(1) ?? "–"}/10 · ${money(h.offer?.nightly)}</small></td>`).join("")}</tr>`).join("")}
-</tbody></table></div></section>${countryRegions(list[0].cc, L)}${countryAirports(list, L)}${await countryFilterBlock(cslug, list.map((c) => ({
+${rows.filter((r) => r.d).map(({ c, d }) => `<tr><td><a href="${P(L, "/" + c.slug)}"><strong>${esc(c.city)}</strong></a></td>${d.hotels.map((h) => `<td>${hh.get(c.slug + "|" + h.name) ? `<a href="${hh.get(c.slug + "|" + h.name)}">${esc(h.name)}</a>` : esc(h.name)}<br><small>${h.booking?.score?.toFixed(1) ?? "–"}/10 · ${money(h.offer?.nightly)}</small></td>`).join("")}</tr>`).join("")}
+</tbody></table></div></section>${countryRegions(list[0].cc, L)}${await countryBlocks(cslug, L).catch(() => "")}${countryAirports(list, L)}${await countryFilterBlock(cslug, list.map((c) => ({
 		slug: c.slug,
 		name: cityName(c, L)
 	})), L).catch(() => "")}${GROWTH_LANGS.includes(L) && (await countryValueSlugs()).includes(cslug) ? `<p class="note"><a href="${P(L, `/best-value/${cslug}`)}">${esc(((W) => (W[L] ?? W.en)(cname))({
@@ -128272,7 +130696,7 @@ async function destinationsPage(L) {
 	const body = `<p class="crumbs"><a href="${P(L, "/")}">${esc(t.home)}</a> › ${esc(t.allDest)}</p><h1>${esc(t.destH1(index.length))}<em>.</em></h1>
 <p class="lead">${esc(t.destLead(countries.length))}</p>
 ${azNav}
-${hubLinks(L)}
+${hubLinks(L)}${hubBlock(L)}
 <section class="countries">${countries.map(([cs, list]) => `<h2 id="${esc(cs)}"${first.get(cs) ? ` data-az="${first.get(cs)}"` : ""}>${first.get(cs) ? `<span id="az-${first.get(cs).toLowerCase()}"></span>` : ""}<a href="${P(L, `/country/${cs}`)}">${esc(countryName(list[0], L))}</a> <small>${list.length}</small></h2><ul class="grid">${list.map((c) => `<li><a href="${P(L, "/" + c.slug)}">${esc(cityName(c, L))}</a></li>`).join("")}</ul>`).join("")}</section>`;
 	return page({
 		L,
@@ -129157,6 +131581,14 @@ var hpLangs = (x) => (x?.langs?.length ? x.langs : ["en", "es"]).filter((l) => H
 var hpSlugify = (s) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/&/g, " and ").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 var hotelSlug = (name, citySlug) => `${hpSlugify(name)}-${citySlug}`.replace(/-+/g, "-");
 var hpCache;
+/** T12.20: link to a pick's hotel page when it exists (its language if published, else English) */
+var HPMAP = null;
+async function hotelHref(name, citySlug, L) {
+	const m = await (HPMAP ??= hotelPagesList().then((r) => new Map(r.map((x) => [x.slug, hpLangs(x)]))));
+	const s = hotelSlug(name, citySlug);
+	const ls = m.get(s);
+	return ls ? P(ls.includes(L) ? L : "en", `/hotel/${s}`) : null;
+}
 async function hotelPagesList() {
 	if (hpCache && Date.now() - hpCache.at < 18e5) return hpCache.rows;
 	try {
@@ -129709,7 +132141,7 @@ async function hotelPage(slug, L) {
 	].filter(Boolean).join("");
 	const cta = bk ? `<a class="hp-cta" href="${esc(bk)}" rel="sponsored nofollow noopener" target="_blank" data-t="check_availability" data-city="${esc(d.city_slug)}" data-cat="${esc(d.cat)}" data-p="hotel-page" aria-label="${esc(bkx(L).aria(f.name, [f.stars ? bkx(L).stars(Number(f.stars)) : "", t[`cat_${d.cat}`] ?? ""].filter(Boolean).join(", ")))}" title="${esc(bkx(L).shortcut)}" aria-keyshortcuts="B">${esc(t.book)}<span aria-hidden="true"> ↗</span></a><p class="hp-small">${esc(t.disc)}</p>${alt ? `<a class="hp-alt" href="${esc(alt)}" rel="sponsored nofollow noopener" target="_blank" data-t="alt_click" data-city="${esc(d.city_slug)}" data-cat="${esc(d.cat)}" data-p="hotel-page-alt">${esc(t.altl)} →</a>` : ""}` : "";
 	const body = `<style>${CSS_BLOG}${CSS_HP}${CSS5}</style>${tocB}<article class="post">
-<nav class="crumbs"><a href="${P(L, "/")}">${esc(t.home)}</a> › ${city ? `<a href="${P(L, `/country/${city.cslug}`)}">${esc(countryName(city, L))}</a> › ` : ""}<a href="${P(L, `/${d.city_slug}`)}">${esc(d.city)}</a> › ${esc(f.name)}</nav>
+<nav class="crumbs"><a href="${P(L, "/")}">${esc(t.home)}</a> › ${city ? `<a href="${P(L, `/country/${city.cslug}`)}">${esc(countryName(city, L))}</a> › ` : ""}${((r) => r ? `<a href="${P(L, `/regions/${r.slug}`)}">${esc(r.name)}</a> › ` : "")(regionOf(d.city_slug))}<a href="${P(L, `/${d.city_slug}`)}">${esc(d.city)}</a> › ${esc(f.name)}</nav>
 <span class="hp-badge">${esc(t[`cat_${d.cat}`] ?? d.cat)} · ${esc(d.city)}</span>
 <h1>${esc(f.name)}<span class="hp-h1c">, ${esc(cityL)}</span></h1>
 <p class="by">${esc(t.by)} ${esc(t.updated)} ${esc(upd)}.</p>
@@ -129872,6 +132304,7 @@ async function sitemapFor(L) {
 		...L === "en" ? EVENTS.map((e) => `/lists/${e.slug}`) : [],
 		...t11Paths(L),
 		...t12Paths(L),
+		...await t12bPaths(L),
 		...[...byCountry.keys()].map((c) => `/country/${c}`),
 		...index.map((c) => `/${c.slug}`)
 	];
@@ -130219,6 +132652,11 @@ Policy: https://www.top3hotels.com/terms
 	}
 	if (/^(?:\/(?:es|de|fr|it|pt|da))?\/(?:regions|continent)(?:\/[a-z0-9-]+)?$|^\/api\/region\/[a-z0-9-]+\.json$/.test(p)) {
 		const r = await handleT12(p);
+		if (r) return r;
+		return html(notFoundPage(p, "en"), 404, "no-store");
+	}
+	if (T12B_RE.test(p)) {
+		const r = await handleT12b(p);
 		if (r) return r;
 		return html(notFoundPage(p, "en"), 404, "no-store");
 	}
