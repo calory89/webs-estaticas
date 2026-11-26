@@ -347,7 +347,7 @@ function client() {
 export const CLIENT_JS = '(' + client.toString() + ')();';
 export const PATHS = /^\/k\/u27\.js$|^\/api\/v1\/(?:cost|map)$|^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:map|updates)\/?$/;
 const jr = (o, s, cc) => new Response(JSON.stringify(o), { status: s || 200, headers: { 'content-type': 'application/json; charset=utf-8', 'access-control-allow-origin': '*', 'cache-control': cc || 'public, max-age=600' } });
-const MAP3_V = 'b0bfd297a5';
+const MAP3_V = '8729c66536';
 const MAPV = { js: '/satellite/plot/vendor/leaflet-1.9.4.js?v=dc452946ac', css: '/satellite/plot/vendor/leaflet-1.9.4.css?v=b8273795a6' };
 async function mapData(env, lang) {
 const N = await import('./kbx_named.js'), T = await import('./kbx_tr.js'), H = await import('./kbx_hdate.js');
