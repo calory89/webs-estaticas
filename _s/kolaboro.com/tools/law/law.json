@@ -35,7 +35,8 @@
     "CO": "Colombia",
     "MA": "Morocco",
     "PA": "Panama",
-    "AR": "Argentina"
+    "AR": "Argentina",
+    "BH": "Bahrain"
   },
   "sources": {
     "id-pp18-2021": {
@@ -270,6 +271,14 @@
       "language": "es",
       "read": "2026-11-26",
       "note": "Article 2071 was replaced by article 14 of Decree 1017/2024 (Boletín Oficial of 13 November 2024): the insurance that used to be compulsory is now optional."
+    },
+    "bh-law-27-2017": {
+      "law": "Law No. 27 of 2017 promulgating the Real Estate Sector Regulation Law",
+      "publisher": "Legislation and Legal Opinion Commission of the Kingdom of Bahrain (lloc.gov.bh), legislation database",
+      "url": "https://lloc.gov.bh/Legislation/HTM/K2717",
+      "language": "ar",
+      "read": "2026-11-26",
+      "note": "This law repealed Law No. 28 of 2014 on real estate development. \"The Foundation\" in the text is the Real Estate Regulatory Authority (RERA). The Arabic text is the official one."
     }
   },
   "rules": [
@@ -1475,6 +1484,66 @@
       "cite": "Article 1171",
       "quote": "Los boletos de compraventa de inmuebles de fecha cierta otorgados a favor de adquirentes de buena fe son oponibles al concurso o quiebra del vendedor si se hubiera abonado como mínimo el veinticinco por ciento del precio. El juez debe disponer que se otorgue la respectiva escritura pública. El comprador puede cumplir sus obligaciones en el plazo convenido. En caso de que la prestación a cargo del comprador sea a plazo, debe constituirse hipoteca en primer grado sobre el bien, en garantía del saldo de precio.",
       "translation": "Property sale agreements with a certain date granted in favour of good-faith buyers are enforceable against the seller's insolvency proceedings or bankruptcy if at least twenty-five per cent of the price has been paid. The judge must order the corresponding public deed to be granted. The buyer may perform its obligations within the agreed period. Where the buyer's payment is in instalments, a first-ranking mortgage must be created on the property to secure the balance of the price.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "bh-offplan-licence",
+      "market": "BH",
+      "topics": [
+        "permit",
+        "termination"
+      ],
+      "title": "In Bahrain, a developer may not offer off-plan units before the project is licensed and registered, and money taken without a licence must be returned within 6 months",
+      "plain": "A developer may not start an off-plan project or offer off-plan units until it holds an off-plan sale project licence and the project is entered in the register of off-plan projects. Anyone who collected money in breach of this must return it to its owners within six months, on top of any civil or criminal liability. Ask RERA to confirm the licence before you pay.",
+      "source": "bh-law-27-2017",
+      "cite": "Article 18(a) and (c) of the Real Estate Sector Regulation Law",
+      "translation": "The developer may not start an off-plan sale project or offer units off-plan until it has obtained a licence for the off-plan sale project [...] and entered it in the register referred to in article (19) of this law. [...] Without prejudice to civil and criminal liability, whoever has collected money in breach of paragraph (a) of this article must return it to its owners [...] within a period not exceeding six months.",
+      "quote": "لا يجوز للمطوِّر البدء في مشروع بيع على الخريطة أو عرض وحدات على الخريطة إلا بعد الحصول على ترخيص لمشروع البيع على [...] الخريطة وقيْده في السجل المشار إليه في المادة (19) من هذا القانون. [...] مع عدم الإخلال بأحكام المسئولية المدنية والجنائية، يلتزم مَن جمع أموالاً، بالمخالفة لحكم الفقرة (أ) من هذه المادة، بردِّها إلى أصحابها [...] خلال مدة لا تتجاوز ستة أشهر.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "bh-offplan-escrow",
+      "market": "BH",
+      "topics": [
+        "escrow"
+      ],
+      "title": "Each off-plan project has its own escrow account, used only for the project and protected from the developer's creditors",
+      "plain": "A separate escrow account is opened in the name of every off-plan project, under a written agreement between the developer and a bank acting as escrow agent, and a copy is filed with RERA. The account may be spent only on building, carrying out and managing the project. The developer's creditors cannot attach the money in it, and if the developer is declared bankrupt the project is used only to meet its own obligations, including buyers' rights. Pay only into the project escrow account.",
+      "source": "bh-law-27-2017",
+      "cite": "Articles 24(a) and 25(a) of the Real Estate Sector Regulation Law",
+      "translation": "A separate escrow account is opened in the name of each off-plan sale project by written agreement between the developer and the escrow account trustee, to organise the financial, administrative and legal affairs of the project and to deposit the amounts provided by the developer and the depositors; the agreement sets the rules for managing the account and the rights and obligations of the parties, and a copy is filed with the Foundation. [...] The escrow account is allocated exclusively to spending on the purposes of building, carrying out and managing the off-plan sale project, and the amounts deposited in it may not be attached for the benefit of the developer's creditors; nor does the development project form part of the general security of creditors if the developer is declared bankrupt, except to meet the obligations relating to the project, including the rights of buyers.",
+      "quote": "يُنشأ حساب ضمان مستقل باسم كل مشروع من مشاريع البيع على الخريطة باتفاق كتابي بين المطوِّر وأمين حساب الضمان، لتنظيم الأمور المالية والإدارية والقانونية للمشروع، وإيداع المبالغ المقدَّمة من المطوِّر والمودعين، ويحدد الاتفاق ضوابط إدارة الحساب وحقوق والتزامات الأطراف، وتودع نسخة منه لدى المؤسسة. [...] يُخصَّص حساب الضمان حصرياً للصَّرْف على أغراض إنشاء وتنفيذ وإدارة مشروع البيع على الخريطة، ولا يجوز الحجز على المبالغ المودعة فيه لصالح دائني المطوِّر، كما لا يدخل مشروع التطوير في الضمان العام للدائنين في حالة الحكم بإشهار إفلاس المطوِّر إلا للوفاء بالالتزامات المتعلقة بالمشروع بما في ذلك حقوق المشترين.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "bh-offplan-changes",
+      "market": "BH",
+      "topics": [
+        "completion",
+        "price"
+      ],
+      "title": "The developer must build to the approved designs, and if a change reduces your unit you can claim compensation or a lower price",
+      "plain": "The developer must carry out the project according to the approved structural and architectural designs and the documents the licence was based on. Only non-substantial changes for acceptable engineering or technical reasons are allowed; a substantial change needs unforeseen or emergency circumstances and the approval of the authorities and RERA. Either way, you keep the right to compensation or to a price reduction in proportion to what your unit lost in area, value or use.",
+      "source": "bh-law-27-2017",
+      "cite": "Article 30 of the Real Estate Sector Regulation Law",
+      "translation": "The developer must carry out the off-plan sale project according to the approved structural and architectural engineering designs and the documents on the basis of which the licence was granted. No change may be made to the project unless it is not substantial and is for acceptable engineering or technical reasons; a substantial change may only be made in unforeseen circumstances or for emergency reasons and with the approval of the competent authorities and the Foundation. This is without prejudice to the buyer's right to compensation or to a reduction of the price in proportion to the loss in area, value or use of the buyer's unit.",
+      "quote": "يلتزم المطوِّر بتنفيذ مشروع البيع على الخريطة طبقاً للتصاميم الهندسية الإنشائية والمعمارية المعتمَدة والمستندات التي مُنِحَ الترخيص على أساسها. ولا يجوز إدخال تعديل في المشروع إلا إذا كان هذا التعديل غير جوهري، وذلك لاعتبارات هندسية أو فنية مقبولة، أما إذا كان التعديل جوهرياً فلا يكون إلا لظروف غير متوقَّعة أو لأسباب طارئة وبموافقة الجهات المختصة والمؤسسة. وذلك دون إخلال بحق المشتري في التعويض أو إنقاص الثمن بقدر ما نقص من مساحة أو قيمة وحدته العقارية أو منفعتها.",
+      "checked": "2026-11-26"
+    },
+    {
+      "id": "bh-offplan-stalled",
+      "market": "BH",
+      "topics": [
+        "completion",
+        "delay",
+        "escrow"
+      ],
+      "title": "If an off-plan project stalls, RERA can act to have it completed or the money returned, including through the courts",
+      "plain": "If the developer stops or falters, temporarily or for good, in carrying out an off-plan project for any reason, RERA, after consulting the escrow agent, may take the measures needed to protect depositors and project creditors so that the project is completed or the money is returned. This includes going to court to have another developer finish the project at the original developer's cost, or to sell the project and share the proceeds among depositors and creditors.",
+      "source": "bh-law-27-2017",
+      "cite": "Article 33(a) of the Real Estate Sector Regulation Law",
+      "translation": "If the developer temporarily or permanently stops or falters in carrying out the off-plan sale project for any reason, the Foundation may, after consulting the escrow account trustee, take the measures needed to protect the rights of the depositors and the creditors of the project so as to ensure that the project is completed or the money is returned to its owners, including applying to the competent court for a judgment to have the project carried out by another developer at the developer's expense, or to sell the project and distribute the proceeds of the sale among the depositors and the creditors of the project.",
+      "quote": "للمؤسسة في حالة توقُّف أو تعثُّر المطور مؤقتاً أو نهائياً عن تنفيذ مشروع البيع على الخريطة لأيِّ سبب من الأسباب - بعد أخْذ رأي أمين حساب الضمان - اتخاذ التدابير اللازمة لحماية حقوق الموْدعين ودائني المشروع، بما يضمن إكمال المشروع أو إعادة الأموال لأصحابها، بما في ذلك اللجوء إلى المحكمة المختصة للحصول على حكم بتنفيذ المشروع بمعرفة أحد المطوِّرين على حساب المطوِّر أو بيع المشروع وتوزيع حصيلة البيع على الموْدعين ودائني المشروع.",
       "checked": "2026-11-26"
     }
   ]
