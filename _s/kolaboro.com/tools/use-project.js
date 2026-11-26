@@ -75,7 +75,7 @@
     var pm = pr && /^([A-Z]{3})\s*([\d.,]+)/.exec(pr);
     if (pm) {
       var amt = parseFloat(pm[2].replace(/,/g, ''));
-      if (cfg.c ? setSel($(cfg.c), pm[1]) : true) { if ($(cfg.p) && amt > 0) $(cfg.p).value = amt.toLocaleString('en'); }
+      if (cfg.c ? setSel($(cfg.c), pm[1]) : true) { if ($(cfg.p) && amt > 0) $(cfg.p).value = /,/.test($(cfg.p).value) ? amt.toLocaleString('en') : String(amt); }
       bits.push(S[3] + ' <bdi dir="ltr">' + esc(pr) + '</bdi>');
     }
     var d = ho && hoDate(ho);
@@ -95,6 +95,9 @@
     fetch('/projects/' + slug + '/record.json').then(function(x){ if (!x.ok) throw 0; return x.json(); }).then(fill).catch(function(){ note(esc(S[5]), true); });
   }
   // wait until the tool has built its own selects (late handover loads its data first)
+  // this script runs before the tool's own script (it must read the address before the tool rewrites it), so it starts
+  // once every deferred script has run, and for late handover once its data has built the selects
   var tries = 0;
-  (function wait(){ var ready = !cfg.wait || ($(cfg.wait) && $(cfg.wait).options.length > 0); if (ready || tries++ > 60) start(); else setTimeout(wait, 100); })();
+  function wait(){ var ready = !cfg.wait || ($(cfg.wait) && $(cfg.wait).options.length > 0); if (ready || tries++ > 80) start(); else setTimeout(wait, 100); }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', function(){ setTimeout(wait, 0); }); else setTimeout(wait, 0);
 })();
