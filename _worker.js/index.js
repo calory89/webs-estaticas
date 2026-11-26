@@ -184,7 +184,7 @@ function kbHeaders(r, u) {
   h.set('cross-origin-opener-policy', 'same-origin-allow-popups');
   // n32x (batch 32, Early Hints): the stylesheets and main font every public page loads, as Link preload headers; Cloudflare answers the
   // next requests with 103 Early Hints from them, so the browser fetches the CSS while the worker still builds the page (/engineering/early-hints/)
-  if (r.status === 200 && !priv && !embed && !/^\/(?:(?:es\/)?apply|agents|shared|thanks|visit)(?:\/|$)/.test(u.pathname)) h.append('link', '</k/site.css?v=' + KB_SITE_CSS_V + '>; rel=preload; as=style, </k/' + (KB_DSS_V === KB_DS_V ? 'ds-site' : 'ds') + '.css?v=' + KB_DS_V + '>; rel=preload; as=style, </k/fonts/archivo-latin.woff2>; rel=preload; as=font; type="font/woff2"; crossorigin');
+  if (r.status === 200 && !priv && !embed && !/^\/(?:(?:es\/)?apply|agents|shared|thanks|visit)(?:\/|$)/.test(u.pathname)) h.append('link', '</k/site.css?v=' + KB_SITE_CSS_V + '>; rel=preload; as=style, </k/' + (KB_DSS_V === KB_DS_V ? 'ds-site' : 'ds') + '.css?v=' + KB_DS_V + '>; rel=preload; as=style, </k/fonts/plexsans-latin.woff2>; rel=preload; as=font; type="font/woff2"; crossorigin, </k/fonts/ss4d-latin.woff2>; rel=preload; as=font; type="font/woff2"; crossorigin');
   if (priv) { h.set('cache-control', 'no-store'); h.set('x-robots-tag', 'noindex, nofollow'); }
   h.delete('access-control-allow-origin');
   h.set('cache-control', priv ? 'no-store' : 'no-cache'); // a nonce must never be reused from a cache
@@ -215,6 +215,7 @@ function kbHeaders(r, u) {
     .on('meta[property="og:title"]', { element() { ogT = true; } }).on('meta[property="og:locale"]', { element() { ogL = true; } }).on('script', { element(e) { e.setAttribute('nonce', nonce); if ((e.getAttribute('src') || '').startsWith('/k/prov.js')) e.setAttribute('src', '/k/prov.js?v=' + KB_PROV_V); } })
     .on('head script', { element(e) { gaTail = ''; if ((e.getAttribute('src') || '').includes(KB_GA)) ga = true; }, text(t) { if (ga) return; const x = gaTail + t.text; if (x.includes(KB_GA)) ga = true; gaTail = t.lastInTextNode ? '' : x.slice(-12); } })
     .on('img', { element(e) { if (!e.hasAttribute('decoding')) e.setAttribute('decoding', 'async'); if (++imgN > 2 && !e.hasAttribute('loading') && e.getAttribute('fetchpriority') !== 'high') e.setAttribute('loading', 'lazy'); } })   // n39 t3: decoding hints on every image, lazy loading after the first two that set none
+    .on('link[rel="preload"][href^="/k/fonts/archivo-latin"]', { element(e) { e.setAttribute('href', '/k/fonts/plexsans-latin.woff2'); e.after('<link rel="preload" href="/k/fonts/' + (/^\/ar(\/|$)/.test(u.pathname) ? 'plexar-arabic-600' : 'ss4d-latin') + '.woff2" as="font" type="font/woff2" crossorigin>', { html: true }); } })   // n40 d6: site type is IBM Plex Sans + Source Serif 4 Display (Plex Arabic on /ar/)
     .on('style[id]', { element(e) { const id = e.getAttribute('id'); if (styleIds.has(id)) e.remove(); else styleIds.add(id); } })   // n19f: a style block repeated with the same id (36 static pages, sections that each carry their CSS) is kept once
     .on('link[rel="stylesheet"]', { element(e) { const hf = e.getAttribute('href') || ''; if (/^\/k\/site\.css/.test(hf)) e.setAttribute('href', '/k/site.css?v=' + KB_SITE_CSS_V);   // n21e: one version for the 235 pages that hard-code an older ?v=
       if (!ds && /^\/k\/(site|app)\.css/.test(hf)) { e.after(/^\/k\/site\.css/.test(hf) ? DSLS : DSL, { html: true }); ds = true; } } })
@@ -251,13 +252,13 @@ const KB_U1 = { en: { months: 'month', days: 'day', weeks: 'week', years: 'year'
   de: { Monaten: 'Monat', Monate: 'Monat', Tagen: 'Tag', Tage: 'Tag', Wochen: 'Woche', Jahren: 'Jahr', Jahre: 'Jahr' }, nl: { maanden: 'maand', dagen: 'dag', weken: 'week', jaren: 'jaar' } };
 const KB_U1_RE = {}; for (const [l, m] of Object.entries(KB_U1)) KB_U1_RE[l] = new RegExp('(^|[\\s(>:;\u00a0])1([ \u00a0])(' + Object.keys(m).join('|') + ')(?![\\p{L}])', 'gu');
 function kbOne(html, m) { const re = KB_U1_RE[Object.keys(KB_U1).find(l => KB_U1[l] === m)]; return html.replace(re, (x, a, g, n) => a + '1' + g + m[n]); }
-const KB_SITE_CSS_V = '87e6d34042', KB_PROV_V = '369ff51a4c';   // n21e: bump when /k/site.css or /k/prov.js change (sha1 of the file, 10 chars); pages keep their old ?v= in the HTML
+const KB_SITE_CSS_V = '5c141de52b', KB_PROV_V = '369ff51a4c';   // n21e: bump when /k/site.css or /k/prov.js change (sha1 of the file, 10 chars); pages keep their old ?v= in the HTML
 let KB_CSP_SCRIPTS = true;   // n21e: strict script policy enforced site-wide; false = report-only again (as before 11 Nov 2026)
 const KB_GA = 'G-FJKJE77K4V';
 const KB_GA_JS = '(window.kbLate||function(f){addEventListener("load",function(){setTimeout(f,1500)})})(function(){var s=document.createElement("script");s.async=1;s.src="https://www.googletagmanager.com/gtag/js?id=' + KB_GA + '";document.head.appendChild(s)});' +
   "window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','" + KB_GA + "');";
-const KB_DS_V = 'c5c9f9c805';   // bump with ds.css (scratchpad d12a/dsv.sh does it)
-const KB_DSS_V = 'c5c9f9c805';   // the ds.css version /k/ds-site.css was generated from; when it differs from KB_DS_V every page gets plain ds.css
+const KB_DS_V = 'ff44ef2f50';   // bump with ds.css (scratchpad d12a/dsv.sh does it)
+const KB_DSS_V = 'ff44ef2f50';   // the ds.css version /k/ds-site.css was generated from; when it differs from KB_DS_V every page gets plain ds.css
 // kolaboro.com mobile speed (b9c, 6 Nov 2026): third-party tags wait for the first interaction (tap, key, scroll, mouse move)
 // or 8 s after load, whichever comes first. window.kbLate(fn) queues work for that moment (the static pages load gtag through it);
 // Cloudflare Zaraz (Clarity) is held the same way by deferring its zaraz.init call. Events queued before that are kept.
