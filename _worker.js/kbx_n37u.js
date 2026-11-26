@@ -18,6 +18,7 @@
 //   register share per developer across markets with KPKT permits, /[l/]data/markets/ (markets compared on key facts and register share)
 // Sumba, Eco Beach City and Equinox are left out by the build.
 import * as N from './kbx_named.js';
+import { coName } from './kbx_hdate.js';
 
 const ORIGIN = 'https://kolaboro.com';
 const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' };
@@ -1249,4 +1250,27 @@ async function route(env, shell, p, u) {
   return null;
 }
 
+// n40 r1d (R01-33): /[l/]guides/, every guide by topic and by country in 8 languages (strings gh_* in /data/n37u-i18n.json)
+export const RX_GH = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?guides\/?$/;
+let GH = null;
+export async function guidesHub(req, u, env, shell, list) {
+  const m = u.pathname.match(RX_GH); if (!m) return null;
+  const l = m[1] || 'en';
+  if (!u.pathname.endsWith('/')) return Response.redirect(ORIGIN + u.pathname + '/', 301);
+  if (!(await load(env))) return null;
+  if (!GH || Date.now() - GH.t > 3600000) { const v = await list(); if (v && v.length) GH = { t: Date.now(), v }; }
+  if (!GH) return null;
+  const G = GH.v, P = pre(l), en = l === 'en' ? '' : ' hreflang="en"', cn = c => { try { return coName(c, l) || c; } catch (e) { return c; } };
+  const li = (h, x, a) => '<li><a href="' + h + '"' + (a || '') + '>' + esc(x) + '</a></li>';
+  const topic = '<ul class="n37-rel">' + li(P + '/guides/buying-off-plan/', t(l, 'gh_buy')) + ['dubai', 'bali', 'phuket', 'cyprus'].map(k => li(P + '/guides/buying-off-plan/' + k + '/', tf(l, 'gh_buy_in', { p: t(l, 'gh_p_' + k) }))).join('') + '</ul><h3>' + esc(t(l, 'gh_from')) + '</h3><ul class="n37-rel">' + ['russia', 'china', 'gulf'].map(k => li(P + '/guides/buyers-from/' + k + '/', t(l, 'gh_p_' + k))).join('') + '</ul><ul class="n37-rel">' + li(P + '/countries/foreign-buyers/', t(l, 'gh_foreign')) + li(P + '/buyer-protection-law/', t(l, 'gh_lawc')) + li(P + '/guides/short-let-rules/', t(l, 'gh_short')) + '</ul>';
+  let k = 9;
+  const rows = G.map(x => { k += 1 + (x.safe ? 1 : 0) + (x.law ? 1 : 0); const b = '/countries/' + x.s + '/'; return '<tr><th scope="row"><a href="' + P + b + '">' + bdi(cn(x.c)) + '</a></th><td class="n">' + nf(x.n, l) + '</td><td><a href="' + b + 'how-to-check/"' + en + '>' + esc(t(l, 'gh_check')) + '</a></td><td>' + (x.safe ? '<a href="' + b + 'is-it-safe/"' + en + '>' + esc(t(l, 'gh_safe')) + '</a>' : '<span class="k-xs">' + esc(t(l, 'gh_no')) + '</span>') + '</td><td>' + (x.law ? '<a href="' + b + 'buyer-protection-law/"' + en + '>' + esc(t(l, 'gh_law')) + '</a>' : '<span class="k-xs">' + esc(t(l, 'gh_no')) + '</span>') + '</td></tr>'; }).join('');
+  const body = '<h2 id="topics">' + esc(t(l, 'gh_topic')) + '</h2>' + topic + '<h2 id="countries">' + esc(t(l, 'gh_country')) + '</h2><p class="k-xs">' + esc(tf(l, 'gh_cnt', { n: nf(k, l), c: nf(G.length, l) })) + ' ' + (l === 'en' ? '' : esc(t(l, 'gh_en'))) + '</p>' + CSSL + '<div class="n37-tw" role="region" aria-label="' + esc(t(l, 'gh_country')) + '" tabindex="0"><table><thead><tr><th scope="col">' + esc(t(l, 'gh_c')) + '</th><th scope="col">' + esc(t(l, 'gh_n')) + '</th><th scope="col">' + esc(t(l, 'gh_check')) + '</th><th scope="col">' + esc(t(l, 'gh_safe')) + '</th><th scope="col">' + esc(t(l, 'gh_law')) + '</th></tr></thead><tbody>' + rows + '</tbody></table></div>';
+  const canon = ORIGIN + P + '/guides/', h1 = t(l, 'gh_h1'), lead = t(l, 'gh_lead');
+  const ld = { '@context': 'https://schema.org', '@graph': [{ '@type': 'CollectionPage', url: canon, name: h1, description: lead, inLanguage: l, dateModified: D.built, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' } }, { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: t(l, 'home'), item: ORIGIN + P + '/' }, { '@type': 'ListItem', position: 2, name: h1, item: canon }] }] };
+  const html0 = '<section class="phero"' + dir(l) + '><div class="wrap"><p class="crumb"><a href="' + P + '/">' + esc(t(l, 'home')) + '</a> / ' + esc(h1) + '</p><h1>' + esc(h1) + '</h1><p class="lead">' + esc(lead) + '</p></div></section><div class="wrap n37"' + dir(l) + '>' + CSS + body + '</div>';
+  const desc = lead.length > 155 ? lead.slice(0, 152).replace(/\s+\S*$/, '') + '…' : lead;
+  const html = await N.assemble({ title: h1 + ' | Kolaboro', desc, canon, body: html0, ld, alt: x => ORIGIN + pre(x) + '/guides/' }, l, await shell(P + '/how-we-score/'));
+  return new Response(html, { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=900', 'content-language': l } });
+}
 export const _r8u = { progLine, progBlock, mkSection, load, kpBlock, kpMarket, devSection, kpPage, mcPage, recPage, supplyLine, savedBox, IX: () => IX };   // r8u: local tests only

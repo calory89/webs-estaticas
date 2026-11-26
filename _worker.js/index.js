@@ -592,6 +592,12 @@ export default {
       const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
       try { const r = await kn31b.handle(req, u, env, ctx, shell); if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r; } catch (e) {}
     }
+    if (host === 'kolaboro.com' && (req.method === 'GET' || req.method === 'HEAD') && /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?guides\/?$/.test(u.pathname)) {   // n40 r1d (R01-33): /[lang/]guides/ hub (kbx_n37u.js guidesHub, list from kbx_seo.js)
+      if (!kn37u) kn37u = await import('./kbx_n37u.js'); if (!kseo) kseo = await import('./kbx_seo.js');
+      const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
+      const inner = p => this.fetch(new Request(new URL(p, u), { headers: { accept: 'application/json' } }), env, ctx);
+      try { const r = await kn37u.guidesHub(req, u, env, shell, () => kseo.guideIndex(env, inner)); if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r; } catch (e) {}
+    }
     // kolaboro.com (r1u, batch 37): /[lang/]projects/<slug>/record/, /[lang/]data/gaps/ (see kbx_n37u.js)
     if (host === 'kolaboro.com' && (KN37U.test(u.pathname) || KN39T1.test(u.pathname))) {   // n39 t1: + KN39T1
       if (!kn37u) kn37u = await import('./kbx_n37u.js');
