@@ -36,10 +36,9 @@ async function asset(env, p, json) {
 }
 const manifest = async env => (await asset(env, '/data/n32t/manifest.json', true)) || { pages: {} };
 export async function langsOf(env, key) { const M = await manifest(env); return (M.pages && M.pages[FAM(key) || key]) || []; }
-// paths ('/tools/risk/') that exist in this language: ours plus the tool pages other modules already serve in 8 languages
-const OTHER = ['/tools/bulk-check/', '/tools/contract-addendum/', '/tools/contract-reader/', '/tools/permit-photo/', '/tools/widget/', '/tools/find-listing/', '/tools/handover-history/', '/tools/visa-by-investment/', '/tools/compare-countries/', '/tools/on-time/', '/tools/request-documents/', '/tools/inheritance/', '/tools/foreign-mortgages/', '/tools/area-report/', '/tools/translate/', '/tools/receipt-check/', '/tools/payment-vs-progress/'];
+// paths ('/tools/risk/') that exist in this language: ours plus the pages other modules serve in 8 languages (manifest.json x, n40 k20)
 export async function localSet(env, lang) {
-  const M = await manifest(env), S = new Set(OTHER);
+  const M = await manifest(env), S = new Set(M.x);
   for (const [k, L] of Object.entries(M.pages || {})) if (L.includes(lang)) S.add('/' + k + '/');
   // country and market pages exist in the other languages only with 5+ named projects (kbx_n29i): link those, keep the rest in English
   try { const K = await placeKeys(env); for (const c of K.c) S.add('/countries/' + c + '/'); for (const k of K.m) S.add('/m/' + k + '/'); } catch (e) {}
@@ -128,8 +127,8 @@ export function trHtml(html, D, LS) {
 }
 
 // ------------------------------------------------------------------------------------------------ page assembly
-async function englishOf(env, key, inner) {
-  if (key === 'new' || key === 'vs' || FAM(key)) { const r = await inner('/' + key + '/'); return r && r.status === 200 ? await r.text() : null; }
+async function englishOf(env, key, inner, q) {
+  if (key === 'new' || key === 'vs' || FAM(key)) { const r = await inner('/' + key + '/' + q); return r && r.status === 200 ? await r.text() : null; }
   if (key === SOP) return await asset(env, '/data/n32t/sop-summary.txt', false);   // n40 L3: the report in 7 languages is a summary (key findings, method, tables), built from /data/n32t/sop-summary.txt
   return await asset(env, '/' + key + '/', false);
 }
@@ -145,8 +144,8 @@ function parts(src, shellTxt) {
 }
 async function render(env, lang, key, D, body, shTxt, extra) {
   const N = await import('./kbx_named.js');
-  const path = '/' + key + '/', canon = ORIGIN + pre(lang) + path, have = new Set(await langsOf(env, key));
-  const alt = l => ORIGIN + (l === 'en' || have.has(l) ? pre(l) : '') + path;
+  const q = (extra && extra.q) || '', path = '/' + key + '/', canon = ORIGIN + pre(lang) + path + q, have = new Set(await langsOf(env, key));
+  const alt = l => ORIGIN + (l === 'en' || have.has(l) ? pre(l) : '') + path + q;
   const ld = { '@context': 'https://schema.org', '@graph': [{ '@type': key.startsWith('tools/') ? 'WebApplication' : key.startsWith('guides/') ? 'Article' : /^[a-z]+$/.test(key) && key.length > 3 && !/^(?:new|registers)$/.test(key) ? 'WebPage' : 'CollectionPage', name: D.t, description: D.d, url: canon, inLanguage: lang, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' } },
     { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Kolaboro', item: ORIGIN + pre(lang) + '/' }].concat(key.startsWith('tools/') ? [{ '@type': 'ListItem', position: 2, name: T(D, 'Tools') || 'Tools', item: ORIGIN + pre(lang) + '/tools/' }] : []).concat([{ '@type': 'ListItem', position: key.startsWith('tools/') ? 3 : 2, name: D.t, item: canon }]) }] };
   if (key === SOP) Object.assign(ld['@graph'][0], { '@type': 'Report', datePublished: '2026-11-01', isBasedOn: ORIGIN + '/' + SOP + '/', publisher: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' } });
@@ -158,7 +157,7 @@ async function render(env, lang, key, D, body, shTxt, extra) {
     if (extra && extra.il) ld['@graph'][0].mainEntity = extra.il;
     ld['@graph'] = [Object.assign(ld['@graph'][0], { '@type': key.startsWith('rankings/') ? 'CollectionPage' : 'WebPage' }), { '@type': 'BreadcrumbList', itemListElement: cr.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c[0], item: c[1] })) }].concat(fq.length ? [{ '@type': 'FAQPage', mainEntity: fq }] : []);
   }
-  const pg = { title: D.t + ([...D.t].length > 49 && FAM(key) ? '' : ' | Kolaboro'), desc: D.d, canon, body, alt, ld };
+  const pg = { title: D.t + (q ? ' (' + q.slice(3) + ')' : '') + ([...D.t].length > 49 && FAM(key) ? '' : ' | Kolaboro'), desc: D.d, canon, body, alt, ld, noindex: !!q };
   let html = await N.assemble(pg, lang, new Response(shTxt));
   // function replacements: page scripts can hold "$'" or "$&" (e.g. 'US$'), which a replacement string would expand
   // longer words in de/nl/ru can widen a grid track past a 390 px screen: let cards shrink and wrap
@@ -184,21 +183,21 @@ async function marketsBody(env, lang, D) {
 
 export async function handle(req, u, env, ctx, shell, inner) {
   const m = /^\/(es|de|fr|nl|ru|zh|ar)\/(.+?)(\/?)$/.exec(u.pathname); if (!m) return null;
-  const lang = m[1], key = m[2];
+  const lang = m[1], key = m[2], pn = /^(new|vs)$/.test(key) && u.searchParams.get('p') | 0, q = pn > 1 ? '?p=' + pn : '';   // n40 k20: the page of a paged list (was always page 1)
   if (!(await langsOf(env, key)).includes(lang)) return null;
   if (!m[3]) return new Response(null, { status: 301, headers: { location: u.pathname + '/' + u.search, 'cache-control': 'public, max-age=3600' } });
   const D = await dict(env, lang, key); if (!D) return null;
-  const ck = typeof caches !== 'undefined' ? new Request(ORIGIN + '/__n32t/' + N32T_V + '.' + ((await manifest(env)).v || 0) + u.pathname) : null;   // the built page for 15 minutes (the English /new/ is 400 KB)
+  const ck = typeof caches !== 'undefined' ? new Request(ORIGIN + '/__n32t/' + N32T_V + '.' + ((await manifest(env)).v || 0) + u.pathname + q) : null;   // the built page for 15 minutes (the English /new/ is 400 KB)
   if (ck) { try { const hit = await caches.default.match(ck); if (hit) return new Response(hit.body, { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=600', 'x-n32t-cache': 'hit' } }); } catch (e) {} }
-  const r = await build(env, lang, key, D, shell, inner);
+  const r = await build(env, lang, key, D, shell, inner, q);
   if (r && ck && ctx && ctx.waitUntil) { const c = r.clone(); ctx.waitUntil(caches.default.put(ck, new Response(c.body, { headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=900' } })).catch(() => {})); }
   return r;
 }
-async function build(env, lang, key, D, shell, inner) {
+async function build(env, lang, key, D, shell, inner, q) {
   const LS = await localSet(env, lang);
   const sh0 = await shell(pre(lang) + '/how-we-score/'); const shTxt = sh0 && sh0.status === 200 ? await sh0.text() : ''; if (!shTxt) return null;
   if (key === 'm') return render(env, lang, key, D, await marketsBody(env, lang, D), shTxt, null);
-  const src = await englishOf(env, key, inner); if (!src) return null;
+  const src = await englishOf(env, key, inner, q); if (!src) return null;
   const P = parts(src, shTxt); if (!P) return null;
   if (FAM(key)) P.main = P.main.replace(/<section id="how-to-cite"[\s\S]*?<\/section>/, '').replace(/<div class="wrap"><p class="k-xs n33-by"[\s\S]*?<\/p><\/div>/, '');   // n40 L1: English credit and cite blocks
   let body = trHtml(P.main, D, LS);
@@ -208,7 +207,7 @@ async function build(env, lang, key, D, shell, inner) {
     if (lang === 'ru') body = ruPlaces(body);
   }
   if (key === 'new' || key === 'vs') body = body.replace(/(<a\s[^>]*href="\/vs\/[a-z0-9-]+-vs-[a-z0-9-]+\/")/g, '$1 hreflang="en"');   // pair pages are English only
-  if (key === 'new' || key === 'vs') body = body.replace(new RegExp('href="' + pre(lang) + '/(new|vs)/\\?p=', 'g'), 'href="/$1/?p=');   // n40 k7 (R06-08): only the English list is paged (?p=2 ...); translated page links led to a copy of page 1
+  if (key === 'new' || key === 'vs') body = body.replace(/(href="\/[a-z]{2}\/(?:new|vs)\/(?:\?p=\d+)?") hreflang="en"/g, '$1');   // n40 k20: pager links stay in the page language
   // n38 d5: the shell's inline script rewrites English-format numbers (3,433) in the page locale on DOMContentLoaded, which rewrapped
   // lines after the first paint (layout shift on /es/vs/, /de/vs/). Same rule here, with the same locale the shell's script reads (KBL.num).
   const kn = /"num":\s*"([^"]+)"/.exec(shTxt);
@@ -218,7 +217,7 @@ async function build(env, lang, key, D, shell, inner) {
   let il = null;
   if (FAM(key) === 'guides' && key.startsWith('rankings/')) { try { for (const m of src.matchAll(/<script type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)) { const j = JSON.parse(m[1]); for (const o of [].concat(j['@graph'] || j)) if (o && o.mainEntity && o.mainEntity['@type'] === 'ItemList') il = o.mainEntity; } } catch (e) { il = null; }
     if (il) il = Object.assign({}, il, { itemListElement: (il.itemListElement || []).map(x => x && typeof x.url === 'string' && x.url.startsWith(ORIGIN + '/') ? Object.assign({}, x, { url: ORIGIN + locHref(x.url.slice(ORIGIN.length), lang, LS) }) : x) }); }
-  return render(env, lang, key, D, body, shTxt, { css: P.css, js: P.js, il });
+  return render(env, lang, key, D, body, shTxt, { css: P.css, js: P.js, il, q });
 }
 
 // English pages with translations: hreflang alternates and the language menu pointed at the translated page
