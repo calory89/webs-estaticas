@@ -1139,8 +1139,33 @@ document.addEventListener('click',function(e){var b=e.target.closest&&e.target.c
     var t = e.target || {};
     if (e.key !== '?' || e.metaKey || e.ctrlKey || e.altKey || /^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName || '') || t.isContentEditable) return;
     if (/\/shortcuts\/?$/.test(location.pathname)) return;
-    e.preventDefault(); location.href = P + '/shortcuts/';
+    e.preventDefault(); kbHelp();
   });
+  // n40 k7 (R03-19): "?" opens a small overlay with the shortcuts of the command palette (Esc or the button closes it; the full page
+  // stays one link away). Falls back to the page where <dialog> is not supported.
+  var KH = { en: ['Keyboard shortcuts', 'Open search', 'Open this list', 'Close search, menus and dialogs', 'Move between links and buttons', 'Choose a search suggestion', 'All shortcuts', 'Close'],
+    es: ['Atajos de teclado', 'Abrir la búsqueda', 'Abrir esta lista', 'Cerrar la búsqueda, los menús y los diálogos', 'Moverse entre enlaces y botones', 'Elegir una sugerencia de búsqueda', 'Todos los atajos', 'Cerrar'],
+    fr: ['Raccourcis clavier', 'Ouvrir la recherche', 'Ouvrir cette liste', 'Fermer la recherche, les menus et les fenêtres', 'Passer d\u2019un lien ou d\u2019un bouton à l\u2019autre', 'Choisir une suggestion de recherche', 'Tous les raccourcis', 'Fermer'],
+    de: ['Tastenkürzel', 'Suche öffnen', 'Diese Liste öffnen', 'Suche, Menüs und Dialoge schließen', 'Zwischen Links und Schaltflächen wechseln', 'Suchvorschlag wählen', 'Alle Tastenkürzel', 'Schließen'],
+    nl: ['Sneltoetsen', 'Zoeken openen', 'Deze lijst openen', 'Zoeken, menu\u2019s en vensters sluiten', 'Tussen links en knoppen bewegen', 'Een zoeksuggestie kiezen', 'Alle sneltoetsen', 'Sluiten'],
+    ru: ['Горячие клавиши', 'Открыть поиск', 'Открыть этот список', 'Закрыть поиск, меню и диалоги', 'Переходить между ссылками и кнопками', 'Выбрать подсказку поиска', 'Все горячие клавиши', 'Закрыть'],
+    zh: ['键盘快捷键', '打开搜索', '打开此列表', '关闭搜索、菜单和对话框', '在链接和按钮之间移动', '选择搜索建议', '全部快捷键', '关闭'],
+    ar: ['اختصارات لوحة المفاتيح', 'فتح البحث', 'فتح هذه القائمة', 'إغلاق البحث والقوائم والنوافذ', 'التنقل بين الروابط والأزرار', 'اختيار اقتراح بحث', 'كل الاختصارات', 'إغلاق'] };
+  function kbHelp() {
+    var L = KH[LG] || KH.en, dl = D.getElementById('kb-help');
+    if (!dl) {
+      dl = D.createElement('dialog');
+      if (typeof dl.showModal !== 'function') { location.href = P + '/shortcuts/'; return; }
+      dl.id = 'kb-help'; dl.setAttribute('aria-labelledby', 'kb-help-h'); if (LG === 'ar') dl.dir = 'rtl';
+      var k = function (x) { return '<kbd>' + x + '</kbd>'; }, row = function (a, b) { return '<tr><td>' + a + '</td><td>' + b + '</td></tr>'; };
+      dl.innerHTML = '<style>#kb-help{max-width:min(92vw,520px);border:1px solid var(--line,#d5d3cc);border-radius:14px;padding:18px 20px;background:var(--card,var(--paper,#fff));color:var(--ink,#111)}#kb-help::backdrop{background:rgba(0,0,0,.45)}#kb-help h2{margin:0 0 10px;font-size:1.15rem}#kb-help table{border-collapse:collapse;width:100%}#kb-help td{padding:6px 8px;border-bottom:1px solid var(--line,#d5d3cc);vertical-align:top;text-align:start}#kb-help td:first-child{white-space:nowrap}#kb-help kbd{display:inline-block;min-width:1.5em;padding:1px 6px;border:1px solid var(--line,#c9c6bd);border-bottom-width:2px;border-radius:6px;font:600 .85rem ui-monospace,monospace;text-align:center}#kb-help p{margin:12px 0 0;display:flex;gap:12px;justify-content:space-between;align-items:center;flex-wrap:wrap}#kb-help button{min-height:40px}</style>' +
+        '<h2 id="kb-help-h">' + L[0] + '</h2><table>' + row(k('/') + ' ' + k('Ctrl') + ' ' + k('K'), L[1]) + row(k('?'), L[2]) + row(k('Esc'), L[3]) + row(k('Tab') + ' ' + k('Shift') + ' ' + k('Tab'), L[4]) + row(k('\u2191') + ' ' + k('\u2193') + ' ' + k('Enter'), L[5]) + '</table>' +
+        '<p><a href="' + P + '/shortcuts/">' + L[6] + '</a><button type="button" class="btn btn-sm" data-kb-close>' + L[7] + '</button></p>';
+      dl.addEventListener('click', function (ev) { if (ev.target === dl || (ev.target.closest && ev.target.closest('[data-kb-close]'))) dl.close(); });
+      D.body.appendChild(dl);
+    }
+    if (!dl.open) dl.showModal();
+  }
   // "/" opens search on every page (pages with their own search box marked data-kbd="/" keep focusing that box, see above)
   D.addEventListener('keydown', function (e) {
     var t = e.target || {};
