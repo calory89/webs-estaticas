@@ -143,6 +143,9 @@ function listLd(body) {
   return it.length >= 2 ? { '@type': 'ItemList', numberOfItems: it.length, itemListElement: it } : null;
 }
 const sg1 = s => String(s).replace(/(^|[^\d.,])1 (tracked |official )?(project|register|rule)s\b/g, '$1' + '1 $2$3').replace(/(\b1 (tracked )?project) (leave|are|have|do not|make)\b/g, (m, a, b, v) => a + ' ' + { leave: 'leaves', are: 'is', have: 'has', 'do not': 'does not', make: 'makes' }[v]);
+const pruneCss = (css, html) => { if (!css) return css; const keep = sel => { const n = sel.match(/\.[A-Za-z0-9_-]+/g); return !n || n.some(c => html.includes(c.slice(1))); };
+  return css.replace(/(@media[^{]*\{)((?:[^{}]*\{[^{}]*\})*)\s*\}/g, (m0, at, inner) => { const r = inner.replace(/([^{}]+)\{([^{}]*)\}/g, (m1, sel) => keep(sel) ? m1 : ''); return r.trim() ? at + r + '}' : ''; })
+    .replace(/(?<=^|[}>])([^{}@<>]+)\{([^{}]*)\}/g, (m1, sel) => keep(sel) ? m1 : ''); };   // n40 k43: drop rules of the shared hub style whose classes are absent
 function render(P) {
   const canon = SITE + P.path;
   if (P.updated && /^\/countries\/[^/]+\/[a-z-]+\/$/.test(P.path)) P.body = TB.kbx_seo__s.k0 + esc(P.updated) + '">' + longDate(P.updated) + '</time></p>' + P.body;   // n40 R01-15
@@ -151,13 +154,14 @@ function render(P) {
   if ((P.type || '') === 'CollectionPage' && !(P.pageLd && P.pageLd.mainEntity) && !(P.ld || []).some(x => x && x['@type'] === 'ItemList')) { const il = listLd(P.body); if (il) P.pageLd = Object.assign({}, P.pageLd || {}, { mainEntity: il }); }
   if (P.title && P.title.length > 60) P.title = P.title.replace(/ \| Kolaboro( engineering)?$/, '');   // n29t (item 46): titles of hubs and rankings fit in 60 characters where the brand suffix is what overflows
   const ld = { '@context': 'https://schema.org', '@graph': [Object.assign({ '@type': P.type || 'WebPage', '@id': canon + '#page', url: canon, name: P.h1 || P.title, description: P.desc, inLanguage: 'en', dateModified: (HLM && HLM.get(P.path)) || P.updated, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: SITE + '/' }, publisher: { '@type': 'Organization', name: 'Kolaboro', url: SITE + '/' } }, P.pageLd || {}), crumbLd(P.crumbs)].concat(P.ld || []) };
-  const head = '<title>' + esc(P.title) + '</title><meta name="description" content="' + esc(P.desc) + '"><link rel="canonical" href="' + canon + '">' +
+  let head = '<title>' + esc(P.title) + '</title><meta name="description" content="' + esc(P.desc) + '"><link rel="canonical" href="' + canon + '">' +
     (P.noindex ? '<meta name="robots" content="noindex, follow">' : TB.kbx_seo__s.k1 + canon + '"><link rel="alternate" hreflang="x-default" href="' + canon + '">') +
     '<meta property="og:title" content="' + esc(P.title) + '"><meta property="og:description" content="' + esc(P.desc) + '"><meta property="og:url" content="' + canon + '"><meta name="twitter:title" content="' + esc(P.title) + '"><meta name="twitter:description" content="' + esc(P.desc) + '">' +
     (P.prev ? '<link rel="prev" href="' + SITE + P.prev + '">' : '') + (P.next ? '<link rel="next" href="' + SITE + P.next + '">' : '') +   // n40 k7 (R06-08): paged hubs link their neighbours in <head>
     (P.feed ? '<link rel="alternate" type="application/rss+xml" title="' + esc(P.feed[0]) + '" href="' + esc(P.feed[1]) + '">' : '') +   // n29t (item 48): the place's own change feed
     '<script type="application/ld+json">' + JSON.stringify(ld).replace(/</g, '\\u003c') + '</script>' + CSS;
   const main = '<section class="phero"><div class="wrap">' + crumbs(P.crumbs) + '<h1>' + esc(P.h1 || P.title) + '</h1>' + (P.lead ? '<p class="lead">' + P.lead + '</p>' : '') + '</div></section><section class="sec sx"><div class="wrap">' + P.body + '</div></section>';
+  if (CSS) { const pc = pruneCss(CSS, main); head = head.replace(CSS, () => pc); }   // n40 k43 (R04-50, R05-49, R05-50): only the hub rules whose classes the page uses (0.9 to 2.4 KB less per page)
   return { head, main, status: P.status || 200, og: ogImg(P.path) };
 }
 async function shellOut(shell, R, cacheHdr) {
