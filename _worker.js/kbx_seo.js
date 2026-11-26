@@ -472,8 +472,8 @@ async function ogOf(env, p) {
   } catch (e) { v = null; }
   MEMO[k] = { t: Date.now(), v }; return v;
 }
-const XL = ['methods/construction-stage', 'methods/delivery-forecast', 'guides/short-let-rules', 'satellite/plot', 'watch/lookalikes', 'graph/developers', 'tools/contract-addendum', 'tools/permit-photo', 'tools/my-checklist', 'live/xrays', 'open', 'numbers', 'bali', 'dubai', 'phuket', 'tulum', 'algarve', 'lombok', 'glossary', 'guides', 'tools', 'compare', 'developers', 'data', 'engineering', 'map', 'press', 'press/monthly', 'courts', 'developers/benchmark', 'transparency-index', 'index/prices', 'index/delays', 'compare/markets', 'rankings/changed-promises'];
-const XE = ['tools/account-check', 'tools/site-visit', 'tools/payment-email-check', 'findings', 'room', 'bulk-check', 'engineering/seo'];
+const XL = ['methods/construction-stage', 'methods/delivery-forecast', 'guides/short-let-rules', 'satellite/plot', 'watch/lookalikes', 'graph/developers', 'tools/contract-addendum', 'tools/permit-photo', 'tools/my-checklist', 'tools/account-check', 'tools/payment-email-check', 'live/xrays', 'open', 'numbers', 'bali', 'dubai', 'phuket', 'tulum', 'algarve', 'lombok', 'glossary', 'guides', 'tools', 'compare', 'developers', 'data', 'engineering', 'map', 'press', 'press/monthly', 'courts', 'developers/benchmark', 'transparency-index', 'index/prices', 'index/delays', 'compare/markets', 'rankings/changed-promises'];
+const XE = ['tools/site-visit', 'findings', 'room', 'bulk-check', 'engineering/seo'];
 const xtraLocs = () => XL.flatMap(p => LANGS.map(l => SITE + (l === 'en' ? '' : '/' + l) + '/' + p + '/')).concat(XE.map(p => SITE + '/' + p + '/')).map(loc => ({ loc, lastmod: null }));
 async function staticPages(env, audit) {   // the static sitemap (kept as /sitemap.xml for the QA tools) grouped by language
   const sm = (await file(env, '/sitemap.xml')) || '';

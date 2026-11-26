@@ -415,6 +415,24 @@
    "ru",
    "zh",
    "ar"
+  ],
+  "tools/account-check": [
+   "es",
+   "de",
+   "fr",
+   "nl",
+   "ru",
+   "zh",
+   "ar"
+  ],
+  "tools/payment-email-check": [
+   "es",
+   "de",
+   "fr",
+   "nl",
+   "ru",
+   "zh",
+   "ar"
   ]
  },
  "x": [
