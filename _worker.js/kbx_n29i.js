@@ -86,7 +86,10 @@ function marketPage(D, m, lang) {
   const v = { p, n: nf(lang, st.n), dv: nf(lang, st.dv), d };
   // n29q: a country with a market file of the same name (Malaysia, Vietnam, Costa Rica...) had the same title on both pages (255 pairs)
   const CT = { en: '{p}: off-plan projects by market and developer', es: '{p}: obra nueva sobre plano por mercado y promotor', fr: '{p} : programmes sur plan par marché et promoteur', de: '{p}: Off-Plan-Projekte nach Markt und Bauträger', nl: '{p}: projecten op plan per markt en ontwikkelaar', ru: '{p}: новостройки по рынкам и застройщикам', zh: '{p}期房项目：按市场与开发商', ar: '{p}: مشاريع على الخارطة حسب السوق والمطوّر' };
-  const title = isC && (D.M.has(slugM(mk)) || [...D.M.values()].some(o => mkName(o.mk, lang) === p)) ? (CT[lang] || CT.en).replace('{p}', p) : t(lang, 'm_t', v), desc = t(lang, 'm_desc', v);
+  let title = isC && (D.M.has(slugM(mk)) || [...D.M.values()].some(o => mkName(o.mk, lang) === p)) ? (CT[lang] || CT.en).replace('{p}', p) : t(lang, 'm_t', v), desc = t(lang, 'm_desc', v);
+  const C40 = TB.kbx_n29i_CTR; if (!isC && C40.s && C40.s.includes(slugM(mk))) {   // n40 k16 (R07-05..08, R07-30..33): titles and descriptions from the market's own counts, logged in /data/ctr-changes.tsv
+    const w = Object.assign({}, v, { pn: nf(lang, st.pn), pp: nf(lang, pct(st.pn, st.n)), ov: nf(lang, st.ov), y: st.yTop ? st.yTop[0] : '' }), fl = x => String(x).replace(/\{(\w+)\}/g, (q, a) => w[a] != null ? w[a] : q);
+    const tt = (C40.t[lang] || C40.t.en).map(fl).find(x => x.length <= 60); if (tt) title = tt; desc = fl((C40.d[lang] || C40.d.en)[st.yTop ? 0 : 1]).replace(/\.\.(?=\s|$)/g, '.'); }
   const TRP = TR_PLACES.filter(P => !P.coi && (isC ? (CO_AL[P.co] || P.co) === m.co : P.m.includes(mk)) && D.tri && D.tri.places.get(P.s) && D.tri.places.get(P.s).n);
   const BUY = BUY_PLACES.filter(P => isC ? (CO_AL[P.c] || P.c) === m.co : (TRP.some(q => q.s === P.s) || slugA(mk) === P.s));
   const rows = L.slice().sort((a, b) => (D.score(b.id) ?? -1) - (D.score(a.id) ?? -1) || a.n.localeCompare(b.n)).map(x => {

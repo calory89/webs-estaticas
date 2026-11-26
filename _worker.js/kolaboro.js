@@ -1602,6 +1602,10 @@ export async function ssr(base, u, kind, env) {
       const un = LR.length < n ? ' (' + (n - LR.length) + ' not yet reviewed)' : '', tail = ': ' + avg(x => x.score).toFixed(1) + ' of 6 buyer checks public on average, ' + pct(x => (x.checks || {}).permit === 2) + '% show a permit, ' + pct(x => (x.checks || {}).escrow === true) + '% deposit protection. Updated ' + dw + '.';
       desc = !L.some(rv8) ? n + ' off-plan projects tracked in ' + m + ', not yet reviewed by Kolaboro. Updated ' + dw + '.' : n + ' off-plan projects in ' + m + un + tail;
       if (desc.length > 155) desc = desc.replace(un, '').replace(' on average', ''); if (desc.length > 160) desc = desc.replace(/ Updated [^.]*\.$/, ''); }
+    { const C40 = TB.kbx_n29i_CTR; if (C40.s && C40.s.includes(slugM(m)) && L.some(rv8)) {   // n40 k16 (R07-05..08, R07-30..33): title and description from the market's counts (supersedes the R03-31 wording), logged in /data/ctr-changes.tsv
+      const dw = (q => q.length === 3 ? (+q[2]) + ' ' + ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][+q[1] - 1] + ' ' + q[0] : '')(String(d.updated || '').slice(0, 10).split('-'));
+      const w = { p: m, n, pp: pct(x => (x.checks || {}).permit === 2), ep: pct(x => (x.checks || {}).escrow === true), od: L.filter(x => x.overdue > 0).length, d: dw }, fl = x => String(x).replace(/\{(\w+)\}/g, (q, a) => w[a] != null ? w[a] : q);
+      const tt = C40.t.en.map(fl).find(x => x.length <= 60); if (tt) title = tt + (tt.length + 11 <= 60 ? ' | Kolaboro' : ''); desc = C40.ed.map(fl).find(x => x.length <= 160) || desc; } }
     canon = 'https://kolaboro.com/m/' + slugM(m) + '/';
     // n33l (items 68, 69): every project of the market is listed, each link named after the project (was the first 200, by id);
     // n33p (items 44, 56): markets of up to 200 projects also show area, developer and the handover date on record
