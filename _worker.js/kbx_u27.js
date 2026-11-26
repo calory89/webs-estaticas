@@ -67,6 +67,7 @@ export function light6(o) {
   const rec = it.record, past = +c.overdue || 0;
   let d;
   if (past > 0) d = ['no', 'd_past', { m: String(past) }];
+  else if (rec === 'yes' && o.mv && !/completed/.test(String(c.stage || ''))) d = ['part', 'd_moved'];   // n40 k11: a later date is on record, so the date was not kept as first published
   else if (rec === 'yes') d = ['ok', /completed/.test(String(c.stage || '')) ? 'd_done' : 'd_kept'];
   else if (rec === 'part') d = ['part', /completed/.test(String(c.stage || '')) ? 'd_late' : 'd_moved'];
   else if (it.date === 'yes' || o.ho) d = ['ok', 'd_pub'];

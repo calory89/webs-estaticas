@@ -262,7 +262,7 @@
     var grp = function(kind, h, note){ var L = w.items.filter(function(x){ return kind.indexOf(x.kind) >= 0; }); return L.length ? '<div class="pf-wi-g"><h3>' + h + '</h3>' + (note ? '<p class="pf-wi-n">' + note + '</p>' : '') + '<ul>' + L.map(item).join('') + '</ul></div>' : ''; };
     var mk = w.market ? ' ' + esc(c.market) + ' transparency index ' + w.market.index.toFixed(1) + ' of 100, rank ' + w.market.rank + ' of ' + rows.length + ' markets.' : ' ' + esc(c.market) + ' has fewer than 3 tracked projects, so it has no transparency index yet.';
     return '<section class="pf-sec pf-wi" id="what-if"><div class="wrap"><h2>What would change this score</h2>' +
-      '<p class="sub">Each line changes one input and reruns the same open scoring rules that produced the scores above. Nothing is estimated and no AI is involved: it is arithmetic on the public record, done in your browser.</p>' +
+      '<p class="sub">Each line changes one input and reruns the same open scoring rules that produced the scores above. Nothing is estimated and no hosted model was called: it is arithmetic on the public record, done in your browser.</p>' +
       '<p class="pf-wi-now"><b>Today:</b> published ' + b.score + ' of 6, confirmed ' + b.vscore + ' of 6, tier <b>' + esc(tierName(b.tier)) + '</b>.' + mk + '</p>' +
       (w.items.length ? '<div class="pf-wi-cols">' + grp(['publish', 'all'], 'If the developer published') + grp(['confirm'], 'If a registry or independent source confirmed', 'Confirmation raises the confirmed score only. The tier follows what is published and any public problems.') + grp(['flags'], 'If the public problems went away') + '</div>' : '<p class="pf-call ok">Every check is published and confirmed: no single change would raise these scores.</p>') +
       ((c.flags || []).length ? '<p class="pf-call">While a problem appears in public reports, the tier stays "' + esc(tierName('caution')) + '" however much is published. That is the rule, by design.</p>' : '') +
@@ -331,7 +331,7 @@
         (x.reverted ? '<small class="pf-rev">Flipped back later: this may be a reading difference rather than an edit.</small>' : '') + '</div></li>';
     }).join('') + '</ol>' : '<p class="pf-call ok">No change to the tracked promises across these ' + d.copies + ' copies.</p>';
     return '<div class="pf-hist">' + head + '<p class="muted">' + depth + '</p>' + list +
-      '<p class="pf-fine">Compared every day: ' + esc((M.fields || []).join(', ').toLowerCase()) + '. Not yet compared daily: ' + esc((M.not_tracked_daily || []).join(', ')) + '. When the page text changes, an AI model re-reads what it advertises; we list a change only when the page fingerprint changed too. Prices are shown as a percentage, not an amount, so the project stays anonymous.</p></div>';
+      '<p class="pf-fine">Compared every day: ' + esc((M.fields || []).join(', ').toLowerCase()) + '. Not yet compared daily: ' + esc((M.not_tracked_daily || []).join(', ')) + '. When the page text changes, we re-read what it advertises; we list a change only when the page fingerprint changed too. Prices are shown as a percentage, not an amount, so the project stays anonymous.</p></div>';
   }
   /* Fetched in parallel with the database and, when it arrives in time, rendered in the same pass as the rest of the file,
      so these sections do not grow after the page is painted. Only a slow response fills in later. */

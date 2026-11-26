@@ -47,7 +47,7 @@ const mBySlug = s => { if (!MS) { MS = new Map(); for (const k in D.mk) MS.set(s
 const pre = l => l === 'en' ? '' : '/' + l;
 const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const t = (l, k) => { const a = T && T[l] && T[l][k]; return a != null ? a : (T && T.en && T.en[k]) || ''; };
-const tf = (l, k, v) => t(l, k).replace(/\{(\w+)\}/g, (m, x) => v[x] != null ? v[x] : m);
+const tf = (l, k, v) => (v && v.n === '1' && T && T[l] && T[l][k + '_1'] ? t(l, k + '_1') : t(l, k)).replace(/\{(\w+)\}/g, (m, x) => v[x] != null ? v[x] : m);
 const nf = (n, l) => { try { return new Intl.NumberFormat(LOC[l] || 'en-GB', { maximumFractionDigits: 1, numberingSystem: 'latn' }).format(n); } catch (e) { return String(n); } };
 const fd = (d, l) => { if (!d) return ''; if (!/^\d{4}-\d{2}-\d{2}/.test(d)) return d; try { return new Intl.DateTimeFormat(LOC[l] || 'en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC', numberingSystem: 'latn' }).format(new Date(d.slice(0, 10) + 'T12:00:00Z')); } catch (e) { return d.slice(0, 10); } };
 const dir = l => l === 'ar' ? ' dir="rtl"' : '';

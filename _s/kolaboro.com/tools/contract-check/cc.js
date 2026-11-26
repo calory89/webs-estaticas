@@ -261,29 +261,29 @@
       if (a && a.dropped) dropped++;
       if (r.found) { found++; if (r.verified) verified++; }
       var cls = r.found ? 'good' : 'note', tag;
-      if (r.found) tag = '<span class="ft-tag yes">Found</span>' + (r.how === 'ai' ? '<span class="ft-tag info">On-device AI</span>' : '<span class="ft-tag info">Keyword match</span>');
+      if (r.found) tag = '<span class="ft-tag yes">Found</span>' + (r.how === 'ai' ? '<span class="ft-tag info">Read in your browser</span>' : '<span class="ft-tag info">Keyword match</span>');
       else tag = '<span class="ft-tag note">Not found</span>';
-      if (ai && !ai.done && !a) tag += '<span class="ft-tag info">AI not read yet</span>';
+      if (ai && !ai.done && !a) tag += '<span class="ft-tag info">Not read in your browser yet</span>';
       html += '<article class="ft-f ' + cls + ' cc-c" id="cl-' + c.k + '"><h3>' + esc(c.label) + tag + '</h3>';
       if (r.found && a && !a.found && r.how === 'kw') html += '<p class="cc-meta">The on-device model did not confirm this clause; showing the keyword match.</p>';
       if (r.found) {
         html += '<blockquote class="cc-q">' + esc(r.quote) + '</blockquote><p class="cc-meta">' + (r.page ? 'Page ' + r.page + '. ' : 'Spans a page break. ') +
           'Quote checked word for word against the text of your file' + (r.how === 'ai' ? ' (ignoring line breaks and capitals)' : '') + '.</p>' + chipsFor(r.quote);
-        if (r.summary) html += '<p class="cc-sum"><b>AI summary, not checked:</b> ' + esc(r.summary) + '</p>';
+        if (r.summary) html += '<p class="cc-sum"><b>Summary from the in-browser reading, not checked:</b> ' + esc(r.summary) + '</p>';
         if (r.how === 'kw' && r.also && r.also.length) html += '<details class="cc-also"><summary>' + r.also.length + ' other matching passage' + (r.also.length > 1 ? 's' : '') + '</summary>' + r.also.map(function (x) { return '<blockquote class="cc-q">' + esc(x.t) + '</blockquote><p class="cc-meta">Page ' + x.page + '</p>'; }).join('') + '</details>';
       } else {
         html += '<p>' + (a ? 'Neither the on-device model nor the keyword finder found this clause.' : 'No sentence matched our keywords for this clause.') + ' That does not prove it is missing: read the contract or ask your lawyer.</p>';
       }
-      if (a && a.dropped) html += '<p class="cc-drop"><b>Dropped AI answer:</b> ' + esc(a.note) + (a.bad ? ' It wrote: <q>' + esc(a.bad) + '</q>' : '') + '</p>';
-      if (a && a.sumDropped) html += '<p class="cc-drop">The AI summary mentioned a number that is not in the quote, so we hid it.</p>';
+      if (a && a.dropped) html += '<p class="cc-drop"><b>Dropped answer:</b> ' + esc(a.note) + (a.bad ? ' It wrote: <q>' + esc(a.bad) + '</q>' : '') + '</p>';
+      if (a && a.sumDropped) html += '<p class="cc-drop">The summary mentioned a number that is not in the quote, so we hid it.</p>';
       var notes = notesFor(c.k, mk);
       if (notes.length) html += '<details class="cc-laws"' + (!r.found &&(c.k === 'escrow' || c.k === 'title') ? ' open' : '') + '><summary>What the law says (' + notes.length + ')</summary>' + notes.map(noteHTML).join('') + '</details>';
       html += '</article>';
     });
-    var mode = ai ? (ai.done ? 'On-device AI (' + esc(ai.model) + '), keyword match where the AI found nothing' : 'On-device AI reading...') : 'Keyword match (no AI)';
+    var mode = ai ? (ai.done ? 'Read in your browser (' + esc(ai.model) + '), keyword match where the model found nothing' : 'Reading in your browser...') : 'Keyword match only';
     var strip = '<div class="ft-strip"><div class="ft-stat"><b>' + found + ' / ' + CLAUSES.length + '</b><span>clauses found</span></div>' +
       '<div class="ft-stat"><b>' + verified + '</b><span>quotes checked against your file</span></div>' +
-      (ai ? '<div class="ft-stat' + (dropped ? ' look' : '') + '"><b>' + dropped + '</b><span>AI answers dropped (quote not in file)</span></div>' : '') +
+      (ai ? '<div class="ft-stat' + (dropped ? ' look' : '') + '"><b>' + dropped + '</b><span>Answers dropped (quote not in file)</span></div>' : '') +
       '<div class="ft-stat"><b>' + DOC.pages.length + '</b><span>' + (DOC.kind === 'pdf' ? 'pages read' : 'text block') + '</span></div></div>';
     var info = '<p class="ft-file">' + esc(DOC.name) + ' &middot; ' + DOC.full.length.toLocaleString('en-US') + ' characters &middot; Method: ' + mode + (LAST.secs ? ' &middot; ' + LAST.secs + ' s' : '') + '</p>';
     var net = '<p class="cc-net" id="ccNet"></p>';
@@ -299,7 +299,7 @@
     var other = uniq(after.filter(function (u) { return u.origin !== location.origin; }).map(function (u) { return u.host; }));
     el.innerHTML = '<b>Network since you chose the file:</b> ' + (own.length ? 'from kolaboro.com, downloads of ' + own.map(esc).join(', ') + '. ' : 'nothing from kolaboro.com. ') +
       (other.length ? 'Other hosts: ' + other.map(esc).join(', ') + ' (site analytics, with this tool masked). ' : '') + 'Your contract and the results are not in any request.' +
-      (ENGINE ? ' The AI model files come from Hugging Face (huggingface.co and its CDN hf.co) and raw.githubusercontent.com, read from your browser cache once stored.' : '');
+      (ENGINE ? ' The model files come from Hugging Face (huggingface.co and its CDN hf.co) and raw.githubusercontent.com, read from your browser cache once stored.' : '');
   }
 
   /* ---------- flows ---------- */
@@ -330,10 +330,10 @@
   function offerAI() {
     var box = $('ccAi'); box.hidden = false;
     probeGPU().then(function (g) {
-      if (!g.ok) { box.innerHTML = '<h3>On-device AI is not available here</h3><p>' + esc(g.why) + ' The results below come from the keyword finder only: no AI was used. WebGPU works in recent Chrome and Edge on most laptops, and in Safari 26 or later.</p>'; return; }
+      if (!g.ok) { box.innerHTML = '<h3>Reading in your browser is not available here</h3><p>' + esc(g.why) + ' The results below come from the keyword finder only: no model was used. WebGPU works in recent Chrome and Edge on most laptops, and in Safari 26 or later.</p>'; return; }
       var opts = Object.keys(MODELS).map(function (k) { var m = MODELS[k], vr = m.vram[g.f16 ? 'f16' : 'f32']; return '<label class="cc-opt"><input type="radio" name="ccModel" value="' + k + '"' + (k === 'std' ? ' checked' : '') + '><span><b>' + esc(m.name) + '</b> ' + (k === 'std' ? '(recommended)' : '(lighter, less accurate)') + '<br><small>Download about ' + fmtMB(m.mb) + ' once, then stored in this browser. Needs about ' + fmtMB(vr) + ' of graphics memory. <span data-cached="' + k + '"></span></small></span></label>'; }).join('');
-      box.innerHTML = '<h3>Read it with an AI model that runs on this device</h3><p>A small open-weights model (Qwen2.5 by Alibaba, Apache 2.0 licence) runs on your graphics card through WebGPU. Your contract is not sent anywhere: the only network traffic is the one-time download of the model files from Hugging Face and GitHub. Each answer must quote your contract word for word; we check every quote and drop the ones we cannot find.</p>' +
-        '<div class="cc-opts">' + opts + '</div><div class="cc-btns"><button class="btn btn-hi" type="button" id="ccGo">Download and read with AI</button><button class="btn btn-line" type="button" id="ccStop" hidden>Stop</button></div><div class="cc-prog" id="ccProg" hidden><div><i id="ccBar"></i></div><p id="ccProgT" aria-live="polite"></p></div>';
+      box.innerHTML = '<h3>Read it with a small model that runs in your browser</h3><p>A small open-weights model (Qwen2.5 by Alibaba, Apache 2.0 licence) runs on your graphics card through WebGPU. Your contract is not sent anywhere: the only network traffic is the one-time download of the model files from Hugging Face and GitHub. Each answer must quote your contract word for word; we check every quote and drop the ones we cannot find.</p>' +
+        '<div class="cc-opts">' + opts + '</div><div class="cc-btns"><button class="btn btn-hi" type="button" id="ccGo">Download and read in your browser</button><button class="btn btn-line" type="button" id="ccStop" hidden>Stop</button></div><div class="cc-prog" id="ccProg" hidden><div><i id="ccBar"></i></div><p id="ccProgT" aria-live="polite"></p></div>';
       Object.keys(MODELS).forEach(function (k) { cached(modelId(k)).then(function (yes) { var s = box.querySelector('[data-cached="' + k + '"]'); if (s && yes) s.textContent = 'Already on this device.'; }); });
       $('ccGo').addEventListener('click', runAI);
       $('ccStop').addEventListener('click', function () { STOP = true; if (ENGINE) ENGINE.e.interruptGenerate(); });
@@ -356,7 +356,7 @@
       return next();
     }).then(function () {
       LAST.ai = LAST.ai || { model: m.name }; LAST.ai.done = true; LAST.secs = Math.round((performance.now() - T0) / 1000); render();
-      prog(1, STOP ? 'Stopped. Clauses not read by the AI show the keyword result.' : 'Done. Every quote shown was found in your file.');
+      prog(1, STOP ? 'Stopped. Clauses not read by the model show the keyword result.' : 'Done. Every quote shown was found in your file.');
       if (window.kbEvent) kbEvent('contract_check', { method: 'ai', model: key });
     }).catch(function (e) {
       prog(0, 'The model could not run on this device: ' + (e && e.message || e) + '. The keyword results below still stand.');
@@ -377,7 +377,7 @@
     });
     $('ccPasteGo').addEventListener('click', function () { MARK = performance.now(); start([$('ccText').value], 'Pasted text', 'text'); });
     $('ccMarket').addEventListener('change', function () { loadLaw().then(render); });
-    probeGPU().then(function (g) { var el = $('ccGpu'); if (el) el.textContent = g.ok ? 'WebGPU is available in this browser: the optional AI reading can run here.' : 'WebGPU is not available in this browser, so this page will use the keyword finder only (no AI).'; });
+    probeGPU().then(function (g) { var el = $('ccGpu'); if (el) el.textContent = g.ok ? 'WebGPU is available in this browser: the optional in-browser reading can run here.' : 'WebGPU is not available in this browser, so this page will use the keyword finder only.'; });
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
   // test hook for our own checks (no data leaves the page)

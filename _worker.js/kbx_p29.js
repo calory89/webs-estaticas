@@ -31,7 +31,7 @@ const li = (h, s) => '<li class="kfact">' + h + (s || '') + '</li>';
 const enq = (t, lang) => lang === 'en' ? esc(t) : '<span lang="en" dir="ltr">' + esc(t) + '</span>';
 
 const S = TB.kbx_p29_S /* n40 k5: in /data/i18n/kbx_p29.json */;
-export const t29 = (lang, k, v) => { const s = (S[lang] && S[lang][k]) || S.en[k] || k; return v ? s.replace(/\{(\w+)\}/g, (m, x) => v[x] != null ? v[x] : m).replace(/(?<!\.)\.\.(?=\s|$)/g, '.') : s; };   // "2026 г.." -> "2026 г."
+export const t29 = (lang, k, v) => { if (v && (v.k === 1 || v.n === 1) && S[lang] && S[lang][k + '_1']) k += '_1'; const s = (S[lang] && S[lang][k]) || S.en[k] || k; return v ? s.replace(/\{(\w+)\}/g, (m, x) => v[x] != null ? v[x] : m).replace(/(?<!\.)\.\.(?=\s|$)/g, '.') : s; };   // "2026 г.." -> "2026 г."
 
 // ------------------------------------------------------------------------------------------------ foreign ownership by country (item 4)
 // Country rules restated from the law text, each with its source and the day it was read. Indonesia, Thailand and Mexico reuse the
