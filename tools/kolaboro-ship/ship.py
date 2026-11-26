@@ -460,7 +460,7 @@ def main():
             x['data_kinds'][kind] = x['data_kinds'].get(kind, 0) + 1
         x['last_commit'] = iso(c['t'])
 
-    key = None if a.no_ai else os.environ.get('ANTHROPIC_API_KEY')
+    key = None   # 26 Nov 2026 (owner rule: no paid AI): the optional paid summary is off; the deterministic summary is always used
     ai_days = 0
     pages_existing = set(); file_days = set()
     for line in git('ls-tree', '--name-only', ref, SITE + '/changelog/').split('\n'):
@@ -622,10 +622,10 @@ def main():
     total_ships = sum(x['ships'] for x in days.values())
     data = {
         'about': 'Kolaboro shipping log. Every UTC day since the first commit of kolaboro.com, from the git history of the live branch (pub/_lovable), '
-                 'paths _s/kolaboro.com/ and the kolaboro worker modules. A ship is a commit made by a person (or by Claude working for one); commits by our '
+                 'paths _s/kolaboro.com/ and the kolaboro worker modules. A ship is a commit made by a person (or by software working for one); commits by our '
                  'own workflows are counted separately as data updates. Commit subjects pass a privacy filter (no project names, web addresses or emails). '
-                 'The full repository is private; commit ids are shown so changes can be dated. Built by GitHub Actions every hour; AI summaries are written '
-                 'once a day is over and checked by code.',
+                 'The full repository is private; commit ids are shown so changes can be dated. Built by GitHub Actions every hour; daily summaries are taken '
+                 'from the commit subjects.',
         'generated_at': iso(now_utc()), 'timezone': 'UTC', 'today': today.isoformat(), 'first_day': first.isoformat(),
         'totals': {'ships': total_ships, 'data_updates': sum(x['data_updates'] for x in days.values()), 'rollback_commits': rollback_commits,
                    'calendar_days': len(cal), 'days_with_ships': sum(1 for d in cal if ships_by[d]),
