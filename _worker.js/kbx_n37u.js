@@ -416,13 +416,12 @@ function peers(l, slug) {
   const L = [...n.values()].sort((a, b) => b.k - a.k || a.d.localeCompare(b.d)).slice(0, 8); if (!L.length) return '';
   return '<div class="n37" id="n40-peers"' + dir(l) + '><h3>' + esc(tf(l, 'pe_h', { m: mkName(mk, l) })) + '</h3><ul class="n40-pe">' + L.map(o => '<li><a href="' + pre(l) + '/developers/' + o.s + '/">' + bdi(o.d) + '</a> <small>' + esc(tf(l, 'pe_n', { n: nf(o.k, l) })) + '</small></li>').join('') + '</ul></div>';
 }
-// n40 R02-33: the footer links the 8 strongest hubs in the page language (guides, FAQ and new projects added; data, yc, engineering and developers were English only)
+// n40: zh font stack (R02-45), form error links (R02-47), method box on rankings (R02-40); the footer hubs (R02-33) are rows in /data/n33l.json
 export async function foot(u, env, r) {
-  const l = (/^\/(es|de|fr|nl|ru|zh|ar)\//.exec(u.pathname) || [])[1] || 'en'; if (!T) T = await file(env, '/data/n37u-i18n.json'); if (!T) return r; let has = false;
-  const add = ['guides', 'faq', 'new'].map(k => '<li><a href="' + pre(l) + '/' + k + '/">' + esc(t(l, 'ft_' + k)) + '</a></li>').join('');
-  return new HTMLRewriter().on('footer a[href="/guides/"], footer a[href$="/faq/"]', { element() { has = true; } })
-    .on('footer a[hreflang="en"]', { element(e) { const h = e.getAttribute('href'); if (l !== 'en' && /^\/(?:data|yc|engineering|developers)\/$/.test(h)) { e.setAttribute('href', pre(l) + h); e.removeAttribute('hreflang'); } } })
-    .on('footer .fgrid > div:nth-child(4) > ul', { element(e) { if (!has) e.append(add, { html: true }); } })
+  const l = (/^\/(es|de|fr|nl|ru|zh|ar)\//.exec(u.pathname) || [])[1] || 'en'; if (!T) T = await file(env, '/data/n37u-i18n.json'); if (!T) return r;
+  const zh = l === 'zh' ? '<style id="n40-cjk">:root{--k-font:Archivo,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC","Noto Sans SC","Source Han Sans SC",system-ui,sans-serif}body{font-synthesis-weight:none;font-synthesis-style:none}input,button,select,textarea{font-family:inherit}</style>' : '';   // n40 R02-45: one CJK stack for every element, no faux bold or italic
+  const nc = ((r.headers.get('content-security-policy') || '').match(/'nonce-([^']+)'/) || [])[1], fl = '<script src="/k/fl.js?v=n40k2a" defer' + (nc ? ' nonce="' + nc + '"' : '') + '></script>';   // n40 R02-47: form errors linked to their fields (/k/fl.js)
+  return new HTMLRewriter().on('head', { element(e) { if (zh) e.append(zh, { html: true }); } }).on('body', { element(e) { e.append(fl, { html: true }); } })
     .on('main', { element(e) { if (/^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?rankings\//.test(u.pathname)) e.append('<section class="wrap" id="n40-meth"' + dir(l) + '><div style="border:1px solid var(--line,#d9d9d9);border-radius:12px;padding:14px 16px;margin:24px 0"><h2 style="font-size:1.05rem;margin:0 0 6px">' + esc(t(l, 'mt_h')) + '</h2><p style="margin:0">' + esc(t(l, 'mt_p')) + ' <a href="' + pre(l) + '/how-we-score/">' + esc(t(l, 'mt_a')) + '</a></p></div></section>', { html: true }); } }).transform(r);   // n40 R02-40: method box on every rankings page
 }
 let STATS = null;
