@@ -17,7 +17,7 @@ const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', r
 const FIRST = '2026-11';
 export const PATHS = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:reports\/transparency(?:\/20\d\d-[01]\d)?|transparency-badge\/developers)\/?$|^\/reports\/transparency(?:\/20\d\d-[01]\d)?\.csv$|^\/embed\/transparency\/developer\/[a-z0-9-]{1,90}\.svg$/;
 // report pages that get a citation block when they carry none (pages with id="cite" or id="how-to-cite" are left as they are)
-export const CITE_RX = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:press\/monthly|press\/data|research(?:\/[a-z0-9-]{1,80})?|index\/(?:delays|prices)|transparency-index|rankings(?:\/[a-z0-9-]{1,60}){0,2}|handover(?:\/[a-z0-9-]{1,60}){0,2}|numbers|data|reports)\/$/;
+export const CITE_RX = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:press\/monthly|press\/data|press\/places(?:\/[a-z0-9-]{2,40})?|research(?:\/[a-z0-9-]{1,80})?|index\/(?:delays|prices)|transparency-index|rankings(?:\/[a-z0-9-]{1,60}){0,2}|handover(?:\/[a-z0-9-]{1,60}){0,2}|numbers|data|reports)\/$/;
 
 const pre = l => l === 'en' ? '' : '/' + l;
 const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -179,9 +179,11 @@ export async function cite(req, r, env, u) {
   await loadT(env); if (!T) return r;
   let h1 = '', inH1 = false, seenH1 = false, has = false;
   const url = ORIGIN + u.pathname, today = new Date().toISOString().slice(0, 10);
+  const kc = { on: false, tx: '' };
   const nc = ((((r.headers.get('content-security-policy') || '').match(/'nonce-([A-Za-z0-9+/=]+)'/)) || [])[1]) || '';
   return new HTMLRewriter()
     .on('#cite, #how-to-cite', { element() { has = true; } })
+    .on('p.kpg-cite', { element(e) { kc.on = true; e.onEndTag(end => { kc.on = false; const pl = kc.tx.replace(/&quot;/g, '"').replace(/&amp;/g, '&').replace(/&#39;/g, "'").replace(/\s+/g, ' ').trim(); end.after(cb40(lang, pl, apa40(lang, h1.replace(/\s+/g, ' ').trim() || 'Kolaboro', url, today), nc), { html: true }); }); }, text(x) { if (kc.on) kc.tx += x.text; } })   // n40 k6: copy buttons on /press/places/<place>/
     .on('.dd-cite', { element(e) { e.append(cb40(lang, null, apa40(lang, h1.replace(/\s+/g, ' ').trim() || 'Press data desk', url, today), nc), { html: true }); } })   // n40 k6: APA copy on /press/data/
     .on('main h1', { element(e) { if (seenH1) return; seenH1 = true; inH1 = true; e.onEndTag(() => { inH1 = false; }); }, text(x) { if (inH1) h1 += x.text; } })
     .on('main', { element(e) {
