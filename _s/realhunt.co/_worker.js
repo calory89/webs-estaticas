@@ -98,8 +98,18 @@ async function redirMap(env, req) {
   } catch (e) { if (!RH_REDIR) { RH_REDIR = {}; RH_REDIR_AT = Date.now(); } }
   return RH_REDIR || {};
 }
+/* rh-badge-1: { slug: svg } map of the score badges, read once per 5 minutes */
+let RH_BADGE = null, RH_BADGE_AT = 0;
+async function badgeMap(env, req) {
+  if (RH_BADGE && Date.now() - RH_BADGE_AT < 300000) return RH_BADGE;
+  try { const r = await env.ASSETS.fetch(new Request(new URL('/badge/score.json', req.url))); if (r.status === 200) { RH_BADGE = await r.json(); RH_BADGE_AT = Date.now(); } } catch (e) { /* keep the old copy */ }
+  return RH_BADGE || {};
+}
 async function pages(req, env, u) {
   if (u.pathname.startsWith('/_pk/')) return new Response(null, { status: 404 });
+  /* rh-badge-1 (26 Nov 2026): the score badges /badge/score/<slug>.svg come from one file, /badge/score.json ({ slug: svg }),
+     written by the site build (seo/assetsTrust.ts), so the deploy does not need one file per home (Pages 20,000-file limit). */
+  { const bm = u.pathname.match(/^\/badge\/score\/([A-Za-z0-9_-]+)\.svg$/); if (bm && (req.method === 'GET' || req.method === 'HEAD')) { const svg = (await badgeMap(env, req))[bm[1]]; if (typeof svg === 'string') return new Response(req.method === 'HEAD' ? null : svg, { status: 200, headers: { 'content-type': 'image/svg+xml; charset=utf-8', 'cache-control': 'public, max-age=3600', 'access-control-allow-origin': '*' } }); const f = await asset(env, req, u.pathname); if (f.status === 200) return f; return new Response(null, { status: 404 }); } }
   if (u.pathname.startsWith('/__pk/')) { const t = await packPage(env, req, u.pathname.slice(5)); if (!t) return new Response('not in the bundles', { status: 404, headers: { 'x-robots-tag': 'noindex' } }); t.headers.set('x-robots-tag', 'noindex'); return t; }
   if ((req.method === 'GET' || req.method === 'HEAD') && !/\.[a-z0-9]{2,5}$/i.test(u.pathname)) {
     const m = await redirMap(env, req);
