@@ -26,7 +26,7 @@
   "@id": "http://publications.europa.eu/resource/authority/language/ENG"
  },
  "dct:modified": {
-  "@value": "2026-11-26T17:46:41Z",
+  "@value": "2026-11-26T17:47:59Z",
   "@type": "xsd:dateTime"
  },
  "dct:license": {
@@ -1098,7 +1098,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "64247",
+      "@value": "64249",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -1112,7 +1112,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "a852e0633d623320b3e4ff95831b503ed7009a95b88b5835780e7ca747891309"
+      "spdx:checksumValue": "196265952930d75ea477dcc90f97627ae1b72078965a6484b119e02e87a39358"
      },
      "dct:conformsTo": {
       "@id": "https://kolaboro.com/api/x/data/schema/register-checks.json"
@@ -26596,7 +26596,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "928266",
+      "@value": "933182",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -26610,7 +26610,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "0760265f5ef7ce2ded77272c7e96b4b039d1217c358e987ec4768eff6c1ad0b3"
+      "spdx:checksumValue": "650192775bd93809410d88141f20dd48846d71cc550270a7e8ed40cff8ef612b"
      }
     }
    ],
