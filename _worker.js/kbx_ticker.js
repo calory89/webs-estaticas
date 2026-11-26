@@ -12,7 +12,7 @@ import { TB } from './kbx_strings.js';   // n40 k7: footer strings in /data/i18n
 const S = TB.kbx_ticker_S;
 export const SHIP_N = 3;   // n31t (batch 31): lines in the bar (site.js uses the same number)
 
-const SITE_V = 'n40k7b';   // n40 k7: ? shortcuts overlay; // bump when _s/kolaboro.com/k/site.js changes (pages hard-code an older ?v=)
+const SITE_V = 'n40k10a';   // n40 k7: ? shortcuts overlay; // bump when _s/kolaboro.com/k/site.js changes (pages hard-code an older ?v=)
 
 async function file(env, n) {
   try { const r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/' + n)); if (r.ok) return await r.json(); } catch (e) {}
