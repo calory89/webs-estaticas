@@ -1,6 +1,21 @@
 {
  "deploys": [
   {
+   "at": "2026-11-26T17:18:55Z",
+   "commit": "d8bcb15034fbf23bb3121f17a189f73e6ae09ecf",
+   "checks_passed": 32,
+   "checks_total": 32,
+   "failed": [],
+   "run": "https://github.com/calory89/webs-estaticas/actions/runs/45866234869",
+   "result": "pass",
+   "wait_s": 1,
+   "changes": [
+    "d8bcb15034fb"
+   ],
+   "worker_tree": "39b3f5e24f01b7274fbc2da3aa021dc9a7218243",
+   "dataset_sha256": "b23ddd504bd6d7721b985ef0ab20b941ecfcd4626f2e0e7553c2b6a42b234784"
+  },
+  {
    "at": "2026-11-25T17:36:53Z",
    "commit": "0ab459a34a4a92dbf0dc22c3c6103640404e5804",
    "checks_passed": 32,
@@ -3085,19 +3100,6 @@
     "14f098079210",
     "b437a78b1ac7"
    ]
-  },
-  {
-   "at": "2026-11-03T23:24:32Z",
-   "commit": "3d31213af01c7920bfed8c78e73bed368917a448",
-   "checks_passed": 32,
-   "checks_total": 32,
-   "failed": [],
-   "run": "https://github.com/calory89/webs-estaticas/actions/runs/41738577025",
-   "result": "pass",
-   "wait_s": 81,
-   "changes": [
-    "3d31213af01c"
-   ]
   }
  ],
  "drills": [],
@@ -3105,78 +3107,78 @@
  "canary": "Cloudflare Pages sends each push to all visitors at once and offers no percentage canary, so none is claimed. A bad push can be visible for a few minutes until the rollback is live.",
  "rollback_mode": "Rollback: a git commit restoring the files changed since the last passing commit; Pages deploys it in about 1 to 2 minutes. An instant Cloudflare API rollback is built in but needs a Pages-scoped token, not configured yet.",
  "latest_checks": {
-  "at": "2026-11-25T17:36:53.681Z",
-  "commit": "0ab459a34a4a92dbf0dc22c3c6103640404e5804",
+  "at": "2026-11-26T17:18:55.776Z",
+  "commit": "d8bcb15034fbf23bb3121f17a189f73e6ae09ecf",
   "checks": [
    {
     "name": "build: live commit",
     "ok": true,
-    "detail": "live 0ab459a34a4a"
+    "detail": "live d8bcb15034fb"
    },
    {
     "name": "page /",
     "ok": true,
-    "detail": "200, 81376 bytes"
+    "detail": "200, 55494 bytes"
    },
    {
     "name": "page /check/",
     "ok": true,
-    "detail": "200, 70181 bytes"
+    "detail": "200, 36160 bytes"
    },
    {
     "name": "page /database/",
     "ok": true,
-    "detail": "200, 38230 bytes"
+    "detail": "200, 38114 bytes"
    },
    {
     "name": "page /pricing/",
     "ok": true,
-    "detail": "200, 35261 bytes"
+    "detail": "200, 35150 bytes"
    },
    {
     "name": "page /p/BALI-021",
     "ok": true,
-    "detail": "200, 128910 bytes"
+    "detail": "200, 107028 bytes"
    },
    {
     "name": "page /log/",
     "ok": true,
-    "detail": "200, 27931 bytes"
+    "detail": "200, 27820 bytes"
    },
    {
     "name": "page /verify/",
     "ok": true,
-    "detail": "200, 46658 bytes"
+    "detail": "200, 46547 bytes"
    },
    {
     "name": "page /status/",
     "ok": true,
-    "detail": "200, 46390 bytes"
+    "detail": "200, 46313 bytes"
    },
    {
     "name": "page /changelog/",
     "ok": true,
-    "detail": "200, 146945 bytes"
+    "detail": "200, 182517 bytes"
    },
    {
     "name": "page /docs/api/",
     "ok": true,
-    "detail": "200, 24847 bytes"
+    "detail": "200, 24758 bytes"
    },
    {
     "name": "page /investors/",
     "ok": true,
-    "detail": "200, 48646 bytes"
+    "detail": "200, 48595 bytes"
    },
    {
     "name": "page /trust/",
     "ok": true,
-    "detail": "200, 24763 bytes"
+    "detail": "200, 24661 bytes"
    },
    {
     "name": "page /investors/dossier/",
     "ok": true,
-    "detail": "200, 22211 bytes"
+    "detail": "200, 22120 bytes"
    },
    {
     "name": "api /api/open/stats",
@@ -3196,12 +3198,12 @@
    {
     "name": "api /api/open/checkpoint",
     "ok": true,
-    "detail": "tree size 24"
+    "detail": "tree size 25"
    },
    {
     "name": "api /api/x/l/trust",
     "ok": true,
-    "detail": "{\"controls\":13,\"pass\":9,\"warn\":1,\"fail\":0,\"stale\":3,\"unknown\":0}"
+    "detail": "{\"controls\":13,\"pass\":9,\"warn\":1,\"fail\":1,\"stale\":2,\"unknown\":0}"
    },
    {
     "name": "tls: plain http redirects to https",
@@ -3270,7 +3272,7 @@
    }
   ]
  },
- "last_checked": "0ab459a34a4a92dbf0dc22c3c6103640404e5804",
- "last_good": "0ab459a34a4a92dbf0dc22c3c6103640404e5804",
- "updated": "2026-11-25T17:36:53Z"
+ "last_checked": "d8bcb15034fbf23bb3121f17a189f73e6ae09ecf",
+ "last_good": "d8bcb15034fbf23bb3121f17a189f73e6ae09ecf",
+ "updated": "2026-11-26T17:18:55Z"
 }
