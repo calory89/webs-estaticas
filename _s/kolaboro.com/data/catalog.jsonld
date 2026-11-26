@@ -26,11 +26,7 @@
   "@id": "http://publications.europa.eu/resource/authority/language/ENG"
  },
  "dct:modified": {
-<<<<<<< HEAD
-  "@value": "2026-11-26T10:57:31Z",
-=======
-  "@value": "2026-11-26T10:57:40Z",
->>>>>>> f00f1b67bab (kolaboro.com n40 k7: catalog refresh after rebase)
+  "@value": "2026-11-26T11:16:37Z",
   "@type": "xsd:dateTime"
  },
  "dct:license": {
