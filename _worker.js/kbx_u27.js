@@ -392,7 +392,7 @@ export const CLIENT_JS = '(' + client.toString() + ')();';
 // ------------------------------------------------------------------------------------------------ routes
 export const PATHS = /^\/k\/u27\.js$|^\/api\/v1\/(?:cost|map)$|^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:map|updates)\/?$/;
 const jr = (o, s, cc) => new Response(JSON.stringify(o), { status: s || 200, headers: { 'content-type': 'application/json; charset=utf-8', 'access-control-allow-origin': '*', 'cache-control': cc || 'public, max-age=600' } });
-const MAP3_V = '039ffae532';   // r10u: register filter (was e167fac98e)
+const MAP3_V = 'b0bfd297a5';   // n40 k13: register layer (was 039ffae532)
 // n35b note:   // n35b (batch 35, item 12): /map/ client v3 is a static file, /k/n35b/map.js (sha1 of the file, 10 chars)
 const MAPV = { js: '/satellite/plot/vendor/leaflet-1.9.4.js?v=dc452946ac', css: '/satellite/plot/vendor/leaflet-1.9.4.css?v=b8273795a6' };
 
