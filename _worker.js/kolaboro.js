@@ -1331,7 +1331,7 @@ return new Response(TB.kolaboro__s.k19 + urls.join('') + '</urlset>', { headers:
 }
 export async function ssr(base, u, kind, env) {
 let d; try { d = await openData(); } catch (e) { return base; }
-let SL = {}, SN = {}, RV = () => false; if (kind !== 'p') try { const NMm = await import('./kbx_named.js'), ix = await NMm.data(env); for (const [id, x] of ix.byId) { SL[id] = x.s; SN[id] = x; } RV = id => !!SN[id] && NMm.reviewed(ix.caseBy.get(id)); } catch (e) { SL = {}; SN = {}; }
+let SL = {}, SN = {}, RV = () => false, OTP = null; if (kind !== 'p') try { const NMm = await import('./kbx_named.js'), ix = await NMm.data(env); OTP = ix.ot; for (const [id, x] of ix.byId) { SL[id] = x.s; SN[id] = x; } RV = id => !!SN[id] && NMm.reviewed(ix.caseBy.get(id)); } catch (e) { SL = {}; SN = {}; }
 const pHref = id => SL[id] ? '/projects/' + SL[id] + '/' : '/p/' + encodeURIComponent(id) + '/';
 const pLink = (id, more) => { const x = SN[id], h = '<a href="' + pHref(id) + '">'; if (!x || !x.n) return h + hesc(id) + '</a>'; if (!more) return h + hesc(x.n) + '</a>'; const f = x.fx || {}, ho = f.handover_promised && /\d{4}/.test(String(f.handover_promised)) ? String(f.handover_promised) : '', w = [x.ar && String(x.ar).length < 60 ? x.ar : '', x.dv].filter(Boolean).join(', ');
 return h + hesc(x.n) + '</a>' + (w || ho ? ' <small>(' + hesc(w) + (ho ? (w ? '; ' : '') + 'handover on record ' + hesc(ho) : '') + ')</small>' : ''); };
@@ -1368,7 +1368,7 @@ desc = !L.some(rv8) ? n + ' off-plan projects tracked in ' + m + TB.kolaboro__t.
 if (desc.length > 155) desc = desc.replace(un, '').replace(' on average', ''); if (desc.length > 160) desc = desc.replace(/ Updated [^.]*\.$/, ''); }
 { const C40 = TB.kbx_n29i_CTR; if (C40.s && C40.s.includes(String(m).normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '')) && L.some(rv8)) {
 const dw = (q => q.length === 3 ? (+q[2]) + ' ' + ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][+q[1] - 1] + ' ' + q[0] : '')(String(d.updated || '').slice(0, 10).split('-'));
-const w = { p: m, n, pp: pct(x => (x.checks || {}).permit === 2), ep: pct(x => (x.checks || {}).escrow === true), od: L.filter(x => x.overdue > 0 && x.stage !== 'completed').length, d: dw }, fl = x => String(x).replace(/\{(\w+)\}/g, (q, a) => w[a] != null ? w[a] : q);
+const w = { p: m, n, pp: pct(x => (x.checks || {}).permit === 2), ep: pct(x => (x.checks || {}).escrow === true), od: L.filter(x => { const o = OTP && OTP[x.id]; return x.stage !== 'completed' && (OTP ? !!o && o.overdue > 0 && !/^(done_|completed)/.test(o.s || '') : x.overdue > 0); }).length, d: dw }, fl = x => String(x).replace(/\{(\w+)\}/g, (q, a) => w[a] != null ? w[a] : q);
 const tt = (w.pp >= 50 ? C40.t.en : w.ep >= 50 ? C40.te.en : []).concat(C40.tn.en).map(fl).find(x => x.length <= 60); if (tt) title = tt + (tt.length + 11 <= 60 ? ' | Kolaboro' : ''); desc = C40.ed.map(fl).find(x => x.length <= 160) || desc; } }
 canon = 'https://kolaboro.com/m/' + slugM(m) + '/';
 body = '<h2>Off-plan projects in ' + hesc(m) + (same31 ? '' : ', ' + hesc(L[0].country)) + '</h2><p>' + hesc(desc) + '</p>' + (L.length > 200
