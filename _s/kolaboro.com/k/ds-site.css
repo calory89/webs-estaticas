@@ -1,4 +1,4 @@
-/* GENERATED from /k/ds.css (v 103a815c34) for pages that load site.css. The page test :has(link[href*=site.css]) is replaced by
+/* GENERATED from /k/ds.css (v 20227244e1) for pages that load site.css. The page test :has(link[href*=site.css]) is replaced by
    :not(a[data-ks]), always true with the same weight: :has() on the root made the browser restyle the whole page after every
    DOM change. Do not edit. To rebuild after ds.css changes: replace that test in a copy of ds.css, keep this comment with the
    new version, and set KB_DSS_V to the new KB_DS_V in _worker.js/index.js (while they differ the worker serves plain ds.css).
@@ -500,33 +500,6 @@ a.k-src:hover{color:var(--k-sea);border-bottom-color:currentColor}
 :root:not(a[data-ks]) .kans-l{font-size:var(--k-fs-xs);font-weight:650;color:var(--k-muted);letter-spacing:.01em}
 :root:not(a[data-ks]) .klt-l a{border-color:var(--k-line);border-radius:var(--k-r-md);background:var(--k-paper)}
 :root:not(a[data-ks]) .klt-l a:hover{border-color:var(--k-ink-2);background:var(--k-surface)}
-/* 1440 px: title and lead on the left, the answer on the right, so the first screen carries the facts.
-   Project pages: the answer card opens up (display:contents), its six checks sit on the right, the key-fact and register cards side by side below. */
-@media (min-width:1120px){
-  :root:not(a[data-ks]) .phero.kp>.wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);grid-template-rows:repeat(7,auto) 1fr;column-gap:var(--k-col-gap);align-items:start}
-  :root:not(a[data-ks]) .phero.kp>.wrap>*{grid-column:1/-1;min-width:0}
-  :root:not(a[data-ks]) .phero.kp>.wrap>:is(.crumb,.n33-dm,h1,.kupd,.lead,.kfeeds,.k31t,.kz-kf,.ktr-badge){grid-column:1}
-  :root:not(a[data-ks]) .phero.kp>.wrap>.kans{grid-column:2;grid-row:1/-1;margin:0;max-width:none}
-  :root:not(a[data-ks]) .phero.kp>.wrap>.crumb{margin-bottom:var(--k-3)}
-  :root:not(a[data-ks]) .phero.kp h1{font-size:clamp(2.2rem,1rem + 2.4vw,3.1rem)}
-  :root:not(a[data-ks]) .phero.kp>.wrap:has(>.kans>#checks6)>.kans{display:contents}
-  :root:not(a[data-ks]) .phero.kp>.wrap:has(>.kans>#checks6)>:is(.crumb,h1,.kupd,.lead,.k31t,.kz-kf,.ktr-badge){grid-row:auto}
-  :root:not(a[data-ks]) .phero.kp>.wrap:has(>.kans>#checks6)>.crumb{grid-row:1}
-  :root:not(a[data-ks]) .phero.kp>.wrap:has(>.kans>#checks6)>h1{grid-row:2}
-  :root:not(a[data-ks]) .phero.kp>.wrap:has(>.kans>#checks6)>.kupd{grid-row:3}
-  :root:not(a[data-ks]) .phero.kp>.wrap:has(>.kans>#checks6)>.lead{grid-row:4}
-  :root:not(a[data-ks]) .phero.kp>.wrap:has(>.kans>#checks6)>.k31t{grid-row:5}
-  :root:not(a[data-ks]) .phero.kp>.wrap:has(>.kans>#checks6)>.kz-kf{grid-row:6}
-  :root:not(a[data-ks]) .phero.kp>.wrap:has(>.kans>#checks6)>.ktr-badge{grid-row:7}
-  :root:not(a[data-ks]) .kans>*{grid-column:1/-1;min-width:0}
-  :root:not(a[data-ks]) .kans>.k31q{grid-column:2;grid-row:1/3;align-self:end;margin:0 0 var(--k-3)}
-  :root:not(a[data-ks]) .kans>#checks6{grid-column:2;grid-row:3/9;margin:0;box-shadow:var(--k-sh-card)}
-  :root:not(a[data-ks]) .kans>:is(.kans-t,.kans-u){max-width:80ch}
-  :root:not(a[data-ks]) .kans>#checks6~.kans-t{margin-top:var(--k-7)!important;font-size:var(--k-fs-lg);line-height:1.55}
-  :root:not(a[data-ks]) .kans>#n37-vs{grid-column:1;align-self:stretch;margin-top:var(--k-6)}
-  :root:not(a[data-ks]) .kans>#n37-kp{grid-column:2;align-self:stretch;margin-top:var(--k-6)}
-  :root:not(a[data-ks]) .phero.kp>.wrap>.kwatch{margin-top:var(--k-6)}
-}
 /* tables: one look everywhere, hairline rows, quiet head, numbers lined up */
 :root:not(a[data-ks]) :is(.tw:not(.kcards),.n37-tw,.n34-tw){border:1px solid var(--k-line);border-radius:var(--k-r-lg);background:var(--k-surface);overflow-x:auto}
 :root:not(a[data-ks]) :is(.tw:not(.kcards),.n37-tw,.n34-tw) table{border-collapse:collapse;width:100%;font-size:var(--k-fs-sm)}
@@ -611,16 +584,6 @@ a.k-src:hover{color:var(--k-sea);border-bottom-color:currentColor}
 }
 /* project head: the name alone in the title, a quiet line under it says what the page is */
 :root:not(a[data-ks]) .phero .kh1sub{margin:var(--k-2) 0 0;font-size:var(--k-fs-lg);font-weight:560;color:var(--k-muted);letter-spacing:-.005em}
-@media (min-width:1120px){
-  :root:not(a[data-ks]) .phero.kp>.wrap>.kh1sub{grid-column:1}
-  :root:not(a[data-ks]) .phero.kp>.wrap:has(>.kans>#checks6)>.kh1sub{grid-row:3}
-  :root:not(a[data-ks]) .phero.kp>.wrap:has(>.kans>#checks6)>.kupd{grid-row:4}
-  :root:not(a[data-ks]) .phero.kp>.wrap:has(>.kans>#checks6)>.lead{grid-row:5}
-  :root:not(a[data-ks]) .phero.kp>.wrap:has(>.kans>#checks6)>.k31t{grid-row:6}
-  :root:not(a[data-ks]) .phero.kp>.wrap:has(>.kans>#checks6)>.kz-kf{grid-row:7}
-  :root:not(a[data-ks]) .phero.kp>.wrap:has(>.kans>#checks6)>.ktr-badge{grid-row:8}
-  :root:not(a[data-ks]) .phero.kp>.wrap{grid-template-rows:repeat(8,auto) 1fr}
-  :root:not(a[data-ks]) .kans>#checks6{grid-row:3/10}
 }
 /* data pages, record and brief: same column as the header, same heads, tables and figures as the rest of the site */
 :root:not(a[data-ks]) .wrap.n37{max-width:var(--k-wrap);padding-bottom:var(--k-sec)}
@@ -761,3 +724,45 @@ a.k-src:hover{color:var(--k-sea);border-bottom-color:currentColor}
 :root:not(a[data-ks]) .hp-band .launch i{box-shadow:none}
 :root:not(a[data-ks]) :is(.n34 .n34-b.hi,.n34 button.hi){--hi:var(--k-brand);color:var(--k-on-brand);font-weight:600}
 /* ---------- end 6 ---------- */
+
+/* ---------- 7. n40 d7 (26 Nov 2026): structure pass. Home: one promise, one search, a real sample record; project head as a summary card. Tokens from part 1 only. ---------- */
+/* home hero: promise and search left, a real project's six checks right (a dated copy of /projects/bangsar-hill-park/) */
+:root:not(a[data-ks]) .hero{padding-block:clamp(28px,5vw,80px) clamp(40px,5vw,88px)}
+:root:not(a[data-ks]) .hero-grid{grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);align-items:center;gap:clamp(28px,5vw,80px)}
+@media (max-width:960px){:root:not(a[data-ks]) .hero-grid{grid-template-columns:minmax(0,1fr)}}
+:root:not(a[data-ks]) .hero h1{text-wrap:balance}
+:root:not(a[data-ks]) .hero .lead{max-width:34em}
+.hsr-c{min-width:0}
+.hsr{margin:0;padding:var(--k-card-p);background:var(--k-surface);border:1px solid var(--k-line);border-radius:var(--k-r-xl);box-shadow:var(--k-sh-3);position:relative}
+.hsr-t{display:flex;flex-wrap:wrap;justify-content:space-between;gap:2px 12px;margin:0 0 6px;font-size:var(--k-fs-xs);color:var(--k-muted)}
+.hsr-t p{margin:0}.hsr-h{font-weight:600;color:var(--k-ink-2)}
+.hsr-n{margin:0 0 10px;font:600 var(--k-fs-2xl)/1.15 var(--k-display);letter-spacing:-.01em}
+.hsr-n a{color:var(--k-ink);text-decoration:none}.hsr-n a:hover{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.hsr-b,.kp .kfl8{display:flex;flex-wrap:wrap;gap:6px;list-style:none;margin:0 0 14px;padding:0}
+.hsr-b li,.kp .kfl8>span{display:inline-flex;align-items:center;gap:4px;min-height:28px;padding:2px 10px;border:1px solid var(--k-line);border-radius:var(--k-r-pill);background:var(--k-sunken);font-size:var(--k-fs-xs);color:var(--k-ink-2);line-height:1.3}
+.hsr-b a{color:inherit;text-decoration:none}.hsr-b li:has(a):hover{border-color:var(--k-line-2);color:var(--k-ink)}
+.hsr-b b,.kp .kfl8 b{color:var(--k-ink);font-weight:600}
+.hsr-l{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--k-line);border:1px solid var(--k-line);border-radius:var(--k-r-lg);overflow:hidden}
+.hsr-l li{display:flex}
+.hsr-l a{flex:1;display:grid;grid-template-columns:18px minmax(0,1fr);column-gap:10px;align-items:start;padding:11px 12px;min-height:56px;background:var(--k-surface);color:var(--k-ink);text-decoration:none;line-height:1.3;transition:background var(--k-t1) var(--k-ease)}
+.hsr-l a:hover{background:var(--k-sunken)}
+.hsr-l b{font-size:var(--k-fs-sm);font-weight:600}.hsr-l span{grid-column:2;font-size:var(--k-fs-xs);color:var(--k-muted)}
+.hsr-l i{grid-row:1/span 2;position:relative;width:18px;height:18px;margin-top:1px;border-radius:50%;background:currentColor;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.hsr-l i::after{content:"";position:absolute;inset:0;margin:auto}
+.hsr-l .klt-ok i{color:var(--k-ok)}.hsr-l .klt-part i{color:var(--k-warn)}.hsr-l .klt-no i{color:var(--k-bad)}.hsr-l .klt-nc i{color:var(--k-muted);background:none;box-shadow:inset 0 0 0 2px currentColor}
+.hsr-l .klt-ok i::after{width:5px;height:9px;border:solid var(--k-surface);border-width:0 2px 2px 0;transform:translateY(-1px) rotate(45deg)}
+.hsr-l .klt-part i::after{width:9px;height:2px;background:var(--k-surface)}
+.hsr-l .klt-no i::after{width:9px;height:2px;background:var(--k-surface);transform:rotate(45deg)}
+.hsr-l .klt-nc i::after{content:"?";font:700 11px/18px var(--k-font);text-align:center}
+.hsr-v{margin:14px 0 0;font-size:var(--k-fs-sm);line-height:1.5;color:var(--k-ink-2);display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+@media (max-width:359px){.hsr-l{grid-template-columns:minmax(0,1fr)}.hsr-l a{min-height:48px}}
+/* the hero search suggestions (u27.js) follow the theme */
+:root:not(a[data-ks]) form.k-omni .khs{background:var(--k-surface);color:var(--k-ink);border-color:var(--k-line);border-radius:var(--k-r-lg);box-shadow:var(--k-sh-3)}
+:root:not(a[data-ks]) form.k-omni .khs li a{border-radius:var(--k-r-md)}
+:root:not(a[data-ks]) form.k-omni .khs :is(li[aria-selected=true] a,li a:hover){background:var(--k-brand-soft)}
+:root:not(a[data-ks]) form.k-omni .khs small{color:var(--k-muted)}
+/* one search on the home page: the hero box already matches project names, so the second box under the numbers is left out there */
+:root:not(a[data-ks]) #hp-band+#n40-late{display:none}
+/* home rhythm: every section gets the same generous spacing and a hairline between plain sections */
+:root:not(a[data-ks]) main>:is(.how,.sec,.founder,.start,.kg27){padding-block:var(--k-sec)}
+:root:not(a[data-ks]) main>:is(.how,.sec:not(.alt),.kg27)+:is(.how,.sec:not(.alt),.kg27){border-top:1px solid var(--k-line)}
