@@ -1,24 +1,9 @@
-// kolaboro.com batch 30 (agent n30a, 17 Nov 2026): technology features 1 to 7. No model calls, nothing stored, nothing estimated.
-//   GET /k/n30a.js?v=<V>                       client script, loaded only where needed: natural-language search on the home search box and
-//                                               /projects/ (rules in 8 languages, removable chips), before/after satellite slider (project
-//                                               pages with Sentinel-2 imagery, loaded on the first click)
-//   GET /k/n30a-cr.js?v=<V>                    client script of the contract reader (pdf.js self-hosted, loaded when a file is dropped)
-//   GET /[<lang>/]tools/contract-reader/       contract and brochure reader: rule-based marks for handover date, delay penalty, escrow,
-//                                               payment schedule, governing law and cancellation, with page numbers; runs in the browser
-//   GET /[<lang>/]methods/handover-slippage/   months past the first handover date on record, per market (median, quartiles, range,
-//                                               sample size), computed at the edge from the published data files; method and limits
-//   GET /api/v1/slippage[.csv]                 the same figures as JSON or CSV (CC BY 4.0)
-//   GET /[<lang>/]projects/<slug>/timeline/    every dated event we hold for one project on one vertical timeline, each with its source
-// Parts used by other modules: slipStats() and slipLine() (project pages, kbx_named.js), slipBlock() (market pages, index.js),
-// light6() states and radarSvg() (compare page, kbx_u26.js), LOADER (appended to /k/u27.js), N30V.
-// Sumba projects never appear (kbx_named.js data() leaves them out), nor Eco Beach City or Equinox.
+// comments: _notes/kolaboro-worker-comments.txt
 import { S, C } from './kbx_n30a_i18n.js';
 import { hkey, hdisp, mkName } from './kbx_hdate.js';
 import { TB } from './kbx_strings.js';
-
-// n35b (batch 35, item 16): the private document vault, linked from the reader
 const VT35 = { en: 'Private document vault (encrypted in your browser)', es: 'Archivo privado de documentos (cifrado en su navegador)', fr: 'Coffre de documents privé (chiffré dans votre navigateur)', de: 'Privater Dokumententresor (verschlüsselt im Browser)', nl: 'Privé documentenkluis (versleuteld in uw browser)', ru: 'Личный сейф документов (шифрование в браузере)', zh: '私人文件保险箱（在浏览器中加密）', ar: 'خزنة مستندات خاصة (مشفّرة في متصفحك)' };
-export const N30V = 'a7';   // a6: contract text event for the country list (n31e); a7: opens a document handed over by the vault (n35b)
+export const N30V = 'a7';
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const COI_RX = /eco\s*beach\s*city|\bequinox\b/i;
@@ -32,223 +17,202 @@ const nf = (n, lang) => { try { return Number(n).toLocaleString(LOC[lang] || 'en
 const slugM = m => String(m || '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
 const JT = 'application/json; charset=utf-8';
 const jr = (o, st, cc) => new Response(JSON.stringify(o), { status: st || 200, headers: { 'content-type': JT, 'cache-control': cc || 'public, max-age=600', 'access-control-allow-origin': '*', 'x-content-type-options': 'nosniff' } });
-
-// ------------------------------------------------------------------------------------------------ item 3: handover slippage
-// For each project: the first handover date on record (the developer's original date where our research recorded one; else the date we
-// read first, the later one when two sources were read the same day; else the date on record now), as the last month of its period.
-// Past it and not completed: months past = current month minus that month. Completed projects are counted, not measured (no
-// completion date on record). Quantiles: type 7 (linear interpolation, PERCENTILE.INC).
 const mIdx = k => { const m = /^(\d{4})-(\d{2})$/.exec(String(k || '')); return m ? +m[1] * 12 + +m[2] : null; };
 function q7(a, p) { if (!a.length) return null; const s = a.slice().sort((x, y) => x - y), h = (s.length - 1) * p, lo = Math.floor(h), hi = Math.ceil(h); return Math.round((s[lo] + (s[hi] - s[lo]) * (h - lo)) * 10) / 10; }
 function firstOf(ix, x, handoverOf) {
-  const oh = (x.fx || {}).original_handover;
-  if (oh && hkey(oh)) return { k: hkey(oh), raw: String(oh).replace(/\s*\(.*$/, ''), how: 'orig' };
-  const pr = (ix.prom[x.id] || []).find(p => p && p.k === 'handover');
-  const H = pr && (pr.hist || []).filter(e => e && e.seen && hkey(e.d));
-  if (H && H.length) { const s0 = H.map(e => e.seen).sort()[0], c = H.filter(e => e.seen === s0).sort((a, b) => hkey(b.d) < hkey(a.d) ? -1 : 1)[0]; return { k: hkey(c.d), raw: c.d, how: 'read', seen: s0 }; }
-  const ho = handoverOf(ix, x); if (ho && hkey(ho.d)) return { k: hkey(ho.d), raw: ho.d, how: 'now' };
-  return null;
+const oh = (x.fx || {}).original_handover;
+if (oh && hkey(oh)) return { k: hkey(oh), raw: String(oh).replace(/\s*\(.*$/, ''), how: 'orig' };
+const pr = (ix.prom[x.id] || []).find(p => p && p.k === 'handover');
+const H = pr && (pr.hist || []).filter(e => e && e.seen && hkey(e.d));
+if (H && H.length) { const s0 = H.map(e => e.seen).sort()[0], c = H.filter(e => e.seen === s0).sort((a, b) => hkey(b.d) < hkey(a.d) ? -1 : 1)[0]; return { k: hkey(c.d), raw: c.d, how: 'read', seen: s0 }; }
+const ho = handoverOf(ix, x); if (ho && hkey(ho.d)) return { k: hkey(ho.d), raw: ho.d, how: 'now' };
+return null;
 }
 const WS = new WeakMap();
 export function slipStats(ix, handoverOf, now) {
-  const c0 = WS.get(ix), d = now || new Date(), nowI = d.getUTCFullYear() * 12 + d.getUTCMonth() + 1, day = d.toISOString().slice(0, 10);
-  if (c0 && c0.day === day) return c0;
-  const per = new Map(), mk = new Map(), all = { late: [], done: 0, notdue: 0, nodate: 0, k: 0 };
-  for (const x of ix.P) {
-    if (COI_RX.test(String(x.n || '') + ' ' + String(x.dv || ''))) continue;
-    const c = ix.caseBy.get(x.id) || {}, st = c.stage || x.st, f = firstOf(ix, x, handoverOf);
-    const M = mk.get(x.mk) || { mk: x.mk, co: x.co, late: [], done: 0, notdue: 0, nodate: 0, k: 0 }; mk.set(x.mk, M);
-    M.k++; all.k++;
-    if (st === 'completed') { M.done++; all.done++; continue; }
-    if (!f) { M.nodate++; all.nodate++; continue; }
-    const fi = mIdx(f.k); if (fi == null) { M.nodate++; all.nodate++; continue; }
-    if (fi < nowI) { const m = nowI - fi; M.late.push(m); all.late.push(m); per.set(x.id, { m, f }); } else { M.notdue++; all.notdue++; }
-  }
-  const row = M => ({ mk: M.mk, co: M.co, n: M.late.length, med: q7(M.late, .5), p25: q7(M.late, .25), p75: q7(M.late, .75), min: M.late.length ? Math.min(...M.late) : null, max: M.late.length ? Math.max(...M.late) : null, notdue: M.notdue, done: M.done, nodate: M.nodate, tracked: M.k });
-  const rows = [...mk.values()].map(row).sort((a, b) => b.n - a.n || String(a.mk).localeCompare(String(b.mk)));
-  const out = { day, month: d.getUTCFullYear() + '-' + String(d.getUTCMonth() + 1).padStart(2, '0'), all: row(Object.assign({ mk: 'All markets', co: '' }, all)), rows, byMk: new Map(rows.map(r => [r.mk, r])), per, min: MIN_N };
-  WS.set(ix, out); return out;
+const c0 = WS.get(ix), d = now || new Date(), nowI = d.getUTCFullYear() * 12 + d.getUTCMonth() + 1, day = d.toISOString().slice(0, 10);
+if (c0 && c0.day === day) return c0;
+const per = new Map(), mk = new Map(), all = { late: [], done: 0, notdue: 0, nodate: 0, k: 0 };
+for (const x of ix.P) {
+if (COI_RX.test(String(x.n || '') + ' ' + String(x.dv || ''))) continue;
+const c = ix.caseBy.get(x.id) || {}, st = c.stage || x.st, f = firstOf(ix, x, handoverOf);
+const M = mk.get(x.mk) || { mk: x.mk, co: x.co, late: [], done: 0, notdue: 0, nodate: 0, k: 0 }; mk.set(x.mk, M);
+M.k++; all.k++;
+if (st === 'completed') { M.done++; all.done++; continue; }
+if (!f) { M.nodate++; all.nodate++; continue; }
+const fi = mIdx(f.k); if (fi == null) { M.nodate++; all.nodate++; continue; }
+if (fi < nowI) { const m = nowI - fi; M.late.push(m); all.late.push(m); per.set(x.id, { m, f }); } else { M.notdue++; all.notdue++; }
 }
-// one line for the project page ("market" section), in place of the older frozen delay-index line
+const row = M => ({ mk: M.mk, co: M.co, n: M.late.length, med: q7(M.late, .5), p25: q7(M.late, .25), p75: q7(M.late, .75), min: M.late.length ? Math.min(...M.late) : null, max: M.late.length ? Math.max(...M.late) : null, notdue: M.notdue, done: M.done, nodate: M.nodate, tracked: M.k });
+const rows = [...mk.values()].map(row).sort((a, b) => b.n - a.n || String(a.mk).localeCompare(String(b.mk)));
+const out = { day, month: d.getUTCFullYear() + '-' + String(d.getUTCMonth() + 1).padStart(2, '0'), all: row(Object.assign({ mk: 'All markets', co: '' }, all)), rows, byMk: new Map(rows.map(r => [r.mk, r])), per, min: MIN_N };
+WS.set(ix, out); return out;
+}
 export function slipLine(ix, x, lang, handoverOf, fd) {
-  try {
-    const S0 = slipStats(ix, handoverOf), r = S0.byMk.get(x.mk), mkN = mkName(x.mk, lang), me = S0.per.get(x.id);
-    const href = pre(lang) + '/methods/handover-slippage/' + (r && r.n >= MIN_N ? '#m-' + slugM(x.mk) : '');
-    let t = r && r.n >= MIN_N ? t30(lang, 'sl_line', { mk: mkN, n: nf(r.n, lang), m: nf(r.med, lang), a: nf(r.min, lang), b: nf(r.max, lang) })
-      : t30(lang, 'sl_line_few', { mk: mkN, min: MIN_N, m: nf(S0.all.med, lang), n: nf(S0.all.n, lang) });
-    if (me) t += ' ' + t30(lang, 'sl_this', { m: nf(me.m, lang), d: hdisp(me.f.raw, lang) || me.f.raw });
-    return '<li class="kfact">' + esc(t) + ' <a class="src" href="' + href + '">' + esc(t30(lang, 'sl_meth')) + '</a></li>';
-  } catch (e) { return ''; }
+try {
+const S0 = slipStats(ix, handoverOf), r = S0.byMk.get(x.mk), mkN = mkName(x.mk, lang), me = S0.per.get(x.id);
+const href = pre(lang) + '/methods/handover-slippage/' + (r && r.n >= MIN_N ? '#m-' + slugM(x.mk) : '');
+let t = r && r.n >= MIN_N ? t30(lang, 'sl_line', { mk: mkN, n: nf(r.n, lang), m: nf(r.med, lang), a: nf(r.min, lang), b: nf(r.max, lang) })
+: t30(lang, 'sl_line_few', { mk: mkN, min: MIN_N, m: nf(S0.all.med, lang), n: nf(S0.all.n, lang) });
+if (me) t += ' ' + t30(lang, 'sl_this', { m: nf(me.m, lang), d: hdisp(me.f.raw, lang) || me.f.raw });
+return '<li class="kfact">' + esc(t) + ' <a class="src" href="' + href + '">' + esc(t30(lang, 'sl_meth')) + '</a></li>';
+} catch (e) { return ''; }
 }
-// market pages (/m/<market>/ and /<lang>/m/<market>/): a short block with the market's figures and the link to the method page
 const CMP34 = { en: 'Compare {mk} with other markets', es: 'Comparar {mk} con otros mercados', fr: 'Comparer {mk} à d\'autres marchés', de: '{mk} mit anderen Märkten vergleichen', nl: '{mk} vergelijken met andere markten', ru: 'Сравнить {mk} с другими рынками', zh: '将{mk}与其他市场比较', ar: 'قارن {mk} بأسواق أخرى' };
 export async function slipBlock(env, mkSlug, lang) {
-  const N = await import('./kbx_named.js'), ix = await N.data(env), S0 = slipStats(ix, N.handoverOf);
-  const r = S0.rows.find(o => slugM(o.mk) === slugM(mkSlug) || String(o.mk).toLowerCase() === String(mkSlug).toLowerCase()); if (!r) return '';
-  const mkN = mkName(r.mk, lang), href = pre(lang) + '/methods/handover-slippage/';
-  const line = r.n >= MIN_N ? t30(lang, 'sl_line', { mk: mkN, n: nf(r.n, lang), m: nf(r.med, lang), a: nf(r.min, lang), b: nf(r.max, lang) }) : t30(lang, 'sl_line_few', { mk: mkN, min: MIN_N, m: nf(S0.all.med, lang), n: nf(S0.all.n, lang) });
-  return '<section class="sec n30s" id="slippage"><div class="wrap"><h2>' + esc(t30(lang, 'sl_blk_h', { mk: mkN })) + '</h2><p>' + esc(line) + '</p>' +
-    (r.n >= MIN_N ? '<p class="k-muted">' + esc(t30(lang, 'sl_th')[3]) + ': ' + nf(r.p25, lang) + ' – ' + nf(r.p75, lang) + ' · ' + esc(t30(lang, 'sl_th')[5]) + ': ' + nf(r.notdue, lang) + ' · ' + esc(t30(lang, 'sl_upd', { d: N.fd(S0.day, lang) })) + '</p>' : '') +
-    '<p><a href="' + href + (r.n >= MIN_N ? '#m-' + slugM(r.mk) : '') + '">' + esc(t30(lang, 'sl_meth')) + '</a> · <a href="/api/v1/slippage">' + esc(t30(lang, 'sl_json')) + '</a> · <a href="' + pre(lang) + '/markets/compare/?m=' + encodeURIComponent(slugM(r.mk)) + '" rel="nofollow">' + esc((CMP34[lang] || CMP34.en).replace('{mk}', mkN)) + '</a></p></div></section>';   // n34b: market comparison
+const N = await import('./kbx_named.js'), ix = await N.data(env), S0 = slipStats(ix, N.handoverOf);
+const r = S0.rows.find(o => slugM(o.mk) === slugM(mkSlug) || String(o.mk).toLowerCase() === String(mkSlug).toLowerCase()); if (!r) return '';
+const mkN = mkName(r.mk, lang), href = pre(lang) + '/methods/handover-slippage/';
+const line = r.n >= MIN_N ? t30(lang, 'sl_line', { mk: mkN, n: nf(r.n, lang), m: nf(r.med, lang), a: nf(r.min, lang), b: nf(r.max, lang) }) : t30(lang, 'sl_line_few', { mk: mkN, min: MIN_N, m: nf(S0.all.med, lang), n: nf(S0.all.n, lang) });
+return TB.kbx_n30a__t.k0 + esc(t30(lang, 'sl_blk_h', { mk: mkN })) + '</h2><p>' + esc(line) + '</p>' +
+(r.n >= MIN_N ? '<p class="k-muted">' + esc(t30(lang, 'sl_th')[3]) + ': ' + nf(r.p25, lang) + ' – ' + nf(r.p75, lang) + ' · ' + esc(t30(lang, 'sl_th')[5]) + ': ' + nf(r.notdue, lang) + ' · ' + esc(t30(lang, 'sl_upd', { d: N.fd(S0.day, lang) })) + '</p>' : '') +
+'<p><a href="' + href + (r.n >= MIN_N ? '#m-' + slugM(r.mk) : '') + '">' + esc(t30(lang, 'sl_meth')) + '</a> · <a href="/api/v1/slippage">' + esc(t30(lang, 'sl_json')) + '</a> · <a href="' + pre(lang) + '/markets/compare/?m=' + encodeURIComponent(slugM(r.mk)) + '" rel="nofollow">' + esc((CMP34[lang] || CMP34.en).replace('{mk}', mkN)) + '</a></p></div></section>';
 }
 async function slipApi(env, csv) {
-  const N = await import('./kbx_named.js'), ix = await N.data(env), S0 = slipStats(ix, N.handoverOf);
-  const cols = ['market', 'country', 'past_first_date', 'median_months', 'p25_months', 'p75_months', 'min_months', 'max_months', 'not_yet_due', 'completed', 'no_date', 'tracked'];
-  const rr = r => [r.mk, r.co, r.n, r.med, r.p25, r.p75, r.min, r.max, r.notdue, r.done, r.nodate, r.tracked];
-  if (csv) {
-    const q = v => v == null ? '' : /[",\n]/.test(String(v)) ? '"' + String(v).replace(/"/g, '""') + '"' : String(v);
-    const body = [cols.join(','), rr(S0.all).map(q).join(',')].concat(S0.rows.map(r => rr(r).map(q).join(','))).join('\n') + '\n';
-    return new Response(body, { headers: { 'content-type': 'text/csv; charset=utf-8', 'cache-control': 'public, max-age=600', 'access-control-allow-origin': '*', 'content-disposition': 'inline; filename="kolaboro-handover-slippage-' + S0.day + '.csv"' } });
-  }
-  return jr({ version: 'slippage-1', computed: S0.day, month: S0.month, licence: 'CC BY 4.0 (credit: Kolaboro, kolaboro.com)', method: ORIGIN + '/methods/handover-slippage/', what: TB.kbx_n30a__s.k0,
-    rules: { first_date: TB.kbx_n30a__s.k1, period_end: 'a year counts from December, a quarter from its last month, a half from June or December', months_past: 'current month minus the last month of the first date', completed: 'counted, left out of the months (no completion date on record)', quantiles: 'type 7, linear interpolation (PERCENTILE.INC)', min_sample: MIN_N },
-    sources: [ORIGIN + '/data/named.json', ORIGIN + '/data/promises.json', ORIGIN + '/data/bali-cases.json'], fields: cols, all: Object.fromEntries(cols.map((c, i) => [c, rr(S0.all)[i]])), markets: S0.rows.map(r => Object.fromEntries(cols.map((c, i) => [c, rr(r)[i]]))) });
+const N = await import('./kbx_named.js'), ix = await N.data(env), S0 = slipStats(ix, N.handoverOf);
+const cols = ['market', 'country', 'past_first_date', 'median_months', 'p25_months', 'p75_months', 'min_months', 'max_months', 'not_yet_due', 'completed', 'no_date', 'tracked'];
+const rr = r => [r.mk, r.co, r.n, r.med, r.p25, r.p75, r.min, r.max, r.notdue, r.done, r.nodate, r.tracked];
+if (csv) {
+const q = v => v == null ? '' : /[",\n]/.test(String(v)) ? '"' + String(v).replace(/"/g, '""') + '"' : String(v);
+const body = [cols.join(','), rr(S0.all).map(q).join(',')].concat(S0.rows.map(r => rr(r).map(q).join(','))).join('\n') + '\n';
+return new Response(body, { headers: { 'content-type': 'text/csv; charset=utf-8', 'cache-control': 'public, max-age=600', 'access-control-allow-origin': '*', 'content-disposition': TB.kbx_n30a__t.k1 + S0.day + '.csv"' } });
+}
+return jr({ version: 'slippage-1', computed: S0.day, month: S0.month, licence: TB.kbx_n30a__t.k2, method: ORIGIN + '/methods/handover-slippage/', what: TB.kbx_n30a__s.k0,
+rules: { first_date: TB.kbx_n30a__s.k1, period_end: TB.kbx_n30a__t.k3, months_past: TB.kbx_n30a__t.k4, completed: TB.kbx_n30a__t.k5, quantiles: TB.kbx_n30a__t.k6, min_sample: MIN_N },
+sources: [ORIGIN + '/data/named.json', ORIGIN + '/data/promises.json', ORIGIN + '/data/bali-cases.json'], fields: cols, all: Object.fromEntries(cols.map((c, i) => [c, rr(S0.all)[i]])), markets: S0.rows.map(r => Object.fromEntries(cols.map((c, i) => [c, rr(r)[i]]))) });
 }
 async function slipPage(u, env, shell, lang) {
-  const N = await import('./kbx_named.js'), ix = await N.data(env), S0 = slipStats(ix, N.handoverOf), P = pre(lang), th = t30(lang, 'sl_th');
-  const R = S0.rows.filter(r => r.n >= MIN_N), cell = (v, k) => '<td data-l="' + esc(th[k]) + '">' + v + '</td>';
-  const tr = (r, name, id) => '<tr' + (id ? ' id="m-' + id + '"' : '') + '>' + cell(name, 0) + cell(nf(r.n, lang), 1) + cell('<b>' + nf(r.med, lang) + '</b>', 2) + cell(nf(r.p25, lang) + ' – ' + nf(r.p75, lang), 3) + cell(nf(r.min, lang) + ' – ' + nf(r.max, lang), 4) + cell(nf(r.notdue, lang), 5) + cell(nf(r.done, lang), 6) + '</tr>';
-  const mkLink = r => ((ix.mk.get(r.mk) || {}).k >= 5 && lang !== 'en' ? '<a href="' + P + '/m/' + encodeURIComponent(String(r.mk).toLowerCase().replace(/\s+/g, '-')) + '/">' : '<a href="/m/' + encodeURIComponent(String(r.mk).toLowerCase().replace(/\s+/g, '-')) + '/">') + bdi(lang, mkName(r.mk, lang)) + '</a>';
-  const table = '<div class="n30t"><table><thead><tr>' + th.map(h => '<th scope="col">' + esc(h) + '</th>').join('') + '</tr></thead><tbody>' + tr(S0.all, '<b>' + esc(t30(lang, 'sl_all')) + '</b>', '') + R.map(r => tr(r, mkLink(r), slugM(r.mk))).join('') + '</tbody></table></div>';
-  // a strip per market: each project as a tick on a 0 to max months axis (server SVG, no script)
-  const mx = Math.max(12, S0.all.max || 0), W = 640, Hh = 26;
-  const strip = r => { const L = []; for (const [id, o] of S0.per) { const x = ix.byId.get(id); if (x && x.mk === r.mk) L.push(o.m); } const X = v => 8 + v / mx * (W - 16);
+const N = await import('./kbx_named.js'), ix = await N.data(env), S0 = slipStats(ix, N.handoverOf), P = pre(lang), th = t30(lang, 'sl_th');
+const R = S0.rows.filter(r => r.n >= MIN_N), cell = (v, k) => '<td data-l="' + esc(th[k]) + '">' + v + '</td>';
+const tr = (r, name, id) => '<tr' + (id ? ' id="m-' + id + '"' : '') + '>' + cell(name, 0) + cell(nf(r.n, lang), 1) + cell('<b>' + nf(r.med, lang) + '</b>', 2) + cell(nf(r.p25, lang) + ' – ' + nf(r.p75, lang), 3) + cell(nf(r.min, lang) + ' – ' + nf(r.max, lang), 4) + cell(nf(r.notdue, lang), 5) + cell(nf(r.done, lang), 6) + '</tr>';
+const mkLink = r => ((ix.mk.get(r.mk) || {}).k >= 5 && lang !== 'en' ? '<a href="' + P + '/m/' + encodeURIComponent(String(r.mk).toLowerCase().replace(/\s+/g, '-')) + '/">' : '<a href="/m/' + encodeURIComponent(String(r.mk).toLowerCase().replace(/\s+/g, '-')) + '/">') + bdi(lang, mkName(r.mk, lang)) + '</a>';
+const table = '<div class="n30t"><table><thead><tr>' + th.map(h => '<th scope="col">' + esc(h) + '</th>').join('') + '</tr></thead><tbody>' + tr(S0.all, '<b>' + esc(t30(lang, 'sl_all')) + '</b>', '') + R.map(r => tr(r, mkLink(r), slugM(r.mk))).join('') + '</tbody></table></div>';
+const mx = Math.max(12, S0.all.max || 0), W = 640, Hh = 26;
+const strip = r => { const L = []; for (const [id, o] of S0.per) { const x = ix.byId.get(id); if (x && x.mk === r.mk) L.push(o.m); } const X = v => 8 + v / mx * (W - 16);
     return '<svg viewBox="0 0 ' + W + ' ' + Hh + '" class="n30sv" role="img" aria-label="' + esc(mkName(r.mk, lang) + ': ' + th[1] + ' ' + nf(r.n, lang) + ', ' + th[2] + ' ' + nf(r.med, lang) + ', ' + th[3] + ' ' + nf(r.p25, lang) + ' – ' + nf(r.p75, lang) + ', ' + th[4] + ' ' + nf(r.min, lang) + ' – ' + nf(r.max, lang)) + '"><line x1="8" x2="' + (W - 8) + '" y1="13" y2="13"/>' + L.map(v => '<circle cx="' + X(v).toFixed(1) + '" cy="13" r="4"/>').join('') + '<rect x="' + X(r.p25).toFixed(1) + '" y="5" width="' + Math.max(2, X(r.p75) - X(r.p25)).toFixed(1) + '" height="16" rx="3"/><line class="md" x1="' + X(r.med).toFixed(1) + '" x2="' + X(r.med).toFixed(1) + '" y1="2" y2="24"/></svg>'; };
-  const strips = '<div class="n30st">' + R.slice(0, 20).map(r => '<div><p>' + bdi(lang, mkName(r.mk, lang)) + ' <small>n = ' + nf(r.n, lang) + ', ' + esc(th[2]) + ' ' + nf(r.med, lang) + '</small></p><div dir="ltr">' + strip(r) + '</div></div>').join('') + '<p class="k-muted" dir="ltr">0 – ' + nf(mx, lang) + '</p></div>';
-  const ul = a => '<ul>' + a.map(s => '<li>' + esc(String(s).split('{n}').join(String(MIN_N))) + '</li>').join('') + '</ul>';
-  const body = '<section class="phero kp"><div class="wrap"><p class="crumb"><a href="' + P + '/">Kolaboro</a> / <a href="' + P + '/methods/transparency-score/">' + esc(t30(lang, 'sl_bc')) + '</a></p><h1>' + esc(t30(lang, 'sl_h1')) + '</h1><p class="lead">' + esc(t30(lang, 'sl_lead', { d: N.fd(S0.day, lang), k: nf(S0.all.tracked, lang) })) + '</p></div></section>' +
-    '<div class="wrap kwrap n30w"><h2>' + esc(t30(lang, 'sl_tab_h')) + '</h2>' + table + '<p class="k-muted">' + esc(t30(lang, 'sl_few', { n: MIN_N })) + ' <a href="/api/v1/slippage">' + esc(t30(lang, 'sl_json')) + '</a> · <a href="/api/v1/slippage.csv">' + esc(t30(lang, 'sl_csv')) + '</a></p>' + strips +
-    '<h2 id="method">' + esc(t30(lang, 'sl_m_h')) + '</h2>' + ul(t30(lang, 'sl_m')) + '<h2 id="limits">' + esc(t30(lang, 'sl_lim_h')) + '</h2>' + ul(t30(lang, 'sl_lim')) + '</div>' +
-    TB.kbx_n30a__s.k2 +
-    TB.kbx_n30a__s.k3 +
-    TB.kbx_n30a__s.k4;
-  const canon = ORIGIN + P + '/methods/handover-slippage/';
-  const pg = { title: t30(lang, 'sl_t') + ' | Kolaboro', desc: t30(lang, 'sl_d'), canon, body, alt: l => ORIGIN + pre(l) + '/methods/handover-slippage/', lastmod: S0.day,
-    ld: { '@context': 'https://schema.org', '@graph': [{ '@type': 'Dataset', name: t30(lang, 'sl_h1'), description: t30(lang, 'sl_d'), url: canon, inLanguage: lang, dateModified: S0.day, license: 'https://creativecommons.org/licenses/by/4.0/', creator: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' }, measurementTechnique: t30(lang, 'sl_m')[3], variableMeasured: t30(lang, 'sl_th')[2], isBasedOn: [ORIGIN + '/data/named.json', ORIGIN + '/data/promises.json', ORIGIN + '/data/bali-cases.json'],
-      distribution: [{ '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: ORIGIN + '/api/v1/slippage' }, { '@type': 'DataDownload', encodingFormat: 'text/csv', contentUrl: ORIGIN + '/api/v1/slippage.csv' }] },
-      { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Kolaboro', item: ORIGIN + P + '/' }, { '@type': 'ListItem', position: 2, name: t30(lang, 'sl_h1'), item: canon }] }] } };
-  return page(pg, lang, shell, N);
+const strips = '<div class="n30st">' + R.slice(0, 20).map(r => '<div><p>' + bdi(lang, mkName(r.mk, lang)) + ' <small>n = ' + nf(r.n, lang) + ', ' + esc(th[2]) + ' ' + nf(r.med, lang) + '</small></p><div dir="ltr">' + strip(r) + '</div></div>').join('') + '<p class="k-muted" dir="ltr">0 – ' + nf(mx, lang) + '</p></div>';
+const ul = a => '<ul>' + a.map(s => '<li>' + esc(String(s).split('{n}').join(String(MIN_N))) + '</li>').join('') + '</ul>';
+const body = TB.kbx_n30a__t.k7 + P + '/">Kolaboro</a> / <a href="' + P + '/methods/transparency-score/">' + esc(t30(lang, 'sl_bc')) + '</a></p><h1>' + esc(t30(lang, 'sl_h1')) + '</h1><p class="lead">' + esc(t30(lang, 'sl_lead', { d: N.fd(S0.day, lang), k: nf(S0.all.tracked, lang) })) + '</p></div></section>' +
+'<div class="wrap kwrap n30w"><h2>' + esc(t30(lang, 'sl_tab_h')) + '</h2>' + table + '<p class="k-muted">' + esc(t30(lang, 'sl_few', { n: MIN_N })) + ' <a href="/api/v1/slippage">' + esc(t30(lang, 'sl_json')) + TB.kbx_n30a__t.k8 + esc(t30(lang, 'sl_csv')) + '</a></p>' + strips +
+'<h2 id="method">' + esc(t30(lang, 'sl_m_h')) + '</h2>' + ul(t30(lang, 'sl_m')) + '<h2 id="limits">' + esc(t30(lang, 'sl_lim_h')) + '</h2>' + ul(t30(lang, 'sl_lim')) + '</div>' +
+TB.kbx_n30a__s.k2 +
+TB.kbx_n30a__s.k3 +
+TB.kbx_n30a__s.k4;
+const canon = ORIGIN + P + '/methods/handover-slippage/';
+const pg = { title: t30(lang, 'sl_t') + ' | Kolaboro', desc: t30(lang, 'sl_d'), canon, body, alt: l => ORIGIN + pre(l) + '/methods/handover-slippage/', lastmod: S0.day,
+ld: { '@context': 'https://schema.org', '@graph': [{ '@type': 'Dataset', name: t30(lang, 'sl_h1'), description: t30(lang, 'sl_d'), url: canon, inLanguage: lang, dateModified: S0.day, license: TB.kbx_n30a__t.k9, creator: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' }, measurementTechnique: t30(lang, 'sl_m')[3], variableMeasured: t30(lang, 'sl_th')[2], isBasedOn: [ORIGIN + '/data/named.json', ORIGIN + '/data/promises.json', ORIGIN + '/data/bali-cases.json'],
+distribution: [{ '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: ORIGIN + '/api/v1/slippage' }, { '@type': 'DataDownload', encodingFormat: 'text/csv', contentUrl: ORIGIN + '/api/v1/slippage.csv' }] },
+{ '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Kolaboro', item: ORIGIN + P + '/' }, { '@type': 'ListItem', position: 2, name: t30(lang, 'sl_h1'), item: canon }] }] } };
+return page(pg, lang, shell, N);
 }
 async function page(pg, lang, shell, N, extraHeaders) {
   const sh = await shell(pre(lang) + '/how-we-score/'); if (!sh || sh.status !== 200) return null;
   const html = await N.assemble(pg, lang, sh);
   return new Response(html, { status: 200, headers: Object.assign({ 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=600' }, pg.noindex ? { 'x-robots-tag': 'noindex, follow' } : {}, extraHeaders || {}) });
 }
-
-// ------------------------------------------------------------------------------------------------ item 6: project timeline
 async function timelinePage(u, env, shell, lang, slug) {
-  const N = await import('./kbx_named.js'); let ix; try { ix = await N.data(env); } catch (e) { return null; }
-  const x = ix.bySlug.get(slug); if (!x || COI_RX.test(String(x.n || '') + ' ' + String(x.dv || ''))) return null;
-  const P = pre(lang), base = P + '/projects/' + x.s + '/', fd = d => N.fd(d, lang), c = ix.caseBy.get(x.id) || {};
-  const [ph, sat] = await Promise.all([(async () => { try { return (await (await import('./kbx_paper.js')).paperData(env)).ph; } catch (e) { return null; } })(), (async () => { try { return await (await import('./kbx_named_sat.js')).satData(env); } catch (e) { return null; } })()]);
-  const E = [];   // { d: 'YYYY-MM-DD' or 'YYYY-MM', k: kind, t: text, src: [label, href] }
-  const add = (d, k, t, src) => { const i = N.iso(d) || (/^\d{4}-\d{2}$/.test(String(d)) ? d : null); if (i) E.push({ d: i, k, t, src }); };
-  const ds = ['/data/named.json', '/data/named.json'];
-  add(x.ad, 'rec', t30(lang, 'ev_added'), [t30(lang, 's_ds'), ds[1]]);
-  if (x.pn) add(x.ad, 'rec', t30(lang, 'ev_pn', { p: x.pn }), [t30(lang, 's_ds'), base + '#permits']);
-  if (x.sealed && x.sha) add(x.sealed, 'rec', t30(lang, 'ev_sealed', { h: String(x.sha).slice(0, 12) }), [t30(lang, 's_copy'), '/projects/' + x.s + '/changes/' + x.sha + '.txt']);
-  if (x.rvw && x.rvw.d) add(x.rvw.d, 'rec', t30(lang, 'ev_rev'), [t30(lang, 's_rev'), base + '#sources']);
-  if (c.checked) add(c.checked, 'rec', t30(lang, 'ev_chk'), [t30(lang, 's_ds'), '/data/bali-cases.json']);
-  // handover dates: every dated reading, and each move between readings
-  const pr = (ix.prom[x.id] || []).find(p => p && p.k === 'handover');
-  if (pr) {
-    const H = (pr.hist || []).filter(e => e && e.seen && e.d).slice().sort((a, b) => a.seen < b.seen ? -1 : a.seen > b.seen ? 1 : 0), lastBy = {};
-    for (const e of H) {
-      const src = e.src === 'page' ? [t30(lang, 's_dev'), e.sha ? pre(lang) + '/projects/' + x.s + '/changes/' : (x.url || base)] : [t30(lang, 's_res'), base + '#sources'];
-      const l0 = lastBy[e.src || '?'];
-      if (l0 && hkey(l0.d) && hkey(e.d) && hkey(e.d) !== hkey(l0.d)) add(e.seen, 'date', t30(lang, 'ev_ho_mv', { a: hdisp(l0.d, lang) || l0.d, b: hdisp(e.d, lang) || e.d }), src);
-      else if (!l0 || l0.d !== e.d) add(e.seen, 'date', t30(lang, 'ev_ho', { d: hdisp(e.d, lang) || e.d }), src);
-      lastBy[e.src || '?'] = e;
-    }
-  }
-  const od = N.overdueOf ? N.overdueOf(ix, x) : null;
-  if (od && od.end) { const [y, m] = od.end.split('-').map(Number), nx = m === 12 ? (y + 1) + '-01' : y + '-' + String(m + 1).padStart(2, '0'); add(nx, 'date', t30(lang, 'ev_due', { d: hdisp(od.d, lang) || od.d }), [t30(lang, 's_ds'), base + '#delivery']); }
-  // prices printed on the page we track, by dated copy: the first headline, then each change
-  const H2 = ph && ph.projects && ph.projects[x.id];
-  if (H2 && H2.pts) {
-    let prev = null; const ia = (ts, url) => 'https://web.archive.org/web/' + ts + '/' + url;
-    for (const p of H2.pts.slice().sort((a, b) => a.d < b.d ? -1 : 1)) {
-      const href = p.src === 'copy' ? '/projects/' + x.s + '/changes/' + p.ref + '.txt' : ia(p.ref, H2.url), src = [t30(lang, p.src === 'copy' ? 's_copy' : 's_ia'), href];
-      const h = p.head && p.head.p ? p.head.p : null;
-      if (h && (!prev || prev.cur !== p.head.cur || prev.v !== p.head.v)) add(p.d, 'price', prev && prev.cur === p.head.cur ? t30(lang, 'ev_price_ch', { a: prev.p, b: h }) : t30(lang, 'ev_price', { p: h }), src);
-      else if (!h && p.src === 'ia') add(p.d, 'price', t30(lang, 'ev_ia'), src);
-      if (h) prev = p.head;
-    }
-  }
-  // satellite: first and latest clear month, and the first month a change beyond normal variation is seen (two clear months in a row)
-  const rec = sat && sat.projects && sat.projects[x.id];
-  if (rec && rec.n && rec.m0) {
-    const m0 = mIdx(rec.m0), ym = i => { const v = m0 + i - 1; return Math.floor(v / 12) + '-' + String(v % 12 + 1).padStart(2, '0'); }, clr = []; for (let i = 0; i < rec.n; i++) if (rec.c[i] != null) clr.push(i);
-    const ssrc = [t30(lang, 's_sat'), base + '#space'];
-    if (clr.length) { add(rec.dt[clr[0]] || ym(clr[0]), 'sat', t30(lang, 'ev_sat0'), ssrc); add(rec.dt[clr[clr.length - 1]] || ym(clr[clr.length - 1]), 'sat', t30(lang, 'ev_sat1'), ssrc); }
-    try { const SM = await import('./kbx_named_sat.js'), I = SM.index(rec); if (I) { const ok = I.y.map((v, i) => v == null ? -1 : i).filter(i => i >= 0); for (let j = 3; j + 1 < ok.length; j++) { const a = I.y[ok[j]], b = I.y[ok[j + 1]]; if (Math.abs(a) >= SM.BAND && Math.abs(b) >= SM.BAND && Math.sign(a) === Math.sign(b)) { add(rec.dt[ok[j]] || ym(ok[j]), 'sat', t30(lang, 'ev_satc', { x: (a > 0 ? '+' : '') + a }), ssrc); break; } } } } catch (e) {}
-  }
-  E.sort((a, b) => a.d < b.d ? 1 : a.d > b.d ? -1 : 0);
-  const kinds = ['date', 'price', 'rec', 'sat'].filter(k => E.some(e => e.k === k)), kl = { date: 'k_date', price: 'k_price', rec: 'k_rec', sat: 'k_sat' };
-  let lastY = '', items = '';
-  for (const e of E) {
-    const y = e.d.slice(0, 4); if (y !== lastY) { items += '<li class="n30y" aria-hidden="true">' + y + '</li>'; lastY = y; }
-    const sh = e.src && e.src[1] ? ' <a class="src" href="' + esc(e.src[1]) + '"' + (/^https?:/.test(e.src[1]) ? ' rel="nofollow noopener" target="_blank"' : '') + '>' + esc(e.src[0]) + '</a>' : '';
-    items += '<li class="n30e n30-' + e.k + '" data-k="' + e.k + '"><time datetime="' + e.d + '">' + esc(fd(e.d)) + '</time><p>' + bdi(lang, e.t) + sh + '</p></li>';
-  }
-  const name = x.n, a = E.length ? fd(E[E.length - 1].d) : '', b = E.length ? fd(E[0].d) : '';
-  const chips = kinds.length > 1 ? '<p class="n30c" role="group"><label><input type="radio" name="n30k" value="" checked> ' + esc(t30(lang, 'k_all')) + '</label>' + kinds.map(k => '<label><input type="radio" name="n30k" value="' + k + '"> ' + esc(t30(lang, kl[k])) + ' (' + E.filter(e => e.k === k).length + ')</label>').join('') + '</p>' : '';
-  const body = '<section class="phero kp"><div class="wrap"><p class="crumb"><a href="' + P + '/">Kolaboro</a> / <a href="' + P + '/projects/">' + esc(N.tr(lang, 'h1_i')) + '</a> / <a href="' + base + '">' + bdi(lang, name) + '</a></p><h1>' + esc(t30(lang, 'tl_h1', { n: name })) + '</h1><p class="lead">' + esc(t30(lang, 'tl_lead')) + '</p>' +
-    (E.length ? '<p><b>' + esc(t30(lang, 'tl_k', { k: nf(E.length, lang), a, b })) + '</b></p>' : '') + '</div></section><div class="wrap kwrap">' + chips +
-    (E.length ? '<ol class="n30tl">' + items + '</ol>' : '<p>' + esc(t30(lang, 'tl_none')) + '</p>') + '<p><a class="more" href="' + base + '">' + esc(t30(lang, 'tl_back')) + '</a></p></div>' +
-    TB.kbx_n30a__s.k5 +
-    TB.kbx_n30a__s.k6 +
-    TB.kbx_n30a__s.k7 +
-    TB.kbx_n30a__s.k8;
-  const canon = ORIGIN + base + 'timeline/';
-  const pg = { title: (t30(lang, 'tl_t', { n: name }).length > 60 ? t30(lang, 'tl_h1', { n: name }) : t30(lang, 'tl_t', { n: name })) + ' | Kolaboro', desc: t30(lang, 'tl_d', { n: name }), canon, body, noindex: true, alt: l => ORIGIN + pre(l) + '/projects/' + x.s + '/timeline/', lastmod: E.length ? E[0].d.slice(0, 10) : '',
-    ld: { '@context': 'https://schema.org', '@graph': [{ '@type': 'WebPage', name: t30(lang, 'tl_h1', { n: name }), url: canon, inLanguage: lang, about: { '@type': 'Residence', name, url: ORIGIN + base }, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' } },
-      { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Kolaboro', item: ORIGIN + P + '/' }, { '@type': 'ListItem', position: 2, name, item: ORIGIN + base }, { '@type': 'ListItem', position: 3, name: t30(lang, 'tl_h1', { n: name }), item: canon }] }] } };
-  return page(pg, lang, shell, N);
+const N = await import('./kbx_named.js'); let ix; try { ix = await N.data(env); } catch (e) { return null; }
+const x = ix.bySlug.get(slug); if (!x || COI_RX.test(String(x.n || '') + ' ' + String(x.dv || ''))) return null;
+const P = pre(lang), base = P + '/projects/' + x.s + '/', fd = d => N.fd(d, lang), c = ix.caseBy.get(x.id) || {};
+const [ph, sat] = await Promise.all([(async () => { try { return (await (await import('./kbx_paper.js')).paperData(env)).ph; } catch (e) { return null; } })(), (async () => { try { return await (await import('./kbx_named_sat.js')).satData(env); } catch (e) { return null; } })()]);
+const E = [];
+const add = (d, k, t, src) => { const i = N.iso(d) || (/^\d{4}-\d{2}$/.test(String(d)) ? d : null); if (i) E.push({ d: i, k, t, src }); };
+const ds = ['/data/named.json', '/data/named.json'];
+add(x.ad, 'rec', t30(lang, 'ev_added'), [t30(lang, 's_ds'), ds[1]]);
+if (x.pn) add(x.ad, 'rec', t30(lang, 'ev_pn', { p: x.pn }), [t30(lang, 's_ds'), base + '#permits']);
+if (x.sealed && x.sha) add(x.sealed, 'rec', t30(lang, 'ev_sealed', { h: String(x.sha).slice(0, 12) }), [t30(lang, 's_copy'), '/projects/' + x.s + '/changes/' + x.sha + '.txt']);
+if (x.rvw && x.rvw.d) add(x.rvw.d, 'rec', t30(lang, 'ev_rev'), [t30(lang, 's_rev'), base + '#sources']);
+if (c.checked) add(c.checked, 'rec', t30(lang, 'ev_chk'), [t30(lang, 's_ds'), '/data/bali-cases.json']);
+const pr = (ix.prom[x.id] || []).find(p => p && p.k === 'handover');
+if (pr) {
+const H = (pr.hist || []).filter(e => e && e.seen && e.d).slice().sort((a, b) => a.seen < b.seen ? -1 : a.seen > b.seen ? 1 : 0), lastBy = {};
+for (const e of H) {
+const src = e.src === 'page' ? [t30(lang, 's_dev'), e.sha ? pre(lang) + '/projects/' + x.s + '/changes/' : (x.url || base)] : [t30(lang, 's_res'), base + '#sources'];
+const l0 = lastBy[e.src || '?'];
+if (l0 && hkey(l0.d) && hkey(e.d) && hkey(e.d) !== hkey(l0.d)) add(e.seen, 'date', t30(lang, 'ev_ho_mv', { a: hdisp(l0.d, lang) || l0.d, b: hdisp(e.d, lang) || e.d }), src);
+else if (!l0 || l0.d !== e.d) add(e.seen, 'date', t30(lang, 'ev_ho', { d: hdisp(e.d, lang) || e.d }), src);
+lastBy[e.src || '?'] = e;
 }
-
-// ------------------------------------------------------------------------------------------------ item 7: compare radar (used by kbx_u26.js)
-// six-check states from the same rules as the traffic light on project pages (kbx_u27.js light6), as values: ok 3, part 2, no 1, nc 0
+}
+const od = N.overdueOf ? N.overdueOf(ix, x) : null;
+if (od && od.end) { const [y, m] = od.end.split('-').map(Number), nx = m === 12 ? (y + 1) + '-01' : y + '-' + String(m + 1).padStart(2, '0'); add(nx, 'date', t30(lang, 'ev_due', { d: hdisp(od.d, lang) || od.d }), [t30(lang, 's_ds'), base + '#delivery']); }
+const H2 = ph && ph.projects && ph.projects[x.id];
+if (H2 && H2.pts) {
+let prev = null; const ia = (ts, url) => 'https://web.archive.org/web/' + ts + '/' + url;
+for (const p of H2.pts.slice().sort((a, b) => a.d < b.d ? -1 : 1)) {
+const href = p.src === 'copy' ? '/projects/' + x.s + '/changes/' + p.ref + '.txt' : ia(p.ref, H2.url), src = [t30(lang, p.src === 'copy' ? 's_copy' : 's_ia'), href];
+const h = p.head && p.head.p ? p.head.p : null;
+if (h && (!prev || prev.cur !== p.head.cur || prev.v !== p.head.v)) add(p.d, 'price', prev && prev.cur === p.head.cur ? t30(lang, 'ev_price_ch', { a: prev.p, b: h }) : t30(lang, 'ev_price', { p: h }), src);
+else if (!h && p.src === 'ia') add(p.d, 'price', t30(lang, 'ev_ia'), src);
+if (h) prev = p.head;
+}
+}
+const rec = sat && sat.projects && sat.projects[x.id];
+if (rec && rec.n && rec.m0) {
+const m0 = mIdx(rec.m0), ym = i => { const v = m0 + i - 1; return Math.floor(v / 12) + '-' + String(v % 12 + 1).padStart(2, '0'); }, clr = []; for (let i = 0; i < rec.n; i++) if (rec.c[i] != null) clr.push(i);
+const ssrc = [t30(lang, 's_sat'), base + '#space'];
+if (clr.length) { add(rec.dt[clr[0]] || ym(clr[0]), 'sat', t30(lang, 'ev_sat0'), ssrc); add(rec.dt[clr[clr.length - 1]] || ym(clr[clr.length - 1]), 'sat', t30(lang, 'ev_sat1'), ssrc); }
+try { const SM = await import('./kbx_named_sat.js'), I = SM.index(rec); if (I) { const ok = I.y.map((v, i) => v == null ? -1 : i).filter(i => i >= 0); for (let j = 3; j + 1 < ok.length; j++) { const a = I.y[ok[j]], b = I.y[ok[j + 1]]; if (Math.abs(a) >= SM.BAND && Math.abs(b) >= SM.BAND && Math.sign(a) === Math.sign(b)) { add(rec.dt[ok[j]] || ym(ok[j]), 'sat', t30(lang, 'ev_satc', { x: (a > 0 ? '+' : '') + a }), ssrc); break; } } } } catch (e) {}
+}
+E.sort((a, b) => a.d < b.d ? 1 : a.d > b.d ? -1 : 0);
+const kinds = ['date', 'price', 'rec', 'sat'].filter(k => E.some(e => e.k === k)), kl = { date: 'k_date', price: 'k_price', rec: 'k_rec', sat: 'k_sat' };
+let lastY = '', items = '';
+for (const e of E) {
+const y = e.d.slice(0, 4); if (y !== lastY) { items += '<li class="n30y" aria-hidden="true">' + y + '</li>'; lastY = y; }
+const sh = e.src && e.src[1] ? ' <a class="src" href="' + esc(e.src[1]) + '"' + (/^https?:/.test(e.src[1]) ? TB.kbx_n30a__t.k10 : '') + '>' + esc(e.src[0]) + '</a>' : '';
+items += '<li class="n30e n30-' + e.k + '" data-k="' + e.k + '"><time datetime="' + e.d + '">' + esc(fd(e.d)) + '</time><p>' + bdi(lang, e.t) + sh + '</p></li>';
+}
+const name = x.n, a = E.length ? fd(E[E.length - 1].d) : '', b = E.length ? fd(E[0].d) : '';
+const chips = kinds.length > 1 ? TB.kbx_n30a__t.k11 + esc(t30(lang, 'k_all')) + '</label>' + kinds.map(k => TB.kbx_n30a__t.k12 + k + '"> ' + esc(t30(lang, kl[k])) + ' (' + E.filter(e => e.k === k).length + ')</label>').join('') + '</p>' : '';
+const body = TB.kbx_n30a__t.k13 + P + '/">Kolaboro</a> / <a href="' + P + '/projects/">' + esc(N.tr(lang, 'h1_i')) + '</a> / <a href="' + base + '">' + bdi(lang, name) + '</a></p><h1>' + esc(t30(lang, 'tl_h1', { n: name })) + '</h1><p class="lead">' + esc(t30(lang, 'tl_lead')) + '</p>' +
+(E.length ? '<p><b>' + esc(t30(lang, 'tl_k', { k: nf(E.length, lang), a, b })) + '</b></p>' : '') + TB.kbx_n30a__t.k14 + chips +
+(E.length ? '<ol class="n30tl">' + items + '</ol>' : '<p>' + esc(t30(lang, 'tl_none')) + '</p>') + '<p><a class="more" href="' + base + '">' + esc(t30(lang, 'tl_back')) + '</a></p></div>' +
+TB.kbx_n30a__s.k5 +
+TB.kbx_n30a__s.k6 +
+TB.kbx_n30a__s.k7 +
+TB.kbx_n30a__s.k8;
+const canon = ORIGIN + base + 'timeline/';
+const pg = { title: (t30(lang, 'tl_t', { n: name }).length > 60 ? t30(lang, 'tl_h1', { n: name }) : t30(lang, 'tl_t', { n: name })) + ' | Kolaboro', desc: t30(lang, 'tl_d', { n: name }), canon, body, noindex: true, alt: l => ORIGIN + pre(l) + '/projects/' + x.s + '/timeline/', lastmod: E.length ? E[0].d.slice(0, 10) : '',
+ld: { '@context': 'https://schema.org', '@graph': [{ '@type': 'WebPage', name: t30(lang, 'tl_h1', { n: name }), url: canon, inLanguage: lang, about: { '@type': 'Residence', name, url: ORIGIN + base }, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' } },
+{ '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Kolaboro', item: ORIGIN + P + '/' }, { '@type': 'ListItem', position: 2, name, item: ORIGIN + base }, { '@type': 'ListItem', position: 3, name: t30(lang, 'tl_h1', { n: name }), item: canon }] }] } };
+return page(pg, lang, shell, N);
+}
 const RV = { ok: 3, part: 2, no: 1, nc: 0 };
 const RC = ['#155C75', '#FF5B14', '#7A5AF8', '#2E8B57'];
-export function radarSvg(lang, cols) {   // cols: [{ name, st: ['ok'|'part'|'no'|'nc' x 6] }]
-  const L = t30(lang, 'lt'), W = 360, cx = 180, cy = 170, R = 120, n = 6;
-  const pt = (i, r) => { const a = -Math.PI / 2 + i * 2 * Math.PI / n; return [cx + Math.cos(a) * r, cy + Math.sin(a) * r]; };
-  let g = '';
-  for (let k = 1; k <= 3; k++) g += '<polygon class="g" points="' + Array.from({ length: n }, (_, i) => pt(i, R * k / 3).map(v => v.toFixed(1)).join(',')).join(' ') + '"/>';
-  for (let i = 0; i < n; i++) { const [x, y] = pt(i, R); g += '<line class="g" x1="' + cx + '" y1="' + cy + '" x2="' + x.toFixed(1) + '" y2="' + y.toFixed(1) + '"/>'; const [lx, ly] = pt(i, R + 22); g += '<text x="' + lx.toFixed(1) + '" y="' + (ly + 4).toFixed(1) + '" text-anchor="' + (Math.abs(lx - cx) < 8 ? 'middle' : lx > cx ? 'start' : 'end') + '">' + esc(L[i]) + '</text>'; }
-  cols.forEach((c, j) => { const P = c.st.map((s, i) => pt(i, Math.max(6, R * (RV[s] || 0) / 3))); g += '<polygon class="p" style="stroke:' + RC[j] + ';fill:' + RC[j] + '" points="' + P.map(p => p.map(v => v.toFixed(1)).join(',')).join(' ') + '"><title>' + esc(c.name) + '</title></polygon>' + P.map(p => '<circle cx="' + p[0].toFixed(1) + '" cy="' + p[1].toFixed(1) + '" r="3.5" style="fill:' + RC[j] + '"/>').join(''); });
-  const leg = '<ul class="n30rl">' + cols.map((c, j) => '<li><i style="background:' + RC[j] + '"></i>' + bdi(lang, c.name) + '</li>').join('') + '</ul>';
-  return '<figure class="n30r"><figcaption><b>' + esc(t30(lang, 'cp_radar')) + '</b></figcaption><div dir="ltr"><svg viewBox="-90 -6 540 352" role="img" aria-label="' + esc(t30(lang, 'cp_radar') + ': ' + cols.map(c => c.name + ' ' + c.st.map((s, i) => L[i] + ' ' + t30(lang, 'st')[s]).join(', ')).join('; ')) + '">' + g + '</svg></div>' + leg + '<p class="k-muted">' + esc(t30(lang, 'cp_radar_n')) + '</p></figure>' +
-    TB.kbx_n30a__s.k9;
+export function radarSvg(lang, cols) {
+const L = t30(lang, 'lt'), W = 360, cx = 180, cy = 170, R = 120, n = 6;
+const pt = (i, r) => { const a = -Math.PI / 2 + i * 2 * Math.PI / n; return [cx + Math.cos(a) * r, cy + Math.sin(a) * r]; };
+let g = '';
+for (let k = 1; k <= 3; k++) g += '<polygon class="g" points="' + Array.from({ length: n }, (_, i) => pt(i, R * k / 3).map(v => v.toFixed(1)).join(',')).join(' ') + '"/>';
+for (let i = 0; i < n; i++) { const [x, y] = pt(i, R); g += '<line class="g" x1="' + cx + '" y1="' + cy + '" x2="' + x.toFixed(1) + '" y2="' + y.toFixed(1) + '"/>'; const [lx, ly] = pt(i, R + 22); g += '<text x="' + lx.toFixed(1) + '" y="' + (ly + 4).toFixed(1) + '" text-anchor="' + (Math.abs(lx - cx) < 8 ? 'middle' : lx > cx ? 'start' : 'end') + '">' + esc(L[i]) + '</text>'; }
+cols.forEach((c, j) => { const P = c.st.map((s, i) => pt(i, Math.max(6, R * (RV[s] || 0) / 3))); g += '<polygon class="p" style="stroke:' + RC[j] + ';fill:' + RC[j] + '" points="' + P.map(p => p.map(v => v.toFixed(1)).join(',')).join(' ') + '"><title>' + esc(c.name) + '</title></polygon>' + P.map(p => '<circle cx="' + p[0].toFixed(1) + '" cy="' + p[1].toFixed(1) + '" r="3.5" style="fill:' + RC[j] + '"/>').join(''); });
+const leg = '<ul class="n30rl">' + cols.map((c, j) => '<li><i style="background:' + RC[j] + '"></i>' + bdi(lang, c.name) + '</li>').join('') + '</ul>';
+return '<figure class="n30r"><figcaption><b>' + esc(t30(lang, 'cp_radar')) + TB.kbx_n30a__t.k15 + esc(t30(lang, 'cp_radar') + ': ' + cols.map(c => c.name + ' ' + c.st.map((s, i) => L[i] + ' ' + t30(lang, 'st')[s]).join(', ')).join('; ')) + '">' + g + '</svg></div>' + leg + '<p class="k-muted">' + esc(t30(lang, 'cp_radar_n')) + '</p></figure>' +
+TB.kbx_n30a__s.k9;
 }
-
-// ------------------------------------------------------------------------------------------------ item 4: contract reader page
 const CR_KEYS = ['ho', 'pen', 'esc', 'pay', 'law', 'can'];
 async function readerPage(u, env, shell, lang) {
-  const N = await import('./kbx_named.js'), P = pre(lang), w = k => t30(lang, k);
-  const M = { v: N30V }; for (const k of ['cr_drop', 'cr_rd', 'cr_done', 'cr_scan', 'cr_err', 'cr_big', 'cr_k', 'cr_k1', 'cr_none', 'cr_page', 'cr_vals', 'cr_more', 'cr_text']) M[k.slice(3)] = w(k);
-  M.cat = CR_KEYS.map(k => [k, w('cr_' + k), w('cr_' + k + '_q')]);
-  const body = '<section class="phero kp"><div class="wrap"><p class="crumb"><a href="' + P + '/">Kolaboro</a> / <a href="/tools/">' + esc(w('cr_bc')) + '</a></p><h1>' + esc(w('cr_h1')) + '</h1><p class="lead">' + esc(w('cr_lead')) + '</p>' +
-    '<p class="n30p"><b>' + esc(w('cr_priv')) + '</b></p></div></section><div class="wrap kwrap" id="n30cr" data-cr="' + esc(JSON.stringify(M)) + '">' +
-    '<div class="n30d" tabindex="0" role="button" aria-describedby="n30cr-s"><p><b>' + esc(w('cr_drop')) + '</b></p><label class="k-btn" for="n30cr-f">' + esc(w('cr_pick')) + TB.kbx_n30a__s.k10 +
-    '<details class="n30px"><summary>' + esc(w('cr_or')) + '</summary><label for="n30cr-t" class="k-vh">' + esc(w('cr_or')) + TB.kbx_n30a__s.k11 + esc(w('cr_go')) + '</button> <button type="button" class="k-btn k-btn--ghost" id="n30cr-c">' + esc(w('cr_clear')) + '</button></p></details>' +
-    '<p id="n30cr-s" class="n30s0" role="status" aria-live="polite"></p><div id="n30cr-o"></div>' +
-    (await (await import('./kbx_n31e.js')).crBlock(lang, env).catch(() => '')) + '<ul class="n30q">' + CR_KEYS.map(k => '<li><b>' + esc(w('cr_' + k)) + '</b>: ' + esc(w('cr_' + k + '_q')) + '</li>').join('') + '</ul>' +
-    '<p class="k-muted">' + esc(w('cr_note')) + '</p><h2>' + esc(w('cr_rel')) + '</h2><ul><li><a href="/tools/contract-check/">' + esc(w('cr_rel1')) + '</a></li><li><a href="' + P + '/tools/contract-addendum/">' + esc(w('cr_rel2')) + '</a></li><li><a href="/tools/pdf-check/">' + esc(w('cr_rel3')) + '</a></li><li><a href="' + P + '/tools/vault/">' + esc(VT35[lang] || VT35.en) + '</a></li></ul></div>' +
-    TB.kbx_n30a__s.k12 +
-    TB.kbx_n30a__s.k13 +
-    TB.kbx_n30a__s.k14 +
-    TB.kbx_n30a__s.k15 +
-    TB.kbx_n30a__s.k16 + N30V + TB.kbx_n30a__s.k17;
-  const canon = ORIGIN + P + '/tools/contract-reader/';
-  const pg = { title: w('cr_t') + ' | Kolaboro', desc: w('cr_d'), canon, body, alt: l => ORIGIN + pre(l) + '/tools/contract-reader/', lastmod: '2026-11-17',
-    ld: { '@context': 'https://schema.org', '@graph': [{ '@type': 'WebApplication', name: w('cr_h1'), description: w('cr_d'), url: canon, inLanguage: lang, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Any (runs in the browser)', offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' } },
-      { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Kolaboro', item: ORIGIN + P + '/' }, { '@type': 'ListItem', position: 2, name: w('cr_bc'), item: ORIGIN + '/tools/' }, { '@type': 'ListItem', position: 3, name: w('cr_h1'), item: canon }] }] } };
-  return page(pg, lang, shell, N);
+const N = await import('./kbx_named.js'), P = pre(lang), w = k => t30(lang, k);
+const M = { v: N30V }; for (const k of ['cr_drop', 'cr_rd', 'cr_done', 'cr_scan', 'cr_err', 'cr_big', 'cr_k', 'cr_k1', 'cr_none', 'cr_page', 'cr_vals', 'cr_more', 'cr_text']) M[k.slice(3)] = w(k);
+M.cat = CR_KEYS.map(k => [k, w('cr_' + k), w('cr_' + k + '_q')]);
+const body = TB.kbx_n30a__t.k16 + P + '/">Kolaboro</a> / <a href="/tools/">' + esc(w('cr_bc')) + '</a></p><h1>' + esc(w('cr_h1')) + '</h1><p class="lead">' + esc(w('cr_lead')) + '</p>' +
+'<p class="n30p"><b>' + esc(w('cr_priv')) + TB.kbx_n30a__t.k17 + esc(JSON.stringify(M)) + '">' +
+TB.kbx_n30a__t.k18 + esc(w('cr_drop')) + TB.kbx_n30a__t.k19 + esc(w('cr_pick')) + TB.kbx_n30a__s.k10 +
+'<details class="n30px"><summary>' + esc(w('cr_or')) + TB.kbx_n30a__t.k20 + esc(w('cr_or')) + TB.kbx_n30a__s.k11 + esc(w('cr_go')) + TB.kbx_n30a__t.k21 + esc(w('cr_clear')) + '</button></p></details>' +
+TB.kbx_n30a__t.k22 +
+(await (await import('./kbx_n31e.js')).crBlock(lang, env).catch(() => '')) + '<ul class="n30q">' + CR_KEYS.map(k => '<li><b>' + esc(w('cr_' + k)) + '</b>: ' + esc(w('cr_' + k + '_q')) + '</li>').join('') + '</ul>' +
+'<p class="k-muted">' + esc(w('cr_note')) + '</p><h2>' + esc(w('cr_rel')) + TB.kbx_n30a__t.k23 + esc(w('cr_rel1')) + '</a></li><li><a href="' + P + '/tools/contract-addendum/">' + esc(w('cr_rel2')) + TB.kbx_n30a__t.k24 + esc(w('cr_rel3')) + '</a></li><li><a href="' + P + '/tools/vault/">' + esc(VT35[lang] || VT35.en) + '</a></li></ul></div>' +
+TB.kbx_n30a__s.k12 +
+TB.kbx_n30a__s.k13 +
+TB.kbx_n30a__s.k14 +
+TB.kbx_n30a__s.k15 +
+TB.kbx_n30a__s.k16 + N30V + TB.kbx_n30a__s.k17;
+const canon = ORIGIN + P + '/tools/contract-reader/';
+const pg = { title: w('cr_t') + ' | Kolaboro', desc: w('cr_d'), canon, body, alt: l => ORIGIN + pre(l) + '/tools/contract-reader/', lastmod: '2026-11-17',
+ld: { '@context': 'https://schema.org', '@graph': [{ '@type': 'WebApplication', name: w('cr_h1'), description: w('cr_d'), url: canon, inLanguage: lang, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Any (runs in the browser)', offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' } },
+{ '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Kolaboro', item: ORIGIN + P + '/' }, { '@type': 'ListItem', position: 2, name: w('cr_bc'), item: ORIGIN + '/tools/' }, { '@type': 'ListItem', position: 3, name: w('cr_h1'), item: canon }] }] } };
+return page(pg, lang, shell, N);
 }
-
-// ------------------------------------------------------------------------------------------------ client: contract reader (served as /k/n30a-cr.js)
 function crClient() {
   var R = document.getElementById('n30cr'); if (!R || window.N30CR) return; window.N30CR = 1;
   var M = JSON.parse(R.getAttribute('data-cr')), st = document.getElementById('n30cr-s'), out = document.getElementById('n30cr-o'), fi = document.getElementById('n30cr-f'), dz = R.querySelector('.n30d');
@@ -325,8 +289,6 @@ function crClient() {
   window.N30CR_TEST = function (pages) { run(pages, performance.now()); return out.innerHTML; };   // used by the automated test only
 }
 export const CR_JS = '(' + crClient.toString() + ')();';
-
-// ------------------------------------------------------------------------------------------------ client: natural-language search + before/after slider (served as /k/n30a.js)
 function nlClient() {
   if (window.N30) return; window.N30 = {};
   var LG = (document.documentElement.lang || 'en').slice(0, 2), PRE = LG === 'en' ? '' : '/' + LG, W = __C__, T = W[LG] || W.en;
@@ -531,29 +493,25 @@ function nlClient() {
   if (window.N30_BA_Q) { var qq = window.N30_BA_Q; window.N30_BA_Q = null; N30.ba.apply(null, qq); }
 }
 export const NL_JS = '(' + nlClient.toString().replace('__C__', JSON.stringify(C)) + ')();';
-// appended to /k/u27.js: loads /k/n30a.js on the home search box and on /projects/ only
 export const LOADER = "(function(){var p=location.pathname;if(document.querySelector('form[data-check] #hero-url')||(/\\/projects\\/?$/.test(p)&&document.querySelector('[data-kx-lists]'))){var s=document.createElement('script');s.src='/k/n30a.js?v=" + N30V + "';s.async=true;document.head.appendChild(s);}})();";
-// the time machine's "Compare two dates" button (kbx_named_sat.js): queue the call and load the script once
 export const BA_BTN_JS = ";var ba=f.querySelector('[data-n30ba]');if(ba)ba.addEventListener('click',function(){on();var a=[f,d,im,T];if(window.N30&&window.N30.ba){window.N30.ba.apply(null,a);return}window.N30_BA_Q=a;if(!document.querySelector('script[data-n30]')){var s=document.createElement('script');s.src='/k/n30a.js?v=" + N30V + "';s.setAttribute('data-n30','');document.head.appendChild(s)}});";
-export const baButton = lang => '<button type="button" class="k-btn k-btn--sm k-btn--ghost" data-n30ba>' + esc((C[lang] || C.en).ba) + '</button>';
-
-// ------------------------------------------------------------------------------------------------ routes
+export const baButton = lang => TB.kbx_n30a__t.k25 + esc((C[lang] || C.en).ba) + '</button>';
 export const PATHS = /^\/k\/n30a(?:-cr)?\.js$|^\/api\/v1\/slippage(?:\.csv)?$|^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:tools\/contract-reader|methods\/handover-slippage|projects\/[a-z0-9-]{1,90}\/timeline)\/?$/;
 export async function handle(req, u, env, ctx, shell) {
-  const p = u.pathname;
-  if (req.method !== 'GET' && req.method !== 'HEAD') return null;
-  const js = (body) => new Response(body, { headers: { 'content-type': 'application/javascript; charset=utf-8', 'cache-control': u.searchParams.get('v') === N30V ? 'public, max-age=31536000, immutable' : 'public, max-age=300', 'x-content-type-options': 'nosniff' } });
-  if (p === '/k/n30a.js') return js(NL_JS);
-  if (p === '/k/n30a-cr.js') return js(CR_JS);
-  try {
-    if (p === '/api/v1/slippage' || p === '/api/v1/slippage.csv') return await slipApi(env, p.endsWith('.csv'));
-  } catch (e) { return jr({ error: 'unavailable' }, 503, 'no-store'); }
-  const m = p.match(/^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?(tools\/contract-reader|methods\/handover-slippage|projects\/([a-z0-9-]{1,90})\/timeline)(\/?)$/); if (!m) return null;
-  if (!m[4]) return new Response(null, { status: 301, headers: { location: p + '/' + u.search, 'cache-control': 'public, max-age=86400' } });
-  const lang = m[1] || 'en';
-  try {
-    if (m[2] === 'tools/contract-reader') return await readerPage(u, env, shell, lang);
-    if (m[2] === 'methods/handover-slippage') return await slipPage(u, env, shell, lang);
-    return await timelinePage(u, env, shell, lang, m[3]);
-  } catch (e) { return null; }
+const p = u.pathname;
+if (req.method !== 'GET' && req.method !== 'HEAD') return null;
+const js = (body) => new Response(body, { headers: { 'content-type': 'application/javascript; charset=utf-8', 'cache-control': u.searchParams.get('v') === N30V ? 'public, max-age=31536000, immutable' : 'public, max-age=300', 'x-content-type-options': 'nosniff' } });
+if (p === '/k/n30a.js') return js(NL_JS);
+if (p === '/k/n30a-cr.js') return js(CR_JS);
+try {
+if (p === '/api/v1/slippage' || p === '/api/v1/slippage.csv') return await slipApi(env, p.endsWith('.csv'));
+} catch (e) { return jr({ error: 'unavailable' }, 503, 'no-store'); }
+const m = p.match(/^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?(tools\/contract-reader|methods\/handover-slippage|projects\/([a-z0-9-]{1,90})\/timeline)(\/?)$/); if (!m) return null;
+if (!m[4]) return new Response(null, { status: 301, headers: { location: p + '/' + u.search, 'cache-control': 'public, max-age=86400' } });
+const lang = m[1] || 'en';
+try {
+if (m[2] === 'tools/contract-reader') return await readerPage(u, env, shell, lang);
+if (m[2] === 'methods/handover-slippage') return await slipPage(u, env, shell, lang);
+return await timelinePage(u, env, shell, lang, m[3]);
+} catch (e) { return null; }
 }

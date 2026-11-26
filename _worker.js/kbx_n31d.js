@@ -1,18 +1,8 @@
-// kolaboro.com batch 31 (agent n31d, 18 Nov 2026): the project page, items 131 to 155 of the 300 list. Lighter, not heavier: parts
-// that repeat were folded or dropped in kbx_named.js, the new server parts below are short, and everything interactive lives in one
-// lazy client script per language. No model calls, nothing stored on our side, nothing estimated.
-//   GET /k/n31d.js?l=<lang>&v=<V>   client script of project pages, loaded after the page is idle (LOADER, appended to /k/u27.js):
-//                                    listen to the quick answer (speechSynthesis, in the browser, item 155), expert mode with every field
-//                                    of /api/v1/projects/<slug> (153), one-page A4 summary print (142), currency risk for the reader's
-//                                    currency from ECB reference rates over 5 years (141), the timeline inside "What changed" (136),
-//                                    before/after satellite from the top (137), map with layers at the pin (152), buyer question
-//                                    figures from the ask-developer flow, shown only from 5 reports (144)
-// Server parts used by kbx_named.js: knownLine (131), nrNote (147), askHtml (134), closest3 / cl3Html (135), devLate (151),
-// shareText (148), tyTable (149), staticMap (145), satBa (137), vsHead (140), CSS31 (132, 146).
+// comments: _notes/kolaboro-worker-comments.txt
 import { S, C } from './kbx_n31d_i18n.js';
 import { t27 } from './kbx_u27.js';
 import { index as satIndex, BAND as SAT_BAND } from './kbx_named_sat.js';
-
+import { TB } from './kbx_strings.js';
 export const N31V = 'd1';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const pre = l => l === 'en' ? '' : '/' + l;
@@ -23,104 +13,76 @@ const nf = (n, lang, d) => { try { return Number(n).toLocaleString(LOC[lang] || 
 export const t31 = (lang, k, v) => { let s = (S[lang] && S[lang][k] != null) ? S[lang][k] : S.en[k]; if (v) for (const [a, b] of Object.entries(v)) s = s.split('{' + a + '}').join(b); return s; };
 const SEP = { zh: '、', ar: '، ' };
 const low = (lang, s) => /^(en|es|fr|nl|ru)$/.test(lang) ? s.charAt(0).toLocaleLowerCase(LOC[lang]) + s.slice(1) : s;
-
-// 131: one line at the top: which of the six checks are known (green or amber, or a passed date, which is known too) and which are not
-// known yet (red "not published" or grey "not checked"). Same states as the six-check light (kbx_u27.js light6).
 export function knownLine(lang, L6) {
-  const k = [], u = [];
-  for (const [key, , s] of L6) (s[0] === 'ok' || s[0] === 'part' || s[1] === 'd_past' ? k : u).push(low(lang, t27(lang, 'lt_' + key)));
-  const j = a => a.join(SEP[lang] || ', ');
-  return '<p class="k31q"><b class="kans-l">' + esc(t31(lang, 'q_lbl')) + '</b> ' + esc(t31(lang, 'known', { a: k.length ? j(k) : t31(lang, 'none_k') })) + (u.length ? ' ' + esc(t31(lang, 'unknown', { b: j(u) })) : '') + '</p>';
+const k = [], u = [];
+for (const [key, , s] of L6) (s[0] === 'ok' || s[0] === 'part' || s[1] === 'd_past' ? k : u).push(low(lang, t27(lang, 'lt_' + key)));
+const j = a => a.join(SEP[lang] || ', ');
+return '<p class="k31q"><b class="kans-l">' + esc(t31(lang, 'q_lbl')) + '</b> ' + esc(t31(lang, 'known', { a: k.length ? j(k) : t31(lang, 'none_k') })) + (u.length ? ' ' + esc(t31(lang, 'unknown', { b: j(u) })) : '') + '</p>';
 }
-
-// 147: the plain notice on projects not reviewed yet (replaces the longer note that was repeated in "In short" and "The six checks")
 export const nrNote = lang => '<p class="k31nr" role="note"><b>' + esc(t31(lang, 'nr_h')) + '</b> ' + esc(t31(lang, 'nr_t')) + ' <a href="' + pre(lang) + '/how-we-work/">' + esc(t31(lang, 'nr_l')) + '</a></p>';
-
-// 134: what to ask the developer about THIS project, from the same states plus deposit protection and price (rules, at most 6)
 const ASK34 = { en: 'All questions, with the reason for each', es: 'Todas las preguntas, con su motivo', fr: 'Toutes les questions, avec leur raison', de: 'Alle Fragen mit Begründung', nl: 'Alle vragen, met de reden', ru: 'Все вопросы с причинами', zh: '全部问题及原因', ar: 'كل الأسئلة مع أسبابها' };
 export function askHtml(lang, o) {
-  const Q = [], st = {}; for (const [key, , s] of o.L6) st[key] = s;
-  const n = o.n, h = o.h;
-  if (st.permit && st.permit[0] !== 'ok') Q.push(t31(lang, 'a_permit', { n }));
-  if (st.company && st.company[0] !== 'ok') Q.push(t31(lang, 'a_co'));
-  const d = st.date || [];
-  Q.push(d[1] === 'd_past' ? t31(lang, 'a_late', { h }) : d[0] === 'part' ? t31(lang, 'a_moved') : h && d[0] === 'ok' ? t31(lang, 'a_date1', { h }) : t31(lang, 'a_date0'));
-  if (o.escrow !== true) Q.push(t31(lang, 'a_escrow'));
-  if (st.build && (st.build[0] === 'nc' || st.build[0] === 'part')) Q.push(t31(lang, 'a_build'));
-  if (!o.price) Q.push(t31(lang, 'a_price'));
-  Q.push(t31(lang, 'a_title'));
-  return '<ol>' + Q.slice(0, 5).map(q => '<li>' + esc(q) + '</li>').join('') + '</ol><p><a class="more" href="/ask-developer/?id=' + encodeURIComponent(o.id) + '" data-k31as>' + esc(t31(lang, 'ask_b')) + '</a>' +
-    (o.s ? ' · <a href="' + (lang === 'en' ? '' : '/' + lang) + '/projects/' + o.s + '/questions/" rel="nofollow">' + esc(ASK34[lang] || ASK34.en) + '</a>' : '') + '</p>';   // n34b: every question from the gaps, with reasons
+const Q = [], st = {}; for (const [key, , s] of o.L6) st[key] = s;
+const n = o.n, h = o.h;
+if (st.permit && st.permit[0] !== 'ok') Q.push(t31(lang, 'a_permit', { n }));
+if (st.company && st.company[0] !== 'ok') Q.push(t31(lang, 'a_co'));
+const d = st.date || [];
+Q.push(d[1] === 'd_past' ? t31(lang, 'a_late', { h }) : d[0] === 'part' ? t31(lang, 'a_moved') : h && d[0] === 'ok' ? t31(lang, 'a_date1', { h }) : t31(lang, 'a_date0'));
+if (o.escrow !== true) Q.push(t31(lang, 'a_escrow'));
+if (st.build && (st.build[0] === 'nc' || st.build[0] === 'part')) Q.push(t31(lang, 'a_build'));
+if (!o.price) Q.push(t31(lang, 'a_price'));
+Q.push(t31(lang, 'a_title'));
+return '<ol>' + Q.slice(0, 5).map(q => '<li>' + esc(q) + '</li>').join('') + TB.kbx_n31d__t.k0 + encodeURIComponent(o.id) + '" data-k31as>' + esc(t31(lang, 'ask_b')) + '</a>' +
+(o.s ? ' · <a href="' + (lang === 'en' ? '' : '/' + lang) + '/projects/' + o.s + '/questions/" rel="nofollow">' + esc(ASK34[lang] || ASK34.en) + '</a>' : '') + '</p>';
 }
-
-// 135: the three closest projects with a pin in the same place (great-circle distance, at most 25 km)
 const R = 6371, rad = d => d * Math.PI / 180;
 const km = (a, b, c, d) => 2 * R * Math.asin(Math.sqrt(Math.sin(rad(c - a) / 2) ** 2 + Math.cos(rad(a)) * Math.cos(rad(c)) * Math.sin(rad(d - b) / 2) ** 2));
 export function closest3(ix, x) {
-  const f = x.fx || {}; if (typeof f.lat !== 'number' || typeof f.lng !== 'number') return [];
-  return ix.P.filter(o => o !== x && o.mk === x.mk && o.fx && typeof o.fx.lat === 'number' && typeof o.fx.lng === 'number' && !(o.fx.lat === f.lat && o.fx.lng === f.lng))
-    .map(o => ({ o, k: km(f.lat, f.lng, o.fx.lat, o.fx.lng) })).filter(r => r.k <= 25).sort((a, b) => a.k - b.k).slice(0, 3);
+const f = x.fx || {}; if (typeof f.lat !== 'number' || typeof f.lng !== 'number') return [];
+return ix.P.filter(o => o !== x && o.mk === x.mk && o.fx && typeof o.fx.lat === 'number' && typeof o.fx.lng === 'number' && !(o.fx.lat === f.lat && o.fx.lng === f.lng))
+.map(o => ({ o, k: km(f.lat, f.lng, o.fx.lat, o.fx.lng) })).filter(r => r.k <= 25).sort((a, b) => a.k - b.k).slice(0, 3);
 }
 export function cl3Html(lang, x, L) {
-  if (!L.length) return '';
-  const list = L.map(r => '<a href="' + pre(lang) + '/projects/' + r.o.s + '/">' + bdi(lang, r.o.n) + '</a> (' + esc(t31(lang, 'km', { k: nf(r.k, lang, r.k < 10 ? 1 : 0) })) + ')').join(SEP[lang] || ', ');
-  return '<p>' + esc(t31(lang, 'cl3', { list: '\u0000' })).replace('\u0000', list) + ' <a href="' + pre(lang) + '/compare/?p=' + [x.s].concat(L.map(r => r.o.s)).join(',') + '" rel="nofollow">' + esc(t31(lang, 'cl3_c')) + '</a></p>';
+if (!L.length) return '';
+const list = L.map(r => '<a href="' + pre(lang) + '/projects/' + r.o.s + '/">' + bdi(lang, r.o.n) + '</a> (' + esc(t31(lang, 'km', { k: nf(r.k, lang, r.k < 10 ? 1 : 0) })) + ')').join(SEP[lang] || ', ');
+return '<p>' + esc(t31(lang, 'cl3', { list: '\u0000' })).replace('\u0000', list) + ' <a href="' + pre(lang) + '/compare/?p=' + [x.s].concat(L.map(r => r.o.s)).join(',') + '" rel="nofollow">' + esc(t31(lang, 'cl3_c')) + '</a></p>';
 }
-
-// 151: how many projects of the same developer are past their handover date on our record, linked to the developer's dated record
 export function devLate(lang, ix, x, overdueOf, devRel) {
-  if (!devRel || !x.dvs || !ix.devs.has(x.dvs)) return '';
-  const ids = ix.devs.get(x.dvs).ids, t = ids.length; if (t < 2) return '';
-  const k = ids.map(i => ix.byId.get(i)).filter(o => o && overdueOf(ix, o)).length, dev = x.dv;
-  const txt = k === 0 ? t31(lang, 'dl_late0', { t: nf(t, lang), dev }) : k === 1 ? t31(lang, 'dl_late1', { t: nf(t, lang), dev }) : t31(lang, 'dl_late', { k: nf(k, lang), t: nf(t, lang), dev });
-  return '<li>' + bdi(lang, txt).replace(/^<bdi>|<\/bdi>$/g, '') + (k ? ' <a href="' + devRel + '#promised">' + esc(t31(lang, 'dl_l', { dev })) + '</a>' : '') + '</li>';
+if (!devRel || !x.dvs || !ix.devs.has(x.dvs)) return '';
+const ids = ix.devs.get(x.dvs).ids, t = ids.length; if (t < 2) return '';
+const k = ids.map(i => ix.byId.get(i)).filter(o => o && overdueOf(ix, o)).length, dev = x.dv;
+const txt = k === 0 ? t31(lang, 'dl_late0', { t: nf(t, lang), dev }) : k === 1 ? t31(lang, 'dl_late1', { t: nf(t, lang), dev }) : t31(lang, 'dl_late', { k: nf(k, lang), t: nf(t, lang), dev });
+return '<li>' + bdi(lang, txt).replace(/^<bdi>|<\/bdi>$/g, '') + (k ? ' <a href="' + devRel + '#promised">' + esc(t31(lang, 'dl_l', { dev })) + '</a>' : '') + '</li>';
 }
-
-// 148: the text that goes with the link in WhatsApp and the share sheet (the project's own share image comes from its og:image)
 export function shareText(lang, o) {
-  const P = [o.h ? t31(lang, 'sh_h', { h: o.h }) : t31(lang, 'sh_h0'), o.pn ? t31(lang, 'sh_p') : t31(lang, 'sh_p0')];
-  if (o.s != null) P.push(t31(lang, 'sh_s', { s: o.s }));
-  return o.n + (o.place ? ' (' + o.place + ')' : '') + ': ' + P.join(SEP[lang] || ', ') + '. ' + t31(lang, 'sh_end');
+const P = [o.h ? t31(lang, 'sh_h', { h: o.h }) : t31(lang, 'sh_h0'), o.pn ? t31(lang, 'sh_p') : t31(lang, 'sh_p0')];
+if (o.s != null) P.push(t31(lang, 'sh_s', { s: o.s }));
+return o.n + (o.place ? ' (' + o.place + ')' : '') + ': ' + P.join(SEP[lang] || ', ') + '. ' + t31(lang, 'sh_end');
 }
-
-// 149: unit types with sizes, starting price, price per m2 and the place median, in one small table (only when both figures exist)
 export function tyTable(lang, x, ppm, med, mkL) {
-  const f = x.fx || {}; if (ppm == null || !f.currency) return '';
-  const cur = String(f.currency).toUpperCase(), sz = nf(f.size_min_m2, lang) + (f.size_max_m2 && f.size_max_m2 !== f.size_min_m2 ? ' - ' + nf(f.size_max_m2, lang) : '') + ' m²';
-  const th = k => '<th scope="col">' + esc(k) + '</th>';
-  return '<div class="tw"><table><thead><tr>' + th(t31(lang, 'ty_types')) + th(t31(lang, 'ty_size')) + th(t31(lang, 'ty_price')) + th(t31(lang, 'ty_ppm')) + (med ? th(t31(lang, 'ty_med', { mk: mkL })) : '') + '</tr></thead><tbody><tr><td lang="en">' + esc((f.unit_types || []).join(', ') || '-') + '</td><td>' + esc(sz) + '</td><td><bdi dir="ltr">' + esc(cur + ' ' + nf(f.price_min, lang)) + '</bdi></td><td><bdi dir="ltr">' + esc(cur + ' ' + nf(Math.round(ppm), lang)) + '</bdi></td>' +
-    (med ? '<td><bdi dir="ltr">' + esc(cur + ' ' + nf(Math.round(med.m), lang)) + '</bdi></td>' : '') + '</tr></tbody></table></div><p class="k-small">' + esc(t31(lang, 'ty_note', { k: med ? nf(med.n, lang) : '0', mk: mkL })) + '</p>';
+const f = x.fx || {}; if (ppm == null || !f.currency) return '';
+const cur = String(f.currency).toUpperCase(), sz = nf(f.size_min_m2, lang) + (f.size_max_m2 && f.size_max_m2 !== f.size_min_m2 ? ' - ' + nf(f.size_max_m2, lang) : '') + ' m²';
+const th = k => '<th scope="col">' + esc(k) + '</th>';
+return '<div class="tw"><table><thead><tr>' + th(t31(lang, 'ty_types')) + th(t31(lang, 'ty_size')) + th(t31(lang, 'ty_price')) + th(t31(lang, 'ty_ppm')) + (med ? th(t31(lang, 'ty_med', { mk: mkL })) : '') + TB.kbx_n31d__t.k1 + esc((f.unit_types || []).join(', ') || '-') + '</td><td>' + esc(sz) + '</td><td><bdi dir="ltr">' + esc(cur + ' ' + nf(f.price_min, lang)) + '</bdi></td><td><bdi dir="ltr">' + esc(cur + ' ' + nf(Math.round(ppm), lang)) + '</bdi></td>' +
+(med ? '<td><bdi dir="ltr">' + esc(cur + ' ' + nf(Math.round(med.m), lang)) + '</bdi></td>' : '') + TB.kbx_n31d__t.k2 + esc(t31(lang, 'ty_note', { k: med ? nf(med.n, lang) : '0', mk: mkL })) + '</p>';
 }
-
-// 145: a small map of the pin without JavaScript: four OpenStreetMap tiles (zoom 15) around the pin, a CSS marker, lazy images
 export function staticMap(lang, lat, lng, name) {
-  if (typeof lat !== 'number' || typeof lng !== 'number' || Math.abs(lat) > 85) return '';
-  const z = 15, n = 2 ** z, fx = (lng + 180) / 360 * n, fy = (1 - Math.log(Math.tan(rad(lat)) + 1 / Math.cos(rad(lat))) / Math.PI) / 2 * n;
-  const tx = Math.floor(fx - 0.5), ty = Math.floor(fy - 0.5), px = (fx - tx) / 2 * 100, py = (fy - ty) / 2 * 100;
-  const img = (x, y) => '<img src="https://tile.openstreetmap.org/' + z + '/' + ((x % n) + n) % n + '/' + y + '.png" width="256" height="256" alt="" loading="lazy">';
-  return '<div class="k31m" role="img" aria-label="' + esc(t31(lang, 'map_alt', { n: name })) + '">' + img(tx, ty) + img(tx + 1, ty) + img(tx, ty + 1) + img(tx + 1, ty + 1) +
-    '<i style="left:' + px.toFixed(1) + '%;top:' + py.toFixed(1) + '%"></i></div><p class="k-small">' + esc(t31(lang, 'map_c')) + '</p>';
+if (typeof lat !== 'number' || typeof lng !== 'number' || Math.abs(lat) > 85) return '';
+const z = 15, n = 2 ** z, fx = (lng + 180) / 360 * n, fy = (1 - Math.log(Math.tan(rad(lat)) + 1 / Math.cos(rad(lat))) / Math.PI) / 2 * n;
+const tx = Math.floor(fx - 0.5), ty = Math.floor(fy - 0.5), px = (fx - tx) / 2 * 100, py = (fy - ty) / 2 * 100;
+const img = (x, y) => '<img src="https://tile.openstreetmap.org/' + z + '/' + ((x % n) + n) % n + '/' + y + '.png" width="256" height="256" alt="" loading="lazy">';
+return TB.kbx_n31d__t.k3 + esc(t31(lang, 'map_alt', { n: name })) + '">' + img(tx, ty) + img(tx + 1, ty) + img(tx, ty + 1) + img(tx + 1, ty + 1) +
+'<i style="left:' + px.toFixed(1) + '%;top:' + py.toFixed(1) + '%"></i></div><p class="k-small">' + esc(t31(lang, 'map_c')) + '</p>';
 }
-
-// 137: "See before and after" in the quick answer when the Sentinel-2 series shows a change beyond normal variation
 export function satBa(lang, meta, id) {
-  const rec = meta && meta.projects && meta.projects[id]; if (!rec || !rec.n || !rec.m0) return '';
-  let I = null; try { I = satIndex(rec); } catch (e) { I = null; }
-  return I && Math.abs(I.now) >= SAT_BAND ? ' <a href="#space" data-n31ba>' + esc(t31(lang, 'ba')) + '</a>' : '';
+const rec = meta && meta.projects && meta.projects[id]; if (!rec || !rec.n || !rec.m0) return '';
+let I = null; try { I = satIndex(rec); } catch (e) { I = null; }
+return I && Math.abs(I.now) >= SAT_BAND ? ' <a href="#space" data-n31ba>' + esc(t31(lang, 'ba')) + '</a>' : '';
 }
-
-// 140: the claims table as two columns, side by side
 export const vsHead = lang => '<tr><th scope="col">' + esc(t31(lang, 'vs_a')) + '</th><th scope="col">' + esc(t31(lang, 'vs_b')) + '</th></tr>';
-
-// 132, 146 and the parts above. Phones: the generic lead line is not shown above the answer (it stays below in the HTML order for
-// readers who scroll; search engines read it), the six checks sit right under the first line of the answer.
 export const CSS31 = '<style id="k31-css">.kp .kupd{font-size:1.1rem;font-weight:700;color:var(--ink)}.k31q{margin:0;font-weight:600}.k31q b{display:block}#answer .klt{margin:10px 0 12px}.k31nr{margin:14px 0 0;padding:8px 12px;font-size:.9rem;border:1px dashed var(--line);border-radius:12px;max-width:80ch}' +
-  '.k31m{position:relative;display:grid;grid-template-columns:1fr 1fr;width:min(100%,384px);overflow:hidden;border-radius:12px;direction:ltr}.k31m img{width:100%;height:auto}.k31m i{position:absolute;width:18px;height:18px;margin:-9px 0 0 -9px;border-radius:50%;background:#B3261E;border:3px solid #fff}@media(max-width:640px){.kp .lead{display:none}}</style>';
-
-// ------------------------------------------------------------------------------------------------ client
-// appended to /k/u27.js: on project pages only, once the page is idle
+'.k31m{position:relative;display:grid;grid-template-columns:1fr 1fr;width:min(100%,384px);overflow:hidden;border-radius:12px;direction:ltr}.k31m img{width:100%;height:auto}.k31m i{position:absolute;width:18px;height:18px;margin:-9px 0 0 -9px;border-radius:50%;background:#B3261E;border:3px solid #fff}@media(max-width:640px){.kp .lead{display:none}}</style>';
 export const LOADER = "(function(){if(!document.getElementById('checks6')||!document.getElementById('sources')||!/\\/projects\\/[a-z0-9-]+\\/$/.test(location.pathname))return;var go=function(){var s=document.createElement('script');s.src='/k/n31d.js?l='+(document.documentElement.lang||'en').slice(0,2)+'&v=" + N31V + "';s.async=true;document.head.appendChild(s);};var idle=function(){if(window.requestIdleCallback)requestIdleCallback(go,{timeout:2500});else setTimeout(go,600);};if(document.readyState==='complete')idle();else addEventListener('load',idle);})();";
-
 const CLIENT = function (M, LG) {
   var d = document, ls = function (k) { try { return localStorage.getItem(k); } catch (e) { return null; } };
   var el = function (t, c, x) { var e = d.createElement(t); if (c) e.className = c; if (x != null) e.textContent = x; return e; };
@@ -265,11 +227,10 @@ const CLIENT = function (M, LG) {
     if (!ad || ad.open) ask(); else ad.addEventListener('toggle', function () { if (ad.open) ask(); });
   }
 };
-
 export async function handle(req, u) {
-  if (u.pathname !== '/k/n31d.js') return null;
-  const l = LANGS.includes(u.searchParams.get('l')) ? u.searchParams.get('l') : 'en';
-  const M = Object.assign({}, C.en, C[l] || {});
-  const body = '(' + CLIENT.toString() + ')(' + JSON.stringify(M) + ',' + JSON.stringify(l) + ');';
-  return new Response(body, { headers: { 'content-type': 'application/javascript; charset=utf-8', 'cache-control': u.searchParams.get('v') === N31V ? 'public, max-age=31536000, immutable' : 'public, max-age=300', 'x-content-type-options': 'nosniff' } });
+if (u.pathname !== '/k/n31d.js') return null;
+const l = LANGS.includes(u.searchParams.get('l')) ? u.searchParams.get('l') : 'en';
+const M = Object.assign({}, C.en, C[l] || {});
+const body = '(' + CLIENT.toString() + ')(' + JSON.stringify(M) + ',' + JSON.stringify(l) + ');';
+return new Response(body, { headers: { 'content-type': 'application/javascript; charset=utf-8', 'cache-control': u.searchParams.get('v') === N31V ? 'public, max-age=31536000, immutable' : 'public, max-age=300', 'x-content-type-options': 'nosniff' } });
 }

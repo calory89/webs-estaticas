@@ -1,12 +1,5 @@
-// kolaboro.com bulk check against the public index (batch 21, n21d).
-//   GET /tools/bulk-check/ (8 languages)   paste or upload up to 100 project names, developer names or links; the browser matches
-//                                          them against our public index and shows, per row: tracked or not, link, handover date on
-//                                          record, moved dates, permit number published, website health, lookalike websites; CSV export
-//   GET /api/x/bulkix                      the compact index the page downloads once (public data only, CC BY 4.0)
-// Nothing typed or uploaded leaves the browser: the page fetches the index and matches locally. No AI. This is not the bulk REGISTER
-// check at /bulk-check/ (kbx_bulk.js: cadastral references, permit and company numbers looked up in official registers); the two link
-// to each other.
-import { TB } from './kbx_strings.js';   // n32w: string tables loaded as static JSON (worker size limit)
+// comments: _notes/kolaboro-worker-comments.txt
+import { TB } from './kbx_strings.js';
 export const PATHS = /^\/api\/x\/bulkix\/?$/;
 export const PAGE = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?tools\/bulk-check\/?$/;
 const ORIGIN = 'https://kolaboro.com';
@@ -15,8 +8,6 @@ const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', r
 const pre = l => l === 'en' ? '' : '/' + l;
 const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const MAX = 100, V = 'n40k11-1';
-
-// ------------------------------------------------------------------------------------------------ index
 const MEMO = {};
 async function file(env, name) {
   const m = MEMO[name]; if (m && Date.now() - m.t < 600000) return m.v;
@@ -29,56 +20,50 @@ async function file(env, name) {
 const pathOf = u => { try { const x = new URL(u); return (x.hostname.replace(/^www\./, '') + x.pathname).toLowerCase().replace(/\/+$/, ''); } catch (e) { return ''; } };
 let NM = null, BUILT = null;
 export async function buildIndex(env) {
-  if (!NM) NM = await import('./kbx_named.js');
-  const ix = await NM.data(env);
-  const [web, look, u37] = await Promise.all([file(env, 'web-health.json').catch(() => null), file(env, 'lookalikes.json').catch(() => null), file(env, 'n37u.json').catch(() => null)]);
-  if (BUILT && BUILT.ix === ix && BUILT.web === web && BUILT.look === look) return BUILT.v;
-  const rgOf = new Map(); for (const r of (u37 && u37.p) || []) { const g = r[8] && r[8][8]; if (g && g[2] === 'reg') rgOf.set(r[0], [String(g[0]).slice(0, 110), g[3] || '']); }   // n40 k11 (R01-41): register entry per project, for the 'is this project late?' box
-  const wd = (web && web.d) || {}, w = {}, l = {};
-  for (const it of (look && look.items) || []) { const m = String(it.url || '').match(/^\/developers\/([a-z0-9-]+)\/$/); if (m) l[m[1]] = (l[m[1]] || 0) + 1; }
-  const health = h => { const d = wd[h]; if (!d) return false; if (!w[h]) w[h] = [String(d.h || '-').slice(-1), d.s || 0, d.ck || (web && web.updated) || '']; return true; };
-  const hostsOf = x => [...new Set([x.url, x.du].filter(u => NM.okHttp(u) && !NM.isListing(u)).map(NM.host).filter(Boolean))];
-  const p = ix.P.map(x => {
-    const hs = hostsOf(x), ho = NM.handoverOf(ix, x), pr = ix.prom[x.id] || [];
-    const dvs = x.dvs && ix.devs.has(x.dvs) ? x.dvs : '';
-    return [x.s, x.n, x.id, x.dv || '', dvs, x.mk || '', x.co || '', [...new Set([x.url, x.du].filter(NM.okHttp).map(pathOf).filter(Boolean))], hs,
-      ho ? String(ho.d) : '', pr.reduce((a, q) => a + (q.mv || 0), 0), x.pn ? 1 : 0, hs.find(health) || '',
-      ((ix.caseBy.get(x.id) || {}).stage || x.st) === 'completed' ? 1 : 0, (NM.overdueOf(ix, x) || {}).m || 0, ho && ho.p && ho.p.ph ? String(ho.p.d0) : '', ...(rgOf.get(x.id) || ['', ''])];
-  });
-  // a website that carries projects of several developers (a marketplace we do not list as a portal) is not any one developer's website
-  const hostDevs = {}; for (const x of ix.P) for (const h of hostsOf(x)) (hostDevs[h] = hostDevs[h] || new Set()).add(x.dvs || x.dv || x.id);
-  const d = [...ix.devs.values()].map(v => {
-    const xs = v.ids.map(i => ix.byId.get(i)).filter(Boolean), hs = [...new Set(xs.flatMap(hostsOf))].filter(h => hostDevs[h].size === 1);
-    const cnt = {}; for (const x of xs) for (const h of hostsOf(x)) cnt[h] = (cnt[h] || 0) + 1;
-    hs.sort((a, b) => cnt[b] - cnt[a]);
-    return [v.s, v.n, xs.length, [...new Set(xs.map(x => x.mk).filter(Boolean))].slice(0, 4).join(', '), hs.slice(0, 12),
-      xs.reduce((a, x) => a + (ix.prom[x.id] || []).reduce((b, q) => b + (q.mv || 0), 0), 0), xs.filter(x => x.pn).length, hs.find(health) || ''];
-  });
-  const v = { version: 'bulk-index-1', updated: NM.iso(ix.updated) || ix.updated, licence: 'CC BY 4.0 (credit: Kolaboro, kolaboro.com)', counts: { projects: p.length, developers: d.length },
-    sources: { projects: ORIGIN + '/api/v1/projects', promises: ORIGIN + '/data/promises.json', website_health: { url: ORIGIN + '/data/web-health.json', updated: (web && web.updated) || null }, lookalikes: { url: ORIGIN + '/data/lookalikes.json', updated: (look && look.updated) || null, window_days: (look && look.window_days) || null } },
-    fields: { p: ['slug', 'name', 'id', 'developer', 'developer_slug', 'market', 'country', 'tracked_pages (host and path)', 'official_hosts', 'handover_on_record', 'times_dates_moved', 'permit_number_published (1 or 0)', 'health_host', 'completed (1 or 0)', 'months past the handover date on record (0: not past)', 'first published handover date when a later one is on record', 'register entry', 'register entry read on'],
-      d: ['slug', 'name', 'projects', 'markets', 'official_hosts', 'times_dates_moved', 'projects_with_permit_number', 'health_host'],
-      w: TB.kbx_bulkix__s.k0, l: 'developer_slug -> lookalike websites recorded' },
-    p, d, w, l };
-  BUILT = { ix, web, look, v }; return v;
+if (!NM) NM = await import('./kbx_named.js');
+const ix = await NM.data(env);
+const [web, look, u37] = await Promise.all([file(env, 'web-health.json').catch(() => null), file(env, 'lookalikes.json').catch(() => null), file(env, 'n37u.json').catch(() => null)]);
+if (BUILT && BUILT.ix === ix && BUILT.web === web && BUILT.look === look) return BUILT.v;
+const rgOf = new Map(); for (const r of (u37 && u37.p) || []) { const g = r[8] && r[8][8]; if (g && g[2] === 'reg') rgOf.set(r[0], [String(g[0]).slice(0, 110), g[3] || '']); }
+const wd = (web && web.d) || {}, w = {}, l = {};
+for (const it of (look && look.items) || []) { const m = String(it.url || '').match(/^\/developers\/([a-z0-9-]+)\/$/); if (m) l[m[1]] = (l[m[1]] || 0) + 1; }
+const health = h => { const d = wd[h]; if (!d) return false; if (!w[h]) w[h] = [String(d.h || '-').slice(-1), d.s || 0, d.ck || (web && web.updated) || '']; return true; };
+const hostsOf = x => [...new Set([x.url, x.du].filter(u => NM.okHttp(u) && !NM.isListing(u)).map(NM.host).filter(Boolean))];
+const p = ix.P.map(x => {
+const hs = hostsOf(x), ho = NM.handoverOf(ix, x), pr = ix.prom[x.id] || [];
+const dvs = x.dvs && ix.devs.has(x.dvs) ? x.dvs : '';
+return [x.s, x.n, x.id, x.dv || '', dvs, x.mk || '', x.co || '', [...new Set([x.url, x.du].filter(NM.okHttp).map(pathOf).filter(Boolean))], hs,
+ho ? String(ho.d) : '', pr.reduce((a, q) => a + (q.mv || 0), 0), x.pn ? 1 : 0, hs.find(health) || '',
+((ix.caseBy.get(x.id) || {}).stage || x.st) === 'completed' ? 1 : 0, (NM.overdueOf(ix, x) || {}).m || 0, ho && ho.p && ho.p.ph ? String(ho.p.d0) : '', ...(rgOf.get(x.id) || ['', ''])];
+});
+const hostDevs = {}; for (const x of ix.P) for (const h of hostsOf(x)) (hostDevs[h] = hostDevs[h] || new Set()).add(x.dvs || x.dv || x.id);
+const d = [...ix.devs.values()].map(v => {
+const xs = v.ids.map(i => ix.byId.get(i)).filter(Boolean), hs = [...new Set(xs.flatMap(hostsOf))].filter(h => hostDevs[h].size === 1);
+const cnt = {}; for (const x of xs) for (const h of hostsOf(x)) cnt[h] = (cnt[h] || 0) + 1;
+hs.sort((a, b) => cnt[b] - cnt[a]);
+return [v.s, v.n, xs.length, [...new Set(xs.map(x => x.mk).filter(Boolean))].slice(0, 4).join(', '), hs.slice(0, 12),
+xs.reduce((a, x) => a + (ix.prom[x.id] || []).reduce((b, q) => b + (q.mv || 0), 0), 0), xs.filter(x => x.pn).length, hs.find(health) || ''];
+});
+const v = { version: 'bulk-index-1', updated: NM.iso(ix.updated) || ix.updated, licence: TB.kbx_bulkix__t.k0, counts: { projects: p.length, developers: d.length },
+sources: { projects: ORIGIN + '/api/v1/projects', promises: ORIGIN + '/data/promises.json', website_health: { url: ORIGIN + '/data/web-health.json', updated: (web && web.updated) || null }, lookalikes: { url: ORIGIN + '/data/lookalikes.json', updated: (look && look.updated) || null, window_days: (look && look.window_days) || null } },
+fields: { p: ['slug', 'name', 'id', 'developer', 'developer_slug', 'market', 'country', 'tracked_pages (host and path)', 'official_hosts', 'handover_on_record', 'times_dates_moved', 'permit_number_published (1 or 0)', 'health_host', 'completed (1 or 0)', TB.kbx_bulkix__t.k1, TB.kbx_bulkix__t.k2, 'register entry', 'register entry read on'],
+d: ['slug', 'name', 'projects', 'markets', 'official_hosts', 'times_dates_moved', 'projects_with_permit_number', 'health_host'],
+w: TB.kbx_bulkix__s.k0, l: TB.kbx_bulkix__t.k3 },
+p, d, w, l };
+BUILT = { ix, web, look, v }; return v;
 }
 export async function handle(req, u, env, ctx) {
-  if (req.method !== 'GET' && req.method !== 'HEAD') return new Response('{"error":"method"}', { status: 405, headers: { 'content-type': 'application/json' } });
-  const ck = new Request(ORIGIN + '/__bulkix/' + V);
-  try { const hit = await caches.default.match(ck); if (hit) return hit; } catch (e) {}
-  let v; try { v = await buildIndex(env); } catch (e) { return new Response('{"error":"unavailable"}', { status: 503, headers: { 'content-type': 'application/json', 'retry-after': '60', 'cache-control': 'no-store' } }); }
-  const r = new Response(JSON.stringify(v), { status: 200, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'public, max-age=900', 'access-control-allow-origin': '*', 'x-content-type-options': 'nosniff' } });
-  if (ctx && ctx.waitUntil) ctx.waitUntil(caches.default.put(ck, r.clone()).catch(() => {}));
-  return r;
+if (req.method !== 'GET' && req.method !== 'HEAD') return new Response('{"error":"method"}', { status: 405, headers: { 'content-type': 'application/json' } });
+const ck = new Request(ORIGIN + '/__bulkix/' + V);
+try { const hit = await caches.default.match(ck); if (hit) return hit; } catch (e) {}
+let v; try { v = await buildIndex(env); } catch (e) { return new Response('{"error":"unavailable"}', { status: 503, headers: { 'content-type': 'application/json', 'retry-after': '60', 'cache-control': 'no-store' } }); }
+const r = new Response(JSON.stringify(v), { status: 200, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'public, max-age=900', 'access-control-allow-origin': '*', 'x-content-type-options': 'nosniff' } });
+if (ctx && ctx.waitUntil) ctx.waitUntil(caches.default.put(ck, r.clone()).catch(() => {}));
+return r;
 }
-
-// ------------------------------------------------------------------------------------------------ page
-const T = TB.kbx_bulkix_T /* n32w (19 Nov 2026): table moved to /data/i18n/kbx_bulkix.json, filled by kbx_strings.js before any kolaboro.com request is handled */;
+const T = TB.kbx_bulkix_T ;
 const t = (lang, k) => (T[lang] && T[lang][k] != null ? T[lang][k] : T.en[k]);
-
-/* CSS: n40 k17, in /data/i18n/k17s.json */
 const LOCK = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10.5" width="14" height="9.5" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
-
 function body(lang) {
   const L = k => esc(t(lang, k)), p = pre(lang);
   return '<div class="bk21" data-clarity-mask="true"><section class="bk-hero"><div class="wrap"><p class="crumb"><a href="' + p + '/">Kolaboro</a> / <a href="/tools/">' + L('tools') + '</a> / ' + L('crumb') + '</p><h1>' + L('h1') + '</h1><p class="lead">' + L('lead') + '</p>' +
@@ -93,8 +78,6 @@ function body(lang) {
     '<p class="bk-src">' + L('src') + ' <a class="k-src" href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener">CC BY 4.0</a> <a class="k-src" href="/api/x/bulkix">' + L('src_a') + '</a> <a class="k-src" href="/data/web-health.json">web-health.json</a> <a class="k-src" href="' + p + '/watch/lookalikes/">lookalikes</a></p>' +
     '<p class="bk-src">' + L('reg') + ' <a href="/bulk-check/">' + L('reg_a') + '</a></p></div></section></div>';
 }
-
-// the page script: index download, parsing, matching, table and CSV, all on the visitor's device
 const JS = `(function(){
 var D=document,T=JSON.parse(D.getElementById('kbk-t').textContent),MAX=${MAX},$=function(i){return D.getElementById(i)};
 var IX=null,LOAD=null,OUT=[],M={};
@@ -192,28 +175,27 @@ var ta=$('bkin');['dragenter','dragover'].forEach(function(n){ta.addEventListene
 ta.addEventListener('keydown',function(e){if((e.ctrlKey||e.metaKey)&&e.key==='Enter'){e.preventDefault();run()}});
 window.KBBulk={parse:parse,matchRow:matchRow,load:load};
 })();`;
-
 async function assemble(shellRes, lang) {
-  const path = '/tools/bulk-check/', url = ORIGIN + pre(lang) + path, title = t(lang, 'title'), desc = t(lang, 'desc');
-  const alts = LANGS.map(l => '<link rel="alternate" hreflang="' + l + '" href="' + ORIGIN + pre(l) + path + '">').join('') + '<link rel="alternate" hreflang="x-default" href="' + ORIGIN + path + '">';
-  const ld = { '@context': 'https://schema.org', '@graph': [
-    { '@type': 'WebApplication', '@id': url + '#app', name: title, description: desc, url, inLanguage: lang, applicationCategory: 'BusinessApplication', operatingSystem: 'Any (web browser)', isAccessibleForFree: true,
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' }, provider: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' } },
-    { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Kolaboro', item: ORIGIN + pre(lang) + '/' }, { '@type': 'ListItem', position: 2, name: t(lang, 'tools'), item: ORIGIN + '/tools/' }, { '@type': 'ListItem', position: 3, name: t(lang, 'crumb'), item: url }] }] };
-  const tags = '<title>' + esc(title) + ' | Kolaboro</title><meta name="description" content="' + esc(desc) + '"><link rel="canonical" href="' + url + '">' + alts +
-    TB.kbx_bulkix__s.k1 + esc(title) + ' | Kolaboro"><meta property="og:description" content="' + esc(desc) + '"><meta property="og:url" content="' + url + '"><meta property="og:image" content="' + ORIGIN + '/k/og/pricing.png"><meta name="twitter:card" content="summary_large_image">' +
-    '<script type="application/ld+json">' + JSON.stringify(ld).replace(/</g, '\\u003c') + '</script>' + TB.kbx_bulkix__s.CSS;
-  const js = Object.assign({}, t(lang, 'j'), { pre: pre(lang), locale: LOC[lang] || 'en-GB' });
-  const tail = '<script type="application/json" id="kbk-t">' + JSON.stringify(js).replace(/</g, '\\u003c') + '</script><script>' + JS + '</script>';
-  const res = new HTMLRewriter()
-    .on('title', { element(e) { e.remove(); } })
-    .on(TB.kbx_bulkix__s.k2, { element(e) { e.remove(); } })
-    .on('script[type="application/ld+json"]', { element(e) { e.remove(); } })
-    .on('head', { element(e) { e.append(tags, { html: true }); } })
-    .on('main', { element(e) { e.setInnerContent(body(lang) + tail, { html: true }); } })
-    .on('details.lsw a[hreflang]', { element(e) { const l = e.getAttribute('hreflang'); if (LANGS.includes(l)) e.setAttribute('href', pre(l) + path); } })
-    .transform(new Response(shellRes.body, { headers: { 'content-type': 'text/html; charset=utf-8' } }));
-  return await res.text();
+const path = '/tools/bulk-check/', url = ORIGIN + pre(lang) + path, title = t(lang, 'title'), desc = t(lang, 'desc');
+const alts = LANGS.map(l => '<link rel="alternate" hreflang="' + l + '" href="' + ORIGIN + pre(l) + path + '">').join('') + TB.kbx_bulkix__t.k4 + ORIGIN + path + '">';
+const ld = { '@context': 'https://schema.org', '@graph': [
+{ '@type': 'WebApplication', '@id': url + '#app', name: title, description: desc, url, inLanguage: lang, applicationCategory: 'BusinessApplication', operatingSystem: 'Any (web browser)', isAccessibleForFree: true,
+offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' }, provider: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' } },
+{ '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Kolaboro', item: ORIGIN + pre(lang) + '/' }, { '@type': 'ListItem', position: 2, name: t(lang, 'tools'), item: ORIGIN + '/tools/' }, { '@type': 'ListItem', position: 3, name: t(lang, 'crumb'), item: url }] }] };
+const tags = '<title>' + esc(title) + TB.kbx_bulkix__t.k5 + esc(desc) + '"><link rel="canonical" href="' + url + '">' + alts +
+TB.kbx_bulkix__s.k1 + esc(title) + TB.kbx_bulkix__t.k6 + esc(desc) + '"><meta property="og:url" content="' + url + '"><meta property="og:image" content="' + ORIGIN + TB.kbx_bulkix__t.k7 +
+'<script type="application/ld+json">' + JSON.stringify(ld).replace(/</g, '\\u003c') + '</script>' + TB.kbx_bulkix__s.CSS;
+const js = Object.assign({}, t(lang, 'j'), { pre: pre(lang), locale: LOC[lang] || 'en-GB' });
+const tail = TB.kbx_bulkix__t.k8 + JSON.stringify(js).replace(/</g, '\\u003c') + '</script><script>' + JS + '</script>';
+const res = new HTMLRewriter()
+.on('title', { element(e) { e.remove(); } })
+.on(TB.kbx_bulkix__s.k2, { element(e) { e.remove(); } })
+.on('script[type="application/ld+json"]', { element(e) { e.remove(); } })
+.on('head', { element(e) { e.append(tags, { html: true }); } })
+.on('main', { element(e) { e.setInnerContent(body(lang) + tail, { html: true }); } })
+.on('details.lsw a[hreflang]', { element(e) { const l = e.getAttribute('hreflang'); if (LANGS.includes(l)) e.setAttribute('href', pre(l) + path); } })
+.transform(new Response(shellRes.body, { headers: { 'content-type': 'text/html; charset=utf-8' } }));
+return await res.text();
 }
 export async function page(req, u, env, ctx, shell) {
   const m = u.pathname.match(/^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?tools\/bulk-check(\/?)$/); if (!m || !shell) return null;

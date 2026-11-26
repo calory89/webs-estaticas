@@ -1,116 +1,74 @@
-// kolaboro.com batch 27 (agent n27u, 13 Nov 2026): easier to use and faster. No paid AI, no DB writes, nothing invented.
-// Project pages in two levels: the quick answer, a six-check traffic light and the date on top; every section below folded
-// (<details>, all content stays in the HTML for search engines, Ctrl+F opens a folded section in current browsers, print opens all).
-// Routes:
-//   GET /k/u27.js?v=<V>                 the client script of named pages, the home and /projects/ (it also carries the scripts that
-//                                       kbx_named.js used to inline in every page: live register lookup, watch box, what next, filters)
-//   GET /api/v1/cost?id=<ID>&p=<price>  the tax and fee rows of the project's country for a price typed by the reader (kbx_facets.js
-//                                       costCalc, the same functions as the table on the page)
-//   GET /api/v1/map[?lang=xx]           every named project for the map: pin where the developer publishes an address, else its market
-//   GET /[<lang>/]map/                  map of all projects with filters (Leaflet, OpenStreetMap tiles, loaded when the map is near)
-//   GET /[<lang>/]updates/              the full text of every line of the "Shipping daily" bar (the bar shows a short form)
-// Sumba projects never appear (kbx_named.js data() leaves them out), nor Eco Beach City or Equinox.
+// comments: _notes/kolaboro-worker-comments.txt
 import { t30 } from './kbx_n30a.js';
-import { TB } from './kbx_strings.js';   // n30a (batch 30): contract reader link in the checklist
+import { TB } from './kbx_strings.js';
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const COI_RX = /eco\s*beach\s*city|\bequinox\b/i;
-export const U27V = 'u27o';   // u27o: singular '1 project' in suggestions and map count (n40 k9); u27l: n31t compare checkbox 24 px, href on the compare link; u27k: loads /k/n31d.js on project pages (n31d); u27j: n30a script a5; u27i: n30a script a4; u27h: compare up to 4, loads /k/n30a.js (n30a)
+export const U27V = 'u27o';
 const pre = l => l === 'en' ? '' : '/' + l;
 const esc = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const bdi = (lang, s) => lang === 'ar' ? '<bdi>' + esc(s) + '</bdi>' : esc(s);
-
-// ------------------------------------------------------------------------------------------------ words (server side)
-const S = TB.kbx_u27_S /* n40 k5: in /data/i18n/kbx_u27.json */;
+const S = TB.kbx_u27_S ;
 export const t27 = (lang, k, v) => { let s = (S[lang] && S[lang][k] != null) ? S[lang][k] : S.en[k]; if (v) for (const [a, b] of Object.entries(v)) s = s.split('{' + a + '}').join(b); return s; };
-
-// ------------------------------------------------------------------------------------------------ project page parts
-// a folded section: the heading is the summary, everything else is inside (in the HTML, closed). "lead" (optional) is one short
-// line shown under the heading while folded (for a dated, sourced lead sentence).
-export const secZ = (id, h, inner, lead) => '<section class="ks kz" id="' + id + '"><details class="kz-d"><summary class="kz-s"><h2>' + h + '</h2>' + (lead ? '<p class="kz-l">' + lead + '</p>' : '') + '</summary>' + inner + '</details></section>';
-
-// the six-check traffic light, from fields we already hold: transparency ledger items (kbx_tr.js), the case's satellite line and
-// stage, overdue months. Each check links to its section (folded sections open on the link). Colours carry words too.
-// n35b (batch 35, item 11): status card v2. Same six checks, now with a state icon drawn in CSS (tick, half, cross, question mark: shape and
-// words, not colour alone), the date of the last check and the number of sources in the card head, and the one next question to ask,
-// picked by rule from the first check that is not green (the same checklist sentences as below), linked to the full question list.
+export const secZ = (id, h, inner, lead) => '<section class="ks kz" id="' + id + TB.kbx_u27__t.k0 + h + '</h2>' + (lead ? '<p class="kz-l">' + lead + '</p>' : '') + '</summary>' + inner + '</details></section>';
 const LT2 = { en: ['Last checked {d}', '{n} sources', 'Next question to ask', 'All questions', '{n} source'], es: ['Última comprobación: {d}', '{n} fuentes', 'Siguiente pregunta', 'Todas las preguntas', '{n} fuente'],
-  fr: ['Dernière vérification : {d}', '{n} sources', 'Prochaine question à poser', 'Toutes les questions', '{n} source'], de: ['Zuletzt geprüft: {d}', '{n} Quellen', 'Nächste Frage', 'Alle Fragen', '{n} Quelle'],
-  nl: ['Laatst gecontroleerd: {d}', '{n} bronnen', 'Volgende vraag om te stellen', 'Alle vragen', '{n} bron'], ru: ['Последняя проверка: {d}', 'Источников: {n}', 'Следующий вопрос', 'Все вопросы'],
-  zh: ['最近核查：{d}', '{n} 个来源', '下一个要问的问题', '全部问题'], ar: ['آخر فحص: {d}', 'عدد المصادر: {n}', 'السؤال التالي', 'كل الأسئلة'] };
+fr: ['Dernière vérification : {d}', '{n} sources', 'Prochaine question à poser', 'Toutes les questions', '{n} source'], de: ['Zuletzt geprüft: {d}', '{n} Quellen', 'Nächste Frage', 'Alle Fragen', '{n} Quelle'],
+nl: ['Laatst gecontroleerd: {d}', '{n} bronnen', 'Volgende vraag om te stellen', 'Alle vragen', '{n} bron'], ru: ['Последняя проверка: {d}', 'Источников: {n}', 'Следующий вопрос', 'Все вопросы'],
+zh: ['最近核查：{d}', '{n} 个来源', '下一个要问的问题', '全部问题'], ar: ['آخر فحص: {d}', 'عدد المصادر: {n}', 'السؤال التالي', 'كل الأسئلة'] };
 function nextQ(lang, P, o) {
-  const st = k => (P.find(p => p[0] === k) || [0, 0, ['nc']])[2][0], co = o.co || '', r0 = (o.regs || [])[0];
-  if (st('permit') !== 'ok') return r0 ? esc(t27(lang, 'ck2')) + ' ' + esc(t27(lang, 'ck2r', { r: '\u0000' })).replace('\u0000', '<bdi>' + esc(r0.n) + '</bdi>') : esc(t27(lang, 'ck2'));
-  if (st('company') !== 'ok') return esc(t27(lang, 'ck1', { co: '\u0000' })).replace('\u0000', bdi(lang, co));
-  if (st('date') === 'no' || st('date') === 'part') return esc(t27(lang, 'ck7'));
-  if (st('build') !== 'ok') return esc(t27(lang, 'ck6'));
-  return esc(t27(lang, 'ck4'));
+const st = k => (P.find(p => p[0] === k) || [0, 0, ['nc']])[2][0], co = o.co || '', r0 = (o.regs || [])[0];
+if (st('permit') !== 'ok') return r0 ? esc(t27(lang, 'ck2')) + ' ' + esc(t27(lang, 'ck2r', { r: '\u0000' })).replace('\u0000', '<bdi>' + esc(r0.n) + '</bdi>') : esc(t27(lang, 'ck2'));
+if (st('company') !== 'ok') return esc(t27(lang, 'ck1', { co: '\u0000' })).replace('\u0000', bdi(lang, co));
+if (st('date') === 'no' || st('date') === 'part') return esc(t27(lang, 'ck7'));
+if (st('build') !== 'ok') return esc(t27(lang, 'ck6'));
+return esc(t27(lang, 'ck4'));
 }
 export function lightHtml(lang, o) {
-  const P = light6(o), L = LT2[lang] || LT2.en, f = (s, v) => s.replace(/\{(\w+)\}/g, (m, k) => v[k] != null ? v[k] : m);
-  const meta = o.meta ? '<p class="klt-m">' + (o.meta.d ? '<span>' + esc(f(L[0], { d: o.meta.d })) + '</span>' : '') + (o.meta.n ? '<a href="#sources">' + esc(f(String(o.meta.n).replace(/\D/g, '') === '1' && L[4] ? L[4] : L[1], { n: o.meta.n })) + '</a>' : '') + '</p>' : '';
-  const nq = o.meta ? '<p class="klt-q"><b>' + esc(L[2]) + '</b> <span>' + nextQ(lang, P, o.meta) + '</span>' + (o.meta.q ? ' <a href="' + esc(o.meta.q) + '">' + esc(L[3]) + '</a>' : '') + '</p>' : '';
-  return '<div class="klt' + (o.meta ? ' klt2' : '') + '" id="checks6" data-u27="' + esc(JSON.stringify(o.data || {})) + '"><div class="klt-t"><p class="klt-h">' + esc(t27(lang, 'lt_h')) + '</p>' + meta + '</div><ul class="klt-l">' +
-    P.map(([k, sid, s]) => '<li class="klt-' + s[0] + '"><a href="#' + sid + '"><i aria-hidden="true"></i><b>' + esc(t27(lang, 'lt_' + k)) + '</b><span>' + esc(t27(lang, s[1], s[2])) + '</span></a></li>').join('') +
-    '</ul>' + nq + '<details class="klt-k"><summary>' + esc(t27(lang, 'lt_how')) + '</summary>' + keyHtml(lang) + '</details></div>';
+const P = light6(o), L = LT2[lang] || LT2.en, f = (s, v) => s.replace(/\{(\w+)\}/g, (m, k) => v[k] != null ? v[k] : m);
+const meta = o.meta ? '<p class="klt-m">' + (o.meta.d ? '<span>' + esc(f(L[0], { d: o.meta.d })) + '</span>' : '') + (o.meta.n ? '<a href="#sources">' + esc(f(String(o.meta.n).replace(/\D/g, '') === '1' && L[4] ? L[4] : L[1], { n: o.meta.n })) + '</a>' : '') + '</p>' : '';
+const nq = o.meta ? '<p class="klt-q"><b>' + esc(L[2]) + '</b> <span>' + nextQ(lang, P, o.meta) + '</span>' + (o.meta.q ? ' <a href="' + esc(o.meta.q) + '">' + esc(L[3]) + '</a>' : '') + '</p>' : '';
+return '<div class="klt' + (o.meta ? ' klt2' : '') + '" id="checks6" data-u27="' + esc(JSON.stringify(o.data || {})) + TB.kbx_u27__t.k1 + esc(t27(lang, 'lt_h')) + '</p>' + meta + '</div><ul class="klt-l">' +
+P.map(([k, sid, s]) => '<li class="klt-' + s[0] + '"><a href="#' + sid + '"><i aria-hidden="true"></i><b>' + esc(t27(lang, 'lt_' + k)) + '</b><span>' + esc(t27(lang, s[1], s[2])) + '</span></a></li>').join('') +
+'</ul>' + nq + '<details class="klt-k"><summary>' + esc(t27(lang, 'lt_how')) + '</summary>' + keyHtml(lang) + '</details></div>';
 }
-// n30a (batch 30): the six states on their own, also used by the compare page (radar and one row per check)
 export function light6(o) {
-  const it = {}; for (const i of ((o.tp && o.tp.items) || [])) it[i.k] = i.st;
-  const c = o.c || {}, ck = c.checks || {}, has = id => o.ids.includes(id);
-  const P = [];
-  // permit
-  P.push(['permit', has('permits') ? 'permits' : 'legit', it.permitreg === 'yes' ? ['ok', 'p_reg'] : it.permit === 'yes' || o.pn ? ['ok', 'p_pub'] : ['no', 'p_no']]);
-  // company: official register, else legal name published
-  P.push(['company', has('developer') ? 'developer' : 'legit', it.register === 'yes' ? ['ok', 'c_reg'] : it.legal === 'yes' ? ['part', 'c_legal'] : it.legal === 'no' ? ['no', 'c_no'] : ['nc', 'c_nc']]);
-  // handover date: the record first (kept, moved, past), then published or not
-  const rec = it.record, past = +c.overdue || 0;
-  let d;
-  if (past > 0) d = ['no', 'd_past', { m: String(past) }];
-  else if (rec === 'yes' && o.mv && !/completed/.test(String(c.stage || ''))) d = ['part', 'd_moved'];   // n40 k11: a later date is on record, so the date was not kept as first published
-  else if (rec === 'yes') d = ['ok', /completed/.test(String(c.stage || '')) ? 'd_done' : 'd_kept'];
-  else if (rec === 'part') d = ['part', /completed/.test(String(c.stage || '')) ? 'd_late' : 'd_moved'];
-  else if (it.date === 'yes' || o.ho) d = ['ok', 'd_pub'];
-  else d = ['no', 'd_no'];
-  P.push(['date', 'delivery', d]);
-  // construction: completed, satellite line, developer progress note
-  const sat = c.sat && c.sat.status;
-  P.push(['build', has('space') ? 'space' : 'delivery', /completed/.test(String(c.stage || '')) ? ['ok', 'b_done'] : sat === 'visible change' ? ['ok', 'b_sat'] : sat ? ['part', 'b_still'] : ck.progress != null || (o.ev && o.ev.progress) ? ['part', 'b_dev'] : ['nc', 'b_nc']]);
-  // website health (only sites we monitor)
-  const w = it.web; P.push(['web', has('web') ? 'web' : 'legit', w === 'yes' ? ['ok', 'w_yes'] : w === 'part' ? ['part', 'w_part'] : w === 'no' ? ['no', 'w_no'] : ['nc', 'w_nc']]);
-  // official lists (public "no match" only; anything else is "not screened")
-  const n = it.notices; P.push(['lists', 'legit', n === 'yes' ? ['ok', 'l_yes'] : n === 'part' ? ['ok', 'l_part'] : ['nc', 'l_nc']]);
-  return P;
+const it = {}; for (const i of ((o.tp && o.tp.items) || [])) it[i.k] = i.st;
+const c = o.c || {}, ck = c.checks || {}, has = id => o.ids.includes(id);
+const P = [];
+P.push(['permit', has('permits') ? 'permits' : 'legit', it.permitreg === 'yes' ? ['ok', 'p_reg'] : it.permit === 'yes' || o.pn ? ['ok', 'p_pub'] : ['no', 'p_no']]);
+P.push(['company', has('developer') ? 'developer' : 'legit', it.register === 'yes' ? ['ok', 'c_reg'] : it.legal === 'yes' ? ['part', 'c_legal'] : it.legal === 'no' ? ['no', 'c_no'] : ['nc', 'c_nc']]);
+const rec = it.record, past = +c.overdue || 0;
+let d;
+if (past > 0) d = ['no', 'd_past', { m: String(past) }];
+else if (rec === 'yes' && o.mv && !/completed/.test(String(c.stage || ''))) d = ['part', 'd_moved'];
+else if (rec === 'yes') d = ['ok', /completed/.test(String(c.stage || '')) ? 'd_done' : 'd_kept'];
+else if (rec === 'part') d = ['part', /completed/.test(String(c.stage || '')) ? 'd_late' : 'd_moved'];
+else if (it.date === 'yes' || o.ho) d = ['ok', 'd_pub'];
+else d = ['no', 'd_no'];
+P.push(['date', 'delivery', d]);
+const sat = c.sat && c.sat.status;
+P.push(['build', has('space') ? 'space' : 'delivery', /completed/.test(String(c.stage || '')) ? ['ok', 'b_done'] : sat === 'visible change' ? ['ok', 'b_sat'] : sat ? ['part', 'b_still'] : ck.progress != null || (o.ev && o.ev.progress) ? ['part', 'b_dev'] : ['nc', 'b_nc']]);
+const w = it.web; P.push(['web', has('web') ? 'web' : 'legit', w === 'yes' ? ['ok', 'w_yes'] : w === 'part' ? ['part', 'w_part'] : w === 'no' ? ['no', 'w_no'] : ['nc', 'w_nc']]);
+const n = it.notices; P.push(['lists', 'legit', n === 'yes' ? ['ok', 'l_yes'] : n === 'part' ? ['ok', 'l_part'] : ['nc', 'l_nc']]);
+return P;
 }
-
-// n28b: the colour key as four rows, each with its own dot, then "facts, not a verdict" (split from the one sentence each language has)
 function keyHtml(lang) {
-  const P = String(t27(lang, 'lt_key')).split(/(?<=[.。])\s*/).map(x => x.trim()).filter(Boolean);
-  if (P.length < 5) return '<p>' + esc(t27(lang, 'lt_key')) + '</p>';
-  return '<ul class="klt-kl">' + ['ok', 'part', 'no', 'nc'].map((k, i) => '<li class="klt-' + k + '"><i aria-hidden="true"></i>' + esc(P[i]) + '</li>').join('') + '</ul><p>' + esc(P.slice(4).join(' ')) + '</p>';
+const P = String(t27(lang, 'lt_key')).split(/(?<=[.。])\s*/).map(x => x.trim()).filter(Boolean);
+if (P.length < 5) return '<p>' + esc(t27(lang, 'lt_key')) + '</p>';
+return '<ul class="klt-kl">' + ['ok', 'part', 'no', 'nc'].map((k, i) => '<li class="klt-' + k + '"><i aria-hidden="true"></i>' + esc(P[i]) + '</li>').join('') + '</ul><p>' + esc(P.slice(4).join(' ')) + '</p>';
 }
-
-// the "before you sign" checklist for the project's country: steps that apply everywhere, plus the official registers of that
-// market as published on /registers/ (kbx_facets.js regFor). Ticks are kept in this browser only (localStorage, try/catch).
-// n35b (batch 35, item 15): link to the per-project buyer journey under the checklist
 const JL35 = { en: 'Buyer journey for this project, from reservation to handover', es: 'Ruta del comprador para este proyecto, de la reserva a la entrega', fr: 'Parcours d\'achat pour ce projet, de la réservation à la livraison', de: 'Käuferweg für dieses Projekt, von der Reservierung bis zur Übergabe', nl: 'Kopersroute voor dit project, van reservering tot oplevering', ru: 'Путь покупателя для этого проекта: от брони до передачи ключей', zh: '此项目的购房流程：从预订到交付', ar: 'رحلة المشتري لهذا المشروع، من الحجز إلى التسليم' };
 export function checklistHtml(lang, o) {
-  const co = o.co || '', L = [];
-  L.push(esc(t27(lang, 'ck1', { co: '\u0000' })).replace('\u0000', bdi(lang, co)));
-  if ((o.regs || []).length) for (const r of o.regs) L.push(esc(t27(lang, 'ck2r', { r: '\u0000' })).replace('\u0000', '<a href="' + esc(r.u) + '" rel="noopener nofollow" target="_blank"><bdi>' + esc(r.n) + '</bdi></a>'));
-  else L.push(esc(t27(lang, 'ck2')) + ' <a href="/registers/">kolaboro.com/registers</a>');
-  for (const k of ['ck3', 'ck4', 'ck5', 'ck6', 'ck7']) L.push(esc(t27(lang, k)) + (k === 'ck5' ? ' <a href="' + pre(lang) + '/tools/contract-reader/">' + esc(t30(lang, 'cr_h1')) + '</a>' : ''));   // n30a: the contract reader
-  L.push(esc(t27(lang, 'ck8', { co: '\u0000' })).replace('\u0000', bdi(lang, co)) + (o.cost ? ' <a href="#buycost">' + esc(o.costLbl || '') + '</a>' : ''));
-  return '<div class="kck" data-u27k="' + esc(o.id) + '"><h3>' + esc(t27(lang, 'ck_h', { co })) + '</h3><p class="ki">' + esc(t27(lang, 'ck_i')) + ' <span class="kck-n" data-n="' + esc(t27(lang, 'ck_n')) + '" aria-live="polite"></span></p><ol class="kck-l">' +
-    L.map((h, i) => '<li><label><input type="checkbox" value="' + i + '"><span>' + h + '</span></label></li>').join('') + '</ol><button type="button" class="kck-r" hidden>' + esc(t27(lang, 'ck_r')) + '</button>' + (o.s ? '<p class="kck-j"><a href="' + pre(lang) + '/projects/' + o.s + '/journey/">' + esc(JL35[lang] || JL35.en) + '</a></p>' : '') + '</div>';
+const co = o.co || '', L = [];
+L.push(esc(t27(lang, 'ck1', { co: '\u0000' })).replace('\u0000', bdi(lang, co)));
+if ((o.regs || []).length) for (const r of o.regs) L.push(esc(t27(lang, 'ck2r', { r: '\u0000' })).replace('\u0000', '<a href="' + esc(r.u) + TB.kbx_u27__t.k2 + esc(r.n) + '</bdi></a>'));
+else L.push(esc(t27(lang, 'ck2')) + TB.kbx_u27__t.k3);
+for (const k of ['ck3', 'ck4', 'ck5', 'ck6', 'ck7']) L.push(esc(t27(lang, k)) + (k === 'ck5' ? ' <a href="' + pre(lang) + '/tools/contract-reader/">' + esc(t30(lang, 'cr_h1')) + '</a>' : ''));
+L.push(esc(t27(lang, 'ck8', { co: '\u0000' })).replace('\u0000', bdi(lang, co)) + (o.cost ? ' <a href="#buycost">' + esc(o.costLbl || '') + '</a>' : ''));
+return '<div class="kck" data-u27k="' + esc(o.id) + '"><h3>' + esc(t27(lang, 'ck_h', { co })) + '</h3><p class="ki">' + esc(t27(lang, 'ck_i')) + ' <span class="kck-n" data-n="' + esc(t27(lang, 'ck_n')) + TB.kbx_u27__t.k4 +
+L.map((h, i) => TB.kbx_u27__t.k5 + i + '"><span>' + h + '</span></label></li>').join('') + TB.kbx_u27__t.k6 + esc(t27(lang, 'ck_r')) + '</button>' + (o.s ? '<p class="kck-j"><a href="' + pre(lang) + '/projects/' + o.s + '/journey/">' + esc(JL35[lang] || JL35.en) + '</a></p>' : '') + '</div>';
 }
-
-// CSS for the two levels, the light and the checklist (inline: the light is above the fold); print opens everything
-export const Z_CSS = '';   // n40 k10: moved to /k/kp.css (one cached file for every named page)
-
-// ------------------------------------------------------------------------------------------------ the client script
-// Served as one cached file. It is a self-contained function (no closure variables): fold/open/print, the currency selector, the cost and
-// yield calculator, the checklist ticks, compare checkboxes on /projects/, suggestions in the home search box and the map page.
+export const Z_CSS = '';
 function client() {
   var LG = (document.documentElement.lang || 'en').slice(0, 2), PRE = LG === 'en' ? '' : '/' + LG;
   function ls(k, v) { try { if (v === undefined) return localStorage.getItem(k); if (v === null) localStorage.removeItem(k); else localStorage.setItem(k, v); } catch (e) { return null; } }
@@ -388,108 +346,99 @@ function client() {
   }
 }
 export const CLIENT_JS = '(' + client.toString() + ')();';
-
-// ------------------------------------------------------------------------------------------------ routes
 export const PATHS = /^\/k\/u27\.js$|^\/api\/v1\/(?:cost|map)$|^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:map|updates)\/?$/;
 const jr = (o, s, cc) => new Response(JSON.stringify(o), { status: s || 200, headers: { 'content-type': 'application/json; charset=utf-8', 'access-control-allow-origin': '*', 'cache-control': cc || 'public, max-age=600' } });
-const MAP3_V = 'b0bfd297a5';   // n40 k13: register layer (was 039ffae532)
-// n35b note:   // n35b (batch 35, item 12): /map/ client v3 is a static file, /k/n35b/map.js (sha1 of the file, 10 chars)
+const MAP3_V = 'b0bfd297a5';
 const MAPV = { js: '/satellite/plot/vendor/leaflet-1.9.4.js?v=dc452946ac', css: '/satellite/plot/vendor/leaflet-1.9.4.css?v=b8273795a6' };
-
 async function mapData(env, lang) {
-  const N = await import('./kbx_named.js'), T = await import('./kbx_tr.js'), H = await import('./kbx_hdate.js');
-  const ix = await N.data(env); let tr = null; try { tr = await T.trData(env); } catch (e) {}
-  let ot = null; try { const r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/on-time.json')); if (r.ok) ot = await r.json(); } catch (e) {}   // n30c (item 15): delay heat layer
-  const ym = s => { const m = /^(\d{4})-(\d{2})/.exec(s || ''); return m ? +m[1] * 12 + (+m[2] - 1) : null; }, nowM = ot ? ym(ot.as_of_month) : null; let nLate = 0;
-  const lateOf = id => { const r = ot && ot.projects && ot.projects[id]; if (!r || !r.first || nowM == null || /^done|completed/.test(r.s || '')) return null; const d = nowM - ym(r.first); return d > 0 ? d : null; };
-  let mp = null; try { const r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/similar.json')); if (r.ok) mp = ((await r.json()) || {}).market_points; } catch (e) {}
-  const mk = {}; for (const [k, v] of Object.entries((mp && mp.markets) || {})) if (v && isFinite(v.lat) && isFinite(v.lng)) mk[k] = [Math.round(v.lat * 100) / 100, Math.round(v.lng * 100) / 100];
-  let G = null; try { const R = await import('./kbx_n37u.js'); G = await R.regMap(env); } catch (e) { G = null; }   // r10u (batch 37): key facts read in an official register
-  const P = [], co = new Map(), yrs = new Set();
-  for (const x of ix.P) {
-    if (COI_RX.test(String(x.n || '') + ' ' + String(x.dv || ''))) continue;
-    const fx = x.fx || {}, c = ix.caseBy.get(x.id) || {}, h = N.handoverOf(ix, x), m = h && /(20\d\d)/.exec(String(h.d)), y = m ? +m[1] : null, row = tr && tr.rows.get(x.id);
-    const pin = typeof fx.lat === 'number' && typeof fx.lng === 'number';
-    if (y) yrs.add(y);
-    co.set(x.co, (co.get(x.co) || 0) + 1);
-    const lt = lateOf(x.id); if (lt) nLate++;
-    P.push([x.s, x.n, x.mk, x.co, pin ? Math.round(fx.lat * 1e4) / 1e4 : null, pin ? Math.round(fx.lng * 1e4) / 1e4 : null, y, x.pn || (c.checks || {}).permit === 2 ? 1 : 0, row ? row.score : null, lt, G ? G.get(x.s) || 0 : null]);
-  }
-  const coL = [...co.entries()].sort((a, b) => b[1] - a[1]).map(([k, n]) => [k, H.placeName(k, lang), n]);
-  return { updated: String(ix.updated || '').slice(0, 10), keys: ['slug', 'name', 'market', 'country', 'lat', 'lng', 'handover_year', 'permit_published', 'transparency_score', 'months_past_first_handover', 'register_facts'], mk,
-    delay: { n: nLate, as_of: ot ? ot.as_of_month : null, source: '/data/on-time.json', rule: TB.kbx_u27__s.k0 }, co: coL, yr: [...yrs].sort(), p: P,
-    note: TB.kbx_u27__s.k1 };
+const N = await import('./kbx_named.js'), T = await import('./kbx_tr.js'), H = await import('./kbx_hdate.js');
+const ix = await N.data(env); let tr = null; try { tr = await T.trData(env); } catch (e) {}
+let ot = null; try { const r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/on-time.json')); if (r.ok) ot = await r.json(); } catch (e) {}
+const ym = s => { const m = /^(\d{4})-(\d{2})/.exec(s || ''); return m ? +m[1] * 12 + (+m[2] - 1) : null; }, nowM = ot ? ym(ot.as_of_month) : null; let nLate = 0;
+const lateOf = id => { const r = ot && ot.projects && ot.projects[id]; if (!r || !r.first || nowM == null || /^done|completed/.test(r.s || '')) return null; const d = nowM - ym(r.first); return d > 0 ? d : null; };
+let mp = null; try { const r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/similar.json')); if (r.ok) mp = ((await r.json()) || {}).market_points; } catch (e) {}
+const mk = {}; for (const [k, v] of Object.entries((mp && mp.markets) || {})) if (v && isFinite(v.lat) && isFinite(v.lng)) mk[k] = [Math.round(v.lat * 100) / 100, Math.round(v.lng * 100) / 100];
+let G = null; try { const R = await import('./kbx_n37u.js'); G = await R.regMap(env); } catch (e) { G = null; }
+const P = [], co = new Map(), yrs = new Set();
+for (const x of ix.P) {
+if (COI_RX.test(String(x.n || '') + ' ' + String(x.dv || ''))) continue;
+const fx = x.fx || {}, c = ix.caseBy.get(x.id) || {}, h = N.handoverOf(ix, x), m = h && /(20\d\d)/.exec(String(h.d)), y = m ? +m[1] : null, row = tr && tr.rows.get(x.id);
+const pin = typeof fx.lat === 'number' && typeof fx.lng === 'number';
+if (y) yrs.add(y);
+co.set(x.co, (co.get(x.co) || 0) + 1);
+const lt = lateOf(x.id); if (lt) nLate++;
+P.push([x.s, x.n, x.mk, x.co, pin ? Math.round(fx.lat * 1e4) / 1e4 : null, pin ? Math.round(fx.lng * 1e4) / 1e4 : null, y, x.pn || (c.checks || {}).permit === 2 ? 1 : 0, row ? row.score : null, lt, G ? G.get(x.s) || 0 : null]);
 }
-
+const coL = [...co.entries()].sort((a, b) => b[1] - a[1]).map(([k, n]) => [k, H.placeName(k, lang), n]);
+return { updated: String(ix.updated || '').slice(0, 10), keys: ['slug', 'name', 'market', 'country', 'lat', 'lng', 'handover_year', 'permit_published', 'transparency_score', 'months_past_first_handover', 'register_facts'], mk,
+delay: { n: nLate, as_of: ot ? ot.as_of_month : null, source: '/data/on-time.json', rule: TB.kbx_u27__s.k0 }, co: coL, yr: [...yrs].sort(), p: P,
+note: TB.kbx_u27__s.k1 };
+}
 async function mapPage(req, u, env, ctx, shell, lang) {
-  const N = await import('./kbx_named.js'), H = await import('./kbx_hdate.js'), N30 = await import('./kbx_n30c.js');
-  const P = pre(lang), canon = ORIGIN + P + '/map/';
-  // n29t (item 47): the list under the map is already filled in the HTML (markets with their project counts, linked to each market file),
-  // so the page says what it holds without script; the map script replaces it with the projects in view
-  let pre47 = ''; try { const ix = await N.data(env), mc = new Map(); for (const x of ix.P) { if (COI_RX.test(String(x.n || '') + ' ' + String(x.dv || ''))) continue; mc.set(x.mk, (mc.get(x.mk) || 0) + 1); }
-    pre47 = [...mc.entries()].sort((a, b) => b[1] - a[1] || String(a[0]).localeCompare(String(b[0]))).slice(0, 60).map(([m, n]) => '<li><a href="/m/' + encodeURIComponent(String(m).toLowerCase().replace(/\s+/g, '-')) + '/">' + esc(H.mkName(m, lang)) + '</a><small>' + n.toLocaleString(lang) + '</small></li>').join(''); } catch (e) { pre47 = ''; }
-  const sel = (n, lbl, opts) => '<label for="kmp-' + n + '"><span>' + esc(t27(lang, lbl)) + '</span><select id="kmp-' + n + '" name="' + n + '"><option value="">' + esc(t27(lang, 'mp_all')) + '</option>' + opts + '</select></label>';
-  let RT = null; try { const R = await import('./kbx_n37u.js'); if (await R.regMap(env)) RT = (k, v) => R.rgT(lang, k, v); } catch (e) { RT = null; }   // r10u: register filter
-  const rgSel = RT ? '<label for="kmp-rg"><span>' + esc(RT('rg_f')) + '</span><select id="kmp-rg" name="rg"><option value="">' + esc(t27(lang, 'mp_all')) + '</option><option value="1">' + esc(RT('rg_1')) + '</option><option value="3">' + esc(RT('rg_3')) + '</option></select></label>' : '';
-  const form = '<form class="kmp-f" role="search">' + sel('co', 'mp_co', '') + sel('yr', 'mp_yr', '<option value="0">' + esc(t27(lang, 'mp_yr0')) + '</option>') +
-    sel('pm', 'mp_pm', '<option value="1">' + esc(t27(lang, 'mp_pm1')) + '</option><option value="0">' + esc(t27(lang, 'mp_pm0')) + '</option>') + sel('sc', 'mp_sc', [25, 50, 75].map(n => '<option value="' + n + '">' + esc(t27(lang, 'mp_scn', { n })) + '</option>').join('')) +
-    '<label for="kmp-dl"><span>' + esc(N30.t30(lang, 'mh_dl')) + '</span><select id="kmp-dl" name="dl"><option value="">' + esc(N30.t30(lang, 'mh_dl0')) + '</option><option value="1">' + esc(N30.t30(lang, 'mh_dl1')) + '</option><option value="6">' + esc(N30.t30(lang, 'mh_dl6')) + '</option><option value="12">' + esc(N30.t30(lang, 'mh_dl12')) + '</option></select></label>' + rgSel +
-    '<label class="kmp-hm" for="kmp-hm"><input type="checkbox" id="kmp-hm" name="hm" value="1"> <span>' + esc(N30.t30(lang, 'mh_hm')) + '</span></label></form>';   // n30c (item 15)
-  const body = '<section class="phero kp"><div class="wrap"><p class="crumb"><a href="' + P + '/">Kolaboro</a> / <a href="' + P + '/projects/">' + esc(N.tr(lang, 'h1_i')) + '</a></p><h1>' + esc(t27(lang, 'mp_h1')) + '</h1><p class="lead">' + esc(t27(lang, 'mp_lead')) + '</p></div></section>' +
-    '<div class="wrap kwrap kmp" data-u27x="' + esc(JSON.stringify(Object.assign({ s: Object.assign({}, N30.mapStrings(lang), RT ? { rg_b: RT('rg_b') } : {}) }, MAPV))) + '">' + form +   // n30c (item 15): clusters and delay heat (kbx_n30c.js), u27.js leaves this map alone
-    TB.kbx_u27__s.k2 + esc(N30.t30(lang, 'mh_k1')) + '</span> <span class="kmp-k"><i style="background:#E8772E"></i>' + esc(N30.t30(lang, 'mh_k6')) + '</span> <span class="kmp-k"><i style="background:#C2341B"></i>' + esc(N30.t30(lang, 'mh_k12')) + '</span> <a href="/data/on-time.json">on-time.json</a></p>' + '<p class="kmp-n" role="status" aria-live="polite">' + esc(t27(lang, 'mp_load')) + '</p><div class="kmp-m" role="region" aria-label="' + esc(t27(lang, 'mp_h1')) + '">' + esc(t27(lang, 'mp_load')) + '</div>' +
-    '<p class="k-small k-muted">' + esc(t27(lang, 'mp_src')) + '</p><h2>' + esc(t27(lang, 'mp_list')) + '</h2><ul class="kmp-l lk">' + pre47 + '</ul><button type="button" class="kmp-more" hidden>' + esc(W_MORE[lang] || W_MORE.en) + '</button>' +
-    '<p><a href="/api/v1/map' + (lang === 'en' ? '' : '?lang=' + lang) + '" rel="nofollow">/api/v1/map</a> · <a href="' + P + '/projects/">' + esc(N.tr(lang, 'h1_i')) + '</a></p></div>' +
-    '<link rel="stylesheet" href="/k/n35b/map.css?v=1ac6f0d5b"><script src="/k/n35b/map.js?v=' + MAP3_V + '" defer></script>';
-  const pg = { title: t27(lang, 'mp_t') + ' | Kolaboro', desc: t27(lang, 'mp_d'), canon, body, alt: l => ORIGIN + pre(l) + '/map/',
-    ld: { '@context': 'https://schema.org', '@graph': [{ '@type': 'WebPage', name: t27(lang, 'mp_t'), url: canon, inLanguage: lang, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' } },
-      { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Kolaboro', item: ORIGIN + P + '/' }, { '@type': 'ListItem', position: 2, name: N.tr(lang, 'h1_i'), item: ORIGIN + P + '/projects/' }, { '@type': 'ListItem', position: 3, name: t27(lang, 'mp_h1'), item: canon }] }] } };   // n29t (item 53): the same path as the visible breadcrumb
-  const sh = await shell(P + '/how-we-score/'); if (!sh || sh.status !== 200) return null;
-  return new Response(await N.assemble(pg, lang, sh), { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=300' } });
+const N = await import('./kbx_named.js'), H = await import('./kbx_hdate.js'), N30 = await import('./kbx_n30c.js');
+const P = pre(lang), canon = ORIGIN + P + '/map/';
+let pre47 = ''; try { const ix = await N.data(env), mc = new Map(); for (const x of ix.P) { if (COI_RX.test(String(x.n || '') + ' ' + String(x.dv || ''))) continue; mc.set(x.mk, (mc.get(x.mk) || 0) + 1); }
+pre47 = [...mc.entries()].sort((a, b) => b[1] - a[1] || String(a[0]).localeCompare(String(b[0]))).slice(0, 60).map(([m, n]) => '<li><a href="/m/' + encodeURIComponent(String(m).toLowerCase().replace(/\s+/g, '-')) + '/">' + esc(H.mkName(m, lang)) + '</a><small>' + n.toLocaleString(lang) + '</small></li>').join(''); } catch (e) { pre47 = ''; }
+const sel = (n, lbl, opts) => '<label for="kmp-' + n + '"><span>' + esc(t27(lang, lbl)) + '</span><select id="kmp-' + n + '" name="' + n + '"><option value="">' + esc(t27(lang, 'mp_all')) + '</option>' + opts + '</select></label>';
+let RT = null; try { const R = await import('./kbx_n37u.js'); if (await R.regMap(env)) RT = (k, v) => R.rgT(lang, k, v); } catch (e) { RT = null; }
+const rgSel = RT ? '<label for="kmp-rg"><span>' + esc(RT('rg_f')) + TB.kbx_u27__t.k7 + esc(t27(lang, 'mp_all')) + '</option><option value="1">' + esc(RT('rg_1')) + '</option><option value="3">' + esc(RT('rg_3')) + '</option></select></label>' : '';
+const form = '<form class="kmp-f" role="search">' + sel('co', 'mp_co', '') + sel('yr', 'mp_yr', '<option value="0">' + esc(t27(lang, 'mp_yr0')) + '</option>') +
+sel('pm', 'mp_pm', '<option value="1">' + esc(t27(lang, 'mp_pm1')) + '</option><option value="0">' + esc(t27(lang, 'mp_pm0')) + '</option>') + sel('sc', 'mp_sc', [25, 50, 75].map(n => '<option value="' + n + '">' + esc(t27(lang, 'mp_scn', { n })) + '</option>').join('')) +
+'<label for="kmp-dl"><span>' + esc(N30.t30(lang, 'mh_dl')) + TB.kbx_u27__t.k8 + esc(N30.t30(lang, 'mh_dl0')) + '</option><option value="1">' + esc(N30.t30(lang, 'mh_dl1')) + '</option><option value="6">' + esc(N30.t30(lang, 'mh_dl6')) + '</option><option value="12">' + esc(N30.t30(lang, 'mh_dl12')) + '</option></select></label>' + rgSel +
+TB.kbx_u27__t.k9 + esc(N30.t30(lang, 'mh_hm')) + '</span></label></form>';
+const body = TB.kbx_u27__t.k10 + P + '/">Kolaboro</a> / <a href="' + P + '/projects/">' + esc(N.tr(lang, 'h1_i')) + '</a></p><h1>' + esc(t27(lang, 'mp_h1')) + '</h1><p class="lead">' + esc(t27(lang, 'mp_lead')) + '</p></div></section>' +
+TB.kbx_u27__t.k11 + esc(JSON.stringify(Object.assign({ s: Object.assign({}, N30.mapStrings(lang), RT ? { rg_b: RT('rg_b') } : {}) }, MAPV))) + '">' + form +
+TB.kbx_u27__s.k2 + esc(N30.t30(lang, 'mh_k1')) + TB.kbx_u27__t.k12 + esc(N30.t30(lang, 'mh_k6')) + TB.kbx_u27__t.k13 + esc(N30.t30(lang, 'mh_k12')) + TB.kbx_u27__t.k14 + TB.kbx_u27__t.k15 + esc(t27(lang, 'mp_load')) + TB.kbx_u27__t.k16 + esc(t27(lang, 'mp_h1')) + '">' + esc(t27(lang, 'mp_load')) + '</div>' +
+'<p class="k-small k-muted">' + esc(t27(lang, 'mp_src')) + '</p><h2>' + esc(t27(lang, 'mp_list')) + '</h2><ul class="kmp-l lk">' + pre47 + TB.kbx_u27__t.k17 + esc(W_MORE[lang] || W_MORE.en) + '</button>' +
+'<p><a href="/api/v1/map' + (lang === 'en' ? '' : '?lang=' + lang) + TB.kbx_u27__t.k18 + P + '/projects/">' + esc(N.tr(lang, 'h1_i')) + '</a></p></div>' +
+TB.kbx_u27__t.k19 + MAP3_V + '" defer></script>';
+const pg = { title: t27(lang, 'mp_t') + ' | Kolaboro', desc: t27(lang, 'mp_d'), canon, body, alt: l => ORIGIN + pre(l) + '/map/',
+ld: { '@context': 'https://schema.org', '@graph': [{ '@type': 'WebPage', name: t27(lang, 'mp_t'), url: canon, inLanguage: lang, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' } },
+{ '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Kolaboro', item: ORIGIN + P + '/' }, { '@type': 'ListItem', position: 2, name: N.tr(lang, 'h1_i'), item: ORIGIN + P + '/projects/' }, { '@type': 'ListItem', position: 3, name: t27(lang, 'mp_h1'), item: canon }] }] } };
+const sh = await shell(P + '/how-we-score/'); if (!sh || sh.status !== 200) return null;
+return new Response(await N.assemble(pg, lang, sh), { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=300' } });
 }
 const W_MORE = { en: 'Show more', es: 'Ver más', fr: 'Voir plus', de: 'Mehr zeigen', nl: 'Meer tonen', ru: 'Показать ещё', zh: '显示更多', ar: 'اعرض المزيد' };
-
 async function updatesPage(req, u, env, ctx, shell, lang) {
-  const N = await import('./kbx_named.js'), K = await import('./kbx_ticker.js');
-  const items = (await K.tickerItems(env)).slice().sort((a, b) => String(b.date).localeCompare(String(a.date)));
-  const P = pre(lang), canon = ORIGIN + P + '/updates/', byDay = new Map();
-  items.forEach(x => { const t = lang === 'en' ? x.text : x.tl && x.tl[lang]; if (!t) return; const d = String(x.date).slice(0, 10); if (!byDay.has(d)) byDay.set(d, []); byDay.get(d).push([K.tickId(x), t, x]); });
-  const html = [...byDay.entries()].map(([d, L]) => '<section class="ks" id="d-' + d + '"><h2><time datetime="' + d + '">' + esc(N.fd(d, lang)) + '</time></h2><ol class="kup">' +
-    L.map(([id, t, x]) => '<li id="' + id + '"><p>' + esc(t) + '</p>' + (x.url && /^\/[^/]/.test(x.url) ? '<p class="k-small"><a href="' + esc(/^\/(?:database|progress|numbers|rankings|projects|methods|press|moderation|team|compare|map)\b/.test(x.url) ? P + x.url : x.url) + '">' + esc(t27(lang, 'up_open')) + '</a></p>' : '') + '</li>').join('') + '</ol></section>').join('');
-  const body = '<section class="phero kp"><div class="wrap"><p class="crumb"><a href="' + P + '/">Kolaboro</a></p><h1>' + esc(t27(lang, 'up_h1')) + '</h1><p class="lead">' + esc(t27(lang, 'up_lead')) + '</p></div></section><div class="wrap kwrap">' + html +
-    '<p class="ki"><a href="' + P + TB.kbx_u27__s.k5;
-  const pg = { title: t27(lang, 'up_t') + ' | Kolaboro', desc: t27(lang, 'up_d'), canon, body, alt: l => ORIGIN + pre(l) + '/updates/',
-    ld: { '@context': 'https://schema.org', '@graph': [{ '@type': 'WebPage', name: t27(lang, 'up_t'), url: canon, inLanguage: lang, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' } }] } };
-  const sh = await shell(P + '/how-we-score/'); if (!sh || sh.status !== 200) return null;
-  return new Response(await N.assemble(pg, lang, sh), { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=300' } });
+const N = await import('./kbx_named.js'), K = await import('./kbx_ticker.js');
+const items = (await K.tickerItems(env)).slice().sort((a, b) => String(b.date).localeCompare(String(a.date)));
+const P = pre(lang), canon = ORIGIN + P + '/updates/', byDay = new Map();
+items.forEach(x => { const t = lang === 'en' ? x.text : x.tl && x.tl[lang]; if (!t) return; const d = String(x.date).slice(0, 10); if (!byDay.has(d)) byDay.set(d, []); byDay.get(d).push([K.tickId(x), t, x]); });
+const html = [...byDay.entries()].map(([d, L]) => '<section class="ks" id="d-' + d + '"><h2><time datetime="' + d + '">' + esc(N.fd(d, lang)) + '</time></h2><ol class="kup">' +
+L.map(([id, t, x]) => '<li id="' + id + '"><p>' + esc(t) + '</p>' + (x.url && /^\/[^/]/.test(x.url) ? '<p class="k-small"><a href="' + esc(/^\/(?:database|progress|numbers|rankings|projects|methods|press|moderation|team|compare|map)\b/.test(x.url) ? P + x.url : x.url) + '">' + esc(t27(lang, 'up_open')) + '</a></p>' : '') + '</li>').join('') + '</ol></section>').join('');
+const body = TB.kbx_u27__t.k20 + P + '/">Kolaboro</a></p><h1>' + esc(t27(lang, 'up_h1')) + '</h1><p class="lead">' + esc(t27(lang, 'up_lead')) + TB.kbx_u27__t.k21 + html +
+'<p class="ki"><a href="' + P + TB.kbx_u27__s.k5;
+const pg = { title: t27(lang, 'up_t') + ' | Kolaboro', desc: t27(lang, 'up_d'), canon, body, alt: l => ORIGIN + pre(l) + '/updates/',
+ld: { '@context': 'https://schema.org', '@graph': [{ '@type': 'WebPage', name: t27(lang, 'up_t'), url: canon, inLanguage: lang, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' } }] } };
+const sh = await shell(P + '/how-we-score/'); if (!sh || sh.status !== 200) return null;
+return new Response(await N.assemble(pg, lang, sh), { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=300' } });
 }
-
 export async function handle(req, u, env, ctx, shell) {
-  const p = u.pathname;
-  if (p === '/k/n31d.js') return (await import('./kbx_n31d.js')).handle(req, u);   // n31d (batch 31): project-page client script per language
-  if (p === '/k/u27.js') {
-    const N = await import('./kbx_named.js'), v = N.U27_SRC_V;
-    const body = N.NAMED_CLIENT_JS + '\n' + CLIENT_JS + '\n' + (await import('./kbx_n30a.js')).LOADER + '\n' + (await import('./kbx_n31d.js')).LOADER;   // n31d: project-page client, idle-loaded   // n30a: natural-language search, loaded on the home box and /projects/ only
-    return new Response(body, { headers: { 'content-type': 'application/javascript; charset=utf-8', 'cache-control': u.searchParams.get('v') === v ? 'public, max-age=31536000, immutable' : 'public, max-age=300', 'x-content-type-options': 'nosniff' } });
-  }
-  if (p === '/api/v1/cost') {
-    const id = String(u.searchParams.get('id') || '').slice(0, 20), pr = Math.max(0, Math.min(1e12, +u.searchParams.get('p') || 0)), lang = LANGS.includes(u.searchParams.get('lang')) ? u.searchParams.get('lang') : 'en';
-    const N = await import('./kbx_named.js'), F = await import('./kbx_facets.js');
-    let ix; try { ix = await N.data(env); } catch (e) { return jr({ error: 'data not available' }, 503, 'no-store'); }
-    const x = ix.byId.get(id); if (!x) return jr({ error: 'unknown project id' }, 404);
-    return jr({ id, price: pr || null, calc: F.costCalc(x, pr, lang), about: TB.kbx_u27__s.k6 }, 200, 'public, max-age=3600');
-  }
-  if (p === '/api/v1/map') {
-    const lang = LANGS.includes(u.searchParams.get('lang')) ? u.searchParams.get('lang') : 'en';
-    const ck = new Request(ORIGIN + '/__u27_map/v3/' + lang);   // v2: months past the first handover date (n30c); v3 (r10u): register_facts
-    try { const hit = await caches.default.match(ck); if (hit) return hit; } catch (e) {}
-    let d; try { d = await mapData(env, lang); } catch (e) { return jr({ error: 'map data not available' }, 503, 'no-store'); }
-    const r = jr(d, 200, 'public, max-age=900');
-    try { ctx.waitUntil(caches.default.put(ck, r.clone())); } catch (e) {}
-    return r;
-  }
-  const m = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?(map|updates)\/?$/.exec(p); if (!m) return null;
-  if (!p.endsWith('/')) return Response.redirect(ORIGIN + p + '/' + u.search, 301);
-  const lang = m[1] || 'en';
-  try { return m[2] === 'map' ? await mapPage(req, u, env, ctx, shell, lang) : await updatesPage(req, u, env, ctx, shell, lang); } catch (e) { return null; }
+const p = u.pathname;
+if (p === '/k/n31d.js') return (await import('./kbx_n31d.js')).handle(req, u);
+if (p === '/k/u27.js') {
+const N = await import('./kbx_named.js'), v = N.U27_SRC_V;
+const body = N.NAMED_CLIENT_JS + '\n' + CLIENT_JS + '\n' + (await import('./kbx_n30a.js')).LOADER + '\n' + (await import('./kbx_n31d.js')).LOADER;
+return new Response(body, { headers: { 'content-type': 'application/javascript; charset=utf-8', 'cache-control': u.searchParams.get('v') === v ? 'public, max-age=31536000, immutable' : 'public, max-age=300', 'x-content-type-options': 'nosniff' } });
+}
+if (p === '/api/v1/cost') {
+const id = String(u.searchParams.get('id') || '').slice(0, 20), pr = Math.max(0, Math.min(1e12, +u.searchParams.get('p') || 0)), lang = LANGS.includes(u.searchParams.get('lang')) ? u.searchParams.get('lang') : 'en';
+const N = await import('./kbx_named.js'), F = await import('./kbx_facets.js');
+let ix; try { ix = await N.data(env); } catch (e) { return jr({ error: 'data not available' }, 503, 'no-store'); }
+const x = ix.byId.get(id); if (!x) return jr({ error: 'unknown project id' }, 404);
+return jr({ id, price: pr || null, calc: F.costCalc(x, pr, lang), about: TB.kbx_u27__s.k6 }, 200, 'public, max-age=3600');
+}
+if (p === '/api/v1/map') {
+const lang = LANGS.includes(u.searchParams.get('lang')) ? u.searchParams.get('lang') : 'en';
+const ck = new Request(ORIGIN + '/__u27_map/v3/' + lang);
+try { const hit = await caches.default.match(ck); if (hit) return hit; } catch (e) {}
+let d; try { d = await mapData(env, lang); } catch (e) { return jr({ error: 'map data not available' }, 503, 'no-store'); }
+const r = jr(d, 200, 'public, max-age=900');
+try { ctx.waitUntil(caches.default.put(ck, r.clone())); } catch (e) {}
+return r;
+}
+const m = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?(map|updates)\/?$/.exec(p); if (!m) return null;
+if (!p.endsWith('/')) return Response.redirect(ORIGIN + p + '/' + u.search, 301);
+const lang = m[1] || 'en';
+try { return m[2] === 'map' ? await mapPage(req, u, env, ctx, shell, lang) : await updatesPage(req, u, env, ctx, shell, lang); } catch (e) { return null; }
 }

@@ -1,22 +1,7 @@
-// kolaboro.com batch 18 (agent n18e, 8 Nov 2026): buyer groups per project ("meet other buyers of the same project"). No AI.
-// Buyers who watch a project by email (kolaboro_watch) or saved it in their account (kolaboro_saved) can join its group (double opt-in
-// by email), see the other members only as an alias, and ask to be introduced through an anonymous relay: the message is emailed by
-// Kolaboro and the two email addresses are sent to both people only after the other member accepts.
-//
-// BEHIND A FLAG. Two things must both be true before anything is stored or sent:
-//   1. env.KB_COHORT === 'on' (Cloudflare Pages variable, set by Carlos), and
-//   2. the database function kolaboro_cohort exists (migration proposal n18e-MIGRATION.sql, NOT applied; needs Carlos's approval).
-// Until then: /cohort/ explains the feature and says "not open yet", ?demo=1 previews the group view with example data (no network),
-// the API answers 503 {error:'not_open'}, and named project pages show nothing new (cohortCard returns '').
-//
-//   GET  /cohort/ (8 languages)                 explainer + join form (?p=BALI-014), member view (#t=<token>), answer view (#a=<token>)
-//   GET  /api/x/cohort/status                   {enabled, flag, db}
-//   GET  /api/x/cohort/count?project=BALI-014   confirmed members of one project (only when enabled)
-//   POST /api/x/cohort/{join|confirm|me|intro|answer|leave}   JSON body; tokens travel in the body, never in a URL the server logs
+// comments: _notes/kolaboro-worker-comments.txt
 import { CS } from './kbx_cohort_i18n.js';
 import { rpcW, sha } from './kolaboro.js';
 import { TB } from './kbx_strings.js';
-
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 export const PATHS = /^\/api\/x\/cohort(?:\/|$)/;
@@ -27,90 +12,81 @@ const tr = (lang, k, v) => { const s = (CS[lang] && CS[lang][k]) || CS.en[k] || 
 const ID = /^[A-Z]{2,6}-[0-9]{2,4}$/;
 function out(o, s, cc) { return new Response(JSON.stringify(o), { status: s || 200, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': cc || 'no-store', 'x-robots-tag': 'noindex' } }); }
 const ipOf = req => { const a = req.headers.get('cf-connecting-ip') || 'x'; return a.includes(':') ? a.split(':').slice(0, 4).join(':') + '::/64' : a; };
-async function allow(ctx, key, limit, ttl) {   // soft fixed-window counter in the edge cache; the database function has the hard limits
-  try {
-    const k = new Request(ORIGIN + '/__rly/' + encodeURIComponent(key));
-    const hit = await caches.default.match(k); const n = hit ? (+(await hit.text()) || 0) : 0;
-    if (n >= limit) return false;
-    const p = caches.default.put(k, new Response(String(n + 1), { headers: { 'cache-control': 'max-age=' + ttl } }));
-    if (ctx && ctx.waitUntil) ctx.waitUntil(p); else await p;
-  } catch (e) {}
-  return true;
+async function allow(ctx, key, limit, ttl) {
+try {
+const k = new Request(ORIGIN + '/__rly/' + encodeURIComponent(key));
+const hit = await caches.default.match(k); const n = hit ? (+(await hit.text()) || 0) : 0;
+if (n >= limit) return false;
+const p = caches.default.put(k, new Response(String(n + 1), { headers: { 'cache-control': 'max-age=' + ttl } }));
+if (ctx && ctx.waitUntil) ctx.waitUntil(p); else await p;
+} catch (e) {}
+return true;
 }
-
-// ------------------------------------------------------------------------------------------------ flag
 const flagOn = env => String((env && env.KB_COHORT) || '').trim().toLowerCase() === 'on';
-let DB = null;   // { ok, t }
+let DB = null;
 async function dbReady() {
-  if (DB && Date.now() - DB.t < 300000) return DB.ok;
-  let ok = false; try { const r = await rpcW('kolaboro_cohort', { p_action: 'ping', p_payload: {} }); ok = !!(r && r.ok); } catch (e) { ok = false; }   // 404 until the migration exists
-  DB = { ok, t: Date.now() }; return ok;
+if (DB && Date.now() - DB.t < 300000) return DB.ok;
+let ok = false; try { const r = await rpcW('kolaboro_cohort', { p_action: 'ping', p_payload: {} }); ok = !!(r && r.ok); } catch (e) { ok = false; }
+DB = { ok, t: Date.now() }; return ok;
 }
 export async function enabled(env) { return flagOn(env) && await dbReady(); }
-
-// ------------------------------------------------------------------------------------------------ named project page card (empty while off)
 export async function cohortCard(env, lang, id) {
-  try {
-    if (!ID.test(String(id || '')) || !(await enabled(env))) return '';
-    let n = 0; try { const r = await rpcW('kolaboro_cohort', { p_action: 'count', p_payload: { project: id } }); n = r && r.members || 0; } catch (e) {}
-    return '<div class="k-card kc-card" id="buyer-group"><h3>' + esc(tr(lang, 'card_h')) + '</h3><p>' + esc(tr(lang, 'card_p')) + '</p>' + (n >= 2 ? '<p class="k-muted">' + esc(tr(lang, 'card_n', { n })) + '</p>' : '') +
-      '<p><a class="k-btn" href="' + pre(lang) + '/cohort/?p=' + encodeURIComponent(id) + '">' + esc(tr(lang, 'card_btn')) + '</a></p></div>';
-  } catch (e) { return ''; }
+try {
+if (!ID.test(String(id || '')) || !(await enabled(env))) return '';
+let n = 0; try { const r = await rpcW('kolaboro_cohort', { p_action: 'count', p_payload: { project: id } }); n = r && r.members || 0; } catch (e) {}
+return TB.kbx_cohort__t.k0 + esc(tr(lang, 'card_h')) + '</h3><p>' + esc(tr(lang, 'card_p')) + '</p>' + (n >= 2 ? '<p class="k-muted">' + esc(tr(lang, 'card_n', { n })) + '</p>' : '') +
+'<p><a class="k-btn" href="' + pre(lang) + '/cohort/?p=' + encodeURIComponent(id) + '">' + esc(tr(lang, 'card_btn')) + '</a></p></div>';
+} catch (e) { return ''; }
 }
-export const cohortKey = env => flagOn(env) ? '|c1' : '';   // part of the named-page cache key: pages re-render when the flag changes
-
-// ------------------------------------------------------------------------------------------------ API
+export const cohortKey = env => flagOn(env) ? '|c1' : '';
 const ERR = { input: 400, note_links: 400, message: 400, message_contact: 400, member: 404, token: 404, unconfirmed: 409, left: 409, closed: 409, already: 409, busy: 429, auth: 401 };
 export async function handle(req, u, env, ctx) {
-  const p = u.pathname.replace(/\/+$/, '');
-  if (p === '/api/x/cohort' || p === '/api/x/cohort/status') {
-    const flag = flagOn(env), db = await dbReady();
-    return out({ module: 'cohort (batch 18, n18e)', enabled: flag && db, flag, db, page: ORIGIN + '/cohort/', note: flag && db ? 'open' : TB.kbx_cohort__s.k0 }, 200, 'public, max-age=60');
-  }
-  const on = await enabled(env);
-  if (p === '/api/x/cohort/count') {
-    const id = String(u.searchParams.get('project') || '').toUpperCase();
-    if (!ID.test(id)) return out({ error: 'input' }, 400);
-    if (!on) return out({ error: 'not_open' }, 503, 'public, max-age=60');
-    try { const r = await rpcW('kolaboro_cohort', { p_action: 'count', p_payload: { project: id } }); return out(r, 200, 'public, max-age=120'); } catch (e) { return out({ error: 'unavailable' }, 503); }
-  }
-  const m = p.match(/^\/api\/x\/cohort\/(join|confirm|me|intro|answer|leave)$/);
-  if (!m) return out({ error: 'not found', module: 'cohort' }, 404, 'public, max-age=60');
-  if (req.method !== 'POST') return out({ error: 'method not allowed' }, 405);
-  if (!on) return out({ error: 'not_open' }, 503);
-  const act = m[1];
-  let b = {}; try { const t = await req.text(); if (t.length > 4000) return out({ error: 'input' }, 413); b = JSON.parse(t || '{}') || {}; } catch (e) { return out({ error: 'input' }, 400); }
-  if (b.hp) return out({ ok: true });   // honeypot
-  const ip = ipOf(req), hour = new Date().toISOString().slice(0, 13);
-  if (!(await allow(ctx, 'coh:' + ip + ':' + hour, act === 'join' || act === 'intro' ? 12 : 60, 3600))) return out({ error: 'busy' }, 429);
-  const tok = x => /^[0-9a-f]{64}$/.test(String(x || '')) ? String(x) : '';
-  const pl = {};
-  if (act === 'join') {
-    pl.project = String(b.project || '').toUpperCase(); if (!ID.test(pl.project)) return out({ error: 'input' }, 400);
-    pl.note = String(b.note || '').slice(0, 280); pl.lang = LANGS.includes(b.lang) ? b.lang : 'en';
-    if (b.session && /^[A-Za-z0-9_.-]{20,200}$/.test(String(b.session))) pl.session = String(b.session);
-    else { pl.email = String(b.email || '').trim().toLowerCase().slice(0, 254); if (!/^[^@\s]+@[^@\s]+\.[a-z]{2,}$/.test(pl.email)) return out({ error: 'input' }, 400); }
-    pl.ip_hash = await sha('kbc-ip|' + ip);
-  } else if (act === 'answer') {
-    pl.a = tok(b.a); if (!pl.a) return out({ error: 'token' }, 404);
-    pl.do = ['view', 'accept', 'decline'].includes(b.do) ? b.do : 'view';
-  } else {
-    pl.t = tok(b.t); if (!pl.t) return out({ error: 'token' }, 404);
-    if (act === 'intro') { pl.to = String(b.to || '').slice(0, 20); pl.message = String(b.message || '').slice(0, 600); }
-  }
-  let r; try { r = await rpcW('kolaboro_cohort', { p_action: act, p_payload: pl }); } catch (e) { return out({ error: 'unavailable' }, 503); }
-  if (r && r.error) return out({ error: r.error }, ERR[r.error] || 400);
-  return out(r || { ok: true });
+const p = u.pathname.replace(/\/+$/, '');
+if (p === '/api/x/cohort' || p === '/api/x/cohort/status') {
+const flag = flagOn(env), db = await dbReady();
+return out({ module: 'cohort (batch 18, n18e)', enabled: flag && db, flag, db, page: ORIGIN + '/cohort/', note: flag && db ? 'open' : TB.kbx_cohort__s.k0 }, 200, 'public, max-age=60');
 }
-
-// ------------------------------------------------------------------------------------------------ page
+const on = await enabled(env);
+if (p === '/api/x/cohort/count') {
+const id = String(u.searchParams.get('project') || '').toUpperCase();
+if (!ID.test(id)) return out({ error: 'input' }, 400);
+if (!on) return out({ error: 'not_open' }, 503, 'public, max-age=60');
+try { const r = await rpcW('kolaboro_cohort', { p_action: 'count', p_payload: { project: id } }); return out(r, 200, 'public, max-age=120'); } catch (e) { return out({ error: 'unavailable' }, 503); }
+}
+const m = p.match(/^\/api\/x\/cohort\/(join|confirm|me|intro|answer|leave)$/);
+if (!m) return out({ error: 'not found', module: 'cohort' }, 404, 'public, max-age=60');
+if (req.method !== 'POST') return out({ error: 'method not allowed' }, 405);
+if (!on) return out({ error: 'not_open' }, 503);
+const act = m[1];
+let b = {}; try { const t = await req.text(); if (t.length > 4000) return out({ error: 'input' }, 413); b = JSON.parse(t || '{}') || {}; } catch (e) { return out({ error: 'input' }, 400); }
+if (b.hp) return out({ ok: true });
+const ip = ipOf(req), hour = new Date().toISOString().slice(0, 13);
+if (!(await allow(ctx, 'coh:' + ip + ':' + hour, act === 'join' || act === 'intro' ? 12 : 60, 3600))) return out({ error: 'busy' }, 429);
+const tok = x => /^[0-9a-f]{64}$/.test(String(x || '')) ? String(x) : '';
+const pl = {};
+if (act === 'join') {
+pl.project = String(b.project || '').toUpperCase(); if (!ID.test(pl.project)) return out({ error: 'input' }, 400);
+pl.note = String(b.note || '').slice(0, 280); pl.lang = LANGS.includes(b.lang) ? b.lang : 'en';
+if (b.session && /^[A-Za-z0-9_.-]{20,200}$/.test(String(b.session))) pl.session = String(b.session);
+else { pl.email = String(b.email || '').trim().toLowerCase().slice(0, 254); if (!/^[^@\s]+@[^@\s]+\.[a-z]{2,}$/.test(pl.email)) return out({ error: 'input' }, 400); }
+pl.ip_hash = await sha('kbc-ip|' + ip);
+} else if (act === 'answer') {
+pl.a = tok(b.a); if (!pl.a) return out({ error: 'token' }, 404);
+pl.do = ['view', 'accept', 'decline'].includes(b.do) ? b.do : 'view';
+} else {
+pl.t = tok(b.t); if (!pl.t) return out({ error: 'token' }, 404);
+if (act === 'intro') { pl.to = String(b.to || '').slice(0, 20); pl.message = String(b.message || '').slice(0, 600); }
+}
+let r; try { r = await rpcW('kolaboro_cohort', { p_action: act, p_payload: pl }); } catch (e) { return out({ error: 'unavailable' }, 503); }
+if (r && r.error) return out({ error: r.error }, ERR[r.error] || 400);
+return out(r || { ok: true });
+}
 const CSS = '<style id="kcoh">.kc-pg .k-phead{padding-block:var(--k-7,48px) var(--k-5,24px)}.kc-pg h1{max-width:22ch}.kc-pg .lead{max-width:62ch;color:var(--k-ink-2)}.kc-pg .k-sec{padding-block:var(--k-6,32px)}' +
-  '.kc-pg h2{margin:0 0 var(--k-3,12px)}.kc-pg .k-steps{max-width:760px}.kc-pg ul.kc-priv{max-width:68ch;line-height:1.6;padding-inline-start:1.2em}.kc-app{max-width:760px}.kc-app .k-field{margin:0 0 var(--k-4,16px)}' +
-  '.kc-app .k-input,.kc-app .k-textarea{width:100%;box-sizing:border-box}.kc-list{list-style:none;margin:var(--k-4,16px) 0 0;padding:0;border:1px solid var(--k-line);border-radius:var(--k-r-lg,14px);background:var(--k-surface);overflow:hidden}' +
-  '.kc-list>li{padding:var(--k-4,16px) var(--k-5,24px);border-top:1px solid var(--k-line)}.kc-list>li:first-child{border-top:0}.kc-list b{display:block}.kc-list p{margin:4px 0 0;color:var(--k-ink-2);overflow-wrap:anywhere}' +
-  '.kc-list .kc-row{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;justify-content:space-between}.kc-list form{margin-top:var(--k-3,12px)}.kc-msg{white-space:pre-wrap;overflow-wrap:anywhere;margin:8px 0 0;padding:12px 14px;border-inline-start:3px solid var(--k-sea);background:var(--k-sunken);border-radius:var(--k-r-sm,6px)}' +
-  '.kc-out{min-height:1.4em;margin:var(--k-3,12px) 0 0}.kc-hp{position:absolute!important;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}.kc-card h3{margin:0 0 6px}.kc-card p{margin:6px 0 0}.kc-pg .k-btn{min-height:44px}</style>';
-
+'.kc-pg h2{margin:0 0 var(--k-3,12px)}.kc-pg .k-steps{max-width:760px}.kc-pg ul.kc-priv{max-width:68ch;line-height:1.6;padding-inline-start:1.2em}.kc-app{max-width:760px}.kc-app .k-field{margin:0 0 var(--k-4,16px)}' +
+'.kc-app .k-input,.kc-app .k-textarea{width:100%;box-sizing:border-box}.kc-list{list-style:none;margin:var(--k-4,16px) 0 0;padding:0;border:1px solid var(--k-line);border-radius:var(--k-r-lg,14px);background:var(--k-surface);overflow:hidden}' +
+'.kc-list>li{padding:var(--k-4,16px) var(--k-5,24px);border-top:1px solid var(--k-line)}.kc-list>li:first-child{border-top:0}.kc-list b{display:block}.kc-list p{margin:4px 0 0;color:var(--k-ink-2);overflow-wrap:anywhere}' +
+'.kc-list .kc-row{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;justify-content:space-between}.kc-list form{margin-top:var(--k-3,12px)}.kc-msg{white-space:pre-wrap;overflow-wrap:anywhere;margin:8px 0 0;padding:12px 14px;border-inline-start:3px solid var(--k-sea);background:var(--k-sunken);border-radius:var(--k-r-sm,6px)}' +
+'.kc-out{min-height:1.4em;margin:var(--k-3,12px) 0 0}.kc-hp{position:absolute!important;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}.kc-card h3{margin:0 0 6px}.kc-card p{margin:6px 0 0}.kc-pg .k-btn{min-height:44px}</style>';
 function body(lang, on, demo) {
   const T = k => esc(tr(lang, k));
   const steps = '<ol class="k-steps">' + [1, 2, 3, 4].map(i => '<li><b>' + T('s' + i + '_b') + '</b><p>' + T('s' + i + '_p') + '</p></li>').join('') + '</ol>';
@@ -122,8 +98,6 @@ function body(lang, on, demo) {
     '<section class="k-sec k-sec--tint"><div class="k-wrap"><h2>' + T('how_h') + '</h2>' + steps + '</div></section>' +
     '<section class="k-sec"><div class="k-wrap"><h2>' + T('priv_h') + '</h2><ul class="kc-priv"><li>' + T('priv_1') + '</li><li>' + T('priv_2') + '</li><li>' + T('priv_3') + '</li><li>' + T('priv_4') + '</li></ul></div></section></div>';
 }
-
-// client: join form, member view, answer view, demo preview. Tokens are read from the URL fragment (never sent to the server in a URL).
 const JS = String.raw`(function(){var R=document.getElementById('kc-app');if(!R)return;var C=JSON.parse(R.getAttribute('data-kc')),S=C.s;
 function e(t){return String(t==null?'':t).replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
 function f(k,v){var s=S[k]||k;return v?s.replace(/\{(\w+)\}/g,function(m,x){return v[x]!=null?v[x]:m}):s}
@@ -157,7 +131,6 @@ function answer(a){api('answer',{a:a,do:'view'}).then(function(d){if(!d||!d.ok){
 R.innerHTML='<h2>'+e(S.ans_h)+'</h2><p>'+e(f('ans_from',{a:d.from,p:d.project}))+'</p>'+(d.from_note?'<p class="k-muted">'+e(f('ans_note',{n:d.from_note}))+'</p>':'')+'<p><b>'+e(S.ans_msg)+'</b></p><div class="kc-msg">'+e(d.message)+'</div>'+(d.state==='open'?'<p style="margin-top:16px"><button type="button" class="k-btn k-btn--primary" data-do="accept">'+e(S.acc_btn)+'</button> <button type="button" class="k-btn" data-do="decline">'+e(S.dec_btn)+'</button></p>':'<p class="k-muted">'+e(d.state==='accepted'?S.acc_ok:S.err_closed)+'</p>')+'<div class="kc-out"></div>';
 R.querySelectorAll('[data-do]').forEach(function(b){b.addEventListener('click',function(){var w=b.getAttribute('data-do');R.querySelectorAll('[data-do]').forEach(function(x){x.disabled=true});api('answer',{a:a,do:w}).then(function(r){var o=R.querySelector('.kc-out');if(r&&r.ok)say(o,w==='accept'?'acc_ok':'dec_ok',0);else{say(o,EM[r&&r.error]||'err',1);R.querySelectorAll('[data-do]').forEach(function(x){x.disabled=false})}})})})})}
 })();`;
-
 export async function page(req, u, env, ctx, shell) {
   const m = u.pathname.match(/^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?cohort(\/?)$/); if (!m || !shell) return null;
   if (!m[2]) return new Response(null, { status: 301, headers: { location: u.pathname + '/' + u.search, 'cache-control': 'public, max-age=86400' } });

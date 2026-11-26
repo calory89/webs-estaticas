@@ -1,12 +1,5 @@
-// kolaboro.com batch 17 (agent n17d, 8 Nov 2026): permit photo reader.
-//   GET /tools/permit-photo/   /<lang>/tools/permit-photo/   (en es de fr nl ru zh ar; Arabic right to left)
-// The buyer photographs a permit, licence or company certificate. Text recognition runs in the browser (tesseract.js 5.1.1, WASM,
-// pinned on cdn.jsdelivr.net; language data loaded on demand). Candidate register numbers are found with per-market patterns
-// (and check digits where the format has one). One tap sends ONLY the chosen number to the existing register lookup
-// (/api/kb/lookup in kbx_lookup.js, or /api/x/h/lookup for the Australian ABN). The image and the recognised text never leave the
-// device; nothing is stored. No paid AI anywhere: every word on the page is a template below.
-// Page shell: /<lang>/how-we-score/ (header, footer, language switcher), the same pattern as kbx_net.js.
-import { TB } from './kbx_strings.js';   // n32w: string tables loaded as static JSON (worker size limit)
+// comments: _notes/kolaboro-worker-comments.txt
+import { TB } from './kbx_strings.js';
 const ORIGIN = 'https://kolaboro.com';
 export const PATHS = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?tools\/permit-photo\/?$/;
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
@@ -14,35 +7,28 @@ const PATH = '/tools/permit-photo/';
 const esc = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const pre = l => l === 'en' ? '' : '/' + l;
 const TJS = 'https://cdn.jsdelivr.net/npm/tesseract.js@5.1.1/dist/tesseract.min.js';
-
-// ------------------------------------------------------------------------------------------------ strings
-const S = TB.kbx_pp_S /* n32w (19 Nov 2026): table moved to /data/i18n/kbx_pp.json, filled by kbx_strings.js before any kolaboro.com request is handled */;
+const S = TB.kbx_pp_S ;
 const tr = l => { const o = Object.assign({}, S.en, S[l] || {}); o.m = Object.assign({}, S.en.m, (S[l] || {}).m); o.p = Object.assign({}, S.en.p, (S[l] || {}).p); return o; };
-
-// one row per recognised number: market, how one tap works (lookup kind or link), register name and URL (facts, not translated)
 const ROWS = [
-  ['es_refcat', 'ES', 'live', 'Sede Electrónica del Catastro', 'https://www.sedecatastro.gob.es/'],
-  ['es_lic', 'ES', 'ask', null, null],
-  ['es_cif', 'ES', 'man', 'BORME (Boletín Oficial del Registro Mercantil)', 'https://www.boe.es/diario_borme/'],
-  ['gb_co', 'GB', 'live', 'Companies House', 'https://find-and-update.company-information.service.gov.uk/'],
-  ['us_dobnow', 'NYC', 'live', 'NYC Department of Buildings (NYC Open Data)', 'https://opendata.cityofnewyork.us/'],
-  ['us_bis', 'NYC', 'live', 'NYC Department of Buildings (NYC Open Data)', 'https://opendata.cityofnewyork.us/'],
-  ['us_md', 'MD', 'live', 'Miami-Dade County building permits (open data)', 'https://gis-mdc.opendata.arcgis.com/'],
-  ['ae_proj', 'AE', 'key', 'Dubai Land Department, project status', 'https://dubailand.gov.ae/en/eservices/real-estate-project-status-landing/'],
-  ['ae_oqood', 'AE', 'man', 'Dubai Land Department', 'https://dubailand.gov.ae/en/'],
-  ['ae_permit', 'AE', 'man', 'Kolaboro permit QR check (Madmoun QR)', '/tools/permit-check/'],
-  ['ae_brn', 'AE', 'man', 'Kolaboro agent licence check (DLD register)', '/tools/agent-check/'],
-  ['id_nib', 'ID', 'man', 'OSS (Online Single Submission)', 'https://oss.go.id/'],
-  ['id_pbg', 'ID', 'man', 'SIMBG, Ministry of Public Works', 'https://simbg.pu.go.id/'],
-  ['id_title', 'ID', 'man', 'BHUMI, ATR/BPN', 'https://bhumi.atrbpn.go.id/'],
-  ['th_eia', 'TH', 'man', 'ONEP EIA database', 'https://eia.onep.go.th/'],
-  ['th_condo', 'TH', 'man', 'Department of Lands', 'https://www.dol.go.th/'],
-  ['au_abn', 'AU', 'live', 'ABN Lookup, Australian Business Register', 'https://abr.business.gov.au/'],
-  ['lei', 'WW', 'man', 'GLEIF LEI search', 'https://search.gleif.org/']
+['es_refcat', 'ES', 'live', 'Sede Electrónica del Catastro', 'https://www.sedecatastro.gob.es/'],
+['es_lic', 'ES', 'ask', null, null],
+['es_cif', 'ES', 'man', 'BORME (Boletín Oficial del Registro Mercantil)', 'https://www.boe.es/diario_borme/'],
+['gb_co', 'GB', 'live', 'Companies House', 'https://find-and-update.company-information.service.gov.uk/'],
+['us_dobnow', 'NYC', 'live', 'NYC Department of Buildings (NYC Open Data)', 'https://opendata.cityofnewyork.us/'],
+['us_bis', 'NYC', 'live', 'NYC Department of Buildings (NYC Open Data)', 'https://opendata.cityofnewyork.us/'],
+['us_md', 'MD', 'live', 'Miami-Dade County building permits (open data)', 'https://gis-mdc.opendata.arcgis.com/'],
+['ae_proj', 'AE', 'key', 'Dubai Land Department, project status', 'https://dubailand.gov.ae/en/eservices/real-estate-project-status-landing/'],
+['ae_oqood', 'AE', 'man', 'Dubai Land Department', 'https://dubailand.gov.ae/en/'],
+['ae_permit', 'AE', 'man', 'Kolaboro permit QR check (Madmoun QR)', '/tools/permit-check/'],
+['ae_brn', 'AE', 'man', 'Kolaboro agent licence check (DLD register)', '/tools/agent-check/'],
+['id_nib', 'ID', 'man', 'OSS (Online Single Submission)', 'https://oss.go.id/'],
+['id_pbg', 'ID', 'man', 'SIMBG, Ministry of Public Works', 'https://simbg.pu.go.id/'],
+['id_title', 'ID', 'man', 'BHUMI, ATR/BPN', 'https://bhumi.atrbpn.go.id/'],
+['th_eia', 'TH', 'man', 'ONEP EIA database', 'https://eia.onep.go.th/'],
+['th_condo', 'TH', 'man', 'Department of Lands', 'https://www.dol.go.th/'],
+['au_abn', 'AU', 'live', 'ABN Lookup, Australian Business Register', 'https://abr.business.gov.au/'],
+['lei', 'WW', 'man', 'GLEIF LEI search', 'https://search.gleif.org/']
 ];
-
-/* CSS: n40 k17, in /data/i18n/k17s.json */
-
 function body(lang) {
   const t = tr(lang), p = pre(lang);
   const client = { lang, read: t.read, st_load: t.st_load, st_lang: t.st_lang, st_read: t.st_read, st_done: t.st_done, st_none: t.st_none, st_err: t.st_err, st_img: t.st_img, lookup: t.lookup, open: t.open, manual: t.manual, ask: t.ask,
@@ -77,8 +63,6 @@ function body(lang) {
       '<h3>' + esc(t.rel) + '</h3><div class="kpp-rel"><a class="k-btn k-btn--sm" href="/tools/permit-check/">' + esc(t.rel_qr) + '</a><a class="k-btn k-btn--sm" href="/tools/agent-check/">' + esc(t.rel_agent) + '</a><a class="k-btn k-btn--sm" href="/registers/">' + esc(t.rel_reg) + '</a></div></div></div>' +
     '</div></section></div>';
 }
-
-// ------------------------------------------------------------------------------------------------ client (no backticks inside)
 const JS = String.raw`(function(){
 var R=document.querySelector('[data-kpp]');if(!R)return;var T=JSON.parse(R.getAttribute('data-t'));
 var $=function(id){return document.getElementById(id)};
@@ -192,34 +176,32 @@ function lookup(i,b){var c=cands[i],li=b.closest('.kpp-item'),out=li.querySelect
   out.innerHTML='<div class="k-card k-card--sunken" style="padding:var(--k-3,12px)">'+h+'<p class="k-xs k-muted" style="margin:8px 0 0">'+esc(T.sent)+' '+esc(T.nf_note)+'</p></div>';b.remove()
  }).catch(function(e){out.innerHTML='<div class="k-alert k-alert--warn" role="status"><span>'+esc(e&&e.message==='rate'?T.rate:T.lk_err)+'</span></div>';b.disabled=false;b.textContent=T.lookup})}
 })();`;
-
 async function assemble(shellRes, lang) {
-  const t = tr(lang), path = PATH, url = ORIGIN + pre(lang) + path;
-  const alts = LANGS.map(l => '<link rel="alternate" hreflang="' + l + '" href="' + ORIGIN + pre(l) + path + '">').join('') + '<link rel="alternate" hreflang="x-default" href="' + ORIGIN + path + '">';
-  const ld = { '@context': 'https://schema.org', '@graph': [
-    { '@type': 'WebApplication', name: 'Kolaboro ' + t.title, url, description: t.desc, inLanguage: lang, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Any', isAccessibleForFree: true, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' } },
-    { '@type': 'BreadcrumbList', itemListElement: [['Kolaboro', ORIGIN + pre(lang) + '/'], [t.crumb_tools, ORIGIN + '/tools/'], [t.title, url]].map((x, i) => ({ '@type': 'ListItem', position: i + 1, name: x[0], item: x[1] })) }] };
-  const tags = '<title>' + esc(t.title) + ' | Kolaboro</title><meta name="description" content="' + esc(t.desc) + '"><link rel="canonical" href="' + url + '">' + alts +
-    TB.kbx_pp__s.k0 + esc(t.title) + ' | Kolaboro"><meta property="og:description" content="' + esc(t.desc) + '"><meta property="og:url" content="' + url + '"><meta name="twitter:card" content="summary">' +
-    '<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>' +
-    '<script type="application/ld+json">' + JSON.stringify(ld).replace(/</g, '\\u003c') + '</script>' + TB.kbx_pp__s.CSS;
-  const res = new HTMLRewriter()
-    .on('title', { element(e) { e.remove(); } })
-    .on(TB.kbx_pp__s.k1, { element(e) { e.remove(); } })
-    .on('script[type="application/ld+json"]', { element(e) { e.remove(); } })
-    .on('head', { element(e) { e.append(tags, { html: true }); } })
-    .on('main', { element(e) { e.setAttribute('data-clarity-mask', 'True'); e.setInnerContent(body(lang) + '<script>' + JS + '</script>', { html: true }); } })
-    .on('details.lsw a[hreflang]', { element(e) { const l = e.getAttribute('hreflang'); if (LANGS.includes(l)) e.setAttribute('href', pre(l) + path); } })
-    .transform(new Response(shellRes.body, { headers: { 'content-type': 'text/html; charset=utf-8' } }));
-  return await res.text();
+const t = tr(lang), path = PATH, url = ORIGIN + pre(lang) + path;
+const alts = LANGS.map(l => '<link rel="alternate" hreflang="' + l + '" href="' + ORIGIN + pre(l) + path + '">').join('') + TB.kbx_pp__t.k0 + ORIGIN + path + '">';
+const ld = { '@context': 'https://schema.org', '@graph': [
+{ '@type': 'WebApplication', name: 'Kolaboro ' + t.title, url, description: t.desc, inLanguage: lang, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Any', isAccessibleForFree: true, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' } },
+{ '@type': 'BreadcrumbList', itemListElement: [['Kolaboro', ORIGIN + pre(lang) + '/'], [t.crumb_tools, ORIGIN + '/tools/'], [t.title, url]].map((x, i) => ({ '@type': 'ListItem', position: i + 1, name: x[0], item: x[1] })) }] };
+const tags = '<title>' + esc(t.title) + TB.kbx_pp__t.k1 + esc(t.desc) + '"><link rel="canonical" href="' + url + '">' + alts +
+TB.kbx_pp__s.k0 + esc(t.title) + TB.kbx_pp__t.k2 + esc(t.desc) + '"><meta property="og:url" content="' + url + TB.kbx_pp__t.k3 +
+TB.kbx_pp__t.k4 +
+'<script type="application/ld+json">' + JSON.stringify(ld).replace(/</g, '\\u003c') + '</script>' + TB.kbx_pp__s.CSS;
+const res = new HTMLRewriter()
+.on('title', { element(e) { e.remove(); } })
+.on(TB.kbx_pp__s.k1, { element(e) { e.remove(); } })
+.on('script[type="application/ld+json"]', { element(e) { e.remove(); } })
+.on('head', { element(e) { e.append(tags, { html: true }); } })
+.on('main', { element(e) { e.setAttribute('data-clarity-mask', 'True'); e.setInnerContent(body(lang) + '<script>' + JS + '</script>', { html: true }); } })
+.on('details.lsw a[hreflang]', { element(e) { const l = e.getAttribute('hreflang'); if (LANGS.includes(l)) e.setAttribute('href', pre(l) + path); } })
+.transform(new Response(shellRes.body, { headers: { 'content-type': 'text/html; charset=utf-8' } }));
+return await res.text();
 }
-
 export async function handle(req, u, env, ctx, shell) {
-  if (req.method !== 'GET' && req.method !== 'HEAD') return null;
-  const m = u.pathname.match(/^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?tools\/permit-photo(\/?)$/); if (!m) return null;
-  if (!m[2]) return new Response(null, { status: 301, headers: { location: u.pathname + '/' + u.search, 'cache-control': 'public, max-age=86400' } });
-  const lang = m[1] || 'en';
-  const sh = await shell(pre(lang) + '/how-we-score/');
-  if (!sh || sh.status !== 200) return null;
-  return new Response(await assemble(sh, lang), { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=300' } });
+if (req.method !== 'GET' && req.method !== 'HEAD') return null;
+const m = u.pathname.match(/^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?tools\/permit-photo(\/?)$/); if (!m) return null;
+if (!m[2]) return new Response(null, { status: 301, headers: { location: u.pathname + '/' + u.search, 'cache-control': 'public, max-age=86400' } });
+const lang = m[1] || 'en';
+const sh = await shell(pre(lang) + '/how-we-score/');
+if (!sh || sh.status !== 200) return null;
+return new Response(await assemble(sh, lang), { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=300' } });
 }

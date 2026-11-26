@@ -1,33 +1,21 @@
-// kolaboro.com batch 32 (n32s, 19 Nov 2026): SEO remainder.
-//   load(env)              strings from /data/n32s-i18n.json (static asset), read once per isolate, so the worker bundle stays small
-//   answer(req, u, env, r) item 217: one dated, sourced answer line under the h1 of the data hubs that had none (all projects, rankings,
-//                          transparency rankings by place, handover hub, comparisons, market files). Counted from the same data as the
-//                          pages (named.json): projects tracked, markets, countries, permit or licence number published, handover date
-//                          on record, past that date. The line carries data-cite so /k/cite29.js gives it a "Cite" button.
-//   doneLab(lang)          item 199: title words for completed projects ("<name> reviews 2026: completed, buyer reports and record")
-// Rules kept: facts with source and date; Sumba, Eco Beach City and Equinox never counted (named.json's project list already leaves
-// them out); 8 languages, Arabic RTL; no Review schema.
+// comments: _notes/kolaboro-worker-comments.txt
 import { TR_PLACES } from './kbx_tr_places.js';
 import { mkName } from './kbx_hdate.js';
-
 const ORIGIN = 'https://kolaboro.com';
 const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' };
 const esc = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 let S = null, SP = null;
 export async function load(env) {
-  if (S) return S; if (SP) return SP;
-  SP = (async () => { let v = null;
-    try { if (env && env.ASSETS) { const r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/n32s-i18n.json')); if (r.ok) v = await r.json(); } } catch (e) { v = null; }
-    if (!v) { try { const r = await fetch(ORIGIN + '/data/n32s-i18n.json', { cf: { cacheTtl: 600, cacheEverything: true } }); if (r.ok) v = await r.json(); } catch (e) { v = null; } }
-    if (v && v.en) S = v; SP = null; return S; })();
-  return SP;
+if (S) return S; if (SP) return SP;
+SP = (async () => { let v = null;
+try { if (env && env.ASSETS) { const r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/n32s-i18n.json')); if (r.ok) v = await r.json(); } } catch (e) { v = null; }
+if (!v) { try { const r = await fetch(ORIGIN + '/data/n32s-i18n.json', { cf: { cacheTtl: 600, cacheEverything: true } }); if (r.ok) v = await r.json(); } catch (e) { v = null; } }
+if (v && v.en) S = v; SP = null; return S; })();
+return SP;
 }
 const t = (lang, k, v) => { if (!S) return ''; const s = (S[lang] && S[lang][k] != null) ? S[lang][k] : S.en[k]; return v && typeof s === 'string' ? s.replace(/\{(\w+)\}/g, (m, a) => v[a] != null ? v[a] : m) : s; };
 export const doneLab = lang => S ? [t(lang, 't_dn'), t(lang, 't_dn2')] : null;
 export const isDone = (x, c) => x.st === 'completed' || x.sts === 'completed' || !!(c && c.stage === 'completed');
-
-// ------------------------------------------------------------------------------------------------ item 217
-// hubs that get the line (language prefix removed); place hubs name their markets
 const HUB = /^\/(?:projects|rankings|rankings\/transparency|rankings\/transparency\/[a-z0-9-]{2,40}|handover|vs|m\/[^/.]{2,60})\/$/;
 const slugA = s => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 function scope(p) {   // null: whole dataset; { mks, name } for a place
@@ -39,14 +27,14 @@ function scope(p) {   // null: whole dataset; { mks, name } for a place
 }
 const CNT = new WeakMap();
 function counts(N, ix, sc) {
-  const key = sc ? (sc.mks ? sc.mks.join('|') : 's:' + sc.slug) : '*';
-  let M = CNT.get(ix); if (!M) { M = new Map(); CNT.set(ix, M); }
-  if (M.has(key)) return M.get(key);
-  const P = ix.P.filter(x => !sc || (sc.mks ? sc.mks.includes(x.mk) : slugA(x.mk) === sc.slug));
-  const o = { n: P.length, m: new Set(P.map(x => x.mk)).size, c: new Set(P.map(x => String(x.co || '').replace(/\s*\(.*\)$/, '').replace(/^Saint /, 'St '))).size,   // "Puerto Rico (USA)", "Saint Lucia": one country each, as on /countries/
-    pn: 0, hd: 0, od: 0, mk: P.length ? P[0].mk : null };
-  for (const x of P) { if (x.pn) o.pn++; if (N.handoverOf(ix, x)) o.hd++; if (N.overdueOf(ix, x)) o.od++; }
-  M.set(key, o); return o;
+const key = sc ? (sc.mks ? sc.mks.join('|') : 's:' + sc.slug) : '*';
+let M = CNT.get(ix); if (!M) { M = new Map(); CNT.set(ix, M); }
+if (M.has(key)) return M.get(key);
+const P = ix.P.filter(x => !sc || (sc.mks ? sc.mks.includes(x.mk) : slugA(x.mk) === sc.slug));
+const o = { n: P.length, m: new Set(P.map(x => x.mk)).size, c: new Set(P.map(x => String(x.co || '').replace(/\s*\(.*\)$/, '').replace(/^Saint /, 'St '))).size,
+pn: 0, hd: 0, od: 0, mk: P.length ? P[0].mk : null };
+for (const x of P) { if (x.pn) o.pn++; if (N.handoverOf(ix, x)) o.hd++; if (N.overdueOf(ix, x)) o.od++; }
+M.set(key, o); return o;
 }
 export async function answer(req, u, env, r) {
   if (req.method !== 'GET' || !r || r.status !== 200 || !/text\/html/.test(r.headers.get('content-type') || '')) return r;

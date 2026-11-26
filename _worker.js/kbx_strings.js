@@ -1,11 +1,4 @@
-// kolaboro.com n32w (19 Nov 2026): string tables kept as static JSON instead of worker code.
-// Cloudflare Pages refuses every build when the _worker.js directory passes 25 MiB (18 Nov 2026), so the large string tables of the
-// kbx_*_i18n.js modules (and the rule notes of kbx_buy_notes.js / kbx_buy_c29.js; NT29 is merged into NT, BS29 into BS, the overrides of kbx_facets_i18n into FS) live in /_s/kolaboro.com/data/i18n/<module>.json.
-// Each module keeps its export as an empty object; ready(env) fetches every file once per isolate (env.ASSETS, in parallel) and copies
-// the tables into those same objects, so code that imported them reads the full strings. index.js awaits ready() at the start of every
-// kolaboro.com request, before any module that uses the strings runs. Rule for new code: never read these tables at module top level;
-// put new string tables in a JSON file here (or in /data/<x>-i18n.json loaded by the module itself), not in the worker.
-// Size guard: /_s/kolaboro.com/open/worker-size-guard.sh (run by open/pre-push.sh, fails above 24.6 MiB), documented on /engineering/.
+// comments: _notes/kolaboro-worker-comments.txt
 import { T as named } from './kbx_named_i18n.js';
 import { H } from './kbx_h29_i18n.js';
 import { FS } from './kbx_facets_i18n.js';
@@ -25,23 +18,20 @@ import { CS } from './kbx_cohort_i18n.js';
 import { C as n31dC, S as n31dS } from './kbx_n31d_i18n.js';
 import { E } from './kbx_e27_i18n.js';
 import { C as kbx_n30a_i18n_C } from './kbx_n30a_i18n.js';
-
-// module-level tables of code modules (n32w step 2): each module reads TB.<module>_<name>, filled here
 export const TB = { kbx_stage_S: {}, kbx_n29i_T: {}, kbx_n29i_BT: {}, kbx_n29i_AR: {}, kbx_n29i_CTR: {}, kbx_plot_T: {}, kbx_land_S: {}, kbx_pp_S: {}, kbx_around_S: {},
-  kbx_bulkix_T: {}, kbx_web_S: {}, kbx_money_S: {}, kbx_watch_S: {}, kbx_net_T: {}, kbx_paper_T: {}, kbx_paper_N: {}, kbx_rules_S: {}, kbx_n33a_S: {}, kbx_n33c_S: {} };
+kbx_bulkix_T: {}, kbx_web_S: {}, kbx_money_S: {}, kbx_watch_S: {}, kbx_net_T: {}, kbx_paper_T: {}, kbx_paper_N: {}, kbx_rules_S: {}, kbx_n33a_S: {}, kbx_n33c_S: {} };
 export const FILES = {
-  kbx_named_i18n: { T: named }, kbx_h29_i18n: { H }, kbx_facets_i18n: { FS }, kbx_e29_i18n: { E29 }, kbx_trust_i18n: { TS },
-  kbx_tr_i18n: { TRS }, kbx_t27_i18n: { T27 }, kbx_n30a_i18n: { S: n30aS }, kbx_n30c_i18n: { S: n30cS }, kbx_fc_i18n: { FT },
-  kbx_n30b_i18n: { T: n30bT }, kbx_buy_i18n: { BS }, kbx_cite_i18n: { S: citeS }, kbx_buy_c29: { BS29, GL29, NT29, TCS },
-  kbx_buy_notes: { NT }, kbx_cohort_i18n: { CS }, kbx_n31d_i18n: { C: n31dC, S: n31dS }, kbx_e27_i18n: { E },
-  kbx_stage: { S: TB.kbx_stage_S }, kbx_n29i: { T: TB.kbx_n29i_T, BT: TB.kbx_n29i_BT, AR: TB.kbx_n29i_AR, CTR: TB.kbx_n29i_CTR }, kbx_plot: { T: TB.kbx_plot_T }, kbx_land: { S: TB.kbx_land_S },
-  kbx_pp: { S: TB.kbx_pp_S }, kbx_around: { S: TB.kbx_around_S },
-  kbx_bulkix: { T: TB.kbx_bulkix_T }, kbx_web: { S: TB.kbx_web_S }, kbx_money: { S: TB.kbx_money_S }, kbx_watch: { S: TB.kbx_watch_S },
-  kbx_net: { T: TB.kbx_net_T }, kbx_paper: { T: TB.kbx_paper_T, N: TB.kbx_paper_N }, kbx_rules: { S: TB.kbx_rules_S },
-  kbx_n33a: { S: TB.kbx_n33a_S },   // n33a (batch 33): /delays/, report byline, hub feed titles
-  kbx_n33c: { S: TB.kbx_n33c_S },   // n33c (20 Nov 2026): search titles and descriptions from the page data
+kbx_named_i18n: { T: named }, kbx_h29_i18n: { H }, kbx_facets_i18n: { FS }, kbx_e29_i18n: { E29 }, kbx_trust_i18n: { TS },
+kbx_tr_i18n: { TRS }, kbx_t27_i18n: { T27 }, kbx_n30a_i18n: { S: n30aS }, kbx_n30c_i18n: { S: n30cS }, kbx_fc_i18n: { FT },
+kbx_n30b_i18n: { T: n30bT }, kbx_buy_i18n: { BS }, kbx_cite_i18n: { S: citeS }, kbx_buy_c29: { BS29, GL29, NT29, TCS },
+kbx_buy_notes: { NT }, kbx_cohort_i18n: { CS }, kbx_n31d_i18n: { C: n31dC, S: n31dS }, kbx_e27_i18n: { E },
+kbx_stage: { S: TB.kbx_stage_S }, kbx_n29i: { T: TB.kbx_n29i_T, BT: TB.kbx_n29i_BT, AR: TB.kbx_n29i_AR, CTR: TB.kbx_n29i_CTR }, kbx_plot: { T: TB.kbx_plot_T }, kbx_land: { S: TB.kbx_land_S },
+kbx_pp: { S: TB.kbx_pp_S }, kbx_around: { S: TB.kbx_around_S },
+kbx_bulkix: { T: TB.kbx_bulkix_T }, kbx_web: { S: TB.kbx_web_S }, kbx_money: { S: TB.kbx_money_S }, kbx_watch: { S: TB.kbx_watch_S },
+kbx_net: { T: TB.kbx_net_T }, kbx_paper: { T: TB.kbx_paper_T, N: TB.kbx_paper_N }, kbx_rules: { S: TB.kbx_rules_S },
+kbx_n33a: { S: TB.kbx_n33a_S },
+kbx_n33c: { S: TB.kbx_n33c_S },
 };
-// n40 k5 (26 Nov 2026): more tables of code modules moved to /data/i18n/<module>.json (worker size limit)
 TB.kbx_j_map_MAP = {}; (FILES.kbx_j_map || (FILES.kbx_j_map = {}))["MAP"] = TB.kbx_j_map_MAP;
 TB.kbx_u27_S = {}; (FILES.kbx_u27 || (FILES.kbx_u27 = {}))["S"] = TB.kbx_u27_S;
 TB.kbx_named_qa_S = {}; (FILES.kbx_named_qa || (FILES.kbx_named_qa = {}))["S"] = TB.kbx_named_qa_S;
@@ -64,10 +54,8 @@ TB.kbx_fc_FT2 = {}; (FILES.kbx_fc || (FILES.kbx_fc = {}))["FT2"] = TB.kbx_fc_FT2
 TB.kbx_n31b_cap_CAP = {}; (FILES.kbx_n31b_cap || (FILES.kbx_n31b_cap = {}))["CAP"] = TB.kbx_n31b_cap_CAP;
 TB.kolaboro_OPEN_DOC = {}; (FILES.kolaboro || (FILES.kolaboro = {}))["OPEN_DOC"] = TB.kolaboro_OPEN_DOC;
 TB.kolaboro_DESK_T = {}; (FILES.kolaboro || (FILES.kolaboro = {}))["DESK_T"] = TB.kolaboro_DESK_T;
-TB.index_K = {}; FILES.index = { K: TB.index_K };   // /__k/kcheck.js and /__k/ktraffic.js (index.js kScript)
-// n40 k5 end
-TB.kbx_ticker_S = {}; FILES.kbx_ticker = { S: TB.kbx_ticker_S };   // n40 k7: footer strings of kbx_ticker.js
-// n40 k17 (26 Nov 2026): long static strings of code modules moved to /data/i18n/k17s.json (one file, one key per module) (worker size limit)
+TB.index_K = {}; FILES.index = { K: TB.index_K };
+TB.kbx_ticker_S = {}; FILES.kbx_ticker = { S: TB.kbx_ticker_S };
 TB.kbx_404__s = {}; (FILES.k17s || (FILES.k17s = {}))["kbx_404"] = TB.kbx_404__s;
 TB.kbx_a__s = {}; (FILES.k17s || (FILES.k17s = {}))["kbx_a"] = TB.kbx_a__s;
 TB.kbx_acct__s = {}; (FILES.k17s || (FILES.k17s = {}))["kbx_acct"] = TB.kbx_acct__s;
@@ -166,11 +154,12 @@ TB.kbx_xray_ev__s = {}; (FILES.k17s || (FILES.k17s = {}))["kbx_xray_ev"] = TB.kb
 TB.kbx_y__s = {}; (FILES.k17s || (FILES.k17s = {}))["kbx_y"] = TB.kbx_y__s;
 TB.kbx_z__s = {}; (FILES.k17s || (FILES.k17s = {}))["kbx_z"] = TB.kbx_z__s;
 TB.kolaboro__s = {}; (FILES.k17s || (FILES.k17s = {}))["kolaboro"] = TB.kolaboro__s;
-// n40 k17 end
+// n40 k19 (26 Nov 2026): long static strings of code modules moved to /data/i18n/k19s.json (one file, one key per module) (worker size limit)
+for (const m of 'kbx_404 kbx_a kbx_acct kbx_around kbx_b kbx_bots kbx_bulk kbx_bulkix kbx_buy kbx_cal kbx_cite kbx_cohort kbx_d kbx_data kbx_disc kbx_e kbx_e27 kbx_e29 kbx_e29_lines kbx_f kbx_facets kbx_fc kbx_filings kbx_follow kbx_fraud kbx_g kbx_g27 kbx_gaz kbx_h kbx_h29 kbx_i kbx_ins kbx_j kbx_k kbx_l kbx_land kbx_lastmod kbx_live kbx_lookup kbx_money kbx_n kbx_n27a kbx_n27lead kbx_n29i kbx_n30a kbx_n30b kbx_n30c kbx_n30c_named kbx_n31a kbx_n31b kbx_n31b_page kbx_n31c kbx_n31d kbx_n31e kbx_n31s kbx_n32x kbx_n33a kbx_n33b kbx_n33c kbx_n33l kbx_n34a kbx_n34b kbx_n34c kbx_n35a kbx_n35b kbx_n37u kbx_named kbx_named_diff kbx_named_plus kbx_named_sat kbx_net kbx_numbers kbx_o kbx_og kbx_p kbx_p29 kbx_p_hz kbx_paper kbx_plot kbx_pp kbx_q kbx_qa kbx_r kbx_rules kbx_see kbx_ship kbx_space kbx_stage kbx_t kbx_t27 kbx_tr kbx_trust kbx_u kbx_u26 kbx_u27 kbx_v kbx_w kbx_watch kbx_web kbx_x kbx_xc kbx_xray kbx_xray_ev kbx_y kbx_z kolaboro'.split(' ')) (FILES.k19s || (FILES.k19s = {}))[m] = TB[m + '__t'] = {};
+// n40 k19 end
 const done = new Set();
 let pend = null;
 export const stat = { loaded: 0, files: Object.keys(FILES).length, ms: 0, errors: 0, at: null };
-
 async function one(env, name) {
   // r3u (batch 37): one more try per file; a failed read left the tables empty for that request, and pages then threw (seen as rare 500/503)
   let j = null, err = null;
@@ -181,19 +170,18 @@ async function one(env, name) {
   for (const [k, obj] of Object.entries(FILES[name])) { if (j[k] && typeof j[k] === 'object') Object.assign(obj, j[k]); else throw new Error(name + '.' + k + ' missing'); }
   done.add(name);
 }
-// Resolves when every table is filled; a file that failed is tried again on the next request (never caches a failure).
 export function ready(env) {
-  if (done.size === stat.files) return Promise.resolve(true);
-  if (!pend) {
-    const t0 = Date.now();
-    pend = (async () => {
-      if (!env || !env.ASSETS) return false;
-      const rs = await Promise.allSettled(Object.keys(FILES).filter(n => !done.has(n)).map(n => one(env, n)));
-      stat.errors += rs.filter(x => x.status === 'rejected').length;
-      stat.loaded = done.size; stat.ms = Date.now() - t0; stat.at = new Date().toISOString();
-      return done.size === stat.files;
-    })().finally(() => { pend = null; });
-  }
-  return pend;
+if (done.size === stat.files) return Promise.resolve(true);
+if (!pend) {
+const t0 = Date.now();
+pend = (async () => {
+if (!env || !env.ASSETS) return false;
+const rs = await Promise.allSettled(Object.keys(FILES).filter(n => !done.has(n)).map(n => one(env, n)));
+stat.errors += rs.filter(x => x.status === 'rejected').length;
+stat.loaded = done.size; stat.ms = Date.now() - t0; stat.at = new Date().toISOString();
+return done.size === stat.files;
+})().finally(() => { pend = null; });
+}
+return pend;
 }
 export const isReady = () => done.size === stat.files;

@@ -1,6 +1,4 @@
-// kolaboro.com batch 31 (agent n31e): client script of the tools in kbx_n31e.js, served as /k/n31e.js?v=<N31V>. Runs only on those pages.
-// Nothing typed or dropped is stored or sent, except: the 4-character hash prefixes of a pasted link (/api/x/j/xr), a typed project name
-// (/api/v1/find) and a project slug (/api/v1/handover-history/<slug>). PDFs are read with the self-hosted pdf.js of /tools/contract-check/.
+// comments: _notes/kolaboro-worker-comments.txt
 function n31() {
   'use strict';
   var LG = (document.documentElement.lang || 'en').slice(0, 2), LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' }[LG] || 'en-GB';
