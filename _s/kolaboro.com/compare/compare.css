@@ -1,0 +1,67 @@
+/* Compare projects page (/compare/?ids=) */
+.cp-hero{padding:clamp(28px,5vw,64px) 0 clamp(24px,3vw,36px);border-bottom:1px solid var(--line)}
+.cp-hero h1{font-size:clamp(2.1rem,5vw,4rem);line-height:1;letter-spacing:-.03em;font-weight:850;max-width:18ch;margin-top:14px}
+.cp-hero .lead{margin-top:14px;max-width:56ch}
+.cp-add{position:relative;margin-top:24px;max-width:560px}
+.cp-add label{display:block;font-weight:700;margin-bottom:8px}
+.cp-in{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.cp-in input{flex:1 1 240px;min-width:0;min-height:48px;font:inherit;padding:10px 14px;border:2px solid var(--ink);border-radius:12px;background:var(--card,#fff)}
+.cp-hint{font-size:.86rem;color:var(--muted)}
+.cp-res{position:absolute;z-index:20;left:0;right:0;top:100%;margin:6px 0 0;padding:6px;list-style:none;background:var(--card,#fff);border:1px solid var(--line);border-radius:12px;box-shadow:0 12px 30px rgba(23,33,43,.14);max-height:340px;overflow:auto}
+.cp-res button{display:flex;justify-content:space-between;gap:10px;width:100%;min-height:44px;align-items:center;text-align:left;font:inherit;background:none;border:0;border-radius:8px;padding:8px 10px;cursor:pointer;color:inherit}
+.cp-res button:hover,.cp-res button:focus-visible{background:var(--concrete);outline:none}
+.cp-res small{color:var(--muted);font-size:.82rem;white-space:nowrap}
+.cp-res li.e{padding:10px;color:var(--muted)}
+.cp-sec{padding:clamp(24px,4vw,48px) 0 clamp(36px,5vw,64px)}
+.cp-tw{position:relative;overflow-x:auto;border:1px solid var(--line);border-radius:16px;background:var(--card,#fff);-webkit-overflow-scrolling:touch}
+.cp-tw:focus-visible{outline:3px solid var(--hivis);outline-offset:2px}
+.cp-t{width:100%;border-collapse:separate;border-spacing:0;font-size:.94rem;min-width:560px}
+.cp-t th,.cp-t td{padding:12px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.cp-t tbody tr:last-child th,.cp-t tbody tr:last-child td{border-bottom:0}
+.cp-t thead th{background:var(--concrete);vertical-align:bottom}
+.cp-t th[scope=row]{position:sticky;left:0;z-index:1;background:var(--card,#fff);font-weight:700;width:180px;min-width:140px;box-shadow:1px 0 0 var(--line)}
+.cp-t thead th:first-child{position:sticky;left:0;z-index:2;box-shadow:1px 0 0 var(--line)}
+.cp-t tr.g th{background:var(--paper);font-size:.74rem;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-2);padding:8px 14px}
+.cp-t tr.g td{background:var(--paper);padding:8px 14px}
+.cp-h a{font-weight:850;font-size:1.05rem;letter-spacing:.02em;color:var(--ink)}
+.cp-h small{display:block;color:var(--muted);font-weight:500;font-size:.84rem;margin-top:2px}
+.cp-x{margin-top:8px;font:inherit;font-size:.84rem;font-weight:700;background:none;border:1px solid var(--line);border-radius:999px;padding:6px 12px;min-height:36px;cursor:pointer;color:var(--ink-2)}
+.cp-x:hover{border-color:var(--ink)}
+.cp-x:focus-visible{outline:3px solid var(--hivis);outline-offset:2px}
+.cp-t td.best{background:var(--ok-bg);box-shadow:inset 3px 0 0 var(--ok)}
+.cp-t td.best::after{content:"Best";display:inline-block;margin-left:8px;font-size:.66rem;font-weight:800;text-transform:uppercase;letter-spacing:.04em;color:var(--t-ok,#0B5A3E);vertical-align:1px}
+.cp-pub{font-weight:700;margin-right:6px}
+.cp-pub.y{color:var(--ok)}
+.cp-pub.p{color:#8A5A0F}
+.cp-pub.n{color:#6B747C}
+.cp-big{font-size:1.4rem;font-weight:850;letter-spacing:-.02em}
+.lv{display:inline-block;font-size:.7rem;font-weight:800;letter-spacing:.03em;text-transform:uppercase;padding:3px 8px;border-radius:999px;white-space:nowrap}
+.lv.registry{background:#17212B;color:#fff}
+.lv.independent{background:var(--t-ok-bg,#DDEFE7);color:var(--t-ok,#0B5A3E)}
+.lv.developer{background:var(--t-bg,#ECEAE4);color:var(--t-mut,#4A5560)}
+.lv.contradicted{background:#FBE3DF;color:#9A2A14}
+.lv.none{color:var(--muted);border:1px dashed rgba(23,33,43,.3)}
+.cp-note{font-size:.86rem;color:var(--muted);margin-top:14px;line-height:1.5}
+.cp-swipe{display:none;font-size:.84rem;color:var(--muted);margin:0 0 8px}
+@media(max-width:700px){.cp-swipe{display:block}}
+.cp-empty h2{font-size:clamp(1.4rem,2.8vw,2rem);letter-spacing:-.02em}
+.cp-empty .sub{color:var(--ink-2);margin-top:8px;max-width:60ch;line-height:1.5}
+.cp-sets{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:20px}
+@media(max-width:760px){.cp-sets{grid-template-columns:1fr}}
+.cp-set{background:var(--card,#fff);border:1px solid var(--line);border-radius:16px;padding:18px}
+.cp-set h3{font-size:1.1rem}
+.cp-set p{color:var(--muted);font-size:.9rem;margin-top:4px}
+.cp-set ul{list-style:none;padding:0;margin:12px 0 0;display:grid;gap:8px}
+.cp-set li a{display:flex;justify-content:space-between;gap:10px;align-items:center;min-height:44px;padding:8px 12px;border:1px solid var(--line);border-radius:10px;color:inherit;text-decoration:none}
+.cp-set li a:hover{border-color:var(--ink)}
+.cp-set li small{color:var(--muted);font-size:.84rem;text-align:right}
+.cp-set .btn{margin-top:14px;min-height:48px}
+.cp-act{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+.cp-act .btn{min-height:48px}
+@media(max-width:700px){.cp-t{font-size:.88rem;min-width:0}.cp-t th[scope=row],.cp-t tr.g th{width:118px;min-width:118px;max-width:118px;padding:10px}.cp-t td,.cp-t thead th{padding:10px;min-width:132px}.cp-t thead th:first-child{min-width:118px}}
+.cp-set li a b{color:var(--ink);white-space:nowrap;flex:none}.cp-set li a{color:var(--ink)}
+.cp-chip{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin-top:12px;padding:10px 14px;background:var(--card,#fff);border:1px solid var(--line);border-radius:14px;max-width:60ch}
+.cp-chip a{flex:1 1 220px;color:var(--ink-2);text-decoration:none;line-height:1.4}.cp-chip a b{color:var(--ink);margin-inline-end:6px}.cp-chip a:hover b{text-decoration:underline}
+.cp-chip .cp-x{margin-top:0;min-height:40px}
+.cp-x{min-height:40px}
+.cp-ex{margin-top:18px;max-width:62ch;border-inline-start:3px solid var(--line);padding-inline-start:12px;font-size:.95rem}.cp-ex-h{font-weight:700;margin:0}.cp-ex ul{margin:4px 0 0;padding-inline-start:18px}.cp-ex li{margin:2px 0}.cp-ex-l{margin:4px 0 0}.cp-ex a{min-height:24px}

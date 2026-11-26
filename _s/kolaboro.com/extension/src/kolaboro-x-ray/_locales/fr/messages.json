@@ -1,0 +1,11 @@
+{
+ "name": {
+  "message": "Kolaboro X-ray : vérifier les projets sur plan"
+ },
+ "description": {
+  "message": "Sur les portails et sites de promoteurs, montre les dossiers Kolaboro et lance une radiographie gratuite avec des sources publiques."
+ },
+ "action": {
+  "message": "Radiographie Kolaboro de cette page"
+ }
+}

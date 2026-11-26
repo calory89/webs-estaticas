@@ -1,0 +1,1 @@
+const t="https://jurimatch.com",o=(i,a,n,r="en",e="2026-10-31")=>({"@context":"https://schema.org","@type":"Article",headline:i,description:a,inLanguage:r,datePublished:e,dateModified:e,mainEntityOfPage:`${t}${n}`,author:{"@type":"Organization",name:"JuriMatch",url:t},publisher:{"@type":"Organization",name:"JuriMatch",url:t}});export{o as g};

@@ -33,8 +33,8 @@
 <script>
 (function(){
 var T={"firing": "Épico", "good": "Bueno", "today": "Hoy", "tomorrow": "Mañana", "off": " · viento de tierra", "light": " · viento flojo", "none": "Nada épico ese día en la lista. Prueba los próximos tres días.", "err": "No se pudo cargar la previsión. Inténtalo en un momento.", "loc": "es-ES", "ago": ["Actualizado hace ", " min", " h"], "inw": " del mundo"},PRE="/es";
-var U="https://ixkilrcelljcyrtwxwde.supabase.co/rest/v1/sr_epic_now?select=spot_id,name,slug,country,iso,rank,day,h,p,ws,rel,q,updated_at&q=gte.3.75&order=q.desc,rank.asc&limit=300",
-K="sb_publishable_lA4msmtP4iQStBucZ68NFg_jbFcwGRm",ROWS=[],D="";
+var U="https://surfranking.com/__sb/surfranking/rest/v1/sr_epic_now?select=spot_id,name,slug,country,iso,rank,day,h,p,ws,rel,q,updated_at&q=gte.3.75&order=q.desc,rank.asc&limit=300",
+K="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw",ROWS=[],D="";
 var DN=null;try{DN=new Intl.DisplayNames([T.loc.slice(0,2)],{type:"region"});}catch(e){}
 function cname(r){try{if(DN&&r.iso&&/^[A-Z]{2}$/.test(r.iso))return DN.of(r.iso)||r.country;}catch(e){}return r.country;}
 function flag(i){return i&&/^[A-Z]{2}$/.test(i)?String.fromCodePoint(0x1F1E6+i.charCodeAt(0)-65)+String.fromCodePoint(0x1F1E6+i.charCodeAt(1)-65):"";}

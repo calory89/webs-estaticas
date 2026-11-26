@@ -1,0 +1,35 @@
+Kolaboro off-plan data, November 2026
+=====================================
+
+Licence: CC BY 4.0. Credit: Kolaboro, kolaboro.com. Contact: press@kolaboro.com
+
+Headline numbers
+
+1. 8.2% of tracked off-plan projects with a usable handover date (62 of 755) are past the first handover date on record.
+   Source: https://kolaboro.com/index/delays/ and https://kolaboro.com/data/delay-index.json
+
+2. Median time past the first handover date among those 62 projects: 10.5 months (90th percentile: 35 months).
+   Source: https://kolaboro.com/index/delays/ and https://kolaboro.com/data/delay-index.json
+
+3. 4.1% (31 of 755) are past the handover date their sellers advertise today.
+   Source: https://kolaboro.com/index/delays/ and https://kolaboro.com/data/bali-cases.json
+
+4. Median transparency index across 95 markets with 3 or more tracked projects: 42 out of 100.
+   Source: https://kolaboro.com/transparency-index/ and https://kolaboro.com/api/open/markets
+
+5. Advertised asking-price index, all tracked markets: 100.03 on 2026-11-03 (base 100 on 2026-10-28, same-project pairs only).
+   Source: https://kolaboro.com/index/prices/ and https://kolaboro.com/data/price-index.json
+
+Summary
+
+Kolaboro data show 896 tracked projects across 144 markets in November 2026. Of these, 755 projects have a handover date that can be used for the delay index. History for the delay index starts this month. Among those 755 projects, 62 are past the first handover date, a share of 8.2%, and 31 are past the current advertised handover date, a share of 4.1%. For projects past the first handover date, the median is 10.5 months and the 90th percentile is 35.0 months. In 50 markets, at least 5 projects have a handover date. The transparency index covers 95 markets, with a median of 42.0 on a scale with a maximum of 100. The price index for all markets stands at 100.03, against a base of 100.
+
+(Every number in this summary was checked against the data by code.)
+
+Charts (SVG, CC BY 4.0):
+  https://kolaboro.com/press/monthly/chart-delays.svg  Share of projects past the first promised handover, by market
+  https://kolaboro.com/press/monthly/chart-months-late.svg  Months past the first promised handover, all markets
+  https://kolaboro.com/press/monthly/chart-transparency.svg  Transparency index by market
+
+Method: https://kolaboro.com/index/delays/
+JSON: https://kolaboro.com/press/monthly/release.json

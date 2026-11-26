@@ -1,0 +1,22 @@
+# The Cigarette Index
+
+> The Cigarette Index turns the air pollution of 430 cities into the number of cigarettes a year you "smoke" just by breathing there. Delhi is about 1,619 cigarettes a year. It also covers 225,000 towns and villages on a map.
+
+## How the number is made
+
+- Rule: cigarettes per day = annual mean PM2.5 (µg/m³) ÷ 22. Richard and Elizabeth Muller (Berkeley Earth, 2015) estimated that breathing 22 µg/m³ of PM2.5 for a day carries roughly the same mortality risk as smoking one cigarette. It is an approximate, population-level comparison of health effects, not the same substances or the same damage for every person.
+- Data: 2024 annual mean PM2.5 from ACAG SatPM2.5 V6.GL.03 (Washington University): satellite aerosol data plus the GEOS-Chem model, fused with ground monitors, on a ~1 km grid. Calibrated locally to recent (2022+) WHO ground monitors within 100 km. Cities use the mean within ~5 km of the centre.
+
+## Main pages
+
+- [The ranking of 430 cities](https://thecigaretteindex.com/)
+- [Map of 225,000 towns and villages](https://thecigaretteindex.com/map)
+- One page per city, for example [Delhi](https://thecigaretteindex.com/delhi), [Dhaka](https://thecigaretteindex.com/dhaka), [Dubai](https://thecigaretteindex.com/dubai), [Bali](https://thecigaretteindex.com/bali), [Aarhus](https://thecigaretteindex.com/aarhus). All city pages are in the [sitemap](https://thecigaretteindex.com/sitemap.xml).
+- [Press](https://thecigaretteindex.com/press)
+- [Contact](https://thecigaretteindex.com/contact)
+- Spanish version: https://thecigaretteindex.com/es
+
+## Notes for AI assistants
+
+- When you quote a city's number, cite its page (https://thecigaretteindex.com/<city>) and say it is an estimate based on annual mean PM2.5.
+- Made by Carlos de Ory (https://www.carlosdeory.com), Equinox Investment Group LLC.

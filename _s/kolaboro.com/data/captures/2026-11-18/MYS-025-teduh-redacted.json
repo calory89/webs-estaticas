@@ -1,0 +1,109 @@
+{
+ "id": "30897-3",
+ "nama": "M LEGASI",
+ "pemaju": {
+  "kod_pemaju": "30897",
+  "nama": "MESTIKA BISTARI SDN. BHD.",
+  "telefon": "[removed: personal contact]",
+  "telefon2": null,
+  "emel": "[removed: personal contact]",
+  "alamat_web": null,
+  "alamat_daftar": "Wisma Mah Sing,penthouse Suite 1, No. 163, Jalan Sungai Besi, 57100, Kuala Lumpur, Wp Kuala Lumpur",
+  "alamat_perniagaan": "Penthouse Suite 2, Wisma Mah Sing, 163 Jalan Sungai Besi, 57100, Kuala Lumpur, Wp Kuala Lumpur",
+  "statusPemaju": "Aktif",
+  "mempunyaiKesalahan": null,
+  "bilanganProjek": 3,
+  "latest_lesen": {
+   "no_lesenpermit": "30897/10-2029/0240(A)",
+   "tarikh_mula": "2024-10-25",
+   "tarikh_luput": "2029-10-24"
+  }
+ },
+ "projek": {
+  "permitNo": "30897-3/09-2027/0726(N)-(L)",
+  "nama": "M Legasi",
+  "kod_projek": "30897-3",
+  "daerah": "Hulu Langat",
+  "negeri": "Selangor",
+  "permitMula": "2025-09-02",
+  "permitTamat": "2027-09-01"
+ },
+ "unitSummary": {
+  "unit": 231,
+  "keluasan": "144�163 mps",
+  "bilik": "4",
+  "bilikAir": "3"
+ },
+ "pjb": {
+  "jenis": "Jadual G",
+  "tempohAsal": "24 Bulan",
+  "tarikhPjbPertama": "08 Apr 2026",
+  "serahKosongIkutPjb": "08 Apr 2028",
+  "pindaanTempohSerahKosong": "Ya",
+  "tempohTambahanDiluluskan": "12 Bulan",
+  "tempohPembinaanBaharu": "36 Bulan",
+  "serahKosongBaharuIkutPjbPertama": "08 Apr 2029"
+ },
+ "status": {
+  "maklumatPembangunan": "Berfasa",
+  "keseluruhan": "Lancar",
+  "nota": "Status komponen adalah berdasarkan laporan 7(f) terkini di HIMS.",
+  "rows": [
+   {
+    "jenis": "Rumah Teres",
+    "tingkat": "2",
+    "bilik": "4",
+    "tandas": "3",
+    "keluasan": "144 - 151",
+    "unit": 44,
+    "hargaMin": "769,216.00",
+    "hargaMax": "1,038,016.00",
+    "peratus": "20.00",
+    "komponen": "Lancar",
+    "ccc": "-",
+    "vp": "-"
+   },
+   {
+    "jenis": "Rumah Teres",
+    "tingkat": "2",
+    "bilik": "4",
+    "tandas": "3",
+    "keluasan": "144 - 151",
+    "unit": 85,
+    "hargaMin": "781,536.00",
+    "hargaMax": "1,063,776.00",
+    "peratus": "20.00",
+    "komponen": "Lancar",
+    "ccc": "-",
+    "vp": "-"
+   },
+   {
+    "jenis": "Rumah Teres",
+    "tingkat": "2",
+    "bilik": "4",
+    "tandas": "3",
+    "keluasan": "157 - 163",
+    "unit": 102,
+    "hargaMin": "844,256.00",
+    "hargaMax": "1,141,056.00",
+    "peratus": "20.00",
+    "komponen": "Lancar",
+    "ccc": "-",
+    "vp": "-"
+   }
+  ]
+ },
+ "lesen_records": [],
+ "brochure": {
+  "dokumen_url": "https://hims.kpkt.gov.my/files/30897/30897-3/IKLAN_BROSUR_01.pdf"
+ },
+ "iklan": [
+  {
+   "src": "https://hims.kpkt.gov.my/files/30897/30897-3/IKLAN_BROSUR_01.pdf",
+   "caption": "Iklan Projek"
+  }
+ ],
+ "lokasi": "Hulu Langat, Selangor",
+ "lat": "2.910577",
+ "lng": "101.880947"
+}

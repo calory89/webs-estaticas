@@ -1,0 +1,2910 @@
+{
+ "type": "kolaboro-openapi-v1-paths",
+ "built": "2026-11-21T08:57:55Z",
+ "note": "Response schemas inferred from one live answer per endpoint (two levels deep) by /open/sdk-gen.py spec.",
+ "paths": {
+  "/api/v1/projects": {
+   "get": {
+    "operationId": "listProjects",
+    "summary": "Every named project with its key facts (stable slug and id).",
+    "parameters": [],
+    "responses": {
+     "200": {
+      "description": "OK. Signed: x-kolaboro-signature (Ed25519 over \"kolaboro-sig-v1\\n\" + SHA-256 hex of the body).",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/ListProjectsResponse"
+        }
+       }
+      }
+     }
+    },
+    "x-example": {}
+   }
+  },
+  "/api/v1/projects/{slug}": {
+   "get": {
+    "operationId": "getProject",
+    "summary": "One named project: facts, sources, checks, dates.",
+    "parameters": [
+     {
+      "name": "slug",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "description": "Page slug, e.g. amani-melasti"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "OK. Signed: x-kolaboro-signature (Ed25519 over \"kolaboro-sig-v1\\n\" + SHA-256 hex of the body).",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/GetProjectResponse"
+        }
+       }
+      }
+     }
+    },
+    "x-example": {
+     "slug": "amani-melasti"
+    }
+   }
+  },
+  "/api/v1/projects/{slug}/certificate": {
+   "get": {
+    "operationId": "getCertificate",
+    "summary": "Verification certificate: canonical facts, their SHA-256 and the Ed25519 signature.",
+    "parameters": [
+     {
+      "name": "slug",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "description": "Page slug"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "OK. Signed: x-kolaboro-signature (Ed25519 over \"kolaboro-sig-v1\\n\" + SHA-256 hex of the body).",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/GetCertificateResponse"
+        }
+       }
+      }
+     }
+    },
+    "x-example": {
+     "slug": "amani-melasti"
+    }
+   }
+  },
+  "/api/v1/developers": {
+   "get": {
+    "operationId": "listDevelopers",
+    "summary": "Every developer with its projects.",
+    "parameters": [],
+    "responses": {
+     "200": {
+      "description": "OK. Signed: x-kolaboro-signature (Ed25519 over \"kolaboro-sig-v1\\n\" + SHA-256 hex of the body).",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/ListDevelopersResponse"
+        }
+       }
+      }
+     }
+    },
+    "x-example": {}
+   }
+  },
+  "/api/v1/developers/{slug}": {
+   "get": {
+    "operationId": "getDeveloper",
+    "summary": "One developer and its projects.",
+    "parameters": [
+     {
+      "name": "slug",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "description": "Developer slug, e.g. teus-group"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "OK. Signed: x-kolaboro-signature (Ed25519 over \"kolaboro-sig-v1\\n\" + SHA-256 hex of the body).",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/GetDeveloperResponse"
+        }
+       }
+      }
+     }
+    },
+    "x-example": {
+     "slug": "teus-group"
+    }
+   }
+  },
+  "/api/v1/developers/{slug}/website": {
+   "get": {
+    "operationId": "getDeveloperWebsite",
+    "summary": "Website forensics of a developer: reachability, TLS, domain registration.",
+    "parameters": [
+     {
+      "name": "slug",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "description": "Developer slug"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "OK. Signed: x-kolaboro-signature (Ed25519 over \"kolaboro-sig-v1\\n\" + SHA-256 hex of the body).",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/GetDeveloperWebsiteResponse"
+        }
+       }
+      }
+     }
+    },
+    "x-example": {
+     "slug": "teus-group"
+    }
+   }
+  },
+  "/api/v1/find": {
+   "get": {
+    "operationId": "find",
+    "summary": "Free-text search in 8 languages over project names, developers and places.",
+    "parameters": [
+     {
+      "name": "q",
+      "in": "query",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "description": "Query, e.g. \"damac lagoons\" or \"proyectos en Dubái\""
+      }
+     },
+     {
+      "name": "lang",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "string",
+       "enum": [
+        "en",
+        "es",
+        "de",
+        "fr",
+        "nl",
+        "ru",
+        "zh",
+        "ar"
+       ]
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "OK. Signed: x-kolaboro-signature (Ed25519 over \"kolaboro-sig-v1\\n\" + SHA-256 hex of the body).",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/FindResponse"
+        }
+       }
+      }
+     }
+    },
+    "x-example": {
+     "q": "dubai"
+    }
+   }
+  },
+  "/api/v1/changes": {
+   "get": {
+    "operationId": "listChanges",
+    "summary": "Changes since a date, for incremental sync.",
+    "parameters": [
+     {
+      "name": "since",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "string",
+       "description": "YYYY-MM-DD"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "OK. Signed: x-kolaboro-signature (Ed25519 over \"kolaboro-sig-v1\\n\" + SHA-256 hex of the body).",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/ListChangesResponse"
+        }
+       }
+      }
+     }
+    },
+    "x-example": {
+     "since": "2026-11-20"
+    }
+   }
+  },
+  "/api/v1/changes/feed.json": {
+   "get": {
+    "operationId": "changesFeed",
+    "summary": "The same changes as a JSON Feed 1.1.",
+    "parameters": [],
+    "responses": {
+     "200": {
+      "description": "OK. Signed: x-kolaboro-signature (Ed25519 over \"kolaboro-sig-v1\\n\" + SHA-256 hex of the body).",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/ChangesFeedResponse"
+        }
+       }
+      }
+     }
+    },
+    "x-example": {}
+   }
+  },
+  "/api/v1/snapshots": {
+   "get": {
+    "operationId": "getSnapshots",
+    "summary": "The daily snapshot hash chain of /data/named.json.",
+    "parameters": [],
+    "responses": {
+     "200": {
+      "description": "OK. Signed: x-kolaboro-signature (Ed25519 over \"kolaboro-sig-v1\\n\" + SHA-256 hex of the body).",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/GetSnapshotsResponse"
+        }
+       }
+      }
+     }
+    },
+    "x-example": {}
+   }
+  },
+  "/api/v1/data-quality": {
+   "get": {
+    "operationId": "getDataQuality",
+    "summary": "Coverage and freshness of every field, by market.",
+    "parameters": [],
+    "responses": {
+     "200": {
+      "description": "OK. Signed: x-kolaboro-signature (Ed25519 over \"kolaboro-sig-v1\\n\" + SHA-256 hex of the body).",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/GetDataQualityResponse"
+        }
+       }
+      }
+     }
+    },
+    "x-example": {}
+   }
+  },
+  "/api/v1/slippage": {
+   "get": {
+    "operationId": "getSlippage",
+    "summary": "Handover slippage statistics per market (historical, with sample sizes).",
+    "parameters": [],
+    "responses": {
+     "200": {
+      "description": "OK. Signed: x-kolaboro-signature (Ed25519 over \"kolaboro-sig-v1\\n\" + SHA-256 hex of the body).",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/GetSlippageResponse"
+        }
+       }
+      }
+     }
+    },
+    "x-example": {}
+   }
+  },
+  "/api/v1/handover-history/{slug}": {
+   "get": {
+    "operationId": "getHandoverHistory",
+    "summary": "Every handover date on record for a project, with sources.",
+    "parameters": [
+     {
+      "name": "slug",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "description": "Page slug"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "OK. Signed: x-kolaboro-signature (Ed25519 over \"kolaboro-sig-v1\\n\" + SHA-256 hex of the body).",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/GetHandoverHistoryResponse"
+        }
+       }
+      }
+     }
+    },
+    "x-example": {
+     "slug": "amani-melasti"
+    }
+   }
+  },
+  "/api/v1/provenance": {
+   "get": {
+    "operationId": "getProvenance",
+    "summary": "Signed build attestation: commit, dataset hash, worker tree.",
+    "parameters": [],
+    "responses": {
+     "200": {
+      "description": "OK. Signed: x-kolaboro-signature (Ed25519 over \"kolaboro-sig-v1\\n\" + SHA-256 hex of the body).",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/GetProvenanceResponse"
+        }
+       }
+      }
+     }
+    },
+    "x-example": {}
+   }
+  },
+  "/api/v1/delta": {
+   "get": {
+    "operationId": "listDeltas",
+    "summary": "Index of the signed daily delta files.",
+    "parameters": [],
+    "responses": {
+     "200": {
+      "description": "OK. Signed: x-kolaboro-signature (Ed25519 over \"kolaboro-sig-v1\\n\" + SHA-256 hex of the body).",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/ListDeltasResponse"
+        }
+       }
+      }
+     }
+    },
+    "x-example": {}
+   }
+  },
+  "/api/v1/delta/{day}": {
+   "get": {
+    "operationId": "getDelta",
+    "summary": "One daily delta file (exact bytes, signed in x-kolaboro-signature).",
+    "parameters": [
+     {
+      "name": "day",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "description": "YYYY-MM-DD"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "OK. Signed: x-kolaboro-signature (Ed25519 over \"kolaboro-sig-v1\\n\" + SHA-256 hex of the body).",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/GetDeltaResponse"
+        }
+       }
+      }
+     }
+    },
+    "x-example": {
+     "day": "2026-11-20"
+    }
+   }
+  },
+  "/api/v1/delta/{day}.sig": {
+   "get": {
+    "operationId": "getDeltaSignature",
+    "summary": "The Ed25519 signature of one delta file as JSON.",
+    "parameters": [
+     {
+      "name": "day",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "description": "YYYY-MM-DD"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "OK. Signed: x-kolaboro-signature (Ed25519 over \"kolaboro-sig-v1\\n\" + SHA-256 hex of the body).",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/GetDeltaSignatureResponse"
+        }
+       }
+      }
+     }
+    },
+    "x-example": {
+     "day": "2026-11-20"
+    }
+   }
+  },
+  "/api/v1/tlog": {
+   "get": {
+    "operationId": "getTreeHead",
+    "summary": "Signed tree head and entries of the transparency log.",
+    "parameters": [],
+    "responses": {
+     "200": {
+      "description": "OK. Signed: x-kolaboro-signature (Ed25519 over \"kolaboro-sig-v1\\n\" + SHA-256 hex of the body).",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/GetTreeHeadResponse"
+        }
+       }
+      }
+     }
+    },
+    "x-example": {}
+   }
+  },
+  "/api/v1/tlog/proof": {
+   "get": {
+    "operationId": "getInclusionProof",
+    "summary": "Merkle inclusion proof of one project record.",
+    "parameters": [
+     {
+      "name": "project",
+      "in": "query",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "description": "Page slug"
+      }
+     },
+     {
+      "name": "day",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "string",
+       "description": "YYYY-MM-DD"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "OK. Signed: x-kolaboro-signature (Ed25519 over \"kolaboro-sig-v1\\n\" + SHA-256 hex of the body).",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/GetInclusionProofResponse"
+        }
+       }
+      }
+     }
+    },
+    "x-example": {
+     "project": "amani-melasti"
+    }
+   }
+  },
+  "/api/v1/tlog/consistency": {
+   "get": {
+    "operationId": "getConsistencyProof",
+    "summary": "Merkle consistency proof between two log sizes (append-only).",
+    "parameters": [
+     {
+      "name": "first",
+      "in": "query",
+      "required": true,
+      "schema": {
+       "type": "integer"
+      }
+     },
+     {
+      "name": "second",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "integer"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "OK. Signed: x-kolaboro-signature (Ed25519 over \"kolaboro-sig-v1\\n\" + SHA-256 hex of the body).",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/GetConsistencyProofResponse"
+        }
+       }
+      }
+     }
+    },
+    "x-example": {
+     "first": 1
+    }
+   }
+  },
+  "/api/v1/charts/{market}": {
+   "get": {
+    "operationId": "getMarketChart",
+    "summary": "Delay and disclosure figures of a market, with ready SVG charts.",
+    "parameters": [
+     {
+      "name": "market",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "description": "Market slug, e.g. dubai"
+      }
+     },
+     {
+      "name": "lang",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "OK. Signed: x-kolaboro-signature (Ed25519 over \"kolaboro-sig-v1\\n\" + SHA-256 hex of the body).",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/GetMarketChartResponse"
+        }
+       }
+      }
+     }
+    },
+    "x-example": {
+     "market": "dubai"
+    }
+   }
+  },
+  "/api/v1/monitoring": {
+   "get": {
+    "operationId": "getMonitoring",
+    "summary": "Synthetic monitoring of the 20 key pages, 30 days.",
+    "parameters": [],
+    "responses": {
+     "200": {
+      "description": "OK. Signed: x-kolaboro-signature (Ed25519 over \"kolaboro-sig-v1\\n\" + SHA-256 hex of the body).",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/GetMonitoringResponse"
+        }
+       }
+      }
+     }
+    },
+    "x-example": {}
+   }
+  }
+ },
+ "schemas": {
+  "ListProjectsResponse": {
+   "type": "object",
+   "properties": {
+    "api": {
+     "type": "string"
+    },
+    "updated": {
+     "type": "string"
+    },
+    "count": {
+     "type": "integer"
+    },
+    "projects": {
+     "type": "array",
+     "items": {
+      "type": "object"
+     }
+    }
+   },
+   "required": [
+    "api",
+    "count",
+    "projects",
+    "updated"
+   ]
+  },
+  "GetProjectResponse": {
+   "type": "object",
+   "properties": {
+    "api": {
+     "type": "string"
+    },
+    "license": {
+     "type": "string"
+    },
+    "rules": {
+     "type": "string"
+    },
+    "id": {
+     "type": "string"
+    },
+    "slug": {
+     "type": "string"
+    },
+    "name": {
+     "type": "string"
+    },
+    "developer": {
+     "type": "object",
+     "properties": {
+      "name": {
+       "type": "string"
+      },
+      "slug": {
+       "type": "string"
+      },
+      "url": {
+       "type": "string"
+      },
+      "api": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "api",
+      "name",
+      "slug",
+      "url"
+     ]
+    },
+    "location": {
+     "type": "object",
+     "properties": {
+      "area": {
+       "type": "string"
+      },
+      "market": {
+       "type": "string"
+      },
+      "country": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "area",
+      "country",
+      "market"
+     ]
+    },
+    "stage": {
+     "type": "string"
+    },
+    "site_status": {
+     "type": "string"
+    },
+    "reviewed": {
+     "type": "boolean"
+    },
+    "added": {
+     "type": "string"
+    },
+    "last_checked": {
+     "type": "string"
+    },
+    "published_page": {
+     "type": "object",
+     "properties": {
+      "url": {
+       "type": "string"
+      },
+      "host": {
+       "type": "string"
+      },
+      "is_listing_portal": {
+       "type": "boolean"
+      }
+     },
+     "required": [
+      "host",
+      "is_listing_portal",
+      "url"
+     ]
+    },
+    "permit": {
+     "type": "object",
+     "properties": {
+      "number": {},
+      "source": {},
+      "note": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "note"
+     ]
+    },
+    "handover": {
+     "type": "object",
+     "properties": {
+      "date": {
+       "type": "string"
+      },
+      "source": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "date",
+      "source"
+     ]
+    },
+    "overdue_months": {},
+    "promises": {
+     "type": "array",
+     "items": {
+      "type": "object"
+     }
+    },
+    "published_facts": {
+     "type": "object",
+     "properties": {
+      "price_min": {
+       "type": "integer"
+      },
+      "currency": {
+       "type": "string"
+      },
+      "size_min_m2": {
+       "type": "integer"
+      },
+      "size_max_m2": {
+       "type": "integer"
+      },
+      "unit_types": {
+       "type": "array",
+       "items": {}
+      },
+      "payment_plan": {
+       "type": "string"
+      },
+      "deposit_pct": {
+       "type": "integer"
+      },
+      "foreign_ownership": {
+       "type": "string"
+      },
+      "brand": {
+       "type": "string"
+      },
+      "permit_authority": {
+       "type": "string"
+      },
+      "handover_promised": {
+       "type": "string"
+      },
+      "developer_hq": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "brand",
+      "currency",
+      "deposit_pct",
+      "developer_hq",
+      "foreign_ownership",
+      "handover_promised",
+      "payment_plan",
+      "permit_authority",
+      "price_min",
+      "size_max_m2",
+      "size_min_m2",
+      "unit_types"
+     ]
+    },
+    "published_statements": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "facts_source": {
+     "type": "string"
+    },
+    "change_history": {
+     "type": "array",
+     "items": {
+      "type": "object"
+     }
+    },
+    "hourly_findings": {
+     "type": "array",
+     "items": {
+      "type": "object"
+     }
+    },
+    "sealed_copy": {
+     "type": "object",
+     "properties": {
+      "date": {
+       "type": "string"
+      },
+      "sha256": {
+       "type": "string"
+      },
+      "verify": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "date",
+      "sha256",
+      "verify"
+     ]
+    },
+    "register": {},
+    "public_reports": {
+     "type": "array",
+     "items": {}
+    },
+    "review": {
+     "type": "object",
+     "properties": {
+      "score": {
+       "type": "integer"
+      },
+      "max": {
+       "type": "integer"
+      },
+      "verified_score": {
+       "type": "integer"
+      },
+      "checks": {
+       "type": "object"
+      },
+      "verification": {
+       "type": "object"
+      },
+      "claims": {
+       "type": "object"
+      },
+      "method": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "checks",
+      "claims",
+      "max",
+      "method",
+      "score",
+      "verification",
+      "verified_score"
+     ]
+    },
+    "sources": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "urls": {
+     "type": "object",
+     "properties": {
+      "page": {
+       "type": "string"
+      },
+      "pages": {
+       "type": "object"
+      },
+      "feed_atom": {
+       "type": "string"
+      },
+      "feed_json": {
+       "type": "string"
+      },
+      "record": {
+       "type": "string"
+      },
+      "watch": {
+       "type": "string"
+      },
+      "reply": {
+       "type": "string"
+      },
+      "corrections": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "corrections",
+      "feed_atom",
+      "feed_json",
+      "page",
+      "pages",
+      "record",
+      "reply",
+      "watch"
+     ]
+    }
+   },
+   "required": [
+    "added",
+    "api",
+    "change_history",
+    "developer",
+    "facts_source",
+    "handover",
+    "hourly_findings",
+    "id",
+    "last_checked",
+    "license",
+    "location",
+    "name",
+    "permit",
+    "promises",
+    "public_reports",
+    "published_facts",
+    "published_page",
+    "published_statements",
+    "review",
+    "reviewed",
+    "rules",
+    "sealed_copy",
+    "site_status",
+    "slug",
+    "sources",
+    "stage",
+    "urls"
+   ]
+  },
+  "GetCertificateResponse": {
+   "type": "object",
+   "properties": {
+    "certificate": {
+     "type": "object",
+     "properties": {
+      "type": {
+       "type": "string"
+      },
+      "issued": {
+       "type": "string"
+      },
+      "issuer": {
+       "type": "object"
+      },
+      "subject": {
+       "type": "object"
+      },
+      "facts": {
+       "type": "object"
+      },
+      "facts_sha256": {
+       "type": "string"
+      },
+      "dataset": {
+       "type": "object"
+      },
+      "live_check": {
+       "type": "string"
+      },
+      "meaning": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "dataset",
+      "facts",
+      "facts_sha256",
+      "issued",
+      "issuer",
+      "live_check",
+      "meaning",
+      "subject",
+      "type"
+     ]
+    },
+    "signature": {
+     "type": "object",
+     "properties": {
+      "alg": {
+       "type": "string"
+      },
+      "kid": {
+       "type": "string"
+      },
+      "value": {
+       "type": "string"
+      },
+      "message": {
+       "type": "string"
+      },
+      "certificate_sha256": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "alg",
+      "certificate_sha256",
+      "kid",
+      "message",
+      "value"
+     ]
+    }
+   },
+   "required": [
+    "certificate",
+    "signature"
+   ]
+  },
+  "ListDevelopersResponse": {
+   "type": "object",
+   "properties": {
+    "api": {
+     "type": "string"
+    },
+    "updated": {
+     "type": "string"
+    },
+    "count": {
+     "type": "integer"
+    },
+    "developers": {
+     "type": "array",
+     "items": {
+      "type": "object"
+     }
+    }
+   },
+   "required": [
+    "api",
+    "count",
+    "developers",
+    "updated"
+   ]
+  },
+  "GetDeveloperResponse": {
+   "type": "object",
+   "properties": {
+    "api": {
+     "type": "string"
+    },
+    "license": {
+     "type": "string"
+    },
+    "rules": {
+     "type": "string"
+    },
+    "slug": {
+     "type": "string"
+    },
+    "id": {
+     "type": "string"
+    },
+    "aliases": {
+     "type": "array",
+     "items": {}
+    },
+    "names_as_published": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "last_checked": {
+     "type": "string"
+    },
+    "markets": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "projects": {
+     "type": "array",
+     "items": {
+      "type": "object"
+     }
+    },
+    "urls": {
+     "type": "object",
+     "properties": {
+      "page": {
+       "type": "string"
+      },
+      "pages": {
+       "type": "object"
+      },
+      "feed_atom": {
+       "type": "string"
+      },
+      "feed_json": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "feed_atom",
+      "feed_json",
+      "page",
+      "pages"
+     ]
+    }
+   },
+   "required": [
+    "aliases",
+    "api",
+    "id",
+    "last_checked",
+    "license",
+    "markets",
+    "names_as_published",
+    "projects",
+    "rules",
+    "slug",
+    "urls"
+   ]
+  },
+  "GetDeveloperWebsiteResponse": {
+   "type": "object",
+   "properties": {
+    "api": {
+     "type": "string"
+    },
+    "developer": {
+     "type": "object",
+     "properties": {
+      "slug": {
+       "type": "string"
+      },
+      "name": {
+       "type": "string"
+      },
+      "page": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "name",
+      "page",
+      "slug"
+     ]
+    },
+    "updated": {
+     "type": "string"
+    },
+    "legend": {
+     "type": "object",
+     "properties": {
+      "health": {
+       "type": "object"
+      },
+      "registered": {
+       "type": "string"
+      },
+      "tls_issuer": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "health",
+      "registered",
+      "tls_issuer"
+     ]
+    },
+    "domains": {
+     "type": "array",
+     "items": {
+      "type": "object"
+     }
+    }
+   },
+   "required": [
+    "api",
+    "developer",
+    "domains",
+    "legend",
+    "updated"
+   ]
+  },
+  "FindResponse": {
+   "type": "object",
+   "properties": {
+    "query": {
+     "type": "string"
+    },
+    "count": {
+     "type": "integer"
+    },
+    "results": {
+     "type": "array",
+     "items": {
+      "type": "object"
+     }
+    }
+   },
+   "required": [
+    "count",
+    "query",
+    "results"
+   ]
+  },
+  "ListChangesResponse": {
+   "type": "object",
+   "properties": {
+    "api": {
+     "type": "string"
+    },
+    "licence": {
+     "type": "string"
+    },
+    "sync": {
+     "type": "string"
+    },
+    "since": {
+     "type": "string"
+    },
+    "count": {
+     "type": "integer"
+    },
+    "total_after_filter": {
+     "type": "integer"
+    },
+    "has_more": {
+     "type": "boolean"
+    },
+    "next_cursor": {},
+    "next": {},
+    "last_change_at": {
+     "type": "string"
+    },
+    "resume": {
+     "type": "string"
+    },
+    "feed": {
+     "type": "string"
+    },
+    "changes": {
+     "type": "array",
+     "items": {
+      "type": "object"
+     }
+    }
+   },
+   "required": [
+    "api",
+    "changes",
+    "count",
+    "feed",
+    "has_more",
+    "last_change_at",
+    "licence",
+    "resume",
+    "since",
+    "sync",
+    "total_after_filter"
+   ]
+  },
+  "ChangesFeedResponse": {
+   "type": "object",
+   "properties": {
+    "version": {
+     "type": "string"
+    },
+    "title": {
+     "type": "string"
+    },
+    "home_page_url": {
+     "type": "string"
+    },
+    "feed_url": {
+     "type": "string"
+    },
+    "description": {
+     "type": "string"
+    },
+    "language": {
+     "type": "string"
+    },
+    "authors": {
+     "type": "array",
+     "items": {
+      "type": "object"
+     }
+    },
+    "items": {
+     "type": "array",
+     "items": {
+      "type": "object"
+     }
+    }
+   },
+   "required": [
+    "authors",
+    "description",
+    "feed_url",
+    "home_page_url",
+    "items",
+    "language",
+    "title",
+    "version"
+   ]
+  },
+  "GetSnapshotsResponse": {
+   "type": "object",
+   "properties": {
+    "version": {
+     "type": "string"
+    },
+    "file": {
+     "type": "string"
+    },
+    "licence": {
+     "type": "string"
+    },
+    "head_rule": {
+     "type": "string"
+    },
+    "day_rule": {
+     "type": "string"
+    },
+    "copies": {
+     "type": "string"
+    },
+    "note": {
+     "type": "string"
+    },
+    "updated": {
+     "type": "string"
+    },
+    "count": {
+     "type": "integer"
+    },
+    "tip": {
+     "type": "string"
+    },
+    "entries": {
+     "type": "array",
+     "items": {
+      "type": "object"
+     }
+    },
+    "api": {
+     "type": "string"
+    },
+    "live": {
+     "type": "object",
+     "properties": {
+      "file": {
+       "type": "string"
+      },
+      "bytes": {
+       "type": "integer"
+      },
+      "sha256": {
+       "type": "string"
+      },
+      "matches_entry": {}
+     },
+     "required": [
+      "bytes",
+      "file",
+      "sha256"
+     ]
+    },
+    "provisional_tip": {
+     "type": "object",
+     "properties": {
+      "day": {
+       "type": "string"
+      },
+      "provisional": {
+       "type": "boolean"
+      },
+      "bytes": {
+       "type": "integer"
+      },
+      "sha256": {
+       "type": "string"
+      },
+      "prev": {
+       "type": "string"
+      },
+      "head": {
+       "type": "string"
+      },
+      "copy": {
+       "type": "string"
+      },
+      "note": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "bytes",
+      "copy",
+      "day",
+      "head",
+      "note",
+      "prev",
+      "provisional",
+      "sha256"
+     ]
+    },
+    "chain_tip": {
+     "type": "string"
+    },
+    "verify": {
+     "type": "object",
+     "properties": {
+      "page": {
+       "type": "string"
+      },
+      "public_keys": {
+       "type": "string"
+      },
+      "signature": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "page",
+      "public_keys",
+      "signature"
+     ]
+    }
+   },
+   "required": [
+    "api",
+    "chain_tip",
+    "copies",
+    "count",
+    "day_rule",
+    "entries",
+    "file",
+    "head_rule",
+    "licence",
+    "live",
+    "note",
+    "provisional_tip",
+    "tip",
+    "updated",
+    "verify",
+    "version"
+   ]
+  },
+  "GetDataQualityResponse": {
+   "type": "object",
+   "properties": {
+    "api": {
+     "type": "string"
+    },
+    "computed_at": {
+     "type": "string"
+    },
+    "data_updated": {
+     "type": "string"
+    },
+    "dataset": {
+     "type": "object",
+     "properties": {
+      "file": {
+       "type": "string"
+      },
+      "sha256": {
+       "type": "string"
+      },
+      "bytes": {
+       "type": "integer"
+      }
+     },
+     "required": [
+      "bytes",
+      "file",
+      "sha256"
+     ]
+    },
+    "build": {
+     "type": "string"
+    },
+    "method": {
+     "type": "string"
+    },
+    "projects": {
+     "type": "integer"
+    },
+    "fields": {
+     "type": "object",
+     "properties": {
+      "dv": {
+       "type": "object"
+      },
+      "ar": {
+       "type": "object"
+      },
+      "url": {
+       "type": "object"
+      },
+      "ho": {
+       "type": "object"
+      },
+      "price": {
+       "type": "object"
+      },
+      "size": {
+       "type": "object"
+      },
+      "types": {
+       "type": "object"
+      },
+      "pay": {
+       "type": "object"
+      },
+      "pn": {
+       "type": "object"
+      },
+      "auth": {
+       "type": "object"
+      },
+      "cs": {
+       "type": "object"
+      },
+      "pin": {
+       "type": "object"
+      },
+      "co": {
+       "type": "object"
+      },
+      "rw": {
+       "type": "object"
+      },
+      "sha": {
+       "type": "object"
+      },
+      "src2": {
+       "type": "object"
+      }
+     },
+     "required": [
+      "ar",
+      "auth",
+      "co",
+      "cs",
+      "dv",
+      "ho",
+      "pay",
+      "pin",
+      "pn",
+      "price",
+      "rw",
+      "sha",
+      "size",
+      "src2",
+      "types",
+      "url"
+     ]
+    },
+    "freshness": {
+     "type": "object",
+     "properties": {
+      "d7": {
+       "type": "object"
+      },
+      "d30": {
+       "type": "object"
+      },
+      "d90": {
+       "type": "object"
+      },
+      "old": {
+       "type": "object"
+      }
+     },
+     "required": [
+      "d30",
+      "d7",
+      "d90",
+      "old"
+     ]
+    },
+    "median_days_since_check": {
+     "type": "integer"
+    },
+    "median_sources_per_project": {
+     "type": "integer"
+    },
+    "markets": {
+     "type": "array",
+     "items": {
+      "type": "object"
+     }
+    },
+    "gaps": {
+     "type": "object",
+     "properties": {
+      "method": {
+       "type": "string"
+      },
+      "weights": {
+       "type": "object"
+      },
+      "places": {
+       "type": "array",
+       "items": {}
+      }
+     },
+     "required": [
+      "method",
+      "places",
+      "weights"
+     ]
+    },
+    "validation": {
+     "type": "object",
+     "properties": {
+      "checked": {
+       "type": "string"
+      },
+      "records": {
+       "type": "integer"
+      },
+      "held": {
+       "type": "integer"
+      },
+      "counts": {
+       "type": "object"
+      },
+      "rules": {
+       "type": "object"
+      },
+      "issues": {
+       "type": "array",
+       "items": {}
+      }
+     },
+     "required": [
+      "checked",
+      "counts",
+      "held",
+      "issues",
+      "records",
+      "rules"
+     ]
+    },
+    "aliases": {
+     "type": "object",
+     "properties": {
+      "developers": {
+       "type": "object"
+      },
+      "projects": {
+       "type": "object"
+      },
+      "rule": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "developers",
+      "projects",
+      "rule"
+     ]
+    }
+   },
+   "required": [
+    "aliases",
+    "api",
+    "build",
+    "computed_at",
+    "data_updated",
+    "dataset",
+    "fields",
+    "freshness",
+    "gaps",
+    "markets",
+    "median_days_since_check",
+    "median_sources_per_project",
+    "method",
+    "projects",
+    "validation"
+   ]
+  },
+  "GetSlippageResponse": {
+   "type": "object",
+   "properties": {
+    "version": {
+     "type": "string"
+    },
+    "computed": {
+     "type": "string"
+    },
+    "month": {
+     "type": "string"
+    },
+    "licence": {
+     "type": "string"
+    },
+    "method": {
+     "type": "string"
+    },
+    "what": {
+     "type": "string"
+    },
+    "rules": {
+     "type": "object",
+     "properties": {
+      "first_date": {
+       "type": "string"
+      },
+      "period_end": {
+       "type": "string"
+      },
+      "months_past": {
+       "type": "string"
+      },
+      "completed": {
+       "type": "string"
+      },
+      "quantiles": {
+       "type": "string"
+      },
+      "min_sample": {
+       "type": "integer"
+      }
+     },
+     "required": [
+      "completed",
+      "first_date",
+      "min_sample",
+      "months_past",
+      "period_end",
+      "quantiles"
+     ]
+    },
+    "sources": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "fields": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "all": {
+     "type": "object",
+     "properties": {
+      "market": {
+       "type": "string"
+      },
+      "country": {
+       "type": "string"
+      },
+      "past_first_date": {
+       "type": "integer"
+      },
+      "median_months": {
+       "type": "integer"
+      },
+      "p25_months": {
+       "type": "integer"
+      },
+      "p75_months": {
+       "type": "integer"
+      },
+      "min_months": {
+       "type": "integer"
+      },
+      "max_months": {
+       "type": "integer"
+      },
+      "not_yet_due": {
+       "type": "integer"
+      },
+      "completed": {
+       "type": "integer"
+      },
+      "no_date": {
+       "type": "integer"
+      },
+      "tracked": {
+       "type": "integer"
+      }
+     },
+     "required": [
+      "completed",
+      "country",
+      "market",
+      "max_months",
+      "median_months",
+      "min_months",
+      "no_date",
+      "not_yet_due",
+      "p25_months",
+      "p75_months",
+      "past_first_date",
+      "tracked"
+     ]
+    },
+    "markets": {
+     "type": "array",
+     "items": {
+      "type": "object"
+     }
+    }
+   },
+   "required": [
+    "all",
+    "computed",
+    "fields",
+    "licence",
+    "markets",
+    "method",
+    "month",
+    "rules",
+    "sources",
+    "version",
+    "what"
+   ]
+  },
+  "GetHandoverHistoryResponse": {
+   "type": "object",
+   "properties": {
+    "id": {
+     "type": "string"
+    },
+    "slug": {
+     "type": "string"
+    },
+    "name": {
+     "type": "string"
+    },
+    "developer": {
+     "type": "string"
+    },
+    "market": {
+     "type": "string"
+    },
+    "stage": {
+     "type": "string"
+    },
+    "current": {
+     "type": "string"
+    },
+    "moves": {
+     "type": "integer"
+    },
+    "delay_months": {},
+    "distinct_dates": {
+     "type": "integer"
+    },
+    "events": {
+     "type": "array",
+     "items": {
+      "type": "object"
+     }
+    },
+    "developer_page": {
+     "type": "string"
+    },
+    "page": {
+     "type": "string"
+    },
+    "timeline": {
+     "type": "string"
+    },
+    "licence": {
+     "type": "string"
+    },
+    "note": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "current",
+    "developer",
+    "developer_page",
+    "distinct_dates",
+    "events",
+    "id",
+    "licence",
+    "market",
+    "moves",
+    "name",
+    "note",
+    "page",
+    "slug",
+    "stage",
+    "timeline"
+   ]
+  },
+  "GetProvenanceResponse": {
+   "type": "object",
+   "properties": {
+    "attestation": {
+     "type": "object",
+     "properties": {
+      "type": {
+       "type": "string"
+      },
+      "site": {
+       "type": "string"
+      },
+      "commit": {
+       "type": "string"
+      },
+      "branch": {
+       "type": "string"
+      },
+      "worker_tree": {},
+      "worker_bytes": {},
+      "dataset": {
+       "type": "object"
+      },
+      "live_seen_by_guard": {},
+      "smoke_checks": {},
+      "latest_recorded_deploy": {
+       "type": "object"
+      },
+      "attested_at": {
+       "type": "string"
+      },
+      "meaning": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "attested_at",
+      "branch",
+      "commit",
+      "dataset",
+      "latest_recorded_deploy",
+      "meaning",
+      "site",
+      "type"
+     ]
+    },
+    "signature": {
+     "type": "object",
+     "properties": {
+      "alg": {
+       "type": "string"
+      },
+      "kid": {
+       "type": "string"
+      },
+      "value": {
+       "type": "string"
+      },
+      "message": {
+       "type": "string"
+      },
+      "attestation_sha256": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "alg",
+      "attestation_sha256",
+      "kid",
+      "message",
+      "value"
+     ]
+    },
+    "history": {
+     "type": "array",
+     "items": {
+      "type": "object"
+     }
+    },
+    "history_file": {
+     "type": "string"
+    },
+    "verify": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "attestation",
+    "history",
+    "history_file",
+    "signature",
+    "verify"
+   ]
+  },
+  "ListDeltasResponse": {
+   "type": "object",
+   "properties": {
+    "api": {
+     "type": "string"
+    },
+    "page": {
+     "type": "string"
+    },
+    "type": {
+     "type": "string"
+    },
+    "licence": {
+     "type": "string"
+    },
+    "entries": {
+     "type": "array",
+     "items": {
+      "type": "object"
+     }
+    },
+    "signature": {
+     "type": "string"
+    },
+    "verify": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "api",
+    "entries",
+    "licence",
+    "page",
+    "signature",
+    "type",
+    "verify"
+   ]
+  },
+  "GetDeltaResponse": {
+   "type": "object",
+   "properties": {
+    "type": {
+     "type": "string"
+    },
+    "from": {
+     "type": "object",
+     "properties": {
+      "day": {
+       "type": "string"
+      },
+      "sha256": {
+       "type": "string"
+      },
+      "head": {
+       "type": "string"
+      },
+      "projects_sha256": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "day",
+      "head",
+      "projects_sha256",
+      "sha256"
+     ]
+    },
+    "to": {
+     "type": "object",
+     "properties": {
+      "day": {
+       "type": "string"
+      },
+      "sha256": {
+       "type": "string"
+      },
+      "head": {
+       "type": "string"
+      },
+      "projects_sha256": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "day",
+      "head",
+      "projects_sha256",
+      "sha256"
+     ]
+    },
+    "counts": {
+     "type": "object",
+     "properties": {
+      "added": {
+       "type": "integer"
+      },
+      "removed": {
+       "type": "integer"
+      },
+      "changed": {
+       "type": "integer"
+      },
+      "projects_after": {
+       "type": "integer"
+      }
+     },
+     "required": [
+      "added",
+      "changed",
+      "projects_after",
+      "removed"
+     ]
+    },
+    "apply": {
+     "type": "string"
+    },
+    "added": {
+     "type": "array",
+     "items": {}
+    },
+    "removed": {
+     "type": "array",
+     "items": {}
+    },
+    "changed": {
+     "type": "object"
+    }
+   },
+   "required": [
+    "added",
+    "apply",
+    "changed",
+    "counts",
+    "from",
+    "removed",
+    "to",
+    "type"
+   ]
+  },
+  "GetDeltaSignatureResponse": {
+   "type": "object",
+   "properties": {
+    "type": {
+     "type": "string"
+    },
+    "day": {
+     "type": "string"
+    },
+    "file": {
+     "type": "string"
+    },
+    "bytes": {
+     "type": "integer"
+    },
+    "sha256": {
+     "type": "string"
+    },
+    "alg": {
+     "type": "string"
+    },
+    "kid": {
+     "type": "string"
+    },
+    "signature": {
+     "type": "string"
+    },
+    "message": {
+     "type": "string"
+    },
+    "public_keys": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "alg",
+    "bytes",
+    "day",
+    "file",
+    "kid",
+    "message",
+    "public_keys",
+    "sha256",
+    "signature",
+    "type"
+   ]
+  },
+  "GetTreeHeadResponse": {
+   "type": "object",
+   "properties": {
+    "tree_head": {
+     "type": "object",
+     "properties": {
+      "type": {
+       "type": "string"
+      },
+      "log": {
+       "type": "string"
+      },
+      "size": {
+       "type": "integer"
+      },
+      "root": {
+       "type": "string"
+      },
+      "latest_day": {
+       "type": "string"
+      },
+      "signed_at": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "latest_day",
+      "log",
+      "root",
+      "signed_at",
+      "size",
+      "type"
+     ]
+    },
+    "signature": {
+     "type": "object",
+     "properties": {
+      "alg": {
+       "type": "string"
+      },
+      "kid": {
+       "type": "string"
+      },
+      "value": {
+       "type": "string"
+      },
+      "tree_head_sha256": {
+       "type": "string"
+      },
+      "message": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "alg",
+      "kid",
+      "message",
+      "tree_head_sha256",
+      "value"
+     ]
+    },
+    "entries": {
+     "type": "array",
+     "items": {
+      "type": "object"
+     }
+    },
+    "roots_by_size": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "rules": {
+     "type": "object",
+     "properties": {
+      "record_leaf": {
+       "type": "string"
+      },
+      "day_leaf": {
+       "type": "string"
+      },
+      "node": {
+       "type": "string"
+      },
+      "canonical_json": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "canonical_json",
+      "day_leaf",
+      "node",
+      "record_leaf"
+     ]
+    }
+   },
+   "required": [
+    "entries",
+    "roots_by_size",
+    "rules",
+    "signature",
+    "tree_head"
+   ]
+  },
+  "GetInclusionProofResponse": {
+   "type": "object",
+   "properties": {
+    "type": {
+     "type": "string"
+    },
+    "project": {
+     "type": "string"
+    },
+    "day": {
+     "type": "string"
+    },
+    "record": {
+     "type": "object",
+     "properties": {
+      "id": {
+       "type": "string"
+      },
+      "s": {
+       "type": "string"
+      },
+      "n": {
+       "type": "string"
+      },
+      "dv": {
+       "type": "string"
+      },
+      "dvs": {
+       "type": "string"
+      },
+      "mk": {
+       "type": "string"
+      },
+      "co": {
+       "type": "string"
+      },
+      "ar": {
+       "type": "string"
+      },
+      "st": {
+       "type": "string"
+      },
+      "sts": {
+       "type": "string"
+      },
+      "url": {
+       "type": "string"
+      },
+      "du": {},
+      "pn": {},
+      "dl": {
+       "type": "array",
+       "items": {}
+      },
+      "ev": {
+       "type": "object"
+      },
+      "cl": {
+       "type": "array",
+       "items": {}
+      },
+      "fl": {
+       "type": "array",
+       "items": {}
+      },
+      "fx": {
+       "type": "object"
+      },
+      "src": {
+       "type": "array",
+       "items": {}
+      },
+      "ad": {
+       "type": "string"
+      },
+      "sha": {
+       "type": "string"
+      },
+      "sealed": {
+       "type": "string"
+      },
+      "rw": {},
+      "rvw": {
+       "type": "object"
+      }
+     },
+     "required": [
+      "ad",
+      "ar",
+      "cl",
+      "co",
+      "dl",
+      "dv",
+      "dvs",
+      "ev",
+      "fl",
+      "fx",
+      "id",
+      "mk",
+      "n",
+      "rvw",
+      "s",
+      "sealed",
+      "sha",
+      "src",
+      "st",
+      "sts",
+      "url"
+     ]
+    },
+    "leaf": {
+     "type": "string"
+    },
+    "leaf_index": {
+     "type": "integer"
+    },
+    "day_size": {
+     "type": "integer"
+    },
+    "day_root": {
+     "type": "string"
+    },
+    "day_path": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "snapshot": {
+     "type": "object",
+     "properties": {
+      "sha256": {
+       "type": "string"
+      },
+      "head": {
+       "type": "string"
+      },
+      "copy": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "copy",
+      "head",
+      "sha256"
+     ]
+    },
+    "day_index": {
+     "type": "integer"
+    },
+    "log_path": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "tree_head": {
+     "type": "object",
+     "properties": {
+      "type": {
+       "type": "string"
+      },
+      "log": {
+       "type": "string"
+      },
+      "size": {
+       "type": "integer"
+      },
+      "root": {
+       "type": "string"
+      },
+      "latest_day": {
+       "type": "string"
+      },
+      "signed_at": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "latest_day",
+      "log",
+      "root",
+      "signed_at",
+      "size",
+      "type"
+     ]
+    },
+    "signature": {
+     "type": "object",
+     "properties": {
+      "alg": {
+       "type": "string"
+      },
+      "kid": {
+       "type": "string"
+      },
+      "value": {
+       "type": "string"
+      },
+      "tree_head_sha256": {
+       "type": "string"
+      },
+      "message": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "alg",
+      "kid",
+      "message",
+      "tree_head_sha256",
+      "value"
+     ]
+    },
+    "verify": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "day",
+    "day_index",
+    "day_path",
+    "day_root",
+    "day_size",
+    "leaf",
+    "leaf_index",
+    "log_path",
+    "project",
+    "record",
+    "signature",
+    "snapshot",
+    "tree_head",
+    "type",
+    "verify"
+   ]
+  },
+  "GetConsistencyProofResponse": {
+   "type": "object",
+   "properties": {
+    "type": {
+     "type": "string"
+    },
+    "first": {
+     "type": "integer"
+    },
+    "second": {
+     "type": "integer"
+    },
+    "first_root": {
+     "type": "string"
+    },
+    "second_root": {
+     "type": "string"
+    },
+    "path": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "tree_head": {
+     "type": "object",
+     "properties": {
+      "type": {
+       "type": "string"
+      },
+      "log": {
+       "type": "string"
+      },
+      "size": {
+       "type": "integer"
+      },
+      "root": {
+       "type": "string"
+      },
+      "latest_day": {
+       "type": "string"
+      },
+      "signed_at": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "latest_day",
+      "log",
+      "root",
+      "signed_at",
+      "size",
+      "type"
+     ]
+    },
+    "signature": {
+     "type": "object",
+     "properties": {
+      "alg": {
+       "type": "string"
+      },
+      "kid": {
+       "type": "string"
+      },
+      "value": {
+       "type": "string"
+      },
+      "tree_head_sha256": {
+       "type": "string"
+      },
+      "message": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "alg",
+      "kid",
+      "message",
+      "tree_head_sha256",
+      "value"
+     ]
+    },
+    "verify": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "first",
+    "first_root",
+    "path",
+    "second",
+    "second_root",
+    "signature",
+    "tree_head",
+    "type",
+    "verify"
+   ]
+  },
+  "GetMarketChartResponse": {
+   "type": "object",
+   "properties": {
+    "market": {
+     "type": "string"
+    },
+    "country": {
+     "type": "string"
+    },
+    "disclosure": {
+     "type": "object",
+     "properties": {
+      "projects": {
+       "type": "integer"
+      },
+      "permit_public_pct": {
+       "type": "integer"
+      },
+      "deposit_protection_pct": {
+       "type": "integer"
+      },
+      "avg_checks_public": {
+       "type": "number"
+      },
+      "avg_checks_confirmed": {
+       "type": "number"
+      },
+      "transparency_index": {
+       "type": "integer"
+      }
+     },
+     "required": [
+      "avg_checks_confirmed",
+      "avg_checks_public",
+      "deposit_protection_pct",
+      "permit_public_pct",
+      "projects",
+      "transparency_index"
+     ]
+    },
+    "delays": {
+     "type": "object",
+     "properties": {
+      "tracked": {
+       "type": "integer"
+      },
+      "with_date": {
+       "type": "integer"
+      },
+      "past_first": {
+       "type": "integer"
+      },
+      "share_past_first_pct": {
+       "type": "number"
+      },
+      "median_months_late": {
+       "type": "integer"
+      },
+      "p90_months_late": {
+       "type": "number"
+      },
+      "buckets": {
+       "type": "array",
+       "items": {}
+      }
+     },
+     "required": [
+      "buckets",
+      "median_months_late",
+      "p90_months_late",
+      "past_first",
+      "share_past_first_pct",
+      "tracked",
+      "with_date"
+     ]
+    },
+    "as_of": {
+     "type": "object",
+     "properties": {
+      "markets": {
+       "type": "string"
+      },
+      "delay_index": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "delay_index",
+      "markets"
+     ]
+    },
+    "page": {
+     "type": "string"
+    },
+    "licence": {
+     "type": "string"
+    },
+    "svg": {
+     "type": "object",
+     "properties": {
+      "delays": {
+       "type": "string"
+      },
+      "disclosure": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "delays",
+      "disclosure"
+     ]
+    },
+    "link": {
+     "type": "object",
+     "properties": {
+      "href": {
+       "type": "string"
+      },
+      "text": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "href",
+      "text"
+     ]
+    }
+   },
+   "required": [
+    "as_of",
+    "country",
+    "delays",
+    "disclosure",
+    "licence",
+    "link",
+    "market",
+    "page",
+    "svg"
+   ]
+  },
+  "GetMonitoringResponse": {
+   "type": "object",
+   "properties": {
+    "about": {
+     "type": "string"
+    },
+    "per_page": {
+     "type": "array",
+     "items": {
+      "type": "object"
+     }
+    },
+    "per_day": {
+     "type": "array",
+     "items": {
+      "type": "object"
+     }
+    },
+    "samples": {
+     "type": "array",
+     "items": {
+      "type": "object"
+     }
+    },
+    "edge_now": {
+     "type": "object",
+     "properties": {
+      "about": {
+       "type": "string"
+      },
+      "schedule": {
+       "type": "string"
+      },
+      "at": {
+       "type": "string"
+      },
+      "commit": {
+       "type": "string"
+      },
+      "ok": {
+       "type": "boolean"
+      },
+      "up": {
+       "type": "integer"
+      },
+      "n": {
+       "type": "integer"
+      },
+      "pages": {
+       "type": "array",
+       "items": {}
+      },
+      "checkout": {
+       "type": "object"
+      },
+      "first_on_commit": {
+       "type": "boolean"
+      },
+      "history": {
+       "type": "object"
+      }
+     },
+     "required": [
+      "about",
+      "at",
+      "checkout",
+      "commit",
+      "first_on_commit",
+      "history",
+      "n",
+      "ok",
+      "pages",
+      "schedule",
+      "up"
+     ]
+    }
+   },
+   "required": [
+    "about",
+    "edge_now",
+    "per_day",
+    "per_page",
+    "samples"
+   ]
+  }
+ }
+}

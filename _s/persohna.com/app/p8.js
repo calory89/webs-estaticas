@@ -112,6 +112,7 @@ viewInicio = function () {
       ${S.streak?.n > 1 ? `<span class="streak" title="${T("Días seguidos", "Days in a row")}">${ico("fire")}${S.streak.n}</span>` : ""}
     </div>
     ${S.welcome ? `<div class="note welcome">${ico("sparkle")}<span><strong>${T("Hola, soy tu Persohna.", "Hi, I'm your Persohna.")}</strong> ${T("Te ayudo a conseguir cosas: un trabajo, una casa, ahorrar… Abajo ves en qué estoy trabajando y el botón para seguir.", "I help you get things done: a job, a home, saving… Below you can see what I'm working on and the button to carry on.")}</span><button class="icon-btn" type="button" data-action="dismiss-welcome" aria-label="${T("Cerrar", "Close")}">${ico("close")}</button></div>` : ""}
+    ${typeof netHomeCard === "function" ? netHomeCard() : ""}
     ${pendingCard8()}
     ${goals.length ? `<section class="stack g3" aria-labelledby="doing-t"><h2 class="section-title" id="doing-t">${T("Lo que estoy haciendo por ti", "What I'm doing for you")}</h2>${shown.map(goalCard8).join("")}${rest.length ? `<details class="more8" data-k="rest"><summary>${rest.length === 1 ? T("Ver 1 objetivo más", "See 1 more goal") : T(`Ver ${rest.length} objetivos más`, `See ${rest.length} more goals`)}</summary><div class="stack g3">${rest.map(goalCard8).join("")}</div></details>` : ""}</section>` : ""}
     ${ins}${wk}

@@ -1,0 +1,241 @@
+{
+ "name": "Kolaboro corrections log",
+ "updated": "2026-11-18",
+ "licence": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+ "page": "https://kolaboro.com/corrections/",
+ "how_to_request": "Email hello@kolaboro.com with the project page link, what you think is wrong and the evidence (a document, a registry extract or a dated photo). We reply within 10 working days.",
+ "kinds": {"pin": "map pin moved", "claim": "status of a tested claim changed", "field": "a recorded fact (permit number, date, place) corrected", "removal": "personal data removed (logged without the data)"},
+ "audits": [
+  {
+   "date": "2026-11-01",
+   "what": "Accuracy check: 50 projects drawn at random (sample fixed by a monthly seed) and every one of their 485 tested claims re-checked against the cited source by a separate automated run that had not done the original research. Not a human audit; a human review of the same sample is next.",
+   "sample_projects": 50,
+   "claims": 485,
+   "supported": 472,
+   "wrong": 11,
+   "unchecked": 2,
+   "error_rate_pct": 2.3,
+   "error_rate_basis": "11 of 483 checkable claims",
+   "second_pass": "25 claims could not be read on the first pass; on a second pass 22 held up, 1 was wrong and 2 remain unchecked.",
+   "method": "https://kolaboro.com/open/scoring.py"
+  }
+ ],
+ "entries": [
+  {
+   "date": "2026-11-13",
+   "id": "KUA-004",
+   "kind": "field",
+   "what": "permit number",
+   "before": "30141-2/06-2029/0431(N)-(S)",
+   "after": "30141-2/06-2029/0431(A)-(S)",
+   "why": "Review of 13 Nov 2026 against the Malaysia KPKT TEDUH register: the register lists this permit with the suffix (A); the number on record had (N)."
+  },
+  {
+   "date": "2026-11-13",
+   "id": "KUA-011",
+   "kind": "field",
+   "what": "permit number",
+   "before": "13262-2/03-2029/0221(N)-(S)",
+   "after": "13262-2/03-2029/0221(A)-(S)",
+   "why": "Review of 13 Nov 2026 against the Malaysia KPKT TEDUH register: the register lists this permit with the suffix (A); the number on record had (N)."
+  },
+  {
+   "date": "2026-11-13",
+   "id": "KUA-012",
+   "kind": "field",
+   "what": "permit number",
+   "before": "11430-2/03-2027/0280(N)-(S)",
+   "after": "11430-2/03-2027/0280(A)-(S)",
+   "why": "Review of 13 Nov 2026 against the Malaysia KPKT TEDUH register: the register lists this permit with the suffix (A); the number on record had (N)."
+  },
+  {
+   "date": "2026-11-13",
+   "id": "MYS-028",
+   "kind": "field",
+   "what": "permit number",
+   "before": "30440-1/10-2026/1099(A)-(S)",
+   "after": "30440-1/10-2027/0775(R)-(S)",
+   "why": "Review of 13 Nov 2026 against the Malaysia KPKT TEDUH register: the register lists a renewed permit (R), valid to 1 Oct 2027; the number on record was the earlier permit."
+  },
+  {
+   "date": "2026-11-13",
+   "id": "MIA-001",
+   "kind": "field",
+   "what": "permit number",
+   "before": "Miami-Dade demolition permit 2026067492",
+   "after": "Florida DBPR condominium filing PR77415",
+   "why": "Review of 13 Nov 2026: the number on record was a demolition permit for the existing building, not a permit for the tower. The page now shows the Florida DBPR condominium filing first and labels the demolition permit as such."
+  },
+  {
+   "date": "2026-11-13",
+   "id": "FNC-001",
+   "kind": "field",
+   "what": "handover date",
+   "before": "2028",
+   "after": "2029 to 2030",
+   "why": "Review of 13 Nov 2026: the 2028 on record came from the press; the developer's own page prints the expected conclusion as 2029 to 2030. The record now uses the developer's wording."
+  },
+  {
+   "date": "2026-11-12",
+   "id": "LKA-019",
+   "kind": "field",
+   "what": "place",
+   "before": "Colombo",
+   "after": "Negombo, Gampaha District",
+   "why": "The area text on record made our place rules count the project in Colombo. It is in Negombo, Gampaha District, so it left the Colombo place page and ranking."
+  },
+  {
+   "date": "2026-11-12",
+   "id": "PHL-019",
+   "kind": "field",
+   "what": "place",
+   "before": "Quezon City",
+   "after": "Quezon City, Metro Manila",
+   "why": "The area on record did not name Metro Manila, so the project was missing from the Metro Manila place page and ranking."
+  },
+  {
+   "date": "2026-11-12",
+   "id": "PHL-021",
+   "kind": "field",
+   "what": "place",
+   "before": "Quezon City",
+   "after": "Quezon City, Metro Manila",
+   "why": "The area on record did not name Metro Manila, so the project was missing from the Metro Manila place page and ranking."
+  },
+  {
+   "date": "2026-11-12",
+   "id": "PHL-024",
+   "kind": "field",
+   "what": "place",
+   "before": "Malate, Manila",
+   "after": "Malate, Manila, Metro Manila",
+   "why": "The area on record did not name Metro Manila, so the project was missing from the Metro Manila place page and ranking."
+  },
+  {
+   "date": "2026-11-12",
+   "id": "PHL-025",
+   "kind": "field",
+   "what": "place",
+   "before": "Caloocan City",
+   "after": "Caloocan City, Metro Manila",
+   "why": "The area on record did not name Metro Manila, so the project was missing from the Metro Manila place page and ranking."
+  },
+  {
+   "date": "2026-11-09",
+   "id": "BHX-002",
+   "kind": "pin",
+   "what": "map pin",
+   "before": null,
+   "after": "corrected by hand",
+   "why": "The pin was in the wrong place. The satellite, street, buildings, land, planning, sale-price and short-let sections computed from the old pin are hidden on the project page until the next monthly rebuild uses the new pin."
+  },
+  {
+   "date": "2026-11-09",
+   "id": "BHX-003",
+   "kind": "pin",
+   "what": "map pin",
+   "before": null,
+   "after": "corrected by hand",
+   "why": "The pin was in the wrong place. The satellite, street, buildings, land, planning, sale-price and short-let sections computed from the old pin are hidden on the project page until the next monthly rebuild uses the new pin."
+  },
+  {
+   "date": "2026-11-01",
+   "id": "SYD-003",
+   "kind": "claim",
+   "what": "\"consent covers residential levels up to Level 54\"",
+   "before": null,
+   "after": "contradicted",
+   "why": "The council consent lists Level 53 as the top residential level; Level 54 is plant."
+  },
+  {
+   "date": "2026-11-01",
+   "id": "BRA-004",
+   "kind": "claim",
+   "what": "a size conflict (41 vs 410 m²)",
+   "before": "contradicted",
+   "after": "unverified",
+   "why": "The cited page no longer shows it."
+  },
+  {
+   "date": "2026-11-01",
+   "id": "ORL-003",
+   "kind": "claim",
+   "what": "\"Phase 1 of 22 units completed\"",
+   "before": "verified",
+   "after": "unverified",
+   "why": "The cited listing does not mention it; only developer and agent pages do."
+  },
+  {
+   "date": "2026-11-01",
+   "id": "ORL-003",
+   "kind": "claim",
+   "what": "\"construction of Phase 2 started\"",
+   "before": "unverified",
+   "after": "contradicted",
+   "why": "The developer's own site says Phase 2 is in pre-construction."
+  },
+  {
+   "date": "2026-11-01",
+   "id": "NBO-002",
+   "kind": "claim",
+   "what": "starting price",
+   "before": "contradicted",
+   "after": "unverified",
+   "why": "The cited developer page matches the claim; the higher figure is only on agent pages."
+  },
+  {
+   "date": "2026-11-01",
+   "id": "BALI-034",
+   "kind": "claim",
+   "what": "\"freehold apartments\"",
+   "before": "contradicted",
+   "after": "unverified",
+   "why": "The cited decree sets minimum prices for foreigners and does not itself rule on freehold."
+  },
+  {
+   "date": "2026-11-01",
+   "id": "BAH-003",
+   "kind": "claim",
+   "what": "\"expected returns up to 7%\"",
+   "before": "verified",
+   "after": "unverified",
+   "why": "The source is the developer's press release republished unedited, not an independent source."
+  },
+  {
+   "date": "2026-11-01",
+   "id": "DXB-005",
+   "kind": "claim",
+   "what": "developer identity",
+   "before": "contradicted",
+   "after": "verified",
+   "why": "The register lists the project company among the developer's registered entities."
+  },
+  {
+   "date": "2026-11-01",
+   "id": "CAB-008",
+   "kind": "claim",
+   "what": "\"nearby hotel opened August 2026\"",
+   "before": "verified",
+   "after": "unverified",
+   "why": "The source announced the opening in advance."
+  },
+  {
+   "date": "2026-11-01",
+   "id": "AUH-014",
+   "kind": "claim",
+   "what": "\"under construction\"",
+   "before": "contradicted",
+   "after": "verified",
+   "why": "The register also labels the project under construction."
+  },
+  {
+   "date": "2026-11-01",
+   "id": "MIA-001",
+   "kind": "claim",
+   "what": "\"completion by about June 2028 per buyer contracts\"",
+   "before": "contradicted",
+   "after": "verified (independent)",
+   "why": "A news report on the buyers' lawsuit confirms the contract date; whether it can be met is a separate question."
+  }
+ ]
+}
