@@ -75,7 +75,7 @@
 <li><b>Step.</b> The geometric mean of new price divided by old price over the kept pairs (a chained Jevons index). Unchanged prices count as no change. A step needs at least 5 pairs.</li>
 <li><b>Chain.</b> The index starts at 100 on the market's base date and multiplies the steps since then. If a step is too thin, the chain is not bridged across it: the base moves to after the gap.</li>
 </ol>
-<p>Limits: an advertised "from" price is the cheapest unit on offer, so it moves when that unit sells out as well as when a developer reprices. Prices are read from web pages by a language model and can be misread. Snapshots are not evenly spaced. Per-project amounts and names are not published, only percentage changes and counts.</p>
+<p>Limits: an advertised "from" price is the cheapest unit on offer, so it moves when that unit sells out as well as when a developer reprices. Prices are read from web pages automatically and can be misread. Snapshots are not evenly spaced. Per-project amounts and names are not published, only percentage changes and counts.</p>
 <p class="pi-fine">Data: <a href="/data/price-index.json">/data/price-index.json</a> (CC BY 4.0), rebuilt every day after the research agent's run. Inputs and their SHA-256: <span id="piIn">&hellip;</span>. Related: <a href="/prices/">advertised prices versus registered sales</a>, <a href="/database/">the database</a>.</p>
 </div></section>
 </main>
