@@ -11,6 +11,7 @@ export const SHIP_N = 3;
 const SITE_V = 'n40k54b';
 function file(e, n) { return TF[n] || (TF[n] = file0(e, n).then(v => { if (v == null) delete TF[n]; return v; })); }   // n40 k21: read once
 const TF = {};
+export const warm = env => Promise.all([file(env, $q.d), file(env, $q.g)]).catch(() => {});   // n40 k57
 async function file0(env, n) {
 try { const r = await env.ASSETS.fetch(new Request(ORIGIN + $q.c + n)); if (r.ok) return await r.json(); } catch (e) {}
 return null;

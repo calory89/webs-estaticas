@@ -4,8 +4,10 @@ import { TB } from './kbx_strings.js';
 const ORIGIN = 'https://kolaboro.com';
 const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' };
 export const V = 'a2';
-let T = null;
-async function loadT(env) {
+let T = null, TP = null;
+async function loadT(env) { return T || TP || (TP = loadT0(env).finally(() => { TP = null; })); }
+export const warm = env => loadT(env).then(() => file(env, $q.cn)).catch(() => {});   // n40 k57
+async function loadT0(env) {
 if (T) return T;
 try { const r = await env.ASSETS.fetch(new Request(ORIGIN + $q.b)); if (r.ok) T = await r.json(); } catch (e) {}
 if (!T) { try { const r = await fetch(ORIGIN + $q.c, { cf: { cacheTtl: 300 } }); if (r.ok) T = await r.json(); } catch (e) {} }

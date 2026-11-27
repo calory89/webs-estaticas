@@ -12,8 +12,12 @@ async function loadOne(env, name) {
 const sh = (globalThis.__kbJson || {})[name]; if (sh && sh.v && (sh.a || Date.now() - sh.t < 600000)) return sh.v;
 return jget(env, name, ORIGIN + $q.a + name, ORIGIN + $q.b + name).then(o => o.v, () => null);
 }
+let FLY = null;   // n40 k57: one build in flight
 export async function webData(env) {
 if (MEMO && Date.now() - MEMO.t < 600000) return MEMO.v;
+return FLY || (FLY = webData0(env).finally(() => { FLY = null; }));
+}
+async function webData0(env) {
 const [health, links, named, forensics] = await Promise.all([loadOne(env, $q.c), loadOne(env, $q.d), loadOne(env, $q.e), loadOne(env, $q.f)]);
 FZ = (forensics && forensics.d) || {};
 const byDev = new Map();

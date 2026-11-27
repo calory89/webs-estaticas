@@ -540,8 +540,16 @@ return { title, desc, canon: dupOf ? pUrl(lang, dupOf.s) : canon, body: leadify(
 const SUFFIX = new Set('llc l c ltd limited inc incorporated pjsc pjs psc p j s sa slu sl plc bhd berhad sdn co company corp corporation pt tbk jsc gmbh ag bv nv srl spa sas sarl doo as ab oy kft zrt fz fze fzco fzllc soc sole proprietorship pvt pte private public sae sab de cv sapi ooo sociedad anonima'.split(' '));
 const normN = s => String(s || '').normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9Ѐ-ӿ؀-ۿ一-鿿]+/g, ' ').trim();
 const core = s => normN(s).split(' ').filter(w => w && !SUFFIX.has(w)).join(' ');
+const gKey = name => new Request(ORIGIN + '/__named_gleif/v2/' + encodeURIComponent(normN(name)));
+const gleifDev = env => loadJson(env, 'gleif-dev.json').catch(() => null);
+async function viaPre(key, row, live, ctx) {
+try { const hit = await caches.default.match(key); if (hit) { const v = await hit.json(); if (v && v.ok) return v; } } catch (e) {}
+if (row && row.ok && Date.now() - Date.parse(row.at) < 5184e6) { if (ctx && ctx.waitUntil) ctx.waitUntil(live().catch(() => {})); return row; }
+return live();
+}
+const warmDev = env => { const n = () => {}; for (const f of [() => gleifDev(env), () => rsData(env), () => webData(env), () => familyData(env), () => watchData(env), () => filingsData(env), () => ccData33(env), () => loadS31(env), () => loadS32(env), () => loadJson(env, 'promises.json'), () => loadJson(env, 'findings-by-project.json'), () => satData(env), () => facetsData(env)]) try { f().catch(n); } catch (e) {} };   // n40 k57
 async function gleif(name, ctx) {
-const key = new Request(ORIGIN + '/__named_gleif/v2/' + encodeURIComponent(normN(name)));
+const key = gKey(name);
 try { const hit = await caches.default.match(key); if (hit) return await hit.json(); } catch (e) {}
 let res;
 try {
@@ -721,8 +729,7 @@ return 12742 * Math.asin(Math.sqrt(a)) > 2;
 };
 }
 export async function render(ix, kind, key, lang, env, ctx) {
-try { await loadS31(env); } catch (e) {}
-try { await loadS32(env); } catch (e) {}
+await Promise.all([loadS31(env).catch(() => {}), loadS32(env).catch(() => {})]);
 if (kind === 'i') return indexPage(ix, lang);
 if (kind === 'projects') {
 const x = ix.bySlug.get(key); if (!x) return null;
@@ -764,8 +771,8 @@ return pg;
 const dv = ix.devs.get(key); if (!dv) return null;
 const softD = f => (async () => { try { return await f(); } catch (e) { return null; } })();
 const [gn, rs, web, fam, watch, fil, fac, cc] = await Promise.all([
-(async () => { const gl = await gleif(dv.n, ctx), m0 = gl.matches[0], cs = new Set(dv.ids.map(i => ix.byId.get(i)).filter(Boolean).map(x => TB.kbx_named__t.o_COUNTRY_ISO[x.co] || x.co));
-const netOk = !!(m0 && cs.has(m0.country)), net = netOk ? await gleifNet(m0.lei, ctx) : null;
+(async () => { const gd = await gleifDev(env), gl = await viaPre(gKey(dv.n), gd && gd.d && gd.d[dv.s] && gd.d[dv.s][0] === dv.n ? gd.d[dv.s][1] : null, () => gleif(dv.n, ctx), ctx), m0 = gl.matches[0], cs = new Set(dv.ids.map(i => ix.byId.get(i)).filter(Boolean).map(x => TB.kbx_named__t.o_COUNTRY_ISO[x.co] || x.co));
+const netOk = !!(m0 && cs.has(m0.country)), net = netOk ? await viaPre(new Request(ORIGIN + '/__named_gleifnet/v1/' + m0.lei), gd && gd.net && gd.net[m0.lei], () => gleifNet(m0.lei, ctx), ctx) : null;
 return { gl, netOk, net }; })(),
 softD(() => rsData(env)), softD(() => webData(env)), softD(() => familyData(env)), softD(() => watchData(env)), softD(() => filingsData(env)), softD(() => facetsData(env)), softD(() => ccData33(env))]);
 const gl = gn.gl, netOk = gn.netOk, net = gn.net;
@@ -806,8 +813,9 @@ if (old.headers.get('x-lm')) hh['last-modified'] = old.headers.get('x-lm');
 return new Response(old.body, { status: 200, headers: hh });
 }
 } catch (e) {}
+const shP = shell(pre(lang) + '/how-we-score/'); shP.catch(() => {}); if (kind === 'developers' && key) warmDev(env);
 let ix; try { ix = await data(env); } catch (e) { return null; }
-const t1 = Date.now(), shP = shell(pre(lang) + '/how-we-score/'); shP.catch(() => {});
+const t1 = Date.now();
 const pg = await render(ix, key ? kind : 'i', key, lang, env, ctx);
 if (pg && key) try { await seoLd(pg, env, kind, key, await lmFiles(ix, env)); } catch (e) {}
 updLine(pg);

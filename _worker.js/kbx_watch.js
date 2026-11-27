@@ -1,6 +1,7 @@
 // comments: _notes/kolaboro-worker-comments.txt
 const $q = TB.kbx_watch__q, $s = TB.kbx_watch__s, $t = TB.kbx_watch__t;   // n40 k46: short names for this module's string tables (strings in /data/i18n/k19s.json, k17s.json, k46s.json)
 import { TB } from './kbx_strings.js';
+import { jget } from './kbx_jget.js';
 import { LOCALE } from './kbx_named_i18n.js';
 import { warnDevHtml } from './kbx_gaz.js';
 import { t as I30 } from './kbx_n30c_named.js';
@@ -15,14 +16,13 @@ const pre = l => l === 'en' ? '' : '/' + l;
 const dtf = (L, o) => { const c = (globalThis.__kbFmt = globalThis.__kbFmt || {}), k = 'd' + L + JSON.stringify(o || 0); return c[k] || (c[k] = new Intl.DateTimeFormat(L, o)); };
 function fdt(d, lang) { try { return dtf(LOCALE[lang] || 'en-GB', { day: $q.d, month: 'short', year: $q.d, timeZone: 'UTC' }).format(new Date(d + $q.e)); } catch (e) { return d; } }
 let MEMO = null;
-async function loadOne(env, name) {
-let r = null;
-try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + $q.f + name)); } catch (e) { r = null; }
-if (!r || !r.ok) { try { r = await fetch(ORIGIN + $q.g + name + '?v=1', { cf: { cacheTtl: 300, cacheEverything: true } }); } catch (e) { r = null; } }
-return r && r.ok ? await r.json().catch(() => null) : null;
-}
+const loadOne = (env, name) => jget(env, name, ORIGIN + $q.f + name, ORIGIN + $q.g + name + '?v=1').then(o => o.v, () => null);   // n40 k57: shared parse (jget)
+let FLY = null;
 export async function watchData(env) {
 if (MEMO && Date.now() - MEMO.t < 600000) return MEMO.v;
+return FLY || (FLY = watchData0(env).finally(() => { FLY = null; }));
+}
+async function watchData0(env) {
 const [la, sa, gz] = await Promise.all([loadOne(env, $q.h), loadOne(env, $q.i), loadOne(env, $q.j)]);
 const byUrl = new Map();
 for (const x of ((la && la.items) || [])) { if (!byUrl.has(x.url)) byUrl.set(x.url, []); byUrl.get(x.url).push(x); }

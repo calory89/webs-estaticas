@@ -1,6 +1,6 @@
 // comments: _notes/kolaboro-worker-comments.txt
 import { T, LOCALE } from './kbx_named_i18n.js';
-import { sf } from './kbx_jget.js';
+import { sf, jget } from './kbx_jget.js';
 import { regSale, rsText } from './kbx_n31d_rs.js';
 import { TB } from './kbx_strings.js';
 const ORIGIN = 'https://kolaboro.com';
@@ -152,13 +152,10 @@ export const NET_JS = "(function(){document.querySelectorAll('[data-knet]').forE
 "var p=document.createElementNS(ns,'path');p.setAttribute('d','M'+x+' '+y1+' C'+x+' '+m+' '+cx+' '+m+' '+cx+' '+y2);if(n.classList.contains('on'))p.setAttribute('class','on');n._p=p;s.appendChild(p);});}" +
 "function on(n){nodes.concat([d]).forEach(function(k){k.classList.toggle('on',k===n);if(k._p)k._p.setAttribute('class',k===n?'on':'');});cap.textContent=n.getAttribute('data-rel')||'';}" +
 "nodes.concat([d]).forEach(function(n){n.addEventListener('mouseenter',function(){on(n);});n.addEventListener('focus',function(){on(n);});});draw();var t;window.addEventListener('resize',function(){clearTimeout(t);t=setTimeout(draw,120);});if(window.ResizeObserver)new ResizeObserver(function(){clearTimeout(t);t=setTimeout(draw,60);}).observe(w);});})();";
-let FAM = { t: 0, v: null };
+let FAM = { t: 0, v: null };   // n40 k57: parse shared with kbx_tr (jget)
 export async function familyData(env) {
 if (FAM.v !== null && Date.now() - FAM.t < 600000) return FAM.v;
-let r = null;
-try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + TB.kbx_named_plus__t.k14)); } catch (e) { r = null; }
-if (!r || !r.ok) { try { r = await fetch(ORIGIN + '/data/gleif-family.json?w=1', { cf: { cacheTtl: 300, cacheEverything: true } }); } catch (e) { r = null; } }
-const v = r && r.ok ? await r.json().catch(() => null) : null;
+const v = await jget(env, 'gleif-family.json', ORIGIN + TB.kbx_named_plus__t.k14, ORIGIN + '/data/gleif-family.json?w=1').then(o => o.v, () => null);
 FAM = { t: Date.now(), v: v || false }; return v;
 }
 export function famNet(fam, s) {

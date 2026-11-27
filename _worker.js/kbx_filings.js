@@ -8,10 +8,13 @@ const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', r
 const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': $q.a, "'": '&#39;' }[c]));
 const ltr = s => $q.b + esc(s) + $q.c;
 const fdt = (d, l) => { if (!d) return ''; try { return new Date(d + $q.d).toLocaleDateString(LOC[l] || 'en-GB', { day: $q.e, month: 'short', year: $q.e, timeZone: 'UTC' }); } catch (e) { return d; } };
-let MEMO = null;
+let MEMO = null, FLY = null;   // n40 k57: one load at a time
 export async function filingsData(env) {
 await n31cT(env).catch(() => {});
 if (MEMO && Date.now() - MEMO.t < 600000) return MEMO.v;
+return FLY || (FLY = filingsData0(env).finally(() => { FLY = null; }));
+}
+async function filingsData0(env) {
 let r = null; const path = $q.f;
 try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + $q.g + path)); } catch (e) { r = null; }
 if (!r || !r.ok) { try { r = await fetch(ORIGIN + path + '?v=' + Math.floor(Date.now() / 600000), { cf: { cacheTtl: 300, cacheEverything: true } }); } catch (e) { r = null; } }

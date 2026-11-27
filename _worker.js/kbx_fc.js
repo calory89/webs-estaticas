@@ -177,9 +177,12 @@ else b += $t.k8 + esc(t(lang, 'nd', { g: g.name, n: g.n, k: g.k, N: MIN_N, K: MI
 return b + $q.J + esc(t(lang, 'bias')) + '</p>' + methodLink(lang) + $q.ah + $s.FC_CSS;
 } catch (e) { return ''; }
 }
-let RS_LIVE = null;
+let RS_LIVE = null, RS_FLY = null;   // n40 k57: one pair of calls at a time
 export async function rsData(env) {
 if (RS_LIVE && Date.now() - RS_LIVE.t < 600000) return RS_LIVE.v;
+return RS_FLY || (RS_FLY = rsData0(env).finally(() => { RS_FLY = null; }));
+}
+async function rsData0(env) {
 try {
 const [ya, dr] = await Promise.all([rpc($q.ai, {}), rpc($q.aj, { p_id: '' })]);
 if (!ya || typeof ya !== $q.ak || !Array.isArray(dr)) throw new Error('shape');
