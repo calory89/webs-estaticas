@@ -8,7 +8,7 @@ let C = { t: 0, h: null }, K33 = null;
 import { TB } from './kbx_strings.js';
 const S = TB.kbx_ticker_S;
 export const SHIP_N = 3;
-const SITE_V = 'n40k54a';
+const SITE_V = 'n40k54b';
 function file(e, n) { return TF[n] || (TF[n] = file0(e, n).then(v => { if (v == null) delete TF[n]; return v; })); }   // n40 k21: read once
 const TF = {};
 async function file0(env, n) {
