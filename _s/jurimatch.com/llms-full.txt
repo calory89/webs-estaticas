@@ -2799,6 +2799,9 @@ A: Puede servir en algunos casos, porque parte del sobreprecio se traslada al co
 Q: ¿Necesito un perito?
 A: Casi siempre se aporta un informe pericial económico. Algunos despachos y financiadores lo adelantan y lo cobran solo si se gana.
 
+Q: ¿Cuál es el plazo para reclamar el sobreprecio?
+A: Es una de las cuestiones más discutidas: según el régimen aplicable puede ser de uno o de cinco años, y el momento desde el que se cuenta ha sido objeto de sentencias del TJUE. Las reclamaciones extrajudiciales ya enviadas pueden haberlo interrumpido. El margen para nuevas demandas es estrecho, así que consulte de inmediato.
+
 ### Cártel de coches: quién puede reclamar y cómo
 URL: https://jurimatch.com/es/guias/cartel-de-coches
 
@@ -3012,6 +3015,9 @@ A: Hace falta probar que el vehículo lleva un dispositivo de desactivación pro
 Q: ¿Puedo reclamar si ya vendí el coche?
 A: Puede ser posible, según la vía y el plazo. Consulte con su documentación de compra y de venta.
 
+Q: ¿Cuánto tiempo tengo para reclamar por el dieselgate?
+A: Depende de la vía. Contra el vendedor se reclama por incumplimiento del contrato; contra el fabricante, por daños fuera del contrato, donde el plazo en España puede ser de solo un año desde que se conoció el daño. Desde cuándo se cuenta se ha discutido mucho, así que no lo deje para más adelante.
+
 ### Discapacidad del Seguro Social (SSDI y SSI): cómo solicitarla y apelar
 URL: https://jurimatch.com/es/guias/discapacidad-seguro-social-ssdi-ssi
 
@@ -3149,6 +3155,9 @@ A: En general no para hipotecas firmadas antes del cambio legal de finales de 20
 Q: ¿Y si no tengo las facturas?
 A: Puede pedir copia al notario, al registro de la propiedad o a la gestoría. Su abogado también puede ayudarle a obtenerlas.
 
+Q: ¿Desde cuándo cuenta el plazo para reclamar los gastos?
+A: La nulidad no prescribe, pero la devolución sí. El Tribunal Supremo, en su sentencia 857/2024, de 14 de junio de 2024, fijó que el plazo empieza a contar desde que es firme la sentencia que declara nula la cláusula, salvo que el banco pruebe que usted pudo saber antes que era abusiva.
+
 ### Hoja de encargo: qué revisar antes de firmar con un abogado
 URL: https://jurimatch.com/es/guias/hoja-de-encargo
 
@@ -3201,6 +3210,9 @@ A: No automáticamente. Según la jurisprudencia europea, hay que analizar si se
 
 Q: ¿Merece la pena reclamar el IRPH?
 A: Depende de la documentación y de la diferencia económica. Un abogado puede valorar su caso concreto; es un litigio con resultados desiguales.
+
+Q: ¿Hay plazo para reclamar el IRPH?
+A: La nulidad de una cláusula abusiva no prescribe, pero la devolución del dinero sí puede estar sujeta a plazo, y desde cuándo cuenta se sigue debatiendo en la jurisprudencia europea y española. Como los criterios evolucionan, pida una revisión de su caso cuanto antes en lugar de esperar a nuevas sentencias.
 
 ### Justicia gratuita: requisitos y cómo solicitarla
 URL: https://jurimatch.com/es/guias/justicia-gratuita
@@ -3398,6 +3410,9 @@ A: Depende de cuándo pudo conocer el problema y de si firmó alguna renuncia. M
 Q: ¿Qué pasa si acepté el arbitraje?
 A: Si el arbitraje terminó con un laudo o firmó un acuerdo con renuncia, en general no se puede volver a reclamar lo mismo.
 
+Q: ¿Cuál es el plazo para anular la compra de preferentes?
+A: La acción de anulación por error tiene un plazo de cuatro años. Según el Tribunal Supremo, en productos complejos empieza a contar cuando el cliente pudo conocer el error, por ejemplo al dejar de cobrar rendimientos o con el canje, y no desde la compra. La reclamación de daños tiene otro plazo.
+
 ### Preguntas para la primera consulta con un abogado
 URL: https://jurimatch.com/es/guias/preguntas-primera-consulta-abogado
 
@@ -3479,6 +3494,9 @@ A: No para presentar la petición inicial, sea cual sea el importe. Si el deudor
 Q: ¿Puedo cobrar intereses por el retraso?
 A: Sí. Entre empresas, la Ley 3/2004 permite reclamar intereses de demora y 40 euros por factura en concepto de costes de cobro, salvo que se pactara otra cosa válida.
 
+Q: ¿Cuándo prescribe una deuda entre empresas?
+A: Las acciones personales sin plazo especial prescriben en cinco años desde que se pudo exigir el pago. Algunas deudas, como ciertos honorarios profesionales o las ventas de comerciantes a particulares, prescriben a los tres años. Un requerimiento fehaciente de pago, por ejemplo por burofax, interrumpe la prescripción y el plazo vuelve a empezar.
+
 ### Reclamar a la Administración: responsabilidad patrimonial
 URL: https://jurimatch.com/es/guias/responsabilidad-patrimonial
 
@@ -3517,6 +3535,9 @@ A: Según la Ley de Usura, usted solo tiene que devolver el capital que realment
 
 Q: ¿Puedo reclamar si la tarjeta ya está cancelada?
 A: En general sí. Necesitará el contrato y el historial de movimientos, que puede pedir a la entidad.
+
+Q: ¿Hay plazo para reclamar una tarjeta revolving?
+A: La nulidad por usura es radical y, según la jurisprudencia, no prescribe. Sobre el plazo para recuperar lo pagado de más hay debate, así que conviene no esperar. Empiece pidiendo a la entidad el contrato y el historial de movimientos, a los que tiene derecho.
 
 ### Vicios de construcción: plazos de garantía y cómo reclamar
 URL: https://jurimatch.com/es/guias/vicios-de-construccion
@@ -3590,6 +3611,9 @@ A: Für gesetzlich Versicherte ist die Unterstützung durch die Krankenkasse und
 Q: Wer muss den Fehler beweisen?
 A: Grundsätzlich der Patient. Bei einem groben Behandlungsfehler wird jedoch vermutet, dass der Fehler den Schaden verursacht hat.
 
+Q: Wie lange kann ich einen Behandlungsfehler geltend machen?
+A: Es gilt die regelmäßige Verjährungsfrist von drei Jahren. Sie beginnt am Ende des Jahres, in dem Sie vom Schaden und von den Umständen erfahren haben, die auf einen Behandlungsfehler hindeuten. Ein Verfahren vor der Gutachterkommission oder Schlichtungsstelle einer Ärztekammer kann die Verjährung hemmen.
+
 ### Dieselskandal: Wer noch Schadensersatz fordern kann
 URL: https://jurimatch.com/de/ratgeber/dieselskandal
 
@@ -3603,6 +3627,9 @@ A: Der Betrag, um den das Fahrzeug wegen der unzulässigen Abschalteinrichtung b
 
 Q: Brauche ich eine Rechtsschutzversicherung?
 A: Nicht zwingend. Ohne Versicherung tragen Sie aber das Kostenrisiko, wenn Sie verlieren, es sei denn, ein Prozessfinanzierer übernimmt es gegen eine Erfolgsbeteiligung.
+
+Q: Ist mein Anspruch im Dieselskandal schon verjährt?
+A: Die regelmäßige Verjährungsfrist beträgt drei Jahre ab Ende des Jahres, in dem Sie von den Umständen wussten oder hätten wissen müssen; für viele EA189-Fälle ist sie abgelaufen. Manchmal kommt ein Restschadensersatzanspruch nach § 852 BGB mit längerer Frist in Betracht. Bei anderen Motoren können die Fristen anders laufen.
 
 ### Erfolgshonorar in Deutschland: Was Anwälte vereinbaren dürfen
 URL: https://jurimatch.com/de/ratgeber/erfolgshonorar
@@ -3632,6 +3659,9 @@ A: Nein. Bei Annullierung können Sie die Erstattung des Ticketpreises in Geld v
 Q: Brauche ich einen Anwalt?
 A: Nicht unbedingt. Die Forderung bei der Airline und die Schlichtung sind ohne Anwalt möglich, und am Amtsgericht besteht kein Anwaltszwang.
 
+Q: Wie lange kann ich eine Entschädigung für einen verspäteten Flug fordern?
+A: Die Fluggastrechte-Verordnung nennt keine Frist. In Deutschland gilt die regelmäßige Verjährung von drei Jahren, beginnend mit dem Ende des Jahres, in dem der Flug stattfand. Für verlorenes oder beschädigtes Gepäck gelten nach dem Montrealer Übereinkommen viel kürzere Anzeigefristen von wenigen Tagen.
+
 ### Post vom Inkasso: Forderung prüfen und richtig reagieren
 URL: https://jurimatch.com/de/ratgeber/inkasso
 
@@ -3646,6 +3676,9 @@ A: Sie sollten es zumindest prüfen. Ist die Forderung unberechtigt, widersprech
 Q: Wie treibe ich als Unternehmen eine offene Rechnung ein?
 A: Nach einer Mahnung können Sie selbst online einen gerichtlichen Mahnbescheid beantragen oder eine Kanzlei bzw. ein Inkassounternehmen beauftragen. Bei Zahlungsverzug können Sie Verzugszinsen und unter Unternehmen eine Pauschale von 40 Euro verlangen.
 
+Q: Muss ich eine verjährte Forderung bezahlen?
+A: Nein, wenn Sie sich auf die Verjährung berufen. Die meisten Forderungen aus Verträgen verjähren in drei Jahren ab Ende des Jahres, in dem sie entstanden sind und der Gläubiger davon wusste. Gegen einen gerichtlichen Mahnbescheid haben Sie aber nur zwei Wochen ab Zustellung für den Widerspruch.
+
 ### Verluste mit Kapitalanlagen: Wann Anleger Schadensersatz fordern können
 URL: https://jurimatch.com/de/ratgeber/kapitalanlage
 
@@ -3659,6 +3692,9 @@ A: Die Ombudsverfahren der Banken und der Investmentfondsbranche sind für Verbr
 
 Q: Was tun, wenn der Anbieter insolvent ist?
 A: Melden Sie Ihre Forderung im Insolvenzverfahren an. Prüfen Sie außerdem, ob Berater, Vermittler, Banken oder Verantwortliche persönlich haften.
+
+Q: Wann verjähren Ansprüche wegen falscher Anlageberatung?
+A: In der Regel drei Jahre ab Ende des Jahres, in dem Sie von der Pflichtverletzung und dem Schaden wussten oder hätten wissen müssen. Unabhängig davon verjähren solche Ansprüche spätestens zehn Jahre nach ihrer Entstehung. Bei älteren Anlagen prüft eine Kanzlei deshalb zuerst die Frist.
 
 ### Kündigung erhalten: Kündigungsschutzklage und Abfindung
 URL: https://jurimatch.com/de/ratgeber/kuendigung
@@ -3688,6 +3724,9 @@ A: Nach einer angemessenen Prüfungsfrist, die vom Einzelfall abhängt. Für ein
 Q: Bekomme ich auch Zinsen?
 A: Ja. Die Erträge der Kautionsanlage stehen dem Mieter zu, auch wenn sie bei niedrigen Zinsen gering ausfallen können.
 
+Q: Wann verjähren die Ansprüche rund um die Mietkaution?
+A: Ansprüche des Vermieters wegen Schäden an der Wohnung verjähren schon sechs Monate nach der Rückgabe (§ 548 BGB), auch wenn er unter Umständen noch mit der Kaution aufrechnen kann. Ihr Anspruch auf Rückzahlung der Kaution verjährt in drei Jahren ab Ende des Jahres, in dem er fällig wurde.
+
 ### Musterfeststellungsklage und Abhilfeklage: Sammelklagen in Deutschland
 URL: https://jurimatch.com/de/ratgeber/musterfeststellungsklage-abhilfeklage
 
@@ -3715,6 +3754,9 @@ A: Bei der Polizei, auch über die Onlinewache Ihres Bundeslandes. Unerlaubte Fi
 
 Q: Sind Recovery-Firmen seriös?
 A: Größte Vorsicht. Ungefragte Kontaktaufnahme und Vorkasse sind typische Zeichen eines Folgebetrugs.
+
+Q: Bis wann muss ich eine nicht autorisierte Zahlung melden?
+A: Sofort. Das Gesetz sieht eine Ausschlussfrist von höchstens 13 Monaten nach der Belastung vor (§ 676b BGB), aber jede Verzögerung verringert Ihre Chancen. Zivilrechtliche Ansprüche gegen die Täter verjähren in der Regel drei Jahre nach Ende des Jahres, in dem Sie von Schaden und Täter erfahren haben.
 
 ### Prozessfinanzierung: So läuft die Finanzierung Ihres Verfahrens ab
 URL: https://jurimatch.com/de/ratgeber/prozessfinanzierung-ablauf
