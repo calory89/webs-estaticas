@@ -286,3 +286,29 @@ ficheros (límite 20.000). IndexNow 8.638 URL.
   bibliotecas (borradores)». No se ha enviado nada.
 
 **Publicado:** `pub/_wp` 14dae43 (257 ficheros), byte a byte 257/257, axe 0 fallos. `pub/_wp` en 14.910 ficheros.
+
+
+## Ronda 27 (27-nov-2026): blog de guías (`/blog/`)
+
+Pedido de Carlos: «implementa todas» (las 100 ideas del doc «SupportNear: 100 ideas de blog y contenido para atraer visitas»).
+
+- `blog/`: generador aparte, no toca `city_pages.py`. Lee las páginas vivas de `/c/` (`parse_live.py` → `cities_live.json`:
+  ciudades, país, idioma y sitios por necesidad con la cifra del `lede`), `helplines/social.json`, `emergency-numbers.csv`
+  y el CSV abierto de España (`/datos/espana.csv`, para fuentes de agua).
+- `core.py`: plantilla (mismo CSS, cabecera de medición y CSP que las páginas de ciudad), mini-markdown con bloques de
+  datos `{{fn:args}}`. `articles.py`: registro, Article/Report + BreadcrumbList + FAQPage, índice, autor, RSS
+  (`blog/feed.xml`), `sitemap-blog.xml`. `data_fns.py`: tablas por ciudad, teléfonos, fin de semana, informe.
+- Contenido: `content_es1.py` (guías por necesidad), `content_es2.py` (ciudades y profesionales), `content_es3.py`
+  (datos y temporada), `content_en.py`, `content_other.py` (fr, pt, de, uk, ru, ar, ur). 71 artículos.
+  Los hreflang salen de grupos (unión de `alts`); el build falla si un grupo tiene dos del mismo idioma, si hay un slug
+  repetido o un enlace interno roto.
+- `link_pages.py`: añade una línea «Guías:» a 502 páginas de `/c/` (es de España, en de países anglófonos y .en de España,
+  fr de Francia/Bélgica/Suiza/Luxemburgo) antes de «Cómo funciona» (o de los botones en `-volunteer`); `sitemap.xml`
+  con `sitemap-blog.xml`; `llms.txt` con el blog.
+- `orientador.js` (sin `onclick` en línea: la CSP lo bloquea), `sello.svg`, `informe-espana-2026.svg`.
+- Construir: `cd blog && python3 parse_live.py && python3 build.py && python3 link_pages.py` → `/home/claude/sn/stage_blog`.
+  Publicar: `qa_r27/mk.py` + `apply_r27.py` (patch-pub). Comprobar: `qa_r27/verify.py` (quita el beacon de Cloudflare
+  Web Analytics que inyecta Cloudflare antes de comparar).
+
+**Publicado:** `pub/_wp` bd49023 (582 ficheros, 78 nuevos), byte a byte 582/582. 14.988 ficheros en la rama.
+IndexNow 575 URL; `sitemap-blog.xml` enviado a Search Console.
