@@ -1489,8 +1489,8 @@
     },
     "country": {
      "path": "/homes/spain",
-     "html_kb": 24.2,
-     "html_raw_kb": 117,
+     "html_kb": 24.3,
+     "html_raw_kb": 117.2,
      "jsonld_kb": 8.2,
      "blocking_css_kb": 23.3,
      "entry_js_kb": 81,
@@ -1504,7 +1504,7 @@
     "band": {
      "path": "/homes/bulgaria/under-80000",
      "html_kb": 13.3,
-     "html_raw_kb": 52.4,
+     "html_raw_kb": 52.5,
      "jsonld_kb": 4,
      "blocking_css_kb": 23.3,
      "entry_js_kb": 81,
@@ -1561,54 +1561,54 @@
     "listing": {
      "limit_kb": 100,
      "pages": 1705,
-     "over": 227,
+     "over": 228,
      "biggest": [
       {
        "path": "/es/homes/united-states",
-       "kb": 134.2
+       "kb": 134.3
       },
       {
        "path": "/es/homes/italy",
-       "kb": 133.8
+       "kb": 133.9
       },
       {
        "path": "/homes/united-states",
-       "kb": 127.5
+       "kb": 127.6
       },
       {
        "path": "/homes/italy",
-       "kb": 127.4
+       "kb": 127.5
       },
       {
        "path": "/es/homes/spain",
-       "kb": 123
+       "kb": 123.1
       }
      ]
     },
     "languages": {
      "limit_kb": 100,
      "pages": 2856,
-     "over": 124,
+     "over": 125,
      "biggest": [
       {
        "path": "/ru/homes/united-states",
-       "kb": 123
+       "kb": 123.1
       },
       {
        "path": "/ru/homes/italy",
-       "kb": 117.7
+       "kb": 117.8
       },
       {
        "path": "/ru/homes/spain",
-       "kb": 115.5
+       "kb": 115.6
       },
       {
        "path": "/ru/homes/united-states/under-300000",
-       "kb": 115.1
+       "kb": 115.2
       },
       {
        "path": "/ru/homes/italy/under-150000",
-       "kb": 114
+       "kb": 114.1
       }
      ]
     },
