@@ -9,9 +9,9 @@ List last changed 20 November 2026. Jump to the homes
 
 ### Three picks from this list
 
-- [Best scoreNew€170,000Renovated village house with an A3 energy rating near Killala harbour, MayoKillala, County Mayo95 m² · 1 bed · €1,789/m² · 6 days on RealHunt](https://realhunt.co/deal/ie-killala-renovated-village-house-a3-energy-170k)
-- [CheapestNew€220,000Ground-floor two-bed flat with an en suite, a walk from Tramore beach, WaterfordTramore, County Waterford76 m² · 2 bed · €2,895/m² · 6 days on RealHuntCommunity fee €85 a month](https://realhunt.co/deal/ie-tramore-ground-floor-two-bed-flat-near-beach-220k)
-- [Most space for the moneyNew€230,000Three-bed marina-view apartment with roof terrace and boat berth in Leitrim VillageLeitrim Village, County Leitrim121 m² · 3 bed · €1,901/m² · 6 days on RealHuntCommunity fee €169 a month](https://realhunt.co/deal/ie-leitrim-village-marina-view-apartment-berth-230k)
+- [Best scoreNew€170,000Renovated village house with an A3 energy rating near Killala harbour, MayoKillala, County Mayo95 m² · 1 bed · €1,789/m² · 7 days on RealHunt](https://realhunt.co/deal/ie-killala-renovated-village-house-a3-energy-170k)
+- [CheapestNew€220,000Ground-floor two-bed flat with an en suite, a walk from Tramore beach, WaterfordTramore, County Waterford76 m² · 2 bed · €2,895/m² · 7 days on RealHuntCommunity fee €85 a month](https://realhunt.co/deal/ie-tramore-ground-floor-two-bed-flat-near-beach-220k)
+- [Most space for the moneyNew€230,000Three-bed marina-view apartment with roof terrace and boat berth in Leitrim VillageLeitrim Village, County Leitrim121 m² · 3 bed · €1,901/m² · 7 days on RealHuntCommunity fee €169 a month](https://realhunt.co/deal/ie-leitrim-village-marina-view-apartment-berth-230k)
 
 RealHunt lists 4 homes for sale in Ireland today, priced from €170,000 to €230,000. The cheapest costs €170,000: [Renovated village house with an A3 energy rating near Killala harbour, Mayo](https://realhunt.co/deal/ie-killala-renovated-village-house-a3-energy-170k), in Killala (95 m², 1 bedroom). The median price is €230,000 (€2,255/m²), against €93,200 (€1,206/m²) for the 726 homes on RealHunt in 24 countries.
 
@@ -37,16 +37,16 @@ Buying costs
 2.5–3.5%
 
 Data of
-26 Nov 2026
+27 Nov 2026
 
 ### The 4 homes, best score first
 
 Sorted by RealHunt score, best first. For the cheapest first, see the table below: tap a heading such as Price to sort it. [All homes by the sea](https://realhunt.co/homes/ireland/by-the-sea) [See these homes on the map](https://realhunt.co/map?country=Ireland)
 
-- [Score 83New€170,000Renovated village house with an A3 energy rating near Killala harbour, MayoKillala, County Mayo95 m² · 1 bed · €1,789/m² · 6 days on RealHuntA recently renovated two-storey house on Gore Street in the centre of Killala, a short stroll from the harbour on Killala Bay.](https://realhunt.co/deal/ie-killala-renovated-village-house-a3-energy-170k)
-- [Score 80New€230,000Sea-view two-bed end-of-terrace house above the Atlantic in Kilkieran, ConnemaraKilkieran, County Galway102 m² · 2 bed · €2,255/m² · 6 days on RealHuntAn end-of-terrace house in a small, tidy development on a raised site above the Atlantic near Kilkieran village in Connemara, with wide sea views.](https://realhunt.co/deal/ie-kilkieran-connemara-sea-view-two-bed-house-230k)
-- [Score 80New€230,000Three-bed marina-view apartment with roof terrace and boat berth in Leitrim VillageLeitrim Village, County Leitrim121 m² · 3 bed · €1,901/m² · 6 days on RealHuntCommunity fee €169 a monthA 121 m² three-bedroom apartment for €230,000, sold fully furnished, with a private marina berth included.](https://realhunt.co/deal/ie-leitrim-village-marina-view-apartment-berth-230k)
-- [Score 77New€220,000Ground-floor two-bed flat with an en suite, a walk from Tramore beach, WaterfordTramore, County Waterford76 m² · 2 bed · €2,895/m² · 6 days on RealHuntCommunity fee €85 a monthA ground-floor flat in the Pebble Beach development in Tramore, within walking distance of the beach and promenade, set among lawns with views of…](https://realhunt.co/deal/ie-tramore-ground-floor-two-bed-flat-near-beach-220k)
+- [Score 83New€170,000Renovated village house with an A3 energy rating near Killala harbour, MayoKillala, County Mayo95 m² · 1 bed · €1,789/m² · 7 days on RealHuntA recently renovated two-storey house on Gore Street in the centre of Killala, a short stroll from the harbour on Killala Bay.](https://realhunt.co/deal/ie-killala-renovated-village-house-a3-energy-170k)
+- [Score 80New€230,000Sea-view two-bed end-of-terrace house above the Atlantic in Kilkieran, ConnemaraKilkieran, County Galway102 m² · 2 bed · €2,255/m² · 7 days on RealHuntAn end-of-terrace house in a small, tidy development on a raised site above the Atlantic near Kilkieran village in Connemara, with wide sea views.](https://realhunt.co/deal/ie-kilkieran-connemara-sea-view-two-bed-house-230k)
+- [Score 80New€230,000Three-bed marina-view apartment with roof terrace and boat berth in Leitrim VillageLeitrim Village, County Leitrim121 m² · 3 bed · €1,901/m² · 7 days on RealHuntCommunity fee €169 a monthA 121 m² three-bedroom apartment for €230,000, sold fully furnished, with a private marina berth included.](https://realhunt.co/deal/ie-leitrim-village-marina-view-apartment-berth-230k)
+- [Score 77New€220,000Ground-floor two-bed flat with an en suite, a walk from Tramore beach, WaterfordTramore, County Waterford76 m² · 2 bed · €2,895/m² · 7 days on RealHuntCommunity fee €85 a monthA ground-floor flat in the Pebble Beach development in Tramore, within walking distance of the beach and promenade, set among lawns with views of…](https://realhunt.co/deal/ie-tramore-ground-floor-two-bed-flat-near-beach-220k)
 
 ### Compare the 4 homes, cheapest first
 

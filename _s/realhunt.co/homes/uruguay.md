@@ -9,9 +9,9 @@ List last changed 20 November 2026. Jump to the homes
 
 ### Three picks from this list
 
-- [Best scoreNew€180,300Timber-ceiling house with fireplace and barbecue under 100 m from the sea, Playa GrandePlaya Grande, Maldonado115 m² · 2 bed · €1,568/m² · 6 days on RealHunt](https://realhunt.co/deal/uy-piriapolis-playa-grande-house-near-sea-198k)
-- [CheapestNew€150,300Brick chalet with three bedrooms one block from the beach in La Aguada, La PalomaLa Aguada, Rocha100 m² · 3 bed · €1,503/m² · 6 days on RealHunt](https://realhunt.co/deal/uy-la-aguada-brick-chalet-one-block-from-beach-165k)
-- [Most space for the moneyNew€186,300Three-bedroom house with a barbecue patio near the rambla in Colonia del SacramentoColonia del Sacramento, Colonia113 m² · 3 bed · €1,649/m² · 8 days on RealHunt](https://realhunt.co/deal/uy-colonia-del-sacramento-three-bed-house-near-rambla-205k)
+- [Best scoreNew€180,300Timber-ceiling house with fireplace and barbecue under 100 m from the sea, Playa GrandePlaya Grande, Maldonado115 m² · 2 bed · €1,568/m² · 7 days on RealHunt](https://realhunt.co/deal/uy-piriapolis-playa-grande-house-near-sea-198k)
+- [CheapestNew€150,300Brick chalet with three bedrooms one block from the beach in La Aguada, La PalomaLa Aguada, Rocha100 m² · 3 bed · €1,503/m² · 7 days on RealHunt](https://realhunt.co/deal/uy-la-aguada-brick-chalet-one-block-from-beach-165k)
+- [Most space for the moneyNew€186,300Three-bedroom house with a barbecue patio near the rambla in Colonia del SacramentoColonia del Sacramento, Colonia113 m² · 3 bed · €1,649/m² · 9 days on RealHunt](https://realhunt.co/deal/uy-colonia-del-sacramento-three-bed-house-near-rambla-205k)
 
 RealHunt lists 4 houses for sale in Uruguay today, priced from €150,300 to €186,300. The cheapest costs €150,300: [Brick chalet with three bedrooms one block from the beach in La Aguada, La Paloma](https://realhunt.co/deal/uy-la-aguada-brick-chalet-one-block-from-beach-165k), in La Aguada (100 m², 3 bedrooms). The median price is €180,300 (€1,649/m²), against €93,200 (€1,206/m²) for the 726 homes on RealHunt in 24 countries.
 
@@ -37,16 +37,16 @@ Buying costs
 5–8%
 
 Data of
-26 Nov 2026
+27 Nov 2026
 
 ### The 4 homes, best score first
 
 Sorted by RealHunt score, best first. For the cheapest first, see the table below: tap a heading such as Price to sort it. [See these homes on the map](https://realhunt.co/map?country=Uruguay)
 
-- [Score 85New€180,300Timber-ceiling house with fireplace and barbecue under 100 m from the sea, Playa GrandePlaya Grande, Maldonado115 m² · 2 bed · €1,568/m² · 6 days on RealHuntAsking US$198,000 (about €180,300).](https://realhunt.co/deal/uy-piriapolis-playa-grande-house-near-sea-198k)
-- [Score 85New€150,300Brick chalet with three bedrooms one block from the beach in La Aguada, La PalomaLa Aguada, Rocha100 m² · 3 bed · €1,503/m² · 6 days on RealHuntAsking US$165,000 (about €150,300).](https://realhunt.co/deal/uy-la-aguada-brick-chalet-one-block-from-beach-165k)
-- [Score 82New€150,300Recently built three-bed house three blocks from the beach in La Paloma, RochaLa Paloma, Rocha90 m² · 3 bed · €1,670/m² · 6 days on RealHuntAsking US$165,000 (about €150,300).](https://realhunt.co/deal/uy-la-paloma-new-house-three-blocks-from-beach-165k)
-- [Score 82New€186,300Three-bedroom house with a barbecue patio near the rambla in Colonia del SacramentoColonia del Sacramento, Colonia113 m² · 3 bed · €1,649/m² · 8 days on RealHuntAsking US$205,000 (about €186,300) for a single-storey brick house of 113 m² on a 475 m² plot in Colonia del Sacramento, the old Portuguese…](https://realhunt.co/deal/uy-colonia-del-sacramento-three-bed-house-near-rambla-205k)
+- [Score 85New€180,300Timber-ceiling house with fireplace and barbecue under 100 m from the sea, Playa GrandePlaya Grande, Maldonado115 m² · 2 bed · €1,568/m² · 7 days on RealHuntAsking US$198,000 (about €180,300).](https://realhunt.co/deal/uy-piriapolis-playa-grande-house-near-sea-198k)
+- [Score 85New€150,300Brick chalet with three bedrooms one block from the beach in La Aguada, La PalomaLa Aguada, Rocha100 m² · 3 bed · €1,503/m² · 7 days on RealHuntAsking US$165,000 (about €150,300).](https://realhunt.co/deal/uy-la-aguada-brick-chalet-one-block-from-beach-165k)
+- [Score 82New€150,300Recently built three-bed house three blocks from the beach in La Paloma, RochaLa Paloma, Rocha90 m² · 3 bed · €1,670/m² · 7 days on RealHuntAsking US$165,000 (about €150,300).](https://realhunt.co/deal/uy-la-paloma-new-house-three-blocks-from-beach-165k)
+- [Score 82New€186,300Three-bedroom house with a barbecue patio near the rambla in Colonia del SacramentoColonia del Sacramento, Colonia113 m² · 3 bed · €1,649/m² · 9 days on RealHuntAsking US$205,000 (about €186,300) for a single-storey brick house of 113 m² on a 475 m² plot in Colonia del Sacramento, the old Portuguese…](https://realhunt.co/deal/uy-colonia-del-sacramento-three-bed-house-near-rambla-205k)
 
 ### Compare the 4 homes, cheapest first
 

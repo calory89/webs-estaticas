@@ -9,9 +9,9 @@ Lista cambiada por última vez el 5 de octubre de 2026. Ir a las viviendas
 
 ### Tres de esta lista
 
-- [Mejor nota50.575 €Piso de 2 dormitorios en San Pedro Tlaquepaque, JaliscoSan Pedro Tlaquepaque, Jalisco49 m² · 2 dorm. · 1.032 €/m² · 64 días en RealHuntCuota de comunidad no indicada](https://realhunt.co/es/deal/san-pedro-tlaquepaque-50575)
-- [La más barata68.984 €Piso de 3 dormitorios en Cuautlancingo, PueblaCuautlancingo, Puebla78 m² · 3 dorm. · 884 €/m² · 64 días en RealHuntCuota de comunidad no indicada](https://realhunt.co/es/deal/cuautlancingo-68984)
-- [Más metros por el dinero70.805 €Casa de 2 dormitorios en Tonalá, JaliscoTonalá, Jalisco65 m² · 2 dorm. · 1.089 €/m² · 64 días en RealHunt](https://realhunt.co/es/deal/tonala-70805)
+- [Mejor nota50.575 €Piso de 2 dormitorios en San Pedro Tlaquepaque, JaliscoSan Pedro Tlaquepaque, Jalisco49 m² · 2 dorm. · 1.032 €/m² · 65 días en RealHuntCuota de comunidad no indicada](https://realhunt.co/es/deal/san-pedro-tlaquepaque-50575)
+- [La más barata68.984 €Piso de 3 dormitorios en Cuautlancingo, PueblaCuautlancingo, Puebla78 m² · 3 dorm. · 884 €/m² · 65 días en RealHuntCuota de comunidad no indicada](https://realhunt.co/es/deal/cuautlancingo-68984)
+- [Más metros por el dinero70.805 €Casa de 2 dormitorios en Tonalá, JaliscoTonalá, Jalisco65 m² · 2 dorm. · 1.089 €/m² · 65 días en RealHunt](https://realhunt.co/es/deal/tonala-70805)
 
 RealHunt tiene hoy 9 pisos en venta en México, con precios de 50.575 € a 98.621 €. La más barata cuesta 50.575 €: [Piso de 2 dormitorios en San Pedro Tlaquepaque, Jalisco](https://realhunt.co/es/deal/san-pedro-tlaquepaque-50575), en San Pedro Tlaquepaque (49 m², 2 dormitorios). El precio mediano es de 83.298 € (1.140 €/m²), frente a 93.200 € (1.206 €/m²) de las 726 viviendas de RealHunt en 24 países.
 ¿Puedes comprar aquí? Lee esto primero
@@ -44,21 +44,21 @@ Compradores extranjeros
 Con límites
 
 Datos del
-26 nov 2026
+27 nov 2026
 
 ### Las 9 viviendas, de mejor a peor nota
 
 Ordenadas por la nota de RealHunt, de mejor a peor. Para verlas de más barata a más cara, mira la tabla de abajo: toca un encabezado como Precio para ordenarla. [Todas las viviendas junto al mar](https://realhunt.co/es/homes/mexico/by-the-sea) [Ver estas viviendas en el mapa](https://realhunt.co/es/map?country=Mexico)
 
-- [Nota 9350.575 €Piso de 2 dormitorios en San Pedro Tlaquepaque, JaliscoSan Pedro Tlaquepaque, Jalisco49 m² · 2 dorm. · 1.032 €/m² · 64 días en RealHuntCuota de comunidad no indicada49 m², 2 dormitorios.](https://realhunt.co/es/deal/san-pedro-tlaquepaque-50575)
-- [Nota 9080.920 €Piso de 3 dormitorios cerca de la playa en Mazatlán, SinaloaMazatlán, Sinaloa71 m² · 3 dorm. · 1.140 €/m² · 64 días en RealHuntCuota de comunidad no indicada71 m², 3 dormitorios, 2 baños.](https://realhunt.co/es/deal/mazatlan-80920)
-- [Nota 8970.805 €Casa de 2 dormitorios en Tonalá, JaliscoTonalá, Jalisco65 m² · 2 dorm. · 1.089 €/m² · 64 días en RealHunt65 m², 2 dormitorios.](https://realhunt.co/es/deal/tonala-70805)
-- [Nota 8768.984 €Piso de 3 dormitorios en Cuautlancingo, PueblaCuautlancingo, Puebla78 m² · 3 dorm. · 884 €/m² · 64 días en RealHuntCuota de comunidad no indicada78 m², 3 dormitorios, 2 baños.](https://realhunt.co/es/deal/cuautlancingo-68984)
-- [Nota 8686.100 €Piso nuevo de 2 dormitorios con azotea y terraza en Mazatlán, entrega inmediataMazatlán, Sinaloa68 m² · 2 dorm. · 1.266 €/m² · 52 días en RealHuntCuota de comunidad no indicadaPiso de 68 m² en La Rocca, conjunto cerrado de ocho torres en la Av.](https://realhunt.co/es/deal/mx-mazatlan-86k-809756)
-- [Nota 8698.621 €Piso de 2 dormitorios en Mazatlán, SinaloaMazatlán, Sinaloa89 m² · 2 dorm. · 1.108 €/m² · 64 días en RealHuntCuota de comunidad no indicadaApartamento de 89 m² con dos dormitorios y dos baños en Mazatlán, Sinaloa.](https://realhunt.co/es/deal/mazatlan-98621)
-- [Nota 8683.298 €Piso de 2 dormitorios en Mazatlán, SinaloaMazatlán, Sinaloa60 m² · 2 dorm. · 1.388 €/m² · 64 días en RealHuntCuota de comunidad no indicada60 m², 2 dormitorios.](https://realhunt.co/es/deal/mazatlan-83298)
-- [Nota 8497.100 €Piso de 2 dormitorios y 2 baños con piscina en un residencial cerrado de MazatlánMazatlán, Sinaloa65 m² · 2 dorm. · 1.494 €/m² · 52 días en RealHuntCuota de comunidad no indicadaPiso de 65 m² en Adora Residencial, urbanización privada y cerrada en Mazatlán: dos dormitorios, dos baños y aparcamiento cubierto, con piscina…](https://realhunt.co/es/deal/mx-mazatlan-97k-889034)
-- [Nota 8483.448 €Piso de 2 dormitorios en Mazatlán, SinaloaMazatlán, Sinaloa60 m² · 2 dorm. · 1.391 €/m² · 64 días en RealHuntCuota de comunidad no indicadaApartamento de 60 m² con dos dormitorios en Mazatlán, Sinaloa.](https://realhunt.co/es/deal/mazatlan-83448)
+- [Nota 9350.575 €Piso de 2 dormitorios en San Pedro Tlaquepaque, JaliscoSan Pedro Tlaquepaque, Jalisco49 m² · 2 dorm. · 1.032 €/m² · 65 días en RealHuntCuota de comunidad no indicada49 m², 2 dormitorios.](https://realhunt.co/es/deal/san-pedro-tlaquepaque-50575)
+- [Nota 9080.920 €Piso de 3 dormitorios cerca de la playa en Mazatlán, SinaloaMazatlán, Sinaloa71 m² · 3 dorm. · 1.140 €/m² · 65 días en RealHuntCuota de comunidad no indicada71 m², 3 dormitorios, 2 baños.](https://realhunt.co/es/deal/mazatlan-80920)
+- [Nota 8970.805 €Casa de 2 dormitorios en Tonalá, JaliscoTonalá, Jalisco65 m² · 2 dorm. · 1.089 €/m² · 65 días en RealHunt65 m², 2 dormitorios.](https://realhunt.co/es/deal/tonala-70805)
+- [Nota 8768.984 €Piso de 3 dormitorios en Cuautlancingo, PueblaCuautlancingo, Puebla78 m² · 3 dorm. · 884 €/m² · 65 días en RealHuntCuota de comunidad no indicada78 m², 3 dormitorios, 2 baños.](https://realhunt.co/es/deal/cuautlancingo-68984)
+- [Nota 8686.100 €Piso nuevo de 2 dormitorios con azotea y terraza en Mazatlán, entrega inmediataMazatlán, Sinaloa68 m² · 2 dorm. · 1.266 €/m² · 53 días en RealHuntCuota de comunidad no indicadaPiso de 68 m² en La Rocca, conjunto cerrado de ocho torres en la Av.](https://realhunt.co/es/deal/mx-mazatlan-86k-809756)
+- [Nota 8698.621 €Piso de 2 dormitorios en Mazatlán, SinaloaMazatlán, Sinaloa89 m² · 2 dorm. · 1.108 €/m² · 65 días en RealHuntCuota de comunidad no indicadaApartamento de 89 m² con dos dormitorios y dos baños en Mazatlán, Sinaloa.](https://realhunt.co/es/deal/mazatlan-98621)
+- [Nota 8683.298 €Piso de 2 dormitorios en Mazatlán, SinaloaMazatlán, Sinaloa60 m² · 2 dorm. · 1.388 €/m² · 65 días en RealHuntCuota de comunidad no indicada60 m², 2 dormitorios.](https://realhunt.co/es/deal/mazatlan-83298)
+- [Nota 8497.100 €Piso de 2 dormitorios y 2 baños con piscina en un residencial cerrado de MazatlánMazatlán, Sinaloa65 m² · 2 dorm. · 1.494 €/m² · 53 días en RealHuntCuota de comunidad no indicadaPiso de 65 m² en Adora Residencial, urbanización privada y cerrada en Mazatlán: dos dormitorios, dos baños y aparcamiento cubierto, con piscina…](https://realhunt.co/es/deal/mx-mazatlan-97k-889034)
+- [Nota 8483.448 €Piso de 2 dormitorios en Mazatlán, SinaloaMazatlán, Sinaloa60 m² · 2 dorm. · 1.391 €/m² · 65 días en RealHuntCuota de comunidad no indicadaApartamento de 60 m² con dos dormitorios en Mazatlán, Sinaloa.](https://realhunt.co/es/deal/mazatlan-83448)
 
 ### Compara las 9 viviendas, de más barata a más cara
 

@@ -9,9 +9,9 @@ Lista cambiada por última vez el 20 de noviembre de 2026. Ir a las viviendas
 
 ### Tres de esta lista
 
-- [Mejor notaNueva161.000 €Casa adosada de tres dormitorios bien mantenida con paneles solares en Enniskillen, FermanaghEnniskillen, Irlanda del Norte107 m² · 3 dorm. · 1.505 €/m² · 6 días en RealHunt](https://realhunt.co/es/deal/uk-enniskillen-three-bed-semi-solar-panels-140k)
-- [La más barata88.500 €Bungalow luminoso con jardín cerca del centro y la playa de BlythBlyth, Northumberland1 dorm. · 51 días en RealHunt](https://realhunt.co/es/deal/uk-blyth-88k-869241)
-- [Más metros por el dineroNueva121.000 €Cottage tradicional de dos dormitorios con estufa de leña y jardín grande en Whithorn, GallowayWhithorn, Dumfries and Galloway67 m² · 2 dorm. · 1.806 €/m² · 8 días en RealHunt](https://realhunt.co/es/deal/uk-whithorn-cottage-wood-burner-garden-105k)
+- [Mejor notaNueva161.000 €Casa adosada de tres dormitorios bien mantenida con paneles solares en Enniskillen, FermanaghEnniskillen, Irlanda del Norte107 m² · 3 dorm. · 1.505 €/m² · 7 días en RealHunt](https://realhunt.co/es/deal/uk-enniskillen-three-bed-semi-solar-panels-140k)
+- [La más barata88.500 €Bungalow luminoso con jardín cerca del centro y la playa de BlythBlyth, Northumberland1 dorm. · 52 días en RealHunt](https://realhunt.co/es/deal/uk-blyth-88k-869241)
+- [Más metros por el dineroNueva121.000 €Cottage tradicional de dos dormitorios con estufa de leña y jardín grande en Whithorn, GallowayWhithorn, Dumfries and Galloway67 m² · 2 dorm. · 1.806 €/m² · 9 días en RealHunt](https://realhunt.co/es/deal/uk-whithorn-cottage-wood-burner-garden-105k)
 
 RealHunt tiene hoy 6 casas en venta en el Reino Unido, con precios de 88.500 € a 198.400 €. La más barata cuesta 88.500 €: [Bungalow luminoso con jardín cerca del centro y la playa de Blyth](https://realhunt.co/es/deal/uk-blyth-88k-869241), en Blyth (1 dormitorio). El precio mediano es de 161.000 € (1.807 €/m²), frente a 93.200 € (1.206 €/m²) de las 726 viviendas de RealHunt en 24 países.
 
@@ -40,18 +40,18 @@ Compradores extranjeros
 Compra libre
 
 Datos del
-26 nov 2026
+27 nov 2026
 
 ### Las 6 viviendas, de mejor a peor nota
 
 Ordenadas por la nota de RealHunt, de mejor a peor. Para verlas de más barata a más cara, mira la tabla de abajo: toca un encabezado como Precio para ordenarla. [Ver estas viviendas en el mapa](https://realhunt.co/es/map?country=United+Kingdom)
 
-- [Nota 83Nueva161.000 €Casa adosada de tres dormitorios bien mantenida con paneles solares en Enniskillen, FermanaghEnniskillen, Irlanda del Norte107 m² · 3 dorm. · 1.505 €/m² · 6 días en RealHuntSe pide £140.000 (unos 161 €).](https://realhunt.co/es/deal/uk-enniskillen-three-bed-semi-solar-panels-140k)
-- [Nota 83Nueva198.400 €Casa adosada de época renovada con garaje doble en el pueblo de Lack, condado de FermanaghLack, Irlanda del Norte107 m² · 3 dorm. · 1.854 €/m² · 6 días en RealHuntSe piden £172.500 (aproximadamente 198.400 €) por una casa adosada de época de 107 m² que ha sido completamente y cuidadosamente renovada…](https://realhunt.co/es/deal/uk-lack-fermanagh-refurbished-townhouse-double-garage-172k)
-- [Nota 83Nueva126.500 €Casa de dos dormitorios amueblada con vistas al fiordo de Moray en la ciudad portuaria de MacduffMacduff, Aberdeenshire70 m² · 2 dorm. · 1.807 €/m² · 8 días en RealHuntUna casa adosada bien presentada en el centro de Macduff, una ciudad costera en el fiordo de Moray en el nordeste de Escocia, vendida…](https://realhunt.co/es/deal/uk-macduff-furnished-house-sea-views-110k)
-- [Nota 82Nueva195.400 €Casa adosada de dos dormitorios renovada con garaje en el histórico Greyabbey, Irlanda del NorteGreyabbey, Irlanda del Norte80 m² · 2 dorm. · 2.443 €/m² · 6 días en RealHuntSe pide £169.950 (aproximadamente 195.400 €) por una casa adosada de 80 m² en el corazón del histórico Greyabbey, completamente renovada en los…](https://realhunt.co/es/deal/uk-greyabbey-renovated-end-terrace-garage-170k)
-- [Nota 81Nueva121.000 €Cottage tradicional de dos dormitorios con estufa de leña y jardín grande en Whithorn, GallowayWhithorn, Dumfries and Galloway67 m² · 2 dorm. · 1.806 €/m² · 8 días en RealHuntUna cottage terraced tradicional en el centro de Whithorn, en el extremo más al suroeste de Escocia.](https://realhunt.co/es/deal/uk-whithorn-cottage-wood-burner-garden-105k)
-- [Nota 8888.500 €Bungalow luminoso con jardín cerca del centro y la playa de BlythBlyth, Northumberland1 dorm. · 51 días en RealHuntUn bungalow pareado encantador de un dormitorio, con cocina moderna, salón luminoso, baño con ducha, aparcamiento propio y jardín con césped…](https://realhunt.co/es/deal/uk-blyth-88k-869241)
+- [Nota 83Nueva161.000 €Casa adosada de tres dormitorios bien mantenida con paneles solares en Enniskillen, FermanaghEnniskillen, Irlanda del Norte107 m² · 3 dorm. · 1.505 €/m² · 7 días en RealHuntSe pide £140.000 (unos 161 €).](https://realhunt.co/es/deal/uk-enniskillen-three-bed-semi-solar-panels-140k)
+- [Nota 83Nueva198.400 €Casa adosada de época renovada con garaje doble en el pueblo de Lack, condado de FermanaghLack, Irlanda del Norte107 m² · 3 dorm. · 1.854 €/m² · 7 días en RealHuntSe piden £172.500 (aproximadamente 198.400 €) por una casa adosada de época de 107 m² que ha sido completamente y cuidadosamente renovada…](https://realhunt.co/es/deal/uk-lack-fermanagh-refurbished-townhouse-double-garage-172k)
+- [Nota 83Nueva126.500 €Casa de dos dormitorios amueblada con vistas al fiordo de Moray en la ciudad portuaria de MacduffMacduff, Aberdeenshire70 m² · 2 dorm. · 1.807 €/m² · 9 días en RealHuntUna casa adosada bien presentada en el centro de Macduff, una ciudad costera en el fiordo de Moray en el nordeste de Escocia, vendida…](https://realhunt.co/es/deal/uk-macduff-furnished-house-sea-views-110k)
+- [Nota 82Nueva195.400 €Casa adosada de dos dormitorios renovada con garaje en el histórico Greyabbey, Irlanda del NorteGreyabbey, Irlanda del Norte80 m² · 2 dorm. · 2.443 €/m² · 7 días en RealHuntSe pide £169.950 (aproximadamente 195.400 €) por una casa adosada de 80 m² en el corazón del histórico Greyabbey, completamente renovada en los…](https://realhunt.co/es/deal/uk-greyabbey-renovated-end-terrace-garage-170k)
+- [Nota 81Nueva121.000 €Cottage tradicional de dos dormitorios con estufa de leña y jardín grande en Whithorn, GallowayWhithorn, Dumfries and Galloway67 m² · 2 dorm. · 1.806 €/m² · 9 días en RealHuntUna cottage terraced tradicional en el centro de Whithorn, en el extremo más al suroeste de Escocia.](https://realhunt.co/es/deal/uk-whithorn-cottage-wood-burner-garden-105k)
+- [Nota 8888.500 €Bungalow luminoso con jardín cerca del centro y la playa de BlythBlyth, Northumberland1 dorm. · 52 días en RealHuntUn bungalow pareado encantador de un dormitorio, con cocina moderna, salón luminoso, baño con ducha, aparcamiento propio y jardín con césped…](https://realhunt.co/es/deal/uk-blyth-88k-869241)
 
 ### Compara las 6 viviendas, de más barata a más cara
 

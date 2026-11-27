@@ -28,15 +28,15 @@ Mejor nota
 85
 
 Datos del
-26 nov 2026
+27 nov 2026
 
 ### Las 3 viviendas, de mejor a peor nota
 
 Ordenadas por la nota de RealHunt, de mejor a peor. Para verlas de más barata a más cara, mira la tabla de abajo: toca un encabezado como Precio para ordenarla. [Ver estas viviendas en el mapa](https://realhunt.co/es/map?country=Czech+Republic)
 
-- [Nota 85Nueva130.900 €Casa de ladrillo mantenida con bomba de calor y jardín en Lomnička cerca de Plesná, ChebLomnička, región de Karlovy Vary120 m² · 1 dorm. · 1.091 €/m² · 6 días en RealHuntPidiendo 3.182.000 CZK (aproximadamente 130.900 euros).](https://realhunt.co/es/deal/cz-lomnicka-plesna-brick-house-heat-pump-131k)
-- [Nota 84Nueva159.600 €Casa unifamiliar renovada con terraza de 50 m² y gran jardín en ČástohosticeČastohostice, región de Vysočina109 m² · 3 dorm. · 1.464 €/m² · 5 días en RealHuntSe pide 3.900.000 CZK (aproximadamente 159.600 €), una venta privada sin agencia.](https://realhunt.co/es/deal/cz-castohostice-renovated-four-room-house-big-garden-160k)
-- [Nota 77Nueva179.700 €Piso luminoso con dos largos balcones y vistas sobre la ciudad antigua de LitoměřiceLitoměřice, región de Ústí nad Labem61 m² · 1 dorm. · 2.946 €/m² · 5 días en RealHuntCuota de comunidad no indicadaSe pide 4.390.000 CZK (aproximadamente 179.700 €).](https://realhunt.co/es/deal/cz-litomerice-two-balcony-flat-old-town-view-180k)
+- [Nota 85Nueva130.900 €Casa de ladrillo mantenida con bomba de calor y jardín en Lomnička cerca de Plesná, ChebLomnička, región de Karlovy Vary120 m² · 1 dorm. · 1.091 €/m² · 7 días en RealHuntPidiendo 3.182.000 CZK (aproximadamente 130.900 euros).](https://realhunt.co/es/deal/cz-lomnicka-plesna-brick-house-heat-pump-131k)
+- [Nota 84Nueva159.600 €Casa unifamiliar renovada con terraza de 50 m² y gran jardín en ČástohosticeČastohostice, región de Vysočina109 m² · 3 dorm. · 1.464 €/m² · 6 días en RealHuntSe pide 3.900.000 CZK (aproximadamente 159.600 €), una venta privada sin agencia.](https://realhunt.co/es/deal/cz-castohostice-renovated-four-room-house-big-garden-160k)
+- [Nota 77Nueva179.700 €Piso luminoso con dos largos balcones y vistas sobre la ciudad antigua de LitoměřiceLitoměřice, región de Ústí nad Labem61 m² · 1 dorm. · 2.946 €/m² · 6 días en RealHuntCuota de comunidad no indicadaSe pide 4.390.000 CZK (aproximadamente 179.700 €).](https://realhunt.co/es/deal/cz-litomerice-two-balcony-flat-old-town-view-180k)
 
 ### Compara las 3 viviendas, de más barata a más cara
 

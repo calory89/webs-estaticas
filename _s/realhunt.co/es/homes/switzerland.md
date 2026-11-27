@@ -9,9 +9,9 @@ Lista cambiada por última vez el 4 de octubre de 2026. Ir a las viviendas
 
 ### Tres de esta lista
 
-- [Mejor nota70.100 €Chalet reformado con jardín en un camping verde de las colinas de NeuchâtelLignières, Neuchâtel30 m² · 1 dorm. · 2.337 €/m² · 53 días en RealHunt](https://realhunt.co/es/deal/ch-lignieres-65k-24005)
-- [La más barata32.300 €Casa modular de 70 m² con bomba de calor, para llevar a tu propio terrenoLengnau, Berna70 m² · 1 dorm. · 461 €/m² · 53 días en RealHunt](https://realhunt.co/es/deal/ch-lengnau-30k-26130)
-- [Más metros por el dinero42.600 €Casa de camping vallada de 2,5 habitaciones con terraza soleada en RaronRaron, Valais45 m² · 2 dorm. · 947 €/m² · 53 días en RealHunt](https://realhunt.co/es/deal/ch-raron-40k-76568)
+- [Mejor nota70.100 €Chalet reformado con jardín en un camping verde de las colinas de NeuchâtelLignières, Neuchâtel30 m² · 1 dorm. · 2.337 €/m² · 54 días en RealHunt](https://realhunt.co/es/deal/ch-lignieres-65k-24005)
+- [La más barata32.300 €Casa modular de 70 m² con bomba de calor, para llevar a tu propio terrenoLengnau, Berna70 m² · 1 dorm. · 461 €/m² · 54 días en RealHunt](https://realhunt.co/es/deal/ch-lengnau-30k-26130)
+- [Más metros por el dinero42.600 €Casa de camping vallada de 2,5 habitaciones con terraza soleada en RaronRaron, Valais45 m² · 2 dorm. · 947 €/m² · 54 días en RealHunt](https://realhunt.co/es/deal/ch-raron-40k-76568)
 
 RealHunt tiene hoy 10 casas en venta en Suiza, con precios de 32.300 € a 88.400 €. La más barata cuesta 32.300 €: [Casa modular de 70 m² con bomba de calor, para llevar a tu propio terreno](https://realhunt.co/es/deal/ch-lengnau-30k-26130), en Lengnau (70 m², 1 dormitorio). El precio mediano es de 70.100 € (2.337 €/m²), frente a 93.200 € (1.206 €/m²) de las 726 viviendas de RealHunt en 24 países.
 ¿Puedes comprar aquí? Lee esto primero
@@ -44,22 +44,22 @@ Compradores extranjeros
 Con límites
 
 Datos del
-26 nov 2026
+27 nov 2026
 
 ### Las 10 viviendas, de mejor a peor nota
 
 Ordenadas por la nota de RealHunt, de mejor a peor. Para verlas de más barata a más cara, mira la tabla de abajo: toca un encabezado como Precio para ordenarla. [Ver estas viviendas en el mapa](https://realhunt.co/es/map?country=Switzerland)
 
-- [Nota 8270.100 €Chalet reformado con jardín en un camping verde de las colinas de NeuchâtelLignières, Neuchâtel30 m² · 1 dorm. · 2.337 €/m² · 53 días en RealHuntUn chalet reformado de 1,5 habitaciones y unos 30 m² en una parcela de unos 150 m², con grandes ventanales correderos, cocina nueva y baño con ducha.](https://realhunt.co/es/deal/ch-lignieres-65k-24005)
-- [Nota 7685.900 €Casa móvil con 120 m² de jardín, cenador y calefacción de pellets en el ValaisRaron, Valais34 m² · 1 dorm. · 2.526 €/m² · 53 días en RealHuntLa casa móvil 'Bijou': 34 m² habitables más veranda, en una parcela de 213 m² con unos 120 m² de jardín, cenador con zona chill-out y chimenea…](https://realhunt.co/es/deal/ch-raron-80k-63919)
-- [Nota 7088.400 €Casa de camping amueblada como nueva en el soleado Alto ValaisRaron, Valais34 m² · 2 dorm. · 2.600 €/m² · 53 días en RealHuntSolo tiene dos años y se vende amueblada: unos 34 m² con salón acogedor, cocina, baño y dormitorio, persianas y mosquiteras, y extras que el…](https://realhunt.co/es/deal/ch-raron-82k-76555)
-- [Nota 9232.300 €Casa modular de 70 m² con bomba de calor, para llevar a tu propio terrenoLengnau, Berna70 m² · 1 dorm. · 461 €/m² · 53 días en RealHuntCuatro módulos habitables sólidos bajo un tejado clásico a dos aguas, unos 70 m² brutos: cocina con nevera y horno, salón comedor abierto y…](https://realhunt.co/es/deal/ch-lengnau-30k-26130)
-- [Nota 8552.800 €Casita de vacaciones con jardín de invierno junto a un lago de baño en SalgeschSalgesch, Valais40 m² · 1 dorm. · 1.320 €/m² · 53 días en RealHuntUnos 40 m² en una parcela de unos 180 m² en el camping Swissplage, con jardín de invierno, zona exterior para barbacoas y caseta de jardín.](https://realhunt.co/es/deal/ch-salgesch-49k-76547)
-- [Nota 8442.600 €Casa de camping vallada de 2,5 habitaciones con terraza soleada en RaronRaron, Valais45 m² · 2 dorm. · 947 €/m² · 53 días en RealHuntUna casa de camping de madera de unos 45 m², vallada para tener intimidad: cocina amueblada, rincón de salón y comedor, baño con ducha y dos…](https://realhunt.co/es/deal/ch-raron-40k-76568)
-- [Nota 8380.700 €Chalet de madera para todo el año con jardín y piscina cerca del lago de ZúrichGommiswald, San Galo50 m² · 2 dorm. · 1.614 €/m² · 53 días en RealHuntDos dormitorios, salón con cocina abierta y baño en unos 50 m², en una parcela de 189 m² dentro del parque de ocio de Ricken, sobre el lago de Zúrich.](https://realhunt.co/es/deal/ch-gommiswald-75k-93656)
-- [Nota 8174.900 €Chalet de madera preparado para el invierno junto a un arroyo en los Alpes del ValaisRaron, Valais48 m² · 1 dorm. · 1.560 €/m² · 53 días en RealHuntUn chalet de 2,5 habitaciones y unos 48 m² en una zona tranquila del camping de 4 estrellas Santa Monica, en Raron, junto al arroyo y habitable…](https://realhunt.co/es/deal/ch-raron-70k-61979)
-- [Nota 7859.300 €Tiny house de madera con dos altillos y estufa de leña, lista para trasladarBrig, Valais25 m² · 1 dorm. · 2.372 €/m² · 53 días en RealHuntUna minicasa recién construida: unos 25 m² con salón abierto, cocina a medida con inducción y horno, baño con ducha y váter de cisterna, dos…](https://realhunt.co/es/deal/ch-brig-55k-63831)
-- [Nota 7459.300 €Tiny house luminosa como nueva, con altillo para dormir y bomba de calorBrig, Valais20 m² · 1 dorm. · 2.965 €/m² · 53 días en RealHuntConstruida en 2023 y como nueva: unos 20 m² con salón comedor abierto, cocina con inducción, baño moderno con ducha y un altillo para dormir bajo…](https://realhunt.co/es/deal/ch-brig-55k-63824)
+- [Nota 8270.100 €Chalet reformado con jardín en un camping verde de las colinas de NeuchâtelLignières, Neuchâtel30 m² · 1 dorm. · 2.337 €/m² · 54 días en RealHuntUn chalet reformado de 1,5 habitaciones y unos 30 m² en una parcela de unos 150 m², con grandes ventanales correderos, cocina nueva y baño con ducha.](https://realhunt.co/es/deal/ch-lignieres-65k-24005)
+- [Nota 7685.900 €Casa móvil con 120 m² de jardín, cenador y calefacción de pellets en el ValaisRaron, Valais34 m² · 1 dorm. · 2.526 €/m² · 54 días en RealHuntLa casa móvil 'Bijou': 34 m² habitables más veranda, en una parcela de 213 m² con unos 120 m² de jardín, cenador con zona chill-out y chimenea…](https://realhunt.co/es/deal/ch-raron-80k-63919)
+- [Nota 7088.400 €Casa de camping amueblada como nueva en el soleado Alto ValaisRaron, Valais34 m² · 2 dorm. · 2.600 €/m² · 54 días en RealHuntSolo tiene dos años y se vende amueblada: unos 34 m² con salón acogedor, cocina, baño y dormitorio, persianas y mosquiteras, y extras que el…](https://realhunt.co/es/deal/ch-raron-82k-76555)
+- [Nota 9232.300 €Casa modular de 70 m² con bomba de calor, para llevar a tu propio terrenoLengnau, Berna70 m² · 1 dorm. · 461 €/m² · 54 días en RealHuntCuatro módulos habitables sólidos bajo un tejado clásico a dos aguas, unos 70 m² brutos: cocina con nevera y horno, salón comedor abierto y…](https://realhunt.co/es/deal/ch-lengnau-30k-26130)
+- [Nota 8552.800 €Casita de vacaciones con jardín de invierno junto a un lago de baño en SalgeschSalgesch, Valais40 m² · 1 dorm. · 1.320 €/m² · 54 días en RealHuntUnos 40 m² en una parcela de unos 180 m² en el camping Swissplage, con jardín de invierno, zona exterior para barbacoas y caseta de jardín.](https://realhunt.co/es/deal/ch-salgesch-49k-76547)
+- [Nota 8442.600 €Casa de camping vallada de 2,5 habitaciones con terraza soleada en RaronRaron, Valais45 m² · 2 dorm. · 947 €/m² · 54 días en RealHuntUna casa de camping de madera de unos 45 m², vallada para tener intimidad: cocina amueblada, rincón de salón y comedor, baño con ducha y dos…](https://realhunt.co/es/deal/ch-raron-40k-76568)
+- [Nota 8380.700 €Chalet de madera para todo el año con jardín y piscina cerca del lago de ZúrichGommiswald, San Galo50 m² · 2 dorm. · 1.614 €/m² · 54 días en RealHuntDos dormitorios, salón con cocina abierta y baño en unos 50 m², en una parcela de 189 m² dentro del parque de ocio de Ricken, sobre el lago de Zúrich.](https://realhunt.co/es/deal/ch-gommiswald-75k-93656)
+- [Nota 8174.900 €Chalet de madera preparado para el invierno junto a un arroyo en los Alpes del ValaisRaron, Valais48 m² · 1 dorm. · 1.560 €/m² · 54 días en RealHuntUn chalet de 2,5 habitaciones y unos 48 m² en una zona tranquila del camping de 4 estrellas Santa Monica, en Raron, junto al arroyo y habitable…](https://realhunt.co/es/deal/ch-raron-70k-61979)
+- [Nota 7859.300 €Tiny house de madera con dos altillos y estufa de leña, lista para trasladarBrig, Valais25 m² · 1 dorm. · 2.372 €/m² · 54 días en RealHuntUna minicasa recién construida: unos 25 m² con salón abierto, cocina a medida con inducción y horno, baño con ducha y váter de cisterna, dos…](https://realhunt.co/es/deal/ch-brig-55k-63831)
+- [Nota 7459.300 €Tiny house luminosa como nueva, con altillo para dormir y bomba de calorBrig, Valais20 m² · 1 dorm. · 2.965 €/m² · 54 días en RealHuntConstruida en 2023 y como nueva: unos 20 m² con salón comedor abierto, cocina con inducción, baño moderno con ducha y un altillo para dormir bajo…](https://realhunt.co/es/deal/ch-brig-55k-63824)
 
 ### Compara las 10 viviendas, de más barata a más cara
 

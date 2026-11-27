@@ -9,9 +9,9 @@ List last changed 18 November 2026. Jump to the homes
 
 ### Three picks from this list
 
-- [Best score€223,600Oceanfront 3-bed flat in Juan Dolio with wide Caribbean viewsJuan Dolio, San Pedro de Macorís98 m² · 3 bed · €2,282/m² · 45 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/dr-juan-dolio-224k-441923)
-- [CheapestNew€150,000Two-bedroom flat with a balcony and shared pool near Playa Dorada, Puerto PlataPuerto Plata103 m² · 2 bed · €1,456/m² · 8 days on RealHuntCommunity fee $127 a month](https://realhunt.co/deal/do-puerto-plata-two-bed-flat-pool-near-playa-dorada-165k)
-- [Most space for the money€223,600Front-line beach flat in Juan Dolio with pool and jacuzziJuan Dolio, San Pedro de Macorís105 m² · 2 bed · €2,130/m² · 45 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/dr-juan-dolio-224k-447078)
+- [Best score€223,600Oceanfront 3-bed flat in Juan Dolio with wide Caribbean viewsJuan Dolio, San Pedro de Macorís98 m² · 3 bed · €2,282/m² · 46 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/dr-juan-dolio-224k-441923)
+- [CheapestNew€150,000Two-bedroom flat with a balcony and shared pool near Playa Dorada, Puerto PlataPuerto Plata103 m² · 2 bed · €1,456/m² · 9 days on RealHuntCommunity fee $127 a month](https://realhunt.co/deal/do-puerto-plata-two-bed-flat-pool-near-playa-dorada-165k)
+- [Most space for the money€223,600Front-line beach flat in Juan Dolio with pool and jacuzziJuan Dolio, San Pedro de Macorís105 m² · 2 bed · €2,130/m² · 46 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/dr-juan-dolio-224k-447078)
 
 RealHunt lists 5 apartments for sale in the Dominican Republic today, priced from €150,000 to €223,600. The cheapest costs €150,000: [Two-bedroom flat with a balcony and shared pool near Playa Dorada, Puerto Plata](https://realhunt.co/deal/do-puerto-plata-two-bed-flat-pool-near-playa-dorada-165k), in Puerto Plata (103 m², 2 bedrooms). The median price is €201,200 (€2,282/m²), against €93,200 (€1,206/m²) for the 726 homes on RealHunt in 24 countries.
 
@@ -40,17 +40,17 @@ Foreign buyers
 Can buy freely
 
 Data of
-26 Nov 2026
+27 Nov 2026
 
 ### The 5 homes, best score first
 
 Sorted by RealHunt score, best first. For the cheapest first, see the table below: tap a heading such as Price to sort it. [See these homes on the map](https://realhunt.co/map?country=Dominican+Republic)
 
-- [Score 90€223,600Oceanfront 3-bed flat in Juan Dolio with wide Caribbean viewsJuan Dolio, San Pedro de Macorís98 m² · 3 bed · €2,282/m² · 45 days on RealHuntCommunity fee not statedA renovated oceanfront apartment in Juan Dolio, on the Caribbean coast east of Santo Domingo, sold ready to live in.](https://realhunt.co/deal/dr-juan-dolio-224k-441923)
-- [Score 89€187,800Furnished front-line flat in Juan Dolio with a sea-view balconyJuan Dolio, San Pedro de Macorís82 m² · 2 bed · €2,290/m² · 45 days on RealHuntCommunity fee not statedA 2023 apartment on the front line of Juan Dolio beach with direct beach access, sold furnished and ready to move in.](https://realhunt.co/deal/dr-juan-dolio-188k-425359)
-- [Score 88€223,600Front-line beach flat in Juan Dolio with pool and jacuzziJuan Dolio, San Pedro de Macorís105 m² · 2 bed · €2,130/m² · 45 days on RealHuntCommunity fee not statedA lived-in, ready apartment on the front line of the beach in Juan Dolio: 105 m², 2 bedrooms, 2 bathrooms, living-dining room, balcony, laundry…](https://realhunt.co/deal/dr-juan-dolio-224k-447078)
-- [Score 87€201,200Furnished beachfront flat on Playa Las Ballenas, Las TerrenasLas Terrenas, Samaná2 bed · 45 days on RealHuntCommunity fee not statedA 2-bedroom apartment in Bonita Village with direct access to Playa Las Ballenas, one of the best beaches in Las Terrenas, on the Samaná peninsula.](https://realhunt.co/deal/dr-las-terrenas-201k-439030)
-- [Score 84New€150,000Two-bedroom flat with a balcony and shared pool near Playa Dorada, Puerto PlataPuerto Plata103 m² · 2 bed · €1,456/m² · 8 days on RealHuntCommunity fee $127 a monthAsking US$165,000 (about €150,000) for a resale flat of 103 m² in Puerto Plata, on the north coast, which the advert places very close to Playa…](https://realhunt.co/deal/do-puerto-plata-two-bed-flat-pool-near-playa-dorada-165k)
+- [Score 90€223,600Oceanfront 3-bed flat in Juan Dolio with wide Caribbean viewsJuan Dolio, San Pedro de Macorís98 m² · 3 bed · €2,282/m² · 46 days on RealHuntCommunity fee not statedA renovated oceanfront apartment in Juan Dolio, on the Caribbean coast east of Santo Domingo, sold ready to live in.](https://realhunt.co/deal/dr-juan-dolio-224k-441923)
+- [Score 89€187,800Furnished front-line flat in Juan Dolio with a sea-view balconyJuan Dolio, San Pedro de Macorís82 m² · 2 bed · €2,290/m² · 46 days on RealHuntCommunity fee not statedA 2023 apartment on the front line of Juan Dolio beach with direct beach access, sold furnished and ready to move in.](https://realhunt.co/deal/dr-juan-dolio-188k-425359)
+- [Score 88€223,600Front-line beach flat in Juan Dolio with pool and jacuzziJuan Dolio, San Pedro de Macorís105 m² · 2 bed · €2,130/m² · 46 days on RealHuntCommunity fee not statedA lived-in, ready apartment on the front line of the beach in Juan Dolio: 105 m², 2 bedrooms, 2 bathrooms, living-dining room, balcony, laundry…](https://realhunt.co/deal/dr-juan-dolio-224k-447078)
+- [Score 87€201,200Furnished beachfront flat on Playa Las Ballenas, Las TerrenasLas Terrenas, Samaná2 bed · 46 days on RealHuntCommunity fee not statedA 2-bedroom apartment in Bonita Village with direct access to Playa Las Ballenas, one of the best beaches in Las Terrenas, on the Samaná peninsula.](https://realhunt.co/deal/dr-las-terrenas-201k-439030)
+- [Score 84New€150,000Two-bedroom flat with a balcony and shared pool near Playa Dorada, Puerto PlataPuerto Plata103 m² · 2 bed · €1,456/m² · 9 days on RealHuntCommunity fee $127 a monthAsking US$165,000 (about €150,000) for a resale flat of 103 m² in Puerto Plata, on the north coast, which the advert places very close to Playa…](https://realhunt.co/deal/do-puerto-plata-two-bed-flat-pool-near-playa-dorada-165k)
 
 ### Compare the 5 homes, cheapest first
 

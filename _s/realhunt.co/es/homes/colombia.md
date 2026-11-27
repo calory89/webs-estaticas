@@ -28,15 +28,15 @@ Mejor nota
 86
 
 Datos del
-26 nov 2026
+27 nov 2026
 
 ### Las 3 viviendas, de mejor a peor nota
 
 Ordenadas por la nota de RealHunt, de mejor a peor. Para verlas de más barata a más cara, mira la tabla de abajo: toca un encabezado como Precio para ordenarla. [Ver estas viviendas en el mapa](https://realhunt.co/es/map?country=Colombia)
 
-- [Nota 86Nueva176.300 €Casa de dos plantas con balcón con vistas a las montañas y piscina de finca en Santa Fe de AntioquiaSanta Fe de Antioquia, Antioquia150 m² · 3 dorm. · 1.175 €/m² · 6 días en RealHuntComunidad 149 euros al mesSe pide COP 650.000.000 (aproximadamente 176,3 €).](https://realhunt.co/es/deal/co-santa-fe-de-antioquia-house-mountain-view-pool-650m)
-- [Nota 86Nueva165.200 €Casa de tres dormitorios completamente remodelada en complejo cerrado con piscina, Santa MartaSanta Marta, Magdalena120 m² · 3 dorm. · 1.377 €/m² · 6 días en RealHuntCuota de comunidad no indicadaSe pide COP 590.000.000 (aproximadamente 165.200 €) por una casa de dos plantas de aproximadamente 120 m² en un complejo residencial cerrado en…](https://realhunt.co/es/deal/co-santa-marta-remodelled-house-pool-rodadero-590m)
-- [Nota 85Nueva203.500 €Piso de cuatro dormitorios con vistas al mar en la planta 16 a una manzana de la playa de Marbella, CartagenaMarbella, Bolívar132 m² · 4 dorm. · 1.542 €/m² · 6 días en RealHuntComunidad 203 euros al mesSe pide COP 750.000.000 (aproximadamente 203,5 €).](https://realhunt.co/es/deal/co-cartagena-marbella-sea-view-flat-four-bed-750m)
+- [Nota 86Nueva176.300 €Casa de dos plantas con balcón con vistas a las montañas y piscina de finca en Santa Fe de AntioquiaSanta Fe de Antioquia, Antioquia150 m² · 3 dorm. · 1.175 €/m² · 7 días en RealHuntComunidad 149 euros al mesSe pide COP 650.000.000 (aproximadamente 176,3 €).](https://realhunt.co/es/deal/co-santa-fe-de-antioquia-house-mountain-view-pool-650m)
+- [Nota 86Nueva165.200 €Casa de tres dormitorios completamente remodelada en complejo cerrado con piscina, Santa MartaSanta Marta, Magdalena120 m² · 3 dorm. · 1.377 €/m² · 7 días en RealHuntCuota de comunidad no indicadaSe pide COP 590.000.000 (aproximadamente 165.200 €) por una casa de dos plantas de aproximadamente 120 m² en un complejo residencial cerrado en…](https://realhunt.co/es/deal/co-santa-marta-remodelled-house-pool-rodadero-590m)
+- [Nota 85Nueva203.500 €Piso de cuatro dormitorios con vistas al mar en la planta 16 a una manzana de la playa de Marbella, CartagenaMarbella, Bolívar132 m² · 4 dorm. · 1.542 €/m² · 7 días en RealHuntComunidad 203 euros al mesSe pide COP 750.000.000 (aproximadamente 203,5 €).](https://realhunt.co/es/deal/co-cartagena-marbella-sea-view-flat-four-bed-750m)
 
 ### Compara las 3 viviendas, de más barata a más cara
 

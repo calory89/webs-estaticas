@@ -9,9 +9,9 @@ List last changed 20 November 2026. Jump to the homes
 
 ### Three picks from this list
 
-- [Best score€76,500Two-bed village house with terrace in Portugal's Dão wine countryCarregal do Sal, Viseu134 m² · 2 bed · €571/m² · 52 days on RealHunt](https://realhunt.co/deal/pt-carregal-do-sal-76k-1bjc5q)
-- [Cheapest€48,000Freshly painted three-bedroom village house near the Sabor lakesBrunhoso, Bragança100 m² · 3 bed · €480/m² · 43 days on RealHunt](https://realhunt.co/deal/pt-mogadouro-48k-19109522)
-- [Most space for the moneyNew€130,000Renovated detached house with open hill views in the eastern Algarve, near AlcoutimAlcoutim e Pereiro, Faro77 m² · 2 bed · €1,688/m² · 8 days on RealHunt](https://realhunt.co/deal/pt-algarve-alcoutim-renovated-hill-house-130k)
+- [Best score€76,500Two-bed village house with terrace in Portugal's Dão wine countryCarregal do Sal, Viseu134 m² · 2 bed · €571/m² · 53 days on RealHunt](https://realhunt.co/deal/pt-carregal-do-sal-76k-1bjc5q)
+- [Cheapest€48,000Freshly painted three-bedroom village house near the Sabor lakesBrunhoso, Bragança100 m² · 3 bed · €480/m² · 44 days on RealHunt](https://realhunt.co/deal/pt-mogadouro-48k-19109522)
+- [Most space for the moneyNew€130,000Renovated detached house with open hill views in the eastern Algarve, near AlcoutimAlcoutim e Pereiro, Faro77 m² · 2 bed · €1,688/m² · 9 days on RealHunt](https://realhunt.co/deal/pt-algarve-alcoutim-renovated-hill-house-130k)
 
 RealHunt lists 8 houses for sale in Portugal today, priced from €48,000 to €189,000. The cheapest costs €48,000: [Freshly painted three-bedroom village house near the Sabor lakes](https://realhunt.co/deal/pt-mogadouro-48k-19109522), in Brunhoso (100 m², 3 bedrooms). The median price is €140,000 (€2,000/m²), against €93,200 (€1,206/m²) for the 726 homes on RealHunt in 24 countries.
 
@@ -40,20 +40,20 @@ Foreign buyers
 Can buy freely
 
 Data of
-26 Nov 2026
+27 Nov 2026
 
 ### The 8 homes, best score first
 
 Sorted by RealHunt score, best first. For the cheapest first, see the table below: tap a heading such as Price to sort it. [See these homes on the map](https://realhunt.co/map?country=Portugal)
 
-- [Score 85€76,500Two-bed village house with terrace in Portugal's Dão wine countryCarregal do Sal, Viseu134 m² · 2 bed · €571/m² · 52 days on RealHuntA T2 house with a terrace in Sobral, Carregal do Sal, in the Dão wine region: kitchen, living room, two bedrooms and a bathroom on the main floor…](https://realhunt.co/deal/pt-carregal-do-sal-76k-1bjc5q)
-- [Score 80New€189,000Three-bedroom village house with terrace and Serra da Lousã views near PenacovaParadela da Cortiça, Coimbra95 m² · 3 bed · €1,989/m² · 6 days on RealHuntA neat three-storey village house in Paradela da Cortiça with an open view of the Serra da Lousã.](https://realhunt.co/deal/pt-centro-penacova-paradela-village-house-views-189k)
-- [Score 80New€130,000Renovated detached house with open hill views in the eastern Algarve, near AlcoutimAlcoutim e Pereiro, Faro77 m² · 2 bed · €1,688/m² · 8 days on RealHuntA detached single-storey house with a new tiled roof and an Algarve chimney at the edge of a small hill village, about 15 km from Alcoutim.](https://realhunt.co/deal/pt-algarve-alcoutim-renovated-hill-house-130k)
-- [Score 79New€140,000Two-bedroom house with fenced garden and river views near Marvão, AlentejoPonte Velha, Portalegre70 m² · 2 bed · €2,000/m² · 6 days on RealHuntA bright 70 m2 house in the quiet Ponte Velha area below Marvão, with river and mountain views, on a fully fenced 476 m2 plot with grapevines…](https://realhunt.co/deal/pt-alentejo-marvao-ponte-velha-house-river-view-140k)
-- [Score 78New€179,000Renovated furnished cottage on 860 m2 of land in Lajes do Pico, AzoresSilveira, Azores84 m² · 1 bed · €2,131/m² · 6 days on RealHuntA fully renovated stone cottage in Silveira, 3 km from the old whaling town of Lajes on Pico island, sold furnished and equipped.](https://realhunt.co/deal/pt-azores-pico-silveira-renovated-cottage-big-plot-179k)
-- [Score 77New€95,000Renovated two-bedroom whitewashed cottage in Alcaria Ruiva, near Mértola, AlentejoAlcaria Ruiva, Beja46 m² · 2 bed · €2,065/m² · 8 days on RealHuntA single-storey Alentejo cottage with blue trim and a red door on a cobbled street in Alcaria Ruiva.](https://realhunt.co/deal/pt-alentejo-alcaria-ruiva-renovated-cottage-95k)
-- [Score 84€48,000Freshly painted three-bedroom village house near the Sabor lakesBrunhoso, Bragança100 m² · 3 bed · €480/m² · 43 days on RealHuntA bright yellow-and-blue two-storey house in Brunhoso, 8 km from Mogadouro: a living room, a kitchen and a bathroom downstairs, three bedrooms and…](https://realhunt.co/deal/pt-mogadouro-48k-19109522)
-- [Score 83€183,000Renovated, furnished flat in a garden resort with pool near TaviraMoncarapacho, Tavira (Algarve)68 m² · 1 bed · €2,691/m² · 46 days on RealHuntCommunity fee not statedA 68 m² flat in the Colina Verde Resort in Moncarapacho, among olive trees, palms and lawns a few kilometres from the Algarve coast between Tavira…](https://realhunt.co/deal/pt-tavira-183k-300012)
+- [Score 85€76,500Two-bed village house with terrace in Portugal's Dão wine countryCarregal do Sal, Viseu134 m² · 2 bed · €571/m² · 53 days on RealHuntA T2 house with a terrace in Sobral, Carregal do Sal, in the Dão wine region: kitchen, living room, two bedrooms and a bathroom on the main floor…](https://realhunt.co/deal/pt-carregal-do-sal-76k-1bjc5q)
+- [Score 80New€189,000Three-bedroom village house with terrace and Serra da Lousã views near PenacovaParadela da Cortiça, Coimbra95 m² · 3 bed · €1,989/m² · 7 days on RealHuntA neat three-storey village house in Paradela da Cortiça with an open view of the Serra da Lousã.](https://realhunt.co/deal/pt-centro-penacova-paradela-village-house-views-189k)
+- [Score 80New€130,000Renovated detached house with open hill views in the eastern Algarve, near AlcoutimAlcoutim e Pereiro, Faro77 m² · 2 bed · €1,688/m² · 9 days on RealHuntA detached single-storey house with a new tiled roof and an Algarve chimney at the edge of a small hill village, about 15 km from Alcoutim.](https://realhunt.co/deal/pt-algarve-alcoutim-renovated-hill-house-130k)
+- [Score 79New€140,000Two-bedroom house with fenced garden and river views near Marvão, AlentejoPonte Velha, Portalegre70 m² · 2 bed · €2,000/m² · 7 days on RealHuntA bright 70 m2 house in the quiet Ponte Velha area below Marvão, with river and mountain views, on a fully fenced 476 m2 plot with grapevines…](https://realhunt.co/deal/pt-alentejo-marvao-ponte-velha-house-river-view-140k)
+- [Score 78New€179,000Renovated furnished cottage on 860 m2 of land in Lajes do Pico, AzoresSilveira, Azores84 m² · 1 bed · €2,131/m² · 7 days on RealHuntA fully renovated stone cottage in Silveira, 3 km from the old whaling town of Lajes on Pico island, sold furnished and equipped.](https://realhunt.co/deal/pt-azores-pico-silveira-renovated-cottage-big-plot-179k)
+- [Score 77New€95,000Renovated two-bedroom whitewashed cottage in Alcaria Ruiva, near Mértola, AlentejoAlcaria Ruiva, Beja46 m² · 2 bed · €2,065/m² · 9 days on RealHuntA single-storey Alentejo cottage with blue trim and a red door on a cobbled street in Alcaria Ruiva.](https://realhunt.co/deal/pt-alentejo-alcaria-ruiva-renovated-cottage-95k)
+- [Score 84€48,000Freshly painted three-bedroom village house near the Sabor lakesBrunhoso, Bragança100 m² · 3 bed · €480/m² · 44 days on RealHuntA bright yellow-and-blue two-storey house in Brunhoso, 8 km from Mogadouro: a living room, a kitchen and a bathroom downstairs, three bedrooms and…](https://realhunt.co/deal/pt-mogadouro-48k-19109522)
+- [Score 83€183,000Renovated, furnished flat in a garden resort with pool near TaviraMoncarapacho, Tavira (Algarve)68 m² · 1 bed · €2,691/m² · 47 days on RealHuntCommunity fee not statedA 68 m² flat in the Colina Verde Resort in Moncarapacho, among olive trees, palms and lawns a few kilometres from the Algarve coast between Tavira…](https://realhunt.co/deal/pt-tavira-183k-300012)
 
 ### Compare the 8 homes, cheapest first
 
