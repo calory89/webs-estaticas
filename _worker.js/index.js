@@ -463,6 +463,8 @@ async function kbSafe(req, u, r) {
 // n40 d10: finished-page edge copies (see _notes): served at once, rebuilt in the background when stale (x-kb-ot)
 const KB_FIN = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:m\/[^/.]{2,60}|projects\/[a-z0-9-]{1,90}|developers\/[a-z0-9-]{2,90})\/$/; let KB_OT = null; const kbOt = () => KB_OT || (KB_OT = crypto.randomUUID());
 const kbFinKey = u => new Request('https://kolaboro.com/__edge/fin1' + u.pathname);
+let ksl = null; const KB_SLZ = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?projects\/[a-z0-9-]{1,90}\/(space\/)?$/;   // n40 k51: satellite section sent on open (kbx_satlz.js)
+const kbSlz = async (req, u, env, r) => { if (!r || r.status !== 200 || req.method !== 'GET' || !KB_SLZ.test(u.pathname) || KB_SLZ.exec(u.pathname)[1] || req.headers.get('x-kb-sat') === kbOt() || !/text\/html/.test(r.headers.get('content-type') || '')) return r; try { if (!ksl) ksl = await import('./kbx_satlz.js'); const h = new Headers(r.headers); h.delete('content-length'); return new Response(await ksl.strip(await r.text(), u, kbNonce(r), env), { status: 200, headers: h }); } catch (e) { return r; } };
 async function kbFinGet(req, u, env, ctx, self) {
   if (req.method !== 'GET' || !kbClean(u) || typeof caches === 'undefined' || !KB_FIN.test(u.pathname) || KB_BOT_UA.test(req.headers.get('user-agent') || '') || req.headers.get('x-kb-ot') === kbOt()) return null;
   const hit = await caches.default.match(kbFinKey(u)); if (!hit) return null;
@@ -472,7 +474,7 @@ async function kbFinGet(req, u, env, ctx, self) {
   let t = await hit.text();
   if (old) { const nw = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(16)))); t = t.split(old[1]).join(nw); for (const k of ['content-security-policy', 'content-security-policy-report-only']) if (h.has(k)) h.set(k, h.get(k).split(old[1]).join(nw)); }
   h.set('cache-control', h.get('x-cc') || 'no-cache'); ['x-built', 'x-sha', 'x-cc'].forEach(k => h.delete(k)); h.set('x-fin-cache', stale ? 'stale' : 'hit'); bg();
-  return new Response(t, { status: 200, headers: h });
+  return kbSlz(req, u, env, new Response(t, { status: 200, headers: h }));
 }
 async function kbFinPut(req, u, env, ctx, r) {
   if (req.method !== 'GET' || !r || r.status !== 200 || !kbClean(u) || u.search || typeof caches === 'undefined' || !KB_FIN.test(u.pathname) || KB_BOT_UA.test(req.headers.get('user-agent') || '') || r.headers.has('set-cookie') || r.headers.get('x-edge-cache') === 'stale' || !/text\/html/.test(r.headers.get('content-type') || '') || kbStrBad()) return r;
@@ -520,6 +522,7 @@ export default {
     }
     if (/^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) await kbStrings(env);   // n32w: string tables first (see kbStrings)
     if (kn33a && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) { try { await kn33a.prep(env, new URL(req.url)); } catch (e) {} }   // n33a (item 79): data card for the /data/ Dataset node
+    if (req.method === 'GET' || req.method === 'HEAD') { const u0 = new URL(req.url); if (/^(www\.)?kolaboro\.com$/.test(u0.hostname) && /\/projects\/[a-z0-9-]{1,90}\/space\/$/.test(u0.pathname)) { try { if (!ksl) ksl = await import('./kbx_satlz.js'); const p = await ksl.part(req, u0, env, ctx, this, kbOt(), kbFinKey); if (p) return p; } catch (e) {} } }   // n40 k51
     if (env && env.KB_CSP_STRICT === '0') KB_CSP_SCRIPTS = false;   // n21e: rollback switch for the strict script policy on kolaboro.com
     const kbRe = req.headers.get('x-kb-ot') === kbOt();
     if (!kbRe && req.method === 'GET' && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname) && /bot|crawl|spider|GPT|Claude|anthropic|Perplexity|Bytespider|meta-extern|cohere|Mistral|Diffbot/i.test(req.headers.get('user-agent') || '')) { try { if (!kbots) kbots = await import('./kbx_bots.js'); kbots.count(req, new URL(req.url), ctx); } catch (e) {} }   // n26i: AI crawler visits per day (kbx_bots.js)
@@ -563,9 +566,10 @@ export default {
     }
     if (/^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) { let r2 = r; try { if (!kTick) kTick = await import('./kbx_ticker.js'); r2 = await kTick.kbTick(req, r, env); } catch (e) { r2 = r; }
       // n29t (item 44): crawlers get an ETag on every HTML page and a 304 when the page did not change since their last visit (see kbCond)
-      if (req.method === 'GET' && KB_BOT_UA.test(req.headers.get('user-agent') || '')) { try { return await kbCond(req, r2); } catch (e) { return r2; } }
+      if (req.method === 'GET' && KB_BOT_UA.test(req.headers.get('user-agent') || '')) { try { return await kbCond(req, await kbSlz(req, new URL(req.url), env, r2)); } catch (e) { return r2; } }
       try { r2 = await kbSafe(req, new URL(req.url), r2); } catch (e) {}
       try { r2 = await kbFinPut(req, new URL(req.url), env, ctx, r2); } catch (e) {}
+      try { r2 = await kbSlz(req, new URL(req.url), env, r2); } catch (e) {}
       try { if (r2 && /text\/html/.test(r2.headers.get('content-type') || '')) { const h = new Headers(r2.headers), st = h.get('server-timing'); h.set('server-timing', (st ? st + ', ' : '') + 'edge;dur=' + (Date.now() - t0) + ';desc="worker to headers"'); r2 = new Response(r2.body, { status: r2.status, statusText: r2.statusText, headers: h }); } } catch (e) {}
       return r2; }
     return r;
