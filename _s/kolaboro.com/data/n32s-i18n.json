@@ -4,6 +4,7 @@
   "a_g": "On {d}, Kolaboro tracks {n} off-plan projects in {m} markets and {c} countries. {pn} ({pp}) publish a permit or licence number, {hd} ({hp}) have a handover date on record and {od} are past that date with no completion on record.",
   "a_p": "On {d}, Kolaboro tracks {n} off-plan projects in {p}. {pn} ({pp}) publish a permit or licence number, {hd} ({hp}) have a handover date on record and {od} are past that date with no completion on record.",
   "a_src": "Source: Kolaboro open data ({f}), CC BY 4.0.",
+  "a_csv": "Download this market as CSV",
   "a_lab": "In short",
   "t_dn": "completed, buyer reports and record",
   "t_dn2": "completed, buyer reports"

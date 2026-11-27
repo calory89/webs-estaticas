@@ -27,6 +27,17 @@ function scope(p) {   // null: whole dataset; { mks, name } for a place
   if (m) { let k = m[1]; try { k = decodeURIComponent(k); } catch (e) {} return { slug: slugA(k), name: null }; }
   return null;
 }
+// n40 k55 (BL-002): /m/<market>/projects.csv, the market's rows of /data/named.json as CSV (CC BY 4.0)
+export async function csv(u, env) {
+  const m = /^\/m\/([^/.]{2,60})\/projects\.csv$/.exec(u.pathname); if (!m) return null;
+  let k = m[1]; try { k = decodeURIComponent(k); } catch (e) {}
+  const sl = slugA(k), N = await import('./kbx_named.js'), ix = await N.data(env), P = ix.P.filter(x => slugA(x.mk) === sl);
+  if (!P.length) return null;
+  const q = v => { let s = v == null ? '' : String(v); if (/^[=+\-@]/.test(s)) s = "'" + s; return /[",\r\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s; };
+  const rows = [['id', 'name', 'developer', 'market', 'area', 'country', 'stage', 'handover_published', 'permit_number', 'kolaboro_page', 'developer_page', 'data_of']]
+    .concat(P.map(x => [x.id, x.n, x.dv, x.mk, x.ar, x.co, x.st, (N.handoverOf(ix, x) || {}).d, x.pn, x.s ? ORIGIN + '/projects/' + x.s + '/' : '', x.url, ix.updated]));
+  return new Response('\ufeff' + rows.map(r => r.map(q).join(',')).join('\r\n') + '\r\n', { headers: { 'content-type': 'text/csv; charset=utf-8', 'content-disposition': 'attachment; filename="kolaboro-' + sl + '.csv"', 'cache-control': 'public, max-age=3600', 'access-control-allow-origin': '*', 'x-robots-tag': 'noindex', 'x-content-type-options': 'nosniff', link: '<https://creativecommons.org/licenses/by/4.0/>; rel="license"' } });
+}
 const CNT = new WeakMap();
 function counts(N, ix, sc) {
 const key = sc ? (sc.mks ? sc.mks.join('|') : 's:' + sc.slug) : '*';
@@ -54,7 +65,7 @@ export async function answer(req, u, env, r) {
     const v = { d: esc(d), n: f(o.n), m: f(o.m), c: f(o.c), pn: f(o.pn), pp: pc(o.pn), hd: f(o.hd), hp: pc(o.hd), od: f(o.od), p: '<bdi>' + esc(place) + $q.h };
     const s = t(lang, sc ? 'a_p' : 'a_g', v), plain = s.replace(/<[^>]+>/g, '');
     html = $q.i + esc(t(lang, 'a_lab')) + $q.j + esc(plain) + $q.k + esc(d) + $q.l + esc(d) + $q.m +
-      s + $q.n + t(lang, 'a_src', { f: $q.o }) + $q.p;
+      s + $q.n + t(lang, 'a_src', { f: $q.o }) + (sc && sc.slug ? ' <a href="' + esc(p) + 'projects.csv" download>' + esc(t(lang, 'a_csv')) + '</a>' : '') + $q.p;
   } catch (e) { return r; }
   if (!html) return r;
   let done = false;

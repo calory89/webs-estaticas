@@ -1037,6 +1037,7 @@ export default {
       return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r;
     }
     if (host === 'equinoxinvestmentgroup.com') return eqHeaders(await this.site(req, env, ctx, u, host), u, req);
+    if (host === 'kolaboro.com' && req.method === 'GET' && /^\/m\/[^/.]{2,60}\/projects\.csv$/.test(u.pathname)) { try { const k = await import('./kbx_n32s.js'), r = await k.csv(u, env); if (r) return r; } catch (e) {} }   // n40 k55: per-market CSV
     if (host === 'kolaboro.com' && req.method === 'GET' && (/^\/p\/[A-Za-z0-9-]{3,20}\/?$/.test(u.pathname) || /^\/m\/[^/.]{2,60}\/?$/.test(u.pathname) || u.pathname === '/sitemap-data.xml')) {
       if (!kb) kb = await import('./kolaboro.js');
       if (u.pathname === '/sitemap-data.xml') return kb.dataSitemap();
