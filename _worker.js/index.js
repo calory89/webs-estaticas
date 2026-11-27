@@ -1,5 +1,5 @@
 
-const SITES = new Set(["globalpadeltour.com", "nomagua.com", "sumbasecrets.com", "supportnear.com", "tulumecocity.com", "venturebuilderschool.com", "levelshotels.com", "persohna.com", "libro.carlosdeory.com"]);
+const SITES = new Set(["globalpadeltour.com", "nomagua.com", "sumbasecrets.com", "supportnear.com", "tulumecocity.com", "venturebuilderschool.com", "levelshotels.com", "persohna.com", "libro.carlosdeory.com", "sumbamarathon.com"]);
 
 const SB = 'https://oykcsmextclpdnugixqz.supabase.co';
 const SB_HOST = 'oykcsmextclpdnugixqz.supabase.co';
@@ -29,7 +29,7 @@ async function sbProxy(req, u) {
   return new Response(r.body, { status: r.status, headers: rh });
 }
 let top3 = null;
-const NOSPA = new Set(["globalpadeltour.com", "nomagua.com", "sumbasecrets.com", "supportnear.com", "tulumecocity.com", "venturebuilderschool.com", "levelshotels.com"]);
+const NOSPA = new Set(["globalpadeltour.com", "nomagua.com", "sumbasecrets.com", "supportnear.com", "tulumecocity.com", "venturebuilderschool.com", "levelshotels.com", "sumbamarathon.com"]);
 async function viaTop3(req, env, ctx) {
   const u = new URL(req.url);
   const cacheable = req.method === 'GET' && !u.pathname.startsWith('/api/geo') && !u.pathname.startsWith('/api/alerts');

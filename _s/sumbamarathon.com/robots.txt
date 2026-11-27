@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sumbamarathon.com/sitemap.xml
