@@ -1,6 +1,6 @@
 # Happy Low Cost: cheap flight routes with real prices
 
-> 982 routes. Return economy fares for 1 adult, checked on Kiwi.com; "usual" is the median of the prices we saw. Generated 2026-11-27T03:41Z. Licence CC BY 4.0: cite "Happy Low Cost (happylowcost.com)". JSON: https://www.happylowcost.com/en/flights/feed.json
+> 982 routes. Return economy fares for 1 adult, checked on Kiwi.com; "usual" is the median of the prices we saw. Generated 2026-11-27T04:39Z. Licence CC BY 4.0: cite "Happy Low Cost (happylowcost.com)". JSON: https://www.happylowcost.com/en/flights/feed.json
 
 - [Alicante → Milan](https://www.happylowcost.com/en/flights/alicante-milan/): from 38 € return, usual 39 €, nonstop, Wizz Air Malta, checked 2026-11-22
 - [Alicante → Venice](https://www.happylowcost.com/en/flights/alicante-venice/): from 40 € return, usual 48 €, nonstop, Ryanair, checked 2026-11-23

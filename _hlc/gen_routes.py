@@ -15,6 +15,15 @@ try:
     GUIDE_DAYS = json.load(open(os.path.join('destinos', 'dias.json'), encoding='utf-8'))
 except Exception:
     GUIDE_DAYS = {}
+R8_LOWCOST = ('Ryanair', 'Wizz', 'easyJet', 'Vueling', 'Transavia', 'Norwegian', 'Volotea', 'Jet2', 'Eurowings', 'Pegasus', 'Iberia Express', 'airBaltic', 'Binter')
+try:
+    R8_COUNTRY = {d_['s']: d_['c'] for d_ in json.load(open(os.path.join('hlc', 'destinos.json'), encoding='utf-8'))}
+except Exception:
+    R8_COUNTRY = {}
+R8_THE = {'United States', 'United Kingdom', 'Netherlands', 'United Arab Emirates', 'Dominican Republic', 'Philippines', 'Maldives', 'Czech Republic', 'Caribbean Netherlands'}
+R8_ALIAS = {'Sídney': ('Sydney',), 'Nueva York': ('NYC', 'New York'), 'New York': ('NYC',), 'Las Vegas': ('Vegas',), 'Zúrich': ('Zurich',), 'Dubái': ('Dubai',),
+            'Ciudad de México': ('CDMX', 'México DF'), 'Mexico City': ('CDMX',), 'Los Ángeles': ('LA',), 'Los Angeles': ('LA',), 'Marrakech': ('Marrakesh',),
+            'Reikiavik': ('Reykjavik',), 'Fráncfort': ('Frankfurt',), 'Múnich': ('Munich', 'München'), 'Cracovia': ('Kraków',), 'Estambul': ('Istanbul',)}
 UK_ORIG = {'Londres', 'London', 'Manchester', 'Edimburgo', 'Edinburgh', 'Glasgow', 'Bristol', 'Birmingham', 'Liverpool', 'Leeds', 'Newcastle', 'Belfast'}
 try:
     GBP = float(json.load(open(os.path.join('hlc', 'fx.json')))['rates']['GBP'])
@@ -220,6 +229,27 @@ def page(r, lang, others):
         else:
             c['meta'] = (f"✓ Vuelos {r['origin']}-{dest} desde {p_} € ida y vuelta" + (', directo' if stops == 0 else '') + (f' con {air_}' if air_ else '') + '. '
                          + (f"Lo normal son unos {med_} €. " if med_ and med_ > p_ else '') + f"Mes más barato, calendario de precios y tarifas consultadas el {fdate(f.get('consultado'))}.")
+    # ---- ronda 8 (GSC 30-oct a 26-nov): aerolínea low cost en el título, país del destino y nombres alternativos ----
+    # "vuelos zaragoza praga ryanair" 20 impr. pos. 8, "valencia brujas ryanair", "zaragoza dublín ryanair": la gente busca la ruta con la aerolínea
+    # solo con vuelo directo: con escalas Kiwi.com mezcla un primer tramo low cost con otra aerolínea (nota de la ronda 6)
+    if air_ and stops == 0 and air_.startswith(R8_LOWCOST) and c.get('title') and air_.split()[0].lower() not in c['title'].lower():
+        _br = ' · Happy Low Cost' if c['title'].endswith(' · Happy Low Cost') else ''
+        _core = c['title'][:len(c['title']) - len(_br)] if _br else c['title']
+        _air1 = air_.split(' (')[0]
+        for _base in (_core, re.sub(r' (ida y vuelta|return)(?= \()', '', _core, count=1), re.sub(r' \([A-Za-z]{3} 20\d\d\)$', '', _core)):
+            _cand = re.sub(r'^(.*?\S[-–]\S[^0-9€£]*?)\s+(desde|from)\b', lambda m_: f"{m_.group(1)} {'with' if en else 'con'} {_air1} {m_.group(2)}", _base, count=1)
+            if _cand != _base and len(_cand) <= 64:
+                c['title'] = _cand + (_br if len(_cand) + len(_br) <= 70 else '')
+                break
+    # "vuelos madrid colombia" 10 impr. pos. 14,8 en /vuelos/madrid-bogota/: el país del destino en la meta y en la respuesta rápida
+    _cty = R8_COUNTRY.get(ds, '')
+    _cty_t = (__import__('en_names').country_en(_cty) if en else __import__('en_names').COUNTRY_ES_FIX.get(_cty, _cty)) if _cty else ''
+    if _cty_t and _cty_t.lower() not in dest.lower() and c.get('meta') and _cty_t not in c['meta']:
+        c['meta'] = c['meta'].replace(f' to {dest} from', f' to {dest} ({_cty_t}) from', 1) if en else c['meta'].replace(f'-{dest} desde', f'-{dest} ({_cty_t}) desde', 1)
+    # "vuelos de sydney a tokio" en la página ES de Sídney, "flights to orlando from nyc": nombres que también busca la gente
+    _seen = (c.get('title', '') + c.get('h1', '')).lower()
+    _alts = [(nm_, [a_ for a_ in R8_ALIAS.get(nm_, ()) if a_.lower() not in _seen]) for nm_ in dict.fromkeys([(__import__('en_names').city_en(r['origin']) if en else r['origin']), dest])]
+    _alts = [(nm_, al_) for nm_, al_ in _alts if al_]
     # ---- datos propios citables: respuesta rápida, mes más barato, pregunta de vuelo directo ----
     o_name = __import__('en_names').city_en(r['origin']) if en else r['origin']
     best_m = None
@@ -258,6 +288,19 @@ def page(r, lang, others):
                 'q': (f'How far is {dest} from {o_name}?' if en else f'¿Qué distancia hay entre {r["origin"]} y {dest}?'),
                 'a': (f'About {kmt} km in a straight line between {r["origin_iata"]} and {r["dest_iata"]} airports.' if en else
                       f'Unos {kmt} km en línea recta entre los aeropuertos de {r["origin_iata"]} y {r["dest_iata"]}.')}]
+    if _cty_t and _cty_t.lower() not in dest.lower():
+        qa_parts.append(f'{dest} is in {"the " if _cty_t in R8_THE else ""}{_cty_t}.' if en else f'{dest} está en {_cty_t}.')
+    if _alts:
+        qa_parts.append(' '.join((f'{nm_} is also known as {" or ".join(al_)}.' if en else f'{nm_} también se conoce como {" o ".join(al_)}.') for nm_, al_ in _alts))
+    # "¿qué aerolíneas vuelan de barcelona a varsovia y cuál ofrece la mejor relación calidad-precio?" 20 impr. pos. 6,6: respuesta con nuestros datos
+    _airs = list(dict.fromkeys(a_ for a_ in ((o.get('facts') or {}).get('aerolinea') for o in sorted(BY_DEST.get(ds, []), key=lambda o: o['price_from'])) if a_ and a_ != air_))
+    if air_ and not re.search(r'aerol[ií]neas vuelan|which airlines fly', ' '.join(q.get('q', '') for q in c.get('faq', [])).lower()):
+        c['faq'] = list(c.get('faq', [])) + [{
+            'q': (f'Which airlines fly from {o_name} to {dest}, and which is cheapest?' if en else f'¿Qué aerolíneas vuelan de {r["origin"]} a {dest} y cuál es la más barata?'),
+            'a': ((f'In our search of {fdate(f.get("consultado"), True)} the cheapest fare was with {air_}' + (' (nonstop)' if stops == 0 else '') + (f', from {p_} € return' if p_ else '') + '.'
+                   + (f' On the other routes to {dest} we track, the cheapest fares were with {", ".join(_airs[:4])} (cheapest first).' if _airs else '') + ' Fares change daily: check the dates in the calendar below.') if en else
+                  (f'En nuestra consulta del {fdate(f.get("consultado"))} la tarifa más barata era con {air_}' + (' (vuelo directo)' if stops == 0 else '') + (f', desde {p_} € ida y vuelta' if p_ else '') + '.'
+                   + (f' En las otras rutas a {dest} que vigilamos, las tarifas más baratas eran con {", ".join(_airs[:4])} (de más barata a más cara).' if _airs else '') + ' Los precios cambian cada día: mira las fechas en el calendario de abajo.'))}]
     quick = ' '.join(x for x in qa_parts if x)
     # cuándo comprar, con nuestros propios datos: semanas entre la consulta y la salida del precio más barato (ruta y media del destino)
     def _lead(fx):

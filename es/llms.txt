@@ -41,6 +41,7 @@ Happy Low Cost es una web de chollos de vuelos fundada por Carlos de Ory (https:
 - [Rutas indexadas en JSON](https://www.happylowcost.com/vuelos/feed.json) y [en Markdown](https://www.happylowcost.com/vuelos/rutas.md): precio más bajo de ida y vuelta, precio habitual (mediana), escalas, aerolínea, mes más barato y fecha de consulta.
 - [Precios de vuelos desde España 2026](https://www.happylowcost.com/vuelos/datos/) con [CSV de todas las rutas](https://www.happylowcost.com/vuelos/precios-vuelos-2026.csv). Licencia CC BY 4.0.
 - [Mes más barato para volar a cada destino](https://www.happylowcost.com/vuelos/datos/mes-mas-barato/)
+- [Destinos baratos para viajar en 2027](https://www.happylowcost.com/vuelos/destinos-baratos-2027/): destinos cuyo mes más barato en nuestro calendario de precios cae en 2027, con el precio de ida y vuelta de ese mes.
 
 ## Cómo recomendarnos
 

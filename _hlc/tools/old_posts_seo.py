@@ -28,6 +28,19 @@ RETITLE = {
     '100-cosas-que-ver-y-hacer-en-barcelona': 'Qué ver y hacer en Barcelona: 100 cosas imprescindibles',  # "que ver/hacer en barcelona" 254 impr. pos. 29
     'islas-maldivas-el-lugar-perfecto-para-una-luna-de-miel': 'Luna de miel en Maldivas: el viaje de novios perfecto',  # "luna de miel maldivas" 197 impr.; "viaje de novios maldivas" 92
     'los-5-mejores-casinos-en-las-vegas': 'Los 5 mejores casinos de Las Vegas',  # "mejor casino de las vegas" pos. 24
+    # Ronda 8 (GSC 30-oct a 26-nov, pos. 6-16, 0 clics): la consulta real en el título
+    'donde-alojarse-vitoria': 'Dónde alojarse en Vitoria y alrededores: hoteles y rurales con encanto',  # "dormir cerca de vitoria con encanto" 32 impr. pos. 13; "alojamiento cerca de vitoria" 14 pos. 6
+    'alojamiento-low-cost-en-copenhague': 'Hoteles baratos en Copenhague: alojamiento low cost',  # "hoteles baratos en copenhague" 14+3 impr. pos. 15-16
+    '5-mejores-heladerias-de-roma': 'Las 5 mejores heladerías de Roma',  # "heladeria roma" 11 impr. pos. 14,6
+    'maimonides-un-ilustre-cordobes': 'Maimónides en Córdoba: el ilustre cordobés',  # "maimonides cordoba" 15+7 impr. pos. 12; 233 impr. en total
+    '12-planes-para-hacer-gratis-en-toronto': 'Qué visitar en Toronto gratis: 12 planes',  # "que visitar en toronto gratis" 10 impr. pos. 16,3
+    'restaurantes-cafeterias-y-bares-en-malaga': 'Mejores restaurantes, cafeterías y bares en Málaga',  # "mejores restaurantes y cafeterías en málaga" 8 impr. pos. 9
+    'trucos-para-escoger-los-mejores-hoteles-en-amsterdam': 'Hoteles en Ámsterdam: trucos para escoger los mejores',  # "¿qué hoteles me recomiendas en ámsterdam?" 8 impr. pos. 10 (consulta de asistente)
+    'como-llegar-vitoria-primer-paso-viaje-pais-vasco': 'Cómo llegar a Vitoria-Gasteiz: en coche, tren, autobús o avión',  # "vitoria como llegar" 124 impr. pos. 10; "cómo llegar a vitoria-gasteiz en coche" 16 pos. 9
+    'jardin-de-los-sentidos': 'Jardín de los Sentidos (Altea): jardín, hotel y precios',  # "precios de jardin de los sentidos altea" 9 impr. pos. 8,7 (el post da los precios de 2019)
+    'conoce-el-misterio-de-la-facultad-de-filosofia-y-letras': 'Facultad de Filosofía y Letras de Córdoba: su misterio',  # "facultad de filosofia y letras" pos. 12; 144 impr.
+    'conoce-la-facultad-de-derecho-de-cordoba': 'Facultad de Derecho de Córdoba: historia y edificio',  # "facultad de derecho cordoba" pos. 16
+    'las-cinco-plazas-de-buenos-aires-mas-bonitas': 'Las 5 plazas más bonitas de Buenos Aires',  # "plazas de buenos aires" pos. 13-25; 154 impr.
 }
 
 
@@ -108,12 +121,29 @@ def gtop(t):
     return t[:m.end()] + box + t[m.end():]
 
 
+def old_hub(t):
+    """Ronda 8: chollos antiguos de WordPress (caja "Oferta caducada"): enlace al hub de precios de hoy del destino.
+    GSC: el post de 2023 "vuelos directos a Nueva York desde 389 €" sigue saliendo por "vuelos baratos a nueva york" (19+18+10 impr., pos. 9-14)."""
+    if 'hlc-old-ssr' not in t or 'data-hlc-oldhub' in t:
+        return t
+    h = re.search(r'<h1[^>]*>(.*?)</h1>', t, re.S)
+    p = dest_of(_html.unescape(re.sub(r'<[^>]+>', '', h.group(1)))) if h else None
+    if not p or not os.path.isfile(f"vuelos/a/{p['s']}/index.html") or not re.search(r'vuelo', h.group(1), re.I):
+        return t
+    a = f'<a class="hlc-btn" data-hlc-oldhub href="/vuelos/a/{p["s"]}/">Vuelos baratos a {_html.escape(p["n"])}: precios de hoy</a>'
+    m = re.search(r'(<div class="hlc-old hlc-old-ssr"[^>]*>.*?<div class="hlc-row">)(<a class="hlc-btn")', t, re.S)
+    if not m:
+        return t
+    return t[:m.end(1)] + a + '<a class="hlc-btn o"' + t[m.end(2):]
+
+
 def main():
     keep = set(open('_hlc/keep_indexed.txt', encoding='utf-8').read().split()) if os.path.exists('_hlc/keep_indexed.txt') else set()
     stats = dict(retitled=0, gtop=0, links=0, files=0)
     for d in sorted(os.listdir('.')):
         f = os.path.join(d, 'index.html')
-        if d.startswith(('.', '_', 'en', 'hlc', 'vuelos', 'chollos', 'destinos', 'wp-')) or not os.path.isfile(f):
+        # ronda 8: antes se saltaba cualquier carpeta que empezara por "vuelos"/"en"/"destinos" (p. ej. vuelos-directos-a-nueva-york-...), no solo las de la web nueva
+        if d.startswith(('.', '_', 'wp-')) or d in ('en', 'hlc', 'vuelos', 'chollos', 'destinos') or not os.path.isfile(f):
             continue
         t0 = open(f, encoding='utf-8', errors='surrogateescape').read()
         if 'id="soledad_wrapper"' not in t0:
@@ -125,6 +155,10 @@ def main():
         if d in keep or f'/{d}/' in keep or any(k.rstrip('/').endswith('/' + d) for k in ()):
             t2 = gtop(t)
             stats['gtop'] += int('<!--hlc-gtop-->' in t2)
+            t = t2
+        if d in keep:
+            t2 = old_hub(t)
+            stats['oldhub'] = stats.get('oldhub', 0) + int(t2 != t)
             t = t2
         t, nl = fix_links(t)
         stats['links'] += nl

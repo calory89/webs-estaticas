@@ -308,6 +308,7 @@ def main():
 <article class="txt"><p class="deal-quick"><strong>In short:</strong> {e(o)} to {e(d)} for €{e(x.get('price'))} {trip(f)}{(' with ' + e(f.get('aerolinea'))) if f.get('aerolinea') else ''}{', nonstop' if f.get('escalas') == 0 else ''}, {e(dates_en(f))}.{(' The usual price is about €' + e(f.get('precio_normal')) + ' (you save ' + e(f.get('ahorro_pct')) + '%).') if f.get('precio_normal') else ''} Price checked on {e(date_en(verified))}.</p><div class="howbook"><b>How to book it in 3 steps</b><ol><li>Tap “See flight & dates”: the search opens with these dates.</li><li>If the price has changed, try a day earlier or later; similar dates are usually there.</li><li>Before paying, check which baggage the fare includes.</li></ol></div>{G.bag_box(f, True)}{en.get('body_html') or ''}
 {f'<p>{guide}</p>' if guide else ''}
 {G.deal_days_p(ls_, NAMES.get(ls_, d), 'en') if ls_ and ls_ in dmap else ''}
+{G.deal_route_p(f, 'en')}
 {G.faq_html(qa, True)}
 {en_credit(ls_, slug)}</article>
 <aside class="deal-card">
@@ -464,10 +465,10 @@ def main():
             return 99
     IDEAS_EN = [
         ('weekend-getaways', 'Cheap weekend getaways', 'Affordable airfare for a weekend escape: return trips of 2 to 4 nights leaving on a Thursday, Friday or Saturday, cheapest first.', lambda f_: f_.get('vuelta') and 2 <= nights(f_) <= 4 and datetime.date.fromisoformat(f_['ida'][:10]).weekday() in (3, 4, 5)),
-        ('under-50', 'Flights under €50', 'Return deals for €50 or less.', lambda f_: (f_.get('precio') or 999) <= 50),
-        ('under-100', 'Flights under €100', 'Return deals for €100 or less.', lambda f_: (f_.get('precio') or 999) <= 100),
+        ('under-50', 'Flights under €50 return', 'Cheap return flights for €50 or less: checked deals.', lambda f_: (f_.get('precio') or 999) <= 50),
+        ('under-100', 'Flights under €100 return', 'Cheap return flights for under €100: checked deals.', lambda f_: (f_.get('precio') or 999) <= 100),
         ('long-haul', 'Long-haul under €600', 'Deals to another continent for €600 or less, return.', lambda f_: (f_.get('precio') or 9999) <= 600 and f_.get('continente') and G.REAL_CONT.get(f_.get('continente')) != G.REAL_CONT.get(f_.get('origen_continente') or '', f_.get('origen_continente'))),
-        ('nonstop', 'Nonstop flight deals', 'Only flights with no stops.', lambda f_: f_.get('escalas') == 0),
+        ('nonstop', 'Nonstop flight deals', 'Economical nonstop flight choices: cheap return flights with no stops.', lambda f_: f_.get('escalas') == 0),
         ('christmas-2026', 'Christmas and New Year 2026', 'Deals departing between 18 December 2026 and 6 January 2027.', lambda f_: '2026-12-18' <= (f_.get('ida') or '')[:10] <= '2027-01-06'),
         ('easter-2027', 'Easter 2027', 'Deals departing between 19 and 28 March 2027 (Easter weekend: 25 to 28 March).', lambda f_: '2027-03-19' <= (f_.get('ida') or '')[:10] <= '2027-03-28'),
     ]
@@ -648,6 +649,8 @@ def main():
             add_ = f' Budget: {bud} a day.'
             if len(dsc_.rstrip()) + len(add_) <= 200:
                 dsc_ = dsc_.rstrip() + ('' if dsc_.rstrip().endswith('.') else '.') + add_
+        dsc_ = G.guide_meta(n, nd_ if 2 <= nd_ <= 21 else 0, attr, bud, 'en') or dsc_
+        art["description"] = dsc_[:300]
         art["headline"] = ttl_[:110]
         page = head(ttl_ + (' · Happy Low Cost' if len(ttl_) <= 46 else ''), dsc_[:300],
                     url, es, f"{SITE}/hlc/img/cities/{p['s']}.jpg", 'article', [G.ORG_LD, img_ld, dest_ld, art, cld] + ([faq_ld] if faq_ld else []) + ([trip_ld] if trip_ld else []), body_class='destino',
@@ -689,7 +692,7 @@ def main():
     # hotels hub
     hl = [(p, g) for p, g in dl if T3.find(p.get('y'), p.get('x'), [p['s']] + list(p.get('a') or []), ())]
     tiles_h = ''.join(f'<a class="dc" href="/en/destinations/{G.en_dest_slug(p["s"])}/#hotels"><div class="dc-img" style="background-image:url(/hlc/img/cities/{p["s"]}-800.jpg)"><span class="dc-city">{e(NAMES.get(p["s"], p["n"]))}</span></div><div class="dc-b"><div><div class="dc-r">3 hotels in {e(NAMES.get(p["s"], p["n"]))}</div><div class="dc-m">Budget · best value · luxury</div></div></div></a>' for p, g in hl)
-    pg = head('Where to stay: the 3 best hotels in every destination · Happy Low Cost', f'A budget hotel, a best-value one and a luxury one in {len(hl)} destinations, picked by real guest scores.', f'{SITE}/en/hotels/', f'{SITE}/hoteles/', body_class='chollos')
+    pg = head('Where to stay: the 3 best hotels in every destination · Happy Low Cost', f'A budget hotel, a best-value one and a luxury one in {len(hl)} destinations, picked by real guest scores.', f'{SITE}/en/hotels/', f'{SITE}/hoteles/', ld=[G.hotels_ld(hl, 'en')], body_class='chollos')
     pg += f'<main class="sec" style="padding-top:26px"><div class="wrap"><div class="sec-h"><div><div class="kicker">Hotels</div><h1 class="x-h1">Where to stay in every destination</h1><p>For each destination, 3 hotels: budget, best value and luxury, picked by top3hotels.com from real guest scores. {len(hl)} destinations.</p></div></div><div class="dc-grid">{tiles_h}</div></div></main>{FOOTER}</body></html>'
     write('en/hotels', pg)
     # index of guides

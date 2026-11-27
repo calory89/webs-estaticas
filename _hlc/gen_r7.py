@@ -401,6 +401,63 @@ def guide_pages(es, lib, NAV):
         NAV['en_d'].append((f'/en/destinations/region/{sen}/', f'{nen} guides'))
 
 
+MES_L_ES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre']
+
+
+def y2027_pages(es, NAV):
+    """Ronda 8 (#261): "Destinos baratos para viajar en 2027", con el mes más barato de cada ruta indexada (calendario de precios de Kiwi.com).
+    Solo destinos cuyo mes más barato de los próximos seis cae en 2027; precio de ese mes, no inventado."""
+    lst = [r for r in both(es) if str(r.get('cheapest_month') or '').startswith('2027') and r.get('cheapest_month_price_eur')]
+    best = {}
+    for r in lst:
+        k = r['destination_iata']
+        if k not in best or r['cheapest_month_price_eur'] < best[k]['cheapest_month_price_eur']:
+            best[k] = r
+    rows = sorted(best.values(), key=lambda r: r['cheapest_month_price_eur'])
+    if len(rows) < 8:
+        return
+    lc = last_check(rows)
+    u_es, u_en = f'{SITE}/vuelos/destinos-baratos-2027/', f'{SITE}/en/flights/cheap-destinations-2027/'
+    c = rows[0]
+    import collections
+    mc = collections.Counter(r['cheapest_month'] for r in rows).most_common(1)[0]
+    for en in (False, True):
+        mname = (lambda ym: datetime.date(int(ym[:4]), int(ym[5:7]), 1).strftime('%B %Y')) if en else (lambda ym: f'{MES_L_ES[int(ym[5:7]) - 1]} de {ym[:4]}')
+        th = ('Destination', 'From', 'Cheapest month', 'Return that month', 'Stops') if en else ('Destino', 'Desde', 'Mes más barato', 'Ida y vuelta ese mes', 'Escalas')
+        trs = ''
+        for r in rows:
+            x = r['en'] if en else r
+            href = r['path_en'] if en else r['path_es']
+            pr = f'€{r["cheapest_month_price_eur"]}' if en else f'{r["cheapest_month_price_eur"]} €'
+            trs += (f'<tr><th scope="row"><a href="{href}">{e(x["destination"])}</a></th><td>{e(x["origin"])}</td><td>{e(mname(r["cheapest_month"]))}</td>'
+                    f'<td class="pm-p">{pr}</td><td>{e(stops(r["stops_cheapest"], en))}</td></tr>')
+        tbl = (f'<div class="pm-scroll" role="region" tabindex="0" aria-label="{"Fares" if en else "Precios"}"><table class="pm-t"><thead><tr>'
+               + ''.join(f'<th scope="col">{h}</th>' for h in th) + f'</tr></thead><tbody>{trs}</tbody></table></div>')
+        ce = c['en'] if en else c
+        if en:
+            q = (f'The cheapest destination for 2027 in our price calendars is {ce["destination"]}: {ce["origin"]} to {ce["destination"]} costs €{c["cheapest_month_price_eur"]} return in {mname(c["cheapest_month"])}. '
+                 f'{len(rows)} destinations have their cheapest month in 2027; the month that repeats most is {mname(mc[0])} ({mc[1]} destinations).')
+            qas = [('What are the cheapest places to travel in 2027?', q),
+                   ('Which month of 2027 is cheapest to fly?', f'In our data, {mname(mc[0])} is the cheapest month for {mc[1]} of the {len(rows)} destinations in this table. Prices come from the Kiwi.com price calendar and can change.')]
+            write(True, 'en/flights/cheap-destinations-2027', u_en, u_es, f'Cheap destinations for 2027: {len(rows)} places from €{c["cheapest_month_price_eur"]}',
+                  f'The cheapest places to travel in 2027 according to our fare calendars: {len(rows)} destinations from €{c["cheapest_month_price_eur"]} return, with the cheapest month for each. Checked {fd(lc, True)}.',
+                  'Cheap destinations for 2027', 'Our fare calendars, checked on Kiwi.com', q,
+                  'For each destination, the route and month of early 2027 with the cheapest return fare in our price calendar. Click a route for its full calendar.',
+                  tbl, qas, [('Home', '/en/'), ('Flights', '/en/flights/'), ('Cheap destinations 2027', None)])
+        else:
+            q = (f'El destino más barato para 2027 en nuestros calendarios de precios es {c["destination"]}: {c["origin"]}-{c["destination"]} cuesta {c["cheapest_month_price_eur"]} € ida y vuelta en {mname(c["cheapest_month"])}. '
+                 f'{len(rows)} destinos tienen su mes más barato en 2027; el mes que más se repite es {mname(mc[0])} ({mc[1]} destinos).')
+            qas = [('¿Cuáles son los destinos más baratos para viajar en 2027?', q),
+                   ('¿Qué mes de 2027 es el más barato para volar?', f'En nuestros datos, {mname(mc[0])} es el mes más barato para {mc[1]} de los {len(rows)} destinos de la tabla. Los precios salen del calendario de Kiwi.com y pueden cambiar.')]
+            write(False, 'vuelos/destinos-baratos-2027', u_es, u_en, f'Destinos baratos para viajar en 2027: {len(rows)} desde {c["cheapest_month_price_eur"]} €',
+                  f'Los destinos más baratos para viajar en 2027 según nuestros calendarios de precios: {len(rows)} destinos desde {c["cheapest_month_price_eur"]} € ida y vuelta, con el mes más barato de cada uno. Consulta del {fd(lc)}.',
+                  'Destinos baratos para viajar en 2027', 'Calendarios de precios propios, consultados en Kiwi.com', q,
+                  'Para cada destino, la ruta y el mes de principios de 2027 con el vuelo de ida y vuelta más barato de nuestro calendario de precios. Entra en cada ruta para ver el calendario completo.',
+                  tbl, qas, [('Inicio', '/'), ('Vuelos', '/vuelos/'), ('Destinos baratos 2027', None)])
+    NAV['es'].append(('/vuelos/destinos-baratos-2027/', 'Destinos baratos para viajar en 2027'))
+    NAV['en'].append(('/en/flights/cheap-destinations-2027/', 'Cheap destinations for 2027'))
+
+
 def inject_nav(NAV):
     """Enlaces a las páginas nuevas desde /vuelos/, /en/flights/, /destinos/ y /en/destinations/ (bloque idempotente)."""
     for f, key, h in (('vuelos/index.html', 'es', 'Más páginas con nuestros datos'), ('en/flights/index.html', 'en', 'More pages built on our data'),
@@ -421,6 +478,7 @@ def main():
     NAV = {'es': [], 'en': [], 'es_d': [], 'en_d': []}
     region_pages(es, NAV)
     guide_pages(es, lib, NAV)
+    y2027_pages(es, NAV)
     inject_nav(NAV)
     urls = [u for k in ('es', 'es_d') for u, _ in NAV[k]] + [u for k in ('en', 'en_d') for u, _ in NAV[k]]
     json.dump(urls, open(os.path.join('vuelos', 'r7_pages.json'), 'w', encoding='utf-8'))

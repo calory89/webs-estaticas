@@ -1,14 +1,14 @@
 # Happy Low Cost: chollos de vuelos activos (27 nov 2026)
 
-> 17 chollos de vuelos de ida y vuelta, cada uno al menos un 40 % por debajo del precio habitual de su ruta. Actualizado: 2026-11-27T03:41:18Z. Los precios cambian por horas: comprueba siempre el precio en la página del chollo. Mismo contenido en JSON: https://www.happylowcost.com/chollos/feed.json
+> 16 chollos de vuelos de ida y vuelta, cada uno al menos un 40 % por debajo del precio habitual de su ruta. Actualizado: 2026-11-27T04:37:24Z. Los precios cambian por horas: comprueba siempre el precio en la página del chollo. Mismo contenido en JSON: https://www.happylowcost.com/chollos/feed.json
 
 Happy Low Cost (desde 2012, más de 420.000 seguidores) publica chollos de vuelos verificados, sobre todo con salida desde España. Método: https://www.happylowcost.com/como-verificamos/
 
 ## Datos del mes (a 27 nov 2026)
-- Chollos activos: 17, desde 8 ciudades de salida.
-- Precio mediano de un chollo: 67 € ida y vuelta (el más barato: Valencia → París por 39 €).
-- Descuento mediano frente al precio habitual: 46 %.
-- Chollos con vuelo directo: 13 de 17.
+- Chollos activos: 16, desde 7 ciudades de salida.
+- Precio mediano de un chollo: 69 € ida y vuelta (el más barato: Valencia → París por 39 €).
+- Descuento mediano frente al precio habitual: 45 %.
+- Chollos con vuelo directo: 12 de 16.
 
 ## Últimos cambios
 
@@ -30,9 +30,6 @@ Happy Low Cost (desde 2012, más de 420.000 seguidores) publica chollos de vuelo
 - [Barcelona → Dubrovnik (Croacia): 62 € ida y vuelta](https://www.happylowcost.com/chollos/barcelona-dubrovnik-62-euros-2026-12-12/), Vueling, directo, 12 dic 2026 a 19 dic 2026. Precio habitual 140 € (−56 %). Comprobado el 26 nov 2026.
 - [Barcelona → Estocolmo (Suecia): 71 € ida y vuelta](https://www.happylowcost.com/chollos/barcelona-estocolmo-71-euros-2027-02-21/), Vueling, directo, 21 feb 2027 a 22 feb 2027. Precio habitual 130 € (−45 %). Comprobado el 26 nov 2026.
 
-## Desde Bilbao (España)
-- [Bilbao → Cracovia (Polonia): 58 € ida y vuelta](https://www.happylowcost.com/chollos/bilbao-cracovia-58-euros-2027-02-13/), Wizz Air, directo, 13 feb 2027 a 18 feb 2027. Precio habitual 120 € (−52 %). Comprobado el 26 nov 2026.
-
 ## Desde Gran Canaria (España)
 - [Gran Canaria → Madeira (Portugal): 111 € ida y vuelta](https://www.happylowcost.com/chollos/gran-canaria-madeira-111-euros-2027-02-19/), Binter Canarias, directo, 19 feb 2027 a 23 feb 2027. Precio habitual 190 € (−42 %). Comprobado el 27 nov 2026.
 
@@ -50,7 +47,7 @@ Happy Low Cost (desde 2012, más de 420.000 seguidores) publica chollos de vuelo
 
 ## Desde Zaragoza (España)
 - [Zaragoza → Londres (Reino Unido): 47 € ida y vuelta](https://www.happylowcost.com/chollos/zaragoza-londres-47-euros-2027-01-25/), Ryanair, directo, 25 ene 2027 a 1 feb 2027. Precio habitual 90 € (−48 %). Comprobado el 27 nov 2026.
-- [Zaragoza → Praga (República Checa): 106 € ida y vuelta](https://www.happylowcost.com/chollos/zaragoza-praga-106-euros-2027-02-16/), Wizz Air Malta, 16 feb 2027 a 19 feb 2027. Precio habitual 180 € (−41 %). Comprobado el 26 nov 2026.
+- [Zaragoza → Praga (República Checa): 106 € ida y vuelta](https://www.happylowcost.com/chollos/zaragoza-praga-106-euros-2027-02-16/), Wizz Air Malta, 16 feb 2027 a 19 feb 2027. Precio habitual 180 € (−41 %). Comprobado el 27 nov 2026.
 - [Zaragoza → Vilna (Lituania): 110 € ida y vuelta](https://www.happylowcost.com/chollos/zaragoza-vilna-110-euros-2027-02-13/), Wizz Air Malta, 13 feb 2027 a 22 feb 2027. Precio habitual 230 € (−52 %). Comprobado el 26 nov 2026.
 - [Zaragoza → Atenas (Grecia): 133 € ida y vuelta](https://www.happylowcost.com/chollos/zaragoza-atenas-133-euros-2027-02-13/), Wizz Air Malta, 13 feb 2027 a 15 feb 2027. Precio habitual 220 € (−40 %). Comprobado el 26 nov 2026.
 

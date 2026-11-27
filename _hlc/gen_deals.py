@@ -962,6 +962,31 @@ def deal_days_p(slug, name, lang='es'):
             'day by day, with costs, where to stay and what to eat.</p>')
 
 
+_RFEED = {}
+
+
+def deal_route_p(f, lang='es'):
+    """Ronda 8: en cada chollo, enlace a la página de la ruta (precio de hoy y calendario) si está indexada.
+    GSC: "vuelo sevilla edimburgo" 17 impr. pos. 18 en el chollo, mientras /vuelos/sevilla-edimburgo/ es la página que dura."""
+    es = lang == 'es'
+    k = 'es' if es else 'en'
+    if k not in _RFEED:
+        try:
+            fp = os.path.join('vuelos', 'feed.json') if es else os.path.join('en', 'flights', 'feed.json')
+            _RFEED[k] = {(r['origin_iata'], r['destination_iata']): r for r in json.load(open(fp, encoding='utf-8'))['routes']}
+        except Exception:
+            _RFEED[k] = {}
+    r = _RFEED[k].get(((f.get('origen_iata') or '').upper(), (f.get('destino_iata') or '').upper()))
+    if not r:
+        return ''
+    u = r['url'].replace(SITE, '')
+    if es:
+        return (f'<p><b>¿Y si este chollo se acaba?</b> En <a href="{u}">vuelos baratos {e(r["origin"])}-{e(r["destination"])}</a> tienes el precio más bajo que hemos visto en esta ruta '
+                f'({r["price_from_eur_return"]} € ida y vuelta), el mes más barato y el calendario de precios.</p>')
+    return (f'<p><b>What if this deal ends?</b> Our <a href="{u}">cheap flights {e(r["origin"])} to {e(r["destination"])}</a> page shows the lowest fare we have seen on this route '
+            f'(€{r["price_from_eur_return"]} return), the cheapest month and the price calendar.</p>')
+
+
 def guide_attractions(gh):
     """Lugares de la sección "Qué ver" (nombre en negrita + descripción de la guía) como TouristAttraction."""
     for m in re.finditer(r'<h2>(.*?)</h2>(.*?)(?=<h2>|$)', gh, re.S):
@@ -980,6 +1005,45 @@ def guide_attractions(gh):
             return out[:20]
     return []
 
+
+
+def hotels_ld(hl, lang='es'):
+    """Ronda 8 (#443): /hoteles/ y /en/hotels/ con ItemList de destinos, cada uno con su foto como ImageObject (autor y licencia en la ficha de la guía)."""
+    es = lang == 'es'
+    items = []
+    for i, (p, _c) in enumerate(hl):
+        u = f"{SITE}/destinos/{p['s']}/#hoteles" if es else f"{SITE}/en/destinations/{en_dest_slug(p['s'])}/#hotels"
+        nm = p['n'] if es else en_names.NAMES.get(p['s'], p['n'])
+        items.append({"@type": "ListItem", "position": i + 1, "item": {"@type": "TouristDestination", "name": nm, "url": u,
+                      "image": {"@type": "ImageObject", "contentUrl": f"{SITE}/hlc/img/cities/{p['s']}-800.jpg", "caption": (f"Foto de {nm}" if es else f"Photo of {nm}")}}})
+    return {"@type": "ItemList", "name": ("Dónde dormir en cada destino" if es else "Where to stay in every destination"), "numberOfItems": len(items), "itemListElement": items}
+
+
+def guide_meta(name, nd, attr, bud, lang='es'):
+    """Ronda 8 (#99/#137 continuación, CTR): meta description con 3 lugares concretos de la propia guía.
+    GSC 30-oct a 26-nov: las guías están en pos. 5-10 por "qué ver en X en 3 días" con CTR casi 0 (Bucarest 460 impr., Varsovia 322,
+    Hamburgo 204, Tallinn EN 359, Zanzíbar EN 297) y la meta empezaba igual en todas ("3 días en X, día a día: guía hecha por un viajero...")."""
+    es = lang == 'es'
+    names = []
+    for a in attr or []:
+        n_ = re.sub(r'\s*\(.*?\)', '', a.get('name', '')).strip(' .,:;')
+        if 3 <= len(n_) <= 30 and n_.lower() != name.lower() and n_ not in names and not re.search(r'[:—/]|\d{3,}|\s(y|e|and|&)\s', n_):
+            names.append(n_)
+        if len(names) == 3:
+            break
+    if len(names) < 3 or not nd:
+        return ''
+    lst = f'{names[0]}, {names[1]} {"y" if es else "and"} {names[2]}'
+    bud_ = re.sub(r'(?i)\s*euros?\b', ' €', bud or '').strip()
+    if es:
+        d = f'Qué ver en {name} en {nd} días: {lst}. Ruta día a día, dónde dormir y qué comer.'
+        if bud_ and len(d) + len(bud_) + 22 <= 170:
+            d += f' Presupuesto: {bud_} al día.'
+    else:
+        d = f'{name} itinerary for {nd} days: {lst}. Day-by-day route, where to stay and what to eat.'
+        if bud_ and len(d) + len(bud_) + 18 <= 170:
+            d += f' Budget: {bud_} a day.'
+    return d if len(d) <= 175 else ''
 
 # Ronda 5: título y H1 con la consulta exacta que trae impresiones en Search Console (28 días, pos. 8-20, 0 clics)
 TITLE_Q_ES = {
@@ -1180,7 +1244,7 @@ def hero_img(page):
     pre = (f'<link rel="preload" as="image" imagesrcset="{srcset}" imagesizes="100vw" fetchpriority="high">' if srcset else
            f'<link rel="preload" as="image" href="{src}" fetchpriority="high">')
     img = (f'<img class="dh-img" src="{img_src}"' + (f' srcset="{srcset}" sizes="100vw"' if srcset else '')
-           + (f' width="{wh[0]}" height="{wh[1]}"' if wh else '') + f' alt="{alt}" fetchpriority="high" decoding="async">')
+           + (f' width="{wh[0]}" height="{wh[1]}"' if wh else '') + f' alt="{alt}" title="{alt}" fetchpriority="high" decoding="async">')  # ronda 8 (#446): title = nombre del lugar
     page = page.replace(m.group(0), f'<section class="deal-hero"{rest}>{img}', 1)
     return page.replace('</head>', pre + HERO_CSS + '</head>', 1)
 
@@ -1658,6 +1722,7 @@ def main():
 {guide_block(x)}
 {f'<p>{guide_link}</p>' if guide_link else ''}
 {deal_days_p(dls, dmap[dls]['name'], 'es') if dls and dls in dmap else ''}
+{deal_route_p(f, 'es')}
 {faq_html(qa)}
 <p class="credit">{e(cred)}</p></article>
 <aside class="deal-card">
@@ -1848,10 +1913,10 @@ def main():
         ('navidad-2026', 'Navidad y fin de año 2026', 'Chollos de vuelos con salida entre el 18 de diciembre de 2026 y el 6 de enero de 2027.', lambda f_: '2026-12-18' <= (f_.get('ida') or '')[:10] <= '2027-01-06'),
         ('semana-santa-2027', 'Semana Santa 2027', 'Chollos con salida entre el 19 y el 28 de marzo de 2027 (Semana Santa: 25 al 28 de marzo).', lambda f_: '2027-03-19' <= (f_.get('ida') or '')[:10] <= '2027-03-28'),
         ('fin-de-semana', 'Escapadas de fin de semana baratas', 'Vuelos baratos para una escapada: viajes de ida y vuelta de 2 a 4 noches con salida jueves, viernes o sábado, del más barato al más caro.', lambda f_: f_.get('vuelta') and 2 <= nights(f_) <= 4 and datetime.date.fromisoformat(f_['ida'][:10]).weekday() in (3, 4, 5)),
-        ('menos-de-50-euros', 'Vuelos por menos de 50 €', 'Chollos de ida y vuelta por 50 € o menos.', lambda f_: (f_.get('precio') or 999) <= 50),
-        ('menos-de-100-euros', 'Vuelos por menos de 100 €', 'Chollos de ida y vuelta por 100 € o menos.', lambda f_: (f_.get('precio') or 999) <= 100),
+        ('menos-de-50-euros', 'Vuelos por menos de 50 € ida y vuelta', 'Vuelos por 50 euros o menos, ida y vuelta: chollos comprobados.', lambda f_: (f_.get('precio') or 999) <= 50),
+        ('menos-de-100-euros', 'Vuelos por menos de 100 € ida y vuelta', 'Vuelos por menos de 100 euros, ida y vuelta: chollos comprobados.', lambda f_: (f_.get('precio') or 999) <= 100),
         ('larga-distancia', 'Larga distancia por menos de 600 €', 'Chollos a otro continente por 600 € o menos, ida y vuelta.', lambda f_: (f_.get('precio') or 9999) <= 600 and f_.get('continente') and REAL_CONT.get(f_.get('continente')) != REAL_CONT.get(f_.get('origen_continente') or '', f_.get('origen_continente'))),
-        ('directos', 'Chollos de vuelos directos', 'Solo vuelos sin escalas.', lambda f_: f_.get('escalas') == 0),
+        ('directos', 'Chollos de vuelos directos', 'Vuelos directos baratos, sin escalas, de ida y vuelta.', lambda f_: f_.get('escalas') == 0),
     ]
     ideas_links = []
     for k_, h1_, desc_, fn_ in IDEAS:
@@ -1907,6 +1972,7 @@ def main():
             add_ = f" Presupuesto: {bud_} al día."
             if len(dsc.rstrip()) + len(add_) <= 200:
                 dsc = dsc.rstrip() + ('' if dsc.rstrip().endswith('.') else '.') + add_
+        dsc = guide_meta(p['n'], nd, attr, bud, 'es') or dsc
         summ = guide_summary(gh, p['n'], nd, sub, g.get('updated_at'), 'es')
         img_ld = guide_image_ld(p['s'], p['n'], 'es')
         hub_es = f"/vuelos/a/{p['s']}/" if os.path.isfile(os.path.join('vuelos', 'a', p['s'], 'index.html')) else ''
@@ -1923,6 +1989,7 @@ def main():
                "author": {"@id": ORG_ID}, "publisher": {"@id": ORG_ID}, "mainEntityOfPage": url, "isAccessibleForFree": True,
                "speakable": {"@type": "SpeakableSpecification", "cssSelector": [".g-sum", "h1"]}}
         art["headline"] = ttl[:110]
+        art["description"] = dsc[:300]  # ronda 8: la misma descripción que la meta
         art["image"] = {"@id": img_ld["@id"]}
         dest_ld["image"] = {"@id": img_ld["@id"]}
         dest_ld["@id"] = url + '#destino'
@@ -1971,7 +2038,8 @@ def main():
     tiles = ''.join(f'<a class="dc" href="/destinos/{p["s"]}/#hoteles"><div class="dc-img" ' + (f'style="background-image:url(/hlc/img/cities/{p["s"]}-800.jpg)"' if i_ < 6 else f'data-bg="/hlc/img/cities/{p["s"]}-800.jpg"') + f'><span class="dc-city">{e(p["n"])}</span></div><div class="dc-b"><div><div class="dc-r">3 hoteles en {e(p["n"])}</div><div class="dc-m">Económico · calidad-precio · lujo</div></div></div></a>' for i_, (p, c_) in enumerate(hl))
     hp = head(title='Dónde dormir barato: los 3 mejores hoteles de cada destino · Happy Low Cost', desc=f'Un hotel económico, uno con la mejor calidad-precio y uno de lujo en {len(hl)} destinos, elegidos por nota real de huéspedes.',
               canonical=f'{SITE}/hoteles/', og_type='website', og_image=f'{SITE}/hlc/brand/og-default.jpg',
-              extra_head=f'<link rel="stylesheet" href="/hlc/home.css?v=12"><link rel="alternate" hreflang="es" href="{SITE}/hoteles/"><link rel="alternate" hreflang="en" href="{SITE}/en/hotels/"><link rel="alternate" hreflang="x-default" href="{SITE}/hoteles/">', body_class='chollos')
+              extra_head=f'<link rel="stylesheet" href="/hlc/home.css?v=12"><link rel="alternate" hreflang="es" href="{SITE}/hoteles/"><link rel="alternate" hreflang="en" href="{SITE}/en/hotels/"><link rel="alternate" hreflang="x-default" href="{SITE}/hoteles/">'
+              + ld_script([hotels_ld(hl, 'es')]), body_class='chollos')
     hp += f'''<main class="sec" style="padding-top:26px"><div class="wrap"><div class="sec-h"><div><div class="kicker">Hoteles</div><h1 class="x-h1">Dónde dormir en cada destino</h1><p>Para cada destino, 3 hoteles: el económico, el de mejor calidad-precio y uno de lujo, elegidos por top3hotels.com según la nota real de los huéspedes. {len(hl)} destinos.</p></div></div>
 <div class="dc-grid">{tiles}</div></div></main></body></html>'''
     os.makedirs('hoteles', exist_ok=True)

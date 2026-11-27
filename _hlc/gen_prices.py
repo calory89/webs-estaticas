@@ -166,6 +166,18 @@ def page_shell(en, title, desc, url, alt_url, ld, body_class, og=None, og_alt=No
                   extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12">' + alt + G.ld_script(ld), body_class=body_class)
 
 
+# Ronda 8: nombres cortos que también se buscan ("flights to vegas" 71 impr. pos. 8,4 en /en/flights/to/las-vegas/; "flights to orlando from nyc")
+HUB_ALIAS = {'Las Vegas': 'Vegas', 'Nueva York': 'NYC', 'New York': 'NYC', 'Los Ángeles': 'LA', 'Los Angeles': 'LA', 'Ciudad de México': 'CDMX', 'Mexico City': 'CDMX',
+             'Sídney': 'Sydney', 'Reikiavik': 'Reykjavik', 'Múnich': 'Munich', 'Zúrich': 'Zurich'}
+
+
+def alias_txt(name, en):
+    a = HUB_ALIAS.get(name)
+    if not a:
+        return ''
+    return f' {name} is also known as {a}.' if en else f' {name} también se conoce como {a}.'
+
+
 def QA_BOX(T, txt):
     return (f'<p class="qa" style="background:#FFF6E0;border-left:4px solid #FFC531;padding:12px 14px;border-radius:10px;max-width:820px">'
             f'<b>{T("Respuesta rápida:", "Quick answer:")}</b> {e(txt)}</p>')
@@ -323,6 +335,20 @@ def dest_page(d, lst, meses, en, en_slug, guide):
                 qas.append((f'What is the cheapest flight to {name} from Europe?', f'From the European cities we track, the cheapest return to {name} was from {oname(eu_[0])} at {eu_[0]["price_from"]} € (search on {fd((eu_[0].get("facts") or {}).get("consultado"), True)}). Next: ' + ', '.join(f'{oname(r_)} ({r_["price_from"]} €)' for r_ in eu_[1:]) + '.' if len(eu_) > 1 else f'From the European cities we track, the cheapest return to {name} was from {oname(eu_[0])} at {eu_[0]["price_from"]} €.'))
             else:
                 qas.append((f'¿Cuál es el vuelo más barato a {name} desde Europa?', f'Desde las ciudades europeas que vigilamos, el ida y vuelta más barato a {name} salía de {oname(eu_[0])} por {eu_[0]["price_from"]} € (consulta del {fd((eu_[0].get("facts") or {}).get("consultado"))}). Después: ' + ', '.join(f'{oname(r_)} ({r_["price_from"]} €)' for r_ in eu_[1:]) + '.' if len(eu_) > 1 else f'Desde las ciudades europeas que vigilamos, el ida y vuelta más barato a {name} salía de {oname(eu_[0])} por {eu_[0]["price_from"]} €.'))
+    # ronda 8: "are there last-minute cheap flights to las vegas?" (GSC, pos. 4): la salida más cercana a la fecha de consulta entre las rutas baratas
+    def _lead_d(r_):
+        try:
+            f_ = r_.get('facts') or {}
+            return (datetime.date.fromisoformat((f_.get('ejemplo_ida') or '')[:10]) - datetime.date.fromisoformat((f_.get('consultado') or '')[:10])).days
+        except Exception:
+            return None
+    _lm = sorted(((_lead_d(r_), r_) for r_ in lst if (_lead_d(r_) or -1) >= 0), key=lambda t_: (t_[0], t_[1]['price_from']))
+    if _lm and _lm[0][0] <= 21:
+        _d0, _r0 = _lm[0]
+        if en:
+            qas.append((f'Are there last-minute cheap flights to {name}?', f'In our data, the cheap fare departing soonest after the search was from {oname(_r0)}: {_r0["price_from"]} € return, departing {_d0} day{"s" if _d0 != 1 else ""} after we checked ({fd((_r0.get("facts") or {}).get("consultado"), True)}). Last-minute prices change fast: set a free alert.'))
+        else:
+            qas.append((f'¿Hay vuelos baratos de última hora a {name}?', f'En nuestros datos, la salida barata más próxima a la consulta era desde {oname(_r0)}: {_r0["price_from"]} € ida y vuelta, con salida {_d0} día{"s" if _d0 != 1 else ""} después de consultarla ({fd((_r0.get("facts") or {}).get("consultado"))}). Los precios de última hora cambian rápido: crea una alerta gratis.'))
     # descripción para el clic (CTR): precio, ciudades, directos, mes más barato y fecha de consulta
     if en:
         desc = (f'{name} flights from €{r1["price_from"]} return ({oname(r1)})' + (f' and €{r0["price_from"]} from {oname(r0)}' if r0 is not r1 else '')
@@ -354,7 +380,7 @@ def dest_page(d, lst, meses, en, en_slug, guide):
     out = page_shell(en, title + ' · Happy Low Cost', desc, url, url_es if en else url_en, ld, 'precios', og=(f'{SITE}/hlc/img/cities/{d}-og.jpg' if os.path.exists(f'hlc/img/cities/{d}-og.jpg') else None), og_alt=(f'Photo of {name}' if en else f'Foto de {name}'))
     out += (f'<main class="sec" style="padding-top:22px"><div class="wrap">{crumbs_html(crumbs, en)}'
             f'<div class="kicker">{T("Precios reales, consultados en Kiwi.com", "Real prices, checked on Kiwi.com")}</div><h1 class="x-h1">{e(title)}</h1>'
-            + QA_BOX(T, qa_) +
+            + QA_BOX(T, qa_ + alias_txt(name, en)) +
             f'<p style="font-size:18px;max-width:820px">{e(lead)}</p>{stats}'
             f'<div class="hlc-row" style="margin:18px 0 6px">{gl}{hot}<a class="hlc-btn o" href="{T("/alertas/", "/en/deals/")}">{T("Avísame de chollos a " + name, "Today’s deals")}</a></div>'
             f'<h2>{T("Vuelos baratos a " + name + " desde cada ciudad", "Cheap flights to " + name + " from each city")}</h2><input type="search" class="pm-q" placeholder="{T("Filtra por ciudad de salida", "Filter by departure city")}" aria-label="{T("Filtrar", "Filter")}">'
@@ -472,7 +498,7 @@ def orig_page(o, lst, en, en_slug):
     out = page_shell(en, title + ' · Happy Low Cost', desc, url, url_es if en else url_en, ld, 'precios')
     out += (f'<main class="sec" style="padding-top:22px"><div class="wrap">{crumbs_html(crumbs, en)}'
             f'<div class="kicker">{T("Precios reales, consultados en Kiwi.com", "Real prices, checked on Kiwi.com")}</div><h1 class="x-h1">{e(title)}</h1>'
-            + QA_BOX(T, qa_) +
+            + QA_BOX(T, qa_ + alias_txt(oname, en)) +
             f'<p style="font-size:18px;max-width:820px">{e(lead)}</p>'
             f'<div class="pm-stats"><div><b>{lst[0]["price_from"]} €</b><span>{T("el destino más barato", "cheapest destination")}</span></div><div><b>{len(under)}</b><span>{T("destinos por menos de 100 €", "destinations under 100 €")}</span></div><div><b>{len(direct)}</b><span>{T("con vuelo directo", "with direct flights")}</span></div><div><b>{len(lst)}</b><span>{T("destinos", "destinations")}</span></div></div>'
             f'<div class="hlc-row" style="margin:18px 0 6px"><a class="hlc-btn o" href="{T("/chollos/?aero=" + os_, "/en/deals/")}">{T("Chollos de hoy desde " + oname, "Today’s deals")}</a>' + ('' if en else '<a class="hlc-btn o" href="/alertas/">Crear alerta gratis</a>') + '</div>'

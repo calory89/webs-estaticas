@@ -1,6 +1,6 @@
 # Happy Low Cost: rutas de vuelos baratos con precios reales
 
-> 891 rutas. Precios de ida y vuelta en turista para 1 adulto, consultados en Kiwi.com; "lo habitual" es la mediana de los precios que vimos. Generado 2026-11-27T03:41Z. Licencia CC BY 4.0: cita "Happy Low Cost (happylowcost.com)". JSON: https://www.happylowcost.com/vuelos/feed.json
+> 891 rutas. Precios de ida y vuelta en turista para 1 adulto, consultados en Kiwi.com; "lo habitual" es la mediana de los precios que vimos. Generado 2026-11-27T04:39Z. Licencia CC BY 4.0: cita "Happy Low Cost (happylowcost.com)". JSON: https://www.happylowcost.com/vuelos/feed.json
 
 - [Alicante → Milán](https://www.happylowcost.com/vuelos/alicante-milan/): desde 38 € ida y vuelta, lo habitual 39 €, directo, Wizz Air Malta, consultado el 2026-11-22
 - [Alicante → Venecia](https://www.happylowcost.com/vuelos/alicante-venecia/): desde 40 € ida y vuelta, lo habitual 48 €, directo, Ryanair, consultado el 2026-11-23

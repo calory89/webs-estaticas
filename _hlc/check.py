@@ -287,6 +287,7 @@ if _bad:
 
 # ---------- ronda 7 (#251, #304): títulos duplicados entre páginas indexables y URLs de sitemap sin ningún enlace interno ----------
 _titles, _linked = {}, set()
+_adj = {}
 for _d in ('vuelos', 'destinos', 'chollos', 'en'):
     for _r, _ds, _fs in os.walk(_d):
         if 'index.html' not in _fs:
@@ -301,12 +302,20 @@ for _d in ('vuelos', 'destinos', 'chollos', 'en'):
             _m = TIT.search(_hd)
             if _m:
                 _titles.setdefault(_m.group(1).strip(), []).append(_p)
+        _u = '/' + _r.replace(os.sep, '/').strip('/') + '/'
+        _adj.setdefault(_u, set())
         for _h in HREF.findall(_s):
-            _linked.add(unquote(_h.split('#')[0].split('?')[0]))
+            _hh = unquote(_h.split('#')[0].split('?')[0])
+            _linked.add(_hh)
+            _adj[_u].add(_hh)
 for _p in glob.glob('*.html') + ['index.html', 'en/index.html']:
     if os.path.isfile(_p):
+        _u = '/' if _p == 'index.html' else ('/en/' if _p == 'en/index.html' else None)
         for _h in HREF.findall(open(_p, encoding='utf-8', errors='ignore').read()):
-            _linked.add(unquote(_h.split('#')[0].split('?')[0]))
+            _hh = unquote(_h.split('#')[0].split('?')[0])
+            _linked.add(_hh)
+            if _u:
+                _adj.setdefault(_u, set()).add(_hh)
 _dup = [(t, ps) for t, ps in _titles.items() if len(ps) > 1]
 if _dup:
     warns.append(f'{len(_dup)} título(s) repetidos en páginas indexables, p. ej. "{_dup[0][0]}" en {", ".join(_dup[0][1][:3])}')
@@ -318,6 +327,25 @@ for _sm in ('vuelos-sitemap.xml', 'flights-sitemap.xml', 'destinos-sitemap.xml',
                 _orph.append(_loc)
 if _orph:
     warns.append(f'{len(_orph)} URL(s) de los sitemaps sin ningún enlace interno (huérfanas), p. ej. ' + ', '.join(_orph[:5]))
+
+# ---------- ronda 8 (#303): profundidad de clic desde la portada (ES y EN) de las URLs de los sitemaps de la web nueva ----------
+_depth = {'/': 0, '/en/': 0}
+_q = ['/', '/en/']
+while _q:
+    _x = _q.pop(0)
+    for _y in _adj.get(_x, ()):
+        if _y not in _depth and _y.startswith('/'):
+            _depth[_y] = _depth[_x] + 1
+            _q.append(_y)
+_deep = []
+for _sm in ('vuelos-sitemap.xml', 'flights-sitemap.xml', 'destinos-sitemap.xml', 'en-sitemap.xml'):
+    if os.path.exists(_sm):
+        for _loc in re.findall(r'<loc>\s*https://www\.happylowcost\.com(/[^<\s]*)\s*</loc>', open(_sm, encoding='utf-8', errors='ignore').read()):
+            if _depth.get(_loc, 99) > 3:
+                _deep.append((_loc, _depth.get(_loc, 99)))
+DEPTH_STATS = {'urls_mas_de_3_clics': len(_deep), 'nodos': len(_depth)}
+if _deep:
+    warns.append(f'{len(_deep)} URL(s) de los sitemaps a más de 3 clics de la portada, p. ej. ' + ', '.join(f'{u} ({d if d < 99 else "sin camino"})' for u, d in _deep[:5]))
 
 # ---------- ronda 7 (#321): alarma si los sitemaps se vacían (un fallo del feed puede dejar a Google sin rutas) ----------
 SM_MIN = {'vuelos-sitemap.xml': 400, 'flights-sitemap.xml': 400, 'destinos-sitemap.xml': 150, 'en-sitemap.xml': 150, 'paginas-sitemap.xml': 10}
@@ -336,7 +364,7 @@ try:
 except Exception as _ex:
     errors.append(f'no se pudo leer sitemap_index.xml: {_ex}')
 
-print(json.dumps({'paginas': len(set(scope)), 'ficheros': nfiles, 'reglas': nrules, 'errores': len(errors), 'avisos': len(warns)}, ensure_ascii=False))
+print(json.dumps({'paginas': len(set(scope)), 'ficheros': nfiles, 'reglas': nrules, 'errores': len(errors), 'avisos': len(warns), 'profundidad': DEPTH_STATS}, ensure_ascii=False))
 for w in warns:
     print('AVISO', w)
 for e in errors[:60]:
