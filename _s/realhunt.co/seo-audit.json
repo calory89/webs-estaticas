@@ -7,21 +7,21 @@
   "duplicate_homes": 2,
   "title_over_60": 17,
   "desc_over_155": 0,
-  "desc_under_120": 7,
-  "desc_out_of_range": 7,
+  "desc_under_120": 0,
+  "desc_out_of_range": 0,
   "duplicate_titles": 0,
   "duplicate_descriptions": 0,
   "h1_not_one": 0,
   "broken_links": 0,
   "healed_links": 0,
   "orphans": 0,
-  "inlinks_under_3": 46,
+  "inlinks_under_3": 0,
   "hreflang_problems": 0,
   "pages_with_hreflang": 4272,
-  "thin_under_150_words": 29,
+  "thin_under_150_words": 24,
   "mixed_content": 0,
   "no_lang": 0,
-  "with_lastmod": 4237,
+  "with_lastmod": 4254,
   "redirects": 1893,
   "moved_stubs": 273
  },
@@ -204,7 +204,7 @@
    "noindex": 1,
    "median_words": 1568,
    "title_over_60": 2,
-   "desc_out_of_range": 6,
+   "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/developers": {
@@ -420,7 +420,7 @@
    "noindex": 1,
    "median_words": 1522,
    "title_over_60": 4,
-   "desc_out_of_range": 1,
+   "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/es/editorial-policy": {
@@ -616,10 +616,10 @@
    "pages": 33,
    "indexable": 33,
    "noindex": 0,
-   "median_words": 676,
+   "median_words": 724,
    "title_over_60": 0,
    "desc_out_of_range": 0,
-   "inlinks_under_3": 23
+   "inlinks_under_3": 0
   },
   "/es/sources": {
    "pages": 1,
@@ -958,10 +958,10 @@
    "pages": 34,
    "indexable": 34,
    "noindex": 0,
-   "median_words": 564,
+   "median_words": 600,
    "title_over_60": 0,
    "desc_out_of_range": 0,
-   "inlinks_under_3": 23
+   "inlinks_under_3": 0
   },
   "/sources": {
    "pages": 1,
@@ -1100,54 +1100,6 @@
   "missing": {}
  },
  "lists": {
-  "inlinks_under_3": [
-   "/sitemap/bulgaria (2)",
-   "/sitemap/canada (2)",
-   "/sitemap/colombia (2)",
-   "/sitemap/cyprus (2)",
-   "/sitemap/czech-republic (2)",
-   "/sitemap/denmark (2)",
-   "/sitemap/dominican-republic (2)",
-   "/sitemap/france (2)",
-   "/sitemap/germany (2)",
-   "/sitemap/greece (2)",
-   "/sitemap/ireland (2)",
-   "/sitemap/italy (2)",
-   "/sitemap/japan (2)",
-   "/sitemap/mexico (2)",
-   "/sitemap/netherlands (2)",
-   "/sitemap/poland (2)",
-   "/sitemap/portugal (2)",
-   "/sitemap/spain (2)",
-   "/sitemap/sweden (2)",
-   "/sitemap/switzerland (2)",
-   "/sitemap/united-kingdom (2)",
-   "/sitemap/united-states (2)",
-   "/sitemap/uruguay (2)",
-   "/es/sitemap/germany (2)",
-   "/es/sitemap/bulgaria (2)",
-   "/es/sitemap/canada (2)",
-   "/es/sitemap/cyprus (2)",
-   "/es/sitemap/colombia (2)",
-   "/es/sitemap/denmark (2)",
-   "/es/sitemap/dominican-republic (2)",
-   "/es/sitemap/spain (2)",
-   "/es/sitemap/united-states (2)",
-   "/es/sitemap/france (2)",
-   "/es/sitemap/greece (2)",
-   "/es/sitemap/ireland (2)",
-   "/es/sitemap/italy (2)",
-   "/es/sitemap/japan (2)",
-   "/es/sitemap/mexico (2)",
-   "/es/sitemap/netherlands (2)",
-   "/es/sitemap/poland (2)",
-   "/es/sitemap/portugal (2)",
-   "/es/sitemap/united-kingdom (2)",
-   "/es/sitemap/czech-republic (2)",
-   "/es/sitemap/sweden (2)",
-   "/es/sitemap/switzerland (2)",
-   "/es/sitemap/uruguay (2)"
-  ],
   "thin_under_150_words": [
    "/about",
    "/agents",
@@ -1171,13 +1123,8 @@
    "/weather",
    "/sitemap/colombia",
    "/sitemap/czech-republic",
-   "/sitemap/ireland",
-   "/sitemap/uruguay",
    "/sitemap/new-builds",
-   "/es/sitemap/colombia",
-   "/es/sitemap/ireland",
-   "/es/sitemap/czech-republic",
-   "/es/sitemap/uruguay"
+   "/es/sitemap/czech-republic"
   ],
   "title_over_60": [
    "/blog/bali-phuket-tulum-batumi-400-new-builds-scored",
@@ -1201,15 +1148,6 @@
   "title_under_20": [
    "/contact",
    "/sitemap"
-  ],
-  "desc_under_120": [
-   "/deal/DclLv7qjKAR",
-   "/deal/es-murcia-80k-47450",
-   "/deal/es-murcia-85k-23435",
-   "/deal/es-roses-97k-57061",
-   "/deal/galera-hillside-cave-84000",
-   "/deal/little-river-92471",
-   "/es/deal/es-roses-97k-57061"
   ]
  },
  "spanish": {
