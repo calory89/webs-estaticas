@@ -11,7 +11,7 @@ const FQ = {};
 async function file0(env, p) {
 const m = MEMO[p]; if (m && m.v && Date.now() - m.t < 600000) return m.v;
 let v = null;
-try { const r = await env.ASSETS.fetch(new Request(ORIGIN + $q.a + p)); if (r.ok) v = await r.json(); } catch (e) { v = null; }
+for (let i = 0; i < 2 && !v; i++) try { const r = await env.ASSETS.fetch(new Request(ORIGIN + $q.a + p)); if (r.ok) v = await r.json(); } catch (e) { v = null; }   // n40 d15: one retry
 if (!v) { try { const r = await fetch(ORIGIN + p, { cf: { cacheTtl: 600 } }); if (r.ok) v = await r.json(); } catch (e) { v = null; } }
 MEMO[p] = { t: Date.now(), v }; return v;
 }
@@ -1137,11 +1137,13 @@ $q.ak + P39(l) + $q.re + all.map(x => encodeURIComponent(x[0])).join(',') + $q.d
 function buyRow(l, r, cur) {
 return $q.rg + dir(l) + '>' + [[$q.pb, 'b_q_l'], [$q.pH, 'b_w_l']].filter(x => x[0] !== cur).map(x => lnk(t39u(l, r[1]) + x[0] + '/', t(l, x[1]))).join($t.DOT) + (r[5] ? $t.DOT + lnk(P39(l) + $q.aU + r[5] + $q.pV, t(l, $q.qL)) : '') + $t.DOT + lnk(P39(l) + $q.qF, t(l, $q.qG)) + (cur ? $t.DOT + lnk(t39u(l, r[1]), r[2]) : '') + '</p>';
 }
+const NOST = r => { try { const o = new Response(r.body, r); o.headers.set('cache-control', 'no-store'); o.headers.set('x-kb-partial', '1'); return o; } catch (e) { return r; } };   // n40 d15: a page missing a section after a failed read is never kept by the browser
 export async function inject(req, u, env, r) {
+let deg = false;
 try {
 if (!/text\/html/.test(r.headers.get($q.cH) || '')) return r;
 const m = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?(.*)$/.exec(u.pathname), l = m[1] || 'en', p = m[2];
-if (!(await load(env))) return r;
+if (!(await load(env))) return NOST(r);
 const add = []; let mm;
 if ((p === $q.rh || p === 'yc/') && l === 'en') { add.push(['main', $q.ri, shipped(l)]); if (p === 'yc/') add.push([$q.rj, 'after', $s.k35 + esc(tf(l, $q.rk, { d: fd(D.built, l), n: nf(ITEMS.length, l) })) + $q.rl + esc(t(l, $q.rm)) + $t.k163 + esc(t(l, $q.rn)) + $q.aj]); }
 else if (p === $q.ro) { await regMap(env);
@@ -1150,7 +1152,7 @@ return new HTMLRewriter().on($q.rp, { element(e) { e.setAttribute($q.rq, seTpl(l
 }
 else if (p === '') { const h = await homeBits(l, env); if (h) { add.push([$q.rs, 'after', h[0]]); add.push([$q.rt, $q.ru, h[1]]); } }
 else if (p === $q.rv) add.push([$q.rw, $q.rx, await progBlock(l, env)]);
-else if ((mm = /^m\/([^/.]{2,60})\/$/.exec(p))) { const mk = mBySlug(mm[1]); let kk = null; if (mk) try { kk = await (await import('./kbx_n29i.js')).mkKey(env, mm[1], l); } catch (e) {} const dh = mk ? mkDash(l, mk, kk) : ''; if (dh) add.push(l === 'en' ? [$q.ry, $q.rx, dh] : [$q.rz, $q.rx, dh]); const m2 = mk || [...IX.byMk.keys()].find(k => slugM(k) === mm[1]), h = mk ? mkSection(l, mk) + kpMarket(l, mk) + $q.rA + areaBlock(l, mk) + devBlock(l, mk) + nextBlock(l, mk) + olBlock(l, mk, await file(env, $q.rB)) + $q.cN : m2 ? $q.rA + devBlock(l, m2) + $q.cN : ''; if (!h) return r; add.push([$q.rC, $q.rx, h]); }
+else if ((mm = /^m\/([^/.]{2,60})\/$/.exec(p))) { const mk = mBySlug(mm[1]); let kk = null; if (mk) try { kk = await (await import('./kbx_n29i.js')).mkKey(env, mm[1], l); } catch (e) { deg = true; } const dh = mk ? mkDash(l, mk, kk) : ''; if (dh) add.push(l === 'en' ? [$q.ry, $q.rx, dh] : [$q.rz, $q.rx, dh]); const m2 = mk || [...IX.byMk.keys()].find(k => slugM(k) === mm[1]), h = mk ? mkSection(l, mk) + kpMarket(l, mk) + $q.rA + areaBlock(l, mk) + devBlock(l, mk) + nextBlock(l, mk) + olBlock(l, mk, await file(env, $q.rB).then(o => (o || (deg = true), o))) + $q.cN : m2 ? $q.rA + devBlock(l, m2) + $q.cN : ''; if (!h) return r; add.push([$q.rC, $q.rx, h]); }
 else if ((mm = /^developers\/([a-z0-9-]{2,90})\/$/.exec(p))) { const h = devSection(l, mm[1]); if (!h) return r; const dc = devCard(l, mm[1]); if (dc) add.push([$q.rD, 'after', dc]); add.push([$q.rE, $q.ri, h + peers(l, mm[1]) + $q.rF + dir(l) + $q.rG + pre(l) + $q.aU + mm[1] + $q.qK + esc(t(l, $q.qL)) + $q.aj]); }
 else if ((mm = /^projects\/([a-z0-9-]{1,90})\/$/.exec(p))) {
 const x = IX.bySlug.get(mm[1]); if (!x) return r;
@@ -1161,7 +1163,7 @@ add.push([$q.rK, $q.ri, $s.STY + $q.rF + dir(l) + $q.rG + recU(l, x[1]) + '">' +
 if (D.mk[x[3]]) add.push([$q.rL, $q.ri, $q.rF + dir(l) + $q.rG + recU(l, x[1]) + $q.rM + esc(tf(l, 'inj_m', { m: x[3] })) + $q.aj + supplyLine(l, x) + cmpBlock(l, x)]);
 } else if (p === 'data/' || p === $q.rN || p === $q.rO) add.push(['main', $q.ri, $q.hc + dir(l) + '>' + $s.STY + $q.rP + (l === 'en' || p === 'data/' ? '' : $q.n + pre(l) + $q.hp + esc(t(l, $q.rQ)) + $q.lm) + $q.n + pre(l) + $q.aY + esc(t(l, $q.aZ)) + $q.lm + esc(t(l, 's5_s')) + $t.k165 + pre(l) + $q.rR + esc(t(l, 's8_t')) + $t.k166 + pre(l) + $q.ba + esc(t(l, 'ch_h1')) + $t.k167 + pre(l) + $q.bk + esc(t(l, 'mc_h1')) + $t.k168 + pre(l) + $q.me + esc(t(l, 'kr_h1')) + $t.k169 + esc(t(l, 'csv_l')) + '</a>' + $t.DOT + $q.n + n38u(l, $q.fy) + '">' + esc(t(l, 'pl_h1')) + '</a>' + $t.DOT + $q.n + n38u(l, $q.fA) + '">' + esc(t(l, 'dl_h1')) + '</a>' + $t.DOT + $q.n + n38u(l, $q.nj) + '">' + esc(t(l, 'dv_h1')) + '</a>' + $t.DOT + $q.n + n38u(l, $q.rS) + '">' + esc(tf(l, 'ms_h1', { m: 'Dubai' })) + '</a>' + $t.DOT + $q.n + pre(l) + $q.nx + esc(t(l, 'ss_h')) + $q.fp]);
 if (p === 'data/' || p === $q.rN || p === $q.rO || p === $q.rh) { const h = $q.hc + dir(l) + '>' + $s.STY + n39Links(l) + $q.fL, mi = add.find(a => a[0] === 'main'); if (mi) mi[2] += h; else add.push(['main', $q.ri, h]); }
-if (!add.length) return r;
+if (!add.length) return deg ? NOST(r) : r;
 let out = new HTMLRewriter();
 const tail = [];
 for (const [sel, , h] of add) {
@@ -1170,8 +1172,8 @@ if (sel === 'main') tail.push([st, h]);
 else { const how = add.find(a => a[0] === sel)[1]; out = out.on(sel, { element(e) { if (!st.done) { st.done = true; e[how](h, { html: true }); } } }); if (how === $q.rx) tail.push([st, h]); }
 }
 if (tail.length) out = out.on('main', { element(e) { e.onEndTag(end => { for (const [st, h] of tail) if (!st.done) { st.done = true; end.before(h, { html: true }); } }); } });
-return out.transform(r);
-} catch (e) { return r; }
+return deg ? NOST(out.transform(r)) : out.transform(r);
+} catch (e) { return NOST(r); }
 }
 export async function handle(req, u, env, ctx, shell) {
 const r = await handle0(req, u, env, ctx, shell);

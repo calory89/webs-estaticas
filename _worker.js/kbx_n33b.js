@@ -136,7 +136,7 @@ if (m[3] && ed === last) { pg = reportPage(lang, E, ed, true); pg = Object.assig
 else { const k = lang + '|r|' + ed.edition + '|' + E.length + '|' + !m[3]; pg = BODY.get(k); if (!pg) { pg = reportPage(lang, E, ed, !m[3]); BODY.set(k, pg); } }
 }
 } catch (e) { return null; }
-if (BODY.size > 400) BODY.clear();
+if (BODY.size >= 40) BODY.delete(BODY.keys().next().value);
 return trustRender(lang, Object.assign({}, pg, { body: pg.body.replace($q.L, $s.CSS + $q.L) }), shell);
 }
 const apa40 = (lang, ti, url, d) => { let ds = d; try { ds = d.slice(0, 4) + ', ' + new Intl.DateTimeFormat(lang === 'en' ? 'en-US' : LOC[lang] || 'en-GB', { month: 'long', day: $q.b, timeZone: 'UTC' }).format(new Date(d + $q.cq)); } catch (e) {} return $q.cr + ds + '). ' + ti + '. ' + url; };

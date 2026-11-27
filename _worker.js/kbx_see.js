@@ -1,19 +1,13 @@
 // comments: _notes/kolaboro-worker-comments.txt
 const $q = TB.kbx_see__q, $s = TB.kbx_see__s, $t = TB.kbx_see__t;   // n40 k46: short names for this module's string tables (strings in /data/i18n/k19s.json, k17s.json, k46s.json)
 import { TB } from './kbx_strings.js';
-const IF = (globalThis.__kbIF = globalThis.__kbIF || {}); function sf(k, f) { if (IF[k]) return IF[k]; const p = f(); IF[k] = p; const d = () => { if (IF[k] === p) delete IF[k]; }; p.then(d, d); return p; }   // n40 d12
+import { jget } from './kbx_jget.js';
 const ORIGIN = 'https://kolaboro.com';
 const ML = '4.7.1', ML_CDN = 'https://cdnjs.cloudflare.com/ajax/libs/maplibre-gl/' + ML + '/';
-let MEMO = {};
-const loadOne = (env, name) => sf('see:' + name, () => loadOne0(env, name));
-async function loadOne0(env, name) {
-const m = MEMO[name]; if (m && (m.a || Date.now() - m.t < 600000)) return m.v;
-let r = null, a = false;
-try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + $q.a + name)); a = !!(r && r.ok); } catch (e) { r = null; }
-if (!r || !r.ok) { try { r = await fetch(ORIGIN + $q.b + name + '?w=1', { cf: { cacheTtl: 300, cacheEverything: true } }); } catch (e) { r = null; } }
-const v = r && r.ok ? await r.json().catch(() => null) : null;
-MEMO[name] = { t: Date.now(), v, a: a && v != null }; return v;
-}
+const SHARED = (globalThis.__kbJson = globalThis.__kbJson || {});
+const loadOne = (env, name) => { const m = SHARED[name];   // n40 d15: the shared copy (kbx_jget.js), not a private one
+  if (m && m.v != null && (m.a || Date.now() - m.t < 600000)) return Promise.resolve(m.v);
+  return jget(env, name, ORIGIN + $q.a + name, ORIGIN + $q.b + name, 300).then(o => o.v, () => null); };
 export async function seeData(env) {
 const [ph, d3, si] = await Promise.all([loadOne(env, $q.c), loadOne(env, $q.d), loadOne(env, $q.e)]);
 if (si && si.see) S = si.see;

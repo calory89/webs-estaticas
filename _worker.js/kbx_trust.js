@@ -270,7 +270,7 @@ export async function page(req, u, env, ctx, shell, inner) {
     try { const N = await import('./kbx_named.js'), nx = await N.data(env); if (nx.ot && Object.keys(nx.ot).length) OTP = nx.ot; NXB = nx.bySlug; } catch (e) {}
     try { const N37 = await import('./kbx_n37u.js'); PMX = (await N37._r8u.load(env)) ? N37._r8u : null; } catch (e) { PMX = null; }
     const slug = kind.split('/')[2] || null, k = lang + '|p|' + (slug || '#') + '|' + ix.v + '|' + (OTP ? 1 : 0) + (PMX ? PMX.built() + PMX.allChanges().length : '');
-    pg = BODY.get(k); if (!pg) { pg = slug ? pressPlace(ix, slug, lang) : pressHub(ix, lang); if (!pg) return null; if (BODY.size > 900) BODY.clear(); BODY.set(k, pg); }
+    pg = BODY.get(k); if (!pg) { pg = slug ? pressPlace(ix, slug, lang) : pressHub(ix, lang); if (!pg) return null; if (BODY.size >= 40) BODY.delete(BODY.keys().next().value); BODY.set(k, pg); }
   } else {
     let D; try { D = await progData(env, inner); } catch (e) { return null; }
     if (kind === $q.eR) { const sm = await sitemapUrls(env, inner, ctx); const rec = sm == null && D.days[0] && D.days[0].sitemap_urls ? D.days[0] : null; pg = progressPage(D, lang, sm != null ? sm : rec ? rec.sitemap_urls : null, rec && rec.d); }

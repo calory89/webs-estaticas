@@ -248,8 +248,9 @@ const cvKind = p => /^\/embed\//.test(p.p) ? 'embed' : /^\/(api|mcp)|\.json/.tes
 function sriOf(html) { const o = []; for (const m of html.matchAll(/<(script|link)\b[^>]*>/gi)) { const tg = m[0], src = (/\s(?:src|href)="(https?:\/\/[^"]+)"/i.exec(tg) || [])[1]; if (!src || /^https:\/\/(www\.)?kolaboro\.com\//.test(src)) continue; if (/^<link/i.test(tg) && !/rel="(stylesheet|modulepreload)"/i.test(tg)) continue; o.push([src.split('?')[0], /\sintegrity="sha(256|384|512)-/i.test(tg)]); } return o; }
 async function sriJs(env) {
 const M = new Map(), td = new TextDecoder();
-await Promise.all($t.o_SRI_JS.map(async f => { const b = await rawFile(env, f); if (!b) return; const s = td.decode(b);
-for (const m of s.matchAll(/https:\/\/(?:cdnjs\.cloudflare\.com|unpkg\.com|cdn\.jsdelivr\.net)\/[^"' )`]+/g)) { const u = m[0].replace(/@'$/, ''), w = s.slice(Math.max(0, m.index - 250), m.index + m[0].length + 400), ok = /sha(256|384|512)-[A-Za-z0-9+/=]{40,}/.test(w); (M.get(u) || M.set(u, { n: new Set(), ok: true, f: {} }).get(u)).f[f] = ((M.get(u).f[f]) || ok); } }));
+const BF = await Promise.all($t.o_SRI_JS.map(f => rawFile(env, f)));   // n40 d15: read together, then scanned in list order, so the table order no longer depends on which read ends first
+$t.o_SRI_JS.forEach((f, i) => { const b = BF[i]; if (!b) return; const s = td.decode(b);
+for (const m of s.matchAll(/https:\/\/(?:cdnjs\.cloudflare\.com|unpkg\.com|cdn\.jsdelivr\.net)\/[^"' )`]+/g)) { const u = m[0].replace(/@'$/, ''), w = s.slice(Math.max(0, m.index - 250), m.index + m[0].length + 400), ok = /sha(256|384|512)-[A-Za-z0-9+/=]{40,}/.test(w); (M.get(u) || M.set(u, { n: new Set(), ok: true, f: {} }).get(u)).f[f] = ((M.get(u).f[f]) || ok); } });
 for (const o of M.values()) { for (const f in o.f) { o.n.add(f); o.ok = o.ok && o.f[f]; } }
 return M;
 }

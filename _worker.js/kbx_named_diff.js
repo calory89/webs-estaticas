@@ -10,22 +10,26 @@ const IF = (globalThis.__kbIF = globalThis.__kbIF || {}); function sf(k, f) { if
 const ORIGIN = 'https://kolaboro.com';
 const SHARDS = 3;
 const shardOf = id => [...id].reduce((a, c) => a + c.charCodeAt(0), 0) % SHARDS;
-const MEMO = {};
+const MEMO = {}, SH = (globalThis.__kbJson = globalThis.__kbJson || {}), phk = k => 'page-history-' + k + '.json';
 const shard = (env, k) => { const m = MEMO[k]; return m && (m.a || Date.now() - m.t < 600000) ? Promise.resolve(m.v) : sf('ph:' + k, () => shard0(env, k)); };
 async function shard0(env, k) {
 const m = MEMO[k]; if (m && (m.a || Date.now() - m.t < 600000)) return m.v;
-const o = await jget(env, 'page-history-' + k + '.json', ORIGIN + '/_s/kolaboro.com/data/page-history-' + k + '.json', ORIGIN + '/data/page-history-' + k + '.json', 600);   // n40 d14: the same copy kbx_e29 reads
+const o = await jget(env, phk(k), ORIGIN + '/_s/kolaboro.com/data/' + phk(k), ORIGIN + '/data/' + phk(k), 600);   // n40 d14: the same copy kbx_e29 reads
+for (const j in MEMO) if (+j !== k) { delete MEMO[j]; delete SH[phk(j)]; }   // n40 d15: at most one whole shard kept (only the /changes/ pages need one)
 MEMO[k] = { t: Date.now(), v: o.v, a: o.a }; return o.v;
 }
+// n40 d15: project pages only need four numbers per project: worked out for a whole shard at once, then the 7 MB shard is let go
+const SUM = {};
+const sumOf = p => { if (!p || !p.v.length) return null; const N = new Array(p.seg.length), g = j => N[j] !== undefined ? N[j] : (N[j] = norm(p.seg[j])); let changed = 0;
+  for (let i = 1; i < p.v.length; i++) { const a = p.v[i].ix, b = p.v[i - 1].ix; let eq; if (a.length === b.length) { eq = true; for (let q = 0; q < a.length; q++) if (a[q] !== b[q] && g(a[q]) !== g(b[q])) { eq = false; break; } } else eq = a.map(g).join('\n') === b.map(g).join('\n'); if (!eq) changed++; }
+  return { n: p.v.length, first: p.v[0].d, last: p.v[p.v.length - 1].d, changed }; };
+const sums = (env, k) => { const c = SUM[k]; return c && (c.a || Date.now() - c.t < 600000) ? Promise.resolve(c) : sf('phs:' + k, async () => {
+  const s = await shard(env, k), a = !!(MEMO[k] && MEMO[k].a), m = new Map(); for (const id in (s.projects || {})) m.set(id, sumOf(s.projects[id]));
+  const o = SUM[k] = { t: Date.now(), a, m }; delete MEMO[k]; if (SH[phk(k)] && SH[phk(k)].v === s) delete SH[phk(k)]; return o; }); };
 async function project(env, id) { const s = await shard(env, shardOf(id)); return { p: (s.projects || {})[id] || null, updated: s.updated }; }
 const textOf = (p, v) => v.ix.map(i => p.seg[i]).join('');
 const norm = t => String(t).replace(/\s+/g, ' ').trim();
-export async function phSummary(env, id) {
-const { p } = await project(env, id); if (!p || !p.v.length) return null;
-let changed = 0;
-for (let i = 1; i < p.v.length; i++) if (p.v[i].ix.map(j => norm(p.seg[j])).join('\n') !== p.v[i - 1].ix.map(j => norm(p.seg[j])).join('\n')) changed++;
-return { n: p.v.length, first: p.v[0].d, last: p.v[p.v.length - 1].d, changed };
-}
+export async function phSummary(env, id) { const r = (await sums(env, shardOf(id))).m.get(id); return r ? Object.assign({}, r) : null; }
 export function diff(A, B) {
 let s = 0; while (s < A.length && s < B.length && A[s] === B[s]) s++;
 let e = 0; while (e < A.length - s && e < B.length - s && A[A.length - 1 - e] === B[B.length - 1 - e]) e++;

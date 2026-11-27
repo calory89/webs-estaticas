@@ -161,12 +161,12 @@ try {
 if (kind === $q.eb) {
 const [C, NM] = await Promise.all([load(env, $q.ec), load(env, $q.ed).catch(() => null)]), id = String(u.searchParams.get('id') || '').toUpperCase();
 const okId = /^[A-Z]{2,5}-\d{3,4}$/.test(id) ? id : '', pp = String(u.searchParams.get('page') || ''), okPg = /^\/[a-z0-9][a-z0-9\/._-]{0,160}$/i.test(pp) && !pp.includes('..') ? pp : '';
-const k = lang + '|c|' + okId + '|' + okPg + '|' + (C.updated || '') + '|' + (C.entries || []).length; pg = BODY.get(k); if (!pg) { const SL = {}; if (NM) for (const x of NM.projects || []) if ((C.entries || []).some(e => e.id === x.id)) SL[x.id] = { s: x.s, n: String(x.n || x.id).replace(/\s*\([^)]*\)\s*$/, '') }; pg = corrPage(C, lang, okId, SL, okPg); if (BODY.size > 600) BODY.clear(); BODY.set(k, pg); }
+const k = lang + '|c|' + okId + '|' + okPg + '|' + (C.updated || '') + '|' + (C.entries || []).length; pg = BODY.get(k); if (!pg) { const SL = {}; if (NM) for (const x of NM.projects || []) if ((C.entries || []).some(e => e.id === x.id)) SL[x.id] = { s: x.s, n: String(x.n || x.id).replace(/\s*\([^)]*\)\s*$/, '') }; pg = corrPage(C, lang, okId, SL, okPg); if (BODY.size >= 40) BODY.delete(BODY.keys().next().value); BODY.set(k, pg); }
 } else if (kind === 'faq') {
 const F = await load(env, $q.ee), k = lang + '|faq|' + F.updated; pg = BODY.get(k); if (!pg) { pg = faqPage(F, lang); BODY.set(k, pg); }
 } else if (kind === $q.ef || kind === 'cite') {
 let ix = null; try { ix = await trData(env); } catch (e) { if (kind === $q.ef) return null; }
-const k = lang + '|' + kind + '|' + (ix ? ix.v : ''); pg = BODY.get(k); if (!pg) { pg = kind === 'cite' ? citePage(lang, ix) : badgePage(lang, ix); if (BODY.size > 600) BODY.clear(); BODY.set(k, pg); }
+const k = lang + '|' + kind + '|' + (ix ? ix.v : ''); pg = BODY.get(k); if (!pg) { pg = kind === 'cite' ? citePage(lang, ix) : badgePage(lang, ix); if (BODY.size >= 40) BODY.delete(BODY.keys().next().value); BODY.set(k, pg); }
 } else { const k = lang + '|' + kind; pg = BODY.get(k); if (!pg) { pg = kind === $q.eg ? contactPage(lang) : casesPage(lang); BODY.set(k, pg); } }
 } catch (e) { return null; }
 return trustRender(lang, Object.assign({}, pg, { ld: pg.ld, body: pg.body.replace($q.am, $s.CSS27 + $q.am) }), shell);

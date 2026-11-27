@@ -7,6 +7,7 @@ import { coName, mkName } from './kbx_hdate.js';
 import { ogImg } from './kbx_ogt.js';
 import { t as W30 } from './kbx_n30c_named.js';
 import { TB } from './kbx_strings.js';
+import { jget } from './kbx_jget.js';
 const ORIGIN = 'https://kolaboro.com';
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' };
@@ -25,7 +26,7 @@ const MEMO = {};
 async function file(env, name, ttl) {
   const m = MEMO[name]; if (m && Date.now() - m.t < (ttl || 600000)) return m.v;
   let v = null;
-  try { const r = await env.ASSETS.fetch(new Request(ORIGIN + $q.b + name)); if (r.ok) v = await r.json(); } catch (e) { v = null; }
+  try { const o = await jget(env, name, ORIGIN + $q.b + name, ORIGIN + '/data/' + name, 600); v = o.a ? o.v : null; } catch (e) { v = null; }   // n40 d15: the shared copy (kbx_jget.js); assets only, as before
   MEMO[name] = { t: Date.now(), v }; return v;
 }
 let CX = null;

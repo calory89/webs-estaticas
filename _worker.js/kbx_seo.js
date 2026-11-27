@@ -4,7 +4,8 @@ import { trueLastmod, lastmodRoute } from './kbx_lastmod.js';
 import { BUY_PLACES, PL as BUY_PL } from './kbx_buy_i18n.js';   // batch 27 (n27c): step-by-step buying guides per place
 import { placesForCountry } from './kbx_tr_places.js';   // batch 23 (n23): links to the transparency rankings of a country's islands and cities   // batch 15 (s15b): date of the last real data change per project
 import { ogImg } from './kbx_ogt.js';
-import { TB } from './kbx_strings.js';   // n29t: share image per page type
+import { TB } from './kbx_strings.js';
+import { jget } from './kbx_jget.js';   // n29t: share image per page type
 const { openData } = KB;
 
 const SITE = 'https://kolaboro.com';
@@ -34,7 +35,8 @@ const FQ = {};
 async function file0(env, name, ttl) {
   const m = MEMO[name]; if (m && Date.now() - m.t < (ttl || 300000)) return m.v;
   let v = null;
-  try { const r = await env.ASSETS.fetch(new Request(SITE + $q.g + name)); if (r.ok) v = /\.json$/.test(name) ? await r.json() : await r.text(); } catch (e) { v = null; }
+  if (/^\/data\/[^/]+\.json$/.test(name)) { try { v = (await jget(env, name.slice(6), SITE + $q.g + name, SITE + name, 300)).v; } catch (e) { v = null; } }   // n40 d15: the shared copy (kbx_jget.js), not a second one
+  else try { const r = await env.ASSETS.fetch(new Request(SITE + $q.g + name)); if (r.ok) v = /\.json$/.test(name) ? await r.json() : await r.text(); } catch (e) { v = null; }
   if (v == null && m) v = m.v; MEMO[name] = { t: v == null ? Date.now() - (ttl || 300000) + 15000 : Date.now(), v }; return v;
 }
 const named = inner => NQ || (NQ = named0(inner).finally(() => { NQ = null; }));
@@ -45,14 +47,16 @@ async function named0(inner) {
   try {
     const r = await inner($q.h);
     if (r && r.ok && /json/.test(r.headers.get($q.i) || '')) {
+      const SI = new Map(), IN = x => x == null ? x : SI.get(x) || (SI.set(x, x), x);
       const j = await r.json(), list = Array.isArray(j) ? j : (j.urls || j.items || []).concat(j.projects || [], j.developers || []);
       for (const it of list) {
         const loc = it.loc || it.url; if (!loc || !/^https:\/\/kolaboro\.com\//.test(loc)) continue;
         const type = it.type || (/\/developers\//.test(loc) ? $q.j : /\/projects\//.test(loc) ? $q.k : 'page');
-        const e = { loc, lastmod: it.lastmod || it.updated || null, type, id: it.id || it.public_id || it.code || null, name: it.name || it.title || null, developer: it.developer || it.developer_name || null, developer_url: it.developer_url || null, lang: it.lang || 'en', alternates: it.alternates || it.alt || null, summary: it.summary || null, sm: it.sm !== false };
-        v.all.push(e);
-        if (type === $q.k && e.id && (e.lang === 'en' || !v.projects.has(e.id))) v.projects.set(e.id, e);
-        if (type === $q.j && e.lang === 'en') v.developers.push(e);
+        const e = { loc, lastmod: IN(it.lastmod || it.updated || null), type, id: it.id || it.public_id || it.code || null, name: it.name || it.title || null, developer: it.developer || it.developer_name || null, developer_url: it.developer_url || null, lang: it.lang || 'en', summary: it.summary || null, sm: it.sm !== false };   // n40 d15: no alternates (nothing here reads them), dates shared
+        const inP = type === $q.k && e.id && (e.lang === 'en' || !v.projects.has(e.id)), inD = type === $q.j && e.lang === 'en';
+        v.all.push(inP || inD ? e : { loc, lastmod: e.lastmod, type, id: e.id, lang: e.lang, sm: e.sm });   // n40 d15: other language copies keep only what the sitemaps read
+        if (inP) v.projects.set(e.id, e);
+        if (inD) v.developers.push(e);
       }
     }
   } catch (e) {}
@@ -65,14 +69,18 @@ async function base(env, inner) {
     file(env, $q.p), file(env, $q.q), file(env, $q.r), file(env, $q.s), file(env, $q.t, 900000)]);
   const N = await named(inner);
   const T = await trueLastmod(env).catch(() => null);
+  const key = [d, delay, ontime, promises, drift, regs, cover, law, lh, regHtml, N, T];   // n40 d15: the same inputs give the same derived lists: built once, not once per request
+  if (BM && BM.k.every((x, i) => x === key[i])) return Object.assign({}, BM.v);
   const all0 = (d.cases || []).map(c => Object.assign({}, c, { country: ctry(c.country) }));
   const coi = all0.filter(c => /^sumba$/i.test(String(c.market || '').trim())), all = all0.filter(c => !coi.includes(c));
   const cases = all.filter(reviewed), unrev = all.filter(c => !reviewed(c));
   const byCountry = new Map(); for (const c of cases) { if (!byCountry.has(c.country)) byCountry.set(c.country, []); byCountry.get(c.country).push(c); }
   const uByCountry = new Map(); for (const c of unrev) { if (!uByCountry.has(c.country)) uByCountry.set(c.country, []); uByCountry.get(c.country).push(c); }
   const mToC = new Map(); for (const c of all) if (!mToC.has(c.market)) mToC.set(c.market, c.country);
-  return { d, all, coi, cases, unrev, byCountry, uByCountry, mToC, delay, ontime, promises, drift, regs, cover, law, lh, regCards: parseRegisters(regHtml), N, T };
+  BM = { k: key, v: { d, all, coi, cases, unrev, byCountry, uByCountry, mToC, delay, ontime, promises, drift, regs, cover, law, lh, regCards: parseRegisters(regHtml), N, T } };
+  return Object.assign({}, BM.v);
 }
+let BM = null;
 export const NOT_REVIEWED = 'Not yet reviewed by Kolaboro';
 function reviewed(c) { return !!(c && c.verified && Object.values(c.verified).some(v => v && v !== 'none')); }
 function parseRegisters(h) {

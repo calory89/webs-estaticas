@@ -2,22 +2,11 @@
 const $q = TB.kbx_disc__q, $s = TB.kbx_disc__s, $t = TB.kbx_disc__t;   // n40 k46: short names for this module's string tables (strings in /data/i18n/k19s.json, k17s.json, k46s.json)
 import * as KB from './kolaboro.js';
 import { TB } from './kbx_strings.js';
+import { jget } from './kbx_jget.js';
 const { json } = KB;
 export const PATHS = /^\/api\/x\/disc(\/|$)/;
-const MEMO = {};
-async function load(env, name) {
-const m = MEMO[name];
-if (m && Date.now() - m.t < 120000) return m.v;
-let v = null;
-try {
-let r = null;
-if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request($q.a + name));
-if (!r || !r.ok) r = await fetch($q.a + name, { cf: { cacheTtl: 600, cacheEverything: true } });
-if (r.ok) v = await r.json();
-} catch (e) { v = null; }
-MEMO[name] = { t: Date.now(), v };
-return v;
-}
+const load = (env, name) => jget(env, name, 'https://kolaboro.com/_s/kolaboro.com/data/' + name, $q.a + name, 600).then(o => o.v, () => null);   // n40 d15: the shared copy (kbx_jget.js), not a private one every 2 minutes
+const BY = new WeakMap();   // n40 d15: id index beside the shared copy, never written into it
 function out(o, s = 200, maxAge = 300) {
   return new Response(JSON.stringify(o), { status: s, headers: { 'content-type': $q.b, 'cache-control': maxAge ? $q.c + maxAge : $q.d, 'access-control-allow-origin': '*' } });
 }
@@ -34,7 +23,7 @@ function pub(c, k) {
 async function cases(env) {
 const d = await load(env, $q.h);
 if (!d || !Array.isArray(d.cases)) return null;
-if (!d._by) { d._by = {}; d.cases.forEach(c => { if (c && c.id) d._by[c.id] = c; }); }
+if (!BY.has(d)) { const by = {}; d.cases.forEach(c => { if (c && c.id) by[c.id] = c; }); BY.set(d, by); }
 return d;
 }
 async function points(env) {
@@ -68,12 +57,12 @@ function shared(a, b) {
 async function similar(env, id) {
 const d = await cases(env);
 if (!d) return out({ error: $q.i }, 503, 0);
-const a = d._by[id];
+const a = BY.get(d)[id];
 if (!a) return out({ error: $q.w, id }, 404, 300);
 const S = await load(env, $q.j);
 if (!S || !S.projects) return out({ id, status: $q.n, note: $t.k0, items: [] }, 200, 120);
 const L = (S.projects[id] || []).map(r => {
-const b = d._by[r[0]];
+const b = BY.get(d)[r[0]];
 if (!b) return null;
 return { id: b.id, score: r[1], text: r[2], struct: r[3], market: b.market, country: b.country, area: b.region && b.region !== b.market ? b.region : '', stage: b.stage || '', band: b.band || '', tier: b.tier || '', pub: b.score || 0, max: b.max || 6, shared: shared(a, b) };
 }).filter(Boolean);
@@ -95,7 +84,7 @@ function fmtv(v) { return v === true ? 'yes' : v === false ? 'no' : v == null ? 
 async function timeline(env, id) {
 const d = await cases(env);
 if (!d) return out({ error: $q.i }, 503, 0);
-const c = d._by[id];
+const c = BY.get(d)[id];
 if (!c) return out({ error: $q.w, id }, 404, 300);
 const [drift, vd, prom, reg, stall, night, haz, ot] = await Promise.all([$q.z, $q.A, $q.B, $q.C, $q.D, $q.E, $q.F, $q.G].map(n => load(env, n)));
 const E = [], files = {};

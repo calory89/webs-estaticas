@@ -342,7 +342,7 @@ export async function page(req, u, env, ctx, shell) {
   }
   const key = lang + '|' + (method ? '#m' : slug || '#h') + '|' + ix.v + (o ? '|g' + (o.rg ? 1 : 0) + (o.so ? 1 : 0) + (o.all ? 'a' : '') + '|' + o.G.size : '');
   let pg = BODY.get(key);
-  if (!pg) { pg = method ? methodPage(ix, lang) : slug ? placePage(ix, slug, lang, o) : hubPage(ix, lang); if (!pg) return null; if (BODY.size > 600) BODY.clear(); BODY.set(key, pg); }
+  if (!pg) { pg = method ? methodPage(ix, lang) : slug ? placePage(ix, slug, lang, o) : hubPage(ix, lang); if (!pg) return null; if (BODY.size >= 40) BODY.delete(BODY.keys().next().value); BODY.set(key, pg); }
   const sh = await shell(pre(lang) + $q.eP);
   const url = PUB(lang, pg.path), alts = LANGS.map(l => $q.eQ + l + $q.eR + PUB(l, pg.path) + '">').join('') + $q.eS + ORIGIN + pg.path + '">';
   const tags = $q.eT + esc(pg.title) + ([...pg.title].length + 11 <= 60 ? $q.eU : '') + $q.eV + esc(pg.desc) + $q.eW + url + '">' + alts + $q.eX +

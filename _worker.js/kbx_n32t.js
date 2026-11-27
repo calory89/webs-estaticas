@@ -103,7 +103,7 @@ function place(s, lang) {
 const fill = (D, out, names, g, e) => out.replace(/\{(\w+)(?:\|(\w+))?\}/g, (z, k, md) => { const i = names.indexOf(k); if (i < 0) return z; const v = dec(g(i)).trim(), x = md && D.s[md + ':' + v] != null ? D.s[md + ':' + v] : D.s[v] != null ? D.s[v] : v.includes('; ') ? v.split('; ').map(z => D.s[z] != null ? D.s[z] : (auto(z, D.lang) || z)).join('; ') : (auto(v, D.lang) || v); return e ? e(x) : x; });
 function T(D, s) {
   if (D.s[s] != null) return D.s[s];
-  const Z = D.mz || (D.mz = new Map()); if (Z.has(s)) return Z.get(s); if (Z.size > 30000) Z.clear(); const v = T0(D, s); Z.set(s, v); return v;   // n40 k35: country pages repeat the same cells hundreds of times
+  const Z = D.mz || (D.mz = new Map()); if (Z.has(s)) return Z.get(s); if (Z.size > 8000) Z.clear(); const v = T0(D, s); Z.set(s, v); return v;   // n40 k35: country pages repeat the same cells hundreds of times
 }
 function T0(D, s) {
   for (const [rx, out, names] of D.P) { const m = rx.exec(s); if (m) return fill(D, out, names, i => m[i + 1]); }

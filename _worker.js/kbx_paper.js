@@ -1,7 +1,7 @@
 // comments: _notes/kolaboro-worker-comments.txt
 const $q = TB.kbx_paper__q, $s = TB.kbx_paper__s, $t = TB.kbx_paper__t;   // n40 k46: short names for this module's string tables (strings in /data/i18n/k19s.json, k17s.json, k46s.json)
 import { TB } from './kbx_strings.js';
-const IF = (globalThis.__kbIF = globalThis.__kbIF || {}); function sf(k, f) { if (IF[k]) return IF[k]; const p = f(); IF[k] = p; const d = () => { if (IF[k] === p) delete IF[k]; }; p.then(d, d); return p; }   // n40 d12
+import { jget } from './kbx_jget.js';
 const ORIGIN = 'https://kolaboro.com';
 export const PATHS = /^\/api\/x\/paper\//;
 export const TOOL_RX = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?tools\/contract-addendum\/?$/;
@@ -11,16 +11,10 @@ const esc = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&a
 const pre = l => l === 'en' ? '' : '/' + l;
 const OPINION = /\b(scam\w*|fraud\w*|ponzi|swindl\w*|rip-?off|avoid\w*|beware|dodgy|shady|crook\w*|estafa\w*|fraude\w*|timo|betrug\w*|arnaque\w*|escroc\w*|oplicht\w*|bedrog\w*)\b|мошен|обман|афер|骗局|诈骗|欺诈|احتيال|نصب/i;
 const MASK = s => String(s || '').replace(/[\w.+-]+@[\w-]+\.[\w.]+/g, $q.b).replace(/\+?\d[\d ()-]{8,}\d/g, m => /\d{1,3}([.,\s]\d{3}){2,}/.test(m) ? m : $q.c);
-let MEMO = {};
-const loadOne = (env, path, ttl) => sf($q.d + path, () => loadOne0(env, path, ttl));
-async function loadOne0(env, path, ttl) {
-const m = MEMO[path]; if (m && (m.a || Date.now() - m.t < (ttl || 600000))) return m.v;
-let r = null, a = false;
-try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + $q.e + path)); a = !!(r && r.ok); } catch (e) { r = null; }
-if (!r || !r.ok) { try { r = await fetch(ORIGIN + path + '?v=' + Math.floor(Date.now() / 600000), { cf: { cacheTtl: 300, cacheEverything: true } }); } catch (e) { r = null; } }
-const v = r && r.ok ? await r.json().catch(() => null) : null;
-MEMO[path] = { t: Date.now(), v, a: a && v != null }; return v;
-}
+const SHARED = (globalThis.__kbJson = globalThis.__kbJson || {});
+const loadOne = (env, path, ttl) => { const k = path.replace(/^\/data\//, ''), m = SHARED[k];   // n40 d15: the shared copy (kbx_jget.js), not a private one
+  if (m && m.v != null && (m.a || Date.now() - m.t < (ttl || 600000))) return Promise.resolve(m.v);
+  return jget(env, k, ORIGIN + $q.e + path, ORIGIN + path, 300).then(o => o.v, () => null); };
 export async function paperData(env) {
 const [ph, pl] = await Promise.all([loadOne(env, $q.f), loadOne(env, $q.g)]);
 return { ph, pl, v: ((ph && ph.updated) || '') + '/' + ((pl && pl.updated) || '') };

@@ -179,7 +179,7 @@ if (only) pg.noindex = true;
 return pg;
 }
 const BODY = new Map();
-const keep = (k, f) => { let v = BODY.get(k); if (!v) { v = f(); if (BODY.size > 400) BODY.clear(); BODY.set(k, v); } return v; };
+const keep = (k, f) => { let v = BODY.get(k); if (!v) { v = f(); if (BODY.size >= 40) BODY.delete(BODY.keys().next().value); BODY.set(k, v); } return v; };
 export async function handle(req, u, env, ctx, shell) {
 const p = u.pathname;
 if (!(await loadS(env))) return null;

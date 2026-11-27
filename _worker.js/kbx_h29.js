@@ -453,7 +453,7 @@ export async function page(req, u, env, ctx, shell) {
   let D; try { D = await h29Data(env); } catch (e) { return new Response($q.cQ, { status: 503, headers: { 'retry-after': '60', 'cache-control': $q.cR, 'content-type': $q.cS } }); }
   const key = lang + '|' + path + '|' + D.v;
   let pg = BODY.get(key);
-  if (!pg) { pg = renderPath(D, path, lang); if (!pg) return null; if (BODY.size > 400) BODY.clear(); BODY.set(key, pg); }
+  if (!pg) { pg = renderPath(D, path, lang); if (!pg) return null; if (BODY.size >= 40) BODY.delete(BODY.keys().next().value); BODY.set(key, pg); }
   if (!m[3]) return new Response(null, { status: 301, headers: { location: pre(lang) + path + u.search, 'cache-control': $q.cT } });
   const sh = await shell(pre(lang) + $q.cU);
   const url = PUB(lang, pg.path), alts = LANGS.map(l => $q.cV + l + $q.cW + PUB(l, pg.path) + '">').join('') + $q.cX + ORIGIN + pg.path + '">';

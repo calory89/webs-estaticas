@@ -380,12 +380,12 @@ export async function page(req, u, env, ctx, shell) {
   let G; try { G = await guideData(env); } catch (e) { return null; }
   const k = lang + '|' + (cm ? 'c:' + cm[2] : gm ? 'g:' + gm[2] : (slug || '#')) + '|' + G.v;
   let pg = BODY.get(k);
-  if (!pg && cm) { let D; try { D = await tcData(env); } catch (e) { return null; } pg = tcPage(D, cm[2], lang); if (!pg) return null; if (BODY.size > 300) BODY.clear(); BODY.set(k, pg); }
-  else if (!pg && gm) { let D; try { D = await glData(env); } catch (e) { return null; } pg = glPage(D, gm[2], lang); if (BODY.size > 300) BODY.clear(); BODY.set(k, pg); }
+  if (!pg && cm) { let D; try { D = await tcData(env); } catch (e) { return null; } pg = tcPage(D, cm[2], lang); if (!pg) return null; if (BODY.size >= 40) BODY.delete(BODY.keys().next().value); BODY.set(k, pg); }
+  else if (!pg && gm) { let D; try { D = await glData(env); } catch (e) { return null; } pg = glPage(D, gm[2], lang); if (BODY.size >= 40) BODY.delete(BODY.keys().next().value); BODY.set(k, pg); }
   if (!pg) {
     const lease = slug ? await leaseCount(env, G.places.get(slug).L.map(r => r.id)) : 0;
     pg = slug ? guidePage(G, slug, lang, lease) : hubPage(G, lang); if (!pg) return null;
-    if (BODY.size > 300) BODY.clear(); BODY.set(k, pg);
+    if (BODY.size >= 40) BODY.delete(BODY.keys().next().value); BODY.set(k, pg);
   }
   const sh = await shell(pre(lang) + $q.df);
   const url = ORIGIN + pre(lang) + pg.path, alts = LANGS.map(l => $q.dg + l + $q.dh + ORIGIN + pre(l) + pg.path + '">').join('') + $q.di + ORIGIN + pg.path + '">';

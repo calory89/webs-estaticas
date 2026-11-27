@@ -209,12 +209,12 @@ let pg;
 try {
 if (kind === $q.cH) { const k = lang + '|ep'; pg = BODY.get(k); if (!pg) { pg = editorialPage(lang); BODY.set(k, pg); } }
 else if (kind === $q.cI) { const D = {}; await Promise.all([...new Set(JOBS.map(j => j[2]))].map(async f => { D[f] = await fileDate(env, f); })); pg = workPage(lang, D); }
-else if (kind === $q.cJ) { const N = await load(env, $q.cK), S = sourcesData(N), k = lang + '|so|' + S.updated + '|' + (N.projects || []).length; pg = BODY.get(k); if (!pg) { pg = sourcesPage(lang, S); if (BODY.size > 300) BODY.clear(); BODY.set(k, pg); } }
+else if (kind === $q.cJ) { const N = await load(env, $q.cK), S = sourcesData(N), k = lang + '|so|' + S.updated + '|' + (N.projects || []).length; pg = BODY.get(k); if (!pg) { pg = sourcesPage(lang, S); if (BODY.size >= 40) BODY.delete(BODY.keys().next().value); BODY.set(k, pg); } }
 else {
 const B = await buyMods(); let G = null; try { G = await B.guideData(env); } catch (e) {}
-if (kind === $q.cL) { let LAW = null; try { LAW = await load(env, $q.cM, $q.cN); } catch (e) {} const k = lang + '|bp|' + (G ? G.v : '') + '|' + (LAW ? LAW.version : ''); pg = BODY.get(k); if (!pg) { pg = protectPage(lang, B, G, LAW); if (BODY.size > 300) BODY.clear(); BODY.set(k, pg); } }
+if (kind === $q.cL) { let LAW = null; try { LAW = await load(env, $q.cM, $q.cN); } catch (e) {} const k = lang + '|bp|' + (G ? G.v : '') + '|' + (LAW ? LAW.version : ''); pg = BODY.get(k); if (!pg) { pg = protectPage(lang, B, G, LAW); if (BODY.size >= 40) BODY.delete(BODY.keys().next().value); BODY.set(k, pg); } }
 else { let SL = null; try { SL = await load(env, $q.cO); } catch (e) {} let cc = null; try { cc = (await import('./kbx_facets.js')).costCalc; } catch (e) {}
-const k = lang + '|fb|' + (G ? G.v : '') + '|' + (SL ? SL.updated : ''); pg = BODY.get(k); if (!pg) { pg = foreignPage(lang, B, G, SL, cc); if (BODY.size > 300) BODY.clear(); BODY.set(k, pg); } }
+const k = lang + '|fb|' + (G ? G.v : '') + '|' + (SL ? SL.updated : ''); pg = BODY.get(k); if (!pg) { pg = foreignPage(lang, B, G, SL, cc); if (BODY.size >= 40) BODY.delete(BODY.keys().next().value); BODY.set(k, pg); } }
 }
 } catch (e) { return null; }
 return trustRender(lang, Object.assign({}, pg, { body: dots(pg.body).replace($q.B, $s.CSS29 + $q.B) }), shell);

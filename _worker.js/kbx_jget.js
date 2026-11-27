@@ -10,7 +10,7 @@ export function jget(env, key, au, fu, ttl) {
   if (FLY[key]) return FLY[key];
   const p = (async () => {
     let r = null, a = false;
-    try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(au)); a = !!(r && r.ok); } catch (e) { r = null; }
+    for (let i = 0; i < 2 && !a; i++) try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(au)); a = !!(r && r.ok); } catch (e) { r = null; }   // n40 d15: one retry before the network copy
     if (!r || !r.ok) r = await fetch(fu, { cf: { cacheTtl: ttl || 300, cacheEverything: true } });
     if (!r.ok) throw new Error(key + ' ' + r.status);
     const et = r.headers.get('etag'), c = SHARED[key];

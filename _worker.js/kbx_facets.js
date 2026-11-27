@@ -504,7 +504,7 @@ export async function page(req, u, env, ctx, shell) {
   let F; try { F = await facetsData(env); } catch (e) { return new Response($q.fd, { status: 503, headers: { 'retry-after': '60', 'cache-control': $q.fe, 'content-type': $q.ff } }); }
   const key = lang + '|' + path + '|' + F.v;
   let pg = BODY.get(key);
-  if (!pg) { pg = renderPath(F, path, lang); if (!pg) return null; if (BODY.size > 400) BODY.clear(); BODY.set(key, pg); }
+  if (!pg) { pg = renderPath(F, path, lang); if (!pg) return null; if (BODY.size >= 40) BODY.delete(BODY.keys().next().value); BODY.set(key, pg); }
   if (!m[7]) return new Response(null, { status: 301, headers: { location: pre(lang) + path + u.search, 'cache-control': $q.fg } });
   const sh = await shell(pre(lang) + $q.fh);
   const url = PUB(lang, pg.path), alts = LANGS.map(l => $q.fi + l + $q.fj + PUB(l, pg.path) + '">').join('') + $q.fk + ORIGIN + pg.path + '">';
