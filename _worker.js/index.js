@@ -479,7 +479,6 @@ async function kbSafe(req, u, r) {
 }
 // n40 d10: finished-page edge copies (see _notes): served at once, rebuilt in the background when stale (x-kb-ot)
 const KB_FIN = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:m\/[^/.]{2,60}|projects\/[a-z0-9-]{1,90}|developers\/[a-z0-9-]{2,90})\/$/; let KB_OT = null; const kbOt = () => KB_OT || (KB_OT = crypto.randomUUID());
-const kbWarmDev = env => { const w = p => p.then(m => m.warm(env)).catch(() => {}); w(import('./kbx_n37u.js').then(m => (kn37u = kn37u || m))); w(import('./kbx_n34a.js').then(m => (kn34a = kn34a || m))); w(import('./kbx_n35a.js').then(m => (kn35a = kn35a || m))); w(import('./kbx_ticker.js').then(m => (kTick = kTick || m))); };   // n40 k57
 const KB_DVF = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?developers\/[a-z0-9-]{2,90}\/$/, KB_UAB = /bot|crawl|spider|GPT|Claude|anthropic|Perplexity|Bytespider|meta-extern|cohere|Mistral|Diffbot/i;
 const kbFinKey = u => new Request('https://kolaboro.com/__edge/fin1' + u.pathname);
 // n40 k56: a kept copy carries the head script of the deployment that built it; the current one replaces it when served, so a change to it (the consent gate) reaches every copy at once
@@ -543,7 +542,6 @@ export default {
     }
     { const u0 = new URL(req.url); if (req.method === 'GET' && KB_DVF.test(u0.pathname) && /^(www\.)?kolaboro\.com$/.test(u0.hostname) && req.headers.get('x-kb-ot') !== kbOt() && !KB_UAB.test(req.headers.get('user-agent') || '')) { try { const fh = await kbFinGet(req, u0, env, ctx, this); if (fh) { if (ctx && ctx.waitUntil) ctx.waitUntil(kbStrings(env).then(async () => { if (!k27a) k27a = await import('./kbx_n27a.js'); k27a.count(req, u0, ctx); }).catch(() => {})); fh.headers.set('server-timing', 'fin;dur=' + (Date.now() - t0) + ';desc="finished copy"'); return fh; } } catch (e) {} } }   // n40 k53: a developer page's finished copy is served before the string tables load (a cold isolate spent 0.25 to 2 s on them first); the view is counted after
     if (/^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) await kbStrings(env);   // n32w: string tables first (see kbStrings)
-    if (req.method === 'GET' && KB_DVF.test(new URL(req.url).pathname) && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) kbWarmDev(env);   // n40 k57
     if (kn33a && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) { try { await kn33a.prep(env, new URL(req.url)); } catch (e) {} }   // n33a (item 79): data card for the /data/ Dataset node
     { const u0 = new URL(req.url); if (/^(www\.)?kolaboro\.com$/.test(u0.hostname) && (KB_SLZ.exec(u0.pathname) || [])[1]) { try { if (!ksl) ksl = await import('./kbx_satlz.js'); const p = await ksl.part(req, u0, env, ctx, this, kbOt(), kbFinKey); if (p) return p; } catch (e) {} } }
     if (env && env.KB_CSP_STRICT === '0') KB_CSP_SCRIPTS = false;   // n21e: rollback switch for the strict script policy on kolaboro.com

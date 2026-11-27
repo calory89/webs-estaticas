@@ -547,7 +547,7 @@ try { const hit = await caches.default.match(key); if (hit) { const v = await hi
 if (row && row.ok && Date.now() - Date.parse(row.at) < 5184e6) { if (ctx && ctx.waitUntil) ctx.waitUntil(live().catch(() => {})); return row; }
 return live();
 }
-const warmDev = env => { const n = () => {}; for (const f of [() => gleifDev(env), () => rsData(env), () => webData(env), () => familyData(env), () => watchData(env), () => filingsData(env), () => ccData33(env), () => loadS31(env), () => loadS32(env), () => loadJson(env, 'promises.json'), () => loadJson(env, 'findings-by-project.json'), () => satData(env), () => facetsData(env)]) try { f().catch(n); } catch (e) {} };   // n40 k57
+const warmDev = env => { const n = () => {}; for (const f of [() => gleifDev(env), () => rsData(env), () => familyData(env), () => watchData(env), () => filingsData(env), () => ccData33(env), () => loadS31(env), () => loadS32(env)]) try { f().catch(n); } catch (e) {} };   // n40 k57
 async function gleif(name, ctx) {
 const key = gKey(name);
 try { const hit = await caches.default.match(key); if (hit) return await hit.json(); } catch (e) {}

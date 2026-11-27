@@ -16,7 +16,6 @@ if (!v) { try { const r = await fetch(ORIGIN + p, { cf: { cacheTtl: 600 } }); if
 MEMO[p] = { t: Date.now(), v }; return v;
 }
 let T = null, D = null, IX = null, TL = null;
-export const warm = env => load(env).catch(() => {});   // n40 k57
 async function load(env) {
 if (!T) { T = await file(env, $q.b); }
 const d = await file(env, $q.c);
