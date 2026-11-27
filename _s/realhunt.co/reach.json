@@ -1,7 +1,7 @@
 {
  "built": "2026-11-27",
  "indexable": 7148,
- "pages_given_a_date": 6866,
+ "pages_given_a_date": 6867,
  "video_pages": 0,
  "listing_markdown": 46,
  "answers": {
@@ -30,10 +30,10 @@
  "indexnow": {
   "compared": true,
   "added": 0,
-  "changed": 0,
+  "changed": 1,
   "removed": 0
  },
- "changed_today": 1656,
+ "changed_today": 1,
  "press_pdf": [
   "press/realhunt-in-figures.pdf",
   "press/realhunt-in-figures-2026-11.pdf"
@@ -101,7 +101,7 @@
   "es": 0,
   "sample": []
  },
- "releases": 44,
+ "releases": 45,
  "data_files": {
   "data/homes.jsonl": 558635,
   "data/homes.csv": 189873,
@@ -112,7 +112,7 @@
   "data/glossary.json": 37489,
   "data/realhunt-homes.geojson": 210590,
   "data/realhunt-best-homes.kml": 60517,
-  "data/changed-today.txt": 86906,
+  "data/changed-today.txt": 32,
   "research/homes.csv": 76182,
   "research/removed-homes.json": 40527,
   "research/removed-by-month.json": 447,

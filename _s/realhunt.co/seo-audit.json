@@ -18,10 +18,10 @@
   "inlinks_under_3": 0,
   "hreflang_problems": 0,
   "pages_with_hreflang": 4274,
-  "thin_under_150_words": 24,
+  "thin_under_150_words": 23,
   "mixed_content": 0,
   "no_lang": 0,
-  "with_lastmod": 4256,
+  "with_lastmod": 4257,
   "redirects": 1887,
   "moved_stubs": 271
  },
@@ -760,7 +760,7 @@
    "pages": 1,
    "indexable": 1,
    "noindex": 0,
-   "median_words": 0,
+   "median_words": 185,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -1113,7 +1113,6 @@
    "/es/map",
    "/extension",
    "/find-my-home",
-   "/help-buying",
    "/map",
    "/network",
    "/network/reservation-contract",
@@ -1171,10 +1170,10 @@
    "pages": {
     "pages": 41,
     "twins": 8,
-    "words": 2895,
+    "words": 3083,
     "english": 418,
     "by_hand": 2,
-    "spanish_pct": 85.56
+    "spanish_pct": 86.44
    },
    "content": {
     "pages": 592,
@@ -1200,7 +1199,7 @@
    "max_depth": 3,
    "titles_changed_since_last_build": 0,
    "external_link_hosts": 335,
-   "no_text_without_javascript": 9,
+   "no_text_without_javascript": 8,
    "click_handler_instead_of_link": 1412,
    "legal_page_without_disclaimer": 3,
    "keyword_stuffing": 8,
@@ -1217,7 +1216,6 @@
     "/ecobeachcity (39 words)",
     "/es/contact (15 words)",
     "/find-my-home (37 words)",
-    "/help-buying (19 words)",
     "/network/reservation-contract (26 words)",
     "/new-builds (19 words)",
     "/research/new-builds (31 words)"

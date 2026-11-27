@@ -309,10 +309,10 @@
   "pages": {
    "pages": 41,
    "twins": 8,
-   "words": 2895,
+   "words": 3083,
    "english": 418,
    "by_hand": 2,
-   "spanish_pct": 85.56
+   "spanish_pct": 86.44
   },
   "content": {
    "pages": 592,
@@ -479,9 +479,15 @@
   {
    "url": "https://realhunt.co/help-buying",
    "english": 7,
-   "words": 22,
+   "words": 210,
    "hits": [
-    "(no static body)"
+    "and",
+    "tax",
+    "for",
+    "buying",
+    "house",
+    "in",
+    "country"
    ]
   },
   {
