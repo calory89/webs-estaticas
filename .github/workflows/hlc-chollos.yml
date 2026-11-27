@@ -61,6 +61,7 @@ jobs:
         if: steps.chk.outputs.go == 'yes'
         continue-on-error: true
         run: |
-          URLS=$(git diff --name-only HEAD~1 HEAD 2>/dev/null | grep -E '^(chollos|en/deals|vuelos|en/flights|destinos|en/destinations)/[^/]+/index.html$' | sed 's#index.html$##; s#^#https://www.happylowcost.com/#' | head -500 | python3 -c "import sys,json;print(json.dumps([l.strip() for l in sys.stdin if l.strip()]))")
+          # hubs (a/desde/mes, to/from/month), ideas y guías primero; luego chollos y rutas (máx. 500)
+          URLS=$(git diff --name-only HEAD~1 HEAD 2>/dev/null | grep -E '^((chollos|en/deals|vuelos|en/flights|destinos|en/destinations)|vuelos/(a|desde|mes)|en/flights/(to|from|month)|chollos/ideas|en/deals/ideas)/[^/]+/index.html$' | awk '{p=($0 ~ /^(vuelos\/(a|desde|mes)|en\/flights\/(to|from|month)|chollos\/ideas|en\/deals\/ideas|destinos|en\/destinations)\//)?0:1; print p" "$0}' | sort -s -k1,1 | cut -d' ' -f2- | sed 's#index.html$##; s#^#https://www.happylowcost.com/#' | head -500 | python3 -c "import sys,json;print(json.dumps([l.strip() for l in sys.stdin if l.strip()]))")
           echo "$URLS" | head -c 300
           if [ "$URLS" != "[]" ]; then curl -sS -X POST https://api.indexnow.org/indexnow -H 'content-type: application/json' -d "{\"host\":\"www.happylowcost.com\",\"key\":\"dd9b8e6f028e89576c38388a0d7e3cd4\",\"keyLocation\":\"https://www.happylowcost.com/dd9b8e6f028e89576c38388a0d7e3cd4.txt\",\"urlList\":$URLS}" -w "\nindexnow %{http_code}\n"; fi
