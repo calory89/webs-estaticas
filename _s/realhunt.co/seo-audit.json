@@ -1198,7 +1198,7 @@
    "checked": 4832,
    "indexable": 4290,
    "max_depth": 3,
-   "titles_changed_since_last_build": 0,
+   "titles_changed_since_last_build": 21,
    "external_link_hosts": 335,
    "no_text_without_javascript": 9,
    "click_handler_instead_of_link": 1410,
@@ -1206,6 +1206,7 @@
    "keyword_stuffing": 8,
    "year_in_title": 2,
    "near_identical_pages": 542,
+   "title_changed_twice_in_28_days": 18,
    "fixed_here": 2,
    "links_pointed_past_a_redirect": 2
   },
@@ -1326,6 +1327,26 @@
     "/can-i-buy/danish-in-dominican-republic ~ /can-i-buy/dutch-in-dominican-republic (97%)",
     "/can-i-buy/danish-in-dominican-republic ~ /can-i-buy/french-in-dominican-republic (94%)",
     "... 502 more"
+   ],
+   "title_changed_twice_in_28_days": [
+    "/deal/DZ-9LczExWp: Not confirmed: Cottage in Torsebro, Sweden for €93,823",
+    "/deal/Da7vZIFDIuo: Not confirmed: House in Maizuru, Japan for €54,280",
+    "/deal/DclLv7qjKAR: Farmhouse in Northern Sweden, Sweden for €54,000 · RealHunt",
+    "/deal/DdVLmcvoz1P: Not confirmed: 4-bedroom farmhouse in Fensbol for €91,000",
+    "/deal/es-mecina-bombaron-75k-riayjs: Off the market: 2-bed farmhouse in Mecina Bombarón · €75,000",
+    "/deal/fr-lencloitre-123k-157528: 2-bedroom house in Lencloître, France for €123,000",
+    "/deal/gr-chios-volissos-1881-stone-house-175k: 2-bedroom house in Volissos, Greece for €175,000 · RealHunt",
+    "/deal/it-sardinia-luras-stazzo-97k: 2-bedroom farmhouse in Luras, Italy for €97,000 · RealHunt",
+    "/deal/us-geneva-ny-finger-lakes-colonial-240k: 3-bedroom house in Geneva, New York for €218,100 · RealHunt",
+    "/deal/us-lynchburg-va-renovated-victorian-carriage-house-245k: 3-bedroom house in Lynchburg, Virginia for €223,300",
+    "/deal/us-michigan-a-frame-2-5-acres-160k: 3-bedroom cabin in Kenton, Michigan for €173,100 · RealHunt",
+    "/deal/us-tampa-8009-312k: 3-bedroom house in Herchel Heights Rev, Florida for €279,600",
+    "/es/deal/DZ-9LczExWp: Sin confirmar: Casa de campo en Torsebro por 93.823 €",
+    "/es/deal/DclLv7qjKAR: Casa de campo en norte de Suecia, Suecia por 54.000 €",
+    "/es/deal/DdVLmcvoz1P: Sin confirmar: Casa de campo de 4 hab. en Fensbol · 91.000 €",
+    "/es/deal/es-mecina-bombaron-75k-riayjs: Fuera de venta: Casa de campo en Mecina Bombarón · 75.000 €",
+    "/es/deal/it-sardinia-luras-stazzo-97k: Casa de campo de 2 dormitorios en Luras, Italia por 97.000 €",
+    "/es/deal/us-michigan-a-frame-2-5-acres-160k: Cabaña de 3 dormitorios en Kenton, Michigan por 173.100 €"
    ]
   },
   "depth": {
@@ -1370,7 +1391,7 @@
     "deal": {
      "path": "/deal/DZ-9LczExWp",
      "html_kb": 13.7,
-     "html_raw_kb": 43.6,
+     "html_raw_kb": 43.7,
      "jsonld_kb": 4.5,
      "blocking_css_kb": 23.3,
      "entry_js_kb": 81,
