@@ -474,6 +474,8 @@ async function kbSafe(req, u, r) {
 const KB_FIN = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:m\/[^/.]{2,60}|projects\/[a-z0-9-]{1,90}|developers\/[a-z0-9-]{2,90})\/$/; let KB_OT = null; const kbOt = () => KB_OT || (KB_OT = crypto.randomUUID());
 const KB_DVF = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?developers\/[a-z0-9-]{2,90}\/$/, KB_UAB = /bot|crawl|spider|GPT|Claude|anthropic|Perplexity|Bytespider|meta-extern|cohere|Mistral|Diffbot/i;
 const kbFinKey = u => new Request('https://kolaboro.com/__edge/fin1' + u.pathname);
+// n40 k56: a kept copy carries the head script of the deployment that built it; the current one replaces it when served, so a change to it (the consent gate) reaches every copy at once
+const kbLateFix = t => { const a = t.indexOf('(function(w,d){var q=[]'); if (a < 0 || a > 4000) return t; const b = t.indexOf('})(window,document);</script>', a); return b < 0 || t.slice(a, b + 20) === KB_LATE ? t : t.slice(0, a) + KB_LATE + t.slice(b + 20); };
 let ksl = null; const KB_SLZ = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?projects\/[a-z0-9-]{1,90}\/(space\/)?$/;   // n40 k51 (kbx_satlz.js)
 const kbSlz = async (req, u, env, r) => { if (!r || r.status !== 200 || req.method !== 'GET' || !KB_SLZ.test(u.pathname) || req.headers.get('x-kb-sat') === kbOt()) return r; try { if (!ksl) ksl = await import('./kbx_satlz.js'); return await ksl.strip(r, u, kbNonce(r), env); } catch (e) { return r; } };
 async function kbFinGet(req, u, env, ctx, self) {
@@ -482,7 +484,7 @@ async function kbFinGet(req, u, env, ctx, self) {
   const sha = String((env && env.CF_PAGES_COMMIT_SHA) || ''), age = Date.now() - (+hit.headers.get('x-built') || 0), stale = age > 900e3 || (!!sha && hit.headers.get('x-sha') !== sha);
   const bg = () => { if (stale && ctx && ctx.waitUntil && !KB_EDGE_BUSY.has('fin' + u.pathname)) { KB_EDGE_BUSY.add('fin' + u.pathname); const h0 = new Headers(req.headers); h0.set('x-kb-ot', kbOt()); ctx.waitUntil(kbLater().then(() => self.fetch(new Request(req.url, { headers: h0 }), env, ctx)).then(r => r && r.body && r.body.cancel && r.body.cancel()).catch(() => {}).then(() => { KB_EDGE_BUSY.delete('fin' + u.pathname); })); } };
   const h = new Headers(hit.headers), old = ((h.get('content-security-policy') || '') + ' ' + (h.get('content-security-policy-report-only') || '')).match(/'nonce-([A-Za-z0-9+/=]{8,})'/);
-  let t = await hit.text();
+  let t = kbLateFix(await hit.text());
   if (old) { const nw = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(16)))); t = t.split(old[1]).join(nw); for (const k of ['content-security-policy', 'content-security-policy-report-only']) if (h.has(k)) h.set(k, h.get(k).split(old[1]).join(nw)); }
   h.set('cache-control', h.get('x-cc') || 'no-cache'); ['x-built', 'x-sha', 'x-cc'].forEach(k => h.delete(k)); h.set('x-fin-cache', stale ? 'stale' : 'hit'); bg();
   return kbSlz(req, u, env, new Response(t, { status: 200, headers: h }));
@@ -512,7 +514,7 @@ async function kbEdge(req, u, env, ctx, make) {
       const age = Date.now() - (+hit.headers.get('x-built') || 0), stale = age > 900e3 || (!!sha && hit.headers.get('x-sha') !== sha);
       const bg = () => { if (stale && ctx && ctx.waitUntil && !KB_EDGE_BUSY.has(u.pathname)) { KB_EDGE_BUSY.add(u.pathname); ctx.waitUntil(kbLater().then(make).then(keep).catch(() => {}).then(() => { KB_EDGE_BUSY.delete(u.pathname); })); } };
       const h = new Headers(hit.headers), old = ((h.get('content-security-policy') || '') + ' ' + (h.get('content-security-policy-report-only') || '')).match(/'nonce-([A-Za-z0-9+/=]{8,})'/);
-      let t = await hit.text();
+      let t = kbLateFix(await hit.text());
       if (old) { const nw = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(16)))); t = t.split(old[1]).join(nw); for (const k of ['content-security-policy', 'content-security-policy-report-only']) if (h.has(k)) h.set(k, h.get(k).split(old[1]).join(nw)); }
       h.set('cache-control', h.get('x-cc') || 'no-cache'); ['x-built', 'x-sha', 'x-cc'].forEach(k => h.delete(k)); h.set('x-edge-cache', stale ? 'stale' : 'hit'); bg();
       return new Response(t, { status: 200, headers: h });
