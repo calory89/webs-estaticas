@@ -1,6 +1,6 @@
 # Casas baratas en Japón: datos clave y todas las casas de RealHunt
 
-A 27 de noviembre de 2026, RealHunt publica 38 casas en venta en Japón, revisadas una a una por una persona. En Japón, el precio de salida mediano de esas 38 casas es de 54.280 € (468 € por m², calculado con las 22 casas de superficie conocida); la más barata cuesta 7.400 € y la más cara, 159.600 €. Los impuestos y gastos de compra suman alrededor del 6–9% del precio de una casa en Japón (cifras de 2026).
+A 27 de noviembre de 2026, RealHunt publica 30 casas en venta en Japón, revisadas una a una por una persona. En Japón, el precio de salida mediano de esas 30 casas es de 49.680 € (340 € por m², calculado con las 15 casas de superficie conocida); la más barata cuesta 7.400 € y la más cara, 125.400 €. Los impuestos y gastos de compra suman alrededor del 6–9% del precio de una casa en Japón (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/japan · Actualizado el 27 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/japan.json · PDF: https://realhunt.co/data/countries/japan.es.pdf
@@ -9,11 +9,11 @@ También en JSON: https://realhunt.co/data/countries/japan.json · PDF: https://
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 38 |
-| Precio de salida mediano | 54.280 € |
-| Precio mediano por m² | 468 € (22 casas de superficie conocida) |
-| Superficie mediana | 92 m² |
-| La más barata y la más cara | 7.400 € · 159.600 € |
+| Casas en RealHunt | 30 |
+| Precio de salida mediano | 49.680 € |
+| Precio mediano por m² | 340 € (15 casas de superficie conocida) |
+| Superficie mediana | 91 m² |
+| La más barata y la más cara | 7.400 € · 125.400 € |
 | Nota RealHunt mediana (de 70 a 98) | 86 |
 | Impuestos y gastos de compra | 6–9% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sí. Los extranjeros pueden comprar tierra y viviendas en propiedad absoluta en los mismos términos que los ciudadanos japoneses, incluso con un visado de turista, aunque la compra no da visado ni residencia. |
@@ -49,7 +49,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/japan
 
-## Las 38 casas, de mejor a peor nota
+## Las 30 casas, de mejor a peor nota
 
 ### Chalet de montaña con estufa de leña y altillo en el bosque de Hida
 
@@ -106,22 +106,6 @@ https://realhunt.co/es/deal/jp-inami-seaside-villa-20k-503430
 Una cabaña de 2004 de 75 m² en una parcela de 165 m² en propiedad absoluta en un pueblo de vacaciones forestal en Agano, Niigata. Paredes de cedro en toda la propiedad, 3 habitaciones más una habitación de altillo de 20 tatamis, una plataforma de madera y aparcamiento. Renovada en diciembre de 2023; el agua de aguas termales puede conectarse como opción. Precio de salida ¥4 millones, aproximadamente €22.800.
 
 https://realhunt.co/es/deal/jp-agano-forest-cabin-23k-775004
-
-### Villa de madera en Kita-Karuizawa que puede alquilarse como casa de vacaciones
-
-25.600 € · Kita-Karuizawa, Naganohara, Gunma · 60 m² · 2 dormitorios · nota RealHunt 91 · añadida el 2026-11-02
-
-Una villa de una planta de 1990 de 60 m² en una parcela de 410 m² en propiedad en una urbanización bien mantenida en Kita-Karuizawa, Gunma. Sala de estar forrada de madera que se abre a un balcón entre los árboles, dos habitaciones de tatami, cocina equipada. Registrada como apta para alquileres vacacionales. Cuota de urbanización aproximadamente ¥58.000 anuales. Precio de venta ¥4,5 millones, aproximadamente €25.600.
-
-https://realhunt.co/es/deal/jp-kitakaruizawa-villa-26k-093770
-
-### Bungalow a 3 minutos a pie de la playa en Wakayama, fachada nueva en 2025
-
-27.300 € · Kirime, Inami, Wakayama · 59 m² · 3 dormitorios · nota RealHunt 91 · añadida el 2026-11-02
-
-Un bungalow de estructura de acero de 2000 de 59 m² con 3 habitaciones en una parcela de 116 m² en propiedad, a 3 minutos a pie de la playa de Kirime y a 1 km de la estación. Revestimiento exterior nuevo en mayo de 2025, puestas de sol sobre el mar, buena pesca. La parcela de 50 m² contigua también puede comprarse. Precio de venta ¥4,8 millones, aproximadamente €27.300.
-
-https://realhunt.co/es/deal/jp-inami-beach-bungalow-27k-272502
 
 ### Villa de dos plantas renovada en el bosque del Monte Akagi, Gunma
 
@@ -219,14 +203,6 @@ En lo alto de una colina en la isla de Kojima, en Okayama, este refugio de 2 dor
 
 https://realhunt.co/es/deal/Db59YYrjN5h
 
-### Villa japonesa con arroyo, terraza de madera y acceso a aguas termales
-
-38.640 € · Nasu, Tochigi, Japan · 1 dormitorios · nota RealHunt 85 · añadida el 2026-09-23
-
-La casa 1LDK tiene 58㎡ de superficie habitable sobre 265㎡ de terreno en plena propiedad, con un dormitorio, salón-comedor abierto, terraza de madera y un patio interior diáfano que hace que el interior, compacto, se sienta luminoso y acogedor.
-
-https://realhunt.co/es/deal/DdZOxZODE98
-
 ### Casa de una planta totalmente reformada cerca de la costa
 
 39.560 € · Arida, Wakayama, Japan · nota RealHunt 85 · añadida el 2026-09-23
@@ -251,14 +227,6 @@ Esta casa monísima en Japón viene con playa privada por solo 61.000 $. En la t
 
 https://realhunt.co/es/deal/DcEQh3AjBbN
 
-### Casa familiar reformada con vistas al monte Fuji
-
-66.700 € · Fuji, Shizuoka · 88 m² · 3 dormitorios · nota RealHunt 83 · añadida el 2026-10-05
-
-Construida en 2001 y reformada por dentro y por fuera: 3 dormitorios más trastero en 87,6 m², sobre una parcela de 199 m² en la ciudad de Fuji (Shizuoka), con el monte Fuji a la vista desde la primera planta. Aparcamiento para tres coches. Precio: 11.800.000 ¥. Unos 66.700 €. En Japón los extranjeros pueden comprar vivienda sin restricciones.
-
-https://realhunt.co/es/deal/jp-fuji-66k-852751
-
 ### Casa familiar construida por Misawa con vista parcial al mar en la isla de Awaji, Hyogo
 
 54.300 € · Fukakusa, Awaji, Hyogo · 91 m² · 3 dormitorios · nota RealHunt 82 · añadida el 2026-11-18
@@ -275,14 +243,6 @@ Una casa de campo de los años 60 en Kurotani, Takashima, Shiga, con nueve habit
 
 https://realhunt.co/es/deal/Dc56aI-icMP
 
-### Casa de 2012 con 4 dormitorios, reformada, cerca de la costa de Shizuoka
-
-81.900 € · Shimizu, Shizuoka · 92 m² · 4 dormitorios · nota RealHunt 81 · añadida el 2026-10-05
-
-Solo 14 años y reformada: casa de 4 dormitorios y 91,5 m² sobre una parcela de 122 m² en Shimizu (Shizuoka), con cocina equipada, baño nuevo y una habitación de tatami. A un corto trayecto en bus de la estación JR de Okitsu, en la costa. Precio: 14.500.000 ¥. Unos 81.900 €. En Japón los extranjeros pueden comprar vivienda sin restricciones.
-
-https://realhunt.co/es/deal/jp-shimizu-81k-591487
-
 ### Casa de estilo japonés con engawa y jardín en una ciudad de aguas termales
 
 91.080 € · Yugawara, Kanagawa, Japan · nota RealHunt 81 · añadida el 2026-09-23
@@ -291,14 +251,6 @@ Una auténtica casa de estilo japonés de una sola planta con un amplio engawa q
 
 https://realhunt.co/es/deal/DbA4_hKEThx
 
-### Casa de estilo japonés de una planta de 2016 en una gran parcela en esquina cerca de Kaike, Yonago
-
-142.500 € · Kaike-Shinden, Yonago, Tottori · 140 m² · 4 dormitorios · nota RealHunt 81 · añadida el 2026-11-20
-
-Pidiendo ¥25.000.000 (aproximadamente 142.500 euros). Una casa de madera terminada en octubre de 2016 en Kaike-Shinden, Yonago, a corta distancia en coche del complejo de aguas termales de Kaike y su playa en el Mar de Japón. El anuncio la describe como una casa de una planta sin escaleras: 140 m² con cocina de comedor, una habitación de estilo occidental y tres habitaciones de tatami, incluyendo una habitación de 10 esteras con alcoba tokonoma, más un baño con ventana, dos aseos y un corredor de veranda de madera soleado. Todo eléctrico. Se encuentra en una parcela de esquina en régimen de plena propiedad de 510 m² con calles en tres lados, aparcamiento para tres o más coches y un garaje de almacén separado de 33 m². Vacía, entrega inmediata.
-
-https://realhunt.co/es/deal/jp-yonago-kaike-2016-one-floor-japanese-house-143k
-
 ### Casa construida en 2018 en una parcela de 1.181 m² cerca del mar en Shima, Mie
 
 84.500 € · Ago-cho Tategami, Shima, Mie · 106 m² · 2 dormitorios · nota RealHunt 79 · añadida el 2026-11-18
@@ -306,22 +258,6 @@ https://realhunt.co/es/deal/jp-yonago-kaike-2016-one-floor-japanese-house-143k
 Una casa de madera de dos plantas terminada en enero de 2018, mucho más nueva que la mayoría de casas a este precio. 106 m² con dos dormitorios más una trastería y un espacio de salón, comedor y cocina de más de 20 tatami, en una parcela de 1.181 m² en propiedad absoluta en Ago-cho Tategami, en la zona de Ise-Shima en Mie. El anuncio menciona el mar a menos de 2 km, vistas a la montaña, un supermercado a 10 minutos a pie y aparcamiento para tres o más coches. El agua proviene de un pozo y hay una fosa séptica. Se pide 14.800.000 ¥ (alrededor de 84.500 €), aproximadamente 800 €/m².
 
 https://realhunt.co/es/deal/jp-shima-2018-house-large-plot-85k-596606
-
-### Casa de 2016 de cuatro dormitorios de 132 m² en una parcela esquinera en Takashima, Otaru, Hokkaido
-
-116.800 € · Takashima, Otaru, Hokkaido · 132 m² · 4 dormitorios · nota RealHunt 79 · añadida el 2026-11-21
-
-Pidiendo ¥20.490.000 (unos €116.800), menos de €900 por m². Una casa de madera de dos plantas de septiembre de 2016 en una parcela esquinera de propiedad inmueble de 324 m² en una parte residencial tranquila de Otaru, con aparcamiento para cuatro coches. 132 m² con salón y comedor, cocina abierta hacia la sala, cuatro dormitorios, un baño y dos aseos. La empresa vendedora ha realizado un tratamiento de termitas, una comprobación de fugas y equipos y una limpieza completa, y ofrece una garantía de dos años contra fugas y defectos estructurales. Está vacía, y la escuela primaria está a unos 350 m.
-
-https://realhunt.co/es/deal/jp-otaru-takashima-2016-four-bed-house-corner-plot-117k
-
-### Casa de campo japonesa con hogar irori y vigas de madera antigua cerca de Matsumoto, Nagano
-
-159.600 € · Azusagawa-Ueno, Matsumoto, Nagano · 167 m² · 4 dormitorios · nota RealHunt 79 · añadida el 2026-11-21
-
-Pidiendo ¥28.000.000 (unos €159.600). Una casa de dos plantas de mayo de 2003, construida con maderas de unos cien años de antigüedad, en el campo de Azusagawa. 167 m² con un hogar irori hundido en un salón de madera oscura bajo vigas expuestas, cuatro habitaciones de tatami, una habitación en la buhardilla, una cocina y un baño con ventana. Se encuentra en una gran parcela de propiedad inmueble de 1.218 m² con césped y espacio para un huerto. La casa está vacía. La estación de Shin-Shimashima está a 15 minutos a pie. La parcela se encuentra en un área de control de urbanización (shigaika chōsei kuiki), donde la reconstrucción o ampliación pueden estar restringidas: consulte con el agente antes de planificar trabajos.
-
-https://realhunt.co/es/deal/jp-matsumoto-azusagawa-house-irori-hearth-old-timbers-160k
 
 ### Casa de cuatro dormitorios de 2004 en Misaki en la península de Miura, Kanagawa
 

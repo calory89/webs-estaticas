@@ -29,8 +29,8 @@ Tax on rental income: Non-residents declare Dutch property in box 3, where tax i
 
 ### Best homes in the Netherlands
 
-- [€325,000 · 107 m² corner flat on the 10th floor with views over nature, Amsterdam](https://realhunt.co/deal/nl-amsterdam-325k-505653) · Gouden Rand, Amsterdam · score 94 · 107 m² · 3 bed
 - [€299,000 · Remodelled corner flat with a south balcony over the canal, Reigersbos](https://realhunt.co/deal/nl-amsterdam-299k-563619) · Reigersbos, Amsterdam · score 94 · 73 m² · 2 bed
+- [€325,000 · 107 m² corner flat on the 10th floor with views over nature, Amsterdam](https://realhunt.co/deal/nl-amsterdam-325k-505653) · Gouden Rand, Amsterdam · score 94 · 107 m² · 3 bed
 - [€299,000 · Three-room flat with a 14 m² south terrace next to Reigersbos metro](https://realhunt.co/deal/nl-amsterdam-299k-968188) · Reigersbos, Amsterdam · score 93 · 72 m² · 2 bed
 - [€335,000 · 93 m² four-room flat with a 13.5 m² balcony by Nelson Mandela Park](https://realhunt.co/deal/nl-amsterdam-335k-962495) · Nelson Mandelapark, Amsterdam · score 90 · 93 m² · 3 bed
 - [€300,000 · Top-floor flat under the eaves with skylights near the Gaasperplas](https://realhunt.co/deal/nl-amsterdam-300k-930369) · Gein, Amsterdam · score 90 · 72 m² · 2 bed
@@ -44,11 +44,11 @@ Tax on rental income: Non-residents declare Dutch property in box 3, where tax i
 
 - [Netherlands vs Spain](https://realhunt.co/countries/netherlands-vs-spain)
 - [Netherlands vs Italy](https://realhunt.co/countries/italy-vs-netherlands)
-- [Netherlands vs United States](https://realhunt.co/countries/netherlands-vs-united-states)
 - [Netherlands vs France](https://realhunt.co/countries/france-vs-netherlands)
+- [Netherlands vs United States](https://realhunt.co/countries/netherlands-vs-united-states)
 - [Netherlands vs Denmark](https://realhunt.co/countries/denmark-vs-netherlands)
+- [Netherlands vs Greece](https://realhunt.co/countries/greece-vs-netherlands)
 - [Netherlands vs Sweden](https://realhunt.co/countries/netherlands-vs-sweden)
-- [Netherlands vs Japan](https://realhunt.co/countries/japan-vs-netherlands)
 - [Netherlands vs Poland](https://realhunt.co/countries/netherlands-vs-poland)
 
 ### Sources

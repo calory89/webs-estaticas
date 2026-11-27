@@ -1,6 +1,6 @@
 # Casas baratas en el Reino Unido: datos clave y todas las casas de RealHunt
 
-A 27 de noviembre de 2026, RealHunt publica 7 casas en venta en el Reino Unido, revisadas una a una por una persona. En el Reino Unido, el precio de salida mediano de esas 7 casas es de 126.500 € (1.807 € por m², calculado con las 6 casas de superficie conocida); la más barata cuesta 82.600 € y la más cara, 198.400 €. Los impuestos y gastos de compra suman alrededor del 3–9% del precio de una casa en el Reino Unido (cifras de 2026). Con 7 casas la muestra es pequeña, así que la mediana de el Reino Unido es solo orientativa.
+A 27 de noviembre de 2026, RealHunt publica 5 casas en venta en el Reino Unido, revisadas una a una por una persona. En el Reino Unido, el precio de salida mediano de esas 5 casas es de 161.000 € (1.807 € por m², calculado con las 5 casas de superficie conocida); la más barata cuesta 121.000 € y la más cara, 198.400 €. Los impuestos y gastos de compra suman alrededor del 3–9% del precio de una casa en el Reino Unido (cifras de 2026). Con 5 casas la muestra es pequeña, así que la mediana de el Reino Unido es solo orientativa.
 
 Fuente: RealHunt, https://realhunt.co/es/homes/united-kingdom · Actualizado el 27 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/united-kingdom.json · PDF: https://realhunt.co/data/countries/united-kingdom.es.pdf
@@ -9,11 +9,11 @@ También en JSON: https://realhunt.co/data/countries/united-kingdom.json · PDF:
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 7 (muestra pequeña) |
-| Precio de salida mediano | 126.500 € |
-| Precio mediano por m² | 1.807 € (6 casas de superficie conocida) |
+| Casas en RealHunt | 5 (muestra pequeña) |
+| Precio de salida mediano | 161.000 € |
+| Precio mediano por m² | 1.807 € (5 casas de superficie conocida) |
 | Superficie mediana | 80 m² |
-| La más barata y la más cara | 82.600 € · 198.400 € |
+| La más barata y la más cara | 121.000 € · 198.400 € |
 | Nota RealHunt mediana (de 70 a 98) | 83 |
 | Impuestos y gastos de compra | 3–9% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sí. No hay restricciones de nacionalidad para comprar viviendas en ninguna parte del Reino Unido ni se necesita visado, pero la compra no da derecho a vivir allí. |
@@ -48,23 +48,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/united-kingdom
 
-## Las 7 casas, de mejor a peor nota
-
-### Casa de dos dormitorios con mucho estilo y chimenea abierta
-
-82.600 € · Shildon, County Durham · 72 m² · 2 dormitorios · nota RealHunt 89 · añadida el 2026-10-06
-
-Unos 72 m² de estancias muy bien presentadas en Shildon (condado de Durham): chimenea abierta, un baño completo con mucho estilo y dos dormitorios dobles, mejorada con cariño por los dueños actuales y lista para entrar. Precio: 70.000 £. unos 82.600 €. En el Reino Unido cualquiera puede comprar vivienda. El impuesto de compra depende de si será tu única vivienda.
-
-https://realhunt.co/es/deal/uk-shildon-82k-780165
-
-### Bungalow luminoso con jardín cerca del centro y la playa de Blyth
-
-88.500 € · Blyth, Northumberland · 1 dormitorios · nota RealHunt 88 · añadida el 2026-10-06
-
-Un bungalow pareado encantador de un dormitorio, con cocina moderna, salón luminoso, baño con ducha, aparcamiento propio y jardín con césped, cerca del centro de Blyth y de su larga playa de arena en la costa de Northumberland. Precio: 75.000 £. unos 88.500 €. En el Reino Unido cualquiera puede comprar vivienda. El impuesto de compra depende de si será tu única vivienda.
-
-https://realhunt.co/es/deal/uk-blyth-88k-869241
+## Las 5 casas, de mejor a peor nota
 
 ### Casa de dos dormitorios amueblada con vistas al fiordo de Moray en la ciudad portuaria de Macduff
 

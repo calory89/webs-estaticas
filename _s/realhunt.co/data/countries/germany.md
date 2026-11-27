@@ -1,6 +1,6 @@
 # Cheap homes in Germany: key facts and every home on RealHunt
 
-On 27 November 2026, RealHunt lists 21 homes for sale in Germany, each one checked by a person. In Germany, the median asking price of those 21 homes is €55,000 (€1,053 per m², from the 21 homes with a known size); the cheapest costs €40,000 and the most expensive €199,000. Taxes and fees add about 5–8.5% to the price of a home in Germany (figures as of 2026).
+On 27 November 2026, RealHunt lists 18 homes for sale in Germany, each one checked by a person. In Germany, the median asking price of those 18 homes is €55,000 (€1,078 per m², from the 18 homes with a known size); the cheapest costs €40,000 and the most expensive €199,000. Taxes and fees add about 5–8.5% to the price of a home in Germany (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/germany · Updated 27 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/germany.json · PDF: https://realhunt.co/data/countries/germany.pdf
@@ -9,10 +9,10 @@ Also as JSON: https://realhunt.co/data/countries/germany.json · PDF: https://re
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 21 |
+| Homes on RealHunt | 18 |
 | Median asking price | €55,000 |
-| Median price per m² | €1,053 (21 homes with a known size) |
-| Median size | 51 m² |
+| Median price per m² | €1,078 (18 homes with a known size) |
+| Median size | 54 m² |
 | Cheapest and most expensive | €40,000 · €199,000 |
 | Median RealHunt score (70 to 98) | 80 |
 | Taxes and fees to buy | 5–8.5% of the price (as of 2026) |
@@ -47,7 +47,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/germany
 
-## The 21 homes, best score first
+## The 18 homes, best score first
 
 ### Sunny attic flat with a balcony for €40,000 in Chemnitz
 
@@ -56,14 +56,6 @@ Full guide: https://realhunt.co/guide/germany
 54 m² under the roof of a well-kept 1930s building, 4.4 km from the centre: a hallway, a living room, a bedroom, a daylight bathroom with a bath and a kitchen opening onto a balcony over a quiet courtyard. Laminate and tiles; the balcony decking is due to be replaced by the owners' association. Asking €40,000, about €742/m².
 
 https://realhunt.co/deal/de-chemnitz-40k-931045
-
-### 72 m² flat in a listed building near the university, vacant
-
-€50,000 · Schloßchemnitz, Chemnitz · 72 m² · 1 bedrooms · RealHunt score 86 · added 2026-10-13
-
-71.8 m² on the 3rd floor of a listed building (renovated around 1994) in Schloßchemnitz, close to the centre and the university: a large kitchen, a living room, a bedroom and a big daylight bathroom with a bath and a shower. Freshly painted, laminate floors, free now. About €695/m². Asking €50,000, about €696/m².
-
-https://realhunt.co/deal/de-chemnitz-50k-665910
 
 ### 65 m² attic flat with skylights and a balcony in Chemnitz-Gablenz
 
@@ -80,14 +72,6 @@ https://realhunt.co/deal/de-chemnitz-55k-462680
 71.3 m² on the 1st floor of a four-flat building in Fischbach: a large living room, a bedroom, a children's room or office, a kitchen, a shower room, a storeroom and a cellar. Bright, with new laminate throughout; about 10 minutes by car from Saarbrücken. Asking €55,000, about €771/m².
 
 https://realhunt.co/deal/de-quierschied-55k-581809
-
-### Renovated two-room flat with a new kitchen and garden in the Kaßberg
-
-€45,000 · Kaßberg, Chemnitz · 49 m² · 1 bedrooms · RealHunt score 83 · added 2026-10-13
-
-49.5 m² on the ground floor of a 1912 period building on a leafy Kaßberg street: an open living and dining room with a new white fitted kitchen, a bedroom, a tiled bathroom with a bath and a shared garden. Vacant and ready to move in. Asking €45,000, about €909/m².
-
-https://realhunt.co/deal/de-chemnitz-45k-234628
 
 ### Fully renovated period flat with a south balcony
 
@@ -152,14 +136,6 @@ https://realhunt.co/deal/de-krefeld-50k-993543
 41 m² on the 3rd floor of the listed building at Gerhart-Hauptmann-Platz 1, one of the few on the square to survive the war, restored in 1998: a furnished room with a sleeping loft, a red fitted kitchen and an Italian marble bathroom. Sold privately by the original owners, no commission; it has been let furnished. Asking €50,000, about €1,220/m².
 
 https://realhunt.co/deal/de-chemnitz-50k-826803
-
-### Furnished studio on a quiet street in Wuppertal-Langerfeld
-
-€50,000 · Langerfeld, Wuppertal · 34 m² · RealHunt score 77 · added 2026-10-13
-
-34 m² on the 1st floor: a living-sleeping room, a fitted kitchen with a dining table, a shower room and a cellar. Quiet residential street with good bus links into Wuppertal; service charge €340 a month. Asking €50,000, about €1,471/m².
-
-https://realhunt.co/deal/de-wuppertal-50k-248035
 
 ### Two-room flat in a red-brick period building in Chemnitz-Altendorf
 

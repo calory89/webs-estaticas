@@ -43,11 +43,11 @@ Impuesto sobre los ingresos por alquiler: El alquiler pagado en el extranjero a 
 
 - [República Dominicana vs España](https://realhunt.co/es/countries/dominican-republic-vs-spain)
 - [República Dominicana vs Italia](https://realhunt.co/es/countries/dominican-republic-vs-italy)
-- [República Dominicana vs Estados Unidos](https://realhunt.co/es/countries/dominican-republic-vs-united-states)
 - [República Dominicana vs Francia](https://realhunt.co/es/countries/dominican-republic-vs-france)
+- [República Dominicana vs Estados Unidos](https://realhunt.co/es/countries/dominican-republic-vs-united-states)
 - [República Dominicana vs Dinamarca](https://realhunt.co/es/countries/denmark-vs-dominican-republic)
+- [República Dominicana vs Grecia](https://realhunt.co/es/countries/dominican-republic-vs-greece)
 - [República Dominicana vs Suecia](https://realhunt.co/es/countries/dominican-republic-vs-sweden)
-- [República Dominicana vs Japón](https://realhunt.co/es/countries/dominican-republic-vs-japan)
 - [República Dominicana vs Polonia](https://realhunt.co/es/countries/dominican-republic-vs-poland)
 
 ### Fuentes

@@ -31,12 +31,12 @@ Impuesto sobre los ingresos por alquiler: Las personas no residentes pagan un 30
 
 - [62.300 € · Adosado de ladrillo de tres dormitorios con jardín cerca de la costa sur en Skivarp](https://realhunt.co/es/deal/se-skivarp-62k-1795989) · Skivarp, Skurup, Skåne (a unos 60 min de Copenhague) · nota 93 · 102 m² · 3 dorm.
 - [25.960 € · Villa acogedora con sauna, a 100 m del río](https://realhunt.co/es/deal/DdPBLT2CLlb) · Norriån, Boden, Norrbotten · nota 93
-- [78.000 € · Casa de 1945 muy reformada en 2.800 m² de jardín y bosque](https://realhunt.co/es/deal/Dce2FjbIxt8) · Markaryd, Kronoberg, Småland, Suecia · nota 93 · 800 m² · 2 dorm.
 - [54.000 € · Casita en 6.148 m² de jardín y bosque cerca de dos lagos](https://realhunt.co/es/deal/DcNI1r5oM57) · Eringsboda, Blekinge, Suecia · nota 93 · 148 m² · 3 dorm.
 - [59.000 € · Casa con dos viviendas, pozas en el río para bañarse y calefacción geotérmica](https://realhunt.co/es/deal/Dc-RMNwIPpv) · Tegsnäset, Västerbotten, Suecia · nota 92 · 156 m² · 4 dorm.
-- [55.000 € · Casa de 1914 con vistas al lago, casa de invitados y garaje doble en 6.525 m²](https://realhunt.co/es/deal/DcaE8pfoH77) · Naggen, Medelpad, Suecia · nota 92 · 120 m² · 2 dorm.
+- [82.000 € · Villa sueca con porche acristalado y gran jardín en Gnarp](https://realhunt.co/es/deal/se-gnarp-villa-glazed-porch-82k) · Gnarp, Nordanstig, Gävleborg · nota 90 · 117 m² · 4 dorm.
+- [67.200 € · Piso pasante de tres dormitorios con balcón soleado en Malmö](https://realhunt.co/es/deal/se-malmo-rosengard-67k-1678590) · Apelgården, Malmö (a unos 40 min de Copenhague) · nota 90 · 84 m² · 3 dorm.
 
-[Las 41 casas en Suecia](https://realhunt.co/es/homes/sweden)
+[Las 37 casas en Suecia](https://realhunt.co/es/homes/sweden)
 
 [Gastos, impuestos y fuentes de Suecia](https://realhunt.co/es/costs/sweden) · [Calculadora de gastos de compra para Suecia](https://realhunt.co/es/buying-costs/sweden) · [¿Puedo comprar allí? Normas por nacionalidad](https://realhunt.co/es/can-i-buy)
 
@@ -44,12 +44,12 @@ Impuesto sobre los ingresos por alquiler: Las personas no residentes pagan un 30
 
 - [Suecia vs España](https://realhunt.co/es/countries/spain-vs-sweden)
 - [Suecia vs Italia](https://realhunt.co/es/countries/italy-vs-sweden)
-- [Suecia vs Estados Unidos](https://realhunt.co/es/countries/sweden-vs-united-states)
 - [Suecia vs Francia](https://realhunt.co/es/countries/france-vs-sweden)
+- [Suecia vs Estados Unidos](https://realhunt.co/es/countries/sweden-vs-united-states)
 - [Suecia vs Dinamarca](https://realhunt.co/es/countries/denmark-vs-sweden)
-- [Suecia vs Japón](https://realhunt.co/es/countries/japan-vs-sweden)
-- [Suecia vs Polonia](https://realhunt.co/es/countries/poland-vs-sweden)
 - [Suecia vs Grecia](https://realhunt.co/es/countries/greece-vs-sweden)
+- [Suecia vs Polonia](https://realhunt.co/es/countries/poland-vs-sweden)
+- [Suecia vs Japón](https://realhunt.co/es/countries/japan-vs-sweden)
 
 ### Fuentes
 

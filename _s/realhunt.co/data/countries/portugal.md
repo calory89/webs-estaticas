@@ -1,6 +1,6 @@
 # Cheap homes in Portugal: key facts and every home on RealHunt
 
-On 27 November 2026, RealHunt lists 21 homes for sale in Portugal, each one checked by a person. In Portugal, the median asking price of those 21 homes is €130,000 (€1,364 per m², from the 21 homes with a known size); the cheapest costs €48,000 and the most expensive €189,000. Taxes and fees add about 3–12% to the price of a home in Portugal (figures as of 2026).
+On 27 November 2026, RealHunt lists 20 homes for sale in Portugal, each one checked by a person. In Portugal, the median asking price of those 20 homes is €150,000 (€1,510 per m², from the 20 homes with a known size); the cheapest costs €48,000 and the most expensive €200,000. Taxes and fees add about 3–12% to the price of a home in Portugal (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/portugal · Updated 27 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/portugal.json · PDF: https://realhunt.co/data/countries/portugal.pdf
@@ -9,12 +9,12 @@ Also as JSON: https://realhunt.co/data/countries/portugal.json · PDF: https://r
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 21 |
-| Median asking price | €130,000 |
-| Median price per m² | €1,364 (21 homes with a known size) |
+| Homes on RealHunt | 20 |
+| Median asking price | €150,000 |
+| Median price per m² | €1,510 (20 homes with a known size) |
 | Median size | 96 m² |
-| Cheapest and most expensive | €48,000 · €189,000 |
-| Median RealHunt score (70 to 98) | 85 |
+| Cheapest and most expensive | €48,000 · €200,000 |
+| Median RealHunt score (70 to 98) | 84 |
 | Taxes and fees to buy | 3–12% of the price (as of 2026) |
 | Can foreigners buy? | Yes, same rights as Portuguese citizens (IMT increase for foreign second-home buyers announced Sept 2025). |
 | Yearly property tax | IMI 0.3-0.45% of taxable value (urban), set by municipality. |
@@ -44,7 +44,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/portugal
 
-## The 21 homes, best score first
+## The 20 homes, best score first
 
 ### Restored single-storey Alentejo house with reed ceilings near Mértola
 
@@ -53,22 +53,6 @@ Full guide: https://realhunt.co/guide/portugal
 A typical single-storey Alentejo house in Penilhos, about 20 km from Mértola and 25 km from Castro Verde. Recently rehabilitated keeping the original features: traditional wooden interior doors, reed ceilings and an Alentejo kitchen. Living room, kitchen, two bedrooms and two bathrooms, in good condition. Easy access and parking in the street. Asking €68,500, about €913/m².
 
 https://realhunt.co/deal/pt-mertola-68k-313027
-
-### Five-bedroom house with garage and balconies in a Trás-os-Montes village near Miranda do Douro
-
-€100,000 · São Pedro da Silva, Miranda do Douro, Bragança · 158 m² · 5 bedrooms · RealHunt score 91 · added 2026-11-14
-
-A five-bedroom house in the centre of São Pedro da Silva, in Miranda do Douro. 238 m² of built area over three floors with a garage and balconies, and bright rooms with wooden floors. A roomy home for a large family or a second residence in Trás-os-Montes. Asking €100,000, about €633/m².
-
-https://realhunt.co/deal/pt-miranda-do-douro-100k-350867
-
-### Five-bedroom house with two kitchens, central heating and a new roof in Silvares, Fundão
-
-€110,000 · Silvares, Fundão, Castelo Branco · 176 m² · 5 bedrooms · RealHunt score 91 · added 2026-11-14
-
-A five-bedroom house on four floors in Silvares, with good-sized rooms throughout. Two fitted kitchens, two bathrooms, a large living and dining room, a basement and an attic. Balconies look out over the village, there is central heating and the roof was renovated recently. Energy certificate D. Asking €110,000, about €625/m².
-
-https://realhunt.co/deal/pt-silvares-110k-271372
 
 ### Fully remodelled Alentejo village house with wooden ceilings in Chança, Alter do Chão
 
@@ -93,14 +77,6 @@ https://realhunt.co/deal/pt-vila-nova-de-paiva-117k-355340
 A detached house open on all four sides in the quiet village of Brunhoso. The ground floor has a good garage, a laundry, a shower room and the boiler for the central heating, plus a garden with a barbecue area and a borehole. The first floor has a fitted kitchen with an open fireplace and a balcony, a living room and a dining room. Asking €125,000, about €735/m².
 
 https://realhunt.co/deal/pt-brunhoso-125k-258088
-
-### Fully remodelled three-storey house 50 metres from the town gates of Castelo de Vide
-
-€145,000 · Castelo de Vide, Portalegre · 126 m² · 2 bedrooms · RealHunt score 91 · added 2026-11-14
-
-A fully remodelled house on three floors in the heart of Castelo de Vide, 50 metres from the town gates and the historic centre. Two bedrooms and two bathrooms, a new white kitchen and pine floors upstairs. 126 m², whitewashed outside like the rest of the street. Asking €145,000, about €1,151/m².
-
-https://realhunt.co/deal/pt-castelo-de-vide-145k-284590
 
 ### Furnished village house with terrace and hill views, ready to move into, in Mação
 
@@ -134,14 +110,6 @@ A T2 house with a terrace in Sobral, Carregal do Sal, in the Dão wine region: k
 
 https://realhunt.co/deal/pt-carregal-do-sal-76k-1bjc5q
 
-### Renovated stone house with Douro valley views in Samodães, Lamego, sold furnished
-
-€99,000 · Samodães, Lamego, Viseu · 70 m² · 2 bedrooms · RealHunt score 85 · added 2026-11-18
-
-A traditional house in Samodães, above the Douro near Lamego, fully rebuilt and renovated in 2025 and sold furnished and equipped. 70 m² on two floors: a living room with exposed schist walls, new beams, a kitchenette and a dining table downstairs, two bedrooms and a shower room upstairs. The windows look across terraced vineyards to a bend of the river. It already holds a local lodging licence (AL), so it can be used as a home or let to visitors. Freshly whitewashed outside with new wooden shutters. Private sale. Asking €99,000, about €1,415/m².
-
-https://realhunt.co/deal/pt-douro-lamego-samodaes-river-view-house-99k
-
 ### Freshly painted three-bedroom village house near the Sabor lakes
 
 €48,000 · Brunhoso, Mogadouro · 100 m² · 3 bedrooms · RealHunt score 84 · added 2026-10-14
@@ -150,13 +118,13 @@ A bright yellow-and-blue two-storey house in Brunhoso, 8 km from Mogadouro: a li
 
 https://realhunt.co/deal/pt-mogadouro-48k-19109522
 
-### Renovated, furnished flat in a garden resort with pool near Tavira
+### Renovated 2-bedroom house with balcony and wood-burning stove in Candal, Viseu, Beira Alta
 
-€183,000 · Moncarapacho, Tavira (Algarve) · 68 m² · 1 bedrooms · RealHunt score 83 · added 2026-10-11
+€160,000 · Candal, Viseu, Beira Alta · 131 m² · 2 bedrooms · RealHunt score 84 · added 2026-11-27
 
-A 68 m² flat in the Colina Verde Resort in Moncarapacho, among olive trees, palms and lawns a few kilometres from the Algarve coast between Tavira and Olhão. Recently renovated and sold fully furnished: a large, bright living and dining room flowing into an open kitchen, a bedroom and a bathroom, with the resort's pool and gardens outside. Faro airport is 25 minutes away.
+The house has been renovated with quality finishes. It has two storeys, two bedrooms with built-in wardrobes, and two bathrooms, one of them a service bathroom on the ground floor. Features include a balcony, a fully equipped kitchen, air conditioning, a wood-burning stove, and solar panels for hot water and a water heater. Arouca is 18 km away and São Pedro do Sul is 23.5 km away, with access to national roads and the PR3 Rota da Cárcoda walking path. Asking €160,000, about €1,221/m².
 
-https://realhunt.co/deal/pt-tavira-183k-300012
+https://realhunt.co/deal/pt-candal-renovated-storey-house-wood-stove-160k
 
 ### Renovated detached house with open hill views in the eastern Algarve, near Alcoutim
 
@@ -182,6 +150,14 @@ A neat three-storey village house in Paradela da Cortiça with an open view of t
 
 https://realhunt.co/deal/pt-centro-penacova-paradela-village-house-views-189k
 
+### Traditional 2-bedroom house with fireplace and large patio in Crato, Alentejo
+
+€200,000 · Crato, Alentejo · 157 m² · 2 bedrooms · RealHunt score 80 · added 2026-11-27
+
+This 157 m² house has three rooms, including two bedrooms, and excellent natural lighting. The kitchen has rustic cabinets, a granite countertop and direct access outside, and the dining room has a fireplace. A large garage fits three cars and includes storage, and the property has air conditioning and an east orientation. Outside, a large patio suits outdoor meals and relaxing. It stands on a paved street a few minutes from essential services and close to the Flor da Rosa Monastery. Asking €200,000, about €1,274/m².
+
+https://realhunt.co/deal/pt-crato-fireplace-patio-garage-countryside-200k
+
 ### Two-bedroom house with fenced garden and river views near Marvão, Alentejo
 
 €140,000 · Ponte Velha, Marvão, Portalegre · 70 m² · 2 bedrooms · RealHunt score 79 · added 2026-11-20
@@ -206,6 +182,14 @@ A single-storey Alentejo cottage with blue trim and a red door on a cobbled stre
 
 https://realhunt.co/deal/pt-alentejo-alcaria-ruiva-renovated-cottage-95k
 
+### Traditional single-story house with private patio and land in Baleizão, Alentejo
+
+€179,000 · Baleizão, Alentejo · 83 m² · 3 bedrooms · RealHunt score 77 · added 2026-11-27
+
+This traditional single-story Alentejo house in Baleizão is fully furnished and ready to move in. It has three bedrooms and a living room on one side, and a kitchen and bathroom on the other, with separate street access to each part. A private patio sits between the two sections and is easy to maintain. The village is about 12 km from Beja, with a café and a small supermarket, and Beja offers more shops, services and an inland river beach. Asking €179,000, about €2,157/m².
+
+https://realhunt.co/deal/pt-baleizao-traditional-alentejo-patio-house-179k
+
 ### Fully restored granite house with a private garden in Bravães, Ponte da Barca
 
 €156,000 · Bravães, Ponte da Barca, Viana do Castelo · 74 m² · 2 bedrooms · RealHunt score 76 · added 2026-11-18
@@ -213,3 +197,11 @@ https://realhunt.co/deal/pt-alentejo-alcaria-ruiva-renovated-cottage-95k
 A traditional Minho house in Bravães, a few minutes from the centre of Ponte da Barca, restored from top to bottom with a completely new roof. The works kept the exposed granite walls and the stone window seats and added a white fitted kitchen, pine ceilings, new floors and two bathrooms. Two bedrooms plus an extra room that can serve as an office, 74 m² in all, and a walled private garden with lawn. Good sun and quick access to the IC28 towards Viana do Castelo, Braga and Galicia. Built in 1937, energy certificate E. Asking €156,000.
 
 https://realhunt.co/deal/pt-minho-bravaes-restored-stone-house-156k
+
+### Renovated villa with river views and garden in Alcoutim, Algarve
+
+€199,900 · Alcoutim, Algarve · 70 m² · 1 bedrooms · RealHunt score 76 · added 2026-11-27
+
+Fully renovated traditional villa over two floors, with its original design respected. The ground floor has a living room with fireplace and air conditioning, plus an independent kitchen with hob, dishwasher and refrigerator. Upstairs, the single bedroom has a shower bathroom and a private terrace for enjoying the river views. The wooded garden has two independent accesses and a water well. The villa is about 15 minutes from Alcoutim and 30 minutes from Vila Real de Santo António. Asking €199,900, about €2,856/m².
+
+https://realhunt.co/deal/pt-alcoutim-renovated-villa-river-views-garden-199k

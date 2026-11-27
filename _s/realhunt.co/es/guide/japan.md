@@ -33,10 +33,10 @@ Impuesto sobre los ingresos por alquiler: El alquiler pagado a un no residente t
 - [7.400 € · Chalet de montaña con estufa de leña y altillo en el bosque de Hida](https://realhunt.co/es/deal/jp-takayama-shokawa-chalet-7k-179056) · Shokawa, Takayama, Gifu · nota 91 · 94 m² · 2 dorm.
 - [10.240 € · Cabaña de montaña con agua de aguas termales en el grifo, una gran plataforma y vistas lejanas al mar en Izu](https://realhunt.co/es/deal/jp-izu-amagi-cabin-onsen-10k-835694) · Amagi Kogen, Ito, Shizuoka · nota 91 · 66 m² · 2 dorm.
 - [19.910 € · Casa de vacaciones forrada de madera en una urbanización costera con piscina y pistas de tenis, Wakayama](https://realhunt.co/es/deal/jp-inami-seaside-villa-20k-503430) · Inami, Wakayama · nota 91 · 70 m² · 2 dorm.
-- [25.600 € · Villa de madera en Kita-Karuizawa que puede alquilarse como casa de vacaciones](https://realhunt.co/es/deal/jp-kitakaruizawa-villa-26k-093770) · Kita-Karuizawa, Naganohara, Gunma · nota 91 · 60 m² · 2 dorm.
 - [22.750 € · Cabaña forestal revestida de cedro renovada en 2023, con una plataforma y una gran habitación de altillo](https://realhunt.co/es/deal/jp-agano-forest-cabin-23k-775004) · Shinkoji Village, Agano, Niigata · nota 91 · 75 m² · 3 dorm.
+- [15.930 € · Villa forestal lista para vivir con dos balcones cerca del lago Misasa, Nagano](https://realhunt.co/es/deal/jp-saku-forest-villa-16k-837899) · Misasa, Saku, Nagano · nota 91 · 106 m² · 3 dorm.
 
-[Las 38 casas en Japón](https://realhunt.co/es/homes/japan)
+[Las 30 casas en Japón](https://realhunt.co/es/homes/japan)
 
 [Gastos, impuestos y fuentes de Japón](https://realhunt.co/es/costs/japan) · [Calculadora de gastos de compra para Japón](https://realhunt.co/es/buying-costs/japan) · [¿Puedo comprar allí? Normas por nacionalidad](https://realhunt.co/es/can-i-buy)
 
@@ -44,12 +44,12 @@ Impuesto sobre los ingresos por alquiler: El alquiler pagado a un no residente t
 
 - [Japón vs España](https://realhunt.co/es/countries/japan-vs-spain)
 - [Japón vs Italia](https://realhunt.co/es/countries/italy-vs-japan)
-- [Japón vs Estados Unidos](https://realhunt.co/es/countries/japan-vs-united-states)
 - [Japón vs Francia](https://realhunt.co/es/countries/france-vs-japan)
+- [Japón vs Estados Unidos](https://realhunt.co/es/countries/japan-vs-united-states)
 - [Japón vs Dinamarca](https://realhunt.co/es/countries/denmark-vs-japan)
+- [Japón vs Grecia](https://realhunt.co/es/countries/greece-vs-japan)
 - [Japón vs Suecia](https://realhunt.co/es/countries/japan-vs-sweden)
 - [Japón vs Polonia](https://realhunt.co/es/countries/japan-vs-poland)
-- [Japón vs Grecia](https://realhunt.co/es/countries/greece-vs-japan)
 
 ### Fuentes
 

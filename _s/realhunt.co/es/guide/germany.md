@@ -30,13 +30,13 @@ Impuesto sobre los ingresos por alquiler: Los propietarios no residentes tributa
 ### Mejores casas en Alemania
 
 - [40.000 € · Ático soleado con balcón por 40.000 € en Chemnitz](https://realhunt.co/es/deal/de-chemnitz-40k-931045) · Ebersdorf, Chemnitz · nota 87 · 54 m² · 1 dorm.
-- [50.000 € · Piso de 72 m² en un edificio protegido junto a la universidad, vacío](https://realhunt.co/es/deal/de-chemnitz-50k-665910) · Schloßchemnitz, Chemnitz · nota 86 · 72 m² · 1 dorm.
 - [55.000 € · Ático de 65 m² con ventanas de tejado y balcón en Chemnitz-Gablenz](https://realhunt.co/es/deal/de-chemnitz-55k-462680) · Gablenz, Chemnitz · nota 84 · 65 m² · 1 dorm.
 - [55.000 € · Piso de tres habitaciones y 71 m² con suelos nuevos, a 10 km de Saarbrücken](https://realhunt.co/es/deal/de-quierschied-55k-581809) · Fischbach, Quierschied · nota 84 · 71 m² · 2 dorm.
-- [45.000 € · Piso de dos habitaciones reformado con cocina nueva y jardín en el Kaßberg](https://realhunt.co/es/deal/de-chemnitz-45k-234628) · Kaßberg, Chemnitz · nota 83 · 49 m² · 1 dorm.
 - [55.000 € · Piso de época reformado por completo con balcón al sur](https://realhunt.co/es/deal/de-chemnitz-55k-893563) · Sonnenberg, Chemnitz · nota 83 · 66 m² · 1 dorm.
+- [50.000 € · Piso de tres habitaciones listo para entrar, con logia sobre el parque, en Chemnitz](https://realhunt.co/es/deal/de-chemnitz-50k-950618) · Helbersdorf, Chemnitz · nota 82 · 56 m² · 2 dorm.
+- [50.000 € · Piso de tres habitaciones con balcón a zona verde, sin comisión](https://realhunt.co/es/deal/de-chemnitz-50k-484380) · Markersdorf, Chemnitz · nota 82 · 57 m² · 2 dorm.
 
-[Las 21 casas en Alemania](https://realhunt.co/es/homes/germany)
+[Las 18 casas en Alemania](https://realhunt.co/es/homes/germany)
 
 [Gastos, impuestos y fuentes de Alemania](https://realhunt.co/es/costs/germany) · [Calculadora de gastos de compra para Alemania](https://realhunt.co/es/buying-costs/germany) · [¿Puedo comprar allí? Normas por nacionalidad](https://realhunt.co/es/can-i-buy)
 
@@ -44,11 +44,11 @@ Impuesto sobre los ingresos por alquiler: Los propietarios no residentes tributa
 
 - [Alemania vs España](https://realhunt.co/es/countries/germany-vs-spain)
 - [Alemania vs Italia](https://realhunt.co/es/countries/germany-vs-italy)
-- [Alemania vs Estados Unidos](https://realhunt.co/es/countries/germany-vs-united-states)
 - [Alemania vs Francia](https://realhunt.co/es/countries/france-vs-germany)
+- [Alemania vs Estados Unidos](https://realhunt.co/es/countries/germany-vs-united-states)
 - [Alemania vs Dinamarca](https://realhunt.co/es/countries/denmark-vs-germany)
+- [Alemania vs Grecia](https://realhunt.co/es/countries/germany-vs-greece)
 - [Alemania vs Suecia](https://realhunt.co/es/countries/germany-vs-sweden)
-- [Alemania vs Japón](https://realhunt.co/es/countries/germany-vs-japan)
 - [Alemania vs Polonia](https://realhunt.co/es/countries/germany-vs-poland)
 
 ### Fuentes

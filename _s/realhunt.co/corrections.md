@@ -19,7 +19,7 @@ Date | Home | Before | After
 19 November 2026 | [Modern rustic Ozarks cabin minutes from the river](https://realhunt.co/deal/us-dora-84k-329130) | €84,500 | €86,500
 19 November 2026 | [Gambrel-roof farmhouse with metal roof and heat pump in Maine](https://realhunt.co/deal/us-ashland-89k-672054) | €89,000 | €72,800
 19 November 2026 | [Adirondack farmhouse on 10.8 acres of autumn forest](https://realhunt.co/deal/us-adirondacks-farmhouse-10-acres-179k) | €159,100 | €163,100
-19 November 2026 | [Move-in ready 2-bed house in Marion, Indiana](https://realhunt.co/deal/marion-87150) | €87,150 | €118,300
+19 November 2026 | Move-in ready 2-bed house in Marion, Indiana | €87,150 | €118,300
 19 November 2026 | [Renovated 0-bed condo in Little River, South Carolina](https://realhunt.co/deal/little-river-92471) | €92,471 | €88,800
 19 November 2026 | [Three-bedroom hilltop home with two fireplaces and a panoramic mountain terrace](https://realhunt.co/deal/DdLhHoAESiS) | €90,000 | €85,000
 14 November 2026 | ['La Casa Felice': a 2-bed home in an Umbrian hill village for €48k](https://realhunt.co/deal/it-san-venanzo-48k-knitz9) | €48,000 | €43,500

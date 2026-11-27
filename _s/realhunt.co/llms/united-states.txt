@@ -1,6 +1,6 @@
 # RealHunt: United States
 
-> Homes for sale in United States on RealHunt, with the buying guide and the costs of buying there. Updated 2026-11-27. 62 homes. Index of every country: https://realhunt.co/llms.txt. Licence CC BY 4.0: quote it with a link to the page it comes from. Legal and tax notes are general information, not advice.
+> Homes for sale in United States on RealHunt, with the buying guide and the costs of buying there. Updated 2026-11-27. 61 homes. Index of every country: https://realhunt.co/llms.txt. Licence CC BY 4.0: quote it with a link to the page it comes from. Legal and tax notes are general information, not advice.
 
 
 ---
@@ -16,7 +16,7 @@ List last changed 20 November 2026. Jump to the homes
 - [Cheapest€65,428Updated 3-bed townhouse in McKees Rocks, PennsylvaniaMcKees Rocks, Pennsylvania106 m² · 3 bed · €617/m² · 65 days on RealHunt](https://realhunt.co/deal/mckees-rocks-65428)
 - [Most space for the money€82,875Move-in ready 2-bed house in Chapmanville, West VirginiaChapmanville, West Virginia176 m² · 2 bed · €471/m² · 65 days on RealHunt](https://realhunt.co/deal/chapmanville-82875)
 
-RealHunt lists 61 houses for sale in the United States today, priced from €65,428 to €447,600. The cheapest costs €65,428: [Updated 3-bed townhouse in McKees Rocks, Pennsylvania](https://realhunt.co/deal/mckees-rocks-65428), in McKees Rocks (106 m², 3 bedrooms). The median price is €214,900 (€1,560/m²), against €93,200 (€1,206/m²) for the 726 homes on RealHunt in 24 countries.
+RealHunt lists 61 houses for sale in the United States today, priced from €65,428 to €447,600. The cheapest costs €65,428: [Updated 3-bed townhouse in McKees Rocks, Pennsylvania](https://realhunt.co/deal/mckees-rocks-65428), in McKees Rocks (106 m², 3 bedrooms). The median price is €214,900 (€1,560/m²), against €99,000 (€1,241/m²) for the 703 homes on RealHunt in 23 countries.
 
 Homes
 61
@@ -253,7 +253,7 @@ By region [Florida 25](https://realhunt.co/homes/united-states/florida) [Pennsyl
 
 By area [Boca Raton 4](https://realhunt.co/homes/united-states/boca-raton)
 
-By feature [Near a lake 10](https://realhunt.co/cheap-houses/near-a-lake-in-united-states) [With a garden 26](https://realhunt.co/cheap-houses/with-garden-in-united-states) [With a pool 14](https://realhunt.co/cheap-houses/with-pool-in-united-states) [Stone houses 3](https://realhunt.co/cheap-houses/stone-houses-in-united-states) [Cabins and cottages 8](https://realhunt.co/cheap-houses/cabins-and-cottages-in-united-states) [With a terrace 42](https://realhunt.co/cheap-houses/with-a-terrace-in-united-states) [Move-in ready 12](https://realhunt.co/cheap-houses/turnkey-in-united-states) [With land 6](https://realhunt.co/cheap-houses/with-land-in-united-states) [With a fireplace 5](https://realhunt.co/cheap-houses/with-fireplace-in-united-states) [With a garage 21](https://realhunt.co/cheap-houses/with-garage-in-united-states) [Near an airport 36](https://realhunt.co/cheap-houses/near-an-airport-in-united-states) [Score 90+ 9](https://realhunt.co/cheap-houses/score-90-plus-in-united-states) [New this month 38](https://realhunt.co/cheap-houses/new-this-month-in-united-states) [New this week 13](https://realhunt.co/cheap-houses/new-this-week-in-united-states) [Period features 8](https://realhunt.co/cheap-houses/with-period-features-in-united-states) [Quiet location 14](https://realhunt.co/cheap-houses/quiet-location-in-united-states) [Low community fee 6](https://realhunt.co/cheap-houses/low-community-fee-in-united-states) [Over 120 m² 31](https://realhunt.co/cheap-houses/over-120-sqm-in-united-states)
+By feature [Near a lake 10](https://realhunt.co/cheap-houses/near-a-lake-in-united-states) [With a garden 26](https://realhunt.co/cheap-houses/with-garden-in-united-states) [With a pool 14](https://realhunt.co/cheap-houses/with-pool-in-united-states) [Stone houses 3](https://realhunt.co/cheap-houses/stone-houses-in-united-states) [Cabins and cottages 8](https://realhunt.co/cheap-houses/cabins-and-cottages-in-united-states) [With a terrace 42](https://realhunt.co/cheap-houses/with-a-terrace-in-united-states) [Move-in ready 12](https://realhunt.co/cheap-houses/turnkey-in-united-states) [With land 6](https://realhunt.co/cheap-houses/with-land-in-united-states) [With a fireplace 5](https://realhunt.co/cheap-houses/with-fireplace-in-united-states) [With a garage 21](https://realhunt.co/cheap-houses/with-garage-in-united-states) [Near an airport 36](https://realhunt.co/cheap-houses/near-an-airport-in-united-states) [Score 90+ 9](https://realhunt.co/cheap-houses/score-90-plus-in-united-states) [New this month 38](https://realhunt.co/cheap-houses/new-this-month-in-united-states) [New this week 10](https://realhunt.co/cheap-houses/new-this-week-in-united-states) [Period features 8](https://realhunt.co/cheap-houses/with-period-features-in-united-states) [Quiet location 14](https://realhunt.co/cheap-houses/quiet-location-in-united-states) [Low community fee 6](https://realhunt.co/cheap-houses/low-community-fee-in-united-states) [Over 120 m² 31](https://realhunt.co/cheap-houses/over-120-sqm-in-united-states)
 
 Rankings [The cheapest 20](https://realhunt.co/cheap-houses/cheapest-in-united-states) [Most space for the money 20](https://realhunt.co/cheap-houses/most-space-for-the-money-in-united-states)
 
@@ -263,9 +263,9 @@ In pounds and dollars [Under $100,000 12](https://realhunt.co/cheap-houses/under
 
 Near a city [Near Miami 22](https://realhunt.co/cheap-houses/near-miami)
 
-Neighbouring countries [Canada 16](https://realhunt.co/homes/canada) [Mexico 9](https://realhunt.co/homes/mexico)
+Neighbouring countries [Canada 16](https://realhunt.co/homes/canada) [Mexico 7](https://realhunt.co/homes/mexico)
 
-By country [Spain 153](https://realhunt.co/homes/spain) [Italy 87](https://realhunt.co/homes/italy) [France 47](https://realhunt.co/homes/france) [Denmark 46](https://realhunt.co/homes/denmark) [Sweden 41](https://realhunt.co/homes/sweden) [Japan 36](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 25](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Mexico 9](https://realhunt.co/homes/mexico) [Portugal 8](https://realhunt.co/homes/portugal) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [United Kingdom 6](https://realhunt.co/homes/united-kingdom) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
+By country [Spain 155](https://realhunt.co/homes/spain) [Italy 102](https://realhunt.co/homes/italy) [France 62](https://realhunt.co/homes/france) [Denmark 46](https://realhunt.co/homes/denmark) [Greece 42](https://realhunt.co/homes/greece) [Sweden 37](https://realhunt.co/homes/sweden) [Poland 31](https://realhunt.co/homes/poland) [Japan 30](https://realhunt.co/homes/japan) [Netherlands 18](https://realhunt.co/homes/netherlands) [Germany 18](https://realhunt.co/homes/germany) [Canada 16](https://realhunt.co/homes/canada) [Portugal 11](https://realhunt.co/homes/portugal) [Switzerland 10](https://realhunt.co/homes/switzerland) [Mexico 7](https://realhunt.co/homes/mexico) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Cyprus 4](https://realhunt.co/homes/cyprus) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
 
 How we choose these homes: a person reads every listing and checks its price, size, photos and place before it goes up, and the nightly check takes it off when the advert goes. [How we check homes](https://realhunt.co/how-we-check-homes) 50 of these 61 homes were checked against the original listing in the last 30 days. 5 homes in the United States left RealHunt or were marked as no longer for sale in the last 30 days. [See the log of homes taken off the site](https://realhunt.co/research/removed-homes)
 
@@ -315,7 +315,7 @@ Tax on rental income: By default a non-resident pays 30% of gross rent (or a low
 - [€153,900 · The historic Savage House: a white Victorian with a gingerbread porch](https://realhunt.co/deal/us-north-carolina-victorian-170k) · Scotland Neck, North Carolina · score 91 · 199 m² · 3 bed
 - [€68,917 · Updated 2-bed house in Cleveland, Oklahoma](https://realhunt.co/deal/cleveland-68917) · Cleveland, Oklahoma · score 91 · 98 m² · 2 bed
 
-[All 62 homes in the United States](https://realhunt.co/homes/united-states)
+[All 61 homes in the United States](https://realhunt.co/homes/united-states)
 
 [Costs, taxes and sources for United States](https://realhunt.co/costs/united-states) · [Buying-cost calculator for United States](https://realhunt.co/buying-costs/united-states) · [Can I buy there? Rules by nationality](https://realhunt.co/can-i-buy)
 
@@ -325,10 +325,10 @@ Tax on rental income: By default a non-resident pays 30% of gross rent (or a low
 - [United States vs Italy](https://realhunt.co/countries/italy-vs-united-states)
 - [United States vs France](https://realhunt.co/countries/france-vs-united-states)
 - [United States vs Denmark](https://realhunt.co/countries/denmark-vs-united-states)
-- [United States vs Sweden](https://realhunt.co/countries/sweden-vs-united-states)
-- [United States vs Japan](https://realhunt.co/countries/japan-vs-united-states)
-- [United States vs Poland](https://realhunt.co/countries/poland-vs-united-states)
 - [United States vs Greece](https://realhunt.co/countries/greece-vs-united-states)
+- [United States vs Sweden](https://realhunt.co/countries/sweden-vs-united-states)
+- [United States vs Poland](https://realhunt.co/countries/poland-vs-united-states)
+- [United States vs Japan](https://realhunt.co/countries/japan-vs-united-states)
 
 ### Sources
 
@@ -391,7 +391,7 @@ By default a non-resident pays 30% of gross rent (or a lower treaty rate), withh
 - [€200,000 · Victorian house with original oak woodwork opposite a park in Marietta, Ohio](https://realhunt.co/deal/us-marietta-oh-victorian-oak-woodwork-220k) · Marietta, Ohio · score 90 · 191 m² · 3 bed
 - [€79,200 · Blue 1907 cottage with 9-foot ceilings and a new kitchen](https://realhunt.co/deal/us-freeport-83k-605154) · Freeport, Illinois · score 89 · 83 m² · 2 bed
 
-[All 62 homes in the United States](https://realhunt.co/homes/united-states)
+[All 61 homes in the United States](https://realhunt.co/homes/united-states)
 
 [How to buy a home in the United States, step by step](https://realhunt.co/guide/united-states)
 
@@ -403,7 +403,7 @@ Source: https://realhunt.co/data/countries/united-states.md
 
 # Cheap homes in the United States: key facts and every home on RealHunt
 
-On 27 November 2026, RealHunt lists 62 homes for sale in the United States, each one checked by a person. In the United States, the median asking price of those 62 homes is €214,900 (€1,570 per m², from the 62 homes with a known size); the cheapest costs €65,428 and the most expensive €447,600. Taxes and fees add about 2–5% to the price of a home in the United States (figures as of 2026).
+On 27 November 2026, RealHunt lists 61 homes for sale in the United States, each one checked by a person. In the United States, the median asking price of those 61 homes is €214,900 (€1,560 per m², from the 61 homes with a known size); the cheapest costs €65,428 and the most expensive €447,600. Taxes and fees add about 2–5% to the price of a home in the United States (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/united-states · Updated 27 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/united-states.json · PDF: https://realhunt.co/data/countries/united-states.pdf
@@ -412,9 +412,9 @@ Also as JSON: https://realhunt.co/data/countries/united-states.json · PDF: http
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 62 |
+| Homes on RealHunt | 61 |
 | Median asking price | €214,900 |
-| Median price per m² | €1,570 (62 homes with a known size) |
+| Median price per m² | €1,560 (61 homes with a known size) |
 | Median size | 121 m² |
 | Cheapest and most expensive | €65,428 · €447,600 |
 | Median RealHunt score (70 to 98) | 86 |
@@ -451,7 +451,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/united-states
 
-## The 62 homes, best score first
+## The 61 homes, best score first
 
 ### Updated 3-bed house in Huntington, West Virginia
 
@@ -916,14 +916,6 @@ https://realhunt.co/deal/little-river-92471
 74 m² (798 sq ft), 2 bed, 1 bath, built 1965. Asking $109,000. The listing mentions: new cha system, new plumbing, new electrical, new meter loop.
 
 https://realhunt.co/deal/beeville-95089
-
-### Move-in ready 2-bed house in Marion, Indiana
-
-€118,300 · Marion, Indiana · 71 m² · 2 bedrooms · RealHunt score 81 · added 2026-09-23
-
-71 m² (768 sq ft), 2 bed, 1 bath, built 1954. Asking $129,900. The listing mentions: private fenced-in backyard, detached garage, newer gas furnace, newer central air.
-
-https://realhunt.co/deal/marion-87150
 
 ### Two-bedroom with a screened balcony over the fairways at Coronado Tower II
 

@@ -31,12 +31,12 @@ Tax on rental income: Non-resident individuals pay 30% tax on net rental income 
 
 - [€62,300 · Three-bedroom brick townhouse with a garden near the south coast in Skivarp](https://realhunt.co/deal/se-skivarp-62k-1795989) · Skivarp, Skurup, Skåne (about 60 min from Copenhagen) · score 93 · 102 m² · 3 bed
 - [€25,960 · Cosy villa with sauna, 100 m from the river](https://realhunt.co/deal/DdPBLT2CLlb) · Norriån, Boden, Norrbotten · score 93
-- [€78,000 · Extensively renovated 1945 house on 2,800 m² of garden and woodland](https://realhunt.co/deal/Dce2FjbIxt8) · Markaryd, Kronoberg, Småland, Sweden · score 93 · 800 m² · 2 bed
 - [€54,000 · Cottage on 6,148 m² of garden and woodland near two lakes](https://realhunt.co/deal/DcNI1r5oM57) · Eringsboda, Blekinge, Sweden · score 93 · 148 m² · 3 bed
 - [€59,000 · Two-apartment house with river swimming spots and geothermal heat](https://realhunt.co/deal/Dc-RMNwIPpv) · Tegsnäset, Västerbotten, Sweden · score 92 · 156 m² · 4 bed
-- [€55,000 · 1914 home with lake views, guest house and double garage on 6,525 m²](https://realhunt.co/deal/DcaE8pfoH77) · Naggen, Medelpad, Sweden · score 92 · 120 m² · 2 bed
+- [€82,000 · Swedish villa with a glazed porch and big garden in Gnarp](https://realhunt.co/deal/se-gnarp-villa-glazed-porch-82k) · Gnarp, Nordanstig, Gävleborg · score 90 · 117 m² · 4 bed
+- [€67,200 · Through-flat with three bedrooms and a sunny balcony in Malmö](https://realhunt.co/deal/se-malmo-rosengard-67k-1678590) · Apelgården, Malmö (about 40 min from Copenhagen) · score 90 · 84 m² · 3 bed
 
-[All 41 homes in Sweden](https://realhunt.co/homes/sweden)
+[All 37 homes in Sweden](https://realhunt.co/homes/sweden)
 
 [Costs, taxes and sources for Sweden](https://realhunt.co/costs/sweden) · [Buying-cost calculator for Sweden](https://realhunt.co/buying-costs/sweden) · [Can I buy there? Rules by nationality](https://realhunt.co/can-i-buy)
 
@@ -44,12 +44,12 @@ Tax on rental income: Non-resident individuals pay 30% tax on net rental income 
 
 - [Sweden vs Spain](https://realhunt.co/countries/spain-vs-sweden)
 - [Sweden vs Italy](https://realhunt.co/countries/italy-vs-sweden)
-- [Sweden vs United States](https://realhunt.co/countries/sweden-vs-united-states)
 - [Sweden vs France](https://realhunt.co/countries/france-vs-sweden)
+- [Sweden vs United States](https://realhunt.co/countries/sweden-vs-united-states)
 - [Sweden vs Denmark](https://realhunt.co/countries/denmark-vs-sweden)
-- [Sweden vs Japan](https://realhunt.co/countries/japan-vs-sweden)
-- [Sweden vs Poland](https://realhunt.co/countries/poland-vs-sweden)
 - [Sweden vs Greece](https://realhunt.co/countries/greece-vs-sweden)
+- [Sweden vs Poland](https://realhunt.co/countries/poland-vs-sweden)
+- [Sweden vs Japan](https://realhunt.co/countries/japan-vs-sweden)
 
 ### Sources
 

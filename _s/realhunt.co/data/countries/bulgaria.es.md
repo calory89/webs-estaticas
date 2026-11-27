@@ -1,6 +1,6 @@
 # Casas baratas en Bulgaria: datos clave y todas las casas de RealHunt
 
-A 27 de noviembre de 2026, RealHunt publica 7 casas en venta en Bulgaria, revisadas una a una por una persona. En Bulgaria, el precio de salida mediano de esas 7 casas es de 66.000 € (740 € por m², calculado con las 7 casas de superficie conocida); la más barata cuesta 58.900 € y la más cara, 89.000 €. Los impuestos y gastos de compra suman alrededor del 3,2–8,5% del precio de una casa en Bulgaria (cifras de 2026). Con 7 casas la muestra es pequeña, así que la mediana de Bulgaria es solo orientativa.
+A 27 de noviembre de 2026, RealHunt publica 6 casas en venta en Bulgaria, revisadas una a una por una persona. En Bulgaria, el precio de salida mediano de esas 6 casas es de 69.000 € (759 € por m², calculado con las 6 casas de superficie conocida); la más barata cuesta 58.900 € y la más cara, 89.000 €. Los impuestos y gastos de compra suman alrededor del 3,2–8,5% del precio de una casa en Bulgaria (cifras de 2026). Con 6 casas la muestra es pequeña, así que la mediana de Bulgaria es solo orientativa.
 
 Fuente: RealHunt, https://realhunt.co/es/homes/bulgaria · Actualizado el 27 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/bulgaria.json · PDF: https://realhunt.co/data/countries/bulgaria.es.pdf
@@ -9,10 +9,10 @@ También en JSON: https://realhunt.co/data/countries/bulgaria.json · PDF: https
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 7 (muestra pequeña) |
-| Precio de salida mediano | 66.000 € |
-| Precio mediano por m² | 740 € (7 casas de superficie conocida) |
-| Superficie mediana | 87 m² |
+| Casas en RealHunt | 6 (muestra pequeña) |
+| Precio de salida mediano | 69.000 € |
+| Precio mediano por m² | 759 € (6 casas de superficie conocida) |
+| Superficie mediana | 90 m² |
 | La más barata y la más cara | 58.900 € · 89.000 € |
 | Nota RealHunt mediana (de 70 a 98) | 93 |
 | Impuestos y gastos de compra | 3,2–8,5% del precio (cifras de 2026) |
@@ -44,15 +44,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/bulgaria
 
-## Las 7 casas, de mejor a peor nota
-
-### Piso de dos dormitorios con vistas panorámicas al mar en primera línea en Pomorie
-
-59.900 € · Sunset Resort, Pomorie (Black Sea) · 81 m² · 2 dormitorios · nota RealHunt 94 · añadida el 2026-10-14
-
-Piso de 81 m² en la segunda planta del Sunset Resort de Pomorie, en primera línea junto a una playa de arena fina, con vistas panorámicas al mar: dos dormitorios, salón con cocina americana, vestidor, baño y terraza. Totalmente amueblado y equipado. El resort tiene cuatro piscinas exteriores, piscina cubierta, río lento, toboganes para niños, bares y restaurantes. Precio 59.900 €, unos 740 €/m².
-
-https://realhunt.co/es/deal/bg-pomorie-60k-1630398
+## Las 6 casas, de mejor a peor nota
 
 ### Piso amueblado de dos dormitorios con vistas al mar en un complejo cerrado en Kavarna
 

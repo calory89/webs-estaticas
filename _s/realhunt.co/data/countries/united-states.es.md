@@ -1,6 +1,6 @@
 # Casas baratas en Estados Unidos: datos clave y todas las casas de RealHunt
 
-A 27 de noviembre de 2026, RealHunt publica 62 casas en venta en Estados Unidos, revisadas una a una por una persona. En Estados Unidos, el precio de salida mediano de esas 62 casas es de 214.900 € (1.570 € por m², calculado con las 62 casas de superficie conocida); la más barata cuesta 65.428 € y la más cara, 447.600 €. Los impuestos y gastos de compra suman alrededor del 2–5% del precio de una casa en Estados Unidos (cifras de 2026).
+A 27 de noviembre de 2026, RealHunt publica 61 casas en venta en Estados Unidos, revisadas una a una por una persona. En Estados Unidos, el precio de salida mediano de esas 61 casas es de 214.900 € (1.560 € por m², calculado con las 61 casas de superficie conocida); la más barata cuesta 65.428 € y la más cara, 447.600 €. Los impuestos y gastos de compra suman alrededor del 2–5% del precio de una casa en Estados Unidos (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/united-states · Actualizado el 27 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/united-states.json · PDF: https://realhunt.co/data/countries/united-states.es.pdf
@@ -9,9 +9,9 @@ También en JSON: https://realhunt.co/data/countries/united-states.json · PDF: 
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 62 |
+| Casas en RealHunt | 61 |
 | Precio de salida mediano | 214.900 € |
-| Precio mediano por m² | 1.570 € (62 casas de superficie conocida) |
+| Precio mediano por m² | 1.560 € (61 casas de superficie conocida) |
 | Superficie mediana | 121 m² |
 | La más barata y la más cara | 65.428 € · 447.600 € |
 | Nota RealHunt mediana (de 70 a 98) | 86 |
@@ -48,7 +48,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/united-states
 
-## Las 62 casas, de mejor a peor nota
+## Las 61 casas, de mejor a peor nota
 
 ### Casa de 3 dormitorios actualizada en Huntington, Virginia Occidental
 
@@ -513,14 +513,6 @@ https://realhunt.co/es/deal/little-river-92471
 74 m² (798 pies cuadrados), 2 dormitorios, 1 baño, construida en 1965. Precio: 109.000 $. El anuncio menciona: sistema de climatización nuevo, fontanería nueva, instalación eléctrica nueva, acometida eléctrica nueva.
 
 https://realhunt.co/es/deal/beeville-95089
-
-### Casa de 2 dormitorios lista para entrar a vivir en Marion, Indiana
-
-118.300 € · Marion, Indiana · 71 m² · 2 dormitorios · nota RealHunt 81 · añadida el 2026-09-23
-
-71 m² (768 pies cuadrados), 2 dormitorios, 1 baño, construido 1954. Pidiendo $129.900. El anuncio menciona: patio trasero vallado privado, garaje independiente, caldera de gas más reciente, aire central más reciente.
-
-https://realhunt.co/es/deal/marion-87150
 
 ### Apartamento de dos dormitorios con balcón con mosquitero sobre el campo de golf en Coronado Tower II
 

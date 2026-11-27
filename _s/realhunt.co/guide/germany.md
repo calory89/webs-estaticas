@@ -30,13 +30,13 @@ Tax on rental income: Non-resident owners are taxed in Germany on net rental inc
 ### Best homes in Germany
 
 - [€40,000 · Sunny attic flat with a balcony for €40,000 in Chemnitz](https://realhunt.co/deal/de-chemnitz-40k-931045) · Ebersdorf, Chemnitz · score 87 · 54 m² · 1 bed
-- [€50,000 · 72 m² flat in a listed building near the university, vacant](https://realhunt.co/deal/de-chemnitz-50k-665910) · Schloßchemnitz, Chemnitz · score 86 · 72 m² · 1 bed
 - [€55,000 · 65 m² attic flat with skylights and a balcony in Chemnitz-Gablenz](https://realhunt.co/deal/de-chemnitz-55k-462680) · Gablenz, Chemnitz · score 84 · 65 m² · 1 bed
 - [€55,000 · Three-room 71 m² flat with new floors, 10 km from Saarbrücken](https://realhunt.co/deal/de-quierschied-55k-581809) · Fischbach, Quierschied · score 84 · 71 m² · 2 bed
-- [€45,000 · Renovated two-room flat with a new kitchen and garden in the Kaßberg](https://realhunt.co/deal/de-chemnitz-45k-234628) · Kaßberg, Chemnitz · score 83 · 49 m² · 1 bed
 - [€55,000 · Fully renovated period flat with a south balcony](https://realhunt.co/deal/de-chemnitz-55k-893563) · Sonnenberg, Chemnitz · score 83 · 66 m² · 1 bed
+- [€50,000 · Move-in-ready three-room flat with a loggia over the city park in Chemnitz](https://realhunt.co/deal/de-chemnitz-50k-950618) · Helbersdorf, Chemnitz · score 82 · 56 m² · 2 bed
+- [€50,000 · Three-room flat with a balcony over the green, no buyer's commission](https://realhunt.co/deal/de-chemnitz-50k-484380) · Markersdorf, Chemnitz · score 82 · 57 m² · 2 bed
 
-[All 21 homes in Germany](https://realhunt.co/homes/germany)
+[All 18 homes in Germany](https://realhunt.co/homes/germany)
 
 [Costs, taxes and sources for Germany](https://realhunt.co/costs/germany) · [Buying-cost calculator for Germany](https://realhunt.co/buying-costs/germany) · [Can I buy there? Rules by nationality](https://realhunt.co/can-i-buy)
 
@@ -44,11 +44,11 @@ Tax on rental income: Non-resident owners are taxed in Germany on net rental inc
 
 - [Germany vs Spain](https://realhunt.co/countries/germany-vs-spain)
 - [Germany vs Italy](https://realhunt.co/countries/germany-vs-italy)
-- [Germany vs United States](https://realhunt.co/countries/germany-vs-united-states)
 - [Germany vs France](https://realhunt.co/countries/france-vs-germany)
+- [Germany vs United States](https://realhunt.co/countries/germany-vs-united-states)
 - [Germany vs Denmark](https://realhunt.co/countries/denmark-vs-germany)
+- [Germany vs Greece](https://realhunt.co/countries/germany-vs-greece)
 - [Germany vs Sweden](https://realhunt.co/countries/germany-vs-sweden)
-- [Germany vs Japan](https://realhunt.co/countries/germany-vs-japan)
 - [Germany vs Poland](https://realhunt.co/countries/germany-vs-poland)
 
 ### Sources

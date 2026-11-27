@@ -1,6 +1,6 @@
 # Casas baratas en Alemania: datos clave y todas las casas de RealHunt
 
-A 27 de noviembre de 2026, RealHunt publica 21 casas en venta en Alemania, revisadas una a una por una persona. En Alemania, el precio de salida mediano de esas 21 casas es de 55.000 € (1.053 € por m², calculado con las 21 casas de superficie conocida); la más barata cuesta 40.000 € y la más cara, 199.000 €. Los impuestos y gastos de compra suman alrededor del 5–8,5% del precio de una casa en Alemania (cifras de 2026).
+A 27 de noviembre de 2026, RealHunt publica 18 casas en venta en Alemania, revisadas una a una por una persona. En Alemania, el precio de salida mediano de esas 18 casas es de 55.000 € (1.078 € por m², calculado con las 18 casas de superficie conocida); la más barata cuesta 40.000 € y la más cara, 199.000 €. Los impuestos y gastos de compra suman alrededor del 5–8,5% del precio de una casa en Alemania (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/germany · Actualizado el 27 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/germany.json · PDF: https://realhunt.co/data/countries/germany.es.pdf
@@ -9,10 +9,10 @@ También en JSON: https://realhunt.co/data/countries/germany.json · PDF: https:
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 21 |
+| Casas en RealHunt | 18 |
 | Precio de salida mediano | 55.000 € |
-| Precio mediano por m² | 1.053 € (21 casas de superficie conocida) |
-| Superficie mediana | 51 m² |
+| Precio mediano por m² | 1.078 € (18 casas de superficie conocida) |
+| Superficie mediana | 54 m² |
 | La más barata y la más cara | 40.000 € · 199.000 € |
 | Nota RealHunt mediana (de 70 a 98) | 80 |
 | Impuestos y gastos de compra | 5–8,5% del precio (cifras de 2026) |
@@ -47,7 +47,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/germany
 
-## Las 21 casas, de mejor a peor nota
+## Las 18 casas, de mejor a peor nota
 
 ### Ático soleado con balcón por 40.000 € en Chemnitz
 
@@ -56,14 +56,6 @@ Guía completa: https://realhunt.co/es/guide/germany
 54 m² bajo cubierta en un edificio de los años 30 bien cuidado, a 4,4 km del centro: recibidor, salón, dormitorio, baño con luz natural y bañera, y cocina con salida a un balcón sobre un patio tranquilo. Tarima y azulejo; la comunidad tiene que renovar el suelo del balcón. Precio 40.000 €. unos 742 €/m².
 
 https://realhunt.co/es/deal/de-chemnitz-40k-931045
-
-### Piso de 72 m² en un edificio protegido junto a la universidad, vacío
-
-50.000 € · Schloßchemnitz, Chemnitz · 72 m² · 1 dormitorios · nota RealHunt 86 · añadida el 2026-10-13
-
-71,8 m² en la 3ª planta de un edificio protegido (rehabilitado hacia 1994) en Schloßchemnitz, cerca del centro y de la universidad: cocina grande, salón, dormitorio y baño amplio con luz natural, bañera y ducha. Recién pintado, tarima y libre ya. Unos 695 €/m². Precio 50.000 €. unos 696 €/m².
-
-https://realhunt.co/es/deal/de-chemnitz-50k-665910
 
 ### Ático de 65 m² con ventanas de tejado y balcón en Chemnitz-Gablenz
 
@@ -80,14 +72,6 @@ https://realhunt.co/es/deal/de-chemnitz-55k-462680
 71,3 m² en la 1ª planta de un edificio de cuatro viviendas en Fischbach: salón grande, dormitorio, habitación infantil o despacho, cocina, baño con ducha, cuarto de almacenaje y trastero. Luminoso y con tarima nueva en todo el piso; a unos 10 minutos en coche de Saarbrücken. Precio 55.000 €. unos 771 €/m².
 
 https://realhunt.co/es/deal/de-quierschied-55k-581809
-
-### Piso de dos habitaciones reformado con cocina nueva y jardín en el Kaßberg
-
-45.000 € · Kaßberg, Chemnitz · 49 m² · 1 dormitorios · nota RealHunt 83 · añadida el 2026-10-13
-
-49,5 m² en la planta baja de un edificio de 1912 en una calle arbolada del Kaßberg: salón comedor abierto con cocina blanca nueva, dormitorio, baño alicatado con bañera y jardín comunitario. Vacío y listo para entrar. Precio 45.000 €. unos 909 €/m².
-
-https://realhunt.co/es/deal/de-chemnitz-45k-234628
 
 ### Piso de época reformado por completo con balcón al sur
 
@@ -152,14 +136,6 @@ https://realhunt.co/es/deal/de-krefeld-50k-993543
 41 m² en la 3ª planta del edificio protegido de Gerhart-Hauptmann-Platz 1, uno de los pocos de la plaza que sobrevivieron a la guerra, restaurado en 1998: estancia amueblada con altillo para dormir, cocina equipada roja y baño de mármol italiano. Lo venden sus dueños originales, sin comisión; se ha alquilado amueblado. Precio 50.000 €. unos 1.220 €/m².
 
 https://realhunt.co/es/deal/de-chemnitz-50k-826803
-
-### Estudio amueblado en una calle tranquila de Wuppertal-Langerfeld
-
-50.000 € · Langerfeld, Wuppertal · 34 m² · nota RealHunt 77 · añadida el 2026-10-13
-
-34 m² en la 1ª planta: estancia, cocina equipada con mesa de comedor, baño con ducha y trastero. Calle residencial tranquila con buen autobús al centro de Wuppertal; comunidad 340 € al mes. Precio 50.000 €. unos 1.471 €/m².
-
-https://realhunt.co/es/deal/de-wuppertal-50k-248035
 
 ### Piso de dos habitaciones en un edificio de época de ladrillo rojo en Chemnitz-Altendorf
 

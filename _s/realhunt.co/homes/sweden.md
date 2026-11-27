@@ -1,4 +1,4 @@
-Title: Houses for sale in Sweden (41, from €22,000) · RealHunt
+Title: Houses for sale in Sweden (37, from €22,000) · RealHunt
 URL: https://realhunt.co/homes/sweden
 Updated: 2026-11-27
 Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
@@ -9,26 +9,26 @@ List last changed 21 November 2026. Jump to the homes
 
 ### Three picks from this list
 
-- [Best score€78,000Extensively renovated 1945 house on 2,800 m² of garden and woodlandMarkaryd, Småland800 m² · 2 bed · €98/m² · 65 days on RealHunt](https://realhunt.co/deal/Dce2FjbIxt8)
+- [Best score€82,000Swedish villa with a glazed porch and big garden in GnarpGnarp, Gävleborg117 m² · 4 bed · €701/m² · 28 days on RealHunt](https://realhunt.co/deal/se-gnarp-villa-glazed-porch-82k)
 - [Cheapest€22,000Charming wooden house in the forest near a lakeCentral Sweden65 days on RealHunt](https://realhunt.co/deal/Dc6j54PF6hV)
 - [Most space for the money€99,0001926 character home with a full home spa, sauna and geothermal heatingBjurholm, Västerbotten680 m² · 5 bed · €146/m² · 65 days on RealHunt](https://realhunt.co/deal/DdAqg70oDDj)
 
-RealHunt lists 41 houses for sale in Sweden today, priced from €22,000 to €187,400. The cheapest costs €22,000: [Charming wooden house in the forest near a lake](https://realhunt.co/deal/Dc6j54PF6hV), in Central Sweden. The median price is €73,000 (€800/m²), against €93,200 (€1,206/m²) for the 726 homes on RealHunt in 24 countries.
+RealHunt lists 37 houses for sale in Sweden today, priced from €22,000 to €178,900. The cheapest costs €22,000: [Charming wooden house in the forest near a lake](https://realhunt.co/deal/Dc6j54PF6hV), in Central Sweden. The median price is €72,000 (€800/m²), against €99,000 (€1,241/m²) for the 703 homes on RealHunt in 23 countries.
 
 Homes
-41
+37
 
 From
 €22,000
 
 Median price
-€73,000
+€72,000
 
 Median per m²
 €800/m²
 
 Median size
-116 m²
+108 m²
 
 Top score
 93
@@ -42,17 +42,14 @@ Can buy freely
 Data of
 27 Nov 2026
 
-### The 30 best of 41, by score
+### The 30 best of 37, by score
 
 Sorted by RealHunt score, best first. For the cheapest first, see the table below: tap a heading such as Price to sort it. [All homes by the sea](https://realhunt.co/homes/sweden/by-the-sea) [See these homes on the map](https://realhunt.co/map?country=Sweden)
 
-- [Score 93€78,000Extensively renovated 1945 house on 2,800 m² of garden and woodlandMarkaryd, Småland800 m² · 2 bed · €98/m² · 65 days on RealHuntSet along a small country road outside Markaryd, this 1945 house has been extensively updated in a clean, modern style while still offering 2,800…](https://realhunt.co/deal/Dce2FjbIxt8)
 - [Score 90€82,000Swedish villa with a glazed porch and big garden in GnarpGnarp, Gävleborg117 m² · 4 bed · €701/m² · 28 days on RealHuntA well-kept six-room villa with four bedrooms, a glazed porch, a living-room stove and a wood-burning kitchen range, on a 1,050 m² plot.](https://realhunt.co/deal/se-gnarp-villa-glazed-porch-82k)
 - [Score 90New€68,000Renovated red wooden villa with wide valley views near Fränsta, VästernorrlandRombäck, Västernorrland116 m² · 2 bed · €586/m² · 7 days on RealHuntAsking 750,000 SEK (about €68,000) for a 116 m² two-storey wooden house from 1915 on a 2,820 m² plot, under €600 per m².](https://realhunt.co/deal/se-fransta-romback-red-wooden-villa-valley-view-750k-sek)
 - [Score 88€54,000Historic lakeside farm on 1.1 hectaresNorthern Sweden65 days on RealHuntLarge, charming country house with wooden floors and stoves on 1.1 hectares by a lake, 4 km from the village centre.](https://realhunt.co/deal/DclLv7qjKAR)
-- [Score 88€76,000House with a west-facing terrace over the Klarälven riverTorsby, Värmland65 days on RealHuntThis one is all about the view.](https://realhunt.co/deal/Dbr13CDil3R)
 - [Score 87New€77,0001920s villa with geothermal heating and a private garden in central Vansbro, DalarnaVansbro, Dalarna122 m² · 3 bed · €631/m² · 9 days on RealHuntA 1920s house in the middle of Vansbro, on the Västerdal river in Dalarna, with a sheltered 1,651 m² plot next to a playground.](https://realhunt.co/deal/se-vansbro-1920s-villa-geothermal-850k-sek)
-- [Score 84New€187,400Renovated red wooden house on a big countryside plot near Ingelstad, SmålandIngelstads Nöbbele, Kronoberg117 m² · 3 bed · €1,602/m² · 6 days on RealHuntAsking 2,095,000 SEK (about €187,400) for a single-storey red wooden house of 117 m² from 1977 on a 1,643 m² plot in green countryside about 3 km…](https://realhunt.co/deal/se-ingelstad-red-wooden-house-countryside-plot-187k)
 - [Score 84New€178,900Renovated 1920s villa with a glazed veranda and double garage in Lenhovda, SmålandLenhovda, Kronoberg138 m² · 4 bed · €1,296/m² · 6 days on RealHuntAsking 2,000,000 SEK (about €178,900) for a 138 m² wooden villa from 1920 with a mansard roof, about €1,300 per m².](https://realhunt.co/deal/se-lenhovda-renovated-1920s-villa-glazed-veranda-179k)
 - [Score 84New€72,000Red wooden three-bedroom house with conservatory and greenhouse in Arbrå, HälsinglandArbrå, Gävleborg108 m² · 3 bed · €667/m² · 9 days on RealHuntA classic red wooden house with white corners in a central, child-friendly part of Arbrå, in Hälsingland.](https://realhunt.co/deal/se-arbra-red-wooden-house-conservatory-795k-sek)
 - [Score 83€64,000155 m² home with two greenhouses, own irrigation well and double garageÅfors, Småland155 m² · €413/m² · 65 days on RealHuntSet in the small community of Åfors, this 155 m² home comes with generous outdoor space, several practical buildings and plenty of room for…](https://realhunt.co/deal/DcPcCXHgXCK)
@@ -63,7 +60,6 @@ Sorted by RealHunt score, best first. For the cheapest first, see the table belo
 - [Score 93€25,960Cosy villa with sauna, 100 m from the riverNorriån, Norrbotten65 days on RealHuntCosy villa with a sauna, a big garden house and a garage, in a quiet spot 100 m from the river and 800 m from the lake.](https://realhunt.co/deal/DdPBLT2CLlb)
 - [Score 93€54,000Cottage on 6,148 m² of garden and woodland near two lakesEringsboda, Blekinge148 m² · 3 bed · €365/m² · 65 days on RealHuntThe kind of place where you could slow down a little.](https://realhunt.co/deal/DcNI1r5oM57)
 - [Score 92€59,000Two-apartment house with river swimming spots and geothermal heatTegsnäset, Västerbotten156 m² · 4 bed · €378/m² · 65 days on RealHuntCommunity fee not statedA flexible 156 m² house that can be one generous home or keep its current setup of two separate 3-room living areas, one per floor.](https://realhunt.co/deal/Dc-RMNwIPpv)
-- [Score 92€55,0001914 home with lake views, guest house and double garage on 6,525 m²Naggen, Medelpad120 m² · 2 bed · €458/m² · 65 days on RealHuntSet high on a generous plot with views towards the lake, this 1914 home comes with a winterized guest house, several outbuildings and plenty of…](https://realhunt.co/deal/DcaE8pfoH77)
 - [Score 90€67,200Through-flat with three bedrooms and a sunny balcony in MalmöApelgården, Malmö84 m² · 3 bed · €800/m² · 44 days on RealHuntCommunity fee not statedAn 84 m² through-flat on the 6th floor with a lift and open views over the area: a spacious living and dining room, three good bedrooms, a fresh…](https://realhunt.co/deal/se-malmo-rosengard-67k-1678590)
 - [Score 90€22,000Charming wooden house in the forest near a lakeCentral Sweden65 days on RealHuntCharming house with wooden floors and stoves, set in the forest 200 m from the river and 550 m from the lake.](https://realhunt.co/deal/Dc6j54PF6hV)
 - [Score 87€94,100Family townhouse with a garden and a glass room in EslövEslöv, Skåne117 m² · 3 bed · €804/m² · 44 days on RealHuntA 117 m² townhouse on two floors in a well-run, car-free association in Eslöv: a living room opening onto the garden, a kitchen with an island, a…](https://realhunt.co/deal/se-eslov-townhouse-94k-1789899)
@@ -76,10 +72,14 @@ Sorted by RealHunt score, best first. For the cheapest first, see the table belo
 - [Score 85€75,4401917 Forest Cottage with a swimming lake five minutes awayLinneryd, Småland65 days on RealHuntA 1917 Swedish cottage in Småland called Skogshyttan, the Forest Cottage, with a forest literally at the back door and a swimming lake five…](https://realhunt.co/deal/DbQ_FfViI4l)
 - [Score 84€53,000House on 7,600 m² with a new guest cabinVärmlandsnäs, Värmland65 days on RealHuntSet on nearly 7,600 m² of private land, this house offers peaceful surroundings, a spacious terrace, and a newly built guest cabin that’s perfect…](https://realhunt.co/deal/DbC0D4RoLzc)
 - [Score 84€64,000Simple lakeside holiday cottage with extra sleeping cabinsNordanede, Medelpad50 m² · 1 bed · €1,280/m² · 65 days on RealHuntSet near the lake Mellansjön and surrounded by forest, the property has a simple main cottage, extra sleeping spaces in separate outbuildings and…](https://realhunt.co/deal/DczrZZlCl9L)
+- [Score 83€68,0001927 country home with glazed sunroom and geothermal heating on 2,880 m²Fyrås, Jämtland100 m² · 3 bed · €680/m² · 65 days on RealHuntThis 1927 country home sits among forest and open fields, with a sunny garden, a large deck and a newly built glazed sunroom that extends the…](https://realhunt.co/deal/DdFnbsHiEFB)
+- [Score 83€64,000Sea-view cabin with swimming access and boat mooringHornön, Västernorrland36 m² · €1,778/m² · 65 days on RealHuntA compact cabin all about its setting.](https://realhunt.co/deal/DdP0Csyilzz)
+- [Score 80€71,000Woodland summer cabin with guesthouse and swimming lakes nearbyVivljunga, Kronoberg2 bed · 65 days on RealHuntA summer cabin in the woods at Vivljunga, Kronoberg, Sweden, with a separate guesthouse, two bedrooms and lakes for swimming nearby.](https://realhunt.co/deal/DdSVb-ainBZ)
+- [Score 80€81,000Three-bedroom home with sauna, guest cabin, two heated garages and a 2025 sunroomRisögrund, Norrbotten29 m² · 3 bed · €2,793/m² · 65 days on RealHuntA single-storey home with a practical layout: three bedrooms, two terraces and a newly glazed sunroom from 2025.](https://realhunt.co/deal/DdC7bBTgSg1)
 
-Showing the 30 best-scored of 41 homes. The table and the narrower searches below cover the rest.
+Showing the 30 best-scored of 37 homes. The table and the narrower searches below cover the rest.
 
-### Compare the 41 homes, cheapest first
+### Compare the 37 homes, cheapest first
 
 Median price per m² of this list: €800/m².
 
@@ -89,7 +89,6 @@ Home | Place | Price | Size | Per m² | Beds | Score | Added
 [House on 7,600 m² with a new guest cabin](https://realhunt.co/deal/DbC0D4RoLzc) | Värmlandsnäs, Värmland | €53,000 | · | · | · | 84 | 23 Sep 2026
 [Historic lakeside farm on 1.1 hectares](https://realhunt.co/deal/DclLv7qjKAR) | Northern Sweden | €54,000 | · | · | · | 88 | 23 Sep 2026
 [Cottage on 6,148 m² of garden and woodland near two lakes](https://realhunt.co/deal/DcNI1r5oM57) | Eringsboda, Blekinge | €54,000 | 148 m² | €365/m² | 3 | 93 | 23 Sep 2026
-[1914 home with lake views, guest house and double garage on 6,525 m²](https://realhunt.co/deal/DcaE8pfoH77) | Naggen, Medelpad | €55,000 | 120 m² | €458/m² | 2 | 92 | 23 Sep 2026
 [Family house on a green riverside plot](https://realhunt.co/deal/DdTjQGviJh9) | Småland | €55,000 | · | · | · | 79 | 23 Sep 2026
 [Classic 1914 red house with four bedrooms across three levels](https://realhunt.co/deal/DdTIMhiioFc) | Ställdalen, Ljusnarsberg | €56,120 | · | · | 4 | 85 | 23 Sep 2026
 [Two-apartment house with river swimming spots and geothermal heat](https://realhunt.co/deal/Dc-RMNwIPpv) | Tegsnäset, Västerbotten | €59,000 | 156 m² | €378/m² | 4 | 92 | 23 Sep 2026
@@ -107,9 +106,7 @@ Home | Place | Price | Size | Per m² | Beds | Score | Added
 [1909 house in an old leafy garden](https://realhunt.co/deal/Db7aSFMoNPo) | Anneberg, Jönköping | €73,000 | · | · | · | 79 | 23 Sep 2026
 [Former railway keeper's cottage with mountain views](https://realhunt.co/deal/DcAr2EbIAqx) | Vallsta, Gävleborg | €73,000 | 50 m² | €1,460/m² | · | 77 | 23 Sep 2026
 [1917 Forest Cottage with a swimming lake five minutes away](https://realhunt.co/deal/DbQ_FfViI4l) | Linneryd, Småland | €75,440 | · | · | · | 85 | 23 Sep 2026
-[House with a west-facing terrace over the Klarälven river](https://realhunt.co/deal/Dbr13CDil3R) | Torsby, Värmland | €76,000 | · | · | · | 88 | 23 Sep 2026
 [1920s villa with geothermal heating and a private garden in central Vansbro, Dalarna](https://realhunt.co/deal/se-vansbro-1920s-villa-geothermal-850k-sek) | Vansbro, Dalarna | €77,000 | 122 m² | €631/m² | 3 | 87 | 18 Nov 2026
-[Extensively renovated 1945 house on 2,800 m² of garden and woodland](https://realhunt.co/deal/Dce2FjbIxt8) | Markaryd, Småland | €78,000 | 800 m² | €98/m² | 2 | 93 | 23 Sep 2026
 [Three-bedroom home with sauna, guest cabin, two heated garages and a 2025 sunroom](https://realhunt.co/deal/DdC7bBTgSg1) | Risögrund, Norrbotten | €81,000 | 29 m² | €2,793/m² | 3 | 80 | 23 Sep 2026
 [House renovated since 2017, with big garages](https://realhunt.co/deal/Dbt-d51AaH3) | Killeberg, Skåne | €82,000 | · | · | · | 81 | 23 Sep 2026
 [Swedish villa with a glazed porch and big garden in Gnarp](https://realhunt.co/deal/se-gnarp-villa-glazed-porch-82k) | Gnarp, Gävleborg | €82,000 | 117 m² | €701/m² | 4 | 90 | 30 Oct 2026
@@ -124,23 +121,22 @@ Home | Place | Price | Size | Per m² | Beds | Score | Added
 [Bright 1929 flat with three bedrooms near the centre of Landskrona](https://realhunt.co/deal/se-landskrona-98k-1673127) | Landskrona, Skåne | €98,100 | 110 m² | €892/m² | 3 | 86 | 14 Oct 2026
 [1926 character home with a full home spa, sauna and geothermal heating](https://realhunt.co/deal/DdAqg70oDDj) | Bjurholm, Västerbotten | €99,000 | 680 m² | €146/m² | 5 | 85 | 23 Sep 2026
 [Renovated 1920s villa with a glazed veranda and double garage in Lenhovda, Småland](https://realhunt.co/deal/se-lenhovda-renovated-1920s-villa-glazed-veranda-179k) | Lenhovda, Kronoberg | €178,900 | 138 m² | €1,296/m² | 4 | 84 | 21 Nov 2026
-[Renovated red wooden house on a big countryside plot near Ingelstad, Småland](https://realhunt.co/deal/se-ingelstad-red-wooden-house-countryside-plot-187k) | Ingelstads Nöbbele, Kronoberg | €187,400 | 117 m² | €1,602/m² | 3 | 84 | 21 Nov 2026
 
-### The 41 homes in numbers
+### The 37 homes in numbers
 
-- Size: half of them have 116 m² or more. The largest has 800 m²: [Extensively renovated 1945 house on 2,800 m² of garden and woodland](https://realhunt.co/deal/Dce2FjbIxt8).
-- Bedrooms: 2 with 1 bedroom, 4 with 2, 11 with 3, 7 with 4 or more; 17 listings do not say.
-- Type: 4 apartments and 32 houses.
-- Setting: 5 by the sea, 30 in villages, 5 in towns.
-- Where: Skåne (6), Värmland (6), Småland (4), Gävleborg (3), Kronoberg (3), Dalsland (2).
-- Lowest median price: Gävleborg, €73,000 across 3 homes. Highest: Kronoberg, €178,900 across 3.
-- Extras named in the listings: 23 with a garden, 12 with a terrace, 9 with a garage, 1 with a pool, 5 with a fireplace, 4 with a sauna.
-- Scores: 76 to 93 out of 98. The best rated: [Extensively renovated 1945 house on 2,800 m² of garden and woodland](https://realhunt.co/deal/Dce2FjbIxt8).
-- Newest, added 21 November 2026: [Renovated red wooden house on a big countryside plot near Ingelstad, Småland](https://realhunt.co/deal/se-ingelstad-red-wooden-house-countryside-plot-187k). 6 of these homes were added in the last 30 days.
+- Size: half of them have 108 m² or more. The largest has 680 m²: [1926 character home with a full home spa, sauna and geothermal heating](https://realhunt.co/deal/DdAqg70oDDj).
+- Bedrooms: 2 with 1 bedroom, 2 with 2, 10 with 3, 7 with 4 or more; 16 listings do not say.
+- Type: 4 apartments and 28 houses.
+- Setting: 4 by the sea, 27 in villages, 5 in towns.
+- Where: Skåne (6), Värmland (5), Gävleborg (3), Småland (3), Dalsland (2), Kronoberg (2).
+- Lowest median price: Småland, €64,000 across 3 homes. Highest: Skåne, €94,100 across 6.
+- Extras named in the listings: 19 with a garden, 10 with a terrace, 7 with a garage, 1 with a pool, 4 with a fireplace, 4 with a sauna.
+- Scores: 76 to 93 out of 98. The best rated: [Swedish villa with a glazed porch and big garden in Gnarp](https://realhunt.co/deal/se-gnarp-villa-glazed-porch-82k).
+- Newest, added 21 November 2026: [Renovated 1920s villa with a glazed veranda and double garage in Lenhovda, Småland](https://realhunt.co/deal/se-lenhovda-renovated-1920s-villa-glazed-veranda-179k). 5 of these homes were added in the last 30 days.
 
 ### What your money buys here
 
-Split into three groups of the same size by asking price: from €22,000 to €64,000, 14 homes with a median of 120 m², most often 1 bedroom; from €64,000 to €81,000, 13 homes with a median of 100 m², most often 3 bedrooms; from €82,000 to €187,400, 14 homes with a median of 117 m², most often 3 bedrooms.
+Split into three groups of the same size by asking price: from €22,000 to €64,000, 12 homes with a median of 148 m², most often 3 bedrooms; from €64,000 to €82,000, 13 homes with a median of 84 m², most often 3 bedrooms; from €82,000 to €178,900, 12 homes with a median of 117 m², most often 3 bedrooms.
 
 ### Median price by region in Sweden
 
@@ -149,27 +145,27 @@ Central Sweden | 1 | €22,000
 Blekinge | 1 | €54,000
 Northern Sweden | 1 | €54,000
 Ljusnarsberg | 1 | €56,120
-Medelpad | 2 | €64,000
+[Småland](https://realhunt.co/homes/sweden/smaland) | 3 | €64,000
+Medelpad | 1 | €64,000
 Malmö | 1 | €67,200
 Västernorrland | 2 | €68,000
 Jämtland | 1 | €68,000
 [Gävleborg](https://realhunt.co/homes/sweden/gavleborg) | 3 | €73,000
 Jönköping | 1 | €73,000
-[Småland](https://realhunt.co/homes/sweden/smaland) | 4 | €75,440
 Dalarna | 1 | €77,000
 Norrbotten | 2 | €81,000
-[Värmland](https://realhunt.co/homes/sweden/varmland) | 6 | €83,000
+[Värmland](https://realhunt.co/homes/sweden/varmland) | 5 | €83,000
 Dalsland | 2 | €85,000
 Västra Götaland | 1 | €87,400
 [Skåne](https://realhunt.co/homes/sweden/skane) | 6 | €94,100
 Västerbotten | 2 | €99,000
-[Kronoberg](https://realhunt.co/homes/sweden/kronoberg) | 3 | €178,900
+Kronoberg | 2 | €178,900
 
 ### Buying costs and rules for foreigners in Sweden
 
 Can foreigners buy? Yes. There are no citizenship or residence rules for buying a home in Sweden, but you need a Swedish personal identity number or coordination number (samordningsnummer) to register ownership.
 
-Taxes and fees add about 1.5 to 3.5% to the price: Stamp duty on the title (lagfart) of 1.5% of the price or tax value, whichever is higher, plus a SEK 825 fee; if you borrow and need new mortgage deeds (pantbrev), 2% of their amount plus a SEK 375 fee; optional legal advice; the seller normally pays the agent, and a cooperative flat (bostadsrätt) has no lagfart. On the median home on this page (€73,000) that is €1,095 to €2,555, so €74,095 to €75,555 in all.
+Taxes and fees add about 1.5 to 3.5% to the price: Stamp duty on the title (lagfart) of 1.5% of the price or tax value, whichever is higher, plus a SEK 825 fee; if you borrow and need new mortgage deeds (pantbrev), 2% of their amount plus a SEK 375 fee; optional legal advice; the seller normally pays the agent, and a cooperative flat (bostadsrätt) has no lagfart. On the median home on this page (€72,000) that is €1,080 to €2,520, so €73,080 to €74,520 in all.
 
 At the same percentages: on €40,000, €600 to €1,400; on €80,000, €1,200 to €2,800; on €150,000, €2,250 to €5,250.
 
@@ -189,19 +185,19 @@ Source: [Fastighetsmäklarinspektionen (Swedish Estate Agents Inspectorate), Bud
 
 ### What to watch out for
 
-- 17 of the 41 listings give no floor area, so their price per m² cannot be compared.
+- 16 of the 37 listings give no floor area, so their price per m² cannot be compared.
 - 4 are in a shared building or complex but the listing does not state the community fee: ask for it in writing.
-- 1 of 41 sits where our rough flood check reads medium or high. Each home page links the official flood map.
-- 10 of 41 are close to a motorway, a railway or an airport (high on our noise check).
-- 30 of 41 were added more than 60 days ago. Ask the agent whether they are still for sale before you plan a trip.
-- 16 of 41 show an approximate map position: the listing names the town, not the street.
+- 1 of 37 sits where our rough flood check reads medium or high. Each home page links the official flood map.
+- 9 of 37 are close to a motorway, a railway or an airport (high on our noise check).
+- 27 of 37 were added more than 60 days ago. Ask the agent whether they are still for sale before you plan a trip.
+- 13 of 37 show an approximate map position: the listing names the town, not the street.
 - As a group these homes score lowest on good-weather days (42/100 on average) and highest on buying costs (84/100).
 
 ### Questions buyers ask
 
 #### How much does a house for sale in Sweden cost?
 
-Asking prices run from €22,000 to €187,400 across 41 homes. The median is €73,000, or €800/m².
+Asking prices run from €22,000 to €178,900 across 37 homes. The median is €72,000, or €800/m².
 
 #### What is the cheapest house for sale in Sweden?
 
@@ -213,43 +209,43 @@ Yes. There are no citizenship or residence rules for buying a home in Sweden, bu
 
 #### What are the buying costs in Sweden?
 
-About 1.5 to 3.5% on top of the price: Stamp duty on the title (lagfart) of 1.5% of the price or tax value, whichever is higher, plus a SEK 825 fee; if you borrow and need new mortgage deeds (pantbrev), 2% of their amount plus a SEK 375 fee; optional legal advice; the seller normally pays the agent, and a cooperative flat (bostadsrätt) has no lagfart. On the median home on this page (€73,000) that is €1,095 to €2,555. General information, not tax advice.
+About 1.5 to 3.5% on top of the price: Stamp duty on the title (lagfart) of 1.5% of the price or tax value, whichever is higher, plus a SEK 825 fee; if you borrow and need new mortgage deeds (pantbrev), 2% of their amount plus a SEK 375 fee; optional legal advice; the seller normally pays the agent, and a cooperative flat (bostadsrätt) has no lagfart. On the median home on this page (€72,000) that is €1,080 to €2,520. General information, not tax advice.
 
 #### Which region is cheapest in Sweden?
 
-Among regions with at least 3 homes on RealHunt, Gävleborg has the lowest median price, €73,000 across 3 homes, and Kronoberg the highest, €178,900.
+Among regions with at least 3 homes on RealHunt, Småland has the lowest median price, €64,000 across 3 homes, and Skåne the highest, €94,100.
 
 ### More searches in Sweden
 
-By budget [Under €60,000 10](https://realhunt.co/homes/sweden/under-60000) [Under €80,000 26](https://realhunt.co/homes/sweden/under-80000) [Under €100,000 39](https://realhunt.co/homes/sweden/under-100000)
+By budget [Under €60,000 9](https://realhunt.co/homes/sweden/under-60000) [Under €80,000 23](https://realhunt.co/homes/sweden/under-80000) [Under €100,000 36](https://realhunt.co/homes/sweden/under-100000)
 
-By setting [By the sea 5](https://realhunt.co/homes/sweden/by-the-sea) [Village houses 30](https://realhunt.co/homes/sweden/village-houses) [In town 5](https://realhunt.co/homes/sweden/in-town)
+By setting [By the sea 4](https://realhunt.co/homes/sweden/by-the-sea) [Village houses 27](https://realhunt.co/homes/sweden/village-houses) [In town 5](https://realhunt.co/homes/sweden/in-town)
 
-By type [Houses 32](https://realhunt.co/homes/sweden/houses)
+By type [Houses 28](https://realhunt.co/homes/sweden/houses)
 
-By bedrooms [3 bedrooms 11](https://realhunt.co/homes/sweden/3-bedroom) [4+ bedrooms 7](https://realhunt.co/homes/sweden/4-bedroom)
+By bedrooms [3 bedrooms 10](https://realhunt.co/homes/sweden/3-bedroom) [4+ bedrooms 7](https://realhunt.co/homes/sweden/4-bedroom)
 
-By region [Skåne 6](https://realhunt.co/homes/sweden/skane) [Värmland 6](https://realhunt.co/homes/sweden/varmland) [Småland 4](https://realhunt.co/homes/sweden/smaland) [Gävleborg 3](https://realhunt.co/homes/sweden/gavleborg) [Kronoberg 3](https://realhunt.co/homes/sweden/kronoberg)
+By region [Skåne 6](https://realhunt.co/homes/sweden/skane) [Värmland 5](https://realhunt.co/homes/sweden/varmland) [Gävleborg 3](https://realhunt.co/homes/sweden/gavleborg) [Småland 3](https://realhunt.co/homes/sweden/smaland)
 
-By area [Norrland 13](https://realhunt.co/homes/sweden/norrland)
+By area [Norrland 12](https://realhunt.co/homes/sweden/norrland)
 
-By feature [Near a lake 9](https://realhunt.co/cheap-houses/near-a-lake-in-sweden) [With a garden 23](https://realhunt.co/cheap-houses/with-garden-in-sweden) [With a sauna 4](https://realhunt.co/cheap-houses/with-sauna-in-sweden) [Cabins and cottages 10](https://realhunt.co/cheap-houses/cabins-and-cottages-in-sweden) [With a terrace 12](https://realhunt.co/cheap-houses/with-a-terrace-in-sweden) [Move-in ready 3](https://realhunt.co/cheap-houses/turnkey-in-sweden) [With land 11](https://realhunt.co/cheap-houses/with-land-in-sweden) [With a fireplace 5](https://realhunt.co/cheap-houses/with-fireplace-in-sweden) [With a garage 9](https://realhunt.co/cheap-houses/with-garage-in-sweden) [Olive trees or vines 3](https://realhunt.co/cheap-houses/with-olive-trees-or-vines-in-sweden) [Near an airport 7](https://realhunt.co/cheap-houses/near-an-airport-in-sweden) [Under €500/m² 6](https://realhunt.co/cheap-houses/under-500-per-sqm-in-sweden) [Score 90+ 10](https://realhunt.co/cheap-houses/score-90-plus-in-sweden) [New this month 6](https://realhunt.co/cheap-houses/new-this-month-in-sweden) [New this week 5](https://realhunt.co/cheap-houses/new-this-week-in-sweden) [Quiet location 16](https://realhunt.co/cheap-houses/quiet-location-in-sweden) [Over 80 m² 18](https://realhunt.co/cheap-houses/over-80-sqm-in-sweden) [Over 120 m² 7](https://realhunt.co/cheap-houses/over-120-sqm-in-sweden)
+By feature [Near a lake 6](https://realhunt.co/cheap-houses/near-a-lake-in-sweden) [With a garden 19](https://realhunt.co/cheap-houses/with-garden-in-sweden) [With a sauna 4](https://realhunt.co/cheap-houses/with-sauna-in-sweden) [Cabins and cottages 10](https://realhunt.co/cheap-houses/cabins-and-cottages-in-sweden) [With a terrace 10](https://realhunt.co/cheap-houses/with-a-terrace-in-sweden) [Move-in ready 3](https://realhunt.co/cheap-houses/turnkey-in-sweden) [With land 9](https://realhunt.co/cheap-houses/with-land-in-sweden) [With a fireplace 4](https://realhunt.co/cheap-houses/with-fireplace-in-sweden) [With a garage 7](https://realhunt.co/cheap-houses/with-garage-in-sweden) [Olive trees or vines 3](https://realhunt.co/cheap-houses/with-olive-trees-or-vines-in-sweden) [Near an airport 5](https://realhunt.co/cheap-houses/near-an-airport-in-sweden) [Under €500/m² 4](https://realhunt.co/cheap-houses/under-500-per-sqm-in-sweden) [Score 90+ 8](https://realhunt.co/cheap-houses/score-90-plus-in-sweden) [New this month 5](https://realhunt.co/cheap-houses/new-this-month-in-sweden) [Quiet location 15](https://realhunt.co/cheap-houses/quiet-location-in-sweden) [Over 80 m² 15](https://realhunt.co/cheap-houses/over-80-sqm-in-sweden) [Over 120 m² 6](https://realhunt.co/cheap-houses/over-120-sqm-in-sweden)
 
-Rankings [The cheapest 20](https://realhunt.co/cheap-houses/cheapest-in-sweden) [Most space for the money 20](https://realhunt.co/cheap-houses/most-space-for-the-money-in-sweden)
+Rankings [The cheapest 20](https://realhunt.co/cheap-houses/cheapest-in-sweden) [Most space for the money 20](https://realhunt.co/cheap-houses/most-space-for-the-money-in-sweden) [Top 10 by score 10](https://realhunt.co/cheap-houses/best-rated-in-sweden)
 
 By feature and budget [Apartments under €100,000 4](https://realhunt.co/cheap-houses/apartments-under-100000-in-sweden)
 
-In pounds and dollars [Under $100,000 34](https://realhunt.co/cheap-houses/under-100000-dollars-in-sweden)
+In pounds and dollars [Under £50,000 8](https://realhunt.co/cheap-houses/under-50000-pounds-in-sweden) [Under $100,000 31](https://realhunt.co/cheap-houses/under-100000-dollars-in-sweden)
 
 Near a city [Near Copenhagen 18](https://realhunt.co/cheap-houses/near-copenhagen)
 
 Neighbouring countries [Denmark 46](https://realhunt.co/homes/denmark)
 
-By country [Spain 153](https://realhunt.co/homes/spain) [Italy 87](https://realhunt.co/homes/italy) [United States 61](https://realhunt.co/homes/united-states) [France 47](https://realhunt.co/homes/france) [Denmark 46](https://realhunt.co/homes/denmark) [Japan 36](https://realhunt.co/homes/japan) [Poland 31](https://realhunt.co/homes/poland) [Greece 25](https://realhunt.co/homes/greece) [Germany 21](https://realhunt.co/homes/germany) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Mexico 9](https://realhunt.co/homes/mexico) [Portugal 8](https://realhunt.co/homes/portugal) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [United Kingdom 6](https://realhunt.co/homes/united-kingdom) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
+By country [Spain 155](https://realhunt.co/homes/spain) [Italy 102](https://realhunt.co/homes/italy) [France 62](https://realhunt.co/homes/france) [United States 61](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [Greece 42](https://realhunt.co/homes/greece) [Poland 31](https://realhunt.co/homes/poland) [Japan 30](https://realhunt.co/homes/japan) [Netherlands 18](https://realhunt.co/homes/netherlands) [Germany 18](https://realhunt.co/homes/germany) [Canada 16](https://realhunt.co/homes/canada) [Portugal 11](https://realhunt.co/homes/portugal) [Switzerland 10](https://realhunt.co/homes/switzerland) [Mexico 7](https://realhunt.co/homes/mexico) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Cyprus 4](https://realhunt.co/homes/cyprus) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
 
-How we choose these homes: a person reads every listing and checks its price, size, photos and place before it goes up, and the nightly check takes it off when the advert goes. [How we check homes](https://realhunt.co/how-we-check-homes) 13 of these 41 homes were checked against the original listing in the last 30 days. 1 home in Sweden left RealHunt or was marked as no longer for sale in the last 30 days. [See the log of homes taken off the site](https://realhunt.co/research/removed-homes)
+How we choose these homes: a person reads every listing and checks its price, size, photos and place before it goes up, and the nightly check takes it off when the advert goes. [How we check homes](https://realhunt.co/how-we-check-homes) 10 of these 37 homes were checked against the original listing in the last 30 days. 1 home in Sweden left RealHunt or was marked as no longer for sale in the last 30 days. [See the log of homes taken off the site](https://realhunt.co/research/removed-homes)
 
-These listings come from hemnet.se (20), instagram.com (8), svenskfast.se (5), finn.no (2), alembi.se (1). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
+These listings come from hemnet.se (20), instagram.com (8), svenskfast.se (4), booli.se (1), fastighetsbyran.com (1). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 
 [Email me new homes in Sweden](https://realhunt.co/alerts?country=Sweden) · [Filter and sort these homes](https://realhunt.co/?country=Sweden#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in Sweden](https://realhunt.co/sitemap/sweden)
 

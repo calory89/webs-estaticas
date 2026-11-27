@@ -30,26 +30,26 @@ Tax on rental income: Non-residents: EU/EEA 19% on net income; non-EU 24% on gro
 ### Best homes in Spain
 
 - [€55,000 · Village house with a panoramic sea-and-mountain terrace in Rossell, Castellón](https://realhunt.co/deal/es-rossell-55k-187471380) · Rossell, Baix Maestrat (Castellón) · score 94 · 120 m² · 5 bed
-- [€77,000 · 5-bedroom semi-detached house with terrace in Nevada](https://realhunt.co/deal/es-nevada-77k-72929) · Nevada, Granada, Spain · score 94 · 306 m² · 5 bed
-- [€38,000 · 2-bedroom house with terrace in Alpujarra de la Sierra](https://realhunt.co/deal/es-alpujarra-de-la-sierra-38k-35809) · Alpujarra de la Sierra, Granada, Spain · score 94 · 150 m² · 2 bed
 - [€59,000 · 5-bedroom house with terrace in Sorvilán](https://realhunt.co/deal/es-sorvilan-59k-76765) · Sorvilán, Granada, Spain · score 94 · 147 m² · 5 bed
-- [€73,000 · 2-bedroom flat with terrace in Cartagena](https://realhunt.co/deal/es-cartagena-73k-74761) · Cartagena, Murcia, Spain · score 93 · 85 m² · 2 bed
 - [€63,500 · 2-bedroom country house with terrace in Benizalón](https://realhunt.co/deal/es-benizalon-63k-44767) · Benizalón, Almería, Spain · score 92 · 114 m² · 2 bed
+- [€39,000 · 3-bedroom house with terrace in Nacimiento](https://realhunt.co/deal/es-nacimiento-39k-60637) · Nacimiento, Almería, Spain · score 92 · 100 m² · 3 bed
+- [€91,000 · 4-bedroom house with terrace in Alozaina](https://realhunt.co/deal/es-alozaina-91k-40320) · Alozaina, Málaga, Spain · score 92 · 175 m² · 4 bed
+- [€150,000 · Village house with a plant-filled terrace facing Castalla castle, with garage](https://realhunt.co/deal/es-castalla-150k-388079) · Castalla, Alicante · score 91 · 165 m² · 3 bed
 
-[All 191 homes in Spain](https://realhunt.co/homes/spain)
+[All 155 homes in Spain](https://realhunt.co/homes/spain)
 
 [Costs, taxes and sources for Spain](https://realhunt.co/costs/spain) · [Buying-cost calculator for Spain](https://realhunt.co/buying-costs/spain) · [Can I buy there? Rules by nationality](https://realhunt.co/can-i-buy)
 
 ### Compare Spain
 
 - [Spain vs Italy](https://realhunt.co/countries/italy-vs-spain)
-- [Spain vs United States](https://realhunt.co/countries/spain-vs-united-states)
 - [Spain vs France](https://realhunt.co/countries/france-vs-spain)
+- [Spain vs United States](https://realhunt.co/countries/spain-vs-united-states)
 - [Spain vs Denmark](https://realhunt.co/countries/denmark-vs-spain)
-- [Spain vs Sweden](https://realhunt.co/countries/spain-vs-sweden)
-- [Spain vs Japan](https://realhunt.co/countries/japan-vs-spain)
-- [Spain vs Poland](https://realhunt.co/countries/poland-vs-spain)
 - [Spain vs Greece](https://realhunt.co/countries/greece-vs-spain)
+- [Spain vs Sweden](https://realhunt.co/countries/spain-vs-sweden)
+- [Spain vs Poland](https://realhunt.co/countries/poland-vs-spain)
+- [Spain vs Japan](https://realhunt.co/countries/japan-vs-spain)
 
 ### Sources
 

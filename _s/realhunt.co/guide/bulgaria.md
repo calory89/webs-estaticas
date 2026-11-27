@@ -30,13 +30,13 @@ Tax on rental income: Non-residents: 10% final tax on gross rent, paid quarterly
 ### Best homes in Bulgaria
 
 - [€66,000 · Furnished two-bedroom flat with a sea view in a gated complex in Kavarna](https://realhunt.co/deal/bg-kavarna-66k-89698) · Kavarna Paradise, Kavarna (Black Sea) · score 94 · 90 m² · 2 bed
-- [€59,900 · Two-bedroom flat with a panoramic sea view on the first line in Pomorie](https://realhunt.co/deal/bg-pomorie-60k-1630398) · Sunset Resort, Pomorie (Black Sea) · score 94 · 81 m² · 2 bed
 - [€69,000 · Two-bedroom flat with two sea-panorama terraces in Kavarna Hills](https://realhunt.co/deal/bg-kavarna-hills-69k-1606144) · Kavarna Hills, Kavarna (Black Sea) · score 93 · 100 m² · 2 bed
 - [€70,000 · Furnished two-bedroom flat with a sea-view terrace 300 m from the beach in Kavarna](https://realhunt.co/deal/bg-kavarna-70k-1672825) · Kavarna (Black Sea) · score 93 · 99 m² · 2 bed
 - [€58,900 · Sea-view apartment with pool on Bulgaria's Black Sea coast](https://realhunt.co/deal/bg-byala-58k-fbw62u) · Byala, Varna · score 92 · 53 m² · 1 bed
 - [€66,000 · Ready-to-move-in two-bedroom flat with a sea-view terrace in Kavarna](https://realhunt.co/deal/bg-kavarna-66k-89682) · Kavarna Paradise, Kavarna (Black Sea) · score 92 · 87 m² · 2 bed
+- [€89,000 · Sea-view one-bedroom flat with pool and no maintenance fee in Sveti Vlas](https://realhunt.co/deal/bg-sveti-vlas-sea-view-89k-92034) · Sveti Vlas, Burgas · score 84 · 64 m² · 1 bed
 
-[All 7 homes in Bulgaria](https://realhunt.co/homes/bulgaria)
+[All 6 homes in Bulgaria](https://realhunt.co/homes/bulgaria)
 
 [Costs, taxes and sources for Bulgaria](https://realhunt.co/costs/bulgaria) · [Buying-cost calculator for Bulgaria](https://realhunt.co/buying-costs/bulgaria) · [Can I buy there? Rules by nationality](https://realhunt.co/can-i-buy)
 
@@ -44,11 +44,11 @@ Tax on rental income: Non-residents: 10% final tax on gross rent, paid quarterly
 
 - [Bulgaria vs Spain](https://realhunt.co/countries/bulgaria-vs-spain)
 - [Bulgaria vs Italy](https://realhunt.co/countries/bulgaria-vs-italy)
-- [Bulgaria vs United States](https://realhunt.co/countries/bulgaria-vs-united-states)
 - [Bulgaria vs France](https://realhunt.co/countries/bulgaria-vs-france)
+- [Bulgaria vs United States](https://realhunt.co/countries/bulgaria-vs-united-states)
 - [Bulgaria vs Denmark](https://realhunt.co/countries/bulgaria-vs-denmark)
+- [Bulgaria vs Greece](https://realhunt.co/countries/bulgaria-vs-greece)
 - [Bulgaria vs Sweden](https://realhunt.co/countries/bulgaria-vs-sweden)
-- [Bulgaria vs Japan](https://realhunt.co/countries/bulgaria-vs-japan)
 - [Bulgaria vs Poland](https://realhunt.co/countries/bulgaria-vs-poland)
 
 ### Sources

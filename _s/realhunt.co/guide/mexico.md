@@ -30,13 +30,13 @@ Tax on rental income: Non-residents: 25% ISR withholding on gross rent; plus 16%
 ### Best homes in Mexico
 
 - [€50,575 · 2-bed apartment in San Pedro Tlaquepaque, Jalisco](https://realhunt.co/deal/san-pedro-tlaquepaque-50575) · San Pedro Tlaquepaque, Jalisco · score 93 · 49 m² · 2 bed
-- [€80,920 · 3-bed apartment near the beach in Mazatlán, Sinaloa](https://realhunt.co/deal/mazatlan-80920) · Mazatlán, Sinaloa · score 90 · 71 m² · 3 bed
 - [€70,805 · 2-bed house in Tonalá, Jalisco](https://realhunt.co/deal/tonala-70805) · Tonalá, Jalisco · score 89 · 65 m² · 2 bed
 - [€195,300 · Five-bed stone and brick house with a Lake Chapala view terrace in El Tepehuaje](https://realhunt.co/deal/mx-tuxcueca-el-tepehuaje-lake-chapala-view-house-4-08m) · El Tepehuaje, Tuxcueca, Jalisco · score 88 · 245 m² · 5 bed
 - [€68,984 · 3-bed apartment in Cuautlancingo, Puebla](https://realhunt.co/deal/cuautlancingo-68984) · Cuautlancingo, Puebla · score 87 · 78 m² · 3 bed
-- [€86,100 · New 2-bed condo with rooftop and terrace in Mazatlán, ready now](https://realhunt.co/deal/mx-mazatlan-86k-809756) · Mazatlán, Sinaloa · score 86 · 68 m² · 2 bed
+- [€216,600 · Colonial house with a pool and garden in Barrio de Santiago, Mérida centre](https://realhunt.co/deal/mx-merida-centro-colonial-house-pool-barrio-santiago-4-45m) · Mérida, Yucatán · score 86 · 160 m² · 2 bed
+- [€98,621 · 2-bed apartment in Mazatlán, Sinaloa](https://realhunt.co/deal/mazatlan-98621) · Mazatlán, Sinaloa · score 86 · 89 m² · 2 bed
 
-[All 14 homes in Mexico](https://realhunt.co/homes/mexico)
+[All 12 homes in Mexico](https://realhunt.co/homes/mexico)
 
 [Costs, taxes and sources for Mexico](https://realhunt.co/costs/mexico) · [Buying-cost calculator for Mexico](https://realhunt.co/buying-costs/mexico) · [Can I buy there? Rules by nationality](https://realhunt.co/can-i-buy)
 
@@ -44,11 +44,11 @@ Tax on rental income: Non-residents: 25% ISR withholding on gross rent; plus 16%
 
 - [Mexico vs Spain](https://realhunt.co/countries/mexico-vs-spain)
 - [Mexico vs Italy](https://realhunt.co/countries/italy-vs-mexico)
-- [Mexico vs United States](https://realhunt.co/countries/mexico-vs-united-states)
 - [Mexico vs France](https://realhunt.co/countries/france-vs-mexico)
+- [Mexico vs United States](https://realhunt.co/countries/mexico-vs-united-states)
 - [Mexico vs Denmark](https://realhunt.co/countries/denmark-vs-mexico)
+- [Mexico vs Greece](https://realhunt.co/countries/greece-vs-mexico)
 - [Mexico vs Sweden](https://realhunt.co/countries/mexico-vs-sweden)
-- [Mexico vs Japan](https://realhunt.co/countries/japan-vs-mexico)
 - [Mexico vs Poland](https://realhunt.co/countries/mexico-vs-poland)
 
 ### Sources

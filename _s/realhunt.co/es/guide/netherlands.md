@@ -29,8 +29,8 @@ Impuesto sobre los ingresos por alquiler: Los no residentes declaran el inmueble
 
 ### Mejores casas en los Países Bajos
 
-- [325.000 € · Piso esquinero de 107 m² en la planta 10 con vistas a la naturaleza, Ámsterdam](https://realhunt.co/es/deal/nl-amsterdam-325k-505653) · Gouden Rand, Amsterdam · nota 94 · 107 m² · 3 dorm.
 - [299.000 € · Piso esquinero remodelado con balcón al sur sobre el canal, Reigersbos](https://realhunt.co/es/deal/nl-amsterdam-299k-563619) · Reigersbos, Amsterdam · nota 94 · 73 m² · 2 dorm.
+- [325.000 € · Piso esquinero de 107 m² en la planta 10 con vistas a la naturaleza, Ámsterdam](https://realhunt.co/es/deal/nl-amsterdam-325k-505653) · Gouden Rand, Amsterdam · nota 94 · 107 m² · 3 dorm.
 - [299.000 € · Piso de tres habitaciones con terraza de 14 m² al sur junto al metro Reigersbos](https://realhunt.co/es/deal/nl-amsterdam-299k-968188) · Reigersbos, Amsterdam · nota 93 · 72 m² · 2 dorm.
 - [335.000 € · Piso de cuatro habitaciones y 93 m² con balcón de 13,5 m² junto al parque Nelson Mandela](https://realhunt.co/es/deal/nl-amsterdam-335k-962495) · Nelson Mandelapark, Amsterdam · nota 90 · 93 m² · 3 dorm.
 - [300.000 € · Ático bajo cubierta con ventanas de tejado junto al lago Gaasperplas](https://realhunt.co/es/deal/nl-amsterdam-300k-930369) · Gein, Amsterdam · nota 90 · 72 m² · 2 dorm.
@@ -44,11 +44,11 @@ Impuesto sobre los ingresos por alquiler: Los no residentes declaran el inmueble
 
 - [Países Bajos vs España](https://realhunt.co/es/countries/netherlands-vs-spain)
 - [Países Bajos vs Italia](https://realhunt.co/es/countries/italy-vs-netherlands)
-- [Países Bajos vs Estados Unidos](https://realhunt.co/es/countries/netherlands-vs-united-states)
 - [Países Bajos vs Francia](https://realhunt.co/es/countries/france-vs-netherlands)
+- [Países Bajos vs Estados Unidos](https://realhunt.co/es/countries/netherlands-vs-united-states)
 - [Países Bajos vs Dinamarca](https://realhunt.co/es/countries/denmark-vs-netherlands)
+- [Países Bajos vs Grecia](https://realhunt.co/es/countries/greece-vs-netherlands)
 - [Países Bajos vs Suecia](https://realhunt.co/es/countries/netherlands-vs-sweden)
-- [Países Bajos vs Japón](https://realhunt.co/es/countries/japan-vs-netherlands)
 - [Países Bajos vs Polonia](https://realhunt.co/es/countries/netherlands-vs-poland)
 
 ### Fuentes

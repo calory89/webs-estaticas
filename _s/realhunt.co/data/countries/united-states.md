@@ -1,6 +1,6 @@
 # Cheap homes in the United States: key facts and every home on RealHunt
 
-On 27 November 2026, RealHunt lists 62 homes for sale in the United States, each one checked by a person. In the United States, the median asking price of those 62 homes is €214,900 (€1,570 per m², from the 62 homes with a known size); the cheapest costs €65,428 and the most expensive €447,600. Taxes and fees add about 2–5% to the price of a home in the United States (figures as of 2026).
+On 27 November 2026, RealHunt lists 61 homes for sale in the United States, each one checked by a person. In the United States, the median asking price of those 61 homes is €214,900 (€1,560 per m², from the 61 homes with a known size); the cheapest costs €65,428 and the most expensive €447,600. Taxes and fees add about 2–5% to the price of a home in the United States (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/united-states · Updated 27 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/united-states.json · PDF: https://realhunt.co/data/countries/united-states.pdf
@@ -9,9 +9,9 @@ Also as JSON: https://realhunt.co/data/countries/united-states.json · PDF: http
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 62 |
+| Homes on RealHunt | 61 |
 | Median asking price | €214,900 |
-| Median price per m² | €1,570 (62 homes with a known size) |
+| Median price per m² | €1,560 (61 homes with a known size) |
 | Median size | 121 m² |
 | Cheapest and most expensive | €65,428 · €447,600 |
 | Median RealHunt score (70 to 98) | 86 |
@@ -48,7 +48,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/united-states
 
-## The 62 homes, best score first
+## The 61 homes, best score first
 
 ### Updated 3-bed house in Huntington, West Virginia
 
@@ -513,14 +513,6 @@ https://realhunt.co/deal/little-river-92471
 74 m² (798 sq ft), 2 bed, 1 bath, built 1965. Asking $109,000. The listing mentions: new cha system, new plumbing, new electrical, new meter loop.
 
 https://realhunt.co/deal/beeville-95089
-
-### Move-in ready 2-bed house in Marion, Indiana
-
-€118,300 · Marion, Indiana · 71 m² · 2 bedrooms · RealHunt score 81 · added 2026-09-23
-
-71 m² (768 sq ft), 2 bed, 1 bath, built 1954. Asking $129,900. The listing mentions: private fenced-in backyard, detached garage, newer gas furnace, newer central air.
-
-https://realhunt.co/deal/marion-87150
 
 ### Two-bedroom with a screened balcony over the fairways at Coronado Tower II
 

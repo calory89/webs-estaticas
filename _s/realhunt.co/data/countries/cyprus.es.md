@@ -1,6 +1,6 @@
 # Casas baratas en Chipre: datos clave y todas las casas de RealHunt
 
-A 27 de noviembre de 2026, RealHunt publica 6 casas en venta en Chipre, revisadas una a una por una persona. En Chipre, el precio de salida mediano de esas 6 casas es de 341.000 € (3.723 € por m², calculado con las 6 casas de superficie conocida); la más barata cuesta 130.000 € y la más cara, 470.000 €. Los impuestos y gastos de compra suman alrededor del 2,5–3,5% del precio de una casa en Chipre (cifras de 2026). Con 6 casas la muestra es pequeña, así que la mediana de Chipre es solo orientativa.
+A 27 de noviembre de 2026, RealHunt publica 4 casas en venta en Chipre, revisadas una a una por una persona. En Chipre, el precio de salida mediano de esas 4 casas es de 341.000 € (4.060 € por m², calculado con las 4 casas de superficie conocida); la más barata cuesta 130.000 € y la más cara, 470.000 €. Los impuestos y gastos de compra suman alrededor del 2,5–3,5% del precio de una casa en Chipre (cifras de 2026). Con 4 casas la muestra es pequeña, así que la mediana de Chipre es solo orientativa.
 
 Fuente: RealHunt, https://realhunt.co/es/homes/cyprus · Actualizado el 27 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/cyprus.json · PDF: https://realhunt.co/data/countries/cyprus.es.pdf
@@ -9,9 +9,9 @@ También en JSON: https://realhunt.co/data/countries/cyprus.json · PDF: https:/
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 6 (muestra pequeña) |
+| Casas en RealHunt | 4 (muestra pequeña) |
 | Precio de salida mediano | 341.000 € |
-| Precio mediano por m² | 3.723 € (6 casas de superficie conocida) |
+| Precio mediano por m² | 4.060 € (4 casas de superficie conocida) |
 | Superficie mediana | 84 m² |
 | La más barata y la más cara | 130.000 € · 470.000 € |
 | Nota RealHunt mediana (de 70 a 98) | 84 |
@@ -49,7 +49,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/cyprus
 
-## Las 6 casas, de mejor a peor nota
+## Las 4 casas, de mejor a peor nota
 
 ### Piso de 2 dormitorios listo para entrar a pasos de la playa en Coral Bay, con piscina y vistas al mar
 
@@ -58,14 +58,6 @@ Guía completa: https://realhunt.co/es/guide/cyprus
 Apartamento de 2 dormitorios y 2 baños, listo para entrar, a pocos pasos de las playas con Bandera Azul de Coral Bay, al oeste de Pafos. 84 m² con cocina moderna equipada, salón luminoso y balcón privado con vistas al mar para ver la puesta de sol. Complejo cerrado con una gran piscina comunitaria entre jardines y parking privado. A unos 25 km del aeropuerto de Pafos. A unos 4.060 €/m², un 18% por debajo de la mediana de precios pedidos en Pafos (4.923 €/m², index.cy, octubre de 2026).
 
 https://realhunt.co/es/deal/cy-coral-bay-341k-080655
-
-### Adosado amueblado con piscina privada a 100 m del mar en Protaras
-
-350.000 € · Protaras, Famagusta · 94 m² · 2 dormitorios · nota RealHunt 92 · añadida el 2026-10-12
-
-Adosado de 2009 a 100 metros de la costa de Protaras, amueblado y listo para vivir. 94 m² en una parcela de 155 m² con piscina propia: salón abierto con cocina nueva y barra, baño con ducha reformado en planta baja y dos dormitorios dobles arriba, el principal con balcón sobre la piscina. Bares y restaurantes a pie. A unos 3.720 €/m², un 27% por debajo de la mediana de precios pedidos en Protaras (5.136 €/m², index.cy, octubre de 2026).
-
-https://realhunt.co/es/deal/cy-protaras-350k-257111
 
 ### Bajo frente al mar con terraza de 50 m² y piscina desbordante en Protaras
 
@@ -90,11 +82,3 @@ https://realhunt.co/es/deal/cy-mazotos-2-bed-pool-130k-477874
 Una casa adosada de dos dormitorios en una zona residencial tranquila de Paralimni, vendida con escritura de propiedad y completamente renovada. 74 m² de interior más una verandá delantera de 11 m² y un balcón de 5 m² con vista parcial al mar desde el dormitorio principal. Cocina nueva con lavavajillas y horno integrados, un WC de cortesía, un cuarto de baño con ducha de obra, aire acondicionado nuevo, armarios empotrados mejorados y un nuevo sistema de agua caliente solar. Aparcamiento asignado en la parte trasera. El anuncio sitúa la playa más cercana a 10 minutos. Se vende sin amueblar. Se pide 187.000 euros, aproximadamente 2.530 euros/m². Los gastos comunitarios no se especifican.
 
 https://realhunt.co/es/deal/cy-paralimni-renovated-townhouse-title-deeds-187k
-
-### Piso amueblado de dos dormitorios con patio privado y piscina compartida en Mesa Chorio, Pafos
-
-195.000 € · Mesa Chorio, Paphos · 74 m² · 2 dormitorios · nota RealHunt 78 · añadida el 2026-11-18
-
-Un apartamento de planta baja de dos dormitorios en Mesa Chorio, un pueblo en las afueras de Pafos, vendido con su propia escritura de propiedad separada y con el mobiliario incluido. 74 m² interiores con una cocina abierta, comedor y salón y un baño con ducha, más una terraza cubierta de 19 m², una terraza abierta de 3 m² y el uso exclusivo de un patio privado. El complejo tiene una piscina compartida y el piso tiene una plaza de aparcamiento cubierta. El anuncio lo sitúa a unos 250 m de la iglesia del pueblo y a 2,7 km del Hospital General de Pafos. Se pide €195,000, aproximadamente €2,640/m². Las cuotas comunitarias no se indican.
-
-https://realhunt.co/es/deal/cy-paphos-mesa-chorio-pool-flat-195k-502684

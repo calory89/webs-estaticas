@@ -1,6 +1,6 @@
 # Casas baratas en Francia: datos clave y todas las casas de RealHunt
 
-A 27 de noviembre de 2026, RealHunt publica 52 casas en venta en Francia, revisadas una a una por una persona. En Francia, el precio de salida mediano de esas 52 casas es de 69.900 € (1.175 € por m², calculado con las 48 casas de superficie conocida); la más barata cuesta 39.000 € y la más cara, 285.000 €. Los impuestos y gastos de compra suman alrededor del 7–8,5% del precio de una casa en Francia (cifras de 2026).
+A 27 de noviembre de 2026, RealHunt publica 62 casas en venta en Francia, revisadas una a una por una persona. En Francia, el precio de salida mediano de esas 62 casas es de 125.000 € (1.200 € por m², calculado con las 59 casas de superficie conocida); la más barata cuesta 39.000 € y la más cara, 214.000 €. Los impuestos y gastos de compra suman alrededor del 7–8,5% del precio de una casa en Francia (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/france · Actualizado el 27 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/france.json · PDF: https://realhunt.co/data/countries/france.es.pdf
@@ -9,12 +9,12 @@ También en JSON: https://realhunt.co/data/countries/france.json · PDF: https:/
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 52 |
-| Precio de salida mediano | 69.900 € |
-| Precio mediano por m² | 1.175 € (48 casas de superficie conocida) |
-| Superficie mediana | 83 m² |
-| La más barata y la más cara | 39.000 € · 285.000 € |
-| Nota RealHunt mediana (de 70 a 98) | 83 |
+| Casas en RealHunt | 62 |
+| Precio de salida mediano | 125.000 € |
+| Precio mediano por m² | 1.200 € (59 casas de superficie conocida) |
+| Superficie mediana | 101 m² |
+| La más barata y la más cara | 39.000 € · 214.000 € |
+| Nota RealHunt mediana (de 70 a 98) | 82 |
 | Impuestos y gastos de compra | 7–8,5% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sí. Los extranjeros pueden comprar propiedades en Francia sin restricciones importantes, y los compradores no comunitarios no necesitan permiso, aunque los trámites pueden llevar más tiempo. |
 | Impuesto anual sobre la vivienda | Los propietarios pagan un impuesto anual sobre bienes inmuebles (taxe foncière) que fijan las administraciones locales, y los propietarios de una segunda vivienda amueblada pagan además el impuesto de habitación (taxe d'habitation), que algunos municipios incrementan con un recargo del 5% al 60%. |
@@ -47,7 +47,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/france
 
-## Las 52 casas, de mejor a peor nota
+## Las 62 casas, de mejor a peor nota
 
 ### Casa de 171 m² con antiguo local comercial en el centro de Bussière-Poitevine
 
@@ -81,14 +81,6 @@ Casa de piedra bien renovada en una aldea a 2 km de Villefagnan y 7 km de Ruffec
 
 https://realhunt.co/es/deal/fr-villefagnan-125k-152329
 
-### Casa antigua de piedra amueblada con salón de 53 m² y 2.825 m² de jardín en Bessac, Charente
-
-134.375 € · Bessac, Charente · 116 m² · 2 dormitorios · nota RealHunt 91 · añadida el 2026-11-14
-
-Casa antigua con carácter que se vende totalmente amueblada. En planta baja, salón de 53 m² con vigas vistas y estufa de leña y cocina equipada, con salida a una terraza con vistas abiertas al campo. Arriba, dos dormitorios y un baño; además bodega y 2.825 m² de jardín cerrado y arbolado. Saneamiento conforme. Las ventanas son de madera con vidrio simple y la clase energética es E. Precio 134.375 €, unos 1.158 €/m².
-
-https://realhunt.co/es/deal/fr-bessac-134k-729283
-
 ### Casa de piedra renovada con vistas abiertas al campo y bomba de calor cerca de Saint-Vaury, Creuse
 
 136.250 € · near Saint-Vaury, Creuse · 98 m² · 2 dormitorios · nota RealHunt 91 · añadida el 2026-11-14
@@ -112,14 +104,6 @@ https://realhunt.co/es/deal/fr-val-au-perche-137k-446720
 Antigua casa de guardabarrera a 2,5 km del centro de Bergerac, renovada por completo en 2023. Abajo, cocina totalmente equipada abierta al comedor, con un dormitorio, baño con ducha y lavadero en la misma planta. Arriba, una sala para despacho y un dormitorio amplio. La parcela vallada de 1.824 m² tiene pozo y bodega abovedada. Clase energética D. Precio 139.000 €, unos 1.805 €/m².
 
 https://realhunt.co/es/deal/fr-bergerac-139k-175736
-
-### Casa con fachada de piedra renovada con gusto y sótano completo junto a la estación en Salbris, Sologne
-
-146.990 € · Salbris, Loir-et-Cher · 83 m² · 3 dormitorios · nota RealHunt 91 · añadida el 2026-11-14
-
-Casa totalmente renovada en el centro de Salbris, cerca de las tiendas y la estación de tren. En planta baja, cocina equipada, salón luminoso y un dormitorio con ducha propia; arriba, dos dormitorios más y un baño. Aire acondicionado reversible, ventanas de PVC con persianas eléctricas, sótano completo y terraza en una parcela vallada de 665 m². Clase energética D. Precio 146.990 €, unos 1.771 €/m².
-
-https://realhunt.co/es/deal/fr-salbris-146k-279709
 
 ### Casa de ladrillo con ampliación del salón de 2019, jardín y garaje en Ohain, Avesnois
 
@@ -161,13 +145,21 @@ En una aldea tranquila a 5 km de Thiers y del lago de Saint-Rémy-sur-Durolle: v
 
 https://realhunt.co/es/deal/fr-thiers-49k-mo1869
 
-### Casa de pueblo de 137 m² con terraza en la azotea cerca de Carcasona
+### Casa independiente de 2 dormitorios con jardín y amplios graneros en Les Grands-Chézeaux, Haute-Vienne
 
-72.000 € · Azille, Aude · 137 m² · 4 dormitorios · nota RealHunt 87 · añadida el 2026-10-06
+98.975 € · Les Grands-Chézeaux, Haute-Vienne · 132 m² · 2 dormitorios · nota RealHunt 89 · añadida el 2026-11-27
 
-Una casa con doble orientación y 137 m² en Azille, un pueblo vinícola del Minervois cerca de Carcasona: cuatro dormitorios, salón con chimenea en uso, gran cocina, sala de juegos, despacho, garaje y una terraza en la azotea sin vecinos que miren.
+Casa independiente de 132 m2 habitables, 2 dormitorios y tejado en buen estado. La planta baja tiene salón, cocina con zona de comedor, dormitorio, baño y aseo independiente, y la planta superior tiene un dormitorio con altillo. Fuera, un jardín de 1930 m2 se extiende detrás de la casa, con una terraza ya instalada y dos graneros de unos 80 m2 cada uno, además de dos más pequeños. Se indican calefacción de leña, chimenea y aire acondicionado, y St Sulpice-Les-Feuilles está a 5 minutos en coche. Precio 98.975 €, unos 750 €/m².
 
-https://realhunt.co/es/deal/fr-azille-72k-4qkrv1
+https://realhunt.co/es/deal/fr-les-grands-chezeaux-detached-house-barns-garden-98k
+
+### Casa de campo reformada de 3 dormitorios con jardín y garaje en Trie-sur-Baïse, Hautes-Pyrénées
+
+149.500 € · Trie-sur-Baïse, Hautes-Pyrénées · 195 m² · 3 dormitorios · nota RealHunt 88 · añadida el 2026-11-27
+
+Casa de campo adosada reformada, construida en 1776, con un luminoso salón de triple orientación con chimenea y puertas francesas a la terraza. Tiene tres dormitorios, uno de ellos en la planta baja, y una sala de juegos o estudio de 58,5 m² en la primera planta con balcón. La propiedad cuenta con jardín con entrada vallada, garaje con aparcamiento para dos coches y radiadores eléctricos. Está a las afueras de Trie-sur-Baïse, a poca distancia andando de tiendas, bares y restaurantes. Precio 149.500 €, unos 767 €/m².
+
+https://realhunt.co/es/deal/fr-trie-sur-baise-renovated-cottage-garden-garage-149k
 
 ### Casa de piedra de 3 dormitorios en pleno centro del pueblo
 
@@ -176,6 +168,14 @@ https://realhunt.co/es/deal/fr-azille-72k-4qkrv1
 Casa de piedra en el centro de un pueblo: Le Lonzac, Nouvelle-Aquitaine. En pleno corazón de la vida del pueblo, esta casa de piedra ofrece un equilibrio estupendo entre espacio interior y rincones exteriores para disfrutar.
 
 https://realhunt.co/es/deal/Dc-ogTBIKeI
+
+### Casa de campo renovada de 3 dormitorios con terraza y estufa de leña en Brigueil-le-Chantre, Vienne
+
+109.000 € · Brigueil-le-Chantre, Vienne · 108 m² · 3 dormitorios · nota RealHunt 86 · añadida el 2026-11-27
+
+La casa reformada está en buen estado y lista para entrar a vivir, con 3 dormitorios y 2 baños. La cocina equipada, moderna y amplia, con isla, es de planta abierta con el comedor y una estufa de leña. Un salón independiente, grande y abovedado, también tiene estufa de leña. En el exterior hay una terraza soleada y privada, un jardín pequeño con cobertizo y aparcamiento. El caserío está cerca de Brigueil-le-Chantre, a unos 20 minutos de Montmorillon o Le Dorat. Precio 109.000 €, unos 1.009 €/m².
+
+https://realhunt.co/es/deal/fr-brigueil-le-chantre-renovated-country-house-wood-burner-109k
 
 ### Casa de cuatro dormitorios completamente renovada con balcón y jardín en Bergerac, Dordoña
 
@@ -201,14 +201,6 @@ https://realhunt.co/es/deal/fr-dijon-57k-969671
 
 https://realhunt.co/es/deal/fr-le-havre-60k-595133
 
-### Loft en la última planta con sala de catedrales de 82 m² en Lodève
-
-285.000 € · Lodève, Hérault, Occitanie · 215 m² · 5 dormitorios · nota RealHunt 85 · añadida el 2026-10-30
-
-Un loft completamente renovado de 215 m² en la última planta de un edificio histórico, bajo la meseta de Larzac. La sala de catedrales tiene más de 82 m² con vigas de madera vista, luz desde ambos lados y una estufa de pellets. Cinco dormitorios incluyendo una suite principal, una cocina de 12 m² y una terraza de 31 m² con vistas panorámicas sobre el Lergue. Clase energética B. Precio de venta €285.000, aproximadamente €1.326/m².
-
-https://realhunt.co/es/deal/fr-lodeve-top-floor-loft-terrace-285k
-
 ### Piso de dos habitaciones reformado por 39.000 € en Saint-Étienne
 
 39.000 € · Montaud, Saint-Étienne · 45 m² · 1 dormitorios · nota RealHunt 84 · añadida el 2026-10-13
@@ -216,14 +208,6 @@ https://realhunt.co/es/deal/fr-lodeve-top-floor-loft-terrace-285k
 45 m² en planta baja de un edificio pequeño (7 viviendas) en la rue Dufour, Carnot: salón pasante, cocina equipada nueva, dormitorio con baño propio y aseo aparte. Doble acristalamiento y gastos bajos (703 € al año). Los honorarios los paga el vendedor. Precio 39.000 €, unos 867 €/m².
 
 https://realhunt.co/es/deal/fr-saint-etienne-39k-705662
-
-### Piso encantador amueblado de dos habitaciones junto a las universidades, Saint-Étienne
-
-48.000 € · Couriot, Saint-Étienne · 45 m² · 1 dormitorios · nota RealHunt 84 · añadida el 2026-10-13
-
-45 m² en la 2ª planta de un edificio pequeño y vigilado en la rue Pierre Sémard: salón de 17 m² con chimenea, cocina semiabierta, dormitorio de 10 m², baño y trastero. Bien amueblado; certificado energético G, así que no se puede alquilar a nuevos inquilinos sin aislar. Precio 48.000 €, unos 1.067 €/m².
-
-https://realhunt.co/es/deal/fr-saint-etienne-48k-108807
 
 ### Casa en lo alto de un pueblo histórico, con terraza soleada, en Bourmont
 
@@ -233,13 +217,29 @@ En lo alto del pueblo histórico de Bourmont (Alto Marne): cocina equipada, gran
 
 https://realhunt.co/es/deal/fr-bourmont-60k-q27mnf
 
-### Piso de tres habitaciones con balcón, trastero y aparcamiento en Mulhouse
+### Casa con patio y terraza, piscina y chimenea abierta en Aigre, Charente
 
-60.000 € · Mulhouse · 60 m² · 2 dormitorios · nota RealHunt 84 · añadida el 2026-10-13
+110.000 € · Aigre, Charente · 104 m² · 3 dormitorios · nota RealHunt 84 · añadida el 2026-11-27
 
-60 m² en la 3ª planta de un edificio de 1963 en la Rue des Pins: salón, cocina, dos dormitorios (11 y 13 m²), baño, aseo aparte, balcón, trastero y aparcamiento. Parqué, calefacción de gas colectiva; certificado energético D. Los honorarios los paga el vendedor. Precio 60.000 €, unos 1.000 €/m².
+Esta casa de 104 m² tiene tres dormitorios y un baño en la primera planta. El amplio salón está lleno de luz natural y cuenta con chimenea abierta, además de calefacción central de gasóleo. La casa dispone de un patio privado con terraza y un pequeño jardín, y tiene una plaza de aparcamiento privada. Forma parte de una pequeña copropiedad de cinco casas que comparte una piscina empotrada en el suelo y segura, un jardín y un granero convertido con sala de juegos. Precio 110.000 €, unos 1.058 €/m².
 
-https://realhunt.co/es/deal/fr-mulhouse-60k-377472
+https://realhunt.co/es/deal/fr-aigre-courtyard-terrace-pool-house-110k
+
+### Bungaló con galería y jardín en Saint-Vite, Lot-et-Garonne
+
+123.000 € · Saint-Vite, Lot-et-Garonne · 104 m² · 3 dormitorios · nota RealHunt 84 · añadida el 2026-11-27
+
+El bungaló está en muy buen estado y tiene buen aislamiento. Tiene unos 104 m2 con tres dormitorios, un baño con bañera y ducha, y un aseo independiente. El salón comedor tiene aire acondicionado y chimenea, y la cocina da a una galería. Fuera hay una terraza embaldosada y un jardín cerrado de 575 m2 con pozo. Cuenta con ventanas de aluminio de doble acristalamiento y calefacción central de gas de red, en una zona tranquila cerca de todas las tiendas. Precio 123.000 €, unos 1.183 €/m².
+
+https://realhunt.co/es/deal/fr-saint-vite-bungalow-veranda-garden-fireplace-123k
+
+### Casa espaciosa de 4 dormitorios de piedra con granero y jardín en Villemain, Deux-Sèvres
+
+179.990 € · Villemain, Deux-Sèvres · 198 m² · 4 dormitorios · nota RealHunt 84 · añadida el 2026-11-27
+
+La casa tiene 198 m2 habitables, cuatro dormitorios y dos amplias salas de estar, con cocina equipada y lavadero. Tiene doble acristalamiento y calefacción central de gasóleo, y la estructura y el exterior están en buen estado. En el exterior hay un jardín cerrado, un patio cerrado para aparcar y un granero de 40 m2 con suelo de hormigón. El pueblo de Chef Boutonne está a 10 minutos en coche, y Niort, Poitiers y Angulema están a 45 minutos. Precio 179.990 €, unos 909 €/m².
+
+https://realhunt.co/es/deal/fr-villemain-spacious-stone-house-barn-179k
 
 ### Casa de pueblo de piedra de los años 1700 lista para entrar de 180 m² cerca de La Rochefoucauld, Charente
 
@@ -257,13 +257,29 @@ Casa con carácter de unos 88 m² en Treignac (Corrèze), a un paseo de las tien
 
 https://realhunt.co/es/deal/fr-treignac-66k-6l5r27
 
-### Casa de piedra en el centro del pueblo con tres dormitorios y ducha moderna
+### Casa de época reformada de 2 dormitorios con vigas y balcón en Labastide-d'Armagnac, Landes
 
-69.000 € · Auzances, Creuse · 3 dormitorios · nota RealHunt 83 · añadida el 2026-10-06
+114.000 € · Labastide-d'Armagnac, Landes · 101 m² · 2 dormitorios · nota RealHunt 83 · añadida el 2026-11-27
 
-Una casa de piedra en el centro de Auzances, en el campo verde de la Creuse: salón luminoso con cocina equipada, tres dormitorios, baño moderno con ducha a ras de suelo y sótano con lavadero.
+Casa de época reformada de unos 101 m² con dos dormitorios, uno con balcón. La planta baja tiene un comedor de 27,5 m², cocina equipada, salón independiente de 16,5 m², cuarto de servicio y baño con ducha. En la planta superior hay un despacho de 7,5 m², un segundo aseo y un desván reformable. La cubierta ha sido renovada y la calefacción es eléctrica y de pellets, con red de saneamiento. El pueblo tiene tiendas, servicios, restaurantes y mercado semanal. Precio 114.000 €, unos 1.129 €/m².
 
-https://realhunt.co/es/deal/fr-auzances-69k-3pkknx
+https://realhunt.co/es/deal/fr-labastide-d-armagnac-renovated-period-stone-house-114k
+
+### Casa con carácter de 4 dormitorios con terraza y vistas en Champallement, Nièvre
+
+165.000 € · Champallement, Nièvre · 204 m² · 4 dormitorios · nota RealHunt 83 · añadida el 2026-11-27
+
+Casa con carácter de 204 m2 habitables, 4 dormitorios y 5 habitaciones, con calefacción central de gas. El salón tiene chimenea abierta y vigas vistas, y da a una cocina-comedor de 30 m2 con vistas a la iglesia. Una terraza de unos 27 m2 ofrece vistas panorámicas al campo y al bosque, y la parcela cuenta con jardín. Está junto a la iglesia de Champallement, entre Corbigny y Brinon-sur-Beuvron, a menos de 3 horas de París. Precio 165.000 €, unos 809 €/m².
+
+https://realhunt.co/es/deal/fr-champallement-character-house-terrace-views-165k
+
+### Casa de piedra con 4 dormitorios, jardín cerrado y terraza en Chizé, Deux-Sèvres
+
+168.800 € · Chizé, Deux-Sèvres · 172 m² · 4 dormitorios · nota RealHunt 83 · añadida el 2026-11-27
+
+Casa de piedra de 172 m² con 4 dormitorios repartidos en dos plantas, un baño y un aseo. La planta baja tiene un salón-comedor de 42 m² con estufa de leña y una cocina equipada de 18 m². El jardín cerrado orientado al oeste tiene 3 niveles, y un patio orientado al este cuenta con una terraza. La calefacción es de leña, fácilmente ampliable con una bomba de calor, y la casa está conectada a la red de saneamiento. Precio 168.800 €, unos 981 €/m².
+
+https://realhunt.co/es/deal/fr-chize-stone-house-enclosed-garden-terrace-168k
 
 ### Piso de 50 m² con vistas a la ciudad junto al tranvía en Le Mans
 
@@ -273,13 +289,37 @@ https://realhunt.co/es/deal/fr-auzances-69k-3pkknx
 
 https://realhunt.co/es/deal/fr-le-mans-55k-949995
 
-### Casa de pueblo lista para entrar junto a las famosas esclusas del canal
+### Casa de 2 dormitorios junto al río con terraza y garaje en Axat, Aude
 
-65.000 € · Rogny-les-Sept-Écluses, Yonne · 52 m² · 2 dormitorios · nota RealHunt 82 · añadida el 2026-10-06
+98.000 € · Axat, Aude · 62 m² · 2 dormitorios · nota RealHunt 82 · añadida el 2026-11-27
 
-Una casa de pueblo cómoda de 52 m² en Rogny-les-Sept-Écluses, famosa por sus siete esclusas históricas: salón con chimenea de insertable, cocina equipada, baño y dos dormitorios abuhardillados, además de jardín con caseta de madera. Sin obras importantes.
+Esta casa de una sola planta está en muy buen estado y tiene 62 m² habitables. Dispone de dos dormitorios, cocina amueblada, salón comedor con numerosas ventanas y un baño con ducha y WC. El doble acristalamiento y los radiadores eléctricos aportan confort, y un patio de 100 m² da acceso a un garaje de 18,69 m². La casa se encuentra en el centro de Axat, a orillas del Aude, con vistas al río y cerca de tiendas y transporte público. Precio 98.000 €, unos 1.581 €/m².
 
-https://realhunt.co/es/deal/fr-rogny-les-sept-ecluses-65k-2p3e04
+https://realhunt.co/es/deal/fr-axat-riverside-single-storey-house-garage-98k
+
+### Casa luminosa de 3 dormitorios con chimeneas y jardín en Faye-la-Vineuse, Indre-et-Loire
+
+148.400 € · Faye-la-Vineuse, Indre-et-Loire · 129 m² · 3 dormitorios · nota RealHunt 82 · añadida el 2026-11-27
+
+La casa ofrece unos 129 m² con tres dormitorios, un salón-comedor muy luminoso con chimeneas y una cocina. Además tiene un pequeño comedor que da a un patio soleado, un salón acogedor, un baño, un aseo con ducha, dos aseos independientes y una despensa. En el exterior hay un jardín frondoso con un pequeño anexo. La calefacción es central colectiva. La casa se encuentra en un pueblo medieval catalogado, a 9 minutos de Richelieu. Precio 148.400 €, unos 1.150 €/m².
+
+https://realhunt.co/es/deal/fr-faye-la-vineuse-unusual-bright-house-courtyard-148k
+
+### Casa de piedra con vistas al canal, jardín y chimenea en Rohan, Morbihan, Bretaña
+
+156.600 € · Rohan, Morbihan, Brittany · 130 m² · 4 dormitorios · nota RealHunt 82 · añadida el 2026-11-27
+
+Casa de piedra con vistas al canal y a la ruta ciclista de Nantes a Brest, con 130 m2 habitables y cuatro dormitorios. La planta baja tiene salón, comedor y cocina totalmente equipada que da al jardín, además de un baño con ducha. La primera planta cuenta con tres dormitorios luminosos, dos baños con ducha y un despacho. Dispone de bomba de calor, estufa de pellets y doble acristalamiento, y el jardín paisajístico de una parcela de 1.397 m2 incluye una plaza de aparcamiento. Tiendas, servicios y colegios están a distancia andando. Precio 156.600 €, unos 1.205 €/m².
+
+https://realhunt.co/es/deal/fr-rohan-canal-views-stone-house-garden-156k
+
+### Casa reformada de 4 dormitorios con jardín y garaje en Montluçon, Allier
+
+171.000 € · Montluçon, Allier · 130 m² · 4 dormitorios · nota RealHunt 82 · añadida el 2026-11-27
+
+Totalmente reformada en 2023, esta casa ofrece 130 m² habitables y una cocina equipada abierta al salón. Tiene 3 dormitorios, un altillo, 2 baños y un aseo. El sótano completo incluye un garaje, un taller, una bodega, una lavandería y un dormitorio adicional. La parcela cerrada tiene jardín y 3.229 pies cuadrados de terreno, y la casa cuenta con calefacción central de gas. Está cerca de todos los servicios de Montluçon. Precio 171.000 €, unos 1.315 €/m².
+
+https://realhunt.co/es/deal/fr-montlucon-renovated-garden-house-garage-171k
 
 ### Estudio amueblado con balcón junto al Palacio de Congresos, Perpiñán
 
@@ -313,6 +353,22 @@ Una casa adosada renovada de 70 m² en Masseube por €69.500, menos de €1.000
 
 https://realhunt.co/es/deal/fr-masseube-gers-renovated-townhouse-70k
 
+### Casa de campo lista para entrar a vivir con jardín y dependencia en Nouzerines, Creuse
+
+109.900 € · Nouzerines, Creuse · 80 m² · 2 dormitorios · nota RealHunt 81 · añadida el 2026-11-27
+
+Está lista para entrar a vivir y no necesita obras especiales. Ofrece 80 m² con una sala de estar de 20 m² con estufa de leña, una cocina de 20 m² totalmente equipada, un baño con ducha y aseo, y dos dormitorios en la planta superior. En el exterior hay una parcela, un jardín fácil de mantener, una dependencia y una bodega. La casa está en una pequeña aldea tranquila cerca de Nouzerines, Boussac y La Châtre. Es ideal como segunda residencia o para escapadas de fin de semana. Precio 109.900 €, unos 1.374 €/m².
+
+https://realhunt.co/es/deal/fr-nouzerines-ready-country-house-outbuilding-109k
+
+### Casa independiente renovada con gran terraza y chimenea en Erp, Ariège
+
+112.000 € · Erp, Ariège, Occitanie · 72 m² · 2 dormitorios · nota RealHunt 81 · añadida el 2026-11-27
+
+Casa independiente de campo renovada hace unos años, con 2 dormitorios en la planta superior. El salón tiene chimenea abierta, y hay una cocina moderna totalmente amueblada y una gran terraza de madera. Incluye un aseo con ducha, un WC y una lavandería con caldera de gas y un sótano en la ladera. Está calentada por calefacción central de gas, con el depósito en el jardín, y tiene ventanas de doble acristalamiento. Se encuentra en un pequeño caserío a 10 minutos de Saint-Girons, con 7.535 sq ft de terreno. Precio 112.000 €, unos 1.556 €/m².
+
+https://realhunt.co/es/deal/fr-erp-renovated-country-house-terrace-112k
+
 ### Casa urbana renovada con patio central en el centro de La Charité-sur-Loire, Borgoña
 
 119.500 € · La Charité-sur-Loire, Burgundy · 156 m² · 4 dormitorios · nota RealHunt 81 · añadida el 2026-11-18
@@ -320,6 +376,46 @@ https://realhunt.co/es/deal/fr-masseube-gers-renovated-townhouse-70k
 Una casa urbana renovada en el centro de La Charité-sur-Loire, la antigua ciudad prioral del Loira, con tiendas, escuelas y transporte cerca. 156 m² con seis habitaciones, cuatro de ellas dormitorios, dispuestas alrededor de un patio central, más un espacio tipo estudio de 27 m² reformado con techo nuevo y un gran sótano. Electrónica reformada, aislamiento completo realizado en 2011, doble acristalamiento, calefacción de gas de red, drenaje de red y fibra disponible. Precio solicitado €119.500, aproximadamente €766/m². Impuesto de propiedad €970 al año; el anuncio indica gas aproximadamente €1.200 y electricidad aproximadamente €1.000 al año.
 
 https://realhunt.co/es/deal/fr-la-charite-sur-loire-town-house-patio-119k
+
+### Casa de campo de piedra de 2 dormitorios con granero y vistas abiertas en Courbiac, Lot-et-Garonne
+
+129.600 € · Courbiac, Lot-et-Garonne · 102 m² · 2 dormitorios · nota RealHunt 81 · añadida el 2026-11-27
+
+Esta casa de campo de piedra data de 1843 y ofrece 102 m2 habitables, con 2 dormitorios, una cocina de unos 20 m2 con chimenea. Fuera hay un dormitorio independiente de unos 16 m2 y otra habitación de unos 11 m2 con aseo y ducha. Un granero abierto de unos 75 m2 y una parcela de 3.625 m2 completan la propiedad, que tiene vistas abiertas y calefacción eléctrica. Está a unos 5 km de Montaigu-de-Quercy y Tournon d'Agenais. Precio 129.600 €, unos 1.271 €/m².
+
+https://realhunt.co/es/deal/fr-courbiac-stone-farmhouse-barn-views-129k
+
+### Casa independiente lista para entrar a vivir con jardín, granero y terraza en Chamberet, Corrèze
+
+130.800 € · Chamberet, Corrèze · 90 m² · 3 dormitorios · nota RealHunt 81 · añadida el 2026-11-27
+
+Esta casa independiente tiene 90 m² habitables, 3 dormitorios y 2 baños con ducha y WC. Está lista para entrar a vivir e incluye una cocina totalmente equipada, un salón de 25 m² con estufa de leña y calefacción central de gasóleo. Una terraza de madera orientada al sureste y un jardín llano rodean la casa, con un granero de madera de 30 m², un cobertizo de 19 m² con tejado metálico y un cobertizo de jardín de 18 m². Hay tiendas y colegios cerca, y la fosa séptica se instaló recientemente. Precio 130.800 €, unos 1.453 €/m².
+
+https://realhunt.co/es/deal/fr-chamberet-detached-house-barn-garden-130k
+
+### Casa de pueblo de 3 dormitorios con chimenea y gran jardín en Les Forges, Deux-Sèvres
+
+179.983 € · Les Forges, Deux-Sèvres · 115 m² · 3 dormitorios · nota RealHunt 81 · añadida el 2026-11-27
+
+Inmaculada casa de pueblo de 3 dormitorios con 115 m2 de superficie habitable, 2 baños y estructura y exterior en buen estado. El salón de doble orientación tiene una chimenea destacada, y la cocina totalmente equipada incluye horno, placa de inducción y lavavajillas. La calefacción es eléctrica, y una terraza de grava lleva a un gran jardín trasero de unos 3.000 m2 que se extiende hasta el bosque. Una tienda ecológica, un restaurante y un campo de golf están a poca distancia a pie. Poitiers, con aeropuerto internacional y estación de TGV, está a 30 minutos. Precio 179.983 €, unos 1.565 €/m².
+
+https://realhunt.co/es/deal/fr-les-forges-village-house-fireplace-garden-terrace-179k
+
+### Casa reformada de 3 dormitorios con jardín y garaje en Lavault-Sainte-Anne, Allier
+
+192.000 € · Lavault-Sainte-Anne, Allier, Auvergne · 135 m² · 3 dormitorios · nota RealHunt 81 · añadida el 2026-11-27
+
+Casa de cinco habitaciones totalmente reformada con 135 m2 habitables repartidos en dos plantas. La planta baja tiene un amplio vestíbulo de entrada, una cocina amueblada, un salón y un aseo, mientras que la planta superior ofrece otra cocina amueblada, un salón grande, tres dormitorios, un cuarto de ducha y un aseo. La propiedad incluye garaje, bodega, terraza, una construcción auxiliar y un jardín cerrado sobre 7,535 sq ft de terreno. La calificación energética es D y la climática es C. Precio 192.000 €, unos 1.422 €/m².
+
+https://realhunt.co/es/deal/fr-lavault-sainte-anne-renovated-house-enclosed-garden-garage-192k
+
+### Casa con baños reformados y bodega troglodita en Montoire-sur-le-Loir, Loir-et-Cher
+
+199.000 € · Montoire-sur-le-Loir, Loir-et-Cher · 142 m² · 3 dormitorios · nota RealHunt 81 · añadida el 2026-11-27
+
+Esta casa de 142 m2 tiene baños reformados, carpintería de aluminio y alcantarillado público, con calefacción eléctrica y una estufa de leña reciente en el salón. La planta baja cuenta con una amplia cocina comedor que da a la terraza, un dormitorio con ducha, aseo y lavadero. En la planta superior, dos dormitorios incluyen una suite de 32 m2. La parcela de 1.125 m2 incluye una amplia bodega troglodita, y la casa se encuentra en un entorno muy tranquilo a 10 minutos de Montoire-sur-le-Loir. Precio 199.000 €, unos 1.401 €/m².
+
+https://realhunt.co/es/deal/fr-montoire-sur-le-loir-troglodyte-cellar-character-house-199k
 
 ### Estudio con vistas al puerto de Marsella, residencia cerrada
 
@@ -337,30 +433,6 @@ https://realhunt.co/es/deal/fr-marseille-54k-r-4563
 
 https://realhunt.co/es/deal/fr-saint-etienne-54k-729815
 
-### Piso reformado de un dormitorio en el centro de Roubaix, junto a Lille
-
-57.000 € · Centre-ville, Roubaix · 43 m² · 1 dormitorios · nota RealHunt 80 · añadida el 2026-10-13
-
-43 m² en 3ª planta cerca del centro de Roubaix: salón luminoso con cocina gris nueva, dormitorio de 11,8 m² y baño moderno, suelos nuevos en todo el piso. Lille está a 15 minutos en metro. Certificado energético F (calefacción eléctrica). Precio 57.000 €, unos 1.326 €/m².
-
-https://realhunt.co/es/deal/fr-roubaix-57k-230014
-
-### Casa de piedra acogedora con estufa de pellets y vistas cerca de Limoux
-
-69.900 € · Limoux, Aude · 74 m² · 2 dormitorios · nota RealHunt 80 · añadida el 2026-10-05
-
-Casa de pueblo de piedra de 73,8 m² a diez minutos de Limoux: cocina-salón de 20 m², sala con estufa de pellets, dormitorio con baño y un dormitorio abuhardillado de 18 m². Fibra óptica y muy buenas vistas desde los dormitorios. Lista para vivir.
-
-https://realhunt.co/es/deal/fr-limoux-69k-vdt9re
-
-### Casa de pueblo en las Corbières con cocina moderna
-
-80.000 € · Durban-Corbières, Aude · 58 m² · 2 dormitorios · nota RealHunt 80 · añadida el 2026-10-06
-
-Casa de pueblo de tres plantas y 58 m² en Durban-Corbières, en las colinas de viñedos detrás de Narbona: salón con cocina abierta moderna, dos dormitorios, despacho y dos bodegas. Las playas del Mediterráneo están a unos 30 minutos.
-
-https://realhunt.co/es/deal/fr-durban-corbieres-80k-ke4gw6
-
 ### Casa de pueblo de piedra del siglo XIX con patio de glicina y terraza en Frayssinet, Lot
 
 125.000 € · Frayssinet, Lot · 113 m² · 3 dormitorios · nota RealHunt 80 · añadida el 2026-11-18
@@ -368,6 +440,14 @@ https://realhunt.co/es/deal/fr-durban-corbieres-80k-ke4gw6
 Una casa de piedra del siglo XIX en un callejón tranquilo en un pueblo apacible en el Lot, en Occitania. Alrededor de 113 m² con una generosa sala de estar, cocina comedor con electrodomésticos modernos, tres dormitorios, uno de ellos en la planta baja, y dos cuartos de ducha. El agente la describe como cómoda y habitable tal como está. Tras muros de piedra hay un patio privado sombreado por glicina madura y una terraza elevada. El acristalamiento y la calefacción podrían mejorarse con el tiempo, como dice el anuncio. Las tiendas están a unos 10 minutos y una localidad mayor con estación de tren a 20 minutos. Se pide 125.000 € incluyendo gastos, alrededor de 1.106 €/m².
 
 https://realhunt.co/es/deal/fr-frayssinet-lot-stone-village-house-125k
+
+### Casa reformada de 4 dormitorios con jardín y chimenea en Vallon-en-Sully, Allier
+
+214.000 € · Vallon-en-Sully, Allier · 150 m² · 4 dormitorios · nota RealHunt 80 · añadida el 2026-11-27
+
+Casa reformada con gusto, con habitaciones amplias y cocina instalada recientemente. La planta baja tiene un salón comedor de unos 47 m² con chimenea con insert y acceso al balcón. Tres dormitorios, un baño y un aseo independiente se encuentran sobre un sótano de unos 100 m² con garaje, bodega y una sala calefactada que podría convertirse en dormitorio o despacho. La parcela cerrada y arbolada de unos 4.464 m² ofrece amplio espacio exterior, y hay tiendas cerca. Precio 214.000 €, unos 1.427 €/m².
+
+https://realhunt.co/es/deal/fr-vallon-en-sully-renovated-house-fireplace-garden-214k
 
 ### Estudio tipo loft amueblado con baño nuevo en pleno centro, Saint-Étienne
 
@@ -385,13 +465,21 @@ Casita de campo en una aldea adorable: Exideuil-sur-Vienne, Nouvelle-Aquitaine. 
 
 https://realhunt.co/es/deal/DdEOA5_llrJ
 
-### Casa de pueblo de 114 m² con patio cerca de Limoux
+### Casa reformada de 3 dormitorios con terraza y patio en Chalon-sur-Saône, Saône-et-Loire
 
-86.400 € · Espéraza, Aude · 114 m² · 2 dormitorios · nota RealHunt 79 · añadida el 2026-10-06
+160.000 € · Chalon-sur-Saône, Saône-et-Loire · 96 m² · 3 dormitorios · nota RealHunt 79 · añadida el 2026-11-27
 
-En Espéraza, un pueblo animado con comercios a 15 minutos de Limoux, en el alto valle del Aude: 114 m² con cocina-salón abierta de 31 m², lavadero, patio interior privado, dos dormitorios grandes y dos estancias más para lo que quieras.
+Esta casa fue reformada por completo en 1997 y ofrece 96 m2 de superficie Carrez en tres dormitorios. La planta baja tiene un salón doble, cocina equipada, baño con ducha, WC y dormitorio con vestidor, y en la planta alta hay otros dos dormitorios. Cuenta con terraza, un pequeño patio delantero y 1.184 pies cuadrados de terreno, con orientación sur y este. La calefacción es individual por caldera de gas de condensación, y en la planta alta hay aire acondicionado reversible. Precio 160.000 €, unos 1.667 €/m².
 
-https://realhunt.co/es/deal/fr-esperaza-86k-sxd5p3
+https://realhunt.co/es/deal/fr-chalon-sur-saone-renovated-house-courtyard-skylights-160k
+
+### Casa llave en mano de 3 dormitorios con jardín, terraza y garaje en Albi, Tarn
+
+185.000 € · Albi, Tarn · 96 m² · 3 dormitorios · nota RealHunt 79 · añadida el 2026-11-27
+
+Esta casa llave en mano ofrece 96 m2 de superficie habitable, con 3 dormitorios y aire acondicionado en los 2 del ático. La cocina da a una terraza privada y a un pequeño jardín, y la casa cuenta con chimenea, calefacción eléctrica y garaje. La cubierta se renovó en 2024 y la instalación eléctrica es conforme a la normativa. Tiendas, paradas de autobús, colegios y la universidad están a poca distancia a pie en el oeste de Albi. Precio 185.000 €, unos 1.927 €/m².
+
+https://realhunt.co/es/deal/fr-albi-turnkey-house-garden-terrace-garage-185k
 
 ### Casa de piedra renovada en el Canal du Nivernais en Champvert, Borgoña
 
@@ -401,14 +489,6 @@ Una casa de piedra en un pueblo con acceso directo al camino de sirga del Canal 
 
 https://realhunt.co/es/deal/fr-burgundy-champvert-canal-stone-house-188k
 
-### Estudio reformado con balcón junto al metro Bagatelle, Toulouse
-
-59.500 € · Bagatelle, Toulouse · 30 m² · nota RealHunt 78 · añadida el 2026-10-13
-
-30 m² en 4ª planta con ascensor, reformado entero con gusto: salón luminoso de 17 m² con balcón y vistas abiertas, cocina equipada nueva, baño con ducha y zona de dormir. Al lado del centro comercial del Hipódromo y a dos minutos del metro Bagatelle. Los honorarios los paga el vendedor. Precio 59.500 €, unos 1.955 €/m².
-
-https://realhunt.co/es/deal/fr-toulouse-60k-120948
-
 ### Casa de pueblo renovada con calificación energética B en el centro de Riez, Verdon
 
 159.000 € · Riez, Alpes-de-Haute-Provence, Provence · 91 m² · 2 dormitorios · nota RealHunt 78 · añadida el 2026-11-20
@@ -416,6 +496,14 @@ https://realhunt.co/es/deal/fr-toulouse-60k-120948
 Una casa de pueblo de 91 m² en una pequeña plaza en el centro de Riez, completamente renovada a los estándares actuales y con calificación B de energía, que es raro en una casa provenzal antigua. Tiene dos cocinas y zonas de estar en las plantas bajas, dos dormitorios (uno con su propia ducha), un cuarto de baño, aire acondicionado reversible en tres zonas y aproximadamente 50 m² de sótanos. Un pequeño patio detrás de una puerta de hierro forjado cabe una mesa. Tiendas, escuelas, un hospital y dos mercados semanales están en el pueblo, y el lago Sainte-Croix y las gargantas de Verdon están a minutos. Aproximadamente 1.750 euros por m².
 
 https://realhunt.co/es/deal/fr-provence-riez-renovated-village-house-dpe-b-159k
+
+### Casa de pueblo con terraza en azotea y patio jardín en Tressan, Hérault
+
+175.000 € · Tressan, Hérault · 68 m² · 2 dormitorios · nota RealHunt 78 · añadida el 2026-11-27
+
+Casa de pueblo independiente de dos plantas con 68 m² habitables, dos dormitorios y un baño con ducha y WC, en excelente estado decorativo. Los dos dormitorios de la planta superior tienen techos de 3 metros, y la planta baja cuenta con un salón con doble orientación, un comedor independiente y una cocina equipada que se abre al patio jardín de 32 m². Una terraza en azotea de 9 m² ofrece vistas, y un cobertizo de jardín proporciona almacenamiento. La casa tiene calefacción eléctrica, y las playas del Mediterráneo están a unos 25 km. Precio 175.000 €, unos 2.574 €/m².
+
+https://realhunt.co/es/deal/fr-tressan-roof-terrace-patio-garden-175k
 
 ### Casa de piedra bretona con invernadero cerca de las playas de Térénez en Plouezoc'h
 
@@ -433,6 +521,14 @@ Una casa de pueblo completamente renovada de aproximadamente 90 m² en las colin
 
 https://realhunt.co/es/deal/fr-provence-saint-martin-de-castillon-village-house-210k
 
+### Casa de una planta renovada con jardín y garaje en Liffol-le-Grand, Vosges
+
+175.000 € · Liffol-le-Grand, Vosges · 87 m² · 3 dormitorios · nota RealHunt 77 · añadida el 2026-11-27
+
+Casa de una planta recientemente renovada con 87 m² habitables, 3 dormitorios, un baño con ducha y un aseo independiente. La cocina equipada con isla central se abre a un salón con estufa de pellets. Una terraza orientada al sureste, con pérgola, da acceso a un jardín cerrado con árboles maduros, y la parcela de 1.007 m² incluye un cobertizo de madera y aparcamiento para varios vehículos. El garaje también funciona como cuarto de lavado. Se encuentra en una zona tranquila, cerca de tiendas y servicios. Precio 175.000 €, unos 2.011 €/m².
+
+https://realhunt.co/es/deal/fr-liffol-le-grand-renovated-single-storey-enclosed-garden-175k
+
 ### Piso de un dormitorio a cuatro minutos a pie de la estación de Grenoble
 
 59.000 € · Berriat, Grenoble · 33 m² · 1 dormitorios · nota RealHunt 76 · añadida el 2026-10-13
@@ -441,26 +537,10 @@ https://realhunt.co/es/deal/fr-provence-saint-martin-de-castillon-village-house-
 
 https://realhunt.co/es/deal/fr-grenoble-59k-973013
 
-### Casa de piedra con orilla privada de río y construcciones anexas en Vendeuvre, Normandía
+### Casa de pueblo de tres plantas amueblada con estufa de pellets en Sillans-la-Cascade, Var, Provenza
 
-205.000 € · Vendeuvre, Calvados, Normandy · 100 m² · 3 dormitorios · nota RealHunt 76 · añadida el 2026-11-20
+168.000 € · Sillans-la-Cascade, Var, Provence · 82 m² · 1 dormitorios · nota RealHunt 74 · añadida el 2026-11-27
 
-Una casa de piedra de 99,5 m² en una parcela cerrada de 1.545 m² que desciende hasta un río con riberas privadas. En la planta baja hay un salón con inserto de chimenea de leña, una cocina equipada y un cuarto de baño, y arriba tres dormitorios de 13 a 15 m². Ya hay cristalería doble, una bomba de calor aire-agua reciente y paneles solares instalados, y las construcciones anexas añaden aproximadamente 150 m² con dos garajes, un taller y una cochera. El anuncio dice que aún está por planificar algo de trabajo de acabado y refresco. Saint-Pierre-sur-Dives está a 7 minutos en coche. Impuesto predial 647 euros al año.
+Casa de pueblo de 82 m² repartida en tres plantas, vendida amueblada. La planta baja tiene una cocina abierta equipada conectada al comedor y un trastero. La primera planta ofrece un baño con ducha, un aseo independiente y un espacio que puede ser salón o segundo dormitorio, mientras que la segunda planta tiene un amplio dormitorio con aseo y lavabo privados. Calefacción por estufa de pellets, con calificación DPE C. Está en una calle tranquila con aparcamiento público gratuito cercano. Precio 168.000 €, unos 2.049 €/m².
 
-https://realhunt.co/es/deal/fr-normandy-vendeuvre-stone-house-river-garden-205k
-
-### Casa dúplex de 2009 con jardín privado en un pueblo termal
-
-85.000 € · Encausse-les-Thermes, Haute-Garonne · 66 m² · 2 dormitorios · nota RealHunt 75 · añadida el 2026-10-06
-
-Una casa dúplex pareada construida en 2009 en Encausse-les-Thermes, un pueblo termal al pie de los Pirineos: salón que da a un jardín privado de 200 m², cocina abierta, dos dormitorios arriba, terraza y lavadero.
-
-https://realhunt.co/es/deal/fr-encausse-les-thermes-85k-vjwr3w
-
-### Casa de pueblo acogedora y bien cuidada al pie de la Montagne Noire
-
-73.000 € · Saint-Denis, Aude · 50 m² · 2 dormitorios · nota RealHunt 73 · añadida el 2026-10-06
-
-Una casa de pueblo encantadora de unos 50 m² en Saint-Denis (Aude), al pie de la Montagne Noire, al norte de Carcasona. Muy bien mantenida: cocina y salón abiertos, baño moderno con ducha a ras de suelo y dos dormitorios bajo las vigas.
-
-https://realhunt.co/es/deal/fr-saint-denis-73k-bk6670
+https://realhunt.co/es/deal/fr-sillans-la-cascade-furnished-village-house-pellet-heating-168k

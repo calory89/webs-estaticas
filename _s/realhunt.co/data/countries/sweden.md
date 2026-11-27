@@ -1,6 +1,6 @@
 # Cheap homes in Sweden: key facts and every home on RealHunt
 
-On 27 November 2026, RealHunt lists 41 homes for sale in Sweden, each one checked by a person. In Sweden, the median asking price of those 41 homes is €73,000 (€800 per m², from the 24 homes with a known size); the cheapest costs €22,000 and the most expensive €187,400. Taxes and fees add about 1.5–3.5% to the price of a home in Sweden (figures as of 2026).
+On 27 November 2026, RealHunt lists 37 homes for sale in Sweden, each one checked by a person. In Sweden, the median asking price of those 37 homes is €72,000 (€800 per m², from the 21 homes with a known size); the cheapest costs €22,000 and the most expensive €178,900. Taxes and fees add about 1.5–3.5% to the price of a home in Sweden (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/sweden · Updated 27 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/sweden.json · PDF: https://realhunt.co/data/countries/sweden.pdf
@@ -9,12 +9,12 @@ Also as JSON: https://realhunt.co/data/countries/sweden.json · PDF: https://rea
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 41 |
-| Median asking price | €73,000 |
-| Median price per m² | €800 (24 homes with a known size) |
-| Median size | 116 m² |
-| Cheapest and most expensive | €22,000 · €187,400 |
-| Median RealHunt score (70 to 98) | 85 |
+| Homes on RealHunt | 37 |
+| Median asking price | €72,000 |
+| Median price per m² | €800 (21 homes with a known size) |
+| Median size | 108 m² |
+| Cheapest and most expensive | €22,000 · €178,900 |
+| Median RealHunt score (70 to 98) | 84 |
 | Taxes and fees to buy | 1.5–3.5% of the price (as of 2026) |
 | Can foreigners buy? | Yes. There are no citizenship or residence rules for buying a home in Sweden, but you need a Swedish personal identity number or coordination number (samordningsnummer) to register ownership. |
 | Yearly property tax | Houses pay a municipal property fee (kommunal fastighetsavgift) of SEK 10,425 in 2026, or 0.75% of the tax value if that is lower. |
@@ -47,7 +47,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/sweden
 
-## The 41 homes, best score first
+## The 37 homes, best score first
 
 ### Cosy villa with sauna, 100 m from the river
 
@@ -72,22 +72,6 @@ https://realhunt.co/deal/DcNI1r5oM57
 A 102 m² 1950s brick townhouse on a quiet, leafy cul-de-sac in the village of Skivarp: generous ceiling heights, stone stairs, a living room with a tiled stove, a dining kitchen and three good bedrooms, plus a sunny glazed garden room and a private garden plot. District heating. A few kilometres from the beaches at Mossbystrand and Abbekås. Swedish co-op (bostadsrätt) with a monthly fee of 5,700 SEK (about €510). Asking 695,000 SEK (about €62,300), about €611/m².
 
 https://realhunt.co/deal/se-skivarp-62k-1795989
-
-### Extensively renovated 1945 house on 2,800 m² of garden and woodland
-
-€78,000 · Markaryd, Kronoberg, Småland, Sweden · 800 m² · 2 bedrooms · RealHunt score 93 · added 2026-09-23
-
-Set along a small country road outside Markaryd, this 1945 house has been extensively updated in a clean, modern style while still offering 2,800 m² of garden, woodland and outdoor space.
-
-https://realhunt.co/deal/Dce2FjbIxt8
-
-### 1914 home with lake views, guest house and double garage on 6,525 m²
-
-€55,000 · Naggen, Medelpad, Sweden · 120 m² · 2 bedrooms · RealHunt score 92 · added 2026-09-23
-
-Set high on a generous plot with views towards the lake, this 1914 home comes with a winterized guest house, several outbuildings and plenty of room for gardening, hobbies or enjoying the surrounding forests. Swimming is about 2 km away, with year-round outdoor life on the doorstep.
-
-https://realhunt.co/deal/DcaE8pfoH77
 
 ### Two-apartment house with river swimming spots and geothermal heat
 
@@ -136,14 +120,6 @@ https://realhunt.co/deal/se-gnarp-villa-glazed-porch-82k
 Large, charming country house with wooden floors and stoves on 1.1 hectares by a lake, 4 km from the village centre.
 
 https://realhunt.co/deal/DclLv7qjKAR
-
-### House with a west-facing terrace over the Klarälven river
-
-€76,000 · Torsby, Värmland, Sweden · RealHunt score 88 · added 2026-09-23
-
-This one is all about the view. From the spacious living room and west-facing terrace, the house looks out over the Klarälven, with a generous garden offering space for growing, relaxing, or simply enjoying the open surroundings.
-
-https://realhunt.co/deal/Dbr13CDil3R
 
 ### 1948 home near the Kornsjön lakes
 
@@ -248,14 +224,6 @@ https://realhunt.co/deal/se-arbra-red-wooden-house-conservatory-795k-sek
 Asking 2,000,000 SEK (about €178,900) for a 138 m² wooden villa from 1920 with a mansard roof, about €1,300 per m². The advert calls it renovated and ready to move into: in 2026 it got new insulation, part of a new floor structure and underfloor heating with new floors in the hall, kitchen and dining area. It has a ground-source heat pump from 2018, triple glazing, four bedrooms, two renovated shower rooms, a white kitchen, an open fireplace and a tiled stove. The 1,257 m² hedged garden has fruit trees, a deck, a large glazed veranda and an insulated 80 m² double garage. Running costs 39,344 SEK a year.
 
 https://realhunt.co/deal/se-lenhovda-renovated-1920s-villa-glazed-veranda-179k
-
-### Renovated red wooden house on a big countryside plot near Ingelstad, Småland
-
-€187,400 · Ingelstads Nöbbele, Växjö (Kronoberg) · 117 m² · 3 bedrooms · RealHunt score 84 · added 2026-11-21
-
-Asking 2,095,000 SEK (about €187,400) for a single-storey red wooden house of 117 m² from 1977 on a 1,643 m² plot in green countryside about 3 km from Ingelstad and 15 km from Växjö. The advert lists a lot of recent work: in 2019 both bathrooms, new wiring, new appliances, sanded floors and a painted facade, then an air heat pump, a new garden and a new fuse box. There are three bedrooms plus a small office, a large kitchen, a living room with a wood stove, a long deck and a 40 m² garage. A bus stop is a minute away. Running costs 38,000 SEK a year.
-
-https://realhunt.co/deal/se-ingelstad-red-wooden-house-countryside-plot-187k
 
 ### Sea-view cabin with swimming access and boat mooring
 

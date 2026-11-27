@@ -9,11 +9,11 @@ Lista cambiada por última vez el 13 de octubre de 2026. Ir a las viviendas
 
 ### Tres de esta lista
 
-- [Mejor nota325.000 €Piso esquinero de 107 m² en la planta 10 con vistas a la naturaleza, ÁmsterdamGouden Rand, Amsterdam107 m² · 3 dorm. · 3.037 €/m² · 45 días en RealHuntCuota de comunidad no indicada](https://realhunt.co/es/deal/nl-amsterdam-325k-505653)
-- [La más barata299.000 €Piso esquinero remodelado con balcón al sur sobre el canal, ReigersbosReigersbos, Amsterdam73 m² · 2 dorm. · 4.096 €/m² · 45 días en RealHuntCuota de comunidad no indicada](https://realhunt.co/es/deal/nl-amsterdam-299k-563619)
-- [Más metros por el dinero335.000 €Piso de cuatro habitaciones y 93 m² con balcón de 13,5 m² junto al parque Nelson MandelaNelson Mandelapark, Amsterdam93 m² · 3 dorm. · 3.602 €/m² · 45 días en RealHuntCuota de comunidad no indicada](https://realhunt.co/es/deal/nl-amsterdam-335k-962495)
+- [Mejor nota299.000 €Piso esquinero remodelado con balcón al sur sobre el canal, ReigersbosReigersbos, Amsterdam73 m² · 2 dorm. · 4.096 €/m² · 45 días en RealHuntCuota de comunidad no indicada](https://realhunt.co/es/deal/nl-amsterdam-299k-563619)
+- [La más barata299.000 €Piso de tres habitaciones con terraza de 14 m² al sur junto al metro ReigersbosReigersbos, Amsterdam72 m² · 2 dorm. · 4.153 €/m² · 45 días en RealHuntCuota de comunidad no indicada](https://realhunt.co/es/deal/nl-amsterdam-299k-968188)
+- [Más metros por el dinero325.000 €Piso esquinero de 107 m² en la planta 10 con vistas a la naturaleza, ÁmsterdamGouden Rand, Amsterdam107 m² · 3 dorm. · 3.037 €/m² · 45 días en RealHuntCuota de comunidad no indicada](https://realhunt.co/es/deal/nl-amsterdam-325k-505653)
 
-RealHunt tiene hoy 18 pisos en venta en los Países Bajos, con precios de 299.000 € a 339.500 €. La más barata cuesta 299.000 €: [Piso esquinero remodelado con balcón al sur sobre el canal, Reigersbos](https://realhunt.co/es/deal/nl-amsterdam-299k-563619), en Reigersbos (73 m², 2 dormitorios). El precio mediano es de 325.000 € (4.286 €/m²), frente a 93.200 € (1.206 €/m²) de las 726 viviendas de RealHunt en 24 países.
+RealHunt tiene hoy 18 pisos en venta en los Países Bajos, con precios de 299.000 € a 339.500 €. La más barata cuesta 299.000 €: [Piso esquinero remodelado con balcón al sur sobre el canal, Reigersbos](https://realhunt.co/es/deal/nl-amsterdam-299k-563619), en Reigersbos (73 m², 2 dormitorios). El precio mediano es de 325.000 € (4.286 €/m²), frente a 99.000 € (1.241 €/m²) de las 703 viviendas de RealHunt en 23 países.
 
 Viviendas
 18
@@ -46,8 +46,8 @@ Datos del
 
 Ordenadas por la nota de RealHunt, de mejor a peor. Para verlas de más barata a más cara, mira la tabla de abajo: toca un encabezado como Precio para ordenarla. [Ver estas viviendas en el mapa](https://realhunt.co/es/map?country=Netherlands)
 
-- [Nota 94325.000 €Piso esquinero de 107 m² en la planta 10 con vistas a la naturaleza, ÁmsterdamGouden Rand, Amsterdam107 m² · 3 dorm. · 3.037 €/m² · 45 días en RealHuntCuota de comunidad no indicadaUn piso esquinero enorme de 107 m² (antes de cuatro habitaciones) en la planta 10 de la Gouden Rand, en Zuidoost: salón largo y luminoso con…](https://realhunt.co/es/deal/nl-amsterdam-325k-505653)
 - [Nota 94299.000 €Piso esquinero remodelado con balcón al sur sobre el canal, ReigersbosReigersbos, Amsterdam73 m² · 2 dorm. · 4.096 €/m² · 45 días en RealHuntCuota de comunidad no indicada72 m² en 1ª planta: se rehízo la distribución con los dormitorios delante y el salón detrás, con cocina moderna oscura, baño nuevo con lavadora y…](https://realhunt.co/es/deal/nl-amsterdam-299k-563619)
+- [Nota 94325.000 €Piso esquinero de 107 m² en la planta 10 con vistas a la naturaleza, ÁmsterdamGouden Rand, Amsterdam107 m² · 3 dorm. · 3.037 €/m² · 45 días en RealHuntCuota de comunidad no indicadaUn piso esquinero enorme de 107 m² (antes de cuatro habitaciones) en la planta 10 de la Gouden Rand, en Zuidoost: salón largo y luminoso con…](https://realhunt.co/es/deal/nl-amsterdam-325k-505653)
 - [Nota 93299.000 €Piso de tres habitaciones con terraza de 14 m² al sur junto al metro ReigersbosReigersbos, Amsterdam72 m² · 2 dorm. · 4.153 €/m² · 45 días en RealHuntCuota de comunidad no indicada72 m² en 1ª planta, a 50 m del centro comercial y el metro de Reigersbos: salón grande con cocina abierta, dos dormitorios y terraza de 14 m² al sur.](https://realhunt.co/es/deal/nl-amsterdam-299k-968188)
 - [Nota 90335.000 €Piso de cuatro habitaciones y 93 m² con balcón de 13,5 m² junto al parque Nelson MandelaNelson Mandelapark, Amsterdam93 m² · 3 dorm. · 3.602 €/m² · 45 días en RealHuntCuota de comunidad no indicada93 m² en 7ª planta con ascensor junto al parque Nelson Mandela: salón comedor grande con ventanales, tres dormitorios y balcón de 13,5 m² a lo…](https://realhunt.co/es/deal/nl-amsterdam-335k-962495)
 - [Nota 90300.000 €Ático bajo cubierta con ventanas de tejado junto al lago GaasperplasGein, Amsterdam72 m² · 2 dorm. · 4.167 €/m² · 45 días en RealHuntCuota de comunidad no indicada72 m² (122 m² brutos) en la última planta de un edificio bien cuidado en Gein: salón muy luminoso con ventanas de tejado, cocina blanca abierta…](https://realhunt.co/es/deal/nl-amsterdam-300k-930369)
@@ -96,8 +96,8 @@ Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 - Tipo: 18 pisos.
 - Entorno: 18 en ciudad.
 - Extras que mencionan los anuncios: 1 con jardín, 15 con terraza, 1 con garaje.
-- Notas: de 83 a 94 sobre 98. La de mejor nota: [Piso esquinero de 107 m² en la planta 10 con vistas a la naturaleza, Ámsterdam](https://realhunt.co/es/deal/nl-amsterdam-325k-505653).
-- La más reciente, añadida el 13 de octubre de 2026: [Piso esquinero de 107 m² en la planta 10 con vistas a la naturaleza, Ámsterdam](https://realhunt.co/es/deal/nl-amsterdam-325k-505653).
+- Notas: de 83 a 94 sobre 98. La de mejor nota: [Piso esquinero remodelado con balcón al sur sobre el canal, Reigersbos](https://realhunt.co/es/deal/nl-amsterdam-299k-563619).
+- La más reciente, añadida el 13 de octubre de 2026: [Piso esquinero remodelado con balcón al sur sobre el canal, Reigersbos](https://realhunt.co/es/deal/nl-amsterdam-299k-563619).
 
 ### Qué compra tu dinero aquí
 
@@ -152,9 +152,9 @@ Por característica [Con terraza 15](https://realhunt.co/es/cheap-houses/with-a-
 
 Clasificaciones [Las 10 con mejor nota 10](https://realhunt.co/es/cheap-houses/best-rated-in-netherlands)
 
-Países vecinos [Alemania 21](https://realhunt.co/es/homes/germany)
+Países vecinos [Alemania 18](https://realhunt.co/es/homes/germany)
 
-Por país [España 153](https://realhunt.co/es/homes/spain) [Italia 87](https://realhunt.co/es/homes/italy) [Estados Unidos 61](https://realhunt.co/es/homes/united-states) [Francia 47](https://realhunt.co/es/homes/france) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Suecia 41](https://realhunt.co/es/homes/sweden) [Japón 36](https://realhunt.co/es/homes/japan) [Polonia 31](https://realhunt.co/es/homes/poland) [Grecia 25](https://realhunt.co/es/homes/greece) [Alemania 21](https://realhunt.co/es/homes/germany) [Canadá 16](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [México 9](https://realhunt.co/es/homes/mexico) [Portugal 8](https://realhunt.co/es/homes/portugal) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [Reino Unido 6](https://realhunt.co/es/homes/united-kingdom) [Chipre 5](https://realhunt.co/es/homes/cyprus) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Uruguay 4](https://realhunt.co/es/homes/uruguay) [Irlanda 4](https://realhunt.co/es/homes/ireland) [Colombia 3](https://realhunt.co/es/homes/colombia) [República Checa 3](https://realhunt.co/es/homes/czech-republic)
+Por país [España 155](https://realhunt.co/es/homes/spain) [Italia 102](https://realhunt.co/es/homes/italy) [Francia 62](https://realhunt.co/es/homes/france) [Estados Unidos 61](https://realhunt.co/es/homes/united-states) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Grecia 42](https://realhunt.co/es/homes/greece) [Suecia 37](https://realhunt.co/es/homes/sweden) [Polonia 31](https://realhunt.co/es/homes/poland) [Japón 30](https://realhunt.co/es/homes/japan) [Alemania 18](https://realhunt.co/es/homes/germany) [Canadá 16](https://realhunt.co/es/homes/canada) [Portugal 11](https://realhunt.co/es/homes/portugal) [Suiza 10](https://realhunt.co/es/homes/switzerland) [México 7](https://realhunt.co/es/homes/mexico) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Reino Unido 5](https://realhunt.co/es/homes/united-kingdom) [Chipre 4](https://realhunt.co/es/homes/cyprus) [Uruguay 4](https://realhunt.co/es/homes/uruguay) [Irlanda 4](https://realhunt.co/es/homes/ireland) [Colombia 3](https://realhunt.co/es/homes/colombia) [República Checa 3](https://realhunt.co/es/homes/czech-republic)
 
 Cómo elegimos estas viviendas: una persona lee cada anuncio y comprueba precio, tamaño, fotos y lugar antes de publicarlo, y la revisión de cada noche lo retira cuando el anuncio desaparece. [Cómo revisamos las casas](https://realhunt.co/es/how-we-check-homes) 18 de estas 18 viviendas se comprobaron con su anuncio original en los últimos 30 días.
 

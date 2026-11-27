@@ -19,7 +19,7 @@ Fecha | Casa | Antes | Después
 19 de noviembre de 2026 | [Cabaña rústica moderna en los Ozarks, a minutos del río](https://realhunt.co/es/deal/us-dora-84k-329130) | 84.500 € | 86.500 €
 19 de noviembre de 2026 | [Casa de granja con tejado holandés, cubierta metálica y bomba de calor en Maine](https://realhunt.co/es/deal/us-ashland-89k-672054) | 89.000 € | 72.800 €
 19 de noviembre de 2026 | [Casa de campo en los Adirondacks con 4 hectáreas de bosque otoñal](https://realhunt.co/es/deal/us-adirondacks-farmhouse-10-acres-179k) | 159.100 € | 163.100 €
-19 de noviembre de 2026 | [Casa de 2 dormitorios lista para entrar a vivir en Marion, Indiana](https://realhunt.co/es/deal/marion-87150) | 87.150 € | 118.300 €
+19 de noviembre de 2026 | Casa de 2 dormitorios lista para entrar a vivir en Marion, Indiana | 87.150 € | 118.300 €
 19 de noviembre de 2026 | [Apartamento reformado sin dormitorio en Little River, Carolina del Sur](https://realhunt.co/es/deal/little-river-92471) | 92.471 € | 88.800 €
 19 de noviembre de 2026 | [Casa de tres dormitorios en lo alto de una colina, con dos chimeneas y terraza panorámica a la montaña](https://realhunt.co/es/deal/DdLhHoAESiS) | 90.000 € | 85.000 €
 14 de noviembre de 2026 | ['La Casa Felice': casa de 2 dormitorios en un pueblo de colina de Umbría por 48.000 €](https://realhunt.co/es/deal/it-san-venanzo-48k-knitz9) | 48.000 € | 43.500 €

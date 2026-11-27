@@ -1,6 +1,6 @@
 # Cheap homes in Bulgaria: key facts and every home on RealHunt
 
-On 27 November 2026, RealHunt lists 7 homes for sale in Bulgaria, each one checked by a person. In Bulgaria, the median asking price of those 7 homes is €66,000 (€740 per m², from the 7 homes with a known size); the cheapest costs €58,900 and the most expensive €89,000. Taxes and fees add about 3.2–8.5% to the price of a home in Bulgaria (figures as of 2026). With 7 homes this is a small sample, so the median for Bulgaria is a rough guide.
+On 27 November 2026, RealHunt lists 6 homes for sale in Bulgaria, each one checked by a person. In Bulgaria, the median asking price of those 6 homes is €69,000 (€759 per m², from the 6 homes with a known size); the cheapest costs €58,900 and the most expensive €89,000. Taxes and fees add about 3.2–8.5% to the price of a home in Bulgaria (figures as of 2026). With 6 homes this is a small sample, so the median for Bulgaria is a rough guide.
 
 Source: RealHunt, https://realhunt.co/homes/bulgaria · Updated 27 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/bulgaria.json · PDF: https://realhunt.co/data/countries/bulgaria.pdf
@@ -9,10 +9,10 @@ Also as JSON: https://realhunt.co/data/countries/bulgaria.json · PDF: https://r
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 7 (small sample) |
-| Median asking price | €66,000 |
-| Median price per m² | €740 (7 homes with a known size) |
-| Median size | 87 m² |
+| Homes on RealHunt | 6 (small sample) |
+| Median asking price | €69,000 |
+| Median price per m² | €759 (6 homes with a known size) |
+| Median size | 90 m² |
 | Cheapest and most expensive | €58,900 · €89,000 |
 | Median RealHunt score (70 to 98) | 93 |
 | Taxes and fees to buy | 3.2–8.5% of the price (as of 2026) |
@@ -44,15 +44,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/bulgaria
 
-## The 7 homes, best score first
-
-### Two-bedroom flat with a panoramic sea view on the first line in Pomorie
-
-€59,900 · Sunset Resort, Pomorie (Black Sea) · 81 m² · 2 bedrooms · RealHunt score 94 · added 2026-10-14
-
-An 81 m² flat on the second floor of Sunset Resort in Pomorie, right on the first line by a soft sandy beach, with a panoramic sea view: two bedrooms, a living room with a kitchenette, a walk-in wardrobe, a bathroom and a terrace. Fully furnished and equipped. The resort has four outdoor pools, an indoor pool, a lazy river, children's slides, bars and restaurants. Asking €59,900, about €740/m².
-
-https://realhunt.co/deal/bg-pomorie-60k-1630398
+## The 6 homes, best score first
 
 ### Furnished two-bedroom flat with a sea view in a gated complex in Kavarna
 

@@ -1,6 +1,6 @@
 # Cheap homes in Cyprus: key facts and every home on RealHunt
 
-On 27 November 2026, RealHunt lists 6 homes for sale in Cyprus, each one checked by a person. In Cyprus, the median asking price of those 6 homes is €341,000 (€3,723 per m², from the 6 homes with a known size); the cheapest costs €130,000 and the most expensive €470,000. Taxes and fees add about 2.5–3.5% to the price of a home in Cyprus (figures as of 2026). With 6 homes this is a small sample, so the median for Cyprus is a rough guide.
+On 27 November 2026, RealHunt lists 4 homes for sale in Cyprus, each one checked by a person. In Cyprus, the median asking price of those 4 homes is €341,000 (€4,060 per m², from the 4 homes with a known size); the cheapest costs €130,000 and the most expensive €470,000. Taxes and fees add about 2.5–3.5% to the price of a home in Cyprus (figures as of 2026). With 4 homes this is a small sample, so the median for Cyprus is a rough guide.
 
 Source: RealHunt, https://realhunt.co/homes/cyprus · Updated 27 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/cyprus.json · PDF: https://realhunt.co/data/countries/cyprus.pdf
@@ -9,9 +9,9 @@ Also as JSON: https://realhunt.co/data/countries/cyprus.json · PDF: https://rea
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 6 (small sample) |
+| Homes on RealHunt | 4 (small sample) |
 | Median asking price | €341,000 |
-| Median price per m² | €3,723 (6 homes with a known size) |
+| Median price per m² | €4,060 (4 homes with a known size) |
 | Median size | 84 m² |
 | Cheapest and most expensive | €130,000 · €470,000 |
 | Median RealHunt score (70 to 98) | 84 |
@@ -49,7 +49,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/cyprus
 
-## The 6 homes, best score first
+## The 4 homes, best score first
 
 ### Ready 2-bed flat steps from the beach in Coral Bay, with pool and sea views
 
@@ -58,14 +58,6 @@ Full guide: https://realhunt.co/guide/cyprus
 A ready-to-move-in 2-bedroom, 2-bathroom apartment a few steps from the Blue Flag beaches of Coral Bay, west of Paphos. 84 m² with a modern fitted kitchen, a bright open living area and a private balcony with sea views for the sunsets. Gated complex with a large communal pool in landscaped gardens and private parking. About 25 km from Paphos airport. At about €4,060/m² it is roughly 18% below the Paphos median asking price (€4,923/m², index.cy, October 2026).
 
 https://realhunt.co/deal/cy-coral-bay-341k-080655
-
-### Furnished townhouse with a private pool, 100 m from the sea in Protaras
-
-€350,000 · Protaras, Famagusta · 94 m² · 2 bedrooms · RealHunt score 92 · added 2026-10-12
-
-A 2009 townhouse 100 metres from the coastline of Protaras, sold fully furnished and ready to live in. 94 m² on a 155 m² plot with its own swimming pool: open-plan living with a new kitchen and breakfast bar, a renovated shower room downstairs, and two double bedrooms upstairs, the main one with a balcony over the pool. Bars and restaurants are within walking distance. At about €3,720/m² it is roughly 27% below the Protaras median asking price (€5,136/m², index.cy, October 2026).
-
-https://realhunt.co/deal/cy-protaras-350k-257111
 
 ### Sea-front ground-floor flat with a 50 m² terrace and overflow pool in Protaras
 
@@ -90,11 +82,3 @@ https://realhunt.co/deal/cy-mazotos-2-bed-pool-130k-477874
 A two-bedroom townhouse in a quiet residential area of Paralimni, sold with title deeds and fully renovated. 74 m² inside plus an 11 m² front veranda and a 5 m² balcony with a partial sea view from the main bedroom. New kitchen with integrated dishwasher and oven, a guest WC, a bathroom with a walk-in shower, new air conditioning, upgraded fitted wardrobes and a new solar hot-water system. Allocated parking at the rear. The advert puts the nearest beach 10 minutes away. Sold unfurnished. Asking €187,000, about €2,530/m². Communal fees are not stated.
 
 https://realhunt.co/deal/cy-paralimni-renovated-townhouse-title-deeds-187k
-
-### Furnished two-bedroom flat with private yard and shared pool in Mesa Chorio, Paphos
-
-€195,000 · Mesa Chorio, Paphos · 74 m² · 2 bedrooms · RealHunt score 78 · added 2026-11-18
-
-A two-bedroom ground-floor apartment in Mesa Chorio, a village on the edge of Paphos, sold with its own separate title deed and with the furniture included. 74 m² inside with an open-plan kitchen, dining and living area and a bathroom with shower, plus a 19 m² covered veranda, a 3 m² open veranda and the exclusive use of a private yard. The complex has a shared swimming pool and the flat has a covered parking space. The advert places it about 250 m from the village church and 2.7 km from Paphos General Hospital. Asking €195,000, about €2,640/m². Communal fees are not stated.
-
-https://realhunt.co/deal/cy-paphos-mesa-chorio-pool-flat-195k-502684

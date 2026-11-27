@@ -30,26 +30,26 @@ Impuesto sobre los ingresos por alquiler: No residentes: UE/EEE 19% sobre el ren
 ### Mejores casas en España
 
 - [55.000 € · Casa de pueblo con terraza panorámica al mar y a la montaña en Rossell, Castellón](https://realhunt.co/es/deal/es-rossell-55k-187471380) · Rossell, Baix Maestrat (Castellón) · nota 94 · 120 m² · 5 dorm.
-- [77.000 € · Casa pareada de 5 dormitorios con terraza en Nevada](https://realhunt.co/es/deal/es-nevada-77k-72929) · Nevada, Granada, España · nota 94 · 306 m² · 5 dorm.
-- [38.000 € · Casa de 2 dormitorios con terraza en Alpujarra de la Sierra](https://realhunt.co/es/deal/es-alpujarra-de-la-sierra-38k-35809) · Alpujarra de la Sierra, Granada, España · nota 94 · 150 m² · 2 dorm.
 - [59.000 € · Casa de 5 dormitorios con terraza en Sorvilán](https://realhunt.co/es/deal/es-sorvilan-59k-76765) · Sorvilán, Granada, España · nota 94 · 147 m² · 5 dorm.
-- [73.000 € · Piso de 2 dormitorios con terraza en Cartagena](https://realhunt.co/es/deal/es-cartagena-73k-74761) · Cartagena, Murcia, España · nota 93 · 85 m² · 2 dorm.
 - [63.500 € · Casa de campo de 2 dormitorios con terraza en Benizalón](https://realhunt.co/es/deal/es-benizalon-63k-44767) · Benizalón, Almería, España · nota 92 · 114 m² · 2 dorm.
+- [39.000 € · Casa de 3 dormitorios con terraza en Nacimiento](https://realhunt.co/es/deal/es-nacimiento-39k-60637) · Nacimiento, Almería, España · nota 92 · 100 m² · 3 dorm.
+- [91.000 € · Casa de 4 dormitorios con terraza en Alozaina](https://realhunt.co/es/deal/es-alozaina-91k-40320) · Alozaina, Málaga, España · nota 92 · 175 m² · 4 dorm.
+- [150.000 € · Casa de pueblo con terraza llena de plantas frente al castillo de Castalla, con garaje](https://realhunt.co/es/deal/es-castalla-150k-388079) · Castalla, Alicante · nota 91 · 165 m² · 3 dorm.
 
-[Las 191 casas en España](https://realhunt.co/es/homes/spain)
+[Las 155 casas en España](https://realhunt.co/es/homes/spain)
 
 [Gastos, impuestos y fuentes de España](https://realhunt.co/es/costs/spain) · [Calculadora de gastos de compra para España](https://realhunt.co/es/buying-costs/spain) · [¿Puedo comprar allí? Normas por nacionalidad](https://realhunt.co/es/can-i-buy)
 
 ### Compara España
 
 - [España vs Italia](https://realhunt.co/es/countries/italy-vs-spain)
-- [España vs Estados Unidos](https://realhunt.co/es/countries/spain-vs-united-states)
 - [España vs Francia](https://realhunt.co/es/countries/france-vs-spain)
+- [España vs Estados Unidos](https://realhunt.co/es/countries/spain-vs-united-states)
 - [España vs Dinamarca](https://realhunt.co/es/countries/denmark-vs-spain)
-- [España vs Suecia](https://realhunt.co/es/countries/spain-vs-sweden)
-- [España vs Japón](https://realhunt.co/es/countries/japan-vs-spain)
-- [España vs Polonia](https://realhunt.co/es/countries/poland-vs-spain)
 - [España vs Grecia](https://realhunt.co/es/countries/greece-vs-spain)
+- [España vs Suecia](https://realhunt.co/es/countries/spain-vs-sweden)
+- [España vs Polonia](https://realhunt.co/es/countries/poland-vs-spain)
+- [España vs Japón](https://realhunt.co/es/countries/japan-vs-spain)
 
 ### Fuentes
 

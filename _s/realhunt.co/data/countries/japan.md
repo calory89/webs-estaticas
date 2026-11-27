@@ -1,6 +1,6 @@
 # Cheap homes in Japan: key facts and every home on RealHunt
 
-On 27 November 2026, RealHunt lists 38 homes for sale in Japan, each one checked by a person. In Japan, the median asking price of those 38 homes is €54,280 (€468 per m², from the 22 homes with a known size); the cheapest costs €7,400 and the most expensive €159,600. Taxes and fees add about 6–9% to the price of a home in Japan (figures as of 2026).
+On 27 November 2026, RealHunt lists 30 homes for sale in Japan, each one checked by a person. In Japan, the median asking price of those 30 homes is €49,680 (€340 per m², from the 15 homes with a known size); the cheapest costs €7,400 and the most expensive €125,400. Taxes and fees add about 6–9% to the price of a home in Japan (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/japan · Updated 27 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/japan.json · PDF: https://realhunt.co/data/countries/japan.pdf
@@ -9,11 +9,11 @@ Also as JSON: https://realhunt.co/data/countries/japan.json · PDF: https://real
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 38 |
-| Median asking price | €54,280 |
-| Median price per m² | €468 (22 homes with a known size) |
-| Median size | 92 m² |
-| Cheapest and most expensive | €7,400 · €159,600 |
+| Homes on RealHunt | 30 |
+| Median asking price | €49,680 |
+| Median price per m² | €340 (15 homes with a known size) |
+| Median size | 91 m² |
+| Cheapest and most expensive | €7,400 · €125,400 |
 | Median RealHunt score (70 to 98) | 86 |
 | Taxes and fees to buy | 6–9% of the price (as of 2026) |
 | Can foreigners buy? | Yes. Foreigners can buy freehold land and homes on the same terms as Japanese citizens, even on a tourist visa, though buying does not give a visa or residency. |
@@ -49,7 +49,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/japan
 
-## The 38 homes, best score first
+## The 30 homes, best score first
 
 ### Mountain chalet with a wood stove and a loft in the Hida forest
 
@@ -106,22 +106,6 @@ https://realhunt.co/deal/jp-inami-seaside-villa-20k-503430
 A 2004 cabin of 75 m² on a 165 m² freehold plot in a forest holiday village in Agano, Niigata. Cedar walls throughout, 3 rooms plus a 20-tatami loft room, a wooden deck and parking. Renovated in December 2023; hot spring water can be connected as an option. Asking ¥4 million, about €22,800.
 
 https://realhunt.co/deal/jp-agano-forest-cabin-23k-775004
-
-### Wooden villa in Kita-Karuizawa that you can rent out as a holiday home
-
-€25,600 · Kita-Karuizawa, Naganohara, Gunma · 60 m² · 2 bedrooms · RealHunt score 91 · added 2026-11-02
-
-A single-storey 1990 villa of 60 m² on a 410 m² freehold plot in a well-kept estate in Kita-Karuizawa, Gunma. Wood-lined living room opening onto a balcony in the trees, two tatami rooms, fitted kitchen. Listed as usable for holiday lets. Estate fee about ¥58,000 a year. Asking ¥4.5 million, about €25,600.
-
-https://realhunt.co/deal/jp-kitakaruizawa-villa-26k-093770
-
-### Bungalow 3 minutes' walk from the beach in Wakayama, new facade in 2025
-
-€27,300 · Kirime, Inami, Wakayama · 59 m² · 3 bedrooms · RealHunt score 91 · added 2026-11-02
-
-A 2000 steel-frame bungalow of 59 m² with 3 rooms on a 116 m² freehold plot, a 3-minute walk from Kirime beach and 1 km from the station. New exterior cladding in May 2025, sunsets over the sea, good fishing. The 50 m² plot next door can also be bought. Asking ¥4.8 million, about €27,300.
-
-https://realhunt.co/deal/jp-inami-beach-bungalow-27k-272502
 
 ### Renovated two-storey villa in the Mount Akagi woods, Gunma
 
@@ -219,14 +203,6 @@ Perched on a hilltop on Kojima Island in Okayama, this beautifully renovated 2-b
 
 https://realhunt.co/deal/Db59YYrjN5h
 
-### Japanese villa with a stream, deck and hot spring access
-
-€38,640 · Nasu, Tochigi, Japan · 1 bedrooms · RealHunt score 85 · added 2026-09-23
-
-The 1LDK home offers 58㎡ of living space on 265㎡ of freehold land, with one bedroom, an open living and dining area, a wooden deck, and an airy atrium that makes the compact interior feel bright and welcoming.
-
-https://realhunt.co/deal/DdZOxZODE98
-
 ### Fully renovated single-storey house near the coast
 
 €39,560 · Arida, Wakayama, Japan · RealHunt score 85 · added 2026-09-23
@@ -251,14 +227,6 @@ This Cute Private House in Japan Comes with a Private Beachfront for Just $61K A
 
 https://realhunt.co/deal/DcEQh3AjBbN
 
-### Renovated family home with a view of Mount Fuji
-
-€66,700 · Fuji, Shizuoka · 88 m² · 3 bedrooms · RealHunt score 83 · added 2026-10-05
-
-Built in 2001 and renovated inside and out: 3 bedrooms plus a storage room in 87.6 m², on a 199 m² plot in Fuji city, Shizuoka, with Mount Fuji visible from the first floor. Parking for three cars. Asking price ¥11,800,000. Foreigners can buy homes in Japan with no restrictions.
-
-https://realhunt.co/deal/jp-fuji-66k-852751
-
 ### Misawa-built family house with a partial sea view on Awaji Island, Hyogo
 
 €54,300 · Fukakusa, Awaji, Hyogo · 91 m² · 3 bedrooms · RealHunt score 82 · added 2026-11-18
@@ -275,14 +243,6 @@ A 1960s farmhouse in Kurotani, Takashima, Shiga, with nine rooms, a mud-walled s
 
 https://realhunt.co/deal/Dc56aI-icMP
 
-### 2012 house with 4 bedrooms, renovated, near the coast in Shizuoka
-
-€81,900 · Shimizu, Shizuoka · 92 m² · 4 bedrooms · RealHunt score 81 · added 2026-10-05
-
-Only 14 years old and renovated: a 4-bedroom house of 91.5 m² on a 122 m² plot in Shimizu, Shizuoka, with a fitted kitchen, a new bathroom and a tatami room. A short bus ride to JR Okitsu station on the coast. Asking price ¥14,500,000. Foreigners can buy homes in Japan with no restrictions.
-
-https://realhunt.co/deal/jp-shimizu-81k-591487
-
 ### Japanese-style home with an engawa and garden in a hot spring town
 
 €91,080 · Yugawara, Kanagawa, Japan · RealHunt score 81 · added 2026-09-23
@@ -291,14 +251,6 @@ A pure Japanese-style single-story home with a wide engawa opening onto its own 
 
 https://realhunt.co/deal/DbA4_hKEThx
 
-### Japanese-style one-floor house from 2016 on a big corner plot near Kaike, Yonago
-
-€142,500 · Kaike-Shinden, Yonago, Tottori · 140 m² · 4 bedrooms · RealHunt score 81 · added 2026-11-20
-
-Asking ¥25,000,000 (about €142,500). A wooden house finished in October 2016 in Kaike-Shinden, Yonago, a short drive from the Kaike hot-spring resort and its beach on the Sea of Japan. The advert describes it as a one-floor home without stairs: 140 m² with a dining kitchen, a western-style room and three tatami rooms, including a 10-mat room with a tokonoma alcove, plus a bathroom with a window, two toilets and a sunny wooden veranda corridor. All-electric. It stands on a 510 m² freehold corner plot with roads on three sides, parking for three or more cars and a separate 33 m² storage garage. Empty, handover at once.
-
-https://realhunt.co/deal/jp-yonago-kaike-2016-one-floor-japanese-house-143k
-
 ### House built in 2018 on a 1,181 m² plot near the sea in Shima, Mie
 
 €84,500 · Ago-cho Tategami, Shima, Mie · 106 m² · 2 bedrooms · RealHunt score 79 · added 2026-11-18
@@ -306,22 +258,6 @@ https://realhunt.co/deal/jp-yonago-kaike-2016-one-floor-japanese-house-143k
 A two-storey wooden house finished in January 2018, far newer than most homes at this price. 106 m² with two bedrooms plus a storage room and a living, dining and kitchen space of over 20 tatami, on a 1,181 m² freehold plot in Ago-cho Tategami, in the Ise-Shima area of Mie. The advert lists the sea within 2 km, mountain views, a supermarket within a 10 minute walk and parking for three or more cars. Water comes from a well and there is a septic tank. Asking ¥14,800,000 (about €84,500), roughly €800/m².
 
 https://realhunt.co/deal/jp-shima-2018-house-large-plot-85k-596606
-
-### Four-bedroom 2016 house of 132 m² on a corner plot in Takashima, Otaru, Hokkaido
-
-€116,800 · Takashima, Otaru, Hokkaido · 132 m² · 4 bedrooms · RealHunt score 79 · added 2026-11-21
-
-Asking ¥20,490,000 (about €116,800), under €900 per m². A two-storey wooden house from September 2016 on a 324 m² freehold corner plot in a quiet residential part of Otaru, with parking for four cars. 132 m² with a living and dining room, an open kitchen facing the room, four bedrooms, a bathroom and two toilets. The selling company has done a termite treatment, a leak and equipment check and a full clean, and it gives a two-year warranty against leaks and structural defects. It is empty, and the primary school is about 350 m away.
-
-https://realhunt.co/deal/jp-otaru-takashima-2016-four-bed-house-corner-plot-117k
-
-### Japanese country house with an irori hearth and old timber beams near Matsumoto, Nagano
-
-€159,600 · Azusagawa-Ueno, Matsumoto, Nagano · 167 m² · 4 bedrooms · RealHunt score 79 · added 2026-11-21
-
-Asking ¥28,000,000 (about €159,600). A two-storey house from May 2003, built with timbers about a hundred years old, in the countryside of Azusagawa. 167 m² with a sunken irori hearth in a dark wood living room under exposed beams, four tatami rooms, an attic room, a kitchen and a bathroom with a window. It stands on a large 1,218 m² freehold plot with lawn and space for a vegetable garden. The house is empty. Shin-Shimashima station is a 15-minute walk. The plot is in an urbanisation-control area (shigaika chōsei kuiki), where rebuilding or extending can be restricted: ask the agent before you plan works.
-
-https://realhunt.co/deal/jp-matsumoto-azusagawa-house-irori-hearth-old-timbers-160k
 
 ### Four-bedroom house from 2004 in Misaki on the Miura peninsula, Kanagawa
 

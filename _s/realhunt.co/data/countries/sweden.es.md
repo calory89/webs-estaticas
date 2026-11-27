@@ -1,6 +1,6 @@
 # Casas baratas en Suecia: datos clave y todas las casas de RealHunt
 
-A 27 de noviembre de 2026, RealHunt publica 41 casas en venta en Suecia, revisadas una a una por una persona. En Suecia, el precio de salida mediano de esas 41 casas es de 73.000 € (800 € por m², calculado con las 24 casas de superficie conocida); la más barata cuesta 22.000 € y la más cara, 187.400 €. Los impuestos y gastos de compra suman alrededor del 1,5–3,5% del precio de una casa en Suecia (cifras de 2026).
+A 27 de noviembre de 2026, RealHunt publica 37 casas en venta en Suecia, revisadas una a una por una persona. En Suecia, el precio de salida mediano de esas 37 casas es de 72.000 € (800 € por m², calculado con las 21 casas de superficie conocida); la más barata cuesta 22.000 € y la más cara, 178.900 €. Los impuestos y gastos de compra suman alrededor del 1,5–3,5% del precio de una casa en Suecia (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/sweden · Actualizado el 27 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/sweden.json · PDF: https://realhunt.co/data/countries/sweden.es.pdf
@@ -9,12 +9,12 @@ También en JSON: https://realhunt.co/data/countries/sweden.json · PDF: https:/
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 41 |
-| Precio de salida mediano | 73.000 € |
-| Precio mediano por m² | 800 € (24 casas de superficie conocida) |
-| Superficie mediana | 116 m² |
-| La más barata y la más cara | 22.000 € · 187.400 € |
-| Nota RealHunt mediana (de 70 a 98) | 85 |
+| Casas en RealHunt | 37 |
+| Precio de salida mediano | 72.000 € |
+| Precio mediano por m² | 800 € (21 casas de superficie conocida) |
+| Superficie mediana | 108 m² |
+| La más barata y la más cara | 22.000 € · 178.900 € |
+| Nota RealHunt mediana (de 70 a 98) | 84 |
 | Impuestos y gastos de compra | 1,5–3,5% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sí. No hay normas de ciudadanía o residencia para comprar una vivienda en Suecia, pero necesitas un número de identidad personal sueco o número de coordinación (samordningsnummer) para registrar la propiedad. |
 | Impuesto anual sobre la vivienda | Las casas pagan una tasa municipal sobre la propiedad (kommunal fastighetsavgift) de 10.425 SEK en 2026, o el 0,75% del valor fiscal si es menor. |
@@ -47,7 +47,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/sweden
 
-## Las 41 casas, de mejor a peor nota
+## Las 37 casas, de mejor a peor nota
 
 ### Villa acogedora con sauna, a 100 m del río
 
@@ -72,22 +72,6 @@ https://realhunt.co/es/deal/DcNI1r5oM57
 Adosado de ladrillo de 102 m² de los años 50 en una calle tranquila y arbolada sin salida del pueblo de Skivarp: techos altos, escaleras de piedra, salón con estufa de azulejos, cocina-comedor y tres buenos dormitorios, más una galería acristalada al sur y un jardín propio. Calefacción urbana. A pocos kilómetros de las playas de Mossbystrand y Abbekås. Cooperativa sueca (bostadsrätt) con cuota mensual de 5.700 SEK (unos 510 €). Precio 695.000 SEK (unos 62.300 €), unos 611 €/m².
 
 https://realhunt.co/es/deal/se-skivarp-62k-1795989
-
-### Casa de 1945 muy reformada en 2.800 m² de jardín y bosque
-
-78.000 € · Markaryd, Kronoberg, Småland, Sweden · 800 m² · 2 dormitorios · nota RealHunt 93 · añadida el 2026-09-23
-
-Junto a una pequeña carretera comarcal a las afueras de Markaryd, esta casa de 1945 se ha actualizado a fondo con un estilo limpio y moderno, y aun así ofrece 2.800 m² de jardín, bosque y espacio exterior.
-
-https://realhunt.co/es/deal/Dce2FjbIxt8
-
-### Casa de 1914 con vistas al lago, casa de invitados y garaje doble en 6.525 m²
-
-55.000 € · Naggen, Medelpad, Sweden · 120 m² · 2 dormitorios · nota RealHunt 92 · añadida el 2026-09-23
-
-En lo alto de una parcela generosa con vistas hacia el lago, esta casa de 1914 viene con una casa de invitados acondicionada para el invierno, varias construcciones anexas y mucho sitio para jardinería, hobbies o disfrutar de los bosques de alrededor. La zona de baño está a unos 2 km, con vida al aire libre todo el año a la puerta.
-
-https://realhunt.co/es/deal/DcaE8pfoH77
 
 ### Casa con dos viviendas, pozas en el río para bañarse y calefacción geotérmica
 
@@ -136,14 +120,6 @@ https://realhunt.co/es/deal/se-gnarp-villa-glazed-porch-82k
 Casa de campo grande y con encanto, con suelos de madera y estufas, en 1,1 hectáreas junto a un lago, a 4 km del centro del pueblo.
 
 https://realhunt.co/es/deal/DclLv7qjKAR
-
-### Casa con terraza orientada al oeste sobre el río Klarälven
-
-76.000 € · Torsby, Värmland, Sweden · nota RealHunt 88 · añadida el 2026-09-23
-
-Aquí lo que manda son las vistas. Desde el amplio salón y la terraza orientada al oeste, la casa mira al Klarälven, con un jardín generoso que da espacio para cultivar, relajarse o simplemente disfrutar del entorno abierto.
-
-https://realhunt.co/es/deal/Dbr13CDil3R
 
 ### Casa de 1948 cerca de los lagos Kornsjön
 
@@ -248,14 +224,6 @@ https://realhunt.co/es/deal/se-arbra-red-wooden-house-conservatory-795k-sek
 Pidiendo 2.000.000 SEK (unos €178.900) por una villa de madera de 138 m² de 1920 con techo de mansarda, unos €1.300 por m². El anuncio la llama renovada y lista para mudarse: en 2026 recibió aislamiento nuevo, parte de una nueva estructura de suelo y calefacción por suelo radiante con suelos nuevos en el pasillo, cocina y comedor. Tiene una bomba de calor geotérmica de 2018, triple acristalamiento, cuatro dormitorios, dos cuartos de ducha renovados, una cocina blanca, una chimenea abierta y una estufa de azulejos. El jardín cercado de 1.257 m² tiene árboles frutales, una terraza, una gran galería acristalada y un garaje doble aislado de 80 m². Gastos de funcionamiento 39.344 SEK al año.
 
 https://realhunt.co/es/deal/se-lenhovda-renovated-1920s-villa-glazed-veranda-179k
-
-### Casa de madera roja renovada en una gran parcela rural cerca de Ingelstad, Småland
-
-187.400 € · Ingelstads Nöbbele, Växjö (Kronoberg) · 117 m² · 3 dormitorios · nota RealHunt 84 · añadida el 2026-11-21
-
-Pidiendo 2.095.000 SEK (unos €187.400) por una casa de madera roja de una sola planta de 117 m² de 1977 en una parcela de 1.643 m² en campo verde a unos 3 km de Ingelstad y 15 km de Växjö. El anuncio enumera mucho trabajo reciente: en 2019 ambos baños, cableado nuevo, electrodomésticos nuevos, suelos lijados y fachada pintada, luego bomba de calor aire, jardín nuevo y cuadro de fusibles nuevo. Hay tres dormitorios más una pequeña oficina, una gran cocina, un salón con estufa de leña, una larga terraza y un garaje de 40 m². Una parada de autobús está a un minuto. Gastos de funcionamiento 38.000 SEK al año.
-
-https://realhunt.co/es/deal/se-ingelstad-red-wooden-house-countryside-plot-187k
 
 ### Cabaña con vistas al mar, acceso para bañarse y amarre para barco
 

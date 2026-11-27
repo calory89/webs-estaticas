@@ -40,7 +40,7 @@ Prices and counts come from the homes on the site; rules, taxes and costs from t
 
 ### No inflated numbers
 
-We say how many homes there are: 726 today. Not "thousands".
+We say how many homes there are: 703 today. Not "thousands".
 
 ### No photos passed off as ours
 

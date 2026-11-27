@@ -1,24 +1,23 @@
 ﻿level,name,from_km,to_km,homes,median_price_eur,median_eur_per_sqm,homes_with_size,median_score,median_distance_km,under_60_km_pct
-band,under 30 km,0,30,245,130000,1456,227,86,,
-band,30 to 60 km,30,60,274,91599,1090,249,85,,
-band,60 to 100 km,60,100,177,85900,1078,165,83,,
-band,100 km or more,100,,20,84000,1094,17,84,,
+band,under 30 km,0,30,214,150000,1568,198,86,,
+band,30 to 60 km,30,60,280,99500,1222,258,84,,
+band,60 to 100 km,60,100,176,91000,1086,165,83,,
+band,100 km or more,100,,23,90400,1094,20,84,,
 country,Netherlands,,,18,,,,,14,100
-country,Mexico,,,14,,,,,20,100
-country,United States,,,62,,,,,20,79
+country,United States,,,61,,,,,19,80
+country,Mexico,,,12,,,,,20,100
 country,Dominican Republic,,,5,,,,,25,100
-country,Greece,,,27,,,,,31,100
-country,Spain,,,191,,,,,37,78
-country,Cyprus,,,6,,,,,38,100
-country,Japan,,,37,,,,,42,81
+country,Greece,,,42,,,,,33,95
+country,Spain,,,155,,,,,37,77
 country,Denmark,,,46,,,,,43,70
-country,Italy,,,83,,,,,45,66
-country,Bulgaria,,,7,,,,,47,100
-country,Sweden,,,37,,,,,48,76
-country,France,,,52,,,,,49,65
-country,United Kingdom,,,7,,,,,55,57
-country,Portugal,,,21,,,,,56,57
+country,Japan,,,29,,,,,44,83
+country,Italy,,,97,,,,,45,69
+country,Bulgaria,,,6,,,,,47,100
+country,Sweden,,,33,,,,,48,73
+country,France,,,62,,,,,55,58
+country,United Kingdom,,,5,,,,,61,40
 country,Canada,,,16,,,,,63,44
-country,Germany,,,21,,,,,66,29
+country,Portugal,,,20,,,,,65,50
+country,Germany,,,18,,,,,66,28
 country,Poland,,,31,,,,,68,45
 country,Switzerland,,,10,,,,,71,30

@@ -32,11 +32,11 @@ Tax on rental income: Non-residents pay French income tax on French rental incom
 - [€39,950 · 171 m² house with a former shop in the centre of Bussière-Poitevine](https://realhunt.co/deal/fr-bussiere-poitevine-39k-088775) · Bussière-Poitevine, Haute-Vienne · score 92 · 171 m² · 3 bed
 - [€148,400 · Brick house with a 2019 living-room extension, garden and garage in Ohain, Avesnois](https://realhunt.co/deal/fr-ohain-148k-150454) · Ohain, Nord · score 91 · 106 m² · 3 bed
 - [€137,900 · Renovated old house with stone walls and terracotta floors in the Perche, 3 minutes from Nogent-le-Rotrou](https://realhunt.co/deal/fr-val-au-perche-137k-446720) · Val-au-Perche, Orne · score 91 · 81 m² · 3 bed
-- [€134,375 · Furnished old stone house with a 53 m² living room and 2,825 m² of garden in Bessac, Charente](https://realhunt.co/deal/fr-bessac-134k-729283) · Bessac, Charente · score 91 · 116 m² · 2 bed
 - [€123,000 · Fully renovated 19th-century longère on one level with garage in Lencloître, Vienne](https://realhunt.co/deal/fr-lencloitre-123k-157528) · Lencloître, Vienne · score 91 · 102 m² · 2 bed
 - [€139,000 · Former level-crossing keeper's house renovated in 2023 on 1,824 m² in Bergerac, Dordogne](https://realhunt.co/deal/fr-bergerac-139k-175736) · Bergerac, Dordogne · score 91 · 77 m² · 2 bed
+- [€109,760 · Stone country house from 1550 with a mezzanine and 1,686 m² of land in Nieuil, Charente](https://realhunt.co/deal/fr-nieuil-109k-mo5052) · Nieuil, Charente · score 91 · 116 m² · 2 bed
 
-[All 52 homes in France](https://realhunt.co/homes/france)
+[All 62 homes in France](https://realhunt.co/homes/france)
 
 [Costs, taxes and sources for France](https://realhunt.co/costs/france) · [Buying-cost calculator for France](https://realhunt.co/buying-costs/france) · [Can I buy there? Rules by nationality](https://realhunt.co/can-i-buy)
 
@@ -46,10 +46,10 @@ Tax on rental income: Non-residents pay French income tax on French rental incom
 - [France vs Italy](https://realhunt.co/countries/france-vs-italy)
 - [France vs United States](https://realhunt.co/countries/france-vs-united-states)
 - [France vs Denmark](https://realhunt.co/countries/denmark-vs-france)
-- [France vs Sweden](https://realhunt.co/countries/france-vs-sweden)
-- [France vs Japan](https://realhunt.co/countries/france-vs-japan)
-- [France vs Poland](https://realhunt.co/countries/france-vs-poland)
 - [France vs Greece](https://realhunt.co/countries/france-vs-greece)
+- [France vs Sweden](https://realhunt.co/countries/france-vs-sweden)
+- [France vs Poland](https://realhunt.co/countries/france-vs-poland)
+- [France vs Japan](https://realhunt.co/countries/france-vs-japan)
 
 ### Sources
 

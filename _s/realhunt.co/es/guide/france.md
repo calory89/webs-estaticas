@@ -32,11 +32,11 @@ Impuesto sobre los ingresos por alquiler: Los no residentes pagan el impuesto fr
 - [39.950 € · Casa de 171 m² con antiguo local comercial en el centro de Bussière-Poitevine](https://realhunt.co/es/deal/fr-bussiere-poitevine-39k-088775) · Bussière-Poitevine, Haute-Vienne · nota 92 · 171 m² · 3 dorm.
 - [148.400 € · Casa de ladrillo con ampliación del salón de 2019, jardín y garaje en Ohain, Avesnois](https://realhunt.co/es/deal/fr-ohain-148k-150454) · Ohain, Nord · nota 91 · 106 m² · 3 dorm.
 - [137.900 € · Casa antigua renovada con muros de piedra y suelos de barro en el Perche, a 3 minutos de Nogent-le-Rotrou](https://realhunt.co/es/deal/fr-val-au-perche-137k-446720) · Val-au-Perche, Orne · nota 91 · 81 m² · 3 dorm.
-- [134.375 € · Casa antigua de piedra amueblada con salón de 53 m² y 2.825 m² de jardín en Bessac, Charente](https://realhunt.co/es/deal/fr-bessac-134k-729283) · Bessac, Charente · nota 91 · 116 m² · 2 dorm.
 - [123.000 € · Longère del siglo XIX totalmente renovada en una planta con garaje en Lencloître, Vienne](https://realhunt.co/es/deal/fr-lencloitre-123k-157528) · Lencloître, Vienne · nota 91 · 102 m² · 2 dorm.
 - [139.000 € · Antigua casa de guardabarrera renovada en 2023 con 1.824 m² en Bergerac, Dordogne](https://realhunt.co/es/deal/fr-bergerac-139k-175736) · Bergerac, Dordogne · nota 91 · 77 m² · 2 dorm.
+- [109.760 € · Casa de campo de piedra de 1550 con altillo y 1.686 m² de terreno en Nieuil, Charente](https://realhunt.co/es/deal/fr-nieuil-109k-mo5052) · Nieuil, Charente · nota 91 · 116 m² · 2 dorm.
 
-[Las 52 casas en Francia](https://realhunt.co/es/homes/france)
+[Las 62 casas en Francia](https://realhunt.co/es/homes/france)
 
 [Gastos, impuestos y fuentes de Francia](https://realhunt.co/es/costs/france) · [Calculadora de gastos de compra para Francia](https://realhunt.co/es/buying-costs/france) · [¿Puedo comprar allí? Normas por nacionalidad](https://realhunt.co/es/can-i-buy)
 
@@ -46,10 +46,10 @@ Impuesto sobre los ingresos por alquiler: Los no residentes pagan el impuesto fr
 - [Francia vs Italia](https://realhunt.co/es/countries/france-vs-italy)
 - [Francia vs Estados Unidos](https://realhunt.co/es/countries/france-vs-united-states)
 - [Francia vs Dinamarca](https://realhunt.co/es/countries/denmark-vs-france)
-- [Francia vs Suecia](https://realhunt.co/es/countries/france-vs-sweden)
-- [Francia vs Japón](https://realhunt.co/es/countries/france-vs-japan)
-- [Francia vs Polonia](https://realhunt.co/es/countries/france-vs-poland)
 - [Francia vs Grecia](https://realhunt.co/es/countries/france-vs-greece)
+- [Francia vs Suecia](https://realhunt.co/es/countries/france-vs-sweden)
+- [Francia vs Polonia](https://realhunt.co/es/countries/france-vs-poland)
+- [Francia vs Japón](https://realhunt.co/es/countries/france-vs-japan)
 
 ### Fuentes
 

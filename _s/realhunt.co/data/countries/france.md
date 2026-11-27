@@ -1,6 +1,6 @@
 # Cheap homes in France: key facts and every home on RealHunt
 
-On 27 November 2026, RealHunt lists 52 homes for sale in France, each one checked by a person. In France, the median asking price of those 52 homes is €69,900 (€1,175 per m², from the 48 homes with a known size); the cheapest costs €39,000 and the most expensive €285,000. Taxes and fees add about 7–8.5% to the price of a home in France (figures as of 2026).
+On 27 November 2026, RealHunt lists 62 homes for sale in France, each one checked by a person. In France, the median asking price of those 62 homes is €125,000 (€1,200 per m², from the 59 homes with a known size); the cheapest costs €39,000 and the most expensive €214,000. Taxes and fees add about 7–8.5% to the price of a home in France (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/france · Updated 27 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/france.json · PDF: https://realhunt.co/data/countries/france.pdf
@@ -9,12 +9,12 @@ Also as JSON: https://realhunt.co/data/countries/france.json · PDF: https://rea
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 52 |
-| Median asking price | €69,900 |
-| Median price per m² | €1,175 (48 homes with a known size) |
-| Median size | 83 m² |
-| Cheapest and most expensive | €39,000 · €285,000 |
-| Median RealHunt score (70 to 98) | 83 |
+| Homes on RealHunt | 62 |
+| Median asking price | €125,000 |
+| Median price per m² | €1,200 (59 homes with a known size) |
+| Median size | 101 m² |
+| Cheapest and most expensive | €39,000 · €214,000 |
+| Median RealHunt score (70 to 98) | 82 |
 | Taxes and fees to buy | 7–8.5% of the price (as of 2026) |
 | Can foreigners buy? | Yes. Foreigners can buy property in France without major restrictions, and non-EU buyers do not need a permit, although the paperwork can take longer. |
 | Yearly property tax | Owners pay an annual property tax (taxe foncière) set by the local authorities, and owners of a furnished second home also pay housing tax (taxe d'habitation), which some communes raise by a surcharge of 5% to 60%. |
@@ -47,7 +47,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/france
 
-## The 52 homes, best score first
+## The 62 homes, best score first
 
 ### 171 m² house with a former shop in the centre of Bussière-Poitevine
 
@@ -81,14 +81,6 @@ A well renovated stone house in a hamlet 2 km from Villefagnan and 7 km from Ruf
 
 https://realhunt.co/deal/fr-villefagnan-125k-152329
 
-### Furnished old stone house with a 53 m² living room and 2,825 m² of garden in Bessac, Charente
-
-€134,375 · Bessac, Charente · 116 m² · 2 bedrooms · RealHunt score 91 · added 2026-11-14
-
-A characterful old house sold fully furnished. The ground floor has a 53 m² living room under exposed beams with a wood stove and a fitted kitchen, opening to a terrace with open countryside views. Two bedrooms and a bathroom upstairs, a cellar, and 2,825 m² of enclosed garden with trees. Drainage is compliant. Windows are single-glazed timber and the energy rating is E. Asking €134,375, about €1,158/m².
-
-https://realhunt.co/deal/fr-bessac-134k-729283
-
 ### Renovated stone house with open countryside views and a heat pump near Saint-Vaury, Creuse
 
 €136,250 · near Saint-Vaury, Creuse · 98 m² · 2 bedrooms · RealHunt score 91 · added 2026-11-14
@@ -112,14 +104,6 @@ https://realhunt.co/deal/fr-val-au-perche-137k-446720
 An old level-crossing keeper's house, 2.5 km from the centre of Bergerac, fully renovated in 2023. Downstairs a fully equipped kitchen opens to the dining room, with a bedroom, a shower room and a laundry on the same level. Upstairs a landing room for an office and a large bedroom. The fenced 1,824 m² plot has a well and a vaulted cellar. Energy rating D. Asking €139,000, about €1,805/m².
 
 https://realhunt.co/deal/fr-bergerac-139k-175736
-
-### Tastefully renovated stone-fronted house with full basement near the station in Salbris, Sologne
-
-€146,990 · Salbris, Loir-et-Cher · 83 m² · 3 bedrooms · RealHunt score 91 · added 2026-11-14
-
-A fully renovated house in the centre of Salbris, close to shops and the train station. Fitted kitchen, a bright living room and a bedroom with its own shower on the ground floor; two more bedrooms and a bathroom upstairs. Reversible air conditioning, PVC windows with electric shutters, a full basement and a terrace on a fenced 665 m² plot. Energy rating D. Asking €146,990, about €1,771/m².
-
-https://realhunt.co/deal/fr-salbris-146k-279709
 
 ### Brick house with a 2019 living-room extension, garden and garage in Ohain, Avesnois
 
@@ -161,13 +145,21 @@ In a quiet hamlet 5 km from Thiers and the Saint-Rémy-sur-Durolle lake: a brigh
 
 https://realhunt.co/deal/fr-thiers-49k-mo1869
 
-### 137 m² village house with a roof terrace near Carcassonne
+### Detached 2-bedroom house with garden and large barns in Les Grands-Chézeaux, Haute-Vienne
 
-€72,000 · Azille, Aude · 137 m² · 4 bedrooms · RealHunt score 87 · added 2026-10-06
+€98,975 · Les Grands-Chézeaux, Haute-Vienne · 132 m² · 2 bedrooms · RealHunt score 89 · added 2026-11-27
 
-A dual-aspect house with 137 m² in Azille, a Minervois wine village near Carcassonne: four bedrooms, a living room with a working fireplace, a large kitchen, a games room, an office, a garage and a private roof terrace that is not overlooked.
+Detached house with 132 m2 of living space, 2 bedrooms and a roof in good condition. The ground floor has a living room, kitchen with dining area, bedroom, bathroom and separate toilet, and the first floor has a mezzanine bedroom. Outside, a 1930 m2 garden sits behind the house with a laid terrace and two barns of about 80 m2 each plus two smaller barns. Wood heating and a fireplace are listed, and St Sulpice-Les-Feuilles is a 5-minute drive away. Asking €98,975, about €750/m².
 
-https://realhunt.co/deal/fr-azille-72k-4qkrv1
+https://realhunt.co/deal/fr-les-grands-chezeaux-detached-house-barns-garden-98k
+
+### Renovated 3-bedroom cottage with garden and garage in Trie-sur-Baïse, Hautes-Pyrénées
+
+€149,500 · Trie-sur-Baïse, Hautes-Pyrénées · 195 m² · 3 bedrooms · RealHunt score 88 · added 2026-11-27
+
+Renovated semi-detached cottage built in 1776, with a light triple-aspect living room featuring a fireplace and French doors to the terrace. It has three bedrooms, one of them on the ground floor, plus a games room or studio of 58.5 m² on the first floor with a balcony. The property has a garden with gated entry, a garage with parking for two cars, and electric radiators for heating. It is on the outskirts of Trie-sur-Baïse, within walking distance of shops, bars and restaurants. Asking €149,500, about €767/m².
+
+https://realhunt.co/deal/fr-trie-sur-baise-renovated-cottage-garden-garage-149k
 
 ### 3-bed stone house in the heart of a village
 
@@ -176,6 +168,14 @@ https://realhunt.co/deal/fr-azille-72k-4qkrv1
 Stone house in the center of a village : Le Lonzac, Nouvelle-Aquitaine Right in the heart of village life, this stone village house offers a lovely balance of indoor space and outdoor corners to enjoy.
 
 https://realhunt.co/deal/Dc-ogTBIKeI
+
+### Renovated 3-bedroom country house with terrace and wood burner in Brigueil-le-Chantre, Vienne
+
+€109,000 · Brigueil-le-Chantre, Vienne · 108 m² · 3 bedrooms · RealHunt score 86 · added 2026-11-27
+
+The renovated house is in good condition and ready to move into, with 3 bedrooms and 2 bathrooms. The large fitted modern kitchen with island is open plan with the dining room and a wood burner. A separate large vaulted living room also has a wood burner. Outside are a sunny private terrace, a small garden with a shed and off-road parking by a large farm gate. The hamlet is close to Brigueil-le-Chantre, about 20 minutes from Montmorillon or Le Dorat. Asking €109,000, about €1,009/m².
+
+https://realhunt.co/deal/fr-brigueil-le-chantre-renovated-country-house-wood-burner-109k
 
 ### Fully renovated four-bedroom house with balcony and garden in Bergerac, Dordogne
 
@@ -201,14 +201,6 @@ https://realhunt.co/deal/fr-dijon-57k-969671
 
 https://realhunt.co/deal/fr-le-havre-60k-595133
 
-### Top-floor loft with an 82 m² cathedral living room in Lodève
-
-€285,000 · Lodève, Hérault, Occitanie · 215 m² · 5 bedrooms · RealHunt score 85 · added 2026-10-30
-
-A fully renovated 215 m² loft on the top floor of a historic building, below the Larzac plateau. The cathedral living room is over 82 m² with exposed timber beams, light from both sides and a pellet stove. Five bedrooms including a master suite, a 12 m² kitchen and a 31 m² terrace with panoramic views over the Lergue. Energy class B. Asking €285,000, about €1,326/m².
-
-https://realhunt.co/deal/fr-lodeve-top-floor-loft-terrace-285k
-
 ### Renovated two-room flat for €39,000 in Saint-Étienne
 
 €39,000 · Montaud, Saint-Étienne · 45 m² · 1 bedrooms · RealHunt score 84 · added 2026-10-13
@@ -216,14 +208,6 @@ https://realhunt.co/deal/fr-lodeve-top-floor-loft-terrace-285k
 45 m² on the ground floor of a small building (7 lots) on rue Dufour, Carnot: a through living room, a new fitted kitchen, a bedroom with its own shower room and a separate WC. Double glazing and low charges (€703 a year). Seller pays the agency fee. Asking €39,000, about €867/m².
 
 https://realhunt.co/deal/fr-saint-etienne-39k-705662
-
-### Charming furnished two-room flat near the universities, Saint-Étienne
-
-€48,000 · Couriot, Saint-Étienne · 45 m² · 1 bedrooms · RealHunt score 84 · added 2026-10-13
-
-45 m² on the 2nd floor of a small secure building on rue Pierre Sémard: a 17 m² living room with a fireplace, a semi-open kitchen, a 10 m² bedroom, a bathroom and a cellar. Nicely furnished; energy rating G, so it cannot be newly let without insulation work. Asking €48,000, about €1,067/m².
-
-https://realhunt.co/deal/fr-saint-etienne-48k-108807
 
 ### Hilltop village house with a sunny terrace in Bourmont
 
@@ -233,13 +217,29 @@ On the heights of the historic village of Bourmont, in Haute-Marne: a fitted kit
 
 https://realhunt.co/deal/fr-bourmont-60k-q27mnf
 
-### Three-room flat with a balcony, cellar and parking in Mulhouse
+### House with courtyard terrace, pool and open fireplace in Aigre, Charente
 
-€60,000 · Mulhouse · 60 m² · 2 bedrooms · RealHunt score 84 · added 2026-10-13
+€110,000 · Aigre, Charente · 104 m² · 3 bedrooms · RealHunt score 84 · added 2026-11-27
 
-60 m² on the 3rd floor of a 1963 building on Rue des Pins: a living room, a kitchen, two bedrooms (11 and 13 m²), a bathroom, a separate WC, a balcony, a cellar and parking. Parquet floors, collective gas heating; energy rating D. Seller pays the agency fee. Asking €60,000, about €1,000/m².
+This 104 m2 house has three bedrooms and a bathroom on the first floor. The spacious living room is filled with natural light and has an open fireplace, with central oil-fired heating. The house has a private courtyard with a terrace and a small garden, and there is a private parking space. It is part of a small co-ownership of five houses that shares a secure in-ground swimming pool, a garden and a converted barn with a games room. Asking €110,000, about €1,058/m².
 
-https://realhunt.co/deal/fr-mulhouse-60k-377472
+https://realhunt.co/deal/fr-aigre-courtyard-terrace-pool-house-110k
+
+### Bungalow with veranda and garden in Saint-Vite, Lot-et-Garonne
+
+€123,000 · Saint-Vite, Lot-et-Garonne · 104 m² · 3 bedrooms · RealHunt score 84 · added 2026-11-27
+
+The bungalow is in very good condition, with good insulation. It covers about 104 m2 with three bedrooms, a bathroom with bath and shower, and a separate toilet. The living and dining room has air conditioning and a fireplace, and the kitchen opens onto a veranda. A tiled terrace and a closed garden of 575 m2 with a well sit outside. It has double glazed windows and central gas heating, in a quiet area near all shops. Asking €123,000, about €1,183/m².
+
+https://realhunt.co/deal/fr-saint-vite-bungalow-veranda-garden-fireplace-123k
+
+### Spacious 4-bedroom stone house with barn and garden in Villemain, Deux-Sèvres
+
+€179,990 · Villemain, Deux-Sèvres · 198 m² · 4 bedrooms · RealHunt score 84 · added 2026-11-27
+
+The house has 198 m2 of living space, four bedrooms and two large reception rooms, with a fitted kitchen and a laundry room. It is double glazed and heated by oil-fired central heating, and the structure and exterior are in good condition. Outside there is an enclosed garden, an enclosed courtyard for parking and a 40 m2 barn with concrete floor. The market town of Chef Boutonne is a 10 minute drive away, and Niort, Poitiers and Angoulême are 45 minutes away. Asking €179,990, about €909/m².
+
+https://realhunt.co/deal/fr-villemain-spacious-stone-house-barn-179k
 
 ### Move-in ready 1700s stone village house of 180 m² near La Rochefoucauld, Charente
 
@@ -257,13 +257,29 @@ A character house of about 88 m² in Treignac, one of the 'most beautiful villag
 
 https://realhunt.co/deal/fr-treignac-66k-6l5r27
 
-### Stone town house with three bedrooms and a modern shower
+### Renovated 2-bedroom period house with beams and balcony in Labastide-d'Armagnac, Landes
 
-€69,000 · Auzances, Creuse · 3 bedrooms · RealHunt score 83 · added 2026-10-06
+€114,000 · Labastide-d'Armagnac, Landes · 101 m² · 2 bedrooms · RealHunt score 83 · added 2026-11-27
 
-A stone house in the heart of Auzances, in the green Creuse countryside: a bright living room with a fitted kitchen, three bedrooms, a modern bathroom with a walk-in shower and a basement with a laundry.
+Renovated period house of about 101 m² with two bedrooms, one opening onto a balcony. The ground floor has a 27.5 m² dining room, an open-plan kitchen, a separate 16.5 m² living room, a utility room and a shower room. Upstairs there is a 7.5 m² study, a second WC and an attic suitable for conversion. The roof has been renovated, and heating is electric and pellet with mains drainage. The village has shops, services, restaurants and a weekly market. Asking €114,000, about €1,129/m².
 
-https://realhunt.co/deal/fr-auzances-69k-3pkknx
+https://realhunt.co/deal/fr-labastide-d-armagnac-renovated-period-stone-house-114k
+
+### Character 4-bedroom house with terrace and countryside views in Champallement, Nièvre
+
+€165,000 · Champallement, Nièvre · 204 m² · 4 bedrooms · RealHunt score 83 · added 2026-11-27
+
+Character house with 204 m2 of living space, 4 bedrooms and 5 rooms, heated by gas-fired central heating. The living room has an open fireplace and ceiling beams, and opens onto a 30 m2 kitchen/dining room overlooking the church. A terrace of about 27 m2 offers panoramic views of the countryside and forest, and the plot includes a garden. It sits beside the church in Champallement, between Corbigny and Brinon-sur-Beuvron, less than 3 hours from Paris. Asking €165,000, about €809/m².
+
+https://realhunt.co/deal/fr-champallement-character-house-terrace-views-165k
+
+### Stone house with 4 bedrooms, enclosed garden and terrace in Chizé, Deux-Sèvres
+
+€168,800 · Chizé, Deux-Sèvres · 172 m² · 4 bedrooms · RealHunt score 83 · added 2026-11-27
+
+Stone house of 172 m² with 4 bedrooms over two floors, a bathroom and a water room. The ground floor has a 42 m² living-dining room with a wood stove and an 18 m² fitted kitchen. The fully enclosed west-facing garden has 3 levels, and an east-facing courtyard has a terrace. Wood heating can be easily extended with a heat pump, and the house is connected to mains sewer. Asking €168,800, about €981/m².
+
+https://realhunt.co/deal/fr-chize-stone-house-enclosed-garden-terrace-168k
 
 ### 50 m² flat with city views on the tram line in Le Mans
 
@@ -273,13 +289,37 @@ https://realhunt.co/deal/fr-auzances-69k-3pkknx
 
 https://realhunt.co/deal/fr-le-mans-55k-949995
 
-### Move-in-ready village house by the famous canal locks
+### Riverside 2-bedroom house with terrace and garage in Axat, Aude
 
-€65,000 · Rogny-les-Sept-Écluses, Yonne · 52 m² · 2 bedrooms · RealHunt score 82 · added 2026-10-06
+€98,000 · Axat, Aude · 62 m² · 2 bedrooms · RealHunt score 82 · added 2026-11-27
 
-A comfortable 52 m² village house in Rogny-les-Sept-Écluses, known for its seven historic canal locks: a living room with an insert fireplace, a fitted and equipped kitchen, a bathroom and two attic bedrooms, plus a garden with a wooden shed. No major work needed.
+This single-storey house is in very good condition, with 62 m2 of living space. It has two bedrooms, a fitted kitchen, a living and dining room with numerous windows, and a shower room with WC. Double glazing and electric radiators provide comfort, and a 100 sq m courtyard leads to an 18.69 sq m garage. The house sits in the heart of Axat on the banks of the Aude River, with river views and shops and public transport nearby. Asking €98,000, about €1,581/m².
 
-https://realhunt.co/deal/fr-rogny-les-sept-ecluses-65k-2p3e04
+https://realhunt.co/deal/fr-axat-riverside-single-storey-house-garage-98k
+
+### Bright 3-bedroom house with fireplaces and garden in Faye-la-Vineuse, Indre-et-Loire
+
+€148,400 · Faye-la-Vineuse, Indre-et-Loire · 129 m² · 3 bedrooms · RealHunt score 82 · added 2026-11-27
+
+The house offers approximately 129 m² with three bedrooms, a very bright living and dining room with fireplaces, and a kitchen. It also has a small dining room opening onto a sunny courtyard, a cosy living room, a bathroom, a shower room, two separate WCs and a pantry. Outdoors there is a leafy garden with a small outbuilding. Heating is collective central heating. The house sits in a listed medieval village, 9 minutes from Richelieu. Asking €148,400, about €1,150/m².
+
+https://realhunt.co/deal/fr-faye-la-vineuse-unusual-bright-house-courtyard-148k
+
+### Stone house with canal views, garden and fireplace in Rohan, Morbihan, Brittany
+
+€156,600 · Rohan, Morbihan, Brittany · 130 m² · 4 bedrooms · RealHunt score 82 · added 2026-11-27
+
+Stone house overlooking the canal and the Nantes to Brest cycle path, with 130 m2 of living space and four bedrooms. The ground floor has a living room, dining room and fully equipped kitchen opening onto the garden, plus a shower room. The first floor holds three bright bedrooms, two shower rooms and an office. Heat pump, pellet stove and double glazing are fitted, and the landscaped garden on a 1,397 m2 plot includes a parking space. Shops, services and schools are within walking distance. Asking €156,600, about €1,205/m².
+
+https://realhunt.co/deal/fr-rohan-canal-views-stone-house-garden-156k
+
+### Renovated 4-bedroom house with garden and garage in Montluçon, Allier
+
+€171,000 · Montluçon, Allier · 130 m² · 4 bedrooms · RealHunt score 82 · added 2026-11-27
+
+Fully renovated in 2023, this house offers 130 m2 of living space and a fitted, equipped kitchen opening onto a living room. It has 3 bedrooms, a mezzanine, 2 bathrooms and a toilet. The full basement includes a garage, workshop, cellar, laundry room and one additional bedroom. The enclosed plot has a garden and 3,229 sq ft of land, and the house is heated by gas-fired central heating. It is close to all amenities in Montluçon. Asking €171,000, about €1,315/m².
+
+https://realhunt.co/deal/fr-montlucon-renovated-garden-house-garage-171k
 
 ### Furnished studio with a balcony near the Palais des Congrès, Perpignan
 
@@ -313,6 +353,22 @@ A renovated 70 m² townhouse in Masseube for €69,500, under €1,000 per m², 
 
 https://realhunt.co/deal/fr-masseube-gers-renovated-townhouse-70k
 
+### Move-in-ready 2-bedroom country house with garden and outbuilding in Nouzerines, Creuse
+
+€109,900 · Nouzerines, Creuse · 80 m² · 2 bedrooms · RealHunt score 81 · added 2026-11-27
+
+The house is ready to move into and needs no special work. It offers 80 m² with a 20 m² living room and wood-burning stove, a 20 m² fully equipped kitchen, a bathroom with shower and toilet, and two bedrooms upstairs. Outside there is a plot of land, an easy-to-maintain garden, an outbuilding and a cellar. The house sits in a small, peaceful hamlet near Nouzerines, Boussac and La Châtre. It suits a second home or weekends away. Asking €109,900, about €1,374/m².
+
+https://realhunt.co/deal/fr-nouzerines-ready-country-house-outbuilding-109k
+
+### Renovated detached house with large terrace and open fireplace in Erp, Ariège
+
+€112,000 · Erp, Ariège, Occitanie · 72 m² · 2 bedrooms · RealHunt score 81 · added 2026-11-27
+
+Detached country house renovated a few years ago with 2 bedrooms upstairs. The living room has an open fireplace, and there is a fully furnished modern kitchen and a large wooden terrace. A shower room, a toilet and a laundry room with a gas boiler and a cellar on the hillside complete the ground floor. It is heated by gas central heating, with the tank in the garden, and has double glazed windows. The house stands in a small hamlet 10 minutes from St Girons, with 7,535 sq ft of land. Asking €112,000, about €1,556/m².
+
+https://realhunt.co/deal/fr-erp-renovated-country-house-terrace-112k
+
 ### Renovated town house with a central patio in the centre of La Charité-sur-Loire, Burgundy
 
 €119,500 · La Charité-sur-Loire, Burgundy · 156 m² · 4 bedrooms · RealHunt score 81 · added 2026-11-18
@@ -320,6 +376,46 @@ https://realhunt.co/deal/fr-masseube-gers-renovated-townhouse-70k
 A renovated town house in the centre of La Charité-sur-Loire, the old priory town on the Loire, with shops, schools and transport close by. 156 m² with six rooms, four of them bedrooms, arranged around a central patio, plus a redone 27 m² studio-type space with a new roof and a large cellar. Electrics redone, full insulation carried out in 2011, double glazing, mains gas heating, mains drainage and fibre available. Asking €119,500, about €766/m². Property tax €970 a year; the advert gives gas at about €1,200 and electricity about €1,000 a year.
 
 https://realhunt.co/deal/fr-la-charite-sur-loire-town-house-patio-119k
+
+### 2-bedroom stone farmhouse with barn and open views in Courbiac, Lot-et-Garonne
+
+€129,600 · Courbiac, Lot-et-Garonne · 102 m² · 2 bedrooms · RealHunt score 81 · added 2026-11-27
+
+This stone farmhouse dates from 1843 and offers 102 m2 of living space across two bedrooms, a kitchen of about 20 sqm with a fireplace. Outside there is an independent guest bedroom of about 16 sqm and a further room of about 11 sqm with toilet and shower room. An open barn of about 75 sqm and a plot of 3,625 sqm complete the property, which has open views and electric heating. It lies about 5 km from Montaigu-de-Quercy and Tournon d'Agenais. Asking €129,600, about €1,271/m².
+
+https://realhunt.co/deal/fr-courbiac-stone-farmhouse-barn-views-129k
+
+### Move-in-ready detached house with garden, barn and terrace in Chamberet, Corrèze
+
+€130,800 · Chamberet, Corrèze · 90 m² · 3 bedrooms · RealHunt score 81 · added 2026-11-27
+
+This detached house has 90 m² of living space, 3 bedrooms and 2 shower rooms with WCs. It is ready to move into and includes a fitted kitchen, a 25 m² living room with a wood-burning stove and oil-fired central heating. A south-east-facing wooden terrace and a flat garden surround the house, with a 30 m² timber barn, a 19 m² metal-roofed shed and an 18 m² garden shed. Shops and schools are close by, and the septic tank was recently installed. Asking €130,800, about €1,453/m².
+
+https://realhunt.co/deal/fr-chamberet-detached-house-barn-garden-130k
+
+### 3-bedroom village house with fireplace and large garden in Les Forges, Deux-Sèvres
+
+€179,983 · Les Forges, Deux-Sèvres · 115 m² · 3 bedrooms · RealHunt score 81 · added 2026-11-27
+
+Immaculate 3-bedroom village house with 115 m2 of living space, 2 bathrooms, and a structure and exterior in good condition. The double aspect lounge has a feature fireplace, and the fully fitted kitchen includes an oven, induction hob and dishwasher. Electric heating and a gravelled terrace lead to a large rear garden of around 3,000 m2 that extends into woodland. A bio shop, restaurant and golf course are within walking distance. Poitiers, with an international airport and TGV station, is 30 minutes away. Asking €179,983, about €1,565/m².
+
+https://realhunt.co/deal/fr-les-forges-village-house-fireplace-garden-terrace-179k
+
+### Renovated 3-bedroom house with garden and garage in Lavault-Sainte-Anne, Allier
+
+€192,000 · Lavault-Sainte-Anne, Allier, Auvergne · 135 m² · 3 bedrooms · RealHunt score 81 · added 2026-11-27
+
+Fully renovated five-room house with 135 m2 of living space over two floors. The ground floor has a large entrance hall, a fitted kitchen, a living room and a toilet, while the upper floor offers a second fitted kitchen, a large living room, three bedrooms, a shower room and a toilet. The property includes a garage, a cellar, a terrace, an outbuilding and an enclosed garden on 7,535 sq ft of land. Energy rating is D and climate rating is C. Asking €192,000, about €1,422/m².
+
+https://realhunt.co/deal/fr-lavault-sainte-anne-renovated-house-enclosed-garden-garage-192k
+
+### House with renovated bathrooms and troglodyte cellar in Montoire-sur-le-Loir, Loir-et-Cher
+
+€199,000 · Montoire-sur-le-Loir, Loir-et-Cher · 142 m² · 3 bedrooms · RealHunt score 81 · added 2026-11-27
+
+This 142 m2 house has renovated bathrooms, aluminum joinery and mains drainage, with electric heating and a recent wood stove in the living room. The ground floor has a large dining kitchen opening onto the terrace, a bedroom with a shower room and toilet, and a laundry room. Upstairs, two bedrooms include a 32 m2 suite. The 1,125 m2 plot includes a large troglodyte cellar, and the house sits in a very quiet setting 10 minutes from Montoire-sur-le-Loir. Asking €199,000, about €1,401/m².
+
+https://realhunt.co/deal/fr-montoire-sur-le-loir-troglodyte-cellar-character-house-199k
 
 ### Studio with a view over the port of Marseille, gated residence
 
@@ -337,30 +433,6 @@ https://realhunt.co/deal/fr-marseille-54k-r-4563
 
 https://realhunt.co/deal/fr-saint-etienne-54k-729815
 
-### Renovated one-bedroom flat in central Roubaix, near Lille
-
-€57,000 · Centre-ville, Roubaix · 43 m² · 1 bedrooms · RealHunt score 80 · added 2026-10-13
-
-43 m² on the 3rd floor near Roubaix centre: a bright living room with a new grey kitchen, an 11.8 m² bedroom and a modern bathroom, new floors throughout. Lille is 15 minutes by metro. Energy rating F (electric heating). Asking €57,000, about €1,326/m².
-
-https://realhunt.co/deal/fr-roubaix-57k-230014
-
-### Cosy stone house with pellet stove and views near Limoux
-
-€69,900 · Limoux, Aude · 74 m² · 2 bedrooms · RealHunt score 80 · added 2026-10-05
-
-A stone village house of 73.8 m² ten minutes from Limoux: a 20 m² kitchen and living room, a lounge with a pellet stove, a bedroom with shower room, and an attic bedroom of 18 m². Fibre internet and very nice views from the bedrooms. Ready to live in.
-
-https://realhunt.co/deal/fr-limoux-69k-vdt9re
-
-### Corbières village house with a modern kitchen
-
-€80,000 · Durban-Corbières, Aude · 58 m² · 2 bedrooms · RealHunt score 80 · added 2026-10-06
-
-A three-storey village house of 58 m² in Durban-Corbières, in the wine hills behind Narbonne: living room with a modern open kitchen, two bedrooms, an office and two cellars. The Mediterranean beaches are about 30 minutes away.
-
-https://realhunt.co/deal/fr-durban-corbieres-80k-ke4gw6
-
 ### 19th-century stone village house with wisteria courtyard and terrace in Frayssinet, Lot
 
 €125,000 · Frayssinet, Lot · 113 m² · 3 bedrooms · RealHunt score 80 · added 2026-11-18
@@ -368,6 +440,14 @@ https://realhunt.co/deal/fr-durban-corbieres-80k-ke4gw6
 A 19th-century stone house on a quiet lane in a peaceful village in the Lot, in Occitanie. About 113 m² with a generous sitting room, a kitchen diner with modern appliances, three bedrooms, one of them on the ground floor, and two shower rooms. The agent describes it as comfortable and habitable as it stands. Behind stone walls there is a private courtyard shaded by mature wisteria and a raised terrace. Glazing and heating could be upgraded over time, as the advert says. Shops are about 10 minutes away and a larger town with a railway station 20 minutes. Asking €125,000 including fees, about €1,106/m².
 
 https://realhunt.co/deal/fr-frayssinet-lot-stone-village-house-125k
+
+### Renovated 4-bedroom house with garden and fireplace in Vallon-en-Sully, Allier
+
+€214,000 · Vallon-en-Sully, Allier · 150 m² · 4 bedrooms · RealHunt score 80 · added 2026-11-27
+
+Tastefully renovated house with spacious rooms and a recently fitted kitchen. The ground floor has a living and dining room of about 47 m² with a fireplace insert and access to the balcony. Three bedrooms, a bathroom and a separate toilet sit above a basement of about 100 m² with a garage, cellar and a heated room that could become a bedroom or office. The enclosed, tree-lined plot of about 4,464 m² offers generous outdoor space, and shops are close by. Asking €214,000, about €1,427/m².
+
+https://realhunt.co/deal/fr-vallon-en-sully-renovated-house-fireplace-garden-214k
 
 ### Furnished loft-style studio with a new bathroom in the hyper-centre, Saint-Étienne
 
@@ -385,13 +465,21 @@ Country cottage in an adorable hamlet : Exideuil-sur-Vienne, Nouvelle-Aquitaine 
 
 https://realhunt.co/deal/DdEOA5_llrJ
 
-### 114 m² town house with a courtyard near Limoux
+### Renovated 3-bedroom house with terrace and courtyard in Chalon-sur-Saône, Saône-et-Loire
 
-€86,400 · Espéraza, Aude · 114 m² · 2 bedrooms · RealHunt score 79 · added 2026-10-06
+€160,000 · Chalon-sur-Saône, Saône-et-Loire · 96 m² · 3 bedrooms · RealHunt score 79 · added 2026-11-27
 
-In Espéraza, a lively village with shops 15 minutes from Limoux, in the upper Aude valley: 114 m² with a 31 m² open kitchen-living room, a utility room, a private interior courtyard, two large bedrooms and two more rooms to use as you like.
+This house was fully renovated in 1997 and offers 96 m2 Carrez area across three bedrooms. The ground floor has a double living room, fitted kitchen, shower room, WC and bedroom with dressing room, plus two bedrooms upstairs. A terrace, small front courtyard and 1,184 sq ft of land have orientation south and east. Heating is by condensing gas boiler, with reversible air conditioning upstairs. Asking €160,000, about €1,667/m².
 
-https://realhunt.co/deal/fr-esperaza-86k-sxd5p3
+https://realhunt.co/deal/fr-chalon-sur-saone-renovated-house-courtyard-skylights-160k
+
+### Turnkey 3-bedroom house with garden, terrace and garage in Albi, Tarn
+
+€185,000 · Albi, Tarn · 96 m² · 3 bedrooms · RealHunt score 79 · added 2026-11-27
+
+This turnkey home offers 96 m2 of living space, with 3 bedrooms and air conditioning in the 2 attic bedrooms. The kitchen opens onto a private terrace and a small garden, and the house has a fireplace, electric heating and a garage. The roof was redone in 2024 and the electrical installation is compliant. Shops, bus stops, schools and the university are within walking distance in west Albi. Asking €185,000, about €1,927/m².
+
+https://realhunt.co/deal/fr-albi-turnkey-house-garden-terrace-garage-185k
 
 ### Renovated stone house on the Canal du Nivernais in Champvert, Burgundy
 
@@ -401,14 +489,6 @@ A stone village house with direct access to the towpath of the Canal du Nivernai
 
 https://realhunt.co/deal/fr-burgundy-champvert-canal-stone-house-188k
 
-### Renovated studio with a balcony by the Bagatelle metro, Toulouse
-
-€59,500 · Bagatelle, Toulouse · 30 m² · RealHunt score 78 · added 2026-10-13
-
-30 m² on the 4th floor with a lift, fully renovated with taste: a bright 17 m² living room opening onto a balcony with open views, a new fitted kitchen, a shower room and a sleeping area. Right by the Hippodrome shopping centre and two minutes from Bagatelle metro. Seller pays the agency fee. Asking €59,500, about €1,955/m².
-
-https://realhunt.co/deal/fr-toulouse-60k-120948
-
 ### Renovated village house with energy rating B in the centre of Riez, Verdon
 
 €159,000 · Riez, Alpes-de-Haute-Provence, Provence · 91 m² · 2 bedrooms · RealHunt score 78 · added 2026-11-20
@@ -416,6 +496,14 @@ https://realhunt.co/deal/fr-toulouse-60k-120948
 A 91 m2 village house on a small square in the centre of Riez, fully renovated to current standards and rated B for energy, which is rare for an old Provençal house. It has two kitchens and living areas over the lower floors, two bedrooms (one with its own shower), a bathroom, reversible air conditioning in three zones and about 50 m2 of cellars. A small courtyard behind a wrought iron gate fits a table. Shops, schools, a hospital and two weekly markets are in the village, and Lake Sainte-Croix and the Verdon gorges are minutes away. About 1,750 euros per m2.
 
 https://realhunt.co/deal/fr-provence-riez-renovated-village-house-dpe-b-159k
+
+### Village house with roof terrace and patio garden in Tressan, Hérault
+
+€175,000 · Tressan, Hérault · 68 m² · 2 bedrooms · RealHunt score 78 · added 2026-11-27
+
+Detached village house on two floors with 68 m² of living space, two bedrooms and a shower room with WC, in excellent decorative condition. The two upstairs bedrooms have 3-metre ceilings, and the ground floor has a dual-aspect living room, a separate dining area and a fitted kitchen opening onto a 32 m² patio garden. A 9 m² roof terrace offers views, and a garden shed provides storage. The house has electric heating, and the beaches are about 25 km away. Asking €175,000, about €2,574/m².
+
+https://realhunt.co/deal/fr-tressan-roof-terrace-patio-garden-175k
 
 ### Breton stone house with a conservatory near the Térénez beaches in Plouezoc'h
 
@@ -433,6 +521,14 @@ A fully renovated village house of about 90 m2 in the Luberon hills, priced near
 
 https://realhunt.co/deal/fr-provence-saint-martin-de-castillon-village-house-210k
 
+### Renovated single-storey house with garden and garage in Liffol-le-Grand, Vosges
+
+€175,000 · Liffol-le-Grand, Vosges · 87 m² · 3 bedrooms · RealHunt score 77 · added 2026-11-27
+
+Recently renovated single-storey house with 87 m² of living space, 3 bedrooms, a shower room and a separate toilet. The fitted kitchen with a central island opens onto a living room with a pellet stove. A south-east-facing terrace with a pergola leads to an enclosed garden with mature trees, and the 1,007 m² plot includes a wooden shed and parking for several vehicles. The garage also serves as a utility room. It stands in a quiet area close to shops and services. Asking €175,000, about €2,011/m².
+
+https://realhunt.co/deal/fr-liffol-le-grand-renovated-single-storey-enclosed-garden-175k
+
 ### One-bedroom flat four minutes' walk from Grenoble station
 
 €59,000 · Berriat, Grenoble · 33 m² · 1 bedrooms · RealHunt score 76 · added 2026-10-13
@@ -441,26 +537,10 @@ https://realhunt.co/deal/fr-provence-saint-martin-de-castillon-village-house-210
 
 https://realhunt.co/deal/fr-grenoble-59k-973013
 
-### Stone house with a private riverbank and outbuildings in Vendeuvre, Normandy
+### Furnished 3-level village house with pellet stove in Sillans-la-Cascade, Var, Provence
 
-€205,000 · Vendeuvre, Calvados, Normandy · 100 m² · 3 bedrooms · RealHunt score 76 · added 2026-11-20
+€168,000 · Sillans-la-Cascade, Var, Provence · 82 m² · 1 bedrooms · RealHunt score 74 · added 2026-11-27
 
-A 99.5 m2 stone house on an enclosed 1,545 m2 plot that runs down to a river with private banks. Downstairs are a living room with a wood-burning insert, a fitted kitchen and a bathroom, and upstairs three bedrooms of 13 to 15 m2. Double glazing, a recent air-to-water heat pump and solar panels are already in place, and the outbuildings add about 150 m2 with two garages, a workshop and a carport. The advert says some finishing and refreshing work is still to plan. Saint-Pierre-sur-Dives is a 7-minute drive. Property tax 647 euros a year.
+Village house of 82 m² over three levels, sold furnished. The ground floor has a fitted open kitchen connected to the dining room and a storeroom. The first floor offers a shower room, a separate toilet and a space that can be a living room or a second bedroom, while the second floor has a large bedroom with a private toilet and hand basin. Heating is by pellet stove, with DPE rating C. It is on a quiet street with free public parking nearby. Asking €168,000, about €2,049/m².
 
-https://realhunt.co/deal/fr-normandy-vendeuvre-stone-house-river-garden-205k
-
-### 2009 duplex house with a private garden in a spa village
-
-€85,000 · Encausse-les-Thermes, Haute-Garonne · 66 m² · 2 bedrooms · RealHunt score 75 · added 2026-10-06
-
-A semi-detached duplex house built in 2009 in Encausse-les-Thermes, a spa village at the foot of the Pyrenees: living room opening onto a 200 m² private garden, open kitchen, two bedrooms upstairs, terrace and utility room.
-
-https://realhunt.co/deal/fr-encausse-les-thermes-85k-vjwr3w
-
-### Cosy, fully kept village house below the Montagne Noire
-
-€73,000 · Saint-Denis, Aude · 50 m² · 2 bedrooms · RealHunt score 73 · added 2026-10-06
-
-A charming village house of about 50 m² in Saint-Denis, Aude, at the foot of the Montagne Noire north of Carcassonne. Fully maintained: open kitchen and living room, a modern walk-in shower room and two bedrooms under the beams.
-
-https://realhunt.co/deal/fr-saint-denis-73k-bk6670
+https://realhunt.co/deal/fr-sillans-la-cascade-furnished-village-house-pellet-heating-168k

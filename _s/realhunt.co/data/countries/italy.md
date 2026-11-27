@@ -1,6 +1,6 @@
 # Cheap homes in Italy: key facts and every home on RealHunt
 
-On 27 November 2026, RealHunt lists 88 homes for sale in Italy, each one checked by a person. In Italy, the median asking price of those 88 homes is €85,000 (€1,000 per m², from the 69 homes with a known size); the cheapest costs €12,000 and the most expensive €197,000. Taxes and fees add about 4–15% to the price of a home in Italy (figures as of 2026).
+On 27 November 2026, RealHunt lists 102 homes for sale in Italy, each one checked by a person. In Italy, the median asking price of those 102 homes is €97,000 (€1,167 per m², from the 84 homes with a known size); the cheapest costs €12,000 and the most expensive €215,000. Taxes and fees add about 4–15% to the price of a home in Italy (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/italy · Updated 27 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/italy.json · PDF: https://realhunt.co/data/countries/italy.pdf
@@ -9,11 +9,11 @@ Also as JSON: https://realhunt.co/data/countries/italy.json · PDF: https://real
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 88 |
-| Median asking price | €85,000 |
-| Median price per m² | €1,000 (69 homes with a known size) |
-| Median size | 82 m² |
-| Cheapest and most expensive | €12,000 · €197,000 |
+| Homes on RealHunt | 102 |
+| Median asking price | €97,000 |
+| Median price per m² | €1,167 (84 homes with a known size) |
+| Median size | 85 m² |
+| Cheapest and most expensive | €12,000 · €215,000 |
 | Median RealHunt score (70 to 98) | 82 |
 | Taxes and fees to buy | 4–15% of the price (as of 2026) |
 | Can foreigners buy? | Yes for EU citizens; non-EU buyers need reciprocity (US, UK, Canada, Australia qualify). |
@@ -43,7 +43,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/italy
 
-## The 88 homes, best score first
+## The 102 homes, best score first
 
 ### Four-level village house with sea and mountain views in Sangineto, Calabria
 
@@ -157,6 +157,22 @@ https://realhunt.co/deal/Dc32k2tDKLf
 
 https://realhunt.co/deal/falconara-albanese-41000
 
+### Renovated detached house with garden and solar panels in Carpignano Salentino, Apulia
+
+€150,000 · Carpignano Salentino, Apulia · 225 m² · 2 bedrooms · RealHunt score 87 · added 2026-11-27
+
+Fully renovated detached house of about 225 m² with a completely renovated roof and latest-generation systems. It has a living room overlooking the garden, an eat-in kitchen, a year-round veranda and two modern bathrooms. Solar panels provide hot water, and a state-of-the-art heating and cooling system gives year-round comfort. The private plot of about 280 m² includes a garden and a garage/storage area, with indoor parking. The beaches of Salento are a few kilometers away. Asking €150,000, about €667/m².
+
+https://realhunt.co/deal/it-carpignano-salentino-renovated-house-solar-panels-garden-150k
+
+### Modern 3-bedroom villa with panoramic terraces and garden in Civitaquana, Abruzzo
+
+€155,000 · Civitaquana, Abruzzo · 198 m² · 3 bedrooms · RealHunt score 87 · added 2026-11-27
+
+The villa has a panoramic terrace, an attic for storage, 8 rooms, 3 bedrooms and 2 bathrooms across 198 m2 of living space. The structure and exterior are in good condition, with gas-fired central heating, a fireplace and an open plan equipped kitchen. Outdoor space has a large first floor terrace, a decorative garden, a parking area with an electric gate and a lower garden with fruit and olive trees. It sits on a ridge near Civitaquana, a village with shops and cafes. Asking €155,000, about €783/m².
+
+https://realhunt.co/deal/it-civitaquana-modern-villa-panoramic-views-garden-155k
+
 ### 2-bed house 10 minutes from the lake
 
 €45,000 · Lombardy, Italy · 82 m² · 2 bedrooms · RealHunt score 86 · added 2026-09-23
@@ -213,6 +229,14 @@ A restored stone home in Bomba, in the province of Chieti, Abruzzo, with two pan
 
 https://realhunt.co/deal/DdOGB56ABXI
 
+### Renovated detached house with large land and garden in Carpasio, Imperia
+
+€89,000 · Carpasio, Imperia · 82 m² · 1 bedrooms · RealHunt score 85 · added 2026-11-27
+
+Completely renovated and furnished, with all-new systems and finishes, ready to live in immediately. The house has 82 m2 of living space, one bedroom, one bathroom and bright, well-distributed rooms, with wood heating and a fireplace. It sits on about 1,500 m2 of land with a garden, vegetable garden, barbecue area and terrace, plus a jacuzzi. The quiet, green setting is 8 minutes from the sea, with a cellar included. Asking €89,000, about €1,085/m².
+
+https://realhunt.co/deal/it-carpasio-renovated-detached-house-large-garden-89k
+
 ### Detached house with a 350 m2 garden and garage in San Lorenzo in Campo, Marche
 
 €120,000 · San Lorenzo in Campo, Le Marche · 130 m² · 2 bedrooms · RealHunt score 85 · added 2026-11-20
@@ -268,14 +292,6 @@ https://realhunt.co/deal/acquappesa-sea-view-39000
 Studio · 1 bathroom · 5 min to the beach · 1 hour 57 min to Palermo Airport.
 
 https://realhunt.co/deal/DcyzSIdjOz6
-
-### Sea-view home with a panoramic terrace
-
-€49,000 · Sicily, Italy · 87 m² · 2 bedrooms · RealHunt score 84 · added 2026-09-23
-
-Sea-view home for €49,000 in Sicily, Italy 87 m² · 2 beds · 1 bath · 12 m² sea-view balcony · 87 m² panoramic terrace Just 20 minutes from Messina city centre, with incredible views over the Mediterranean.
-
-https://realhunt.co/deal/Dclv5CJDdhi
 
 ### Three-bedroom seaside house with a paved courtyard in Torremezzo di Falconara, Calabria
 
@@ -357,6 +373,22 @@ An old stone house with its own entrance in Selva, a small hamlet of Santa Fiora
 
 https://realhunt.co/deal/it-santa-fiora-renovated-stone-house-monte-amiata-99k
 
+### Historic 3-bedroom townhouse with fireplace and views in Lari, Tuscany
+
+€169,000 · Lari, Tuscany · 135 m² · 3 bedrooms · RealHunt score 83 · added 2026-11-27
+
+This detached townhouse of about 135 m2 has 3 bedrooms and 1 bathroom, and the house is in excellent overall condition. The kitchen was recently renovated, the bathroom about three years ago, and the roof is well maintained. The home has a fireplace, exposed beams, a balcony with village and countryside views, and gas-fired central heating. Lari is about 35 minutes from Pisa International Airport and 40 minutes from the Etruscan Coast. Asking €169,000, about €1,252/m².
+
+https://realhunt.co/deal/it-lari-historic-townhouse-fireplace-views-169k
+
+### Renovated 3-bedroom house with garden and hill views in Monte Castello di Vibio, Umbria
+
+€179,000 · Monte Castello di Vibio, Umbria · 150 m² · 3 bedrooms · RealHunt score 83 · added 2026-11-27
+
+Detached house lovingly renovated in 2010, with 150 m² of living space, three bedrooms and two bathrooms. Two of the bedrooms open onto a private terrace, and the living room has a fireplace. The fully fenced 410 m² garden includes olive and fruit trees, and views stretch across the Umbrian hills towards Todi and Perugia. The house is a five-minute walk from the historic centre of Monte Castello di Vibio and has electricity, mains water, an LPG cylinder and security shutters. Asking €179,000, about €1,193/m².
+
+https://realhunt.co/deal/it-monte-castello-di-vibio-renovated-house-hill-views-garden-179k
+
 ### Two-bedroom apartment with terrace in a historic Tuscan village
 
 €16,000 · Montieri, Grosseto, Tuscany, Italy · 51 m² · 2 bedrooms · RealHunt score 82 · added 2026-09-23
@@ -372,6 +404,14 @@ https://realhunt.co/deal/DdSm-JkiJem
 A cottage in the centre of Loazzolo, a hill village near Asti, steps from the main square. It is reached through a cobbled alley and a stone arch into a private garden with a patio for eating outside. About 87 m²: a bright open-plan living room and kitchen with French doors to the patio, then two bedrooms upstairs, one with a balcony looking over the rolling hills, and a bathroom. At street level there is a garage, a cellar and a small infernot, a traditional wine room cut into the rock. Gas central heating. Listed in good structural condition.
 
 https://realhunt.co/deal/it-loazzolo-village-cottage-garden-hill-view-68k
+
+### Renovated house with private courtyard and fireplace in Collebaldo, Umbria
+
+€82,000 · Collebaldo, Umbria · 76 m² · 2 bedrooms · RealHunt score 82 · added 2026-11-27
+
+The house was renovated in 2008, with a new roof and replaced window frames. It has two bedrooms, a bathroom, a living room with kitchenette and an attic. A small fenced private courtyard with a pedestrian entrance gives outdoor space. Heating comes from a gas-fired boiler, and the water supply is connected to the municipal mains. The main amenities are about 1 km away, and Perugia can be reached in about 20 minutes by car. Asking €82,000, about €1,079/m².
+
+https://realhunt.co/deal/it-collebaldo-renovated-house-private-courtyard-fireplace-82k
 
 ### Renovated stone house inside the walls of Gaglietole Castle, Umbria
 
@@ -404,6 +444,14 @@ https://realhunt.co/deal/it-piedmont-acqui-terme-vaulted-period-flat-140k
 A 127 m² terraced house free on three sides in the centre of Cutigliano, a few kilometres from the ski slopes of Doganaccia and Abetone: a large beamed living room with a fireplace and parquet, a kitchen with a wood-fired grill, a utility room, three bedrooms and a bathroom, plus a partly usable attic. In very good condition, with efficient systems, and sold furnished. Price negotiable. Asking €159,000, about €1,252/m².
 
 https://realhunt.co/deal/it-tuscany-cutigliano-ski-house-159k
+
+### Move-in-ready 3-bedroom apartment with garden and panoramic views in Cascio, Tuscany
+
+€210,000 · Cascio, Tuscany · 145 m² · 3 bedrooms · RealHunt score 82 · added 2026-11-27
+
+Renovated in the 1980s and in excellent condition, this first-floor apartment in a two-unit building has three bedrooms, ceramic flooring and double glazed windows. Natural gas radiator heating and a wood fireplace are fitted. The garden of about 1,000 sqm runs along the medieval walls with panoramic valley views, and there is also a balcony. Extras include a 15 sqm cellar, an outbuilding of almost 40 sqm and uncovered parking. There are no condominium fees. Asking €210,000, about €1,448/m².
+
+https://realhunt.co/deal/it-cascio-medieval-walls-garden-panoramic-views-210k
 
 ### Stone-village home near Viterbo, 1h30 from Rome
 
@@ -444,6 +492,22 @@ https://realhunt.co/deal/Dc26pZMj0VD
 A two-storey flat of 80 m² in the stone village of Parzanica, 750 metres up and, according to the advert, a ten-minute drive from Lake Iseo. The ground floor has a living room under exposed beams, an eat-in kitchen with a fireplace and a guest toilet. A timber staircase leads to a double bedroom and a shower room below a pitched wooden ceiling. A small private garden looks straight down on the lake and Monte Isola, and a single garage is included. Built in 2000, energy class G. Asking €100,000 after a price cut of about 17%.
 
 https://realhunt.co/deal/it-lake-iseo-parzanica-beamed-duplex-100k
+
+### Renovated stone house with two independent apartments near beaches in Petacciato, Molise
+
+€119,000 · Petacciato, Molise · 100 m² · 2 bedrooms · RealHunt score 81 · added 2026-11-27
+
+Renovated traditional stone house with two independent apartments, each with its own private entrance. The first-floor apartment of 35 m2 is an open-plan space with exposed stone walls, a kitchenette, a sleeping area and a modern bathroom. The 70 m2 upper apartment has a fully equipped kitchen, a lounge, a bar area, a balcony, and a third-floor bedroom with en-suite bathroom. The property has electric heating and air conditioning, and the Blue Flag beaches of the Adriatic coast are 5 minutes away. Asking €119,000, about €1,190/m².
+
+https://realhunt.co/deal/it-petacciato-renovated-stone-house-independent-apartments-119k
+
+### Renovated 2-bedroom tower house with panoramic views in Sinalunga, Tuscany
+
+€140,000 · Sinalunga, Tuscany · 120 m² · 2 bedrooms · RealHunt score 81 · added 2026-11-27
+
+Completely renovated tower house of 120 m2 over four levels in the historic centre of Sinalunga. The ground floor has an entrance hall, living room, reading corner and small kitchen, while the first floor adds a kitchen, a large living room and a bathroom. The second floor has two double bedrooms, one with a walk-in closet and a bathroom, and the attic is used as a study. The home has panoramic views and is near the Ciro Pinsuti Theater. Asking €140,000, about €1,167/m².
+
+https://realhunt.co/deal/it-sinalunga-renovated-tower-house-panoramic-view-140k
 
 ### Bright three-floor house with terraces facing Lake Omodeo in Soddì, Sardinia
 
@@ -557,21 +621,13 @@ A two-level terraced house in the peaceful hillside hamlet of Ludduì, Budoni, w
 
 https://realhunt.co/deal/it-sardinia-budoni-sea-view-158k
 
-### Panoramic terraces and a private garden in a historic Lunigiana village
+### End-of-terrace villa with garden and double garage in Montefollonico, Tuscany
 
-€100,000 · Lunigiana, Massa-Carrara, Tuscany, Italy · RealHunt score 79 · added 2026-09-23
+€178,000 · Montefollonico, Tuscany · 110 m² · 2 bedrooms · RealHunt score 80 · added 2026-11-27
 
-Tucked into one of Italy's most beautiful historic villages in the Lunigiana, this characterful home combines panoramic terraces and a rare private garden with wonderful views across the countryside.
+Built in 2000 and in good condition, this end-of-terrace villa offers about 154 square metres over several levels. It has seven rooms, two bedrooms, a study that can serve as a third bedroom, and two bathrooms. The living room has a fireplace and opens onto a private garden of about 44 square metres on two levels, with panoramic views. A double garage and a laundry room are in the basement. Asking €178,000, about €1,618/m².
 
-https://realhunt.co/deal/DdVz9K2ktYe
-
-### Stylish renovated flat with a fireplace and terrace in Montaione, Tuscany
-
-€140,000 · Montaione, Tuscany (between Florence and Pisa) · 78 m² · 2 bedrooms · RealHunt score 79 · added 2026-10-16
-
-A three-room first-floor home with a fully independent entrance in the quiet Mura area of Montaione, carefully renovated in 2019: a spacious living room with a fireplace opening onto a private terrace, a modern kitchen with a wooden table and pendant lights, two bright bedrooms and a bathroom with a window. Below, a private courtyard and a cellar with a laundry corner. In the hills between Florence, Pisa and Siena. Asking €140,000, about €1,795/m².
-
-https://realhunt.co/deal/it-tuscany-montaione-renovated-140k
+https://realhunt.co/deal/it-montefollonico-end-terrace-villa-garden-views-178k
 
 ### Detached town house with three en-suite bedrooms in old Iglesias, Sardinia
 
@@ -629,6 +685,22 @@ A seismically reinforced stone farmhouse portion in a sunny, secluded spot 20 mi
 
 https://realhunt.co/deal/it-umbria-gubbio-stone-farmhouse-3-hectares-148k
 
+### Renovated 2-bedroom house with terrace and sea views in Ostuni, Puglia
+
+€170,000 · Ostuni, Puglia · 80 m² · 2 bedrooms · RealHunt score 78 · added 2026-11-27
+
+Built in 1940 and completely renovated, this two-level independent house has two bedrooms and an equipped kitchen. Its large terrace overlooks the historic area of Ostuni, offers a sea view and has outdoor lighting. The home has air conditioning, electric heating and built-in wardrobes, and new wooden frames on the ground floor. It sits in the heart of Ostuni, within walking distance of major services in the historic centre and the newer part of town. Asking €170,000, about €2,125/m².
+
+https://realhunt.co/deal/it-ostuni-renovated-terrace-views-house-170k
+
+### Furnished 2-bedroom townhouse with garden and pool in Trinità d'Agultu e Vignola, Sardinia
+
+€199,000 · Trinità d'Agultu e Vignola, Sardinia · 85 m² · 2 bedrooms · RealHunt score 78 · added 2026-11-27
+
+This fully furnished end-terraced house has two bedrooms, one with an en-suite bathroom, and two bathrooms in total. The living room includes a kitchenette and opens onto a veranda overlooking the garden and the granite rocks of Gallura. Both bedrooms have direct access to the backyard courtyard. The property includes a private parking space and use of a communal swimming pool. It is located in Costa Paradiso on the north coast of Gallura. Asking €199,000, about €2,341/m².
+
+https://realhunt.co/deal/it-trinita-d-agultu-e-vignola-furnished-terraced-garden-pool-199k
+
 ### House in Ventimiglia di Sicilia, Palermo
 
 €35,000 · Ventimiglia di Sicilia, Palermo, Italy · 48 m² · RealHunt score 77 · added 2026-09-22
@@ -685,13 +757,45 @@ A two-bedroom flat of about 76 m2 in a small building 300 metres from the hill v
 
 https://realhunt.co/deal/it-liguria-castellaro-renovated-sea-view-flat-no-fees-197k
 
-### Tuscan cottage with an olive-tree garden 5 minutes from Saturnia hot springs
+### Country house with garden, land and vineyard in Canelli, Asti, Piedmont
 
-€139,000 · Montemerano, Maremma, Tuscany · 76 m² · 2 bedrooms · RealHunt score 76 · added 2026-10-16
+€140,000 · Canelli, Asti, Piedmont · 83 m² · 2 bedrooms · RealHunt score 76 · added 2026-11-27
 
-An independent house with a corner garden and a beautiful olive tree in Montemerano, one of the Most Beautiful Villages in Italy, in the hills of the Tuscan Maremma: a living room with a kitchenette, two well-kept bedrooms with spectacular views and a bathroom, plus a 24 m² garage underneath. Panoramic position and its own entrance; the famous Saturnia hot springs are just 5 minutes by car. Price recently reduced. Asking €139,000, about €1,829/m².
+This country house has two bright bedrooms and a spacious eat-in kitchen with a traditional putagè. The home has gas-fired central heating. Outside there is a pergola, a veranda with a pizza oven, and a storage room beside it. The grounds include approximately 7,000 sqm of adjacent land, of which 5,000 sqm are Moscato vineyards and the rest is garden and fruit orchard. Canelli's centre is only minutes away. Asking €140,000, about €1,687/m².
 
-https://realhunt.co/deal/it-tuscany-montemerano-saturnia-139k
+https://realhunt.co/deal/it-canelli-vineyard-country-home-pergola-140k
+
+### Renovated townhouse with fireplace and valley views in Raggiolo, Tuscany
+
+€180,000 · Raggiolo, Tuscany · 70 m² · 2 bedrooms · RealHunt score 76 · added 2026-11-27
+
+Fully renovated townhouse arranged over two floors plus an attic, with two bedrooms and one bathroom. The living room has an original, fully functioning fireplace, and all windows have wooden double-glazed frames and insect screens. The enclosed garden is laid out in terraces with traditional stone walls, plus a wooden deck and a gazebo of about 15 sqm. The village lies at about 600 metres in the Casentino area, with Poppi around 20 minutes away. Asking €180,000, about €2,571/m².
+
+https://realhunt.co/deal/it-raggiolo-renovated-townhouse-fireplace-valley-views-180k
+
+### Restored trullo house with private garden and fireplace in Ostuni, Apulia
+
+€189,000 · Ostuni, Apulia · 75 m² · 1 bedrooms · RealHunt score 76 · added 2026-11-27
+
+The trullo has been renovated with care and is in excellent condition, ready to live in or for investment. It has one bedroom, a corner kitchen, a living room and a finely furnished bathroom, with 75 m2 of commercial area. A fireplace, a private garden on 1,900 m2 of land, heating, air conditioning and a solar thermal system provide year-round comfort. A water cistern of 140 to 160 quintals, an intercom with video entry and external cameras complete the home. Asking €189,000, about €2,520/m².
+
+https://realhunt.co/deal/it-ostuni-restored-trullo-fireplace-garden-189k
+
+### Renovated 3-bedroom stone chalet with fireplace and land in San Romano in Garfagnana, Tuscany
+
+€210,000 · San Romano in Garfagnana, Tuscany · 100 m² · 3 bedrooms · RealHunt score 76 · added 2026-11-27
+
+The stone chalet was completely renovated with attention to detail and has modern comforts. It has 3 bedrooms and 2 bathrooms, including an en-suite master bedroom and a separate area with a double bedroom and a bunk-bed room. The living room has a wood-burning fireplace and a kitchen with old-world charm. Outside there is a front entrance area, a large rear space with a wooden table, and a storage room for garden furniture. Heating comes from aluminium radiators fed by an LPG boiler. Asking €210,000, about €2,100/m².
+
+https://realhunt.co/deal/it-san-romano-in-garfagnana-renovated-stone-chalet-fireplace-210k
+
+### Renovated townhouse with terrace and fireplace in Gavorrano, Tuscany
+
+€215,000 · Gavorrano, Tuscany · 110 m² · 3 bedrooms · RealHunt score 76 · added 2026-11-27
+
+This townhouse over four floors offers 110 m2 of living space, with three bedrooms and two bathrooms. It has been renovated and is in excellent condition, with good structure and exterior. The ground floor holds a living room-kitchen and a storage room, while the first floor has a living room with a small balcony and the second floor has a bedroom with bathroom and balcony. Features include a terrace, fireplace, air conditioning and a cellar. Located in the centre of Gavorrano. Asking €215,000, about €1,955/m².
+
+https://realhunt.co/deal/it-gavorrano-renovated-townhouse-fireplace-terrace-215k
 
 ### Vaulted stone home with terrace in Cisternino's old town
 
@@ -732,6 +836,14 @@ https://realhunt.co/deal/it-umbria-spoleto-la-torretta-restored-hamlet-house-155
 €690/m² · 71 m² · 3 rooms. Your haven of peace between history and nature: just an hour from Rome, in the authentic charm of Poggiovalle.
 
 https://realhunt.co/deal/borgorose-49000
+
+### Townhouse with private garden and communal pool in Sassetta, Tuscany
+
+€179,000 · Sassetta, Tuscany · 60 m² · 2 bedrooms · RealHunt score 74 · added 2026-11-27
+
+End-of-terrace house of 60 m2 with two bedrooms and one bathroom in a secluded residential village. The living area has an open kitchen, and the loft on the upper floor overlooking the living room holds a second bedroom. Each ground floor room opens onto a large private garden. Residents can use a communal pool, and the property includes a private parking space. The Terme di Sassetta are nearby, reached on foot through woods and vineyards. Asking €179,000, about €2,983/m².
+
+https://realhunt.co/deal/it-sassetta-end-terrace-garden-communal-pool-179k
 
 ### Little stone farmhouse with terrace in an Umbrian village
 

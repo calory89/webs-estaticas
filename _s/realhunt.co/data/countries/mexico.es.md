@@ -1,6 +1,6 @@
 # Casas baratas en México: datos clave y todas las casas de RealHunt
 
-A 27 de noviembre de 2026, RealHunt publica 14 casas en venta en México, revisadas una a una por una persona. En México, el precio de salida mediano de esas 14 casas es de 97.100 € (1.266 € por m², calculado con las 14 casas de superficie conocida); la más barata cuesta 50.575 € y la más cara, 216.600 €. Los impuestos y gastos de compra suman alrededor del 3,5–8% del precio de una casa en México (cifras de 2026).
+A 27 de noviembre de 2026, RealHunt publica 12 casas en venta en México, revisadas una a una por una persona. En México, el precio de salida mediano de esas 12 casas es de 98.621 € (1.354 € por m², calculado con las 12 casas de superficie conocida); la más barata cuesta 50.575 € y la más cara, 216.600 €. Los impuestos y gastos de compra suman alrededor del 3,5–8% del precio de una casa en México (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/mexico · Actualizado el 27 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/mexico.json · PDF: https://realhunt.co/data/countries/mexico.es.pdf
@@ -9,10 +9,10 @@ También en JSON: https://realhunt.co/data/countries/mexico.json · PDF: https:/
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 14 |
-| Precio de salida mediano | 97.100 € |
-| Precio mediano por m² | 1.266 € (14 casas de superficie conocida) |
-| Superficie mediana | 75 m² |
+| Casas en RealHunt | 12 |
+| Precio de salida mediano | 98.621 € |
+| Precio mediano por m² | 1.354 € (12 casas de superficie conocida) |
+| Superficie mediana | 78 m² |
 | La más barata y la más cara | 50.575 € · 216.600 € |
 | Nota RealHunt mediana (de 70 a 98) | 86 |
 | Impuestos y gastos de compra | 3,5–8% del precio (cifras de 2026) |
@@ -48,7 +48,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/mexico
 
-## Las 14 casas, de mejor a peor nota
+## Las 12 casas, de mejor a peor nota
 
 ### Piso de 2 dormitorios en San Pedro Tlaquepaque, Jalisco
 
@@ -57,14 +57,6 @@ Guía completa: https://realhunt.co/es/guide/mexico
 49 m², 2 dormitorios. Precio: 1.000.000 MXN. El anuncio menciona: reformado, cerca de la playa, aparcamiento, obra nueva.
 
 https://realhunt.co/es/deal/san-pedro-tlaquepaque-50575
-
-### Piso de 3 dormitorios cerca de la playa en Mazatlán, Sinaloa
-
-80.920 € · Mazatlán, Sinaloa · 71 m² · 3 dormitorios · nota RealHunt 90 · añadida el 2026-09-23
-
-71 m², 3 dormitorios, 2 baños. Precio: 1.600.000 MXN. El anuncio menciona: piscina, cerca de la playa, aparcamiento.
-
-https://realhunt.co/es/deal/mazatlan-80920
 
 ### Casa de 2 dormitorios en Tonalá, Jalisco
 
@@ -97,14 +89,6 @@ https://realhunt.co/es/deal/cuautlancingo-68984
 60 m², 2 dormitorios. Precio: 1.647.032 MXN. El anuncio menciona: piscina, urbanización cerrada, con seguridad, aparcamiento, obra nueva.
 
 https://realhunt.co/es/deal/mazatlan-83298
-
-### Piso nuevo de 2 dormitorios con azotea y terraza en Mazatlán, entrega inmediata
-
-86.100 € · Mazatlán, Sinaloa · 68 m² · 2 dormitorios · nota RealHunt 86 · añadida el 2026-10-05
-
-Piso de 68 m² en La Rocca, conjunto cerrado de ocho torres en la Av. Delfines, zona Alarcón de Mazatlán: salón-comedor, dos dormitorios con armario, baño, lavadero, terraza y aparcamiento. Azotea equipada, pista deportiva, zona infantil y acceso controlado 24 h. Entrega inmediata. Precio: 1.772.566 MXN. Unos 86.100 €. A menos de 50 km de la costa, los extranjeros compran mediante un fideicomiso bancario.
-
-https://realhunt.co/es/deal/mx-mazatlan-86k-809756
 
 ### Piso de 2 dormitorios en Mazatlán, Sinaloa
 

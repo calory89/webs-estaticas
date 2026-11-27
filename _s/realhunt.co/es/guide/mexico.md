@@ -30,13 +30,13 @@ Impuesto sobre los ingresos por alquiler: No residentes: retención del 25% de I
 ### Mejores casas en México
 
 - [50.575 € · Piso de 2 dormitorios en San Pedro Tlaquepaque, Jalisco](https://realhunt.co/es/deal/san-pedro-tlaquepaque-50575) · San Pedro Tlaquepaque, Jalisco · nota 93 · 49 m² · 2 dorm.
-- [80.920 € · Piso de 3 dormitorios cerca de la playa en Mazatlán, Sinaloa](https://realhunt.co/es/deal/mazatlan-80920) · Mazatlán, Sinaloa · nota 90 · 71 m² · 3 dorm.
 - [70.805 € · Casa de 2 dormitorios en Tonalá, Jalisco](https://realhunt.co/es/deal/tonala-70805) · Tonalá, Jalisco · nota 89 · 65 m² · 2 dorm.
 - [195.300 € · Casa de piedra y ladrillo de cinco dormitorios con terraza con vistas al Lago Chapala en El Tepehuaje](https://realhunt.co/es/deal/mx-tuxcueca-el-tepehuaje-lake-chapala-view-house-4-08m) · El Tepehuaje, Tuxcueca, Jalisco · nota 88 · 245 m² · 5 dorm.
 - [68.984 € · Piso de 3 dormitorios en Cuautlancingo, Puebla](https://realhunt.co/es/deal/cuautlancingo-68984) · Cuautlancingo, Puebla · nota 87 · 78 m² · 3 dorm.
-- [86.100 € · Piso nuevo de 2 dormitorios con azotea y terraza en Mazatlán, entrega inmediata](https://realhunt.co/es/deal/mx-mazatlan-86k-809756) · Mazatlán, Sinaloa · nota 86 · 68 m² · 2 dorm.
+- [216.600 € · Casa colonial con piscina y jardín en Barrio de Santiago, centro de Mérida](https://realhunt.co/es/deal/mx-merida-centro-colonial-house-pool-barrio-santiago-4-45m) · Mérida, Yucatán · nota 86 · 160 m² · 2 dorm.
+- [98.621 € · Piso de 2 dormitorios en Mazatlán, Sinaloa](https://realhunt.co/es/deal/mazatlan-98621) · Mazatlán, Sinaloa · nota 86 · 89 m² · 2 dorm.
 
-[Las 14 casas en México](https://realhunt.co/es/homes/mexico)
+[Las 12 casas en México](https://realhunt.co/es/homes/mexico)
 
 [Gastos, impuestos y fuentes de México](https://realhunt.co/es/costs/mexico) · [Calculadora de gastos de compra para México](https://realhunt.co/es/buying-costs/mexico) · [¿Puedo comprar allí? Normas por nacionalidad](https://realhunt.co/es/can-i-buy)
 
@@ -44,11 +44,11 @@ Impuesto sobre los ingresos por alquiler: No residentes: retención del 25% de I
 
 - [México vs España](https://realhunt.co/es/countries/mexico-vs-spain)
 - [México vs Italia](https://realhunt.co/es/countries/italy-vs-mexico)
-- [México vs Estados Unidos](https://realhunt.co/es/countries/mexico-vs-united-states)
 - [México vs Francia](https://realhunt.co/es/countries/france-vs-mexico)
+- [México vs Estados Unidos](https://realhunt.co/es/countries/mexico-vs-united-states)
 - [México vs Dinamarca](https://realhunt.co/es/countries/denmark-vs-mexico)
+- [México vs Grecia](https://realhunt.co/es/countries/greece-vs-mexico)
 - [México vs Suecia](https://realhunt.co/es/countries/mexico-vs-sweden)
-- [México vs Japón](https://realhunt.co/es/countries/japan-vs-mexico)
 - [México vs Polonia](https://realhunt.co/es/countries/mexico-vs-poland)
 
 ### Fuentes

@@ -1,6 +1,6 @@
 # Casas baratas en España: datos clave y todas las casas de RealHunt
 
-A 27 de noviembre de 2026, RealHunt publica 191 casas en venta en España, revisadas una a una por una persona. En España, el precio de salida mediano de esas 191 casas es de 97.000 € (1.217 € por m², calculado con las 187 casas de superficie conocida); la más barata cuesta 38.000 € y la más cara, 348.000 €. Los impuestos y gastos de compra suman alrededor del 7,5–14% del precio de una casa en España (cifras de 2026).
+A 27 de noviembre de 2026, RealHunt publica 155 casas en venta en España, revisadas una a una por una persona. En España, el precio de salida mediano de esas 155 casas es de 120.000 € (1.296 € por m², calculado con las 152 casas de superficie conocida); la más barata cuesta 39.000 € y la más cara, 348.000 €. Los impuestos y gastos de compra suman alrededor del 7,5–14% del precio de una casa en España (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/spain · Actualizado el 27 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/spain.json · PDF: https://realhunt.co/data/countries/spain.es.pdf
@@ -9,12 +9,12 @@ También en JSON: https://realhunt.co/data/countries/spain.json · PDF: https://
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 191 |
-| Precio de salida mediano | 97.000 € |
-| Precio mediano por m² | 1.217 € (187 casas de superficie conocida) |
-| Superficie mediana | 85 m² |
-| La más barata y la más cara | 38.000 € · 348.000 € |
-| Nota RealHunt mediana (de 70 a 98) | 85 |
+| Casas en RealHunt | 155 |
+| Precio de salida mediano | 120.000 € |
+| Precio mediano por m² | 1.296 € (152 casas de superficie conocida) |
+| Superficie mediana | 90 m² |
+| La más barata y la más cara | 39.000 € · 348.000 € |
+| Nota RealHunt mediana (de 70 a 98) | 84 |
 | Impuestos y gastos de compra | 7,5–14% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sí, sin restricciones en la actualidad; el gobierno ha propuesto un impuesto del 100% sobre (o prohibición de) compradores no residentes no comunitarios, no promulgado. |
 | Impuesto anual sobre la vivienda | IBI 0,4-1,1% del valor catastral (municipal), más imputación de rentas en el IRPF/IRNR si no está alquilada. |
@@ -46,15 +46,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/spain
 
-## Las 191 casas, de mejor a peor nota
-
-### Casa de 2 dormitorios con terraza en Alpujarra de la Sierra
-
-38.000 € · Alpujarra de la Sierra, Granada, Spain · 150 m² · 2 dormitorios · nota RealHunt 94 · añadida el 2026-10-01
-
-38.000 € por 150 m² y 2 dormitorios en Alpujarra de la Sierra (Granada), unos 253 €/m². A unos 26 km de la costa (en línea recta). Con terraza y chimenea. Para entrar a vivir: anunciado en muy buen estado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
-
-https://realhunt.co/es/deal/es-alpujarra-de-la-sierra-38k-35809
+## Las 155 casas, de mejor a peor nota
 
 ### Casa de pueblo con terraza panorámica al mar y a la montaña en Rossell, Castellón
 
@@ -71,22 +63,6 @@ https://realhunt.co/es/deal/es-rossell-55k-187471380
 59.000 € por 147 m² y 5 dormitorios en Sorvilán (Granada), unos 401 €/m². A unos 8 km de la costa (en línea recta). Con terraza y vistas a la montaña. Para entrar a vivir: anunciado como reformado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
 
 https://realhunt.co/es/deal/es-sorvilan-59k-76765
-
-### Casa pareada de 5 dormitorios con terraza en Nevada
-
-77.000 € · Nevada, Granada, Spain · 306 m² · 5 dormitorios · nota RealHunt 94 · añadida el 2026-10-01
-
-77.000 € por 306 m² y 5 dormitorios en Nevada (Granada), unos 252 €/m². A unos 29 km de la costa (en línea recta). Con terraza, vistas a la montaña y chimenea. Para entrar a vivir: anunciado en muy buen estado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
-
-https://realhunt.co/es/deal/es-nevada-77k-72929
-
-### Piso de 2 dormitorios con terraza en Cartagena
-
-73.000 € · Cartagena, Murcia, Spain · 85 m² · 2 dormitorios · nota RealHunt 93 · añadida el 2026-10-01
-
-73.000 € por 85 m² y 2 dormitorios en Cartagena (Murcia), unos 859 €/m². A unos 200 m del mar. Con terraza. Para entrar a vivir: anunciado en muy buen estado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
-
-https://realhunt.co/es/deal/es-cartagena-73k-74761
 
 ### Casa de 3 dormitorios con terraza en Nacimiento
 
@@ -111,14 +87,6 @@ https://realhunt.co/es/deal/es-benizalon-63k-44767
 91.000 € por 175 m² y 4 dormitorios en Alozaina (Málaga), unos 520 €/m². A unos 24 km de la costa (en línea recta). Con terraza, vistas a la montaña, patio y chimenea. Para entrar a vivir: anunciado en muy buen estado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
 
 https://realhunt.co/es/deal/es-alozaina-91k-40320
-
-### Piso de 2 dormitorios con piscina en Murcia
-
-95.000 € · Murcia, Murcia, Spain · 157 m² · 2 dormitorios · nota RealHunt 92 · añadida el 2026-10-01
-
-95.000 € por 157 m² y 2 dormitorios en Murcia (Murcia), unos 605 €/m². A unos 17 km de la costa (en línea recta). Con piscina y terraza. Para entrar a vivir: anunciado en buen estado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
-
-https://realhunt.co/es/deal/es-murcia-95k-36614
 
 ### Casa de pueblo de la Alpujarra totalmente reformada con terraza con vistas al mar en Murtas
 
@@ -159,14 +127,6 @@ https://realhunt.co/es/deal/es-lijar-69k-658718
 Una azotea soleada mira al valle verde hacia la Sierra de Baza. Esta casa de dos plantas combina habitaciones normales con estancias cueva que se adentran en la ladera, con entradas por ambos lados. El anuncio indica cuatro dormitorios, tres baños, chimeneas y cochera, y dice que está lista para entrar a vivir. Los interiores son tradicionales, no recién decorados. Baza está a unos 15 minutos en coche.
 
 https://realhunt.co/es/deal/caniles-rooftop-mountains-75000
-
-### Piso de 3 dormitorios con patio en Cartagena
-
-78.000 € · Cartagena, Murcia, Spain · 78 m² · 3 dormitorios · nota RealHunt 91 · añadida el 2026-10-01
-
-78.000 € por 78 m² y 3 dormitorios en Cartagena (Murcia), unos 1.000 €/m². A unos 200 m del mar. Con patio. Para entrar a vivir: anunciado en muy buen estado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
-
-https://realhunt.co/es/deal/es-cartagena-78k-20439
 
 ### Casa de pueblo renovada en 2024 con azotea y vistas a la sierra en Vélez-Blanco
 
@@ -224,22 +184,6 @@ Casa de 165 m² en dos plantas en Castalla. Tres dormitorios, dos baños, cocina
 
 https://realhunt.co/es/deal/es-castalla-150k-388079
 
-### Casa de campo con piscina en una finca de 5.500 m² cerca de Valdunciel, Salamanca
-
-155.000 € · San Joaquín de Huelmos, Valdunciel, Salamanca · 151 m² · 3 dormitorios · nota RealHunt 91 · añadida el 2026-11-14
-
-Finca rústica de unos 5.500 m² en San Joaquín de Huelmos, Valdunciel, con vivienda unifamiliar inscrita de unos 151 m² en una sola planta. Tres dormitorios y dos baños, cocina con muebles en verde menta y salón con chimenea. Fuera hay piscina, zonas deportivas y almacenes. Precio 155.000 €, unos 1.026 €/m².
-
-https://realhunt.co/es/deal/es-canedo-valdunciel-155k-154146
-
-### Casa con reforma integral de 2024, terraza y vistas al castillo en Santa Olalla del Cala, Sierra de Huelva
-
-155.000 € · Santa Olalla del Cala, Huelva · 83 m² · 2 dormitorios · nota RealHunt 91 · añadida el 2026-11-14
-
-Casa en Santa Olalla del Cala, en la Sierra de Huelva y a 45 minutos de Sevilla. 83 m² construidos en una parcela de 194 m², con reforma integral de 2024. Dos dormitorios, baño completo y salón con chimenea. El jardín y la terraza miran al castillo. Precio 155.000 €, unos 1.867 €/m².
-
-https://realhunt.co/es/deal/es-santa-olalla-del-cala-155k-340784
-
 ### Casa reformada de dos plantas con terraza en Piles, un pueblo valenciano tranquilo junto al mar
 
 159.900 € · Piles, Valencia · 109 m² · 2 dormitorios · nota RealHunt 91 · añadida el 2026-11-14
@@ -256,14 +200,6 @@ Un apartamento moderno en la planta superior de 29 m² (27 m² útiles) en Puert
 
 https://realhunt.co/es/deal/es-la-palma-puerto-naos-penthouse-terrace-178k-660889
 
-### Casa de 1 dormitorio con jardín en Marines
-
-54.000 € · Marines, Valencia, Spain · 50 m² · 1 dormitorios · nota RealHunt 90 · añadida el 2026-10-01
-
-54.000 € por 50 m² y 1 dormitorio en Marines (Valencia), unos 1.080 €/m². A unos 28 km de la costa (en línea recta). Con jardín y terraza. Para entrar a vivir: anunciado como casi nuevo y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
-
-https://realhunt.co/es/deal/es-marines-54k-94700
-
 ### Piso luminoso en última planta con balcón y vistas al mar en Corme Porto, Costa da Morte
 
 68.500 € · Corme Porto, Ponteceso (A Coruña) · 80 m² · 3 dormitorios · nota RealHunt 90 · añadida el 2026-10-14
@@ -271,30 +207,6 @@ https://realhunt.co/es/deal/es-marines-54k-94700
 Piso de tres dormitorios bien conservado en el centro de Corme, uno de los pueblos marineros más bonitos de la Costa da Morte: cocina independiente, despensa, zona de lavado, salón con salida a un balcón amplio con vistas al mar y baño reformado. Cuarta y última planta sin vecinos encima, muy tranquilo. El edificio de los años 80 tiene fachada y zonas comunes renovadas. Tiendas, farmacia y cafeterías a pie de calle y el paseo marítimo a pocos metros. Se vende amueblado. Precio 68.500 €, unos 856 €/m².
 
 https://realhunt.co/es/deal/es-ponteceso-corme-68k-189908571
-
-### Piso de 4 dormitorios con vistas a la montaña en Petrer
-
-85.000 € · Petrer, Alicante, Spain · 97 m² · 4 dormitorios · nota RealHunt 90 · añadida el 2026-10-01
-
-85.000 € por 97 m² y 4 dormitorios en Petrer (Alicante), unos 876 €/m². A unos 32 km de la costa (en línea recta). Con vistas a la montaña. Para entrar a vivir: anunciado como reformado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
-
-https://realhunt.co/es/deal/es-petrer-85k-17043
-
-### Casa de 3 dormitorios con terraza en Bimenes
-
-86.000 € · Bimenes, Asturias, Spain · 195 m² · 3 dormitorios · nota RealHunt 90 · añadida el 2026-10-01
-
-86.000 € por 195 m² y 3 dormitorios en Bimenes (Asturias), unos 441 €/m². A unos 23 km de la costa (en línea recta). Con terraza. Para entrar a vivir: anunciado en muy buen estado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
-
-https://realhunt.co/es/deal/es-bimenes-86k-71966
-
-### Casa de campo de 3 dormitorios con terraza en Sorbas
-
-89.000 € · Sorbas, Almería, Spain · 97 m² · 3 dormitorios · nota RealHunt 90 · añadida el 2026-10-01
-
-89.000 € por 97 m² y 3 dormitorios en Sorbas (Almería), unos 918 €/m². A unos 24 km de la costa (en línea recta). Con terraza, vistas a la montaña y chimenea. Para entrar a vivir: anunciado en muy buen estado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
-
-https://realhunt.co/es/deal/es-sorbas-89k-70321
 
 ### Casa de 5 dormitorios con vistas a la montaña en Parres
 
@@ -320,14 +232,6 @@ Chalet de una planta en la montaña, a 6 minutos de Villar del Arzobispo, con pr
 
 https://realhunt.co/es/deal/es-villar-del-arzobispo-125k-092921
 
-### Casa de 3 dormitorios con terraza en Íllora
-
-55.000 € · Íllora, Granada, Spain · 120 m² · 3 dormitorios · nota RealHunt 89 · añadida el 2026-10-01
-
-55.000 € por 120 m² y 3 dormitorios en Íllora (Granada), unos 458 €/m². Con terraza y patio. Para entrar a vivir: anunciado como reformado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
-
-https://realhunt.co/es/deal/es-illora-55k-41725
-
 ### Terraza comedor de piedra sobre el valle del Andarax
 
 79.500 € · Terque, Almería · 81 m² · 2 dormitorios · nota RealHunt 89 · añadida el 2026-10-02
@@ -335,22 +239,6 @@ https://realhunt.co/es/deal/es-illora-55k-41725
 Una terraza rústica de piedra con comedor exterior y vistas al valle del Andarax es lo mejor de esta casa cueva amueblada en la zona de Al-Kamar, en Terque. El anuncio incluye dos dormitorios, un baño y un salón abierto con chimenea, y la describe lista para entrar a vivir. Está en el interior, a unos 30 km de la costa. Los interiores conservan acabados tradicionales y sencillos.
 
 https://realhunt.co/es/deal/terque-stone-terrace-cave-79500
-
-### Piso bajo de 2 dormitorios con jardín en Águilas
-
-80.000 € · Águilas, Murcia, Spain · 79 m² · 2 dormitorios · nota RealHunt 89 · añadida el 2026-10-01
-
-80.000 € por 79 m² y 2 dormitorios en Águilas (Murcia), unos 1.013 €/m². A unos 1000 m del mar. Para entrar a vivir: anunciado como reformado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
-
-https://realhunt.co/es/deal/es-aguilas-80k-19039
-
-### Casa pareada de 3 dormitorios con patio en Roquetas de Mar
-
-82.900 € · Roquetas de Mar, Almería, Spain · 75 m² · 3 dormitorios · nota RealHunt 89 · añadida el 2026-10-01
-
-82.900 € por 75 m² y 3 dormitorios en Roquetas de Mar (Almería), unos 1.105 €/m². A unos 2 km de la costa (en línea recta). Con patio. Para entrar a vivir: anunciado en buen estado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
-
-https://realhunt.co/es/deal/es-roquetas-de-mar-82k-66798
 
 ### Casa de 1 dormitorio con terraza en Gualchos
 
@@ -375,22 +263,6 @@ https://realhunt.co/es/deal/DcazSjCjUUx
 Casa familiar grande en Alzira, totalmente reformada con buenas calidades en dos plantas: salón comedor amplio, cocina grande totalmente equipada con salida a un patio de 70 m² con barbacoa, aire acondicionado y terraza. 227 m². Alzira tiene tren de Cercanías a Valencia.
 
 https://realhunt.co/es/deal/es-alzira-145k-482015
-
-### Chalet en parcela de 1.526 m² con piscina, chimenea y árboles frutales
-
-155.000 € · Turís, Valencia · 176 m² · 3 dormitorios · nota RealHunt 89 · añadida el 2026-10-07
-
-Chalet de unos 100 m² en parcela de 1.526 m² en Turís, a 27 km de Valencia: 3 dormitorios, vestidor, salón comedor con cocina americana moderna y zona de estar con chimenea de leña. Fuera: dos porches, tres trasteros, piscina, arbolado y espacio para huerto. Agua de pozo.
-
-https://realhunt.co/es/deal/es-turis-155k-068943
-
-### Apartamento de 1 dormitorio con piscina en Nevada
-
-44.000 € · Nevada, Granada, Spain · 49 m² · 1 dormitorios · nota RealHunt 88 · añadida el 2026-10-01
-
-44.000 € por 49 m² y 1 dormitorio en Nevada (Granada), unos 898 €/m². A unos 29 km de la costa (en línea recta). Con piscina, terraza y vistas a la montaña. Para entrar a vivir: anunciado en buen estado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
-
-https://realhunt.co/es/deal/es-nevada-44k-95451
 
 ### Casa de 1 dormitorio con terraza en Terque
 
@@ -432,14 +304,6 @@ https://realhunt.co/es/deal/es-galdar-70k-15615
 
 https://realhunt.co/es/deal/es-terque-79k-93348
 
-### Piso de tres dormitorios con reforma integral de calidad en Utrera
-
-80.000 € · El Tinte, Utrera, Seville (about 25 min from Seville) · 102 m² · 3 dormitorios · nota RealHunt 88 · añadida el 2026-10-14
-
-Piso de 102 m² en la zona de El Tinte de Utrera, reformado integralmente con materiales de primera: electricidad y fontanería nuevas, suelos efecto mármol, iluminación empotrada, cocina moderna con horno y microondas integrados, salón luminoso, tres dormitorios con armarios empotrados y un baño con estilo, más lavadero. Solo queda entrar a vivir. Sevilla queda a unos 25 minutos en coche o en tren. Precio 80.000 €, unos 784 €/m².
-
-https://realhunt.co/es/deal/es-utrera-renovated-80k-190050590
-
 ### Casa de 3 dormitorios con terraza en Castalla
 
 85.000 € · Castalla, Alicante, Spain · 90 m² · 3 dormitorios · nota RealHunt 88 · añadida el 2026-10-01
@@ -448,14 +312,6 @@ https://realhunt.co/es/deal/es-utrera-renovated-80k-190050590
 
 https://realhunt.co/es/deal/es-castalla-85k-41639
 
-### Ático de 1 dormitorio con terraza en Benicarló
-
-95.000 € · Benicarló, Castellón, Spain · 88 m² · 1 dormitorios · nota RealHunt 88 · añadida el 2026-10-01
-
-95.000 € por 88 m² y 1 dormitorio en Benicarló (Castellón), unos 1.080 €/m². A unos 1200 m del mar. Con terraza. Para entrar a vivir: anunciado como reformado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
-
-https://realhunt.co/es/deal/es-benicarlo-95k-54979
-
 ### Casa de 2 dormitorios con piscina en Alhama de Granada
 
 99.000 € · Alhama de Granada, Granada, Spain · 111 m² · 2 dormitorios · nota RealHunt 88 · añadida el 2026-10-01
@@ -463,22 +319,6 @@ https://realhunt.co/es/deal/es-benicarlo-95k-54979
 99.000 € por 111 m² y 2 dormitorios en Alhama de Granada (Granada), unos 892 €/m². A unos 30 km de la costa (en línea recta). Con piscina, terraza, patio y chimenea. Para entrar a vivir: anunciado como reformado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
 
 https://realhunt.co/es/deal/es-alhama-de-granada-99k-62382
-
-### Casa de pueblo con contraventanas azules a un paseo del Mar Menor
-
-99.000 € · Los Nietos, Cartagena, Murcia, Spain · nota RealHunt 88 · añadida el 2026-09-23
-
-A un corto paseo de la orilla del Mar Menor en Los Nietos, Murcia, esta encantadora casa de pueblo combina las tradicionales contraventanas azules y los techos altos con una cocina recién renovada e interiores luminosos y acogedores.
-
-https://realhunt.co/es/deal/Dcnr1XjFDfu
-
-### Planta baja sin estrenar con piscina comunitaria en Albatera
-
-135.000 € · Albatera, Alicante (about 22 min from Elche) · 139 m² · 3 dormitorios · nota RealHunt 88 · añadida el 2026-10-14
-
-Amplia planta baja de 139 m² en un edificio moderno de 2006 en una zona tranquila de Albatera, sin estrenar y totalmente accesible, con rampa en la entrada: tres dormitorios grandes, dos baños completos (uno en suite), salón-comedor luminoso con salida al balcón y cocina totalmente equipada con acceso propio al balcón. Suelos de madera, aire acondicionado por conductos ya instalado y plaza de parking con acceso directo del garaje al piso. Piscina comunitaria con césped. Supermercados, tiendas y colegios cerca; Elche queda a unos 22 minutos. Precio 135.000 €, unos 971 €/m².
-
-https://realhunt.co/es/deal/es-albatera-pool-new-135k-190471633
 
 ### Casona reformada integralmente en 2025 con acabados premium en Jijona
 
@@ -495,14 +335,6 @@ https://realhunt.co/es/deal/es-jijona-renovated-149k-189102956
 Casa de pueblo amplia de 180 m² en pleno centro de Hondón de los Frailes, a un paso de comercios, bares y servicios, en excelente estado para entrar a vivir: salón moderno con chimenea de leña, cocina equipada con zona de comedor, cinco dormitorios y dos baños. Calefacción central, aire acondicionado, placas solares y una azotea / solárium privada con vistas al pueblo y a la sierra, más un patio de unos 60 m². Ideal para una familia grande o para combinar uso propio con alquiler vacacional. Elche queda a unos 25 minutos en coche. Precio 149.950 €, unos 833 €/m².
 
 https://realhunt.co/es/deal/es-hondon-frailes-5bed-150k-188921317
-
-### Casa reformada de 220 m² en el centro con azotea con vistas y bodega
-
-165.000 € · Capellades, Barcelona · 220 m² · 4 dormitorios · nota RealHunt 88 · añadida el 2026-10-07
-
-Casa reformada de cuatro plantas en el centro de Capellades: bodega en el sótano, planta baja que sirve de estudio o local, 4 dormitorios dobles, vestidor, 3 baños, salón comedor con cocina en la última planta y azotea privada con vistas a las colinas. 220 m². Tren a Barcelona desde el pueblo.
-
-https://realhunt.co/es/deal/es-capellades-165k-203609
 
 ### Casa de 2 dormitorios con terraza en Montefrío
 
@@ -544,14 +376,6 @@ https://realhunt.co/es/deal/es-mazaricos-88k-64288
 
 https://realhunt.co/es/deal/es-bicorp-90k-04086
 
-### Piso de 3 dormitorios con patio en Tavernes de la Valldigna
-
-90.000 € · Tavernes de la Valldigna, Valencia, Spain · 89 m² · 3 dormitorios · nota RealHunt 87 · añadida el 2026-10-01
-
-90.000 € por 89 m² y 3 dormitorios en Tavernes de la Valldigna (Valencia), unos 1.011 €/m². A unos 6 km de la costa (en línea recta). Con patio. Para entrar a vivir: anunciado como reformado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
-
-https://realhunt.co/es/deal/es-tavernes-de-la-valldigna-90k-27013
-
 ### Casa reformada por completo de tres dormitorios con azotea de 80 m² en Alzira
 
 91.000 € · Alquerieta, Alzira, Valencia (about 35 min from Valencia) · 113 m² · 3 dormitorios · nota RealHunt 87 · añadida el 2026-10-14
@@ -560,22 +384,6 @@ Casa de 113 m² en la zona Alquerieta de Alzira, reformada por completo: electri
 
 https://realhunt.co/es/deal/es-alzira-renovated-91k-189401106
 
-### Piso de 1 dormitorio con piscina en Torremanzanas / La Torre de les Maçanes
-
-99.000 € · Torremanzanas / La Torre de les Maçanes, Alicante, Spain · 80 m² · 1 dormitorios · nota RealHunt 87 · añadida el 2026-10-01
-
-99.000 € por 80 m² y 1 dormitorio en Torremanzanas / La Torre de les Maçanes (Alicante), unos 1.238 €/m². A unos 18 km de la costa (en línea recta). Con piscina, terraza y vistas a la montaña. Para entrar a vivir: anunciado como casi nuevo y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
-
-https://realhunt.co/es/deal/es-torremanzanas-la-torre-de-les-macanes-99k-04350
-
-### Planta baja con terrazas y piscina comunitaria en el resort de golf Condado de Alhama
-
-129.000 € · Condado de Alhama, Alhama de Murcia (about 35 min from Murcia and Cartagena) · 106 m² · 3 dormitorios · nota RealHunt 87 · añadida el 2026-10-14
-
-Planta baja de 106 m² en el tranquilo resort cerrado de Condado de Alhama, junto al campo de golf: salón luminoso con cocina abierta totalmente equipada, dos dormitorios dobles y uno sencillo, un baño y dos terrazas privadas con pérgola y un pequeño jardín. Se vende amueblada y para entrar a vivir, con aire acondicionado, plaza de parking privada, piscina comunitaria entre palmeras y zonas infantiles. Orientación este, con luz todo el día. Murcia y Cartagena quedan a unos 35 minutos cada una. Precio 129.000 €, unos 1.217 €/m².
-
-https://realhunt.co/es/deal/es-condado-alhama-golf-129k-190939296
-
 ### Casa de piedra reformada con vigas y chimenea cerca de Valladolid
 
 138.000 € · Velliza, Valladolid (about 25 min from Valladolid) · 124 m² · 3 dormitorios · nota RealHunt 87 · añadida el 2026-10-14
@@ -583,54 +391,6 @@ https://realhunt.co/es/deal/es-condado-alhama-golf-129k-190939296
 Casa con carácter de 124 m² con gruesos muros de piedra en el pueblo de Velliza, a unos 20 km de Valladolid. Reformada por completo, incluidos suelos, puertas, baños y ventanas, con vigas y piedra vistas. Abajo, un salón-comedor amplio con chimenea, cocina tipo office, baño y acceso directo al garaje; arriba, una sala de estar grande que hoy se usa como dormitorio, otros dos dormitorios y un baño completo. Calefacción nueva con estufa de pellets y radiadores eléctricos. No tiene jardín ni patio. Valladolid queda a unos 25 minutos en coche. Precio 138.000 €, unos 1.113 €/m².
 
 https://realhunt.co/es/deal/es-velliza-stone-house-138k-189374812
-
-### Dúplex revestido de madera en el casco antiguo de Gironella con chimenea y balcón con vistas
-
-139.000 € · Gironella, Barcelona · 131 m² · 2 dormitorios · nota RealHunt 87 · añadida el 2026-10-07
-
-Dúplex cálido y reformado con gusto en el casco antiguo de Gironella, con vistas al campo y la montaña y todos los servicios a 2 minutos a pie: salón comedor con chimenea antigua, balcón largo con vistas, gran dormitorio revestido de madera, dos baños y un dormitorio abuhardillado grande arriba. Se vende amueblado. 131 m².
-
-https://realhunt.co/es/deal/es-gironella-139k-934028
-
-### Planta baja de tres dormitorios con entrada independiente lista para entrar a vivir en San Isidro
-
-144.997 € · San Isidro, Alicante (about 16 min from Elche) · 152 m² · 3 dormitorios · nota RealHunt 87 · añadida el 2026-10-14
-
-Planta baja en San Isidro con entrada independiente, lista para disfrutar desde el primer día: 96 m² útiles (152 m² construidos según el anuncio) con un salón-comedor amplio, una cocina alargada equipada, tres dormitorios y dos baños, más terraza con jardineras, lavadero, trastero y plaza de garaje. Se vende amueblada, con aire acondicionado y calefacción. Sin pintores ni presupuestos de reforma. Elche queda a unos 16 minutos. Precio 144.997 €, unos 954 €/m².
-
-https://realhunt.co/es/deal/es-san-isidro-move-in-145k-190990586
-
-### Casa de una planta con piscina propia en una parcela de 1.000 m² cerca de Sevilla
-
-145.000 € · Urbanización El Cuzco, Los Palacios y Villafranca, Seville (about 25 min from Seville) · 120 m² · 3 dormitorios · nota RealHunt 87 · añadida el 2026-10-14
-
-Parcela totalmente vallada de unos 1.000 m² en una urbanización cerrada, pequeña y tranquila de Los Palacios, junto a la AP-4 hacia Sevilla. La vivienda principal es de una planta y está en buen estado, sin humedades ni grietas: salón-comedor con chimenea y cocina americana equipada, tres dormitorios y un baño completo, más un porche delantero que mira a una piscina de 8,20 x 5 m en estado impecable. Además, cuarto de depuradora con aseo, doble trastero con cocina de verano, aparcamiento para varios coches y huerto con frutales. Unos 120 m² construidos según el anuncio. Sevilla queda a unos 25 minutos. Precio 145.000 €, unos 1.208 €/m².
-
-https://realhunt.co/es/deal/es-los-palacios-pool-145k-190022882
-
-### Chalet mediterráneo recién reformado con despacho, se vende amueblado
-
-167.000 € · Sueca, Valencia · 124 m² · 3 dormitorios · nota RealHunt 87 · añadida el 2026-10-07
-
-Chalet independiente de 124 m² en parcela de 179 m² en Sueca, recién reformado en estilo casa de campo mediterránea y amueblado: 2 dormitorios, un despacho grande listo para teletrabajar, una estancia polivalente, patio encalado y terraza con jardín. Gastos mínimos. Cerca de los arrozales de la Albufera y las playas de Sueca.
-
-https://realhunt.co/es/deal/es-sueca-167k-027159
-
-### Chalet en la ladera con vistas a la montaña y al mar a lo lejos, más casa de invitados
-
-178.000 € · Godelleta, Valencia · 140 m² · 4 dormitorios · nota RealHunt 87 · añadida el 2026-10-07
-
-Chalet en zona elevada a 5 minutos de Godelleta, rodeado de naturaleza, con vistas abiertas a la montaña y, en días claros, al mar a lo lejos. Unos 140 m² en dos edificaciones: vivienda principal de unos 100 m² con 3 dormitorios, baño, cocina y salón luminoso con chimenea, más una segunda edificación. Jardín, aparcamiento, se vende amueblado.
-
-https://realhunt.co/es/deal/es-godelleta-178k-277470
-
-### Casa en la parte alta de Llíria con terraza con piscina, vistas panorámicas y garaje para dos coches
-
-179.900 € · Llíria, Valencia · 164 m² · 3 dormitorios · nota RealHunt 87 · añadida el 2026-10-07
-
-Casa en la zona alta de Llíria, a 26 km de Valencia, con vistas panorámicas desde la planta superior, gran terraza con piscina, barbacoa y lavadero, y garaje para dos coches en planta baja. 3 dormitorios, 164 m². Llíria tiene metro directo al centro de Valencia.
-
-https://realhunt.co/es/deal/es-lliria-180k-695737
 
 ### Casa de campo de una planta con piscina, jardín, barbacoa y dos naves
 
@@ -648,22 +408,6 @@ https://realhunt.co/es/deal/es-estremera-180k-760516
 
 https://realhunt.co/es/deal/es-arcos-de-la-frontera-52k-51177
 
-### Dúplex de 2 dormitorios con terraza en Aller
-
-57.500 € · Aller, Asturias, Spain · 124 m² · 2 dormitorios · nota RealHunt 86 · añadida el 2026-10-01
-
-57.500 € por 124 m² y 2 dormitorios en Aller (Asturias), unos 464 €/m². Con terraza y garaje. Para entrar a vivir: anunciado como reformado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
-
-https://realhunt.co/es/deal/es-aller-57k-23270
-
-### Piso de 2 dormitorios en Langreo
-
-61.900 € · Langreo, Asturias, Spain · 58 m² · 2 dormitorios · nota RealHunt 86 · añadida el 2026-10-01
-
-61.900 € por 58 m² y 2 dormitorios en Langreo (Asturias), unos 1.067 €/m². A unos 24 km de la costa (en línea recta). Para entrar a vivir: anunciado en buen estado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
-
-https://realhunt.co/es/deal/es-langreo-61k-38277
-
 ### Casa de 4 dormitorios con terraza en Cehegín
 
 79.900 € · Cehegín, Murcia, Spain · 200 m² · 4 dormitorios · nota RealHunt 86 · añadida el 2026-10-01
@@ -672,29 +416,13 @@ https://realhunt.co/es/deal/es-langreo-61k-38277
 
 https://realhunt.co/es/deal/es-cehegin-79k-37859
 
-### Piso de 3 dormitorios en San Martín del Rey Aurelio
+### Casa reformada de piedra con patio y garaje en Congosta de Vidriales, Zamora
 
-85.000 € · San Martín del Rey Aurelio, Asturias, Spain · 89 m² · 3 dormitorios · nota RealHunt 86 · añadida el 2026-10-01
+120.000 € · Congosta de Vidriales, Zamora · 169 m² · 3 dormitorios · nota RealHunt 86 · añadida el 2026-11-27
 
-85.000 € por 89 m² y 3 dormitorios en San Martín del Rey Aurelio (Asturias), unos 955 €/m². A unos 28 km de la costa (en línea recta). Para entrar a vivir: anunciado en muy buen estado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
+Completamente reformada, amueblada y lista para entrar a vivir, con paredes, suelos, ventanas y puertas nuevos. La casa tiene 169 metros cuadrados construidos, una cocina-salón, tres dormitorios, un despacho, dos baños y dos despensas. Dispone de un amplio patio privado trasero, garaje y calefacción de gasoil. Está en una calle residencial tranquila de un pueblo, con todos los servicios cerca. Congosta de Vidriales está en la provincia de Zamora. Precio 120.000 €, unos 710 €/m².
 
-https://realhunt.co/es/deal/es-san-martin-del-rey-aurelio-85k-66374
-
-### Piso de 2 dormitorios en Cartagena
-
-95.000 € · Cartagena, Murcia, Spain · 71 m² · 2 dormitorios · nota RealHunt 86 · añadida el 2026-10-01
-
-95.000 € por 71 m² y 2 dormitorios en Cartagena (Murcia), unos 1.338 €/m². A unos 200 m del mar. Para entrar a vivir: anunciado como reformado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
-
-https://realhunt.co/es/deal/es-cartagena-95k-46660
-
-### Piso a estrenar de cuatro dormitorios y 135 m² en Agualada, Galicia
-
-116.900 € · Agualada, Coristanco, A Coruña (about 35 min from A Coruña) · 135 m² · 4 dormitorios · nota RealHunt 86 · añadida el 2026-10-14
-
-Piso a estrenar de 135 m² (117 m² útiles) en primera planta en Agualada, Coristanco: espacio abierto de 29 m² con cocina, comedor y salón, barra y electrodomésticos, cuatro dormitorios amplios (18,9, 16,5, 16,3 y 12 m²), baño con ducha de 9 m² y trastero. Ventanas de aluminio con Climalit, tarima flotante y termo eléctrico; sin ascensor. A 1,3 km de la autopista; Carballo queda a 12 km y A Coruña a unos 35 minutos en coche. Precio 116.900 €, unos 866 €/m².
-
-https://realhunt.co/es/deal/es-coristanco-new-4bed-117k-190697887
+https://realhunt.co/es/deal/es-congosta-de-vidriales-renovated-stone-house-patio-garage-120k
 
 ### Ático reformado de tres dormitorios con terraza privada de 40 m² en Santomera
 
@@ -728,6 +456,14 @@ Un piso de 104 m² con dos dormitorios en Veneziola, entre el Mar Menor y el Med
 
 https://realhunt.co/es/deal/es-la-manga-veneziola-sea-view-pool-180k
 
+### Casa de campo amueblada de 4 dormitorios con piscina y terreno en Tabernas, Almería
+
+200.000 € · Tabernas, Almería · 150 m² · 4 dormitorios · nota RealHunt 86 · añadida el 2026-11-27
+
+Lista para entrar a vivir y totalmente amueblada, esta casa de campo tiene 147 metros cuadrados de superficie habitable repartidos en 4 dormitorios, un baño, un salón comedor y una cocina con chimenea. Dispone de aire acondicionado, garaje, piscina y dos trasteros. La casa se encuentra en una parcela de 50 hectáreas con olivos, un manantial natural que abastece de agua a la vivienda, y vistas en todas direcciones. Está a pocos kilómetros de Almería, de las playas del Cabo de Gata y del aeropuerto. Precio 200.000 €, unos 1.333 €/m².
+
+https://realhunt.co/es/deal/es-tabernas-hunting-estate-country-house-pool-200k
+
 ### Casa de 2 dormitorios con terraza en Cieza
 
 60.000 € · Cieza, Murcia, Spain · 96 m² · 2 dormitorios · nota RealHunt 85 · añadida el 2026-10-01
@@ -735,14 +471,6 @@ https://realhunt.co/es/deal/es-la-manga-veneziola-sea-view-pool-180k
 60.000 € por 96 m² y 2 dormitorios en Cieza (Murcia), unos 625 €/m². Con terraza. Para entrar a vivir: anunciado en muy buen estado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
 
 https://realhunt.co/es/deal/es-cieza-60k-59837
-
-### Casa de 2 dormitorios con terraza en Árchez
-
-65.000 € · Árchez, Málaga, Spain · 50 m² · 2 dormitorios · nota RealHunt 85 · añadida el 2026-10-01
-
-65.000 € por 50 m² y 2 dormitorios en Árchez (Málaga), unos 1.300 €/m². A unos 11 km de la costa (en línea recta). Con terraza. Para entrar a vivir: anunciado en muy buen estado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
-
-https://realhunt.co/es/deal/es-archez-65k-74704
 
 ### Casa de pueblo totalmente reformada en Árchez, el pueblo mudéjar de Málaga
 
@@ -760,14 +488,6 @@ https://realhunt.co/es/deal/es-archez-75k-ni4va0
 
 https://realhunt.co/es/deal/es-puerto-serrano-75k-12088
 
-### Casa de 3 dormitorios con terraza en Lena
-
-79.900 € · Lena, Asturias, Spain · 172 m² · 3 dormitorios · nota RealHunt 85 · añadida el 2026-10-01
-
-79.900 € por 172 m² y 3 dormitorios en Lena (Asturias), unos 465 €/m². Con terraza. Para entrar a vivir: anunciado en muy buen estado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
-
-https://realhunt.co/es/deal/es-lena-79k-45163
-
 ### Casa de 4 dormitorios en Flix
 
 80.000 € · Flix, Tarragona, Spain · 152 m² · 4 dormitorios · nota RealHunt 85 · añadida el 2026-10-01
@@ -775,14 +495,6 @@ https://realhunt.co/es/deal/es-lena-79k-45163
 80.000 € por 152 m² y 4 dormitorios en Flix (Tarragona), unos 526 €/m². Para entrar a vivir: anunciado como reformado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
 
 https://realhunt.co/es/deal/es-flix-80k-33800
-
-### Piso de 2 dormitorios en Ginestar
-
-80.000 € · Ginestar, Tarragona, Spain · 69 m² · 2 dormitorios · nota RealHunt 85 · añadida el 2026-10-01
-
-80.000 € por 69 m² y 2 dormitorios en Ginestar (Tarragona), unos 1.159 €/m². A unos 23 km de la costa (en línea recta). Para entrar a vivir: anunciado en buen estado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
-
-https://realhunt.co/es/deal/es-ginestar-80k-99389
 
 ### Casa pareada de 2 dormitorios con chimenea en Polaciones
 
@@ -816,14 +528,6 @@ https://realhunt.co/es/deal/es-albunol-91k-41469
 
 https://realhunt.co/es/deal/es-sant-jaume-d-enveja-91k-15282
 
-### Ático de 1 dormitorio en Roquetas de Mar
-
-93.500 € · Roquetas de Mar, Almería, Spain · 67 m² · 1 dormitorios · nota RealHunt 85 · añadida el 2026-10-01
-
-93.500 € por 67 m² y 1 dormitorio en Roquetas de Mar (Almería), unos 1.396 €/m². A unos 2 km de la costa (en línea recta). Para entrar a vivir: anunciado en buen estado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
-
-https://realhunt.co/es/deal/es-roquetas-de-mar-93k-71925
-
 ### Piso de 2 dormitorios en El Ejido
 
 98.000 € · El Ejido, Almería, Spain · 79 m² · 2 dormitorios · nota RealHunt 85 · añadida el 2026-10-01
@@ -840,6 +544,22 @@ Un piso luminoso de 70 m² con dos dormitorios a solo 10 m de la playa del Mar M
 
 https://realhunt.co/es/deal/es-los-urrutias-beachfront-tourist-licence-116k
 
+### Casa con anexo y piscina en parcela vallada en Albox, Almería
+
+174.995 € · Albox, Almería · 189 m² · 4 dormitorios · nota RealHunt 85 · añadida el 2026-11-27
+
+El anexo tiene tres dormitorios, un baño familiar y un salón-cocina abierto con estufa de leña y aire acondicionado. La casa principal tiene un dormitorio con baño en suite, cocina totalmente equipada y salón con estufa de leña y aire acondicionado. La parcela, con muros y valla, tiene una piscina de 5x3 m con terraza, árboles frutales, caseta de bombas y cobertizo. Vistas al jardín y a la piscina, con Albox a 10 minutos, Taberno a 5 minutos y Huércal-Overa a 20 minutos. Precio 174.995 €, unos 926 €/m².
+
+https://realhunt.co/es/deal/es-albox-pool-annexe-walled-plot-174k
+
+### Chalet de dos viviendas con vistas al mar y piscina en Alcossebre, Costa del Azahar, Castellón
+
+175.000 € · Alcossebre, Costa del Azahar, Castellón · 142 m² · 5 dormitorios · nota RealHunt 85 · añadida el 2026-11-27
+
+El chalet se reparte en tres plantas con dos viviendas independientes, cinco dormitorios y dos baños completos. El salón comedor da a una terraza con vistas al mar, y hay un solárium en la planta superior. Las vistas panorámicas abarcan el Mediterráneo y el Parque Natural de la Sierra de Irta. Está en una urbanización privada con piscina comunitaria y seguridad las 24 horas. Las playas y el puerto deportivo de Las Fuentes están a pocos minutos en coche. Precio 175.000 €, unos 1.232 €/m².
+
+https://realhunt.co/es/deal/es-alcossebre-double-chalet-sea-views-pool-175k
+
 ### Piso de 2 dormitorios reformado entero en un residencial con piscina y palmeras cerca de Corralejo
 
 185.000 € · Parque Holandés, Fuerteventura · 72 m² · 2 dormitorios · nota RealHunt 85 · añadida el 2026-10-11
@@ -848,29 +568,21 @@ Piso de 72 m² en el residencial La Caleta, en Parque Holandés, reformado de ar
 
 https://realhunt.co/es/deal/es-la-caleta-185k-063013
 
-### Piso reformado a 100 m del mar con terraza jardín y piscina
+### Casa de campo de una planta con 5 dormitorios, piscina y garaje en Hondón de los Frailes, Alicante
 
-240.000 € · Costa del Silencio, Tenerife · 81 m² · 1 dormitorios · nota RealHunt 85 · añadida el 2026-10-11
+210.000 € · Hondón de los Frailes, Alicante · 270 m² · 5 dormitorios · nota RealHunt 85 · añadida el 2026-11-27
 
-Piso con encanto a solo 100 metros del mar en Costa del Silencio, reformado entero y amueblado: salón acogedor con cocina moderna integrada y electrodomésticos empotrados, con salida a una terraza delantera de 15 m² con jardín. 81 m² en total, con un dormitorio amplio en dos ambientes que puede convertirse en un segundo dormitorio, baño amplio, piscina con vistas al océano y plaza de aparcamiento.
+Casa de una planta en excelente estado, con 267 m² habitables distribuidos en 8 habitaciones, entre ellas 5 dormitorios y un baño. La vivienda está orientada al sur y al este, por lo que recibe luz natural, y cuenta con chimenea, puerta reforzada y sistema de alarma y videovigilancia. La parcela de 933 m² incluye jardín, piscina privada, garaje y trastero. Se encuentra a 1 km del centro del pueblo de Hondón de los Frailes y dispone de fibra óptica, televisión por cable y conexión a la red de alcantarillado. Precio 210.000 €, unos 778 €/m².
 
-https://realhunt.co/es/deal/es-costa-del-silencio-240k-479658
+https://realhunt.co/es/deal/es-hondon-de-los-frailes-bright-country-house-pool-garage-210k
 
-### Casa de 2 dormitorios con terraza en Villamartín
+### Casa adosada lista para entrar a vivir con piscina y garaje en Bigastro, Costa Blanca, Alicante
 
-78.000 € · Villamartín, Cádiz, Spain · 100 m² · 2 dormitorios · nota RealHunt 84 · añadida el 2026-10-01
+215.000 € · Bigastro, Costa Blanca, Alicante · 224 m² · 4 dormitorios · nota RealHunt 85 · añadida el 2026-11-27
 
-78.000 € por 100 m² y 2 dormitorios en Villamartín (Cádiz), unos 780 €/m². Con terraza y patio. Para entrar a vivir: anunciado en muy buen estado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
+Distribuida en varias plantas, esta casa adosada de 224 m² tiene cuatro dormitorios y tres baños. El salón luminoso cuenta con grandes ventanales y aire acondicionado, y la cocina independiente incluye una zona de lavadero. En el exterior hay un porche delantero, un solárium y un garaje privado, además de una piscina comunitaria y zonas verdes. Los acabados están bien cuidados y la vivienda se muestra amueblada y lista para entrar a vivir. Precio 215.000 €, unos 960 €/m².
 
-https://realhunt.co/es/deal/es-villamartin-78k-15617
-
-### Piso de 1 dormitorio en Palafrugell
-
-79.000 € · Palafrugell, Girona, Spain · 55 m² · 1 dormitorios · nota RealHunt 84 · añadida el 2026-10-01
-
-79.000 € por 55 m² y 1 dormitorio en Palafrugell (Girona), unos 1.436 €/m². A unos 4 km de la costa (en línea recta). Para entrar a vivir: anunciado como reformado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
-
-https://realhunt.co/es/deal/es-palafrugell-79k-70840
+https://realhunt.co/es/deal/es-bigastro-ready-townhouse-private-garage-pool-215k
 
 ### Piso de 1 dormitorio con patio en Murcia
 
@@ -879,14 +591,6 @@ https://realhunt.co/es/deal/es-palafrugell-79k-70840
 80.000 € por 45 m² y 1 dormitorio en Murcia (Murcia), unos 1.778 €/m². A unos 15 km de la costa (en línea recta). Con patio y garaje. Para entrar a vivir: anunciado como casi nuevo y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
 
 https://realhunt.co/es/deal/es-murcia-80k-47450
-
-### Apartamento de 1 dormitorio con terraza en Murcia
-
-82.000 € · Murcia, Murcia, Spain · 56 m² · 1 dormitorios · nota RealHunt 84 · añadida el 2026-10-01
-
-82.000 € por 56 m² y 1 dormitorio en Murcia (Murcia), unos 1.464 €/m². A unos 14 km de la costa (en línea recta). Con terraza y patio. Para entrar a vivir: anunciado en muy buen estado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
-
-https://realhunt.co/es/deal/es-murcia-82k-15626
 
 ### Apartamento de 1 dormitorio con vistas al mar en Vícar
 
@@ -903,14 +607,6 @@ https://realhunt.co/es/deal/es-vicar-82k-27426
 Casa cueva encalada excavada en la ladera sobre el casco histórico de Galera, con una terraza que mira al pueblo y al campo. El anuncio indica dos dormitorios dobles, cocina equipada, salón con chimenea y un baño, todo en buen estado. Aparcamiento cerca. El anunciante no da una superficie interior fiable, así que no la mostramos.
 
 https://realhunt.co/es/deal/galera-hillside-cave-84000
-
-### Dúplex de 3 dormitorios con terraza en Santa Bàrbara
-
-93.000 € · Santa Bàrbara, Tarragona, Spain · 77 m² · 3 dormitorios · nota RealHunt 84 · añadida el 2026-10-01
-
-93.000 € por 77 m² y 3 dormitorios en Santa Bàrbara (Tarragona), unos 1.208 €/m². A unos 14 km de la costa (en línea recta). Con terraza. Para entrar a vivir: anunciado en muy buen estado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
-
-https://realhunt.co/es/deal/es-santa-barbara-93k-60918
 
 ### Casa de 3 dormitorios con chimenea en Quirós
 
@@ -960,21 +656,13 @@ https://realhunt.co/es/deal/es-torrevieja-97k-10226
 
 https://realhunt.co/es/deal/es-murcia-97k-60666
 
-### Piso de 2 dormitorios con vistas a la montaña en El Perelló
+### Casa cueva con vistas, amplio patio y terreno en Orce, Granada
 
-98.000 € · El Perelló, Tarragona, Spain · 79 m² · 2 dormitorios · nota RealHunt 84 · añadida el 2026-10-01
+99.500 € · Orce, Granada · 134 m² · 3 dormitorios · nota RealHunt 84 · añadida el 2026-11-27
 
-98.000 € por 79 m² y 2 dormitorios en El Perelló (Tarragona), unos 1.241 €/m². A unos 5 km de la costa (en línea recta). Con vistas a la montaña. Para entrar a vivir: anunciado como reformado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
+Esta casa cueva ofrece 134 m2 repartidos en tres dormitorios, una sala de estar con zona de comedor y una cocina de estilo español típico. El baño, de buen tamaño, cuenta con bañera y ducha. Un amplio patio recorre todo el ancho de la cueva y ofrece vistas. Detrás de la vivienda hay un espacio para leña y una cochera para el coche, y la cueva está conectada a agua, electricidad y alcantarillado. Orce está a pocos minutos en coche, Huéscar a unos 10 minutos y Baza a unos 30 minutos. Precio 99.500 €, unos 743 €/m².
 
-https://realhunt.co/es/deal/es-el-perello-98k-73036
-
-### Casa cueva canaria con terraza frente a la montaña
-
-99.500 € · Barranco Hondo, Gáldar, Gran Canaria · 81 m² · 2 dormitorios · nota RealHunt 84 · añadida el 2026-10-02
-
-Paredes de cueva blancas, una terraza con plantas y vistas a montañas abruptas en Barranco Hondo. El anunciante la describe bien cuidada y amueblada, con dos dormitorios y un baño, lista para usar sin reformas. Varias estancias dan directamente a la terraza. El acceso es a pie: los coches no llegan a la casa y el aparcamiento está a unos 50 metros.
-
-https://realhunt.co/es/deal/galdar-mountain-cave-99500
+https://realhunt.co/es/deal/es-orce-cave-house-views-patio-99k
 
 ### Piso de 2 dormitorios con jardín en Murcia
 
@@ -984,6 +672,38 @@ https://realhunt.co/es/deal/galdar-mountain-cave-99500
 
 https://realhunt.co/es/deal/es-murcia-99k-61734
 
+### Casa cueva renovada de 3 dormitorios con patio y terraza en Castilléjar, Granada
+
+129.950 € · Castilléjar, Granada · 140 m² · 3 dormitorios · nota RealHunt 84 · añadida el 2026-11-27
+
+La casa cueva ha sido renovada conservando sus paredes naturales de cueva, sus techos abovedados y sus vigas de madera. Incluye una sala de estar con una habitación contigua, una cocina con trastero y dos baños modernos con duchas a ras de suelo. Un amplio patio cerrado ofrece espacio para aparcar y para una terraza o un jardín, además de un túnel de cueva de unos 18 metros para un taller o un estudio. Castilléjar está a 5 a 10 minutos en coche y Granada a unas 1 hora y 40 minutos. Precio 129.950 €, unos 928 €/m².
+
+https://realhunt.co/es/deal/es-castillejar-cave-house-renovated-courtyard-129k
+
+### Casa cueva lista para entrar a vivir, amueblada, con vistas a la montaña en Freila, Granada
+
+140.000 € · Freila, Granada · 135 m² · 4 dormitorios · nota RealHunt 84 · añadida el 2026-11-27
+
+Casa cueva totalmente amueblada de 135 m² habitables, con cuatro dormitorios y un baño, lista para entrar a vivir de inmediato. La cocina está totalmente equipada e incluye una chimenea con carácter, azulejería tradicional y postigos de madera. Un amplio patio con zona de barbacoa y aparcamiento tiene vistas a las montañas y al campo andaluz. La casa está en una calle tranquila a las afueras de Freila, a unos 15 minutos en coche de Baza y unas 1,5 horas de Granada. El aislamiento natural mantiene temperaturas agradables durante todo el año. Precio 140.000 €, unos 1.037 €/m².
+
+https://realhunt.co/es/deal/es-freila-furnished-cave-house-mountain-views-140k
+
+### Casa de 3 dormitorios con chimenea y vistas a la montaña en Abanilla, Murcia
+
+150.000 € · Abanilla, Murcia · 116 m² · 3 dormitorios · nota RealHunt 84 · añadida el 2026-11-27
+
+La casa está en buen estado estructural y tiene 116 m2 habitables, tres dormitorios y un baño con ducha. El salón comedor cuenta con aire acondicionado, chimenea de leña y calefacción eléctrica, y la cocina está equipada. En el exterior hay una terraza soleada, dos patios privados, uno con piscina desmontable, un jardín y un garaje. La propiedad tiene vistas a la montaña y acceso directo desde la casa a una ruta de senderismo. El pueblo está a pocos minutos a pie. Precio 150.000 €, unos 1.293 €/m².
+
+https://realhunt.co/es/deal/es-abanilla-mountain-view-fireplace-pool-terrace-150k
+
+### Casa de campo con olivos y vistas a la montaña en Sorbas, Almería
+
+155.000 € · Sorbas, Almería · 135 m² · 4 dormitorios · nota RealHunt 84 · añadida el 2026-11-27
+
+Construida en 2005, esta casa de campo ofrece 134 m² de superficie habitable. Tiene tres dormitorios luminosos, dos salones independientes, cocina independiente y un estudio. En el exterior hay un porche amplio y una parcela llana de 1.480 m² con olivos, con vistas despejadas a la montaña. Sorbas está a 15 minutos, Campohermoso a 10 minutos y las playas de Cabo de Gata a poca distancia. Precio 155.000 €, unos 1.148 €/m².
+
+https://realhunt.co/es/deal/es-sorbas-country-house-mountain-views-olive-155k
+
 ### Chalet adosado con piscina privada, dos patios y garaje
 
 155.000 € · Zarza de Tajo, Madrid · 136 m² · 3 dormitorios · nota RealHunt 84 · añadida el 2026-10-07
@@ -992,6 +712,22 @@ Chalet adosado en Zarza de Tajo, junto a la A-3 a una hora de Madrid, con patio 
 
 https://realhunt.co/es/deal/es-zarza-de-tajo-155k-531208
 
+### Casa de pueblo con piscina privada y terraza cubierta en Monòver, Alicante
+
+164.995 € · Monòver, Alicante · 176 m² · 6 dormitorios · nota RealHunt 84 · añadida el 2026-11-27
+
+Casa de pueblo espaciosa con seis dormitorios y tres baños, con salón-comedor, comedor independiente y cocina equipada. Una terraza cubierta da al amplio patio con piscina privada. La vivienda dispone de calefacción central de gasoil, agua de red y electricidad, además de garaje, cuarto de lavado y cuarto de caldera y almacenaje. Está a 1 minuto a pie de un restaurante, una bodega y un taller de reparación de coches, y Monòver y Pinoso se encuentran a menos de 10 minutos en coche. Precio 164.995 €, unos 937 €/m².
+
+https://realhunt.co/es/deal/es-monover-spacious-village-house-pool-164k
+
+### Casa adosada con patio interior, garaje y jardines privados en Cañada de la Leña, Murcia
+
+165.000 € · Cañada de la Leña, Murcia · 163 m² · 3 dormitorios · nota RealHunt 84 · añadida el 2026-11-27
+
+La propiedad tiene tres dormitorios, dos baños y 163 m2 de superficie habitable. El salón cuenta con estufa de leña y aire acondicionado, y el dormitorio principal también tiene aire acondicionado. El exterior incluye un patio interior privado, jardines delanteros y laterales, y espacio para instalar una pequeña piscina de inmersión. Hay garaje con acceso interior. Un bar y restaurante tradicional está a un minuto a pie, y el aeropuerto de Alicante queda a unos 45 minutos. Precio 165.000 €, unos 1.012 €/m².
+
+https://realhunt.co/es/deal/es-canada-de-la-lena-courtyard-townhouse-garage-gardens-165k
+
 ### Bajo con terraza frente a la piscina, plaza de garaje y trastero
 
 170.000 € · Parque Holandés, Fuerteventura · 71 m² · 2 dormitorios · nota RealHunt 84 · añadida el 2026-10-11
@@ -999,6 +735,14 @@ https://realhunt.co/es/deal/es-zarza-de-tajo-155k-531208
 Bajo amueblado en el residencial La Caleta, en Parque Holandés: 2 dormitorios, salón con cocina abierta y terraza frente a la piscina comunitaria. Incluye plaza de garaje y trastero en el sótano. Corralejo y sus playas quedan a pocos minutos en coche.
 
 https://realhunt.co/es/deal/es-la-caleta-170k-006586
+
+### Cortijo con piscina, vistas y chimenea en Huércal-Overa, Almería
+
+175.000 € · Huércal-Overa, Almería · 152 m² · 2 dormitorios · nota RealHunt 84 · añadida el 2026-11-27
+
+Este cortijo tiene dos dormitorios, un baño con ducha y 152 m2 de superficie habitable. La cocina y el salón forman una única zona diáfana con chimenea, y en la fachada principal hay una amplia terraza cubierta. Junto a la casa se encuentra una piscina privada, en una parcela completamente llana y vallada con amplias vistas al paisaje. Huércal-Overa está a 10 minutos en coche, y los últimos 200 metros se recorren por una pista de tierra bien mantenida. La vivienda cuenta con agua de red y electricidad solar. Precio 175.000 €, unos 1.151 €/m².
+
+https://realhunt.co/es/deal/es-huercal-overa-farmhouse-pool-views-fireplace-175k
 
 ### Casa de montaña amueblada de cinco dormitorios con vistas a Ubiñas en Quirós, Asturias
 
@@ -1024,30 +768,6 @@ https://realhunt.co/es/deal/es-golf-del-sur-250k-061726
 
 https://realhunt.co/es/deal/es-polaciones-76k-71631
 
-### Piso de 2 dormitorios con piscina en Masdenverge
-
-85.000 € · Masdenverge, Tarragona, Spain · 63 m² · 2 dormitorios · nota RealHunt 83 · añadida el 2026-10-01
-
-85.000 € por 63 m² y 2 dormitorios en Masdenverge (Tarragona), unos 1.349 €/m². A unos 13 km de la costa (en línea recta). Con piscina. Para entrar a vivir: anunciado como reformado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
-
-https://realhunt.co/es/deal/es-masdenverge-85k-59248
-
-### Piso de 2 dormitorios con vistas a la montaña en Riba-roja d'Ebre
-
-85.000 € · Riba-roja d'Ebre, Tarragona, Spain · 91 m² · 2 dormitorios · nota RealHunt 83 · añadida el 2026-10-01
-
-85.000 € por 91 m² y 2 dormitorios en Riba-roja d'Ebre (Tarragona), unos 934 €/m². Con vistas a la montaña. Para entrar a vivir: anunciado en muy buen estado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
-
-https://realhunt.co/es/deal/es-riba-roja-d-ebre-85k-99837
-
-### Casa de campo de 2 dormitorios con terraza en Xert
-
-95.000 € · Xert, Castellón, Spain · 69 m² · 2 dormitorios · nota RealHunt 83 · añadida el 2026-10-01
-
-95.000 € por 69 m² y 2 dormitorios en Xert (Castellón), unos 1.377 €/m². A unos 27 km de la costa (en línea recta). Con terraza. Para entrar a vivir: anunciado en muy buen estado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
-
-https://realhunt.co/es/deal/es-xert-95k-90186
-
 ### Apartamento de 2 dormitorios con terraza en Amposta
 
 97.900 € · Amposta, Tarragona, Spain · 62 m² · 2 dormitorios · nota RealHunt 83 · añadida el 2026-10-01
@@ -1055,6 +775,14 @@ https://realhunt.co/es/deal/es-xert-95k-90186
 97.900 € por 62 m² y 2 dormitorios en Amposta (Tarragona), unos 1.579 €/m². A unos 1000 m del mar. Con terraza y garaje. Para entrar a vivir: anunciado en muy buen estado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
 
 https://realhunt.co/es/deal/es-amposta-97k-10966
+
+### Casa independiente de una planta de 3 dormitorios con jardín y garaje en Matanza, León
+
+99.000 € · Matanza, León, Castile and León · 103 m² · 3 dormitorios · nota RealHunt 83 · añadida el 2026-11-27
+
+Construida en 1972, esta casa independiente de una sola planta está en buen estado general. Tiene 83 m² construidos, 3 dormitorios, una cocina independiente totalmente equipada con despensa y un baño completo. El jardín privado incluye una pequeña caseta y un pozo en funcionamiento, y el garaje cuenta con barra y barbacoa. La vivienda dispone de calefacción individual por radiadores con suministro de combustible, además de internet por fibra óptica. El pueblo tiene bar, tienda, farmacia y piscinas. Precio 99.000 €, unos 961 €/m².
+
+https://realhunt.co/es/deal/es-matanza-detached-single-storey-garden-garage-99k
 
 ### Apartamento de 1 dormitorio con piscina en Catral
 
@@ -1080,14 +808,6 @@ https://realhunt.co/es/deal/es-torrevieja-99k-86111
 
 https://realhunt.co/es/deal/es-san-pedro-del-pinatar-99k-91782
 
-### Dúplex de cuatro dormitorios con chimenea y patio privado en la Sierra Oeste
-
-155.000 € · Cadalso de los Vidrios, Madrid · 116 m² · 4 dormitorios · nota RealHunt 83 · añadida el 2026-10-07
-
-Dúplex para entrar a vivir en tres niveles en Cadalso de los Vidrios: salón comedor luminoso con chimenea y salida a un patio privado, cocina independiente y aseo, dos dormitorios con armarios empotrados y baño, y una buhardilla con dos dormitorios más y un segundo baño completo. 116 m², 4 dormitorios.
-
-https://realhunt.co/es/deal/es-cadalso-de-los-vidrios-155k-995484
-
 ### Casa urbana de tres dormitorios con dos terrazas en La Marina, Costa Blanca
 
 160.000 € · La Marina, Elche, Alicante · 116 m² · 3 dormitorios · nota RealHunt 83 · añadida el 2026-11-18
@@ -1112,13 +832,13 @@ Casa de pueblo de 1920 en el corazón de Corpa, junto al Ayuntamiento y el palac
 
 https://realhunt.co/es/deal/es-corpa-173k-599473
 
-### Amplio apartamento de cuatro dormitorios con piscina comunitaria en Palmete, Sevilla
+### Adosado reformado con solárium en la azotea y vistas al mar en Torrevieja, Costa Blanca, Alicante
 
-197.000 € · Palmete, Sevilla · 105 m² · 4 dormitorios · nota RealHunt 83 · añadida el 2026-11-08
+189.000 € · Torrevieja, Costa Blanca, Alicante · 120 m² · 3 dormitorios · nota RealHunt 83 · añadida el 2026-11-27
 
-Este apartamento en sexta planta ofrece mucha luz natural y espacios amplios con una distribución equilibrada en 105 m². Incluye cuatro dormitorios, dos baños, aire acondicionado, garaje y trastero en un edificio residencial bien mantenido con piscina comunitaria. El mobiliario contemporáneo y suelo de terrazo crean una estética limpia y moderna.
+Adosado totalmente reformado y orientado al sur, con 120 m2 de superficie habitable repartidos en dos plantas y una azotea. Tiene tres dormitorios, dos baños, una terraza delantera, una terraza privada junto al dormitorio principal y un solárium privado en la azotea. Se vende totalmente amueblada y equipada, con vistas a la laguna salada de La Mata, al parque natural y al mar Mediterráneo. Paradas de autobús urbano, tiendas y restaurantes están a pocos minutos. Precio 189.000 €, unos 1.575 €/m².
 
-https://realhunt.co/es/deal/live-pisos-m1zujj
+https://realhunt.co/es/deal/es-torrevieja-renovated-townhouse-roof-solarium-views-189k
 
 ### Apartamento amueblado en un complejo ajardinado con gran piscina, tenis y vistas al mar
 
@@ -1144,14 +864,6 @@ Dúplex de 76 m² en la urbanización Origomare, en Majanicho, un rincón tranqu
 
 https://realhunt.co/es/deal/es-majanicho-245k-645378
 
-### Casa de 2 dormitorios con chimenea en Cumbres de San Bartolomé
-
-43.000 € · Cumbres de San Bartolomé, Huelva, Spain · 70 m² · 2 dormitorios · nota RealHunt 82 · añadida el 2026-10-01
-
-43.000 € por 70 m² y 2 dormitorios en Cumbres de San Bartolomé (Huelva), unos 614 €/m². Con chimenea. Para entrar a vivir: anunciado en muy buen estado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
-
-https://realhunt.co/es/deal/es-cumbres-de-san-bartolome-43k-76551
-
 ### Casa de campo en la montaña con mucho espacio exterior
 
 60.000 € · La Garapacha, Murcia, Spain · nota RealHunt 82 · añadida el 2026-09-23
@@ -1167,22 +879,6 @@ https://realhunt.co/es/deal/Dc26I9MkYDj
 85.000 € por 46 m² y 1 dormitorio en Murcia (Murcia), unos 1.848 €/m². A unos 14 km de la costa (en línea recta). Para entrar a vivir: anunciado en muy buen estado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
 
 https://realhunt.co/es/deal/es-murcia-85k-23435
-
-### Piso de 3 dormitorios en Torrelavega
-
-95.000 € · Torrelavega, Cantabria, Spain · 64 m² · 3 dormitorios · nota RealHunt 82 · añadida el 2026-10-01
-
-95.000 € por 64 m² y 3 dormitorios en Torrelavega (Cantabria), unos 1.484 €/m². A unos 8 km de la costa (en línea recta). Para entrar a vivir: anunciado como reformado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
-
-https://realhunt.co/es/deal/es-torrelavega-95k-04565
-
-### Ático de 2 dormitorios con chimenea en Idiazabal
-
-95.000 € · Idiazabal, Gipuzkoa, Spain · 70 m² · 2 dormitorios · nota RealHunt 82 · añadida el 2026-10-01
-
-95.000 € por 70 m² y 2 dormitorios en Idiazabal (Gipuzkoa), unos 1.357 €/m². A unos 30 km de la costa (en línea recta). Con chimenea. Para entrar a vivir: anunciado en buen estado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
-
-https://realhunt.co/es/deal/es-idiazabal-95k-27409
 
 ### Piso bajo de 2 dormitorios con jardín y vistas a la montaña en Anna
 
@@ -1208,6 +904,14 @@ https://realhunt.co/es/deal/es-roses-97k-57061
 
 https://realhunt.co/es/deal/es-garrucha-98k-95417
 
+### Casa reformada con vigas de madera y terraza en Hondón de los Frailes, Costa Blanca, Alicante
+
+129.950 € · Hondón de los Frailes, Costa Blanca, Alicante · 100 m² · 3 dormitorios · nota RealHunt 82 · añadida el 2026-11-27
+
+Casa de pueblo cuidadosamente reformada, con techos altos y vigas de madera que se conservan en toda la vivienda. La planta baja tiene un salón luminoso, una cocina equipada, un comedor con chimenea, un dormitorio, un baño y un patio privado. En la planta superior, un pasillo con vigas de madera conduce a otros dos dormitorios y un baño. La estructura y el exterior están en buen estado, y bares, restaurantes, supermercados, farmacia y centro médico están a poca distancia a pie. Precio 129.950 €, unos 1.300 €/m².
+
+https://realhunt.co/es/deal/es-hondon-de-los-frailes-renovated-village-house-wooden-beams-129k
+
 ### Estudio reformado y amueblado en Golf del Sur con piscina y jardines
 
 158.000 € · Golf del Sur, Tenerife · 55 m² · nota RealHunt 82 · añadida el 2026-10-11
@@ -1223,14 +927,6 @@ https://realhunt.co/es/deal/es-golf-del-sur-158k-368775
 Piso de 134 m² en primera planta, luminoso y totalmente exterior, a pocos metros de la Plaza Mayor de Chinchón, uno de los pueblos más bonitos cerca de Madrid: salón con grandes ventanales, cocina independiente con despensa, dormitorio principal muy amplio con zona de vestidor, despacho independiente y baño completo. Ventilación cruzada. Se vende amueblado.
 
 https://realhunt.co/es/deal/es-chinchon-165k-004043
-
-### Casa de montaña de troncos y piedra entre pinos, se vende amueblada
-
-174.000 € · Piera, Barcelona · 110 m² · 2 dormitorios · nota RealHunt 82 · añadida el 2026-10-07
-
-Casa de montaña con encanto en una urbanización a 5 minutos de Piera, con transporte público cerca: salón de 23 m² con altillo, cocina semiabierta, baño y dos dormitorios, garaje de 30 m², porche y jardín entre pinos. Se vende amueblada. A unos 50 minutos de Barcelona.
-
-https://realhunt.co/es/deal/es-piera-174k-821120
 
 ### Casa en el bosque con terraza de 45 m², jacuzzi y chimenea
 
@@ -1256,22 +952,6 @@ Piso de 85 m² en Cumbre del Sol, Benitachell, entre Jávea y Moraira, con vista
 
 https://realhunt.co/es/deal/es-cumbre-del-sol-190k-503985
 
-### Piso reformado de 2 dormitorios con galería acristalada y azotea privada
-
-199.000 € · El Toscal, Los Realejos, Tenerife · 79 m² · 2 dormitorios · nota RealHunt 82 · añadida el 2026-10-11
-
-Piso moderno, reformado entero y listo para entrar a vivir en El Toscal, a 5 minutos del Puerto de la Cruz: dos dormitorios, salón comedor acristalado lleno de luz con vistas sobre los tejados al mar y a las lomas verdes, cocina y baño nuevos. Arriba, una azotea con un cuarto propio con lavadora. Edificio pequeño y tranquilo, con comercios, colegios y guaguas a pocos minutos.
-
-https://realhunt.co/es/deal/es-puerto-de-la-cruz-199k-329542
-
-### Ático con vistas al mar a 2 minutos andando de la playa en Dénia
-
-219.000 € · Les Bovetes, Dénia · 85 m² · 2 dormitorios · nota RealHunt 82 · añadida el 2026-10-11
-
-Precioso ático con vistas al mar en una de las mejores zonas de Dénia, a 2 minutos andando de la playa de Les Bovetes, con supermercados, restaurantes y farmacia alrededor. Dos dormitorios, salón luminoso, terrazas con vistas sobre los tejados al Mediterráneo, piscina comunitaria y aparcamiento. Se vende amueblado. Cuarta planta sin ascensor de momento (hay proyecto pendiente de aprobación).
-
-https://realhunt.co/es/deal/es-denia-219k-283381
-
 ### Bungalow reformado en primera línea de playa con terraza en esquina y chimenea
 
 249.000 € · L'Almadrava, Els Poblets (Dénia) · 80 m² · 2 dormitorios · nota RealHunt 82 · añadida el 2026-10-11
@@ -1280,22 +960,6 @@ Bungalow en esquina recién reformado en primera línea de la playa de L'Almadra
 
 https://realhunt.co/es/deal/es-denia-249k-235125
 
-### Piso de 2 dormitorios y 2 baños con vistas al mar y al Montgó en el golf de La Sella
-
-255.000 € · La Sella, Pedreguer (Dénia) · 75 m² · 2 dormitorios · nota RealHunt 82 · añadida el 2026-10-11
-
-Piso luminoso en La Sella, la tranquila urbanización de golf junto a Dénia, en un residencial tipo aparthotel con piscina comunitaria, jardines muy cuidados y conserjería todo el año. Dos dormitorios y dos baños completos (uno en suite), gran terraza y vistas al mar, al parque natural del Montgó y al campo de golf. Plaza de garaje cubierta incluida. Se puede visitar un piso piloto.
-
-https://realhunt.co/es/deal/es-la-sella-255k-025158
-
-### Amplio apartamento de cinco dormitorios en el corazón de Vejer de la Frontera
-
-290.000 € · Vejer de la Frontera · 191 m² · 5 dormitorios · nota RealHunt 82 · añadida el 2026-11-09
-
-Este apartamento de 178 m² ofrece cinco dormitorios y dos baños en Vejer de la Frontera, uno de los pueblos costeros más demandados de Andalucía. La vivienda presenta interiores luminosos y bien conservados con puertas de arco, muebles de madera y una terraza con vistas al campo. La propiedad está en buen estado y tiene un precio un 24% por debajo de la mediana del área.
-
-https://realhunt.co/es/deal/live-pisos-a4dw9a
-
 ### Piso de 2 dormitorios con patio en Manresa
 
 61.990 € · Manresa, Barcelona, Spain · 55 m² · 2 dormitorios · nota RealHunt 81 · añadida el 2026-10-01
@@ -1303,14 +967,6 @@ https://realhunt.co/es/deal/live-pisos-a4dw9a
 61.990 € por 55 m² y 2 dormitorios en Manresa (Barcelona), unos 1.127 €/m². Con patio. Para entrar a vivir: anunciado como reformado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
 
 https://realhunt.co/es/deal/es-manresa-61k-18808
-
-### Piso de 2 dormitorios con vistas a la montaña en Aller
-
-64.900 € · Aller, Asturias, Spain · 64 m² · 2 dormitorios · nota RealHunt 81 · añadida el 2026-10-01
-
-64.900 € por 64 m² y 2 dormitorios en Aller (Asturias), unos 1.014 €/m². Con vistas a la montaña. Para entrar a vivir: anunciado como reformado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
-
-https://realhunt.co/es/deal/es-aller-64k-85901
 
 ### Piso de 2 dormitorios con terraza en Bejís
 
@@ -1336,13 +992,13 @@ https://realhunt.co/es/deal/es-calanas-69k-50943
 
 https://realhunt.co/es/deal/es-reinosa-85k-84223
 
-### Casa cueva encalada con patio soleado cerca del embalse del Negratín
+### Casa reformada de 2 dormitorios con azotea y vistas en Galera, Granada
 
-89.000 € · Freila, Granada · 50 m² · 3 dormitorios · nota RealHunt 81 · añadida el 2026-10-02
+95.000 € · Galera, Granada · 82 m² · 2 dormitorios · nota RealHunt 81 · añadida el 2026-11-27
 
-Un patio comedor resguardado, un patio de terracota y estancias cueva blancas esculpidas en la roca dan carácter a esta casa de Freila. El anuncio la describe lista para entrar a vivir, con tres dormitorios, un baño y estufa de leña. Superficie anunciada de 50 m² en una parcela de 114 m². El embalse del Negratín está cerca, pero no es una casa a orillas del agua. Las estancias cueva tienen poca luz directa. Precio comprobado con el anuncio en vivo; la disponibilidad y la situación legal hay que confirmarlas con el anunciante.
+La casa está totalmente reformada y modernizada, con cocina nueva y dos baños repartidos en dos plantas. Ofrece 82 m2 habitables con 2 dormitorios y un estudio independiente en la planta baja, con cocina y baño propios. La zona exterior incluye una terraza vallada y una azotea de unos 6 x 6 metros con vistas al pueblo y a las montañas. Un trastero o garaje para un coche está junto a la casa. Huéscar está a 15 minutos y Baza a unos 30 minutos. Precio 95.000 €, unos 1.159 €/m².
 
-https://realhunt.co/es/deal/freila-cave-courtyard-89000
+https://realhunt.co/es/deal/es-galera-renovated-house-rooftop-terrace-views-95k
 
 ### Casa de 2 dormitorios en Benamargosa
 
@@ -1368,6 +1024,30 @@ https://realhunt.co/es/deal/es-torrevieja-torresol-studio-pool-99k
 
 https://realhunt.co/es/deal/es-torrevieja-99k-92433
 
+### Casa amueblada lista para entrar a vivir de 1 dormitorio con jardín y piscina en El Ronquillo, Sevilla
+
+125.000 € · El Ronquillo, Seville · 66 m² · 1 dormitorios · nota RealHunt 81 · añadida el 2026-11-27
+
+Construida en 2010, la casa de 66 m² se reparte en dos plantas y está en excelente estado, lista para entrar a vivir o para adaptarla. Tiene un dormitorio y un baño, aire acondicionado y chimenea. La vivienda se vende totalmente amueblada, con sofá, camas, nevera y barbacoa, e incluye un jardín privado y un balcón. Los vecinos comparten una piscina para adultos y niños y una pista de pádel dentro de una urbanización cerrada. Precio 125.000 €, unos 1.894 €/m².
+
+https://realhunt.co/es/deal/es-el-ronquillo-turnkey-furnished-house-garden-pool-125k
+
+### Casa adosada de 3 dormitorios con terraza y estufa de pellets en Casas del Señor, Alicante
+
+149.000 € · Casas del Señor, Alicante · 100 m² · 3 dormitorios · nota RealHunt 81 · añadida el 2026-11-27
+
+La casa adosada tiene 3 dormitorios, 2 baños y 100 m2 de superficie habitable, con ventanas de doble acristalamiento en el salón. Cada habitación dispone de aire acondicionado, y una estufa de pellets proporciona calor en los meses más fríos. La terraza cuenta con un mini bar, y la propiedad incluye 807 pies cuadrados de terreno. Los mejores restaurantes de la zona están a 5 minutos andando. Monóvar y Pinoso, con todos los servicios, están a unos 7 minutos, y el aeropuerto de Alicante y las playas, a unos 40 minutos. Precio 149.000 €, unos 1.490 €/m².
+
+https://realhunt.co/es/deal/es-casas-del-senor-modern-townhouse-terrace-pellet-heating-149k
+
+### Casa adosada reformada con chimenea y vistas a la montaña en Cortes de la Frontera, Málaga
+
+170.000 € · Cortes de la Frontera, Málaga · 114 m² · 3 dormitorios · nota RealHunt 81 · añadida el 2026-11-27
+
+La casa fue reformada con cuidado en 2003 y conserva sus muros de piedra originales y las vigas de madera. Tiene 114 m2 habitables repartidos en tres plantas, con tres dormitorios, dos baños, un salón-comedor con chimenea y una cocina con acceso al patio. El dormitorio de la segunda planta se abre a una terraza en la azotea con vistas panorámicas a la montaña. Hay tiendas y servicios a poca distancia a pie, y la histórica ciudad de Ronda está a 30 km. Precio 170.000 €, unos 1.491 €/m².
+
+https://realhunt.co/es/deal/es-cortes-de-la-frontera-renovated-townhouse-fireplace-roof-terrace-170k
+
 ### Apartamento con encanto reformado junto al Parque Taoro, con entrada propia desde la calle
 
 173.000 € · Puerto de la Cruz, Tenerife · 66 m² · 1 dormitorios · nota RealHunt 81 · añadida el 2026-10-11
@@ -1392,21 +1072,29 @@ Piso luminoso en Cumbre del Sol, Benitachell, con vistas abiertas y despejadas s
 
 https://realhunt.co/es/deal/es-cumbre-del-sol-190k-901839
 
-### Amplio apartamento de cinco dormitorios en el corazón de Vejer de la Frontera
+### Bungalow de 2 dormitorios con jardín privado y terraza en Orihuela, Costa Blanca, Alicante
 
-290.000 € · Vejer de la Frontera · 191 m² · 5 dormitorios · nota RealHunt 81 · añadida el 2026-11-09
+198.000 € · Orihuela, Costa Blanca, Alicante · 90 m² · 2 dormitorios · nota RealHunt 81 · añadida el 2026-11-27
 
-Este apartamento de 178 m² ofrece cinco dormitorios y dos baños en Vejer de la Frontera, uno de los pueblos costeros más demandados de Andalucía. La vivienda cuenta con interiores luminosos y bien conservados, paredes blancas, puertas arqueadas, muebles de madera y una terraza en la azotea con azulejos decorativos. Su ubicación en el centro del pueblo proporciona acceso a servicios locales y al encanto característico de este pueblo blanco andaluz.
+Bungalow en planta baja construido en 2008, en buen estado. Ofrece 90 m² construidos, 2 dormitorios, 2 baños y un salón con cocina abierta. Jardín privado de unos 100 m², terraza cubierta de 10 m² y parcela de 190 m², con aire acondicionado frío y calor. Se vende amueblado con cocina equipada, además de un trastero y una plaza de garaje. El complejo residencial cuenta con piscina comunitaria, zonas verdes y parque infantil. Precio 198.000 €, unos 2.200 €/m².
 
-https://realhunt.co/es/deal/live-pisos-xpjygk
+https://realhunt.co/es/deal/es-orihuela-bungalow-private-garden-terrace-198k
 
-### Piso de 1 dormitorio con terraza en Moguer
+### Bungaló reformado y amueblado de 2 dormitorios con terraza en Orihuela, Costa Blanca, Alicante
 
-98.000 € · Moguer, Huelva, Spain · 48 m² · 1 dormitorios · nota RealHunt 80 · añadida el 2026-10-01
+199.000 € · Orihuela, Costa Blanca, Alicante · 85 m² · 2 dormitorios · nota RealHunt 81 · añadida el 2026-11-27
 
-98.000 € por 48 m² y 1 dormitorio en Moguer (Huelva), unos 2.042 €/m². A unos 2 km de la costa (en línea recta). Con terraza. Para entrar a vivir: anunciado en buen estado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
+Bungaló de planta baja reformado y amueblado, listo para entrar a vivir. Tiene 2 dormitorios con armarios empotrados, un baño moderno con ducha de obra y mampara, y una cocina equipada con lavadora y lavavajillas. En el exterior hay porche de entrada con toldos, una amplia terraza con vistas a un jardín comunitario cuidado, y un trastero exterior. Supermercados, centros comerciales, campos de golf y La Zenia Boulevard están a distancia caminable, y las playas de Orihuela Costa están a poca distancia. Precio 199.000 €, unos 2.341 €/m².
 
-https://realhunt.co/es/deal/es-moguer-98k-75562
+https://realhunt.co/es/deal/es-orihuela-renovated-furnished-bungalow-terrace-199k
+
+### Bungalow renovado de 3 dormitorios con terrazas y solárium en Torrevieja, Costa Blanca, Alicante
+
+140.000 € · Torrevieja, Costa Blanca, Alicante · 60 m² · 3 dormitorios · nota RealHunt 80 · añadida el 2026-11-27
+
+Bungalow de una planta totalmente reformado y amueblado, con 3 dormitorios y 1 baño con ducha a ras de suelo y aseo independiente. El salón luminoso tiene aire acondicionado y la cocina abierta está totalmente equipada. El exterior incluye 2 terrazas y un solárium privado amplio con muebles de exterior, con espacio para un jacuzzi. Los paneles solares con inversor ya están instalados, y se incluyen 2 bicicletas y equipamiento de playa. La playa y el centro de Torrevieja están a 2 km, en la zona de La Torreta II. Precio 140.000 €, unos 2.333 €/m².
+
+https://realhunt.co/es/deal/es-torrevieja-renovated-furnished-bungalow-solarium-140k
 
 ### Dúplex moderno de 2009 en plena sierra oeste, para entrar a vivir
 
@@ -1424,13 +1112,21 @@ Un dúplex de esquina construido en 2009 en Alcalá de la Selva, una aldea de mo
 
 https://realhunt.co/es/deal/es-teruel-alcala-de-la-selva-duplex-mountain-terrace-177k
 
-### Casa de cuatro dormitorios reformada con terraza en Palmete, Sevilla
+### Casa adosada con terrazas y jardín en Elche, Costa Blanca, Alicante
 
-188.000 € · Palmete, Sevilla · 130 m² · 4 dormitorios · nota RealHunt 80 · añadida el 2026-11-08
+179.000 € · Elche, Costa Blanca, Alicante · 62 m² · 2 dormitorios · nota RealHunt 80 · añadida el 2026-11-27
 
-Chalé reformado recientemente listo para entrar a vivir. Amplio de 130 m² distribuido en dos plantas con cuatro dormitorios y dos baños. Zonas luminosas con grandes ventanales e interior moderno bien mantenido.
+Esta casa adosada está en muy buen estado y no tiene vecinos que la miren. Ofrece un amplio salón, cocina abierta, dos dormitorios con armarios empotrados y un baño. Hay aire acondicionado en el salón y en el dormitorio principal. Varias terrazas dan sol o sombra según la hora, y árboles bien cuidados la rodean, como palmeras y olivos. Está en una zona residencial a 3 km de las playas de La Marina y tiene cochera cubierta para un vehículo. Precio 179.000 €, unos 2.887 €/m².
 
-https://realhunt.co/es/deal/live-pisos-4ds0f1
+https://realhunt.co/es/deal/es-elche-townhouse-terraces-garden-calm-179k
+
+### Adosado con piscina climatizada y salvaescaleras en Playa Flamenca, Costa Blanca, Alicante
+
+187.700 € · Playa Flamenca, Costa Blanca, Alicante · 85 m² · 3 dormitorios · nota RealHunt 80 · añadida el 2026-11-27
+
+Listo para entrar a vivir, este adosado ofrece 85 m2 construidos repartidos en tres dormitorios dobles, dos baños completos y un aseo. Dispone de salvaescaleras para acceder a la planta superior y de una zona de lavado exterior independiente. El complejo privado y vallado cuenta con una piscina comunitaria climatizada y zonas recreativas para disfrutar durante todo el año. La vivienda está en Playa Flamenca, a unos 1.600 metros de las playas del Mediterráneo y a pocos minutos del centro comercial Zenia Boulevard. Precio 187.700 €, unos 2.208 €/m².
+
+https://realhunt.co/es/deal/es-playa-flamenca-townhouse-heated-pool-stairlift-laundry-187k
 
 ### Piso de dos dormitorios en la última planta con terraza privada en la azotea en Cabo Blanco, Tenerife
 
@@ -1456,29 +1152,13 @@ Apartamento luminoso en planta alta en una de las zonas más buscadas de Corrale
 
 https://realhunt.co/es/deal/es-corralejo-200k-385108
 
-### Cortijo pequeño con 7.000 m² de almendros en la Alpujarra
+### Casa de 3 dormitorios con bajo construido y placas solares en Benejúzar, Costa Blanca, Alicante
 
-75.000 € · Mecina Bombarón, Granada · 60 m² · 2 dormitorios · nota RealHunt 79 · añadida el 2026-10-05
+205.000 € · Benejúzar, Costa Blanca, Alicante · 88 m² · 3 dormitorios · nota RealHunt 80 · añadida el 2026-11-27
 
-Cortijo independiente de dos dormitorios y unos 60 m² a las afueras de Mecina Bombarón, pueblo blanco de la Alpujarra alta, con unos 7.000 m² de terreno con almendros y vistas abiertas al valle. Se llega por carretera de hormigón y un tramo corto de pista de tierra.
+La casa tiene tres dormitorios, un baño reformado y un salón abierto con estufa de leña. El amplio bajo construido ofrece habitaciones adicionales, un despacho, almacenaje y un aseo extra. Incluye seis placas solares con almacenamiento en batería, ventanas de doble acristalamiento, aparcamiento privado y un cobertizo de jardín, además de acceso a una piscina comunitaria cercana. Está a poca distancia a pie de Vistabella Golf y a unos 20 minutos en coche de las playas de la Costa Blanca. Precio 205.000 €, unos 2.330 €/m².
 
-https://realhunt.co/es/deal/es-mecina-bombaron-75k-riayjs
-
-### Piso de 3 dormitorios en Santa Fe
-
-99.900 € · Santa Fe, Granada, Spain · 84 m² · 3 dormitorios · nota RealHunt 79 · añadida el 2026-10-01
-
-99.900 € por 84 m² y 3 dormitorios en Santa Fe (Granada), unos 1.189 €/m². Para entrar a vivir: anunciado en muy buen estado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
-
-https://realhunt.co/es/deal/es-santa-fe-99k-29934
-
-### Dúplex luminoso con terraza de 13 m² y vistas despejadas en Terrassa
-
-169.000 € · Terrassa, Barcelona · 80 m² · 2 dormitorios · nota RealHunt 79 · añadida el 2026-10-07
-
-Dúplex muy luminoso en Terrassa, a 22 km de Barcelona, con 2 dormitorios, baño completo, cocina abierta con barra de piedra, aire acondicionado y arriba una terraza de 13 m² con vistas despejadas. 80 m². Terrassa tiene Rodalies y FGC hasta el centro de Barcelona.
-
-https://realhunt.co/es/deal/es-terrassa-169k-923454
+https://realhunt.co/es/deal/es-benejuzar-underbuild-solar-panels-wood-burner-205k
 
 ### Dúplex de dos dormitorios con jardín privado y piscina compartida en Costa de Antigua
 
@@ -1487,6 +1167,14 @@ https://realhunt.co/es/deal/es-terrassa-169k-923454
 Una vivienda de dos plantas de aproximadamente 61 m2 en el complejo Los Soles en la costa este de Fuerteventura, a pocos minutos de Caleta de Fuste y sus playas. La planta baja es un salón luminoso con una cocina moderna abierta y un aseo de invitados, la planta superior tiene dos dormitorios y un baño completo. La terraza-jardín trasera privada se abre hacia la piscina comunitaria, que según el anuncio ha sido recientemente renovada y tiene duchas y aseos. Se describe como en excelente estado y lista para entrar a vivir. Las cuotas de comunidad no se indican en el anuncio, así que pregunte antes de hacer una oferta.
 
 https://realhunt.co/es/deal/es-fuerteventura-costa-antigua-duplex-pool-180k
+
+### Adosado de 3 dormitorios listo para entrar a vivir con terraza en Torrevieja, Costa Blanca, Alicante
+
+194.900 € · Torrevieja, Costa Blanca, Alicante · 103 m² · 3 dormitorios · nota RealHunt 79 · añadida el 2026-11-27
+
+Este adosado listo para entrar a vivir ofrece 103 m2 habitables repartidos en tres dormitorios y dos baños completos. Una amplia terraza permite disfrutar del clima mediterráneo al aire libre. Se encuentra en la tranquila zona de Los Balcones, en Torrevieja, con paradas de autobús cercanas. El supermercado Mercadona y el Hospital de Torrevieja quedan cerca, y el club de tenis próximo ofrece piscina, gimnasio y pistas duras por una cuota mensual de socio de 60 euros. Precio 194.900 €, unos 1.892 €/m².
+
+https://realhunt.co/es/deal/es-torrevieja-move-in-ready-townhouse-terrace-194k
 
 ### Apartamento reformado con mucho gusto a pocos pasos de Montaña Amarilla
 
@@ -1504,13 +1192,13 @@ https://realhunt.co/es/deal/es-costa-del-silencio-199k-024468
 
 https://realhunt.co/es/deal/es-biar-85k-66151
 
-### Casa adosada completamente renovada sin gastos de comunidad en Roquetes, cerca de Tortosa
+### Adosado reformado de 3 dormitorios con jardín y trastero en Torrevieja, Costa Blanca, Alicante
 
-120.000 € · Raval de Crist, Roquetes, Tarragona · 82 m² · 2 dormitorios · nota RealHunt 78 · añadida el 2026-11-20
+194.950 € · Torrevieja, Costa Blanca, Alicante · 91 m² · 3 dormitorios · nota RealHunt 78 · añadida el 2026-11-27
 
-Una casa adosada de 1920 en la tranquila zona de Raval de Crist de Roquetes, junto a Tortosa en el sur de Cataluña, completamente renovada y lista para entrar a vivir. 82 m² de espacio utilizable en tres plantas: salón, comedor y cocina equipada que se abre a un pequeño patio amurallado, luego un dormitorio doble y uno individual, un balcón orientado al sur y un cuarto de baño con bañera de hidromasaje, más una habitación semisubterránea para oficina o gimnasio con su propio aseo. Se han mantenido las vigas y muros de piedra. Aire acondicionado reversible e internet de fibra. El anuncio afirma cero gastos de comunidad.
+Este adosado de 3 dormitorios y 2 baños en Los Balcones, Torrevieja, ofrece 91 m2 de superficie habitable. Los tres dormitorios y el baño familiar están completamente reformados. Tiene jardín delantero y un jardín trasero soleado para comer al aire libre. Un amplio trastero ofrece espacio para bicicletas, maletas y muebles de exterior. La parcela tiene 1.432 sq ft de terreno. Precio 194.950 €, unos 2.142 €/m².
 
-https://realhunt.co/es/deal/es-catalonia-roquetes-renovated-townhouse-no-fees-120k
+https://realhunt.co/es/deal/es-torrevieja-renovated-townhouse-garden-storeroom-194k
 
 ### Apartamento de un dormitorio con terraza soleada, piscina compartida y vistas al mar en Almuñécar
 
@@ -1528,6 +1216,14 @@ Piso exterior y luminoso de dos dormitorios en una calle céntrica de Aranjuez, 
 
 https://realhunt.co/es/deal/es-aranjuez-160k-937996
 
+### Casa rural reformada de 2 dormitorios con chimenea, jardín y terreno en Prado Negro, Granada
+
+165.000 € · Prado Negro, Granada · 60 m² · 2 dormitorios · nota RealHunt 77 · añadida el 2026-11-27
+
+La casa rural reformada conserva su carácter rústico y tiene dos dormitorios, un baño, un salón con chimenea, un comedor y una cocina en 60 m². Está orientada al sur, por lo que recibe mucha luz natural, y tiene un jardín privado y se sitúa sobre más de 13.000 m² de terreno privado. Cuenta con instalación fotovoltaica, alarmas, videovigilancia y puerta reforzada. El pueblo está a unos 30 minutos de Granada, y la vivienda se vende amueblada. Precio 165.000 €, unos 2.750 €/m².
+
+https://realhunt.co/es/deal/es-prado-negro-renovated-rural-house-private-land-165k
+
 ### Chalet independiente nuevo de 2025 en parcela llana de 1.500 m² cerca del pantano de San Juan
 
 175.000 € · San Martín de Valdeiglesias, Madrid · 70 m² · 1 dormitorios · nota RealHunt 77 · añadida el 2026-10-07
@@ -1544,6 +1240,14 @@ Un piso de un dormitorio en la décima y última planta de un edificio en primer
 
 https://realhunt.co/es/deal/es-tenerife-mesa-del-mar-penthouse-ocean-teide-view-186k
 
+### Adosado de 3 dormitorios con garaje y piscina en Orihuela, Costa Blanca, Alicante
+
+215.000 € · Orihuela, Costa Blanca, Alicante · 80 m² · 3 dormitorios · nota RealHunt 77 · añadida el 2026-11-27
+
+La casa adosada está en muy buen estado y lista para entrar a vivir sin necesidad de reformas, ya que sus propietarios la han cuidado con esmero. Tiene tres plantas, con salón-comedor, cocina abierta y aseo de cortesía en la planta baja. Dos dormitorios con armarios empotrados y balcón propio se encuentran en la primera planta, mientras que el tercer dormitorio, con baño en suite, da acceso a una terraza privada en la planta superior. Un garaje privado conecta directamente con la vivienda, y el anuncio indica piscina y jardín. Precio 215.000 €, unos 2.688 €/m².
+
+https://realhunt.co/es/deal/es-orihuela-townhouse-private-garage-terraces-pool-215k
+
 ### Casa de campo de 1 dormitorio con chimenea en O Saviñao
 
 80.000 € · O Saviñao, Lugo, Spain · 50 m² · 1 dormitorios · nota RealHunt 76 · añadida el 2026-10-01
@@ -1551,6 +1255,14 @@ https://realhunt.co/es/deal/es-tenerife-mesa-del-mar-penthouse-ocean-teide-view-
 80.000 € por 50 m² y 1 dormitorio en O Saviñao (Lugo), unos 1.600 €/m². Con chimenea. Para entrar a vivir: anunciado como casi nuevo y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
 
 https://realhunt.co/es/deal/es-o-savinao-80k-20772
+
+### Casa adosada con solárium en la azotea, jacuzzi y patio en Tolox, Málaga
+
+149.000 € · Tolox, Málaga · 60 m² · 2 dormitorios · nota RealHunt 76 · añadida el 2026-11-27
+
+La casa adosada tiene 60 m2 habitables, dos dormitorios dobles y un baño familiar, todo con un alto nivel de acabado. El salón luminoso con cocina abierta tiene acceso directo a un patio privado de 40 m2, con sombra de una vid madura y una zona de barbacoa. Una escalera sube desde el patio a un solárium de 60 m2 en la azotea, con jacuzzi incluido y vistas a la montaña por delante y por detrás. La vivienda se vende sin amueblar. Precio 149.000 €, unos 2.483 €/m².
+
+https://realhunt.co/es/deal/es-tolox-rooftop-solarium-jacuzzi-courtyard-149k
 
 ### Casa de pueblo renovada con piscina propia en Benijófar, Costa Blanca
 
@@ -1560,6 +1272,14 @@ Una casa de una planta en el centro de Benijófar, una pequeña ciudad en la Veg
 
 https://realhunt.co/es/deal/es-benijofar-renovated-village-house-private-pool-195k
 
+### Casa adosada con piscinas comunitarias y terraza privada en Cabo Roig, Costa Blanca, Alicante
+
+209.995 € · Cabo Roig, Costa Blanca, Alicante · 75 m² · 2 dormitorios · nota RealHunt 76 · añadida el 2026-11-27
+
+Esta casa adosada orientada al oeste tiene dos dormitorios dobles, un baño familiar con suelo radiante y un aseo de invitados en la planta baja. El salón cuenta con un comedor independiente y la amplia cocina incluye una zona de lavadero. Una terraza acristalada en la fachada principal y una terraza privada exterior permiten comer o relajarse al aire libre. Se accede a cuatro piscinas comunitarias y a jardines bien cuidados, dentro de una urbanización privada en las afueras de Cabo Roig. La superficie habitable es de 75 m2 sobre un terreno de 1.076 sq ft. Precio 209.995 €, unos 2.800 €/m².
+
+https://realhunt.co/es/deal/es-cabo-roig-townhouse-communal-pools-private-terrace-209k
+
 ### Amplio duplex con ladrillo visto en el centro de Madrid
 
 348.000 € · Embajadores-Lavapiés, Madrid · 71 m² · 2 dormitorios · nota RealHunt 72 · añadida el 2026-11-08
@@ -1567,11 +1287,3 @@ https://realhunt.co/es/deal/es-benijofar-renovated-village-house-private-pool-19
 Dúplex de dos dormitorios en el vibrante barrio de Embajadores-Lavapiés, a sólo 0,9 km del centro. Diseño de dos plantas con techos altos, vigas de acero industrial y paredes de ladrillo visto auténtico. Carácter original bien conservado con acabados modernos; la planta baja ofrece acceso directo a la calle.
 
 https://realhunt.co/es/deal/live-pisos-402uzp
-
-### Piso de dos dormitorios reformado con acabados modernos en Embajadores-Lavapiés, Madrid
-
-255.000 € · Embajadores-Lavapiés, Madrid · 50 m² · 2 dormitorios · nota RealHunt 71 · añadida el 2026-11-08
-
-Recientemente reformado con espacios luminosos y acabados modernos de calidad. Dispone de sala-comedor diáfano y cocina independiente. Situado en la céntrica zona de Embajadores-Lavapiés a solo 1,1 km del centro de Madrid.
-
-https://realhunt.co/es/deal/live-pisos-laeuee

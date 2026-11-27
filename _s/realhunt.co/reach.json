@@ -1,7 +1,7 @@
 {
  "built": "2026-11-27",
- "indexable": 7148,
- "pages_given_a_date": 6867,
+ "indexable": 6260,
+ "pages_given_a_date": 5981,
  "video_pages": 0,
  "listing_markdown": 46,
  "answers": {
@@ -29,11 +29,11 @@
  "robots_lines_added": 1,
  "indexnow": {
   "compared": true,
-  "added": 0,
-  "changed": 0,
-  "removed": 0
+  "added": 298,
+  "changed": 2281,
+  "removed": 315
  },
- "changed_today": 1657,
+ "changed_today": 2579,
  "press_pdf": [
   "press/realhunt-in-figures.pdf",
   "press/realhunt-in-figures-2026-11.pdf"
@@ -92,8 +92,8 @@
   ]
  },
  "llms_full": {
-  "bytes": 1799946,
-  "gz": 344400,
+  "bytes": 1799911,
+  "gz": 342882,
   "over": false
  },
  "wrong_language_lines": {
@@ -101,28 +101,28 @@
   "es": 0,
   "sample": []
  },
- "releases": 50,
+ "releases": 51,
  "data_files": {
-  "data/homes.jsonl": 558635,
-  "data/homes.csv": 189873,
-  "data/countries.json": 31577,
-  "data/countries/index.json": 9665,
+  "data/homes.jsonl": 548217,
+  "data/homes.csv": 186327,
+  "data/countries.json": 29988,
+  "data/countries/index.json": 9285,
   "data/costs.json": 44381,
   "data/can-i-buy.json": 13222,
   "data/glossary.json": 37489,
-  "data/realhunt-homes.geojson": 210590,
-  "data/realhunt-best-homes.kml": 60517,
-  "data/changed-today.txt": 86938,
-  "research/homes.csv": 76182,
+  "data/realhunt-homes.geojson": 208540,
+  "data/realhunt-best-homes.kml": 57878,
+  "data/changed-today.txt": 139896,
+  "research/homes.csv": 75922,
   "research/removed-homes.json": 40527,
   "research/removed-by-month.json": 447,
-  "research/monthly-series.json": 863,
+  "research/monthly-series.json": 866,
   "research/property-portals.csv": 11579,
   "feeds/price-drops.json": 4124,
-  "feeds/removed.json": 44109,
-  "press/realhunt-in-figures.pdf": 3975,
-  "llms.txt": 22427,
-  "llms-full.txt": 1799946
+  "feeds/removed.json": 43596,
+  "press/realhunt-in-figures.pdf": 3978,
+  "llms.txt": 22434,
+  "llms-full.txt": 1799911
  },
  "files": [
   "openapi.json",

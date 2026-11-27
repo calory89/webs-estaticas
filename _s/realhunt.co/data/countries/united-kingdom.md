@@ -1,6 +1,6 @@
 # Cheap homes in the United Kingdom: key facts and every home on RealHunt
 
-On 27 November 2026, RealHunt lists 7 homes for sale in the United Kingdom, each one checked by a person. In the United Kingdom, the median asking price of those 7 homes is €126,500 (€1,807 per m², from the 6 homes with a known size); the cheapest costs €82,600 and the most expensive €198,400. Taxes and fees add about 3–9% to the price of a home in the United Kingdom (figures as of 2026). With 7 homes this is a small sample, so the median for the United Kingdom is a rough guide.
+On 27 November 2026, RealHunt lists 5 homes for sale in the United Kingdom, each one checked by a person. In the United Kingdom, the median asking price of those 5 homes is €161,000 (€1,807 per m², from the 5 homes with a known size); the cheapest costs €121,000 and the most expensive €198,400. Taxes and fees add about 3–9% to the price of a home in the United Kingdom (figures as of 2026). With 5 homes this is a small sample, so the median for the United Kingdom is a rough guide.
 
 Source: RealHunt, https://realhunt.co/homes/united-kingdom · Updated 27 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/united-kingdom.json · PDF: https://realhunt.co/data/countries/united-kingdom.pdf
@@ -9,11 +9,11 @@ Also as JSON: https://realhunt.co/data/countries/united-kingdom.json · PDF: htt
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 7 (small sample) |
-| Median asking price | €126,500 |
-| Median price per m² | €1,807 (6 homes with a known size) |
+| Homes on RealHunt | 5 (small sample) |
+| Median asking price | €161,000 |
+| Median price per m² | €1,807 (5 homes with a known size) |
 | Median size | 80 m² |
-| Cheapest and most expensive | €82,600 · €198,400 |
+| Cheapest and most expensive | €121,000 · €198,400 |
 | Median RealHunt score (70 to 98) | 83 |
 | Taxes and fees to buy | 3–9% of the price (as of 2026) |
 | Can foreigners buy? | Yes. There are no nationality restrictions on buying homes anywhere in the UK and no visa is needed, but buying does not give a right to live there. |
@@ -48,23 +48,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/united-kingdom
 
-## The 7 homes, best score first
-
-### Beautifully styled two-bed home with an open fireplace
-
-€82,600 · Shildon, County Durham · 72 m² · 2 bedrooms · RealHunt score 89 · added 2026-10-06
-
-About 72 m² of beautifully presented rooms in Shildon, County Durham: a feature open fireplace, a stylish four-piece bathroom and two double bedrooms, thoughtfully improved by the current owners and ready to move into. Listed at £70,000, about €82,600. Anyone can buy a home in the UK. Stamp duty depends on whether it will be your only home.
-
-https://realhunt.co/deal/uk-shildon-82k-780165
-
-### Bright bungalow with a garden near Blyth town and beach
-
-€88,500 · Blyth, Northumberland · 1 bedrooms · RealHunt score 88 · added 2026-10-06
-
-A charming one-bedroom semi-detached bungalow with a modern kitchen, a bright living room, a shower room, off-street parking and a lawned garden, close to Blyth town centre and its long sandy beach on the Northumberland coast. Listed at £75,000, about €88,500. Anyone can buy a home in the UK. Stamp duty depends on whether it will be your only home.
-
-https://realhunt.co/deal/uk-blyth-88k-869241
+## The 5 homes, best score first
 
 ### Furnished two-bedroom house with Moray Firth sea views in the harbour town of Macduff
 

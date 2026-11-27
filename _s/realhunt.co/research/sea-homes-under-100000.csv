@@ -1,6 +1,5 @@
 ﻿url,title,country,region,place,price_eur,size_sqm,score
 https://realhunt.co/deal/bg-byala-58k-fbw62u,Sea-view apartment with pool on Bulgaria's Black Sea coast,Bulgaria,Varna,"Byala, Varna",58900,53,92
-https://realhunt.co/deal/bg-pomorie-60k-1630398,Two-bedroom flat with a panoramic sea view on the first line in Pomorie,Bulgaria,Pomorie (Black Sea),"Sunset Resort, Pomorie (Black Sea)",59900,81,94
 https://realhunt.co/deal/bg-kavarna-66k-89698,Furnished two-bedroom flat with a sea view in a gated complex in Kavarna,Bulgaria,Kavarna (Black Sea),"Kavarna Paradise, Kavarna (Black Sea)",66000,90,94
 https://realhunt.co/deal/bg-kavarna-66k-89682,Ready-to-move-in two-bedroom flat with a sea-view terrace in Kavarna,Bulgaria,Kavarna (Black Sea),"Kavarna Paradise, Kavarna (Black Sea)",66000,87,92
 https://realhunt.co/deal/bg-kavarna-hills-69k-1606144,Two-bedroom flat with two sea-panorama terraces in Kavarna Hills,Bulgaria,Kavarna (Black Sea),"Kavarna Hills, Kavarna (Black Sea)",69000,100,93
@@ -37,11 +36,10 @@ https://realhunt.co/deal/it-messina-acqualadrone-seafront-30k-356356,"Furnished 
 https://realhunt.co/deal/acquappesa-sea-view-39000,"Sea-view terrace in Acquappesa, Calabria",Italy,Calabria,"Acquappesa, Cosenza, Calabria, Italy",39000,40,84
 https://realhunt.co/deal/Dcq2xGyDDey,2-bed village house 30 minutes from the beach,Italy,Sardinia,"Sardinia, Italy",39000,,83
 https://realhunt.co/deal/DcyzSIdjOz6,Sea-view studio five minutes from the beach,Italy,Sicily,"Sicily, Italy",45000,,84
-https://realhunt.co/deal/Dclv5CJDdhi,Sea-view home with a panoramic terrace,Italy,Sicily,"Sicily, Italy",49000,87,84
 https://realhunt.co/deal/it-calabria-torremezzo-three-bed-courtyard-85k,"Three-bedroom seaside house with a paved courtyard in Torremezzo di Falconara, Calabria",Italy,Calabria,"Torremezzo, Falconara Albanese, Calabria",85000,101,84
+https://realhunt.co/deal/it-carpasio-renovated-detached-house-large-garden-89k,"Renovated detached house with large land and garden in Carpasio, Imperia",Italy,Imperia,"Carpasio, Imperia",89000,82,85
 https://realhunt.co/deal/DbbD15oDKLz,Japanese home with a sakura garden,Japan,Oita,"Usuki, Oita, Japan",19320,,89
 https://realhunt.co/deal/jp-inami-seaside-villa-20k-503430,"Wood-lined holiday home in a seaside estate with a pool and tennis courts, Wakayama",Japan,Wakayama,"Inami, Wakayama",19910,70,91
-https://realhunt.co/deal/jp-inami-beach-bungalow-27k-272502,"Bungalow 3 minutes' walk from the beach in Wakayama, new facade in 2025",Japan,Wakayama,"Kirime, Inami, Wakayama",27300,59,91
 https://realhunt.co/deal/DdJ6Zs_DcnX,Single-storey Japanese house in a seaside town,Japan,Wakayama,"Kainan, Wakayama, Japan",34960,,87
 https://realhunt.co/deal/DdWPFmBkdhr,Single-storey house with a huge lawn on the Seto Inland Sea,Japan,Kagawa,"Mitoyo, Kagawa, Japan",43240,,86
 https://realhunt.co/deal/DcjKIfMDIaB,Traditional house with ocean views on the Kyoto coast,Japan,Kyoto,"Kyoto, Japan",49680,,86
@@ -54,42 +52,29 @@ https://realhunt.co/deal/Dc56aI-icMP,Nine-room 1960s farmhouse with an earthen k
 https://realhunt.co/deal/jp-miura-misaki-four-bed-house-2004-80k,"Four-bedroom house from 2004 in Misaki on the Miura peninsula, Kanagawa",Japan,Kanagawa,"Misaki-machi Moroiso, Miura, Kanagawa",79500,83,78
 https://realhunt.co/deal/jp-shima-2018-house-large-plot-85k-596606,"House built in 2018 on a 1,181 m² plot near the sea in Shima, Mie",Japan,Mie,"Ago-cho Tategami, Shima, Mie",84500,106,79
 https://realhunt.co/deal/DbA4_hKEThx,Japanese-style home with an engawa and garden in a hot spring town,Japan,Kanagawa,"Yugawara, Kanagawa, Japan",91080,,81
-https://realhunt.co/deal/mazatlan-80920,"3-bed apartment near the beach in Mazatlán, Sinaloa",Mexico,Sinaloa,"Mazatlán, Sinaloa",80920,71,90
 https://realhunt.co/deal/mazatlan-83298,"2-bed apartment in Mazatlán, Sinaloa",Mexico,Sinaloa,"Mazatlán, Sinaloa",83298,60,86
 https://realhunt.co/deal/mazatlan-83448,"2-bed apartment in Mazatlán, Sinaloa",Mexico,Sinaloa,"Mazatlán, Sinaloa",83448,60,84
-https://realhunt.co/deal/mx-mazatlan-86k-809756,"New 2-bed condo with rooftop and terrace in Mazatlán, ready now",Mexico,Sinaloa,"Mazatlán, Sinaloa",86100,68,86
 https://realhunt.co/deal/mx-mazatlan-97k-889034,"2-bed, 2-bath apartment with pool in a gated Mazatlán complex",Mexico,Sinaloa,"Mazatlán, Sinaloa",97100,65,84
 https://realhunt.co/deal/mazatlan-98621,"2-bed apartment in Mazatlán, Sinaloa",Mexico,Sinaloa,"Mazatlán, Sinaloa",98621,89,86
 https://realhunt.co/deal/es-murtas-49k-185398398,Fully renovated Alpujarra village house with a sea-view terrace in Murtas,Spain,Alpujarra (Granada),"Murtas, Alpujarra (Granada)",49000,86,91
 https://realhunt.co/deal/es-rossell-55k-187471380,"Village house with a panoramic sea-and-mountain terrace in Rossell, Castellón",Spain,Baix Maestrat (Castellón),"Rossell, Baix Maestrat (Castellón)",55000,120,94
 https://realhunt.co/deal/es-carino-65k-186545953,Sunny three-bedroom flat with sea and mountain views in Cariño,Spain,Cariño (A Coruña),Cariño (A Coruña),65000,92,91
 https://realhunt.co/deal/es-ponteceso-corme-68k-189908571,"Bright top-floor flat with a sea-view balcony in Corme Porto, Costa da Morte",Spain,Ponteceso (A Coruña),"Corme Porto, Ponteceso (A Coruña)",68500,80,90
-https://realhunt.co/deal/es-cartagena-73k-74761,2-bedroom flat with terrace in Cartagena,Spain,Murcia,"Cartagena, Murcia, Spain",73000,85,93
-https://realhunt.co/deal/es-cartagena-78k-20439,3-bedroom flat with patio in Cartagena,Spain,Murcia,"Cartagena, Murcia, Spain",78000,78,91
 https://realhunt.co/deal/es-cartagena-79k-19964,2-bedroom apartment with sea views in Cartagena,Spain,Murcia,"Cartagena, Murcia, Spain",79900,56,87
-https://realhunt.co/deal/es-aguilas-80k-19039,2-bedroom ground-floor flat with garden in Águilas,Spain,Murcia,"Águilas, Murcia, Spain",80000,79,89
-https://realhunt.co/deal/es-roquetas-de-mar-82k-66798,3-bedroom semi-detached house with patio in Roquetas de Mar,Spain,Almería,"Roquetas de Mar, Almería, Spain",82900,75,89
 https://realhunt.co/deal/es-cartagena-88k-38250,2-bedroom flat with patio in Cartagena,Spain,Murcia,"Cartagena, Murcia, Spain",88000,60,85
-https://realhunt.co/deal/es-roquetas-de-mar-93k-71925,1-bedroom top-floor flat in Roquetas de Mar,Spain,Almería,"Roquetas de Mar, Almería, Spain",93500,67,85
 https://realhunt.co/deal/es-torrevieja-94k-95673,1-bedroom apartment with pool in Torrevieja,Spain,Alicante,"Torrevieja, Alicante, Spain",94900,45,84
-https://realhunt.co/deal/es-benicarlo-95k-54979,1-bedroom top-floor flat with terrace in Benicarló,Spain,Castellón,"Benicarló, Castellón, Spain",95000,88,88
-https://realhunt.co/deal/es-cartagena-95k-46660,2-bedroom flat in Cartagena,Spain,Murcia,"Cartagena, Murcia, Spain",95000,71,86
 https://realhunt.co/deal/es-torrevieja-97k-10226,1-bedroom flat with terrace in Torrevieja,Spain,Alicante,"Torrevieja, Alicante, Spain",97000,52,84
 https://realhunt.co/deal/es-roses-97k-57061,Flat with sea views in Roses,Spain,Girona,"Roses, Girona, Spain",97000,47,82
 https://realhunt.co/deal/es-amposta-97k-10966,2-bedroom apartment with terrace in Amposta,Spain,Tarragona,"Amposta, Tarragona, Spain",97900,62,83
 https://realhunt.co/deal/es-garrucha-98k-95417,2-bedroom apartment with mountain views in Garrucha,Spain,Almería,"Garrucha, Almería, Spain",98000,59,82
 https://realhunt.co/deal/es-el-ejido-98k-28806,2-bedroom flat in El Ejido,Spain,Almería,"El Ejido, Almería, Spain",98000,79,85
-https://realhunt.co/deal/es-moguer-98k-75562,1-bedroom flat with terrace in Moguer,Spain,Huelva,"Moguer, Huelva, Spain",98000,48,80
 https://realhunt.co/deal/es-torrevieja-torresol-studio-pool-99k,"Studio with communal pool 950 m from La Mata beach, Torrevieja",Spain,Alicante,"Torreblanca, Torrevieja, Alicante",99000,29,81
 https://realhunt.co/deal/DcazSjCjUUx,One-bedroom escape with 360-degree rooftop views towards the coast,Spain,Alicante,"Alicante, Spain",99000,,89
-https://realhunt.co/deal/Dcnr1XjFDfu,Blue-shuttered village home a short stroll from the Mar Menor,Spain,Murcia,"Los Nietos, Cartagena, Murcia, Spain",99000,,88
 https://realhunt.co/deal/es-torrevieja-99k-86111,1-bedroom apartment with pool in Torrevieja,Spain,Alicante,"Torrevieja, Alicante, Spain",99900,47,83
 https://realhunt.co/deal/es-san-pedro-del-pinatar-99k-91782,2-bedroom house with terrace in San Pedro del Pinatar,Spain,Murcia,"San Pedro del Pinatar, Murcia, Spain",99950,57,83
-https://realhunt.co/deal/DcaE8pfoH77,"1914 home with lake views, guest house and double garage on 6,525 m²",Sweden,Medelpad,"Naggen, Medelpad, Sweden",55000,120,92
 https://realhunt.co/deal/Dc-RMNwIPpv,Two-apartment house with river swimming spots and geothermal heat,Sweden,Västerbotten,"Tegsnäset, Västerbotten, Sweden",59000,156,92
 https://realhunt.co/deal/DdP0Csyilzz,Sea-view cabin with swimming access and boat mooring,Sweden,Västernorrland,"Hornön, Västernorrland, Sweden",64000,36,83
 https://realhunt.co/deal/DczrZZlCl9L,Simple lakeside holiday cottage with extra sleeping cabins,Sweden,Medelpad,"Nordanede, Medelpad, Sweden",64000,50,84
 https://realhunt.co/deal/DdC7bBTgSg1,"Three-bedroom home with sauna, guest cabin, two heated garages and a 2025 sunroom",Sweden,Norrbotten,"Risögrund, Norrbotten, Sweden",81000,29,80
-https://realhunt.co/deal/uk-blyth-88k-869241,Bright bungalow with a garden near Blyth town and beach,United Kingdom,Northumberland,"Blyth, Northumberland",88500,,88
 https://realhunt.co/deal/little-river-92471,"Renovated condo in Little River, South Carolina",United States,South Carolina,"Little River, South Carolina",88800,63,81
 https://realhunt.co/deal/beeville-95089,"Renovated 2-bed house in Beeville, Texas",United States,Texas,"Beeville, Texas",95089,74,81
