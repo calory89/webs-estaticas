@@ -6,6 +6,9 @@
 <title>Carlos de Ory · AI marketing for travel and real estate</title>
 <meta name='description' content='Carlos de Ory builds marketing that runs on AI agents. €20M+ sold in real estate, 300,000+ flights booked. Forbes España 100 most creative, 2022.'>
 <link rel='canonical' href='https://www.carlosdeory.com/'>
+<link rel='alternate' hreflang='en' href='https://www.carlosdeory.com/'>
+<link rel='alternate' hreflang='es' href='https://www.carlosdeory.com/es/'>
+<link rel='alternate' hreflang='x-default' href='https://www.carlosdeory.com/'>
 <meta name='theme-color' content='#070818'>
 <link rel='icon' href='/favicon.svg' type='image/svg+xml'>
 <link rel='icon' href='/favicon.ico' sizes='48x48'>
@@ -60,7 +63,7 @@ header::before{content:'';display:block;height:3px;background:var(--grad)}
 .logo{display:flex;align-items:center;min-height:44px;gap:10px;text-decoration:none;font:800 19px/1 var(--disp);letter-spacing:-.02em;margin-right:auto}
 .mk{display:flex;gap:2px}.mk span{width:19px;height:23px;border-radius:4px;display:grid;place-items:center;font:800 12px/1 var(--mono);color:#fff;background:var(--blue)}.mk span+span{background:var(--red)}
 nav.m{display:flex;gap:24px}nav.m a{text-decoration:none;font-size:16px;color:var(--dim);padding:12px 0}nav.m a:hover{color:#fff}
-.lg{display:flex;border:1.5px solid var(--line);border-radius:99px;padding:3px}.lg button{min-width:46px;min-height:44px;border:0;border-radius:99px;background:none;color:var(--dim);font:700 13px/1 var(--mono);cursor:pointer}.lg button[aria-pressed='true']{background:var(--grad);color:#fff}
+.lg{display:flex;border:1.5px solid var(--line);border-radius:99px;padding:3px}.lg a{min-width:46px;min-height:44px;display:grid;place-items:center;text-decoration:none;border-radius:99px;color:var(--dim);font:700 13px/1 var(--mono)}.lg a[aria-current='true']{background:var(--grad);color:#fff}
 .hb .btn{min-height:44px;padding:0 18px;font-size:15px}
 .hero{position:relative;overflow:hidden;padding:clamp(44px,6vw,84px) 0 clamp(56px,7vw,88px)}
 .glow{position:absolute;inset:-10% -10% auto;height:120%;pointer-events:none;z-index:0;background:radial-gradient(46% 52% at 12% 30%,rgba(77,107,255,.42),transparent 70%),radial-gradient(44% 50% at 90% 22%,rgba(255,45,85,.34),transparent 70%),radial-gradient(40% 40% at 55% 90%,rgba(139,61,255,.22),transparent 70%);animation:drift 14s ease-in-out infinite alternate}
@@ -139,6 +142,7 @@ textarea{min-height:130px;resize:vertical}input:focus,textarea:focus{outline:non
 .okl{display:flex!important;gap:12px;align-items:flex-start;font:500 15px/1.5 var(--sans)!important;letter-spacing:0!important;text-transform:none!important}
 .okl input{width:22px;height:22px;min-height:0;flex:none;margin-top:2px;accent-color:var(--vio)}
 .hp{position:absolute;left:-9999px}
+.mail{margin-top:22px;color:var(--dim);font-size:17px}.mail a{color:#fff;font-weight:700;text-decoration:underline;text-underline-offset:4px}
 .er{color:#FF8AA0;font:600 15px/1.4 var(--sans);min-height:1.4em}
 .done{display:none;grid-column:1/-1;text-align:center;padding:40px 10px}.done b{font:800 30px/1.1 var(--disp);display:block;margin-bottom:10px}
 form.sent>*{display:none}form.sent .done{display:block}
@@ -157,8 +161,8 @@ footer{border-top:1px solid rgba(255,255,255,.08);padding:44px 0 60px;color:var(
 <a class='skip' href='#main' data-k='skip'>Skip to content</a>
 <header><div class='w hb'>
 <a class='logo' href='/' aria-label='Carlos de Ory, home'><span class='mk' aria-hidden='true'><span>C</span><span>O</span></span>Carlos de Ory</a>
-<nav class='m' aria-label='Main'><a href='#results' data-k='n1'>Results</a><a href='#system' data-k='n2'>The system</a><a href='#projects' data-k='n3'>Sectors</a><a href='/speaking/' data-k='n4' data-es='/charlas/'>Speaking</a><a href='/blog/'>Blog</a></nav>
-<div class='lg' role='group' aria-label='Language'><button type='button' data-l='en' aria-pressed='true'>EN</button><button type='button' data-l='es' aria-pressed='false'>ES</button></div>
+<nav class='m' aria-label='Main'><a href='#results' data-k='n1'>Results</a><a href='#system' data-k='n2'>The system</a><a href='#sectors' data-k='n3'>Sectors</a><a href='/speaking/' data-k='n4' data-es='/charlas/'>Speaking</a><a href='/blog/'>Blog</a></nav>
+<div class='lg' role='group' aria-label='Language'><a href='/' hreflang='en' lang='en' aria-current='true'>EN</a><a href='/es/' hreflang='es' lang='es'>ES</a></div>
 <a class='btn p' href='#contact' data-k='cta'>Start a conversation</a>
 </div></header>
 <main id='main'>
@@ -177,7 +181,7 @@ footer{border-top:1px solid rgba(255,255,255,.08);padding:44px 0 60px;color:var(
 <p class='cf' data-k='c_f'>Replay of a normal day. Real systems, running on my own companies.</p>
 </div>
 </div>
-<div class='press'><span data-k='seen'>As seen in</span><a href='/press/'>Forbes</a><a href='/press/'>Antena 3</a><a href='/press/'>El País</a><a href='/press/'>The Guardian</a></div>
+<div class='press'><span data-k='seen'>As seen in</span><a href='/press/#media' data-es='/prensa/#media'>Forbes</a><a href='/press/#media' data-es='/prensa/#media'>Antena 3</a><a href='/press/#media' data-es='/prensa/#media'>El País</a><a href='/press/#media' data-es='/prensa/#media'>The Guardian</a></div>
 </div></div>
 
 <section class='band' id='results'><div class='w'>
@@ -188,7 +192,7 @@ footer{border-top:1px solid rgba(255,255,255,.08);padding:44px 0 60px;color:var(
 <div><b data-n='420000' data-s='+'>420,000+</b><span data-k='s3'>followers across its travel communities</span></div>
 <div><b data-n='19920'>19,920</b><span data-k='s4'>people on RealHunt in 11 days, with €0 spent on ads</span></div>
 <div><b data-n='20' data-s='+'>20+</b><span data-k='s5'>years building companies, since my first at 16</span></div>
-<div><b>Top 100</b><span data-k='s6'>most creative people in business, Forbes España 2022</span></div>
+<div><b data-n='159000' data-s='+'>159,000+</b><span data-k='s6'>places mapped on SupportNear in 166 countries, built almost for free</span></div>
 </div>
 </div></section>
 
@@ -215,13 +219,13 @@ footer{border-top:1px solid rgba(255,255,255,.08);padding:44px 0 60px;color:var(
 <p class='tools rv' data-k='tools'>Built on Claude, Meta Ads, Google Ads, Search Console, Microsoft Clarity, Supabase and WhatsApp.</p>
 </div></section>
 
-<section id='projects'><div class='w'>
+<section id='sectors'><span id='projects'></span><div class='w'>
 <div class='hd rv'><div><span class='eye' data-k='x_e'>Sectors</span><h2 data-k='x_h'>Trips and homes: decisions people think about twice.</h2></div><p class='lede' data-k='x_p'>High-consideration purchases need trust, speed and follow-up. That is where this system pays for itself.</p></div>
 <div class='sec'>
 <div class='big rv'><span class='eye' data-k='t_e'>Travel</span><h3>Happy Low Cost</h3><p data-k='t_p'>A deals community people act on, running for 14 years. Every deal links to where it can be booked, and the commission pays for the work. Also behind MejorCrucero and Top3Hotels.</p>
 <ul><li><b>300,000+</b><span data-k='t1'>flights booked through our deals</span></li><li><b>420,000+</b><span data-k='t2'>followers across the communities</span></li></ul>
 <a class='lk' href='/growth/case-happy-low-cost/' data-es='/agencia/caso-happy-low-cost/' data-k='case'>Read the case →</a></div>
-<div class='big rv'><span class='eye' data-k='e_e'>Real estate</span><h3>Eco Beach City · RealHunt</h3><p data-k='e_p'>Eco Beach City is a beachfront town on Sumba, one hour from Bali, marketed to international buyers in 15 languages, with homes from €36,500 and villas from €295,000. RealHunt scores and ranks the best homes in 21 countries.</p>
+<div class='big rv'><span class='eye' data-k='e_e'>Real estate</span><h3>Eco Beach City · RealHunt</h3><p data-k='e_p'>Eco Beach City is a beachfront town on Sumba, one hour from Bali, marketed to international buyers in 15 languages, with beachfront villas from €295,000 and two-bedroom Beach Cabins from €39,950. RealHunt scores and ranks the best homes in 21 countries.</p>
 <ul><li><b>€20M+</b><span data-k='e0'>sold in real estate with AI-led marketing</span></li><li><b>19,920</b><span data-k='e1'>people on RealHunt in 11 days, €0 on ads</span></li><li><b>516,173</b><span data-k='e2'>views of a single post that fed the product</span></li></ul>
 <a class='lk' href='/growth/case-realhunt/' data-es='/agencia/caso-realhunt/' data-k='case'>Read the case →</a></div>
 </div>
@@ -229,7 +233,7 @@ footer{border-top:1px solid rgba(255,255,255,.08);padding:44px 0 60px;color:var(
 </div></section>
 
 <section class='band' id='about'><div class='w ab'>
-<div class='ph rv'><img src='/assets/cdo/carlos.jpg' alt='Carlos de Ory working at his laptop' width='365' height='547' loading='lazy'></div>
+<div class='ph rv'><img src='/assets/cdo/carlos.jpg' alt='Portrait of Carlos de Ory' width='365' height='547' loading='lazy'></div>
 <div class='rv'><span class='eye' data-k='o_e'>About</span><h2 data-k='o_h'>Founder first. Marketer always.</h2>
 <p data-k='o_p1'>I started my first business at 16. Since then: a travel community past 420,000 followers, a founders' house in New York covered on national TV, a town by the sea on an Indonesian island and a set of AI products I design and ship myself.</p>
 <p data-k='o_p2'>I measure marketing the way an owner does: by what it brings in, not by how busy the team looks.</p>
@@ -245,7 +249,7 @@ footer{border-top:1px solid rgba(255,255,255,.08);padding:44px 0 60px;color:var(
 </div></section>
 
 <section class='band' id='contact'><div class='w ct'>
-<div class='rv'><span class='eye' data-k='q_e'>Contact</span><h2 data-k='q_h'>Start a conversation.</h2><p class='lede' style='margin-top:20px' data-k='q_p'>Tell me about the company and the goal. I read every message myself and I answer personally.</p></div>
+<div class='rv'><span class='eye' data-k='q_e'>Contact</span><h2 data-k='q_h'>Start a conversation.</h2><p class='lede' style='margin-top:20px' data-k='q_p'>Tell me about the company and the goal. I read every message myself and I answer personally.</p><p class='mail'><span data-k='q_m'>Prefer email?</span> <a id='ml' href='#contact'>carlos [at] ecobeachcity.com</a></p></div>
 <form id='f' class='rv' novalidate>
 <div class='full k' role='group' aria-labelledby='kl'><span id='kl' data-k='f_k'>I am interested in</span><span class='ks'>
 <label><input type='radio' name='kind' value='agency' checked><span data-k='k1'>Marketing leadership</span></label>
@@ -264,7 +268,7 @@ footer{border-top:1px solid rgba(255,255,255,.08);padding:44px 0 60px;color:var(
 </div></section>
 </main>
 <footer><div class='w'>
-<nav class='fl' aria-label='Site'><a href='/speaking/' data-es='/charlas/' data-k='n4'>Speaking</a><a href='/growth/' data-es='/agencia/' data-k='g1'>Growth marketing</a><a href='/book/' data-es='/libro/' data-k='o3'>The book</a><a href='/blog/'>Blog</a><a href='/links/' data-k='g2'>All projects</a><a href='/press/' data-es='/prensa/' data-k='o4'>Press</a><a href='/about-me/' data-es='/quien-soy/' data-k='g3'>About</a><a href='https://www.linkedin.com/in/carlosdeory/' rel='noopener' target='_blank'>LinkedIn</a><a href='https://x.com/mrstartups' rel='noopener' target='_blank'>X</a></nav>
+<nav class='fl' aria-label='Site'><a href='/speaking/' data-es='/charlas/' data-k='n4'>Speaking</a><a href='/growth/' data-es='/agencia/' data-k='g1'>Growth marketing</a><a href='/book/' data-es='/libro/' data-k='o3'>The book</a><a href='/blog/'>Blog</a><a href='/links/' data-k='g2'>All projects</a><a href='/press/' data-es='/prensa/' data-k='o4'>Press</a><a href='/about-me/' data-es='/quien-soy/' data-k='g3'>About</a><a href='https://www.linkedin.com/in/carlosdeory/' rel='noopener' target='_blank'>LinkedIn</a><a href='https://www.instagram.com/carlosdeory/' rel='noopener' target='_blank'>Instagram</a><a href='https://www.youtube.com/@CarlosDeOry' rel='noopener' target='_blank'>YouTube</a><a href='https://x.com/mrstartups' rel='noopener' target='_blank'>X</a></nav>
 <nav class='fl' aria-label='Legal'><a href='/aviso-legal/' data-k='g4'>Legal notice</a><a href='/politica-de-privacidad/' data-k='g5'>Privacy</a><a href='/politica-de-cookies/' data-k='g6'>Cookies</a><a href='/transparencia/' data-k='g7'>Transparency</a></nav>
 <span>© 2026 Carlos de Ory · Equinox Investment Group LLC</span>
 </div></footer>
@@ -277,7 +281,7 @@ chip:'En vivo · sistemas de IA funcionando en mis empresas',h1:'Marketing que<b
 lede:'Llevo más de 20 años creando empresas. Hoy mis empresas de viajes e inmobiliario llevan su marketing con agentes de IA: vigilan los anuncios, responden a cada lead y publican, cada día. Yo me quedo con las decisiones que mueven los ingresos.',
 b1:'Ver el sistema',who:'Fundador y operador · más de 20 M€ vendidos en inmobiliario con IA · Forbes España, 100 más creativos, 2022',c_t:'CONSOLA',c_f:'Repetición de un día normal. Sistemas reales, funcionando en mis propias empresas.',seen:'Ha salido en',
 r_e:'Resultados',r_h:'Cifras que puedo enseñarte.',r_p:'Todas públicas. Todas de empresas que fundé.',
-s1:'vendidos en inmobiliario con marketing con IA',s2:'vuelos reservados con las ofertas de Happy Low Cost en 14 años',s3:'seguidores en sus comunidades de viajes',s4:'personas en RealHunt en 11 días, con 0 € en anuncios',s5:'años creando empresas, desde la primera a los 16',s6:'personas más creativas en los negocios, Forbes España 2022',
+s1:'vendidos en inmobiliario con marketing con IA',s2:'vuelos reservados con las ofertas de Happy Low Cost en 14 años',s3:'seguidores en sus comunidades de viajes',s4:'personas en RealHunt en 11 días, con 0 € en anuncios',s5:'años creando empresas, desde la primera a los 16',s6:'lugares en el mapa de SupportNear en 166 países, hecho casi gratis',
 w_e:'Qué cambia',w_h:'Un equipo de marketing ligero, rápido y despierto a las 3 de la mañana.',w_p:'Los agentes hacen el trabajo repetible. Las personas se quedan con el criterio: oferta, marca, alianzas y presupuesto.',
 w1:'Cada lead, respondido',w1p:'Rápido, a cualquier hora y en el idioma del lead. Las personas entran cuando toca cerrar.',w2:'Inversión que se corrige sola',w2p:'Las campañas se revisan día y noche. Los anuncios caídos se rehacen antes de la reunión de la mañana.',w3:'Contenido cada día',w3p:'Investigar, escribir y publicar va con horario y con fuentes. Los editores aprueban en vez de teclear.',w4:'Números sin reuniones',w4p:'Un resumen diario con qué se movió y por qué. Las decisiones llevan minutos, no una semana de diapositivas.',
 y_e:'El sistema',y_h:'Cinco agentes. Una persona decidiendo.',y_p:'Esto es lo que funciona hoy en mis empresas. Es el sistema que instalaría en tu equipo de marketing.',f1:'Señales',f2:'Agentes',f3:'Decisión humana',f4:'En vivo',
@@ -285,11 +289,11 @@ a1t:'cada 6 horas',a1:'Vigilancia de anuncios',a1p:'Detecta anuncios parados o r
 tools:'Construido con Claude, Meta Ads, Google Ads, Search Console, Microsoft Clarity, Supabase y WhatsApp.',
 x_e:'Sectores',x_h:'Viajes y casas: decisiones que la gente piensa dos veces.',x_p:'Las compras de mucha reflexión necesitan confianza, rapidez y seguimiento. Ahí es donde este sistema se paga solo.',
 t_e:'Viajes',t_p:'Una comunidad de ofertas que la gente reserva, en marcha desde hace 14 años. Cada oferta enlaza a donde se puede reservar y la comisión paga el trabajo. También detrás de MejorCrucero y Top3Hotels.',t1:'vuelos reservados con nuestras ofertas',t2:'seguidores entre las comunidades',case:'Leer el caso →',
-e_e:'Inmobiliario',e_p:'Eco Beach City es un pueblo frente al mar en Sumba, a una hora de Bali, que se vende a compradores internacionales en 15 idiomas, con casas desde 36.500 € y villas desde 295.000 €. RealHunt puntúa y ordena las mejores casas de 21 países.',e0:'vendidos en inmobiliario con marketing con IA',e1:'personas en RealHunt en 11 días, 0 € en anuncios',e2:'visualizaciones de una sola publicación que llevó gente al producto',
+e_e:'Inmobiliario',e_p:'Eco Beach City es un pueblo frente al mar en Sumba, a una hora de Bali, que se vende a compradores internacionales en 15 idiomas, con villas frente al mar desde 295.000 € y Beach Cabins de dos dormitorios desde 39.950 €. RealHunt puntúa y ordena las mejores casas de 21 países.',e0:'vendidos en inmobiliario con marketing con IA',e1:'personas en RealHunt en 11 días, 0 € en anuncios',e2:'visualizaciones de una sola publicación que llevó gente al producto',
 l_b:'Hecho con poco:',l_p:'SupportNear tiene en el mapa más de 159.000 lugares de 166 países donde cualquiera puede comer, dormir, ducharse o pedir ayuda. Se construyó casi gratis.',
 o_e:'Sobre mí',o_h:'Primero fundador. Siempre de marketing.',o_p1:'Monté mi primer negocio a los 16. Desde entonces: una comunidad de viajes de más de 420.000 seguidores, una casa de fundadores en Nueva York que salió en la televisión nacional, un pueblo junto al mar en una isla de Indonesia y varios productos de IA que diseño y lanzo yo mismo.',o_p2:'Mido el marketing como lo mide un dueño: por lo que trae, no por lo ocupado que parece el equipo.',o1:'Mi historia',o2:'Charlas',o3:'El libro',o4:'Prensa',
 p_e:'Disponibilidad',p_h:'Mis empresas funcionan con esto. Por eso tengo sitio para <span class=g>una más.</span>',p_p:'Los sistemas mantienen mis empresas en marcha cada día. Por eso puedo dirigir el marketing de una empresa a la vez, a nivel de dirección. Si vendes viajes, casas o cualquier cosa donde cada cliente cuenta, dime dónde quieres estar dentro de doce meses.',p1:'Nivel de dirección',p2:'Una empresa a la vez',p3:'Inglés y español',
-q_e:'Contacto',q_h:'Hablemos.',q_p:'Cuéntame la empresa y el objetivo. Leo cada mensaje yo mismo y contesto en persona.',f_k:'Me interesa',k1:'Dirección de marketing',k2:'Una charla',k3:'Otra cosa',f_n:'Nombre',f_e:'Correo',f_c:'Empresa',f_m:'Mensaje',f_o:'Acepto que Carlos de Ory guarde mis datos para responderme, como explica la',pv:'política de privacidad',f_s:'Enviar mensaje',d_p:'Tu mensaje está en mi bandeja. Te contesto en persona.',
+q_e:'Contacto',q_h:'Hablemos.',q_p:'Cuéntame la empresa y el objetivo. Leo cada mensaje yo mismo y contesto en persona.',q_m:'¿Prefieres correo?',f_k:'Me interesa',k1:'Dirección de marketing',k2:'Una charla',k3:'Otra cosa',f_n:'Nombre',f_e:'Correo',f_c:'Empresa',f_m:'Mensaje',f_o:'Acepto que Carlos de Ory guarde mis datos para responderme, como explica la',pv:'política de privacidad',f_s:'Enviar mensaje',d_p:'Tu mensaje está en mi bandeja. Te contesto en persona.',
 g1:'Growth marketing',g2:'Todos los proyectos',g3:'Sobre mí',g4:'Aviso legal',g5:'Privacidad',g6:'Cookies',g7:'Transparencia',ck:'Esta web usa cookies de analítica solo con tu permiso.',ckn:'Solo las necesarias',cky:'Aceptar'};
 var MSG={en:{n:'Please write your name.',e:'Please check the email address.',o:'Please accept the privacy policy.',s:'Sending…',x:'It could not be sent. Please try again.',t:'Thank you, '},es:{n:'Escribe tu nombre.',e:'Revisa el correo.',o:'Acepta la política de privacidad.',s:'Enviando…',x:'No se ha podido enviar. Inténtalo de nuevo.',t:'Gracias, '}};
 var LOG={en:[['06:00','NEWSROOM','Story of the day researched, written and published in 3 languages.'],['08:29','AD WATCH','All campaigns checked. Rejected ads rebuilt and relaunched.'],['09:23','SALES AGENT','New leads answered on WhatsApp, Instagram and email, in their language.'],['12:00','SEARCH','Rankings and AI answers checked. Weak pages queued for a rewrite.'],['18:00','BRIEF','Numbers of the day sent to Carlos.'],['18:05','CARLOS','Decision: move budget to the audience that converts.']],
@@ -302,10 +306,10 @@ function light(){[].forEach.call(rows.children,function(r,i){r.classList.toggle(
 function tick(){step=step>=8?0:step+1;light();}
 function setLang(l){lang=l;D.documentElement.lang=l;els.forEach(function(e){var k=e.getAttribute('data-k');e.innerHTML=l==='es'&&ES[k]?ES[k]:EN[k];});
 $$('[data-es]').forEach(function(a){if(!a.getAttribute('data-en'))a.setAttribute('data-en',a.getAttribute('href'));a.setAttribute('href',a.getAttribute(l==='es'?'data-es':'data-en'));});
-$$('.lg button').forEach(function(b){b.setAttribute('aria-pressed',String(b.getAttribute('data-l')===l));});draw();}
-$$('.lg button').forEach(function(b){b.addEventListener('click',function(){setLang(b.getAttribute('data-l'));});});
+draw();}
 draw();if(!calm){setInterval(tick,1300);}
-try{if(new URLSearchParams(location.search).get('lang')==='es'){setLang('es');}}catch(e){}
+try{if(/^\/$/.test(location.pathname)&&new URLSearchParams(location.search).get('lang')==='es'){location.replace('/es/'+location.hash);}}catch(e){}
+var ml=$('#ml');if(ml){var u='carlos',d='ecobeachcity.com';ml.href='mailto:'+u+'@'+d;ml.textContent=u+'@'+d;}
 var clk=$('#clk');function time(){var d=new Date();clk.textContent='UTC '+('0'+d.getUTCHours()).slice(-2)+':'+('0'+d.getUTCMinutes()).slice(-2);}time();setInterval(time,30000);
 function count(b){var n=+b.getAttribute('data-n'),s=b.getAttribute('data-s')||'',t0=null;if(calm||!n){return;}
 function f(t){if(!t0)t0=t;var p=Math.min(1,(t-t0)/1400),v=Math.round(n*(1-Math.pow(1-p,3)));b.textContent=v.toLocaleString('en-US')+s;if(p<1)requestAnimationFrame(f);}requestAnimationFrame(f);}
