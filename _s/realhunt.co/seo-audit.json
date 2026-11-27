@@ -1354,7 +1354,7 @@
     "home": {
      "path": "/",
      "html_kb": 9.6,
-     "html_raw_kb": 36.4,
+     "html_raw_kb": 36.5,
      "jsonld_kb": 5.3,
      "blocking_css_kb": 23.3,
      "entry_js_kb": 81,
