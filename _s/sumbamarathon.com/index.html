@@ -14,6 +14,18 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0b0b0c">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate" hreflang="en" href="https://sumbamarathon.com/">
+<link rel="alternate" hreflang="es" href="https://sumbamarathon.com/?lang=es">
+<link rel="alternate" hreflang="x-default" href="https://sumbamarathon.com/">
+<meta property="og:locale" content="en_GB"><meta property="og:locale:alternate" content="es_ES">
+<meta property="og:site_name" content="Sumba Marathon">
+<meta name="twitter:title" content="The First 100 · Sumba Marathon"><meta name="twitter:description" content="Sumba has never had a marathon. Only 100 people will ever run the first one.">
+<link rel="preload" as="image" href="vid/hero.jpg">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"Sumba Marathon","url":"https://sumbamarathon.com/","logo":"https://sumbamarathon.com/favicon.svg","parentOrganization":{"@type":"Organization","name":"Eco Beach City","url":"https://ecobeachcity.com/"},"sameAs":["https://www.instagram.com/ecobeachevents/"]},{"@type":"WebSite","name":"Sumba Marathon","url":"https://sumbamarathon.com/","inLanguage":["en","es"]},{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Is this really the first marathon on Sumba?","acceptedAnswer":{"@type":"Answer","text":"As far as we can find, no marathon has ever been run on the island. That's exactly why the first one matters."}},
+{"@type":"Question","name":"Where is it?","acceptedAnswer":{"@type":"Answer","text":"Sumba Island, East Nusa Tenggara, Indonesia, about an hour's flight east of Bali. The finish line is on the beach at Eco Beach City, the organiser and host."}},
+{"@type":"Question","name":"When?","acceptedAnswer":{"@type":"Answer","text":"2027. The exact date is announced to the First 100 before it goes public."}},
+{"@type":"Question","name":"Does it cost anything to reserve?","acceptedAnswer":{"@type":"Answer","text":"No. Reserving your bib is free. Entry details and price come with the date, and the First 100 get them first."}}]}]}</script>
 <script>
 /* Analytics: Google Analytics + Microsoft Clarity, consent-aware (EU visitors are asked first) */
 (function(w,d,n){var GA='G-FJKJE77K4V',CL='z4eqcmaic7',K='sm.ck',ch=null,tz='';try{ch=localStorage.getItem(K)}catch(e){}try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(e){}
@@ -26,14 +38,36 @@ w.addEventListener('load',function(){setTimeout(load,1200);if(eu&&ch==null){var 
 })(window,document,navigator);
 </script>
 <style>
-:root{--ink:#0b0b0c;--ink2:#141416;--paper:#f4efe6;--sand:#e9dfcd;--gold:#e8b04b;--gold2:#ffcf6b;--sea:#1fb5c4;--red:#ff4d3d;--mute:#9a958c;--line:rgba(255,255,255,.12)}
+:root{--ink:#0b0b0c;--ink2:#141416;--paper:#f4efe6;--sand:#e9dfcd;--gold:#e8b04b;--gold2:#ffcf6b;--sea:#1fb5c4;--red:#ff4d3d;--mute:#aaa498;--line:rgba(255,255,255,.12)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
 body{margin:0;background:var(--ink);color:var(--paper);font:17px/1.55 "Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
 a{color:inherit}
 .wrap{max-width:1120px;margin:0 auto;padding:0 22px}
 .disp{font-family:"Oswald","Bebas Neue","Impact","Arial Narrow",system-ui,sans-serif;font-weight:700;letter-spacing:-.01em;text-transform:uppercase;line-height:.92}
+/* a11y + nav */
+.skip{position:absolute;left:-9999px;top:0;z-index:100;background:var(--gold);color:var(--ink);padding:10px 14px;border-radius:0 0 10px 0;font-weight:800}.skip:focus{left:0}
+:focus-visible{outline:3px solid var(--gold2);outline-offset:3px;border-radius:6px}
+.nav{position:sticky;top:37px;z-index:49;background:rgba(11,11,12,.82);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:22px;height:52px}
+.nav .brand{font-family:"Oswald","Impact",sans-serif;font-weight:700;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;margin-right:auto}
+.nav .brand b{color:var(--gold)}
+.nav a.l{text-decoration:none;font-size:14px;color:#cfc8bb}.nav a.l:hover{color:#fff}
+.nav .lang{font-size:13px;font-weight:800;border:1px solid var(--line);border-radius:8px;padding:5px 9px;text-decoration:none}
+.nav .mini{background:var(--gold);color:var(--ink);font-weight:800;font-size:14px;padding:8px 13px;border-radius:9px;text-decoration:none}
+.under{margin-top:12px;font-size:14px;color:var(--mute)}
+.ref{display:none;margin:0 0 18px;background:rgba(232,176,75,.14);border:1px solid rgba(232,176,75,.5);color:var(--gold2);padding:10px 14px;border-radius:12px;font-weight:700;font-size:15px;max-width:560px}.ref.on{display:block}
+.tools{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.tools input{max-width:150px;padding:12px}.tools .cta{padding:12px 18px;font-size:15px}
+.mine{display:none;margin-top:18px;border:1.5px solid var(--gold);border-radius:14px;padding:14px 18px;max-width:560px}.mine.on{display:block}
+.sharebar{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:28px}
+.sharebar a,.sharebar button{font:inherit;font-weight:700;font-size:14px;color:var(--paper);background:transparent;border:1.5px solid var(--line);border-radius:10px;padding:10px 14px;text-decoration:none;cursor:pointer}
+.sharebar a:hover,.sharebar button:hover{border-color:var(--gold)}
+.tl{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:40px;border-top:2px solid var(--line)}
+.tl div{padding:22px 18px 0 0;position:relative}.tl div:before{content:"";position:absolute;top:-8px;left:0;width:14px;height:14px;border-radius:50%;background:var(--gold)}
+.tl .disp{font-size:44px;color:var(--gold)}.tl p{margin:6px 0 0;color:#bdb6aa}
+.countries{color:var(--mute);font-size:14px;margin-top:10px}
 /* live ticker */
-.tick{position:sticky;top:0;z-index:50;background:var(--red);color:#fff;font-weight:700;font-size:14px;letter-spacing:.04em;text-transform:uppercase;overflow:hidden;white-space:nowrap}
+.tick{position:sticky;top:0;height:37px;z-index:50;background:var(--red);color:#fff;font-weight:700;font-size:14px;letter-spacing:.04em;text-transform:uppercase;overflow:hidden;white-space:nowrap}
 .tick .row{display:inline-block;padding:9px 0;animation:mq 38s linear infinite}
 .tick span{margin:0 26px}.tick b{background:#fff;color:var(--red);padding:1px 7px;border-radius:4px}
 @keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
@@ -142,7 +176,7 @@ footer{padding:40px 0 120px;color:var(--mute);font-size:14px;border-top:1px soli
 .toast.on{opacity:1;transform:none}
 #ck{position:fixed;z-index:80;left:10px;right:10px;bottom:10px;max-width:460px;margin:0 auto;background:#fff;color:#111;border-radius:14px;padding:12px 14px;font-size:14px;box-shadow:0 8px 30px rgba(0,0,0,.4);display:flex;gap:10px;align-items:center;flex-wrap:wrap}
 #ck[hidden]{display:none}#ck button{flex:1;min-height:38px;border-radius:9px;border:1.5px solid #111;background:#fff;font-weight:700;cursor:pointer}#ck button.y{background:#111;color:#fff}
-@media(max-width:820px){.stats{grid-template-columns:1fr 1fr}.stats div:nth-child(2){border-right:0}.stats div:nth-child(-n+2){border-bottom:1px solid var(--line)}
+@media(max-width:820px){.nav a.l{display:none}.nav .wrap{gap:10px}.tl{grid-template-columns:1fr}.tl div{padding:22px 0 10px}#ck{bottom:84px}.stats{grid-template-columns:1fr 1fr}.stats div:nth-child(2){border-right:0}.stats div:nth-child(-n+2){border-bottom:1px solid var(--line)}
 .cards,.steps,.duo{grid-template-columns:1fr}
 .hero .wrap{grid-template-columns:1fr}.phone{display:none}.hero .bgv{inset:0;width:100%;height:100%;filter:none;opacity:.42}
 .reels{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:46%;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px}.reel{scroll-snap-align:start}.wall{grid-template-columns:repeat(5,1fr)}form{grid-template-columns:1fr}section{padding:72px 0}}
@@ -150,25 +184,31 @@ footer{padding:40px 0 120px;color:var(--mute);font-size:14px;border-top:1px soli
 </style>
 </head>
 <body>
+<a class="skip" href="#bibs">Skip to the bib wall</a>
 
 <div class="tick" aria-live="polite"><div class="row" id="tickrow"></div></div>
 
-<header class="hero">
+<nav class="nav" aria-label="Main"><div class="wrap"><a class="brand" href="#top">Sumba <b>Marathon</b></a><a class="l" href="#island">The island</a><a class="l" href="#bibs">The First 100</a><a class="l" href="#champion">First champion</a><a class="l" href="#faq">FAQ</a><a class="lang" id="langBtn" href="?lang=es" hreflang="es">ES</a><a class="mini" href="#bibs">Claim bib</a></div></nav>
+
+<header class="hero" id="top">
   <video class="bgv" src="vid/hero.mp4" poster="vid/hero.jpg" autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video>
   <div class="wrap">
     <div>
+    <div class="ref" id="refBanner"></div>
     <span class="kick"><span class="dot"></span> Sumba, Indonesia · Est. 2027</span>
     <h1 class="disp">Sumba has had <span class="z">0</span> marathons.<span class="s">Until now.</span></h1>
     <p class="lead">This is the <b>first marathon in the history of the island.</b> Only <b>100 people</b> will ever run it. Their names get carved into a monument at the finish line — <b>forever.</b></p>
     <div class="ctas">
-      <a class="cta" href="#bibs">Claim your bib →</a>
+      <a class="cta" href="#bibs">Claim your bib — free →</a>
       <a class="cta ghost" href="#champion">The first champion</a>
     </div>
-    <div class="left"><b id="leftN">100</b> of 100 bibs left · reserving is free
+    <p class="under">No card. Takes 30 seconds. One bib per person.</p>
+    <div class="mine" id="mine"></div>
+    <div class="left"><b id="leftN">100</b> <span id="leftT">of 100 bibs left · reserving is free</span>
       <div class="meter"><i id="meter"></i></div>
     </div>
     </div>
-    <div class="phone"><span class="live">SUMBA · REAL FOOTAGE</span><video src="vid/hero.mp4" poster="vid/hero.jpg" autoplay muted loop playsinline preload="metadata"></video><div class="tag">Where the first 42.195 km in the island's history will be run 🏝️</div></div>
+    <div class="phone"><span class="live" id="liveT">SUMBA · REAL FOOTAGE</span><video src="vid/hero.mp4" poster="vid/hero.jpg" autoplay muted loop playsinline preload="metadata"></video><div class="tag" id="tagT">Where the first 42.195 km in the island's history will be run 🏝️</div></div>
   </div>
 </header>
 
@@ -191,6 +231,11 @@ footer{padding:40px 0 120px;color:var(--mute);font-size:14px;border-top:1px soli
       <div class="card"><div class="disp">001–100</div><p>Your bib number is yours. It's the number that will sit next to your name on the monument.</p></div>
       <div class="card"><div class="disp">Forever</div><p>In 50 years someone will ask who ran the first one. The answer will be written in stone.</p></div>
     </div>
+    <div class="tl" aria-label="Sumba marathon history">
+      <div><div class="disp">Until now</div><p>Zero marathons in the history of the island.</p></div>
+      <div><div class="disp">2027</div><p>The first start line. 100 runners. Two first champions.</p></div>
+      <div><div class="disp">Forever</div><p>100 names on the monument at the finish line.</p></div>
+    </div>
   </div>
 </section>
 
@@ -209,8 +254,10 @@ footer{padding:40px 0 120px;color:var(--mute);font-size:14px;border-top:1px soli
     <div class="eyebrow">The First 100 · live</div>
     <h2 class="disp">Pick your number<br>before someone else does.</h2>
     <p class="big">Every bib from <b>001</b> to <b>100</b> is on this wall. Taken ones show the runner's first name. <b>Tap a free one to make it yours.</b></p>
+    <div class="tools"><button type="button" class="cta" id="lucky">🎲 Give me a lucky number</button><input id="findN" type="number" min="1" max="100" inputmode="numeric" placeholder="Find # (1–100)" aria-label="Find a bib number"><button type="button" class="cta ghost" id="findB">Go</button></div>
     <div class="wall" id="wall" role="list"></div>
-    <div class="legend"><span><i></i>Free</span><span><i style="background:#1a1a1c"></i>Taken</span><span><i style="background:var(--gold);border-color:var(--gold)"></i>Your pick</span><span><i style="border-color:rgba(232,176,75,.55)"></i>Legendary numbers</span></div>
+    <p class="countries" id="countries"></p>
+    <div class="legend"><span><i></i>Free</span><span><i style="background:#1a1a1c"></i>Taken</span><span><i style="background:var(--gold);border-color:var(--gold)"></i>Your pick</span><span title="001 is the very first bib, 042 is the marathon distance, and the rest are classic lucky numbers."><i style="border-color:rgba(232,176,75,.55)"></i>Legendary numbers (001 = the first, 042 = the distance)</span></div>
   </div>
 </section>
 
@@ -225,6 +272,7 @@ footer{padding:40px 0 120px;color:var(--mute);font-size:14px;border-top:1px soli
       <div class="slot"><div class="disp">First women's champion</div><div class="who">_ _ _ _ _</div><p>Name not written yet. Could be yours.</p></div>
     </div>
     <p class="quote">"Who won the first Sumba Marathon?"<br><span>One day, the answer is a name. Make it yours.</span></p>
+    <div class="sharebar" aria-label="Share"><a id="shWa" target="_blank" rel="noopener">WhatsApp</a><a id="shX" target="_blank" rel="noopener">X</a><a id="shFb" target="_blank" rel="noopener">Facebook</a><a id="shLi" target="_blank" rel="noopener">LinkedIn</a><button type="button" id="shCopy">Copy link</button></div>
   </div>
 </section>
 
@@ -254,7 +302,7 @@ footer{padding:40px 0 120px;color:var(--mute);font-size:14px;border-top:1px soli
     <div class="eyebrow">Lock your place in history</div>
     <h2 class="disp">Reserve your bib.</h2>
     <form id="f" novalidate>
-      <div class="full picked"><div class="disp" id="pickN">—</div><div><b id="pickT">No bib picked yet</b><br><span class="fine" style="margin:0">Pick one on the wall above, or we'll give you the lowest free number.</span></div></div>
+      <div class="full picked"><div class="disp" id="pickN">—</div><div><b id="pickT">No bib picked yet</b><br><span class="fine" style="margin:0" id="pickH">Pick one on the wall above, or we'll give you the lowest free number.</span></div></div>
       <div><label for="name">Full name (as on the monument)</label><input id="name" autocomplete="name" required maxlength="80"></div>
       <div><label for="email">Email</label><input id="email" type="email" autocomplete="email" required></div>
       <div><label for="phone">WhatsApp (optional)</label><input id="phone" type="tel" autocomplete="tel" placeholder="+44 …"></div>
@@ -267,7 +315,7 @@ footer{padding:40px 0 120px;color:var(--mute);font-size:14px;border-top:1px soli
   </div>
 </section>
 
-<section>
+<section id="faq">
   <div class="wrap">
     <div class="eyebrow">Questions</div>
     <h2 class="disp">FAQ</h2>
@@ -276,6 +324,9 @@ footer{padding:40px 0 120px;color:var(--mute);font-size:14px;border-top:1px soli
     <details><summary>When?</summary><p>2027. The exact date is announced to the First 100 before it goes public.</p></details>
     <details><summary>Does it cost anything to reserve?</summary><p>No. Reserving your bib is free. Entry details and price come with the date, and the First 100 get them first.</p></details>
     <details><summary>Do I need to be fast?</summary><p>No. You need to finish. The First 100 is about being there at the start of history, not about your time. If you want the champion title, though — bring your legs.</p></details>
+    <details><summary>What happens after I reserve?</summary><p>Your number shows on the live wall with your first name and country, and it's locked to your email. When the date, route and entry details are ready, the First 100 hear first, before anything goes public.</p></details>
+    <details><summary>How do I get to Sumba?</summary><p>Fly to Bali, then take a short domestic flight to Sumba (Tambolaka airport, about an hour). We'll share travel tips with the First 100.</p></details>
+    <details><summary>Why only 100?</summary><p>Because the first edition happens once. 100 names fit on one monument. After that, the First 100 is closed for good.</p></details>
     <details><summary>Can I give my bib to someone else?</summary><p>Yes, just email us before the race. Bibs can't be resold.</p></details>
   </div>
 </section>
@@ -284,7 +335,7 @@ footer{padding:40px 0 120px;color:var(--mute);font-size:14px;border-top:1px soli
   <div class="wrap">Sumba Marathon · Organised by <a href="https://ecobeachcity.com">Eco Beach City</a>, Sumba, Indonesia · <a href="mailto:carlos@ecobeachcity.com">carlos@ecobeachcity.com</a> · <a href="#" onclick="var b=document.getElementById('ck');b.hidden=false;return false">Cookie settings</a></div>
 </footer>
 
-<div class="sbar" id="sbar"><div class="wrap"><p><b id="sbarN">100</b> of 100 bibs left · first marathon in Sumba's history</p><a class="cta" href="#bibs">Claim yours</a></div></div>
+<div class="sbar" id="sbar"><div class="wrap"><p><b id="sbarN">100</b> <span id="sbarT">of 100 bibs left · first marathon in Sumba's history</span></p><a class="cta" href="#bibs">Claim yours</a></div></div>
 <div class="toast" id="toast"></div>
 <div id="ck" hidden><span style="flex:1 1 220px">Cookies to count visits and see how the site is used? (Google Analytics, Microsoft Clarity)</span><button class="y" onclick="smConsent(1)">Accept</button><button onclick="smConsent(0)">Reject</button></div>
 
@@ -294,44 +345,56 @@ var SB='https://oykcsmextclpdnugixqz.supabase.co/rest/v1/rpc/',KEY='sb_publishab
 var LEG={1:1,7:1,10:1,11:1,21:1,23:1,42:1,50:1,77:1,88:1,99:1,100:1};
 var C={"GB":"United Kingdom","US":"United States","ES":"Spain","DK":"Denmark","DE":"Germany","FR":"France","NL":"Netherlands","IT":"Italy","PT":"Portugal","IE":"Ireland","SE":"Sweden","NO":"Norway","FI":"Finland","BE":"Belgium","CH":"Switzerland","AT":"Austria","PL":"Poland","AU":"Australia","NZ":"New Zealand","SG":"Singapore","ID":"Indonesia","MY":"Malaysia","TH":"Thailand","JP":"Japan","KR":"South Korea","CN":"China","HK":"Hong Kong","IN":"India","AE":"United Arab Emirates","SA":"Saudi Arabia","ZA":"South Africa","KE":"Kenya","CA":"Canada","MX":"Mexico","BR":"Brazil","AR":"Argentina","CO":"Colombia","CL":"Chile"};
 var taken={},sel=null,$=function(i){return document.getElementById(i)};
+/* ---- i18n (ES) ---- */
+var LANG=(function(){var q=(location.search.match(/[?&]lang=(en|es)/)||[])[1];if(q){try{localStorage.setItem('sm.lang',q)}catch(e){}return q}try{var st=localStorage.getItem('sm.lang');if(st)return st}catch(e){}return /^es/i.test(navigator.language||'')?'es':'en'})();
+var ES={"Sumba has had <span class=\"z\">0</span> marathons.<span class=\"s\">Until now.</span>": "Sumba ha tenido <span class=\"z\">0</span> maratones.<span class=\"s\">Hasta ahora.</span>", "This is the <b>first marathon in the history of the island.</b> Only <b>100 people</b> will ever run it. Their names get carved into a monument at the finish line — <b>forever.</b>": "Es el <b>primer maratón de la historia de la isla.</b> Solo <b>100 personas</b> lo correrán jamás. Sus nombres se graban en un monumento en la meta — <b>para siempre.</b>", "Claim your bib — free →": "Reserva tu dorsal — gratis →", "The first champion": "El primer campeón", "No card. Takes 30 seconds. One bib per person.": "Sin tarjeta. 30 segundos. Un dorsal por persona.", "Marathons ever run in Sumba": "Maratones corridos jamás en Sumba", "Bibs. No more. Ever.": "Dorsales. Ni uno más. Nunca.", "First champions in history": "Primeros campeones de la historia", "Years your name stays": "Años que dura tu nombre", "Why this will never happen again": "Por qué esto no volverá a pasar", "You can run a hundred marathons.<br><span class=\"g\">Only one can be the first.</span>": "Puedes correr cien maratones.<br><span class=\"g\">Solo uno puede ser el primero.</span>", "Berlin, London, New York — millions have run them. <b>Nobody has ever run 42 km on Sumba.</b> One day there'll be a 10th edition, a 50th, thousands of runners. But the first start line happens once. And when it's gone, it's gone.": "Berlín, Londres, Nueva York — los han corrido millones. <b>Nadie ha corrido nunca 42 km en Sumba.</b> Algún día habrá una 10ª edición, una 50ª, miles de corredores. Pero la primera salida pasa una sola vez. Y cuando pasa, se acabó.", "100 only": "Solo 100", "The First 100 is closed at 100. No waiting list, no second batch, no \"extra places\".": "Los First 100 se cierran en 100. Sin lista de espera, sin segunda tanda, sin \"plazas extra\".", "Your bib number is yours. It's the number that will sit next to your name on the monument.": "Tu dorsal es tuyo. Es el número que irá junto a tu nombre en el monumento.", "Forever": "Para siempre", "In 50 years someone will ask who ran the first one. The answer will be written in stone.": "Dentro de 50 años alguien preguntará quién corrió el primero. La respuesta estará escrita en piedra.", "Until now": "Hasta ahora", "Zero marathons in the history of the island.": "Cero maratones en la historia de la isla.", "The first start line. 100 runners. Two first champions.": "La primera salida. 100 corredores. Dos primeros campeones.", "100 names on the monument at the finish line.": "100 nombres en el monumento de la meta.", "The island · real footage": "La isla · imágenes reales", "This is where<br>history gets run.": "Aquí es donde<br>se corre la historia.", "Lagoons, horse beaches, thatched-roof villages, waves. Sumba is one of the last untouched islands in Indonesia — <b>and nobody has ever run 42 km across it.</b>": "Lagunas, playas con caballos, aldeas de tejados de paja, olas. Sumba es una de las últimas islas vírgenes de Indonesia — <b>y nadie ha corrido nunca 42 km en ella.</b>", "The First 100 · live": "Los First 100 · en directo", "Pick your number<br>before someone else does.": "Elige tu número<br>antes que otro.", "Every bib from <b>001</b> to <b>100</b> is on this wall. Taken ones show the runner's first name. <b>Tap a free one to make it yours.</b>": "Todos los dorsales del <b>001</b> al <b>100</b> están en este muro. Los reservados muestran el nombre del corredor. <b>Toca uno libre para hacerlo tuyo.</b>", "🎲 Give me a lucky number": "🎲 Dame un número de la suerte", "Go": "Ir", "The first champion in history": "El primer campeón de la historia", "Every winner after<br>will be the second.": "Todos los ganadores después<br>serán el segundo.", "Whoever crosses the line first becomes <b>the first marathon champion in the history of Sumba.</b> Not of a year. Of the island. That title can't be beaten, can't be broken, can't be taken away. Records fall. <b>\"First\" doesn't.</b>": "Quien cruce primero la meta será <b>el primer campeón de maratón de la historia de Sumba.</b> No de un año. De la isla. Ese título no se puede batir, ni romper, ni quitar. Los récords caen. <b>\"El primero\", no.</b>", "First men's champion": "Primer campeón", "First women's champion": "Primera campeona", "Name not written yet. Could be yours.": "Nombre aún sin escribir. Puede ser el tuyo.", "\"Who won the first Sumba Marathon?\"<br><span>One day, the answer is a name. Make it yours.</span>": "\"¿Quién ganó el primer Maratón de Sumba?\"<br><span>Un día, la respuesta será un nombre. Que sea el tuyo.</span>", "The monument": "El monumento", "100 names. One stone.<br>At the finish line.": "100 nombres. Una piedra.<br>En la meta.", "The two first champions on top. Then the First 100, by bib number. Set at the finish line on the beach, where every future runner will pass it.": "Arriba, los dos primeros campeones. Debajo, los First 100 por número de dorsal. En la meta, en la playa, donde pasará cada futuro corredor.", "How it works": "Cómo funciona", "Three steps.<br>Zero payment today.": "Tres pasos.<br>Cero pagos hoy.", "Pick your bib": "Elige tu dorsal", "Choose a free number on the wall, from 001 to 100. One bib per person.": "Elige un número libre del muro, del 001 al 100. Un dorsal por persona.", "Reserve it free": "Resérvalo gratis", "Name and email. No card, no payment. Your number is locked to you.": "Nombre y email. Sin tarjeta, sin pago. Tu número queda bloqueado para ti.", "Get it first": "Entérate primero", "The First 100 hear the date, route and entry details before anyone else.": "Los First 100 conocen la fecha, el recorrido y la inscripción antes que nadie.", "Lock your place in history": "Asegura tu sitio en la historia", "Reserve your bib.": "Reserva tu dorsal.", "Full name (as on the monument)": "Nombre completo (como en el monumento)", "WhatsApp (optional)": "WhatsApp (opcional)", "Country": "País", "Claim my bib →": "Reservar mi dorsal →", "Reserving is free and doesn't commit you to anything. We'll only use your details to send you Sumba Marathon news. Your first name and country appear on the live wall.": "Reservar es gratis y no te compromete a nada. Solo usaremos tus datos para enviarte noticias del Maratón de Sumba. Tu nombre y país aparecen en el muro en directo.", "Questions": "Preguntas", "Is this really the first marathon on Sumba?": "¿De verdad es el primer maratón en Sumba?", "As far as we can find, no marathon has ever been run on the island. Sumba is famous for horses, beaches and its culture — not for road races. That's exactly why the first one matters.": "Por lo que hemos podido encontrar, nunca se ha corrido un maratón en la isla. Sumba es famosa por sus caballos, playas y cultura — no por carreras. Por eso el primero importa tanto.", "Where is it?": "¿Dónde es?", "Sumba Island, East Nusa Tenggara, Indonesia — about an hour's flight east of Bali. The finish line is on the beach at Eco Beach City, the organiser and host.": "En la isla de Sumba, Nusa Tenggara Oriental, Indonesia — a una hora de vuelo al este de Bali. La meta está en la playa de Eco Beach City, organizador y anfitrión.", "When?": "¿Cuándo?", "2027. The exact date is announced to the First 100 before it goes public.": "En 2027. La fecha exacta se anuncia a los First 100 antes de hacerse pública.", "Does it cost anything to reserve?": "¿Cuesta algo reservar?", "No. Reserving your bib is free. Entry details and price come with the date, and the First 100 get them first.": "No. Reservar tu dorsal es gratis. La inscripción y el precio llegan con la fecha, y los First 100 los reciben primero.", "Do I need to be fast?": "¿Tengo que ser rápido?", "No. You need to finish. The First 100 is about being there at the start of history, not about your time. If you want the champion title, though — bring your legs.": "No. Tienes que terminar. Los First 100 van de estar en el inicio de la historia, no de tu tiempo. Eso sí, si quieres el título de campeón — trae piernas.", "What happens after I reserve?": "¿Qué pasa después de reservar?", "Your number shows on the live wall with your first name and country, and it's locked to your email. When the date, route and entry details are ready, the First 100 hear first, before anything goes public.": "Tu número aparece en el muro en directo con tu nombre y país, y queda ligado a tu email. Cuando estén la fecha, el recorrido y la inscripción, los First 100 se enteran primero, antes de que sea público.", "How do I get to Sumba?": "¿Cómo llego a Sumba?", "Fly to Bali, then take a short domestic flight to Sumba (Tambolaka airport, about an hour). We'll share travel tips with the First 100.": "Vuela a Bali y desde allí un vuelo nacional corto a Sumba (aeropuerto de Tambolaka, una hora aprox.). Compartiremos consejos de viaje con los First 100.", "Why only 100?": "¿Por qué solo 100?", "Because the first edition happens once. 100 names fit on one monument. After that, the First 100 is closed for good.": "Porque la primera edición pasa una sola vez. En un monumento caben 100 nombres. Después, los First 100 se cierran para siempre.", "Can I give my bib to someone else?": "¿Puedo dar mi dorsal a otra persona?", "Yes, just email us before the race. Bibs can't be resold.": "Sí, escríbenos antes de la carrera. Los dorsales no se pueden revender.", "The island": "La isla", "The First 100": "Los First 100", "First champion": "Primer campeón", "Claim bib": "Reservar", "Claim yours": "Reserva el tuyo", "Skip to the bib wall": "Ir al muro de dorsales"};
+function T(en,es){return LANG==='es'?es:en}
+if(LANG==='es'){document.documentElement.lang='es';document.title='Maratón de Sumba — El primer maratón de la historia de Sumba. Solo 100 dorsales.';
+  [].forEach.call(document.querySelectorAll('h1,h2,h3,p,.eyebrow,.disp,summary,a,button,label,span,b,small,div.tag'),function(el){var k=el.innerHTML.trim();if(ES[k]!==undefined)el.innerHTML=ES[k]});
+  var lb=$('langBtn');lb.textContent='EN';lb.href='?lang=en';lb.setAttribute('hreflang','en');
+  $('name').placeholder='';$('findN').placeholder='Buscar nº (1–100)';
+  $('leftT').textContent='de 100 dorsales libres · reservar es gratis';$('sbarT').textContent='de 100 dorsales libres · primer maratón de la historia de Sumba';
+  $('liveT').textContent='SUMBA · IMÁGENES REALES';$('tagT').textContent='Donde se correrán los primeros 42,195 km de la historia de la isla 🏝️';
+  $('pickT').textContent='Aún no has elegido dorsal';$('pickH').textContent='Elige uno en el muro, o te damos el número libre más bajo.';}
+
 function pad(n){return ('00'+n).slice(-3)}
 function flag(c){if(!c||c.length!=2)return'';return String.fromCodePoint.apply(null,c.toUpperCase().split('').map(function(x){return 127397+x.charCodeAt(0)}))}
 function esc(s){return String(s||'').replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
-var sel_c=$('country');sel_c.innerHTML='<option value="">Select…</option>'+Object.keys(C).sort(function(a,b){return C[a]<C[b]?-1:1}).map(function(k){return '<option value="'+k+'">'+C[k]+'</option>'}).join('')+'<option value="XX">Other</option>';
+var sel_c=$('country');sel_c.innerHTML='<option value="">'+T('Select…','Elige…')+'</option>'+Object.keys(C).sort(function(a,b){return C[a]<C[b]?-1:1}).map(function(k){return '<option value="'+k+'">'+C[k]+'</option>'}).join('')+'<option value="XX">'+T('Other','Otro')+'</option>';
 try{var lc=(navigator.language||'').split('-')[1];if(lc&&C[lc.toUpperCase()])sel_c.value=lc.toUpperCase()}catch(e){}
 function render(){
   var n=Object.keys(taken).length,left=100-n;
   $('leftN').textContent=left;$('sbarN').textContent=left;$('meter').style.width=(n)+'%';
   var w='';for(var i=1;i<=100;i++){var t=taken[i];
-    w+='<button type="button" role="listitem" class="bib'+(t?' taken':'')+(LEG[i]&&!t?' vip':'')+(sel===i?' sel':'')+'" data-b="'+i+'"'+(t?' disabled aria-label="Bib '+pad(i)+' taken by '+esc(t.n)+'"':' aria-label="Bib '+pad(i)+' free"')+'><span class="num">'+pad(i)+'</span><small>'+(t?esc(t.n)+' '+flag(t.c):(sel===i?'Yours?':(LEG[i]?'legendary':'free')))+'</small></button>'}
-  $('wall').innerHTML=w;
-  var s='<h3>THE FIRST 100 · SUMBA MARATHON</h3><div><b>★</b>FIRST MEN\'S CHAMPION — <span class="open">to be written</span></div><div><b>★</b>FIRST WOMEN\'S CHAMPION — <span class="open">to be written</span></div>';
+    w+='<button type="button" role="listitem" class="bib'+(t?' taken':'')+(LEG[i]&&!t?' vip':'')+(sel===i?' sel':'')+'" data-b="'+i+'"'+(t?' disabled aria-label="'+T('Bib ','Dorsal ')+pad(i)+T(' taken by ',' reservado por ')+esc(t.n)+'"':' aria-label="'+T('Bib ','Dorsal ')+pad(i)+T(' free',' libre')+'"')+'><span class="num">'+pad(i)+'</span><small>'+(t?esc(t.n)+' '+flag(t.c):(sel===i?T('Yours?','¿Tuyo?'):(LEG[i]?T('legendary','legendario'):T('free','libre'))))+'</small></button>'}
+  $('wall').innerHTML=w;var cs={};Object.keys(taken).forEach(function(k){if(taken[k].c)cs[taken[k].c]=1});var nc=Object.keys(cs).length;$('countries').textContent=n?T(n+' runner'+(n>1?'s':'')+' from '+nc+' countr'+(nc==1?'y':'ies')+' so far.',n+' corredor'+(n>1?'es':'')+' de '+nc+' país'+(nc==1?'':'es')+' hasta ahora.'):'';
+  var s='<h3>'+T('THE FIRST 100 · SUMBA MARATHON','LOS FIRST 100 · MARATÓN DE SUMBA')+'</h3><div><b>★</b>'+T('FIRST MEN\'S CHAMPION','PRIMER CAMPEÓN')+' — <span class="open">'+T('to be written','por escribir')+'</span></div><div><b>★</b>'+T('FIRST WOMEN\'S CHAMPION','PRIMERA CAMPEONA')+' — <span class="open">'+T('to be written','por escribir')+'</span></div>';
   for(var j=1;j<=100;j++){var x=taken[j];s+='<div><b>'+pad(j)+'</b>'+(x?esc(x.n).toUpperCase()+' '+flag(x.c):'<span class="open">· · · · ·</span>')+'</div>'}
   $('stone').innerHTML=s;
-  var tk=['<span>🔴 Live: <b>'+left+'</b> of 100 bibs left</span>','<span>The first marathon in the history of Sumba</span>','<span>Only 100 names on the monument</span>','<span>Every winner after the first will be the second</span>'];
-  var last=Object.keys(taken).map(Number).slice(-4).reverse().map(function(b){return '<span>Bib '+pad(b)+' → '+esc(taken[b].n)+' '+flag(taken[b].c)+'</span>'});
+  var tk=['<span>🔴 '+T('Live','En directo')+': <b>'+left+'</b> '+T('of 100 bibs left','de 100 dorsales libres')+'</span>','<span>'+T('The first marathon in the history of Sumba','El primer maratón de la historia de Sumba')+'</span>','<span>'+T('Only 100 names on the monument','Solo 100 nombres en el monumento')+'</span>','<span>'+T('Every winner after the first will be the second','Todos los ganadores después del primero serán el segundo')+'</span>'];
+  var last=Object.keys(taken).map(Number).slice(-4).reverse().map(function(b){return '<span>'+T('Bib ','Dorsal ')+pad(b)+' → '+esc(taken[b].n)+' '+flag(taken[b].c)+'</span>'});
   var row=tk.concat(last).join('');$('tickrow').innerHTML=row+row;
 }
-function pick(b){sel=b;$('pickN').textContent=pad(b);$('pickT').textContent='Bib '+pad(b)+' — not yours until you claim it';render()}
+function pick(b){sel=b;$('pickN').textContent=pad(b);$('pickT').textContent=T('Bib ','Dorsal ')+pad(b)+T(' — not yours until you claim it',' — no es tuyo hasta que lo reserves');render()}
 $('wall').addEventListener('click',function(e){var b=e.target.closest('.bib');if(!b||b.disabled)return;pick(+b.getAttribute('data-b'));$('claim').scrollIntoView({behavior:'smooth'});setTimeout(function(){$('name').focus({preventScroll:true})},600)});
-function load(){return fetch(SB+'sm_status',{method:'POST',headers:{'content-type':'application/json',apikey:KEY},body:'{}'}).then(function(r){return r.json()}).then(function(a){var t={};(a||[]).forEach(function(x){t[x.b]={n:x.n,c:x.c}});var nw=Object.keys(t).filter(function(k){return !taken[k]});var first=!Object.keys(taken).length;taken=t;if(sel&&taken[sel]){sel=null;$('pickN').textContent='—';$('pickT').textContent='Your pick was just taken. Choose another.'}render();if(!first&&nw.length){var b=nw[nw.length-1];toast('🔥 '+taken[b].n+' '+flag(taken[b].c)+' just claimed bib '+pad(b))}}).catch(function(){render()})}
+function load(){return fetch(SB+'sm_status',{method:'POST',headers:{'content-type':'application/json',apikey:KEY},body:'{}'}).then(function(r){return r.json()}).then(function(a){var t={};(a||[]).forEach(function(x){t[x.b]={n:x.n,c:x.c}});var nw=Object.keys(t).filter(function(k){return !taken[k]});var first=!Object.keys(taken).length;taken=t;if(sel&&taken[sel]){sel=null;$('pickN').textContent='—';$('pickT').textContent=T('Your pick was just taken. Choose another.','Acaban de reservar tu número. Elige otro.')}render();if(!first&&nw.length){var b=nw[nw.length-1];toast('🔥 '+taken[b].n+' '+flag(taken[b].c)+T(' just claimed bib ',' acaba de reservar el dorsal ')+pad(b))}}).catch(function(){render()})}
 function toast(m){var t=$('toast');t.textContent=m;t.classList.add('on');clearTimeout(t._h);t._h=setTimeout(function(){t.classList.remove('on')},4500)}
 $('f').addEventListener('submit',function(e){e.preventDefault();var m=$('msg');m.className='msg';
   var name=$('name').value.trim(),email=$('email').value.trim();
-  if(!name){m.className='msg err';m.textContent='Your name goes on the monument — add it.';return}
-  if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){m.className='msg err';m.textContent='Check your email.';return}
+  if(!name){m.className='msg err';m.textContent=T('Your name goes on the monument — add it.','Tu nombre va en el monumento — escríbelo.');return}
+  if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){m.className='msg err';m.textContent=T('Check your email.','Revisa tu email.');return}
   var b=sel;if(!b){for(var i=1;i<=100;i++)if(!taken[i]){b=i;break}}
-  if(!b){m.className='msg err';m.textContent='All 100 bibs are gone. The First 100 is closed.';return}
-  $('go').disabled=true;$('go').textContent='Locking bib '+pad(b)+'…';
-  fetch(SB+'sm_claim',{method:'POST',headers:{'content-type':'application/json',apikey:KEY},body:JSON.stringify({p_bib:b,p_name:name,p_email:email,p_phone:$('phone').value.trim(),p_country:sel_c.value==='XX'?'':sel_c.value,p_lang:(navigator.language||'').slice(0,8),p_src:(location.pathname+location.search+' '+document.referrer).slice(0,300)})})
-  .then(function(r){return r.json()}).then(function(r){$('go').disabled=false;$('go').textContent='Claim my bib →';
-    if(r&&r.ok){m.className='msg ok';m.innerHTML='🏁 Bib <b>'+pad(r.bib)+'</b> is yours, '+esc(name.split(' ')[0])+'. You\'re one of the First 100 in the history of Sumba. Check your inbox — and tell the friend you\'d want next to you on the start line.';
+  if(!b){m.className='msg err';m.textContent=T('All 100 bibs are gone. The First 100 is closed.','Los 100 dorsales están reservados. Los First 100 están cerrados.');return}
+  $('go').disabled=true;$('go').textContent=T('Locking bib ','Bloqueando dorsal ')+pad(b)+'…';
+  fetch(SB+'sm_claim',{method:'POST',headers:{'content-type':'application/json',apikey:KEY},body:JSON.stringify({p_bib:b,p_name:name,p_email:email,p_phone:$('phone').value.trim(),p_country:sel_c.value==='XX'?'':sel_c.value,p_lang:(navigator.language||'').slice(0,8),p_src:(location.pathname+location.search+' ref='+REF+' '+document.referrer).slice(0,300)})})
+  .then(function(r){return r.json()}).then(function(r){$('go').disabled=false;$('go').textContent=T('Claim my bib →','Reservar mi dorsal →');
+    if(r&&r.ok){m.className='msg ok';m.innerHTML=T('🏁 Bib <b>'+pad(r.bib)+'</b> is yours, '+esc(name.split(' ')[0])+'. You\'re one of the First 100 in the history of Sumba. You\'ll hear the date before anyone else — now tell the friend you\'d want next to you on the start line.','🏁 El dorsal <b>'+pad(r.bib)+'</b> es tuyo, '+esc(name.split(' ')[0])+'. Eres uno de los First 100 de la historia de Sumba. Sabrás la fecha antes que nadie — ahora díselo al amigo que quieres a tu lado en la salida.');saveMine(r.bib,name);
       try{gtag('event','claim_bib',{bib:r.bib})}catch(x){}makeCard(r.bib,name);sel=null;$('f').reset();load();return}
     m.className='msg err';
-    if(r&&r.error==='taken'){m.textContent='Too late — bib '+pad(b)+' was just taken. Pick another one.';sel=null;load()}
-    else if(r&&r.error==='already'){m.textContent='This email already holds bib '+pad(r.bib)+'. One bib per person.'}
-    else m.textContent='Something went wrong. Try again, or email carlos@ecobeachcity.com.'})
-  .catch(function(){$('go').disabled=false;$('go').textContent='Claim my bib →';m.className='msg err';m.textContent='Connection problem. Try again.'})});
+    if(r&&r.error==='taken'){m.textContent=T('Too late — bib '+pad(b)+' was just taken. Pick another one.','Tarde — el dorsal '+pad(b)+' acaban de reservarlo. Elige otro.');sel=null;load()}
+    else if(r&&r.error==='already'){m.textContent=T('This email already holds bib '+pad(r.bib)+'. One bib per person.','Este email ya tiene el dorsal '+pad(r.bib)+'. Un dorsal por persona.')}
+    else m.textContent=T('Something went wrong. Try again, or email carlos@ecobeachcity.com.','Algo ha fallado. Inténtalo de nuevo o escribe a carlos@ecobeachcity.com.')})
+  .catch(function(){$('go').disabled=false;$('go').textContent=T('Claim my bib →','Reservar mi dorsal →');m.className='msg err';m.textContent=T('Connection problem. Try again.','Problema de conexión. Inténtalo de nuevo.')})});
 var R=[['weekuri','Weekuri Lagoon','Sumba'],['horses','Horses on the beach','Sumba'],['ratenggaro','Ratenggaro village','Sumba'],['surf','Indian Ocean waves','Sumba'],['watubela','Watu Bela beach','Sumba']];
 $('reels').innerHTML=R.map(function(r){return '<div class="reel"><video data-src="vid/'+r[0]+'.mp4" poster="vid/'+r[0]+'.jpg" muted loop playsinline preload="none"></video><span>'+r[1]+'<small>'+r[2]+'</small></span></div>'}).join('');
 if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){var v=e.target;if(e.isIntersecting){if(!v.src)v.src=v.getAttribute('data-src');var p=v.play();if(p&&p.catch)p.catch(function(){})}else v.pause()})},{threshold:.35});[].forEach.call(document.querySelectorAll('.reel video'),function(v){io.observe(v)})}else{[].forEach.call(document.querySelectorAll('.reel video'),function(v){v.src=v.getAttribute('data-src')})}
@@ -349,6 +412,31 @@ function makeCard(b,name){var c=$('card'),x=c.getContext('2d'),W=1080,H=1920;var
   $('shareBtn').onclick=function(){var t='I just claimed bib '+pad(b)+' for the first marathon in the history of Sumba. Only 100 of us. Grab yours: https://sumbamarathon.com/?bib';
     c.toBlob(function(bl){try{var f=new File([bl],'sumba-marathon-bib.png',{type:'image/png'});if(navigator.canShare&&navigator.canShare({files:[f]})){navigator.share({files:[f],text:t}).catch(function(){});return}}catch(e){}
       if(navigator.share){navigator.share({text:t,url:'https://sumbamarathon.com/'}).catch(function(){})}else{window.open('https://wa.me/?text='+encodeURIComponent(t),'_blank')}});try{gtag('event','share_bib',{bib:b})}catch(e){}}}
+/* referral */
+var REF=(location.search.match(/[?&]ref=(\d{1,3})/)||[])[1]||'';try{if(REF)sessionStorage.setItem('sm.ref',REF);else REF=sessionStorage.getItem('sm.ref')||''}catch(e){}
+if(REF&&+REF>=1&&+REF<=100){var rb=$('refBanner');rb.textContent=T('🏃 Runner #'+pad(+REF)+' of the First 100 invited you. Bibs are going — pick yours.','🏃 El corredor #'+pad(+REF)+' de los First 100 te ha invitado. Los dorsales vuelan — elige el tuyo.');rb.classList.add('on')}
+/* my bib (this browser) */
+function saveMine(b,n){try{localStorage.setItem('sm.mine',JSON.stringify({b:b,n:n}))}catch(e){}showMine()}
+function showMine(){var m=null;try{m=JSON.parse(localStorage.getItem('sm.mine')||'null')}catch(e){}if(!m)return;var el=$('mine');var link='https://sumbamarathon.com/?ref='+m.b;
+  el.innerHTML=T('You hold bib <b>'+pad(m.b)+'</b>. Invite someone to stand next to you on the start line: ','Tienes el dorsal <b>'+pad(m.b)+'</b>. Invita a alguien a tu lado en la salida: ')+'<a href="https://wa.me/?text='+encodeURIComponent(T('I hold bib '+pad(m.b)+' for the first marathon in the history of Sumba. Only 100 of us. Take one: ','Tengo el dorsal '+pad(m.b)+' del primer maratón de la historia de Sumba. Solo 100. Coge uno: ')+link)+'" target="_blank" rel="noopener">WhatsApp</a> · <a href="#" id="cpMine">'+T('copy my invite link','copiar mi enlace')+'</a>';el.classList.add('on');
+  $('cpMine').onclick=function(e){e.preventDefault();copy(link)}}
+function copy(t){(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){toast(T('Link copied ✓','Enlace copiado ✓'))}).catch(function(){prompt('Copy',t)})}
+showMine();
+/* lucky + find */
+$('lucky').onclick=function(){var f=[];for(var i=1;i<=100;i++)if(!taken[i])f.push(i);if(!f.length)return;pick(f[Math.floor(Math.random()*f.length)]);var b=document.querySelector('.bib.sel');if(b)b.scrollIntoView({behavior:'smooth',block:'center'});toast(T('🎲 Bib '+pad(sel)+' is free. Claim it below.','🎲 El dorsal '+pad(sel)+' está libre. Resérvalo abajo.'))};
+$('findB').onclick=function(){var n=+$('findN').value;if(!(n>=1&&n<=100))return;if(taken[n]){toast(T('Bib '+pad(n)+' is taken by '+taken[n].n+'.','El dorsal '+pad(n)+' es de '+taken[n].n+'.'));return}pick(n);var b=document.querySelector('.bib.sel');if(b)b.scrollIntoView({behavior:'smooth',block:'center'})};
+$('findN').addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();$('findB').click()}});
+/* share bar */
+(function(){var u='https://sumbamarathon.com/',t=T('Sumba has never had a marathon. Only 100 people will run the first one. Their names go on a monument forever.','Sumba nunca ha tenido un maratón. Solo 100 personas correrán el primero. Sus nombres irán en un monumento para siempre.');
+  $('shWa').href='https://wa.me/?text='+encodeURIComponent(t+' '+u);$('shX').href='https://x.com/intent/post?text='+encodeURIComponent(t)+'&url='+encodeURIComponent(u);
+  $('shFb').href='https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(u);$('shLi').href='https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(u);
+  $('shCopy').onclick=function(){copy(u)};$('shCopy').textContent=T('Copy link','Copiar enlace')})();
+/* country preselect from edge geo */
+fetch('/api/geo').then(function(r){return r.json()}).then(function(g){if(g&&g.country&&!sel_c.value){var o=sel_c.querySelector('option[value="'+g.country+'"]');if(o)sel_c.value=g.country}}).catch(function(){});
+/* video: respect reduced motion, skip hidden phone video on mobile */
+(function(){var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;var ph=document.querySelector('.phone video');
+  if(ph&&getComputedStyle(ph.parentNode).display==='none'){ph.removeAttribute('autoplay');ph.preload='none';try{ph.pause();ph.removeAttribute('src');ph.load()}catch(e){}}
+  if(rm)[].forEach.call(document.querySelectorAll('video'),function(v){v.removeAttribute('autoplay');try{v.pause()}catch(e){}})})();
 var sb=$('sbar');window.addEventListener('scroll',function(){var y=scrollY,c=$('claim').getBoundingClientRect().top;sb.classList.toggle('on',y>innerHeight*.7&&(c>innerHeight||c<-400))},{passive:true});
 if(/[?&]bib=(\d{1,3})/.test(location.search)){var qb=+RegExp.$1;if(qb>=1&&qb<=100)sel=qb}
 load().then(function(){if(sel&&!taken[sel])pick(sel)});setInterval(load,20000);
