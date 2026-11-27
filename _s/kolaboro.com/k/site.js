@@ -724,8 +724,10 @@
   var save = navigator.connection && navigator.connection.saveData;
   // n32s (item 259): only after the reader's first touch, key or scroll (window.kbLate), never during the first load: building the
   // index of 2,000 projects was a 150 ms task on a phone
-  if (!has && !save && !priv) window.kbWhenActive(function () {
-    var go = function () { (window.requestIdleCallback || function (f) { setTimeout(f, 200); })(function () { setTimeout(warm, 2500); }, { timeout: 4000 }); };
+  // n40 k54: with the index already saved, only the palette script is fetched (it adds its style and hidden box in idle time), so the
+  // first tap on search shows a ready box instead of restyling the page
+  if (!save && !priv) window.kbWhenActive(function () {
+    var go = function () { (window.requestIdleCallback || function (f) { setTimeout(f, 200); })(function () { setTimeout(has ? function () { window.kbLoad('palette').catch(function () {}); } : warm, 2500); }, { timeout: 4000 }); };
     var late = window.kbIdle || window.kbLate || function (f) { addEventListener('load', function () { setTimeout(f, 8000); }, { once: true }); };   // n40 k52: kbIdle, not the consent-gated tag queue
     late(go);
   });

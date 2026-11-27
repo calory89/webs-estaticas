@@ -107,7 +107,8 @@
   PAGES.forEach(function (p) { items.push({ t: 'page', title: p[0], sub: p[3] + ' · kolaboro.com' + p[1], href: p[1], h: norm(p[0] + ' ' + p[2] + ' ' + p[1].replace(/[\/-]/g, ' ')), w: 3 }); });
   var pageCount = items.length;
   // n40 k52: when the palette is closed (the background copy for offline search) the 2,000 project rows are built 100 at a time, yielding
-  // between slices (it was one 110 to 330 ms task on a phone); the finished list replaces the old one in one step. Open: built at once, as before.
+  // between slices (it was one 110 to 330 ms task on a phone); the finished list replaces the old one in one step. n40 k54: open, 300 at a time,
+  // so typing in the box is never held up by a rebuild (it was a 150 to 260 ms task right after the palette opened on a phone).
   var BGN = 0;
   function nextSlice(f) { if (window.scheduler && scheduler.yield) scheduler.yield().then(f); else setTimeout(f, 0); }
   function build(ix) {
@@ -115,7 +116,7 @@
     (ix.m || []).forEach(function (m) { out.push({ t: 'market', title: TL ? pl(m[0]) : m[0], sub: (TL ? TL.mk + ' · ' + m[2] + ' ' + pn(m[2], TL.pj) + (m[3] && m[3] !== m[0] ? ' · ' + pl(m[3]) : '') : 'Market · ' + m[2] + ' project' + (m[2] === 1 ? '' : 's') + (m[3] && m[3] !== m[0] ? ' · ' + m[3] : '')), href: '/m/' + m[1] + '/', h: norm(m[0] + ' ' + m[3] + ' market' + (TL ? ' ' + pl(m[0]) + ' ' + pl(m[3]) : '')), w: 2 }); });
     (function step() {
       if (g !== BGN) return;
-      for (var end = bg ? Math.min(P.length, i + 100) : P.length; i < end; i++) { var p = P[i];
+      for (var end = Math.min(P.length, i + (bg ? 100 : 300)); i < end; i++) { var p = P[i];
         var id = p[0], idn = norm(id), sub = TL ? [pl(p[1]) + (p[2] && p[2] !== p[1] ? (LG === 'ar' ? '، ' : LG === 'zh' ? '，' : ', ') + pl(p[2]) : ''), pl(p[3]), TL.st[p[4]] || p[4], p[5] != null ? p[5] + (LG === 'zh' ? '' : ' ') + TL.ck : '', p[7] ? p[7] + ' ' + pn(p[7], TL.pr) : ''].filter(Boolean).join(' · ') : [p[1] + (p[2] && p[2] !== p[1] ? ', ' + p[2] : ''), p[3], p[4], p[5] != null ? p[5] + ' of 6 checks public' : '', p[7] ? p[7] + ' public problem' + (p[7] > 1 ? 's' : '') : ''].filter(Boolean).join(' · ');
         out.push({ t: 'project', title: id, sub: sub, href: '/p/' + encodeURIComponent(id) + '/', flags: p[7], h: norm(id + ' ' + idn.replace(/-/g, '') + ' ' + idn.replace(/-0*/g, ' ') + ' ' + p[1] + ' ' + p[2] + ' ' + p[3] + ' ' + p[4] + ' ' + p[8] + ' ' + p[9] + (p[7] ? ' flags problems' : '')), w: 1 });
       }
@@ -123,7 +124,7 @@
       items = out;
       meta.n = (ix.p || []).length; meta.markets = (ix.m || []).length; meta.updated = ix.updated || ''; ready = true;
       if (NX) named(NX);
-      if (bg && root && root.classList.contains('on')) render();
+      if (root && root.classList.contains('on')) render();
     })();
   }
   // 6 Nov 2026 (b9a): named projects and developers. /api/v1/search-index gives the public name, developer and named page of every
@@ -144,7 +145,7 @@
     if (c && Date.now() - c.at < 6 * 3600e3) return Promise.resolve();
     return fetch('/api/v1/search-index').then(function (r) { return r.ok ? r.json() : null; }).then(function (j) {
       if (!j || !j.p) return; NX = j; if (ready) { build(LASTIX || { p: [], m: [] }); }
-      try { st && st.setItem(NLS, JSON.stringify({ at: Date.now(), ix: j })); } catch (e) {}
+      var at = Date.now(); later(function () { st && st.setItem(NLS, JSON.stringify({ at: at, ix: j })); });
       if (root && root.classList.contains('on')) render();
     }).catch(function () {});
   }
@@ -177,6 +178,7 @@
   }
   var LASTIX = null;
   function store() { try { return window.localStorage; } catch (e) { return null; } }
+  function later(f) { (window.requestIdleCallback || function (g) { setTimeout(g, 300); })(function () { try { f(); } catch (e) {} }, { timeout: 5000 }); }
   var loading = null;
   function load() {
     if (loading) return loading;
@@ -188,7 +190,8 @@
       .then(function (r) {
         if (!r || !r.ok || !r.json || !r.json.p) return;
         if (!cached || cached.ix.v !== r.json.v) build(r.json);
-        try { st && st.setItem(LS, JSON.stringify({ at: Date.now(), ix: r.json })); meta.offline = true; } catch (e) { meta.offline = false; }
+        var at = Date.now(), tx = typeof r.text === 'string' && r.text.charAt(0) === '{' ? r.text : null; meta.offline = !!st;
+        later(function () { try { st && st.setItem(LS, tx ? '{"at":' + at + ',"ix":' + tx + '}' : JSON.stringify({ at: at, ix: r.json })); } catch (e) { meta.offline = false; } });
         if (r.check) r.check.then(function (c) { meta.verified = c.state; foot(); });
       }).catch(function () {});
     var nm = loadNamed(); load34();
@@ -299,22 +302,30 @@
     root.addEventListener('keydown', function (e) { if (e.key === 'Escape') { e.preventDefault(); close(); return; } if (e.key !== 'Tab') return; var b = root.querySelector('.kxp-x'); e.preventDefault(); (document.activeElement === input ? b : input).focus(); });
     root.addEventListener('mousedown', function (e) { if (e.target === root) close(); });
   }
-  var bodyOverflow = '';
+  var bodyOverflow = '', OPN = 0;
   function open(q) {
     mount(); if (root.classList.contains('on')) { input.select(); return; }
-    prevFocus = document.activeElement; root.classList.add('on'); bodyOverflow = document.body.style.overflow; document.body.style.overflow = 'hidden';
+    // n40 k54: the tap only shows the box (its style and markup were added in idle time); focus, the result list, the scroll lock and
+    // the index follow once that frame is painted (in one task they were a 170 to 220 ms interaction on a phone)
+    prevFocus = document.activeElement; root.classList.add('on'); var g = ++OPN;
     if (typeof q === 'string') input.value = q;
-    render(); input.focus(); input.select();
-    load().then(function () { if (root.classList.contains('on')) render(); });
-    try { if (window.kbEvent) kbEvent('palette_open'); } catch (e) {}
     document.querySelectorAll('[data-kx-search]').forEach(function (b) { b.setAttribute('aria-expanded', 'true'); });
+    (window.requestAnimationFrame || setTimeout)(function () { setTimeout(function () {
+      if (g !== OPN || !root.classList.contains('on')) return;
+      try { input.focus({ preventScroll: true }); } catch (e) { input.focus(); } input.select();
+      bodyOverflow = document.body.style.overflow; document.body.style.overflow = 'hidden'; render();
+      load().then(function () { if (root.classList.contains('on')) render(); });
+      try { if (window.kbEvent) kbEvent('palette_open'); } catch (e) {}
+    }, 0); });
   }
   function close(navigating) {
     if (!root || !root.classList.contains('on')) return;
-    root.classList.remove('on'); document.body.style.overflow = bodyOverflow;
+    root.classList.remove('on'); OPN++; document.body.style.overflow = bodyOverflow;
     document.querySelectorAll('[data-kx-search]').forEach(function (b) { b.setAttribute('aria-expanded', 'false'); });
     if (!navigating && prevFocus && prevFocus.focus) prevFocus.focus();
   }
   window.KBPalette = { open: open, close: close, load: load, search: search, isOpen: function () { return !!(root && root.classList.contains('on')); }, meta: meta };
   try { document.dispatchEvent(new CustomEvent('kbpalette:ready')); } catch (e) {}
+  // n40 k54: style and hidden markup added in idle time (the stylesheet only has .kxp rules, the box stays display:none until opened)
+  (window.requestIdleCallback || function (f) { setTimeout(f, 200); })(function () { try { if (document.body) mount(); } catch (e) {} }, { timeout: 3000 });
 })();

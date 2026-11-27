@@ -134,7 +134,12 @@ export function trHtml(html, D, LS) {
 async function englishOf(env, key, inner, q) {
   if (key === 'new' || key === 'vs' || FAM(key)) { const r = await inner('/' + key + '/' + q); return r && r.status === 200 ? await r.text() : null; }
   if (key === SOP) return await asset(env, $q.r, false);   // n40 L3: the report in 7 languages is a summary (key findings, method, tables), built from /data/n32t/sop-summary.txt
-  return await asset(env, '/' + key + '/', false);
+  const h = await asset(env, '/' + key + '/', false); return key === 'registers' && h ? regCounts(h) : h;
+}
+// n40 k54: the counts on /registers/ are taken from its entries (registers, confirmed links, markets), so they never go stale
+export function regCounts(h) {
+  const c = x => (h.match(x) || []).length, n = c(/<li class="rg" /g), k = c(/<a class="rg-open"/g), m = c(/<article class="rgc"/g); if (!n || !m) return h;
+  return h.replace(/\d+( registers and offices listed; )\d+( with a link)/, n + '$1' + k + '$2').replace(/(where to look in )\d+( markets)/, '$1' + m + '$2').replace(/(Showing all )\d+( markets\.)/, '$1' + m + '$2');
 }
 function parts(src, shellTxt) {
   const mm = /<main[^>]*>([\s\S]*)<\/main>/.exec(src); if (!mm) return null;
@@ -227,7 +232,8 @@ async function build(env, lang, key, D, shell, inner, q) {
 
 // English pages with translations: hreflang alternates and the language menu pointed at the translated page
 export async function enAlt(u, r, env) {
-  const key = u.pathname.slice(1, -1), L = await langsOf(env, key); if (!L.length) return r;
+  const key = u.pathname.slice(1, -1); if (key === 'registers') { try { const hd = new Headers(r.headers); hd.delete('content-length'); r = new Response(regCounts(await r.text()), { status: r.status, headers: hd }); } catch (e) {} }
+  const L = await langsOf(env, key); if (!L.length) return r;
   const tags = LANGS.filter(l => l === 'en' || L.includes(l)).map(l => $q.aM + l + $q.aN + ORIGIN + pre(l) + u.pathname + '">').join('') + $q.aO + ORIGIN + u.pathname + '">';
   return new HTMLRewriter().on($q.aP, { element(e) { e.remove(); } }).on('head', { element(e) { e.append(tags, { html: true }); } })
     .on($q.aQ, { element(e) { const l = e.getAttribute($q.aR); if (L.includes(l)) e.setAttribute('href', pre(l) + u.pathname); } }).transform(r);

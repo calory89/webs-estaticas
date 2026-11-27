@@ -127,6 +127,13 @@ async function viaTop3(req, env, ctx) {
 }
 // kolaboro.com: browser security headers (no framing of private pages, camera and location only for our own pages)
 const KB_CITE29 = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:numbers|press\/delivery-index\/\d{4}-\d{2}|reports(?:\/[a-z0-9-]{2,40})?|rankings(?:\/[a-z0-9-]{2,40}){0,2}|handover(?:\/[a-z0-9-]{2,40}){0,2}|m\/[^/.]{2,60}|projects|vs|countries(?:\/[a-z0-9-]{2,60})?)\/$/;   // n32s (item 227): also reports, rankings, handover, market, country hubs and /projects/, /vs/   // n29e (batch 29): pages whose figures get a "Cite" button (/k/cite29.js)
+// n40 k54: a title still over 60 characters without " | Kolaboro" is cut at its last break (colon, question mark, comma, full stop,
+// bracket) that leaves 20 to 60 characters ("Is it safe to buy off-plan in Malaysia? What 656 projects show" keeps the question)
+function kbT60(t) {
+  t = t.replace(/\s*\|\s*Kolaboro\s*$/, ''); const L = x => [...x.replace(/&(?:amp|lt|gt|quot|#39|#x27);/g, 'x').trim()].length; if (L(t) <= 60) return t;
+  let b = null; for (const m of t.matchAll(/: |\? |\u061f |\uff1f|\uff1a|\u060c |\. | \(|, | - /g)) { const c = t.slice(0, m.index) + (/[?\u061f\uff1f]/.test(m[0]) ? m[0].trim() : ''), k = L(c); if (k >= 20 && k <= 60) b = c; }
+  return b || t;
+}
 function kbHeaders(r, u) {
   const ct = r.headers.get('content-type') || '';
   if (!/text\/html/.test(ct)) {
@@ -210,7 +217,7 @@ function kbHeaders(r, u) {
   // n33a (batch 33): items 86 (a JSON Feed and an Atom feed of the data changes in the <head> of every hub that carries none) and 89
   // (who made a report, from what, the method and where to send corrections, under every report)
   let fJ = false, fA = false; const n33 = kn33a && r.status === 200 && !priv && !embed ? kn33a : null, n33F = n33 && n33.FEED_HUB.test(u.pathname), n33B = n33 && n33.REPORTS.test(u.pathname);
-  return new HTMLRewriter().on('head > title', { text(t) { tB += t.text; if (!t.lastInTextNode) { t.remove(); return; } const n = [...tB.replace(/&(?:amp|lt|gt|quot|#39);/g, 'x').trim()].length; const ov = tt40[u.pathname]; t.replace(ov ? ov.replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c])) : n > 60 ? tB.replace(/\s*\|\s*Kolaboro\s*$/, '') : tB, { html: true }); tB = ''; } })
+  return new HTMLRewriter().on('head > title', { text(t) { tB += t.text; if (!t.lastInTextNode) { t.remove(); return; } const n = [...tB.replace(/&(?:amp|lt|gt|quot|#39);/g, 'x').trim()].length; const ov = tt40[u.pathname]; t.replace(ov ? ov.replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c])) : n > 60 ? kbT60(tB) : tB, { html: true }); tB = ''; } })
     .on('meta[name="description"]', { element(e) { const d = dd40[u.pathname]; if (d) e.setAttribute('content', d); } })
     .on('head link[rel="alternate"]', { element(e) { const ty = e.getAttribute('type') || ''; if (/feed\+json/.test(ty)) fJ = true; if (/atom\+xml/.test(ty)) fA = true; } })
     .on('main', { element(e) { if (n33B) { const lg = (/^\/(es|de|fr|nl|ru|zh|ar)\//.exec(u.pathname) || [0, 'en'])[1]; const b = n33.byline(lg, u.pathname); if (b) e.append('<div class="wrap">' + b + '</div>', { html: true }); } } })

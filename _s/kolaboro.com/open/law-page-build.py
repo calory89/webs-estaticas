@@ -73,4 +73,26 @@ if p != o:
         sm = open(SM, encoding='utf-8').read()
         sm2 = re.sub(r'(<loc>https://kolaboro.com/tools/law/</loc><lastmod>)[^<]*', lambda m: m.group(1) + latest, sm)
         if sm2 != sm: open(SM, 'w', encoding='utf-8').write(sm2)
+# n40 k54: the Law notes card on /tools/ (English page and its 7 translations in /data/n31s-i18n.json) takes the same counts
+TH = os.path.join(ROOT, 'tools/index.html'); TJ = os.path.join(ROOT, 'data/n31s-i18n.json'); nm = len(names)
+CARD = {
+    'en': '{n} notes on foreign ownership, escrow, deposits and delays in {m} markets, with the official article quoted and linked.',
+    'es': '{n} notas sobre propiedad de extranjeros, escrow, depósitos y retrasos en {m} mercados, con el artículo oficial citado y enlazado.',
+    'de': '{n} Notizen zu Ausländereigentum, Treuhand, Anzahlungen und Verzögerungen in {m} Märkten, mit zitiertem und verlinktem Gesetzesartikel.',
+    'fr': '{n} notes sur la propriété des étrangers, l’escrow, les acomptes et les retards dans {m} marchés, avec l’article officiel cité et lié.',
+    'nl': '{n} notities over eigendom voor buitenlanders, escrow, aanbetalingen en vertragingen in {m} markten, met het officiële artikel geciteerd en gelinkt.',
+    'ru': 'Правовые заметки ({n}) о собственности иностранцев, эскроу, задатках и задержках на {m} рынках, с цитатой и ссылкой на официальную статью.',
+    'zh': '{m} 个市场的 {n} 条法律要点：外国人产权、托管、定金和延期交付，引用并链接官方条文。',
+    'ar': 'ملاحظات قانونية ({n}) عن تملّك الأجانب والضمان والدفعات والتأخير في {m} سوقًا، مع اقتباس المادة الرسمية ورابطها.',
+}
+fc = lambda l: CARD[l].replace('{n}', str(n)).replace('{m}', str(nm))
+if os.path.exists(TH):
+    th = open(TH, encoding='utf-8').read()
+    th2 = sub(r'(<h3><a href="/tools/law/">[^<]*</a></h3><p>)[^<]*(</p>)', lambda m: m.group(1) + e(fc('en')).replace('&#x27;', "'") + m.group(2), th)
+    if th2 != th: open(TH, 'w', encoding='utf-8').write(th2)
+if os.path.exists(TJ):
+    raw = open(TJ, encoding='utf-8').read(); tj = json.loads(raw); T = tj.get('TOOLS', {}).get('/tools/law/'); ch = False
+    for l in (T or {}):
+        if l in CARD and isinstance(T[l], list) and len(T[l]) > 1 and T[l][1] != fc(l): T[l][1] = fc(l); ch = True
+    if ch: open(TJ, 'w', encoding='utf-8').write(json.dumps(tj, ensure_ascii=False, separators=(',', ':') if '", "' not in raw[:2000] else None) + ('\n' if raw.endswith('\n') else ''))
 print('law page: %d notes, %d markets, desc %d chars, %s' % (n, len(names), len(desc), 'changed' if p != o else 'unchanged'))
