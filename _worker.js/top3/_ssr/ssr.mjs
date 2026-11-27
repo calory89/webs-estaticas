@@ -4193,6 +4193,9 @@ var ALIASES = {
 	athenes: "athens",
 	atene: "athens",
 	praga: "prague",
+	praha: "prague",
+	beograd: "belgrade",
+	bucuresti: "bucharest",
 	prag: "prague",
 	viena: "vienna",
 	wien: "vienna",
@@ -4444,7 +4447,7 @@ main section>h2:before{content:"";display:block;width:34px;height:3px;border-rad
 /** Client features shared by every server-rendered page. Reads window.T3S (strings) and window.T3L (language). */
 var JS_PLUS = `(function(){var S=window.T3S||{},L=window.T3L||'en',pre=L==='en'?'':'/'+L;
 function ls(k,v){try{if(v===undefined)return JSON.parse(localStorage.getItem(k)||'null');localStorage.setItem(k,JSON.stringify(v))}catch(_){return null}}
-function norm(s){return String(s||'').normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').toLowerCase().replace(/[^a-z0-9 ]+/g,' ').replace(/\\s+/g,' ').trim()}
+function norm(s){return String(s||'').toLowerCase().replace(/ø/g,'o').replace(/æ/g,'ae').replace(/ß/g,'ss').replace(/ł/g,'l').normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').toLowerCase().replace(/[^a-z0-9 ]+/g,' ').replace(/\\s+/g,' ').trim()}
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
 function lev(a,b){if(Math.abs(a.length-b.length)>2)return 9;var d=[],i,j;for(i=0;i<=a.length;i++)d[i]=[i];for(j=0;j<=b.length;j++)d[0][j]=j;for(i=1;i<=a.length;i++)for(j=1;j<=b.length;j++)d[i][j]=Math.min(d[i-1][j]+1,d[i][j-1]+1,d[i-1][j-1]+(a[i-1]===b[j-1]?0:1));return d[a.length][b.length]}
 var IDX=null,AL=${JSON.stringify(ALIASES)};function idx(){return IDX?Promise.resolve(IDX):fetch('/api/cities.json').then(function(r){return r.json()}).then(function(j){IDX=j.map(function(c){return{s:c[0],c:c[1],k:c[2],p:c[3],n:norm(c[1]),nk:norm(c[2])}});return IDX})}
@@ -95587,7 +95590,7 @@ ${{
 	}[L] ?? "Last updated"}: ${CONTENT_DATE}
 `;
 }
-var TT = {
+var TT$1 = {
 	en: {
 		b_t: "Best hotels under your budget",
 		b_d: "Pick a nightly budget and get the best-rated hotels in our picks that fit it, worldwide.",
@@ -95655,8 +95658,8 @@ var TT = {
 		a_find: "Busca tu ciudad"
 	}
 };
-Object.assign(TT, TT5);
-var tt = (L) => TT[L] ?? TT.en;
+Object.assign(TT$1, TT5);
+var tt = (L) => TT$1[L] ?? TT$1.en;
 var CATS = [
 	["budget", "Budget"],
 	["value", "Best Value"],
@@ -98481,6 +98484,514 @@ async function gymPathsTr() {
 	const ok = new Set(await gymPaths());
 	return ["/gyms", ...[...TR_GYMS].map((id) => `/gyms/${pub(id)}`).filter((p) => ok.has(p))];
 }
+var W18 = {
+	en: {
+		night: "per night",
+		of10: "out of 10",
+		km: "kilometres",
+		min: "minutes",
+		saved: "Saved",
+		removed: "Removed from saved",
+		next: "Next photo",
+		prev: "Previous photo",
+		req: "Please fill in this field.",
+		stars: "stars",
+		data: "Data of the chart"
+	},
+	es: {
+		night: "por noche",
+		of10: "de 10",
+		km: "kilómetros",
+		min: "minutos",
+		saved: "Guardado",
+		removed: "Quitado de guardados",
+		next: "Foto siguiente",
+		prev: "Foto anterior",
+		req: "Rellena este campo.",
+		stars: "estrellas",
+		data: "Datos del gráfico"
+	},
+	de: {
+		night: "pro Nacht",
+		of10: "von 10",
+		km: "Kilometer",
+		min: "Minuten",
+		saved: "Gespeichert",
+		removed: "Aus der Merkliste entfernt",
+		next: "Nächstes Foto",
+		prev: "Vorheriges Foto",
+		req: "Bitte fülle dieses Feld aus.",
+		stars: "Sterne",
+		data: "Daten des Diagramms"
+	},
+	fr: {
+		night: "par nuit",
+		of10: "sur 10",
+		km: "kilomètres",
+		min: "minutes",
+		saved: "Enregistré",
+		removed: "Retiré des favoris",
+		next: "Photo suivante",
+		prev: "Photo précédente",
+		req: "Veuillez remplir ce champ.",
+		stars: "étoiles",
+		data: "Données du graphique"
+	},
+	it: {
+		night: "a notte",
+		of10: "su 10",
+		km: "chilometri",
+		min: "minuti",
+		saved: "Salvato",
+		removed: "Rimosso dai salvati",
+		next: "Foto successiva",
+		prev: "Foto precedente",
+		req: "Compila questo campo.",
+		stars: "stelle",
+		data: "Dati del grafico"
+	},
+	pt: {
+		night: "por noite",
+		of10: "em 10",
+		km: "quilómetros",
+		min: "minutos",
+		saved: "Guardado",
+		removed: "Removido dos guardados",
+		next: "Foto seguinte",
+		prev: "Foto anterior",
+		req: "Preencha este campo.",
+		stars: "estrelas",
+		data: "Dados do gráfico"
+	},
+	da: {
+		night: "pr. nat",
+		of10: "ud af 10",
+		km: "kilometer",
+		min: "minutter",
+		saved: "Gemt",
+		removed: "Fjernet fra gemte",
+		next: "Næste foto",
+		prev: "Forrige foto",
+		req: "Udfyld dette felt.",
+		stars: "stjerner",
+		data: "Diagrammets data"
+	}
+};
+var w18 = (L) => W18[L.slice(0, 2)] ?? W18.en;
+/** Apply fn to text nodes only (never inside tags, scripts, styles, svg text, titles or existing abbr). */
+function textOnly18(b, fn) {
+	const keep = [];
+	return b.replace(/<(script|style|svg|textarea|abbr|title|option|select)\b[\s\S]*?<\/\1>/gi, (m) => {
+		keep.push(m);
+		return `\u0002${keep.length - 1}\u0002`;
+	}).replace(/>([^<]+)</g, (_m, t) => `>${fn(t)}<`).replace(/\u0002(\d+)\u0002/g, (_m, i) => keep[Number(i)]);
+}
+function a11y18(b, L) {
+	const w = w18(L);
+	b = b.replace(/<span class="v">([^<]*)<\/span><small>( \/ [^<]{2,12})<\/small>/g, (_m, v, s) => `<span class="v">${v}</span><small aria-hidden="true">${s}</small><span class="vh16"> ${w.night}</span>`);
+	b = b.replace(/<span class="ring"([^>]*?) title="Booking\.com ([0-9.,]+)\/10"><b>\2<\/b><\/span>/g, (_m, a, v) => `<span class="ring"${a} title="Booking.com ${v}/10" role="img" aria-label="Booking.com: ${v} ${w.of10}"><b aria-hidden="true">${v}</b></span>`);
+	b = b.replace(/<span class="stars" aria-label="(\d) stars?"/g, (_m, n) => `<span class="stars" role="img" aria-label="${n} ${w.stars}"`);
+	b = b.replace(/<svg\b[^>]*role="img"[^>]*>[\s\S]*?<\/svg>/g, (m) => /<a\b/.test(m) ? m.replace(/^(<svg\b[^>]*)role="img"/, "$1role=\"group\"") : m);
+	let nk = 0, nm = 0;
+	b = textOnly18(b, (t) => t.replace(/(\d)(\s|&nbsp;)km\b/g, (m, d, sp) => nk++ < 40 ? `${d}${sp}<abbr title="${w.km}">km</abbr>` : m).replace(/(\d)(\s|&nbsp;)min\b(?!\.)/g, (m, d, sp) => nm++ < 40 ? `${d}${sp}<abbr title="${w.min}">min</abbr>` : m));
+	b = b.replace(/<figure class="t16ch">([\s\S]*?)<\/figure>/g, (m, inner) => {
+		if (inner.includes("<table")) return m;
+		const cap = inner.match(/<figcaption>([\s\S]*?)<\/figcaption>/)?.[1] ?? w.data;
+		const ls = [...inner.matchAll(/<text[^>]*class="l"[^>]*>([^<]*)<\/text>/g)].map((x) => x[1]);
+		const vs = [...inner.matchAll(/<text[^>]*class="v"[^>]*>([^<]*)<\/text>/g)].map((x) => x[1]);
+		if (!ls.length || ls.length !== vs.length) return m;
+		return `<figure class="t16ch">${inner}${`<div class="vh16"><table><caption>${cap}</caption><tbody>${ls.map((l, i) => `<tr><th scope="row">${l}</th><td>${vs[i]}</td></tr>`).join("")}</tbody></table></div>`}</figure>`;
+	});
+	b = b.replace(/<svg([^>]*) role="group" aria-label="([^"]+)">(?!<title>)/g, (_m, a, lab) => `<svg${a} role="group" aria-label="${lab}"><title>${lab}</title><desc>${lab}.</desc>`);
+	b = b.replace(/aria-label="›"/g, `aria-label="${w.next}"`).replace(/aria-label="‹"/g, `aria-label="${w.prev}"`);
+	b = b.replace(/<input type="date"(?![^>]*autocomplete)/g, "<input type=\"date\" autocomplete=\"off\"");
+	return b;
+}
+/** T18.13/T18.20 live region, T18.2/T18.23/T19.44 dialogs (focus trap, Escape, focus return), T18.10 accessible form errors. */
+var JW18 = Object.fromEntries(Object.entries(W18).map(([k, w]) => [k, {
+	s: w.saved,
+	r: w.removed,
+	q: w.req
+}]));
+var JS18 = `(function(){var WW=${JSON.stringify(JW18)},W=WW[(document.documentElement.lang||'en').slice(0,2)]||WW.en;var lv=document.createElement('div');lv.id='t3live18';lv.className='vh16';lv.setAttribute('role','status');lv.setAttribute('aria-live','polite');document.body.appendChild(lv);function say(t){lv.textContent='';setTimeout(function(){lv.textContent=t},30)}window.t3say=say;
+document.addEventListener('click',function(e){var f=e.target.closest&&e.target.closest('[data-fav]');if(f&&!document.querySelector('.c4live')){setTimeout(function(){say(f.getAttribute('aria-pressed')==='true'?W.s:W.r)},60)}});
+var last=null;document.addEventListener('focusin',function(e){if(!e.target.closest('[aria-modal=true]'))last=e.target});
+function dlg(){var d=[].filter.call(document.querySelectorAll('[role=dialog][aria-modal=true]'),function(n){return !n.hidden&&n.getClientRects().length&&getComputedStyle(n).visibility!=='hidden'});return d.length?d[d.length-1]:null}
+document.addEventListener('keydown',function(e){var d=dlg();if(!d)return;if(e.key==='Escape'){if(d.classList.contains('pal')){d.remove();e.preventDefault()}return}if(e.key!=='Tab')return;var f=[].filter.call(d.querySelectorAll('a[href],button:not([disabled]),input:not([type=hidden]),select,textarea,[tabindex]:not([tabindex="-1"])'),function(n){return n.offsetParent!==null||getComputedStyle(n).position==='fixed'});if(!f.length){e.preventDefault();return}var a=f[0],z=f[f.length-1];if(!d.contains(document.activeElement)){e.preventDefault();a.focus()}else if(e.shiftKey&&document.activeElement===a){e.preventDefault();z.focus()}else if(!e.shiftKey&&document.activeElement===z){e.preventDefault();a.focus()}},true);
+new MutationObserver(function(ms){ms.forEach(function(m){[].forEach.call(m.removedNodes,function(n){if(n.nodeType===1&&n.getAttribute('aria-modal')==='true'&&last&&document.contains(last)&&!dlg()){try{last.focus()}catch(_){}}});[].forEach.call(m.addedNodes,function(n){if(n.nodeType===1&&n.classList&&n.classList.contains('cbar')){n.setAttribute('role','region');var s=document.querySelector('.skip');if(s&&s.nextSibling&&n.previousSibling!==s)s.parentNode.insertBefore(n,s.nextSibling)}})})}).observe(document.body,{childList:true});
+document.addEventListener('invalid',function(e){var f=e.target;if(!f.name)return;f.setAttribute('aria-invalid','true');var id='err18-'+f.name,m=document.getElementById(id);if(!m){m=document.createElement('span');m.id=id;m.className='err18';(f.closest('label')||f).insertAdjacentElement('afterend',m);var db=(f.getAttribute('aria-describedby')||'').split(' ').filter(Boolean);db.push(id);f.setAttribute('aria-describedby',db.join(' '))}m.textContent=f.validationMessage||W.q},true);
+document.addEventListener('input',function(e){var f=e.target;if(f.getAttribute&&f.getAttribute('aria-invalid')==='true'&&f.checkValidity&&f.checkValidity()){f.removeAttribute('aria-invalid');var m=document.getElementById('err18-'+f.name);if(m)m.textContent=''}})})();`;
+/** T18.45 links in paragraphs underlined, T18.33 focus ring visible in dark mode, T18.42 chips, T18.10 error text, T18.43 notes at 14 px or more. */
+var CSS18 = `main p a:not([class]),main li>a:not([class]):not(:only-child),.prose a:not([class]){text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+:focus-visible{outline:3px solid var(--c-coral,#d83b51);outline-offset:2px}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]) :focus-visible{outline-color:#ffb3a6}}
+:root[data-theme=dark] :focus-visible{outline-color:#ffb3a6}
+.c16-chips>a,.c16-chips>button,.c16-chips>label{cursor:pointer}.c16-chips>a:focus-visible,.c16-chips>button:focus-visible{outline-offset:3px}
+.err18{display:block;color:#b3261e;font-size:14px;margin:4px 0 0}@media (prefers-color-scheme:dark){:root:not([data-theme=light]) .err18{color:#ffb4ab}}
+[aria-invalid=true]{border-color:#b3261e!important}
+abbr[title]{text-decoration:none;cursor:help}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]) .hp-badge{background:#22324a;color:#ecf1f7}}:root[data-theme=dark] .hp-badge{background:#22324a;color:#ecf1f7}
+main .note,main p.note,main figcaption.note,main .in1h{font-size:max(14px,.875rem)}
+.prose a,main p a{overflow-wrap:anywhere}
+@media (max-width:400px){.t3-social{white-space:normal!important}.t3-social .pre{display:none}}`;
+var TOOLS = [
+	{
+		path: "/destinations",
+		n: {
+			en: "Search a city",
+			es: "Buscar una ciudad",
+			de: "Stadt suchen",
+			fr: "Chercher une ville",
+			it: "Cerca una città",
+			pt: "Procurar uma cidade",
+			da: "Søg en by"
+		},
+		h: {
+			en: "Press / on any page, type a city in any language and press Enter.",
+			es: "Pulsa / en cualquier página, escribe una ciudad en cualquier idioma y pulsa Intro.",
+			de: "Drücke auf jeder Seite /, tippe eine Stadt in einer beliebigen Sprache und drücke Enter.",
+			fr: "Appuyez sur / sur n'importe quelle page, tapez une ville dans n'importe quelle langue et appuyez sur Entrée.",
+			it: "Premi / su qualsiasi pagina, scrivi una città in qualsiasi lingua e premi Invio.",
+			pt: "Prima / em qualquer página, escreva uma cidade em qualquer língua e prima Enter.",
+			da: "Tryk / på en hvilken som helst side, skriv en by på et hvilket som helst sprog og tryk Enter."
+		}
+	},
+	{
+		path: "/saved",
+		n: {
+			en: "Saved hotels",
+			es: "Hoteles guardados",
+			de: "Gespeicherte Hotels",
+			fr: "Hôtels enregistrés",
+			it: "Hotel salvati",
+			pt: "Hotéis guardados",
+			da: "Gemte hoteller"
+		},
+		h: {
+			en: "Tap the heart on a pick to keep it on this device; nothing is sent to us.",
+			es: "Toca el corazón de una pick para guardarla en este dispositivo; no nos llega nada.",
+			de: "Tippe auf das Herz einer Auswahl, um sie auf diesem Gerät zu behalten; nichts wird an uns gesendet.",
+			fr: "Touchez le cœur d'une sélection pour la garder sur cet appareil ; rien ne nous est envoyé.",
+			it: "Tocca il cuore di una scelta per tenerla su questo dispositivo; non ci viene inviato nulla.",
+			pt: "Toque no coração de uma escolha para a guardar neste dispositivo; nada nos é enviado.",
+			da: "Tryk på hjertet ved et valg for at gemme det på denne enhed; intet sendes til os."
+		}
+	},
+	{
+		path: "/map",
+		n: {
+			en: "Map of all cities",
+			es: "Mapa de todas las ciudades",
+			de: "Karte aller Städte",
+			fr: "Carte de toutes les villes",
+			it: "Mappa di tutte le città",
+			pt: "Mapa de todas as cidades",
+			da: "Kort over alle byer"
+		},
+		h: {
+			en: "Zoom in on a group of markers to see the cities and open one.",
+			es: "Acerca un grupo de marcadores para ver las ciudades y abrir una.",
+			de: "Zoome in eine Markergruppe, um die Städte zu sehen und eine zu öffnen.",
+			fr: "Zoomez sur un groupe de repères pour voir les villes et en ouvrir une.",
+			it: "Ingrandisci un gruppo di indicatori per vedere le città e aprirne una.",
+			pt: "Aproxime um grupo de marcadores para ver as cidades e abrir uma.",
+			da: "Zoom ind på en gruppe markører for at se byerne og åbne en."
+		}
+	},
+	{
+		path: "/near-me",
+		n: {
+			en: "Cities near me",
+			es: "Ciudades cerca de mí",
+			de: "Städte in meiner Nähe",
+			fr: "Villes près de moi",
+			it: "Città vicino a me",
+			pt: "Cidades perto de mim",
+			da: "Byer nær mig"
+		},
+		h: {
+			en: "Lists covered cities by distance from you; your location stays in your browser.",
+			es: "Ordena las ciudades cubiertas por distancia a ti; tu ubicación se queda en tu navegador.",
+			de: "Listet abgedeckte Städte nach Entfernung zu dir; dein Standort bleibt in deinem Browser.",
+			fr: "Classe les villes couvertes par distance ; votre position reste dans votre navigateur.",
+			it: "Elenca le città coperte per distanza da te; la tua posizione resta nel browser.",
+			pt: "Ordena as cidades cobertas pela distância a si; a sua localização fica no navegador.",
+			da: "Viser dækkede byer efter afstand fra dig; din placering bliver i din browser."
+		}
+	},
+	{
+		path: "/cheap-cities",
+		n: {
+			en: "Cheapest cities",
+			es: "Ciudades más baratas",
+			de: "Günstigste Städte",
+			fr: "Villes les moins chères",
+			it: "Città più economiche",
+			pt: "Cidades mais baratas",
+			da: "Billigste byer"
+		},
+		h: {
+			en: "Cities ordered by the stored reference price of their budget pick.",
+			es: "Ciudades ordenadas por el precio de referencia guardado de su pick económica.",
+			de: "Städte nach dem gespeicherten Referenzpreis ihrer günstigen Auswahl.",
+			fr: "Villes classées par le prix de référence enregistré de leur choix petit budget.",
+			it: "Città ordinate per il prezzo di riferimento salvato della scelta economica.",
+			pt: "Cidades ordenadas pelo preço de referência guardado da escolha económica.",
+			da: "Byer sorteret efter den gemte referencepris for deres budgetvalg."
+		}
+	},
+	{
+		path: "/hotels-by-price",
+		n: {
+			en: "Hotels by price",
+			es: "Hoteles por precio",
+			de: "Hotels nach Preis",
+			fr: "Hôtels par prix",
+			it: "Hotel per prezzo",
+			pt: "Hotéis por preço",
+			da: "Hoteller efter pris"
+		},
+		h: {
+			en: "Pick a price band and see the cities whose picks fall inside it.",
+			es: "Elige una franja de precio y mira las ciudades cuyas picks caen dentro.",
+			de: "Wähle eine Preisspanne und sieh die Städte, deren Auswahl darin liegt.",
+			fr: "Choisissez une tranche de prix et voyez les villes dont les choix y entrent.",
+			it: "Scegli una fascia di prezzo e vedi le città le cui scelte vi rientrano.",
+			pt: "Escolha uma faixa de preço e veja as cidades cujas escolhas cabem nela.",
+			da: "Vælg et prisinterval og se de byer, hvis valg ligger i det."
+		}
+	},
+	{
+		path: "/hotel-price-index",
+		n: {
+			en: "Hotel price index",
+			es: "Índice de precios de hotel",
+			de: "Hotelpreisindex",
+			fr: "Indice des prix des hôtels",
+			it: "Indice dei prezzi degli hotel",
+			pt: "Índice de preços de hotel",
+			da: "Hotelprisindeks"
+		},
+		h: {
+			en: "Median stored prices by country and category, with the method.",
+			es: "Precios medianos guardados por país y categoría, con el método.",
+			de: "Mittlere gespeicherte Preise nach Land und Kategorie, mit Methode.",
+			fr: "Prix médians enregistrés par pays et catégorie, avec la méthode.",
+			it: "Prezzi mediani salvati per paese e categoria, con il metodo.",
+			pt: "Preços medianos guardados por país e categoria, com o método.",
+			da: "Mediane gemte priser efter land og kategori, med metoden."
+		}
+	},
+	{
+		path: "/winter-sun",
+		langs: ["en", "es"],
+		n: {
+			en: "Winter sun",
+			es: "Sol en invierno",
+			de: "Wintersonne",
+			fr: "Soleil d'hiver",
+			it: "Sole d'inverno",
+			pt: "Sol de inverno",
+			da: "Vintersol"
+		},
+		h: {
+			en: "Covered cities ranked by average winter high from NASA POWER data.",
+			es: "Ciudades cubiertas ordenadas por la máxima media de invierno (datos de NASA POWER).",
+			de: "Abgedeckte Städte nach mittlerer Wintertageshöchsttemperatur (NASA POWER).",
+			fr: "Villes couvertes classées par maximale moyenne d'hiver (données NASA POWER).",
+			it: "Città coperte ordinate per massima media invernale (dati NASA POWER).",
+			pt: "Cidades cobertas ordenadas pela máxima média de inverno (dados NASA POWER).",
+			da: "Dækkede byer efter gennemsnitlig vintermaksimum (NASA POWER-data)."
+		}
+	},
+	{
+		path: "/regions",
+		n: {
+			en: "Regions",
+			es: "Regiones",
+			de: "Regionen",
+			fr: "Régions",
+			it: "Regioni",
+			pt: "Regiões",
+			da: "Regioner"
+		},
+		h: {
+			en: "Browse covered cities region by region.",
+			es: "Recorre las ciudades cubiertas región por región.",
+			de: "Durchsuche die abgedeckten Städte Region für Region.",
+			fr: "Parcourez les villes couvertes région par région.",
+			it: "Sfoglia le città coperte regione per regione.",
+			pt: "Percorra as cidades cobertas região a região.",
+			da: "Gennemse dækkede byer region for region."
+		}
+	},
+	{
+		path: "/random",
+		langs: ["en"],
+		n: {
+			en: "Surprise me",
+			es: "Sorpréndeme",
+			de: "Überrasch mich",
+			fr: "Surprenez-moi",
+			it: "Sorprendimi",
+			pt: "Surpreenda-me",
+			da: "Overrask mig"
+		},
+		h: {
+			en: "Opens a random covered city.",
+			es: "Abre una ciudad cubierta al azar.",
+			de: "Öffnet eine zufällige abgedeckte Stadt.",
+			fr: "Ouvre une ville couverte au hasard.",
+			it: "Apre una città coperta a caso.",
+			pt: "Abre uma cidade coberta ao acaso.",
+			da: "Åbner en tilfældig dækket by."
+		}
+	}
+];
+var TT = {
+	en: {
+		t: "Travel tools",
+		d: "Free Top3Hotels tools: city search in any language, saved hotels, map, cities near you, cheapest cities and the hotel price index.",
+		lead: "Every tool works without an account and keeps your choices on your own device.",
+		nojs: "Search, saved hotels, the map and cities near me need JavaScript. The lists and the price index work without it."
+	},
+	es: {
+		t: "Herramientas de viaje",
+		d: "Herramientas gratis de Top3Hotels: buscador de ciudades en cualquier idioma, hoteles guardados, mapa, ciudades cerca de ti, ciudades más baratas e índice de precios.",
+		lead: "Todas funcionan sin cuenta y guardan tus elecciones en tu propio dispositivo.",
+		nojs: "El buscador, los guardados, el mapa y cerca de mí necesitan JavaScript. Las listas y el índice de precios funcionan sin él."
+	},
+	de: {
+		t: "Reise-Tools",
+		d: "Kostenlose Top3Hotels-Tools: Städtesuche in jeder Sprache, gespeicherte Hotels, Karte, Städte in deiner Nähe, günstigste Städte und Hotelpreisindex.",
+		lead: "Alle Tools funktionieren ohne Konto und speichern deine Auswahl nur auf deinem Gerät.",
+		nojs: "Suche, Merkliste, Karte und Städte in der Nähe brauchen JavaScript. Die Listen und der Preisindex funktionieren ohne."
+	},
+	fr: {
+		t: "Outils de voyage",
+		d: "Outils gratuits Top3Hotels : recherche de ville dans toutes les langues, hôtels enregistrés, carte, villes proches, villes les moins chères et indice des prix.",
+		lead: "Tous les outils fonctionnent sans compte et gardent vos choix sur votre appareil.",
+		nojs: "La recherche, les favoris, la carte et les villes proches ont besoin de JavaScript. Les listes et l'indice des prix fonctionnent sans."
+	},
+	it: {
+		t: "Strumenti di viaggio",
+		d: "Strumenti gratuiti di Top3Hotels: ricerca città in ogni lingua, hotel salvati, mappa, città vicine, città più economiche e indice dei prezzi.",
+		lead: "Tutti gli strumenti funzionano senza account e tengono le tue scelte sul tuo dispositivo.",
+		nojs: "Ricerca, salvati, mappa e città vicine richiedono JavaScript. Le liste e l'indice dei prezzi funzionano anche senza."
+	},
+	pt: {
+		t: "Ferramentas de viagem",
+		d: "Ferramentas grátis da Top3Hotels: pesquisa de cidades em qualquer língua, hotéis guardados, mapa, cidades perto de si, cidades mais baratas e índice de preços.",
+		lead: "Todas funcionam sem conta e guardam as suas escolhas no seu próprio dispositivo.",
+		nojs: "A pesquisa, os guardados, o mapa e perto de mim precisam de JavaScript. As listas e o índice de preços funcionam sem ele."
+	},
+	da: {
+		t: "Rejseværktøjer",
+		d: "Gratis Top3Hotels-værktøjer: bysøgning på alle sprog, gemte hoteller, kort, byer nær dig, billigste byer og hotelprisindeks.",
+		lead: "Alle værktøjer virker uden konto og gemmer dine valg på din egen enhed.",
+		nojs: "Søgning, gemte, kort og byer nær mig kræver JavaScript. Listerne og prisindekset virker uden."
+	}
+};
+function toolsPage19(L) {
+	const t = TT[L] ?? TT.en;
+	const items = TOOLS.map((x) => {
+		return `<li><h2><a href="${!x.langs || x.langs.includes(L) ? P(L, x.path) : x.path}">${esc(x.n[L])}</a></h2><p>${esc(x.h[L])}</p></li>`;
+	}).join("");
+	const body = `<nav class="crumbs" aria-label="Breadcrumb"><a href="${P(L, "/")}">Top3Hotels</a> › <span aria-current="page">${esc(t.t)}</span></nav><h1>${esc(t.t)}<em>.</em></h1><p class="lead">${esc(t.lead)}</p><ul class="tools19">${items}</ul><noscript><p class="note">${esc(t.nojs)}</p></noscript><style>.tools19{list-style:none;padding:0;margin:20px 0;display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}.tools19 li{border:1px solid var(--line);border-radius:16px;padding:16px 18px;background:var(--card,transparent)}.tools19 h2{font-size:19px;margin:0 0 6px}.tools19 p{margin:0;color:var(--muted)}</style>`;
+	const url = SITE + P(L, "/tools");
+	return page({
+		L,
+		title: `${t.t} | Top3Hotels`,
+		description: t.d,
+		path: "/tools",
+		body,
+		langs: true,
+		ld: [{
+			"@context": "https://schema.org",
+			"@type": "ItemList",
+			"@id": url + "#tools",
+			name: t.t,
+			inLanguage: L,
+			itemListElement: TOOLS.map((x, i) => ({
+				"@type": "ListItem",
+				position: i + 1,
+				name: x.n[L],
+				url: SITE + (!x.langs || x.langs.includes(L) ? P(L, x.path) : x.path)
+			}))
+		}]
+	});
+}
+/** T18.24: what was tested and when, shown on /accessibility in 7 languages (numbers from tools/t17/a11y_audit.cjs and tools/t18/a18_check.cjs on 27-nov-2026). */
+var AT = {
+	en: {
+		h: "Latest tests (27 November 2026)",
+		li: [
+			"axe-core 4.10 (WCAG 2.2 AA rules) on 27 pages in 7 languages: 0 violations.",
+			"Keyboard only: search, choose a hotel, compare, save and go to Booking.com, all five without a mouse.",
+			"Reflow at 320 CSS pixels (400 % zoom) and WCAG 1.4.12 text spacing: no horizontal scrolling on the tested pages.",
+			"Focus ring visible in light and dark mode; prices, stars and guest scores have spoken labels."
+		]
+	},
+	es: {
+		h: "Últimas pruebas (27 de noviembre de 2026)",
+		li: [
+			"axe-core 4.10 (reglas WCAG 2.2 AA) en 27 páginas y 7 idiomas: 0 incumplimientos.",
+			"Solo teclado: buscar, elegir un hotel, comparar, guardar e ir a Booking.com, las cinco tareas sin ratón.",
+			"Reajuste a 320 píxeles CSS (zoom del 400 %) y espaciado de texto WCAG 1.4.12: sin scroll horizontal en las páginas probadas.",
+			"Foco visible en modo claro y oscuro; precios, estrellas y notas tienen etiqueta hablada."
+		]
+	},
+	de: {
+		h: "Letzte Tests (27. November 2026)",
+		li: [
+			"axe-core 4.10 (WCAG-2.2-AA-Regeln) auf 27 Seiten in 7 Sprachen: 0 Verstöße.",
+			"Nur Tastatur: suchen, Hotel wählen, vergleichen, speichern und zu Booking.com, alle fünf ohne Maus.",
+			"Umbruch bei 320 CSS-Pixeln (400 % Zoom) und Textabstände nach WCAG 1.4.12: kein horizontales Scrollen auf den getesteten Seiten.",
+			"Fokusrahmen im hellen und dunklen Modus sichtbar; Preise, Sterne und Bewertungen haben gesprochene Bezeichnungen."
+		]
+	},
+	fr: {
+		h: "Derniers tests (27 novembre 2026)",
+		li: [
+			"axe-core 4.10 (règles WCAG 2.2 AA) sur 27 pages en 7 langues : 0 violation.",
+			"Clavier seul : chercher, choisir un hôtel, comparer, enregistrer et aller sur Booking.com, les cinq sans souris.",
+			"Redimensionnement à 320 pixels CSS (zoom 400 %) et espacement du texte WCAG 1.4.12 : pas de défilement horizontal sur les pages testées.",
+			"Focus visible en mode clair et sombre ; prix, étoiles et notes ont une étiquette lue à voix haute."
+		]
+	},
+	it: {
+		h: "Ultimi test (27 novembre 2026)",
+		li: [
+			"axe-core 4.10 (regole WCAG 2.2 AA) su 27 pagine in 7 lingue: 0 violazioni.",
+			"Solo tastiera: cercare, scegliere un hotel, confrontare, salvare e andare su Booking.com, tutte e cinque senza mouse.",
+			"Riflusso a 320 pixel CSS (zoom 400 %) e spaziatura del testo WCAG 1.4.12: nessuno scorrimento orizzontale nelle pagine provate.",
+			"Focus visibile in modalità chiara e scura; prezzi, stelle e punteggi hanno un'etichetta letta."
+		]
+	},
+	pt: {
+		h: "Últimos testes (27 de novembro de 2026)",
+		li: [
+			"axe-core 4.10 (regras WCAG 2.2 AA) em 27 páginas e 7 línguas: 0 violações.",
+			"Só teclado: pesquisar, escolher um hotel, comparar, guardar e ir para a Booking.com, as cinco sem rato.",
+			"Reajuste a 320 píxeis CSS (zoom de 400 %) e espaçamento de texto WCAG 1.4.12: sem deslocamento horizontal nas páginas testadas.",
+			"Foco visível em modo claro e escuro; preços, estrelas e notas têm etiqueta falada."
+		]
+	},
+	da: {
+		h: "Seneste test (27. november 2026)",
+		li: [
+			"axe-core 4.10 (WCAG 2.2 AA-regler) på 27 sider på 7 sprog: 0 overtrædelser.",
+			"Kun tastatur: søg, vælg et hotel, sammenlign, gem og gå til Booking.com, alle fem uden mus.",
+			"Ombrydning ved 320 CSS-pixels (400 % zoom) og tekstafstand efter WCAG 1.4.12: ingen vandret rulning på de testede sider.",
+			"Fokusramme synlig i lys og mørk tilstand; priser, stjerner og bedømmelser har oplæste etiketter."
+		]
+	}
+};
+var a11yTests18 = (L) => {
+	const a = AT[L] ?? AT.en;
+	return `<h2>${esc(a.h)}</h2><ul>${a.li.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>`;
+};
+var toolsName19 = (L) => (TT[L] ?? TT.en).t;
 /** FNV-1a 32-bit hash as 8 hex chars (sync, no crypto needed in the isolate). */
 function hash17(s) {
 	let h = 2166136261;
@@ -99320,7 +99831,7 @@ var GOAL = {
 };
 function accessibility15(L) {
 	const a = AC[L];
-	const body = `${crumbs(L, a.t)}<h1>${esc(a.t)}<em>.</em></h1><div class="prose"><h2>${esc(a.h[0])}</h2><p>${esc(GOAL[L])}</p><h2>${esc(a.h[1])}</h2><ul>${a.does.map((x) => `<li>${esc(x)}</li>`).join("")}</ul><h2>${esc(a.h[2])}</h2><ul>${a.lim.map((x) => `<li>${esc(x)}</li>`).join("")}</ul><h2>${esc(a.h[3])}</h2><p>${esc(a.c)} <a href="${P(L, "/contact")}">→</a></p></div>`;
+	const body = `${crumbs(L, a.t)}<h1>${esc(a.t)}<em>.</em></h1><div class="prose"><h2>${esc(a.h[0])}</h2><p>${esc(GOAL[L])}</p><h2>${esc(a.h[1])}</h2><ul>${a.does.map((x) => `<li>${esc(x)}</li>`).join("")}</ul><h2>${esc(a.h[2])}</h2><ul>${a.lim.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>${a11yTests18(L)}<h2>${esc(a.h[3])}</h2><p>${esc(a.c)} <a href="${P(L, "/contact")}" aria-label="${esc(a.h[3])}">→</a></p></div>`;
 	return page({
 		L,
 		title: `${a.t} | Top3Hotels`,
@@ -99335,7 +99846,7 @@ function accessibility15(L) {
 			url: SITE + P(L, "/accessibility"),
 			name: a.t,
 			inLanguage: L,
-			dateModified: "2026-11-26",
+			dateModified: "2026-11-27",
 			isAccessibleForFree: true
 		}]
 	});
@@ -99751,6 +100262,7 @@ var PATHS15 = (L) => [
 	...L === "en" || L === "es" ? ["/faq"] : [],
 	"/photo-policy",
 	"/accessibility",
+	"/tools",
 	...L === "en" ? ["/status", "/for-hotels"] : ["/imprint"]
 ];
 var LOC = {
@@ -160429,7 +160941,7 @@ ${(o.ld ?? []).map((x) => `<script type="application/ld+json">${json(x)}<\/scrip
 <script>window.t3track=function(e,p){try{(window.dataLayer=window.dataLayer||[]).push(Object.assign({event:e},p||{}));if(window.gtag)gtag('event',e,p||{});if(window.plausible)plausible(e,{props:p||{}})}catch(_){}};document.addEventListener('click',function(ev){var a=ev.target.closest&&ev.target.closest('[data-t]');if(a)t3track(a.dataset.t,{city:a.dataset.city,category:a.dataset.cat,provider:a.dataset.p})});<\/script>
 ${consentScript(Z[o.L])}</head><body><style id="t3-v6">${tok16(V6_CSS)}</style><a class="skip" href="#main">${o.L === "es" ? "Ir al contenido" : o.L === "de" ? "Zum Inhalt" : o.L === "fr" ? "Aller au contenu" : o.L === "it" ? "Vai al contenuto" : o.L === "pt" ? "Ir para o conteúdo" : o.L === "da" ? "Gå til indhold" : "Skip to content"}</a><div class="wrap">
 <header class="top">${BRAND_LINK(P(o.L, "/"))}<nav aria-label="Main"><a href="${P(o.L, "/destinations")}">${t.allDest}</a><a class="hide-sm" href="${P(o.L, "/lists")}">${t.lists}</a>${megaMenu(o.L)}<a class="hide-sm" href="${P(o.L, "/guides")}">${esc((GT[o.L] ?? GT.en).guides)}</a><a class="hide-sm" href="${P(o.L, "/how-we-choose")}">${t.how}</a><a class="hide-sm hide-md" href="${P(o.L, "/map")}"><span aria-hidden="true">🗺</span> ${esc(M$1[o.L].map)}</a><a class="hide-sm hide-md" href="${P(o.L, "/affiliate-disclosure")}">${esc(M$1[o.L].money)}</a><a class="cta" href="/partners">${X[o.L].forHotels}</a><button type="button" class="tbtn" data-pal aria-label="${esc(Y[o.L].js["search"])}"><span aria-hidden="true">🔍</span> <span class="lbl">${esc(Y[o.L].js["search"])}</span> <kbd>/</kbd></button><a class="tbtn" href="${P(o.L, "/saved")}" aria-label="${esc(Y[o.L].js["saved"])}">♡<span class="n" data-savedn hidden></span></a>${langSel}</nav></header>
-${socialPill(o.L)}<main id="main" tabindex="-1">${body17(o.body, o.path).replace(/<img(?![^>]*\bdecoding=)/g, "<img decoding=\"async\"").replace(/<style>([\s\S]*?)<\/style>/g, (_m, c) => `<style>${tok16(c)}</style>`)}</main>
+${socialPill(o.L)}<main id="main" tabindex="-1">${a11y18(body17(o.body, o.path), o.L).replace(/<img(?![^>]*\bdecoding=)/g, "<img decoding=\"async\"").replace(/<style>([\s\S]*?)<\/style>/g, (_m, c) => `<style>${tok16(c)}</style>`)}</main>
 <footer><div class="cols"><div>${BRAND_LINK(P(o.L, "/"), "Top3Hotels", 30)}<p style="max-width:340px;margin:12px 0 0">${t.footer} ${X[o.L].independent} · ${X[o.L].noPaid}.</p></div>
 <div><h2 class="fh">${FT16[o.L][0]}</h2><ul><li><a href="${P(o.L, "/destinations")}">${t.allDest}</a></li><li><a href="${P(o.L, "/regions")}">${esc({
 		en: "Regions",
@@ -160439,7 +160951,7 @@ ${socialPill(o.L)}<main id="main" tabindex="-1">${body17(o.body, o.path).replace
 		it: "Regioni",
 		pt: "Regiões",
 		da: "Regioner"
-	}[o.L] ?? "Regions")}</a></li>${FOOT_COUNTRIES.map(([s, cc]) => `<li><a href="${P(o.L, "/country/" + s)}">${esc(new Intl.DisplayNames([o.L], { type: "region" }).of(cc) ?? s)}</a></li>`).join("")}<li><a href="${P(o.L, "/cheap-cities")}">${esc(Y[o.L].cheapNav)}</a></li><li><a href="${P(o.L, "/map")}"><span aria-hidden="true">🗺</span> ${esc(M$1[o.L].map)}</a></li><li><a href="/random"><span aria-hidden="true">🎲</span> ${esc(Y[o.L].js["surprise"])}</a></li>${o.L === "da" ? `<li><a href="${P(o.L, "/from/billund")}"><span aria-hidden="true">✈</span> Billund</a></li><li><a href="${P(o.L, "/from/aalborg")}"><span aria-hidden="true">✈</span> Aalborg</a></li><li><a href="${P(o.L, "/from/aarhus")}"><span aria-hidden="true">✈</span> Aarhus</a></li>` : ""}</ul></div>
+	}[o.L] ?? "Regions")}</a></li>${FOOT_COUNTRIES.map(([s, cc]) => `<li><a href="${P(o.L, "/country/" + s)}">${esc(new Intl.DisplayNames([o.L], { type: "region" }).of(cc) ?? s)}</a></li>`).join("")}<li><a href="${P(o.L, "/cheap-cities")}">${esc(Y[o.L].cheapNav)}</a></li><li><a href="${P(o.L, "/map")}"><span aria-hidden="true">🗺</span> ${esc(M$1[o.L].map)}</a></li><li><a href="/random"><span aria-hidden="true">🎲</span> ${esc(Y[o.L].js["surprise"])}</a></li><li><a href="${P(o.L, "/tools")}">${esc(toolsName19(o.L))}</a></li>${o.L === "da" ? `<li><a href="${P(o.L, "/from/billund")}"><span aria-hidden="true">✈</span> Billund</a></li><li><a href="${P(o.L, "/from/aalborg")}"><span aria-hidden="true">✈</span> Aalborg</a></li><li><a href="${P(o.L, "/from/aarhus")}"><span aria-hidden="true">✈</span> Aarhus</a></li>` : ""}</ul></div>
 <div><h2 class="fh">${FT16[o.L][1]}</h2><ul><li><a href="${P(o.L, "/lists")}">${t.lists}</a></li><li><a href="${P(o.L, "/hotels-by-price")}">${FT16[o.L][3]}</a></li><li><a href="${P(o.L, "/coastal-cities")}">${FT16[o.L][4]}</a></li><li><a href="${P(o.L, "/gyms")}">${o.L === "es" ? "Hoteles con gimnasio" : FL[o.L].gym}</a></li><li><a href="${P(o.L, "/pools")}">${o.L === "es" ? "Hoteles con piscina" : FL[o.L].pool}</a></li><li><a href="${P(o.L, "/guides")}">${esc((GT[o.L] ?? GT.en).guides)}</a></li></ul></div>
 <div><h2 class="fh">${FT16[o.L][2]}</h2><ul><li><a href="${P(GROWTH_LANGS.includes(o.L) ? o.L : "en", "/hotel-price-index")}">${{
 		en: "Hotel Price Index",
@@ -160473,7 +160985,7 @@ ${socialPill(o.L)}<main id="main" tabindex="-1">${body17(o.body, o.path).replace
 }
 var js17 = null;
 var JS17 = () => js17 || (js17 = [
-	`${GLOBAL_JS}\n${JS_PLUS}\n${JS_MORE}\n${REPORT_JS}${INSTALL_JS}${VOTE_JS}\n${JS16B}`,
+	`${GLOBAL_JS}\n${JS_PLUS}\n${JS_MORE}\n${REPORT_JS}${INSTALL_JS}${VOTE_JS}\n${JS16B}\n${JS18}`,
 	"/* Top3Hotels range date picker: one sheet for check-in + check-out, replaces the native date pickers.\n   The real <input type=date> fields stay in the DOM (hidden) so every existing handler keeps working. */\n(function () {\n  if (window.T3DP) return;\n  var L = (document.documentElement.lang || 'en').slice(0, 2);\n  var TX = {\n    en: { add: 'Add date', ci: 'Check in', co: 'Check out', n1: 'night', n: 'nights', clear: 'Clear', done: 'Done', pickCo: 'Now pick your check-out', pickCi: 'Pick your check-in', max: 'Max. 30 nights' },\n    es: { add: 'Elegir fecha', ci: 'Entrada', co: 'Salida', n1: 'noche', n: 'noches', clear: 'Borrar', done: 'Listo', pickCo: 'Ahora elige la salida', pickCi: 'Elige la entrada', max: 'Máx. 30 noches' },\n    de: { add: 'Datum wählen', ci: 'Anreise', co: 'Abreise', n1: 'Nacht', n: 'Nächte', clear: 'Löschen', done: 'Fertig', pickCo: 'Jetzt Abreise wählen', pickCi: 'Anreise wählen', max: 'Max. 30 Nächte' },\n    fr: { add: 'Choisir', ci: 'Arrivée', co: 'Départ', n1: 'nuit', n: 'nuits', clear: 'Effacer', done: 'OK', pickCo: 'Choisissez le départ', pickCi: \"Choisissez l'arrivée\", max: '30 nuits max.' },\n    it: { add: 'Scegli data', ci: 'Arrivo', co: 'Partenza', n1: 'notte', n: 'notti', clear: 'Cancella', done: 'Fatto', pickCo: 'Ora scegli la partenza', pickCi: \"Scegli l'arrivo\", max: 'Max 30 notti' },\n    pt: { add: 'Escolher', ci: 'Entrada', co: 'Saída', n1: 'noite', n: 'noites', clear: 'Limpar', done: 'Pronto', pickCo: 'Agora escolha a saída', pickCi: 'Escolha a entrada', max: 'Máx. 30 noites' },\n    da: { add: 'Vælg dato', ci: 'Indtjekning', co: 'Udtjekning', n1: 'nat', n: 'nætter', clear: 'Ryd', done: 'Færdig', pickCo: 'Vælg nu udtjekning', pickCi: 'Vælg indtjekning', max: 'Maks. 30 nætter' }\n  };\n  var t = TX[L] || TX.en;\n  var loc = document.documentElement.lang || 'en';\n  var DAY = 864e5;\n  function iso(d) { return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2); }\n  function parse(s) { if (!s || !/^\\d{4}-\\d{2}-\\d{2}$/.test(s)) return null; var p = s.split('-'); return new Date(+p[0], +p[1] - 1, +p[2]); }\n  function today() { var d = new Date(); d.setHours(0, 0, 0, 0); return d; }\n  function nights(a, b) { return Math.round((b - a) / DAY); }\n  var fmtShort = new Intl.DateTimeFormat(loc, { weekday: 'short', day: 'numeric', month: 'short' });\n  var fmtMonth = new Intl.DateTimeFormat(loc, { month: 'long', year: 'numeric' });\n  var wk = []; for (var i = 0; i < 7; i++) wk.push(new Intl.DateTimeFormat(loc, { weekday: 'narrow' }).format(new Date(2024, 0, 1 + i)));\n  function fire(el) { el.dispatchEvent(new Event('input', { bubbles: true })); el.dispatchEvent(new Event('change', { bubbles: true })); }\n\n  /* sheet */\n  var sh, st = {};\n  function build() {\n    sh = document.createElement('div'); sh.className = 't3dp'; sh.hidden = true;\n    sh.innerHTML = '<div class=\"t3dp-bd\" data-x></div><div class=\"t3dp-p\" role=\"dialog\" aria-modal=\"true\" aria-label=\"' + t.ci + ' / ' + t.co + '\">' +\n      '<div class=\"t3dp-h\"><button type=\"button\" class=\"t3dp-s\" data-s=\"0\"><small>' + t.ci + '</small><b></b></button><span class=\"t3dp-ar\">→</span><button type=\"button\" class=\"t3dp-s\" data-s=\"1\"><small>' + t.co + '</small><b></b></button><button type=\"button\" class=\"t3dp-c\" data-x aria-label=\"Close\">✕</button></div>' +\n      '<p class=\"t3dp-hint\" aria-live=\"polite\"></p><div class=\"t3dp-wk\"></div><div class=\"t3dp-nav\"><button type=\"button\" data-m=\"-1\" aria-label=\"Previous month\">‹</button><button type=\"button\" data-m=\"1\" aria-label=\"Next month\">›</button></div><div class=\"t3dp-ms\"></div>' +\n      '<div class=\"t3dp-f\"><button type=\"button\" class=\"t3dp-clr\">' + t.clear + '</button><span class=\"t3dp-n\"></span><button type=\"button\" class=\"t3dp-ok\">' + t.done + '</button></div></div>';\n    document.body.appendChild(sh);\n    sh.querySelector('.t3dp-wk').innerHTML = wk.map(function (w) { return '<span>' + w + '</span>'; }).join('');\n    sh.addEventListener('click', function (e) {\n      var x = e.target.closest('[data-x]'); if (x) return close();\n      var d = e.target.closest('button[data-d]'); if (d && !d.disabled) return pick(parse(d.dataset.d));\n      var m = e.target.closest('[data-m]'); if (m) { st.off = Math.max(0, st.off + (+m.dataset.m)); return render(); }\n      var s = e.target.closest('[data-s]'); if (s) { st.phase = +s.dataset.s; if (st.phase === 0) { } return render(); }\n      if (e.target.closest('.t3dp-clr')) { st.a = st.b = null; st.phase = 0; return render(); }\n      if (e.target.closest('.t3dp-ok')) return apply(true);\n    });\n    sh.addEventListener('mouseover', function (e) { var d = e.target.closest('button[data-d]'); if (d && st.phase === 1 && st.a) { st.hov = parse(d.dataset.d); paint(); } });\n    document.addEventListener('keydown', function (e) { if (!sh.hidden && e.key === 'Escape') close(); });\n  }\n  function monthHTML(y, m) {\n    var first = new Date(y, m, 1), lead = (first.getDay() + 6) % 7, days = new Date(y, m + 1, 0).getDate(), td = today(), h = '';\n    for (var i = 0; i < lead; i++) h += '<span></span>';\n    for (var d = 1; d <= days; d++) {\n      var dt = new Date(y, m, d), k = iso(dt), dis = dt < td || (st.phase === 1 && st.a && dt > st.a && nights(st.a, dt) > 30);\n      h += '<button type=\"button\" data-d=\"' + k + '\"' + (dis ? ' disabled' : '') + (+dt === +td ? ' class=\"td\"' : '') + ' aria-label=\"' + fmtShort.format(dt) + '\">' + d + '</button>';\n    }\n    return '<div class=\"t3dp-m\"><h4>' + fmtMonth.format(first) + '</h4><div class=\"t3dp-g\">' + h + '</div></div>';\n  }\n  function render() {\n    var base = today(), many = matchMedia('(max-width: 720px)').matches, n = many ? 12 : 2, h = '';\n    for (var i = 0; i < n; i++) { var dm = new Date(base.getFullYear(), base.getMonth() + (many ? 0 : st.off) + i, 1); h += monthHTML(dm.getFullYear(), dm.getMonth()); }\n    var ms = sh.querySelector('.t3dp-ms'); ms.innerHTML = h;\n    sh.querySelector('.t3dp-nav').hidden = true;\n    if (!many) {\n      var hs = ms.querySelectorAll('.t3dp-m h4');\n      hs[0].insertAdjacentHTML('afterbegin', '<button type=\"button\" class=\"t3dp-mv l\" data-m=\"-1\" aria-label=\"Previous month\"' + (st.off <= 0 ? ' disabled' : '') + '>‹</button>');\n      hs[hs.length - 1].insertAdjacentHTML('beforeend', '<button type=\"button\" class=\"t3dp-mv r\" data-m=\"1\" aria-label=\"Next month\">›</button>');\n    }\n    paint();\n  }\n  function paint() {\n    var a = st.a, b = st.b || (st.phase === 1 && a && st.hov && st.hov > a ? st.hov : null);\n    sh.querySelectorAll('button[data-d]').forEach(function (el) {\n      var d = parse(el.dataset.d), on = a && +d === +a, off = b && +d === +b;\n      el.classList.toggle('a', !!on); el.classList.toggle('b', !!off); el.classList.toggle('lone', !!(on && !b));\n      el.classList.toggle('in', !!(a && b && d > a && d < b));\n      el.classList.toggle('pv', !!(a && !st.b && b && d > a && d <= b));\n    });\n    var s = sh.querySelectorAll('.t3dp-s');\n    s[0].querySelector('b').textContent = st.a ? fmtShort.format(st.a) : t.add;\n    s[1].querySelector('b').textContent = st.b ? fmtShort.format(st.b) : t.add;\n    s[0].classList.toggle('on', st.phase === 0); s[1].classList.toggle('on', st.phase === 1);\n    var nn = st.a && st.b ? nights(st.a, st.b) : 0;\n    sh.querySelector('.t3dp-n').textContent = nn ? nn + ' ' + (nn === 1 ? t.n1 : t.n) : '';\n    sh.querySelector('.t3dp-hint').textContent = st.phase === 1 && st.a && !st.b ? t.pickCo + ' · ' + t.max : (!st.a ? t.pickCi : '');\n    sh.querySelector('.t3dp-ok').disabled = !(st.a && st.b);\n  }\n  function pick(d) {\n    if (st.phase === 0 || !st.a || d <= st.a) { st.a = d; st.b = null; st.phase = 1; st.hov = null; render(); return; }\n    st.b = d; st.hov = null; paint();\n    apply(false); setTimeout(close, 260);\n  }\n  function apply(andClose) {\n    if (!st.a || !st.b || !st.pair) return;\n    var ci = st.pair.ci, co = st.pair.co;\n    ci.value = iso(st.a); fire(ci);\n    co.value = iso(st.b); fire(co);\n    sync(st.pair);\n    try { document.dispatchEvent(new CustomEvent('t3:dates', { detail: { root: st.pair.root, ci: ci.value, co: co.value } })); } catch (_) {}\n    if (andClose) close();\n  }\n  function open(pair, phase) {\n    if (!sh) build();\n    st.pair = pair; st.a = parse(pair.ci.value); st.b = parse(pair.co.value);\n    if (st.a && st.a < today()) { st.a = st.b = null; }\n    st.phase = phase === 1 && st.a ? 1 : 0; if (st.phase === 0) { } st.off = 0; st.hov = null;\n    if (st.a) { var td = today(); st.off = Math.max(0, (st.a.getFullYear() - td.getFullYear()) * 12 + st.a.getMonth() - td.getMonth()); }\n    sh.hidden = false; document.documentElement.classList.add('t3dp-open');\n    render();\n    if (matchMedia('(max-width: 720px)').matches && st.a) {\n      var el = sh.querySelector('[data-d=\"' + iso(st.a) + '\"]'); if (el) { var m = el.closest('.t3dp-m'); if (m) m.scrollIntoView({ block: 'start' }); }\n    } else sh.querySelector('.t3dp-ms').scrollTop = 0;\n  }\n  function close() { if (!sh) return; sh.hidden = true; document.documentElement.classList.remove('t3dp-open'); }\n\n  /* attach to every check-in/check-out pair */\n  function label(el) { var d = parse(el.value); return d ? fmtShort.format(d) : t.add; }\n  function sync(pair) { pair.bi.textContent = label(pair.ci); pair.bo.textContent = label(pair.co); pair.bi.classList.toggle('empty', !pair.ci.value); pair.bo.classList.toggle('empty', !pair.co.value); }\n  function q(root, k) { return root.querySelector('#' + k + ',[name=' + k + '],[data-sync=' + k + ']'); }\n  function attach(root) {\n    var ci = q(root, 'checkin'), co = q(root, 'checkout');\n    if (!ci || !co || ci.dataset.t3dp || ci.type !== 'date') return;\n    var pair = { ci: ci, co: co, root: root }; root.__t3pair = pair;\n    [ci, co].forEach(function (inp, k) {\n      inp.dataset.t3dp = '1'; inp.classList.add('t3dp-real'); inp.style.display = 'none'; inp.tabIndex = -1; inp.setAttribute('aria-hidden', 'true');\n      var b = document.createElement('button'); b.type = 'button'; b.className = 't3dp-btn';\n      b.setAttribute('aria-haspopup', 'dialog'); b.setAttribute('aria-label', k ? t.co : t.ci);\n      inp.insertAdjacentElement('afterend', b);\n      b.addEventListener('click', function (e) { e.preventDefault(); e.stopPropagation(); open(pair, k); });\n      inp.addEventListener('change', function () { sync(pair); }); inp.addEventListener('input', function () { sync(pair); });\n      if (k) pair.bo = b; else pair.bi = b;\n    });\n    var lab = root.querySelectorAll('label[for=\"checkin\"],label[for=\"checkout\"]');\n    lab.forEach(function (l) { l.addEventListener('click', function (e) { e.preventDefault(); open(pair, l.getAttribute('for') === 'checkout' ? 1 : 0); }); });\n    sync(pair);\n    setInterval(function () { sync(pair); }, 1500);\n  }\n  function scan() { document.querySelectorAll('.search,.t3-citybar,form').forEach(attach); }\n  window.T3DP = { scan: scan, open: open, openFor: function (root, ph) { scan(); if (root && root.__t3pair) open(root.__t3pair, ph || 0); } };\n  var hero = document.querySelector('.hero');\n  if (hero && document.querySelector('.hero .search') && 'IntersectionObserver' in window) new IntersectionObserver(function (es) { document.body.classList.toggle('t3-herovis', es[0].isIntersecting); }, { threshold: 0.15 }).observe(hero);\n  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', scan); else scan();\n  new MutationObserver(function () { clearTimeout(scan.t); scan.t = setTimeout(scan, 120); }).observe(document.documentElement, { childList: true, subtree: true });\n})();\n",
 	V6_JS
 ].map((s) => ({
@@ -160574,7 +161086,7 @@ body.t3-herovis #v2-sticky{transform:translateY(160%)!important}
 @media (max-width:720px){.v3-quick{flex-wrap:nowrap!important;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}.v3-quick::-webkit-scrollbar{display:none}.v3-quick button{flex:none}}
 .t3dp-m h4{position:relative}.t3dp-mv{all:unset;cursor:pointer;position:absolute;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-size:22px;line-height:1;border:1px solid #e3e7ee;background:#fff;color:#16202e}.t3dp-mv.l{left:0}.t3dp-mv.r{right:0}.t3dp-mv:disabled{opacity:.3;cursor:default}.t3dp-mv:hover:not(:disabled){background:#f1f3f6}
 @media (prefers-color-scheme:dark){.t3dp-mv{background:#141c28;border-color:#2a3647;color:#eef2f7}}
-${MEGA_CSS}${CSS15}`) + CSS16 + "\n" + CSS17 + "\n" + CSS16B)));
+${MEGA_CSS}${CSS15}`) + CSS16 + "\n" + CSS17 + "\n" + CSS16B + "\n" + CSS18)));
 var html = (body, status = 200, cache = "public, max-age=600, s-maxage=86400") => new Response(minHtml17(uiL10n(frTypo(body))), {
 	status,
 	headers: {
@@ -163691,6 +164203,7 @@ Policy: https://www.top3hotels.com/terms
 	if (p === "/imprint" && L !== "en") return html(imprintL15(L));
 	if (p === "/photo-policy") return html(photoPolicy15(L));
 	if (p === "/accessibility") return html(accessibility15(L));
+	if (p === "/tools") return html(toolsPage19(L));
 	if (p === "/faq") return L === "en" || L === "es" ? html(await faqPage15(L)) : Response.redirect(`${SITE}/faq`, 301);
 	if (p === "/status") return L === "en" ? html(await statusPage15(), 200, "public, max-age=600, s-maxage=3600") : Response.redirect(`${SITE}/status`, 301);
 	if (p === "/for-hotels") return L === "en" ? html(forHotels15()) : Response.redirect(`${SITE}/for-hotels`, 301);
