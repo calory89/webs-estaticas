@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta http-equiv="Content-Security-Policy" data-sn="csp" content="default-src 'self'; script-src 'self' https://static.cloudflareinsights.com https://www.googletagmanager.com https://www.clarity.ms https://*.clarity.ms 'sha256-cLCEyw39DgrON00a8Cw8EJ9aMwwP+5ZBIB6CTCIpwvM='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://*.google-analytics.com https://www.googletagmanager.com https://*.clarity.ms https://c.bing.com; connect-src 'self' https://cloudflareinsights.com https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com https://*.clarity.ms https://c.bing.com; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"><script>/*clarity.ms/tag G-FJKJE77K4V*/(function(w,d,n){var T={"en":["Cookies to count visits and see how the site is used? (Google Analytics, Microsoft Clarity)","Accept","Reject","Privacy","Cookie settings"],"es":["¿Cookies para contar visitas y ver cómo se usa la web? (Google Analytics, Microsoft Clarity)","Aceptar","Rechazar","Privacidad","Configurar cookies"]};function tx(i,el){var x=el&&el.closest&&el.closest('[lang]'),l=((x||d.documentElement).getAttribute('lang')||'en').slice(0,2).toLowerCase();return (T[l]||T.en)[i]}var off=n.doNotTrack=='1'||w.doNotTrack=='1'||n.globalPrivacyControl||/[?&]embed=1/.test(location.search)||location.protocol=='file:'||(n.connection&&(n.connection.saveData||/2g/.test(n.connection.effectiveType||'')));function bind(){[].forEach.call(d.querySelectorAll('[data-sn-cookies]'),function(e){if(off){e.hidden=true;return}e.textContent=tx(4,e);if(e.getAttribute('data-snb'))return;e.setAttribute('data-snb','1');e.addEventListener('click',function(){w.snCookies()})})}w.snBind=bind;if(d.readyState=='loading')d.addEventListener('DOMContentLoaded',bind);else bind();if(off)return;var K='sn.ck',ch=null,tz='';try{ch=localStorage.getItem(K)}catch(e){}try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(e){}var eu=!tz||/^(Europe\/|Arctic\/|Atlantic\/(Canary|Madeira|Azores|Reykjavik|Faroe))/.test(tz);var ok=ch=='1'||(!eu&&ch!='0'),gl=0,ready=0;w.dataLayer=w.dataLayer||[];function g(){dataLayer.push(arguments)}w.gtag=g;g('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:ok?'granted':'denied'});g('js',new Date());g('config','G-FJKJE77K4V',{allow_google_signals:false,allow_ad_personalization_signals:false,page_location:location.origin+location.pathname+location.search});w.clarity=w.clarity||function(){(w.clarity.q=w.clarity.q||[]).push(arguments)};function cv(){w.clarity('consentv2',{ad_Storage:'denied',analytics_Storage:ok?'granted':'denied'})}cv();w.clarity('set','site','supportnear');d.documentElement.setAttribute('data-clarity-mask','True');function a(s){var e=d.createElement('script');e.async=1;e.src=s;d.head.appendChild(e)}function load(){if(gl||!ready||!ok)return;gl=1;a('https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V');a('https://www.clarity.ms/tag/z4eqcmaic7')}function set(v){try{localStorage.setItem(K,v?'1':'0')}catch(e){}ch=v?'1':'0';ok=!!v;g('consent','update',{analytics_storage:v?'granted':'denied'});cv();if(v){ready=1;load()}else d.cookie.split(';').forEach(function(c){var k=c.split('=')[0].trim();if(/^_(ga|clck|clsk)/.test(k)){var h=location.hostname;[h,'.'+h,'.'+h.split('.').slice(-2).join('.')].forEach(function(dm){d.cookie=k+'=;Max-Age=0;path=/;domain='+dm});d.cookie=k+'=;Max-Age=0;path=/'}});var b=d.getElementById('sn-ck');if(b)b.parentNode.removeChild(b)}function btn(t,y){var b=d.createElement('button');b.type='button';b.textContent=t;b.style.cssText='flex:1;min-height:40px;border-radius:10px;font-weight:600;font-size:14px;line-height:1.2;font-family:inherit;cursor:pointer;padding:6px 10px;'+(y?'background:#0B7A63;color:#fff;border:1.5px solid #0B7A63':'background:transparent;color:inherit;border:1.5px solid currentColor');b.addEventListener('click',function(){set(y)});return b}function bar(hi){if(d.getElementById('sn-ck')||!d.body)return;var dk=d.documentElement.getAttribute('data-theme')=='dark'||(!d.documentElement.getAttribute('data-theme')&&w.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches);var b=d.createElement('div');b.id='sn-ck';b.setAttribute('role','region');b.setAttribute('aria-label',tx(4));b.style.cssText='position:fixed;z-index:'+(hi?2600:1900)+';left:8px;right:8px;bottom:calc(8px + env(safe-area-inset-bottom,0px));max-width:470px;margin:0 auto;border-radius:14px;box-shadow:0 6px 24px rgba(0,0,0,.22);padding:10px 12px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;font:13.5px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;'+(dk?'background:#1d2228;color:#eef0f2;border:1px solid #3a424c':'background:#fff;color:#1c1916;border:1px solid #d9d2c5');var p=d.createElement('p');p.style.cssText='margin:0;flex:1 1 210px;min-width:0';p.textContent=tx(0)+' ';var m=d.createElement('a');m.href='/about';m.textContent=tx(3);m.style.cssText='color:inherit;text-decoration:underline;white-space:nowrap';p.appendChild(m);var r=d.createElement('div');r.style.cssText='display:flex;gap:8px;flex:1 1 170px';r.appendChild(btn(tx(1),1));r.appendChild(btn(tx(2),0));b.appendChild(p);b.appendChild(r);d.body.appendChild(b)}w.snCookies=function(){var b=d.getElementById('sn-ck');if(b)b.parentNode.removeChild(b);bar(1)};function go(){if(ready)return;ready=1;load()}function arm(){['pointerdown','keydown','touchstart','scroll'].forEach(function(v){w.addEventListener(v,go,{once:true,passive:true,capture:true})});setTimeout(go,5000);if(eu&&ch==null)setTimeout(bar,1500)}if(d.readyState=='complete')arm();else w.addEventListener('load',arm)})(window,document,navigator);/*clarity.ms/tag*/</script>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Mapa de la ayuda gratuita en España 2026 · SupportNear</title>
+<meta name="description" content="Cuántos comedores, albergues, duchas, centros de salud y servicios sociales hay en el mapa abierto en 48 ciudades españolas, qué falta y qué abre en fin de semana.">
+<link rel="canonical" href="https://supportnear.com/blog/informe-ayuda-gratuita-espana-2026"><meta name="robots" content="max-image-preview:large">
+<link rel="alternate" hreflang="en" href="https://supportnear.com/blog/free-help-map-report-2026"><link rel="alternate" hreflang="es" href="https://supportnear.com/blog/informe-ayuda-gratuita-espana-2026"><link rel="alternate" hreflang="x-default" href="https://supportnear.com/blog/free-help-map-report-2026">
+<meta property="og:title" content="Mapa de la ayuda gratuita en España 2026">
+<meta property="og:description" content="Cuántos comedores, albergues, duchas, centros de salud y servicios sociales hay en el mapa abierto en 48 ciudades españolas, qué falta y qué abre en fin de semana.">
+<meta property="og:image" content="https://supportnear.com/social-es.jpg?v=163f88d7"><meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:type" content="article"><meta property="og:site_name" content="SupportNear">
+<meta property="og:url" content="https://supportnear.com/blog/informe-ayuda-gratuita-espana-2026">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@mrstartups">
+<meta name="theme-color" content="#0B7A63">
+<link rel="icon" href="../favicon.ico" sizes="32x32"><link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="SupportNear" href="https://supportnear.com/blog/feed.xml">
+<style>:root{
+  --paper:#FBF8F3; --paper-2:#FFFFFF; --paper-3:#F3EEE5;
+  --ink:#14110E; --ink-2:#4A443C; --ink-3:#7A7168;
+  --line:#E6DFD3; --brand:#0B7A63; --brand-soft:#E4F2EE; --alert:#C8351B;
+  --ui:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',sans-serif;
+  --display:'Iowan Old Style','Palatino Linotype',Georgia,serif;
+  --mono:ui-monospace,'SF Mono',Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --paper:#0A0E14; --paper-2:#121821; --paper-3:#1A222D;
+    --ink:#F2F5F7; --ink-2:#B3BDC7; --ink-3:#8592A0;
+    --line:#232C38; --brand:#3ECFA9; --brand-soft:#0F2A25; --alert:#FF7A63;
+  }
+}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--ui);
+  font-size:16.5px;line-height:1.62;-webkit-font-smoothing:antialiased}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px 90px}
+a{color:var(--brand)}
+.top{display:flex;align-items:center;gap:11px;padding:26px 0 34px}
+.logo{width:38px;height:38px;border-radius:11px;background:var(--brand);display:grid;place-items:center;flex:none}
+.logo svg{width:21px;height:21px;stroke:var(--paper-2);stroke-width:2.1;fill:none;stroke-linecap:round}
+.top b{font-size:19px;letter-spacing:-.01em}
+.top a{margin-left:auto;font-size:14.5px;font-weight:600;text-decoration:none}
+h1{font-family:var(--display);font-size:clamp(32px,5.4vw,46px);line-height:1.08;
+  letter-spacing:-.02em;margin:0 0 12px;text-wrap:balance}
+.lede{font-size:19px;color:var(--ink-2);margin:0 0 34px;max-width:60ch}
+h2{font-size:22px;letter-spacing:-.015em;margin:44px 0 14px;padding-top:22px;border-top:1px solid var(--line)}
+h3{font-size:16px;margin:26px 0 8px}
+p{margin:0 0 14px;max-width:66ch;color:var(--ink-2)}
+p strong,li strong{color:var(--ink)}
+ul,ol{margin:0 0 16px;padding-left:1.2em;color:var(--ink-2)}
+li{margin-bottom:7px;max-width:64ch}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:1px;
+  background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:0 0 30px}
+.stats div{background:var(--paper-2);padding:16px 18px}
+.stats b{display:block;font-size:27px;line-height:1.1;letter-spacing:-.02em;
+  font-variant-numeric:tabular-nums}
+.stats span{font-size:13px;color:var(--ink-3)}
+.card{background:var(--paper-2);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin:0 0 16px}
+.card p:last-child{margin-bottom:0}
+pre{background:var(--paper-3);border:1px solid var(--line);border-radius:10px;
+  padding:14px 16px;overflow-x:auto;font-family:var(--mono);font-size:13.5px;line-height:1.6;margin:0 0 16px}
+code{font-family:var(--mono);font-size:.92em;background:var(--paper-3);padding:1px 5px;border-radius:4px}
+pre code{background:none;padding:0}
+.btn{display:inline-flex;align-items:center;gap:8px;font:inherit;font-size:15px;font-weight:600;
+  text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
+  border-radius:10px;padding:10px 16px;cursor:pointer}
+.btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
+figure{margin:0 0 22px}
+figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
+figcaption{font-size:13px;color:var(--ink-3);margin-top:7px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:640px){ .two{grid-template-columns:1fr} }
+table{border-collapse:collapse;width:100%;font-size:14.5px;margin:0 0 18px}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-3);font-weight:600}
+td.n{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+.tw{overflow-x:auto}
+footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);
+  font-size:13px;color:var(--ink-3)}
+.mail{font-family:var(--mono);font-size:15px;color:var(--ink);user-select:all}
+
+.top{padding:20px 0 26px}
+.top .logo{margin-inline-start:0}
+.top a:last-child{margin-inline-start:auto;margin-left:0;text-align:end}
+@media (max-width:430px){ .top a:last-child{display:none} .top{padding:16px 0 20px} }
+.ct{color:var(--ink-3);font-size:14px}
+.ad{display:block;color:var(--ink-2);font-size:14.5px}
+.d{color:var(--ink-3);font-size:13px;font-variant-numeric:tabular-nums;white-space:nowrap}
+ul.pl{list-style:none;padding:0;margin:0 0 8px}
+ul.pl li{padding:14px 0;border-bottom:1px solid var(--line)}
+ul.pl li:last-child{border-bottom:0}
+ul.pl a{font-size:17px;font-weight:650;text-decoration:none;color:var(--ink)}
+ul.pl a:hover{color:var(--brand)}
+.pl-h{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.pl-h .d{margin-inline-start:auto}
+.needs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px}
+.needs a{display:inline-block;padding:9px 14px;border:1px solid var(--line);border-radius:999px;background:var(--paper-2);text-decoration:none;font-weight:600;font-size:15px;color:var(--ink)}
+.needs a:hover{border-color:var(--brand);color:var(--brand)}
+.note{color:var(--ink-3);font-size:14.5px;margin:-4px 0 14px}
+.emg{border:1px solid var(--line);border-inline-start:3px solid var(--alert);border-radius:0 12px 12px 0;padding:12px 16px;margin:0 0 26px;font-size:15px}
+.emg strong{color:var(--ink)}
+ul.cnt{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:8px}
+ul.cnt li{background:var(--paper-2);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:14.5px;color:var(--ink-3)}
+ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+
+.crumbs{font-size:13.5px;color:var(--ink-3);margin:-14px 0 14px}
+.crumbs a{color:var(--ink-3)}
+.meta{font-size:13.5px;color:var(--ink-3);margin:0 0 26px}
+.ans{background:var(--brand-soft);border-radius:14px;padding:16px 20px;margin:0 0 26px;color:var(--ink)}
+.ans p{color:var(--ink);margin:0}
+.toc{font-size:15px;margin:0 0 26px}
+.toc a{text-decoration:none}
+details.faq{border-bottom:1px solid var(--line);padding:12px 0}
+details.faq summary{cursor:pointer;font-weight:650;color:var(--ink)}
+details.faq p{margin:10px 0 0}
+.src{font-size:13.5px;color:var(--ink-3)}
+.src li{max-width:none}
+.post{list-style:none;padding:0;margin:0 0 20px}
+.post li{padding:12px 0;border-bottom:1px solid var(--line)}
+.post a{font-weight:650;text-decoration:none;font-size:17px}
+.post span{display:block;color:var(--ink-3);font-size:14.5px}
+.bar{display:flex;align-items:center;gap:10px;font-size:14px;margin:0 0 6px}
+.bar i{display:block;height:12px;background:var(--brand);border-radius:3px;min-width:2px}
+.bar span{min-width:9.5em;color:var(--ink-2)}
+.bar b{font-variant-numeric:tabular-nums;color:var(--ink)}
+.tool fieldset{border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin:0 0 12px}
+.tool legend{font-weight:650;color:var(--ink)}
+.tool label{display:block;margin:4px 0}
+.print-sheet{border:1px dashed var(--line);border-radius:12px;padding:18px 20px;margin:0 0 18px}
+@media print{.top,.btns,footer,.noprint{display:none}.print-sheet{border:0}}
+</style>
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Report", "headline": "Mapa de la ayuda gratuita en España 2026", "description": "Cuántos comedores, albergues, duchas, centros de salud y servicios sociales hay en el mapa abierto en 48 ciudades españolas, qué falta y qué abre en fin de semana.", "inLanguage": "es", "datePublished": "2026-11-27", "dateModified": "2026-11-27", "author": {"@type": "Person", "name": "Carlos de Ory", "url": "https://www.carlosdeory.com", "sameAs": ["https://www.carlosdeory.com"]}, "publisher": {"@type": "Organization", "name": "SupportNear", "url": "https://supportnear.com/", "logo": {"@type": "ImageObject", "url": "https://supportnear.com/icon-512.png"}}, "mainEntityOfPage": "https://supportnear.com/blog/informe-ayuda-gratuita-espana-2026", "image": "https://supportnear.com/social.jpg", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Guías", "item": "https://supportnear.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "Mapa de la ayuda gratuita en España 2026", "item": "https://supportnear.com/blog/informe-ayuda-gratuita-espana-2026"}]}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿De dónde salen los datos?", "acceptedAnswer": {"@type": "Answer", "text": "De OpenStreetMap, el mapa abierto que mantienen voluntarios, descargado el 28 de octubre de 2026. Contamos los sitios a menos de 10 km del centro de cada ciudad."}}, {"@type": "Question", "name": "¿Por qué hay tan pocos comedores?", "acceptedAnswer": {"@type": "Answer", "text": "Porque la mayoría no están en el mapa abierto, no porque no existan. Cada entidad que se añade mejora los datos para todos."}}]}]</script>
+</head>
+<body>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="../blog/">Guías</a></header><main>
+<p class="crumbs"><a href="../">SupportNear</a> › <a href="./">Guías</a> › Mapa de la ayuda gratuita en España 2026</p><h1>Mapa de la ayuda gratuita en España 2026</h1>
+<p class="meta">Actualizado el 27 de noviembre de 2026 · por <a href="autor">Carlos de Ory</a></p><p class="toc"><b>Contenido:</b> <a href="#en-cifras">En cifras</a> · <a href="#comida-gratis-las-ciudades-con-mas-sitios-en-el-mapa">Comida gratis: las ciudades con más sitios en el mapa</a> · <a href="#albergues">Albergues</a> · <a href="#duchas-y-aseos-publicos">Duchas y aseos públicos</a> · <a href="#horarios-casi-nadie-los-publica">Horarios: casi nadie los publica</a> · <a href="#ciudades-sin-nada-en-el-mapa-para-alguna-necesidad-basica">Ciudades sin nada en el mapa para alguna necesidad básica</a> · <a href="#espana-frente-a-otros-paises">España frente a otros países</a> · <a href="#duchas-y-aseos-en-ciudades-europeas">Duchas y aseos en ciudades europeas</a> · <a href="#usalo">Úsalo</a></p><div class="ans"><p>En las 48 ciudades españolas de SupportNear, el mapa abierto conoce <strong>41 sitios de comida gratis y 43 albergues</strong>, frente a más de 1.000 centros de salud y 1.200 servicios sociales. La ayuda más básica es la que peor está en el mapa: casi nadie la ha puesto.</p></div>
+<h2 id="en-cifras">En cifras</h2>
+<p>Sitios a menos de 10 km del centro de cada ciudad, sumando las 48 ciudades. Fuente: OpenStreetMap, datos del 28 de octubre de 2026.</p>
+<ul class="cnt"><li><b>41</b>comida</li><li><b>43</b>albergues</li><li><b>379</b>duchas y aseos</li><li><b>1.003</b>salud</li><li><b>1.218</b>servicios sociales</li><li><b>1.477</b>sitios donde estar</li></ul>
+<h2 id="comida-gratis-las-ciudades-con-mas-sitios-en-el-mapa">Comida gratis: las ciudades con más sitios en el mapa</h2>
+<div class="bar"><span>Barcelona</span><i style="width:70.0%"></i><b>9</b></div><div class="bar"><span>Badalona</span><i style="width:62.2%"></i><b>8</b></div><div class="bar"><span>Madrid</span><i style="width:62.2%"></i><b>8</b></div><div class="bar"><span>Sevilla</span><i style="width:46.7%"></i><b>6</b></div><div class="bar"><span>Valladolid</span><i style="width:31.1%"></i><b>4</b></div><div class="bar"><span>Granada</span><i style="width:23.3%"></i><b>3</b></div><div class="bar"><span>Salamanca</span><i style="width:23.3%"></i><b>3</b></div>
+<h2 id="albergues">Albergues</h2>
+<div class="bar"><span>Madrid</span><i style="width:70.0%"></i><b>15</b></div><div class="bar"><span>Palma de Mallorca</span><i style="width:32.7%"></i><b>7</b></div><div class="bar"><span>Barcelona</span><i style="width:23.3%"></i><b>5</b></div><div class="bar"><span>Málaga</span><i style="width:18.7%"></i><b>4</b></div><div class="bar"><span>Burgos</span><i style="width:14.0%"></i><b>3</b></div><div class="bar"><span>Móstoles</span><i style="width:14.0%"></i><b>3</b></div><div class="bar"><span>Sabadell</span><i style="width:14.0%"></i><b>3</b></div><div class="bar"><span>Vigo</span><i style="width:14.0%"></i><b>3</b></div>
+<h2 id="duchas-y-aseos-publicos">Duchas y aseos públicos</h2>
+<div class="bar"><span>Badalona</span><i style="width:70.0%"></i><b>83</b></div><div class="bar"><span>Barcelona</span><i style="width:70.0%"></i><b>83</b></div><div class="bar"><span>Madrid</span><i style="width:40.5%"></i><b>48</b></div><div class="bar"><span>Málaga</span><i style="width:38.0%"></i><b>45</b></div><div class="bar"><span>Pamplona</span><i style="width:30.4%"></i><b>36</b></div><div class="bar"><span>A Coruña</span><i style="width:29.5%"></i><b>35</b></div><div class="bar"><span>Burgos</span><i style="width:21.9%"></i><b>26</b></div><div class="bar"><span>Gijón</span><i style="width:19.4%"></i><b>23</b></div>
+<h2 id="horarios-casi-nadie-los-publica">Horarios: casi nadie los publica</h2>
+<p>De los sitios de comida, albergues y duchas que listamos en las páginas de cada ciudad, estos son los que tienen horario en el mapa y los que abren en fin de semana según ese horario.</p>
+<div class="tw"><table><thead><tr><th>Necesidad</th><th>Sitios listados</th><th>Con horario</th><th>Abren en fin de semana (según su horario)</th></tr></thead><tbody><tr><td>comida</td><td class="n">38</td><td class="n">3 (8 %)</td><td class="n">2</td></tr><tr><td>albergues</td><td class="n">42</td><td class="n">1 (2 %)</td><td class="n">1</td></tr><tr><td>duchas y aseos</td><td class="n">55</td><td class="n">14 (25 %)</td><td class="n">13</td></tr></tbody></table></div>
+<p>Sin horario, quien busca comida un domingo no sabe si encontrará la puerta abierta. Es lo primero que cualquier entidad puede arreglar: <a href="anadir-o-corregir-tu-entidad">así se hace</a>.</p>
+<h2 id="ciudades-sin-nada-en-el-mapa-para-alguna-necesidad-basica">Ciudades sin nada en el mapa para alguna necesidad básica</h2>
+<div class="tw"><table><thead><tr><th>Ciudad</th><th>Sin nada en el mapa para</th></tr></thead><tbody><tr><td><a href="../c/a-coruna">A Coruña</a></td><td>comida, albergues</td></tr><tr><td><a href="../c/albacete">Albacete</a></td><td>comida, albergues, duchas y aseos</td></tr><tr><td><a href="../c/alicante">Alicante</a></td><td>comida, albergues, duchas y aseos</td></tr><tr><td><a href="../c/almeria">Almería</a></td><td>comida, albergues, duchas y aseos</td></tr><tr><td><a href="../c/badajoz">Badajoz</a></td><td>comida, albergues, duchas y aseos</td></tr><tr><td><a href="../c/badalona">Badalona</a></td><td>albergues</td></tr><tr><td><a href="../c/bilbao">Bilbao</a></td><td>comida, albergues, duchas y aseos</td></tr><tr><td><a href="../c/burgos">Burgos</a></td><td>comida</td></tr><tr><td><a href="../c/cartagena">Cartagena</a></td><td>comida, albergues, duchas y aseos</td></tr><tr><td><a href="../c/castellon-de-la-plana">Castellón de la Plana</a></td><td>comida, albergues, duchas y aseos</td></tr><tr><td><a href="../c/ceuta">Ceuta</a></td><td>comida, albergues, duchas y aseos</td></tr><tr><td><a href="../c/caceres">Cáceres</a></td><td>comida, albergues, duchas y aseos</td></tr><tr><td><a href="../c/cordoba-espana">Córdoba</a></td><td>comida, albergues, duchas y aseos</td></tr><tr><td><a href="../c/donostia-san-sebastian">Donostia-San Sebastián</a></td><td>comida, albergues, duchas y aseos</td></tr><tr><td><a href="../c/elche">Elche</a></td><td>comida, albergues, duchas y aseos</td></tr><tr><td><a href="../c/gijon">Gijón</a></td><td>comida, albergues</td></tr><tr><td><a href="../c/granada">Granada</a></td><td>albergues, duchas y aseos</td></tr><tr><td><a href="../c/guadalajara-espana">Guadalajara</a></td><td>comida, albergues, duchas y aseos</td></tr><tr><td><a href="../c/huelva">Huelva</a></td><td>comida, albergues, duchas y aseos</td></tr><tr><td><a href="../c/jerez-de-la-frontera">Jerez de la Frontera</a></td><td>comida, albergues, duchas y aseos</td></tr><tr><td><a href="../c/las-palmas-de-gran-canaria">Las Palmas de Gran Canaria</a></td><td>comida, albergues, duchas y aseos</td></tr><tr><td><a href="../c/leon-espana">León</a></td><td>comida, albergues, duchas y aseos</td></tr><tr><td><a href="../c/lleida">Lleida</a></td><td>comida, albergues, duchas y aseos</td></tr><tr><td><a href="../c/logrono">Logroño</a></td><td>comida, albergues, duchas y aseos</td></tr><tr><td><a href="../c/melilla">Melilla</a></td><td>comida, albergues, duchas y aseos</td></tr><tr><td><a href="../c/murcia">Murcia</a></td><td>comida, albergues, duchas y aseos</td></tr><tr><td><a href="../c/malaga">Málaga</a></td><td>comida</td></tr><tr><td><a href="../c/mostoles">Móstoles</a></td><td>comida, duchas y aseos</td></tr><tr><td><a href="../c/ourense">Ourense</a></td><td>comida, albergues, duchas y aseos</td></tr><tr><td><a href="../c/oviedo">Oviedo</a></td><td>comida, albergues, duchas y aseos</td></tr><tr><td><a href="../c/palma-de-mallorca">Palma de Mallorca</a></td><td>comida, duchas y aseos</td></tr><tr><td><a href="../c/pamplona">Pamplona</a></td><td>comida, albergues</td></tr><tr><td><a href="../c/sabadell">Sabadell</a></td><td>comida, duchas y aseos</td></tr><tr><td><a href="../c/salamanca">Salamanca</a></td><td>albergues, duchas y aseos</td></tr><tr><td><a href="../c/santa-cruz-de-tenerife">Santa Cruz de Tenerife</a></td><td>comida, albergues, duchas y aseos</td></tr><tr><td><a href="../c/santander">Santander</a></td><td>comida, albergues, duchas y aseos</td></tr><tr><td><a href="../c/santiago-de-compostela">Santiago de Compostela</a></td><td>comida, albergues, duchas y aseos</td></tr><tr><td><a href="../c/sevilla">Sevilla</a></td><td>albergues, duchas y aseos</td></tr><tr><td><a href="../c/tarragona">Tarragona</a></td><td>comida, albergues, duchas y aseos</td></tr><tr><td><a href="../c/terrassa">Terrassa</a></td><td>comida, albergues, duchas y aseos</td></tr><tr><td><a href="../c/toledo">Toledo</a></td><td>comida, albergues, duchas y aseos</td></tr><tr><td><a href="../c/valencia">Valencia</a></td><td>comida, albergues, duchas y aseos</td></tr><tr><td><a href="../c/valladolid">Valladolid</a></td><td>albergues, duchas y aseos</td></tr><tr><td><a href="../c/vigo">Vigo</a></td><td>comida, duchas y aseos</td></tr><tr><td><a href="../c/vitoria-gasteiz">Vitoria-Gasteiz</a></td><td>comida, albergues, duchas y aseos</td></tr><tr><td><a href="../c/zaragoza">Zaragoza</a></td><td>comida, albergues, duchas y aseos</td></tr></tbody></table></div>
+<p>Que salga vacío no significa que no haya: significa que nadie lo ha puesto en el mapa abierto. La lista mundial está en <a href="../huecos">huecos del mapa</a>.</p>
+<h2 id="espana-frente-a-otros-paises">España frente a otros países</h2>
+<p>Sitios en el mapa por país (todas las categorías, a menos de 10 km de las ciudades de SupportNear).</p>
+<div class="bar"><span>España</span><i style="width:70.0%"></i><b>4.824</b></div><div class="bar"><span>Germany</span><i style="width:67.4%"></i><b>4.643</b></div><div class="bar"><span>United States</span><i style="width:44.8%"></i><b>3.089</b></div><div class="bar"><span>France</span><i style="width:42.9%"></i><b>2.955</b></div><div class="bar"><span>Japan</span><i style="width:39.3%"></i><b>2.708</b></div><div class="bar"><span>Russia</span><i style="width:24.1%"></i><b>1.662</b></div><div class="bar"><span>United Kingdom</span><i style="width:23.8%"></i><b>1.642</b></div><div class="bar"><span>Poland</span><i style="width:23.6%"></i><b>1.629</b></div><div class="bar"><span>Canada</span><i style="width:22.5%"></i><b>1.553</b></div><div class="bar"><span>Italy</span><i style="width:20.6%"></i><b>1.420</b></div><div class="bar"><span>Brazil</span><i style="width:19.7%"></i><b>1.361</b></div><div class="bar"><span>India</span><i style="width:17.4%"></i><b>1.201</b></div><div class="bar"><span>Ukraine</span><i style="width:17.3%"></i><b>1.195</b></div><div class="bar"><span>South Korea</span><i style="width:16.8%"></i><b>1.158</b></div><div class="bar"><span>Australia</span><i style="width:16.3%"></i><b>1.121</b></div><div class="bar"><span>Argentina</span><i style="width:16.1%"></i><b>1.111</b></div><div class="bar"><span>People&#x27;s Republic of China</span><i style="width:15.3%"></i><b>1.055</b></div><div class="bar"><span>Iran</span><i style="width:15.2%"></i><b>1.048</b></div><div class="bar"><span>Mexico</span><i style="width:14.6%"></i><b>1.005</b></div><div class="bar"><span>Philippines</span><i style="width:14.1%"></i><b>969</b></div>
+<h2 id="duchas-y-aseos-en-ciudades-europeas">Duchas y aseos en ciudades europeas</h2>
+<div class="bar"><span>Zürich</span><i style="width:70.0%"></i><b>156</b></div><div class="bar"><span>Lyon</span><i style="width:66.4%"></i><b>148</b></div><div class="bar"><span>Nantes</span><i style="width:57.9%"></i><b>129</b></div><div class="bar"><span>Rīga</span><i style="width:53.8%"></i><b>120</b></div><div class="bar"><span>Bordeaux</span><i style="width:51.6%"></i><b>115</b></div><div class="bar"><span>Bratislava</span><i style="width:49.8%"></i><b>111</b></div><div class="bar"><span>Paris</span><i style="width:46.7%"></i><b>104</b></div><div class="bar"><span>Rennes</span><i style="width:45.8%"></i><b>102</b></div><div class="bar"><span>Poznań</span><i style="width:44.9%"></i><b>100</b></div><div class="bar"><span>Dresden</span><i style="width:44.4%"></i><b>99</b></div><div class="bar"><span>Hanover</span><i style="width:43.5%"></i><b>97</b></div><div class="bar"><span>Porto</span><i style="width:40.4%"></i><b>90</b></div><div class="bar"><span>Toulouse</span><i style="width:37.7%"></i><b>84</b></div><div class="bar"><span>Wien</span><i style="width:37.2%"></i><b>83</b></div><div class="bar"><span>Badalona</span><i style="width:37.2%"></i><b>83</b></div><div class="bar"><span>Barcelona</span><i style="width:37.2%"></i><b>83</b></div><div class="bar"><span>Graz</span><i style="width:36.3%"></i><b>81</b></div><div class="bar"><span>Nice</span><i style="width:35.9%"></i><b>80</b></div><div class="bar"><span>Augsburg</span><i style="width:35.0%"></i><b>78</b></div><div class="bar"><span>Linz</span><i style="width:34.6%"></i><b>77</b></div>
+<h2 id="usalo">Úsalo</h2>
+<p>Puedes citar estas cifras con un enlace a esta página. La infografía se puede insertar en cualquier web:</p>
+<p><img src="informe-espana-2026.svg" width="760" height="420" alt="Infografía: ayuda gratuita en el mapa en 48 ciudades españolas, 2026" style="max-width:100%;height:auto"></p>
+<pre><code>&lt;a href="https://supportnear.com/blog/informe-ayuda-gratuita-espana-2026"&gt;&lt;img src="https://supportnear.com/blog/informe-espana-2026.svg" width="760" height="420" alt="Ayuda gratuita en el mapa en 48 ciudades españolas, 2026 (SupportNear)"&gt;&lt;/a&gt;</code></pre>
+<p>Los datos completos están en <a href="datos-abiertos-y-widget">datos abiertos</a> y la forma de contar, en <a href="metodologia">metodología</a>.</p><div class="btns"><a class="btn btn--p" href="../">Abrir el mapa</a><a class="btn" href="../c/">Ayuda por ciudad</a></div><h2 id="faq">Preguntas frecuentes</h2><details class="faq"><summary>¿De dónde salen los datos?</summary><p>De OpenStreetMap, el mapa abierto que mantienen voluntarios, descargado el 28 de octubre de 2026. Contamos los sitios a menos de 10 km del centro de cada ciudad.</p></details><details class="faq"><summary>¿Por qué hay tan pocos comedores?</summary><p>Porque la mayoría no están en el mapa abierto, no porque no existan. Cada entidad que se añade mejora los datos para todos.</p></details><h2 id="mas">Sigue leyendo</h2><ul class="post"><li><a href="metodologia">Metodología: de dónde salen los datos de SupportNear</a><span>Cómo se eligen, se cuentan y se actualizan los sitios del mapa: OpenStreetMap, radio de 10 km, categorías y limitaciones.</span></li><li><a href="datos-abiertos-y-widget">Datos abiertos, mapa incrustable y descarga</a><span>Descarga en CSV los sitios de cada país, los teléfonos de emergencia y el mapa para incrustar en tu web. Gratis, con licencia ODbL.</span></li><li><a href="anadir-o-corregir-tu-entidad">Cómo añadir o corregir tu entidad en el mapa</a><span>Paso a paso para poner un comedor, albergue, ducha o servicio social en OpenStreetMap, con las etiquetas exactas, para que salga en SupportNear.</span></li></ul>
+</main><footer>SupportNear &middot; Datos de OpenStreetMap &middot; <a href="../blog/">Todas las guías</a> &middot; <a href="../about">Quién está detrás</a></footer>
+</div>
+</body>
+</html>

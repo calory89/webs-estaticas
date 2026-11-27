@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta http-equiv="Content-Security-Policy" data-sn="csp" content="default-src 'self'; script-src 'self' https://static.cloudflareinsights.com https://www.googletagmanager.com https://www.clarity.ms https://*.clarity.ms 'sha256-cLCEyw39DgrON00a8Cw8EJ9aMwwP+5ZBIB6CTCIpwvM='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://*.google-analytics.com https://www.googletagmanager.com https://*.clarity.ms https://c.bing.com; connect-src 'self' https://cloudflareinsights.com https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com https://*.clarity.ms https://c.bing.com; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"><script>/*clarity.ms/tag G-FJKJE77K4V*/(function(w,d,n){var T={"en":["Cookies to count visits and see how the site is used? (Google Analytics, Microsoft Clarity)","Accept","Reject","Privacy","Cookie settings"],"es":["¿Cookies para contar visitas y ver cómo se usa la web? (Google Analytics, Microsoft Clarity)","Aceptar","Rechazar","Privacidad","Configurar cookies"]};function tx(i,el){var x=el&&el.closest&&el.closest('[lang]'),l=((x||d.documentElement).getAttribute('lang')||'en').slice(0,2).toLowerCase();return (T[l]||T.en)[i]}var off=n.doNotTrack=='1'||w.doNotTrack=='1'||n.globalPrivacyControl||/[?&]embed=1/.test(location.search)||location.protocol=='file:'||(n.connection&&(n.connection.saveData||/2g/.test(n.connection.effectiveType||'')));function bind(){[].forEach.call(d.querySelectorAll('[data-sn-cookies]'),function(e){if(off){e.hidden=true;return}e.textContent=tx(4,e);if(e.getAttribute('data-snb'))return;e.setAttribute('data-snb','1');e.addEventListener('click',function(){w.snCookies()})})}w.snBind=bind;if(d.readyState=='loading')d.addEventListener('DOMContentLoaded',bind);else bind();if(off)return;var K='sn.ck',ch=null,tz='';try{ch=localStorage.getItem(K)}catch(e){}try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(e){}var eu=!tz||/^(Europe\/|Arctic\/|Atlantic\/(Canary|Madeira|Azores|Reykjavik|Faroe))/.test(tz);var ok=ch=='1'||(!eu&&ch!='0'),gl=0,ready=0;w.dataLayer=w.dataLayer||[];function g(){dataLayer.push(arguments)}w.gtag=g;g('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:ok?'granted':'denied'});g('js',new Date());g('config','G-FJKJE77K4V',{allow_google_signals:false,allow_ad_personalization_signals:false,page_location:location.origin+location.pathname+location.search});w.clarity=w.clarity||function(){(w.clarity.q=w.clarity.q||[]).push(arguments)};function cv(){w.clarity('consentv2',{ad_Storage:'denied',analytics_Storage:ok?'granted':'denied'})}cv();w.clarity('set','site','supportnear');d.documentElement.setAttribute('data-clarity-mask','True');function a(s){var e=d.createElement('script');e.async=1;e.src=s;d.head.appendChild(e)}function load(){if(gl||!ready||!ok)return;gl=1;a('https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V');a('https://www.clarity.ms/tag/z4eqcmaic7')}function set(v){try{localStorage.setItem(K,v?'1':'0')}catch(e){}ch=v?'1':'0';ok=!!v;g('consent','update',{analytics_storage:v?'granted':'denied'});cv();if(v){ready=1;load()}else d.cookie.split(';').forEach(function(c){var k=c.split('=')[0].trim();if(/^_(ga|clck|clsk)/.test(k)){var h=location.hostname;[h,'.'+h,'.'+h.split('.').slice(-2).join('.')].forEach(function(dm){d.cookie=k+'=;Max-Age=0;path=/;domain='+dm});d.cookie=k+'=;Max-Age=0;path=/'}});var b=d.getElementById('sn-ck');if(b)b.parentNode.removeChild(b)}function btn(t,y){var b=d.createElement('button');b.type='button';b.textContent=t;b.style.cssText='flex:1;min-height:40px;border-radius:10px;font-weight:600;font-size:14px;line-height:1.2;font-family:inherit;cursor:pointer;padding:6px 10px;'+(y?'background:#0B7A63;color:#fff;border:1.5px solid #0B7A63':'background:transparent;color:inherit;border:1.5px solid currentColor');b.addEventListener('click',function(){set(y)});return b}function bar(hi){if(d.getElementById('sn-ck')||!d.body)return;var dk=d.documentElement.getAttribute('data-theme')=='dark'||(!d.documentElement.getAttribute('data-theme')&&w.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches);var b=d.createElement('div');b.id='sn-ck';b.setAttribute('role','region');b.setAttribute('aria-label',tx(4));b.style.cssText='position:fixed;z-index:'+(hi?2600:1900)+';left:8px;right:8px;bottom:calc(8px + env(safe-area-inset-bottom,0px));max-width:470px;margin:0 auto;border-radius:14px;box-shadow:0 6px 24px rgba(0,0,0,.22);padding:10px 12px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;font:13.5px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;'+(dk?'background:#1d2228;color:#eef0f2;border:1px solid #3a424c':'background:#fff;color:#1c1916;border:1px solid #d9d2c5');var p=d.createElement('p');p.style.cssText='margin:0;flex:1 1 210px;min-width:0';p.textContent=tx(0)+' ';var m=d.createElement('a');m.href='/about';m.textContent=tx(3);m.style.cssText='color:inherit;text-decoration:underline;white-space:nowrap';p.appendChild(m);var r=d.createElement('div');r.style.cssText='display:flex;gap:8px;flex:1 1 170px';r.appendChild(btn(tx(1),1));r.appendChild(btn(tx(2),0));b.appendChild(p);b.appendChild(r);d.body.appendChild(b)}w.snCookies=function(){var b=d.getElementById('sn-ck');if(b)b.parentNode.removeChild(b);bar(1)};function go(){if(ready)return;ready=1;load()}function arm(){['pointerdown','keydown','touchstart','scroll'].forEach(function(v){w.addEventListener(v,go,{once:true,passive:true,capture:true})});setTimeout(go,5000);if(eu&&ch==null)setTimeout(bar,1500)}if(d.readyState=='complete')arm();else w.addEventListener('load',arm)})(window,document,navigator);/*clarity.ms/tag*/</script>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Ayuda gratis en Madrid: guía para empezar · SupportNear</title>
+<meta name="description" content="A quién llamar en Madrid (SAMUR Social), cómo funciona la Campaña del Frío 2026-2027 y dónde comer, dormir y ducharse gratis.">
+<link rel="canonical" href="https://supportnear.com/blog/guia-ayuda-madrid"><meta name="robots" content="max-image-preview:large">
+
+<meta property="og:title" content="Ayuda gratis en Madrid: guía para empezar">
+<meta property="og:description" content="A quién llamar en Madrid (SAMUR Social), cómo funciona la Campaña del Frío 2026-2027 y dónde comer, dormir y ducharse gratis.">
+<meta property="og:image" content="https://supportnear.com/social-es.jpg?v=163f88d7"><meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:type" content="article"><meta property="og:site_name" content="SupportNear">
+<meta property="og:url" content="https://supportnear.com/blog/guia-ayuda-madrid">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@mrstartups">
+<meta name="theme-color" content="#0B7A63">
+<link rel="icon" href="../favicon.ico" sizes="32x32"><link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="SupportNear" href="https://supportnear.com/blog/feed.xml">
+<style>:root{
+  --paper:#FBF8F3; --paper-2:#FFFFFF; --paper-3:#F3EEE5;
+  --ink:#14110E; --ink-2:#4A443C; --ink-3:#7A7168;
+  --line:#E6DFD3; --brand:#0B7A63; --brand-soft:#E4F2EE; --alert:#C8351B;
+  --ui:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',sans-serif;
+  --display:'Iowan Old Style','Palatino Linotype',Georgia,serif;
+  --mono:ui-monospace,'SF Mono',Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --paper:#0A0E14; --paper-2:#121821; --paper-3:#1A222D;
+    --ink:#F2F5F7; --ink-2:#B3BDC7; --ink-3:#8592A0;
+    --line:#232C38; --brand:#3ECFA9; --brand-soft:#0F2A25; --alert:#FF7A63;
+  }
+}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--ui);
+  font-size:16.5px;line-height:1.62;-webkit-font-smoothing:antialiased}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px 90px}
+a{color:var(--brand)}
+.top{display:flex;align-items:center;gap:11px;padding:26px 0 34px}
+.logo{width:38px;height:38px;border-radius:11px;background:var(--brand);display:grid;place-items:center;flex:none}
+.logo svg{width:21px;height:21px;stroke:var(--paper-2);stroke-width:2.1;fill:none;stroke-linecap:round}
+.top b{font-size:19px;letter-spacing:-.01em}
+.top a{margin-left:auto;font-size:14.5px;font-weight:600;text-decoration:none}
+h1{font-family:var(--display);font-size:clamp(32px,5.4vw,46px);line-height:1.08;
+  letter-spacing:-.02em;margin:0 0 12px;text-wrap:balance}
+.lede{font-size:19px;color:var(--ink-2);margin:0 0 34px;max-width:60ch}
+h2{font-size:22px;letter-spacing:-.015em;margin:44px 0 14px;padding-top:22px;border-top:1px solid var(--line)}
+h3{font-size:16px;margin:26px 0 8px}
+p{margin:0 0 14px;max-width:66ch;color:var(--ink-2)}
+p strong,li strong{color:var(--ink)}
+ul,ol{margin:0 0 16px;padding-left:1.2em;color:var(--ink-2)}
+li{margin-bottom:7px;max-width:64ch}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:1px;
+  background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:0 0 30px}
+.stats div{background:var(--paper-2);padding:16px 18px}
+.stats b{display:block;font-size:27px;line-height:1.1;letter-spacing:-.02em;
+  font-variant-numeric:tabular-nums}
+.stats span{font-size:13px;color:var(--ink-3)}
+.card{background:var(--paper-2);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin:0 0 16px}
+.card p:last-child{margin-bottom:0}
+pre{background:var(--paper-3);border:1px solid var(--line);border-radius:10px;
+  padding:14px 16px;overflow-x:auto;font-family:var(--mono);font-size:13.5px;line-height:1.6;margin:0 0 16px}
+code{font-family:var(--mono);font-size:.92em;background:var(--paper-3);padding:1px 5px;border-radius:4px}
+pre code{background:none;padding:0}
+.btn{display:inline-flex;align-items:center;gap:8px;font:inherit;font-size:15px;font-weight:600;
+  text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
+  border-radius:10px;padding:10px 16px;cursor:pointer}
+.btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
+figure{margin:0 0 22px}
+figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
+figcaption{font-size:13px;color:var(--ink-3);margin-top:7px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:640px){ .two{grid-template-columns:1fr} }
+table{border-collapse:collapse;width:100%;font-size:14.5px;margin:0 0 18px}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-3);font-weight:600}
+td.n{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+.tw{overflow-x:auto}
+footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);
+  font-size:13px;color:var(--ink-3)}
+.mail{font-family:var(--mono);font-size:15px;color:var(--ink);user-select:all}
+
+.top{padding:20px 0 26px}
+.top .logo{margin-inline-start:0}
+.top a:last-child{margin-inline-start:auto;margin-left:0;text-align:end}
+@media (max-width:430px){ .top a:last-child{display:none} .top{padding:16px 0 20px} }
+.ct{color:var(--ink-3);font-size:14px}
+.ad{display:block;color:var(--ink-2);font-size:14.5px}
+.d{color:var(--ink-3);font-size:13px;font-variant-numeric:tabular-nums;white-space:nowrap}
+ul.pl{list-style:none;padding:0;margin:0 0 8px}
+ul.pl li{padding:14px 0;border-bottom:1px solid var(--line)}
+ul.pl li:last-child{border-bottom:0}
+ul.pl a{font-size:17px;font-weight:650;text-decoration:none;color:var(--ink)}
+ul.pl a:hover{color:var(--brand)}
+.pl-h{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.pl-h .d{margin-inline-start:auto}
+.needs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px}
+.needs a{display:inline-block;padding:9px 14px;border:1px solid var(--line);border-radius:999px;background:var(--paper-2);text-decoration:none;font-weight:600;font-size:15px;color:var(--ink)}
+.needs a:hover{border-color:var(--brand);color:var(--brand)}
+.note{color:var(--ink-3);font-size:14.5px;margin:-4px 0 14px}
+.emg{border:1px solid var(--line);border-inline-start:3px solid var(--alert);border-radius:0 12px 12px 0;padding:12px 16px;margin:0 0 26px;font-size:15px}
+.emg strong{color:var(--ink)}
+ul.cnt{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:8px}
+ul.cnt li{background:var(--paper-2);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:14.5px;color:var(--ink-3)}
+ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+
+.crumbs{font-size:13.5px;color:var(--ink-3);margin:-14px 0 14px}
+.crumbs a{color:var(--ink-3)}
+.meta{font-size:13.5px;color:var(--ink-3);margin:0 0 26px}
+.ans{background:var(--brand-soft);border-radius:14px;padding:16px 20px;margin:0 0 26px;color:var(--ink)}
+.ans p{color:var(--ink);margin:0}
+.toc{font-size:15px;margin:0 0 26px}
+.toc a{text-decoration:none}
+details.faq{border-bottom:1px solid var(--line);padding:12px 0}
+details.faq summary{cursor:pointer;font-weight:650;color:var(--ink)}
+details.faq p{margin:10px 0 0}
+.src{font-size:13.5px;color:var(--ink-3)}
+.src li{max-width:none}
+.post{list-style:none;padding:0;margin:0 0 20px}
+.post li{padding:12px 0;border-bottom:1px solid var(--line)}
+.post a{font-weight:650;text-decoration:none;font-size:17px}
+.post span{display:block;color:var(--ink-3);font-size:14.5px}
+.bar{display:flex;align-items:center;gap:10px;font-size:14px;margin:0 0 6px}
+.bar i{display:block;height:12px;background:var(--brand);border-radius:3px;min-width:2px}
+.bar span{min-width:9.5em;color:var(--ink-2)}
+.bar b{font-variant-numeric:tabular-nums;color:var(--ink)}
+.tool fieldset{border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin:0 0 12px}
+.tool legend{font-weight:650;color:var(--ink)}
+.tool label{display:block;margin:4px 0}
+.print-sheet{border:1px dashed var(--line);border-radius:12px;padding:18px 20px;margin:0 0 18px}
+@media print{.top,.btns,footer,.noprint{display:none}.print-sheet{border:0}}
+</style>
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Article", "headline": "Ayuda gratis en Madrid: guía para empezar", "description": "A quién llamar en Madrid (SAMUR Social), cómo funciona la Campaña del Frío 2026-2027 y dónde comer, dormir y ducharse gratis.", "inLanguage": "es", "datePublished": "2026-11-27", "dateModified": "2026-11-27", "author": {"@type": "Person", "name": "Carlos de Ory", "url": "https://www.carlosdeory.com", "sameAs": ["https://www.carlosdeory.com"]}, "publisher": {"@type": "Organization", "name": "SupportNear", "url": "https://supportnear.com/", "logo": {"@type": "ImageObject", "url": "https://supportnear.com/icon-512.png"}}, "mainEntityOfPage": "https://supportnear.com/blog/guia-ayuda-madrid", "image": "https://supportnear.com/social.jpg", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Guías", "item": "https://supportnear.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "Ayuda gratis en Madrid: guía para empezar", "item": "https://supportnear.com/blog/guia-ayuda-madrid"}]}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Cuál es el teléfono del SAMUR Social?", "acceptedAnswer": {"@type": "Answer", "text": "91 480 20 20, las 24 horas. Para pedir plaza en la Campaña del Frío está también el Equipo de Coordinación de Accesos, 91 919 89 13, de 8:00 a 21:00."}}, {"@type": "Question", "name": "¿Cuándo empieza la Campaña del Frío en Madrid?", "acceptedAnswer": {"@type": "Answer", "text": "La de 2026-2027 abre desde la noche del 2 de noviembre de 2026 hasta la mañana del 16 de abril de 2027. Las plazas en hostales, del 23 de noviembre al 1 de abril."}}]}]</script>
+</head>
+<body>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="../blog/">Guías</a></header><main>
+<p class="crumbs"><a href="../">SupportNear</a> › <a href="./">Guías</a> › Ayuda gratis en Madrid: guía para empezar</p><h1>Ayuda gratis en Madrid: guía para empezar</h1>
+<p class="meta">Actualizado el 27 de noviembre de 2026 · por <a href="autor">Carlos de Ory</a></p><p class="toc"><b>Contenido:</b> <a href="#a-quien-llamar">A quién llamar</a> · <a href="#campana-del-frio-2026-2027">Campaña del Frío 2026-2027</a> · <a href="#comer">Comer</a> · <a href="#dormir">Dormir</a> · <a href="#ducharse-y-asearse">Ducharse y asearse</a> · <a href="#medico">Médico</a></p><div class="ans"><p>En Madrid, la puerta de entrada para quien no tiene casa es el <strong>SAMUR Social: 91 480 20 20, 24 horas</strong>. Para dormir este invierno está la Campaña del Frío, abierta <strong>desde la noche del 2 de noviembre de 2026 hasta la mañana del 16 de abril de 2027</strong>.</p></div>
+<h2 id="a-quien-llamar">A quién llamar</h2>
+<div class="tw"><table><thead><tr><th>Dónde</th><th>Teléfono</th><th>Para qué</th><th>Gratis</th><th>24 h</th></tr></thead><tbody><tr><td>Todo el país</td><td class="n"><a href="tel:012">012</a></td><td><a href="https://administracion.gob.es/pag_Home/atencionCiudadana/telefonos-interes.html" rel="noopener">Información de tu comunidad, pide servicios sociales</a></td><td>no</td><td>no</td></tr><tr><td>Madrid</td><td class="n"><a href="tel:914802020">91 480 20 20</a></td><td><a href="https://gestiona3.madrid.org/bvirtual/BVCM051446.pdf" rel="noopener">SAMUR Social, emergencia social municipal</a></td><td>no</td><td>sí</td></tr><tr><td>Barcelona</td><td class="n"><a href="tel:900703030">900 703 030</a></td><td><a href="https://ajuntament.barcelona.cat/serveissocials/es/canal/urgencies-i-emergencies-socials" rel="noopener">CUESB, urgencias y emergencias sociales</a></td><td>sí</td><td>sí</td></tr></tbody></table></div>
+<ul><li><strong>112</strong>: emergencias, gratis.</li><li><strong>Servicios sociales municipales</strong>: hay un centro por zona; te toca el de tu dirección o tu padrón. Mira <a href="servicios-sociales-madrid">servicios sociales en Madrid</a>.</li></ul>
+<h2 id="campana-del-frio-2026-2027">Campaña del Frío 2026-2027</h2>
+<ul><li><strong>Pinar de San José</strong> (C/ Pinar de San José, 106): 150 plazas para dormir, hombres y mujeres, y 50 plazas de centro de día con atención 24 horas.</li><li><strong>Villa de Vallecas</strong> (Camino del Pozo del Tío Raimundo s/n): 142 plazas para hombres.</li><li><strong>Plazas en hostales</strong>: hasta 150 a la vez, del 23 de noviembre al 1 de abril.</li><li><strong>Cómo entrar</strong>: acude a la Central de SAMUR Social (Carrera de San Francisco, 10) o llama al Equipo de Coordinación de Accesos, <strong>91 919 89 13</strong>, de 8:00 a 21:00 todos los días. Las entidades pueden derivar por correo.</li><li><strong>Autobuses</strong>: línea EMT 730 desde Plaza Elíptica (19:00 y 20:00) al Pinar de San José, y 766 desde Glorieta del Emperador Carlos V (19:30 y 20:30) a Villa de Vallecas.</li><li><strong>Requisitos</strong>: ser mayor de edad, no tener alojamiento ni recursos suficientes, y estar empadronado o tener vinculación con Madrid.</li></ul>
+<h2 id="comer">Comer</h2>
+<ul class="pl"><li><div class="pl-h"><a href="../#p=node/4384317841@40.41389,-3.70386">Comedor Ave María</a><span class="ct">Comedor social · comida caliente</span></div><span class="ad">Calle del Doctor Cortezo 4, 28012, Madrid</span></li><li><div class="pl-h"><a href="../s/comedor-social-desayunos-n6330877918">Comedor Social Desayunos</a><span class="ct">Comedor social · comida caliente</span></div><span class="ad">lun–dom 09:00–11:00</span></li><li><div class="pl-h"><a href="../#p=node/12988460579@40.40219,-3.69727">Comedor calle canarias</a><span class="ct">Comedor social · comida caliente</span></div></li><li><div class="pl-h"><a href="../#p=node/2521186168@40.44487,-3.71689">Comedor San Francisco</a><span class="ct">Comedor social · comida caliente</span></div><span class="ad">Calle de la Poeta Ángela Figuera 25</span></li><li><div class="pl-h"><a href="../#p=way/128565102@40.40563,-3.75108">Centro de Acogida e Integración Social &quot;Santiago Masarnau&quot;</a><span class="ct">Comedor social · comida caliente</span></div><span class="ad">Calle de Serafín de Asís 7A</span></li><li><div class="pl-h"><a href="../#p=node/5957217285@40.38340,-3.65713">Comedor Social Las Calcutas</a><span class="ct">Comedor social · comida caliente</span></div></li><li><div class="pl-h"><a href="../#p=node/11103006889@40.39007,-3.76050">Red de Apoyo Mutuo de Aluche</a><span class="ct">Comedor social · comida caliente</span></div><span class="ad">Calle Quero 67, 28024, Madrid</span></li><li><div class="pl-h"><a href="../#p=node/13376669773@40.46846,-3.69562">Comedor San Juan Bautista</a><span class="ct">Comedor social · comida caliente</span></div></li></ul>
+<p><a href="../c/madrid-food">Todos los comedores de Madrid</a> · <a href="banco-de-alimentos-como-pedir-comida">Cómo pedir a un banco de alimentos</a></p>
+<h2 id="dormir">Dormir</h2>
+<ul class="pl"><li><div class="pl-h"><a href="../s/hermandad-del-refugio-r19269712">Hermandad del Refugio</a><span class="ct">Albergue · camas</span></div><span class="ad">lun–sáb 10:00–14:00 · dom cerrado</span></li><li><div class="pl-h"><a href="../#p=relation/2416300@40.42560,-3.72287">Centro de Acogida Municipal Para Personas Sin Hogar San Isidro</a><span class="ct">Albergue · camas</span></div><span class="ad">Paseo del Rey 34, 28008, Madrid</span></li><li><div class="pl-h"><a href="../#p=way/1419912344@40.42636,-3.72367">Centro de Acogida Municipal La Rosa</a><span class="ct">Albergue · camas</span></div><span class="ad">Paseo del Rey 36, 28008, Madrid</span></li><li><div class="pl-h"><a href="../#p=relation/5136770@40.39873,-3.73314">Albergue San Martín de Porres</a><span class="ct">Albergue · camas</span></div></li><li><div class="pl-h"><a href="../s/albergue-y-residencia-san-juan-de-dios-w140382270">Albergue y Residencia San Juan de Dios</a><span class="ct">Alojamiento</span></div><span class="ad">Calle de Herreros de Tejada 3, 28016, Madrid</span><span class="ad">+34 913 440 020</span></li><li><div class="pl-h"><a href="../#p=way/1044685594@40.47330,-3.70039">Campamento de indigentes</a><span class="ct">Centro de acogida de refugiados</span></div></li><li><div class="pl-h"><a href="../#p=way/479567110@40.41212,-3.78620">Creade Pozuelo, Centro de Acogida</a><span class="ct">Albergue · camas</span></div><span class="ad">Paseo de la casa de Campo 1, 28223</span></li><li><div class="pl-h"><a href="../#p=relation/13350417@40.37303,-3.63653">Las caracolas</a><span class="ct">Centro de acogida de refugiados</span></div></li></ul>
+<h2 id="ducharse-y-asearse">Ducharse y asearse</h2>
+<ul class="pl"><li><div class="pl-h"><a href="../s/clear-channel-s-l-u-n5117908152">Clear Channel S.L.U.</a><span class="ct">Aseos públicos gratuitos</span></div><span class="ad">PLAZA EMPERADOR CARLOS V 9</span><span class="ad">24/7</span></li><li><div class="pl-h"><a href="../s/ayuntamiento-de-madrid-n10163892735">Ayuntamiento de Madrid</a><span class="ct">Aseos públicos gratuitos</span></div><span class="ad">24/7</span></li></ul>
+<h2 id="medico">Médico</h2>
+<p>Urgencias de cualquier hospital público. Sin papeles: <a href="medico-gratis-sin-papeles">médico gratis sin papeles</a>.</p>
+<p><a href="../c/madrid">Toda la ayuda gratis en Madrid</a> · <a href="../c/madrid.cartel">Imprimir un cartel de Madrid</a></p><div class="btns"><a class="btn btn--p" href="../?city=Madrid&amp;cc=ES">Abrir el mapa de Madrid</a><a class="btn" href="../c/">Ayuda por ciudad</a></div><h2 id="faq">Preguntas frecuentes</h2><details class="faq"><summary>¿Cuál es el teléfono del SAMUR Social?</summary><p>91 480 20 20, las 24 horas. Para pedir plaza en la Campaña del Frío está también el Equipo de Coordinación de Accesos, 91 919 89 13, de 8:00 a 21:00.</p></details><details class="faq"><summary>¿Cuándo empieza la Campaña del Frío en Madrid?</summary><p>La de 2026-2027 abre desde la noche del 2 de noviembre de 2026 hasta la mañana del 16 de abril de 2027. Las plazas en hostales, del 23 de noviembre al 1 de abril.</p></details><h2 id="fuentes">Fuentes</h2><ul class="src"><li><a href="https://www.madrid.es/UnidadesDescentralizadas/IntegracionyEmergenciaSocial/SAMUR%20Social/ficheros/DOCUMENTO%20DERIVACI%C3%93N%20CF%2026-27.pdf" rel="noopener">SAMUR Social: documento de derivación de la Campaña contra el Frío 2026/2027</a></li><li><a href="https://madridinforma.es/madrid-amplia-la-campana-del-frio-mas-dias-mas-plazas-y-61-millones-para-atender-a-personas-sin-hogar/" rel="noopener">Madrid Informa: Madrid amplía la Campaña del Frío (10 de mayo de 2026)</a></li></ul><h2 id="mas">Sigue leyendo</h2><ul class="post"><li><a href="servicios-sociales-madrid">Servicios sociales en Madrid: centros y cómo pedir cita</a><span>Los centros de servicios sociales de Madrid que salen en el mapa, cómo pedir cita y qué hacer en una urgencia (SAMUR Social).</span></li><li><a href="campana-de-frio-2026-2027">Campaña de frío 2026-2027: plazas extra de invierno en cada ciudad</a><span>Fechas, plazas y cómo pedir sitio en la Campaña del Frío de Madrid, la Operació Fred de Barcelona y en el resto de ciudades, más Londres y Dublín.</span></li><li><a href="donde-dormir-esta-noche-albergues">Dónde dormir esta noche: albergues y qué llevar</a><span>Cómo conseguir una cama gratis hoy en España: albergues municipales, centros de acogida, campañas de frío y a quién llamar.</span></li></ul>
+</main><footer>SupportNear &middot; Datos de OpenStreetMap &middot; <a href="../blog/">Todas las guías</a> &middot; <a href="../about">Quién está detrás</a></footer>
+</div>
+</body>
+</html>

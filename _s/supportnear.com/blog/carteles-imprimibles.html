@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta http-equiv="Content-Security-Policy" data-sn="csp" content="default-src 'self'; script-src 'self' https://static.cloudflareinsights.com https://www.googletagmanager.com https://www.clarity.ms https://*.clarity.ms 'sha256-cLCEyw39DgrON00a8Cw8EJ9aMwwP+5ZBIB6CTCIpwvM='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://*.google-analytics.com https://www.googletagmanager.com https://*.clarity.ms https://c.bing.com; connect-src 'self' https://cloudflareinsights.com https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com https://*.clarity.ms https://c.bing.com; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"><script>/*clarity.ms/tag G-FJKJE77K4V*/(function(w,d,n){var T={"en":["Cookies to count visits and see how the site is used? (Google Analytics, Microsoft Clarity)","Accept","Reject","Privacy","Cookie settings"],"es":["¿Cookies para contar visitas y ver cómo se usa la web? (Google Analytics, Microsoft Clarity)","Aceptar","Rechazar","Privacidad","Configurar cookies"]};function tx(i,el){var x=el&&el.closest&&el.closest('[lang]'),l=((x||d.documentElement).getAttribute('lang')||'en').slice(0,2).toLowerCase();return (T[l]||T.en)[i]}var off=n.doNotTrack=='1'||w.doNotTrack=='1'||n.globalPrivacyControl||/[?&]embed=1/.test(location.search)||location.protocol=='file:'||(n.connection&&(n.connection.saveData||/2g/.test(n.connection.effectiveType||'')));function bind(){[].forEach.call(d.querySelectorAll('[data-sn-cookies]'),function(e){if(off){e.hidden=true;return}e.textContent=tx(4,e);if(e.getAttribute('data-snb'))return;e.setAttribute('data-snb','1');e.addEventListener('click',function(){w.snCookies()})})}w.snBind=bind;if(d.readyState=='loading')d.addEventListener('DOMContentLoaded',bind);else bind();if(off)return;var K='sn.ck',ch=null,tz='';try{ch=localStorage.getItem(K)}catch(e){}try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(e){}var eu=!tz||/^(Europe\/|Arctic\/|Atlantic\/(Canary|Madeira|Azores|Reykjavik|Faroe))/.test(tz);var ok=ch=='1'||(!eu&&ch!='0'),gl=0,ready=0;w.dataLayer=w.dataLayer||[];function g(){dataLayer.push(arguments)}w.gtag=g;g('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:ok?'granted':'denied'});g('js',new Date());g('config','G-FJKJE77K4V',{allow_google_signals:false,allow_ad_personalization_signals:false,page_location:location.origin+location.pathname+location.search});w.clarity=w.clarity||function(){(w.clarity.q=w.clarity.q||[]).push(arguments)};function cv(){w.clarity('consentv2',{ad_Storage:'denied',analytics_Storage:ok?'granted':'denied'})}cv();w.clarity('set','site','supportnear');d.documentElement.setAttribute('data-clarity-mask','True');function a(s){var e=d.createElement('script');e.async=1;e.src=s;d.head.appendChild(e)}function load(){if(gl||!ready||!ok)return;gl=1;a('https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V');a('https://www.clarity.ms/tag/z4eqcmaic7')}function set(v){try{localStorage.setItem(K,v?'1':'0')}catch(e){}ch=v?'1':'0';ok=!!v;g('consent','update',{analytics_storage:v?'granted':'denied'});cv();if(v){ready=1;load()}else d.cookie.split(';').forEach(function(c){var k=c.split('=')[0].trim();if(/^_(ga|clck|clsk)/.test(k)){var h=location.hostname;[h,'.'+h,'.'+h.split('.').slice(-2).join('.')].forEach(function(dm){d.cookie=k+'=;Max-Age=0;path=/;domain='+dm});d.cookie=k+'=;Max-Age=0;path=/'}});var b=d.getElementById('sn-ck');if(b)b.parentNode.removeChild(b)}function btn(t,y){var b=d.createElement('button');b.type='button';b.textContent=t;b.style.cssText='flex:1;min-height:40px;border-radius:10px;font-weight:600;font-size:14px;line-height:1.2;font-family:inherit;cursor:pointer;padding:6px 10px;'+(y?'background:#0B7A63;color:#fff;border:1.5px solid #0B7A63':'background:transparent;color:inherit;border:1.5px solid currentColor');b.addEventListener('click',function(){set(y)});return b}function bar(hi){if(d.getElementById('sn-ck')||!d.body)return;var dk=d.documentElement.getAttribute('data-theme')=='dark'||(!d.documentElement.getAttribute('data-theme')&&w.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches);var b=d.createElement('div');b.id='sn-ck';b.setAttribute('role','region');b.setAttribute('aria-label',tx(4));b.style.cssText='position:fixed;z-index:'+(hi?2600:1900)+';left:8px;right:8px;bottom:calc(8px + env(safe-area-inset-bottom,0px));max-width:470px;margin:0 auto;border-radius:14px;box-shadow:0 6px 24px rgba(0,0,0,.22);padding:10px 12px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;font:13.5px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;'+(dk?'background:#1d2228;color:#eef0f2;border:1px solid #3a424c':'background:#fff;color:#1c1916;border:1px solid #d9d2c5');var p=d.createElement('p');p.style.cssText='margin:0;flex:1 1 210px;min-width:0';p.textContent=tx(0)+' ';var m=d.createElement('a');m.href='/about';m.textContent=tx(3);m.style.cssText='color:inherit;text-decoration:underline;white-space:nowrap';p.appendChild(m);var r=d.createElement('div');r.style.cssText='display:flex;gap:8px;flex:1 1 170px';r.appendChild(btn(tx(1),1));r.appendChild(btn(tx(2),0));b.appendChild(p);b.appendChild(r);d.body.appendChild(b)}w.snCookies=function(){var b=d.getElementById('sn-ck');if(b)b.parentNode.removeChild(b);bar(1)};function go(){if(ready)return;ready=1;load()}function arm(){['pointerdown','keydown','touchstart','scroll'].forEach(function(v){w.addEventListener(v,go,{once:true,passive:true,capture:true})});setTimeout(go,5000);if(eu&&ch==null)setTimeout(bar,1500)}if(d.readyState=='complete')arm();else w.addEventListener('load',arm)})(window,document,navigator);/*clarity.ms/tag*/</script>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Carteles imprimibles con la ayuda de cada ciudad · SupportNear</title>
+<meta name="description" content="Una hoja por ciudad con un código QR al mapa y los teléfonos de ayuda, para colgar en un centro, una biblioteca o un comedor.">
+<link rel="canonical" href="https://supportnear.com/blog/carteles-imprimibles"><meta name="robots" content="max-image-preview:large">
+
+<meta property="og:title" content="Carteles imprimibles con la ayuda de cada ciudad">
+<meta property="og:description" content="Una hoja por ciudad con un código QR al mapa y los teléfonos de ayuda, para colgar en un centro, una biblioteca o un comedor.">
+<meta property="og:image" content="https://supportnear.com/social-es.jpg?v=163f88d7"><meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:type" content="article"><meta property="og:site_name" content="SupportNear">
+<meta property="og:url" content="https://supportnear.com/blog/carteles-imprimibles">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@mrstartups">
+<meta name="theme-color" content="#0B7A63">
+<link rel="icon" href="../favicon.ico" sizes="32x32"><link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="SupportNear" href="https://supportnear.com/blog/feed.xml">
+<style>:root{
+  --paper:#FBF8F3; --paper-2:#FFFFFF; --paper-3:#F3EEE5;
+  --ink:#14110E; --ink-2:#4A443C; --ink-3:#7A7168;
+  --line:#E6DFD3; --brand:#0B7A63; --brand-soft:#E4F2EE; --alert:#C8351B;
+  --ui:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',sans-serif;
+  --display:'Iowan Old Style','Palatino Linotype',Georgia,serif;
+  --mono:ui-monospace,'SF Mono',Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --paper:#0A0E14; --paper-2:#121821; --paper-3:#1A222D;
+    --ink:#F2F5F7; --ink-2:#B3BDC7; --ink-3:#8592A0;
+    --line:#232C38; --brand:#3ECFA9; --brand-soft:#0F2A25; --alert:#FF7A63;
+  }
+}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--ui);
+  font-size:16.5px;line-height:1.62;-webkit-font-smoothing:antialiased}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px 90px}
+a{color:var(--brand)}
+.top{display:flex;align-items:center;gap:11px;padding:26px 0 34px}
+.logo{width:38px;height:38px;border-radius:11px;background:var(--brand);display:grid;place-items:center;flex:none}
+.logo svg{width:21px;height:21px;stroke:var(--paper-2);stroke-width:2.1;fill:none;stroke-linecap:round}
+.top b{font-size:19px;letter-spacing:-.01em}
+.top a{margin-left:auto;font-size:14.5px;font-weight:600;text-decoration:none}
+h1{font-family:var(--display);font-size:clamp(32px,5.4vw,46px);line-height:1.08;
+  letter-spacing:-.02em;margin:0 0 12px;text-wrap:balance}
+.lede{font-size:19px;color:var(--ink-2);margin:0 0 34px;max-width:60ch}
+h2{font-size:22px;letter-spacing:-.015em;margin:44px 0 14px;padding-top:22px;border-top:1px solid var(--line)}
+h3{font-size:16px;margin:26px 0 8px}
+p{margin:0 0 14px;max-width:66ch;color:var(--ink-2)}
+p strong,li strong{color:var(--ink)}
+ul,ol{margin:0 0 16px;padding-left:1.2em;color:var(--ink-2)}
+li{margin-bottom:7px;max-width:64ch}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:1px;
+  background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:0 0 30px}
+.stats div{background:var(--paper-2);padding:16px 18px}
+.stats b{display:block;font-size:27px;line-height:1.1;letter-spacing:-.02em;
+  font-variant-numeric:tabular-nums}
+.stats span{font-size:13px;color:var(--ink-3)}
+.card{background:var(--paper-2);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin:0 0 16px}
+.card p:last-child{margin-bottom:0}
+pre{background:var(--paper-3);border:1px solid var(--line);border-radius:10px;
+  padding:14px 16px;overflow-x:auto;font-family:var(--mono);font-size:13.5px;line-height:1.6;margin:0 0 16px}
+code{font-family:var(--mono);font-size:.92em;background:var(--paper-3);padding:1px 5px;border-radius:4px}
+pre code{background:none;padding:0}
+.btn{display:inline-flex;align-items:center;gap:8px;font:inherit;font-size:15px;font-weight:600;
+  text-decoration:none;border:1px solid var(--line);background:var(--paper-2);color:var(--ink);
+  border-radius:10px;padding:10px 16px;cursor:pointer}
+.btn--p{background:var(--brand);border-color:var(--brand);color:#fff}
+/* R23: en oscuro el verde de marca es claro (#3ECFA9): con letra blanca el boton principal quedaba en
+   contraste 1,96 (hace falta 4,5). Letra oscura: 9,6. */
+@media (prefers-color-scheme: dark){ .btn--p{color:#04221B} }
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
+figure{margin:0 0 22px}
+figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px}
+figcaption{font-size:13px;color:var(--ink-3);margin-top:7px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:640px){ .two{grid-template-columns:1fr} }
+table{border-collapse:collapse;width:100%;font-size:14.5px;margin:0 0 18px}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-3);font-weight:600}
+td.n{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+.tw{overflow-x:auto}
+footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);
+  font-size:13px;color:var(--ink-3)}
+.mail{font-family:var(--mono);font-size:15px;color:var(--ink);user-select:all}
+
+.top{padding:20px 0 26px}
+.top .logo{margin-inline-start:0}
+.top a:last-child{margin-inline-start:auto;margin-left:0;text-align:end}
+@media (max-width:430px){ .top a:last-child{display:none} .top{padding:16px 0 20px} }
+.ct{color:var(--ink-3);font-size:14px}
+.ad{display:block;color:var(--ink-2);font-size:14.5px}
+.d{color:var(--ink-3);font-size:13px;font-variant-numeric:tabular-nums;white-space:nowrap}
+ul.pl{list-style:none;padding:0;margin:0 0 8px}
+ul.pl li{padding:14px 0;border-bottom:1px solid var(--line)}
+ul.pl li:last-child{border-bottom:0}
+ul.pl a{font-size:17px;font-weight:650;text-decoration:none;color:var(--ink)}
+ul.pl a:hover{color:var(--brand)}
+.pl-h{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.pl-h .d{margin-inline-start:auto}
+.needs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px}
+.needs a{display:inline-block;padding:9px 14px;border:1px solid var(--line);border-radius:999px;background:var(--paper-2);text-decoration:none;font-weight:600;font-size:15px;color:var(--ink)}
+.needs a:hover{border-color:var(--brand);color:var(--brand)}
+.note{color:var(--ink-3);font-size:14.5px;margin:-4px 0 14px}
+.emg{border:1px solid var(--line);border-inline-start:3px solid var(--alert);border-radius:0 12px 12px 0;padding:12px 16px;margin:0 0 26px;font-size:15px}
+.emg strong{color:var(--ink)}
+ul.cnt{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:8px}
+ul.cnt li{background:var(--paper-2);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:14.5px;color:var(--ink-3)}
+ul.cnt b{display:block;font-size:23px;color:var(--ink);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+
+.crumbs{font-size:13.5px;color:var(--ink-3);margin:-14px 0 14px}
+.crumbs a{color:var(--ink-3)}
+.meta{font-size:13.5px;color:var(--ink-3);margin:0 0 26px}
+.ans{background:var(--brand-soft);border-radius:14px;padding:16px 20px;margin:0 0 26px;color:var(--ink)}
+.ans p{color:var(--ink);margin:0}
+.toc{font-size:15px;margin:0 0 26px}
+.toc a{text-decoration:none}
+details.faq{border-bottom:1px solid var(--line);padding:12px 0}
+details.faq summary{cursor:pointer;font-weight:650;color:var(--ink)}
+details.faq p{margin:10px 0 0}
+.src{font-size:13.5px;color:var(--ink-3)}
+.src li{max-width:none}
+.post{list-style:none;padding:0;margin:0 0 20px}
+.post li{padding:12px 0;border-bottom:1px solid var(--line)}
+.post a{font-weight:650;text-decoration:none;font-size:17px}
+.post span{display:block;color:var(--ink-3);font-size:14.5px}
+.bar{display:flex;align-items:center;gap:10px;font-size:14px;margin:0 0 6px}
+.bar i{display:block;height:12px;background:var(--brand);border-radius:3px;min-width:2px}
+.bar span{min-width:9.5em;color:var(--ink-2)}
+.bar b{font-variant-numeric:tabular-nums;color:var(--ink)}
+.tool fieldset{border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin:0 0 12px}
+.tool legend{font-weight:650;color:var(--ink)}
+.tool label{display:block;margin:4px 0}
+.print-sheet{border:1px dashed var(--line);border-radius:12px;padding:18px 20px;margin:0 0 18px}
+@media print{.top,.btns,footer,.noprint{display:none}.print-sheet{border:0}}
+</style>
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Article", "headline": "Carteles imprimibles con la ayuda de cada ciudad", "description": "Una hoja por ciudad con un código QR al mapa y los teléfonos de ayuda, para colgar en un centro, una biblioteca o un comedor.", "inLanguage": "es", "datePublished": "2026-11-27", "dateModified": "2026-11-27", "author": {"@type": "Person", "name": "Carlos de Ory", "url": "https://www.carlosdeory.com", "sameAs": ["https://www.carlosdeory.com"]}, "publisher": {"@type": "Organization", "name": "SupportNear", "url": "https://supportnear.com/", "logo": {"@type": "ImageObject", "url": "https://supportnear.com/icon-512.png"}}, "mainEntityOfPage": "https://supportnear.com/blog/carteles-imprimibles", "image": "https://supportnear.com/social.jpg", "isPartOf": {"@type": "WebSite", "name": "SupportNear", "url": "https://supportnear.com/"}}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SupportNear", "item": "https://supportnear.com/"}, {"@type": "ListItem", "position": 2, "name": "Guías", "item": "https://supportnear.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "Carteles imprimibles con la ayuda de cada ciudad", "item": "https://supportnear.com/blog/carteles-imprimibles"}]}]</script>
+</head>
+<body>
+<div class="wrap">
+<header class="top"><a class="logo" href="../" aria-label="SupportNear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><path d="M12 7v6M9 10h6"/></svg></a><b>SupportNear</b><a href="../blog/">Guías</a></header><main>
+<p class="crumbs"><a href="../">SupportNear</a> › <a href="./">Guías</a> › Carteles imprimibles con la ayuda de cada ciudad</p><h1>Carteles imprimibles con la ayuda de cada ciudad</h1>
+<p class="meta">Actualizado el 27 de noviembre de 2026 · por <a href="autor">Carlos de Ory</a></p><div class="ans"><p>Cada ciudad tiene un <strong>cartel de una hoja</strong> con un código QR que abre el mapa de esa ciudad y el teléfono de emergencias. Ábrelo, pulsa imprimir y cuélgalo.</p></div>
+<h2 id="espana">España</h2>
+<p class="needs"><a href="../c/a-coruna.cartel">A Coruña</a><a href="../c/albacete.cartel">Albacete</a><a href="../c/alicante.cartel">Alicante</a><a href="../c/almeria.cartel">Almería</a><a href="../c/badajoz.cartel">Badajoz</a><a href="../c/badalona.cartel">Badalona</a><a href="../c/barcelona.cartel">Barcelona</a><a href="../c/bilbao.cartel">Bilbao</a><a href="../c/burgos.cartel">Burgos</a><a href="../c/cartagena.cartel">Cartagena</a><a href="../c/castellon-de-la-plana.cartel">Castellón de la Plana</a><a href="../c/ceuta.cartel">Ceuta</a><a href="../c/caceres.cartel">Cáceres</a><a href="../c/cordoba-espana.cartel">Córdoba</a><a href="../c/donostia-san-sebastian.cartel">Donostia-San Sebastián</a><a href="../c/elche.cartel">Elche</a><a href="../c/gijon.cartel">Gijón</a><a href="../c/granada.cartel">Granada</a><a href="../c/guadalajara-espana.cartel">Guadalajara</a><a href="../c/huelva.cartel">Huelva</a><a href="../c/jerez-de-la-frontera.cartel">Jerez de la Frontera</a><a href="../c/las-palmas-de-gran-canaria.cartel">Las Palmas de Gran Canaria</a><a href="../c/leon-espana.cartel">León</a><a href="../c/lleida.cartel">Lleida</a><a href="../c/logrono.cartel">Logroño</a><a href="../c/madrid.cartel">Madrid</a><a href="../c/melilla.cartel">Melilla</a><a href="../c/murcia.cartel">Murcia</a><a href="../c/malaga.cartel">Málaga</a><a href="../c/mostoles.cartel">Móstoles</a><a href="../c/ourense.cartel">Ourense</a><a href="../c/oviedo.cartel">Oviedo</a><a href="../c/palma-de-mallorca.cartel">Palma de Mallorca</a><a href="../c/pamplona.cartel">Pamplona</a><a href="../c/sabadell.cartel">Sabadell</a><a href="../c/salamanca.cartel">Salamanca</a><a href="../c/santa-cruz-de-tenerife.cartel">Santa Cruz de Tenerife</a><a href="../c/santander.cartel">Santander</a><a href="../c/santiago-de-compostela.cartel">Santiago de Compostela</a><a href="../c/sevilla.cartel">Sevilla</a><a href="../c/tarragona.cartel">Tarragona</a><a href="../c/terrassa.cartel">Terrassa</a><a href="../c/toledo.cartel">Toledo</a><a href="../c/valencia.cartel">Valencia</a><a href="../c/valladolid.cartel">Valladolid</a><a href="../c/vigo.cartel">Vigo</a><a href="../c/vitoria-gasteiz.cartel">Vitoria-Gasteiz</a><a href="../c/zaragoza.cartel">Zaragoza</a></p>
+<h2 id="otros-paises-de-habla-hispana">Otros países de habla hispana</h2>
+<p class="needs"><a href="../c/acapulco.cartel">Acapulco</a><a href="../c/aguascalientes-city.cartel">Aguascalientes City</a><a href="../c/antofagasta.cartel">Antofagasta</a><a href="../c/arequipa.cartel">Arequipa</a><a href="../c/arica.cartel">Arica</a><a href="../c/asuncion.cartel">Asunción</a><a href="../c/bahia-blanca.cartel">Bahía Blanca</a><a href="../c/bani.cartel">Baní</a><a href="../c/barcelona-venezuela.cartel">Barcelona</a><a href="../c/barranquilla.cartel">Barranquilla</a><a href="../c/bogota.cartel">Bogotá</a><a href="../c/bucaramanga.cartel">Bucaramanga</a><a href="../c/buenaventura.cartel">Buenaventura</a><a href="../c/buenos-aires.cartel">Buenos Aires</a><a href="../c/cali.cartel">Cali</a><a href="../c/camaguey.cartel">Camagüey</a><a href="../c/cancun.cartel">Cancún</a><a href="../c/caracas.cartel">Caracas</a><a href="../c/cartagena-colombia.cartel">Cartagena</a><a href="../c/catacamas.cartel">Catacamas</a><a href="../c/chiclayo.cartel">Chiclayo</a><a href="../c/chihuahua-city.cartel">Chihuahua City</a><a href="../c/chimbote.cartel">Chimbote</a><a href="../c/ciudad-bolivar.cartel">Ciudad Bolívar</a><a href="../c/ciudad-guayana.cartel">Ciudad Guayana</a><a href="../c/ciudad-juarez.cartel">Ciudad Juárez</a><a href="../c/ciudad-ojeda.cartel">Ciudad Ojeda</a><a href="../c/ciudad-de-guatemala.cartel">Ciudad de Guatemala</a><a href="../c/ciudad-del-este.cartel">Ciudad del Este</a><a href="../c/cochabamba.cartel">Cochabamba</a><a href="../c/colon.cartel">Colón</a><a href="../c/concepcion.cartel">Concepción</a><a href="../c/concepcion-tutuapa.cartel">Concepción Tutuapa</a><a href="../c/coquimbo.cartel">Coquimbo</a><a href="../c/corrientes.cartel">Corrientes</a><a href="../c/cuenca.cartel">Cuenca</a><a href="../c/culiacan.cartel">Culiacán</a><a href="../c/cumana.cartel">Cumaná</a><a href="../c/cuzco.cartel">Cuzco</a><a href="../c/cordoba.cartel">Córdoba</a><a href="../c/cucuta.cartel">Cúcuta</a><a href="../c/el-tigre.cartel">El Tigre</a><a href="../c/guadalajara.cartel">Guadalajara</a><a href="../c/guanare.cartel">Guanare</a><a href="../c/guantanamo.cartel">Guantánamo</a><a href="../c/guayaquil.cartel">Guayaquil</a><a href="../c/havana.cartel">Havana</a><a href="../c/hermosillo.cartel">Hermosillo</a><a href="../c/higuey.cartel">Higüey</a><a href="../c/holguin.cartel">Holguín</a><a href="../c/huancayo.cartel">Huancayo</a><a href="../c/ibague.cartel">Ibagué</a><a href="../c/ica.cartel">Ica</a><a href="../c/iquitos.cartel">Iquitos</a><a href="../c/jinotega.cartel">Jinotega</a><a href="../c/juliaca.cartel">Juliaca</a><a href="../c/la-ceiba.cartel">La Ceiba</a><a href="../c/la-paz.cartel">La Paz</a><a href="../c/la-plata.cartel">La Plata</a><a href="../c/leon.cartel">León</a><a href="../c/leon-nicaragua.cartel">León</a><a href="../c/lima.cartel">Lima</a><a href="../c/managua.cartel">Managua</a><a href="../c/manta.cartel">Manta</a><a href="../c/mar-del-plata.cartel">Mar del Plata</a><a href="../c/maracaibo.cartel">Maracaibo</a><a href="../c/maracay.cartel">Maracay</a><a href="../c/maturin.cartel">Maturín</a><a href="../c/medellin.cartel">Medellín</a><a href="../c/mendoza.cartel">Mendoza</a><a href="../c/mexicali.cartel">Mexicali</a><a href="../c/mexico-city.cartel">Mexico City</a><a href="../c/monterrey.cartel">Monterrey</a><a href="../c/monteria.cartel">Montería</a><a href="../c/montevideo.cartel">Montevideo</a><a href="../c/morelia.cartel">Morelia</a><a href="../c/merida-mexico.cartel">Mérida</a><a href="../c/merida.cartel">Mérida</a><a href="../c/nacaome.cartel">Nacaome</a><a href="../c/neiva.cartel">Neiva</a><a href="../c/neuquen.cartel">Neuquén</a><a href="../c/nueva-ocotepeque.cartel">Nueva Ocotepeque</a><a href="../c/oruro.cartel">Oruro</a><a href="../c/panama.cartel">Panamá</a><a href="../c/pasto.cartel">Pasto</a><a href="../c/pereira.cartel">Pereira</a><a href="../c/piura.cartel">Piura</a><a href="../c/popayan.cartel">Popayán</a><a href="../c/posadas.cartel">Posadas</a><a href="../c/pucallpa.cartel">Pucallpa</a><a href="../c/puebla.cartel">Puebla</a><a href="../c/puerto-cortes.cartel">Puerto Cortés</a><a href="../c/puerto-lempira.cartel">Puerto Lempira</a><a href="../c/punto-fijo.cartel">Punto Fijo</a><a href="../c/quetzaltenango.cartel">Quetzaltenango</a><a href="../c/quevedo.cartel">Quevedo</a><a href="../c/quito.cartel">Quito</a><a href="../c/rancagua.cartel">Rancagua</a><a href="../c/reynosa.cartel">Reynosa</a><a href="../c/rosario.cartel">Rosario</a><a href="../c/salta.cartel">Salta</a><a href="../c/saltillo.cartel">Saltillo</a><a href="../c/san-francisco-de-macoris.cartel">San Francisco de Macorís</a><a href="../c/san-jose-costa-rica.cartel">San José</a><a href="../c/san-juan.cartel">San Juan</a><a href="../c/san-juan-de-la-maguana.cartel">San Juan de la Maguana</a><a href="../c/san-luis-potosi.cartel">San Luis Potosí</a><a href="../c/san-miguel-de-tucuman.cartel">San Miguel de Tucumán</a><a href="../c/san-pedro-sula.cartel">San Pedro Sula</a><a href="../c/san-pedro-de-macoris.cartel">San Pedro de Macorís</a><a href="../c/san-salvador.cartel">San Salvador</a><a href="../c/santa-clara.cartel">Santa Clara</a><a href="../c/santa-cruz-barillas.cartel">Santa Cruz Barillas</a><a href="../c/santa-cruz-de-la-sierra.cartel">Santa Cruz de la Sierra</a><a href="../c/santa-fe.cartel">Santa Fe</a><a href="../c/santa-marta.cartel">Santa Marta</a><a href="../c/santiago.cartel">Santiago</a><a href="../c/santiago-de-cuba.cartel">Santiago de Cuba</a><a href="../c/santiago-de-queretaro.cartel">Santiago de Querétaro</a><a href="../c/santiago-de-los-caballeros.cartel">Santiago de los Caballeros</a><a href="../c/santiago-del-estero.cartel">Santiago del Estero</a><a href="../c/santo-domingo.cartel">Santo Domingo</a><a href="../c/santo-domingo-de-los-tsachilas.cartel">Santo Domingo de los Tsáchilas</a><a href="../c/sucre.cartel">Sucre</a><a href="../c/tacna.cartel">Tacna</a><a href="../c/talca.cartel">Talca</a><a href="../c/tarija.cartel">Tarija</a><a href="../c/tegucigalpa.cartel">Tegucigalpa</a><a href="../c/temuco.cartel">Temuco</a><a href="../c/tijuana.cartel">Tijuana</a><a href="../c/torreon.cartel">Torreón</a><a href="../c/trujillo.cartel">Trujillo</a><a href="../c/valencia-venezuela.cartel">Valencia</a><a href="../c/valera.cartel">Valera</a><a href="../c/valledupar.cartel">Valledupar</a><a href="../c/villavicencio.cartel">Villavicencio</a><a href="../c/vina-del-mar.cartel">Viña del Mar</a></p>
+<h2 id="donde-colgarlo">Dónde colgarlo</h2>
+<ul><li>En bibliotecas, centros cívicos y centros de salud.</li><li>En la puerta de comedores y parroquias.</li><li>En la sala de espera de servicios sociales.</li></ul>
+<p>Si eres una biblioteca, mira también el <a href="kit-bibliotecas">kit para bibliotecas</a>.</p><div class="btns"><a class="btn btn--p" href="../">Abrir el mapa</a><a class="btn" href="../c/">Ayuda por ciudad</a></div><h2 id="mas">Sigue leyendo</h2><ul class="post"><li><a href="kit-bibliotecas">Kit para bibliotecas: cartel, texto y mapa para vuestra web</a><span>Todo lo que una biblioteca pública necesita para ofrecer SupportNear: cartel con QR, un texto para la web y el mapa incrustado.</span></li><li><a href="supportnear-para-trabajadores-sociales">SupportNear para trabajadores sociales: guía de 5 minutos</a><span>Cómo usar el mapa en un servicio social: buscar por necesidad, compartir un sitio, imprimir un cartel y usarlo sin conexión.</span></li></ul>
+</main><footer>SupportNear &middot; Datos de OpenStreetMap &middot; <a href="../blog/">Todas las guías</a> &middot; <a href="../about">Quién está detrás</a></footer>
+</div>
+</body>
+</html>

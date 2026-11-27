@@ -14,6 +14,7 @@ People who are homeless or in a crisis, and the social workers, volunteers and f
 - Free help by country, for example [Spain](https://supportnear.com/country/espana), [Ireland](https://supportnear.com/country/ireland) and [United States](https://supportnear.com/country/united-states)
 - One page per need and city, for example [food banks in London](https://supportnear.com/c/london-food) and [comedores sociales en Madrid](https://supportnear.com/c/madrid-food)
 - One page per named place with hours or phone (address, opening hours, phone, nearby help): listed in [sitemap-places.xml](https://supportnear.com/sitemap-places.xml)
+- [Guides: free food, shelter, showers, health care and how to help](https://supportnear.com/blog/), e.g. [free showers](https://supportnear.com/blog/free-showers-near-me) and [médico gratis sin papeles](https://supportnear.com/blog/medico-gratis-sin-papeles)
 - [Open data: places by country as CSV (ODbL)](https://supportnear.com/datos/)
 - [Impact: how many people it helps](https://supportnear.com/impacto)
 - [Install the app](https://supportnear.com/instalar)
