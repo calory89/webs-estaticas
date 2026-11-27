@@ -86,7 +86,7 @@ function parseRegisters(h) {
     for (const li of a.split($q.v).slice(1)) {
       const g = re => ((re.exec(li) || [])[1] || '').replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/&#39;/g, "'").replace(/&quot;/g, '"').trim();
       const href = (/<a class="rg-open" href="([^"]+)"/.exec(li) || [])[1] || null;
-      items.push({ name: g(/<h4>(.*?)<\/h4>/), checks: g(/^data-c="([^"]*)"/).split(/\s+/).filter(Boolean), proves: g(/What it proves<\/dt><dd>(.*?)<\/dd>/), not: g(/What it does not prove<\/dt><dd>(.*?)<\/dd>/), how: g(/How to search<\/dt><dd>(.*?)<\/dd>/), url: href && /^https?:\/\//.test(href) ? href : null });
+      items.push({ name: g(/<h4>(.*?)<\/h4>/), checks: g(/^data-c="([^"]*)"/).split(/\s+/).filter(Boolean), proves: g(/What it proves<\/dt><dd>(.*?)<\/dd>/), not: g(/What it does not prove<\/dt><dd>(.*?)<\/dd>/), how: g(/How to search<\/dt><dd>(.*?)<\/dd>/), url: href && /^https?:\/\//.test(href) ? href : null, guide: (/<a class="rg-guide" href="(\/registers\/[a-z0-9-]+\/how-to-read\/)"/.exec(li) || [])[1] || null });
     }
     out.push({ id, name, sub, items });
   }
@@ -258,7 +258,7 @@ function rck(B, url) {   // n40 k6: date and answer of the latest re-read of a r
   return $q.ea + esc(String(R[k] || '').replace('{d}', longDate(R.at)).replace('{s}', v[0])) + $q.eb;
 }
 function regItem(it, r, B) {
-  return $q.ec + esc(it.name) + $q.ed + esc(r.name) + $q.ee + (it.proves ? $q.ef + esc(it.proves) + '</dd>' : '') + (it.not ? $q.eg + esc(it.not) + '</dd>' : '') + (it.how ? $q.eh + esc(it.how) + '</dd>' : '') + '</dl>' + (it.url ? $q.ei + esc(it.url) + $s.k17 + esc(new URL(it.url).hostname) + $q.eb + rck(B, it.url) + '</p>' : $q.ej) + $q.ek + esc(r.id) + $q.el;
+  return $q.ec + esc(it.name) + $q.ed + esc(r.name) + $q.ee + (it.proves ? $q.ef + esc(it.proves) + '</dd>' : '') + (it.not ? $q.eg + esc(it.not) + '</dd>' : '') + (it.how ? $q.eh + esc(it.how) + '</dd>' : '') + '</dl>' + (it.url ? $q.ei + esc(it.url) + $s.k17 + esc(new URL(it.url).hostname) + $q.eb + rck(B, it.url) + '</p>' : $q.ej) + (it.guide ? '<p><a href="' + it.guide + '">Step-by-step guide: how to read this register</a></p>' : '') + $q.ek + esc(r.id) + $q.el;
 }
 function qTemplate(q) { return String(q).replace(/\b(19|20)\d{2}\b/g, $q.em).replace(/\b\d+([.,]\d+)?\s*(%|years?|months?)/gi, $q.en).replace(/\$?\d[\d,.]*/g, '<n>'); }
 function srcBox(B, C, laws, regs) {   // n40 R01-40: official links first, the date we read each one, and an archived copy
