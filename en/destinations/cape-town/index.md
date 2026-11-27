@@ -127,6 +127,14 @@ Yes, Cape Town's tap water is generally safe and good quality. Carry a refillabl
 
 For the traveller who wrote this guide, yes: Few cities put a flat-topped mountain, two oceans, a wine region and a penguin colony within an hour's drive of each other. 5 days are enough for the essentials.
 
+### What to see in Cape Town in one day?
+
+If you only have one day, follow day 1 of this itinerary: Table Mountain in the morning, Company's Garden and Bo-Kaap in the afternoon, sunset on Signal Hill.
+
+### What to see in Cape Town in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Table Mountain in the morning, Company's Garden and Bo-Kaap in the afternoon, sunset on Signal Hill. Day 2: Robben Island in the morning, then the Waterfront and Zeitz MOCAA.
+
 ## Flights and deals
 
 - Flight deals to Cape Town: https://www.happylowcost.com/en/destinations/cape-town/#deals

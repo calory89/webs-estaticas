@@ -115,6 +115,14 @@ Dress modestly: shoulders and knees covered is a safe rule for everyone. Light c
 
 3 days are enough to see the essentials of Fez without rushing. The route in this guide is organised day by day.
 
+### What to see in Fez in one day?
+
+If you only have one day, follow day 1 of this itinerary: Bab Boujloud, Bou Inania, Talaa Kebira, the Nejjarine fountain, Al-Attarine.
+
+### What to see in Fez in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Bab Boujloud, Bou Inania, Talaa Kebira, the Nejjarine fountain, Al-Attarine. Day 2: Fes el-Jdid, the palace doors, the Mellah and the Jewish cemetery.
+
 ## Flights and deals
 
 - Flight deals to Fez: https://www.happylowcost.com/en/destinations/fez/#deals

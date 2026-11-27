@@ -223,6 +223,10 @@ El dólar canadiense (CAD); 1 CAD equivale aproximadamente a 0,65 €. Se paga c
 
 Para la ciudad no, el transporte público y la bici bastan. Solo compensa para Whistler, Squamish o si vas a recorrer la provincia.
 
+### ¿Qué ver en Vancouver en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro, Stanley Park y West End. Mañana: Canada Place y paseo por Coal Harbour hasta la entrada de Stanley Park. Día 2: Granville Island y Kitsilano. Mañana: Aquabus a Granville Island, desayuno y compras en el Public Market.
+
 ### ¿Es caro viajar a Vancouver?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 110-140 € por persona y día, y en el nivel "presupuesto medio", unos unos 250-330 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

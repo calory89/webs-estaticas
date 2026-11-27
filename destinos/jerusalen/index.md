@@ -245,6 +245,14 @@ Sí. El bus 231 sale desde la zona de la Puerta de Damasco y en unos 30-40 minut
 
 Para quien escribió esta guía, sí: Jerusalén no es una ciudad cómoda. Es cara, es ruidosa, está llena de controles de seguridad y en menos de un kilómetro cuadrado conviven tres religiones que se toman muy en serio a sí mismas. Con 3 días ves lo esencial. Presupuesto: Sin contar los vuelos (desde Madrid o Barcelona, entre 150 y 400 € ida y vuelta según la época), calcula por persona y día: Ajustado: 70-90 €.
 
+### ¿Qué ver en Jerusalén en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Ciudad Vieja a fondo. Mañana: entra por la Puerta de Jaffa muy temprano y ve directo al Santo Sepulcro antes de las colas.
+
+### ¿Qué ver en Jerusalén en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Ciudad Vieja a fondo. Mañana: entra por la Puerta de Jaffa muy temprano y ve directo al Santo Sepulcro antes de las colas. Día 2: Monte de los Olivos, Ciudad de David y Monte Sión. Mañana: taxi al Monte de los Olivos y bajada a pie hasta Getsemaní.
+
 ### ¿Es caro viajar a Jerusalén?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 70-90 € por persona y día, y en el nivel "cómodo", unos a partir de 300 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

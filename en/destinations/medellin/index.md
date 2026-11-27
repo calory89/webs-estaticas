@@ -233,6 +233,14 @@ It is spring-like all year, about 22-28°C by day. Expect afternoon rain, especi
 
 Yes, it is the best day trip from the city. Go early on a weekday to beat the queues at El Peñol.
 
+### What to see in Medellin in one day?
+
+If you only have one day, follow day 1 of this itinerary: Centre and Metrocable. Morning: Do a free walking tour of the centre or go to Plaza Botero and the Museo de Antioquia on your own.
+
+### What to see in Medellin in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Centre and Metrocable. Morning: Do a free walking tour of the centre or go to Plaza Botero and the Museo de Antioquia on your own. Day 2: Comuna 13 and Laureles. Morning: Get to Comuna 13 early. Afternoon: Head to the Museo Casa de la Memoria, then take a taxi up to Pueblito Paisa for late-afternoon views.
+
 ### Is Medellin expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €30-45 per person per day and the "mid-range" level at about €70-120. Flights are extra: this page shows real fares checked by Happy Low Cost.

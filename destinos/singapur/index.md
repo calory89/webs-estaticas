@@ -142,6 +142,14 @@ Con 4 días ves lo esencial de Singapur sin prisas. La ruta de esta guía está 
 
 Para quien escribió esta guía, sí: Singapur es una ciudad-estado del tamaño de un municipio grande, y aun así cuesta resumirla. Con 4 días ves lo esencial. Presupuesto: Como referencia general, una cama en dormitorio compartido o cápsula ronda los 25-40 euros, un hotel medio entre 100 y 170, y uno de categoría alta supera los 250.
 
+### ¿Qué ver en Singapur en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Chinatown por la mañana, comida en Maxwell, tarde en Marina Bay y, al anochecer, Gardens by the Bay con los Supertrees iluminados.
+
+### ¿Qué ver en Singapur en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Chinatown por la mañana, comida en Maxwell, tarde en Marina Bay y, al anochecer, Gardens by the Bay con los Supertrees iluminados. Día 2: Jardín Botánico temprano, Orchard Road si quieres ver centros comerciales y noche en Clarke Quay.
+
 ### ¿Es caro viajar a Singapur?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 60-90 euros por persona y día, y en el nivel "cómodo", unos 250 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

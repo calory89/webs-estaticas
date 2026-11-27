@@ -222,6 +222,10 @@ Yes. The JETT bus runs daily from Amman to Wadi Musa for about 10-11 JOD and tak
 
 April, October and November are best, with mild days and good light. March and late September are also good and slightly cheaper.
 
+### What to see in Jordan and Petra in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Amman. Morning: Arrive and drop your bags in downtown or Jabal Amman. Day 2: Jerash, then down to the Dead Sea. Morning: Leave early for Jerash and spend three hours there.
+
 ## Flights and deals
 
 - Flight deals to Jordan and Petra: https://www.happylowcost.com/en/destinations/jordan-and-petra/#deals

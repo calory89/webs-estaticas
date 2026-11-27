@@ -123,6 +123,14 @@ Oia es lo más famoso, pero también el más masificado. Imerovigli y Firostefan
 
 Para quien escribió esta guía, sí: Santorini es lo que parece en las fotos: un acantilado de más de 200 metros sobre una caldera volcánica, con pueblos blancos colgados del borde. Con 3 días ves lo esencial.
 
+### ¿Qué ver en Santorini en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Fira por la mañana, paseo por Firostefani e Imerovigli y atardecer en Imerovigli.
+
+### ¿Qué ver en Santorini en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Fira por la mañana, paseo por Firostefani e Imerovigli y atardecer en Imerovigli. Día 2: Oia a primera hora, sendero de vuelta a Fira si te apetece o bus, y comida en Ammoudi.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Santorini: https://www.happylowcost.com/destinos/santorini/#chollos

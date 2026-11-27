@@ -123,6 +123,14 @@ Today the cheapest deal we have to Budapest is €59 return from Madrid. Fares c
 
 For the traveller who wrote this guide, yes: Budapest is two cities facing each other across the Danube: hilly, quiet Buda and flat, busy Pest. 3 days are enough for the essentials. Budget: Budget: around €40 to €60 (dorm bed, street food, public transport).
 
+### What to see in Budapest in one day?
+
+If you only have one day, follow day 1 of this itinerary: Buda. Castle District in the morning, Fisherman's Bastion, lunch on the hill, then Gellért Hill and a late-afternoon soak at Rudas or Gellért.
+
+### What to see in Budapest in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Buda. Castle District in the morning, Fisherman's Bastion, lunch on the hill, then Gellért Hill and a late-afternoon soak at Rudas or Gellért. Day 2: Pest. Parliament, the Shoes on the Danube, St Stephen's Basilica, lunch at the Great Market Hall, the Dohány Street Synagogue and an evening in the Jewish Quarter.
+
 ## Flights and deals
 
 - Flight deals to Budapest: https://www.happylowcost.com/en/destinations/budapest/#deals

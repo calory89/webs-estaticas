@@ -118,6 +118,14 @@ Entre tres y cuatro para lo esencial. Si quieres añadir Viñales, cuenta con ci
 
 Para quien escribió esta guía, sí: La Habana no se parece a nada que hayas pisado en Europa ni en el resto del Caribe. Con 4 días ves lo esencial. Presupuesto: La opción más recomendable en general son las casas particulares, el alojamiento en casa de familias, con habitación privada y desayuno por un precio orientativo de entre 30 y 60 euros.
 
+### ¿Qué ver en La Habana en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: La Habana Vieja a pie: Plaza de la Catedral, Plaza Vieja, Obispo y Castillo de la Real Fuerza.
+
+### ¿Qué ver en La Habana en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: La Habana Vieja a pie: Plaza de la Catedral, Plaza Vieja, Obispo y Castillo de la Real Fuerza. Día 2: Capitolio, Paseo del Prado y Gran Teatro por la mañana.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a La Habana: https://www.happylowcost.com/destinos/la-habana/#chollos

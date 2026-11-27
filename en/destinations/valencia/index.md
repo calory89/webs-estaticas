@@ -226,6 +226,14 @@ It is worth it if you take the metro to and from the airport and use public tran
 
 Locals often head to El Palmar in the Albufera or to long-established beachfront restaurants such as Casa Carmela. Book ahead, especially for Sunday lunch.
 
+### What to see in Valencia in one day?
+
+If you only have one day, follow day 1 of this itinerary: The old town. Morning: start at Mercado Central for breakfast, cross to La Lonja, then walk to the cathedral and climb the Miguelete.
+
+### What to see in Valencia in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: The old town. Morning: start at Mercado Central for breakfast, cross to La Lonja, then walk to the cathedral and climb the Miguelete. Day 2: The Turia and the City of Arts and Sciences. Morning: Museo de Bellas Artes when it opens, then rent bikes and ride the Turia south.
+
 ### Is Valencia expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €50-70 per person per day and the "mid-range" level at about €110-170. Flights are extra: this page shows real fares checked by Happy Low Cost.

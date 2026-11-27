@@ -232,6 +232,14 @@ Reagan National is closest to the centre by far, but Dulles has most internation
 
 For the traveller who wrote this guide, yes: Washington DC is the rare big-name capital where most of the headline sights cost nothing. 3 days are enough for the essentials. Budget: Daily budgets per person, excluding flights: Shoestring: about €90-130 ($100-140).
 
+### What to see in Washington DC in one day?
+
+If you only have one day, follow day 1 of this itinerary: Capitol Hill and the east end of the Mall. Morning: Capitol tour (booked ahead), then the tunnel to the Library of Congress.
+
+### What to see in Washington DC in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Capitol Hill and the east end of the Mall. Morning: Capitol tour (booked ahead), then the tunnel to the Library of Congress. Day 2: Monuments and the big museums. Morning: Washington Monument at opening, then the African American History museum right next door.
+
 ## Flights and deals
 
 - Flight deals to Washington DC: https://www.happylowcost.com/en/destinations/washington-dc/#deals

@@ -246,6 +246,14 @@ Yes. It's the most rewarding day trip, cheap and easy by bus, and very different
 
 March-April and October-November, for mild weather, clearer skies and the grape harvest in autumn.
 
+### What to see in Santiago in one day?
+
+If you only have one day, follow day 1 of this itinerary: Historic centre and Lastarria. Morning: Start at La Moneda, walk up to the Plaza de Armas and the cathedral, then spend a couple of hours in the Museo Precolombino.
+
+### What to see in Santiago in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Historic centre and Lastarria. Morning: Start at La Moneda, walk up to the Plaza de Armas and the cathedral, then spend a couple of hours in the Museo Precolombino. Day 2: Bellavista, San Cristóbal and Providencia. Morning: Visit La Chascona early, then take the funicular up Cerro San Cristóbal.
+
 ### Is Santiago expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €45-60 per person per day and the "mid-range" level at about €100-160. Flights are extra: this page shows real fares checked by Happy Low Cost.

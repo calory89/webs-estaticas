@@ -207,6 +207,14 @@ En hoteles, restaurantes de categoría y gasolineras, sí. Para propinas, puesto
 
 Sí, es la forma más cómoda y barata en cuanto viajan dos personas. Evita conducir por Amán y respeta los límites, porque hay radares y controles frecuentes.
 
+### ¿Qué ver en Jordania y Petra en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Amán. Mañana: Ciudadela y bajada a pie hasta el teatro romano.
+
+### ¿Qué ver en Jordania y Petra en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Amán. Mañana: Ciudadela y bajada a pie hasta el teatro romano. Día 2: Jerash y Amán. Mañana: recoge el coche y llega a Jerash a primera hora.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Jordania y Petra: https://www.happylowcost.com/destinos/jordania/#chollos

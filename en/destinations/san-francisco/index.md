@@ -135,6 +135,16 @@ Yes, for most visitors. The audio tour is excellent, but tickets sell out, so re
 
 Layers, always. A light jacket or windbreaker will serve you well even in summer, plus comfortable shoes for the hills.
 
+## FAQs
+
+### What to see in San Francisco in one day?
+
+If you only have one day, follow day 1 of this itinerary: Morning at the Ferry Building, then Chinatown and North Beach on foot, Coit Tower, and a cable car down to the waterfront.
+
+### What to see in San Francisco in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Morning at the Ferry Building, then Chinatown and North Beach on foot, Coit Tower, and a cable car down to the waterfront. Day 2: Alcatraz first thing (book the earliest slot), then the Presidio and Golden Gate Bridge.
+
 ## Flights and deals
 
 - Flight deals to San Francisco: https://www.happylowcost.com/en/destinations/san-francisco/#deals

@@ -124,6 +124,14 @@ Con 4 días ves lo esencial de Seúl sin prisas. La ruta de esta guía está org
 
 Para quien escribió esta guía, sí: Seúl funciona como pocas capitales asiáticas. Con 4 días ves lo esencial. Presupuesto: Hay camas en dormitorio desde unos 20-30 € y habitaciones privadas sencillas desde 50-60 €.
 
+### ¿Qué ver en Seúl en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Gyeongbokgung por la mañana, Bukchon, Insadong y cena en Ikseon-dong.
+
+### ¿Qué ver en Seúl en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Gyeongbokgung por la mañana, Bukchon, Insadong y cena en Ikseon-dong. Día 2: Changdeokgung con Huwon, Gwangjang para comer, Cheonggyecheon y DDP de noche.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Seúl: https://www.happylowcost.com/destinos/seul/#chollos

@@ -117,6 +117,14 @@ Yes. A long layover can cover Candelaria and the Gold Museum, but two to three f
 
 3 days are enough to see the essentials of Bogota without rushing. The route in this guide is organised day by day.
 
+### What to see in Bogota in one day?
+
+If you only have one day, follow day 1 of this itinerary: Morning in La Candelaria, then Plaza de Bolívar, Museo del Oro and Museo Botero.
+
+### What to see in Bogota in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Morning in La Candelaria, then Plaza de Bolívar, Museo del Oro and Museo Botero. Day 2: Monserrate early, then Paloquemao market for lunch, afternoon on the street art route, evening in Chapinero.
+
 ## Flights and deals
 
 - Flight deals to Bogota: https://www.happylowcost.com/en/destinations/bogota/#deals

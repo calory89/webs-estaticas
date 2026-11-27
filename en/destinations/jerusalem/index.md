@@ -239,6 +239,14 @@ Yes. It is guided-only, and slots often sell out days ahead, especially in sprin
 
 For the traveller who wrote this guide, yes: Jerusalem is intense, and you should know that before you book. 3 days are enough for the essentials. Budget: Shoestring: €60-80 per day (₪240-320).
 
+### What to see in Jerusalem in one day?
+
+If you only have one day, follow day 1 of this itinerary: The Old City. Morning: enter at Jaffa Gate and walk straight to the Church of the Holy Sepulchre before the crowds arrive.
+
+### What to see in Jerusalem in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: The Old City. Morning: enter at Jaffa Gate and walk straight to the Church of the Holy Sepulchre before the crowds arrive. Day 2: Temple Mount, City of David, Mount of Olives. Morning: queue early at the Mughrabi Bridge for Temple Mount.
+
 ## Flights and deals
 
 - Flight deals to Jerusalem: https://www.happylowcost.com/en/destinations/jerusalem/#deals

@@ -107,6 +107,14 @@ No. Parking is costly, traffic is heavy and the subway is faster. Only consider 
 
 For the traveller who wrote this guide, yes: New York is loud, expensive and tiring, and it is still one of the few cities that lives up to its reputation. 5 days are enough for the essentials.
 
+### What to see in New York in one day?
+
+If you only have one day, follow day 1 of this itinerary: Midtown. Grand Central, Fifth Avenue, Top of the Rock at sunset, Times Square after dark.
+
+### What to see in New York in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Midtown. Grand Central, Fifth Avenue, Top of the Rock at sunset, Times Square after dark. Day 2: Central Park and Upper side. Central Park in the morning, the Met after lunch, dinner on the Upper West Side.
+
 ## Flights and deals
 
 - Flight deals to New York: https://www.happylowcost.com/en/destinations/new-york/#deals

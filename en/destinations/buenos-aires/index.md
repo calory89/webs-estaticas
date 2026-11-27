@@ -146,6 +146,14 @@ Colonia del Sacramento in Uruguay if you want a change of country and old-world 
 
 For the traveller who wrote this guide, yes: Buenos Aires feels like a European capital that drifted south and picked up a stronger personality on the way. 4 days are enough for the essentials.
 
+### What to see in Buenos Aires in one day?
+
+If you only have one day, follow day 1 of this itinerary: Plaza de Mayo, Avenida de Mayo, Café Tortoni, Palacio Barolo, then San Telmo for the evening.
+
+### What to see in Buenos Aires in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Plaza de Mayo, Avenida de Mayo, Café Tortoni, Palacio Barolo, then San Telmo for the evening. Day 2: Recoleta Cemetery, a walk through Recoleta and the Ateneo bookshop, Teatro Colón tour, then dinner in Palermo.
+
 ## Flights and deals
 
 - Flight deals to Buenos Aires: https://www.happylowcost.com/en/destinations/buenos-aires/#deals

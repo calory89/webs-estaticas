@@ -129,6 +129,14 @@ Yes, though the Atlantic is cool in winter, around 19 to 20°C. Many people use 
 
 For the traveller who wrote this guide, yes: Most people picture a beach package, and the south does that job well. 4 days are enough for the essentials. Budget: Budget: about 55 to 80 euros, with a hostel or basic apartment, buses, and market or menu del día meals.
 
+### What to see in Tenerife in one day?
+
+If you only have one day, follow day 1 of this itinerary: Arrive and settle in the south. Walk the coast, eat fish at Los Abrigos or Los Cristianos.
+
+### What to see in Tenerife in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Arrive and settle in the south. Walk the coast, eat fish at Los Abrigos or Los Cristianos. Day 2: Teide at sunrise or early morning, then a slow afternoon in Vilaflor or La Orotava on the way down.
+
 ## Flights and deals
 
 - Flight deals to Tenerife: https://www.happylowcost.com/en/destinations/tenerife/#deals

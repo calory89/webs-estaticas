@@ -133,6 +133,14 @@ Con 3 días ves lo esencial de Fez sin prisas. La ruta de esta guía está organ
 
 Para quien escribió esta guía, sí: Fez es la ciudad de Marruecos que menos se ha maquillado para el visitante. Con 3 días ves lo esencial. Presupuesto: Ajustado (30-40 €): hostal o habitación sencilla, comida en puestos, entradas puntuales y transporte local.
 
+### ¿Qué ver en Fez en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Medina vieja. Entra por Bab Boujloud, visita Bou Inania y Attarine, y pasea por los zocos de los metales y las especias.
+
+### ¿Qué ver en Fez en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Medina vieja. Entra por Bab Boujloud, visita Bou Inania y Attarine, y pasea por los zocos de los metales y las especias. Día 2: Curtidurías, museos y Fes el-Jdid. Por la mañana, las curtidurías de Chouara y el Nejjarine.
+
 ### ¿Es caro viajar a Fez?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 30-40 € por persona y día, y en el nivel "cómodo", unos 120 € o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

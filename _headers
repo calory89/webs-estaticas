@@ -106,3 +106,30 @@
 /en/llms-full.txt
   Content-Type: text/plain; charset=utf-8
   Cache-Control: public, max-age=900, stale-while-revalidate=3600
+
+/es/llms.txt
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/*.txt
+  X-Robots-Tag: max-snippet:-1
+
+/guias/*/index.md
+  Content-Type: text/markdown; charset=utf-8
+  X-Robots-Tag: noindex
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/en/guides/*/index.md
+  Content-Type: text/markdown; charset=utf-8
+  X-Robots-Tag: noindex
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/:page/index.md
+  Content-Type: text/markdown; charset=utf-8
+  X-Robots-Tag: noindex
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/en/:page/index.md
+  Content-Type: text/markdown; charset=utf-8
+  X-Robots-Tag: noindex
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400

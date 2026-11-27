@@ -121,6 +121,14 @@ Mayo, junio y septiembre dan el mejor equilibrio entre clima, horas de luz y pre
 
 Con 3 días ves lo esencial de Edimburgo sin prisas. La ruta de esta guía está organizada día a día.
 
+### ¿Qué ver en Edimburgo en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Old Town. Castillo a primera hora, Royal Mile andando, St Giles, Victoria Street y Grassmarket.
+
+### ¿Qué ver en Edimburgo en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Old Town. Castillo a primera hora, Royal Mile andando, St Giles, Victoria Street y Grassmarket. Día 2: Holyrood y colinas. Museo Nacional por la mañana, Palacio de Holyrood al mediodía y Arthur's Seat por la tarde si el cielo ayuda.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Edimburgo: https://www.happylowcost.com/destinos/edimburgo/#chollos

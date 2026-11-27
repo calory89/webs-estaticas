@@ -115,6 +115,14 @@ No. Younger people and most hotel and restaurant staff speak good English. Learn
 
 Almost everywhere, including trams and milk bars. Carry a little cash in złoty for small stalls and some markets.
 
+### What to see in Warsaw in one day?
+
+If you only have one day, follow day 1 of this itinerary: Old Town and the Royal Route. Start in the Old Town before the tour groups arrive, visit the Royal Castle, then walk down Krakowskie Předmieście and Nowy Świat.
+
+### What to see in Warsaw in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Old Town and the Royal Route. Start in the Old Town before the tour groups arrive, visit the Royal Castle, then walk down Krakowskie Předmieście and Nowy Świat. Day 2: History and the centre. Spend the morning at POLIN and the Ghetto Heroes monument, then head to the Palace of Culture for the view.
+
 ## Flights and deals
 
 - Flight deals to Warsaw: https://www.happylowcost.com/en/destinations/warsaw/#deals

@@ -1,4 +1,4 @@
-# Marrakech en 3 días: qué ver, dónde dormir y cuánto cuesta
+# Qué ver en Marrakech en 3 días: precios y dónde dormir
 
 > Guía de viaje de Marrakech de Happy Low Cost, itinerario de 3 días. Página original: https://www.happylowcost.com/destinos/marrakech/
 > Actualizada: 2026-10-21
@@ -132,6 +132,14 @@ Con 3 días ves lo esencial de Marrakech sin prisas. La ruta de esta guía está
 ### ¿Merece la pena visitar Marrakech?
 
 Para quien escribió esta guía, sí: Marrakech está a tres horas de vuelo desde buena parte de España, con low cost casi todo el año, y aun así parece otro planeta. Con 3 días ves lo esencial. Presupuesto: Hay habitaciones sencillas desde unos 30 o 40 euros y riads con encanto por 60 a 100.
+
+### ¿Qué ver en Marrakech en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Medina por la mañana, zocos y madrasa. Comida tranquila y tarde en el Museo de Marrakech.
+
+### ¿Qué ver en Marrakech en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Medina por la mañana, zocos y madrasa. Comida tranquila y tarde en el Museo de Marrakech. Día 2: Palacio Bahía y Tumbas Saadíes a primera hora, El Badi después.
 
 ### ¿Es caro viajar a Marrakech?
 

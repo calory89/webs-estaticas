@@ -240,6 +240,14 @@ Late August to early November is the cheapest, though it falls in hurricane seas
 
 For the traveller who wrote this guide, yes: San Juan is two cities in one. Old San Juan is a walled Spanish colonial town of pastel houses and blue cobblestones on a small island. 4 days are enough for the essentials. Budget: Daily budgets per person, excluding flights: Shoestring: about $90-130 (€85-120).
 
+### What to see in San Juan in one day?
+
+If you only have one day, follow day 1 of this itinerary: Old San Juan. Morning: El Morro at opening, then the lawn and the cemetery viewpoint over La Perla.
+
+### What to see in San Juan in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Old San Juan. Morning: El Morro at opening, then the lawn and the cemetery viewpoint over La Perla. Day 2: Santurce, Condado and the lagoon. Morning: mural walk around Calle Cerra, then the Museo de Arte de Puerto Rico.
+
 ## Flights and deals
 
 - Flight deals to San Juan: https://www.happylowcost.com/en/destinations/san-juan/#deals

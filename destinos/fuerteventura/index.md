@@ -245,6 +245,14 @@ En agosto y septiembre, con máximas en torno a 28-30 °C. En invierno ronda los
 
 Para quien escribió esta guía, sí: Fuerteventura es una isla seca, marrón, ventosa y bastante vacía, y precisamente por eso engancha. Con 6 días ves lo esencial. Presupuesto: Ajustado (unos 70-90 € por persona y día, en pareja): apartamento compartido a 70 €, coche a medias, compra en supermercado y un menú al día, playas y senderos gratis.
 
+### ¿Qué ver en Fuerteventura en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Corralejo y las dunas. Mañana: recoge el coche en el aeropuerto y sube al norte (unos 35 minutos).
+
+### ¿Qué ver en Fuerteventura en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Corralejo y las dunas. Mañana: recoge el coche en el aeropuerto y sube al norte (unos 35 minutos). Día 2: Isla de Lobos. Mañana: primer ferry a Lobos (con la autorización ya pedida), sendero hasta el faro antes de que apriete el calor.
+
 ### ¿Es caro viajar a Fuerteventura?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos unos 70-90 €, en pareja por persona y día, y en el nivel "medio", unos unos 120-170 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

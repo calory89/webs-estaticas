@@ -113,6 +113,14 @@ Yes, it's expected. Start at around half the first price, stay good-humoured, an
 
 3 days are enough to see the essentials of Marrakesh without rushing. The route in this guide is organised day by day.
 
+### What to see in Marrakesh in one day?
+
+If you only have one day, follow day 1 of this itinerary: Koutoubia, then the Jemaa el-Fna area, the souks in the afternoon, and dinner on the square at dusk.
+
+### What to see in Marrakesh in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Koutoubia, then the Jemaa el-Fna area, the souks in the afternoon, and dinner on the square at dusk. Day 2: Early start at the Saadian Tombs and Bahia Palace, lunch in the Kasbah area, El Badi in the afternoon, then a hammam to recover.
+
 ## Flights and deals
 
 - Flight deals to Marrakesh: https://www.happylowcost.com/en/destinations/marrakesh/#deals

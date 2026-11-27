@@ -233,6 +233,14 @@ Take the ferry from Ibiza port to La Savina, roughly 30-35 minutes and €50-70 
 
 Yes. Dalt Vila is the island's best sight, and the town is the easiest base for buses, ferries and the airport.
 
+### What to see in Ibiza in one day?
+
+If you only have one day, follow day 1 of this itinerary: Ibiza Town. Morning: coffee and an ensaimada around Vara de Rey, the elegant boulevard of the new town, then walk the Marina port district.
+
+### What to see in Ibiza in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Ibiza Town. Morning: coffee and an ensaimada around Vara de Rey, the elegant boulevard of the new town, then walk the Marina port district. Day 2: The south and Ses Salines. Morning: beach early at Ses Salines, walk the salt flats.
+
 ## Flights and deals
 
 - Flight deals to Ibiza: https://www.happylowcost.com/en/destinations/ibiza/#deals

@@ -235,6 +235,10 @@ It is pricier than the rest of Morocco but cheap by European standards. Local me
 
 Yes, at the Ain Diab beaches, though the Atlantic is cool and the currents can be strong. For calmer, cleaner water, head to El Jadida or Mohammedia.
 
+### What to see in Casablanca in one day?
+
+If you only have one day, follow day 1 of this itinerary: Mosque, medina and the sea. Morning: Start at the Hassan II Mosque for an early guided tour.
+
 ## Flights and deals
 
 - Flight deals to Casablanca: https://www.happylowcost.com/en/destinations/casablanca/#deals

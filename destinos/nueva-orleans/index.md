@@ -247,6 +247,14 @@ Sí, si eliges una empresa con barcas pequeñas en lugar de las lanchas con hél
 
 Música en directo en Frenchmen Street, un cóctel en el Carousel Bar y, si te pilla en domingo o martes, algún concierto de brass band en un bar de Uptown o del Tremé.
 
+### ¿Qué ver en Nueva Orleans en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: French Quarter. Mañana: beignets temprano, Jackson Square, la catedral y el paseo del río.
+
+### ¿Qué ver en Nueva Orleans en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: French Quarter. Mañana: beignets temprano, Jackson Square, la catedral y el paseo del río. Día 2: Museo y Marigny. Mañana: National WWII Museum, en el Warehouse District, a 15 minutos andando de Canal Street.
+
 ### ¿Es caro viajar a Nueva Orleans?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos unos 120-150 € por persona y día, y en el nivel "medio", unos unos 220-300 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

@@ -219,6 +219,14 @@ Split is cheaper, more of a lived-in city and better for island-hopping. Dubrovn
 
 No. The centre is walkable and buses and ferries cover the main day trips. A car only helps for Krka or exploring the coast on your own schedule.
 
+### What to see in Split in one day?
+
+If you only have one day, follow day 1 of this itinerary: Diocletian's Palace and the old town. Morning: Be at the Peristyle by 7:30 before the cruise groups arrive.
+
+### What to see in Split in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Diocletian's Palace and the old town. Morning: Be at the Peristyle by 7:30 before the cruise groups arrive. Day 2: Markets, Marjan and the beach. Morning: Fish market and Green Market, then buy a picnic.
+
 ## Flights and deals
 
 - Flight deals to Split: https://www.happylowcost.com/en/destinations/split/#deals

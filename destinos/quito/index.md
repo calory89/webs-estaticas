@@ -232,6 +232,14 @@ La Floresta para la mayoría de viajeros, por equilibrio entre seguridad, comida
 
 Para quien escribió esta guía, sí: Quito es una capital estirada a lo largo de un valle andino, a unos 2.850 metros de altura, con volcanes asomando por casi todas las calles. Con 3 días ves lo esencial. Presupuesto: Presupuesto ajustado (35-50 € al día): hostal en La Mariscal (12-20 €), almuerzos del día y mercados (8-10 €), metro y bus (2 €), una entrada al día (5 €).
 
+### ¿Qué ver en Quito en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Centro histórico. Mañana: empieza tranquilo por la altura. Plaza Grande, Catedral e Iglesia de la Compañía, todo a pocos pasos.
+
+### ¿Qué ver en Quito en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro histórico. Mañana: empieza tranquilo por la altura. Plaza Grande, Catedral e Iglesia de la Compañía, todo a pocos pasos. Día 2: Alturas y vistas. Mañana: TelefériQo a primera hora, antes de que entren las nubes (taxi desde el centro, unos 5 €).
+
 ### ¿Es caro viajar a Quito?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 35-50 € por persona y día, y en el nivel "presupuesto medio", unos 80-120 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

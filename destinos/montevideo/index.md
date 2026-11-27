@@ -214,6 +214,14 @@ Buenos Aires tiene más cosas que ver y más vida nocturna. Montevideo es más t
 
 Para quien escribió esta guía, sí: Montevideo no es Buenos Aires y no intenta serlo. Con 3 días ves lo esencial. Presupuesto: Uruguay usa el peso uruguayo (UYU); 1 € equivale a unos 45-48 pesos.
 
+### ¿Qué ver en Montevideo en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Ciudad Vieja y Centro. Mañana: empieza en la Plaza Independencia, baja al mausoleo de Artigas y visita el Palacio Salvo.
+
+### ¿Qué ver en Montevideo en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Ciudad Vieja y Centro. Mañana: empieza en la Plaza Independencia, baja al mausoleo de Artigas y visita el Palacio Salvo. Día 2: Rambla, Punta Carretas y Pocitos. Mañana: bus o taxi al Palacio Legislativo para la visita guiada.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Montevideo: https://www.happylowcost.com/destinos/montevideo/#chollos

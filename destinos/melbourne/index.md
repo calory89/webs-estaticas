@@ -238,6 +238,14 @@ Marzo-abril y octubre-noviembre, por clima templado y menos gente. Para pagar me
 
 Para quien escribió esta guía, sí: Melbourne no tiene un monumento de postal como la Ópera de Sídney, y eso es lo primero que hay que asumir. Con 4 días ves lo esencial. Presupuesto: Presupuesto ajustado: 70-90 € al día.
 
+### ¿Qué ver en Melbourne en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: El centro y los callejones. Mañana: café en Degraves Street, Block Arcade y Royal Arcade, y luego State Library.
+
+### ¿Qué ver en Melbourne en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: El centro y los callejones. Mañana: café en Degraves Street, Block Arcade y Royal Arcade, y luego State Library. Día 2: Arte, jardines y río. Mañana: NGV International a primera hora.
+
 ### ¿Es caro viajar a Melbourne?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 70-90 € por persona y día, y en el nivel "presupuesto medio", unos 160-220 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

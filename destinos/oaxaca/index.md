@@ -237,6 +237,14 @@ Mezcal artesanal, mole en pasta, chocolate de molino, barro negro y textiles. Co
 
 Hablar español es una ventaja enorme, sobre todo en mercados y pueblos. Hoteles y restaurantes aceptan tarjeta, pero mercados, colectivos y puestos solo efectivo en pesos.
 
+### ¿Qué ver en Oaxaca en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Centro histórico y mercados. Mañana: desayuno en el Mercado 20 de Noviembre (chocolate con pan de yema), Zócalo y Catedral, y subida por el Andador Macedonio Alcalá hasta Santo Domingo.
+
+### ¿Qué ver en Oaxaca en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro histórico y mercados. Mañana: desayuno en el Mercado 20 de Noviembre (chocolate con pan de yema), Zócalo y Catedral, y subida por el Andador Macedonio Alcalá hasta Santo Domingo. Día 2: Monte Albán y barrios. Mañana: autobús temprano a Monte Albán y vuelta hacia mediodía.
+
 ### ¿Es caro viajar a Oaxaca?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 40-55 € por persona y día, y en el nivel "medio", unos 90-140 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

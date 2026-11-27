@@ -232,6 +232,14 @@ Cada mes en luna llena, según el calendario lunar. Comprueba la fecha antes de 
 
 Es muy seguro. Lo peor que te puede pasar es pagar de más por algo, así que pregunta siempre el precio antes.
 
+### ¿Qué ver en Hoi An en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: El casco antiguo. Mañana: llega al Puente Japonés a las 7 y luego visita la casa Phùng Hưng, la Sala Cantonesa y la de Fujian.
+
+### ¿Qué ver en Hoi An en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: El casco antiguo. Mañana: llega al Puente Japonés a las 7 y luego visita la casa Phùng Hưng, la Sala Cantonesa y la de Fujian. Día 2: Campo, cocina y playa. Mañana: clase de cocina con visita al mercado, o paseo en bici a Trà Quế.
+
 ### ¿Es caro viajar a Hoi An?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 30-40 € por persona y día, y en el nivel "presupuesto medio", unos 60-100 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

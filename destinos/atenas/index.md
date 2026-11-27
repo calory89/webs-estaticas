@@ -117,6 +117,14 @@ Hoy el chollo más barato que tenemos a Atenas cuesta 133 € ida y vuelta desde
 
 Para quien escribió esta guía, sí: Atenas no es una ciudad bonita en el sentido clásico. Con 3 días ves lo esencial. Presupuesto: Como orientación, un hostal en dormitorio compartido ronda los 20-35 € por noche, una habitación doble sencilla suele estar entre 60 y 100 €, y un hotel de gama media entre 100 y 150 €.
 
+### ¿Qué ver en Atenas en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Lo clásico. Acrópolis a primera hora, Museo de la Acrópolis, comida en Koukaki y tarde en el Ágora antigua.
+
+### ¿Qué ver en Atenas en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Lo clásico. Acrópolis a primera hora, Museo de la Acrópolis, comida en Koukaki y tarde en el Ágora antigua. Día 2: Centro y miradores. Mañana en el Museo Arqueológico Nacional.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Atenas: https://www.happylowcost.com/destinos/atenas/#chollos

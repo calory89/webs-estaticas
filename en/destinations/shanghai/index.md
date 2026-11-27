@@ -236,6 +236,14 @@ As an experience, yes: 300 km/h for €6.50 is fun. As transport it only saves t
 
 More than elsewhere in China, especially younger people and hotel staff, but not in most small restaurants. A translation app with camera mode solves almost every menu problem.
 
+### What to see in Shanghai in one day?
+
+If you only have one day, follow day 1 of this itinerary: The Bund, Yu Garden and Pudong. Morning: Start at Yu Garden as it opens, then walk 20 minutes north to the Bund.
+
+### What to see in Shanghai in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: The Bund, Yu Garden and Pudong. Morning: Start at Yu Garden as it opens, then walk 20 minutes north to the Bund. Day 2: People's Square and the French Concession. Morning: Shanghai Museum at People's Square (book ahead).
+
 ## Flights and deals
 
 - Flight deals to Shanghai: https://www.happylowcost.com/en/destinations/shanghai/#deals

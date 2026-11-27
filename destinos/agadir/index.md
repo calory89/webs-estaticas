@@ -237,6 +237,14 @@ Sí, en hoteles, bares y restaurantes con licencia, sobre todo en la Marina y la
 
 Para quien escribió esta guía, sí: Agadir no es Marrakech ni Fez, y conviene saberlo antes de comprar el vuelo. Con 3 días ves lo esencial. Presupuesto: Gastos por persona y día, sin vuelo: Presupuesto ajustado: 40-60 € (hotel sencillo en Talborjt compartido, comida local, bus y petit taxi, playa y zoco).
 
+### ¿Qué ver en Agadir en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Centro, playa y kasbah. Mañana: empieza en el Museo del Patrimonio Amazigh y sigue con el Valle de los Pájaros y el Jardín de Olhão, que están a pocos minutos andando.
+
+### ¿Qué ver en Agadir en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro, playa y kasbah. Mañana: empieza en el Museo del Patrimonio Amazigh y sigue con el Valle de los Pájaros y el Jardín de Olhão, que están a pocos minutos andando. Día 2: Zoco, puerto y Medina Polizzi. Mañana: Souk El Had con calma (recuerda que el lunes está cerrado).
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Agadir: https://www.happylowcost.com/destinos/agadir/#chollos

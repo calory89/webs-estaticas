@@ -241,6 +241,14 @@ Very. Normal city precautions apply late at night around Flinders Street and Kin
 
 For the traveller who wrote this guide, yes: Melbourne doesn't do postcard landmarks the way Sydney does. 4 days are enough for the essentials. Budget: Shoestring: A$100-140 a day (€57-80).
 
+### What to see in Melbourne in one day?
+
+If you only have one day, follow day 1 of this itinerary: CBD, laneways and the river. Morning: start with coffee on Degraves Street, then walk Centre Place, the Block Arcade and the Royal Arcade.
+
+### What to see in Melbourne in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: CBD, laneways and the river. Morning: start with coffee on Degraves Street, then walk Centre Place, the Block Arcade and the Royal Arcade. Day 2: Gardens, the MCG and Richmond. Morning: the Shrine of Remembrance balcony, then the Royal Botanic Gardens.
+
 ## Flights and deals
 
 - Flight deals to Melbourne: https://www.happylowcost.com/en/destinations/melbourne/#deals

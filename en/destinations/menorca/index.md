@@ -234,6 +234,14 @@ Very good. Shallow sandy bays like Son Bou, Cala Galdana and Binibeca suit small
 
 For the traveller who wrote this guide, yes: Menorca is the quiet Balearic island. It's flatter, greener and far less built-up than Mallorca or Ibiza. 5 days are enough for the essentials. Budget: Shoestring (about €70-100 per person per day): Shared room or hostal (€40-60 each), buses, supermarket picnics, one menú del día, free beaches.
 
+### What to see in Menorca in one day?
+
+If you only have one day, follow day 1 of this itinerary: Ciutadella. Morning: Walk the old town: the cathedral, Ses Voltes, Plaça des Born and the market.
+
+### What to see in Menorca in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Ciutadella. Morning: Walk the old town: the cathedral, Ses Voltes, Plaça des Born and the market. Day 2: Southwest coves. Morning: Take an early bus or drive to Macarella, then walk to Macarelleta.
+
 ## Flights and deals
 
 - Flight deals to Menorca: https://www.happylowcost.com/en/destinations/menorca/#deals

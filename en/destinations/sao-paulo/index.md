@@ -246,6 +246,14 @@ Yes, Uber and the local app 99 are widely used, cheap and the safest way to get 
 
 The CPTM Line 13-Jade train costs about R$5 (€1), with a free shuttle from the terminals. It is the cheapest option, but Uber or the Airport Bus Service is easier with luggage.
 
+### What to see in Sao Paulo in one day?
+
+If you only have one day, follow day 1 of this itinerary: Avenida Paulista and Jardins. Morning: MASP when it opens, then a coffee and a walk through Parque Trianon across the avenue.
+
+### What to see in Sao Paulo in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Avenida Paulista and Jardins. Morning: MASP when it opens, then a coffee and a walk through Parque Trianon across the avenue. Day 2: Historic centre and Luz. Morning: metro to Sé, see the cathedral and Pátio do Colégio, then climb Farol Santander.
+
 ### Is Sao Paulo expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €40-55 per person per day and the "comfort" level at about €250+. Flights are extra: this page shows real fares checked by Happy Low Cost.

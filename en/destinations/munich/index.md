@@ -109,6 +109,16 @@ Yes, by train to Füssen and a short bus, but it makes a long day. Book castle t
 
 Not really. English is widely spoken in the centre and in tourist places, but a "Grüß Gott" or "Danke" always goes down well.
 
+## FAQs
+
+### What to see in Munich in one day?
+
+If you only have one day, follow day 1 of this itinerary: The old town. Marienplatz, Alter Peter, Viktualienmarkt for lunch, the Asamkirche, then the Residenz and dinner in a traditional Wirtshaus.
+
+### What to see in Munich in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: The old town. Marienplatz, Alter Peter, Viktualienmarkt for lunch, the Asamkirche, then the Residenz and dinner in a traditional Wirtshaus. Day 2: Art and park. A museum in the morning, the Englischer Garten and the Eisbach in the afternoon, and a beer at the Chinese Tower.
+
 ## Flights and deals
 
 - Flight deals to Munich: https://www.happylowcost.com/en/destinations/munich/#deals

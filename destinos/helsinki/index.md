@@ -1,4 +1,4 @@
-# Qué ver en Helsinki en 3 días: guía low cost con precios
+# Qué ver en Helsinki en 3 días: qué hacer y cuánto cuesta
 
 > Guía de viaje de Helsinki de Happy Low Cost, itinerario de 3 días. Página original: https://www.happylowcost.com/destinos/helsinki/
 > Actualizada: 2026-10-21
@@ -114,6 +114,14 @@ Un billete sencillo urbano ronda los 3 €, y el trayecto desde el aeropuerto cu
 ### ¿Cuántos días hacen falta para ver Helsinki?
 
 Con 3 días ves lo esencial de Helsinki sin prisas. La ruta de esta guía está organizada día a día.
+
+### ¿Qué ver en Helsinki en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Estación central, Oodi, Kiasma, Plaza del Senado y Catedral, paseo por Esplanadi y cena en el mercado o en Kallio.
+
+### ¿Qué ver en Helsinki en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Estación central, Oodi, Kiasma, Plaza del Senado y Catedral, paseo por Esplanadi y cena en el mercado o en Kallio. Día 2: Ferry a Suomenlinna por la mañana, comida allí o de vuelta en Kauppatori, tarde en Katajanokka con Uspenski y sauna al final del día.
 
 ## Vuelos y chollos
 

@@ -235,6 +235,10 @@ With six hours or more, yes. The S-Bahn reaches the centre in about 15 minutes, 
 
 The Altstadt and Innenstadt for convenience, Sachsenhausen for museums and taverns. Choose the Bahnhofsviertel only if price and transport matter more than atmosphere.
 
+### What to see in Frankfurt in one day?
+
+If you only have one day, follow day 1 of this itinerary: Old town, museums and apple wine. Morning: start at Römerberg early, walk through the Neue Altstadt to the Kaiserdom and climb the tower.
+
 ### Is Frankfurt expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €70-100 per person per day and the "mid-range" level at about €170-250, sharing a room. Flights are extra: this page shows real fares checked by Happy Low Cost.

@@ -126,6 +126,14 @@ Para el Strip y Downtown, no. Para Red Rock Canyon, Valley of Fire o la presa Ho
 
 Para quien escribió esta guía, sí: Las Vegas es un decorado gigante en mitad del desierto de Nevada, y eso es justo lo que la hace interesante. Con 4 días ves lo esencial.
 
+### ¿Qué ver en Las Vegas en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Llegada, paseo por el sur del Strip, el cartel de bienvenida y cena.
+
+### ¿Qué ver en Las Vegas en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Llegada, paseo por el sur del Strip, el cartel de bienvenida y cena. Día 2: Mañana en Venetian y Palazzo, tarde en Caesars Palace y sus tiendas, y noche en el LINQ o en un espectáculo.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Las Vegas: https://www.happylowcost.com/destinos/las-vegas/#chollos

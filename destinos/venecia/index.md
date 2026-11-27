@@ -125,6 +125,10 @@ Abril, mayo, septiembre y principios de octubre por el clima. Para precios bajos
 
 Con 3 días ves lo esencial de Venecia sin prisas. La ruta de esta guía está organizada día a día.
 
+### ¿Qué ver en Venecia en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Llegada, paseo por Cannaregio y el Gueto, vaporetto línea 1 por el Gran Canal al atardecer y cena de cicchetti cerca de Rialto. Día 2: San Marcos a primera hora, Palacio Ducal, comida tranquila en Castello y tarde en Dorsoduro con Zattere y Salute.
+
 ### ¿Es caro viajar a Venecia?
 
 Depende de cómo viajes. Según esta guía, en el nivel "muy ajustado" se gastan unos 45-70 euros por persona y día, y en el nivel "cómodo", unos 200 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

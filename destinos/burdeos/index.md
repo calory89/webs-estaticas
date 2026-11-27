@@ -234,6 +234,14 @@ El canelé, pequeño, caramelizado y con ron. Cómpralo del día en Baillardran 
 
 Suele funcionar de primavera a otoño y se apaga en los meses fríos. Comprueba el estado antes de ir si viajas en invierno.
 
+### ¿Qué ver en Burdeos en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Centro histórico y río. Mañana: sube a la Torre Pey-Berland al abrir, visita la catedral y baja por Sainte-Catherine hasta la Grosse Cloche.
+
+### ¿Qué ver en Burdeos en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro histórico y río. Mañana: sube a la Torre Pey-Berland al abrir, visita la catedral y baja por Sainte-Catherine hasta la Grosse Cloche. Día 2: Chartrons, vino y la otra orilla. Mañana: si es fin de semana, ostras en el Marché des Capucins.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Burdeos: https://www.happylowcost.com/destinos/burdeos/#chollos

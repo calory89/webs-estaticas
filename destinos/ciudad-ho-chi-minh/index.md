@@ -224,6 +224,14 @@ No es obligatoria. En restaurantes y masajes se agradece dejar un 5-10 %, y en t
 
 De diciembre a marzo, en la temporada seca. Evita las fechas del Tet si quieres encontrar todo abierto.
 
+### ¿Qué ver en Ciudad Ho Chi Minh en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Centro colonial y guerra. Mañana: Museo de los Restos de la Guerra a primera hora y, a diez minutos andando, el Palacio de la Independencia.
+
+### ¿Qué ver en Ciudad Ho Chi Minh en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro colonial y guerra. Mañana: Museo de los Restos de la Guerra a primera hora y, a diez minutos andando, el Palacio de la Independencia. Día 2: Excursión a Cu Chi y barrio chino. Mañana: túneles de Cu Chi; sal temprano para volver antes de comer.
+
 ### ¿Es caro viajar a Ciudad Ho Chi Minh?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 30-40 € por persona y día, y en el nivel "presupuesto medio", unos 70-100 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

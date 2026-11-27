@@ -246,6 +246,10 @@ It's known for its Advent Christmas markets, the Museum of Broken Relationships,
 
 Yes, widely, especially younger people and anyone working in hospitality. Learning "hvala" (thank you) still goes a long way.
 
+### What to see in Zagreb in one day?
+
+If you only have one day, follow day 1 of this itinerary: Upper Town, Kaptol and Dolac. Morning: Start at Ban Jelačić Square, then walk up to Dolac Market around 8:30am for cheese, fruit and burek from a nearby bakery.
+
 ## Flights and deals
 
 - Flight deals to Zagreb: https://www.happylowcost.com/en/destinations/zagreb/#deals

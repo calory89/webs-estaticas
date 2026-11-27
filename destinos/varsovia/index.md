@@ -1,4 +1,4 @@
-# Qué ver en Varsovia en 3 días: guía low cost con precios
+# Qué ver en Varsovia en 3 días: qué hacer y cuánto cuesta
 
 > Guía de viaje de Varsovia de Happy Low Cost, itinerario de 3 días. Página original: https://www.happylowcost.com/destinos/varsovia/
 > Actualizada: 2026-10-21
@@ -118,6 +118,14 @@ Mayo, junio y septiembre, por el clima agradable. Si prefieres precios más bajo
 ### ¿Merece la pena visitar Varsovia?
 
 Para quien escribió esta guía, sí: Varsovia no te gana por el postal, te gana por la historia que lleva encima. Con 3 días ves lo esencial. Presupuesto: Orientativamente, una cama en dormitorio compartido ronda los 15-25 euros, una habitación doble en hotel sencillo entre 50 y 90, y los apartamentos funcionan bien si viajáis en grupo.
+
+### ¿Qué ver en Varsovia en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Casco antiguo temprano, Plaza del Castillo, Barbacana y paseo por la Ruta Real hasta Nowy Świat.
+
+### ¿Qué ver en Varsovia en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Casco antiguo temprano, Plaza del Castillo, Barbacana y paseo por la Ruta Real hasta Nowy Świat. Día 2: Museo del Levantamiento por la mañana, comida en un bar de leche, POLIN por la tarde y mirador del Palacio de la Cultura al final.
 
 ### ¿Es caro viajar a Varsovia?
 

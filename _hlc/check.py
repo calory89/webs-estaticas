@@ -47,6 +47,10 @@ scope += glob.glob('chollos/*/index.html') + glob.glob('chollos/desde/*/index.ht
 scope += glob.glob('en/deals/*/index.html') + glob.glob('en/deals/ideas/*/index.html') + glob.glob('destinos/*/index.html') + glob.glob('en/destinations/*/index.html') + glob.glob('herramientas/*/index.html') + glob.glob('en/tools/*/index.html')
 rutas = sorted(glob.glob('vuelos/*/index.html'))
 scope += rutas[::25] + sorted(glob.glob('en/flights/*/index.html'))[::25]  # muestra de rutas
+try:  # ronda 7: las páginas de datos nuevas siempre se revisan
+    scope += [u.strip('/') + '/index.html' for u in json.load(open('vuelos/r7_pages.json', encoding='utf-8'))]
+except Exception:
+    pass
 if '--all' in sys.argv:
     scope += rutas + glob.glob('en/flights/*/index.html')
 HREF = re.compile(r'href="(/[^"]*)"')
@@ -265,6 +269,72 @@ if nrules > 1900:
     errors.append(f'{nrules} reglas en _redirects: Cloudflare Pages solo aplica 2.000 estaticas')
 elif nrules > 1600:
     warns.append(f'{nrules} reglas en _redirects (limite 2.000)')
+
+# ---------- ronda 7: restos de código en el texto (en ronda 5 se publicó "<function ... at 0x...>" como precio en 7 páginas) ----------
+_bad = []
+_BADRX = re.compile(r'&lt;function [\w.]+|<function [\w.<>]+ at 0x|&lt;lambda&gt;|\bNone\s?€|€\s?None\b|\bnan\s?€')
+for _d in ('vuelos', 'chollos', 'destinos', 'en', 'guias'):
+    for _r, _ds, _fs in os.walk(_d):
+        if 'index.html' in _fs:
+            _p = os.path.join(_r, 'index.html')
+            try:
+                if _BADRX.search(open(_p, encoding='utf-8', errors='ignore').read()):
+                    _bad.append(_p)
+            except Exception:
+                pass
+if _bad:
+    errors.append(f'{len(_bad)} página(s) con restos de código en el texto (p. ej. "<function ...>" o "None €"): ' + ', '.join(_bad[:5]))
+
+# ---------- ronda 7 (#251, #304): títulos duplicados entre páginas indexables y URLs de sitemap sin ningún enlace interno ----------
+_titles, _linked = {}, set()
+for _d in ('vuelos', 'destinos', 'chollos', 'en'):
+    for _r, _ds, _fs in os.walk(_d):
+        if 'index.html' not in _fs:
+            continue
+        _p = os.path.join(_r, 'index.html')
+        try:
+            _s = open(_p, encoding='utf-8', errors='ignore').read()
+        except Exception:
+            continue
+        _hd = _s[:8000]
+        if 'content="index' in _hd:
+            _m = TIT.search(_hd)
+            if _m:
+                _titles.setdefault(_m.group(1).strip(), []).append(_p)
+        for _h in HREF.findall(_s):
+            _linked.add(unquote(_h.split('#')[0].split('?')[0]))
+for _p in glob.glob('*.html') + ['index.html', 'en/index.html']:
+    if os.path.isfile(_p):
+        for _h in HREF.findall(open(_p, encoding='utf-8', errors='ignore').read()):
+            _linked.add(unquote(_h.split('#')[0].split('?')[0]))
+_dup = [(t, ps) for t, ps in _titles.items() if len(ps) > 1]
+if _dup:
+    warns.append(f'{len(_dup)} título(s) repetidos en páginas indexables, p. ej. "{_dup[0][0]}" en {", ".join(_dup[0][1][:3])}')
+_orph = []
+for _sm in ('vuelos-sitemap.xml', 'flights-sitemap.xml', 'destinos-sitemap.xml', 'en-sitemap.xml', 'paginas-sitemap.xml'):
+    if os.path.exists(_sm):
+        for _loc in re.findall(r'<loc>\s*https://www\.happylowcost\.com(/[^<\s]*)\s*</loc>', open(_sm, encoding='utf-8', errors='ignore').read()):
+            if _loc not in _linked and _loc != '/':
+                _orph.append(_loc)
+if _orph:
+    warns.append(f'{len(_orph)} URL(s) de los sitemaps sin ningún enlace interno (huérfanas), p. ej. ' + ', '.join(_orph[:5]))
+
+# ---------- ronda 7 (#321): alarma si los sitemaps se vacían (un fallo del feed puede dejar a Google sin rutas) ----------
+SM_MIN = {'vuelos-sitemap.xml': 400, 'flights-sitemap.xml': 400, 'destinos-sitemap.xml': 150, 'en-sitemap.xml': 150, 'paginas-sitemap.xml': 10}
+try:
+    _si = open('sitemap_index.xml', encoding='utf-8').read()
+    _tot = 0
+    for _sm in re.findall(r'<loc>\s*https://www\.happylowcost\.com/([^<\s]+\.xml)\s*</loc>', _si):
+        _n = open(_sm, encoding='utf-8', errors='ignore').read().count('<url>') if os.path.exists(_sm) else -1
+        _tot += max(_n, 0)
+        if _n < 0:
+            errors.append(f'sitemap_index.xml enlaza {_sm}, que no existe')
+        elif _n < SM_MIN.get(_sm, 1):
+            errors.append(f'{_sm} tiene {_n} URL(s) (mínimo esperado {SM_MIN.get(_sm, 1)}): ¿ha fallado el feed?')
+    if _tot < 2000:
+        errors.append(f'los sitemaps suman solo {_tot} URLs (normal: más de 3.000)')
+except Exception as _ex:
+    errors.append(f'no se pudo leer sitemap_index.xml: {_ex}')
 
 print(json.dumps({'paginas': len(set(scope)), 'ficheros': nfiles, 'reglas': nrules, 'errores': len(errors), 'avisos': len(warns)}, ensure_ascii=False))
 for w in warns:

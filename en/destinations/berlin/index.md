@@ -140,6 +140,14 @@ Not always. Germany is still more cash-friendly than many countries, and some sm
 
 For the traveller who wrote this guide, yes: Berlin is big, flat, a bit scruffy and endlessly interesting. 4 days are enough for the essentials. Budget: Shoestring: about 55 to 75 euros, with a hostel dorm, street food, and free sights.
 
+### What to see in Berlin in one day?
+
+If you only have one day, follow day 1 of this itinerary: Brandenburg Gate, Reichstag, Holocaust Memorial, Topography of Terror, then Gendarmenmarkt and an evening around Hackescher Markt.
+
+### What to see in Berlin in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Brandenburg Gate, Reichstag, Holocaust Memorial, Topography of Terror, then Gendarmenmarkt and an evening around Hackescher Markt. Day 2: Museum Island in the morning, Berlin Cathedral, lunch in Mitte, then Bernauer Strasse and Mauerpark (on Sunday) in the afternoon.
+
 ## Flights and deals
 
 - Flight deals to Berlin: https://www.happylowcost.com/en/destinations/berlin/#deals

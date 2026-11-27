@@ -239,6 +239,14 @@ Pedregalejo and El Palo, east of the centre, are nicer and more local than Malag
 
 Espetos (grilled sardines), fried fish, marinated anchovies, ajoblanco and sweet Malaga wine.
 
+### What to see in Malaga in one day?
+
+If you only have one day, follow day 1 of this itinerary: Moorish Malaga and the old town. Morning: Be at the Alcazaba when it opens, then walk or take bus 35 up to Gibralfaro.
+
+### What to see in Malaga in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Moorish Malaga and the old town. Morning: Be at the Alcazaba when it opens, then walk or take bus 35 up to Gibralfaro. Day 2: Market, museums, port and beach. Morning: Coffee at Café Central, then Atarazanas market for a mid-morning snack.
+
 ## Flights and deals
 
 - Flight deals to Malaga: https://www.happylowcost.com/en/destinations/malaga/#deals

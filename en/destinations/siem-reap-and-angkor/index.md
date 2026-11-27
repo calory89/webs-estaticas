@@ -203,6 +203,14 @@ Siem Reap is generally safe. Petty theft (bag snatching from tuk-tuks) is the ma
 
 Wear clothing that covers your shoulders and knees, and bring comfortable shoes with grip for steep stairs. A light long-sleeved shirt also helps against sun and mosquitoes.
 
+### What to see in Siem Reap and Angkor in one day?
+
+If you only have one day, follow day 1 of this itinerary: Sunrise and the small circuit. Morning: buy your pass at the official ticket office (or online), then sunrise at Angkor Wat.
+
+### What to see in Siem Reap and Angkor in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Sunrise and the small circuit. Morning: buy your pass at the official ticket office (or online), then sunrise at Angkor Wat. Day 2: The grand circuit. Morning: leave at 7am for Preah Khan, Neak Pean, Ta Som and East Mebon.
+
 ### Is Siem Reap and Angkor expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about about €30-40 per person per day and the "comfort" level at about €150 and up. Flights are extra: this page shows real fares checked by Happy Low Cost.

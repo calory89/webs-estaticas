@@ -223,6 +223,14 @@ Not really. Street food and markets are very cheap, and you can travel well on �
 
 For the traveller who wrote this guide, yes: Oaxaca is a low-rise colonial city of painted walls and green stone churches. 4 days are enough for the essentials. Budget: Hostel dorm (€12-20), market meals and street food (€10-15), colectivos and shuttles (€3-5), one paid site (€5), a cheap mezcal or two.
 
+### What to see in Oaxaca in one day?
+
+If you only have one day, follow day 1 of this itinerary: The historic centre. Morning: Breakfast at Mercado Benito Juárez with hot chocolate.
+
+### What to see in Oaxaca in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: The historic centre. Morning: Breakfast at Mercado Benito Juárez with hot chocolate. Day 2: Monte Albán and the southern craft villages. Morning: Take the first shuttle up to Monte Albán and be on the Gran Plaza before the crowds.
+
 ## Flights and deals
 
 - Flight deals to Oaxaca: https://www.happylowcost.com/en/destinations/oaxaca/#deals

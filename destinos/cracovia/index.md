@@ -139,6 +139,14 @@ Hoy el chollo más barato que tenemos a Cracovia cuesta 58 € ida y vuelta desd
 
 Para quien escribió esta guía, sí: Cracovia es una de esas ciudades que resultan fáciles. Con 3 días ves lo esencial. Presupuesto: Ajustado: 40-50 € con hostal, bares mleczne y algún museo.
 
+### ¿Qué ver en Cracovia en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Rynek, Santa María, Collegium Maius y Wawel.
+
+### ¿Qué ver en Cracovia en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Rynek, Santa María, Collegium Maius y Wawel. Día 2: Fábrica de Schindler, plaza de los Héroes del Gueto y un buen rato en Kazimierz.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Cracovia: https://www.happylowcost.com/destinos/cracovia/#chollos

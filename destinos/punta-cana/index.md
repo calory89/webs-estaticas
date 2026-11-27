@@ -134,6 +134,14 @@ Con 6 días ves lo esencial de Punta Cana sin prisas. La ruta de esta guía est�
 
 Para quien escribió esta guía, sí: Punta Cana es, sobre todo, mar caribe con palmeras y arena clara, y eso lo cumple de sobra. Con 6 días ves lo esencial. Presupuesto: Como referencia general: un alojamiento sencillo o apartamento ronda los 40-70 € por noche, un hotel medio de 70 a 120 €, y un todo incluido decente sale mucho más según temporada.
 
+### ¿Qué ver en Punta Cana en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Llegada, paseo por la playa de tu zona y cena sencilla.
+
+### ¿Qué ver en Punta Cana en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Llegada, paseo por la playa de tu zona y cena sencilla. Día 2: Bávaro y El Cortecito, con comida en un comedor de playa.
+
 ### ¿Es caro viajar a Punta Cana?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 40-60 € por persona y día, y en el nivel "todo incluido", unos 120-200 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

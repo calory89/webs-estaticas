@@ -125,6 +125,14 @@ Solo si vas a visitar muchas atracciones de pago. Calcula qué entradas quieres 
 
 Para quien escribió esta guía, sí: Nueva York ya la conoces aunque no hayas estado: las series, las películas y los telediarios te la han metido en la cabeza. Con 5 días ves lo esencial. Presupuesto: Ajustado (unos 100-150 euros): hostal o habitación en Queens, comida callejera, metro y actividades gratuitas.
 
+### ¿Qué ver en Nueva York en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Lower Manhattan, ferri de Staten Island, Memorial del 11-S y puente de Brooklyn al atardecer con cena en DUMBO.
+
+### ¿Qué ver en Nueva York en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Lower Manhattan, ferri de Staten Island, Memorial del 11-S y puente de Brooklyn al atardecer con cena en DUMBO. Día 2: Central Park por la mañana, Met por la tarde y paseo por el Upper West Side.
+
 ### ¿Es caro viajar a Nueva York?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos unos 100-150 euros por persona y día, y en el nivel "cómodo", unos más de 350 euros. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

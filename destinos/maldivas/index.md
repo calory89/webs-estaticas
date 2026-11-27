@@ -132,6 +132,10 @@ Con 7 días ves lo esencial de Maldivas sin prisas. La ruta de esta guía está 
 
 Para quien escribió esta guía, sí: Maldivas tiene fama de destino para recién casados con la tarjeta al rojo vivo, y en parte es verdad: un bungaló sobre el agua en un resort privado cuesta lo que cuesta. Con 7 días ves lo esencial. Presupuesto: Las guesthouses de islas locales suelen costar entre 50 y 120 € la noche en doble, según temporada y categoría.
 
+### ¿Qué ver en Maldivas en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Llegada a Velana, noche en Hulhumalé o traslado directo a la isla elegida.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Maldivas: https://www.happylowcost.com/destinos/maldivas/#chollos

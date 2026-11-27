@@ -256,6 +256,14 @@ Tap water in the city is generally considered safe. Many visitors still drink bo
 
 January to March for dry, sunny weather. May or early December for lower prices and fewer crowds, with short afternoon rain.
 
+### What to see in Panama City in one day?
+
+If you only have one day, follow day 1 of this itinerary: Casco Viejo and the waterfront. Morning: start at Plaza de la Independencia, visit the cathedral and then the Museo del Canal Interoceánico while it is still cool.
+
+### What to see in Panama City in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Casco Viejo and the waterfront. Morning: start at Plaza de la Independencia, visit the cathedral and then the Museo del Canal Interoceánico while it is still cool. Day 2: Ancon Hill and the canal. Morning: Uber to Cerro Ancón at 7am, hike to the flag, then come down and do a quick lap of Mi Pueblito.
+
 ## Flights and deals
 
 - Flight deals to Panama City: https://www.happylowcost.com/en/destinations/panama-city/#deals

@@ -120,6 +120,14 @@ Hoy el chollo más barato que tenemos a Lisboa cuesta 46 € ida y vuelta desde 
 
 Para quien escribió esta guía, sí: Lisboa es una de las pocas capitales europeas a la que se puede ir un fin de semana con poco dinero sin sentir que te estás perdiendo algo. Con 3 días ves lo esencial. Presupuesto: Como orientación general, una cama en dormitorio compartido cuesta entre 25 y 40 euros por noche, y una habitación doble sencilla suele moverse entre 80 y 130 euros, según la temporada.
 
+### ¿Qué ver en Lisboa en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Baixa, Praça do Comércio, subida por el Chiado y copa en un miradouro del Bairro Alto.
+
+### ¿Qué ver en Lisboa en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Baixa, Praça do Comércio, subida por el Chiado y copa en un miradouro del Bairro Alto. Día 2: Mañana en Alfama y el castillo. Tarde en la Graça y la Senhora do Monte.
+
 ### ¿Es caro viajar a Lisboa?
 
 Depende de cómo viajes. Según esta guía, en el nivel "muy ajustado" se gastan unos 60-80 euros por persona y día, y en el nivel "más relajado", unos a partir de 180 euros. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

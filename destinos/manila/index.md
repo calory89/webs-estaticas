@@ -227,6 +227,14 @@ Merece la pena 2 o 3 días si te interesa la historia y la comida. Si solo busca
 
 En Makati: está bien conectada, es segura y tiene buena oferta de restaurantes y bares. BGC es más tranquila y cara; Intramuros, mejor para quien va a por lo histórico.
 
+### ¿Qué ver en Manila en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Intramuros y la bahía. Mañana: entra en Intramuros temprano. Fuerte Santiago, Catedral, San Agustín y Casa Manila, en ese orden.
+
+### ¿Qué ver en Manila en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Intramuros y la bahía. Mañana: entra en Intramuros temprano. Fuerte Santiago, Catedral, San Agustín y Casa Manila, en ese orden. Día 2: Quiapo, Binondo y Makati. Mañana: LRT-1 hasta Carriedo, Iglesia de Quiapo y paseo hasta San Sebastián.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Manila: https://www.happylowcost.com/destinos/manila/#chollos

@@ -219,6 +219,14 @@ Sí, sin problema. El metro, el autobús 747 y las bicis BIXI cubren todo lo que
 
 Para quien escribió esta guía, sí: Montreal es la ciudad más europea de Norteamérica, pero no por su piedra antigua, que es poca y está concentrada en un par de calles. Con 3 días ves lo esencial. Presupuesto: Presupuesto por persona y día, sin vuelos: Ajustado: unos 80-110 € (120-165 CAD).
 
+### ¿Qué ver en Montreal en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Montreal Viejo y el río. Mañana: empieza en la Place d'Armes y entra en la basílica de Notre-Dame nada más abrir.
+
+### ¿Qué ver en Montreal en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Montreal Viejo y el río. Mañana: empieza en la Place d'Armes y entra en la basílica de Notre-Dame nada más abrir. Día 2: Mont Royal, Plateau y Mile End. Mañana: sube al Mont Royal desde el centro, para en el mirador Kondiaronk y baja por el lado este hacia el Plateau.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Montreal: https://www.happylowcost.com/destinos/montreal/#chollos

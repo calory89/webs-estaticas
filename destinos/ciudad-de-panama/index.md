@@ -236,6 +236,14 @@ El Casco Viejo si quieres hacerlo todo andando y El Cangrejo si buscas mejor pre
 
 En la capital el agua del grifo es potable y mucha gente local la bebe. Si tienes el estómago delicado, bebe embotellada los primeros días.
 
+### ¿Qué ver en Ciudad de Panamá en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Casco Viejo y Cinta Costera. Mañana: empieza temprano en la Plaza de la Independencia, entra a la catedral y luego al Museo del Canal.
+
+### ¿Qué ver en Ciudad de Panamá en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Casco Viejo y Cinta Costera. Mañana: empieza temprano en la Plaza de la Independencia, entra a la catedral y luego al Museo del Canal. Día 2: Canal y Amador. Mañana: sube al Cerro Ancón a primera hora.
+
 ### ¿Es caro viajar a Ciudad de Panamá?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado: 50-70 €" se gastan unos 55-75 $ por persona y día, y en el nivel "medio: 110-170 €", unos 120-185 $. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

@@ -239,6 +239,10 @@ Rastro por la mañana, vermut en La Latina y tarde en el Retiro. Muchas tiendas 
 
 Para quien escribió esta guía, sí: Madrid no tiene playa ni una postal tan reconocible como la Sagrada Familia, y le da igual. Con 3 días ves lo esencial. Presupuesto: Ajustado: unos 70-90 € al día.
 
+### ¿Qué ver en Madrid en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Madrid de los Austrias y Palacio Real. Mañana: empieza en la Puerta del Sol, baja por la calle Mayor hasta la Plaza Mayor y sigue hasta la Plaza de la Villa. Día 2: Museos y Retiro. Mañana: Museo del Prado a primera hora, cuando hay menos gente.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Madrid: https://www.happylowcost.com/destinos/madrid/#chollos

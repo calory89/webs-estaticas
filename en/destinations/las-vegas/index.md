@@ -160,6 +160,14 @@ The Strip is heavily policed and busy. Use common sense: watch your belongings i
 
 For the traveller who wrote this guide, yes: Las Vegas is absurd, and that is the appeal. 4 days are enough for the essentials.
 
+### What to see in Las Vegas in one day?
+
+If you only have one day, follow day 1 of this itinerary: Settle in, walk the south Strip, see the Bellagio fountains at sunset, then dinner.
+
+### What to see in Las Vegas in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Settle in, walk the south Strip, see the Bellagio fountains at sunset, then dinner. Day 2: Morning at the pool or sleeping in. Afternoon at the Venetian and Sphere area, then a show.
+
 ## Flights and deals
 
 - Flight deals to Las Vegas: https://www.happylowcost.com/en/destinations/las-vegas/#deals

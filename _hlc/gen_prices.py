@@ -681,7 +681,7 @@ def short_pages(by_orig, en_slug):
                 on = oe if en else o
                 dname = (lambda r: E.NAMES.get(r['dest_slug'], r['dest'])) if en else (lambda r: r['dest'])
                 link = (lambda r: f'/en/flights/{en_slug(r)}/') if en else (lambda r: f'/vuelos/{r["slug"]}/')
-                money = (lambda v: (f'£{int(round(v * gbp))} (€{v})' if gb else f'€{v}') if en else (lambda v: f'{v} €'))
+                money = (lambda v: (f'£{int(round(v * gbp))} (€{v})' if gb else f'€{v}')) if en else (lambda v: f'{v} €')  # ronda 7: arreglado, en ES devolvía la función en vez del precio
                 if kind == 'esc':
                     path_es, path_en = f'vuelos/escapadas/desde-{os_es}', f'en/flights/weekend-breaks/from-{os_en}'
                     title = T(f'Escapadas de fin de semana desde {on}: {len(sel)} destinos desde {sel[0]["price_from"]} €',

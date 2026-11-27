@@ -250,6 +250,14 @@ Abando/Ensanche for most visitors, Casco Viejo if you want to be among the bars,
 
 Take the Bizkaibus A3247 to the centre (about €3, 20-30 minutes), or a taxi (about €25-35).
 
+### What to see in Bilbao in one day?
+
+If you only have one day, follow day 1 of this itinerary: Old town and the river. Morning: start at Mercado de la Ribera, then wander the Casco Viejo, Santiago Cathedral and the Basque Museum.
+
+### What to see in Bilbao in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Old town and the river. Morning: start at Mercado de la Ribera, then wander the Casco Viejo, Santiago Cathedral and the Basque Museum. Day 2: Guggenheim and modern Bilbao. Morning: the Guggenheim first thing, plus Puppy and Maman.
+
 ## Flights and deals
 
 - Flight deals to Bilbao: https://www.happylowcost.com/en/destinations/bilbao/#deals

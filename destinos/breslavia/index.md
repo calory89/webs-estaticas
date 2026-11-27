@@ -226,6 +226,14 @@ En hoteles, restaurantes del centro y entre la gente joven, sí. En los bares de
 
 Para quien escribió esta guía, sí: Breslavia (Wrocław en polaco) es la ciudad polaca que más sorprende a quien llega sin expectativas. Con 3 días ves lo esencial. Presupuesto: Presupuesto orientativo por persona y día, sin vuelo: Ajustado: unos 45-60 € al día.
 
+### ¿Qué ver en Breslavia en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Casco antiguo y río. Mañana: empieza en el Rynek temprano, rodea el Ayuntamiento y sube a la torre de Santa Isabel.
+
+### ¿Qué ver en Breslavia en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Casco antiguo y río. Mañana: empieza en el Rynek temprano, rodea el Ayuntamiento y sube a la torre de Santa Isabel. Día 2: Panorama, Hala Stulecia y Nadodrze. Mañana: Panorama de Racławice a primera hora y Museo Nacional al lado, si te apetece arte (la colección de arte medieval silesio es buena).
+
 ### ¿Es caro viajar a Breslavia?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos unos 45-60 € por persona y día, y en el nivel "medio", unos unos 90-130 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

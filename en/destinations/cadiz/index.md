@@ -235,6 +235,10 @@ It takes place in February, with dates changing each year in line with Lent. It'
 
 No. The city is walkable, and the train, buses and catamarans cover the main day trips. A car only helps for remote beaches like Bolonia.
 
+### What to see in Cadiz in one day?
+
+If you only have one day, follow day 1 of this itinerary: Old town, cathedral and La Caleta. Morning: Start at the Mercado Central for breakfast or an early tapa.
+
 ## Flights and deals
 
 - Flight deals to Cadiz: https://www.happylowcost.com/en/destinations/cadiz/#deals

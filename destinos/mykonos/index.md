@@ -113,6 +113,14 @@ Con 3 días ves lo esencial de Mykonos sin prisas. La ruta de esta guía está o
 
 Para quien escribió esta guía, sí: Mykonos tiene fama de isla cara y de fiesta, y las dos cosas son ciertas. Con 3 días ves lo esencial. Presupuesto: Como referencia, una habitación doble sencilla puede ir desde unos 60-90 euros en temporada baja hasta 150-250 en agosto.
 
+### ¿Qué ver en Mykonos en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Chora de punta a punta. Mañana temprano por callejuelas, Paraportiani y molinos; comida en el puerto viejo; atardecer en Little Venice y cena en el centro.
+
+### ¿Qué ver en Mykonos en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Chora de punta a punta. Mañana temprano por callejuelas, Paraportiani y molinos; comida en el puerto viejo; atardecer en Little Venice y cena en el centro. Día 2: Delos. Sal en el primer barco que puedas desde el Puerto Viejo, porque a mediodía el calor es duro.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Mykonos: https://www.happylowcost.com/destinos/mykonos/#chollos

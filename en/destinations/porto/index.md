@@ -145,6 +145,14 @@ May, June and September give you pleasant weather and fewer crowds than July and
 
 For the traveller who wrote this guide, yes: Porto is a city of granite, tiles and hills, and it rewards people who walk. 3 days are enough for the essentials. Budget: Budget: about 50 to 70 euros, with a hostel, market lunches and free sights.
 
+### What to see in Porto in one day?
+
+If you only have one day, follow day 1 of this itinerary: São Bento station, the cathedral, down to Ribeira, across the bridge to Gaia for a cellar visit, and sunset at the Jardim do Morro.
+
+### What to see in Porto in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: São Bento station, the cathedral, down to Ribeira, across the bridge to Gaia for a cellar visit, and sunset at the Jardim do Morro. Day 2: Bolhão market in the morning, Clérigos, Livraria Lello and the Baixa, then the Palácio da Bolsa.
+
 ## Flights and deals
 
 - Flight deals to Porto: https://www.happylowcost.com/en/destinations/porto/#deals

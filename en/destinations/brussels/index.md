@@ -139,6 +139,14 @@ Yes. Direct trains take about an hour, and it is better on a weekday morning, wh
 
 Today the cheapest deal we have to Brussels is €65 return from Valencia. Fares change by the hour: check the live price on the deal page.
 
+### What to see in Brussels in one day?
+
+If you only have one day, follow day 1 of this itinerary: Grand-Place at opening hours, the Galleries, Manneken Pis, lunch of frites, then Sablon and the Marolles, finishing with beers around Saint-Géry.
+
+### What to see in Brussels in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Grand-Place at opening hours, the Galleries, Manneken Pis, lunch of frites, then Sablon and the Marolles, finishing with beers around Saint-Géry. Day 2: Magritte Museum and Fine Arts in the morning, the Comic Strip Center after lunch, then walk through Dansaert and the canal area.
+
 ## Flights and deals
 
 - Flight deals to Brussels: https://www.happylowcost.com/en/destinations/brussels/#deals

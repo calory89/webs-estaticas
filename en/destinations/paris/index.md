@@ -118,6 +118,14 @@ No, but start with "Bonjour" before asking for anything. It changes the tone of 
 
 Today the cheapest deal we have to Paris is €39 return from Valencia. Fares change by the hour: check the live price on the deal page.
 
+### What to see in Paris in one day?
+
+If you only have one day, follow day 1 of this itinerary: Île de la Cité (Sainte-Chapelle early, then Notre-Dame), lunch in the Latin Quarter, afternoon at the Luxembourg Gardens, evening along the Seine.
+
+### What to see in Paris in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Île de la Cité (Sainte-Chapelle early, then Notre-Dame), lunch in the Latin Quarter, afternoon at the Luxembourg Gardens, evening along the Seine. Day 2: Louvre in the morning, a walk through the Tuileries, then Orsay in the afternoon or the Eiffel Tower at sunset.
+
 ## Flights and deals
 
 - Flight deals to Paris: https://www.happylowcost.com/en/destinations/paris/#deals

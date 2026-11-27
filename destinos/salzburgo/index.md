@@ -135,6 +135,10 @@ Es muy bonita, pero está saturada. Si tienes poco tiempo, mejor una zona más t
 
 Sí, si te centras en fortaleza, casco viejo y Mirabell. Sales con una buena idea, pero con prisa y sin tiempo para sentarte en un café.
 
+### ¿Qué ver en Salzburgo en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Casco viejo. Catedral, Residenzplatz, San Pedro, subida a la fortaleza y paseo por Getreidegasse al final del día. Día 2: Mirabell por la mañana, cruzas el río hacia la orilla derecha, comes por Linzer Gasse y subes al Mönchsberg o al Kapuzinerberg al atardecer.
+
 ### ¿Es caro viajar a Salzburgo?
 
 Depende de cómo viajes. Según esta guía, en el nivel "económico" se gastan unos 70-95 € por persona y día, y en el nivel "cómodo", unos 250 € o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

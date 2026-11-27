@@ -229,6 +229,10 @@ Barely. Cards and phone payments work almost everywhere, including trams, but ke
 
 You can see the Rynek, the university and Cathedral Island in one long day. You will miss Centennial Hall and the neighbourhoods, which are half the fun.
 
+### What to see in Wroclaw in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Old Town and Cathedral Island. Morning: start at the Rynek before 9am, then Salt Square and the Jaś and Małgosia houses. Day 2: Panorama, Centennial Hall and the east. Morning: book the first slot at the Racławice Panorama, then use the same ticket for the National Museum next door if you like art.
+
 ## Flights and deals
 
 - Flight deals to Wroclaw: https://www.happylowcost.com/en/destinations/wroclaw/#deals

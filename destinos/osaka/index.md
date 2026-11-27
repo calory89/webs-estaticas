@@ -236,6 +236,14 @@ En el Nankai Airport Express, en unos 45 minutos por unos 6 €. El Rapi:t es m�
 
 Sí, lleva algo. La tarjeta funciona en casi todas partes, pero muchos puestos, bares pequeños y templos solo aceptan yenes.
 
+### ¿Qué ver en Osaka en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: El sur, Namba y Dotonbori. Mañana: Kuromon a primera hora para desayunar fruta y algo de marisco.
+
+### ¿Qué ver en Osaka en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: El sur, Namba y Dotonbori. Mañana: Kuromon a primera hora para desayunar fruta y algo de marisco. Día 2: El castillo y el norte. Mañana: castillo de Osaka y su parque a primera hora, antes de que lleguen los grupos.
+
 ### ¿Es caro viajar a Osaka?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 50-80 €/día por persona y día, y en el nivel "presupuesto medio", unos 120-180 €/día. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

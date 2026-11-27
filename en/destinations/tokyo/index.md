@@ -121,6 +121,14 @@ No. For Tokyo, a Suica or Pasmo card is all you need. A rail pass only makes sen
 
 5 days are enough to see the essentials of Tokyo without rushing. The route in this guide is organised day by day.
 
+### What to see in Tokyo in one day?
+
+If you only have one day, follow day 1 of this itinerary: East side. Asakusa early, Ueno Park and the museums, Yanaka in the late afternoon, dinner in Ueno.
+
+### What to see in Tokyo in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: East side. Asakusa early, Ueno Park and the museums, Yanaka in the late afternoon, dinner in Ueno. Day 2: Shibuya and Harajuku. Meiji Jingu in the morning, Takeshita Street if you must, lunch near Omotesando, Shibuya Sky at sunset.
+
 ## Flights and deals
 
 - Flight deals to Tokyo: https://www.happylowcost.com/en/destinations/tokyo/#deals

@@ -1,4 +1,4 @@
-# Qué ver en Buenos Aires en 4 días: guía práctica y barata
+# Qué hacer en Buenos Aires en 4 días: qué ver y cuánto cuesta
 
 > Guía de viaje de Buenos Aires de Happy Low Cost, itinerario de 4 días. Página original: https://www.happylowcost.com/destinos/buenos-aires/
 > Actualizada: 2026-10-21
@@ -121,6 +121,14 @@ El de tipo I, con dos clavijas planas en V, y a veces el de tipo C. Lleva un ada
 ### ¿Merece la pena visitar Buenos Aires?
 
 Para quien escribió esta guía, sí: Buenos Aires se parece a Madrid, a Roma y a París sin ser ninguna de las tres. Con 4 días ves lo esencial. Presupuesto: Como idea general, una cama en dormitorio compartido suele moverse entre 12 y 25 euros.
+
+### ¿Qué ver en Buenos Aires en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Plaza de Mayo, Avenida de Mayo (Tortoni y Barolo), Obelisco y Corrientes por la noche.
+
+### ¿Qué ver en Buenos Aires en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Plaza de Mayo, Avenida de Mayo (Tortoni y Barolo), Obelisco y Corrientes por la noche. Día 2: San Telmo por la mañana, comida allí, tarde en Puerto Madero y Costanera Sur.
 
 ## Vuelos y chollos
 

@@ -232,6 +232,14 @@ De octubre a diciembre, por el clima seco y templado. El verano es más barato, 
 
 Para quien escribió esta guía, sí: Hong Kong es una ciudad vertical, húmeda y ruidosa donde los rascacielos se apilan contra montañas cubiertas de selva. Con 4 días ves lo esencial. Presupuesto: Presupuesto ajustado: 70-100 € al día.
 
+### ¿Qué ver en Hong Kong en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Isla de Hong Kong. Mañana: desayuno de dim sum en Central, tranvía hacia Sheung Wan, Man Mo y Hollywood Road.
+
+### ¿Qué ver en Hong Kong en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Isla de Hong Kong. Mañana: desayuno de dim sum en Central, tranvía hacia Sheung Wan, Man Mo y Hollywood Road. Día 2: Kowloon. Mañana: Wong Tai Sin y Chi Lin Nunnery. Tarde: Sham Shui Po para comer barato y después los mercados de Mong Kok.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Hong Kong: https://www.happylowcost.com/destinos/hong-kong/#chollos

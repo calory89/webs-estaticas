@@ -133,6 +133,14 @@ Oia is the famous spot but it's very crowded. Imerovigli and Pyrgos are quieter,
 
 They're volcanic, not tropical. Perissa, Perivolos and Kamari are black sand and easy to reach. Red Beach is striking but sometimes closed because of rockfall.
 
+### What to see in Santorini in one day?
+
+If you only have one day, follow day 1 of this itinerary: Fira in the morning, Imerovigli in the afternoon, sunset from the Skaros path.
+
+### What to see in Santorini in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Fira in the morning, Imerovigli in the afternoon, sunset from the Skaros path. Day 2: Akrotiri early, then Red Beach or Perissa, and an evening in Pyrgos or Megalochori with wine.
+
 ## Flights and deals
 
 - Flight deals to Santorini: https://www.happylowcost.com/en/destinations/santorini/#deals

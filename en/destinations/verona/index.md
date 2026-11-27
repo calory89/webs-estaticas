@@ -231,6 +231,10 @@ The historic centre is best for a short visit. Veronetta and San Zeno give bette
 
 Roughly June to early September at the Arena. Book ahead for popular nights, and bring a cushion if you buy the stone seats.
 
+### What to see in Verona in one day?
+
+If you only have one day, follow day 1 of this itinerary: Roman and medieval centre. Morning: Be at the Arena when it opens, then walk up Via Mazzini to Piazza delle Erbe.
+
 ### Is Verona expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €60-90 per person per day and the "mid-range" level at about €150-250. Flights are extra: this page shows real fares checked by Happy Low Cost.

@@ -218,6 +218,14 @@ Bondi has the famous walk and the scene. Manly has the ferry ride and a more rel
 
 The Airport Link train takes 15-20 minutes to Central for about A$20 (€12). A taxi or Uber costs A$45-70.
 
+### What to see in Sydney in one day?
+
+If you only have one day, follow day 1 of this itinerary: Harbour and city. Morning: Start at Mrs Macquarie's Chair early, walk through the Botanic Garden to the Opera House and take the tour.
+
+### What to see in Sydney in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Harbour and city. Morning: Start at Mrs Macquarie's Chair early, walk through the Botanic Garden to the Opera House and take the tour. Day 2: Beaches. Morning: Bus to Bondi, a swim and coffee, then the coastal walk to Coogee.
+
 ## Flights and deals
 
 - Flight deals to Sydney: https://www.happylowcost.com/en/destinations/sydney/#deals

@@ -121,6 +121,14 @@ Excellent. Lucerne, the Rhine Falls, Winterthur and several mountain excursions 
 
 3 days are enough to see the essentials of Zurich without rushing. The route in this guide is organised day by day.
 
+### What to see in Zurich in one day?
+
+If you only have one day, follow day 1 of this itinerary: Lindenhof, the old town, Grossmünster, Fraumünster and St.
+
+### What to see in Zurich in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Lindenhof, the old town, Grossmünster, Fraumünster and St. Day 2: Kunsthaus in the morning, then Zurich West for lunch and a wander.
+
 ## Flights and deals
 
 - Flight deals to Zurich: https://www.happylowcost.com/en/destinations/zurich/#deals

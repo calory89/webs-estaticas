@@ -230,6 +230,14 @@ Si solo quieres playa y resort, Punta Cana. Si te interesa la historia y la vida
 
 La Zona Colonial para una primera visita, porque lo tienes todo a pie. Gazcue si buscas algo más barato y tranquilo a diez minutos andando.
 
+### ¿Qué ver en Santo Domingo en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Zona Colonial a fondo. Mañana: Catedral Primada nada más abrir, Parque Colón y Calle de las Damas con la Fortaleza Ozama y el Panteón Nacional.
+
+### ¿Qué ver en Santo Domingo en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Zona Colonial a fondo. Mañana: Catedral Primada nada más abrir, Parque Colón y Calle de las Damas con la Fortaleza Ozama y el Panteón Nacional. Día 2: Los Tres Ojos y Malecón. Mañana: Uber a Los Tres Ojos a primera hora y, justo al lado, el Faro a Colón.
+
 ### ¿Es caro viajar a Santo Domingo?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 40-55 € por persona y día, y en el nivel "medio", unos 90-140 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

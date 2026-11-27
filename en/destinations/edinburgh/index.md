@@ -153,6 +153,14 @@ St Andrews is the favourite for a coast and old-town feel. Stirling is a good pi
 
 For the traveller who wrote this guide, yes: Edinburgh is built on volcanic rock, and it shows. 3 days are enough for the essentials.
 
+### What to see in Edinburgh in one day?
+
+If you only have one day, follow day 1 of this itinerary: Castle at opening, then walk the Royal Mile down to Holyrood.
+
+### What to see in Edinburgh in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Castle at opening, then walk the Royal Mile down to Holyrood. Day 2: Climb Arthur's Seat in the morning, then spend the afternoon at the National Museum and Greyfriars.
+
 ## Flights and deals
 
 - Flight deals to Edinburgh: https://www.happylowcost.com/en/destinations/edinburgh/#deals

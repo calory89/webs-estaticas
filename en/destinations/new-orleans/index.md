@@ -245,6 +245,14 @@ Worth a quick look to say you've seen it, not worth a whole night. Frenchmen Str
 
 Po'boys, gumbo, jambalaya, muffulettas, beignets, red beans and rice and crawfish. Order a shrimp po'boy and a bowl of gumbo on day one and you're off to a good start.
 
+### What to see in New Orleans in one day?
+
+If you only have one day, follow day 1 of this itinerary: The French Quarter and the Marigny. Morning: beignets early at Café du Monde before the queue, then Jackson Square, St.
+
+### What to see in New Orleans in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: The French Quarter and the Marigny. Morning: beignets early at Café du Monde before the queue, then Jackson Square, St. Day 2: The WWII Museum and uptown. Morning: the National WWII Museum when it opens.
+
 ## Flights and deals
 
 - Flight deals to New Orleans: https://www.happylowcost.com/en/destinations/new-orleans/#deals

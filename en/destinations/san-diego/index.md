@@ -237,6 +237,14 @@ September and October have the warmest sea, the clearest skies and fewer crowds.
 
 The California burrito, Baja fish tacos and craft beer. Eat at local taco shops rather than tourist-strip restaurants.
 
+### What to see in San Diego in one day?
+
+If you only have one day, follow day 1 of this itinerary: Balboa Park and downtown. Morning: Get to the San Diego Zoo when it opens and stay until lunch.
+
+### What to see in San Diego in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Balboa Park and downtown. Morning: Get to the San Diego Zoo when it opens and stay until lunch. Day 2: La Jolla and the beaches. Morning: Go to La Jolla Cove early for the sea lions, then kayak the caves or walk to La Jolla Shores.
+
 ## Flights and deals
 
 - Flight deals to San Diego: https://www.happylowcost.com/en/destinations/san-diego/#deals

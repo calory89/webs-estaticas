@@ -123,6 +123,14 @@ Casi siempre. Muchos establecimientos prefieren tarjeta de débito y algunos no 
 
 Para quien escribió esta guía, sí: Ámsterdam es pequeña, plana y se recorre a pie casi entera. Con 3 días ves lo esencial. Presupuesto: Ajustado: 70-100 €, con albergue, comida de mercado y un museo.
 
+### ¿Qué ver en Ámsterdam en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Llegada, paseo por el centro, Dam, Begijnhof y canales.
+
+### ¿Qué ver en Ámsterdam en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Llegada, paseo por el centro, Dam, Begijnhof y canales. Día 2: Rijksmuseum por la mañana, Museo Van Gogh después, Vondelpark para descansar y cena en De Pijp.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Ámsterdam: https://www.happylowcost.com/destinos/amsterdam/#chollos

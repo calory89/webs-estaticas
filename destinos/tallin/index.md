@@ -1,4 +1,4 @@
-# Qué ver en Tallin en 3 días: guía de un viajero low cost
+# Qué ver en Tallin en 3 días: Estonia low cost con precios
 
 > Guía de viaje de Tallin de Happy Low Cost, itinerario de 3 días. Página original: https://www.happylowcost.com/destinos/tallin/
 > Actualizada: 2026-10-21
@@ -118,6 +118,14 @@ Sí, casi en todas partes, incluso para importes pequeños y en el transporte. C
 ### ¿Merece la pena una excursión a Helsinki?
 
 Si tienes cuatro días o más, sí. El ferry dura unas dos horas y es fácil, pero vas a pasar medio día en el barco; con solo dos o tres días, mejor quédate en Tallin.
+
+### ¿Qué ver en Tallin en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Ciudad Vieja. Empieza en Toompea con Kohtuotsa y la catedral Nevski, baja a la plaza del Ayuntamiento, pasa por Katariina käik, y sigue por las murallas hasta la puerta Viru.
+
+### ¿Qué ver en Tallin en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Ciudad Vieja. Empieza en Toompea con Kohtuotsa y la catedral Nevski, baja a la plaza del Ayuntamiento, pasa por Katariina käik, y sigue por las murallas hasta la puerta Viru. Día 2: Kalamaja y la costa. Telliskivi por la mañana, comida en F-Hoone o en el mercado de Balti Jaama Turg, y por la tarde Noblessner y Lennusadam.
 
 ### ¿Es caro viajar a Tallin?
 

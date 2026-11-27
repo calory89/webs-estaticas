@@ -127,6 +127,14 @@ Con 5 días ves lo esencial de Tenerife sin prisas. La ruta de esta guía está 
 
 Para quien escribió esta guía, sí: Tenerife son varias islas en una. En una mañana puedes estar en un bosque de laurisilva envuelto en niebla y, tres horas después, tomando el sol en una playa del sur sin una nube. Con 5 días ves lo esencial. Presupuesto: Como referencia, una habitación sencilla ronda los 40-60 € por noche en temporada baja, un hotel de tres estrellas entre 80 y 130 €, y un apartamento para dos personas queda en un punto intermedio.
 
+### ¿Qué ver en Tenerife en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Santa Cruz y La Laguna. Mercado, paseo por el centro, cena en La Laguna.
+
+### ¿Qué ver en Tenerife en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Santa Cruz y La Laguna. Mercado, paseo por el centro, cena en La Laguna. Día 2: Anaga. Cruz del Carmen, un sendero corto, Taganana y comida en Benijo.
+
 ### ¿Es caro viajar a Tenerife?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 60-80 € por persona y día, y en el nivel "cómodo", unos 200 € o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

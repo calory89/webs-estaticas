@@ -135,6 +135,14 @@ No. The centre is compact, public transport is good, and trains cover the main d
 
 3 days are enough to see the essentials of Riga without rushing. The route in this guide is organised day by day.
 
+### What to see in Riga in one day?
+
+If you only have one day, follow day 1 of this itinerary: Old Town in the morning, the Cathedral, St.
+
+### What to see in Riga in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Old Town in the morning, the Cathedral, St. Day 2: Art Nouveau streets in the morning, the Central Market for lunch, then the Latvian National Museum of Art or the Academy of Sciences tower at sunset.
+
 ## Flights and deals
 
 - Flight deals to Riga: https://www.happylowcost.com/en/destinations/riga/#deals

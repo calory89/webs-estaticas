@@ -115,6 +115,14 @@ It is, if you accept some rain. The weather is mild, the sights are quiet, hotel
 
 For the traveller who wrote this guide, yes: Palermo is loud, a bit chaotic and layered with history. 3 days are enough for the essentials. Budget: Budget: around 50 to 70 euros, with a hostel, street food and a few paid sights.
 
+### What to see in Palermo in one day?
+
+If you only have one day, follow day 1 of this itinerary: Palazzo dei Normanni and Cappella Palatina in the morning, then the cathedral, Quattro Canti, La Martorana and San Cataldo.
+
+### What to see in Palermo in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Palazzo dei Normanni and Cappella Palatina in the morning, then the cathedral, Quattro Canti, La Martorana and San Cataldo. Day 2: Monreale in the morning, back to town for the Capo market, Teatro Massimo and the Oratorio del Rosario.
+
 ## Flights and deals
 
 - Flight deals to Palermo: https://www.happylowcost.com/en/destinations/palermo/#deals

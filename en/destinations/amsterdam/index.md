@@ -134,6 +134,14 @@ Generally January to March and November, excluding holidays. Midweek flights are
 
 3 days are enough to see the essentials of Amsterdam without rushing. The route in this guide is organised day by day.
 
+### What to see in Amsterdam in one day?
+
+If you only have one day, follow day 1 of this itinerary: The old centre. Early canal walk, Begijnhof, the Nine Streets, lunch near Spui, then a canal cruise or the Rembrandthuis.
+
+### What to see in Amsterdam in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: The old centre. Early canal walk, Begijnhof, the Nine Streets, lunch near Spui, then a canal cruise or the Rembrandthuis. Day 2: Museums and parks. Rijksmuseum at opening, a walk through Vondelpark, Van Gogh Museum in the afternoon.
+
 ## Flights and deals
 
 - Flight deals to Amsterdam: https://www.happylowcost.com/en/destinations/amsterdam/#deals

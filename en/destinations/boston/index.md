@@ -237,6 +237,14 @@ May-June and September-October for the weather, with mid-October best for foliag
 
 It is possible by train (about 4 hours each way) but rushed. Stay at least one night, ideally two or three.
 
+### What to see in Boston in one day?
+
+If you only have one day, follow day 1 of this itinerary: Freedom Trail, North End and Charlestown. Morning: Start at Boston Common, walk the Public Garden, then loop up through Beacon Hill and Acorn Street.
+
+### What to see in Boston in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Freedom Trail, North End and Charlestown. Morning: Start at Boston Common, walk the Public Garden, then loop up through Beacon Hill and Acorn Street. Day 2: Back Bay, museums and Fenway. Morning: Copley Square, the Public Library and Trinity Church, then a walk down Newbury Street and Commonwealth Avenue's tree-lined mall.
+
 ## Flights and deals
 
 - Flight deals to Boston: https://www.happylowcost.com/en/destinations/boston/#deals

@@ -238,6 +238,14 @@ Se celebra durante cuatro noches alrededor del 8 de diciembre. Reserva alojamien
 
 Sí, en unas dos horas de tren o de bus. Es la excursión más popular y compensa si sales temprano.
 
+### ¿Qué ver en Lyon en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Fourvière y Vieux Lyon. Mañana: sube en funicular desde la estación Vieux Lyon hasta Fourvière.
+
+### ¿Qué ver en Lyon en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Fourvière y Vieux Lyon. Mañana: sube en funicular desde la estación Vieux Lyon hasta Fourvière. Día 2: Presqu'île y Croix-Rousse. Mañana: mercado del Quai Saint-Antoine, place Bellecour y paseo hacia el norte hasta la place des Terreaux.
+
 ### ¿Es caro viajar a Lyon?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 70-90 € por persona y día, y en el nivel "presupuesto medio", unos unos 130-180 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

@@ -122,6 +122,14 @@ El ferry ida y vuelta ronda entre 15 y 25 euros según el operador. Añade el al
 
 Con 4 días ves lo esencial de Cancún sin prisas. La ruta de esta guía está organizada día a día.
 
+### ¿Qué ver en Cancún en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Llegada, paseo por el centro, cena en el Parque de las Palapas.
+
+### ¿Qué ver en Cancún en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Llegada, paseo por el centro, cena en el Parque de las Palapas. Día 2: Playa Delfines por la mañana, El Rey, y atardecer en la laguna.
+
 ### ¿Es caro viajar a Cancún?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 35-50 euros por persona y día, y en el nivel "cómodo", unos 200 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

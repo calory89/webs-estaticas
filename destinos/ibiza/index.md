@@ -226,6 +226,14 @@ En mayo, octubre y fuera de temporada. En invierno es muy barato, pero gran part
 
 Sí. Las playas de Ses Illetes son de las mejores del Mediterráneo y el trayecto en ferry es corto. Sal temprano y alquila bici o moto en el puerto.
 
+### ¿Qué ver en Ibiza en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Eivissa y Dalt Vila. Mañana: Necrópolis del Puig des Molins y paseo por el barrio de La Marina.
+
+### ¿Qué ver en Ibiza en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Eivissa y Dalt Vila. Mañana: Necrópolis del Puig des Molins y paseo por el barrio de La Marina. Día 2: Ses Salines y el sur. Mañana: bus hasta Ses Salines y playa temprano.
+
 ### ¿Es caro viajar a Ibiza?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos unos 100-130 € por persona y día, y en el nivel "medio", unos unos 180-250 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

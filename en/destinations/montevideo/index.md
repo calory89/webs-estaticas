@@ -238,6 +238,14 @@ The ferry is the classic route: Buquebus runs direct ferries in about 2-3 hours,
 
 Tap water is generally considered safe, though many locals prefer bottled for the taste. Follow local advice if there are notices about supply quality.
 
+### What to see in Montevideo in one day?
+
+If you only have one day, follow day 1 of this itinerary: Ciudad Vieja and Centro. Morning: start at Plaza Independencia, look up at the Palacio Salvo, walk through the Puerta de la Ciudadela and down Peatonal Sarandí.
+
+### What to see in Montevideo in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Ciudad Vieja and Centro. Morning: start at Plaza Independencia, look up at the Palacio Salvo, walk through the Puerta de la Ciudadela and down Peatonal Sarandí. Day 2: The Rambla and the southern neighbourhoods. Morning: bus to the Palacio Legislativo for a tour, then on to the Estadio Centenario and its museum if you like football.
+
 ### Is Montevideo expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €50-70 per person per day and the "mid-range" level at about €110-170. Flights are extra: this page shows real fares checked by Happy Low Cost.

@@ -154,6 +154,14 @@ Yes, easily. It's roughly 90 minutes by road or intercity bus. The Sheikh Zayed 
 
 For the traveller who wrote this guide, yes: Dubai is a city built at absurd speed, and that is both the appeal and the catch. 4 days are enough for the essentials.
 
+### What to see in Dubai in one day?
+
+If you only have one day, follow day 1 of this itinerary: Old Dubai. Al Fahidi in the morning, the abra across the Creek, the souks, then dinner in Deira or Bur Dubai.
+
+### What to see in Dubai in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Old Dubai. Al Fahidi in the morning, the abra across the Creek, the souks, then dinner in Deira or Bur Dubai. Day 2: Downtown. Museum of the Future or the Frame in the morning, the Dubai Mall at midday, Burj Khalifa at sunset, the fountain after dark.
+
 ## Flights and deals
 
 - Flight deals to Dubai: https://www.happylowcost.com/en/destinations/dubai/#deals

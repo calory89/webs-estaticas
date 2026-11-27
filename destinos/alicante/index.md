@@ -194,6 +194,14 @@ De noviembre a marzo, sin contar Navidad y Semana Santa. Hay vuelos y hoteles mu
 
 Sí, si vas en el primer barco o fuera de julio y agosto. En pleno verano a mediodía se llena y pierde gracia.
 
+### ¿Qué ver en Alicante en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Castillo, Santa Cruz y casco antiguo. Mañana: sube en el ascensor al castillo de Santa Bárbara a primera hora.
+
+### ¿Qué ver en Alicante en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Castillo, Santa Cruz y casco antiguo. Mañana: sube en el ascensor al castillo de Santa Bárbara a primera hora. Día 2: Mercado, museos y atardecer. Mañana: Mercado Central y compra de salazones.
+
 ### ¿Es caro viajar a Alicante?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 60 a 80 € por persona y día, y en el nivel "presupuesto medio", unos unos 120 a 170 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

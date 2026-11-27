@@ -233,6 +233,14 @@ Sí, sobre todo por el trayecto en barco y las vistas de la ciudad desde el mar.
 
 Mayo, junio y septiembre: buen tiempo, mar templado, menos gente y precios más bajos que en julio y agosto.
 
+### ¿Qué ver en Marsella en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: El puerto, Le Panier y el MuCEM. Mañana: empieza temprano en el Vieux-Port con el mercado de pescado, cruza en el Ferry Boat y sube a Le Panier por la Montée des Accoules.
+
+### ¿Qué ver en Marsella en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: El puerto, Le Panier y el MuCEM. Mañana: empieza temprano en el Vieux-Port con el mercado de pescado, cruza en el Ferry Boat y sube a Le Panier por la Montée des Accoules. Día 2: Notre-Dame, la Corniche y el atardecer. Mañana: pasa por Saint-Victor y Le Four des Navettes y sube a Notre-Dame de la Garde a pie (o en el bus 60).
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Marsella: https://www.happylowcost.com/destinos/marsella/#chollos

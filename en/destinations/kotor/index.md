@@ -225,6 +225,14 @@ Take a taxi for about €15-20 (15-20 minutes) or a local bus from the main road
 
 It works, but you will hit the crowds at their worst and lose hours at the border. Stay at least one night to see the town early and late.
 
+### What to see in Kotor in one day?
+
+If you only have one day, follow day 1 of this itinerary: Old town and fortress. Morning: start the wall climb as soon as it opens, with water and a snack from the market.
+
+### What to see in Kotor in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Old town and fortress. Morning: start the wall climb as soon as it opens, with water and a snack from the market. Day 2: Perast and the bay. Morning: take the bus to Perast (about 25 minutes).
+
 ## Flights and deals
 
 - Flight deals to Kotor: https://www.happylowcost.com/en/destinations/kotor/#deals

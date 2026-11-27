@@ -121,6 +121,14 @@ Not for the city. Buses, boats and your feet are enough. Rent one only if you pl
 
 Today the cheapest deal we have to Dubrovnik is €62 return from Barcelona. Fares change by the hour: check the live price on the deal page.
 
+### What to see in Dubrovnik in one day?
+
+If you only have one day, follow day 1 of this itinerary: Walls at opening time, then Stradun, the fountain and the Franciscan Monastery.
+
+### What to see in Dubrovnik in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Walls at opening time, then Stradun, the fountain and the Franciscan Monastery. Day 2: Morning ferry to Lokrum or the Elaphiti Islands.
+
 ## Flights and deals
 
 - Flight deals to Dubrovnik: https://www.happylowcost.com/en/destinations/dubrovnik/#deals

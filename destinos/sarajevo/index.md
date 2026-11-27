@@ -231,6 +231,14 @@ En la calle, no. Para entrar en mezquitas hay que llevar hombros y rodillas cubi
 
 Sí, es una de las visitas más reveladoras de la ciudad. El tramo visitable es corto, pero el museo explica muy bien cómo sobrevivió Sarajevo al asedio.
 
+### ¿Qué ver en Sarajevo en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: El bazar y la ciudad austrohúngara. Mañana: Baščaršija temprano, Sebilj, mezquita de Gazi Husrev-beg y la calle Kazandžiluk.
+
+### ¿Qué ver en Sarajevo en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: El bazar y la ciudad austrohúngara. Mañana: Baščaršija temprano, Sebilj, mezquita de Gazi Husrev-beg y la calle Kazandžiluk. Día 2: La guerra y los miradores. Mañana: Túnel de la Esperanza en taxi o tour (lo más práctico) y vuelta al centro.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Sarajevo: https://www.happylowcost.com/destinos/sarajevo/#chollos

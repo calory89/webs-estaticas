@@ -1,4 +1,4 @@
-# Qué ver en Oslo en 3 días: guía práctica y sin gastar de más
+# Qué ver en Oslo en 3 días: qué hacer y cuánto cuesta
 
 > Guía de viaje de Oslo de Happy Low Cost, itinerario de 3 días. Página original: https://www.happylowcost.com/destinos/oslo/
 > Actualizada: 2026-10-21
@@ -112,6 +112,14 @@ Muy raramente. Para eso hay que subir al norte del país, a Tromsø o más arrib
 ### ¿Merece la pena visitar Oslo?
 
 Para quien escribió esta guía, sí: Oslo no es la ciudad más espectacular de Noruega, y mejor saberlo antes de ir. Con 3 días ves lo esencial. Presupuesto: Un dormitorio compartido ronda los 40 a 60 euros por noche, y una doble sencilla suele quedar entre 100 y 160 euros, más en verano.
+
+### ¿Qué ver en Oslo en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Centro y puerto. Ópera, Museo Munch, fortaleza de Akershus, paseo por Aker Brygge y cena temprana en Mathallen o en alguna zona de Grønland.
+
+### ¿Qué ver en Oslo en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro y puerto. Ópera, Museo Munch, fortaleza de Akershus, paseo por Aker Brygge y cena temprana en Mathallen o en alguna zona de Grønland. Día 2: Museos y Frogner. Museo Nacional por la mañana, Parque Vigeland después y tarde libre en Grünerløkka, con paseo por el Akerselva.
 
 ## Vuelos y chollos
 

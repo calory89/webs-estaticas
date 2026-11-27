@@ -220,6 +220,14 @@ Los jóvenes y en hoteles y bares, sí. Muchos entienden también italiano.
 
 Para quien escribió esta guía, sí: Tirana no es una ciudad bonita en el sentido clásico, y conviene saberlo antes de aterrizar. Con 3 días ves lo esencial. Presupuesto: Ajustado (unos 35-45 € al día) : hostal, byrek y comida local, bus urbano, museos baratos.
 
+### ¿Qué ver en Tirana en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Centro y comunismo. Mañana: desayuno de byrek y café, plaza Skanderbeg, mezquita Et'hem Bey y Torre del Reloj.
+
+### ¿Qué ver en Tirana en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro y comunismo. Mañana: desayuno de byrek y café, plaza Skanderbeg, mezquita Et'hem Bey y Torre del Reloj. Día 2: Montaña y parque. Mañana: bus urbano hacia Bunk'Art 1 y, tras la visita, el teleférico del Dajti.
+
 ### ¿Es caro viajar a Tirana?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos unos 35-45 € por persona y día, y en el nivel "medio", unos unos 80-110 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

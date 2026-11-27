@@ -236,6 +236,14 @@ A taxi or app ride takes 45-90 minutes and costs about $25-35. The cheaper optio
 
 Yes. Mitad del Mundo and Museo Intiñan are about an hour north by taxi, and you need half a day for the round trip.
 
+### What to see in Quito in one day?
+
+If you only have one day, follow day 1 of this itinerary: Old Town. Morning: Take a free walking tour from Plaza Grande, or do it yourself: Plaza Grande, La Compañía, then San Francisco and Casa del Alabado.
+
+### What to see in Quito in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Old Town. Morning: Take a free walking tour from Plaza Grande, or do it yourself: Plaza Grande, La Compañía, then San Francisco and Casa del Alabado. Day 2: The heights and the north. Morning: Go to the TelefériQo first thing for clear views.
+
 ### Is Quito expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about $35-50 (€32-45) per person per day and the "mid-range" level at about $90-150 (€80-135). Flights are extra: this page shows real fares checked by Happy Low Cost.

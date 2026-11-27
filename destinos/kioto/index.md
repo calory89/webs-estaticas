@@ -116,6 +116,14 @@ A veces, en Gion al atardecer, pero no está garantizado. Si las ves, respeta su
 
 Normalmente no. Tras la subida de precios solo compensa si encadenas varios trayectos largos en Shinkansen en pocos días.
 
+### ¿Qué ver en Kioto en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Higashiyama. Fushimi Inari de madrugada, después Kiyomizu-dera, Sannenzaka y Ninenzaka, Yasaka y Gion al atardecer.
+
+### ¿Qué ver en Kioto en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Higashiyama. Fushimi Inari de madrugada, después Kiyomizu-dera, Sannenzaka y Ninenzaka, Yasaka y Gion al atardecer. Día 2: Oeste. Arashiyama temprano (bambú, Tenryu-ji, puente) y por la tarde Kinkaku-ji, con Ryoan-ji cerca si te gusta el jardín seco.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Kioto: https://www.happylowcost.com/destinos/kioto/#chollos

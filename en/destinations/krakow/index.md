@@ -113,6 +113,14 @@ Today the cheapest deal we have to Krakow is €58 return from Bilbao. Fares cha
 
 For the traveller who wrote this guide, yes: Kraków came through the Second World War with its medieval centre largely intact, and you feel it the moment you step into the Main Square. 3 days are enough for the essentials. Budget: Budget: about €40 to €55 a day, with a hostel bed, milk bar meals, street food and one museum.
 
+### What to see in Krakow in one day?
+
+If you only have one day, follow day 1 of this itinerary: Main Square, St. Mary's, Cloth Hall, a lunch of pierogi, then Wawel in the afternoon.
+
+### What to see in Krakow in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Main Square, St. Mary's, Cloth Hall, a lunch of pierogi, then Wawel in the afternoon. Day 2: Kazimierz in the morning, a late lunch on Plac Nowy, then cross the river to Schindler's Factory.
+
 ## Flights and deals
 
 - Flight deals to Krakow: https://www.happylowcost.com/en/destinations/krakow/#deals

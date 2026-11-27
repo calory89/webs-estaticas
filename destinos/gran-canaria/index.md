@@ -233,6 +233,14 @@ En mayo, junio, septiembre y octubre, fuera de festivos. Es cuando hay vuelos y 
 
 Para quien escribió esta guía, sí: Gran Canaria tiene fama de isla de hamaca y bufé libre, y esa parte existe: el sur, de Playa del Inglés a Puerto Rico, es eso y poco más. Con 6 días ves lo esencial. Presupuesto: Presupuesto ajustado (unos 60-80 € por persona y día) : apartamento compartido en Las Palmas, guagua, menú del día y cenas sencillas, planes gratis.
 
+### ¿Qué ver en Gran Canaria en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Las Palmas. Mañana: Vegueta, catedral con torre y Casa de Colón.
+
+### ¿Qué ver en Gran Canaria en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Las Palmas. Mañana: Vegueta, catedral con torre y Casa de Colón. Día 2: El norte. Mañana: Arucas (iglesia y destilería) y Firgas, con su paseo de azulejos y cascada artificial.
+
 ### ¿Es caro viajar a Gran Canaria?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 60-80 € por persona y día, y en el nivel "presupuesto medio", unos unos 110-160 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

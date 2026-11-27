@@ -242,6 +242,14 @@ Yes. The fast ferry from Agaete takes about 1 hour 20 minutes. It's a long day, 
 
 For the traveller who wrote this guide, yes: Gran Canaria is two islands pretending to be one. 5 days are enough for the essentials. Budget: Shoestring (€50-70 per day): hostel or a cheap room in Las Palmas (€25-40), menú del día lunches, supermarket breakfast, buses and free beaches.
 
+### What to see in Gran Canaria in one day?
+
+If you only have one day, follow day 1 of this itinerary: Old Las Palmas. Morning: Mercado de Vegueta for breakfast, then the cathedral and its tower, and Casa de Colón.
+
+### What to see in Gran Canaria in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Old Las Palmas. Morning: Mercado de Vegueta for breakfast, then the cathedral and its tower, and Casa de Colón. Day 2: Las Canteras and the port. Morning: swim and snorkel at La Barra at low tide.
+
 ## Flights and deals
 
 - Flight deals to Gran Canaria: https://www.happylowcost.com/en/destinations/gran-canaria/#deals

@@ -235,6 +235,14 @@ November to March, when temperatures are comfortable. Summer is extremely hot bu
 
 Doha is one of the safest cities in the world for street crime. The main risks are heat, fast traffic and breaking local laws without knowing it.
 
+### What to see in Doha in one day?
+
+If you only have one day, follow day 1 of this itinerary: Old Doha and the waterfront. Morning: Get to the Museum of Islamic Art first thing, while you still have energy for three floors.
+
+### What to see in Doha in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Old Doha and the waterfront. Morning: Get to the Museum of Islamic Art first thing, while you still have energy for three floors. Day 2: Museums and modern Doha. Morning: Visit the National Museum of Qatar, which is walkable from Souq Waqif or one metro stop away (National Museum station, Red Line).
+
 ## Flights and deals
 
 - Flight deals to Doha: https://www.happylowcost.com/en/destinations/doha/#deals

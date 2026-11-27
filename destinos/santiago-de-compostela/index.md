@@ -223,6 +223,10 @@ Sí, el acceso está limitado. En temporada alta conviene reservar online con va
 
 Para quien escribió esta guía, sí: Santiago de Compostela es una ciudad pequeña de piedra granítica, lluvia fina y estudiantes, con una catedral que justifica el viaje por sí sola. Con 2 días ves lo esencial. Presupuesto: Presupuesto ajustado (60-80 € al día por persona): albergue o pensión en San Pedro (25-40 €), menú del día y raciones (25 €), catedral gratis y algún museo barato (5 €).
 
+### ¿Qué ver en Santiago de Compostela en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Catedral, zona vieja y Alameda. Mañana: entra en la catedral a primera hora, luego el Pórtico da Gloria y el museo si has reservado.
+
 ### ¿Es caro viajar a Santiago de Compostela?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 60-80 € por persona y día, y en el nivel "presupuesto medio", unos 110-160 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

@@ -134,6 +134,14 @@ Sí. Los restaurantes por quilo, los botecos y los puestos de playa permiten com
 
 Para quien escribió esta guía, sí: Río es una ciudad con montañas verdes metidas entre los edificios, playas urbanas donde se juega al fútbol-vóley a las ocho de la mañana y una vida de barrio que funciona a cualquier hora. Con 4 días ves lo esencial.
 
+### ¿Qué ver en Río de Janeiro en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Copacabana, paseo hasta Arpoador, Ipanema y atardecer en la piedra.
+
+### ¿Qué ver en Río de Janeiro en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Copacabana, paseo hasta Arpoador, Ipanema y atardecer en la piedra. Día 2: Cristo Redentor a primera hora, comida en Cosme Velho o Laranjeiras, tarde en el Jardim Botânico y Parque Lage.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Río de Janeiro: https://www.happylowcost.com/destinos/rio-de-janeiro/#chollos

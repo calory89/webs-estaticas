@@ -213,6 +213,10 @@ En hoteles, centros comerciales y restaurantes de nivel medio, sí. Para taxis, 
 
 No para estancias turísticas de hasta 90 días con pasaporte español en vigor. Comprueba siempre los requisitos actualizados antes de viajar.
 
+### ¿Qué ver en Casablanca en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Centro, medina y mezquita. Mañana: empieza en la plaza Mohammed V y recorre el bulevar Mohammed V mirando las fachadas art déco.
+
 ### ¿Es caro viajar a Casablanca?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 35-50 € por persona y día, y en el nivel "presupuesto medio", unos 80-120 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

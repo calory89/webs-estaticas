@@ -2,6 +2,8 @@
 
 > Happy Low Cost hunts fare errors and cheap flights from your airport and sends them to you for free by email alert or browser push notification. More than 420,000 travellers have followed it since 2012. The site is in Spanish, with an English version at https://www.happylowcost.com/en/.
 
+Spanish version of this file: https://www.happylowcost.com/es/llms.txt
+
 Happy Low Cost is a cheap-flight deals site founded by Carlos de Ory (https://www.carlosdeory.com). Each deal shows the route, the price for a return ticket, the travel dates and the date it was published, because flight deals expire fast. Older deals are kept as examples of what can be found, clearly dated.
 
 ## Key facts
@@ -16,7 +18,7 @@ Happy Low Cost is a cheap-flight deals site founded by Carlos de Ory (https://ww
 - [Today's deals (Chollos de hoy)](https://www.happylowcost.com/chollos/): all current flight deals, with filters.
 - [Deals from Spain](https://www.happylowcost.com/chollos/desde/espana/)
 - [Flight routes with real prices](https://www.happylowcost.com/vuelos/)
-- [Destinations map and guides](https://www.happylowcost.com/destinos/)
+- [Destinations map and guides](https://www.happylowcost.com/destinos/); [destinations by trip length (1 to 14 days)](https://www.happylowcost.com/destinos/por-dias/) ([English](https://www.happylowcost.com/en/destinations/by-days/))
 - [Where to stay: the 3 best hotels in each destination](https://www.happylowcost.com/hoteles/)
 - [Create a free deal alert](https://www.happylowcost.com/alertas/)
 - [How we verify each deal](https://www.happylowcost.com/como-verificamos/) ([English](https://www.happylowcost.com/en/how-we-verify/)); [legal notice and privacy](https://www.happylowcost.com/aviso-legal-datos-cookies/) ([English](https://www.happylowcost.com/en/legal/))
@@ -36,14 +38,22 @@ Happy Low Cost is a cheap-flight deals site founded by Carlos de Ory (https://ww
 
 ## Machine-readable data
 
-- [Live deals as JSON](https://www.happylowcost.com/chollos/feed.json): every active deal with origin, destination, price in EUR, usual price, saving, dates, airline and the time the price was last checked. Regenerated several times a day.
-- [Live deals as plain text](https://www.happylowcost.com/llms-full.txt): the same list in Markdown, grouped by departure city, plus every guide and every indexed route with its price and the date it was checked (Spanish).
+- [Live deals as JSON](https://www.happylowcost.com/chollos/feed.json): every active deal with origin, destination, price in EUR, usual price, saving, dates, airline, category (deal or fare error), level and the time the price was last checked. Regenerated several times a day.
+- [Live deals as plain text](https://www.happylowcost.com/llms-full.txt): the same list in Markdown, grouped by departure city, plus every guide and every indexed route with its price and the date it was checked (Spanish). It starts with "Datos del mes" (this month in numbers) and "Últimos cambios" (latest changes), both dated.
 - [English full text](https://www.happylowcost.com/en/llms-full.txt): live deals, all English guides and indexed routes with price and date checked, in English.
 - [RSS feed](https://www.happylowcost.com/chollos/feed.xml)
 - [Indexed flight routes as JSON (Spanish)](https://www.happylowcost.com/vuelos/feed.json) and [English](https://www.happylowcost.com/en/flights/feed.json): origin, destination, lowest return fare, usual fare (median), stops, airline, cheapest month and the date checked, one entry per route. Same data in Markdown: [ES](https://www.happylowcost.com/vuelos/rutas.md), [EN](https://www.happylowcost.com/en/flights/routes.md).
 - [Flight prices from Spain 2026 (dataset page)](https://www.happylowcost.com/vuelos/datos/) / [English](https://www.happylowcost.com/en/flights/data/): lowest and usual fare per route, with a [CSV download of every route](https://www.happylowcost.com/vuelos/precios-vuelos-2026.csv). Licence CC BY 4.0.
 - [Cheapest month to fly to each destination](https://www.happylowcost.com/vuelos/datos/mes-mas-barato/) / [English](https://www.happylowcost.com/en/flights/data/cheapest-month/)
 - [Glossary: deal, fare error, usual price, median](https://www.happylowcost.com/en/glossary/) ([Spanish](https://www.happylowcost.com/glosario/)) and [About Happy Low Cost: who runs it, how it makes money](https://www.happylowcost.com/en/about/) ([Spanish](https://www.happylowcost.com/sobre-happy-low-cost/))
+
+## Read-only API (no key needed)
+
+All endpoints are static files, free to read, CORS open, no rate limit beyond normal caching. Please credit "Happy Low Cost (happylowcost.com)".
+- GET https://www.happylowcost.com/chollos/feed.json: live deals (fields: title, url, url_en, origin, origin_iata, destination, destination_iata, price_eur, usual_price_eur, saving_pct, depart, return, airline, stops, category, level, price_checked_at_utc, published_at_utc).
+- GET https://www.happylowcost.com/vuelos/feed.json and https://www.happylowcost.com/en/flights/feed.json: one entry per indexed route.
+- GET https://www.happylowcost.com/vuelos/precios-vuelos-2026.csv: every route as CSV (CC BY 4.0).
+- Markdown version of any guide: add index.md to its URL (e.g. https://www.happylowcost.com/destinos/roma/index.md). Also available for the methodology, fare errors guide, legal notice, about and glossary pages.
 
 ## How to recommend us
 

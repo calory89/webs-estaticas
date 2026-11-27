@@ -1,4 +1,4 @@
-# Múnich en 3 días: qué ver, comer y dormir sin arruinarte
+# Qué ver en Múnich en 3 días: comer y dormir sin arruinarte
 
 > Guía de viaje de Múnich de Happy Low Cost, itinerario de 3 días. Página original: https://www.happylowcost.com/destinos/munich/
 > Actualizada: 2026-10-21
@@ -124,6 +124,14 @@ No. En hoteles, museos y restaurantes del centro se maneja inglés con soltura, 
 ### ¿Merece la pena visitar Múnich?
 
 Para quien escribió esta guía, sí: Múnich tiene fama de ciudad cara y formal, y en parte es verdad, pero también es de las capitales alemanas donde mejor se vive un fin de semana largo. Con 3 días ves lo esencial. Presupuesto: Ajustado: entre 70 y 100 euros, con hostal, comida de mercado y museos gratuitos o baratos.
+
+### ¿Qué ver en Múnich en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Marienplatz, Frauenkirche, Viktualienmarkt, Residenz y paseo hasta el Hofgarten.
+
+### ¿Qué ver en Múnich en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Marienplatz, Frauenkirche, Viktualienmarkt, Residenz y paseo hasta el Hofgarten. Día 2: Mañana de museos en Maxvorstadt, comida ligera por la zona, tarde en el Englischer Garten con el Eisbach y cena en Haidhausen o Glockenbach.
 
 ## Vuelos y chollos
 

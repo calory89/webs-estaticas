@@ -4,6 +4,23 @@
 
 Happy Low Cost has published flight deals since 2012. How we verify deals: https://www.happylowcost.com/en/how-we-verify/
 
+## This month in numbers (as of 27 Nov 2026)
+- Live deals: 17, from 8 departure cities.
+- Median deal price: €67 return (cheapest: Valencia to Paris for €39).
+- Median saving against the usual fare: 46%.
+- Deals with a nonstop flight: 13 of 17.
+
+## Latest changes
+
+- 2026-11-26: new deal Barcelona to Cagliari for €43 (https://www.happylowcost.com/en/deals/barcelona-cagliari-43-eur-2027-01-21/)
+- 2026-11-26: new deal Barcelona to Stockholm for €71 (https://www.happylowcost.com/en/deals/barcelona-stockholm-71-eur-2027-02-21/)
+- 2026-11-26: new deal Alicante to Larnaca for €121 (https://www.happylowcost.com/en/deals/alicante-larnaca-121-eur-2027-02-21/)
+- 2026-11-26: new deal Valencia to Brussels for €65 (https://www.happylowcost.com/en/deals/valencia-brussels-65-eur-2027-02-19/)
+- 2026-11-26: new deal Zaragoza to Athens for €133 (https://www.happylowcost.com/en/deals/zaragoza-athens-133-eur-2027-02-13/)
+- 2026-11-25: new deal Gran Canaria to Madeira for €111 (https://www.happylowcost.com/en/deals/gran-canaria-madeira-111-eur-2027-02-19/)
+- 2026-11-24: new deal Valencia to Paris for €39 (https://www.happylowcost.com/en/deals/valencia-paris-39-eur-2027-01-24/)
+- 2026-11-24: new deal Valencia to Luxembourg for €94 (https://www.happylowcost.com/en/deals/valencia-luxembourg-94-eur-2027-02-19/)
+
 ## Live flight deals
 
 - [Barcelona to Cagliari: €43 return](https://www.happylowcost.com/en/deals/barcelona-cagliari-43-eur-2027-01-21/), Vueling, nonstop, 21 Jan – 30 Jan 2027. Usual price €80 (-46%). Checked 26 Nov 2026.
@@ -11,7 +28,7 @@ Happy Low Cost has published flight deals since 2012. How we verify deals: https
 - [Alicante to Larnaca: €121 return](https://www.happylowcost.com/en/deals/alicante-larnaca-121-eur-2027-02-21/), Wizz Air Malta, 21 Feb – 23 Feb 2027. Usual price €200 (-40%). Checked 26 Nov 2026.
 - [Valencia to Brussels: €65 return](https://www.happylowcost.com/en/deals/valencia-brussels-65-eur-2027-02-19/), Vueling, nonstop, 19 Feb – 21 Feb 2027. Usual price €130 (-50%). Checked 26 Nov 2026.
 - [Zaragoza to Athens: €133 return](https://www.happylowcost.com/en/deals/zaragoza-athens-133-eur-2027-02-13/), Wizz Air Malta, 13 Feb – 15 Feb 2027. Usual price €220 (-40%). Checked 26 Nov 2026.
-- [Gran Canaria to Madeira: €111 return](https://www.happylowcost.com/en/deals/gran-canaria-madeira-111-eur-2027-02-19/), Binter Canarias, nonstop, 19 Feb – 23 Feb 2027. Usual price €190 (-42%). Checked 26 Nov 2026.
+- [Gran Canaria to Madeira: €111 return](https://www.happylowcost.com/en/deals/gran-canaria-madeira-111-eur-2027-02-19/), Binter Canarias, nonstop, 19 Feb – 23 Feb 2027. Usual price €190 (-42%). Checked 27 Nov 2026.
 - [Valencia to Paris: €39 return](https://www.happylowcost.com/en/deals/valencia-paris-39-eur-2027-01-24/), Ryanair, nonstop, 24 Jan – 29 Jan 2027. Usual price €90 (-57%). Checked 26 Nov 2026.
 - [Valencia to Luxembourg: €94 return](https://www.happylowcost.com/en/deals/valencia-luxembourg-94-eur-2027-02-19/), Luxair, nonstop, 19 Feb – 22 Feb 2027. Usual price €170 (-45%). Checked 26 Nov 2026.
 - [Madrid to Brussels: €81 return](https://www.happylowcost.com/en/deals/madrid-brussels-81-eur-2027-02-16/), Ryanair, nonstop, 16 Feb – 18 Feb 2027. Usual price €150 (-46%). Checked 26 Nov 2026.
@@ -203,12 +220,13 @@ Each guide has what to see, a day-by-day route, when to go, where to stay, what 
 - [Panama City in 3 Days: Canal, Casco Viejo and Ceviche](https://www.happylowcost.com/en/destinations/panama-city/). Markdown: https://www.happylowcost.com/en/destinations/panama-city/index.md
 
 <!-- rutas -->
-## Flight routes with real prices (945 routes, fares checked on Kiwi.com on the date shown)
+## Flight routes with real prices (982 routes, fares checked on Kiwi.com on the date shown)
 
 - [Alicante → Milan](https://www.happylowcost.com/en/flights/alicante-milan/): from 38 € return, usual 39 €, nonstop, Wizz Air Malta, checked 2026-11-22
 - [Alicante → Venice](https://www.happylowcost.com/en/flights/alicante-venice/): from 40 € return, usual 48 €, nonstop, Ryanair, checked 2026-11-23
 - [Alicante → Lisbon](https://www.happylowcost.com/en/flights/alicante-lisbon/): from 46 € return, usual 51 €, nonstop, Ryanair, checked 2026-11-22
 - [Alicante → Copenhagen](https://www.happylowcost.com/en/flights/alicante-copenhagen/): from 58 € return, usual 97 €, nonstop, Ryanair, checked 2026-11-21
+- [Alicante → Naples](https://www.happylowcost.com/en/flights/alicante-naples/): from 66 € return, usual 100 €, nonstop, easyJet, checked 2026-11-22
 - [Alicante → Salzburg](https://www.happylowcost.com/en/flights/alicante-salzburg/): from 69 € return, usual 105 €, nonstop, Ryanair, checked 2026-11-23
 - [Alicante → Agadir](https://www.happylowcost.com/en/flights/alicante-agadir/): from 78 € return, usual 84 €, 1 stop(s), Royal Air Maroc, checked 2026-11-21
 - [Alicante → Florence](https://www.happylowcost.com/en/flights/alicante-florence/): from 122 € return, usual 159 €, 1 stop(s), Volotea, checked 2026-11-22
@@ -240,6 +258,7 @@ Each guide has what to see, a day-by-day route, when to go, where to stay, what 
 - [Barcelona → Istanbul](https://www.happylowcost.com/en/flights/barcelona-istanbul/): from 154 € return, usual 187 €, nonstop, Vueling, cheapest month 2026-12 (139 €), checked 2026-11-12
 - [Barcelona → Salzburg](https://www.happylowcost.com/en/flights/barcelona-salzburg/): from 160 € return, usual 181 €, 1 stop(s), easyJet, cheapest month 2027-02 (144 €), checked 2026-11-13
 - [Barcelona → Iceland](https://www.happylowcost.com/en/flights/barcelona-iceland/): from 176 € return, usual 184 €, 1 stop(s), Wizz Air, cheapest month 2027-04 (160 €), checked 2026-11-13
+- [Barcelona → Helsinki](https://www.happylowcost.com/en/flights/barcelona-helsinki/): from 185 € return, usual 186 €, 1 stop(s), Ryanair, cheapest month 2027-05 (166 €), checked 2026-11-12
 - [Barcelona → Santorini](https://www.happylowcost.com/en/flights/barcelona-santorini/): from 187 € return, usual 235 €, 1 stop(s), SKY express, cheapest month 2026-12 (217 €), checked 2026-11-13
 - [Barcelona → Mykonos](https://www.happylowcost.com/en/flights/barcelona-mykonos/): from 201 € return, usual 229 €, 1 stop(s), SKY express, cheapest month 2027-05 (165 €), checked 2026-11-13
 - [Barcelona → Sal Island](https://www.happylowcost.com/en/flights/barcelona-sal-island/): from 204 € return, usual 299 €, 1 stop(s), Vueling, cheapest month 2027-01 (194 €), checked 2026-11-13
@@ -279,6 +298,7 @@ Each guide has what to see, a day-by-day route, when to go, where to stay, what 
 - [Berlin → New York](https://www.happylowcost.com/en/flights/berlin-new-york/): from 403 € return, usual 403 €, 1 stop(s), Aer Lingus, checked 2026-10-22
 - [Berlin → San Francisco](https://www.happylowcost.com/en/flights/berlin-san-francisco/): from 568 € return, usual 580 €, 1 stop(s), SAS, checked 2026-10-22
 - [Berlin → Los Angeles](https://www.happylowcost.com/en/flights/berlin-los-angeles/): from 584 € return, usual 618 €, 1 stop(s), SAS, checked 2026-10-22
+- [Berlin → Hong Kong](https://www.happylowcost.com/en/flights/berlin-hong-kong/): from 621 € return, usual 668 €, 1 stop(s), Etihad Airways, checked 2026-10-22
 - [Berlin → Vietnam](https://www.happylowcost.com/en/flights/berlin-vietnam/): from 639 € return, usual 682 €, 1 stop(s), Etihad Airways, checked 2026-10-22
 - [Berlin → Singapore](https://www.happylowcost.com/en/flights/berlin-singapore/): from 660 € return, usual 687 €, 2 stop(s), easyJet, checked 2026-10-22
 - [Berlin → Mauritius](https://www.happylowcost.com/en/flights/berlin-mauritius/): from 670 € return, usual 775 €, 1 stop(s), Condor, checked 2026-10-22
@@ -328,6 +348,7 @@ Each guide has what to see, a day-by-day route, when to go, where to stay, what 
 - [Brussels → Paris](https://www.happylowcost.com/en/flights/brussels-paris/): from 135 € return, usual 145 €, 1 stop(s), Ryanair, checked 2026-10-23
 - [Brussels → Iceland](https://www.happylowcost.com/en/flights/brussels-iceland/): from 146 € return, usual 148 €, nonstop, Transavia, checked 2026-10-23
 - [Brussels → Belgrade](https://www.happylowcost.com/en/flights/brussels-belgrade/): from 165 € return, usual 210 €, 1 stop(s), Ryanair, checked 2026-10-23
+- [Brussels → Zurich](https://www.happylowcost.com/en/flights/brussels-zurich/): from 185 € return, usual 229 €, 1 stop(s), Ryanair, checked 2026-10-23
 - [Brussels → Dubai](https://www.happylowcost.com/en/flights/brussels-dubai/): from 273 € return, usual 278 €, 1 stop(s), Pegasus, checked 2026-10-23
 - [Brussels → Hong Kong](https://www.happylowcost.com/en/flights/brussels-hong-kong/): from 412 € return, usual 412 €, 1 stop(s), Air China, checked 2026-10-23
 - [Brussels → Seoul](https://www.happylowcost.com/en/flights/brussels-seoul/): from 434 € return, usual 561 €, 1 stop(s), Air China, checked 2026-10-23
@@ -363,6 +384,7 @@ Each guide has what to see, a day-by-day route, when to go, where to stay, what 
 - [Copenhagen → Miami](https://www.happylowcost.com/en/flights/copenhagen-miami/): from 570 € return, usual 596 €, 1 stop(s), TAP Portugal, checked 2026-10-23
 - [Copenhagen → Bangkok](https://www.happylowcost.com/en/flights/copenhagen-bangkok/): from 575 € return, usual 627 €, 1 stop(s), Air China, checked 2026-10-23
 - [Copenhagen → Vietnam](https://www.happylowcost.com/en/flights/copenhagen-vietnam/): from 591 € return, usual 627 €, 1 stop(s), China Eastern Airlines, checked 2026-10-23
+- [Copenhagen → Hong Kong](https://www.happylowcost.com/en/flights/copenhagen-hong-kong/): from 591 € return, usual 650 €, 1 stop(s), Air China, checked 2026-10-23
 - [Copenhagen → Phuket](https://www.happylowcost.com/en/flights/copenhagen-phuket/): from 648 € return, usual 699 €, 1 stop(s), Air China, checked 2026-10-23
 - [Copenhagen → Sri Lanka](https://www.happylowcost.com/en/flights/copenhagen-sri-lanka/): from 699 € return, usual 726 €, 1 stop(s), Etihad Airways, checked 2026-10-23
 - [Copenhagen → Charleston](https://www.happylowcost.com/en/flights/copenhagen-charleston/): from 707 € return, usual 774 €, 2 stop(s), Norwegian Air Sweden, checked 2026-10-23
@@ -384,10 +406,13 @@ Each guide has what to see, a day-by-day route, when to go, where to stay, what 
 - [Dublin → Dubrovnik](https://www.happylowcost.com/en/flights/dublin-dubrovnik/): from 64 € return, usual 72 €, nonstop, Ryanair, checked 2026-10-22
 - [Dublin → Munich](https://www.happylowcost.com/en/flights/dublin-munich/): from 107 € return, usual 107 €, nonstop, Lufthansa, checked 2026-10-22
 - [Dublin → Belgrade](https://www.happylowcost.com/en/flights/dublin-belgrade/): from 175 € return, usual 179 €, 1 stop(s), Ryanair, checked 2026-10-22
+- [Dublin → Iceland](https://www.happylowcost.com/en/flights/dublin-iceland/): from 175 € return, usual 185 €, 1 stop(s), Ryanair, checked 2026-10-22
 - [Dublin → Santorini](https://www.happylowcost.com/en/flights/dublin-santorini/): from 209 € return, usual 242 €, 1 stop(s), Ryanair, checked 2026-10-22
 - [Dublin → Singapore](https://www.happylowcost.com/en/flights/dublin-singapore/): from 533 € return, usual 544 €, 1 stop(s), Etihad Airways, checked 2026-10-22
+- [Dublin → Los Angeles](https://www.happylowcost.com/en/flights/dublin-los-angeles/): from 540 € return, usual 648 €, 1 stop(s), SAS, checked 2026-10-22
 - [Dublin → Bali](https://www.happylowcost.com/en/flights/dublin-bali/): from 637 € return, usual 689 €, 1 stop(s), China Eastern Airlines, checked 2026-10-22
 - [Dublin → Kyoto](https://www.happylowcost.com/en/flights/dublin-kyoto/): from 688 € return, usual 863 €, 2 stop(s), Ryanair, checked 2026-10-22
+- [Dublin → San Juan](https://www.happylowcost.com/en/flights/dublin-san-juan/): from 736 € return, usual 800 €, 3 stop(s), Ryanair, checked 2026-10-22
 - [Dublin → Zanzibar](https://www.happylowcost.com/en/flights/dublin-zanzibar/): from 739 € return, usual 758 €, 2 stop(s), Kenya Airways, checked 2026-10-22
 - [Dublin → Nassau](https://www.happylowcost.com/en/flights/dublin-nassau/): from 799 € return, usual 810 €, 2 stop(s), Ryanair, checked 2026-10-22
 - [Dublin → Bogota](https://www.happylowcost.com/en/flights/dublin-bogota/): from 997 € return, usual 1012 €, 2 stop(s), Air Canada, checked 2026-10-22
@@ -429,6 +454,7 @@ Each guide has what to see, a day-by-day route, when to go, where to stay, what 
 - [Stockholm → Helsinki](https://www.happylowcost.com/en/flights/stockholm-helsinki/): from 56 € return, usual 59 €, nonstop, Norwegian Air Sweden, checked 2026-10-23
 - [Stockholm → Porto](https://www.happylowcost.com/en/flights/stockholm-porto/): from 86 € return, usual 86 €, 1 stop(s), Ryanair, checked 2026-10-23
 - [Stockholm → Belgrade](https://www.happylowcost.com/en/flights/stockholm-belgrade/): from 97 € return, usual 116 €, nonstop, Air Serbia, checked 2026-10-23
+- [Stockholm → Oslo](https://www.happylowcost.com/en/flights/stockholm-oslo/): from 104 € return, usual 104 €, nonstop, Ethiopian Airlines, checked 2026-10-23
 - [Stockholm → Cyprus](https://www.happylowcost.com/en/flights/stockholm-cyprus/): from 153 € return, usual 178 €, nonstop, Norwegian Air Sweden, checked 2026-10-23
 - [Stockholm → Sal Island](https://www.happylowcost.com/en/flights/stockholm-sal-island/): from 287 € return, usual 294 €, 2 stop(s), Ryanair, checked 2026-10-23
 - [Stockholm → Tokyo](https://www.happylowcost.com/en/flights/stockholm-tokyo/): from 594 € return, usual 740 €, 1 stop(s), SAS, checked 2026-10-23
@@ -442,7 +468,7 @@ Each guide has what to see, a day-by-day route, when to go, where to stay, what 
 - [Stockholm → Buenos Aires](https://www.happylowcost.com/en/flights/stockholm-buenos-aires/): from 1011 € return, usual 1093 €, 3 stop(s), Ryanair, checked 2026-10-23
 - [Stockholm → Bogota](https://www.happylowcost.com/en/flights/stockholm-bogota/): from 1090 € return, usual 1137 €, 2 stop(s), Icelandair, checked 2026-10-23
 - [Gran Canaria → Marrakesh](https://www.happylowcost.com/en/flights/gran-canaria-marrakesh/): from 47 € return, usual 56 €, nonstop, Ryanair, checked 2026-11-26
-- [Gran Canaria → Venice](https://www.happylowcost.com/en/flights/gran-canaria-venice/): from 55 € return, usual 81 €, nonstop, Ryanair, checked 2026-10-22
+- [Gran Canaria → Edinburgh](https://www.happylowcost.com/en/flights/gran-canaria-edinburgh/): from 66 € return, usual 77 €, nonstop, easyJet, checked 2026-11-25
 - [Gran Canaria → Paris](https://www.happylowcost.com/en/flights/gran-canaria-paris/): from 88 € return, usual 106 €, nonstop, easyJet, checked 2026-11-26
 - [Gran Canaria → Palermo](https://www.happylowcost.com/en/flights/gran-canaria-palermo/): from 115 € return, usual 207 €, 1 stop(s), Vueling, checked 2026-11-26
 - [Gran Canaria → Madeira](https://www.happylowcost.com/en/flights/gran-canaria-madeira/): from 126 € return, usual 146 €, nonstop, Binter Canarias, checked 2026-11-26
@@ -461,6 +487,7 @@ Each guide has what to see, a day-by-day route, when to go, where to stay, what 
 - [Gran Canaria → Charleston](https://www.happylowcost.com/en/flights/gran-canaria-charleston/): from 695 € return, usual 732 €, 3 stop(s), Iberia Express, checked 2026-11-25
 - [Gran Canaria → Fort Lauderdale](https://www.happylowcost.com/en/flights/gran-canaria-fort-lauderdale/): from 729 € return, usual 733 €, 2 stop(s), TAP Portugal, checked 2026-11-26
 - [Gran Canaria → Hong Kong](https://www.happylowcost.com/en/flights/gran-canaria-hong-kong/): from 730 € return, usual 855 €, 2 stop(s), Ryanair, checked 2026-11-26
+- [Gran Canaria → Zanzibar](https://www.happylowcost.com/en/flights/gran-canaria-zanzibar/): from 780 € return, usual 821 €, 2 stop(s), easyJet, checked 2026-10-22
 - [Gran Canaria → Bali](https://www.happylowcost.com/en/flights/gran-canaria-bali/): from 781 € return, usual 826 €, 3 stop(s), Iberia Express, checked 2026-11-25
 - [Gran Canaria → Phuket](https://www.happylowcost.com/en/flights/gran-canaria-phuket/): from 788 € return, usual 807 €, 2 stop(s), Vueling, checked 2026-11-26
 - [Gran Canaria → Rio de Janeiro](https://www.happylowcost.com/en/flights/gran-canaria-rio-de-janeiro/): from 788 € return, usual 1831 €, 2 stop(s), Iberia Express, checked 2026-11-26
@@ -483,6 +510,7 @@ Each guide has what to see, a day-by-day route, when to go, where to stay, what 
 - [Ibiza → Cyprus](https://www.happylowcost.com/en/flights/ibiza-cyprus/): from 171 € return, usual 190 €, 2 stop(s), Vueling, checked 2026-10-22
 - [Ibiza → Madeira](https://www.happylowcost.com/en/flights/ibiza-madeira/): from 189 € return, usual 202 €, 2 stop(s), Vueling, checked 2026-10-22
 - [Ibiza → The Azores](https://www.happylowcost.com/en/flights/ibiza-azores/): from 241 € return, usual 257 €, 2 stop(s), Vueling, checked 2026-10-22
+- [Ibiza → Helsinki](https://www.happylowcost.com/en/flights/ibiza-helsinki/): from 266 € return, usual 293 €, 1 stop(s), Vueling, checked 2026-10-22
 - [Ibiza → Cairo](https://www.happylowcost.com/en/flights/ibiza-cairo/): from 272 € return, usual 288 €, 1 stop(s), Vueling, checked 2026-10-22
 - [Ibiza → Bangkok](https://www.happylowcost.com/en/flights/ibiza-bangkok/): from 519 € return, usual 643 €, 2 stop(s), Iberia Express, checked 2026-10-22
 - [Ibiza → Nairobi](https://www.happylowcost.com/en/flights/ibiza-nairobi/): from 570 € return, usual 759 €, 2 stop(s), Air Europa, checked 2026-10-22
@@ -509,6 +537,7 @@ Each guide has what to see, a day-by-day route, when to go, where to stay, what 
 - [Lisbon → Sardinia](https://www.happylowcost.com/en/flights/lisbon-sardinia/): from 120 € return, usual 135 €, 1 stop(s), Ryanair, checked 2026-10-22
 - [Lisbon → Fez](https://www.happylowcost.com/en/flights/lisbon-fez/): from 131 € return, usual 146 €, 1 stop(s), Ryanair, checked 2026-10-22
 - [Lisbon → Sal Island](https://www.happylowcost.com/en/flights/lisbon-sal-island/): from 134 € return, usual 137 €, nonstop, easyJet, checked 2026-10-23
+- [Lisbon → Tenerife](https://www.happylowcost.com/en/flights/lisbon-tenerife/): from 138 € return, usual 143 €, 1 stop(s), Ryanair, checked 2026-10-23
 - [Lisbon → Oslo](https://www.happylowcost.com/en/flights/lisbon-oslo/): from 160 € return, usual 166 €, 1 stop(s), Ryanair, checked 2026-10-22
 - [Lisbon → Florence](https://www.happylowcost.com/en/flights/lisbon-florence/): from 161 € return, usual 184 €, 1 stop(s), easyJet, checked 2026-10-22
 - [Lisbon → Vilnius](https://www.happylowcost.com/en/flights/lisbon-vilnius/): from 169 € return, usual 189 €, 1 stop(s), Ryanair, checked 2026-10-23
@@ -552,6 +581,7 @@ Each guide has what to see, a day-by-day route, when to go, where to stay, what 
 - [London → Singapore](https://www.happylowcost.com/en/flights/london-singapore/): from 546 € return, usual 547 €, 1 stop(s), Hainan Airlines, cheapest month 2027-02 (542 €), checked 2026-10-22
 - [London → Manila](https://www.happylowcost.com/en/flights/london-manila/): from 602 € return, usual 653 €, 1 stop(s), China Southern Airlines, cheapest month 2027-01 (594 €), checked 2026-10-22
 - [London → Nairobi](https://www.happylowcost.com/en/flights/london-nairobi/): from 654 € return, usual 710 €, 1 stop(s), Etihad Airways, cheapest month 2027-03 (583 €), checked 2026-10-22
+- [London → Bali](https://www.happylowcost.com/en/flights/london-bali/): from 692 € return, usual 705 €, 2 stop(s), Turkmenistan Airlines, cheapest month 2027-01 (680 €), checked 2026-10-22
 - [London → San Juan](https://www.happylowcost.com/en/flights/london-san-juan/): from 746 € return, usual 787 €, 1 stop(s), Norse Atlantic UK, cheapest month 2027-04 (659 €), checked 2026-10-22
 - [London → Zanzibar](https://www.happylowcost.com/en/flights/london-zanzibar/): from 750 € return, usual 762 €, 1 stop(s), easyJet, cheapest month 2027-01 (599 €), checked 2026-10-22
 - [London → Nassau](https://www.happylowcost.com/en/flights/london-nassau/): from 764 € return, usual 764 €, 1 stop(s), Air Canada, cheapest month 2027-04 (741 €), checked 2026-10-22
@@ -590,6 +620,7 @@ Each guide has what to see, a day-by-day route, when to go, where to stay, what 
 - [Manchester → Iceland](https://www.happylowcost.com/en/flights/manchester-iceland/): from 93 € return, usual 98 €, nonstop, easyJet, checked 2026-10-23
 - [Manchester → Edinburgh](https://www.happylowcost.com/en/flights/manchester-edinburgh/): from 123 € return, usual 123 €, 1 stop(s), Ryanair, checked 2026-10-23
 - [Manchester → Fez](https://www.happylowcost.com/en/flights/manchester-fez/): from 123 € return, usual 130 €, 1 stop(s), Ryanair, checked 2026-10-23
+- [Manchester → Belgrade](https://www.happylowcost.com/en/flights/manchester-belgrade/): from 163 € return, usual 167 €, 1 stop(s), easyJet, checked 2026-10-23
 - [Manchester → Sal Island](https://www.happylowcost.com/en/flights/manchester-sal-island/): from 187 € return, usual 204 €, 1 stop(s), Ryanair, checked 2026-10-23
 - [Manchester → Cairo](https://www.happylowcost.com/en/flights/manchester-cairo/): from 296 € return, usual 319 €, 1 stop(s), Ryanair, checked 2026-10-23
 - [Manchester → Vietnam](https://www.happylowcost.com/en/flights/manchester-vietnam/): from 655 € return, usual 672 €, 2 stop(s), easyJet, checked 2026-10-23
@@ -626,7 +657,9 @@ Each guide has what to see, a day-by-day route, when to go, where to stay, what 
 - [Milan → Cairo](https://www.happylowcost.com/en/flights/milan-cairo/): from 191 € return, usual 223 €, nonstop, Air Cairo, checked 2026-10-23
 - [Milan → Sal Island](https://www.happylowcost.com/en/flights/milan-sal-island/): from 195 € return, usual 208 €, nonstop, easyJet, checked 2026-10-23
 - [Milan → New York](https://www.happylowcost.com/en/flights/milan-new-york/): from 497 € return, usual 518 €, 1 stop(s), Aer Lingus, checked 2026-10-23
+- [Milan → Nairobi](https://www.happylowcost.com/en/flights/milan-nairobi/): from 554 € return, usual 590 €, 1 stop(s), Air France, checked 2026-10-23
 - [Milan → Kuala Lumpur](https://www.happylowcost.com/en/flights/milan-kuala-lumpur/): from 572 € return, usual 579 €, 1 stop(s), Hainan Airlines, checked 2026-10-23
+- [Milan → Vietnam](https://www.happylowcost.com/en/flights/milan-vietnam/): from 584 € return, usual 585 €, 1 stop(s), Air China, checked 2026-10-23
 - [Milan → Sri Lanka](https://www.happylowcost.com/en/flights/milan-sri-lanka/): from 594 € return, usual 610 €, 1 stop(s), Air Arabia, checked 2026-10-23
 - [Milan → Zanzibar](https://www.happylowcost.com/en/flights/milan-zanzibar/): from 616 € return, usual 670 €, 1 stop(s), Air Cairo, checked 2026-10-23
 - [Milan → Phu Quoc](https://www.happylowcost.com/en/flights/milan-phu-quoc/): from 644 € return, usual 655 €, 2 stop(s), Turkmenistan Airlines, checked 2026-10-23
@@ -658,6 +691,7 @@ Each guide has what to see, a day-by-day route, when to go, where to stay, what 
 - [Málaga → Cairo](https://www.happylowcost.com/en/flights/malaga-cairo/): from 292 € return, usual 298 €, 1 stop(s), Wizz Air Malta, checked 2026-11-16
 - [Málaga → New York](https://www.happylowcost.com/en/flights/malaga-new-york/): from 474 € return, usual 489 €, 1 stop(s), Vueling, checked 2026-11-16
 - [Málaga → Cape Town](https://www.happylowcost.com/en/flights/malaga-cape-town/): from 688 € return, usual 753 €, 1 stop(s), Wizz Air UK, checked 2026-11-16
+- [Málaga → Phu Quoc](https://www.happylowcost.com/en/flights/malaga-phu-quoc/): from 693 € return, usual 768 €, 3 stop(s), Wizz Air UK, checked 2026-11-17
 - [Málaga → Las Vegas](https://www.happylowcost.com/en/flights/malaga-las-vegas/): from 740 € return, usual 872 €, 2 stop(s), Ryanair, checked 2026-11-16
 - [Málaga → Bali](https://www.happylowcost.com/en/flights/malaga-bali/): from 783 € return, usual 803 €, 3 stop(s), Air Serbia, checked 2026-11-15
 - [Málaga → Tokyo](https://www.happylowcost.com/en/flights/malaga-tokyo/): from 813 € return, usual 890 €, 2 stop(s), Air France, checked 2026-11-17
@@ -665,6 +699,7 @@ Each guide has what to see, a day-by-day route, when to go, where to stay, what 
 - [Málaga → Phuket](https://www.happylowcost.com/en/flights/malaga-phuket/): from 1179 € return, usual 1279 €, 2 stop(s), Etihad Airways, checked 2026-11-17
 - [Munich → London](https://www.happylowcost.com/en/flights/munich-london/): from 97 € return, usual 142 €, nonstop, easyJet, checked 2026-10-23
 - [Munich → Dublin](https://www.happylowcost.com/en/flights/munich-dublin/): from 105 € return, usual 107 €, nonstop, Aer Lingus, checked 2026-10-23
+- [Munich → Tenerife](https://www.happylowcost.com/en/flights/munich-tenerife/): from 139 € return, usual 237 €, nonstop, Condor, checked 2026-10-23
 - [Munich → Hamburg](https://www.happylowcost.com/en/flights/munich-hamburg/): from 147 € return, usual 176 €, nonstop, Eurowings, checked 2026-10-23
 - [Munich → Edinburgh](https://www.happylowcost.com/en/flights/munich-edinburgh/): from 155 € return, usual 156 €, 1 stop(s), Aer Lingus, checked 2026-10-23
 - [Munich → Sardinia](https://www.happylowcost.com/en/flights/munich-sardinia/): from 168 € return, usual 191 €, 1 stop(s), Vueling, checked 2026-10-23
@@ -678,6 +713,7 @@ Each guide has what to see, a day-by-day route, when to go, where to stay, what 
 - [Munich → Iceland](https://www.happylowcost.com/en/flights/munich-iceland/): from 336 € return, usual 360 €, 1 stop(s), LOT Polish Airlines, checked 2026-10-23
 - [Munich → Sal Island](https://www.happylowcost.com/en/flights/munich-sal-island/): from 355 € return, usual 368 €, 1 stop(s), TAP Portugal, checked 2026-10-23
 - [Munich → Los Angeles](https://www.happylowcost.com/en/flights/munich-los-angeles/): from 539 € return, usual 622 €, 1 stop(s), Aer Lingus, checked 2026-10-23
+- [Munich → Phuket](https://www.happylowcost.com/en/flights/munich-phuket/): from 541 € return, usual 541 €, 1 stop(s), Air China, checked 2026-10-23
 - [Munich → Phu Quoc](https://www.happylowcost.com/en/flights/munich-phu-quoc/): from 589 € return, usual 687 €, 2 stop(s), Air China, checked 2026-10-23
 - [Munich → The Maldives](https://www.happylowcost.com/en/flights/munich-maldives/): from 597 € return, usual 607 €, 1 stop(s), Etihad Airways, checked 2026-10-23
 - [Munich → Sri Lanka](https://www.happylowcost.com/en/flights/munich-sri-lanka/): from 607 € return, usual 623 €, 1 stop(s), Etihad Airways, checked 2026-10-23
@@ -715,6 +751,7 @@ Each guide has what to see, a day-by-day route, when to go, where to stay, what 
 - [New York → Athens](https://www.happylowcost.com/en/flights/new-york-athens/): from 612 € return, usual 628 €, 1 stop(s), Turkish Airlines, checked 2026-10-23
 - [New York → Warsaw](https://www.happylowcost.com/en/flights/new-york-warsaw/): from 618 € return, usual 659 €, 1 stop(s), French Bee, checked 2026-10-23
 - [New York → Budapest](https://www.happylowcost.com/en/flights/new-york-budapest/): from 629 € return, usual 629 €, 1 stop(s), Turkish Airlines, checked 2026-10-23
+- [New York → Belgrade](https://www.happylowcost.com/en/flights/new-york-belgrade/): from 641 € return, usual 660 €, 1 stop(s), Turkish Airlines, checked 2026-10-23
 - [New York → Sofia](https://www.happylowcost.com/en/flights/new-york-sofia/): from 657 € return, usual 667 €, 1 stop(s), Air France, checked 2026-10-23
 - [New York → Buenos Aires](https://www.happylowcost.com/en/flights/new-york-buenos-aires/): from 768 € return, usual 894 €, 1 stop(s), Arajet, checked 2026-10-23
 - [New York → Mykonos](https://www.happylowcost.com/en/flights/new-york-mykonos/): from 769 € return, usual 771 €, 2 stop(s), Turkish Airlines, checked 2026-10-23
@@ -726,6 +763,7 @@ Each guide has what to see, a day-by-day route, when to go, where to stay, what 
 - [Oslo → Riga](https://www.happylowcost.com/en/flights/oslo-riga/): from 38 € return, usual 38 €, nonstop, Ryanair, checked 2026-10-23
 - [Oslo → Vilnius](https://www.happylowcost.com/en/flights/oslo-vilnius/): from 51 € return, usual 53 €, nonstop, Ryanair, checked 2026-10-23
 - [Oslo → Tallinn](https://www.happylowcost.com/en/flights/oslo-tallinn/): from 83 € return, usual 89 €, nonstop, Norwegian Air Sweden, checked 2026-10-23
+- [Oslo → Berlin](https://www.happylowcost.com/en/flights/oslo-berlin/): from 100 € return, usual 109 €, nonstop, Norwegian Air Shuttle, checked 2026-10-23
 - [Oslo → Belgrade](https://www.happylowcost.com/en/flights/oslo-belgrade/): from 111 € return, usual 117 €, nonstop, Norwegian Air Shuttle, checked 2026-10-23
 - [Oslo → Bruges](https://www.happylowcost.com/en/flights/oslo-bruges/): from 127 € return, usual 142 €, nonstop, SAS, checked 2026-10-23
 - [Oslo → Brussels](https://www.happylowcost.com/en/flights/oslo-brussels/): from 127 € return, usual 142 €, nonstop, SAS, checked 2026-10-23
@@ -771,6 +809,7 @@ Each guide has what to see, a day-by-day route, when to go, where to stay, what 
 - [Palma → Iceland](https://www.happylowcost.com/en/flights/palma-iceland/): from 179 € return, usual 199 €, 1 stop(s), easyJet, checked 2026-10-22
 - [Palma → Seoul](https://www.happylowcost.com/en/flights/palma-seoul/): from 621 € return, usual 677 €, 1 stop(s), Vueling, checked 2026-10-22
 - [Palma → Bali](https://www.happylowcost.com/en/flights/palma-bali/): from 638 € return, usual 734 €, 2 stop(s), Ryanair, checked 2026-10-22
+- [Palma → Sri Lanka](https://www.happylowcost.com/en/flights/palma-sri-lanka/): from 668 € return, usual 751 €, 3 stop(s), Wizz Air Malta, checked 2026-10-22
 - [Palma → Nairobi](https://www.happylowcost.com/en/flights/palma-nairobi/): from 730 € return, usual 737 €, 2 stop(s), Ryanair, checked 2026-10-22
 - [Palma → San Juan](https://www.happylowcost.com/en/flights/palma-san-juan/): from 736 € return, usual 768 €, 3 stop(s), Wizz Air Malta, checked 2026-10-22
 - [Palma → Jacksonville](https://www.happylowcost.com/en/flights/palma-jacksonville/): from 751 € return, usual 766 €, 3 stop(s), Air Europa, checked 2026-10-22
@@ -781,6 +820,7 @@ Each guide has what to see, a day-by-day route, when to go, where to stay, what 
 - [Paris → Milan](https://www.happylowcost.com/en/flights/paris-milan/): from 42 € return, usual 44 €, nonstop, Ryanair, cheapest month 2027-01 (39 €), checked 2026-10-22
 - [Paris → Fez](https://www.happylowcost.com/en/flights/paris-fez/): from 43 € return, usual 58 €, nonstop, Ryanair, checked 2026-10-22
 - [Paris → Sardinia](https://www.happylowcost.com/en/flights/paris-sardinia/): from 56 € return, usual 58 €, nonstop, Ryanair, checked 2026-10-22
+- [Paris → Agadir](https://www.happylowcost.com/en/flights/paris-agadir/): from 67 € return, usual 69 €, nonstop, Ryanair, checked 2026-10-22
 - [Paris → Berlin](https://www.happylowcost.com/en/flights/paris-berlin/): from 101 € return, usual 107 €, nonstop, Transavia France, checked 2026-10-22
 - [Paris → Oslo](https://www.happylowcost.com/en/flights/paris-oslo/): from 119 € return, usual 129 €, nonstop, Transavia France, checked 2026-10-22
 - [Paris → Hamburg](https://www.happylowcost.com/en/flights/paris-hamburg/): from 122 € return, usual 133 €, nonstop, Eurowings, checked 2026-10-22
@@ -788,6 +828,7 @@ Each guide has what to see, a day-by-day route, when to go, where to stay, what 
 - [Paris → Riga](https://www.happylowcost.com/en/flights/paris-riga/): from 155 € return, usual 183 €, nonstop, Air France, checked 2026-10-22
 - [Paris → Cyprus](https://www.happylowcost.com/en/flights/paris-cyprus/): from 171 € return, usual 203 €, 1 stop(s), Ryanair, checked 2026-10-22
 - [Paris → Sal Island](https://www.happylowcost.com/en/flights/paris-sal-island/): from 221 € return, usual 230 €, 1 stop(s), Transavia France, checked 2026-10-22
+- [Paris → The Azores](https://www.happylowcost.com/en/flights/paris-azores/): from 226 € return, usual 244 €, 1 stop(s), Transavia France, checked 2026-10-22
 - [Paris → Los Angeles](https://www.happylowcost.com/en/flights/paris-los-angeles/): from 491 € return, usual 677 €, 1 stop(s), TAP Portugal, checked 2026-10-22
 - [Paris → Bangkok](https://www.happylowcost.com/en/flights/paris-bangkok/): from 531 € return, usual 572 €, 1 stop(s), Hainan Airlines, checked 2026-10-22
 - [Paris → Seoul](https://www.happylowcost.com/en/flights/paris-seoul/): from 531 € return, usual 556 €, 1 stop(s), China Eastern Airlines, checked 2026-10-22
@@ -950,6 +991,7 @@ Each guide has what to see, a day-by-day route, when to go, where to stay, what 
 - [Singapore → Vilnius](https://www.happylowcost.com/en/flights/singapore-vilnius/): from 694 € return, usual 794 €, 2 stop(s), Etihad Airways, checked 2026-10-23
 - [Singapore → Riga](https://www.happylowcost.com/en/flights/singapore-riga/): from 703 € return, usual 747 €, 2 stop(s), Oman Air, checked 2026-10-23
 - [Singapore → Cyprus](https://www.happylowcost.com/en/flights/singapore-cyprus/): from 710 € return, usual 722 €, 1 stop(s), Scoot, checked 2026-10-23
+- [Singapore → Madeira](https://www.happylowcost.com/en/flights/singapore-madeira/): from 713 € return, usual 795 €, 2 stop(s), Oman Air, checked 2026-10-23
 - [Singapore → Iceland](https://www.happylowcost.com/en/flights/singapore-iceland/): from 747 € return, usual 819 €, 1 stop(s), Lufthansa, checked 2026-10-23
 - [Singapore → Zanzibar](https://www.happylowcost.com/en/flights/singapore-zanzibar/): from 807 € return, usual 850 €, 2 stop(s), Air India Limited, checked 2026-10-23
 - [Singapore → Sal Island](https://www.happylowcost.com/en/flights/singapore-sal-island/): from 831 € return, usual 904 €, 2 stop(s), Air China, checked 2026-10-23
@@ -968,8 +1010,10 @@ Each guide has what to see, a day-by-day route, when to go, where to stay, what 
 - [Sydney → Bangkok](https://www.happylowcost.com/en/flights/sydney-bangkok/): from 495 € return, usual 694 €, 1 stop(s), China Southern Airlines, checked 2026-10-23
 - [Sydney → Singapore](https://www.happylowcost.com/en/flights/sydney-singapore/): from 525 € return, usual 632 €, 1 stop(s), Batik Air Malaysia, checked 2026-10-23
 - [Sydney → Phuket](https://www.happylowcost.com/en/flights/sydney-phuket/): from 526 € return, usual 620 €, 1 stop(s), Batik Air Malaysia, checked 2026-10-23
+- [Sydney → Phu Quoc](https://www.happylowcost.com/en/flights/sydney-phu-quoc/): from 574 € return, usual 664 €, 1 stop(s), VietJet Air, checked 2026-10-23
 - [Sydney → Kyoto](https://www.happylowcost.com/en/flights/sydney-kyoto/): from 703 € return, usual 748 €, 1 stop(s), Tway Airlines, checked 2026-10-23
 - [Sydney → Tallinn](https://www.happylowcost.com/en/flights/sydney-tallinn/): from 946 € return, usual 1258 €, 2 stop(s), China Southern Airlines, checked 2026-10-23
+- [Sydney → Palermo](https://www.happylowcost.com/en/flights/sydney-palermo/): from 951 € return, usual 1230 €, 2 stop(s), China Southern Airlines, checked 2026-10-23
 - [Sydney → Fez](https://www.happylowcost.com/en/flights/sydney-fez/): from 990 € return, usual 1203 €, 2 stop(s), China Southern Airlines, checked 2026-10-23
 - [Sydney → Bruges](https://www.happylowcost.com/en/flights/sydney-bruges/): from 993 € return, usual 1322 €, 2 stop(s), China Southern Airlines, checked 2026-10-23
 - [Sydney → Fort Lauderdale](https://www.happylowcost.com/en/flights/sydney-fort-lauderdale/): from 1008 € return, usual 1194 €, 2 stop(s), Fiji Airways, checked 2026-10-23
@@ -997,6 +1041,7 @@ Each guide has what to see, a day-by-day route, when to go, where to stay, what 
 - [Toronto → Bogota](https://www.happylowcost.com/en/flights/toronto-bogota/): from 462 € return, usual 565 €, 1 stop(s), LATAM Airlines, checked 2026-10-23
 - [Toronto → Rome](https://www.happylowcost.com/en/flights/toronto-rome/): from 500 € return, usual 634 €, 1 stop(s), KLM Royal Dutch Airlines, checked 2026-10-23
 - [Toronto → Bruges](https://www.happylowcost.com/en/flights/toronto-bruges/): from 526 € return, usual 639 €, 1 stop(s), TAP Portugal, checked 2026-10-23
+- [Toronto → Zurich](https://www.happylowcost.com/en/flights/toronto-zurich/): from 542 € return, usual 543 €, 1 stop(s), Condor, checked 2026-10-23
 - [Toronto → Peru](https://www.happylowcost.com/en/flights/toronto-peru/): from 552 € return, usual 553 €, nonstop, Air Transat, checked 2026-10-23
 - [Toronto → Budapest](https://www.happylowcost.com/en/flights/toronto-budapest/): from 553 € return, usual 612 €, 1 stop(s), Air France, checked 2026-10-23
 - [Toronto → Riga](https://www.happylowcost.com/en/flights/toronto-riga/): from 575 € return, usual 715 €, 1 stop(s), SAS, checked 2026-10-23
@@ -1009,6 +1054,7 @@ Each guide has what to see, a day-by-day route, when to go, where to stay, what 
 - [Toronto → Buenos Aires](https://www.happylowcost.com/en/flights/toronto-buenos-aires/): from 804 € return, usual 832 €, 1 stop(s), Arajet, checked 2026-10-23
 - [Toronto → Dubai](https://www.happylowcost.com/en/flights/toronto-dubai/): from 877 € return, usual 1005 €, 1 stop(s), Turkish Airlines, checked 2026-10-23
 - [Toronto → Kyoto](https://www.happylowcost.com/en/flights/toronto-kyoto/): from 883 € return, usual 945 €, 1 stop(s), Air Canada, checked 2026-10-23
+- [Toronto → Phu Quoc](https://www.happylowcost.com/en/flights/toronto-phu-quoc/): from 1066 € return, usual 1089 €, 2 stop(s), Porter Airlines, checked 2026-10-23
 - [Toronto → Vietnam](https://www.happylowcost.com/en/flights/toronto-vietnam/): from 1076 € return, usual 1118 €, 2 stop(s), Porter Airlines, checked 2026-10-23
 - [Toronto → Zanzibar](https://www.happylowcost.com/en/flights/toronto-zanzibar/): from 1190 € return, usual 1203 €, 2 stop(s), Porter Airlines, checked 2026-10-23
 - [Valencia → Milan](https://www.happylowcost.com/en/flights/valencia-milan/): from 36 € return, usual 38 €, nonstop, Ryanair, checked 2026-11-20
@@ -1038,6 +1084,7 @@ Each guide has what to see, a day-by-day route, when to go, where to stay, what 
 - [Valencia → Las Vegas](https://www.happylowcost.com/en/flights/valencia-las-vegas/): from 860 € return, usual 949 €, 3 stop(s), Ryanair, checked 2026-11-20
 - [Valencia → Rio de Janeiro](https://www.happylowcost.com/en/flights/valencia-rio-de-janeiro/): from 869 € return, usual 1382 €, 3 stop(s), Air Europa, checked 2026-11-21
 - [Valencia → Mauritius](https://www.happylowcost.com/en/flights/valencia-mauritius/): from 953 € return, usual 1024 €, 2 stop(s), Ryanair, checked 2026-11-20
+- [Valencia → Bogota](https://www.happylowcost.com/en/flights/valencia-bogota/): from 1057 € return, usual 1182 €, 2 stop(s), Air Europa, checked 2026-11-19
 - [Valencia → Portland](https://www.happylowcost.com/en/flights/valencia-portland/): from 2013 € return, usual 2257 €, 2 stop(s), Royal Air Maroc, checked 2026-11-20
 - [Vienna → Venice](https://www.happylowcost.com/en/flights/vienna-venice/): from 43 € return, usual 45 €, nonstop, Ryanair, checked 2026-10-23
 - [Vienna → Milan](https://www.happylowcost.com/en/flights/vienna-milan/): from 48 € return, usual 68 €, nonstop, Ryanair, checked 2026-10-23
@@ -1065,6 +1112,7 @@ Each guide has what to see, a day-by-day route, when to go, where to stay, what 
 - [Vienna → Sri Lanka](https://www.happylowcost.com/en/flights/vienna-sri-lanka/): from 568 € return, usual 585 €, 1 stop(s), Air Arabia, checked 2026-10-23
 - [Vienna → Singapore](https://www.happylowcost.com/en/flights/vienna-singapore/): from 570 € return, usual 582 €, nonstop, Scoot, checked 2026-10-23
 - [Vienna → Nairobi](https://www.happylowcost.com/en/flights/vienna-nairobi/): from 577 € return, usual 579 €, 1 stop(s), Etihad Airways, checked 2026-10-23
+- [Vienna → San Francisco](https://www.happylowcost.com/en/flights/vienna-san-francisco/): from 578 € return, usual 671 €, 1 stop(s), Air Canada, checked 2026-10-23
 - [Vienna → Orlando](https://www.happylowcost.com/en/flights/vienna-orlando/): from 594 € return, usual 680 €, 1 stop(s), Ryanair, checked 2026-10-23
 - [Vienna → Miami](https://www.happylowcost.com/en/flights/vienna-miami/): from 626 € return, usual 657 €, 1 stop(s), SAS, checked 2026-10-23
 - [Vienna → Bali](https://www.happylowcost.com/en/flights/vienna-bali/): from 627 € return, usual 716 €, 2 stop(s), Scoot, checked 2026-10-23
@@ -1090,9 +1138,11 @@ Each guide has what to see, a day-by-day route, when to go, where to stay, what 
 - [Zaragoza → London](https://www.happylowcost.com/en/flights/zaragoza-london/): from 45 € return, usual 84 €, nonstop, Ryanair, checked 2026-10-22
 - [Zaragoza → Bruges](https://www.happylowcost.com/en/flights/zaragoza-bruges/): from 87 € return, usual 111 €, nonstop, Ryanair, checked 2026-10-22
 - [Zaragoza → Brussels](https://www.happylowcost.com/en/flights/zaragoza-brussels/): from 87 € return, usual 111 €, nonstop, Ryanair, checked 2026-10-22
+- [Zaragoza → Sardinia](https://www.happylowcost.com/en/flights/zaragoza-sardinia/): from 114 € return, usual 134 €, 1 stop(s), Ryanair, checked 2026-10-22
 - [Zaragoza → Stockholm](https://www.happylowcost.com/en/flights/zaragoza-stockholm/): from 118 € return, usual 184 €, 1 stop(s), Ryanair, checked 2026-10-22
 - [Zaragoza → Fez](https://www.happylowcost.com/en/flights/zaragoza-fez/): from 120 € return, usual 130 €, 1 stop(s), Ryanair, checked 2026-10-22
 - [Zaragoza → Vilnius](https://www.happylowcost.com/en/flights/zaragoza-vilnius/): from 128 € return, usual 167 €, 1 stop(s), Wizz Air Malta, checked 2026-10-22
+- [Zaragoza → Naples](https://www.happylowcost.com/en/flights/zaragoza-naples/): from 130 € return, usual 133 €, 1 stop(s), Wizz Air Malta, checked 2026-10-22
 - [Zaragoza → Sofia](https://www.happylowcost.com/en/flights/zaragoza-sofia/): from 133 € return, usual 142 €, 1 stop(s), Wizz Air Malta, checked 2026-10-22
 - [Zaragoza → Warsaw](https://www.happylowcost.com/en/flights/zaragoza-warsaw/): from 133 € return, usual 135 €, 1 stop(s), Wizz Air Malta, checked 2026-10-22
 - [Zaragoza → Copenhagen](https://www.happylowcost.com/en/flights/zaragoza-copenhagen/): from 135 € return, usual 148 €, 1 stop(s), Ryanair, checked 2026-10-22
@@ -1100,6 +1150,7 @@ Each guide has what to see, a day-by-day route, when to go, where to stay, what 
 - [Zaragoza → Agadir](https://www.happylowcost.com/en/flights/zaragoza-agadir/): from 140 € return, usual 160 €, 1 stop(s), Ryanair, checked 2026-10-22
 - [Zaragoza → Venice](https://www.happylowcost.com/en/flights/zaragoza-venice/): from 142 € return, usual 160 €, 1 stop(s), Ryanair, checked 2026-10-22
 - [Zaragoza → Belgrade](https://www.happylowcost.com/en/flights/zaragoza-belgrade/): from 143 € return, usual 176 €, 1 stop(s), Wizz Air Malta, checked 2026-10-22
+- [Zaragoza → Vienna](https://www.happylowcost.com/en/flights/zaragoza-vienna/): from 156 € return, usual 162 €, 1 stop(s), Ryanair, checked 2026-10-22
 - [Zaragoza → Porto](https://www.happylowcost.com/en/flights/zaragoza-porto/): from 159 € return, usual 172 €, 1 stop(s), Ryanair, checked 2026-10-22
 - [Zaragoza → Madeira](https://www.happylowcost.com/en/flights/zaragoza-madeira/): from 174 € return, usual 185 €, 1 stop(s), Wizz Air Malta, checked 2026-10-22
 - [Zaragoza → Istanbul](https://www.happylowcost.com/en/flights/zaragoza-istanbul/): from 181 € return, usual 230 €, 1 stop(s), Wizz Air Malta, checked 2026-10-22
@@ -1121,6 +1172,7 @@ Each guide has what to see, a day-by-day route, when to go, where to stay, what 
 - [Zúrich → Istanbul](https://www.happylowcost.com/en/flights/zurich-istanbul/): from 104 € return, usual 107 €, nonstop, AJet, checked 2026-10-23
 - [Zúrich → Sardinia](https://www.happylowcost.com/en/flights/zurich-sardinia/): from 139 € return, usual 177 €, 1 stop(s), Vueling, checked 2026-10-23
 - [Zúrich → Cyprus](https://www.happylowcost.com/en/flights/zurich-cyprus/): from 178 € return, usual 178 €, 1 stop(s), Air Serbia, checked 2026-10-23
+- [Zúrich → Krakow](https://www.happylowcost.com/en/flights/zurich-krakow/): from 179 € return, usual 186 €, 1 stop(s), Air Serbia, checked 2026-10-23
 - [Zúrich → Bruges](https://www.happylowcost.com/en/flights/zurich-bruges/): from 198 € return, usual 201 €, 1 stop(s), KLM Royal Dutch Airlines, checked 2026-10-23
 - [Zúrich → Vietnam](https://www.happylowcost.com/en/flights/zurich-vietnam/): from 628 € return, usual 660 €, 1 stop(s), China Eastern Airlines, checked 2026-10-23
 - [Zúrich → Phu Quoc](https://www.happylowcost.com/en/flights/zurich-phu-quoc/): from 731 € return, usual 772 €, 2 stop(s), Pegasus, checked 2026-10-23
@@ -1138,7 +1190,9 @@ Each guide has what to see, a day-by-day route, when to go, where to stay, what 
 - [Amsterdam → London](https://www.happylowcost.com/en/flights/amsterdam-london/): from 119 € return, usual 120 €, nonstop, easyJet, checked 2026-10-22
 - [Amsterdam → Bruges](https://www.happylowcost.com/en/flights/amsterdam-bruges/): from 162 € return, usual 173 €, 1 stop(s), Ryanair, checked 2026-10-22
 - [Amsterdam → Brussels](https://www.happylowcost.com/en/flights/amsterdam-brussels/): from 162 € return, usual 173 €, 1 stop(s), Ryanair, checked 2026-10-22
+- [Amsterdam → Warsaw](https://www.happylowcost.com/en/flights/amsterdam-warsaw/): from 195 € return, usual 199 €, nonstop, LOT Polish Airlines, checked 2026-10-22
 - [Amsterdam → Vienna](https://www.happylowcost.com/en/flights/amsterdam-vienna/): from 210 € return, usual 213 €, nonstop, KLM Royal Dutch Airlines, checked 2026-10-22
+- [Amsterdam → Iceland](https://www.happylowcost.com/en/flights/amsterdam-iceland/): from 213 € return, usual 246 €, nonstop, Transavia, checked 2026-10-22
 - [Amsterdam → Mykonos](https://www.happylowcost.com/en/flights/amsterdam-mykonos/): from 266 € return, usual 288 €, 1 stop(s), Transavia, checked 2026-10-22
 - [Amsterdam → Cairo](https://www.happylowcost.com/en/flights/amsterdam-cairo/): from 273 € return, usual 284 €, nonstop, Transavia, checked 2026-10-22
 - [Amsterdam → Nairobi](https://www.happylowcost.com/en/flights/amsterdam-nairobi/): from 524 € return, usual 568 €, 1 stop(s), Saudi Arabian Airlines, checked 2026-10-22

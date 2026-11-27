@@ -230,6 +230,14 @@ Málaga has far more flights and cheaper fares, and it is only about 2 hours awa
 
 Yes, Granada is safe. Watch for pickpockets in crowded spots and ignore the rosemary sellers.
 
+### What to see in Granada in one day?
+
+If you only have one day, follow day 1 of this itinerary: The Alhambra. Morning: take the C30 or C32 minibus from Plaza Isabel la Católica to the Alhambra, or walk up the Cuesta de Gomérez from Plaza Nueva (20-25 minutes, steep).
+
+### What to see in Granada in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: The Alhambra. Morning: take the C30 or C32 minibus from Plaza Isabel la Católica to the Alhambra, or walk up the Cuesta de Gomérez from Plaza Nueva (20-25 minutes, steep). Day 2: The Albaicín and Sacromonte. Morning: start at Plaza Nueva, walk Carrera del Darro, visit El Bañuelo, then climb into the Albaicín.
+
 ### Is Granada expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €50-70 per person per day and the "mid-range" level at about €120-180. Flights are extra: this page shows real fares checked by Happy Low Cost.

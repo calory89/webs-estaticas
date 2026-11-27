@@ -127,6 +127,14 @@ Con 3 días ves lo esencial de Viena sin prisas. La ruta de esta guía está org
 
 Hoy el chollo más barato que tenemos a Viena cuesta 67 € ida y vuelta desde Palma de Mallorca. Los precios cambian cada hora: compruébalo en la página del chollo.
 
+### ¿Qué ver en Viena en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Centro histórico. Stephansdom por la mañana, paseo por Graben y Kohlmarkt, Hofburg y tarde de café.
+
+### ¿Qué ver en Viena en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro histórico. Stephansdom por la mañana, paseo por Graben y Kohlmarkt, Hofburg y tarde de café. Día 2: Palacios y arte. Schönbrunn temprano, con jardines y Gloriette.
+
 ### ¿Es caro viajar a Viena?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 60-80 euros por persona y día, y en el nivel "cómodo", unos 200 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

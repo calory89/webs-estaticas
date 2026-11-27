@@ -220,6 +220,14 @@ Yes, if you like real cities and the sea. It is rougher than Nice but cheaper, m
 
 The Plage des Catalans is closest to the centre, Malmousque has rocks and clear water, and the Calanques are the most beautiful.
 
+### What to see in Marseille in one day?
+
+If you only have one day, follow day 1 of this itinerary: Old port and old town. Morning: fish market on the Quai des Belges, then climb into Le Panier and the Vieille Charité before the crowds.
+
+### What to see in Marseille in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Old port and old town. Morning: fish market on the Quai des Belges, then climb into Le Panier and the Vieille Charité before the crowds. Day 2: The Calanques. Morning: leave early on bus 21 to Luminy and hike to Sugiton (book in summer), or take the bus to Sormiou.
+
 ### Is Marseille expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €60-80 per person per day and the "mid-range" level at about €150-220. Flights are extra: this page shows real fares checked by Happy Low Cost.

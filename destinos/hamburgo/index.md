@@ -139,6 +139,14 @@ No. En hoteles, restaurantes y transporte se maneja bien el inglés, aunque un �
 
 Para quien escribió esta guía, sí: Hamburgo no es la ciudad alemana que sale en las postales, y por eso me gusta. Con 3 días ves lo esencial. Presupuesto: Como referencia, una cama en un hostal suele costar entre 25 y 45 euros, y una habitación doble en un hotel sencillo entre 80 y 130, con variaciones fuertes según la fecha.
 
+### ¿Qué ver en Hamburgo en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Rathaus, Jungfernstieg, Speicherstadt y HafenCity, Elbphilharmonie al atardecer.
+
+### ¿Qué ver en Hamburgo en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Rathaus, Jungfernstieg, Speicherstadt y HafenCity, Elbphilharmonie al atardecer. Día 2: Landungsbrücken, Alter Elbtunnel, ferri 62, Michel y noche por St.
+
 ### ¿Es caro viajar a Hamburgo?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 50-70 euros por persona y día, y en el nivel "cómodo", unos más de 180 euros. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

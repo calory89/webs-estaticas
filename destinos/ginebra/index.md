@@ -247,6 +247,10 @@ En tren, en unos 7 minutos hasta Cornavin. Es gratis con el billete que da la m�
 
 Si te interesa la ciencia, sí: el centro de visitantes es gratis y está a media hora en tranvía. Si buscas ver el acelerador por dentro, piensa que las visitas a instalaciones son limitadas y hay que reservar con antelación.
 
+### ¿Qué ver en Ginebra en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Lago y casco antiguo. Mañana. Empieza desayunando en Bains des Pâquis.
+
 ### ¿Es caro viajar a Ginebra?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos unos 100-120 € por persona y día, y en el nivel "medio", unos unos 200-260 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

@@ -153,6 +153,14 @@ Ferry line 62 from Landungsbrücken. It uses your normal transport ticket and gi
 
 3 days are enough to see the essentials of Hamburg without rushing. The route in this guide is organised day by day.
 
+### What to see in Hamburg in one day?
+
+If you only have one day, follow day 1 of this itinerary: Rathaus, Jungfernstieg, Kontorhaus District and Chilehaus, then Speicherstadt and Elbphilharmonie at sunset.
+
+### What to see in Hamburg in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Rathaus, Jungfernstieg, Kontorhaus District and Chilehaus, then Speicherstadt and Elbphilharmonie at sunset. Day 2: Michel, Landungsbrücken, the Old Elbe Tunnel, ferry 62, then dinner and drinks in St.
+
 ## Flights and deals
 
 - Flight deals to Hamburg: https://www.happylowcost.com/en/destinations/hamburg/#deals

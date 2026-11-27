@@ -219,6 +219,14 @@ Es más barato que Croacia, aunque el casco antiguo y Perast tienen precios de z
 
 Para quien escribió esta guía, sí: Kotor es un casco antiguo amurallado y diminuto, metido al fondo de una bahía con montañas que caen a pico sobre el agua. Con 3 días ves lo esencial. Presupuesto: Presupuesto ajustado : unos 60-80 € por persona y día.
 
+### ¿Qué ver en Kotor en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Casco antiguo y fortaleza. Mañana: empieza muy temprano con la subida a la fortaleza de San Juan, antes del calor y de los cruceros.
+
+### ¿Qué ver en Kotor en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Casco antiguo y fortaleza. Mañana: empieza muy temprano con la subida a la fortaleza de San Juan, antes del calor y de los cruceros. Día 2: Perast y la bahía. Mañana: autobús a Perast (unos 20-25 minutos).
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Kotor: https://www.happylowcost.com/destinos/kotor/#chollos

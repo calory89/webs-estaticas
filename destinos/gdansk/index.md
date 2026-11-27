@@ -238,6 +238,14 @@ En hoteles, museos y restaurantes del centro, sí. En bares de leche y con gente
 
 Para quien escribió esta guía, sí: Gdansk es una ciudad portuaria del Báltico que quedó arrasada en 1945 y se reconstruyó casa a casa, con fachadas estrechas de colores, grúas de astillero y mucha historia del siglo XX. Con 3 días ves lo esencial. Presupuesto: Presupuesto por persona y día, sin vuelo: Ajustado: 50-70 € al día.
 
+### ¿Qué ver en Gdansk en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Casco histórico y miradores. Mañana: empieza temprano en la Puerta Dorada y baja por la calle Długa hasta Długi Targ antes de que lleguen los grupos.
+
+### ¿Qué ver en Gdansk en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Casco histórico y miradores. Mañana: empieza temprano en la Puerta Dorada y baja por la calle Długa hasta Długi Targ antes de que lleguen los grupos. Día 2: Siglo XX, astilleros y Westerplatte. Mañana: Museo de la Segunda Guerra Mundial a primera hora (3-4 horas).
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Gdansk: https://www.happylowcost.com/destinos/gdansk/#chollos

@@ -235,6 +235,14 @@ Take a Grab car for about €4-9, which takes 30-90 minutes depending on traffic
 
 The National Museum of the Philippines, which is three free museums next to Rizal Park. Combine it with a sunset on Manila Bay.
 
+### What to see in Manila in one day?
+
+If you only have one day, follow day 1 of this itinerary: Intramuros and the museums. Morning: Be at Fort Santiago when it opens, then walk south through Intramuros to the Manila Cathedral, San Agustin and Casa Manila.
+
+### What to see in Manila in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Intramuros and the museums. Morning: Be at Fort Santiago when it opens, then walk south through Intramuros to the Manila Cathedral, San Agustin and Casa Manila. Day 2: Binondo, Escolta and Quiapo. Morning: Skip breakfast. Start at Binondo Church around 10am and eat along Ongpin and Carvajal Street.
+
 ### Is Manila expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €30-40 per person per day and the "comfortable" level at about €180+. Flights are extra: this page shows real fares checked by Happy Low Cost.

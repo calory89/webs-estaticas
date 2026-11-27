@@ -234,6 +234,14 @@ Con el autobús EA por unos 4-5 € y unos 35 minutos de trayecto, o en taxi con
 
 Merece la pena vivirlo una vez, pero los hoteles se disparan de precio y el centro está colapsado. Si buscas ver monumentos con tranquilidad, elige otra fecha.
 
+### ¿Qué ver en Sevilla en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: El Sevilla clásico. Mañana: Real Alcázar en el primer turno, luego paseo por el barrio de Santa Cruz y los Jardines de Murillo.
+
+### ¿Qué ver en Sevilla en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: El Sevilla clásico. Mañana: Real Alcázar en el primer turno, luego paseo por el barrio de Santa Cruz y los Jardines de Murillo. Día 2: Catedral, centro y Triana. Mañana: Catedral y Giralda a primera hora, Archivo de Indias y paseo por el Arenal hasta la Torre del Oro.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Sevilla: https://www.happylowcost.com/destinos/sevilla/#chollos

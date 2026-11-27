@@ -121,6 +121,14 @@ Sí, si es tu primera vez en Bélgica. Pero si prefieres evitar las multitudes, 
 
 Hoy el chollo más barato que tenemos a Bruselas cuesta 65 € ida y vuelta desde Valencia. Los precios cambian cada hora: compruébalo en la página del chollo.
 
+### ¿Qué ver en Bruselas en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Grand-Place, Manneken Pis, Galerías Saint-Hubert, catedral y paseo por Sainte-Catherine.
+
+### ¿Qué ver en Bruselas en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Grand-Place, Manneken Pis, Galerías Saint-Hubert, catedral y paseo por Sainte-Catherine. Día 2: Mañana en el Mont des Arts y el Museo Magritte, Sablon a mediodía, Marolles y mercadillo por la tarde.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Bruselas: https://www.happylowcost.com/destinos/bruselas/#chollos

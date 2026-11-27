@@ -127,6 +127,14 @@ Rakia, rose products, honey, lyutenitsa and a jar of white cheese if your airlin
 
 For the traveller who wrote this guide, yes: Sofia doesn't try to charm you in the first ten minutes. 3 days are enough for the essentials. Budget: Budget: about €35-45, with a hostel bed, bakery breakfasts, cheap lunches and public transport.
 
+### What to see in Sofia in one day?
+
+If you only have one day, follow day 1 of this itinerary: Alexander Nevsky early, then Sveta Nedelya, the Serdica ruins, St George Rotunda, Banya Bashi and the Central Market Hall.
+
+### What to see in Sofia in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Alexander Nevsky early, then Sveta Nedelya, the Serdica ruins, St George Rotunda, Banya Bashi and the Central Market Hall. Day 2: Boyana Church in the morning, then the National Museum of History if you like museums.
+
 ## Flights and deals
 
 - Flight deals to Sofia: https://www.happylowcost.com/en/destinations/sofia/#deals

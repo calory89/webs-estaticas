@@ -216,6 +216,14 @@ En tren KTM Komuter desde KL Sentral, unos 30 minutos y menos de 1 €. La estac
 
 Ropa ligera para la calle, pero con hombros y rodillas cubiertos en templos y mezquitas. Lleva una chaqueta fina: el aire acondicionado del metro y de los centros comerciales está muy fuerte.
 
+### ¿Qué ver en Kuala Lumpur en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Centro histórico y Chinatown. Mañana: empieza en la plaza Merdeka y el edificio Sultan Abdul Samad, cruza a la Masjid Jamek y baja andando hasta Central Market.
+
+### ¿Qué ver en Kuala Lumpur en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro histórico y Chinatown. Mañana: empieza en la plaza Merdeka y el edificio Sultan Abdul Samad, cruza a la Masjid Jamek y baja andando hasta Central Market. Día 2: Batu Caves y la zona del lago. Mañana: tren KTM Komuter temprano desde KL Sentral a Batu Caves (30 minutos).
+
 ### ¿Es caro viajar a Kuala Lumpur?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 30-40 € por persona y día, y en el nivel "medio", unos 70-100 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

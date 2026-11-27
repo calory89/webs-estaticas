@@ -206,6 +206,14 @@ Poco fuera de hoteles y zonas muy turísticas. Lleva un traductor con descarga o
 
 Para quien escribió esta guía, sí: Pekín no es una ciudad bonita en el sentido europeo. Con 4 días ves lo esencial. Presupuesto: Presupuesto ajustado: 45-60 € al día (albergue o habitación sencilla, comida de barrio, metro y entradas).
 
+### ¿Qué ver en Pekín en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: El eje imperial. Mañana: Tiananmén temprano y Ciudad Prohibida (con reserva hecha).
+
+### ¿Qué ver en Pekín en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: El eje imperial. Mañana: Tiananmén temprano y Ciudad Prohibida (con reserva hecha). Día 2: La Gran Muralla. Mañana: sal temprano hacia Mutianyu (tour en bus o coche privado).
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Pekín: https://www.happylowcost.com/destinos/pekin/#chollos

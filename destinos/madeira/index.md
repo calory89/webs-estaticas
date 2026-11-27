@@ -131,6 +131,14 @@ Hoy el chollo más barato que tenemos a Madeira cuesta 111 € ida y vuelta desd
 
 Para quien escribió esta guía, sí: Madeira es una isla pequeña con un relieve exagerado. Con 5 días ves lo esencial. Presupuesto: Como referencia general, un hostal o habitación sencilla puede salir desde unos 25-40 € por persona, un hotel de gama media entre 70 y 120 € la noche para dos, y los de categoría alta suben bastante, sobre todo en Navidad y Fin…
 
+### ¿Qué ver en Madeira en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Funchal a pie, Mercado dos Lavradores, Zona Velha y cena con espetada.
+
+### ¿Qué ver en Madeira en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Funchal a pie, Mercado dos Lavradores, Zona Velha y cena con espetada. Día 2: Monte, bajada en cesto y tarde de bodega o jardín botánico.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Madeira: https://www.happylowcost.com/destinos/madeira/#chollos

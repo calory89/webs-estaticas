@@ -226,6 +226,14 @@ Generally yes. The centre is safe day and night. Watch for pickpockets around Po
 
 Flying into Turin is faster, at about 45 minutes to the centre, but Milan airports often have cheaper low-cost fares. Compare the total price including the 1-2 hour transfer.
 
+### What to see in Turin in one day?
+
+If you only have one day, follow day 1 of this itinerary: Royal Turin and the centre. Morning: start in Piazza Castello with a coffee at Mulassano, then do Palazzo Madama and climb its tower.
+
+### What to see in Turin in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Royal Turin and the centre. Morning: start in Piazza Castello with a coffee at Mulassano, then do Palazzo Madama and climb its tower. Day 2: Egypt, cinema and the view. Morning: Museo Egizio at opening time, booked ahead.
+
 ## Flights and deals
 
 - Flight deals to Turin: https://www.happylowcost.com/en/destinations/turin/#deals

@@ -117,6 +117,14 @@ En general sí, con la prudencia habitual en una capital. En el centro hay mucha
 
 Sí, sobre todo por la Long Room de la biblioteca. Reserva online y ve a primera hora para evitar las colas.
 
+### ¿Qué ver en Dublín en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Centro y sur. Trinity a primera hora, Grafton Street, St Stephen's Green, Merrion Square y museo nacional.
+
+### ¿Qué ver en Dublín en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro y sur. Trinity a primera hora, Grafton Street, St Stephen's Green, Merrion Square y museo nacional. Día 2: La Dublín medieval y la de la cerveza. Catedral de San Patricio, Christ Church, castillo y Guinness Storehouse por la tarde.
+
 ### ¿Es caro viajar a Dublín?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 70-100 euros por persona y día, y en el nivel "cómodo", unos 250 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

@@ -237,6 +237,14 @@ Sí, son unas 3 horas en tren Amtrak o entre 4 y 5 en bus, desde unos 20-30 $. I
 
 Normalmente entre finales de marzo y principios de abril, aunque varía cada año según el tiempo. El Servicio de Parques Nacionales publica la previsión del pico de floración unas semanas antes.
 
+### ¿Qué ver en Washington D. C. en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Capitolio y museos del Mall. Mañana: visita guiada al Capitolio a primera hora y túnel a la Biblioteca del Congreso.
+
+### ¿Qué ver en Washington D. C. en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Capitolio y museos del Mall. Mañana: visita guiada al Capitolio a primera hora y túnel a la Biblioteca del Congreso. Día 2: Más museos y memoriales al atardecer. Mañana: Air and Space o Historia Natural en cuanto abran, y después Archivos Nacionales.
+
 ### ¿Es caro viajar a Washington D. C.?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 90-120 € por persona y día, y en el nivel "medio", unos 180-250 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

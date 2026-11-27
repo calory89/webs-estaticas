@@ -160,6 +160,14 @@ Cover your shoulders and knees at St Peter's and other major churches. Staff do 
 
 4 days are enough to see the essentials of Rome without rushing. The route in this guide is organised day by day.
 
+### What to see in Rome in one day?
+
+If you only have one day, follow day 1 of this itinerary: Colosseum, Forum and Palatine in the morning, lunch in Monti, then the Jewish Ghetto and Trastevere for dinner.
+
+### What to see in Rome in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Colosseum, Forum and Palatine in the morning, lunch in Monti, then the Jewish Ghetto and Trastevere for dinner. Day 2: Vatican Museums early, St Peter's, then an afternoon on foot through Prati and across the river to Piazza Navona, the Pantheon and Trevi at dusk.
+
 ## Flights and deals
 
 - Flight deals to Rome: https://www.happylowcost.com/en/destinations/rome/#deals

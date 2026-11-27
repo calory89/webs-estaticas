@@ -237,6 +237,14 @@ Después de un día de lluvia o viento, cuando se limpia el aire. En invierno y 
 
 Para quien escribió esta guía, sí: Santiago no es una ciudad que enamore a primera vista. Con 3 días ves lo esencial. Presupuesto: Por persona y día, sin vuelos: Ajustado: 45-60 €.
 
+### ¿Qué ver en Santiago de Chile en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Centro histórico y Lastarria. Mañana: empieza en La Moneda, sube por la calle Bandera o Ahumada hasta la Plaza de Armas y entra al Museo de Arte Precolombino.
+
+### ¿Qué ver en Santiago de Chile en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro histórico y Lastarria. Mañana: empieza en La Moneda, sube por la calle Bandera o Ahumada hasta la Plaza de Armas y entra al Museo de Arte Precolombino. Día 2: Memoria, Yungay y Bellavista. Mañana: metro hasta Quinta Normal y Museo de la Memoria.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Santiago de Chile: https://www.happylowcost.com/destinos/santiago-de-chile/#chollos

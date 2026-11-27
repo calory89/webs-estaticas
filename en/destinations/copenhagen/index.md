@@ -141,6 +141,14 @@ By bike and on foot. Most major sights sit within a short ride of each other, an
 
 For the traveller who wrote this guide, yes: Copenhagen is a capital you can actually relax in. 3 days are enough for the essentials. Budget: Budget: about 90 to 120 euros, with a hostel, bakery breakfasts, hot dogs and market lunches.
 
+### What to see in Copenhagen in one day?
+
+If you only have one day, follow day 1 of this itinerary: Nyhavn early, Amalienborg, the waterfront walk, lunch at Torvehallerne, Rosenborg and the King's Garden, then Tivoli in the evening.
+
+### What to see in Copenhagen in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Nyhavn early, Amalienborg, the waterfront walk, lunch at Torvehallerne, Rosenborg and the King's Garden, then Tivoli in the evening. Day 2: Christiansborg and the Round Tower, a wander along Strøget (skip the shops, enjoy the side streets), Glyptotek or Designmuseum, then dinner in Vesterbro.
+
 ## Flights and deals
 
 - Flight deals to Copenhagen: https://www.happylowcost.com/en/destinations/copenhagen/#deals

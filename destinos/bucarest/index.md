@@ -1,4 +1,4 @@
-# Qué ver en Bucarest en 3 días: guía de un viajero low cost
+# Qué ver en Bucarest en 3 días: qué hacer y cuánto cuesta
 
 > Guía de viaje de Bucarest de Happy Low Cost, itinerario de 3 días. Página original: https://www.happylowcost.com/destinos/bucarest/
 > Actualizada: 2026-10-21
@@ -122,6 +122,14 @@ No, aunque algunos sitios turísticos los admiten con mal cambio. Lo mejor es pa
 ### ¿Merece la pena ir al castillo de Bran desde Bucarest?
 
 Si te gustan los castillos o los paisajes de montaña, sí, combinándolo con Brașov. Si vas justo de tiempo, la capital te dará más por menos esfuerzo.
+
+### ¿Qué ver en Bucarest en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Casco antiguo por la mañana (Lipscani, Stavropoleos, Cărturești Carusel), comida en la zona y tarde por Calea Victoriei hasta Piața Revoluției.
+
+### ¿Qué ver en Bucarest en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Casco antiguo por la mañana (Lipscani, Stavropoleos, Cărturești Carusel), comida en la zona y tarde por Calea Victoriei hasta Piața Revoluției. Día 2: Visita al Parlamento a primera hora, paseo por Bulevardul Unirii y tarde en el Museo del Campesino.
 
 ### ¿Es caro viajar a Bucarest?
 

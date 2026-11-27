@@ -241,6 +241,14 @@ No. Todo el mundo habla castellano y en zonas turísticas también inglés. Un "
 
 Para quien escribió esta guía, sí: Barcelona es una ciudad muy fácil de disfrutar y bastante fácil de hacer mal. Con 3 días ves lo esencial. Presupuesto: Presupuesto ajustado: unos 70-90 € al día por persona.
 
+### ¿Qué ver en Barcelona en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Casco antiguo y mar. Mañana: empieza en plaça de Catalunya, baja por las Ramblas solo hasta la Boqueria y gira hacia el Gòtic: catedral, carrer del Bisbe, plaça Sant Felip Neri y plaça del Rei.
+
+### ¿Qué ver en Barcelona en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Casco antiguo y mar. Mañana: empieza en plaça de Catalunya, baja por las Ramblas solo hasta la Boqueria y gira hacia el Gòtic: catedral, carrer del Bisbe, plaça Sant Felip Neri y plaça del Rei. Día 2: Gaudí y Gràcia. Mañana: Park Güell a primera hora. Baja andando por Gràcia hasta passeig de Gràcia (unos 40 minutos con paradas en las plazas).
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Barcelona: https://www.happylowcost.com/destinos/barcelona/#chollos

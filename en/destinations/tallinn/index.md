@@ -117,6 +117,14 @@ It can be, if you have never been, and the ferry is easy. But with only three da
 
 3 days are enough to see the essentials of Tallinn without rushing. The route in this guide is organised day by day.
 
+### What to see in Tallinn in one day?
+
+If you only have one day, follow day 1 of this itinerary: Old Town. Start at Town Hall Square, climb Toompea, see the cathedral and the two viewpoints, then come back down for lunch.
+
+### What to see in Tallinn in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Old Town. Start at Town Hall Square, climb Toompea, see the cathedral and the two viewpoints, then come back down for lunch. Day 2: Beyond the walls. Take the tram to Kadriorg for the palace and park, then KUMU.
+
 ## Flights and deals
 
 - Flight deals to Tallinn: https://www.happylowcost.com/en/destinations/tallinn/#deals

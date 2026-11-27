@@ -245,6 +245,14 @@ El peso mexicano, aunque el dólar se acepta casi en todas partes. Pagar en peso
 
 Para quien escribió esta guía, sí: Los Cabos no es una ciudad, sino dos pueblos muy distintos unidos por una carretera de unos 30 km llena de resorts y campos de golf. Con 5 días ves lo esencial. Presupuesto: Calcula con 1 € a unos 20 MXN, y prepárate para ver muchos precios en dólares.
 
+### ¿Qué ver en Los Cabos en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: San José del Cabo. Mañana: llegada al aeropuerto (está al lado de San José) y paseo por el Estero.
+
+### ¿Qué ver en Los Cabos en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: San José del Cabo. Mañana: llegada al aeropuerto (está al lado de San José) y paseo por el Estero. Día 2: Cabo San Lucas y El Arco. Mañana: bus o coche a Cabo San Lucas (unos 40 minutos) y lancha temprano al Arco con parada en Playa del Amor.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Los Cabos: https://www.happylowcost.com/destinos/los-cabos/#chollos

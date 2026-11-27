@@ -253,6 +253,14 @@ Las zonas turísticas son tranquilas. Lo sensato: no dejar nada a la vista en el
 
 Poco: en Orlando y Kissimmee se habla mucho español y en los parques hay personal hispanohablante.
 
+### ¿Qué ver en Orlando en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Universal (Islands of Adventure y Universal Studios). Mañana: Islands of Adventure a la apertura, Hagrid's y VelociCoaster primero.
+
+### ¿Qué ver en Orlando en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Universal (Islands of Adventure y Universal Studios). Mañana: Islands of Adventure a la apertura, Hagrid's y VelociCoaster primero. Día 2: Magic Kingdom. Mañana: entra pronto y haz las montañas rusas.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Orlando: https://www.happylowcost.com/destinos/orlando/#chollos

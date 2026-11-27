@@ -217,6 +217,14 @@ Usually between -2 and -10°C, milder than most places at this latitude, but the
 
 Hike up the Sherpa Stairs and Fløya under the midnight sun, take a fjord cruise and drive out to Sommarøy. Late-night barbecues at Telegrafbukta are what the locals do.
 
+### What to see in Tromso in one day?
+
+If you only have one day, follow day 1 of this itinerary: The city on foot. Morning : start at the Polar Museum on the harbour, then walk Storgata past the cathedral.
+
+### What to see in Tromso in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: The city on foot. Morning : start at the Polar Museum on the harbour, then walk Storgata past the cathedral. Day 2: The big excursion. Morning : dog sledding or a reindeer visit (most leave early with hotel pickup), or a whale safari in early winter, which takes the whole day.
+
 ## Flights and deals
 
 - Flight deals to Tromso: https://www.happylowcost.com/en/destinations/tromso/#deals

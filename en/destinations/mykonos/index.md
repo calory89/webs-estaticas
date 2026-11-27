@@ -147,6 +147,14 @@ Not necessarily. Buses and water taxis cover the main places. A car or quad help
 
 September is a strong choice: warm sea, lighter crowds and open venues. Late May and June are also good.
 
+### What to see in Mykonos in one day?
+
+If you only have one day, follow day 1 of this itinerary: Early walk through Chora, then Paraportiani, the windmills and lunch.
+
+### What to see in Mykonos in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Early walk through Chora, then Paraportiani, the windmills and lunch. Day 2: Morning ferry to Delos, back by early afternoon.
+
 ## Flights and deals
 
 - Flight deals to Mykonos: https://www.happylowcost.com/en/destinations/mykonos/#deals

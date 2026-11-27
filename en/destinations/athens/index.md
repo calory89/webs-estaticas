@@ -131,6 +131,14 @@ Today the cheapest deal we have to Athens is €133 return from Zaragoza. Fares 
 
 For the traveller who wrote this guide, yes: Athens is loud, a bit scruffy, and wonderful. 3 days are enough for the essentials. Budget: Budget: about €60 to €80, with a hostel, street food and walking.
 
+### What to see in Athens in one day?
+
+If you only have one day, follow day 1 of this itinerary: Acropolis at opening, Acropolis Museum, lunch in Koukaki, then Anafiotika and Plaka.
+
+### What to see in Athens in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Acropolis at opening, Acropolis Museum, lunch in Koukaki, then Anafiotika and Plaka. Day 2: Ancient Agora in the morning, Monastiraki market, the Central Market, then the National Archaeological Museum.
+
 ## Flights and deals
 
 - Flight deals to Athens: https://www.happylowcost.com/en/destinations/athens/#deals

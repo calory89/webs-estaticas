@@ -240,6 +240,14 @@ October and November offer the best weather, with dry, warm days and no typhoons
 
 For the traveller who wrote this guide, yes: Taipei is not a pretty city at first glance. 4 days are enough for the essentials. Budget: Shoestring: €45-60 (NT$1,600-2,100) per day.
 
+### What to see in Taipei in one day?
+
+If you only have one day, follow day 1 of this itinerary: Old Taipei and Xinyi. Morning: Breakfast at Fuhang Soy Milk, then walk to Chiang Kai-shek Memorial Hall for the changing of the guard.
+
+### What to see in Taipei in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Old Taipei and Xinyi. Morning: Breakfast at Fuhang Soy Milk, then walk to Chiang Kai-shek Memorial Hall for the changing of the guard. Day 2: Museum, Dadaocheng and Ningxia. Morning: National Palace Museum when it opens.
+
 ## Flights and deals
 
 - Flight deals to Taipei: https://www.happylowcost.com/en/destinations/taipei/#deals

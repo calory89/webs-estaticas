@@ -245,6 +245,14 @@ Sí, con unos 20-22 °C de día y poca lluvia. El agua está fresca, así que el
 
 Sí, y es lo más habitual: el ferry desde Órzola tarda menos de media hora. Revisa el horario del último barco de vuelta antes de alejarte de Caleta de Sebo.
 
+### ¿Qué ver en Lanzarote en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Manrique y la capital. Mañana: Fundación César Manrique en Tahíche y después Teguise, con subida al castillo de Santa Bárbara.
+
+### ¿Qué ver en Lanzarote en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Manrique y la capital. Mañana: Fundación César Manrique en Tahíche y después Teguise, con subida al castillo de Santa Bárbara. Día 2: El norte. Mañana: Jameos del Agua a primera hora y Cueva de los Verdes justo después.
+
 ### ¿Es caro viajar a Lanzarote?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 70-90 € por persona y día, y en el nivel "presupuesto medio", unos unos 120-170 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

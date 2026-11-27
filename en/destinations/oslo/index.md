@@ -125,6 +125,14 @@ Take the regional train from Gardermoen to Oslo Central. It's about 25 to 30 min
 
 3 days are enough to see the essentials of Oslo without rushing. The route in this guide is organised day by day.
 
+### What to see in Oslo in one day?
+
+If you only have one day, follow day 1 of this itinerary: City centre. Start at the Opera House, walk to MUNCH, then cross to Akershus Fortress.
+
+### What to see in Oslo in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: City centre. Start at the Opera House, walk to MUNCH, then cross to Akershus Fortress. Day 2: West and parks. Vigeland Park in the morning, then lunch around Frogner.
+
 ## Flights and deals
 
 - Flight deals to Oslo: https://www.happylowcost.com/en/destinations/oslo/#deals

@@ -119,6 +119,14 @@ Con 3 días ves lo esencial de Vilna sin prisas. La ruta de esta guía está org
 
 Hoy el chollo más barato que tenemos a Vilna cuesta 110 € ida y vuelta desde Zaragoza. Los precios cambian cada hora: compruébalo en la página del chollo.
 
+### ¿Qué ver en Vilna en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Puerta del Alba, calle Pilies, universidad, Santa Ana y plaza de la Catedral.
+
+### ¿Qué ver en Vilna en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Puerta del Alba, calle Pilies, universidad, Santa Ana y plaza de la Catedral. Día 2: Trakai por la mañana. Por la tarde, Užupis y el paseo junto al río.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Vilna: https://www.happylowcost.com/destinos/vilna/#chollos

@@ -226,6 +226,14 @@ Nevşehir Kapadokya (NAV) is the closest, about 40 minutes from Göreme. Kayseri
 
 For the traveller who wrote this guide, yes: Cappadocia is not a city. It's a stretch of central Anatolia where volcanic ash eroded into cones, columns and canyons, and people carved homes, churches and entire underground towns into the rock. 4 days are enough for the essentials. Budget: Shoestring: about €45-60 a day.
 
+### What to see in Cappadocia in one day?
+
+If you only have one day, follow day 1 of this itinerary: Göreme and the valleys. Morning: balloon flight, or balloon watching from the hill if you're not flying.
+
+### What to see in Cappadocia in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Göreme and the valleys. Morning: balloon flight, or balloon watching from the hill if you're not flying. Day 2: North loop. Morning: Paşabağ early, then Zelve. Afternoon: Avanos, with lunch by the river and a pottery workshop.
+
 ## Flights and deals
 
 - Flight deals to Cappadocia: https://www.happylowcost.com/en/destinations/cappadocia/#deals

@@ -231,6 +231,14 @@ De finales de abril a junio y de septiembre a noviembre, con vuelos y hoteles ba
 
 Para quien escribió esta guía, sí: San Juan es una ciudad caribeña con dos caras que conviven a diez minutos en coche. Con 3 días ves lo esencial. Presupuesto: Presupuesto ajustado: unos 120-150 $ (110-140 €) por persona y día, durmiendo en hostal o apartamento compartido en Santurce, comiendo en kioscos y fondas y moviéndote en bus y Uber puntual.
 
+### ¿Qué ver en San Juan en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Viejo San Juan. Mañana: El Morro a primera hora, luego el cementerio desde arriba y bajada por la Calle Norzagaray hasta el Castillo San Cristóbal.
+
+### ¿Qué ver en San Juan en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Viejo San Juan. Mañana: El Morro a primera hora, luego el cementerio desde arriba y bajada por la Calle Norzagaray hasta el Castillo San Cristóbal. Día 2: Santurce y playa. Mañana: Museo de Arte de Puerto Rico y paseo por los murales de Calle Cerra.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a San Juan: https://www.happylowcost.com/destinos/san-juan/#chollos

@@ -215,6 +215,14 @@ The tourist areas are generally safe. The biggest risks are the ocean currents a
 
 For the traveller who wrote this guide, yes: Los Cabos is two very different towns joined by a 30 km strip of resorts. 5 days are enough for the essentials. Budget: Shoestring: €60-90 per day for a basic room or hostel, tacos, buses and free beaches.
 
+### What to see in Los Cabos in one day?
+
+If you only have one day, follow day 1 of this itinerary: Cabo San Lucas and El Arco. Morning: early panga to El Arco and Lover's Beach, then a couple of hours on the sand.
+
+### What to see in Los Cabos in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Cabo San Lucas and El Arco. Morning: early panga to El Arco and Lover's Beach, then a couple of hours on the sand. Day 2: The Corridor bays. Morning: head to Santa María by 9am to snorkel.
+
 ## Flights and deals
 
 - Flight deals to Los Cabos: https://www.happylowcost.com/en/destinations/los-cabos/#deals

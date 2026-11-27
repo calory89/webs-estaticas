@@ -236,6 +236,14 @@ Palermo has more big-name monuments, while Catania is a better base for Etna, Ta
 
 Yes. North of the centre you swim off black lava rocks at the Lungomare and Aci Castello, while La Playa to the south is a long sandy beach with lidos.
 
+### What to see in Catania in one day?
+
+If you only have one day, follow day 1 of this itinerary: Historic centre and the market. Morning: Granita and brioche, then straight to the Pescheria before 10am.
+
+### What to see in Catania in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Historic centre and the market. Morning: Granita and brioche, then straight to the Pescheria before 10am. Day 2: Etna. Morning: Take the early AST bus from the station to Rifugio Sapienza, or join a tour.
+
 ### Is Catania expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €50-70 per person per day and the "mid-range" level at about €110-170. Flights are extra: this page shows real fares checked by Happy Low Cost.

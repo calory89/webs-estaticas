@@ -128,6 +128,14 @@ Capas: camiseta, sudadera y cortavientos, incluso en verano. La niebla y el vien
 
 Para quien escribió esta guía, sí: San Francisco es una ciudad pequeña para lo que se espera de ella: unos 11 kilómetros de lado a lado, mucha cuesta y un clima que cambia de una calle a la siguiente. Con 4 días ves lo esencial.
 
+### ¿Qué ver en San Francisco en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Union Square, Chinatown, North Beach y puesta de sol en Coit Tower o Telegraph Hill.
+
+### ¿Qué ver en San Francisco en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Union Square, Chinatown, North Beach y puesta de sol en Coit Tower o Telegraph Hill. Día 2: Alcatraz a primera hora, Fisherman's Wharf, Pier 39 y paseo hasta el Ferry Building.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a San Francisco: https://www.happylowcost.com/destinos/san-francisco/#chollos

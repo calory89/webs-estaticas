@@ -231,6 +231,14 @@ Take the KTM Komuter train from KL Sentral to Batu Caves station, which takes ab
 
 No, it's one of the cheapest capitals in Asia for food and transport. Hotels are good value too. Only alcohol and the main paid attractions feel pricey.
 
+### What to see in Kuala Lumpur in one day?
+
+If you only have one day, follow day 1 of this itinerary: Old KL and Chinatown. Morning: start at the Islamic Arts Museum, then walk to the National Mosque and through the Perdana Botanical Gardens.
+
+### What to see in Kuala Lumpur in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Old KL and Chinatown. Morning: start at the Islamic Arts Museum, then walk to the National Mosque and through the Perdana Botanical Gardens. Day 2: Batu Caves, Brickfields and the towers. Morning: take the early KTM train from KL Sentral to Batu Caves and climb before 9am.
+
 ## Flights and deals
 
 - Flight deals to Kuala Lumpur: https://www.happylowcost.com/en/destinations/kuala-lumpur/#deals

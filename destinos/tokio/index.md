@@ -131,6 +131,14 @@ Con 5 días ves lo esencial de Tokio sin prisas. La ruta de esta guía está org
 
 Para quien escribió esta guía, sí: Tokio no se parece a nada que hayas visto, y lo curioso es que casi nunca resulta agobiante. Con 5 días ves lo esencial. Presupuesto: Ajustado (60-80 euros): hostal o cápsula, comidas en cadenas y konbini, transporte con Suica y entradas gratuitas.
 
+### ¿Qué ver en Tokio en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Asakusa por la mañana, Skytree si el cielo está despejado, paseo por el río Sumida y cena en el barrio.
+
+### ¿Qué ver en Tokio en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Asakusa por la mañana, Skytree si el cielo está despejado, paseo por el río Sumida y cena en el barrio. Día 2: Ueno y Yanaka por la mañana, Akihabara por la tarde y noche en Shinjuku.
+
 ### ¿Es caro viajar a Tokio?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 60-80 euros por persona y día, y en el nivel "cómodo", unos 200 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

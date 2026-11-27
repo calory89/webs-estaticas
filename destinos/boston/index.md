@@ -241,6 +241,14 @@ Septiembre y octubre, por el clima y los colores del otoño. Si buscas precios b
 
 Con pasaporte español no necesitas visado para estancias turísticas cortas, pero sí la autorización ESTA, tramitada online antes del viaje.
 
+### ¿Qué ver en Boston en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Freedom Trail y North End. Mañana: empieza en Boston Common y sigue la línea roja del suelo: State House, Granary Burying Ground (donde están enterrados Paul Revere y Samuel Adams), Old State House y Faneuil Hall.
+
+### ¿Qué ver en Boston en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Freedom Trail y North End. Mañana: empieza en Boston Common y sigue la línea roja del suelo: State House, Granary Burying Ground (donde están enterrados Paul Revere y Samuel Adams), Old State House y Faneuil Hall. Día 2: Beacon Hill, Back Bay y Fenway. Mañana: Acorn Street temprano, Charles Street para un café y Public Garden.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Boston: https://www.happylowcost.com/destinos/boston/#chollos

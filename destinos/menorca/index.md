@@ -223,6 +223,14 @@ Es la bebida típica de Menorca: ginebra local Xoriguer con limonada. Se toma so
 
 Para quien escribió esta guía, sí: Menorca es la Balear tranquila. No tiene la fiesta de Ibiza ni el tamaño de Mallorca. Con 5 días ves lo esencial. Presupuesto: Presupuesto ajustado (unos 80-110 € al día por persona): habitación compartida en el interior o en Maó, bus, picnic de mercado y una cena sencilla.
 
+### ¿Qué ver en Menorca en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Maó y el puerto. Mañana: casco antiguo, Santa María y Mercat des Claustre.
+
+### ¿Qué ver en Menorca en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Maó y el puerto. Mañana: casco antiguo, Santa María y Mercat des Claustre. Día 2: Calas del sur (Galdana, Mitjana, Macarella). Mañana: llega temprano a Cala Galdana y camina a Mitjana para el primer baño.
+
 ### ¿Es caro viajar a Menorca?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 80-110 € por persona y día, y en el nivel "presupuesto medio", unos unos 150-220 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

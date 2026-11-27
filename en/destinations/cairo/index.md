@@ -152,6 +152,14 @@ For the main plateau, you can manage alone. For Saqqara, Dahshur or deeper conte
 
 4 days are enough to see the essentials of Cairo without rushing. The route in this guide is organised day by day.
 
+### What to see in Cairo in one day?
+
+If you only have one day, follow day 1 of this itinerary: Giza plateau at opening time, then the Grand Egyptian Museum in the afternoon.
+
+### What to see in Cairo in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Giza plateau at opening time, then the Grand Egyptian Museum in the afternoon. Day 2: The Citadel, Sultan Hassan, then Al-Muizz Street and Khan el-Khalili at dusk.
+
 ## Flights and deals
 
 - Flight deals to Cairo: https://www.happylowcost.com/en/destinations/cairo/#deals

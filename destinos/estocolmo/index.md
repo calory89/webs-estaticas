@@ -124,6 +124,14 @@ Con 3 días ves lo esencial de Estocolmo sin prisas. La ruta de esta guía está
 
 Hoy el chollo más barato que tenemos a Estocolmo cuesta 71 € ida y vuelta desde Barcelona. Los precios cambian cada hora: compruébalo en la página del chollo.
 
+### ¿Qué ver en Estocolmo en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Gamla Stan por la mañana, almuerzo en la zona, tarde en Stadshuset y paseo por Södermalm hasta Monteliusvägen al atardecer.
+
+### ¿Qué ver en Estocolmo en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Gamla Stan por la mañana, almuerzo en la zona, tarde en Stadshuset y paseo por Södermalm hasta Monteliusvägen al atardecer. Día 2: Djurgården entero. Vasa a primera hora, Skansen después, y si te queda energía, el paseo junto al agua.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Estocolmo: https://www.happylowcost.com/destinos/estocolmo/#chollos

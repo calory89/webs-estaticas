@@ -139,6 +139,14 @@ Yes, Belgrade tap water is generally drinkable.
 
 For the traveller who wrote this guide, yes: Belgrade is not pretty in the way Prague or Vienna are. 3 days are enough for the essentials. Budget: Budget: about €35 to 50 with a hostel, bakery breakfasts and simple meals.
 
+### What to see in Belgrade in one day?
+
+If you only have one day, follow day 1 of this itinerary: Republic Square, Knez Mihailova, Kalemegdan at sunset, dinner in Dorćol or Skadarlija.
+
+### What to see in Belgrade in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Republic Square, Knez Mihailova, Kalemegdan at sunset, dinner in Dorćol or Skadarlija. Day 2: Church of Saint Sava in the morning, Tesla Museum, lunch in Vračar, then the House of Flowers.
+
 ## Flights and deals
 
 - Flight deals to Belgrade: https://www.happylowcost.com/en/destinations/belgrade/#deals

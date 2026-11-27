@@ -226,6 +226,14 @@ The standard entry and coach tour are paid at the gate, so arriving early is wha
 
 It is cheaper than mainland Spanish beach towns for petrol and alcohol, thanks to lower Canary taxes. Accommodation in peak season is not cheap, though. Most visitors spend €70-180 per person per day.
 
+### What to see in Lanzarote in one day?
+
+If you only have one day, follow day 1 of this itinerary: Timanfaya and the west coast. Morning: Timanfaya at opening time, then the Tremesana walk if you have a booking.
+
+### What to see in Lanzarote in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Timanfaya and the west coast. Morning: Timanfaya at opening time, then the Tremesana walk if you have a booking. Day 2: La Geria and the centre. Morning: the Montaña Colorada loop, then a coffee in Uga.
+
 ## Flights and deals
 
 - Flight deals to Lanzarote: https://www.happylowcost.com/en/destinations/lanzarote/#deals

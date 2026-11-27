@@ -132,6 +132,14 @@ La mayoría de los grandes, incluidos el de Antropología, el Templo Mayor y la 
 
 Para quien escribió esta guía, sí: Es una de las pocas capitales del mundo que abruma y engancha a la vez. Con 4 días ves lo esencial.
 
+### ¿Qué ver en Ciudad de México en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Centro Histórico. Zócalo, catedral, Templo Mayor, Palacio Nacional, Bellas Artes.
+
+### ¿Qué ver en Ciudad de México en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro Histórico. Zócalo, catedral, Templo Mayor, Palacio Nacional, Bellas Artes. Día 2: Chapultepec. Museo de Antropología por la mañana y castillo por la tarde.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Ciudad de México: https://www.happylowcost.com/destinos/ciudad-de-mexico/#chollos

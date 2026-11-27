@@ -1,4 +1,4 @@
-# Qué ver en Oporto: guía práctica de 3 días y presupuesto
+# Qué hacer en Oporto en 3 días: qué ver y presupuesto
 
 > Guía de viaje de Oporto de Happy Low Cost, itinerario de 3 días. Página original: https://www.happylowcost.com/destinos/oporto/
 > Actualizada: 2026-10-21
@@ -128,6 +128,10 @@ Con 3 días ves lo esencial de Oporto sin prisas. La ruta de esta guía está or
 ### ¿Merece la pena visitar Oporto?
 
 Para quien escribió esta guía, sí: Oporto es de esas ciudades que se abarcan a pie en un fin de semana y aun así te dejan con ganas de volver. Con 3 días ves lo esencial. Presupuesto: Orientativamente, una cama en dormitorio de hostal sale por 20-35 euros la noche.
+
+### ¿Qué ver en Oporto en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Centro histórico. Empieza en São Bento, sube a la Sé, baja a la Ribeira y cruza el puente hacia Gaia para la cata y la cena con vistas.
 
 ## Vuelos y chollos
 

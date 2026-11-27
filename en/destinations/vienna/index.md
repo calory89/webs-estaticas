@@ -161,6 +161,14 @@ Today the cheapest deal we have to Vienna is €67 return from Palma de Mallorca
 
 For the traveller who wrote this guide, yes: Vienna is a city that still works the way it did a century ago, only with better trams. 3 days are enough for the essentials. Budget: Budget: around 60 to 80 euros per person (hostel, street food, public transport, one paid sight).
 
+### What to see in Vienna in one day?
+
+If you only have one day, follow day 1 of this itinerary: (old centre). Stephansdom, Graben, Hofburg, a long coffee break, then a tram loop around the Ringstrasse.
+
+### What to see in Vienna in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: (old centre). Stephansdom, Graben, Hofburg, a long coffee break, then a tram loop around the Ringstrasse. Day 2: (palaces). Schönbrunn early, then Naschmarkt for a quick bite, Karlskirche, and the Belvedere in the afternoon light.
+
 ## Flights and deals
 
 - Flight deals to Vienna: https://www.happylowcost.com/en/destinations/vienna/#deals

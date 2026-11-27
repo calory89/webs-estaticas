@@ -228,6 +228,14 @@ It is worth at least two or three days. Few cities let you see rhinos, lions and
 
 Non-residents pay about KSh 1,500, roughly €10. Prices change, so check before you go.
 
+### What to see in Nairobi in one day?
+
+If you only have one day, follow day 1 of this itinerary: Wildlife in the south-west. Morning: enter Nairobi National Park at opening time for a 4-hour game drive.
+
+### What to see in Nairobi in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Wildlife in the south-west. Morning: enter Nairobi National Park at opening time for a 4-hour game drive. Day 2: City centre and museums. Morning: start at the Nairobi National Museum on Museum Hill.
+
 ### Is Nairobi expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €45-70 per person per day and the "mid-range" level at about €120-200. Flights are extra: this page shows real fares checked by Happy Low Cost.

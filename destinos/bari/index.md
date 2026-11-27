@@ -225,6 +225,14 @@ Noviembre, enero y febrero, con vuelos y hoteles muy baratos. Para combinar prec
 
 Para quien escribió esta guía, sí: Bari no es una ciudad bonita de postal. Es un puerto grande, ruidoso y bastante desordenado. Con 5 días ves lo esencial. Presupuesto: Presupuesto ajustado: 60-80 € al día por persona.
 
+### ¿Qué ver en Bari y Puglia en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Bari. Mañana: desayuno de cornetto en el Murattiano y paseo a Bari Vecchia por Arco Basso mientras las señoras hacen pasta.
+
+### ¿Qué ver en Bari y Puglia en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Bari. Mañana: desayuno de cornetto en el Murattiano y paseo a Bari Vecchia por Arco Basso mientras las señoras hacen pasta. Día 2: Polignano a Mare y Monopoli. Mañana: tren temprano a Polignano y mirador de Lama Monachile antes de que lleguen los grupos.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Bari y Puglia: https://www.happylowcost.com/destinos/bari/#chollos

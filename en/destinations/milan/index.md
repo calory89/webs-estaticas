@@ -149,6 +149,14 @@ Generally yes. Watch for pickpockets on the metro, around the Duomo and near Cen
 
 For the traveller who wrote this guide, yes: Milan has a reputation for being Italy's grey, expensive business city, and people who spend one rushed afternoon there tend to agree. 3 days are enough for the essentials. Budget: Budget: about €70-100 per person, with hostel or shared room, street food, an aperitivo and public transport.
 
+### What to see in Milan in one day?
+
+If you only have one day, follow day 1 of this itinerary: Duomo and roof in the morning, Galleria, lunch near Brera, the Pinacoteca, then an evening drink around San Lorenzo.
+
+### What to see in Milan in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Duomo and roof in the morning, Galleria, lunch near Brera, the Pinacoteca, then an evening drink around San Lorenzo. Day 2: Last Supper at your booked slot, Sant'Ambrogio, Castello Sforzesco, Parco Sempione, and dinner and canals in Navigli.
+
 ## Flights and deals
 
 - Flight deals to Milan: https://www.happylowcost.com/en/destinations/milan/#deals

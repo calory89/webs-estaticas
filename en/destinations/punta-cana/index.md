@@ -131,6 +131,14 @@ May, June and early November tend to be cheaper than winter, though they come wi
 
 5 days are enough to see the essentials of Punta Cana without rushing. The route in this guide is organised day by day.
 
+### What to see in Punta Cana in one day?
+
+If you only have one day, follow day 1 of this itinerary: Arrive, swim, sunset walk on Bávaro, dinner at El Cortecito.
+
+### What to see in Punta Cana in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Arrive, swim, sunset walk on Bávaro, dinner at El Cortecito. Day 2: Macao Beach in the morning, buggy tour in the afternoon.
+
 ## Flights and deals
 
 - Flight deals to Punta Cana: https://www.happylowcost.com/en/destinations/punta-cana/#deals

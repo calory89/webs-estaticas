@@ -225,6 +225,10 @@ La forma más cómoda es el bus lanzadera hasta la estación de autobuses, por u
 
 Sí, mucho, sobre todo entre los jóvenes y en hostelería. Un «hvala» (gracias) siempre se agradece.
 
+### ¿Qué ver en Zagreb en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Ciudad Alta y Kaptol. Mañana: empieza en la plaza Ban Jelačić y sube a Dolac antes de las 10.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Zagreb: https://www.happylowcost.com/destinos/zagreb/#chollos

@@ -223,6 +223,14 @@ Yes, it is very safe. Watch for pickpockets on crowded Long Market in summer and
 
 It is known for amber, its Hanseatic old town, the first battle of WWII at Westerplatte and the Solidarity movement born in its shipyard.
 
+### What to see in Gdansk in one day?
+
+If you only have one day, follow day 1 of this itinerary: Main Town. Morning: Start at the Golden Gate and walk Long Lane to Long Market.
+
+### What to see in Gdansk in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Main Town. Morning: Start at the Golden Gate and walk Long Lane to Long Market. Day 2: WWII and Solidarity. Morning: Museum of the Second World War, arriving at opening.
+
 ## Flights and deals
 
 - Flight deals to Gdansk: https://www.happylowcost.com/en/destinations/gdansk/#deals

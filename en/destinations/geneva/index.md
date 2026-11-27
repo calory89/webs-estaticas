@@ -235,6 +235,10 @@ Yes, the water is clean and locals swim from June to September at Bains des Pâq
 
 Use Swiss francs or a card. Euros are often accepted, but the exchange rate is poor and you'll get change in francs.
 
+### What to see in Geneva in one day?
+
+If you only have one day, follow day 1 of this itinerary: Old Town, the lake and Pâquis. Morning: Start at Parc des Bastions and the Reformation Wall, then walk up into the Old Town.
+
 ## Flights and deals
 
 - Flight deals to Geneva: https://www.happylowcost.com/en/destinations/geneva/#deals

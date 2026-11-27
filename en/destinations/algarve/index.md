@@ -247,6 +247,14 @@ Praia da Marinha usually wins for cliffs and clear water. For space and wildness
 
 For the traveller who wrote this guide, yes: The Algarve is Portugal's southern coast: about 150 km of golden cliffs, sea caves and long sandy islands, with whitewashed towns behind them that were here long before the golf courses. 6 days are enough for the essentials. Budget: Shoestring (€60-80/day): Hostel dorm €25-35, supermarket breakfast, prato do dia lunch, a cheap dinner, trains and buses, free beaches and hikes.
 
+### What to see in The Algarve in one day?
+
+If you only have one day, follow day 1 of this itinerary: Lagos and Ponta da Piedade. Morning: Fly into Faro and drive 1 hour west, or take the bus.
+
+### What to see in The Algarve in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Lagos and Ponta da Piedade. Morning: Fly into Faro and drive 1 hour west, or take the bus. Day 2: Sagres and the wild west. Morning: Drive to Sagres (35 minutes) and see the fortress, then go to Praia do Beliche or Tonel.
+
 ### Is The Algarve expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €60-80/day per person per day and the "mid-range" level at about €130-200/day, sharing. Flights are extra: this page shows real fares checked by Happy Low Cost.

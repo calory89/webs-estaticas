@@ -146,6 +146,14 @@ Con 4 días ves lo esencial de Dubái sin prisas. La ruta de esta guía está or
 
 Para quien escribió esta guía, sí: Dubái tiene fama de ciudad para millonarios, y lo es si te alojas en un resort de Palm Jumeirah y cenas en un restaurante con vistas. Con 4 días ves lo esencial.
 
+### ¿Qué ver en Dubái en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Al Fahidi, museo, abra por el Creek y zocos de Deira.
+
+### ¿Qué ver en Dubái en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Al Fahidi, museo, abra por el Creek y zocos de Deira. Día 2: Mezquita de Jumeirah por la mañana, Dubai Frame o Museo del Futuro, y por la tarde Downtown con Burj Khalifa y fuente.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Dubái: https://www.happylowcost.com/destinos/dubai/#chollos

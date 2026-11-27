@@ -213,6 +213,14 @@ Yes, on strong nights, especially by the river. Heading 15-30 minutes out of tow
 
 It is only a few kilometres away, so a taxi takes 5-10 minutes. Bus line 8 also connects the village with the city centre.
 
+### What to see in Rovaniemi and Lapland in one day?
+
+If you only have one day, follow day 1 of this itinerary: Rovaniemi centre. Morning: Arktikum, then Pilke next door. Afternoon: walk into town via the Aalto buildings on Hallituskatu and the church, then Korundi.
+
+### What to see in Rovaniemi and Lapland in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Rovaniemi centre. Morning: Arktikum, then Pilke next door. Afternoon: walk into town via the Aalto buildings on Hallituskatu and the church, then Korundi. Day 2: Santa Claus Village and huskies. Morning: bus to Santa Claus Village early, before the crowds.
+
 ### Is Rovaniemi and Lapland expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €90-130 per person per day and the "splurge" level at about €600+. Flights are extra: this page shows real fares checked by Happy Low Cost.

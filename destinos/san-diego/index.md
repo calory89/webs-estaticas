@@ -226,6 +226,14 @@ Sí, si te gustan los zoos: es de los mejor diseñados que hay. Con poco tiempo 
 
 De septiembre a principios de noviembre, con buen tiempo, agua templada y menos gente. Evita la semana de la Comic-Con si buscas hotel barato.
 
+### ¿Qué ver en San Diego en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Balboa Park, Little Italy y Gaslamp. Mañana: zoo a la apertura o, si no te interesa, dos museos de Balboa Park (el San Diego Museum of Art y el Museum of Us son buenas elecciones).
+
+### ¿Qué ver en San Diego en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Balboa Park, Little Italy y Gaslamp. Mañana: zoo a la apertura o, si no te interesa, dos museos de Balboa Park (el San Diego Museum of Art y el Museum of Us son buenas elecciones). Día 2: La Jolla y costa norte. Mañana: kayak en La Jolla Shores o paseo por La Jolla Cove y Children's Pool.
+
 ### ¿Es caro viajar a San Diego?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 110-140 € por persona y día, y en el nivel "presupuesto medio", unos unos 250-350 € en habitación doble. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

@@ -236,6 +236,14 @@ Yes, especially paired with the War Remnants Museum. Choose Ben Duoc over Ben Di
 
 Com tam (broken rice) is the city's signature dish, followed by banh mi, banh xeo and seafood on Vinh Khanh Street. The iced coffee with condensed milk is a close second to all of them.
 
+### What to see in Ho Chi Minh City in one day?
+
+If you only have one day, follow day 1 of this itinerary: Colonial centre and war history. Morning: Be at the War Remnants Museum when it opens, then walk 10 minutes to Independence Palace.
+
+### What to see in Ho Chi Minh City in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Colonial centre and war history. Morning: Be at the War Remnants Museum when it opens, then walk 10 minutes to Independence Palace. Day 2: Cu Chi Tunnels and Thao Dien. Morning: Leave early for the Cu Chi Tunnels (see Day trips).
+
 ### Is Ho Chi Minh City expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €25-35 per person per day and the "mid-range" level at about €60-100. Flights are extra: this page shows real fares checked by Happy Low Cost.

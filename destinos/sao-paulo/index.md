@@ -248,6 +248,10 @@ El inglés es limitado fuera de hoteles y restaurantes de gama alta. Hablando es
 
 Para quien escribió esta guía, sí: São Paulo no es bonita a primera vista. Es una mancha de hormigón de más de 20 millones de personas, con atascos legendarios, cielo gris a menudo y cero playa. Con 3 días ves lo esencial. Presupuesto: Presupuesto ajustado: 50-70 € al día.
 
+### ¿Qué ver en São Paulo en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro histórico y Luz. Mañana: empieza en la Pinacoteca y la Estação da Luz (metro Luz). Día 2: Paulista e Ibirapuera. Mañana: Parque Ibirapuera, con el Museu Afro Brasil y los edificios de Niemeyer.
+
 ### ¿Es caro viajar a São Paulo?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 50-70 € por persona y día, y en el nivel "presupuesto medio", unos 110-160 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

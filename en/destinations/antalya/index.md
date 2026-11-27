@@ -192,6 +192,14 @@ The sea is around 17-19°C in winter, which is swimmable only for the hardy. Rui
 
 Yes, it's generally very safe. The main risks are overcharging, carpet-shop hustlers and summer heat.
 
+### What to see in Antalya in one day?
+
+If you only have one day, follow day 1 of this itinerary: Kaleiçi and the cliffs. Morning: Start at Hadrian's Gate, walk down through Kaleiçi to the Fluted Minaret and the Kaleiçi Museum, then end at the Old Harbour.
+
+### What to see in Antalya in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Kaleiçi and the cliffs. Morning: Start at Hadrian's Gate, walk down through Kaleiçi to the Fluted Minaret and the Kaleiçi Museum, then end at the Old Harbour. Day 2: Museum and Konyaaltı. Morning: Take the nostalgic tram west to the Antalya Museum.
+
 ## Flights and deals
 
 - Flight deals to Antalya: https://www.happylowcost.com/en/destinations/antalya/#deals

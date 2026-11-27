@@ -230,6 +230,14 @@ Ropa ligera, algo que tape hombros y rodillas para los templos y, de noviembre a
 
 Para quien escribió esta guía, sí: Chiang Mai no es Bangkok en pequeño. Es una ciudad tranquila del norte de Tailandia, rodeada de montañas, con más de 300 templos, un casco antiguo cuadrado y amurallado por un foso, y una de las mejores cocinas del país. Con 4 días ves lo esencial. Presupuesto: Sin contar vuelos: Presupuesto ajustado : 25-35 € al día.
 
+### ¿Qué ver en Chiang Mai en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Casco antiguo. Mañana : Wat Phra Singh a primera hora, luego Wat Chedi Luang y el Centro Cultural.
+
+### ¿Qué ver en Chiang Mai en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Casco antiguo. Mañana : Wat Phra Singh a primera hora, luego Wat Chedi Luang y el Centro Cultural. Día 2: Doi Suthep y Nimman. Mañana : Grab o songthaew hasta Doi Suthep temprano.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Chiang Mai: https://www.happylowcost.com/destinos/chiang-mai/#chollos

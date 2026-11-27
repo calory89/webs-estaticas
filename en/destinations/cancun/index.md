@@ -110,6 +110,14 @@ Isla Mujeres is the easiest. If you want history, go to Chichén Itzá early, th
 
 4 days are enough to see the essentials of Cancun without rushing. The route in this guide is organised day by day.
 
+### What to see in Cancun in one day?
+
+If you only have one day, follow day 1 of this itinerary: Arrive, swim at Playa Langosta or Tortugas, dinner downtown near Parque de las Palapas.
+
+### What to see in Cancun in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Arrive, swim at Playa Langosta or Tortugas, dinner downtown near Parque de las Palapas. Day 2: Ferry to Isla Mujeres early, golf cart, Playa Norte, back in the late afternoon.
+
 ## Flights and deals
 
 - Flight deals to Cancun: https://www.happylowcost.com/en/destinations/cancun/#deals

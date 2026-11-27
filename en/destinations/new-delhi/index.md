@@ -255,6 +255,14 @@ From late October to January it can be severe, especially in November. Check the
 
 For the traveller who wrote this guide, yes: New Delhi is loud, polluted, chaotic and occasionally exhausting, and it is also one of the best cities in Asia for history and food. 4 days are enough for the essentials. Budget: Hostel dorm €8-15, street food €5, metro €2, one or two paid monuments €6-12.
 
+### What to see in New Delhi in one day?
+
+If you only have one day, follow day 1 of this itinerary: Old Delhi. Morning: metro to Chandni Chowk (Yellow Line) and start at the Red Fort when it opens.
+
+### What to see in New Delhi in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Old Delhi. Morning: metro to Chandni Chowk (Yellow Line) and start at the Red Fort when it opens. Day 2: Lutyens' Delhi. Morning: Agrasen ki Baoli early, then Gurudwara Bangla Sahib and its langar for an early lunch.
+
 ### Is New Delhi expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €25-35 per person per day and the "mid-range" level at about €70-120. Flights are extra: this page shows real fares checked by Happy Low Cost.

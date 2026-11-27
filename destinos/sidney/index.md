@@ -246,6 +246,10 @@ Solo si el presupuesto no es un problema. El Pylon Lookout da vistas muy parecid
 
 En la ciudad no los verás sueltos. Para verlos, el Taronga Zoo o el Featherdale Wildlife Park, en el oeste, son las opciones más cómodas.
 
+### ¿Qué ver en Sídney en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: La bahía. Mañana: empieza en Mrs Macquarie's Chair temprano y atraviesa el jardín botánico hasta la Ópera. Día 2: Costa este. Mañana: bus o tren a Bondi y paseo costero hasta Coogee, con baño en Bronte o Clovelly.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Sídney: https://www.happylowcost.com/destinos/sidney/#chollos

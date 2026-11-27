@@ -112,6 +112,14 @@ Early April and mid-to-late November have the best scenery but also the biggest 
 
 For the traveller who wrote this guide, yes: Kyoto was Japan's capital for over a thousand years, and it shows. 4 days are enough for the essentials.
 
+### What to see in Kyoto in one day?
+
+If you only have one day, follow day 1 of this itinerary: East. Fushimi Inari at opening, then Kiyomizu-dera, Ninenzaka, Sannenzaka and Gion at dusk.
+
+### What to see in Kyoto in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: East. Fushimi Inari at opening, then Kiyomizu-dera, Ninenzaka, Sannenzaka and Gion at dusk. Day 2: West and north. Arashiyama first thing, then Ryoan-ji and Kinkaku-ji, and finish with the Nishiki area and Pontocho for dinner.
+
 ## Flights and deals
 
 - Flight deals to Kyoto: https://www.happylowcost.com/en/destinations/kyoto/#deals

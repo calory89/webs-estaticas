@@ -1,4 +1,4 @@
-# Qué ver en Miami en 4 días: guía de un viajero con presupuesto
+# Qué hacer en Miami en 4 días: qué visitar y cuánto cuesta
 
 > Guía de viaje de Miami de Happy Low Cost, itinerario de 4 días. Página original: https://www.happylowcost.com/destinos/miami/
 > Actualizada: 2026-10-21
@@ -153,6 +153,14 @@ Los españoles viajan con ESTA, que se tramita online y cuesta unos 20 dólares.
 ### ¿Merece la pena visitar Miami?
 
 Para quien escribió esta guía, sí: Miami es dos ciudades que conviven mal y bien a la vez. Con 4 días ves lo esencial.
+
+### ¿Qué ver en Miami en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Art Deco por la mañana, playa de South Beach al mediodía, Lincoln Road y cena por la zona.
+
+### ¿Qué ver en Miami en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Art Deco por la mañana, playa de South Beach al mediodía, Lincoln Road y cena por la zona. Día 2: Wynwood a primera hora, comida en Little Havana, tarde de Calle Ocho y música por la noche.
 
 ### ¿Es caro viajar a Miami?
 

@@ -239,6 +239,10 @@ Sí, si el día está despejado: la cámara oscura es curiosa y las vistas de la
 
 No. La ciudad se recorre a pie y hay tren, bus y catamarán para las excursiones principales. Solo hace falta coche para la costa de Bolonia o El Palmar.
 
+### ¿Qué ver en Cádiz en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Casco antiguo y La Caleta. Mañana: empieza en el Mercado Central para verlo con todo el pescado.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Cádiz: https://www.happylowcost.com/destinos/cadiz/#chollos

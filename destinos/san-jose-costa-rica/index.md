@@ -244,6 +244,14 @@ En la mayor parte del país, sí, incluidos San José, La Fortuna y Monteverde. 
 
 Para quien escribió esta guía, sí: Costa Rica no es barata ni tiene grandes ciudades bonitas. Con 7 días ves lo esencial. Presupuesto: El Parque Nacional Volcán Arenal tiene senderos sobre coladas de lava antiguas y cuesta unos 15 €.
 
+### ¿Qué ver en Costa Rica en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: San José. Mañana: Teatro Nacional y Museo del Oro Precolombino.
+
+### ¿Qué ver en Costa Rica en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: San José. Mañana: Teatro Nacional y Museo del Oro Precolombino. Día 2: A La Fortuna. Mañana: 3 horas de viaje en coche o shuttle.
+
 ### ¿Es caro viajar a Costa Rica?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 60-80 € por persona y día, y en el nivel "presupuesto medio", unos 140-200 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

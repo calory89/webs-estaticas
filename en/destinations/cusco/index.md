@@ -249,6 +249,14 @@ May and September offer dry weather with slightly smaller crowds than June to Au
 
 Yes. Markets, colectivos, small restaurants and tips are cash only in soles. Cards work in hotels and mid-range restaurants.
 
+### What to see in Cusco in one day?
+
+If you only have one day, follow day 1 of this itinerary: Arrive slowly. Morning: land, check in, drink coca tea and do nothing for two hours.
+
+### What to see in Cusco in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Arrive slowly. Morning: land, check in, drink coca tea and do nothing for two hours. Day 2: Centre, San Blas and Sacsayhuamán. Morning: breakfast at San Pedro market, then the Cathedral and MAP.
+
 ### Is Cusco expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €30-40 per person per day and the "mid-range" level at about €80-130. Flights are extra: this page shows real fares checked by Happy Low Cost.

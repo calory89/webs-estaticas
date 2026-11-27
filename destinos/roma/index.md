@@ -118,6 +118,14 @@ Tres días para lo esencial, cuatro para ir con calma. Menos de dos es un marat�
 
 Para quien escribió esta guía, sí: Roma no se visita, se anda. Puedes salir del hotel sin plan, girar por una callejuela y acabar delante de una iglesia del siglo XVII con un Caravaggio dentro y la puerta abierta. Con 4 días ves lo esencial. Presupuesto: Como referencia general: una cama en hostal suele moverse entre 25 y 45 euros, una habitación doble en hotel de gama media entre 90 y 150, y los hoteles más cómodos arrancan sobre los 200.
 
+### ¿Qué ver en Roma en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Coliseo, Foro y Palatino por la mañana. Comida en Monti.
+
+### ¿Qué ver en Roma en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Coliseo, Foro y Palatino por la mañana. Comida en Monti. Día 2: Vaticano completo a primera hora. Comida rápida por Prati, y por la tarde Castel Sant'Angelo y Plaza Navona.
+
 ### ¿Es caro viajar a Roma?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 60-80 euros por persona y día, y en el nivel "cómodo", unos 200 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

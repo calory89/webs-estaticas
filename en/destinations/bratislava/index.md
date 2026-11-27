@@ -231,6 +231,10 @@ Yes, the train takes about an hour, so a day covers the Old Town and castle. You
 
 Take bus 29 from the stop under the UFO bridge, which takes about 30 minutes. In summer, seasonal boats from the Old Town quay are a scenic alternative.
 
+### What to see in Bratislava in one day?
+
+If you only have one day, follow day 1 of this itinerary: Old Town and castle. Morning: Start at Michael's Gate and climb it before the crowds.
+
 ## Flights and deals
 
 - Flight deals to Bratislava: https://www.happylowcost.com/en/destinations/bratislava/#deals

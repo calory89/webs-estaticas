@@ -214,6 +214,14 @@ Rarely directly. Almost everything runs on Alipay and WeChat Pay, which now acce
 
 Yes, it's very safe, including at night. The main risks are scams aimed at tourists and chaotic traffic, especially e-scooters on pavements.
 
+### What to see in Beijing in one day?
+
+If you only have one day, follow day 1 of this itinerary: Imperial axis. Morning: Cross Tiananmen Square (reserved) and enter the Forbidden City at opening.
+
+### What to see in Beijing in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Imperial axis. Morning: Cross Tiananmen Square (reserved) and enter the Forbidden City at opening. Day 2: Temples and hutongs. Morning: Be at Temple of Heaven by 8am for the park life.
+
 ## Flights and deals
 
 - Flight deals to Beijing: https://www.happylowcost.com/en/destinations/beijing/#deals

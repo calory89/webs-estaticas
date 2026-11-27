@@ -1,4 +1,4 @@
-# Qué ver en Phuket en 5 días: guía de un viajero low cost
+# Qué hacer en Phuket en 5 días: playas, qué ver y precios
 
 > Guía de viaje de Phuket de Happy Low Cost, itinerario de 5 días. Página original: https://www.happylowcost.com/destinos/phuket/
 > Actualizada: 2026-10-21
@@ -122,6 +122,14 @@ Con presupuesto ajustado, unos 250-350 € en alojamiento, comida y transporte l
 ### ¿Cuántos días hacen falta para ver Phuket?
 
 Con 5 días ves lo esencial de Phuket sin prisas. La ruta de esta guía está organizada día a día.
+
+### ¿Qué ver en Phuket en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Llegada, playa cercana a tu alojamiento, cena sencilla y cama temprana si vienes de un vuelo largo.
+
+### ¿Qué ver en Phuket en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Llegada, playa cercana a tu alojamiento, cena sencilla y cama temprana si vienes de un vuelo largo. Día 2: Phuket Town. Paseo por el casco antiguo, Thai Hua Museum, comida local y, si es domingo, Lard Yai.
 
 ### ¿Es caro viajar a Phuket?
 

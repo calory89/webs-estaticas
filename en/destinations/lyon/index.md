@@ -202,6 +202,14 @@ The Presqu'île, between Bellecour and Terreaux, is the most convenient for a fi
 
 It is worth it if you plan at least two or three paid museums a day, since it also covers transport. If you mostly walk and visit free sights, a 24-hour TCL pass is cheaper.
 
+### What to see in Lyon in one day?
+
+If you only have one day, follow day 1 of this itinerary: Vieux Lyon and Fourvière. Morning: Start at Cathédrale Saint-Jean, then walk through Saint-Jean and Saint-Paul and duck into the open traboules.
+
+### What to see in Lyon in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Vieux Lyon and Fourvière. Morning: Start at Cathédrale Saint-Jean, then walk through Saint-Jean and Saint-Paul and duck into the open traboules. Day 2: Presqu'île and Croix-Rousse. Morning: Start at Place Bellecour, then walk rue de la République and rue Victor Hugo to Place des Terreaux.
+
 ## Flights and deals
 
 - Flight deals to Lyon: https://www.happylowcost.com/en/destinations/lyon/#deals

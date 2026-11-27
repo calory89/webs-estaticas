@@ -227,6 +227,14 @@ Menos de lo que esperas. Por la altitud las mañanas y noches son frescas todo e
 
 Es precioso y carísimo, con noches que pasan de los 1.000 € y lista de espera. Para dar de comer a las jirafas, el Giraffe Centre de al lado cuesta unos 12 €.
 
+### ¿Qué ver en Nairobi en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Safari, elefantes y jirafas. Mañana: safari en el Parque Nacional de Nairobi desde que abre, parando en el Ivory Burning Site.
+
+### ¿Qué ver en Nairobi en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Safari, elefantes y jirafas. Mañana: safari en el Parque Nacional de Nairobi desde que abre, parando en el Ivory Burning Site. Día 2: Karen, museo y vista desde arriba. Mañana: Karen Blixen Museum y Kazuri Beads, uno al lado del otro.
+
 ### ¿Es caro viajar a Nairobi?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 50-70 € por persona y día, y en el nivel "presupuesto medio", unos unos 120-180 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

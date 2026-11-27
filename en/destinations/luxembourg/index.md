@@ -248,6 +248,10 @@ Very. Just use normal caution around Gare at night.
 
 Today the cheapest deal we have to Luxembourg is €94 return from Valencia. Fares change by the hour: check the live price on the deal page.
 
+### What to see in Luxembourg in one day?
+
+If you only have one day, follow day 1 of this itinerary: Old town and fortifications. Morning: Start at Place d'Armes, then walk to Place Guillaume II and the Grand Ducal Palace.
+
 ## Flights and deals
 
 - Flight deals to Luxembourg: https://www.happylowcost.com/en/destinations/luxembourg/#deals

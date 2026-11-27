@@ -221,6 +221,14 @@ June to August has the lowest hotel prices, but temperatures regularly exceed 40
 
 Very safe, including for solo women. The main risks are the heat and the traffic.
 
+### What to see in Abu Dhabi in one day?
+
+If you only have one day, follow day 1 of this itinerary: The old city and the Corniche. Morning: Start at Al Mina Fish Market and the Iranian Souk, then go to Qasr Al Hosn while it is still cool.
+
+### What to see in Abu Dhabi in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: The old city and the Corniche. Morning: Start at Al Mina Fish Market and the Iranian Souk, then go to Qasr Al Hosn while it is still cool. Day 2: Saadiyat Island. Morning: Be at the Louvre Abu Dhabi at opening.
+
 ## Flights and deals
 
 - Flight deals to Abu Dhabi: https://www.happylowcost.com/en/destinations/abu-dhabi/#deals

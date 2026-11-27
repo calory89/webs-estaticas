@@ -141,6 +141,14 @@ It is cheaper than much of Western Europe, especially for food and local transpo
 
 For the traveller who wrote this guide, yes: Malta packs seven thousand years of history into an island you can drive across in about 45 minutes. 5 days are enough for the essentials. Budget: Budget: about €60 to €80, with a hostel, bus travel and cheap local food.
 
+### What to see in Malta in one day?
+
+If you only have one day, follow day 1 of this itinerary: Valletta on foot, with the Upper Barrakka at noon and a harbour ferry in the evening.
+
+### What to see in Malta in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Valletta on foot, with the Upper Barrakka at noon and a harbour ferry in the evening. Day 2: Mdina and Rabat in the morning, Dingli Cliffs at sunset.
+
 ## Flights and deals
 
 - Flight deals to Malta: https://www.happylowcost.com/en/destinations/malta/#deals

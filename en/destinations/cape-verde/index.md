@@ -243,6 +243,14 @@ Binter Cabo Verde flies between the main islands. CV Interilhas ferries run shor
 
 For the traveller who wrote this guide, yes: Cape Verde is ten volcanic islands off West Africa, and they have very little in common with each other. 7 days are enough for the essentials. Budget: Shoestring: €45-65 a day (5,000-7,200 CVE).
 
+### What to see in Cape Verde in one day?
+
+If you only have one day, follow day 1 of this itinerary: Mindelo. Morning: walk the centre, Praça Nova and Rua de Lisboa, then the fish market.
+
+### What to see in Cape Verde in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Mindelo. Morning: walk the centre, Praça Nova and Rua de Lisboa, then the fish market. Day 2: Around São Vicente. Morning: take a taxi up Monte Verde before the clouds come in.
+
 ## Flights and deals
 
 - Flight deals to Cape Verde: https://www.happylowcost.com/en/destinations/cape-verde/#deals

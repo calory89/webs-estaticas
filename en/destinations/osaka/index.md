@@ -238,6 +238,14 @@ Street food (takoyaki, okonomiyaki and kushikatsu), Dotonbori's neon, Osaka Cast
 
 Yes. It is 40 minutes by Kintetsu train from Namba, and the main sights in Nara Park are close together. Go early to beat the crowds.
 
+### What to see in Osaka in one day?
+
+If you only have one day, follow day 1 of this itinerary: Castle, Umeda and Namba at night. Morning: Osaka Castle park early, before tour groups.
+
+### What to see in Osaka in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Castle, Umeda and Namba at night. Morning: Osaka Castle park early, before tour groups. Day 2: South Osaka, old and new. Morning: the Hankai tram or Nankai line to Sumiyoshi Taisha, then back towards Tennoji for Shitennoji.
+
 ### Is Osaka expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €50-70 per person per day and the "mid-range" level at about €120-180. Flights are extra: this page shows real fares checked by Happy Low Cost.

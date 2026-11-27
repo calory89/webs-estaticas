@@ -224,6 +224,10 @@ Sí, los menores de 8 años no pueden subir, y los menores de 18 deben ir acompa
 
 Sí, en tren hasta La Spezia y desde allí el tren costero. Sal temprano porque el viaje completo es de casi dos horas.
 
+### ¿Qué ver en Pisa en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Torre, plaza y centro histórico. Mañana: llega a la Piazza dei Miracoli temprano, sube a la Torre en uno de los primeros turnos y entra después en la catedral y el baptisterio.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Pisa: https://www.happylowcost.com/destinos/pisa/#chollos

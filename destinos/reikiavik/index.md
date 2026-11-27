@@ -119,6 +119,14 @@ Con 7 días ves lo esencial de Islandia sin prisas. La ruta de esta guía está 
 
 Para quien escribió esta guía, sí: Islandia es cara, y conviene decirlo desde el principio. Con 7 días ves lo esencial. Presupuesto: Un dormitorio compartido ronda los 50 a 80 euros, una habitación doble sencilla entre 120 y 250, y un camping unos 15 a 25 por persona.
 
+### ¿Qué ver en Islandia en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Llegada, Reikiavik a pie y piscina por la tarde.
+
+### ¿Qué ver en Islandia en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Llegada, Reikiavik a pie y piscina por la tarde. Día 2: Círculo Dorado: Þingvellir, Geysir, Gullfoss.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Islandia: https://www.happylowcost.com/destinos/reikiavik/#chollos

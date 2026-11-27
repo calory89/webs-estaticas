@@ -152,6 +152,14 @@ Yes, Naples tap water is safe and widely praised. Fill a bottle and save money.
 
 For the traveller who wrote this guide, yes: Naples is loud, crowded, a bit scruffy and completely unlike anywhere else in Italy. 3 days are enough for the essentials. Budget: Budget: about €60 to 80, with a hostel bed, street food and pizza, and public transport.
 
+### What to see in Naples in one day?
+
+If you only have one day, follow day 1 of this itinerary: Spaccanapoli, Cappella Sansevero, Duomo, Santa Chiara, then pizza on Via dei Tribunali.
+
+### What to see in Naples in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Spaccanapoli, Cappella Sansevero, Duomo, Santa Chiara, then pizza on Via dei Tribunali. Day 2: MANN in the morning, then Via Toledo, Galleria Umberto I, Plebiscito and the Royal Palace.
+
 ## Flights and deals
 
 - Flight deals to Naples: https://www.happylowcost.com/en/destinations/naples/#deals

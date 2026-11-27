@@ -266,6 +266,10 @@ It usually runs from late November to late December. Check the exact dates each 
 
 Easily. Tram D crosses the Rhine to Kehl in about 20 minutes, and Baden-Baden is about an hour by train.
 
+### What to see in Strasbourg in one day?
+
+If you only have one day, follow day 1 of this itinerary: Cathedral, Petite France and a winstub. Morning: Be at the cathedral when it opens.
+
 ## Flights and deals
 
 - Flight deals to Strasbourg: https://www.happylowcost.com/en/destinations/strasbourg/#deals

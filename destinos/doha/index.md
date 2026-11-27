@@ -258,6 +258,14 @@ Sí, si tienes más de 8-10 horas. El metro te deja en el centro en 20 minutos y
 
 El rial qatarí (QAR); un euro equivale aproximadamente a 4 riales. Se paga con tarjeta en casi todas partes, pero lleva algo de efectivo para el zoco y los dhows.
 
+### ¿Qué ver en Doha en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: El Doha clásico. Mañana: Museo de Arte Islámico nada más abrir, cuando hay menos gente y menos calor fuera.
+
+### ¿Qué ver en Doha en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: El Doha clásico. Mañana: Museo de Arte Islámico nada más abrir, cuando hay menos gente y menos calor fuera. Día 2: Doha moderna. Mañana: Msheireb Museums y paseo por Msheireb.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Doha: https://www.happylowcost.com/destinos/doha/#chollos

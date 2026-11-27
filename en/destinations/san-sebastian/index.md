@@ -232,6 +232,14 @@ Bilbao usually has more and cheaper flights, about 1h15-1h30 away by direct bus.
 
 Pintxo bars do not take bookings. Sit-down restaurants, asadores and Michelin places should be booked ahead, weeks or months ahead for the famous ones.
 
+### What to see in San Sebastian in one day?
+
+If you only have one day, follow day 1 of this itinerary: Old Town, Urgull and your first pintxos. Morning: Start in the Parte Vieja, see Santa María del Coro and Plaza de la Constitución, then visit San Telmo Museoa.
+
+### What to see in San Sebastian in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Old Town, Urgull and your first pintxos. Morning: Start in the Parte Vieja, see Santa María del Coro and Plaza de la Constitución, then visit San Telmo Museoa. Day 2: The bay end to end. Morning: Walk La Concha promenade to the Miramar Palace gardens, then on to Ondarreta for a swim.
+
 ## Flights and deals
 
 - Flight deals to San Sebastian: https://www.happylowcost.com/en/destinations/san-sebastian/#deals

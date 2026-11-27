@@ -134,6 +134,14 @@ Santa Monica if you want a beach and an easy base, or Hollywood if you want a ce
 
 Not a special trip. You can see it from Griffith Observatory and from several viewpoints, so you do not need to hike right up to it.
 
+### What to see in Los Angeles in one day?
+
+If you only have one day, follow day 1 of this itinerary: Downtown. Union Station, Olvera Street, Grand Central Market for lunch, the Broad and the Disney Hall, then the Arts District for dinner.
+
+### What to see in Los Angeles in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Downtown. Union Station, Olvera Street, Grand Central Market for lunch, the Broad and the Disney Hall, then the Arts District for dinner. Day 2: Hollywood and the hills. Griffith Observatory in the morning, a quick look at Hollywood Boulevard, lunch in Los Feliz or Silver Lake, then Melrose.
+
 ## Flights and deals
 
 - Flight deals to Los Angeles: https://www.happylowcost.com/en/destinations/los-angeles/#deals

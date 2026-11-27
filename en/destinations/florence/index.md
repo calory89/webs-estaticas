@@ -139,6 +139,14 @@ Late April, May, late September and October offer the best balance of mild weath
 
 For the traveller who wrote this guide, yes: Florence is small enough to cross on foot in about 40 minutes, and almost every step of it is worth taking. 3 days are enough for the essentials. Budget: Budget: about €80 to €110 including a hostel bed, market lunches and one major sight.
 
+### What to see in Florence in one day?
+
+If you only have one day, follow day 1 of this itinerary: Duomo and dome climb early, Baptistery, lunch near San Lorenzo, Medici Chapels, then Piazza della Signoria and Ponte Vecchio at golden hour.
+
+### What to see in Florence in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Duomo and dome climb early, Baptistery, lunch near San Lorenzo, Medici Chapels, then Piazza della Signoria and Ponte Vecchio at golden hour. Day 2: Uffizi in the morning, Accademia after lunch, then evening drinks in Santo Spirito.
+
 ## Flights and deals
 
 - Flight deals to Florence: https://www.happylowcost.com/en/destinations/florence/#deals

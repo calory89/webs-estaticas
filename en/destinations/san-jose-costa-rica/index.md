@@ -253,6 +253,14 @@ In most of the country, including San José, La Fortuna and Monteverde, tap wate
 
 For the traveller who wrote this guide, yes: Costa Rica is not a cheap tropical escape, so don't arrive expecting Nicaraguan or Guatemalan prices. 7 days are enough for the essentials. Budget: Arenal Volcano National Park costs about €15 (₡8,500) and its trails cross old lava flows with clear views of the summit, weather permitting.
 
+### What to see in Costa Rica in one day?
+
+If you only have one day, follow day 1 of this itinerary: Airport to La Fortuna. Morning: pick up your car or shuttle and drive about 3 hours north.
+
+### What to see in Costa Rica in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Airport to La Fortuna. Morning: pick up your car or shuttle and drive about 3 hours north. Day 2: Arenal. Morning: start at La Fortuna Waterfall at opening time, then walk the lava trails in Arenal Volcano National Park.
+
 ## Flights and deals
 
 - Flight deals to Costa Rica: https://www.happylowcost.com/en/destinations/san-jose-costa-rica/#deals

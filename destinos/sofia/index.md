@@ -117,6 +117,14 @@ Sí, si te gusta el frío. Hay menos turistas, precios bajos, nieve en el Vitosh
 
 Con 3 días ves lo esencial de Sofía sin prisas. La ruta de esta guía está organizada día a día.
 
+### ¿Qué ver en Sofía en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Free tour, Alejandro Nevski, Santa Sofía, calle Vitosha y cena en el centro.
+
+### ¿Qué ver en Sofía en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Free tour, Alejandro Nevski, Santa Sofía, calle Vitosha y cena en el centro. Día 2: Rotonda de San Jorge, Serdica, mercados y mezquita.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Sofía: https://www.happylowcost.com/destinos/sofia/#chollos

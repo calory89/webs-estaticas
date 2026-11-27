@@ -243,6 +243,10 @@ Sí, desde Tavira o Faro son unas 2 horas en coche o algo más en autobús. Desd
 
 Para quien escribió esta guía, sí: El Algarve son unos 150 kilómetros de costa en el sur de Portugal con dos caras muy distintas. Con 6 días ves lo esencial. Presupuesto: Presupuesto ajustado (unos 70-90 € al día) : hostal o habitación sencilla (30-50 €), prato do dia y supermercado (20-25 €), tren y ferris (5-10 €), playas y senderos gratis.
 
+### ¿Qué ver en Algarve en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Faro y traslado a Lagos. Mañana : al aterrizar, Cidade Velha de Faro, la torre de la Sé y la Capela dos Ossos. Día 2: Lagos desde el agua y Sagres. Mañana : kayak por las grutas de la Ponta da Piedade y baño en la Praia do Camilo.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Algarve: https://www.happylowcost.com/destinos/algarve/#chollos

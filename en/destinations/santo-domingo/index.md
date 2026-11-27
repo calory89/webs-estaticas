@@ -233,6 +233,14 @@ For a first visit, the Zona Colonial, because you can walk to nearly every main 
 
 For culture, food and music, yes, as Santo Domingo is the country's real capital. For pure beach time, Punta Cana wins, so many people do two or three nights in each.
 
+### What to see in Santo Domingo in one day?
+
+If you only have one day, follow day 1 of this itinerary: Zona Colonial. Morning: Start at Parque Colón and the cathedral, then walk down Calle Las Damas past the Panteón to Fortaleza Ozama for the tower view.
+
+### What to see in Santo Domingo in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Zona Colonial. Morning: Start at Parque Colón and the cathedral, then walk down Calle Las Damas past the Panteón to Fortaleza Ozama for the tower view. Day 2: Caves, Malecón and the modern city. Morning: Take an Uber early to Los Tres Ojos, then Faro a Colón next door.
+
 ### Is Santo Domingo expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €40-55 per person per day and the "mid-range" level at about €90-140. Flights are extra: this page shows real fares checked by Happy Low Cost.

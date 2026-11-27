@@ -152,6 +152,14 @@ Mostly, yes, in hotels, restaurants and shops. Keep some cash for small purchase
 
 For the traveller who wrote this guide, yes: Istanbul is one of the few cities where you can have breakfast in Europe, take a ferry for the price of a coffee and be in Asia before the tea gets cold. 4 days are enough for the essentials. Budget: Budget: about 40 to 60 euros a day, with a hostel, street food and public transport.
 
+### What to see in Istanbul in one day?
+
+If you only have one day, follow day 1 of this itinerary: Old city. Hagia Sophia at opening, Blue Mosque, Basilica Cistern, Topkapı in the afternoon, sunset around Sultanahmet park.
+
+### What to see in Istanbul in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Old city. Hagia Sophia at opening, Blue Mosque, Basilica Cistern, Topkapı in the afternoon, sunset around Sultanahmet park. Day 2: Markets and Golden Horn. Süleymaniye, the Spice Bazaar, Grand Bazaar, then Balat in the afternoon and a fish sandwich by the water.
+
 ## Flights and deals
 
 - Flight deals to Istanbul: https://www.happylowcost.com/en/destinations/istanbul/#deals

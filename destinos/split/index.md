@@ -247,6 +247,14 @@ Solo si eres muy fan. Las localizaciones principales, como los sótanos, se visi
 
 Sí, es una ciudad muy segura. Lo único a vigilar son los carteristas en el puerto y en las aglomeraciones del Peristilo, y las cuentas en restaurantes turísticos.
 
+### ¿Qué ver en Split en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: El palacio y la ciudad vieja. Mañana: entra al palacio temprano por la Puerta de Bronce, desde la Riva.
+
+### ¿Qué ver en Split en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: El palacio y la ciudad vieja. Mañana: entra al palacio temprano por la Puerta de Bronce, desde la Riva. Día 2: Marjan, Meštrović y playa. Mañana: sube desde Varoš al mirador de Vidilica y sigue por los senderos de Marjan.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Split: https://www.happylowcost.com/destinos/split/#chollos

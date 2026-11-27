@@ -163,6 +163,14 @@ Today the cheapest deal we have to Madeira is €111 return from Gran Canaria. F
 
 For the traveller who wrote this guide, yes: Madeira is a steep volcanic island in the Atlantic, closer to Morocco than to Lisbon, and it feels like nowhere else in Portugal. 5 days are enough for the essentials. Budget: Budget: €60-90 per person, with a guesthouse, bakery breakfasts, simple lunches and buses.
 
+### What to see in Madeira in one day?
+
+If you only have one day, follow day 1 of this itinerary: Funchal, with the market in the morning, Zona Velha, and dinner in the old town.
+
+### What to see in Madeira in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Funchal, with the market in the morning, Zona Velha, and dinner in the old town. Day 2: Monte and its garden, then Câmara de Lobos and Cabo Girão in the afternoon.
+
 ## Flights and deals
 
 - Flight deals to Madeira: https://www.happylowcost.com/en/destinations/madeira/#deals

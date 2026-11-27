@@ -133,6 +133,14 @@ Para pasear, sí. Para bañarse, el agua del Pacífico es fría casi siempre y s
 
 Para quien escribió esta guía, sí: Los Ángeles decepciona a quien espera una ciudad con centro, plaza y catedral. Con 5 días ves lo esencial.
 
+### ¿Qué ver en Los Ángeles en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Santa Monica, Venice y atardecer en la playa.
+
+### ¿Qué ver en Los Ángeles en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Santa Monica, Venice y atardecer en la playa. Día 2: Getty Center por la mañana y Malibu por la tarde.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Los Ángeles: https://www.happylowcost.com/destinos/los-angeles/#chollos

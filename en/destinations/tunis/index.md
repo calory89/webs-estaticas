@@ -239,6 +239,10 @@ The currency is the Tunisian dinar (roughly 3.3-3.5 TND to €1). Cards work in 
 
 Light, modest clothes covering shoulders and knees for the medina and mosques. Beachwear is fine at La Marsa and Gammarth.
 
+### What to see in Tunis in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Medina and the colonial centre. Morning: Have lablabi or coffee near the Marché Central, then walk up Avenue Habib Bourguiba to Bab el Bhar. Day 2: Carthage and Sidi Bou Said. Morning: Take the TGM from Tunis Marine to Carthage Salammbô.
+
 ### Is Tunis expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €30-45 per person per day and the "comfort" level at about €180+. Flights are extra: this page shows real fares checked by Happy Low Cost.

@@ -234,6 +234,14 @@ Yes, Macau is an hour by ferry and makes an easy day trip. Add a night there if 
 
 Tsim Sha Tsui, for its harbour views, transport links and range of hotels. Central suits you better if nightlife and restaurants matter more than budget.
 
+### What to see in Hong Kong in one day?
+
+If you only have one day, follow day 1 of this itinerary: Central, Sheung Wan and the Peak. Morning: dim sum, then walk from Central to Sheung Wan via the Mid-Levels Escalator, Tai Kwun, Hollywood Road and Man Mo Temple.
+
+### What to see in Hong Kong in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Central, Sheung Wan and the Peak. Morning: dim sum, then walk from Central to Sheung Wan via the Mid-Levels Escalator, Tai Kwun, Hollywood Road and Man Mo Temple. Day 2: Kowloon. Morning: Star Ferry to Tsim Sha Tsui, then MTR to Diamond Hill for Chi Lin Nunnery and Nan Lian Garden, plus Wong Tai Sin.
+
 ## Flights and deals
 
 - Flight deals to Hong Kong: https://www.happylowcost.com/en/destinations/hong-kong/#deals

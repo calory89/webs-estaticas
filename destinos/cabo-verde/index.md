@@ -234,6 +234,14 @@ En avión con Bestfly o en ferry con CV Interilhas. El ferry Mindelo-Porto Novo 
 
 Para quien escribió esta guía, sí: Cabo Verde no es un único destino: son diez islas volcánicas en mitad del Atlántico que se parecen poco entre sí. Con 7 días ves lo esencial. Presupuesto: Presupuesto ajustado: 50-70 € al día.
 
+### ¿Qué ver en Cabo Verde en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Llegada a Sal y Santa Maria. Mañana: aterriza en Sal y ve en taxi a Santa Maria.
+
+### ¿Qué ver en Cabo Verde en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Llegada a Sal y Santa Maria. Mañana: aterriza en Sal y ve en taxi a Santa Maria. Día 2: Vuelta a la isla de Sal. Mañana: Shark Bay con marea baja y Buracona hacia mediodía para el Olho Azul.
+
 ### ¿Es caro viajar a Cabo Verde?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 50-70 € por persona y día, y en el nivel "presupuesto medio", unos 100-150 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

@@ -111,6 +111,14 @@ Tres días cubren lo importante con calma. Con un cuarto, añade Sigulda o Jūrm
 
 Sí, si te sienta bien el frío. Hay menos gente, mercadillos navideños y alojamiento más barato, pero con pocas horas de luz.
 
+### ¿Qué ver en Riga en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Casco viejo a primera hora (Ayuntamiento, Cabezas Negras, Doms, San Pedro).
+
+### ¿Qué ver en Riga en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Casco viejo a primera hora (Ayuntamiento, Cabezas Negras, Doms, San Pedro). Día 2: Mañana en el Mercado Central y el barrio de Spīķeri, justo detrás.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Riga: https://www.happylowcost.com/destinos/riga/#chollos

@@ -148,6 +148,14 @@ Today the cheapest deal we have to Stockholm is €71 return from Barcelona. Far
 
 For the traveller who wrote this guide, yes: Stockholm is spread across 14 islands where Lake Mälaren meets the Baltic, so you are rarely more than a few minutes from water. 3 days are enough for the essentials. Budget: Budget: about 70 to 100 € a day.
 
+### What to see in Stockholm in one day?
+
+If you only have one day, follow day 1 of this itinerary: Gamla Stan in the morning, the Royal Palace if you like, then lunch near Slussen and sunset at Monteliusvägen.
+
+### What to see in Stockholm in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Gamla Stan in the morning, the Royal Palace if you like, then lunch near Slussen and sunset at Monteliusvägen. Day 2: Djurgården. Vasa first, then Skansen, then a long walk along the water.
+
 ## Flights and deals
 
 - Flight deals to Stockholm: https://www.happylowcost.com/en/destinations/stockholm/#deals

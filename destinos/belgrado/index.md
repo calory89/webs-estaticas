@@ -109,6 +109,14 @@ Depende de lo que busques. Si quieres ambiente de noche y baños, verano. Si pre
 
 Para quien escribió esta guía, sí: Belgrado no es una ciudad bonita en el sentido clásico, y eso forma parte de su gracia. Con 3 días ves lo esencial. Presupuesto: De forma orientativa, una cama en hostel ronda los 12-20 euros, una habitación doble en pensión o apartamento sencillo, 35-55, y un hotel de gama media, 60-90.
 
+### ¿Qué ver en Belgrado en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Plaza de la República, Knez Mihailova, Kalemegdan y atardecer en la confluencia.
+
+### ¿Qué ver en Belgrado en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Plaza de la República, Knez Mihailova, Kalemegdan y atardecer en la confluencia. Día 2: Templo de San Sava por la mañana, Museo de Tesla y comida en Vračar.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Belgrado: https://www.happylowcost.com/destinos/belgrado/#chollos

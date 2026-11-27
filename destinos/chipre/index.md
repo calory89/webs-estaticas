@@ -1,4 +1,4 @@
-# Qué ver en Chipre en 7 días: guía de un viajero con coche
+# Qué ver en Chipre en 7 días: una semana en coche
 
 > Guía de viaje de Chipre de Happy Low Cost, itinerario de 7 días. Página original: https://www.happylowcost.com/destinos/chipre/
 > Actualizada: 2026-10-21

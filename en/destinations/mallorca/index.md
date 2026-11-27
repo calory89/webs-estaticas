@@ -233,6 +233,14 @@ The sea drops to around 14-15°C from January to March, which is bracing. Most p
 
 For the traveller who wrote this guide, yes: Mallorca is three islands in one. There's Palma, a proper Mediterranean city with a Gothic cathedral and a serious food scene. 6 days are enough for the essentials. Budget: Hostel bed €35, menú del día at lunch, supermarket dinner, buses, free beaches.
 
+### What to see in Mallorca in one day?
+
+If you only have one day, follow day 1 of this itinerary: Palma. Morning: See the cathedral at opening, then walk the old town and Plaça Major.
+
+### What to see in Mallorca in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Palma. Morning: See the cathedral at opening, then walk the old town and Plaça Major. Day 2: Palma to Sóller. Morning: Take the vintage train to Sóller.
+
 ## Flights and deals
 
 - Flight deals to Mallorca: https://www.happylowcost.com/en/destinations/mallorca/#deals

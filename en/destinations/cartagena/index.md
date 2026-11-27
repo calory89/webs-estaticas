@@ -228,6 +228,14 @@ December to April is dry and breezy but busy and expensive. May and June offer a
 
 For the traveller who wrote this guide, yes: Cartagena is the prettiest colonial city in the Caribbean, and it knows it. 4 days are enough for the essentials. Budget: Dorm bed (€12-20), street food and menú del día, free sights, one paid museum.
 
+### What to see in Cartagena in one day?
+
+If you only have one day, follow day 1 of this itinerary: The walled city. Morning: Enter through the Torre del Reloj at 7.30am, then walk to Plaza de Santo Domingo, Plaza de Bolívar and the Palacio de la Inquisición.
+
+### What to see in Cartagena in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: The walled city. Morning: Enter through the Torre del Reloj at 7.30am, then walk to Plaza de Santo Domingo, Plaza de Bolívar and the Palacio de la Inquisición. Day 2: Getsemaní and San Felipe. Morning: Walk to Castillo San Felipe for opening time.
+
 ## Flights and deals
 
 - Flight deals to Cartagena: https://www.happylowcost.com/en/destinations/cartagena/#deals

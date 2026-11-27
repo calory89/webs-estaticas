@@ -224,6 +224,14 @@ Take Bybanen light rail line 1 for about €4 (45 minutes) or Flybussen for abou
 
 Yes. You can book each train, boat and bus separately, which gives you more flexibility and sometimes a lower price. Just book the Flåm Railway early in summer.
 
+### What to see in Bergen in one day?
+
+If you only have one day, follow day 1 of this itinerary: Bryggen, Fløyen and the harbour. Morning: Start early at Bryggen before the cruise passengers arrive, then explore the back alleys and Schøtstuene.
+
+### What to see in Bergen in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Bryggen, Fløyen and the harbour. Morning: Start early at Bryggen before the cruise passengers arrive, then explore the back alleys and Schøtstuene. Day 2: Ulriken or museums, then Nordnes. Morning: If it is clear, take Ulriken643 and either come back down or hike Vidden to Fløyen (in which case it becomes a full day).
+
 ## Flights and deals
 
 - Flight deals to Bergen: https://www.happylowcost.com/en/destinations/bergen/#deals

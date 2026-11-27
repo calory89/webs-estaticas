@@ -245,6 +245,10 @@ Pulpo á feira (Galician octopus), pimientos de Padrón, empanada and tarta de S
 
 No, it is one of Spain's more affordable cities. A menú del día costs €12-16, and many bars still serve free tapas with drinks.
 
+### What to see in Santiago de Compostela in one day?
+
+If you only have one day, follow day 1 of this itinerary: Cathedral and old town. Morning: Start at Praza do Obradoiro before the groups arrive, then go into the cathedral and visit the Pórtico da Gloria on your pre-booked slot.
+
 ## Flights and deals
 
 - Flight deals to Santiago de Compostela: https://www.happylowcost.com/en/destinations/santiago-de-compostela/#deals

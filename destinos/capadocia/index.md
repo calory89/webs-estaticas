@@ -232,6 +232,14 @@ Sí, en invierno suele nevar y las mañanas son frías incluso en primavera y ot
 
 Compensa si vas a visitar Göreme, Zelve, Paşabağ, una ciudad subterránea e Ihlara. Si solo entras en dos o tres sitios, paga las entradas sueltas.
 
+### ¿Qué ver en Capadocia en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Göreme y sus valles. Mañana: globos al amanecer (desde el aire o desde la colina) y después Museo al Aire Libre de Göreme, a 1,5 km andando del pueblo.
+
+### ¿Qué ver en Capadocia en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Göreme y sus valles. Mañana: globos al amanecer (desde el aire o desde la colina) y después Museo al Aire Libre de Göreme, a 1,5 km andando del pueblo. Día 2: Subterráneo e Ihlara. Es el día de alquilar coche o coger el famoso «Green Tour» (unos 40-60 € con comida).
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Capadocia: https://www.happylowcost.com/destinos/capadocia/#chollos

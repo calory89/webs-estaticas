@@ -231,6 +231,14 @@ Comer sigue siendo barato si te alejas de Larios, pero el alojamiento ha subido 
 
 Sí, es de las ciudades más templadas de Europa en invierno, con temperaturas que suelen rondar los 15 a 18 grados de día. No es tiempo de playa, pero sí de terraza y museos sin colas.
 
+### ¿Qué ver en Málaga en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Alcazaba, centro y atardecer. Mañana: Alcazaba a primera hora y subida a Gibralfaro.
+
+### ¿Qué ver en Málaga en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Alcazaba, centro y atardecer. Mañana: Alcazaba a primera hora y subida a Gibralfaro. Día 2: Mercado, puerto y playa. Mañana: Mercado de Atarazanas, Museo de Málaga y el Soho.
+
 ### ¿Es caro viajar a Málaga?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos entre 70 y 90 € por persona y día, y en el nivel "presupuesto medio", unos entre 130 y 180 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

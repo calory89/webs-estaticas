@@ -118,6 +118,14 @@ Con 4 días ves lo esencial de Estambul sin prisas. La ruta de esta guía está 
 
 Para quien escribió esta guía, sí: Estambul es de las pocas ciudades donde cruzas de un continente a otro por el precio de un billete de ferry y un té. Con 4 días ves lo esencial. Presupuesto: Orientativamente, una cama en dormitorio compartido ronda los 15-25 euros, un hotel sencillo de 3 estrellas entre 50 y 90, y uno con encanto en Gálata o Sultanahmet puede superar los 120.
 
+### ¿Qué ver en Estambul en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Sultanahmet. Santa Sofía a primera hora, Mezquita Azul, Cisterna Basílica y paseo por el Hipódromo.
+
+### ¿Qué ver en Estambul en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Sultanahmet. Santa Sofía a primera hora, Mezquita Azul, Cisterna Basílica y paseo por el Hipódromo. Día 2: Topkapı y bazares. Palacio por la mañana, Süleymaniye después y tarde en el Gran Bazar y el Bazar de las Especias.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Estambul: https://www.happylowcost.com/destinos/estambul/#chollos

@@ -223,6 +223,14 @@ No, la moneda es la corona noruega, aunque prácticamente todo se paga con tarje
 
 Para quien escribió esta guía, sí: Tromsø es una ciudad de unos 78.000 habitantes metida en una isla a 350 kilómetros al norte del Círculo Polar Ártico, y eso lo condiciona todo: en invierno el sol no sale durante casi dos meses y en verano no se pone. Con 3 días ves lo esencial. Presupuesto: Presupuesto ajustado (por persona y día): 90-130 €.
 
+### ¿Qué ver en Tromsø en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: El centro y el teleférico. Mañana: café en el centro y paseo por Storgata, la catedral de madera y el muelle.
+
+### ¿Qué ver en Tromsø en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: El centro y el teleférico. Mañana: café en el centro y paseo por Storgata, la catedral de madera y el muelle. Día 2: Naturaleza y caza de auroras. Mañana: trineo de perros o visita a los renos (las agencias recogen en el centro).
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Tromsø: https://www.happylowcost.com/destinos/tromso/#chollos

@@ -88,7 +88,7 @@ def tools_pages():
         quick = L(f'Todas las aerolíneas de la tabla dejan un bulto gratis bajo el asiento; el más grande es el de {big[0][0]} ({big[0][1][0]}×{big[0][1][1]}×{big[0][1][2]} cm). La maleta de cabina va incluida en {", ".join(incl)}.',
                   f'Every airline in the table lets a small under-seat bag fly free; the biggest is {big[0][0]}’s ({big[0][1][0]}×{big[0][1][1]}×{big[0][1][2]} cm). A cabin bag is included on {", ".join(incl)}.')
         src = ' · '.join(f'<a href="{u}" target="_blank" rel="noopener">{G.e(t)}</a>' for t, u in BAG_SRC)
-        title = L('Calculadora de equipaje de mano low cost 2026: ¿cabe gratis tu mochila?', 'Airlines with free baggage (2026): free bag size by airline')
+        title = L('Calculadora de equipaje de mano low cost 2026: ¿cabe gratis tu mochila?', 'Affordable airlines with free baggage (2026): bag sizes')
         desc = L('Mete las medidas de tu mochila o maleta y mira en qué aerolíneas low cost viaja gratis: Ryanair, Vueling, easyJet, Wizz Air, Volotea y más.',
                  'Enter your bag size and see which low-cost airlines let it fly free: Ryanair, Vueling, easyJet, Wizz Air, Volotea and more.')
         body = f'''<main class="sec" style="padding-top:26px"><div class="wrap" style="max-width:900px">
@@ -527,6 +527,10 @@ def seo_pages():
                'From our own searches on Kiwi.com: lowest return fare, usual fare (median) and cheapest month. Each page shows the date of the search. The data can be reused crediting Happy Low Cost (CC BY 4.0).')),
             (L('¿Cuánto dura un chollo?', 'How long does a deal last?'),
              L('Por defecto, una semana desde que se publica. Lo volvemos a comprobar cada día y lo retiramos si sube más de un 10 % o desaparece.', 'By default, one week from publication. We re-check it every day and remove it if it rises more than 10% or disappears.')),
+            # ronda 7 (#68): política de actualización editorial
+            (L('¿Cada cuánto se actualizan los precios y las guías?', 'How often are prices and guides updated?'),
+             L('Las páginas de chollos y de rutas se regeneran cada 4 horas con los últimos precios consultados, y cada chollo se vuelve a comprobar a diario. Cada guía muestra la fecha de su última revisión y cada precio, la fecha en que se consultó. Si algo está mal, escríbenos desde la página de contacto y lo corregimos.',
+               'Deal and route pages are rebuilt every 4 hours with the latest prices checked, and every deal is re-checked daily. Each guide shows the date it was last reviewed and each price the date it was checked. If something is wrong, write to us from the contact page and we will fix it.')),
             (L('¿Cómo me entero de los chollos?', 'How do I hear about deals?'),
              L('Con una alerta gratis por email o notificación en el móvil, eligiendo destino o ciudad de salida.', 'With a free email or push alert, choosing a destination or departure city.')),
         ]
@@ -558,6 +562,53 @@ def body(qas, kicker, h1, lead, cta, cta_href):
             f'<div class="kicker">{G.e(kicker)}</div><h1 class="x-h1">{G.e(h1)}</h1><p style="font-size:18px;line-height:1.6">{G.e(lead)}</p>'
             f'<article class="txt guide">{items}</article>'
             f'<p style="margin-top:28px"><a class="hlc-btn" href="{cta_href}">{G.e(cta)}</a></p></div></main>')
+
+
+MD_PAGES = ['guias/errores-de-tarifa', 'en/guides/error-fares', 'como-verificamos', 'en/how-we-verify', 'aviso-legal-datos-cookies', 'en/legal',
+            'sobre-happy-low-cost', 'en/about', 'glosario', 'en/glossary']
+
+
+def html_to_md(h):
+    """HTML sencillo (h1-h3, p, li, tablas) a Markdown, para los asistentes de IA."""
+    import html as _h
+    h = re.sub(r'(?is)<(script|style|form|nav|svg)\b.*?</\1>', '', h)
+    h = re.sub(r'(?is)<a [^>]*href="([^"]+)"[^>]*>(.*?)</a>', lambda m: f'[{re.sub("<[^>]+>", "", m.group(2)).strip()}]({m.group(1) if m.group(1).startswith("http") else SITE + m.group(1)})', h)
+    h = re.sub(r'(?is)<h1[^>]*>(.*?)</h1>', r'\n# \1\n', h)
+    h = re.sub(r'(?is)<h2[^>]*>(.*?)</h2>', r'\n## \1\n', h)
+    h = re.sub(r'(?is)<h3[^>]*>(.*?)</h3>', r'\n### \1\n', h)
+    h = re.sub(r'(?is)<li[^>]*>(.*?)</li>', r'\n- \1', h)
+    h = re.sub(r'(?is)<tr[^>]*>(.*?)</tr>', lambda m: '\n| ' + ' | '.join(re.sub('<[^>]+>', '', c).strip() for c in re.findall(r'(?is)<t[hd][^>]*>(.*?)</t[hd]>', m.group(1))) + ' |', h)
+    h = re.sub(r'(?is)<(b|strong)>(.*?)</\1>', r'**\2**', h)
+    h = re.sub(r'(?is)</p>|<br\s*/?>', '\n\n', h)
+    h = re.sub(r'<[^>]+>', '', h)
+    h = _h.unescape(h).replace('\u2014', ', ')
+    h = re.sub(r'[ \t]+', ' ', h)
+    h = re.sub(r'\n[ \t]+', '\n', h)
+    return re.sub(r'\n{3,}', '\n\n', h).strip() + '\n'
+
+
+def static_md():
+    """Ronda 7 (#67, #81): versión Markdown de errores de tarifa, metodología, aviso legal, "sobre" y glosario (ES/EN),
+    enlazada con <link rel="alternate" type="text/markdown">."""
+    n = 0
+    for d in MD_PAGES:
+        f = os.path.join(d, 'index.html')
+        if not os.path.exists(f):
+            continue
+        pg = open(f, encoding='utf-8').read()
+        m = re.search(r'(?is)<main\b[^>]*>(.*?)</main>', pg)
+        if not m:
+            continue
+        can = re.search(r'<link rel="canonical" href="([^"]+)"', pg)
+        url = can.group(1) if can else f'{SITE}/{d}/'
+        md = html_to_md(m.group(1))
+        md += f'\nSource: {url} (Happy Low Cost, happylowcost.com)\n'
+        open(os.path.join(d, 'index.md'), 'w', encoding='utf-8').write(md)
+        if 'type="text/markdown"' not in pg:
+            pg = pg.replace('</head>', f'<link rel="alternate" type="text/markdown" href="{url}index.md"></head>', 1)
+            open(f, 'w', encoding='utf-8').write(pg)
+        n += 1
+    print('static md', n)
 
 
 def main():
@@ -684,6 +735,11 @@ setTimeout(load,800);})();
     gen_blog.main()
     pages = ['/videos/', '/en/videos/', '/en/alerts/', '/como-verificamos/', '/herramientas/', '/herramientas/equipaje/', '/herramientas/es-buen-precio/', '/alertas/', '/destinos/', '/vuelos/',
              '/hoteles/', '/en/hotels/', '/aviso-legal-datos-cookies/', '/publicidad/', '/contacto/', '/en/contact/', '/blog/', '/guias/errores-de-tarifa/', '/en/guides/error-fares/', '/en/how-we-verify/', '/en/legal/', '/en/tools/', '/en/tools/baggage/', '/en/tools/is-it-a-good-price/', '/glosario/', '/en/glossary/', '/sobre-happy-low-cost/', '/en/about/', '/happy-low-cost-vs-buscadores/', '/en/happy-low-cost-vs-flight-search-engines/']
+    try:  # ronda 7: páginas de datos propios (Asia, Latinoamérica, directos, low cost, aeropuertos, guías por días y continente)
+        import gen_r7
+        pages += [u for u in gen_r7.main() if u not in pages]
+    except Exception as ex:
+        print('gen_r7', ex)
     import datetime as _dt
     today = _dt.date.today().isoformat()
     open('paginas-sitemap.xml', 'w', encoding='utf-8').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + ''.join(f'<url><loc>{SITE}{p}</loc><lastmod>{today}</lastmod></url>' for p in pages) + '</urlset>\n')
@@ -691,6 +747,7 @@ setTimeout(load,800);})();
     if 'paginas-sitemap.xml' not in si:
         si = si.replace('</sitemapindex>', f'\t<sitemap>\n\t\t<loc>{SITE}/paginas-sitemap.xml</loc>\n\t</sitemap>\n</sitemapindex>')
         open('sitemap_index.xml', 'w', encoding='utf-8').write(si)
+    static_md()
     print('static ok')
 
 

@@ -130,6 +130,14 @@ Para primera visita, Mitte o Friedrichshain. Si buscas ambiente alternativo, Kre
 
 Para quien escribió esta guía, sí: Berlín no es una ciudad bonita en el sentido de Praga o Viena, y conviene saberlo antes de aterrizar. Con 4 días ves lo esencial. Presupuesto: Mochilero: unos 50-65 euros (dormitorio compartido, comida callejera, museos gratuitos o uno de pago al día).
 
+### ¿Qué ver en Berlín en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Tour a pie por el centro, Puerta de Brandeburgo, Memorial del Holocausto, Reichstag y Topografía del Terror.
+
+### ¿Qué ver en Berlín en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Tour a pie por el centro, Puerta de Brandeburgo, Memorial del Holocausto, Reichstag y Topografía del Terror. Día 2: Bernauer Straße y Mauerpark por la mañana; Isla de los Museos y Alexanderplatz por la tarde.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Berlín: https://www.happylowcost.com/destinos/berlin/#chollos

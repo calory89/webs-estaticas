@@ -129,6 +129,14 @@ Depende de cuánto quieras ver por dentro. Si solo te interesa la catedral y los
 
 Hoy el chollo más barato que tenemos a Praga cuesta 106 € ida y vuelta desde Zaragoza. Los precios cambian cada hora: compruébalo en la página del chollo.
 
+### ¿Qué ver en Praga en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Ciudad Vieja, Orloj, Josefov y Puente de Carlos al caer la tarde.
+
+### ¿Qué ver en Praga en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Ciudad Vieja, Orloj, Josefov y Puente de Carlos al caer la tarde. Día 2: Castillo de Praga a primera hora, Malá Strana, isla de Kampa y subida a Petřín.
+
 ### ¿Es caro viajar a Praga?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 50-70 € por persona y día, y en el nivel "cómodo", unos 150 € o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

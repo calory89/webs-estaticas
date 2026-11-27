@@ -116,6 +116,14 @@ Some do in hotels and tourist spots, but not widely. A few Portuguese phrases an
 
 For the traveller who wrote this guide, yes: Rio is a big city that happens to have granite mountains dropping straight into the sea, and that geography shapes everything. 4 days are enough for the essentials.
 
+### What to see in Rio de Janeiro in one day?
+
+If you only have one day, follow day 1 of this itinerary: Arrive, walk Ipanema, sunset at Arpoador, dinner in Ipanema or Leblon.
+
+### What to see in Rio de Janeiro in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Arrive, walk Ipanema, sunset at Arpoador, dinner in Ipanema or Leblon. Day 2: Cristo first thing, Jardim Botânico or Parque Lage, then the Lagoa in the evening.
+
 ## Flights and deals
 
 - Flight deals to Rio de Janeiro: https://www.happylowcost.com/en/destinations/rio-de-janeiro/#deals

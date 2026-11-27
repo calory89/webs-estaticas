@@ -231,6 +231,14 @@ La socca, la pissaladière y el pan bagnat. Si solo puedes probar uno, socca rec
 
 Para quien escribió esta guía, sí: Niza es una ciudad de verdad, no un decorado de la Costa Azul. Con 3 días ves lo esencial. Presupuesto: Presupuesto ajustado: entre 80 y 110 € por persona y día.
 
+### ¿Qué ver en Niza en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Casco viejo, colina y puerto. Mañana: mercado de Cours Saleya temprano, desayuno con socca y paseo por el Vieux Nice (rue Droite, Sainte-Réparate, place Rossetti).
+
+### ¿Qué ver en Niza en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Casco viejo, colina y puerto. Mañana: mercado de Cours Saleya temprano, desayuno con socca y paseo por el Vieux Nice (rue Droite, Sainte-Réparate, place Rossetti). Día 2: Cimiez, museos y Promenade. Mañana: bus a Cimiez, Musée Matisse, ruinas romanas y jardines del monasterio.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Niza: https://www.happylowcost.com/destinos/niza/#chollos

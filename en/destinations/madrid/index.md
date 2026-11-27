@@ -242,6 +242,14 @@ The cheapest options are the 24-hour Airport Express bus (€5, about 40 minutes
 
 For the traveller who wrote this guide, yes: Madrid is not a postcard city like Paris or Rome. 3 days are enough for the essentials. Budget: Hostel bed €30-40, menú del día lunch, a tapas-and-beer dinner, free museum slots, walking and a 10-trip metro card.
 
+### What to see in Madrid in one day?
+
+If you only have one day, follow day 1 of this itinerary: Art and the Retiro. Morning: Be at the Prado at opening and spend 3 hours there.
+
+### What to see in Madrid in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Art and the Retiro. Morning: Be at the Prado at opening and spend 3 hours there. Day 2: Old Madrid and the palace. Morning: Walk from Sol to Plaza Mayor (a squid sandwich counts as breakfast), then on to the Royal Palace with a pre-booked ticket, and Almudena Cathedral next door.
+
 ## Flights and deals
 
 - Flight deals to Madrid: https://www.happylowcost.com/en/destinations/madrid/#deals

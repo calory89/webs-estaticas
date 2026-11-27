@@ -222,6 +222,14 @@ Sí, si eliges bien el tour: pocas paradas y tiempo real en el agua. Los tours m
 
 Getsemaní para ambiente y precio; la Ciudad Amurallada o San Diego si quieres tranquilidad y estética colonial y puedes pagarla.
 
+### ¿Qué ver en Cartagena en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Ciudad Amurallada. Mañana: entra por la Torre del Reloj, Plaza de los Coches, Plaza de la Aduana e Iglesia de San Pedro Claver.
+
+### ¿Qué ver en Cartagena en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Ciudad Amurallada. Mañana: entra por la Torre del Reloj, Plaza de los Coches, Plaza de la Aduana e Iglesia de San Pedro Claver. Día 2: San Felipe, La Popa y Getsemaní. Mañana: taxi temprano al Castillo de San Felipe y de ahí a La Popa con el mismo taxi.
+
 ### ¿Es caro viajar a Cartagena?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 40-55 € por persona y día, y en el nivel "presupuesto medio", unos 90-140 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

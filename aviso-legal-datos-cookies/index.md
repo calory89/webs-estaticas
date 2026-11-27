@@ -1,0 +1,143 @@
+Legal
+# Aviso legal, privacidad y cookies
+
+- [Aviso legal](https://www.happylowcost.com#aviso-legal)
+- [Privacidad y datos](https://www.happylowcost.com#privacidad)
+- [Cookies](https://www.happylowcost.com#cookies)
+- [Cómo bloquear las cookies](https://www.happylowcost.com#bloquear-cookies)
+- [Contacto](https://www.happylowcost.com/contacto/)
+## Aviso legal
+
+### PRIMERA.- TITULARIDAD Y OBJETO DE LA WEB
+La presente web pertenece a Nomadas Digitales OU (en adelante Happy Low Cost HLC) con sede en Lõõtsa tn 5-11 Tallinn, 11415, Estonia, con número de IVA EE102226368 y número de registro 14857974
+
+Happy Low Cost (HLC) pone a disposición del público (en adelante usuario) que acceda a www.happylowcost.com (en adelante WEB), información y datos (en adelante CONTENIDOS y/o SERVICIOS), mediante una web de carácter informativa. Los contenidos de la web son proporcionados y creados por la propia empresa.
+
+Por la propia naturaleza del Sitio Web, así como de su contenido y finalidad, la práctica totalidad de la navegación puede hacerse sin adquirir la condición de usuario registrado, algo que, sin embargo, se requerirá para finalizar el proceso de compra.
+
+La condición de usuario se adquiere según los procedimientos recogidos en la propia web y supone la adhesión a las presentes Condiciones Generales en la versión e idioma que estén publicados en el momento en que se acceda a la Web.
+
+De todas formas, estas Condiciones Generales también serán aplicables, en la medida en que proceda y sea posible, a los usuarios que accedan las partes públicas de la web que no requieran la condición de usuario registrado.
+
+Nomadas Digitales OU (Happy Low Cost) se reserva el derecho de modificar, en cualquier momento, la presentación y configuración del Sitio Web, así como las presentes Condiciones Generales. Es por ello que se recomienda su lectura a todos los usuarios cada vez que accedan al Sitio Web.
+
+Por la naturaleza propia de la Web, es posible que se modifiquen o incluyan cambios en el contenido de las Condiciones Generales, por lo que, tanto el usuario registrado, como aquéllos que no gocen de esta condición, quedan obligados a comprobarlas y conocerlas cada vez que accedan al Sitio Web, asumiendo que les serán de aplicación las condiciones correspondientes que se encuentren vigentes en el momento de su acceso.
+
+### SEGUNDA.- UTILIZACIÓN CORRECTA DE LOS SERVICIOS
+El usuario se obliga a usar los Servicios de forma diligente, correcta y lícita y, en particular, pero a título enunciativo y no limitativo, se compromete a abstenerse de:
+
+- utilizar los Servicios de forma, con fines o efectos contrarios a la ley, a la moral y a las buenas costumbres o al orden público; 
+- reproducir, copiar, distribuir, permitir el acceso del público a través de cualquier modalidad de comunicación pública, transformar o modificar los Servicios (a menos que se cuente con la autorización del titular de los correspondientes derechos o ello resulte legalmente permitido); 
+- realizar cualquier acto que pueda ser considerado una vulneración de cualesquiera derechos de propiedad intelectual o industrial pertenecientes a Nomadas Digitales OU (Happy Low Cost) o a terceros; 
+- emplear los Servicios y la información de cualquier clase obtenida a través del Sitio Web para remitir publicidad, comunicaciones comerciales que contravengan la finalidad de la web, así como mensajes no solicitados dirigidos a una pluralidad de personas con independencia de su finalidad, comercializar o divulgar de cualquier modo dicha información; El usuario responderá de los daños y perjuicios de toda naturaleza que HLC pueda sufrir con ocasión o como consecuencia del incumplimiento de cualquiera de las obligaciones anteriormente expuestas, así como cualesquiera otras incluidas en las presentes Condiciones Generales y/o las impuestas por la Ley en relación con la utilización del Sitio Web.
+
+HLC velará en todo momento por el respeto del ordenamiento jurídico vigente, y estará legitimada para, a su entera discreción, interrumpir el Servicio o excluir a un usuario del Sitio Web en caso de presunta comisión, completa o incompleta, de alguno de los delitos tipificados en el Código Penal vigente u observar conductas que, a juicio de HLC, resulten contrarias a estas Condiciones Generales, las Condiciones Generales de Venta que operan para este Sitio Web, la Ley, las normas establecidas por HLC o sus colaboradores, o de cualquier modo perturben o puedan perturbar el buen funcionamiento, imagen, credibilidad y/o prestigio de HLC.
+
+### TERCERA.- DERECHOS DE PROPIEDAD INTELECTUAL E INDUSTRIAL
+Todos los contenidos del Sitio Web, tales como textos, artículos de opinión, gráficos, fotografías, logotipos, iconos, imágenes, así como el diseño gráfico, código fuente y software, son de la exclusiva propiedad de HLC o, en su caso, de terceros, cuyos derechos también ostenta legítimamente HLC Por tanto, están protegidos por la legislación nacional e internacional y queda absolutamente prohibida la utilización cualesquiera elementos de propiedad industrial e intelectual con fines comerciales, así como su distribución, modificación, alteración o descompilación.
+
+Aquellos usuarios que envíen al Sitio Web observaciones, opiniones o comentarios por medio del servicio de correo electrónico o por cualquier otro medio, en los casos en los que por la naturaleza de los Servicios ello sea posible, se entiende que autorizan a HLC para la reproducción, distribución, comunicación pública, transformación, y el ejercicio de cualquier otro derecho de explotación, de tales observaciones, opiniones o comentarios por todo el tiempo de protección de derecho de autor que esté previsto legalmente y sin limitación territorial. Asimismo, se entiende que esta autorización se hace a título gratuito.
+
+Las reclamaciones que pudieran interponerse por los usuarios en relación con posibles incumplimientos de los derechos de propiedad intelectual o industrial relativos a cualesquiera de los Servicios de este Sitio Web deberán dirigirse a la siguiente dirección de correo electrónico: carlos@equinoxinvestmentgroup.com (o el [formulario de contacto](https://www.happylowcost.com/contacto/))
+
+### CUARTA.- CONTENIDO GENERADO POR EL USUARIO
+HLC pone a disposición de todos los usuarios del portal web diferentes formas y medios de participación para fomentar la conversación y el intercambio de información (por ejemplo, el formulario de contacto). Su objetivo es permanecer abierto y accesible para cualquiera siempre que se respeten unas normas de convivencia y respeto básicas.
+
+Por ello, todos los usuarios se comprometen a no utilizar dichas secciones con ningún propósito que esté prohibido por estas Condiciones de uso. Cada usuario es responsable de toda su actividad en relación con el Servicio. Además, deberá cumplir con todas las leyes y normas aplicables – nacionales e internacionales-, y si el usuario representa a una empresa, los códigos de publicidad, marketing, privacidad u otros códigos de autorregulación aplicables a su industria.
+
+En concreto, las reglas de conducta son las siguientes:
+
+- El Usuario se compromete a cumplir con los términos y condiciones de estos Términos de Servicio, pero también todas las normas de la comunidad, y todas las leyes locales, nacionales y reglamentos internacionales. 
+- El Usuario se compromete a no hacerse pasar por otra persona u organización; en caso contrario, puede incurrir en delito tipificado en el Código Penal u otras infracciones del Código Civil Español. 
+- El Usuario se compromete a no utilizar un lenguaje irrespetuoso y ofensivo. No serán admitidos mensajes con amenazas, insultos graves o cualquier otro tipo de comentario que pueda herir la sensibilidad de los demás usuarios. En tal caso, HLC se reserva el derecho de retirar el contenido. 
+- El Usuario se compromete a no interferir en las funciones relacionadas con la seguridad del servicio que impidan o limiten el uso o copia de cualquier contenido. Además, queda totalmente prohibido el uso de esta web como medio para organizar ataques o spam sobre cualquier otro tipo de servicios. Ese tipo de contenidos serán eliminados junto con las cuentas que lleven a cabo tal acción. 
+- Los administradores del servicio tienen el derecho a borrar o editar cualquier contenido y/o cuenta de usuario que incumpla cualquier de las normas y obligaciones descritas en estos términos legales o pueda ser considerado inapropiado por HLC 
+### QUINTA.- EXCLUSIÓN DE GARANTÍAS Y DE RESPONSABILIDAD
+HLC se reserva el derecho a interrumpir el acceso al Sitio Web, así como la prestación de todos o parte de sus Servicios en cualquier momento y sin previo aviso, ya sea por motivos técnicos, de seguridad, de control, de mantenimiento, por fallos de suministro eléctrico o por cualquier otra causa justificada.
+
+En consecuencia, HLC no garantiza la fiabilidad, la disponibilidad ni la continuidad de su Sitio Web o de los Servicios, por lo que la utilización de los mismos por parte del usuario se lleva a cabo por su propia cuenta y riesgo, sin que, en ningún momento, puedan exigirse por ello responsabilidades a HLC
+
+HLC no será responsable en caso de que existan interrupciones de los Servicios, demoras, errores, mal funcionamiento del mismo y, en general, demás inconvenientes que tengan su origen en causas que escapan a su control y/o que sea debida a una actuación dolosa o culposa del usuario y/o tenga por origen causas de caso fortuito o fuerza Mayor.
+
+En cualquier caso, sea cual fuere su causa, HLC no asumirá responsabilidad alguna, ni por daños directos o indirectos, ni por daño emergente, ni por lucro cesante.
+
+HLC excluye cualquier responsabilidad por los daños y perjuicios de toda naturaleza que puedan deberse a la falta de veracidad, exactitud, exhaustividad y/o actualidad de los Servicios transmitidos, difundidos, almacenados, puestos a disposición o recibidos, obtenidos o a los que se haya accedido a través del Sitio Web, así como por los Servicios prestados u ofertados por terceras personas o entidades. 
+
+HLC tratará, en la medida de lo posible, de actualizar y rectificar aquella información alojada en su Sitio Web que no cumpla con las mínimas garantías de veracidad. No obstante, quedará exonerada de responsabilidad por su no actualización o rectificación, así como por los contenidos e informaciones vertidos en la misma. En este sentido, HLC no tiene obligación de controlar y no controla los contenidos transmitidos, difundidos o puestos a disposición de terceros por los usuarios o colaboradores, salvo los supuestos en que así lo exija la legislación vigente o cuando sea requerido por una Autoridad Judicial o Administrativa competente.
+
+De igual modo, HLC excluye cualquier responsabilidad por los daños y perjuicios de toda clase que puedan deberse a la presencia de virus u otros elementos lesivos en los contenidos que puedan producir alteración en los sistemas informáticos, así como en los documentos o sistemas almacenados en los mismos.
+
+HLC no se hace responsable por la utilización que el usuario realice de los Servicios del Sitio Web, ni de sus contraseñas u otro material del mismo, infringiendo los derechos de propiedad intelectual o industrial o cualquier otro derecho de terceros.
+
+### SEXTA.- ENLACES A OTROS SITIOS WEB
+HLC no garantiza ni asume ningún tipo de responsabilidad por los daños y perjuicios sufridos por el acceso al Servicios/contenido de terceros a través de conexiones, vínculos o links de los sitios enlazados, ni sobre la exactitud o fiabilidad de los mismos.
+
+La función de los enlaces que aparecen en www.happylowcost.com es exclusivamente la de informar al usuario sobre la existencia de otras fuentes de información en Internet, donde podrá ampliar los Servicios ofrecidos por el Portal. 
+
+HLC no será en ningún caso responsable del resultado obtenido a través de dichos enlaces o de las consecuencias que se deriven del acceso por los usuarios a los mismos. Estos Servicios de terceros son proporcionados por éstos, por lo que HLC no puede controlar ni controla la licitud de los Servicios ni su calidad. En consecuencia, el usuario debe extremar la prudencia en la valoración y utilización de la información y servicios existentes en los contenidos de terceros.
+
+### SÉPTIMA.- TRATAMIENTO DE DATOS Y UTILIZACIÓN DE COOKIES
+HLC le informa de que, por visitar el presente portal web, www.happylowcost.com, no queda registrado de forma automática ningún dato de carácter personal que identifique a un Usuario.
+
+En cambio, existe determinada información de carácter no personal y no identificable con un Usuario concreto que se recoge durante la sesión en directo a través de dispositivos denominados “cookies”. Las «cookies», son pequeños ficheros de datos que se generan en el ordenador del Usuario y que nos permiten obtener la siguiente información:
+
+- La fecha y hora de acceso al Sitio Web: nos permite averiguar las horas de más afluencia y hacer los ajustes precisos para evitar problemas de saturación en nuestras horas punta. 
+- El número de visitantes diarios de cada sección: nos permite conocer las áreas de más éxito y aumentar y mejorar su contenido, con el fin de que los Usuarios obtengan un resultado más satisfactorio. 
+- La fecha y hora de la última vez que el Usuario visitó el Sitio Web. 
+- El diseño de contenidos que el Usuario escogió en su primera visita al Sitio Web. 
+- Elementos de seguridad que intervienen en el control de acceso a las áreas restringidas. La información obtenida es totalmente anónima, y en ningún caso puede ser asociada a un Usuario concreto e identificado. Esta información permite a HLC adaptar y mejorar sus Servicios a los intereses del Usuario.
+
+No obstante, el Usuario tiene la opción de impedir la generación de cookies, mediante la selección de la correspondiente opción en su programa navegador. HLC informa de que en el caso de que deshabilite el uso de cookies la navegación puede ser más lenta de lo habitual.
+
+Por otra parte, para la utilización de determinados Contenidos o Servicios, HLC podrá requerir del Usuario ciertos datos personales a través de los formularios dispuestos a tal efecto. 
+
+Por ello, le informamos de que los datos personales que nos facilite a través de nuestro sitio web o mediante envíos de correos electrónicos, serán tratados por Nomadas Digitales OU (Happy Low Cost), con la finalidad de ser utilizados para gestionar su solicitud de información y enviarle comunicaciones publicitarias sobre las ofertas y servicios de HLC
+
+Por su parte, HLC informa a todos los usuarios del carácter no obligatorio de la recogida de datos de carácter personal, salvo en los campos que indiquen lo contrario. Ahora bien, la no cumplimentación de dichos datos podrá impedir a HLC prestar todos aquellos Servicios vinculados a tales datos, liberándole de toda responsabilidad por la no prestación o prestación incompleta de estos Servicios.
+
+Corresponde al usuario la obligación de facilitar los datos de manera veraz y mantenerlos actualizados, reservándose HLC el derecho de excluir de los Servicios a todo Usuario que haya facilitado datos falsos, sin perjuicio de las demás acciones que procedan en Derecho. 
+
+Todos los usuarios pueden ejercitar los derechos de acceso, oposición, rectificación y cancelación mediante escrito dirigido a carlos@equinoxinvestmentgroup.com (o el [formulario de contacto](https://www.happylowcost.com/contacto/)) adjuntando fotocopia del DNI.
+
+### OCTAVA.- LEY APLICABLE Y JURISDICCIÓN
+Este sitio cumple con la legislación española, y en todo caso, Nomadas Digitales OU (Happy Low Cost) no da ninguna garantía de cumplimiento de las leyes locales que apliquen en su caso, tan pronto como se accede al sitio desde otras regiones, por tanto serán competentes los tribunales y jueces de la ciudad de Sevilla (España).
+
+### Cookies
+**DESCRIPCIÓN DE COOKIES: **Una “Cookie” es un pequeño archivo de texto que un sitio web almacena en el navegador del usuario, facilitando la navegación por una página web y son esenciales para el funcionamiento de internet.
+
+Las cookies se utilizan, por ejemplo, para recordar los gustos de los usuarios en la web: idioma, navegador utilizado; analizar los hábitos y comportamientos del usuario para mejorar los servicios ofrecidos, o para adecuar los contenidos de una página web a las preferencias del visitante.
+
+Las cookies se pueden catalogar de la siguiente manera:
+
+Según la entidad que la gestiona:
+
+- Cookies propias: Son aquellas que se envían a tu equipo desde nuestros propios equipos o dominios y desde el que prestamos el servicio que nos solicitas. 
+- Cookies de terceros: Son aquellas que se envían a tu equipo desde un equipo o dominio que no es gestionado por nosotros, sino por otra entidad colaboradora. Como por ejemplo, las usadas por redes sociales, o por contenido externo como los mapas de Google. Según el plazo de tiempo que permanecen activadas:
+
+- Cookies de sesión: Son cookies temporales que permanecen en el archivo de cookies de tu navegador hasta que abandonas la página web, por lo que ninguna queda registrada en el disco duro de tu ordenador. La información obtenida por medio de estas cookies, sirven para analizar pautas de tráfico en la web. A la larga, esto nos permite proporcionar una mejor experiencia para mejorar el contenido y facilitar su uso. 
+- Cookies persistentes: son almacenadas en el disco duro y nuestra web las lee cada vez que realizas una nueva visita. Una web permanente posee una fecha de expiración determinada. La cookie dejará de funcionar después de esa fecha. Estas cookies las utilizamos, generalmente, para facilitar los servicios de compra y registro. Según su finalidad:
+
+- Cookies técnicas: Son aquellas necesarias para la navegación y el buen funcionamiento de nuestra página web. Permiten por ejemplo, controlar el tráfico y la comunicación de datos, acceder a partes de acceso restringido, realizar el proceso de compra de un pedido, utilizar elementos de seguridad, almacenar contenidos para poder difundir vídeos o compartir contenidos a través de redes sociales. 
+- Cookies de personalización: Son aquéllas que te permiten acceder al servicio con unas características predefinidas en función de una serie de criterios, como por ejemplo el idioma, el tipo de navegador a través del cual se accede al servicio, la configuración regional desde donde se accede al servicio, etc. 
+- Cookies de análisis: Son aquéllas que nos permiten cuantificar el número de usuarios y así realizar la medición y análisis estadístico de la utilización que hacen los usuarios de los servicios prestados. Para ello se analiza su navegación en nuestra página web con el fin de mejorar la oferta de productos y servicios que ofrecemos. 
+- Cookies publicitarias: Son aquéllas que permiten la gestión, de la forma más eficaz posible, de los espacios publicitarios que se pudieran incluir en nuestra página web. 
+- Cookies de publicidad comportamental: Estas cookies almacenan información del comportamiento de los usuarios obtenida a través de la observación continuada. Gracias a ellas, podemos conocer los hábitos de navegación en internet y mostrarte publicidad relacionada con tu perfil de navegación. **QUÉ COOKIES UTILIZAMOS Y CON QUÉ FINALIDADES:** Nuestra web utiliza los siguientes tipos de cookies:
+
+- Cookies propias: son cookies estrictamente necesarias. Permiten la interacción del usuario por el sitio web utilizando todas sus funciones. 
+- Cookies Analíticas: son cookies utilizadas para el análisis, investigación o estadísticas con el fin de saber secciones más visitadas, puntos de conexión, etc y así poder mejorar el portal web. 
+- Cookies de complementos: son cookies utilizadas por complementos externos instalados en la web para su buen funcionamiento, como por ejemplo mostrar el cartel informativo sobre el uso de cookies. 
+- Cookies de redes sociales: son cookies utilizadas para identificarte como usuario en la red social y poder interactuar a través de tu perfil a través de las APIs instaladas. **FORMAS DE BLOQUEAR Y LIMITAR EL USO DE COOKIES: **Es importante destacar que estas tecnologías no son intrusivas, ya que toda la información obtenida a través de las cookies es totalmente anónima, y en ningún caso puede ser asociada a un usuario concreto e identificado. Esta información permite a HLC adaptar y mejorar sus servicios a los intereses de los usuarios. No obstante, el usuario tiene la opción de impedir la generación de cookies, mediante la selección de la correspondiente opción en su programa navegador. HLC informa que en el caso de que deshabilite el uso de cookies la navegación puede ser más lenta de lo habitual.
+
+Concretamente, todos los navegadores permiten hacer cambios que permiten desactivar la configuración de las cookies. Estos ajustes se encuentran ubicados en las “opciones” o “preferencias” del menú de su navegador.
+
+A continuación le mostramos mediante enlaces la forma de deshabilitar las cookies siguiendo las instrucciones de los navegadores más utilizados:
+
+- [Internet Explorer](http://windows.microsoft.com/es-es/windows-vista/block-or-allow-cookies) 
+- [Mozilla Firefox](http://support.mozilla.org/en-us/kb/cookies-information-websites-store-on-your-computer?redirectlocale=en-us&redirectslug=cookies) 
+- [Google Chrome](https://support.google.com/chrome/answer/95647?hl=es) 
+- [Safari](https://support.apple.com/kb/PH21411?viewlocale=es_ES&locale=es_ES) 
+- [Safari para IOS (iPhone y iPad)](http://support.apple.com/kb/ht1677?viewlocale=es_es) En cambio, si usted desea bloquear las cookies analíticas de Google, puede instalarse un complemento en su navegador desarrollado siguiendo las instrucciones indicadas en el siguiente [enlace](https://tools.google.com/dlpage/gaoptout). 
+
+**MÁS INFORMACIÓN: **Cualquier usuario que tenga cualquier duda acerca de estas tecnologías puede remitirnos la consulta a través de nuestro email: carlos@equinoxinvestmentgroup.com (o el [formulario de contacto](https://www.happylowcost.com/contacto/))
+
+Source: https://www.happylowcost.com/aviso-legal-datos-cookies/ (Happy Low Cost, happylowcost.com)

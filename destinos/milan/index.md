@@ -115,6 +115,14 @@ Sí, con dos días bien organizados ves lo imprescindible, siempre que tengas la
 
 Para quien escribió esta guía, sí: Milán tiene mala fama entre quienes buscan la Italia de postal: es gris a ratos, trabaja mucho y no presume. Con 3 días ves lo esencial. Presupuesto: Como orientación, un hostal o habitación compartida puede rondar los 30-50 euros por noche, y un hotel sencillo de dos o tres estrellas, entre 90 y 150, con variaciones fuertes según fechas.
 
+### ¿Qué ver en Milán en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Duomo (terrazas a primera hora), Galleria, paseo hasta La Scala y Brera.
+
+### ¿Qué ver en Milán en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Duomo (terrazas a primera hora), Galleria, paseo hasta La Scala y Brera. Día 2: Última Cena (con reserva), Sant'Ambrogio, Castello Sforzesco y Parco Sempione.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Milán: https://www.happylowcost.com/destinos/milan/#chollos

@@ -239,6 +239,10 @@ The KölnTriangle platform in Deutz, because it looks straight across the Rhine 
 
 The street carnival runs from Weiberfastnacht, the Thursday before Lent, to Rosenmontag in February or early March. The season officially opens on 11 November at 11:11.
 
+### What to see in Cologne in one day?
+
+If you only have one day, follow day 1 of this itinerary: Dom, old town and the Rhine. Morning: Be at the cathedral when it opens, then climb the south tower before the queue builds.
+
 ## Flights and deals
 
 - Flight deals to Cologne: https://www.happylowcost.com/en/destinations/cologne/#deals

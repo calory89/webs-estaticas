@@ -116,6 +116,14 @@ Between November and April is the most comfortable. December to March is the bus
 
 For the traveller who wrote this guide, yes: Havana is a city of faded colonial facades, huge American cars from the 1950s and live music leaking out of doorways at all hours. 4 days are enough for the essentials.
 
+### What to see in Havana in one day?
+
+If you only have one day, follow day 1 of this itinerary: Habana Vieja on foot: the four main plazas, lunch in a paladar, then the Capitolio and the Prado.
+
+### What to see in Havana in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Habana Vieja on foot: the four main plazas, lunch in a paladar, then the Capitolio and the Prado. Day 2: Morning at the Cementerio de Colón, then Plaza de la Revolución.
+
 ## Flights and deals
 
 - Flight deals to Havana: https://www.happylowcost.com/en/destinations/havana/#deals

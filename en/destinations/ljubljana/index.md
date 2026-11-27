@@ -243,6 +243,10 @@ It's known for its dragon symbol, the Triple Bridge, its castle, the architect J
 
 Only if you'll visit the castle, two or more museums and take the boat ride within its validity. Otherwise, pay as you go.
 
+### What to see in Ljubljana in one day?
+
+If you only have one day, follow day 1 of this itinerary: Old town, castle and river. Morning: Start at Prešeren Square and the Triple Bridge, then go to the Central Market while it's in full swing.
+
 ## Flights and deals
 
 - Flight deals to Ljubljana: https://www.happylowcost.com/en/destinations/ljubljana/#deals

@@ -209,6 +209,14 @@ Salmón salvaje, cangrejo Dungeness, ostras locales y clam chowder. Para algo ba
 
 De julio a septiembre por el tiempo; mayo, junio y finales de septiembre si quieres menos gente y precios algo más bajos.
 
+### ¿Qué ver en Seattle en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Centro, mercado y bahía. Mañana: Pike Place Market a primera hora, desayuno ahí mismo.
+
+### ¿Qué ver en Seattle en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro, mercado y bahía. Mañana: Pike Place Market a primera hora, desayuno ahí mismo. Día 2: Seattle Center y Queen Anne. Mañana: monorraíl desde Westlake a Seattle Center.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Seattle: https://www.happylowcost.com/destinos/seattle/#chollos

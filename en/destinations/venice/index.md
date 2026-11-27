@@ -153,6 +153,14 @@ St Mark's Basilica and the Doge's Palace are worth booking, as are any popular d
 
 It is a pleasant splurge but not essential. A traghetto crossing or a vaporetto along the Grand Canal gives you much of the feeling for a few euros.
 
+### What to see in Venice in one day?
+
+If you only have one day, follow day 1 of this itinerary: Early St Mark's Square, Doge's Palace, lunch in Castello, afternoon in the Arsenale area, sunset on the Zattere.
+
+### What to see in Venice in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Early St Mark's Square, Doge's Palace, lunch in Castello, afternoon in the Arsenale area, sunset on the Zattere. Day 2: Rialto market, Frari and San Rocco, Dorsoduro museums, cicchetti in the evening, Cannaregio for dinner.
+
 ## Flights and deals
 
 - Flight deals to Venice: https://www.happylowcost.com/en/destinations/venice/#deals

@@ -127,6 +127,14 @@ Cards are accepted almost everywhere, and T-money works for transport and in con
 
 For the traveller who wrote this guide, yes: Seoul is one of the few huge cities that is easy to enjoy. 5 days are enough for the essentials.
 
+### What to see in Seoul in one day?
+
+If you only have one day, follow day 1 of this itinerary: Gyeongbokgung at opening, Bukchon, Insadong, then dinner in Ikseon-dong.
+
+### What to see in Seoul in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Gyeongbokgung at opening, Bukchon, Insadong, then dinner in Ikseon-dong. Day 2: Changdeokgung and Huwon, Gwangjang Market for lunch, Dongdaemun Design Plaza at dusk.
+
 ## Flights and deals
 
 - Flight deals to Seoul: https://www.happylowcost.com/en/destinations/seoul/#deals

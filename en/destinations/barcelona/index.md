@@ -231,6 +231,14 @@ The Hola Barcelona card is worth it if you take the airport metro and ride publi
 
 Most people in hotels, restaurants and shops in the centre speak English. Catalan and Spanish are the local languages, and a "gràcies" (thank you in Catalan) always goes down well.
 
+### What to see in Barcelona in one day?
+
+If you only have one day, follow day 1 of this itinerary: Gothic Quarter, El Born and Barceloneta. Morning: start at Plaça de Catalunya, walk down La Rambla quickly (look, don't eat), detour into La Boqueria before 10am, then cross into the Gothic Quarter and the Cathedral.
+
+### What to see in Barcelona in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Gothic Quarter, El Born and Barceloneta. Morning: start at Plaça de Catalunya, walk down La Rambla quickly (look, don't eat), detour into La Boqueria before 10am, then cross into the Gothic Quarter and the Cathedral. Day 2: Sagrada Família, Sant Pau, Park Güell and Gràcia. Morning: Sagrada Família at your booked slot, then walk Avinguda de Gaudí to Sant Pau.
+
 ## Flights and deals
 
 - Flight deals to Barcelona: https://www.happylowcost.com/en/destinations/barcelona/#deals

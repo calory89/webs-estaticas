@@ -131,6 +131,14 @@ May, June and September are the most pleasant for weather and light, with fewer 
 
 For the traveller who wrote this guide, yes: Bucharest is not pretty in the obvious way, and that is half the appeal. 3 days are enough for the essentials. Budget: Budget: around €40 to €55 per day (hostel bed, street food, public transport).
 
+### What to see in Bucharest in one day?
+
+If you only have one day, follow day 1 of this itinerary: Old Town, Stavropoleos, Cărturești Carusel, lunch in Lipscani, then Calea Victoriei, Revolution Square and the Athenaeum.
+
+### What to see in Bucharest in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Old Town, Stavropoleos, Cărturești Carusel, lunch in Lipscani, then Calea Victoriei, Revolution Square and the Athenaeum. Day 2: Parliament Palace tour in the morning, then walk or ride towards Cișmigiu Gardens.
+
 ## Flights and deals
 
 - Flight deals to Bucharest: https://www.happylowcost.com/en/destinations/bucharest/#deals

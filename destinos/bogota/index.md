@@ -136,6 +136,14 @@ En hoteles, centros comerciales y restaurantes medios, sí. En mercados, taxis y
 
 Para quien escribió esta guía, sí: Bogotá no entra por los ojos como Cartagena ni tiene el clima de Medellín. Con 3 días ves lo esencial. Presupuesto: Como referencia, una cama en dormitorio compartido ronda los 10-20 euros, una habitación privada sencilla 30-50 euros y un hotel de categoría media 60-100 euros por noche.
 
+### ¿Qué ver en Bogotá en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: La Candelaria a pie. Plaza de Bolívar, Museo del Oro y Museo Botero, comida en el centro y tarde tranquila para aclimatarte a la altura.
+
+### ¿Qué ver en Bogotá en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: La Candelaria a pie. Plaza de Bolívar, Museo del Oro y Museo Botero, comida en el centro y tarde tranquila para aclimatarte a la altura. Día 2: Monserrate por la mañana, Quinta de Bolívar después y paseo por La Macarena para cenar.
+
 ### ¿Es caro viajar a Bogotá?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 30-45 euros por persona y día, y en el nivel "cómodo", unos 120 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

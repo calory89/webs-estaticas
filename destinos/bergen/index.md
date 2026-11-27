@@ -221,6 +221,14 @@ Solo si vas a usar transporte y entrar en varios museos el mismo día. Si tu pla
 
 Es muy raro: Bergen está demasiado al sur y casi siempre nublado. Para auroras tienes que ir a Tromsø o más al norte.
 
+### ¿Qué ver en Bergen en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Puerto, Bryggen y Fløyen. Mañana: empieza temprano en Bryggen, antes de los cruceros.
+
+### ¿Qué ver en Bergen en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Puerto, Bryggen y Fløyen. Mañana: empieza temprano en Bryggen, antes de los cruceros. Día 2: Museos, Nordnes y Ulriken. Mañana: KODE (si llueve, tómatelo con calma) y vuelta por Byparken y el lago.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Bergen: https://www.happylowcost.com/destinos/bergen/#chollos

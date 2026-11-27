@@ -123,6 +123,14 @@ Sí, en Ciudad del Cabo el agua del grifo es potable. Aun así, en épocas de se
 
 Para quien escribió esta guía, sí: Pocas ciudades del mundo tienen una montaña plana en medio del centro, dos océanos a tiro de coche, pingüinos en una playa y viñedos a media hora. Con 5 días ves lo esencial.
 
+### ¿Qué ver en Ciudad del Cabo en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Bo-Kaap, centro, Company's Garden y District Six.
+
+### ¿Qué ver en Ciudad del Cabo en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Bo-Kaap, centro, Company's Garden y District Six. Día 2: Table Mountain a primera hora y tarde tranquila en el Waterfront.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Ciudad del Cabo: https://www.happylowcost.com/destinos/ciudad-del-cabo/#chollos

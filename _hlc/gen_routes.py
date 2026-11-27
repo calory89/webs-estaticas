@@ -145,6 +145,19 @@ def airport_km(a, b):
     return int(round(km / 10.0) * 10) if km >= 50 else 0
 
 
+def flight_ld(r, f, dest, url):
+    """Ronda 7 (#78): el vuelo de la ruta como schema Flight con su aerolínea (Airline) y aeropuertos IATA."""
+    x = {"@type": "Flight", "@id": url + '#flight', "name": f"{r['origin']} - {dest}",
+         "departureAirport": {"@type": "Airport", "iataCode": r.get('origin_iata'), "name": r['origin']},
+         "arrivalAirport": {"@type": "Airport", "iataCode": r.get('dest_iata'), "name": dest}}
+    if f.get('aerolinea'):
+        x["provider"] = {"@type": "Airline", "name": f.get('aerolinea')}
+    km = airport_km(r.get('origin_iata'), r.get('dest_iata'))
+    if km:
+        x["flightDistance"] = f"{int(round(km))} km"
+    return x
+
+
 def page(r, lang, others):
     en = lang == 'en'
     c = dict(r['content'][lang]); c['_lang'] = lang
@@ -176,6 +189,9 @@ def page(r, lang, others):
     when = (f.get('ejemplo_ida') or '')[:10]
     crumbs = [('Home', '/en/'), ('Flights', '/en/flights/'), (c.get('h1', ''), None)] if en else [('Inicio', '/'), ('Vuelos', '/vuelos/'), (c.get('h1', ''), None)]
     alt = (f'<link rel="alternate" hreflang="es" href="{es_url}"><link rel="alternate" hreflang="en" href="{en_url}"><link rel="alternate" hreflang="x-default" href="{es_url}">')
+    # ronda 7 (#311): sin hreflang si cualquiera de las dos versiones está en noindex (Google lo ignora y gasta rastreo)
+    if not (route_indexed('es', slug, r) and route_indexed('en', en_slug(r), r)):
+        alt = ''
     # título con mes y año, y descripción con los datos de la ruta (antes: frases de plantilla iguales en todas)
     p_, med_, air_ = f.get('precio_desde_ida_y_vuelta_eur'), f.get('mediana_ida_y_vuelta_eur'), f.get('aerolinea')
     td = datetime.date.today()
@@ -299,10 +315,12 @@ def page(r, lang, others):
         mt_ += f'<link rel="preload" as="image" href="{hero}" fetchpriority="high">'
     mt_ += '<link rel="alternate" type="text/markdown" href="' + ('/en/flights/routes.md' if en else '/vuelos/rutas.md') + '" title="Markdown">'
     if en:
-        h = E.head(c.get('title', ''), c.get('meta', ''), url, es_url, og_image=f'{SITE}{hero}', ld=ld(c, url, crumbs, chk_, 'en') + [G.guide_image_ld(ds, dest, 'en')], robots=rob, body_class='deal', extra_head=mt_, og_alt=f'Photo of {dest}')
+        h = E.head(c.get('title', ''), c.get('meta', ''), url, es_url, og_image=f'{SITE}{hero}', ld=ld(c, url, crumbs, chk_, 'en') + [G.guide_image_ld(ds, dest, 'en'), flight_ld(r, f, dest, url)], robots=rob, body_class='deal', extra_head=mt_, og_alt=f'Photo of {dest}')
+        if not alt:
+            h = re.sub(r'<link rel="alternate" hreflang="[^"]+" href="[^"]+">', '', h)
     else:
         h = G.head(title=e(c.get('title', '')), desc=e(c.get('meta', '')), canonical=url, og_image=f'{SITE}{hero}', og_type='article', robots=rob, og_alt=e(f'Foto de {dest}'),
-                   extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12">' + mt_ + alt + G.ld_script(ld(c, url, crumbs, chk_, 'es') + [G.guide_image_ld(ds, dest, 'es')]), body_class='deal')
+                   extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12">' + mt_ + alt + G.ld_script(ld(c, url, crumbs, chk_, 'es') + [G.guide_image_ld(ds, dest, 'es'), flight_ld(r, f, dest, url)]), body_class='deal')
     rel = ''.join(f'<a class="hub-l" href="{"/en/flights/" + en_slug(o) if en else "/vuelos/" + o["slug"]}/">{e(o["origin"])} → {e(E.NAMES.get(o["dest_slug"], o["dest"]) if en else o["dest"])} · {o["price_from"]} €</a>' for o in others[:12])
     L = (lambda es_, en_: en_ if en else es_)
     gpath = f"en/destinations/{G.en_dest_slug(ds)}" if en else f"destinos/{ds}"
@@ -331,7 +349,7 @@ def page(r, lang, others):
 <p class="credit">{L("Foto: Wikimedia Commons. Precios de ida y vuelta en clase turista para 1 adulto, consultados en Kiwi.com en la fecha indicada; pueden cambiar.", "Photo: Wikimedia Commons. Return economy fares for 1 adult, checked on Kiwi.com on the date shown; they can change.")}</p></article>
 <aside class="deal-card">
 <div class="facts">
-<div><small>{L("Desde", "From")}</small><b>{e(r["origin"])} ({e(r["origin_iata"])})</b></div><div><small>{L("Hasta", "To")}</small><b>{e(dest)} ({e(r["dest_iata"])})</b></div>
+<div><small>{L("Desde", "From")}</small><b>{e(r["origin"])} (<abbr title="{L("Código IATA del aeropuerto de", "IATA airport code of")} {e(r["origin"])}">{e(r["origin_iata"])}</abbr>)</b></div><div><small>{L("Hasta", "To")}</small><b>{e(dest)} (<abbr title="{L("Código IATA del aeropuerto de", "IATA airport code of")} {e(dest)}">{e(r["dest_iata"])}</abbr>)</b></div>
 <div><small>{L("Precio desde", "Price from")}</small><b>{e(f.get("precio_desde_ida_y_vuelta_eur"))} €</b></div><div><small>{L("Lo normal", "Typical")}</small><b>{e(f.get("mediana_ida_y_vuelta_eur"))} €</b></div>
 <div><small>{L("Aerolínea", "Airline")}</small><b>{e(f.get("aerolinea") or L("Varias", "Several"))}</b></div><div><small>{L("Escalas", "Stops")}</small><b>{e(stops_t)}</b></div>
 </div>
@@ -394,7 +412,9 @@ location.href=(EN?'/en/deals/':'/chollos/')+'?q='+encodeURIComponent(d)+(m?'&mes
 
 def hub(rows, en):
     by = {}
-    for r in rows:
+    # ronda 7 (#224): las listas y el ItemList solo con rutas indexadas (el HTML pesaba 260 KB); el buscador sigue con todas
+    idx = [r for r in rows if route_indexed('en' if en else 'es', en_slug(r) if en else r['slug'], r)] or rows
+    for r in idx:
         by.setdefault(r['origin'], []).append(r)
     base = '/en/flights/' if en else '/vuelos/'
     secs = ''.join(f'<details class="hub"{" open" if n_ < 2 else ""}><summary><h2 style="all:unset">{"Cheap flights from" if en else "Vuelos baratos desde"} {e(o)}</h2><small>{len(lst)} {"routes" if en else "rutas"} · {"from" if en else "desde"} {min(x["price_from"] for x in lst)} €</small></summary><div class="hub-g">' + ''.join(
@@ -405,7 +425,7 @@ def hub(rows, en):
     if en:
         h = E.head(title, desc, SITE + base, SITE + '/vuelos/', body_class='chollos', extra_head='<link rel="alternate" type="application/json" href="/en/flights/feed.json" title="Routes JSON"><link rel="alternate" type="text/markdown" href="/en/flights/routes.md" title="Markdown">')
     else:
-        il = {"@type": "ItemList", "name": title, "numberOfItems": len(rows), "itemListElement": [{"@type": "ListItem", "position": i + 1, "url": f"{SITE}/vuelos/{r['slug']}/", "name": f"{r['origin']} → {r['dest']}"} for i, r in enumerate(sorted(rows, key=lambda x: x['price_from'])[:100])]}
+        il = {"@type": "ItemList", "name": title, "numberOfItems": len(idx), "itemListElement": [{"@type": "ListItem", "position": i + 1, "url": f"{SITE}/vuelos/{r['slug']}/", "name": f"{r['origin']} → {r['dest']}"} for i, r in enumerate(sorted(idx, key=lambda x: x['price_from'])[:100])]}
         h = G.head(title=e(title), desc=e(desc), canonical=SITE + base, og_image=f'{SITE}/hlc/brand/og-default.jpg', og_type='website',
                    extra_head=f'<link rel="stylesheet" href="/hlc/home.css?v=12"><link rel="alternate" type="application/json" href="/vuelos/feed.json" title="Rutas JSON"><link rel="alternate" type="text/markdown" href="/vuelos/rutas.md" title="Markdown"><link rel="alternate" hreflang="es" href="{SITE}/vuelos/"><link rel="alternate" hreflang="en" href="{SITE}/en/flights/">' + G.ld_script([il]), body_class='chollos')
     return h + f'''<main class="sec" style="padding-top:26px"><div class="wrap">

@@ -229,6 +229,14 @@ Yes, it is one of the safer big cities in North America. Watch for pickpockets a
 
 Bagels, smoked meat and poutine are the big three. Maple products and Quebec cheeses come close behind.
 
+### What to see in Montreal in one day?
+
+If you only have one day, follow day 1 of this itinerary: Old Montreal and the Old Port. Morning: start at Place d'Armes (metro), visit Notre-Dame Basilica early, then walk Rue Saint-Paul and Place Jacques-Cartier.
+
+### What to see in Montreal in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Old Montreal and the Old Port. Morning: start at Place d'Armes (metro), visit Notre-Dame Basilica early, then walk Rue Saint-Paul and Place Jacques-Cartier. Day 2: Mile End, the Plateau and Mount Royal. Morning: bagels in Mile End, coffee on Rue Bernard, then walk south down Boulevard Saint-Laurent for the murals.
+
 ## Flights and deals
 
 - Flight deals to Montreal: https://www.happylowcost.com/en/destinations/montreal/#deals

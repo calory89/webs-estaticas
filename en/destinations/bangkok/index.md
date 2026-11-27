@@ -119,6 +119,14 @@ Yes. It's easy to navigate, cheap and well connected, and English is widely unde
 
 For the traveller who wrote this guide, yes: Bangkok is loud, hot and sprawling, and it's one of the most rewarding big cities in Asia. 3 days are enough for the essentials. Budget: Backpackers can manage on roughly 1,000 to 1,500 baht a day, which is about 25 to 40 euros.
 
+### What to see in Bangkok in one day?
+
+If you only have one day, follow day 1 of this itinerary: Old city. Grand Palace in the morning, Wat Pho, then the ferry to Wat Arun at sunset.
+
+### What to see in Bangkok in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Old city. Grand Palace in the morning, Wat Pho, then the ferry to Wat Arun at sunset. Day 2: Modern Bangkok. Jim Thompson House, then Siam's malls and the BTS elevated walkways, then Lumphini Park in the late afternoon.
+
 ## Flights and deals
 
 - Flight deals to Bangkok: https://www.happylowcost.com/en/destinations/bangkok/#deals

@@ -236,6 +236,14 @@ November is usually the wettest, with December and January close behind. July an
 
 Yes, as a long day trip by ferry, but one night in Victoria makes it much more relaxed.
 
+### What to see in Vancouver in one day?
+
+If you only have one day, follow day 1 of this itinerary: Downtown, Stanley Park and English Bay. Morning: start at Canada Place, walk through Gastown and see the steam clock, then Chinatown and the Sun Yat-Sen garden.
+
+### What to see in Vancouver in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Downtown, Stanley Park and English Bay. Morning: start at Canada Place, walk through Gastown and see the steam clock, then Chinatown and the Sun Yat-Sen garden. Day 2: Granville Island, Kits and UBC. Morning: Aquabus to Granville Island, early market breakfast.
+
 ## Flights and deals
 
 - Flight deals to Vancouver: https://www.happylowcost.com/en/destinations/vancouver/#deals

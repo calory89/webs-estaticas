@@ -212,6 +212,14 @@ The Yellow Fortress is the classic sunset spot and it's free. The Trebević cabl
 
 They're very different. Mostar is a single stunning bridge and old town that's best seen in a day. Sarajevo has more depth, better food and enough to fill several days.
 
+### What to see in Sarajevo in one day?
+
+If you only have one day, follow day 1 of this itinerary: Old town and the city's story. Morning: Start at the Sebilj before the crowds, then visit Gazi Husrev-beg Mosque and walk Ferhadija to the Meeting of Cultures line and the cathedral.
+
+### What to see in Sarajevo in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Old town and the city's story. Morning: Start at the Sebilj before the crowds, then visit Gazi Husrev-beg Mosque and walk Ferhadija to the Meeting of Cultures line and the cathedral. Day 2: Siege history and the mountain. Morning: Visit the War Childhood Museum, then Svrzo's House nearby.
+
 ## Flights and deals
 
 - Flight deals to Sarajevo: https://www.happylowcost.com/en/destinations/sarajevo/#deals

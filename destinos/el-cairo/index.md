@@ -128,6 +128,14 @@ Con 4 días ves lo esencial de El Cairo sin prisas. La ruta de esta guía está 
 
 Para quien escribió esta guía, sí: El Cairo cansa, y también engancha. Hay más de veinte millones de personas, un tráfico que parece improvisado y un nivel de ruido que no baja ni de madrugada. Con 4 días ves lo esencial.
 
+### ¿Qué ver en El Cairo en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Pirámides de Guiza a primera hora y Gran Museo Egipcio por la tarde.
+
+### ¿Qué ver en El Cairo en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Pirámides de Guiza a primera hora y Gran Museo Egipcio por la tarde. Día 2: Cairo Islámico. Ciudadela por la mañana, Ibn Tulun, Al-Muizz y Khan el-Khalili al atardecer.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a El Cairo: https://www.happylowcost.com/destinos/el-cairo/#chollos

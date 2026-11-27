@@ -112,6 +112,14 @@ From late May to October. Expect heat, humidity and storms, plus hurricane risk,
 
 Not really, as English works everywhere. But a few words of Spanish will be appreciated, especially in Little Havana and other neighbourhoods where Spanish is spoken first.
 
+### What to see in Miami in one day?
+
+If you only have one day, follow day 1 of this itinerary: South Beach. Early walk on Ocean Drive, Art Deco tour, beach time, then dinner and a stroll on Lincoln Road.
+
+### What to see in Miami in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: South Beach. Early walk on Ocean Drive, Art Deco tour, beach time, then dinner and a stroll on Lincoln Road. Day 2: The city. Wynwood in the morning, Design District for lunch, Little Havana for the late afternoon and dinner.
+
 ## Flights and deals
 
 - Flight deals to Miami: https://www.happylowcost.com/en/destinations/miami/#deals

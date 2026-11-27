@@ -104,6 +104,14 @@ Absolutely. With even 8 to 10 hours, you can reach Marina Bay, eat at a hawker c
 
 4 days are enough to see the essentials of Singapore without rushing. The route in this guide is organised day by day.
 
+### What to see in Singapore in one day?
+
+If you only have one day, follow day 1 of this itinerary: Chinatown in the morning, lunch at Maxwell, Marina Bay at sunset, Gardens by the Bay after dark.
+
+### What to see in Singapore in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Chinatown in the morning, lunch at Maxwell, Marina Bay at sunset, Gardens by the Bay after dark. Day 2: Botanic Gardens early, then Little India for lunch, then Kampong Glam in the late afternoon.
+
 ## Flights and deals
 
 - Flight deals to Singapore: https://www.happylowcost.com/en/destinations/singapore/#deals

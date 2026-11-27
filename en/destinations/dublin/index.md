@@ -117,6 +117,14 @@ Howth is the easiest by DART, with cliff walks and fresh seafood. Glendalough or
 
 For the traveller who wrote this guide, yes: Dublin is compact, talkative and a little scruffy, and that is much of its appeal. 3 days are enough for the essentials. Budget: Expect mid-range hotels from roughly €150 to €250 a night.
 
+### What to see in Dublin in one day?
+
+If you only have one day, follow day 1 of this itinerary: Trinity College at opening time, Grafton Street, St Stephen's Green, the National Museum, then Dublin Castle and the Chester Beatty.
+
+### What to see in Dublin in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Trinity College at opening time, Grafton Street, St Stephen's Green, the National Museum, then Dublin Castle and the Chester Beatty. Day 2: Kilmainham Gaol in the morning, Guinness Storehouse after lunch, then dinner in Smithfield or Stoneybatter.
+
 ## Flights and deals
 
 - Flight deals to Dublin: https://www.happylowcost.com/en/destinations/dublin/#deals

@@ -227,6 +227,14 @@ It's cheaper than Paris but not cheap. Set lunches and markets keep costs reason
 
 Generally yes. Watch for pickpockets in crowded spots and be a little careful around Saint-Michel and the station late at night.
 
+### What to see in Bordeaux in one day?
+
+If you only have one day, follow day 1 of this itinerary: The classic centre. Morning: Start at Place de la Bourse and the Miroir d'Eau before the crowds, then wander Saint-Pierre and Place du Parlement.
+
+### What to see in Bordeaux in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: The classic centre. Morning: Start at Place de la Bourse and the Miroir d'Eau before the crowds, then wander Saint-Pierre and Place du Parlement. Day 2: Markets, Chartrons and the Cité du Vin. Morning: Oysters at the Marché des Capucins (ideally on a weekend), then a short look at Saint-Michel and its spire.
+
 ## Flights and deals
 
 - Flight deals to Bordeaux: https://www.happylowcost.com/en/destinations/bordeaux/#deals

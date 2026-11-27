@@ -236,6 +236,14 @@ El norte, en Alcúdia y Port de Pollença: playas de arena con poca profundidad 
 
 Sí, y es la época más barata. No es para bañarse, pero sí para caminar por la Tramuntana y ver Palma sin colas.
 
+### ¿Qué ver en Mallorca en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Palma histórica. Mañana: catedral a primera hora, luego Palacio de la Almudaina por fuera y casco antiguo hacia los Baños Árabes.
+
+### ¿Qué ver en Mallorca en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Palma histórica. Mañana: catedral a primera hora, luego Palacio de la Almudaina por fuera y casco antiguo hacia los Baños Árabes. Día 2: Bellver, arte y bahía. Mañana: subida al Castell de Bellver desde El Terreno.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Mallorca: https://www.happylowcost.com/destinos/mallorca/#chollos

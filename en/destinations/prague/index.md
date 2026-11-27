@@ -117,6 +117,14 @@ Today the cheapest deal we have to Prague is €106 return from Zaragoza. Fares 
 
 For the traveller who wrote this guide, yes: Prague came through the twentieth century with its centre largely intact, and you feel it the minute you climb out of the metro. 3 days are enough for the essentials. Budget: A budget traveller can manage on about 50 to 70 euros a day with a hostel, lunch menus, a pub dinner and transport passes.
 
+### What to see in Prague in one day?
+
+If you only have one day, follow day 1 of this itinerary: Old Town Square, then Josefov, then a slow afternoon in the lanes towards the river.
+
+### What to see in Prague in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Old Town Square, then Josefov, then a slow afternoon in the lanes towards the river. Day 2: Castle first thing, then Strahov for lunch, then walk down through Petřín to Malá Strana and Kampa.
+
 ## Flights and deals
 
 - Flight deals to Prague: https://www.happylowcost.com/en/destinations/prague/#deals

@@ -128,6 +128,14 @@ Con 4 días ves lo esencial de Bangkok sin prisas. La ruta de esta guía está o
 
 Para quien escribió esta guía, sí: Bangkok agota y engancha a partes iguales. Con 4 días ves lo esencial. Presupuesto: Hay hostales desde 10-20 euros la cama y hoteles sencillos desde 35-50 euros.
 
+### ¿Qué ver en Bangkok en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Casco antiguo. Gran Palacio por la mañana, Wat Pho, ferry a Wat Arun al atardecer y cena en Yaowarat.
+
+### ¿Qué ver en Bangkok en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Casco antiguo. Gran Palacio por la mañana, Wat Pho, ferry a Wat Arun al atardecer y cena en Yaowarat. Día 2: Wat Saket de primera hora, paseo por Banglamphu, tarde de masaje y descanso.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Bangkok: https://www.happylowcost.com/destinos/bangkok/#chollos

@@ -223,6 +223,10 @@ En diciembre sí, por los mercadillos de Navidad, aunque haga frío y haya mucha
 
 Para una primera escapada, Colonia, por la catedral y los museos. Están a menos de una hora en tren, así que puedes ver las dos en un mismo viaje.
 
+### ¿Qué ver en Colonia en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Catedral, casco viejo y el Rin. Mañana: catedral a primera hora y, si tienes piernas, la torre.
+
 ### ¿Es caro viajar a Colonia?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 70-90 € por persona y día, y en el nivel "presupuesto medio", unos unos 150-200 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

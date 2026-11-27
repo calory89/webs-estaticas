@@ -234,6 +234,14 @@ The peameal bacon sandwich is the local classic, but the city is really known fo
 
 No. The subway, streetcars and walking cover everything in the city. Only rent a car for day trips like Algonquin or Prince Edward County.
 
+### What to see in Toronto in one day?
+
+If you only have one day, follow day 1 of this itinerary: Downtown and the waterfront. Morning: Start at St Lawrence Market for a peameal bacon sandwich, then walk five minutes to the Distillery District.
+
+### What to see in Toronto in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Downtown and the waterfront. Morning: Start at St Lawrence Market for a peameal bacon sandwich, then walk five minutes to the Distillery District. Day 2: Neighbourhoods and food. Morning: Visit the AGO, then walk west to Kensington Market and Chinatown for lunch.
+
 ## Flights and deals
 
 - Flight deals to Toronto: https://www.happylowcost.com/en/destinations/toronto/#deals

@@ -228,6 +228,14 @@ El nuevo dólar taiwanés (TWD). Un euro equivale a unos 35 TWD.
 
 De octubre a diciembre, por temperatura y menos lluvia. Evita julio a septiembre si te preocupan los tifones.
 
+### ¿Qué ver en Taipéi en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Centro histórico y Wanhua. Mañana: desayuno en Fu Hang Dou Jiang (hay cola, pero avanza rápido) y Memorial de Chiang Kai-shek, que está cerca.
+
+### ¿Qué ver en Taipéi en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro histórico y Wanhua. Mañana: desayuno en Fu Hang Dou Jiang (hay cola, pero avanza rápido) y Memorial de Chiang Kai-shek, que está cerca. Día 2: Este de la ciudad y Taipei 101. Mañana: Daan Forest Park temprano y desayuno o brunch en Yongkang Street.
+
 ### ¿Es caro viajar a Taipéi?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 40-60 € por persona y día, y en el nivel "medio", unos 100-150 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

@@ -124,6 +124,14 @@ Today the cheapest deal we have to London is €47 return from Zaragoza. Fares c
 
 For the traveller who wrote this guide, yes: London is expensive, grey more often than anyone admits, and the Tube can be unpleasant at 8:30 on a weekday. 4 days are enough for the essentials.
 
+### What to see in London in one day?
+
+If you only have one day, follow day 1 of this itinerary: Westminster and the South Bank. Parliament, the Abbey, a walk along the river, the Tate Modern, then Borough Market for lunch or an early dinner.
+
+### What to see in London in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Westminster and the South Bank. Parliament, the Abbey, a walk along the river, the Tate Modern, then Borough Market for lunch or an early dinner. Day 2: The City and the east. St Paul's, the Tower of London, Tower Bridge, then Shoreditch and Brick Lane for the evening.
+
 ## Flights and deals
 
 - Flight deals to London: https://www.happylowcost.com/en/destinations/london/#deals

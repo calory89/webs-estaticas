@@ -226,6 +226,14 @@ A los dos, si puedes. Urgull es gratis y está a cinco minutos de la Parte Vieja
 
 El de Hondarribia, a 30 minutos en bus, pero tiene pocos vuelos. Casi siempre sale más barato volar a Bilbao y coger el bus directo, de aproximadamente 1 hora y cuarto, o mirar vuelos a Biarritz.
 
+### ¿Qué ver en San Sebastián en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Parte Vieja, Urgull y La Concha. Mañana: mercado de la Bretxa, Parte Vieja con Santa María del Coro y la Plaza de la Constitución, y subida a Urgull desde el puerto.
+
+### ¿Qué ver en San Sebastián en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Parte Vieja, Urgull y La Concha. Mañana: mercado de la Bretxa, Parte Vieja con Santa María del Coro y la Plaza de la Constitución, y subida a Urgull desde el puerto. Día 2: Igueldo, Ondarreta y Gros. Mañana: paseo hasta Ondarreta y el Peine del Viento.
+
 ### ¿Es caro viajar a San Sebastián?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 80-110 € por persona y día, y en el nivel "presupuesto medio", unos unos 200-280 € en habitación doble. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

@@ -236,6 +236,14 @@ Sí, pero solo en hoteles, bares y restaurantes con licencia, sobre todo en el c
 
 Sí, es la visita más potente de Túnez y muy barata. Si solo tienes tiempo para un museo, que sea este.
 
+### ¿Qué ver en Túnez en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Medina y centro. Mañana: entra por Bab el Bhar, sube por la calle Jamaa Ez Zitouna hasta la Gran Mezquita y recorre los zocos de alrededor (Attarine, Chaouachia, Berka).
+
+### ¿Qué ver en Túnez en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Medina y centro. Mañana: entra por Bab el Bhar, sube por la calle Jamaa Ez Zitouna hasta la Gran Mezquita y recorre los zocos de alrededor (Attarine, Chaouachia, Berka). Día 2: Cartago y Sidi Bou Said. Mañana: TGM desde la estación Tunis Marine hasta Carthage Hannibal, colina de Byrsa y museo, y luego bajada a las Termas de Antonino.
+
 ### ¿Es caro viajar a Túnez?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 35-50 € por persona y día, y en el nivel "medio", unos 80-120 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

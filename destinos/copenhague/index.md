@@ -125,6 +125,14 @@ Con 3 días ves lo esencial de Copenhague sin prisas. La ruta de esta guía est�
 
 Para quien escribió esta guía, sí: Copenhague es una ciudad pequeña que funciona como un reloj. Con 3 días ves lo esencial. Presupuesto: En albergues, una cama en dormitorio compartido ronda los 35-55 euros por noche, y una habitación doble sencilla, entre 100 y 160 en temporada alta.
 
+### ¿Qué ver en Copenhague en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Centro histórico. Nyhavn a primera hora, Amalienborg, Marmorkirken, Rosenborg y Rundetårn.
+
+### ¿Qué ver en Copenhague en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro histórico. Nyhavn a primera hora, Amalienborg, Marmorkirken, Rosenborg y Rundetårn. Día 2: Barrios y puerto. Bici hacia Nørrebro, paseo por Assistens y Superkilen, Christiania a mediodía, barco de canales por la tarde y Tivoli de noche.
+
 ### ¿Es caro viajar a Copenhague?
 
 Depende de cómo viajes. Según esta guía, en el nivel "mochilero ajustado" se gastan unos 80-110 euros por persona y día, y en el nivel "más cómodo", unos 200 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

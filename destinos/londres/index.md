@@ -118,6 +118,14 @@ Hoy el chollo más barato que tenemos a Londres cuesta 47 € ida y vuelta desde
 
 Para quien escribió esta guía, sí: Londres es cara, sí, pero también es una de las pocas capitales grandes donde los mejores museos no cobran entrada. Con 4 días ves lo esencial.
 
+### ¿Qué ver en Londres en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Westminster, St James's Park, Trafalgar Square y National Gallery.
+
+### ¿Qué ver en Londres en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Westminster, St James's Park, Trafalgar Square y National Gallery. Día 2: Tower of London, Tower Bridge, paseo por el sur hasta la Tate Modern y Borough Market.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Londres: https://www.happylowcost.com/destinos/londres/#chollos

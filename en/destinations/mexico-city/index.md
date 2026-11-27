@@ -116,6 +116,14 @@ Yes. Go early to beat the heat and the tour buses, wear a hat and carry water. C
 
 4 days are enough to see the essentials of Mexico City without rushing. The route in this guide is organised day by day.
 
+### What to see in Mexico City in one day?
+
+If you only have one day, follow day 1 of this itinerary: Centro Histórico. Zócalo, cathedral, Templo Mayor, Bellas Artes, then dinner nearby.
+
+### What to see in Mexico City in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Centro Histórico. Zócalo, cathedral, Templo Mayor, Bellas Artes, then dinner nearby. Day 2: Chapultepec. Anthropology museum in the morning, the castle after lunch, and an evening in Polanco or Condesa.
+
 ## Flights and deals
 
 - Flight deals to Mexico City: https://www.happylowcost.com/en/destinations/mexico-city/#deals

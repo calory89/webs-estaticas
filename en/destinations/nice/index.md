@@ -212,6 +212,14 @@ Socca, pissaladière, pan bagnat, salade niçoise and petits farcis. Socca hot f
 
 For the traveller who wrote this guide, yes: Nice is the most liveable city on the French Riviera: big enough to have real neighbourhoods, markets and locals going about their day, small enough to cross on foot in an hour. 3 days are enough for the essentials. Budget: Shoestring (€70-100 per day): hostel bed €30-45, street food and supermarket picnics €20-25, public beaches, one museum, local transport €5.
 
+### What to see in Nice in one day?
+
+If you only have one day, follow day 1 of this itinerary: Old Town, Castle Hill and the Promenade. Morning: start at Cours Saleya market, then wander the Old Town lanes, Sainte-Réparate and Place Rossetti.
+
+### What to see in Nice in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Old Town, Castle Hill and the Promenade. Morning: start at Cours Saleya market, then wander the Old Town lanes, Sainte-Réparate and Place Rossetti. Day 2: Cimiez, art and the coast. Morning: bus up to Cimiez for the Matisse Museum, Roman ruins and monastery gardens, then walk down to the Chagall Museum.
+
 ## Flights and deals
 
 - Flight deals to Nice: https://www.happylowcost.com/en/destinations/nice/#deals

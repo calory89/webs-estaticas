@@ -231,6 +231,14 @@ Only if you plan to visit three or more of the included attractions, such as the
 
 Yes, from late June to early September at lifeguarded beaches like North Avenue and Oak Street. The water stays cold, even in July.
 
+### What to see in Chicago in one day?
+
+If you only have one day, follow day 1 of this itinerary: The Loop and the river. Morning: Start at Millennium Park early, see the Bean and the Lurie Garden, then pop into the Chicago Cultural Center for the Tiffany dome.
+
+### What to see in Chicago in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: The Loop and the river. Morning: Start at Millennium Park early, see the Bean and the Lurie Garden, then pop into the Chicago Cultural Center for the Tiffany dome. Day 2: Museums and the lakefront. Morning: Head to the Field Museum (or the Shedd if you have kids) on the Museum Campus.
+
 ## Flights and deals
 
 - Flight deals to Chicago: https://www.happylowcost.com/en/destinations/chicago/#deals

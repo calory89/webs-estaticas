@@ -132,6 +132,14 @@ Con 4 días ves lo esencial de Malta sin prisas. La ruta de esta guía está org
 
 Para quien escribió esta guía, sí: Malta es una isla pequeña con mucha historia por metro cuadrado. Con 4 días ves lo esencial. Presupuesto: Orientativamente, un albergue ronda los 20-35 € por cama, un hotel de tres estrellas o un apartamento sencillo, 70-110 € la noche en temporada alta, y algo más en La Valeta.
 
+### ¿Qué ver en Malta en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: La Valeta entera. Concatedral por la mañana, Upper Barrakka, paseo sin rumbo y atardecer desde las murallas.
+
+### ¿Qué ver en Malta en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: La Valeta entera. Concatedral por la mañana, Upper Barrakka, paseo sin rumbo y atardecer desde las murallas. Día 2: Birgu por la mañana en ferry, y por la tarde Mdina y Rabat.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Malta: https://www.happylowcost.com/destinos/malta/#chollos

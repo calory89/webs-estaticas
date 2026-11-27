@@ -125,6 +125,14 @@ Sí. Banje está junto a la ciudad vieja, y en Lapad hay calas y paseo marítimo
 
 Hoy el chollo más barato que tenemos a Dubrovnik cuesta 62 € ida y vuelta desde Barcelona. Los precios cambian cada hora: compruébalo en la página del chollo.
 
+### ¿Qué ver en Dubrovnik en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Murallas a primera hora, Stradun, palacios y catedral.
+
+### ¿Qué ver en Dubrovnik en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Murallas a primera hora, Stradun, palacios y catedral. Día 2: Barco a Lokrum por la mañana y baño. Vuelta a mediodía, y por la tarde subes a Srđ para ver la puesta de sol.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Dubrovnik: https://www.happylowcost.com/destinos/dubrovnik/#chollos

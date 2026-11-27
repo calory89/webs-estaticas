@@ -218,6 +218,14 @@ Junio y septiembre: buen tiempo, terrazas abiertas y menos gente que en pleno ve
 
 Casi nada. Se paga con tarjeta en todas partes, incluido el metro con contactless. Lleva algo de efectivo solo para puestos pequeños de Kensington o mercadillos.
 
+### ¿Qué ver en Toronto en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Centro y lago. Mañana: desayuno en St. Lawrence Market y paseo hasta Distillery District.
+
+### ¿Qué ver en Toronto en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro y lago. Mañana: desayuno en St. Lawrence Market y paseo hasta Distillery District. Día 2: Barrios del oeste. Mañana: AGO (si es miércoles, déjalo para la tarde).
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Toronto: https://www.happylowcost.com/destinos/toronto/#chollos

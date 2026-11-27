@@ -123,6 +123,10 @@ Con 3 días ves lo esencial de Bolonia sin prisas. La ruta de esta guía está o
 
 Para quien escribió esta guía, sí: Bolonia es la ciudad italiana que menos presume y mejor vive. Con 3 días ves lo esencial. Presupuesto: Como referencia general, una cama en albergue ronda los 30-40 euros, una habitación doble sencilla suele moverse entre 80 y 130 euros y los hoteles de gama media-alta superan con facilidad los 150.
 
+### ¿Qué ver en Bolonia en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: El centro histórico. Por la mañana, Piazza Maggiore, San Petronio y Neptuno. Día 2: Universidad, arte y colina. Via Zamboni, Pinacoteca o museo según gustos, y comida tranquila.
+
 ### ¿Es caro viajar a Bolonia?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 60-80 euros por persona y día, y en el nivel "cómodo", unos 200 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

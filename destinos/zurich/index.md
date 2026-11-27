@@ -1,4 +1,4 @@
-# Qué ver en Zúrich en 2 días: guía de un viajero con presupuesto
+# Qué ver en Zúrich en 2 días: qué hacer y cuánto cuesta
 
 > Guía de viaje de Zúrich de Happy Low Cost, itinerario de 2 días. Página original: https://www.happylowcost.com/destinos/zurich/
 > Actualizada: 2026-10-21
@@ -148,6 +148,14 @@ De mayo a septiembre por el clima y el lago. Diciembre si prefieres mercadillos 
 ### ¿Merece la pena visitar Zúrich?
 
 Para quien escribió esta guía, sí: Zúrich tiene fama de ciudad de bancos y relojes, y es verdad que hay muchos de ambos. Con 2 días ves lo esencial.
+
+### ¿Qué ver en Zúrich en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Mañana en el casco viejo (Grossmünster, Lindenhof, Fraumünster), comida en Niederdorf, tarde por Bahnhofstrasse y paseo junto al lago hasta el atardecer.
+
+### ¿Qué ver en Zúrich en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Mañana en el casco viejo (Grossmünster, Lindenhof, Fraumünster), comida en Niederdorf, tarde por Bahnhofstrasse y paseo junto al lago hasta el atardecer. Día 2: Subida al Uetliberg por la mañana, comida en Zürich West y tarde en el Kunsthaus o en un Badi, según estación.
 
 ## Vuelos y chollos
 

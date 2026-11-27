@@ -242,6 +242,14 @@ The Ferrotramviaria train reaches Bari Centrale in about 20 minutes for around �
 
 Yes, the Ferrovie del Sud Est train takes about 1.5 hours. Add Locorotondo on the same line to make the day worth it.
 
+### What to see in Bari and Puglia in one day?
+
+If you only have one day, follow day 1 of this itinerary: Bari. Morning: Start at Basilica di San Nicola, then the cathedral and Strada Arco Basso.
+
+### What to see in Bari and Puglia in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Bari. Morning: Start at Basilica di San Nicola, then the cathedral and Strada Arco Basso. Day 2: Polignano a Mare and Monopoli. Morning: Train to Polignano, early. Walk the old town and the cliff viewpoints, swim at Lama Monachile before it fills.
+
 ### Is Bari and Puglia expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €60-90 per person per day and the "mid-range" level at about €120-200. Flights are extra: this page shows real fares checked by Happy Low Cost.

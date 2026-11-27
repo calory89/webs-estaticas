@@ -204,6 +204,10 @@ Mucho: en julio y agosto es habitual pasar de 40 °C. Si vas, visita los monumen
 
 El salmorejo, sin discusión, seguido del flamenquín y el rabo de toro. Acompáñalos con un fino de Montilla-Moriles.
 
+### ¿Qué ver en Córdoba en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Mezquita, Judería y río. Mañana: entra a la Mezquita a primera hora.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Córdoba: https://www.happylowcost.com/destinos/cordoba/#chollos

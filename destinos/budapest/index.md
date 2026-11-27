@@ -123,6 +123,14 @@ Hoy el chollo más barato que tenemos a Budapest cuesta 59 € ida y vuelta desd
 
 Para quien escribió esta guía, sí: Budapest funciona como destino de fin de semana largo porque lo tiene todo muy junto y a buen precio. Con 3 días ves lo esencial. Presupuesto: Ajustado (50-70 €): hostal, comida en mercados y canteens, transporte público y una visita de pago.
 
+### ¿Qué ver en Budapest en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Pest. Mercado Central por la mañana, Zapatos en el Danubio, Parlamento (visita reservada), Basílica y cena en el barrio judío.
+
+### ¿Qué ver en Budapest en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Pest. Mercado Central por la mañana, Zapatos en el Danubio, Parlamento (visita reservada), Basílica y cena en el barrio judío. Día 2: Buda. Bastión de los Pescadores y Matías temprano, Castillo, comida en Buda, subida a la Colina Gellért y termas Gellért o Rudas al final.
+
 ### ¿Es caro viajar a Budapest?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 50-70 € por persona y día, y en el nivel "cómodo", unos 150 € o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

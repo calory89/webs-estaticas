@@ -117,6 +117,14 @@ No. El centro es peatonal en buena parte, el tráfico es caótico y aparcar es c
 
 Abril-junio y septiembre-octubre. Hace buen tiempo, hay menos calor y menos agobio que en pleno verano.
 
+### ¿Qué ver en Nápoles en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Centro histórico. Mañana en Spaccanapoli, Cappella Sansevero, Duomo y San Gregorio Armeno.
+
+### ¿Qué ver en Nápoles en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro histórico. Mañana en Spaccanapoli, Cappella Sansevero, Duomo y San Gregorio Armeno. Día 2: Arqueología y mar. Mañana en el MANN. Después, Piazza del Plebiscito, Galleria Umberto I y Castel dell'Ovo.
+
 ### ¿Es caro viajar a Nápoles?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 45-65 € por persona y día, y en el nivel "cómodo", unos 180 € o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

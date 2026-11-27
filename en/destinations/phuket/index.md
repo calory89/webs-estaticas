@@ -149,6 +149,14 @@ No. It is useful but risky. Apps, taxis and day hire with a driver are safer, es
 
 It can be, if you accept some bad weather. Prices are lower and crowds thinner, but sea conditions limit swimming and some boat trips may be cancelled.
 
+### What to see in Phuket in one day?
+
+If you only have one day, follow day 1 of this itinerary: Arrive, settle into your beach, swim and eat nearby.
+
+### What to see in Phuket in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Arrive, settle into your beach, swim and eat nearby. Day 2: Old Town in the morning, a long lunch, then Wat Chalong and Big Buddha in the afternoon.
+
 ## Flights and deals
 
 - Flight deals to Phuket: https://www.happylowcost.com/en/destinations/phuket/#deals

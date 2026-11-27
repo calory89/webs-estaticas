@@ -231,6 +231,10 @@ In July and August daytime temperatures often exceed 40°C. Visiting is possible
 
 Walk 20-25 minutes through the Jardines de la Victoria, take bus line 3 (about €1.50) or take a taxi for about €8-10.
 
+### What to see in Cordoba in one day?
+
+If you only have one day, follow day 1 of this itinerary: Mezquita, Alcázar and the river. Morning: Be at the Mezquita for the free early slot, then climb the bell tower (book it the day before).
+
 ### Is Cordoba expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €50-70 per person per day and the "mid-range" level at about €110-160. Flights are extra: this page shows real fares checked by Happy Low Cost.

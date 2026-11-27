@@ -222,6 +222,14 @@ Most locals and visitors drink bottled water, which is cheap. Use tap water for 
 
 No. Coffee costs about €1, a good dinner costs €12-20 per person and museums are under €10. Hotels in Blloku in high summer are the main thing that has got pricier.
 
+### What to see in Tirana in one day?
+
+If you only have one day, follow day 1 of this itinerary: The centre and the communist past. Morning: Start at Skanderbeg Square, step into the Et'hem Bey Mosque, then join a free walking tour or go straight into Bunk'Art 2.
+
+### What to see in Tirana in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: The centre and the communist past. Morning: Start at Skanderbeg Square, step into the Et'hem Bey Mosque, then join a free walking tour or go straight into Bunk'Art 2. Day 2: Markets, bunkers and the mountain. Morning: Breakfast and browsing at Pazari i Ri, then walk past Tanners' Bridge and the castle walls.
+
 ## Flights and deals
 
 - Flight deals to Tirana: https://www.happylowcost.com/en/destinations/tirana/#deals

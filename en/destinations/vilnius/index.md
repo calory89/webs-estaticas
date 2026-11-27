@@ -125,6 +125,14 @@ Yes. It is easy to reach, takes about half a day and adds a different landscape.
 
 Today the cheapest deal we have to Vilnius is €110 return from Zaragoza. Fares change by the hour: check the live price on the deal page.
 
+### What to see in Vilnius in one day?
+
+If you only have one day, follow day 1 of this itinerary: Old Town. Gate of Dawn, St. Anne's, the university, Pilies street, Cathedral Square and Gediminas Hill at sunset.
+
+### What to see in Vilnius in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Old Town. Gate of Dawn, St. Anne's, the university, Pilies street, Cathedral Square and Gediminas Hill at sunset. Day 2: Užupis and the modern side. Užupis in the morning, Three Crosses Hill, then the KGB museum in the afternoon.
+
 ## Flights and deals
 
 - Flight deals to Vilnius: https://www.happylowcost.com/en/destinations/vilnius/#deals

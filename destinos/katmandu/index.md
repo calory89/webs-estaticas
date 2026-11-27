@@ -232,6 +232,14 @@ Hombros y rodillas cubiertos, y calzado fácil de quitar. En invierno, abrigo pa
 
 Sí. El valle tiene siete sitios patrimonio de la Unesco y da para cuatro días completos sin pisar un sendero de montaña.
 
+### ¿Qué ver en Katmandú en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Katmandú histórica. Mañana: sal de Thamel andando hacia el sur por Asan Tole e Indra Chowk, con parada en Kathesimbhu.
+
+### ¿Qué ver en Katmandú en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Katmandú histórica. Mañana: sal de Thamel andando hacia el sur por Asan Tole e Indra Chowk, con parada en Kathesimbhu. Día 2: Pashupatinath y Boudhanath. Mañana: Narayanhiti Palace Museum y paseo por el Garden of Dreams.
+
 ### ¿Es caro viajar a Katmandú?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 25-35 € por persona y día, y en el nivel "presupuesto medio", unos 60-90 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

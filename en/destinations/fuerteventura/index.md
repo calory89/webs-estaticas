@@ -221,6 +221,14 @@ Yes, a free online permit with a daily visitor limit. Book it before buying your
 
 It is mid-priced for Europe. Self-catering and buses keep costs low, while car hire and peak-season hotels push them up.
 
+### What to see in Fuerteventura in one day?
+
+If you only have one day, follow day 1 of this itinerary: Corralejo and the dunes. Morning: settle into Corralejo and walk the seafront along Avenida Marítima.
+
+### What to see in Fuerteventura in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Corralejo and the dunes. Morning: settle into Corralejo and walk the seafront along Avenida Marítima. Day 2: Isla de Lobos. Morning: early ferry to Lobos, walk to the lighthouse and climb the caldera.
+
 ## Flights and deals
 
 - Flight deals to Fuerteventura: https://www.happylowcost.com/en/destinations/fuerteventura/#deals

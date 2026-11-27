@@ -143,6 +143,14 @@ Tres es lo ideal. Con dos ves lo básico, y con cuatro o cinco puedes sumar Cefa
 
 Para quien escribió esta guía, sí: Palermo no intenta caerte bien, y por eso engancha. Con 3 días ves lo esencial. Presupuesto: Como referencia, un albergue ronda los 20-30 euros por noche en cama compartida, y una habitación doble sencilla suele moverse entre 60 y 90 euros, con más variación en temporada alta.
 
+### ¿Qué ver en Palermo en 1 día?
+
+Si solo tienes un día, haz el día 1 de esta ruta: Palazzo dei Normanni y Cappella Palatina a primera hora, Catedral, Quattro Canti, Piazza Pretoria y Martorana.
+
+### ¿Qué ver en Palermo en 2 días?
+
+Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Palazzo dei Normanni y Cappella Palatina a primera hora, Catedral, Quattro Canti, Piazza Pretoria y Martorana. Día 2: Monreale por la mañana. Vuelta a Palermo, comida en Ballarò, Teatro Massimo y paseo por la Kalsa.
+
 ### ¿Es caro viajar a Palermo?
 
 Depende de cómo viajes. Según esta guía, en el nivel "muy ajustado" se gastan unos unos 50-60 euros por persona y día, y en el nivel "cómodo", unos 150 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

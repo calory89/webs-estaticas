@@ -139,6 +139,14 @@ Early morning, before the shops open, when the porticoes are quiet and the light
 
 3 days are enough to see the essentials of Bologna without rushing. The route in this guide is organised day by day.
 
+### What to see in Bologna in one day?
+
+If you only have one day, follow day 1 of this itinerary: Piazza Maggiore, San Petronio, Neptune, the Quadrilatero for lunch, then the Archiginnasio and the Two Towers in the late afternoon.
+
+### What to see in Bologna in two days?
+
+With two days, follow days 1 and 2 of this itinerary. Day 1: Piazza Maggiore, San Petronio, Neptune, the Quadrilatero for lunch, then the Archiginnasio and the Two Towers in the late afternoon. Day 2: Morning at Piazza Santo Stefano, wander up Via Zamboni, lunch near the university, then walk the Portico di San Luca in the afternoon and head back for an evening aperitivo.
+
 ## Flights and deals
 
 - Flight deals to Bologna: https://www.happylowcost.com/en/destinations/bologna/#deals
