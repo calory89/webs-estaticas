@@ -82,6 +82,13 @@ jobs:
             H3=$(git hash-object -w "$RUNNER_TEMP/world-claims.json")
             git update-index --add --cacheinfo 100644,$H3,_s/kolaboro.com/data/world-claims.json
             if [ -s "$RUNNER_TEMP/named.json" ]; then H4=$(git hash-object -w "$RUNNER_TEMP/named.json"); git update-index --add --cacheinfo 100644,$H4,_s/kolaboro.com/data/named.json; fi
+            # per-market slices of bali-cases.json for the /m/<market>/ pages (n40 k49): built in this step from the file just written,
+            # with the builder as published on the branch (_s/kolaboro.com/open/market-slices.py); no builder or a failure: the pages read the full file
+            rm -rf "$RUNNER_TEMP/mslices"; mkdir -p "$RUNNER_TEMP/mslices"
+            if git show "$P:_s/kolaboro.com/open/market-slices.py" > "$RUNNER_TEMP/market-slices.py" 2>/dev/null && python3 "$RUNNER_TEMP/market-slices.py" "$RUNNER_TEMP/bali-cases.json" "$RUNNER_TEMP/mslices"; then
+              { git ls-files -- _s/kolaboro.com/data/m/ | sed 's/^/0 0000000000000000000000000000000000000000\t/'
+                for f in "$RUNNER_TEMP"/mslices/*.json; do printf '100644 %s\t%s\n' "$(git hash-object -w "$f")" "_s/kolaboro.com/data/m/$(basename "$f")"; done; } | git update-index --index-info
+            else echo "::warning::market slices not built: market pages read the full bali-cases.json"; fi
             T=$(git write-tree); unset GIT_INDEX_FILE
             [ "$(git rev-parse $P^{tree})" = "$T" ] && { echo "no change"; exit 0; }
             C=$(git commit-tree $T -p $P -m "kolaboro.com: research agent data $(date -u +%F)")
