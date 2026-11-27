@@ -263,7 +263,7 @@ const canon = ORIGIN + pre(lang) + $q.cb + s + '/', last = b.ev.length ? b.ev[0]
 const ld = { '@context': $q.x, '@graph': [{ '@type': $q.y, '@id': canon + '#page', url: canon, name: t(lang, 'wk_h1', { p: pn }), inLanguage: lang, dateModified: last, about: { '@type': 'Place', name: pn }, isPartOf: { '@type': $q.cc, name: $q.cd, url: ORIGIN + '/' } },
 { '@type': $q.ce, itemListElement: [{ '@type': $q.cf, position: 1, name: $q.cd, item: ORIGIN + pre(lang) + '/' }, { '@type': $q.cf, position: 2, name: t(lang, $q.bZ), item: ORIGIN + pre(lang) + $q.cb }, { '@type': $q.cf, position: 3, name: pn, item: canon }] }] };
 let desc = t(lang, $q.cg, { p: pn, e: nf(nowE.length, lang), k: nf(nowK, lang), w: N.fd(wk.w0, lang) }); if ([...desc].length > 155) desc = [...desc].slice(0, 152).join('').replace(/\s+\S*$/, '') + '...';
-let title = t(lang, 'wk_t', { p: pn });
+let title = t(lang, 'wk_t', { p: pn }); if ([...title].length > 60 && E.en.wk_short && E.en.wk_short[s]) title = t(lang, 'wk_t', { p: E.en.wk_short[s] });   // n40 k59: a shorter place name for long titles
 try { const d = new Date(wk.w0 + $q.w), th = new Date(d.getTime() + 3 * 864e5), y = th.getUTCFullYear(), w = 1 + Math.round((th - new Date(Date.UTC(y, 0, 4))) / 6048e5 - (3 - ((new Date(Date.UTC(y, 0, 4)).getUTCDay() + 6) % 7)) / 7);
 const WL = { en: $q.ch, es: $q.ci, de: $q.cj, fr: $q.ck, nl: $q.ch, ru: $q.cl, zh: $q.cm, ar: $q.cn };
 const wl = (WL[lang] || WL.en).replace('{w}', w).replace('{y}', y), t2 = title + (lang === 'zh' ? '（' + wl + '）' : ' (' + wl + ')'); if ([...t2].length <= 60) title = t2; } catch (e) {}

@@ -131,7 +131,7 @@ const KB_CITE29 = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:numbers|press\/delivery-
 // bracket) that leaves 20 to 60 characters ("Is it safe to buy off-plan in Malaysia? What 656 projects show" keeps the question)
 function kbT60(t) {
   t = t.replace(/\s*\|\s*Kolaboro\s*$/, ''); const L = x => [...x.replace(/&(?:amp|lt|gt|quot|#39|#x27);/g, 'x').trim()].length; if (L(t) <= 60) return t;
-  let b = null; for (const m of t.matchAll(/: |\? |\u061f |\uff1f|\uff1a|\u060c |\. | \(|, | - /g)) { const c = t.slice(0, m.index) + (/[?\u061f\uff1f]/.test(m[0]) ? m[0].trim() : ''), k = L(c); if (k >= 20 && k <= 60) b = c; }
+  let b = null; for (const m of t.matchAll(/: |\? |\u061f |\uff1f|\uff1a|\u060c |\. | \(|, | - /g)) { const c = t.slice(0, m.index) + (/[?\u061f\uff1f]/.test(m[0]) ? m[0].trim() : ''), k = L(c); if (k >= 20 && k <= 60) b = c.trim(); }
   return b || t;
 }
 function kbHeaders(r, u) {

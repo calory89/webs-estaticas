@@ -208,13 +208,13 @@ b += h2($q.cd, t(lang, $q.dv, { mk: m })) + $s.k6 + [t(lang, $q.dk), t(lang, $q.
 const url = ORIGIN + pre(lang) + path, cite = t(lang, $q.dz, { mk: m, mo, url, d: N.fd(X.today, lang) });
 b += h2('cite', t(lang, $q.dA)) + $q.dB + esc(cite).replace(esc(url), $q.dC + esc(url) + '">' + esc(url) + $q.dD + (lang === 'zh' || lang === 'ar' ? ' ' : '')) + $t.k12 + month + '/' + mkt.s + $q.dE + esc(t(lang, 'dl')) + $q.aO;
 b += h2('more', t(lang, $q.dF)) + $q.dG + slugM(m) + '/">' + esc(t(lang, $q.dH)) + ': ' + esc(m) + $t.k13 + esc(t(lang, $q.dI)) + $q.dJ + pre(lang) + $q.cX + month + '/">' + esc(t(lang, $q.cY)) + $q.dJ + pre(lang) + $q.dK + esc(t(lang, 'l_all')) + $q.dL;
-const title = t(lang, $q.dM, { mk: m, mo });
+const tl = t(lang, $q.dM, { mk: m, mo }); let title = tl; for (let i = 2; i < 5 && [...title].length > 60; i++) if (S[lang] && S[lang][$q.dM + i]) title = t(lang, $q.dM + i, { mk: m, mo });   // n40 k59: shorter forms keep the month
 const ds = { '@type': $q.dN, '@id': url + $q.dO, name: $q.aW + t(lang, 'st_h1', { mk: m, mo }), description: t(lang, $q.dP, { k: L.length, mk: m }), url,
 license: $t.k14, isAccessibleForFree: true,
 creator: { '@type': $q.bv, name: $q.bu, url: ORIGIN + '/' }, temporalCoverage: month, dateModified: X.today, spatialCoverage: { '@type': 'Place', name: m + ', ' + (L[0].co || '') },
 variableMeasured: [$t.k15, $q.dQ, $q.dR, $q.dS, $q.dT, $t.k16],
 distribution: [{ '@type': $q.dU, encodingFormat: $q.dV, contentUrl: ORIGIN + $q.bU + month + '/' + mkt.s + '.csv' }, { '@type': $q.dU, encodingFormat: $q.au, contentUrl: ORIGIN + $q.cb }], citation: t('en', $q.dz, { mk: m, mo: N.fd(month, 'en'), url: ORIGIN + path, d: N.fd(X.today, 'en') }) };
-return { path, title, h1: t(lang, 'st_h1', { mk: m, mo }), lead: t(lang, $q.dP, { k: L.length, mk: m }), desc: title + '. ' + t(lang, $q.dP, { k: L.length, mk: m }), body: b, updated: X.today, ld: [ds], csvRows, proj,
+return { path, title, h1: t(lang, 'st_h1', { mk: m, mo }), lead: t(lang, $q.dP, { k: L.length, mk: m }), desc: tl + '. ' + t(lang, $q.dP, { k: L.length, mk: m }), body: b, updated: X.today, ld: [ds], csvRows, proj,
 crumbs: [[$q.bu, '/'], [t(lang, $q.dW), $q.bU], [m + ', ' + mo, path]] };
 }
 const csvCell = v => { const s = v == null ? '' : String(v); return /[",\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s; };

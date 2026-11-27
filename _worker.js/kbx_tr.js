@@ -256,7 +256,9 @@ function rowsFrag(ix, slug, lang, o, from, all) { const pl = ix.places.get(slug)
 function placePage(ix, slug, lang, o) {
 const pl = ix.places.get(slug); if (!pl) return null;
 const P = pl.P, p = bdi(mkName(P.n, lang)), pN = mkName(P.n, lang), path = $q.G + slug + '/';
-const title = t(lang, pl.ranked ? $q.cN : $q.cO, { p: pN, y: year() }), h1 = th(lang, pl.ranked ? $q.cP : $q.cQ, { p });
+const tk = pl.ranked ? $q.cN : $q.cO, tS = ((TRS[lang] || {}).t_short || TRS.en.t_short || {})[slug], tN = [...new Set([tS, pN, pN.replace(/ \([^)]*\)$/, '')])].filter(Boolean); let title = '';   // n40 k59: shorter forms (data t_ranked2, t_list2...) and names keep titles within 60
+for (const k of [tk, tk + '2', tk + '3']) { if (k !== tk && !(TRS[lang] && TRS[lang][k])) continue; for (const x of tN) { title = t(lang, k, { p: x, y: year() }); if ([...title].length <= 60) break; } if ([...title].length <= 60) break; }
+const h1 = th(lang, pl.ranked ? $q.cP : $q.cQ, { p });
 const desc = t(lang, 'desc', { n: nf(lang, pl.n), p: pN, m: pl.med == null ? '-' : nf(lang, pl.med), d: fdt(ix.updated, lang) });
 const cr = [[$q.cR, pre(lang) + '/', $q.cR], [t(lang, $q.cg), $q.cS, esc(t(lang, $q.cg))], [t(lang, $q.cT), pre(lang) + $q.G, esc(t(lang, $q.cT))], [pN, pre(lang) + path, p]];
 const faq = faqList(lang, pl, ix);
