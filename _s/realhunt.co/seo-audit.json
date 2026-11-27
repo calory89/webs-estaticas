@@ -1198,7 +1198,7 @@
    "checked": 4834,
    "indexable": 4292,
    "max_depth": 3,
-   "titles_changed_since_last_build": 145,
+   "titles_changed_since_last_build": 0,
    "external_link_hosts": 335,
    "no_text_without_javascript": 9,
    "click_handler_instead_of_link": 1412,
@@ -1206,7 +1206,6 @@
    "keyword_stuffing": 8,
    "year_in_title": 2,
    "near_identical_pages": 542,
-   "title_changed_twice_in_28_days": 133,
    "fixed_here": 2,
    "links_pointed_past_a_redirect": 2
   },
@@ -1327,49 +1326,6 @@
     "/can-i-buy/danish-in-dominican-republic ~ /can-i-buy/dutch-in-dominican-republic (97%)",
     "/can-i-buy/danish-in-dominican-republic ~ /can-i-buy/french-in-dominican-republic (94%)",
     "... 502 more"
-   ],
-   "title_changed_twice_in_28_days": [
-    "/cheap-houses/cabins-and-cottages: Cheap cabins and cottages (49, from €7,400) · RealHunt",
-    "/cheap-houses/cabins-and-cottages-in-spain: Cabins and cottages in Spain (5, from €125,000) · RealHunt",
-    "/cheap-houses/good-weather: Cheap homes with 150 or more good-weather days a year (71)",
-    "/cheap-houses/houses-under-100000-in-spain: Cheap houses for sale in Spain under €100,000 (47)",
-    "/cheap-houses/in-the-mountains: Cheap homes in the mountains (39, from €7,400) · RealHunt",
-    "/cheap-houses/in-the-mountains-in-greece: Cheap houses in the mountains in Greece (3, from €70,000)",
-    "/cheap-houses/near-an-airport: Homes within 30 km of an airport (230, from €10,240)",
-    "/cheap-houses/near-an-airport-in-spain: Homes within 30 km of an airport in Spain (53, from €52,000)",
-    "/cheap-houses/near-valencia: Homes for sale within 100 km of Valencia (15, from €65,000)",
-    "/cheap-houses/new-this-month: Homes added in the last 30 days (206, from €7,400)",
-    "/cheap-houses/new-this-month-in-greece: Homes added in the last 30 days in Greece (11, from €85,000)",
-    "/cheap-houses/new-this-week: Homes added in the last 7 days (151, from €54,300)",
-    "/cheap-houses/over-120-sqm-in-greece: Houses over 120 m² in Greece (3, from €170,000) · RealHunt",
-    "/cheap-houses/over-120-sqm-in-spain: Homes over 120 m² in Spain (45, from €38,000) · RealHunt",
-    "/cheap-houses/over-80-sqm-in-greece: Houses over 80 m² in Greece (13, from €85,000) · RealHunt",
-    "/cheap-houses/over-80-sqm-in-spain: Cheap homes over 80 m² in Spain (84, from €38,000)",
-    "/cheap-houses/quiet-location: Cheap homes away from motorways and railways (292)",
-    "/cheap-houses/quiet-location-in-greece: Houses away from motorways and railways in Greece (20)",
-    "/cheap-houses/quiet-location-in-spain: Cheap homes away from motorways and railways in Spain (90)",
-    "/cheap-houses/stone-houses: Stone houses (73, from €12,000) · RealHunt",
-    "/cheap-houses/stone-houses-in-greece: Stone houses in Greece (14, from €68,000) · RealHunt",
-    "/cheap-houses/under-100000: Cheap homes for sale under €100,000 (399, from €7,400)",
-    "/cheap-houses/under-100000-dollars: Cheap homes for sale under $100,000 (323, from €7,400)",
-    "/cheap-houses/under-100000-dollars-in-spain: Cheap homes for sale in Spain under $100,000 (62) · RealHunt",
-    "/cheap-houses/under-75000: Cheap homes for sale under €75,000 (209, from €7,400)",
-    "/cheap-houses/with-a-terrace: Homes with a terrace or balcony (353, from €10,240)",
-    "/cheap-houses/with-a-terrace-in-greece: Houses with a terrace or balcony in Greece (20) · RealHunt",
-    "/cheap-houses/with-fireplace-in-greece: Houses with a fireplace in Greece (10, from €95,000)",
-    "/cheap-houses/with-fireplace-in-spain: Cheap houses with a fireplace in Spain (36, from €38,000)",
-    "/cheap-houses/with-garage: Homes with a garage (160, from €18,770) · RealHunt",
-    "/cheap-houses/with-garage-in-spain: Homes with a garage in Spain (31, from €57,500) · RealHunt",
-    "/cheap-houses/with-garden-in-greece: Houses with a garden in Greece (11, from €76,000) · RealHunt",
-    "/cheap-houses/with-garden-in-spain: Homes with a garden in Spain (34, from €60,000) · RealHunt",
-    "/cheap-houses/with-land: Cheap houses with 1,000 m² of land or more (40) · RealHunt",
-    "/cheap-houses/with-olive-trees-or-vines: Homes with olive trees, vines or fruit trees (22) · RealHunt",
-    "/cheap-houses/with-sea-view: Homes with a sea view (63, from €10,240) · RealHunt",
-    "/cheap-houses/with-sea-view-in-spain: Homes with a sea view in Spain (15, from €49,000) · RealHunt",
-    "/deal/es-aller-64k-85901: Sold or withdrawn: 2-bedroom flat in Aller for €64,900",
-    "/deal/es-godelleta-178k-277470: Not confirmed: 4-bedroom chalet in Godelleta for €178,000",
-    "/deal/es-langreo-61k-38277: Not confirmed: 2-bedroom flat in Langreo for €61,900",
-    "... 93 more"
    ]
   },
   "depth": {
@@ -1499,23 +1455,23 @@
     "listing": {
      "limit_kb": 100,
      "pages": 1705,
-     "over": 226,
+     "over": 228,
      "biggest": [
+      {
+       "path": "/es/homes/united-states",
+       "kb": 134.3
+      },
       {
        "path": "/es/homes/italy",
        "kb": 133.9
       },
       {
-       "path": "/es/homes/united-states",
-       "kb": 133.3
+       "path": "/homes/united-states",
+       "kb": 127.6
       },
       {
        "path": "/homes/italy",
        "kb": 127.5
-      },
-      {
-       "path": "/homes/united-states",
-       "kb": 126.7
       },
       {
        "path": "/es/homes/spain",
@@ -1525,28 +1481,28 @@
     },
     "languages": {
      "limit_kb": 100,
-     "pages": 2848,
-     "over": 109,
+     "pages": 2856,
+     "over": 125,
      "biggest": [
       {
+       "path": "/ru/homes/united-states",
+       "kb": 123.1
+      },
+      {
        "path": "/ru/homes/italy",
-       "kb": 117.7
+       "kb": 117.8
       },
       {
        "path": "/ru/homes/spain",
-       "kb": 115.5
+       "kb": 115.6
+      },
+      {
+       "path": "/ru/homes/united-states/under-300000",
+       "kb": 115.2
       },
       {
        "path": "/ru/homes/italy/under-150000",
        "kb": 114.1
-      },
-      {
-       "path": "/ru/homes/italy/village-houses",
-       "kb": 113.7
-      },
-      {
-       "path": "/ru/homes/france",
-       "kb": 113.1
       }
      ]
     },
@@ -1557,23 +1513,23 @@
      "biggest": [
       {
        "path": "/es/deal/us-aventura-2750-2404-259k",
-       "kb": 54.2
+       "kb": 54.8
       },
       {
        "path": "/es/deal/us-aventura-18041-1201-260k",
-       "kb": 54
+       "kb": 54.5
       },
       {
        "path": "/es/deal/us-aventura-18011-1904-350k",
-       "kb": 53.9
+       "kb": 54.4
       },
       {
        "path": "/es/deal/us-aventura-20301-523-299k",
-       "kb": 53.7
+       "kb": 54.2
       },
       {
        "path": "/es/deal/us-aventura-20335-2302-265k",
-       "kb": 53.7
+       "kb": 54.2
       }
      ]
     }
